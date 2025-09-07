@@ -21,7 +21,21 @@
       "emailUs": "Email Us",
       "backToTop": "Back to Top",
       "scroll": "Scroll",
-      "menu": "Menu"
+      "menu": "Menu",
+      "search": "Search",
+      "filter": "Filter",
+      "sort": "Sort",
+      "reset": "Reset",
+      "apply": "Apply",
+      "submit": "Submit",
+      "download": "Download",
+      "upload": "Upload",
+      "share": "Share",
+      "copy": "Copy",
+      "copied": "Copied",
+      "print": "Print",
+      "export": "Export",
+      "import": "Import"
     },
     "metadata": {
       "defaultTitle": "PakTechnology – Modern Digital Solutions",
@@ -248,7 +262,135 @@
         "customSolution": "Need a Custom Solution?",
         "customDescription": "Every business is unique. Let's discuss your specific requirements and create a custom solution that fits perfectly.",
         "getCustomQuote": "Get Custom Quote",
-        "viewProjects": "View Projects"
+        "viewProjects": "View Projects",
+        "subscriptions": {
+          "seoMarketing": {
+            "title": "SEO & Digital Marketing",
+            "features": [
+              "Technical SEO optimization (on-site & off-site)",
+              "Google & Meta Ads management",
+              "Monthly performance reports",
+              "4 hours/month ad budget consulting"
+            ]
+          },
+          "maintenanceSupport": {
+            "title": "Maintenance & Support",
+            "features": [
+              "Security updates & backup",
+              "System monitoring & quick bug fixes",
+              "Weekly content & visual updates",
+              "24/7 SLA support line"
+            ]
+          },
+          "automationBot": {
+            "title": "Automation Bot Subscription",
+            "features": [
+              "2 customized Python bots",
+              "Data extraction, sending & reporting flows",
+              "Monthly bot maintenance & troubleshooting",
+              "API monitoring & update support"
+            ]
+          },
+          "uiuxDesign": {
+            "title": "UI/UX Design Subscription",
+            "features": [
+              "New page & section designs",
+              "User testing & feedback loop",
+              "A/B testing support & analysis report",
+              "Figma source file delivery"
+            ]
+          },
+          "devopsCicd": {
+            "title": "DevOps & CI/CD Subscription",
+            "features": [
+              "Pipeline monitoring & error alerts",
+              "Automated testing & deploy maintenance",
+              "Container / Kubernetes support",
+              "Monthly performance optimization"
+            ]
+          },
+          "aiModelHosting": {
+            "title": "AI Model Hosting & Updates",
+            "features": [
+              "ML/NLP model hosting",
+              "Monthly retraining & versioning",
+              "API endpoint management",
+              "24/7 uptime SLA"
+            ]
+          }
+        },
+        "projects": {
+          "corporateWebsite": {
+            "title": "Corporate Website",
+            "price": "$8,000–$16,000",
+            "features": [
+              "Next.js/React based modern design",
+              "SEO & speed optimization",
+              "4–6 week Agile sprint",
+              "1 month free maintenance & training"
+            ]
+          },
+          "ecommerceStore": {
+            "title": "E-Commerce Store Project",
+            "price": "$10,000–$20,000",
+            "features": [
+              "Shopify/WooCommerce integration",
+              "Multi-language & payment infrastructure",
+              "Payment & shipping integrations",
+              "2 weeks free support & training"
+            ]
+          },
+          "mernApplication": {
+            "title": "MERN Application Project",
+            "price": "$12,000–$24,000",
+            "features": [
+              "MongoDB, Express, React, Node.js setup",
+              "User management & authorization",
+              "RESTful API documentation",
+              "1 month free maintenance & revision"
+            ]
+          },
+          "mobileApplication": {
+            "title": "Mobile Application Project",
+            "price": "$16,000–$32,000",
+            "features": [
+              "React Native iOS/Android compilation",
+              "UI/UX prototype & user testing",
+              "App Store & Play Store publishing",
+              "2 weeks free bug fixing"
+            ]
+          },
+          "dataAnalyticsBi": {
+            "title": "Data Analytics & BI Dashboards",
+            "price": "$7,200–$16,000",
+            "features": [
+              "Power BI / Tableau dashboards",
+              "Customized KPI tracking",
+              "Excel/CSV integration flows",
+              "1 month free data maintenance"
+            ]
+          },
+          "devopsSetup": {
+            "title": "DevOps & CI/CD Setup",
+            "price": "$4,000–$10,000",
+            "features": [
+              "Jenkins / GitHub Actions setup",
+              "Container & Kubernetes configuration",
+              "Automated testing & deploy pipeline",
+              "1 week free monitoring support"
+            ]
+          },
+          "customEnterprise": {
+            "title": "Custom Enterprise Solution",
+            "price": "Quote Based",
+            "features": [
+              "All modules & integrations",
+              "Custom SLA & premium support",
+              "Setup, training & documentation",
+              "Long-term strategy consulting"
+            ]
+          }
+        }
       },
       "whyUs": {
         "eyebrow": "Why Choose Us",
@@ -303,7 +445,10 @@
           "ai": "AI Solutions",
           "automation": "Automation"
         },
-        "viewAllProjects": "View All Projects"
+        "viewAllProjects": "View All Projects",
+        "keyResult": "Key Result",
+        "technology": "Technology",
+        "viewProject": "View Project"
       },
       "caseStudy": {
         "eyebrow": "Case Study",
@@ -334,6 +479,28 @@
         "subtitle": "We leverage cutting-edge technologies and proven methodologies to deliver exceptional digital solutions.",
         "technologiesWeUse": "Technologies We Use",
         "ourProcess": "Our Process",
+        "processSteps": [
+          {
+            "title": "Technology Assessment",
+            "description": "We evaluate your current tech stack and recommend the best technologies for your specific needs and goals."
+          },
+          {
+            "title": "Architecture Design",
+            "description": "Our team designs scalable, maintainable architecture that can grow with your business requirements."
+          },
+          {
+            "title": "Agile Development",
+            "description": "We use agile methodologies with regular sprints, ensuring transparency and continuous improvement."
+          },
+          {
+            "title": "Quality Assurance",
+            "description": "Comprehensive testing including unit tests, integration tests, and user acceptance testing."
+          },
+          {
+            "title": "Deployment & Monitoring",
+            "description": "Seamless deployment with continuous monitoring and performance optimization post-launch."
+          }
+        ],
         "techStats": {
           "technologies": "Technologies",
           "yearsExperience": "Years Experience",
@@ -350,7 +517,39 @@
         "readyForResults": "Ready to Achieve Similar Results?",
         "readyDescription": "Let's discuss how we can help you achieve measurable success with your digital transformation.",
         "startSuccessStory": "Start Your Success Story",
-        "viewCaseStudies": "View Case Studies"
+        "viewCaseStudies": "View Case Studies",
+        "metrics": [
+          {
+            "value": "150+",
+            "label": "Projects Completed",
+            "description": "Successfully delivered projects across various industries"
+          },
+          {
+            "value": "300%",
+            "label": "Average ROI Increase",
+            "description": "Return on investment for our clients"
+          },
+          {
+            "value": "80%",
+            "label": "Time Savings",
+            "description": "Efficiency gained through automation"
+          },
+          {
+            "value": "50+",
+            "label": "Happy Clients",
+            "description": "Businesses we've helped transform"
+          },
+          {
+            "value": "99%",
+            "label": "Uptime Guaranteed",
+            "description": "System reliability and performance"
+          },
+          {
+            "value": "$2M+",
+            "label": "Revenue Generated",
+            "description": "Additional revenue created for clients"
+          }
+        ]
       }
     },
     "blog": {
@@ -387,7 +586,26 @@
         "noArticlesDescription": "No articles found in this category. Try selecting a different category.",
         "stayUpdated": "Stay Updated with Our Latest Insights",
         "stayUpdatedDescription": "Subscribe to our newsletter and get the latest articles, tutorials, and industry insights delivered directly to your inbox.",
-        "continueReading": "Continue Reading"
+        "continueReading": "Continue Reading",
+        "categories": {
+          "ecommerce": "E-Commerce",
+          "automation": "Automation",
+          "mobile": "Mobile",
+          "ai": "AI & ML",
+          "web": "Web Development",
+          "design": "Design & UX",
+          "devops": "DevOps"
+        }
+      },
+      "posts": {
+        "readTime": "min read",
+        "views": "views",
+        "publishedOn": "Published on",
+        "author": "Author",
+        "tags": "Tags",
+        "relatedPosts": "Related Posts",
+        "shareArticle": "Share Article",
+        "backToBlog": "Back to Blog"
       }
     },
     "contact": {
@@ -424,7 +642,9 @@
           "sunday": "Sunday",
           "sundayTime": "Closed"
         },
-        "ourLocation": "Our Location"
+        "ourLocation": "Our Location",
+        "visitOffice": "Visit Office",
+        "getDirections": "Get Directions"
       },
       "form": {
         "title": "Send us a Message",
@@ -455,6 +675,11 @@
         "step1": "We'll review your message within 24 hours",
         "step2": "Our team will reach out to discuss your project",
         "step3": "We'll provide a detailed proposal and timeline"
+      },
+      "map": {
+        "title": "Our Location",
+        "address": "Yozgat Bozok University, Bozok Technopark, Yozgat / Turkey",
+        "getDirections": "Get Directions"
       }
     },
     "footer": {
@@ -496,6 +721,18 @@
           "label": "Location",
           "value": "Yozgat, Turkey"
         }
+      },
+      "socialMedia": {
+        "followUs": "Follow Us",
+        "linkedin": "LinkedIn",
+        "twitter": "Twitter",
+        "github": "GitHub",
+        "instagram": "Instagram",
+        "youtube": "YouTube",
+        "dribbble": "Dribbble",
+        "behance": "Behance",
+        "medium": "Medium",
+        "discord": "Discord"
       }
     },
     "stats": {
@@ -530,6 +767,8 @@
       "responseTime": "Response Time",
       "onTimeDelivery": "On-Time Delivery",
       "averageResponse": "Average Response",
+      "happyClients": "Happy Clients",
+      "projectsCompleted": "Projects Completed",
       "list": [
         {
           "author": "Sarah Johnson",
@@ -628,7 +867,24 @@
       "likeTheseResults": "Ready to See Results Like These?",
       "likeTheseDescription": "Let's discuss how we can help you achieve similar success with a custom solution tailored to your business needs.",
       "startYourProject": "Start Your Project",
-      "viewAllProjects": "View All Projects"
+      "viewAllProjects": "View All Projects",
+      "projects": [
+        {
+          "title": "E-Commerce Platform",
+          "description": "Modern online store with advanced features and seamless user experience.",
+          "result": "300% sales increase"
+        },
+        {
+          "title": "Business Automation Suite",
+          "description": "Comprehensive automation system that streamlined business operations.",
+          "result": "80% time savings"
+        },
+        {
+          "title": "Mobile Finance App",
+          "description": "Cross-platform mobile application for personal finance management.",
+          "result": "50K+ downloads"
+        }
+      ]
     },
     "clientJourney": {
       "eyebrow": "Our Process",
@@ -742,5 +998,155 @@
         "network": "Network error. Please check your connection.",
         "validation": "Please check your input and try again."
       }
+    },
+    "components": {
+      "heroRightEnhanced": {
+        "ariaLabel": "Digital Excellence & Team Collaboration visual",
+        "excellenceHub": "Excellence Hub",
+        "qualityBadge": "Quality Badge",
+        "projectStatus": "Project Status",
+        "teamCollaboration": "Team Collaboration",
+        "qualityIndicators": "Quality Indicators",
+        "roles": {
+          "developer": "Developer",
+          "designer": "Designer",
+          "strategist": "Strategist",
+          "qaEngineer": "QA Engineer"
+        },
+        "statusIndicators": {
+          "codeQuality": "Code Quality",
+          "security": "Secure",
+          "performance": "Performance",
+          "satisfaction": "Satisfaction"
+        },
+        "notifications": {
+          "activeCollaboration": "Active collaboration",
+          "excellence": "Excellence",
+          "live": "LIVE"
+        }
+      },
+      "aboutRightExcellence": {
+        "ariaLabel": "Digital Excellence & Team Collaboration visual"
+      }
+    },
+    "pages": {
+      "home": {
+        "title": "Home - PakTechnology",
+        "description": "Transform your business with modern digital solutions from PakTechnology."
+      },
+      "about": {
+        "title": "About Us - PakTechnology",
+        "description": "Learn about the PakTechnology team, our vision, mission, and digital excellence journey."
+      },
+      "services": {
+        "title": "Our Services - PakTechnology", 
+        "description": "Explore our web development, mobile apps, AI solutions, and digital marketing services."
+      },
+      "projects": {
+        "title": "Our Projects - PakTechnology",
+        "description": "Review our successful digital projects and the results we've achieved for our clients."
+      },
+      "blog": {
+        "title": "Blog - PakTechnology",
+        "description": "Latest articles and insights on technology, digital transformation, and best practices."
+      },
+      "contact": {
+        "title": "Contact - PakTechnology",
+        "description": "Get in touch to start your project and receive a free consultation."
+      }
+    },
+    "loading": {
+      "text": "Loading...",
+      "pleaseWait": "Please wait..."
+    },
+    "buttons": {
+      "primary": "Primary Button",
+      "secondary": "Secondary Button",
+      "ghost": "Ghost Button",
+      "emerald": "Emerald Button",
+      "crimson": "Crimson Button"
+    },
+    "forms": {
+      "placeholders": {
+        "name": "Enter your name",
+        "email": "Enter your email address",
+        "phone": "Enter your phone number",
+        "message": "Write your message",
+        "subject": "Select subject",
+        "company": "Enter your company name"
+      },
+      "labels": {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "fullName": "Full Name",
+        "email": "Email",
+        "phone": "Phone",
+        "company": "Company",
+        "subject": "Subject",
+        "message": "Message",
+        "budget": "Budget",
+        "timeline": "Timeline"
+      },
+      "errors": {
+        "required": "This field is required",
+        "invalidEmail": "Invalid email address",
+        "invalidPhone": "Invalid phone number",
+        "tooShort": "Too short",
+        "tooLong": "Too long"
+      }
+    },
+    "navigation": {
+      "skipToContent": "Skip to content",
+      "openMainMenu": "Open main menu",
+      "closeMainMenu": "Close main menu",
+      "toggleMobileMenu": "Toggle mobile menu",
+      "currentPage": "Current page"
+    },
+    "accessibility": {
+      "closeDialog": "Close dialog",
+      "openDialog": "Open dialog",
+      "scrollToTop": "Scroll to top",
+      "expandSection": "Expand section",
+      "collapseSection": "Collapse section",
+      "readMore": "Read more",
+      "previousSlide": "Previous slide",
+      "nextSlide": "Next slide",
+      "playVideo": "Play video",
+      "pauseVideo": "Pause video"
+    },
+    "time": {
+      "justNow": "Just now",
+      "minuteAgo": "1 minute ago",
+      "minutesAgo": "{{count}} minutes ago",
+      "hourAgo": "1 hour ago",
+      "hoursAgo": "{{count}} hours ago",
+      "dayAgo": "1 day ago",
+      "daysAgo": "{{count}} days ago",
+      "weekAgo": "1 week ago",
+      "weeksAgo": "{{count}} weeks ago",
+      "monthAgo": "1 month ago",
+      "monthsAgo": "{{count}} months ago",
+      "yearAgo": "1 year ago",
+      "yearsAgo": "{{count}} years ago"
+    },
+    "fileUpload": {
+      "dragAndDrop": "Drag files here",
+      "orBrowse": "or browse",
+      "chooseFile": "Choose File",
+      "uploading": "Uploading...",
+      "uploadComplete": "Upload complete",
+      "uploadFailed": "Upload failed",
+      "fileTooBig": "File too big",
+      "invalidFileType": "Invalid file type",
+      "maxFiles": "Maximum {{count}} files",
+      "removeFile": "Remove file"
+    },
+    "search": {
+      "placeholder": "Search...",
+      "noResults": "No results found",
+      "searching": "Searching...",
+      "clearSearch": "Clear search",
+      "searchResults": "Search results",
+      "showingResults": "Showing {{count}} of {{total}} results"
     }
   }
