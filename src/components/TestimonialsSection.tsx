@@ -5,60 +5,65 @@ import { useRef } from 'react'
 import { motion } from 'framer-motion'
 import SectionHeader from '@/components/SectionHeader'
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline'
-
-const testimonials = [
-  { 
-    author: 'Sarah Johnson',
-    role: 'CEO, TechStart',
-    company: 'TechStart Solutions',
-    text: 'PakTechnology delivered exactly what we needed. Their attention to detail and professional approach made our project a complete success.',
-    rating: 5
-  },
-  { 
-    author: 'Michael Chen',
-    role: 'Product Manager',
-    company: 'InnovateLab',
-    text: 'Outstanding work on our mobile application. The team was responsive, skilled, and delivered on time. Highly recommended.',
-    rating: 5
-  },
-  { 
-    author: 'Emily Rodriguez',
-    role: 'Marketing Director',
-    company: 'GrowthCo',
-    text: 'Their digital marketing strategy increased our online presence significantly. Professional service with measurable results.',
-    rating: 5
-  },
-  { 
-    author: 'David Wilson',
-    role: 'CTO',
-    company: 'DataFlow Inc',
-    text: 'Excellent automation solutions that streamlined our processes. The ROI was evident within the first month of implementation.',
-    rating: 5
-  },
-  { 
-    author: 'Lisa Thompson',
-    role: 'Founder',
-    company: 'EcoSmart',
-    text: 'From concept to launch, they guided us through every step. Our e-commerce platform exceeded all expectations.',
-    rating: 5
-  },
-  { 
-    author: 'James Park',
-    role: 'Operations Manager',
-    company: 'LogiTech Pro',
-    text: 'The AI solutions they implemented have transformed how we handle customer inquiries. Impressive technical expertise.',
-    rating: 5
-  }
-]
+import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations'
 
 export default function TestimonialsSection() {
   const containerRef = useRef<HTMLDivElement>(null)
+  const { dir } = useTranslations()
+  const t = useSectionTranslations('testimonials')
+  const tStats = useSectionTranslations('stats')
+
+  const testimonials = t('list') ? JSON.parse(JSON.stringify(t('list'))) : [
+    { 
+      author: 'Sarah Johnson',
+      role: 'CEO',
+      company: 'TechStart Solutions',
+      text: 'PakTechnology delivered exactly what we needed. Their attention to detail and professional approach made our project a complete success.',
+      rating: 5
+    },
+    { 
+      author: 'Michael Chen',
+      role: 'Product Manager',
+      company: 'InnovateLab',
+      text: 'Outstanding work on our mobile application. The team was responsive, skilled, and delivered on time. Highly recommended.',
+      rating: 5
+    },
+    { 
+      author: 'Emily Rodriguez',
+      role: 'Marketing Director',
+      company: 'GrowthCo',
+      text: 'Their digital marketing strategy increased our online presence significantly. Professional service with measurable results.',
+      rating: 5
+    },
+    { 
+      author: 'David Wilson',
+      role: 'CTO',
+      company: 'DataFlow Inc',
+      text: 'Excellent automation solutions that streamlined our processes. The ROI was evident within the first month of implementation.',
+      rating: 5
+    },
+    { 
+      author: 'Lisa Thompson',
+      role: 'Founder',
+      company: 'EcoSmart',
+      text: 'From concept to launch, they guided us through every step. Our e-commerce platform exceeded all expectations.',
+      rating: 5
+    },
+    { 
+      author: 'James Park',
+      role: 'Operations Manager',
+      company: 'LogiTech Pro',
+      text: 'The AI solutions they implemented have transformed how we handle customer inquiries. Impressive technical expertise.',
+      rating: 5
+    }
+  ]
 
   const scrollBy = (direction: 'left' | 'right') => {
     if (containerRef.current) {
       const scrollAmount = 320
+      const scrollDirection = dir === 'rtl' ? (direction === 'left' ? 1 : -1) : (direction === 'left' ? -1 : 1)
       containerRef.current.scrollBy({
-        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        left: scrollAmount * scrollDirection,
         behavior: 'smooth'
       })
     }
@@ -83,10 +88,17 @@ export default function TestimonialsSection() {
     }
   }
 
+  const stats = [
+    { value: tStats('clientSatisfaction95'), label: t('clientSatisfaction') },
+    { value: tStats('projects150'), label: t('projectsCompleted') },
+    { value: tStats('clients50'), label: t('happyClients') },
+    { value: tStats('responseTime24h'), label: t('averageResponse') }
+  ]
+
   return (
-    <section className="section bg-white relative overflow-hidden">
+    <section className="section bg-white relative overflow-hidden" dir={dir}>
       {/* Subtle geometric background */}
-      <div className="absolute top-16 left-20 w-16 h-16 opacity-[0.02]">
+      <div className={`absolute top-16 w-16 h-16 opacity-[0.02] ${dir === 'rtl' ? 'right-20' : 'left-20'}`}>
         <div 
           className="w-full h-full border border-gray-900"
           style={{ clipPath: 'circle(40% at 70% 30%)' }}
@@ -95,15 +107,15 @@ export default function TestimonialsSection() {
 
       <div className="container mx-auto">
         <SectionHeader
-          eyebrow="Client Feedback"
-          title="What Our Clients Say"
-          subtitle="Don't just take our word for it. Here's what our clients have to say about working with us."
+          eyebrow={t('eyebrow')}
+          title={t('title')}
+          subtitle={t('subtitle')}
           className="mb-16"
         />
 
         <div className="relative">
           {/* Navigation Buttons */}
-          <div className="flex justify-end gap-2 mb-8">
+          <div className={`flex justify-end gap-2 mb-8 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
             <button
               onClick={() => scrollBy('left')}
               className="w-10 h-10 bg-white border border-gray-200 rounded-sm flex items-center justify-center hover:border-gray-300 hover:bg-gray-50 transition-colors"
@@ -127,7 +139,7 @@ export default function TestimonialsSection() {
             whileInView="visible"
             viewport={{ once: true }}
             ref={containerRef}
-            className="flex gap-6 overflow-x-auto scrollbar-hide pb-4"
+            className={`flex gap-6 overflow-x-auto scrollbar-hide pb-4 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}
             style={{ scrollSnapType: 'x mandatory' }}
           >
             {testimonials.map((testimonial, index) => (
@@ -186,12 +198,7 @@ export default function TestimonialsSection() {
           viewport={{ once: true }}
           className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-16 border-t border-gray-200"
         >
-          {[
-            { value: "98%", label: "Client Satisfaction" },
-            { value: "150+", label: "Projects Completed" },
-            { value: "50+", label: "Happy Clients" },
-            { value: "24h", label: "Average Response" }
-          ].map((stat, index) => (
+          {stats.map((stat, index) => (
             <div key={stat.label} className="text-center">
               <div className="text-2xl font-light text-gray-900 mb-2">
                 {stat.value}

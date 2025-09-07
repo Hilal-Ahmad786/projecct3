@@ -566,6 +566,10 @@
     left: calc(var(--spacing) * 4);
   }
 
+  .left-8 {
+    left: calc(var(--spacing) * 8);
+  }
+
   .left-16 {
     left: calc(var(--spacing) * 16);
   }
@@ -726,6 +730,10 @@
 
   .mb-16 {
     margin-bottom: calc(var(--spacing) * 16);
+  }
+
+  .ml-0 {
+    margin-left: calc(var(--spacing) * 0);
   }
 
   .ml-1 {
@@ -1157,6 +1165,10 @@
 
   .flex-col {
     flex-direction: column;
+  }
+
+  .flex-row-reverse {
+    flex-direction: row-reverse;
   }
 
   .flex-wrap {
@@ -2299,6 +2311,12 @@
   @media (hover: hover) {
     .group-hover\:mr-3:is(:where(.group):hover *) {
       margin-right: calc(var(--spacing) * 3);
+    }
+  }
+
+  @media (hover: hover) {
+    .group-hover\:ml-3:is(:where(.group):hover *) {
+      margin-left: calc(var(--spacing) * 3);
     }
   }
 

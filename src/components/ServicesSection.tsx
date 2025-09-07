@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import SectionHeader from '@/components/SectionHeader';
 import Button from '@/components/Button';
+import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
 import {
   Cog6ToothIcon,
@@ -22,109 +23,114 @@ import {
   CloudArrowUpIcon,
 } from '@heroicons/react/24/outline';
 
-const categories = [
-  { key: 'automation', label: 'Automation' },
-  { key: 'ai', label: 'AI Solutions' },
-  { key: 'web', label: 'Development' },
-  { key: 'design', label: 'Design & Marketing' },
-  { key: 'infrastructure', label: 'Infrastructure' },
-];
-
-const services = [
-  {
-    title: 'Python Automation',
-    icon: Cog6ToothIcon,
-    description: 'Custom automation solutions with Python for streamlined business processes and data handling.',
-    category: 'automation',
-    features: ['Process Automation', 'Data Scraping', 'Bot Development', 'Workflow Integration']
-  },
-  {
-    title: 'Data Analytics',
-    icon: ChartBarSquareIcon,
-    description: 'Transform raw data into actionable insights with advanced analytics and visualization.',
-    category: 'automation',
-    features: ['Data Visualization', 'Business Intelligence', 'Statistical Analysis', 'Report Generation']
-  },
-  {
-    title: 'Machine Learning',
-    icon: CubeIcon,
-    description: 'Custom ML models and intelligent systems tailored to your business requirements.',
-    category: 'ai',
-    features: ['Predictive Analytics', 'Neural Networks', 'Computer Vision', 'NLP Solutions']
-  },
-  {
-    title: 'AI Integration',
-    icon: PhotoIcon,
-    description: 'Seamlessly integrate AI capabilities into your existing systems and workflows.',
-    category: 'ai',
-    features: ['API Integration', 'Model Deployment', 'Performance Optimization', 'Monitoring']
-  },
-  {
-    title: 'Conversational AI',
-    icon: ChatBubbleBottomCenterTextIcon,
-    description: 'Intelligent chatbots and virtual assistants for enhanced customer engagement.',
-    category: 'ai',
-    features: ['Natural Language Processing', 'Multi-language Support', 'Context Awareness', 'Learning Systems']
-  },
-  {
-    title: 'API Development',
-    icon: LinkIcon,
-    description: 'Robust and scalable APIs for seamless system integration and data exchange.',
-    category: 'web',
-    features: ['RESTful APIs', 'GraphQL', 'Authentication', 'Documentation']
-  },
-  {
-    title: 'Web Applications',
-    icon: ComputerDesktopIcon,
-    description: 'Modern, responsive web applications built with cutting-edge technologies.',
-    category: 'web',
-    features: ['React/Next.js', 'Responsive Design', 'Performance Optimization', 'SEO Ready']
-  },
-  {
-    title: 'Full-Stack Development',
-    icon: CodeBracketSquareIcon,
-    description: 'Complete web solutions from database design to user interface implementation.',
-    category: 'web',
-    features: ['Frontend & Backend', 'Database Design', 'Security Implementation', 'Testing']
-  },
-  {
-    title: 'Mobile Development',
-    icon: DevicePhoneMobileIcon,
-    description: 'Cross-platform mobile applications for iOS and Android using modern frameworks.',
-    category: 'web',
-    features: ['React Native', 'Cross-platform', 'Native Performance', 'App Store Deployment']
-  },
-  {
-    title: 'UI/UX Design',
-    icon: PencilSquareIcon,
-    description: 'User-centered design solutions that prioritize usability and aesthetic appeal.',
-    category: 'design',
-    features: ['User Research', 'Wireframing', 'Prototyping', 'Design Systems']
-  },
-  {
-    title: 'Digital Marketing',
-    icon: MegaphoneIcon,
-    description: 'Comprehensive digital marketing strategies to grow your online presence.',
-    category: 'design',
-    features: ['SEO Optimization', 'Content Strategy', 'Social Media', 'Analytics']
-  },
-  {
-    title: 'E-Commerce Solutions',
-    icon: ShoppingCartIcon,
-    description: 'Complete e-commerce platforms with payment integration and inventory management.',
-    category: 'infrastructure',
-    features: ['Payment Processing', 'Inventory Management', 'Order Processing', 'Customer Portal']
-  },
-  {
-    title: 'DevOps & Infrastructure',
-    icon: CloudArrowUpIcon,
-    description: 'Streamlined deployment pipelines and scalable cloud infrastructure solutions.',
-    category: 'infrastructure',
-    features: ['CI/CD Pipelines', 'Cloud Infrastructure', 'Monitoring', 'Security']
-  },
-];
-
 export default function ServicesSection() {
+  const { dir } = useTranslations();
+  const t = useSectionTranslations('services.main');
+  const tServices = useSectionTranslations('services.list');
+  const tCommon = useSectionTranslations('common');
+
+  const categories = [
+    { key: 'automation', label: t('categories.automation') },
+    { key: 'ai', label: t('categories.ai') },
+    { key: 'web', label: t('categories.web') },
+    { key: 'design', label: t('categories.design') },
+    { key: 'infrastructure', label: t('categories.infrastructure') },
+  ];
+
+  const services = [
+    {
+      title: tServices('pythonAutomation.title'),
+      icon: Cog6ToothIcon,
+      description: tServices('pythonAutomation.description'),
+      category: 'automation',
+      features: tServices('pythonAutomation.features')
+    },
+    {
+      title: tServices('dataAnalytics.title'),
+      icon: ChartBarSquareIcon,
+      description: tServices('dataAnalytics.description'),
+      category: 'automation',
+      features: tServices('dataAnalytics.features')
+    },
+    {
+      title: tServices('machineLearning.title'),
+      icon: CubeIcon,
+      description: tServices('machineLearning.description'),
+      category: 'ai',
+      features: tServices('machineLearning.features')
+    },
+    {
+      title: tServices('aiIntegration.title'),
+      icon: PhotoIcon,
+      description: tServices('aiIntegration.description'),
+      category: 'ai',
+      features: tServices('aiIntegration.features')
+    },
+    {
+      title: tServices('conversationalAI.title'),
+      icon: ChatBubbleBottomCenterTextIcon,
+      description: tServices('conversationalAI.description'),
+      category: 'ai',
+      features: tServices('conversationalAI.features')
+    },
+    {
+      title: tServices('apiDevelopment.title'),
+      icon: LinkIcon,
+      description: tServices('apiDevelopment.description'),
+      category: 'web',
+      features: tServices('apiDevelopment.features')
+    },
+    {
+      title: tServices('webApplications.title'),
+      icon: ComputerDesktopIcon,
+      description: tServices('webApplications.description'),
+      category: 'web',
+      features: tServices('webApplications.features')
+    },
+    {
+      title: tServices('fullStackDevelopment.title'),
+      icon: CodeBracketSquareIcon,
+      description: tServices('fullStackDevelopment.description'),
+      category: 'web',
+      features: tServices('fullStackDevelopment.features')
+    },
+    {
+      title: tServices('mobileDevelopment.title'),
+      icon: DevicePhoneMobileIcon,
+      description: tServices('mobileDevelopment.description'),
+      category: 'web',
+      features: tServices('mobileDevelopment.features')
+    },
+    {
+      title: tServices('uiuxDesign.title'),
+      icon: PencilSquareIcon,
+      description: tServices('uiuxDesign.description'),
+      category: 'design',
+      features: tServices('uiuxDesign.features')
+    },
+    {
+      title: tServices('digitalMarketing.title'),
+      icon: MegaphoneIcon,
+      description: tServices('digitalMarketing.description'),
+      category: 'design',
+      features: tServices('digitalMarketing.features')
+    },
+    {
+      title: tServices('ecommerceSolutions.title'),
+      icon: ShoppingCartIcon,
+      description: tServices('ecommerceSolutions.description'),
+      category: 'infrastructure',
+      features: tServices('ecommerceSolutions.features')
+    },
+    {
+      title: tServices('devopsInfrastructure.title'),
+      icon: CloudArrowUpIcon,
+      description: tServices('devopsInfrastructure.description'),
+      category: 'infrastructure',
+      features: tServices('devopsInfrastructure.features')
+    },
+  ];
+
   const [activeCategory, setActiveCategory] = useState(categories[0].key);
   const filteredServices = services.filter(service => service.category === activeCategory);
 
@@ -148,17 +154,17 @@ export default function ServicesSection() {
   };
 
   return (
-    <section className="section bg-white relative overflow-hidden">
+    <section className="section bg-white relative overflow-hidden" dir={dir}>
       {/* Proper Crescent Elements */}
-      <div className="absolute top-32 right-16 w-28 h-28">
-        <div className="crescent crescent-right crescent-subtle text-gray-900" />
+      <div className={`absolute top-32 w-28 h-28 ${dir === 'rtl' ? 'left-16' : 'right-16'}`}>
+        <div className={`crescent ${dir === 'rtl' ? 'crescent-left' : 'crescent-right'} crescent-subtle text-gray-900`} />
       </div>
 
       <div className="container mx-auto">
         <SectionHeader
-          eyebrow="What We Do"
-          title="Our Services"
-          subtitle="We deliver comprehensive digital solutions that drive growth and efficiency for modern businesses."
+          eyebrow={t('eyebrow')}
+          title={t('title')}
+          subtitle={t('subtitle')}
           className="mb-16"
         />
 
@@ -216,12 +222,19 @@ export default function ServicesSection() {
 
                 {/* Features */}
                 <div className="space-y-2 mb-8">
-                  {service.features.map((feature) => (
-                    <div key={feature} className="flex items-center gap-3">
+                  {Array.isArray(service.features) ? (
+                    service.features.map((feature, idx) => (
+                      <div key={idx} className="flex items-center gap-3">
+                        <div className="w-1 h-1 bg-gray-400 rounded-full" />
+                        <span className="text-caption text-gray-500">{feature}</span>
+                      </div>
+                    ))
+                  ) : (
+                    <div className="flex items-center gap-3">
                       <div className="w-1 h-1 bg-gray-400 rounded-full" />
-                      <span className="text-caption text-gray-500">{feature}</span>
+                      <span className="text-caption text-gray-500">{service.features}</span>
                     </div>
-                  ))}
+                  )}
                 </div>
 
                 {/* CTA */}
@@ -231,12 +244,13 @@ export default function ServicesSection() {
                   size="sm"
                   rightIcon={
                     <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} 
+                            d={dir === 'rtl' ? "M11 17l-5-5m0 0l5-5m-5 5h12" : "M13 7l5 5m0 0l-5 5m5-5H6"} />
                     </svg>
                   }
                   className="w-full justify-between"
                 >
-                  Learn More
+                  {tCommon('learnMore')}
                 </Button>
               </motion.div>
             );
@@ -252,10 +266,10 @@ export default function ServicesSection() {
           className="text-center mt-16 pt-16 border-t border-gray-200"
         >
           <h3 className="text-title text-gray-900 mb-4">
-            Ready to Get Started?
+            {t('readyToStart')}
           </h3>
           <p className="text-body text-gray-600 mb-8 max-w-lg mx-auto">
-            Let's discuss your project and explore how we can help you achieve your goals.
+            {t('readyDescription')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -263,14 +277,14 @@ export default function ServicesSection() {
               variant="primary"
               size="lg"
             >
-              Start a Project
+              {t('startProject')}
             </Button>
             <Button
               href="/projects"
               variant="secondary"
               size="lg"
             >
-              View Our Work
+              {t('viewWork')}
             </Button>
           </div>
         </motion.div>

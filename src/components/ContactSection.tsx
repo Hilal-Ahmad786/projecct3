@@ -11,8 +11,14 @@ import {
   MapPinIcon,
   ClockIcon 
 } from '@heroicons/react/24/outline';
+import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function ContactSection() {
+  const { dir } = useTranslations();
+  const t = useSectionTranslations('contact');
+  const tCommon = useSectionTranslations('common');
+  const tForms = useSectionTranslations('forms');
+
   const [form, setForm] = useState({ name: '', email: '', message: '', subject: '' });
   const [sending, setSending] = useState(false);
 
@@ -37,49 +43,49 @@ export default function ContactSection() {
   const contactMethods = [
     {
       icon: EnvelopeIcon,
-      title: 'Email',
-      value: 'info@paktechnology.com',
+      title: t('hero.contactMethods.email.label'),
+      value: t('hero.contactMethods.email.value'),
       href: 'mailto:info@paktechnology.com',
-      description: 'Send us an email anytime'
+      description: t('info.visitOffice')
     },
     {
       icon: PhoneIcon,
-      title: 'Phone',
-      value: '+90 552 567 71 64',
+      title: t('hero.contactMethods.phone.label'),
+      value: t('hero.contactMethods.phone.value'),
       href: 'tel:+905525677164',
-      description: 'Mon-Fri from 9am to 6pm'
+      description: t('info.schedule.mondayFridayTime')
     },
     {
       icon: MapPinIcon,
-      title: 'Location',
-      value: 'Yozgat, Turkey',
+      title: t('info.ourLocation'),
+      value: t('info.ourLocation'),
       href: 'https://maps.google.com/maps?q=Yozgat,Turkey',
-      description: 'Visit our office'
+      description: t('info.visitOffice')
     },
     {
       icon: ClockIcon,
-      title: 'Response Time',
-      value: '< 24 hours',
+      title: t('hero.contactMethods.responseTime.label'),
+      value: t('hero.contactMethods.responseTime.value'),
       href: null,
-      description: 'Average response time'
+      description: t('info.schedule.mondayFridayTime')
     }
   ];
 
   const subjects = [
-    'General Inquiry',
-    'Web Development',
-    'Mobile App Development',
-    'AI/ML Solutions',
-    'Digital Marketing',
-    'Technical Support',
-    'Partnership',
-    'Other'
+    t('form.subjects.generalInquiry'),
+    t('form.subjects.webDevelopment'),
+    t('form.subjects.mobileApp'),
+    t('form.subjects.aiSolutions'),
+    t('form.subjects.digitalMarketing'),
+    t('form.subjects.technicalSupport'),
+    t('form.subjects.partnership'),
+    t('form.subjects.other')
   ];
 
   return (
-    <section className="section bg-gray-50 relative overflow-hidden">
+    <section className="section bg-gray-50 relative overflow-hidden" dir={dir}>
       {/* Subtle geometric background */}
-      <div className="absolute bottom-16 left-16 w-20 h-20 opacity-[0.03]">
+      <div className={`absolute bottom-16 w-20 h-20 opacity-[0.03] ${dir === 'rtl' ? 'right-16' : 'left-16'}`}>
         <div 
           className="w-full h-full border border-gray-900"
           style={{ clipPath: 'circle(45% at 30% 70%)' }}
@@ -88,23 +94,23 @@ export default function ContactSection() {
 
       <div className="container mx-auto">
         <SectionHeader
-          eyebrow="Get In Touch"
-          title="Let's Start a Conversation"
-          subtitle="Ready to transform your digital presence? We'd love to hear about your project and explore how we can help you achieve your goals."
+          eyebrow={t('hero.eyebrow')}
+          title={t('hero.title')}
+          subtitle={t('hero.description')}
           className="mb-16"
         />
 
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Contact Information */}
           <motion.div
-            initial={{ opacity: 0, x: -32 }}
+            initial={{ opacity: 0, x: dir === 'rtl' ? 32 : -32 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
             className="space-y-8"
           >
             <div>
-              <h3 className="text-title text-gray-900 mb-6">How to Reach Us</h3>
+              <h3 className="text-title text-gray-900 mb-6">{t('info.howToReach')}</h3>
               <div className="grid sm:grid-cols-2 gap-6">
                 {contactMethods.map(({ icon: Icon, title, value, href, description }) => (
                   <div key={title} className="card">
@@ -139,19 +145,19 @@ export default function ContactSection() {
 
             {/* Office Hours */}
             <div className="card">
-              <h4 className="font-medium text-gray-900 mb-4">Office Hours</h4>
+              <h4 className="font-medium text-gray-900 mb-4">{t('info.officeHours')}</h4>
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
-                  <span className="text-gray-600">Monday - Friday</span>
-                  <span className="text-gray-900">9:00 AM - 6:00 PM</span>
+                  <span className="text-gray-600">{t('info.schedule.mondayFriday')}</span>
+                  <span className="text-gray-900">{t('info.schedule.mondayFridayTime')}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-gray-600">Saturday</span>
-                  <span className="text-gray-900">10:00 AM - 4:00 PM</span>
+                  <span className="text-gray-600">{t('info.schedule.saturday')}</span>
+                  <span className="text-gray-900">{t('info.schedule.saturdayTime')}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-gray-600">Sunday</span>
-                  <span className="text-gray-900">Closed</span>
+                  <span className="text-gray-600">{t('info.schedule.sunday')}</span>
+                  <span className="text-gray-900">{t('info.schedule.sundayTime')}</span>
                 </div>
               </div>
             </div>
@@ -164,7 +170,7 @@ export default function ContactSection() {
                   className="w-full h-full border-0"
                   allowFullScreen
                   loading="lazy"
-                  title="Our Location"
+                  title={t('info.ourLocation')}
                 />
               </div>
             </div>
@@ -172,19 +178,19 @@ export default function ContactSection() {
 
           {/* Contact Form */}
           <motion.div
-            initial={{ opacity: 0, x: 32 }}
+            initial={{ opacity: 0, x: dir === 'rtl' ? -32 : 32 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
             <form onSubmit={handleSubmit} className="card">
-              <h3 className="text-title text-gray-900 mb-6">Send us a Message</h3>
+              <h3 className="text-title text-gray-900 mb-6">{t('form.title')}</h3>
               
               <div className="space-y-6">
                 {/* Name */}
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                    Full Name *
+                    {t('form.fullName')} *
                   </label>
                   <input
                     type="text"
@@ -194,14 +200,14 @@ export default function ContactSection() {
                     value={form.name}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-200 rounded-sm text-sm focus:outline-none focus:border-gray-400 transition-colors"
-                    placeholder="Enter your full name"
+                    placeholder={t('form.fullNamePlaceholder')}
                   />
                 </div>
 
                 {/* Email */}
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                    Email Address *
+                    {t('form.emailAddress')} *
                   </label>
                   <input
                     type="email"
@@ -211,14 +217,14 @@ export default function ContactSection() {
                     value={form.email}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-200 rounded-sm text-sm focus:outline-none focus:border-gray-400 transition-colors"
-                    placeholder="Enter your email address"
+                    placeholder={t('form.emailPlaceholder')}
                   />
                 </div>
 
                 {/* Subject */}
                 <div>
                   <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                    Subject *
+                    {t('form.subject')} *
                   </label>
                   <select
                     id="subject"
@@ -228,7 +234,7 @@ export default function ContactSection() {
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-200 rounded-sm text-sm focus:outline-none focus:border-gray-400 transition-colors bg-white"
                   >
-                    <option value="">Select a subject</option>
+                    <option value="">{t('form.subjectPlaceholder')}</option>
                     {subjects.map((subject) => (
                       <option key={subject} value={subject}>
                         {subject}
@@ -240,7 +246,7 @@ export default function ContactSection() {
                 {/* Message */}
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                    Message *
+                    {t('form.message')} *
                   </label>
                   <textarea
                     id="message"
@@ -250,14 +256,14 @@ export default function ContactSection() {
                     value={form.message}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-200 rounded-sm text-sm focus:outline-none focus:border-gray-400 transition-colors resize-none"
-                    placeholder="Tell us about your project or inquiry..."
+                    placeholder={t('form.messagePlaceholder')}
                   />
                 </div>
 
                 {/* Submit Button */}
                 <div className="flex items-center justify-between pt-4">
                   <p className="text-xs text-gray-500">
-                    * Required fields
+                    * {t('form.requiredFields')}
                   </p>
                   <Button
                     type="submit"
@@ -273,7 +279,7 @@ export default function ContactSection() {
                       ) : undefined
                     }
                   >
-                    {sending ? 'Sending...' : 'Send Message'}
+                    {sending ? t('form.sending') : t('form.sendMessage')}
                   </Button>
                 </div>
               </div>
@@ -281,25 +287,25 @@ export default function ContactSection() {
 
             {/* Additional Info */}
             <div className="mt-6 p-6 bg-white border border-gray-200 rounded-sm">
-              <h4 className="font-medium text-gray-900 mb-3">What Happens Next?</h4>
+              <h4 className="font-medium text-gray-900 mb-3">{t('nextSteps.title')}</h4>
               <div className="space-y-3 text-sm text-gray-600">
                 <div className="flex items-start gap-3">
                   <div className="w-5 h-5 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-xs font-medium text-gray-600">1</span>
                   </div>
-                  <span>We'll review your message within 24 hours</span>
+                  <span>{t('nextSteps.step1')}</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-5 h-5 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-xs font-medium text-gray-600">2</span>
                   </div>
-                  <span>Our team will reach out to discuss your project</span>
+                  <span>{t('nextSteps.step2')}</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-5 h-5 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-xs font-medium text-gray-600">3</span>
                   </div>
-                  <span>We'll provide a detailed proposal and timeline</span>
+                  <span>{t('nextSteps.step3')}</span>
                 </div>
               </div>
             </div>

@@ -2568,63 +2568,69 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$mo
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SectionHeader$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/SectionHeader.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$ChevronLeftIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronLeftIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/@heroicons/react/24/outline/esm/ChevronLeftIcon.js [app-ssr] (ecmascript) <export default as ChevronLeftIcon>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$ChevronRightIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRightIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/@heroicons/react/24/outline/esm/ChevronRightIcon.js [app-ssr] (ecmascript) <export default as ChevronRightIcon>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/hooks/useTranslations.tsx [app-ssr] (ecmascript)");
 'use client';
 ;
 ;
 ;
 ;
 ;
-const testimonials = [
-    {
-        author: 'Sarah Johnson',
-        role: 'CEO, TechStart',
-        company: 'TechStart Solutions',
-        text: 'PakTechnology delivered exactly what we needed. Their attention to detail and professional approach made our project a complete success.',
-        rating: 5
-    },
-    {
-        author: 'Michael Chen',
-        role: 'Product Manager',
-        company: 'InnovateLab',
-        text: 'Outstanding work on our mobile application. The team was responsive, skilled, and delivered on time. Highly recommended.',
-        rating: 5
-    },
-    {
-        author: 'Emily Rodriguez',
-        role: 'Marketing Director',
-        company: 'GrowthCo',
-        text: 'Their digital marketing strategy increased our online presence significantly. Professional service with measurable results.',
-        rating: 5
-    },
-    {
-        author: 'David Wilson',
-        role: 'CTO',
-        company: 'DataFlow Inc',
-        text: 'Excellent automation solutions that streamlined our processes. The ROI was evident within the first month of implementation.',
-        rating: 5
-    },
-    {
-        author: 'Lisa Thompson',
-        role: 'Founder',
-        company: 'EcoSmart',
-        text: 'From concept to launch, they guided us through every step. Our e-commerce platform exceeded all expectations.',
-        rating: 5
-    },
-    {
-        author: 'James Park',
-        role: 'Operations Manager',
-        company: 'LogiTech Pro',
-        text: 'The AI solutions they implemented have transformed how we handle customer inquiries. Impressive technical expertise.',
-        rating: 5
-    }
-];
+;
 function TestimonialsSection() {
     const containerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const { dir } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTranslations"])();
+    const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSectionTranslations"])('testimonials');
+    const tStats = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSectionTranslations"])('stats');
+    const testimonials = t('list') ? JSON.parse(JSON.stringify(t('list'))) : [
+        {
+            author: 'Sarah Johnson',
+            role: 'CEO',
+            company: 'TechStart Solutions',
+            text: 'PakTechnology delivered exactly what we needed. Their attention to detail and professional approach made our project a complete success.',
+            rating: 5
+        },
+        {
+            author: 'Michael Chen',
+            role: 'Product Manager',
+            company: 'InnovateLab',
+            text: 'Outstanding work on our mobile application. The team was responsive, skilled, and delivered on time. Highly recommended.',
+            rating: 5
+        },
+        {
+            author: 'Emily Rodriguez',
+            role: 'Marketing Director',
+            company: 'GrowthCo',
+            text: 'Their digital marketing strategy increased our online presence significantly. Professional service with measurable results.',
+            rating: 5
+        },
+        {
+            author: 'David Wilson',
+            role: 'CTO',
+            company: 'DataFlow Inc',
+            text: 'Excellent automation solutions that streamlined our processes. The ROI was evident within the first month of implementation.',
+            rating: 5
+        },
+        {
+            author: 'Lisa Thompson',
+            role: 'Founder',
+            company: 'EcoSmart',
+            text: 'From concept to launch, they guided us through every step. Our e-commerce platform exceeded all expectations.',
+            rating: 5
+        },
+        {
+            author: 'James Park',
+            role: 'Operations Manager',
+            company: 'LogiTech Pro',
+            text: 'The AI solutions they implemented have transformed how we handle customer inquiries. Impressive technical expertise.',
+            rating: 5
+        }
+    ];
     const scrollBy = (direction)=>{
         if (containerRef.current) {
             const scrollAmount = 320;
+            const scrollDirection = dir === 'rtl' ? direction === 'left' ? 1 : -1 : direction === 'left' ? -1 : 1;
             containerRef.current.scrollBy({
-                left: direction === 'left' ? -scrollAmount : scrollAmount,
+                left: scrollAmount * scrollDirection,
                 behavior: 'smooth'
             });
         }
@@ -2659,11 +2665,30 @@ function TestimonialsSection() {
             }
         }
     };
+    const stats = [
+        {
+            value: tStats('clientSatisfaction95'),
+            label: t('clientSatisfaction')
+        },
+        {
+            value: tStats('projects150'),
+            label: t('projectsCompleted')
+        },
+        {
+            value: tStats('clients50'),
+            label: t('happyClients')
+        },
+        {
+            value: tStats('responseTime24h'),
+            label: t('averageResponse')
+        }
+    ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "section bg-white relative overflow-hidden",
+        dir: dir,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute top-16 left-20 w-16 h-16 opacity-[0.02]",
+                className: `absolute top-16 w-16 h-16 opacity-[0.02] ${dir === 'rtl' ? 'right-20' : 'left-20'}`,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "w-full h-full border border-gray-900",
                     style: {
@@ -2671,32 +2696,32 @@ function TestimonialsSection() {
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/components/TestimonialsSection.tsx",
-                    lineNumber: 90,
+                    lineNumber: 102,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TestimonialsSection.tsx",
-                lineNumber: 89,
+                lineNumber: 101,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "container mx-auto",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SectionHeader$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                        eyebrow: "Client Feedback",
-                        title: "What Our Clients Say",
-                        subtitle: "Don't just take our word for it. Here's what our clients have to say about working with us.",
+                        eyebrow: t('eyebrow'),
+                        title: t('title'),
+                        subtitle: t('subtitle'),
                         className: "mb-16"
                     }, void 0, false, {
                         fileName: "[project]/src/components/TestimonialsSection.tsx",
-                        lineNumber: 97,
+                        lineNumber: 109,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "relative",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex justify-end gap-2 mb-8",
+                                className: `flex justify-end gap-2 mb-8 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`,
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: ()=>scrollBy('left'),
@@ -2706,12 +2731,12 @@ function TestimonialsSection() {
                                             className: "h-5 w-5 text-gray-600"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/TestimonialsSection.tsx",
-                                            lineNumber: 112,
+                                            lineNumber: 124,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/TestimonialsSection.tsx",
-                                        lineNumber: 107,
+                                        lineNumber: 119,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2722,18 +2747,18 @@ function TestimonialsSection() {
                                             className: "h-5 w-5 text-gray-600"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/TestimonialsSection.tsx",
-                                            lineNumber: 119,
+                                            lineNumber: 131,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/TestimonialsSection.tsx",
-                                        lineNumber: 114,
+                                        lineNumber: 126,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/TestimonialsSection.tsx",
-                                lineNumber: 106,
+                                lineNumber: 118,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -2744,7 +2769,7 @@ function TestimonialsSection() {
                                     once: true
                                 },
                                 ref: containerRef,
-                                className: "flex gap-6 overflow-x-auto scrollbar-hide pb-4",
+                                className: `flex gap-6 overflow-x-auto scrollbar-hide pb-4 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`,
                                 style: {
                                     scrollSnapType: 'x mandatory'
                                 },
@@ -2768,17 +2793,17 @@ function TestimonialsSection() {
                                                                 d: "M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-10zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/TestimonialsSection.tsx",
-                                                                lineNumber: 144,
+                                                                lineNumber: 156,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/TestimonialsSection.tsx",
-                                                            lineNumber: 143,
+                                                            lineNumber: 155,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/TestimonialsSection.tsx",
-                                                        lineNumber: 142,
+                                                        lineNumber: 154,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2793,23 +2818,23 @@ function TestimonialsSection() {
                                                                     d: "M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/TestimonialsSection.tsx",
-                                                                    lineNumber: 152,
+                                                                    lineNumber: 164,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             }, i, false, {
                                                                 fileName: "[project]/src/components/TestimonialsSection.tsx",
-                                                                lineNumber: 151,
+                                                                lineNumber: 163,
                                                                 columnNumber: 23
                                                             }, this))
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/TestimonialsSection.tsx",
-                                                        lineNumber: 149,
+                                                        lineNumber: 161,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/TestimonialsSection.tsx",
-                                                lineNumber: 141,
+                                                lineNumber: 153,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2821,7 +2846,7 @@ function TestimonialsSection() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/TestimonialsSection.tsx",
-                                                lineNumber: 159,
+                                                lineNumber: 171,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2834,12 +2859,12 @@ function TestimonialsSection() {
                                                             children: testimonial.author.charAt(0)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/TestimonialsSection.tsx",
-                                                            lineNumber: 166,
+                                                            lineNumber: 178,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/TestimonialsSection.tsx",
-                                                        lineNumber: 165,
+                                                        lineNumber: 177,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2849,7 +2874,7 @@ function TestimonialsSection() {
                                                                 children: testimonial.author
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/TestimonialsSection.tsx",
-                                                                lineNumber: 171,
+                                                                lineNumber: 183,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2857,7 +2882,7 @@ function TestimonialsSection() {
                                                                 children: testimonial.role
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/TestimonialsSection.tsx",
-                                                                lineNumber: 172,
+                                                                lineNumber: 184,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2865,36 +2890,36 @@ function TestimonialsSection() {
                                                                 children: testimonial.company
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/TestimonialsSection.tsx",
-                                                                lineNumber: 173,
+                                                                lineNumber: 185,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/TestimonialsSection.tsx",
-                                                        lineNumber: 170,
+                                                        lineNumber: 182,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/TestimonialsSection.tsx",
-                                                lineNumber: 164,
+                                                lineNumber: 176,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, index, true, {
                                         fileName: "[project]/src/components/TestimonialsSection.tsx",
-                                        lineNumber: 134,
+                                        lineNumber: 146,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TestimonialsSection.tsx",
-                                lineNumber: 124,
+                                lineNumber: 136,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/TestimonialsSection.tsx",
-                        lineNumber: 104,
+                        lineNumber: 116,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -2914,24 +2939,7 @@ function TestimonialsSection() {
                             once: true
                         },
                         className: "grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-16 border-t border-gray-200",
-                        children: [
-                            {
-                                value: "98%",
-                                label: "Client Satisfaction"
-                            },
-                            {
-                                value: "150+",
-                                label: "Projects Completed"
-                            },
-                            {
-                                value: "50+",
-                                label: "Happy Clients"
-                            },
-                            {
-                                value: "24h",
-                                label: "Average Response"
-                            }
-                        ].map((stat, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        children: stats.map((stat, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "text-center",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2939,7 +2947,7 @@ function TestimonialsSection() {
                                         children: stat.value
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/TestimonialsSection.tsx",
-                                        lineNumber: 196,
+                                        lineNumber: 203,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2947,30 +2955,30 @@ function TestimonialsSection() {
                                         children: stat.label
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/TestimonialsSection.tsx",
-                                        lineNumber: 199,
+                                        lineNumber: 206,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, stat.label, true, {
                                 fileName: "[project]/src/components/TestimonialsSection.tsx",
-                                lineNumber: 195,
+                                lineNumber: 202,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/TestimonialsSection.tsx",
-                        lineNumber: 182,
+                        lineNumber: 194,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/TestimonialsSection.tsx",
-                lineNumber: 96,
+                lineNumber: 108,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/TestimonialsSection.tsx",
-        lineNumber: 87,
+        lineNumber: 99,
         columnNumber: 5
     }, this);
 }

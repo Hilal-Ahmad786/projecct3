@@ -18,91 +18,96 @@ import {
   FaMedium,
   FaDiscord
 } from 'react-icons/fa';
+import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function Footer() {
+  const { dir } = useTranslations();
+  const t = useSectionTranslations('footer');
+  const tCommon = useSectionTranslations('common');
+
   const quickLinks = [
-    { label: 'Home', href: '/' },
-    { label: 'Services', href: '/services' },
-    { label: 'Projects', href: '/projects' },
-    { label: 'Blog', href: '/blog' },
-    { label: 'About', href: '/about' },
-    { label: 'Contact', href: '/contact' },
+    { label: t('quickLinks.home'), href: '/' },
+    { label: t('quickLinks.services'), href: '/services' },
+    { label: t('quickLinks.projects'), href: '/projects' },
+    { label: t('quickLinks.blog'), href: '/blog' },
+    { label: t('quickLinks.about'), href: '/about' },
+    { label: t('quickLinks.contact'), href: '/contact' },
   ];
 
   const services = [
-    { label: 'Web Development', href: '/services#web' },
-    { label: 'Mobile Apps', href: '/services#mobile' },
-    { label: 'AI Solutions', href: '/services#ai' },
-    { label: 'Automation', href: '/services#automation' },
-    { label: 'Digital Marketing', href: '/services#marketing' },
-    { label: 'DevOps', href: '/services#devops' },
+    { label: t('servicesList.webDevelopment'), href: '/services#web' },
+    { label: t('servicesList.mobileApps'), href: '/services#mobile' },
+    { label: t('servicesList.aiSolutions'), href: '/services#ai' },
+    { label: t('servicesList.automation'), href: '/services#automation' },
+    { label: t('servicesList.digitalMarketing'), href: '/services#marketing' },
+    { label: t('servicesList.devops'), href: '/services#devops' },
   ];
 
   const socialLinks = [
     { 
       icon: FaLinkedin, 
       href: 'https://linkedin.com/company/paktechnology',
-      label: 'LinkedIn'
+      label: t('socialMedia.linkedin')
     },
     { 
       icon: FaTwitter, 
       href: 'https://twitter.com/paktechnology',
-      label: 'Twitter'
+      label: t('socialMedia.twitter')
     },
     { 
       icon: FaGithub, 
       href: 'https://github.com/paktechnology',
-      label: 'GitHub'
+      label: t('socialMedia.github')
     },
     { 
       icon: FaInstagram, 
       href: 'https://instagram.com/paktechnology',
-      label: 'Instagram'
+      label: t('socialMedia.instagram')
     },
     { 
       icon: FaYoutube, 
       href: 'https://youtube.com/@paktechnology',
-      label: 'YouTube'
+      label: t('socialMedia.youtube')
     },
     { 
       icon: FaDribbble, 
       href: 'https://dribbble.com/paktechnology',
-      label: 'Dribbble'
+      label: t('socialMedia.dribbble')
     },
     { 
       icon: FaBehance, 
       href: 'https://behance.net/paktechnology',
-      label: 'Behance'
+      label: t('socialMedia.behance')
     },
     { 
       icon: FaMedium, 
       href: 'https://medium.com/@paktechnology',
-      label: 'Medium'
+      label: t('socialMedia.medium')
     },
     { 
       icon: FaDiscord, 
       href: 'https://discord.gg/paktechnology',
-      label: 'Discord'
+      label: t('socialMedia.discord')
     }
   ];
 
   const contactInfo = [
     {
       icon: FaEnvelope,
-      label: 'Email',
-      value: 'info@paktechnology.com',
+      label: t('contactInfo.email.label'),
+      value: t('contactInfo.email.value'),
       href: 'mailto:info@paktechnology.com'
     },
     {
       icon: FaPhone,
-      label: 'Phone',
-      value: '+90 552 567 71 64',
+      label: t('contactInfo.phone.label'),
+      value: t('contactInfo.phone.value'),
       href: 'tel:+905525677164'
     },
     {
       icon: FaMapMarkerAlt,
-      label: 'Location',
-      value: 'Yozgat, Turkey',
+      label: t('contactInfo.location.label'),
+      value: t('contactInfo.location.value'),
       href: 'https://maps.google.com/maps?q=Yozgat,Turkey'
     },
   ];
@@ -112,7 +117,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gray-900 text-white relative overflow-hidden pt-16">
+    <footer className="bg-gray-900 text-white relative overflow-hidden pt-16" dir={dir}>
       {/* Swiss Grid Background */}
       <div className="absolute inset-0 opacity-[0.02]">
         <div 
@@ -128,7 +133,7 @@ export default function Footer() {
       </div>
 
       {/* Subtle geometric background */}
-      <div className="absolute top-8 right-8 w-20 h-20 opacity-[0.03]">
+      <div className={`absolute top-8 w-20 h-20 opacity-[0.03] ${dir === 'rtl' ? 'left-8' : 'right-8'}`}>
         <div 
           className="w-full h-full border border-white"
           style={{ clipPath: 'circle(40% at 70% 30%)' }}
@@ -154,7 +159,7 @@ export default function Footer() {
             </div>
             
             <p className="text-body text-gray-300 mb-6 leading-relaxed max-w-xs">
-              Creating exceptional digital experiences through clean code, thoughtful design, and strategic thinking.
+              {t('description')}
             </p>
 
             {/* Social Links Grid */}
@@ -182,7 +187,7 @@ export default function Footer() {
             viewport={{ once: true }}
           >
             <h4 className="font-medium mb-6 text-gray-300 uppercase tracking-wide text-overline">
-              Navigation
+              {t('navigation')}
             </h4>
             <ul className="space-y-3">
               {quickLinks.map(({ label, href }) => (
@@ -191,7 +196,7 @@ export default function Footer() {
                     href={href} 
                     className="text-body text-gray-400 hover:text-white transition-colors flex items-center group"
                   >
-                    <span className="w-0 group-hover:w-2 h-px bg-white transition-all duration-250 mr-0 group-hover:mr-3" />
+                    <span className={`w-0 group-hover:w-2 h-px bg-white transition-all duration-250 ${dir === 'rtl' ? 'ml-0 group-hover:ml-3' : 'mr-0 group-hover:mr-3'}`} />
                     {label}
                   </Link>
                 </li>
@@ -207,7 +212,7 @@ export default function Footer() {
             viewport={{ once: true }}
           >
             <h4 className="font-medium mb-6 text-gray-300 uppercase tracking-wide text-overline">
-              Services
+              {t('services')}
             </h4>
             <ul className="space-y-3">
               {services.map(({ label, href }) => (
@@ -216,7 +221,7 @@ export default function Footer() {
                     href={href} 
                     className="text-body text-gray-400 hover:text-white transition-colors flex items-center group"
                   >
-                    <span className="w-0 group-hover:w-2 h-px bg-white transition-all duration-250 mr-0 group-hover:mr-3" />
+                    <span className={`w-0 group-hover:w-2 h-px bg-white transition-all duration-250 ${dir === 'rtl' ? 'ml-0 group-hover:ml-3' : 'mr-0 group-hover:mr-3'}`} />
                     {label}
                   </Link>
                 </li>
@@ -232,7 +237,7 @@ export default function Footer() {
             viewport={{ once: true }}
           >
             <h4 className="font-medium mb-6 text-gray-300 uppercase tracking-wide text-overline">
-              Contact
+              {t('contact')}
             </h4>
             <div className="space-y-4">
               {contactInfo.map(({ icon: Icon, label, value, href }) => (
@@ -265,18 +270,18 @@ export default function Footer() {
           className="border-t border-gray-800 pt-12 mb-12"
         >
           <div className="max-w-md mx-auto text-center">
-            <h3 className="text-title text-white mb-4">Stay Updated</h3>
+            <h3 className="text-title text-white mb-4">{t('stayUpdated')}</h3>
             <p className="text-body text-gray-400 mb-6">
-              Get the latest insights on technology and digital transformation.
+              {t('stayUpdatedDescription')}
             </p>
             <div className="flex gap-2">
               <input
                 type="email"
-                placeholder="Enter your email"
+                placeholder={t('emailPlaceholder')}
                 className="flex-1 px-4 py-3 bg-gray-800 border border-gray-700 rounded-sm text-sm text-white placeholder-gray-500 focus:outline-none focus:border-gray-600 transition-colors"
               />
               <button className="px-6 py-3 bg-white text-gray-900 rounded-sm text-sm font-medium hover:bg-gray-100 transition-colors">
-                Subscribe
+                {t('subscribe')}
               </button>
             </div>
           </div>
@@ -291,7 +296,7 @@ export default function Footer() {
             viewport={{ once: true }}
             className="text-body text-gray-400"
           >
-            © {new Date().getFullYear()} PakTechnology. All rights reserved.
+            © {new Date().getFullYear()} PakTechnology. {t('allRightsReserved')}
           </motion.p>
 
           <motion.button
@@ -301,9 +306,9 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.6 }}
             viewport={{ once: true }}
             className="flex items-center gap-2 text-body text-gray-400 hover:text-white transition-colors group"
-            aria-label="Scroll to top"
+            aria-label={tCommon('backToTop')}
           >
-            <span>Back to Top</span>
+            <span>{tCommon('backToTop')}</span>
             <ChevronUpIcon className="h-4 w-4 group-hover:-translate-y-0.5 transition-transform" />
           </motion.button>
         </div>

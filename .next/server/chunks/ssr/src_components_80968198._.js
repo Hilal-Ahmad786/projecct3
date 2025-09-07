@@ -606,6 +606,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SectionHeader$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/SectionHeader.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/Button.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/hooks/useTranslations.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$Cog6ToothIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Cog6ToothIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/@heroicons/react/24/outline/esm/Cog6ToothIcon.js [app-ssr] (ecmascript) <export default as Cog6ToothIcon>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$ChartBarSquareIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChartBarSquareIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/@heroicons/react/24/outline/esm/ChartBarSquareIcon.js [app-ssr] (ecmascript) <export default as ChartBarSquareIcon>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$CubeIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CubeIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/@heroicons/react/24/outline/esm/CubeIcon.js [app-ssr] (ecmascript) <export default as CubeIcon>");
@@ -626,187 +627,127 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$
 ;
 ;
 ;
-const categories = [
-    {
-        key: 'automation',
-        label: 'Automation'
-    },
-    {
-        key: 'ai',
-        label: 'AI Solutions'
-    },
-    {
-        key: 'web',
-        label: 'Development'
-    },
-    {
-        key: 'design',
-        label: 'Design & Marketing'
-    },
-    {
-        key: 'infrastructure',
-        label: 'Infrastructure'
-    }
-];
-const services = [
-    {
-        title: 'Python Automation',
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$Cog6ToothIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Cog6ToothIcon$3e$__["Cog6ToothIcon"],
-        description: 'Custom automation solutions with Python for streamlined business processes and data handling.',
-        category: 'automation',
-        features: [
-            'Process Automation',
-            'Data Scraping',
-            'Bot Development',
-            'Workflow Integration'
-        ]
-    },
-    {
-        title: 'Data Analytics',
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$ChartBarSquareIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChartBarSquareIcon$3e$__["ChartBarSquareIcon"],
-        description: 'Transform raw data into actionable insights with advanced analytics and visualization.',
-        category: 'automation',
-        features: [
-            'Data Visualization',
-            'Business Intelligence',
-            'Statistical Analysis',
-            'Report Generation'
-        ]
-    },
-    {
-        title: 'Machine Learning',
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$CubeIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CubeIcon$3e$__["CubeIcon"],
-        description: 'Custom ML models and intelligent systems tailored to your business requirements.',
-        category: 'ai',
-        features: [
-            'Predictive Analytics',
-            'Neural Networks',
-            'Computer Vision',
-            'NLP Solutions'
-        ]
-    },
-    {
-        title: 'AI Integration',
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$PhotoIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__PhotoIcon$3e$__["PhotoIcon"],
-        description: 'Seamlessly integrate AI capabilities into your existing systems and workflows.',
-        category: 'ai',
-        features: [
-            'API Integration',
-            'Model Deployment',
-            'Performance Optimization',
-            'Monitoring'
-        ]
-    },
-    {
-        title: 'Conversational AI',
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$ChatBubbleBottomCenterTextIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChatBubbleBottomCenterTextIcon$3e$__["ChatBubbleBottomCenterTextIcon"],
-        description: 'Intelligent chatbots and virtual assistants for enhanced customer engagement.',
-        category: 'ai',
-        features: [
-            'Natural Language Processing',
-            'Multi-language Support',
-            'Context Awareness',
-            'Learning Systems'
-        ]
-    },
-    {
-        title: 'API Development',
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$LinkIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__LinkIcon$3e$__["LinkIcon"],
-        description: 'Robust and scalable APIs for seamless system integration and data exchange.',
-        category: 'web',
-        features: [
-            'RESTful APIs',
-            'GraphQL',
-            'Authentication',
-            'Documentation'
-        ]
-    },
-    {
-        title: 'Web Applications',
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$ComputerDesktopIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ComputerDesktopIcon$3e$__["ComputerDesktopIcon"],
-        description: 'Modern, responsive web applications built with cutting-edge technologies.',
-        category: 'web',
-        features: [
-            'React/Next.js',
-            'Responsive Design',
-            'Performance Optimization',
-            'SEO Ready'
-        ]
-    },
-    {
-        title: 'Full-Stack Development',
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$CodeBracketSquareIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CodeBracketSquareIcon$3e$__["CodeBracketSquareIcon"],
-        description: 'Complete web solutions from database design to user interface implementation.',
-        category: 'web',
-        features: [
-            'Frontend & Backend',
-            'Database Design',
-            'Security Implementation',
-            'Testing'
-        ]
-    },
-    {
-        title: 'Mobile Development',
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$DevicePhoneMobileIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__DevicePhoneMobileIcon$3e$__["DevicePhoneMobileIcon"],
-        description: 'Cross-platform mobile applications for iOS and Android using modern frameworks.',
-        category: 'web',
-        features: [
-            'React Native',
-            'Cross-platform',
-            'Native Performance',
-            'App Store Deployment'
-        ]
-    },
-    {
-        title: 'UI/UX Design',
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$PencilSquareIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__PencilSquareIcon$3e$__["PencilSquareIcon"],
-        description: 'User-centered design solutions that prioritize usability and aesthetic appeal.',
-        category: 'design',
-        features: [
-            'User Research',
-            'Wireframing',
-            'Prototyping',
-            'Design Systems'
-        ]
-    },
-    {
-        title: 'Digital Marketing',
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$MegaphoneIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MegaphoneIcon$3e$__["MegaphoneIcon"],
-        description: 'Comprehensive digital marketing strategies to grow your online presence.',
-        category: 'design',
-        features: [
-            'SEO Optimization',
-            'Content Strategy',
-            'Social Media',
-            'Analytics'
-        ]
-    },
-    {
-        title: 'E-Commerce Solutions',
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$ShoppingCartIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ShoppingCartIcon$3e$__["ShoppingCartIcon"],
-        description: 'Complete e-commerce platforms with payment integration and inventory management.',
-        category: 'infrastructure',
-        features: [
-            'Payment Processing',
-            'Inventory Management',
-            'Order Processing',
-            'Customer Portal'
-        ]
-    },
-    {
-        title: 'DevOps & Infrastructure',
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$CloudArrowUpIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CloudArrowUpIcon$3e$__["CloudArrowUpIcon"],
-        description: 'Streamlined deployment pipelines and scalable cloud infrastructure solutions.',
-        category: 'infrastructure',
-        features: [
-            'CI/CD Pipelines',
-            'Cloud Infrastructure',
-            'Monitoring',
-            'Security'
-        ]
-    }
-];
+;
 function ServicesSection() {
+    const { dir } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTranslations"])();
+    const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSectionTranslations"])('services.main');
+    const tServices = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSectionTranslations"])('services.list');
+    const tCommon = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSectionTranslations"])('common');
+    const categories = [
+        {
+            key: 'automation',
+            label: t('categories.automation')
+        },
+        {
+            key: 'ai',
+            label: t('categories.ai')
+        },
+        {
+            key: 'web',
+            label: t('categories.web')
+        },
+        {
+            key: 'design',
+            label: t('categories.design')
+        },
+        {
+            key: 'infrastructure',
+            label: t('categories.infrastructure')
+        }
+    ];
+    const services = [
+        {
+            title: tServices('pythonAutomation.title'),
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$Cog6ToothIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Cog6ToothIcon$3e$__["Cog6ToothIcon"],
+            description: tServices('pythonAutomation.description'),
+            category: 'automation',
+            features: tServices('pythonAutomation.features')
+        },
+        {
+            title: tServices('dataAnalytics.title'),
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$ChartBarSquareIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChartBarSquareIcon$3e$__["ChartBarSquareIcon"],
+            description: tServices('dataAnalytics.description'),
+            category: 'automation',
+            features: tServices('dataAnalytics.features')
+        },
+        {
+            title: tServices('machineLearning.title'),
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$CubeIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CubeIcon$3e$__["CubeIcon"],
+            description: tServices('machineLearning.description'),
+            category: 'ai',
+            features: tServices('machineLearning.features')
+        },
+        {
+            title: tServices('aiIntegration.title'),
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$PhotoIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__PhotoIcon$3e$__["PhotoIcon"],
+            description: tServices('aiIntegration.description'),
+            category: 'ai',
+            features: tServices('aiIntegration.features')
+        },
+        {
+            title: tServices('conversationalAI.title'),
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$ChatBubbleBottomCenterTextIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChatBubbleBottomCenterTextIcon$3e$__["ChatBubbleBottomCenterTextIcon"],
+            description: tServices('conversationalAI.description'),
+            category: 'ai',
+            features: tServices('conversationalAI.features')
+        },
+        {
+            title: tServices('apiDevelopment.title'),
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$LinkIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__LinkIcon$3e$__["LinkIcon"],
+            description: tServices('apiDevelopment.description'),
+            category: 'web',
+            features: tServices('apiDevelopment.features')
+        },
+        {
+            title: tServices('webApplications.title'),
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$ComputerDesktopIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ComputerDesktopIcon$3e$__["ComputerDesktopIcon"],
+            description: tServices('webApplications.description'),
+            category: 'web',
+            features: tServices('webApplications.features')
+        },
+        {
+            title: tServices('fullStackDevelopment.title'),
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$CodeBracketSquareIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CodeBracketSquareIcon$3e$__["CodeBracketSquareIcon"],
+            description: tServices('fullStackDevelopment.description'),
+            category: 'web',
+            features: tServices('fullStackDevelopment.features')
+        },
+        {
+            title: tServices('mobileDevelopment.title'),
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$DevicePhoneMobileIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__DevicePhoneMobileIcon$3e$__["DevicePhoneMobileIcon"],
+            description: tServices('mobileDevelopment.description'),
+            category: 'web',
+            features: tServices('mobileDevelopment.features')
+        },
+        {
+            title: tServices('uiuxDesign.title'),
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$PencilSquareIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__PencilSquareIcon$3e$__["PencilSquareIcon"],
+            description: tServices('uiuxDesign.description'),
+            category: 'design',
+            features: tServices('uiuxDesign.features')
+        },
+        {
+            title: tServices('digitalMarketing.title'),
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$MegaphoneIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MegaphoneIcon$3e$__["MegaphoneIcon"],
+            description: tServices('digitalMarketing.description'),
+            category: 'design',
+            features: tServices('digitalMarketing.features')
+        },
+        {
+            title: tServices('ecommerceSolutions.title'),
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$ShoppingCartIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ShoppingCartIcon$3e$__["ShoppingCartIcon"],
+            description: tServices('ecommerceSolutions.description'),
+            category: 'infrastructure',
+            features: tServices('ecommerceSolutions.features')
+        },
+        {
+            title: tServices('devopsInfrastructure.title'),
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$CloudArrowUpIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CloudArrowUpIcon$3e$__["CloudArrowUpIcon"],
+            description: tServices('devopsInfrastructure.description'),
+            category: 'infrastructure',
+            features: tServices('devopsInfrastructure.features')
+        }
+    ];
     const [activeCategory, setActiveCategory] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(categories[0].key);
     const filteredServices = services.filter((service)=>service.category === activeCategory);
     const containerVariants = {
@@ -841,32 +782,33 @@ function ServicesSection() {
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "section bg-white relative overflow-hidden",
+        dir: dir,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute top-32 right-16 w-28 h-28",
+                className: `absolute top-32 w-28 h-28 ${dir === 'rtl' ? 'left-16' : 'right-16'}`,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "crescent crescent-right crescent-subtle text-gray-900"
+                    className: `crescent ${dir === 'rtl' ? 'crescent-left' : 'crescent-right'} crescent-subtle text-gray-900`
                 }, void 0, false, {
                     fileName: "[project]/src/components/ServicesSection.tsx",
-                    lineNumber: 154,
+                    lineNumber: 160,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/ServicesSection.tsx",
-                lineNumber: 153,
+                lineNumber: 159,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "container mx-auto",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SectionHeader$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                        eyebrow: "What We Do",
-                        title: "Our Services",
-                        subtitle: "We deliver comprehensive digital solutions that drive growth and efficiency for modern businesses.",
+                        eyebrow: t('eyebrow'),
+                        title: t('title'),
+                        subtitle: t('subtitle'),
                         className: "mb-16"
                     }, void 0, false, {
                         fileName: "[project]/src/components/ServicesSection.tsx",
-                        lineNumber: 158,
+                        lineNumber: 164,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -880,12 +822,12 @@ function ServicesSection() {
                                 children: category.label
                             }, category.key, false, {
                                 fileName: "[project]/src/components/ServicesSection.tsx",
-                                lineNumber: 168,
+                                lineNumber: 174,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/ServicesSection.tsx",
-                        lineNumber: 166,
+                        lineNumber: 172,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -908,25 +850,25 @@ function ServicesSection() {
                                                     className: "h-6 w-6 text-gray-700"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ServicesSection.tsx",
-                                                    lineNumber: 203,
+                                                    lineNumber: 209,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ServicesSection.tsx",
-                                                lineNumber: 202,
+                                                lineNumber: 208,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "w-8 h-0.5 bg-gray-200 group-hover:bg-gray-300 transition-colors"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ServicesSection.tsx",
-                                                lineNumber: 205,
+                                                lineNumber: 211,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/ServicesSection.tsx",
-                                        lineNumber: 201,
+                                        lineNumber: 207,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -934,7 +876,7 @@ function ServicesSection() {
                                         children: service.title
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ServicesSection.tsx",
-                                        lineNumber: 209,
+                                        lineNumber: 215,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -942,38 +884,61 @@ function ServicesSection() {
                                         children: service.description
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ServicesSection.tsx",
-                                        lineNumber: 213,
+                                        lineNumber: 219,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "space-y-2 mb-8",
-                                        children: service.features.map((feature)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        children: Array.isArray(service.features) ? service.features.map((feature, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "flex items-center gap-3",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "w-1 h-1 bg-gray-400 rounded-full"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/ServicesSection.tsx",
-                                                        lineNumber: 221,
-                                                        columnNumber: 23
+                                                        lineNumber: 228,
+                                                        columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "text-caption text-gray-500",
                                                         children: feature
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/ServicesSection.tsx",
-                                                        lineNumber: 222,
-                                                        columnNumber: 23
+                                                        lineNumber: 229,
+                                                        columnNumber: 25
                                                     }, this)
                                                 ]
-                                            }, feature, true, {
+                                            }, idx, true, {
                                                 fileName: "[project]/src/components/ServicesSection.tsx",
-                                                lineNumber: 220,
-                                                columnNumber: 21
-                                            }, this))
+                                                lineNumber: 227,
+                                                columnNumber: 23
+                                            }, this)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-center gap-3",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "w-1 h-1 bg-gray-400 rounded-full"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/ServicesSection.tsx",
+                                                    lineNumber: 234,
+                                                    columnNumber: 23
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-caption text-gray-500",
+                                                    children: service.features
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/ServicesSection.tsx",
+                                                    lineNumber: 235,
+                                                    columnNumber: 23
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/ServicesSection.tsx",
+                                            lineNumber: 233,
+                                            columnNumber: 21
+                                        }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ServicesSection.tsx",
-                                        lineNumber: 218,
+                                        lineNumber: 224,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -989,34 +954,34 @@ function ServicesSection() {
                                                 strokeLinecap: "round",
                                                 strokeLinejoin: "round",
                                                 strokeWidth: 2,
-                                                d: "M13 7l5 5m0 0l-5 5m5-5H6"
+                                                d: dir === 'rtl' ? "M11 17l-5-5m0 0l5-5m-5 5h12" : "M13 7l5 5m0 0l-5 5m5-5H6"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ServicesSection.tsx",
-                                                lineNumber: 234,
+                                                lineNumber: 247,
                                                 columnNumber: 23
                                             }, void 0)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ServicesSection.tsx",
-                                            lineNumber: 233,
+                                            lineNumber: 246,
                                             columnNumber: 21
                                         }, void 0),
                                         className: "w-full justify-between",
-                                        children: "Learn More"
+                                        children: tCommon('learnMore')
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ServicesSection.tsx",
-                                        lineNumber: 228,
+                                        lineNumber: 241,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, service.title, true, {
                                 fileName: "[project]/src/components/ServicesSection.tsx",
-                                lineNumber: 195,
+                                lineNumber: 201,
                                 columnNumber: 15
                             }, this);
                         })
                     }, activeCategory, false, {
                         fileName: "[project]/src/components/ServicesSection.tsx",
-                        lineNumber: 185,
+                        lineNumber: 191,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1039,18 +1004,18 @@ function ServicesSection() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                 className: "text-title text-gray-900 mb-4",
-                                children: "Ready to Get Started?"
+                                children: t('readyToStart')
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ServicesSection.tsx",
-                                lineNumber: 254,
+                                lineNumber: 268,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-body text-gray-600 mb-8 max-w-lg mx-auto",
-                                children: "Let's discuss your project and explore how we can help you achieve your goals."
+                                children: t('readyDescription')
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ServicesSection.tsx",
-                                lineNumber: 257,
+                                lineNumber: 271,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1060,44 +1025,44 @@ function ServicesSection() {
                                         href: "/contact",
                                         variant: "primary",
                                         size: "lg",
-                                        children: "Start a Project"
+                                        children: t('startProject')
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ServicesSection.tsx",
-                                        lineNumber: 261,
+                                        lineNumber: 275,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                         href: "/projects",
                                         variant: "secondary",
                                         size: "lg",
-                                        children: "View Our Work"
+                                        children: t('viewWork')
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ServicesSection.tsx",
-                                        lineNumber: 268,
+                                        lineNumber: 282,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/ServicesSection.tsx",
-                                lineNumber: 260,
+                                lineNumber: 274,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/ServicesSection.tsx",
-                        lineNumber: 247,
+                        lineNumber: 261,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/ServicesSection.tsx",
-                lineNumber: 157,
+                lineNumber: 163,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/ServicesSection.tsx",
-        lineNumber: 151,
+        lineNumber: 157,
         columnNumber: 5
     }, this);
 }
