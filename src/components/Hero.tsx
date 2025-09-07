@@ -4,16 +4,22 @@ import HeroRightEnhanced from '@/components/HeroRightEnhanced'
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import Button from '@/components/Button'
+import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations'
 
 export default function Hero() {
   const [mounted, setMounted] = useState(false)
   const [currentIndex, setCurrentIndex] = useState(0)
+  
+  const { dir } = useTranslations()
+  const t = useSectionTranslations('hero')
+  const tStats = useSectionTranslations('stats')
 
+  // Get services array from translations
   const services = [
-    "Web Development",
-    "Mobile Applications", 
-    "AI Solutions",
-    "Digital Marketing"
+    t('services.0'), // Web Development
+    t('services.1'), // Mobile Applications
+    t('services.2'), // AI Solutions
+    t('services.3')  // Digital Marketing
   ]
 
   useEffect(() => {
@@ -25,10 +31,10 @@ export default function Hero() {
       setCurrentIndex(prev => (prev + 1) % services.length)
     }, 3000)
     return () => clearInterval(interval)
-  }, [])
+  }, [services.length])
 
   return (
-    <section className="hero-section relative bg-white overflow-hidden">
+    <section className="hero-section relative bg-white overflow-hidden" dir={dir}>
       {/* Swiss Grid Background */}
       <div className="absolute inset-0 opacity-[0.02]">
         <div 
@@ -43,37 +49,37 @@ export default function Hero() {
         />
       </div>
 
-      {/* Proper Crescent Elements - Back to Original Clean Approach */}
-      <div className="absolute top-32 right-20 w-32 h-32">
-        <div className="crescent crescent-right crescent-subtle text-gray-900" />
+      {/* Proper Crescent Elements - Adjust for RTL */}
+      <div className={`absolute top-32 w-32 h-32 ${dir === 'rtl' ? 'left-20' : 'right-20'}`}>
+        <div className={`crescent ${dir === 'rtl' ? 'crescent-left' : 'crescent-right'} crescent-subtle text-gray-900`} />
       </div>
       
-      <div className="absolute bottom-32 left-16 w-24 h-24">
-        <div className="crescent crescent-left crescent-subtle text-gray-600" />
+      <div className={`absolute bottom-32 w-24 h-24 ${dir === 'rtl' ? 'right-16' : 'left-16'}`}>
+        <div className={`crescent ${dir === 'rtl' ? 'crescent-right' : 'crescent-left'} crescent-subtle text-gray-600`} />
       </div>
 
       {/* Main Content */}
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left Column - Content */}
+          {/* Left Column - Content (Right for RTL) */}
           <motion.div
-            initial={{ opacity: 0, x: -32 }}
-            animate={{ opacity: mounted ? 1 : 0, x: mounted ? 0 : -32 }}
+            initial={{ opacity: 0, x: dir === 'rtl' ? 32 : -32 }}
+            animate={{ opacity: mounted ? 1 : 0, x: mounted ? 0 : (dir === 'rtl' ? 32 : -32) }}
             transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
-            className="space-y-8"
+            className={`space-y-8 ${dir === 'rtl' ? 'lg:order-2' : ''}`}
           >
             {/* Overline */}
             <div className="flex items-center gap-3">
               <div className="w-8 h-0.5 bg-gray-900"></div>
               <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">
-                Digital Solutions
+                {t('eyebrow')}
               </span>
             </div>
 
             {/* Main Heading */}
             <div className="space-y-4">
               <h1 className="text-display font-light text-gray-900 leading-none">
-                Modern
+                {t('title')}
                 <br />
                 <span className="relative">
                   <span className="text-gray-600">
@@ -92,8 +98,7 @@ export default function Hero() {
 
             {/* Description */}
             <p className="text-body text-gray-600 max-w-lg leading-relaxed">
-              We create exceptional digital experiences through clean code, thoughtful design, 
-              and strategic thinking. From concept to deployment, we deliver solutions that work.
+              {t('description')}
             </p>
 
             {/* Action Buttons */}
@@ -104,11 +109,12 @@ export default function Hero() {
                 size="lg"
                 rightIcon={
                   <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} 
+                          d={dir === 'rtl' ? "M11 17l-5-5m0 0l5-5m-5 5h12" : "M13 7l5 5m0 0l-5 5m5-5H6"} />
                   </svg>
                 }
               >
-                View Services
+                {t('viewServices')}
               </Button>
               <Button
                 href="/projects"
@@ -121,16 +127,16 @@ export default function Hero() {
                   </svg>
                 }
               >
-                Our Work
+                {t('ourWork')}
               </Button>
             </div>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-8 pt-8 border-t border-gray-200">
               {[
-                { value: "100+", label: "Projects" },
-                { value: "50+", label: "Clients" },
-                { value: "5", label: "Years" }
+                { value: tStats('projects100'), label: t('stats.projects') },
+                { value: tStats('clients50'), label: t('stats.clients') },
+                { value: tStats('years5'), label: t('stats.years') }
               ].map((stat, index) => (
                 <motion.div
                   key={stat.label}
@@ -150,12 +156,12 @@ export default function Hero() {
             </div>
           </motion.div>
 
-          {/* Right Column - Enhanced Visual Element */}
+          {/* Right Column - Enhanced Visual Element (Left for RTL) */}
           <motion.div
-            initial={{ opacity: 0, x: 32 }}
-            animate={{ opacity: mounted ? 1 : 0, x: mounted ? 0 : 32 }}
+            initial={{ opacity: 0, x: dir === 'rtl' ? -32 : 32 }}
+            animate={{ opacity: mounted ? 1 : 0, x: mounted ? 0 : (dir === 'rtl' ? -32 : 32) }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.4, 0, 0.2, 1] }}
-            className="relative"
+            className={`relative ${dir === 'rtl' ? 'lg:order-1' : ''}`}
           >
             <HeroRightEnhanced />
           </motion.div>
@@ -170,7 +176,10 @@ export default function Hero() {
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
       >
         <div className="flex flex-col items-center gap-2 text-gray-400 hover:text-gray-600 transition-colors cursor-pointer">
-          <span className="text-xs font-medium uppercase tracking-wide">Scroll</span>
+          <span className="text-xs font-medium uppercase tracking-wide">
+            {/* You can add scroll translation here */}
+            Scroll
+          </span>
           <motion.div
             animate={{ y: [0, 4, 0] }}
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}

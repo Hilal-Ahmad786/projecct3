@@ -1,0 +1,8 @@
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push([typeof document === "object" ? document.currentScript : undefined, {
+
+"[project]/src/locales/tr.json (json)": ((__turbopack_context__) => {
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.v(JSON.parse("{\"common\":{\"loading\":\"Yükleniyor...\",\"error\":\"Bir hata oluştu\",\"retry\":\"Tekrar Dene\",\"cancel\":\"İptal\",\"save\":\"Kaydet\",\"edit\":\"Düzenle\",\"delete\":\"Sil\",\"confirm\":\"Onayla\",\"close\":\"Kapat\",\"next\":\"İleri\",\"previous\":\"Geri\",\"viewMore\":\"Daha Fazla Gör\",\"loadMore\":\"Daha Fazla Yükle\",\"readMore\":\"Devamını Oku\",\"learnMore\":\"Daha Fazla Öğren\",\"getStarted\":\"Başlayın\",\"contactUs\":\"Bize Ulaşın\",\"callNow\":\"Hemen Arayın\",\"emailUs\":\"E-posta Gönderin\",\"backToTop\":\"Başa Dön\",\"scroll\":\"Kaydır\",\"menu\":\"Menü\"},\"navbar\":{\"home\":\"Ana Sayfa\",\"services\":\"Hizmetler\",\"projects\":\"Projeler\",\"blog\":\"Blog\",\"about\":\"Hakkımızda\",\"contact\":\"İletişim\",\"getQuote\":\"Teklif Al\",\"language\":\"Dil\",\"menu\":\"Menü\"},\"hero\":{\"eyebrow\":\"Dijital Çözümler\",\"title\":\"Modern\",\"services\":[\"Web Geliştirme\",\"Mobil Uygulamalar\",\"AI Çözümleri\",\"Dijital Pazarlama\"],\"description\":\"Temiz kod, düşünceli tasarım ve stratejik düşünce ile olağanüstü dijital deneyimler yaratıyoruz. Konseptten dağıtıma kadar, çalışan çözümler sunuyoruz.\",\"viewServices\":\"Hizmetleri Görüntüle\",\"ourWork\":\"Çalışmalarımız\",\"stats\":{\"projects\":\"Proje\",\"clients\":\"Müşteri\",\"years\":\"Yıl\"}},\"stats\":{\"projects100\":\"100+\",\"projects150\":\"150+\",\"clients50\":\"50+\",\"years5\":\"5\",\"successRate98\":\"98%\",\"support247\":\"7/24\"}}"));}}),
+}]);

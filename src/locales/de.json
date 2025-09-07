@@ -1,0 +1,430 @@
+{
+    "common": {
+      "loading": "Wird geladen...",
+      "error": "Ein Fehler ist aufgetreten",
+      "retry": "Erneut versuchen",
+      "cancel": "Abbrechen",
+      "save": "Speichern",
+      "edit": "Bearbeiten",
+      "delete": "Löschen",
+      "confirm": "Bestätigen",
+      "close": "Schließen",
+      "next": "Weiter",
+      "previous": "Zurück",
+      "viewMore": "Mehr anzeigen",
+      "loadMore": "Mehr laden",
+      "readMore": "Weiterlesen",
+      "learnMore": "Mehr erfahren",
+      "getStarted": "Loslegen",
+      "contactUs": "Kontaktieren Sie uns",
+      "callNow": "Jetzt anrufen",
+      "emailUs": "E-Mail senden",
+      "backToTop": "Nach oben",
+      "scroll": "Scrollen",
+      "menu": "Menü"
+    },
+    "metadata": {
+      "defaultTitle": "PakTechnology – Moderne Digitale Lösungen",
+      "defaultDescription": "Unternehmensweb-Entwicklung, E-Commerce, Automatisierungsbots und digitale Marketing-Lösungen",
+      "keywords": "Webentwicklung, digitale Lösungen, Automatisierung, KI, mobile Apps, E-Commerce"
+    },
+    "navbar": {
+      "home": "Startseite",
+      "services": "Dienstleistungen",
+      "projects": "Projekte",
+      "blog": "Blog",
+      "about": "Über uns",
+      "contact": "Kontakt",
+      "getQuote": "Angebot erhalten",
+      "language": "Sprache",
+      "menu": "Menü"
+    },
+    "hero": {
+      "eyebrow": "Digitale Lösungen",
+      "title": "Moderne",
+      "services": [
+        "Webentwicklung",
+        "Mobile Anwendungen",
+        "KI-Lösungen",
+        "Digitales Marketing"
+      ],
+      "description": "Wir schaffen außergewöhnliche digitale Erfahrungen durch sauberen Code, durchdachtes Design und strategisches Denken. Von der Konzeption bis zur Bereitstellung liefern wir Lösungen, die funktionieren.",
+      "viewServices": "Dienstleistungen anzeigen",
+      "ourWork": "Unsere Arbeit",
+      "stats": {
+        "projects": "Projekte",
+        "clients": "Kunden",
+        "years": "Jahre"
+      }
+    },
+    "about": {
+      "hero": {
+        "eyebrow": "Über uns",
+        "title": "Digitale",
+        "titleAccent": "Exzellenz schaffen",
+        "description": "Wir sind ein Team leidenschaftlicher Technologen, das sich der Schaffung außergewöhnlicher digitaler Erfahrungen verschrieben hat. Unsere Mission ist es, Ideen in mächtige, skalierbare Lösungen zu verwandeln, die das Geschäftswachstum vorantreiben.",
+        "getInTouch": "Kontakt aufnehmen"
+      },
+      "vision": {
+        "eyebrow": "Unser Fundament",
+        "title": "Vision und Mission",
+        "subtitle": "Unsere Grundwerte und Prinzipien, die alles leiten, was wir tun, und uns dabei helfen, außergewöhnliche Ergebnisse für unsere Kunden zu erzielen.",
+        "visionTitle": "Unsere Vision",
+        "visionText": "Die führende Kraft in der digitalen Transformation zu sein und Unternehmen weltweit mit innovativen Technologielösungen zu stärken, die nachhaltiges Wachstum fördern und dauerhaften Wert in einer zunehmend vernetzten Welt schaffen.",
+        "missionTitle": "Unsere Mission",
+        "missionText": "Wir liefern modernste digitale Lösungen durch fachkundige Entwicklung, strategisches Design und innovative Automatisierung. Unser Engagement besteht darin, komplexe Herausforderungen in rationalisierte, skalierbare Systeme zu verwandeln, die Erwartungen übertreffen."
+      },
+      "values": {
+        "title": "Unsere Grundwerte",
+        "subtitle": "Diese Prinzipien leiten unsere Arbeit und definieren unser Engagement für Exzellenz.",
+        "excellence": {
+          "title": "Exzellenz",
+          "description": "Wir streben in jedem Projekt nach Perfektion und stellen die höchsten Qualitätsstandards sicher."
+        },
+        "innovation": {
+          "title": "Innovation",
+          "description": "Wir nutzen neue Technologien und kreative Lösungen zur Lösung komplexer Probleme."
+        },
+        "integrity": {
+          "title": "Integrität",
+          "description": "Wir schaffen Vertrauen durch Transparenz, Ehrlichkeit und ethische Geschäftspraktiken."
+        },
+        "partnership": {
+          "title": "Partnerschaft",
+          "description": "Wir arbeiten eng mit Kunden als echte Partner auf ihrer digitalen Transformationsreise zusammen."
+        }
+      },
+      "team": {
+        "eyebrow": "Unser Team",
+        "title": "Lernen Sie die Experten kennen",
+        "subtitle": "Ein engagiertes Team von Fachleuten, das sich der Bereitstellung außergewöhnlicher digitaler Lösungen und der Förderung von Innovation verschrieben hat.",
+        "joinTeam": "Unserem Team beitreten",
+        "joinDescription": "Wir suchen immer nach talentierten Personen, die unsere Leidenschaft für Technologie und Innovation teilen.",
+        "viewPositions": "Offene Stellen anzeigen"
+      },
+      "timeline": {
+        "eyebrow": "Unsere Reise",
+        "title": "Unternehmens-Zeitlinie",
+        "subtitle": "Von bescheidenen Anfängen zu innovativen Lösungen - entdecken Sie die wichtigsten Meilensteine, die das Wachstum und die Entwicklung unseres Unternehmens geprägt haben.",
+        "milestones": {
+          "2021": {
+            "label": "Gründung und erstes MVP",
+            "description": "F&E-unterstützter Prototyp veröffentlicht"
+          },
+          "2022": {
+            "label": "Pilotprojekte",
+            "description": "Feldtests mit 3 verschiedenen KMU durchgeführt"
+          },
+          "2023": {
+            "label": "Technopark-Bewerbung",
+            "description": "Kandidat für F&E-Zentrum im Bozok Technopark"
+          },
+          "2024": {
+            "label": "Modulare Plattform",
+            "description": "MDL-01…MDL-07 Module sind live"
+          },
+          "2025": {
+            "label": "Internationales Ziel",
+            "description": "Expansionsplan für Nahen Osten und Europa"
+          }
+        },
+        "stats": {
+          "yearsJourney": "Jahre Reise",
+          "projectsDelivered": "Ausgelieferte Projekte",
+          "majorMilestones": "Wichtige Meilensteine",
+          "marketExpansions": "Markterweiterungen"
+        }
+      }
+    },
+    "services": {
+      "hero": {
+        "eyebrow": "Was wir anbieten",
+        "title": "Digitale",
+        "titleAccent": "Lösungen",
+        "description": "Von der Webentwicklung bis zur KI-Integration bieten wir umfassende digitale Dienstleistungen, die darauf ausgelegt sind, Ihr Unternehmenswachstum zu beschleunigen und Ihre Abläufe mit modernsten Technologielösungen zu optimieren.",
+        "exploreServices": "Dienstleistungen erkunden",
+        "getQuote": "Angebot erhalten",
+        "categories": [
+          "Webentwicklung",
+          "Mobile Apps",
+          "KI-Lösungen",
+          "Automatisierung"
+        ]
+      },
+      "main": {
+        "eyebrow": "Was wir tun",
+        "title": "Unsere Dienstleistungen",
+        "subtitle": "Wir liefern umfassende digitale Lösungen, die Wachstum und Effizienz für moderne Unternehmen fördern.",
+        "categories": {
+          "automation": "Automatisierung",
+          "ai": "KI-Lösungen",
+          "web": "Entwicklung",
+          "design": "Design & Marketing",
+          "infrastructure": "Infrastruktur"
+        },
+        "readyToStart": "Bereit anzufangen?",
+        "readyDescription": "Lassen Sie uns Ihr Projekt besprechen und erkunden, wie wir Ihnen beim Erreichen Ihrer Ziele helfen können.",
+        "startProject": "Projekt starten",
+        "viewWork": "Unsere Arbeit ansehen"
+      },
+      "list": {
+        "pythonAutomation": {
+          "title": "Python-Automatisierung",
+          "description": "Maßgeschneiderte Automatisierungslösungen mit Python für optimierte Geschäftsprozesse und Datenverarbeitung.",
+          "features": ["Prozessautomatisierung", "Daten-Scraping", "Bot-Entwicklung", "Workflow-Integration"]
+        },
+        "dataAnalytics": {
+          "title": "Datenanalyse",
+          "description": "Verwandeln Sie Rohdaten in umsetzbare Erkenntnisse mit fortgeschrittener Analytik und Visualisierung.",
+          "features": ["Datenvisualisierung", "Business Intelligence", "Statistische Analyse", "Berichterstellung"]
+        },
+        "machineLearning": {
+          "title": "Maschinelles Lernen",
+          "description": "Maßgeschneiderte ML-Modelle und intelligente Systeme, die auf Ihre Geschäftsanforderungen zugeschnitten sind.",
+          "features": ["Prädiktive Analytik", "Neuronale Netzwerke", "Computer Vision", "NLP-Lösungen"]
+        },
+        "aiIntegration": {
+          "title": "KI-Integration",
+          "description": "Integrieren Sie KI-Fähigkeiten nahtlos in Ihre bestehenden Systeme und Workflows.",
+          "features": ["API-Integration", "Modell-Bereitstellung", "Leistungsoptimierung", "Überwachung"]
+        },
+        "conversationalAI": {
+          "title": "Konversationelle KI",
+          "description": "Intelligente Chatbots und virtuelle Assistenten für verbesserte Kundenbindung.",
+          "features": ["Natürliche Sprachverarbeitung", "Mehrsprachiger Support", "Kontextbewusstsein", "Lernsysteme"]
+        },
+        "apiDevelopment": {
+          "title": "API-Entwicklung",
+          "description": "Robuste und skalierbare APIs für nahtlose Systemintegration und Datenaustausch.",
+          "features": ["RESTful APIs", "GraphQL", "Authentifizierung", "Dokumentation"]
+        },
+        "webApplications": {
+          "title": "Webanwendungen",
+          "description": "Moderne, responsive Webanwendungen, die mit modernsten Technologien erstellt wurden.",
+          "features": ["React/Next.js", "Responsives Design", "Leistungsoptimierung", "SEO-bereit"]
+        },
+        "fullStackDevelopment": {
+          "title": "Full-Stack-Entwicklung",
+          "description": "Komplette Web-Lösungen von Datenbankdesign bis zur Implementierung der Benutzeroberfläche.",
+          "features": ["Frontend & Backend", "Datenbankdesign", "Sicherheitsimplementierung", "Testing"]
+        },
+        "mobileDevelopment": {
+          "title": "Mobile Entwicklung",
+          "description": "Plattformübergreifende mobile Anwendungen für iOS und Android mit modernen Frameworks.",
+          "features": ["React Native", "Plattformübergreifend", "Native Leistung", "App Store Bereitstellung"]
+        },
+        "uiuxDesign": {
+          "title": "UI/UX-Design",
+          "description": "Benutzerzentrierte Designlösungen, die Benutzerfreundlichkeit und ästhetische Anziehungskraft priorisieren.",
+          "features": ["Benutzerforschung", "Wireframing", "Prototyping", "Designsysteme"]
+        },
+        "digitalMarketing": {
+          "title": "Digitales Marketing",
+          "description": "Umfassende digitale Marketingstrategien zur Steigerung Ihrer Online-Präsenz.",
+          "features": ["SEO-Optimierung", "Content-Strategie", "Social Media", "Analytik"]
+        },
+        "ecommerceSolutions": {
+          "title": "E-Commerce-Lösungen",
+          "description": "Komplette E-Commerce-Plattformen mit Zahlungsintegration und Bestandsverwaltung.",
+          "features": ["Zahlungsabwicklung", "Bestandsverwaltung", "Auftragsbearbeitung", "Kundenportal"]
+        },
+        "devopsInfrastructure": {
+          "title": "DevOps & Infrastruktur",
+          "description": "Optimierte Bereitstellungs-Pipelines und skalierbare Cloud-Infrastrukturlösungen.",
+          "features": ["CI/CD-Pipelines", "Cloud-Infrastruktur", "Überwachung", "Sicherheit"]
+        }
+      },
+      "pricing": {
+        "eyebrow": "Preisgestaltung",
+        "title": "Monatliche und projektbasierte Optionen",
+        "subtitle": "Flexible Preisoptionen, die auf Ihre Bedürfnisse zugeschnitten sind. Alle unsere Pakete beinhalten transparente Preise ohne versteckte Gebühren.",
+        "monthly": "Monatlich",
+        "annual": "Jährlich",
+        "annualDiscount": "10% Rabatt",
+        "subscriptionPackages": "Abonnement-Pakete",
+        "projectServices": "Projektbasierte Dienstleistungen",
+        "guarantee": "Alle unsere Abonnement-Pakete kommen mit einer 14-tägigen Geld-zurück-Garantie.",
+        "projectGuarantee": "Alle einmaligen Projektdienstleistungen kommen mit 100% Zufriedenheitsgarantie.",
+        "customSolution": "Benötigen Sie eine maßgeschneiderte Lösung?",
+        "customDescription": "Jedes Unternehmen ist einzigartig. Lassen Sie uns Ihre spezifischen Anforderungen besprechen und eine maßgeschneiderte Lösung erstellen, die perfekt passt.",
+        "getCustomQuote": "Individuelles Angebot erhalten",
+        "viewProjects": "Projekte ansehen"
+      },
+      "whyUs": {
+        "eyebrow": "Warum uns wählen",
+        "title": "Was uns auszeichnet",
+        "subtitle": "Wir kombinieren technische Exzellenz mit Geschäftsverständnis, um Lösungen zu liefern, die wirklich einen Unterschied machen.",
+        "fastDelivery": {
+          "title": "Schnelle Lieferung",
+          "description": "Agiler Entwicklungsprozess gewährleistet pünktliche Lieferung ohne Kompromisse bei der Qualität.",
+          "metric": "90% schneller als der Branchendurchschnitt"
+        },
+        "provenExpertise": {
+          "title": "Bewährte Expertise",
+          "description": "Jahre der Erfahrung mit modernsten Technologien und erfolgreicher Projektlieferung.",
+          "metric": "98% Kundenzufriedenheitsrate"
+        },
+        "costEffective": {
+          "title": "Kosteneffektiv",
+          "description": "Wettbewerbsfähige Preise mit transparenten Kosten und ohne versteckte Gebühren.",
+          "metric": "30% Kosteneinsparungen im Durchschnitt"
+        },
+        "support247": {
+          "title": "24/7 Support",
+          "description": "Rund um die Uhr technischer Support und Wartungsdienstleistungen.",
+          "metric": "<24 Stunden Antwortzeit"
+        }
+      }
+    },
+    "contact": {
+      "hero": {
+        "eyebrow": "Kontakt aufnehmen",
+        "title": "Starten Sie Ihr",
+        "titleAccent": "Projekt",
+        "description": "Bereit, Ihre digitale Präsenz zu transformieren? Wir sind hier, um zuzuhören, Ihre Bedürfnisse zu verstehen und eine Lösung zu schaffen, die echte Ergebnisse liefert. Lassen Sie uns heute das Gespräch beginnen.",
+        "sendMessage": "Nachricht senden",
+        "callNow": "Jetzt anrufen",
+        "contactMethods": {
+          "email": {
+            "label": "E-Mail",
+            "value": "info@paktechnology.com"
+          },
+          "phone": {
+            "label": "Telefon",
+            "value": "+90 552 567 71 64"
+          },
+          "responseTime": {
+            "label": "Antwortzeit",
+            "value": "< 24 Stunden"
+          }
+        }
+      },
+      "info": {
+        "howToReach": "Wie Sie uns erreichen",
+        "officeHours": "Bürozeiten",
+        "schedule": {
+          "mondayFriday": "Montag - Freitag",
+          "mondayFridayTime": "09:00 - 18:00",
+          "saturday": "Samstag",
+          "saturdayTime": "10:00 - 16:00",
+          "sunday": "Sonntag",
+          "sundayTime": "Geschlossen"
+        },
+        "ourLocation": "Unser Standort"
+      },
+      "form": {
+        "title": "Senden Sie uns eine Nachricht",
+        "fullName": "Vollständiger Name",
+        "fullNamePlaceholder": "Geben Sie Ihren vollständigen Namen ein",
+        "emailAddress": "E-Mail-Adresse",
+        "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+        "subject": "Betreff",
+        "subjectPlaceholder": "Wählen Sie einen Betreff",
+        "message": "Nachricht",
+        "messagePlaceholder": "Erzählen Sie uns von Ihrem Projekt oder Ihrer Anfrage...",
+        "requiredFields": "Pflichtfelder",
+        "sending": "Wird gesendet...",
+        "sendMessage": "Nachricht senden",
+        "subjects": {
+          "generalInquiry": "Allgemeine Anfrage",
+          "webDevelopment": "Webentwicklung",
+          "mobileApp": "Mobile App-Entwicklung",
+          "aiSolutions": "KI/ML-Lösungen",
+          "digitalMarketing": "Digitales Marketing",
+          "technicalSupport": "Technischer Support",
+          "partnership": "Partnerschaft",
+          "other": "Andere"
+        }
+      },
+      "nextSteps": {
+        "title": "Was passiert als nächstes?",
+        "step1": "Wir werden Ihre Nachricht innerhalb von 24 Stunden prüfen",
+        "step2": "Unser Team wird sich melden, um Ihr Projekt zu besprechen",
+        "step3": "Wir werden ein detailliertes Angebot und einen Zeitplan vorlegen"
+      }
+    },
+    "footer": {
+      "description": "Außergewöhnliche digitale Erfahrungen durch sauberen Code, durchdachtes Design und strategisches Denken schaffen.",
+      "navigation": "Navigation",
+      "services": "Dienstleistungen",
+      "contact": "Kontakt",
+      "stayUpdated": "Bleiben Sie auf dem Laufenden",
+      "stayUpdatedDescription": "Erhalten Sie die neuesten Erkenntnisse zu Technologie und digitaler Transformation.",
+      "emailPlaceholder": "Geben Sie Ihre E-Mail ein",
+      "subscribe": "Abonnieren",
+      "allRightsReserved": "Alle Rechte vorbehalten.",
+      "quickLinks": {
+        "home": "Startseite",
+        "services": "Dienstleistungen",
+        "projects": "Projekte",
+        "blog": "Blog",
+        "about": "Über uns",
+        "contact": "Kontakt"
+      },
+      "servicesList": {
+        "webDevelopment": "Webentwicklung",
+        "mobileApps": "Mobile Apps",
+        "aiSolutions": "KI-Lösungen",
+        "automation": "Automatisierung",
+        "digitalMarketing": "Digitales Marketing",
+        "devops": "DevOps"
+      },
+      "contactInfo": {
+        "email": {
+          "label": "E-Mail",
+          "value": "info@paktechnology.com"
+        },
+        "phone": {
+          "label": "Telefon",
+          "value": "+90 552 567 71 64"
+        },
+        "location": {
+          "label": "Standort",
+          "value": "Yozgat, Türkei"
+        }
+      }
+    },
+    "stats": {
+      "projects100": "100+",
+      "projects150": "150+",
+      "clients50": "50+",
+      "years5": "5",
+      "successRate98": "98%",
+      "support247": "24/7",
+      "clientSatisfaction95": "95%",
+      "responseTime24h": "< 24h",
+      "onTimeDelivery100": "100%",
+      "salesIncrease300": "300%",
+      "timeSavings80": "80%",
+      "downloads50k": "50K+",
+      "accuracy95": "95%",
+      "trafficIncrease150": "+150%",
+      "developmentFaster40": "40% schnellere Entwicklung",
+      "avgROI300": "300%",
+      "uptime99": "99%",
+      "revenueGenerated2M": "2M€+",
+      "codeQuality95": "95%",
+      "loadTime08s": "0,8s",
+      "mobileScore95": "95%",
+      "costReduction50": "50%"
+    },
+    "validation": {
+      "required": "Dieses Feld ist erforderlich",
+      "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+      "phone": "Bitte geben Sie eine gültige Telefonnummer ein",
+      "minLength": "Mindestens {{min}} Zeichen erforderlich",
+      "maxLength": "Maximal {{max}} Zeichen erlaubt"
+    },
+    "notifications": {
+      "success": {
+        "messageSent": "Nachricht erfolgreich gesendet!",
+        "subscribed": "Erfolgreich für Newsletter angemeldet!",
+        "updated": "Informationen erfolgreich aktualisiert!"
+      },
+      "error": {
+        "general": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut.",
+        "network": "Netzwerkfehler. Bitte überprüfen Sie Ihre Verbindung.",
+        "validation": "Bitte überprüfen Sie Ihre Eingabe und versuchen Sie es erneut."
+      }
+    }
+  }

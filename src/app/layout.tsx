@@ -1,21 +1,37 @@
 // src/app/layout.tsx
 import './globals.css'
 import { ReactNode } from 'react'
+import { I18nProvider } from '@/hooks/useTranslations'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import { Locale, defaultLocale } from '@/lib/i18n'
 
 export const metadata = {
-  title: 'PakTechnology – Modüler Otomasyon ve E-Ticaret Altyapısı',
-  description: 'Kurumsal web, e-ticaret, otomasyon botları ve dijital pazarlama çözümleri',
+  title: 'PakTechnology – Modern Digital Solutions',
+  description: 'Enterprise web development, e-commerce, automation bots and digital marketing solutions',
 }
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+interface RootLayoutProps {
+  children: ReactNode
+  params?: {
+    locale?: Locale
+  }
+}
+
+export default function RootLayout({ 
+  children, 
+  params 
+}: RootLayoutProps) {
+  const locale = params?.locale || defaultLocale
+
   return (
-    <html lang="tr">
+    <html lang={locale}>
       <body className="flex flex-col min-h-screen">
-        <Navbar />
-        <main className="flex-grow">{children}</main>
-        <Footer />
+        <I18nProvider initialLocale={locale}>
+          <Navbar />
+          <main className="flex-grow">{children}</main>
+          <Footer />
+        </I18nProvider>
       </body>
     </html>
   )
