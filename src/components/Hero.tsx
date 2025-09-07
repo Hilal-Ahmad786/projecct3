@@ -1,6 +1,6 @@
 // src/components/Hero.tsx
 'use client'
-
+import HeroRightEnhanced from '@/components/HeroRightEnhanced'
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import Button from '@/components/Button'
@@ -43,7 +43,7 @@ export default function Hero() {
         />
       </div>
 
-      {/* Proper Crescent Elements */}
+      {/* Proper Crescent Elements - Back to Original Clean Approach */}
       <div className="absolute top-32 right-20 w-32 h-32">
         <div className="crescent crescent-right crescent-subtle text-gray-900" />
       </div>
@@ -150,63 +150,14 @@ export default function Hero() {
             </div>
           </motion.div>
 
-          {/* Right Column - Visual Element */}
+          {/* Right Column - Enhanced Visual Element */}
           <motion.div
             initial={{ opacity: 0, x: 32 }}
             animate={{ opacity: mounted ? 1 : 0, x: mounted ? 0 : 32 }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.4, 0, 0.2, 1] }}
             className="relative"
           >
-            {/* Main Visual Container */}
-            <div className="relative aspect-square max-w-md mx-auto">
-              {/* Background Grid */}
-              <div className="absolute inset-0 opacity-10">
-                <div 
-                  className="w-full h-full border border-gray-300"
-                  style={{
-                    backgroundImage: `
-                      linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px),
-                      linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px)
-                    `,
-                    backgroundSize: '32px 32px'
-                  }}
-                />
-              </div>
-
-              {/* Geometric Elements */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                {/* Large Crescent */}
-                <div 
-                  className="w-48 h-48 border-2 border-gray-900 opacity-20"
-                  style={{
-                    clipPath: 'circle(45% at 65% 35%)'
-                  }}
-                />
-                
-                {/* Small Accent Circles */}
-                <div className="absolute top-1/4 right-1/4 w-3 h-3 bg-emerald-600 rounded-full opacity-60" />
-                <div className="absolute bottom-1/3 left-1/4 w-2 h-2 bg-red-600 rounded-full opacity-40" />
-              </div>
-
-              {/* Floating Cards */}
-              <motion.div
-                animate={{ y: [-4, 4, -4] }}
-                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute top-8 right-8 w-24 h-16 bg-white border border-gray-200 rounded-sm shadow-soft p-3"
-              >
-                <div className="w-full h-1 bg-gray-200 rounded mb-2" />
-                <div className="w-3/4 h-1 bg-gray-300 rounded" />
-              </motion.div>
-
-              <motion.div
-                animate={{ y: [4, -4, 4] }}
-                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 3 }}
-                className="absolute bottom-8 left-8 w-20 h-20 bg-gray-50 border border-gray-200 rounded-sm shadow-soft p-3"
-              >
-                <div className="w-6 h-6 bg-gray-300 rounded-full mb-2" />
-                <div className="w-full h-1 bg-gray-200 rounded" />
-              </motion.div>
-            </div>
+            <HeroRightEnhanced />
           </motion.div>
         </div>
       </div>

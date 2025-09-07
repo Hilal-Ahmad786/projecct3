@@ -3,6 +3,7 @@
 
 import { motion } from 'framer-motion';
 import Button from '@/components/Button';
+import AboutRightExcellence from '@/components/AboutRightExcellence';
 
 export default function AboutHero() {
   return (
@@ -70,45 +71,14 @@ export default function AboutHero() {
             </Button>
           </motion.div>
 
-          {/* Visual Element */}
+          {/* Enhanced Visual Element */}
           <motion.div
             initial={{ opacity: 0, x: 32 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.4, 0, 0.2, 1] }}
             className="relative"
           >
-            <div className="relative aspect-square max-w-md mx-auto">
-              {/* Main Visual */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-48 h-48 bg-gray-50 border border-gray-200 rounded-sm flex items-center justify-center">
-                  <div className="w-24 h-24 bg-gray-900 rounded-sm flex items-center justify-center relative overflow-hidden">
-                    <div 
-                      className="absolute inset-0 bg-white"
-                      style={{ clipPath: 'circle(35% at 65% 35%)' }}
-                    />
-                    <div className="absolute top-2 right-2 w-2 h-2 bg-emerald-500 rounded-full" />
-                  </div>
-                </div>
-              </div>
-
-              {/* Floating Elements */}
-              <motion.div
-                animate={{ y: [-6, 6, -6] }}
-                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute top-8 right-8 w-20 h-16 bg-white border border-gray-200 rounded-sm shadow-soft p-3"
-              >
-                <div className="w-full h-1 bg-gray-200 rounded mb-2" />
-                <div className="w-3/4 h-1 bg-gray-300 rounded" />
-              </motion.div>
-
-              <motion.div
-                animate={{ y: [6, -6, 6] }}
-                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 3 }}
-                className="absolute bottom-8 left-8 w-16 h-16 bg-gray-50 border border-gray-200 rounded-sm shadow-soft p-3"
-              >
-                <div className="w-8 h-8 bg-gray-300 rounded-full" />
-              </motion.div>
-            </div>
+            <AboutRightExcellence />
           </motion.div>
         </div>
       </div>
