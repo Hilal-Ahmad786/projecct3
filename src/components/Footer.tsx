@@ -10,7 +10,13 @@ import {
   FaGithub,
   FaEnvelope,
   FaPhone,
-  FaMapMarkerAlt
+  FaMapMarkerAlt,
+  FaInstagram,
+  FaYoutube,
+  FaDribbble,
+  FaBehance,
+  FaMedium,
+  FaDiscord
 } from 'react-icons/fa';
 
 export default function Footer() {
@@ -49,10 +55,35 @@ export default function Footer() {
       label: 'GitHub'
     },
     { 
-      icon: FaEnvelope, 
-      href: 'mailto:info@paktechnology.com',
-      label: 'Email'
+      icon: FaInstagram, 
+      href: 'https://instagram.com/paktechnology',
+      label: 'Instagram'
     },
+    { 
+      icon: FaYoutube, 
+      href: 'https://youtube.com/@paktechnology',
+      label: 'YouTube'
+    },
+    { 
+      icon: FaDribbble, 
+      href: 'https://dribbble.com/paktechnology',
+      label: 'Dribbble'
+    },
+    { 
+      icon: FaBehance, 
+      href: 'https://behance.net/paktechnology',
+      label: 'Behance'
+    },
+    { 
+      icon: FaMedium, 
+      href: 'https://medium.com/@paktechnology',
+      label: 'Medium'
+    },
+    { 
+      icon: FaDiscord, 
+      href: 'https://discord.gg/paktechnology',
+      label: 'Discord'
+    }
   ];
 
   const contactInfo = [
@@ -81,17 +112,31 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gray-900 text-white relative overflow-hidden">
+    <footer className="bg-gray-900 text-white relative overflow-hidden pt-16">
+      {/* Swiss Grid Background */}
+      <div className="absolute inset-0 opacity-[0.02]">
+        <div 
+          className="w-full h-full"
+          style={{
+            backgroundImage: `
+              linear-gradient(rgba(255,255,255,0.3) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(255,255,255,0.3) 1px, transparent 1px)
+            `,
+            backgroundSize: '64px 64px'
+          }}
+        />
+      </div>
+
       {/* Subtle geometric background */}
-      <div className="absolute top-8 right-8 w-24 h-24 opacity-[0.03]">
+      <div className="absolute top-8 right-8 w-20 h-20 opacity-[0.03]">
         <div 
           className="w-full h-full border border-white"
           style={{ clipPath: 'circle(40% at 70% 30%)' }}
         />
       </div>
 
-      <div className="container mx-auto py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="container mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Company Info */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -108,22 +153,22 @@ export default function Footer() {
               <span className="text-lg font-medium">PakTechnology</span>
             </div>
             
-            <p className="text-sm text-gray-300 mb-6 leading-relaxed max-w-xs">
+            <p className="text-body text-gray-300 mb-6 leading-relaxed max-w-xs">
               Creating exceptional digital experiences through clean code, thoughtful design, and strategic thinking.
             </p>
 
-            {/* Social Links */}
-            <div className="flex gap-3">
+            {/* Social Links Grid */}
+            <div className="grid grid-cols-3 gap-3">
               {socialLinks.map(({ icon: Icon, href, label }) => (
                 <a
                   key={label}
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-gray-800 border border-gray-700 rounded-sm flex items-center justify-center hover:bg-gray-700 hover:border-gray-600 transition-colors"
+                  className="w-10 h-10 bg-gray-800 border border-gray-700 rounded-sm flex items-center justify-center hover:bg-gray-700 hover:border-gray-600 transition-colors group"
                   aria-label={label}
                 >
-                  <Icon className="w-4 h-4" />
+                  <Icon className="w-4 h-4 group-hover:scale-110 transition-transform" />
                 </a>
               ))}
             </div>
@@ -136,7 +181,7 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            <h4 className="text-sm font-medium mb-6 text-gray-300 uppercase tracking-wide">
+            <h4 className="font-medium mb-6 text-gray-300 uppercase tracking-wide text-overline">
               Navigation
             </h4>
             <ul className="space-y-3">
@@ -144,7 +189,7 @@ export default function Footer() {
                 <li key={href}>
                   <Link 
                     href={href} 
-                    className="text-sm text-gray-400 hover:text-white transition-colors flex items-center group"
+                    className="text-body text-gray-400 hover:text-white transition-colors flex items-center group"
                   >
                     <span className="w-0 group-hover:w-2 h-px bg-white transition-all duration-250 mr-0 group-hover:mr-3" />
                     {label}
@@ -161,7 +206,7 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h4 className="text-sm font-medium mb-6 text-gray-300 uppercase tracking-wide">
+            <h4 className="font-medium mb-6 text-gray-300 uppercase tracking-wide text-overline">
               Services
             </h4>
             <ul className="space-y-3">
@@ -169,7 +214,7 @@ export default function Footer() {
                 <li key={href}>
                   <Link 
                     href={href} 
-                    className="text-sm text-gray-400 hover:text-white transition-colors flex items-center group"
+                    className="text-body text-gray-400 hover:text-white transition-colors flex items-center group"
                   >
                     <span className="w-0 group-hover:w-2 h-px bg-white transition-all duration-250 mr-0 group-hover:mr-3" />
                     {label}
@@ -186,7 +231,7 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            <h4 className="text-sm font-medium mb-6 text-gray-300 uppercase tracking-wide">
+            <h4 className="font-medium mb-6 text-gray-300 uppercase tracking-wide text-overline">
               Contact
             </h4>
             <div className="space-y-4">
@@ -196,14 +241,14 @@ export default function Footer() {
                   href={href}
                   target={href.startsWith('http') ? '_blank' : undefined}
                   rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                  className="flex items-start gap-3 text-sm text-gray-400 hover:text-white transition-colors group"
+                  className="flex items-start gap-3 text-body text-gray-400 hover:text-white transition-colors group"
                 >
                   <div className="w-8 h-8 bg-gray-800 border border-gray-700 rounded-sm flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-gray-700 group-hover:border-gray-600 transition-colors">
                     <Icon className="w-3 h-3" />
                   </div>
                   <div>
-                    <p className="text-xs text-gray-500 uppercase tracking-wide">{label}</p>
-                    <p className="text-sm">{value}</p>
+                    <p className="text-caption text-gray-500 uppercase tracking-wide">{label}</p>
+                    <p className="text-body">{value}</p>
                   </div>
                 </a>
               ))}
@@ -217,11 +262,11 @@ export default function Footer() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
-          className="border-t border-gray-800 pt-12 mt-12"
+          className="border-t border-gray-800 pt-12 mb-12"
         >
           <div className="max-w-md mx-auto text-center">
-            <h3 className="text-lg font-medium mb-4">Stay Updated</h3>
-            <p className="text-sm text-gray-400 mb-6">
+            <h3 className="text-title text-white mb-4">Stay Updated</h3>
+            <p className="text-body text-gray-400 mb-6">
               Get the latest insights on technology and digital transformation.
             </p>
             <div className="flex gap-2">
@@ -238,13 +283,13 @@ export default function Footer() {
         </motion.div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 pt-8 mt-12 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="border-t border-gray-800 pt-8 pb-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.5 }}
             viewport={{ once: true }}
-            className="text-sm text-gray-400"
+            className="text-body text-gray-400"
           >
             © {new Date().getFullYear()} PakTechnology. All rights reserved.
           </motion.p>
@@ -255,7 +300,7 @@ export default function Footer() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.6 }}
             viewport={{ once: true }}
-            className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors group"
+            className="flex items-center gap-2 text-body text-gray-400 hover:text-white transition-colors group"
             aria-label="Scroll to top"
           >
             <span>Back to Top</span>

@@ -1,11 +1,13 @@
-// src/components/PricingTable.tsx
+// src/components/PricingSection.tsx
 'use client';
 
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 import SectionHeader from '@/components/SectionHeader';
 import Button from '@/components/Button';
+import { CheckIcon } from '@heroicons/react/24/outline';
 
-export default function PricingTable() {
+export default function PricingSection() {
   const [billingCycle, setBillingCycle] = useState<'monthly' | 'annual'>('monthly');
   const [activeCategory, setActiveCategory] = useState<'subscription' | 'project'>('subscription');
 
@@ -153,154 +155,309 @@ export default function PricingTable() {
 
   const periodLabel = billingCycle === 'monthly' ? '/ay' : '/yıl';
 
-  return (
-    <section className="relative py-24 overflow-hidden bg-gradient-to-br from-[#1E531B]/10 via-white/50 to-[#FFB800]/10">
-      {/* Background decor */}
-      <div className="absolute -top-16 -left-16 w-72 h-72 bg-[#1E531B]/20 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute -bottom-16 -right-16 w-96 h-96 bg-[#FFB800]/20 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute top-0 left-1/2 w-[120%] h-[40%] bg-gradient-to-br from-[#1E531B]/20 to-[#FFB800]/20 -skew-y-6 -translate-x-1/2 pointer-events-none" />
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.15 }
+    }
+  };
 
-      <div className="relative container mx-auto px-6 z-10">
+  const itemVariants = {
+    hidden: { opacity: 0, y: 24 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: [0.4, 0, 0.2, 1] }
+    }
+  };
+
+  return (
+    <section className="section bg-gray-50 relative overflow-hidden">
+      {/* Swiss Grid Background (behind content) */}
+      <div className="absolute inset-0 opacity-[0.02] pointer-events-none -z-10">
+        <div
+          className="w-full h-full"
+          style={{
+            backgroundImage: `
+              linear-gradient(rgba(0,0,0,0.3) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(0,0,0,0.3) 1px, transparent 1px)
+            `,
+            backgroundSize: '64px 64px'
+          }}
+        />
+      </div>
+
+      {/* Proper Crescent Elements (behind content) */}
+      <div className="absolute top-20 right-16 w-28 h-28 pointer-events-none -z-10">
+        <div className="crescent crescent-right crescent-subtle text-gray-900" />
+      </div>
+
+      <div className="container mx-auto relative z-10">
         <SectionHeader
           eyebrow="Fiyatlandırma"
           title="Aylık & Proje Bazlı Seçeneklerimiz"
-          className="text-center mb-16"
+          subtitle="İhtiyaçlarınıza göre esnek fiyatlandırma seçenekleri. Tüm paketlerimiz şeffaf fiyatlandırma ve gizli ücret yoktur."
+          className="mb-16"
         />
 
         {/* Category Tabs */}
-        <div className="flex justify-center mb-8 space-x-4">
-          <button
-            onClick={() => setActiveCategory('subscription')}
-            className={`px-4 py-2 font-medium rounded-full transition ${
-              activeCategory === 'subscription'
-                ? 'bg-[#1E531B] text-white'
-                : 'bg-white text-gray-700 hover:bg-gray-100'
-            }`}
-          >
-            Abonelik Paketleri
-          </button>
-          <button
-            onClick={() => setActiveCategory('project')}
-            className={`px-4 py-2 font-medium rounded-full transition ${
-              activeCategory === 'project'
-                ? 'bg-[#1E531B] text-white'
-                : 'bg-white text-gray-700 hover:bg-gray-100'
-            }`}
-          >
-            Proje Bazlı Hizmetler
-          </button>
-        </div>
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="flex justify-center mb-12"
+        >
+          <div className="bg-white border border-gray-200 rounded-sm p-1">
+            <button
+              type="button"
+              onClick={() => setActiveCategory('subscription')}
+              className={`
+                px-6 py-2 text-sm font-medium rounded-sm transition-all duration-250 cursor-pointer
+                ${activeCategory === 'subscription'
+                  ? 'bg-gray-900 text-white'
+                  : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
+                }
+              `}
+            >
+              Abonelik Paketleri
+            </button>
+            <button
+              type="button"
+              onClick={() => setActiveCategory('project')}
+              className={`
+                px-6 py-2 text-sm font-medium rounded-sm transition-all duration-250 cursor-pointer
+                ${activeCategory === 'project'
+                  ? 'bg-gray-900 text-white'
+                  : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
+                }
+              `}
+            >
+              Proje Bazlı Hizmetler
+            </button>
+          </div>
+        </motion.div>
 
         {activeCategory === 'subscription' ? (
           <>
             {/* Billing Toggle */}
-            <div className="flex justify-center mb-8">
-              <button
-                onClick={() => setBillingCycle('monthly')}
-                className={`px-4 py-2 text-sm sm:text-base font-medium rounded-l-full border ${
-                  billingCycle === 'monthly'
-                    ? 'bg-[#1E531B] text-white border-[#1E531B]'
-                    : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-100'
-                }`}
-              >
-                Aylık
-              </button>
-              <button
-                onClick={() => setBillingCycle('annual')}
-                className={`px-4 py-2 text-sm sm:text-base font-medium rounded-r-full border ${
-                  billingCycle === 'annual'
-                    ? 'bg-[#1E531B] text-white border-[#1E531B]'
-                    : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-100'
-                }`}
-              >
-                Yıllık (10% İndirim)
-              </button>
-            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="flex justify-center mb-16"
+            >
+              <div className="bg-white border border-gray-200 rounded-sm p-1">
+                <button
+                  type="button"
+                  onClick={() => setBillingCycle('monthly')}
+                  className={`
+                    px-6 py-2 text-sm font-medium rounded-sm transition-all duration-250 cursor-pointer
+                    ${billingCycle === 'monthly'
+                      ? 'bg-gray-900 text-white'
+                      : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
+                    }
+                  `}
+                >
+                  Aylık
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setBillingCycle('annual')}
+                  className={`
+                    px-6 py-2 text-sm font-medium rounded-sm transition-all duration-250 cursor-pointer
+                    ${billingCycle === 'annual'
+                      ? 'bg-gray-900 text-white'
+                      : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
+                    }
+                  `}
+                >
+                  Yıllık
+                  <span className="ml-2 px-2 py-0.5 bg-gray-100 text-gray-700 text-xs rounded-sm">
+                    10% İndirim
+                  </span>
+                </button>
+              </div>
+            </motion.div>
 
-            {/* Subscription Grid */}
-            <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+            {/* Subscription Grid (state-driven animation + remount) */}
+            <motion.div
+              key={`grid-${activeCategory}`}
+              variants={containerVariants}
+              initial="hidden"
+              animate="visible"
+              className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+            >
               {subscriptionTiers.map((tier) => {
-                const price =
-                  billingCycle === 'monthly'
-                    ? tier.priceMonthly
-                    : tier.priceAnnual;
+                const price = billingCycle === 'monthly' ? tier.priceMonthly : tier.priceAnnual;
                 return (
-                  <div
+                  <motion.div
                     key={tier.name}
-                    className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition p-6 flex flex-col h-full"
+                    variants={itemVariants}
+                    className="card group"
                   >
-                    <h4 className="text-lg sm:text-xl font-semibold mb-2">
-                      {tier.name}
-                    </h4>
-                    <p className="text-3xl sm:text-4xl font-extrabold mb-4">
-                      {price.toLocaleString('tr-TR')}₺
-                      <span className="text-lg font-normal ml-1">
-                        {periodLabel}
-                      </span>
-                    </p>
-                    <ul className="mb-6 space-y-2 text-sm sm:text-base text-gray-600 flex-grow">
-                      {tier.features.map((f) => (
-                        <li key={f} className="flex items-start">
-                          <span className="text-[#FFB800] mr-2">✔</span>
-                          <span>{f}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <Button
-                      href="/contact"
-                      variant="primary"
-                      className="mt-auto w-full py-3 text-base font-medium"
-                    >
-                      Teklif Al
-                    </Button>
-                  </div>
+                    <div className="space-y-6">
+                      {/* Header */}
+                      <div>
+                        <h3 className="text-title text-gray-900 mb-2">
+                          {tier.name}
+                        </h3>
+                        <div className="pb-6 border-b border-gray-200">
+                          <span className="text-3xl font-light text-gray-900">
+                            {price.toLocaleString('tr-TR')}₺
+                          </span>
+                          <span className="text-sm text-gray-500 ml-1">
+                            {periodLabel}
+                          </span>
+                        </div>
+                      </div>
+
+                      {/* Features */}
+                      <div className="space-y-4">
+                        <div className="text-caption text-gray-500 uppercase tracking-wide">
+                          Neler Dahil
+                        </div>
+                        <ul className="space-y-3">
+                          {tier.features.map((feature, featureIndex) => (
+                            <li key={featureIndex} className="flex items-start gap-3">
+                              <div className="w-5 h-5 bg-gray-50 border border-gray-200 rounded-sm flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <CheckIcon className="h-3 w-3 text-gray-600" />
+                              </div>
+                              <span className="text-body text-gray-600 leading-relaxed">
+                                {feature}
+                              </span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      {/* CTA */}
+                      <div className="pt-6">
+                        <Button
+                          href="/contact"
+                          variant="primary"
+                          size="lg"
+                          className="w-full"
+                        >
+                          Teklif Al
+                        </Button>
+                      </div>
+                    </div>
+                  </motion.div>
                 );
               })}
-            </div>
+            </motion.div>
 
-            <p className="mt-4 text-center text-gray-500 text-sm italic">
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="mt-8 text-center text-caption text-gray-500"
+            >
               Tüm abonelik paketlerimiz 14 günlük iade garantilidir.
-            </p>
+            </motion.p>
           </>
         ) : (
           <>
-            {/* Project Grid */}
-            <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+            {/* Project Grid (state-driven animation + remount) */}
+            <motion.div
+              key={`grid-${activeCategory}`}
+              variants={containerVariants}
+              initial="hidden"
+              animate="visible"
+              className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+            >
               {projectTiers.map((tier) => (
-                <div
+                <motion.div
                   key={tier.name}
-                  className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition p-6 flex flex-col h-full"
+                  variants={itemVariants}
+                  className="card group"
                 >
-                  <h4 className="text-lg sm:text-xl font-semibold mb-2">
-                    {tier.name}
-                  </h4>
-                  <p className="text-3xl sm:text-4xl font-extrabold mb-4">
-                    {tier.price}
-                  </p>
-                  <ul className="mb-6 space-y-2 text-sm sm:text-base text-gray-600 flex-grow">
-                    {tier.features.map((f) => (
-                      <li key={f} className="flex items-start">
-                        <span className="text-[#1E531B] mr-2">•</span>
-                        <span>{f}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Button
-                    href="/contact"
-                    variant="primary"
-                    className="mt-auto w-full py-3 text-base font-medium"
-                  >
-                    Detaylı Teklif
-                  </Button>
-                </div>
-              ))}
-            </div>
+                  <div className="space-y-6">
+                    {/* Header */}
+                    <div>
+                      <h3 className="text-title text-gray-900 mb-2">
+                        {tier.name}
+                      </h3>
+                      <div className="pb-6 border-b border-gray-200">
+                        <span className="text-2xl font-light text-gray-900">
+                          {tier.price}
+                        </span>
+                      </div>
+                    </div>
 
-            <p className="mt-4 text-center text-gray-500 text-sm italic">
+                    {/* Features */}
+                    <div className="space-y-4">
+                      <div className="text-caption text-gray-500 uppercase tracking-wide">
+                        Proje Kapsamı
+                      </div>
+                      <ul className="space-y-3">
+                        {tier.features.map((feature, featureIndex) => (
+                          <li key={featureIndex} className="flex items-start gap-3">
+                            <div className="w-1 h-1 bg-gray-400 rounded-full mt-3 flex-shrink-0" />
+                            <span className="text-body text-gray-600 leading-relaxed">
+                              {feature}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {/* CTA */}
+                    <div className="pt-6">
+                      <Button
+                        href="/contact"
+                        variant="primary"
+                        size="lg"
+                        className="w-full"
+                      >
+                        Detaylı Teklif
+                      </Button>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="mt-8 text-center text-caption text-gray-500"
+            >
               Tüm tek seferlik proje hizmetlerimiz %100 memnuniyet garantilidir.
-            </p>
+            </motion.p>
           </>
         )}
+
+        {/* Bottom CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 32 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center mt-16 pt-16 border-t border-gray-200"
+        >
+          <h3 className="text-title text-gray-900 mb-4">
+            Özel Çözüm mü Gerekiyor?
+          </h3>
+          <p className="text-body text-gray-600 mb-8 max-w-lg mx-auto">
+            Her işletme kendine özgüdür. Spesifik gereksinimlerinizi tartışalım 
+            ve size mükemmel şekilde uygun özel bir çözüm oluşturalım.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button href="/contact" variant="primary" size="lg">
+              Özel Teklif Al
+            </Button>
+            <Button href="/projects" variant="secondary" size="lg">
+              Projelerimizi İncele
+            </Button>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

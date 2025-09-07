@@ -6,75 +6,176 @@ import Button from '@/components/Button';
 
 export default function CtaBanner() {
   return (
-    <motion.section
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.8 }}
-      className="
-        relative overflow-hidden pt-28 pb-36
-        bg-gradient-to-br from-[#1E531B]/10 via-white/80 to-[#FFB800]/10
-        text-[#1E531B]
-      "
-    >
-      {/* Subtle pattern overlay */}
-      <div className="absolute inset-0 bg-[url('/pattern-diagonal.svg')] opacity-5 pointer-events-none" />
-
-      {/* Wave at bottom */}
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
-        <svg
-          className="relative block w-full h-16"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          viewBox="0 0 1200 120"
-        >
-          <path
-            d="M0,0 C600,100 600,100 1200,0 L1200,120 L0,120 Z"
-            fill="currentColor"
-            className="text-[#FFB800]/20"
-          />
-        </svg>
+    <section className="section bg-gray-50 relative overflow-hidden">
+      {/* Swiss Grid Background */}
+      <div className="absolute inset-0 opacity-[0.02]">
+        <div 
+          className="w-full h-full"
+          style={{
+            backgroundImage: `
+              linear-gradient(rgba(0,0,0,0.3) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(0,0,0,0.3) 1px, transparent 1px)
+            `,
+            backgroundSize: '64px 64px'
+          }}
+        />
       </div>
 
-      {/* Blurred blobs */}
-      <div className="absolute -top-16 -left-16 w-64 h-64 bg-[#FFB800]/20 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute -bottom-20 -right-10 w-72 h-72 bg-[#1E531B]/20 rounded-full blur-2xl pointer-events-none" />
+      {/* Proper Crescent Elements */}
+      <div className="absolute top-16 left-16 w-32 h-32">
+        <div className="crescent crescent-left crescent-subtle text-gray-900" />
+      </div>
 
-      <div className="relative container mx-auto px-6 text-center z-10">
-        <motion.h2
-          initial={{ scale: 0.9 }}
-          whileInView={{ scale: 1 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-3xl md:text-4xl lg:text-5xl font-extrabold"
-        >
-          Projeyi Birlikte Hayata Geçirelim!
-        </motion.h2>
+      <div className="absolute bottom-16 right-16 w-20 h-20">
+        <div className="crescent crescent-right crescent-subtle text-gray-600" />
+      </div>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-4 text-base md:text-lg max-w-2xl mx-auto"
-        >
-          Modüler otomasyon ve e-ticaret altyapısıyla işinizi hızlandırın.
-        </motion.p>
-
+      <div className="container mx-auto">
         <motion.div
-          initial={{ y: 20, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          className="mt-10"
+          initial={{ opacity: 0, y: 32 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
+          className="max-w-4xl mx-auto text-center"
         >
-          <Button
-            href="/contact"
-            variant="primary"
-            size="lg"
-            className="inline-flex items-center space-x-3 px-8 py-4"
+          {/* Overline */}
+          <div className="flex items-center justify-center gap-3 mb-8">
+            <div className="w-8 h-0.5 bg-gray-900"></div>
+            <span className="text-overline">Ready to Start?</span>
+            <div className="w-8 h-0.5 bg-gray-900"></div>
+          </div>
+
+          {/* Main Heading */}
+          <motion.h2
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="text-headline text-gray-900 mb-6"
           >
-            <span>Hemen İletişime Geç</span>
-          </Button>
+            Let's Build Something
+            <br />
+            <span className="text-gray-600">Amazing Together</span>
+          </motion.h2>
+
+          {/* Description */}
+          <motion.p
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="text-body text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed"
+          >
+            Transform your ideas into powerful digital solutions. Whether you need 
+            web development, mobile apps, or AI integration, we're here to bring 
+            your vision to life with cutting-edge technology and expert craftsmanship.
+          </motion.p>
+
+          {/* Action Buttons */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
+          >
+            <Button
+              href="/contact"
+              variant="primary"
+              size="lg"
+              rightIcon={
+                <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              }
+            >
+              Start Your Project
+            </Button>
+            <Button
+              href="/services"
+              variant="secondary"
+              size="lg"
+              leftIcon={
+                <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                </svg>
+              }
+            >
+              View Services
+            </Button>
+          </motion.div>
+
+          {/* Contact Methods */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            viewport={{ once: true }}
+            className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-16 border-t border-gray-200"
+          >
+            {[
+              {
+                icon: (
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                ),
+                title: "Email Us",
+                description: "Get a detailed response",
+                value: "info@paktechnology.com",
+                href: "mailto:info@paktechnology.com"
+              },
+              {
+                icon: (
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                ),
+                title: "Call Us",
+                description: "Quick consultation",
+                value: "+90 552 567 71 64",
+                href: "tel:+905525677164"
+              },
+              {
+                icon: (
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                ),
+                title: "Response Time",
+                description: "We'll get back to you",
+                value: "< 24 hours",
+                href: null
+              }
+            ].map((method, index) => (
+              <motion.div
+                key={method.title}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
+                <div className="w-12 h-12 bg-white border border-gray-200 rounded-sm mx-auto mb-4 flex items-center justify-center">
+                  {method.icon}
+                </div>
+                <h4 className="font-medium text-gray-900 mb-2">{method.title}</h4>
+                <p className="text-caption text-gray-500 mb-2">{method.description}</p>
+                {method.href ? (
+                  <a
+                    href={method.href}
+                    className="text-body text-gray-700 hover:text-gray-900 transition-colors"
+                  >
+                    {method.value}
+                  </a>
+                ) : (
+                  <span className="text-body text-gray-700">{method.value}</span>
+                )}
+              </motion.div>
+            ))}
+          </motion.div>
         </motion.div>
       </div>
-    </motion.section>
+    </section>
   );
 }

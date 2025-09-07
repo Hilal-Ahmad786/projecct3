@@ -624,6 +624,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SectionHeader$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/SectionHeader.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/Button.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$CalendarIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CalendarIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/@heroicons/react/24/outline/esm/CalendarIcon.js [app-client] (ecmascript) <export default as CalendarIcon>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$EyeIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__EyeIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/@heroicons/react/24/outline/esm/EyeIcon.js [app-client] (ecmascript) <export default as EyeIcon>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$ArrowRightIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRightIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/@heroicons/react/24/outline/esm/ArrowRightIcon.js [app-client] (ecmascript) <export default as ArrowRightIcon>");
 'use client';
 ;
@@ -635,157 +637,401 @@ const featuredPosts = [
     {
         title: 'Next.js ile Çok Dilli E-Ticaret Platformu',
         image: '/images/Blogs/Next.png',
-        excerpt: 'Next.js’in ISR & SSR özellikleriyle performansı artırdığımız, Shopify entegrasyonlu çok dilli e-ticaret projemizin detayları.',
-        href: '/blog/nextjs-cok-dilli-e-ticaret'
+        excerpt: 'Next.js\'in ISR & SSR özellikleriyle performansı artırdığımız, Shopify entegrasyonlu çok dilli e-ticaret projemizin detayları.',
+        href: '/blog/nextjs-cok-dilli-e-ticaret',
+        date: '2025-01-15',
+        views: 1250,
+        category: 'E-Commerce',
+        readTime: '8 min'
     },
     {
         title: 'Python Botlarla Web Scraping Otomasyonu',
         image: '/images/Blogs/Python.png',
         excerpt: 'Telegram, Instagram ve web siteleri için geliştirdiğimiz uçtan uca veri toplama botlarıyla %80 zaman tasarrufu sağladık.',
-        href: '/blog/python-web-scraping-otomasyonu'
+        href: '/blog/python-web-scraping-otomasyonu',
+        date: '2025-01-10',
+        views: 980,
+        category: 'Automation',
+        readTime: '12 min'
     },
     {
         title: 'React Native ile Finans Uygulaması Geliştirme',
         image: '/images/Blogs/mobile.png',
         excerpt: '50K+ indirme başarısına ulaşan mobil finans uygulamamızın mimarisi, entegrasyonları ve UI/UX süreci.',
-        href: '/blog/react-native-finans-uygulamasi'
+        href: '/blog/react-native-finans-uygulamasi',
+        date: '2025-01-05',
+        views: 1580,
+        category: 'Mobile Development',
+        readTime: '15 min'
     }
 ];
 function FeaturedPostsSection() {
+    const containerVariants = {
+        hidden: {
+            opacity: 0
+        },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.15
+            }
+        }
+    };
+    const itemVariants = {
+        hidden: {
+            opacity: 0,
+            y: 24
+        },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.6,
+                ease: [
+                    0.4,
+                    0,
+                    0.2,
+                    1
+                ]
+            }
+        }
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "relative py-24 bg-gray-50 overflow-hidden",
+        className: "section bg-white relative overflow-hidden",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute -top-16 -left-16 w-72 h-72 bg-[#FFB800]/10 rounded-full blur-3xl pointer-events-none"
+                className: "absolute inset-0 opacity-[0.02]",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "w-full h-full",
+                    style: {
+                        backgroundImage: `
+              linear-gradient(rgba(0,0,0,0.3) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(0,0,0,0.3) 1px, transparent 1px)
+            `,
+                        backgroundSize: '64px 64px'
+                    }
+                }, void 0, false, {
+                    fileName: "[project]/src/components/FeaturedPostsSection.tsx",
+                    lineNumber: 66,
+                    columnNumber: 9
+                }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/FeaturedPostsSection.tsx",
-                lineNumber: 37,
+                lineNumber: 65,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute -bottom-16 -right-16 w-96 h-96 bg-[#1E531B]/10 rounded-full blur-3xl pointer-events-none"
+                className: "absolute bottom-20 left-16 w-24 h-24",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "crescent crescent-left crescent-subtle text-gray-900"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/FeaturedPostsSection.tsx",
+                    lineNumber: 80,
+                    columnNumber: 9
+                }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/FeaturedPostsSection.tsx",
-                lineNumber: 38,
+                lineNumber: 79,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "relative container mx-auto px-6",
+                className: "container mx-auto",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SectionHeader$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        eyebrow: "Editörün Seçtikleri",
-                        title: "Öne Çıkan Yazılar",
-                        className: "text-center mb-16"
+                        eyebrow: "Editor's Choice",
+                        title: "Featured Articles",
+                        subtitle: "Dive deep into our latest insights on technology, development practices, and industry trends that shape the digital landscape.",
+                        className: "mb-16"
                     }, void 0, false, {
                         fileName: "[project]/src/components/FeaturedPostsSection.tsx",
-                        lineNumber: 41,
+                        lineNumber: 84,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3",
-                        children: featuredPosts.map((post, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                initial: {
-                                    opacity: 0,
-                                    y: 20
-                                },
-                                whileInView: {
-                                    opacity: 1,
-                                    y: 0
-                                },
-                                transition: {
-                                    duration: 0.6,
-                                    delay: idx * 0.2
-                                },
-                                className: "bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden flex flex-col",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        variants: containerVariants,
+                        initial: "hidden",
+                        whileInView: "visible",
+                        viewport: {
+                            once: true
+                        },
+                        className: "grid md:grid-cols-2 lg:grid-cols-3 gap-8",
+                        children: featuredPosts.map((post, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                variants: itemVariants,
+                                className: "card group",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                        src: post.image,
-                                        alt: post.title,
-                                        className: "w-full h-56 object-cover"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/FeaturedPostsSection.tsx",
-                                        lineNumber: 56,
-                                        columnNumber: 15
-                                    }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "p-6 flex flex-col flex-grow",
+                                        className: "relative mb-6 overflow-hidden rounded-sm bg-gray-100",
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                className: "text-2xl font-bold mb-2 text-[#1E531B]",
-                                                children: post.title
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                src: post.image,
+                                                alt: post.title,
+                                                className: "w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/FeaturedPostsSection.tsx",
-                                                lineNumber: 62,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-gray-600 flex-grow leading-snug",
-                                                children: post.excerpt
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/FeaturedPostsSection.tsx",
-                                                lineNumber: 65,
+                                                lineNumber: 106,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "mt-6",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                    href: post.href,
-                                                    variant: "outline-primary",
-                                                    size: "sm",
-                                                    className: "inline-flex items-center space-x-2",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            children: "Devamını Oku"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/FeaturedPostsSection.tsx",
-                                                            lineNumber: 75,
-                                                            columnNumber: 21
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$ArrowRightIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRightIcon$3e$__["ArrowRightIcon"], {
-                                                            className: "w-4 h-4"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/FeaturedPostsSection.tsx",
-                                                            lineNumber: 76,
-                                                            columnNumber: 21
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
+                                                className: "absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/FeaturedPostsSection.tsx",
+                                                lineNumber: 111,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "absolute top-4 left-4",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "px-3 py-1 bg-white/90 backdrop-blur-sm text-xs font-medium text-gray-900 rounded-sm",
+                                                    children: post.category
+                                                }, void 0, false, {
                                                     fileName: "[project]/src/components/FeaturedPostsSection.tsx",
-                                                    lineNumber: 69,
+                                                    lineNumber: 115,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/FeaturedPostsSection.tsx",
-                                                lineNumber: 68,
+                                                lineNumber: 114,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/FeaturedPostsSection.tsx",
-                                        lineNumber: 61,
+                                        lineNumber: 105,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "space-y-6",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex items-center gap-4 text-caption text-gray-500",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex items-center gap-2",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$CalendarIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CalendarIcon$3e$__["CalendarIcon"], {
+                                                                className: "h-4 w-4"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/FeaturedPostsSection.tsx",
+                                                                lineNumber: 126,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                children: new Date(post.date).toLocaleDateString('en-US', {
+                                                                    month: 'short',
+                                                                    day: 'numeric',
+                                                                    year: 'numeric'
+                                                                })
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/FeaturedPostsSection.tsx",
+                                                                lineNumber: 127,
+                                                                columnNumber: 21
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/components/FeaturedPostsSection.tsx",
+                                                        lineNumber: 125,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "w-1 h-1 bg-gray-300 rounded-full"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/FeaturedPostsSection.tsx",
+                                                        lineNumber: 133,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex items-center gap-2",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$EyeIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__EyeIcon$3e$__["EyeIcon"], {
+                                                                className: "h-4 w-4"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/FeaturedPostsSection.tsx",
+                                                                lineNumber: 135,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                children: post.views.toLocaleString()
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/FeaturedPostsSection.tsx",
+                                                                lineNumber: 136,
+                                                                columnNumber: 21
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/components/FeaturedPostsSection.tsx",
+                                                        lineNumber: 134,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "w-1 h-1 bg-gray-300 rounded-full"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/FeaturedPostsSection.tsx",
+                                                        lineNumber: 138,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        children: post.readTime
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/FeaturedPostsSection.tsx",
+                                                        lineNumber: 139,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/FeaturedPostsSection.tsx",
+                                                lineNumber: 124,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                className: "text-title text-gray-900 group-hover:text-gray-700 transition-colors",
+                                                children: post.title
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/FeaturedPostsSection.tsx",
+                                                lineNumber: 143,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-body text-gray-600 leading-relaxed",
+                                                children: post.excerpt
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/FeaturedPostsSection.tsx",
+                                                lineNumber: 148,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                href: post.href,
+                                                variant: "ghost",
+                                                size: "sm",
+                                                rightIcon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$ArrowRightIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRightIcon$3e$__["ArrowRightIcon"], {
+                                                    className: "h-4 w-4"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/FeaturedPostsSection.tsx",
+                                                    lineNumber: 157,
+                                                    columnNumber: 30
+                                                }, void 0),
+                                                className: "w-full justify-between",
+                                                children: "Read More"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/FeaturedPostsSection.tsx",
+                                                lineNumber: 153,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/FeaturedPostsSection.tsx",
+                                        lineNumber: 122,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, post.href, true, {
                                 fileName: "[project]/src/components/FeaturedPostsSection.tsx",
-                                lineNumber: 49,
+                                lineNumber: 99,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/FeaturedPostsSection.tsx",
-                        lineNumber: 47,
+                        lineNumber: 91,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        initial: {
+                            opacity: 0,
+                            y: 32
+                        },
+                        whileInView: {
+                            opacity: 1,
+                            y: 0
+                        },
+                        transition: {
+                            duration: 0.6,
+                            delay: 0.4
+                        },
+                        viewport: {
+                            once: true
+                        },
+                        className: "text-center mt-16 pt-16 border-t border-gray-200",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                className: "text-title text-gray-900 mb-4",
+                                children: "Want More Insights?"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/FeaturedPostsSection.tsx",
+                                lineNumber: 175,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-body text-gray-600 mb-8 max-w-lg mx-auto",
+                                children: "Explore our complete collection of articles covering the latest in technology, development, and digital transformation."
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/FeaturedPostsSection.tsx",
+                                lineNumber: 178,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex flex-col sm:flex-row gap-4 justify-center",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        href: "/blog",
+                                        variant: "primary",
+                                        size: "lg",
+                                        children: "View All Articles"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/FeaturedPostsSection.tsx",
+                                        lineNumber: 183,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        href: "/contact",
+                                        variant: "secondary",
+                                        size: "lg",
+                                        leftIcon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                            className: "h-4 w-4",
+                                            fill: "none",
+                                            stroke: "currentColor",
+                                            viewBox: "0 0 24 24",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                strokeLinecap: "round",
+                                                strokeLinejoin: "round",
+                                                strokeWidth: 2,
+                                                d: "M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/FeaturedPostsSection.tsx",
+                                                lineNumber: 196,
+                                                columnNumber: 19
+                                            }, void 0)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/FeaturedPostsSection.tsx",
+                                            lineNumber: 195,
+                                            columnNumber: 17
+                                        }, void 0),
+                                        children: "Subscribe to Newsletter"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/FeaturedPostsSection.tsx",
+                                        lineNumber: 190,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/FeaturedPostsSection.tsx",
+                                lineNumber: 182,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/FeaturedPostsSection.tsx",
+                        lineNumber: 168,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/FeaturedPostsSection.tsx",
-                lineNumber: 40,
+                lineNumber: 83,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/FeaturedPostsSection.tsx",
-        lineNumber: 35,
+        lineNumber: 63,
         columnNumber: 5
     }, this);
 }
@@ -807,12 +1053,16 @@ __turbopack_context__.s({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SectionHeader$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/SectionHeader.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/Button.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$CalendarIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CalendarIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/@heroicons/react/24/outline/esm/CalendarIcon.js [app-client] (ecmascript) <export default as CalendarIcon>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$EyeIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__EyeIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/@heroicons/react/24/outline/esm/EyeIcon.js [app-client] (ecmascript) <export default as EyeIcon>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$ArrowRightIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRightIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/@heroicons/react/24/outline/esm/ArrowRightIcon.js [app-client] (ecmascript) <export default as ArrowRightIcon>");
 ;
 var _s = __turbopack_context__.k.signature();
 'use client';
+;
 ;
 ;
 ;
@@ -823,102 +1073,117 @@ const posts = [
         image: '/images/Blogs/Next.png',
         excerpt: 'ISR & SSR optimizasyonlarıyla performansı artırdığımız, Shopify entegrasyonlu çok dilli e-ticaret projesi.',
         href: '/blog/nextjs-cok-dilli-e-ticaret',
-        date: '2025-07-01',
-        views: 230,
-        category: 'ecommerce'
+        date: '2025-01-15',
+        views: 1250,
+        category: 'ecommerce',
+        readTime: '8 min'
     },
     {
         title: 'Python Botlarla Web Scraping Otomasyonu',
         image: '/images/Blogs/Python.png',
         excerpt: 'Telegram ve Instagram botlarıyla veri toplama sürecini %80 hızlandırdık.',
         href: '/blog/python-web-scraping-otomasyonu',
-        date: '2025-06-25',
-        views: 180,
-        category: 'automation'
+        date: '2025-01-10',
+        views: 980,
+        category: 'automation',
+        readTime: '12 min'
     },
     {
         title: 'React Native ile Finans Uygulaması Geliştirme',
         image: '/images/Blogs/mobile.png',
         excerpt: '50K+ indirme başarısına ulaşan finans uygulamamızın mimarisi ve entegrasyonları.',
         href: '/blog/react-native-finans-uygulamasi',
-        date: '2025-06-10',
-        views: 310,
-        category: 'mobile'
+        date: '2025-01-05',
+        views: 1580,
+        category: 'mobile',
+        readTime: '15 min'
     },
     {
         title: 'Makine Öğrenmesi ile Talep Tahminleri',
         image: '/images/Blogs/Dashboard.png',
         excerpt: 'Özelleştirilmiş ML modelleri kullanarak %95 doğrulukla satış tahminleri yaptık.',
         href: '/blog/machine-learning-tahmin-sistemleri',
-        date: '2025-05-30',
-        views: 145,
-        category: 'ai'
+        date: '2024-12-30',
+        views: 856,
+        category: 'ai',
+        readTime: '10 min'
     },
     {
         title: 'Headless CMS ile Çoklu Dil Yönetimi',
         image: '/images/Blogs/CMS.png',
         excerpt: 'Next.js + Strapi entegrasyonu sayesinde içerikleri merkezi olarak yönettik.',
         href: '/blog/headless-cms-coklu-dil-yonetimi',
-        date: '2025-05-15',
-        views: 160,
-        category: 'web'
+        date: '2024-12-25',
+        views: 642,
+        category: 'web',
+        readTime: '7 min'
     },
     {
         title: 'UI/UX Tasarımda En İyi Uygulamalar',
         image: '/images/Blogs/ui.png',
         excerpt: 'Kullanıcı odaklı ara yüz tasarımlarında takip ettiğimiz 5 temel prensip.',
         href: '/blog/ui-ux-tasarim-prensipleri',
-        date: '2025-05-01',
-        views: 200,
-        category: 'design'
+        date: '2024-12-20',
+        views: 743,
+        category: 'design',
+        readTime: '9 min'
     },
     {
         title: 'CI/CD Pipeline Kurulumu ile Süreç Otomasyonu',
         image: '/images/Blogs/devops.png',
         excerpt: 'Jenkins ve GitHub Actions kullanarak otomatik test & deploy hattı kurduk.',
         href: '/blog/ci-cd-pipeline-otomasyonu',
-        date: '2025-04-20',
-        views: 175,
-        category: 'devops'
+        date: '2024-12-15',
+        views: 591,
+        category: 'devops',
+        readTime: '14 min'
     },
     {
         title: 'Shopify Performans Optimizasyon Tüyoları',
         image: '/images/Blogs/shopify.png',
-        excerpt: 'Sayfa yükleme sürelerini 0.5s’ye kadar düşüren 7 pratik ipucu.',
+        excerpt: 'Sayfa yükleme sürelerini 0.5s\'ye kadar düşüren 7 pratik ipucu.',
         href: '/blog/shopify-performance-ipuclari',
-        date: '2025-04-05',
-        views: 220,
-        category: 'ecommerce'
+        date: '2024-12-10',
+        views: 1024,
+        category: 'ecommerce',
+        readTime: '11 min'
     }
 ];
 const categories = [
     {
         key: 'ecommerce',
-        label: 'E-Ticaret'
+        label: 'E-Commerce',
+        count: 2
     },
     {
         key: 'automation',
-        label: 'Otomasyon'
+        label: 'Automation',
+        count: 1
     },
     {
         key: 'mobile',
-        label: 'Mobil'
+        label: 'Mobile',
+        count: 1
     },
     {
         key: 'ai',
-        label: 'AI'
+        label: 'AI & ML',
+        count: 1
     },
     {
         key: 'web',
-        label: 'Web & API'
+        label: 'Web Development',
+        count: 1
     },
     {
         key: 'design',
-        label: 'Tasarım'
+        label: 'Design & UX',
+        count: 1
     },
     {
         key: 'devops',
-        label: 'DevOps'
+        label: 'DevOps',
+        count: 1
     }
 ];
 function TabbedPostsSection() {
@@ -951,180 +1216,533 @@ function TabbedPostsSection() {
     let displayPosts = latestPosts;
     if (activeTab === 'popular') displayPosts = popularPosts;
     if (activeTab === 'categories') displayPosts = categorizedPosts;
+    const containerVariants = {
+        hidden: {
+            opacity: 0
+        },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.1
+            }
+        }
+    };
+    const itemVariants = {
+        hidden: {
+            opacity: 0,
+            y: 24
+        },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.6,
+                ease: [
+                    0.4,
+                    0,
+                    0.2,
+                    1
+                ]
+            }
+        }
+    };
+    const handleTabClick = (tab)=>{
+        setActiveTab(tab);
+    };
+    const handleCategoryClick = (categoryKey)=>{
+        setActiveCategory(categoryKey);
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "relative py-24 bg-white overflow-hidden",
+        className: "section bg-gray-50 relative overflow-hidden",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute -top-16 -left-16 w-72 h-72 bg-[#FFB800]/10 rounded-full blur-3xl pointer-events-none"
+                className: "absolute inset-0 opacity-[0.02] pointer-events-none",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "w-full h-full",
+                    style: {
+                        backgroundImage: `
+        linear-gradient(rgba(0,0,0,0.3) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.3) 1px, transparent 1px)
+      `,
+                        backgroundSize: '64px 64px'
+                    }
+                }, void 0, false, {
+                    fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                    lineNumber: 161,
+                    columnNumber: 3
+                }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TabbedPostsSection.tsx",
-                lineNumber: 136,
-                columnNumber: 7
+                lineNumber: 160,
+                columnNumber: 1
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute -bottom-16 -right-16 w-96 h-96 bg-[#1E531B]/10 rounded-full blur-3xl pointer-events-none"
+                className: "absolute top-16 right-20 w-24 h-24 pointer-events-none",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "crescent crescent-right crescent-subtle text-gray-900"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                    lineNumber: 175,
+                    columnNumber: 3
+                }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TabbedPostsSection.tsx",
-                lineNumber: 137,
-                columnNumber: 7
+                lineNumber: 174,
+                columnNumber: 1
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "container mx-auto px-6",
+                className: "container mx-auto",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SectionHeader$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        eyebrow: "Blog",
-                        title: "Tüm Yazılar",
-                        className: "text-center mb-8"
+                        eyebrow: "Knowledge Hub",
+                        title: "All Articles",
+                        subtitle: "Explore our comprehensive collection of insights, tutorials, and industry analysis across different topics and technologies.",
+                        className: "mb-16"
                     }, void 0, false, {
                         fileName: "[project]/src/components/TabbedPostsSection.tsx",
-                        lineNumber: 140,
+                        lineNumber: 180,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex justify-center mb-8 space-x-4",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                onClick: ()=>setActiveTab('latest'),
-                                className: `px-4 py-2 font-medium rounded-full transition ${activeTab === 'latest' ? 'bg-[#1E531B] text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`,
-                                children: "Son Eklenenler"
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/TabbedPostsSection.tsx",
-                                lineNumber: 148,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                onClick: ()=>setActiveTab('popular'),
-                                className: `px-4 py-2 font-medium rounded-full transition ${activeTab === 'popular' ? 'bg-[#1E531B] text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`,
-                                children: "Popüler & Trend"
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/TabbedPostsSection.tsx",
-                                lineNumber: 158,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                onClick: ()=>setActiveTab('categories'),
-                                className: `px-4 py-2 font-medium rounded-full transition ${activeTab === 'categories' ? 'bg-[#1E531B] text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`,
-                                children: "Kategoriler"
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/TabbedPostsSection.tsx",
-                                lineNumber: 168,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        initial: {
+                            opacity: 0,
+                            y: 16
+                        },
+                        whileInView: {
+                            opacity: 1,
+                            y: 0
+                        },
+                        transition: {
+                            duration: 0.6
+                        },
+                        viewport: {
+                            once: true
+                        },
+                        className: "flex justify-center mb-12",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "bg-white border border-gray-200 rounded-sm p-1",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    type: "button",
+                                    onClick: ()=>handleTabClick('latest'),
+                                    className: `
+                px-6 py-2 text-sm font-medium rounded-sm transition-all duration-250 cursor-pointer
+                ${activeTab === 'latest' ? 'bg-gray-900 text-white' : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'}
+              `,
+                                    children: "Latest Posts"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                    lineNumber: 196,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    type: "button",
+                                    onClick: ()=>handleTabClick('popular'),
+                                    className: `
+                px-6 py-2 text-sm font-medium rounded-sm transition-all duration-250 cursor-pointer
+                ${activeTab === 'popular' ? 'bg-gray-900 text-white' : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'}
+              `,
+                                    children: "Most Popular"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                    lineNumber: 209,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    type: "button",
+                                    onClick: ()=>handleTabClick('categories'),
+                                    className: `
+                px-6 py-2 text-sm font-medium rounded-sm transition-all duration-250 cursor-pointer
+                ${activeTab === 'categories' ? 'bg-gray-900 text-white' : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'}
+              `,
+                                    children: "By Category"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                    lineNumber: 222,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                            lineNumber: 195,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
                         fileName: "[project]/src/components/TabbedPostsSection.tsx",
-                        lineNumber: 147,
+                        lineNumber: 188,
                         columnNumber: 9
                     }, this),
-                    activeTab === 'categories' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex flex-wrap justify-center mb-8 gap-3",
+                    activeTab === 'categories' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        initial: {
+                            opacity: 0,
+                            y: 16
+                        },
+                        animate: {
+                            opacity: 1,
+                            y: 0
+                        },
+                        transition: {
+                            duration: 0.4
+                        },
+                        className: "flex flex-wrap justify-center gap-3 mb-12",
                         children: categories.map((cat)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                onClick: ()=>setActiveCategory(cat.key),
-                                className: `px-3 py-1 text-sm font-medium rounded-full transition ${activeCategory === cat.key ? 'bg-[#1E531B] text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`,
-                                children: cat.label
-                            }, cat.key, false, {
+                                type: "button",
+                                onClick: ()=>handleCategoryClick(cat.key),
+                                className: `
+                  px-4 py-2 text-sm font-medium border rounded-sm transition-all duration-250 cursor-pointer
+                  ${activeCategory === cat.key ? 'bg-gray-900 text-white border-gray-900' : 'bg-white text-gray-600 border-gray-200 hover:border-gray-300 hover:text-gray-900 hover:bg-gray-50'}
+                `,
+                                children: [
+                                    cat.label,
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "ml-2 text-xs opacity-75",
+                                        children: [
+                                            "(",
+                                            cat.count,
+                                            ")"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                        lineNumber: 260,
+                                        columnNumber: 17
+                                    }, this)
+                                ]
+                            }, cat.key, true, {
                                 fileName: "[project]/src/components/TabbedPostsSection.tsx",
-                                lineNumber: 184,
+                                lineNumber: 247,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/TabbedPostsSection.tsx",
-                        lineNumber: 182,
+                        lineNumber: 240,
                         columnNumber: 11
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3",
-                        children: displayPosts.map((post)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-gray-50 rounded-2xl overflow-hidden shadow hover:shadow-lg transition flex flex-col",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        variants: containerVariants,
+                        initial: "hidden",
+                        animate: "visible",
+                        className: "grid md:grid-cols-2 lg:grid-cols-3 gap-8",
+                        children: displayPosts.map((post, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                variants: itemVariants,
+                                className: "card group",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                        src: post.image,
-                                        alt: post.title,
-                                        className: "w-full h-48 object-cover"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/TabbedPostsSection.tsx",
-                                        lineNumber: 206,
-                                        columnNumber: 15
-                                    }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "p-6 flex flex-col flex-grow",
+                                        className: "relative mb-6 overflow-hidden rounded-sm bg-gray-100",
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                className: "text-xl font-semibold mb-2 text-[#1E531B]",
-                                                children: post.title
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                src: post.image,
+                                                alt: post.title,
+                                                className: "w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/TabbedPostsSection.tsx",
-                                                lineNumber: 212,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-gray-600 flex-grow leading-snug",
-                                                children: post.excerpt
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/TabbedPostsSection.tsx",
-                                                lineNumber: 215,
+                                                lineNumber: 282,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "mt-4",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                    href: post.href,
-                                                    variant: "outline-primary",
-                                                    size: "sm",
-                                                    className: "inline-flex items-center space-x-2",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            children: "Devamını Oku"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/TabbedPostsSection.tsx",
-                                                            lineNumber: 225,
-                                                            columnNumber: 21
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$ArrowRightIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRightIcon$3e$__["ArrowRightIcon"], {
-                                                            className: "w-4 h-4"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/TabbedPostsSection.tsx",
-                                                            lineNumber: 226,
-                                                            columnNumber: 21
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/TabbedPostsSection.tsx",
-                                                    lineNumber: 219,
-                                                    columnNumber: 19
-                                                }, this)
+                                                className: "absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/TabbedPostsSection.tsx",
-                                                lineNumber: 218,
+                                                lineNumber: 287,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/TabbedPostsSection.tsx",
-                                        lineNumber: 211,
+                                        lineNumber: 281,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "space-y-6",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex items-center gap-4 text-caption text-gray-500",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex items-center gap-2",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$CalendarIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CalendarIcon$3e$__["CalendarIcon"], {
+                                                                className: "h-4 w-4"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                                                lineNumber: 295,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                children: new Date(post.date).toLocaleDateString('en-US', {
+                                                                    month: 'short',
+                                                                    day: 'numeric',
+                                                                    timeZone: 'UTC'
+                                                                })
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                                                lineNumber: 297,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                                        lineNumber: 294,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "w-1 h-1 bg-gray-300 rounded-full"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                                        lineNumber: 305,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex items-center gap-2",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$EyeIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__EyeIcon$3e$__["EyeIcon"], {
+                                                                className: "h-4 w-4"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                                                lineNumber: 307,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                children: post.views.toLocaleString('en-US')
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                                                lineNumber: 309,
+                                                                columnNumber: 1
+                                                            }, this),
+                                                            "  "
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                                        lineNumber: 306,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "w-1 h-1 bg-gray-300 rounded-full"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                                        lineNumber: 311,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        children: post.readTime
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                                        lineNumber: 312,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                                lineNumber: 293,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                className: "text-title text-gray-900 group-hover:text-gray-700 transition-colors",
+                                                children: post.title
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                                lineNumber: 316,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-body text-gray-600 leading-relaxed",
+                                                children: post.excerpt
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                                lineNumber: 321,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                href: post.href,
+                                                variant: "ghost",
+                                                size: "sm",
+                                                rightIcon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$ArrowRightIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRightIcon$3e$__["ArrowRightIcon"], {
+                                                    className: "h-4 w-4"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                                    lineNumber: 330,
+                                                    columnNumber: 30
+                                                }, void 0),
+                                                className: "w-full justify-between",
+                                                children: "Continue Reading"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                                lineNumber: 326,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                        lineNumber: 291,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, post.href, true, {
                                 fileName: "[project]/src/components/TabbedPostsSection.tsx",
-                                lineNumber: 202,
+                                lineNumber: 275,
                                 columnNumber: 13
                             }, this))
-                    }, void 0, false, {
+                    }, `${activeTab}-${activeCategory}`, false, {
                         fileName: "[project]/src/components/TabbedPostsSection.tsx",
-                        lineNumber: 200,
+                        lineNumber: 267,
+                        columnNumber: 9
+                    }, this),
+                    displayPosts.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        initial: {
+                            opacity: 0
+                        },
+                        animate: {
+                            opacity: 1
+                        },
+                        className: "text-center py-16",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "w-16 h-16 bg-gray-100 border border-gray-200 rounded-sm mx-auto mb-6 flex items-center justify-center",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                    className: "h-8 w-8 text-gray-400",
+                                    fill: "none",
+                                    stroke: "currentColor",
+                                    viewBox: "0 0 24 24",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                        strokeLinecap: "round",
+                                        strokeLinejoin: "round",
+                                        strokeWidth: 2,
+                                        d: "M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                        lineNumber: 349,
+                                        columnNumber: 17
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                    lineNumber: 348,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                lineNumber: 347,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                className: "text-title text-gray-900 mb-2",
+                                children: "No Articles Found"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                lineNumber: 352,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-body text-gray-600",
+                                children: "No articles found in this category. Try selecting a different category."
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                lineNumber: 353,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                        lineNumber: 342,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        initial: {
+                            opacity: 0,
+                            y: 32
+                        },
+                        whileInView: {
+                            opacity: 1,
+                            y: 0
+                        },
+                        transition: {
+                            duration: 0.6,
+                            delay: 0.4
+                        },
+                        viewport: {
+                            once: true
+                        },
+                        className: "text-center mt-16 pt-16 border-t border-gray-200",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                className: "text-title text-gray-900 mb-4",
+                                children: "Stay Updated with Our Latest Insights"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                lineNumber: 367,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-body text-gray-600 mb-8 max-w-lg mx-auto",
+                                children: "Subscribe to our newsletter and get the latest articles, tutorials, and industry insights delivered directly to your inbox."
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                lineNumber: 370,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex flex-col sm:flex-row gap-4 justify-center",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        href: "/newsletter",
+                                        variant: "primary",
+                                        size: "lg",
+                                        leftIcon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                            className: "h-4 w-4",
+                                            fill: "none",
+                                            stroke: "currentColor",
+                                            viewBox: "0 0 24 24",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                strokeLinecap: "round",
+                                                strokeLinejoin: "round",
+                                                strokeWidth: 2,
+                                                d: "M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                                lineNumber: 381,
+                                                columnNumber: 19
+                                            }, void 0)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                            lineNumber: 380,
+                                            columnNumber: 17
+                                        }, void 0),
+                                        children: "Subscribe to Newsletter"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                        lineNumber: 375,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        href: "/contact",
+                                        variant: "secondary",
+                                        size: "lg",
+                                        children: "Get in Touch"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                        lineNumber: 387,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                                lineNumber: 374,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/TabbedPostsSection.tsx",
+                        lineNumber: 360,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/TabbedPostsSection.tsx",
-                lineNumber: 139,
+                lineNumber: 179,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/TabbedPostsSection.tsx",
-        lineNumber: 134,
+        lineNumber: 158,
         columnNumber: 5
     }, this);
 }
@@ -2445,149 +3063,433 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Button$
 ;
 ;
 function CtaBanner() {
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].section, {
-        initial: {
-            opacity: 0,
-            y: 50
-        },
-        whileInView: {
-            opacity: 1,
-            y: 0
-        },
-        viewport: {
-            once: true
-        },
-        transition: {
-            duration: 0.8
-        },
-        className: " relative overflow-hidden pt-28 pb-36 bg-gradient-to-br from-[#1E531B]/10 via-white/80 to-[#FFB800]/10 text-[#1E531B] ",
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        className: "section bg-gray-50 relative overflow-hidden",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute inset-0 bg-[url('/pattern-diagonal.svg')] opacity-5 pointer-events-none"
-            }, void 0, false, {
-                fileName: "[project]/src/components/CtaBanner.tsx",
-                lineNumber: 21,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute bottom-0 left-0 w-full overflow-hidden leading-[0]",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                    className: "relative block w-full h-16",
-                    xmlns: "http://www.w3.org/2000/svg",
-                    preserveAspectRatio: "none",
-                    viewBox: "0 0 1200 120",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                        d: "M0,0 C600,100 600,100 1200,0 L1200,120 L0,120 Z",
-                        fill: "currentColor",
-                        className: "text-[#FFB800]/20"
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/CtaBanner.tsx",
-                        lineNumber: 31,
-                        columnNumber: 11
-                    }, this)
+                className: "absolute inset-0 opacity-[0.02]",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "w-full h-full",
+                    style: {
+                        backgroundImage: `
+              linear-gradient(rgba(0,0,0,0.3) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(0,0,0,0.3) 1px, transparent 1px)
+            `,
+                        backgroundSize: '64px 64px'
+                    }
                 }, void 0, false, {
                     fileName: "[project]/src/components/CtaBanner.tsx",
-                    lineNumber: 25,
+                    lineNumber: 12,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/CtaBanner.tsx",
-                lineNumber: 24,
+                lineNumber: 11,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute -top-16 -left-16 w-64 h-64 bg-[#FFB800]/20 rounded-full blur-3xl pointer-events-none"
+                className: "absolute top-16 left-16 w-32 h-32",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "crescent crescent-left crescent-subtle text-gray-900"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/CtaBanner.tsx",
+                    lineNumber: 26,
+                    columnNumber: 9
+                }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/CtaBanner.tsx",
-                lineNumber: 40,
+                lineNumber: 25,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute -bottom-20 -right-10 w-72 h-72 bg-[#1E531B]/20 rounded-full blur-2xl pointer-events-none"
+                className: "absolute bottom-16 right-16 w-20 h-20",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "crescent crescent-right crescent-subtle text-gray-600"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/CtaBanner.tsx",
+                    lineNumber: 30,
+                    columnNumber: 9
+                }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/CtaBanner.tsx",
-                lineNumber: 41,
+                lineNumber: 29,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "relative container mx-auto px-6 text-center z-10",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h2, {
-                        initial: {
-                            scale: 0.9
-                        },
-                        whileInView: {
-                            scale: 1
-                        },
-                        transition: {
-                            duration: 0.6,
-                            delay: 0.2
-                        },
-                        className: "text-3xl md:text-4xl lg:text-5xl font-extrabold",
-                        children: "Projeyi Birlikte Hayata Geçirelim!"
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/CtaBanner.tsx",
-                        lineNumber: 44,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
-                        initial: {
-                            opacity: 0
-                        },
-                        whileInView: {
-                            opacity: 1
-                        },
-                        transition: {
-                            duration: 0.6,
-                            delay: 0.4
-                        },
-                        className: "mt-4 text-base md:text-lg max-w-2xl mx-auto",
-                        children: "Modüler otomasyon ve e-ticaret altyapısıyla işinizi hızlandırın."
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/CtaBanner.tsx",
-                        lineNumber: 53,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                        initial: {
-                            y: 20,
-                            opacity: 0
-                        },
-                        whileInView: {
-                            y: 0,
-                            opacity: 1
-                        },
-                        transition: {
-                            duration: 0.6,
-                            delay: 0.6
-                        },
-                        className: "mt-10",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            href: "/contact",
-                            variant: "primary",
-                            size: "lg",
-                            className: "inline-flex items-center space-x-3 px-8 py-4",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                children: "Hemen İletişime Geç"
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/CtaBanner.tsx",
-                                lineNumber: 74,
-                                columnNumber: 13
-                            }, this)
+                className: "container mx-auto",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                    initial: {
+                        opacity: 0,
+                        y: 32
+                    },
+                    whileInView: {
+                        opacity: 1,
+                        y: 0
+                    },
+                    viewport: {
+                        once: true
+                    },
+                    transition: {
+                        duration: 0.8,
+                        ease: [
+                            0.4,
+                            0,
+                            0.2,
+                            1
+                        ]
+                    },
+                    className: "max-w-4xl mx-auto text-center",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex items-center justify-center gap-3 mb-8",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "w-8 h-0.5 bg-gray-900"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/CtaBanner.tsx",
+                                    lineNumber: 43,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "text-overline",
+                                    children: "Ready to Start?"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/CtaBanner.tsx",
+                                    lineNumber: 44,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "w-8 h-0.5 bg-gray-900"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/CtaBanner.tsx",
+                                    lineNumber: 45,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/CtaBanner.tsx",
+                            lineNumber: 42,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h2, {
+                            initial: {
+                                opacity: 0,
+                                y: 16
+                            },
+                            whileInView: {
+                                opacity: 1,
+                                y: 0
+                            },
+                            transition: {
+                                duration: 0.6,
+                                delay: 0.2
+                            },
+                            viewport: {
+                                once: true
+                            },
+                            className: "text-headline text-gray-900 mb-6",
+                            children: [
+                                "Let's Build Something",
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                    fileName: "[project]/src/components/CtaBanner.tsx",
+                                    lineNumber: 57,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "text-gray-600",
+                                    children: "Amazing Together"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/CtaBanner.tsx",
+                                    lineNumber: 58,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/CtaBanner.tsx",
+                            lineNumber: 49,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
+                            initial: {
+                                opacity: 0,
+                                y: 16
+                            },
+                            whileInView: {
+                                opacity: 1,
+                                y: 0
+                            },
+                            transition: {
+                                duration: 0.6,
+                                delay: 0.3
+                            },
+                            viewport: {
+                                once: true
+                            },
+                            className: "text-body text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed",
+                            children: "Transform your ideas into powerful digital solutions. Whether you need web development, mobile apps, or AI integration, we're here to bring your vision to life with cutting-edge technology and expert craftsmanship."
                         }, void 0, false, {
                             fileName: "[project]/src/components/CtaBanner.tsx",
-                            lineNumber: 68,
+                            lineNumber: 62,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                            initial: {
+                                opacity: 0,
+                                y: 16
+                            },
+                            whileInView: {
+                                opacity: 1,
+                                y: 0
+                            },
+                            transition: {
+                                duration: 0.6,
+                                delay: 0.4
+                            },
+                            viewport: {
+                                once: true
+                            },
+                            className: "flex flex-col sm:flex-row gap-4 justify-center mb-16",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    href: "/contact",
+                                    variant: "primary",
+                                    size: "lg",
+                                    rightIcon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                        className: "h-4 w-4",
+                                        fill: "none",
+                                        stroke: "currentColor",
+                                        viewBox: "0 0 24 24",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                            strokeLinecap: "round",
+                                            strokeLinejoin: "round",
+                                            strokeWidth: 2,
+                                            d: "M13 7l5 5m0 0l-5 5m5-5H6"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/CtaBanner.tsx",
+                                            lineNumber: 88,
+                                            columnNumber: 19
+                                        }, void 0)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/CtaBanner.tsx",
+                                        lineNumber: 87,
+                                        columnNumber: 17
+                                    }, void 0),
+                                    children: "Start Your Project"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/CtaBanner.tsx",
+                                    lineNumber: 82,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    href: "/services",
+                                    variant: "secondary",
+                                    size: "lg",
+                                    leftIcon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                        className: "h-4 w-4",
+                                        fill: "none",
+                                        stroke: "currentColor",
+                                        viewBox: "0 0 24 24",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                            strokeLinecap: "round",
+                                            strokeLinejoin: "round",
+                                            strokeWidth: 2,
+                                            d: "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/CtaBanner.tsx",
+                                            lineNumber: 100,
+                                            columnNumber: 19
+                                        }, void 0)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/CtaBanner.tsx",
+                                        lineNumber: 99,
+                                        columnNumber: 17
+                                    }, void 0),
+                                    children: "View Services"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/CtaBanner.tsx",
+                                    lineNumber: 94,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/CtaBanner.tsx",
+                            lineNumber: 75,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                            initial: {
+                                opacity: 0,
+                                y: 16
+                            },
+                            whileInView: {
+                                opacity: 1,
+                                y: 0
+                            },
+                            transition: {
+                                duration: 0.6,
+                                delay: 0.6
+                            },
+                            viewport: {
+                                once: true
+                            },
+                            className: "grid grid-cols-1 md:grid-cols-3 gap-8 pt-16 border-t border-gray-200",
+                            children: [
+                                {
+                                    icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                        className: "h-5 w-5",
+                                        fill: "none",
+                                        stroke: "currentColor",
+                                        viewBox: "0 0 24 24",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                            strokeLinecap: "round",
+                                            strokeLinejoin: "round",
+                                            strokeWidth: 2,
+                                            d: "M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/CtaBanner.tsx",
+                                            lineNumber: 120,
+                                            columnNumber: 21
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/CtaBanner.tsx",
+                                        lineNumber: 119,
+                                        columnNumber: 19
+                                    }, this),
+                                    title: "Email Us",
+                                    description: "Get a detailed response",
+                                    value: "info@paktechnology.com",
+                                    href: "mailto:info@paktechnology.com"
+                                },
+                                {
+                                    icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                        className: "h-5 w-5",
+                                        fill: "none",
+                                        stroke: "currentColor",
+                                        viewBox: "0 0 24 24",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                            strokeLinecap: "round",
+                                            strokeLinejoin: "round",
+                                            strokeWidth: 2,
+                                            d: "M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/CtaBanner.tsx",
+                                            lineNumber: 131,
+                                            columnNumber: 21
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/CtaBanner.tsx",
+                                        lineNumber: 130,
+                                        columnNumber: 19
+                                    }, this),
+                                    title: "Call Us",
+                                    description: "Quick consultation",
+                                    value: "+90 552 567 71 64",
+                                    href: "tel:+905525677164"
+                                },
+                                {
+                                    icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                        className: "h-5 w-5",
+                                        fill: "none",
+                                        stroke: "currentColor",
+                                        viewBox: "0 0 24 24",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                            strokeLinecap: "round",
+                                            strokeLinejoin: "round",
+                                            strokeWidth: 2,
+                                            d: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/CtaBanner.tsx",
+                                            lineNumber: 142,
+                                            columnNumber: 21
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/CtaBanner.tsx",
+                                        lineNumber: 141,
+                                        columnNumber: 19
+                                    }, this),
+                                    title: "Response Time",
+                                    description: "We'll get back to you",
+                                    value: "< 24 hours",
+                                    href: null
+                                }
+                            ].map((method, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                    initial: {
+                                        opacity: 0,
+                                        y: 16
+                                    },
+                                    whileInView: {
+                                        opacity: 1,
+                                        y: 0
+                                    },
+                                    transition: {
+                                        duration: 0.5,
+                                        delay: 0.8 + index * 0.1
+                                    },
+                                    viewport: {
+                                        once: true
+                                    },
+                                    className: "text-center",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "w-12 h-12 bg-white border border-gray-200 rounded-sm mx-auto mb-4 flex items-center justify-center",
+                                            children: method.icon
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/CtaBanner.tsx",
+                                            lineNumber: 159,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                            className: "font-medium text-gray-900 mb-2",
+                                            children: method.title
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/CtaBanner.tsx",
+                                            lineNumber: 162,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-caption text-gray-500 mb-2",
+                                            children: method.description
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/CtaBanner.tsx",
+                                            lineNumber: 163,
+                                            columnNumber: 17
+                                        }, this),
+                                        method.href ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            href: method.href,
+                                            className: "text-body text-gray-700 hover:text-gray-900 transition-colors",
+                                            children: method.value
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/CtaBanner.tsx",
+                                            lineNumber: 165,
+                                            columnNumber: 19
+                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-body text-gray-700",
+                                            children: method.value
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/CtaBanner.tsx",
+                                            lineNumber: 172,
+                                            columnNumber: 19
+                                        }, this)
+                                    ]
+                                }, method.title, true, {
+                                    fileName: "[project]/src/components/CtaBanner.tsx",
+                                    lineNumber: 151,
+                                    columnNumber: 15
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/CtaBanner.tsx",
+                            lineNumber: 109,
                             columnNumber: 11
                         }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/CtaBanner.tsx",
-                        lineNumber: 62,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/CtaBanner.tsx",
+                    lineNumber: 34,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
                 fileName: "[project]/src/components/CtaBanner.tsx",
-                lineNumber: 43,
+                lineNumber: 33,
                 columnNumber: 7
             }, this)
         ]
