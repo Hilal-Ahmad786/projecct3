@@ -1,0 +1,15 @@
+{
+    "plugins": ["unused-imports"],
+    "rules": {
+      // auto-remove unused imports on --fix
+      "unused-imports/no-unused-imports": "error",
+      // optionally turn `<img>` warnings into warnings instead of errors
+      "@next/next/no-img-element": "warn",
+      // allow underscore-prefixed unused vars
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }
+      ]
+    }
+  }
+  

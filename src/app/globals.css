@@ -1,0 +1,512 @@
+/* Swiss Minimalism + Material Design Philosophy */
+
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hero Section Consistent Styling */
+.hero-section {
+  min-height: 80vh;
+  padding-top: 120px; /* Account for fixed navbar */
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+}
+
+/* Proper Crescent Shape CSS */
+.crescent {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.crescent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: currentColor;
+  border-radius: 50%;
+  clip-path: circle(50% at 50% 50%);
+}
+
+.crescent::after {
+  content: '';
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  width: 70%;
+  height: 70%;
+  background: var(--pure-white);
+  border-radius: 50%;
+  clip-path: circle(50% at 50% 50%);
+}
+
+/* Different crescent orientations */
+.crescent-right::after {
+  top: 15%;
+  left: 35%;
+}
+
+.crescent-left::after {
+  top: 15%;
+  left: 15%;
+}
+
+.crescent-subtle {
+  opacity: 0.03;
+}
+
+:root {
+  /* Primary Color System - Monochromatic Approach */
+  --primary-dark: #1a1a1a;          /* Almost black for text */
+  --primary-gray: #333333;          /* Dark gray for secondary text */
+  --secondary-gray: #666666;        /* Medium gray for body text */
+  --light-gray: #999999;            /* Light gray for subtle text */
+  --border-gray: #e0e0e0;           /* Light borders */
+  --background-gray: #f8f8f8;       /* Subtle background */
+  
+  /* Pure White as Foundation */
+  --pure-white: #ffffff;
+  --off-white: #fdfdfd;
+  --cream: #fafafa;
+  
+  /* Accent Colors - Used Sparingly */
+  --accent-emerald: #16a085;        /* Muted emerald - only for key CTAs */
+  --accent-crimson: #c0392b;        /* Muted crimson - only for highlights */
+  --accent-emerald-light: #e8f5f0;  /* Very light emerald for subtle backgrounds */
+  --accent-crimson-light: #fdeaea;  /* Very light crimson for subtle backgrounds */
+  
+  /* Swiss Design Typography */
+  --font-primary: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
+  
+  /* Grid System */
+  --grid-unit: 8px;
+  --space-xs: calc(var(--grid-unit) * 1);    /* 8px */
+  --space-sm: calc(var(--grid-unit) * 2);    /* 16px */
+  --space-md: calc(var(--grid-unit) * 3);    /* 24px */
+  --space-lg: calc(var(--grid-unit) * 4);    /* 32px */
+  --space-xl: calc(var(--grid-unit) * 6);    /* 48px */
+  --space-2xl: calc(var(--grid-unit) * 8);   /* 64px */
+  --space-3xl: calc(var(--grid-unit) * 12);  /* 96px */
+  
+  /* Minimal Borders and Radius */
+  --border-width: 1px;
+  --radius-none: 0;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 6px;
+  --radius-xl: 8px;
+  
+  /* Swiss Design Shadows - Very Subtle */
+  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.08);
+  
+  /* Material Design Motion */
+  --easing-standard: cubic-bezier(0.4, 0.0, 0.2, 1);
+  --easing-accelerate: cubic-bezier(0.4, 0.0, 1, 1);
+  --easing-decelerate: cubic-bezier(0.0, 0.0, 0.2, 1);
+  
+  --duration-short: 150ms;
+  --duration-medium: 250ms;
+  --duration-long: 350ms;
+}
+
+/* Swiss Design Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--primary-dark);
+  background-color: var(--pure-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography Scale - Swiss Hierarchy */
+.text-display {
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.text-headline {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.text-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.text-body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.text-caption {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--secondary-gray);
+}
+
+.text-overline {
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--light-gray);
+}
+
+/* Crescent Design Elements - Geometric and Subtle */
+.crescent-element {
+  position: relative;
+}
+
+.crescent-element::before {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--border-gray);
+  border-radius: 50%;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  opacity: 0.3;
+}
+
+.crescent-bg-subtle {
+  position: relative;
+  overflow: hidden;
+}
+
+.crescent-bg-subtle::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid var(--border-gray);
+  border-radius: 50%;
+  clip-path: circle(40% at 70% 30%);
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.crescent-accent {
+  position: relative;
+}
+
+.crescent-accent::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -12px;
+  width: 8px;
+  height: 8px;
+  background: var(--accent-emerald);
+  border-radius: 50%;
+  clip-path: circle(40% at 70% 30%);
+  transform: translateY(-50%);
+}
+
+/* Swiss Grid System */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+@media (max-width: 768px) {
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Material Design Elevation */
+.elevation-0 { box-shadow: none; }
+.elevation-1 { box-shadow: var(--shadow-subtle); }
+.elevation-2 { box-shadow: var(--shadow-soft); }
+.elevation-3 { box-shadow: var(--shadow-medium); }
+
+/* Minimal Button System */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  padding: var(--space-sm) var(--space-lg);
+  border: var(--border-width) solid transparent;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-primary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all var(--duration-medium) var(--easing-standard);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background-color: var(--primary-dark);
+  color: var(--pure-white);
+  border-color: var(--primary-dark);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-gray);
+  border-color: var(--primary-gray);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: var(--pure-white);
+  color: var(--primary-dark);
+  border-color: var(--border-gray);
+}
+
+.btn-secondary:hover {
+  background-color: var(--cream);
+  border-color: var(--primary-gray);
+}
+
+.btn-accent-emerald {
+  background-color: var(--pure-white);
+  color: var(--accent-emerald);
+  border-color: var(--accent-emerald);
+}
+
+.btn-accent-emerald:hover {
+  background-color: var(--accent-emerald);
+  color: var(--pure-white);
+}
+
+.btn-accent-crimson {
+  background-color: var(--pure-white);
+  color: var(--accent-crimson);
+  border-color: var(--accent-crimson);
+}
+
+.btn-accent-crimson:hover {
+  background-color: var(--accent-crimson);
+  color: var(--pure-white);
+}
+
+/* Card System - Swiss Minimalism */
+.card {
+  background-color: var(--pure-white);
+  border: var(--border-width) solid var(--border-gray);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  transition: all var(--duration-medium) var(--easing-standard);
+}
+
+.card:hover {
+  border-color: var(--primary-gray);
+  box-shadow: var(--shadow-soft);
+  transform: translateY(-2px);
+}
+
+.card-accent {
+  border-left: 3px solid var(--accent-emerald);
+}
+
+.card-featured {
+  border-color: var(--accent-emerald);
+  box-shadow: var(--shadow-soft);
+}
+
+/* Minimal Animations */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-in {
+  from { opacity: 0; transform: translateX(-16px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes float-subtle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
+}
+
+.animate-fade-in {
+  animation: fade-in var(--duration-long) var(--easing-decelerate);
+}
+
+.animate-slide-in {
+  animation: slide-in var(--duration-long) var(--easing-decelerate);
+}
+
+.animate-scale-in {
+  animation: scale-in var(--duration-medium) var(--easing-standard);
+}
+
+.animate-float-subtle {
+  animation: float-subtle 4s ease-in-out infinite;
+}
+
+/* Swiss Layout Utilities */
+.section {
+  padding: var(--space-3xl) 0;
+}
+
+.section-compact {
+  padding: var(--space-2xl) 0;
+}
+
+.divider {
+  width: 100%;
+  height: var(--border-width);
+  background-color: var(--border-gray);
+  border: none;
+  margin: var(--space-2xl) 0;
+}
+
+.divider-accent {
+  background-color: var(--accent-emerald);
+  height: 2px;
+  width: 60px;
+  margin: var(--space-lg) 0;
+}
+
+/* Focus States - Accessibility First */
+.focus-ring:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--pure-white), 0 0 0 4px var(--accent-emerald);
+}
+
+.focus-ring-crimson:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--pure-white), 0 0 0 4px var(--accent-crimson);
+}
+
+/* Text Selection */
+::selection {
+  background-color: var(--accent-emerald-light);
+  color: var(--primary-dark);
+}
+
+/* Scrollbar - Minimal */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-gray);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-gray);
+}
+
+/* Loading States */
+.skeleton {
+  background: linear-gradient(90deg, var(--cream) 25%, var(--background-gray) 50%, var(--cream) 75%);
+  background-size: 200px 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% { background-position: -200px 0; }
+  100% { background-position: calc(200px + 100%) 0; }
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--space-sm);
+  }
+  
+  .section {
+    padding: var(--space-2xl) 0;
+  }
+  
+  .btn {
+    padding: var(--space-sm) var(--space-md);
+    font-size: 0.8rem;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  :root {
+    --border-gray: #000000;
+    --secondary-gray: #000000;
+  }
+}
+
+/* Print Styles */
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+  }
+  
+  .btn {
+    border: 1px solid black !important;
+  }
+}
