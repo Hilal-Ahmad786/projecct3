@@ -1,8 +1,9 @@
-// src/components/HeroRightPerfected.tsx
+// src/components/HeroRightEnhanced.tsx
 'use client';
 
 import { useCallback, useMemo, useRef, useState } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
+import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
 type Service = {
   label: string;
@@ -17,9 +18,13 @@ const polarToXY = (r: number, angleDeg: number) => {
   return { x: r * Math.cos(a), y: r * Math.sin(a) };
 };
 
-export default function HeroRightPerfected() {
+export default function HeroRightEnhanced() {
   const stageRef = useRef<HTMLDivElement>(null);
   const prefersReducedMotion = useReducedMotion();
+  
+  const { dir, isLoading } = useTranslations();
+  const t = useSectionTranslations('components.heroRightEnhanced');
+  const tHero = useSectionTranslations('hero');
   
   // Mouse proximity for micro-interactions
   const [mouse, setMouse] = useState({ mx: 0, my: 0, isHovering: false });
@@ -39,17 +44,43 @@ export default function HeroRightPerfected() {
     setMouse(prev => ({ ...prev, isHovering: false }));
   }, []);
 
-  // Service chips with better positioning and staggered delays
-  const services: Service[] = useMemo(
-    () => [
+  // Service chips with localized labels
+  const services: Service[] = useMemo(() => {
+    try {
+      const heroServices = tHero('services');
+      if (Array.isArray(heroServices) && heroServices.length >= 4) {
+        return [
+          { label: heroServices[2] || 'AI Solutions',      color: 'bg-emerald-500', angleDeg: 330, delay: 0 },
+          { label: heroServices[0] || 'Development',       color: 'bg-blue-500',    angleDeg: 45,  delay: 0.1 },
+          { label: 'Automation',                           color: 'bg-amber-500',   angleDeg: 135, delay: 0.2 },
+          { label: 'Infrastructure',                       color: 'bg-slate-500',   angleDeg: 225, delay: 0.3 },
+          { label: 'Design',                               color: 'bg-violet-500',  angleDeg: 270, delay: 0.4 },
+        ];
+      }
+    } catch (error) {
+      console.error('Error loading hero services:', error);
+    }
+    
+    // Fallback services
+    return [
       { label: 'AI Solutions',      color: 'bg-emerald-500', angleDeg: 330, delay: 0 },
       { label: 'Development',       color: 'bg-blue-500',    angleDeg: 45,  delay: 0.1 },
       { label: 'Automation',        color: 'bg-amber-500',   angleDeg: 135, delay: 0.2 },
       { label: 'Infrastructure',    color: 'bg-slate-500',   angleDeg: 225, delay: 0.3 },
       { label: 'Design',            color: 'bg-violet-500',  angleDeg: 270, delay: 0.4 },
-    ],
-    []
-  );
+    ];
+  }, [tHero]);
+
+  // Show loading state if translations are not ready
+  if (isLoading) {
+    return (
+      <div className="mx-auto w-full max-w-[400px]">
+        <div className="relative aspect-square w-full select-none bg-gray-100 rounded-xl animate-pulse flex items-center justify-center">
+          <div className="text-gray-400">Loading...</div>
+        </div>
+      </div>
+    );
+  }
 
   // Responsive constants
   const HUB = 240;
@@ -82,12 +113,13 @@ export default function HeroRightPerfected() {
   };
 
   return (
-    <div className="mx-auto w-full max-w-[400px]">
+    <div className="mx-auto w-full max-w-[400px]" dir={dir}>
       <div
         ref={stageRef}
         onMouseMove={onMove}
         onMouseLeave={onLeave}
         className="group relative aspect-square w-full overflow-visible select-none"
+        aria-label={t('ariaLabel')}
         style={{
           '--mx': mouse.mx,
           '--my': mouse.my,
@@ -156,7 +188,7 @@ export default function HeroRightPerfected() {
         <motion.div
           aria-hidden
           className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 will-change-transform"
-          style={{ transform: 'translate3d(24px, -24px, 0)' }}
+          style={{ transform: dir === 'rtl' ? 'translate3d(-24px, -24px, 0)' : 'translate3d(24px, -24px, 0)' }}
           animate={{
             rotate: [0, 0.5, 0],
           }}
@@ -168,7 +200,7 @@ export default function HeroRightPerfected() {
             style={{
               width: HUB,
               height: HUB,
-              clipPath: 'circle(52% at 74% 26%)',
+              clipPath: dir === 'rtl' ? 'circle(52% at 26% 26%)' : 'circle(52% at 74% 26%)',
               background: 'linear-gradient(135deg, rgba(17,24,39,0.15), rgba(55,65,81,0.08), rgba(107,114,128,0.04))',
               filter: 'blur(0.3px)',
             }}
@@ -177,7 +209,7 @@ export default function HeroRightPerfected() {
           <div
             className="absolute inset-0 rounded-full"
             style={{
-              clipPath: 'circle(42% at 78% 32%)',
+              clipPath: dir === 'rtl' ? 'circle(42% at 22% 32%)' : 'circle(42% at 78% 32%)',
               background: 'linear-gradient(145deg, rgba(17,24,39,0.12), rgba(55,65,81,0.06))',
             }}
           />
@@ -185,7 +217,7 @@ export default function HeroRightPerfected() {
           <div
             className="absolute inset-0 rounded-full"
             style={{
-              clipPath: 'circle(35% at 82% 38%)',
+              clipPath: dir === 'rtl' ? 'circle(35% at 18% 38%)' : 'circle(35% at 82% 38%)',
               background: 'linear-gradient(155deg, rgba(17,24,39,0.08), rgba(55,65,81,0.04))',
             }}
           />
@@ -221,7 +253,7 @@ export default function HeroRightPerfected() {
 
           {/* Enhanced curved paths with better flow */}
           <motion.path
-            d="M 200 200 Q 240 170 270 150"
+            d={dir === 'rtl' ? "M 200 200 Q 160 170 130 150" : "M 200 200 Q 240 170 270 150"}
             stroke="url(#flow1)"
             strokeWidth="1.5"
             strokeDasharray="6 8"
@@ -231,7 +263,7 @@ export default function HeroRightPerfected() {
           />
           
           <motion.path
-            d="M 200 200 Q 170 240 150 270"
+            d={dir === 'rtl' ? "M 200 200 Q 230 240 250 270" : "M 200 200 Q 170 240 150 270"}
             stroke="url(#flow2)"
             strokeWidth="2"
             strokeDasharray="8 10"
@@ -241,7 +273,7 @@ export default function HeroRightPerfected() {
           />
 
           <motion.path
-            d="M 150 150 Q 190 160 240 155"
+            d={dir === 'rtl' ? "M 250 150 Q 210 160 160 155" : "M 150 150 Q 190 160 240 155"}
             stroke="url(#flow1)"
             strokeWidth="1"
             strokeDasharray="4 8"
@@ -253,7 +285,11 @@ export default function HeroRightPerfected() {
         {/* Enhanced Analytics Dashboard */}
         <motion.div
           className="absolute left-1/2 top-1/2 z-20 will-change-transform"
-          style={{ transform: `translate(calc(-50% + ${CARD_OFFSET}px), calc(-50% - ${CARD_OFFSET}px))` }}
+          style={{ 
+            transform: dir === 'rtl' 
+              ? `translate(calc(-50% - ${CARD_OFFSET}px), calc(-50% - ${CARD_OFFSET}px))` 
+              : `translate(calc(-50% + ${CARD_OFFSET}px), calc(-50% - ${CARD_OFFSET}px))` 
+          }}
           variants={floatVariants}
           animate="animate"
         >
@@ -267,7 +303,7 @@ export default function HeroRightPerfected() {
             style={{ willChange: 'transform' }}
           >
             {/* Enhanced header */}
-            <div className="mb-2 flex items-center justify-between">
+            <div className={`mb-2 flex items-center justify-between ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
               <div className="flex gap-1.5">
                 <span className="h-1.5 w-1.5 rounded-full bg-red-500" />
                 <span className="h-1.5 w-1.5 rounded-full bg-yellow-400" />
@@ -314,7 +350,7 @@ export default function HeroRightPerfected() {
             </div>
 
             {/* Status indicators */}
-            <div className="mt-1.5 flex justify-between items-center">
+            <div className={`mt-1.5 flex justify-between items-center ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
               <div className="flex gap-1">
                 <div className="h-1 w-2 bg-green-400 rounded" />
                 <div className="h-1 w-3 bg-blue-400 rounded" />
@@ -325,7 +361,7 @@ export default function HeroRightPerfected() {
                 animate={{ opacity: [0.6, 1, 0.6] }}
                 transition={{ duration: 2, repeat: Infinity }}
               >
-                LIVE
+                {t('notifications.live')}
               </motion.div>
             </div>
           </motion.div>
@@ -334,7 +370,11 @@ export default function HeroRightPerfected() {
         {/* Enhanced Status Widget */}
         <motion.div
           className="absolute left-1/2 top-1/2 z-20 will-change-transform"
-          style={{ transform: `translate(calc(-50% - ${CARD_OFFSET}px), calc(-50% + ${CARD_OFFSET}px))` }}
+          style={{ 
+            transform: dir === 'rtl'
+              ? `translate(calc(-50% + ${CARD_OFFSET}px), calc(-50% + ${CARD_OFFSET}px))`
+              : `translate(calc(-50% - ${CARD_OFFSET}px), calc(-50% + ${CARD_OFFSET}px))` 
+          }}
           animate={{ y: [3, -3, 3] }}
           transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut', delay: 0.7 }}
         >
@@ -343,11 +383,11 @@ export default function HeroRightPerfected() {
             className="w-[90px] h-[90px] rounded-xl border border-gray-200/80 bg-gradient-to-br from-slate-50/95 to-slate-100/95 backdrop-blur-sm shadow-[0_8px_20px_rgba(0,0,0,0.12)] cursor-pointer p-3"
           >
             {/* Enhanced avatar section */}
-            <div className="mb-2.5 flex items-center gap-2">
+            <div className={`mb-2.5 flex items-center gap-2 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
               <div className="relative h-7 w-7">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-gray-300 to-gray-400" />
                 <motion.span 
-                  className="absolute -right-0.5 -bottom-0.5 h-2.5 w-2.5 rounded-full bg-emerald-500 ring-2 ring-white"
+                  className={`absolute h-2.5 w-2.5 rounded-full bg-emerald-500 ring-2 ring-white ${dir === 'rtl' ? '-left-0.5 -bottom-0.5' : '-right-0.5 -bottom-0.5'}`}
                   variants={pulseVariants}
                   animate="animate"
                 />
@@ -404,7 +444,11 @@ export default function HeroRightPerfected() {
         {/* Enhanced Notification Panel */}
         <motion.div
           className="absolute left-1/2 top-1/2 z-20 will-change-transform"
-          style={{ transform: 'translate(calc(-50% - 56px), calc(-50% - 56px))' }}
+          style={{ 
+            transform: dir === 'rtl'
+              ? 'translate(calc(-50% + 56px), calc(-50% - 56px))'
+              : 'translate(calc(-50% - 56px), calc(-50% - 56px))' 
+          }}
           animate={{ 
             rotate: [0, 0, 0, 1.5, 0, -1.5, 0],
             scale: [1, 1.02, 1]
@@ -432,7 +476,7 @@ export default function HeroRightPerfected() {
             
             {/* Enhanced badge with pulse */}
             <motion.div 
-              className="absolute -top-1 -right-1 h-4 min-w-4 px-1 rounded-full bg-gradient-to-r from-emerald-500 to-emerald-600 text-[10px] leading-4 text-white text-center shadow-[0_2px_6px_rgba(16,185,129,0.5)]"
+              className={`absolute -top-1 h-4 min-w-4 px-1 rounded-full bg-gradient-to-r from-emerald-500 to-emerald-600 text-[10px] leading-4 text-white text-center shadow-[0_2px_6px_rgba(16,185,129,0.5)] ${dir === 'rtl' ? '-left-1' : '-right-1'}`}
               animate={{ scale: [1, 1.1, 1] }}
               transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
             >
@@ -458,12 +502,14 @@ export default function HeroRightPerfected() {
         {/* Enhanced Service Chips */}
         {services.map((s, i) => {
           const { x, y } = polarToXY(ORBIT_R, s.angleDeg);
+          const adjustedX = dir === 'rtl' ? -x : x;
+          
           return (
             <motion.div
               key={s.label}
               className="absolute z-30"
               style={{
-                left: `calc(50% + ${x}px)`,
+                left: `calc(50% + ${adjustedX}px)`,
                 top: `calc(50% + ${y}px)`,
                 transform: 'translate(-50%, -50%)',
               }}
@@ -497,7 +543,7 @@ export default function HeroRightPerfected() {
         {/* Enhanced Status Indicators */}
         <motion.div
           className="absolute z-40"
-          style={{ left: '76%', top: '22%' }}
+          style={{ left: dir === 'rtl' ? '24%' : '76%', top: '22%' }}
           animate={{ scale: [1, 1.3, 1] }}
           transition={{ duration: 2.2, repeat: Infinity, ease: 'easeInOut' }}
         >
@@ -513,7 +559,7 @@ export default function HeroRightPerfected() {
 
         <motion.div
           className="absolute z-40"
-          style={{ left: '25%', top: '78%' }}
+          style={{ left: dir === 'rtl' ? '75%' : '25%', top: '78%' }}
           animate={{ scale: [0.9, 1.15, 0.9] }}
           transition={{ duration: 3.2, repeat: Infinity, ease: 'easeInOut' }}
         >
@@ -522,12 +568,12 @@ export default function HeroRightPerfected() {
 
         <motion.div
           className="absolute left-1/2 top-1/2 z-40"
-          style={{ transform: 'translate(calc(-50% + 75px), -50%)' }}
-          animate={{ rotate: 360 }}
+          style={{ transform: dir === 'rtl' ? 'translate(calc(-50% - 75px), -50%)' : 'translate(calc(-50% + 75px), -50%)' }}
+          animate={{ rotate: dir === 'rtl' ? -360 : 360 }}
           transition={{ duration: 8, repeat: Infinity, ease: 'linear' }}
         >
           <div className="relative h-0 w-0">
-            <div className="absolute -right-4 top-0 h-2.5 w-2.5 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 shadow-sm" />
+            <div className={`absolute top-0 h-2.5 w-2.5 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 shadow-sm ${dir === 'rtl' ? '-left-4' : '-right-4'}`} />
           </div>
         </motion.div>
 
@@ -539,7 +585,7 @@ export default function HeroRightPerfected() {
             borderLeft: '5px solid transparent',
             borderRight: '5px solid transparent',
             borderBottom: '7px solid rgb(229,231,235)',
-            transform: 'translate3d(calc(var(--mx) * 3px), calc(var(--my) * 3px), 0)',
+            transform: `translate3d(calc(var(--mx) * ${dir === 'rtl' ? '-3px' : '3px'}), calc(var(--my) * 3px), 0)`,
           }}
           animate={{ 
             y: [-1, 1, -1],
@@ -552,7 +598,7 @@ export default function HeroRightPerfected() {
           aria-hidden
           className="absolute right-3 bottom-3 h-2.5 w-2.5 rotate-45 bg-gradient-to-br from-gray-200 to-gray-300 opacity-50"
           style={{ 
-            transform: 'translate3d(calc(var(--mx) * -2px), calc(var(--my) * -2px), 0) rotate(45deg)' 
+            transform: `translate3d(calc(var(--mx) * ${dir === 'rtl' ? '2px' : '-2px'}), calc(var(--my) * -2px), 0) rotate(45deg)` 
           }}
           animate={{ 
             x: [-1, 1, -1],

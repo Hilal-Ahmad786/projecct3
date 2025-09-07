@@ -3,12 +3,13 @@
 
 import { useRef, useState, useCallback } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
+import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
 /**
- * About Us – “Building Digital Excellence” (Right Column Visual)
+ * About Us – "Building Digital Excellence" (Right Column Visual)
  * --------------------------------------------------------------
  * - 400×400 Swiss-style canvas with premium, enterprise-grade aesthetic
- * - Central “Excellence Hub”, QA indicators, collaboration cards, live dashboard
+ * - Central "Excellence Hub", QA indicators, collaboration cards, live dashboard
  * - SVG precision graphics + Framer Motion animations
  * - Color palette: navy/blues, professional grays, gold accents (amber)
  */
@@ -17,6 +18,12 @@ export default function AboutRightExcellence() {
   const prefersReduced = useReducedMotion();
   const stageRef = useRef<HTMLDivElement>(null);
   const [mouse, setMouse] = useState({ mx: 0, my: 0 });
+  
+  const { dir, isLoading } = useTranslations();
+  const t = useSectionTranslations('components.aboutRightExcellence');
+  const rolesT = useSectionTranslations('components.heroRightEnhanced.roles');
+  const statusT = useSectionTranslations('components.heroRightEnhanced.statusIndicators');
+  const notificationT = useSectionTranslations('components.heroRightEnhanced.notifications');
 
   const onMove = useCallback((e: React.MouseEvent) => {
     const el = stageRef.current;
@@ -34,12 +41,23 @@ export default function AboutRightExcellence() {
   const floatB = prefersReduced ? {} : { y: [3, -3, 3] };
   const breathe = prefersReduced ? {} : { scale: [1, 1.08, 1] };
 
+  // Show loading state if translations are not ready
+  if (isLoading) {
+    return (
+      <div className="mx-auto w-full max-w-[400px]">
+        <div className="relative aspect-square w-full select-none bg-gray-100 rounded-xl animate-pulse flex items-center justify-center">
+          <div className="text-gray-400">Loading...</div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="mx-auto w-full max-w-[400px]">
       <div
         ref={stageRef}
         onMouseMove={onMove}
-        aria-label="Digital Excellence & Team Collaboration visual"
+        aria-label={t('ariaLabel')}
         className="relative aspect-square w-full select-none"
         style={
           {
@@ -252,7 +270,7 @@ export default function AboutRightExcellence() {
 
             {/* Excellence score meter (small ring) */}
             <div className="mt-1 flex items-center justify-between">
-              <span className="text-[10px] font-medium text-slate-600">Excellence</span>
+              <span className="text-[10px] font-medium text-slate-600">{notificationT('excellence')}</span>
               <svg viewBox="0 0 36 36" className="h-5 w-5">
                 <circle cx="18" cy="18" r="15.5" fill="none" stroke="#e2e8f0" strokeWidth="3" />
                 <motion.circle
@@ -272,10 +290,10 @@ export default function AboutRightExcellence() {
             TEAM COLLABORATION CARDS (Dev, Design, Strategy, QA)
            ========================================================= */}
         {[
-          { label: 'Dev',      x: -90, y: -80, dot: 'bg-sky-500',    role: 'Developer' },
-          { label: 'Design',   x:  90, y: -80, dot: 'bg-fuchsia-500',role: 'Designer' },
-          { label: 'Strategy', x: 110, y:  70, dot: 'bg-amber-500',  role: 'Strategist' },
-          { label: 'QA',       x: -110,y:  70, dot: 'bg-emerald-500',role: 'QA Engineer' },
+          { label: 'Dev',      x: -90, y: -80, dot: 'bg-sky-500',    role: rolesT('developer') },
+          { label: 'Design',   x:  90, y: -80, dot: 'bg-fuchsia-500',role: rolesT('designer') },
+          { label: 'Strategy', x: 110, y:  70, dot: 'bg-amber-500',  role: rolesT('strategist') },
+          { label: 'QA',       x: -110,y:  70, dot: 'bg-emerald-500',role: rolesT('qaEngineer') },
         ].map((m, i) => (
           <motion.div
             key={m.label}
@@ -300,7 +318,7 @@ export default function AboutRightExcellence() {
               {/* Hover expertise tooltip */}
               <div className="pointer-events-none absolute left-1/2 top-full hidden -translate-x-1/2 translate-y-1 group-hover:block">
                 <div className="mt-1 rounded bg-slate-900/90 px-2 py-0.5 text-[10px] text-white shadow">
-                  Active collaboration
+                  {notificationT('activeCollaboration')}
                 </div>
               </div>
             </motion.div>
@@ -328,7 +346,7 @@ export default function AboutRightExcellence() {
               transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
             />
           </svg>
-          <div className="mt-0.5 text-center text-[9px] font-medium text-slate-600">Code 95%</div>
+          <div className="mt-0.5 text-center text-[9px] font-medium text-slate-600">{statusT('codeQuality')} 95%</div>
         </motion.div>
 
         {/* Security Badge */}
@@ -342,7 +360,7 @@ export default function AboutRightExcellence() {
               <path d="M9 12l2 2 4-4" stroke="#10b981" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </div>
-          <div className="mt-0.5 text-center text-[9px] text-slate-600">Secure</div>
+          <div className="mt-0.5 text-center text-[9px] text-slate-600">{statusT('security')}</div>
         </div>
 
         {/* Performance Speedometer */}
@@ -371,7 +389,7 @@ export default function AboutRightExcellence() {
               transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
             />
           </svg>
-          <div className="mt-0.5 text-center text-[9px] text-slate-600">Performance</div>
+          <div className="mt-0.5 text-center text-[9px] text-slate-600">{statusT('performance')}</div>
         </motion.div>
 
         {/* Client Satisfaction (5 stars) */}
@@ -388,10 +406,8 @@ export default function AboutRightExcellence() {
               </svg>
             ))}
           </div>
-          <div className="mt-0.5 text-center text-[9px] text-slate-600">5.0 Satisfaction</div>
+          <div className="mt-0.5 text-center text-[9px] text-slate-600">5.0 {statusT('satisfaction')}</div>
         </motion.div>
-
-   
 
         {/* =========================================================
             MICRO-ACCENTS reacting to mouse proximity (very subtle)

@@ -5,41 +5,59 @@ import { motion } from 'framer-motion';
 import SectionHeader from '@/components/SectionHeader';
 import Button from '@/components/Button';
 import { CalendarIcon, EyeIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
-
-const featuredPosts = [
-  {
-    title: 'Next.js ile Çok Dilli E-Ticaret Platformu',
-    image: '/images/Blogs/Next.png',
-    excerpt: 'Next.js\'in ISR & SSR özellikleriyle performansı artırdığımız, Shopify entegrasyonlu çok dilli e-ticaret projemizin detayları.',
-    href: '/blog/nextjs-cok-dilli-e-ticaret',
-    date: '2025-01-15',
-    views: 1250,
-    category: 'E-Commerce',
-    readTime: '8 min'
-  },
-  {
-    title: 'Python Botlarla Web Scraping Otomasyonu',
-    image: '/images/Blogs/Python.png',
-    excerpt: 'Telegram, Instagram ve web siteleri için geliştirdiğimiz uçtan uca veri toplama botlarıyla %80 zaman tasarrufu sağladık.',
-    href: '/blog/python-web-scraping-otomasyonu',
-    date: '2025-01-10',
-    views: 980,
-    category: 'Automation',
-    readTime: '12 min'
-  },
-  {
-    title: 'React Native ile Finans Uygulaması Geliştirme',
-    image: '/images/Blogs/mobile.png',
-    excerpt: '50K+ indirme başarısına ulaşan mobil finans uygulamamızın mimarisi, entegrasyonları ve UI/UX süreci.',
-    href: '/blog/react-native-finans-uygulamasi',
-    date: '2025-01-05',
-    views: 1580,
-    category: 'Mobile Development',
-    readTime: '15 min'
-  },
-];
+import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function FeaturedPostsSection() {
+  const { dir, isLoading } = useTranslations();
+  const t = useSectionTranslations('blog.featured');
+  const tBlog = useSectionTranslations('blog.posts');
+
+  // Show loading state if translations are not ready
+  if (isLoading) {
+    return (
+      <section className="section bg-white relative overflow-hidden">
+        <div className="container mx-auto text-center py-24">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"></div>
+          <p className="mt-4 text-gray-600">Loading featured posts...</p>
+        </div>
+      </section>
+    );
+  }
+
+  // Fallback featured posts data (you might want to make this dynamic from a CMS or API)
+  const featuredPosts = [
+    {
+      title: 'Next.js ile Çok Dilli E-Ticaret Platformu',
+      image: '/images/Blogs/Next.png',
+      excerpt: 'Next.js\'in ISR & SSR özellikleriyle performansı artırdığımız, Shopify entegrasyonlu çok dilli e-ticaret projemizin detayları.',
+      href: '/blog/nextjs-cok-dilli-e-ticaret',
+      date: '2025-01-15',
+      views: 1250,
+      category: 'E-Commerce',
+      readTime: '8 min'
+    },
+    {
+      title: 'Python Botlarla Web Scraping Otomasyonu',
+      image: '/images/Blogs/Python.png',
+      excerpt: 'Telegram, Instagram ve web siteleri için geliştirdiğimiz uçtan uca veri toplama botlarıyla %80 zaman tasarrufu sağladık.',
+      href: '/blog/python-web-scraping-otomasyonu',
+      date: '2025-01-10',
+      views: 980,
+      category: 'Automation',
+      readTime: '12 min'
+    },
+    {
+      title: 'React Native ile Finans Uygulaması Geliştirme',
+      image: '/images/Blogs/mobile.png',
+      excerpt: '50K+ indirme başarısına ulaşan mobil finans uygulamamızın mimarisi, entegrasyonları ve UI/UX süreci.',
+      href: '/blog/react-native-finans-uygulamasi',
+      date: '2025-01-05',
+      views: 1580,
+      category: 'Mobile Development',
+      readTime: '15 min'
+    },
+  ];
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -60,7 +78,7 @@ export default function FeaturedPostsSection() {
   };
 
   return (
-    <section className="section bg-white relative overflow-hidden">
+    <section className="section bg-white relative overflow-hidden" dir={dir}>
       {/* Swiss Grid Background */}
       <div className="absolute inset-0 opacity-[0.02]">
         <div 
@@ -76,15 +94,15 @@ export default function FeaturedPostsSection() {
       </div>
 
       {/* Proper Crescent Elements */}
-      <div className="absolute bottom-20 left-16 w-24 h-24">
-        <div className="crescent crescent-left crescent-subtle text-gray-900" />
+      <div className={`absolute bottom-20 w-24 h-24 ${dir === 'rtl' ? 'right-16' : 'left-16'}`}>
+        <div className={`crescent ${dir === 'rtl' ? 'crescent-right' : 'crescent-left'} crescent-subtle text-gray-900`} />
       </div>
 
       <div className="container mx-auto">
         <SectionHeader
-          eyebrow="Editor's Choice"
-          title="Featured Articles"
-          subtitle="Dive deep into our latest insights on technology, development practices, and industry trends that shape the digital landscape."
+          eyebrow={t('eyebrow')}
+          title={t('title')}
+          subtitle={t('subtitle')}
           className="mb-16"
         />
 
@@ -107,11 +125,12 @@ export default function FeaturedPostsSection() {
                   src={post.image}
                   alt={post.title}
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 
                 {/* Category Badge */}
-                <div className="absolute top-4 left-4">
+                <div className={`absolute top-4 ${dir === 'rtl' ? 'right-4' : 'left-4'}`}>
                   <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-xs font-medium text-gray-900 rounded-sm">
                     {post.category}
                   </span>
@@ -121,17 +140,17 @@ export default function FeaturedPostsSection() {
               {/* Content */}
               <div className="space-y-6">
                 {/* Meta Info */}
-                <div className="flex items-center gap-4 text-caption text-gray-500">
-                  <div className="flex items-center gap-2">
+                <div className={`flex items-center gap-4 text-caption text-gray-500 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
+                  <div className={`flex items-center gap-2 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
                     <CalendarIcon className="h-4 w-4" />
-                    <span>{new Date(post.date).toLocaleDateString('en-US', { 
+                    <span>{new Date(post.date).toLocaleDateString(dir === 'rtl' ? 'ar-SA' : 'en-US', { 
                       month: 'short', 
                       day: 'numeric',
                       year: 'numeric'
                     })}</span>
                   </div>
                   <div className="w-1 h-1 bg-gray-300 rounded-full" />
-                  <div className="flex items-center gap-2">
+                  <div className={`flex items-center gap-2 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
                     <EyeIcon className="h-4 w-4" />
                     <span>{post.views.toLocaleString()}</span>
                   </div>
@@ -154,10 +173,12 @@ export default function FeaturedPostsSection() {
                   href={post.href}
                   variant="ghost"
                   size="sm"
-                  rightIcon={<ArrowRightIcon className="h-4 w-4" />}
-                  className="w-full justify-between"
+                  rightIcon={
+                    <ArrowRightIcon className={`h-4 w-4 ${dir === 'rtl' ? 'rotate-180' : ''}`} />
+                  }
+                  className={`w-full ${dir === 'rtl' ? 'flex-row-reverse justify-between' : 'justify-between'}`}
                 >
-                  Read More
+                  {tBlog('readMore') || 'Read More'}
                 </Button>
               </div>
             </motion.div>
@@ -173,19 +194,24 @@ export default function FeaturedPostsSection() {
           className="text-center mt-16 pt-16 border-t border-gray-200"
         >
           <h3 className="text-title text-gray-900 mb-4">
-            Want More Insights?
+            {t('wantMoreInsights')}
           </h3>
           <p className="text-body text-gray-600 mb-8 max-w-lg mx-auto">
-            Explore our complete collection of articles covering the latest in 
-            technology, development, and digital transformation.
+            {t('wantMoreDescription')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               href="/blog"
               variant="primary"
               size="lg"
+              rightIcon={
+                <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} 
+                        d={dir === 'rtl' ? "M11 17l-5-5m0 0l5-5m-5 5h12" : "M13 7l5 5m0 0l-5 5m5-5H6"} />
+                </svg>
+              }
             >
-              View All Articles
+              {t('viewAllArticles')}
             </Button>
             <Button
               href="/contact"
@@ -197,7 +223,7 @@ export default function FeaturedPostsSection() {
                 </svg>
               }
             >
-              Subscribe to Newsletter
+              {t('subscribeNewsletter')}
             </Button>
           </div>
         </motion.div>

@@ -3,10 +3,26 @@
 
 import { motion } from 'framer-motion';
 import Button from '@/components/Button';
+import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function ContactHero() {
+  const { dir, isLoading } = useTranslations();
+  const t = useSectionTranslations('contact.hero');
+
+  // Show loading state if translations are not ready
+  if (isLoading) {
+    return (
+      <section className="hero-section relative bg-white overflow-hidden min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"></div>
+          <p className="mt-4 text-gray-600">Loading...</p>
+        </div>
+      </section>
+    );
+  }
+
   return (
-    <section className="hero-section relative bg-white overflow-hidden">
+    <section className="hero-section relative bg-white overflow-hidden" dir={dir}>
       {/* Swiss Grid Background */}
       <div className="absolute inset-0 opacity-[0.02]">
         <div 
@@ -22,8 +38,8 @@ export default function ContactHero() {
       </div>
 
       {/* Proper Crescent Elements */}
-      <div className="absolute top-32 left-20 w-24 h-24">
-        <div className="crescent crescent-left crescent-subtle text-gray-900" />
+      <div className={`absolute top-32 w-24 h-24 ${dir === 'rtl' ? 'right-20' : 'left-20'}`}>
+        <div className={`crescent ${dir === 'rtl' ? 'crescent-right' : 'crescent-left'} crescent-subtle text-gray-900`} />
       </div>
 
       <div className="container mx-auto">
@@ -36,22 +52,20 @@ export default function ContactHero() {
           {/* Overline */}
           <div className="flex items-center justify-center gap-3 mb-8">
             <div className="w-8 h-0.5 bg-gray-900"></div>
-            <span className="text-overline">Get In Touch</span>
+            <span className="text-overline">{t('eyebrow')}</span>
             <div className="w-8 h-0.5 bg-gray-900"></div>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-display font-light text-gray-900 leading-none mb-6">
-            Start Your
+            {t('title')}
             <br />
-            <span className="text-gray-600">Project</span>
+            <span className="text-gray-600">{t('titleAccent')}</span>
           </h1>
 
           {/* Description */}
           <p className="text-body text-gray-600 mb-10 leading-relaxed max-w-2xl mx-auto">
-            Ready to transform your digital presence? We're here to listen, 
-            understand your needs, and create a solution that drives real results. 
-            Let's start the conversation today.
+            {t('description')}
           </p>
 
           {/* CTA Buttons */}
@@ -62,11 +76,12 @@ export default function ContactHero() {
               size="lg"
               rightIcon={
                 <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} 
+                        d={dir === 'rtl' ? "M7 17l7-7 7 7M14 3v11" : "M19 14l-7 7m0 0l-7-7m7 7V3"} />
                 </svg>
               }
             >
-              Send Message
+              {t('sendMessage')}
             </Button>
             <Button
               href="tel:+905525677164"
@@ -78,7 +93,7 @@ export default function ContactHero() {
                 </svg>
               }
             >
-              Call Now
+              {t('callNow')}
             </Button>
           </div>
 
@@ -91,8 +106,8 @@ export default function ContactHero() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 ),
-                label: "Email",
-                value: "info@paktechnology.com"
+                label: t('contactMethods.email.label'),
+                value: t('contactMethods.email.value')
               },
               { 
                 icon: (
@@ -100,8 +115,8 @@ export default function ContactHero() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                 ),
-                label: "Phone",
-                value: "+90 552 567 71 64"
+                label: t('contactMethods.phone.label'),
+                value: t('contactMethods.phone.value')
               },
               { 
                 icon: (
@@ -109,8 +124,8 @@ export default function ContactHero() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 ),
-                label: "Response Time",
-                value: "< 24 hours"
+                label: t('contactMethods.responseTime.label'),
+                value: t('contactMethods.responseTime.value')
               }
             ].map((contact, index) => (
               <motion.div

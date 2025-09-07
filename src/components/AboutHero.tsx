@@ -7,8 +7,20 @@ import AboutRightExcellence from '@/components/AboutRightExcellence';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function AboutHero() {
-  const { dir } = useTranslations();
+  const { dir, isLoading } = useTranslations();
   const t = useSectionTranslations('about.hero');
+
+  // Show loading state if translations are not ready
+  if (isLoading) {
+    return (
+      <section className="hero-section relative bg-white overflow-hidden min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"></div>
+          <p className="mt-4 text-gray-600">Loading...</p>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className="hero-section relative bg-white overflow-hidden" dir={dir}>

@@ -76,6 +76,7 @@ function Button({ href, variant = 'primary', size = 'md', children, className = 
                 xmlns: "http://www.w3.org/2000/svg",
                 fill: "none",
                 viewBox: "0 0 24 24",
+                "aria-hidden": "true",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
                         className: "opacity-25",
@@ -86,7 +87,7 @@ function Button({ href, variant = 'primary', size = 'md', children, className = 
                         strokeWidth: "2"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Button.tsx",
-                        lineNumber: 97,
+                        lineNumber: 98,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -95,7 +96,7 @@ function Button({ href, variant = 'primary', size = 'md', children, className = 
                         d: "M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Button.tsx",
-                        lineNumber: 105,
+                        lineNumber: 106,
                         columnNumber: 11
                     }, this)
                 ]
@@ -106,10 +107,11 @@ function Button({ href, variant = 'primary', size = 'md', children, className = 
             }, this),
             !loading && leftIcon && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                 className: "flex-shrink-0 transition-transform duration-250 group-hover:scale-110",
+                "aria-hidden": "true",
                 children: leftIcon
             }, void 0, false, {
                 fileName: "[project]/src/components/Button.tsx",
-                lineNumber: 113,
+                lineNumber: 114,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -117,15 +119,16 @@ function Button({ href, variant = 'primary', size = 'md', children, className = 
                 children: children
             }, void 0, false, {
                 fileName: "[project]/src/components/Button.tsx",
-                lineNumber: 117,
+                lineNumber: 118,
                 columnNumber: 7
             }, this),
             !loading && rightIcon && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                 className: "flex-shrink-0 transition-transform duration-250 group-hover:translate-x-0.5",
+                "aria-hidden": "true",
                 children: rightIcon
             }, void 0, false, {
                 fileName: "[project]/src/components/Button.tsx",
-                lineNumber: 119,
+                lineNumber: 120,
                 columnNumber: 9
             }, this)
         ]
@@ -134,21 +137,24 @@ function Button({ href, variant = 'primary', size = 'md', children, className = 
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             href: href,
             className: `${classes} group`,
+            "aria-disabled": disabled || loading,
+            tabIndex: disabled || loading ? -1 : undefined,
             children: content
         }, void 0, false, {
             fileName: "[project]/src/components/Button.tsx",
-            lineNumber: 128,
+            lineNumber: 129,
             columnNumber: 7
         }, this);
     }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
         className: `${classes} group`,
         disabled: disabled || loading,
+        "aria-disabled": disabled || loading,
         ...rest,
         children: content
     }, void 0, false, {
         fileName: "[project]/src/components/Button.tsx",
-        lineNumber: 135,
+        lineNumber: 141,
         columnNumber: 5
     }, this);
 }
@@ -172,9 +178,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$reduced$2d$motion$2f$use$2d$reduced$2d$motion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/utils/reduced-motion/use-reduced-motion.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/hooks/useTranslations.tsx [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 'use client';
+;
 ;
 ;
 function AboutRightExcellence() {
@@ -185,6 +193,11 @@ function AboutRightExcellence() {
         mx: 0,
         my: 0
     });
+    const { dir, isLoading } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])();
+    const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSectionTranslations"])('components.aboutRightExcellence');
+    const rolesT = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSectionTranslations"])('components.heroRightEnhanced.roles');
+    const statusT = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSectionTranslations"])('components.heroRightEnhanced.statusIndicators');
+    const notificationT = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSectionTranslations"])('components.heroRightEnhanced.notifications');
     const onMove = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
         "AboutRightExcellence.useCallback[onMove]": (e)=>{
             const el = stageRef.current;
@@ -222,12 +235,37 @@ function AboutRightExcellence() {
             1
         ]
     };
+    // Show loading state if translations are not ready
+    if (isLoading) {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "mx-auto w-full max-w-[400px]",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "relative aspect-square w-full select-none bg-gray-100 rounded-xl animate-pulse flex items-center justify-center",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "text-gray-400",
+                    children: "Loading..."
+                }, void 0, false, {
+                    fileName: "[project]/src/components/AboutRightExcellence.tsx",
+                    lineNumber: 49,
+                    columnNumber: 11
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/AboutRightExcellence.tsx",
+                lineNumber: 48,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/AboutRightExcellence.tsx",
+            lineNumber: 47,
+            columnNumber: 7
+        }, this);
+    }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "mx-auto w-full max-w-[400px]",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             ref: stageRef,
             onMouseMove: onMove,
-            "aria-label": "Digital Excellence & Team Collaboration visual",
+            "aria-label": t('ariaLabel'),
             className: "relative aspect-square w-full select-none",
             style: {
                 '--mx': mouse.mx,
@@ -264,7 +302,7 @@ function AboutRightExcellence() {
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                    lineNumber: 54,
+                    lineNumber: 72,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -285,7 +323,7 @@ function AboutRightExcellence() {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                lineNumber: 85,
+                                lineNumber: 103,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -309,7 +347,7 @@ function AboutRightExcellence() {
                                                     opacity: "0.15"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                                    lineNumber: 102,
+                                                    lineNumber: 120,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -321,13 +359,13 @@ function AboutRightExcellence() {
                                                     fill: "none"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                                    lineNumber: 107,
+                                                    lineNumber: 125,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                            lineNumber: 101,
+                                            lineNumber: 119,
                                             columnNumber: 17
                                         }, this),
                                         !prefersReduced && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].span, {
@@ -353,29 +391,29 @@ function AboutRightExcellence() {
                                             }
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                            lineNumber: 118,
+                                            lineNumber: 136,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                    lineNumber: 99,
+                                    lineNumber: 117,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                lineNumber: 94,
+                                lineNumber: 112,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                        lineNumber: 74,
+                        lineNumber: 92,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                    lineNumber: 73,
+                    lineNumber: 91,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -398,7 +436,7 @@ function AboutRightExcellence() {
                                             stopColor: "rgba(51,65,85,0.5)"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                            lineNumber: 136,
+                                            lineNumber: 154,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -406,13 +444,13 @@ function AboutRightExcellence() {
                                             stopColor: "rgba(148,163,184,0.1)"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                            lineNumber: 137,
+                                            lineNumber: 155,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                    lineNumber: 135,
+                                    lineNumber: 153,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
@@ -427,7 +465,7 @@ function AboutRightExcellence() {
                                             stopColor: "rgba(51,65,85,0.4)"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                            lineNumber: 140,
+                                            lineNumber: 158,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -435,19 +473,19 @@ function AboutRightExcellence() {
                                             stopColor: "rgba(148,163,184,0.08)"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                            lineNumber: 141,
+                                            lineNumber: 159,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                    lineNumber: 139,
+                                    lineNumber: 157,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                            lineNumber: 134,
+                            lineNumber: 152,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].path, {
@@ -471,7 +509,7 @@ function AboutRightExcellence() {
                             }
                         }, void 0, false, {
                             fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                            lineNumber: 146,
+                            lineNumber: 164,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].path, {
@@ -495,7 +533,7 @@ function AboutRightExcellence() {
                             }
                         }, void 0, false, {
                             fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                            lineNumber: 156,
+                            lineNumber: 174,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].path, {
@@ -519,7 +557,7 @@ function AboutRightExcellence() {
                             }
                         }, void 0, false, {
                             fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                            lineNumber: 166,
+                            lineNumber: 184,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].path, {
@@ -543,7 +581,7 @@ function AboutRightExcellence() {
                             }
                         }, void 0, false, {
                             fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                            lineNumber: 176,
+                            lineNumber: 194,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
@@ -561,18 +599,18 @@ function AboutRightExcellence() {
                                                 xlinkHref: "#flow-dev"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                                lineNumber: 191,
+                                                lineNumber: 209,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                            lineNumber: 190,
+                                            lineNumber: 208,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                    lineNumber: 189,
+                                    lineNumber: 207,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -587,17 +625,17 @@ function AboutRightExcellence() {
                                             xlinkHref: "#flow-design"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                            lineNumber: 196,
+                                            lineNumber: 214,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                        lineNumber: 195,
+                                        lineNumber: 213,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                    lineNumber: 194,
+                                    lineNumber: 212,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -612,17 +650,17 @@ function AboutRightExcellence() {
                                             xlinkHref: "#flow-qa"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                            lineNumber: 201,
+                                            lineNumber: 219,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                        lineNumber: 200,
+                                        lineNumber: 218,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                    lineNumber: 199,
+                                    lineNumber: 217,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -637,29 +675,29 @@ function AboutRightExcellence() {
                                             xlinkHref: "#flow-strategy"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                            lineNumber: 206,
+                                            lineNumber: 224,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                        lineNumber: 205,
+                                        lineNumber: 223,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                    lineNumber: 204,
+                                    lineNumber: 222,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                            lineNumber: 188,
+                            lineNumber: 206,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                    lineNumber: 133,
+                    lineNumber: 151,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -687,34 +725,34 @@ function AboutRightExcellence() {
                                         className: "h-1.5 w-1.5 rounded-full bg-slate-400"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                        lineNumber: 227,
+                                        lineNumber: 245,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "h-1.5 w-1.5 rounded-full bg-slate-400"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                        lineNumber: 228,
+                                        lineNumber: 246,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "h-1.5 w-1.5 rounded-full bg-emerald-500"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                        lineNumber: 229,
+                                        lineNumber: 247,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "h-1.5 w-1.5 rounded-full bg-slate-300"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                        lineNumber: 230,
+                                        lineNumber: 248,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                lineNumber: 226,
+                                lineNumber: 244,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -744,12 +782,12 @@ function AboutRightExcellence() {
                                             }
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                            lineNumber: 236,
+                                            lineNumber: 254,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                        lineNumber: 235,
+                                        lineNumber: 253,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -776,18 +814,18 @@ function AboutRightExcellence() {
                                             }
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                            lineNumber: 244,
+                                            lineNumber: 262,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                        lineNumber: 243,
+                                        lineNumber: 261,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                lineNumber: 234,
+                                lineNumber: 252,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -795,10 +833,10 @@ function AboutRightExcellence() {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "text-[10px] font-medium text-slate-600",
-                                        children: "Excellence"
+                                        children: notificationT('excellence')
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                        lineNumber: 255,
+                                        lineNumber: 273,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -814,7 +852,7 @@ function AboutRightExcellence() {
                                                 strokeWidth: "3"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                                lineNumber: 257,
+                                                lineNumber: 275,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].circle, {
@@ -846,30 +884,30 @@ function AboutRightExcellence() {
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                                lineNumber: 258,
+                                                lineNumber: 276,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                        lineNumber: 256,
+                                        lineNumber: 274,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                lineNumber: 254,
+                                lineNumber: 272,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                        lineNumber: 221,
+                        lineNumber: 239,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                    lineNumber: 215,
+                    lineNumber: 233,
                     columnNumber: 9
                 }, this),
                 [
@@ -878,28 +916,28 @@ function AboutRightExcellence() {
                         x: -90,
                         y: -80,
                         dot: 'bg-sky-500',
-                        role: 'Developer'
+                        role: rolesT('developer')
                     },
                     {
                         label: 'Design',
                         x: 90,
                         y: -80,
                         dot: 'bg-fuchsia-500',
-                        role: 'Designer'
+                        role: rolesT('designer')
                     },
                     {
                         label: 'Strategy',
                         x: 110,
                         y: 70,
                         dot: 'bg-amber-500',
-                        role: 'Strategist'
+                        role: rolesT('strategist')
                     },
                     {
                         label: 'QA',
                         x: -110,
                         y: 70,
                         dot: 'bg-emerald-500',
-                        role: 'QA Engineer'
+                        role: rolesT('qaEngineer')
                     }
                 ].map((m, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                         className: "absolute left-1/2 top-1/2 z-20",
@@ -928,12 +966,12 @@ function AboutRightExcellence() {
                                                 className: `absolute -right-0 -bottom-0 h-1.5 w-1.5 rounded-full ring-2 ring-white ${m.dot}`
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                                lineNumber: 293,
+                                                lineNumber: 311,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                            lineNumber: 292,
+                                            lineNumber: 310,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -944,7 +982,7 @@ function AboutRightExcellence() {
                                                     children: m.label
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                                    lineNumber: 296,
+                                                    lineNumber: 314,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -952,45 +990,45 @@ function AboutRightExcellence() {
                                                     children: m.role
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                                    lineNumber: 297,
+                                                    lineNumber: 315,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                            lineNumber: 295,
+                                            lineNumber: 313,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                    lineNumber: 291,
+                                    lineNumber: 309,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "pointer-events-none absolute left-1/2 top-full hidden -translate-x-1/2 translate-y-1 group-hover:block",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "mt-1 rounded bg-slate-900/90 px-2 py-0.5 text-[10px] text-white shadow",
-                                        children: "Active collaboration"
+                                        children: notificationT('activeCollaboration')
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                        lineNumber: 302,
+                                        lineNumber: 320,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                    lineNumber: 301,
+                                    lineNumber: 319,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                            lineNumber: 287,
+                            lineNumber: 305,
                             columnNumber: 13
                         }, this)
                     }, m.label, false, {
                         fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                        lineNumber: 280,
+                        lineNumber: 298,
                         columnNumber: 11
                     }, this)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1018,7 +1056,7 @@ function AboutRightExcellence() {
                                     fill: "none"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                    lineNumber: 321,
+                                    lineNumber: 339,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].circle, {
@@ -1050,27 +1088,30 @@ function AboutRightExcellence() {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                    lineNumber: 322,
+                                    lineNumber: 340,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                            lineNumber: 320,
+                            lineNumber: 338,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "mt-0.5 text-center text-[9px] font-medium text-slate-600",
-                            children: "Code 95%"
-                        }, void 0, false, {
+                            children: [
+                                statusT('codeQuality'),
+                                " 95%"
+                            ]
+                        }, void 0, true, {
                             fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                            lineNumber: 331,
+                            lineNumber: 349,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                    lineNumber: 314,
+                    lineNumber: 332,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1091,7 +1132,7 @@ function AboutRightExcellence() {
                                         opacity: "0.12"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                        lineNumber: 341,
+                                        lineNumber: 359,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1103,32 +1144,32 @@ function AboutRightExcellence() {
                                         strokeLinejoin: "round"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                        lineNumber: 342,
+                                        lineNumber: 360,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                lineNumber: 340,
+                                lineNumber: 358,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                            lineNumber: 339,
+                            lineNumber: 357,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "mt-0.5 text-center text-[9px] text-slate-600",
-                            children: "Secure"
+                            children: statusT('security')
                         }, void 0, false, {
                             fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                            lineNumber: 345,
+                            lineNumber: 363,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                    lineNumber: 335,
+                    lineNumber: 353,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1148,7 +1189,7 @@ function AboutRightExcellence() {
                                     strokeWidth: "4"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                    lineNumber: 354,
+                                    lineNumber: 372,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].path, {
@@ -1176,7 +1217,7 @@ function AboutRightExcellence() {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                    lineNumber: 355,
+                                    lineNumber: 373,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].line, {
@@ -1206,27 +1247,27 @@ function AboutRightExcellence() {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                    lineNumber: 366,
+                                    lineNumber: 384,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                            lineNumber: 353,
+                            lineNumber: 371,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "mt-0.5 text-center text-[9px] text-slate-600",
-                            children: "Performance"
+                            children: statusT('performance')
                         }, void 0, false, {
                             fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                            lineNumber: 374,
+                            lineNumber: 392,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                    lineNumber: 349,
+                    lineNumber: 367,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1263,31 +1304,34 @@ function AboutRightExcellence() {
                                         fill: "currentColor"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                        lineNumber: 387,
+                                        lineNumber: 405,
                                         columnNumber: 17
                                     }, this)
                                 }, i, false, {
                                     fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                                    lineNumber: 386,
+                                    lineNumber: 404,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                            lineNumber: 384,
+                            lineNumber: 402,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "mt-0.5 text-center text-[9px] text-slate-600",
-                            children: "5.0 Satisfaction"
-                        }, void 0, false, {
+                            children: [
+                                "5.0 ",
+                                statusT('satisfaction')
+                            ]
+                        }, void 0, true, {
                             fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                            lineNumber: 391,
+                            lineNumber: 409,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                    lineNumber: 378,
+                    lineNumber: 396,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1310,24 +1354,29 @@ function AboutRightExcellence() {
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/components/AboutRightExcellence.tsx",
-                    lineNumber: 399,
+                    lineNumber: 415,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/AboutRightExcellence.tsx",
-            lineNumber: 39,
+            lineNumber: 57,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/AboutRightExcellence.tsx",
-        lineNumber: 38,
+        lineNumber: 56,
         columnNumber: 5
     }, this);
 }
-_s(AboutRightExcellence, "OrsQ2ms/Vpm9eG4mY45kAQ5PmfE=", false, function() {
+_s(AboutRightExcellence, "F7M31aZuJk6aqz8xf67QpdpWSVs=", false, function() {
     return [
-        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$reduced$2d$motion$2f$use$2d$reduced$2d$motion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useReducedMotion"]
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$reduced$2d$motion$2f$use$2d$reduced$2d$motion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useReducedMotion"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSectionTranslations"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSectionTranslations"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSectionTranslations"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSectionTranslations"]
     ];
 });
 _c = AboutRightExcellence;
@@ -1360,8 +1409,42 @@ var _s = __turbopack_context__.k.signature();
 ;
 function AboutHero() {
     _s();
-    const { dir } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])();
+    const { dir, isLoading } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])();
     const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSectionTranslations"])('about.hero');
+    // Show loading state if translations are not ready
+    if (isLoading) {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+            className: "hero-section relative bg-white overflow-hidden min-h-screen flex items-center justify-center",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "text-center",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/AboutHero.tsx",
+                        lineNumber: 18,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "mt-4 text-gray-600",
+                        children: "Loading..."
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/AboutHero.tsx",
+                        lineNumber: 19,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/AboutHero.tsx",
+                lineNumber: 17,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/AboutHero.tsx",
+            lineNumber: 16,
+            columnNumber: 7
+        }, this);
+    }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "hero-section relative bg-white overflow-hidden",
         dir: dir,
@@ -1379,12 +1462,12 @@ function AboutHero() {
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/components/AboutHero.tsx",
-                    lineNumber: 17,
+                    lineNumber: 29,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/AboutHero.tsx",
-                lineNumber: 16,
+                lineNumber: 28,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1393,12 +1476,12 @@ function AboutHero() {
                     className: `crescent ${dir === 'rtl' ? 'crescent-left' : 'crescent-right'} crescent-subtle text-gray-900`
                 }, void 0, false, {
                     fileName: "[project]/src/components/AboutHero.tsx",
-                    lineNumber: 31,
+                    lineNumber: 43,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/AboutHero.tsx",
-                lineNumber: 30,
+                lineNumber: 42,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1433,7 +1516,7 @@ function AboutHero() {
                                             className: "w-8 h-0.5 bg-gray-900"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/AboutHero.tsx",
-                                            lineNumber: 45,
+                                            lineNumber: 57,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1441,13 +1524,13 @@ function AboutHero() {
                                             children: t('eyebrow')
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/AboutHero.tsx",
-                                            lineNumber: 46,
+                                            lineNumber: 58,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/AboutHero.tsx",
-                                    lineNumber: 44,
+                                    lineNumber: 56,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -1456,7 +1539,7 @@ function AboutHero() {
                                         t('title'),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/src/components/AboutHero.tsx",
-                                            lineNumber: 52,
+                                            lineNumber: 64,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1464,13 +1547,13 @@ function AboutHero() {
                                             children: t('titleAccent')
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/AboutHero.tsx",
-                                            lineNumber: 53,
+                                            lineNumber: 65,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/AboutHero.tsx",
-                                    lineNumber: 50,
+                                    lineNumber: 62,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1478,7 +1561,7 @@ function AboutHero() {
                                     children: t('description')
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/AboutHero.tsx",
-                                    lineNumber: 57,
+                                    lineNumber: 69,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1497,24 +1580,24 @@ function AboutHero() {
                                             d: dir === 'rtl' ? "M11 17l-5-5m0 0l5-5m-5 5h12" : "M13 7l5 5m0 0l-5 5m5-5H6"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/AboutHero.tsx",
-                                            lineNumber: 68,
+                                            lineNumber: 80,
                                             columnNumber: 19
                                         }, void 0)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/AboutHero.tsx",
-                                        lineNumber: 67,
+                                        lineNumber: 79,
                                         columnNumber: 17
                                     }, void 0),
                                     children: t('getInTouch')
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/AboutHero.tsx",
-                                    lineNumber: 62,
+                                    lineNumber: 74,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/AboutHero.tsx",
-                            lineNumber: 37,
+                            lineNumber: 49,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1539,33 +1622,33 @@ function AboutHero() {
                             className: `relative ${dir === 'rtl' ? 'lg:order-1' : ''}`,
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AboutRightExcellence$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                 fileName: "[project]/src/components/AboutHero.tsx",
-                                lineNumber: 84,
+                                lineNumber: 96,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/AboutHero.tsx",
-                            lineNumber: 78,
+                            lineNumber: 90,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/AboutHero.tsx",
-                    lineNumber: 35,
+                    lineNumber: 47,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/AboutHero.tsx",
-                lineNumber: 34,
+                lineNumber: 46,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/AboutHero.tsx",
-        lineNumber: 14,
+        lineNumber: 26,
         columnNumber: 5
     }, this);
 }
-_s(AboutHero, "242uzQYjRtOc/OThpXRY+FZNPEU=", false, function() {
+_s(AboutHero, "pAqdQHf8TqwLaASyNuv8BUxCU5E=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"],
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSectionTranslations"]
@@ -1741,43 +1824,163 @@ __turbopack_context__.s({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SectionHeader$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/SectionHeader.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/hooks/useTranslations.tsx [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
 'use client';
 ;
 ;
 ;
-const milestones = [
-    {
-        year: '2021',
-        label: 'Kuruluş & İlk MVP',
-        desc: 'Ar-Ge desteğiyle Prototip Yayınlandı',
-        icon: '🚀'
-    },
-    {
-        year: '2022',
-        label: 'Pilot Projeler',
-        desc: '3 farklı KOBİ ile saha testleri yapıldı',
-        icon: '⚡'
-    },
-    {
-        year: '2023',
-        label: 'Teknopark Başvurusu',
-        desc: 'Bozok Teknopark\'ta Ar-Ge Merkezine aday',
-        icon: '🏢'
-    },
-    {
-        year: '2024',
-        label: 'Modüler Platform',
-        desc: 'MDL-01…MDL-07 modülleri yayında',
-        icon: '🔧'
-    },
-    {
-        year: '2025',
-        label: 'Uluslararası Hedef',
-        desc: 'Orta Doğu ve Avrupa\'ya açılım planı',
-        icon: '🌍'
-    }
-];
 function OurStoryTimeline() {
+    _s();
+    const { dir, isLoading } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])();
+    const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSectionTranslations"])('about.timeline');
+    // Show loading state if translations are not ready
+    if (isLoading) {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+            className: "section bg-white relative overflow-hidden",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "container mx-auto text-center py-24",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/OurStoryTimeline.tsx",
+                        lineNumber: 17,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "mt-4 text-gray-600",
+                        children: "Loading timeline..."
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/OurStoryTimeline.tsx",
+                        lineNumber: 18,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/OurStoryTimeline.tsx",
+                lineNumber: 16,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/OurStoryTimeline.tsx",
+            lineNumber: 15,
+            columnNumber: 7
+        }, this);
+    }
+    // Get milestones from translations with fallback
+    const getMilestones = ()=>{
+        try {
+            const milestonesData = t('milestones');
+            if (milestonesData && typeof milestonesData === 'object') {
+                // Convert object to array with years as keys
+                const milestonesArray = Object.entries(milestonesData).map(([year, data])=>({
+                        year,
+                        label: data.label || '',
+                        description: data.description || '',
+                        icon: getIconForYear(year)
+                    }));
+                // Sort by year
+                return milestonesArray.sort((a, b)=>parseInt(a.year) - parseInt(b.year));
+            }
+        } catch (error) {
+            console.error('Error loading timeline milestones:', error);
+        }
+        // Fallback data
+        return [
+            {
+                year: '2021',
+                label: 'Foundation & First MVP',
+                description: 'R&D supported prototype launched',
+                icon: '🚀'
+            },
+            {
+                year: '2022',
+                label: 'Pilot Projects',
+                description: 'Field tests conducted with 3 different SMEs',
+                icon: '⚡'
+            },
+            {
+                year: '2023',
+                label: 'Technopark Application',
+                description: 'Candidate for R&D Center at Bozok Technopark',
+                icon: '🏢'
+            },
+            {
+                year: '2024',
+                label: 'Modular Platform',
+                description: 'MDL-01…MDL-07 modules live',
+                icon: '🔧'
+            },
+            {
+                year: '2025',
+                label: 'International Target',
+                description: 'Expansion plan to Middle East and Europe',
+                icon: '🌍'
+            }
+        ];
+    };
+    // Helper function to get appropriate icon for each year
+    const getIconForYear = (year)=>{
+        const iconMap = {
+            '2021': '🚀',
+            '2022': '⚡',
+            '2023': '🏢',
+            '2024': '🔧',
+            '2025': '🌍'
+        };
+        return iconMap[year] || '📅';
+    };
+    // Get stats from translations with fallback
+    const getStats = ()=>{
+        try {
+            const statsData = t('stats');
+            if (statsData && typeof statsData === 'object') {
+                return [
+                    {
+                        value: statsData.yearsJourney || "5+",
+                        label: statsData.yearsJourney || "Years Journey"
+                    },
+                    {
+                        value: statsData.projectsDelivered || "50+",
+                        label: statsData.projectsDelivered || "Projects Delivered"
+                    },
+                    {
+                        value: statsData.majorMilestones || "5",
+                        label: statsData.majorMilestones || "Major Milestones"
+                    },
+                    {
+                        value: statsData.marketExpansions || "2",
+                        label: statsData.marketExpansions || "Market Expansions"
+                    }
+                ];
+            }
+        } catch (error) {
+            console.error('Error loading timeline stats:', error);
+        }
+        // Fallback stats
+        return [
+            {
+                value: "5+",
+                label: "Years Journey"
+            },
+            {
+                value: "50+",
+                label: "Projects Delivered"
+            },
+            {
+                value: "5",
+                label: "Major Milestones"
+            },
+            {
+                value: "2",
+                label: "Market Expansions"
+            }
+        ];
+    };
+    const milestones = getMilestones();
+    const stats = getStats();
     const containerVariants = {
         hidden: {
             opacity: 0
@@ -1810,6 +2013,7 @@ function OurStoryTimeline() {
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "section bg-white relative overflow-hidden",
+        dir: dir,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute inset-0 opacity-[0.02]",
@@ -1824,39 +2028,39 @@ function OurStoryTimeline() {
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/components/OurStoryTimeline.tsx",
-                    lineNumber: 64,
+                    lineNumber: 142,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/OurStoryTimeline.tsx",
-                lineNumber: 63,
+                lineNumber: 141,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute top-20 left-16 w-28 h-28",
+                className: `absolute top-20 w-28 h-28 ${dir === 'rtl' ? 'right-16' : 'left-16'}`,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "crescent crescent-left crescent-subtle text-gray-900"
+                    className: `crescent ${dir === 'rtl' ? 'crescent-right' : 'crescent-left'} crescent-subtle text-gray-900`
                 }, void 0, false, {
                     fileName: "[project]/src/components/OurStoryTimeline.tsx",
-                    lineNumber: 78,
+                    lineNumber: 156,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/OurStoryTimeline.tsx",
-                lineNumber: 77,
+                lineNumber: 155,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "container mx-auto",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SectionHeader$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        eyebrow: "Our Journey",
-                        title: "Company Timeline",
-                        subtitle: "From humble beginnings to innovative solutions - discover the key milestones that shaped our company's growth and evolution.",
+                        eyebrow: t('eyebrow'),
+                        title: t('title'),
+                        subtitle: t('subtitle'),
                         className: "mb-16"
                     }, void 0, false, {
                         fileName: "[project]/src/components/OurStoryTimeline.tsx",
-                        lineNumber: 82,
+                        lineNumber: 160,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1866,7 +2070,7 @@ function OurStoryTimeline() {
                                 className: "hidden lg:block absolute top-1/2 left-0 right-0 h-px bg-gray-200 transform -translate-y-1/2"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/OurStoryTimeline.tsx",
-                                lineNumber: 92,
+                                lineNumber: 170,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1876,40 +2080,42 @@ function OurStoryTimeline() {
                                 viewport: {
                                     once: true
                                 },
-                                className: "grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-0",
+                                className: `grid grid-cols-1 lg:grid-cols-${milestones.length} gap-8 lg:gap-0`,
                                 children: milestones.map((milestone, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                                         variants: itemVariants,
                                         className: "relative lg:text-center",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "lg:hidden flex items-center gap-4 mb-4",
+                                                className: `lg:hidden flex items-center gap-4 mb-4 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`,
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "w-12 h-12 bg-gray-50 border border-gray-200 rounded-sm flex items-center justify-center",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             className: "text-lg",
+                                                            role: "img",
+                                                            "aria-label": `${milestone.year} milestone`,
                                                             children: milestone.icon
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/OurStoryTimeline.tsx",
-                                                            lineNumber: 110,
+                                                            lineNumber: 188,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/OurStoryTimeline.tsx",
-                                                        lineNumber: 109,
+                                                        lineNumber: 187,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "flex-1 h-px bg-gray-200"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/OurStoryTimeline.tsx",
-                                                        lineNumber: 112,
+                                                        lineNumber: 192,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/OurStoryTimeline.tsx",
-                                                lineNumber: 108,
+                                                lineNumber: 186,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1918,20 +2124,22 @@ function OurStoryTimeline() {
                                                     className: "w-16 h-16 bg-white border-4 border-gray-200 rounded-sm flex items-center justify-center relative group hover:border-gray-300 transition-colors",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "text-xl group-hover:scale-110 transition-transform",
+                                                        role: "img",
+                                                        "aria-label": `${milestone.year} milestone`,
                                                         children: milestone.icon
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/OurStoryTimeline.tsx",
-                                                        lineNumber: 118,
+                                                        lineNumber: 198,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/OurStoryTimeline.tsx",
-                                                    lineNumber: 117,
+                                                    lineNumber: 197,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/OurStoryTimeline.tsx",
-                                                lineNumber: 116,
+                                                lineNumber: 196,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1946,12 +2154,12 @@ function OurStoryTimeline() {
                                                                 children: milestone.year
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/OurStoryTimeline.tsx",
-                                                                lineNumber: 129,
+                                                                lineNumber: 213,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/OurStoryTimeline.tsx",
-                                                            lineNumber: 128,
+                                                            lineNumber: 212,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1959,43 +2167,43 @@ function OurStoryTimeline() {
                                                             children: milestone.label
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/OurStoryTimeline.tsx",
-                                                            lineNumber: 135,
+                                                            lineNumber: 219,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "text-body text-gray-600 leading-relaxed",
-                                                            children: milestone.desc
+                                                            children: milestone.description
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/OurStoryTimeline.tsx",
-                                                            lineNumber: 140,
+                                                            lineNumber: 224,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/OurStoryTimeline.tsx",
-                                                    lineNumber: 126,
+                                                    lineNumber: 210,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/OurStoryTimeline.tsx",
-                                                lineNumber: 125,
+                                                lineNumber: 209,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, milestone.year, true, {
                                         fileName: "[project]/src/components/OurStoryTimeline.tsx",
-                                        lineNumber: 102,
+                                        lineNumber: 180,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/OurStoryTimeline.tsx",
-                                lineNumber: 94,
+                                lineNumber: 172,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/OurStoryTimeline.tsx",
-                        lineNumber: 90,
+                        lineNumber: 168,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -2015,24 +2223,7 @@ function OurStoryTimeline() {
                             once: true
                         },
                         className: "grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-16 border-t border-gray-200",
-                        children: [
-                            {
-                                value: "5+",
-                                label: "Years Journey"
-                            },
-                            {
-                                value: "50+",
-                                label: "Projects Delivered"
-                            },
-                            {
-                                value: "3",
-                                label: "Major Milestones"
-                            },
-                            {
-                                value: "2",
-                                label: "Market Expansions"
-                            }
-                        ].map((stat, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        children: stats.map((stat, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                                 initial: {
                                     opacity: 0,
                                     y: 16
@@ -2055,7 +2246,7 @@ function OurStoryTimeline() {
                                         children: stat.value
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/OurStoryTimeline.tsx",
-                                        lineNumber: 172,
+                                        lineNumber: 251,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2063,33 +2254,39 @@ function OurStoryTimeline() {
                                         children: stat.label
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/OurStoryTimeline.tsx",
-                                        lineNumber: 175,
+                                        lineNumber: 254,
                                         columnNumber: 15
                                     }, this)
                                 ]
-                            }, stat.label, true, {
+                            }, stat.label || index, true, {
                                 fileName: "[project]/src/components/OurStoryTimeline.tsx",
-                                lineNumber: 164,
+                                lineNumber: 243,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/OurStoryTimeline.tsx",
-                        lineNumber: 151,
+                        lineNumber: 235,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/OurStoryTimeline.tsx",
-                lineNumber: 81,
+                lineNumber: 159,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/OurStoryTimeline.tsx",
-        lineNumber: 61,
+        lineNumber: 139,
         columnNumber: 5
     }, this);
 }
+_s(OurStoryTimeline, "pAqdQHf8TqwLaASyNuv8BUxCU5E=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSectionTranslations"]
+    ];
+});
 _c = OurStoryTimeline;
 var _c;
 __turbopack_context__.k.register(_c, "OurStoryTimeline");
@@ -2778,13 +2975,54 @@ __turbopack_context__.s({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/Button.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/hooks/useTranslations.tsx [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
 'use client';
 ;
 ;
 ;
 function CtaBanner() {
+    _s();
+    const { dir, isLoading } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])();
+    const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSectionTranslations"])('ctaBanner');
+    // Show loading state if translations are not ready
+    if (isLoading) {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+            className: "section bg-gray-50 relative overflow-hidden",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "container mx-auto text-center py-24",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/CtaBanner.tsx",
+                        lineNumber: 17,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "mt-4 text-gray-600",
+                        children: "Loading..."
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/CtaBanner.tsx",
+                        lineNumber: 18,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/CtaBanner.tsx",
+                lineNumber: 16,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/CtaBanner.tsx",
+            lineNumber: 15,
+            columnNumber: 7
+        }, this);
+    }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "section bg-gray-50 relative overflow-hidden",
+        dir: dir,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute inset-0 opacity-[0.02]",
@@ -2799,40 +3037,40 @@ function CtaBanner() {
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/components/CtaBanner.tsx",
-                    lineNumber: 12,
+                    lineNumber: 28,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/CtaBanner.tsx",
-                lineNumber: 11,
+                lineNumber: 27,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute top-16 left-16 w-32 h-32",
+                className: `absolute top-16 w-32 h-32 ${dir === 'rtl' ? 'right-16' : 'left-16'}`,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "crescent crescent-left crescent-subtle text-gray-900"
+                    className: `crescent ${dir === 'rtl' ? 'crescent-right' : 'crescent-left'} crescent-subtle text-gray-900`
                 }, void 0, false, {
                     fileName: "[project]/src/components/CtaBanner.tsx",
-                    lineNumber: 26,
+                    lineNumber: 42,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/CtaBanner.tsx",
-                lineNumber: 25,
+                lineNumber: 41,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute bottom-16 right-16 w-20 h-20",
+                className: `absolute bottom-16 w-20 h-20 ${dir === 'rtl' ? 'left-16' : 'right-16'}`,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "crescent crescent-right crescent-subtle text-gray-600"
+                    className: `crescent ${dir === 'rtl' ? 'crescent-left' : 'crescent-right'} crescent-subtle text-gray-600`
                 }, void 0, false, {
                     fileName: "[project]/src/components/CtaBanner.tsx",
-                    lineNumber: 30,
+                    lineNumber: 46,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/CtaBanner.tsx",
-                lineNumber: 29,
+                lineNumber: 45,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2867,28 +3105,28 @@ function CtaBanner() {
                                     className: "w-8 h-0.5 bg-gray-900"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/CtaBanner.tsx",
-                                    lineNumber: 43,
+                                    lineNumber: 59,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "text-overline",
-                                    children: "Ready to Start?"
+                                    children: t('eyebrow')
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/CtaBanner.tsx",
-                                    lineNumber: 44,
+                                    lineNumber: 60,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "w-8 h-0.5 bg-gray-900"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/CtaBanner.tsx",
-                                    lineNumber: 45,
+                                    lineNumber: 61,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/CtaBanner.tsx",
-                            lineNumber: 42,
+                            lineNumber: 58,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h2, {
@@ -2909,24 +3147,24 @@ function CtaBanner() {
                             },
                             className: "text-headline text-gray-900 mb-6",
                             children: [
-                                "Let's Build Something",
+                                t('title'),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/components/CtaBanner.tsx",
-                                    lineNumber: 57,
+                                    lineNumber: 73,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "text-gray-600",
-                                    children: "Amazing Together"
+                                    children: t('titleAccent')
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/CtaBanner.tsx",
-                                    lineNumber: 58,
+                                    lineNumber: 74,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/CtaBanner.tsx",
-                            lineNumber: 49,
+                            lineNumber: 65,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -2946,10 +3184,10 @@ function CtaBanner() {
                                 once: true
                             },
                             className: "text-body text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed",
-                            children: "Transform your ideas into powerful digital solutions. Whether you need web development, mobile apps, or AI integration, we're here to bring your vision to life with cutting-edge technology and expert craftsmanship."
+                            children: t('description')
                         }, void 0, false, {
                             fileName: "[project]/src/components/CtaBanner.tsx",
-                            lineNumber: 62,
+                            lineNumber: 78,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -2983,21 +3221,21 @@ function CtaBanner() {
                                             strokeLinecap: "round",
                                             strokeLinejoin: "round",
                                             strokeWidth: 2,
-                                            d: "M13 7l5 5m0 0l-5 5m5-5H6"
+                                            d: dir === 'rtl' ? "M11 17l-5-5m0 0l5-5m-5 5h12" : "M13 7l5 5m0 0l-5 5m5-5H6"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/CtaBanner.tsx",
-                                            lineNumber: 88,
+                                            lineNumber: 102,
                                             columnNumber: 19
                                         }, void 0)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/CtaBanner.tsx",
-                                        lineNumber: 87,
+                                        lineNumber: 101,
                                         columnNumber: 17
                                     }, void 0),
-                                    children: "Start Your Project"
+                                    children: t('startYourProject')
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/CtaBanner.tsx",
-                                    lineNumber: 82,
+                                    lineNumber: 96,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -3016,24 +3254,24 @@ function CtaBanner() {
                                             d: "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/CtaBanner.tsx",
-                                            lineNumber: 100,
+                                            lineNumber: 115,
                                             columnNumber: 19
                                         }, void 0)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/CtaBanner.tsx",
-                                        lineNumber: 99,
+                                        lineNumber: 114,
                                         columnNumber: 17
                                     }, void 0),
-                                    children: "View Services"
+                                    children: t('viewServices')
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/CtaBanner.tsx",
-                                    lineNumber: 94,
+                                    lineNumber: 109,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/CtaBanner.tsx",
-                            lineNumber: 75,
+                            lineNumber: 89,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -3064,47 +3302,21 @@ function CtaBanner() {
                                             strokeLinecap: "round",
                                             strokeLinejoin: "round",
                                             strokeWidth: 2,
-                                            d: "M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/CtaBanner.tsx",
-                                            lineNumber: 120,
-                                            columnNumber: 21
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/CtaBanner.tsx",
-                                        lineNumber: 119,
-                                        columnNumber: 19
-                                    }, this),
-                                    title: "Email Us",
-                                    description: "Get a detailed response",
-                                    value: "info@paktechnology.com",
-                                    href: "mailto:info@paktechnology.com"
-                                },
-                                {
-                                    icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                        className: "h-5 w-5",
-                                        fill: "none",
-                                        stroke: "currentColor",
-                                        viewBox: "0 0 24 24",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                            strokeLinecap: "round",
-                                            strokeLinejoin: "round",
-                                            strokeWidth: 2,
                                             d: "M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/CtaBanner.tsx",
-                                            lineNumber: 131,
+                                            lineNumber: 135,
                                             columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/CtaBanner.tsx",
-                                        lineNumber: 130,
+                                        lineNumber: 134,
                                         columnNumber: 19
                                     }, this),
-                                    title: "Call Us",
-                                    description: "Quick consultation",
-                                    value: "+90 552 567 71 64",
-                                    href: "tel:+905525677164"
+                                    title: t('callUs.title'),
+                                    description: t('callUs.description'),
+                                    value: t('callUs.value'),
+                                    href: `tel:${t('callUs.value').replace(/\s/g, '')}`
                                 },
                                 {
                                     icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -3119,17 +3331,17 @@ function CtaBanner() {
                                             d: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/CtaBanner.tsx",
-                                            lineNumber: 142,
+                                            lineNumber: 146,
                                             columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/CtaBanner.tsx",
-                                        lineNumber: 141,
+                                        lineNumber: 145,
                                         columnNumber: 19
                                     }, this),
-                                    title: "Response Time",
-                                    description: "We'll get back to you",
-                                    value: "< 24 hours",
+                                    title: t('responseTime.title'),
+                                    description: t('responseTime.description'),
+                                    value: t('responseTime.value'),
                                     href: null
                                 }
                             ].map((method, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -3155,7 +3367,7 @@ function CtaBanner() {
                                             children: method.icon
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/CtaBanner.tsx",
-                                            lineNumber: 159,
+                                            lineNumber: 163,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -3163,7 +3375,7 @@ function CtaBanner() {
                                             children: method.title
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/CtaBanner.tsx",
-                                            lineNumber: 162,
+                                            lineNumber: 166,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3171,54 +3383,61 @@ function CtaBanner() {
                                             children: method.description
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/CtaBanner.tsx",
-                                            lineNumber: 163,
+                                            lineNumber: 167,
                                             columnNumber: 17
                                         }, this),
                                         method.href ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                             href: method.href,
-                                            className: "text-body text-gray-700 hover:text-gray-900 transition-colors",
+                                            className: "text-body text-gray-700 hover:text-gray-900 transition-colors break-words",
+                                            dir: method.href.startsWith('mailto:') ? 'ltr' : dir,
                                             children: method.value
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/CtaBanner.tsx",
-                                            lineNumber: 165,
+                                            lineNumber: 169,
                                             columnNumber: 19
                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "text-body text-gray-700",
                                             children: method.value
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/CtaBanner.tsx",
-                                            lineNumber: 172,
+                                            lineNumber: 177,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, method.title, true, {
                                     fileName: "[project]/src/components/CtaBanner.tsx",
-                                    lineNumber: 151,
+                                    lineNumber: 155,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/components/CtaBanner.tsx",
-                            lineNumber: 109,
+                            lineNumber: 124,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/CtaBanner.tsx",
-                    lineNumber: 34,
+                    lineNumber: 50,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/CtaBanner.tsx",
-                lineNumber: 33,
+                lineNumber: 49,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/CtaBanner.tsx",
-        lineNumber: 9,
+        lineNumber: 25,
         columnNumber: 5
     }, this);
 }
+_s(CtaBanner, "pAqdQHf8TqwLaASyNuv8BUxCU5E=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSectionTranslations"]
+    ];
+});
 _c = CtaBanner;
 var _c;
 __turbopack_context__.k.register(_c, "CtaBanner");

@@ -4,16 +4,31 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Button from '@/components/Button';
+import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function BlogHero() {
   const [mounted, setMounted] = useState(false);
+  const { dir, isLoading } = useTranslations();
+  const t = useSectionTranslations('blog.hero');
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
+  // Show loading state if translations are not ready
+  if (isLoading) {
+    return (
+      <section className="hero-section relative bg-white overflow-hidden min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"></div>
+          <p className="mt-4 text-gray-600">Loading...</p>
+        </div>
+      </section>
+    );
+  }
+
   return (
-    <section className="hero-section relative bg-white overflow-hidden">
+    <section className="hero-section relative bg-white overflow-hidden" dir={dir}>
       {/* Swiss Grid Background */}
       <div className="absolute inset-0 opacity-[0.02]">
         <div 
@@ -29,8 +44,8 @@ export default function BlogHero() {
       </div>
 
       {/* Proper Crescent Elements */}
-      <div className="absolute top-32 right-16 w-24 h-24">
-        <div className="crescent crescent-right crescent-subtle text-gray-900" />
+      <div className={`absolute top-32 w-24 h-24 ${dir === 'rtl' ? 'left-16' : 'right-16'}`}>
+        <div className={`crescent ${dir === 'rtl' ? 'crescent-left' : 'crescent-right'} crescent-subtle text-gray-900`} />
       </div>
 
       <div className="container mx-auto">
@@ -43,22 +58,20 @@ export default function BlogHero() {
           {/* Overline */}
           <div className="flex items-center justify-center gap-3 mb-8">
             <div className="w-8 h-0.5 bg-gray-900"></div>
-            <span className="text-overline">Knowledge Hub</span>
+            <span className="text-overline">{t('eyebrow')}</span>
             <div className="w-8 h-0.5 bg-gray-900"></div>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-display font-light text-gray-900 leading-none mb-6">
-            Insights &
+            {t('title')}
             <br />
-            <span className="text-gray-600">Resources</span>
+            <span className="text-gray-600">{t('titleAccent')}</span>
           </h1>
 
           {/* Description */}
           <p className="text-body text-gray-600 mb-10 leading-relaxed max-w-2xl mx-auto">
-            Stay updated with the latest trends in technology, best practices, 
-            and insights from our team. Explore articles that help you make 
-            informed decisions about your digital transformation journey.
+            {t('description')}
           </p>
 
           {/* CTA Buttons */}
@@ -69,11 +82,12 @@ export default function BlogHero() {
               size="lg"
               rightIcon={
                 <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} 
+                        d={dir === 'rtl' ? "M7 17l7-7 7 7M14 3v11" : "M19 14l-7 7m0 0l-7-7m7 7V3"} />
                 </svg>
               }
             >
-              Browse Articles
+              {t('browseArticles')}
             </Button>
             <Button
               href="/contact"
@@ -81,20 +95,21 @@ export default function BlogHero() {
               size="lg"
               leftIcon={
                 <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} 
+                        d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                 </svg>
               }
             >
-              Get Consultation
+              {t('getConsultation')}
             </Button>
           </div>
 
           {/* Blog Stats */}
           <div className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-gray-200">
             {[
-              { value: "50+", label: "Articles" },
-              { value: "10k+", label: "Monthly Readers" },
-              { value: "Weekly", label: "New Content" }
+              { value: "50+", label: t('stats.articles') },
+              { value: "10k+", label: t('stats.monthlyReaders') },
+              { value: "Weekly", label: t('stats.newContent') }
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}

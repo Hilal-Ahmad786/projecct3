@@ -93,6 +93,7 @@ export default function Button({
           xmlns="http://www.w3.org/2000/svg" 
           fill="none" 
           viewBox="0 0 24 24"
+          aria-hidden="true"
         >
           <circle 
             className="opacity-25" 
@@ -110,13 +111,13 @@ export default function Button({
         </svg>
       )}
       {!loading && leftIcon && (
-        <span className="flex-shrink-0 transition-transform duration-250 group-hover:scale-110">
+        <span className="flex-shrink-0 transition-transform duration-250 group-hover:scale-110" aria-hidden="true">
           {leftIcon}
         </span>
       )}
       <span className="relative z-10">{children}</span>
       {!loading && rightIcon && (
-        <span className="flex-shrink-0 transition-transform duration-250 group-hover:translate-x-0.5">
+        <span className="flex-shrink-0 transition-transform duration-250 group-hover:translate-x-0.5" aria-hidden="true">
           {rightIcon}
         </span>
       )}
@@ -125,7 +126,12 @@ export default function Button({
 
   if (href) {
     return (
-      <Link href={href} className={`${classes} group`}>
+      <Link 
+        href={href} 
+        className={`${classes} group`}
+        aria-disabled={disabled || loading}
+        tabIndex={disabled || loading ? -1 : undefined}
+      >
         {content}
       </Link>
     );
@@ -135,6 +141,7 @@ export default function Button({
     <button 
       className={`${classes} group`} 
       disabled={disabled || loading}
+      aria-disabled={disabled || loading}
       {...rest}
     >
       {content}
