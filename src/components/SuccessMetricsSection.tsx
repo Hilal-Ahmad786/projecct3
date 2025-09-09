@@ -3,6 +3,7 @@
 
 import { motion } from 'framer-motion';
 import SectionHeader from '@/components/SectionHeader';
+import Button from '@/components/Button';
 import {
   CheckBadgeIcon,
   ArrowTrendingUpIcon,
@@ -11,68 +12,85 @@ import {
   CurrencyDollarIcon,
   ChartBarIcon
 } from '@heroicons/react/24/outline';
-
-const metrics = [
-  {
-    value: '150+',
-    label: 'Projects Completed',
-    Icon: CheckBadgeIcon,
-    description: 'Successfully delivered projects across various industries'
-  },
-  {
-    value: '300%',
-    label: 'Average ROI Increase',
-    Icon: ArrowTrendingUpIcon,
-    description: 'Return on investment for our clients'
-  },
-  {
-    value: '80%',
-    label: 'Time Savings',
-    Icon: ClockIcon,
-    description: 'Efficiency gained through automation'
-  },
-  {
-    value: '50+',
-    label: 'Happy Clients',
-    Icon: UserGroupIcon,
-    description: 'Businesses we\'ve helped transform'
-  },
-  {
-    value: '99%',
-    label: 'Uptime Guaranteed',
-    Icon: ChartBarIcon,
-    description: 'System reliability and performance'
-  },
-  {
-    value: '$2M+',
-    label: 'Revenue Generated',
-    Icon: CurrencyDollarIcon,
-    description: 'Additional revenue created for clients'
-  }
-];
-
-const testimonialMetrics = [
-  {
-    metric: '95%',
-    label: 'Client Satisfaction',
-    quote: 'Exceeded our expectations in every aspect',
-    client: 'Tech Startup CEO'
-  },
-  {
-    metric: '< 24h',
-    label: 'Response Time',
-    quote: 'Lightning-fast support when we need it',
-    client: 'E-commerce Director'
-  },
-  {
-    metric: '100%',
-    label: 'On-Time Delivery',
-    quote: 'Always delivers on promises and deadlines',
-    client: 'Project Manager'
-  }
-];
+import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function SuccessMetricsSection() {
+  const { dir, isLoading } = useTranslations();
+  const t = useSectionTranslations('projects.successMetrics');
+  const tStats = useSectionTranslations('stats');
+  const tCommon = useSectionTranslations('common');
+
+  if (isLoading) {
+    return (
+      <section className="section bg-gray-50 relative overflow-hidden min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"></div>
+          <p className="mt-4 text-gray-600">{tCommon('loading')}</p>
+        </div>
+      </section>
+    );
+  }
+
+  const metrics = [
+    {
+      value: tStats('projects150'),
+      label: t('metrics.0.label'),
+      Icon: CheckBadgeIcon,
+      description: t('metrics.0.description')
+    },
+    {
+      value: tStats('avgROI300'),
+      label: t('metrics.1.label'),
+      Icon: ArrowTrendingUpIcon,
+      description: t('metrics.1.description')
+    },
+    {
+      value: tStats('timeSavings80'),
+      label: t('metrics.2.label'),
+      Icon: ClockIcon,
+      description: t('metrics.2.description')
+    },
+    {
+      value: tStats('clients50'),
+      label: t('metrics.3.label'),
+      Icon: UserGroupIcon,
+      description: t('metrics.3.description')
+    },
+    {
+      value: tStats('uptime99'),
+      label: t('metrics.4.label'),
+      Icon: ChartBarIcon,
+      description: t('metrics.4.description')
+    },
+    {
+      value: tStats('revenueGenerated2M'),
+      label: t('metrics.5.label'),
+      Icon: CurrencyDollarIcon,
+      description: t('metrics.5.description')
+    }
+  ];
+
+  const testimonialMetrics = [
+    {
+      metric: tStats('clientSatisfaction95'),
+      label: 'Client Satisfaction',
+      quote: 'Exceeded our expectations in every aspect',
+      client: 'Tech Startup CEO'
+    },
+    {
+      metric: tStats('responseTime24h'),
+      label: 'Response Time',
+      quote: 'Lightning-fast support when we need it',
+      client: 'E-commerce Director'
+    },
+    {
+      metric: tStats('onTimeDelivery100'),
+      label: 'On-Time Delivery',
+      quote: 'Always delivers on promises and deadlines',
+      client: 'Project Manager'
+    }
+  ];
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -93,17 +111,17 @@ export default function SuccessMetricsSection() {
   };
 
   return (
-    <section className="section bg-gray-50 relative overflow-hidden">
+    <section className="section bg-gray-50 relative overflow-hidden" dir={dir}>
       {/* Proper Crescent Elements */}
-      <div className="absolute top-16 left-20 w-20 h-20">
-        <div className="crescent crescent-left crescent-subtle text-gray-900" />
+      <div className={`absolute top-16 w-20 h-20 ${dir === 'rtl' ? 'right-20' : 'left-20'}`}>
+        <div className={`crescent ${dir === 'rtl' ? 'crescent-right' : 'crescent-left'} crescent-subtle text-gray-900`} />
       </div>
 
       <div className="container mx-auto">
         <SectionHeader
-          eyebrow="Success Metrics"
-          title="Proven Results"
-          subtitle="Our track record speaks for itself. Here are the measurable outcomes we've achieved for our clients."
+          eyebrow={t('eyebrow')}
+          title={t('title')}
+          subtitle={t('subtitle')}
           className="mb-16"
         />
 
@@ -157,10 +175,10 @@ export default function SuccessMetricsSection() {
         >
           <div className="text-center mb-12">
             <h3 className="text-title text-gray-900 mb-4">
-              What Our Clients Say About Results
+              {t('whatClientsAsk')}
             </h3>
             <p className="text-body text-gray-600 max-w-2xl mx-auto">
-              Don't just take our word for it - here's what our clients have to say about the results we've delivered.
+              {t('whatClientsSubtitle')}
             </p>
           </div>
 
@@ -200,18 +218,18 @@ export default function SuccessMetricsSection() {
           className="text-center mt-16 pt-16 border-t border-gray-200"
         >
           <h3 className="text-title text-gray-900 mb-4">
-            Ready to Achieve Similar Results?
+            {t('readyForResults')}
           </h3>
           <p className="text-body text-gray-600 mb-8 max-w-lg mx-auto">
-            Let's discuss how we can help you achieve measurable success with your digital transformation.
+            {t('readyDescription')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/contact" className="btn btn-primary">
-              Start Your Success Story
-            </a>
-            <a href="/projects" className="btn btn-secondary">
-              View Case Studies
-            </a>
+            <Button href="/contact" variant="primary" size="lg">
+              {t('startSuccessStory')}
+            </Button>
+            <Button href="/projects" variant="secondary" size="lg">
+              {t('viewCaseStudies')}
+            </Button>
           </div>
         </motion.div>
       </div>

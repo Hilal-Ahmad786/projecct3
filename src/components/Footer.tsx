@@ -1,6 +1,6 @@
 // src/components/Footer.tsx
 'use client';
-
+import Image from "next/image";
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ChevronUpIcon } from '@heroicons/react/24/solid';
@@ -152,10 +152,19 @@ export default function Footer() {
           >
             {/* Logo */}
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-white rounded-sm flex items-center justify-center">
-                <span className="text-gray-900 text-lg font-bold">P</span>
-              </div>
-              <span className="text-lg font-medium">PakTechnology</span>
+            <Link href="/" className="flex items-center gap-3 group">
+  <div className="relative">
+    <Image
+      src="/images/logo/PSlogo11.png"
+      alt="PakSoft Logo"
+      width={160}
+      height={160}
+      className="rounded-sm"
+      priority
+    />
+  </div>
+
+</Link>
             </div>
             
             <p className="text-body text-gray-300 mb-6 leading-relaxed max-w-xs">

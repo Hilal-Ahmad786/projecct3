@@ -10,32 +10,48 @@ import {
   ShieldCheckIcon,
   CogIcon
 } from '@heroicons/react/24/outline'
+import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations'
 
 export default function ProjectDetailSection() {
+  const { dir, isLoading } = useTranslations()
+  const t = useSectionTranslations('projectDetail')
+  const tCommon = useSectionTranslations('common')
+
+  if (isLoading) {
+    return (
+      <section className="section bg-white relative overflow-hidden min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"></div>
+          <p className="mt-4 text-gray-600">{tCommon('loading')}</p>
+        </div>
+      </section>
+    )
+  }
+
   const features = [
     {
       icon: CodeBracketIcon,
-      title: 'Modern Technology',
-      description: 'We use cutting-edge technologies and frameworks to build scalable, maintainable solutions that stand the test of time.',
-      details: ['React/Next.js', 'Node.js', 'Python', 'Cloud Infrastructure']
+      title: t('modernTechnology.title'),
+      description: t('modernTechnology.description'),
+      details: t('modernTechnology.details')
     },
     {
       icon: ClockIcon,
-      title: 'Efficient Delivery',
-      description: 'Our agile development process ensures timely delivery without compromising on quality or functionality.',
-      details: ['Agile Methodology', 'Sprint Planning', 'Regular Updates', 'On-time Delivery']
+      title: t('efficientDelivery.title'),
+      description: t('efficientDelivery.description'),
+      details: t('efficientDelivery.details')
     },
     {
       icon: ShieldCheckIcon,
-      title: 'Quality Assurance',
-      description: 'Rigorous testing and quality control processes ensure your project meets the highest standards.',
-      details: ['Code Reviews', 'Automated Testing', 'Security Audits', 'Performance Optimization']
+      title: t('qualityAssurance.title'),
+      description: t('qualityAssurance.description'),
+      details: t('qualityAssurance.details')
     },
     {
       icon: CogIcon,
-      title: 'Ongoing Support',
-      description: 'Comprehensive maintenance and support services to keep your systems running smoothly.',
-      details: ['24/7 Monitoring', 'Regular Updates', 'Bug Fixes', 'Feature Enhancements']
+      title: t('ongoingSupport.title'),
+      description: t('ongoingSupport.description'),
+      details: t('ongoingSupport.details')
     }
   ]
 
@@ -66,9 +82,9 @@ export default function ProjectDetailSection() {
   }
 
   return (
-    <section className="section bg-white relative overflow-hidden">
+    <section className="section bg-white relative overflow-hidden" dir={dir}>
       {/* Subtle geometric background */}
-      <div className="absolute bottom-20 left-16 w-32 h-32 opacity-[0.02]">
+      <div className={`absolute bottom-20 w-32 h-32 opacity-[0.02] ${dir === 'rtl' ? 'right-16' : 'left-16'}`}>
         <div 
           className="w-full h-full border border-gray-900"
           style={{ clipPath: 'circle(45% at 30% 70%)' }}
@@ -77,9 +93,9 @@ export default function ProjectDetailSection() {
 
       <div className="container mx-auto">
         <SectionHeader
-          eyebrow="Our Approach"
-          title="Why Choose PakTechnology"
-          subtitle="We combine technical expertise with strategic thinking to deliver solutions that drive real business results."
+          eyebrow={t('eyebrow')}
+          title={t('title')}
+          subtitle={t('subtitle')}
           className="mb-16"
         />
 
@@ -116,12 +132,19 @@ export default function ProjectDetailSection() {
 
                 {/* Details */}
                 <div className="grid grid-cols-2 gap-3">
-                  {feature.details.map((detail) => (
-                    <div key={detail} className="flex items-center gap-2">
+                  {Array.isArray(feature.details) ? (
+                    feature.details.map((detail) => (
+                      <div key={detail} className="flex items-center gap-2">
+                        <div className="w-1 h-1 bg-gray-400 rounded-full" />
+                        <span className="text-caption text-gray-500">{detail}</span>
+                      </div>
+                    ))
+                  ) : (
+                    <div className="flex items-center gap-2">
                       <div className="w-1 h-1 bg-gray-400 rounded-full" />
-                      <span className="text-caption text-gray-500">{detail}</span>
+                      <span className="text-caption text-gray-500">{feature.details}</span>
                     </div>
-                  ))}
+                  )}
                 </div>
               </motion.div>
             )
@@ -158,20 +181,18 @@ export default function ProjectDetailSection() {
         >
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left Column - Content */}
-            <div>
+            <div className={dir === 'rtl' ? 'order-2' : 'order-1'}>
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-8 h-0.5 bg-gray-900" />
-                <span className="text-overline">Our Process</span>
+                <span className="text-overline">{t('processOverview.eyebrow')}</span>
               </div>
               
               <h3 className="text-headline text-gray-900 mb-6">
-                From Concept to Completion
+                {t('processOverview.title')}
               </h3>
               
               <p className="text-body text-gray-600 mb-8 leading-relaxed">
-                We follow a structured approach that ensures every project is delivered 
-                on time, within budget, and exceeds expectations. Our process is designed 
-                to be transparent, collaborative, and results-driven.
+                {t('processOverview.description')}
               </p>
 
               <div className="space-y-6">
@@ -195,7 +216,7 @@ export default function ProjectDetailSection() {
             </div>
 
             {/* Right Column - Visual */}
-            <div className="relative">
+            <div className={`relative ${dir === 'rtl' ? 'order-1' : 'order-2'}`}>
               <div className="aspect-square max-w-md mx-auto">
                 {/* Background Grid */}
                 <div className="absolute inset-0 opacity-5">
@@ -228,7 +249,7 @@ export default function ProjectDetailSection() {
                 <motion.div
                   animate={{ y: [-6, 6, -6] }}
                   transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                  className="absolute top-16 right-16 w-16 h-12 bg-white border border-gray-200 rounded-sm shadow-soft p-2"
+                  className={`absolute top-16 w-16 h-12 bg-white border border-gray-200 rounded-sm shadow-soft p-2 ${dir === 'rtl' ? 'left-16' : 'right-16'}`}
                 >
                   <div className="w-full h-1 bg-gray-200 rounded mb-1" />
                   <div className="w-2/3 h-1 bg-gray-300 rounded" />
@@ -237,7 +258,7 @@ export default function ProjectDetailSection() {
                 <motion.div
                   animate={{ y: [6, -6, 6] }}
                   transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-                  className="absolute bottom-16 left-16 w-12 h-12 bg-gray-50 border border-gray-200 rounded-sm shadow-soft p-2"
+                  className={`absolute bottom-16 w-12 h-12 bg-gray-50 border border-gray-200 rounded-sm shadow-soft p-2 ${dir === 'rtl' ? 'right-16' : 'left-16'}`}
                 >
                   <div className="w-6 h-6 bg-gray-300 rounded-full" />
                 </motion.div>
@@ -255,10 +276,10 @@ export default function ProjectDetailSection() {
           className="text-center mt-16 pt-16 border-t border-gray-200"
         >
           <h3 className="text-title text-gray-900 mb-4">
-            Ready to Start Your Project?
+            {t('processOverview.readyToStart')}
           </h3>
           <p className="text-body text-gray-600 mb-8 max-w-lg mx-auto">
-            Let's discuss your requirements and explore how we can help bring your vision to life.
+            {t('processOverview.readyDescription')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -267,11 +288,12 @@ export default function ProjectDetailSection() {
               size="lg"
               rightIcon={
                 <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} 
+                        d={dir === 'rtl' ? "M11 17l-5-5m0 0l5-5m-5 5h12" : "M13 7l5 5m0 0l-5 5m5-5H6"} />
                 </svg>
               }
             >
-              Get Started
+              {t('processOverview.getStarted')}
             </Button>
             <Button
               href="/projects"
@@ -283,7 +305,7 @@ export default function ProjectDetailSection() {
                 </svg>
               }
             >
-              View Portfolio
+              {t('processOverview.viewPortfolio')}
             </Button>
           </div>
         </motion.div>

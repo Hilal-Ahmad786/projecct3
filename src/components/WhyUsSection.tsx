@@ -9,35 +9,51 @@ import {
   CurrencyDollarIcon,
   ChatBubbleBottomCenterTextIcon,
 } from '@heroicons/react/24/outline';
-
-const advantages = [
-  {
-    title: 'Fast Delivery',
-    description: 'Agile development process ensures timely delivery without compromising quality.',
-    Icon: ClockIcon,
-    metric: '90% faster than industry average'
-  },
-  {
-    title: 'Proven Expertise',
-    description: 'Years of experience with cutting-edge technologies and successful project delivery.',
-    Icon: ShieldCheckIcon,
-    metric: '98% client satisfaction rate'
-  },
-  {
-    title: 'Cost Effective',
-    description: 'Competitive pricing with transparent costs and no hidden fees.',
-    Icon: CurrencyDollarIcon,
-    metric: '30% cost savings on average'
-  },
-  {
-    title: '24/7 Support',
-    description: 'Round-the-clock technical support and maintenance services.',
-    Icon: ChatBubbleBottomCenterTextIcon,
-    metric: '<24 hour response time'
-  },
-];
+import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function WhyUsSection() {
+  const { dir, isLoading } = useTranslations();
+  const t = useSectionTranslations('services.whyUs');
+  const tCommon = useSectionTranslations('common');
+
+  if (isLoading) {
+    return (
+      <section className="section bg-white relative overflow-hidden min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"></div>
+          <p className="mt-4 text-gray-600">{tCommon('loading')}</p>
+        </div>
+      </section>
+    );
+  }
+
+  const advantages = [
+    {
+      title: t('fastDelivery.title'),
+      description: t('fastDelivery.description'),
+      Icon: ClockIcon,
+      metric: t('fastDelivery.metric')
+    },
+    {
+      title: t('provenExpertise.title'),
+      description: t('provenExpertise.description'),
+      Icon: ShieldCheckIcon,
+      metric: t('provenExpertise.metric')
+    },
+    {
+      title: t('costEffective.title'),
+      description: t('costEffective.description'),
+      Icon: CurrencyDollarIcon,
+      metric: t('costEffective.metric')
+    },
+    {
+      title: t('support247.title'),
+      description: t('support247.description'),
+      Icon: ChatBubbleBottomCenterTextIcon,
+      metric: t('support247.metric')
+    },
+  ];
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -58,17 +74,17 @@ export default function WhyUsSection() {
   };
 
   return (
-    <section className="section bg-white relative overflow-hidden">
+    <section className="section bg-white relative overflow-hidden" dir={dir}>
       {/* Proper Crescent Elements */}
-      <div className="absolute bottom-20 left-16 w-20 h-20">
-        <div className="crescent crescent-left crescent-subtle text-gray-900" />
+      <div className={`absolute bottom-20 w-20 h-20 ${dir === 'rtl' ? 'right-16' : 'left-16'}`}>
+        <div className={`crescent ${dir === 'rtl' ? 'crescent-right' : 'crescent-left'} crescent-subtle text-gray-900`} />
       </div>
 
       <div className="container mx-auto">
         <SectionHeader
-          eyebrow="Why Choose Us"
-          title="What Sets Us Apart"
-          subtitle="We combine technical excellence with business understanding to deliver solutions that truly make a difference."
+          eyebrow={t('eyebrow')}
+          title={t('title')}
+          subtitle={t('subtitle')}
           className="mb-16"
         />
 

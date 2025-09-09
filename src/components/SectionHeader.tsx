@@ -3,6 +3,7 @@
 
 import { motion } from 'framer-motion';
 import React from 'react';
+import { useTranslations } from '@/hooks/useTranslations';
 
 interface SectionHeaderProps {
   title: string;
@@ -21,6 +22,8 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
   centered = true,
   animated = true
 }) => {
+  const { dir } = useTranslations();
+
   const headerVariants = {
     hidden: { opacity: 0, y: 24 },
     visible: {
@@ -51,7 +54,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
           variants={animated ? itemVariants : {}}
           className={`
             flex items-center gap-3 mb-6
-            ${centered ? 'justify-center' : 'justify-start'}
+            ${centered ? 'justify-center' : dir === 'rtl' ? 'justify-end' : 'justify-start'}
           `}
         >
           <div className="w-8 h-0.5 bg-gray-900" />
@@ -93,9 +96,10 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
         className={`
-          ${centered ? 'text-center' : 'text-left'} 
+          ${centered ? 'text-center' : dir === 'rtl' ? 'text-right' : 'text-left'} 
           ${className}
         `}
+        dir={dir}
       >
         {content}
       </motion.div>
@@ -103,7 +107,13 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
   }
 
   return (
-    <div className={`${centered ? 'text-center' : 'text-left'} ${className}`}>
+    <div 
+      className={`
+        ${centered ? 'text-center' : dir === 'rtl' ? 'text-right' : 'text-left'} 
+        ${className}
+      `}
+      dir={dir}
+    >
       {content}
     </div>
   );

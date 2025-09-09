@@ -24,10 +24,23 @@ import {
 } from '@heroicons/react/24/outline';
 
 export default function ServicesSection() {
-  const { dir } = useTranslations();
+  const { dir, isLoading } = useTranslations();
   const t = useSectionTranslations('services.main');
   const tServices = useSectionTranslations('services.list');
   const tCommon = useSectionTranslations('common');
+
+  const [activeCategory, setActiveCategory] = useState('automation');
+
+  if (isLoading) {
+    return (
+      <section className="section bg-white relative overflow-hidden min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"></div>
+          <p className="mt-4 text-gray-600">{tCommon('loading')}</p>
+        </div>
+      </section>
+    );
+  }
 
   const categories = [
     { key: 'automation', label: t('categories.automation') },
@@ -131,7 +144,6 @@ export default function ServicesSection() {
     },
   ];
 
-  const [activeCategory, setActiveCategory] = useState(categories[0].key);
   const filteredServices = services.filter(service => service.category === activeCategory);
 
   const containerVariants = {

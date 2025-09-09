@@ -7,6 +7,8 @@ import { usePathname } from 'next/navigation';
 import { XMarkIcon, Bars3Icon, GlobeAltIcon } from '@heroicons/react/24/outline';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 import { locales, localeNames, type Locale } from '@/lib/i18n';
+import Image from "next/image";
+
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -56,24 +58,19 @@ export default function Navbar() {
       >
         <div className="container mx-auto flex items-center justify-between">
           {/* Logo - Clean and Minimal */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative">
-              {/* Simple geometric logo placeholder */}
-              <div className="w-10 h-10 bg-gray-900 rounded-sm flex items-center justify-center">
-                <span className="text-white text-lg font-bold">P</span>
-              </div>
-            </div>
-            
-            <div className="hidden sm:block">
-              <h1 className="text-lg font-medium text-gray-900 group-hover:text-gray-700 transition-colors">
-                PakTechnology
-              </h1>
-              <p className="text-xs text-gray-500 -mt-0.5 uppercase tracking-wide">
-                Digital Solutions
-              </p>
-            </div>
-          </Link>
+<Link href="/" className="flex items-center gap-3 group">
+  <div className="relative">
+    <Image
+      src="/images/logo/PSlogo1.png"
+      alt="PakSoft Logo"
+      width={160}
+      height={160}
+      className="rounded-sm"
+      priority
+    />
+  </div>
 
+</Link>
           {/* Navigation - Swiss Typography */}
           <nav className="hidden lg:flex items-center">
             <ul className="flex items-center gap-8">

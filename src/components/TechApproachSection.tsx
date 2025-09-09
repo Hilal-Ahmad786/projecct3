@@ -3,6 +3,7 @@
 
 import { motion } from 'framer-motion';
 import SectionHeader from '@/components/SectionHeader';
+import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
 const technologies = [
   { name: 'Next.js', logo: '/images/Tech/nextdotjs.svg', category: 'Frontend' },
@@ -19,35 +20,51 @@ const technologies = [
   { name: 'Shopify', logo: '/images/Tech/shopify.svg', category: 'E-Commerce' }
 ];
 
-const approach = [
-  {
-    step: '01',
-    title: 'Technology Assessment',
-    description: 'We evaluate your current tech stack and recommend the best technologies for your specific needs and goals.'
-  },
-  {
-    step: '02',
-    title: 'Architecture Design',
-    description: 'Our team designs scalable, maintainable architecture that can grow with your business requirements.'
-  },
-  {
-    step: '03',
-    title: 'Agile Development',
-    description: 'We use agile methodologies with regular sprints, ensuring transparency and continuous improvement.'
-  },
-  {
-    step: '04',
-    title: 'Quality Assurance',
-    description: 'Comprehensive testing including unit tests, integration tests, and user acceptance testing.'
-  },
-  {
-    step: '05',
-    title: 'Deployment & Monitoring',
-    description: 'Seamless deployment with continuous monitoring and performance optimization post-launch.'
-  }
-];
-
 export default function TechApproachSection() {
+  const { dir, isLoading } = useTranslations();
+  const t = useSectionTranslations('projects.techApproach');
+  const tStats = useSectionTranslations('stats');
+  const tCommon = useSectionTranslations('common');
+
+  if (isLoading) {
+    return (
+      <section className="section bg-white relative overflow-hidden min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"></div>
+          <p className="mt-4 text-gray-600">{tCommon('loading')}</p>
+        </div>
+      </section>
+    );
+  }
+
+  const approach = [
+    {
+      step: '01',
+      title: t('processSteps.0.title'),
+      description: t('processSteps.0.description')
+    },
+    {
+      step: '02',
+      title: t('processSteps.1.title'),
+      description: t('processSteps.1.description')
+    },
+    {
+      step: '03',
+      title: t('processSteps.2.title'),
+      description: t('processSteps.2.description')
+    },
+    {
+      step: '04',
+      title: t('processSteps.3.title'),
+      description: t('processSteps.3.description')
+    },
+    {
+      step: '05',
+      title: t('processSteps.4.title'),
+      description: t('processSteps.4.description')
+    }
+  ];
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -68,26 +85,26 @@ export default function TechApproachSection() {
   };
 
   return (
-    <section className="section bg-white relative overflow-hidden">
+    <section className="section bg-white relative overflow-hidden" dir={dir}>
       {/* Proper Crescent Elements */}
-      <div className="absolute bottom-20 right-16 w-24 h-24">
-        <div className="crescent crescent-right crescent-subtle text-gray-900" />
+      <div className={`absolute bottom-20 w-24 h-24 ${dir === 'rtl' ? 'left-16' : 'right-16'}`}>
+        <div className={`crescent ${dir === 'rtl' ? 'crescent-left' : 'crescent-right'} crescent-subtle text-gray-900`} />
       </div>
 
       <div className="container mx-auto">
         <SectionHeader
-          eyebrow="Technology & Process"
-          title="Our Technical Approach"
-          subtitle="We leverage cutting-edge technologies and proven methodologies to deliver exceptional digital solutions."
+          eyebrow={t('eyebrow')}
+          title={t('title')}
+          subtitle={t('subtitle')}
           className="mb-16"
         />
 
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Technologies */}
-          <div>
+          <div className={dir === 'rtl' ? 'order-2' : 'order-1'}>
             <div className="flex items-center gap-3 mb-8">
               <div className="w-8 h-0.5 bg-gray-900" />
-              <span className="text-overline">Technologies We Use</span>
+              <span className="text-overline">{t('technologiesWeUse')}</span>
             </div>
 
             <motion.div
@@ -122,17 +139,17 @@ export default function TechApproachSection() {
           </div>
 
           {/* Process */}
-          <div>
+          <div className={dir === 'rtl' ? 'order-1' : 'order-2'}>
             <div className="flex items-center gap-3 mb-8">
               <div className="w-8 h-0.5 bg-gray-900" />
-              <span className="text-overline">Our Process</span>
+              <span className="text-overline">{t('ourProcess')}</span>
             </div>
 
             <div className="space-y-6">
               {approach.map((phase, index) => (
                 <motion.div
                   key={phase.step}
-                  initial={{ opacity: 0, x: 32 }}
+                  initial={{ opacity: 0, x: dir === 'rtl' ? -32 : 32 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
@@ -166,10 +183,10 @@ export default function TechApproachSection() {
           className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-16 border-t border-gray-200"
         >
           {[
-            { value: '20+', label: 'Technologies' },
-            { value: '5+', label: 'Years Experience' },
-            { value: '99%', label: 'Uptime' },
-            { value: '24/7', label: 'Support' }
+            { value: '20+', label: t('techStats.technologies') },
+            { value: tStats('years5'), label: t('techStats.yearsExperience') },
+            { value: tStats('uptime99'), label: t('techStats.uptime') },
+            { value: tStats('support247'), label: t('techStats.support') }
           ].map((stat, index) => (
             <div key={stat.label} className="text-center">
               <div className="text-2xl font-light text-gray-900 mb-2">

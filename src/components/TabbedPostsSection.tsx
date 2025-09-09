@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import SectionHeader from '@/components/SectionHeader';
 import Button from '@/components/Button';
 import { CalendarIcon, EyeIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
+import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
 const posts = [
   {
@@ -90,22 +91,17 @@ const posts = [
   },
 ];
 
-const categories = [
-  { key: 'ecommerce', label: 'E-Commerce', count: 2 },
-  { key: 'automation', label: 'Automation', count: 1 },
-  { key: 'mobile', label: 'Mobile', count: 1 },
-  { key: 'ai', label: 'AI & ML', count: 1 },
-  { key: 'web', label: 'Web Development', count: 1 },
-  { key: 'design', label: 'Design & UX', count: 1 },
-  { key: 'devops', label: 'DevOps', count: 1 },
-];
-
 type TabType = 'latest' | 'popular' | 'categories';
 
 export default function TabbedPostsSection() {
-  const [activeTab, setActiveTab] = useState<TabType>('latest');
-  const [activeCategory, setActiveCategory] = useState<string>(categories[0].key);
+  const { dir, isLoading } = useTranslations();
+  const t = useSectionTranslations('blog.tabbed');
+  const tCommon = useSectionTranslations('common');
 
+  const [activeTab, setActiveTab] = useState<TabType>('latest');
+  const [activeCategory, setActiveCategory] = useState<string>('ecommerce');
+
+  // Move all useMemo hooks BEFORE any conditional returns
   // Memoized lists
   const latestPosts = useMemo(
     () => [...posts].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 6),
@@ -123,9 +119,33 @@ export default function TabbedPostsSection() {
   );
 
   // Choose which list to render
-  let displayPosts = latestPosts;
-  if (activeTab === 'popular') displayPosts = popularPosts;
-  if (activeTab === 'categories') displayPosts = categorizedPosts;
+  const displayPosts = useMemo(() => {
+    if (activeTab === 'popular') return popularPosts;
+    if (activeTab === 'categories') return categorizedPosts;
+    return latestPosts;
+  }, [activeTab, latestPosts, popularPosts, categorizedPosts]);
+
+  const categories = useMemo(() => [
+    { key: 'ecommerce', label: t('categories.ecommerce'), count: 2 },
+    { key: 'automation', label: t('categories.automation'), count: 1 },
+    { key: 'mobile', label: t('categories.mobile'), count: 1 },
+    { key: 'ai', label: t('categories.ai'), count: 1 },
+    { key: 'web', label: t('categories.web'), count: 1 },
+    { key: 'design', label: t('categories.design'), count: 1 },
+    { key: 'devops', label: t('categories.devops'), count: 1 },
+  ], [t]);
+
+  // NOW we can have conditional returns after all hooks are called
+  if (isLoading) {
+    return (
+      <section className="section bg-gray-50 relative overflow-hidden min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"></div>
+          <p className="mt-4 text-gray-600">{tCommon('loading')}</p>
+        </div>
+      </section>
+    );
+  }
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -155,32 +175,31 @@ export default function TabbedPostsSection() {
   };
 
   return (
-    <section className="section bg-gray-50 relative overflow-hidden">
+    <section className="section bg-gray-50 relative overflow-hidden" dir={dir}>
       {/* Swiss Grid Background */}
-<div className="absolute inset-0 opacity-[0.02] pointer-events-none">
-  <div 
-    className="w-full h-full"
-    style={{
-      backgroundImage: `
-        linear-gradient(rgba(0,0,0,0.3) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0,0,0,0.3) 1px, transparent 1px)
-      `,
-      backgroundSize: '64px 64px'
-    }}
-  />
-</div>
+      <div className="absolute inset-0 opacity-[0.02] pointer-events-none">
+        <div 
+          className="w-full h-full"
+          style={{
+            backgroundImage: `
+              linear-gradient(rgba(0,0,0,0.3) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(0,0,0,0.3) 1px, transparent 1px)
+            `,
+            backgroundSize: '64px 64px'
+          }}
+        />
+      </div>
 
-{/* Proper Crescent Elements */}
-<div className="absolute top-16 right-20 w-24 h-24 pointer-events-none">
-  <div className="crescent crescent-right crescent-subtle text-gray-900" />
-</div>
-
+      {/* Proper Crescent Elements */}
+      <div className={`absolute top-16 w-24 h-24 pointer-events-none ${dir === 'rtl' ? 'left-20' : 'right-20'}`}>
+        <div className={`crescent ${dir === 'rtl' ? 'crescent-left' : 'crescent-right'} crescent-subtle text-gray-900`} />
+      </div>
 
       <div className="container mx-auto">
         <SectionHeader
-          eyebrow="Knowledge Hub"
-          title="All Articles"
-          subtitle="Explore our comprehensive collection of insights, tutorials, and industry analysis across different topics and technologies."
+          eyebrow={t('eyebrow')}
+          title={t('title')}
+          subtitle={t('subtitle')}
           className="mb-16"
         />
 
@@ -204,7 +223,7 @@ export default function TabbedPostsSection() {
                 }
               `}
             >
-              Latest Posts
+              {t('latestPosts')}
             </button>
             <button
               type="button"
@@ -217,7 +236,7 @@ export default function TabbedPostsSection() {
                 }
               `}
             >
-              Most Popular
+              {t('mostPopular')}
             </button>
             <button
               type="button"
@@ -230,7 +249,7 @@ export default function TabbedPostsSection() {
                 }
               `}
             >
-              By Category
+              {t('byCategory')}
             </button>
           </div>
         </motion.div>
@@ -257,7 +276,7 @@ export default function TabbedPostsSection() {
                 `}
               >
                 {cat.label}
-                <span className="ml-2 text-xs opacity-75">({cat.count})</span>
+                <span className={`text-xs opacity-75 ${dir === 'rtl' ? 'mr-2' : 'ml-2'}`}>({cat.count})</span>
               </button>
             ))}
           </motion.div>
@@ -293,20 +312,18 @@ export default function TabbedPostsSection() {
                 <div className="flex items-center gap-4 text-caption text-gray-500">
                   <div className="flex items-center gap-2">
                     <CalendarIcon className="h-4 w-4" />
-                      {/* Date (force stable timezone) */}
-                      <span>
-                        {new Date(post.date).toLocaleDateString('en-US', {
-                          month: 'short',
-                          day: 'numeric',
-                          timeZone: 'UTC',   // ✅ prevents SSR/CSR drift
-                        })}
-                      </span>
+                    <span>
+                      {new Date(post.date).toLocaleDateString('en-US', {
+                        month: 'short',
+                        day: 'numeric',
+                        timeZone: 'UTC',
+                      })}
+                    </span>
                   </div>
                   <div className="w-1 h-1 bg-gray-300 rounded-full" />
                   <div className="flex items-center gap-2">
                     <EyeIcon className="h-4 w-4" />
-{/* Views (force stable locale) */}
-<span>{post.views.toLocaleString('en-US')}</span>  {/* ✅ deterministic thousands sep */}
+                    <span>{post.views.toLocaleString('en-US')}</span>
                   </div>
                   <div className="w-1 h-1 bg-gray-300 rounded-full" />
                   <span>{post.readTime}</span>
@@ -330,7 +347,7 @@ export default function TabbedPostsSection() {
                   rightIcon={<ArrowRightIcon className="h-4 w-4" />}
                   className="w-full justify-between"
                 >
-                  Continue Reading
+                  {t('continueReading')}
                 </Button>
               </div>
             </motion.div>
@@ -349,9 +366,9 @@ export default function TabbedPostsSection() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
               </svg>
             </div>
-            <h3 className="text-title text-gray-900 mb-2">No Articles Found</h3>
+            <h3 className="text-title text-gray-900 mb-2">{t('noArticlesFound')}</h3>
             <p className="text-body text-gray-600">
-              No articles found in this category. Try selecting a different category.
+              {t('noArticlesDescription')}
             </p>
           </motion.div>
         )}
@@ -365,11 +382,10 @@ export default function TabbedPostsSection() {
           className="text-center mt-16 pt-16 border-t border-gray-200"
         >
           <h3 className="text-title text-gray-900 mb-4">
-            Stay Updated with Our Latest Insights
+            {t('stayUpdated')}
           </h3>
           <p className="text-body text-gray-600 mb-8 max-w-lg mx-auto">
-            Subscribe to our newsletter and get the latest articles, tutorials, 
-            and industry insights delivered directly to your inbox.
+            {t('stayUpdatedDescription')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -382,14 +398,14 @@ export default function TabbedPostsSection() {
                 </svg>
               }
             >
-              Subscribe to Newsletter
+              {tCommon('subscribe')}
             </Button>
             <Button
               href="/contact"
               variant="secondary"
               size="lg"
             >
-              Get in Touch
+              {tCommon('contactUs')}
             </Button>
           </div>
         </motion.div>

@@ -3,6 +3,8 @@
 
 import { motion } from 'framer-motion';
 import SectionHeader from '@/components/SectionHeader';
+import Button from '@/components/Button';
+import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
 type Member = {
   name: string;
@@ -27,16 +29,24 @@ const members: Member[] = [
     skills: ['MERN Stack', 'Node.js', 'Database Design', 'API Development'],
     initial: 'A',
   },
-  {
-    name: 'Mehmet Ertem',
-    title: 'Technical Advisor',
-    bio: 'University professor and technology strategist with extensive research background.',
-    skills: ['Technology Strategy', 'Research', 'Innovation', 'Mentorship'],
-    initial: 'M',
-  },
 ];
 
 export default function TeamSection() {
+  const { dir, isLoading } = useTranslations();
+  const t = useSectionTranslations('about.team');
+  const tCommon = useSectionTranslations('common');
+
+  if (isLoading) {
+    return (
+      <section className="section bg-white relative overflow-hidden min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"></div>
+          <p className="mt-4 text-gray-600">{tCommon('loading')}</p>
+        </div>
+      </section>
+    );
+  }
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -57,9 +67,9 @@ export default function TeamSection() {
   };
 
   return (
-    <section className="section bg-white relative overflow-hidden">
+    <section className="section bg-white relative overflow-hidden" dir={dir}>
       {/* Subtle geometric background */}
-      <div className="absolute bottom-20 right-20 w-20 h-20 opacity-[0.02]">
+      <div className={`absolute bottom-20 w-20 h-20 opacity-[0.02] ${dir === 'rtl' ? 'left-20' : 'right-20'}`}>
         <div 
           className="w-full h-full border border-gray-900"
           style={{ clipPath: 'circle(45% at 30% 70%)' }}
@@ -68,9 +78,9 @@ export default function TeamSection() {
 
       <div className="container mx-auto">
         <SectionHeader
-          eyebrow="Our Team"
-          title="Meet the Experts"
-          subtitle="A dedicated team of professionals committed to delivering exceptional digital solutions and driving innovation."
+          eyebrow={t('eyebrow')}
+          title={t('title')}
+          subtitle={t('subtitle')}
           className="mb-16"
         />
 
@@ -95,7 +105,7 @@ export default function TeamSection() {
                   </span>
                 </div>
                 {/* Accent dot */}
-                <div className="absolute -top-1 -right-1 w-3 h-3 bg-emerald-500 rounded-full opacity-60" />
+                <div className={`absolute -top-1 w-3 h-3 bg-emerald-500 rounded-full opacity-60 ${dir === 'rtl' ? '-left-1' : '-right-1'}`} />
               </div>
 
               {/* Info */}
@@ -140,18 +150,18 @@ export default function TeamSection() {
           className="text-center mt-16 pt-16 border-t border-gray-200"
         >
           <h3 className="text-title text-gray-900 mb-4">
-            Join Our Team
+            {t('joinTeam')}
           </h3>
           <p className="text-body text-gray-600 mb-8 max-w-lg mx-auto">
-            We're always looking for talented individuals who share our passion 
-            for technology and innovation.
+            {t('joinDescription')}
           </p>
-          <a
+          <Button
             href="/careers"
-            className="btn btn-secondary"
+            variant="secondary"
+            size="lg"
           >
-            View Open Positions
-          </a>
+            {t('viewPositions')}
+          </Button>
         </motion.div>
       </div>
     </section>

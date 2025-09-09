@@ -6,75 +6,91 @@ import { motion } from 'framer-motion';
 import SectionHeader from '@/components/SectionHeader';
 import Button from '@/components/Button';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
-
-const categories = [
-  { key: 'all', label: 'All Projects' },
-  { key: 'web', label: 'Web Development' },
-  { key: 'mobile', label: 'Mobile Apps' },
-  { key: 'ecommerce', label: 'E-Commerce' },
-  { key: 'ai', label: 'AI Solutions' },
-  { key: 'automation', label: 'Automation' },
-];
-
-const projects = [
-  {
-    title: 'E-Commerce Platform',
-    image: '/images/Projects/Ecomerece.png',
-    summary: 'Modern online store with advanced features and seamless user experience.',
-    href: '/projects/ecommerce-platform',
-    category: 'ecommerce',
-    tech: ['Next.js', 'Shopify', 'Stripe'],
-    result: '300% sales increase'
-  },
-  {
-    title: 'Business Automation Suite',
-    image: '/images/Projects/PythonBot.png',
-    summary: 'Comprehensive automation system that streamlined business operations.',
-    href: '/projects/automation-suite',
-    category: 'automation',
-    tech: ['Python', 'APIs', 'Database'],
-    result: '80% time savings'
-  },
-  {
-    title: 'Mobile Finance App',
-    image: '/images/Projects/Mobile.png',
-    summary: 'Cross-platform mobile application for personal finance management.',
-    href: '/projects/finance-app',
-    category: 'mobile',
-    tech: ['React Native', 'Node.js', 'MongoDB'],
-    result: '50K+ downloads'
-  },
-  {
-    title: 'AI Analytics Dashboard',
-    image: '/images/Projects/Data.png',
-    summary: 'Machine learning powered analytics platform with predictive insights.',
-    href: '/projects/ai-dashboard',
-    category: 'ai',
-    tech: ['Python', 'TensorFlow', 'React'],
-    result: '95% accuracy'
-  },
-  {
-    title: 'Corporate Website',
-    image: '/images/Projects/Website.png',
-    summary: 'Professional corporate website with modern design and CMS integration.',
-    href: '/projects/corporate-website',
-    category: 'web',
-    tech: ['Next.js', 'Tailwind', 'Headless CMS'],
-    result: '+150% traffic'
-  },
-  {
-    title: 'UI/UX Design System',
-    image: '/images/Projects/Ui.png',
-    summary: 'Comprehensive design system and style guide for consistent branding.',
-    href: '/projects/design-system',
-    category: 'web',
-    tech: ['Figma', 'React', 'Storybook'],
-    result: '40% faster development'
-  }
-];
+import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function ProjectsGallerySection() {
+  const { dir, isLoading } = useTranslations();
+  const t = useSectionTranslations('projects.gallery');
+  const tCommon = useSectionTranslations('common');
+
   const [activeCategory, setActiveCategory] = useState('all');
+
+  if (isLoading) {
+    return (
+      <section className="section bg-white relative overflow-hidden min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"></div>
+          <p className="mt-4 text-gray-600">{tCommon('loading')}</p>
+        </div>
+      </section>
+    );
+  }
+
+  const categories = [
+    { key: 'all', label: t('categories.all') },
+    { key: 'web', label: t('categories.web') },
+    { key: 'mobile', label: t('categories.mobile') },
+    { key: 'ecommerce', label: t('categories.ecommerce') },
+    { key: 'ai', label: t('categories.ai') },
+    { key: 'automation', label: t('categories.automation') },
+  ];
+
+  const projects = [
+    {
+      title: 'E-Commerce Platform',
+      image: '/images/Projects/Ecomerece.png',
+      summary: 'Modern online store with advanced features and seamless user experience.',
+      href: '/projects/ecommerce-platform',
+      category: 'ecommerce',
+      tech: ['Next.js', 'Shopify', 'Stripe'],
+      result: '300% sales increase'
+    },
+    {
+      title: 'Business Automation Suite',
+      image: '/images/Projects/PythonBot.png',
+      summary: 'Comprehensive automation system that streamlined business operations.',
+      href: '/projects/automation-suite',
+      category: 'automation',
+      tech: ['Python', 'APIs', 'Database'],
+      result: '80% time savings'
+    },
+    {
+      title: 'Mobile Finance App',
+      image: '/images/Projects/Mobile.png',
+      summary: 'Cross-platform mobile application for personal finance management.',
+      href: '/projects/finance-app',
+      category: 'mobile',
+      tech: ['React Native', 'Node.js', 'MongoDB'],
+      result: '50K+ downloads'
+    },
+    {
+      title: 'AI Analytics Dashboard',
+      image: '/images/Projects/Data.png',
+      summary: 'Machine learning powered analytics platform with predictive insights.',
+      href: '/projects/ai-dashboard',
+      category: 'ai',
+      tech: ['Python', 'TensorFlow', 'React'],
+      result: '95% accuracy'
+    },
+    {
+      title: 'Corporate Website',
+      image: '/images/Projects/Website.png',
+      summary: 'Professional corporate website with modern design and CMS integration.',
+      href: '/projects/corporate-website',
+      category: 'web',
+      tech: ['Next.js', 'Tailwind', 'Headless CMS'],
+      result: '+150% traffic'
+    },
+    {
+      title: 'UI/UX Design System',
+      image: '/images/Projects/Ui.png',
+      summary: 'Comprehensive design system and style guide for consistent branding.',
+      href: '/projects/design-system',
+      category: 'web',
+      tech: ['Figma', 'React', 'Storybook'],
+      result: '40% faster development'
+    }
+  ];
   
   const filteredProjects = activeCategory === 'all' 
     ? projects 
@@ -100,17 +116,17 @@ export default function ProjectsGallerySection() {
   };
 
   return (
-    <section className="section bg-white relative overflow-hidden">
+    <section className="section bg-white relative overflow-hidden" dir={dir}>
       {/* Proper Crescent Elements */}
-      <div className="absolute bottom-16 right-20 w-28 h-28">
-        <div className="crescent crescent-right crescent-subtle text-gray-900" />
+      <div className={`absolute bottom-16 w-28 h-28 ${dir === 'rtl' ? 'left-20' : 'right-20'}`}>
+        <div className={`crescent ${dir === 'rtl' ? 'crescent-left' : 'crescent-right'} crescent-subtle text-gray-900`} />
       </div>
 
       <div className="container mx-auto">
         <SectionHeader
-          eyebrow="Portfolio"
-          title="Featured Projects"
-          subtitle="Explore our diverse portfolio of successful digital solutions across various industries and technologies."
+          eyebrow={t('eyebrow')}
+          title={t('title')}
+          subtitle={t('subtitle')}
           className="mb-16"
         />
 
@@ -171,7 +187,7 @@ export default function ProjectsGallerySection() {
                 {/* Technologies */}
                 <div>
                   <div className="text-caption text-gray-500 uppercase tracking-wide mb-2">
-                    Technology
+                    {t('technology')}
                   </div>
                   <div className="flex flex-wrap gap-2">
                     {project.tech.map((tech) => (
@@ -188,7 +204,7 @@ export default function ProjectsGallerySection() {
                 {/* Result */}
                 <div className="p-3 bg-gray-50 border border-gray-200 rounded-sm">
                   <div className="text-caption text-gray-500 uppercase tracking-wide mb-1">
-                    Key Result
+                    {t('keyResult')}
                   </div>
                   <div className="text-sm font-medium text-gray-900">
                     {project.result}
@@ -203,7 +219,7 @@ export default function ProjectsGallerySection() {
                   rightIcon={<ArrowRightIcon className="w-4 h-4" />}
                   className="w-full justify-between"
                 >
-                  View Project
+                  {t('viewProject')}
                 </Button>
               </div>
             </motion.div>
@@ -223,7 +239,7 @@ export default function ProjectsGallerySection() {
             variant="secondary"
             size="lg"
           >
-            View All Projects
+            {t('viewAllProjects')}
           </Button>
         </motion.div>
       </div>

@@ -1672,10 +1672,15 @@ __turbopack_context__.s({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/hooks/useTranslations.tsx [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
 'use client';
 ;
 ;
 const SectionHeader = ({ title, subtitle, eyebrow, className = '', centered = true, animated = true })=>{
+    _s();
+    const { dir } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])();
     const headerVariants = {
         hidden: {
             opacity: 0,
@@ -1721,14 +1726,14 @@ const SectionHeader = ({ title, subtitle, eyebrow, className = '', centered = tr
                 variants: animated ? itemVariants : {},
                 className: `
             flex items-center gap-3 mb-6
-            ${centered ? 'justify-center' : 'justify-start'}
+            ${centered ? 'justify-center' : dir === 'rtl' ? 'justify-end' : 'justify-start'}
           `,
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "w-8 h-0.5 bg-gray-900"
                     }, void 0, false, {
                         fileName: "[project]/src/components/SectionHeader.tsx",
-                        lineNumber: 57,
+                        lineNumber: 60,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1736,20 +1741,20 @@ const SectionHeader = ({ title, subtitle, eyebrow, className = '', centered = tr
                         children: eyebrow
                     }, void 0, false, {
                         fileName: "[project]/src/components/SectionHeader.tsx",
-                        lineNumber: 58,
+                        lineNumber: 61,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "w-8 h-0.5 bg-gray-900"
                     }, void 0, false, {
                         fileName: "[project]/src/components/SectionHeader.tsx",
-                        lineNumber: 61,
+                        lineNumber: 64,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/SectionHeader.tsx",
-                lineNumber: 50,
+                lineNumber: 53,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h2, {
@@ -1758,7 +1763,7 @@ const SectionHeader = ({ title, subtitle, eyebrow, className = '', centered = tr
                 children: title
             }, void 0, false, {
                 fileName: "[project]/src/components/SectionHeader.tsx",
-                lineNumber: 66,
+                lineNumber: 69,
                 columnNumber: 7
             }, this),
             subtitle && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -1770,7 +1775,7 @@ const SectionHeader = ({ title, subtitle, eyebrow, className = '', centered = tr
                 children: subtitle
             }, void 0, false, {
                 fileName: "[project]/src/components/SectionHeader.tsx",
-                lineNumber: 75,
+                lineNumber: 78,
                 columnNumber: 9
             }, this)
         ]
@@ -1785,25 +1790,35 @@ const SectionHeader = ({ title, subtitle, eyebrow, className = '', centered = tr
                 amount: 0.3
             },
             className: `
-          ${centered ? 'text-center' : 'text-left'} 
+          ${centered ? 'text-center' : dir === 'rtl' ? 'text-right' : 'text-left'} 
           ${className}
         `,
+            dir: dir,
             children: content
         }, void 0, false, {
             fileName: "[project]/src/components/SectionHeader.tsx",
-            lineNumber: 90,
+            lineNumber: 93,
             columnNumber: 7
         }, this);
     }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: `${centered ? 'text-center' : 'text-left'} ${className}`,
+        className: `
+        ${centered ? 'text-center' : dir === 'rtl' ? 'text-right' : 'text-left'} 
+        ${className}
+      `,
+        dir: dir,
         children: content
     }, void 0, false, {
         fileName: "[project]/src/components/SectionHeader.tsx",
-        lineNumber: 106,
+        lineNumber: 110,
         columnNumber: 5
     }, this);
 };
+_s(SectionHeader, "l1UEaoznsWUc93SLASJrAoPWY+E=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"]
+    ];
+});
 _c = SectionHeader;
 const __TURBOPACK__default__export__ = SectionHeader;
 var _c;
@@ -2308,12 +2323,53 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$mo
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SectionHeader$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/SectionHeader.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$EyeIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__EyeIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/@heroicons/react/24/outline/esm/EyeIcon.js [app-client] (ecmascript) <export default as EyeIcon>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$FlagIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FlagIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/@heroicons/react/24/outline/esm/FlagIcon.js [app-client] (ecmascript) <export default as FlagIcon>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/hooks/useTranslations.tsx [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
 'use client';
 ;
 ;
 ;
 ;
 function VisionMissionSection() {
+    _s();
+    const { dir, isLoading } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])();
+    const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSectionTranslations"])('about.vision');
+    const tValues = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSectionTranslations"])('about.values');
+    const tCommon = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSectionTranslations"])('common');
+    if (isLoading) {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+            className: "section bg-gray-50 relative overflow-hidden min-h-screen flex items-center justify-center",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "text-center",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/VisionMissionSection.tsx",
+                        lineNumber: 19,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "mt-4 text-gray-600",
+                        children: tCommon('loading')
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/VisionMissionSection.tsx",
+                        lineNumber: 20,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/VisionMissionSection.tsx",
+                lineNumber: 18,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/VisionMissionSection.tsx",
+            lineNumber: 17,
+            columnNumber: 7
+        }, this);
+    }
     const containerVariants = {
         hidden: {
             opacity: 0
@@ -2344,11 +2400,34 @@ function VisionMissionSection() {
             }
         }
     };
+    const values = [
+        {
+            title: tValues('excellence.title'),
+            description: tValues('excellence.description'),
+            initial: 'E'
+        },
+        {
+            title: tValues('innovation.title'),
+            description: tValues('innovation.description'),
+            initial: 'I'
+        },
+        {
+            title: tValues('integrity.title'),
+            description: tValues('integrity.description'),
+            initial: 'I'
+        },
+        {
+            title: tValues('partnership.title'),
+            description: tValues('partnership.description'),
+            initial: 'P'
+        }
+    ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "section bg-gray-50 relative overflow-hidden",
+        dir: dir,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute top-16 left-16 w-24 h-24 opacity-[0.02]",
+                className: `absolute top-16 w-24 h-24 opacity-[0.02] ${dir === 'rtl' ? 'right-16' : 'left-16'}`,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "w-full h-full border border-gray-900",
                     style: {
@@ -2356,25 +2435,25 @@ function VisionMissionSection() {
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/components/VisionMissionSection.tsx",
-                    lineNumber: 32,
+                    lineNumber: 72,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/VisionMissionSection.tsx",
-                lineNumber: 31,
+                lineNumber: 71,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "container mx-auto",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SectionHeader$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        eyebrow: "Our Foundation",
-                        title: "Vision & Mission",
-                        subtitle: "Our core values and principles that guide everything we do and help us deliver exceptional results for our clients.",
+                        eyebrow: t('eyebrow'),
+                        title: t('title'),
+                        subtitle: t('subtitle'),
                         className: "mb-16"
                     }, void 0, false, {
                         fileName: "[project]/src/components/VisionMissionSection.tsx",
-                        lineNumber: 39,
+                        lineNumber: 79,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -2399,54 +2478,54 @@ function VisionMissionSection() {
                                                     className: "h-6 w-6 text-gray-700"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/VisionMissionSection.tsx",
-                                                    lineNumber: 60,
+                                                    lineNumber: 100,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/VisionMissionSection.tsx",
-                                                lineNumber: 59,
+                                                lineNumber: 99,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "w-8 h-0.5 bg-gray-200"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/VisionMissionSection.tsx",
-                                                lineNumber: 62,
+                                                lineNumber: 102,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/VisionMissionSection.tsx",
-                                        lineNumber: 58,
+                                        lineNumber: 98,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                         className: "text-title text-gray-900 mb-4",
-                                        children: "Our Vision"
+                                        children: t('visionTitle')
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/VisionMissionSection.tsx",
-                                        lineNumber: 65,
+                                        lineNumber: 105,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-body text-gray-600 leading-relaxed",
-                                        children: "To be the leading force in digital transformation, empowering businesses worldwide with innovative technology solutions that drive sustainable growth and create lasting value in an increasingly connected world."
+                                        children: t('visionText')
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/VisionMissionSection.tsx",
-                                        lineNumber: 67,
+                                        lineNumber: 107,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "absolute top-6 right-6 w-2 h-2 bg-emerald-500 rounded-full opacity-60"
+                                        className: `absolute top-6 w-2 h-2 bg-emerald-500 rounded-full opacity-60 ${dir === 'rtl' ? 'left-6' : 'right-6'}`
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/VisionMissionSection.tsx",
-                                        lineNumber: 74,
+                                        lineNumber: 112,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/VisionMissionSection.tsx",
-                                lineNumber: 54,
+                                lineNumber: 94,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -2462,60 +2541,60 @@ function VisionMissionSection() {
                                                     className: "h-6 w-6 text-gray-700"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/VisionMissionSection.tsx",
-                                                    lineNumber: 84,
+                                                    lineNumber: 122,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/VisionMissionSection.tsx",
-                                                lineNumber: 83,
+                                                lineNumber: 121,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "w-8 h-0.5 bg-gray-200"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/VisionMissionSection.tsx",
-                                                lineNumber: 86,
+                                                lineNumber: 124,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/VisionMissionSection.tsx",
-                                        lineNumber: 82,
+                                        lineNumber: 120,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                         className: "text-title text-gray-900 mb-4",
-                                        children: "Our Mission"
+                                        children: t('missionTitle')
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/VisionMissionSection.tsx",
-                                        lineNumber: 89,
+                                        lineNumber: 127,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-body text-gray-600 leading-relaxed",
-                                        children: "We deliver cutting-edge digital solutions through expert development, strategic design, and innovative automation. Our commitment is to transform complex challenges into streamlined, scalable systems that exceed expectations."
+                                        children: t('missionText')
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/VisionMissionSection.tsx",
-                                        lineNumber: 91,
+                                        lineNumber: 129,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "absolute top-6 right-6 w-2 h-2 bg-red-500 rounded-full opacity-60"
+                                        className: `absolute top-6 w-2 h-2 bg-red-500 rounded-full opacity-60 ${dir === 'rtl' ? 'left-6' : 'right-6'}`
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/VisionMissionSection.tsx",
-                                        lineNumber: 98,
+                                        lineNumber: 134,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/VisionMissionSection.tsx",
-                                lineNumber: 78,
+                                lineNumber: 116,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/VisionMissionSection.tsx",
-                        lineNumber: 46,
+                        lineNumber: 86,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -2541,46 +2620,29 @@ function VisionMissionSection() {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                         className: "text-headline text-gray-900 mb-4",
-                                        children: "Our Core Values"
+                                        children: tValues('title')
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/VisionMissionSection.tsx",
-                                        lineNumber: 111,
+                                        lineNumber: 147,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-body text-gray-600 max-w-2xl mx-auto",
-                                        children: "These principles guide our work and define our commitment to excellence."
+                                        children: tValues('subtitle')
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/VisionMissionSection.tsx",
-                                        lineNumber: 112,
+                                        lineNumber: 148,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/VisionMissionSection.tsx",
-                                lineNumber: 110,
+                                lineNumber: 146,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "grid sm:grid-cols-2 lg:grid-cols-4 gap-8",
-                                children: [
-                                    {
-                                        title: 'Excellence',
-                                        description: 'We strive for perfection in every project, ensuring the highest quality standards.'
-                                    },
-                                    {
-                                        title: 'Innovation',
-                                        description: 'We embrace new technologies and creative solutions to solve complex problems.'
-                                    },
-                                    {
-                                        title: 'Integrity',
-                                        description: 'We build trust through transparency, honesty, and ethical business practices.'
-                                    },
-                                    {
-                                        title: 'Partnership',
-                                        description: 'We work closely with clients as true partners in their digital transformation journey.'
-                                    }
-                                ].map((value, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                children: values.map((value, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                                         initial: {
                                             opacity: 0,
                                             y: 24
@@ -2602,15 +2664,15 @@ function VisionMissionSection() {
                                                 className: "w-16 h-16 bg-white border border-gray-200 rounded-sm mx-auto mb-4 flex items-center justify-center",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "text-lg font-medium text-gray-700",
-                                                    children: value.title.charAt(0)
+                                                    children: value.initial
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/VisionMissionSection.tsx",
-                                                    lineNumber: 145,
+                                                    lineNumber: 164,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/VisionMissionSection.tsx",
-                                                lineNumber: 144,
+                                                lineNumber: 163,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -2618,7 +2680,7 @@ function VisionMissionSection() {
                                                 children: value.title
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/VisionMissionSection.tsx",
-                                                lineNumber: 149,
+                                                lineNumber: 168,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2626,39 +2688,47 @@ function VisionMissionSection() {
                                                 children: value.description
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/VisionMissionSection.tsx",
-                                                lineNumber: 150,
+                                                lineNumber: 169,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, value.title, true, {
                                         fileName: "[project]/src/components/VisionMissionSection.tsx",
-                                        lineNumber: 136,
+                                        lineNumber: 155,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/VisionMissionSection.tsx",
-                                lineNumber: 117,
+                                lineNumber: 153,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/VisionMissionSection.tsx",
-                        lineNumber: 103,
+                        lineNumber: 139,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/VisionMissionSection.tsx",
-                lineNumber: 38,
+                lineNumber: 78,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/VisionMissionSection.tsx",
-        lineNumber: 29,
+        lineNumber: 69,
         columnNumber: 5
     }, this);
 }
+_s(VisionMissionSection, "RYMcYkz9Yj0zEp/8jDN4UdFlZUw=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSectionTranslations"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSectionTranslations"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSectionTranslations"]
+    ];
+});
 _c = VisionMissionSection;
 var _c;
 __turbopack_context__.k.register(_c, "VisionMissionSection");
@@ -2678,7 +2748,12 @@ __turbopack_context__.s({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SectionHeader$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/SectionHeader.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/Button.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/hooks/useTranslations.tsx [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
 'use client';
+;
 ;
 ;
 ;
@@ -2706,21 +2781,46 @@ const members = [
             'API Development'
         ],
         initial: 'A'
-    },
-    {
-        name: 'Mehmet Ertem',
-        title: 'Technical Advisor',
-        bio: 'University professor and technology strategist with extensive research background.',
-        skills: [
-            'Technology Strategy',
-            'Research',
-            'Innovation',
-            'Mentorship'
-        ],
-        initial: 'M'
     }
 ];
 function TeamSection() {
+    _s();
+    const { dir, isLoading } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])();
+    const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSectionTranslations"])('about.team');
+    const tCommon = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSectionTranslations"])('common');
+    if (isLoading) {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+            className: "section bg-white relative overflow-hidden min-h-screen flex items-center justify-center",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "text-center",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/TeamSection.tsx",
+                        lineNumber: 43,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "mt-4 text-gray-600",
+                        children: tCommon('loading')
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/TeamSection.tsx",
+                        lineNumber: 44,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/TeamSection.tsx",
+                lineNumber: 42,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/TeamSection.tsx",
+            lineNumber: 41,
+            columnNumber: 7
+        }, this);
+    }
     const containerVariants = {
         hidden: {
             opacity: 0
@@ -2753,9 +2853,10 @@ function TeamSection() {
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "section bg-white relative overflow-hidden",
+        dir: dir,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute bottom-20 right-20 w-20 h-20 opacity-[0.02]",
+                className: `absolute bottom-20 w-20 h-20 opacity-[0.02] ${dir === 'rtl' ? 'left-20' : 'right-20'}`,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "w-full h-full border border-gray-900",
                     style: {
@@ -2763,25 +2864,25 @@ function TeamSection() {
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/components/TeamSection.tsx",
-                    lineNumber: 63,
+                    lineNumber: 73,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/TeamSection.tsx",
-                lineNumber: 62,
+                lineNumber: 72,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "container mx-auto",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SectionHeader$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        eyebrow: "Our Team",
-                        title: "Meet the Experts",
-                        subtitle: "A dedicated team of professionals committed to delivering exceptional digital solutions and driving innovation.",
+                        eyebrow: t('eyebrow'),
+                        title: t('title'),
+                        subtitle: t('subtitle'),
                         className: "mb-16"
                     }, void 0, false, {
                         fileName: "[project]/src/components/TeamSection.tsx",
-                        lineNumber: 70,
+                        lineNumber: 80,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -2806,25 +2907,25 @@ function TeamSection() {
                                                     children: member.initial
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/TeamSection.tsx",
-                                                    lineNumber: 93,
+                                                    lineNumber: 103,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/TeamSection.tsx",
-                                                lineNumber: 92,
+                                                lineNumber: 102,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "absolute -top-1 -right-1 w-3 h-3 bg-emerald-500 rounded-full opacity-60"
+                                                className: `absolute -top-1 w-3 h-3 bg-emerald-500 rounded-full opacity-60 ${dir === 'rtl' ? '-left-1' : '-right-1'}`
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/TeamSection.tsx",
-                                                lineNumber: 98,
+                                                lineNumber: 108,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/TeamSection.tsx",
-                                        lineNumber: 91,
+                                        lineNumber: 101,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2832,7 +2933,7 @@ function TeamSection() {
                                         children: member.name
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/TeamSection.tsx",
-                                        lineNumber: 102,
+                                        lineNumber: 112,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2840,7 +2941,7 @@ function TeamSection() {
                                         children: member.title
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/TeamSection.tsx",
-                                        lineNumber: 106,
+                                        lineNumber: 116,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2848,7 +2949,7 @@ function TeamSection() {
                                         children: member.bio
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/TeamSection.tsx",
-                                        lineNumber: 110,
+                                        lineNumber: 120,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2859,7 +2960,7 @@ function TeamSection() {
                                                 children: "Expertise"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/TeamSection.tsx",
-                                                lineNumber: 116,
+                                                lineNumber: 126,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2869,29 +2970,29 @@ function TeamSection() {
                                                         children: skill
                                                     }, skill, false, {
                                                         fileName: "[project]/src/components/TeamSection.tsx",
-                                                        lineNumber: 121,
+                                                        lineNumber: 131,
                                                         columnNumber: 21
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/TeamSection.tsx",
-                                                lineNumber: 119,
+                                                lineNumber: 129,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/TeamSection.tsx",
-                                        lineNumber: 115,
+                                        lineNumber: 125,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, member.name, true, {
                                 fileName: "[project]/src/components/TeamSection.tsx",
-                                lineNumber: 85,
+                                lineNumber: 95,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/TeamSection.tsx",
-                        lineNumber: 77,
+                        lineNumber: 87,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -2914,48 +3015,56 @@ function TeamSection() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                 className: "text-title text-gray-900 mb-4",
-                                children: "Join Our Team"
+                                children: t('joinTeam')
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TeamSection.tsx",
-                                lineNumber: 142,
+                                lineNumber: 152,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-body text-gray-600 mb-8 max-w-lg mx-auto",
-                                children: "We're always looking for talented individuals who share our passion for technology and innovation."
+                                children: t('joinDescription')
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TeamSection.tsx",
-                                lineNumber: 145,
+                                lineNumber: 155,
                                 columnNumber: 11
                             }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: "/careers",
-                                className: "btn btn-secondary",
-                                children: "View Open Positions"
+                                variant: "secondary",
+                                size: "lg",
+                                children: t('viewPositions')
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TeamSection.tsx",
-                                lineNumber: 149,
+                                lineNumber: 158,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/TeamSection.tsx",
-                        lineNumber: 135,
+                        lineNumber: 145,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/TeamSection.tsx",
-                lineNumber: 69,
+                lineNumber: 79,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/TeamSection.tsx",
-        lineNumber: 60,
+        lineNumber: 70,
         columnNumber: 5
     }, this);
 }
+_s(TeamSection, "7lkHTCOaB5MgaxcFFJ4V7+w1TN0=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSectionTranslations"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useTranslations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSectionTranslations"]
+    ];
+});
 _c = TeamSection;
 var _c;
 __turbopack_context__.k.register(_c, "TeamSection");

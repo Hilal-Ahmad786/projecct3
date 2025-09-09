@@ -12,8 +12,6 @@ export default function AboutPage() {
       <AboutHero />
       <VisionMissionSection />
       <TeamSection />
-
-
       <OurStoryTimeline />
       <CtaBanner/>
     </>

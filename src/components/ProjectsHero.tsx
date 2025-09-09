@@ -4,16 +4,31 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Button from '@/components/Button';
+import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function ProjectsHero() {
+  const { dir, isLoading } = useTranslations();
+  const t = useSectionTranslations('projects.hero');
+  const tStats = useSectionTranslations('stats');
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
+  if (isLoading) {
+    return (
+      <section className="hero-section relative bg-white overflow-hidden min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"></div>
+          <p className="mt-4 text-gray-600">Loading...</p>
+        </div>
+      </section>
+    );
+  }
+
   return (
-    <section className="hero-section relative bg-white overflow-hidden">
+    <section className="hero-section relative bg-white overflow-hidden" dir={dir}>
       {/* Swiss Grid Background */}
       <div className="absolute inset-0 opacity-[0.02]">
         <div 
@@ -29,8 +44,8 @@ export default function ProjectsHero() {
       </div>
 
       {/* Proper Crescent Elements */}
-      <div className="absolute top-32 left-20 w-20 h-20">
-        <div className="crescent crescent-left crescent-subtle text-gray-900" />
+      <div className={`absolute top-32 w-20 h-20 ${dir === 'rtl' ? 'right-20' : 'left-20'}`}>
+        <div className={`crescent ${dir === 'rtl' ? 'crescent-right' : 'crescent-left'} crescent-subtle text-gray-900`} />
       </div>
 
       <div className="container mx-auto">
@@ -43,22 +58,20 @@ export default function ProjectsHero() {
           {/* Overline */}
           <div className="flex items-center justify-center gap-3 mb-8">
             <div className="w-8 h-0.5 bg-gray-900"></div>
-            <span className="text-overline">Our Work</span>
+            <span className="text-overline">{t('eyebrow')}</span>
             <div className="w-8 h-0.5 bg-gray-900"></div>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-display font-light text-gray-900 leading-none mb-6">
-            Featured
+            {t('title')}
             <br />
-            <span className="text-gray-600">Projects</span>
+            <span className="text-gray-600">{t('titleAccent')}</span>
           </h1>
 
           {/* Description */}
           <p className="text-body text-gray-600 mb-10 leading-relaxed max-w-2xl mx-auto">
-            Explore our portfolio of successful digital solutions. Each project 
-            represents our commitment to excellence, innovation, and delivering 
-            measurable results for our clients across various industries.
+            {t('description')}
           </p>
 
           {/* CTA Buttons */}
@@ -73,7 +86,7 @@ export default function ProjectsHero() {
                 </svg>
               }
             >
-              View Portfolio
+              {t('viewPortfolio')}
             </Button>
             <Button
               href="/contact"
@@ -85,17 +98,17 @@ export default function ProjectsHero() {
                 </svg>
               }
             >
-              Start Your Project
+              {t('startProject')}
             </Button>
           </div>
 
           {/* Project Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-8 border-t border-gray-200">
             {[
-              { value: "150+", label: "Projects" },
-              { value: "50+", label: "Clients" },
-              { value: "98%", label: "Success Rate" },
-              { value: "24/7", label: "Support" }
+              { value: tStats('projects150'), label: t('stats.projects') },
+              { value: tStats('clients50'), label: t('stats.clients') },
+              { value: tStats('successRate98'), label: t('stats.successRate') },
+              { value: tStats('support247'), label: t('stats.support') }
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}

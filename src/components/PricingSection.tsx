@@ -6,150 +6,101 @@ import { motion } from 'framer-motion';
 import SectionHeader from '@/components/SectionHeader';
 import Button from '@/components/Button';
 import { CheckIcon } from '@heroicons/react/24/outline';
+import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function PricingSection() {
+  const { dir, isLoading } = useTranslations();
+  const t = useSectionTranslations('services.pricing');
+  const tCommon = useSectionTranslations('common');
+
   const [billingCycle, setBillingCycle] = useState<'monthly' | 'annual'>('monthly');
   const [activeCategory, setActiveCategory] = useState<'subscription' | 'project'>('subscription');
 
+  if (isLoading) {
+    return (
+      <section className="section bg-gray-50 relative overflow-hidden min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"></div>
+          <p className="mt-4 text-gray-600">{tCommon('loading')}</p>
+        </div>
+      </section>
+    );
+  }
+
   const subscriptionTiers = [
     {
-      name: 'SEO & Dijital Pazarlama',
+      name: t('subscriptions.seoMarketing.title'),
       priceMonthly: 10000,
-      priceAnnual: 90000, // 10% indirimli
-      features: [
-        'Teknik SEO optimizasyonu (site içi & dışı)',
-        'Google & Meta Ads yönetimi',
-        'Aylık performans raporları',
-        '4 saat/ay reklam bütçe danışmanlığı',
-      ],
+      priceAnnual: 90000,
+      features: t('subscriptions.seoMarketing.features'),
     },
     {
-      name: 'Bakım & Destek',
+      name: t('subscriptions.maintenanceSupport.title'),
       priceMonthly: 5000,
       priceAnnual: 45000,
-      features: [
-        'Güvenlik güncellemeleri & yedekleme',
-        'Sistem izleme & hızlı hata düzeltme',
-        'Haftalık içerik & görsel güncellemeler',
-        '7/24 SLA destek hattı',
-      ],
+      features: t('subscriptions.maintenanceSupport.features'),
     },
     {
-      name: 'Otomasyon Bot Aboneliği',
+      name: t('subscriptions.automationBot.title'),
       priceMonthly: 8000,
       priceAnnual: 72000,
-      features: [
-        '2 özelleştirilmiş Python botu',
-        'Veri çekme, gönderme & raporlama akışları',
-        'Aylık bot bakımı & hata giderme',
-        'API izleme & güncelleme desteği',
-      ],
+      features: t('subscriptions.automationBot.features'),
     },
     {
-      name: 'UI/UX Tasarım Aboneliği',
+      name: t('subscriptions.uiuxDesign.title'),
       priceMonthly: 7000,
       priceAnnual: 63000,
-      features: [
-        'Yeni sayfa & bölüm tasarımları',
-        'Kullanıcı testi & geri bildirim döngüsü',
-        'A/B test destek & analiz raporu',
-        'Figma kaynak dosya teslimi',
-      ],
+      features: t('subscriptions.uiuxDesign.features'),
     },
     {
-      name: 'DevOps & CI/CD Aboneliği',
+      name: t('subscriptions.devopsCicd.title'),
       priceMonthly: 6000,
       priceAnnual: 54000,
-      features: [
-        'Pipeline izleme & hata uyarıları',
-        'Otomatik test & deploy bakımı',
-        'Container / Kubernetes desteği',
-        'Aylık performans optimizasyonu',
-      ],
+      features: t('subscriptions.devopsCicd.features'),
     },
     {
-      name: 'AI Model Hosting & Güncelleme',
+      name: t('subscriptions.aiModelHosting.title'),
       priceMonthly: 12000,
       priceAnnual: 108000,
-      features: [
-        'ML/NLP model hosting',
-        'Aylık yeniden eğitim & versiyonlama',
-        'API endpoint yönetimi',
-        '7/24 uptime SLA',
-      ],
+      features: t('subscriptions.aiModelHosting.features'),
     },
   ];
 
   const projectTiers = [
     {
-      name: 'Kurumsal Web Sitesi',
-      price: '20.000–40.000₺',
-      features: [
-        'Next.js/React tabanlı modern tasarım',
-        'SEO & hız optimizasyonu',
-        '4–6 haftalık Agile sprint',
-        '1 ay ücretsiz bakım & eğitim',
-      ],
+      name: t('projects.corporateWebsite.title'),
+      price: t('projects.corporateWebsite.price'),
+      features: t('projects.corporateWebsite.features'),
     },
     {
-      name: 'E-Ticaret Mağaza Projesi',
-      price: '25.000–50.000₺',
-      features: [
-        'Shopify/WooCommerce entegrasyonu',
-        'Çok dilli & ödeme altyapısı',
-        'Ödeme & kargo entegrasyonları',
-        '2 hafta ücretsiz destek & eğitim',
-      ],
+      name: t('projects.ecommerceStore.title'),
+      price: t('projects.ecommerceStore.price'),
+      features: t('projects.ecommerceStore.features'),
     },
     {
-      name: 'MERN Uygulama Projesi',
-      price: '30.000–60.000₺',
-      features: [
-        'MongoDB, Express, React, Node.js kurulumu',
-        'Kullanıcı yönetimi & yetkilendirme',
-        'RESTful API dokümantasyonu',
-        '1 ay ücretsiz bakım & revizyon',
-      ],
+      name: t('projects.mernApplication.title'),
+      price: t('projects.mernApplication.price'),
+      features: t('projects.mernApplication.features'),
     },
     {
-      name: 'Mobil Uygulama Projesi',
-      price: '40.000–80.000₺',
-      features: [
-        'React Native iOS/Android derlemesi',
-        'UI/UX prototip & kullanıcı testi',
-        'App Store & Play Store yayınlama',
-        '2 hafta ücretsiz hata düzeltme',
-      ],
+      name: t('projects.mobileApplication.title'),
+      price: t('projects.mobileApplication.price'),
+      features: t('projects.mobileApplication.features'),
     },
     {
-      name: 'Veri Analizi & BI Dashboards',
-      price: '18.000–40.000₺',
-      features: [
-        'Power BI / Tableau panelleri',
-        'Özelleştirilmiş KPI takibi',
-        'Excel/CSV entegrasyon akışları',
-        '1 ay ücretsiz veri bakımı',
-      ],
+      name: t('projects.dataAnalyticsBi.title'),
+      price: t('projects.dataAnalyticsBi.price'),
+      features: t('projects.dataAnalyticsBi.features'),
     },
     {
-      name: 'DevOps & CI/CD Kurulum',
-      price: '10.000–25.000₺',
-      features: [
-        'Jenkins / GitHub Actions kurulumu',
-        'Container & Kubernetes konfigürasyonu',
-        'Otomatik test & deploy pipeline',
-        '1 hafta ücretsiz izleme desteği',
-      ],
+      name: t('projects.devopsSetup.title'),
+      price: t('projects.devopsSetup.price'),
+      features: t('projects.devopsSetup.features'),
     },
     {
-      name: 'Özel Kurumsal Çözüm',
-      price: 'Teklif Bazlı',
-      features: [
-        'Tüm modüller & entegrasyonlar',
-        'Özel SLA & premium destek',
-        'Kurulum, eğitim & dokümantasyon',
-        'Uzun dönem strateji danışmanlığı',
-      ],
+      name: t('projects.customEnterprise.title'),
+      price: t('projects.customEnterprise.price'),
+      features: t('projects.customEnterprise.features'),
     },
   ];
 
@@ -173,7 +124,7 @@ export default function PricingSection() {
   };
 
   return (
-    <section className="section bg-gray-50 relative overflow-hidden">
+    <section className="section bg-gray-50 relative overflow-hidden" dir={dir}>
       {/* Swiss Grid Background (behind content) */}
       <div className="absolute inset-0 opacity-[0.02] pointer-events-none -z-10">
         <div
@@ -189,15 +140,15 @@ export default function PricingSection() {
       </div>
 
       {/* Proper Crescent Elements (behind content) */}
-      <div className="absolute top-20 right-16 w-28 h-28 pointer-events-none -z-10">
-        <div className="crescent crescent-right crescent-subtle text-gray-900" />
+      <div className={`absolute top-20 w-28 h-28 pointer-events-none -z-10 ${dir === 'rtl' ? 'left-16' : 'right-16'}`}>
+        <div className={`crescent ${dir === 'rtl' ? 'crescent-left' : 'crescent-right'} crescent-subtle text-gray-900`} />
       </div>
 
       <div className="container mx-auto relative z-10">
         <SectionHeader
-          eyebrow="Fiyatlandırma"
-          title="Aylık & Proje Bazlı Seçeneklerimiz"
-          subtitle="İhtiyaçlarınıza göre esnek fiyatlandırma seçenekleri. Tüm paketlerimiz şeffaf fiyatlandırma ve gizli ücret yoktur."
+          eyebrow={t('eyebrow')}
+          title={t('title')}
+          subtitle={t('subtitle')}
           className="mb-16"
         />
 
@@ -221,7 +172,7 @@ export default function PricingSection() {
                 }
               `}
             >
-              Abonelik Paketleri
+              {t('subscriptionPackages')}
             </button>
             <button
               type="button"
@@ -234,7 +185,7 @@ export default function PricingSection() {
                 }
               `}
             >
-              Proje Bazlı Hizmetler
+              {t('projectServices')}
             </button>
           </div>
         </motion.div>
@@ -261,7 +212,7 @@ export default function PricingSection() {
                     }
                   `}
                 >
-                  Aylık
+                  {t('monthly')}
                 </button>
                 <button
                   type="button"
@@ -274,15 +225,15 @@ export default function PricingSection() {
                     }
                   `}
                 >
-                  Yıllık
+                  {t('annual')}
                   <span className="ml-2 px-2 py-0.5 bg-gray-100 text-gray-700 text-xs rounded-sm">
-                    10% İndirim
+                    {t('annualDiscount')}
                   </span>
                 </button>
               </div>
             </motion.div>
 
-            {/* Subscription Grid (state-driven animation + remount) */}
+            {/* Subscription Grid */}
             <motion.div
               key={`grid-${activeCategory}`}
               variants={containerVariants}
@@ -320,16 +271,27 @@ export default function PricingSection() {
                           Neler Dahil
                         </div>
                         <ul className="space-y-3">
-                          {tier.features.map((feature, featureIndex) => (
-                            <li key={featureIndex} className="flex items-start gap-3">
+                          {Array.isArray(tier.features) ? (
+                            tier.features.map((feature, featureIndex) => (
+                              <li key={featureIndex} className="flex items-start gap-3">
+                                <div className="w-5 h-5 bg-gray-50 border border-gray-200 rounded-sm flex items-center justify-center flex-shrink-0 mt-0.5">
+                                  <CheckIcon className="h-3 w-3 text-gray-600" />
+                                </div>
+                                <span className="text-body text-gray-600 leading-relaxed">
+                                  {feature}
+                                </span>
+                              </li>
+                            ))
+                          ) : (
+                            <li className="flex items-start gap-3">
                               <div className="w-5 h-5 bg-gray-50 border border-gray-200 rounded-sm flex items-center justify-center flex-shrink-0 mt-0.5">
                                 <CheckIcon className="h-3 w-3 text-gray-600" />
                               </div>
                               <span className="text-body text-gray-600 leading-relaxed">
-                                {feature}
+                                {tier.features}
                               </span>
                             </li>
-                          ))}
+                          )}
                         </ul>
                       </div>
 
@@ -341,7 +303,7 @@ export default function PricingSection() {
                           size="lg"
                           className="w-full"
                         >
-                          Teklif Al
+                          {tCommon('getQuote')}
                         </Button>
                       </div>
                     </div>
@@ -357,12 +319,12 @@ export default function PricingSection() {
               viewport={{ once: true }}
               className="mt-8 text-center text-caption text-gray-500"
             >
-              Tüm abonelik paketlerimiz 14 günlük iade garantilidir.
+              {t('guarantee')}
             </motion.p>
           </>
         ) : (
           <>
-            {/* Project Grid (state-driven animation + remount) */}
+            {/* Project Grid */}
             <motion.div
               key={`grid-${activeCategory}`}
               variants={containerVariants}
@@ -395,14 +357,23 @@ export default function PricingSection() {
                         Proje Kapsamı
                       </div>
                       <ul className="space-y-3">
-                        {tier.features.map((feature, featureIndex) => (
-                          <li key={featureIndex} className="flex items-start gap-3">
+                        {Array.isArray(tier.features) ? (
+                          tier.features.map((feature, featureIndex) => (
+                            <li key={featureIndex} className="flex items-start gap-3">
+                              <div className="w-1 h-1 bg-gray-400 rounded-full mt-3 flex-shrink-0" />
+                              <span className="text-body text-gray-600 leading-relaxed">
+                                {feature}
+                              </span>
+                            </li>
+                          ))
+                        ) : (
+                          <li className="flex items-start gap-3">
                             <div className="w-1 h-1 bg-gray-400 rounded-full mt-3 flex-shrink-0" />
                             <span className="text-body text-gray-600 leading-relaxed">
-                              {feature}
+                              {tier.features}
                             </span>
                           </li>
-                        ))}
+                        )}
                       </ul>
                     </div>
 
@@ -429,7 +400,7 @@ export default function PricingSection() {
               viewport={{ once: true }}
               className="mt-8 text-center text-caption text-gray-500"
             >
-              Tüm tek seferlik proje hizmetlerimiz %100 memnuniyet garantilidir.
+              {t('projectGuarantee')}
             </motion.p>
           </>
         )}
@@ -443,18 +414,17 @@ export default function PricingSection() {
           className="text-center mt-16 pt-16 border-t border-gray-200"
         >
           <h3 className="text-title text-gray-900 mb-4">
-            Özel Çözüm mü Gerekiyor?
+            {t('customSolution')}
           </h3>
           <p className="text-body text-gray-600 mb-8 max-w-lg mx-auto">
-            Her işletme kendine özgüdür. Spesifik gereksinimlerinizi tartışalım 
-            ve size mükemmel şekilde uygun özel bir çözüm oluşturalım.
+            {t('customDescription')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/contact" variant="primary" size="lg">
-              Özel Teklif Al
+              {t('getCustomQuote')}
             </Button>
             <Button href="/projects" variant="secondary" size="lg">
-              Projelerimizi İncele
+              {t('viewProjects')}
             </Button>
           </div>
         </motion.div>

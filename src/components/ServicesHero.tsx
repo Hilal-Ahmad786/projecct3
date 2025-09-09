@@ -4,16 +4,30 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Button from '@/components/Button';
+import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function ServicesHero() {
+  const { dir, isLoading } = useTranslations();
+  const t = useSectionTranslations('services.hero');
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
+  if (isLoading) {
+    return (
+      <section className="hero-section relative bg-white overflow-hidden min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"></div>
+          <p className="mt-4 text-gray-600">Loading...</p>
+        </div>
+      </section>
+    );
+  }
+
   return (
-    <section className="hero-section relative bg-white overflow-hidden">
+    <section className="hero-section relative bg-white overflow-hidden" dir={dir}>
       {/* Swiss Grid Background */}
       <div className="absolute inset-0 opacity-[0.02]">
         <div 
@@ -29,8 +43,8 @@ export default function ServicesHero() {
       </div>
 
       {/* Proper Crescent Elements */}
-      <div className="absolute bottom-32 right-20 w-28 h-28">
-        <div className="crescent crescent-right crescent-subtle text-gray-900" />
+      <div className={`absolute bottom-32 w-28 h-28 ${dir === 'rtl' ? 'left-20' : 'right-20'}`}>
+        <div className={`crescent ${dir === 'rtl' ? 'crescent-left' : 'crescent-right'} crescent-subtle text-gray-900`} />
       </div>
 
       <div className="container mx-auto">
@@ -43,22 +57,20 @@ export default function ServicesHero() {
           {/* Overline */}
           <div className="flex items-center justify-center gap-3 mb-8">
             <div className="w-8 h-0.5 bg-gray-900"></div>
-            <span className="text-overline">What We Offer</span>
+            <span className="text-overline">{t('eyebrow')}</span>
             <div className="w-8 h-0.5 bg-gray-900"></div>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-display font-light text-gray-900 leading-none mb-6">
-            Digital
+            {t('title')}
             <br />
-            <span className="text-gray-600">Solutions</span>
+            <span className="text-gray-600">{t('titleAccent')}</span>
           </h1>
 
           {/* Description */}
           <p className="text-body text-gray-600 mb-10 leading-relaxed max-w-2xl mx-auto">
-            From web development to AI integration, we offer comprehensive 
-            digital services designed to accelerate your business growth and 
-            streamline your operations with cutting-edge technology solutions.
+            {t('description')}
           </p>
 
           {/* CTA Buttons */}
@@ -73,7 +85,7 @@ export default function ServicesHero() {
                 </svg>
               }
             >
-              Explore Services
+              {t('exploreServices')}
             </Button>
             <Button
               href="/contact"
@@ -85,30 +97,25 @@ export default function ServicesHero() {
                 </svg>
               }
             >
-              Get Quote
+              {t('getQuote')}
             </Button>
           </div>
 
           {/* Service Categories */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-8 border-t border-gray-200">
-            {[
-              { icon: "💻", label: "Web Development" },
-              { icon: "📱", label: "Mobile Apps" },
-              { icon: "🤖", label: "AI Solutions" },
-              { icon: "⚡", label: "Automation" }
-            ].map((service, index) => (
+            {t('categories').map((service, index) => (
               <motion.div
-                key={service.label}
+                key={service}
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1 + index * 0.1, duration: 0.6 }}
                 className="text-center"
               >
                 <div className="text-2xl mb-2">
-                  {service.icon}
+                  {index === 0 ? "💻" : index === 1 ? "📱" : index === 2 ? "🤖" : "⚡"}
                 </div>
                 <div className="text-caption text-gray-500">
-                  {service.label}
+                  {service}
                 </div>
               </motion.div>
             ))}
