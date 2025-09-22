@@ -7,7 +7,7 @@ import Footer from '@/components/Footer'
 import { Locale, defaultLocale } from '@/lib/i18n'
 
 export const metadata = {
-  title: 'PakTechnology – Modern Digital Solutions',
+  title: 'PakSoft – Modern Digital Solutions',
   description: 'Enterprise web development, e-commerce, automation bots and digital marketing solutions',
 }
 

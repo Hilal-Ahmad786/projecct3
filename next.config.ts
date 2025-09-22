@@ -10,7 +10,7 @@ const nextConfig = {
   },
     // Remove i18n config for App Router - we handle this manually
 
-  output: 'export',
+  //output: 'export',
   // Remove i18n config for App Router - we handle this manually
   // i18n config is not supported in App Router
   

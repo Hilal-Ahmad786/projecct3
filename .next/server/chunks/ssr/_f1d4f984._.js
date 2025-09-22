@@ -270,7 +270,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$i18n$2e$ts__$5
 ;
 ;
 const metadata = {
-    title: 'PakTechnology – Modern Digital Solutions',
+    title: 'PakSoft – Modern Digital Solutions',
     description: 'Enterprise web development, e-commerce, automation bots and digital marketing solutions'
 };
 function RootLayout({ children, params }) {
