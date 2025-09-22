@@ -1,0 +1,19 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- White background circle for profile image -->
+  <circle cx="100" cy="100" r="100" fill="#ffffff"/>
+  
+  <!-- Geometric crescent shape -->
+  <g transform="translate(100, 100)">
+    <!-- Outer circle (invisible, for cutting) -->
+    <defs>
+      <mask id="crescentMask">
+        <rect x="-100" y="-100" width="200" height="200" fill="white"/>
+        <!-- Inner circle to cut out the crescent -->
+        <circle cx="20" cy="0" r="45" fill="black"/>
+      </mask>
+    </defs>
+    
+    <!-- Main crescent shape -->
+    <circle cx="0" cy="0" r="50" fill="#000000" mask="url(#crescentMask)"/>
+  </g>
+</svg>
