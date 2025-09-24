@@ -2790,6 +2790,7 @@ __turbopack_context__.s({
     "default": (()=>ProjectDetailSection)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+// Required imports for the component
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SectionHeader$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/SectionHeader.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/Button.tsx [app-ssr] (ecmascript)");
@@ -2819,7 +2820,7 @@ function ProjectDetailSection() {
                         className: "animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"
                     }, void 0, false, {
                         fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                        lineNumber: 24,
+                        lineNumber: 32,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2827,18 +2828,18 @@ function ProjectDetailSection() {
                         children: tCommon('loading')
                     }, void 0, false, {
                         fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                        lineNumber: 25,
+                        lineNumber: 33,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                lineNumber: 23,
+                lineNumber: 31,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/ProjectDetailSection.tsx",
-            lineNumber: 22,
+            lineNumber: 30,
             columnNumber: 7
         }, this);
     }
@@ -2929,12 +2930,12 @@ function ProjectDetailSection() {
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                    lineNumber: 88,
+                    lineNumber: 96,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                lineNumber: 87,
+                lineNumber: 95,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2947,7 +2948,7 @@ function ProjectDetailSection() {
                         className: "mb-16"
                     }, void 0, false, {
                         fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                        lineNumber: 95,
+                        lineNumber: 103,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -2973,12 +2974,12 @@ function ProjectDetailSection() {
                                                     className: "h-6 w-6 text-gray-700"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                                    lineNumber: 121,
+                                                    lineNumber: 129,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                                lineNumber: 120,
+                                                lineNumber: 128,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2986,13 +2987,13 @@ function ProjectDetailSection() {
                                                 children: feature.title
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                                lineNumber: 123,
+                                                lineNumber: 131,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                        lineNumber: 119,
+                                        lineNumber: 127,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3000,7 +3001,7 @@ function ProjectDetailSection() {
                                         children: feature.description
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                        lineNumber: 129,
+                                        lineNumber: 137,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3012,7 +3013,7 @@ function ProjectDetailSection() {
                                                         className: "w-1 h-1 bg-gray-400 rounded-full"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                                        lineNumber: 138,
+                                                        lineNumber: 146,
                                                         columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3020,13 +3021,13 @@ function ProjectDetailSection() {
                                                         children: detail
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                                        lineNumber: 139,
+                                                        lineNumber: 147,
                                                         columnNumber: 25
                                                     }, this)
                                                 ]
                                             }, detail, true, {
                                                 fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                                lineNumber: 137,
+                                                lineNumber: 145,
                                                 columnNumber: 23
                                             }, this)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "flex items-center gap-2",
@@ -3035,7 +3036,7 @@ function ProjectDetailSection() {
                                                     className: "w-1 h-1 bg-gray-400 rounded-full"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                                    lineNumber: 144,
+                                                    lineNumber: 152,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3043,30 +3044,30 @@ function ProjectDetailSection() {
                                                     children: feature.details
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                                    lineNumber: 145,
+                                                    lineNumber: 153,
                                                     columnNumber: 23
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                            lineNumber: 143,
+                                            lineNumber: 151,
                                             columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                        lineNumber: 134,
+                                        lineNumber: 142,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, feature.title, true, {
                                 fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                lineNumber: 113,
+                                lineNumber: 121,
                                 columnNumber: 15
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                        lineNumber: 103,
+                        lineNumber: 111,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -3094,7 +3095,7 @@ function ProjectDetailSection() {
                                         children: stat.value
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                        lineNumber: 164,
+                                        lineNumber: 172,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3102,18 +3103,18 @@ function ProjectDetailSection() {
                                         children: stat.label
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                        lineNumber: 167,
+                                        lineNumber: 175,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, stat.label, true, {
                                 fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                lineNumber: 163,
+                                lineNumber: 171,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                        lineNumber: 155,
+                        lineNumber: 163,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -3146,7 +3147,7 @@ function ProjectDetailSection() {
                                                     className: "w-8 h-0.5 bg-gray-900"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                                    lineNumber: 186,
+                                                    lineNumber: 194,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3154,13 +3155,13 @@ function ProjectDetailSection() {
                                                     children: t('processOverview.eyebrow')
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                                    lineNumber: 187,
+                                                    lineNumber: 195,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                            lineNumber: 185,
+                                            lineNumber: 193,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -3168,7 +3169,7 @@ function ProjectDetailSection() {
                                             children: t('processOverview.title')
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                            lineNumber: 190,
+                                            lineNumber: 198,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3176,7 +3177,7 @@ function ProjectDetailSection() {
                                             children: t('processOverview.description')
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                            lineNumber: 194,
+                                            lineNumber: 202,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3212,12 +3213,12 @@ function ProjectDetailSection() {
                                                                 children: phase.step
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                                                lineNumber: 207,
+                                                                lineNumber: 215,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                                            lineNumber: 206,
+                                                            lineNumber: 214,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3227,7 +3228,7 @@ function ProjectDetailSection() {
                                                                     children: phase.title
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                                                    lineNumber: 210,
+                                                                    lineNumber: 218,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3235,180 +3236,1008 @@ function ProjectDetailSection() {
                                                                     children: phase.desc
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                                                    lineNumber: 211,
+                                                                    lineNumber: 219,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                                            lineNumber: 209,
+                                                            lineNumber: 217,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, phase.step, true, {
                                                     fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                                    lineNumber: 205,
+                                                    lineNumber: 213,
                                                     columnNumber: 19
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                            lineNumber: 198,
+                                            lineNumber: 206,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                    lineNumber: 184,
+                                    lineNumber: 192,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: `relative ${dir === 'rtl' ? 'order-1' : 'order-2'}`,
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "aspect-square max-w-md mx-auto",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                        initial: {
+                                            opacity: 0,
+                                            x: 24
+                                        },
+                                        animate: {
+                                            opacity: 1,
+                                            x: 0
+                                        },
+                                        transition: {
+                                            duration: 0.7,
+                                            ease: [
+                                                0.4,
+                                                0,
+                                                0.2,
+                                                1
+                                            ]
+                                        },
+                                        className: "relative mx-auto aspect-square max-w-[400px] select-none transform-gpu",
+                                        "aria-hidden": "true",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "absolute inset-0 opacity-5",
+                                                className: "absolute inset-0 pointer-events-none opacity-[0.025]",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "w-full h-full border border-gray-300",
+                                                    className: "w-full h-full",
                                                     style: {
                                                         backgroundImage: `
-                        linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px),
-                        linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px)
-                      `,
+            linear-gradient(rgba(0,0,0,0.08) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(0,0,0,0.08) 1px, transparent 1px)
+          `,
                                                         backgroundSize: '32px 32px'
                                                     }
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                                    lineNumber: 223,
-                                                    columnNumber: 19
+                                                    lineNumber: 238,
+                                                    columnNumber: 7
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                                lineNumber: 222,
-                                                columnNumber: 17
+                                                lineNumber: 237,
+                                                columnNumber: 5
                                             }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "absolute inset-0 flex items-center justify-center",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "w-32 h-32 bg-gray-50 border-2 border-gray-200 rounded-sm flex items-center justify-center",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "w-16 h-16 bg-gray-900 rounded-sm flex items-center justify-center relative overflow-hidden",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                viewBox: "0 0 400 400",
+                                                className: "absolute inset-0 w-full h-full z-5 pointer-events-none",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
                                                         children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "absolute inset-0 bg-white",
-                                                                style: {
-                                                                    clipPath: 'circle(35% at 65% 35%)'
-                                                                }
-                                                            }, void 0, false, {
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
+                                                                id: "crescentGrad",
+                                                                x1: "0",
+                                                                y1: "0",
+                                                                x2: "1",
+                                                                y2: "1",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
+                                                                        offset: "0%",
+                                                                        stopColor: "#e5e7eb",
+                                                                        stopOpacity: "0.8"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                        lineNumber: 254,
+                                                                        columnNumber: 11
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
+                                                                        offset: "100%",
+                                                                        stopColor: "#d1d5db",
+                                                                        stopOpacity: "0.4"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                        lineNumber: 255,
+                                                                        columnNumber: 11
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
                                                                 fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                                                lineNumber: 239,
-                                                                columnNumber: 23
+                                                                lineNumber: 253,
+                                                                columnNumber: 9
                                                             }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "absolute top-2 right-2 w-1.5 h-1.5 bg-emerald-500 rounded-full"
-                                                            }, void 0, false, {
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("mask", {
+                                                                id: "crescentMask",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                                                                        width: "400",
+                                                                        height: "400",
+                                                                        fill: "black"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                        lineNumber: 259,
+                                                                        columnNumber: 11
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                                                                        cx: "280",
+                                                                        cy: "160",
+                                                                        r: "80",
+                                                                        fill: "white"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                        lineNumber: 260,
+                                                                        columnNumber: 11
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                                                                        cx: "250",
+                                                                        cy: "175",
+                                                                        r: "65",
+                                                                        fill: "black"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                        lineNumber: 261,
+                                                                        columnNumber: 11
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
                                                                 fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                                                lineNumber: 243,
-                                                                columnNumber: 23
+                                                                lineNumber: 258,
+                                                                columnNumber: 9
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                                        lineNumber: 238,
-                                                        columnNumber: 21
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                                    lineNumber: 237,
-                                                    columnNumber: 19
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                                lineNumber: 236,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                animate: {
-                                                    y: [
-                                                        -6,
-                                                        6,
-                                                        -6
-                                                    ]
-                                                },
-                                                transition: {
-                                                    duration: 4,
-                                                    repeat: Infinity,
-                                                    ease: "easeInOut"
-                                                },
-                                                className: `absolute top-16 w-16 h-12 bg-white border border-gray-200 rounded-sm shadow-soft p-2 ${dir === 'rtl' ? 'left-16' : 'right-16'}`,
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "w-full h-1 bg-gray-200 rounded mb-1"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                                        lineNumber: 254,
-                                                        columnNumber: 19
+                                                        lineNumber: 252,
+                                                        columnNumber: 7
                                                     }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "w-2/3 h-1 bg-gray-300 rounded"
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
+                                                        mask: "url(#crescentMask)",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                                                            cx: "280",
+                                                            cy: "160",
+                                                            r: "80",
+                                                            fill: "url(#crescentGrad)"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                            lineNumber: 266,
+                                                            columnNumber: 9
+                                                        }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                                        lineNumber: 255,
-                                                        columnNumber: 19
+                                                        lineNumber: 265,
+                                                        columnNumber: 7
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                                lineNumber: 249,
-                                                columnNumber: 17
+                                                lineNumber: 251,
+                                                columnNumber: 5
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "absolute inset-0 flex items-center justify-center z-10",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                    className: "relative w-[140px] h-[140px] rounded-full border border-gray-200/60 bg-white shadow-[0_4px_24px_rgba(0,0,0,0.08)] backdrop-blur-sm",
+                                                    animate: {
+                                                        rotate: 360
+                                                    },
+                                                    transition: {
+                                                        duration: 120,
+                                                        repeat: Infinity,
+                                                        ease: 'linear'
+                                                    },
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "absolute inset-6 rounded-full bg-gray-900 shadow-[inset_0_2px_8px_rgba(0,0,0,0.2)] flex items-center justify-center",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "text-white font-medium text-sm tracking-wide",
+                                                                children: "PAKSOFT"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                lineNumber: 279,
+                                                                columnNumber: 11
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                            lineNumber: 278,
+                                                            columnNumber: 9
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                            className: "absolute w-1.5 h-1.5 bg-gray-600 rounded-full",
+                                                            style: {
+                                                                top: -3,
+                                                                left: '50%',
+                                                                marginLeft: -3
+                                                            },
+                                                            animate: {
+                                                                rotate: -360
+                                                            },
+                                                            transition: {
+                                                                duration: 120,
+                                                                repeat: Infinity,
+                                                                ease: 'linear'
+                                                            }
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                            lineNumber: 283,
+                                                            columnNumber: 9
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                            className: "absolute w-1 h-1 bg-gray-500 rounded-full",
+                                                            style: {
+                                                                right: -2,
+                                                                top: '50%',
+                                                                marginTop: -2
+                                                            },
+                                                            animate: {
+                                                                rotate: -360
+                                                            },
+                                                            transition: {
+                                                                duration: 120,
+                                                                repeat: Infinity,
+                                                                ease: 'linear'
+                                                            }
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                            lineNumber: 289,
+                                                            columnNumber: 9
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                    lineNumber: 272,
+                                                    columnNumber: 7
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                lineNumber: 271,
+                                                columnNumber: 5
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                viewBox: "0 0 400 400",
+                                                className: "absolute inset-0 w-full h-full z-20 pointer-events-none",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
+                                                                id: "webGrad",
+                                                                x1: "0",
+                                                                y1: "0",
+                                                                x2: "1",
+                                                                y2: "1",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
+                                                                        offset: "0%",
+                                                                        stopColor: "#374151",
+                                                                        stopOpacity: "0.08"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                        lineNumber: 302,
+                                                                        columnNumber: 11
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
+                                                                        offset: "100%",
+                                                                        stopColor: "#6b7280",
+                                                                        stopOpacity: "0.04"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                        lineNumber: 303,
+                                                                        columnNumber: 11
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                lineNumber: 301,
+                                                                columnNumber: 9
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
+                                                                id: "mobileGrad",
+                                                                x1: "0",
+                                                                y1: "0",
+                                                                x2: "1",
+                                                                y2: "1",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
+                                                                        offset: "0%",
+                                                                        stopColor: "#374151",
+                                                                        stopOpacity: "0.06"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                        lineNumber: 306,
+                                                                        columnNumber: 11
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
+                                                                        offset: "100%",
+                                                                        stopColor: "#6b7280",
+                                                                        stopOpacity: "0.03"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                        lineNumber: 307,
+                                                                        columnNumber: 11
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                lineNumber: 305,
+                                                                columnNumber: 9
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
+                                                                id: "ecomGrad",
+                                                                x1: "0",
+                                                                y1: "0",
+                                                                x2: "1",
+                                                                y2: "1",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
+                                                                        offset: "0%",
+                                                                        stopColor: "#374151",
+                                                                        stopOpacity: "0.05"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                        lineNumber: 310,
+                                                                        columnNumber: 11
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
+                                                                        offset: "100%",
+                                                                        stopColor: "#6b7280",
+                                                                        stopOpacity: "0.02"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                        lineNumber: 311,
+                                                                        columnNumber: 11
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                lineNumber: 309,
+                                                                columnNumber: 9
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                        lineNumber: 300,
+                                                        columnNumber: 7
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].circle, {
+                                                        cx: "200",
+                                                        cy: "200",
+                                                        r: "100",
+                                                        fill: "none",
+                                                        stroke: "#9ca3af",
+                                                        strokeWidth: "0.5",
+                                                        strokeOpacity: "0.15",
+                                                        strokeDasharray: "6 12",
+                                                        initial: {
+                                                            strokeDashoffset: 0
+                                                        },
+                                                        animate: {
+                                                            strokeDashoffset: -40
+                                                        },
+                                                        transition: {
+                                                            duration: 20,
+                                                            repeat: Infinity,
+                                                            ease: 'linear'
+                                                        }
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                        lineNumber: 316,
+                                                        columnNumber: 7
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].circle, {
+                                                        cx: "200",
+                                                        cy: "200",
+                                                        r: "125",
+                                                        fill: "none",
+                                                        stroke: "#9ca3af",
+                                                        strokeWidth: "0.5",
+                                                        strokeOpacity: "0.12",
+                                                        strokeDasharray: "4 10",
+                                                        initial: {
+                                                            strokeDashoffset: 0
+                                                        },
+                                                        animate: {
+                                                            strokeDashoffset: 35
+                                                        },
+                                                        transition: {
+                                                            duration: 25,
+                                                            repeat: Infinity,
+                                                            ease: 'linear'
+                                                        }
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                        lineNumber: 325,
+                                                        columnNumber: 7
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].circle, {
+                                                        cx: "200",
+                                                        cy: "200",
+                                                        r: "150",
+                                                        fill: "none",
+                                                        stroke: "#9ca3af",
+                                                        strokeWidth: "0.5",
+                                                        strokeOpacity: "0.08",
+                                                        strokeDasharray: "8 16",
+                                                        initial: {
+                                                            strokeDashoffset: 0
+                                                        },
+                                                        animate: {
+                                                            strokeDashoffset: -50
+                                                        },
+                                                        transition: {
+                                                            duration: 30,
+                                                            repeat: Infinity,
+                                                            ease: 'linear'
+                                                        }
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                        lineNumber: 334,
+                                                        columnNumber: 7
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].path, {
+                                                        d: "M200,200 L320,120 M200,200 L300,300 M200,200 L80,140 M200,200 L100,280",
+                                                        stroke: "#d1d5db",
+                                                        strokeWidth: "0.5",
+                                                        strokeOpacity: "0.1",
+                                                        strokeDasharray: "2 8",
+                                                        initial: {
+                                                            pathLength: 0
+                                                        },
+                                                        animate: {
+                                                            pathLength: 1
+                                                        },
+                                                        transition: {
+                                                            duration: 4,
+                                                            ease: 'easeInOut',
+                                                            delay: 0.5
+                                                        }
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                        lineNumber: 344,
+                                                        columnNumber: 7
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                lineNumber: 299,
+                                                columnNumber: 5
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                className: "absolute z-40 w-12 h-12 rounded-full bg-white border border-gray-200/80 shadow-[0_2px_8px_rgba(0,0,0,0.06)] flex items-center justify-center group",
+                                                style: {
+                                                    bottom: 100,
+                                                    right: 40
+                                                },
+                                                whileHover: {
+                                                    scale: 1.05,
+                                                    boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
+                                                },
                                                 animate: {
                                                     y: [
-                                                        6,
-                                                        -6,
-                                                        6
+                                                        -2,
+                                                        2,
+                                                        -2
+                                                    ]
+                                                },
+                                                transition: {
+                                                    y: {
+                                                        duration: 4,
+                                                        repeat: Infinity,
+                                                        ease: 'easeInOut'
+                                                    }
+                                                },
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "w-3 h-3 bg-blue-500 rounded-full"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                    lineNumber: 363,
+                                                    columnNumber: 7
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                lineNumber: 356,
+                                                columnNumber: 5
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                className: "absolute z-40 w-12 h-12 rounded-full bg-white border border-gray-200/80 shadow-[0_2px_8px_rgba(0,0,0,0.06)] flex items-center justify-center group",
+                                                style: {
+                                                    top: 80,
+                                                    right: 60
+                                                },
+                                                whileHover: {
+                                                    scale: 1.05,
+                                                    boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
+                                                },
+                                                animate: {
+                                                    rotate: 360,
+                                                    y: [
+                                                        1.5,
+                                                        -1.5,
+                                                        1.5
+                                                    ]
+                                                },
+                                                transition: {
+                                                    rotate: {
+                                                        duration: 40,
+                                                        repeat: Infinity,
+                                                        ease: 'linear'
+                                                    },
+                                                    y: {
+                                                        duration: 5,
+                                                        repeat: Infinity,
+                                                        ease: 'easeInOut',
+                                                        delay: 1
+                                                    }
+                                                },
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "w-3 h-3 bg-emerald-500 rounded-full"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                    lineNumber: 380,
+                                                    columnNumber: 7
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                lineNumber: 367,
+                                                columnNumber: 5
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                className: "absolute z-40 w-12 h-12 rounded-full bg-white border border-gray-200/80 shadow-[0_2px_8px_rgba(0,0,0,0.06)] flex items-center justify-center group",
+                                                style: {
+                                                    top: 50,
+                                                    left: 100
+                                                },
+                                                whileHover: {
+                                                    scale: 1.05,
+                                                    boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
+                                                },
+                                                animate: {
+                                                    x: [
+                                                        -1.5,
+                                                        1.5,
+                                                        -1.5
+                                                    ]
+                                                },
+                                                transition: {
+                                                    duration: 6,
+                                                    repeat: Infinity,
+                                                    ease: 'easeInOut',
+                                                    delay: 0.5
+                                                },
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "w-3 h-3 bg-purple-500 rounded-full"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                    lineNumber: 391,
+                                                    columnNumber: 7
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                lineNumber: 384,
+                                                columnNumber: 5
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                className: "absolute z-40 w-12 h-12 rounded-full bg-white border border-gray-200/80 shadow-[0_2px_8px_rgba(0,0,0,0.06)] flex items-center justify-center group",
+                                                style: {
+                                                    top: 120,
+                                                    left: 50
+                                                },
+                                                whileHover: {
+                                                    scale: 1.05,
+                                                    boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
+                                                },
+                                                animate: {
+                                                    scale: [
+                                                        0.95,
+                                                        1.05,
+                                                        0.95
                                                     ]
                                                 },
                                                 transition: {
                                                     duration: 4,
                                                     repeat: Infinity,
-                                                    ease: "easeInOut",
+                                                    ease: 'easeInOut',
                                                     delay: 2
                                                 },
-                                                className: `absolute bottom-16 w-12 h-12 bg-gray-50 border border-gray-200 rounded-sm shadow-soft p-2 ${dir === 'rtl' ? 'right-16' : 'left-16'}`,
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "w-6 h-6 bg-gray-300 rounded-full"
+                                                    className: "w-3 h-3 bg-slate-500 rounded-full"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                                    lineNumber: 263,
-                                                    columnNumber: 19
+                                                    lineNumber: 402,
+                                                    columnNumber: 7
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                                lineNumber: 258,
-                                                columnNumber: 17
+                                                lineNumber: 395,
+                                                columnNumber: 5
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                className: "absolute z-40 w-12 h-12 rounded-full bg-white border border-gray-200/80 shadow-[0_2px_8px_rgba(0,0,0,0.06)] flex items-center justify-center group",
+                                                style: {
+                                                    bottom: 80,
+                                                    left: 30
+                                                },
+                                                whileHover: {
+                                                    scale: 1.05,
+                                                    boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
+                                                },
+                                                animate: {
+                                                    rotate: [
+                                                        0,
+                                                        3,
+                                                        -3,
+                                                        0
+                                                    ]
+                                                },
+                                                transition: {
+                                                    duration: 8,
+                                                    repeat: Infinity,
+                                                    ease: 'easeInOut',
+                                                    delay: 1.5
+                                                },
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "w-3 h-3 bg-orange-500 rounded-full"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                    lineNumber: 413,
+                                                    columnNumber: 7
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                lineNumber: 406,
+                                                columnNumber: 5
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                animate: {
+                                                    y: [
+                                                        -4,
+                                                        4,
+                                                        -4
+                                                    ],
+                                                    rotate: [
+                                                        0,
+                                                        0.5,
+                                                        -0.5,
+                                                        0
+                                                    ]
+                                                },
+                                                transition: {
+                                                    duration: 8,
+                                                    repeat: Infinity,
+                                                    ease: 'easeInOut'
+                                                },
+                                                className: `absolute z-50 w-[100px] h-[75px] rounded-lg bg-white border border-gray-200/80 shadow-[0_4px_12px_rgba(0,0,0,0.05)] p-3 will-change-transform ${dir === 'rtl' ? 'left-[58%]' : 'right-[58%]'} top-[65px]`,
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex items-center justify-between mb-3",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "flex gap-1",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "w-1.5 h-1.5 rounded-full bg-gray-400"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                    lineNumber: 427,
+                                                                    columnNumber: 11
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "w-1.5 h-1.5 rounded-full bg-gray-600"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                    lineNumber: 428,
+                                                                    columnNumber: 11
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "w-1.5 h-1.5 rounded-full bg-gray-800"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                    lineNumber: 429,
+                                                                    columnNumber: 11
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                            lineNumber: 426,
+                                                            columnNumber: 9
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                        lineNumber: 425,
+                                                        columnNumber: 7
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "space-y-2 mb-2",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "h-[2px] bg-gray-200 rounded-full overflow-hidden",
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                                    className: "h-full bg-gray-700 rounded-full",
+                                                                    initial: {
+                                                                        width: 0
+                                                                    },
+                                                                    animate: {
+                                                                        width: '68%'
+                                                                    },
+                                                                    transition: {
+                                                                        duration: 2,
+                                                                        ease: 'easeOut',
+                                                                        delay: 1
+                                                                    }
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                    lineNumber: 436,
+                                                                    columnNumber: 11
+                                                                }, this)
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                lineNumber: 435,
+                                                                columnNumber: 9
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "h-[2px] bg-gray-200 rounded-full overflow-hidden",
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                                    className: "h-full bg-gray-500 rounded-full",
+                                                                    initial: {
+                                                                        width: 0
+                                                                    },
+                                                                    animate: {
+                                                                        width: '42%'
+                                                                    },
+                                                                    transition: {
+                                                                        duration: 2,
+                                                                        ease: 'easeOut',
+                                                                        delay: 1.5
+                                                                    }
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                    lineNumber: 444,
+                                                                    columnNumber: 11
+                                                                }, this)
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                lineNumber: 443,
+                                                                columnNumber: 9
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                        lineNumber: 434,
+                                                        columnNumber: 7
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                        viewBox: "0 0 100 16",
+                                                        className: "w-full h-[16px]",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("polyline", {
+                                                            points: "0,12 16,8 32,10 48,5 64,7 80,4 96,6",
+                                                            fill: "none",
+                                                            stroke: "#6b7280",
+                                                            strokeWidth: "1",
+                                                            strokeLinecap: "round"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                            lineNumber: 455,
+                                                            columnNumber: 9
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                        lineNumber: 454,
+                                                        columnNumber: 7
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                lineNumber: 417,
+                                                columnNumber: 5
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                animate: {
+                                                    y: [
+                                                        4,
+                                                        -4,
+                                                        4
+                                                    ],
+                                                    x: [
+                                                        0,
+                                                        1,
+                                                        0
+                                                    ]
+                                                },
+                                                transition: {
+                                                    duration: 10,
+                                                    repeat: Infinity,
+                                                    ease: 'easeInOut',
+                                                    delay: 5
+                                                },
+                                                className: `absolute z-40 w-[85px] h-[85px] rounded-lg border border-gray-200/80 p-3 shadow-[0_3px_10px_rgba(0,0,0,0.04)] will-change-transform ${dir === 'rtl' ? 'right-[62%]' : 'left-[62%]'} bottom-[55px]`,
+                                                style: {
+                                                    background: 'linear-gradient(145deg, #ffffff 0%, #f8fafc 100%)'
+                                                },
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "relative mb-3",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "w-7 h-7 rounded-full bg-gray-200 flex items-center justify-center",
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "text-gray-600 text-xs font-medium",
+                                                                    children: "P"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                    lineNumber: 476,
+                                                                    columnNumber: 11
+                                                                }, this)
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                lineNumber: 475,
+                                                                columnNumber: 9
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "absolute -right-0.5 -bottom-0.5 w-2 h-2 bg-gray-600 rounded-full ring-2 ring-white"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                lineNumber: 478,
+                                                                columnNumber: 9
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                        lineNumber: 474,
+                                                        columnNumber: 7
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "space-y-2 mb-3",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "h-[1px] bg-gray-300 rounded w-4/5"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                lineNumber: 483,
+                                                                columnNumber: 9
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "h-[1px] bg-gray-300 rounded w-3/5"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                lineNumber: 484,
+                                                                columnNumber: 9
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "h-[1px] bg-gray-300 rounded w-2/3"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                lineNumber: 485,
+                                                                columnNumber: 9
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                        lineNumber: 482,
+                                                        columnNumber: 7
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex items-end gap-1",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "w-0.5 h-2 bg-gray-400 rounded-sm"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                lineNumber: 490,
+                                                                columnNumber: 9
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "w-0.5 h-3 bg-gray-500 rounded-sm"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                lineNumber: 491,
+                                                                columnNumber: 9
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "w-0.5 h-4 bg-gray-600 rounded-sm"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                lineNumber: 492,
+                                                                columnNumber: 9
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "w-0.5 h-5 bg-gray-700 rounded-sm"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                                lineNumber: 493,
+                                                                columnNumber: 9
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                        lineNumber: 489,
+                                                        columnNumber: 7
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                lineNumber: 465,
+                                                columnNumber: 5
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "absolute top-16 left-20 w-[2px] h-[2px] bg-gray-400/40 rounded-full z-30"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                lineNumber: 498,
+                                                columnNumber: 5
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "absolute bottom-20 right-20 w-[3px] h-[3px] bg-gray-400/30 rounded-full z-30"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                lineNumber: 499,
+                                                columnNumber: 5
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "absolute top-1/3 right-12 w-[1px] h-[1px] bg-gray-400/50 rounded-full z-30"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                lineNumber: 500,
+                                                columnNumber: 5
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                className: "absolute top-4 right-4 z-50 flex items-center gap-2 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full shadow-[0_2px_8px_rgba(0,0,0,0.04)] border border-gray-200/60",
+                                                animate: {
+                                                    opacity: [
+                                                        0.8,
+                                                        1,
+                                                        0.8
+                                                    ]
+                                                },
+                                                transition: {
+                                                    duration: 4,
+                                                    repeat: Infinity,
+                                                    ease: 'easeInOut'
+                                                },
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "w-1.5 h-1.5 bg-gray-700 rounded-full"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                    lineNumber: 508,
+                                                    columnNumber: 7
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                lineNumber: 503,
+                                                columnNumber: 5
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                className: "absolute inset-0 pointer-events-none rounded-2xl",
+                                                initial: {
+                                                    opacity: 0
+                                                },
+                                                whileHover: {
+                                                    opacity: 0.01
+                                                },
+                                                transition: {
+                                                    duration: 0.3
+                                                },
+                                                style: {
+                                                    background: 'radial-gradient(circle at center, rgba(0,0,0,0.05), transparent 70%)'
+                                                }
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/ProjectDetailSection.tsx",
+                                                lineNumber: 512,
+                                                columnNumber: 5
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                        lineNumber: 220,
-                                        columnNumber: 15
+                                        lineNumber: 229,
+                                        columnNumber: 3
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                    lineNumber: 219,
-                                    columnNumber: 13
+                                    lineNumber: 228,
+                                    columnNumber: 1
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                            lineNumber: 182,
+                            lineNumber: 190,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                        lineNumber: 175,
+                        lineNumber: 183,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -3434,7 +4263,7 @@ function ProjectDetailSection() {
                                 children: t('processOverview.readyToStart')
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                lineNumber: 278,
+                                lineNumber: 537,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3442,7 +4271,7 @@ function ProjectDetailSection() {
                                 children: t('processOverview.readyDescription')
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                lineNumber: 281,
+                                lineNumber: 540,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3464,18 +4293,18 @@ function ProjectDetailSection() {
                                                 d: dir === 'rtl' ? "M11 17l-5-5m0 0l5-5m-5 5h12" : "M13 7l5 5m0 0l-5 5m5-5H6"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                                lineNumber: 291,
+                                                lineNumber: 550,
                                                 columnNumber: 19
                                             }, void 0)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                            lineNumber: 290,
+                                            lineNumber: 549,
                                             columnNumber: 17
                                         }, void 0),
                                         children: t('processOverview.getStarted')
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                        lineNumber: 285,
+                                        lineNumber: 544,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -3494,42 +4323,42 @@ function ProjectDetailSection() {
                                                 d: "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                                lineNumber: 304,
+                                                lineNumber: 563,
                                                 columnNumber: 19
                                             }, void 0)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                            lineNumber: 303,
+                                            lineNumber: 562,
                                             columnNumber: 17
                                         }, void 0),
                                         children: t('processOverview.viewPortfolio')
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                        lineNumber: 298,
+                                        lineNumber: 557,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                                lineNumber: 284,
+                                lineNumber: 543,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                        lineNumber: 271,
+                        lineNumber: 530,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/ProjectDetailSection.tsx",
-                lineNumber: 94,
+                lineNumber: 102,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/ProjectDetailSection.tsx",
-        lineNumber: 85,
+        lineNumber: 93,
         columnNumber: 5
     }, this);
 }
