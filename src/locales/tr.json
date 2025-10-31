@@ -1148,5 +1148,31 @@
       "clearSearch": "Aramayı temizle",
       "searchResults": "Arama sonuçları",
       "showingResults": "{{total}} sonuçtan {{count}} gösteriliyor"
-    }
+    },"floatingButtons": {
+  "call": "Ara",
+  "chat": "Sohbet",
+  "open": "İletişim menüsünü aç",
+  "close": "Menüyü kapat",
+  "dialogTitle": "Nasıl yardımcı olabiliriz?",
+  "dialogSubtitle": "Bir soru seçin veya özel mesaj gönderin",
+  "selectQuestion": "Hızlı Sorular",
+  "customMessage": "Özel Mesaj Gönder",
+  "defaultMessage": "Merhaba! Hizmetleriniz hakkında bilgi almak istiyorum.",
+  "questions": {
+    "webDev": "Web sitesi veya uygulamaya ihtiyacım var",
+    "mobileApp": "Mobil uygulama geliştirmek istiyorum",
+    "aiSolutions": "AI/ML çözümlerine ilgi duyuyorum",
+    "automation": "İş otomasyonuna ihtiyacım var",
+    "pricing": "Fiyatlandırma seçenekleriniz nelerdir?",
+    "support": "Teknik desteğe ihtiyacım var"
+  },
+  "messages": {
+    "webDev": "Merhaba! Web geliştirme hizmetlerinizle ilgileniyorum. İşletmem için bir web sitesi veya web uygulaması geliştirmeyi görüşmek istiyorum.",
+    "mobileApp": "Merhaba! Bir mobil uygulama geliştirmem gerekiyor. Gereksinimleri ve zaman çizelgesini görüşebilir miyiz?",
+    "aiSolutions": "Merhaba! İşletmem için Yapay Zeka ve Makine Öğrenmesi çözümleriyle ilgileniyorum. Daha fazla bilgi verebilir misiniz?",
+    "automation": "Merhaba! Bazı iş süreçlerimi otomatikleştirmek istiyorum. Otomasyon çözümlerini görüşebilir miyiz?",
+    "pricing": "Merhaba! Fiyatlandırma paketleriniz ve hangi hizmetlerin dahil olduğu hakkında daha fazla bilgi almak istiyorum.",
+    "support": "Merhaba! Projem için teknik desteğe ihtiyacım var. Yardımcı olabilir misiniz?"
+  }
+}
   }

@@ -2,6 +2,7 @@
 'use client';
 import Image from "next/image";
 import Link from 'next/link';
+import { trackEmailClick, trackWhatsAppClick, trackPhoneCall } from '@/lib/analytics';
 import { motion } from 'framer-motion';
 import { ChevronUpIcon } from '@heroicons/react/24/solid';
 import { 
@@ -254,6 +255,8 @@ export default function Footer() {
                   key={label}
                   href={href}
                   target={href.startsWith('http') ? '_blank' : undefined}
+                    onClick={() => trackPhoneCall('footer')}
+
                   rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
                   className="flex items-start gap-3 text-body text-gray-400 hover:text-white transition-colors group"
                 >
@@ -287,6 +290,8 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder={t('emailPlaceholder')}
+                onClick={() => trackEmailClick('footer')}
+
                 className="flex-1 px-4 py-3 bg-gray-800 border border-gray-700 rounded-sm text-sm text-white placeholder-gray-500 focus:outline-none focus:border-gray-600 transition-colors"
               />
               <button className="px-6 py-3 bg-white text-gray-900 rounded-sm text-sm font-medium hover:bg-gray-100 transition-colors">

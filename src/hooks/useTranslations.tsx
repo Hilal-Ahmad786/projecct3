@@ -2,11 +2,12 @@
 'use client';
 
 import { useState, useEffect, useContext, createContext, ReactNode } from 'react';
+import { usePathname } from 'next/navigation';
 import { Locale, defaultLocale, loadTranslations, getNestedValue, formatTranslation, isRTL } from '@/lib/i18n';
 
 interface I18nContextType {
   locale: Locale;
-  setLocale: (locale: Locale) => void;
+  setLocale: (locale: Locale) => Promise<void>;
   t: (key: string, variables?: Record<string, string | number>) => string;
   isLoading: boolean;
   dir: 'ltr' | 'rtl';
@@ -20,18 +21,26 @@ interface I18nProviderProps {
 }
 
 export function I18nProvider({ children, initialLocale = defaultLocale }: I18nProviderProps) {
-  const [locale, setCurrentLocale] = useState<Locale>(initialLocale);
+  const pathname = usePathname();
+  
+  const getLocaleFromPath = (): Locale => {
+    const pathLocale = pathname?.split('/')[1] as Locale;
+    return pathLocale && ['en', 'tr', 'de', 'ur', 'ar'].includes(pathLocale) 
+      ? pathLocale 
+      : initialLocale;
+  };
+
+  const [locale, setCurrentLocale] = useState<Locale>(getLocaleFromPath());
   const [translations, setTranslations] = useState<any>({});
   const [isLoading, setIsLoading] = useState(true);
 
-  const setLocale = async (newLocale: Locale) => {
+  const setLocale = async (newLocale: Locale): Promise<void> => {
     setIsLoading(true);
     try {
       const newTranslations = await loadTranslations(newLocale);
       setTranslations(newTranslations);
       setCurrentLocale(newLocale);
       
-      // Store locale preference
       if (typeof window !== 'undefined') {
         localStorage.setItem('preferred-locale', newLocale);
         document.documentElement.lang = newLocale;
@@ -51,10 +60,9 @@ export function I18nProvider({ children, initialLocale = defaultLocale }: I18nPr
 
   useEffect(() => {
     const initializeLocale = async () => {
-      let targetLocale = locale;
+      let targetLocale = getLocaleFromPath();
       
-      // Check for stored preference
-      if (typeof window !== 'undefined') {
+      if (typeof window !== 'undefined' && targetLocale === defaultLocale) {
         const storedLocale = localStorage.getItem('preferred-locale') as Locale;
         if (storedLocale && ['en', 'tr', 'de', 'ur', 'ar'].includes(storedLocale)) {
           targetLocale = storedLocale;
@@ -65,7 +73,7 @@ export function I18nProvider({ children, initialLocale = defaultLocale }: I18nPr
     };
 
     initializeLocale();
-  }, []);
+  }, [pathname]);
 
   const contextValue: I18nContextType = {
     locale,
@@ -90,7 +98,6 @@ export function useTranslations() {
   return context;
 }
 
-// Convenience hook for specific sections
 export function useSectionTranslations(section: string) {
   const { t } = useTranslations();
   
