@@ -89,7 +89,6 @@
     "logging": {},
     "expireTime": 31536000,
     "staticPageGenerationTimeout": 60,
-    "output": "export",
     "modularizeImports": {
       "@mui/icons-material": {
         "transform": "@mui/icons-material/{{member}}"
@@ -98,7 +97,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/Users/hilalahmad/Desktop/MyProjects/MywebCombinations/PakTechnologyCompany",
+    "outputFileTracingRoot": "/Users/hilalahamd/MyRestProjects/Paksoft/projecct3",
     "experimental": {
       "nodeMiddleware": false,
       "cacheLife": {
@@ -197,6 +196,7 @@
       "dynamicIO": false,
       "inlineCss": false,
       "useCache": false,
+      "missingSuspenseWithCSRBailout": false,
       "optimizePackageImports": [
         "lucide-react",
         "date-fns",
@@ -281,10 +281,17 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.ts",
     "turbopack": {
-      "root": "/Users/hilalahmad/Desktop/MyProjects/MywebCombinations/PakTechnologyCompany"
-    }
+      "root": "/Users/hilalahamd/MyRestProjects/Paksoft/projecct3"
+    },
+    "_originalRedirects": [
+      {
+        "source": "/admin/:path*",
+        "destination": "/",
+        "permanent": false
+      }
+    ]
   },
-  "appDir": "/Users/hilalahmad/Desktop/MyProjects/MywebCombinations/PakTechnologyCompany",
+  "appDir": "/Users/hilalahamd/MyRestProjects/Paksoft/projecct3",
   "relativeAppDir": "",
   "files": [
     ".next/routes-manifest.json",

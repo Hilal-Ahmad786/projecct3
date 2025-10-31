@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 // src/app/projects/page.tsx
 import ProjectsHero      from '@/components/ProjectsHero';
 import ProjectsGallerySection   from '@/components/ProjectsGallerySection';
