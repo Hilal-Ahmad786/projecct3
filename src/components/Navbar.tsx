@@ -67,7 +67,7 @@ const handleLanguageChange = async (newLocale: Locale) => {
           <Link href={`/${locale}`} className="flex items-center gap-3 group">
             <div className="relative">
               <Image
-                src="/images/logo/PSlogo1.png"
+                src="/images/logo/logo.png"
                 alt="PakSoft Logo"
                 width={160}
                 height={160}
