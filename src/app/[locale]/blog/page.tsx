@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 // src/app/projects/page.tsx
 import BlogHero      from '@/components/BlogHero';
 import FeaturedPostsSection   from '@/components/FeaturedPostsSection';

@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
@@ -7,11 +8,29 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   
+  // Add this to fix useSearchParams error
+  experimental: {
+    missingSuspenseWithCSRBailout: false,
+  },
+  
   trailingSlash: false,
   
   images: {
     formats: ['image/webp', 'image/avif'],
     minimumCacheTTL: 60,
+  },
+  
+  async redirects() {
+    if (process.env.NODE_ENV === 'production') {
+      return [
+        {
+          source: '/admin/:path*',
+          destination: '/',
+          permanent: false,
+        },
+      ];
+    }
+    return [];
   },
   
   async headers() {

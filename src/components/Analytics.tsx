@@ -3,8 +3,23 @@
 
 import Script from 'next/script';
 import { usePathname, useSearchParams } from 'next/navigation';
-import { useEffect } from 'react';
-import { trackPageView } from '@/lib/analytics';
+import { useEffect, Suspense } from 'react';
+
+// Only import if the file exists
+let trackPageView: any;
+try {
+  const analytics = require('@/lib/analytics');
+  trackPageView = analytics.trackPageView;
+} catch {
+  trackPageView = (url: string, title: string) => {
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'page_view', {
+        page_path: url,
+        page_title: title,
+      });
+    }
+  };
+}
 
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-XXXXXXXXXX';
 const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || 'GTM-XXXXXXX';
@@ -15,7 +30,8 @@ const GOOGLE_OPTIMIZE_ID = process.env.NEXT_PUBLIC_GOOGLE_OPTIMIZE_ID || 'OPT-XX
 const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_ID || 'XXXXXXXXXX';
 const HOTJAR_ID = process.env.NEXT_PUBLIC_HOTJAR_ID || 'XXXXXXX';
 
-export default function Analytics() {
+// Separate component for page tracking
+function AnalyticsTracker() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
@@ -26,6 +42,10 @@ export default function Analytics() {
     }
   }, [pathname, searchParams]);
 
+  return null;
+}
+
+export default function Analytics() {
   return (
     <>
       {/* Google Tag Manager */}
@@ -195,6 +215,11 @@ export default function Analytics() {
           style={{ display: 'none', visibility: 'hidden' }}
         />
       </noscript>
+
+      {/* Page tracking wrapped in Suspense */}
+      <Suspense fallback={null}>
+        <AnalyticsTracker />
+      </Suspense>
     </>
   );
 }

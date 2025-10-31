@@ -1,12 +1,14 @@
-// src/app/contact/page.tsx
+// src/app/[locale]/raabta/page.tsx (Urdu)
 import ContactHero from '@/components/ContactHero'
 import ContactInfoSection from '@/components/ContactInfoSection'
 import ContactForm from '@/components/ContactForm'
 import MapSection from '@/components/MapSection'
 
+export const dynamic = 'force-dynamic';
+
 export const metadata = {
-  title: 'İletişim – PakTechnology',
-  description: 'Projeni başlatmak için hemen yazın, ücretsiz ön görüşme alın.',
+  title: 'رابطہ – PakSoft',
+  description: 'آج ہی اپنا پروجیکٹ شروع کریں، مفت مشاورت حاصل کریں۔',
 }
 
 export default function ContactPage() {

@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/hilalahamd/MyRestProjects/Paksoft/projecct3/src/app/%5Blocale%5D/layout.tsx"],"sourcesContent":["// src/app/[locale]/layout.tsx\nimport { ReactNode } from 'react'\nimport { Locale } from '@/lib/i18n'\n\ninterface LocaleLayoutProps {\n  children: ReactNode\n  params: { locale: Locale }\n}\n\nexport default function LocaleLayout({ children, params }: LocaleLayoutProps) {\n  return children\n}\n\nexport async function generateStaticParams() {\n  return [\n    { locale: 'en' },\n    { locale: 'tr' },\n    { locale: 'de' },\n    { locale: 'ur' },\n    { locale: 'ar' },\n  ]\n}"],"names":[],"mappings":"AAAA,8BAA8B;;;;;AASf,SAAS,aAAa,EAAE,QAAQ,EAAE,MAAM,EAAqB;IAC1E,OAAO;AACT;AAEO,eAAe;IACpB,OAAO;QACL;YAAE,QAAQ;QAAK;QACf;YAAE,QAAQ;QAAK;QACf;YAAE,QAAQ;QAAK;QACf;YAAE,QAAQ;QAAK;QACf;YAAE,QAAQ;QAAK;KAChB;AACH","debugId":null}}]
-}

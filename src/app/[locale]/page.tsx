@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 // src/app/page.tsx
 import Hero from '@/components/Hero'
 import ServicesSection from '@/components/ServicesSection'

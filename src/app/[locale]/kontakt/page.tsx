@@ -1,12 +1,14 @@
-// src/app/contact/page.tsx
+// src/app/[locale]/kontakt/page.tsx (German)
 import ContactHero from '@/components/ContactHero'
 import ContactInfoSection from '@/components/ContactInfoSection'
 import ContactForm from '@/components/ContactForm'
 import MapSection from '@/components/MapSection'
 
+export const dynamic = 'force-dynamic';
+
 export const metadata = {
-  title: 'İletişim – PakTechnology',
-  description: 'Projeni başlatmak için hemen yazın, ücretsiz ön görüşme alın.',
+  title: 'Kontakt – PakSoft',
+  description: 'Starten Sie Ihr Projekt, erhalten Sie eine kostenlose Beratung.',
 }
 
 export default function ContactPage() {

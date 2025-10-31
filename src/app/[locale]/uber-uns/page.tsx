@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 // src/app/about/page.tsx
 import AboutHero from '@/components/AboutHero'
 import OurStoryTimeline from '@/components/OurStoryTimeline'
