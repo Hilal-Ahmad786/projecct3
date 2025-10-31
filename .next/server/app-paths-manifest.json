@@ -1,4 +1,9 @@
 {
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js"
+  "/[locale]/blog/page": "app/[locale]/blog/page.js",
+  "/[locale]/hakkimizda/page": "app/[locale]/hakkimizda/page.js",
+  "/[locale]/hizmetler/page": "app/[locale]/hizmetler/page.js",
+  "/[locale]/iletisim/page": "app/[locale]/iletisim/page.js",
+  "/[locale]/page": "app/[locale]/page.js",
+  "/[locale]/projeler/page": "app/[locale]/projeler/page.js",
+  "/_not-found/page": "app/_not-found/page.js"
 }

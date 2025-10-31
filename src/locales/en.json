@@ -1148,5 +1148,32 @@
       "clearSearch": "Clear search",
       "searchResults": "Search results",
       "showingResults": "Showing {{count}} of {{total}} results"
-    }
+    },
+    "floatingButtons": {
+  "call": "Call",
+  "chat": "Chat",
+  "open": "Open contact menu",
+  "close": "Close menu",
+  "dialogTitle": "How can we help?",
+  "dialogSubtitle": "Choose a question or send custom message",
+  "selectQuestion": "Quick Questions",
+  "customMessage": "Send Custom Message",
+  "defaultMessage": "Hello! I would like to inquire about your services.",
+  "questions": {
+    "webDev": "I need a website or web application",
+    "mobileApp": "I want to build a mobile app",
+    "aiSolutions": "I'm interested in AI/ML solutions",
+    "automation": "I need business automation",
+    "pricing": "What are your pricing options?",
+    "support": "I need technical support"
+  },
+  "messages": {
+    "webDev": "Hello! I'm interested in web development services. I would like to discuss building a website or web application for my business.",
+    "mobileApp": "Hi! I need a mobile application developed. Can we discuss the requirements and timeline?",
+    "aiSolutions": "Hello! I'm interested in AI and Machine Learning solutions for my business. Can you provide more information?",
+    "automation": "Hi! I want to automate some of my business processes. Can we discuss automation solutions?",
+    "pricing": "Hello! I would like to know more about your pricing packages and what services are included.",
+    "support": "Hi! I need technical support for my project. Can you help me?"
+  }
+}
   }

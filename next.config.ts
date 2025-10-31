@@ -1,29 +1,19 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Skip ESLint errors during production builds
   eslint: {
     ignoreDuringBuilds: true,
   },
-  // Skip TypeScript errors during production builds
   typescript: {
     ignoreBuildErrors: true,
   },
-    // Remove i18n config for App Router - we handle this manually
-
-  //output: 'export',
-  // Remove i18n config for App Router - we handle this manually
-  // i18n config is not supported in App Router
   
-  // Optimize for static generation
   trailingSlash: false,
   
-  // Image optimization
   images: {
     formats: ['image/webp', 'image/avif'],
     minimumCacheTTL: 60,
   },
   
-  // Headers for SEO
   async headers() {
     return [
       {

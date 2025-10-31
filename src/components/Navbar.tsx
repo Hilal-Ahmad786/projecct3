@@ -3,11 +3,14 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { XMarkIcon, Bars3Icon, GlobeAltIcon } from '@heroicons/react/24/outline';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 import { locales, localeNames, type Locale } from '@/lib/i18n';
+import { getLocalizedPath } from '@/lib/routes';
 import Image from "next/image";
+import { trackQuoteRequest, trackLanguageChange } from '@/lib/analytics';
+
 
 
 export default function Navbar() {
@@ -15,6 +18,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [languageOpen, setLanguageOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
   
   const { locale, setLocale, isLoading, dir } = useTranslations();
   const t = useSectionTranslations('navbar');
@@ -27,22 +31,25 @@ export default function Navbar() {
   }, []);
 
   const links = [
-    { label: t('home'), href: '/' },
-    { label: t('services'), href: '/services' },
-    { label: t('projects'), href: '/projects' },
-    { label: t('blog'), href: '/blog' },
-    { label: t('about'), href: '/about' },
-    { label: t('contact'), href: '/contact' },
+    { label: t('home'), href: '/', localizedHref: getLocalizedPath('/', locale) },
+    { label: t('services'), href: '/services', localizedHref: getLocalizedPath('/services', locale) },
+    { label: t('projects'), href: '/projects', localizedHref: getLocalizedPath('/projects', locale) },
+    { label: t('blog'), href: '/blog', localizedHref: getLocalizedPath('/blog', locale) },
+    { label: t('about'), href: '/about', localizedHref: getLocalizedPath('/about', locale) },
+    { label: t('contact'), href: '/contact', localizedHref: getLocalizedPath('/contact', locale) },
   ];
 
-  const handleLanguageChange = async (newLocale: Locale) => {
-    setLanguageOpen(false);
-    if (newLocale !== locale) {
-      await setLocale(newLocale);
-      // Optionally redirect to the same page with new locale
-      // window.location.reload();
-    }
-  };
+const handleLanguageChange = async (newLocale: Locale) => {
+  setLanguageOpen(false);
+  if (newLocale !== locale) {
+    trackLanguageChange(locale, newLocale);
+    await setLocale(newLocale);
+    
+    const pathWithoutLocale = pathname.replace(/^\/(en|tr|de|ur|ar)/, '') || '/';
+    const newPath = `/${newLocale}${pathWithoutLocale}`;
+    router.push(newPath);
+  }
+};
 
   return (
     <>
@@ -57,29 +64,27 @@ export default function Navbar() {
         dir={dir}
       >
         <div className="container mx-auto flex items-center justify-between">
-          {/* Logo - Clean and Minimal */}
-<Link href="/" className="flex items-center gap-3 group">
-  <div className="relative">
-    <Image
-      src="/images/logo/PSlogo1.png"
-      alt="PakSoft Logo"
-      width={160}
-      height={160}
-      className="rounded-sm"
-      priority
-    />
-  </div>
+          <Link href={`/${locale}`} className="flex items-center gap-3 group">
+            <div className="relative">
+              <Image
+                src="/images/logo/PSlogo1.png"
+                alt="PakSoft Logo"
+                width={160}
+                height={160}
+                className="rounded-sm"
+                priority
+              />
+            </div>
+          </Link>
 
-</Link>
-          {/* Navigation - Swiss Typography */}
           <nav className="hidden lg:flex items-center">
             <ul className="flex items-center gap-8">
-              {links.map(({ label, href }) => {
-                const isActive = pathname === href;
+              {links.map(({ label, href, localizedHref }) => {
+                const isActive = pathname.endsWith(localizedHref);
                 return (
                   <li key={href} className="relative">
                     <Link
-                      href={href}
+                      href={`/${locale}${localizedHref}`}
                       className={`
                         text-sm font-medium tracking-wide transition-colors duration-250
                         ${isActive 
@@ -91,7 +96,6 @@ export default function Navbar() {
                       {label}
                     </Link>
                     
-                    {/* Minimal active indicator */}
                     {isActive && (
                       <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gray-900" />
                     )}
@@ -101,9 +105,7 @@ export default function Navbar() {
             </ul>
           </nav>
 
-          {/* Right Section */}
           <div className="flex items-center gap-4">
-            {/* Language Selector */}
             <div className="relative">
               <button
                 onClick={() => setLanguageOpen(!languageOpen)}
@@ -128,7 +130,6 @@ export default function Navbar() {
                 </svg>
               </button>
 
-              {/* Language Dropdown */}
               {languageOpen && (
                 <div className="absolute right-0 top-full mt-2 w-48 bg-white border border-gray-200 rounded-sm shadow-soft py-1 z-50">
                   {locales.map((lang) => (
@@ -157,21 +158,21 @@ export default function Navbar() {
               )}
             </div>
 
-            {/* CTA Button */}
             <Link
-              href="/contact"
+                href={`/${locale}${getLocalizedPath('/contact', locale)}`}
+                onClick={() => trackQuoteRequest('navbar')}
               className="hidden md:inline-flex items-center gap-2 px-6 py-2.5 text-sm font-medium
                          bg-gray-900 text-white border border-gray-900 rounded-sm
                          hover:bg-gray-700 hover:border-gray-700 transition-all duration-250
                          hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"
             >
+
               <span>{t('getQuote')}</span>
               <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
             </Link>
 
-            {/* Mobile Menu Toggle */}
             <button
               onClick={() => setOpen(!open)}
               className="lg:hidden p-2 text-gray-600 hover:text-gray-900 border border-gray-200 rounded-sm hover:border-gray-300 transition-colors"
@@ -187,19 +188,15 @@ export default function Navbar() {
         </div>
       </header>
 
-      {/* Mobile Menu */}
       {open && (
         <div className="fixed inset-0 z-50 lg:hidden" dir={dir}>
-          {/* Backdrop */}
           <div 
             className="absolute inset-0 bg-gray-900/20"
             onClick={() => setOpen(false)}
           />
           
-          {/* Menu Panel */}
           <div className={`absolute ${dir === 'rtl' ? 'left-0' : 'right-0'} top-0 h-full w-80 bg-white border-l border-gray-200 shadow-medium`}>
             <div className="flex flex-col h-full">
-              {/* Header */}
               <div className="flex items-center justify-between p-6 border-b border-gray-200">
                 <h2 className="text-lg font-medium text-gray-900">{tCommon('menu')}</h2>
                 <button
@@ -210,15 +207,14 @@ export default function Navbar() {
                 </button>
               </div>
 
-              {/* Navigation */}
               <div className="flex-1 px-6 py-6">
                 <ul className="space-y-4">
-                  {links.map(({ label, href }) => {
-                    const isActive = pathname === href;
+                  {links.map(({ label, href, localizedHref }) => {
+                    const isActive = pathname.endsWith(localizedHref);
                     return (
                       <li key={href}>
                         <Link
-                          href={href}
+                          href={`/${locale}${localizedHref}`}
                           className={`
                             block px-4 py-3 text-sm font-medium transition-colors border-l-2
                             ${isActive 
@@ -235,7 +231,6 @@ export default function Navbar() {
                   })}
                 </ul>
 
-                {/* Mobile Language Section */}
                 <div className="mt-8 pt-6 border-t border-gray-200">
                   <h3 className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-4">
                     {t('language')}
@@ -270,10 +265,9 @@ export default function Navbar() {
                 </div>
               </div>
 
-              {/* Mobile CTA */}
               <div className="p-6 border-t border-gray-200">
                 <Link
-                  href="/contact"
+                  href={`/${locale}${getLocalizedPath('/contact', locale)}`}
                   className="flex items-center justify-center gap-2 w-full px-6 py-3 text-sm font-medium
                              bg-gray-900 text-white border border-gray-900 rounded-sm
                              hover:bg-gray-700 hover:border-gray-700 transition-colors"
@@ -290,7 +284,6 @@ export default function Navbar() {
         </div>
       )}
 
-      {/* Close language dropdown on outside click */}
       {languageOpen && (
         <div 
           className="fixed inset-0 z-40" 

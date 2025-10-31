@@ -1148,6 +1148,33 @@
       "clearSearch": "Suche löschen",
       "searchResults": "Suchergebnisse",
       "showingResults": "Zeige {{count}} von {{total}} Ergebnissen"
-    }
+    },
+    "floatingButtons": {
+  "call": "Anrufen",
+  "chat": "Chat",
+  "open": "Kontaktmenü öffnen",
+  "close": "Menü schließen",
+  "dialogTitle": "Wie können wir helfen?",
+  "dialogSubtitle": "Wählen Sie eine Frage oder senden Sie eine individuelle Nachricht",
+  "selectQuestion": "Schnellfragen",
+  "customMessage": "Individuelle Nachricht senden",
+  "defaultMessage": "Hallo! Ich möchte mich über Ihre Dienstleistungen informieren.",
+  "questions": {
+    "webDev": "Ich brauche eine Website oder Webanwendung",
+    "mobileApp": "Ich möchte eine mobile App entwickeln",
+    "aiSolutions": "Ich interessiere mich für KI/ML-Lösungen",
+    "automation": "Ich brauche Geschäftsautomatisierung",
+    "pricing": "Was sind Ihre Preisoptionen?",
+    "support": "Ich brauche technischen Support"
+  },
+  "messages": {
+    "webDev": "Hallo! Ich interessiere mich für Webentwicklungsdienste. Ich möchte über die Erstellung einer Website oder Webanwendung für mein Unternehmen sprechen.",
+    "mobileApp": "Hallo! Ich benötige die Entwicklung einer mobilen Anwendung. Können wir die Anforderungen und den Zeitplan besprechen?",
+    "aiSolutions": "Hallo! Ich interessiere mich für KI- und Machine-Learning-Lösungen für mein Unternehmen. Können Sie mir weitere Informationen geben?",
+    "automation": "Hallo! Ich möchte einige meiner Geschäftsprozesse automatisieren. Können wir Automatisierungslösungen besprechen?",
+    "pricing": "Hallo! Ich möchte mehr über Ihre Preispakete erfahren und welche Dienstleistungen enthalten sind.",
+    "support": "Hallo! Ich benötige technischen Support für mein Projekt. Können Sie mir helfen?"
+  }
+}
   }
   
