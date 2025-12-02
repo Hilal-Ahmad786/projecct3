@@ -1,5 +1,7 @@
 // src/components/Hero.tsx
 'use client'
+import { ArrowRightIcon } from '@heroicons/react/24/outline'
+import ParticleNetwork from '@/components/ParticleNetwork'
 import HeroRightEnhanced from '@/components/HeroRightEnhanced'
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
@@ -9,7 +11,7 @@ import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations
 export default function Hero() {
   const [mounted, setMounted] = useState(false)
   const [currentIndex, setCurrentIndex] = useState(0)
-  
+
   const { dir } = useTranslations()
   const t = useSectionTranslations('hero')
   const tStats = useSectionTranslations('stats')
@@ -33,11 +35,17 @@ export default function Hero() {
     return () => clearInterval(interval)
   }, [services.length])
 
+  // Import BackgroundBlobs dynamically to avoid SSR issues if needed, or just standard import
+  // Assuming standard import for now, need to add import at top
+
   return (
-    <section className="hero-section relative bg-white overflow-hidden" dir={dir}>
+    <section className="hero-section relative gradient-bg-vibrant overflow-hidden" dir={dir}>
+      {/* Particle Network Background */}
+      <ParticleNetwork className="opacity-60" />
+
       {/* Swiss Grid Background */}
       <div className="absolute inset-0 opacity-[0.02]">
-        <div 
+        <div
           className="w-full h-full"
           style={{
             backgroundImage: `
@@ -53,7 +61,7 @@ export default function Hero() {
       <div className={`absolute top-32 w-32 h-32 ${dir === 'rtl' ? 'left-20' : 'right-20'}`}>
         <div className={`crescent ${dir === 'rtl' ? 'crescent-left' : 'crescent-right'} crescent-subtle text-gray-900`} />
       </div>
-      
+
       <div className={`absolute bottom-32 w-24 h-24 ${dir === 'rtl' ? 'right-16' : 'left-16'}`}>
         <div className={`crescent ${dir === 'rtl' ? 'crescent-right' : 'crescent-left'} crescent-subtle text-gray-600`} />
       </div>
@@ -109,8 +117,8 @@ export default function Hero() {
                 size="lg"
                 rightIcon={
                   <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} 
-                          d={dir === 'rtl' ? "M11 17l-5-5m0 0l5-5m-5 5h12" : "M13 7l5 5m0 0l-5 5m5-5H6"} />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                      d={dir === 'rtl' ? "M11 17l-5-5m0 0l5-5m-5 5h12" : "M13 7l5 5m0 0l-5 5m5-5H6"} />
                   </svg>
                 }
               >

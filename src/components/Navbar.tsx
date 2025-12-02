@@ -1,4 +1,3 @@
-// src/components/Navbar.tsx
 'use client';
 
 import Link from 'next/link';
@@ -11,18 +10,21 @@ import { getLocalizedPath } from '@/lib/routes';
 import Image from "next/image";
 import { trackQuoteRequest, trackLanguageChange } from '@/lib/analytics';
 
-
-
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [languageOpen, setLanguageOpen] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
-  
+
   const { locale, setLocale, isLoading, dir } = useTranslations();
   const t = useSectionTranslations('navbar');
   const tCommon = useSectionTranslations('common');
+
+  // Detect if we are on a service detail page (microsite)
+  // Pattern: /[locale]/services/[slug]
+  // We check if path contains '/services/' and has a segment after it
+  const isServicePage = pathname.includes('/services/') && pathname.split('/').length > 3;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -30,7 +32,8 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  const links = [
+  // Standard Links
+  const mainLinks = [
     { label: t('home'), href: '/', localizedHref: getLocalizedPath('/', locale) },
     { label: t('services'), href: '/services', localizedHref: getLocalizedPath('/services', locale) },
     { label: t('projects'), href: '/projects', localizedHref: getLocalizedPath('/projects', locale) },
@@ -39,17 +42,35 @@ export default function Navbar() {
     { label: t('contact'), href: '/contact', localizedHref: getLocalizedPath('/contact', locale) },
   ];
 
-const handleLanguageChange = async (newLocale: Locale) => {
-  setLanguageOpen(false);
-  if (newLocale !== locale) {
-    trackLanguageChange(locale, newLocale);
-    await setLocale(newLocale);
-    
-    const pathWithoutLocale = pathname.replace(/^\/(en|tr|de|ur|ar)/, '') || '/';
-    const newPath = `/${newLocale}${pathWithoutLocale}`;
-    router.push(newPath);
-  }
-};
+  // Service Microsite Links
+  // TODO: In the future, we can dynamically generate this based on the current service slug
+  const serviceLinks = [
+    { label: 'Overview', href: '/services/web-development', localizedHref: '/services/web-development' },
+    { label: 'Features', href: '/services/web-development/features', localizedHref: '/services/web-development/features' },
+    { label: 'Process', href: '/services/web-development/process', localizedHref: '/services/web-development/process' },
+    { label: 'Tech Stack', href: '/services/web-development/tech-stack', localizedHref: '/services/web-development/tech-stack' },
+    { label: 'Portfolio', href: '/services/web-development/portfolio', localizedHref: '/services/web-development/portfolio' },
+    { label: 'FAQ', href: '/services/web-development/faq', localizedHref: '/services/web-development/faq' },
+  ];
+
+  const currentLinks = isServicePage ? serviceLinks : mainLinks;
+
+  const handleLanguageChange = async (newLocale: Locale) => {
+    setLanguageOpen(false);
+    if (newLocale !== locale) {
+      trackLanguageChange(locale, newLocale);
+      await setLocale(newLocale);
+
+      const pathWithoutLocale = pathname.replace(/^\/(en|tr|de|ur|ar)/, '') || '/';
+      const newPath = `/${newLocale}${pathWithoutLocale}`;
+      router.push(newPath);
+    }
+  };
+
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    // We no longer need special scroll handling for these new pages as they are real routes
+    setOpen(false);
+  };
 
   return (
     <>
@@ -57,8 +78,8 @@ const handleLanguageChange = async (newLocale: Locale) => {
         className={`
           fixed inset-x-0 top-0 z-50 transition-all duration-300
           ${scrolled
-            ? 'bg-white border-b border-gray-200 shadow-sm py-3'
-            : 'bg-white/95 backdrop-blur-sm py-4'
+            ? 'glass-strong border-b border-glass shadow-lg py-3'
+            : 'glass-subtle border-b border-glass/50 py-4'
           }
         `}
         dir={dir}
@@ -79,23 +100,27 @@ const handleLanguageChange = async (newLocale: Locale) => {
 
           <nav className="hidden lg:flex items-center">
             <ul className="flex items-center gap-8">
-              {links.map(({ label, href, localizedHref }) => {
-                const isActive = pathname.endsWith(localizedHref);
+              {currentLinks.map(({ label, href, localizedHref }) => {
+                // For anchor links, we just check if the hash matches (simplified) or always show as inactive unless we add scroll spy
+                // For standard links, we check pathname
+                const isActive = !href.startsWith('#') && pathname.endsWith(localizedHref);
+
                 return (
                   <li key={href} className="relative">
                     <Link
-                      href={`/${locale}${localizedHref}`}
+                      href={href.startsWith('#') ? href : `/${locale}${localizedHref}`}
+                      onClick={(e) => handleLinkClick(e, href)}
                       className={`
                         text-sm font-medium tracking-wide transition-colors duration-250
-                        ${isActive 
-                          ? 'text-gray-900' 
+                        ${isActive
+                          ? 'text-gray-900'
                           : 'text-gray-600 hover:text-gray-900'
                         }
                       `}
                     >
                       {label}
                     </Link>
-                    
+
                     {isActive && (
                       <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gray-900" />
                     )}
@@ -120,10 +145,10 @@ const handleLanguageChange = async (newLocale: Locale) => {
                 <span className="font-medium">
                   {localeNames[locale].flag} {locale.toUpperCase()}
                 </span>
-                <svg 
+                <svg
                   className={`h-3 w-3 transition-transform duration-250 ${languageOpen ? 'rotate-180' : ''}`}
-                  fill="none" 
-                  stroke="currentColor" 
+                  fill="none"
+                  stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -131,14 +156,14 @@ const handleLanguageChange = async (newLocale: Locale) => {
               </button>
 
               {languageOpen && (
-                <div className="absolute right-0 top-full mt-2 w-48 bg-white border border-gray-200 rounded-sm shadow-soft py-1 z-50">
+                <div className="absolute right-0 top-full mt-2 w-48 glass border-glass rounded-sm shadow-lg py-1 z-50">
                   {locales.map((lang) => (
                     <button
                       key={lang}
                       className={`
                         w-full flex items-center gap-3 px-4 py-2 text-sm transition-colors
-                        ${lang === locale 
-                          ? 'text-gray-900 bg-gray-50' 
+                        ${lang === locale
+                          ? 'text-gray-900 bg-gray-50'
                           : 'text-gray-700 hover:bg-gray-50'
                         }
                       `}
@@ -149,7 +174,7 @@ const handleLanguageChange = async (newLocale: Locale) => {
                       <span className="font-medium">{localeNames[lang].nativeName}</span>
                       {lang === locale && (
                         <svg className="h-4 w-4 ml-auto text-green-500" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                          <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
                         </svg>
                       )}
                     </button>
@@ -159,8 +184,8 @@ const handleLanguageChange = async (newLocale: Locale) => {
             </div>
 
             <Link
-                href={`/${locale}${getLocalizedPath('/contact', locale)}`}
-                onClick={() => trackQuoteRequest('navbar')}
+              href={`/${locale}${getLocalizedPath('/contact', locale)}`}
+              onClick={() => trackQuoteRequest('navbar')}
               className="hidden md:inline-flex items-center gap-2 px-6 py-2.5 text-sm font-medium
                          bg-gray-900 text-white border border-gray-900 rounded-sm
                          hover:bg-gray-700 hover:border-gray-700 transition-all duration-250
@@ -190,12 +215,12 @@ const handleLanguageChange = async (newLocale: Locale) => {
 
       {open && (
         <div className="fixed inset-0 z-50 lg:hidden" dir={dir}>
-          <div 
+          <div
             className="absolute inset-0 bg-gray-900/20"
             onClick={() => setOpen(false)}
           />
-          
-          <div className={`absolute ${dir === 'rtl' ? 'left-0' : 'right-0'} top-0 h-full w-80 bg-white border-l border-gray-200 shadow-medium`}>
+
+          <div className={`absolute ${dir === 'rtl' ? 'left-0' : 'right-0'} top-0 h-full w-80 glass-strong border-l border-glass shadow-2xl`}>
             <div className="flex flex-col h-full">
               <div className="flex items-center justify-between p-6 border-b border-gray-200">
                 <h2 className="text-lg font-medium text-gray-900">{tCommon('menu')}</h2>
@@ -209,20 +234,20 @@ const handleLanguageChange = async (newLocale: Locale) => {
 
               <div className="flex-1 px-6 py-6">
                 <ul className="space-y-4">
-                  {links.map(({ label, href, localizedHref }) => {
-                    const isActive = pathname.endsWith(localizedHref);
+                  {currentLinks.map(({ label, href, localizedHref }) => {
+                    const isActive = !href.startsWith('#') && pathname.endsWith(localizedHref);
                     return (
                       <li key={href}>
                         <Link
-                          href={`/${locale}${localizedHref}`}
+                          href={href.startsWith('#') ? href : `/${locale}${localizedHref}`}
                           className={`
                             block px-4 py-3 text-sm font-medium transition-colors border-l-2
-                            ${isActive 
-                              ? 'text-gray-900 border-gray-900 bg-gray-50' 
+                            ${isActive
+                              ? 'text-gray-900 border-gray-900 bg-gray-50'
                               : 'text-gray-600 border-transparent hover:text-gray-900 hover:border-gray-300'
                             }
                           `}
-                          onClick={() => setOpen(false)}
+                          onClick={(e) => handleLinkClick(e, href)}
                         >
                           {label}
                         </Link>
@@ -241,8 +266,8 @@ const handleLanguageChange = async (newLocale: Locale) => {
                         key={lang}
                         className={`
                           flex items-center gap-3 w-full px-4 py-2 text-sm transition-colors rounded-sm
-                          ${lang === locale 
-                            ? 'text-gray-900 bg-gray-50' 
+                          ${lang === locale
+                            ? 'text-gray-900 bg-gray-50'
                             : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
                           }
                         `}
@@ -256,7 +281,7 @@ const handleLanguageChange = async (newLocale: Locale) => {
                         <span className="font-medium">{localeNames[lang].nativeName}</span>
                         {lang === locale && (
                           <svg className="h-4 w-4 ml-auto text-green-500" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
                           </svg>
                         )}
                       </button>
@@ -285,8 +310,8 @@ const handleLanguageChange = async (newLocale: Locale) => {
       )}
 
       {languageOpen && (
-        <div 
-          className="fixed inset-0 z-40" 
+        <div
+          className="fixed inset-0 z-40"
           onClick={() => setLanguageOpen(false)}
         />
       )}

@@ -5,9 +5,9 @@ import Link from 'next/link';
 import { trackEmailClick, trackWhatsAppClick, trackPhoneCall } from '@/lib/analytics';
 import { motion } from 'framer-motion';
 import { ChevronUpIcon } from '@heroicons/react/24/solid';
-import { 
-  FaLinkedin, 
-  FaTwitter, 
+import {
+  FaLinkedin,
+  FaTwitter,
   FaGithub,
   FaEnvelope,
   FaPhone,
@@ -20,6 +20,7 @@ import {
   FaDiscord
 } from 'react-icons/fa';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
+import ParticleNetwork from '@/components/ParticleNetwork';
 
 export default function Footer() {
   const { dir } = useTranslations();
@@ -45,48 +46,48 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { 
-      icon: FaLinkedin, 
+    {
+      icon: FaLinkedin,
       href: 'https://linkedin.com/company/paktechnology',
       label: t('socialMedia.linkedin')
     },
-    { 
-      icon: FaTwitter, 
+    {
+      icon: FaTwitter,
       href: 'https://twitter.com/paktechnology',
       label: t('socialMedia.twitter')
     },
-    { 
-      icon: FaGithub, 
+    {
+      icon: FaGithub,
       href: 'https://github.com/paktechnology',
       label: t('socialMedia.github')
     },
-    { 
-      icon: FaInstagram, 
+    {
+      icon: FaInstagram,
       href: 'https://instagram.com/paktechnology',
       label: t('socialMedia.instagram')
     },
-    { 
-      icon: FaYoutube, 
+    {
+      icon: FaYoutube,
       href: 'https://youtube.com/@paktechnology',
       label: t('socialMedia.youtube')
     },
-    { 
-      icon: FaDribbble, 
+    {
+      icon: FaDribbble,
       href: 'https://dribbble.com/paktechnology',
       label: t('socialMedia.dribbble')
     },
-    { 
-      icon: FaBehance, 
+    {
+      icon: FaBehance,
       href: 'https://behance.net/paktechnology',
       label: t('socialMedia.behance')
     },
-    { 
-      icon: FaMedium, 
+    {
+      icon: FaMedium,
       href: 'https://medium.com/@paktechnology',
       label: t('socialMedia.medium')
     },
-    { 
-      icon: FaDiscord, 
+    {
+      icon: FaDiscord,
       href: 'https://discord.gg/paktechnology',
       label: t('socialMedia.discord')
     }
@@ -119,9 +120,12 @@ export default function Footer() {
 
   return (
     <footer className="bg-gray-900 text-white relative overflow-hidden pt-16" dir={dir}>
+      {/* Particle Network Background */}
+      <ParticleNetwork className="opacity-20" />
+
       {/* Swiss Grid Background */}
       <div className="absolute inset-0 opacity-[0.02]">
-        <div 
+        <div
           className="w-full h-full"
           style={{
             backgroundImage: `
@@ -135,7 +139,7 @@ export default function Footer() {
 
       {/* Subtle geometric background */}
       <div className={`absolute top-8 w-20 h-20 opacity-[0.03] ${dir === 'rtl' ? 'left-8' : 'right-8'}`}>
-        <div 
+        <div
           className="w-full h-full border border-white"
           style={{ clipPath: 'circle(40% at 70% 30%)' }}
         />
@@ -153,21 +157,21 @@ export default function Footer() {
           >
             {/* Logo */}
             <div className="flex items-center gap-3 mb-6">
-            <Link href="/" className="flex items-center gap-3 group">
-  <div className="relative">
-    <Image
-      src="/images/logo/PSlogo11.png"
-      alt="PakSoft Logo"
-      width={160}
-      height={160}
-      className="rounded-sm"
-      priority
-    />
-  </div>
+              <Link href="/" className="flex items-center gap-3 group">
+                <div className="relative">
+                  <Image
+                    src="/images/logo/PSlogo11.png"
+                    alt="PakSoft Logo"
+                    width={160}
+                    height={160}
+                    className="rounded-sm"
+                    priority
+                  />
+                </div>
 
-</Link>
+              </Link>
             </div>
-            
+
             <p className="text-body text-gray-300 mb-6 leading-relaxed max-w-xs">
               {t('description')}
             </p>
@@ -202,8 +206,8 @@ export default function Footer() {
             <ul className="space-y-3">
               {quickLinks.map(({ label, href }) => (
                 <li key={href}>
-                  <Link 
-                    href={href} 
+                  <Link
+                    href={href}
                     className="text-body text-gray-400 hover:text-white transition-colors flex items-center group"
                   >
                     <span className={`w-0 group-hover:w-2 h-px bg-white transition-all duration-250 ${dir === 'rtl' ? 'ml-0 group-hover:ml-3' : 'mr-0 group-hover:mr-3'}`} />
@@ -227,8 +231,8 @@ export default function Footer() {
             <ul className="space-y-3">
               {services.map(({ label, href }) => (
                 <li key={href}>
-                  <Link 
-                    href={href} 
+                  <Link
+                    href={href}
                     className="text-body text-gray-400 hover:text-white transition-colors flex items-center group"
                   >
                     <span className={`w-0 group-hover:w-2 h-px bg-white transition-all duration-250 ${dir === 'rtl' ? 'ml-0 group-hover:ml-3' : 'mr-0 group-hover:mr-3'}`} />
@@ -255,7 +259,7 @@ export default function Footer() {
                   key={label}
                   href={href}
                   target={href.startsWith('http') ? '_blank' : undefined}
-                    onClick={() => trackPhoneCall('footer')}
+                  onClick={() => trackPhoneCall('footer')}
 
                   rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
                   className="flex items-start gap-3 text-body text-gray-400 hover:text-white transition-colors group"

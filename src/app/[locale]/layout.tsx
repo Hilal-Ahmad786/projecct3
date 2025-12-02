@@ -4,10 +4,10 @@ import { Locale } from '@/lib/i18n'
 
 interface LocaleLayoutProps {
   children: ReactNode
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }
 
-export default function LocaleLayout({ children, params }: LocaleLayoutProps) {
+export default async function LocaleLayout({ children }: LocaleLayoutProps) {
   return children
 }
 
