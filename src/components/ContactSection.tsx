@@ -5,13 +5,14 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import SectionHeader from '@/components/SectionHeader';
 import Button from '@/components/Button';
-import { 
-  EnvelopeIcon, 
-  PhoneIcon, 
+import {
+  EnvelopeIcon,
+  PhoneIcon,
   MapPinIcon,
-  ClockIcon 
+  ClockIcon
 } from '@heroicons/react/24/outline';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
+import DigitalPulse from '@/components/DigitalPulse';
 
 export default function ContactSection() {
   const { dir, isLoading } = useTranslations();
@@ -44,7 +45,7 @@ export default function ContactSection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSending(true);
-    
+
     try {
       // TODO: Replace with your actual API endpoint
       // await fetch('/api/contact', { 
@@ -52,10 +53,10 @@ export default function ContactSection() {
       //   headers: { 'Content-Type': 'application/json' },
       //   body: JSON.stringify(form) 
       // });
-      
+
       // Simulate API call
       await new Promise(resolve => setTimeout(resolve, 1000));
-      
+
       alert(tNotifications('messageSent'));
       setForm({ name: '', email: '', message: '', subject: '' });
     } catch (error) {
@@ -110,10 +111,13 @@ export default function ContactSection() {
   ];
 
   return (
-    <section className="section bg-gray-50 relative overflow-hidden" dir={dir}>
+    <section className="section gradient-bg-mesh relative overflow-hidden" dir={dir}>
+      {/* Digital Pulse Background */}
+      <DigitalPulse className="opacity-40" />
+
       {/* Subtle geometric background */}
       <div className={`absolute bottom-16 w-20 h-20 opacity-[0.03] ${dir === 'rtl' ? 'left-16' : 'right-16'}`}>
-        <div 
+        <div
           className="w-full h-full border border-gray-900"
           style={{ clipPath: 'circle(45% at 30% 70%)' }}
         />
@@ -140,7 +144,7 @@ export default function ContactSection() {
               <h3 className="text-title text-gray-900 mb-6">{t('info.howToReach')}</h3>
               <div className="grid sm:grid-cols-2 gap-6">
                 {contactMethods.map(({ icon: Icon, title, value, href, description }) => (
-                  <div key={title} className="card">
+                  <div key={title} className="glass hover:glass-strong transition-all duration-300 rounded-lg p-6">
                     <div className={`flex items-center gap-3 mb-4 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
                       <div className="w-10 h-10 bg-gray-50 border border-gray-200 rounded-sm flex items-center justify-center">
                         <Icon className="h-5 w-5 text-gray-700" />
@@ -171,7 +175,7 @@ export default function ContactSection() {
             </div>
 
             {/* Office Hours */}
-            <div className="card">
+            <div className="glass rounded-lg p-6">
               <h4 className="font-medium text-gray-900 mb-4">{t('info.officeHours')}</h4>
               <div className="space-y-2 text-sm">
                 <div className={`flex justify-between ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
@@ -190,7 +194,7 @@ export default function ContactSection() {
             </div>
 
             {/* Map */}
-            <div className="card p-0 overflow-hidden">
+            <div className="glass p-0 overflow-hidden rounded-lg">
               <div className="aspect-video bg-gray-100 border border-gray-200 rounded-sm">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3066.503671658509!2d34.797728675449754!3d39.7732507945532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4080770251e0e48d%3A0xe1a01c5b46b28aa7!2sYozgat%2C%20Turkey!5e0!3m2!1sen!2str!4v1752268868653!5m2!1sen!2str"
@@ -210,9 +214,9 @@ export default function ContactSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <form onSubmit={handleSubmit} className="card">
+            <form onSubmit={handleSubmit} className="glass-strong rounded-lg p-8">
               <h3 className="text-title text-gray-900 mb-6">{t('form.title')}</h3>
-              
+
               <div className="space-y-6">
                 {/* Name */}
                 <div>
@@ -304,8 +308,8 @@ export default function ContactSection() {
                     rightIcon={
                       !sending ? (
                         <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} 
-                                d={dir === 'rtl' ? "M7 8l4 4 4-4m0 6H9l10-6" : "M12 19l9 2-9-18-9 18 9-2zm0 0v-8"} />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                            d={dir === 'rtl' ? "M7 8l4 4 4-4m0 6H9l10-6" : "M12 19l9 2-9-18-9 18 9-2zm0 0v-8"} />
                         </svg>
                       ) : undefined
                     }
@@ -317,7 +321,7 @@ export default function ContactSection() {
             </form>
 
             {/* Additional Info */}
-            <div className="mt-6 p-6 bg-white border border-gray-200 rounded-sm">
+            <div className="mt-6 glass rounded-lg p-6">
               <h4 className="font-medium text-gray-900 mb-3">{t('nextSteps.title')}</h4>
               <div className="space-y-3 text-sm text-gray-600">
                 <div className={`flex items-start gap-3 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>

@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import SectionHeader from '@/components/SectionHeader';
 import Button from '@/components/Button';
+import BackgroundBlobs from '@/components/BackgroundBlobs';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
 import {
@@ -161,12 +162,15 @@ export default function ServicesSection() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5, ease: [0.4, 0, 0.2, 1] }
+      transition: { duration: 0.5, ease: "easeInOut" }
     }
   };
 
   return (
-    <section className="section bg-white relative overflow-hidden" dir={dir}>
+    <section className="section gradient-bg-mesh relative overflow-hidden" dir={dir}>
+      {/* Background Blobs */}
+      <BackgroundBlobs className="opacity-40" />
+
       {/* Proper Crescent Elements */}
       <div className={`absolute top-32 w-28 h-28 ${dir === 'rtl' ? 'left-16' : 'right-16'}`}>
         <div className={`crescent ${dir === 'rtl' ? 'crescent-left' : 'crescent-right'} crescent-subtle text-gray-900`} />
@@ -213,7 +217,7 @@ export default function ServicesSection() {
               <motion.div
                 key={service.title}
                 variants={itemVariants}
-                className="card group hover:border-gray-300"
+                className="glass group hover:glass-strong hover:border-glass transition-all duration-300 rounded-lg p-8"
               >
                 {/* Icon */}
                 <div className="flex items-center gap-4 mb-6">
@@ -227,7 +231,7 @@ export default function ServicesSection() {
                 <h3 className="text-title text-gray-900 mb-3">
                   {service.title}
                 </h3>
-                
+
                 <p className="text-body text-gray-600 mb-6 leading-relaxed">
                   {service.description}
                 </p>
@@ -251,13 +255,17 @@ export default function ServicesSection() {
 
                 {/* CTA */}
                 <Button
-                  href={`/services/${service.title.toLowerCase().replace(/\s+/g, '-')}`}
+                  href={`/services/${service.category === 'web' && service.title.includes('Web') ? 'web-development' :
+                      service.category === 'ai' && service.title.includes('AI') ? 'ai-solutions' :
+                        service.category === 'web' && service.title.includes('Mobile') ? 'mobile-development' :
+                          service.title.toLowerCase().replace(/\s+/g, '-')
+                    }`}
                   variant="ghost"
                   size="sm"
                   rightIcon={
                     <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} 
-                            d={dir === 'rtl' ? "M11 17l-5-5m0 0l5-5m-5 5h12" : "M13 7l5 5m0 0l-5 5m5-5H6"} />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                        d={dir === 'rtl' ? "M11 17l-5-5m0 0l5-5m-5 5h12" : "M13 7l5 5m0 0l-5 5m5-5H6"} />
                     </svg>
                   }
                   className="w-full justify-between"

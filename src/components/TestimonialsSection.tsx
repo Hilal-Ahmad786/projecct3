@@ -4,6 +4,7 @@
 import { useRef } from 'react'
 import { motion } from 'framer-motion'
 import SectionHeader from '@/components/SectionHeader'
+import BackgroundBlobs from '@/components/BackgroundBlobs'
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline'
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations'
 
@@ -29,18 +30,18 @@ export default function TestimonialsSection() {
   const getTestimonials = () => {
     try {
       const testimonialsList = t('list');
-      
+
       // If it's already an array, use it
       if (Array.isArray(testimonialsList)) {
         return testimonialsList;
       }
-      
+
       // If it's a string (JSON), parse it
       if (typeof testimonialsList === 'string') {
         const parsed = JSON.parse(testimonialsList);
         return Array.isArray(parsed) ? parsed : [];
       }
-      
+
       // If it's an object, convert to array
       if (testimonialsList && typeof testimonialsList === 'object') {
         return Object.values(testimonialsList);
@@ -51,21 +52,21 @@ export default function TestimonialsSection() {
 
     // Fallback testimonials
     return [
-      { 
+      {
         author: 'Sarah Johnson',
         role: 'CEO',
         company: 'TechStart Solutions',
         text: 'PakTechnology delivered exactly what we needed. Their attention to detail and professional approach made our project a complete success.',
         rating: 5
       },
-      { 
+      {
         author: 'Lisa Thompson',
         role: 'Founder',
         company: 'EcoSmart',
         text: 'From concept to launch, they guided us through every step. Our e-commerce platform exceeded all expectations.',
         rating: 5
       },
-      { 
+      {
         author: 'James Park',
         role: 'Operations Manager',
         company: 'LogiTech Pro',
@@ -115,10 +116,13 @@ export default function TestimonialsSection() {
   ]
 
   return (
-    <section className="section bg-white relative overflow-hidden" dir={dir}>
+    <section className="section gradient-bg-emerald relative overflow-hidden" dir={dir}>
+      {/* Background Blobs */}
+      <BackgroundBlobs className="opacity-30" />
+
       {/* Subtle geometric background */}
       <div className={`absolute top-16 w-16 h-16 opacity-[0.02] ${dir === 'rtl' ? 'left-20' : 'right-20'}`}>
-        <div 
+        <div
           className="w-full h-full border border-gray-900"
           style={{ clipPath: 'circle(40% at 70% 30%)' }}
         />
@@ -166,25 +170,25 @@ export default function TestimonialsSection() {
                 <motion.div
                   key={index}
                   variants={itemVariants}
-                  className="flex-shrink-0 w-80 card"
+                  className="flex-shrink-0 w-80 glass hover:glass-strong transition-all duration-300 rounded-lg p-6"
                   style={{ scrollSnapAlign: 'start' }}
                 >
                   {/* Quote Mark */}
                   <div className={`flex items-center justify-between mb-6 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
                     <div className="w-8 h-8 bg-gray-100 rounded-sm flex items-center justify-center">
                       <svg className="h-4 w-4 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
-                        <path d={dir === 'rtl' 
+                        <path d={dir === 'rtl'
                           ? "M10 21v-7.391c0-5.704-3.731-9.57-8.983-10.609l-.995 2.151c2.432.917 3.995 3.638 3.995 5.849h-4v10h10zm14.017 0v-7.391c0-5.704-3.748-9.57-9-10.609l-.996 2.151c2.433.917 3.996 3.638 3.996 5.849h-4v10h10z"
                           : "M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-10zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"
-                        }/>
+                        } />
                       </svg>
                     </div>
-                    
+
                     {/* Rating */}
                     <div className={`flex gap-1 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
                       {[...Array(testimonial.rating || 5)].map((_, i) => (
                         <svg key={i} className="h-4 w-4 text-amber-400" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                         </svg>
                       ))}
                     </div>

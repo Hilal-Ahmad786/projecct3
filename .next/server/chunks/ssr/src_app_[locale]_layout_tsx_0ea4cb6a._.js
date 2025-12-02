@@ -10,7 +10,7 @@ __turbopack_context__.s({
     "default": (()=>LocaleLayout),
     "generateStaticParams": (()=>generateStaticParams)
 });
-function LocaleLayout({ children, params }) {
+async function LocaleLayout({ children }) {
     return children;
 }
 async function generateStaticParams() {

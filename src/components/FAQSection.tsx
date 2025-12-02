@@ -39,7 +39,7 @@ export default function FAQSection() {
     } catch (error) {
       console.error('Error loading FAQ data:', error);
     }
-    
+
     // Fallback data
     return [
       {
@@ -70,16 +70,16 @@ export default function FAQSection() {
   };
 
   const faqs = getFAQs();
-  
+
   const toggle = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
-    <section className="section bg-gray-50 relative overflow-hidden" dir={dir}>
+    <section className="section gradient-bg-emerald relative overflow-hidden" dir={dir}>
       {/* Subtle geometric background */}
       <div className={`absolute top-20 w-24 h-24 opacity-[0.02] ${dir === 'rtl' ? 'left-20' : 'right-20'}`}>
-        <div 
+        <div
           className="w-full h-full border border-gray-900"
           style={{ clipPath: 'circle(40% at 70% 30%)' }}
         />
@@ -102,7 +102,7 @@ export default function FAQSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.05 }}
                 viewport={{ once: true }}
-                className="bg-white border border-gray-200 rounded-sm overflow-hidden"
+                className="glass hover:glass-strong transition-all duration-300 rounded-lg overflow-hidden"
               >
                 <button
                   onClick={() => toggle(index)}
@@ -148,7 +148,7 @@ export default function FAQSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
-            className="mt-12 p-8 bg-white border border-gray-200 rounded-sm text-center"
+            className="mt-12 glass-strong rounded-lg p-8 text-center"
           >
             <h3 className="text-lg font-medium text-gray-900 mb-4">
               {t('stillHaveQuestions')}
@@ -163,8 +163,8 @@ export default function FAQSection() {
                 size="lg"
                 rightIcon={
                   <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} 
-                          d={dir === 'rtl' ? "M11 17l-5-5m0 0l5-5m-5 5h12" : "M13 7l5 5m0 0l-5 5m5-5H6"} />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                      d={dir === 'rtl' ? "M11 17l-5-5m0 0l5-5m-5 5h12" : "M13 7l5 5m0 0l-5 5m5-5H6"} />
                   </svg>
                 }
               >
