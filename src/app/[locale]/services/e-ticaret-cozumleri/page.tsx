@@ -3,11 +3,11 @@
 import Hero from '@/components/e-commerce/Hero';
 import TechStackStrip from '@/components/e-commerce/TechStackStrip';
 import ProcessPreview from '@/components/e-commerce/ProcessPreview';
-import ECommerceServices from '@/components/e-commerce/ECommerceServices';
+import EcommerceServices from '@/components/e-commerce/EcommerceServices';
 import WhyUs from '@/components/e-commerce/WhyUs';
-import ECommerceTestimonials from '@/components/e-commerce/ECommerceTestimonials';
-import ECommerceFAQ from '@/components/e-commerce/ECommerceFAQ';
-import ECommerceCTA from '@/components/e-commerce/ECommerceCTA';
+import EcommerceTestimonials from '@/components/e-commerce/EcommerceTestimonials';
+import EcommerceFAQ from '@/components/e-commerce/EcommerceFAQ';
+import EcommerceCTA from '@/components/e-commerce/EcommerceCTA';
 
 export default function ETicaretCozumleriPage() {
     return (
@@ -15,11 +15,11 @@ export default function ETicaretCozumleriPage() {
             <Hero />
             <TechStackStrip />
             <ProcessPreview />
-            <ECommerceServices />
+            <EcommerceServices />
             <WhyUs />
-            <ECommerceTestimonials />
-            <ECommerceFAQ />
-            <ECommerceCTA />
+            <EcommerceTestimonials />
+            <EcommerceFAQ />
+            <EcommerceCTA />
         </main>
     );
 }

@@ -1,3 +1,18 @@
 node_modules/
+.next/
+build/
+dist/
 
-/src/generated/prisma
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# system
+.DS_Store
+*.log
