@@ -8,7 +8,7 @@ import ReCaptcha from '@/components/ReCaptcha'
 import { cookies } from 'next/headers'
 
 export const metadata = {
-    metadataBase: new URL('https://paktechnology.com'),
+    metadataBase: new URL('https://paksoft.com.tr'),
     title: {
         default: 'PakSoft – Modern Digital Solutions',
         template: '%s | PakSoft'
@@ -20,7 +20,7 @@ export const metadata = {
     openGraph: {
         type: 'website',
         locale: 'en_US',
-        url: 'https://paktechnology.com',
+        url: 'https://paksoft.com.tr',
         title: 'PakSoft – Modern Digital Solutions',
         description: 'Enterprise web development, e-commerce, automation bots and digital marketing solutions',
         siteName: 'PakSoft',
@@ -55,13 +55,13 @@ export const metadata = {
         google: '5r6FVNc5T7Y3Fig1PQvnfB4UtoDO9RGMSqWLZANzcdQ',
     },
     alternates: {
-        canonical: 'https://paktechnology.com',
+        canonical: 'https://paksoft.com.tr',
         languages: {
-            'en': 'https://paktechnology.com/en',
-            'tr': 'https://paktechnology.com/tr',
-            'de': 'https://paktechnology.com/de',
-            'ur': 'https://paktechnology.com/ur',
-            'ar': 'https://paktechnology.com/ar',
+            'en': 'https://paksoft.com.tr/en',
+            'tr': 'https://paksoft.com.tr/tr',
+            'de': 'https://paksoft.com.tr/de',
+            'ur': 'https://paksoft.com.tr/ur',
+            'ar': 'https://paksoft.com.tr/ar',
         },
     },
 }

@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: ['/admin', '/private', '/api/*'],
         },
-        sitemap: 'https://paktechnology.com/sitemap.xml',
+        sitemap: 'https://paksoft.com.tr/sitemap.xml',
     };
 }
