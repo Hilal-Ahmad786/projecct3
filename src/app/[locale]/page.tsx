@@ -2,6 +2,7 @@
 
 // src/app/page.tsx
 import Hero from '@/components/Hero'
+import SocialProofBanner from '@/components/SocialProofBanner'
 import ServicesSection from '@/components/ServicesSection'
 import ProjectDetailSection from '@/components/ProjectDetailSection'
 import DemoSection from '@/components/DemoSection'
@@ -14,6 +15,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <SocialProofBanner variant="stats" />
       <ServicesSection />
       <ProjectDetailSection />
       <DemoSection />

@@ -17,6 +17,7 @@ import {
     DocumentChartBarIcon,
     RectangleStackIcon,
     BellIcon,
+    NewspaperIcon,
 } from '@heroicons/react/24/outline';
 
 interface DashboardLayoutProps {
@@ -28,6 +29,7 @@ const navigation = [
     { name: 'Analytics', href: '/admin/analytics', icon: ChartBarIcon },
     { name: 'Leads', href: '/admin/leads', icon: EnvelopeIcon },
     { name: 'Users', href: '/admin/users', icon: UsersIcon },
+    { name: 'Blog', href: '/admin/content/blog', icon: NewspaperIcon },
     { name: 'Notifications', href: '/admin/notifications', icon: BellIcon },
     { name: 'Traffic', href: '/admin/traffic', icon: GlobeAltIcon },
     { name: 'Reports', href: '/admin/reports', icon: DocumentChartBarIcon },

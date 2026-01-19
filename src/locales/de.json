@@ -311,6 +311,66 @@
           "Monitoring",
           "Sicherheit"
         ]
+      },
+      "promptEngineering": {
+        "title": "Prompt Engineering",
+        "description": "Experten-LLM-Prompt-Design und -Optimierung für zuverlässige, qualitativ hochwertige KI-Ausgaben in großem Maßstab.",
+        "features": [
+          "Prompt-Optimierung",
+          "Chain-of-Thought-Design",
+          "Ausgabevalidierung",
+          "A/B-Tests"
+        ]
+      },
+      "aiAgents": {
+        "title": "KI-Agenten",
+        "description": "Autonome KI-Agenten, die komplexe Workflows und mehrstufige Aufgaben intelligent bewältigen.",
+        "features": [
+          "Multi-Agenten-Systeme",
+          "Tool-Integration",
+          "Task-Orchestrierung",
+          "Speicher & Kontext"
+        ]
+      },
+      "ragSolutions": {
+        "title": "RAG-Lösungen",
+        "description": "Unternehmens-Wissensbasen mit Retrieval-Augmented Generation für präzise KI-Antworten.",
+        "features": [
+          "Vektor-Datenbanken",
+          "Dokumentenverarbeitung",
+          "Semantische Suche",
+          "Wissensgraphen"
+        ]
+      },
+      "mlopsDeployment": {
+        "title": "MLOps & Deployment",
+        "description": "End-to-End ML-Pipelines mit automatisiertem Training, Deployment und Monitoring.",
+        "features": [
+          "Model Serving",
+          "Pipeline-Automatisierung",
+          "Modell-Monitoring",
+          "A/B-Tests"
+        ]
+      },
+      "computerVision": {
+        "title": "Computer Vision",
+        "description": "Fortschrittliche Bild- und Videoanalyse mit Objekterkennung, Klassifizierung und Tracking.",
+        "features": [
+          "Objekterkennung",
+          "Bildklassifizierung",
+          "Video-Analytik",
+          "OCR-Lösungen"
+        ]
+      },
+      "llmFinetuning": {
+        "title": "LLM Fine-tuning",
+        "description": "Individuelles Modell-Training und Domänenanpassung für spezialisierte KI-Anwendungen.",
+        "features": [
+          "Domänenanpassung",
+          "Custom Training",
+          "RLHF-Implementierung",
+          "Modell-Evaluierung"
+        ]
       }
     },
     "pricing": {

@@ -17,56 +17,62 @@ const accentColors = {
   gray: {
     eyebrow: 'text-gray-500',
     titleAccent: 'text-gray-900',
-    circle: 'border-gray-200',
-    square: 'border-gray-900',
+    gradientFrom: 'from-gray-100',
+    gradientTo: 'to-gray-50',
+    ring: 'ring-gray-200',
     dot: 'bg-gray-900',
-    blob1: 'bg-gray-50',
-    blob2: 'bg-gray-100',
+    blob1: 'bg-gray-100',
+    blob2: 'bg-gray-200',
   },
   emerald: {
     eyebrow: 'text-emerald-600',
     titleAccent: 'text-emerald-600',
-    circle: 'border-emerald-200',
-    square: 'border-emerald-600',
+    gradientFrom: 'from-emerald-100',
+    gradientTo: 'to-emerald-50',
+    ring: 'ring-emerald-200',
     dot: 'bg-emerald-600',
-    blob1: 'bg-emerald-50',
-    blob2: 'bg-emerald-100',
+    blob1: 'bg-emerald-100',
+    blob2: 'bg-emerald-200',
   },
   violet: {
     eyebrow: 'text-violet-600',
     titleAccent: 'text-violet-600',
-    circle: 'border-violet-200',
-    square: 'border-violet-600',
+    gradientFrom: 'from-violet-100',
+    gradientTo: 'to-violet-50',
+    ring: 'ring-violet-200',
     dot: 'bg-violet-600',
-    blob1: 'bg-violet-50',
-    blob2: 'bg-violet-100',
+    blob1: 'bg-violet-100',
+    blob2: 'bg-violet-200',
   },
   blue: {
     eyebrow: 'text-blue-600',
     titleAccent: 'text-blue-600',
-    circle: 'border-blue-200',
-    square: 'border-blue-600',
+    gradientFrom: 'from-blue-100',
+    gradientTo: 'to-blue-50',
+    ring: 'ring-blue-200',
     dot: 'bg-blue-600',
-    blob1: 'bg-blue-50',
-    blob2: 'bg-blue-100',
+    blob1: 'bg-blue-100',
+    blob2: 'bg-blue-200',
   },
   amber: {
     eyebrow: 'text-amber-600',
     titleAccent: 'text-amber-600',
-    circle: 'border-amber-200',
-    square: 'border-amber-600',
+    gradientFrom: 'from-amber-100',
+    gradientTo: 'to-amber-50',
+    ring: 'ring-amber-200',
     dot: 'bg-amber-600',
-    blob1: 'bg-amber-50',
-    blob2: 'bg-amber-100',
+    blob1: 'bg-amber-100',
+    blob2: 'bg-amber-200',
   },
   rose: {
     eyebrow: 'text-rose-600',
     titleAccent: 'text-rose-600',
-    circle: 'border-rose-200',
-    square: 'border-rose-600',
+    gradientFrom: 'from-rose-100',
+    gradientTo: 'to-rose-50',
+    ring: 'ring-rose-200',
     dot: 'bg-rose-600',
-    blob1: 'bg-rose-50',
-    blob2: 'bg-rose-100',
+    blob1: 'bg-rose-100',
+    blob2: 'bg-rose-200',
   },
 };
 
@@ -99,132 +105,196 @@ export default function ServicePageHero({
   }
 
   return (
-    <section className="hero-section relative overflow-hidden bg-white" dir={dir}>
+    <section className="hero-section relative overflow-hidden gradient-bg-vibrant" dir={dir}>
       {/* Background */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-grid-pattern opacity-[0.03]" />
-        {showParticles && <ParticleNetwork className="opacity-20" />}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/50 to-white" />
+        {showParticles && <ParticleNetwork className="opacity-40" />}
+
+        {/* Grid Pattern */}
+        <div className="absolute inset-0 opacity-[0.02]">
+          <div
+            className="w-full h-full"
+            style={{
+              backgroundImage: `
+                linear-gradient(rgba(0,0,0,0.3) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0,0,0,0.3) 1px, transparent 1px)
+              `,
+              backgroundSize: '64px 64px'
+            }}
+          />
+        </div>
       </div>
 
       {/* Crescent Decorations - RTL Aware */}
-      <div
-        className={`absolute top-20 ${isRTL ? 'left-10' : 'right-10'} w-32 h-32 crescent ${
-          isRTL ? 'crescent-left' : 'crescent-right'
-        } crescent-subtle text-gray-900`}
-      />
-      <div
-        className={`absolute bottom-40 ${isRTL ? 'right-20' : 'left-20'} w-24 h-24 crescent ${
-          isRTL ? 'crescent-right' : 'crescent-left'
-        } crescent-subtle text-gray-900`}
-      />
+      <div className={`absolute top-32 w-32 h-32 ${isRTL ? 'left-20' : 'right-20'}`}>
+        <div className={`crescent ${isRTL ? 'crescent-left' : 'crescent-right'} crescent-subtle text-gray-900`} />
+      </div>
+      <div className={`absolute bottom-32 w-24 h-24 ${isRTL ? 'right-16' : 'left-16'}`}>
+        <div className={`crescent ${isRTL ? 'crescent-right' : 'crescent-left'} crescent-subtle text-gray-600`} />
+      </div>
 
-      <div className="container mx-auto px-4 relative z-10 pt-32">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          {/* Text Content */}
-          <div className={`lg:col-span-7 ${isRTL ? 'lg:order-2' : ''}`}>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            >
-              {/* Eyebrow */}
-              <div className={`flex items-center gap-3 mb-8 ${isRTL ? 'flex-row-reverse' : ''}`}>
-                <div className="w-8 h-0.5 bg-gray-900"></div>
-                <span className={`text-xs font-medium ${colors.eyebrow} uppercase tracking-wide`}>
-                  {t('eyebrow')}
+      {/* Main Content */}
+      <div className="container mx-auto relative z-10">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Left Column - Content (Right for RTL) */}
+          <motion.div
+            initial={{ opacity: 0, x: isRTL ? 32 : -32 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
+            className={`space-y-8 ${isRTL ? 'lg:order-2' : ''}`}
+          >
+            {/* Eyebrow */}
+            <div className="flex items-center gap-3">
+              <div className="w-8 h-0.5 bg-gray-900"></div>
+              <span className={`text-xs font-medium ${colors.eyebrow} uppercase tracking-wide`}>
+                {t('eyebrow')}
+              </span>
+            </div>
+
+            {/* Title */}
+            <div className="space-y-2">
+              <h1 className="text-display font-light text-gray-900 leading-none">
+                {t('title')}
+                <br />
+                <span className={`font-semibold ${colors.titleAccent}`}>
+                  {t('titleAccent')}
                 </span>
-              </div>
-
-              {/* Title */}
-              <h1 className="text-display font-light text-gray-900 mb-8 leading-none">
-                {t('title')} <br />
-                <span className={`font-semibold ${colors.titleAccent}`}>{t('titleAccent')}</span>
               </h1>
+            </div>
 
-              {/* Description */}
-              <p className="text-body text-gray-600 mb-10 max-w-2xl leading-relaxed">
-                {t('description')}
-              </p>
+            {/* Description */}
+            <p className="text-body text-gray-600 max-w-lg leading-relaxed">
+              {t('description')}
+            </p>
 
-              {/* CTAs */}
-              <div className={`flex flex-wrap gap-4 ${isRTL ? 'flex-row-reverse' : ''}`}>
-                <Button
-                  href={ctaHref}
-                  variant="primary"
-                  size="lg"
-                  rightIcon={
-                    <svg
-                      className={`h-4 w-4 ${isRTL ? 'rotate-180' : ''}`}
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M13 7l5 5m0 0l-5 5m5-5H6"
-                      />
-                    </svg>
-                  }
-                >
-                  {t('cta')}
+            {/* CTAs */}
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button
+                href={ctaHref}
+                variant="primary"
+                size="lg"
+                rightIcon={
+                  <svg
+                    className={`h-4 w-4 ${isRTL ? 'rotate-180' : ''}`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                }
+              >
+                {t('cta')}
+              </Button>
+              {secondaryCtaHref && (
+                <Button href={secondaryCtaHref} variant="secondary" size="lg">
+                  {t('secondaryCta')}
                 </Button>
-                {secondaryCtaHref && (
-                  <Button href={secondaryCtaHref} variant="secondary" size="lg">
-                    {t('secondaryCta')}
-                  </Button>
-                )}
-              </div>
-            </motion.div>
-          </div>
+              )}
+            </div>
+          </motion.div>
 
-          {/* Abstract Visual - Swiss Geometry */}
-          <div className={`lg:col-span-5 hidden lg:block relative ${isRTL ? 'lg:order-1' : ''}`}>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative aspect-square max-w-lg mx-auto"
-            >
-              {/* Geometric Composition */}
+          {/* Right Column - Visual Element (Left for RTL) */}
+          <motion.div
+            initial={{ opacity: 0, x: isRTL ? -32 : 32 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: [0.4, 0, 0.2, 1] }}
+            className={`relative ${isRTL ? 'lg:order-1' : ''}`}
+          >
+            <div className="relative aspect-square max-w-lg mx-auto">
+              {/* Animated Background Blobs */}
+              <motion.div
+                animate={{
+                  scale: [1, 1.1, 1],
+                  rotate: [0, 5, 0]
+                }}
+                transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
+                className={`absolute top-0 ${isRTL ? 'left-0' : 'right-0'} w-72 h-72 ${colors.blob1} rounded-full mix-blend-multiply filter blur-3xl opacity-60`}
+              />
+              <motion.div
+                animate={{
+                  scale: [1, 1.15, 1],
+                  rotate: [0, -5, 0]
+                }}
+                transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
+                className={`absolute bottom-0 ${isRTL ? 'right-0' : 'left-0'} w-72 h-72 ${colors.blob2} rounded-full mix-blend-multiply filter blur-3xl opacity-60`}
+              />
+
+              {/* Central Geometric Composition */}
               <div className="absolute inset-0 flex items-center justify-center">
-                {/* Main Circle */}
-                <div className={`w-64 h-64 border ${colors.circle} rounded-full opacity-60`} />
-
-                {/* Offset Square */}
-                <div
-                  className={`absolute w-48 h-48 border ${colors.square} opacity-10 transform rotate-12`}
+                {/* Outer Ring */}
+                <motion.div
+                  animate={{ rotate: 360 }}
+                  transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
+                  className={`absolute w-80 h-80 rounded-full ring-1 ${colors.ring} opacity-40`}
                 />
 
-                {/* Solid Accent Circle */}
-                <div
-                  className={`absolute top-1/4 ${isRTL ? 'left-1/4' : 'right-1/4'} w-12 h-12 ${
-                    colors.dot
-                  } rounded-full opacity-5`}
+                {/* Inner Ring */}
+                <motion.div
+                  animate={{ rotate: -360 }}
+                  transition={{ duration: 45, repeat: Infinity, ease: 'linear' }}
+                  className={`absolute w-64 h-64 rounded-full ring-1 ${colors.ring} opacity-30`}
                 />
 
-                {/* Floating Elements */}
+                {/* Center Element */}
+                <div className={`relative w-48 h-48 bg-gradient-to-br ${colors.gradientFrom} ${colors.gradientTo} rounded-2xl shadow-lg flex items-center justify-center`}>
+                  {/* Icon or Abstract Shape */}
+                  <motion.div
+                    animate={{ y: [0, -8, 0] }}
+                    transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+                    className="text-6xl"
+                  >
+                    <svg className="w-20 h-20 text-gray-700 opacity-20" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                    </svg>
+                  </motion.div>
+                </div>
+
+                {/* Floating Dots */}
                 <motion.div
                   animate={{ y: [0, -20, 0] }}
-                  transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
-                  className={`absolute top-0 ${isRTL ? 'left-0' : 'right-0'} w-32 h-32 ${
-                    colors.blob1
-                  } rounded-full mix-blend-multiply filter blur-xl opacity-70`}
+                  transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
+                  className={`absolute top-16 ${isRTL ? 'left-16' : 'right-16'} w-4 h-4 ${colors.dot} rounded-full opacity-60`}
                 />
                 <motion.div
-                  animate={{ y: [0, 20, 0] }}
-                  transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-                  className={`absolute bottom-0 ${isRTL ? 'right-0' : 'left-0'} w-40 h-40 ${
-                    colors.blob2
-                  } rounded-full mix-blend-multiply filter blur-xl opacity-70`}
+                  animate={{ y: [0, 15, 0] }}
+                  transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
+                  className={`absolute bottom-20 ${isRTL ? 'right-20' : 'left-20'} w-3 h-3 ${colors.dot} rounded-full opacity-40`}
+                />
+                <motion.div
+                  animate={{ y: [0, -12, 0] }}
+                  transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
+                  className={`absolute top-32 ${isRTL ? 'right-8' : 'left-8'} w-2 h-2 ${colors.dot} rounded-full opacity-50`}
                 />
               </div>
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
         </div>
       </div>
+
+      {/* Scroll Indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5, duration: 0.8 }}
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+      >
+        <div className="flex flex-col items-center gap-2 text-gray-400 hover:text-gray-600 transition-colors cursor-pointer">
+          <motion.div
+            animate={{ y: [0, 4, 0] }}
+            transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+          >
+            <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </motion.div>
+        </div>
+      </motion.div>
     </section>
   );
 }

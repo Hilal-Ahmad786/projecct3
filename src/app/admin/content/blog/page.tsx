@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import {
     PencilIcon,
     TrashIcon,
@@ -10,250 +10,71 @@ import {
     MagnifyingGlassIcon,
     CalendarIcon,
     ClockIcon,
-    TagIcon,
-    UserIcon,
-    ChatBubbleLeftIcon,
-    HeartIcon,
-    ShareIcon,
     DocumentTextIcon,
     PhotoIcon,
     GlobeAltIcon,
-    ArrowTrendingUpIcon,
     ChartBarIcon,
+    ArrowPathIcon,
+    LanguageIcon,
 } from '@heroicons/react/24/outline';
 import { StarIcon } from '@heroicons/react/24/solid';
 
-interface BlogPost {
-    id: string;
+// Types matching the database schema
+interface BlogTranslation {
+    id?: string;
+    locale: string;
     title: string;
-    slug: string;
-    excerpt: string;
+    excerpt?: string;
     content: string;
-    featuredImage: string;
-    author: string;
-    authorAvatar: string;
-    category: string;
-    tags: string[];
-    status: 'published' | 'draft' | 'scheduled';
-    publishDate: string;
-    scheduledDate?: string;
-    readTime: number;
-    views: number;
-    likes: number;
-    comments: number;
-    shares: number;
-    seo: {
-        metaTitle: string;
-        metaDescription: string;
-        focusKeyword: string;
-    };
-    featured: boolean;
-    createdAt: string;
-    updatedAt: string;
+    metaTitle?: string;
+    metaDescription?: string;
 }
 
-const categories = ['All', 'Web Development', 'AI & ML', 'Mobile', 'E-Commerce', 'DevOps', 'Analytics', 'Design', 'Business'];
-const authors = ['Admin', 'John Doe', 'Jane Smith', 'Mike Johnson'];
+interface BlogPost {
+    id: string;
+    slug: string;
+    title: string;
+    excerpt?: string;
+    content: string;
+    featuredImage?: string;
+    metaTitle?: string;
+    metaDescription?: string;
+    category: string;
+    tags: string[];
+    status: 'DRAFT' | 'PUBLISHED' | 'ARCHIVED';
+    featured: boolean;
+    publishedAt?: string;
+    createdAt: string;
+    updatedAt: string;
+    translations: BlogTranslation[];
+}
 
-const initialPosts: BlogPost[] = [
-    {
-        id: '1',
-        title: 'Getting Started with Next.js 14: A Complete Guide',
-        slug: 'getting-started-nextjs-14-complete-guide',
-        excerpt: 'Learn how to build modern web applications with Next.js 14, featuring the new App Router, Server Components, and more.',
-        content: 'Full article content here...',
-        featuredImage: '/blog/nextjs-14.jpg',
-        author: 'Admin',
-        authorAvatar: '/avatars/admin.jpg',
-        category: 'Web Development',
-        tags: ['Next.js', 'React', 'TypeScript', 'Web Development'],
-        status: 'published',
-        publishDate: '2024-01-15',
-        readTime: 12,
-        views: 12450,
-        likes: 342,
-        comments: 56,
-        shares: 128,
-        seo: {
-            metaTitle: 'Getting Started with Next.js 14 - Complete Guide 2024',
-            metaDescription: 'Master Next.js 14 with this comprehensive guide covering App Router, Server Components, and best practices for modern web development.',
-            focusKeyword: 'Next.js 14 tutorial',
-        },
-        featured: true,
-        createdAt: '2024-01-10',
-        updatedAt: '2024-01-15',
-    },
-    {
-        id: '2',
-        title: 'AI Integration Best Practices for Modern Applications',
-        slug: 'ai-integration-best-practices-modern-applications',
-        excerpt: 'Discover the best practices for integrating AI capabilities into your applications, from API design to user experience.',
-        content: 'Full article content here...',
-        featuredImage: '/blog/ai-integration.jpg',
-        author: 'John Doe',
-        authorAvatar: '/avatars/john.jpg',
-        category: 'AI & ML',
-        tags: ['AI', 'Machine Learning', 'API', 'Integration'],
-        status: 'published',
-        publishDate: '2024-01-12',
-        readTime: 15,
-        views: 9800,
-        likes: 287,
-        comments: 43,
-        shares: 95,
-        seo: {
-            metaTitle: 'AI Integration Best Practices - Complete Guide',
-            metaDescription: 'Learn how to effectively integrate AI into your applications with these proven best practices and implementation strategies.',
-            focusKeyword: 'AI integration',
-        },
-        featured: true,
-        createdAt: '2024-01-08',
-        updatedAt: '2024-01-12',
-    },
-    {
-        id: '3',
-        title: 'Mobile App Development with React Native in 2024',
-        slug: 'mobile-app-development-react-native-2024',
-        excerpt: 'Everything you need to know about building cross-platform mobile apps with React Native in 2024.',
-        content: 'Full article content here...',
-        featuredImage: '/blog/react-native.jpg',
-        author: 'Jane Smith',
-        authorAvatar: '/avatars/jane.jpg',
-        category: 'Mobile',
-        tags: ['React Native', 'Mobile Development', 'iOS', 'Android'],
-        status: 'published',
-        publishDate: '2024-01-10',
-        readTime: 10,
-        views: 7560,
-        likes: 198,
-        comments: 34,
-        shares: 67,
-        seo: {
-            metaTitle: 'React Native Development Guide 2024',
-            metaDescription: 'Build powerful cross-platform mobile apps with React Native. Complete guide with best practices and tips.',
-            focusKeyword: 'React Native 2024',
-        },
-        featured: false,
-        createdAt: '2024-01-05',
-        updatedAt: '2024-01-10',
-    },
-    {
-        id: '4',
-        title: 'E-Commerce Trends That Will Dominate 2024',
-        slug: 'ecommerce-trends-dominate-2024',
-        excerpt: 'Explore the emerging e-commerce trends that will shape online retail in 2024 and beyond.',
-        content: 'Full article content here...',
-        featuredImage: '/blog/ecommerce-trends.jpg',
-        author: 'Admin',
-        authorAvatar: '/avatars/admin.jpg',
-        category: 'E-Commerce',
-        tags: ['E-Commerce', 'Trends', 'Retail', 'Business'],
-        status: 'draft',
-        publishDate: '',
-        readTime: 8,
-        views: 0,
-        likes: 0,
-        comments: 0,
-        shares: 0,
-        seo: {
-            metaTitle: 'Top E-Commerce Trends 2024',
-            metaDescription: 'Discover the latest e-commerce trends that will define online shopping in 2024.',
-            focusKeyword: 'e-commerce trends 2024',
-        },
-        featured: false,
-        createdAt: '2024-01-08',
-        updatedAt: '2024-01-08',
-    },
-    {
-        id: '5',
-        title: 'DevOps CI/CD Pipeline Setup: From Zero to Production',
-        slug: 'devops-cicd-pipeline-setup-zero-production',
-        excerpt: 'Step-by-step guide to setting up a complete CI/CD pipeline for your development workflow.',
-        content: 'Full article content here...',
-        featuredImage: '/blog/devops-cicd.jpg',
-        author: 'Mike Johnson',
-        authorAvatar: '/avatars/mike.jpg',
-        category: 'DevOps',
-        tags: ['DevOps', 'CI/CD', 'Automation', 'Deployment'],
-        status: 'published',
-        publishDate: '2024-01-05',
-        readTime: 18,
-        views: 5420,
-        likes: 156,
-        comments: 28,
-        shares: 45,
-        seo: {
-            metaTitle: 'DevOps CI/CD Pipeline Setup Guide',
-            metaDescription: 'Learn to build a robust CI/CD pipeline from scratch. Complete DevOps guide for modern development teams.',
-            focusKeyword: 'CI/CD pipeline setup',
-        },
-        featured: false,
-        createdAt: '2024-01-01',
-        updatedAt: '2024-01-05',
-    },
-    {
-        id: '6',
-        title: 'Data Analytics for Business Growth: A Practical Guide',
-        slug: 'data-analytics-business-growth-practical-guide',
-        excerpt: 'Learn how to leverage data analytics to drive business decisions and accelerate growth.',
-        content: 'Full article content here...',
-        featuredImage: '/blog/data-analytics.jpg',
-        author: 'Jane Smith',
-        authorAvatar: '/avatars/jane.jpg',
-        category: 'Analytics',
-        tags: ['Analytics', 'Data', 'Business', 'Growth'],
-        status: 'scheduled',
-        publishDate: '',
-        scheduledDate: '2024-02-01',
-        readTime: 14,
-        views: 0,
-        likes: 0,
-        comments: 0,
-        shares: 0,
-        seo: {
-            metaTitle: 'Data Analytics for Business Growth',
-            metaDescription: 'Practical guide to using data analytics for driving business decisions and growth strategies.',
-            focusKeyword: 'data analytics business',
-        },
-        featured: false,
-        createdAt: '2024-01-03',
-        updatedAt: '2024-01-03',
-    },
-    {
-        id: '7',
-        title: 'UI/UX Design Principles for Web Applications',
-        slug: 'ui-ux-design-principles-web-applications',
-        excerpt: 'Essential design principles every web developer should know for creating user-friendly interfaces.',
-        content: 'Full article content here...',
-        featuredImage: '/blog/ui-ux-design.jpg',
-        author: 'John Doe',
-        authorAvatar: '/avatars/john.jpg',
-        category: 'Design',
-        tags: ['UI/UX', 'Design', 'Web Development', 'User Experience'],
-        status: 'draft',
-        publishDate: '',
-        readTime: 11,
-        views: 0,
-        likes: 0,
-        comments: 0,
-        shares: 0,
-        seo: {
-            metaTitle: 'UI/UX Design Principles for Web Apps',
-            metaDescription: 'Learn essential UI/UX design principles to create intuitive and engaging web applications.',
-            focusKeyword: 'UI UX design principles',
-        },
-        featured: false,
-        createdAt: '2024-01-02',
-        updatedAt: '2024-01-02',
-    },
+interface PaginationInfo {
+    page: number;
+    limit: number;
+    total: number;
+    totalPages: number;
+}
+
+const categories = ['All', 'general', 'web-development', 'ai-ml', 'mobile', 'e-commerce', 'devops', 'analytics', 'design', 'business'];
+const locales = [
+    { code: 'en', name: 'English', flag: '🇬🇧' },
+    { code: 'tr', name: 'Turkish', flag: '🇹🇷' },
+    { code: 'de', name: 'German', flag: '🇩🇪' },
+    { code: 'ur', name: 'Urdu', flag: '🇵🇰' },
+    { code: 'ar', name: 'Arabic', flag: '🇸🇦' },
 ];
 
 export default function BlogContentPage() {
-    const [posts, setPosts] = useState<BlogPost[]>(initialPosts);
+    const [posts, setPosts] = useState<BlogPost[]>([]);
+    const [pagination, setPagination] = useState<PaginationInfo>({ page: 1, limit: 10, total: 0, totalPages: 0 });
+    const [loading, setLoading] = useState(true);
+    const [saving, setSaving] = useState(false);
+    const [error, setError] = useState<string | null>(null);
+
     const [searchTerm, setSearchTerm] = useState('');
     const [selectedCategory, setSelectedCategory] = useState('All');
-    const [selectedAuthor, setSelectedAuthor] = useState('All');
-    const [statusFilter, setStatusFilter] = useState<'all' | 'published' | 'draft' | 'scheduled'>('all');
+    const [statusFilter, setStatusFilter] = useState<'all' | 'DRAFT' | 'PUBLISHED' | 'ARCHIVED'>('all');
     const [showAddModal, setShowAddModal] = useState(false);
     const [showEditModal, setShowEditModal] = useState<string | null>(null);
     const [showDeleteModal, setShowDeleteModal] = useState<string | null>(null);
@@ -266,143 +87,214 @@ export default function BlogContentPage() {
         slug: '',
         excerpt: '',
         content: '',
-        author: 'Admin',
-        category: 'Web Development',
+        category: 'general',
         tags: '',
-        status: 'draft' as 'published' | 'draft' | 'scheduled',
-        scheduledDate: '',
-        readTime: 5,
+        status: 'DRAFT' as 'DRAFT' | 'PUBLISHED' | 'ARCHIVED',
         featured: false,
-        seo: {
+        featuredImage: '',
+        metaTitle: '',
+        metaDescription: '',
+        translations: locales.slice(1).map(locale => ({
+            locale: locale.code,
+            title: '',
+            excerpt: '',
+            content: '',
             metaTitle: '',
             metaDescription: '',
-            focusKeyword: '',
-        },
+        })),
     };
     const [formData, setFormData] = useState(emptyPost);
-    const [activeTab, setActiveTab] = useState<'content' | 'seo'>('content');
+    const [activeTab, setActiveTab] = useState<'content' | 'translations' | 'seo'>('content');
+    const [activeTranslationLocale, setActiveTranslationLocale] = useState('tr');
 
-    const filteredPosts = posts.filter(post => {
-        const matchesSearch = post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            post.excerpt.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            post.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()));
-        const matchesCategory = selectedCategory === 'All' || post.category === selectedCategory;
-        const matchesAuthor = selectedAuthor === 'All' || post.author === selectedAuthor;
-        const matchesStatus = statusFilter === 'all' || post.status === statusFilter;
-        return matchesSearch && matchesCategory && matchesAuthor && matchesStatus;
-    });
+    // Fetch posts from API
+    const fetchPosts = useCallback(async () => {
+        setLoading(true);
+        setError(null);
+        try {
+            const params = new URLSearchParams({
+                page: pagination.page.toString(),
+                limit: pagination.limit.toString(),
+            });
+            if (statusFilter !== 'all') params.set('status', statusFilter);
+            if (selectedCategory !== 'All') params.set('category', selectedCategory);
+            if (searchTerm) params.set('search', searchTerm);
 
-    const totalViews = posts.reduce((acc, p) => acc + p.views, 0);
-    const totalEngagement = posts.reduce((acc, p) => acc + p.likes + p.comments + p.shares, 0);
+            const res = await fetch(`/api/admin/blog/posts?${params}`);
+            const data = await res.json();
+
+            if (data.success) {
+                setPosts(data.data);
+                setPagination(data.pagination);
+            } else {
+                setError(data.message || 'Failed to fetch posts');
+            }
+        } catch (err) {
+            setError('Failed to connect to server');
+            console.error('Error fetching posts:', err);
+        } finally {
+            setLoading(false);
+        }
+    }, [pagination.page, pagination.limit, statusFilter, selectedCategory, searchTerm]);
+
+    useEffect(() => {
+        fetchPosts();
+    }, [fetchPosts]);
+
+    // Stats
+    const totalPosts = posts.length;
+    const publishedCount = posts.filter(p => p.status === 'PUBLISHED').length;
+    const draftCount = posts.filter(p => p.status === 'DRAFT').length;
 
     const getStatusColor = (status: string) => {
         switch (status) {
-            case 'published': return 'bg-emerald-100 text-emerald-800';
-            case 'draft': return 'bg-yellow-100 text-yellow-800';
-            case 'scheduled': return 'bg-blue-100 text-blue-800';
+            case 'PUBLISHED': return 'bg-emerald-100 text-emerald-800';
+            case 'DRAFT': return 'bg-yellow-100 text-yellow-800';
+            case 'ARCHIVED': return 'bg-gray-100 text-gray-800';
             default: return 'bg-gray-100 text-gray-800';
         }
     };
 
     const getStatusIcon = (status: string) => {
         switch (status) {
-            case 'published': return <EyeIcon className="w-3 h-3" />;
-            case 'draft': return <DocumentTextIcon className="w-3 h-3" />;
-            case 'scheduled': return <ClockIcon className="w-3 h-3" />;
+            case 'PUBLISHED': return <EyeIcon className="w-3 h-3" />;
+            case 'DRAFT': return <DocumentTextIcon className="w-3 h-3" />;
+            case 'ARCHIVED': return <ClockIcon className="w-3 h-3" />;
             default: return null;
         }
     };
 
-    const toggleFeatured = (id: string) => {
-        setPosts(prev => prev.map(p =>
-            p.id === id ? { ...p, featured: !p.featured } : p
-        ));
+    const toggleFeatured = async (id: string, currentFeatured: boolean) => {
+        try {
+            const res = await fetch(`/api/admin/blog/posts/${id}`, {
+                method: 'PATCH',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ featured: !currentFeatured }),
+            });
+            const data = await res.json();
+            if (data.success) {
+                setPosts(prev => prev.map(p => p.id === id ? { ...p, featured: !currentFeatured } : p));
+            }
+        } catch (err) {
+            console.error('Error toggling featured:', err);
+        }
     };
 
     const openEditModal = (post: BlogPost) => {
         setFormData({
             title: post.title,
             slug: post.slug,
-            excerpt: post.excerpt,
+            excerpt: post.excerpt || '',
             content: post.content,
-            author: post.author,
             category: post.category,
             tags: post.tags.join(', '),
             status: post.status,
-            scheduledDate: post.scheduledDate || '',
-            readTime: post.readTime,
             featured: post.featured,
-            seo: { ...post.seo },
+            featuredImage: post.featuredImage || '',
+            metaTitle: post.metaTitle || '',
+            metaDescription: post.metaDescription || '',
+            translations: locales.slice(1).map(locale => {
+                const existing = post.translations.find(t => t.locale === locale.code);
+                return {
+                    locale: locale.code,
+                    title: existing?.title || '',
+                    excerpt: existing?.excerpt || '',
+                    content: existing?.content || '',
+                    metaTitle: existing?.metaTitle || '',
+                    metaDescription: existing?.metaDescription || '',
+                };
+            }),
         });
         setShowEditModal(post.id);
         setActiveTab('content');
     };
 
-    const savePost = () => {
+    const savePost = async () => {
         if (!formData.title.trim()) return;
+        setSaving(true);
+        setError(null);
 
-        if (showEditModal) {
-            setPosts(prev => prev.map(p =>
-                p.id === showEditModal ? {
-                    ...p,
-                    title: formData.title,
-                    slug: formData.slug || formData.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, ''),
-                    excerpt: formData.excerpt,
-                    content: formData.content,
-                    author: formData.author,
-                    category: formData.category,
-                    tags: formData.tags.split(',').map(t => t.trim()).filter(Boolean),
-                    status: formData.status,
-                    scheduledDate: formData.status === 'scheduled' ? formData.scheduledDate : undefined,
-                    publishDate: formData.status === 'published' ? new Date().toISOString().split('T')[0] : p.publishDate,
-                    readTime: formData.readTime,
-                    featured: formData.featured,
-                    seo: { ...formData.seo },
-                    updatedAt: new Date().toISOString().split('T')[0],
-                } : p
-            ));
-            setShowEditModal(null);
-        } else {
-            const newId = (Math.max(...posts.map(p => parseInt(p.id))) + 1).toString();
-            const now = new Date().toISOString().split('T')[0];
-            setPosts(prev => [...prev, {
-                id: newId,
+        try {
+            const postData = {
                 title: formData.title,
                 slug: formData.slug || formData.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, ''),
-                excerpt: formData.excerpt,
+                excerpt: formData.excerpt || undefined,
                 content: formData.content,
-                featuredImage: '/blog/default.jpg',
-                author: formData.author,
-                authorAvatar: '/avatars/default.jpg',
                 category: formData.category,
                 tags: formData.tags.split(',').map(t => t.trim()).filter(Boolean),
                 status: formData.status,
-                publishDate: formData.status === 'published' ? now : '',
-                scheduledDate: formData.status === 'scheduled' ? formData.scheduledDate : undefined,
-                readTime: formData.readTime,
-                views: 0,
-                likes: 0,
-                comments: 0,
-                shares: 0,
-                seo: { ...formData.seo },
                 featured: formData.featured,
-                createdAt: now,
-                updatedAt: now,
-            }]);
-            setShowAddModal(false);
-        }
+                featuredImage: formData.featuredImage || undefined,
+                metaTitle: formData.metaTitle || undefined,
+                metaDescription: formData.metaDescription || undefined,
+                translations: formData.translations.filter(t => t.title && t.content),
+            };
 
-        setFormData(emptyPost);
+            if (showEditModal) {
+                const res = await fetch(`/api/admin/blog/posts/${showEditModal}`, {
+                    method: 'PATCH',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(postData),
+                });
+                const data = await res.json();
+                if (data.success) {
+                    await fetchPosts();
+                    setShowEditModal(null);
+                    setFormData(emptyPost);
+                } else {
+                    setError(data.message || 'Failed to update post');
+                }
+            } else {
+                const res = await fetch('/api/admin/blog/posts', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(postData),
+                });
+                const data = await res.json();
+                if (data.success) {
+                    await fetchPosts();
+                    setShowAddModal(false);
+                    setFormData(emptyPost);
+                } else {
+                    setError(data.message || 'Failed to create post');
+                }
+            }
+        } catch (err) {
+            setError('Failed to save post');
+            console.error('Error saving post:', err);
+        } finally {
+            setSaving(false);
+        }
     };
 
-    const deletePost = (id: string) => {
-        setPosts(prev => prev.filter(p => p.id !== id));
-        setShowDeleteModal(null);
+    const deletePost = async (id: string) => {
+        try {
+            const res = await fetch(`/api/admin/blog/posts/${id}`, { method: 'DELETE' });
+            const data = await res.json();
+            if (data.success) {
+                setPosts(prev => prev.filter(p => p.id !== id));
+                setShowDeleteModal(null);
+            } else {
+                setError(data.message || 'Failed to delete post');
+            }
+        } catch (err) {
+            setError('Failed to delete post');
+            console.error('Error deleting post:', err);
+        }
+    };
+
+    const updateTranslation = (locale: string, field: string, value: string) => {
+        setFormData(prev => ({
+            ...prev,
+            translations: prev.translations.map(t =>
+                t.locale === locale ? { ...t, [field]: value } : t
+            ),
+        }));
     };
 
     const PostModal = ({ isEdit = false }: { isEdit?: boolean }) => (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-            <div className="bg-white rounded-2xl w-full max-w-3xl max-h-[90vh] overflow-hidden shadow-xl">
+            <div className="bg-white rounded-2xl w-full max-w-4xl max-h-[90vh] overflow-hidden shadow-xl">
                 <div className="px-6 py-4 border-b border-gray-200 flex items-center justify-between">
                     <h2 className="text-lg font-semibold text-gray-900">
                         {isEdit ? 'Edit Blog Post' : 'Create New Blog Post'}
@@ -419,6 +311,13 @@ export default function BlogContentPage() {
                     </button>
                 </div>
 
+                {/* Error Message */}
+                {error && (
+                    <div className="mx-6 mt-4 p-3 bg-red-50 border border-red-200 rounded-lg text-red-700 text-sm">
+                        {error}
+                    </div>
+                )}
+
                 {/* Tabs */}
                 <div className="flex border-b border-gray-200">
                     <button
@@ -429,7 +328,23 @@ export default function BlogContentPage() {
                                 : 'border-transparent text-gray-500 hover:text-gray-700'
                         }`}
                     >
-                        Content
+                        <span className="flex items-center gap-2">
+                            <DocumentTextIcon className="w-4 h-4" />
+                            Content (EN)
+                        </span>
+                    </button>
+                    <button
+                        onClick={() => setActiveTab('translations')}
+                        className={`px-6 py-3 text-sm font-medium border-b-2 transition-colors ${
+                            activeTab === 'translations'
+                                ? 'border-emerald-500 text-emerald-600'
+                                : 'border-transparent text-gray-500 hover:text-gray-700'
+                        }`}
+                    >
+                        <span className="flex items-center gap-2">
+                            <LanguageIcon className="w-4 h-4" />
+                            Translations
+                        </span>
                     </button>
                     <button
                         onClick={() => setActiveTab('seo')}
@@ -439,7 +354,10 @@ export default function BlogContentPage() {
                                 : 'border-transparent text-gray-500 hover:text-gray-700'
                         }`}
                     >
-                        SEO Settings
+                        <span className="flex items-center gap-2">
+                            <GlobeAltIcon className="w-4 h-4" />
+                            SEO Settings
+                        </span>
                     </button>
                 </div>
 
@@ -447,7 +365,7 @@ export default function BlogContentPage() {
                     {activeTab === 'content' && (
                         <div className="space-y-4">
                             <div>
-                                <label className="block text-sm font-medium text-gray-700 mb-1">Title *</label>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">Title (English) *</label>
                                 <input
                                     type="text"
                                     value={formData.title}
@@ -455,10 +373,7 @@ export default function BlogContentPage() {
                                         ...prev,
                                         title: e.target.value,
                                         slug: e.target.value.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, ''),
-                                        seo: {
-                                            ...prev.seo,
-                                            metaTitle: prev.seo.metaTitle || e.target.value,
-                                        }
+                                        metaTitle: prev.metaTitle || e.target.value,
                                     }))}
                                     placeholder="Enter post title..."
                                     className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
@@ -479,16 +394,13 @@ export default function BlogContentPage() {
                             </div>
 
                             <div>
-                                <label className="block text-sm font-medium text-gray-700 mb-1">Excerpt</label>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">Excerpt (English)</label>
                                 <textarea
                                     value={formData.excerpt}
                                     onChange={(e) => setFormData(prev => ({
                                         ...prev,
                                         excerpt: e.target.value,
-                                        seo: {
-                                            ...prev.seo,
-                                            metaDescription: prev.seo.metaDescription || e.target.value.slice(0, 160),
-                                        }
+                                        metaDescription: prev.metaDescription || e.target.value.slice(0, 160),
                                     }))}
                                     rows={2}
                                     placeholder="Brief summary of the post..."
@@ -497,39 +409,34 @@ export default function BlogContentPage() {
                             </div>
 
                             <div>
-                                <label className="block text-sm font-medium text-gray-700 mb-1">Content</label>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">Content (English) *</label>
                                 <textarea
                                     value={formData.content}
                                     onChange={(e) => setFormData(prev => ({ ...prev, content: e.target.value }))}
-                                    rows={8}
+                                    rows={10}
                                     placeholder="Write your blog post content here... (Markdown supported)"
                                     className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent resize-none font-mono text-sm"
                                 />
                             </div>
 
-                            {/* Featured image placeholder */}
+                            {/* Featured image */}
                             <div>
-                                <label className="block text-sm font-medium text-gray-700 mb-1">Featured Image</label>
-                                <div className="border-2 border-dashed border-gray-200 rounded-lg p-6 text-center hover:border-emerald-400 transition-colors cursor-pointer">
-                                    <PhotoIcon className="w-10 h-10 text-gray-400 mx-auto mb-2" />
-                                    <p className="text-sm text-gray-500">Click to upload or drag and drop</p>
-                                    <p className="text-xs text-gray-400 mt-1">PNG, JPG up to 5MB (1200x630 recommended)</p>
-                                </div>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">Featured Image URL</label>
+                                <input
+                                    type="text"
+                                    value={formData.featuredImage}
+                                    onChange={(e) => setFormData(prev => ({ ...prev, featuredImage: e.target.value }))}
+                                    placeholder="https://example.com/image.jpg"
+                                    className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                                />
+                                {formData.featuredImage && (
+                                    <div className="mt-2 relative aspect-video max-w-xs rounded-lg overflow-hidden bg-gray-100">
+                                        <img src={formData.featuredImage} alt="Preview" className="object-cover w-full h-full" />
+                                    </div>
+                                )}
                             </div>
 
                             <div className="grid grid-cols-2 gap-4">
-                                <div>
-                                    <label className="block text-sm font-medium text-gray-700 mb-1">Author</label>
-                                    <select
-                                        value={formData.author}
-                                        onChange={(e) => setFormData(prev => ({ ...prev, author: e.target.value }))}
-                                        className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500"
-                                    >
-                                        {authors.map(author => (
-                                            <option key={author} value={author}>{author}</option>
-                                        ))}
-                                    </select>
-                                </div>
                                 <div>
                                     <label className="block text-sm font-medium text-gray-700 mb-1">Category</label>
                                     <select
@@ -540,6 +447,18 @@ export default function BlogContentPage() {
                                         {categories.filter(c => c !== 'All').map(cat => (
                                             <option key={cat} value={cat}>{cat}</option>
                                         ))}
+                                    </select>
+                                </div>
+                                <div>
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">Status</label>
+                                    <select
+                                        value={formData.status}
+                                        onChange={(e) => setFormData(prev => ({ ...prev, status: e.target.value as typeof formData.status }))}
+                                        className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500"
+                                    >
+                                        <option value="DRAFT">Draft</option>
+                                        <option value="PUBLISHED">Published</option>
+                                        <option value="ARCHIVED">Archived</option>
                                     </select>
                                 </div>
                             </div>
@@ -553,42 +472,6 @@ export default function BlogContentPage() {
                                     placeholder="e.g., Next.js, React, Tutorial"
                                     className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
                                 />
-                            </div>
-
-                            <div className="grid grid-cols-3 gap-4">
-                                <div>
-                                    <label className="block text-sm font-medium text-gray-700 mb-1">Status</label>
-                                    <select
-                                        value={formData.status}
-                                        onChange={(e) => setFormData(prev => ({ ...prev, status: e.target.value as typeof formData.status }))}
-                                        className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500"
-                                    >
-                                        <option value="draft">Draft</option>
-                                        <option value="published">Published</option>
-                                        <option value="scheduled">Scheduled</option>
-                                    </select>
-                                </div>
-                                {formData.status === 'scheduled' && (
-                                    <div>
-                                        <label className="block text-sm font-medium text-gray-700 mb-1">Schedule Date</label>
-                                        <input
-                                            type="datetime-local"
-                                            value={formData.scheduledDate}
-                                            onChange={(e) => setFormData(prev => ({ ...prev, scheduledDate: e.target.value }))}
-                                            className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
-                                        />
-                                    </div>
-                                )}
-                                <div>
-                                    <label className="block text-sm font-medium text-gray-700 mb-1">Read Time (min)</label>
-                                    <input
-                                        type="number"
-                                        min="1"
-                                        value={formData.readTime}
-                                        onChange={(e) => setFormData(prev => ({ ...prev, readTime: parseInt(e.target.value) || 1 }))}
-                                        className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
-                                    />
-                                </div>
                             </div>
 
                             <div className="flex items-center gap-4 pt-2">
@@ -605,45 +488,149 @@ export default function BlogContentPage() {
                         </div>
                     )}
 
+                    {activeTab === 'translations' && (
+                        <div className="space-y-4">
+                            {/* Language Tabs */}
+                            <div className="flex gap-2 flex-wrap">
+                                {locales.slice(1).map(locale => (
+                                    <button
+                                        key={locale.code}
+                                        onClick={() => setActiveTranslationLocale(locale.code)}
+                                        className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2 ${
+                                            activeTranslationLocale === locale.code
+                                                ? 'bg-emerald-100 text-emerald-700 border-2 border-emerald-500'
+                                                : 'bg-gray-100 text-gray-700 hover:bg-gray-200 border-2 border-transparent'
+                                        }`}
+                                    >
+                                        <span>{locale.flag}</span>
+                                        {locale.name}
+                                        {formData.translations.find(t => t.locale === locale.code)?.title && (
+                                            <span className="w-2 h-2 bg-emerald-500 rounded-full"></span>
+                                        )}
+                                    </button>
+                                ))}
+                            </div>
+
+                            {/* Translation Form */}
+                            {locales.slice(1).map(locale => (
+                                <div
+                                    key={locale.code}
+                                    className={activeTranslationLocale === locale.code ? 'space-y-4' : 'hidden'}
+                                >
+                                    <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
+                                        <span className="text-lg">{locale.flag}</span>
+                                        <span>Translating to <strong>{locale.name}</strong></span>
+                                        {(locale.code === 'ar' || locale.code === 'ur') && (
+                                            <span className="px-2 py-0.5 bg-blue-100 text-blue-700 rounded text-xs">RTL</span>
+                                        )}
+                                    </div>
+
+                                    <div>
+                                        <label className="block text-sm font-medium text-gray-700 mb-1">Title ({locale.name})</label>
+                                        <input
+                                            type="text"
+                                            value={formData.translations.find(t => t.locale === locale.code)?.title || ''}
+                                            onChange={(e) => updateTranslation(locale.code, 'title', e.target.value)}
+                                            placeholder={`Enter title in ${locale.name}...`}
+                                            className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                                            dir={locale.code === 'ar' || locale.code === 'ur' ? 'rtl' : 'ltr'}
+                                        />
+                                    </div>
+
+                                    <div>
+                                        <label className="block text-sm font-medium text-gray-700 mb-1">Excerpt ({locale.name})</label>
+                                        <textarea
+                                            value={formData.translations.find(t => t.locale === locale.code)?.excerpt || ''}
+                                            onChange={(e) => updateTranslation(locale.code, 'excerpt', e.target.value)}
+                                            rows={2}
+                                            placeholder={`Brief summary in ${locale.name}...`}
+                                            className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent resize-none"
+                                            dir={locale.code === 'ar' || locale.code === 'ur' ? 'rtl' : 'ltr'}
+                                        />
+                                    </div>
+
+                                    <div>
+                                        <label className="block text-sm font-medium text-gray-700 mb-1">Content ({locale.name})</label>
+                                        <textarea
+                                            value={formData.translations.find(t => t.locale === locale.code)?.content || ''}
+                                            onChange={(e) => updateTranslation(locale.code, 'content', e.target.value)}
+                                            rows={10}
+                                            placeholder={`Write content in ${locale.name}... (Markdown supported)`}
+                                            className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent resize-none font-mono text-sm"
+                                            dir={locale.code === 'ar' || locale.code === 'ur' ? 'rtl' : 'ltr'}
+                                        />
+                                    </div>
+
+                                    <div className="grid grid-cols-2 gap-4">
+                                        <div>
+                                            <label className="block text-sm font-medium text-gray-700 mb-1">Meta Title ({locale.name})</label>
+                                            <input
+                                                type="text"
+                                                value={formData.translations.find(t => t.locale === locale.code)?.metaTitle || ''}
+                                                onChange={(e) => updateTranslation(locale.code, 'metaTitle', e.target.value)}
+                                                placeholder="SEO title"
+                                                className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                                                dir={locale.code === 'ar' || locale.code === 'ur' ? 'rtl' : 'ltr'}
+                                            />
+                                        </div>
+                                        <div>
+                                            <label className="block text-sm font-medium text-gray-700 mb-1">Meta Description ({locale.name})</label>
+                                            <input
+                                                type="text"
+                                                value={formData.translations.find(t => t.locale === locale.code)?.metaDescription || ''}
+                                                onChange={(e) => updateTranslation(locale.code, 'metaDescription', e.target.value)}
+                                                placeholder="SEO description"
+                                                className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                                                dir={locale.code === 'ar' || locale.code === 'ur' ? 'rtl' : 'ltr'}
+                                            />
+                                        </div>
+                                    </div>
+
+                                    {/* Reference: English content */}
+                                    <div className="mt-6 p-4 bg-gray-50 rounded-lg">
+                                        <h4 className="text-sm font-medium text-gray-700 mb-2">Reference: English Content</h4>
+                                        <div className="text-sm text-gray-600 space-y-2">
+                                            <p><strong>Title:</strong> {formData.title || 'Not set'}</p>
+                                            <p><strong>Excerpt:</strong> {formData.excerpt || 'Not set'}</p>
+                                            <details className="cursor-pointer">
+                                                <summary className="text-emerald-600 hover:text-emerald-700">View full content</summary>
+                                                <pre className="mt-2 p-2 bg-white rounded border text-xs overflow-auto max-h-40">{formData.content || 'Not set'}</pre>
+                                            </details>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    )}
+
                     {activeTab === 'seo' && (
                         <div className="space-y-4">
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-1">Meta Title</label>
                                 <input
                                     type="text"
-                                    value={formData.seo.metaTitle}
-                                    onChange={(e) => setFormData(prev => ({ ...prev, seo: { ...prev.seo, metaTitle: e.target.value } }))}
+                                    value={formData.metaTitle}
+                                    onChange={(e) => setFormData(prev => ({ ...prev, metaTitle: e.target.value }))}
                                     placeholder="SEO title (50-60 characters)"
                                     className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
                                 />
-                                <p className={`text-xs mt-1 ${formData.seo.metaTitle.length > 60 ? 'text-red-500' : 'text-gray-400'}`}>
-                                    {formData.seo.metaTitle.length}/60 characters
+                                <p className={`text-xs mt-1 ${formData.metaTitle.length > 60 ? 'text-red-500' : 'text-gray-400'}`}>
+                                    {formData.metaTitle.length}/60 characters
                                 </p>
                             </div>
 
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-1">Meta Description</label>
                                 <textarea
-                                    value={formData.seo.metaDescription}
-                                    onChange={(e) => setFormData(prev => ({ ...prev, seo: { ...prev.seo, metaDescription: e.target.value } }))}
+                                    value={formData.metaDescription}
+                                    onChange={(e) => setFormData(prev => ({ ...prev, metaDescription: e.target.value }))}
                                     rows={3}
                                     placeholder="SEO description (150-160 characters)"
                                     className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent resize-none"
                                 />
-                                <p className={`text-xs mt-1 ${formData.seo.metaDescription.length > 160 ? 'text-red-500' : 'text-gray-400'}`}>
-                                    {formData.seo.metaDescription.length}/160 characters
+                                <p className={`text-xs mt-1 ${formData.metaDescription.length > 160 ? 'text-red-500' : 'text-gray-400'}`}>
+                                    {formData.metaDescription.length}/160 characters
                                 </p>
-                            </div>
-
-                            <div>
-                                <label className="block text-sm font-medium text-gray-700 mb-1">Focus Keyword</label>
-                                <input
-                                    type="text"
-                                    value={formData.seo.focusKeyword}
-                                    onChange={(e) => setFormData(prev => ({ ...prev, seo: { ...prev.seo, focusKeyword: e.target.value } }))}
-                                    placeholder="Primary keyword for this post"
-                                    className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
-                                />
                             </div>
 
                             {/* SEO Preview */}
@@ -651,13 +638,13 @@ export default function BlogContentPage() {
                                 <label className="block text-sm font-medium text-gray-700 mb-2">Search Engine Preview</label>
                                 <div className="bg-white border border-gray-200 rounded-lg p-4">
                                     <div className="text-blue-600 text-lg hover:underline cursor-pointer truncate">
-                                        {formData.seo.metaTitle || formData.title || 'Page Title'}
+                                        {formData.metaTitle || formData.title || 'Page Title'}
                                     </div>
                                     <div className="text-emerald-700 text-sm truncate">
-                                        yourdomain.com/blog/{formData.slug || 'page-slug'}
+                                        paksoft.com.tr/blog/{formData.slug || 'page-slug'}
                                     </div>
                                     <div className="text-gray-600 text-sm mt-1 line-clamp-2">
-                                        {formData.seo.metaDescription || formData.excerpt || 'Add a meta description to see a preview here...'}
+                                        {formData.metaDescription || formData.excerpt || 'Add a meta description to see a preview here...'}
                                     </div>
                                 </div>
                             </div>
@@ -665,24 +652,34 @@ export default function BlogContentPage() {
                     )}
                 </div>
 
-                <div className="px-6 py-4 bg-gray-50 border-t border-gray-200 flex items-center justify-end gap-3">
-                    <button
-                        onClick={() => {
-                            isEdit ? setShowEditModal(null) : setShowAddModal(false);
-                            setFormData(emptyPost);
-                            setActiveTab('content');
-                        }}
-                        className="px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
-                    >
-                        Cancel
-                    </button>
-                    <button
-                        onClick={savePost}
-                        disabled={!formData.title.trim()}
-                        className="px-4 py-2 text-sm font-medium bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-                    >
-                        {isEdit ? 'Save Changes' : 'Create Post'}
-                    </button>
+                <div className="px-6 py-4 bg-gray-50 border-t border-gray-200 flex items-center justify-between">
+                    <div className="text-sm text-gray-500">
+                        {activeTab === 'translations' && (
+                            <span>
+                                {formData.translations.filter(t => t.title && t.content).length} of {locales.length - 1} translations complete
+                            </span>
+                        )}
+                    </div>
+                    <div className="flex items-center gap-3">
+                        <button
+                            onClick={() => {
+                                isEdit ? setShowEditModal(null) : setShowAddModal(false);
+                                setFormData(emptyPost);
+                                setActiveTab('content');
+                            }}
+                            className="px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
+                        >
+                            Cancel
+                        </button>
+                        <button
+                            onClick={savePost}
+                            disabled={!formData.title.trim() || !formData.content.trim() || saving}
+                            className="px-4 py-2 text-sm font-medium bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+                        >
+                            {saving && <ArrowPathIcon className="w-4 h-4 animate-spin" />}
+                            {isEdit ? 'Save Changes' : 'Create Post'}
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -694,23 +691,40 @@ export default function BlogContentPage() {
             <div className="flex items-center justify-between">
                 <div>
                     <h1 className="text-2xl font-bold text-gray-900">Blog Management</h1>
-                    <p className="text-gray-500 mt-1">Create and manage blog posts, articles, and content.</p>
+                    <p className="text-gray-500 mt-1">Create and manage multilingual blog posts.</p>
                 </div>
-                <button
-                    onClick={() => setShowAddModal(true)}
-                    className="flex items-center gap-2 px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors"
-                >
-                    <PlusIcon className="w-5 h-5" />
-                    New Post
-                </button>
+                <div className="flex items-center gap-2">
+                    <button
+                        onClick={fetchPosts}
+                        className="p-2 text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
+                        title="Refresh"
+                    >
+                        <ArrowPathIcon className={`w-5 h-5 ${loading ? 'animate-spin' : ''}`} />
+                    </button>
+                    <button
+                        onClick={() => setShowAddModal(true)}
+                        className="flex items-center gap-2 px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors"
+                    >
+                        <PlusIcon className="w-5 h-5" />
+                        New Post
+                    </button>
+                </div>
             </div>
 
+            {/* Error Message */}
+            {error && (
+                <div className="p-4 bg-red-50 border border-red-200 rounded-lg text-red-700">
+                    {error}
+                    <button onClick={() => setError(null)} className="ml-2 underline">Dismiss</button>
+                </div>
+            )}
+
             {/* Stats Cards */}
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="bg-white rounded-xl border border-gray-200 p-4">
                     <div className="flex items-center justify-between">
                         <div>
-                            <div className="text-2xl font-bold text-gray-900">{posts.length}</div>
+                            <div className="text-2xl font-bold text-gray-900">{pagination.total}</div>
                             <div className="text-sm text-gray-500">Total Posts</div>
                         </div>
                         <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
@@ -722,7 +736,7 @@ export default function BlogContentPage() {
                 <div className="bg-white rounded-xl border border-gray-200 p-4">
                     <div className="flex items-center justify-between">
                         <div>
-                            <div className="text-2xl font-bold text-emerald-600">{posts.filter(p => p.status === 'published').length}</div>
+                            <div className="text-2xl font-bold text-emerald-600">{publishedCount}</div>
                             <div className="text-sm text-gray-500">Published</div>
                         </div>
                         <div className="w-10 h-10 rounded-lg bg-emerald-50 flex items-center justify-center">
@@ -734,7 +748,7 @@ export default function BlogContentPage() {
                 <div className="bg-white rounded-xl border border-gray-200 p-4">
                     <div className="flex items-center justify-between">
                         <div>
-                            <div className="text-2xl font-bold text-yellow-600">{posts.filter(p => p.status === 'draft').length}</div>
+                            <div className="text-2xl font-bold text-yellow-600">{draftCount}</div>
                             <div className="text-sm text-gray-500">Drafts</div>
                         </div>
                         <div className="w-10 h-10 rounded-lg bg-yellow-50 flex items-center justify-center">
@@ -746,23 +760,11 @@ export default function BlogContentPage() {
                 <div className="bg-white rounded-xl border border-gray-200 p-4">
                     <div className="flex items-center justify-between">
                         <div>
-                            <div className="text-2xl font-bold text-blue-600">{totalViews.toLocaleString()}</div>
-                            <div className="text-sm text-gray-500">Total Views</div>
+                            <div className="text-2xl font-bold text-blue-600">{locales.length}</div>
+                            <div className="text-sm text-gray-500">Languages</div>
                         </div>
                         <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center">
-                            <ChartBarIcon className="w-5 h-5 text-blue-600" />
-                        </div>
-                    </div>
-                </div>
-
-                <div className="bg-white rounded-xl border border-gray-200 p-4">
-                    <div className="flex items-center justify-between">
-                        <div>
-                            <div className="text-2xl font-bold text-purple-600">{totalEngagement.toLocaleString()}</div>
-                            <div className="text-sm text-gray-500">Engagement</div>
-                        </div>
-                        <div className="w-10 h-10 rounded-lg bg-purple-50 flex items-center justify-center">
-                            <HeartIcon className="w-5 h-5 text-purple-600" />
+                            <LanguageIcon className="w-5 h-5 text-blue-600" />
                         </div>
                     </div>
                 </div>
@@ -793,18 +795,6 @@ export default function BlogContentPage() {
                         ))}
                     </select>
 
-                    {/* Author Filter */}
-                    <select
-                        value={selectedAuthor}
-                        onChange={(e) => setSelectedAuthor(e.target.value)}
-                        className="px-3 py-2 border border-gray-200 rounded-lg text-sm bg-white"
-                    >
-                        <option value="All">All Authors</option>
-                        {authors.map(author => (
-                            <option key={author} value={author}>{author}</option>
-                        ))}
-                    </select>
-
                     {/* Status Filter */}
                     <div className="flex items-center gap-1 bg-white border border-gray-200 rounded-lg p-1">
                         <button
@@ -814,22 +804,16 @@ export default function BlogContentPage() {
                             All
                         </button>
                         <button
-                            onClick={() => setStatusFilter('published')}
-                            className={`px-3 py-1.5 text-sm rounded-md transition-colors ${statusFilter === 'published' ? 'bg-emerald-100 text-emerald-700 font-medium' : 'text-gray-500 hover:text-gray-700'}`}
+                            onClick={() => setStatusFilter('PUBLISHED')}
+                            className={`px-3 py-1.5 text-sm rounded-md transition-colors ${statusFilter === 'PUBLISHED' ? 'bg-emerald-100 text-emerald-700 font-medium' : 'text-gray-500 hover:text-gray-700'}`}
                         >
                             Published
                         </button>
                         <button
-                            onClick={() => setStatusFilter('draft')}
-                            className={`px-3 py-1.5 text-sm rounded-md transition-colors ${statusFilter === 'draft' ? 'bg-yellow-100 text-yellow-700 font-medium' : 'text-gray-500 hover:text-gray-700'}`}
+                            onClick={() => setStatusFilter('DRAFT')}
+                            className={`px-3 py-1.5 text-sm rounded-md transition-colors ${statusFilter === 'DRAFT' ? 'bg-yellow-100 text-yellow-700 font-medium' : 'text-gray-500 hover:text-gray-700'}`}
                         >
                             Drafts
-                        </button>
-                        <button
-                            onClick={() => setStatusFilter('scheduled')}
-                            className={`px-3 py-1.5 text-sm rounded-md transition-colors ${statusFilter === 'scheduled' ? 'bg-blue-100 text-blue-700 font-medium' : 'text-gray-500 hover:text-gray-700'}`}
-                        >
-                            Scheduled
                         </button>
                     </div>
 
@@ -855,17 +839,28 @@ export default function BlogContentPage() {
                 </div>
             </div>
 
+            {/* Loading State */}
+            {loading && (
+                <div className="flex items-center justify-center py-12">
+                    <ArrowPathIcon className="w-8 h-8 text-emerald-600 animate-spin" />
+                </div>
+            )}
+
             {/* Posts List View */}
-            {viewMode === 'list' && (
+            {!loading && viewMode === 'list' && (
                 <div className="space-y-4">
-                    {filteredPosts.map((post) => (
+                    {posts.map((post) => (
                         <div key={post.id} className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition-all">
                             <div className="flex">
                                 {/* Featured Image */}
                                 <div className="w-48 h-40 flex-shrink-0 bg-gradient-to-br from-emerald-400 to-blue-500 relative">
-                                    <div className="absolute inset-0 flex items-center justify-center text-white/20 text-4xl font-bold">
-                                        {post.title.charAt(0)}
-                                    </div>
+                                    {post.featuredImage ? (
+                                        <img src={post.featuredImage} alt={post.title} className="w-full h-full object-cover" />
+                                    ) : (
+                                        <div className="absolute inset-0 flex items-center justify-center text-white/20 text-4xl font-bold">
+                                            {post.title.charAt(0)}
+                                        </div>
+                                    )}
                                     {post.featured && (
                                         <div className="absolute top-2 left-2">
                                             <span className="inline-flex items-center gap-1 px-2 py-1 text-xs font-medium rounded-full bg-yellow-400 text-yellow-900">
@@ -887,6 +882,11 @@ export default function BlogContentPage() {
                                                 <span className="px-2 py-0.5 text-xs font-medium rounded-full bg-gray-100 text-gray-600">
                                                     {post.category}
                                                 </span>
+                                                {/* Translation count */}
+                                                <span className="px-2 py-0.5 text-xs font-medium rounded-full bg-blue-50 text-blue-600 flex items-center gap-1">
+                                                    <LanguageIcon className="w-3 h-3" />
+                                                    {post.translations.length + 1} lang
+                                                </span>
                                             </div>
                                             <h3 className="font-semibold text-gray-900 mb-1 line-clamp-1">{post.title}</h3>
                                             <p className="text-sm text-gray-500 mb-2 line-clamp-2">{post.excerpt}</p>
@@ -894,16 +894,8 @@ export default function BlogContentPage() {
                                             {/* Meta */}
                                             <div className="flex items-center gap-4 text-xs text-gray-500">
                                                 <div className="flex items-center gap-1">
-                                                    <UserIcon className="w-3 h-3" />
-                                                    {post.author}
-                                                </div>
-                                                <div className="flex items-center gap-1">
                                                     <CalendarIcon className="w-3 h-3" />
-                                                    {post.status === 'scheduled' ? `Scheduled: ${post.scheduledDate}` : post.publishDate || 'Not published'}
-                                                </div>
-                                                <div className="flex items-center gap-1">
-                                                    <ClockIcon className="w-3 h-3" />
-                                                    {post.readTime} min read
+                                                    {post.publishedAt ? new Date(post.publishedAt).toLocaleDateString() : 'Not published'}
                                                 </div>
                                             </div>
 
@@ -922,50 +914,40 @@ export default function BlogContentPage() {
                                             </div>
                                         </div>
 
-                                        {/* Stats & Actions */}
-                                        <div className="text-right">
-                                            <div className="grid grid-cols-2 gap-x-4 gap-y-1 mb-3">
-                                                <div className="text-xs text-gray-500">Views</div>
-                                                <div className="text-sm font-semibold text-gray-900">{post.views.toLocaleString()}</div>
-                                                <div className="text-xs text-gray-500">Likes</div>
-                                                <div className="text-sm font-semibold text-pink-600">{post.likes}</div>
-                                                <div className="text-xs text-gray-500">Comments</div>
-                                                <div className="text-sm font-semibold text-blue-600">{post.comments}</div>
-                                            </div>
-                                            <div className="flex items-center gap-1 justify-end">
-                                                <button
-                                                    onClick={() => toggleFeatured(post.id)}
-                                                    className={`p-1.5 rounded-lg transition-colors ${
-                                                        post.featured
-                                                            ? 'text-yellow-500 hover:bg-yellow-50'
-                                                            : 'text-gray-400 hover:bg-gray-50'
-                                                    }`}
-                                                    title={post.featured ? 'Remove from featured' : 'Add to featured'}
-                                                >
-                                                    <StarIcon className="w-4 h-4" />
-                                                </button>
-                                                <button
-                                                    onClick={() => setShowSeoPreview(post.id)}
-                                                    className="p-1.5 text-gray-400 hover:text-purple-600 hover:bg-purple-50 rounded-lg transition-colors"
-                                                    title="SEO Preview"
-                                                >
-                                                    <GlobeAltIcon className="w-4 h-4" />
-                                                </button>
-                                                <button
-                                                    onClick={() => openEditModal(post)}
-                                                    className="p-1.5 text-gray-400 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-colors"
-                                                    title="Edit"
-                                                >
-                                                    <PencilIcon className="w-4 h-4" />
-                                                </button>
-                                                <button
-                                                    onClick={() => setShowDeleteModal(post.id)}
-                                                    className="p-1.5 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
-                                                    title="Delete"
-                                                >
-                                                    <TrashIcon className="w-4 h-4" />
-                                                </button>
-                                            </div>
+                                        {/* Actions */}
+                                        <div className="flex items-center gap-1">
+                                            <button
+                                                onClick={() => toggleFeatured(post.id, post.featured)}
+                                                className={`p-1.5 rounded-lg transition-colors ${
+                                                    post.featured
+                                                        ? 'text-yellow-500 hover:bg-yellow-50'
+                                                        : 'text-gray-400 hover:bg-gray-50'
+                                                }`}
+                                                title={post.featured ? 'Remove from featured' : 'Add to featured'}
+                                            >
+                                                <StarIcon className="w-4 h-4" />
+                                            </button>
+                                            <button
+                                                onClick={() => setShowSeoPreview(post.id)}
+                                                className="p-1.5 text-gray-400 hover:text-purple-600 hover:bg-purple-50 rounded-lg transition-colors"
+                                                title="SEO Preview"
+                                            >
+                                                <GlobeAltIcon className="w-4 h-4" />
+                                            </button>
+                                            <button
+                                                onClick={() => openEditModal(post)}
+                                                className="p-1.5 text-gray-400 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-colors"
+                                                title="Edit"
+                                            >
+                                                <PencilIcon className="w-4 h-4" />
+                                            </button>
+                                            <button
+                                                onClick={() => setShowDeleteModal(post.id)}
+                                                className="p-1.5 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                                                title="Delete"
+                                            >
+                                                <TrashIcon className="w-4 h-4" />
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -976,15 +958,19 @@ export default function BlogContentPage() {
             )}
 
             {/* Posts Grid View */}
-            {viewMode === 'grid' && (
+            {!loading && viewMode === 'grid' && (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {filteredPosts.map((post) => (
+                    {posts.map((post) => (
                         <div key={post.id} className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition-all group">
                             {/* Featured Image */}
                             <div className="relative aspect-video bg-gradient-to-br from-emerald-400 to-blue-500">
-                                <div className="absolute inset-0 flex items-center justify-center text-white/20 text-6xl font-bold">
-                                    {post.title.charAt(0)}
-                                </div>
+                                {post.featuredImage ? (
+                                    <img src={post.featuredImage} alt={post.title} className="w-full h-full object-cover" />
+                                ) : (
+                                    <div className="absolute inset-0 flex items-center justify-center text-white/20 text-6xl font-bold">
+                                        {post.title.charAt(0)}
+                                    </div>
+                                )}
                                 <div className="absolute top-3 left-3 flex items-center gap-1">
                                     {post.featured && (
                                         <span className="inline-flex items-center gap-1 px-2 py-1 text-xs font-medium rounded-full bg-yellow-400 text-yellow-900">
@@ -1021,45 +1007,21 @@ export default function BlogContentPage() {
                                     <span className="px-2 py-0.5 text-xs font-medium rounded-full bg-gray-100 text-gray-600">
                                         {post.category}
                                     </span>
-                                    <span className="text-xs text-gray-400">{post.readTime} min read</span>
+                                    <span className="px-2 py-0.5 text-xs font-medium rounded-full bg-blue-50 text-blue-600">
+                                        {post.translations.length + 1} lang
+                                    </span>
                                 </div>
 
                                 <h3 className="font-semibold text-gray-900 mb-2 line-clamp-2">{post.title}</h3>
 
-                                <div className="flex items-center gap-2 mb-3">
-                                    <div className="w-6 h-6 rounded-full bg-gray-300 flex items-center justify-center text-xs font-medium text-gray-600">
-                                        {post.author.charAt(0)}
-                                    </div>
-                                    <span className="text-sm text-gray-500">{post.author}</span>
-                                    <span className="text-xs text-gray-400">
-                                        {post.publishDate || (post.scheduledDate && `Scheduled: ${post.scheduledDate}`)}
-                                    </span>
-                                </div>
-
-                                {/* Engagement Stats */}
-                                <div className="flex items-center gap-4 py-3 border-t border-gray-100">
-                                    <div className="flex items-center gap-1 text-gray-500">
-                                        <EyeIcon className="w-4 h-4" />
-                                        <span className="text-sm">{post.views.toLocaleString()}</span>
-                                    </div>
-                                    <div className="flex items-center gap-1 text-pink-500">
-                                        <HeartIcon className="w-4 h-4" />
-                                        <span className="text-sm">{post.likes}</span>
-                                    </div>
-                                    <div className="flex items-center gap-1 text-blue-500">
-                                        <ChatBubbleLeftIcon className="w-4 h-4" />
-                                        <span className="text-sm">{post.comments}</span>
-                                    </div>
-                                    <div className="flex items-center gap-1 text-gray-500">
-                                        <ShareIcon className="w-4 h-4" />
-                                        <span className="text-sm">{post.shares}</span>
-                                    </div>
+                                <div className="text-xs text-gray-400">
+                                    {post.publishedAt ? new Date(post.publishedAt).toLocaleDateString() : 'Draft'}
                                 </div>
 
                                 {/* Actions */}
-                                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
+                                <div className="flex items-center justify-between pt-3 border-t border-gray-100 mt-3">
                                     <button
-                                        onClick={() => toggleFeatured(post.id)}
+                                        onClick={() => toggleFeatured(post.id, post.featured)}
                                         className={`p-1.5 rounded-lg transition-colors ${
                                             post.featured
                                                 ? 'text-yellow-500 hover:bg-yellow-50'
@@ -1090,18 +1052,18 @@ export default function BlogContentPage() {
             )}
 
             {/* Empty state */}
-            {filteredPosts.length === 0 && (
+            {!loading && posts.length === 0 && (
                 <div className="bg-white rounded-xl border border-gray-200 p-12 text-center">
                     <div className="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center mx-auto mb-4">
                         <DocumentTextIcon className="w-8 h-8 text-gray-400" />
                     </div>
                     <h3 className="text-lg font-medium text-gray-900 mb-2">No posts found</h3>
                     <p className="text-gray-500 mb-4">
-                        {searchTerm || selectedCategory !== 'All' || selectedAuthor !== 'All' || statusFilter !== 'all'
+                        {searchTerm || selectedCategory !== 'All' || statusFilter !== 'all'
                             ? 'Try adjusting your filters or search term.'
                             : 'Get started by creating your first blog post.'}
                     </p>
-                    {!searchTerm && selectedCategory === 'All' && selectedAuthor === 'All' && statusFilter === 'all' && (
+                    {!searchTerm && selectedCategory === 'All' && statusFilter === 'all' && (
                         <button
                             onClick={() => setShowAddModal(true)}
                             className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors"
@@ -1110,6 +1072,29 @@ export default function BlogContentPage() {
                             New Post
                         </button>
                     )}
+                </div>
+            )}
+
+            {/* Pagination */}
+            {!loading && pagination.totalPages > 1 && (
+                <div className="flex items-center justify-center gap-2">
+                    <button
+                        onClick={() => setPagination(p => ({ ...p, page: p.page - 1 }))}
+                        disabled={pagination.page === 1}
+                        className="px-3 py-2 text-sm border border-gray-200 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50"
+                    >
+                        Previous
+                    </button>
+                    <span className="text-sm text-gray-600">
+                        Page {pagination.page} of {pagination.totalPages}
+                    </span>
+                    <button
+                        onClick={() => setPagination(p => ({ ...p, page: p.page + 1 }))}
+                        disabled={pagination.page === pagination.totalPages}
+                        className="px-3 py-2 text-sm border border-gray-200 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50"
+                    >
+                        Next
+                    </button>
                 </div>
             )}
 
@@ -1140,33 +1125,29 @@ export default function BlogContentPage() {
                                             <h3 className="text-sm font-medium text-gray-700 mb-2">Google Search Preview</h3>
                                             <div className="bg-white border border-gray-200 rounded-lg p-4">
                                                 <div className="text-blue-600 text-lg hover:underline cursor-pointer truncate">
-                                                    {post.seo.metaTitle || post.title}
+                                                    {post.metaTitle || post.title}
                                                 </div>
                                                 <div className="text-emerald-700 text-sm truncate">
-                                                    yourdomain.com/blog/{post.slug}
+                                                    paksoft.com.tr/blog/{post.slug}
                                                 </div>
                                                 <div className="text-gray-600 text-sm mt-1 line-clamp-2">
-                                                    {post.seo.metaDescription || post.excerpt}
+                                                    {post.metaDescription || post.excerpt}
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div className="space-y-3">
                                             <div>
-                                                <span className="text-xs text-gray-500">Focus Keyword</span>
-                                                <p className="text-sm font-medium text-gray-900">{post.seo.focusKeyword || 'Not set'}</p>
-                                            </div>
-                                            <div>
                                                 <span className="text-xs text-gray-500">Meta Title Length</span>
                                                 <div className="flex items-center gap-2">
                                                     <div className="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden">
                                                         <div
-                                                            className={`h-full ${post.seo.metaTitle.length <= 60 ? 'bg-emerald-500' : 'bg-red-500'}`}
-                                                            style={{ width: `${Math.min((post.seo.metaTitle.length / 60) * 100, 100)}%` }}
+                                                            className={`h-full ${(post.metaTitle?.length || 0) <= 60 ? 'bg-emerald-500' : 'bg-red-500'}`}
+                                                            style={{ width: `${Math.min(((post.metaTitle?.length || 0) / 60) * 100, 100)}%` }}
                                                         />
                                                     </div>
-                                                    <span className={`text-xs ${post.seo.metaTitle.length <= 60 ? 'text-emerald-600' : 'text-red-600'}`}>
-                                                        {post.seo.metaTitle.length}/60
+                                                    <span className={`text-xs ${(post.metaTitle?.length || 0) <= 60 ? 'text-emerald-600' : 'text-red-600'}`}>
+                                                        {post.metaTitle?.length || 0}/60
                                                     </span>
                                                 </div>
                                             </div>
@@ -1175,13 +1156,24 @@ export default function BlogContentPage() {
                                                 <div className="flex items-center gap-2">
                                                     <div className="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden">
                                                         <div
-                                                            className={`h-full ${post.seo.metaDescription.length <= 160 ? 'bg-emerald-500' : 'bg-red-500'}`}
-                                                            style={{ width: `${Math.min((post.seo.metaDescription.length / 160) * 100, 100)}%` }}
+                                                            className={`h-full ${(post.metaDescription?.length || 0) <= 160 ? 'bg-emerald-500' : 'bg-red-500'}`}
+                                                            style={{ width: `${Math.min(((post.metaDescription?.length || 0) / 160) * 100, 100)}%` }}
                                                         />
                                                     </div>
-                                                    <span className={`text-xs ${post.seo.metaDescription.length <= 160 ? 'text-emerald-600' : 'text-red-600'}`}>
-                                                        {post.seo.metaDescription.length}/160
+                                                    <span className={`text-xs ${(post.metaDescription?.length || 0) <= 160 ? 'text-emerald-600' : 'text-red-600'}`}>
+                                                        {post.metaDescription?.length || 0}/160
                                                     </span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <span className="text-xs text-gray-500">Translations</span>
+                                                <div className="flex gap-1 mt-1">
+                                                    <span className="px-2 py-0.5 text-xs bg-emerald-100 text-emerald-700 rounded">EN</span>
+                                                    {post.translations.map(t => (
+                                                        <span key={t.locale} className="px-2 py-0.5 text-xs bg-blue-100 text-blue-700 rounded uppercase">
+                                                            {t.locale}
+                                                        </span>
+                                                    ))}
                                                 </div>
                                             </div>
                                         </div>
@@ -1218,7 +1210,7 @@ export default function BlogContentPage() {
                             </div>
                             <h3 className="text-lg font-semibold text-gray-900 text-center mb-2">Delete Post</h3>
                             <p className="text-gray-500 text-center mb-6">
-                                Are you sure you want to delete this blog post? This action cannot be undone.
+                                Are you sure you want to delete this blog post? This will also delete all translations. This action cannot be undone.
                             </p>
                             <div className="flex items-center gap-3">
                                 <button

@@ -254,3 +254,87 @@ model Setting {
 
   @@index([category])
 }
+
+// Blog Post Model - Multilingual blog posts
+model BlogPost {
+  id            String          @id @default(cuid())
+  slug          String          @unique
+  authorId      String?
+
+  // Default content (English)
+  title         String
+  excerpt       String?         @db.Text
+  content       String          @db.Text
+
+  // Featured image
+  featuredImage String?
+
+  // SEO
+  metaTitle     String?
+  metaDescription String?       @db.Text
+
+  // Categorization
+  category      String          @default("general")
+  tags          String[]
+
+  // Status
+  status        BlogStatus      @default(DRAFT)
+  featured      Boolean         @default(false)
+
+  // Dates
+  publishedAt   DateTime?
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime        @updatedAt
+
+  // Relations
+  translations  BlogTranslation[]
+
+  @@index([slug])
+  @@index([status])
+  @@index([category])
+  @@index([publishedAt])
+}
+
+enum BlogStatus {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+}
+
+// Blog Translation Model - Translations for blog posts
+model BlogTranslation {
+  id            String    @id @default(cuid())
+  postId        String
+  post          BlogPost  @relation(fields: [postId], references: [id], onDelete: Cascade)
+
+  locale        String    // en, tr, de, ur, ar
+
+  title         String
+  excerpt       String?   @db.Text
+  content       String    @db.Text
+
+  // SEO
+  metaTitle     String?
+  metaDescription String? @db.Text
+
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  @@unique([postId, locale])
+  @@index([postId])
+  @@index([locale])
+}
+
+// Blog Category Model
+model BlogCategory {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  name        String
+  description String?
+
+  // Translations stored as JSON for simplicity
+  nameTranslations Json?
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}

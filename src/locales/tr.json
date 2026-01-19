@@ -311,6 +311,66 @@
           "İzleme",
           "Güvenlik"
         ]
+      },
+      "promptEngineering": {
+        "title": "Prompt Mühendisliği",
+        "description": "Güvenilir, yüksek kaliteli yapay zeka çıktıları için uzman LLM prompt tasarımı ve optimizasyonu.",
+        "features": [
+          "Prompt Optimizasyonu",
+          "Düşünce Zinciri Tasarımı",
+          "Çıktı Doğrulama",
+          "A/B Testleri"
+        ]
+      },
+      "aiAgents": {
+        "title": "Yapay Zeka Ajanları",
+        "description": "Karmaşık iş akışlarını ve çok adımlı görevleri akıllıca yöneten otonom yapay zeka ajanları.",
+        "features": [
+          "Çoklu Ajan Sistemleri",
+          "Araç Entegrasyonu",
+          "Görev Orkestrasyonu",
+          "Bellek ve Bağlam"
+        ]
+      },
+      "ragSolutions": {
+        "title": "RAG Çözümleri",
+        "description": "Doğru yapay zeka yanıtları için Retrieval-Augmented Generation ile kurumsal bilgi tabanları.",
+        "features": [
+          "Vektör Veritabanları",
+          "Belge İşleme",
+          "Anlamsal Arama",
+          "Bilgi Grafları"
+        ]
+      },
+      "mlopsDeployment": {
+        "title": "MLOps ve Dağıtım",
+        "description": "Otomatik eğitim, dağıtım ve izleme ile uçtan uca makine öğrenimi hatları.",
+        "features": [
+          "Model Sunumu",
+          "Hat Otomasyonu",
+          "Model İzleme",
+          "A/B Testleri"
+        ]
+      },
+      "computerVision": {
+        "title": "Bilgisayarlı Görü",
+        "description": "Nesne algılama, tanıma ve takip ile gelişmiş görüntü ve video analizi.",
+        "features": [
+          "Nesne Algılama",
+          "Görüntü Sınıflandırma",
+          "Video Analitiği",
+          "OCR Çözümleri"
+        ]
+      },
+      "llmFinetuning": {
+        "title": "LLM İnce Ayar",
+        "description": "Özelleştirilmiş yapay zeka uygulamaları için özel model eğitimi ve alan adaptasyonu.",
+        "features": [
+          "Alan Adaptasyonu",
+          "Özel Eğitim",
+          "RLHF Uygulaması",
+          "Model Değerlendirme"
+        ]
       }
     },
     "pricing": {
