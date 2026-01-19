@@ -11,7 +11,7 @@ export const metadata = {
     title: 'PakSoft – Modern Digital Solutions',
     description: 'Enterprise web development, e-commerce, automation bots and digital marketing solutions',
     verification: {
-        google: 'YOUR_GOOGLE_VERIFICATION_CODE',
+        google: '5r6FVNc5T7Y3Fig1PQvnfB4UtoDO9RGMSqWLZANzcdQ',
     },
 }
 
