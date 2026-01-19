@@ -46,3 +46,182 @@ export const trackFormSubmit = (formType: string, source: string) => {
 export const trackLanguageChange = (fromLang: string, toLang: string) => {
   trackEvent('language_change', { from: fromLang, to: toLang });
 };
+
+// ==========================================
+// Google Ads Conversion Tracking Functions
+// ==========================================
+
+const GOOGLE_ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID || 'AW-XXXXXXXXXX';
+const GOOGLE_ADS_CONVERSION_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_ID || 'XXXXXXXXXX';
+
+/**
+ * Track a Google Ads conversion
+ * @param conversionLabel - The conversion label from Google Ads
+ * @param value - Optional monetary value of the conversion
+ * @param currency - Currency code (default: USD)
+ */
+export const trackGoogleAdsConversion = (
+  conversionLabel: string,
+  value?: number,
+  currency: string = 'USD'
+) => {
+  if (typeof window !== 'undefined' && (window as any).gtag) {
+    (window as any).gtag('event', 'conversion', {
+      send_to: `${GOOGLE_ADS_ID}/${conversionLabel}`,
+      value: value,
+      currency: currency,
+    });
+  }
+};
+
+/**
+ * Track contact form submission as Google Ads conversion
+ */
+export const trackContactFormConversion = (source: string = 'contact_page') => {
+  trackGoogleAdsConversion(GOOGLE_ADS_CONVERSION_ID);
+  trackEvent('generate_lead', {
+    event_category: 'conversion',
+    event_label: 'contact_form_submission',
+    source: source,
+  });
+  // Facebook Pixel
+  if (typeof window !== 'undefined' && (window as any).fbq) {
+    (window as any).fbq('track', 'Lead');
+  }
+  // LinkedIn
+  if (typeof window !== 'undefined' && (window as any).lintrk) {
+    (window as any).lintrk('track', { conversion_id: 'contact_form' });
+  }
+};
+
+/**
+ * Track quote request as Google Ads conversion
+ */
+export const trackQuoteConversion = (service: string, value?: number) => {
+  trackGoogleAdsConversion(GOOGLE_ADS_CONVERSION_ID, value);
+  trackEvent('request_quote', {
+    event_category: 'conversion',
+    event_label: 'quote_request',
+    service: service,
+    value: value,
+  });
+  // Facebook Pixel
+  if (typeof window !== 'undefined' && (window as any).fbq) {
+    (window as any).fbq('track', 'Lead', { content_name: service, value: value });
+  }
+};
+
+/**
+ * Track phone call click as Google Ads conversion
+ */
+export const trackPhoneCallConversion = (source: string = 'website') => {
+  trackGoogleAdsConversion(GOOGLE_ADS_CONVERSION_ID);
+  trackEvent('phone_call_click', {
+    event_category: 'conversion',
+    event_label: 'phone_call',
+    source: source,
+  });
+  // Facebook Pixel
+  if (typeof window !== 'undefined' && (window as any).fbq) {
+    (window as any).fbq('track', 'Contact');
+  }
+};
+
+/**
+ * Track WhatsApp click as conversion
+ */
+export const trackWhatsAppConversion = (source: string = 'website', message?: string) => {
+  trackGoogleAdsConversion(GOOGLE_ADS_CONVERSION_ID);
+  trackEvent('whatsapp_click', {
+    event_category: 'conversion',
+    event_label: 'whatsapp_contact',
+    source: source,
+    message: message,
+  });
+  // Facebook Pixel
+  if (typeof window !== 'undefined' && (window as any).fbq) {
+    (window as any).fbq('track', 'Contact');
+  }
+};
+
+/**
+ * Track newsletter signup as conversion
+ */
+export const trackNewsletterSignup = (source: string = 'footer') => {
+  trackGoogleAdsConversion(GOOGLE_ADS_CONVERSION_ID);
+  trackEvent('newsletter_signup', {
+    event_category: 'conversion',
+    event_label: 'newsletter',
+    source: source,
+  });
+  // Facebook Pixel
+  if (typeof window !== 'undefined' && (window as any).fbq) {
+    (window as any).fbq('track', 'Subscribe');
+  }
+};
+
+/**
+ * Track service page view (for remarketing)
+ */
+export const trackServiceView = (serviceName: string, serviceSlug: string) => {
+  trackEvent('view_item', {
+    event_category: 'engagement',
+    items: [{
+      item_id: serviceSlug,
+      item_name: serviceName,
+      item_category: 'service',
+    }],
+  });
+  // Facebook Pixel
+  if (typeof window !== 'undefined' && (window as any).fbq) {
+    (window as any).fbq('track', 'ViewContent', {
+      content_name: serviceName,
+      content_category: 'service',
+      content_ids: [serviceSlug],
+    });
+  }
+};
+
+/**
+ * Track project/portfolio view (for remarketing)
+ */
+export const trackProjectView = (projectName: string, category: string) => {
+  trackEvent('view_item', {
+    event_category: 'engagement',
+    items: [{
+      item_name: projectName,
+      item_category: category,
+    }],
+  });
+  // Facebook Pixel
+  if (typeof window !== 'undefined' && (window as any).fbq) {
+    (window as any).fbq('track', 'ViewContent', {
+      content_name: projectName,
+      content_category: category,
+    });
+  }
+};
+
+/**
+ * Track scroll depth for engagement measurement
+ */
+export const trackScrollDepth = (depth: number, pagePath: string) => {
+  trackEvent('scroll', {
+    event_category: 'engagement',
+    event_label: `${depth}%`,
+    page_path: pagePath,
+    percent_scrolled: depth,
+  });
+};
+
+/**
+ * Track time on page for engagement measurement
+ */
+export const trackTimeOnPage = (seconds: number, pagePath: string) => {
+  trackEvent('timing_complete', {
+    event_category: 'engagement',
+    event_label: 'time_on_page',
+    page_path: pagePath,
+    value: seconds,
+  });
+};

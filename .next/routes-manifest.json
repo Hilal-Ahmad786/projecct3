@@ -1,0 +1,1454 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/:path*",
+      "headers": [
+        {
+          "key": "X-DNS-Prefetch-Control",
+          "value": "on"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "origin-when-cross-origin"
+        }
+      ],
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))?(?:/)?$"
+    }
+  ],
+  "dynamicRoutes": [
+    {
+      "page": "/api/admin/leads/[id]",
+      "regex": "^/api/admin/leads/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/admin/leads/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/[locale]",
+      "regex": "^/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/[locale]/about",
+      "regex": "^/([^/]+?)/about(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/about(?:/)?$"
+    },
+    {
+      "page": "/[locale]/alkhadamat",
+      "regex": "^/([^/]+?)/alkhadamat(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/alkhadamat(?:/)?$"
+    },
+    {
+      "page": "/[locale]/almasharie",
+      "regex": "^/([^/]+?)/almasharie(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/almasharie(?:/)?$"
+    },
+    {
+      "page": "/[locale]/blog",
+      "regex": "^/([^/]+?)/blog(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/blog(?:/)?$"
+    },
+    {
+      "page": "/[locale]/connect",
+      "regex": "^/([^/]+?)/connect(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/connect(?:/)?$"
+    },
+    {
+      "page": "/[locale]/contact",
+      "regex": "^/([^/]+?)/contact(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/contact(?:/)?$"
+    },
+    {
+      "page": "/[locale]/dienstleistungen",
+      "regex": "^/([^/]+?)/dienstleistungen(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/dienstleistungen(?:/)?$"
+    },
+    {
+      "page": "/[locale]/hakkimizda",
+      "regex": "^/([^/]+?)/hakkimizda(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/hakkimizda(?:/)?$"
+    },
+    {
+      "page": "/[locale]/hamare-bare-mein",
+      "regex": "^/([^/]+?)/hamare\\-bare\\-mein(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/hamare\\-bare\\-mein(?:/)?$"
+    },
+    {
+      "page": "/[locale]/hizmetler",
+      "regex": "^/([^/]+?)/hizmetler(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/hizmetler(?:/)?$"
+    },
+    {
+      "page": "/[locale]/iletisim",
+      "regex": "^/([^/]+?)/iletisim(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/iletisim(?:/)?$"
+    },
+    {
+      "page": "/[locale]/ittisal",
+      "regex": "^/([^/]+?)/ittisal(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/ittisal(?:/)?$"
+    },
+    {
+      "page": "/[locale]/kontakt",
+      "regex": "^/([^/]+?)/kontakt(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/kontakt(?:/)?$"
+    },
+    {
+      "page": "/[locale]/men-nahnu",
+      "regex": "^/([^/]+?)/men\\-nahnu(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/men\\-nahnu(?:/)?$"
+    },
+    {
+      "page": "/[locale]/projects",
+      "regex": "^/([^/]+?)/projects(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/projects(?:/)?$"
+    },
+    {
+      "page": "/[locale]/projekte",
+      "regex": "^/([^/]+?)/projekte(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/projekte(?:/)?$"
+    },
+    {
+      "page": "/[locale]/projeler",
+      "regex": "^/([^/]+?)/projeler(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/projeler(?:/)?$"
+    },
+    {
+      "page": "/[locale]/raabta",
+      "regex": "^/([^/]+?)/raabta(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/raabta(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services",
+      "regex": "^/([^/]+?)/services(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/ai-solutions",
+      "regex": "^/([^/]+?)/services/ai\\-solutions(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/ai\\-solutions(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/ai-solutions/faq",
+      "regex": "^/([^/]+?)/services/ai\\-solutions/faq(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/ai\\-solutions/faq(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/ai-solutions/features",
+      "regex": "^/([^/]+?)/services/ai\\-solutions/features(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/ai\\-solutions/features(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/ai-solutions/portfolio",
+      "regex": "^/([^/]+?)/services/ai\\-solutions/portfolio(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/ai\\-solutions/portfolio(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/ai-solutions/pricing",
+      "regex": "^/([^/]+?)/services/ai\\-solutions/pricing(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/ai\\-solutions/pricing(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/ai-solutions/process",
+      "regex": "^/([^/]+?)/services/ai\\-solutions/process(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/ai\\-solutions/process(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/ai-solutions/tech-stack",
+      "regex": "^/([^/]+?)/services/ai\\-solutions/tech\\-stack(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/ai\\-solutions/tech\\-stack(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/api-development",
+      "regex": "^/([^/]+?)/services/api\\-development(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/api\\-development(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/api-development/faq",
+      "regex": "^/([^/]+?)/services/api\\-development/faq(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/api\\-development/faq(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/api-development/features",
+      "regex": "^/([^/]+?)/services/api\\-development/features(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/api\\-development/features(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/api-development/portfolio",
+      "regex": "^/([^/]+?)/services/api\\-development/portfolio(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/api\\-development/portfolio(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/api-development/pricing",
+      "regex": "^/([^/]+?)/services/api\\-development/pricing(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/api\\-development/pricing(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/api-development/process",
+      "regex": "^/([^/]+?)/services/api\\-development/process(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/api\\-development/process(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/api-development/tech-stack",
+      "regex": "^/([^/]+?)/services/api\\-development/tech\\-stack(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/api\\-development/tech\\-stack(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/api-gelistirme",
+      "regex": "^/([^/]+?)/services/api\\-gelistirme(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/api\\-gelistirme(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/api-gelistirme/faq",
+      "regex": "^/([^/]+?)/services/api\\-gelistirme/faq(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/api\\-gelistirme/faq(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/api-gelistirme/features",
+      "regex": "^/([^/]+?)/services/api\\-gelistirme/features(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/api\\-gelistirme/features(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/api-gelistirme/portfolio",
+      "regex": "^/([^/]+?)/services/api\\-gelistirme/portfolio(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/api\\-gelistirme/portfolio(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/api-gelistirme/pricing",
+      "regex": "^/([^/]+?)/services/api\\-gelistirme/pricing(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/api\\-gelistirme/pricing(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/api-gelistirme/process",
+      "regex": "^/([^/]+?)/services/api\\-gelistirme/process(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/api\\-gelistirme/process(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/api-gelistirme/tech-stack",
+      "regex": "^/([^/]+?)/services/api\\-gelistirme/tech\\-stack(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/api\\-gelistirme/tech\\-stack(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/conversational-ai",
+      "regex": "^/([^/]+?)/services/conversational\\-ai(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/conversational\\-ai(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/conversational-ai/faq",
+      "regex": "^/([^/]+?)/services/conversational\\-ai/faq(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/conversational\\-ai/faq(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/conversational-ai/features",
+      "regex": "^/([^/]+?)/services/conversational\\-ai/features(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/conversational\\-ai/features(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/conversational-ai/portfolio",
+      "regex": "^/([^/]+?)/services/conversational\\-ai/portfolio(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/conversational\\-ai/portfolio(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/conversational-ai/pricing",
+      "regex": "^/([^/]+?)/services/conversational\\-ai/pricing(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/conversational\\-ai/pricing(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/conversational-ai/process",
+      "regex": "^/([^/]+?)/services/conversational\\-ai/process(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/conversational\\-ai/process(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/conversational-ai/tech-stack",
+      "regex": "^/([^/]+?)/services/conversational\\-ai/tech\\-stack(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/conversational\\-ai/tech\\-stack(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/cybersecurity",
+      "regex": "^/([^/]+?)/services/cybersecurity(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/cybersecurity(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/cybersecurity/faq",
+      "regex": "^/([^/]+?)/services/cybersecurity/faq(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/cybersecurity/faq(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/cybersecurity/features",
+      "regex": "^/([^/]+?)/services/cybersecurity/features(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/cybersecurity/features(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/cybersecurity/portfolio",
+      "regex": "^/([^/]+?)/services/cybersecurity/portfolio(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/cybersecurity/portfolio(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/cybersecurity/pricing",
+      "regex": "^/([^/]+?)/services/cybersecurity/pricing(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/cybersecurity/pricing(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/cybersecurity/process",
+      "regex": "^/([^/]+?)/services/cybersecurity/process(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/cybersecurity/process(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/cybersecurity/tech-stack",
+      "regex": "^/([^/]+?)/services/cybersecurity/tech\\-stack(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/cybersecurity/tech\\-stack(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/data-analytics",
+      "regex": "^/([^/]+?)/services/data\\-analytics(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/data\\-analytics(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/data-analytics/faq",
+      "regex": "^/([^/]+?)/services/data\\-analytics/faq(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/data\\-analytics/faq(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/data-analytics/features",
+      "regex": "^/([^/]+?)/services/data\\-analytics/features(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/data\\-analytics/features(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/data-analytics/portfolio",
+      "regex": "^/([^/]+?)/services/data\\-analytics/portfolio(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/data\\-analytics/portfolio(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/data-analytics/pricing",
+      "regex": "^/([^/]+?)/services/data\\-analytics/pricing(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/data\\-analytics/pricing(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/data-analytics/process",
+      "regex": "^/([^/]+?)/services/data\\-analytics/process(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/data\\-analytics/process(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/data-analytics/tech-stack",
+      "regex": "^/([^/]+?)/services/data\\-analytics/tech\\-stack(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/data\\-analytics/tech\\-stack(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/devops-cloud",
+      "regex": "^/([^/]+?)/services/devops\\-cloud(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/devops\\-cloud(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/devops-cloud/faq",
+      "regex": "^/([^/]+?)/services/devops\\-cloud/faq(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/devops\\-cloud/faq(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/devops-cloud/features",
+      "regex": "^/([^/]+?)/services/devops\\-cloud/features(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/devops\\-cloud/features(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/devops-cloud/portfolio",
+      "regex": "^/([^/]+?)/services/devops\\-cloud/portfolio(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/devops\\-cloud/portfolio(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/devops-cloud/pricing",
+      "regex": "^/([^/]+?)/services/devops\\-cloud/pricing(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/devops\\-cloud/pricing(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/devops-cloud/process",
+      "regex": "^/([^/]+?)/services/devops\\-cloud/process(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/devops\\-cloud/process(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/devops-cloud/tech-stack",
+      "regex": "^/([^/]+?)/services/devops\\-cloud/tech\\-stack(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/devops\\-cloud/tech\\-stack(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/digital-marketing",
+      "regex": "^/([^/]+?)/services/digital\\-marketing(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/digital\\-marketing(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/digital-marketing/faq",
+      "regex": "^/([^/]+?)/services/digital\\-marketing/faq(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/digital\\-marketing/faq(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/digital-marketing/features",
+      "regex": "^/([^/]+?)/services/digital\\-marketing/features(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/digital\\-marketing/features(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/digital-marketing/portfolio",
+      "regex": "^/([^/]+?)/services/digital\\-marketing/portfolio(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/digital\\-marketing/portfolio(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/digital-marketing/pricing",
+      "regex": "^/([^/]+?)/services/digital\\-marketing/pricing(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/digital\\-marketing/pricing(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/digital-marketing/process",
+      "regex": "^/([^/]+?)/services/digital\\-marketing/process(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/digital\\-marketing/process(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/digital-marketing/tech-stack",
+      "regex": "^/([^/]+?)/services/digital\\-marketing/tech\\-stack(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/digital\\-marketing/tech\\-stack(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/dijital-pazarlama",
+      "regex": "^/([^/]+?)/services/dijital\\-pazarlama(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/dijital\\-pazarlama(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/dijital-pazarlama/faq",
+      "regex": "^/([^/]+?)/services/dijital\\-pazarlama/faq(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/dijital\\-pazarlama/faq(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/dijital-pazarlama/features",
+      "regex": "^/([^/]+?)/services/dijital\\-pazarlama/features(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/dijital\\-pazarlama/features(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/dijital-pazarlama/portfolio",
+      "regex": "^/([^/]+?)/services/dijital\\-pazarlama/portfolio(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/dijital\\-pazarlama/portfolio(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/dijital-pazarlama/pricing",
+      "regex": "^/([^/]+?)/services/dijital\\-pazarlama/pricing(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/dijital\\-pazarlama/pricing(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/dijital-pazarlama/process",
+      "regex": "^/([^/]+?)/services/dijital\\-pazarlama/process(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/dijital\\-pazarlama/process(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/dijital-pazarlama/tech-stack",
+      "regex": "^/([^/]+?)/services/dijital\\-pazarlama/tech\\-stack(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/dijital\\-pazarlama/tech\\-stack(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/e-commerce",
+      "regex": "^/([^/]+?)/services/e\\-commerce(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/e\\-commerce(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/e-commerce/faq",
+      "regex": "^/([^/]+?)/services/e\\-commerce/faq(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/e\\-commerce/faq(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/e-commerce/features",
+      "regex": "^/([^/]+?)/services/e\\-commerce/features(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/e\\-commerce/features(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/e-commerce/portfolio",
+      "regex": "^/([^/]+?)/services/e\\-commerce/portfolio(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/e\\-commerce/portfolio(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/e-commerce/pricing",
+      "regex": "^/([^/]+?)/services/e\\-commerce/pricing(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/e\\-commerce/pricing(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/e-commerce/process",
+      "regex": "^/([^/]+?)/services/e\\-commerce/process(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/e\\-commerce/process(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/e-commerce/tech-stack",
+      "regex": "^/([^/]+?)/services/e\\-commerce/tech\\-stack(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/e\\-commerce/tech\\-stack(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/e-ticaret-cozumleri",
+      "regex": "^/([^/]+?)/services/e\\-ticaret\\-cozumleri(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/e\\-ticaret\\-cozumleri(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/e-ticaret-cozumleri/faq",
+      "regex": "^/([^/]+?)/services/e\\-ticaret\\-cozumleri/faq(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/e\\-ticaret\\-cozumleri/faq(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/e-ticaret-cozumleri/features",
+      "regex": "^/([^/]+?)/services/e\\-ticaret\\-cozumleri/features(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/e\\-ticaret\\-cozumleri/features(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/e-ticaret-cozumleri/portfolio",
+      "regex": "^/([^/]+?)/services/e\\-ticaret\\-cozumleri/portfolio(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/e\\-ticaret\\-cozumleri/portfolio(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/e-ticaret-cozumleri/pricing",
+      "regex": "^/([^/]+?)/services/e\\-ticaret\\-cozumleri/pricing(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/e\\-ticaret\\-cozumleri/pricing(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/e-ticaret-cozumleri/process",
+      "regex": "^/([^/]+?)/services/e\\-ticaret\\-cozumleri/process(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/e\\-ticaret\\-cozumleri/process(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/e-ticaret-cozumleri/tech-stack",
+      "regex": "^/([^/]+?)/services/e\\-ticaret\\-cozumleri/tech\\-stack(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/e\\-ticaret\\-cozumleri/tech\\-stack(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/machine-learning",
+      "regex": "^/([^/]+?)/services/machine\\-learning(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/machine\\-learning(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/machine-learning/faq",
+      "regex": "^/([^/]+?)/services/machine\\-learning/faq(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/machine\\-learning/faq(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/machine-learning/features",
+      "regex": "^/([^/]+?)/services/machine\\-learning/features(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/machine\\-learning/features(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/machine-learning/portfolio",
+      "regex": "^/([^/]+?)/services/machine\\-learning/portfolio(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/machine\\-learning/portfolio(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/machine-learning/pricing",
+      "regex": "^/([^/]+?)/services/machine\\-learning/pricing(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/machine\\-learning/pricing(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/machine-learning/process",
+      "regex": "^/([^/]+?)/services/machine\\-learning/process(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/machine\\-learning/process(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/machine-learning/tech-stack",
+      "regex": "^/([^/]+?)/services/machine\\-learning/tech\\-stack(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/machine\\-learning/tech\\-stack(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/makine-ogrenmesi",
+      "regex": "^/([^/]+?)/services/makine\\-ogrenmesi(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/makine\\-ogrenmesi(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/makine-ogrenmesi/faq",
+      "regex": "^/([^/]+?)/services/makine\\-ogrenmesi/faq(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/makine\\-ogrenmesi/faq(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/makine-ogrenmesi/features",
+      "regex": "^/([^/]+?)/services/makine\\-ogrenmesi/features(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/makine\\-ogrenmesi/features(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/makine-ogrenmesi/portfolio",
+      "regex": "^/([^/]+?)/services/makine\\-ogrenmesi/portfolio(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/makine\\-ogrenmesi/portfolio(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/makine-ogrenmesi/pricing",
+      "regex": "^/([^/]+?)/services/makine\\-ogrenmesi/pricing(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/makine\\-ogrenmesi/pricing(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/makine-ogrenmesi/process",
+      "regex": "^/([^/]+?)/services/makine\\-ogrenmesi/process(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/makine\\-ogrenmesi/process(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/makine-ogrenmesi/tech-stack",
+      "regex": "^/([^/]+?)/services/makine\\-ogrenmesi/tech\\-stack(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/makine\\-ogrenmesi/tech\\-stack(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/mobile-development",
+      "regex": "^/([^/]+?)/services/mobile\\-development(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/mobile\\-development(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/mobile-development/faq",
+      "regex": "^/([^/]+?)/services/mobile\\-development/faq(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/mobile\\-development/faq(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/mobile-development/features",
+      "regex": "^/([^/]+?)/services/mobile\\-development/features(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/mobile\\-development/features(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/mobile-development/portfolio",
+      "regex": "^/([^/]+?)/services/mobile\\-development/portfolio(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/mobile\\-development/portfolio(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/mobile-development/pricing",
+      "regex": "^/([^/]+?)/services/mobile\\-development/pricing(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/mobile\\-development/pricing(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/mobile-development/process",
+      "regex": "^/([^/]+?)/services/mobile\\-development/process(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/mobile\\-development/process(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/mobile-development/tech-stack",
+      "regex": "^/([^/]+?)/services/mobile\\-development/tech\\-stack(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/mobile\\-development/tech\\-stack(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/python-automation",
+      "regex": "^/([^/]+?)/services/python\\-automation(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/python\\-automation(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/python-automation/faq",
+      "regex": "^/([^/]+?)/services/python\\-automation/faq(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/python\\-automation/faq(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/python-automation/features",
+      "regex": "^/([^/]+?)/services/python\\-automation/features(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/python\\-automation/features(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/python-automation/portfolio",
+      "regex": "^/([^/]+?)/services/python\\-automation/portfolio(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/python\\-automation/portfolio(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/python-automation/pricing",
+      "regex": "^/([^/]+?)/services/python\\-automation/pricing(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/python\\-automation/pricing(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/python-automation/process",
+      "regex": "^/([^/]+?)/services/python\\-automation/process(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/python\\-automation/process(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/python-automation/tech-stack",
+      "regex": "^/([^/]+?)/services/python\\-automation/tech\\-stack(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/python\\-automation/tech\\-stack(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/python-otomasyonu",
+      "regex": "^/([^/]+?)/services/python\\-otomasyonu(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/python\\-otomasyonu(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/python-otomasyonu/faq",
+      "regex": "^/([^/]+?)/services/python\\-otomasyonu/faq(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/python\\-otomasyonu/faq(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/python-otomasyonu/features",
+      "regex": "^/([^/]+?)/services/python\\-otomasyonu/features(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/python\\-otomasyonu/features(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/python-otomasyonu/portfolio",
+      "regex": "^/([^/]+?)/services/python\\-otomasyonu/portfolio(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/python\\-otomasyonu/portfolio(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/python-otomasyonu/pricing",
+      "regex": "^/([^/]+?)/services/python\\-otomasyonu/pricing(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/python\\-otomasyonu/pricing(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/python-otomasyonu/process",
+      "regex": "^/([^/]+?)/services/python\\-otomasyonu/process(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/python\\-otomasyonu/process(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/python-otomasyonu/tech-stack",
+      "regex": "^/([^/]+?)/services/python\\-otomasyonu/tech\\-stack(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/python\\-otomasyonu/tech\\-stack(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/ui-ux-design",
+      "regex": "^/([^/]+?)/services/ui\\-ux\\-design(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/ui\\-ux\\-design(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/ui-ux-design/faq",
+      "regex": "^/([^/]+?)/services/ui\\-ux\\-design/faq(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/ui\\-ux\\-design/faq(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/ui-ux-design/features",
+      "regex": "^/([^/]+?)/services/ui\\-ux\\-design/features(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/ui\\-ux\\-design/features(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/ui-ux-design/portfolio",
+      "regex": "^/([^/]+?)/services/ui\\-ux\\-design/portfolio(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/ui\\-ux\\-design/portfolio(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/ui-ux-design/pricing",
+      "regex": "^/([^/]+?)/services/ui\\-ux\\-design/pricing(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/ui\\-ux\\-design/pricing(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/ui-ux-design/process",
+      "regex": "^/([^/]+?)/services/ui\\-ux\\-design/process(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/ui\\-ux\\-design/process(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/ui-ux-design/tech-stack",
+      "regex": "^/([^/]+?)/services/ui\\-ux\\-design/tech\\-stack(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/ui\\-ux\\-design/tech\\-stack(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/ui-ux-tasarim",
+      "regex": "^/([^/]+?)/services/ui\\-ux\\-tasarim(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/ui\\-ux\\-tasarim(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/ui-ux-tasarim/faq",
+      "regex": "^/([^/]+?)/services/ui\\-ux\\-tasarim/faq(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/ui\\-ux\\-tasarim/faq(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/ui-ux-tasarim/features",
+      "regex": "^/([^/]+?)/services/ui\\-ux\\-tasarim/features(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/ui\\-ux\\-tasarim/features(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/ui-ux-tasarim/portfolio",
+      "regex": "^/([^/]+?)/services/ui\\-ux\\-tasarim/portfolio(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/ui\\-ux\\-tasarim/portfolio(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/ui-ux-tasarim/pricing",
+      "regex": "^/([^/]+?)/services/ui\\-ux\\-tasarim/pricing(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/ui\\-ux\\-tasarim/pricing(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/ui-ux-tasarim/process",
+      "regex": "^/([^/]+?)/services/ui\\-ux\\-tasarim/process(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/ui\\-ux\\-tasarim/process(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/ui-ux-tasarim/tech-stack",
+      "regex": "^/([^/]+?)/services/ui\\-ux\\-tasarim/tech\\-stack(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/ui\\-ux\\-tasarim/tech\\-stack(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/veri-analizi",
+      "regex": "^/([^/]+?)/services/veri\\-analizi(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/veri\\-analizi(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/veri-analizi/faq",
+      "regex": "^/([^/]+?)/services/veri\\-analizi/faq(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/veri\\-analizi/faq(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/veri-analizi/features",
+      "regex": "^/([^/]+?)/services/veri\\-analizi/features(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/veri\\-analizi/features(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/veri-analizi/portfolio",
+      "regex": "^/([^/]+?)/services/veri\\-analizi/portfolio(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/veri\\-analizi/portfolio(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/veri-analizi/pricing",
+      "regex": "^/([^/]+?)/services/veri\\-analizi/pricing(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/veri\\-analizi/pricing(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/veri-analizi/process",
+      "regex": "^/([^/]+?)/services/veri\\-analizi/process(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/veri\\-analizi/process(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/veri-analizi/tech-stack",
+      "regex": "^/([^/]+?)/services/veri\\-analizi/tech\\-stack(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/veri\\-analizi/tech\\-stack(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/web-development",
+      "regex": "^/([^/]+?)/services/web\\-development(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/web\\-development(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/web-development/faq",
+      "regex": "^/([^/]+?)/services/web\\-development/faq(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/web\\-development/faq(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/web-development/features",
+      "regex": "^/([^/]+?)/services/web\\-development/features(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/web\\-development/features(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/web-development/portfolio",
+      "regex": "^/([^/]+?)/services/web\\-development/portfolio(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/web\\-development/portfolio(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/web-development/process",
+      "regex": "^/([^/]+?)/services/web\\-development/process(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/web\\-development/process(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/web-development/tech-stack",
+      "regex": "^/([^/]+?)/services/web\\-development/tech\\-stack(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/web\\-development/tech\\-stack(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/[slug]",
+      "regex": "^/([^/]+?)/services/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale",
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/[locale]/test-translations",
+      "regex": "^/([^/]+?)/test\\-translations(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/test\\-translations(?:/)?$"
+    },
+    {
+      "page": "/[locale]/uber-uns",
+      "regex": "^/([^/]+?)/uber\\-uns(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/uber\\-uns(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/admin",
+      "regex": "^/admin(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin(?:/)?$"
+    },
+    {
+      "page": "/admin/analytics",
+      "regex": "^/admin/analytics(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/analytics(?:/)?$"
+    },
+    {
+      "page": "/admin/content/blog",
+      "regex": "^/admin/content/blog(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/content/blog(?:/)?$"
+    },
+    {
+      "page": "/admin/content/projects",
+      "regex": "^/admin/content/projects(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/content/projects(?:/)?$"
+    },
+    {
+      "page": "/admin/content/services",
+      "regex": "^/admin/content/services(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/content/services(?:/)?$"
+    },
+    {
+      "page": "/admin/leads",
+      "regex": "^/admin/leads(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/leads(?:/)?$"
+    },
+    {
+      "page": "/admin/notifications",
+      "regex": "^/admin/notifications(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/notifications(?:/)?$"
+    },
+    {
+      "page": "/admin/reports",
+      "regex": "^/admin/reports(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/reports(?:/)?$"
+    },
+    {
+      "page": "/admin/security",
+      "regex": "^/admin/security(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/security(?:/)?$"
+    },
+    {
+      "page": "/admin/settings",
+      "regex": "^/admin/settings(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/settings(?:/)?$"
+    },
+    {
+      "page": "/admin/traffic",
+      "regex": "^/admin/traffic(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/traffic(?:/)?$"
+    },
+    {
+      "page": "/admin/users",
+      "regex": "^/admin/users(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/users(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "RSC",
+    "varyHeader": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+    "prefetchHeader": "Next-Router-Prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "Next-Router-Segment-Prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  },
+  "rewrites": []
+}

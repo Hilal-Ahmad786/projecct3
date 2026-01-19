@@ -1393,5 +1393,98 @@
       "pricing": "Hallo! Ich möchte mehr über Ihre Preispakete erfahren und welche Dienstleistungen enthalten sind.",
       "support": "Hallo! Ich benötige technischen Support für mein Projekt. Können Sie mir helfen?"
     }
+  },
+  "forms": {
+    "projectRequest": {
+      "title": "Erzählen Sie uns von Ihrem Projekt",
+      "step": "Schritt",
+      "of": "von",
+      "steps": {
+        "step1": "Kontaktinformationen",
+        "step2": "Projekttyp",
+        "step3": "Projektdetails",
+        "step4": "Technische Anforderungen",
+        "step5": "Budget & Zeitplan"
+      },
+      "fields": {
+        "name": "Vollständiger Name",
+        "email": "E-Mail-Adresse",
+        "phone": "Telefonnummer",
+        "company": "Firmenname",
+        "website": "Website-URL",
+        "serviceType": "Dienstleistungstyp",
+        "projectTitle": "Projekttitel",
+        "description": "Projektbeschreibung",
+        "goals": "Projektziele",
+        "targetAudience": "Zielgruppe",
+        "techPreferences": "Technologiepräferenzen",
+        "integrations": "Erforderliche Integrationen",
+        "performanceReqs": "Leistungsanforderungen",
+        "budgetRange": "Budgetbereich",
+        "timeline": "Zeitplan",
+        "urgencyLevel": "Dringlichkeitsstufe",
+        "preferredStartDate": "Bevorzugtes Startdatum",
+        "additionalNotes": "Zusätzliche Hinweise"
+      },
+      "placeholders": {
+        "name": "Geben Sie Ihren vollständigen Namen ein",
+        "email": "sie@firma.de",
+        "phone": "+49 (555) 000-0000",
+        "company": "Ihr Firmenname",
+        "selectService": "Wählen Sie eine Dienstleistung",
+        "projectTitle": "Geben Sie Ihrem Projekt einen Namen",
+        "description": "Beschreiben Sie Ihr Projekt detailliert (mindestens 50 Zeichen)",
+        "goals": "Was möchten Sie mit diesem Projekt erreichen?",
+        "targetAudience": "Wer ist Ihre Zielgruppe?",
+        "techPreferences": "Bevorzugte Technologien? (z.B. React, Python, AWS)",
+        "integrations": "Zu integrierende Systeme (z.B. CRM, Zahlungsgateways)",
+        "performanceReqs": "Spezifische Leistungsanforderungen? (z.B. Ladezeit, gleichzeitige Benutzer)",
+        "additionalNotes": "Weitere Informationen, die Sie teilen möchten"
+      },
+      "budgetOptions": {
+        "small": "€5.000 - €15.000",
+        "medium": "€15.000 - €50.000",
+        "large": "€50.000 - €150.000",
+        "enterprise": "€150.000+",
+        "custom": "Individuelles Budget"
+      },
+      "timelineOptions": {
+        "urgent": "Weniger als 1 Monat",
+        "standard": "1-3 Monate",
+        "flexible": "3-6 Monate",
+        "longTerm": "6+ Monate"
+      },
+      "urgencyOptions": {
+        "low": "Niedrig - Flexible Zeitplanung",
+        "normal": "Normal - Standardpriorität",
+        "high": "Hoch - Benötigt bald Aufmerksamkeit",
+        "critical": "Kritisch - Dringende Anforderung"
+      },
+      "next": "Weiter",
+      "previous": "Zurück",
+      "cancel": "Abbrechen",
+      "submit": "Anfrage senden",
+      "submitting": "Wird gesendet...",
+      "close": "Schließen",
+      "successTitle": "Anfrage gesendet!",
+      "successMessage": "Vielen Dank für Ihre Projektanfrage. Unser Team wird Ihre Anforderungen prüfen und sich innerhalb von 24 Stunden bei Ihnen melden."
+    }
+  },
+  "cta": {
+    "serviceRequest": {
+      "badge": "Bereit zu starten",
+      "title": "Lassen Sie uns gemeinsam etwas Großartiges aufbauen",
+      "description": "Teilen Sie Ihre Projektanforderungen mit und erhalten Sie innerhalb von 24 Stunden ein personalisiertes Angebot von unserem Expertenteam.",
+      "getQuote": "Kostenloses Angebot",
+      "scheduleCall": "Termin vereinbaren",
+      "trustIndicator1": "Kostenlose Beratung",
+      "trustIndicator2": "Keine Verpflichtung",
+      "trustIndicator3": "Antwort innerhalb 24 Stunden",
+      "compactTitle": "Bereit zum Start?",
+      "compactDescription": "Besprechen wir Ihre Projektanforderungen.",
+      "bannerTitle": "Haben Sie ein Projekt im Sinn?",
+      "bannerDescription": "Kostenlose Beratung und personalisiertes Angebot erhalten.",
+      "startProject": "Projekt starten"
+    }
   }
 }

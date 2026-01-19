@@ -1393,5 +1393,98 @@
       "pricing": "مرحباً! أود معرفة المزيد عن باقات الأسعار الخاصة بكم والخدمات المتضمنة.",
       "support": "مرحباً! أحتاج إلى دعم فني لمشروعي. هل يمكنك مساعدتي؟"
     }
+  },
+  "forms": {
+    "projectRequest": {
+      "title": "أخبرنا عن مشروعك",
+      "step": "الخطوة",
+      "of": "من",
+      "steps": {
+        "step1": "معلومات الاتصال",
+        "step2": "نوع المشروع",
+        "step3": "تفاصيل المشروع",
+        "step4": "المتطلبات التقنية",
+        "step5": "الميزانية والجدول الزمني"
+      },
+      "fields": {
+        "name": "الاسم الكامل",
+        "email": "البريد الإلكتروني",
+        "phone": "رقم الهاتف",
+        "company": "اسم الشركة",
+        "website": "رابط الموقع",
+        "serviceType": "نوع الخدمة",
+        "projectTitle": "عنوان المشروع",
+        "description": "وصف المشروع",
+        "goals": "أهداف المشروع",
+        "targetAudience": "الجمهور المستهدف",
+        "techPreferences": "التفضيلات التقنية",
+        "integrations": "التكاملات المطلوبة",
+        "performanceReqs": "متطلبات الأداء",
+        "budgetRange": "نطاق الميزانية",
+        "timeline": "الجدول الزمني",
+        "urgencyLevel": "مستوى الاستعجال",
+        "preferredStartDate": "تاريخ البدء المفضل",
+        "additionalNotes": "ملاحظات إضافية"
+      },
+      "placeholders": {
+        "name": "أدخل اسمك الكامل",
+        "email": "you@company.com",
+        "phone": "+966 (55) 000-0000",
+        "company": "اسم شركتك",
+        "selectService": "اختر خدمة",
+        "projectTitle": "أعطِ مشروعك اسماً",
+        "description": "صف مشروعك بالتفصيل (50 حرفاً على الأقل)",
+        "goals": "ما الذي تريد تحقيقه من هذا المشروع؟",
+        "targetAudience": "من هو جمهورك المستهدف؟",
+        "techPreferences": "هل لديك تقنيات مفضلة؟ (مثل React, Python, AWS)",
+        "integrations": "الأنظمة التي تحتاج للتكامل معها",
+        "performanceReqs": "متطلبات أداء محددة؟",
+        "additionalNotes": "أي معلومات أخرى تود مشاركتها"
+      },
+      "budgetOptions": {
+        "small": "$5,000 - $15,000",
+        "medium": "$15,000 - $50,000",
+        "large": "$50,000 - $150,000",
+        "enterprise": "$150,000+",
+        "custom": "ميزانية مخصصة"
+      },
+      "timelineOptions": {
+        "urgent": "أقل من شهر",
+        "standard": "1-3 أشهر",
+        "flexible": "3-6 أشهر",
+        "longTerm": "+6 أشهر"
+      },
+      "urgencyOptions": {
+        "low": "منخفض - توقيت مرن",
+        "normal": "عادي - أولوية قياسية",
+        "high": "عالي - يحتاج اهتمام قريب",
+        "critical": "حرج - متطلب عاجل"
+      },
+      "next": "التالي",
+      "previous": "السابق",
+      "cancel": "إلغاء",
+      "submit": "إرسال الطلب",
+      "submitting": "جاري الإرسال...",
+      "close": "إغلاق",
+      "successTitle": "تم إرسال الطلب!",
+      "successMessage": "شكراً لطلب مشروعك. سيراجع فريقنا متطلباتك ويتواصل معك خلال 24 ساعة."
+    }
+  },
+  "cta": {
+    "serviceRequest": {
+      "badge": "جاهز للبدء",
+      "title": "لنبني شيئاً مذهلاً معاً",
+      "description": "شارك متطلبات مشروعك واحصل على عرض مخصص من فريقنا المتخصص خلال 24 ساعة.",
+      "getQuote": "احصل على عرض مجاني",
+      "scheduleCall": "جدولة مكالمة",
+      "trustIndicator1": "استشارة مجانية",
+      "trustIndicator2": "بدون التزام",
+      "trustIndicator3": "رد خلال 24 ساعة",
+      "compactTitle": "جاهز للبدء؟",
+      "compactDescription": "لنناقش متطلبات مشروعك.",
+      "bannerTitle": "لديك مشروع في ذهنك؟",
+      "bannerDescription": "احصل على استشارة مجانية وعرض مخصص.",
+      "startProject": "ابدأ مشروعك"
+    }
   }
 }

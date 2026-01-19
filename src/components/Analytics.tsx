@@ -21,7 +21,10 @@ try {
   };
 }
 
+// Google Analytics & Ads IDs
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-XXXXXXXXXX';
+const GOOGLE_ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID || 'AW-XXXXXXXXXX';
+const GOOGLE_ADS_CONVERSION_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_ID || 'XXXXXXXXXX';
 const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || 'GTM-XXXXXXX';
 const FB_PIXEL_ID = process.env.NEXT_PUBLIC_FB_PIXEL_ID || 'XXXXXXXXXXXXXXXXX';
 const LINKEDIN_PARTNER_ID = process.env.NEXT_PUBLIC_LINKEDIN_PARTNER_ID || 'XXXXXXX';
@@ -63,7 +66,7 @@ export default function Analytics() {
         }}
       />
 
-      {/* Google Analytics 4 */}
+      {/* Google Analytics 4 + Google Ads */}
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
         strategy="afterInteractive"
@@ -76,9 +79,25 @@ export default function Analytics() {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
+
+            // Google Analytics 4 Configuration
             gtag('config', '${GA_MEASUREMENT_ID}', {
               page_path: window.location.pathname,
               send_page_view: true
+            });
+
+            // Google Ads Configuration for Conversion Tracking
+            gtag('config', '${GOOGLE_ADS_ID}', {
+              allow_enhanced_conversions: true
+            });
+
+            // Google Ads Remarketing
+            gtag('event', 'page_view', {
+              'send_to': '${GOOGLE_ADS_ID}',
+              'value': 'replace with value',
+              'items': [{
+                'google_business_vertical': 'custom'
+              }]
             });
           `
         }}

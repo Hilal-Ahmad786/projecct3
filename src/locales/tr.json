@@ -1393,5 +1393,98 @@
       "pricing": "Merhaba! Fiyatlandırma paketleriniz ve hangi hizmetlerin dahil olduğu hakkında daha fazla bilgi almak istiyorum.",
       "support": "Merhaba! Projem için teknik desteğe ihtiyacım var. Yardımcı olabilir misiniz?"
     }
+  },
+  "forms": {
+    "projectRequest": {
+      "title": "Projenizi Anlatın",
+      "step": "Adım",
+      "of": "/",
+      "steps": {
+        "step1": "İletişim Bilgileri",
+        "step2": "Proje Türü",
+        "step3": "Proje Detayları",
+        "step4": "Teknik Gereksinimler",
+        "step5": "Bütçe ve Zaman"
+      },
+      "fields": {
+        "name": "Ad Soyad",
+        "email": "E-posta Adresi",
+        "phone": "Telefon Numarası",
+        "company": "Şirket Adı",
+        "website": "Web Sitesi URL",
+        "serviceType": "Hizmet Türü",
+        "projectTitle": "Proje Başlığı",
+        "description": "Proje Açıklaması",
+        "goals": "Proje Hedefleri",
+        "targetAudience": "Hedef Kitle",
+        "techPreferences": "Teknoloji Tercihleri",
+        "integrations": "Gerekli Entegrasyonlar",
+        "performanceReqs": "Performans Gereksinimleri",
+        "budgetRange": "Bütçe Aralığı",
+        "timeline": "Zaman Çizelgesi",
+        "urgencyLevel": "Aciliyet Düzeyi",
+        "preferredStartDate": "Tercih Edilen Başlangıç Tarihi",
+        "additionalNotes": "Ek Notlar"
+      },
+      "placeholders": {
+        "name": "Adınızı ve soyadınızı girin",
+        "email": "siz@sirket.com",
+        "phone": "+90 (555) 000-0000",
+        "company": "Şirketinizin adı",
+        "selectService": "Bir hizmet seçin",
+        "projectTitle": "Projenize bir isim verin",
+        "description": "Projenizi detaylı bir şekilde açıklayın (en az 50 karakter)",
+        "goals": "Bu projeyle neyi başarmak istiyorsunuz?",
+        "targetAudience": "Hedef kitleniz kim?",
+        "techPreferences": "Tercih ettiğiniz teknolojiler var mı? (örn. React, Python, AWS)",
+        "integrations": "Entegre edilmesi gereken sistemler (örn. CRM, ödeme sistemleri)",
+        "performanceReqs": "Özel performans gereksinimleri? (örn. yüklenme süresi, eşzamanlı kullanıcılar)",
+        "additionalNotes": "Paylaşmak istediğiniz diğer bilgiler"
+      },
+      "budgetOptions": {
+        "small": "₺100,000 - ₺300,000",
+        "medium": "₺300,000 - ₺1,000,000",
+        "large": "₺1,000,000 - ₺3,000,000",
+        "enterprise": "₺3,000,000+",
+        "custom": "Özel Bütçe"
+      },
+      "timelineOptions": {
+        "urgent": "1 aydan az",
+        "standard": "1-3 ay",
+        "flexible": "3-6 ay",
+        "longTerm": "6+ ay"
+      },
+      "urgencyOptions": {
+        "low": "Düşük - Esnek zamanlama",
+        "normal": "Normal - Standart öncelik",
+        "high": "Yüksek - Yakında ilgi gerekiyor",
+        "critical": "Kritik - Acil gereksinim"
+      },
+      "next": "İleri",
+      "previous": "Geri",
+      "cancel": "İptal",
+      "submit": "Talebi Gönder",
+      "submitting": "Gönderiliyor...",
+      "close": "Kapat",
+      "successTitle": "Talep Gönderildi!",
+      "successMessage": "Proje talebiniz için teşekkür ederiz. Ekibimiz gereksinimlerinizi inceleyecek ve 24 saat içinde size dönüş yapacaktır."
+    }
+  },
+  "cta": {
+    "serviceRequest": {
+      "badge": "Başlamaya Hazır",
+      "title": "Birlikte Harika Bir Şey İnşa Edelim",
+      "description": "Proje gereksinimlerinizi paylaşın ve uzman ekibimizden 24 saat içinde kişiselleştirilmiş bir teklif alın.",
+      "getQuote": "Ücretsiz Teklif Al",
+      "scheduleCall": "Görüşme Planla",
+      "trustIndicator1": "Ücretsiz danışmanlık",
+      "trustIndicator2": "Taahhüt gerekmez",
+      "trustIndicator3": "24 saat içinde yanıt",
+      "compactTitle": "Başlamaya Hazır mısınız?",
+      "compactDescription": "Proje gereksinimlerinizi tartışalım.",
+      "bannerTitle": "Aklınızda Bir Proje mi Var?",
+      "bannerDescription": "Ücretsiz danışmanlık ve kişiselleştirilmiş teklif alın.",
+      "startProject": "Projenizi Başlatın"
+    }
   }
 }

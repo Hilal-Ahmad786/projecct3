@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 interface Particle {
     x: number
@@ -10,10 +10,32 @@ interface Particle {
     size: number
 }
 
-export default function ParticleNetwork({ className = '' }: { className?: string }) {
+interface ParticleNetworkProps {
+    className?: string
+    color?: string
+}
+
+export default function ParticleNetwork({ className = '', color = '#6b7280' }: ParticleNetworkProps) {
     const canvasRef = useRef<HTMLCanvasElement>(null)
+    const [prefersReducedMotion, setPrefersReducedMotion] = useState(false)
 
     useEffect(() => {
+        // Check for reduced motion preference
+        const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
+        setPrefersReducedMotion(mediaQuery.matches)
+
+        const handleChange = (e: MediaQueryListEvent) => {
+            setPrefersReducedMotion(e.matches)
+        }
+
+        mediaQuery.addEventListener('change', handleChange)
+        return () => mediaQuery.removeEventListener('change', handleChange)
+    }, [])
+
+    useEffect(() => {
+        // Skip animation if user prefers reduced motion
+        if (prefersReducedMotion) return
+
         const canvas = canvasRef.current
         if (!canvas) return
 
@@ -25,11 +47,11 @@ export default function ParticleNetwork({ className = '' }: { className?: string
         let width = 0
         let height = 0
 
-        // Configuration
-        const particleCount = 60 // Low count for performance
-        const connectionDistance = 150
-        const mouseDistance = 200
-        const particleSpeed = 0.5
+        // Configuration - reduced for better performance
+        const particleCount = 35
+        const connectionDistance = 120
+        const mouseDistance = 150
+        const particleSpeed = 0.3
 
         // Mouse state
         const mouse = { x: -1000, y: -1000 }
@@ -64,9 +86,9 @@ export default function ParticleNetwork({ className = '' }: { className?: string
         const draw = () => {
             ctx.clearRect(0, 0, width, height)
 
-            // Update and draw particles
-            ctx.fillStyle = '#10b981' // Emerald
-            ctx.strokeStyle = '#10b981'
+            // Update and draw particles with neutral gray color
+            ctx.fillStyle = color
+            ctx.strokeStyle = color
 
             particles.forEach((p, i) => {
                 // Move
@@ -130,13 +152,26 @@ export default function ParticleNetwork({ className = '' }: { className?: string
             window.removeEventListener('mousemove', handleMouseMove)
             cancelAnimationFrame(animationFrameId)
         }
-    }, [])
+    }, [prefersReducedMotion, color])
+
+    // Return static element for reduced motion preference
+    if (prefersReducedMotion) {
+        return (
+            <div
+                className={`absolute inset-0 w-full h-full pointer-events-none ${className}`}
+                style={{
+                    opacity: 0.3,
+                    background: 'radial-gradient(circle at 50% 50%, rgba(107, 114, 128, 0.1), transparent 70%)'
+                }}
+            />
+        )
+    }
 
     return (
         <canvas
             ref={canvasRef}
             className={`absolute inset-0 w-full h-full pointer-events-none ${className}`}
-            style={{ opacity: 0.6 }} // Subtle opacity
+            style={{ opacity: 0.5 }}
         />
     )
 }

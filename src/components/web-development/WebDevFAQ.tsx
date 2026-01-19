@@ -3,28 +3,26 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { PlusIcon, MinusIcon } from '@heroicons/react/24/outline';
-import { useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function WebDevFAQ() {
-    const t = useSectionTranslations('webDevelopment.faq');
     const [openIndex, setOpenIndex] = useState<number | null>(0);
 
     const faqs = [
         {
-            question: t('items.0.question'),
-            answer: t('items.0.answer')
+            question: 'How long does it take to build a website?',
+            answer: 'Project timelines vary based on complexity. A simple landing page can be completed in 2-3 weeks, while a full-featured web application may take 2-4 months. During our initial consultation, we provide a detailed timeline tailored to your specific requirements.'
         },
         {
-            question: t('items.1.question'),
-            answer: t('items.1.answer')
+            question: 'What technologies do you use for web development?',
+            answer: 'We specialize in modern technologies including React, Next.js, TypeScript, Node.js, and Tailwind CSS. For databases, we work with PostgreSQL, MongoDB, and Prisma ORM. Our technology choices are always driven by your project requirements and scalability needs.'
         },
         {
-            question: t('items.2.question'),
-            answer: t('items.2.answer')
+            question: 'Do you provide ongoing maintenance and support?',
+            answer: 'Yes, we offer comprehensive maintenance packages that include security updates, performance monitoring, bug fixes, and feature enhancements. We believe in building long-term partnerships with our clients to ensure their digital products continue to thrive.'
         },
         {
-            question: t('items.3.question'),
-            answer: t('items.3.answer')
+            question: 'What is your development process like?',
+            answer: 'Our process follows an agile methodology with five key phases: Discovery (understanding your needs), Design (creating wireframes and mockups), Development (building the solution), Testing (ensuring quality), and Launch (deployment and handover). You are involved at every stage with regular updates and feedback sessions.'
         }
     ];
 
@@ -33,7 +31,7 @@ export default function WebDevFAQ() {
             <div className="container mx-auto px-4 max-w-3xl">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">
-                        {t('title')}
+                        Frequently Asked Questions
                     </h2>
                 </div>
 

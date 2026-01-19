@@ -1,3 +1,5 @@
+import { getTechIcon } from '@/components/icons/TechIcons';
+
 export default function TechStackPage() {
     return (
         <main className="min-h-screen pt-32 pb-20 bg-gray-900 text-white">
@@ -15,11 +17,17 @@ export default function TechStackPage() {
                 </div>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-                    {['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'PostgreSQL', 'GraphQL', 'AWS'].map((tech) => (
-                        <div key={tech} className="p-6 bg-gray-800 rounded-lg border border-gray-700 text-center hover:border-emerald-500 transition-colors">
-                            <span className="font-medium text-lg">{tech}</span>
-                        </div>
-                    ))}
+                    {['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'PostgreSQL', 'GraphQL', 'AWS'].map((tech) => {
+                        const Icon = getTechIcon(tech);
+                        return (
+                            <div key={tech} className="p-6 bg-gray-800 rounded-lg border border-gray-700 flex flex-col items-center justify-center gap-4 hover:border-emerald-500 transition-colors group">
+                                <div className="w-12 h-12 text-gray-400 group-hover:text-emerald-400 transition-colors">
+                                    <Icon className="w-full h-full" />
+                                </div>
+                                <span className="font-medium text-lg">{tech}</span>
+                            </div>
+                        );
+                    })}
                 </div>
             </div>
         </main>

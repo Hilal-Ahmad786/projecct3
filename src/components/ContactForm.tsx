@@ -18,6 +18,8 @@ export default function ContactForm() {
   const { dir, isLoading } = useTranslations()
   const t = useSectionTranslations('contact.form')
   const notificationT = useSectionTranslations('notifications.success')
+  const errorT = useSectionTranslations('notifications.error')
+  const commonT = useSectionTranslations('common')
 
   // Show loading state if translations are not ready
   if (isLoading) {
@@ -25,7 +27,7 @@ export default function ContactForm() {
       <section id="contact-form" className="py-16 bg-gray-50">
         <div className="container mx-auto px-6 lg:px-8 max-w-xl text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"></div>
-          <p className="mt-4 text-gray-600">Loading form...</p>
+          <p className="mt-4 text-gray-600">{commonT('loading')}</p>
         </div>
       </section>
     )
@@ -54,7 +56,7 @@ export default function ContactForm() {
       setForm({ name: '', email: '', subject: '', message: '' })
     } catch (error) {
       console.error('Error sending message:', error)
-      alert('An error occurred. Please try again.')
+      alert(errorT('general'))
     } finally {
       setSending(false)
     }
@@ -198,12 +200,12 @@ export default function ContactForm() {
         {/* Next steps info */}
         <div className="mt-8 bg-white rounded-lg p-6 border border-gray-100">
           <h3 className="text-lg font-semibold text-gray-900 mb-4">
-            What Happens Next?
+            {t('whatHappensNext')}
           </h3>
           <div className="space-y-2 text-sm text-gray-600">
-            <p>• We'll review your message within 24 hours</p>
-            <p>• Our team will reach out to discuss your project</p>
-            <p>• We'll provide a detailed proposal and timeline</p>
+            <p>• {t('nextStep1')}</p>
+            <p>• {t('nextStep2')}</p>
+            <p>• {t('nextStep3')}</p>
           </div>
         </div>
       </div>

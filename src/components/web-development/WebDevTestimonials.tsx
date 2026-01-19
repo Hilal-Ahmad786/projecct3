@@ -2,28 +2,25 @@
 
 import { motion } from 'framer-motion';
 import { StarIcon } from '@heroicons/react/24/solid';
-import { useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function WebDevTestimonials() {
-    const t = useSectionTranslations('webDevelopment.testimonials');
-
     const testimonials = [
         {
-            quote: t('items.0.quote'),
-            author: t('items.0.author'),
-            role: t('items.0.role'),
+            quote: 'They transformed our outdated website into a modern, high-performing platform. Our conversion rates increased by 40% within the first month.',
+            author: 'Sarah Mitchell',
+            role: 'CEO, TechStart Solutions',
             rating: 5
         },
         {
-            quote: t('items.1.quote'),
-            author: t('items.1.author'),
-            role: t('items.1.role'),
+            quote: 'The team delivered our e-commerce platform ahead of schedule with exceptional attention to detail. Their technical expertise is unmatched.',
+            author: 'Michael Chen',
+            role: 'Founder, Urban Retail',
             rating: 5
         },
         {
-            quote: t('items.2.quote'),
-            author: t('items.2.author'),
-            role: t('items.2.role'),
+            quote: 'Professional, responsive, and incredibly skilled. They built a complex dashboard that our team loves using every day.',
+            author: 'Emily Rodriguez',
+            role: 'CTO, DataFlow Analytics',
             rating: 5
         }
     ];
@@ -33,10 +30,10 @@ export default function WebDevTestimonials() {
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
                     <span className="text-gray-500 font-medium tracking-wider uppercase text-sm mb-4 block">
-                        {t('eyebrow')}
+                        Client Success Stories
                     </span>
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900">
-                        {t('title')}
+                        What Our Clients Say
                     </h2>
                 </div>
 

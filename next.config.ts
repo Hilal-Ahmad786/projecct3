@@ -21,15 +21,7 @@ const nextConfig = {
   },
   
   async redirects() {
-    if (process.env.NODE_ENV === 'production') {
-      return [
-        {
-          source: '/admin/:path*',
-          destination: '/',
-          permanent: false,
-        },
-      ];
-    }
+    // Admin panel is now accessible - add authentication in production
     return [];
   },
   

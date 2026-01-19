@@ -9,40 +9,37 @@ import {
     CloudIcon,
     CodeBracketIcon
 } from '@heroicons/react/24/outline';
-import { useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function WebDevServices() {
-    const t = useSectionTranslations('webDevelopment.services');
-
     const services = [
         {
-            title: t('items.0.title'),
-            description: t('items.0.description'),
-            icon: ShoppingCartIcon,
-        },
-        {
-            title: t('items.1.title'),
-            description: t('items.1.description'),
+            title: 'Custom Web Applications',
+            description: 'Tailor-made web solutions built from the ground up to meet your unique business requirements and workflow.',
             icon: ComputerDesktopIcon,
         },
         {
-            title: t('items.2.title'),
-            description: t('items.2.description'),
+            title: 'E-commerce Solutions',
+            description: 'Powerful online stores with secure payments, inventory management, and seamless user experiences that drive conversions.',
+            icon: ShoppingCartIcon,
+        },
+        {
+            title: 'Content Management Systems',
+            description: 'User-friendly CMS platforms that empower your team to manage content efficiently without technical expertise.',
             icon: ServerIcon,
         },
         {
-            title: t('items.3.title'),
-            description: t('items.3.description'),
+            title: 'Progressive Web Apps',
+            description: 'Fast, reliable, and engaging web applications that work offline and feel like native mobile apps.',
             icon: DevicePhoneMobileIcon,
         },
         {
-            title: t('items.4.title'),
-            description: t('items.4.description'),
+            title: 'API Integration',
+            description: 'Seamlessly connect your web application with third-party services, payment gateways, and external data sources.',
             icon: CloudIcon,
         },
         {
-            title: t('items.5.title'),
-            description: t('items.5.description'),
+            title: 'Performance Optimization',
+            description: 'Speed up your existing website with advanced optimization techniques for better user experience and SEO rankings.',
             icon: CodeBracketIcon,
         },
     ];
@@ -52,10 +49,10 @@ export default function WebDevServices() {
             <div className="container mx-auto px-4">
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6">
-                        {t('title')}
+                        Our Web Development Services
                     </h2>
                     <p className="text-xl text-gray-600 font-light">
-                        {t('subtitle')}
+                        From concept to deployment, we deliver comprehensive web solutions that help businesses thrive in the digital landscape.
                     </p>
                 </div>
 

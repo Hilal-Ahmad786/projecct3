@@ -26,6 +26,17 @@ export default function Navbar() {
   // We check if path contains '/services/' and has a segment after it
   const isServicePage = pathname.includes('/services/') && pathname.split('/').length > 3;
 
+  // Extract current service slug from pathname
+  const getServiceSlug = () => {
+    const parts = pathname.split('/');
+    const servicesIndex = parts.indexOf('services');
+    if (servicesIndex !== -1 && parts[servicesIndex + 1]) {
+      return parts[servicesIndex + 1];
+    }
+    return 'web-development';
+  };
+  const currentServiceSlug = getServiceSlug();
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener('scroll', onScroll);
@@ -42,15 +53,14 @@ export default function Navbar() {
     { label: t('contact'), href: '/contact', localizedHref: getLocalizedPath('/contact', locale) },
   ];
 
-  // Service Microsite Links
-  // TODO: In the future, we can dynamically generate this based on the current service slug
+  // Service Microsite Links - dynamically generated based on current service slug
   const serviceLinks = [
-    { label: 'Overview', href: '/services/web-development', localizedHref: '/services/web-development' },
-    { label: 'Features', href: '/services/web-development/features', localizedHref: '/services/web-development/features' },
-    { label: 'Process', href: '/services/web-development/process', localizedHref: '/services/web-development/process' },
-    { label: 'Tech Stack', href: '/services/web-development/tech-stack', localizedHref: '/services/web-development/tech-stack' },
-    { label: 'Portfolio', href: '/services/web-development/portfolio', localizedHref: '/services/web-development/portfolio' },
-    { label: 'FAQ', href: '/services/web-development/faq', localizedHref: '/services/web-development/faq' },
+    { label: 'Overview', href: `/services/${currentServiceSlug}`, localizedHref: `/services/${currentServiceSlug}` },
+    { label: 'Features', href: `/services/${currentServiceSlug}/features`, localizedHref: `/services/${currentServiceSlug}/features` },
+    { label: 'Process', href: `/services/${currentServiceSlug}/process`, localizedHref: `/services/${currentServiceSlug}/process` },
+    { label: 'Tech Stack', href: `/services/${currentServiceSlug}/tech-stack`, localizedHref: `/services/${currentServiceSlug}/tech-stack` },
+    { label: 'Portfolio', href: `/services/${currentServiceSlug}/portfolio`, localizedHref: `/services/${currentServiceSlug}/portfolio` },
+    { label: 'FAQ', href: `/services/${currentServiceSlug}/faq`, localizedHref: `/services/${currentServiceSlug}/faq` },
   ];
 
   const currentLinks = isServicePage ? serviceLinks : mainLinks;

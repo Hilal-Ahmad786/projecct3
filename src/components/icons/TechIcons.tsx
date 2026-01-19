@@ -1,0 +1,266 @@
+import React from 'react';
+
+export const TechIcons = {
+    // --- Frameworks & Core ---
+    NextJS: (props: React.SVGProps<SVGSVGElement>) => (
+        <svg viewBox="0 0 180 180" fill="currentColor" {...props}>
+            <path d="M90 0C40.3 0 0 40.3 0 90s40.3 90 90 90 90-40.3 90-90S139.7 0 90 0zM153 133l-28-36.2V65h-11v46.8l-40.5-52.7h-11v55h11V67.3L114 120c-7.2 5.5-16.1 8.8-25.8 8.8-23.7 0-43-19.3-43-43s19.3-43 43-43c10.9 0 20.9 4.1 28.5 10.8l7.8-7.8A53.6 53.6 0 0090 35c-30.4 0-55 24.6-55 55s24.6 55 55 55c13.7 0 26.2-5 35.8-13.3l27.2 3.1z" />
+        </svg>
+    ),
+    React: (props: React.SVGProps<SVGSVGElement>) => (
+        <svg viewBox="-11.5 -10.23174 23 20.46348" fill="currentColor" {...props}>
+            <circle cx="0" cy="0" r="2.05" opacity="1" />
+            <g stroke="currentColor" strokeWidth="1" fill="none">
+                <ellipse rx="11" ry="4.2" />
+                <ellipse rx="11" ry="4.2" transform="rotate(60)" />
+                <ellipse rx="11" ry="4.2" transform="rotate(120)" />
+            </g>
+        </svg>
+    ),
+    TypeScript: (props: React.SVGProps<SVGSVGElement>) => (
+        <svg viewBox="0 0 128 128" fill="currentColor" {...props}>
+            <path d="M1.5 63.91C1.5 29.46 29.47 1.5 63.93 1.5c34.48 0 62.43 27.95 62.43 62.41 0 34.47-27.95 62.42-62.43 62.42C29.47 126.33 1.5 98.38 1.5 63.91zm102.66-2.58l9.64-1.29c.92 5.37 1.5 9.4 1.5 13.92 0 18.06-10.22 26.35-24.96 26.35-15.5 0-24.53-9.58-24.53-27.01V59.08H59.56V50.5h6.24v-11.8l11.1-3.34v15.14h10.97v8.58h-10.97v25.21c0 7.74 2.19 11.19 9.3 11.19 4.8 0 7.42-1.07 9.07-2.36 1.15-.9 1.63-2.19 1.95-6.62zM52.33 49.63h-12.7v42.58H27.95V49.63h-11.9v-8.77h36.29v8.77z" />
+        </svg>
+    ),
+    TailwindCSS: (props: React.SVGProps<SVGSVGElement>) => (
+        <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+            <path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z" />
+        </svg>
+    ),
+    NodeJS: (props: React.SVGProps<SVGSVGElement>) => (
+        <svg viewBox="0 0 128 128" fill="currentColor" {...props}>
+            <path d="M64 121.7c-3.4 0-6.1-1.6-7.8-4.5L10.3 46c-1.6-2.9-1.6-6.1 0-9L56.2 9.8c1.7-2.9 4.4-4.5 7.8-4.5h.1c3.4 0 6.1 1.6 7.8 4.5l45.9 27.2c1.6 2.9 1.6 6.1 0 9l-45.9 27.2c-1.7 2.9-4.4 4.5-7.8 4.5h-.1zM64 12C63.6 12 63.1 12.1 62.7 12.3L16.8 39.5c-.7.4-.7 1.2 0 1.6L62.7 68.3c.4.2.9.3 1.3.3s.9-.1 1.3-.3l45.9-27.2c.7-.4.7-1.2 0-1.6L65.3 12.3C64.9 12.1 64.4 12 64 12zm33.5 61.6c-4.9 0-9.2-2.1-13-6.2l-3.2-3.4c-3.1-3.3-6.1-5-9.3-5-2.7 0-4.8 1.1-6.1 3.2-1.2 1.9-1.3 4.4-.3 7.5.5 1.5 1.2 3 2.1 4.5l.5.8c.8 1.3 1.6 2.5 2.5 3.7 2.6 3.5 5.5 6.6 8.7 9.2 1.5 1.2 2.9 2.2 4.1 3.1.6.4 1.1.9 1.6 1.2.6.5 1.1.8 1.3 1 .1.1.2.1.2.2.1.1.1.2.1.3 0 .1 0 .2-.1.3-.1.1-.3.2-.4.4-.3.2-.6.4-1.1.7-.8.5-1.9 1.1-3.1 1.6-2.5.9-5.7 1.8-9.4 1.8h-.5c-3.8 0-7.3-1.1-10.2-3.1-2.9-2-4.9-5-5.9-8.7l-.3-1.1c-.2-.7-1-1.1-1.7-.9-.7.2-1.1 1-1 1.7.3 1.2.7 2.4 1.2 3.5.5 1.1 1.1 2.2 1.8 3.2.7.9 1.5 1.8 2.4 2.6.9.8 1.9 1.5 3 2.1 1.1.6 2.3 1.1 3.5 1.4 1.3.3 2.6.5 4 .6 1.4.1 2.8.1 4.2 0 1.4-.1 2.8-.3 4.2-.6.7-.2 1.3-.3 2-.5.6-.2 1.3-.4 1.9-.7.6-.3 1.2-.5 1.7-.8.6-.3 1.1-.6 1.6-.9l.7-.4c.2-.1.4-.2.5-.3.1-.1.2-.2.3-.2.1-.1.1-.1 0 0 0-.1-.1-.1-.1-.1-.2-.1-.3-.2-.5-.3-1-.6-1.5-.9-.5-.3-1.1-.7-1.6-1.1-1.1-.8-2.3-1.7-3.6-2.6-2.5-1.9-4.8-4-6.8-6.4-.9-1.1-1.8-2.2-2.6-3.4-.8-1.2-1.5-2.5-2.1-3.8-.7-1.4-1.2-2.8-1.5-4.3-.3-1.5-.4-3-.3-4.5.2-1.5.5-3 1-4.4.4-1.4 1.1-2.7 1.8-3.9 1.6-2.4 3.8-4.3 6.6-5.8 2.8-1.5 6-2.2 9.4-2.2 3.5 0 6.9.9 9.8 2.5 2.9 1.7 5.2 4.1 6.8 7 .3.6 0 1.3-.6 1.7-.6.3-1.4.1-1.7-.5-1.3-2.3-3.1-4.1-5.3-5.4-2.2-1.3-4.8-1.9-7.5-1.9-2.7 0-5.1.5-7.2 1.4L64 78c3.2 0 6.3 1.7 9 4.6l3.2 3.4c5.3 5.7 11.2 5.9 11.4 5.9.7 0 1.2.6 1.2 1.3 0 .7-.6 1.2-1.3 1.2h0c-.1 0-.1 0 .1 0z" />
+        </svg>
+    ),
+    Python: (props: React.SVGProps<SVGSVGElement>) => (
+        <svg viewBox="0 0 128 128" fill="currentColor" {...props}>
+            <path d="M63.6 15.3c15.7-.3 17.5.9 23 2.3 8.1 2.2 8.7 6.3 8.7 17.6v5.8h-26v3.7h29.8c11.5 0 16.5 4.9 16.7 16.7 0 11.2-1.6 15.9-6.3 19.5-3.9 3-8.8 2.6-26.6 2.7l-3.7.1v17.4l-.1 3.5c-.7 13.9-6.3 16.8-19.1 16.8-11.8 0-16.7-5.1-16.7-16.1v-6h17.1v-3.7H33.9c-11.3 0-16.2-4.9-16.4-16.4-.3-11.4 1-15.8 4.7-19.5 4-3.9 8.6-2.9 26.6-2.9h3.7V25.7c-.3-5.2-.6-7.8-5-10-3-1.6-9.1-1.3-15-1-12.8.5-17.5 7.4-17.6 17.6v2.7H1.5v-6.3C1.5 13.5 13.3 5.4 30.1 3.3 35.8 2.6 52 1.9 63.6 15.3z" />
+        </svg>
+    ),
+    // --- Mobile ---
+    Flutter: (props: React.SVGProps<SVGSVGElement>) => (
+        <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+            <path d="M13.509 2.89L7.202 9.197 13.509 15.5h-5.91L1.293 9.197 7.599 2.89h5.91zm-5.91 18.22l6.307-6.307 2.103 2.103-8.41 8.411H7.599v-4.207z M18.91 9.197l-2.103 2.103 6.307 6.307v4.207h-5.91l-6.307-6.307 8.41-8.411 2.103-2.103 2.103 2.103zM3.46 9.197l4.14-4.14 4.14 4.14-4.14 4.14-4.14-4.14z" />
+        </svg>
+    ),
+    Swift: (props: React.SVGProps<SVGSVGElement>) => (
+        <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+            <path d="M19.04 4.931c.783-.243 1.848-.307 2.378-.266.305 1.5.093 3.033-.48 4.67 1.053-.26 1.821-.659 2.457-1.168-.119 2.083-1.636 5.518-5.3 7.859 2.062-.056 3.993-.846 5.09-2.028-1.558 4.416-5.46 7.697-10.875 6.007-.064 0-.106.014-.148.042-.719 3.551-3.649 3.847-5.915 3.945.318-.748 1.116-2.146 3.12-2.909-.92.053-1.894-.035-2.613-.263.666-.356 2.053-.615 3.159-.282-1.841-.611-3.141-1.282-4.102-2.316 1.481.503 3.324.721 5.378-.007-4.269-1.921-5.183-5.263-4.823-7.531.021-.12.144-.191.24-.138 1.166.65 2.502 1.187 4.161 1.251-1.206-3.219.088-5.978 2.327-7.901 1.096 1.745 2.158 2.274 3.737 2.261l.5.011c.907.017 1.467-.181 1.706-.237z" />
+        </svg>
+    ),
+    Kotlin: (props: React.SVGProps<SVGSVGElement>) => (
+        <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+            <path d="M24 24H0V0h24L12 12 24 24z" />
+        </svg>
+    ),
+    // --- Generic Categories ---
+    Brain: (props: React.SVGProps<SVGSVGElement>) => (
+        <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z" />
+        </svg>
+    ),
+    Mobile: (props: React.SVGProps<SVGSVGElement>) => (
+        <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+            <path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z" />
+        </svg>
+    ),
+    Cloud: (props: React.SVGProps<SVGSVGElement>) => (
+        <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+            <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4 0-2.05 1.53-3.76 3.56-3.97l1.07-.11.5-.95C8.08 7.14 9.94 6 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5 1.53.11c1.56.1 2.78 1.41 2.78 2.96 0 1.65-1.35 3-3 3z" />
+        </svg>
+    ),
+    Security: (props: React.SVGProps<SVGSVGElement>) => (
+        <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" />
+        </svg>
+    ),
+    Database: (props: React.SVGProps<SVGSVGElement>) => (
+        <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5.5-2.5l7.51-3.22-7.52-5.78v9z" />
+        </svg>
+    ),
+    DevOps: (props: React.SVGProps<SVGSVGElement>) => (
+        <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+            <path d="M12 16A8 8 0 104 8a8 8 0 008 8zm0 2c-5.52 0-10-4.48-10-10S6.48 0 12 0s10 4.48 10 10-4.48 10-10 10zm-1 2h2v4h-2v-4z" />
+        </svg>
+    ),
+    Design: (props: React.SVGProps<SVGSVGElement>) => (
+        <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+            <path d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm1.88 10.3l-5.66-5.66c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l5.66 5.66c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41zM18 17l-4-4h-2v2l4 4v-2z" />
+        </svg>
+    ),
+    Analytics: (props: React.SVGProps<SVGSVGElement>) => (
+        <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z" />
+        </svg>
+    ),
+    Commerce: (props: React.SVGProps<SVGSVGElement>) => (
+        <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+            <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+        </svg>
+    ),
+    Payment: (props: React.SVGProps<SVGSVGElement>) => (
+        <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+            <path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z" />
+        </svg>
+    ),
+    Search: (props: React.SVGProps<SVGSVGElement>) => (
+        <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+            <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+        </svg>
+    ),
+    Social: (props: React.SVGProps<SVGSVGElement>) => (
+        <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+            <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
+        </svg>
+    ),
+    Chat: (props: React.SVGProps<SVGSVGElement>) => (
+        <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+            <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z" />
+        </svg>
+    ),
+    GenericTech: (props: React.SVGProps<SVGSVGElement>) => (
+        <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+            <path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20v6z" />
+        </svg>
+    )
+};
+
+export type TechIconName = keyof typeof TechIcons;
+
+export const getTechIcon = (name: string) => {
+    const normalized = name.replace(/[\s\.\/\-&]/g, '').toLowerCase();
+
+    const map: Record<string, TechIconName> = {
+        // Web & Core
+        'nextjs': 'NextJS',
+        'react': 'React',
+        'typescript': 'TypeScript',
+        'tailwindcss': 'TailwindCSS',
+        'nodejs': 'NodeJS',
+        'expressjs': 'NodeJS',
+        'nestjs': 'NodeJS',
+        'fastapi': 'Python',
+        'django': 'Python',
+        'flask': 'Python',
+
+        // DB
+        'postgresql': 'Database',
+        'mongodb': 'Database',
+        'redis': 'Database',
+        'elasticsearch': 'Database',
+        'mysql': 'Database',
+        'sqlite': 'Database',
+        'sqlalchemy': 'Database',
+
+        // Cloud & DevOps
+        'aws': 'Cloud',
+        'azure': 'Cloud',
+        'gcp': 'Cloud',
+        'googlecloud': 'Cloud',
+        'googlecloudplatform': 'Cloud',
+        'digitalocean': 'Cloud',
+        'docker': 'DevOps',
+        'kubernetes': 'DevOps',
+        'helm': 'DevOps',
+        'podman': 'DevOps',
+        'terraform': 'DevOps',
+        'ansible': 'DevOps',
+        'pulumi': 'DevOps',
+        'cloudformation': 'DevOps',
+        'nginx': 'DevOps',
+        'jenkins': 'DevOps',
+        'githubactions': 'DevOps',
+        'gitlabci': 'DevOps',
+        'argocd': 'DevOps',
+
+        // Mobile
+        'flutter': 'Flutter',
+        'swift': 'Swift',
+        'kotlin': 'Kotlin',
+        'reactnative': 'React',
+        'ios': 'Mobile',
+        'android': 'Mobile',
+        'expo': 'Mobile',
+        'firebase': 'Mobile',
+
+        // Analytics & SEO
+        'googleanalytics4': 'Analytics',
+        'googlesearchconsole': 'Search',
+        'semrush': 'Search',
+        'ahrefs': 'Search',
+        'mozpro': 'Search',
+        'screamingfrog': 'Search',
+        'surferseo': 'Search',
+        'hotjar': 'Analytics',
+        'mixpanel': 'Analytics',
+        'looker': 'Analytics',
+        'lookerstudio': 'Analytics',
+        'tableau': 'Analytics',
+        'powerbi': 'Analytics',
+        'qlik': 'Analytics',
+
+        // Marketing & Social
+        'googleads': 'Search',
+        'metaadsmanager': 'Social',
+        'linkedincampaignmanager': 'Social',
+        'tiktokadsmanager': 'Social',
+        'microsoftadvertising': 'Search',
+        'hubspot': 'Chat',
+        'mailchimp': 'Chat',
+        'klaviyo': 'Chat',
+        'hootsuite': 'Social',
+        'buffer': 'Social',
+        'sproutsocial': 'Social',
+
+        // E-commerce & Payment
+        'shopify': 'Commerce',
+        'shopifyplus': 'Commerce',
+        'woocommerce': 'Commerce',
+        'magento': 'Commerce',
+        'bigcommerce': 'Commerce',
+        'stripe': 'Payment',
+        'paypal': 'Payment',
+        'square': 'Payment',
+        'klarna': 'Payment',
+        'authorizenet': 'Payment',
+
+        // Design
+        'figma': 'Design',
+        'sketch': 'Design',
+        'adobexd': 'Design',
+        'photoshop': 'Design',
+        'illustrator': 'Design',
+        'aftereffects': 'Design',
+        'invision': 'Design',
+        'framer': 'Design',
+        'miro': 'Design',
+        'notion': 'Design',
+        'canva': 'Design',
+
+        // Security
+        'splunk': 'Security',
+        'ibmqradar': 'Security',
+        'azuresentinel': 'Security',
+        'crowdstrike': 'Security',
+        'sentinelone': 'Security',
+        'nessus': 'Security',
+        'metasploit': 'Security',
+        'burpsuite': 'Security',
+        'kalilinux': 'Security',
+        'okta': 'Security',
+        'azuread': 'Security',
+        'hashicorpvault': 'Security',
+
+        // Protocols & API
+        'graphql': 'GenericTech',
+        'rest': 'GenericTech',
+        'grpc': 'GenericTech',
+        'websocket': 'GenericTech',
+        'postman': 'GenericTech',
+        'swaggeropenapi': 'GenericTech'
+    };
+
+    const iconName = map[normalized];
+    return iconName ? TechIcons[iconName] : TechIcons.GenericTech;
+};

@@ -1,14 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function TechStackStrip() {
-    const t = useSectionTranslations('webDevelopment.techStack');
-
-    // In a real app, you might want to map these from translations if the list changes per locale,
-    // but usually tech names are universal. We'll keep the array but could move it to json if needed.
-    // For now, we'll just use the static list as tech names don't translate.
     const technologies = [
         'React', 'Next.js', 'TypeScript', 'Node.js', 'Tailwind CSS', 'PostgreSQL',
         'GraphQL', 'AWS', 'Docker', 'Figma', 'Vercel', 'Prisma'

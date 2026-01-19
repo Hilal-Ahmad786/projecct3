@@ -1,0 +1,257 @@
+// PakSoft Database Schema
+// Prisma schema for leads, project requests, and analytics
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Lead Model - Main contact/lead information
+model Lead {
+  id              String          @id @default(cuid())
+  name            String
+  email           String
+  phone           String?
+  company         String?
+  website         String?
+  source          String          @default("website") // website, referral, social, etc.
+  status          LeadStatus      @default(NEW)
+  priority        LeadPriority    @default(MEDIUM)
+  notes           String?
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+
+  // Relations
+  projectRequests ProjectRequest[]
+  contactMessages ContactMessage[]
+  activities      LeadActivity[]
+
+  @@index([email])
+  @@index([status])
+  @@index([createdAt])
+}
+
+enum LeadStatus {
+  NEW
+  CONTACTED
+  QUALIFIED
+  PROPOSAL
+  NEGOTIATION
+  WON
+  LOST
+  ARCHIVED
+}
+
+enum LeadPriority {
+  LOW
+  MEDIUM
+  HIGH
+  URGENT
+}
+
+// Project Request Model - Detailed project submissions
+model ProjectRequest {
+  id                String          @id @default(cuid())
+  leadId            String
+  lead              Lead            @relation(fields: [leadId], references: [id], onDelete: Cascade)
+
+  // Project Details
+  serviceType       String          // web-development, ai-solutions, etc.
+  projectTitle      String?
+  description       String          @db.Text
+  goals             String?         @db.Text
+  targetAudience    String?
+
+  // Technical Requirements
+  techPreferences   String?
+  integrations      String?
+  performanceReqs   String?
+
+  // Budget & Timeline
+  budgetRange       BudgetRange     @default(MEDIUM)
+  budgetMin         Int?
+  budgetMax         Int?
+  currency          String          @default("USD")
+  timeline          Timeline        @default(STANDARD)
+  urgencyLevel      UrgencyLevel    @default(NORMAL)
+  preferredStartDate DateTime?
+
+  // Attachments & Additional
+  attachments       String[]        // File URLs
+  referenceUrls     String[]
+  additionalNotes   String?         @db.Text
+
+  // Status
+  status            RequestStatus   @default(PENDING)
+  reviewedBy        String?
+  reviewedAt        DateTime?
+  internalNotes     String?         @db.Text
+
+  createdAt         DateTime        @default(now())
+  updatedAt         DateTime        @updatedAt
+
+  @@index([leadId])
+  @@index([serviceType])
+  @@index([status])
+  @@index([createdAt])
+}
+
+enum BudgetRange {
+  SMALL       // $5,000 - $15,000
+  MEDIUM      // $15,000 - $50,000
+  LARGE       // $50,000 - $150,000
+  ENTERPRISE  // $150,000+
+  CUSTOM
+}
+
+enum Timeline {
+  URGENT      // < 1 month
+  STANDARD    // 1-3 months
+  FLEXIBLE    // 3-6 months
+  LONG_TERM   // 6+ months
+}
+
+enum UrgencyLevel {
+  LOW
+  NORMAL
+  HIGH
+  CRITICAL
+}
+
+enum RequestStatus {
+  PENDING
+  UNDER_REVIEW
+  NEEDS_INFO
+  APPROVED
+  REJECTED
+  CONVERTED
+}
+
+// Contact Message Model - Simple contact form submissions
+model ContactMessage {
+  id          String        @id @default(cuid())
+  leadId      String?
+  lead        Lead?         @relation(fields: [leadId], references: [id], onDelete: SetNull)
+
+  name        String
+  email       String
+  phone       String?
+  subject     String
+  message     String        @db.Text
+
+  status      MessageStatus @default(UNREAD)
+  repliedAt   DateTime?
+  repliedBy   String?
+
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+
+  @@index([email])
+  @@index([status])
+  @@index([createdAt])
+}
+
+enum MessageStatus {
+  UNREAD
+  READ
+  REPLIED
+  ARCHIVED
+  SPAM
+}
+
+// Lead Activity Model - Track all interactions
+model LeadActivity {
+  id          String       @id @default(cuid())
+  leadId      String
+  lead        Lead         @relation(fields: [leadId], references: [id], onDelete: Cascade)
+
+  type        ActivityType
+  description String
+  metadata    Json?
+  performedBy String?
+
+  createdAt   DateTime     @default(now())
+
+  @@index([leadId])
+  @@index([createdAt])
+}
+
+enum ActivityType {
+  CREATED
+  STATUS_CHANGED
+  NOTE_ADDED
+  EMAIL_SENT
+  CALL_MADE
+  MEETING_SCHEDULED
+  PROPOSAL_SENT
+  DOCUMENT_UPLOADED
+  CUSTOM
+}
+
+// Analytics Event Model - Track user behavior
+model AnalyticsEvent {
+  id          String   @id @default(cuid())
+  sessionId   String
+  userId      String?
+
+  eventType   String   // pageview, click, form_submit, etc.
+  eventName   String?
+  page        String
+  referrer    String?
+
+  metadata    Json?
+
+  // User Agent Info
+  device      String?
+  browser     String?
+  os          String?
+  country     String?
+  city        String?
+
+  createdAt   DateTime @default(now())
+
+  @@index([sessionId])
+  @@index([eventType])
+  @@index([page])
+  @@index([createdAt])
+}
+
+// Admin User Model
+model AdminUser {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  passwordHash  String
+  name          String
+  role          AdminRole @default(VIEWER)
+  isActive      Boolean   @default(true)
+  lastLogin     DateTime?
+
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  @@index([email])
+}
+
+enum AdminRole {
+  SUPER_ADMIN
+  ADMIN
+  MANAGER
+  VIEWER
+}
+
+// Settings Model - Application settings
+model Setting {
+  id        String   @id @default(cuid())
+  key       String   @unique
+  value     Json
+  category  String   @default("general")
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([category])
+}

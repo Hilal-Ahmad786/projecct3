@@ -2,11 +2,8 @@
 
 import Button from '@/components/Button';
 import { motion } from 'framer-motion';
-import { useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function WebDevCTA() {
-    const t = useSectionTranslations('webDevelopment.cta');
-
     return (
         <section className="py-32 bg-gray-900 relative overflow-hidden">
             {/* Background Effects */}
@@ -22,18 +19,19 @@ export default function WebDevCTA() {
                     className="max-w-3xl mx-auto"
                 >
                     <h2 className="text-4xl md:text-5xl font-light text-white mb-8">
-                        {t('title')}
+                        Ready to Build Something Amazing?
                     </h2>
                     <p className="text-xl text-gray-400 mb-12 leading-relaxed">
-                        {t('description')}
+                        Let's discuss your project and explore how we can help bring your vision to life.
+                        Schedule a free consultation with our team today.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Button href="/contact" variant="primary" size="lg" className="!bg-white !text-gray-900 hover:!bg-gray-100 !border-white">
-                            {t('schedule')}
+                            Schedule a Consultation
                         </Button>
                         <Button href="/services/web-development/portfolio" variant="outline" size="lg" className="!text-white !border-gray-700 hover:!bg-gray-800">
-                            {t('caseStudies')}
+                            View Case Studies
                         </Button>
                     </div>
                 </motion.div>

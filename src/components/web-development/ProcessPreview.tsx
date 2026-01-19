@@ -2,28 +2,25 @@
 
 import { motion } from 'framer-motion';
 import { MagnifyingGlassIcon, CodeBracketSquareIcon, RocketLaunchIcon } from '@heroicons/react/24/outline';
-import { useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function ProcessPreview() {
-    const t = useSectionTranslations('webDevelopment.process');
-
     const steps = [
         {
             number: '01',
-            title: t('steps.0.title'),
-            description: t('steps.0.description'),
+            title: 'Discovery & Planning',
+            description: 'We analyze your requirements, research your market, and create a comprehensive project roadmap tailored to your business goals.',
             icon: MagnifyingGlassIcon,
         },
         {
             number: '02',
-            title: t('steps.1.title'),
-            description: t('steps.1.description'),
+            title: 'Design & Development',
+            description: 'Our team crafts stunning UI/UX designs and transforms them into clean, performant code using modern technologies.',
             icon: CodeBracketSquareIcon,
         },
         {
             number: '03',
-            title: t('steps.2.title'),
-            description: t('steps.2.description'),
+            title: 'Testing & Launch',
+            description: 'Rigorous quality assurance ensures a flawless product. We handle deployment and provide ongoing support for your success.',
             icon: RocketLaunchIcon,
         },
     ];

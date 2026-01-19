@@ -44,7 +44,7 @@ export default function WhyUs() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.6 }}
                         >
-                            <h2 className="text-overline mb-4 text-emerald-600">Why Choose Us</h2>
+                            <h2 className="text-overline mb-4 text-gray-600">Why Choose Us</h2>
                             <h3 className="text-headline font-medium text-gray-900 mb-6">
                                 Engineering excellence <br />
                                 meets creative design.
@@ -53,7 +53,7 @@ export default function WhyUs() {
                                 We don't just write code; we architect solutions. Our development philosophy
                                 prioritizes long-term stability, performance, and user experience above all else.
                             </p>
-                            <div className="h-1 w-20 bg-emerald-500" />
+                            <div className="h-1 w-20 bg-gray-500" />
                         </motion.div>
                     </div>
 
@@ -67,10 +67,10 @@ export default function WhyUs() {
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ duration: 0.5, delay: index * 0.1 }}
-                                    className="bg-white p-8 rounded-xl border border-gray-100 hover:border-emerald-100 hover:shadow-lg transition-all duration-300 group"
+                                    className="bg-white p-8 rounded-xl border border-gray-100 hover:border-gray-300 hover:shadow-lg transition-all duration-300 group"
                                 >
-                                    <div className="w-12 h-12 bg-gray-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-emerald-50 transition-colors">
-                                        <feature.icon className="w-6 h-6 text-gray-600 group-hover:text-emerald-600 transition-colors" />
+                                    <div className="w-12 h-12 bg-gray-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-gray-100 transition-colors">
+                                        <feature.icon className="w-6 h-6 text-gray-600 group-hover:text-gray-900 transition-colors" />
                                     </div>
                                     <h4 className="text-title font-medium text-gray-900 mb-3">{feature.title}</h4>
                                     <p className="text-body text-gray-500">{feature.description}</p>

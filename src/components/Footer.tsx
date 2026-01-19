@@ -307,15 +307,23 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 pb-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            viewport={{ once: true }}
-            className="text-body text-gray-400"
-          >
-            © {new Date().getFullYear()} PakTechnology. {t('allRightsReserved')}
-          </motion.p>
+          <div className="flex items-center gap-6">
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              viewport={{ once: true }}
+              className="text-body text-gray-400"
+            >
+              © {new Date().getFullYear()} PakTechnology. {t('allRightsReserved')}
+            </motion.p>
+            <Link
+              href="/admin"
+              className="text-sm text-gray-500 hover:text-gray-300 transition-colors"
+            >
+              Admin
+            </Link>
+          </div>
 
           <motion.button
             onClick={scrollToTop}

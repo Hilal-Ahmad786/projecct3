@@ -3,11 +3,8 @@
 import { motion } from 'framer-motion';
 import Button from '@/components/Button';
 import ParticleNetwork from '@/components/ParticleNetwork';
-import { useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function Hero() {
-    const t = useSectionTranslations('webDevelopment.hero');
-
     return (
         <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-white">
             {/* Background - Minimalist Grid & Particles */}
@@ -30,19 +27,21 @@ export default function Hero() {
                             <div className="flex items-center gap-3 mb-8">
                                 <div className="w-8 h-0.5 bg-gray-900"></div>
                                 <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">
-                                    {t('eyebrow')}
+                                    Crafting Digital Masterpieces
                                 </span>
                             </div>
 
                             <h1 className="text-display font-light text-gray-900 mb-8 leading-none">
-                                {t('title')} <br />
+                                Web Development <br />
                                 <span className="font-semibold text-gray-900">
-                                    {t('titleAccent')}
+                                    Excellence
                                 </span>
                             </h1>
 
                             <p className="text-body text-gray-600 mb-10 max-w-2xl leading-relaxed">
-                                {t('description')}
+                                We build high-performance web applications that drive business growth.
+                                From stunning landing pages to complex enterprise solutions, our team
+                                delivers pixel-perfect, scalable, and lightning-fast digital experiences.
                             </p>
 
                             <div className="flex flex-wrap gap-4">
@@ -56,10 +55,10 @@ export default function Hero() {
                                         </svg>
                                     }
                                 >
-                                    {t('startProject')}
+                                    Start Your Project
                                 </Button>
                                 <Button href="/services/web-development/portfolio" variant="secondary" size="lg">
-                                    {t('viewPortfolio')}
+                                    View Portfolio
                                 </Button>
                             </div>
                         </motion.div>

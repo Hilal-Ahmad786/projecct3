@@ -2,9 +2,6 @@
 import './globals.css'
 import { ReactNode } from 'react'
 import { I18nProvider } from '@/hooks/useTranslations'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import FloatingButtons from '@/components/FloatingButtons'
 import Analytics from '@/components/Analytics'
 import SecurityGuard from '@/components/SecurityGuard'
 import ReCaptcha from '@/components/ReCaptcha'
@@ -35,10 +32,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
             <body className="flex flex-col min-h-screen" suppressHydrationWarning>
                 <SecurityGuard />
                 <I18nProvider>
-                    <Navbar />
-                    <main className="flex-grow">{children}</main>
-                    <Footer />
-                    <FloatingButtons />
+                    {children}
                 </I18nProvider>
             </body>
         </html>
