@@ -22,6 +22,12 @@ import {
   PencilSquareIcon,
   MegaphoneIcon,
   CloudArrowUpIcon,
+  CommandLineIcon,
+  CpuChipIcon,
+  CircleStackIcon,
+  ServerStackIcon,
+  EyeIcon,
+  AdjustmentsHorizontalIcon,
 } from '@heroicons/react/24/outline';
 
 export default function ServicesSection() {
@@ -57,91 +63,152 @@ export default function ServicesSection() {
       icon: Cog6ToothIcon,
       description: tServices('pythonAutomation.description'),
       category: 'automation',
-      features: tServices('pythonAutomation.features')
+      features: tServices('pythonAutomation.features'),
+      slug: 'python-automation'
     },
     {
       title: tServices('dataAnalytics.title'),
       icon: ChartBarSquareIcon,
       description: tServices('dataAnalytics.description'),
       category: 'automation',
-      features: tServices('dataAnalytics.features')
+      features: tServices('dataAnalytics.features'),
+      slug: 'data-analytics'
     },
     {
       title: tServices('machineLearning.title'),
       icon: CubeIcon,
       description: tServices('machineLearning.description'),
       category: 'ai',
-      features: tServices('machineLearning.features')
+      features: tServices('machineLearning.features'),
+      slug: 'machine-learning'
     },
     {
       title: tServices('aiIntegration.title'),
       icon: PhotoIcon,
       description: tServices('aiIntegration.description'),
       category: 'ai',
-      features: tServices('aiIntegration.features')
+      features: tServices('aiIntegration.features'),
+      slug: 'ai-solutions'
     },
     {
       title: tServices('conversationalAI.title'),
       icon: ChatBubbleBottomCenterTextIcon,
       description: tServices('conversationalAI.description'),
       category: 'ai',
-      features: tServices('conversationalAI.features')
+      features: tServices('conversationalAI.features'),
+      slug: 'conversational-ai'
+    },
+    {
+      title: tServices('promptEngineering.title'),
+      icon: CommandLineIcon,
+      description: tServices('promptEngineering.description'),
+      category: 'ai',
+      features: tServices('promptEngineering.features'),
+      slug: 'prompt-engineering'
+    },
+    {
+      title: tServices('aiAgents.title'),
+      icon: CpuChipIcon,
+      description: tServices('aiAgents.description'),
+      category: 'ai',
+      features: tServices('aiAgents.features'),
+      slug: 'ai-agents'
+    },
+    {
+      title: tServices('ragSolutions.title'),
+      icon: CircleStackIcon,
+      description: tServices('ragSolutions.description'),
+      category: 'ai',
+      features: tServices('ragSolutions.features'),
+      slug: 'rag-solutions'
+    },
+    {
+      title: tServices('mlopsDeployment.title'),
+      icon: ServerStackIcon,
+      description: tServices('mlopsDeployment.description'),
+      category: 'ai',
+      features: tServices('mlopsDeployment.features'),
+      slug: 'mlops-deployment'
+    },
+    {
+      title: tServices('computerVision.title'),
+      icon: EyeIcon,
+      description: tServices('computerVision.description'),
+      category: 'ai',
+      features: tServices('computerVision.features'),
+      slug: 'computer-vision'
+    },
+    {
+      title: tServices('llmFinetuning.title'),
+      icon: AdjustmentsHorizontalIcon,
+      description: tServices('llmFinetuning.description'),
+      category: 'ai',
+      features: tServices('llmFinetuning.features'),
+      slug: 'llm-finetuning'
     },
     {
       title: tServices('apiDevelopment.title'),
       icon: LinkIcon,
       description: tServices('apiDevelopment.description'),
       category: 'web',
-      features: tServices('apiDevelopment.features')
+      features: tServices('apiDevelopment.features'),
+      slug: 'api-development'
     },
     {
       title: tServices('webApplications.title'),
       icon: ComputerDesktopIcon,
       description: tServices('webApplications.description'),
       category: 'web',
-      features: tServices('webApplications.features')
+      features: tServices('webApplications.features'),
+      slug: 'web-development'
     },
     {
       title: tServices('fullStackDevelopment.title'),
       icon: CodeBracketSquareIcon,
       description: tServices('fullStackDevelopment.description'),
       category: 'web',
-      features: tServices('fullStackDevelopment.features')
+      features: tServices('fullStackDevelopment.features'),
+      slug: 'web-development'
     },
     {
       title: tServices('mobileDevelopment.title'),
       icon: DevicePhoneMobileIcon,
       description: tServices('mobileDevelopment.description'),
       category: 'web',
-      features: tServices('mobileDevelopment.features')
+      features: tServices('mobileDevelopment.features'),
+      slug: 'mobile-development'
     },
     {
       title: tServices('uiuxDesign.title'),
       icon: PencilSquareIcon,
       description: tServices('uiuxDesign.description'),
       category: 'design',
-      features: tServices('uiuxDesign.features')
+      features: tServices('uiuxDesign.features'),
+      slug: 'ui-ux-design'
     },
     {
       title: tServices('digitalMarketing.title'),
       icon: MegaphoneIcon,
       description: tServices('digitalMarketing.description'),
       category: 'design',
-      features: tServices('digitalMarketing.features')
+      features: tServices('digitalMarketing.features'),
+      slug: 'digital-marketing'
     },
     {
       title: tServices('ecommerceSolutions.title'),
       icon: ShoppingCartIcon,
       description: tServices('ecommerceSolutions.description'),
       category: 'infrastructure',
-      features: tServices('ecommerceSolutions.features')
+      features: tServices('ecommerceSolutions.features'),
+      slug: 'e-commerce'
     },
     {
       title: tServices('devopsInfrastructure.title'),
       icon: CloudArrowUpIcon,
       description: tServices('devopsInfrastructure.description'),
       category: 'infrastructure',
-      features: tServices('devopsInfrastructure.features')
+      features: tServices('devopsInfrastructure.features'),
+      slug: 'devops-cloud'
     },
   ];
 
@@ -255,11 +322,7 @@ export default function ServicesSection() {
 
                 {/* CTA */}
                 <Button
-                  href={`/services/${service.category === 'web' && service.title.includes('Web') ? 'web-development' :
-                      service.category === 'ai' && service.title.includes('AI') ? 'ai-solutions' :
-                        service.category === 'web' && service.title.includes('Mobile') ? 'mobile-development' :
-                          service.title.toLowerCase().replace(/\s+/g, '-')
-                    }`}
+                  href={`/services/${service.slug}`}
                   variant="ghost"
                   size="sm"
                   rightIcon={

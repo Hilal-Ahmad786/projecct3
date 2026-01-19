@@ -311,6 +311,66 @@
           "Monitoring",
           "Security"
         ]
+      },
+      "promptEngineering": {
+        "title": "Prompt Engineering",
+        "description": "Expert LLM prompt design and optimization for reliable, high-quality AI outputs at scale.",
+        "features": [
+          "Prompt Optimization",
+          "Chain-of-Thought Design",
+          "Output Validation",
+          "A/B Testing"
+        ]
+      },
+      "aiAgents": {
+        "title": "AI Agents",
+        "description": "Autonomous AI agents that handle complex workflows and multi-step tasks intelligently.",
+        "features": [
+          "Multi-Agent Systems",
+          "Tool Integration",
+          "Task Orchestration",
+          "Memory & Context"
+        ]
+      },
+      "ragSolutions": {
+        "title": "RAG Solutions",
+        "description": "Enterprise knowledge bases with retrieval-augmented generation for accurate AI responses.",
+        "features": [
+          "Vector Databases",
+          "Document Processing",
+          "Semantic Search",
+          "Knowledge Graphs"
+        ]
+      },
+      "mlopsDeployment": {
+        "title": "MLOps & Deployment",
+        "description": "End-to-end ML pipelines with automated training, deployment, and monitoring.",
+        "features": [
+          "Model Serving",
+          "Pipeline Automation",
+          "Model Monitoring",
+          "A/B Testing"
+        ]
+      },
+      "computerVision": {
+        "title": "Computer Vision",
+        "description": "Advanced image and video analysis with object detection, recognition, and tracking.",
+        "features": [
+          "Object Detection",
+          "Image Classification",
+          "Video Analytics",
+          "OCR Solutions"
+        ]
+      },
+      "llmFinetuning": {
+        "title": "LLM Fine-tuning",
+        "description": "Custom model training and domain adaptation for specialized AI applications.",
+        "features": [
+          "Domain Adaptation",
+          "Custom Training",
+          "RLHF Implementation",
+          "Model Evaluation"
+        ]
       }
     },
     "pricing": {
