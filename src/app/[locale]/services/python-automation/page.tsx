@@ -7,7 +7,7 @@ import ProcessPreview from '@/components/python-automation/ProcessPreview';
 import AutomationServices from '@/components/python-automation/AutomationServices';
 import AutomationTestimonials from '@/components/python-automation/AutomationTestimonials';
 import AutomationFAQ from '@/components/python-automation/AutomationFAQ';
-import AutomationCTA from '@/components/python-automation/AutomationCTA';
+import { ServiceRequestCTA } from '@/components/services';
 
 export default function PythonAutomationPage() {
     return (
@@ -19,7 +19,7 @@ export default function PythonAutomationPage() {
             <WhyUs />
             <AutomationTestimonials />
             <AutomationFAQ />
-            <AutomationCTA />
+            <ServiceRequestCTA serviceType="python-automation" />
         </main>
     );
 }

@@ -109,8 +109,13 @@ export async function POST(request: NextRequest) {
       };
     }
 
-    // TODO: Send email notification
-    // await sendNotificationEmail(validatedData);
+    // Send email notification
+    try {
+      await sendProjectRequestNotification(validatedData);
+    } catch (emailError) {
+      console.error('Failed to send email notification:', emailError);
+      // Don't fail the request if email fails
+    }
 
     return NextResponse.json(
       {
@@ -149,4 +154,89 @@ export async function GET() {
     { message: 'Method not allowed' },
     { status: 405 }
   );
+}
+
+// Email notification helper function
+async function sendProjectRequestNotification(data: {
+  name: string;
+  email: string;
+  serviceType: string;
+  budgetRange: string;
+  timeline: string;
+  description: string;
+  company?: string;
+}) {
+  const resendApiKey = process.env.RESEND_API_KEY;
+
+  if (!resendApiKey) {
+    console.log('Email service not configured. Skipping notifications.');
+    return;
+  }
+
+  const adminEmail = process.env.ADMIN_EMAIL || 'info@paksoft.com';
+
+  // Send notification to admin
+  await fetch('https://api.resend.com/emails', {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${resendApiKey}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      from: 'PakSoft <noreply@paksoft.com.tr>',
+      to: [adminEmail],
+      subject: `New Project Request: ${data.serviceType}`,
+      html: `
+        <h2>New Project Request Received</h2>
+        <table style="border-collapse: collapse; width: 100%;">
+          <tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Name</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${data.name}</td></tr>
+          <tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Email</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${data.email}</td></tr>
+          ${data.company ? `<tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Company</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${data.company}</td></tr>` : ''}
+          <tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Service Type</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${data.serviceType}</td></tr>
+          <tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Budget</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${data.budgetRange}</td></tr>
+          <tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Timeline</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${data.timeline}</td></tr>
+        </table>
+        <h3>Project Description</h3>
+        <p style="background: #f5f5f5; padding: 15px; border-radius: 5px;">${data.description.replace(/\n/g, '<br>')}</p>
+        <hr>
+        <p style="color: #666; font-size: 12px;">This request was submitted from the PakSoft website.</p>
+      `,
+    }),
+  });
+
+  // Send confirmation to user
+  await fetch('https://api.resend.com/emails', {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${resendApiKey}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      from: 'PakSoft <noreply@paksoft.com.tr>',
+      to: [data.email],
+      subject: 'We received your project request - PakSoft',
+      html: `
+        <h2>Thank you for your project request, ${data.name}!</h2>
+        <p>We have received your project request and our team will review it within 24-48 hours.</p>
+        <h3>What happens next?</h3>
+        <ol>
+          <li>Our team will review your requirements</li>
+          <li>We'll prepare a preliminary proposal and estimate</li>
+          <li>We'll schedule a call to discuss your project in detail</li>
+        </ol>
+        <p><strong>Your project summary:</strong></p>
+        <ul>
+          <li>Service Type: ${data.serviceType}</li>
+          <li>Budget Range: ${data.budgetRange}</li>
+          <li>Timeline: ${data.timeline}</li>
+        </ul>
+        <hr>
+        <p>Best regards,<br>The PakSoft Team</p>
+        <p style="color: #666; font-size: 12px;">
+          PakSoft - Modern Digital Solutions<br>
+          <a href="https://paksoft.com.tr">paksoft.com.tr</a>
+        </p>
+      `,
+    }),
+  });
 }

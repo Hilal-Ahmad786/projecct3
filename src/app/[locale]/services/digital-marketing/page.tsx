@@ -7,7 +7,7 @@ import ProcessPreview from '@/components/digital-marketing/ProcessPreview';
 import MarketingServices from '@/components/digital-marketing/MarketingServices';
 import MarketingTestimonials from '@/components/digital-marketing/MarketingTestimonials';
 import MarketingFAQ from '@/components/digital-marketing/MarketingFAQ';
-import MarketingCTA from '@/components/digital-marketing/MarketingCTA';
+import { ServiceRequestCTA } from '@/components/services';
 
 export default function DigitalMarketingPage() {
     return (
@@ -19,7 +19,7 @@ export default function DigitalMarketingPage() {
             <WhyUs />
             <MarketingTestimonials />
             <MarketingFAQ />
-            <MarketingCTA />
+            <ServiceRequestCTA serviceType="digital-marketing" />
         </main>
     );
 }

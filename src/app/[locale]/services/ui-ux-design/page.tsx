@@ -7,7 +7,7 @@ import ProcessPreview from '@/components/ui-ux-design/ProcessPreview';
 import DesignServices from '@/components/ui-ux-design/DesignServices';
 import DesignTestimonials from '@/components/ui-ux-design/DesignTestimonials';
 import DesignFAQ from '@/components/ui-ux-design/DesignFAQ';
-import DesignCTA from '@/components/ui-ux-design/DesignCTA';
+import { ServiceRequestCTA } from '@/components/services';
 
 export default function UIUXDesignPage() {
     return (
@@ -19,7 +19,7 @@ export default function UIUXDesignPage() {
             <WhyUs />
             <DesignTestimonials />
             <DesignFAQ />
-            <DesignCTA />
+            <ServiceRequestCTA serviceType="ui-ux-design" />
         </main>
     );
 }

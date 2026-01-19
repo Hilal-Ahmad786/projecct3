@@ -1,12 +1,17 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useForm, UseFormRegister, FieldErrors } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import Button from '@/components/Button';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
+import FileUpload from './FileUpload';
+import BudgetCalculator, { BudgetEstimate } from './BudgetCalculator';
+
+// Storage key for form progress
+const FORM_STORAGE_KEY = 'paksoft_project_request_draft';
 
 // Form validation schema
 const projectRequestSchema = z.object({
@@ -62,12 +67,27 @@ const services = [
   { value: 'e-commerce', label: 'E-Commerce Solutions' },
   { value: 'devops-cloud', label: 'DevOps & Cloud' },
   { value: 'cybersecurity', label: 'Cybersecurity' },
-  { value: 'llm-integration', label: 'LLM Integration' },
-  { value: 'rag-solutions', label: 'RAG Solutions' },
-  { value: 'ai-agents', label: 'AI Agents Development' },
   { value: 'conversational-ai', label: 'Conversational AI' },
+  // New AI Services
+  { value: 'prompt-engineering', label: 'Prompt Engineering' },
+  { value: 'ai-agents', label: 'AI Agents Development' },
+  { value: 'rag-solutions', label: 'RAG Solutions' },
+  { value: 'mlops-deployment', label: 'MLOps & Deployment' },
+  { value: 'computer-vision', label: 'Computer Vision' },
+  { value: 'llm-finetuning', label: 'LLM Fine-tuning' },
   { value: 'other', label: 'Other' },
 ];
+
+interface UploadedFile {
+  id: string;
+  name: string;
+  size: number;
+  type: string;
+  url?: string;
+  status: 'uploading' | 'complete' | 'error';
+  progress: number;
+  error?: string;
+}
 
 export default function ProjectRequestForm({
   prefilledService,
@@ -78,15 +98,47 @@ export default function ProjectRequestForm({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [uploadedFiles, setUploadedFiles] = useState<UploadedFile[]>([]);
+  const [budgetEstimate, setBudgetEstimate] = useState<BudgetEstimate | null>(null);
+  const [hasDraft, setHasDraft] = useState(false);
 
   const { dir, isLoading } = useTranslations();
   const t = useSectionTranslations('forms.projectRequest');
+
+  // Load saved draft from localStorage
+  const loadDraft = useCallback(() => {
+    if (typeof window === 'undefined') return null;
+    try {
+      const saved = localStorage.getItem(FORM_STORAGE_KEY);
+      if (saved) {
+        const draft = JSON.parse(saved);
+        // Check if draft is less than 7 days old
+        if (Date.now() - draft.timestamp < 7 * 24 * 60 * 60 * 1000) {
+          return draft.data;
+        }
+        // Remove expired draft
+        localStorage.removeItem(FORM_STORAGE_KEY);
+      }
+    } catch (error) {
+      console.error('Error loading draft:', error);
+    }
+    return null;
+  }, []);
+
+  // Check for existing draft on mount
+  useEffect(() => {
+    const draft = loadDraft();
+    if (draft) {
+      setHasDraft(true);
+    }
+  }, [loadDraft]);
 
   const {
     register,
     handleSubmit,
     trigger,
     watch,
+    reset,
     formState: { errors },
   } = useForm<FormData>({
     resolver: zodResolver(projectRequestSchema),
@@ -98,6 +150,51 @@ export default function ProjectRequestForm({
     },
     mode: 'onChange',
   });
+
+  // Watch form values for auto-save and budget calculator
+  const formValues = watch();
+  const serviceType = watch('serviceType');
+  const timeline = watch('timeline');
+  const urgencyLevel = watch('urgencyLevel');
+
+  // Auto-save to localStorage
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    // Don't save if form is pristine or submitted
+    if (!formValues.name && !formValues.email && !formValues.serviceType) return;
+
+    const saveTimeout = setTimeout(() => {
+      try {
+        localStorage.setItem(FORM_STORAGE_KEY, JSON.stringify({
+          timestamp: Date.now(),
+          data: formValues,
+          step: currentStep,
+        }));
+      } catch (error) {
+        console.error('Error saving draft:', error);
+      }
+    }, 1000); // Debounce saves
+
+    return () => clearTimeout(saveTimeout);
+  }, [formValues, currentStep]);
+
+  // Restore draft
+  const restoreDraft = useCallback(() => {
+    const draft = loadDraft();
+    if (draft) {
+      reset(draft);
+      setHasDraft(false);
+    }
+  }, [loadDraft, reset]);
+
+  // Clear draft
+  const clearDraft = useCallback(() => {
+    if (typeof window !== 'undefined') {
+      localStorage.removeItem(FORM_STORAGE_KEY);
+    }
+    setHasDraft(false);
+  }, []);
 
   const stepFields: (keyof FormData)[][] = [
     ['name', 'email', 'phone', 'company', 'website'],
@@ -131,16 +228,35 @@ export default function ProjectRequestForm({
     setSubmitError(null);
 
     try {
+      // Include uploaded files and budget estimate in submission
+      const submitData = {
+        ...data,
+        attachments: uploadedFiles.filter(f => f.status === 'complete').map(f => ({
+          name: f.name,
+          url: f.url,
+          type: f.type,
+          size: f.size,
+        })),
+        budgetEstimate: budgetEstimate ? {
+          min: budgetEstimate.minBudget,
+          max: budgetEstimate.maxBudget,
+          estimatedDays: budgetEstimate.estimatedDays,
+        } : undefined,
+      };
+
       const response = await fetch('/api/project-request', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
+        body: JSON.stringify(submitData),
       });
 
       if (!response.ok) {
         const errorData = await response.json();
         throw new Error(errorData.message || 'Failed to submit request');
       }
+
+      // Clear draft on successful submission
+      clearDraft();
 
       setSubmitSuccess(true);
       onSuccess?.();
@@ -192,6 +308,40 @@ export default function ProjectRequestForm({
 
   return (
     <div className="w-full max-w-2xl mx-auto" dir={dir}>
+      {/* Draft Restoration Banner */}
+      {hasDraft && (
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="mb-6 p-4 bg-blue-50 border border-blue-200 rounded-lg flex items-center justify-between"
+        >
+          <div className="flex items-center gap-3">
+            <svg className="w-5 h-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span className="text-sm text-blue-800">
+              {t('draftFound') || 'You have an unsaved draft. Would you like to continue?'}
+            </span>
+          </div>
+          <div className="flex gap-2">
+            <button
+              type="button"
+              onClick={clearDraft}
+              className="px-3 py-1 text-sm text-blue-600 hover:text-blue-800"
+            >
+              {t('discard') || 'Discard'}
+            </button>
+            <button
+              type="button"
+              onClick={restoreDraft}
+              className="px-3 py-1 text-sm bg-blue-600 text-white rounded hover:bg-blue-700"
+            >
+              {t('restore') || 'Restore'}
+            </button>
+          </div>
+        </motion.div>
+      )}
+
       {/* Progress Bar */}
       <div className="mb-8">
         <div className="flex items-center justify-between mb-4">
@@ -263,10 +413,26 @@ export default function ProjectRequestForm({
               <Step3ProjectDetails register={register} errors={errors} dir={dir} t={t} />
             )}
             {currentStep === 4 && (
-              <Step4TechRequirements register={register} errors={errors} dir={dir} t={t} />
+              <Step4TechRequirements
+                register={register}
+                errors={errors}
+                dir={dir}
+                t={t}
+                uploadedFiles={uploadedFiles}
+                onFilesChange={setUploadedFiles}
+              />
             )}
             {currentStep === 5 && (
-              <Step5BudgetTimeline register={register} errors={errors} dir={dir} t={t} />
+              <Step5BudgetTimeline
+                register={register}
+                errors={errors}
+                dir={dir}
+                t={t}
+                serviceType={serviceType}
+                timeline={timeline}
+                urgencyLevel={urgencyLevel}
+                onEstimateChange={setBudgetEstimate}
+              />
             )}
           </motion.div>
         </AnimatePresence>
@@ -456,7 +622,12 @@ function Step3ProjectDetails({ register, errors, dir, t }: StepProps) {
   );
 }
 
-function Step4TechRequirements({ register, errors, dir, t }: StepProps) {
+interface Step4Props extends StepProps {
+  uploadedFiles: UploadedFile[];
+  onFilesChange: (files: UploadedFile[]) => void;
+}
+
+function Step4TechRequirements({ register, errors, dir, t, uploadedFiles, onFilesChange }: Step4Props) {
   return (
     <div className="space-y-6">
       <FormField label={t('fields.techPreferences')} error={errors.techPreferences?.message}>
@@ -488,13 +659,48 @@ function Step4TechRequirements({ register, errors, dir, t }: StepProps) {
           dir={dir}
         />
       </FormField>
+
+      {/* File Upload Section */}
+      <div className="pt-4 border-t border-gray-200">
+        <FileUpload
+          onFilesChange={onFilesChange}
+          maxFiles={5}
+          maxSizeMB={10}
+          label={t('fields.attachments') || 'Project Attachments (Optional)'}
+          hint={t('hints.attachments') || 'Upload RFP documents, mockups, wireframes, or reference materials'}
+        />
+      </div>
     </div>
   );
 }
 
-function Step5BudgetTimeline({ register, errors, dir, t }: StepProps) {
+interface Step5Props extends StepProps {
+  serviceType: string;
+  timeline: string;
+  urgencyLevel: string;
+  onEstimateChange: (estimate: BudgetEstimate) => void;
+}
+
+function Step5BudgetTimeline({
+  register,
+  errors,
+  dir,
+  t,
+  serviceType,
+  timeline,
+  urgencyLevel,
+  onEstimateChange,
+}: Step5Props) {
   return (
     <div className="space-y-6">
+      {/* Budget Calculator */}
+      <BudgetCalculator
+        serviceType={serviceType}
+        timeline={timeline}
+        urgencyLevel={urgencyLevel}
+        onEstimateChange={onEstimateChange}
+      />
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <FormField
           label={t('fields.budgetRange')}

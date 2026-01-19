@@ -7,7 +7,7 @@ import ProcessPreview from '@/components/mobile-development/ProcessPreview';
 import MobileServices from '@/components/mobile-development/MobileServices';
 import MobileTestimonials from '@/components/mobile-development/MobileTestimonials';
 import MobileFAQ from '@/components/mobile-development/MobileFAQ';
-import MobileCTA from '@/components/mobile-development/MobileCTA';
+import { ServiceRequestCTA } from '@/components/services';
 
 export default function MobileDevelopmentPage() {
     return (
@@ -19,7 +19,7 @@ export default function MobileDevelopmentPage() {
             <WhyUs />
             <MobileTestimonials />
             <MobileFAQ />
-            <MobileCTA />
+            <ServiceRequestCTA serviceType="mobile-development" />
         </main>
     );
 }

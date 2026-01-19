@@ -7,7 +7,7 @@ import ProcessPreview from '@/components/data-analytics/ProcessPreview';
 import AnalyticsServices from '@/components/data-analytics/AnalyticsServices';
 import AnalyticsTestimonials from '@/components/data-analytics/AnalyticsTestimonials';
 import AnalyticsFAQ from '@/components/data-analytics/AnalyticsFAQ';
-import AnalyticsCTA from '@/components/data-analytics/AnalyticsCTA';
+import { ServiceRequestCTA } from '@/components/services';
 
 export default function DataAnalyticsPage() {
     return (
@@ -19,7 +19,7 @@ export default function DataAnalyticsPage() {
             <WhyUs />
             <AnalyticsTestimonials />
             <AnalyticsFAQ />
-            <AnalyticsCTA />
+            <ServiceRequestCTA serviceType="data-analytics" />
         </main>
     );
 }

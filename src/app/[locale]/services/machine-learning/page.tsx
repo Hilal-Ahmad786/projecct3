@@ -7,7 +7,7 @@ import ProcessPreview from '@/components/machine-learning/ProcessPreview';
 import MLServices from '@/components/machine-learning/MLServices';
 import MLTestimonials from '@/components/machine-learning/MLTestimonials';
 import MLFAQ from '@/components/machine-learning/MLFAQ';
-import MLCTA from '@/components/machine-learning/MLCTA';
+import { ServiceRequestCTA } from '@/components/services';
 
 export default function MachineLearningPage() {
     return (
@@ -19,7 +19,7 @@ export default function MachineLearningPage() {
             <WhyUs />
             <MLTestimonials />
             <MLFAQ />
-            <MLCTA />
+            <ServiceRequestCTA serviceType="machine-learning" />
         </main>
     );
 }

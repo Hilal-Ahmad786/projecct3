@@ -7,7 +7,7 @@ import ProcessPreview from '@/components/conversational-ai/ProcessPreview';
 import ChatbotServices from '@/components/conversational-ai/ChatbotServices';
 import ChatbotTestimonials from '@/components/conversational-ai/ChatbotTestimonials';
 import ChatbotFAQ from '@/components/conversational-ai/ChatbotFAQ';
-import ChatbotCTA from '@/components/conversational-ai/ChatbotCTA';
+import { ServiceRequestCTA } from '@/components/services';
 
 export default function ConversationalAIPage() {
     return (
@@ -19,7 +19,7 @@ export default function ConversationalAIPage() {
             <WhyUs />
             <ChatbotTestimonials />
             <ChatbotFAQ />
-            <ChatbotCTA />
+            <ServiceRequestCTA serviceType="conversational-ai" />
         </main>
     );
 }

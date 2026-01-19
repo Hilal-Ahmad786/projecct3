@@ -1470,6 +1470,104 @@
       "successMessage": "Vielen Dank für Ihre Projektanfrage. Unser Team wird Ihre Anforderungen prüfen und sich innerhalb von 24 Stunden bei Ihnen melden."
     }
   },
+  "servicePages": {
+    "promptEngineering": {
+      "hero": {
+        "eyebrow": "LLM-Optimierung",
+        "title": "Prompt",
+        "titleAccent": "Engineering",
+        "description": "Meistern Sie die Kunst und Wissenschaft der LLM-Kommunikation. Unsere Experten für Prompt-Engineering entwerfen, optimieren und implementieren Prompts, die zuverlässige, hochwertige Ergebnisse in großem Maßstab liefern.",
+        "cta": "Prompts optimieren",
+        "secondaryCta": "Fallstudien ansehen"
+      },
+      "cta": {
+        "title": "Bereit für effektive LLM-Kommunikation?",
+        "description": "Lassen Sie uns Prompts entwickeln, die konsistente, hochwertige Ergebnisse liefern.",
+        "primaryCta": "Prompt-Bewertung anfordern",
+        "secondaryCta": "Technische Beratung"
+      }
+    },
+    "aiAgents": {
+      "hero": {
+        "eyebrow": "Autonome Intelligenz",
+        "title": "KI",
+        "titleAccent": "Agenten",
+        "description": "Erstellen Sie autonome KI-Agenten, die komplexe Aufgaben analysieren, planen und ausführen können. Von Workflow-Automatisierung bis zu intelligenten Assistenten – wir bauen Agenten, die funktionieren.",
+        "cta": "KI-Agenten erstellen",
+        "secondaryCta": "Beispiele ansehen"
+      },
+      "cta": {
+        "title": "Bereit für KI-Agenten?",
+        "description": "Lassen Sie uns autonome Systeme bauen, die Ihre Abläufe transformieren.",
+        "primaryCta": "Agenten-Angebot anfordern",
+        "secondaryCta": "Demo vereinbaren"
+      }
+    },
+    "ragSolutions": {
+      "hero": {
+        "eyebrow": "Wissensgestützte KI",
+        "title": "RAG",
+        "titleAccent": "Lösungen",
+        "description": "Erstellen Sie intelligente Systeme, die Ihre proprietären Daten mit LLM-Fähigkeiten kombinieren. Schaffen Sie KI, die Ihren Geschäftskontext wirklich versteht.",
+        "cta": "RAG-System erstellen",
+        "secondaryCta": "Mehr erfahren"
+      },
+      "cta": {
+        "title": "Bereit für intelligente KI?",
+        "description": "Lassen Sie uns RAG-Systeme bauen, die Ihre einzigartigen Daten nutzen.",
+        "primaryCta": "RAG-Bewertung anfordern",
+        "secondaryCta": "Technische Vertiefung"
+      }
+    },
+    "mlopsDeployment": {
+      "hero": {
+        "eyebrow": "ML-Operationen",
+        "title": "MLOps &",
+        "titleAccent": "Deployment",
+        "description": "Bringen Sie Ihre ML-Modelle mit robuster, skalierbarer Infrastruktur vom Notebook in die Produktion. Wir bauen automatisierte Pipelines, Überwachungssysteme und Deployment-Frameworks, die ML nachhaltig machen.",
+        "cta": "ML-Plattform erstellen",
+        "secondaryCta": "Architektur ansehen"
+      },
+      "cta": {
+        "title": "Bereit, ML zu operationalisieren?",
+        "description": "Lassen Sie uns Infrastruktur bauen, die Machine Learning nachhaltig macht.",
+        "primaryCta": "MLOps-Bewertung anfordern",
+        "secondaryCta": "Technische Vertiefung"
+      }
+    },
+    "computerVision": {
+      "hero": {
+        "eyebrow": "Visuelle Intelligenz",
+        "title": "Computer",
+        "titleAccent": "Vision",
+        "description": "Geben Sie Ihren Anwendungen die Fähigkeit zu sehen und zu verstehen. Von Objekterkennung bis Gesichtserkennung – wir bauen Visionssysteme, die Bilder und Videos in verwertbare Erkenntnisse umwandeln.",
+        "cta": "Visionssystem erstellen",
+        "secondaryCta": "Portfolio ansehen"
+      },
+      "cta": {
+        "title": "Bereit für visuelle KI?",
+        "description": "Lassen Sie uns Computer-Vision-Systeme bauen, die sehen und verstehen.",
+        "primaryCta": "Visions-Bewertung anfordern",
+        "secondaryCta": "Technische Beratung"
+      }
+    },
+    "llmFinetuning": {
+      "hero": {
+        "eyebrow": "Maßgeschneiderte KI-Modelle",
+        "title": "LLM",
+        "titleAccent": "Feinabstimmung",
+        "description": "Transformieren Sie Foundation-Modelle in spezialisierte KI-Systeme. Wir stimmen LLMs auf Ihre Domänendaten ab, um Modelle zu erstellen, die Ihre Branche, Terminologie und einzigartigen Anforderungen wirklich verstehen.",
+        "cta": "Modell feinabstimmen",
+        "secondaryCta": "Mehr erfahren"
+      },
+      "cta": {
+        "title": "Bereit für maßgeschneiderte KI?",
+        "description": "Lassen Sie uns ein feinabgestimmtes Modell erstellen, das bei Ihren spezifischen Anwendungsfällen herausragt.",
+        "primaryCta": "Feinabstimmungs-Angebot anfordern",
+        "secondaryCta": "Technische Bewertung"
+      }
+    }
+  },
   "cta": {
     "serviceRequest": {
       "badge": "Bereit zu starten",

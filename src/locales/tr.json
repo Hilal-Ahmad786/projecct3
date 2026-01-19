@@ -1470,6 +1470,104 @@
       "successMessage": "Proje talebiniz için teşekkür ederiz. Ekibimiz gereksinimlerinizi inceleyecek ve 24 saat içinde size dönüş yapacaktır."
     }
   },
+  "servicePages": {
+    "promptEngineering": {
+      "hero": {
+        "eyebrow": "LLM Optimizasyonu",
+        "title": "Prompt",
+        "titleAccent": "Mühendisliği",
+        "description": "LLM iletişiminin sanatını ve bilimini ustalaştırın. Uzman prompt mühendislerimiz, ölçekte güvenilir, yüksek kaliteli çıktılar sunan promptlar tasarlar, optimize eder ve dağıtır.",
+        "cta": "Promptlarınızı Optimize Edin",
+        "secondaryCta": "Vaka Çalışmalarını Görün"
+      },
+      "cta": {
+        "title": "LLM İletişimini Ustalaştırmaya Hazır mısınız?",
+        "description": "Tutarlı, yüksek kaliteli sonuçlar sunan promptlar tasarlayalım.",
+        "primaryCta": "Prompt Değerlendirmesi Alın",
+        "secondaryCta": "Teknik Danışmanlık"
+      }
+    },
+    "aiAgents": {
+      "hero": {
+        "eyebrow": "Otonom Zeka",
+        "title": "AI",
+        "titleAccent": "Ajanlar",
+        "description": "Karmaşık görevleri muhakeme eden, planlayan ve yürüten otonom AI ajanları oluşturun. İş akışı otomasyonundan akıllı asistanlara, işleyen ajanlar inşa ediyoruz.",
+        "cta": "AI Ajanları İnşa Edin",
+        "secondaryCta": "Örnekleri Görün"
+      },
+      "cta": {
+        "title": "AI Ajanlara Hazır mısınız?",
+        "description": "Operasyonlarınızı dönüştüren otonom sistemler inşa edelim.",
+        "primaryCta": "Ajan Teklifi Alın",
+        "secondaryCta": "Demo Planlayın"
+      }
+    },
+    "ragSolutions": {
+      "hero": {
+        "eyebrow": "Bilgi Destekli AI",
+        "title": "RAG",
+        "titleAccent": "Çözümleri",
+        "description": "Özel verilerinizi LLM yetenekleriyle birleştiren akıllı sistemler oluşturun. İş bağlamınızı gerçekten anlayan AI yaratın.",
+        "cta": "RAG Sistemi İnşa Edin",
+        "secondaryCta": "Daha Fazla Öğrenin"
+      },
+      "cta": {
+        "title": "Akıllı AI'ya Hazır mısınız?",
+        "description": "Benzersiz verilerinizden yararlanan RAG sistemleri inşa edelim.",
+        "primaryCta": "RAG Değerlendirmesi Alın",
+        "secondaryCta": "Teknik Derinlemesine İnceleme"
+      }
+    },
+    "mlopsDeployment": {
+      "hero": {
+        "eyebrow": "ML Operasyonları",
+        "title": "MLOps &",
+        "titleAccent": "Dağıtım",
+        "description": "ML modellerinizi notebook'tan üretime sağlam, ölçeklenebilir altyapıyla taşıyın. ML'yi sürdürülebilir kılan otomatik pipeline'lar, izleme sistemleri ve dağıtım çerçeveleri inşa ediyoruz.",
+        "cta": "ML Platformu İnşa Edin",
+        "secondaryCta": "Mimariyi Görün"
+      },
+      "cta": {
+        "title": "ML'yi Operasyonelleştirmeye Hazır mısınız?",
+        "description": "Makine öğrenimini sürdürülebilir kılan altyapı inşa edelim.",
+        "primaryCta": "MLOps Değerlendirmesi Alın",
+        "secondaryCta": "Teknik Derinlemesine İnceleme"
+      }
+    },
+    "computerVision": {
+      "hero": {
+        "eyebrow": "Görsel Zeka",
+        "title": "Bilgisayar",
+        "titleAccent": "Görüşü",
+        "description": "Uygulamalarınıza görme ve anlama gücü verin. Nesne tespitinden yüz tanımaya kadar, görüntüleri ve videoları eyleme dönüştürülebilir içgörülere dönüştüren görüş sistemleri inşa ediyoruz.",
+        "cta": "Görüş Sistemi İnşa Edin",
+        "secondaryCta": "Portföyü Görün"
+      },
+      "cta": {
+        "title": "Görsel AI'ya Hazır mısınız?",
+        "description": "Gören ve anlayan bilgisayar görüşü sistemleri inşa edelim.",
+        "primaryCta": "Görüş Değerlendirmesi Alın",
+        "secondaryCta": "Teknik Danışmanlık"
+      }
+    },
+    "llmFinetuning": {
+      "hero": {
+        "eyebrow": "Özel AI Modelleri",
+        "title": "LLM",
+        "titleAccent": "İnce Ayar",
+        "description": "Temel modelleri özelleştirilmiş AI sistemlerine dönüştürün. Sektörünüzü, terminolojinizi ve benzersiz gereksinimlerinizi gerçekten anlayan modeller oluşturmak için LLM'leri alan verileriniz üzerinde ince ayar yapıyoruz.",
+        "cta": "Modelinizi İnce Ayarlayın",
+        "secondaryCta": "Daha Fazla Öğrenin"
+      },
+      "cta": {
+        "title": "Özel AI'ya Hazır mısınız?",
+        "description": "Özel kullanım durumlarınızda başarılı olan ince ayarlı bir model oluşturalım.",
+        "primaryCta": "İnce Ayar Teklifi Alın",
+        "secondaryCta": "Teknik Değerlendirme"
+      }
+    }
+  },
   "cta": {
     "serviceRequest": {
       "badge": "Başlamaya Hazır",

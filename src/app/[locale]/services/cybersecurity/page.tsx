@@ -7,7 +7,7 @@ import ProcessPreview from '@/components/cybersecurity/ProcessPreview';
 import SecurityServices from '@/components/cybersecurity/SecurityServices';
 import SecurityTestimonials from '@/components/cybersecurity/SecurityTestimonials';
 import SecurityFAQ from '@/components/cybersecurity/SecurityFAQ';
-import SecurityCTA from '@/components/cybersecurity/SecurityCTA';
+import { ServiceRequestCTA } from '@/components/services';
 
 export default function CybersecurityPage() {
     return (
@@ -19,7 +19,7 @@ export default function CybersecurityPage() {
             <WhyUs />
             <SecurityTestimonials />
             <SecurityFAQ />
-            <SecurityCTA />
+            <ServiceRequestCTA serviceType="cybersecurity" />
         </main>
     );
 }

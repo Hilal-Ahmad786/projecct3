@@ -3576,6 +3576,70 @@
         "primaryCta": "Get Agent Quote",
         "secondaryCta": "Schedule Demo"
       }
+    },
+    "promptEngineering": {
+      "hero": {
+        "eyebrow": "LLM Optimization",
+        "title": "Prompt",
+        "titleAccent": "Engineering",
+        "description": "Master the art and science of LLM communication. Our expert prompt engineers design, optimize, and deploy prompts that deliver reliable, high-quality outputs at scale.",
+        "cta": "Optimize Your Prompts",
+        "secondaryCta": "View Case Studies"
+      },
+      "cta": {
+        "title": "Ready to Master LLM Communication?",
+        "description": "Let's engineer prompts that deliver consistent, high-quality results.",
+        "primaryCta": "Get Prompt Assessment",
+        "secondaryCta": "Technical Consultation"
+      }
+    },
+    "mlopsDeployment": {
+      "hero": {
+        "eyebrow": "ML Operations",
+        "title": "MLOps &",
+        "titleAccent": "Deployment",
+        "description": "Take your ML models from notebook to production with robust, scalable infrastructure. We build automated pipelines, monitoring systems, and deployment frameworks that make ML sustainable.",
+        "cta": "Build ML Platform",
+        "secondaryCta": "View Architecture"
+      },
+      "cta": {
+        "title": "Ready to Operationalize ML?",
+        "description": "Let's build infrastructure that makes machine learning sustainable.",
+        "primaryCta": "Get MLOps Assessment",
+        "secondaryCta": "Technical Deep Dive"
+      }
+    },
+    "computerVision": {
+      "hero": {
+        "eyebrow": "Visual Intelligence",
+        "title": "Computer",
+        "titleAccent": "Vision",
+        "description": "Give your applications the power to see and understand. From object detection to facial recognition, we build vision systems that transform images and video into actionable insights.",
+        "cta": "Build Vision System",
+        "secondaryCta": "View Portfolio"
+      },
+      "cta": {
+        "title": "Ready for Visual AI?",
+        "description": "Let's build computer vision systems that see and understand.",
+        "primaryCta": "Get Vision Assessment",
+        "secondaryCta": "Technical Consultation"
+      }
+    },
+    "llmFinetuning": {
+      "hero": {
+        "eyebrow": "Custom AI Models",
+        "title": "LLM",
+        "titleAccent": "Fine-tuning",
+        "description": "Transform foundation models into specialized AI systems. We fine-tune LLMs on your domain data to create models that truly understand your industry, terminology, and unique requirements.",
+        "cta": "Fine-tune Your Model",
+        "secondaryCta": "Learn More"
+      },
+      "cta": {
+        "title": "Ready for Custom AI?",
+        "description": "Let's create a fine-tuned model that excels at your specific use cases.",
+        "primaryCta": "Get Fine-tuning Quote",
+        "secondaryCta": "Technical Assessment"
+      }
     }
   },
   "cta": {

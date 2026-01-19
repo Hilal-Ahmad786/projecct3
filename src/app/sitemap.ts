@@ -19,12 +19,19 @@ const routes = [
     '/services/e-commerce',
     '/services/ai-solutions',
     '/services/api-development',
-    '/services/pyhton-automation',
+    '/services/python-automation',
     '/services/devops-cloud',
     '/services/data-analytics',
     '/services/cybersecurity',
     '/services/machine-learning',
     '/services/conversational-ai',
+    // New AI Services
+    '/services/prompt-engineering',
+    '/services/ai-agents',
+    '/services/rag-solutions',
+    '/services/mlops-deployment',
+    '/services/computer-vision',
+    '/services/llm-finetuning',
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

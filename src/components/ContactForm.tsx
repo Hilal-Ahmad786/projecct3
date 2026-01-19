@@ -40,18 +40,29 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setSending(true)
-    
+
     try {
-      // TODO: Replace with your actual API endpoint
-      // await fetch('/api/contact', { 
-      //   method: 'POST', 
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify(form) 
-      // })
-      
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000))
-      
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form)
+      })
+
+      const result = await response.json()
+
+      if (!result.success) {
+        // Handle validation errors
+        if (result.errors && Array.isArray(result.errors)) {
+          const errorMessages = result.errors.map((err: { field: string; message: string }) =>
+            `${err.field}: ${err.message}`
+          ).join('\n')
+          alert(errorMessages)
+        } else {
+          alert(result.message || errorT('general'))
+        }
+        return
+      }
+
       alert(notificationT('messageSent'))
       setForm({ name: '', email: '', subject: '', message: '' })
     } catch (error) {

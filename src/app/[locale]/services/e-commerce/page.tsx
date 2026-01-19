@@ -7,7 +7,7 @@ import ProcessPreview from '@/components/e-commerce/ProcessPreview';
 import EcommerceServices from '@/components/e-commerce/EcommerceServices';
 import EcommerceTestimonials from '@/components/e-commerce/EcommerceTestimonials';
 import EcommerceFAQ from '@/components/e-commerce/EcommerceFAQ';
-import EcommerceCTA from '@/components/e-commerce/EcommerceCTA';
+import { ServiceRequestCTA } from '@/components/services';
 
 export default function EcommercePage() {
     return (
@@ -19,7 +19,7 @@ export default function EcommercePage() {
             <WhyUs />
             <EcommerceTestimonials />
             <EcommerceFAQ />
-            <EcommerceCTA />
+            <ServiceRequestCTA serviceType="e-commerce" />
         </main>
     );
 }

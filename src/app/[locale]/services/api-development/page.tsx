@@ -7,7 +7,7 @@ import ProcessPreview from '@/components/api-development/ProcessPreview';
 import APIServices from '@/components/api-development/APIServices';
 import APITestimonials from '@/components/api-development/APITestimonials';
 import APIFAQ from '@/components/api-development/APIFAQ';
-import APICTA from '@/components/api-development/APICTA';
+import { ServiceRequestCTA } from '@/components/services';
 
 export default function APIDevelopmentPage() {
     return (
@@ -19,7 +19,7 @@ export default function APIDevelopmentPage() {
             <WhyUs />
             <APITestimonials />
             <APIFAQ />
-            <APICTA />
+            <ServiceRequestCTA serviceType="api-development" />
         </main>
     );
 }

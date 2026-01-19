@@ -7,7 +7,7 @@ import ProcessPreview from '@/components/devops-cloud/ProcessPreview';
 import DevOpsServices from '@/components/devops-cloud/DevOpsServices';
 import DevOpsTestimonials from '@/components/devops-cloud/DevOpsTestimonials';
 import DevOpsFAQ from '@/components/devops-cloud/DevOpsFAQ';
-import DevOpsCTA from '@/components/devops-cloud/DevOpsCTA';
+import { ServiceRequestCTA } from '@/components/services';
 
 export default function DevOpsCloudPage() {
     return (
@@ -19,7 +19,7 @@ export default function DevOpsCloudPage() {
             <WhyUs />
             <DevOpsTestimonials />
             <DevOpsFAQ />
-            <DevOpsCTA />
+            <ServiceRequestCTA serviceType="devops-cloud" />
         </main>
     );
 }
