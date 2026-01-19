@@ -1,9 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getDashboardStats, getPageViews, getVisitorStats } from '@/lib/admin/database/queries';
+
+// Force dynamic rendering to avoid build-time Prisma issues
+export const dynamic = 'force-dynamic';
 
 // GET /api/admin/analytics/overview - Get dashboard overview stats
 export async function GET(request: NextRequest) {
   try {
+    // Lazy import to avoid build-time issues
+    const { getDashboardStats, getPageViews, getVisitorStats } = await import('@/lib/admin/database/queries');
+
     const { searchParams } = new URL(request.url);
     const period = searchParams.get('period') || '7d';
 

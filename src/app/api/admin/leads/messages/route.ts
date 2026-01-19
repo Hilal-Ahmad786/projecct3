@@ -1,26 +1,34 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getContactMessages, updateContactMessage } from '@/lib/admin/database/queries';
+
+// Force dynamic rendering to avoid build-time Prisma issues
+export const dynamic = 'force-dynamic';
 
 // GET /api/admin/leads/messages - Get all contact messages with pagination
 export async function GET(request: NextRequest) {
   try {
+    // Lazy import to avoid build-time issues
+    const { getContactMessages } = await import('@/lib/admin/database/queries');
+
     const { searchParams } = new URL(request.url);
     const page = parseInt(searchParams.get('page') || '1');
     const limit = parseInt(searchParams.get('limit') || '10');
     const status = searchParams.get('status') || undefined;
     const search = searchParams.get('search') || undefined;
 
-    const result = await getContactMessages({
-      page,
-      limit,
-      status: status as 'unread' | 'read' | 'replied' | 'archived' | undefined,
-      search,
-    });
+    const result = await getContactMessages(
+      { status: status as 'UNREAD' | 'READ' | 'REPLIED' | 'ARCHIVED' | undefined, search },
+      { page, limit }
+    );
 
     return NextResponse.json({
       success: true,
       data: result.data,
-      pagination: result.pagination,
+      pagination: {
+        page: result.page,
+        limit: result.limit,
+        total: result.total,
+        totalPages: result.totalPages,
+      },
     });
   } catch (error) {
     console.error('Error fetching messages:', error);
@@ -34,6 +42,9 @@ export async function GET(request: NextRequest) {
 // PATCH /api/admin/leads/messages - Bulk update messages (mark as read, etc.)
 export async function PATCH(request: NextRequest) {
   try {
+    // Lazy import to avoid build-time issues
+    const { updateContactMessage } = await import('@/lib/admin/database/queries');
+
     const body = await request.json();
     const { ids, status } = body;
 
@@ -44,7 +55,7 @@ export async function PATCH(request: NextRequest) {
       );
     }
 
-    const validStatuses = ['unread', 'read', 'replied', 'archived'];
+    const validStatuses = ['UNREAD', 'READ', 'REPLIED', 'ARCHIVED', 'SPAM'];
     if (!status || !validStatuses.includes(status)) {
       return NextResponse.json(
         { success: false, message: 'Invalid status' },

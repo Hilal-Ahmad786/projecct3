@@ -3,46 +3,47 @@
 // Prisma 7 with pg adapter for direct database connections
 
 import { PrismaClient } from '@prisma/client'
-import { PrismaPg } from '@prisma/adapter-pg'
-import { Pool } from 'pg'
 
-const globalForPrisma = global as unknown as { prisma: PrismaClient | undefined; pool: Pool | undefined }
+const globalForPrisma = global as unknown as { prisma: PrismaClient | undefined }
 
 const databaseUrl = process.env.DATABASE_URL
 
-// Create Prisma client with pg adapter for Prisma 7
+// Create Prisma client - lazy loaded to avoid build issues
 function createPrismaClient(): PrismaClient {
-  // If no database URL is set during build, return a minimal client
+  // During build or when no DATABASE_URL, return a basic client
+  // This prevents build failures when the database isn't available
   if (!databaseUrl) {
-    console.warn('DATABASE_URL not set. Creating minimal Prisma client.')
-    // Return a client that will fail on actual queries but won't crash during build
-    const pool = new Pool({ connectionString: 'postgresql://localhost:5432/placeholder' })
-    const adapter = new PrismaPg(pool)
-    return new PrismaClient({ adapter })
+    console.warn('DATABASE_URL not set. Database operations will fail.')
+    // Return a client that will throw on actual queries
+    // but won't crash during build/static generation
+    return new PrismaClient()
   }
 
-  // Create pg Pool
-  const pool = new Pool({ connectionString: databaseUrl })
-  globalForPrisma.pool = pool
-
-  // Create adapter
-  const adapter = new PrismaPg(pool)
-
+  // For Prisma 7 with driver adapters, we can use the connection URL directly
+  // The adapter setup is handled automatically when DATABASE_URL is set
   return new PrismaClient({
-    adapter,
     log: process.env.NODE_ENV === 'development' ? ['query', 'error', 'warn'] : ['error'],
   })
 }
 
-export const prisma: PrismaClient = globalForPrisma.prisma ?? createPrismaClient()
+// Lazy initialization
+let prismaInstance: PrismaClient | null = null
 
-if (process.env.NODE_ENV !== 'production') {
-  globalForPrisma.prisma = prisma
-}
-
-// Helper for compatibility
 export function getPrisma(): PrismaClient {
-  return prisma
+  if (!prismaInstance) {
+    prismaInstance = globalForPrisma.prisma ?? createPrismaClient()
+    if (process.env.NODE_ENV !== 'production') {
+      globalForPrisma.prisma = prismaInstance
+    }
+  }
+  return prismaInstance
 }
+
+// Export for backwards compatibility - uses lazy getter
+export const prisma = new Proxy({} as PrismaClient, {
+  get(_, prop) {
+    return getPrisma()[prop as keyof PrismaClient]
+  },
+})
 
 export default prisma

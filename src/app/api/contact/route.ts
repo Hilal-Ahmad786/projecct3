@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
-import { createContactMessage, createLead, getLeadByEmail } from '@/lib/admin/database/queries';
+
+// Force dynamic rendering to avoid build-time Prisma issues
+export const dynamic = 'force-dynamic';
 
 // Validation schema for contact form
 const contactFormSchema = z.object({
@@ -13,6 +15,9 @@ const contactFormSchema = z.object({
 
 export async function POST(request: NextRequest) {
   try {
+    // Lazy import to avoid build-time issues
+    const { createContactMessage, createLead, getLeadByEmail } = await import('@/lib/admin/database/queries');
+
     const body = await request.json();
 
     // Validate the request body

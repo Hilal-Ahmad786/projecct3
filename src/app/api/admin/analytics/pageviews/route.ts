@@ -1,71 +1,45 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getPageViews, trackAnalyticsEvent } from '@/lib/admin/database/queries';
+
+// Force dynamic rendering to avoid build-time Prisma issues
+export const dynamic = 'force-dynamic';
 
 // GET /api/admin/analytics/pageviews - Get page view data
 export async function GET(request: NextRequest) {
   try {
+    // Lazy import to avoid build-time issues
+    const { getPageViews } = await import('@/lib/admin/database/queries');
+
     const { searchParams } = new URL(request.url);
     const period = searchParams.get('period') || '7d';
-    const page = searchParams.get('page') || undefined;
 
-    // Calculate date range based on period
-    const endDate = new Date();
-    const startDate = new Date();
-
+    // Calculate days based on period
+    let days = 7;
     switch (period) {
       case '24h':
-        startDate.setHours(startDate.getHours() - 24);
+        days = 1;
         break;
       case '7d':
-        startDate.setDate(startDate.getDate() - 7);
+        days = 7;
         break;
       case '30d':
-        startDate.setDate(startDate.getDate() - 30);
+        days = 30;
         break;
       case '90d':
-        startDate.setDate(startDate.getDate() - 90);
+        days = 90;
         break;
       default:
-        startDate.setDate(startDate.getDate() - 7);
+        days = 7;
     }
 
-    const pageViews = await getPageViews(startDate, endDate);
-
-    // Group by page if requested
-    let groupedData = pageViews;
-    if (page) {
-      groupedData = pageViews.filter(pv => pv.page === page);
-    }
-
-    // Aggregate by date for chart data
-    const dailyData: Record<string, number> = {};
-    pageViews.forEach(pv => {
-      const date = pv.timestamp.toISOString().split('T')[0];
-      dailyData[date] = (dailyData[date] || 0) + 1;
-    });
-
-    const chartData = Object.entries(dailyData).map(([date, count]) => ({
-      date,
-      count,
-    })).sort((a, b) => a.date.localeCompare(b.date));
-
-    // Get top pages
-    const pageCount: Record<string, number> = {};
-    pageViews.forEach(pv => {
-      pageCount[pv.page] = (pageCount[pv.page] || 0) + 1;
-    });
-
-    const topPages = Object.entries(pageCount)
-      .map(([page, count]) => ({ page, count }))
-      .sort((a, b) => b.count - a.count)
-      .slice(0, 10);
+    const pageViews = await getPageViews(days);
 
     return NextResponse.json({
       success: true,
       data: {
-        total: pageViews.length,
-        chartData,
-        topPages,
+        topPages: pageViews.map((pv) => ({
+          page: pv.page,
+          count: pv._count,
+        })),
         period,
       },
     });
@@ -81,8 +55,11 @@ export async function GET(request: NextRequest) {
 // POST /api/admin/analytics/pageviews - Track a page view
 export async function POST(request: NextRequest) {
   try {
+    // Lazy import to avoid build-time issues
+    const { trackAnalyticsEvent } = await import('@/lib/admin/database/queries');
+
     const body = await request.json();
-    const { page, referrer, userAgent, sessionId } = body;
+    const { page, referrer, sessionId } = body;
 
     if (!page) {
       return NextResponse.json(
@@ -92,11 +69,10 @@ export async function POST(request: NextRequest) {
     }
 
     await trackAnalyticsEvent({
-      eventType: 'page_view',
+      eventType: 'pageview',
       page,
-      referrer: referrer || null,
-      userAgent: userAgent || null,
-      sessionId: sessionId || null,
+      referrer: referrer || undefined,
+      sessionId: sessionId || `session_${Date.now()}`,
     });
 
     return NextResponse.json({ success: true });

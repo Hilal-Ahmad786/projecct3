@@ -1,5 +1,10 @@
-import { LeadStatus, LeadPriority, RequestStatus, MessageStatus } from '@prisma/client';
 import { getPrisma } from '@/lib/db/prisma';
+
+// Type definitions to avoid importing from @prisma/client at top level
+type LeadStatus = 'NEW' | 'CONTACTED' | 'QUALIFIED' | 'PROPOSAL' | 'NEGOTIATION' | 'WON' | 'LOST' | 'ARCHIVED';
+type LeadPriority = 'LOW' | 'MEDIUM' | 'HIGH' | 'URGENT';
+type RequestStatus = 'PENDING' | 'UNDER_REVIEW' | 'NEEDS_INFO' | 'APPROVED' | 'REJECTED' | 'CONVERTED';
+type MessageStatus = 'UNREAD' | 'READ' | 'REPLIED' | 'ARCHIVED' | 'SPAM';
 
 // Get prisma instance - will throw if DATABASE_URL is not set
 const getPrismaClient = () => getPrisma();

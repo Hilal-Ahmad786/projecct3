@@ -1,27 +1,35 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getProjectRequests, createProjectRequest, updateProjectRequest } from '@/lib/admin/database/queries';
 import { z } from 'zod';
+
+// Force dynamic rendering to avoid build-time Prisma issues
+export const dynamic = 'force-dynamic';
 
 // GET /api/admin/leads/quotes - Get all project requests (quote requests)
 export async function GET(request: NextRequest) {
   try {
+    // Lazy import to avoid build-time issues
+    const { getProjectRequests } = await import('@/lib/admin/database/queries');
+
     const { searchParams } = new URL(request.url);
     const page = parseInt(searchParams.get('page') || '1');
     const limit = parseInt(searchParams.get('limit') || '10');
     const status = searchParams.get('status') || undefined;
     const search = searchParams.get('search') || undefined;
 
-    const result = await getProjectRequests({
-      page,
-      limit,
-      status: status as 'pending' | 'reviewed' | 'quoted' | 'accepted' | 'rejected' | undefined,
-      search,
-    });
+    const result = await getProjectRequests(
+      { status: status as 'PENDING' | 'UNDER_REVIEW' | 'APPROVED' | 'REJECTED' | undefined, search },
+      { page, limit }
+    );
 
     return NextResponse.json({
       success: true,
       data: result.data,
-      pagination: result.pagination,
+      pagination: {
+        page: result.page,
+        limit: result.limit,
+        total: result.total,
+        totalPages: result.totalPages,
+      },
     });
   } catch (error) {
     console.error('Error fetching quotes:', error);
@@ -42,11 +50,14 @@ const createQuoteSchema = z.object({
   budget: z.string().optional(),
   timeline: z.string().optional(),
   description: z.string().min(10),
-  leadId: z.string().optional(),
+  leadId: z.string(),
 });
 
 export async function POST(request: NextRequest) {
   try {
+    // Lazy import to avoid build-time issues
+    const { createProjectRequest } = await import('@/lib/admin/database/queries');
+
     const body = await request.json();
     const validation = createQuoteSchema.safeParse(body);
 
@@ -61,7 +72,11 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const quote = await createProjectRequest(validation.data);
+    const quote = await createProjectRequest({
+      leadId: validation.data.leadId,
+      serviceType: validation.data.projectType,
+      description: validation.data.description,
+    });
 
     return NextResponse.json(
       { success: true, data: quote },
@@ -79,6 +94,9 @@ export async function POST(request: NextRequest) {
 // PATCH /api/admin/leads/quotes - Update quote status
 export async function PATCH(request: NextRequest) {
   try {
+    // Lazy import to avoid build-time issues
+    const { updateProjectRequest } = await import('@/lib/admin/database/queries');
+
     const body = await request.json();
     const { id, status, adminNotes } = body;
 
@@ -89,7 +107,7 @@ export async function PATCH(request: NextRequest) {
       );
     }
 
-    const validStatuses = ['pending', 'reviewed', 'quoted', 'accepted', 'rejected'];
+    const validStatuses = ['PENDING', 'UNDER_REVIEW', 'NEEDS_INFO', 'APPROVED', 'REJECTED', 'CONVERTED'];
     if (status && !validStatuses.includes(status)) {
       return NextResponse.json(
         { success: false, message: 'Invalid status' },
@@ -97,9 +115,9 @@ export async function PATCH(request: NextRequest) {
       );
     }
 
-    const updateData: { status?: string; adminNotes?: string } = {};
+    const updateData: { status?: 'PENDING' | 'UNDER_REVIEW' | 'NEEDS_INFO' | 'APPROVED' | 'REJECTED' | 'CONVERTED'; internalNotes?: string } = {};
     if (status) updateData.status = status;
-    if (adminNotes !== undefined) updateData.adminNotes = adminNotes;
+    if (adminNotes !== undefined) updateData.internalNotes = adminNotes;
 
     const quote = await updateProjectRequest(id, updateData);
 

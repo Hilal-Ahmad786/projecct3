@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getLeadById, updateLead, deleteLead } from '@/lib/admin/database/queries';
 import { z } from 'zod';
+
+// Force dynamic rendering to avoid build-time Prisma issues
+export const dynamic = 'force-dynamic';
 
 // GET /api/admin/leads/[id] - Get a single lead by ID
 export async function GET(
@@ -8,6 +10,9 @@ export async function GET(
   { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    // Lazy import to avoid build-time issues
+    const { getLeadById } = await import('@/lib/admin/database/queries');
+
     const { id } = await params;
     const lead = await getLeadById(id);
 
@@ -34,7 +39,8 @@ const updateLeadSchema = z.object({
   email: z.string().email().optional(),
   phone: z.string().optional(),
   company: z.string().optional(),
-  status: z.enum(['new', 'contacted', 'qualified', 'converted', 'lost']).optional(),
+  status: z.enum(['NEW', 'CONTACTED', 'QUALIFIED', 'PROPOSAL', 'NEGOTIATION', 'WON', 'LOST', 'ARCHIVED']).optional(),
+  priority: z.enum(['LOW', 'MEDIUM', 'HIGH', 'URGENT']).optional(),
   source: z.string().optional(),
   notes: z.string().optional(),
 });
@@ -44,6 +50,9 @@ export async function PATCH(
   { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    // Lazy import to avoid build-time issues
+    const { updateLead } = await import('@/lib/admin/database/queries');
+
     const { id } = await params;
     const body = await request.json();
     const validation = updateLeadSchema.safeParse(body);
@@ -84,6 +93,9 @@ export async function DELETE(
   { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    // Lazy import to avoid build-time issues
+    const { deleteLead } = await import('@/lib/admin/database/queries');
+
     const { id } = await params;
     const deleted = await deleteLead(id);
 

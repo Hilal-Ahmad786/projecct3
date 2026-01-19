@@ -1,10 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getLeads, createLead } from '@/lib/admin/database/queries';
 import { z } from 'zod';
+
+// Force dynamic rendering to avoid build-time Prisma issues
+export const dynamic = 'force-dynamic';
 
 // GET /api/admin/leads/contacts - Get all leads with pagination
 export async function GET(request: NextRequest) {
   try {
+    // Lazy import to avoid build-time issues
+    const { getLeads } = await import('@/lib/admin/database/queries');
+
     const { searchParams } = new URL(request.url);
     const page = parseInt(searchParams.get('page') || '1');
     const limit = parseInt(searchParams.get('limit') || '10');
@@ -12,18 +17,20 @@ export async function GET(request: NextRequest) {
     const source = searchParams.get('source') || undefined;
     const search = searchParams.get('search') || undefined;
 
-    const result = await getLeads({
-      page,
-      limit,
-      status: status as 'new' | 'contacted' | 'qualified' | 'converted' | 'lost' | undefined,
-      source,
-      search,
-    });
+    const result = await getLeads(
+      { status: status as 'NEW' | 'CONTACTED' | 'QUALIFIED' | 'WON' | 'LOST' | undefined, source, search },
+      { page, limit }
+    );
 
     return NextResponse.json({
       success: true,
       data: result.data,
-      pagination: result.pagination,
+      pagination: {
+        page: result.page,
+        limit: result.limit,
+        total: result.total,
+        totalPages: result.totalPages,
+      },
     });
   } catch (error) {
     console.error('Error fetching leads:', error);
@@ -46,6 +53,9 @@ const createLeadSchema = z.object({
 
 export async function POST(request: NextRequest) {
   try {
+    // Lazy import to avoid build-time issues
+    const { createLead } = await import('@/lib/admin/database/queries');
+
     const body = await request.json();
     const validation = createLeadSchema.safeParse(body);
 
