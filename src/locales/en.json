@@ -3167,6 +3167,417 @@
       "successMessage": "Thank you for your project request. Our team will review your requirements and get back to you within 24 hours."
     }
   },
+  "servicePages": {
+    "webDevelopment": {
+      "hero": {
+        "eyebrow": "Crafting Digital Masterpieces",
+        "title": "Web Development",
+        "titleAccent": "Excellence",
+        "description": "We build high-performance web applications that drive business growth. From stunning landing pages to complex enterprise solutions, our team delivers pixel-perfect, scalable, and lightning-fast digital experiences.",
+        "cta": "Start Your Project",
+        "secondaryCta": "View Portfolio"
+      },
+      "services": {
+        "eyebrow": "What We Build",
+        "title": "Web Development",
+        "titleAccent": "Services",
+        "subtitle": "From simple websites to complex web applications, we deliver solutions that work.",
+        "items": [
+          {
+            "title": "Custom Web Applications",
+            "description": "Tailored solutions built with modern frameworks like React, Next.js, and Vue.",
+            "features": ["Single Page Apps", "Progressive Web Apps", "Real-time Applications"]
+          },
+          {
+            "title": "E-Commerce Solutions",
+            "description": "Scalable online stores with seamless checkout and inventory management.",
+            "features": ["Custom Storefronts", "Payment Integration", "Inventory Systems"]
+          },
+          {
+            "title": "Enterprise Portals",
+            "description": "Secure, scalable platforms for internal operations and client management.",
+            "features": ["Dashboard Systems", "CRM Integration", "Role-Based Access"]
+          },
+          {
+            "title": "API Development",
+            "description": "Robust APIs that power your applications and integrate with third-party services.",
+            "features": ["RESTful APIs", "GraphQL", "Microservices"]
+          }
+        ]
+      },
+      "process": {
+        "eyebrow": "How We Work",
+        "title": "Our Development",
+        "titleAccent": "Process",
+        "subtitle": "A proven methodology that ensures quality and timely delivery.",
+        "steps": [
+          {
+            "number": "01",
+            "title": "Discovery",
+            "description": "Understanding your goals, audience, and technical requirements."
+          },
+          {
+            "number": "02",
+            "title": "Design",
+            "description": "Creating wireframes and prototypes for user-centered experiences."
+          },
+          {
+            "number": "03",
+            "title": "Development",
+            "description": "Building with clean code, modern frameworks, and best practices."
+          },
+          {
+            "number": "04",
+            "title": "Testing",
+            "description": "Rigorous QA to ensure performance, security, and compatibility."
+          },
+          {
+            "number": "05",
+            "title": "Launch",
+            "description": "Smooth deployment with monitoring and ongoing support."
+          }
+        ]
+      },
+      "whyUs": {
+        "eyebrow": "Why Choose Us",
+        "title": "Engineering Excellence",
+        "titleAccent": "Meets Design",
+        "subtitle": "We don't just write code – we craft digital experiences that users love.",
+        "features": [
+          {
+            "title": "Modern Tech Stack",
+            "description": "We use cutting-edge technologies like React, Next.js, TypeScript, and Node.js."
+          },
+          {
+            "title": "Performance First",
+            "description": "Optimized for speed with Core Web Vitals scores that exceed industry standards."
+          },
+          {
+            "title": "Scalable Architecture",
+            "description": "Built to grow with your business, from startup to enterprise scale."
+          },
+          {
+            "title": "Security Focused",
+            "description": "Industry-standard security practices and regular vulnerability assessments."
+          }
+        ]
+      },
+      "testimonials": {
+        "eyebrow": "Client Success",
+        "title": "What Our Clients",
+        "titleAccent": "Say",
+        "items": [
+          {
+            "quote": "PakSoft transformed our outdated website into a modern, high-converting platform. Our leads increased by 300%.",
+            "author": "Sarah Johnson",
+            "role": "CEO, TechStart Inc."
+          },
+          {
+            "quote": "The team delivered beyond our expectations. Their attention to detail and technical expertise is unmatched.",
+            "author": "Michael Chen",
+            "role": "CTO, DataFlow Systems"
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "Common Questions",
+        "title": "Frequently Asked",
+        "titleAccent": "Questions",
+        "items": [
+          {
+            "question": "What technologies do you use?",
+            "answer": "We specialize in React, Next.js, TypeScript, Node.js, Python, and cloud platforms like AWS and Vercel."
+          },
+          {
+            "question": "How long does a typical project take?",
+            "answer": "Timeline varies by scope. A simple website takes 4-6 weeks, while complex applications may take 3-6 months."
+          },
+          {
+            "question": "Do you provide ongoing support?",
+            "answer": "Yes, we offer maintenance packages including updates, monitoring, and feature enhancements."
+          },
+          {
+            "question": "Can you work with our existing team?",
+            "answer": "Absolutely. We can augment your team or work independently based on your needs."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Ready to Build Your Web Project?",
+        "description": "Let's create a web solution that drives results for your business.",
+        "primaryCta": "Get Free Quote",
+        "secondaryCta": "Schedule a Call"
+      }
+    },
+    "machineLearning": {
+      "hero": {
+        "eyebrow": "Intelligent Solutions",
+        "title": "Machine Learning",
+        "titleAccent": "Innovation",
+        "description": "Transform your data into actionable insights with custom machine learning solutions. From predictive analytics to computer vision, we build AI systems that drive real business value.",
+        "cta": "Explore AI Solutions",
+        "secondaryCta": "View Case Studies"
+      },
+      "services": {
+        "eyebrow": "ML Capabilities",
+        "title": "Machine Learning",
+        "titleAccent": "Services",
+        "subtitle": "End-to-end machine learning solutions tailored to your business needs.",
+        "items": [
+          {
+            "title": "Predictive Analytics",
+            "description": "Forecast trends, customer behavior, and business outcomes with data-driven models.",
+            "features": ["Demand Forecasting", "Churn Prediction", "Risk Assessment"]
+          },
+          {
+            "title": "Natural Language Processing",
+            "description": "Extract insights from text data with sentiment analysis, entity recognition, and more.",
+            "features": ["Text Classification", "Sentiment Analysis", "Named Entity Recognition"]
+          },
+          {
+            "title": "Computer Vision",
+            "description": "Visual AI for image classification, object detection, and video analytics.",
+            "features": ["Image Recognition", "Object Detection", "Video Analytics"]
+          },
+          {
+            "title": "Recommendation Systems",
+            "description": "Personalized recommendations that increase engagement and conversions.",
+            "features": ["Product Recommendations", "Content Personalization", "User Matching"]
+          }
+        ]
+      },
+      "cta": {
+        "title": "Ready to Leverage AI?",
+        "description": "Let's build intelligent systems that transform your business operations.",
+        "primaryCta": "Get AI Consultation",
+        "secondaryCta": "View ML Projects"
+      }
+    },
+    "aiSolutions": {
+      "hero": {
+        "eyebrow": "Future-Ready Technology",
+        "title": "AI",
+        "titleAccent": "Solutions",
+        "description": "Harness the power of artificial intelligence to automate processes, enhance decision-making, and create intelligent experiences for your customers.",
+        "cta": "Start AI Journey",
+        "secondaryCta": "Explore Capabilities"
+      },
+      "cta": {
+        "title": "Ready to Transform with AI?",
+        "description": "Partner with us to implement AI solutions that drive measurable results.",
+        "primaryCta": "Get AI Assessment",
+        "secondaryCta": "Book Consultation"
+      }
+    },
+    "dataAnalytics": {
+      "hero": {
+        "eyebrow": "Data-Driven Decisions",
+        "title": "Data",
+        "titleAccent": "Analytics",
+        "description": "Turn raw data into strategic insights. Our analytics solutions help you understand your business better and make informed decisions that drive growth.",
+        "cta": "Unlock Your Data",
+        "secondaryCta": "View Dashboards"
+      },
+      "cta": {
+        "title": "Ready to Harness Your Data?",
+        "description": "Let's build analytics solutions that reveal actionable insights.",
+        "primaryCta": "Get Data Assessment",
+        "secondaryCta": "See Examples"
+      }
+    },
+    "pythonAutomation": {
+      "hero": {
+        "eyebrow": "Streamline Operations",
+        "title": "Python",
+        "titleAccent": "Automation",
+        "description": "Eliminate repetitive tasks and boost productivity with custom Python automation solutions. From data processing to workflow automation, we build systems that work for you.",
+        "cta": "Automate Your Business",
+        "secondaryCta": "View Examples"
+      },
+      "cta": {
+        "title": "Ready to Automate?",
+        "description": "Let's build automation solutions that save time and reduce errors.",
+        "primaryCta": "Get Automation Quote",
+        "secondaryCta": "Schedule Demo"
+      }
+    },
+    "mobileDevelopment": {
+      "hero": {
+        "eyebrow": "Apps That Perform",
+        "title": "Mobile",
+        "titleAccent": "Development",
+        "description": "Create stunning mobile experiences with native and cross-platform apps. We build iOS and Android applications that users love and businesses rely on.",
+        "cta": "Build Your App",
+        "secondaryCta": "View Portfolio"
+      },
+      "cta": {
+        "title": "Ready to Go Mobile?",
+        "description": "Let's create a mobile app that engages your users and grows your business.",
+        "primaryCta": "Get App Quote",
+        "secondaryCta": "Schedule Call"
+      }
+    },
+    "digitalMarketing": {
+      "hero": {
+        "eyebrow": "Grow Your Presence",
+        "title": "Digital",
+        "titleAccent": "Marketing",
+        "description": "Reach your target audience with data-driven digital marketing strategies. From SEO to paid advertising, we help you grow your online presence and drive conversions.",
+        "cta": "Grow Your Business",
+        "secondaryCta": "See Results"
+      },
+      "cta": {
+        "title": "Ready to Grow Online?",
+        "description": "Let's create a digital marketing strategy that delivers results.",
+        "primaryCta": "Get Marketing Plan",
+        "secondaryCta": "View Case Studies"
+      }
+    },
+    "uiUxDesign": {
+      "hero": {
+        "eyebrow": "Design That Converts",
+        "title": "UI/UX",
+        "titleAccent": "Design",
+        "description": "Create intuitive, beautiful interfaces that users love. Our design team combines aesthetics with functionality to deliver exceptional digital experiences.",
+        "cta": "Start Design Project",
+        "secondaryCta": "View Portfolio"
+      },
+      "cta": {
+        "title": "Ready for Great Design?",
+        "description": "Let's create interfaces that delight users and drive business results.",
+        "primaryCta": "Get Design Quote",
+        "secondaryCta": "See Our Work"
+      }
+    },
+    "apiDevelopment": {
+      "hero": {
+        "eyebrow": "Connect Everything",
+        "title": "API",
+        "titleAccent": "Development",
+        "description": "Build robust APIs that power your applications and connect your systems. We create scalable, secure, and well-documented APIs that developers love to use.",
+        "cta": "Build Your API",
+        "secondaryCta": "View Documentation"
+      },
+      "cta": {
+        "title": "Ready to Connect?",
+        "description": "Let's build APIs that power your digital ecosystem.",
+        "primaryCta": "Get API Quote",
+        "secondaryCta": "Technical Consultation"
+      }
+    },
+    "eCommerce": {
+      "hero": {
+        "eyebrow": "Sell Online",
+        "title": "E-Commerce",
+        "titleAccent": "Solutions",
+        "description": "Launch and scale your online store with our comprehensive e-commerce solutions. From custom storefronts to enterprise platforms, we build stores that convert.",
+        "cta": "Launch Your Store",
+        "secondaryCta": "View Stores"
+      },
+      "cta": {
+        "title": "Ready to Sell Online?",
+        "description": "Let's build an e-commerce platform that grows your business.",
+        "primaryCta": "Get Store Quote",
+        "secondaryCta": "See Success Stories"
+      }
+    },
+    "devopsCloud": {
+      "hero": {
+        "eyebrow": "Scale with Confidence",
+        "title": "DevOps &",
+        "titleAccent": "Cloud",
+        "description": "Optimize your infrastructure with modern DevOps practices and cloud solutions. We help you deploy faster, scale efficiently, and maintain reliability.",
+        "cta": "Optimize Infrastructure",
+        "secondaryCta": "View Architecture"
+      },
+      "cta": {
+        "title": "Ready to Scale?",
+        "description": "Let's build infrastructure that supports your growth.",
+        "primaryCta": "Get DevOps Assessment",
+        "secondaryCta": "Architecture Review"
+      }
+    },
+    "cybersecurity": {
+      "hero": {
+        "eyebrow": "Protect Your Business",
+        "title": "Cyber",
+        "titleAccent": "Security",
+        "description": "Safeguard your digital assets with comprehensive security solutions. From penetration testing to compliance, we help you stay protected against evolving threats.",
+        "cta": "Secure Your Systems",
+        "secondaryCta": "Security Assessment"
+      },
+      "cta": {
+        "title": "Ready to Get Secure?",
+        "description": "Let's protect your business from cyber threats.",
+        "primaryCta": "Get Security Audit",
+        "secondaryCta": "View Security Services"
+      }
+    },
+    "conversationalAi": {
+      "hero": {
+        "eyebrow": "Intelligent Conversations",
+        "title": "Conversational",
+        "titleAccent": "AI",
+        "description": "Build intelligent chatbots and virtual assistants that understand and engage your customers. Powered by the latest in NLP and LLM technology.",
+        "cta": "Build Your Chatbot",
+        "secondaryCta": "See Demos"
+      },
+      "cta": {
+        "title": "Ready for Smart Conversations?",
+        "description": "Let's build AI assistants that transform customer experience.",
+        "primaryCta": "Get Chatbot Quote",
+        "secondaryCta": "Schedule Demo"
+      }
+    },
+    "llmIntegration": {
+      "hero": {
+        "eyebrow": "Cutting-Edge AI",
+        "title": "LLM",
+        "titleAccent": "Integration",
+        "description": "Integrate powerful language models like Claude, GPT-4, and open-source alternatives into your applications. We help you leverage the latest in AI technology.",
+        "cta": "Integrate AI",
+        "secondaryCta": "View Use Cases"
+      },
+      "cta": {
+        "title": "Ready to Integrate LLMs?",
+        "description": "Let's bring the power of large language models to your applications.",
+        "primaryCta": "Get Integration Quote",
+        "secondaryCta": "Technical Consultation"
+      }
+    },
+    "ragSolutions": {
+      "hero": {
+        "eyebrow": "Knowledge-Powered AI",
+        "title": "RAG",
+        "titleAccent": "Solutions",
+        "description": "Build intelligent systems that combine your proprietary data with LLM capabilities. Create AI that truly understands your business context.",
+        "cta": "Build RAG System",
+        "secondaryCta": "Learn More"
+      },
+      "cta": {
+        "title": "Ready for Smart AI?",
+        "description": "Let's build RAG systems that leverage your unique data.",
+        "primaryCta": "Get RAG Assessment",
+        "secondaryCta": "Technical Deep Dive"
+      }
+    },
+    "aiAgents": {
+      "hero": {
+        "eyebrow": "Autonomous Intelligence",
+        "title": "AI",
+        "titleAccent": "Agents",
+        "description": "Create autonomous AI agents that can reason, plan, and execute complex tasks. From workflow automation to intelligent assistants, we build agents that work.",
+        "cta": "Build AI Agents",
+        "secondaryCta": "See Examples"
+      },
+      "cta": {
+        "title": "Ready for AI Agents?",
+        "description": "Let's build autonomous systems that transform your operations.",
+        "primaryCta": "Get Agent Quote",
+        "secondaryCta": "Schedule Demo"
+      }
+    }
+  },
   "cta": {
     "serviceRequest": {
       "badge": "Ready to Start",
