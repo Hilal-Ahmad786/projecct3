@@ -8,10 +8,61 @@ import ReCaptcha from '@/components/ReCaptcha'
 import { cookies } from 'next/headers'
 
 export const metadata = {
-    title: 'PakSoft – Modern Digital Solutions',
+    metadataBase: new URL('https://paktechnology.com'),
+    title: {
+        default: 'PakSoft – Modern Digital Solutions',
+        template: '%s | PakSoft'
+    },
     description: 'Enterprise web development, e-commerce, automation bots and digital marketing solutions',
+    keywords: ['Web Development', 'Mobile Apps', 'AI Solutions', 'Automation', 'Digital Marketing', 'E-commerce'],
+    authors: [{ name: 'PakSoft Team' }],
+    creator: 'PakSoft',
+    openGraph: {
+        type: 'website',
+        locale: 'en_US',
+        url: 'https://paktechnology.com',
+        title: 'PakSoft – Modern Digital Solutions',
+        description: 'Enterprise web development, e-commerce, automation bots and digital marketing solutions',
+        siteName: 'PakSoft',
+        images: [
+            {
+                url: '/images/og-image.jpg', // Ensure this image exists or use a valid one
+                width: 1200,
+                height: 630,
+                alt: 'PakSoft Digital Solutions',
+            },
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'PakSoft – Modern Digital Solutions',
+        description: 'Enterprise web development, e-commerce, automation bots and digital marketing solutions',
+        creator: '@paktechnology',
+        images: ['/images/twitter-image.jpg'], // Ensure this image exists
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            'max-video-preview': -1,
+            'max-image-preview': 'large',
+            'max-snippet': -1,
+        },
+    },
     verification: {
         google: '5r6FVNc5T7Y3Fig1PQvnfB4UtoDO9RGMSqWLZANzcdQ',
+    },
+    alternates: {
+        canonical: 'https://paktechnology.com',
+        languages: {
+            'en': 'https://paktechnology.com/en',
+            'tr': 'https://paktechnology.com/tr',
+            'de': 'https://paktechnology.com/de',
+            'ur': 'https://paktechnology.com/ur',
+            'ar': 'https://paktechnology.com/ar',
+        },
     },
 }
 
