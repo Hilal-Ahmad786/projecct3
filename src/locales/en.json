@@ -3702,6 +3702,33 @@
       }
     }
   },
+  "aiServices": {
+    "voiceAi": {
+      "title": "Voice AI & Call Center Automation",
+      "subtitle": "Transform Customer Service with Intelligent Voice Solutions",
+      "description": "Deploy AI-powered voice assistants that handle customer inquiries 24/7. Reduce wait times, cut operational costs, and deliver consistent, high-quality support at scale."
+    },
+    "aiSecurityReview": {
+      "title": "AI Security Review & Governance",
+      "subtitle": "Protect Your AI Systems from Emerging Threats",
+      "description": "Our AI security experts identify vulnerabilities including prompt injection, data leakage, and model exploitation. We establish governance frameworks that ensure compliance and trust."
+    },
+    "aiReadinessAudit": {
+      "title": "AI Readiness Audit",
+      "subtitle": "Discover Your AI Potential",
+      "description": "A comprehensive assessment of your organization's AI readiness. We evaluate your data infrastructure, team capabilities, and business processes to create a clear roadmap for AI adoption."
+    },
+    "aiSearch": {
+      "title": "AI Search & Personalization",
+      "subtitle": "Deliver Relevant Experiences at Scale",
+      "description": "Enhance your platforms with intelligent search and personalization. Our AI solutions understand user intent, deliver relevant results, and boost engagement and conversions."
+    },
+    "aiMaintenance": {
+      "title": "AI Maintenance Subscription",
+      "subtitle": "Keep Your AI Running Optimally",
+      "description": "Ongoing support, monitoring, and optimization for your AI systems. Our team ensures your AI investments continue to deliver value with proactive maintenance and updates."
+    }
+  },
   "cta": {
     "serviceRequest": {
       "badge": "Ready to Start",
