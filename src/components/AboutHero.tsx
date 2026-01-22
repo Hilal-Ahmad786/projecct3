@@ -3,7 +3,7 @@
 
 import { motion } from 'framer-motion';
 import Button from '@/components/Button';
-import AboutRightExcellence from '@/components/AboutRightExcellence';
+import AboutHeroAnimation from '@/components/animations/AboutHeroAnimation';
 import ParticleNetwork from '@/components/ParticleNetwork';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
@@ -101,7 +101,7 @@ export default function AboutHero() {
             transition={{ duration: 0.8, delay: 0.2, ease: [0.4, 0, 0.2, 1] }}
             className={`relative ${dir === 'rtl' ? 'lg:order-1' : ''}`}
           >
-            <AboutRightExcellence />
+            <AboutHeroAnimation />
           </motion.div>
         </div>
       </div>
