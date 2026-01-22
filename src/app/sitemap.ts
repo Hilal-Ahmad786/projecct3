@@ -1,7 +1,9 @@
 import { MetadataRoute } from 'next';
-import { locales, Locale } from '@/lib/i18n';
 
 const baseUrl = 'https://paksoft.com.tr';
+
+// Only include locales that are fully working
+const workingLocales = ['en', 'tr'];
 
 // Priority levels for different page types
 const PRIORITY = {
@@ -21,11 +23,10 @@ const mainRoutes = [
     { path: '/services', priority: PRIORITY.services, changeFreq: 'weekly' as const },
     { path: '/projects', priority: PRIORITY.mainNav, changeFreq: 'weekly' as const },
     { path: '/blog', priority: PRIORITY.blog, changeFreq: 'daily' as const },
-    { path: '/pricing', priority: PRIORITY.mainNav, changeFreq: 'weekly' as const },
 ];
 
-// Service detail pages
-const serviceRoutes = [
+// Service detail pages that exist (main page only)
+const serviceMainPages = [
     '/services/web-development',
     '/services/mobile-development',
     '/services/ui-ux-design',
@@ -39,28 +40,45 @@ const serviceRoutes = [
     '/services/cybersecurity',
     '/services/machine-learning',
     '/services/conversational-ai',
-    // AI 2026 Services
     '/services/prompt-engineering',
     '/services/ai-agents',
     '/services/rag-solutions',
     '/services/mlops-deployment',
     '/services/computer-vision',
     '/services/llm-finetuning',
-    // Additional AI services to add
     '/services/voice-ai',
     '/services/ai-search',
     '/services/ai-security-review',
     '/services/ai-readiness-audit',
-    '/services/ai-mvp-30-days',
     '/services/ai-maintenance',
 ];
 
-// Generate hreflang alternates for a given path
+// Services that have full sub-pages (faq, features, etc.)
+const servicesWithSubPages = [
+    '/services/ai-solutions',
+    '/services/api-development',
+    '/services/conversational-ai',
+    '/services/cybersecurity',
+    '/services/data-analytics',
+    '/services/devops-cloud',
+    '/services/digital-marketing',
+    '/services/e-commerce',
+    '/services/machine-learning',
+    '/services/mobile-development',
+    '/services/python-automation',
+    '/services/ui-ux-design',
+];
+
+const serviceSubPages = ['/faq', '/features', '/tech-stack', '/portfolio', '/pricing', '/process'];
+
+// Generate hreflang alternates for a given path (only working locales)
 function generateAlternates(path: string): Record<string, string> {
     const alternates: Record<string, string> = {};
-    locales.forEach(locale => {
+    workingLocales.forEach(locale => {
         alternates[locale] = `${baseUrl}/${locale}${path}`;
     });
+    // Add x-default pointing to English
+    alternates['x-default'] = `${baseUrl}/en${path}`;
     return alternates;
 }
 
@@ -68,9 +86,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const sitemapEntries: MetadataRoute.Sitemap = [];
     const currentDate = new Date();
 
-    // Add main routes for each locale
+    // Add main routes for each working locale
     mainRoutes.forEach(({ path, priority, changeFreq }) => {
-        locales.forEach((locale) => {
+        workingLocales.forEach((locale) => {
             sitemapEntries.push({
                 url: `${baseUrl}/${locale}${path}`,
                 lastModified: currentDate,
@@ -83,9 +101,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
         });
     });
 
-    // Add service routes for each locale
-    serviceRoutes.forEach((path) => {
-        locales.forEach((locale) => {
+    // Add service main pages for each working locale
+    serviceMainPages.forEach((path) => {
+        workingLocales.forEach((locale) => {
             sitemapEntries.push({
                 url: `${baseUrl}/${locale}${path}`,
                 lastModified: currentDate,
@@ -98,11 +116,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
         });
     });
 
-    // Add service sub-pages (FAQ, features, etc.) - dynamically
-    const serviceSubPages = ['/faq', '/features', '/tech-stack', '/portfolio', '/pricing', '/process'];
-    serviceRoutes.forEach((servicePath) => {
+    // Add service sub-pages only for services that have them
+    servicesWithSubPages.forEach((servicePath) => {
         serviceSubPages.forEach((subPage) => {
-            locales.forEach((locale) => {
+            workingLocales.forEach((locale) => {
                 const fullPath = `${servicePath}${subPage}`;
                 sitemapEntries.push({
                     url: `${baseUrl}/${locale}${fullPath}`,

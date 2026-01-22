@@ -1,10 +1,6 @@
-import DashboardLayout from '@/components/admin/layouts/DashboardLayout';
-import { isAuthenticated } from '@/lib/auth';
-import { redirect } from 'next/navigation';
+import { Metadata } from 'next';
 
-export const metadata = {
-    title: 'Admin Dashboard - PakSoft',
-    description: 'PakSoft Admin Dashboard',
+export const metadata: Metadata = {
     robots: {
         index: false,
         follow: false,
@@ -17,17 +13,6 @@ export const metadata = {
     },
 };
 
-export default async function AdminLayout({
-    children,
-}: {
-    children: React.ReactNode;
-}) {
-    // Server-side auth check (middleware also checks, this is defense in depth)
-    const authenticated = await isAuthenticated();
-
-    if (!authenticated) {
-        redirect('/admin/login');
-    }
-
-    return <DashboardLayout>{children}</DashboardLayout>;
+export default function AdminRootLayout({ children }: { children: React.ReactNode }) {
+    return <>{children}</>;
 }

@@ -2,6 +2,7 @@
   "common": {
     "loading": "Yükleniyor...",
     "error": "Bir hata oluştu",
+    "getQuote": "Teklif Al",
     "retry": "Tekrar Dene",
     "cancel": "İptal",
     "save": "Kaydet",
@@ -388,6 +389,11 @@
       "customDescription": "Her işletme benzersizdir. Özel gereksinimlerinizi tartışalım ve mükemmel uyum sağlayan özel bir çözüm oluşturalım.",
       "getCustomQuote": "Özel Teklif Alın",
       "viewProjects": "Projeleri Görüntüle",
+      "perMonth": "/ay",
+      "perYear": "/yıl",
+      "whatsIncluded": "Neler Dahil",
+      "projectScope": "Proje Kapsamı",
+      "getDetailedQuote": "Detaylı Teklif Al",
       "subscriptions": {
         "seoMarketing": {
           "title": "SEO ve Dijital Pazarlama",
@@ -793,7 +799,11 @@
         "technicalSupport": "Teknik Destek",
         "partnership": "Ortaklık",
         "other": "Diğer"
-      }
+      },
+      "whatHappensNext": "Sırada Ne Var?",
+      "nextStep1": "Mesajınızı 24 saat içinde inceleyeceğiz",
+      "nextStep2": "Ekibimiz projenizi tartışmak için sizinle iletişime geçecek",
+      "nextStep3": "Detaylı bir teklif ve zaman çizelgesi sunacağız"
     },
     "nextSteps": {
       "title": "Sırada Ne Var?",

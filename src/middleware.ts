@@ -135,15 +135,19 @@ export function middleware(request: NextRequest) {
   }
 
   // ADMIN AUTHENTICATION CHECK
-  if (pathname.startsWith('/admin')) {
-    // Allow access to login page and auth API routes
-    if (pathname === '/admin/login' || pathname.startsWith('/api/admin/auth')) {
-      // Add noindex header for admin login page
-      response.headers.set('X-Robots-Tag', 'noindex, nofollow');
-      return response;
+  // Allow access to login page first (before any other admin checks)
+  if (pathname === '/admin/login') {
+    // If already authenticated, redirect to admin dashboard
+    if (isAdminAuthenticated(request)) {
+      return NextResponse.redirect(new URL('/admin', request.url));
     }
+    // Add noindex header for admin login page
+    response.headers.set('X-Robots-Tag', 'noindex, nofollow');
+    return response;
+  }
 
-    // Check authentication for all other admin routes
+  if (pathname.startsWith('/admin')) {
+    // Check authentication for all admin routes (except login which is handled above)
     if (!isAdminAuthenticated(request)) {
       const loginUrl = new URL('/admin/login', request.url);
       loginUrl.searchParams.set('from', pathname);

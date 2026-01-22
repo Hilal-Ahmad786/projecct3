@@ -104,7 +104,7 @@ export default function PricingSection() {
     },
   ];
 
-  const periodLabel = billingCycle === 'monthly' ? '/ay' : '/yıl';
+  const periodLabel = billingCycle === 'monthly' ? t('perMonth') : t('perYear');
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -268,7 +268,7 @@ export default function PricingSection() {
                       {/* Features */}
                       <div className="space-y-4">
                         <div className="text-caption text-gray-500 uppercase tracking-wide">
-                          Neler Dahil
+                          {t('whatsIncluded')}
                         </div>
                         <ul className="space-y-3">
                           {Array.isArray(tier.features) ? (
@@ -354,7 +354,7 @@ export default function PricingSection() {
                     {/* Features */}
                     <div className="space-y-4">
                       <div className="text-caption text-gray-500 uppercase tracking-wide">
-                        Proje Kapsamı
+                        {t('projectScope')}
                       </div>
                       <ul className="space-y-3">
                         {Array.isArray(tier.features) ? (
@@ -385,7 +385,7 @@ export default function PricingSection() {
                         size="lg"
                         className="w-full"
                       >
-                        Detaylı Teklif
+                        {t('getDetailedQuote')}
                       </Button>
                     </div>
                   </div>
