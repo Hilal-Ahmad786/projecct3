@@ -1,7 +1,6 @@
 // src/app/layout.tsx
 import './globals.css'
 import { ReactNode } from 'react'
-import { I18nProvider } from '@/hooks/useTranslations'
 import Analytics from '@/components/Analytics'
 import SecurityGuard from '@/components/SecurityGuard'
 import ReCaptcha from '@/components/ReCaptcha'
@@ -26,7 +25,7 @@ export const metadata = {
         siteName: 'PakSoft',
         images: [
             {
-                url: '/images/og-image.jpg', // Ensure this image exists or use a valid one
+                url: '/images/og-image.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'PakSoft Digital Solutions',
@@ -38,7 +37,7 @@ export const metadata = {
         title: 'PakSoft – Modern Digital Solutions',
         description: 'Enterprise web development, e-commerce, automation bots and digital marketing solutions',
         creator: '@paktechnology',
-        images: ['/images/twitter-image.jpg'], // Ensure this image exists
+        images: ['/images/twitter-image.jpg'],
     },
     robots: {
         index: true,
@@ -82,9 +81,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
             </head>
             <body className="flex flex-col min-h-screen" suppressHydrationWarning>
                 <SecurityGuard />
-                <I18nProvider>
-                    {children}
-                </I18nProvider>
+                {children}
             </body>
         </html>
     )

@@ -1,7 +1,8 @@
 // src/app/[locale]/layout.tsx
 import { ReactNode } from 'react'
-import { Locale } from '@/lib/i18n'
-
+import { Locale, locales, defaultLocale, isRTL } from '@/lib/i18n'
+import { getTranslations } from '@/lib/server-i18n'
+import { TranslationsProvider } from '@/hooks/useServerTranslations'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import FloatingButtons from '@/components/FloatingButtons'
@@ -12,24 +13,25 @@ interface LocaleLayoutProps {
   params: Promise<{ locale: Locale }>
 }
 
-export default async function LocaleLayout({ children }: LocaleLayoutProps) {
+export default async function LocaleLayout({ children, params }: LocaleLayoutProps) {
+  const { locale } = await params
+  const validLocale = locales.includes(locale) ? locale : defaultLocale
+  const translations = getTranslations(validLocale)
+  const dir = isRTL(validLocale) ? 'rtl' : 'ltr'
+
   return (
-    <>
-      <GlobalJsonLd />
-      <Navbar />
-      <main className="flex-grow">{children}</main>
-      <Footer />
-      <FloatingButtons />
-    </>
+    <div dir={dir} lang={validLocale}>
+      <TranslationsProvider locale={validLocale} translations={translations}>
+        <GlobalJsonLd />
+        <Navbar />
+        <main className="flex-grow">{children}</main>
+        <Footer />
+        <FloatingButtons />
+      </TranslationsProvider>
+    </div>
   )
 }
 
 export async function generateStaticParams() {
-  return [
-    { locale: 'en' },
-    { locale: 'tr' },
-    { locale: 'de' },
-    { locale: 'ur' },
-    { locale: 'ar' },
-  ]
+  return locales.map(locale => ({ locale }))
 }
