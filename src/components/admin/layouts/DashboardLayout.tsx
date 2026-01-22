@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import {
     HomeIcon,
     ChartBarIcon,
@@ -10,6 +10,7 @@ import {
     EnvelopeIcon,
     CogIcon,
     ArrowLeftOnRectangleIcon,
+    ArrowRightOnRectangleIcon,
     Bars3Icon,
     XMarkIcon,
     GlobeAltIcon,
@@ -40,7 +41,21 @@ const navigation = [
 
 export default function DashboardLayout({ children }: DashboardLayoutProps) {
     const [sidebarOpen, setSidebarOpen] = useState(false);
+    const [isLoggingOut, setIsLoggingOut] = useState(false);
     const pathname = usePathname();
+    const router = useRouter();
+
+    const handleLogout = async () => {
+        setIsLoggingOut(true);
+        try {
+            await fetch('/api/admin/auth/logout', { method: 'POST' });
+            router.push('/admin/login');
+            router.refresh();
+        } catch (error) {
+            console.error('Logout failed:', error);
+            setIsLoggingOut(false);
+        }
+    };
 
     return (
         <div className="min-h-screen bg-gray-100">
@@ -98,7 +113,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
                     </nav>
 
                     {/* Footer */}
-                    <div className="p-4 border-t border-gray-800">
+                    <div className="p-4 border-t border-gray-800 space-y-1">
                         <Link
                             href="/"
                             className="flex items-center gap-3 px-4 py-3 text-sm font-medium text-gray-400 hover:text-white rounded-lg hover:bg-gray-800 transition-colors"
@@ -106,6 +121,14 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
                             <ArrowLeftOnRectangleIcon className="w-5 h-5" />
                             Back to Website
                         </Link>
+                        <button
+                            onClick={handleLogout}
+                            disabled={isLoggingOut}
+                            className="w-full flex items-center gap-3 px-4 py-3 text-sm font-medium text-red-400 hover:text-red-300 rounded-lg hover:bg-red-900/20 transition-colors disabled:opacity-50"
+                        >
+                            <ArrowRightOnRectangleIcon className="w-5 h-5" />
+                            {isLoggingOut ? 'Logging out...' : 'Logout'}
+                        </button>
                     </div>
                 </div>
             </aside>

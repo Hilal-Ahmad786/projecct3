@@ -5,6 +5,9 @@ import type { NextRequest } from 'next/server'
 const locales = ['en', 'tr', 'de', 'ur', 'ar']
 const defaultLocale = 'en'
 
+// Admin session cookie name (must match auth.ts)
+const ADMIN_SESSION_COOKIE = 'admin_session';
+
 // Lightweight rate limiting (use Vercel Edge Config or Redis in production)
 const rateLimitMap = new Map<string, { count: number; resetTime: number }>();
 
@@ -83,6 +86,15 @@ function getLocale(request: NextRequest): string {
   return defaultLocale;
 }
 
+// Check if admin session is valid
+function isAdminAuthenticated(request: NextRequest): boolean {
+  const sessionCookie = request.cookies.get(ADMIN_SESSION_COOKIE);
+  if (!sessionCookie?.value) return false;
+
+  // Validate session token format (64 hex characters)
+  return /^[a-f0-9]{64}$/.test(sessionCookie.value);
+}
+
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
   const userAgent = request.headers.get('user-agent') || '';
@@ -116,13 +128,30 @@ export function middleware(request: NextRequest) {
   response.headers.set('X-Frame-Options', 'DENY');
   response.headers.set('X-XSS-Protection', '1; mode=block');
   response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
+
   // Redirect localized admin paths to /admin
   if (locales.some(locale => pathname.startsWith(`/${locale}/admin`))) {
     return NextResponse.redirect(new URL('/admin', request.url));
   }
 
-  // Skip locale handling for admin routes
+  // ADMIN AUTHENTICATION CHECK
   if (pathname.startsWith('/admin')) {
+    // Allow access to login page and auth API routes
+    if (pathname === '/admin/login' || pathname.startsWith('/api/admin/auth')) {
+      // Add noindex header for admin login page
+      response.headers.set('X-Robots-Tag', 'noindex, nofollow');
+      return response;
+    }
+
+    // Check authentication for all other admin routes
+    if (!isAdminAuthenticated(request)) {
+      const loginUrl = new URL('/admin/login', request.url);
+      loginUrl.searchParams.set('from', pathname);
+      return NextResponse.redirect(loginUrl);
+    }
+
+    // Add noindex header for all admin pages
+    response.headers.set('X-Robots-Tag', 'noindex, nofollow');
     return response;
   }
 
