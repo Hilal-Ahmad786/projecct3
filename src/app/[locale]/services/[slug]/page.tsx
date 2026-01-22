@@ -1,14 +1,70 @@
 import { notFound } from 'next/navigation';
+import { Metadata } from 'next';
 import { getServiceBySlug } from '@/data/services';
-import Image from 'next/image';
+import { Locale, locales, defaultLocale } from '@/lib/i18n';
+import { generateAlternateLinks } from '@/lib/seo';
 import Button from '@/components/Button';
 import ParticleNetwork from '@/components/ParticleNetwork';
 import { CheckCircleIcon } from '@heroicons/react/24/solid';
 import ServicePortfolio from '@/components/services/ServicePortfolio';
 import ServiceFAQ from '@/components/services/ServiceFAQ';
+import { ServiceJsonLd, BreadcrumbJsonLd, FAQJsonLd } from '@/components/seo/JsonLd';
 
-export default function ServicePage({ params }: { params: { slug: string, locale: string } }) {
-    const service = getServiceBySlug(params.slug, params.locale);
+const baseUrl = 'https://paksoft.com.tr';
+
+const ogLocaleMap: Record<Locale, string> = {
+  en: 'en_US',
+  tr: 'tr_TR',
+  de: 'de_DE',
+  ur: 'ur_PK',
+  ar: 'ar_SA',
+};
+
+interface PageProps {
+  params: Promise<{ slug: string; locale: Locale }>;
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug, locale } = await params;
+  const validLocale = locales.includes(locale) ? locale : defaultLocale;
+  const service = getServiceBySlug(slug, validLocale);
+
+  if (!service) {
+    return { title: 'Service Not Found | PakSoft' };
+  }
+
+  const title = `${service.title} | PakSoft`;
+  const description = service.fullDescription.slice(0, 160);
+  const path = `/services/${slug}`;
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: `${baseUrl}/${validLocale}${path}`,
+      languages: generateAlternateLinks(path),
+    },
+    openGraph: {
+      title,
+      description,
+      url: `${baseUrl}/${validLocale}${path}`,
+      siteName: 'PakSoft',
+      locale: ogLocaleMap[validLocale],
+      alternateLocale: locales.filter(l => l !== validLocale).map(l => ogLocaleMap[l]),
+      type: 'website',
+      images: [{ url: service.heroImage || '/images/og-services.jpg', width: 1200, height: 630, alt: title }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+    },
+  };
+}
+
+export default async function ServicePage({ params }: PageProps) {
+    const { slug, locale } = await params;
+    const service = getServiceBySlug(slug, locale);
 
     // If service not found, return 404
     if (!service) {
@@ -17,8 +73,25 @@ export default function ServicePage({ params }: { params: { slug: string, locale
 
     const Icon = service.icon;
 
+    // Generate breadcrumb items for structured data
+    const breadcrumbItems = [
+        { name: 'Home', url: `${baseUrl}/${locale}` },
+        { name: 'Services', url: `${baseUrl}/${locale}/services` },
+        { name: service.title, url: `${baseUrl}/${locale}/services/${slug}` },
+    ];
+
     return (
         <main className="min-h-screen bg-white">
+            {/* Structured Data */}
+            <ServiceJsonLd
+                name={service.title}
+                description={service.fullDescription}
+                url={`${baseUrl}/${locale}/services/${slug}`}
+            />
+            <BreadcrumbJsonLd items={breadcrumbItems} />
+            {service.faq && service.faq.length > 0 && (
+                <FAQJsonLd faqs={service.faq} />
+            )}
             {/* 1. Service Hero */}
             <section id="overview" className="relative overflow-hidden py-24 lg:py-32 bg-gray-900">
                 {/* Background Effects */}
