@@ -1,8 +1,8 @@
 // hooks/useServerTranslations.tsx
 'use client';
 
-import { createContext, useContext, ReactNode, useMemo } from 'react';
-import { usePathname } from 'next/navigation';
+import { createContext, useContext, ReactNode, useMemo, useCallback } from 'react';
+import { usePathname, useRouter } from 'next/navigation';
 import { Locale, defaultLocale, isRTL, locales } from '@/lib/i18n';
 
 interface TranslationsContextType {
@@ -10,6 +10,8 @@ interface TranslationsContextType {
   translations: any;
   t: (key: string, variables?: Record<string, string | number>) => string;
   dir: 'ltr' | 'rtl';
+  setLocale: (newLocale: Locale) => Promise<void>;
+  isLoading: boolean;
 }
 
 const TranslationsContext = createContext<TranslationsContextType | undefined>(undefined);
@@ -37,6 +39,9 @@ interface TranslationsProviderProps {
 }
 
 export function TranslationsProvider({ children, locale, translations }: TranslationsProviderProps) {
+  const router = useRouter();
+  const pathname = usePathname();
+
   const t = useMemo(() => {
     return (key: string, variables?: Record<string, string | number>): string => {
       const value = getNestedValue(translations, key);
@@ -44,12 +49,22 @@ export function TranslationsProvider({ children, locale, translations }: Transla
     };
   }, [translations]);
 
+  // setLocale navigates to the new locale URL - translations are loaded server-side
+  const setLocale = useCallback(async (newLocale: Locale): Promise<void> => {
+    if (newLocale === locale) return;
+    const pathWithoutLocale = pathname?.replace(/^\/(en|tr|de|ur|ar)/, '') || '/';
+    const newPath = `/${newLocale}${pathWithoutLocale}`;
+    router.push(newPath);
+  }, [locale, pathname, router]);
+
   const contextValue = useMemo(() => ({
     locale,
     translations,
     t,
     dir: isRTL(locale) ? 'rtl' as const : 'ltr' as const,
-  }), [locale, translations, t]);
+    setLocale,
+    isLoading: false, // Translations are loaded server-side, no client loading state
+  }), [locale, translations, t, setLocale]);
 
   return (
     <TranslationsContext.Provider value={contextValue}>

@@ -160,7 +160,7 @@ export default function Footer() {
               <Link href="/" className="flex items-center gap-3 group">
                 <div className="relative">
                   <Image
-                    src="/images/logo/PSlogo11.png"
+                    src="/images/logo/logowhite.png"
                     alt="PakSoft Logo"
                     width={160}
                     height={160}

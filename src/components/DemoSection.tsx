@@ -105,7 +105,7 @@ export default function DemoSection() {
         >
           {demoItems.map((item, index) => (
             <motion.div
-              key={item.id}
+              key={item.id || `demo-item-${index}`}
               className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col"
               variants={itemVariants}
             >

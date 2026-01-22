@@ -69,11 +69,7 @@ export default function Navbar() {
     setLanguageOpen(false);
     if (newLocale !== locale) {
       trackLanguageChange(locale, newLocale);
-      await setLocale(newLocale);
-
-      const pathWithoutLocale = pathname.replace(/^\/(en|tr|de|ur|ar)/, '') || '/';
-      const newPath = `/${newLocale}${pathWithoutLocale}`;
-      router.push(newPath);
+      await setLocale(newLocale); // setLocale now handles the navigation
     }
   };
 

@@ -858,7 +858,8 @@
       "behance": "Behance",
       "medium": "Medium",
       "discord": "Discord"
-    }
+    },
+    "developedBy": "Geliştiren"
   },
   "connect": {
     "title": "PakSoft ile Bağlantı Kurun",
@@ -1484,7 +1485,11 @@
         "timeline": "Zaman Çizelgesi",
         "urgencyLevel": "Aciliyet Düzeyi",
         "preferredStartDate": "Tercih Edilen Başlangıç Tarihi",
-        "additionalNotes": "Ek Notlar"
+        "additionalNotes": "Ek Notlar",
+        "attachments": "Proje Ekleri (İsteğe Bağlı)"
+      },
+      "hints": {
+        "attachments": "RFP belgeleri, maketler, tel çerçeveler veya referans materyalleri yükleyin"
       },
       "placeholders": {
         "name": "Adınızı ve soyadınızı girin",
@@ -1527,7 +1532,10 @@
       "submitting": "Gönderiliyor...",
       "close": "Kapat",
       "successTitle": "Talep Gönderildi!",
-      "successMessage": "Proje talebiniz için teşekkür ederiz. Ekibimiz gereksinimlerinizi inceleyecek ve 24 saat içinde size dönüş yapacaktır."
+      "successMessage": "Proje talebiniz için teşekkür ederiz. Ekibimiz gereksinimlerinizi inceleyecek ve 24 saat içinde size dönüş yapacaktır.",
+      "draftFound": "Kaydedilmemiş bir taslağınız var. Devam etmek ister misiniz?",
+      "discard": "Sil",
+      "restore": "Geri Yükle"
     }
   },
   "servicePages": {

@@ -4,6 +4,7 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Button from '@/components/Button';
+import ParticleNetwork from '@/components/ParticleNetwork';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function ServicesHero() {
@@ -17,7 +18,7 @@ export default function ServicesHero() {
 
   if (isLoading) {
     return (
-      <section className="hero-section relative bg-white overflow-hidden min-h-screen flex items-center justify-center">
+      <section className="hero-section relative gradient-bg-vibrant overflow-hidden min-h-screen flex items-center justify-center">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"></div>
           <p className="mt-4 text-gray-600">Loading...</p>
@@ -27,10 +28,13 @@ export default function ServicesHero() {
   }
 
   return (
-    <section className="hero-section relative bg-white overflow-hidden" dir={dir}>
+    <section className="hero-section relative gradient-bg-vibrant overflow-hidden" dir={dir}>
+      {/* Particle Network Background */}
+      <ParticleNetwork className="opacity-60" />
+
       {/* Swiss Grid Background */}
       <div className="absolute inset-0 opacity-[0.02]">
-        <div 
+        <div
           className="w-full h-full"
           style={{
             backgroundImage: `
@@ -43,8 +47,12 @@ export default function ServicesHero() {
       </div>
 
       {/* Proper Crescent Elements */}
-      <div className={`absolute bottom-32 w-28 h-28 ${dir === 'rtl' ? 'left-20' : 'right-20'}`}>
+      <div className={`absolute top-32 w-32 h-32 ${dir === 'rtl' ? 'left-20' : 'right-20'}`}>
         <div className={`crescent ${dir === 'rtl' ? 'crescent-left' : 'crescent-right'} crescent-subtle text-gray-900`} />
+      </div>
+
+      <div className={`absolute bottom-32 w-24 h-24 ${dir === 'rtl' ? 'right-16' : 'left-16'}`}>
+        <div className={`crescent ${dir === 'rtl' ? 'crescent-right' : 'crescent-left'} crescent-subtle text-gray-600`} />
       </div>
 
       <div className="container mx-auto">

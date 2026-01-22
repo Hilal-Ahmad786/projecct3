@@ -862,7 +862,8 @@
       "behance": "Behance",
       "medium": "Medium",
       "discord": "Discord"
-    }
+    },
+    "developedBy": "Developed by"
   },
   "connect": {
     "title": "Connect with PakSoft",
@@ -3181,7 +3182,11 @@
         "timeline": "Timeline",
         "urgencyLevel": "Urgency Level",
         "preferredStartDate": "Preferred Start Date",
-        "additionalNotes": "Additional Notes"
+        "additionalNotes": "Additional Notes",
+        "attachments": "Project Attachments (Optional)"
+      },
+      "hints": {
+        "attachments": "Upload RFP documents, mockups, wireframes, or reference materials"
       },
       "placeholders": {
         "name": "Enter your full name",
@@ -3224,7 +3229,10 @@
       "submitting": "Submitting...",
       "close": "Close",
       "successTitle": "Request Submitted!",
-      "successMessage": "Thank you for your project request. Our team will review your requirements and get back to you within 24 hours."
+      "successMessage": "Thank you for your project request. Our team will review your requirements and get back to you within 24 hours.",
+      "draftFound": "You have an unsaved draft. Would you like to continue?",
+      "discard": "Discard",
+      "restore": "Restore"
     }
   },
   "servicePages": {

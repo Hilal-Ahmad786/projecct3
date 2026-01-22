@@ -858,7 +858,8 @@
       "behance": "Behance",
       "medium": "Medium",
       "discord": "Discord"
-    }
+    },
+    "developedBy": "Entwickelt von"
   },
   "connect": {
     "title": "Verbinden Sie sich mit PakSoft",
@@ -1484,7 +1485,11 @@
         "timeline": "Zeitplan",
         "urgencyLevel": "Dringlichkeitsstufe",
         "preferredStartDate": "Bevorzugtes Startdatum",
-        "additionalNotes": "Zusätzliche Hinweise"
+        "additionalNotes": "Zusätzliche Hinweise",
+        "attachments": "Projektanhänge (Optional)"
+      },
+      "hints": {
+        "attachments": "RFP-Dokumente, Mockups, Wireframes oder Referenzmaterialien hochladen"
       },
       "placeholders": {
         "name": "Geben Sie Ihren vollständigen Namen ein",
@@ -1527,7 +1532,10 @@
       "submitting": "Wird gesendet...",
       "close": "Schließen",
       "successTitle": "Anfrage gesendet!",
-      "successMessage": "Vielen Dank für Ihre Projektanfrage. Unser Team wird Ihre Anforderungen prüfen und sich innerhalb von 24 Stunden bei Ihnen melden."
+      "successMessage": "Vielen Dank für Ihre Projektanfrage. Unser Team wird Ihre Anforderungen prüfen und sich innerhalb von 24 Stunden bei Ihnen melden.",
+      "draftFound": "Sie haben einen ungespeicherten Entwurf. Möchten Sie fortfahren?",
+      "discard": "Verwerfen",
+      "restore": "Wiederherstellen"
     }
   },
   "servicePages": {
