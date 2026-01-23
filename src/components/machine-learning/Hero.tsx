@@ -1,6 +1,7 @@
 'use client';
 
 import { ServicePageHero } from '@/components/services';
+import { MachineLearningAnimation } from '@/components/animations/service-animations';
 
 export default function Hero() {
   return (
@@ -9,6 +10,7 @@ export default function Hero() {
       accentColor="violet"
       ctaHref="/contact"
       secondaryCtaHref="/services/machine-learning/portfolio"
+      AnimationComponent={MachineLearningAnimation}
     />
   );
 }

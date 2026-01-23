@@ -19,6 +19,7 @@ import {
     RectangleStackIcon,
     BellIcon,
     NewspaperIcon,
+    CurrencyDollarIcon,
 } from '@heroicons/react/24/outline';
 
 interface DashboardLayoutProps {
@@ -35,6 +36,7 @@ const navigation = [
     { name: 'Traffic', href: '/admin/traffic', icon: GlobeAltIcon },
     { name: 'Reports', href: '/admin/reports', icon: DocumentChartBarIcon },
     { name: 'Content', href: '/admin/content/services', icon: RectangleStackIcon },
+    { name: 'Pricing', href: '/admin/content/pricing', icon: CurrencyDollarIcon },
     { name: 'Security', href: '/admin/security', icon: ShieldCheckIcon },
     { name: 'Settings', href: '/admin/settings', icon: CogIcon },
 ];

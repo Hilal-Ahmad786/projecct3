@@ -1,6 +1,7 @@
 'use client';
 
 import { ServicePageHero } from '@/components/services';
+import { DevOpsAnimation } from '@/components/animations/service-animations';
 
 export default function Hero() {
   return (
@@ -9,6 +10,7 @@ export default function Hero() {
       accentColor="blue"
       ctaHref="/contact"
       secondaryCtaHref="/services/devops-cloud/portfolio"
+      AnimationComponent={DevOpsAnimation}
     />
   );
 }

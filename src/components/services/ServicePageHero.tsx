@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { ComponentType } from 'react';
 import Button from '@/components/Button';
 import ParticleNetwork from '@/components/ParticleNetwork';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
@@ -11,6 +12,7 @@ interface ServicePageHeroProps {
   showParticles?: boolean;
   ctaHref?: string;
   secondaryCtaHref?: string;
+  AnimationComponent?: ComponentType;
 }
 
 const accentColors = {
@@ -82,6 +84,7 @@ export default function ServicePageHero({
   showParticles = true,
   ctaHref = '/contact',
   secondaryCtaHref,
+  AnimationComponent,
 }: ServicePageHeroProps) {
   const { dir, isLoading } = useTranslations();
   const t = useSectionTranslations(translationKey);
@@ -206,73 +209,77 @@ export default function ServicePageHero({
             transition={{ duration: 0.8, delay: 0.2, ease: [0.4, 0, 0.2, 1] }}
             className={`relative ${isRTL ? 'lg:order-1' : ''}`}
           >
-            <div className="relative aspect-square max-w-lg mx-auto">
-              {/* Animated Background Blobs */}
-              <motion.div
-                animate={{
-                  scale: [1, 1.1, 1],
-                  rotate: [0, 5, 0]
-                }}
-                transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
-                className={`absolute top-0 ${isRTL ? 'left-0' : 'right-0'} w-72 h-72 ${colors.blob1} rounded-full mix-blend-multiply filter blur-3xl opacity-60`}
-              />
-              <motion.div
-                animate={{
-                  scale: [1, 1.15, 1],
-                  rotate: [0, -5, 0]
-                }}
-                transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-                className={`absolute bottom-0 ${isRTL ? 'right-0' : 'left-0'} w-72 h-72 ${colors.blob2} rounded-full mix-blend-multiply filter blur-3xl opacity-60`}
-              />
-
-              {/* Central Geometric Composition */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                {/* Outer Ring */}
+            {AnimationComponent ? (
+              <AnimationComponent />
+            ) : (
+              <div className="relative aspect-square max-w-lg mx-auto">
+                {/* Animated Background Blobs */}
                 <motion.div
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
-                  className={`absolute w-80 h-80 rounded-full ring-1 ${colors.ring} opacity-40`}
+                  animate={{
+                    scale: [1, 1.1, 1],
+                    rotate: [0, 5, 0]
+                  }}
+                  transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
+                  className={`absolute top-0 ${isRTL ? 'left-0' : 'right-0'} w-72 h-72 ${colors.blob1} rounded-full mix-blend-multiply filter blur-3xl opacity-60`}
+                />
+                <motion.div
+                  animate={{
+                    scale: [1, 1.15, 1],
+                    rotate: [0, -5, 0]
+                  }}
+                  transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
+                  className={`absolute bottom-0 ${isRTL ? 'right-0' : 'left-0'} w-72 h-72 ${colors.blob2} rounded-full mix-blend-multiply filter blur-3xl opacity-60`}
                 />
 
-                {/* Inner Ring */}
-                <motion.div
-                  animate={{ rotate: -360 }}
-                  transition={{ duration: 45, repeat: Infinity, ease: 'linear' }}
-                  className={`absolute w-64 h-64 rounded-full ring-1 ${colors.ring} opacity-30`}
-                />
-
-                {/* Center Element */}
-                <div className={`relative w-48 h-48 bg-gradient-to-br ${colors.gradientFrom} ${colors.gradientTo} rounded-2xl shadow-lg flex items-center justify-center`}>
-                  {/* Icon or Abstract Shape */}
+                {/* Central Geometric Composition */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  {/* Outer Ring */}
                   <motion.div
-                    animate={{ y: [0, -8, 0] }}
-                    transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-                    className="text-6xl"
-                  >
-                    <svg className="w-20 h-20 text-gray-700 opacity-20" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                    </svg>
-                  </motion.div>
-                </div>
+                    animate={{ rotate: 360 }}
+                    transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
+                    className={`absolute w-80 h-80 rounded-full ring-1 ${colors.ring} opacity-40`}
+                  />
 
-                {/* Floating Dots */}
-                <motion.div
-                  animate={{ y: [0, -20, 0] }}
-                  transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
-                  className={`absolute top-16 ${isRTL ? 'left-16' : 'right-16'} w-4 h-4 ${colors.dot} rounded-full opacity-60`}
-                />
-                <motion.div
-                  animate={{ y: [0, 15, 0] }}
-                  transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
-                  className={`absolute bottom-20 ${isRTL ? 'right-20' : 'left-20'} w-3 h-3 ${colors.dot} rounded-full opacity-40`}
-                />
-                <motion.div
-                  animate={{ y: [0, -12, 0] }}
-                  transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-                  className={`absolute top-32 ${isRTL ? 'right-8' : 'left-8'} w-2 h-2 ${colors.dot} rounded-full opacity-50`}
-                />
+                  {/* Inner Ring */}
+                  <motion.div
+                    animate={{ rotate: -360 }}
+                    transition={{ duration: 45, repeat: Infinity, ease: 'linear' }}
+                    className={`absolute w-64 h-64 rounded-full ring-1 ${colors.ring} opacity-30`}
+                  />
+
+                  {/* Center Element */}
+                  <div className={`relative w-48 h-48 bg-gradient-to-br ${colors.gradientFrom} ${colors.gradientTo} rounded-2xl shadow-lg flex items-center justify-center`}>
+                    {/* Icon or Abstract Shape */}
+                    <motion.div
+                      animate={{ y: [0, -8, 0] }}
+                      transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+                      className="text-6xl"
+                    >
+                      <svg className="w-20 h-20 text-gray-700 opacity-20" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                      </svg>
+                    </motion.div>
+                  </div>
+
+                  {/* Floating Dots */}
+                  <motion.div
+                    animate={{ y: [0, -20, 0] }}
+                    transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
+                    className={`absolute top-16 ${isRTL ? 'left-16' : 'right-16'} w-4 h-4 ${colors.dot} rounded-full opacity-60`}
+                  />
+                  <motion.div
+                    animate={{ y: [0, 15, 0] }}
+                    transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
+                    className={`absolute bottom-20 ${isRTL ? 'right-20' : 'left-20'} w-3 h-3 ${colors.dot} rounded-full opacity-40`}
+                  />
+                  <motion.div
+                    animate={{ y: [0, -12, 0] }}
+                    transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
+                    className={`absolute top-32 ${isRTL ? 'right-8' : 'left-8'} w-2 h-2 ${colors.dot} rounded-full opacity-50`}
+                  />
+                </div>
               </div>
-            </div>
+            )}
           </motion.div>
         </div>
       </div>

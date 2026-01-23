@@ -64,6 +64,24 @@ export default function PricingSection() {
       priceAnnual: 108000,
       features: t('subscriptions.aiModelHosting.features'),
     },
+    {
+      name: t('subscriptions.promptEngineering.title'),
+      priceMonthly: 6500,
+      priceAnnual: 58500,
+      features: t('subscriptions.promptEngineering.features'),
+    },
+    {
+      name: t('subscriptions.ragMaintenance.title'),
+      priceMonthly: 9000,
+      priceAnnual: 81000,
+      features: t('subscriptions.ragMaintenance.features'),
+    },
+    {
+      name: t('subscriptions.aiAgentMonitoring.title'),
+      priceMonthly: 7500,
+      priceAnnual: 67500,
+      features: t('subscriptions.aiAgentMonitoring.features'),
+    },
   ];
 
   const projectTiers = [
@@ -96,6 +114,41 @@ export default function PricingSection() {
       name: t('projects.devopsSetup.title'),
       price: t('projects.devopsSetup.price'),
       features: t('projects.devopsSetup.features'),
+    },
+    {
+      name: t('projects.promptEngineeringProject.title'),
+      price: t('projects.promptEngineeringProject.price'),
+      features: t('projects.promptEngineeringProject.features'),
+    },
+    {
+      name: t('projects.ragSolution.title'),
+      price: t('projects.ragSolution.price'),
+      features: t('projects.ragSolution.features'),
+    },
+    {
+      name: t('projects.aiAgentDevelopment.title'),
+      price: t('projects.aiAgentDevelopment.price'),
+      features: t('projects.aiAgentDevelopment.features'),
+    },
+    {
+      name: t('projects.llmFinetuning.title'),
+      price: t('projects.llmFinetuning.price'),
+      features: t('projects.llmFinetuning.features'),
+    },
+    {
+      name: t('projects.computerVision.title'),
+      price: t('projects.computerVision.price'),
+      features: t('projects.computerVision.features'),
+    },
+    {
+      name: t('projects.conversationalAiProject.title'),
+      price: t('projects.conversationalAiProject.price'),
+      features: t('projects.conversationalAiProject.features'),
+    },
+    {
+      name: t('projects.mlopsSetup.title'),
+      price: t('projects.mlopsSetup.price'),
+      features: t('projects.mlopsSetup.features'),
     },
     {
       name: t('projects.customEnterprise.title'),

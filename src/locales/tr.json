@@ -54,6 +54,35 @@
     "language": "Dil",
     "menu": "Menü"
   },
+  "megaMenu": {
+    "webDesign": "Web & Tasarım",
+    "aiMl": "AI & Makine Öğrenimi",
+    "mobile": "Mobil",
+    "automation": "Otomasyon & DevOps",
+    "marketing": "Pazarlama & Analitik",
+    "viewAll": "Tüm Hizmetleri Gör",
+    "services": {
+      "web-development": "Web Geliştirme",
+      "e-commerce": "E-Ticaret",
+      "api-development": "API Geliştirme",
+      "ui-ux-design": "UI/UX Tasarım",
+      "mobile-development": "Mobil Uygulama",
+      "ai-solutions": "Yapay Zeka Çözümleri",
+      "machine-learning": "Makine Öğrenimi",
+      "conversational-ai": "Konuşma Yapay Zekası",
+      "computer-vision": "Bilgisayar Görüşü",
+      "llm-finetuning": "LLM İnce Ayar",
+      "prompt-engineering": "Prompt Mühendisliği",
+      "ai-agents": "AI Ajanlar",
+      "rag-solutions": "RAG Çözümleri",
+      "python-automation": "Python Otomasyonu",
+      "devops-cloud": "DevOps & Cloud",
+      "mlops-deployment": "MLOps Dağıtım",
+      "digital-marketing": "Dijital Pazarlama",
+      "data-analytics": "Veri Analitiği",
+      "cybersecurity": "Siber Güvenlik"
+    }
+  },
   "hero": {
     "eyebrow": "Dijital Çözümler",
     "title": "Modern",
@@ -448,6 +477,33 @@
             "API endpoint yönetimi",
             "7/24 uptime SLA"
           ]
+        },
+        "promptEngineering": {
+          "title": "Prompt Mühendisliği Danışmanlığı",
+          "features": [
+            "Özel prompt optimizasyonu",
+            "Aylık prompt incelemeleri ve güncellemeler",
+            "Promptlar için A/B testi",
+            "Performans analiz paneli"
+          ]
+        },
+        "ragMaintenance": {
+          "title": "RAG Sistem Bakımı",
+          "features": [
+            "Vektör veritabanı optimizasyonu",
+            "Doküman işleme pipeline'ı",
+            "Erişim doğruluğu izleme",
+            "Bilgi tabanı güncellemeleri"
+          ]
+        },
+        "aiAgentMonitoring": {
+          "title": "AI Agent İzleme",
+          "features": [
+            "Agent performans takibi",
+            "Konuşma kalite analizi",
+            "Sürekli iyileştirme döngüsü",
+            "Entegrasyon sağlık kontrolleri"
+          ]
         }
       },
       "projects": {
@@ -519,6 +575,76 @@
             "Özel SLA ve premium destek",
             "Kurulum, eğitim ve dokümantasyon",
             "Uzun dönem strateji danışmanlığı"
+          ]
+        },
+        "promptEngineeringProject": {
+          "title": "Prompt Mühendisliği Projesi",
+          "price": "7.500–20.000₺",
+          "features": [
+            "Özel prompt kütüphanesi geliştirme",
+            "Düşünce zinciri optimizasyonu",
+            "Çoklu model prompt stratejileri",
+            "Dokümantasyon ve eğitim"
+          ]
+        },
+        "ragSolution": {
+          "title": "RAG Çözüm Geliştirme",
+          "price": "30.000–70.000₺",
+          "features": [
+            "Vektör veritabanı kurulumu (Pinecone/Weaviate)",
+            "Doküman işleme pipeline'ı",
+            "Semantik arama entegrasyonu",
+            "Özel erişim stratejileri"
+          ]
+        },
+        "aiAgentDevelopment": {
+          "title": "AI Agent Geliştirme",
+          "price": "20.000–50.000₺",
+          "features": [
+            "Çoklu araç agent mimarisi",
+            "Özel aksiyon handler'ları",
+            "Bellek ve bağlam yönetimi",
+            "İnsan-döngüsü iş akışları"
+          ]
+        },
+        "llmFinetuning": {
+          "title": "LLM İnce Ayar Projesi",
+          "price": "37.500–87.500₺",
+          "features": [
+            "Eğitim verisi hazırlama",
+            "Model ince ayarı (GPT/Llama/Mistral)",
+            "Değerlendirme ve kıyaslama",
+            "Dağıtım ve API kurulumu"
+          ]
+        },
+        "computerVision": {
+          "title": "Bilgisayarlı Görü Çözümü",
+          "price": "25.000–62.500₺",
+          "features": [
+            "Nesne algılama ve sınıflandırma",
+            "Görüntü segmentasyon modelleri",
+            "Gerçek zamanlı video işleme",
+            "Edge dağıtım seçenekleri"
+          ]
+        },
+        "conversationalAiProject": {
+          "title": "Konuşma AI Projesi",
+          "price": "20.000–45.000₺",
+          "features": [
+            "Özel chatbot geliştirme",
+            "Çok kanallı entegrasyon",
+            "NLU ve niyet tanıma",
+            "Analitik ve konuşma içgörüleri"
+          ]
+        },
+        "mlopsSetup": {
+          "title": "MLOps Altyapısı",
+          "price": "15.000–37.500₺",
+          "features": [
+            "ML pipeline otomasyonu",
+            "Model versiyonlama ve kayıt",
+            "Otomatik eğitim iş akışları",
+            "İzleme ve uyarı kurulumu"
           ]
         }
       }
@@ -800,6 +926,12 @@
         "partnership": "Ortaklık",
         "other": "Diğer"
       },
+      "phone": "Telefon Numarası (İsteğe Bağlı)",
+      "phonePlaceholder": "Telefon numaranızı girin",
+      "alsoSendWhatsApp": "Daha hızlı yanıt için WhatsApp'a da gönder",
+      "sendViaWhatsApp": "WhatsApp ile Gönder",
+      "newInquiry": "Web Sitesinden Yeni İletişim",
+      "fillAllFields": "WhatsApp ile göndermeden önce lütfen tüm zorunlu alanları doldurun",
       "whatHappensNext": "Sırada Ne Var?",
       "nextStep1": "Mesajınızı 24 saat içinde inceleyeceğiz",
       "nextStep2": "Ekibimiz projenizi tartışmak için sizinle iletişime geçecek",
@@ -1549,6 +1681,322 @@
     }
   },
   "servicePages": {
+    "webDevelopment": {
+      "hero": {
+        "eyebrow": "Dijital Başyapıtlar Yaratıyoruz",
+        "title": "Web",
+        "titleAccent": "Geliştirme",
+        "description": "İşletme büyümenizi destekleyen yüksek performanslı web uygulamaları geliştiriyoruz. Etkileyici açılış sayfalarından karmaşık kurumsal çözümlere kadar, piksel-mükemmel, ölçeklenebilir ve hızlı dijital deneyimler sunuyoruz.",
+        "cta": "Projenizi Başlatın",
+        "secondaryCta": "Portföyü Görün"
+      },
+      "services": {
+        "eyebrow": "Ne İnşa Ediyoruz",
+        "title": "Web Geliştirme",
+        "titleAccent": "Hizmetleri",
+        "subtitle": "Basit web sitelerinden karmaşık web uygulamalarına kadar çalışan çözümler sunuyoruz.",
+        "items": [
+          {
+            "title": "Özel Web Uygulamaları",
+            "description": "React, Next.js ve Vue gibi modern framework'lerle oluşturulmuş özelleştirilmiş çözümler.",
+            "features": ["Tek Sayfa Uygulamaları", "Progresif Web Uygulamaları", "Gerçek Zamanlı Uygulamalar"]
+          },
+          {
+            "title": "E-Ticaret Çözümleri",
+            "description": "Sorunsuz ödeme ve envanter yönetimi ile ölçeklenebilir online mağazalar.",
+            "features": ["Özel Mağazalar", "Ödeme Entegrasyonu", "Envanter Sistemleri"]
+          },
+          {
+            "title": "Kurumsal Portallar",
+            "description": "Dahili operasyonlar ve müşteri yönetimi için güvenli, ölçeklenebilir platformlar.",
+            "features": ["Dashboard Sistemleri", "CRM Entegrasyonu", "Rol Tabanlı Erişim"]
+          },
+          {
+            "title": "API Geliştirme",
+            "description": "Uygulamalarınızı güçlendiren ve üçüncü taraf hizmetlerle entegre olan sağlam API'ler.",
+            "features": ["RESTful API'ler", "GraphQL", "Mikroservisler"]
+          }
+        ]
+      },
+      "process": {
+        "eyebrow": "Nasıl Çalışıyoruz",
+        "title": "Geliştirme",
+        "titleAccent": "Sürecimiz",
+        "subtitle": "Kalite ve zamanında teslimatı garanti eden kanıtlanmış bir metodoloji.",
+        "steps": [
+          {
+            "number": "01",
+            "title": "Keşif",
+            "description": "Hedeflerinizi, hedef kitlenizi ve teknik gereksinimlerinizi anlama."
+          },
+          {
+            "number": "02",
+            "title": "Tasarım",
+            "description": "Kullanıcı merkezli deneyimler için wireframe ve prototipler oluşturma."
+          },
+          {
+            "number": "03",
+            "title": "Geliştirme",
+            "description": "Temiz kod, modern framework'ler ve en iyi uygulamalarla inşa etme."
+          },
+          {
+            "number": "04",
+            "title": "Test",
+            "description": "Performans, güvenlik ve uyumluluk için kapsamlı QA."
+          },
+          {
+            "number": "05",
+            "title": "Yayınlama",
+            "description": "İzleme ve sürekli destek ile sorunsuz dağıtım."
+          }
+        ]
+      },
+      "whyUs": {
+        "eyebrow": "Neden Bizi Seçmelisiniz",
+        "title": "Mühendislik Mükemmelliği",
+        "titleAccent": "Tasarımla Buluşuyor",
+        "subtitle": "Sadece kod yazmıyoruz – kullanıcıların sevdiği dijital deneyimler yaratıyoruz.",
+        "features": [
+          {
+            "title": "Modern Teknoloji Yığını",
+            "description": "React, Next.js, TypeScript ve Node.js gibi en son teknolojileri kullanıyoruz."
+          },
+          {
+            "title": "Performans Öncelikli",
+            "description": "Endüstri standartlarını aşan Core Web Vitals skorları ile hız için optimize edilmiş."
+          },
+          {
+            "title": "Ölçeklenebilir Mimari",
+            "description": "Startup'tan kurumsal ölçeğe kadar işletmenizle büyümek için tasarlanmış."
+          },
+          {
+            "title": "Güvenlik Odaklı",
+            "description": "Endüstri standardı güvenlik uygulamaları ve düzenli güvenlik açığı değerlendirmeleri."
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "Sık Sorulan Sorular",
+        "title": "Merak",
+        "titleAccent": "Edilenler",
+        "items": [
+          {
+            "question": "Hangi teknolojileri kullanıyorsunuz?",
+            "answer": "React, Next.js, TypeScript, Node.js, Python ve AWS ve Vercel gibi bulut platformlarında uzmanız."
+          },
+          {
+            "question": "Tipik bir proje ne kadar sürer?",
+            "answer": "Süre kapsama göre değişir. Basit bir web sitesi 4-6 hafta sürerken, karmaşık uygulamalar 3-6 ay alabilir."
+          },
+          {
+            "question": "Sürekli destek sağlıyor musunuz?",
+            "answer": "Evet, güncellemeler, izleme ve özellik geliştirmeleri dahil bakım paketleri sunuyoruz."
+          },
+          {
+            "question": "Mevcut ekibimizle çalışabilir misiniz?",
+            "answer": "Kesinlikle. İhtiyaçlarınıza göre ekibinizi güçlendirebilir veya bağımsız çalışabiliriz."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Web Projenizi Oluşturmaya Hazır mısınız?",
+        "description": "İşletmeniz için sonuç üreten bir web çözümü oluşturalım.",
+        "primaryCta": "Ücretsiz Teklif Al",
+        "secondaryCta": "Görüşme Planla"
+      }
+    },
+    "mobileDevelopment": {
+      "hero": {
+        "eyebrow": "Performans Gösteren Uygulamalar",
+        "title": "Mobil",
+        "titleAccent": "Uygulama Geliştirme",
+        "description": "Native ve cross-platform uygulamalarla etkileyici mobil deneyimler yaratın. Kullanıcıların sevdiği ve işletmelerin güvendiği iOS ve Android uygulamaları geliştiriyoruz.",
+        "cta": "Uygulamanızı Oluşturun",
+        "secondaryCta": "Portföyü Görün"
+      },
+      "cta": {
+        "title": "Mobile Geçmeye Hazır mısınız?",
+        "description": "Kullanıcılarınızı etkileyen ve işletmenizi büyüten bir mobil uygulama oluşturalım.",
+        "primaryCta": "Uygulama Teklifi Al",
+        "secondaryCta": "Görüşme Planla"
+      }
+    },
+    "aiSolutions": {
+      "hero": {
+        "eyebrow": "Geleceğe Hazır Teknoloji",
+        "title": "Yapay Zeka",
+        "titleAccent": "Çözümleri",
+        "description": "Süreçleri otomatikleştirmek, karar vermeyi geliştirmek ve müşterileriniz için akıllı deneyimler yaratmak için yapay zekanın gücünden yararlanın.",
+        "cta": "AI Yolculuğunu Başlat",
+        "secondaryCta": "Yetenekleri Keşfet"
+      },
+      "cta": {
+        "title": "AI ile Dönüşüme Hazır mısınız?",
+        "description": "Ölçülebilir sonuçlar üreten AI çözümleri uygulamak için bizimle ortak olun.",
+        "primaryCta": "AI Değerlendirmesi Al",
+        "secondaryCta": "Danışmanlık Randevusu"
+      }
+    },
+    "dataAnalytics": {
+      "hero": {
+        "eyebrow": "Veriye Dayalı Kararlar",
+        "title": "Veri",
+        "titleAccent": "Analitiği",
+        "description": "Ham veriyi stratejik içgörülere dönüştürün. Analitik çözümlerimiz işletmenizi daha iyi anlamanıza ve büyümeyi yönlendiren bilinçli kararlar vermenize yardımcı olur.",
+        "cta": "Verilerinizin Kilidini Açın",
+        "secondaryCta": "Dashboard'ları Görün"
+      },
+      "cta": {
+        "title": "Verilerinizden Yararlanmaya Hazır mısınız?",
+        "description": "Eyleme dönüştürülebilir içgörüler ortaya çıkaran analitik çözümler oluşturalım.",
+        "primaryCta": "Veri Değerlendirmesi Al",
+        "secondaryCta": "Örnekleri Görün"
+      }
+    },
+    "pythonAutomation": {
+      "hero": {
+        "eyebrow": "Operasyonları Düzenleyin",
+        "title": "Python",
+        "titleAccent": "Otomasyonu",
+        "description": "Özel Python otomasyon çözümleri ile tekrarlayan görevleri ortadan kaldırın ve verimliliği artırın. Veri işlemeden iş akışı otomasyonuna kadar sizin için çalışan sistemler oluşturuyoruz.",
+        "cta": "İşinizi Otomatikleştirin",
+        "secondaryCta": "Örnekleri Görün"
+      },
+      "cta": {
+        "title": "Otomatikleştirmeye Hazır mısınız?",
+        "description": "Zaman kazandıran ve hataları azaltan otomasyon çözümleri oluşturalım.",
+        "primaryCta": "Otomasyon Teklifi Al",
+        "secondaryCta": "Demo Planla"
+      }
+    },
+    "cybersecurity": {
+      "hero": {
+        "eyebrow": "Dijital Varlıklarınızı Koruyun",
+        "title": "Siber",
+        "titleAccent": "Güvenlik",
+        "description": "Kapsamlı siber güvenlik çözümleri ile işletmenizi dijital tehditlerden koruyun. Güvenlik açığı değerlendirmesinden olay müdahalesine kadar, dijital varlıklarınızı güvende tutarız.",
+        "cta": "Güvenliğinizi Sağlayın",
+        "secondaryCta": "Değerlendirme Alın"
+      },
+      "cta": {
+        "title": "Güvenliği Artırmaya Hazır mısınız?",
+        "description": "Gelişen tehditlere karşı koruma sağlayan güvenlik çözümleri uygulayalım.",
+        "primaryCta": "Güvenlik Değerlendirmesi Al",
+        "secondaryCta": "Danışmanlık Randevusu"
+      }
+    },
+    "digitalMarketing": {
+      "hero": {
+        "eyebrow": "Varlığınızı Büyütün",
+        "title": "Dijital",
+        "titleAccent": "Pazarlama",
+        "description": "Veriye dayalı dijital pazarlama stratejileri ile hedef kitlenize ulaşın. SEO'dan ücretli reklamlara kadar, online varlığınızı büyütmenize ve dönüşümleri artırmanıza yardımcı oluyoruz.",
+        "cta": "İşletmenizi Büyütün",
+        "secondaryCta": "Sonuçları Görün"
+      },
+      "cta": {
+        "title": "Online Büyümeye Hazır mısınız?",
+        "description": "Sonuç üreten bir dijital pazarlama stratejisi oluşturalım.",
+        "primaryCta": "Pazarlama Planı Al",
+        "secondaryCta": "Vaka Çalışmalarını Görün"
+      }
+    },
+    "uiUxDesign": {
+      "hero": {
+        "eyebrow": "Dönüştüren Tasarım",
+        "title": "UI/UX",
+        "titleAccent": "Tasarım",
+        "description": "Kullanıcıların sevdiği sezgisel, güzel arayüzler yaratın. Tasarım ekibimiz olağanüstü dijital deneyimler sunmak için estetiği işlevsellikle birleştirir.",
+        "cta": "Tasarım Projesini Başlat",
+        "secondaryCta": "Portföyü Görün"
+      },
+      "cta": {
+        "title": "Harika Tasarıma Hazır mısınız?",
+        "description": "Kullanıcıları memnun eden ve iş sonuçları üreten arayüzler oluşturalım.",
+        "primaryCta": "Tasarım Teklifi Al",
+        "secondaryCta": "Çalışmalarımızı Görün"
+      }
+    },
+    "eCommerce": {
+      "hero": {
+        "eyebrow": "Online Satış Gücü",
+        "title": "E-Ticaret",
+        "titleAccent": "Çözümleri",
+        "description": "Satışlarınızı artıran güçlü e-ticaret platformları oluşturuyoruz. Özel mağazalardan pazar yerlerine kadar, dönüşüm için optimize edilmiş çözümler sunuyoruz.",
+        "cta": "Mağazanızı Oluşturun",
+        "secondaryCta": "Portföyü Görün"
+      },
+      "cta": {
+        "title": "Online Satışa Hazır mısınız?",
+        "description": "Satışlarınızı artıran bir e-ticaret platformu oluşturalım.",
+        "primaryCta": "E-Ticaret Teklifi Al",
+        "secondaryCta": "Demo Görün"
+      }
+    },
+    "devopsCloud": {
+      "hero": {
+        "eyebrow": "Bulut Altyapısı",
+        "title": "DevOps &",
+        "titleAccent": "Cloud",
+        "description": "Modern DevOps uygulamaları ve bulut altyapısı ile yazılım teslimatınızı hızlandırın. CI/CD pipeline'larından Kubernetes orkestrasyonuna kadar, işe yarayan sistemler oluşturuyoruz.",
+        "cta": "Cloud'a Geçin",
+        "secondaryCta": "Mimariyi Görün"
+      },
+      "cta": {
+        "title": "Altyapınızı Modernize Etmeye Hazır mısınız?",
+        "description": "Ekibinizi güçlendiren ve teslimatı hızlandıran DevOps çözümleri uygulayalım.",
+        "primaryCta": "DevOps Değerlendirmesi Al",
+        "secondaryCta": "Teknik Danışmanlık"
+      }
+    },
+    "apiDevelopment": {
+      "hero": {
+        "eyebrow": "Her Şeyi Bağlayın",
+        "title": "API",
+        "titleAccent": "Geliştirme",
+        "description": "Uygulamalarınızı güçlendiren ve sistemlerinizi bağlayan sağlam API'ler oluşturun. Geliştiricilerin kullanmayı sevdiği ölçeklenebilir, güvenli ve iyi belgelenmiş API'ler yaratıyoruz.",
+        "cta": "API'nizi Oluşturun",
+        "secondaryCta": "Dokümantasyonu Görün"
+      },
+      "cta": {
+        "title": "Bağlanmaya Hazır mısınız?",
+        "description": "Dijital ekosisteninizi güçlendiren API'ler oluşturalım.",
+        "primaryCta": "API Teklifi Al",
+        "secondaryCta": "Teknik Danışmanlık"
+      }
+    },
+    "machineLearning": {
+      "hero": {
+        "eyebrow": "Akıllı Çözümler",
+        "title": "Makine",
+        "titleAccent": "Öğrenimi",
+        "description": "Özel makine öğrenimi çözümleri ile verilerinizi eyleme dönüştürülebilir içgörülere dönüştürün. Tahmine dayalı analitikten bilgisayar görüşüne kadar, gerçek iş değeri üreten AI sistemleri oluşturuyoruz.",
+        "cta": "AI Çözümlerini Keşfet",
+        "secondaryCta": "Vaka Çalışmalarını Görün"
+      },
+      "cta": {
+        "title": "AI'dan Yararlanmaya Hazır mısınız?",
+        "description": "İş operasyonlarınızı dönüştüren akıllı sistemler oluşturalım.",
+        "primaryCta": "AI Danışmanlığı Al",
+        "secondaryCta": "ML Projelerini Görün"
+      }
+    },
+    "conversationalAi": {
+      "hero": {
+        "eyebrow": "Akıllı Etkileşimler",
+        "title": "Konuşma",
+        "titleAccent": "Yapay Zekası",
+        "description": "Müşterilerinizle 7/24 iletişim kuran akıllı chatbot'lar ve sesli asistanlar oluşturun. Doğal dil anlama yetenekleri ile olağanüstü müşteri deneyimleri sunun.",
+        "cta": "Chatbot Oluşturun",
+        "secondaryCta": "Demo Görün"
+      },
+      "cta": {
+        "title": "Akıllı Etkileşime Hazır mısınız?",
+        "description": "Müşterilerinizi memnun eden konuşma AI çözümleri oluşturalım.",
+        "primaryCta": "AI Teklifi Al",
+        "secondaryCta": "Danışmanlık Randevusu"
+      }
+    },
     "promptEngineering": {
       "hero": {
         "eyebrow": "LLM Optimizasyonu",

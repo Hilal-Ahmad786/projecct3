@@ -54,6 +54,35 @@
     "language": "Language",
     "menu": "Menu"
   },
+  "megaMenu": {
+    "webDesign": "Web & Design",
+    "aiMl": "AI & Machine Learning",
+    "mobile": "Mobile",
+    "automation": "Automation & DevOps",
+    "marketing": "Marketing & Analytics",
+    "viewAll": "View All Services",
+    "services": {
+      "web-development": "Web Development",
+      "e-commerce": "E-Commerce",
+      "api-development": "API Development",
+      "ui-ux-design": "UI/UX Design",
+      "mobile-development": "Mobile Development",
+      "ai-solutions": "AI Solutions",
+      "machine-learning": "Machine Learning",
+      "conversational-ai": "Conversational AI",
+      "computer-vision": "Computer Vision",
+      "llm-finetuning": "LLM Fine-tuning",
+      "prompt-engineering": "Prompt Engineering",
+      "ai-agents": "AI Agents",
+      "rag-solutions": "RAG Solutions",
+      "python-automation": "Python Automation",
+      "devops-cloud": "DevOps & Cloud",
+      "mlops-deployment": "MLOps Deployment",
+      "digital-marketing": "Digital Marketing",
+      "data-analytics": "Data Analytics",
+      "cybersecurity": "Cybersecurity"
+    }
+  },
   "hero": {
     "eyebrow": "Digital Solutions",
     "title": "Modern",
@@ -448,6 +477,33 @@
             "API endpoint management",
             "24/7 uptime SLA"
           ]
+        },
+        "promptEngineering": {
+          "title": "Prompt Engineering Retainer",
+          "features": [
+            "Custom prompt optimization",
+            "Monthly prompt reviews & updates",
+            "A/B testing for prompts",
+            "Performance analytics dashboard"
+          ]
+        },
+        "ragMaintenance": {
+          "title": "RAG System Maintenance",
+          "features": [
+            "Vector database optimization",
+            "Document ingestion pipeline",
+            "Retrieval accuracy monitoring",
+            "Knowledge base updates"
+          ]
+        },
+        "aiAgentMonitoring": {
+          "title": "AI Agent Monitoring",
+          "features": [
+            "Agent performance tracking",
+            "Conversation quality analysis",
+            "Continuous improvement cycle",
+            "Integration health checks"
+          ]
         }
       },
       "projects": {
@@ -519,6 +575,76 @@
             "Custom SLA & premium support",
             "Setup, training & documentation",
             "Long-term strategy consulting"
+          ]
+        },
+        "promptEngineeringProject": {
+          "title": "Prompt Engineering Project",
+          "price": "$3,000–$8,000",
+          "features": [
+            "Custom prompt library development",
+            "Chain-of-thought optimization",
+            "Multi-model prompt strategies",
+            "Documentation & training"
+          ]
+        },
+        "ragSolution": {
+          "title": "RAG Solution Development",
+          "price": "$12,000–$28,000",
+          "features": [
+            "Vector database setup (Pinecone/Weaviate)",
+            "Document processing pipeline",
+            "Semantic search integration",
+            "Custom retrieval strategies"
+          ]
+        },
+        "aiAgentDevelopment": {
+          "title": "AI Agent Development",
+          "price": "$8,000–$20,000",
+          "features": [
+            "Multi-tool agent architecture",
+            "Custom action handlers",
+            "Memory & context management",
+            "Human-in-the-loop workflows"
+          ]
+        },
+        "llmFinetuning": {
+          "title": "LLM Fine-tuning Project",
+          "price": "$15,000–$35,000",
+          "features": [
+            "Training data preparation",
+            "Model fine-tuning (GPT/Llama/Mistral)",
+            "Evaluation & benchmarking",
+            "Deployment & API setup"
+          ]
+        },
+        "computerVision": {
+          "title": "Computer Vision Solution",
+          "price": "$10,000–$25,000",
+          "features": [
+            "Object detection & classification",
+            "Image segmentation models",
+            "Real-time video processing",
+            "Edge deployment options"
+          ]
+        },
+        "conversationalAiProject": {
+          "title": "Conversational AI Project",
+          "price": "$8,000–$18,000",
+          "features": [
+            "Custom chatbot development",
+            "Multi-channel integration",
+            "NLU & intent recognition",
+            "Analytics & conversation insights"
+          ]
+        },
+        "mlopsSetup": {
+          "title": "MLOps Infrastructure",
+          "price": "$6,000–$15,000",
+          "features": [
+            "ML pipeline automation",
+            "Model versioning & registry",
+            "Automated training workflows",
+            "Monitoring & alerting setup"
           ]
         }
       }
@@ -800,6 +926,12 @@
         "partnership": "Partnership",
         "other": "Other"
       },
+      "phone": "Phone Number (Optional)",
+      "phonePlaceholder": "Enter your phone number",
+      "alsoSendWhatsApp": "Also send to WhatsApp for faster response",
+      "sendViaWhatsApp": "Send via WhatsApp",
+      "newInquiry": "New Inquiry from Website",
+      "fillAllFields": "Please fill in all required fields before sending via WhatsApp",
       "whatHappensNext": "What Happens Next?",
       "nextStep1": "We'll review your message within 24 hours",
       "nextStep2": "Our team will reach out to discuss your project",

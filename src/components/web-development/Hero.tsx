@@ -1,6 +1,7 @@
 'use client';
 
 import { ServicePageHero } from '@/components/services';
+import { WebDevAnimation } from '@/components/animations/service-animations';
 
 export default function Hero() {
   return (
@@ -9,6 +10,7 @@ export default function Hero() {
       accentColor="gray"
       ctaHref="/contact"
       secondaryCtaHref="/services/web-development/portfolio"
+      AnimationComponent={WebDevAnimation}
     />
   );
 }
