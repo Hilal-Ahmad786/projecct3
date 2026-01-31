@@ -1488,32 +1488,86 @@
     "crimson": "Kırmızı Buton"
   },
   "forms": {
-    "placeholders": {
-      "name": "Adınızı girin",
-      "email": "E-posta adresinizi girin",
-      "phone": "Telefon numaranızı girin",
-      "message": "Mesajınızı yazın",
-      "subject": "Konu seçin",
-      "company": "Şirket adınızı girin"
-    },
-    "labels": {
-      "firstName": "Ad",
-      "lastName": "Soyad",
-      "fullName": "Ad Soyad",
-      "email": "E-posta",
-      "phone": "Telefon",
-      "company": "Şirket",
-      "subject": "Konu",
-      "message": "Mesaj",
-      "budget": "Bütçe",
-      "timeline": "Zaman Çizelgesi"
-    },
-    "errors": {
-      "required": "Bu alan zorunludur",
-      "invalidEmail": "Geçersiz e-posta adresi",
-      "invalidPhone": "Geçersiz telefon numarası",
-      "tooShort": "Çok kısa",
-      "tooLong": "Çok uzun"
+    "projectRequest": {
+      "title": "Projenizi Anlatın",
+      "step": "Adım",
+      "of": "/",
+      "steps": {
+        "step1": "İletişim Bilgileri",
+        "step2": "Proje Türü",
+        "step3": "Proje Detayları",
+        "step4": "Teknik Gereksinimler",
+        "step5": "Bütçe ve Zaman"
+      },
+      "fields": {
+        "name": "Ad Soyad",
+        "email": "E-posta Adresi",
+        "phone": "Telefon Numarası",
+        "company": "Şirket Adı",
+        "website": "Web Sitesi URL",
+        "serviceType": "Hizmet Türü",
+        "projectTitle": "Proje Başlığı",
+        "description": "Proje Açıklaması",
+        "goals": "Proje Hedefleri",
+        "targetAudience": "Hedef Kitle",
+        "techPreferences": "Teknoloji Tercihleri",
+        "integrations": "Gerekli Entegrasyonlar",
+        "performanceReqs": "Performans Gereksinimleri",
+        "budgetRange": "Bütçe Aralığı",
+        "timeline": "Zaman Çizelgesi",
+        "urgencyLevel": "Aciliyet Düzeyi",
+        "preferredStartDate": "Tercih Edilen Başlangıç Tarihi",
+        "additionalNotes": "Ek Notlar",
+        "attachments": "Proje Ekleri (İsteğe Bağlı)"
+      },
+      "hints": {
+        "attachments": "RFP belgeleri, maketler, tel çerçeveler veya referans materyalleri yükleyin"
+      },
+      "placeholders": {
+        "name": "Adınızı ve soyadınızı girin",
+        "email": "siz@sirket.com",
+        "phone": "+90 (555) 000-0000",
+        "company": "Şirketinizin adı",
+        "selectService": "Bir hizmet seçin",
+        "projectTitle": "Projenize bir isim verin",
+        "description": "Projenizi detaylı bir şekilde açıklayın (en az 50 karakter)",
+        "goals": "Bu projeyle neyi başarmak istiyorsunuz?",
+        "targetAudience": "Hedef kitleniz kim?",
+        "techPreferences": "Tercih ettiğiniz teknolojiler var mı? (örn. React, Python, AWS)",
+        "integrations": "Entegre edilmesi gereken sistemler (örn. CRM, ödeme sistemleri)",
+        "performanceReqs": "Özel performans gereksinimleri? (örn. yüklenme süresi, eşzamanlı kullanıcılar)",
+        "additionalNotes": "Paylaşmak istediğiniz diğer bilgiler"
+      },
+      "budgetOptions": {
+        "small": "₺100,000 - ₺300,000",
+        "medium": "₺300,000 - ₺1,000,000",
+        "large": "₺1,000,000 - ₺3,000,000",
+        "enterprise": "₺3,000,000+",
+        "custom": "Özel Bütçe"
+      },
+      "timelineOptions": {
+        "urgent": "1 aydan az",
+        "standard": "1-3 ay",
+        "flexible": "3-6 ay",
+        "longTerm": "6+ ay"
+      },
+      "urgencyOptions": {
+        "low": "Düşük - Esnek zamanlama",
+        "normal": "Normal - Standart öncelik",
+        "high": "Yüksek - Yakında ilgi gerekiyor",
+        "critical": "Kritik - Acil gereksinim"
+      },
+      "next": "İleri",
+      "previous": "Geri",
+      "cancel": "İptal",
+      "submit": "Talebi Gönder",
+      "submitting": "Gönderiliyor...",
+      "close": "Kapat",
+      "successTitle": "Talep Gönderildi!",
+      "successMessage": "Proje talebiniz için teşekkür ederiz. Ekibimiz gereksinimlerinizi inceleyecek ve 24 saat içinde size dönüş yapacaktır.",
+      "draftFound": "Kaydedilmemiş bir taslağınız var. Devam etmek ister misiniz?",
+      "discard": "Sil",
+      "restore": "Geri Yükle"
     }
   },
   "navigation": {
@@ -1597,404 +1651,398 @@
       "support": "Merhaba! Projem için teknik desteğe ihtiyacım var. Yardımcı olabilir misiniz?"
     }
   },
-  "forms": {
-    "projectRequest": {
-      "title": "Projenizi Anlatın",
-      "step": "Adım",
-      "of": "/",
-      "steps": {
-        "step1": "İletişim Bilgileri",
-        "step2": "Proje Türü",
-        "step3": "Proje Detayları",
-        "step4": "Teknik Gereksinimler",
-        "step5": "Bütçe ve Zaman"
-      },
-      "fields": {
-        "name": "Ad Soyad",
-        "email": "E-posta Adresi",
-        "phone": "Telefon Numarası",
-        "company": "Şirket Adı",
-        "website": "Web Sitesi URL",
-        "serviceType": "Hizmet Türü",
-        "projectTitle": "Proje Başlığı",
-        "description": "Proje Açıklaması",
-        "goals": "Proje Hedefleri",
-        "targetAudience": "Hedef Kitle",
-        "techPreferences": "Teknoloji Tercihleri",
-        "integrations": "Gerekli Entegrasyonlar",
-        "performanceReqs": "Performans Gereksinimleri",
-        "budgetRange": "Bütçe Aralığı",
-        "timeline": "Zaman Çizelgesi",
-        "urgencyLevel": "Aciliyet Düzeyi",
-        "preferredStartDate": "Tercih Edilen Başlangıç Tarihi",
-        "additionalNotes": "Ek Notlar",
-        "attachments": "Proje Ekleri (İsteğe Bağlı)"
-      },
-      "hints": {
-        "attachments": "RFP belgeleri, maketler, tel çerçeveler veya referans materyalleri yükleyin"
-      },
-      "placeholders": {
-        "name": "Adınızı ve soyadınızı girin",
-        "email": "siz@sirket.com",
-        "phone": "+90 (555) 000-0000",
-        "company": "Şirketinizin adı",
-        "selectService": "Bir hizmet seçin",
-        "projectTitle": "Projenize bir isim verin",
-        "description": "Projenizi detaylı bir şekilde açıklayın (en az 50 karakter)",
-        "goals": "Bu projeyle neyi başarmak istiyorsunuz?",
-        "targetAudience": "Hedef kitleniz kim?",
-        "techPreferences": "Tercih ettiğiniz teknolojiler var mı? (örn. React, Python, AWS)",
-        "integrations": "Entegre edilmesi gereken sistemler (örn. CRM, ödeme sistemleri)",
-        "performanceReqs": "Özel performans gereksinimleri? (örn. yüklenme süresi, eşzamanlı kullanıcılar)",
-        "additionalNotes": "Paylaşmak istediğiniz diğer bilgiler"
-      },
-      "budgetOptions": {
-        "small": "₺100,000 - ₺300,000",
-        "medium": "₺300,000 - ₺1,000,000",
-        "large": "₺1,000,000 - ₺3,000,000",
-        "enterprise": "₺3,000,000+",
-        "custom": "Özel Bütçe"
-      },
-      "timelineOptions": {
-        "urgent": "1 aydan az",
-        "standard": "1-3 ay",
-        "flexible": "3-6 ay",
-        "longTerm": "6+ ay"
-      },
-      "urgencyOptions": {
-        "low": "Düşük - Esnek zamanlama",
-        "normal": "Normal - Standart öncelik",
-        "high": "Yüksek - Yakında ilgi gerekiyor",
-        "critical": "Kritik - Acil gereksinim"
-      },
-      "next": "İleri",
-      "previous": "Geri",
-      "cancel": "İptal",
-      "submit": "Talebi Gönder",
-      "submitting": "Gönderiliyor...",
-      "close": "Kapat",
-      "successTitle": "Talep Gönderildi!",
-      "successMessage": "Proje talebiniz için teşekkür ederiz. Ekibimiz gereksinimlerinizi inceleyecek ve 24 saat içinde size dönüş yapacaktır.",
-      "draftFound": "Kaydedilmemiş bir taslağınız var. Devam etmek ister misiniz?",
-      "discard": "Sil",
-      "restore": "Geri Yükle"
-    }
-  },
   "servicePages": {
     "webDevelopment": {
       "hero": {
-        "eyebrow": "Dijital Başyapıtlar Yaratıyoruz",
-        "title": "Web",
-        "titleAccent": "Geliştirme",
-        "description": "İşletme büyümenizi destekleyen yüksek performanslı web uygulamaları geliştiriyoruz. Etkileyici açılış sayfalarından karmaşık kurumsal çözümlere kadar, piksel-mükemmel, ölçeklenebilir ve hızlı dijital deneyimler sunuyoruz.",
-        "cta": "Projenizi Başlatın",
-        "secondaryCta": "Portföyü Görün"
+        "eyebrow": "Dijital Saheserler Yaratiyoruz",
+        "title": "Web Gelistirme",
+        "titleAccent": "Mukemmeligi",
+        "description": "Is buyumesini hizlandiran yuksek performansli web uygulamalari insa ediyoruz. Etkileyici landing page'lerden karmasik kurumsal cozumlere kadar, ekibimiz mukemmel, olceklenebilir ve son derece hizli dijital deneyimler sunuyor.",
+        "cta": "Projenizi Baslatin",
+        "secondaryCta": "Portfoyu Goruntule"
       },
       "services": {
-        "eyebrow": "Ne İnşa Ediyoruz",
-        "title": "Web Geliştirme",
+        "eyebrow": "Neler Insa Ediyoruz",
+        "title": "Web Gelistirme",
         "titleAccent": "Hizmetleri",
-        "subtitle": "Basit web sitelerinden karmaşık web uygulamalarına kadar çalışan çözümler sunuyoruz.",
+        "subtitle": "Basit web sitelerinden karmasik web uygulamalarina kadar etkili cozumler sunuyoruz.",
         "items": [
           {
-            "title": "Özel Web Uygulamaları",
-            "description": "React, Next.js ve Vue gibi modern framework'lerle oluşturulmuş özelleştirilmiş çözümler.",
-            "features": ["Tek Sayfa Uygulamaları", "Progresif Web Uygulamaları", "Gerçek Zamanlı Uygulamalar"]
+            "title": "Ozel Web Uygulamalari",
+            "description": "React, Next.js ve Vue gibi modern framework'lerle insa edilmis, ihtiyaca ozel cozumler.",
+            "features": [
+              "Single Page Applications",
+              "Progressive Web Apps",
+              "Anlik Uygulamalar"
+            ]
           },
           {
-            "title": "E-Ticaret Çözümleri",
-            "description": "Sorunsuz ödeme ve envanter yönetimi ile ölçeklenebilir online mağazalar.",
-            "features": ["Özel Mağazalar", "Ödeme Entegrasyonu", "Envanter Sistemleri"]
+            "title": "E-Ticaret Cozumleri",
+            "description": "Sorunsuz odeme ve entegre envanter yonetimiyle olceklenebilir online magazalar.",
+            "features": [
+              "Ozel Magaza Arayuzleri",
+              "Odeme Entegrasyonu",
+              "Envanter Sistemleri"
+            ]
           },
           {
             "title": "Kurumsal Portallar",
-            "description": "Dahili operasyonlar ve müşteri yönetimi için güvenli, ölçeklenebilir platformlar.",
-            "features": ["Dashboard Sistemleri", "CRM Entegrasyonu", "Rol Tabanlı Erişim"]
+            "description": "Dahili operasyonlar ve musteri yonetimi icin guvenli, olceklenebilir platformlar.",
+            "features": [
+              "Kontrol Paneli Sistemleri",
+              "CRM Entegrasyonu",
+              "Rol Tabanli Erisim"
+            ]
           },
           {
-            "title": "API Geliştirme",
-            "description": "Uygulamalarınızı güçlendiren ve üçüncü taraf hizmetlerle entegre olan sağlam API'ler.",
-            "features": ["RESTful API'ler", "GraphQL", "Mikroservisler"]
+            "title": "API Gelistirme",
+            "description": "Uygulamalarinizi calistiran ve harici hizmetlerle entegre olan saglam API'ler.",
+            "features": [
+              "RESTful APIs",
+              "GraphQL",
+              "Microservices"
+            ]
           }
         ]
       },
       "process": {
-        "eyebrow": "Nasıl Çalışıyoruz",
-        "title": "Geliştirme",
-        "titleAccent": "Sürecimiz",
-        "subtitle": "Kalite ve zamanında teslimatı garanti eden kanıtlanmış bir metodoloji.",
+        "eyebrow": "Nasil Calisiyoruz",
+        "title": "Gelistirme",
+        "titleAccent": "Metodolojisi",
+        "subtitle": "Kaliteyi ve zamaninda teslimi garanti eden kanitlanmis bir metodoloji.",
         "steps": [
           {
             "number": "01",
-            "title": "Keşif",
+            "title": "Kesif",
             "description": "Hedeflerinizi, hedef kitlenizi ve teknik gereksinimlerinizi anlama."
           },
           {
             "number": "02",
-            "title": "Tasarım",
-            "description": "Kullanıcı merkezli deneyimler için wireframe ve prototipler oluşturma."
+            "title": "Tasarim",
+            "description": "Kullanici odakli deneyimler icin wireframe'ler ve prototiplerin olusturulmasi."
           },
           {
             "number": "03",
-            "title": "Geliştirme",
-            "description": "Temiz kod, modern framework'ler ve en iyi uygulamalarla inşa etme."
+            "title": "Gelistirme",
+            "description": "Temiz kod, modern framework'ler ve en iyi uygulamalarla insa etme."
           },
           {
             "number": "04",
             "title": "Test",
-            "description": "Performans, güvenlik ve uyumluluk için kapsamlı QA."
+            "description": "Performans, guvenlik ve uyumlulugun saglanmasi icin kapsamli kalite guvencesi."
           },
           {
             "number": "05",
-            "title": "Yayınlama",
-            "description": "İzleme ve sürekli destek ile sorunsuz dağıtım."
+            "title": "Lansman",
+            "description": "Izleme ve surekli destekle sorunsuz deployment."
           }
         ]
       },
       "whyUs": {
-        "eyebrow": "Neden Bizi Seçmelisiniz",
-        "title": "Mühendislik Mükemmelliği",
-        "titleAccent": "Tasarımla Buluşuyor",
-        "subtitle": "Sadece kod yazmıyoruz – kullanıcıların sevdiği dijital deneyimler yaratıyoruz.",
+        "eyebrow": "Neden Biz",
+        "title": "Muhendislik Mukemmelligi",
+        "titleAccent": "Tasarimla Bulusuyor",
+        "subtitle": "Sadece kod yazmiyoruz - kullanicilarin sevdigi dijital deneyimler yaratiyoruz.",
         "features": [
           {
-            "title": "Modern Teknoloji Yığını",
-            "description": "React, Next.js, TypeScript ve Node.js gibi en son teknolojileri kullanıyoruz."
+            "title": "Modern Teknolojiler",
+            "description": "React, Next.js, TypeScript ve Node.js gibi en son teknolojileri kullaniyoruz."
           },
           {
-            "title": "Performans Öncelikli",
-            "description": "Endüstri standartlarını aşan Core Web Vitals skorları ile hız için optimize edilmiş."
+            "title": "Performans Oncelikli",
+            "description": "Sektör standartlarini asan Core Web Vitals puanlariyla hiz icin optimize edilmis."
           },
           {
-            "title": "Ölçeklenebilir Mimari",
-            "description": "Startup'tan kurumsal ölçeğe kadar işletmenizle büyümek için tasarlanmış."
+            "title": "Olceklenebilir Mimari",
+            "description": "Startup'lardan kurumsal sirketlere kadar isletmenizle birlikte buyumek icin insa edilmis."
           },
           {
-            "title": "Güvenlik Odaklı",
-            "description": "Endüstri standardı güvenlik uygulamaları ve düzenli güvenlik açığı değerlendirmeleri."
+            "title": "Guvenlik Odakli",
+            "description": "Sektör standardi guvenlik uygulamalari ve duzenli guvenlik acigi degerlendirmeleri."
           }
         ]
       },
       "faq": {
-        "eyebrow": "Sık Sorulan Sorular",
-        "title": "Merak",
-        "titleAccent": "Edilenler",
+        "eyebrow": "Sikca Sorulan Sorular",
+        "title": "Sikca Sorulan",
+        "titleAccent": "Sorular",
         "items": [
           {
-            "question": "Hangi teknolojileri kullanıyorsunuz?",
-            "answer": "React, Next.js, TypeScript, Node.js, Python ve AWS ve Vercel gibi bulut platformlarında uzmanız."
+            "question": "Hangi teknolojileri kullaniyorsunuz?",
+            "answer": "React, Next.js, TypeScript, Node.js, Python ve AWS ile Vercel gibi cloud platformlarinda uzmaniz."
           },
           {
-            "question": "Tipik bir proje ne kadar sürer?",
-            "answer": "Süre kapsama göre değişir. Basit bir web sitesi 4-6 hafta sürerken, karmaşık uygulamalar 3-6 ay alabilir."
+            "question": "Tipik bir proje ne kadar surer?",
+            "answer": "Zaman cizelgesi kapsama gore degisir. Basit bir web sitesi 4 ila 6 hafta surer, karmasik uygulamalar ise 3 ila 6 ay arasinda tamamlanabilir."
           },
           {
-            "question": "Sürekli destek sağlıyor musunuz?",
-            "answer": "Evet, güncellemeler, izleme ve özellik geliştirmeleri dahil bakım paketleri sunuyoruz."
+            "question": "Surekli destek sagliyor musunuz?",
+            "answer": "Evet, guncellemeler, izleme ve ozellik iyilestirmelerini kapsayan bakim paketleri sunuyoruz."
           },
           {
-            "question": "Mevcut ekibimizle çalışabilir misiniz?",
-            "answer": "Kesinlikle. İhtiyaçlarınıza göre ekibinizi güçlendirebilir veya bağımsız çalışabiliriz."
+            "question": "Mevcut ekibimizle calisabilir misiniz?",
+            "answer": "Kesinlikle. Ihtiyaclariniza gore ekibinizi guclendirebilir veya bagimsiz olarak calisabiliriz."
           }
         ]
       },
       "cta": {
-        "title": "Web Projenizi Oluşturmaya Hazır mısınız?",
-        "description": "İşletmeniz için sonuç üreten bir web çözümü oluşturalım.",
-        "primaryCta": "Ücretsiz Teklif Al",
-        "secondaryCta": "Görüşme Planla"
+        "title": "Dijital Projenizi Insa Etmeye Hazir misiniz?",
+        "description": "Isletmeniz icin somut sonuclar saglayan bir dijital cozum olusturalim.",
+        "primaryCta": "Ucretsiz Teklif Alin",
+        "secondaryCta": "Gorusme Ayarlayin"
+      },
+      "testimonials": {
+        "eyebrow": "Musteri Basarisi",
+        "title": "Musterilerimiz",
+        "titleAccent": "Ne Diyor",
+        "items": [
+          {
+            "quote": "PakSoft eski web sitemizi modern, yuksek donusumlu bir platforma donusturdu. Potansiyel musterilerimiz %300 artti.",
+            "author": "Sarah Johnson",
+            "role": "CEO, TechStart Inc."
+          },
+          {
+            "quote": "Ekip beklentilerimizin otesinde teslimat yapti. Detaylara olan ozenleri ve teknik uzmanliklari essiz.",
+            "author": "Michael Chen",
+            "role": "CTO, DataFlow Systems"
+          }
+        ]
       }
     },
     "mobileDevelopment": {
       "hero": {
-        "eyebrow": "Performans Gösteren Uygulamalar",
-        "title": "Mobil",
-        "titleAccent": "Uygulama Geliştirme",
-        "description": "Native ve cross-platform uygulamalarla etkileyici mobil deneyimler yaratın. Kullanıcıların sevdiği ve işletmelerin güvendiği iOS ve Android uygulamaları geliştiriyoruz.",
-        "cta": "Uygulamanızı Oluşturun",
-        "secondaryCta": "Portföyü Görün"
+        "eyebrow": "Yuksek Performansli Uygulamalar",
+        "title": "Mobil Uygulama",
+        "titleAccent": "Gelistirme",
+        "description": "Native ve cross-platform uygulamalarla etkileyici mobil deneyimler olusturun. Kullanicilarin sevdigi ve isletmelerin guvendigi iOS ve Android uygulamalari insa ediyoruz.",
+        "cta": "Uygulamanizi Insa Edin",
+        "secondaryCta": "Portfoyu Goruntule"
       },
       "cta": {
-        "title": "Mobile Geçmeye Hazır mısınız?",
-        "description": "Kullanıcılarınızı etkileyen ve işletmenizi büyüten bir mobil uygulama oluşturalım.",
-        "primaryCta": "Uygulama Teklifi Al",
-        "secondaryCta": "Görüşme Planla"
+        "title": "Mobilde Var Olmaya Hazir misiniz?",
+        "description": "Kullanicilarinizi cezbeden ve isletmenizi buyuten bir uygulama olusturalim.",
+        "primaryCta": "Uygulama Teklifi Alin",
+        "secondaryCta": "Gorusme Ayarlayin"
       }
     },
     "aiSolutions": {
       "hero": {
-        "eyebrow": "Geleceğe Hazır Teknoloji",
+        "eyebrow": "Gelecegin Teknolojileri",
         "title": "Yapay Zeka",
-        "titleAccent": "Çözümleri",
-        "description": "Süreçleri otomatikleştirmek, karar vermeyi geliştirmek ve müşterileriniz için akıllı deneyimler yaratmak için yapay zekanın gücünden yararlanın.",
-        "cta": "AI Yolculuğunu Başlat",
-        "secondaryCta": "Yetenekleri Keşfet"
+        "titleAccent": "Cozumleri",
+        "description": "Surecleri otomatiklestirmek, karar vermeyi gelistirmek ve musterileriniz icin akilli deneyimler olusturmak icin yapay zekanin gucunden yararlanin.",
+        "cta": "AI Yolculugunuza Baslayin",
+        "secondaryCta": "Yetenekleri Kesfedin"
       },
       "cta": {
-        "title": "AI ile Dönüşüme Hazır mısınız?",
-        "description": "Ölçülebilir sonuçlar üreten AI çözümleri uygulamak için bizimle ortak olun.",
-        "primaryCta": "AI Değerlendirmesi Al",
-        "secondaryCta": "Danışmanlık Randevusu"
+        "title": "AI ile Donusume Hazir misiniz?",
+        "description": "Olculebilir sonuclar saglayan yapay zeka cozumlerini uygulamak icin ortaginiz olun.",
+        "primaryCta": "AI Degerlendirmesi Alin",
+        "secondaryCta": "Danismanlik Randevusu Alin"
       }
     },
     "dataAnalytics": {
       "hero": {
-        "eyebrow": "Veriye Dayalı Kararlar",
+        "eyebrow": "Veriye Dayali Kararlar",
         "title": "Veri",
-        "titleAccent": "Analitiği",
-        "description": "Ham veriyi stratejik içgörülere dönüştürün. Analitik çözümlerimiz işletmenizi daha iyi anlamanıza ve büyümeyi yönlendiren bilinçli kararlar vermenize yardımcı olur.",
-        "cta": "Verilerinizin Kilidini Açın",
-        "secondaryCta": "Dashboard'ları Görün"
+        "titleAccent": "Analitigi",
+        "description": "Ham verileri stratejik icgorulere donusturun. Analitik cozumlerimiz isletmenizi daha derinlemesine anlamaniza ve buyumeyi hizlandiran bilinçli kararlar almaniza yardimci olur.",
+        "cta": "Verilerinizin Gucunu Aciga Cikarin",
+        "secondaryCta": "Kontrol Panellerini Goruntule"
       },
       "cta": {
-        "title": "Verilerinizden Yararlanmaya Hazır mısınız?",
-        "description": "Eyleme dönüştürülebilir içgörüler ortaya çıkaran analitik çözümler oluşturalım.",
-        "primaryCta": "Veri Değerlendirmesi Al",
-        "secondaryCta": "Örnekleri Görün"
+        "title": "Verilerinizden Deger Yaratmaya Hazir misiniz?",
+        "description": "Eyleme donusturulebilir icgoruleri ortaya cikaran analitik cozumler insa edelim.",
+        "primaryCta": "Veri Degerlendirmesi Alin",
+        "secondaryCta": "Ornekleri Goruntule"
       }
     },
     "pythonAutomation": {
       "hero": {
-        "eyebrow": "Operasyonları Düzenleyin",
+        "eyebrow": "Surecleri Basitlestirin",
         "title": "Python",
         "titleAccent": "Otomasyonu",
-        "description": "Özel Python otomasyon çözümleri ile tekrarlayan görevleri ortadan kaldırın ve verimliliği artırın. Veri işlemeden iş akışı otomasyonuna kadar sizin için çalışan sistemler oluşturuyoruz.",
-        "cta": "İşinizi Otomatikleştirin",
-        "secondaryCta": "Örnekleri Görün"
+        "description": "Ozel Python otomasyon cozumleriyle tekrarlayan gorevlerden kurtulun ve verimliligi artirin. Veri islemeden is akisi otomasyonuna kadar, sizin icin calisan sistemler insa ediyoruz.",
+        "cta": "Isletmenizi Otomatiklestirin",
+        "secondaryCta": "Ornekleri Goruntule"
       },
       "cta": {
-        "title": "Otomatikleştirmeye Hazır mısınız?",
-        "description": "Zaman kazandıran ve hataları azaltan otomasyon çözümleri oluşturalım.",
-        "primaryCta": "Otomasyon Teklifi Al",
-        "secondaryCta": "Demo Planla"
+        "title": "Otomasyona Hazir misiniz?",
+        "description": "Zaman kazandiran ve hatalari azaltan otomasyon cozumleri insa edelim.",
+        "primaryCta": "Otomasyon Teklifi Alin",
+        "secondaryCta": "Demo Randevusu Alin"
       }
     },
     "cybersecurity": {
       "hero": {
-        "eyebrow": "Dijital Varlıklarınızı Koruyun",
+        "eyebrow": "Isletmenizi Koruyun",
         "title": "Siber",
-        "titleAccent": "Güvenlik",
-        "description": "Kapsamlı siber güvenlik çözümleri ile işletmenizi dijital tehditlerden koruyun. Güvenlik açığı değerlendirmesinden olay müdahalesine kadar, dijital varlıklarınızı güvende tutarız.",
-        "cta": "Güvenliğinizi Sağlayın",
-        "secondaryCta": "Değerlendirme Alın"
+        "titleAccent": "Guvenlik",
+        "description": "Kapsamli guvenlik cozumleriyle dijital varliklarinizi koruyun. Penetrasyon testlerinden uyumluluga kadar, gelisen tehditlere karsi korunmaniza yardimci oluyoruz.",
+        "cta": "Sistemlerinizi Guvenli Kilin",
+        "secondaryCta": "Guvenlik Degerlendirmesi"
       },
       "cta": {
-        "title": "Güvenliği Artırmaya Hazır mısınız?",
-        "description": "Gelişen tehditlere karşı koruma sağlayan güvenlik çözümleri uygulayalım.",
-        "primaryCta": "Güvenlik Değerlendirmesi Al",
-        "secondaryCta": "Danışmanlık Randevusu"
+        "title": "Isletmenizi Guvencelemeye Hazir misiniz?",
+        "description": "Isletmenizi siber tehditlere karsi koruyalim.",
+        "primaryCta": "Guvenlik Denetimi Alin",
+        "secondaryCta": "Guvenlik Hizmetlerini Goruntule"
       }
     },
     "digitalMarketing": {
       "hero": {
-        "eyebrow": "Varlığınızı Büyütün",
+        "eyebrow": "Dijital Varliginizi Buyutun",
         "title": "Dijital",
         "titleAccent": "Pazarlama",
-        "description": "Veriye dayalı dijital pazarlama stratejileri ile hedef kitlenize ulaşın. SEO'dan ücretli reklamlara kadar, online varlığınızı büyütmenize ve dönüşümleri artırmanıza yardımcı oluyoruz.",
-        "cta": "İşletmenizi Büyütün",
-        "secondaryCta": "Sonuçları Görün"
+        "description": "Veriye dayali dijital pazarlama stratejileriyle hedef kitlenize ulasin. SEO'dan ucretli reklamlara kadar, dijital varliginizi buyutmenize ve donusumleri artirmaniza yardimci oluyoruz.",
+        "cta": "Isletmenizi Buyutun",
+        "secondaryCta": "Sonuclari Goruntule"
       },
       "cta": {
-        "title": "Online Büyümeye Hazır mısınız?",
-        "description": "Sonuç üreten bir dijital pazarlama stratejisi oluşturalım.",
-        "primaryCta": "Pazarlama Planı Al",
-        "secondaryCta": "Vaka Çalışmalarını Görün"
+        "title": "Dijital Buyumeye Hazir misiniz?",
+        "description": "Somut sonuclar saglayan bir dijital pazarlama stratejisi olusturalim.",
+        "primaryCta": "Pazarlama Plani Alin",
+        "secondaryCta": "Vaka Calismalarini Goruntule"
       }
     },
     "uiUxDesign": {
       "hero": {
-        "eyebrow": "Dönüştüren Tasarım",
+        "eyebrow": "Donusum Saglayan Tasarim",
         "title": "UI/UX",
-        "titleAccent": "Tasarım",
-        "description": "Kullanıcıların sevdiği sezgisel, güzel arayüzler yaratın. Tasarım ekibimiz olağanüstü dijital deneyimler sunmak için estetiği işlevsellikle birleştirir.",
-        "cta": "Tasarım Projesini Başlat",
-        "secondaryCta": "Portföyü Görün"
+        "titleAccent": "Tasarim",
+        "description": "Kullanicilarin sevecegi sezgisel ve gorsel olarak etkileyici arayuzler olusturun. Tasarim ekibimiz olaganustu dijital deneyimler sunmak icin estetigi islevsellikle birlestirir.",
+        "cta": "Tasarim Projenizi Baslatin",
+        "secondaryCta": "Portfoyu Goruntule"
       },
       "cta": {
-        "title": "Harika Tasarıma Hazır mısınız?",
-        "description": "Kullanıcıları memnun eden ve iş sonuçları üreten arayüzler oluşturalım.",
-        "primaryCta": "Tasarım Teklifi Al",
-        "secondaryCta": "Çalışmalarımızı Görün"
+        "title": "Ustun Tasarima Hazir misiniz?",
+        "description": "Kullanicilari memnun eden ve is sonuclari saglayan arayuzler olusturalim.",
+        "primaryCta": "Tasarim Teklifi Alin",
+        "secondaryCta": "Calismalari Goruntule"
       }
     },
     "eCommerce": {
       "hero": {
-        "eyebrow": "Online Satış Gücü",
+        "eyebrow": "Online Satis Yapin",
         "title": "E-Ticaret",
-        "titleAccent": "Çözümleri",
-        "description": "Satışlarınızı artıran güçlü e-ticaret platformları oluşturuyoruz. Özel mağazalardan pazar yerlerine kadar, dönüşüm için optimize edilmiş çözümler sunuyoruz.",
-        "cta": "Mağazanızı Oluşturun",
-        "secondaryCta": "Portföyü Görün"
+        "titleAccent": "Cozumleri",
+        "description": "Kapsamli e-ticaret cozumleriyle online magazanizi baslatın ve buyutun. Ozel magaza arayuzlerinden kurumsal platformlara kadar, donusum saglayan magazalar insa ediyoruz.",
+        "cta": "Magazanizi Baslatın",
+        "secondaryCta": "Magazalari Goruntule"
       },
       "cta": {
-        "title": "Online Satışa Hazır mısınız?",
-        "description": "Satışlarınızı artıran bir e-ticaret platformu oluşturalım.",
-        "primaryCta": "E-Ticaret Teklifi Al",
-        "secondaryCta": "Demo Görün"
+        "title": "Online Satisa Hazir misiniz?",
+        "description": "Isletmenizi buyutecek bir e-ticaret platformu insa edelim.",
+        "primaryCta": "Magaza Teklifi Alin",
+        "secondaryCta": "Basari Hikayelerini Goruntule"
       }
     },
     "devopsCloud": {
       "hero": {
-        "eyebrow": "Bulut Altyapısı",
-        "title": "DevOps &",
-        "titleAccent": "Cloud",
-        "description": "Modern DevOps uygulamaları ve bulut altyapısı ile yazılım teslimatınızı hızlandırın. CI/CD pipeline'larından Kubernetes orkestrasyonuna kadar, işe yarayan sistemler oluşturuyoruz.",
-        "cta": "Cloud'a Geçin",
-        "secondaryCta": "Mimariyi Görün"
+        "eyebrow": "Guvenle Olceklendirin",
+        "title": "DevOps",
+        "titleAccent": "ve Cloud",
+        "description": "Modern DevOps uygulamalari ve cloud cozumleriyle altyapinizi optimize edin. Daha hizli deploy etmenize, verimli olceklendirmenize ve guvenilirligi korumaniza yardimci oluyoruz.",
+        "cta": "Altyapinizi Optimize Edin",
+        "secondaryCta": "Mimariyi Goruntule"
       },
       "cta": {
-        "title": "Altyapınızı Modernize Etmeye Hazır mısınız?",
-        "description": "Ekibinizi güçlendiren ve teslimatı hızlandıran DevOps çözümleri uygulayalım.",
-        "primaryCta": "DevOps Değerlendirmesi Al",
-        "secondaryCta": "Teknik Danışmanlık"
+        "title": "Olceklendirmeye Hazir misiniz?",
+        "description": "Buyumenizi destekleyen bir altyapi insa edelim.",
+        "primaryCta": "DevOps Degerlendirmesi Alin",
+        "secondaryCta": "Mimari Incelemesi"
       }
     },
     "apiDevelopment": {
       "hero": {
-        "eyebrow": "Her Şeyi Bağlayın",
+        "eyebrow": "Her Seyi Baglayın",
         "title": "API",
-        "titleAccent": "Geliştirme",
-        "description": "Uygulamalarınızı güçlendiren ve sistemlerinizi bağlayan sağlam API'ler oluşturun. Geliştiricilerin kullanmayı sevdiği ölçeklenebilir, güvenli ve iyi belgelenmiş API'ler yaratıyoruz.",
-        "cta": "API'nizi Oluşturun",
-        "secondaryCta": "Dokümantasyonu Görün"
+        "titleAccent": "Gelistirme",
+        "description": "Uygulamalarinizi calistiran ve sistemlerinizi birbirine baglayan saglam API'ler insa edin. Geliştiricilerin sevecegi olceklenebilir, guvenli ve mukemmel dokumante edilmis API'ler olusturuyoruz.",
+        "cta": "API'nizi Insa Edin",
+        "secondaryCta": "Dokumantasyonu Goruntule"
       },
       "cta": {
-        "title": "Bağlanmaya Hazır mısınız?",
-        "description": "Dijital ekosisteninizi güçlendiren API'ler oluşturalım.",
-        "primaryCta": "API Teklifi Al",
-        "secondaryCta": "Teknik Danışmanlık"
+        "title": "Baglanti Kurmaya Hazir misiniz?",
+        "description": "Dijital ekosisteminizi calistiran API'ler insa edelim.",
+        "primaryCta": "API Teklifi Alin",
+        "secondaryCta": "Teknik Danismanlik"
       }
     },
     "machineLearning": {
       "hero": {
-        "eyebrow": "Akıllı Çözümler",
-        "title": "Makine",
-        "titleAccent": "Öğrenimi",
-        "description": "Özel makine öğrenimi çözümleri ile verilerinizi eyleme dönüştürülebilir içgörülere dönüştürün. Tahmine dayalı analitikten bilgisayar görüşüne kadar, gerçek iş değeri üreten AI sistemleri oluşturuyoruz.",
-        "cta": "AI Çözümlerini Keşfet",
-        "secondaryCta": "Vaka Çalışmalarını Görün"
+        "eyebrow": "Akilli Cozumler",
+        "title": "Machine Learning",
+        "titleAccent": "ve Inovasyon",
+        "description": "Ozel Machine Learning cozumleriyle verilerinizi eyleme donusturulebilir icgorulere donusturun. Tahmine dayali analizlerden bilgisayarli gormeye kadar, isletmeniz icin gercek deger yaratan AI sistemleri insa ediyoruz.",
+        "cta": "AI Cozumlerini Kesfedin",
+        "secondaryCta": "Vaka Calismalarini Goruntule"
       },
       "cta": {
-        "title": "AI'dan Yararlanmaya Hazır mısınız?",
-        "description": "İş operasyonlarınızı dönüştüren akıllı sistemler oluşturalım.",
-        "primaryCta": "AI Danışmanlığı Al",
-        "secondaryCta": "ML Projelerini Görün"
+        "title": "AI'dan Yararlanmaya Hazir misiniz?",
+        "description": "Is operasyonlarinizi donusturecek akilli sistemler insa edelim.",
+        "primaryCta": "AI Danismanligi Alin",
+        "secondaryCta": "ML Projelerini Goruntule"
+      },
+      "services": {
+        "eyebrow": "ML Yetenekleri",
+        "title": "Machine Learning",
+        "titleAccent": "Hizmetleri",
+        "subtitle": "Is ihtiyaclariniza ozel olarak tasarlanmis kapsamli Machine Learning cozumleri.",
+        "items": [
+          {
+            "title": "Tahmine Dayali Analitik",
+            "description": "Veri odakli modeller kullanarak trendleri, musteri davranislarini ve is sonuclarini tahmin edin.",
+            "features": [
+              "Talep Tahmini",
+              "Musteri Kaybi Tahmini",
+              "Risk Degerlendirmesi"
+            ]
+          },
+          {
+            "title": "Dogal Dil Isleme",
+            "description": "Duygu analizi, varlik tanima ve daha fazlasiyla metin verilerinden icgoru elde edin.",
+            "features": [
+              "Metin Siniflandirma",
+              "Duygu Analizi",
+              "Adlandirilmis Varlik Tanima"
+            ]
+          },
+          {
+            "title": "Bilgisayarli Gorme",
+            "description": "Goruntu siniflandirma, nesne algilama ve video analizi icin gorsel yapay zeka.",
+            "features": [
+              "Goruntu Tanima",
+              "Nesne Algilama",
+              "Video Analitigi"
+            ]
+          },
+          {
+            "title": "Oneri Sistemleri",
+            "description": "Etkilesimi ve donusum oranlarini artiran kisisellestirilmis oneriler.",
+            "features": [
+              "Urun Onerileri",
+              "Icerik Kisileştirme",
+              "Kullanici Eslestirme"
+            ]
+          }
+        ]
       }
     },
     "conversationalAi": {
       "hero": {
-        "eyebrow": "Akıllı Etkileşimler",
-        "title": "Konuşma",
-        "titleAccent": "Yapay Zekası",
-        "description": "Müşterilerinizle 7/24 iletişim kuran akıllı chatbot'lar ve sesli asistanlar oluşturun. Doğal dil anlama yetenekleri ile olağanüstü müşteri deneyimleri sunun.",
-        "cta": "Chatbot Oluşturun",
-        "secondaryCta": "Demo Görün"
+        "eyebrow": "Akilli Konusmalar",
+        "title": "Konusma Tabanli",
+        "titleAccent": "Yapay Zeka",
+        "description": "Musterilerinizi anlayan ve onlarla etkilesime gecen akilli chatbot'lar ve sanal asistanlar insa edin. En son NLP ve LLM teknolojileriyle desteklenmektedir.",
+        "cta": "Chatbot'unuzu Insa Edin",
+        "secondaryCta": "Demolari Izleyin"
       },
       "cta": {
-        "title": "Akıllı Etkileşime Hazır mısınız?",
-        "description": "Müşterilerinizi memnun eden konuşma AI çözümleri oluşturalım.",
-        "primaryCta": "AI Teklifi Al",
-        "secondaryCta": "Danışmanlık Randevusu"
+        "title": "Akilli Konusmalara Hazir misiniz?",
+        "description": "Musteri deneyimini donusturecek AI asistanlar insa edelim.",
+        "primaryCta": "Chatbot Teklifi Alin",
+        "secondaryCta": "Demo Randevusu Alin"
       }
     },
     "promptEngineering": {
@@ -2092,6 +2140,22 @@
         "primaryCta": "İnce Ayar Teklifi Alın",
         "secondaryCta": "Teknik Değerlendirme"
       }
+    },
+    "llmIntegration": {
+      "hero": {
+        "eyebrow": "Ileri Duzey AI",
+        "title": "LLM",
+        "titleAccent": "Entegrasyonu",
+        "description": "Claude, GPT-4 ve acik kaynakli alternatifler gibi guclu dil modellerini uygulamalariniza entegre edin. En son AI teknolojilerinden yararlanmaniza yardimci oluyoruz.",
+        "cta": "AI Entegre Edin",
+        "secondaryCta": "Kullanim Senaryolarini Goruntule"
+      },
+      "cta": {
+        "title": "LLM Entegrasyonuna Hazir misiniz?",
+        "description": "Buyuk dil modellerinin gucunu uygulamalariniza tasiyalim.",
+        "primaryCta": "Entegrasyon Teklifi Alin",
+        "secondaryCta": "Teknik Danismanlik"
+      }
     }
   },
   "cta": {
@@ -2109,6 +2173,1770 @@
       "bannerTitle": "Aklınızda Bir Proje mi Var?",
       "bannerDescription": "Ücretsiz danışmanlık ve kişiselleştirilmiş teklif alın.",
       "startProject": "Projenizi Başlatın"
+    }
+  },
+  "aiServices": {
+    "title": "Yapay Zeka Hizmetleri",
+    "subtitle": "Modern isletmeler icin kapsamli yapay zeka cozumleri",
+    "description": "Conversational AI'dan Computer Vision'a kadar ileri duzey ve yenilikci yapay zeka cozumleri sunuyoruz.",
+    "aiMaintenance": {
+      "subtitle": "Surekli Yapay Zeka Destegi",
+      "title": "Yapay Zeka Sistem Bakimi",
+      "description": "Kapsamli bakim hizmetlerimiz ile yapay zeka sistemlerinizin en yuksek performansta calismasini saglayin."
+    },
+    "aiReadinessAudit": {
+      "subtitle": "Degerlendirme ve Strateji",
+      "title": "Yapay Zeka Hazirlik Degerlendirmesi",
+      "description": "Kapsamli degerlendirme cercevemiz ile kurumunuzun yapay zeka benimseme hazirligini olcun."
+    },
+    "aiSearch": {
+      "subtitle": "Akilli Arama",
+      "title": "Yapay Zeka Destekli Arama",
+      "description": "Kullanici niyetini anlayan yapay zeka destekli semantik arama motoru ile arama deneyiminizi donusturun."
+    },
+    "aiSecurityReview": {
+      "subtitle": "Yapay Zeka Guvenligi ve Emniyeti",
+      "title": "Yapay Zeka Guvenlik Incelemesi",
+      "description": "Kapsamli guvenlik incelemelerimiz ile yapay zeka sistemlerinizin guvenli, etik ve standartlara uygun oldugunu dogrulayin."
+    },
+    "voiceAi": {
+      "subtitle": "Ses Teknolojileri",
+      "title": "Sesli Yapay Zeka",
+      "description": "Dogal konusmalari anlayan akilli ses arayuzleri ve konusma tanima sistemleri gelistirin."
+    }
+  },
+  "aiSolutions": {
+    "hero": {
+      "eyebrow": "Yapay Zeka ve Makine Ogrenimi",
+      "title": "Yapay Zeka ile",
+      "titleAccent": "Akilli Cozumler",
+      "description": "Isletmenizi donusturmek icin yapay zekanin gucunden yararlanin. Tahmine dayali analizlerden Conversational AI'ya kadar verimliligi artiran ve yeni firsatlar yaratan ozel cozumler gelistiriyoruz.",
+      "startProject": "Yapay Zeka Projenizi Baslatin",
+      "viewPortfolio": "Yapay Zeka Portfolyomuzu Inceleyin"
+    },
+    "process": {
+      "steps": [
+        {
+          "number": "01",
+          "title": "Veri Analizi",
+          "description": "Veri ortaminizi analiz ediyor ve is hedeflerinizle uyumlu yapay zeka firsatlarini belirliyoruz."
+        },
+        {
+          "number": "02",
+          "title": "Model Gelistirme",
+          "description": "Uzmanlarimiz, ozel kullanim senaryolariniz ve verileriniz icin uygun makine ogrenimi modelleri olusturup egitir."
+        },
+        {
+          "number": "03",
+          "title": "Dagitim ve Olceklendirme",
+          "description": "Izleme, optimizasyon ve surekli iyilestirme surecleri ile sorunsuz dagitim."
+        }
+      ]
+    },
+    "services": {
+      "title": "Yapay Zeka Yetenekleri",
+      "subtitle": "Stratejiden dagitima kadar, isletmenize rekabet avantaji saglayacak sekilde tasarlanmis kapsamli yapay zeka cozumleri.",
+      "items": [
+        {
+          "title": "Conversational AI ve Chatbot'lar",
+          "description": "Musteri etkilesimini artiran ve teknik destegi otomatiklestiren, dogal dil isleme destekli akilli sanal asistanlar."
+        },
+        {
+          "title": "Tahmine Dayali Analitik",
+          "description": "Trendleri ongoren, operasyonlari optimize eden ve stratejik karar almayi destekleyen veriye dayali icerikler."
+        },
+        {
+          "title": "Ozel Makine Ogrenimi Modelleri",
+          "description": "Belirli is uygulamalari icin verileriniz uzerinde egitilmis, ozel tasarim makine ogrenimi cozumleri."
+        },
+        {
+          "title": "Computer Vision",
+          "description": "Cesitli sektorler icin goruntu tanima, nesne tespiti ve gorsel denetim sistemleri."
+        },
+        {
+          "title": "Belge Isleme",
+          "description": "Gelismis OCR ve dogal dil isleme teknolojileri kullanarak belgelerin akilli bir sekilde cikarilmasi, siniflandirilmasi ve islenmesi."
+        },
+        {
+          "title": "Yapay Zeka Entegrasyonu",
+          "description": "Yapay zeka yeteneklerini mevcut sistemlerinize ve is akislariniza sorunsuz bir sekilde entegre edin."
+        }
+      ]
+    },
+    "whyUs": {
+      "eyebrow": "Neden Biz",
+      "title": "Yapay Zekada Guvenilir Uzmanlik",
+      "description": "Ekibimiz, gercekten etkili yapay zeka cozumleri sunmak icin derin teknik bilgiyi pratik is anlayisi ile birlestirmektedir.",
+      "reasons": [
+        {
+          "title": "Kanitlanmis Basari Gecmisi",
+          "description": "Olculebilir yatirim getirisi ile birden fazla sektorde basarili yapay zeka cozumu dagitimi."
+        },
+        {
+          "title": "Ozel Tasarim Cozumler",
+          "description": "Herkese uyan tek bir cozum yoktur. Ihtiyaclariniza ve verilerinize ozel yapay zeka gelistiriyoruz."
+        },
+        {
+          "title": "Etik Yapay Zeka",
+          "description": "Seffaflik ve adalet ilkeleriyle sorumlu yapay zeka gelistirmeye oncelik veriyoruz."
+        },
+        {
+          "title": "Bastan Sona Kapsamli Destek",
+          "description": "Fikirden dagitima ve otesine kadar yapay zeka yolculugunuzda yaninizdayiz."
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Basari Hikayeleri",
+      "title": "Yapay Zekanin Etkisi",
+      "items": [
+        {
+          "quote": "Akilli chatbot'lari destek taleplerimizi %60 azaltirken musteri memnuniyeti puanlarini da iyilestirdi.",
+          "author": "James Wilson",
+          "role": "CTO, ServicePro"
+        },
+        {
+          "quote": "Tahmine dayali analitik panosu envanter kararlarimizi tamamen degistirdi. Israf %40 azaldi.",
+          "author": "Maria Santos",
+          "role": "Operasyon Muduru, RetailMax"
+        },
+        {
+          "quote": "Computer Vision sistemleri, manuel denetimimizin kaciirdigi hatalari tespit ediyor. Kalite sikayetleri %80 azaldi.",
+          "author": "Thomas Anderson",
+          "role": "Fabrika Muduru, ManufactureCo"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Yapay Zeka Hakkinda Sorular",
+      "items": [
+        {
+          "question": "Yapay zeka ile baslamak icin ne kadar veriye ihtiyacim var?",
+          "answer": "Kullanim senaryosuna bagli olarak degisir. Bazi cozumler yuzlerce ornek ile calisirken, diger cozumler binlerce ornek gerektirebilir. Kesfif asamasinda verilerinizi degerlendiriyor ve gerektiginde veri zenginlestirme stratejileri dahil olmak uzere en iyi yaklasimi oneriyoruz."
+        },
+        {
+          "question": "Bir yapay zeka cozumu gelistirmek ne kadar surer?",
+          "answer": "Bir kavram kaniti genellikle 4 ila 8 hafta surer. Uretime hazir cozumler, karmasiklik, veri kalitesi ve entegrasyon gereksinimlerine bagli olarak 2 ila 6 ay arasinda degisir. Degeri asama asama sunmak icin cevik metodolojiler kullaniyoruz."
+        },
+        {
+          "question": "Yapay zeka mevcut sistemlerimizle entegre edilebilir mi?",
+          "answer": "Evet. Yapay zeka cozumlerini entegrasyon oncelikli olarak tasarliyoruz; REST API'ler, Webhook'lar ve populer platformlar icin konektor'ler sunuyoruz. Mevcut teknoloji yiginiz ve veri altyapiniz ile calisabiliyoruz."
+        },
+        {
+          "question": "Veri gizliligi ve guvenligi konusunda ne yapiyorsunuz?",
+          "answer": "Veri guvenligi en yuksek onceliktir. Sifreleme ve erisim kontrolleri uyguluyoruz ve cozumleri yerel olarak veya ozel bulut ortamlarinda dagitabiliyoruz. GDPR, HIPAA ve diger uyumluluk gereksinimleri konusunda deneyimimiz bulunmaktadir."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Yapay Zekanin Potansiyelini Acmaya Hazir misiniz?",
+      "description": "Yapay zekanin is sureclerinizi nasil donusturebilecegini ve buyumenizi nasil hizlandiracagini birlikte kesfedelim.",
+      "schedule": "Yapay Zeka Danismanligi Planlayin",
+      "caseStudies": "Yapay Zeka Vaka Calismalarini Inceleyin"
+    }
+  },
+  "dataAnalytics": {
+    "hero": {
+      "eyebrow": "Veri Analitigi Hizmetleri",
+      "title": "Verileri",
+      "titleAccent": "Eyleme Gecirilebilir Icgorulere Donusturun",
+      "description": "Ham verileri stratejik is zekasina donusturen guclu analitik cozumler gelistiriyoruz. Dashboard'lardan tahmine dayali modellere kadar, veriye dayali kararlar almaniza guvenle yardimci oluyoruz.",
+      "startProject": "Analitik Projenizi Baslatin",
+      "viewPortfolio": "Vaka Calismalarini Inceleyin"
+    },
+    "process": {
+      "steps": [
+        {
+          "number": "01",
+          "title": "Veri Toplama",
+          "description": "Birlesik bir veri temeli olusturmak icin veri kaynaklarinizi baglayip entegre ediyoruz."
+        },
+        {
+          "number": "02",
+          "title": "Analiz ve Modelleme",
+          "description": "Gizli kaliplari ve icgoruleri ortaya cikarmak icin gelismis analitik ve makine ogrenimi."
+        },
+        {
+          "number": "03",
+          "title": "Gorsellesteistirme",
+          "description": "Verileri herkesin erisebilir kilmak icin etkilesimli dashboard'lar ve raporlar."
+        }
+      ]
+    },
+    "services": {
+      "title": "Analitik Yetenekleri",
+      "subtitle": "Is verilerinizin tam potansiyelini ortaya cikarmak icin tasarlanmis kapsamli veri analitigi hizmetleri.",
+      "items": [
+        {
+          "title": "Is Zekasi",
+          "description": "Temel performans gostergeleri ve is metrikleri hakkinda anlik gorunurluk saglayan etkilesimli dashboard'lar ve raporlar."
+        },
+        {
+          "title": "Tahmine Dayali Analitik",
+          "description": "Trendleri ongoren, sonuclari tahmin eden ve firsatlari belirleyen makine ogrenimi modelleri."
+        },
+        {
+          "title": "Veri Ambarlari",
+          "description": "Birlesik analiz icin birden fazla kaynaktan verileri bir araya getiren olceklenebilir veri ambari cozumleri."
+        },
+        {
+          "title": "Gelismis Analitik",
+          "description": "Karmasik is sorulari icin istatistiksel analiz, veri madenciligi ve ozel algoritmalar."
+        },
+        {
+          "title": "Bulut Analitigi",
+          "description": "Olceklenebilirlik ve yuksek performans icin AWS, GCP veya Azure uzerinde bulut tabanli analitik platformlari."
+        },
+        {
+          "title": "Ozel Raporlama",
+          "description": "Paydas gereksinimlerine gore tasarlanmis otomatik raporlama ve veri disari aktarim cozumleri."
+        }
+      ]
+    },
+    "whyUs": {
+      "eyebrow": "Neden Biz",
+      "title": "Somut Sonuclar Ureten Veri Uzmanligi",
+      "description": "Analitik ekibimiz, olculebilir sonuclar elde eden icgorular sunmak icin teknik mukemmeliyeti derin is anlayisi ile birlestirmektedir.",
+      "reasons": [
+        {
+          "title": "Stratejik Yaklasim",
+          "description": "Analitigin gercek deger uretmesini saglamak icin yalnizca teknik metriklere degil, is sonuclarina odaklaniyoruz."
+        },
+        {
+          "title": "Kapsamli Uzmanlik",
+          "description": "Veri muhendisliginden gorsellestaistirmeye kadar tum analitik hattini yonetiyoruz."
+        },
+        {
+          "title": "Veri Yonetisimi",
+          "description": "Her cozume entegre edilmis saglam guvenlik, uyumluluk ve veri kalitesi uygulamalari."
+        },
+        {
+          "title": "Hizli Teslimat",
+          "description": "Icgoruleri size daha hizli ulastirmak icin hizli iterasyonlarla cevik metodoloji."
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Musteri Basarilari",
+      "title": "Analitik Etki Hikayeleri",
+      "items": [
+        {
+          "quote": "Dashboard'lari karar alma surecimizi tamamen degistirdi. Artik operasyonlarimizin her yonune anlik erisimimiz var.",
+          "author": "Sarah Mitchell",
+          "role": "Operasyon Direktoru, RetailMax Group"
+        },
+        {
+          "quote": "Olusturduklar tahmine dayali model envanter maliyetlerimizi %28 azaltti. Yatirim getirisi ilk ceyrekte net bir sekilde gorunur oldu.",
+          "author": "Michael Torres",
+          "role": "Tedarik Zinciri Baskan Yardimcisi, LogiFlow Inc."
+        },
+        {
+          "quote": "Sonunda tum verilerimiz tek bir yerde, harika gorsellestaistirmelerle birlikte. Yonetim kurulu toplantilari artik veriye dayali ve verimli.",
+          "author": "Jennifer Wu",
+          "role": "Mali Isler Direktoru, TechStart Ventures"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Sikca Sorulan Sorular",
+      "items": [
+        {
+          "question": "Hangi Business Intelligence araclari ile calisiyorsunuz?",
+          "answer": "Power BI, Tableau, Looker ve Qlik dahil olmak uzere tum buyuk BI platformlarinda deneyimimiz vardir. Ozel ihtiyaclariniza, mevcut altyapiniza ve ekip yeteneklerinize gore en uygun araci oneriyoruz."
+        },
+        {
+          "question": "Tipik bir analitik projesi ne kadar surer?",
+          "answer": "Sure, kapsama gore degisir. Temel bir dashboard cozumu 2 ila 4 hafta surer; veri ambari kurulumu iceren kapsamli kurumsal analitik platformlari ise 2 ila 4 ay surebilir. Kesfif asamasinda detayli zaman cizelgeleri sunuyoruz."
+        },
+        {
+          "question": "Mevcut veri altyapimizla calisabilir misiniz?",
+          "answer": "Kesinlikle. Mevcut veritabanlari, veri ambarlari ve bulut platformlari ile entegre oluyoruz. Mevcut kurulumunuzu optimize edebilir veya faydali olacaksa daha modern bir mimariye gecis konusunda yardimci olabiliriz."
+        },
+        {
+          "question": "Surekli analitik destegi sagliyor musunuz?",
+          "answer": "Evet, dashboard guncellemeleri, veri hatti izleme, performans optimizasyonu ve kullanici destegi iceren bakim paketleri sunuyoruz. Ayrica surekli sozlesme bazinda ozel analitik kaynaklari da saglayabiliyoruz."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Verilerinizin Potansiyelini Acmaya Hazir misiniz?",
+      "description": "Veri analitiginin is sureclerinizi nasil donusturebilecegini ve buyumenizi nasil hizlandiracagini birlikte konusalim.",
+      "schedule": "Analitik Danismanligi Planlayin",
+      "caseStudies": "Analitik Vaka Calismalarini Inceleyin"
+    }
+  },
+  "mobileDevelopment": {
+    "hero": {
+      "eyebrow": "Mobil Uygulama Gelistirme",
+      "title": "Kullanicilarin",
+      "titleAccent": "Sevdigi Uygulamalar",
+      "description": "iOS ve Android icin olaganustu mobil deneyimler olusturun. Fikirden App Store'a kadar, kullanicilari cezbeden ve somut is sonuclari ureten yuksek performansli, goze hitap eden uygulamalar gelistiriyoruz.",
+      "startProject": "Uygulamanizi Baslatin",
+      "viewPortfolio": "Uygulama Portfolyosunu Inceleyin"
+    },
+    "process": {
+      "steps": [
+        {
+          "number": "01",
+          "title": "Tasarim ve Prototipleme",
+          "description": "Gelistirme oncesi konsept dogrulamasi icin kullanici arastirmasi, wireframe'ler ve etkilesimli prototipler."
+        },
+        {
+          "number": "02",
+          "title": "Gelistirme",
+          "description": "Temiz mimari ve kapsamli testlerle cross-platform veya native gelistirme."
+        },
+        {
+          "number": "03",
+          "title": "Lansman ve Buyume",
+          "description": "App Store optimizasyonu, lansman destegi ve kullanici etkilesimini surdurmek icin surekli guncellemeler."
+        }
+      ]
+    },
+    "services": {
+      "title": "Mobil Uzmanlik",
+      "subtitle": "Ilk konseptten surekli bakima ve buyumeye kadar tam kapsamli mobil gelistirme hizmetleri.",
+      "items": [
+        {
+          "title": "Cross-Platform Uygulamalar",
+          "description": "Tek bir kod tabanindan hem iOS hem de Android'de native performans sunan React Native ve Flutter uygulamalari."
+        },
+        {
+          "title": "Native iOS ve Android Uygulamalar",
+          "description": "Maksimum platform entegrasyonu gerektiren uygulamalar icin Swift ve Kotlin ile tam native gelistirme."
+        },
+        {
+          "title": "Push Notification'lar",
+          "description": "Kullanici tutundurma ve donusum oranlarini artiran hedefli ve kisisellestirilmis anlik bildirimlerle kullanicilarla etkilesim kurun."
+        },
+        {
+          "title": "Uygulama Guvenligi",
+          "description": "Guvenli kimlik dogrulama, sifrelenmis depolama ve yaygin mobil guvenlik aciklarina karsi koruma."
+        },
+        {
+          "title": "Bulut Entegrasyonu",
+          "description": "Kullanici tabaninizla birlikte olceklenen backend hizmetleri, gercek zamanli senkronizasyon ve bulut altyapisi."
+        },
+        {
+          "title": "Analitik ve Optimizasyon",
+          "description": "Kullanici davranisini izleme, etkilesim olcme ve uygulama deneyimini surekli iyilestirme."
+        }
+      ]
+    },
+    "whyUs": {
+      "eyebrow": "Neden Biz",
+      "title": "Mobil Gelistirmede Mukemmeliyet",
+      "description": "Kullanicilarin gercekten keyifle kullandigi uygulamalar olusturmak icin teknik uzmanlik ile derin mobil kullanici deneyimi anlayisini birlestiriyoruz.",
+      "reasons": [
+        {
+          "title": "Cross-Platform Uzmanlari",
+          "description": "Native hissiyatla tek kod tabani. Kaliteden odun vermeden zaman ve butce tasarrufu saglayin."
+        },
+        {
+          "title": "Kullanici Deneyimi Oncelikli Yaklasim",
+          "description": "Arastirmaya dayali kararlar ve sezgisel arayuzlerle gercek kullanicilar icin tasarliyoruz."
+        },
+        {
+          "title": "Performans Odaklilik",
+          "description": "Hiz, batarya verimliligi ve akici animasyonlar icin optimize edilmistir."
+        },
+        {
+          "title": "App Store Basarisi",
+          "description": "Gorunurlugu ve indirme sayilarini artiran ASO uzmanligi ve lansman stratejileri."
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Musteri Basarilari",
+      "title": "Uygulamalar Is Basinda",
+      "items": [
+        {
+          "quote": "Fikrimizi ilk ayda 50.000 indirmeye ulasan bir uygulamaya donusturduler. Kullanici geri bildirimleri muhtesemdi.",
+          "author": "Alex Thompson",
+          "role": "Kurucu, FitTrack"
+        },
+        {
+          "quote": "Is uygulamamiz siparis isleme suresini %70 azaltti. Ekibin detaylara gosterdigi ozen buyuk fark yaratti.",
+          "author": "Jennifer Lee",
+          "role": "Operasyon Baskan Yardimcisi, DistributeCo"
+        },
+        {
+          "quote": "Uygulamanin performansi ve tasarimi beklentilerimizi asti. Musterilerimiz artik uygulamayi gercekten keyifle kullaniyor.",
+          "author": "Robert Chen",
+          "role": "Urun Muduru, FinServe"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Mobil Gelistirme Hakkinda Sikca Sorulan Sorular",
+      "items": [
+        {
+          "question": "Native mi yoksa cross-platform uygulama mi gelistirmeliyim?",
+          "answer": "Cogu uygulama icin cross-platform gelistirme (React Native veya Flutter) maliyet, gelistirme hizi ve kalite arasinda en iyi dengeyi saglar. Derin platform entegrasyonu, yogun 3D grafikler veya belirli native API'ler gerektirdiginde native gelistirmeyi oneriyoruz."
+        },
+        {
+          "question": "Bir mobil uygulama gelistirmek ne kadar surer?",
+          "answer": "Bir MVP genellikle 3 ila 4 ay surer. Ozel backend, entegrasyonlar ve gelismis ozellikler iceren daha karmasik uygulamalar 4 ila 8 ay surebilir. Kesfif asamasinda detayli zaman cizelgeleri sunuyoruz."
+        },
+        {
+          "question": "App Store onayi konusunda ne yapiyorsunuz?",
+          "answer": "Hem App Store hem de Play Store icin tum gonderim surecini yonetiyoruz ve kilavuzlara uyumlulugu garanti ediyoruz. Ayrica ASO en iyi uygulamalariyla uygulamanizin kesfedilebilirligini artirmak icin listelemenizi optimize ediyoruz."
+        },
+        {
+          "question": "Lansman sonrasi destek sagliyor musunuz?",
+          "answer": "Evet. Hata duzeltmeleri, isletim sistemi guncellemeleri, performans izleme ve ozellik iyilestirmelerini iceren bakim paketleri sunuyoruz. Uygulamanizin uzun vadeli basarisina kararli bir sekilde bagliyiz."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Uygulamanizi Gelistirmeye Hazir misiniz?",
+      "description": "Kullanicilarinizin sevecegi ve somut is sonuclari uretecek bir mobil deneyim birlikte olusturalim.",
+      "schedule": "Uygulama Danismanligi Planlayin",
+      "caseStudies": "Uygulama Portfolyosunu Inceleyin"
+    }
+  },
+  "pythonAutomation": {
+    "hero": {
+      "eyebrow": "Python Otomasyon Hizmetleri",
+      "title": "Is Akisinizi",
+      "titleAccent": "Otomatiklestirin",
+      "description": "Tekrarlayan gorevleri verimli otomatik sureclere donusturun. Python otomasyon cozumlerimiz zaman kazandirir, hatalari azaltir ve ekibinizin gercekten onemli olan islere odaklanmasini saglar.",
+      "startProject": "Otomasyon Projenizi Baslatin",
+      "viewPortfolio": "Vaka Calismalarini Goruntuleyin"
+    },
+    "process": {
+      "steps": [
+        {
+          "number": "01",
+          "title": "Analiz",
+          "description": "En yuksek yatirim getirisi sunan otomasyon firsatlarini belirlemek icin is akislarinizi analiz ediyoruz."
+        },
+        {
+          "number": "02",
+          "title": "Gelistirme",
+          "description": "En iyi uygulamalara uygun, kapsamli hata yonetimi ve entegre testler iceren ozel Python scriptleri olusturuyoruz."
+        },
+        {
+          "number": "03",
+          "title": "Yayin",
+          "description": "Zamanlama, surekli izleme ve devamli optimizasyon destegi ile sorunsuz yayin sureci."
+        }
+      ]
+    },
+    "services": {
+      "title": "Otomasyon Hizmetleri",
+      "subtitle": "Basit scriptlerden karmasik is akislarina kadar, calisma seklini donusturecek Python otomasyon cozumleri sunuyoruz.",
+      "items": [
+        {
+          "title": "Web Scraping",
+          "description": "Selenium, Beautiful Soup ve Scrapy kullanarak web sitelerinden, API'lerden ve dijital kaynaklardan otomatik veri toplama."
+        },
+        {
+          "title": "Belge Isleme",
+          "description": "PDF olusturma, Excel dosya isleme, belgelerden veri cikarma ve rapor hazirlama otomasyonu."
+        },
+        {
+          "title": "Veri Pipeline Otomasyonu",
+          "description": "ETL surecleri, veri donusumu, veritabani islemleri ve otomatik veri senkronizasyonu."
+        },
+        {
+          "title": "E-posta ve Iletisim Otomasyonu",
+          "description": "Ozel sablonlar kullanarak otomatik e-posta gonderimi, ayrlistirmasi, filtrelemesi ve yanit yonetimi."
+        },
+        {
+          "title": "Is Zekasi",
+          "description": "Bilingli kararlar almak icin otomatik raporlama, KPI takip panelleri ve veri gorsellestirme."
+        },
+        {
+          "title": "Ozel Bot Gelistirme",
+          "description": "Tarayici islemleri, dosya yonetimi ve tekrarlayan is surecleri icin gorev otomasyon botlari."
+        }
+      ]
+    },
+    "whyUs": {
+      "eyebrow": "Neden Bizi Secmelisiniz",
+      "title": "Python Otomasyon Uzmanligi",
+      "description": "Etkili ve olceklenebilir otomasyon cozumleri sunmak icin derin Python uzmanligi ile kapsamli is sureci anlayisini birlestiriyoruz.",
+      "reasons": [
+        {
+          "title": "Hizli Gelistirme",
+          "description": "Fikirden calisan otomasyona hizli teslimat, geri bildirimlerinize dayali surekli iyilestirmeler."
+        },
+        {
+          "title": "Saglam ve Guvenilir",
+          "description": "Kapsamli hata yonetimi, olay kaydi ve yerlesik izleme ile uretim kalitesinde kod."
+        },
+        {
+          "title": "Zaman Tasarrufu",
+          "description": "Otomasyon cozumlerimiz musterilerimize genellikle haftada 10 ila 40 saat arasinda manuel is tasarrufu saglar."
+        },
+        {
+          "title": "Maliyet Etkin",
+          "description": "Otomasyon yatirim getirisi, isgumu ve hata maliyetlerinin azalmasi sayesinde genellikle 2-3 ay icinde gerceklesir."
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Musteri Basarilari",
+      "title": "Otomasyon Sonuclari",
+      "items": [
+        {
+          "quote": "Otomasyon, veri giris suresini %90 oraninda azaltti. 20 saat suren is artik sadece 2 saatte ve cok daha yuksek dogrulukla tamamlaniyor.",
+          "author": "Sarah Mitchell",
+          "role": "Operasyon Muduru, DataCorp"
+        },
+        {
+          "quote": "Olusturdulari web scraping cozumu, manuel olarak toplanmasi imkansiz olan rekabet bilgilerini bize sagliyor.",
+          "author": "Mark Johnson",
+          "role": "Strateji Muduru, RetailPro"
+        },
+        {
+          "quote": "3 gun suren aylik raporlarimiz artik tamamen otomatik. Ekip simdi veri toplamak yerine analize odaklanabiliyor.",
+          "author": "Lisa Chen",
+          "role": "Mali Isler Muduru, TechVentures"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Otomasyon Hakkinda Sikca Sorulan Sorular",
+      "items": [
+        {
+          "question": "Python ile hangi gorevler otomatiklestirilebilir?",
+          "answer": "Neredeyse her tekrarlayan dijital gorev otomatiklestirilebilir: web scraping, veri girisi, dosya isleme, e-posta yonetimi, raporlama, API entegrasyonu ve daha fazlasi. Gorev belirli bir kalip izliyorsa, onu otomatiklestirebiliriz."
+        },
+        {
+          "question": "Bir otomasyon sistemi olusturmak ne kadar surer?",
+          "answer": "Basit otomasyonlar 1-2 haftada tamamlanabilir. Birden fazla sistemi iceren karmasik is akislari genellikle 4-8 hafta surer. Ilk analizden sonra ayrintili zaman cizelgeleri sunuyoruz."
+        },
+        {
+          "question": "Otomasyonu kullanmak icin teknik bilgiye ihtiyacim var mi?",
+          "answer": "Hayir. Basit arayuzler veya tamamen zamanlanmis calisma ile kullanici dostu cozumler tasarliyoruz. Kapsamli dokumantasyon ve entegre egitim dahildir."
+        },
+        {
+          "question": "Bakim ve guncellemeler konusunda ne yapiyorsunuz?",
+          "answer": "Izleme, hata duzeltme ve harici sistemler degistiginde guncelleme iceren bakim paketleri sunuyoruz. Otomasyon cozumlerimiz uzun vadede guvenilir calisacak sekilde insa edilmistir."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Is Akisinizi Otomatiklestirmeye Hazir Misiniz?",
+      "description": "Ekibinizin zamanini alan gorevleri belirleyelim ve onlari verimli otomatik sureclere donusturelim.",
+      "schedule": "Danismanlik Randevusu Alin",
+      "caseStudies": "Vaka Calismalarini Goruntuleyin"
+    }
+  },
+  "machineLearning": {
+    "hero": {
+      "eyebrow": "Machine Learning Hizmetleri",
+      "title": "Akilli Cozumler",
+      "titleAccent": "Machine Learning ile",
+      "description": "Ozel machine learning cozumleri ile verilerinizi eyleme donusturulebilir icgorurlere donusturun. Tahmine dayali analizden bilgisayarli gormeye kadar, gercek is sonuclari ureten ML sistemleri olusturuyoruz.",
+      "startProject": "ML Projenizi Baslatin",
+      "viewPortfolio": "ML Calismalarini Goruntuleyin"
+    },
+    "techStack": {
+      "technologies": [
+        "TensorFlow",
+        "PyTorch",
+        "scikit-learn",
+        "Keras",
+        "OpenCV",
+        "Hugging Face",
+        "MLflow",
+        "Apache Spark",
+        "NumPy",
+        "Pandas",
+        "CUDA",
+        "JAX"
+      ]
+    },
+    "process": {
+      "steps": [
+        {
+          "number": "01",
+          "title": "Veri Kesfi",
+          "description": "Veri ortaminizi analiz ediyor ve is hedeflerinizle uyumlu yuksek etkili ML firsatlarini belirliyoruz."
+        },
+        {
+          "number": "02",
+          "title": "Model Gelistirme",
+          "description": "En son algoritmalar ve framework'ler kullanarak ozel ML modellerini olusturma, egitme ve optimize etme."
+        },
+        {
+          "number": "03",
+          "title": "Yayin ve Olceklendirme",
+          "description": "Izleme, otomatik olceklendirme ve surekli iyilestirme pipeline'lari ile uretim yayini."
+        }
+      ]
+    },
+    "services": {
+      "title": "Machine Learning Yetenekleri",
+      "subtitle": "Stratejiden yayina kadar kapsamli machine learning cozumleri, isletmenize rekabet avantaji saglamak icin tasarlanmistir.",
+      "items": [
+        {
+          "title": "Tahmine Dayali Analiz",
+          "description": "Gelismis istatistiksel modeller ve ML algoritmalari kullanarak trendleri, musteri davranislarini ve piyasa degisikliklerini tahmin edin."
+        },
+        {
+          "title": "Ozel ML Modelleri",
+          "description": "Belirli uygulamalar ve kullanim senaryolari icin verileriniz uzerinde egitilmis, ozel olarak tasarlanmis machine learning cozumleri."
+        },
+        {
+          "title": "Bilgisayarli Gorme",
+          "description": "Goruntu tanima, nesne tespiti, yuz tanima ve otomatik gorsel denetim sistemleri."
+        },
+        {
+          "title": "Dogal Dil Isleme (NLP)",
+          "description": "Iletisimi iyilestirmek icin metin analizi, duygu tespiti, sohbet robotlari ve dil anlama."
+        },
+        {
+          "title": "Oneri Sistemleri",
+          "description": "Etkilesimi ve donusumleri artiran kisisellestirilmis urun, icerik ve hizmet onerileri."
+        },
+        {
+          "title": "Zaman Serisi Tahmini",
+          "description": "Envanter, satis ve kaynak planlamasi icin gecmis verilere dayali gelecek deger tahmini."
+        }
+      ]
+    },
+    "whyUs": {
+      "eyebrow": "Neden Bizi Secmelisiniz",
+      "title": "Guvenebileceginiz ML Uzmanligi",
+      "description": "Ekibimiz, olculebilir sonuclar ureten etkili ML cozumleri sunmak icin derin teknik bilgiyi pratik is anlayisi ile birlestirmektedir.",
+      "reasons": [
+        {
+          "title": "Kanitlanmis Basari Gecmisi",
+          "description": "Olculebilir yatirim getirisi ile birden fazla sektorde basarili ML cozumu yayinlari."
+        },
+        {
+          "title": "Ozel Cozumler",
+          "description": "Hazir cozumler sunmuyoruz. Ihtiyaclariniza ve verilerinize ozel ML cozumleri olusturuyoruz."
+        },
+        {
+          "title": "Etik Yapay Zeka",
+          "description": "Seffaflik, adalet ve aciklanabilirlik ile sorumlu ML gelistirmeye oncelik veriyoruz."
+        },
+        {
+          "title": "Uctan Uca Kapsamli Destek",
+          "description": "Fikirden yayina ve otesine kadar, machine learning yolculugunuzun tamaminda size destek oluyoruz."
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Basari Hikayeleri",
+      "title": "Machine Learning Etkisi",
+      "items": [
+        {
+          "quote": "Ongorucu bakim modelleri ekipman durus suresini %45 oraninda azaltti. Yatirim getirisi ilk ceyrekte acikca goruldu.",
+          "author": "Michael Torres",
+          "role": "Fabrika Muduru, ManufactureTech"
+        },
+        {
+          "quote": "Olusturdulari oneri motoru ortalama siparis degerimizi %35 artirdi. Musteri etkilesimi onemli olcude yukseldi.",
+          "author": "Sarah Kim",
+          "role": "E-Ticaret Baskan Yardimcisi, RetailPlus"
+        },
+        {
+          "quote": "NLP cozumleri belge islemelerimizin %70'ini otomatiklestirdi. Saatler suren islemler artik dakikalar icinde tamamlaniyor.",
+          "author": "David Anderson",
+          "role": "Operasyon Genel Muduru, LegalDocs Inc"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Machine Learning Hakkinda Sikca Sorulan Sorular",
+      "items": [
+        {
+          "question": "Basarili bir ML projesi icin ne kadar veriye ihtiyacim var?",
+          "answer": "Gereken veri miktari kullanim senaryosuna gore onemli olcude degisir. Basit siniflandirma gorevleri yalnizca binlerce ornekle calisabilirken, deep learning modelleri genellikle on binlerce veya milyonlarca veri noktasina ihtiyac duyar. Kesif asamasinda verilerinizi degerlendiriyor ve gerektiginde veri artirma, transfer learning ve sentetik veri uretimi stratejileri oneriyoruz."
+        },
+        {
+          "question": "Bir ML cozumu gelistirmek ne kadar surer?",
+          "answer": "Kavram kaniti genellikle 4-8 hafta surer. Uretime hazir cozumler, karmasiklik, veri kalitesi ve entegrasyon gereksinimlerine bagli olarak 2 ila 6 ay arasinda degisir. Degeri kademeli olarak sunmak icin Agile metodolojileri kullaniyoruz."
+        },
+        {
+          "question": "ML cozumleri mevcut sistemlerimizle entegre edilebilir mi?",
+          "answer": "Kesinlikle. ML cozumlerini entegrasyonu goz onunde bulundurarak tasarliyoruz; REST API'ler, webhook'lar ve yaygin platformlar icin konektorler sunuyoruz. Mevcut teknoloji altyapiniz ve veri ortaminizla uyumlu calisabiliriz."
+        },
+        {
+          "question": "Model dogrulugunu ve adaletini nasil sagliyorsunuz?",
+          "answer": "Capraz dogrulama, A/B testleri ve onyargi tespiti dahil titiz testler uyguluyoruz. Modellerimiz, tutarli ve adil performans saglamak icin cesitli veri alt kumeleri uzerinde kapsamli dogrulamadan gecmektedir."
+        },
+        {
+          "question": "Veri gizliligi ve guvenligi konusunda ne yapiyorsunuz?",
+          "answer": "Veri guvenligi en oncelikli konumuzdur. Depolama ve iletim sirasinda sifreleme, erisim kontrolu ve denetim kaydi uyguluyoruz. Cozumleri yerel olarak veya ozel bulut ortamlarinda yayinlayabiliriz. GDPR, HIPAA ve diger uyumluluk standartlari konusunda deneyimimiz bulunmaktadir."
+        },
+        {
+          "question": "Yayindan sonra surekli destek sunuyor musunuz?",
+          "answer": "Evet, tum paketlerimiz 30 gunluk destek ile kurumsal musteriler icin SLA kapsaminda surekli destege kadar uzanan lansman sonrasi destek icermektedir. Bu; model izleme, performans optimizasyonu, yeniden egitim destegi ve teknik yardimi kapsamaktadir."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Machine Learning Potansiyelini Aciga Cikarmaya Hazir Misiniz?",
+      "description": "Machine learning'in is sureclerinizi nasil donusturebilecegini ve akilli otomasyonu nasil guclendirebilecegini birlikte kesfedelim.",
+      "schedule": "ML Danismanlik Randevusu Alin",
+      "caseStudies": "ML Vaka Calismalarini Goruntuleyin"
+    }
+  },
+  "digitalMarketing": {
+    "hero": {
+      "eyebrow": "Dijital Pazarlama Hizmetleri",
+      "title": "Markanizi Buyutun",
+      "titleAccent": "ve Sonuc Alin",
+      "description": "Gorununurlugunu artiran, kitlenizi cezbeden ve olculebilir yatirim getirisi saglayan veriye dayali dijital pazarlama stratejileri. SEO'dan ucretli reklamlara kadar, pazarinizda one cikmaniza yardimci oluyoruz.",
+      "startProject": "Kampanyanizi Baslatin",
+      "viewPortfolio": "Sonuclari Goruntuleyin"
+    },
+    "process": {
+      "steps": [
+        {
+          "number": "01",
+          "title": "Arastirma ve Denetim",
+          "description": "Buyume firsatlarini belirlemek icin pazarinizi, rakiplerinizi ve kitlenizi analiz ediyoruz."
+        },
+        {
+          "number": "02",
+          "title": "Strateji ve Planlama",
+          "description": "Is hedefleriniz ve butcenizle uyumlu, veriye dayali pazarlama stratejisi."
+        },
+        {
+          "number": "03",
+          "title": "Uygulama ve Optimizasyon",
+          "description": "Maksimum performans icin surekli optimizasyon ile kampanya yayini."
+        }
+      ]
+    },
+    "services": {
+      "title": "Pazarlama Hizmetleri",
+      "subtitle": "Markanizi buyutmek ve donusumleri artirmak icin tasarlanmis kapsamli dijital pazarlama cozumleri.",
+      "items": [
+        {
+          "title": "Arama Motoru Optimizasyonu (SEO)",
+          "description": "Teknik SEO, icerik optimizasyonu ve baglanti olusturma stratejileri ile arama sonuclarinda ust siralara cikma."
+        },
+        {
+          "title": "Ucretli Reklamcilik",
+          "description": "Google Ads, Meta Ads ve programatik reklamcilik uzerinde maksimum reklam harcamasi getirisi (ROAS) saglayan yuksek performansli kampanyalar."
+        },
+        {
+          "title": "E-posta Pazarlamasi",
+          "description": "Potansiyel musterileri besleyen ve donusumleri artiran otomatik e-posta kampanyalari ve bultenler."
+        },
+        {
+          "title": "Analiz ve Raporlama",
+          "description": "Performans takibi ve karar alma icin ozel takip panelleri ile veriye dayali icgoruler."
+        },
+        {
+          "title": "Sosyal Medya Pazarlamasi",
+          "description": "Tum sosyal medya platformlarinda etkilesimli topluluklar olusturma ve marka bilinirligini artirma."
+        },
+        {
+          "title": "Icerik Pazarlamasi",
+          "description": "Hedef kitlenizi ceken, etkilesime geciren ve musteriye donusturen ikna edici icerik stratejisi."
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Musteri Sonuclari",
+      "title": "Pazarlama Basari Hikayeleri",
+      "items": [
+        {
+          "quote": "Organik trafigimiz sadece 6 ayda %300 artti. Uyguladiklari SEO stratejisi son derece etkili oldu.",
+          "author": "Sarah Mitchell",
+          "role": "Pazarlama Muduru, TechFlow Inc"
+        },
+        {
+          "quote": "Ucretli reklam kampanyalari %450 ROAS sagladi. Veriye dayali yaklasimlari buyuk bir fark yaratti.",
+          "author": "Michael Torres",
+          "role": "Genel Mudur, GrowthStart"
+        },
+        {
+          "quote": "E-posta acilma oranlarimiz iki katina, donusumlerimiz uc katina cikti. Modern pazarlama otomasyonunu gercekten anliyorlar.",
+          "author": "Jennifer Park",
+          "role": "Pazarlama Baskan Yardimcisi, RetailMax"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Pazarlama Hakkinda Sorular",
+      "items": [
+        {
+          "question": "Dijital pazarlama sonuclarini gormek ne kadar surer?",
+          "answer": "Sonuclar kanala gore degisir. Ucretli reklamlar gunler icinde sonuc gosterebilirken, SEO genellikle somut organik iyilestirmeler icin 3-6 ay surer. Gercekci beklentiler belirliyoruz ve duzenli ilerleme raporlari sunuyoruz."
+        },
+        {
+          "question": "Pazarlama stratejisi yaklasiminiz nedir?",
+          "answer": "Kapsamli pazar arastirmasi, rakip analizi ve kitle icgoruleri ile baslayan veriye dayali bir yaklasim kullaniyoruz. Her strateji, is hedeflerinize ve butcenize ozel olarak tasarlanmaktadir."
+        },
+        {
+          "question": "Belirli sonuclari garanti ediyor musunuz?",
+          "answer": "Dis faktorler nedeniyle belirli siralamalar veya sonuclari garanti edemesek de, seffaf raporlama, kanitlanmis metodolojiler ve yatiriminiz icin en iyi sonuclari elde etme taahhudumuz garantimizdir."
+        },
+        {
+          "question": "Pazarlama basarisini nasil olcuyorsunuz?",
+          "answer": "Trafik, donusumler, potansiyel musteri kalitesi, edinim maliyeti, ROAS ve genel yatirim getirisi dahil olmak uzere hedeflerinizle uyumlu KPI'lari takip ediyoruz. Eyleme donusturulebilir icgorular iceren ayrintili raporlar alacaksiniz."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Isletmenizi Buyutmeye Hazir Misiniz?",
+      "description": "Markaniz icin gercek sonuclar ve surdurulebilir buyume saglayacak bir pazarlama stratejisi olusturalim.",
+      "schedule": "Danismanlik Randevusu Alin",
+      "caseStudies": "Vaka Calismalarini Goruntuleyin"
+    }
+  },
+  "conversationalAI": {
+    "hero": {
+      "eyebrow": "Konusmaci Yapay Zeka Hizmetleri",
+      "title": "Akilli Cozumler",
+      "titleAccent": "Chatbot'lar Icin",
+      "description": "Yapay zeka destekli konusma deneyimleri ile musteri etkilesimini donusturun. Akilli chatbot'lardan sanal asistanlara kadar, anlayan, ogrenen ve genis olcekte anlamli etkilesimler sunan cozumler olusturuyoruz.",
+      "startProject": "Chatbot Projenizi Baslatin",
+      "viewPortfolio": "Vaka Calismalarini Goruntuleyin"
+    },
+    "process": {
+      "steps": [
+        {
+          "number": "01",
+          "title": "Konusma Tasarimi",
+          "description": "Kullanici niyetlerinin haritasini cikariyor, diyalog akislarini tasarliyor ve markanizla uyumlu bir bot kisiligini olusturuyoruz."
+        },
+        {
+          "number": "02",
+          "title": "NLP Egitimi",
+          "description": "Dogrulugu yuksek niyet tanima ve varlik cikarimi icin alan verileriniz uzerinde ozel model egitimi."
+        },
+        {
+          "number": "03",
+          "title": "Yayin ve Optimizasyon",
+          "description": "Dogrulugu artirmak icin gercek konusmalardan surekli ogrenme ile cok kanalli yayin."
+        }
+      ]
+    },
+    "services": {
+      "title": "Chatbot Yetenekleri",
+      "subtitle": "Destegi otomatiklestirmek, potansiyel musteri olusturmak ve musteri deneyimini iyilestirmek icin tasarlanmis kapsamli konusmaci yapay zeka cozumleri.",
+      "items": [
+        {
+          "title": "Musteri Destek Botlari",
+          "description": "Sikca sorulan sorulari yoneten, sorun giderme yapan ve bilet olusturan, insan temsilciye sorunsuz aktarim saglayan 7/24 otomatik destek."
+        },
+        {
+          "title": "Cok Dilli Botlar",
+          "description": "Musterilerle kuresel olcekte etkilesim icin yerel NLP anlayisina sahip 50'den fazla dilde chatbot yayini."
+        },
+        {
+          "title": "GPT Destekli Asistanlar",
+          "description": "Karmasik sorgular, icerik uretimi ve akilli bilgi erisimi icin gelismis LLM entegrasyonu."
+        },
+        {
+          "title": "Potansiyel Musteri Nitelendirme Botlari",
+          "description": "CRM sistemi ve satis is akislari ile entegre konusma yoluyla potansiyel musterileri yakalama ve nitelendirme."
+        },
+        {
+          "title": "Sesli ve IVR Cozumleri",
+          "description": "Telefonla musteri etkilesimleri icin sesli chatbot'lar ve akilli IVR sistemleri."
+        },
+        {
+          "title": "Belge Soru-Cevap Botlari",
+          "description": "RAG teknolojisi kullanarak belgelerinizden, kilavuzlarinizdan ve bilgi tabanlarinizdan sorulari yanitlayan yapay zeka asistanlari."
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Musteri Basarilari",
+      "title": "Chatbot Etki Hikayeleri",
+      "items": [
+        {
+          "quote": "Yapay zeka chatbot'u destek sorgularinin %80'ini otomatik olarak yonetiyor. Yanit suresi saatlerden saniyelere dustu.",
+          "author": "Jennifer Martinez",
+          "role": "Destek Muduru, ShopFast"
+        },
+        {
+          "quote": "Potansiyel musteri nitelendirme botu, satisa uygun musterileri uc katina cikarirken satis ekibinin yukunu hafifletti.",
+          "author": "Robert Kim",
+          "role": "Satis Baskan Yardimcisi, TechGrowth"
+        },
+        {
+          "quote": "Cok dilli chatbot bize uc yeni pazar acti. Musteri memnuniyeti en yuksek seviyelerine ulasti.",
+          "author": "Anna Schmidt",
+          "role": "Kuresel Operasyonlar, EuroRetail"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Chatbot Hakkinda Sikca Sorulan Sorular",
+      "items": [
+        {
+          "question": "Chatbot kullanici sorgularini ne kadar dogru anlar?",
+          "answer": "Chatbot'larimiz, alan verileriniz uzerinde ozel olarak egitilmis NLP modelleri kullanarak %90'in uzerinde niyet tanima dogrulugu saglamaktadir. Konusma analizi ve model yeniden egitimi yoluyla dogrulugu surekli iyilestiriyoruz."
+        },
+        {
+          "question": "Chatbot konusmayi insan temsilciye aktarabilir mi?",
+          "answer": "Evet, insan temsilciye sorunsuz aktarim temel bir ozelliktir. Bot, duygu durumu, karmasiklik veya kullanici talebi temelinde insan mudahalesinin gerekli oldugunu tespit eder ve konusma baglamini destek platformunuz uzerinden temsilcilere aktarir."
+        },
+        {
+          "question": "Chatbot hangi kanallarda yayinlanabilir?",
+          "answer": "Web sohbeti, mobil uygulamalar, WhatsApp, Facebook Messenger, Slack, Microsoft Teams, SMS ve sesli kanallari destekliyoruz. Birlesirilmis konusma gecmisi ile cok kanalli yayin standart olarak sunulmaktadir."
+        },
+        {
+          "question": "Sonuclari gormek ne kadar surer?",
+          "answer": "Cogu musteri yayindan sonra 4-6 hafta icinde somut etki gormektedir. Ilk botlar 2-4 hafta icinde yayinlanir ve surekli iyilestirme cozum oranlarini ve musteri memnuniyetini artirmaktadir."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Konusmalari Otomatiklestirmeye Hazir Misiniz?",
+      "description": "Musterilerinizi memnun eden ve olculebilir is sonuclari ureten bir chatbot olusturalim.",
+      "schedule": "Bot Demo Randevusu Alin",
+      "caseStudies": "Basari Hikayelerini Goruntuleyin"
+    }
+  },
+  "apiDevelopment": {
+    "hero": {
+      "eyebrow": "API Gelistirme Hizmetleri",
+      "title": "Gelismis",
+      "titleAccent": "API Cozumleri",
+      "description": "Sistemlerinizi birbirine baglayan, entegrasyonlari mumkun kilan ve dijital ekosisteминizi kurumsal duzey guvenilirlikle destekleyen guclu ve olceklenebilir API'ler tasarliyor ve gelistiriyoruz.",
+      "startProject": "Projenizi Baslatin",
+      "viewPortfolio": "Portfoyu Goruntule"
+    },
+    "techStack": {
+      "technologies": [
+        "Node.js",
+        "Express",
+        "FastAPI",
+        "GraphQL",
+        "REST",
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "Docker",
+        "AWS",
+        "Swagger",
+        "Postman"
+      ]
+    },
+    "process": {
+      "eyebrow": "Metodoloji",
+      "title": "API Gelistirme Metodolojimiz",
+      "subtitle": "Guvenli, yuksek performansli ve profesyonel sekilde dokumante edilmis API'ler saglayan yapilandirilmis bir yaklasim.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Gereksinim Analizi",
+          "description": "Entegrasyon ihtiyaclarinizi ve veri akislarinizi analiz eder, kapsamli API spesifikasyonlari belirleriz."
+        },
+        {
+          "number": "02",
+          "title": "Mimari Tasarim",
+          "description": "Uygun kimlik dogrulama, hiz sinirlandirma ve surumleme stratejileriyle olceklenebilir API mimarisi tasarlariz."
+        },
+        {
+          "number": "03",
+          "title": "Gelistirme ve Test",
+          "description": "Kapsamli birim testleri ve entegrasyon testleriyle temiz kod en iyi uygulamalarini kullanarak API'ler insa ederiz."
+        },
+        {
+          "number": "04",
+          "title": "Dokumantasyon",
+          "description": "Sorunsuz bir gelistirici deneyimi icin Swagger/OpenAPI kullanarak etkilesimli API dokumantasyonu olustururuz."
+        },
+        {
+          "number": "05",
+          "title": "Dagitim ve Izleme",
+          "description": "Performans ve calisma suresi takibi icin izleme uygulayarak CI/CD hatlari araciligiyla dagitim yapariz."
+        }
+      ]
+    },
+    "services": {
+      "title": "API Yetenekleri",
+      "subtitle": "Dijital altyapinizi desteklemek ve sorunsuz entegrasyonlari mumkun kilmak icin kapsamli API gelistirme hizmetleri.",
+      "items": [
+        {
+          "title": "RESTful API Gelistirme",
+          "description": "En iyi uygulamalari ve HTTP standartlarini takip eden temiz, sezgisel REST arayuzleri insasi."
+        },
+        {
+          "title": "GraphQL Arayuzleri",
+          "description": "Istemcilere tek bir istekte tam olarak ihtiyac duydugu verileri sunan esnek GraphQL uct noktalari."
+        },
+        {
+          "title": "API Entegrasyonu",
+          "description": "Harici hizmetleri, odeme gecitlerini ve ucuncu taraf sistemleri sorunsuz bir sekilde baglama."
+        },
+        {
+          "title": "Mikroservis Mimarisi",
+          "description": "API'ler araciligiyla verimli sekilde iletisim kuran olceklenebilir mikroservislerin tasarimi ve uygulanmasi."
+        },
+        {
+          "title": "Gercek Zamanli API'ler",
+          "description": "Canli veri akisi ve gercek zamanli uygulamalar icin WebSocket ve Server-Sent Events."
+        },
+        {
+          "title": "API Guvenligi",
+          "description": "OAuth 2.0, JWT kimlik dogrulama, hiz sinirlandirma ve kapsamli guvenlik onlemlerinin uygulanmasi."
+        }
+      ]
+    },
+    "features": {
+      "eyebrow": "Yetenekler",
+      "title": "Kapsamli API Cozumleri",
+      "subtitle": "Entegrasyon ihtiyaclariniza ozel olarak tasarlanmis eksiksiz API gelistirme hizmetleri sunuyoruz.",
+      "items": [
+        "RESTful API tasarimi ve gelistirme",
+        "GraphQL sema tasarimi",
+        "OAuth 2.0 ve JWT kimlik dogrulama",
+        "API hiz sinirlandirma ve trafik kontrolu",
+        "Swagger/OpenAPI dokumantasyonu",
+        "Webhook uygulamasi",
+        "Veritabani entegrasyonu (SQL ve NoSQL)",
+        "Redis ile onbellekleme",
+        "API surumleme stratejileri",
+        "Kapsamli hata yonetimi"
+      ]
+    },
+    "whyUs": {
+      "eyebrow": "Neden Bizi Secmelisiniz",
+      "title": "API Mukemmeliyeti",
+      "description": "Yalnizca API insa etmiyoruz; isletmenizle birlikte buyuyen entegrasyon cozumleri tasarliyoruz.",
+      "reasons": [
+        {
+          "title": "Optimize Edilmis Performans",
+          "description": "Verimli sorgular, onbellekleme ve optimize edilmis veritabani erisimi ile 100 milisaniyenin altinda yanit sureleri."
+        },
+        {
+          "title": "Oncelikli Guvenlik",
+          "description": "OAuth 2.0, hiz sinirlandirma ve kapsamli girdi dogrulama ile kurumsal duzey guvenlik."
+        },
+        {
+          "title": "Gelistirici Dostu",
+          "description": "Hizli entegrasyon icin anlasilir dokumantasyon, SDK'lar ve ornek kodlar."
+        },
+        {
+          "title": "Olceklenebilir Tasarim",
+          "description": "Yatay olcekleme yetenekleriyle milyonlarca istegi karsilayacak sekilde insa edilmistir."
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Musteri Basari Hikayeleri",
+      "title": "Guvenilir API Cozumleri",
+      "items": [
+        {
+          "quote": "API mimarileri gunluk 10 milyondan fazla istegi zahmetsizce karsiladi. Dokumantasyon, ortaklarimiz icin entegrasyonu sorunsuz hale getirdi.",
+          "author": "Robert Kim",
+          "role": "Muhendislik Baskan Yardimcisi, DataSync Corp"
+        },
+        {
+          "quote": "Insa ettikleri GraphQL arayuzu veri tuketimini %60 azaltti. Mobil uygulamamizin performansi onemli olcude iyilesti.",
+          "author": "Amanda Chen",
+          "role": "CTO, MobileFirst Inc"
+        },
+        {
+          "quote": "Mukemmel API guvenlik uygulamasi. Kurumsal guvenlik denetimini ilk denemede gectik.",
+          "author": "Marcus Johnson",
+          "role": "Guvenlik Muduru, FinSecure"
+        }
+      ]
+    },
+    "faq": {
+      "title": "API Gelistirme Hakkinda Sikca Sorulan Sorular",
+      "items": [
+        {
+          "question": "API'm icin REST mi yoksa GraphQL mi secmeliyim?",
+          "answer": "Bu, kullanim senaryonuza baglidir. REST, basit kaynak tabanli islemler icin idealdir ve genis arac destegine sahiptir. GraphQL, istemcilerin esnek veri getirmeye ihtiyac duydugunuzda veya farkli veri gereksinimlerine sahip birden fazla istemci turunuz oldugunda one cikar. En uygun yaklasimi secmenize yardimci olacagiz."
+        },
+        {
+          "question": "API guvenligini nasil sagliyorsunuz?",
+          "answer": "OAuth 2.0/JWT kimlik dogrulama, HTTPS sifreleme, girdi dogrulama, hiz sinirlandirma, IP beyaz listeleme ve SQL enjeksiyon onleme dahil olmak uzere cok katmanli guvenlik uyguluyoruz. Ayrica dagitim oncesi guvenlik denetimleri gerceklestiriyoruz."
+        },
+        {
+          "question": "Mevcut sistemlerimizle entegrasyon saglayabilir misiniz?",
+          "answer": "Kesinlikle. Eski sistemler, harici hizmetler, odeme gecitleri, CRM ve ERP sistemleri ve API veya veritabani erisimi olan herhangi bir sistemle API entegrasyonu konusunda uzmaniz. Uyumsuz sistemler icin ara katmanlar da olusturabiliriz."
+        },
+        {
+          "question": "Hangi dokumantasyonu sagliyorsunuz?",
+          "answer": "Etkilesimli test arayuzleri, birden fazla dilde ornek kodlar, kimlik dogrulama kilavuzlari ve hata kodu referanslari iceren Swagger/OpenAPI spesifikasyonlariyla kapsamli API dokumantasyonu olusturuyoruz."
+        },
+        {
+          "question": "API surumlemesini nasil yonetiyorsunuz?",
+          "answer": "URL yolu surumlemesi (ornegin v1, v2) veya baslik tabanli surumleme ile anlamsal surumleme uyguluyoruz. Geriye donuk uyumlulugu korur ve koklü degisiklikler gerektiginde gecis kilavuzlari sagliyoruz."
+        },
+        {
+          "question": "API izleme ve analitik konusunda ne sunuyorsunuz?",
+          "answer": "Yanit suresi takibi, hata orani izleme, kullanim analitikleri ve uyarilar dahil kapsamli izleme kuruyoruz. API sagligini, en cok kullanilan uct noktalari ve performans metriklerini gosteren kontrol panelleri alacaksiniz."
+        }
+      ]
+    },
+    "portfolio": {
+      "eyebrow": "Vaka Calismalari",
+      "title": "API Projeleri",
+      "subtitle": "Basarili API gelistirme projelerimizi ve elde ettigimiz sonuclari kesfedin.",
+      "projects": [
+        {
+          "title": "E-Ticaret Platformu API'si",
+          "description": "Gercek zamanli envanter senkronizasyonu ile 500.000'den fazla urunu barindiran bir cevrimici pazari destekleyen yuksek performansli REST API.",
+          "result": "Gunluk 10 milyondan fazla istek",
+          "tech": [
+            "Node.js",
+            "Express",
+            "PostgreSQL",
+            "Redis"
+          ]
+        },
+        {
+          "title": "Fintech Entegrasyon Merkezi",
+          "description": "PCI uyumlu 20'den fazla odeme saglayicisi ve bankacilik sistemini birbirine baglayan guvenli API gecidi.",
+          "result": "%99,99 calisma suresi",
+          "tech": [
+            "FastAPI",
+            "GraphQL",
+            "Docker",
+            "AWS"
+          ]
+        },
+        {
+          "title": "Saglik Hizmetleri Veri Platformu",
+          "description": "Birden fazla hastane sistemi arasinda hasta verisi degisimi icin HIPAA uyumlu API altyapisi.",
+          "result": "3 saniyeden 200 milisaniyeye",
+          "tech": [
+            "Node.js",
+            "MongoDB",
+            "Redis",
+            "Kubernetes"
+          ]
+        },
+        {
+          "title": "IoT Cihaz Yonetimi",
+          "description": "Kuresel olarak 100.000'den fazla bagli cihazi yonetmek icin WebSocket destekli gercek zamanli API.",
+          "result": "100.000'den fazla cihaz",
+          "tech": [
+            "FastAPI",
+            "WebSocket",
+            "TimescaleDB",
+            "MQTT"
+          ]
+        }
+      ]
+    },
+    "pricing": {
+      "eyebrow": "Fiyatlandirma",
+      "title": "API Gelistirme Paketleri",
+      "subtitle": "Her olcekteki API projeleri icin esnek fiyatlandirma secenekleri.",
+      "tiers": [
+        {
+          "name": "Baslangic Paketi",
+          "price": "$8,000 - $15,000",
+          "description": "Kucuk projeler ve prototipler icin ideal",
+          "features": [
+            "15 API uct noktasina kadar",
+            "JWT kimlik dogrulama",
+            "Temel hiz sinirlandirma",
+            "Swagger dokumantasyonu",
+            "PostgreSQL entegrasyonu",
+            "Lansman sonrasi 2 hafta destek"
+          ]
+        },
+        {
+          "name": "Profesyonel Paket",
+          "price": "$15,000 - $35,000",
+          "description": "Gelismis ihtiyaclari olan buyuyen isletmeler icin",
+          "features": [
+            "50 API uct noktasina kadar",
+            "OAuth 2.0 uygulamasi",
+            "Gelismis hiz sinirlandirma ve onbellekleme",
+            "GraphQL veya REST (tercihinize gore)",
+            "Coklu veritabani destegi",
+            "Webhook entegrasyonlari",
+            "Lansman sonrasi 1 ay destek"
+          ],
+          "popular": true
+        },
+        {
+          "name": "Kurumsal Paket",
+          "price": "Ozel teklif",
+          "description": "Genis olcekli kurumsal cozumler icin",
+          "features": [
+            "Sinlrsiz uct nokta",
+            "Mikroservis mimarisi",
+            "Coklu bolge dagitimi",
+            "Ozel guvenlik denetimi",
+            "SLA garantileri",
+            "7/24 izleme ve destek",
+            "Ozel teknik hesap yoneticisi"
+          ]
+        }
+      ]
+    },
+    "cta": {
+      "title": "API'nizi Insа Etmeye Hazir misiniz?",
+      "description": "Sistemlerinizi birbirine baglayan ve sorunsuz entegrasyonlari mumkun kilan guclu bir API insa edelim.",
+      "schedule": "Danismanlik Randevusu Alin",
+      "caseStudies": "Vaka Calismalarini Goruntule"
+    }
+  },
+  "cybersecurity": {
+    "hero": {
+      "eyebrow": "Siber Guvenlik Hizmetleri",
+      "title": "Dijital",
+      "titleAccent": "Varliklarinizi Koruyun",
+      "description": "Kurulusunuzu gelisen tehditlere karsi savunmak icin kapsamli siber guvenlik cozumleri. Sizin penetrasyon testlerinden 7/24 izlemeye kadar altyapinizi kurumsal duzey koruma ile guvence altina aliyoruz.",
+      "startProject": "Koruma Alin",
+      "viewPortfolio": "Vaka Calismalarini Goruntule"
+    },
+    "techStack": {
+      "technologies": [
+        "Splunk SIEM",
+        "CrowdStrike",
+        "Palo Alto",
+        "Fortinet",
+        "Nessus",
+        "Wireshark",
+        "Metasploit",
+        "Burp Suite",
+        "Snort IDS",
+        "HashiCorp Vault",
+        "AWS Security Hub",
+        "Azure Sentinel"
+      ]
+    },
+    "process": {
+      "steps": [
+        {
+          "number": "01",
+          "title": "Degerlendirme",
+          "description": "Guvenlik aciklarini belirlemek ve saldiri yuzeyinizi haritalandirmak icin kapsamli guvenlik denetimi."
+        },
+        {
+          "number": "02",
+          "title": "Uygulama",
+          "description": "Guvenlik cozumlerinin dagitimi, savunmalarin yapilandirilmasi ve izleme sistemlerinin entegrasyonu."
+        },
+        {
+          "number": "03",
+          "title": "Izleme",
+          "description": "Gercek zamanli tehdit algilama ve olay mudahalesiyle 7/24 Guvenlik Operasyon Merkezi (SOC) izlemesi."
+        }
+      ]
+    },
+    "services": {
+      "title": "Guvenlik Hizmetleri",
+      "subtitle": "Kurulusunuzu modern tehditlere karsi korumak icin tasarlanmis kapsamli siber guvenlik cozumleri.",
+      "items": [
+        {
+          "title": "Guvenlik Degerlendirmesi",
+          "description": "Saldirganlarin kesfetmesinden once guvenlik aciklklarini belirlemek icin kapsamli zafiyet degerlendirmeleri ve penetrasyon testleri."
+        },
+        {
+          "title": "Penetrasyon Testleri",
+          "description": "Savunmalarinizi test etmek ve zayif noktalari belirlemek icin gercek dunya saldirillarini simulе eden etik hackleme hizmetleri."
+        },
+        {
+          "title": "Tehdit Izleme",
+          "description": "Gercek zamanli tehdit algilama ve uyarilarla 7/24 Guvenlik Operasyon Merkezi (SOC) izlemesi."
+        },
+        {
+          "title": "Erisim Yonetimi",
+          "description": "Hassas kaynaklari ve verileri korumak icin guclu kimlik ve erisim yonetimi kontrollerinin uygulanmasi."
+        },
+        {
+          "title": "Ag Guvenligi",
+          "description": "Altyapinizi guvence altina almak icin guvenlik duvari yonetimi, saldiri tespit sistemleri ve ag segmentasyonu."
+        },
+        {
+          "title": "Uyumluluk ve Denetim",
+          "description": "ISO 27001, SOC 2, GDPR, HIPAA ve PCI-DSS uyumlulugunun saglanmasi ve surdurilmesi."
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Musteri Basari Hikayeleri",
+      "title": "Guvenilir Guvenlik Ortagi",
+      "items": [
+        {
+          "quote": "Guvenlik degerlendirmesi, varligindan haberdar olmadigimiz kritik guvenlik aciklarini ortaya cikardi. Iyilestirme sureci kapsamli ve profesyoneldi.",
+          "author": "Richard Martinez",
+          "role": "CTO, FinanceFirst Corp"
+        },
+        {
+          "quote": "7/24 SOC izlemesi paha bicilmezdi. Herhangi bir hasar olusturmadan once sofistike bir saldiriyi tespit edip durdurdular.",
+          "author": "Sarah Thompson",
+          "role": "Bilgi Guvenligi Muduru, HealthTech Solutions"
+        },
+        {
+          "quote": "Ekipleri sayesinde rekor surede SOC 2 uyumluluguna ulastik. Guvenlik cerceveleri konusundaki uzmanliklari olagan ustudu.",
+          "author": "David Chen",
+          "role": "Operasyon Baskan Yardimcisi, DataSecure Inc"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Guvenlik Sorularinizin Yanitlari",
+      "items": [
+        {
+          "question": "Penetrasyon testleri ne siklikla yapilmalidir?",
+          "answer": "Yilda en az bir kez veya altyapida onemli degisikliklerden sonra penetrasyon testi yapilmasini oneriyoruz. Hassas verilerle calisan veya duzenlemeye tabi sektorlerde faaliyet gosteren kuruluslar icin ucaylik testler daha uygun olabilir."
+        },
+        {
+          "question": "Guvenlik degerlendirmesi neleri kapsar?",
+          "answer": "Kapsamli degerlendirmemiz zafiyet taramasi, penetrasyon testleri, yapilandirma incelemesi, politika analizi, sosyal muhendislik testleri ve onceliklendirilmis iyilestirme onerileri iceren ayrintili bir raporu kapsamaktadir."
+        },
+        {
+          "question": "Guvenlik olaylarina ne kadar hizli mudahale ediyorsunuz?",
+          "answer": "Olay mudahale ekibimiz 7/24 hazir durumdadir. Kritik olaylar icin 15 dakika icinde ilk mudahaleyi garanti ediyoruz. Tehditleri hizla kontrol altina almak ve hasari en aza indirmek icin belirlenмis prosedurlerimiz ve eylem planlarimiz bulunmaktadir."
+        },
+        {
+          "question": "Uyumluluk gereksinimleri konusunda yardimci oluyor musunuz?",
+          "answer": "Evet, ISO 27001, SOC 2, GDPR, HIPAA ve PCI-DSS icin kapsamli uyumluluk destegi sunuyoruz. Bosluk degerlendirmesi, politika gelistirme, kontrol uygulamasi ve denetim hazirliginda yardimci oluyoruz."
+        },
+        {
+          "question": "Mevcut guvenlik araclarimizla calisabilir misiniz?",
+          "answer": "Kesinlikle. Basica guvenlik platformlariyla entegrasyon sagliyor ve mevcut teknoloji yigininiиle calisabiliyoruz. Bosluklar tespit edildiginde tamamlayici cozumler oneririz."
+        },
+        {
+          "question": "Guvenlik ekibinizin yetkinlikleri nelerdir?",
+          "answer": "Ekibimiz CISSP, CEH, OSCP ve GIAC dahil olmak uzere sektorun onde gelen sertifikalarina sahiptir. Ortaya cikan tehditler konusunda surekli egitim aliyor ve siber guvenlik arastirma topluluklarina katiliyoruz."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Isletmenizi Guvence Altina Almaya Hazir misiniz?",
+      "description": "Kapsamli bir guvenlik stratejisiyle kurulusunuzu siber tehditlere karsi nasil koruyabilecegiмizi konusalim.",
+      "schedule": "Guvenlik Degerlendirmesi Randevusu Alin",
+      "caseStudies": "Vaka Calismalarini Goruntule"
+    }
+  },
+  "devopsCloud": {
+    "hero": {
+      "eyebrow": "DevOps ve Bulut Hizmetleri",
+      "title": "Altyapinizi",
+      "titleAccent": "Donusturun",
+      "description": "Modern DevOps uygulamalari ve olceklenebilir bulut mimarisiyle gelistirme dongunuzu hizlandirin. Dagitim hattinizin tamamini otomatiklestiriyor, optimize ediyor ve guvence altina aliyoruz.",
+      "startProject": "Projenizi Baslatin",
+      "viewPortfolio": "Vaka Calismalarini Goruntule"
+    },
+    "techStack": {
+      "technologies": [
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "Jenkins",
+        "GitHub Actions",
+        "Azure",
+        "GCP",
+        "Ansible",
+        "Prometheus",
+        "Grafana",
+        "ArgoCD"
+      ]
+    },
+    "process": {
+      "steps": [
+        {
+          "number": "01",
+          "title": "Degerlendirme",
+          "description": "Mevcut altyapinizi analiz eder ve iyilestirme firsatlarini belirleriz."
+        },
+        {
+          "number": "02",
+          "title": "Mimari Tasarim",
+          "description": "Ihtiyaclariniza ozel olceklenebilir ve guvenli bulut mimarisi tasarlariz."
+        },
+        {
+          "number": "03",
+          "title": "Otomasyon",
+          "description": "Sorunsuz dagitimlar icin CI/CD hatlari ve kod olarak altyapi uygulariz."
+        },
+        {
+          "number": "04",
+          "title": "Gecis",
+          "description": "Kapsamli test ve dogrulama ile kesintisiz gecis islemlerini gerceklestiririz."
+        },
+        {
+          "number": "05",
+          "title": "Izleme",
+          "description": "Kapsamli izleme, uyari ve performans optimizasyonu kururuz."
+        }
+      ]
+    },
+    "services": {
+      "title": "DevOps Yetenekleri",
+      "subtitle": "Teslimat hizini artiran ve guvenilirlik saglayan kapsamli DevOps ve bulut cozumleri.",
+      "items": [
+        {
+          "title": "CI/CD Hat Tasarimi",
+          "description": "Daha hizli surumler icin Jenkins, GitHub Actions veya GitLab CI kullanarak otomatik derleme, test ve dagitim hatlari."
+        },
+        {
+          "title": "Bulut Altyapisi",
+          "description": "Yuksek erisilebilirlik ve maliyet optimizasyonu ile AWS, Azure veya GCP uzerinde olceklenebilir altyapi tasarimi ve yonetimi."
+        },
+        {
+          "title": "Konteyner Orkestrasyon",
+          "description": "Tutarli ve olceklenebilir uygulama dagitimi icin Docker konteynerler ve Kubernetes orkestrasyon."
+        },
+        {
+          "title": "Kod Olarak Altyapi",
+          "description": "Tekrarlanabilir ve surum kontrollu altyapi yonetimi icin Terraform ve Ansible otomasyonu."
+        },
+        {
+          "title": "Izleme ve Gozlemleme",
+          "description": "Kapsamli sistem gorunurlugu ve uyarilar icin Prometheus, Grafana ve ELK Stack uygulamasi."
+        },
+        {
+          "title": "Guvenlik ve Uyumluluk",
+          "description": "Guvenli dagitimlar icin DevSecOps uygulamalari, zafiyet taramasi ve uyumluluk otomasyonu."
+        }
+      ]
+    },
+    "whyUs": {
+      "eyebrow": "Neden Bizi Secmelisiniz",
+      "title": "DevOps Mukemmeliyeti",
+      "description": "Operasyonlarinizi basitlestirmek ve gelistirme hizinizi artirmak icin sahada kanitlanmis DevOps uzmanligi sunuyoruz.",
+      "reasons": [
+        {
+          "title": "Sertifikali Uzmanlar",
+          "description": "Uretim ortamlarinda uygulamali deneyime sahip AWS, Azure ve GCP sertifikali muhendisler."
+        },
+        {
+          "title": "7/24 Guvenilirlik",
+          "description": "Proaktif izleme ve olay mudahalesiyle %99,99 calisma suresi SLA'lari."
+        },
+        {
+          "title": "Maliyet Optimizasyonu",
+          "description": "Kaynak optimizasyonu ve otomasyon yoluyla bulut harcamalarinizi %40'a kadar azaltma."
+        },
+        {
+          "title": "Hizli Uygulama",
+          "description": "CI/CD hattinizi aylar degil, haftalar icinde calisir hale getirin."
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Musteri Basari Hikayeleri",
+      "title": "DevOps Etkisi",
+      "items": [
+        {
+          "quote": "Dagitim surelerimizi saatlerden dakikalara dusurduler. Ekibimiz artik haftalik yerine gunluk ozellik yayinlayabiliyor.",
+          "author": "Marcus Thompson",
+          "role": "Muhendislik Baskan Yardimcisi, TechScale"
+        },
+        {
+          "quote": "Kubernetes gecisi sorunsuzdu. Gecis sirasinda sifir kesinti ve altyapi maliyetlerinde %60 tasarruf.",
+          "author": "Elena Rodriguez",
+          "role": "CTO, CloudFirst Inc"
+        },
+        {
+          "quote": "Kurduklar izleme sistemi sorunlari kullanicilari etkilemeden once tespit etti. Ortalama kurtarma suremiz saatlerden dakikalara dustu.",
+          "author": "James Park",
+          "role": "DevOps Sorumlusu, FastDeploy"
+        }
+      ]
+    },
+    "faq": {
+      "title": "DevOps Sorularinizin Yanitlari",
+      "items": [
+        {
+          "question": "Tipik bir CI/CD hatti uygulamasi ne kadar surer?",
+          "answer": "Temel bir CI/CD hatti 1-2 haftada kurulabilir. Birden fazla ortam, guvenlik taramasi ve onay is akislari iceren daha karmasik hatlar genellikle 4-6 hafta surer. Calisan bir hatla baslar ve ekibinizin geri bildirimlerine gore optimize ederiz."
+        },
+        {
+          "question": "Mevcut altyapimizla calisabilir misiniz?",
+          "answer": "Kesinlikle. Mevcut altyapiyi kademeli olarak modernlestirme konusunda uzmaniz. Ister fiziksel sunucularda, ister sanal makinelerde olun, ister zaten bazi bulut hizmetlerini kullaniyor olun, mevcut operasyonlarinizi aksatmadan optimizasyon ve otomasyon konusunda yardimci olabiliriz."
+        },
+        {
+          "question": "Hangi bulut saglayicilari destekliyorsunuz?",
+          "answer": "AWS, Azure, GCP ve DigitalOcean dahil tum buyuk bulut saglayicilariyla calisiyoruz. Ayrica coklu bulut stratejileri ve yerel altyapi ile bulut hizmetlerini birlestiren hibrit bulut kurulumlarinda da yardimci olabiliriz."
+        },
+        {
+          "question": "DevOps'ta guvenligi nasil ele aliyorsunuz?",
+          "answer": "Guvenlik, DevOps surecinin her asamasina entegre edilmistir (DevSecOps). CI/CD hatlarinda otomatik guvenlik taramasi, altyapi guvenligi en iyi uygulamalari, gizli bilgi yonetimi ve dagitimarin varsayilan olarak guvenli olmasini saglayan kod olarak uyumluluk uyguluyoruz."
+        },
+        {
+          "question": "Izleme kurulumu neleri iceriyor?",
+          "answer": "Izleme paketimiz genellikle metrik toplama (Prometheus), gorselllestirme (Grafana), log toplama (ELK veya Loki), dagitik izleme ve akilli uyarilar icermektedir. Uygulamanizin temel performans gostergeleri icin ozel kontrol panelleri ve uyarilar yapilandiriyoruz."
+        },
+        {
+          "question": "Uygulama sonrasi surekli destek sunuyor musunuz?",
+          "answer": "Evet, temel bakimdan tamamen yonetilen DevOps hizmetlerine kadar cesitli destek seviyeleri sunuyoruz. Bu, 7/24 izleme, olay mudahalesi, hat bakimi ve altyapinizin surekli iyilestirilmesini kapsamaktadir."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Altyapinizi Donusturmeye Hazir misiniz?",
+      "description": "Modern DevOps uygulamalarinin gelistirmeyi nasil hizlandirabilecegini ve operasyonel yukleri nasil azaltabilecegini konusalim.",
+      "schedule": "Danismanlik Randevusu Alin",
+      "caseStudies": "Vaka Calismalarini Goruntule"
+    },
+    "features": {
+      "eyebrow": "Yetenekler",
+      "title": "Kapsamli DevOps Cozumleri",
+      "subtitle": "Altyapi ihtiyaclariniza ozel olarak tasarlanmis eksiksiz DevOps hizmetleri sunuyoruz.",
+      "items": [
+        {
+          "title": "Otomatik CI/CD Hatlari",
+          "description": "Daha hizli ve daha guvenli surumler icin her kod gonderimiyle otomatik derleme, test ve dagitim."
+        },
+        {
+          "title": "Kod Olarak Altyapi (IaC)",
+          "description": "Terraform, CloudFormation veya Pulumi kullanarak surum kontrollu ve tekrarlanabilir altyapi."
+        },
+        {
+          "title": "Konteyner Orkestrasyon",
+          "description": "Olceklenebilir ve tasinabilir uygulama dagitimi icin Kubernetes ve Docker yonetimi."
+        },
+        {
+          "title": "Bulut Mimarisi Tasarimi",
+          "description": "AWS, Azure veya GCP uzerinde yuksek erisilebilirlige sahip ve maliyet optimizasyonlu mimariler."
+        },
+        {
+          "title": "GitOps Uygulamasi",
+          "description": "Git'i tek dogru kaynak olarak kullanan bildirimsel altyapi ve uygulama teslimi."
+        },
+        {
+          "title": "Mikroservis Mimarisi",
+          "description": "Servis mesh ve API gecitleriyle olceklenebilir mikroservislerin tasarimi ve uygulanmasi."
+        },
+        {
+          "title": "Veritabani DevOps",
+          "description": "Otomatik veritabani gecisleri, yedekleme ve kesintisiz olcekleme."
+        },
+        {
+          "title": "Performans Optimizasyonu",
+          "description": "Optimum uygulama performansi icin darbogazlarin belirlenmesi ve giderilmesi."
+        },
+        {
+          "title": "Felaket Kurtarma",
+          "description": "Is surekliligi icin otomatik yedekleme stratejileri ve coklu bolge yedekleme gecisi."
+        },
+        {
+          "title": "Maliyet Yonetimi",
+          "description": "Bulut harcamalarini ve kaynak kullanimini optimize etmek icin FinOps uygulamalari."
+        }
+      ]
+    },
+    "portfolio": {
+      "eyebrow": "Vaka Calismalari",
+      "title": "DevOps Basari Hikayeleri",
+      "subtitle": "Kuruluslarin altyapilarini donusturmelerine ve teslimat hizini artirmalarina nasil yardimci oldugumuzukesfеdin.",
+      "projects": [
+        {
+          "title": "E-Ticaret Platformu Gecisi",
+          "client": "RetailMax",
+          "description": "Monolitik uygulamanin sifir kesinti ile Kubernetes uzerinde mikroservislere gecisi.",
+          "result": "%70 daha hizli dagitim",
+          "technologies": [
+            "Kubernetes",
+            "AWS EKS",
+            "Terraform",
+            "ArgoCD"
+          ]
+        },
+        {
+          "title": "Fintech CI/CD Donusumu",
+          "client": "PaySecure",
+          "description": "Finansal hizmetler icin uyumluluk otomasyonuyla guvenli CI/CD hatti uygulamasi.",
+          "result": "%99,99 calisma suresi saglandl",
+          "technologies": [
+            "GitHub Actions",
+            "AWS",
+            "Vault",
+            "SonarQube"
+          ]
+        },
+        {
+          "title": "SaaS Altyapi Olcekleme",
+          "client": "CloudAnalytics",
+          "description": "Manuel mudahale olmadan 10 katlik trafik artisini karsilayan otomatik olceklenen altyapi.",
+          "result": "Maliyetlerde %40 azalma",
+          "technologies": [
+            "GCP",
+            "Kubernetes",
+            "Prometheus",
+            "Terraform"
+          ]
+        },
+        {
+          "title": "Saglik Hizmetleri Platformu Uyumlulugu",
+          "client": "MedConnect",
+          "description": "Otomatik guvenlik taramasi ve denetim kaydi ile HIPAA uyumlu altyapi.",
+          "result": "Tam HIPAA uyumlulugu",
+          "technologies": [
+            "Azure",
+            "Docker",
+            "Ansible",
+            "ELK Stack"
+          ]
+        }
+      ]
+    },
+    "pricing": {
+      "eyebrow": "Fiyatlandirma",
+      "title": "DevOps Hizmet Planlari",
+      "subtitle": "Altyapi ihtiyaclariniza ve butcenize uygun esnek secenekler.",
+      "tiers": [
+        {
+          "name": "Baslangic",
+          "price": "$2,500",
+          "period": "/aylik",
+          "description": "DevOps ile tanisan startup'lar ve kucuk ekipler icin ideal.",
+          "features": [
+            "Temel CI/CD hatti kurulumu",
+            "Tek bulut ortami",
+            "Aylik altyapi incelemesi",
+            "Haftaici 8 saat destek",
+            "Temel izleme kurulumu",
+            "Gunluk 5 dagitima kadar"
+          ],
+          "cta": "Hemen Baslayin"
+        },
+        {
+          "name": "Profesyonel",
+          "price": "$6,500",
+          "period": "/aylik",
+          "description": "Guclu DevOps altyapisina ihtiyac duyan buyuyen ekipler icin.",
+          "features": [
+            "Guvenlik taramali gelismis CI/CD",
+            "Coklu ortam yonetimi",
+            "Haftalik optimizasyon incelemeleri",
+            "7/24 destek",
+            "Tam gozlemleme paketi",
+            "Sinirsiz dagitim",
+            "Kod olarak altyapi",
+            "Felaket kurtarma kurulumu"
+          ],
+          "cta": "Ucretsiz Denemeyi Baslayin",
+          "popular": true
+        },
+        {
+          "name": "Kurumsal",
+          "price": "Ozel",
+          "period": "",
+          "description": "Genis olcekli operasyonlar icin tamamen yonetilen DevOps hizmetleri.",
+          "features": [
+            "Ozel DevOps ekibi",
+            "Coklu bulut/hibrit bulut destegi",
+            "Ozel SLA (%99,99'a kadar)",
+            "Ozel 7/24 destek",
+            "Gelismis guvenlik ve uyumluluk",
+            "FinOps maliyet optimizasyonu",
+            "Ekip egitimi ve yetkilendirme",
+            "Ucaylik is degerlendirmeleri"
+          ],
+          "cta": "Satis Ekibiyle Iletisime Gecin"
+        }
+      ]
+    }
+  },
+  "ecommerce": {
+    "hero": {
+      "eyebrow": "E-Ticaret Cozumleri",
+      "title": "Dijital Imparatorlugunuzu",
+      "titleAccent": "Kurun",
+      "description": "Isletmenizi ileri teknoloji e-ticaret cozumleriyle donusturun. Ozel magaza arayuzlerinden kurumsal pazaryerlerine kadar, ziyaretcileri sadik musterilere donusturen online magazalar insa ediyoruz.",
+      "startProject": "Magazanizi Baslatın",
+      "viewPortfolio": "Portfoyu Goruntule"
+    },
+    "process": {
+      "steps": [
+        {
+          "number": "01",
+          "title": "Strateji ve Planlama",
+          "description": "Basarili bir e-ticaret stratejisi olusturmak icin pazari, rakipleri ve hedeflerinizi analiz ediyoruz."
+        },
+        {
+          "number": "02",
+          "title": "Tasarim ve Gelistirme",
+          "description": "Sorunsuz odeme deneyimiyle donusum icin optimize edilmis, gorsel olarak etkileyici magazalar insa ediyoruz."
+        },
+        {
+          "number": "03",
+          "title": "Lansman ve Olceklendirme",
+          "description": "Guvenle lansman yapin ve veri odakli optimizasyonlarla isletmenizi buyutun."
+        }
+      ]
+    },
+    "services": {
+      "title": "E-Ticaret Yetenekleri",
+      "subtitle": "Satislari en ust duzeye cikarmak ve olaganustu alisveris deneyimleri sunmak icin tasarlanmis kapsamli e-ticaret cozumleri.",
+      "items": [
+        {
+          "title": "Ozel Magaza Arayuzu Gelistirme",
+          "description": "Maksimum performans ve esneklik icin modern framework'lerle insa edilmis, markaniza ozel benzersiz online magazalar.",
+          "description_note": ""
+        },
+        {
+          "title": "Odeme Sistemi Entegrasyonu",
+          "description": "Birden fazla odeme kapisi, simdi al sonra ode secenekleri ve dolandiricilik korumasiyla guvenli odeme isleme."
+        },
+        {
+          "title": "Envanter ve Kargo Yonetimi",
+          "description": "Anlik envanter yonetimi, coklu depo destegi ve kargo saglayici entegrasyonu."
+        },
+        {
+          "title": "Analitik ve Raporlama",
+          "description": "Satislari, musteri davranislarini ve donusum metriklerini izlemek icin kapsamli kontrol panelleri."
+        },
+        {
+          "title": "Platform Entegrasyonu",
+          "description": "ERP, CRM sistemleri, pazarlama araclari ve ucuncu taraf pazaryerleriyle sorunsuz entegrasyon."
+        },
+        {
+          "title": "Uluslararasi Ticaret",
+          "description": "Yerellestirilmis odeme sayfalari ve vergi uyumuyla birden fazla para birimi ve dil destegi."
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Basari Hikayeleri",
+      "title": "E-Ticaret Sonuclari",
+      "items": [
+        {
+          "quote": "Yeni magazanin lansmanindan sonraki 6 ay icinde online satislarimiz uc katina cikti. Yalnizca odeme sayfasi optimizasyonu donusum oranini %40 artirdi.",
+          "author": "Sarah Mitchell",
+          "role": "CEO, LuxeStyle Fashion"
+        },
+        {
+          "quote": "Insa ettikleri envanter sistemi bize haftada 20 saat tasarruf ettirdi ve fazla satis sorunlarini tamamen ortadan kaldirdi.",
+          "author": "David Chen",
+          "role": "Operasyon Muduru, TechGear Pro"
+        },
+        {
+          "quote": "Ilk gunden itibaren magaza Black Friday trafigini hicbir sorun yasamadan karsiladi. Yaptigimiz en iyi yatirim.",
+          "author": "Maria Santos",
+          "role": "Kurucu, Organic Harvest"
+        }
+      ]
+    },
+    "faq": {
+      "title": "E-Ticaret Hakkinda Sorular",
+      "items": [
+        {
+          "question": "Isletmem icin hangi platform en uygun?",
+          "answer": "Ihtiyaclariniza bagli. Shopify hizli lansman icin mukemmel, WooCommerce WordPress entegrasyonu icin, Magento buyuk isletmeler icin ve ozel cozumler benzersiz gereksinimler icin idealdir. Kesif asamasinda size en uygun secimi belirlemenize yardimci olacagiz."
+        },
+        {
+          "question": "Bir online magaza insa etmek ne kadar surer?",
+          "answer": "Temel bir magaza 4 ila 6 hafta surer, karmasik ozel cozumler ise 3 ila 6 ay arasinda tamamlanabilir. Gereksinimlerinizi anladiktan sonra detayli zaman cizelgeleri sunuyoruz."
+        },
+        {
+          "question": "Mevcut magazami tasiyabilir misiniz?",
+          "answer": "Evet, e-ticaret goclerinde uzmaniz. Urunleri, musterileri ve siparisleri tasiyarak surec boyunca SEO siralamanizi koruyoruz."
+        },
+        {
+          "question": "Surekli destek sagliyor musunuz?",
+          "answer": "Kesinlikle. Magazanizin sorunsuz calismasini saglamak icin guvenlik guncellemeleri, performans izleme ve ozellik iyilestirmelerini kapsayan bakim paketleri sunuyoruz."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Online Satisa Hazir misiniz?",
+      "description": "Urunlerinizi kara ve ziyaretcilerinizi sadik musterilere donusturen bir e-ticaret platformu insa edelim.",
+      "schedule": "Danismanlik Randevusu Alin",
+      "caseStudies": "Basari Hikayelerini Goruntule"
     }
   }
 }

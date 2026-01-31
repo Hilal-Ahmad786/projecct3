@@ -35,7 +35,8 @@
     "copied": "Kopiert",
     "print": "Drucken",
     "export": "Exportieren",
-    "import": "Importieren"
+    "import": "Importieren",
+    "getQuote": "Angebot anfordern"
   },
   "metadata": {
     "defaultTitle": "PakSoft – Moderne Digitallösungen",
@@ -442,6 +443,33 @@
             "API-Endpoint-Management",
             "24/7 Uptime-SLA"
           ]
+        },
+        "promptEngineering": {
+          "title": "Prompt Engineering Retainer",
+          "features": [
+            "Individuelle Prompt-Optimierung",
+            "Monatliche Prompt-Reviews & Updates",
+            "A/B-Tests für Prompts",
+            "Performance-Analytics-Dashboard"
+          ]
+        },
+        "ragMaintenance": {
+          "title": "RAG-System-Wartung",
+          "features": [
+            "Vektordatenbank-Optimierung",
+            "Dokumentenverarbeitungs-Pipeline",
+            "Überwachung der Abrufgenauigkeit",
+            "Wissensdatenbank-Updates"
+          ]
+        },
+        "aiAgentMonitoring": {
+          "title": "AI-Agent-Überwachung",
+          "features": [
+            "Agent-Performance-Tracking",
+            "Analyse der Konversationsqualität",
+            "Kontinuierlicher Verbesserungszyklus",
+            "Integrations-Gesundheitschecks"
+          ]
         }
       },
       "projects": {
@@ -514,8 +542,83 @@
             "Setup, Schulung & Dokumentation",
             "Langfristige Strategie-Beratung"
           ]
+        },
+        "promptEngineeringProject": {
+          "title": "Prompt Engineering Projekt",
+          "price": "$3.000–$8.000",
+          "features": [
+            "Entwicklung einer individuellen Prompt-Bibliothek",
+            "Chain-of-Thought-Optimierung",
+            "Multi-Modell-Prompt-Strategien",
+            "Dokumentation & Schulung"
+          ]
+        },
+        "ragSolution": {
+          "title": "RAG-Lösungsentwicklung",
+          "price": "$12.000–$28.000",
+          "features": [
+            "Vektordatenbank-Setup (Pinecone/Weaviate)",
+            "Dokumentenverarbeitungs-Pipeline",
+            "Semantische Suchintegration",
+            "Individuelle Abrufstrategien"
+          ]
+        },
+        "aiAgentDevelopment": {
+          "title": "AI-Agent-Entwicklung",
+          "price": "$8.000–$20.000",
+          "features": [
+            "Multi-Tool-Agent-Architektur",
+            "Individuelle Action-Handler",
+            "Speicher- & Kontextmanagement",
+            "Human-in-the-Loop-Workflows"
+          ]
+        },
+        "llmFinetuning": {
+          "title": "LLM Fine-Tuning Projekt",
+          "price": "$15.000–$35.000",
+          "features": [
+            "Trainingsdaten-Aufbereitung",
+            "Modell-Fine-Tuning (GPT/Llama/Mistral)",
+            "Evaluation & Benchmarking",
+            "Deployment & API-Setup"
+          ]
+        },
+        "computerVision": {
+          "title": "Computer Vision Lösung",
+          "price": "$10.000–$25.000",
+          "features": [
+            "Objekterkennung & Klassifizierung",
+            "Bildsegmentierungsmodelle",
+            "Echtzeit-Videoverarbeitung",
+            "Edge-Deployment-Optionen"
+          ]
+        },
+        "conversationalAiProject": {
+          "title": "Conversational AI Projekt",
+          "price": "$8.000–$18.000",
+          "features": [
+            "Individuelle Chatbot-Entwicklung",
+            "Multi-Channel-Integration",
+            "NLU & Intent-Erkennung",
+            "Analytics & Gesprächseinblicke"
+          ]
+        },
+        "mlopsSetup": {
+          "title": "MLOps-Infrastruktur",
+          "price": "$6.000–$15.000",
+          "features": [
+            "ML-Pipeline-Automatisierung",
+            "Modell-Versionierung & Registry",
+            "Automatisierte Trainings-Workflows",
+            "Monitoring- & Alerting-Setup"
+          ]
         }
-      }
+      },
+      "perMonth": "/Monat",
+      "perYear": "/Jahr",
+      "whatsIncluded": "Was enthalten ist",
+      "projectScope": "Projektumfang",
+      "getDetailedQuote": "Detailliertes Angebot anfordern"
     },
     "whyUs": {
       "eyebrow": "Warum wir",
@@ -793,7 +896,17 @@
         "technicalSupport": "Technischer Support",
         "partnership": "Partnerschaft",
         "other": "Sonstiges"
-      }
+      },
+      "phone": "Telefonnummer (Optional)",
+      "phonePlaceholder": "Geben Sie Ihre Telefonnummer ein",
+      "alsoSendWhatsApp": "Auch per WhatsApp senden für schnellere Antwort",
+      "sendViaWhatsApp": "Per WhatsApp senden",
+      "newInquiry": "Neue Anfrage von der Website",
+      "fillAllFields": "Bitte füllen Sie alle Pflichtfelder aus, bevor Sie per WhatsApp senden",
+      "whatHappensNext": "Was passiert als Nächstes?",
+      "nextStep1": "Wir prüfen Ihre Nachricht innerhalb von 24 Stunden",
+      "nextStep2": "Unser Team wird sich mit Ihnen in Verbindung setzen, um Ihr Projekt zu besprechen",
+      "nextStep3": "Wir erstellen Ihnen ein detailliertes Angebot mit Zeitplan"
     },
     "nextSteps": {
       "title": "Wie geht es weiter?",
@@ -1346,32 +1459,86 @@
     "crimson": "Crimson-Button"
   },
   "forms": {
-    "placeholders": {
-      "name": "Geben Sie Ihren Namen ein",
-      "email": "Geben Sie Ihre E-Mail ein",
-      "phone": "Geben Sie Ihre Telefonnummer ein",
-      "message": "Ihre Nachricht",
-      "subject": "Betreff wählen",
-      "company": "Geben Sie Ihren Firmennamen ein"
-    },
-    "labels": {
-      "firstName": "Vorname",
-      "lastName": "Nachname",
-      "fullName": "Vollständiger Name",
-      "email": "E-Mail",
-      "phone": "Telefon",
-      "company": "Firma",
-      "subject": "Betreff",
-      "message": "Nachricht",
-      "budget": "Budget",
-      "timeline": "Zeitplan"
-    },
-    "errors": {
-      "required": "Dieses Feld ist erforderlich",
-      "invalidEmail": "Ungültige E-Mail-Adresse",
-      "invalidPhone": "Ungültige Telefonnummer",
-      "tooShort": "Zu kurz",
-      "tooLong": "Zu lang"
+    "projectRequest": {
+      "title": "Erzählen Sie uns von Ihrem Projekt",
+      "step": "Schritt",
+      "of": "von",
+      "steps": {
+        "step1": "Kontaktinformationen",
+        "step2": "Projekttyp",
+        "step3": "Projektdetails",
+        "step4": "Technische Anforderungen",
+        "step5": "Budget & Zeitplan"
+      },
+      "fields": {
+        "name": "Vollständiger Name",
+        "email": "E-Mail-Adresse",
+        "phone": "Telefonnummer",
+        "company": "Firmenname",
+        "website": "Website-URL",
+        "serviceType": "Dienstleistungstyp",
+        "projectTitle": "Projekttitel",
+        "description": "Projektbeschreibung",
+        "goals": "Projektziele",
+        "targetAudience": "Zielgruppe",
+        "techPreferences": "Technologiepräferenzen",
+        "integrations": "Erforderliche Integrationen",
+        "performanceReqs": "Leistungsanforderungen",
+        "budgetRange": "Budgetbereich",
+        "timeline": "Zeitplan",
+        "urgencyLevel": "Dringlichkeitsstufe",
+        "preferredStartDate": "Bevorzugtes Startdatum",
+        "additionalNotes": "Zusätzliche Hinweise",
+        "attachments": "Projektanhänge (Optional)"
+      },
+      "hints": {
+        "attachments": "RFP-Dokumente, Mockups, Wireframes oder Referenzmaterialien hochladen"
+      },
+      "placeholders": {
+        "name": "Geben Sie Ihren vollständigen Namen ein",
+        "email": "sie@firma.de",
+        "phone": "+49 (555) 000-0000",
+        "company": "Ihr Firmenname",
+        "selectService": "Wählen Sie eine Dienstleistung",
+        "projectTitle": "Geben Sie Ihrem Projekt einen Namen",
+        "description": "Beschreiben Sie Ihr Projekt detailliert (mindestens 50 Zeichen)",
+        "goals": "Was möchten Sie mit diesem Projekt erreichen?",
+        "targetAudience": "Wer ist Ihre Zielgruppe?",
+        "techPreferences": "Bevorzugte Technologien? (z.B. React, Python, AWS)",
+        "integrations": "Zu integrierende Systeme (z.B. CRM, Zahlungsgateways)",
+        "performanceReqs": "Spezifische Leistungsanforderungen? (z.B. Ladezeit, gleichzeitige Benutzer)",
+        "additionalNotes": "Weitere Informationen, die Sie teilen möchten"
+      },
+      "budgetOptions": {
+        "small": "€5.000 - €15.000",
+        "medium": "€15.000 - €50.000",
+        "large": "€50.000 - €150.000",
+        "enterprise": "€150.000+",
+        "custom": "Individuelles Budget"
+      },
+      "timelineOptions": {
+        "urgent": "Weniger als 1 Monat",
+        "standard": "1-3 Monate",
+        "flexible": "3-6 Monate",
+        "longTerm": "6+ Monate"
+      },
+      "urgencyOptions": {
+        "low": "Niedrig - Flexible Zeitplanung",
+        "normal": "Normal - Standardpriorität",
+        "high": "Hoch - Benötigt bald Aufmerksamkeit",
+        "critical": "Kritisch - Dringende Anforderung"
+      },
+      "next": "Weiter",
+      "previous": "Zurück",
+      "cancel": "Abbrechen",
+      "submit": "Anfrage senden",
+      "submitting": "Wird gesendet...",
+      "close": "Schließen",
+      "successTitle": "Anfrage gesendet!",
+      "successMessage": "Vielen Dank für Ihre Projektanfrage. Unser Team wird Ihre Anforderungen prüfen und sich innerhalb von 24 Stunden bei Ihnen melden.",
+      "draftFound": "Sie haben einen ungespeicherten Entwurf. Möchten Sie fortfahren?",
+      "discard": "Verwerfen",
+      "restore": "Wiederherstellen"
     }
   },
   "navigation": {
@@ -1453,89 +1620,6 @@
       "automation": "Hallo! Ich möchte einige meiner Geschäftsprozesse automatisieren. Können wir Automatisierungslösungen besprechen?",
       "pricing": "Hallo! Ich möchte mehr über Ihre Preispakete erfahren und welche Dienstleistungen enthalten sind.",
       "support": "Hallo! Ich benötige technischen Support für mein Projekt. Können Sie mir helfen?"
-    }
-  },
-  "forms": {
-    "projectRequest": {
-      "title": "Erzählen Sie uns von Ihrem Projekt",
-      "step": "Schritt",
-      "of": "von",
-      "steps": {
-        "step1": "Kontaktinformationen",
-        "step2": "Projekttyp",
-        "step3": "Projektdetails",
-        "step4": "Technische Anforderungen",
-        "step5": "Budget & Zeitplan"
-      },
-      "fields": {
-        "name": "Vollständiger Name",
-        "email": "E-Mail-Adresse",
-        "phone": "Telefonnummer",
-        "company": "Firmenname",
-        "website": "Website-URL",
-        "serviceType": "Dienstleistungstyp",
-        "projectTitle": "Projekttitel",
-        "description": "Projektbeschreibung",
-        "goals": "Projektziele",
-        "targetAudience": "Zielgruppe",
-        "techPreferences": "Technologiepräferenzen",
-        "integrations": "Erforderliche Integrationen",
-        "performanceReqs": "Leistungsanforderungen",
-        "budgetRange": "Budgetbereich",
-        "timeline": "Zeitplan",
-        "urgencyLevel": "Dringlichkeitsstufe",
-        "preferredStartDate": "Bevorzugtes Startdatum",
-        "additionalNotes": "Zusätzliche Hinweise",
-        "attachments": "Projektanhänge (Optional)"
-      },
-      "hints": {
-        "attachments": "RFP-Dokumente, Mockups, Wireframes oder Referenzmaterialien hochladen"
-      },
-      "placeholders": {
-        "name": "Geben Sie Ihren vollständigen Namen ein",
-        "email": "sie@firma.de",
-        "phone": "+49 (555) 000-0000",
-        "company": "Ihr Firmenname",
-        "selectService": "Wählen Sie eine Dienstleistung",
-        "projectTitle": "Geben Sie Ihrem Projekt einen Namen",
-        "description": "Beschreiben Sie Ihr Projekt detailliert (mindestens 50 Zeichen)",
-        "goals": "Was möchten Sie mit diesem Projekt erreichen?",
-        "targetAudience": "Wer ist Ihre Zielgruppe?",
-        "techPreferences": "Bevorzugte Technologien? (z.B. React, Python, AWS)",
-        "integrations": "Zu integrierende Systeme (z.B. CRM, Zahlungsgateways)",
-        "performanceReqs": "Spezifische Leistungsanforderungen? (z.B. Ladezeit, gleichzeitige Benutzer)",
-        "additionalNotes": "Weitere Informationen, die Sie teilen möchten"
-      },
-      "budgetOptions": {
-        "small": "€5.000 - €15.000",
-        "medium": "€15.000 - €50.000",
-        "large": "€50.000 - €150.000",
-        "enterprise": "€150.000+",
-        "custom": "Individuelles Budget"
-      },
-      "timelineOptions": {
-        "urgent": "Weniger als 1 Monat",
-        "standard": "1-3 Monate",
-        "flexible": "3-6 Monate",
-        "longTerm": "6+ Monate"
-      },
-      "urgencyOptions": {
-        "low": "Niedrig - Flexible Zeitplanung",
-        "normal": "Normal - Standardpriorität",
-        "high": "Hoch - Benötigt bald Aufmerksamkeit",
-        "critical": "Kritisch - Dringende Anforderung"
-      },
-      "next": "Weiter",
-      "previous": "Zurück",
-      "cancel": "Abbrechen",
-      "submit": "Anfrage senden",
-      "submitting": "Wird gesendet...",
-      "close": "Schließen",
-      "successTitle": "Anfrage gesendet!",
-      "successMessage": "Vielen Dank für Ihre Projektanfrage. Unser Team wird Ihre Anforderungen prüfen und sich innerhalb von 24 Stunden bei Ihnen melden.",
-      "draftFound": "Sie haben einen ungespeicherten Entwurf. Möchten Sie fortfahren?",
-      "discard": "Verwerfen",
-      "restore": "Wiederherstellen"
     }
   },
   "servicePages": {
@@ -1634,6 +1718,415 @@
         "primaryCta": "Feinabstimmungs-Angebot anfordern",
         "secondaryCta": "Technische Bewertung"
       }
+    },
+    "webDevelopment": {
+      "hero": {
+        "eyebrow": "Digitale Meisterwerke schaffen",
+        "title": "Webentwicklung",
+        "titleAccent": "mit Exzellenz",
+        "description": "Wir entwickeln leistungsstarke Webanwendungen, die das Unternehmenswachstum vorantreiben. Von beeindruckenden Landing Pages bis hin zu komplexen Enterprise-Lösungen liefert unser Team pixelgenaue, skalierbare und blitzschnelle digitale Erlebnisse.",
+        "cta": "Starten Sie Ihr Projekt",
+        "secondaryCta": "Portfolio ansehen"
+      },
+      "services": {
+        "eyebrow": "Was wir entwickeln",
+        "title": "Webentwicklungs-",
+        "titleAccent": "Leistungen",
+        "subtitle": "Von einfachen Websites bis hin zu komplexen Webanwendungen liefern wir effektive Lösungen.",
+        "items": [
+          {
+            "title": "Individuelle Webanwendungen",
+            "description": "Maßgeschneiderte Lösungen, entwickelt mit modernsten Frameworks wie React, Next.js und Vue.",
+            "features": [
+              "Single Page Applications",
+              "Progressive Web Apps",
+              "Echtzeit-Anwendungen"
+            ]
+          },
+          {
+            "title": "E-Commerce-Lösungen",
+            "description": "Skalierbare Online-Shops mit reibungslosem Checkout und integrierter Bestandsverwaltung.",
+            "features": [
+              "Individuelle Storefronts",
+              "Payment-Integration",
+              "Bestandssysteme"
+            ]
+          },
+          {
+            "title": "Enterprise-Portale",
+            "description": "Sichere, skalierbare Plattformen für interne Abläufe und Kundenmanagement.",
+            "features": [
+              "Dashboard-Systeme",
+              "CRM-Integration",
+              "Rollenbasierte Berechtigungen"
+            ]
+          },
+          {
+            "title": "API-Entwicklung",
+            "description": "Robuste Programmierschnittstellen, die Ihre Anwendungen antreiben und mit externen Diensten integrieren.",
+            "features": [
+              "RESTful APIs",
+              "GraphQL",
+              "Microservices"
+            ]
+          }
+        ]
+      },
+      "process": {
+        "eyebrow": "Wie wir arbeiten",
+        "title": "Entwicklungs-",
+        "titleAccent": "methodik",
+        "subtitle": "Eine bewährte Methodik, die Qualität und pünktliche Lieferung gewährleistet.",
+        "steps": [
+          {
+            "number": "01",
+            "title": "Discovery",
+            "description": "Verstehen Ihrer Ziele, Zielgruppe und technischen Anforderungen."
+          },
+          {
+            "number": "02",
+            "title": "Design",
+            "description": "Erstellung von Wireframes und Prototypen für nutzerzentrierte Erlebnisse."
+          },
+          {
+            "number": "03",
+            "title": "Entwicklung",
+            "description": "Aufbau mit sauberem Code, modernen Frameworks und Best Practices."
+          },
+          {
+            "number": "04",
+            "title": "Testing",
+            "description": "Umfassende Qualitätssicherung für Leistung, Sicherheit und Kompatibilität."
+          },
+          {
+            "number": "05",
+            "title": "Launch",
+            "description": "Reibungsloses Deployment mit kontinuierlichem Monitoring und Support."
+          }
+        ]
+      },
+      "whyUs": {
+        "eyebrow": "Warum wir",
+        "title": "Technische Exzellenz",
+        "titleAccent": "trifft auf Design",
+        "subtitle": "Wir schreiben nicht nur Code – wir schaffen digitale Erlebnisse, die Nutzer begeistern.",
+        "features": [
+          {
+            "title": "Moderne Technologien",
+            "description": "Wir verwenden neueste Technologien wie React, Next.js, TypeScript und Node.js."
+          },
+          {
+            "title": "Performance First",
+            "description": "Optimiert für Geschwindigkeit mit Core Web Vitals, die über dem Branchenstandard liegen."
+          },
+          {
+            "title": "Skalierbare Architektur",
+            "description": "Entwickelt, um mit Ihrem Unternehmen zu wachsen – vom Startup bis zum Großunternehmen."
+          },
+          {
+            "title": "Sicherheitsfokus",
+            "description": "Branchenübliche Sicherheitspraktiken und regelmäßige Schwachstellenanalysen."
+          }
+        ]
+      },
+      "testimonials": {
+        "eyebrow": "Kundenerfolge",
+        "title": "Was unsere",
+        "titleAccent": "Kunden sagen",
+        "items": [
+          {
+            "quote": "PakSoft hat unsere veraltete Website in eine moderne, konversionsstarke Plattform verwandelt. Die Leads sind um 300 % gestiegen.",
+            "author": "Sarah Johnson",
+            "role": "CEO, TechStart Inc."
+          },
+          {
+            "quote": "Das Team hat unsere Erwartungen übertroffen. Ihre Liebe zum Detail und technische Expertise sind unübertroffen.",
+            "author": "Michael Chen",
+            "role": "CTO, DataFlow Systems"
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "Häufig gestellte Fragen",
+        "title": "Häufige",
+        "titleAccent": "Fragen",
+        "items": [
+          {
+            "question": "Welche Technologien verwenden Sie?",
+            "answer": "Wir sind spezialisiert auf React, Next.js, TypeScript, Node.js, Python und Cloud-Plattformen wie AWS und Vercel."
+          },
+          {
+            "question": "Wie lange dauert ein typisches Projekt?",
+            "answer": "Der Zeitrahmen variiert je nach Umfang. Eine einfache Website dauert 4 bis 6 Wochen, während komplexe Anwendungen 3 bis 6 Monate benötigen können."
+          },
+          {
+            "question": "Bieten Sie fortlaufenden Support an?",
+            "answer": "Ja, wir bieten Wartungspakete an, die Updates, Monitoring und Feature-Verbesserungen umfassen."
+          },
+          {
+            "question": "Können Sie mit unserem bestehenden Team zusammenarbeiten?",
+            "answer": "Selbstverständlich. Wir können Ihr Team verstärken oder eigenständig arbeiten – ganz nach Ihren Bedürfnissen."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Bereit, Ihr digitales Projekt zu starten?",
+        "description": "Lassen Sie uns eine digitale Lösung entwickeln, die messbare Ergebnisse für Ihr Unternehmen erzielt.",
+        "primaryCta": "Kostenloses Angebot erhalten",
+        "secondaryCta": "Gespräch buchen"
+      }
+    },
+    "machineLearning": {
+      "hero": {
+        "eyebrow": "Intelligente Lösungen",
+        "title": "Machine Learning",
+        "titleAccent": "& Innovation",
+        "description": "Verwandeln Sie Ihre Daten in umsetzbare Erkenntnisse mit maßgeschneiderten Machine-Learning-Lösungen. Von Predictive Analytics bis Computer Vision entwickeln wir AI-Systeme, die echten Mehrwert für Ihr Unternehmen schaffen.",
+        "cta": "AI-Lösungen entdecken",
+        "secondaryCta": "Fallstudien ansehen"
+      },
+      "services": {
+        "eyebrow": "ML-Leistungen",
+        "title": "Machine-Learning-",
+        "titleAccent": "Services",
+        "subtitle": "Umfassende Machine-Learning-Lösungen, speziell auf Ihre geschäftlichen Anforderungen zugeschnitten.",
+        "items": [
+          {
+            "title": "Predictive Analytics",
+            "description": "Prognostizieren Sie Trends, Kundenverhalten und Geschäftsergebnisse mit datengestützten Modellen.",
+            "features": [
+              "Nachfrageprognosen",
+              "Abwanderungsvorhersage",
+              "Risikobewertung"
+            ]
+          },
+          {
+            "title": "Natural Language Processing",
+            "description": "Gewinnen Sie Erkenntnisse aus Textdaten durch Sentiment-Analyse, Entitätserkennung und mehr.",
+            "features": [
+              "Textklassifizierung",
+              "Sentiment-Analyse",
+              "Named Entity Recognition"
+            ]
+          },
+          {
+            "title": "Computer Vision",
+            "description": "Visuelle KI für Bildklassifizierung, Objekterkennung und Videoanalyse.",
+            "features": [
+              "Bilderkennung",
+              "Objekterkennung",
+              "Video-Analytics"
+            ]
+          },
+          {
+            "title": "Empfehlungssysteme",
+            "description": "Personalisierte Empfehlungen, die Engagement und Conversion-Raten steigern.",
+            "features": [
+              "Produktempfehlungen",
+              "Content-Personalisierung",
+              "Nutzer-Matching"
+            ]
+          }
+        ]
+      },
+      "cta": {
+        "title": "Bereit, AI zu nutzen?",
+        "description": "Lassen Sie uns intelligente Systeme entwickeln, die Ihre Geschäftsprozesse transformieren.",
+        "primaryCta": "AI-Beratung erhalten",
+        "secondaryCta": "ML-Projekte ansehen"
+      }
+    },
+    "aiSolutions": {
+      "hero": {
+        "eyebrow": "Zukunftstechnologien",
+        "title": "Lösungen für",
+        "titleAccent": "Künstliche Intelligenz",
+        "description": "Nutzen Sie die Kraft der Künstlichen Intelligenz, um Prozesse zu automatisieren, Entscheidungen zu optimieren und intelligente Erlebnisse für Ihre Kunden zu schaffen.",
+        "cta": "Ihre AI-Reise starten",
+        "secondaryCta": "Leistungen entdecken"
+      },
+      "cta": {
+        "title": "Bereit für die Transformation mit AI?",
+        "description": "Werden Sie unser Partner bei der Implementierung von KI-Lösungen, die messbare Ergebnisse liefern.",
+        "primaryCta": "AI-Bewertung erhalten",
+        "secondaryCta": "Beratung buchen"
+      }
+    },
+    "dataAnalytics": {
+      "hero": {
+        "eyebrow": "Datengestützte Entscheidungen",
+        "title": "Daten-",
+        "titleAccent": "analyse",
+        "description": "Verwandeln Sie Rohdaten in strategische Erkenntnisse. Unsere Analytics-Lösungen helfen Ihnen, Ihr Unternehmen besser zu verstehen und fundierte Entscheidungen zu treffen, die das Wachstum vorantreiben.",
+        "cta": "Entfesseln Sie Ihre Daten",
+        "secondaryCta": "Dashboards ansehen"
+      },
+      "cta": {
+        "title": "Bereit, Ihre Daten zu nutzen?",
+        "description": "Lassen Sie uns Analytics-Lösungen entwickeln, die umsetzbare Erkenntnisse freilegen.",
+        "primaryCta": "Datenbewertung erhalten",
+        "secondaryCta": "Beispiele ansehen"
+      }
+    },
+    "pythonAutomation": {
+      "hero": {
+        "eyebrow": "Prozesse vereinfachen",
+        "title": "Python-",
+        "titleAccent": "Automatisierung",
+        "description": "Befreien Sie sich von repetitiven Aufgaben und steigern Sie die Produktivität mit maßgeschneiderten Python-Automatisierungslösungen. Von der Datenverarbeitung bis zur Workflow-Automatisierung entwickeln wir Systeme, die für Sie arbeiten.",
+        "cta": "Automatisieren Sie Ihr Geschäft",
+        "secondaryCta": "Beispiele ansehen"
+      },
+      "cta": {
+        "title": "Bereit für Automatisierung?",
+        "description": "Lassen Sie uns Automatisierungslösungen entwickeln, die Zeit sparen und Fehler reduzieren.",
+        "primaryCta": "Automatisierungs-Angebot erhalten",
+        "secondaryCta": "Demo buchen"
+      }
+    },
+    "mobileDevelopment": {
+      "hero": {
+        "eyebrow": "Hochleistungs-Apps",
+        "title": "Mobile-App-",
+        "titleAccent": "Entwicklung",
+        "description": "Schaffen Sie beeindruckende mobile Erlebnisse mit nativen und plattformübergreifenden Apps. Wir entwickeln iOS- und Android-Anwendungen, die Nutzer begeistern und auf die Unternehmen vertrauen.",
+        "cta": "Ihre App entwickeln",
+        "secondaryCta": "Portfolio ansehen"
+      },
+      "cta": {
+        "title": "Bereit für den mobilen Start?",
+        "description": "Lassen Sie uns eine App entwickeln, die Ihre Nutzer begeistert und Ihr Geschäft wachsen lässt.",
+        "primaryCta": "App-Angebot erhalten",
+        "secondaryCta": "Gespräch buchen"
+      }
+    },
+    "digitalMarketing": {
+      "hero": {
+        "eyebrow": "Digitale Präsenz stärken",
+        "title": "Digital-",
+        "titleAccent": "marketing",
+        "description": "Erreichen Sie Ihre Zielgruppe mit datengestützten Digitalmarketing-Strategien. Von SEO bis bezahlte Werbung helfen wir Ihnen, Ihre Online-Präsenz auszubauen und Conversions zu steigern.",
+        "cta": "Ihr Geschäft wachsen lassen",
+        "secondaryCta": "Ergebnisse ansehen"
+      },
+      "cta": {
+        "title": "Bereit für digitales Wachstum?",
+        "description": "Lassen Sie uns eine Digitalmarketing-Strategie entwickeln, die messbare Ergebnisse liefert.",
+        "primaryCta": "Marketingplan erhalten",
+        "secondaryCta": "Fallstudien ansehen"
+      }
+    },
+    "uiUxDesign": {
+      "hero": {
+        "eyebrow": "Design, das konvertiert",
+        "title": "UI/UX-",
+        "titleAccent": "Design",
+        "description": "Schaffen Sie intuitive und ansprechende Benutzeroberflächen, die Nutzer begeistern. Unser Design-Team vereint Ästhetik mit Funktionalität, um außergewöhnliche digitale Erlebnisse zu liefern.",
+        "cta": "Design-Projekt starten",
+        "secondaryCta": "Portfolio ansehen"
+      },
+      "cta": {
+        "title": "Bereit für herausragendes Design?",
+        "description": "Lassen Sie uns Interfaces gestalten, die Nutzer begeistern und Geschäftsergebnisse erzielen.",
+        "primaryCta": "Design-Angebot erhalten",
+        "secondaryCta": "Unsere Arbeiten ansehen"
+      }
+    },
+    "apiDevelopment": {
+      "hero": {
+        "eyebrow": "Alles verbinden",
+        "title": "API-",
+        "titleAccent": "Entwicklung",
+        "description": "Entwickeln Sie leistungsstarke Programmierschnittstellen, die Ihre Anwendungen antreiben und Ihre Systeme verbinden. Wir erstellen skalierbare, sichere und hervorragend dokumentierte APIs, die Entwickler begeistern.",
+        "cta": "Ihre API entwickeln",
+        "secondaryCta": "Dokumentation ansehen"
+      },
+      "cta": {
+        "title": "Bereit für die Vernetzung?",
+        "description": "Lassen Sie uns APIs entwickeln, die Ihr digitales Ökosystem antreiben.",
+        "primaryCta": "API-Angebot erhalten",
+        "secondaryCta": "Technische Beratung"
+      }
+    },
+    "eCommerce": {
+      "hero": {
+        "eyebrow": "Online verkaufen",
+        "title": "E-Commerce-",
+        "titleAccent": "Lösungen",
+        "description": "Starten und skalieren Sie Ihren Online-Shop mit umfassenden E-Commerce-Lösungen. Von individuellen Storefronts bis hin zu Enterprise-Plattformen entwickeln wir Shops, die konvertieren.",
+        "cta": "Shop starten",
+        "secondaryCta": "Shops ansehen"
+      },
+      "cta": {
+        "title": "Bereit, online zu verkaufen?",
+        "description": "Lassen Sie uns eine E-Commerce-Plattform aufbauen, die Ihr Geschäft wachsen lässt.",
+        "primaryCta": "Shop-Angebot erhalten",
+        "secondaryCta": "Erfolgsgeschichten ansehen"
+      }
+    },
+    "devopsCloud": {
+      "hero": {
+        "eyebrow": "Mit Zuversicht skalieren",
+        "title": "DevOps",
+        "titleAccent": "& Cloud",
+        "description": "Optimieren Sie Ihre Infrastruktur mit modernen DevOps-Praktiken und Cloud-Lösungen. Wir helfen Ihnen, schneller zu deployen, effizienter zu skalieren und Zuverlässigkeit zu gewährleisten.",
+        "cta": "Infrastruktur optimieren",
+        "secondaryCta": "Architektur ansehen"
+      },
+      "cta": {
+        "title": "Bereit zu skalieren?",
+        "description": "Lassen Sie uns eine Infrastruktur aufbauen, die Ihr Wachstum unterstützt.",
+        "primaryCta": "DevOps-Bewertung erhalten",
+        "secondaryCta": "Architektur-Review"
+      }
+    },
+    "cybersecurity": {
+      "hero": {
+        "eyebrow": "Schützen Sie Ihr Unternehmen",
+        "title": "Cyber-",
+        "titleAccent": "sicherheit",
+        "description": "Schützen Sie Ihre digitalen Vermögenswerte mit umfassenden Sicherheitslösungen. Von Penetrationstests bis Compliance helfen wir Ihnen, vor sich ständig weiterentwickelnden Bedrohungen geschützt zu bleiben.",
+        "cta": "Systeme absichern",
+        "secondaryCta": "Sicherheitsbewertung"
+      },
+      "cta": {
+        "title": "Bereit, Ihr Unternehmen abzusichern?",
+        "description": "Lassen Sie uns Ihr Unternehmen vor Cyberbedrohungen schützen.",
+        "primaryCta": "Sicherheitsaudit erhalten",
+        "secondaryCta": "Sicherheitsservices ansehen"
+      }
+    },
+    "conversationalAi": {
+      "hero": {
+        "eyebrow": "Intelligente Gespräche",
+        "title": "Conversational",
+        "titleAccent": "AI",
+        "description": "Entwickeln Sie intelligente Chatbots und virtuelle Assistenten, die Ihre Kunden verstehen und mit ihnen interagieren. Angetrieben durch modernste NLP- und LLM-Technologien.",
+        "cta": "Chatbot entwickeln",
+        "secondaryCta": "Demos ansehen"
+      },
+      "cta": {
+        "title": "Bereit für intelligente Gespräche?",
+        "description": "Lassen Sie uns AI-Assistenten entwickeln, die das Kundenerlebnis transformieren.",
+        "primaryCta": "Chatbot-Angebot erhalten",
+        "secondaryCta": "Demo buchen"
+      }
+    },
+    "llmIntegration": {
+      "hero": {
+        "eyebrow": "Fortschrittliche AI",
+        "title": "LLM-",
+        "titleAccent": "Integration",
+        "description": "Integrieren Sie leistungsstarke Sprachmodelle wie Claude, GPT-4 und Open-Source-Alternativen in Ihre Anwendungen. Wir helfen Ihnen, die neuesten AI-Technologien optimal zu nutzen.",
+        "cta": "AI integrieren",
+        "secondaryCta": "Anwendungsfälle ansehen"
+      },
+      "cta": {
+        "title": "Bereit für die LLM-Integration?",
+        "description": "Lassen Sie uns die Leistungsfähigkeit großer Sprachmodelle in Ihre Anwendungen bringen.",
+        "primaryCta": "Integrations-Angebot erhalten",
+        "secondaryCta": "Technische Beratung"
+      }
     }
   },
   "cta": {
@@ -1651,6 +2144,1798 @@
       "bannerTitle": "Haben Sie ein Projekt im Sinn?",
       "bannerDescription": "Kostenlose Beratung und personalisiertes Angebot erhalten.",
       "startProject": "Projekt starten"
+    }
+  },
+  "megaMenu": {
+    "webDesign": "Web & Design",
+    "aiMl": "KI & Machine Learning",
+    "mobile": "Mobile Apps",
+    "automation": "Automatisierung & DevOps",
+    "marketing": "Marketing & Analytics",
+    "viewAll": "Alle Dienste anzeigen",
+    "services": {
+      "web-development": "Webentwicklung",
+      "e-commerce": "E-Commerce",
+      "api-development": "API-Entwicklung",
+      "ui-ux-design": "UI/UX-Design",
+      "mobile-development": "Mobile App-Entwicklung",
+      "ai-solutions": "KI-Loesungen",
+      "machine-learning": "Machine Learning",
+      "conversational-ai": "Conversational AI",
+      "computer-vision": "Computer Vision",
+      "llm-finetuning": "LLM-Feinabstimmung",
+      "prompt-engineering": "Prompt Engineering",
+      "ai-agents": "KI-Agenten",
+      "rag-solutions": "RAG-Loesungen",
+      "python-automation": "Python-Automatisierung",
+      "devops-cloud": "DevOps & Cloud",
+      "mlops-deployment": "MLOps-Bereitstellung",
+      "digital-marketing": "Digitales Marketing",
+      "data-analytics": "Datenanalyse",
+      "cybersecurity": "Cybersicherheit"
+    }
+  },
+  "aiServices": {
+    "title": "KI-Dienstleistungen",
+    "subtitle": "Umfassende KI-Loesungen fuer moderne Unternehmen",
+    "description": "Von Conversational AI bis Computer Vision bieten wir fortschrittliche und innovative KI-Loesungen.",
+    "aiMaintenance": {
+      "subtitle": "Kontinuierlicher KI-Support",
+      "title": "Wartung von KI-Systemen",
+      "description": "Halten Sie Ihre KI-Systeme mit unseren umfassenden Wartungsdiensten auf hoechster Leistung."
+    },
+    "aiReadinessAudit": {
+      "subtitle": "Bewertung & Strategie",
+      "title": "KI-Bereitschaftsbewertung",
+      "description": "Bewerten Sie die Bereitschaft Ihres Unternehmens fuer die Einfuehrung von KI mit unserem umfassenden Bewertungsrahmen."
+    },
+    "aiSearch": {
+      "subtitle": "Intelligente Suche",
+      "title": "KI-gestuetzte Suche",
+      "description": "Transformieren Sie Ihr Sucherlebnis mit einer KI-gestuetzten semantischen Suchmaschine, die die Absichten der Nutzer versteht."
+    },
+    "aiSecurityReview": {
+      "subtitle": "KI-Sicherheit & Zuverlaessigkeit",
+      "title": "KI-Sicherheitspruefung",
+      "description": "Stellen Sie sicher, dass Ihre KI-Systeme sicher, ethisch und standardkonform sind -- mit unseren umfassenden Sicherheitspruefungen."
+    },
+    "voiceAi": {
+      "subtitle": "Sprachtechnologien",
+      "title": "Sprach-KI",
+      "description": "Entwickeln Sie intelligente Sprachschnittstellen und Spracherkennungssysteme, die natuerliche Gespraeche verstehen."
+    }
+  },
+  "aiSolutions": {
+    "hero": {
+      "eyebrow": "KI & Machine Learning",
+      "title": "Intelligente Loesungen",
+      "titleAccent": "mit kuenstlicher Intelligenz",
+      "description": "Nutzen Sie die Kraft der kuenstlichen Intelligenz, um Ihr Unternehmen zu transformieren. Von Predictive Analytics bis Conversational AI entwickeln wir massgeschneiderte Loesungen, die die Effizienz steigern und neue Moeglichkeiten eroeffnen.",
+      "startProject": "KI-Projekt starten",
+      "viewPortfolio": "Unsere KI-Arbeiten ansehen"
+    },
+    "process": {
+      "steps": [
+        {
+          "number": "01",
+          "title": "Datenanalyse",
+          "description": "Wir analysieren Ihre Datenlandschaft und identifizieren KI-Chancen, die mit Ihren Geschaeftszielen uebereinstimmen."
+        },
+        {
+          "number": "02",
+          "title": "Modellentwicklung",
+          "description": "Unsere Experten erstellen und trainieren massgeschneiderte Machine-Learning-Modelle fuer Ihre spezifischen Anwendungsfaelle und Daten."
+        },
+        {
+          "number": "03",
+          "title": "Bereitstellung & Skalierung",
+          "description": "Nahtlose Bereitstellung mit Monitoring, Optimierung und kontinuierlichen Verbesserungspipelines."
+        }
+      ]
+    },
+    "services": {
+      "title": "KI-Kompetenzen",
+      "subtitle": "Umfassende KI-Loesungen von der Strategie bis zur Bereitstellung, entwickelt um Ihrem Unternehmen einen Wettbewerbsvorteil zu verschaffen.",
+      "items": [
+        {
+          "title": "Conversational AI & Chatbots",
+          "description": "Intelligente virtuelle Assistenten mit Natural Language Processing, die die Kundeninteraktion verbessern und den Support automatisieren."
+        },
+        {
+          "title": "Predictive Analytics",
+          "description": "Datengestuetzte Erkenntnisse, die Trends vorhersagen, Prozesse optimieren und strategische Entscheidungen unterstuetzen."
+        },
+        {
+          "title": "Massgeschneiderte ML-Modelle",
+          "description": "Speziell entwickelte Machine-Learning-Loesungen, die auf Ihren Daten fuer spezifische Geschaeftsanwendungen trainiert werden."
+        },
+        {
+          "title": "Computer Vision",
+          "description": "Bilderkennungs-, Objekterkennungs- und visuelle Inspektionssysteme fuer verschiedene Branchen."
+        },
+        {
+          "title": "Dokumentenverarbeitung",
+          "description": "Intelligente Extraktion, Klassifizierung und Verarbeitung von Dokumenten mit fortschrittlicher OCR- und NLP-Technologie."
+        },
+        {
+          "title": "KI-Integration",
+          "description": "Nahtlose Einbindung von KI-Faehigkeiten in Ihre bestehenden Systeme und Workflows."
+        }
+      ]
+    },
+    "whyUs": {
+      "eyebrow": "Warum wir",
+      "title": "Vertrauenswuerdige KI-Expertise",
+      "description": "Unser Team vereint tiefgreifendes technisches Wissen mit praktischem Geschaeftsverstaendnis, um KI-Loesungen zu liefern, die wirklich wirken.",
+      "reasons": [
+        {
+          "title": "Nachgewiesene Erfolgsbilanz",
+          "description": "Erfolgreiche Bereitstellung von KI-Loesungen in verschiedenen Branchen mit messbarem Return on Investment."
+        },
+        {
+          "title": "Massgeschneiderte Loesungen",
+          "description": "Keine Einheitsloesungen. Wir entwickeln KI, die speziell auf Ihre Anforderungen und Daten zugeschnitten ist."
+        },
+        {
+          "title": "Ethische KI",
+          "description": "Wir legen Wert auf verantwortungsvolle KI-Entwicklung mit Transparenz und Fairness."
+        },
+        {
+          "title": "Umfassende End-to-End-Unterstuetzung",
+          "description": "Von der Idee ueber die Bereitstellung bis darueber hinaus -- wir begleiten Ihre gesamte KI-Reise."
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Erfolgsgeschichten",
+      "title": "Die Wirkung von KI",
+      "items": [
+        {
+          "quote": "Ihr KI-Chatbot hat unsere Support-Tickets um 60% reduziert und gleichzeitig die Kundenzufriedenheitswerte verbessert.",
+          "author": "James Wilson",
+          "role": "CTO, ServicePro"
+        },
+        {
+          "quote": "Das Predictive-Analytics-Dashboard hat unsere Bestandsentscheidungen revolutioniert. Der Ausschuss sank um 40%.",
+          "author": "Maria Santos",
+          "role": "Betriebsleiterin, RetailMax"
+        },
+        {
+          "quote": "Ihr Computer-Vision-System erkennt Maengel, die unsere manuelle Inspektion uebersehen hat. Qualitaetsbeschwerden gingen um 80% zurueck.",
+          "author": "Thomas Anderson",
+          "role": "Werksleiter, ManufactureCo"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Fragen zu KI",
+      "items": [
+        {
+          "question": "Wie viele Daten brauche ich, um mit KI zu beginnen?",
+          "answer": "Das haengt vom Anwendungsfall ab. Einige Loesungen funktionieren bereits mit Hunderten von Beispielen, waehrend andere Tausende benoetigen. Wir bewerten Ihre Daten in der Erkundungsphase und empfehlen den besten Ansatz, einschliesslich Strategien zur Datenanreicherung bei Bedarf."
+        },
+        {
+          "question": "Wie lange dauert die Entwicklung einer KI-Loesung?",
+          "answer": "Ein Proof of Concept dauert in der Regel 4 bis 8 Wochen. Produktionsreife Loesungen dauern je nach Komplexitaet, Datenqualitaet und Integrationsanforderungen zwischen 2 und 6 Monaten. Wir verwenden agile Methoden, um schrittweise Mehrwert zu liefern."
+        },
+        {
+          "question": "Kann KI in unsere bestehenden Systeme integriert werden?",
+          "answer": "Ja. Wir entwickeln KI-Loesungen mit Blick auf Integration und bieten REST APIs, Webhooks und Konnektoren fuer gaengige Plattformen. Wir koennen mit Ihrer bestehenden technischen Infrastruktur und Datenarchitektur arbeiten."
+        },
+        {
+          "question": "Wie steht es um Datenschutz und Sicherheit?",
+          "answer": "Datensicherheit hat hoechste Prioritaet. Wir implementieren Verschluesselung und Zugriffskontrollen und koennen Loesungen On-Premises oder in privaten Cloud-Umgebungen bereitstellen. Wir haben Erfahrung mit Compliance-Anforderungen wie DSGVO, HIPAA und weiteren."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Bereit, das Potenzial der KI zu entfesseln?",
+      "description": "Lassen Sie uns gemeinsam erkunden, wie KI Ihre Geschaeftsprozesse transformieren und Ihr Wachstum vorantreiben kann.",
+      "schedule": "KI-Beratung buchen",
+      "caseStudies": "KI-Fallstudien ansehen"
+    }
+  },
+  "dataAnalytics": {
+    "hero": {
+      "eyebrow": "Datenanalyse-Dienste",
+      "title": "Verwandeln Sie Daten in",
+      "titleAccent": "handlungsrelevante Erkenntnisse",
+      "description": "Wir entwickeln leistungsstarke Analyseloesungen, die Rohdaten in strategische Business Intelligence verwandeln. Von Dashboards bis zu Vorhersagemodellen helfen wir Ihnen, datenbasierte Entscheidungen mit Zuversicht zu treffen.",
+      "startProject": "Analyseprojekt starten",
+      "viewPortfolio": "Fallstudien ansehen"
+    },
+    "process": {
+      "steps": [
+        {
+          "number": "01",
+          "title": "Datenerfassung",
+          "description": "Wir verbinden und integrieren Ihre Datenquellen, um ein einheitliches Datenfundament aufzubauen."
+        },
+        {
+          "number": "02",
+          "title": "Analyse & Modellierung",
+          "description": "Fortschrittliche Analysen und Machine Learning zur Aufdeckung verborgener Muster und Erkenntnisse."
+        },
+        {
+          "number": "03",
+          "title": "Visualisierung",
+          "description": "Interaktive Dashboards und Berichte, die Daten fuer alle zugaenglich machen."
+        }
+      ]
+    },
+    "services": {
+      "title": "Analyse-Kompetenzen",
+      "subtitle": "Umfassende Datenanalyse-Dienste, die das volle Potenzial Ihrer Geschaeftsdaten erschliessen.",
+      "items": [
+        {
+          "title": "Business Intelligence",
+          "description": "Interaktive Dashboards und Berichte fuer Echtzeit-Einblicke in KPIs und Geschaeftskennzahlen."
+        },
+        {
+          "title": "Predictive Analytics",
+          "description": "Machine-Learning-Modelle, die Trends vorhersagen, Ergebnisse prognostizieren und Chancen identifizieren."
+        },
+        {
+          "title": "Data Warehousing",
+          "description": "Skalierbare Data-Warehouse-Loesungen, die Daten aus mehreren Quellen fuer einheitliche Analysen zusammenfuehren."
+        },
+        {
+          "title": "Advanced Analytics",
+          "description": "Statistische Analysen, Data Mining und massgeschneiderte Algorithmen fuer komplexe Geschaeftsfragen."
+        },
+        {
+          "title": "Cloud Analytics",
+          "description": "Cloud-native Analyseplattformen auf AWS, GCP oder Azure fuer Skalierbarkeit und Hoechstleistung."
+        },
+        {
+          "title": "Individuelles Reporting",
+          "description": "Automatisierte Berichte und Datenexporte, die auf die Anforderungen Ihrer Stakeholder zugeschnitten sind."
+        }
+      ]
+    },
+    "whyUs": {
+      "eyebrow": "Warum wir",
+      "title": "Daten-Expertise, die messbare Ergebnisse liefert.",
+      "description": "Unser Analyseteam vereint technische Exzellenz mit tiefem Geschaeftsverstaendnis, um Erkenntnisse zu liefern, die messbare Resultate erzielen.",
+      "reasons": [
+        {
+          "title": "Strategischer Ansatz",
+          "description": "Wir konzentrieren uns auf Geschaeftsergebnisse, nicht nur auf technische Metriken, um sicherzustellen, dass Analysen echten Mehrwert schaffen."
+        },
+        {
+          "title": "Umfassende Expertise",
+          "description": "Von Data Engineering bis zur Visualisierung decken wir die gesamte Analyse-Pipeline ab."
+        },
+        {
+          "title": "Data Governance",
+          "description": "Solide Sicherheits-, Compliance- und Datenqualitaetspraktiken, die in jede Loesung integriert sind."
+        },
+        {
+          "title": "Schnelle Bereitstellung",
+          "description": "Agile Methodik mit schnellen Iterationen, um Ihnen Erkenntnisse rascher zu liefern."
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Kundenerfolge",
+      "title": "Analyse-Erfolgsgeschichten",
+      "items": [
+        {
+          "quote": "Ihr Dashboard hat unsere Entscheidungsfindung veraendert. Wir haben jetzt Echtzeit-Einblicke in jeden Aspekt unserer Geschaeftsprozesse.",
+          "author": "Sarah Mitchell",
+          "role": "COO, RetailMax Group"
+        },
+        {
+          "quote": "Das von ihnen entwickelte Vorhersagemodell hat unsere Lagerkosten um 28% gesenkt. Der ROI war bereits im ersten Quartal sichtbar.",
+          "author": "Michael Torres",
+          "role": "VP Supply Chain, LogiFlow Inc."
+        },
+        {
+          "quote": "Endlich sind alle unsere Daten an einem Ort mit hervorragenden Visualisierungen. Vorstandssitzungen sind jetzt datengestuetzt und effizient.",
+          "author": "Jennifer Wu",
+          "role": "CFO, TechStart Ventures"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Haeufig gestellte Fragen",
+      "items": [
+        {
+          "question": "Mit welchen Business-Intelligence-Tools arbeiten Sie?",
+          "answer": "Wir haben Erfahrung mit allen fuehrenden BI-Plattformen, darunter Power BI, Tableau, Looker und Qlik. Wir empfehlen das beste Tool basierend auf Ihren spezifischen Anforderungen, Ihrer bestehenden Infrastruktur und den Faehigkeiten Ihres Teams."
+        },
+        {
+          "question": "Wie lange dauert ein typisches Analyseprojekt?",
+          "answer": "Die Dauer variiert je nach Umfang. Eine grundlegende Dashboard-Loesung dauert 2 bis 4 Wochen, waehrend umfassende Enterprise-Analyseplattformen mit Data-Warehouse-Einrichtung 2 bis 4 Monate in Anspruch nehmen koennen. Wir liefern detaillierte Zeitplaene in der Erkundungsphase."
+        },
+        {
+          "question": "Koennen Sie mit unserer bestehenden Dateninfrastruktur arbeiten?",
+          "answer": "Selbstverstaendlich. Wir integrieren uns in bestehende Datenbanken, Data Warehouses und Cloud-Plattformen. Wir koennen Ihr aktuelles Setup optimieren oder bei der Migration zu einer moderneren Architektur unterstuetzen, wenn dies vorteilhaft ist."
+        },
+        {
+          "question": "Bieten Sie laufenden Analyse-Support an?",
+          "answer": "Ja, wir bieten Wartungspakete an, die Dashboard-Aktualisierungen, Ueberwachung der Datenpipelines, Leistungsoptimierung und Anwender-Support umfassen. Wir koennen auch dedizierte Analyseressourcen auf fortlaufender Vertragsbasis bereitstellen."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Bereit, das Potenzial Ihrer Daten zu entfesseln?",
+      "description": "Lassen Sie uns besprechen, wie Datenanalyse Ihre Geschaeftsprozesse transformieren und Ihr Wachstum vorantreiben kann.",
+      "schedule": "Analyse-Beratung buchen",
+      "caseStudies": "Analyse-Fallstudien ansehen"
+    }
+  },
+  "mobileDevelopment": {
+    "hero": {
+      "eyebrow": "Mobile App-Entwicklung",
+      "title": "Apps, die",
+      "titleAccent": "Nutzer begeistern",
+      "description": "Schaffen Sie herausragende mobile Erlebnisse fuer iOS und Android. Von der Idee bis zum App Store entwickeln wir leistungsstarke, ansprechend gestaltete Apps, die Nutzer begeistern und messbare Geschaeftsergebnisse liefern.",
+      "startProject": "Starten Sie Ihre App",
+      "viewPortfolio": "App-Portfolio ansehen"
+    },
+    "process": {
+      "steps": [
+        {
+          "number": "01",
+          "title": "Design und Prototyping",
+          "description": "Nutzerforschung, Wireframes und interaktive Prototypen zur Validierung des Konzepts vor der Entwicklung."
+        },
+        {
+          "number": "02",
+          "title": "Entwicklung",
+          "description": "Cross-Platform- oder native Entwicklung mit sauberer Architektur und umfassenden Tests."
+        },
+        {
+          "number": "03",
+          "title": "Launch und Wachstum",
+          "description": "App Store-Optimierung, Launch-Unterstuetzung und kontinuierliche Updates zur Aufrechterhaltung des Nutzerengagements."
+        }
+      ]
+    },
+    "services": {
+      "title": "Mobile Expertise",
+      "subtitle": "Full-Service Mobile-Entwicklung vom ersten Konzept bis zur laufenden Wartung und Wachstum.",
+      "items": [
+        {
+          "title": "Cross-Platform Apps",
+          "description": "React Native- und Flutter-Apps, die native Performance auf iOS und Android aus einer einzigen Codebasis liefern."
+        },
+        {
+          "title": "Native iOS- und Android-Apps",
+          "description": "Vollstaendig native Entwicklung mit Swift und Kotlin fuer Apps, die maximale Plattformintegration erfordern."
+        },
+        {
+          "title": "Push-Benachrichtigungen",
+          "description": "Binden Sie Nutzer mit gezielten, personalisierten Push-Benachrichtigungen ein, die Retention und Conversion-Raten steigern."
+        },
+        {
+          "title": "App-Sicherheit",
+          "description": "Sichere Authentifizierung, verschluesselte Speicherung und Schutz vor gaengigen mobilen Sicherheitsluecken."
+        },
+        {
+          "title": "Cloud-Integration",
+          "description": "Backend-Services, Echtzeit-Synchronisierung und Cloud-Infrastruktur, die mit Ihrer Nutzerbasis skaliert."
+        },
+        {
+          "title": "Analytics und Optimierung",
+          "description": "Nutzerverhalten verfolgen, Engagement messen und das App-Erlebnis kontinuierlich optimieren."
+        }
+      ]
+    },
+    "whyUs": {
+      "eyebrow": "Warum wir",
+      "title": "Exzellenz in der Mobile-Entwicklung",
+      "description": "Wir verbinden technische Expertise mit einem tiefen Verstaendnis fuer mobile Nutzererfahrung, um Apps zu erstellen, die Nutzer tatsaechlich gerne verwenden.",
+      "reasons": [
+        {
+          "title": "Cross-Platform-Experten",
+          "description": "Eine Codebasis mit nativem Gefuehl. Sparen Sie Zeit und Budget ohne Qualitaetseinbussen."
+        },
+        {
+          "title": "UX-First-Ansatz",
+          "description": "Wir gestalten fuer echte Nutzer mit forschungsbasierten Entscheidungen und intuitiven Oberflaechen."
+        },
+        {
+          "title": "Fokus auf Performance",
+          "description": "Optimiert fuer Geschwindigkeit, Batterieeffizienz und fluessige Animationen."
+        },
+        {
+          "title": "App Store-Erfolg",
+          "description": "Erfahrung in App Store-Optimierung (ASO) und Launch-Strategien, die Sichtbarkeit und Downloads steigern."
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Kundenerfolge",
+      "title": "Apps in Aktion",
+      "items": [
+        {
+          "quote": "Sie haben unsere Idee in eine App verwandelt, die im ersten Monat 50.000 Downloads erreichte. Das Nutzerfeedback war ueberwaeeltigend.",
+          "author": "Alex Thompson",
+          "role": "Gruender, FitTrack"
+        },
+        {
+          "quote": "Unsere Business-App hat die Auftragsbearbeitungszeit um 70 % reduziert. Die Liebe zum Detail des Teams hat den entscheidenden Unterschied gemacht.",
+          "author": "Jennifer Lee",
+          "role": "VP Operations, DistributeCo"
+        },
+        {
+          "quote": "Die Performance und das Design der App haben unsere Erwartungen uebertroffen. Unsere Kunden nutzen sie jetzt tatsaechlich gerne.",
+          "author": "Robert Chen",
+          "role": "Produktmanager, FinServe"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Haeufige Fragen zur Mobile-Entwicklung",
+      "items": [
+        {
+          "question": "Soll ich eine native oder Cross-Platform-App entwickeln lassen?",
+          "answer": "Fuer die meisten Apps bietet die Cross-Platform-Entwicklung (React Native oder Flutter) das beste Verhaeltnis von Kosten, Entwicklungsgeschwindigkeit und Qualitaet. Wir empfehlen native Entwicklung, wenn Sie tiefe Plattformintegration, anspruchsvolle 3D-Grafiken oder spezifische native APIs benoetigen."
+        },
+        {
+          "question": "Wie lange dauert die Entwicklung einer mobilen App?",
+          "answer": "Ein Minimum Viable Product (MVP) dauert in der Regel 3 bis 4 Monate. Komplexere Apps mit individuellen Backends, Integrationen und erweiterten Funktionen koennen 4 bis 8 Monate in Anspruch nehmen. Wir liefern detaillierte Zeitplaene waehrend der Discovery-Phase."
+        },
+        {
+          "question": "Wie sieht es mit der App Store-Freigabe aus?",
+          "answer": "Wir uebernehmen den gesamten Einreichungsprozess fuer App Store und Play Store und stellen die Einhaltung der Richtlinien sicher. Ausserdem optimieren wir Ihren App-Eintrag fuer maximale Auffindbarkeit gemaess ASO-Best-Practices."
+        },
+        {
+          "question": "Bieten Sie Support nach dem Launch?",
+          "answer": "Ja. Wir bieten Wartungspakete einschliesslich Bugfixes, Betriebssystem-Updates, Performance-Monitoring und Feature-Erweiterungen. Wir sind dem langfristigen Erfolg Ihrer App verpflichtet."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Bereit, Ihre App zu entwickeln?",
+      "description": "Lassen Sie uns ein mobiles Erlebnis schaffen, das Ihre Nutzer begeistert und echte Geschaeftsergebnisse liefert.",
+      "schedule": "App-Beratung buchen",
+      "caseStudies": "App-Portfolio ansehen"
+    }
+  },
+  "pythonAutomation": {
+    "hero": {
+      "eyebrow": "Python Automation-Services",
+      "title": "Automatisieren Sie Ihre",
+      "titleAccent": "Geschaeftsprozesse",
+      "description": "Verwandeln Sie wiederkehrende Aufgaben in automatisierte, effiziente Prozesse. Unsere Python Automation-Loesungen sparen Zeit, reduzieren Fehler und ermoeglichen es Ihrem Team, sich auf das Wesentliche zu konzentrieren.",
+      "startProject": "Automation-Projekt starten",
+      "viewPortfolio": "Fallstudien ansehen"
+    },
+    "process": {
+      "steps": [
+        {
+          "number": "01",
+          "title": "Analyse",
+          "description": "Wir analysieren Ihre Workflows, um Automatisierungsmoeglichkeiten mit dem hoechsten ROI zu identifizieren."
+        },
+        {
+          "number": "02",
+          "title": "Entwicklung",
+          "description": "Wir entwickeln massgeschneiderte Python-Skripte nach Best Practices mit umfassender Fehlerbehandlung und integrierten Tests."
+        },
+        {
+          "number": "03",
+          "title": "Deployment",
+          "description": "Reibungsloses Deployment mit Zeitplanung, kontinuierlichem Monitoring und fortlaufender Optimierung."
+        }
+      ]
+    },
+    "services": {
+      "title": "Automation-Services",
+      "subtitle": "Von einfachen Skripten bis zu komplexen Workflows liefern wir Python Automation-Loesungen, die Ihre Arbeitsweise transformieren.",
+      "items": [
+        {
+          "title": "Web Scraping",
+          "description": "Automatisierte Datenerfassung von Websites, APIs und digitalen Quellen mit Selenium, Beautiful Soup und Scrapy."
+        },
+        {
+          "title": "Dokumentenverarbeitung",
+          "description": "Automatisierung von PDF-Erstellung, Excel-Verarbeitung, Datenextraktion aus Dokumenten und Berichtserstellung."
+        },
+        {
+          "title": "Data Pipeline Automation",
+          "description": "ETL-Prozesse, Datentransformation, Datenbankoperationen und automatisierte Datensynchronisierung."
+        },
+        {
+          "title": "E-Mail- und Kommunikationsautomatisierung",
+          "description": "Automatisierter E-Mail-Versand, -Analyse, -Filterung und Antwortverarbeitung mit individuellen Templates."
+        },
+        {
+          "title": "Business Intelligence",
+          "description": "Automatisierte Berichtserstellung, KPI-Dashboards und Datenvisualisierung fuer fundierte Entscheidungen."
+        },
+        {
+          "title": "Individuelle Bot-Entwicklung",
+          "description": "Task-Automation-Bots fuer Browser-Operationen, Dateiverwaltung und wiederkehrende Geschaeftsprozesse."
+        }
+      ]
+    },
+    "whyUs": {
+      "eyebrow": "Warum wir",
+      "title": "Exzellenz in Python Automation",
+      "description": "Wir verbinden tiefe Python-Expertise mit umfassendem Verstaendnis fuer Geschaeftsprozesse, um effektive und skalierbare Automation-Loesungen zu liefern.",
+      "reasons": [
+        {
+          "title": "Schnelle Entwicklung",
+          "description": "Zuegige Umsetzung von der Idee zur funktionierenden Automatisierung mit kontinuierlichen Verbesserungen basierend auf Ihrem Feedback."
+        },
+        {
+          "title": "Robust und zuverlaessig",
+          "description": "Produktionsreifer Code mit umfassender Fehlerbehandlung, Logging und integriertem Monitoring."
+        },
+        {
+          "title": "Zeitersparnis",
+          "description": "Unsere Automation-Loesungen sparen unseren Kunden typischerweise 10 bis 40 Stunden manueller Arbeit pro Woche."
+        },
+        {
+          "title": "Kosteneffizient",
+          "description": "Der ROI der Automatisierung wird in der Regel innerhalb von 2-3 Monaten durch reduzierte Arbeits- und Fehlerkosten erreicht."
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Kundenerfolge",
+      "title": "Automation-Ergebnisse",
+      "items": [
+        {
+          "quote": "Die Automatisierung hat unsere Dateneingabezeit um 90 % reduziert. Was frueher 20 Stunden dauerte, wird jetzt in nur 2 Stunden mit hoeherer Genauigkeit erledigt.",
+          "author": "Sarah Mitchell",
+          "role": "Operations-Managerin, DataCorp"
+        },
+        {
+          "quote": "Die Web-Scraping-Loesung, die sie entwickelt haben, liefert uns Wettbewerbsinformationen, die manuell unmoeglich zu sammeln waeren.",
+          "author": "Mark Johnson",
+          "role": "Strategiedirektor, RetailPro"
+        },
+        {
+          "quote": "Unsere monatlichen Berichte, die frueher 3 Tage dauerten, sind jetzt vollstaendig automatisiert. Das Team kann sich nun auf die Analyse statt auf die Datenerfassung konzentrieren.",
+          "author": "Lisa Chen",
+          "role": "CFO, TechVentures"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Haeufige Fragen zur Automatisierung",
+      "items": [
+        {
+          "question": "Welche Aufgaben koennen mit Python automatisiert werden?",
+          "answer": "Nahezu jede wiederkehrende digitale Aufgabe kann automatisiert werden: Web Scraping, Dateneingabe, Dateiverarbeitung, E-Mail-Verwaltung, Berichtserstellung, API-Integrationen und vieles mehr. Wenn die Aufgabe einem bestimmten Muster folgt, koennen wir sie automatisieren."
+        },
+        {
+          "question": "Wie lange dauert der Aufbau eines Automation-Systems?",
+          "answer": "Einfache Automatisierungen koennen innerhalb von 1 bis 2 Wochen abgeschlossen werden. Komplexe Multi-System-Workflows dauern in der Regel 4 bis 8 Wochen. Wir liefern detaillierte Zeitplaene nach der Erstanalyse."
+        },
+        {
+          "question": "Brauche ich technisches Wissen, um die Automatisierung zu nutzen?",
+          "answer": "Nein. Wir entwickeln benutzerfreundliche Loesungen mit einfachen Oberflaechen oder vollstaendig geplanter Ausfuehrung. Dazu gehoeren umfassende Dokumentation und integrierte Schulungen."
+        },
+        {
+          "question": "Wie sieht es mit Wartung und Updates aus?",
+          "answer": "Wir bieten Wartungspakete einschliesslich Monitoring, Bugfixes und Updates bei Aenderungen externer Systeme. Unsere Automation-Loesungen sind auf langfristige Zuverlaessigkeit ausgelegt."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Bereit, Ihre Workflows zu automatisieren?",
+      "description": "Lassen Sie uns die Aufgaben identifizieren, die Ihr Team Zeit kosten, und sie in automatisierte, effiziente Prozesse verwandeln.",
+      "schedule": "Beratung buchen",
+      "caseStudies": "Fallstudien ansehen"
+    }
+  },
+  "machineLearning": {
+    "hero": {
+      "eyebrow": "Machine Learning-Services",
+      "title": "Intelligente Loesungen",
+      "titleAccent": "mit Machine Learning",
+      "description": "Verwandeln Sie Ihre Daten in umsetzbare Erkenntnisse mit massgeschneiderten Machine Learning-Loesungen. Von Predictive Analytics bis Computer Vision entwickeln wir ML-Systeme, die echte Geschaeftsergebnisse liefern.",
+      "startProject": "ML-Projekt starten",
+      "viewPortfolio": "ML-Arbeiten ansehen"
+    },
+    "techStack": {
+      "technologies": [
+        "TensorFlow",
+        "PyTorch",
+        "scikit-learn",
+        "Keras",
+        "OpenCV",
+        "Hugging Face",
+        "MLflow",
+        "Apache Spark",
+        "NumPy",
+        "Pandas",
+        "CUDA",
+        "JAX"
+      ]
+    },
+    "process": {
+      "steps": [
+        {
+          "number": "01",
+          "title": "Data Discovery",
+          "description": "Wir analysieren Ihre Datenlandschaft und identifizieren ML-Chancen mit hoher Wirkung, die mit Ihren Geschaeftszielen uebereinstimmen."
+        },
+        {
+          "number": "02",
+          "title": "Modellentwicklung",
+          "description": "Aufbau, Training und Optimierung massgeschneiderter ML-Modelle mit modernsten Algorithmen und Frameworks."
+        },
+        {
+          "number": "03",
+          "title": "Deployment und Skalierung",
+          "description": "Produktionsreifes Deployment mit Monitoring, Auto-Scaling und kontinuierlichen Optimierungspipelines."
+        }
+      ]
+    },
+    "services": {
+      "title": "Machine Learning-Kompetenzen",
+      "subtitle": "Umfassende Machine Learning-Loesungen von der Strategie bis zum Deployment, entwickelt um Ihrem Unternehmen einen Wettbewerbsvorteil zu verschaffen.",
+      "items": [
+        {
+          "title": "Predictive Analytics",
+          "description": "Prognostizieren Sie Trends, Kundenverhalten und Marktveraenderungen mit fortschrittlichen statistischen Modellen und ML-Algorithmen."
+        },
+        {
+          "title": "Individuelle ML-Modelle",
+          "description": "Massgeschneiderte Machine Learning-Loesungen, die auf Ihren Daten fuer spezifische Anwendungsfaelle trainiert werden."
+        },
+        {
+          "title": "Computer Vision",
+          "description": "Bilderkennung, Objekterkennung, Gesichtserkennung und automatisierte visuelle Inspektionssysteme."
+        },
+        {
+          "title": "Natural Language Processing",
+          "description": "Textanalyse, Sentiment-Erkennung, Chatbots und Sprachverstaendnis zur Verbesserung der Kommunikation."
+        },
+        {
+          "title": "Empfehlungssysteme",
+          "description": "Personalisierte Empfehlungen fuer Produkte, Inhalte und Services, die Engagement und Conversions steigern."
+        },
+        {
+          "title": "Zeitreihenprognose",
+          "description": "Vorhersage zukuenftiger Werte basierend auf historischen Daten fuer Bestands-, Umsatz- und Ressourcenplanung."
+        }
+      ]
+    },
+    "whyUs": {
+      "eyebrow": "Warum wir",
+      "title": "ML-Expertise, der Sie vertrauen koennen",
+      "description": "Unser Team verbindet tiefes technisches Wissen mit praktischem Geschaeftsverstaendnis, um effektive ML-Loesungen zu liefern, die messbare Ergebnisse erzielen.",
+      "reasons": [
+        {
+          "title": "Nachgewiesene Erfolgsbilanz",
+          "description": "Erfolgreiche Bereitstellung von ML-Loesungen in verschiedenen Branchen mit messbarem ROI."
+        },
+        {
+          "title": "Massgeschneiderte Loesungen",
+          "description": "Keine Loesungen von der Stange. Wir entwickeln ML speziell fuer Ihre Anforderungen und Daten."
+        },
+        {
+          "title": "Ethische KI",
+          "description": "Wir priorisieren verantwortungsvolle ML-Entwicklung mit Transparenz, Fairness und Erklaerbarkeit."
+        },
+        {
+          "title": "Umfassende End-to-End-Betreuung",
+          "description": "Von der Idee bis zum Deployment und darueber hinaus begleiten wir Ihre gesamte Machine Learning-Reise."
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Erfolgsgeschichten",
+      "title": "Machine Learning-Wirkung",
+      "items": [
+        {
+          "quote": "Ihr Predictive Maintenance-Modell hat unsere Ausfallzeiten um 45 % reduziert. Der ROI war bereits im ersten Quartal deutlich sichtbar.",
+          "author": "Michael Torres",
+          "role": "Werksleiter, ManufactureTech"
+        },
+        {
+          "quote": "Die Empfehlungs-Engine, die sie entwickelt haben, hat unseren durchschnittlichen Bestellwert um 35 % gesteigert. Das Kundenengagement ist erheblich gestiegen.",
+          "author": "Sarah Kim",
+          "role": "VP E-Commerce, RetailPlus"
+        },
+        {
+          "quote": "Ihre NLP-Loesung hat 70 % unserer Dokumentenverarbeitung automatisiert. Was frueher Stunden dauerte, ist jetzt in Minuten erledigt.",
+          "author": "David Anderson",
+          "role": "COO, LegalDocs Inc"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Haeufige Fragen zu Machine Learning",
+      "items": [
+        {
+          "question": "Wie viele Daten brauche ich fuer ein erfolgreiches ML-Projekt?",
+          "answer": "Die erforderliche Datenmenge variiert je nach Anwendungsfall erheblich. Einfache Klassifikationsaufgaben koennen mit nur wenigen tausend Beispielen funktionieren, waehrend Deep Learning-Modelle typischerweise Zehntausende oder Millionen von Datenpunkten benoetigen. In der Discovery-Phase bewerten wir Ihre Daten und empfehlen Strategien einschliesslich Data Augmentation, Transfer Learning und synthetischer Datengenerierung bei Bedarf."
+        },
+        {
+          "question": "Wie lange dauert die Entwicklung einer ML-Loesung?",
+          "answer": "Ein Proof of Concept dauert in der Regel 4 bis 8 Wochen. Produktionsreife Loesungen erstrecken sich ueber 2 bis 6 Monate, abhaengig von Komplexitaet, Datenqualitaet und Integrationsanforderungen. Wir nutzen Agile-Methoden, um schrittweise Mehrwert zu liefern."
+        },
+        {
+          "question": "Koennen ML-Loesungen in unsere bestehenden Systeme integriert werden?",
+          "answer": "Selbstverstaendlich. Wir entwickeln ML-Loesungen mit Integration im Fokus und stellen REST APIs, Webhooks und Konnektoren fuer gaengige Plattformen bereit. Wir arbeiten mit Ihrer bestehenden technischen Architektur und Dateninfrastruktur."
+        },
+        {
+          "question": "Wie stellen Sie Modellgenauigkeit und Fairness sicher?",
+          "answer": "Wir setzen rigorose Tests ein, darunter Kreuzvalidierung, A/B-Tests und Bias-Erkennung. Unsere Modelle durchlaufen umfangreiche Validierung ueber verschiedene Daten-Subsets hinweg, um konsistente und faire Performance sicherzustellen."
+        },
+        {
+          "question": "Wie sieht es mit Datenschutz und Sicherheit aus?",
+          "answer": "Datensicherheit hat hoechste Prioritaet. Wir implementieren Verschluesselung bei Speicherung und Uebertragung, Zugriffskontrollen und Audit-Logging. Wir koennen Loesungen On-Premise oder in privaten Cloud-Umgebungen bereitstellen. Wir haben Erfahrung mit DSGVO, HIPAA und weiteren Compliance-Anforderungen."
+        },
+        {
+          "question": "Bieten Sie fortlaufenden Support nach dem Deployment?",
+          "answer": "Ja, alle unsere Pakete beinhalten Post-Launch-Support von 30 Tagen bis hin zu kontinuierlichem Support gemaess SLA fuer Enterprise-Kunden. Dies umfasst Modell-Monitoring, Performance-Optimierung, Retraining-Support und technische Unterstuetzung."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Bereit, das Potenzial von Machine Learning zu entfesseln?",
+      "description": "Lassen Sie uns erkunden, wie Machine Learning Ihre Geschaeftsprozesse transformieren und intelligente Automatisierung vorantreiben kann.",
+      "schedule": "ML-Beratung buchen",
+      "caseStudies": "ML-Fallstudien ansehen"
+    }
+  },
+  "digitalMarketing": {
+    "hero": {
+      "eyebrow": "Digital Marketing-Services",
+      "title": "Staerken Sie Ihre Marke",
+      "titleAccent": "und erzielen Sie Ergebnisse",
+      "description": "Datengetriebene Digital Marketing-Strategien, die Ihre Sichtbarkeit erhoehen, Ihre Zielgruppe ansprechen und messbaren ROI liefern. Von SEO bis Paid Advertising helfen wir Ihnen, sich in Ihrem Markt durchzusetzen.",
+      "startProject": "Starten Sie Ihre Kampagne",
+      "viewPortfolio": "Ergebnisse ansehen"
+    },
+    "process": {
+      "steps": [
+        {
+          "number": "01",
+          "title": "Recherche und Audit",
+          "description": "Wir analysieren Ihren Markt, Ihre Wettbewerber und Ihre Zielgruppe, um Wachstumschancen zu identifizieren."
+        },
+        {
+          "number": "02",
+          "title": "Strategie und Planung",
+          "description": "Datenbasierte Marketingstrategie, abgestimmt auf Ihre Geschaeftsziele und Ihr Budget."
+        },
+        {
+          "number": "03",
+          "title": "Umsetzung und Optimierung",
+          "description": "Kampagnenstart mit kontinuierlicher Optimierung fuer maximale Performance."
+        }
+      ]
+    },
+    "services": {
+      "title": "Marketing-Services",
+      "subtitle": "Umfassende Digital Marketing-Loesungen, die darauf ausgelegt sind, Ihre Marke zu staerken und Conversions zu steigern.",
+      "items": [
+        {
+          "title": "Suchmaschinenoptimierung (SEO)",
+          "description": "Erreichen Sie Top-Platzierungen durch technisches SEO, Content-Optimierung und Linkbuilding-Strategien."
+        },
+        {
+          "title": "Paid Advertising",
+          "description": "Hochperformante Kampagnen auf Google Ads, Meta Ads und programmatische Werbung fuer maximalen Return on Ad Spend (ROAS)."
+        },
+        {
+          "title": "E-Mail-Marketing",
+          "description": "Automatisierte E-Mail-Kampagnen und Newsletter, die Leads pflegen und Conversions steigern."
+        },
+        {
+          "title": "Analytics und Reporting",
+          "description": "Datenbasierte Erkenntnisse mit massgeschneiderten Dashboards zur Performance-Verfolgung und Entscheidungsfindung."
+        },
+        {
+          "title": "Social Media Marketing",
+          "description": "Aufbau engagierter Communities und Staerkung der Markenbekanntheit auf allen Social Media-Plattformen."
+        },
+        {
+          "title": "Content Marketing",
+          "description": "Ueberzeugende Content-Strategie, die Ihre Zielgruppe anzieht, einbindet und in Kunden verwandelt."
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Kundenergebnisse",
+      "title": "Marketing-Erfolgsgeschichten",
+      "items": [
+        {
+          "quote": "Unser organischer Traffic ist in nur 6 Monaten um 300 % gestiegen. Die SEO-Strategie, die sie umgesetzt haben, war ueberwaeltigend effektiv.",
+          "author": "Sarah Mitchell",
+          "role": "Marketingdirektorin, TechFlow Inc"
+        },
+        {
+          "quote": "Die Paid Advertising-Kampagnen erzielten einen ROAS von 450 %. Ihr datengetriebener Ansatz hat den entscheidenden Unterschied gemacht.",
+          "author": "Michael Torres",
+          "role": "CEO, GrowthStart"
+        },
+        {
+          "quote": "Unsere E-Mail-Oeffnungsraten haben sich verdoppelt und die Conversions verdreifacht. Sie verstehen wirklich moderne Marketing-Automatisierung.",
+          "author": "Jennifer Park",
+          "role": "VP Marketing, RetailMax"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Fragen zum Marketing",
+      "items": [
+        {
+          "question": "Wie lange dauert es, bis Digital Marketing-Ergebnisse sichtbar werden?",
+          "answer": "Die Ergebnisse variieren je nach Kanal. Paid Advertising kann innerhalb von Tagen Ergebnisse zeigen, waehrend SEO in der Regel 3 bis 6 Monate fuer spuerbare organische Verbesserungen benoetigt. Wir setzen realistische Erwartungen und liefern regelmaessige Fortschrittsberichte."
+        },
+        {
+          "question": "Was ist Ihr Ansatz fuer die Marketingstrategie?",
+          "answer": "Wir verfolgen einen datenbasierten Ansatz, der mit umfassender Marktforschung, Wettbewerbsanalyse und Zielgruppen-Insights beginnt. Jede Strategie wird individuell auf Ihre Geschaeftsziele und Ihr Budget zugeschnitten."
+        },
+        {
+          "question": "Garantieren Sie bestimmte Ergebnisse?",
+          "answer": "Obwohl wir aufgrund externer Faktoren keine spezifischen Rankings oder Ergebnisse garantieren koennen, garantieren wir transparentes Reporting, bewaehrte Methoden und unser Engagement, die bestmoeglichen Ergebnisse fuer Ihre Investition zu erzielen."
+        },
+        {
+          "question": "Wie messen Sie den Marketingerfolg?",
+          "answer": "Wir verfolgen KPIs, die auf Ihre Ziele abgestimmt sind, darunter Traffic, Conversions, Lead-Qualitaet, Cost per Acquisition, Return on Ad Spend (ROAS) und Gesamt-ROI. Sie erhalten detaillierte Berichte mit umsetzbaren Erkenntnissen."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Bereit, Ihr Unternehmen zu vergroessern?",
+      "description": "Lassen Sie uns eine Marketingstrategie entwickeln, die echte Ergebnisse und nachhaltiges Wachstum fuer Ihre Marke erzielt.",
+      "schedule": "Beratung buchen",
+      "caseStudies": "Fallstudien ansehen"
+    }
+  },
+  "conversationalAI": {
+    "hero": {
+      "eyebrow": "Conversational AI Dienstleistungen",
+      "title": "Intelligente Loesungen",
+      "titleAccent": "fuer Chatbots",
+      "description": "Transformieren Sie die Kundeninteraktion mit KI-gestuetzten Konversationserlebnissen. Von intelligenten Chatbots bis hin zu virtuellen Assistenten entwickeln wir Loesungen, die verstehen, lernen und skalierbare, bedeutungsvolle Interaktionen liefern.",
+      "startProject": "Chatbot-Projekt starten",
+      "viewPortfolio": "Fallstudien ansehen"
+    },
+    "process": {
+      "steps": [
+        {
+          "number": "01",
+          "title": "Konversationsdesign",
+          "description": "Wir kartieren Benutzerabsichten, entwerfen Dialogfluesse und erstellen eine Bot-Persoenlichkeit, die zu Ihrer Marke passt."
+        },
+        {
+          "number": "02",
+          "title": "NLP-Training",
+          "description": "Individuelles Modelltraining mit Ihren branchenspezifischen Daten fuer praezise Absichtserkennung und Entity-Extraktion."
+        },
+        {
+          "number": "03",
+          "title": "Bereitstellung und Optimierung",
+          "description": "Multi-Channel-Bereitstellung mit kontinuierlichem Lernen aus echten Gespraechen zur Verbesserung der Genauigkeit."
+        }
+      ]
+    },
+    "services": {
+      "title": "Chatbot-Funktionen",
+      "subtitle": "Umfassende Conversational AI Loesungen zur Automatisierung des Supports, zur Lead-Generierung und zur Verbesserung des Kundenerlebnisses.",
+      "items": [
+        {
+          "title": "Kundensupport-Bots",
+          "description": "Automatisierter 24/7-Support, der haeufig gestellte Fragen bearbeitet, Fehlerbehebung durchfuehrt und Tickets erstellt – mit nahtloser Weiterleitung an menschliche Mitarbeiter."
+        },
+        {
+          "title": "Mehrsprachige Chatbots",
+          "description": "Setzen Sie Chatbots in ueber 50 Sprachen mit nativem NLP-Verstaendnis ein, um Kunden weltweit zu erreichen."
+        },
+        {
+          "title": "GPT-gestuetzte Assistenten",
+          "description": "Erweiterte LLM-Integration fuer komplexe Anfragen, Content-Generierung und intelligenten Wissensabruf."
+        },
+        {
+          "title": "Lead-Qualifizierungs-Bots",
+          "description": "Konversationsbasierte Erfassung und Qualifizierung von Leads mit CRM-Integration und Vertriebsworkflows."
+        },
+        {
+          "title": "Sprach- und IVR-Loesungen",
+          "description": "Sprachbasierte Chatbots und intelligente IVR-Systeme fuer telefonische Kundeninteraktionen."
+        },
+        {
+          "title": "Dokumenten-Q&A-Bots",
+          "description": "KI-Assistenten, die Fragen aus Ihren Dokumenten, Hanbuechern und Wissensdatenbanken mithilfe von RAG-Technologie beantworten."
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Kundenerfolge",
+      "title": "Chatbot-Erfolgsgeschichten",
+      "items": [
+        {
+          "quote": "Der KI-Chatbot bearbeitet 80 % der Supportanfragen automatisch. Die Antwortzeit sank von Stunden auf Sekunden.",
+          "author": "Jennifer Martinez",
+          "role": "Leiterin Support, ShopFast"
+        },
+        {
+          "quote": "Der Lead-Qualifizierungs-Bot hat die Anzahl vertriebsqualifizierter Leads verdreifacht und gleichzeitig das Vertriebsteam entlastet.",
+          "author": "Robert Kim",
+          "role": "VP Sales, TechGrowth"
+        },
+        {
+          "quote": "Der mehrsprachige Chatbot hat uns drei neue Maerkte eroeffnet. Die Kundenzufriedenheit erreichte Hoechstwerte.",
+          "author": "Anna Schmidt",
+          "role": "Global Operations, EuroRetail"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Haeufig gestellte Fragen zu Chatbots",
+      "items": [
+        {
+          "question": "Wie genau versteht der Chatbot Benutzeranfragen?",
+          "answer": "Unsere Chatbots erreichen eine Absichtserkennungsgenauigkeit von ueber 90 % mithilfe speziell auf Ihre Branchendaten trainierter NLP-Modelle. Wir verbessern die Genauigkeit kontinuierlich durch Gespraechsanalysen und Modell-Nachtraining."
+        },
+        {
+          "question": "Kann der Chatbot das Gespraech an einen menschlichen Mitarbeiter uebergeben?",
+          "answer": "Ja, die nahtlose Uebergabe an menschliche Mitarbeiter ist eine Kernfunktion. Der Bot erkennt anhand von Stimmung, Komplexitaet oder Benutzerwunsch, wann menschliches Eingreifen erforderlich ist, und uebertraegt den Gespraechskontext an die Mitarbeiter ueber Ihre Supportplattform."
+        },
+        {
+          "question": "Auf welchen Kanaelen kann der Chatbot bereitgestellt werden?",
+          "answer": "Wir unterstuetzen Web-Chat, Mobile Apps, WhatsApp, Facebook Messenger, Slack, Microsoft Teams, SMS und Sprachkanaele. Multi-Channel-Bereitstellung mit einheitlichem Gespraechsverlauf ist Standard."
+        },
+        {
+          "question": "Wie schnell sind Ergebnisse sichtbar?",
+          "answer": "Die meisten Kunden sehen innerhalb von 4 bis 6 Wochen nach der Bereitstellung messbare Auswirkungen. Erste Bots werden innerhalb von 2 bis 4 Wochen gestartet, wobei kontinuierliche Optimierung die Loesungsraten und Kundenzufriedenheit stetig verbessert."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Bereit, Gespraeche zu automatisieren?",
+      "description": "Lassen Sie uns einen Chatbot entwickeln, der Ihre Kunden begeistert und messbare Geschaeftsergebnisse liefert.",
+      "schedule": "Bot-Demo buchen",
+      "caseStudies": "Erfolgsgeschichten ansehen"
+    }
+  },
+  "apiDevelopment": {
+    "hero": {
+      "eyebrow": "API-Entwicklungsdienstleistungen",
+      "title": "Fortschrittliche",
+      "titleAccent": "API-Loesungen",
+      "description": "Wir entwerfen und entwickeln leistungsstarke, skalierbare APIs, die Ihre Systeme verbinden, Integrationen ermoeglichen und Ihr digitales Oekosystem mit unternehmenstauglicher Zuverlaessigkeit betreiben.",
+      "startProject": "Projekt starten",
+      "viewPortfolio": "Portfolio ansehen"
+    },
+    "techStack": {
+      "technologies": [
+        "Node.js",
+        "Express",
+        "FastAPI",
+        "GraphQL",
+        "REST",
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "Docker",
+        "AWS",
+        "Swagger",
+        "Postman"
+      ]
+    },
+    "process": {
+      "eyebrow": "Methodik",
+      "title": "Unsere API-Entwicklungsmethodik",
+      "subtitle": "Ein strukturierter Ansatz, der sichere, leistungsstarke und professionell dokumentierte APIs gewaehrleistet.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Anforderungsanalyse",
+          "description": "Wir analysieren Ihre Integrationsanforderungen und Datenfluesse und definieren umfassende API-Spezifikationen."
+        },
+        {
+          "number": "02",
+          "title": "Architekturdesign",
+          "description": "Entwurf einer skalierbaren API-Architektur mit geeigneter Authentifizierung, Rate Limiting und Versionierungsstrategien."
+        },
+        {
+          "number": "03",
+          "title": "Entwicklung und Testing",
+          "description": "API-Entwicklung mit Clean-Code-Best-Practices einschliesslich umfassender Unit-Tests und Integrationstests."
+        },
+        {
+          "number": "04",
+          "title": "Dokumentation",
+          "description": "Erstellung interaktiver API-Dokumentation mit Swagger/OpenAPI fuer eine nahtlose Entwicklererfahrung."
+        },
+        {
+          "number": "05",
+          "title": "Bereitstellung und Monitoring",
+          "description": "Bereitstellung ueber CI/CD-Pipelines mit Monitoring-Implementierung zur Ueberwachung von Performance und Verfuegbarkeit."
+        }
+      ]
+    },
+    "services": {
+      "title": "API-Funktionen",
+      "subtitle": "Umfassende API-Entwicklungsdienstleistungen fuer den Betrieb Ihrer digitalen Infrastruktur und nahtlose Integrationen.",
+      "items": [
+        {
+          "title": "RESTful API-Entwicklung",
+          "description": "Entwicklung sauberer, intuitiver REST-Schnittstellen nach Best Practices und HTTP-Standards."
+        },
+        {
+          "title": "GraphQL-Schnittstellen",
+          "description": "Flexible GraphQL-Endpoints, die Clients genau die benoetigten Daten in einer einzigen Abfrage liefern."
+        },
+        {
+          "title": "API-Integration",
+          "description": "Nahtlose Anbindung externer Dienste, Zahlungsgateways und Drittsysteme."
+        },
+        {
+          "title": "Microservices-Architektur",
+          "description": "Entwurf und Implementierung skalierbarer Microservices, die effizient ueber APIs kommunizieren."
+        },
+        {
+          "title": "Echtzeit-APIs",
+          "description": "WebSocket und Server-Sent Events fuer Live-Datenstreaming und Echtzeit-Anwendungen."
+        },
+        {
+          "title": "API-Sicherheit",
+          "description": "Implementierung von OAuth 2.0, JWT-Authentifizierung, Rate Limiting und umfassenden Sicherheitsmassnahmen."
+        }
+      ]
+    },
+    "features": {
+      "eyebrow": "Funktionen",
+      "title": "Umfassende API-Loesungen",
+      "subtitle": "Wir bieten ganzheitliche API-Entwicklungsdienstleistungen, massgeschneidert fuer Ihre Integrationsanforderungen.",
+      "items": [
+        "RESTful API-Design und -Entwicklung",
+        "GraphQL-Schema-Design",
+        "OAuth 2.0 und JWT-Authentifizierung",
+        "API Rate Limiting und Traffic-Kontrolle",
+        "Swagger/OpenAPI-Dokumentation",
+        "Webhook-Implementierung",
+        "Datenbankintegration (SQL und NoSQL)",
+        "Redis-Caching",
+        "API-Versionierungsstrategien",
+        "Umfassende Fehlerbehandlung"
+      ]
+    },
+    "whyUs": {
+      "eyebrow": "Warum wir",
+      "title": "API-Exzellenz",
+      "description": "Wir entwickeln nicht nur APIs – wir entwerfen Integrationsloesungen, die mit Ihrem Unternehmen wachsen.",
+      "reasons": [
+        {
+          "title": "Optimierte Performance",
+          "description": "Antwortzeiten unter 100 Millisekunden mit effizienten Abfragen, Caching und optimiertem Datenbankzugriff."
+        },
+        {
+          "title": "Security First",
+          "description": "Unternehmenstaugliche Sicherheit mit OAuth 2.0, Rate Limiting und umfassender Eingabevalidierung."
+        },
+        {
+          "title": "Entwicklerfreundlich",
+          "description": "Klare Dokumentation, SDKs und Code-Beispiele fuer eine schnelle Integration."
+        },
+        {
+          "title": "Skalierbares Design",
+          "description": "Entwickelt fuer Millionen von Anfragen mit horizontaler Skalierungsfaehigkeit."
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Kundenerfolge",
+      "title": "Zuverlaessige API-Loesungen",
+      "items": [
+        {
+          "quote": "Ihre API-Architektur verarbeitet muehelos ueber 10 Millionen Anfragen taeglich. Die Dokumentation machte die Integration fuer unsere Partner nahtlos.",
+          "author": "Robert Kim",
+          "role": "VP Engineering, DataSync Corp"
+        },
+        {
+          "quote": "Die von ihnen entwickelte GraphQL-Schnittstelle reduzierte den Datenverbrauch um 60 %. Die Performance unserer mobilen App verbesserte sich erheblich.",
+          "author": "Amanda Chen",
+          "role": "CTO, MobileFirst Inc"
+        },
+        {
+          "quote": "Hervorragende API-Sicherheitsimplementierung. Wir haben das Enterprise-Security-Audit beim ersten Versuch bestanden.",
+          "author": "Marcus Johnson",
+          "role": "Sicherheitsleiter, FinSecure"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Haeufig gestellte Fragen zur API-Entwicklung",
+      "items": [
+        {
+          "question": "Soll ich REST oder GraphQL fuer meine API waehlen?",
+          "answer": "Das haengt von Ihrem Anwendungsfall ab. REST eignet sich ideal fuer einfache, ressourcenbasierte Operationen und verfuegt ueber umfangreiche Tool-Unterstuetzung. GraphQL ueberzeugt, wenn Clients flexiblen Datenabruf benoetigen oder wenn Sie mehrere Client-Typen mit unterschiedlichen Datenanforderungen haben. Wir helfen Ihnen bei der Wahl des besten Ansatzes."
+        },
+        {
+          "question": "Wie gewaehrleisten Sie die API-Sicherheit?",
+          "answer": "Wir implementieren mehrere Sicherheitsebenen, darunter OAuth 2.0/JWT-Authentifizierung, HTTPS-Verschluesselung, Eingabevalidierung, Rate Limiting, IP-Whitelisting und SQL-Injection-Praevention. Zudem fuehren wir vor der Bereitstellung Sicherheitsaudits durch."
+        },
+        {
+          "question": "Koennen Sie sich in unsere bestehenden Systeme integrieren?",
+          "answer": "Selbstverstaendlich. Wir sind auf API-Integration mit Legacy-Systemen, Drittanbieter-Diensten, Zahlungsgateways, CRM- und ERP-Systemen sowie jedem System mit verfuegbarer API oder Datenbankzugang spezialisiert. Wir koennen auch Middleware-Schichten fuer inkompatible Systeme erstellen."
+        },
+        {
+          "question": "Welche Dokumentation stellen Sie bereit?",
+          "answer": "Wir erstellen umfassende API-Dokumentation mit Swagger/OpenAPI-Spezifikationen, einschliesslich interaktiver Testoberflaechen, Code-Beispielen in mehreren Sprachen, Authentifizierungsleitfaeden und Fehlercode-Referenzen."
+        },
+        {
+          "question": "Wie handhaben Sie API-Versionierung?",
+          "answer": "Wir implementieren semantische Versionierung mit URL-Pfadversionen (z. B. v1, v2) oder Header-basierter Versionierung. Wir sorgen fuer Abwaertskompatibilitaet und stellen bei Bedarf Migrationsleitfaeden fuer Breaking Changes bereit."
+        },
+        {
+          "question": "Was ist mit API-Monitoring und Analytics?",
+          "answer": "Wir richten umfassendes Monitoring ein, einschliesslich Antwortzeitverfolgung, Fehlerratenueberwachung, Nutzungsanalysen und Benachrichtigungen. Sie erhalten Dashboards, die den API-Gesundheitszustand, die meistgenutzten Endpoints und Performance-Metriken anzeigen."
+        }
+      ]
+    },
+    "portfolio": {
+      "eyebrow": "Fallstudien",
+      "title": "API-Projekte",
+      "subtitle": "Entdecken Sie unsere erfolgreichen API-Entwicklungsprojekte und die erzielten Ergebnisse.",
+      "projects": [
+        {
+          "title": "E-Commerce-Plattform-API",
+          "description": "Hochleistungs-REST-API fuer einen Online-Marktplatz mit ueber 500.000 Produkten und Echtzeit-Bestandssynchronisierung.",
+          "result": "Ueber 10 Millionen Anfragen taeglich",
+          "tech": [
+            "Node.js",
+            "Express",
+            "PostgreSQL",
+            "Redis"
+          ]
+        },
+        {
+          "title": "FinTech-Integrations-Hub",
+          "description": "Sicheres API-Gateway, das ueber 20 Zahlungsanbieter und Banksysteme PCI-konform verbindet.",
+          "result": "99,99 % Verfuegbarkeit",
+          "tech": [
+            "FastAPI",
+            "GraphQL",
+            "Docker",
+            "AWS"
+          ]
+        },
+        {
+          "title": "Gesundheitsdaten-Plattform",
+          "description": "HIPAA-konforme API-Infrastruktur fuer den Austausch von Patientendaten zwischen mehreren Krankenhaussystemen.",
+          "result": "Von 3 Sekunden auf 200 Millisekunden",
+          "tech": [
+            "Node.js",
+            "MongoDB",
+            "Redis",
+            "Kubernetes"
+          ]
+        },
+        {
+          "title": "IoT-Geraeteverwaltung",
+          "description": "Echtzeit-API mit WebSocket-Unterstuetzung zur Verwaltung von ueber 100.000 weltweit verbundenen Geraeten.",
+          "result": "Ueber 100.000 Geraete",
+          "tech": [
+            "FastAPI",
+            "WebSocket",
+            "TimescaleDB",
+            "MQTT"
+          ]
+        }
+      ]
+    },
+    "pricing": {
+      "eyebrow": "Preise",
+      "title": "API-Entwicklungspakete",
+      "subtitle": "Flexible Preisoptionen fuer API-Projekte jeder Groesse.",
+      "tiers": [
+        {
+          "name": "Starter-Paket",
+          "price": "$8.000 - $15.000",
+          "description": "Ideal fuer kleine Projekte und Prototypen",
+          "features": [
+            "Bis zu 15 API-Endpoints",
+            "JWT-Authentifizierung",
+            "Grundlegendes Rate Limiting",
+            "Swagger-Dokumentation",
+            "PostgreSQL-Integration",
+            "2 Wochen Support nach dem Launch"
+          ]
+        },
+        {
+          "name": "Professional-Paket",
+          "price": "$15.000 - $35.000",
+          "description": "Fuer wachsende Unternehmen mit erweiterten Anforderungen",
+          "features": [
+            "Bis zu 50 API-Endpoints",
+            "OAuth 2.0-Implementierung",
+            "Erweitertes Rate Limiting und Caching",
+            "GraphQL oder REST (nach Wahl)",
+            "Multi-Datenbank-Unterstuetzung",
+            "Webhook-Integrationen",
+            "1 Monat Support nach dem Launch"
+          ],
+          "popular": true
+        },
+        {
+          "name": "Enterprise-Paket",
+          "price": "Individuelles Angebot",
+          "description": "Fuer grosse Unternehmensloesungen",
+          "features": [
+            "Unbegrenzte Endpoints",
+            "Microservices-Architektur",
+            "Multi-Region-Bereitstellung",
+            "Individuelles Sicherheitsaudit",
+            "SLA-Garantien",
+            "24/7-Monitoring und Support",
+            "Dedizierter technischer Account Manager"
+          ]
+        }
+      ]
+    },
+    "cta": {
+      "title": "Bereit, Ihre API zu entwickeln?",
+      "description": "Lassen Sie uns eine leistungsstarke API entwickeln, die Ihre Systeme verbindet und nahtlose Integrationen ermoeglicht.",
+      "schedule": "Beratung buchen",
+      "caseStudies": "Fallstudien ansehen"
+    }
+  },
+  "cybersecurity": {
+    "hero": {
+      "eyebrow": "Cybersecurity-Dienstleistungen",
+      "title": "Schuetzen Sie",
+      "titleAccent": "Ihre digitalen Werte",
+      "description": "Umfassende Cybersecurity-Loesungen zum Schutz Ihres Unternehmens vor sich weiterentwickelnden Bedrohungen. Von Penetrationstests bis hin zu 24/7-Ueberwachung sichern wir Ihre Infrastruktur mit unternehmenstauglichem Schutz.",
+      "startProject": "Schutz erhalten",
+      "viewPortfolio": "Fallstudien ansehen"
+    },
+    "techStack": {
+      "technologies": [
+        "Splunk SIEM",
+        "CrowdStrike",
+        "Palo Alto",
+        "Fortinet",
+        "Nessus",
+        "Wireshark",
+        "Metasploit",
+        "Burp Suite",
+        "Snort IDS",
+        "HashiCorp Vault",
+        "AWS Security Hub",
+        "Azure Sentinel"
+      ]
+    },
+    "process": {
+      "steps": [
+        {
+          "number": "01",
+          "title": "Bewertung",
+          "description": "Umfassendes Sicherheitsaudit zur Identifizierung von Schwachstellen und Kartierung Ihrer Angriffsflaeche."
+        },
+        {
+          "number": "02",
+          "title": "Implementierung",
+          "description": "Bereitstellung von Sicherheitsloesungen, Konfiguration der Verteidigungsmassnahmen und Integration von Ueberwachungssystemen."
+        },
+        {
+          "number": "03",
+          "title": "Ueberwachung",
+          "description": "24/7-SOC-Ueberwachung mit Echtzeit-Bedrohungserkennung und Incident Response."
+        }
+      ]
+    },
+    "services": {
+      "title": "Sicherheitsdienstleistungen",
+      "subtitle": "Integrierte Cybersecurity-Loesungen zum Schutz Ihres Unternehmens vor modernen Bedrohungen.",
+      "items": [
+        {
+          "title": "Sicherheitsbewertung",
+          "description": "Umfassende Schwachstellenbewertungen und Penetrationstests zur Identifizierung von Sicherheitsluecken, bevor Angreifer sie finden."
+        },
+        {
+          "title": "Penetrationstests",
+          "description": "Ethical-Hacking-Dienstleistungen, die reale Angriffe simulieren, um Ihre Verteidigung zu testen und Schwachstellen aufzudecken."
+        },
+        {
+          "title": "Bedrohungsueberwachung",
+          "description": "24/7-SOC-Ueberwachung (Security Operations Center) mit Echtzeit-Bedrohungserkennung und Alarmierung."
+        },
+        {
+          "title": "Zugangsmanagement",
+          "description": "Implementierung robuster Identity- und Access-Management-Kontrollen zum Schutz sensibler Ressourcen und Daten."
+        },
+        {
+          "title": "Netzwerksicherheit",
+          "description": "Firewall-Management, Intrusion-Detection-Systeme und Netzwerksegmentierung zur Absicherung Ihrer Infrastruktur."
+        },
+        {
+          "title": "Compliance und Audit",
+          "description": "Erreichung und Aufrechterhaltung der Compliance mit ISO 27001, SOC 2, GDPR, HIPAA und PCI-DSS."
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Kundenerfolge",
+      "title": "Vertrauenswuerdiger Sicherheitspartner",
+      "items": [
+        {
+          "quote": "Die Sicherheitsbewertung deckte kritische Schwachstellen auf, von denen wir nichts wussten. Die Behebung war gruendlich und professionell.",
+          "author": "Richard Martinez",
+          "role": "CTO, FinanceFirst Corp"
+        },
+        {
+          "quote": "Die 24/7-SOC-Ueberwachung war von unschaetzbarem Wert. Sie erkannten und stoppten einen ausgekluegelten Angriff, bevor Schaden entstehen konnte.",
+          "author": "Sarah Thompson",
+          "role": "CISO, HealthTech Solutions"
+        },
+        {
+          "quote": "Dank ihres Teams haben wir SOC 2-Compliance in Rekordzeit erreicht. Ihre Expertise in Sicherheitsframeworks ist herausragend.",
+          "author": "David Chen",
+          "role": "VP Operations, DataSecure Inc"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Antworten auf Ihre Sicherheitsfragen",
+      "items": [
+        {
+          "question": "Wie oft sollten Penetrationstests durchgefuehrt werden?",
+          "answer": "Wir empfehlen mindestens jaehrliche Penetrationstests oder nach wesentlichen Aenderungen der Infrastruktur. Fuer Unternehmen, die mit sensiblen Daten arbeiten oder in regulierten Branchen taetig sind, kann eine vierteljaehrliche Testung angemessener sein."
+        },
+        {
+          "question": "Was umfasst eine Sicherheitsbewertung?",
+          "answer": "Unsere umfassende Bewertung beinhaltet Schwachstellenscans, Penetrationstests, Konfigurationsueberpruefungen, Richtlinienanalyse, Social-Engineering-Tests und einen detaillierten Bericht mit priorisierten Behebungsempfehlungen."
+        },
+        {
+          "question": "Wie schnell reagieren Sie auf Sicherheitsvorfaelle?",
+          "answer": "Unser Incident-Response-Team ist rund um die Uhr verfuegbar. Bei kritischen Vorfaellen garantieren wir eine Erstreaktion innerhalb von 15 Minuten. Wir verfuegen ueber definierte Verfahren und Aktionsplaene zur schnellen Eindaemmung von Bedrohungen und Schadensminimierung."
+        },
+        {
+          "question": "Unterstuetzen Sie bei Compliance-Anforderungen?",
+          "answer": "Ja, wir bieten umfassende Compliance-Unterstuetzung fuer ISO 27001, SOC 2, GDPR, HIPAA und PCI-DSS. Wir helfen bei der Gap-Analyse, Richtlinienentwicklung, Kontrollimplementierung und Auditvorbereitung."
+        },
+        {
+          "question": "Koennen Sie mit unseren bestehenden Sicherheitstools arbeiten?",
+          "answer": "Selbstverstaendlich. Wir integrieren uns in die meisten fuehrenden Sicherheitsplattformen und koennen mit Ihrem bestehenden Tech-Stack arbeiten. Sollten Luecken identifiziert werden, empfehlen wir ergaenzende Loesungen."
+        },
+        {
+          "question": "Welche Qualifikationen hat Ihr Sicherheitsteam?",
+          "answer": "Unser Team verfuegt ueber branchenfuehrende Zertifizierungen wie CISSP, CEH, OSCP und GIAC. Wir bilden uns kontinuierlich zu neuen Bedrohungen weiter und sind aktiv in Cybersecurity-Forschungsgemeinschaften."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Bereit, Ihr Unternehmen abzusichern?",
+      "description": "Lassen Sie uns besprechen, wie wir Ihr Unternehmen mit einer umfassenden Sicherheitsstrategie vor Cyberbedrohungen schuetzen koennen.",
+      "schedule": "Sicherheitsbewertung buchen",
+      "caseStudies": "Fallstudien ansehen"
+    }
+  },
+  "devopsCloud": {
+    "hero": {
+      "eyebrow": "DevOps- und Cloud-Dienstleistungen",
+      "title": "Modernisieren Sie",
+      "titleAccent": "Ihre Infrastruktur",
+      "description": "Beschleunigen Sie Ihren Entwicklungszyklus mit modernen DevOps-Praktiken und skalierbarer Cloud-Architektur. Wir automatisieren, optimieren und sichern Ihre gesamte Deployment-Pipeline.",
+      "startProject": "Projekt starten",
+      "viewPortfolio": "Fallstudien ansehen"
+    },
+    "techStack": {
+      "technologies": [
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "Jenkins",
+        "GitHub Actions",
+        "Azure",
+        "GCP",
+        "Ansible",
+        "Prometheus",
+        "Grafana",
+        "ArgoCD"
+      ]
+    },
+    "process": {
+      "steps": [
+        {
+          "number": "01",
+          "title": "Bewertung",
+          "description": "Wir analysieren Ihre bestehende Infrastruktur und identifizieren Optimierungsmoeglichkeiten."
+        },
+        {
+          "number": "02",
+          "title": "Architekturdesign",
+          "description": "Entwurf einer skalierbaren und sicheren Cloud-Architektur, massgeschneidert fuer Ihre Anforderungen."
+        },
+        {
+          "number": "03",
+          "title": "Automatisierung",
+          "description": "Implementierung von CI/CD-Pipelines und Infrastructure as Code fuer nahtlose Deployments."
+        },
+        {
+          "number": "04",
+          "title": "Migration",
+          "description": "Ausfallfreie Migrationen mit umfassenden Tests und Validierung."
+        },
+        {
+          "number": "05",
+          "title": "Monitoring",
+          "description": "Einrichtung umfassender Ueberwachung, Alarmierung und Performance-Optimierung."
+        }
+      ]
+    },
+    "services": {
+      "title": "DevOps-Funktionen",
+      "subtitle": "Integrierte DevOps- und Cloud-Loesungen, die die Bereitstellung beschleunigen und Zuverlaessigkeit gewaehrleisten.",
+      "items": [
+        {
+          "title": "CI/CD-Pipeline-Design",
+          "description": "Automatisierte Build-, Test- und Deployment-Pipelines mit Jenkins, GitHub Actions oder GitLab CI fuer schnellere Releases."
+        },
+        {
+          "title": "Cloud-Infrastruktur",
+          "description": "Entwurf und Verwaltung skalierbarer Infrastruktur auf AWS, Azure oder GCP mit hoher Verfuegbarkeit und Kostenoptimierung."
+        },
+        {
+          "title": "Container-Orchestrierung",
+          "description": "Docker-Container und Kubernetes-Orchestrierung fuer konsistente und skalierbare Anwendungsbereitstellung."
+        },
+        {
+          "title": "Infrastructure as Code",
+          "description": "Terraform- und Ansible-Automatisierung fuer reproduzierbare, versionskontrollierte Infrastrukturverwaltung."
+        },
+        {
+          "title": "Monitoring und Observability",
+          "description": "Implementierung von Prometheus, Grafana und ELK Stack fuer umfassende Systemtransparenz und Alarmierung."
+        },
+        {
+          "title": "Sicherheit und Compliance",
+          "description": "DevSecOps-Praktiken, Schwachstellenscanning und Compliance-Automatisierung fuer sichere Deployments."
+        }
+      ]
+    },
+    "whyUs": {
+      "eyebrow": "Warum wir",
+      "title": "DevOps-Exzellenz",
+      "description": "Wir liefern praxiserprobte DevOps-Expertise, um Ihre Ablaeufe zu optimieren und die Entwicklungsgeschwindigkeit zu steigern.",
+      "reasons": [
+        {
+          "title": "Zertifizierte Experten",
+          "description": "Ingenieure mit AWS-, Azure- und GCP-Zertifizierungen und praktischer Erfahrung in Produktionsumgebungen."
+        },
+        {
+          "title": "24/7-Zuverlaessigkeit",
+          "description": "SLAs mit 99,99 % Verfuegbarkeit mit proaktivem Monitoring und Incident Response."
+        },
+        {
+          "title": "Kostenoptimierung",
+          "description": "Reduzierung der Cloud-Ausgaben um bis zu 40 % durch Ressourcenoptimierung und Automatisierung."
+        },
+        {
+          "title": "Schnelle Umsetzung",
+          "description": "Erhalten Sie eine funktionsfaehige CI/CD-Pipeline innerhalb von Wochen, nicht Monaten."
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Kundenerfolge",
+      "title": "DevOps-Wirkung",
+      "items": [
+        {
+          "quote": "Sie haben unsere Deployment-Zeit von Stunden auf Minuten reduziert. Unser Team kann jetzt taeglich statt woechentlich Features ausliefern.",
+          "author": "Marcus Thompson",
+          "role": "VP Engineering, TechScale"
+        },
+        {
+          "quote": "Die Migration zu Kubernetes verlief reibungslos. Kein Ausfall waehrend des Uebergangs und 60 % Einsparung bei den Infrastrukturkosten.",
+          "author": "Elena Rodriguez",
+          "role": "CTO, CloudFirst Inc"
+        },
+        {
+          "quote": "Das von ihnen eingerichtete Monitoring-System erkennt Probleme, bevor sie die Nutzer betreffen. Die mittlere Wiederherstellungszeit sank von Stunden auf Minuten.",
+          "author": "James Park",
+          "role": "DevOps Lead, FastDeploy"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Antworten auf Ihre DevOps-Fragen",
+      "items": [
+        {
+          "question": "Wie lange dauert eine typische CI/CD-Pipeline-Implementierung?",
+          "answer": "Eine grundlegende CI/CD-Pipeline kann in 1 bis 2 Wochen eingerichtet werden. Komplexere Pipelines mit mehreren Umgebungen, Sicherheitsscans und Genehmigungsworkflows dauern in der Regel 4 bis 6 Wochen. Wir beginnen mit einer funktionsfaehigen Pipeline und optimieren basierend auf dem Feedback Ihres Teams."
+        },
+        {
+          "question": "Koennen Sie mit unserer bestehenden Infrastruktur arbeiten?",
+          "answer": "Selbstverstaendlich. Wir sind auf die schrittweise Modernisierung bestehender Infrastruktur spezialisiert. Ob Sie auf physischen Servern, virtuellen Maschinen arbeiten oder bereits einige Cloud-Dienste nutzen – wir koennen bei der Optimierung und Automatisierung helfen, ohne Ihren laufenden Betrieb zu stoeren."
+        },
+        {
+          "question": "Welche Cloud-Anbieter unterstuetzen Sie?",
+          "answer": "Wir arbeiten mit allen fuehrenden Cloud-Anbietern, darunter AWS, Azure, GCP und DigitalOcean. Wir koennen auch bei Multi-Cloud-Strategien und Hybrid-Cloud-Setups unterstuetzen, die lokale Infrastruktur mit Cloud-Diensten kombinieren."
+        },
+        {
+          "question": "Wie gehen Sie mit Sicherheit in DevOps um?",
+          "answer": "Sicherheit ist in alle Phasen des DevOps-Prozesses integriert (DevSecOps). Wir implementieren automatisierte Sicherheitsscans in CI/CD-Pipelines, Best Practices fuer Infrastruktursicherheit, Secrets Management und Compliance as Code, um standardmaessig sichere Deployments zu gewaehrleisten."
+        },
+        {
+          "question": "Was umfasst das Monitoring-Setup?",
+          "answer": "Unser Monitoring-System umfasst typischerweise Metrik-Erfassung (Prometheus), Visualisierung (Grafana), Log-Aggregation (ELK oder Loki), Distributed Tracing und intelligente Alarmierung. Wir konfigurieren individuelle Dashboards und Alerts fuer die wichtigsten Leistungskennzahlen Ihrer Anwendung."
+        },
+        {
+          "question": "Bieten Sie fortlaufenden Support nach der Implementierung?",
+          "answer": "Ja, wir bieten verschiedene Support-Stufen von grundlegender Wartung bis hin zu vollstaendig verwalteten DevOps-Diensten. Dies umfasst 24/7-Monitoring, Incident Response, Pipeline-Wartung und kontinuierliche Optimierung Ihrer Infrastruktur."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Bereit, Ihre Infrastruktur zu transformieren?",
+      "description": "Lassen Sie uns besprechen, wie moderne DevOps-Praktiken die Entwicklung beschleunigen und den operativen Aufwand reduzieren koennen.",
+      "schedule": "Beratung buchen",
+      "caseStudies": "Fallstudien ansehen"
+    },
+    "features": {
+      "eyebrow": "Funktionen",
+      "title": "Umfassende DevOps-Loesungen",
+      "subtitle": "Wir bieten integrierte DevOps-Dienstleistungen, massgeschneidert fuer die Anforderungen Ihrer Infrastruktur.",
+      "items": [
+        {
+          "title": "Automatisierte CI/CD-Pipelines",
+          "description": "Automatisches Bauen, Testen und Bereitstellen bei jedem Code-Commit fuer schnellere und sicherere Releases."
+        },
+        {
+          "title": "Infrastructure as Code (IaC)",
+          "description": "Versionskontrollierte, reproduzierbare Infrastruktur mit Terraform, CloudFormation oder Pulumi."
+        },
+        {
+          "title": "Container-Orchestrierung",
+          "description": "Kubernetes- und Docker-Management fuer skalierbare und portable Anwendungsbereitstellung."
+        },
+        {
+          "title": "Cloud-Architekturdesign",
+          "description": "Hochverfuegbare, kostenoptimierte Architekturen auf AWS, Azure oder GCP."
+        },
+        {
+          "title": "GitOps-Implementierung",
+          "description": "Deklarative Infrastruktur- und Anwendungsbereitstellung mit Git als Single Source of Truth."
+        },
+        {
+          "title": "Microservices-Architektur",
+          "description": "Entwurf und Implementierung skalierbarer Microservices mit Service Mesh und API-Gateways."
+        },
+        {
+          "title": "Datenbank-DevOps",
+          "description": "Automatisierte Datenbankmigrationen, Backups und ausfallfreie Skalierung."
+        },
+        {
+          "title": "Performance-Optimierung",
+          "description": "Identifizierung und Beseitigung von Engpaessen fuer optimale Anwendungsperformance."
+        },
+        {
+          "title": "Disaster Recovery",
+          "description": "Automatisierte Backup-Strategien und Multi-Region-Failover fuer Geschaeftskontinuitaet."
+        },
+        {
+          "title": "Kostenmanagement",
+          "description": "FinOps-Praktiken zur Optimierung der Cloud-Ausgaben und Ressourcennutzung."
+        }
+      ]
+    },
+    "portfolio": {
+      "eyebrow": "Fallstudien",
+      "title": "DevOps-Erfolgsgeschichten",
+      "subtitle": "Erfahren Sie, wie wir Unternehmen bei der Transformation ihrer Infrastruktur und Beschleunigung der Bereitstellung unterstuetzt haben.",
+      "projects": [
+        {
+          "title": "E-Commerce-Plattform-Migration",
+          "client": "RetailMax",
+          "description": "Migration einer monolithischen Anwendung zu Microservices auf Kubernetes ohne Ausfallzeit.",
+          "result": "70 % schnellere Deployments",
+          "technologies": [
+            "Kubernetes",
+            "AWS EKS",
+            "Terraform",
+            "ArgoCD"
+          ]
+        },
+        {
+          "title": "FinTech CI/CD-Transformation",
+          "client": "PaySecure",
+          "description": "Implementierung einer sicheren CI/CD-Pipeline mit Compliance-Automatisierung fuer Finanzdienstleistungen.",
+          "result": "99,99 % Verfuegbarkeit erreicht",
+          "technologies": [
+            "GitHub Actions",
+            "AWS",
+            "Vault",
+            "SonarQube"
+          ]
+        },
+        {
+          "title": "SaaS-Infrastruktur-Skalierung",
+          "client": "CloudAnalytics",
+          "description": "Auto-Scaling-Infrastruktur, die ein 10-faches Traffic-Wachstum ohne manuelle Eingriffe bewaeltigt.",
+          "result": "40 % Kostenreduzierung",
+          "technologies": [
+            "GCP",
+            "Kubernetes",
+            "Prometheus",
+            "Terraform"
+          ]
+        },
+        {
+          "title": "Healthcare-Plattform-Compliance",
+          "client": "MedConnect",
+          "description": "HIPAA-konforme Infrastruktur mit automatisiertem Sicherheitsscanning und Audit-Logging.",
+          "result": "Vollstaendige HIPAA-Compliance",
+          "technologies": [
+            "Azure",
+            "Docker",
+            "Ansible",
+            "ELK Stack"
+          ]
+        }
+      ]
+    },
+    "pricing": {
+      "eyebrow": "Preise",
+      "title": "DevOps-Servicepakete",
+      "subtitle": "Flexible Optionen, die zu Ihren Infrastrukturanforderungen und Ihrem Budget passen.",
+      "tiers": [
+        {
+          "name": "Starter",
+          "price": "$2.500",
+          "period": "/Monat",
+          "description": "Ideal fuer Startups und kleine Teams, die mit DevOps beginnen.",
+          "features": [
+            "Grundlegende CI/CD-Pipeline-Einrichtung",
+            "Eine Cloud-Umgebung",
+            "Monatliche Infrastruktur-Ueberpruefung",
+            "Support 8x5",
+            "Grundlegendes Monitoring-Setup",
+            "Bis zu 5 Deployments taeglich"
+          ],
+          "cta": "Jetzt starten"
+        },
+        {
+          "name": "Professional",
+          "price": "$6.500",
+          "period": "/Monat",
+          "description": "Fuer wachsende Teams, die eine robuste DevOps-Infrastruktur benoetigen.",
+          "features": [
+            "Erweiterte CI/CD mit Sicherheitsscans",
+            "Multi-Environment-Management",
+            "Woechentliche Optimierungs-Reviews",
+            "24/7-Support",
+            "Vollstaendiges Observability-Paket",
+            "Unbegrenzte Deployments",
+            "Infrastructure as Code",
+            "Disaster-Recovery-Setup"
+          ],
+          "cta": "Kostenlose Testversion starten",
+          "popular": true
+        },
+        {
+          "name": "Enterprise",
+          "price": "Individuell",
+          "period": "",
+          "description": "Vollstaendig verwaltete DevOps-Dienste fuer grosse Betriebsumgebungen.",
+          "features": [
+            "Dediziertes DevOps-Team",
+            "Multi-Cloud-/Hybrid-Unterstuetzung",
+            "Individuelles SLA (bis zu 99,99 %)",
+            "Dedizierter 24/7-Support",
+            "Erweiterte Sicherheit und Compliance",
+            "FinOps-Kostenoptimierung",
+            "Team-Schulung und Enablement",
+            "Vierteljaehrliche Business Reviews"
+          ],
+          "cta": "Vertrieb kontaktieren"
+        }
+      ]
+    }
+  },
+  "ecommerce": {
+    "hero": {
+      "eyebrow": "E-Commerce-Lösungen",
+      "title": "Bauen Sie Ihr digitales",
+      "titleAccent": "Imperium auf",
+      "description": "Transformieren Sie Ihr Unternehmen mit modernsten E-Commerce-Lösungen. Von maßgeschneiderten Storefronts bis hin zu Enterprise-Marktplätzen entwickeln wir Online-Shops, die Besucher in treue Kunden verwandeln.",
+      "startProject": "Starten Sie Ihren Shop",
+      "viewPortfolio": "Portfolio ansehen"
+    },
+    "process": {
+      "steps": [
+        {
+          "number": "01",
+          "title": "Strategie & Planung",
+          "description": "Wir analysieren den Markt, Wettbewerber und Ihre Ziele, um eine erfolgreiche E-Commerce-Strategie zu entwickeln."
+        },
+        {
+          "number": "02",
+          "title": "Design & Entwicklung",
+          "description": "Wir erstellen ansprechende, konversionsoptimierte Shops mit einem reibungslosen Checkout-Erlebnis."
+        },
+        {
+          "number": "03",
+          "title": "Launch & Skalierung",
+          "description": "Starten Sie mit Zuversicht und skalieren Sie Ihr Geschäft durch datengestützte Optimierungen."
+        }
+      ]
+    },
+    "services": {
+      "title": "E-Commerce-Leistungen",
+      "subtitle": "Umfassende E-Commerce-Lösungen, die darauf ausgelegt sind, den Umsatz zu maximieren und außergewöhnliche Einkaufserlebnisse zu bieten.",
+      "items": [
+        {
+          "title": "Individuelle Storefront-Entwicklung",
+          "description": "Einzigartige, markengerechte Online-Shops, entwickelt mit modernsten Frameworks für maximale Leistung und Flexibilität."
+        },
+        {
+          "title": "Payment-Gateway-Integration",
+          "description": "Sichere Zahlungsabwicklung mit mehreren Gateways, Buy-Now-Pay-Later-Optionen und Betrugsprävention."
+        },
+        {
+          "title": "Bestands- & Versandmanagement",
+          "description": "Echtzeit-Bestandsverwaltung, Multi-Warehouse-Unterstützung und Integration mit Versanddienstleistern."
+        },
+        {
+          "title": "Analytics & Reporting",
+          "description": "Umfassende Dashboards zur Verfolgung von Verkäufen, Kundenverhalten und Conversion-Metriken."
+        },
+        {
+          "title": "Plattform-Integration",
+          "description": "Nahtlose Anbindung an ERP-, CRM-Systeme, Marketing-Tools und externe Marktplätze."
+        },
+        {
+          "title": "Internationaler Handel",
+          "description": "Unterstützung mehrerer Währungen und Sprachen mit lokalisierten Checkout-Seiten und Steuer-Compliance."
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Erfolgsgeschichten",
+      "title": "E-Commerce-Ergebnisse",
+      "items": [
+        {
+          "quote": "Unsere Online-Verkäufe haben sich innerhalb von 6 Monaten nach dem Launch des neuen Shops verdreifacht. Allein die Checkout-Optimierung steigerte die Conversion-Rate um 40 %.",
+          "author": "Sarah Mitchell",
+          "role": "CEO, LuxeStyle Fashion"
+        },
+        {
+          "quote": "Das Bestandssystem, das sie entwickelt haben, spart uns 20 Stunden pro Woche und hat Überverkäufe vollständig eliminiert.",
+          "author": "David Chen",
+          "role": "Operations Manager, TechGear Pro"
+        },
+        {
+          "quote": "Vom ersten Tag an bewältigte der Shop den Black-Friday-Traffic ohne jegliche Probleme. Die beste Investition, die wir je getätigt haben.",
+          "author": "Maria Santos",
+          "role": "Gründerin, Organic Harvest"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Fragen zum E-Commerce",
+      "items": [
+        {
+          "question": "Welche Plattform ist die beste für mein Unternehmen?",
+          "answer": "Das hängt von Ihren Anforderungen ab. Shopify eignet sich hervorragend für einen schnellen Start, WooCommerce für die WordPress-Integration, Magento für große Unternehmen und maßgeschneiderte Lösungen für einzigartige Anforderungen. Wir helfen Ihnen bei der Auswahl in der Discovery-Phase."
+        },
+        {
+          "question": "Wie lange dauert es, einen Online-Shop zu erstellen?",
+          "answer": "Ein einfacher Shop dauert 4 bis 6 Wochen, während komplexe maßgeschneiderte Lösungen 3 bis 6 Monate in Anspruch nehmen können. Wir erstellen detaillierte Zeitpläne, nachdem wir Ihre Anforderungen verstanden haben."
+        },
+        {
+          "question": "Können Sie meinen bestehenden Shop migrieren?",
+          "answer": "Ja, wir sind auf E-Commerce-Migrationen spezialisiert. Wir migrieren Produkte, Kunden und Bestellungen und bewahren dabei Ihr SEO-Ranking während des gesamten Prozesses."
+        },
+        {
+          "question": "Bieten Sie fortlaufenden Support an?",
+          "answer": "Selbstverständlich. Wir bieten Wartungspakete an, die Sicherheitsupdates, Performance-Monitoring und Feature-Verbesserungen umfassen, damit Ihr Shop reibungslos läuft."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Bereit, online zu verkaufen?",
+      "description": "Lassen Sie uns eine E-Commerce-Plattform aufbauen, die Ihre Produkte in Gewinne und Ihre Besucher in treue Kunden verwandelt.",
+      "schedule": "Beratung buchen",
+      "caseStudies": "Erfolgsgeschichten ansehen"
     }
   }
 }
