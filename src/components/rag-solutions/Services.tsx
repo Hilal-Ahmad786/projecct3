@@ -7,15 +7,9 @@ import {
     DocumentTextIcon,
     ChatBubbleLeftRightIcon,
     ShieldCheckIcon,
-import { useSectionTranslations } from '@/hooks/useTranslations';
-import {
-    CircleStackIcon,
-    MagnifyingGlassIcon,
-    DocumentTextIcon,
-    ChatBubbleLeftRightIcon,
-    ShieldCheckIcon,
     ArrowPathIcon
 } from '@heroicons/react/24/outline';
+import { useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function Services() {
     const t = useSectionTranslations('serviceSubpages.rag-solutions');

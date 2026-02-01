@@ -7,15 +7,9 @@ import {
     IdentificationIcon,
     VideoCameraIcon,
     DocumentMagnifyingGlassIcon,
-import { useSectionTranslations } from '@/hooks/useTranslations';
-import {
-    EyeIcon,
-    CubeTransparentIcon,
-    IdentificationIcon,
-    VideoCameraIcon,
-    DocumentMagnifyingGlassIcon,
     SparklesIcon
 } from '@heroicons/react/24/outline';
+import { useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function Services() {
     const t = useSectionTranslations('serviceSubpages.computer-vision');

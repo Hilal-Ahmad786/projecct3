@@ -7,15 +7,9 @@ import {
     ChartBarSquareIcon,
     ShieldCheckIcon,
     CpuChipIcon,
-import { useSectionTranslations } from '@/hooks/useTranslations';
-import {
-    ArrowPathIcon,
-    ServerStackIcon,
-    ChartBarSquareIcon,
-    ShieldCheckIcon,
-    CpuChipIcon,
     CloudIcon
 } from '@heroicons/react/24/outline';
+import { useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function Services() {
     const t = useSectionTranslations('serviceSubpages.mlops-deployment');
