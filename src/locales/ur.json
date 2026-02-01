@@ -36,7 +36,7 @@
     "print": "پرنٹ",
     "export": "ایکسپورٹ",
     "import": "امپورٹ",
-    "getQuote": "قیمت حاصل کریں"
+    "getQuote": "کوٹیشن حاصل کریں"
   },
   "metadata": {
     "defaultTitle": "PakTechnology – جدید ڈیجیٹل حل",
@@ -52,7 +52,16 @@
     "contact": "رابطہ",
     "getQuote": "کوٹیشن حاصل کریں",
     "language": "زبان",
-    "menu": "مینیو"
+    "menu": "مینیو",
+    "serviceNav": {
+      "overview": "جائزہ",
+      "features": "خصوصیات",
+      "process": "عمل",
+      "techStack": "ٹیکنالوجی",
+      "portfolio": "پورٹ فولیو",
+      "faq": "سوالات",
+      "security": "سیکیورٹی"
+    }
   },
   "hero": {
     "eyebrow": "ڈیجیٹل حل",
@@ -1539,6 +1548,35 @@
       "draftFound": "آپ کا ایک غیر محفوظ مسودہ ہے۔ کیا آپ جاری رکھنا چاہیں گے؟",
       "discard": "رد کریں",
       "restore": "بحال کریں"
+    },
+    "errors": {
+      "required": "یہ فیلڈ ضروری ہے",
+      "email": "براہ کرم درست ای میل ایڈریس درج کریں",
+      "phone": "براہ کرم درست فون نمبر درج کریں",
+      "minLength": "کم از کم {{min}} حروف ہونے چاہئیں",
+      "maxLength": "{{max}} حروف سے زیادہ نہیں ہونا چاہیے",
+      "invalidUrl": "براہ کرم درست URL درج کریں"
+    },
+    "labels": {
+      "name": "نام",
+      "email": "ای میل",
+      "phone": "فون",
+      "company": "کمپنی",
+      "message": "پیغام",
+      "subject": "موضوع",
+      "budget": "بجٹ",
+      "timeline": "ٹائم لائن",
+      "projectType": "پروجیکٹ کی قسم",
+      "description": "تفصیل"
+    },
+    "placeholders": {
+      "name": "اپنا نام درج کریں",
+      "email": "اپنا ای میل درج کریں",
+      "phone": "اپنا فون نمبر درج کریں",
+      "company": "اپنی کمپنی کا نام درج کریں",
+      "message": "اپنے پروجیکٹ کے بارے میں بتائیں...",
+      "subject": "یہ کس بارے میں ہے؟",
+      "search": "تلاش..."
     }
   },
   "navigation": {
@@ -2126,6 +2164,126 @@
         "description": "آئیں ہم بڑے لینگویج ماڈلز کی طاقت آپ کی ایپلیکیشنز میں لائیں۔",
         "primaryCta": "انٹیگریشن کا تخمینہ حاصل کریں",
         "secondaryCta": "تکنیکی مشاورت"
+      }
+    },
+    "webDevelopmentPage": {
+      "title": "Our Web Development Services",
+      "description": "From concept to deployment, we deliver comprehensive web solutions that help businesses thrive in the digital landscape.",
+      "items": {
+        "customApps": {
+          "title": "Custom Web Applications",
+          "description": "Tailor-made web solutions built from the ground up to meet your unique business requirements and workflow."
+        },
+        "ecommerce": {
+          "title": "E-commerce Solutions",
+          "description": "Powerful online stores with secure payments, inventory management, and seamless user experiences that drive conversions."
+        },
+        "cms": {
+          "title": "Content Management Systems",
+          "description": "User-friendly CMS platforms that empower your team to manage content efficiently without technical expertise."
+        },
+        "pwa": {
+          "title": "Progressive Web Apps",
+          "description": "Fast, reliable, and engaging web applications that work offline and feel like native mobile apps."
+        },
+        "api": {
+          "title": "API Integration",
+          "description": "Seamlessly connect your web application with third-party services, payment gateways, and external data sources."
+        },
+        "performance": {
+          "title": "Performance Optimization",
+          "description": "Speed up your existing website with advanced optimization techniques for better user experience and SEO rankings."
+        }
+      }
+    },
+    "mobileDevelopmentPage": {
+      "title": "Mobile Development Services",
+      "description": "From concept to launch, we provide comprehensive mobile app development services tailored to your business needs.",
+      "items": {
+        "ios": {
+          "title": "iOS Development",
+          "description": "Build stunning native iOS apps using Swift and SwiftUI. We create high-performance applications optimized for iPhone, iPad, and Apple Watch."
+        },
+        "android": {
+          "title": "Android Development",
+          "description": "Develop powerful Android applications using Kotlin and Jetpack Compose. We ensure compatibility across the diverse Android ecosystem."
+        },
+        "crossPlatform": {
+          "title": "Cross-Platform Apps",
+          "description": "Save time and budget with React Native or Flutter development. One codebase delivers native experiences on both iOS and Android."
+        },
+        "maintenance": {
+          "title": "App Maintenance",
+          "description": "Keep your app running smoothly with regular updates, bug fixes, and performance improvements. We provide ongoing support and monitoring."
+        },
+        "performance": {
+          "title": "Performance Optimization",
+          "description": "Optimize your app for speed, battery efficiency, and smooth animations. We ensure your users enjoy a fast, responsive experience."
+        },
+        "aso": {
+          "title": "App Store Optimization",
+          "description": "Maximize your app visibility with ASO strategies. We optimize listings, keywords, and screenshots to drive organic downloads."
+        }
+      }
+    },
+    "aiServicesPage": {
+      "title": "Comprehensive AI Services",
+      "description": "From strategy to implementation, we offer end-to-end AI services to transform your business operations.",
+      "items": {
+        "consulting": {
+          "title": "AI Consulting",
+          "description": "Strategic guidance to identify AI opportunities, assess feasibility, and create a roadmap for successful AI adoption in your organization."
+        },
+        "customDev": {
+          "title": "Custom AI Development",
+          "description": "Bespoke AI solutions built from the ground up to address your unique business challenges and requirements."
+        },
+        "automation": {
+          "title": "Process Automation",
+          "description": "Intelligent automation solutions that streamline workflows, reduce manual tasks, and increase operational efficiency."
+        },
+        "vision": {
+          "title": "Computer Vision",
+          "description": "Advanced image and video analysis systems for object detection, facial recognition, quality control, and visual inspection."
+        },
+        "analytics": {
+          "title": "Intelligent Analytics",
+          "description": "AI-powered analytics platforms that transform raw data into actionable insights and predictive intelligence."
+        },
+        "nlp": {
+          "title": "Natural Language Processing",
+          "description": "Text analysis, sentiment detection, chatbots, and document processing solutions powered by state-of-the-art NLP models."
+        }
+      }
+    },
+    "ecommercePage": {
+      "title": "Complete E-Commerce Solutions",
+      "description": "Everything you need to launch, run, and scale a successful online store",
+      "items": {
+        "storefronts": {
+          "title": "Custom Storefronts",
+          "description": "Beautifully designed, fully customized online stores that reflect your brand identity and provide exceptional shopping experiences."
+        },
+        "payments": {
+          "title": "Payment Integration",
+          "description": "Seamless integration with multiple payment gateways including Stripe, PayPal, and local payment methods for global reach."
+        },
+        "inventory": {
+          "title": "Inventory Management",
+          "description": "Real-time inventory tracking, automated stock alerts, and multi-warehouse support to streamline your operations."
+        },
+        "analytics": {
+          "title": "Analytics & Insights",
+          "description": "Comprehensive dashboards with sales analytics, customer behavior tracking, and conversion optimization insights."
+        },
+        "orders": {
+          "title": "Order Processing",
+          "description": "Automated order management with fulfillment tracking, returns handling, and customer notification systems."
+        },
+        "mobile": {
+          "title": "Mobile Commerce",
+          "description": "Responsive, mobile-first designs and progressive web apps that capture the growing mobile shopping market."
+        }
       }
     }
   },
@@ -3936,6 +4094,4195 @@
       "description": "آئیں ہم ایک ایسا ای کامرس پلیٹ فارم بنائیں جو آپ کی مصنوعات کو منافع میں اور وزیٹرز کو وفادار گاہکوں میں تبدیل کرے۔",
       "schedule": "مشاورت بک کریں",
       "caseStudies": "کامیابی کی کہانیاں دیکھیں"
+    }
+  },
+  "cookieConsent": {
+    "title": "ہم آپ کی پرائیویسی کی قدر کرتے ہیں",
+    "description": "ہم آپ کے براؤزنگ تجربے کو بہتر بنانے، سائٹ ٹریفک کا تجزیہ کرنے اور مواد کو ذاتی بنانے کے لیے کوکیز استعمال کرتے ہیں۔ \"سب قبول کریں\" پر کلک کرکے، آپ ہمارے کوکیز کے استعمال سے اتفاق کرتے ہیں۔",
+    "privacyPolicy": "پرائیویسی پالیسی",
+    "customize": "اپنی مرضی کے مطابق",
+    "decline": "انکار",
+    "acceptAll": "سب قبول کریں",
+    "preferencesTitle": "کوکی ترجیحات",
+    "necessaryCookies": "ضروری کوکیز",
+    "necessaryDesc": "ویب سائٹ کے صحیح کام کرنے کے لیے ضروری ہے",
+    "analyticsCookies": "تجزیاتی کوکیز",
+    "analyticsDesc": "ہمیں یہ سمجھنے میں مدد کرتی ہیں کہ زائرین ہماری سائٹ کیسے استعمال کرتے ہیں",
+    "marketingCookies": "مارکیٹنگ کوکیز",
+    "marketingDesc": "متعلقہ اشتہارات فراہم کرنے کے لیے استعمال ہوتی ہیں",
+    "cancel": "منسوخ",
+    "savePreferences": "ترجیحات محفوظ کریں"
+  },
+  "serviceSubpages": {
+    "common": {
+      "viewDetails": "تفصیلات دیکھیں",
+      "stillHaveQuestions": "ابھی بھی سوالات ہیں؟",
+      "stillHaveQuestionsDesc": "جو جواب آپ تلاش کر رہے ہیں وہ نہیں مل رہا؟ ہماری ٹیم ہماری خدمات کے بارے میں کسی بھی سوال میں مدد کے لیے حاضر ہے۔",
+      "contactUs": "ہم سے رابطہ کریں",
+      "searchQuestions": "سوالات تلاش کریں...",
+      "noMatchingQuestions": "کوئی مماثل سوال نہیں ملا۔",
+      "clearSearch": "تلاش صاف کریں",
+      "all": "سب",
+      "challenge": "چیلنج",
+      "solution": "حل",
+      "keyResults": "اہم نتائج",
+      "filterByCategory": "زمرے کے مطابق فلٹر کریں",
+      "viewProject": "پروجیکٹ دیکھیں",
+      "proficiency": "مہارت",
+      "stepNumber": "مرحلہ {{number}}",
+      "scrollToExplore": "دریافت کرنے کے لیے سکرول کریں",
+      "requestService": "سروس کی درخواست"
+    },
+    "ai-solutions": {
+      "serviceName": "AI حل",
+      "features": {
+        "headline": "انٹرپرائز AI جو قابل پیمائش ROI فراہم کرتا ہے",
+        "subtitle": "ذہین آٹومیشن اور پیشن گوئی تجزیات",
+        "description": "ہم پروڈکشن گریڈ AI سسٹمز بناتے ہیں جو آپ کے موجودہ انفراسٹرکچر میں بغیر کسی رکاوٹ کے ضم ہو جاتے ہیں، خام ڈیٹا کو قابل عمل بصیرت میں تبدیل کرتے ہیں اور پیچیدہ فیصلہ سازی کے ورک فلوز کو خودکار بناتے ہیں۔",
+        "items": [
+          {
+            "icon": "brain",
+            "title": "کسٹم مشین لرننگ ماڈلز",
+            "description": "آپ کے ملکیتی ڈیٹا پر تربیت یافتہ مقصد سے بنائے گئے ML ماڈلز جو ڈومین کے مخصوص چیلنجز کو اعلیٰ درستگی سے حل کرتے ہیں۔",
+            "details": [
+              "آپ کی صنعت کے شعبے کے لیے موزوں نگرانی شدہ اور غیر نگرانی شدہ لرننگ پائپ لائنز",
+              "خودکار ڈرفٹ کی نشاندہی اور کارکردگی کی نگرانی کے ساتھ مسلسل ماڈل ری ٹریننگ",
+              "SHAP اور LIME تشریحی پرتوں کے ساتھ قابل وضاحت AI آؤٹ پٹ"
+            ]
+          },
+          {
+            "icon": "chat",
+            "title": "Conversational AI اور NLP",
+            "description": "ذہین چیٹ بوٹس اور قدرتی زبان کی پروسیسنگ سسٹمز تعینات کریں جو سیاق و سباق، جذبات اور ارادے کو سمجھتے ہیں۔",
+            "details": [
+              "سیشنز میں میموری اور سیاق و سباق کی برقراری کے ساتھ ملٹی ٹرن ڈائیلاگ مینجمنٹ",
+              "بولی سے آگاہ پروسیسنگ کے ساتھ 40+ زبانوں کی کثیر لسانی معاونت",
+              "بنیادی جوابات کے لیے CRM، ہیلپ ڈیسک، اور نالج بیس پلیٹ فارمز کے ساتھ انضمام"
+            ]
+          },
+          {
+            "icon": "eye",
+            "title": "کمپیوٹر ویژن سسٹمز",
+            "description": "مینوفیکچرنگ، ریٹیل اور ہیلتھ کیئر کے لیے خودکار بصری معائنہ، آبجیکٹ ڈیٹیکشن، اور تصویر کی درجہ بندی۔",
+            "details": [
+              "100ms سے کم تاخیر کے ساتھ ریئل ٹائم ویڈیو سٹریم تجزیہ",
+              "خرابیوں کی نشاندہی اور کوالٹی ایشورنس کے لیے کسٹم تربیت یافتہ ڈیٹیکشن ماڈلز",
+              "آن پریمائسز کیمروں اور IoT ڈیوائسز کے لیے ایج ڈیپلائمنٹ آپٹیمائزیشن"
+            ]
+          },
+          {
+            "icon": "chart",
+            "title": "پیشن گوئی تجزیات اور فورکاسٹنگ",
+            "description": "ٹائم سیریز فورکاسٹنگ اور پیشن گوئی ماڈلز جو مانگ، کسٹمر چرن، اور مارکیٹ کی تبدیلیوں کا پہلے سے اندازہ لگاتے ہیں۔",
+            "details": [
+              "شماریاتی اور ڈیپ لرننگ طریقوں کو ملا کر انسمبل فورکاسٹنگ",
+              "خطرے کی تشخیص کے لیے Monte Carlo سمیولیشنز کے ساتھ منظرنامے کی ماڈلنگ",
+              "ساختی اور غیر ساختی ڈیٹا ذرائع سے خودکار فیچر انجینئرنگ"
+            ]
+          },
+          {
+            "icon": "search",
+            "title": "ذہین دستاویز پروسیسنگ",
+            "description": "AI سے چلنے والی دستاویز کی سمجھ کے ساتھ انوائسز، معاہدوں اور فارمز سے معلومات نکالیں، درجہ بندی کریں اور روٹ کریں۔",
+            "details": [
+              "ٹیبلز، ہیڈرز اور نیسٹڈ ڈھانچوں کے لیے لے آؤٹ سے آگاہ ایکسٹریکشن کے ساتھ OCR",
+              "ڈومین کے مخصوص اصطلاحات اور کوڈز کے لیے کسٹم ایکسٹریکشن",
+              "ہیومن ان دا لوپ ایسکیلیشن ورک فلوز کے ساتھ خودکار توثیق کے قواعد"
+            ]
+          },
+          {
+            "icon": "sparkles",
+            "title": "Generative AI انٹیگریشن",
+            "description": "محفوظ، انٹرپرائز گریڈ جنریٹو AI ایپلیکیشنز کے ساتھ بڑے لینگویج ماڈلز کی طاقت کا فائدہ اٹھائیں۔",
+            "details": [
+              "درست، حوالہ جات سے تائید شدہ جوابات کے لیے ویکٹر ڈیٹابیسز کے ساتھ RAG پائپ لائنز",
+              "ڈیٹا پرائیویسی ضمانتوں کے ساتھ ملکیتی ڈیٹاسیٹس پر فائن ٹیون فاؤنڈیشن ماڈلز",
+              "مارکیٹنگ، دستاویزات اور رپورٹنگ کے لیے مواد تیار کرنے کے ورک فلوز"
+            ]
+          },
+          {
+            "icon": "lightning",
+            "title": "MLOps اور ماڈل لائف سائیکل مینجمنٹ",
+            "description": "پروڈکشن میں ML ماڈلز کی تربیت، تعیناتی، نگرانی اور ورژننگ کے لیے اینڈ ٹو اینڈ انفراسٹرکچر۔",
+            "details": [
+              "خودکار A/B ٹیسٹنگ اور کینری رول آؤٹس کے ساتھ ماڈل ڈیپلائمنٹ کے لیے CI/CD پائپ لائنز",
+              "درستگی، تاخیر اور وسائل کے استعمال کو ٹریک کرنے والے ریئل ٹائم کارکردگی ڈیش بورڈز",
+              "تربیتی ڈیٹا سے پروڈکشن اینڈ پوائنٹ تک مکمل نسب نامے کی ٹریکنگ کے ساتھ ماڈل رجسٹری"
+            ]
+          },
+          {
+            "icon": "shield",
+            "title": "AI گورننس اور تعمیل",
+            "description": "بلٹ ان تعصب کی نشاندہی، آڈٹ ٹریلز اور شفافیت کے ساتھ اپنے AI سسٹمز کو ریگولیٹری تقاضوں سے ہم آہنگ بنائیں۔",
+            "details": [
+              "محفوظ آبادیاتی صفات میں منصفانہ پیمائش اور تعصب کا آڈٹ",
+              "مکمل دوبارہ پیداواری صلاحیت کے ساتھ ہر پیشن گوئی کے لیے جامع آڈٹ لاگنگ"
+            ]
+          }
+        ],
+        "stats": [
+          {
+            "label": "تعینات شدہ ماڈلز",
+            "value": "200+"
+          },
+          {
+            "label": "اوسط درستگی میں بہتری",
+            "value": "34%"
+          },
+          {
+            "label": "پروسیسنگ رفتار میں اضافہ",
+            "value": "12x"
+          },
+          {
+            "label": "کلائنٹ برقراری کی شرح",
+            "value": "96%"
+          }
+        ]
+      },
+      "process": {
+        "headline": "ڈیٹا حکمت عملی سے پروڈکشن AI تک",
+        "subtitle": "ہمارا ثابت شدہ AI ڈویلپمنٹ عمل",
+        "description": "ہم ایک منظم، تکراری طریقہ کار اپناتے ہیں جو ہر AI اقدام کے لیے خطرے کو کم اور قدر تک پہنچنے کے وقت کو تیز کرتا ہے۔",
+        "steps": [
+          {
+            "title": "دریافت اور ڈیٹا تشخیص",
+            "description": "ہم آپ کے موجودہ ڈیٹا اثاثوں کا آڈٹ کرتے ہیں، زیادہ اثر والے استعمال کے معاملات کی نشاندہی کرتے ہیں، اور کاروباری KPIs کے مطابق کامیابی کے معیارات طے کرتے ہیں۔",
+            "icon": "search",
+            "details": [
+              "آٹومیشن کے مواقع کی نشاندہی کے لیے اسٹیک ہولڈر انٹرویوز اور پروسیس میپنگ",
+              "مکملیت، مطابقت اور لیبلنگ کی تیاری پر مشتمل ڈیٹا کوالٹی تشخیص",
+              "عمل درآمد کے روڈ میپ اور وسائل کی منصوبہ بندی کے ساتھ ROI کا تخمینہ"
+            ]
+          },
+          {
+            "title": "ڈیٹا انجینئرنگ اور تیاری",
+            "description": "مضبوط ڈیٹا پائپ لائنز بنائیں جو ماڈل ٹریننگ اور انفرنس کے لیے آپ کے ڈیٹا کو صاف، تبدیل اور بہتر کرتی ہیں۔",
+            "icon": "database",
+            "details": [
+              "اسکیما کی توثیق اور بے قاعدگی کی نشاندہی کے ساتھ ETL پائپ لائن کی تعمیر",
+              "پروجیکٹس میں دوبارہ قابل استعمال، ورژن شدہ فیچر سیٹس کے لیے فیچر اسٹور ڈویلپمنٹ",
+              "کلاس عدم توازن اور کم ڈیٹاسیٹس سے نمٹنے کے لیے ڈیٹا آگمینٹیشن حکمت عملی"
+            ]
+          },
+          {
+            "title": "ماڈل ڈویلپمنٹ اور ٹریننگ",
+            "description": "آپ کے استعمال کے معاملے کے لیے بہترین کارکردگی دکھانے والے فن تعمیر کے انتخاب کے لیے سخت تشخیص کے ساتھ تکراری تجربہ۔",
+            "icon": "brain",
+            "details": [
+              "Bayesian سرچ اور نیورل آرکیٹیکچر سرچ کا استعمال کرتے ہوئے ہائپر پیرامیٹر آپٹیمائزیشن",
+              "عمومی کاری کو یقینی بنانے کے لیے سٹریٹیفائیڈ سیمپلنگ کے ساتھ کراس ویلیڈیشن",
+              "بیس لائن ماڈلز اور صنعتی معیارات کے خلاف بینچ مارک موازنہ"
+            ]
+          },
+          {
+            "title": "انضمام اور تعیناتی",
+            "description": "آپ کی ضروریات کے مطابق API اینڈ پوائنٹس، بیچ پروسیسنگ، یا ایج انفرنس کے ساتھ پروڈکشن گریڈ تعیناتی۔",
+            "icon": "rocket",
+            "details": [
+              "آٹو سکیلنگ اور لوڈ بیلنسنگ کے ساتھ کنٹینرائزڈ ماڈل سرونگ",
+              "تصدیق اور ریٹ لمیٹنگ کے ساتھ REST اور gRPC API اینڈ پوائنٹس",
+              "پروڈکشن کے خطرے کو کم کرنے کے لیے شیڈو ڈیپلائمنٹ اور بتدریج رول آؤٹ"
+            ]
+          },
+          {
+            "title": "نگرانی اور آپٹیمائزیشن",
+            "description": "خودکار ری ٹریننگ ٹرگرز اور ماڈل کی کارکردگی میں کمی پر فعال الرٹنگ کے ساتھ مسلسل کارکردگی کی ٹریکنگ۔",
+            "icon": "chart",
+            "details": [
+              "ان پٹ ڈسٹری بیوشنز اور پیشن گوئی آؤٹ پٹس پر ریئل ٹائم ڈرفٹ ڈیٹیکشن",
+              "کارکردگی کی حد کی خلاف ورزیوں سے متحرک خودکار ری ٹریننگ پائپ لائنز",
+              "آپٹیمائزیشن سفارشات کے ساتھ ماہانہ کارکردگی جائزے"
+            ]
+          }
+        ]
+      },
+      "techStack": {
+        "headline": "جدید ترین AI ٹیکنالوجی اسٹیک",
+        "subtitle": "ٹولز اور فریم ورکس جو ہم استعمال کرتے ہیں",
+        "description": "ہم پروڈکشن ماحول میں قابل اعتماد طریقے سے پیمانے پر چلنے والے حل بنانے کے لیے سب سے بالغ اور کارکرد AI فریم ورکس کا فائدہ اٹھاتے ہیں۔",
+        "categories": [
+          {
+            "category": "ML اور ڈیپ لرننگ فریم ورکس",
+            "items": [
+              {
+                "name": "TensorFlow",
+                "description": "قابل پیمانہ ماڈل ڈیپلائمنٹ کے لیے TF Serving کے ساتھ پروڈکشن گریڈ ڈیپ لرننگ"
+              },
+              {
+                "name": "PyTorch",
+                "description": "کسٹم ماڈل آرکیٹیکچرز اور تیز پروٹوٹائپنگ کے لیے ریسرچ سے پروڈکشن فریم ورک"
+              },
+              {
+                "name": "scikit-learn",
+                "description": "ٹیبولر ڈیٹا، فیچر انجینئرنگ اور بیس لائن ماڈلز کے لیے کلاسیکل ML الگورتھمز"
+              },
+              {
+                "name": "Keras",
+                "description": "نیورل نیٹ ورک آرکیٹیکچرز کے ساتھ تیز تجربات کے لیے ہائی لیول API"
+              }
+            ]
+          },
+          {
+            "category": "LLM اور NLP پلیٹ فارمز",
+            "items": [
+              {
+                "name": "OpenAI",
+                "description": "مواد تیار کرنے، خلاصہ سازی اور استدلال کے کاموں کے لیے GPT-4 انضمام"
+              },
+              {
+                "name": "Hugging Face",
+                "description": "NER، درجہ بندی اور ایمبیڈنگ جنریشن کے لیے اوپن سورس ٹرانسفارمر ماڈلز"
+              },
+              {
+                "name": "LangChain",
+                "description": "RAG پائپ لائنز اور ملٹی ایجنٹ سسٹمز بنانے کے لیے آرکیسٹریشن فریم ورک"
+              }
+            ]
+          },
+          {
+            "category": "انفراسٹرکچر اور MLOps",
+            "items": [
+              {
+                "name": "AWS",
+                "description": "اینڈ ٹو اینڈ ML لائف سائیکل مینجمنٹ کے لیے SageMaker، Bedrock اور Lambda"
+              },
+              {
+                "name": "Docker",
+                "description": "ماحولیات میں مستقل تعیناتی کے لیے کنٹینرائزڈ ماڈل سرونگ"
+              },
+              {
+                "name": "Kubernetes",
+                "description": "متغیر مانگ کے تحت آٹو سکیلنگ انفرنس ورک لوڈز کے لیے آرکیسٹریشن"
+              },
+              {
+                "name": "PostgreSQL",
+                "description": "ہائبرڈ سرچ اور ایمبیڈنگز کے لیے pgvector کے ساتھ ساختی ڈیٹا اسٹوریج"
+              }
+            ]
+          }
+        ]
+      },
+      "portfolio": {
+        "headline": "AI حل جو حقیقی کاروباری نتائج دیتے ہیں",
+        "subtitle": "منتخب کیس اسٹڈیز",
+        "description": "دیکھیں کہ ہمارے AI نفاذ نے کس طرح صنعتوں میں آپریشنز کو تبدیل کیا اور مسابقتی فوائد پیدا کیے۔",
+        "items": [
+          {
+            "title": "فلیٹ مینجمنٹ کے لیے پیشن گوئی مینٹیننس پلیٹ فارم",
+            "industry": "نقل و حمل اور لاجسٹکس",
+            "challenge": "ایک قومی لاجسٹکس کمپنی غیر منصوبہ بند گاڑیوں کی خرابیوں کی وجہ سے سالانہ $2.3M کا نقصان اٹھا رہی تھی، جس سے ڈیلیوری میں تاخیر اور ہنگامی مرمت کے اخراجات ہو رہے تھے۔",
+            "solution": "ہم نے 1,200 گاڑیوں سے سینسر ٹیلی میٹری استعمال کرتے ہوئے ایک پیشن گوئی مینٹیننس سسٹم بنایا، جو 14 دن پہلے پرزوں کی خرابی کی پیشن گوئی کرتا ہے۔",
+            "results": [
+              "تعیناتی کے پہلے چھ مہینوں میں غیر منصوبہ بند ڈاؤن ٹائم میں 73% کمی",
+              "ہنگامی مرمت اور ٹوئنگ کے اخراجات میں سالانہ $1.8M کی بچت",
+              "بروقت ڈیلیوری کی شرح 84% سے بڑھ کر 96% ہو گئی"
+            ],
+            "stats": [
+              {
+                "label": "ڈاؤن ٹائم میں کمی",
+                "value": "73%"
+              },
+              {
+                "label": "سالانہ بچت",
+                "value": "$1.8M"
+              }
+            ]
+          },
+          {
+            "title": "انشورنس کے لیے AI سے چلنے والی کلیمز پروسیسنگ",
+            "industry": "انشورنس اور مالیاتی خدمات",
+            "challenge": "دستی کلیمز کا جائزہ اوسطاً 12 کاروباری دن لے رہا تھا، جس سے صارفین کی عدم اطمینان اور پیچیدہ کلیمز پر 22% ترک کی شرح ہو رہی تھی۔",
+            "solution": "NLP پر مبنی نقصان تشخیص اور فراڈ ڈیٹیکشن کے ساتھ ایک ذہین دستاویز پروسیسنگ پائپ لائن تعینات کی، جس نے 68% معمول کے کلیمز کو اینڈ ٹو اینڈ خودکار بنایا۔",
+            "results": [
+              "اوسط کلیمز پروسیسنگ کا وقت 12 دن سے کم کر کے 2.4 دن",
+              "پہلے سال میں $4.2M کے ممکنہ فراڈ کلیمز کا پتہ لگایا",
+              "صارفین کی اطمینان کے اسکور میں 41 پوائنٹس (NPS) کی بہتری"
+            ],
+            "stats": [
+              {
+                "label": "پروسیسنگ رفتار",
+                "value": "5x تیز"
+              },
+              {
+                "label": "فراڈ کا پتہ",
+                "value": "$4.2M"
+              }
+            ]
+          },
+          {
+            "title": "ریٹیل چین کے لیے ڈیمانڈ فورکاسٹنگ انجن",
+            "industry": "ریٹیل اور ای کامرس",
+            "challenge": "200 اسٹورز والی ریٹیل چین انوینٹری عدم توازن سے دوچار تھی، جس کے نتیجے میں سالانہ $6M کی مارک ڈاؤنز اور زیادہ مانگ والی مصنوعات پر بار بار اسٹاک آؤٹ ہو رہا تھا۔",
+            "solution": "LSTM نیٹ ورکس کو بیرونی سگنلز (موسم، ایونٹس، پروموشنز) کے ساتھ ملا کر ایک انسمبل فورکاسٹنگ انجن بنایا جو ہر اسٹور پر SKU سطح کی مانگ کی پیشن گوئی کرتا ہے۔",
+            "results": [
+              "اوور اسٹاک مارک ڈاؤنز میں 38% کمی، $2.3M مارجن کی بحالی",
+              "سرفہرست کیٹیگریز میں اسٹاک آؤٹ واقعات میں 52% کمی"
+            ],
+            "stats": [
+              {
+                "label": "مارک ڈاؤن میں کمی",
+                "value": "38%"
+              },
+              {
+                "label": "اسٹاک آؤٹ میں کمی",
+                "value": "52%"
+              }
+            ]
+          },
+          {
+            "title": "ہیلتھ کیئر مریض داخلے کے لیے Conversational AI",
+            "industry": "ہیلتھ کیئر",
+            "challenge": "ایک ہسپتال نیٹ ورک ماہانہ 15,000 مریض داخلے کے فارمز پروسیس کر رہا تھا، جس کے لیے 22 FTEs کی ضرورت تھی اور 7% غلطی کی شرح تھی۔",
+            "solution": "وائس ٹو ٹیکسٹ اور NLP ایکسٹریکشن کے ساتھ ایک conversational AI سسٹم نافذ کیا، جس سے مریض ریئل ٹائم توثیق کے ساتھ ڈیجیٹل طریقے سے داخلہ مکمل کر سکتے ہیں۔",
+            "results": [
+              "99.2% ڈیٹا درستگی کے ساتھ 81% مریض داخلے کے ورک فلوز خودکار",
+              "22 سے 6 FTEs تک عملے کی ضروریات میں کمی",
+              "فی مریض اوسط داخلے کا وقت 25 منٹ سے کم کر کے 8 منٹ"
+            ],
+            "stats": [
+              {
+                "label": "آٹومیشن کی شرح",
+                "value": "81%"
+              },
+              {
+                "label": "درستگی",
+                "value": "99.2%"
+              }
+            ]
+          }
+        ],
+        "aggregateStats": [
+          {
+            "label": "فراہم کردہ AI پروجیکٹس",
+            "value": "120+"
+          },
+          {
+            "label": "مشترکہ کلائنٹ بچت",
+            "value": "$48M+"
+          },
+          {
+            "label": "اوسط ROI",
+            "value": "340%"
+          },
+          {
+            "label": "خدمات فراہم کردہ صنعتیں",
+            "value": "18"
+          }
+        ]
+      },
+      "faq": {
+        "headline": "AI حل کے سوالات",
+        "subtitle": "عام سوالات",
+        "description": "ہماری AI ڈویلپمنٹ سروسز اور مشغولیت کے عمل کے بارے میں اکثر پوچھے جانے والے سوالات کے جوابات۔",
+        "categories": [
+          {
+            "category": "شروع کرنا",
+            "items": [
+              {
+                "question": "AI پروجیکٹ شروع کرنے کے لیے ہمیں کتنے ڈیٹا کی ضرورت ہے؟",
+                "answer": "یہ مسئلے کی پیچیدگی پر منحصر ہے۔ بہت سے درجہ بندی اور پیشن گوئی کے کاموں کے لیے، چند ہزار لیبل شدہ مثالیں مضبوط نتائج دے سکتی ہیں۔ کمپیوٹر ویژن کے لیے، ہم عام طور پر فی کلاس کم از کم 1,000 تشریح شدہ تصاویر تجویز کرتے ہیں۔ ہم ڈیٹا آگمینٹیشن اور ٹرانسفر لرننگ کی حکمت عملیاں بھی پیش کرتے ہیں۔ دریافت کے مرحلے میں، ہم آپ کے موجودہ ڈیٹا کا جائزہ لے کر واضح سفارش فراہم کرتے ہیں۔"
+              },
+              {
+                "question": "اگر ہمارا ڈیٹا بے ترتیب یا نامکمل ہو تو کیا ہوگا؟",
+                "answer": "حقیقی دنیا کا زیادہ تر ڈیٹا بے ترتیب ہوتا ہے -- یہ بالکل عام ہے۔ ہمارے ڈیٹا انجینئرنگ مرحلے میں جامع صفائی، ڈی ڈپلیکیشن، امپیوٹیشن اور توثیق کے مراحل شامل ہیں۔ ہم خودکار ڈیٹا کوالٹی پائپ لائنز بناتے ہیں۔ جہاں ڈیٹا میں خلا ہو، ہم جمع کرنے کی حکمت عملیاں اور مصنوعی ڈیٹا کے طریقے ڈیزائن کرتے ہیں۔"
+              },
+              {
+                "question": "ایک عام AI پروجیکٹ کو شروع سے پروڈکشن تک کتنا وقت لگتا ہے؟",
+                "answer": "ایک مرکوز PoC 4-6 ہفتوں میں فراہم کیا جا سکتا ہے۔ انضمام، نگرانی اور آپٹیمائزیشن کے ساتھ مکمل پروڈکشن تعیناتی عام طور پر 3-5 ماہ لیتی ہے۔ ہم ایجائل طریقہ کار استعمال کرتے ہیں تاکہ آپ مسلسل پیش رفت دیکھ سکیں۔"
+              }
+            ]
+          },
+          {
+            "category": "تکنیکی اور سیکیورٹی",
+            "items": [
+              {
+                "question": "کیا آپ ہمارے موجودہ کلاؤڈ انفراسٹرکچر کے ساتھ کام کر سکتے ہیں؟",
+                "answer": "بالکل۔ ہم AWS، Google Cloud اور Azure پر تعینات کرتے ہیں، اور سخت ڈیٹا ریزیڈنسی تقاضوں والی تنظیموں کے لیے آن پریمائسز تعیناتیوں کا گہرا تجربہ رکھتے ہیں۔ ہم اپنے حل آپ کی موجودہ CI/CD پائپ لائنز، ڈیٹا ویئر ہاؤسز اور مانیٹرنگ ٹولز کے ساتھ ضم کرنے کے لیے ڈیزائن کرتے ہیں۔"
+              },
+              {
+                "question": "آپ AI ماڈل سیکیورٹی اور ڈیٹا پرائیویسی کو کیسے یقینی بناتے ہیں؟",
+                "answer": "سیکیورٹی ہر پرت میں شامل ہے۔ ہم انکرپٹڈ ڈیٹا پائپ لائنز، رول بیسڈ ایکسیس کنٹرولز اور پرائیویٹ VPC تعیناتیاں استعمال کرتے ہیں۔ حساس صنعتوں کے لیے، ہم فیڈریٹڈ لرننگ اور ڈفرینشل پرائیویسی تکنیکوں کی معاونت کرتے ہیں۔ ہمارے تمام عمل SOC 2 اور GDPR کے مطابق ہیں۔"
+              },
+              {
+                "question": "جب وقت کے ساتھ ماڈل کی کارکردگی کم ہو جائے تو کیا ہوتا ہے؟",
+                "answer": "ہم جامع نگرانی نافذ کرتے ہیں جو ریئل ٹائم میں پیشن گوئی کی درستگی، ڈیٹا ڈرفٹ اور فیچر کی اہمیت کو ٹریک کرتی ہے۔ جب کارکردگی مقررہ حد سے نیچے گرتی ہے، تو تازہ ترین ڈیٹا کا استعمال کرتے ہوئے خودکار ری ٹریننگ پائپ لائنز متحرک ہو جاتی ہیں۔"
+              }
+            ]
+          },
+          {
+            "category": "لاگت اور مشغولیت",
+            "items": [
+              {
+                "question": "ایک AI پروجیکٹ کی عام لاگت کتنی ہوتی ہے؟",
+                "answer": "AI پروجیکٹس دائرہ کار کی بنیاد پر مختلف ہوتے ہیں۔ ایک مرکوز NLP یا درجہ بندی کا حل $40,000-$80,000 سے شروع ہو سکتا ہے، جبکہ متعدد ماڈلز والے انٹرپرائز پلیٹ فارمز $150,000-$500,000+ تک ہو سکتے ہیں۔ ہم دریافت کے مرحلے کے بعد تفصیلی تخمینے فراہم کرتے ہیں۔"
+              },
+              {
+                "question": "کیا آپ تعیناتی کے بعد جاری معاونت پیش کرتے ہیں؟",
+                "answer": "جی ہاں۔ ہم ٹیئرڈ سپورٹ پلانز پیش کرتے ہیں جن میں ماڈل مانیٹرنگ، ری ٹریننگ، کارکردگی آپٹیمائزیشن اور ترجیحی بگ فکسز شامل ہیں۔ زیادہ تر کلائنٹس ہماری مینیجڈ AI سروس کا انتخاب کرتے ہیں۔"
+              },
+              {
+                "question": "کیا آپ ہماری اندرونی ٹیم کو AI سسٹمز کا انتظام سکھا سکتے ہیں؟",
+                "answer": "بالکل۔ علم کی منتقلی ہماری مشغولیت کا بنیادی حصہ ہے۔ ہم عملی تربیتی سیشنز، تفصیلی دستاویزات اور ریکارڈ شدہ واک تھروز فراہم کرتے ہیں۔ ہمارا مقصد آپ کی ٹیم کو خود کفیل بنانا ہے۔"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "api-development": {
+      "serviceName": "API ڈیولپمنٹ",
+      "features": {
+        "headline": "APIs جو پیمانے، سیکیورٹی اور رفتار کے لیے بنائی گئی ہیں",
+        "subtitle": "انٹرپرائز-گریڈ API انجینئرنگ",
+        "description": "ہم مضبوط APIs ڈیزائن اور تعمیر کرتے ہیں جو جدید ڈیجیٹل ایکو سسٹمز کی ریڑھ کی ہڈی کے طور پر کام کرتی ہیں، خدمات، شراکت داروں اور پلیٹ فارمز کے درمیان بغیر کسی رکاوٹ کے انضمام کو قابل بناتی ہیں۔",
+        "items": [
+          {
+            "icon": "code",
+            "title": "RESTful API ڈیزائن اور ڈیولپمنٹ",
+            "description": "معیاری REST APIs صاف ریسورس ماڈلنگ، ورژننگ اور جامع دستاویزات کے ساتھ۔",
+            "details": [
+              "OpenAPI 3.1 تصریح پر مبنی ڈیزائن خودکار کوڈ جنریشن اور توثیق کے ساتھ",
+              "HATEOAS موافق جوابات pagination، filtering اور فیلڈ سلیکشن کے ساتھ",
+              "Semantic versioning پیچھے کی مطابقت والی ارتقائی حکمت عملیوں کے ساتھ"
+            ]
+          },
+          {
+            "icon": "lightning",
+            "title": "GraphQL API نفاذ",
+            "description": "لچکدار، کلائنٹ پر مبنی APIs جو زیادہ ڈیٹا لینے کو ختم کرتی ہیں اور پیچیدہ ڈیٹا queries کے لیے راؤنڈ ٹرپس کی تعداد کو کم کرتی ہیں۔",
+            "details": [
+              "Schema پر مبنی ڈیزائن مضبوط ٹائپنگ اور introspection صلاحیتوں کے ساتھ",
+              "DataLoader pattern نفاذ موثر N+1 query حل کے لیے",
+              "Subscription سپورٹ real-time ڈیٹا سٹریمنگ کے لیے WebSockets کے ذریعے"
+            ]
+          },
+          {
+            "icon": "shield",
+            "title": "API سیکیورٹی اور تصدیق",
+            "description": "کثیر پرتی سیکیورٹی OAuth 2.0، JWT، API keys اور rate limiting کے ساتھ آپ کے endpoints اور ڈیٹا کی حفاظت کے لیے۔",
+            "details": [
+              "OAuth 2.0 اور OpenID Connect flows محفوظ تیسری پارٹی اجازت کے لیے",
+              "JWT پر مبنی stateless تصدیق refresh token rotation کے ساتھ",
+              "IP whitelisting، CORS کنفیگریشن، اور request signature کی تصدیق"
+            ]
+          },
+          {
+            "icon": "server",
+            "title": "مائیکرو سروسز API گیٹ وے",
+            "description": "مرکزی API gateway جو routing، load balancing، اور service discovery کو سنبھالتا ہے۔",
+            "details": [
+              "Request routing اور transformation rules کے ساتھ",
+              "Circuit breaker patterns سروس کی ناکامیوں سے بچنے کے لیے",
+              "Centralized logging اور monitoring تمام API calls کے لیے"
+            ]
+          },
+          {
+            "icon": "gauge",
+            "title": "API کارکردگی اور اصلاح",
+            "description": "اعلی کارکردگی والی APIs caching، compression اور بہتر query execution کے ساتھ۔",
+            "details": [
+              "Redis-based caching اکثر استعمال ہونے والے endpoints کے لیے",
+              "Response compression gzip اور brotli کے ساتھ",
+              "Database query optimization اور connection pooling"
+            ]
+          },
+          {
+            "icon": "document",
+            "title": "API دستاویزات اور ڈویلپر پورٹل",
+            "description": "تفصیلی، تعاملی دستاویزات جو developers کو تیزی سے اپنانے میں مدد کرتی ہیں۔",
+            "details": [
+              "Auto-generated دستاویزات OpenAPI specs سے",
+              "Interactive API explorer testing کے لیے",
+              "Code samples متعدد زبانوں میں"
+            ]
+          }
+        ]
+      },
+      "useCases": {
+        "title": "API ڈیولپمنٹ استعمال کی صورتیں",
+        "subtitle": "APIs جو جدید سافٹ ویئر کو طاقت دیتی ہیں",
+        "items": [
+          {
+            "icon": "mobile",
+            "title": "موبائل ایپ Backends",
+            "description": "iOS اور Android ایپس کے لیے بہتر APIs تیز ترسیل اور آف لائن سپورٹ کے ساتھ۔",
+            "examples": [
+              "User authentication اور profile management APIs",
+              "Real-time نوٹیفکیشن ڈیلیوری endpoints",
+              "Media upload اور storage integration"
+            ]
+          },
+          {
+            "icon": "globe",
+            "title": "تیسری پارٹی انضمام",
+            "description": "Partners اور صارفین کو محفوظ، اچھی طرح سے دستاویزی APIs فراہم کریں۔",
+            "examples": [
+              "Webhook-based event notifications",
+              "OAuth-based third-party app authorization",
+              "Rate-limited public API endpoints"
+            ]
+          },
+          {
+            "icon": "grid",
+            "title": "مائیکرو سروسز آرکیٹیکچر",
+            "description": "Microservices کے درمیان service-to-service رابطے کو قابل بنائیں۔",
+            "examples": [
+              "gRPC-based internal service communication",
+              "Event-driven architecture webhooks کے ساتھ",
+              "Service mesh integration Istio یا Linkerd کے ساتھ"
+            ]
+          },
+          {
+            "icon": "chart",
+            "title": "ڈیٹا APIs اور Analytics",
+            "description": "Business intelligence اور reporting کے لیے ڈیٹا فراہم کریں۔",
+            "examples": [
+              "Time-series metrics اور analytics endpoints",
+              "Bulk data export APIs CSV/JSON formats میں",
+              "Real-time dashboard data feeds"
+            ]
+          }
+        ]
+      },
+      "technologies": {
+        "title": "API ٹیکنالوجی اسٹیک",
+        "subtitle": "جدید ترین ٹولز اور فریم ورکس",
+        "categories": [
+          {
+            "name": "API فریم ورکس",
+            "items": [
+              "Express.js",
+              "FastAPI",
+              "Spring Boot",
+              "NestJS",
+              "ASP.NET Core",
+              "Fastify"
+            ]
+          },
+          {
+            "name": "API معیارات",
+            "items": [
+              "REST",
+              "GraphQL",
+              "gRPC",
+              "WebSockets",
+              "Server-Sent Events",
+              "JSON-RPC"
+            ]
+          },
+          {
+            "name": "دستاویزات",
+            "items": [
+              "OpenAPI 3.1",
+              "Swagger UI",
+              "Redoc",
+              "Postman",
+              "Insomnia",
+              "GraphQL Playground"
+            ]
+          },
+          {
+            "name": "سیکیورٹی",
+            "items": [
+              "OAuth 2.0",
+              "OpenID Connect",
+              "JWT",
+              "API Keys",
+              "mTLS",
+              "HMAC"
+            ]
+          },
+          {
+            "name": "API گیٹ ویز",
+            "items": [
+              "Kong",
+              "AWS API Gateway",
+              "Azure API Management",
+              "Apigee",
+              "Tyk",
+              "Ambassador"
+            ]
+          },
+          {
+            "name": "Testing",
+            "items": [
+              "Postman",
+              "REST Assured",
+              "Supertest",
+              "Pact",
+              "WireMock",
+              "Artillery"
+            ]
+          }
+        ]
+      },
+      "process": {
+        "title": "ہمارا API ڈیولپمنٹ کا عمل",
+        "subtitle": "API ڈیزائن سے پروڈکشن تک",
+        "steps": [
+          {
+            "phase": "دریافت اور ڈیزائن",
+            "description": "آپ کے API کی ضروریات اور استعمال کی صورتوں کو سمجھنا۔",
+            "deliverables": [
+              "API requirements documentation",
+              "OpenAPI specification",
+              "Security اور authentication plan"
+            ]
+          },
+          {
+            "phase": "ترقی اور Testing",
+            "description": "معیار کی یقین دہانی کے ساتھ آپ کا API بنانا۔",
+            "deliverables": [
+              "API implementation",
+              "Unit اور integration tests",
+              "Performance benchmarks"
+            ]
+          },
+          {
+            "phase": "دستاویزات اور DevEx",
+            "description": "Developers کے لیے بہترین تجربہ بنانا۔",
+            "deliverables": [
+              "Interactive API docs",
+              "Code samples اور SDKs",
+              "Developer onboarding guides"
+            ]
+          },
+          {
+            "phase": "Deployment اور Monitoring",
+            "description": "پراعتماد اور قابل اعتماد API launch۔",
+            "deliverables": [
+              "CI/CD pipelines",
+              "API monitoring dashboards",
+              "SLA اور uptime tracking"
+            ]
+          }
+        ]
+      },
+      "stats": {
+        "items": [
+          {
+            "value": "99.99%",
+            "label": "API Uptime"
+          },
+          {
+            "value": "<50ms",
+            "label": "اوسط جواب کا وقت"
+          },
+          {
+            "value": "10M+",
+            "label": "روزانہ API Requests"
+          },
+          {
+            "value": "100%",
+            "label": "OpenAPI مطابقت"
+          }
+        ]
+      },
+      "cta": {
+        "headline": "اپنی اگلی API بنانے کے لیے تیار ہیں؟",
+        "description": "آئیں بات کریں کہ ہم کس طرح scalable، محفوظ APIs بنا سکتے ہیں جو آپ کے کاروبار کو طاقت دیں۔",
+        "buttonText": "مشاورت حاصل کریں"
+      }
+    },
+    "web-development": {
+      "serviceName": "ویب ڈیولپمنٹ",
+      "features": {
+        "headline": "تجربات جو صارفین کو خوش کرتے ہیں، نتائج جو کاروبار کو بڑھاتے ہیں",
+        "subtitle": "جدید ویب ایپلیکیشنز",
+        "description": "ہم اعلی کارکردگی والی ویب ایپلیکیشنز بناتے ہیں جو تیز، محفوظ اور خوبصورت ہیں — تازہ ترین فریم ورکس اور بہترین طریقوں کا استعمال کرتے ہوئے۔",
+        "items": [
+          {
+            "icon": "layout",
+            "title": "جامع اسٹیک ویب ڈیولپمنٹ",
+            "description": "Front-end سے back-end تک، ہم جدید ترین ٹیکنالوجیوں کا استعمال کرتے ہوئے scalable ویب حل فراہم کرتے ہیں۔",
+            "details": [
+              "React، Vue، اور Angular میں جوابی front-ends",
+              "Node.js، Python، اور .NET کے ساتھ مضبوط back-end systems",
+              "PostgreSQL، MongoDB، اور Redis کے ساتھ ڈیٹا بیس کی تعمیر"
+            ]
+          },
+          {
+            "icon": "zap",
+            "title": "Progressive Web Apps (PWAs)",
+            "description": "ویب ایپس جو مقامی ایپس کی طرح کام کرتی ہیں — تیز، قابل اعتماد، اور آف لائن سے قابل۔",
+            "details": [
+              "Service workers آف لائن فعالیت کے لیے",
+              "App shell architecture فوری load times کے لیے",
+              "Push notifications اور home screen installation"
+            ]
+          },
+          {
+            "icon": "mobile",
+            "title": "جوابی اور موبائل فرسٹ ڈیزائن",
+            "description": "تمام آلات پر بغیر کسی رکاوٹ کے کام کرنے والے تجربات، موبائل سے لے کر ڈیسک ٹاپ تک۔",
+            "details": [
+              "Mobile-first CSS فریم ورکس Tailwind اور Bootstrap کے ساتھ",
+              "Adaptive layouts تمام سکرین سائزز کے لیے",
+              "Touch-optimized interactions موبائل صارفین کے لیے"
+            ]
+          },
+          {
+            "icon": "gauge",
+            "title": "کارکردگی کی اصلاح",
+            "description": "بجلی کی تیز رفتار load times اور ہموار تعاملات کے لیے بہتر۔",
+            "details": [
+              "Code splitting اور lazy loading بہتر performance کے لیے",
+              "Image optimization WebP اور AVIF formats کے ساتھ",
+              "CDN integration عالمی content delivery کے لیے"
+            ]
+          },
+          {
+            "icon": "search",
+            "title": "SEO اور Web Vitals",
+            "description": "تلاش کے انجنوں اور صارف کے تجربے کے لیے بنایا گیا۔",
+            "details": [
+              "Server-side rendering (SSR) بہتر SEO کے لیے",
+              "Structured data اور schema markup",
+              "Core Web Vitals optimization Google کے معیارات کے لیے"
+            ]
+          },
+          {
+            "icon": "shield",
+            "title": "ویب سیکیورٹی اور Compliance",
+            "description": "صنعت کے معیارات اور بہترین طریقوں کے ساتھ محفوظ۔",
+            "details": [
+              "HTTPS enforcement اور security headers",
+              "OWASP Top 10 vulnerability protection",
+              "GDPR اور CCPA compliance features"
+            ]
+          }
+        ]
+      },
+      "useCases": {
+        "title": "ویب ڈیولپمنٹ استعمال کی صورتیں",
+        "subtitle": "ہر صنعت کے لیے ویب حل",
+        "items": [
+          {
+            "icon": "shopping",
+            "title": "E-Commerce پلیٹ فارمز",
+            "description": "آن لائن اسٹورز جو فروخت کو بڑھاتے ہیں اور گاہک کے تجربے کو بہتر بناتے ہیں۔",
+            "examples": [
+              "Shopping cart اور checkout systems",
+              "Payment gateway integration",
+              "Inventory management dashboards"
+            ]
+          },
+          {
+            "icon": "users",
+            "title": "انٹرپرائز پورٹلز",
+            "description": "اندرونی ٹولز اور ڈیش بورڈز ٹیموں کو کارکردگی کے لیے بااختیار بنانے کے لیے۔",
+            "examples": [
+              "Employee self-service portals",
+              "Customer relationship management (CRM) systems",
+              "Data visualization dashboards"
+            ]
+          },
+          {
+            "icon": "book",
+            "title": "Content Management Systems",
+            "description": "مواد کی تخلیق اور اشاعت کے لیے آسان۔",
+            "examples": [
+              "Headless CMS integration Contentful یا Strapi کے ساتھ",
+              "Custom WordPress themes اور plugins",
+              "Multi-language content support"
+            ]
+          },
+          {
+            "icon": "rocket",
+            "title": "SaaS ایپلیکیشنز",
+            "description": "Subscription-based software محفوظ multi-tenancy کے ساتھ۔",
+            "examples": [
+              "User onboarding اور subscription management",
+              "Real-time collaboration features",
+              "Usage analytics اور billing integration"
+            ]
+          }
+        ]
+      },
+      "technologies": {
+        "title": "ویب ٹیکنالوجی اسٹیک",
+        "subtitle": "جدید ترین فریم ورکس اور ٹولز",
+        "categories": [
+          {
+            "name": "Front-End فریم ورکس",
+            "items": [
+              "React",
+              "Next.js",
+              "Vue.js",
+              "Nuxt.js",
+              "Angular",
+              "Svelte"
+            ]
+          },
+          {
+            "name": "Back-End فریم ورکس",
+            "items": [
+              "Node.js",
+              "Express",
+              "NestJS",
+              "Django",
+              "FastAPI",
+              "ASP.NET Core"
+            ]
+          },
+          {
+            "name": "Styling",
+            "items": [
+              "Tailwind CSS",
+              "Styled Components",
+              "SASS/SCSS",
+              "CSS Modules",
+              "Material-UI",
+              "Chakra UI"
+            ]
+          },
+          {
+            "name": "State Management",
+            "items": [
+              "Redux",
+              "Zustand",
+              "Recoil",
+              "MobX",
+              "Vuex",
+              "Pinia"
+            ]
+          },
+          {
+            "name": "Testing",
+            "items": [
+              "Jest",
+              "React Testing Library",
+              "Cypress",
+              "Playwright",
+              "Vitest",
+              "Storybook"
+            ]
+          },
+          {
+            "name": "Build ٹولز",
+            "items": [
+              "Vite",
+              "Webpack",
+              "Turbopack",
+              "esbuild",
+              "Rollup",
+              "Parcel"
+            ]
+          }
+        ]
+      },
+      "process": {
+        "title": "ہمارا ویب ڈیولپمنٹ کا عمل",
+        "subtitle": "تصور سے لے کر لانچ تک",
+        "steps": [
+          {
+            "phase": "دریافت اور منصوبہ بندی",
+            "description": "آپ کی ضروریات اور صارفین کو سمجھنا۔",
+            "deliverables": [
+              "Requirements documentation",
+              "Wireframes اور mockups",
+              "Technical architecture plan"
+            ]
+          },
+          {
+            "phase": "ڈیزائن اور Prototyping",
+            "description": "خوبصورت، قابل استعمال interfaces بنانا۔",
+            "deliverables": [
+              "UI/UX designs",
+              "Interactive prototypes",
+              "Design system documentation"
+            ]
+          },
+          {
+            "phase": "ترقی اور Testing",
+            "description": "بلند معیار کے کوڈ اور مسلسل جانچ کے ساتھ۔",
+            "deliverables": [
+              "Feature development",
+              "Automated testing",
+              "Performance optimization"
+            ]
+          },
+          {
+            "phase": "Deployment اور Support",
+            "description": "محفوظ لانچ اور جاری بہتری۔",
+            "deliverables": [
+              "Production deployment",
+              "Monitoring setup",
+              "Post-launch support"
+            ]
+          }
+        ]
+      },
+      "stats": {
+        "items": [
+          {
+            "value": "95+",
+            "label": "Lighthouse Score"
+          },
+          {
+            "value": "<2s",
+            "label": "Page Load Time"
+          },
+          {
+            "value": "100%",
+            "label": "موبائل جوابی"
+          },
+          {
+            "value": "WCAG 2.1",
+            "label": "Accessibility Compliance"
+          }
+        ]
+      },
+      "cta": {
+        "headline": "اپنی اگلی ویب پروجیکٹ شروع کرنے کے لیے تیار ہیں؟",
+        "description": "آئیں ایک ویب ایپلیکیشن بنائیں جو آپ کے صارفین کو پسند ہو اور آپ کے کاروبار کے اہداف کو آگے بڑھائے۔",
+        "buttonText": "آئیں بات کریں"
+      }
+    },
+    "mobile-development": {
+      "serviceName": "موبائل ڈیولپمنٹ",
+      "features": {
+        "headline": "موبائل تجربات جو صارفین کو مشغول اور برقرار رکھتے ہیں",
+        "subtitle": "مقامی اور کراس پلیٹ فارم ایپس",
+        "description": "ہم خوبصورت، اعلی کارکردگی والی موبائل ایپلیکیشنز بناتے ہیں جو iOS اور Android دونوں پر بغیر کسی رکاوٹ کے کام کرتی ہیں — مقامی معیار اور کراس پلیٹ فارم کارکردگی کے ساتھ۔",
+        "items": [
+          {
+            "icon": "smartphone",
+            "title": "مقامی iOS اور Android ڈیولپمنٹ",
+            "description": "پلیٹ فارم کی مخصوص زبانوں اور frameworks کا استعمال کرتے ہوئے اصلی مقامی تجربات۔",
+            "details": [
+              "Swift اور SwiftUI iOS ایپس کے لیے",
+              "Kotlin اور Jetpack Compose Android ایپس کے لیے",
+              "Platform-specific UI patterns اور interactions"
+            ]
+          },
+          {
+            "icon": "layers",
+            "title": "کراس پلیٹ فارم ڈیولپمنٹ",
+            "description": "React Native اور Flutter کے ساتھ ایک کوڈ بیس، دونوں پلیٹ فارمز۔",
+            "details": [
+              "React Native مقامی کارکردگی کے ساتھ JavaScript میں",
+              "Flutter خوبصورت UIs Dart کے ساتھ",
+              "Shared business logic دونوں پلیٹ فارمز میں"
+            ]
+          },
+          {
+            "icon": "zap",
+            "title": "کارکردگی اور اصلاح",
+            "description": "ہموار animations، تیز load times، اور کم بیٹری کی کھپت۔",
+            "details": [
+              "60 FPS animations اور transitions",
+              "Lazy loading اور image optimization",
+              "Background task optimization بیٹری کی زندگی کے لیے"
+            ]
+          },
+          {
+            "icon": "bell",
+            "title": "Push Notifications اور Messaging",
+            "description": "Real-time صارف کی مشغولیت Firebase اور APNs کے ذریعے۔",
+            "details": [
+              "Firebase Cloud Messaging (FCM) Android کے لیے",
+              "Apple Push Notification Service (APNs) iOS کے لیے",
+              "Rich notifications media اور actions کے ساتھ"
+            ]
+          },
+          {
+            "icon": "cloud",
+            "title": "آف لائن فعالیت اور Sync",
+            "description": "بغیر رکاوٹ کے کام کریں یہاں تک کہ بغیر انٹرنیٹ کے۔",
+            "details": [
+              "Local database storage SQLite یا Realm کے ساتھ",
+              "Automatic data synchronization جب آن لائن ہوں",
+              "Conflict resolution offline changes کے لیے"
+            ]
+          },
+          {
+            "icon": "lock",
+            "title": "موبائل سیکیورٹی",
+            "description": "صارف کے ڈیٹا اور حساس معلومات کی حفاظت۔",
+            "details": [
+              "Biometric authentication Face ID اور fingerprint کے ساتھ",
+              "Secure storage encryption کے ساتھ",
+              "Certificate pinning API سیکیورٹی کے لیے"
+            ]
+          }
+        ]
+      },
+      "useCases": {
+        "title": "موبائل ڈیولپمنٹ استعمال کی صورتیں",
+        "subtitle": "ہر ضرورت کے لیے ایپس",
+        "items": [
+          {
+            "icon": "shopping",
+            "title": "E-Commerce ایپس",
+            "description": "Mobile shopping تجربات جو تبدیلیوں کو بڑھاتے ہیں۔",
+            "examples": [
+              "Product browsing اور search",
+              "In-app payments اور checkout",
+              "Order tracking اور notifications"
+            ]
+          },
+          {
+            "icon": "heart",
+            "title": "صحت اور Fitness ایپس",
+            "description": "Wellness ٹریکنگ اور ذاتی صحت کی نگرانی۔",
+            "examples": [
+              "Workout tracking اور analytics",
+              "HealthKit اور Google Fit integration",
+              "Wearable device synchronization"
+            ]
+          },
+          {
+            "icon": "users",
+            "title": "سماجی نیٹ ورکنگ ایپس",
+            "description": "کمیونٹیز کو جوڑنے اور مشغولیت کو بڑھانے کے لیے۔",
+            "examples": [
+              "Real-time messaging اور chat",
+              "Photo اور video sharing",
+              "Social feeds اور notifications"
+            ]
+          },
+          {
+            "icon": "briefcase",
+            "title": "انٹرپرائز موبائل حل",
+            "description": "چلتے پھرتے کام کی کارکردگی۔",
+            "examples": [
+              "Field service management",
+              "Mobile CRM اور sales tools",
+              "Employee productivity apps"
+            ]
+          }
+        ]
+      },
+      "technologies": {
+        "title": "موبائل ٹیکنالوجی اسٹیک",
+        "subtitle": "پلیٹ فارمز اور ٹولز",
+        "categories": [
+          {
+            "name": "iOS ڈیولپمنٹ",
+            "items": [
+              "Swift",
+              "SwiftUI",
+              "UIKit",
+              "Xcode",
+              "CocoaPods",
+              "Swift Package Manager"
+            ]
+          },
+          {
+            "name": "Android ڈیولپمنٹ",
+            "items": [
+              "Kotlin",
+              "Jetpack Compose",
+              "Android Studio",
+              "Gradle",
+              "Material Design",
+              "AndroidX"
+            ]
+          },
+          {
+            "name": "کراس پلیٹ فارم",
+            "items": [
+              "React Native",
+              "Flutter",
+              "Expo",
+              "Ionic",
+              "Xamarin",
+              "Capacitor"
+            ]
+          },
+          {
+            "name": "Backend Services",
+            "items": [
+              "Firebase",
+              "AWS Amplify",
+              "Supabase",
+              "Parse",
+              "Realm Sync",
+              "GraphQL"
+            ]
+          },
+          {
+            "name": "Testing",
+            "items": [
+              "XCTest",
+              "Espresso",
+              "Detox",
+              "Appium",
+              "TestFlight",
+              "Firebase Test Lab"
+            ]
+          },
+          {
+            "name": "Analytics",
+            "items": [
+              "Firebase Analytics",
+              "Mixpanel",
+              "Amplitude",
+              "Segment",
+              "App Center",
+              "Crashlytics"
+            ]
+          }
+        ]
+      },
+      "process": {
+        "title": "ہمارا موبائل ڈیولپمنٹ کا عمل",
+        "subtitle": "تصور سے لے کر App Store تک",
+        "steps": [
+          {
+            "phase": "Strategy اور منصوبہ بندی",
+            "description": "آپ کی موبائل حکمت عملی کی وضاحت۔",
+            "deliverables": [
+              "Market research",
+              "Feature roadmap",
+              "Platform strategy (iOS/Android/both)"
+            ]
+          },
+          {
+            "phase": "ڈیزائن اور Prototyping",
+            "description": "صارف پر مرکوز موبائل UI/UX۔",
+            "deliverables": [
+              "Wireframes",
+              "Interactive prototypes",
+              "Platform-specific design guides"
+            ]
+          },
+          {
+            "phase": "ترقی اور Testing",
+            "description": "Agile development مسلسل جانچ کے ساتھ۔",
+            "deliverables": [
+              "Sprint releases",
+              "Beta testing",
+              "Performance optimization"
+            ]
+          },
+          {
+            "phase": "Launch اور Support",
+            "description": "App store submission اور جاری بہتری۔",
+            "deliverables": [
+              "App Store submission",
+              "User analytics setup",
+              "Post-launch updates"
+            ]
+          }
+        ]
+      },
+      "stats": {
+        "items": [
+          {
+            "value": "4.8+",
+            "label": "اوسط ایپ ریٹنگ"
+          },
+          {
+            "value": "10M+",
+            "label": "ایپ ڈاؤن لوڈز"
+          },
+          {
+            "value": "99.9%",
+            "label": "Crash-Free Rate"
+          },
+          {
+            "value": "<1s",
+            "label": "ایپ لانچ کا وقت"
+          }
+        ]
+      },
+      "cta": {
+        "headline": "اپنی موبائل ایپ کی تعمیر شروع کریں",
+        "description": "آئیں ایک موبائل ایپ بنائیں جو صارفین پسند کرتے ہیں اور آپ کے کاروباری اہداف کو حاصل کرتی ہے۔",
+        "buttonText": "پروجیکٹ شروع کریں"
+      }
+    },
+    "data-analytics": {
+      "serviceName": "ڈیٹا تجزیات",
+      "features": {
+        "headline": "خام ڈیٹا کو اسٹریٹجک بصیرت میں تبدیل کریں",
+        "subtitle": "جدید تجزیاتی حل",
+        "description": "ہم تنظیموں کو جدید تجزیاتی پلیٹ فارمز، پیشین گوئی کی ماڈلنگ، اور بدیہی تصوراتی ڈیش بورڈز کے ذریعے اپنے ڈیٹا کی مکمل صلاحیت کو غیر مقفل کرنے میں مدد کرتے ہیں جو ہر سطح پر باخبر فیصلہ سازی کو آگے بڑھاتے ہیں۔",
+        "items": [
+          {
+            "icon": "chart",
+            "title": "بزنس انٹیلیجنس ڈیش بورڈز",
+            "description": "تعاملی، real-time ڈیش بورڈز جو متعدد ذرائع سے ڈیٹا کو executive اور operational اسٹیک ہولڈرز کے لیے ایک ہی جگہ میں جمع کرتے ہیں۔",
+            "details": [
+              "Drag-and-drop ڈیش بورڈ builder role-based رسائی کنٹرول کے ساتھ",
+              "Real-time ڈیٹا refresh sub-second query performance کے ساتھ",
+              "Embedded analytics white-label options کے ساتھ client-facing portals کے لیے"
+            ]
+          },
+          {
+            "icon": "brain",
+            "title": "پیشین گوئی کی تجزیات اور پیشن گوئی",
+            "description": "Machine learning models جو رجحانات کی شناخت کرتے ہیں، مانگ کی پیشن گوئی کرتے ہیں، اور قابل پیمائش درستگی کی بہتری کے ساتھ گاہک کے رویے کی پیشن گوئی کرتے ہیں۔",
+            "details": [
+              "Time-series forecasting آمدنی، انوینٹری، اور وسائل کی منصوبہ بندی کے لیے",
+              "Churn prediction models قابل عمل برقراری کے محرکات کے ساتھ",
+              "Anomaly detection pipelines دھوکہ دہی اور معیار کی یقین دہانی کے لیے"
+            ]
+          },
+          {
+            "icon": "database",
+            "title": "ڈیٹا ویئر ہاؤس آرکیٹیکچر",
+            "description": "Scalable، cloud-native ڈیٹا ویئر ہاؤس حل جو تیز، قابل اعتماد querying کے لیے structured اور unstructured ڈیٹا کو مرکزی بناتے ہیں۔",
+            "details": [
+              "Star اور snowflake schema ڈیزائن analytical workloads کے لیے بہتر",
+              "Incremental ETL pipelines ڈیٹا کوالٹی validation gates کے ساتھ"
+            ]
+          },
+          {
+            "icon": "search",
+            "title": "گاہک کی تجزیات اور تقسیم",
+            "description": "گاہک کے رویے کی گہری بصیرت target شدہ مارکیٹنگ اور ذاتی نوعیت کے تجربات کے لیے۔",
+            "details": [
+              "RFM segmentation اور cohort analysis",
+              "Customer lifetime value (CLV) modeling",
+              "Behavioral analytics اور journey mapping"
+            ]
+          },
+          {
+            "icon": "trending",
+            "title": "Real-Time Analytics",
+            "description": "فوری بصیرت streaming ڈیٹا سے فوری فیصلوں کے لیے۔",
+            "details": [
+              "Event streaming Apache Kafka یا AWS Kinesis کے ساتھ",
+              "Real-time aggregation اور alerting",
+              "Live dashboards sub-second latency کے ساتھ"
+            ]
+          },
+          {
+            "icon": "target",
+            "title": "A/B Testing اور تجربہ",
+            "description": "ڈیٹا پر مبنی فیصلہ سازی کے لیے تجرباتی فریم ورکس۔",
+            "details": [
+              "Multi-variant testing platforms",
+              "Statistical significance calculation",
+              "Automated experiment analysis اور reporting"
+            ]
+          }
+        ]
+      },
+      "useCases": {
+        "title": "ڈیٹا تجزیات استعمال کی صورتیں",
+        "subtitle": "ہر صنعت کے لیے بصیرت",
+        "items": [
+          {
+            "icon": "shopping",
+            "title": "خوردہ تجزیات",
+            "description": "فروخت، انوینٹری، اور گاہک کے رویے کو بہتر بنائیں۔",
+            "examples": [
+              "Sales forecasting اور demand planning",
+              "Inventory optimization اور stock-out prevention",
+              "Customer basket analysis اور product recommendations"
+            ]
+          },
+          {
+            "icon": "money",
+            "title": "مالیاتی تجزیات",
+            "description": "خطرے کا جائزہ اور دھوکہ دہی کا پتہ لگانا۔",
+            "examples": [
+              "Credit risk modeling اور scoring",
+              "Fraud detection اور prevention",
+              "Portfolio performance analytics"
+            ]
+          },
+          {
+            "icon": "heart",
+            "title": "صحت کی دیکھ بھال کی تجزیات",
+            "description": "مریض کے نتائج اور آپریشنل کارکردگی کو بہتر بنائیں۔",
+            "examples": [
+              "Patient outcome prediction",
+              "Resource utilization optimization",
+              "Clinical trial data analysis"
+            ]
+          },
+          {
+            "icon": "factory",
+            "title": "صنعتی تجزیات",
+            "description": "آپریشنز اور پیشن گوئی کی دیکھ بھال کو بہتر بنائیں۔",
+            "examples": [
+              "Predictive maintenance scheduling",
+              "Production line optimization",
+              "Quality control analytics"
+            ]
+          }
+        ]
+      },
+      "technologies": {
+        "title": "تجزیاتی ٹیکنالوجی اسٹیک",
+        "subtitle": "ڈیٹا ٹولز اور پلیٹ فارمز",
+        "categories": [
+          {
+            "name": "ڈیٹا ویئر ہاؤسنگ",
+            "items": [
+              "Snowflake",
+              "BigQuery",
+              "Redshift",
+              "Azure Synapse",
+              "Databricks",
+              "ClickHouse"
+            ]
+          },
+          {
+            "name": "تصوراتی",
+            "items": [
+              "Tableau",
+              "Power BI",
+              "Looker",
+              "Metabase",
+              "Apache Superset",
+              "Grafana"
+            ]
+          },
+          {
+            "name": "ETL/ELT",
+            "items": [
+              "Apache Airflow",
+              "dbt",
+              "Fivetran",
+              "Airbyte",
+              "Stitch",
+              "Talend"
+            ]
+          },
+          {
+            "name": "Machine Learning",
+            "items": [
+              "Python",
+              "scikit-learn",
+              "TensorFlow",
+              "PyTorch",
+              "XGBoost",
+              "H2O.ai"
+            ]
+          },
+          {
+            "name": "Stream Processing",
+            "items": [
+              "Apache Kafka",
+              "Apache Flink",
+              "AWS Kinesis",
+              "Azure Event Hubs",
+              "Google Pub/Sub",
+              "RabbitMQ"
+            ]
+          },
+          {
+            "name": "ڈیٹا کوالٹی",
+            "items": [
+              "Great Expectations",
+              "Monte Carlo",
+              "Soda",
+              "deequ",
+              "Datadog",
+              "Anomalo"
+            ]
+          }
+        ]
+      },
+      "process": {
+        "title": "ہمارا ڈیٹا تجزیات کا عمل",
+        "subtitle": "ڈیٹا سے بصیرت تک",
+        "steps": [
+          {
+            "phase": "ڈیٹا کی دریافت",
+            "description": "آپ کے ڈیٹا کے ذرائع اور کاروباری اہداف کو سمجھنا۔",
+            "deliverables": [
+              "Data landscape assessment",
+              "Analytics requirements",
+              "KPI definition"
+            ]
+          },
+          {
+            "phase": "ڈیٹا کی انجینئرنگ",
+            "description": "ڈیٹا pipelines اور infrastructure بنانا۔",
+            "deliverables": [
+              "ETL/ELT pipelines",
+              "Data warehouse design",
+              "Data quality framework"
+            ]
+          },
+          {
+            "phase": "تجزیہ اور ماڈلنگ",
+            "description": "بصیرت نکالنا اور پیشین گوئی کے ماڈلز بنانا۔",
+            "deliverables": [
+              "Statistical analysis",
+              "ML models",
+              "Custom algorithms"
+            ]
+          },
+          {
+            "phase": "تصوراتی اور تعیناتی",
+            "description": "بصیرت کو قابل عمل ڈیش بورڈز میں تبدیل کرنا۔",
+            "deliverables": [
+              "Interactive dashboards",
+              "Automated reports",
+              "Production deployment"
+            ]
+          }
+        ]
+      },
+      "stats": {
+        "items": [
+          {
+            "value": "10PB+",
+            "label": "ڈیٹا پروسیس شدہ"
+          },
+          {
+            "value": "95%+",
+            "label": "پیشن گوئی کی درستگی"
+          },
+          {
+            "value": "<5s",
+            "label": "Query Response Time"
+          },
+          {
+            "value": "100+",
+            "label": "ڈیٹا کے ذرائع مربوط"
+          }
+        ]
+      },
+      "cta": {
+        "headline": "اپنے ڈیٹا کی طاقت کو غیر مقفل کریں",
+        "description": "آئیں دریافت کریں کہ کس طرح تجزیات آپ کے کاروبار کو تبدیل کر سکتی ہیں اور ڈیٹا پر مبنی فیصلہ سازی کو آگے بڑھا سکتی ہیں۔",
+        "buttonText": "ڈیٹا کی تشخیص حاصل کریں"
+      }
+    },
+    "conversational-ai": {
+      "serviceName": "گفتگو کرنے والی AI",
+      "features": {
+        "headline": "ذہین گفتگو جو صارفین کو خوش کرتی ہیں اور کاروبار کو ترقی دیتی ہیں",
+        "subtitle": "AI-Powered چیٹ بوٹس اور ورچوئل اسسٹنٹس",
+        "description": "ہم گفتگو کے AI حل بناتے ہیں جو قدرتی زبان کو سمجھتے ہیں، بامعنی جوابات فراہم کرتے ہیں، اور بغیر کسی رکاوٹ کے انسانی ایجنٹس کے ساتھ مربوط ہوتے ہیں — 24/7 گاہک کی مدد اور مشغولیت فراہم کرتے ہیں۔",
+        "items": [
+          {
+            "icon": "message",
+            "title": "ذہین چیٹ بوٹس",
+            "description": "AI-powered چیٹ بوٹس جو قدرتی گفتگو کو سمجھتے اور جواب دیتے ہیں۔",
+            "details": [
+              "NLU کے ساتھ intent recognition اور entity extraction",
+              "Multi-turn conversations context management کے ساتھ",
+              "Sentiment analysis جذباتی ذہین جوابات کے لیے"
+            ]
+          },
+          {
+            "icon": "mic",
+            "title": "آواز سے چلنے والے اسسٹنٹس",
+            "description": "آواز سے فعال AI اسسٹنٹس hands-free تعاملات کے لیے۔",
+            "details": [
+              "Speech-to-text اور text-to-speech integration",
+              "Voice biometrics تصدیق کے لیے",
+              "Multi-language voice support"
+            ]
+          },
+          {
+            "icon": "brain",
+            "title": "قدرتی زبان کی تفہیم (NLU)",
+            "description": "جدید NLU انجن جو پیچیدہ صارف کے ارادوں کو سمجھتے ہیں۔",
+            "details": [
+              "Custom NLU models آپ کے ڈومین کے لیے تربیت یافتہ",
+              "Multi-intent detection پیچیدہ queries کے لیے",
+              "Contextual understanding گفتگو کی ہسٹری کے ساتھ"
+            ]
+          },
+          {
+            "icon": "workflow",
+            "title": "ورک فلو آٹومیشن",
+            "description": "کاروباری عمل کو خودکار بنائیں گفتگو کے انٹرفیس کے ذریعے۔",
+            "details": [
+              "API integration backend systems کے ساتھ",
+              "Task automation اور scheduling",
+              "Form filling اور data collection"
+            ]
+          },
+          {
+            "icon": "users",
+            "title": "Human Handoff",
+            "description": "پیچیدہ معاملات کے لیے انسانی ایجنٹس کی طرف بغیر کسی رکاوٹ کے منتقلی۔",
+            "details": [
+              "Intelligent routing مناسب ایجنٹس کی طرف",
+              "Context preservation handoff کے دوران",
+              "Agent assist suggestions real-time میں"
+            ]
+          },
+          {
+            "icon": "chart",
+            "title": "تجزیات اور بصیرت",
+            "description": "گفتگو کی تجزیات بہتر کارکردگی اور صارف کی تفہیم کے لیے۔",
+            "details": [
+              "Conversation analytics اور trends",
+              "User satisfaction metrics",
+              "Bot performance optimization"
+            ]
+          }
+        ]
+      },
+      "useCases": {
+        "title": "گفتگو کرنے والی AI استعمال کی صورتیں",
+        "subtitle": "ہر صنعت کے لیے AI حل",
+        "items": [
+          {
+            "icon": "headset",
+            "title": "کسٹمر سپورٹ",
+            "description": "24/7 خودکار کسٹمر سپورٹ تیز حل کے اوقات کے ساتھ۔",
+            "examples": [
+              "FAQ automation اور self-service",
+              "Ticket creation اور tracking",
+              "Order status inquiries"
+            ]
+          },
+          {
+            "icon": "shopping",
+            "title": "E-Commerce اسسٹنٹس",
+            "description": "ذاتی shopping تجربات اور سفارشات۔",
+            "examples": [
+              "Product recommendations",
+              "Order placement اور checkout assistance",
+              "Returns اور refunds processing"
+            ]
+          },
+          {
+            "icon": "bank",
+            "title": "بینکنگ اور مالیات",
+            "description": "محفوظ مالیاتی transactions اور مشاورت۔",
+            "examples": [
+              "Account balance inquiries",
+              "Transaction history اور alerts",
+              "Loan applications اور financial advice"
+            ]
+          },
+          {
+            "icon": "stethoscope",
+            "title": "صحت کی دیکھ بھال",
+            "description": "مریض کی مشغولیت اور صحت کی معلومات۔",
+            "examples": [
+              "Appointment scheduling",
+              "Symptom checking اور triage",
+              "Medication reminders"
+            ]
+          }
+        ]
+      },
+      "technologies": {
+        "title": "گفتگو کرنے والی AI ٹیکنالوجی",
+        "subtitle": "AI پلیٹ فارمز اور ٹولز",
+        "categories": [
+          {
+            "name": "AI پلیٹ فارمز",
+            "items": [
+              "OpenAI GPT",
+              "Google Dialogflow",
+              "IBM Watson",
+              "Microsoft Bot Framework",
+              "Rasa",
+              "Amazon Lex"
+            ]
+          },
+          {
+            "name": "NLU انجن",
+            "items": [
+              "spaCy",
+              "NLTK",
+              "Hugging Face Transformers",
+              "Stanford NLP",
+              "Google Cloud NLU",
+              "AWS Comprehend"
+            ]
+          },
+          {
+            "name": "آواز کی ٹیکنالوجی",
+            "items": [
+              "Google Speech-to-Text",
+              "AWS Transcribe",
+              "Azure Speech Services",
+              "Deepgram",
+              "AssemblyAI",
+              "Whisper"
+            ]
+          },
+          {
+            "name": "چیٹ انٹرفیس",
+            "items": [
+              "Intercom",
+              "Zendesk Chat",
+              "LiveChat",
+              "Drift",
+              "Twilio",
+              "Telegram Bot API"
+            ]
+          },
+          {
+            "name": "Analytics",
+            "items": [
+              "Botanalytics",
+              "Dashbot",
+              "Chatbase",
+              "Google Analytics",
+              "Mixpanel",
+              "Amplitude"
+            ]
+          },
+          {
+            "name": "Development ٹولز",
+            "items": [
+              "Botpress",
+              "BotKit",
+              "Botonic",
+              "ChatterBot",
+              "Botman",
+              "Landbot"
+            ]
+          }
+        ]
+      },
+      "process": {
+        "title": "ہمارا گفتگو کرنے والی AI ڈیولپمنٹ کا عمل",
+        "subtitle": "تصور سے لے کر تعیناتی تک",
+        "steps": [
+          {
+            "phase": "Use Case تعریف",
+            "description": "آپ کے AI اسسٹنٹ کے اہداف اور دائرہ کار کی وضاحت۔",
+            "deliverables": [
+              "Use case documentation",
+              "Conversation design",
+              "Success metrics"
+            ]
+          },
+          {
+            "phase": "ڈیزائن اور تربیت",
+            "description": "گفتگو کے بہاؤ اور AI ماڈلز کو ڈیزائن کرنا۔",
+            "deliverables": [
+              "Dialog flows",
+              "Intent mapping",
+              "NLU model training"
+            ]
+          },
+          {
+            "phase": "ترقی اور انضمام",
+            "description": "چیٹ بوٹ کی تعمیر اور سسٹمز کے ساتھ مربوط کرنا۔",
+            "deliverables": [
+              "Bot development",
+              "API integrations",
+              "Testing اور QA"
+            ]
+          },
+          {
+            "phase": "تعیناتی اور اصلاح",
+            "description": "لانچ کرنا اور مسلسل بہتر کرنا۔",
+            "deliverables": [
+              "Production deployment",
+              "Performance monitoring",
+              "Continuous training"
+            ]
+          }
+        ]
+      },
+      "stats": {
+        "items": [
+          {
+            "value": "90%+",
+            "label": "خودکار Resolution Rate"
+          },
+          {
+            "value": "<3s",
+            "label": "اوسط جواب کا وقت"
+          },
+          {
+            "value": "95%+",
+            "label": "Intent Recognition Accuracy"
+          },
+          {
+            "value": "24/7",
+            "label": "دستیابی"
+          }
+        ]
+      },
+      "cta": {
+        "headline": "اپنا AI اسسٹنٹ بنانا شروع کریں",
+        "description": "آئیں ایک گفتگو کرنے والا AI حل بنائیں جو آپ کے کسٹمر کے تجربے کو تبدیل کرے اور آپریشنز کو خودکار بنائے۔",
+        "buttonText": "AI کی دریافت شروع کریں"
+      }
+    },
+    "cybersecurity": {
+      "serviceName": "سائبر سیکیورٹی",
+      "features": {
+        "headline": "اپنے ڈیجیٹل اثاثوں کو جدید خطرات سے بچائیں",
+        "subtitle": "انٹرپرائز سیکیورٹی حل",
+        "description": "ہم جامع سائبر سیکیورٹی حل فراہم کرتے ہیں جو آپ کے کاروبار، ڈیٹا، اور نظاموں کو ابھرتے ہوئے خطرات سے بچاتے ہیں — پیشن گوئی کی خطرے کی شناخت سے لے کر واقعے کے جواب اور تعمیل تک۔",
+        "items": [
+          {
+            "icon": "shield",
+            "title": "خطرے کی تشخیص اور کمزوری کی جانچ",
+            "description": "آپ کی سیکیورٹی کی کرنسی میں کمزوریوں کی شناخت اور ان کا جائزہ لینا۔",
+            "details": [
+              "Penetration testing اپنے applications اور infrastructure کی",
+              "Vulnerability scanning اور risk assessment",
+              "Security audit اور compliance reviews"
+            ]
+          },
+          {
+            "icon": "eye",
+            "title": "خطرے کی شناخت اور جواب",
+            "description": "24/7 نگرانی اور تیز رفتار جواب سیکیورٹی کے واقعات کے لیے۔",
+            "details": [
+              "Security Operations Center (SOC) services",
+              "Real-time threat detection اور alerting",
+              "Incident response اور forensics"
+            ]
+          },
+          {
+            "icon": "lock",
+            "title": "شناخت اور رسائی کا انتظام",
+            "description": "محفوظ شناخت اور granular رسائی کنٹرول۔",
+            "details": [
+              "Multi-factor authentication (MFA)",
+              "Single sign-on (SSO) integration",
+              "Role-based access control (RBAC)"
+            ]
+          },
+          {
+            "icon": "database",
+            "title": "ڈیٹا کی حفاظت اور encryption",
+            "description": "حساس ڈیٹا کو rest اور transit میں محفوظ رکھنا۔",
+            "details": [
+              "End-to-end encryption",
+              "Data loss prevention (DLP)",
+              "Secure key management"
+            ]
+          },
+          {
+            "icon": "network",
+            "title": "نیٹ ورک سیکیورٹی",
+            "description": "نیٹ ورک کی سرحدوں اور ٹریفک کو محفوظ بنانا۔",
+            "details": [
+              "Firewall configuration اور management",
+              "Intrusion detection اور prevention systems (IDS/IPS)",
+              "Virtual private networks (VPN)"
+            ]
+          },
+          {
+            "icon": "checklist",
+            "title": "تعمیل اور گورننس",
+            "description": "ریگولیٹری تعمیل اور سیکیورٹی کے بہترین طریقوں کو یقینی بنانا۔",
+            "details": [
+              "GDPR، HIPAA، SOC 2 تعمیل",
+              "Security policy development",
+              "Audit trail اور compliance reporting"
+            ]
+          }
+        ]
+      },
+      "useCases": {
+        "title": "سائبر سیکیورٹی استعمال کی صورتیں",
+        "subtitle": "ہر صنعت کے لیے سیکیورٹی",
+        "items": [
+          {
+            "icon": "bank",
+            "title": "مالیاتی خدمات",
+            "description": "حساس مالیاتی ڈیٹا اور لین دین کی حفاظت۔",
+            "examples": [
+              "PCI DSS تعمیل",
+              "Fraud detection اور prevention",
+              "Secure payment processing"
+            ]
+          },
+          {
+            "icon": "hospital",
+            "title": "صحت کی دیکھ بھال",
+            "description": "مریض کی معلومات اور میڈیکل ریکارڈز کی حفاظت۔",
+            "examples": [
+              "HIPAA تعمیل",
+              "Protected health information (PHI) security",
+              "Medical device security"
+            ]
+          },
+          {
+            "icon": "shopping",
+            "title": "E-Commerce",
+            "description": "گاہک کے ڈیٹا اور ادائیگی کی معلومات کی حفاظت۔",
+            "examples": [
+              "Customer data protection",
+              "Payment gateway security",
+              "DDoS protection"
+            ]
+          },
+          {
+            "icon": "government",
+            "title": "سرکاری اور انٹرپرائز",
+            "description": "تنقیdi infrastructure اور حساس ڈیٹا کی حفاظت۔",
+            "examples": [
+              "Zero-trust architecture",
+              "Insider threat detection",
+              "Critical infrastructure protection"
+            ]
+          }
+        ]
+      },
+      "technologies": {
+        "title": "سائبر سیکیورٹی ٹیکنالوجی اسٹیک",
+        "subtitle": "سیکیورٹی ٹولز اور پلیٹ فارمز",
+        "categories": [
+          {
+            "name": "خطرے کی شناخت",
+            "items": [
+              "Splunk",
+              "CrowdStrike",
+              "Darktrace",
+              "SentinelOne",
+              "Palo Alto Networks",
+              "Cisco SecureX"
+            ]
+          },
+          {
+            "name": "کمزوری کی جانچ",
+            "items": [
+              "Nessus",
+              "Qualys",
+              "Burp Suite",
+              "OWASP ZAP",
+              "Metasploit",
+              "Acunetix"
+            ]
+          },
+          {
+            "name": "شناخت کا انتظام",
+            "items": [
+              "Okta",
+              "Auth0",
+              "Azure AD",
+              "Ping Identity",
+              "ForgeRock",
+              "OneLogin"
+            ]
+          },
+          {
+            "name": "Encryption",
+            "items": [
+              "HashiCorp Vault",
+              "AWS KMS",
+              "Azure Key Vault",
+              "Google Cloud KMS",
+              "Let's Encrypt",
+              "OpenSSL"
+            ]
+          },
+          {
+            "name": "نیٹ ورک سیکیورٹی",
+            "items": [
+              "Cisco ASA",
+              "Fortinet",
+              "Palo Alto Firewalls",
+              "Cloudflare",
+              "AWS WAF",
+              "Akamai"
+            ]
+          },
+          {
+            "name": "تعمیل",
+            "items": [
+              "Vanta",
+              "Drata",
+              "OneTrust",
+              "TrustArc",
+              "Secureframe",
+              "Hyperproof"
+            ]
+          }
+        ]
+      },
+      "process": {
+        "title": "ہمارا سائبر سیکیورٹی کا عمل",
+        "subtitle": "تشخیص سے لے کر تحفظ تک",
+        "steps": [
+          {
+            "phase": "سیکیورٹی کی تشخیص",
+            "description": "آپ کی موجودہ سیکیورٹی کی کرنسی کا جائزہ لینا۔",
+            "deliverables": [
+              "Security audit",
+              "Vulnerability assessment",
+              "Risk analysis report"
+            ]
+          },
+          {
+            "phase": "سیکیورٹی کی ڈیزائن",
+            "description": "جامع سیکیورٹی کی حکمت عملی بنانا۔",
+            "deliverables": [
+              "Security architecture",
+              "Policy framework",
+              "Implementation roadmap"
+            ]
+          },
+          {
+            "phase": "نفاذ",
+            "description": "سیکیورٹی کے کنٹرولز اور ٹولز کو تعینات کرنا۔",
+            "deliverables": [
+              "Security controls deployment",
+              "Tool integration",
+              "Security testing"
+            ]
+          },
+          {
+            "phase": "نگرانی اور بہتری",
+            "description": "مسلسل نگرانی اور سیکیورٹی کی بہتری۔",
+            "deliverables": [
+              "24/7 monitoring",
+              "Incident response",
+              "Regular security updates"
+            ]
+          }
+        ]
+      },
+      "stats": {
+        "items": [
+          {
+            "value": "99.9%",
+            "label": "خطرہ شناخت کی شرح"
+          },
+          {
+            "value": "<15min",
+            "label": "واقعے کے جواب کا وقت"
+          },
+          {
+            "value": "100%",
+            "label": "تعمیل کی شرح"
+          },
+          {
+            "value": "0",
+            "label": "ڈیٹا کی خلاف ورزیاں"
+          }
+        ]
+      },
+      "cta": {
+        "headline": "اپنے کاروبار کو سائبر خطرات سے بچائیں",
+        "description": "آئیں بات کریں کہ ہم کس طرح آپ کی سیکیورٹی کی کرنسی کو مضبوط بنا سکتے ہیں اور آپ کے ڈیجیٹل اثاثوں کی حفاظت کر سکتے ہیں۔",
+        "buttonText": "سیکیورٹی کی تشخیص حاصل کریں"
+      }
+    },
+    "devops-cloud": {
+      "serviceName": "DevOps اور Cloud",
+      "features": {
+        "headline": "جدید انفراسٹرکچر کے ساتھ ترسیل میں تیزی",
+        "subtitle": "DevOps اور Cloud انجینئرنگ",
+        "description": "ہم cloud انفراسٹرکچر اور DevOps پائپ لائنز کو ڈیزائن، تعمیر اور منظم کرتے ہیں جو آپ کی انجینئرنگ ٹیموں کو تیزی سے شپ کرنے، آسانی سے پیمانہ بڑھانے اور اعتماد کے ساتھ کام کرنے کی صلاحیت فراہم کرتی ہیں۔",
+        "items": [
+          {
+            "icon": "cloud",
+            "title": "Cloud آرکیٹیکچر اور منتقلی",
+            "description": "اسٹریٹجک cloud منتقلی اور آرکیٹیکچر ڈیزائن جو خطرے کو کم کرے، اخراجات میں کمی لائے اور آپ کی انفراسٹرکچر کو قابلِ توسیع ترقی کے لیے تیار کرے۔",
+            "details": [
+              "Cloud تیاری کی تشخیص اور ورک لوڈ کے لحاظ سے منتقلی کی منصوبہ بندی",
+              "Lift-and-shift، re-platforming اور cloud-native refactoring حکمت عملی",
+              "Multi-cloud اور hybrid آرکیٹیکچر ڈیزائن برائے بے ترتیبی اور vendor لچک"
+            ]
+          },
+          {
+            "icon": "rocket",
+            "title": "CI/CD پائپ لائن انجینئرنگ",
+            "description": "خودکار build، test اور deployment پائپ لائنز جو ریلیز کے چکر کو ہفتوں سے منٹوں میں تبدیل کرتی ہیں اور معیاری دروازوں کے ساتھ آتی ہیں۔",
+            "details": [
+              "Multi-stage پائپ لائنز بمع خودکار ٹیسٹنگ، سیکیورٹی سکیننگ اور منظوری کے دروازے",
+              "Blue-green اور canary deployment حکمت عملیاں بغیر کسی وقفے کے ریلیز کے لیے"
+            ]
+          },
+          {
+            "icon": "server",
+            "title": "Infrastructure as Code",
+            "description": "مکمل طور پر کوڈ شدہ انفراسٹرکچر جو version-controlled، peer-reviewed اور ماحول میں دوبارہ تیار کی جا سکے۔",
+            "details": [
+              "Terraform اور Pulumi ماڈیولز قابلِ استعمال، composable انفراسٹرکچر اجزاء کے لیے",
+              "GitOps workflows جہاں انفراسٹرکچر کی تبدیلیاں ایپلیکیشن کوڈ جیسے جائزے کے عمل سے گزرتی ہیں",
+              "ماحولیاتی برابری کا نفاذ dev، staging اور production میں مستقل مزاجی کو یقینی بناتا ہے"
+            ]
+          },
+          {
+            "icon": "cog",
+            "title": "Container آرکسٹریشن",
+            "description": "پروڈکشن گریڈ Kubernetes clusters اور container مینجمنٹ پلیٹ فارمز جو خودکار طور پر scaling، networking اور service discovery کو سنبھالتے ہیں۔",
+            "details": [
+              "Kubernetes cluster ڈیزائن بمع multi-tenancy، RBAC اور network پالیسیاں",
+              "Helm chart ڈویلپمنٹ اور مینجمنٹ معیاری ایپلیکیشن deployments کے لیے",
+              "Service mesh نفاذ محفوظ inter-service مواصلات اور observability کے لیے"
+            ]
+          },
+          {
+            "icon": "chart",
+            "title": "Observability اور نگرانی",
+            "description": "جامع نگرانی، logging اور tracing پلیٹ فارمز جو آپ کی ٹیموں کو سسٹم کی صحت اور کارکردگی میں مکمل نمائش فراہم کرتے ہیں۔",
+            "details": [
+              "Metrics، logs اور traces یکجا observability dashboards میں منسلک",
+              "حسب ضرورت alerting بمع ذہین شور میں کمی اور escalation routing"
+            ]
+          },
+          {
+            "icon": "lightning",
+            "title": "کارکردگی اور لاگت کی اصلاح",
+            "description": "مسلسل انفراسٹرکچر optimization جو کارکردگی کی ضروریات کو cloud خرچ کی کارکردگی کے ساتھ متوازن کرے۔",
+            "details": [
+              "Compute، storage اور database instances کے لیے right-sizing تجزیہ",
+              "Reserved instance اور savings plan حکمت عملیاں جو cloud خرچ میں 30-50% کمی لاتی ہیں",
+              "Auto-scaling پالیسیاں حقیقی demand patterns کے مطابق"
+            ]
+          },
+          {
+            "icon": "wrench",
+            "title": "Site Reliability Engineering",
+            "description": "SRE طریقے اور ٹولنگ جو آپ کے سسٹمز کو error budgets، SLOs اور خودکار remediation کے ذریعے availability اہداف پورے کرنے میں مدد کرتی ہیں۔",
+            "details": [
+              "SLI/SLO تعریف اور error budget ٹریکنگ اہم سروسز کے لیے",
+              "خودکار runbooks عام incident اقسام کے لیے MTTR میں کمی لاتے ہیں",
+              "Chaos engineering تجربات جو ناکامی کے حالات میں لچک کی تصدیق کرتے ہیں"
+            ]
+          },
+          {
+            "icon": "database",
+            "title": "Database آپریشنز اور Scaling",
+            "description": "منظم database آپریشنز بشمول provisioning، replication، backup، disaster recovery اور production workloads کے لیے performance tuning۔",
+            "details": [
+              "Read replica اور sharding حکمت عملیاں horizontal database scaling کے لیے",
+              "خودکار backup شیڈولز بمع point-in-time recovery اور cross-region replication"
+            ]
+          }
+        ],
+        "stats": [
+          {
+            "label": "Deployment کی تعدد",
+            "value": "50x"
+          },
+          {
+            "label": "Infrastructure Uptime",
+            "value": "99.99%"
+          },
+          {
+            "label": "Cloud لاگت میں بچت",
+            "value": "40%"
+          },
+          {
+            "label": "Deploy وقت میں کمی",
+            "value": "90%"
+          }
+        ]
+      },
+      "process": {
+        "headline": "ہمارا DevOps اور Cloud عمل",
+        "subtitle": "پرانے سے جدید انفراسٹرکچر تک",
+        "description": "ایک ثابت شدہ طریقہ کار جو دستی، نازک انفراسٹرکچر کو خودکار، لچکدار cloud پلیٹ فارمز میں تبدیل کرتا ہے۔",
+        "steps": [
+          {
+            "title": "انفراسٹرکچر کی تشخیص",
+            "description": "آپ کی موجودہ انفراسٹرکچر، deployment عمل اور operational طریقوں کا جائزہ۔",
+            "icon": "search",
+            "details": [
+              "آرکیٹیکچر کا جائزہ بشمول compute، networking، storage اور security layers",
+              "CI/CD پختگی کی تشخیص صنعتی بہترین طریقوں کے مقابلے میں",
+              "Cloud لاگت کا تجزیہ اور optimization کے مواقع"
+            ]
+          },
+          {
+            "title": "آرکیٹیکچر اور روڈ میپ ڈیزائن",
+            "description": "ہدف والی cloud آرکیٹیکچر اور مرحلہ وار منتقلی کا روڈ میپ۔",
+            "icon": "document",
+            "details": [
+              "ہدف آرکیٹیکچر diagrams بمع network topology",
+              "منتقلی کی لہروں کی منصوبہ بندی"
+            ]
+          },
+          {
+            "title": "پائپ لائن اور انفراسٹرکچر کی تعمیر",
+            "description": "CI/CD پائپ لائنز کو نافذ کریں اور cloud انفراسٹرکچر فراہم کریں۔",
+            "icon": "wrench",
+            "details": [
+              "CI/CD پائپ لائن کی تعمیر بمع خودکار ٹیسٹنگ",
+              "Terraform module ڈویلپمنٹ",
+              "Kubernetes cluster کی فراہمی"
+            ]
+          },
+          {
+            "title": "منتقلی اور Deployment",
+            "description": "کم سے کم downtime کے ساتھ منتقلی کا منصوبہ عمل میں لائیں۔",
+            "icon": "rocket",
+            "details": [
+              "Rolling منتقلی کا عمل بمع rollback طریقہ کار",
+              "نئے ماحول میں کارکردگی کی benchmarking"
+            ]
+          },
+          {
+            "title": "Optimization اور Handover",
+            "description": "کارکردگی کو بہتر بنائیں اور ٹیم کو تربیت دیں۔",
+            "icon": "check",
+            "details": [
+              "لاگت کی optimization پاس",
+              "جامع runbook اور آرکیٹیکچر دستاویزات",
+              "ٹیم کی تربیت"
+            ]
+          }
+        ]
+      },
+      "techStack": {
+        "headline": "DevOps اور Cloud ٹیکنالوجی اسٹیک",
+        "subtitle": "پروڈکشن میں ثابت شدہ انفراسٹرکچر ٹولز",
+        "description": "ہم جنگ میں آزمودہ ٹولز اور پلیٹ فارمز استعمال کرتے ہیں۔",
+        "categories": [
+          {
+            "category": "Cloud پلیٹ فارمز اور IaC",
+            "items": [
+              {
+                "name": "AWS",
+                "description": "بنیادی cloud پلیٹ فارم برائے compute، networking، storage"
+              },
+              {
+                "name": "Google Cloud",
+                "description": "GKE، BigQuery اور Cloud Run برائے Kubernetes"
+              },
+              {
+                "name": "Azure",
+                "description": "AKS، Azure DevOps اور منظم database سروسز"
+              },
+              {
+                "name": "Terraform",
+                "description": "Infrastructure as Code برائے multi-cloud provisioning"
+              }
+            ]
+          },
+          {
+            "category": "Containers اور Orchestration",
+            "items": [
+              {
+                "name": "Docker",
+                "description": "Container runtime اور image building"
+              },
+              {
+                "name": "Kubernetes",
+                "description": "Production-grade container orchestration"
+              },
+              {
+                "name": "Nginx",
+                "description": "Ingress controller اور reverse proxy"
+              },
+              {
+                "name": "Jenkins",
+                "description": "CI/CD automation server"
+              }
+            ]
+          },
+          {
+            "category": "نگرانی اور Observability",
+            "items": [
+              {
+                "name": "Prometheus",
+                "description": "Metrics جمع کرنا اور alerting"
+              },
+              {
+                "name": "Grafana",
+                "description": "Visualization پلیٹ فارم"
+              },
+              {
+                "name": "Elasticsearch",
+                "description": "مرکزی log management"
+              }
+            ]
+          }
+        ]
+      },
+      "portfolio": {
+        "headline": "DevOps اور Cloud کیس اسٹڈیز",
+        "subtitle": "انفراسٹرکچر کی تبدیلیاں جو نتائج دیتی ہیں",
+        "description": "دیکھیں کہ ہم نے کس طرح تنظیموں کو ان کی انفراسٹرکچر کو جدید بنانے میں مدد کی ہے۔",
+        "items": [
+          {
+            "title": "SaaS پلیٹ فارم Cloud منتقلی",
+            "industry": "ٹیکنالوجی (SaaS)",
+            "challenge": "ایک B2B SaaS کمپنی جس کے 10,000 صارفین تھے، ایک bare-metal سرور پر دستی deployments کے ساتھ چل رہی تھی۔",
+            "solution": "پورے پلیٹ فارم کو AWS پر منتقل کیا گیا بمع auto-scaling ECS clusters اور خودکار CI/CD پائپ لائن۔",
+            "results": [
+              "12 ماہ میں 99.99% uptime حاصل کیا",
+              "Deployment کا وقت 4 گھنٹے سے کم کر کے 8 منٹ",
+              "5x ٹریفک spikes کو بغیر مداخلت کے سنبھالا"
+            ],
+            "stats": [
+              {
+                "label": "حاصل شدہ Uptime",
+                "value": "99.99%"
+              },
+              {
+                "label": "Deploy کا وقت",
+                "value": "8 min"
+              }
+            ]
+          },
+          {
+            "title": "Fintech Kubernetes پلیٹ فارم",
+            "industry": "مالیاتی خدمات",
+            "challenge": "30 microservices دستی طور پر VMs پر deploy تھے۔",
+            "solution": "ایک پروڈکشن Kubernetes پلیٹ فارم بنایا گیا۔",
+            "results": [
+              "ریلیز چکر کو 2 ہفتوں سے کم کر کے روزانہ",
+              "انفراسٹرکچر کے اخراجات میں 42% کمی"
+            ],
+            "stats": [
+              {
+                "label": "ریلیز کی تعدد",
+                "value": "Daily"
+              },
+              {
+                "label": "لاگت میں کمی",
+                "value": "42%"
+              }
+            ]
+          },
+          {
+            "title": "میڈیا Streaming انفراسٹرکچر Scaling",
+            "industry": "میڈیا اور تفریح",
+            "challenge": "100,000+ بیک وقت viewers کے ساتھ تباہ کن ناکامیاں۔",
+            "solution": "Streaming انفراسٹرکچر کو دوبارہ ڈیزائن کیا گیا۔",
+            "results": [
+              "500,000 بیک وقت viewers کو کامیابی سے سنبھالا",
+              "فی viewer لاگت میں 60% کمی",
+              "عالمی سطح پر P99 latency 200ms سے کم"
+            ],
+            "stats": [
+              {
+                "label": "Peak بیک وقت صارفین",
+                "value": "500K"
+              },
+              {
+                "label": "فی Viewer لاگت میں کمی",
+                "value": "60%"
+              }
+            ]
+          }
+        ],
+        "aggregateStats": [
+          {
+            "label": "مکمل شدہ Cloud منتقلیاں",
+            "value": "75+"
+          },
+          {
+            "label": "پروڈکشن میں Containers",
+            "value": "10K+"
+          },
+          {
+            "label": "اوسط حاصل شدہ Uptime",
+            "value": "99.97%"
+          },
+          {
+            "label": "بنائی گئی CI/CD پائپ لائنز",
+            "value": "200+"
+          }
+        ]
+      },
+      "faq": {
+        "headline": "DevOps اور Cloud FAQ",
+        "subtitle": "انفراسٹرکچر کے سوالات کے جوابات",
+        "description": "Cloud منتقلی اور DevOps طریقوں کے بارے میں عام سوالات۔",
+        "categories": [
+          {
+            "category": "Cloud منتقلی",
+            "items": [
+              {
+                "question": "آپ cloud منتقلیوں کے دوران downtime کو کیسے کم کرتے ہیں؟",
+                "answer": "ہم متوازی ماحول کے ساتھ ایک مرحلہ وار منتقلی کا طریقہ استعمال کرتے ہیں۔ آپ کے موجودہ سسٹمز چلتے رہتے ہیں جب تک ہم cloud ماحول بناتے اور تصدیق کرتے ہیں۔"
+              },
+              {
+                "question": "آپ کون سا cloud provider تجویز کرتے ہیں؟",
+                "answer": "بہترین انتخاب آپ کے موجودہ ٹیکنالوجی اسٹیک پر منحصر ہے۔ ہم multi-cloud ماہرین ہیں۔"
+              },
+              {
+                "question": "عام cloud منتقلی میں کتنا وقت لگتا ہے؟",
+                "answer": "5-10 workloads کی منتقلی 2-4 ماہ لیتی ہے۔ بڑی منتقلیاں 6-12 ماہ تک۔"
+              }
+            ]
+          },
+          {
+            "category": "DevOps طریقے",
+            "items": [
+              {
+                "question": "اگر ہماری ٹیم کو محدود DevOps تجربہ ہے؟",
+                "answer": "ہم آپ سے وہیں ملتے ہیں جہاں آپ ہیں۔ ہماری مصروفیات میں علم کی منتقلی شامل ہے۔"
+              },
+              {
+                "question": "آپ CI/CD پائپ لائنز میں secrets کو کیسے سنبھالتے ہیں؟",
+                "answer": "ہم AWS Secrets Manager، HashiCorp Vault استعمال کرتے ہیں۔ Secrets کبھی repositories میں محفوظ نہیں۔"
+              },
+              {
+                "question": "کیا آپ ہمارے موجودہ CI/CD ٹولز کے ساتھ کام کر سکتے ہیں؟",
+                "answer": "جی ہاں۔ ہمیں Jenkins، GitHub Actions، GitLab CI کا تجربہ ہے۔"
+              }
+            ]
+          },
+          {
+            "category": "لاگت اور آپریشنز",
+            "items": [
+              {
+                "question": "ہم cloud پر منتقل ہو کر کتنی بچت کر سکتے ہیں؟",
+                "answer": "کچھ کلائنٹس اخراجات میں 30-50% کمی کرتے ہیں۔ نتائج مختلف ہوتے ہیں۔"
+              },
+              {
+                "question": "کیا آپ منتقلی کے بعد مسلسل management فراہم کرتے ہیں؟",
+                "answer": "جی ہاں۔ ہم 24/7 نگرانی، incident response اور cost optimization پیش کرتے ہیں۔"
+              },
+              {
+                "question": "آپ cloud لاگت کے حیرانی سے کیسے بچتے ہیں؟",
+                "answer": "ہم budget alerts، tagging پالیسیاں اور anomaly detection نافذ کرتے ہیں۔"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "digital-marketing": {
+      "serviceName": "ڈیجیٹل مارکیٹنگ",
+      "features": {
+        "headline": "ڈیٹا پر مبنی مارکیٹنگ جو تبدیل کرتی ہے",
+        "subtitle": "مکمل فنل ڈیجیٹل مارکیٹنگ",
+        "description": "ہم تخلیقی حکمت عملی کو تجزیاتی سختی کے ساتھ ملاتے ہیں تاکہ ڈیجیٹل مارکیٹنگ پروگرام بنائیں جو مؤثر لیڈز کو راغب کرتے، امکانات کو پروان چڑھاتے اور ہر چینل پر قابلِ پیمائش آمدنی میں اضافہ کرتے ہیں۔",
+        "items": [
+          {
+            "icon": "search",
+            "title": "SEO اور نامیاتی ترقی",
+            "description": "تکنیکی اور مواد کی SEO حکمت عملیاں جو تلاش کی نمائش کو بہتر بناتی ہیں، مؤثر نامیاتی ٹریفک لاتی ہیں اور پائیدار طویل مدتی سامعین کے حصول کے چینلز بناتی ہیں۔",
+            "details": [
+              "تکنیکی SEO آڈٹ بشمول سائٹ کی رفتار، crawlability، schema markup اور Core Web Vitals",
+              "مطلوبہ الفاظ کی تحقیق اور مواد کی حکمت عملی تلاش کے ارادے کے مطابق",
+              "لنک بنانے کی مہمات ڈیجیٹل PR، مہمان مواد اور وسائل پر مبنی رسائی کے ذریعے"
+            ]
+          },
+          {
+            "icon": "megaphone",
+            "title": "بامعاوضہ اشتہارات اور PPC",
+            "description": "Google، Meta، LinkedIn اور programmatic نیٹ ورکس پر اعلیٰ کارکردگی کی بامعاوضہ مہمات بمع زیادہ سے زیادہ ROAS کے لیے مسلسل اصلاح۔",
+            "details": [
+              "تلاش، ڈسپلے اور شاپنگ مہم کا انتظام بمع سامعین کی تقسیم",
+              "Conversion ٹریکنگ سیٹ اپ بمع multi-touch attribution ماڈلنگ"
+            ]
+          },
+          {
+            "icon": "chart",
+            "title": "مارکیٹنگ تجزیات اور انتساب",
+            "description": "جامع تجزیات کا انفراسٹرکچر جو ہر رابطہ نقطہ کو ٹریک کرتا ہے اور آمدنی کو ان چینلز اور مہمات سے منسوب کرتا ہے جو حقیقی نتائج دیتے ہیں۔",
+            "details": [
+              "کراس چینل attribution ماڈلنگ last-click کو ڈیٹا پر مبنی ماڈلز سے تبدیل کرتے ہوئے",
+              "حسب ضرورت ڈیش بورڈ ڈویلپمنٹ جو اشتہار پلیٹ فارمز، CRM اور آمدنی ڈیٹا کو جوڑتا ہے",
+              "Cohort تجزیہ اور صارف کے سفر کی نقشہ سازی"
+            ]
+          },
+          {
+            "icon": "cursor",
+            "title": "تبادلے کی شرح کی اصلاح",
+            "description": "لینڈنگ صفحات، فنلز اور صارف کے تجربات کی منظم جانچ اور اصلاح تاکہ زائرین کی فیصد کو زیادہ سے زیادہ کیا جائے جو گاہک بنتے ہیں۔",
+            "details": [
+              "لینڈنگ صفحات اور اہم conversion flows کے لیے A/B اور multivariate ٹیسٹنگ پروگرام",
+              "Heatmap اور session recording تجزیہ رگڑ کے نکات کی نشاندہی کے لیے",
+              "Personalization انجن ٹریفک کے ذریعہ اور رویے پر مبنی تجربات فراہم کرتے ہیں"
+            ]
+          },
+          {
+            "icon": "chat",
+            "title": "مواد کی مارکیٹنگ اور حکمت عملی",
+            "description": "اسٹریٹجک مواد پروگرام جو thought leadership قائم کرتے ہیں، نامیاتی ٹریفک لاتے ہیں اور قابلِ قدر، ہدف بنائے گئے مواد کے ساتھ خریداری کے سفر میں امکانات کو پروان چڑھاتے ہیں۔",
+            "details": [
+              "مواد کے آڈٹ اور خلا کا تجزیہ خریدار کی شخصیات کے مطابق",
+              "بلاگ، وائٹ پیپر، کیس اسٹڈی اور ویڈیو مواد کی تیاری اور تقسیم"
+            ]
+          },
+          {
+            "icon": "users",
+            "title": "سوشل میڈیا مارکیٹنگ",
+            "description": "نامیاتی اور بامعاوضہ سوشل حکمت عملیاں جو برانڈ کی آگاہی بناتی ہیں، کمیونٹیز کو مشغول کرتی ہیں اور ان پلیٹ فارمز سے مؤثر ٹریفک لاتی ہیں جہاں آپ کے سامعین وقت گزارتے ہیں۔",
+            "details": [
+              "LinkedIn، Instagram، Twitter اور TikTok کے لیے پلیٹ فارم مخصوص مواد کی حکمت عملیاں",
+              "کمیونٹی مینجمنٹ اور سوشل listening برانڈ کے جذبات کی نگرانی کے لیے",
+              "Influencer کی نشاندہی اور شراکت داری کا انتظام"
+            ]
+          },
+          {
+            "icon": "mobile",
+            "title": "ای میل اور مارکیٹنگ آٹومیشن",
+            "description": "خودکار ای میل اور nurture مہمات جو صحیح پیغام صحیح شخص کو صحیح وقت پر پہنچاتی ہیں۔",
+            "details": [
+              "لیڈ اسکورنگ اور تقسیم کے ماڈل ذاتی nurture ترتیبات کے لیے",
+              "رویے کی trigger مہمات cart ترک کرنے، onboarding اور دوبارہ engagement کے لیے",
+              "Deliverability کی اصلاح 95% سے اوپر inbox placement rates کو یقینی بناتے ہوئے"
+            ]
+          },
+          {
+            "icon": "globe",
+            "title": "بین الاقوامی اور کثیر لسانی مارکیٹنگ",
+            "description": "عالمی توسیع کے لیے مقامی مارکیٹنگ حکمت عملیاں بشمول کثیر لسانی SEO، ثقافتی طور پر موافق مہمات اور علاقہ مخصوص چینل کی اصلاح۔",
+            "details": [
+              "کثیر لسانی مطلوبہ الفاظ کی تحقیق اور hreflang نفاذ بین الاقوامی SEO کے لیے",
+              "ثقافتی طور پر موافق اشتہاری تخلیقی اور لینڈنگ صفحہ کی مقامی کاری"
+            ]
+          }
+        ],
+        "stats": [
+          {
+            "label": "اوسط ROAS",
+            "value": "5.2x"
+          },
+          {
+            "label": "نامیاتی ٹریفک میں اضافہ",
+            "value": "180%"
+          },
+          {
+            "label": "پیدا کردہ لیڈز",
+            "value": "50K+"
+          },
+          {
+            "label": "تبادلے کی شرح میں اضافہ",
+            "value": "65%"
+          }
+        ]
+      },
+      "process": {
+        "headline": "ہمارا ڈیجیٹل مارکیٹنگ عمل",
+        "subtitle": "حکمت عملی اول، ڈیٹا پر مبنی عمل",
+        "description": "ایک منظم مارکیٹنگ طریقہ کار جو گہری سامعین کی سمجھ سے شروع ہوتا ہے۔",
+        "steps": [
+          {
+            "title": "آڈٹ اور مارکیٹ کا تجزیہ",
+            "description": "آپ کی موجودہ مارکیٹنگ کارکردگی کا جامع جائزہ۔",
+            "icon": "search",
+            "details": [
+              "چینل بہ چینل کارکردگی کا آڈٹ صنعتی معیارات کے مقابلے میں",
+              "مسابقتی تجزیہ بشمول مطلوبہ الفاظ، اشتہاری حکمت عملیاں",
+              "سامعین کی تحقیق بشمول persona ڈویلپمنٹ"
+            ]
+          },
+          {
+            "title": "حکمت عملی اور چینل کی منصوبہ بندی",
+            "description": "ڈیٹا پر مبنی مارکیٹنگ حکمت عملی تیار کریں۔",
+            "icon": "document",
+            "details": [
+              "چینل مکس کی اصلاح",
+              "بجٹ کی تقسیم کا ماڈل"
+            ]
+          },
+          {
+            "title": "مہم کی تعمیر اور آغاز",
+            "description": "زبردست تخلیقی، درست ہدف بندی کے ساتھ مہمات بنائیں۔",
+            "icon": "rocket",
+            "details": [
+              "اشتہاری تخلیقی ڈویلپمنٹ",
+              "لینڈنگ صفحہ ڈیزائن",
+              "ٹریکنگ اور تجزیات سیٹ اپ"
+            ]
+          },
+          {
+            "title": "اصلاح اور جانچ",
+            "description": "A/B ٹیسٹنگ کے ذریعے مسلسل کارکردگی کی اصلاح۔",
+            "icon": "chart",
+            "details": [
+              "ہفتہ وار bid اور بجٹ کی اصلاح",
+              "منظم A/B ٹیسٹنگ روڈ میپ"
+            ]
+          },
+          {
+            "title": "رپورٹنگ اور پیمانہ",
+            "description": "شفاف کارکردگی کی رپورٹنگ اور جیتنے والی مہمات کا اسٹریٹجک پیمانہ۔",
+            "icon": "lightning",
+            "details": [
+              "ماہانہ کارکردگی کی رپورٹس",
+              "سہ ماہی حکمت عملی کے جائزے",
+              "بجٹ کی دوبارہ تقسیم کی سفارشات"
+            ]
+          }
+        ]
+      },
+      "techStack": {
+        "headline": "مارکیٹنگ ٹیکنالوجی اسٹیک",
+        "subtitle": "مربوط مارکیٹنگ پلیٹ فارمز",
+        "description": "ہم بہترین مارکیٹنگ ٹیکنالوجیز استعمال کرتے ہیں۔",
+        "categories": [
+          {
+            "category": "ویب اور مواد کے پلیٹ فارمز",
+            "items": [
+              {
+                "name": "WordPress",
+                "description": "بلاگز، لینڈنگ صفحات کے لیے مواد کا انتظام"
+              },
+              {
+                "name": "Shopify",
+                "description": "ای کامرس پلیٹ فارم انضمام"
+              },
+              {
+                "name": "React",
+                "description": "حسب ضرورت لینڈنگ صفحہ ڈویلپمنٹ"
+              },
+              {
+                "name": "TypeScript",
+                "description": "Type-safe ڈویلپمنٹ"
+              }
+            ]
+          },
+          {
+            "category": "تجزیات اور ڈیٹا",
+            "items": [
+              {
+                "name": "Python",
+                "description": "مارکیٹنگ ڈیٹا تجزیہ"
+              },
+              {
+                "name": "PostgreSQL",
+                "description": "مرکزی مارکیٹنگ ڈیٹا warehouse"
+              },
+              {
+                "name": "Redis",
+                "description": "Real-time personalization انجن"
+              },
+              {
+                "name": "Figma",
+                "description": "اشتہاری تخلیقی کے لیے ڈیزائن"
+              }
+            ]
+          },
+          {
+            "category": "آٹومیشن اور AI",
+            "items": [
+              {
+                "name": "NodeJS",
+                "description": "مارکیٹنگ آٹومیشن backends"
+              },
+              {
+                "name": "OpenAI",
+                "description": "AI-powered مواد کی تخلیق"
+              },
+              {
+                "name": "Elasticsearch",
+                "description": "سائٹ تلاش کی اصلاح"
+              }
+            ]
+          }
+        ]
+      },
+      "portfolio": {
+        "headline": "ڈیجیٹل مارکیٹنگ کامیابی کی کہانیاں",
+        "subtitle": "مہمات جو حقیقی ترقی لاتی ہیں",
+        "description": "مثالیں کہ کیسے ہماری ڈیٹا پر مبنی مارکیٹنگ حکمت عملیوں نے لیڈز پیدا کیے ہیں۔",
+        "items": [
+          {
+            "title": "B2B SaaS لیڈ جنریشن انجن",
+            "industry": "ٹیکنالوجی (SaaS)",
+            "challenge": "ایک B2B پراجیکٹ مینجمنٹ SaaS مکمل طور پر outbound سیلز پر انحصار کر رہا تھا۔",
+            "solution": "مکمل فنل inbound مارکیٹنگ انجن بنایا گیا۔",
+            "results": [
+              "مؤثر لیڈ کی لاگت $180 سے کم کر کے $42",
+              "نامیاتی تلاش ٹریفک میں 320% اضافہ",
+              "1,200 مارکیٹنگ مؤثر لیڈز ماہانہ"
+            ],
+            "stats": [
+              {
+                "label": "فی لیڈ لاگت میں کمی",
+                "value": "77%"
+              },
+              {
+                "label": "ماہانہ MQLs",
+                "value": "1,200"
+              }
+            ]
+          },
+          {
+            "title": "ای کامرس آمدنی بڑھانے کی مہم",
+            "industry": "خوردہ اور ای کامرس",
+            "challenge": "ایک براہِ راست صارف گھریلو سامان کا برانڈ $1.2M ماہانہ آمدنی پر رک گیا تھا۔",
+            "solution": "پوری paid media حکمت عملی کو دوبارہ تشکیل دیا گیا۔",
+            "results": [
+              "ماہانہ آمدنی $1.2M سے بڑھا کر $3.1M",
+              "بامعاوضہ اشتہارات ROAS 1.8x سے بہتر کر کے 4.6x"
+            ],
+            "stats": [
+              {
+                "label": "آمدنی میں اضافہ",
+                "value": "158%"
+              },
+              {
+                "label": "ROAS میں بہتری",
+                "value": "4.6x"
+              }
+            ]
+          },
+          {
+            "title": "صحت کی دیکھ بھال مریض حصول پروگرام",
+            "industry": "صحت کی دیکھ بھال",
+            "challenge": "ایک کثیر مقام دانتوں کی پریکٹس گروپ کو 8 مقامات پر اپائنٹمنٹ بھرنے کی ضرورت تھی۔",
+            "solution": "تمام 8 مقامات کے لیے مقامی SEO حکمت عملی نافذ کی گئی۔",
+            "results": [
+              "نئے مریضوں کی اپائنٹمنٹس میں 85% اضافہ",
+              "فی اپائنٹمنٹ بکنگ کی لاگت $95 سے کم کر کے $31",
+              "تمام 8 مقامات کے لیے top-3 Google Map Pack ranking"
+            ],
+            "stats": [
+              {
+                "label": "نئے مریضوں میں اضافہ",
+                "value": "85%"
+              },
+              {
+                "label": "فی بکنگ لاگت",
+                "value": "$31"
+              }
+            ]
+          }
+        ],
+        "aggregateStats": [
+          {
+            "label": "سالانہ منظم Ad Spend",
+            "value": "$25M+"
+          },
+          {
+            "label": "کلائنٹس کے لیے پیدا کردہ لیڈز",
+            "value": "150K+"
+          },
+          {
+            "label": "اوسط کلائنٹ ROAS",
+            "value": "5.2x"
+          },
+          {
+            "label": "شروع کی گئی مارکیٹنگ مہمات",
+            "value": "500+"
+          }
+        ]
+      },
+      "faq": {
+        "headline": "ڈیجیٹل مارکیٹنگ FAQ",
+        "subtitle": "مارکیٹنگ کے سوالات کے جوابات",
+        "description": "ہماری ڈیجیٹل مارکیٹنگ سروسز کے بارے میں عام سوالات۔",
+        "categories": [
+          {
+            "category": "حکمت عملی اور منصوبہ بندی",
+            "items": [
+              {
+                "question": "آپ ہمارے کاروبار کے لیے صحیح مارکیٹنگ چینلز کیسے طے کرتے ہیں؟",
+                "answer": "ہم آپ کے ہدف سامعین کی آبادیات اور رویے، مسابقتی منظر نامے، صنعتی benchmarks اور بجٹ کی رکاوٹوں کا تجزیہ کرتے ہیں۔"
+              },
+              {
+                "question": "ڈیجیٹل مارکیٹنگ سے نتائج دیکھنے میں کتنا وقت لگتا ہے؟",
+                "answer": "بامعاوضہ اشتہارات عام طور پر آغاز کے 2-4 ہفتوں میں قابلِ پیمائش نتائج دیتے ہیں۔ SEO اور مواد کی مارکیٹنگ طویل مدتی سرمایہ کاری ہیں جو عام طور پر 3-6 ماہ میں اہم کرشن دکھاتی ہیں۔"
+              },
+              {
+                "question": "ڈیجیٹل مارکیٹنگ شروع کرنے کے لیے ہمیں کتنے بجٹ کی ضرورت ہے؟",
+                "answer": "موثر مہمات $3,000-5,000 ماہانہ کے بجٹ سے شروع ہو سکتی ہیں۔ Multi-channel پروگرام عام طور پر $10,000-25,000 ماہانہ کی ضرورت ہوتی ہے۔"
+              }
+            ]
+          },
+          {
+            "category": "عمل اور رپورٹنگ",
+            "items": [
+              {
+                "question": "آپ مارکیٹنگ ROI اور attribution کو کیسے ناپتے ہیں؟",
+                "answer": "ہم multi-touch attribution ماڈل نافذ کرتے ہیں جو پہلے تعامل سے لے کر معاہدے تک ہر صارف کے رابطہ نقطے کو ٹریک کرتے ہیں۔"
+              },
+              {
+                "question": "ہمیں کارکردگی کی رپورٹس کتنی بار ملتی ہیں؟",
+                "answer": "آپ کو ماہانہ جامع رپورٹس ملتی ہیں۔ ہم روزمرہ کی نگرانی کے لیے real-time ڈیش بورڈ رسائی بھی فراہم کرتے ہیں۔"
+              },
+              {
+                "question": "کیا آپ اشتہاری تخلیقی اور مواد بناتے ہیں؟",
+                "answer": "ہم ہر چیز in-house سنبھالتے ہیں بشمول copywriting، graphic design، video editing۔"
+              }
+            ]
+          },
+          {
+            "category": "مل کر کام کرنا",
+            "items": [
+              {
+                "question": "ہمیں روزمرہ کی مارکیٹنگ عمل میں کتنی شمولیت کی ضرورت ہے؟",
+                "answer": "ہم آپ کی ٹیم کی توسیع کے طور پر کام کرتے ہیں۔ ہمیں ابتدائی حکمت عملی کی ہم آہنگی، مواد کی منظوریوں کے لیے آپ کی شمولیت کی ضرورت ہوتی ہے۔"
+              },
+              {
+                "question": "کیا آپ ہماری اندرونی مارکیٹنگ ٹیم کے ساتھ کام کر سکتے ہیں؟",
+                "answer": "بالکل۔ ہمارے بہت سے کلائنٹس کے اندرونی مارکیٹنگ وسائل ہیں۔ ہم بغیر رکاوٹ کے ضم ہو جاتے ہیں۔"
+              },
+              {
+                "question": "اگر کوئی مہم اچھی کارکردگی نہیں دکھا رہی تو کیا ہوتا ہے؟",
+                "answer": "کم کارکردگی ہمارا optimization پروٹوکول شروع کرتی ہے۔ ہم ڈیٹا کا تجزیہ کرتے ہیں اور تیز رفتار ٹیسٹ نافذ کرتے ہیں۔"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "e-commerce": {
+      "serviceName": "ای کامرس ڈویلپمنٹ",
+      "features": {
+        "headline": "طاقتور ای کامرس حل",
+        "subtitle": "ایسے اسٹورز بنائیں جو تبدیل کرتے ہیں",
+        "description": "ہم اعلیٰ کارکردگی والے آن لائن اسٹورز ڈیزائن اور تیار کرتے ہیں جو براؤزرز کو خریداروں میں تبدیل کرتے ہیں، شاندار ڈیزائن کو بغیر رکاوٹ چیک آؤٹ تجربات کے ساتھ ملاتے ہیں۔",
+        "items": [
+          {
+            "icon": "cart",
+            "title": "حسب ضرورت اسٹور فرنٹ ڈیزائن",
+            "description": "آپ کی برانڈ شناخت کے مطابق خوبصورت اسٹور فرنٹ اور زیادہ سے زیادہ تبادلوں کے لیے بہتر بنائے گئے۔",
+            "details": [
+              "جوابی پروڈکٹ کیٹلاگ بمع جدید فلٹرنگ اور تلاش",
+              "برانڈ کے مطابق بصری ڈیزائن",
+              "موسمی مہمات کے لیے A/B tested لینڈنگ صفحات"
+            ]
+          },
+          {
+            "icon": "lock",
+            "title": "محفوظ ادائیگی کا انضمام",
+            "description": "PCI-compliant ادائیگی کی کارروائی متعدد gateways اور عالمی کرنسیوں کی مدد کے ساتھ۔",
+            "details": [
+              "Stripe، PayPal اور علاقائی payment gateway انضمام",
+              "خودکار تبادلہ شرح کی تازہ کاریوں کے ساتھ کثیر کرنسی کی مدد",
+              "دھوکہ دہی کی پتہ لگانے اور chargeback روک تھام کے نظام"
+            ]
+          },
+          {
+            "icon": "database",
+            "title": "انوینٹری مینجمنٹ",
+            "description": "متعدد گوداموں اور فروخت کے چینلز میں real-time انوینٹری ٹریکنگ۔",
+            "details": [
+              "Multi-warehouse اسٹاک synchronization",
+              "خودکار کم اسٹاک alerts",
+              "Variant اور bundle management"
+            ]
+          },
+          {
+            "icon": "globe",
+            "title": "Multi-Channel فروخت",
+            "description": "اپنی ویب سائٹ، marketplaces اور سوشل میڈیا پر ایک یکجا ڈیش بورڈ سے بغیر رکاوٹ فروخت کریں۔",
+            "details": [
+              "Amazon، eBay اور Walmart marketplace integrations",
+              "Instagram، Facebook اور TikTok پر سوشل کامرس"
+            ]
+          },
+          {
+            "icon": "chart",
+            "title": "تجزیات اور رپورٹنگ",
+            "description": "صارف کے رویے کی ٹریکنگ اور آمدنی کی پیش گوئی کے ساتھ جامع فروخت کے تجزیات۔",
+            "details": [
+              "Real-time آمدنی، AOV اور conversion rate ڈیش بورڈز",
+              "صارف کی زندگی بھر کی قیمت اور cohort تجزیہ",
+              "Funnel drop-off تجزیہ"
+            ]
+          },
+          {
+            "icon": "users",
+            "title": "صارف اکاؤنٹ پورٹلز",
+            "description": "خود خدمت صارف پورٹلز بمع آرڈر کی تاریخ، wishlists، وفاداری پروگرام۔",
+            "details": [
+              "Real-time شپنگ اپ ڈیٹس کے ساتھ آرڈر ٹریکنگ",
+              "Wishlist، محفوظ کارٹس",
+              "وفاداری پوائنٹس اور حوالہ انعام کے نظام"
+            ]
+          },
+          {
+            "icon": "lightning",
+            "title": "کارکردگی کی اصلاح",
+            "description": "تیز رفتار صفحہ لوڈ اور ہموار تعاملات bounce rates کو کم کرنے کے لیے۔",
+            "details": [
+              "تصویر کی اصلاح بمع lazy loading اور CDN ترسیل",
+              "فوری پروڈکٹ صفحہ لوڈ کے لیے server-side rendering"
+            ]
+          },
+          {
+            "icon": "search",
+            "title": "SEO اور پروڈکٹ دریافت",
+            "description": "تلاش انجن بہتر بنائے گئے پروڈکٹ صفحات بمع ذہین سائٹ تلاش۔",
+            "details": [
+              "تلاش کے نتائج میں rich snippets کے لیے schema markup",
+              "AI-powered on-site تلاش",
+              "براؤزنگ تاریخ پر مبنی ذاتی پروڈکٹ کی سفارشات"
+            ]
+          }
+        ],
+        "stats": [
+          {
+            "label": "اوسط Conversion میں اضافہ",
+            "value": "67%"
+          },
+          {
+            "label": "شروع کیے گئے اسٹورز",
+            "value": "180+"
+          },
+          {
+            "label": "کل GMV پروسیس شدہ",
+            "value": "$50M+"
+          },
+          {
+            "label": "اوسط صفحہ لوڈ کا وقت",
+            "value": "1.2s"
+          }
+        ]
+      },
+      "process": {
+        "headline": "ہمارا ای کامرس ڈویلپمنٹ عمل",
+        "subtitle": "تصور سے تبادلوں تک",
+        "description": "ایک ثابت شدہ طریقہ کار جو آپ کے پروڈکٹ کیٹلاگ کو آمدنی پیدا کرنے والی مشین میں تبدیل کرتا ہے۔",
+        "steps": [
+          {
+            "title": "مارکیٹ اور حریف کا تجزیہ",
+            "description": "ہم آپ کی صنعت، حریفوں اور ہدف سامعین کی تحقیق کرتے ہیں۔",
+            "icon": "search",
+            "details": [
+              "مسابقتی منظر نامے کا آڈٹ",
+              "ہدف صارف persona ڈویلپمنٹ",
+              "پلیٹ فارم اور ٹیکنالوجی اسٹیک کی سفارش"
+            ]
+          },
+          {
+            "title": "UX ڈیزائن اور پروٹو ٹائپنگ",
+            "description": "Conversion پر توجہ مرکوز wireframes اور اعلیٰ وفاداری mockups۔",
+            "icon": "palette",
+            "details": [
+              "تمام کلیدی خریداری کے بہاؤ کے لیے Mobile-first wireframes",
+              "صارف ٹیسٹنگ sessions کے ساتھ تعاملی prototypes",
+              "مستقل برانڈ پیشکش کے لیے ڈیزائن سسٹم"
+            ]
+          },
+          {
+            "title": "اسٹور فرنٹ ڈویلپمنٹ",
+            "description": "حسب ضرورت خصوصیات کے ساتھ آپ کے اسٹور کی مکمل اسٹیک تعمیر۔",
+            "icon": "code",
+            "details": [
+              "Component-based frontend",
+              "ادائیگی gateway، شپنگ اور ٹیکس انجن سیٹ اپ"
+            ]
+          },
+          {
+            "title": "ٹیسٹنگ اور کوالٹی ایشورنس",
+            "description": "تمام آلات پر براؤزنگ سے چیک آؤٹ تک پورے خریداری کے تجربے کی سخت جانچ۔",
+            "icon": "check",
+            "details": [
+              "کراس براؤزر اور کراس ڈیوائس چیک آؤٹ فلو ٹیسٹنگ",
+              "سیلز events کے دوران ٹریفک spikes کو سنبھالنے کے لیے load ٹیسٹنگ",
+              "سیکیورٹی آڈٹ اور PCI compliance تصدیق"
+            ]
+          },
+          {
+            "title": "آغاز اور ترقی کی اصلاح",
+            "description": "اسٹریٹجک آغاز کے بعد مسلسل conversion rate optimization۔",
+            "icon": "rocket",
+            "details": [
+              "Real-time نگرانی ڈیش بورڈز کے ساتھ مرحلہ وار rollout",
+              "پروڈکٹ صفحات اور چیک آؤٹ پر آغاز کے بعد A/B ٹیسٹنگ",
+              "ترقی کی سفارشات کے ساتھ ماہانہ کارکردگی کے جائزے"
+            ]
+          }
+        ]
+      },
+      "techStack": {
+        "headline": "ای کامرس ٹیکنالوجی اسٹیک",
+        "subtitle": "ثابت شدہ پلیٹ فارمز پر بنایا گیا",
+        "description": "ہم صنعت کے معروف ای کامرس پلیٹ فارمز استعمال کرتے ہیں۔",
+        "categories": [
+          {
+            "category": "Frontend اور Frameworks",
+            "items": [
+              {
+                "name": "NextJS",
+                "description": "تیز رفتار صفحہ لوڈ کے لیے server-rendered React storefronts"
+              },
+              {
+                "name": "React",
+                "description": "تعاملی پروڈکٹ براؤزنگ تجربات کے لیے dynamic، component-based UI"
+              },
+              {
+                "name": "TailwindCSS",
+                "description": "تیزی سے حسب ضرورت، جوابی اسٹور ڈیزائن بنانے کے لیے"
+              },
+              {
+                "name": "TypeScript",
+                "description": "پیچیدہ کامرس منطق میں قابلیتِ اعتماد کو یقینی بناتے ہوئے"
+              }
+            ]
+          },
+          {
+            "category": "کامرس اور ادائیگیاں",
+            "items": [
+              {
+                "name": "Shopify",
+                "description": "وسیع app ecosystem کے ساتھ Enterprise-grade کامرس پلیٹ فارم"
+              },
+              {
+                "name": "Stripe",
+                "description": "subscriptions اور عالمی ادائیگیوں کی مدد کے ساتھ لچکدار"
+              },
+              {
+                "name": "WordPress",
+                "description": "مواد سے بھرپور کامرس تجربات کے لیے WooCommerce"
+              }
+            ]
+          },
+          {
+            "category": "Backend اور Infrastructure",
+            "items": [
+              {
+                "name": "NodeJS",
+                "description": "Real-time انوینٹری اور آرڈر پروسیسنگ کے لیے"
+              },
+              {
+                "name": "PostgreSQL",
+                "description": "پیچیدہ پروڈکٹ کیٹلاگ کے لیے"
+              },
+              {
+                "name": "Redis",
+                "description": "تیز رفتار کارٹ آپریشنز کے لیے"
+              },
+              {
+                "name": "AWS",
+                "description": "Peak ٹریفک کے ادوار کے لیے auto-scaling کے ساتھ"
+              }
+            ]
+          }
+        ]
+      },
+      "portfolio": {
+        "headline": "ای کامرس کامیابی کی کہانیاں",
+        "subtitle": "ایسے اسٹورز جو نتائج دیتے ہیں",
+        "description": "دیکھیں کہ ہم نے کس طرح مختلف صنعتوں میں برانڈز کو منافع بخش آن لائن اسٹورز شروع کرنے اور پیمانہ بڑھانے میں مدد کی ہے۔",
+        "items": [
+          {
+            "title": "پریمیم فیشن مارکیٹ پلیس",
+            "industry": "فیشن اور ملبوسات",
+            "challenge": "ایک لگژری فیشن برانڈ کو multi-vendor marketplace کی ضرورت تھی۔",
+            "solution": "ہم نے NextJS پر headless کامرس پلیٹ فارم بنایا۔",
+            "results": [
+              "پہلے چھ ماہ میں $2.4M GMV حاصل کیا",
+              "کارٹ ترک کرنے کی شرح 78% سے کم کر کے 34%",
+              "پہلے سہ ماہی میں 120 آزاد فروخت کنندگان کو شامل کیا"
+            ],
+            "stats": [
+              {
+                "label": "آمدنی میں اضافہ",
+                "value": "340%"
+              },
+              {
+                "label": "Conversion Rate",
+                "value": "4.8%"
+              }
+            ]
+          },
+          {
+            "title": "نامیاتی گروسری ترسیل پلیٹ فارم",
+            "industry": "کھانا اور مشروبات",
+            "challenge": "ایک علاقائی نامیاتی گروسری chain same-day ترسیل شروع کرنا چاہتا تھا۔",
+            "solution": "ہم نے real-time انوینٹری sync کے ساتھ حسب ضرورت ای کامرس پلیٹ فارم تیار کیا۔",
+            "results": [
+              "تین ماہ میں 8,000+ آرڈرز ہفتہ وار پروسیس کیے",
+              "چھ ماہ بعد subscription box retention rate 82%"
+            ],
+            "stats": [
+              {
+                "label": "ہفتہ وار آرڈرز",
+                "value": "8,000+"
+              },
+              {
+                "label": "Retention Rate",
+                "value": "82%"
+              }
+            ]
+          },
+          {
+            "title": "B2B صنعتی پرزہ جات اسٹور",
+            "industry": "مینوفیکچرنگ اور صنعتی",
+            "challenge": "ایک wholesale تقسیم کار کو B2B پورٹل کی ضرورت تھی۔",
+            "solution": "ہم نے role-based قیمتوں کے ساتھ حسب ضرورت B2B storefront بنایا۔",
+            "results": [
+              "آن لائن آرڈرز کل آمدنی کے 5% سے بڑھ کر 62%",
+              "اوسط آرڈر پروسیسنگ کا وقت 48 گھنٹے سے کم کر کے 15 منٹ",
+              "خود خدمت کے ذریعے صارف مدد کے ٹکٹ میں 45% کمی"
+            ],
+            "stats": [
+              {
+                "label": "آن لائن آمدنی کا حصہ",
+                "value": "62%"
+              },
+              {
+                "label": "پروسیسنگ وقت",
+                "value": "-97%"
+              }
+            ]
+          }
+        ],
+        "aggregateStats": [
+          {
+            "label": "شروع کیے گئے اسٹورز",
+            "value": "180+"
+          },
+          {
+            "label": "مشترکہ GMV",
+            "value": "$50M+"
+          },
+          {
+            "label": "اوسط ROI",
+            "value": "420%"
+          },
+          {
+            "label": "کلائنٹ اطمینان",
+            "value": "97%"
+          }
+        ]
+      },
+      "faq": {
+        "headline": "ای کامرس FAQ",
+        "subtitle": "عام سوالات کے جوابات",
+        "description": "ہماری ای کامرس ڈویلپمنٹ سروسز کے بارے میں جاننے کے لیے ہر چیز۔",
+        "categories": [
+          {
+            "category": "پلیٹ فارم اور ٹیکنالوجی",
+            "items": [
+              {
+                "question": "میرے کاروبار کے لیے کون سا ای کامرس پلیٹ فارم بہترین ہے؟",
+                "answer": "مثالی پلیٹ فارم آپ کے پیمانے، بجٹ اور ضروریات پر منحصر ہے۔ ہم عام طور پر تیز آغاز کے لیے Shopify، مواد سے بھرپور اسٹورز کے لیے WooCommerce تجویز کرتے ہیں۔"
+              },
+              {
+                "question": "کیا آپ میرے موجودہ اسٹور کو نئے پلیٹ فارم پر منتقل کر سکتے ہیں؟",
+                "answer": "جی ہاں، ہم مکمل خدمت کی منتقلیاں سنبھالتے ہیں بشمول پروڈکٹ ڈیٹا، صارف اکاؤنٹس، آرڈر تاریخ۔"
+              },
+              {
+                "question": "کیا آپ headless کامرس آرکیٹیکچر کی مدد کرتے ہیں؟",
+                "answer": "بالکل۔ ہم NextJS کو frontend کے طور پر استعمال کرتے ہوئے headless بلڈز میں مہارت رکھتے ہیں۔"
+              }
+            ]
+          },
+          {
+            "category": "ادائیگیاں اور سیکیورٹی",
+            "items": [
+              {
+                "question": "آپ کون سے ادائیگی کے طریقے integrate کر سکتے ہیں؟",
+                "answer": "ہم تمام بڑے payment processors بشمول Stripe، PayPal، Square integrate کرتے ہیں۔"
+              },
+              {
+                "question": "آپ PCI compliance کیسے یقینی بناتے ہیں؟",
+                "answer": "ہم تصدیق شدہ gateways کے ذریعے tokenized ادائیگی کی کارروائی استعمال کرتے ہیں۔"
+              },
+              {
+                "question": "کیا آپ بین الاقوامی ادائیگیاں اور کثیر کرنسی سیٹ اپ کر سکتے ہیں؟",
+                "answer": "جی ہاں، ہم خودکار تبادلہ شرح کی تازہ کاریوں کے ساتھ کثیر کرنسی storefronts configure کرتے ہیں۔"
+              }
+            ]
+          },
+          {
+            "category": "ترقی اور اصلاح",
+            "items": [
+              {
+                "question": "آپ conversion rates کو کیسے optimize کرتے ہیں؟",
+                "answer": "ہم ڈیٹا پر مبنی A/B ٹیسٹنگ، heatmap تجزیہ استعمال کرتے ہیں۔"
+              },
+              {
+                "question": "کیا آپ آغاز کے بعد مسلسل مدد فراہم کرتے ہیں؟",
+                "answer": "جی ہاں، ہم ماہانہ retainer منصوبے پیش کرتے ہیں۔"
+              },
+              {
+                "question": "کیا آپ میرے موجودہ ERP یا CRM کے ساتھ integrate کر سکتے ہیں؟",
+                "answer": "ہم مشہور ERPs جیسے SAP، NetSuite کے ساتھ حسب ضرورت integrations بناتے ہیں۔"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "machine-learning": {
+      "serviceName": "مشین لرننگ حل",
+      "features": {
+        "headline": "ذہین مشین لرننگ حل",
+        "subtitle": "AI جو حقیقی کاروباری قدر فراہم کرتا ہے",
+        "description": "ہم پروڈکشن گریڈ مشین لرننگ سسٹمز بناتے اور deploy کرتے ہیں جو فیصلوں کو خودکار کرتے، بصیرتیں دریافت کرتے اور آپ کے کاروبار کے لیے مسابقتی فوائد پیدا کرتے ہیں۔",
+        "items": [
+          {
+            "icon": "brain",
+            "title": "پیشن گوئی کا تجزیہ",
+            "description": "مانگ، churn، آمدنی اور مارکیٹ رجحانات کی پیشن گوئی آپ کے مخصوص کاروباری ڈیٹا کے مطابق تربیت یافتہ حسب ضرورت ماڈلز کے ساتھ۔",
+            "details": [
+              "مانگ کی منصوبہ بندی اور انوینٹری optimization کے لیے وقت کی سیریز کی پیشن گوئی",
+              "قابلِ عمل retention triggers کے ساتھ صارف churn کی پیشن گوئی",
+              "اعتماد کے وقفوں کے ساتھ آمدنی اور ترقی کی پیشن گوئیاں"
+            ]
+          },
+          {
+            "icon": "search",
+            "title": "قدرتی زبان کی کارروائی",
+            "description": "جذبات کے تجزیہ، entity کی شناخت، دستاویز کی درجہ بندی اور بات چیت AI کے ساتھ متن کے ڈیٹا سے معنی نکالیں۔",
+            "details": [
+              "صارفین کے جائزوں اور سوشل میڈیا کی نگرانی کے لیے جذبات کا تجزیہ",
+              "خودکار دستاویز کی کارروائی کے لیے named entity کی شناخت",
+              "LLMs استعمال کرتے ہوئے حسب ضرورت chatbots اور سوال جواب کے نظام"
+            ]
+          },
+          {
+            "icon": "eye",
+            "title": "کمپیوٹر وژن",
+            "description": "مینوفیکچرنگ، خوردہ اور صحت کی دیکھ بھال کی ایپلیکیشنز کے لیے خودکار بصری معائنہ، شے کی پتہ لگانے اور تصویر کی درجہ بندی۔",
+            "details": [
+              "مینوفیکچرنگ معیار کنٹرول پائپ لائنز کے لیے نقص کی پتہ لگانا",
+              "خوردہ تجزیات کے لیے پروڈکٹ کی شناخت اور شیلف تجزیہ"
+            ]
+          },
+          {
+            "icon": "chart",
+            "title": "سفارش کے انجن",
+            "description": "ذاتی سفارش کے نظام جو engagement، کراس سیل مواقع اور صارف کی زندگی بھر کی قیمت میں اضافہ کرتے ہیں۔",
+            "details": [
+              "تعاونی اور مواد پر مبنی فلٹرنگ algorithms",
+              "Sub-50ms latency کے ساتھ real-time سفارش serving",
+              "صارف کے تعامل کے ڈیٹا پر مسلسل ماڈل کی دوبارہ تربیت"
+            ]
+          },
+          {
+            "icon": "sparkles",
+            "title": "بے ضابطگی کی پتہ لگانا",
+            "description": "مالیاتی، operational اور سیکیورٹی ڈیٹا میں دھوکہ دہی، سسٹم کی ناکامیوں اور غیر معمولی نمونوں کی real time میں نشاندہی کریں۔",
+            "details": [
+              "Real-time اسکورنگ کے ساتھ لین دین دھوکہ دہی کی پتہ لگانا",
+              "فعال incident response کے لیے انفراسٹرکچر بے ضابطگی کی پتہ لگانا",
+              "مینوفیکچرنگ معیار کی یقین دہانی کے لیے شماریاتی عمل کنٹرول"
+            ]
+          },
+          {
+            "icon": "cog",
+            "title": "MLOps اور ماڈل مینجمنٹ",
+            "description": "پروڈکشن ماحول میں ماڈلز کی تربیت، ورژننگ، deployment اور نگرانی کے لیے end-to-end ML انفراسٹرکچر۔",
+            "details": [
+              "تجربے کی ٹریکنگ کے ساتھ خودکار ماڈل تربیت کی پائپ لائنز",
+              "محفوظ ماڈل rollouts کے لیے A/B ٹیسٹنگ فریم ورک",
+              "Drift detection alerts کے ساتھ ماڈل کی کارکردگی کی نگرانی"
+            ]
+          },
+          {
+            "icon": "database",
+            "title": "ڈیٹا پائپ لائن انجینئرنگ",
+            "description": "مضبوط ڈیٹا پائپ لائنز جو بڑے پیمانے پر تربیتی ڈیٹا جمع، صاف، تبدیل اور فراہم کرتی ہیں۔",
+            "details": [
+              "منظم اور غیر منظم ڈیٹا کے ذرائع کے لیے ETL پائپ لائنز",
+              "ماڈلز میں مستقل feature engineering کے لیے feature stores"
+            ]
+          },
+          {
+            "icon": "shield",
+            "title": "ذمہ دار AI اور گورننس",
+            "description": "تعصب کا آڈٹ، وضاحت کے ٹولز اور گورننس فریم ورکس جو یقینی بناتے ہیں کہ آپ کے AI نظام منصفانہ، شفاف اور compliant ہیں۔",
+            "details": [
+              "SHAP اور LIME کے ساتھ ماڈل کی وضاحت کے ڈیش بورڈز",
+              "محفوظ attributes میں تعصب کی پتہ لگانا اور تخفیف",
+              "GDPR اور صنعتی معیارات کے لیے ریگولیٹری compliance دستاویزات"
+            ]
+          }
+        ],
+        "stats": [
+          {
+            "label": "Deploy شدہ ماڈلز",
+            "value": "200+"
+          },
+          {
+            "label": "پیشن گوئی کی درستگی",
+            "value": "94%+"
+          },
+          {
+            "label": "پروسیس شدہ ڈیٹا پوائنٹس",
+            "value": "5B+"
+          },
+          {
+            "label": "فراہم کردہ لاگت کی بچت",
+            "value": "$30M+"
+          }
+        ]
+      },
+      "process": {
+        "headline": "ہمارا مشین لرننگ عمل",
+        "subtitle": "خام ڈیٹا سے پروڈکشن ماڈلز تک",
+        "description": "ایک سخت، تکراری طریقہ کار جو یقینی بناتا ہے کہ آپ کی ML سرمایہ کاری قابلِ پیمائش کاروباری نتائج فراہم کرے۔",
+        "steps": [
+          {
+            "title": "مسئلے کی تشکیل اور ڈیٹا آڈٹ",
+            "description": "ہم stakeholders کے ساتھ کام کرتے ہیں تاکہ کاروباری مسئلے کو ایک مشین لرننگ کام کے طور پر بیان کریں۔",
+            "icon": "search",
+            "details": [
+              "کاروباری مقصد کا ترجمہ قابلِ پیمائش ML metrics میں",
+              "ڈیٹا کی دستیابی کی تشخیص اور خلا کا تجزیہ",
+              "متوقع ROI پیشن گوئیوں کے ساتھ فزیبلٹی اسٹڈی"
+            ]
+          },
+          {
+            "title": "ڈیٹا انجینئرنگ اور Feature ڈویلپمنٹ",
+            "description": "ہم ڈیٹا پائپ لائنز بناتے ہیں، خام ڈیٹا کو صاف اور تبدیل کرتے ہیں۔",
+            "icon": "database",
+            "details": [
+              "ڈیٹا کی صفائی، deduplication اور معیار کی توثیق",
+              "Domain مخصوص تبدیلیوں کے ساتھ feature engineering",
+              "مناسب splits کے ساتھ تربیت اور تشخیص dataset کی تخلیق"
+            ]
+          },
+          {
+            "title": "ماڈل ڈویلپمنٹ اور تجربہ",
+            "description": "ہم متعدد ماڈل آرکیٹیکچرز کی تربیت اور تشخیص کرتے ہیں۔",
+            "icon": "brain",
+            "details": [
+              "Algorithm خاندانوں میں منظم تجربہ",
+              "Bayesian optimization کے ساتھ hyperparameter tuning"
+            ]
+          },
+          {
+            "title": "پروڈکشن Deployment",
+            "description": "ہم ماڈلز کو قابلِ توسیع APIs یا embedded سسٹمز کے طور پر deploy کرتے ہیں۔",
+            "icon": "rocket",
+            "details": [
+              "Auto-scaling انفراسٹرکچر کے ساتھ containerized ماڈل serving",
+              "خودکار ماڈل توثیق اور deployment کے لیے CI/CD پائپ لائنز",
+              "Real-time اور batch پیشن گوئی endpoint configuration"
+            ]
+          },
+          {
+            "title": "نگرانی اور مسلسل بہتری",
+            "description": "ہم پروڈکشن میں ماڈل کی کارکردگی کی نگرانی کرتے ہیں۔",
+            "icon": "chart",
+            "details": [
+              "Alerting thresholds کے ساتھ خودکار drift detection",
+              "تازہ ڈیٹا پر شیڈیول شدہ ماڈل کی دوبارہ تربیت",
+              "کاروباری اثر کی ٹریکنگ کے ساتھ کارکردگی ڈیش بورڈز"
+            ]
+          }
+        ]
+      },
+      "techStack": {
+        "headline": "مشین لرننگ ٹیکنالوجی اسٹیک",
+        "subtitle": "صنعت کے معروف ML فریم ورکس",
+        "description": "ہم بہترین ٹولز اور فریم ورکس استعمال کرتے ہیں۔",
+        "categories": [
+          {
+            "category": "ML فریم ورکس",
+            "items": [
+              {
+                "name": "TensorFlow",
+                "description": "بڑے پیمانے پر deep learning ماڈلز بنانے کے لیے end-to-end ML پلیٹ فارم"
+              },
+              {
+                "name": "PyTorch",
+                "description": "تحقیق اور تیز رفتار prototyping کے لیے لچکدار deep learning فریم ورک"
+              },
+              {
+                "name": "scikit-learn",
+                "description": "کلاسیکی ML algorithms اور ڈیٹا preprocessing کے لیے جامع لائبریری"
+              },
+              {
+                "name": "Keras",
+                "description": "تیز رفتار neural network تجربہ کے لیے high-level API"
+              }
+            ]
+          },
+          {
+            "category": "NLP اور خصوصی",
+            "items": [
+              {
+                "name": "Hugging Face",
+                "description": "NLP، vision اور multi-modal کاموں کے لیے جدید transformer ماڈلز"
+              },
+              {
+                "name": "Python",
+                "description": "ڈیٹا سائنس اور مشین لرننگ workflows کے لیے بنیادی زبان"
+              },
+              {
+                "name": "FastAPI",
+                "description": "ML ماڈل کی پیشن گوئیاں serve کرنے کے لیے high-performance API فریم ورک"
+              }
+            ]
+          },
+          {
+            "category": "Infrastructure اور ڈیٹا",
+            "items": [
+              {
+                "name": "AWS",
+                "description": "منظم ML تربیت اور deployment کے لیے SageMaker کے ساتھ Cloud انفراسٹرکچر"
+              },
+              {
+                "name": "Docker",
+                "description": "دوبارہ تیار ہونے والی تربیت اور serving کے لیے containerized ماڈل ماحول"
+              },
+              {
+                "name": "PostgreSQL",
+                "description": "ML تجربے کی ٹریکنگ کے لیے feature store اور metadata management"
+              },
+              {
+                "name": "Redis",
+                "description": "کم latency feature serving اور ماڈل پیشن گوئی caching"
+              }
+            ]
+          }
+        ]
+      },
+      "portfolio": {
+        "headline": "مشین لرننگ کیس اسٹڈیز",
+        "subtitle": "پروڈکشن میں AI حل",
+        "description": "جانیں کہ کیسے ہمارے ML حل مختلف صنعتوں میں قابلِ پیمائش کاروباری اثر فراہم کر رہے ہیں۔",
+        "items": [
+          {
+            "title": "فلیٹ مینجمنٹ کے لیے پیشن گوئی کی دیکھ بھال",
+            "industry": "لاجسٹکس اور نقل و حمل",
+            "challenge": "2,000+ گاڑیوں والی logistics کمپنی غیر منصوبہ بند خرابیوں سے سالانہ $4M کھو رہی تھی۔",
+            "solution": "ہم نے sensor telemetry ڈیٹا استعمال کرتے ہوئے پیشن گوئی کی دیکھ بھال کا نظام بنایا۔",
+            "results": [
+              "پہلے سال میں غیر منصوبہ بند downtime میں 73% کمی",
+              "سالانہ دیکھ بھال کی لاگت میں $2.8M کی بچت",
+              "گاڑیوں کی دستیابی 84% سے بڑھ کر 96%"
+            ],
+            "stats": [
+              {
+                "label": "Downtime میں کمی",
+                "value": "73%"
+              },
+              {
+                "label": "سالانہ بچت",
+                "value": "$2.8M"
+              }
+            ]
+          },
+          {
+            "title": "Real-Time دھوکہ دہی کی پتہ لگانے کا نظام",
+            "industry": "مالیاتی خدمات",
+            "challenge": "ایک fintech کو 500K روزانہ لین دین کی processing میں دھوکہ دہی کے نقصانات کو کم کرنا تھا۔",
+            "solution": "ہم نے gradient boosting اور neural networks کو ملاتے ہوئے ensemble ماڈل تیار کیا۔",
+            "results": [
+              "دھوکہ دہی کی پتہ لگانے کی شرح 67% سے بہتر کر کے 94%",
+              "False positive rate میں 58% کمی"
+            ],
+            "stats": [
+              {
+                "label": "Detection Rate",
+                "value": "94%"
+              },
+              {
+                "label": "Latency",
+                "value": "<50ms"
+              }
+            ]
+          },
+          {
+            "title": "صارف Churn پیشن گوئی پلیٹ فارم",
+            "industry": "SaaS اور ٹیکنالوجی",
+            "challenge": "15,000 اکاؤنٹس کے ساتھ B2B SaaS کمپنی کی سالانہ churn rate 18% تھی۔",
+            "solution": "ہم نے پروڈکٹ استعمال کے ڈیٹا استعمال کرتے ہوئے churn پیشن گوئی ماڈل بنایا۔",
+            "results": [
+              "منسوخی سے 60+ دن پہلے 82% churn کرنے والے صارفین کی نشاندہی کی",
+              "ہدف بند retention مہمات نے churn کو 18% سے کم کر کے 11%",
+              "سالانہ recurring آمدنی میں تخمینی $3.2M کی بچت"
+            ],
+            "stats": [
+              {
+                "label": "Churn میں کمی",
+                "value": "39%"
+              },
+              {
+                "label": "ARR محفوظ",
+                "value": "$3.2M"
+              }
+            ]
+          }
+        ],
+        "aggregateStats": [
+          {
+            "label": "پروڈکشن میں ماڈلز",
+            "value": "200+"
+          },
+          {
+            "label": "اوسط درستگی",
+            "value": "94%+"
+          },
+          {
+            "label": "کلائنٹ لاگت کی بچت",
+            "value": "$30M+"
+          },
+          {
+            "label": "خدمت کردہ صنعتیں",
+            "value": "15+"
+          }
+        ]
+      },
+      "faq": {
+        "headline": "مشین لرننگ FAQ",
+        "subtitle": "آپ کے ML سوالات کے جوابات",
+        "description": "فزیبلٹی سے لے کر deployment اور جاری دیکھ بھال تک ہماری مشین لرننگ سروسز کے بارے میں عام سوالات۔",
+        "categories": [
+          {
+            "category": "شروعات کرنا",
+            "items": [
+              {
+                "question": "میں کیسے جان سکتا ہوں کہ میرا کاروباری مسئلہ مشین لرننگ کے لیے موزوں ہے؟",
+                "answer": "اچھے ML امیدوار بار بار فیصلے، بڑی ڈیٹا مقدار اور واضح کامیابی کے metrics شامل ہیں۔ ہم مفت فزیبلٹی تشخیص پیش کرتے ہیں۔"
+              },
+              {
+                "question": "شروع کرنے کے لیے مجھے کتنے ڈیٹا کی ضرورت ہے؟",
+                "answer": "یہ مسئلے کی پیچیدگی پر منحصر ہے۔ سادہ classification کاموں کو چند ہزار labeled مثالوں کی ضرورت ہو سکتی ہے۔"
+              },
+              {
+                "question": "عام ML پراجیکٹ میں کتنا وقت لگتا ہے؟",
+                "answer": "ایک proof-of-concept عام طور پر 4-8 ہفتے لیتا ہے، جبکہ مکمل پروڈکشن deployment 3-6 ماہ تک ہوتی ہے۔"
+              }
+            ]
+          },
+          {
+            "category": "تکنیکی اور Deployment",
+            "items": [
+              {
+                "question": "کیا ML ماڈلز ہماری ایپلیکیشن کے لیے real time میں چل سکتے ہیں؟",
+                "answer": "جی ہاں، ہم کم latency ماڈل serving میں مہارت رکھتے ہیں۔ ہمارے زیادہ تر پروڈکشن ماڈلز 50ms سے کم میں جواب دیتے ہیں۔"
+              },
+              {
+                "question": "آپ وقت کے ساتھ ماڈل کی درستگی میں کمی کو کیسے سنبھالتے ہیں؟",
+                "answer": "ہم خودکار نگرانی نافذ کرتے ہیں جو پیشن گوئی کی درستگی، ڈیٹا drift اور concept drift کو ٹریک کرتی ہے۔"
+              },
+              {
+                "question": "کیا آپ ML ماڈلز کو ہمارے موجودہ سسٹمز کے ساتھ integrate کر سکتے ہیں؟",
+                "answer": "بالکل۔ ہم ماڈلز کو REST APIs کے طور پر deploy کرتے ہیں یا انہیں batch processing پائپ لائنز میں embed کرتے ہیں۔"
+              }
+            ]
+          },
+          {
+            "category": "لاگت اور ROI",
+            "items": [
+              {
+                "question": "ML پراجیکٹ کا عام ROI کیا ہے؟",
+                "answer": "ہمارے کلائنٹس عام طور پر پہلے سال میں 3-10x ROI دیکھتے ہیں۔ واپسی آٹومیشن کے ذریعے لاگت کی بچت، personalization سے آمدنی میں اضافے سے آتی ہے۔"
+              },
+              {
+                "question": "پروڈکشن میں ML چلانے کے جاری اخراجات کیا ہیں؟",
+                "answer": "جاری اخراجات میں ماڈل serving کے لیے cloud compute، ڈیٹا اسٹوریج اور وقتاً فوقتاً دوبارہ تربیت شامل ہیں۔"
+              },
+              {
+                "question": "کیا آپ مکمل سرمایہ کاری سے پہلے proof-of-concept مرحلہ پیش کرتے ہیں؟",
+                "answer": "جی ہاں، ہم ہمیشہ مرکوز POC سے شروع کرنے کی سفارش کرتے ہیں جو ڈیٹا کے ایک ذیلی سیٹ پر approach کی توثیق کرتا ہے۔"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "python-automation": {
+      "serviceName": "Python آٹومیشن",
+      "features": {
+        "headline": "ذہین Python آٹومیشن",
+        "subtitle": "ہر چیز خودکار کریں جو آپ کو سست کرتی ہے",
+        "description": "ہم حسب ضرورت Python آٹومیشن حل بناتے ہیں جو دستی کاموں کو ختم کرتے، کارروائیوں کو ہموار کرتے اور آپ کی ٹیم کو اعلیٰ قدر کے کام پر توجہ مرکوز کرنے کے لیے آزاد کرتے ہیں۔",
+        "items": [
+          {
+            "icon": "cog",
+            "title": "ورک فلو آٹومیشن",
+            "description": "بار بار کاروباری عملوں کی end-to-end آٹومیشن ڈیٹا اندراج سے رپورٹ کی تخلیق اور آگے تک۔",
+            "details": [
+              "خرابی سنبھالنے اور دوبارہ کوششوں کے ساتھ multi-step ورک فلو orchestration",
+              "ای میل parsing، دستاویز کی کارروائی اور خودکار جوابات",
+              "شیڈیول شدہ اور event-triggered آٹومیشن پائپ لائنز"
+            ]
+          },
+          {
+            "icon": "database",
+            "title": "ڈیٹا پائپ لائن آٹومیشن",
+            "description": "خودکار ETL پائپ لائنز جو کسی بھی ذریعہ سے کسی بھی منزل تک ڈیٹا جمع، صاف، تبدیل اور فراہم کرتی ہیں۔",
+            "details": [
+              "100+ ذرائع سے API، database اور file-based ڈیٹا نکالنا",
+              "ڈیٹا کی توثیق، deduplication اور معیار کی جانچ",
+              "ڈیٹا گوداموں اور تجزیات کے پلیٹ فارمز میں خودکار loading"
+            ]
+          },
+          {
+            "icon": "document",
+            "title": "رپورٹ کی تخلیق",
+            "description": "خام ڈیٹا کے ذرائع سے کاروباری رپورٹس، ڈیش بورڈز اور ایگزیکٹو خلاصوں کی خودکار تخلیق۔",
+            "details": [
+              "حسب ضرورت branding کے ساتھ PDF، Excel اور HTML رپورٹ کی تخلیق",
+              "زندہ ڈیٹا سے خودکار چارٹ اور visualization کی تخلیق"
+            ]
+          },
+          {
+            "icon": "globe",
+            "title": "ویب Scraping اور ڈیٹا جمع کرنا",
+            "description": "قابلِ اعتماد ویب scraping حل جو بڑے پیمانے پر ویب سائٹس، APIs اور آن لائن پلیٹ فارمز سے منظم ڈیٹا جمع کرتے ہیں۔",
+            "details": [
+              "Proxy rotation اور rate limiting کے ساتھ anti-detection scraping",
+              "JavaScript بھاری ویب سائٹس کے لیے dynamic صفحہ rendering",
+              "توثیق اور deduplication کے ساتھ منظم ڈیٹا نکالنا"
+            ]
+          },
+          {
+            "icon": "cloud",
+            "title": "Cloud اور انفراسٹرکچر آٹومیشن",
+            "description": "Cloud وسائل اور ترقیاتی انفراسٹرکچر کی خودکار provisioning، deployment اور مینجمنٹ۔",
+            "details": [
+              "خودکار provisioning scripts کے ساتھ infrastructure-as-code",
+              "ٹیسٹنگ اور deployment کے لیے CI/CD پائپ لائن آٹومیشن",
+              "خودکار backup، نگرانی اور scaling operations"
+            ]
+          },
+          {
+            "icon": "lightning",
+            "title": "سسٹم انضمام",
+            "description": "حسب ضرورت API integrations کے ساتھ مختلف سسٹمز کو جوڑیں جو آپ کے ٹولز اور ڈیٹا کو کامل ہم آہنگی میں رکھتے ہیں۔",
+            "details": [
+              "Authentication سنبھالنے کے ساتھ REST اور GraphQL API انضمام",
+              "SaaS پلیٹ فارمز کے درمیان دو طرفہ ڈیٹا sync",
+              "Webhook listeners اور event-driven processing پائپ لائنز"
+            ]
+          },
+          {
+            "icon": "chat",
+            "title": "Bot اور اطلاع آٹومیشن",
+            "description": "Slack، Teams، Discord اور ای میل کے لیے حسب ضرورت bots جو اطلاعات، منظوریاں اور معمول کے کاموں کو خودکار کرتے ہیں۔",
+            "details": [
+              "خودکار alerts اور منظوریوں کے لیے Slack اور Teams bots",
+              "ہوشمند templates اور مشروط منطق کے ساتھ ای میل آٹومیشن"
+            ]
+          },
+          {
+            "icon": "wrench",
+            "title": "ٹیسٹنگ آٹومیشن",
+            "description": "ویب ایپلیکیشنز، APIs اور ڈیٹا پائپ لائنز کے لیے خودکار ٹیسٹنگ فریم ورکس تاکہ ہر ریلیز میں معیار کو یقینی بنایا جائے۔",
+            "details": [
+              "Selenium اور Playwright کے ساتھ end-to-end براؤزر ٹیسٹنگ",
+              "API contract ٹیسٹنگ اور integration test suites",
+              "ڈیٹا پائپ لائن کی توثیق اور regression ٹیسٹنگ فریم ورکس"
+            ]
+          }
+        ],
+        "stats": [
+          {
+            "label": "ماہانہ بچائے گئے گھنٹے",
+            "value": "50K+"
+          },
+          {
+            "label": "بنائی گئی آٹومیشنز",
+            "value": "500+"
+          },
+          {
+            "label": "اوسط وقت کی بچت",
+            "value": "85%"
+          },
+          {
+            "label": "خرابی کی شرح میں کمی",
+            "value": "96%"
+          }
+        ]
+      },
+      "process": {
+        "headline": "ہمارا آٹومیشن عمل",
+        "subtitle": "دستی تکلیف سے خودکار فائدے تک",
+        "description": "آٹومیشن کی نشاندہی، تعمیر اور پیمانہ بڑھانے کا ایک منظم طریقہ جو فوری وقت کی بچت اور طویل مدتی operational کارکردگی فراہم کرتا ہے۔",
+        "steps": [
+          {
+            "title": "عمل کی دریافت اور آڈٹ",
+            "description": "ہم آپ کے موجودہ ورک فلو کا نقشہ بناتے ہیں، آٹومیشن کے مواقع کی نشاندہی کرتے ہیں۔",
+            "icon": "search",
+            "details": [
+              "دستی ورک فلو کی دستاویز کے لیے stakeholder انٹرویوز",
+              "آٹومیشن ROI کی مقداری تعیین کے لیے وقت اور حرکت کا تجزیہ",
+              "اثر اور فزیبلٹی کے لحاظ سے مواقع کی درجہ بندی کرتے ہوئے priority matrix"
+            ]
+          },
+          {
+            "title": "حل کا آرکیٹیکچر",
+            "description": "ہم آٹومیشن آرکیٹیکچر ڈیزائن کرتے ہیں بشمول ڈیٹا کے بہاؤ، خرابی سنبھالنے، شیڈولنگ۔",
+            "icon": "code",
+            "details": [
+              "سسٹم انضمام کی نقشہ سازی اور API دستاویزات کا جائزہ",
+              "خرابی سنبھالنے اور دوبارہ کوشش کی حکمت عملی کا ڈیزائن"
+            ]
+          },
+          {
+            "title": "ڈویلپمنٹ اور انضمام",
+            "description": "ہم آٹومیشن scripts بناتے ہیں، آپ کے سسٹمز سے جوڑتے ہیں۔",
+            "icon": "wrench",
+            "details": [
+              "صاف، قابلِ دیکھ بھال آرکیٹیکچر کے ساتھ ماڈیولر Python scripts",
+              "Authentication اور rate limit سنبھالنے کے ساتھ API integrations",
+              "جامع logging اور خرابی کی اطلاع کا سیٹ اپ"
+            ]
+          },
+          {
+            "title": "ٹیسٹنگ اور توثیق",
+            "description": "ہم ہر آٹومیشن راستے کی سختی سے جانچ کرتے ہیں۔",
+            "icon": "check",
+            "details": [
+              "تمام آٹومیشن اجزاء کے لیے unit اور integration ٹیسٹنگ",
+              "Edge case اور ناکامی کے منظر نامے کی ٹیسٹنگ",
+              "درستگی کی توثیق کے لیے دستی عمل کے ساتھ متوازی چلانا"
+            ]
+          },
+          {
+            "title": "Deployment اور نگرانی",
+            "description": "ہم آٹومیشنز کو پروڈکشن میں deploy کرتے ہیں۔",
+            "icon": "rocket",
+            "details": [
+              "شیڈیول شدہ execution سیٹ اپ کے ساتھ پروڈکشن deployment",
+              "کامیابی کی شرح اور خرابی کی ٹریکنگ کے ساتھ نگرانی ڈیش بورڈز",
+              "ٹیم کی تربیت اور جامع runbook دستاویزات"
+            ]
+          }
+        ]
+      },
+      "techStack": {
+        "headline": "Python آٹومیشن ٹیک اسٹیک",
+        "subtitle": "جنگ میں آزمودہ Python ٹولز",
+        "description": "ہم سب سے قابلِ اعتماد Python لائبریریاں اور فریم ورکس استعمال کرتے ہیں۔",
+        "categories": [
+          {
+            "category": "Core Python اور فریم ورکس",
+            "items": [
+              {
+                "name": "Python",
+                "description": "ہماری تمام آٹومیشن حلوں کی ریڑھ کی ہڈی"
+              },
+              {
+                "name": "FastAPI",
+                "description": "آٹومیشن سروس endpoints بنانے کے لیے high-performance API فریم ورک"
+              },
+              {
+                "name": "Django",
+                "description": "آٹومیشن ڈیش بورڈز اور admin interfaces کے لیے مکمل featured ویب فریم ورک"
+              },
+              {
+                "name": "Flask",
+                "description": "سادہ webhook receivers اور microservices کے لیے ہلکا پھلکا فریم ورک"
+              }
+            ]
+          },
+          {
+            "category": "ڈیٹا اور پروسیسنگ",
+            "items": [
+              {
+                "name": "PostgreSQL",
+                "description": "آٹومیشن کی حالت کی مینجمنٹ اور آڈٹ logging کے لیے قابلِ اعتماد database"
+              },
+              {
+                "name": "MongoDB",
+                "description": "غیر منظم آٹومیشن ڈیٹا کے لیے لچکدار document اسٹوریج"
+              },
+              {
+                "name": "Redis",
+                "description": "اعلیٰ throughput آٹومیشن پائپ لائنز کے لیے task queuing اور caching"
+              }
+            ]
+          },
+          {
+            "category": "Infrastructure",
+            "items": [
+              {
+                "name": "Docker",
+                "description": "ہر جگہ مستقل execution کے لیے containerized آٹومیشن ماحول"
+              },
+              {
+                "name": "AWS",
+                "description": "Serverless آٹومیشن hosting کے لیے cloud functions اور شیڈیول شدہ کام"
+              },
+              {
+                "name": "NodeJS",
+                "description": "Webhook پروسیسنگ اور real-time integrations کے لیے event-driven سروسز"
+              }
+            ]
+          }
+        ]
+      },
+      "portfolio": {
+        "headline": "آٹومیشن کامیابی کی کہانیاں",
+        "subtitle": "حقیقی آٹومیشنز سے حقیقی نتائج",
+        "description": "دیکھیں کہ کیسے ہمارے Python آٹومیشن حلوں نے مختلف صنعتوں میں کاروباروں کے لیے operations کو تبدیل کیا ہے۔",
+        "items": [
+          {
+            "title": "مالیاتی رپورٹنگ آٹومیشن",
+            "industry": "اکاؤنٹنگ اور مالیات",
+            "challenge": "ایک درمیانے سائز کی اکاؤنٹنگ فرم 80 کلائنٹس کے لیے پانچ مختلف ڈیٹا ذرائع سے ماہانہ 200+ گھنٹے دستی طور پر مالیاتی رپورٹس مرتب کرنے میں صرف کرتی تھی۔",
+            "solution": "ہم نے ایک خودکار پائپ لائن بنائی جو QuickBooks، bank APIs اور spreadsheets سے ڈیٹا کھینچتی ہے۔",
+            "results": [
+              "رپورٹ کی تخلیق کا وقت فی کلائنٹ 2.5 گھنٹے سے کم کر کے 4 منٹ",
+              "ٹیم بھر میں ماہانہ 190 گھنٹے کی بچت",
+              "ڈیٹا کی درستگی 94% سے بہتر کر کے 99.8%"
+            ],
+            "stats": [
+              {
+                "label": "وقت کی بچت",
+                "value": "97%"
+              },
+              {
+                "label": "درستگی",
+                "value": "99.8%"
+              }
+            ]
+          },
+          {
+            "title": "ای کامرس انوینٹری Sync",
+            "industry": "خوردہ اور ای کامرس",
+            "challenge": "Amazon، Shopify اور eBay پر فروخت کرنے والے multi-channel خوردہ فروش کو مسلسل overselling کے مسائل تھے۔",
+            "solution": "ہم نے ایک real-time انوینٹری synchronization نظام تیار کیا۔",
+            "results": [
+              "Overselling واقعات ماہانہ 45 سے کم ہو کر صفر",
+              "انوینٹری اپ ڈیٹ latency 4 گھنٹے سے کم کر کے 10 سیکنڈ سے کم"
+            ],
+            "stats": [
+              {
+                "label": "Overselling",
+                "value": "0/month"
+              },
+              {
+                "label": "Sync Latency",
+                "value": "<10s"
+              }
+            ]
+          },
+          {
+            "title": "HR Onboarding آٹومیشن",
+            "industry": "انسانی وسائل",
+            "challenge": "ایک بڑھتی ہوئی ٹیک کمپنی ماہانہ 30+ ملازمین کی onboarding میں چھ مختلف HR، IT اور مواصلاتی پلیٹ فارمز میں دستی کاموں میں ڈوب رہی تھی۔",
+            "solution": "ہم نے پوری onboarding ورک فلو کو خودکار کیا۔",
+            "results": [
+              "Onboarding سیٹ اپ کا وقت فی hire 3 گھنٹے سے کم کر کے 8 منٹ",
+              "نئے hire کی اطمینان کے اسکور میں 34% اضافہ",
+              "آٹومیشن deployment کے بعد سے صفر چھوٹے ہوئے onboarding قدم"
+            ],
+            "stats": [
+              {
+                "label": "سیٹ اپ کا وقت",
+                "value": "-96%"
+              },
+              {
+                "label": "تکمیل کی شرح",
+                "value": "100%"
+              }
+            ]
+          }
+        ],
+        "aggregateStats": [
+          {
+            "label": "Deploy شدہ آٹومیشنز",
+            "value": "500+"
+          },
+          {
+            "label": "ماہانہ بچائے گئے گھنٹے",
+            "value": "50K+"
+          },
+          {
+            "label": "خرابی میں کمی",
+            "value": "96%"
+          },
+          {
+            "label": "کلائنٹ retention",
+            "value": "98%"
+          }
+        ]
+      },
+      "faq": {
+        "headline": "Python آٹومیشن FAQ",
+        "subtitle": "آٹومیشن کے سوالات کے جوابات",
+        "description": "ہماری Python آٹومیشن سروسز کے بارے میں جاننے کے لیے ہر چیز۔",
+        "categories": [
+          {
+            "category": "فزیبلٹی اور دائرہ کار",
+            "items": [
+              {
+                "question": "Python کے ساتھ کس قسم کے کام خودکار کیے جا سکتے ہیں؟",
+                "answer": "تقریباً کوئی بھی بار بار ڈیجیٹل کام خودکار کیا جا سکتا ہے بشمول ڈیٹا اندراج، فائل پروسیسنگ، رپورٹ کی تخلیق، ای میل سنبھالنا، ویب scraping۔"
+              },
+              {
+                "question": "آپ کیسے طے کرتے ہیں کہ کون سے عمل پہلے خودکار کیے جائیں؟",
+                "answer": "ہم ایک priority matrix استعمال کرتے ہیں جو ہر عمل کا جائزہ وقت، تعدد، خرابی کی شرح اور پیچیدگی کی بنیاد پر لیتا ہے۔"
+              },
+              {
+                "question": "کیا آپ ایسے عمل خودکار کر سکتے ہیں جن میں متعدد سسٹمز شامل ہوں؟",
+                "answer": "جی ہاں، کراس سسٹم آٹومیشن ہماری خاصیت ہے۔ ہم APIs، databases، spreadsheets، ای میل کے کسی بھی مجموعے کو جوڑتے ہیں۔"
+              }
+            ]
+          },
+          {
+            "category": "قابلیتِ اعتماد اور دیکھ بھال",
+            "items": [
+              {
+                "question": "جب کوئی آٹومیشن ناکام ہو تو کیا ہوتا ہے؟",
+                "answer": "ہر آٹومیشن جو ہم بناتے ہیں اس میں جامع خرابی سنبھالنا شامل ہے بمع خودکار دوبارہ کوششیں، fallback طریقہ کار۔"
+              },
+              {
+                "question": "آپ third-party APIs یا ویب سائٹس میں تبدیلیوں کو کیسے سنبھالتے ہیں؟",
+                "answer": "ہم اپنی آٹومیشنز کو لچک کو مدِ نظر رکھ کر بناتے ہیں، version-pinned API clients اور adaptive scraping حکمت عملیاں استعمال کرتے ہوئے۔"
+              },
+              {
+                "question": "کیا آٹومیشنز کو جاری دیکھ بھال کی ضرورت ہے؟",
+                "answer": "اچھی طرح سے بنائی گئی آٹومیشنز کو کم سے کم دیکھ بھال کی ضرورت ہوتی ہے۔ ہم ماہانہ دیکھ بھال کے منصوبے پیش کرتے ہیں۔"
+              }
+            ]
+          },
+          {
+            "category": "لاگت اور ٹائم لائن",
+            "items": [
+              {
+                "question": "حسب ضرورت آٹومیشن بنانے میں کتنا وقت لگتا ہے؟",
+                "answer": "سادہ single-system آٹومیشنز 1-2 ہفتے لیتی ہیں۔ پیچیدہ کاروباری منطق کے ساتھ multi-system ورک فلو عام طور پر 3-6 ہفتے لیتی ہیں۔"
+              },
+              {
+                "question": "آٹومیشن پراجیکٹس کا عام ROI کیا ہے؟",
+                "answer": "زیادہ تر کلائنٹس 2-4 ماہ میں مکمل ROI حاصل کرتے ہیں۔ ایک عام آٹومیشن جو ہفتے میں 20 گھنٹے بچاتی ہے پہلے ماہ میں اپنی ادائیگی کر دیتی ہے۔"
+              },
+              {
+                "question": "کیا میری ٹیم handoff کے بعد آٹومیشنز کو برقرار رکھ سکتی ہے؟",
+                "answer": "بالکل۔ ہم صاف، اچھی طرح دستاویز شدہ Python کوڈ لکھتے ہیں اور جامع runbooks فراہم کرتے ہیں۔"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "ui-ux-design": {
+      "serviceName": "UI/UX ڈیزائن",
+      "features": {
+        "headline": "انسان پر مرکوز UI/UX ڈیزائن",
+        "subtitle": "ڈیزائن جو خوش کرتا اور تبدیل کرتا ہے",
+        "description": "ہم بدیہی، خوبصورت ڈیجیٹل تجربات تخلیق کرتے ہیں جو صارف کی تحقیق میں جڑے ہوتے ہیں اور ٹیسٹنگ کے ذریعے تصدیق شدہ ہوتے ہیں، یقینی بناتے ہوئے کہ ہر pixel ایک مقصد کی خدمت کرتا ہے۔",
+        "items": [
+          {
+            "icon": "users",
+            "title": "صارف کی تحقیق اور دریافت",
+            "description": "آپ کے صارفین، ان کے اہداف، مایوسیوں اور فیصلہ سازی کے نمونوں کو سمجھنے کے لیے گہری کوالٹی اور کمیت تحقیق۔",
+            "details": [
+              "صارف انٹرویوز، سروے اور contextual inquiry sessions",
+              "رویے کی archetypes کے ساتھ persona ڈویلپمنٹ",
+              "مسابقتی UX آڈٹ اور heuristic تشخیصات"
+            ]
+          },
+          {
+            "icon": "cursor",
+            "title": "Wireframing اور معلومات کا آرکیٹیکچر",
+            "description": "منظم layouts اور نیویگیشن سسٹمز جو مواد کو منطقی طور پر منظم کرتے ہیں اور صارفین کو ان کے اہداف کی طرف آسانی سے رہنمائی کرتے ہیں۔",
+            "details": [
+              "تیز رفتار تصور کی توثیق کے لیے low-fidelity wireframes",
+              "پیچیدہ ایپلیکیشنز کے لیے سائٹ میپس اور صارف فلو diagrams",
+              "بہترین معلومات کی hierarchy کے لیے card sorting اور tree ٹیسٹنگ"
+            ]
+          },
+          {
+            "icon": "palette",
+            "title": "بصری ڈیزائن اور برانڈنگ",
+            "description": "شاندار بصری ڈیزائن جو برانڈ کی شناخت کو تقویت دیتے ہیں جبکہ قابلیتِ استعمال اور رسائی کے معیارات کو برقرار رکھتے ہیں۔",
+            "details": [
+              "Pixel-perfect ڈیزائن execution کے ساتھ high-fidelity mockups",
+              "رنگ کا نظریہ، typography اور iconography نظام"
+            ]
+          },
+          {
+            "icon": "mobile",
+            "title": "جوابی اور موبائل ڈیزائن",
+            "description": "موافق ڈیزائن جو تمام آلات پر موبائل فونز سے لے کر بڑے ڈیسک ٹاپ ڈسپلے تک غیر معمولی تجربات فراہم کرتے ہیں۔",
+            "details": [
+              "Progressive enhancement کے ساتھ mobile-first ڈیزائن طریقہ کار",
+              "Touch-optimized تعاملات اور gesture-based نیویگیشن",
+              "کلیدی breakpoints کے لیے device مخصوص layout optimization"
+            ]
+          },
+          {
+            "icon": "sparkles",
+            "title": "تعاملی پروٹو ٹائپنگ",
+            "description": "مکمل طور پر تعاملی prototypes جو stakeholder buy-in اور صارف ٹیسٹنگ کے لیے حقیقی پروڈکٹ کے تجربے کی نقل کرتے ہیں۔",
+            "details": [
+              "حقیقی transitions اور micro-interactions کے ساتھ clickable prototypes",
+              "کام کی تکمیل کے تجزیہ کے ساتھ صارف ٹیسٹنگ sessions",
+              "ٹیسٹنگ فیڈ بیک کی بنیاد پر تکراری refinement"
+            ]
+          },
+          {
+            "icon": "code",
+            "title": "ڈیزائن سسٹم ڈویلپمنٹ",
+            "description": "جامع component لائبریریاں اور ڈیزائن tokens جو آپ کے پورے پروڈکٹ ecosystem میں مستقل مزاجی کو یقینی بناتے ہیں۔",
+            "details": [
+              "استعمال کی رہنمائی کے ساتھ قابلِ استعمال component لائبریریاں",
+              "رنگوں، spacing، typography اور elevation کے لیے ڈیزائن tokens",
+              "کوڈ شدہ تصریحات کے ساتھ developer handoff دستاویزات"
+            ]
+          },
+          {
+            "icon": "eye",
+            "title": "قابلیتِ استعمال کی ٹیسٹنگ اور اصلاح",
+            "description": "ڈیٹا پر مبنی ڈیزائن کی توثیق moderated ٹیسٹنگ، A/B تجربات اور تجزیات پر مبنی تکرار کے ذریعے۔",
+            "details": [
+              "Moderated اور unmoderated قابلیتِ استعمال ٹیسٹنگ sessions",
+              "ڈیزائن فیصلوں کے لیے A/B اور multivariate ٹیسٹنگ"
+            ]
+          },
+          {
+            "icon": "shield",
+            "title": "رسائی اور جامع ڈیزائن",
+            "description": "WCAG-compliant ڈیزائن جو یقینی بناتے ہیں کہ آپ کا پروڈکٹ صلاحیت یا معاون ٹیکنالوجی سے قطع نظر سب کے لیے قابلِ استعمال ہے۔",
+            "details": [
+              "WCAG 2.1 AA compliance آڈٹ اور remediation",
+              "Screen reader ٹیسٹنگ اور keyboard نیویگیشن optimization",
+              "رنگ کے contrast کی تصدیق اور متبادل متن کی حکمت عملیاں"
+            ]
+          }
+        ],
+        "stats": [
+          {
+            "label": "ڈیزائن کردہ پروڈکٹس",
+            "value": "300+"
+          },
+          {
+            "label": "اوسط قابلیتِ استعمال اسکور میں اضافہ",
+            "value": "62%"
+          },
+          {
+            "label": "صارف اطمینان کی درجہ بندی",
+            "value": "4.8/5"
+          },
+          {
+            "label": "بنائے گئے ڈیزائن سسٹمز",
+            "value": "85+"
+          }
+        ]
+      },
+      "process": {
+        "headline": "ہمارا ڈیزائن عمل",
+        "subtitle": "تحقیق پر مبنی، صارف سے تصدیق شدہ",
+        "description": "ایک ڈیزائن سوچ کا طریقہ کار جو ہمدردی سے شروع ہوتا ہے، prototyping کے ذریعے تکرار کرتا ہے۔",
+        "steps": [
+          {
+            "title": "دریافت اور ہمدردی",
+            "description": "ہم انٹرویوز، مشاہدے اور ڈیٹا تجزیہ کے ذریعے اپنے آپ کو آپ کے صارفین کی دنیا میں غرق کرتے ہیں۔",
+            "icon": "users",
+            "details": [
+              "کاروباری اہداف پر ہم آہنگی کے لیے stakeholder workshops",
+              "انٹرویوز اور contextual inquiry بشمول صارف تحقیق sessions",
+              "تجزیات کا جائزہ اور موجودہ تجربے کا آڈٹ"
+            ]
+          },
+          {
+            "title": "وضاحت اور آرکیٹیکٹ",
+            "description": "ہم تحقیق کو قابلِ عمل بصیرتوں میں ترکیب کرتے ہیں۔",
+            "icon": "document",
+            "details": [
+              "Affinity mapping اور journey maps کے ساتھ insight ترکیب",
+              "سائٹ میپس اور مواد کے ماڈلز کے ساتھ معلومات کا آرکیٹیکچر"
+            ]
+          },
+          {
+            "title": "ڈیزائن اور پروٹو ٹائپ",
+            "description": "ہم wireframes، بصری ڈیزائن اور تعاملی prototypes بناتے ہیں۔",
+            "icon": "palette",
+            "details": [
+              "کم سے زیادہ وفاداری تک بڑھنے والے wireframes",
+              "برانڈ کے مطابق UI اجزاء کے ساتھ بصری ڈیزائن",
+              "حقیقی تعاملات اور flows کے ساتھ تعاملی prototypes"
+            ]
+          },
+          {
+            "title": "ٹیسٹ اور توثیق",
+            "description": "ہم حقیقی صارفین کے ساتھ ڈیزائن کی جانچ کرتے ہیں۔",
+            "icon": "check",
+            "details": [
+              "Think-aloud protocols کے ساتھ moderated قابلیتِ استعمال ٹیسٹنگ",
+              "کام کی کامیابی کی شرح اور وقت پر کام کی پیمائش",
+              "ٹیسٹنگ بصیرتوں کی بنیاد پر تکراری ڈیزائن refinement"
+            ]
+          },
+          {
+            "title": "Handoff اور مدد",
+            "description": "ہم تفصیلی تصریحات کے ساتھ پروڈکشن کے لیے تیار ڈیزائن فراہم کرتے ہیں۔",
+            "icon": "code",
+            "details": [
+              "Redlines اور assets کے ساتھ developer کے لیے تیار ڈیزائن specs",
+              "ڈیزائن سسٹم دستاویزات اور component رہنمائی",
+              "نفاذ کی مدد اور ڈویلپمنٹ کے دوران ڈیزائن QA"
+            ]
+          }
+        ]
+      },
+      "techStack": {
+        "headline": "ڈیزائن ٹولز اور ٹیکنالوجی",
+        "subtitle": "صنعت کے معیاری ڈیزائن ٹولز",
+        "description": "ہم سب سے طاقتور ڈیزائن اور prototyping ٹولز استعمال کرتے ہیں۔",
+        "categories": [
+          {
+            "category": "ڈیزائن اور پروٹو ٹائپنگ",
+            "items": [
+              {
+                "name": "Figma",
+                "description": "Wireframes، mockups اور ڈیزائن سسٹمز کے لیے تعاونی interface ڈیزائن ٹول"
+              },
+              {
+                "name": "Adobe XD",
+                "description": "ویب اور موبائل ایپلیکیشنز کے لیے vector-based ڈیزائن اور prototyping"
+              },
+              {
+                "name": "Sketch",
+                "description": "وسیع plugin ecosystem کے ساتھ precision UI ڈیزائن ٹول"
+              },
+              {
+                "name": "InVision",
+                "description": "تعاملی prototyping اور ڈیزائن تعاون پلیٹ فارم"
+              }
+            ]
+          },
+          {
+            "category": "حرکت اور تعامل",
+            "items": [
+              {
+                "name": "Framer",
+                "description": "پروڈکشن معیار کی animations کے ساتھ جدید تعاملی prototyping"
+              },
+              {
+                "name": "TailwindCSS",
+                "description": "تیز رفتار ڈیزائن سے کوڈ نفاذ کے لیے utility-first CSS فریم ورک"
+              },
+              {
+                "name": "React",
+                "description": "تعاملی ڈیزائن سسٹم نفاذ بنانے کے لیے component-based ڈویلپمنٹ"
+              }
+            ]
+          },
+          {
+            "category": "ڈویلپمنٹ Handoff",
+            "items": [
+              {
+                "name": "TypeScript",
+                "description": "ڈیزائن سسٹم کی قابلیتِ اعتماد کو یقینی بناتے ہوئے type-safe component ڈویلپمنٹ"
+              },
+              {
+                "name": "NextJS",
+                "description": "بہترین کارکردگی کے ساتھ ڈیزائن کردہ تجربات کو نافذ کرنے کے لیے پروڈکشن فریم ورک"
+              },
+              {
+                "name": "NodeJS",
+                "description": "ڈیزائن token مینجمنٹ اور asset ترسیل کے لیے backend سروسز"
+              }
+            ]
+          }
+        ]
+      },
+      "portfolio": {
+        "headline": "ڈیزائن پورٹ فولیو",
+        "subtitle": "تجربات جو اثر ڈالتے ہیں",
+        "description": "دیکھیں کہ کیسے ہمارے ڈیزائن کام نے ڈیجیٹل پروڈکٹس کو تبدیل کیا ہے اور قابلِ پیمائش کاروباری نتائج فراہم کیے ہیں۔",
+        "items": [
+          {
+            "title": "صحت کی دیکھ بھال مریض پورٹل دوبارہ ڈیزائن",
+            "industry": "صحت کی دیکھ بھال اور MedTech",
+            "challenge": "ایک صحت کی دیکھ بھال فراہم کنندہ کے مریض پورٹل کی کام کی تکمیل کی شرح 23% تھی اور الجھاؤ بھرے نیویگیشن اور پرانے interface کی وجہ سے ہفتہ وار 400+ مدد کی کالیں آتی تھیں۔",
+            "solution": "ہم نے مریضوں اور عملے کے ساتھ وسیع صارف تحقیق کی، آسان نیویگیشن کے ساتھ پورے تجربے کو دوبارہ ڈیزائن کیا۔",
+            "results": [
+              "کام کی تکمیل کی شرح 23% سے بڑھ کر 89%",
+              "پہلے ماہ میں مدد کی کالوں میں 67% کمی",
+              "مریضوں کی اطمینان کے اسکور 2.1 سے بہتر ہو کر 4.6 از 5"
+            ],
+            "stats": [
+              {
+                "label": "کام کی تکمیل",
+                "value": "89%"
+              },
+              {
+                "label": "مدد کی کالیں",
+                "value": "-67%"
+              }
+            ]
+          },
+          {
+            "title": "Fintech موبائل بینکنگ ایپ",
+            "industry": "مالیاتی خدمات",
+            "challenge": "ایک ڈیجیٹل بینک کو موبائل ایپ کی ضرورت تھی جو قائم شدہ بینکنگ ایپس کے ساتھ مقابلہ کر سکے۔",
+            "solution": "ہم نے progressive disclosure کے ساتھ جامع موبائل تجربہ ڈیزائن کیا۔",
+            "results": [
+              "آغاز کے تین ماہ میں ایپ اسٹور کی درجہ بندی 4.8 ستارے",
+              "صارف onboarding کی تکمیل کی شرح 91%"
+            ],
+            "stats": [
+              {
+                "label": "ایپ کی درجہ بندی",
+                "value": "4.8★"
+              },
+              {
+                "label": "Onboarding شرح",
+                "value": "91%"
+              }
+            ]
+          },
+          {
+            "title": "Enterprise SaaS ڈیش بورڈ",
+            "industry": "B2B سافٹ ویئر",
+            "challenge": "ایک ڈیٹا تجزیات SaaS پروڈکٹ کی سیکھنے کی کھڑی لکیر تھی۔",
+            "solution": "ہم نے guided onboarding کے ساتھ ڈیش بورڈ کو دوبارہ ڈیزائن کیا۔",
+            "results": [
+              "Time-to-value 6 ہفتوں سے کم کر کے 3 دن",
+              "Trial سے بامعاوضہ تبادلے کی شرح 12% سے بڑھ کر 34%",
+              "پروڈکٹ بھر میں خصوصیت کی اپنائیت میں 85% اضافہ"
+            ],
+            "stats": [
+              {
+                "label": "Time-to-Value",
+                "value": "-93%"
+              },
+              {
+                "label": "Conversion Rate",
+                "value": "34%"
+              }
+            ]
+          }
+        ],
+        "aggregateStats": [
+          {
+            "label": "ڈیزائن کردہ پروڈکٹس",
+            "value": "300+"
+          },
+          {
+            "label": "قابلیتِ استعمال میں بہتری",
+            "value": "62%"
+          },
+          {
+            "label": "اوسط اطمینان",
+            "value": "4.8/5"
+          },
+          {
+            "label": "ڈیزائن سسٹمز",
+            "value": "85+"
+          }
+        ]
+      },
+      "faq": {
+        "headline": "UI/UX ڈیزائن FAQ",
+        "subtitle": "ڈیزائن کے سوالات کے جوابات",
+        "description": "ہمارے ڈیزائن عمل، فراہم کردہ اشیاء اور ہم آپ کی ٹیم کے ساتھ کیسے تعاون کرتے ہیں کے بارے میں عام سوالات۔",
+        "categories": [
+          {
+            "category": "عمل اور طریقہ کار",
+            "items": [
+              {
+                "question": "UI اور UX ڈیزائن میں کیا فرق ہے؟",
+                "answer": "UX ڈیزائن مجموعی تجربے پر توجہ مرکوز کرتا ہے بشمول تحقیق، معلومات کا آرکیٹیکچر اور تعامل کے بہاؤ۔ UI ڈیزائن بصری پیشکش پر توجہ مرکوز کرتا ہے بشمول رنگ، typography، icons اور layout۔"
+              },
+              {
+                "question": "عام ڈیزائن پراجیکٹ میں کتنا وقت لگتا ہے؟",
+                "answer": "ایک مرکوز UX آڈٹ 2-3 ہفتے لیتا ہے۔ تحقیق سے handoff تک مکمل پروڈکٹ ڈیزائن عام طور پر پیچیدگی پر منحصر 8-16 ہفتے لیتا ہے۔"
+              },
+              {
+                "question": "کیا آپ ہر پراجیکٹ کے لیے صارف تحقیق کرتے ہیں؟",
+                "answer": "جی ہاں، کچھ سطح کی صارف تحقیق ہر مصروفیت کا حصہ ہے۔ چھوٹے پراجیکٹس کے لیے، یہ heuristic تشخیص ہو سکتا ہے۔"
+              }
+            ]
+          },
+          {
+            "category": "فراہم کردہ اشیاء اور Handoff",
+            "items": [
+              {
+                "question": "آپ کون سے ڈیزائن ٹولز استعمال کرتے ہیں؟",
+                "answer": "ہم بنیادی طور پر UI ڈیزائن، prototyping اور ڈیزائن سسٹمز کے لیے Figma استعمال کرتے ہیں۔"
+              },
+              {
+                "question": "آپ developers کو ڈیزائن کیسے hand off کرتے ہیں؟",
+                "answer": "ہم جامع handoff پیکیج فراہم کرتے ہیں بشمول annotated ڈیزائن تصریحات کے ساتھ، تمام ضروری فارمیٹس میں exported assets۔"
+              },
+              {
+                "question": "کیا آپ ڈیزائن سسٹمز بناتے ہیں؟",
+                "answer": "جی ہاں، ڈیزائن سسٹمز ہماری بنیادی پیشکشوں میں سے ایک ہیں۔ ہم جامع component لائبریریاں بناتے ہیں۔"
+              }
+            ]
+          },
+          {
+            "category": "تعاون اور مدد",
+            "items": [
+              {
+                "question": "آپ ہماری موجودہ ٹیم کے ساتھ کیسے تعاون کرتے ہیں؟",
+                "answer": "ہم مشترکہ Figma workspaces، باقاعدہ ڈیزائن جائزوں کے ذریعے آپ کی ٹیم کے ساتھ بغیر رکاوٹ کے ضم ہو جاتے ہیں۔"
+              },
+              {
+                "question": "کیا آپ موجودہ پروڈکٹ کو شروع سے دوبارہ ڈیزائن کر سکتے ہیں؟",
+                "answer": "بالکل۔ ہم اکثر تکراری دوبارہ ڈیزائن کرتے ہیں جو تجربے کو تدریجی طور پر بہتر بناتے ہیں۔"
+              },
+              {
+                "question": "کیا آپ پراجیکٹ کے بعد جاری ڈیزائن مدد پیش کرتے ہیں؟",
+                "answer": "جی ہاں، ہم جاری ڈیزائن ضروریات کے لیے لچکدار retainer انتظامات پیش کرتے ہیں۔"
+              }
+            ]
+          }
+        ]
+      }
     }
   }
 }

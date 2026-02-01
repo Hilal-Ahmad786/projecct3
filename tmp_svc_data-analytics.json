@@ -1,0 +1,371 @@
+{
+  "serviceName": "Data Analytics",
+  "features": {
+    "headline": "Transform Raw Data Into Strategic Insights",
+    "subtitle": "Advanced Analytics Solutions",
+    "description": "We help organizations unlock the full potential of their data through modern analytics platforms, predictive modeling, and intuitive visualization dashboards that drive informed decision-making at every level.",
+    "items": [
+      {
+        "icon": "chart",
+        "title": "Business Intelligence Dashboards",
+        "description": "Interactive, real-time dashboards that consolidate data from multiple sources into a single pane of glass for executive and operational stakeholders.",
+        "details": [
+          "Drag-and-drop dashboard builder with role-based access controls",
+          "Real-time data refresh with sub-second query performance",
+          "Embedded analytics with white-label options for client-facing portals"
+        ]
+      },
+      {
+        "icon": "brain",
+        "title": "Predictive Analytics & Forecasting",
+        "description": "Machine learning models that identify trends, forecast demand, and predict customer behavior with measurable accuracy improvements.",
+        "details": [
+          "Time-series forecasting for revenue, inventory, and resource planning",
+          "Churn prediction models with actionable retention triggers",
+          "Anomaly detection pipelines for fraud and quality assurance"
+        ]
+      },
+      {
+        "icon": "database",
+        "title": "Data Warehouse Architecture",
+        "description": "Scalable, cloud-native data warehouse solutions that centralize structured and unstructured data for fast, reliable querying.",
+        "details": [
+          "Star and snowflake schema design optimized for analytical workloads",
+          "Incremental ETL pipelines with data quality validation gates"
+        ]
+      },
+      {
+        "icon": "search",
+        "title": "Customer Analytics & Segmentation",
+        "description": "Deep-dive customer analysis that uncovers behavioral patterns, lifetime value predictions, and micro-segment opportunities.",
+        "details": [
+          "RFM scoring and cohort analysis across acquisition channels",
+          "Lookalike audience modeling for targeted marketing campaigns",
+          "Attribution modeling across multi-touch customer journeys"
+        ]
+      },
+      {
+        "icon": "lightning",
+        "title": "Real-Time Stream Processing",
+        "description": "Event-driven analytics pipelines that process millions of events per second for time-sensitive business decisions.",
+        "details": [
+          "Apache Kafka and Flink-based streaming architectures",
+          "Complex event processing for IoT and clickstream data"
+        ]
+      },
+      {
+        "icon": "cog",
+        "title": "Data Governance & Quality",
+        "description": "Comprehensive data governance frameworks that ensure accuracy, consistency, and compliance across the entire data lifecycle.",
+        "details": [
+          "Automated data cataloging with lineage tracking",
+          "Data quality scorecards with threshold-based alerting",
+          "GDPR and CCPA compliance automation for PII handling"
+        ]
+      },
+      {
+        "icon": "eye",
+        "title": "Advanced Data Visualization",
+        "description": "Compelling visual narratives that make complex datasets accessible to technical and non-technical audiences alike.",
+        "details": [
+          "Custom D3.js and Plotly visualizations for specialized use cases",
+          "Geospatial analytics with interactive map-based dashboards"
+        ]
+      },
+      {
+        "icon": "users",
+        "title": "Self-Service Analytics Enablement",
+        "description": "Empower business users to explore data independently with governed, user-friendly tools and curated datasets.",
+        "details": [
+          "Semantic layer abstraction for business-friendly data exploration",
+          "Guided analytics templates for common business questions",
+          "Training programs and documentation for analytics adoption"
+        ]
+      }
+    ],
+    "stats": [
+      {
+        "label": "Faster Insights",
+        "value": "10x"
+      },
+      {
+        "label": "Data Sources Integrated",
+        "value": "200+"
+      },
+      {
+        "label": "Query Performance Gain",
+        "value": "85%"
+      },
+      {
+        "label": "Forecast Accuracy",
+        "value": "94%"
+      }
+    ]
+  },
+  "process": {
+    "headline": "Our Data Analytics Process",
+    "subtitle": "From Raw Data to Actionable Intelligence",
+    "description": "A structured methodology that transforms fragmented data landscapes into unified analytics ecosystems, delivering measurable business outcomes at every stage.",
+    "steps": [
+      {
+        "title": "Data Audit & Strategy",
+        "description": "We assess your current data infrastructure, identify gaps, and define a roadmap aligned with your business objectives and KPIs.",
+        "icon": "search",
+        "details": [
+          "Inventory existing data sources, pipelines, and reporting tools",
+          "Stakeholder interviews to map analytics requirements to business goals",
+          "Maturity assessment with prioritized recommendations"
+        ]
+      },
+      {
+        "title": "Architecture & Pipeline Design",
+        "description": "Design a scalable data architecture with automated ingestion, transformation, and storage pipelines built for growth.",
+        "icon": "database",
+        "details": [
+          "Cloud-native warehouse and lakehouse architecture design",
+          "ETL/ELT pipeline blueprints with error handling and monitoring"
+        ]
+      },
+      {
+        "title": "Model Development & Validation",
+        "description": "Build and validate predictive models, scoring algorithms, and statistical frameworks using your historical data.",
+        "icon": "brain",
+        "details": [
+          "Feature engineering and model training with cross-validation",
+          "A/B testing frameworks for model performance comparison",
+          "Bias detection and fairness auditing for regulated industries"
+        ]
+      },
+      {
+        "title": "Dashboard & Reporting Deployment",
+        "description": "Deploy interactive dashboards and automated reports tailored to each stakeholder group within your organization.",
+        "icon": "chart",
+        "details": [
+          "Role-based dashboard deployment with SSO integration",
+          "Scheduled report generation and distribution automation"
+        ]
+      },
+      {
+        "title": "Optimization & Knowledge Transfer",
+        "description": "Continuously refine models, optimize query performance, and train your team to maintain and extend the analytics platform.",
+        "icon": "rocket",
+        "details": [
+          "Quarterly model retraining and performance benchmarking",
+          "Query optimization and cost management for cloud workloads",
+          "Hands-on training workshops for analysts and business users"
+        ]
+      }
+    ]
+  },
+  "techStack": {
+    "headline": "Analytics Technology Stack",
+    "subtitle": "Enterprise-Grade Tools & Platforms",
+    "description": "We leverage industry-leading technologies to build analytics solutions that scale with your data volumes and business complexity.",
+    "categories": [
+      {
+        "category": "Data Processing & ML",
+        "items": [
+          {
+            "name": "Python",
+            "description": "Primary language for data transformation, statistical analysis, and machine learning workflows"
+          },
+          {
+            "name": "scikit-learn",
+            "description": "Classical ML algorithms for classification, regression, and clustering tasks"
+          },
+          {
+            "name": "TensorFlow",
+            "description": "Deep learning framework for advanced predictive models and neural network architectures"
+          },
+          {
+            "name": "Kafka",
+            "description": "Distributed event streaming for real-time data ingestion and processing pipelines"
+          }
+        ]
+      },
+      {
+        "category": "Storage & Databases",
+        "items": [
+          {
+            "name": "PostgreSQL",
+            "description": "Relational database for structured analytical workloads and complex queries"
+          },
+          {
+            "name": "MongoDB",
+            "description": "Document store for semi-structured data from APIs, logs, and IoT devices"
+          },
+          {
+            "name": "Redis",
+            "description": "In-memory cache layer for dashboard query acceleration and session management"
+          },
+          {
+            "name": "Elasticsearch",
+            "description": "Full-text search and log analytics for operational intelligence dashboards"
+          }
+        ]
+      },
+      {
+        "category": "Cloud & Infrastructure",
+        "items": [
+          {
+            "name": "AWS",
+            "description": "Redshift, Glue, and Athena for serverless data warehousing and ETL orchestration"
+          },
+          {
+            "name": "Google Cloud",
+            "description": "BigQuery and Dataflow for petabyte-scale analytics and stream processing"
+          },
+          {
+            "name": "Docker",
+            "description": "Containerized analytics environments for reproducible model training and deployment"
+          }
+        ]
+      }
+    ]
+  },
+  "portfolio": {
+    "headline": "Analytics Success Stories",
+    "subtitle": "Measurable Impact Across Industries",
+    "description": "Real-world examples of how our data analytics solutions have transformed decision-making and driven significant business outcomes for our clients.",
+    "items": [
+      {
+        "title": "Retail Demand Forecasting Platform",
+        "industry": "Retail & E-Commerce",
+        "challenge": "A multi-channel retailer with 400+ SKUs was experiencing chronic overstock and stockout issues, leading to $2.3M in annual waste and lost sales due to inaccurate manual demand forecasting.",
+        "solution": "Built an ML-driven demand forecasting platform integrating POS data, weather patterns, promotional calendars, and regional demographics into a unified prediction engine with automated replenishment triggers.",
+        "results": [
+          "Reduced stockout incidents by 62% within the first quarter",
+          "Decreased excess inventory carrying costs by $1.1M annually",
+          "Achieved 94% forecast accuracy across seasonal and non-seasonal categories"
+        ],
+        "stats": [
+          {
+            "label": "Forecast Accuracy",
+            "value": "94%"
+          },
+          {
+            "label": "Annual Savings",
+            "value": "$1.1M"
+          }
+        ]
+      },
+      {
+        "title": "Healthcare Patient Flow Analytics",
+        "industry": "Healthcare",
+        "challenge": "A regional hospital network struggled with emergency department overcrowding and inconsistent patient wait times, resulting in declining patient satisfaction scores and staff burnout.",
+        "solution": "Deployed a real-time patient flow analytics dashboard integrating EHR data, staffing schedules, and historical admission patterns to predict surge periods and optimize resource allocation dynamically.",
+        "results": [
+          "Reduced average ED wait times by 34% across three facilities",
+          "Improved patient satisfaction scores from 3.2 to 4.5 out of 5"
+        ],
+        "stats": [
+          {
+            "label": "Wait Time Reduction",
+            "value": "34%"
+          },
+          {
+            "label": "Patient Satisfaction",
+            "value": "4.5/5"
+          }
+        ]
+      },
+      {
+        "title": "Financial Risk Scoring Engine",
+        "industry": "Financial Services",
+        "challenge": "A mid-size lending institution relied on outdated credit scoring models that produced high false-positive rates, rejecting qualified applicants while approving risky borrowers at unacceptable rates.",
+        "solution": "Developed an ensemble ML risk scoring engine combining gradient boosting, logistic regression, and behavioral analytics with explainable AI outputs for regulatory compliance.",
+        "results": [
+          "Reduced default rates by 28% while increasing approval volume by 15%",
+          "Decreased manual review queue by 40% through automated risk tiering",
+          "Achieved full regulatory compliance with explainable model outputs"
+        ],
+        "stats": [
+          {
+            "label": "Default Reduction",
+            "value": "28%"
+          },
+          {
+            "label": "Approval Increase",
+            "value": "15%"
+          }
+        ]
+      }
+    ],
+    "aggregateStats": [
+      {
+        "label": "Analytics Projects Delivered",
+        "value": "120+"
+      },
+      {
+        "label": "Data Points Processed Daily",
+        "value": "5B+"
+      },
+      {
+        "label": "Average ROI for Clients",
+        "value": "340%"
+      },
+      {
+        "label": "Industries Served",
+        "value": "18"
+      }
+    ]
+  },
+  "faq": {
+    "headline": "Data Analytics FAQ",
+    "subtitle": "Common Questions Answered",
+    "description": "Answers to the most frequently asked questions about our data analytics services, implementation approach, and expected outcomes.",
+    "categories": [
+      {
+        "category": "Getting Started",
+        "items": [
+          {
+            "question": "How long does a typical analytics project take from kickoff to deployment?",
+            "answer": "Most analytics projects follow a phased approach. A focused dashboard or reporting project typically takes 6-8 weeks, while a comprehensive data warehouse and predictive analytics platform ranges from 3-6 months. We deliver incremental value at each phase so you see results early."
+          },
+          {
+            "question": "What data do we need to have ready before starting?",
+            "answer": "You do not need perfectly clean data to begin. Our discovery phase includes a thorough data audit where we assess available sources, identify quality issues, and build remediation plans. We work with whatever data you have, whether it lives in spreadsheets, databases, SaaS platforms, or legacy systems."
+          },
+          {
+            "question": "Can you work with our existing BI tools like Tableau or Power BI?",
+            "answer": "Absolutely. We are tool-agnostic and frequently integrate with existing BI platforms. Whether you use Tableau, Power BI, Looker, or Metabase, we can enhance your current setup or recommend migrations when the business case supports it."
+          }
+        ]
+      },
+      {
+        "category": "Technical Implementation",
+        "items": [
+          {
+            "question": "How do you handle data from multiple sources with different formats?",
+            "answer": "We build robust ETL/ELT pipelines with schema validation, data type normalization, and deduplication logic. Our pipelines handle structured databases, semi-structured APIs, flat files, and streaming data, unifying everything into a consistent analytical model."
+          },
+          {
+            "question": "What measures do you take to ensure data security and privacy?",
+            "answer": "Security is embedded in every layer. We implement encryption at rest and in transit, role-based access controls, data masking for PII, and full audit logging. For regulated industries, we ensure compliance with HIPAA, GDPR, SOC 2, and other relevant frameworks."
+          },
+          {
+            "question": "How do your predictive models stay accurate over time?",
+            "answer": "We implement model monitoring pipelines that track prediction drift, feature distribution changes, and accuracy metrics in production. When performance degrades beyond defined thresholds, automated retraining workflows are triggered using the latest data."
+          }
+        ]
+      },
+      {
+        "category": "ROI & Business Impact",
+        "items": [
+          {
+            "question": "What kind of ROI can we expect from a data analytics investment?",
+            "answer": "ROI varies by use case, but our clients typically see 3-5x return within the first year. Common value drivers include reduced operational costs through process optimization, increased revenue through better customer targeting, and risk reduction through predictive alerting."
+          },
+          {
+            "question": "How do you measure the success of an analytics project?",
+            "answer": "We define success metrics during the strategy phase, aligned with your business KPIs. These might include forecast accuracy improvements, dashboard adoption rates, query performance benchmarks, cost savings, or revenue lift from data-driven decisions."
+          },
+          {
+            "question": "Do you provide ongoing support after the initial deployment?",
+            "answer": "Yes. We offer flexible support tiers that include model retraining, dashboard updates, pipeline monitoring, performance optimization, and ad-hoc analytics requests. Many clients retain us for quarterly business reviews and continuous improvement sprints."
+          }
+        ]
+      }
+    ]
+  }
+}

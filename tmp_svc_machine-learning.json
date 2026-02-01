@@ -1,0 +1,373 @@
+{
+  "serviceName": "Machine Learning Solutions",
+  "features": {
+    "headline": "Intelligent Machine Learning Solutions",
+    "subtitle": "AI That Drives Real Business Value",
+    "description": "We build and deploy production-grade machine learning systems that automate decisions, uncover insights, and create competitive advantages for your business.",
+    "items": [
+      {
+        "icon": "brain",
+        "title": "Predictive Analytics",
+        "description": "Forecast demand, churn, revenue, and market trends with custom-trained models tailored to your specific business data.",
+        "details": [
+          "Time-series forecasting for demand planning and inventory optimization",
+          "Customer churn prediction with actionable retention triggers",
+          "Revenue and growth projections with confidence intervals"
+        ]
+      },
+      {
+        "icon": "search",
+        "title": "Natural Language Processing",
+        "description": "Extract meaning from text data with sentiment analysis, entity recognition, document classification, and conversational AI.",
+        "details": [
+          "Sentiment analysis for customer reviews and social media monitoring",
+          "Named entity recognition for automated document processing",
+          "Custom chatbots and question-answering systems using LLMs"
+        ]
+      },
+      {
+        "icon": "eye",
+        "title": "Computer Vision",
+        "description": "Automated visual inspection, object detection, and image classification for manufacturing, retail, and healthcare applications.",
+        "details": [
+          "Defect detection for manufacturing quality control pipelines",
+          "Product recognition and shelf analysis for retail analytics"
+        ]
+      },
+      {
+        "icon": "chart",
+        "title": "Recommendation Engines",
+        "description": "Personalized recommendation systems that increase engagement, cross-sell opportunities, and customer lifetime value.",
+        "details": [
+          "Collaborative and content-based filtering algorithms",
+          "Real-time recommendation serving with sub-50ms latency",
+          "Continuous model retraining on user interaction data"
+        ]
+      },
+      {
+        "icon": "sparkles",
+        "title": "Anomaly Detection",
+        "description": "Identify fraud, system failures, and unusual patterns in real time across financial, operational, and security data.",
+        "details": [
+          "Transaction fraud detection with real-time scoring",
+          "Infrastructure anomaly detection for proactive incident response",
+          "Statistical process control for manufacturing quality assurance"
+        ]
+      },
+      {
+        "icon": "cog",
+        "title": "MLOps & Model Management",
+        "description": "End-to-end ML infrastructure for training, versioning, deploying, and monitoring models in production environments.",
+        "details": [
+          "Automated model training pipelines with experiment tracking",
+          "A/B testing framework for safe model rollouts",
+          "Model performance monitoring with drift detection alerts"
+        ]
+      },
+      {
+        "icon": "database",
+        "title": "Data Pipeline Engineering",
+        "description": "Robust data pipelines that collect, clean, transform, and deliver training data at scale for continuous model improvement.",
+        "details": [
+          "ETL pipelines for structured and unstructured data sources",
+          "Feature stores for consistent feature engineering across models"
+        ]
+      },
+      {
+        "icon": "shield",
+        "title": "Responsible AI & Governance",
+        "description": "Bias auditing, explainability tools, and governance frameworks that ensure your AI systems are fair, transparent, and compliant.",
+        "details": [
+          "Model explainability dashboards with SHAP and LIME",
+          "Bias detection and mitigation across protected attributes",
+          "Regulatory compliance documentation for GDPR and industry standards"
+        ]
+      }
+    ],
+    "stats": [
+      {
+        "label": "Models Deployed",
+        "value": "200+"
+      },
+      {
+        "label": "Prediction Accuracy",
+        "value": "94%+"
+      },
+      {
+        "label": "Data Points Processed",
+        "value": "5B+"
+      },
+      {
+        "label": "Cost Savings Delivered",
+        "value": "$30M+"
+      }
+    ]
+  },
+  "process": {
+    "headline": "Our Machine Learning Process",
+    "subtitle": "From Raw Data to Production Models",
+    "description": "A rigorous, iterative methodology that ensures your ML investment delivers measurable business outcomes, not just impressive demos.",
+    "steps": [
+      {
+        "title": "Problem Framing & Data Audit",
+        "description": "We work with stakeholders to define the business problem as a machine learning task and audit available data assets.",
+        "icon": "search",
+        "details": [
+          "Business objective translation into measurable ML metrics",
+          "Data availability assessment and gap analysis",
+          "Feasibility study with expected ROI projections"
+        ]
+      },
+      {
+        "title": "Data Engineering & Feature Development",
+        "description": "We build data pipelines, clean and transform raw data, and engineer predictive features that power accurate models.",
+        "icon": "database",
+        "details": [
+          "Data cleaning, deduplication, and quality validation",
+          "Feature engineering with domain-specific transformations",
+          "Training and evaluation dataset creation with proper splits"
+        ]
+      },
+      {
+        "title": "Model Development & Experimentation",
+        "description": "We train and evaluate multiple model architectures, optimize hyperparameters, and select the best performer.",
+        "icon": "brain",
+        "details": [
+          "Systematic experimentation across algorithm families",
+          "Hyperparameter tuning with Bayesian optimization"
+        ]
+      },
+      {
+        "title": "Production Deployment",
+        "description": "We deploy models as scalable APIs or embedded systems with monitoring, logging, and automated rollback capabilities.",
+        "icon": "rocket",
+        "details": [
+          "Containerized model serving with auto-scaling infrastructure",
+          "CI/CD pipelines for automated model validation and deployment",
+          "Real-time and batch prediction endpoint configuration"
+        ]
+      },
+      {
+        "title": "Monitoring & Continuous Improvement",
+        "description": "We monitor model performance in production and retrain on fresh data to maintain accuracy as conditions change.",
+        "icon": "chart",
+        "details": [
+          "Automated drift detection with alerting thresholds",
+          "Scheduled model retraining on updated data",
+          "Performance dashboards with business impact tracking"
+        ]
+      }
+    ]
+  },
+  "techStack": {
+    "headline": "Machine Learning Technology Stack",
+    "subtitle": "Industry-Leading ML Frameworks",
+    "description": "We use best-in-class tools and frameworks to build, train, and deploy machine learning models at production scale.",
+    "categories": [
+      {
+        "category": "ML Frameworks",
+        "items": [
+          {
+            "name": "TensorFlow",
+            "description": "End-to-end ML platform for building and deploying deep learning models at scale."
+          },
+          {
+            "name": "PyTorch",
+            "description": "Flexible deep learning framework preferred for research and rapid prototyping."
+          },
+          {
+            "name": "scikit-learn",
+            "description": "Comprehensive library for classical ML algorithms and data preprocessing."
+          },
+          {
+            "name": "Keras",
+            "description": "High-level API for fast neural network experimentation and prototyping."
+          }
+        ]
+      },
+      {
+        "category": "NLP & Specialized",
+        "items": [
+          {
+            "name": "Hugging Face",
+            "description": "State-of-the-art transformer models for NLP, vision, and multi-modal tasks."
+          },
+          {
+            "name": "Python",
+            "description": "The foundational language for data science and machine learning workflows."
+          },
+          {
+            "name": "FastAPI",
+            "description": "High-performance API framework for serving ML model predictions."
+          }
+        ]
+      },
+      {
+        "category": "Infrastructure & Data",
+        "items": [
+          {
+            "name": "AWS",
+            "description": "Cloud infrastructure with SageMaker for managed ML training and deployment."
+          },
+          {
+            "name": "Docker",
+            "description": "Containerized model environments for reproducible training and serving."
+          },
+          {
+            "name": "PostgreSQL",
+            "description": "Feature store and metadata management for ML experiment tracking."
+          },
+          {
+            "name": "Redis",
+            "description": "Low-latency feature serving and model prediction caching."
+          }
+        ]
+      }
+    ]
+  },
+  "portfolio": {
+    "headline": "Machine Learning Case Studies",
+    "subtitle": "AI Solutions in Production",
+    "description": "Explore how our ML solutions are driving measurable business impact across industries.",
+    "items": [
+      {
+        "title": "Predictive Maintenance for Fleet Management",
+        "industry": "Logistics & Transportation",
+        "challenge": "A logistics company with 2,000+ vehicles was losing $4M annually to unplanned breakdowns and reactive maintenance schedules.",
+        "solution": "We built a predictive maintenance system using sensor telemetry data and gradient-boosted models to forecast component failures 2-4 weeks in advance.",
+        "results": [
+          "Reduced unplanned downtime by 73% in the first year",
+          "Annual maintenance cost savings of $2.8M",
+          "Vehicle availability increased from 84% to 96%"
+        ],
+        "stats": [
+          {
+            "label": "Downtime Reduction",
+            "value": "73%"
+          },
+          {
+            "label": "Annual Savings",
+            "value": "$2.8M"
+          }
+        ]
+      },
+      {
+        "title": "Real-Time Fraud Detection System",
+        "industry": "Financial Services",
+        "challenge": "A fintech processing 500K daily transactions needed to reduce fraud losses while maintaining a sub-100ms approval latency.",
+        "solution": "We developed an ensemble model combining gradient boosting and neural networks, deployed on a streaming architecture with real-time feature computation.",
+        "results": [
+          "Fraud detection rate improved from 67% to 94%",
+          "False positive rate reduced by 58%, improving customer experience"
+        ],
+        "stats": [
+          {
+            "label": "Detection Rate",
+            "value": "94%"
+          },
+          {
+            "label": "Latency",
+            "value": "<50ms"
+          }
+        ]
+      },
+      {
+        "title": "Customer Churn Prediction Platform",
+        "industry": "SaaS & Technology",
+        "challenge": "A B2B SaaS company with 15,000 accounts had an annual churn rate of 18% and no systematic way to identify at-risk customers.",
+        "solution": "We built a churn prediction model using product usage data, support tickets, and billing patterns, integrated directly into their CRM with automated alerts.",
+        "results": [
+          "Identified 82% of churning customers 60+ days before cancellation",
+          "Targeted retention campaigns reduced churn from 18% to 11%",
+          "Saved an estimated $3.2M in annual recurring revenue"
+        ],
+        "stats": [
+          {
+            "label": "Churn Reduction",
+            "value": "39%"
+          },
+          {
+            "label": "ARR Saved",
+            "value": "$3.2M"
+          }
+        ]
+      }
+    ],
+    "aggregateStats": [
+      {
+        "label": "Models in Production",
+        "value": "200+"
+      },
+      {
+        "label": "Avg Accuracy",
+        "value": "94%+"
+      },
+      {
+        "label": "Client Cost Savings",
+        "value": "$30M+"
+      },
+      {
+        "label": "Industries Served",
+        "value": "15+"
+      }
+    ]
+  },
+  "faq": {
+    "headline": "Machine Learning FAQ",
+    "subtitle": "Your ML Questions Answered",
+    "description": "Common questions about our machine learning services, from feasibility to deployment and ongoing maintenance.",
+    "categories": [
+      {
+        "category": "Getting Started",
+        "items": [
+          {
+            "question": "How do I know if my business problem is a good fit for machine learning?",
+            "answer": "Good ML candidates involve repetitive decisions, large data volumes, and clear success metrics. We offer a free feasibility assessment where we evaluate your data assets, define the problem as an ML task, and estimate potential ROI before any commitment."
+          },
+          {
+            "question": "How much data do I need to get started?",
+            "answer": "It depends on the problem complexity. Simple classification tasks may need a few thousand labeled examples, while deep learning models require much more. We can also use transfer learning and data augmentation techniques to work effectively with smaller datasets."
+          },
+          {
+            "question": "How long does a typical ML project take?",
+            "answer": "A proof-of-concept typically takes 4-8 weeks, while a full production deployment ranges from 3-6 months. Timeline depends on data readiness, problem complexity, and integration requirements. We deliver in iterative milestones so you see progress early."
+          }
+        ]
+      },
+      {
+        "category": "Technical & Deployment",
+        "items": [
+          {
+            "question": "Can ML models run in real time for our application?",
+            "answer": "Yes, we specialize in low-latency model serving. Most of our production models respond in under 50ms. We use optimized inference frameworks, model distillation, and caching strategies to meet even the most demanding latency requirements."
+          },
+          {
+            "question": "How do you handle model accuracy degradation over time?",
+            "answer": "We implement automated monitoring that tracks prediction accuracy, data drift, and concept drift. When performance drops below thresholds, our pipelines automatically trigger retraining on fresh data and validate the new model before promoting it to production."
+          },
+          {
+            "question": "Can you integrate ML models with our existing systems?",
+            "answer": "Absolutely. We deploy models as REST APIs, embed them in batch processing pipelines, or integrate directly into your application code. We work with your engineering team to ensure seamless integration with existing databases, CRMs, and business tools."
+          }
+        ]
+      },
+      {
+        "category": "Cost & ROI",
+        "items": [
+          {
+            "question": "What is the typical ROI of an ML project?",
+            "answer": "Our clients typically see 3-10x ROI within the first year. Returns come from cost savings through automation, revenue increases from personalization, and loss prevention through fraud and anomaly detection. We define ROI metrics upfront during project scoping."
+          },
+          {
+            "question": "What are the ongoing costs of running ML in production?",
+            "answer": "Ongoing costs include cloud compute for model serving, data storage, and periodic retraining. We optimize infrastructure costs through efficient model architectures and auto-scaling. Most clients spend $500-5,000 monthly on ML infrastructure depending on scale."
+          },
+          {
+            "question": "Do you offer a proof-of-concept phase before full investment?",
+            "answer": "Yes, we always recommend starting with a focused POC that validates the approach on a subset of data. This typically takes 4-8 weeks and gives you confidence in the model performance before committing to full production deployment."
+          }
+        ]
+      }
+    ]
+  }
+}

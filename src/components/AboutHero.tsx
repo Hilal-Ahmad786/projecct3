@@ -8,7 +8,7 @@ import ParticleNetwork from '@/components/ParticleNetwork';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function AboutHero() {
-  const { dir, isLoading } = useTranslations();
+  const { dir, isLoading, t: tGlobal } = useTranslations();
   const t = useSectionTranslations('about.hero');
 
   // Show loading state if translations are not ready
@@ -17,7 +17,7 @@ export default function AboutHero() {
       <section className="hero-section relative gradient-bg-vibrant overflow-hidden min-h-screen flex items-center justify-center">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"></div>
-          <p className="mt-4 text-gray-600">Loading...</p>
+          <p className="mt-4 text-gray-600">{tGlobal('common.loading')}</p>
         </div>
       </section>
     );

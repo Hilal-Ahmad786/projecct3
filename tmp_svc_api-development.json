@@ -1,0 +1,376 @@
+{
+  "serviceName": "API Development",
+  "features": {
+    "headline": "APIs Built for Scale, Security, and Speed",
+    "subtitle": "Enterprise-Grade API Engineering",
+    "description": "We design and build robust APIs that serve as the backbone of modern digital ecosystems, enabling seamless integration between services, partners, and platforms.",
+    "items": [
+      {
+        "icon": "code",
+        "title": "RESTful API Design & Development",
+        "description": "Standards-compliant REST APIs with clean resource modeling, versioning, and comprehensive documentation.",
+        "details": [
+          "OpenAPI 3.1 specification-first design with automated code generation and validation",
+          "HATEOAS-compliant responses with pagination, filtering, and field selection",
+          "Semantic versioning with backward-compatible evolution strategies"
+        ]
+      },
+      {
+        "icon": "lightning",
+        "title": "GraphQL API Implementation",
+        "description": "Flexible, client-driven APIs that eliminate over-fetching and reduce the number of round trips for complex data queries.",
+        "details": [
+          "Schema-first design with strong typing and introspection capabilities",
+          "DataLoader pattern implementation for efficient N+1 query resolution",
+          "Subscription support for real-time data streaming via WebSockets"
+        ]
+      },
+      {
+        "icon": "shield",
+        "title": "API Security & Authentication",
+        "description": "Multi-layered security with OAuth 2.0, JWT, API keys, and rate limiting to protect your endpoints and data.",
+        "details": [
+          "OAuth 2.0 and OpenID Connect flows for secure third-party authorization",
+          "JWT-based stateless authentication with refresh token rotation",
+          "IP whitelisting, CORS configuration, and request signature verification"
+        ]
+      },
+      {
+        "icon": "server",
+        "title": "Microservices Architecture",
+        "description": "Decompose monoliths into independently deployable microservices connected through well-defined API contracts.",
+        "details": [
+          "Domain-driven design for service boundary identification and bounded contexts",
+          "Event-driven communication with message queues for loose coupling",
+          "Service mesh implementation with circuit breakers and retry policies"
+        ]
+      },
+      {
+        "icon": "database",
+        "title": "API Gateway & Management",
+        "description": "Centralized API gateway for traffic management, analytics, rate limiting, and developer portal provisioning.",
+        "details": [
+          "Request routing, load balancing, and traffic shaping across service clusters",
+          "Real-time analytics dashboards tracking latency, error rates, and usage patterns",
+          "Developer portal with interactive documentation, sandbox environments, and API key management"
+        ]
+      },
+      {
+        "icon": "globe",
+        "title": "Third-Party API Integration",
+        "description": "Connect your systems with payment processors, CRMs, ERPs, and SaaS platforms through reliable API integrations.",
+        "details": [
+          "Adapter pattern implementation for vendor-agnostic integration layers",
+          "Webhook handling with idempotency, retry logic, and dead-letter queues",
+          "Data transformation and mapping between incompatible schemas"
+        ]
+      },
+      {
+        "icon": "chart",
+        "title": "API Performance Optimization",
+        "description": "Achieve sub-50ms response times with caching strategies, query optimization, and efficient serialization.",
+        "details": [
+          "Multi-tier caching with Redis, CDN edge caching, and ETag-based conditional requests",
+          "Database query optimization with connection pooling and read replicas",
+          "Response compression and payload minimization with field-level selection"
+        ]
+      },
+      {
+        "icon": "document",
+        "title": "API Documentation & Testing",
+        "description": "Auto-generated, interactive documentation with comprehensive test suites ensuring reliability across deployments.",
+        "details": [
+          "Swagger UI and Redoc integration with live request execution from documentation",
+          "Contract testing with Pact to prevent breaking changes across service boundaries"
+        ]
+      }
+    ],
+    "stats": [
+      {
+        "label": "APIs Delivered",
+        "value": "500+"
+      },
+      {
+        "label": "Avg. Response Time",
+        "value": "<45ms"
+      },
+      {
+        "label": "Uptime Guarantee",
+        "value": "99.99%"
+      },
+      {
+        "label": "Requests Processed Daily",
+        "value": "2B+"
+      }
+    ]
+  },
+  "process": {
+    "headline": "API Development Done Right",
+    "subtitle": "Our Structured API Engineering Process",
+    "description": "Every API we build follows a rigorous process that ensures consistency, reliability, and developer experience excellence.",
+    "steps": [
+      {
+        "title": "API Strategy & Contract Design",
+        "description": "Define resource models, endpoint structures, and data contracts collaboratively with stakeholders before writing any code.",
+        "icon": "document",
+        "details": [
+          "Stakeholder workshops to map business capabilities to API resources",
+          "OpenAPI specification drafting with review cycles and schema validation",
+          "Consumer-driven contract negotiation for multi-team environments"
+        ]
+      },
+      {
+        "title": "Architecture & Infrastructure Planning",
+        "description": "Select the right architectural patterns, protocols, and infrastructure to meet your scalability and latency requirements.",
+        "icon": "server",
+        "details": [
+          "Technology selection based on throughput, latency, and team expertise requirements",
+          "Infrastructure-as-code templates for reproducible, version-controlled environments",
+          "Capacity planning with load modeling and auto-scaling threshold configuration"
+        ]
+      },
+      {
+        "title": "Iterative Development & Testing",
+        "description": "Build APIs in focused sprints with continuous integration, automated testing, and stakeholder review at every iteration.",
+        "icon": "code",
+        "details": [
+          "Test-driven development with unit, integration, and end-to-end test coverage",
+          "Automated contract validation ensuring backward compatibility on every commit",
+          "Performance benchmarking integrated into CI pipeline with regression alerts"
+        ]
+      },
+      {
+        "title": "Security Hardening & Compliance",
+        "description": "Comprehensive security review with penetration testing, vulnerability scanning, and compliance verification.",
+        "icon": "shield",
+        "details": [
+          "OWASP API Security Top 10 assessment and remediation",
+          "Automated dependency scanning and secret detection in CI/CD pipeline",
+          "Compliance documentation for SOC 2, HIPAA, and PCI-DSS requirements"
+        ]
+      },
+      {
+        "title": "Deployment & Observability Setup",
+        "description": "Zero-downtime deployment with comprehensive monitoring, alerting, and distributed tracing across all endpoints.",
+        "icon": "rocket",
+        "details": [
+          "Blue-green and canary deployment strategies for risk-free rollouts",
+          "Distributed tracing with correlation IDs across microservice boundaries",
+          "Custom alerting rules for error rate spikes, latency degradation, and quota breaches"
+        ]
+      }
+    ]
+  },
+  "techStack": {
+    "headline": "Battle-Tested API Technology Stack",
+    "subtitle": "Frameworks & Tools We Rely On",
+    "description": "We use proven technologies that handle billions of requests daily across industries worldwide.",
+    "categories": [
+      {
+        "category": "API Frameworks & Languages",
+        "items": [
+          {
+            "name": "NodeJS",
+            "description": "Express and Fastify for high-throughput, non-blocking API servers"
+          },
+          {
+            "name": "Python",
+            "description": "FastAPI and Django REST Framework for rapid, type-safe API development"
+          },
+          {
+            "name": "GraphQL",
+            "description": "Apollo Server and Hasura for flexible, schema-driven query APIs"
+          },
+          {
+            "name": "TypeScript",
+            "description": "End-to-end type safety from API contracts to client SDKs"
+          }
+        ]
+      },
+      {
+        "category": "Infrastructure & Deployment",
+        "items": [
+          {
+            "name": "Docker",
+            "description": "Containerized services for consistent deployment across all environments"
+          },
+          {
+            "name": "Kubernetes",
+            "description": "Orchestration with horizontal pod autoscaling and rolling updates"
+          },
+          {
+            "name": "Nginx",
+            "description": "Reverse proxy and load balancing with rate limiting and SSL termination"
+          },
+          {
+            "name": "Terraform",
+            "description": "Infrastructure-as-code for reproducible multi-cloud API deployments"
+          }
+        ]
+      },
+      {
+        "category": "Data & Caching",
+        "items": [
+          {
+            "name": "PostgreSQL",
+            "description": "Primary relational data store with advanced indexing and partitioning"
+          },
+          {
+            "name": "Redis",
+            "description": "In-memory caching, session storage, and rate limiting backend"
+          },
+          {
+            "name": "MongoDB",
+            "description": "Document storage for flexible schemas and high-write workloads"
+          }
+        ]
+      }
+    ]
+  },
+  "portfolio": {
+    "headline": "APIs Powering Real Business at Scale",
+    "subtitle": "Selected Case Studies",
+    "description": "Explore how our API engineering has enabled digital transformation and new revenue streams for our clients.",
+    "items": [
+      {
+        "title": "Open Banking API Platform for Fintech",
+        "industry": "Financial Services",
+        "challenge": "A mid-size bank needed to comply with PSD2 open banking regulations while also creating a developer ecosystem around its financial data and payment services.",
+        "solution": "Built a PSD2-compliant API platform with OAuth 2.0, consent management, and a developer portal. Implemented rate limiting, audit logging, and sandbox environments for third-party testing.",
+        "results": [
+          "Onboarded 85 third-party fintech partners within 12 months of launch",
+          "Processed over 12 million API calls per day with 99.99% uptime",
+          "Generated $3.2M in new API monetization revenue in the first year"
+        ],
+        "stats": [
+          {
+            "label": "Partner Integrations",
+            "value": "85"
+          },
+          {
+            "label": "Daily API Calls",
+            "value": "12M+"
+          }
+        ]
+      },
+      {
+        "title": "Real-Time Inventory Sync API for Omnichannel Retail",
+        "industry": "Retail & E-Commerce",
+        "challenge": "A retailer with 340 stores and an e-commerce platform had inventory discrepancies causing overselling and customer complaints due to siloed systems.",
+        "solution": "Designed an event-driven inventory API using webhooks and message queues to synchronize stock levels across POS, warehouse, and e-commerce systems in near real-time.",
+        "results": [
+          "Reduced inventory discrepancies by 94% across all channels",
+          "Eliminated overselling incidents that previously affected 8% of online orders",
+          "Enabled ship-from-store fulfillment, reducing average delivery time by 1.4 days"
+        ],
+        "stats": [
+          {
+            "label": "Sync Accuracy",
+            "value": "99.7%"
+          },
+          {
+            "label": "Overselling Reduction",
+            "value": "100%"
+          }
+        ]
+      },
+      {
+        "title": "Healthcare Data Exchange API for EHR Integration",
+        "industry": "Healthcare",
+        "challenge": "A healthcare network with 14 hospitals needed to exchange patient records across different EHR systems while maintaining HIPAA compliance and data integrity.",
+        "solution": "Built a FHIR-compliant API gateway that normalized data from Epic, Cerner, and Allscripts into a unified patient record API with granular consent management.",
+        "results": [
+          "Connected 14 hospitals and 2,300 physicians to a unified patient data API",
+          "Reduced duplicate patient records by 67% through intelligent matching algorithms",
+          "Cut average referral processing time from 4 days to 6 hours"
+        ],
+        "stats": [
+          {
+            "label": "Systems Connected",
+            "value": "14"
+          },
+          {
+            "label": "Referral Speed",
+            "value": "16x Faster"
+          }
+        ]
+      }
+    ],
+    "aggregateStats": [
+      {
+        "label": "APIs in Production",
+        "value": "500+"
+      },
+      {
+        "label": "Total Requests Served",
+        "value": "850B+"
+      },
+      {
+        "label": "Average Uptime",
+        "value": "99.98%"
+      },
+      {
+        "label": "Enterprise Clients",
+        "value": "75+"
+      }
+    ]
+  },
+  "faq": {
+    "headline": "API Development FAQ",
+    "subtitle": "Common Questions",
+    "description": "Everything you need to know about our API development services, from architecture decisions to ongoing maintenance.",
+    "categories": [
+      {
+        "category": "Architecture & Design",
+        "items": [
+          {
+            "question": "Should we choose REST or GraphQL for our API?",
+            "answer": "It depends on your use case. REST is ideal for simple, resource-oriented APIs with predictable access patterns and strong caching needs. GraphQL excels when clients need flexibility to request varying data shapes, especially for mobile apps or complex frontend dashboards. We often recommend a hybrid approach: REST for public-facing APIs and GraphQL for internal frontend consumption."
+          },
+          {
+            "question": "How do you handle API versioning?",
+            "answer": "We use URL-based versioning (e.g., /v1/, /v2/) for public APIs because it is explicit and easy for consumers to understand. For internal APIs, we prefer header-based versioning to keep URLs clean. We maintain backward compatibility within major versions and provide deprecation timelines of at least 6 months for breaking changes."
+          },
+          {
+            "question": "Can you migrate our existing monolithic API to microservices?",
+            "answer": "Yes. We use the strangler fig pattern to incrementally decompose monoliths without disrupting existing consumers. We start by identifying bounded contexts, then extract services one at a time while maintaining API compatibility. Most migrations are completed in 4-8 months depending on the monolith size."
+          }
+        ]
+      },
+      {
+        "category": "Performance & Reliability",
+        "items": [
+          {
+            "question": "What response times can we expect?",
+            "answer": "For typical CRUD operations, our APIs consistently achieve sub-50ms response times at the 95th percentile. Complex aggregation queries typically respond within 100-200ms. We achieve this through multi-layer caching, optimized database queries, and efficient serialization. We set SLA targets during the planning phase and validate them through continuous load testing."
+          },
+          {
+            "question": "How do you ensure API reliability and uptime?",
+            "answer": "We implement multiple reliability patterns: circuit breakers to prevent cascade failures, retry logic with exponential backoff, health check endpoints for load balancer integration, and graceful degradation for non-critical dependencies. Combined with multi-AZ deployments and auto-scaling, our APIs consistently achieve 99.99% uptime."
+          },
+          {
+            "question": "How do you handle traffic spikes?",
+            "answer": "Our APIs are deployed on auto-scaling infrastructure that responds to traffic patterns in under 60 seconds. We implement request queuing, rate limiting with token bucket algorithms, and CDN caching for read-heavy endpoints. For anticipated events like product launches, we run pre-scaling and load tests to validate capacity."
+          }
+        ]
+      },
+      {
+        "category": "Integration & Support",
+        "items": [
+          {
+            "question": "Do you provide SDKs for API consumers?",
+            "answer": "Yes. We auto-generate client SDKs in TypeScript, Python, Java, and Go from the OpenAPI specification. These SDKs include type definitions, error handling, retry logic, and authentication helpers. We also provide Postman collections and interactive documentation for manual testing."
+          },
+          {
+            "question": "How do you handle breaking changes for existing consumers?",
+            "answer": "We follow a strict deprecation policy: announce changes at least 6 months in advance, provide migration guides, and offer parallel running of old and new versions. We use API analytics to identify which consumers use deprecated endpoints and proactively reach out to help them migrate."
+          },
+          {
+            "question": "What ongoing support do you provide?",
+            "answer": "Our API support tiers include 24/7 monitoring with automated incident response, quarterly performance reviews, security patching, and dependency updates. Enterprise clients receive a dedicated API reliability engineer who manages SLA compliance and proactively optimizes performance."
+          }
+        ]
+      }
+    ]
+  }
+}

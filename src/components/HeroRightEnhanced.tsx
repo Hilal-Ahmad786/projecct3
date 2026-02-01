@@ -22,7 +22,7 @@ export default function HeroRightEnhanced() {
   const stageRef = useRef<HTMLDivElement>(null);
   const prefersReducedMotion = useReducedMotion();
   
-  const { dir, isLoading } = useTranslations();
+  const { dir, isLoading, t: tGlobal } = useTranslations();
   const t = useSectionTranslations('components.heroRightEnhanced');
   const tHero = useSectionTranslations('hero');
   
@@ -76,7 +76,7 @@ export default function HeroRightEnhanced() {
     return (
       <div className="mx-auto w-full max-w-[400px]">
         <div className="relative aspect-square w-full select-none bg-gray-100 rounded-xl animate-pulse flex items-center justify-center">
-          <div className="text-gray-400">Loading...</div>
+          <div className="text-gray-400">{tGlobal('common.loading')}</div>
         </div>
       </div>
     );

@@ -46,7 +46,7 @@ export default function AboutRightExcellence() {
     return (
       <div className="mx-auto w-full max-w-[400px]">
         <div className="relative aspect-square w-full select-none bg-gray-100 rounded-xl animate-pulse flex items-center justify-center">
-          <div className="text-gray-400">Loading...</div>
+          <div className="text-gray-400">{t('loading') || 'Loading...'}</div>
         </div>
       </div>
     );

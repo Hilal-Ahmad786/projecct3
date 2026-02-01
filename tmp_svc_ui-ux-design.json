@@ -1,0 +1,369 @@
+{
+  "serviceName": "UI/UX Design",
+  "features": {
+    "headline": "Human-Centered UI/UX Design",
+    "subtitle": "Design That Delights and Converts",
+    "description": "We create intuitive, beautiful digital experiences grounded in user research and validated through testing, ensuring every pixel serves a purpose.",
+    "items": [
+      {
+        "icon": "users",
+        "title": "User Research & Discovery",
+        "description": "Deep qualitative and quantitative research to understand your users, their goals, frustrations, and decision-making patterns.",
+        "details": [
+          "User interviews, surveys, and contextual inquiry sessions",
+          "Persona development with behavioral archetypes",
+          "Competitive UX audits and heuristic evaluations"
+        ]
+      },
+      {
+        "icon": "cursor",
+        "title": "Wireframing & Information Architecture",
+        "description": "Structured layouts and navigation systems that organize content logically and guide users toward their goals effortlessly.",
+        "details": [
+          "Low-fidelity wireframes for rapid concept validation",
+          "Site maps and user flow diagrams for complex applications",
+          "Card sorting and tree testing for optimal information hierarchy"
+        ]
+      },
+      {
+        "icon": "palette",
+        "title": "Visual Design & Branding",
+        "description": "Stunning visual designs that reinforce brand identity while maintaining usability and accessibility standards.",
+        "details": [
+          "High-fidelity mockups with pixel-perfect design execution",
+          "Color theory, typography, and iconography systems"
+        ]
+      },
+      {
+        "icon": "mobile",
+        "title": "Responsive & Mobile Design",
+        "description": "Adaptive designs that provide exceptional experiences across all devices from mobile phones to large desktop displays.",
+        "details": [
+          "Mobile-first design methodology with progressive enhancement",
+          "Touch-optimized interactions and gesture-based navigation",
+          "Device-specific layout optimization for key breakpoints"
+        ]
+      },
+      {
+        "icon": "sparkles",
+        "title": "Interactive Prototyping",
+        "description": "Fully interactive prototypes that simulate the real product experience for stakeholder buy-in and user testing.",
+        "details": [
+          "Clickable prototypes with realistic transitions and micro-interactions",
+          "User testing sessions with task completion analysis",
+          "Iterative refinement based on testing feedback"
+        ]
+      },
+      {
+        "icon": "code",
+        "title": "Design System Development",
+        "description": "Comprehensive component libraries and design tokens that ensure consistency across your entire product ecosystem.",
+        "details": [
+          "Reusable component libraries with usage guidelines",
+          "Design tokens for colors, spacing, typography, and elevation",
+          "Developer handoff documentation with coded specifications"
+        ]
+      },
+      {
+        "icon": "eye",
+        "title": "Usability Testing & Optimization",
+        "description": "Data-driven design validation through moderated testing, A/B experiments, and analytics-based iteration.",
+        "details": [
+          "Moderated and unmoderated usability testing sessions",
+          "A/B and multivariate testing for design decisions"
+        ]
+      },
+      {
+        "icon": "shield",
+        "title": "Accessibility & Inclusive Design",
+        "description": "WCAG-compliant designs that ensure your product is usable by everyone regardless of ability or assistive technology.",
+        "details": [
+          "WCAG 2.1 AA compliance audits and remediation",
+          "Screen reader testing and keyboard navigation optimization",
+          "Color contrast verification and alternative text strategies"
+        ]
+      }
+    ],
+    "stats": [
+      {
+        "label": "Products Designed",
+        "value": "300+"
+      },
+      {
+        "label": "Avg Usability Score Increase",
+        "value": "62%"
+      },
+      {
+        "label": "User Satisfaction Rating",
+        "value": "4.8/5"
+      },
+      {
+        "label": "Design Systems Built",
+        "value": "85+"
+      }
+    ]
+  },
+  "process": {
+    "headline": "Our Design Process",
+    "subtitle": "Research-Driven, User-Validated",
+    "description": "A design thinking methodology that starts with empathy, iterates through prototyping, and validates through real user feedback at every stage.",
+    "steps": [
+      {
+        "title": "Discover & Empathize",
+        "description": "We immerse ourselves in your users world through interviews, observation, and data analysis to deeply understand their needs.",
+        "icon": "users",
+        "details": [
+          "Stakeholder workshops to align on business goals and constraints",
+          "User research sessions including interviews and contextual inquiry",
+          "Analytics review and existing experience audit"
+        ]
+      },
+      {
+        "title": "Define & Architect",
+        "description": "We synthesize research into actionable insights, define the information architecture, and map out user journeys.",
+        "icon": "document",
+        "details": [
+          "Insight synthesis with affinity mapping and journey maps",
+          "Information architecture with site maps and content models"
+        ]
+      },
+      {
+        "title": "Design & Prototype",
+        "description": "We create wireframes, visual designs, and interactive prototypes that bring the product vision to life.",
+        "icon": "palette",
+        "details": [
+          "Wireframes progressing from low to high fidelity",
+          "Visual design with brand-aligned UI components",
+          "Interactive prototypes with realistic interactions and flows"
+        ]
+      },
+      {
+        "title": "Test & Validate",
+        "description": "We test designs with real users, gather feedback, and iterate until usability metrics meet our quality benchmarks.",
+        "icon": "check",
+        "details": [
+          "Moderated usability testing with think-aloud protocols",
+          "Task success rate and time-on-task measurement",
+          "Iterative design refinement based on testing insights"
+        ]
+      },
+      {
+        "title": "Handoff & Support",
+        "description": "We deliver production-ready designs with detailed specifications and support your development team through implementation.",
+        "icon": "code",
+        "details": [
+          "Developer-ready design specs with redlines and assets",
+          "Design system documentation and component guidelines",
+          "Implementation support and design QA during development"
+        ]
+      }
+    ]
+  },
+  "techStack": {
+    "headline": "Design Tools & Technology",
+    "subtitle": "Industry-Standard Design Tools",
+    "description": "We use the most powerful design and prototyping tools to create exceptional user experiences efficiently.",
+    "categories": [
+      {
+        "category": "Design & Prototyping",
+        "items": [
+          {
+            "name": "Figma",
+            "description": "Collaborative interface design tool for wireframes, mockups, and design systems."
+          },
+          {
+            "name": "Adobe XD",
+            "description": "Vector-based design and prototyping for web and mobile applications."
+          },
+          {
+            "name": "Sketch",
+            "description": "Precision UI design tool with extensive plugin ecosystem."
+          },
+          {
+            "name": "InVision",
+            "description": "Interactive prototyping and design collaboration platform."
+          }
+        ]
+      },
+      {
+        "category": "Motion & Interaction",
+        "items": [
+          {
+            "name": "Framer",
+            "description": "Advanced interactive prototyping with production-quality animations."
+          },
+          {
+            "name": "TailwindCSS",
+            "description": "Utility-first CSS framework for rapid design-to-code implementation."
+          },
+          {
+            "name": "React",
+            "description": "Component-based development for building interactive design system implementations."
+          }
+        ]
+      },
+      {
+        "category": "Development Handoff",
+        "items": [
+          {
+            "name": "TypeScript",
+            "description": "Type-safe component development ensuring design system reliability."
+          },
+          {
+            "name": "NextJS",
+            "description": "Production framework for implementing designed experiences with optimal performance."
+          },
+          {
+            "name": "NodeJS",
+            "description": "Backend services for design token management and asset delivery."
+          }
+        ]
+      }
+    ]
+  },
+  "portfolio": {
+    "headline": "Design Portfolio",
+    "subtitle": "Experiences That Make an Impact",
+    "description": "See how our design work has transformed digital products and delivered measurable business results.",
+    "items": [
+      {
+        "title": "Healthcare Patient Portal Redesign",
+        "industry": "Healthcare & MedTech",
+        "challenge": "A healthcare provider patient portal had a 23% task completion rate and generated 400+ support calls weekly due to confusing navigation and outdated interface.",
+        "solution": "We conducted extensive user research with patients and staff, redesigned the entire experience with simplified navigation, clear visual hierarchy, and WCAG AA accessibility compliance.",
+        "results": [
+          "Task completion rate increased from 23% to 89%",
+          "Support calls reduced by 67% within the first month",
+          "Patient satisfaction scores improved from 2.1 to 4.6 out of 5"
+        ],
+        "stats": [
+          {
+            "label": "Task Completion",
+            "value": "89%"
+          },
+          {
+            "label": "Support Calls",
+            "value": "-67%"
+          }
+        ]
+      },
+      {
+        "title": "Fintech Mobile Banking App",
+        "industry": "Financial Services",
+        "challenge": "A digital bank needed a mobile app that could compete with established banking apps while serving an underbanked demographic with varying levels of digital literacy.",
+        "solution": "We designed an inclusive mobile experience with progressive disclosure, plain language, contextual help, and a simplified transaction flow tested with 50+ users across literacy levels.",
+        "results": [
+          "App store rating of 4.8 stars within three months of launch",
+          "User onboarding completion rate of 91%"
+        ],
+        "stats": [
+          {
+            "label": "App Rating",
+            "value": "4.8★"
+          },
+          {
+            "label": "Onboarding Rate",
+            "value": "91%"
+          }
+        ]
+      },
+      {
+        "title": "Enterprise SaaS Dashboard",
+        "industry": "B2B Software",
+        "challenge": "A data analytics SaaS product had a steep learning curve with an average time-to-value of 6 weeks, causing 40% of trial users to churn before seeing results.",
+        "solution": "We redesigned the dashboard with guided onboarding, progressive feature revelation, customizable widgets, and contextual tooltips. We also built a comprehensive design system with 120+ components.",
+        "results": [
+          "Time-to-value reduced from 6 weeks to 3 days",
+          "Trial-to-paid conversion rate increased from 12% to 34%",
+          "Feature adoption across the product increased by 85%"
+        ],
+        "stats": [
+          {
+            "label": "Time-to-Value",
+            "value": "-93%"
+          },
+          {
+            "label": "Conversion Rate",
+            "value": "34%"
+          }
+        ]
+      }
+    ],
+    "aggregateStats": [
+      {
+        "label": "Products Designed",
+        "value": "300+"
+      },
+      {
+        "label": "Usability Improvement",
+        "value": "62%"
+      },
+      {
+        "label": "Avg Satisfaction",
+        "value": "4.8/5"
+      },
+      {
+        "label": "Design Systems",
+        "value": "85+"
+      }
+    ]
+  },
+  "faq": {
+    "headline": "UI/UX Design FAQ",
+    "subtitle": "Design Questions Answered",
+    "description": "Common questions about our design process, deliverables, and how we collaborate with your team.",
+    "categories": [
+      {
+        "category": "Process & Approach",
+        "items": [
+          {
+            "question": "What is the difference between UI and UX design?",
+            "answer": "UX design focuses on the overall experience, including research, information architecture, and interaction flows. UI design focuses on the visual presentation, including colors, typography, icons, and layout. We provide both as an integrated service because great products require both to work in harmony."
+          },
+          {
+            "question": "How long does a typical design project take?",
+            "answer": "A focused UX audit takes 2-3 weeks. A full product design from research to handoff typically takes 8-16 weeks depending on complexity. Design system projects range from 6-12 weeks. We work in weekly sprints with regular check-ins so you can track progress throughout."
+          },
+          {
+            "question": "Do you conduct user research for every project?",
+            "answer": "Yes, some level of user research is part of every engagement. For smaller projects, this might be a heuristic evaluation and stakeholder interviews. For larger projects, we conduct full user research including interviews, surveys, usability testing, and analytics analysis."
+          }
+        ]
+      },
+      {
+        "category": "Deliverables & Handoff",
+        "items": [
+          {
+            "question": "What design tools do you use?",
+            "answer": "We primarily use Figma for UI design, prototyping, and design systems due to its collaborative features. We also use Adobe XD, Sketch, and Framer depending on project needs. All deliverables are provided in formats your development team can easily work with."
+          },
+          {
+            "question": "How do you hand off designs to developers?",
+            "answer": "We provide comprehensive handoff packages including annotated designs with specifications, exported assets in all required formats, interactive prototypes, and design system documentation. We also remain available during development to answer questions and review implementation."
+          },
+          {
+            "question": "Do you build design systems?",
+            "answer": "Yes, design systems are one of our core offerings. We create comprehensive component libraries with usage guidelines, design tokens, accessibility documentation, and coded component references. Design systems ensure consistency as your product and team scale."
+          }
+        ]
+      },
+      {
+        "category": "Collaboration & Support",
+        "items": [
+          {
+            "question": "How do you collaborate with our existing team?",
+            "answer": "We integrate seamlessly with your team through shared Figma workspaces, regular design reviews, and asynchronous feedback loops. We can work alongside your in-house designers or serve as your dedicated design team, adapting to your preferred communication tools and workflows."
+          },
+          {
+            "question": "Can you redesign an existing product without starting from scratch?",
+            "answer": "Absolutely. We often do iterative redesigns that improve the experience progressively. We start with a UX audit to identify the highest-impact improvements, then redesign in phases so your users can adapt gradually and you can measure the impact of each change."
+          },
+          {
+            "question": "Do you offer ongoing design support after the project?",
+            "answer": "Yes, we offer flexible retainer arrangements for ongoing design needs including new feature design, design QA during development, usability testing, and design system maintenance. This ensures your product continues to evolve with consistent quality."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
+import { useTranslations } from '@/hooks/useTranslations';
 
 interface CookieConsentProps {
   privacyPolicyUrl?: string;
@@ -23,6 +24,7 @@ export default function CookieConsent({
   onAccept,
   onDecline,
 }: CookieConsentProps) {
+  const { t } = useTranslations();
   const [isVisible, setIsVisible] = useState(false);
   const [showPreferences, setShowPreferences] = useState(false);
   const [preferences, setPreferences] = useState<CookiePreferences>({
@@ -101,13 +103,12 @@ export default function CookieConsent({
                 <div className="flex flex-col md:flex-row md:items-center gap-4">
                   <div className="flex-1">
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                      We value your privacy
+                      {t('cookieConsent.title')}
                     </h3>
                     <p className="text-sm text-gray-600">
-                      We use cookies to enhance your browsing experience, analyze site traffic, and personalize content.
-                      By clicking &quot;Accept All&quot;, you consent to our use of cookies.{' '}
+                      {t('cookieConsent.description')}{' '}
                       <Link href={privacyPolicyUrl} className="text-gray-900 underline hover:no-underline">
-                        Privacy Policy
+                        {t('cookieConsent.privacyPolicy')}
                       </Link>
                     </p>
                   </div>
@@ -116,19 +117,19 @@ export default function CookieConsent({
                       onClick={() => setShowPreferences(true)}
                       className="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors"
                     >
-                      Customize
+                      {t('cookieConsent.customize')}
                     </button>
                     <button
                       onClick={handleDecline}
                       className="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors"
                     >
-                      Decline
+                      {t('cookieConsent.decline')}
                     </button>
                     <button
                       onClick={handleAcceptAll}
                       className="px-6 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg hover:bg-gray-800 transition-colors"
                     >
-                      Accept All
+                      {t('cookieConsent.acceptAll')}
                     </button>
                   </div>
                 </div>
@@ -138,7 +139,7 @@ export default function CookieConsent({
               <div className="p-6">
                 <div className="flex justify-between items-center mb-4">
                   <h3 className="text-lg font-semibold text-gray-900">
-                    Cookie Preferences
+                    {t('cookieConsent.preferencesTitle')}
                   </h3>
                   <button
                     onClick={() => setShowPreferences(false)}
@@ -154,8 +155,8 @@ export default function CookieConsent({
                   {/* Necessary cookies */}
                   <div className="flex items-center justify-between py-3 border-b border-gray-100">
                     <div>
-                      <p className="font-medium text-gray-900">Necessary Cookies</p>
-                      <p className="text-sm text-gray-500">Required for the website to function properly</p>
+                      <p className="font-medium text-gray-900">{t('cookieConsent.necessaryCookies')}</p>
+                      <p className="text-sm text-gray-500">{t('cookieConsent.necessaryDesc')}</p>
                     </div>
                     <div className="relative">
                       <input
@@ -173,8 +174,8 @@ export default function CookieConsent({
                   {/* Analytics cookies */}
                   <div className="flex items-center justify-between py-3 border-b border-gray-100">
                     <div>
-                      <p className="font-medium text-gray-900">Analytics Cookies</p>
-                      <p className="text-sm text-gray-500">Help us understand how visitors use our site</p>
+                      <p className="font-medium text-gray-900">{t('cookieConsent.analyticsCookies')}</p>
+                      <p className="text-sm text-gray-500">{t('cookieConsent.analyticsDesc')}</p>
                     </div>
                     <button
                       onClick={() => setPreferences(p => ({ ...p, analytics: !p.analytics }))}
@@ -191,8 +192,8 @@ export default function CookieConsent({
                   {/* Marketing cookies */}
                   <div className="flex items-center justify-between py-3">
                     <div>
-                      <p className="font-medium text-gray-900">Marketing Cookies</p>
-                      <p className="text-sm text-gray-500">Used to deliver relevant advertisements</p>
+                      <p className="font-medium text-gray-900">{t('cookieConsent.marketingCookies')}</p>
+                      <p className="text-sm text-gray-500">{t('cookieConsent.marketingDesc')}</p>
                     </div>
                     <button
                       onClick={() => setPreferences(p => ({ ...p, marketing: !p.marketing }))}
@@ -212,13 +213,13 @@ export default function CookieConsent({
                     onClick={() => setShowPreferences(false)}
                     className="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors"
                   >
-                    Cancel
+                    {t('cookieConsent.cancel')}
                   </button>
                   <button
                     onClick={handleSavePreferences}
                     className="px-6 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg hover:bg-gray-800 transition-colors"
                   >
-                    Save Preferences
+                    {t('cookieConsent.savePreferences')}
                   </button>
                 </div>
               </div>

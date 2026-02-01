@@ -1,0 +1,214 @@
+{
+  "e-commerce": {
+    "serviceName": "E-Ticaret Geliştirme",
+    "features": {
+      "headline": "Güçlü E-Ticaret Çözümleri",
+      "subtitle": "Dönüştüren Mağazalar Oluşturun",
+      "description": "Göz ataanları alıcıya dönüştüren, çarpıcı tasarımı sorunsuz ödeme deneyimleriyle birleştiren yüksek performanslı çevrimiçi mağazalar tasarlıyor ve geliştiriyoruz.",
+      "items": [
+        {
+          "icon": "cart",
+          "title": "Özel Vitrin Tasarımı",
+          "description": "Marka kimliğinize özel olarak hazırlanmış ve maksimum dönüşümler için optimize edilmiş güzel bir şekilde hazırlanmış vitrinler.",
+          "details": [
+            "Gelişmiş filtreleme ve arama ile duyarlı ürün katalogları",
+            "Dönüşüm odaklı düzenler ile marka uyumlu görsel tasarım",
+            "Mevsimsel kampanyalar için A/B test edilmiş açılış sayfaları"
+          ]
+        },
+        {
+          "icon": "lock",
+          "title": "Güvenli Ödeme Entegrasyonu",
+          "description": "Birden fazla ağ geçidi ve küresel para birimleri desteği ile PCI uyumlu ödeme işleme.",
+          "details": [
+            "Stripe, PayPal ve bölgesel ödeme ağ geçidi entegrasyonu",
+            "Otomatik döviz kuru güncellemeleri ile çoklu para birimi desteği",
+            "Dolandırıcılık tespiti ve ters ibraz önleme sistemleri"
+          ]
+        },
+        {
+          "icon": "database",
+          "title": "Envanter Yönetimi",
+          "description": "Otomatik yeniden stok uyarıları ile birden fazla depo ve satış kanalında gerçek zamanlı envanter takibi.",
+          "details": [
+            "Gerçek zamanlı çoklu depo stok senkronizasyonu",
+            "Otomatik düşük stok uyarıları ve satın alma siparişi oluşturma",
+            "SKU takibi ile varyant ve paket yönetimi"
+          ]
+        },
+        {
+          "icon": "globe",
+          "title": "Çok Kanallı Satış",
+          "description": "Web sitenizde, pazaryerlerinde ve sosyal medyada tek bir birleşik gösterge panosundan sorunsuz bir şekilde satın.",
+          "details": [
+            "Amazon, eBay ve Walmart pazaryeri entegrasyonları",
+            "Instagram, Facebook ve TikTok'ta sosyal ticaret"
+          ]
+        },
+        {
+          "icon": "chart",
+          "title": "Analitik ve Raporlama",
+          "description": "Müşteri davranışı takibi ve gelir tahmin gösterge panelleri ile kapsamlı satış analitiği.",
+          "details": [
+            "Gerçek zamanlı gelir, AOV ve dönüşüm oranı gösterge panelleri",
+            "Müşteri yaşam boyu değeri ve kohort analizi",
+            "Eyleme dönüştürülebilir önerilerle huni düşüş analizi"
+          ]
+        },
+        {
+          "icon": "users",
+          "title": "Müşteri Hesap Portalları",
+          "description": "Sipariş geçmişi, istek listeleri, sadakat programları ve abonelik yönetimi ile self servis müşteri portalları.",
+          "details": [
+            "Gerçek zamanlı kargo güncellemeleri ile sipariş takibi",
+            "İstek listesi, kaydedilmiş sepetler ve ürün karşılaştırma özellikleri",
+            "Sadakat puanları ve yönlendirme ödül sistemleri"
+          ]
+        },
+        {
+          "icon": "lightning",
+          "title": "Performans Optimizasyonu",
+          "description": "Hemen çıkma oranlarını azaltmak ve arama sıralamalarını artırmak için son derece hızlı sayfa yüklemeleri ve pürüzsüz etkileşimler.",
+          "details": [
+            "Tembel yükleme ve CDN teslimatı ile görüntü optimizasyonu",
+            "Anlık ürün sayfası yüklemeleri için sunucu tarafı oluşturma"
+          ]
+        },
+        {
+          "icon": "search",
+          "title": "SEO ve Ürün Keşfi",
+          "description": "Akıllı site arama ve kişiselleştirilmiş önerilerle arama motoru optimize ürün sayfaları.",
+          "details": [
+            "Arama sonuçlarında zengin snippet'ler için şema işaretleme",
+            "Yazım hatası toleransı ile AI destekli site içi arama",
+            "Tarama geçmişine dayalı kişiselleştirilmiş ürün önerileri"
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "label": "Ortalama Dönüşüm Artışı",
+          "value": "67%"
+        },
+        {
+          "label": "Başlatılan Mağazalar",
+          "value": "180+"
+        },
+        {
+          "label": "Toplam İşlenen GMV",
+          "value": "$50M+"
+        },
+        {
+          "label": "Ort. Sayfa Yükleme Süresi",
+          "value": "1.2s"
+        }
+      ]
+    }
+  },
+  "machine-learning": {
+    "serviceName": "Makine Öğrenimi Çözümleri",
+    "features": {
+      "headline": "Akıllı Makine Öğrenimi Çözümleri",
+      "subtitle": "Gerçek İş Değeri Sağlayan Yapay Zeka",
+      "description": "Kararları otomatikleştiren, içgörüleri ortaya çıkaran ve işletmeniz için rekabet avantajları yaratan üretim sınıfı makine öğrenimi sistemleri oluşturuyor ve dağıtıyoruz.",
+      "items": [
+        {
+          "icon": "brain",
+          "title": "Tahmine Dayalı Analitik",
+          "description": "Özel iş verilerinize göre eğitilmiş modeller ile talep, kayıp, gelir ve pazar trendlerini tahmin edin.",
+          "details": [
+            "Talep planlaması ve envanter optimizasyonu için zaman serisi tahmini",
+            "Eyleme dönüştürülebilir elde tutma tetikleyicileri ile müşteri kaybı tahmini",
+            "Güven aralıkları ile gelir ve büyüme projeksiyonları"
+          ]
+        },
+        {
+          "icon": "search",
+          "title": "Doğal Dil İşleme",
+          "description": "Duygu analizi, varlık tanıma, belge sınıflandırma ve konuşma yapay zekası ile metin verilerinden anlam çıkarın.",
+          "details": [
+            "Müşteri incelemeleri ve sosyal medya izleme için duygu analizi",
+            "Otomatik belge işleme için adlandırılmış varlık tanıma",
+            "LLM'ler kullanarak özel chatbot'lar ve soru-cevap sistemleri"
+          ]
+        },
+        {
+          "icon": "eye",
+          "title": "Bilgisayar Görüşü",
+          "description": "Üretim, perakende ve sağlık uygulamaları için otomatik görsel inceleme, nesne algılama ve görüntü sınıflandırma.",
+          "details": [
+            "Üretim kalite kontrol hatları için kusur tespiti",
+            "Perakende analitiği için ürün tanıma ve raf analizi"
+          ]
+        },
+        {
+          "icon": "chart",
+          "title": "Öneri Motorları",
+          "description": "Etkileşimi, çapraz satış fırsatlarını ve müşteri yaşam boyu değerini artıran kişiselleştirilmiş öneri sistemleri.",
+          "details": [
+            "İşbirlikçi ve içerik tabanlı filtreleme algoritmaları",
+            "50ms'nin altında gecikmeyle gerçek zamanlı öneri sunumu",
+            "Kullanıcı etkileşim verilerinde sürekli model yeniden eğitimi"
+          ]
+        },
+        {
+          "icon": "sparkles",
+          "title": "Anomali Tespiti",
+          "description": "Finansal, operasyonel ve güvenlik verilerinde gerçek zamanlı olarak dolandırıcılığı, sistem arızalarını ve olağandışı kalıpları tanımlayın.",
+          "details": [
+            "Gerçek zamanlı puanlama ile işlem dolandırıcılığı tespiti",
+            "Proaktif olay müdahalesi için altyapı anomali tespiti",
+            "Üretim kalite güvencesi için istatistiksel süreç kontrolü"
+          ]
+        },
+        {
+          "icon": "cog",
+          "title": "MLOps ve Model Yönetimi",
+          "description": "Üretim ortamlarında modelleri eğitmek, sürümlemek, dağıtmak ve izlemek için uçtan uca ML altyapısı.",
+          "details": [
+            "Deney takibi ile otomatik model eğitim pipeline'ları",
+            "Güvenli model dağıtımları için A/B test çerçevesi",
+            "Sapma tespiti uyarıları ile model performans izleme"
+          ]
+        },
+        {
+          "icon": "database",
+          "title": "Veri Pipeline Mühendisliği",
+          "description": "Sürekli model iyileştirmesi için ölçekte eğitim verilerini toplayan, temizleyen, dönüştüren ve teslim eden sağlam veri pipeline'ları.",
+          "details": [
+            "Yapılandırılmış ve yapılandırılmamış veri kaynakları için ETL pipeline'ları",
+            "Modeller arası tutarlı özellik mühendisliği için özellik depoları"
+          ]
+        },
+        {
+          "icon": "shield",
+          "title": "Sorumlu Yapay Zeka ve Yönetişim",
+          "description": "Yapay zeka sistemlerinizin adil, şeffaf ve uyumlu olmasını sağlayan önyargı denetimi, açıklanabilirlik araçları ve yönetişim çerçeveleri.",
+          "details": [
+            "SHAP ve LIME ile model açıklanabilirlik gösterge panelleri",
+            "Korunan nitelikler genelinde önyargı tespiti ve azaltma",
+            "GDPR ve sektör standartları için düzenleyici uyumluluk dokümantasyonu"
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "label": "Dağıtılan Modeller",
+          "value": "200+"
+        },
+        {
+          "label": "Tahmin Doğruluğu",
+          "value": "94%+"
+        },
+        {
+          "label": "İşlenen Veri Noktaları",
+          "value": "5B+"
+        },
+        {
+          "label": "Sağlanan Maliyet Tasarrufu",
+          "value": "$30M+"
+        }
+      ]
+    }
+  }
+}

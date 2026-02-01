@@ -1,0 +1,396 @@
+{
+  "serviceName": "AI Solutions",
+  "features": {
+    "headline": "Enterprise AI That Delivers Measurable ROI",
+    "subtitle": "Intelligent Automation & Predictive Analytics",
+    "description": "We build production-grade AI systems that integrate seamlessly into your existing infrastructure, turning raw data into actionable insights and automating complex decision-making workflows.",
+    "items": [
+      {
+        "icon": "brain",
+        "title": "Custom Machine Learning Models",
+        "description": "Purpose-built ML models trained on your proprietary data to solve domain-specific challenges with high accuracy.",
+        "details": [
+          "Supervised and unsupervised learning pipelines tailored to your industry vertical",
+          "Continuous model retraining with automated drift detection and performance monitoring",
+          "Explainable AI outputs with SHAP and LIME interpretability layers"
+        ]
+      },
+      {
+        "icon": "chat",
+        "title": "Conversational AI & NLP",
+        "description": "Deploy intelligent chatbots and natural language processing systems that understand context, sentiment, and intent.",
+        "details": [
+          "Multi-turn dialogue management with memory and context retention across sessions",
+          "Multilingual support covering 40+ languages with dialect-aware processing",
+          "Integration with CRM, helpdesk, and knowledge base platforms for grounded responses"
+        ]
+      },
+      {
+        "icon": "eye",
+        "title": "Computer Vision Systems",
+        "description": "Automated visual inspection, object detection, and image classification for manufacturing, retail, and healthcare.",
+        "details": [
+          "Real-time video stream analysis with sub-100ms inference latency",
+          "Custom-trained detection models for defect identification and quality assurance",
+          "Edge deployment optimization for on-premises cameras and IoT devices"
+        ]
+      },
+      {
+        "icon": "chart",
+        "title": "Predictive Analytics & Forecasting",
+        "description": "Time-series forecasting and predictive models that anticipate demand, churn, and market shifts before they happen.",
+        "details": [
+          "Ensemble forecasting combining statistical and deep learning approaches",
+          "Scenario modeling with Monte Carlo simulations for risk assessment",
+          "Automated feature engineering from structured and unstructured data sources"
+        ]
+      },
+      {
+        "icon": "search",
+        "title": "Intelligent Document Processing",
+        "description": "Extract, classify, and route information from invoices, contracts, and forms with AI-powered document understanding.",
+        "details": [
+          "OCR with layout-aware extraction for tables, headers, and nested structures",
+          "Custom entity recognition for domain-specific terminology and codes",
+          "Automated validation rules with human-in-the-loop escalation workflows"
+        ]
+      },
+      {
+        "icon": "sparkles",
+        "title": "Generative AI Integration",
+        "description": "Harness the power of large language models with secure, enterprise-grade generative AI applications.",
+        "details": [
+          "RAG pipelines with vector databases for accurate, citation-backed responses",
+          "Fine-tuned foundation models on proprietary datasets with data privacy guarantees",
+          "Content generation workflows for marketing, documentation, and reporting"
+        ]
+      },
+      {
+        "icon": "lightning",
+        "title": "MLOps & Model Lifecycle Management",
+        "description": "End-to-end infrastructure for training, deploying, monitoring, and versioning ML models in production.",
+        "details": [
+          "CI/CD pipelines for model deployment with automated A/B testing and canary rollouts",
+          "Real-time performance dashboards tracking accuracy, latency, and resource usage",
+          "Model registry with full lineage tracking from training data to production endpoint"
+        ]
+      },
+      {
+        "icon": "shield",
+        "title": "AI Governance & Compliance",
+        "description": "Ensure your AI systems meet regulatory requirements with built-in bias detection, audit trails, and transparency.",
+        "details": [
+          "Fairness metrics and bias auditing across protected demographic attributes",
+          "Comprehensive audit logging for every prediction with full reproducibility"
+        ]
+      }
+    ],
+    "stats": [
+      {
+        "label": "Models Deployed",
+        "value": "200+"
+      },
+      {
+        "label": "Avg. Accuracy Improvement",
+        "value": "34%"
+      },
+      {
+        "label": "Processing Speed Gain",
+        "value": "12x"
+      },
+      {
+        "label": "Client Retention Rate",
+        "value": "96%"
+      }
+    ]
+  },
+  "process": {
+    "headline": "From Data Strategy to Production AI",
+    "subtitle": "Our Proven AI Development Process",
+    "description": "We follow a structured, iterative approach that reduces risk and accelerates time-to-value for every AI initiative.",
+    "steps": [
+      {
+        "title": "Discovery & Data Assessment",
+        "description": "We audit your existing data assets, identify high-impact use cases, and define success metrics aligned with business KPIs.",
+        "icon": "search",
+        "details": [
+          "Stakeholder interviews and process mapping to uncover automation opportunities",
+          "Data quality assessment covering completeness, consistency, and labeling readiness",
+          "ROI projection with implementation roadmap and resource planning"
+        ]
+      },
+      {
+        "title": "Data Engineering & Preparation",
+        "description": "Build robust data pipelines that clean, transform, and enrich your data for model training and inference.",
+        "icon": "database",
+        "details": [
+          "ETL pipeline construction with schema validation and anomaly detection",
+          "Feature store development for reusable, versioned feature sets across projects",
+          "Data augmentation strategies to address class imbalance and sparse datasets"
+        ]
+      },
+      {
+        "title": "Model Development & Training",
+        "description": "Iterative experimentation with rigorous evaluation to select the best-performing architecture for your use case.",
+        "icon": "brain",
+        "details": [
+          "Hyperparameter optimization using Bayesian search and neural architecture search",
+          "Cross-validation with stratified sampling to ensure generalization",
+          "Benchmark comparison against baseline models and industry standards"
+        ]
+      },
+      {
+        "title": "Integration & Deployment",
+        "description": "Production-grade deployment with API endpoints, batch processing, or edge inference depending on your requirements.",
+        "icon": "rocket",
+        "details": [
+          "Containerized model serving with auto-scaling and load balancing",
+          "REST and gRPC API endpoints with authentication and rate limiting",
+          "Shadow deployment and gradual rollout to minimize production risk"
+        ]
+      },
+      {
+        "title": "Monitoring & Optimization",
+        "description": "Continuous performance tracking with automated retraining triggers and proactive alerting on model degradation.",
+        "icon": "chart",
+        "details": [
+          "Real-time drift detection on input distributions and prediction outputs",
+          "Automated retraining pipelines triggered by performance threshold breaches",
+          "Monthly performance reviews with optimization recommendations"
+        ]
+      }
+    ]
+  },
+  "techStack": {
+    "headline": "State-of-the-Art AI Technology Stack",
+    "subtitle": "Tools & Frameworks We Use",
+    "description": "We leverage the most mature and performant AI frameworks to build solutions that scale reliably in production environments.",
+    "categories": [
+      {
+        "category": "ML & Deep Learning Frameworks",
+        "items": [
+          {
+            "name": "TensorFlow",
+            "description": "Production-grade deep learning with TF Serving for scalable model deployment"
+          },
+          {
+            "name": "PyTorch",
+            "description": "Research-to-production framework for custom model architectures and rapid prototyping"
+          },
+          {
+            "name": "scikit-learn",
+            "description": "Classical ML algorithms for tabular data, feature engineering, and baseline models"
+          },
+          {
+            "name": "Keras",
+            "description": "High-level API for fast experimentation with neural network architectures"
+          }
+        ]
+      },
+      {
+        "category": "LLM & NLP Platforms",
+        "items": [
+          {
+            "name": "OpenAI",
+            "description": "GPT-4 integration for content generation, summarization, and reasoning tasks"
+          },
+          {
+            "name": "Hugging Face",
+            "description": "Open-source transformer models for NER, classification, and embedding generation"
+          },
+          {
+            "name": "LangChain",
+            "description": "Orchestration framework for building RAG pipelines and multi-agent systems"
+          }
+        ]
+      },
+      {
+        "category": "Infrastructure & MLOps",
+        "items": [
+          {
+            "name": "AWS",
+            "description": "SageMaker, Bedrock, and Lambda for end-to-end ML lifecycle management"
+          },
+          {
+            "name": "Docker",
+            "description": "Containerized model serving for consistent deployment across environments"
+          },
+          {
+            "name": "Kubernetes",
+            "description": "Orchestration for auto-scaling inference workloads under variable demand"
+          },
+          {
+            "name": "PostgreSQL",
+            "description": "Structured data storage with pgvector for hybrid search and embeddings"
+          }
+        ]
+      }
+    ]
+  },
+  "portfolio": {
+    "headline": "AI Solutions That Drive Real Business Outcomes",
+    "subtitle": "Selected Case Studies",
+    "description": "See how our AI implementations have transformed operations and created competitive advantages across industries.",
+    "items": [
+      {
+        "title": "Predictive Maintenance Platform for Fleet Management",
+        "industry": "Transportation & Logistics",
+        "challenge": "A national logistics company was losing $2.3M annually to unplanned vehicle breakdowns, causing delivery delays and emergency repair costs.",
+        "solution": "We built a predictive maintenance system using sensor telemetry from 1,200 vehicles, training gradient-boosted models to predict component failures 14 days in advance.",
+        "results": [
+          "Reduced unplanned downtime by 73% within the first six months of deployment",
+          "Saved $1.8M annually in emergency repair and towing costs",
+          "Improved on-time delivery rate from 84% to 96%"
+        ],
+        "stats": [
+          {
+            "label": "Downtime Reduction",
+            "value": "73%"
+          },
+          {
+            "label": "Annual Savings",
+            "value": "$1.8M"
+          }
+        ]
+      },
+      {
+        "title": "AI-Powered Claims Processing for Insurance",
+        "industry": "Insurance & Financial Services",
+        "challenge": "Manual claims review was taking an average of 12 business days, leading to customer dissatisfaction and a 22% abandonment rate on complex claims.",
+        "solution": "Deployed an intelligent document processing pipeline with NLP-based damage assessment and fraud detection, automating 68% of routine claims end-to-end.",
+        "results": [
+          "Reduced average claims processing time from 12 days to 2.4 days",
+          "Detected $4.2M in potentially fraudulent claims in the first year",
+          "Improved customer satisfaction scores by 41 points (NPS)"
+        ],
+        "stats": [
+          {
+            "label": "Processing Speed",
+            "value": "5x Faster"
+          },
+          {
+            "label": "Fraud Detected",
+            "value": "$4.2M"
+          }
+        ]
+      },
+      {
+        "title": "Demand Forecasting Engine for Retail Chain",
+        "industry": "Retail & E-Commerce",
+        "challenge": "A 200-store retail chain struggled with inventory imbalances, resulting in $6M in annual markdowns and frequent stockouts on high-demand products.",
+        "solution": "Built an ensemble forecasting engine combining LSTM networks with external signals (weather, events, promotions) to predict SKU-level demand at each store.",
+        "results": [
+          "Reduced overstock markdowns by 38%, recovering $2.3M in margin",
+          "Decreased stockout incidents by 52% across top-performing categories"
+        ],
+        "stats": [
+          {
+            "label": "Markdown Reduction",
+            "value": "38%"
+          },
+          {
+            "label": "Stockout Decrease",
+            "value": "52%"
+          }
+        ]
+      },
+      {
+        "title": "Conversational AI for Healthcare Patient Intake",
+        "industry": "Healthcare",
+        "challenge": "A hospital network processed 15,000 patient intake forms monthly, requiring 22 FTEs for manual data entry and verification with a 7% error rate.",
+        "solution": "Implemented a conversational AI system with voice-to-text and NLP entity extraction, enabling patients to complete intake digitally with real-time validation.",
+        "results": [
+          "Automated 81% of patient intake workflows with 99.2% data accuracy",
+          "Reduced staffing needs from 22 to 6 FTEs, reallocating resources to patient care",
+          "Cut average intake time from 25 minutes to 8 minutes per patient"
+        ],
+        "stats": [
+          {
+            "label": "Automation Rate",
+            "value": "81%"
+          },
+          {
+            "label": "Accuracy",
+            "value": "99.2%"
+          }
+        ]
+      }
+    ],
+    "aggregateStats": [
+      {
+        "label": "AI Projects Delivered",
+        "value": "120+"
+      },
+      {
+        "label": "Combined Client Savings",
+        "value": "$48M+"
+      },
+      {
+        "label": "Average ROI",
+        "value": "340%"
+      },
+      {
+        "label": "Industries Served",
+        "value": "18"
+      }
+    ]
+  },
+  "faq": {
+    "headline": "AI Solutions FAQ",
+    "subtitle": "Common Questions",
+    "description": "Answers to the most frequent questions we receive about our AI development services and engagement process.",
+    "categories": [
+      {
+        "category": "Getting Started",
+        "items": [
+          {
+            "question": "How much data do we need to start an AI project?",
+            "answer": "It depends on the complexity of the problem. For many classification and prediction tasks, a few thousand labeled examples can produce strong results. For computer vision, we typically recommend at least 1,000 annotated images per class. We also offer data augmentation and transfer learning strategies that can significantly reduce data requirements. During our discovery phase, we assess your existing data and provide a clear recommendation."
+          },
+          {
+            "question": "What if our data is messy or incomplete?",
+            "answer": "Most real-world data is messy -- that is completely normal. Our data engineering phase includes comprehensive cleaning, deduplication, imputation, and validation steps. We build automated data quality pipelines that continue to improve data integrity over time. In cases where data gaps exist, we design collection strategies and synthetic data approaches to fill them."
+          },
+          {
+            "question": "How long does a typical AI project take from kickoff to production?",
+            "answer": "A focused proof-of-concept can be delivered in 4-6 weeks. A full production deployment with integration, monitoring, and optimization typically takes 3-5 months depending on data readiness and system complexity. We use an agile approach with bi-weekly demos so you see progress continuously."
+          }
+        ]
+      },
+      {
+        "category": "Technical & Security",
+        "items": [
+          {
+            "question": "Can you work with our existing cloud infrastructure?",
+            "answer": "Absolutely. We deploy on AWS, Google Cloud, and Azure, and we have deep experience with on-premises deployments for organizations with strict data residency requirements. We design our solutions to integrate with your existing CI/CD pipelines, data warehouses, and monitoring tools."
+          },
+          {
+            "question": "How do you ensure AI model security and data privacy?",
+            "answer": "Security is built into every layer. We use encrypted data pipelines, role-based access controls, and private VPC deployments. For sensitive industries, we support federated learning and differential privacy techniques that train models without exposing raw data. All our processes are SOC 2 and GDPR compliant."
+          },
+          {
+            "question": "What happens when model performance degrades over time?",
+            "answer": "We implement comprehensive monitoring that tracks prediction accuracy, data drift, and feature importance in real time. When performance drops below configured thresholds, automated retraining pipelines kick in using the latest data. We also conduct quarterly model reviews to proactively identify optimization opportunities."
+          }
+        ]
+      },
+      {
+        "category": "Cost & Engagement",
+        "items": [
+          {
+            "question": "What does an AI project typically cost?",
+            "answer": "AI projects vary widely based on scope. A focused NLP or classification solution might start at $40,000-$80,000, while enterprise-scale predictive platforms with multiple models and integrations can range from $150,000-$500,000+. We provide detailed estimates after our discovery phase and offer phased delivery to manage budget exposure."
+          },
+          {
+            "question": "Do you offer ongoing support after deployment?",
+            "answer": "Yes. We offer tiered support plans that include model monitoring, retraining, performance optimization, and priority bug fixes. Most clients opt for our managed AI service where we handle the full MLOps lifecycle, allowing your team to focus on business outcomes rather than infrastructure."
+          },
+          {
+            "question": "Can you train our internal team to manage the AI systems?",
+            "answer": "Absolutely. Knowledge transfer is a core part of our engagement. We provide hands-on training sessions, detailed documentation, and recorded walkthroughs covering model architecture, monitoring dashboards, and retraining procedures. Our goal is to make your team self-sufficient while remaining available for advanced support."
+          }
+        ]
+      }
+    ]
+  }
+}

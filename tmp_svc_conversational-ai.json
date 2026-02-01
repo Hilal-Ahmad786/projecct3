@@ -1,0 +1,371 @@
+{
+  "serviceName": "Conversational AI",
+  "features": {
+    "headline": "Intelligent Conversations That Drive Results",
+    "subtitle": "Next-Generation AI Communication",
+    "description": "We design and deploy conversational AI systems that understand context, remember history, and resolve complex queries, transforming customer interactions from frustrating scripts into natural, productive dialogues.",
+    "items": [
+      {
+        "icon": "chat",
+        "title": "Enterprise Chatbot Development",
+        "description": "Custom-built chatbots powered by large language models that handle complex, multi-turn conversations with human-like understanding and accuracy.",
+        "details": [
+          "Multi-turn dialogue management with context retention across sessions",
+          "Intent classification with confidence scoring and graceful fallback routing",
+          "Seamless handoff to human agents with full conversation context transfer"
+        ]
+      },
+      {
+        "icon": "brain",
+        "title": "RAG-Powered Knowledge Assistants",
+        "description": "Retrieval-Augmented Generation systems that ground AI responses in your proprietary documents, policies, and knowledge bases for factually accurate answers.",
+        "details": [
+          "Vector embedding pipelines for documents, FAQs, and knowledge articles",
+          "Hybrid search combining semantic and keyword retrieval for precision",
+          "Source citation and confidence scoring for every generated response"
+        ]
+      },
+      {
+        "icon": "globe",
+        "title": "Multilingual Conversation Support",
+        "description": "AI assistants that fluently communicate in 50+ languages with automatic language detection and culturally appropriate response generation.",
+        "details": [
+          "Real-time language detection and seamless mid-conversation switching",
+          "Culturally adapted responses respecting regional communication norms"
+        ]
+      },
+      {
+        "icon": "cog",
+        "title": "Workflow Automation Agents",
+        "description": "AI agents that go beyond answering questions by executing actions, booking appointments, processing orders, and updating records through natural conversation.",
+        "details": [
+          "API-connected agents that perform CRUD operations via conversational commands",
+          "Multi-step workflow orchestration with confirmation and rollback capabilities",
+          "Integration with CRM, ERP, and ticketing systems for end-to-end automation"
+        ]
+      },
+      {
+        "icon": "sparkles",
+        "title": "Voice AI & Speech Interfaces",
+        "description": "Voice-enabled AI solutions for IVR systems, voice assistants, and speech-to-action interfaces with natural language understanding.",
+        "details": [
+          "Speech-to-text with domain-specific vocabulary fine-tuning",
+          "Natural text-to-speech with emotion-aware voice synthesis",
+          "Voice biometric authentication for secure self-service interactions"
+        ]
+      },
+      {
+        "icon": "search",
+        "title": "Conversational Search & Discovery",
+        "description": "Replace traditional keyword search with natural language querying that understands user intent and delivers precise, contextual results.",
+        "details": [
+          "Natural language to structured query translation for databases and catalogs",
+          "Faceted conversation flows that narrow results through dialogue"
+        ]
+      },
+      {
+        "icon": "chart",
+        "title": "Analytics & Conversation Intelligence",
+        "description": "Deep analytics on conversation patterns, sentiment trends, and resolution rates to continuously optimize AI performance and customer satisfaction.",
+        "details": [
+          "Real-time sentiment analysis and escalation trigger detection",
+          "Conversation funnel analytics with drop-off and resolution tracking",
+          "Topic clustering to identify emerging customer concerns proactively"
+        ]
+      },
+      {
+        "icon": "shield",
+        "title": "Safety & Compliance Guardrails",
+        "description": "Enterprise-grade safety layers that prevent hallucinations, enforce brand guidelines, and ensure regulatory compliance in every interaction.",
+        "details": [
+          "Content filtering and toxicity detection with configurable thresholds",
+          "Brand voice enforcement and off-topic conversation redirection"
+        ]
+      }
+    ],
+    "stats": [
+      {
+        "label": "Resolution Rate",
+        "value": "87%"
+      },
+      {
+        "label": "Languages Supported",
+        "value": "50+"
+      },
+      {
+        "label": "Avg Response Time",
+        "value": "<2s"
+      },
+      {
+        "label": "Customer Satisfaction",
+        "value": "4.6/5"
+      }
+    ]
+  },
+  "process": {
+    "headline": "Our Conversational AI Process",
+    "subtitle": "From Concept to Intelligent Assistant",
+    "description": "A proven methodology for building conversational AI systems that delight users, reduce operational costs, and scale effortlessly across channels and languages.",
+    "steps": [
+      {
+        "title": "Conversation Design & Scoping",
+        "description": "We analyze your customer interactions, map conversation flows, and define the AI assistant personality, capabilities, and success metrics.",
+        "icon": "chat",
+        "details": [
+          "Audit existing support tickets, chat logs, and call recordings for pattern analysis",
+          "Design conversation flow diagrams covering happy paths and edge cases",
+          "Define persona, tone of voice, and escalation policies"
+        ]
+      },
+      {
+        "title": "Knowledge Base & Data Preparation",
+        "description": "Curate, structure, and embed your organizational knowledge into vector stores optimized for fast, accurate retrieval.",
+        "icon": "database",
+        "details": [
+          "Document ingestion pipeline with chunking and metadata enrichment",
+          "Knowledge gap analysis and content creation for missing coverage areas"
+        ]
+      },
+      {
+        "title": "Model Fine-Tuning & Integration",
+        "description": "Configure and fine-tune language models on your domain data, then integrate with your existing tech stack and business systems.",
+        "icon": "brain",
+        "details": [
+          "Prompt engineering and few-shot optimization for domain accuracy",
+          "API integration with CRM, ticketing, and backend business systems",
+          "Webhook and event-driven triggers for proactive conversation initiation"
+        ]
+      },
+      {
+        "title": "Testing & Safety Validation",
+        "description": "Rigorous testing across thousands of conversation scenarios to ensure accuracy, safety, and consistent performance before launch.",
+        "icon": "shield",
+        "details": [
+          "Automated test suites covering intent recognition and entity extraction",
+          "Red-team testing for adversarial inputs and edge case handling"
+        ]
+      },
+      {
+        "title": "Deployment & Continuous Learning",
+        "description": "Launch across your chosen channels and implement feedback loops that make the AI smarter with every conversation.",
+        "icon": "rocket",
+        "details": [
+          "Phased rollout with A/B testing against existing support channels",
+          "Human-in-the-loop review workflows for low-confidence responses",
+          "Weekly performance reports with actionable optimization recommendations"
+        ]
+      }
+    ]
+  },
+  "techStack": {
+    "headline": "Conversational AI Technology Stack",
+    "subtitle": "State-of-the-Art Language Technologies",
+    "description": "We combine the most powerful language models with robust engineering frameworks to build conversational AI that is fast, accurate, and enterprise-ready.",
+    "categories": [
+      {
+        "category": "AI & Language Models",
+        "items": [
+          {
+            "name": "OpenAI",
+            "description": "GPT-4 and embedding models for high-quality natural language understanding and generation"
+          },
+          {
+            "name": "Hugging Face",
+            "description": "Open-source transformer models for domain-specific fine-tuning and on-premise deployments"
+          },
+          {
+            "name": "LangChain",
+            "description": "Orchestration framework for building complex, multi-step AI agent workflows with tool calling"
+          },
+          {
+            "name": "Python",
+            "description": "Core development language for ML pipelines, API services, and prompt engineering workflows"
+          }
+        ]
+      },
+      {
+        "category": "Infrastructure & Data",
+        "items": [
+          {
+            "name": "Redis",
+            "description": "Session and conversation state caching for sub-millisecond context retrieval"
+          },
+          {
+            "name": "PostgreSQL",
+            "description": "Persistent storage for conversation history, user profiles, and analytics data"
+          },
+          {
+            "name": "Elasticsearch",
+            "description": "Hybrid keyword and vector search for RAG knowledge base retrieval"
+          }
+        ]
+      },
+      {
+        "category": "Deployment & Monitoring",
+        "items": [
+          {
+            "name": "Docker",
+            "description": "Containerized microservices for model serving, API gateway, and conversation management"
+          },
+          {
+            "name": "Kubernetes",
+            "description": "Auto-scaling orchestration for handling variable conversation volumes"
+          },
+          {
+            "name": "AWS",
+            "description": "SageMaker for model hosting, Lambda for serverless processing, and CloudWatch for monitoring"
+          },
+          {
+            "name": "Grafana",
+            "description": "Real-time dashboards tracking latency, resolution rates, and conversation quality metrics"
+          }
+        ]
+      }
+    ]
+  },
+  "portfolio": {
+    "headline": "Conversational AI Case Studies",
+    "subtitle": "AI Assistants Delivering Real Business Value",
+    "description": "Explore how our conversational AI solutions have transformed customer support, streamlined operations, and created new engagement channels for organizations across industries.",
+    "items": [
+      {
+        "title": "Insurance Claims Virtual Assistant",
+        "industry": "Insurance",
+        "challenge": "A national insurance provider was losing customers due to slow claims processing, with average handling times exceeding 15 minutes per call and a 35% call abandonment rate during peak periods.",
+        "solution": "Deployed a RAG-powered virtual assistant integrated with the claims management system, capable of guiding customers through the entire claims process, uploading documents, checking status, and escalating complex cases to specialists.",
+        "results": [
+          "Reduced average claims handling time from 15 minutes to 4 minutes",
+          "Achieved 78% first-contact resolution without human agent involvement",
+          "Decreased call abandonment rate from 35% to 8%"
+        ],
+        "stats": [
+          {
+            "label": "Handling Time Reduction",
+            "value": "73%"
+          },
+          {
+            "label": "First-Contact Resolution",
+            "value": "78%"
+          }
+        ]
+      },
+      {
+        "title": "E-Commerce Shopping Concierge",
+        "industry": "Retail & E-Commerce",
+        "challenge": "An online fashion retailer struggled with high cart abandonment rates and low product discovery, as customers could not find items matching their preferences among a catalog of 50,000+ products.",
+        "solution": "Built a conversational shopping concierge that understands style preferences through natural dialogue, recommends products with visual previews, handles sizing questions, and processes orders directly within the chat interface.",
+        "results": [
+          "Increased average order value by 28% for concierge-assisted purchases",
+          "Reduced cart abandonment rate by 19% through proactive conversation triggers"
+        ],
+        "stats": [
+          {
+            "label": "AOV Increase",
+            "value": "28%"
+          },
+          {
+            "label": "Cart Abandonment Drop",
+            "value": "19%"
+          }
+        ]
+      },
+      {
+        "title": "Internal IT Helpdesk Automation",
+        "industry": "Technology",
+        "challenge": "A 5,000-employee enterprise was overwhelmed with repetitive IT support tickets for password resets, VPN issues, and software access requests, consuming 60% of helpdesk bandwidth and creating 48-hour resolution backlogs.",
+        "solution": "Implemented an AI-powered IT helpdesk bot integrated with Active Directory, ServiceNow, and Okta, automating password resets, access provisioning, and common troubleshooting procedures with full audit trails.",
+        "results": [
+          "Automated 65% of all IT support tickets without human intervention",
+          "Reduced average resolution time from 48 hours to 3 minutes for automated requests",
+          "Freed 2,400 helpdesk hours annually for complex infrastructure projects"
+        ],
+        "stats": [
+          {
+            "label": "Tickets Automated",
+            "value": "65%"
+          },
+          {
+            "label": "Hours Saved Yearly",
+            "value": "2,400"
+          }
+        ]
+      }
+    ],
+    "aggregateStats": [
+      {
+        "label": "Conversations Handled Monthly",
+        "value": "2M+"
+      },
+      {
+        "label": "AI Assistants Deployed",
+        "value": "85+"
+      },
+      {
+        "label": "Average CSAT Score",
+        "value": "4.6/5"
+      },
+      {
+        "label": "Support Cost Reduction",
+        "value": "55%"
+      }
+    ]
+  },
+  "faq": {
+    "headline": "Conversational AI FAQ",
+    "subtitle": "Your Questions Answered",
+    "description": "Everything you need to know about implementing conversational AI for your business, from technical requirements to expected outcomes and timelines.",
+    "categories": [
+      {
+        "category": "Technology & Capabilities",
+        "items": [
+          {
+            "question": "What is the difference between a rule-based chatbot and a conversational AI assistant?",
+            "answer": "Rule-based chatbots follow pre-defined decision trees and can only handle anticipated questions. Our conversational AI assistants use large language models to understand natural language, handle unexpected queries, maintain context across multi-turn conversations, and generate human-like responses grounded in your knowledge base."
+          },
+          {
+            "question": "Can the AI assistant access and update data in our existing systems?",
+            "answer": "Yes. We build AI agents with tool-calling capabilities that can read and write to your CRM, ticketing system, databases, and third-party APIs. Every action is authenticated, logged, and can require user confirmation before execution for sensitive operations."
+          },
+          {
+            "question": "How do you prevent the AI from generating incorrect or hallucinated responses?",
+            "answer": "We implement multiple safety layers including RAG grounding in your verified knowledge base, confidence thresholds that trigger human handoff, content filtering guardrails, and continuous monitoring with human review of flagged conversations. This layered approach typically achieves over 95% factual accuracy."
+          }
+        ]
+      },
+      {
+        "category": "Implementation & Integration",
+        "items": [
+          {
+            "question": "Which channels can the conversational AI be deployed on?",
+            "answer": "Our solutions support web chat widgets, mobile apps, WhatsApp, Facebook Messenger, Slack, Microsoft Teams, SMS, voice IVR systems, and custom API endpoints. We can deploy across multiple channels simultaneously with a unified conversation history."
+          },
+          {
+            "question": "How long does it take to build and deploy a conversational AI assistant?",
+            "answer": "A focused chatbot with RAG capabilities typically takes 6-10 weeks. More complex deployments involving multiple system integrations, voice capabilities, and multi-language support range from 3-5 months. We deliver a functional MVP within the first 4 weeks."
+          },
+          {
+            "question": "What happens when the AI cannot answer a question?",
+            "answer": "We design graceful escalation paths. When the AI detects low confidence or out-of-scope queries, it seamlessly transfers the conversation to a human agent with full context, including the conversation history, detected intent, and any relevant customer data pulled during the interaction."
+          }
+        ]
+      },
+      {
+        "category": "Costs & Maintenance",
+        "items": [
+          {
+            "question": "What are the ongoing costs of running a conversational AI system?",
+            "answer": "Ongoing costs include LLM API usage (typically $0.01-0.05 per conversation), cloud infrastructure hosting, and optional support retainer. Most clients see a net cost reduction of 40-60% compared to fully human-staffed support operations within the first year."
+          },
+          {
+            "question": "How do you keep the AI up to date with new products and policy changes?",
+            "answer": "We build automated knowledge ingestion pipelines that sync with your content management systems, knowledge bases, and document repositories. When you update a product page or policy document, the AI knowledge base refreshes automatically within hours."
+          },
+          {
+            "question": "Can we manage and update the AI assistant ourselves after deployment?",
+            "answer": "Absolutely. We provide a management dashboard where your team can update knowledge bases, adjust conversation flows, review flagged interactions, and monitor performance metrics. We also offer training sessions to ensure your team is fully self-sufficient."
+          }
+        ]
+      }
+    ]
+  }
+}

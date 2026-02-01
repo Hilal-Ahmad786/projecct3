@@ -207,12 +207,12 @@ export default function Navbar() {
 
   // Service Microsite Links
   const serviceLinks = [
-    { label: 'Overview', href: `/services/${currentServiceSlug}`, localizedHref: `/services/${currentServiceSlug}` },
-    { label: 'Features', href: `/services/${currentServiceSlug}/features`, localizedHref: `/services/${currentServiceSlug}/features` },
-    { label: 'Process', href: `/services/${currentServiceSlug}/process`, localizedHref: `/services/${currentServiceSlug}/process` },
-    { label: 'Tech Stack', href: `/services/${currentServiceSlug}/tech-stack`, localizedHref: `/services/${currentServiceSlug}/tech-stack` },
-    { label: 'Portfolio', href: `/services/${currentServiceSlug}/portfolio`, localizedHref: `/services/${currentServiceSlug}/portfolio` },
-    { label: 'FAQ', href: `/services/${currentServiceSlug}/faq`, localizedHref: `/services/${currentServiceSlug}/faq` },
+    { label: t('serviceNav.overview'), href: `/services/${currentServiceSlug}`, localizedHref: `/services/${currentServiceSlug}` },
+    { label: t('serviceNav.features'), href: `/services/${currentServiceSlug}/features`, localizedHref: `/services/${currentServiceSlug}/features` },
+    { label: t('serviceNav.process'), href: `/services/${currentServiceSlug}/process`, localizedHref: `/services/${currentServiceSlug}/process` },
+    { label: t('serviceNav.techStack'), href: `/services/${currentServiceSlug}/tech-stack`, localizedHref: `/services/${currentServiceSlug}/tech-stack` },
+    { label: t('serviceNav.portfolio'), href: `/services/${currentServiceSlug}/portfolio`, localizedHref: `/services/${currentServiceSlug}/portfolio` },
+    { label: t('serviceNav.faq'), href: `/services/${currentServiceSlug}/faq`, localizedHref: `/services/${currentServiceSlug}/faq` },
   ];
 
   const currentLinks = isServicePage ? serviceLinks : mainLinks;

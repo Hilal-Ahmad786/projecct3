@@ -1,0 +1,371 @@
+{
+  "serviceName": "Digital Marketing",
+  "features": {
+    "headline": "Data-Driven Marketing That Converts",
+    "subtitle": "Full-Funnel Digital Marketing",
+    "description": "We combine creative strategy with analytical rigor to build digital marketing programs that attract qualified leads, nurture prospects, and drive measurable revenue growth across every channel.",
+    "items": [
+      {
+        "icon": "search",
+        "title": "SEO & Organic Growth",
+        "description": "Technical and content SEO strategies that improve search visibility, drive qualified organic traffic, and build sustainable long-term audience acquisition channels.",
+        "details": [
+          "Technical SEO audits covering site speed, crawlability, schema markup, and Core Web Vitals",
+          "Keyword research and content strategy aligned with search intent and buyer journey stages",
+          "Link building campaigns through digital PR, guest content, and resource-based outreach"
+        ]
+      },
+      {
+        "icon": "megaphone",
+        "title": "Paid Advertising & PPC",
+        "description": "High-performance paid campaigns across Google, Meta, LinkedIn, and programmatic networks with continuous optimization for maximum ROAS.",
+        "details": [
+          "Search, display, and shopping campaign management with audience segmentation",
+          "Conversion tracking setup with multi-touch attribution modeling"
+        ]
+      },
+      {
+        "icon": "chart",
+        "title": "Marketing Analytics & Attribution",
+        "description": "Comprehensive analytics infrastructure that tracks every touchpoint and attributes revenue to the channels and campaigns that actually drive results.",
+        "details": [
+          "Cross-channel attribution modeling replacing last-click with data-driven models",
+          "Custom dashboard development connecting ad platforms, CRM, and revenue data",
+          "Cohort analysis and customer journey mapping for lifecycle optimization"
+        ]
+      },
+      {
+        "icon": "cursor",
+        "title": "Conversion Rate Optimization",
+        "description": "Systematic testing and optimization of landing pages, funnels, and user experiences to maximize the percentage of visitors who become customers.",
+        "details": [
+          "A/B and multivariate testing programs for landing pages and key conversion flows",
+          "Heatmap and session recording analysis to identify friction points",
+          "Personalization engines delivering tailored experiences based on traffic source and behavior"
+        ]
+      },
+      {
+        "icon": "chat",
+        "title": "Content Marketing & Strategy",
+        "description": "Strategic content programs that establish thought leadership, drive organic traffic, and nurture prospects through the buying journey with valuable, targeted content.",
+        "details": [
+          "Content audits and gap analysis mapped to buyer personas and funnel stages",
+          "Blog, whitepaper, case study, and video content production and distribution"
+        ]
+      },
+      {
+        "icon": "users",
+        "title": "Social Media Marketing",
+        "description": "Organic and paid social strategies that build brand awareness, engage communities, and drive qualified traffic from the platforms where your audience spends time.",
+        "details": [
+          "Platform-specific content strategies for LinkedIn, Instagram, Twitter, and TikTok",
+          "Community management and social listening for brand sentiment monitoring",
+          "Influencer identification and partnership management for expanded reach"
+        ]
+      },
+      {
+        "icon": "mobile",
+        "title": "Email & Marketing Automation",
+        "description": "Automated email and nurture campaigns that deliver the right message to the right person at the right time, driving engagement and conversion throughout the customer lifecycle.",
+        "details": [
+          "Lead scoring and segmentation models for personalized nurture sequences",
+          "Behavioral trigger campaigns for cart abandonment, onboarding, and re-engagement",
+          "Deliverability optimization ensuring inbox placement rates above 95%"
+        ]
+      },
+      {
+        "icon": "globe",
+        "title": "International & Multilingual Marketing",
+        "description": "Localized marketing strategies for global expansion, including multilingual SEO, culturally adapted campaigns, and region-specific channel optimization.",
+        "details": [
+          "Multilingual keyword research and hreflang implementation for international SEO",
+          "Culturally adapted ad creative and landing page localization"
+        ]
+      }
+    ],
+    "stats": [
+      {
+        "label": "Average ROAS",
+        "value": "5.2x"
+      },
+      {
+        "label": "Organic Traffic Growth",
+        "value": "180%"
+      },
+      {
+        "label": "Leads Generated",
+        "value": "50K+"
+      },
+      {
+        "label": "Conversion Rate Lift",
+        "value": "65%"
+      }
+    ]
+  },
+  "process": {
+    "headline": "Our Digital Marketing Process",
+    "subtitle": "Strategy-First, Data-Driven Execution",
+    "description": "A systematic marketing methodology that starts with deep audience understanding, builds multi-channel strategies, and continuously optimizes based on performance data to maximize your marketing ROI.",
+    "steps": [
+      {
+        "title": "Audit & Market Analysis",
+        "description": "Comprehensive review of your current marketing performance, competitive landscape, and audience behavior to identify gaps and high-impact opportunities.",
+        "icon": "search",
+        "details": [
+          "Channel-by-channel performance audit with benchmarking against industry standards",
+          "Competitive analysis covering keywords, ad strategies, content, and market positioning",
+          "Audience research including persona development and customer journey mapping"
+        ]
+      },
+      {
+        "title": "Strategy & Channel Planning",
+        "description": "Develop a data-informed marketing strategy with channel mix, budget allocation, content calendar, and measurable KPIs tied to business objectives.",
+        "icon": "document",
+        "details": [
+          "Channel mix optimization based on audience presence and cost-efficiency analysis",
+          "Budget allocation model with projected ROI scenarios for each channel"
+        ]
+      },
+      {
+        "title": "Campaign Build & Launch",
+        "description": "Build campaigns with compelling creative, precise targeting, proper tracking, and quality landing pages optimized for conversion.",
+        "icon": "rocket",
+        "details": [
+          "Ad creative development with platform-specific formats and messaging variations",
+          "Landing page design and development with conversion-optimized layouts",
+          "Tracking and analytics setup with UTM frameworks and conversion event configuration"
+        ]
+      },
+      {
+        "title": "Optimization & Testing",
+        "description": "Continuous performance optimization through A/B testing, bid management, audience refinement, and creative iteration based on real data.",
+        "icon": "chart",
+        "details": [
+          "Weekly bid and budget optimization across all paid channels",
+          "Systematic A/B testing roadmap for ads, landing pages, and email campaigns"
+        ]
+      },
+      {
+        "title": "Reporting & Scale",
+        "description": "Transparent performance reporting with actionable insights, and strategic scaling of winning campaigns and channels for compounding growth.",
+        "icon": "lightning",
+        "details": [
+          "Monthly performance reports with executive summaries and channel deep-dives",
+          "Quarterly strategy reviews with updated competitive analysis and roadmap adjustments",
+          "Budget reallocation recommendations based on marginal ROAS analysis"
+        ]
+      }
+    ]
+  },
+  "techStack": {
+    "headline": "Marketing Technology Stack",
+    "subtitle": "Integrated Marketing Platforms",
+    "description": "We leverage best-in-class marketing technologies to execute, measure, and optimize campaigns across every digital channel.",
+    "categories": [
+      {
+        "category": "Web & Content Platforms",
+        "items": [
+          {
+            "name": "WordPress",
+            "description": "Content management for blogs, landing pages, and SEO-optimized web properties"
+          },
+          {
+            "name": "Shopify",
+            "description": "E-commerce platform integration for product marketing, cart optimization, and conversion tracking"
+          },
+          {
+            "name": "React",
+            "description": "Custom landing page and web application development for high-performance marketing experiences"
+          },
+          {
+            "name": "TypeScript",
+            "description": "Type-safe development for marketing automation scripts and analytics integrations"
+          }
+        ]
+      },
+      {
+        "category": "Analytics & Data",
+        "items": [
+          {
+            "name": "Python",
+            "description": "Marketing data analysis, attribution modeling, and automated reporting scripts"
+          },
+          {
+            "name": "PostgreSQL",
+            "description": "Central marketing data warehouse for cross-channel performance analytics"
+          },
+          {
+            "name": "Redis",
+            "description": "Real-time personalization engine caching user segments and behavioral data"
+          },
+          {
+            "name": "Figma",
+            "description": "Collaborative design platform for ad creatives, landing pages, and brand assets"
+          }
+        ]
+      },
+      {
+        "category": "Automation & AI",
+        "items": [
+          {
+            "name": "NodeJS",
+            "description": "Marketing automation backends, webhook handlers, and API integrations"
+          },
+          {
+            "name": "OpenAI",
+            "description": "AI-powered content generation, ad copy optimization, and audience insight extraction"
+          },
+          {
+            "name": "Elasticsearch",
+            "description": "Site search optimization and content discovery enhancement for marketing websites"
+          }
+        ]
+      }
+    ]
+  },
+  "portfolio": {
+    "headline": "Digital Marketing Success Stories",
+    "subtitle": "Campaigns That Drive Real Growth",
+    "description": "Examples of how our data-driven marketing strategies have generated leads, increased revenue, and built lasting competitive advantages for businesses across industries.",
+    "items": [
+      {
+        "title": "B2B SaaS Lead Generation Engine",
+        "industry": "Technology (SaaS)",
+        "challenge": "A B2B project management SaaS was relying entirely on outbound sales, spending $180 per lead with low conversion rates, and had virtually no organic search presence despite strong product-market fit.",
+        "solution": "Built a full-funnel inbound marketing engine combining SEO-optimized content targeting high-intent keywords, LinkedIn ads with ABM targeting, an automated email nurture sequence, and conversion-optimized landing pages with lead magnets.",
+        "results": [
+          "Reduced cost per qualified lead from $180 to $42 within 6 months",
+          "Grew organic search traffic by 320% with 45 first-page keyword rankings",
+          "Generated 1,200 marketing-qualified leads per month, up from 150"
+        ],
+        "stats": [
+          {
+            "label": "Cost Per Lead Reduction",
+            "value": "77%"
+          },
+          {
+            "label": "Monthly MQLs",
+            "value": "1,200"
+          }
+        ]
+      },
+      {
+        "title": "E-Commerce Revenue Scaling Campaign",
+        "industry": "Retail & E-Commerce",
+        "challenge": "A direct-to-consumer home goods brand was plateauing at $1.2M monthly revenue with rising customer acquisition costs and a 1.8x ROAS on paid advertising that was unsustainable at scale.",
+        "solution": "Restructured the entire paid media strategy with improved audience segmentation, dynamic product ads, a robust retargeting funnel, email automation for cart recovery and post-purchase upsells, and a content-driven SEO strategy for organic growth.",
+        "results": [
+          "Scaled monthly revenue from $1.2M to $3.1M within 8 months",
+          "Improved paid advertising ROAS from 1.8x to 4.6x across all channels"
+        ],
+        "stats": [
+          {
+            "label": "Revenue Growth",
+            "value": "158%"
+          },
+          {
+            "label": "ROAS Improvement",
+            "value": "4.6x"
+          }
+        ]
+      },
+      {
+        "title": "Healthcare Patient Acquisition Program",
+        "industry": "Healthcare",
+        "challenge": "A multi-location dental practice group needed to fill appointment slots across 8 locations in a competitive market, with Google Ads costs rising 40% year-over-year and declining returns from traditional marketing channels.",
+        "solution": "Implemented a local SEO strategy for all 8 locations, launched Google Ads with location-specific landing pages, built a review generation system, and created an automated appointment reminder and follow-up email sequence.",
+        "results": [
+          "Increased new patient appointments by 85% across all locations",
+          "Reduced cost per appointment booking from $95 to $31",
+          "Achieved top-3 Google Map Pack ranking for all 8 locations"
+        ],
+        "stats": [
+          {
+            "label": "New Patients Increase",
+            "value": "85%"
+          },
+          {
+            "label": "Cost Per Booking",
+            "value": "$31"
+          }
+        ]
+      }
+    ],
+    "aggregateStats": [
+      {
+        "label": "Ad Spend Managed Annually",
+        "value": "$25M+"
+      },
+      {
+        "label": "Leads Generated for Clients",
+        "value": "150K+"
+      },
+      {
+        "label": "Average Client ROAS",
+        "value": "5.2x"
+      },
+      {
+        "label": "Marketing Campaigns Launched",
+        "value": "500+"
+      }
+    ]
+  },
+  "faq": {
+    "headline": "Digital Marketing FAQ",
+    "subtitle": "Marketing Questions Answered",
+    "description": "Answers to common questions about our digital marketing services, pricing, timelines, and how we measure and deliver results.",
+    "categories": [
+      {
+        "category": "Strategy & Planning",
+        "items": [
+          {
+            "question": "How do you determine the right marketing channels for our business?",
+            "answer": "We analyze your target audience demographics and behavior, competitive landscape, industry benchmarks, and budget constraints. We then recommend a channel mix based on where your audience is most active and where we can achieve the best cost-efficiency. We validate with small test budgets before scaling."
+          },
+          {
+            "question": "How long does it take to see results from digital marketing?",
+            "answer": "Paid advertising typically delivers measurable results within 2-4 weeks of launch. SEO and content marketing are longer-term investments that usually show significant traction in 3-6 months. We set realistic timelines during strategy development and focus on quick wins while building sustainable growth channels."
+          },
+          {
+            "question": "What budget do we need to get started with digital marketing?",
+            "answer": "Effective campaigns can start with budgets as low as $3,000-5,000 per month for focused single-channel efforts. Multi-channel programs typically require $10,000-25,000 per month for meaningful scale. We design strategies that fit your budget and scale up as we demonstrate ROI."
+          }
+        ]
+      },
+      {
+        "category": "Execution & Reporting",
+        "items": [
+          {
+            "question": "How do you measure marketing ROI and attribution?",
+            "answer": "We implement multi-touch attribution models that track every customer touchpoint from first interaction to closed deal. Our reporting connects ad spend data with CRM revenue data to calculate true ROI by channel, campaign, and content piece. We move beyond vanity metrics to focus on pipeline and revenue impact."
+          },
+          {
+            "question": "How often do we receive performance reports?",
+            "answer": "You receive monthly comprehensive reports with executive summaries, channel-by-channel breakdowns, and actionable recommendations. We also provide real-time dashboard access for day-to-day monitoring. Quarterly strategic reviews include competitive analysis updates and roadmap adjustments."
+          },
+          {
+            "question": "Do you create the ad creative and content, or do we need to provide it?",
+            "answer": "We handle everything in-house including copywriting, graphic design, video editing, and landing page development. Our team includes specialists in ad creative, SEO content writing, and conversion-focused design. We collaborate with your team on brand guidelines and approval workflows."
+          }
+        ]
+      },
+      {
+        "category": "Working Together",
+        "items": [
+          {
+            "question": "How involved do we need to be in the day-to-day marketing execution?",
+            "answer": "We operate as an extension of your team and handle all execution. We typically need your involvement for initial strategy alignment, content approvals, and monthly review meetings. Most clients spend 2-4 hours per month on collaboration. We proactively communicate results and recommendations without requiring micromanagement."
+          },
+          {
+            "question": "Can you work alongside our internal marketing team?",
+            "answer": "Absolutely. Many of our clients have internal marketing resources. We integrate seamlessly, handling specialized channels or overflow work while your team focuses on brand, product marketing, or other priorities. We use shared project management tools and communication channels for full transparency."
+          },
+          {
+            "question": "What happens if a campaign is not performing well?",
+            "answer": "Underperformance triggers our optimization protocol. We analyze the data to diagnose the issue, whether it is targeting, creative, landing page, or offer-related. We then implement rapid tests to course-correct. If a channel consistently underperforms after optimization, we reallocate budget to higher-performing channels and recommend strategic pivots."
+          }
+        ]
+      }
+    ]
+  }
+}

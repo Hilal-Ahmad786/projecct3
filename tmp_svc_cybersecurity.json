@@ -1,0 +1,372 @@
+{
+  "serviceName": "Cybersecurity",
+  "features": {
+    "headline": "Defend Your Digital Assets With Confidence",
+    "subtitle": "Comprehensive Security Solutions",
+    "description": "We protect organizations from evolving cyber threats through proactive security assessments, robust defense architectures, and 24/7 monitoring, ensuring your data, systems, and reputation remain secure.",
+    "items": [
+      {
+        "icon": "shield",
+        "title": "Penetration Testing & Vulnerability Assessment",
+        "description": "Simulated real-world attacks that identify vulnerabilities in your applications, networks, and infrastructure before malicious actors do.",
+        "details": [
+          "OWASP Top 10 and SANS 25 coverage for web and API penetration testing",
+          "Network and infrastructure testing including wireless and cloud environments",
+          "Detailed remediation reports with severity-ranked findings and fix guidance"
+        ]
+      },
+      {
+        "icon": "eye",
+        "title": "Security Operations Center (SOC)",
+        "description": "24/7 threat monitoring, detection, and incident response powered by AI-enhanced SIEM platforms and experienced security analysts.",
+        "details": [
+          "Real-time log aggregation and correlation across all network endpoints",
+          "AI-driven anomaly detection reducing false positives by 70%",
+          "Incident response playbooks with automated containment actions"
+        ]
+      },
+      {
+        "icon": "lock",
+        "title": "Zero Trust Architecture",
+        "description": "Design and implement zero trust security frameworks that verify every user, device, and connection regardless of network location.",
+        "details": [
+          "Micro-segmentation strategies isolating workloads and limiting lateral movement",
+          "Identity-aware proxy and continuous authentication enforcement"
+        ]
+      },
+      {
+        "icon": "cloud",
+        "title": "Cloud Security & Compliance",
+        "description": "Secure your cloud infrastructure across AWS, Azure, and GCP with misconfig detection, access controls, and compliance automation.",
+        "details": [
+          "Cloud Security Posture Management with automated remediation workflows",
+          "IAM policy auditing and least-privilege access enforcement",
+          "Compliance mapping for SOC 2, ISO 27001, HIPAA, and PCI DSS frameworks"
+        ]
+      },
+      {
+        "icon": "code",
+        "title": "Application Security (DevSecOps)",
+        "description": "Embed security into every phase of your software development lifecycle with automated scanning, code review, and secure coding practices.",
+        "details": [
+          "SAST and DAST integration into CI/CD pipelines for shift-left security",
+          "Dependency vulnerability scanning and software composition analysis",
+          "Secure code review and threat modeling for critical application features"
+        ]
+      },
+      {
+        "icon": "users",
+        "title": "Security Awareness Training",
+        "description": "Reduce human-factor risk with engaging, scenario-based security training and realistic phishing simulations for your entire workforce.",
+        "details": [
+          "Customized phishing simulation campaigns with click-rate tracking",
+          "Role-based training modules for executives, developers, and general staff"
+        ]
+      },
+      {
+        "icon": "document",
+        "title": "Compliance & Risk Management",
+        "description": "Comprehensive governance, risk, and compliance programs that satisfy regulatory requirements while strengthening your overall security posture.",
+        "details": [
+          "Risk assessment frameworks aligned with NIST, ISO 27001, and CIS Controls",
+          "Policy development covering data handling, incident response, and business continuity",
+          "Audit preparation and evidence collection automation"
+        ]
+      },
+      {
+        "icon": "lightning",
+        "title": "Incident Response & Forensics",
+        "description": "Rapid incident response capabilities and digital forensics expertise to contain breaches, recover operations, and preserve evidence.",
+        "details": [
+          "Emergency response within 1 hour of incident notification",
+          "Digital forensics with chain-of-custody evidence preservation",
+          "Post-incident analysis and security improvement roadmaps"
+        ]
+      }
+    ],
+    "stats": [
+      {
+        "label": "Threats Blocked Monthly",
+        "value": "15M+"
+      },
+      {
+        "label": "Avg Incident Response",
+        "value": "<1hr"
+      },
+      {
+        "label": "Compliance Frameworks",
+        "value": "12+"
+      },
+      {
+        "label": "Vulnerabilities Found",
+        "value": "50K+"
+      }
+    ]
+  },
+  "process": {
+    "headline": "Our Cybersecurity Process",
+    "subtitle": "Systematic Defense in Depth",
+    "description": "A comprehensive security methodology that assesses your risk posture, implements layered defenses, and establishes continuous monitoring to protect your organization against evolving threats.",
+    "steps": [
+      {
+        "title": "Security Assessment & Risk Analysis",
+        "description": "Conduct thorough evaluation of your current security posture including network architecture, access controls, data flows, and threat exposure.",
+        "icon": "search",
+        "details": [
+          "Asset inventory and attack surface mapping across on-premise and cloud environments",
+          "Risk scoring based on likelihood, impact, and current control effectiveness",
+          "Gap analysis against industry frameworks and regulatory requirements"
+        ]
+      },
+      {
+        "title": "Architecture & Policy Design",
+        "description": "Design a layered security architecture with policies, procedures, and technical controls tailored to your risk profile and business requirements.",
+        "icon": "shield",
+        "details": [
+          "Network segmentation and zero trust architecture blueprints",
+          "Security policy suite covering access management, data protection, and incident response"
+        ]
+      },
+      {
+        "title": "Implementation & Hardening",
+        "description": "Deploy security tools, harden configurations, and establish monitoring infrastructure across your entire technology stack.",
+        "icon": "wrench",
+        "details": [
+          "SIEM deployment with custom detection rules and correlation logic",
+          "Endpoint protection rollout with EDR and application whitelisting",
+          "Network firewall, WAF, and DDoS protection configuration"
+        ]
+      },
+      {
+        "title": "Testing & Validation",
+        "description": "Validate every control through penetration testing, red team exercises, and tabletop simulations to ensure real-world effectiveness.",
+        "icon": "check",
+        "details": [
+          "Full-scope penetration testing covering external, internal, and social engineering vectors",
+          "Tabletop exercises simulating ransomware, data breach, and insider threat scenarios"
+        ]
+      },
+      {
+        "title": "Continuous Monitoring & Response",
+        "description": "Establish ongoing security operations with 24/7 monitoring, regular assessments, and adaptive threat intelligence updates.",
+        "icon": "eye",
+        "details": [
+          "SOC monitoring with tiered escalation and automated containment playbooks",
+          "Quarterly vulnerability scanning and annual penetration test cycles",
+          "Threat intelligence feeds integrated into detection rules for emerging attack patterns"
+        ]
+      }
+    ]
+  },
+  "techStack": {
+    "headline": "Security Technology Stack",
+    "subtitle": "Defense-Grade Tools & Platforms",
+    "description": "We deploy and manage industry-leading security technologies to build resilient defense systems that adapt to the evolving threat landscape.",
+    "categories": [
+      {
+        "category": "Monitoring & Detection",
+        "items": [
+          {
+            "name": "Elasticsearch",
+            "description": "Core SIEM data store for log aggregation, threat correlation, and security analytics"
+          },
+          {
+            "name": "Grafana",
+            "description": "Security operations dashboards for real-time visibility into threat activity and system health"
+          },
+          {
+            "name": "Prometheus",
+            "description": "Infrastructure monitoring and alerting for security-critical systems and network devices"
+          },
+          {
+            "name": "Kafka",
+            "description": "High-throughput event streaming for real-time security log processing and threat detection pipelines"
+          }
+        ]
+      },
+      {
+        "category": "Infrastructure & Cloud Security",
+        "items": [
+          {
+            "name": "AWS",
+            "description": "GuardDuty, Security Hub, and WAF for comprehensive AWS environment protection"
+          },
+          {
+            "name": "Azure",
+            "description": "Sentinel SIEM and Defender for Cloud for Microsoft ecosystem security orchestration"
+          },
+          {
+            "name": "Terraform",
+            "description": "Infrastructure-as-code with security policy enforcement and drift detection"
+          },
+          {
+            "name": "Docker",
+            "description": "Container security scanning and runtime protection for containerized workloads"
+          }
+        ]
+      },
+      {
+        "category": "Application & Code Security",
+        "items": [
+          {
+            "name": "Python",
+            "description": "Custom security automation scripts, vulnerability scanners, and incident response tools"
+          },
+          {
+            "name": "Jenkins",
+            "description": "CI/CD pipeline integration for automated SAST, DAST, and dependency scanning"
+          },
+          {
+            "name": "Nginx",
+            "description": "Reverse proxy with WAF rules, rate limiting, and TLS termination for application protection"
+          }
+        ]
+      }
+    ]
+  },
+  "portfolio": {
+    "headline": "Cybersecurity Case Studies",
+    "subtitle": "Protecting Organizations That Matter",
+    "description": "Real examples of how our cybersecurity solutions have prevented breaches, achieved compliance, and built resilient security programs for organizations handling sensitive data.",
+    "items": [
+      {
+        "title": "Financial Services Security Overhaul",
+        "industry": "Financial Services",
+        "challenge": "A fintech company processing $2B in annual transactions had no formal security program, outdated firewalls, and had already experienced two minor data incidents that put their banking partnerships at risk.",
+        "solution": "Designed and implemented a comprehensive security program including zero trust network architecture, SOC-as-a-Service with 24/7 monitoring, DevSecOps pipeline integration, and SOC 2 Type II compliance framework.",
+        "results": [
+          "Achieved SOC 2 Type II certification within 8 months",
+          "Zero security incidents in the 18 months following implementation",
+          "Reduced attack surface by 75% through network segmentation and access controls"
+        ],
+        "stats": [
+          {
+            "label": "Time to SOC 2",
+            "value": "8 months"
+          },
+          {
+            "label": "Security Incidents",
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "title": "Healthcare Data Protection Program",
+        "industry": "Healthcare",
+        "challenge": "A multi-site healthcare provider storing 3 million patient records needed to achieve HIPAA compliance while modernizing legacy systems that had known vulnerabilities and no centralized security monitoring.",
+        "solution": "Implemented end-to-end security controls including encrypted data storage, network micro-segmentation, privileged access management, SIEM deployment with healthcare-specific detection rules, and comprehensive staff security training.",
+        "results": [
+          "Passed HIPAA audit with zero critical findings",
+          "Reduced phishing susceptibility from 32% to 4% click rate through training"
+        ],
+        "stats": [
+          {
+            "label": "HIPAA Compliance",
+            "value": "100%"
+          },
+          {
+            "label": "Phishing Click Rate",
+            "value": "4%"
+          }
+        ]
+      },
+      {
+        "title": "E-Commerce Platform Hardening",
+        "industry": "Retail & E-Commerce",
+        "challenge": "An e-commerce platform with 500,000 active users was targeted by sophisticated bot attacks, credential stuffing campaigns, and DDoS attempts that caused recurring outages and eroded customer trust.",
+        "solution": "Deployed a multi-layered defense including advanced WAF with bot detection, DDoS mitigation, rate limiting, credential stuffing protection, and real-time threat intelligence integration with automated blocking rules.",
+        "results": [
+          "Blocked 99.7% of malicious bot traffic while maintaining legitimate user experience",
+          "Eliminated DDoS-related downtime, achieving 99.99% uptime",
+          "Reduced fraudulent account creation by 94% through behavioral analysis"
+        ],
+        "stats": [
+          {
+            "label": "Bot Traffic Blocked",
+            "value": "99.7%"
+          },
+          {
+            "label": "Platform Uptime",
+            "value": "99.99%"
+          }
+        ]
+      }
+    ],
+    "aggregateStats": [
+      {
+        "label": "Security Assessments Completed",
+        "value": "300+"
+      },
+      {
+        "label": "Incidents Responded To",
+        "value": "1,200+"
+      },
+      {
+        "label": "Compliance Certifications Achieved",
+        "value": "85+"
+      },
+      {
+        "label": "Endpoints Protected",
+        "value": "50K+"
+      }
+    ]
+  },
+  "faq": {
+    "headline": "Cybersecurity FAQ",
+    "subtitle": "Security Questions Answered",
+    "description": "Common questions about our cybersecurity services, methodologies, and how we help organizations build and maintain strong security postures.",
+    "categories": [
+      {
+        "category": "Assessments & Testing",
+        "items": [
+          {
+            "question": "How often should we conduct penetration testing?",
+            "answer": "We recommend at least annual penetration testing, with quarterly assessments for high-risk environments such as financial services, healthcare, and e-commerce. Additionally, testing should be performed after major infrastructure changes, application releases, or security incidents."
+          },
+          {
+            "question": "What is the difference between a vulnerability scan and a penetration test?",
+            "answer": "A vulnerability scan is an automated tool-based assessment that identifies known vulnerabilities. A penetration test goes further by having skilled security professionals actively attempt to exploit vulnerabilities, chain findings together, and simulate real attacker behavior to assess actual business impact."
+          },
+          {
+            "question": "Will penetration testing disrupt our production systems?",
+            "answer": "We conduct testing with careful scoping and rules of engagement designed to minimize disruption. For production environments, we use non-destructive techniques and schedule intensive testing during maintenance windows. We maintain constant communication and can pause testing immediately if any impact is detected."
+          }
+        ]
+      },
+      {
+        "category": "Compliance & Governance",
+        "items": [
+          {
+            "question": "Which compliance frameworks do you support?",
+            "answer": "We have deep expertise in SOC 2 Type I and II, ISO 27001, HIPAA, PCI DSS, GDPR, NIST Cybersecurity Framework, CIS Controls, and FedRAMP. We also support industry-specific regulations and can map controls across multiple frameworks to reduce audit fatigue."
+          },
+          {
+            "question": "How long does it take to achieve SOC 2 compliance from scratch?",
+            "answer": "For organizations starting without a formal security program, SOC 2 Type I typically takes 4-6 months and Type II requires an additional 6-12 month observation period. We accelerate this timeline by implementing controls in parallel and using automation to reduce manual evidence collection."
+          },
+          {
+            "question": "Do you help with ongoing compliance maintenance after certification?",
+            "answer": "Yes. We provide continuous compliance monitoring that automates evidence collection, tracks control effectiveness, and alerts you to policy deviations. This ensures you remain audit-ready year-round rather than scrambling before annual assessments."
+          }
+        ]
+      },
+      {
+        "category": "Managed Security Services",
+        "items": [
+          {
+            "question": "What does your SOC-as-a-Service include?",
+            "answer": "Our SOC-as-a-Service provides 24/7 threat monitoring, log management, incident detection and response, threat hunting, monthly security reports, and quarterly security reviews. We act as an extension of your team with dedicated analysts who understand your environment."
+          },
+          {
+            "question": "How do you handle a security incident when detected?",
+            "answer": "We follow a structured incident response process: detect and validate the threat, contain it to prevent spread, eradicate the root cause, recover affected systems, and conduct post-incident analysis. We communicate with your team throughout and provide a detailed incident report with improvement recommendations."
+          },
+          {
+            "question": "Can you integrate with our existing security tools?",
+            "answer": "Absolutely. We integrate with all major security platforms including CrowdStrike, SentinelOne, Palo Alto, Fortinet, Okta, and more. Our SIEM can ingest logs from virtually any source, and we build custom detection rules specific to your technology stack and threat profile."
+          }
+        ]
+      }
+    ]
+  }
+}

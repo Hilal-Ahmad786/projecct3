@@ -1,0 +1,371 @@
+{
+  "serviceName": "DevOps & Cloud",
+  "features": {
+    "headline": "Accelerate Delivery With Modern Infrastructure",
+    "subtitle": "DevOps & Cloud Engineering",
+    "description": "We design, build, and manage cloud infrastructure and DevOps pipelines that enable your engineering teams to ship faster, scale effortlessly, and operate with confidence.",
+    "items": [
+      {
+        "icon": "cloud",
+        "title": "Cloud Architecture & Migration",
+        "description": "Strategic cloud migration and architecture design that minimizes risk, reduces costs, and positions your infrastructure for scalable growth.",
+        "details": [
+          "Cloud readiness assessment with workload-by-workload migration planning",
+          "Lift-and-shift, re-platforming, and cloud-native refactoring strategies",
+          "Multi-cloud and hybrid architecture designs for redundancy and vendor flexibility"
+        ]
+      },
+      {
+        "icon": "rocket",
+        "title": "CI/CD Pipeline Engineering",
+        "description": "Automated build, test, and deployment pipelines that reduce release cycles from weeks to minutes with built-in quality gates.",
+        "details": [
+          "Multi-stage pipelines with automated testing, security scanning, and approval gates",
+          "Blue-green and canary deployment strategies for zero-downtime releases"
+        ]
+      },
+      {
+        "icon": "server",
+        "title": "Infrastructure as Code",
+        "description": "Fully codified infrastructure that is version-controlled, peer-reviewed, and reproducible across environments.",
+        "details": [
+          "Terraform and Pulumi modules for reusable, composable infrastructure components",
+          "GitOps workflows where infrastructure changes follow the same review process as application code",
+          "Environment parity enforcement ensuring dev, staging, and production consistency"
+        ]
+      },
+      {
+        "icon": "cog",
+        "title": "Container Orchestration",
+        "description": "Production-grade Kubernetes clusters and container management platforms that handle scaling, networking, and service discovery automatically.",
+        "details": [
+          "Kubernetes cluster design with multi-tenancy, RBAC, and network policies",
+          "Helm chart development and management for standardized application deployments",
+          "Service mesh implementation for secure inter-service communication and observability"
+        ]
+      },
+      {
+        "icon": "chart",
+        "title": "Observability & Monitoring",
+        "description": "Comprehensive monitoring, logging, and tracing platforms that give your teams full visibility into system health and performance.",
+        "details": [
+          "Metrics, logs, and traces correlated in unified observability dashboards",
+          "Custom alerting with intelligent noise reduction and escalation routing"
+        ]
+      },
+      {
+        "icon": "lightning",
+        "title": "Performance & Cost Optimization",
+        "description": "Continuous infrastructure optimization that balances performance requirements with cloud spending efficiency.",
+        "details": [
+          "Right-sizing analysis for compute, storage, and database instances",
+          "Reserved instance and savings plan strategies reducing cloud spend by 30-50%",
+          "Auto-scaling policies tuned to actual demand patterns"
+        ]
+      },
+      {
+        "icon": "wrench",
+        "title": "Site Reliability Engineering",
+        "description": "SRE practices and tooling that ensure your systems meet availability targets through error budgets, SLOs, and automated remediation.",
+        "details": [
+          "SLI/SLO definition and error budget tracking for critical services",
+          "Automated runbooks for common incident types reducing MTTR",
+          "Chaos engineering experiments that validate resilience under failure conditions"
+        ]
+      },
+      {
+        "icon": "database",
+        "title": "Database Operations & Scaling",
+        "description": "Managed database operations including provisioning, replication, backup, disaster recovery, and performance tuning for production workloads.",
+        "details": [
+          "Read replica and sharding strategies for horizontal database scaling",
+          "Automated backup schedules with point-in-time recovery and cross-region replication"
+        ]
+      }
+    ],
+    "stats": [
+      {
+        "label": "Deployment Frequency",
+        "value": "50x"
+      },
+      {
+        "label": "Infrastructure Uptime",
+        "value": "99.99%"
+      },
+      {
+        "label": "Cloud Cost Savings",
+        "value": "40%"
+      },
+      {
+        "label": "Deploy Time Reduction",
+        "value": "90%"
+      }
+    ]
+  },
+  "process": {
+    "headline": "Our DevOps & Cloud Process",
+    "subtitle": "From Legacy to Modern Infrastructure",
+    "description": "A proven methodology that transforms manual, fragile infrastructure into automated, resilient cloud platforms, delivering measurable improvements in speed, reliability, and cost efficiency.",
+    "steps": [
+      {
+        "title": "Infrastructure Assessment",
+        "description": "Evaluate your current infrastructure, deployment processes, and operational practices to identify bottlenecks and improvement opportunities.",
+        "icon": "search",
+        "details": [
+          "Architecture review covering compute, networking, storage, and security layers",
+          "CI/CD maturity assessment benchmarked against industry best practices",
+          "Cloud cost analysis with waste identification and optimization opportunities"
+        ]
+      },
+      {
+        "title": "Architecture & Roadmap Design",
+        "description": "Design a target-state cloud architecture and phased migration roadmap that balances speed, risk, and business continuity.",
+        "icon": "document",
+        "details": [
+          "Target architecture diagrams with network topology and security boundaries",
+          "Migration wave planning prioritizing workloads by complexity and business impact"
+        ]
+      },
+      {
+        "title": "Pipeline & Infrastructure Build",
+        "description": "Implement CI/CD pipelines, provision cloud infrastructure through code, and set up container orchestration platforms.",
+        "icon": "wrench",
+        "details": [
+          "CI/CD pipeline construction with automated testing and deployment stages",
+          "Terraform module development for all infrastructure components",
+          "Kubernetes cluster provisioning with production-ready configurations"
+        ]
+      },
+      {
+        "title": "Migration & Deployment",
+        "description": "Execute the migration plan with minimal downtime, validate each workload, and establish monitoring before cutting over production traffic.",
+        "icon": "rocket",
+        "details": [
+          "Rolling migration execution with rollback procedures at every stage",
+          "Performance benchmarking and load testing in the new environment"
+        ]
+      },
+      {
+        "title": "Optimization & Handover",
+        "description": "Fine-tune performance, optimize costs, document everything, and train your team to operate and extend the platform independently.",
+        "icon": "check",
+        "details": [
+          "Cost optimization pass reducing cloud spending by an average of 35%",
+          "Comprehensive runbook and architecture documentation",
+          "Team training on IaC workflows, monitoring tools, and incident response procedures"
+        ]
+      }
+    ]
+  },
+  "techStack": {
+    "headline": "DevOps & Cloud Technology Stack",
+    "subtitle": "Production-Proven Infrastructure Tools",
+    "description": "We use battle-tested tools and platforms to build infrastructure that is automated, observable, and resilient at any scale.",
+    "categories": [
+      {
+        "category": "Cloud Platforms & IaC",
+        "items": [
+          {
+            "name": "AWS",
+            "description": "Primary cloud platform for compute, networking, storage, and managed services"
+          },
+          {
+            "name": "Google Cloud",
+            "description": "GKE, BigQuery, and Cloud Run for Kubernetes and serverless workloads"
+          },
+          {
+            "name": "Azure",
+            "description": "AKS, Azure DevOps, and managed database services for Microsoft-centric environments"
+          },
+          {
+            "name": "Terraform",
+            "description": "Infrastructure as Code for multi-cloud provisioning with state management and drift detection"
+          }
+        ]
+      },
+      {
+        "category": "Containers & Orchestration",
+        "items": [
+          {
+            "name": "Docker",
+            "description": "Container runtime and image building for consistent application packaging"
+          },
+          {
+            "name": "Kubernetes",
+            "description": "Production-grade container orchestration with auto-scaling and self-healing"
+          },
+          {
+            "name": "Nginx",
+            "description": "Ingress controller and reverse proxy for traffic management and TLS termination"
+          },
+          {
+            "name": "Jenkins",
+            "description": "CI/CD automation server for complex build and deployment pipeline orchestration"
+          }
+        ]
+      },
+      {
+        "category": "Monitoring & Observability",
+        "items": [
+          {
+            "name": "Prometheus",
+            "description": "Metrics collection and alerting for infrastructure and application monitoring"
+          },
+          {
+            "name": "Grafana",
+            "description": "Visualization platform for metrics, logs, and traces in unified dashboards"
+          },
+          {
+            "name": "Elasticsearch",
+            "description": "Centralized log management and analysis for troubleshooting and auditing"
+          }
+        ]
+      }
+    ]
+  },
+  "portfolio": {
+    "headline": "DevOps & Cloud Case Studies",
+    "subtitle": "Infrastructure Transformations That Deliver",
+    "description": "See how we have helped organizations modernize their infrastructure, accelerate deployments, and achieve the reliability their customers expect.",
+    "items": [
+      {
+        "title": "SaaS Platform Cloud Migration",
+        "industry": "Technology (SaaS)",
+        "challenge": "A B2B SaaS company with 10,000 customers was running on a single bare-metal server with manual deployments, experiencing monthly outages and unable to scale for a major enterprise contract that required 99.95% SLA.",
+        "solution": "Migrated the entire platform to AWS with auto-scaling ECS clusters, RDS Multi-AZ databases, CloudFront CDN, and a fully automated CI/CD pipeline with blue-green deployments and automated rollback capabilities.",
+        "results": [
+          "Achieved 99.99% uptime over 12 months, exceeding the enterprise SLA requirement",
+          "Reduced deployment time from 4 hours of manual work to 8 minutes fully automated",
+          "Scaled to handle 5x traffic spikes during product launches without intervention"
+        ],
+        "stats": [
+          {
+            "label": "Uptime Achieved",
+            "value": "99.99%"
+          },
+          {
+            "label": "Deploy Time",
+            "value": "8 min"
+          }
+        ]
+      },
+      {
+        "title": "Fintech Kubernetes Platform",
+        "industry": "Financial Services",
+        "challenge": "A growing fintech startup had 30 microservices deployed manually across VMs with no standardization, inconsistent environments, and 2-week release cycles that were limiting their ability to compete.",
+        "solution": "Built a production Kubernetes platform with Terraform-managed infrastructure, Helm-based deployments, service mesh for secure inter-service communication, and GitOps workflows enabling developers to self-service deploy with confidence.",
+        "results": [
+          "Reduced release cycle from 2 weeks to multiple daily deployments",
+          "Decreased infrastructure costs by 42% through efficient container packing and auto-scaling"
+        ],
+        "stats": [
+          {
+            "label": "Release Frequency",
+            "value": "Daily"
+          },
+          {
+            "label": "Cost Reduction",
+            "value": "42%"
+          }
+        ]
+      },
+      {
+        "title": "Media Streaming Infrastructure Scaling",
+        "industry": "Media & Entertainment",
+        "challenge": "A live streaming platform experienced catastrophic failures during peak events with 100,000+ concurrent viewers, resulting in buffering, dropped connections, and significant revenue loss from advertiser churn.",
+        "solution": "Re-architected the streaming infrastructure with multi-region CDN distribution, auto-scaling transcoding clusters, Redis-based session management, and comprehensive observability with real-time capacity forecasting.",
+        "results": [
+          "Successfully handled 500,000 concurrent viewers during a major live event with zero buffering",
+          "Reduced infrastructure cost per viewer by 60% through intelligent scaling and CDN optimization",
+          "Achieved P99 latency under 200ms globally across 12 CDN edge locations"
+        ],
+        "stats": [
+          {
+            "label": "Peak Concurrent Users",
+            "value": "500K"
+          },
+          {
+            "label": "Cost Per Viewer Drop",
+            "value": "60%"
+          }
+        ]
+      }
+    ],
+    "aggregateStats": [
+      {
+        "label": "Cloud Migrations Completed",
+        "value": "75+"
+      },
+      {
+        "label": "Containers in Production",
+        "value": "10K+"
+      },
+      {
+        "label": "Average Uptime Achieved",
+        "value": "99.97%"
+      },
+      {
+        "label": "CI/CD Pipelines Built",
+        "value": "200+"
+      }
+    ]
+  },
+  "faq": {
+    "headline": "DevOps & Cloud FAQ",
+    "subtitle": "Infrastructure Questions Answered",
+    "description": "Common questions about cloud migration, DevOps practices, and how we help engineering teams build and operate modern infrastructure.",
+    "categories": [
+      {
+        "category": "Cloud Migration",
+        "items": [
+          {
+            "question": "How do you minimize downtime during cloud migrations?",
+            "answer": "We use a phased migration approach with parallel environments. Your existing systems continue running while we build and validate the cloud environment. Database migrations use replication-based approaches for near-zero downtime cutover. We always maintain rollback capabilities at every stage."
+          },
+          {
+            "question": "Which cloud provider do you recommend: AWS, Azure, or Google Cloud?",
+            "answer": "The best choice depends on your existing technology stack, team expertise, compliance requirements, and specific workload characteristics. We are multi-cloud experts and will recommend the platform that best fits your needs. Many clients benefit from a primary cloud with specific services from secondary providers."
+          },
+          {
+            "question": "How long does a typical cloud migration take?",
+            "answer": "A focused migration of 5-10 workloads typically takes 2-4 months. Larger enterprise migrations with 50+ workloads, complex dependencies, and compliance requirements range from 6-12 months. We deliver in waves so you see benefits incrementally rather than waiting for a big-bang cutover."
+          }
+        ]
+      },
+      {
+        "category": "DevOps Practices",
+        "items": [
+          {
+            "question": "What if our team has limited DevOps experience?",
+            "answer": "We meet you where you are. Our engagements include hands-on knowledge transfer and pair-programming sessions. We build the initial pipelines and infrastructure, then progressively hand ownership to your team with documentation, training, and transitional support."
+          },
+          {
+            "question": "How do you handle secrets and sensitive configuration in CI/CD pipelines?",
+            "answer": "We implement dedicated secret management using tools like AWS Secrets Manager, HashiCorp Vault, or Azure Key Vault. Secrets are never stored in code repositories. Pipelines access secrets at runtime through secure injection, and all access is audited and role-controlled."
+          },
+          {
+            "question": "Can you work with our existing CI/CD tools?",
+            "answer": "Yes. We have experience with Jenkins, GitHub Actions, GitLab CI, CircleCI, Azure DevOps, and many others. We can optimize your existing pipelines or recommend migrations when the benefits justify the effort. Our focus is on outcomes, not specific tools."
+          }
+        ]
+      },
+      {
+        "category": "Cost & Operations",
+        "items": [
+          {
+            "question": "How much can we save by migrating to the cloud?",
+            "answer": "Cost outcomes vary. Some clients reduce infrastructure costs by 30-50% through right-sizing and reserved capacity. Others see costs increase slightly but gain dramatically in deployment speed, reliability, and scalability. We provide detailed cost projections during the assessment phase."
+          },
+          {
+            "question": "Do you provide ongoing infrastructure management after migration?",
+            "answer": "Yes. We offer managed DevOps services including 24/7 monitoring, incident response, security patching, cost optimization, and infrastructure updates. Many clients start with full management and gradually transition to self-management as their team builds capability."
+          },
+          {
+            "question": "How do you prevent cloud cost surprises?",
+            "answer": "We implement budget alerts, tagging policies for cost allocation, automated reports, and regular cost review sessions. Our infrastructure code includes resource limits and scaling boundaries. We also set up anomaly detection to catch unexpected spend increases before they become significant."
+          }
+        ]
+      }
+    ]
+  }
+}

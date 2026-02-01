@@ -1,0 +1,369 @@
+{
+  "serviceName": "Python Automation",
+  "features": {
+    "headline": "Intelligent Python Automation",
+    "subtitle": "Automate Everything That Slows You Down",
+    "description": "We build custom Python automation solutions that eliminate manual tasks, streamline operations, and free your team to focus on high-value work.",
+    "items": [
+      {
+        "icon": "cog",
+        "title": "Workflow Automation",
+        "description": "End-to-end automation of repetitive business processes from data entry to report generation and beyond.",
+        "details": [
+          "Multi-step workflow orchestration with error handling and retries",
+          "Email parsing, document processing, and automated responses",
+          "Scheduled and event-triggered automation pipelines"
+        ]
+      },
+      {
+        "icon": "database",
+        "title": "Data Pipeline Automation",
+        "description": "Automated ETL pipelines that collect, clean, transform, and deliver data from any source to any destination.",
+        "details": [
+          "API, database, and file-based data extraction from 100+ sources",
+          "Data validation, deduplication, and quality checks",
+          "Automated loading into data warehouses and analytics platforms"
+        ]
+      },
+      {
+        "icon": "document",
+        "title": "Report Generation",
+        "description": "Automated creation of business reports, dashboards, and executive summaries from raw data sources.",
+        "details": [
+          "PDF, Excel, and HTML report generation with custom branding",
+          "Automated chart and visualization creation from live data"
+        ]
+      },
+      {
+        "icon": "globe",
+        "title": "Web Scraping & Data Collection",
+        "description": "Reliable web scraping solutions that collect structured data from websites, APIs, and online platforms at scale.",
+        "details": [
+          "Anti-detection scraping with proxy rotation and rate limiting",
+          "Dynamic page rendering for JavaScript-heavy websites",
+          "Structured data extraction with validation and deduplication"
+        ]
+      },
+      {
+        "icon": "cloud",
+        "title": "Cloud & Infrastructure Automation",
+        "description": "Automated provisioning, deployment, and management of cloud resources and development infrastructure.",
+        "details": [
+          "Infrastructure-as-code with automated provisioning scripts",
+          "CI/CD pipeline automation for testing and deployment",
+          "Automated backup, monitoring, and scaling operations"
+        ]
+      },
+      {
+        "icon": "lightning",
+        "title": "System Integration",
+        "description": "Connect disparate systems with custom API integrations that keep your tools and data in perfect sync.",
+        "details": [
+          "REST and GraphQL API integration with authentication handling",
+          "Bi-directional data sync between SaaS platforms",
+          "Webhook listeners and event-driven processing pipelines"
+        ]
+      },
+      {
+        "icon": "chat",
+        "title": "Bot & Notification Automation",
+        "description": "Custom bots for Slack, Teams, Discord, and email that automate notifications, approvals, and routine tasks.",
+        "details": [
+          "Slack and Teams bots for automated alerts and approvals",
+          "Email automation with smart templates and conditional logic"
+        ]
+      },
+      {
+        "icon": "wrench",
+        "title": "Testing Automation",
+        "description": "Automated testing frameworks for web applications, APIs, and data pipelines to ensure quality at every release.",
+        "details": [
+          "End-to-end browser testing with Selenium and Playwright",
+          "API contract testing and integration test suites",
+          "Data pipeline validation and regression testing frameworks"
+        ]
+      }
+    ],
+    "stats": [
+      {
+        "label": "Hours Saved Monthly",
+        "value": "50K+"
+      },
+      {
+        "label": "Automations Built",
+        "value": "500+"
+      },
+      {
+        "label": "Avg Time Savings",
+        "value": "85%"
+      },
+      {
+        "label": "Error Rate Reduction",
+        "value": "96%"
+      }
+    ]
+  },
+  "process": {
+    "headline": "Our Automation Process",
+    "subtitle": "From Manual Pain to Automated Gain",
+    "description": "A structured approach to identifying, building, and scaling automation that delivers immediate time savings and long-term operational efficiency.",
+    "steps": [
+      {
+        "title": "Process Discovery & Audit",
+        "description": "We map your current workflows, identify automation opportunities, and quantify the time and cost savings for each.",
+        "icon": "search",
+        "details": [
+          "Stakeholder interviews to document manual workflows",
+          "Time-and-motion analysis to quantify automation ROI",
+          "Priority matrix ranking opportunities by impact and feasibility"
+        ]
+      },
+      {
+        "title": "Solution Architecture",
+        "description": "We design the automation architecture including data flows, error handling, scheduling, and integration points.",
+        "icon": "code",
+        "details": [
+          "System integration mapping and API documentation review",
+          "Error handling and retry strategy design"
+        ]
+      },
+      {
+        "title": "Development & Integration",
+        "description": "We build the automation scripts, connect to your systems, and implement comprehensive error handling and logging.",
+        "icon": "wrench",
+        "details": [
+          "Modular Python scripts with clean, maintainable architecture",
+          "API integrations with authentication and rate limit handling",
+          "Comprehensive logging and error notification setup"
+        ]
+      },
+      {
+        "title": "Testing & Validation",
+        "description": "We rigorously test every automation path including edge cases, failure scenarios, and data validation rules.",
+        "icon": "check",
+        "details": [
+          "Unit and integration testing for all automation components",
+          "Edge case and failure scenario testing with rollback verification",
+          "Parallel run with manual process to validate accuracy"
+        ]
+      },
+      {
+        "title": "Deployment & Monitoring",
+        "description": "We deploy automations to production with monitoring dashboards and handoff documentation for your team.",
+        "icon": "rocket",
+        "details": [
+          "Production deployment with scheduled execution setup",
+          "Monitoring dashboards with success rates and error tracking",
+          "Team training and comprehensive runbook documentation"
+        ]
+      }
+    ]
+  },
+  "techStack": {
+    "headline": "Python Automation Tech Stack",
+    "subtitle": "Battle-Tested Python Tools",
+    "description": "We use the most reliable Python libraries and frameworks to build automations that run flawlessly in production.",
+    "categories": [
+      {
+        "category": "Core Python & Frameworks",
+        "items": [
+          {
+            "name": "Python",
+            "description": "The backbone of all our automation solutions with a rich standard library."
+          },
+          {
+            "name": "FastAPI",
+            "description": "High-performance API framework for building automation service endpoints."
+          },
+          {
+            "name": "Django",
+            "description": "Full-featured web framework for automation dashboards and admin interfaces."
+          },
+          {
+            "name": "Flask",
+            "description": "Lightweight framework for simple webhook receivers and microservices."
+          }
+        ]
+      },
+      {
+        "category": "Data & Processing",
+        "items": [
+          {
+            "name": "PostgreSQL",
+            "description": "Reliable database for automation state management and audit logging."
+          },
+          {
+            "name": "MongoDB",
+            "description": "Flexible document storage for unstructured automation data."
+          },
+          {
+            "name": "Redis",
+            "description": "Task queuing and caching for high-throughput automation pipelines."
+          }
+        ]
+      },
+      {
+        "category": "Infrastructure",
+        "items": [
+          {
+            "name": "Docker",
+            "description": "Containerized automation environments for consistent execution everywhere."
+          },
+          {
+            "name": "AWS",
+            "description": "Cloud functions and scheduled tasks for serverless automation hosting."
+          },
+          {
+            "name": "NodeJS",
+            "description": "Event-driven services for webhook processing and real-time integrations."
+          }
+        ]
+      }
+    ]
+  },
+  "portfolio": {
+    "headline": "Automation Success Stories",
+    "subtitle": "Real Results From Real Automations",
+    "description": "See how our Python automation solutions have transformed operations for businesses across industries.",
+    "items": [
+      {
+        "title": "Financial Reporting Automation",
+        "industry": "Accounting & Finance",
+        "challenge": "A mid-size accounting firm spent 200+ hours monthly manually compiling financial reports from five different data sources for 80 clients.",
+        "solution": "We built an automated pipeline that pulls data from QuickBooks, bank APIs, and spreadsheets, reconciles transactions, and generates branded PDF reports with variance analysis.",
+        "results": [
+          "Report generation time reduced from 2.5 hours to 4 minutes per client",
+          "Monthly time savings of 190 hours across the team",
+          "Data accuracy improved from 94% to 99.8%"
+        ],
+        "stats": [
+          {
+            "label": "Time Savings",
+            "value": "97%"
+          },
+          {
+            "label": "Accuracy",
+            "value": "99.8%"
+          }
+        ]
+      },
+      {
+        "title": "E-Commerce Inventory Sync",
+        "industry": "Retail & E-Commerce",
+        "challenge": "A multi-channel retailer selling on Amazon, Shopify, and eBay had constant overselling issues due to inventory counts being updated manually across platforms.",
+        "solution": "We developed a real-time inventory synchronization system that monitors stock levels across all channels and updates quantities within seconds of each sale.",
+        "results": [
+          "Overselling incidents dropped from 45 per month to zero",
+          "Inventory update latency reduced from 4 hours to under 10 seconds"
+        ],
+        "stats": [
+          {
+            "label": "Overselling",
+            "value": "0/month"
+          },
+          {
+            "label": "Sync Latency",
+            "value": "<10s"
+          }
+        ]
+      },
+      {
+        "title": "HR Onboarding Automation",
+        "industry": "Human Resources",
+        "challenge": "A growing tech company onboarding 30+ employees monthly was drowning in manual tasks across six different HR, IT, and communication platforms.",
+        "solution": "We automated the entire onboarding workflow from offer acceptance to day-one readiness, including account provisioning, equipment requests, training assignments, and welcome communications.",
+        "results": [
+          "Onboarding setup time reduced from 3 hours to 8 minutes per hire",
+          "New hire satisfaction scores increased by 34%",
+          "Zero missed onboarding steps since automation deployment"
+        ],
+        "stats": [
+          {
+            "label": "Setup Time",
+            "value": "-96%"
+          },
+          {
+            "label": "Completion Rate",
+            "value": "100%"
+          }
+        ]
+      }
+    ],
+    "aggregateStats": [
+      {
+        "label": "Automations Deployed",
+        "value": "500+"
+      },
+      {
+        "label": "Hours Saved Monthly",
+        "value": "50K+"
+      },
+      {
+        "label": "Error Reduction",
+        "value": "96%"
+      },
+      {
+        "label": "Client Retention",
+        "value": "98%"
+      }
+    ]
+  },
+  "faq": {
+    "headline": "Python Automation FAQ",
+    "subtitle": "Automation Questions Answered",
+    "description": "Everything you need to know about our Python automation services and how they can transform your operations.",
+    "categories": [
+      {
+        "category": "Feasibility & Scope",
+        "items": [
+          {
+            "question": "What kinds of tasks can be automated with Python?",
+            "answer": "Nearly any repetitive digital task can be automated including data entry, file processing, report generation, email handling, web scraping, API integrations, testing, and system administration. If a human does it on a computer repeatedly, we can likely automate it."
+          },
+          {
+            "question": "How do you determine which processes to automate first?",
+            "answer": "We use a priority matrix that evaluates each process based on time spent, frequency, error rate, and complexity. We start with high-frequency, rule-based tasks that deliver the fastest ROI, then progressively tackle more complex workflows."
+          },
+          {
+            "question": "Can you automate processes that involve multiple systems?",
+            "answer": "Yes, cross-system automation is our specialty. We connect any combination of APIs, databases, spreadsheets, email, web applications, and desktop software into unified automated workflows with proper error handling at every integration point."
+          }
+        ]
+      },
+      {
+        "category": "Reliability & Maintenance",
+        "items": [
+          {
+            "question": "What happens when an automation fails?",
+            "answer": "Every automation we build includes comprehensive error handling with automatic retries, fallback procedures, and instant notification to your team via Slack, email, or SMS. We also maintain detailed logs for rapid troubleshooting."
+          },
+          {
+            "question": "How do you handle changes in third-party APIs or websites?",
+            "answer": "We build our automations with resilience in mind, using version-pinned API clients and adaptive scraping strategies. Our monitoring detects breaking changes immediately, and we provide maintenance plans that include prompt updates when external services change."
+          },
+          {
+            "question": "Do automations need ongoing maintenance?",
+            "answer": "Well-built automations require minimal maintenance, but external dependencies can change. We offer monthly maintenance plans that include monitoring, dependency updates, and adjustments when connected systems evolve. Most automations run autonomously for months between updates."
+          }
+        ]
+      },
+      {
+        "category": "Cost & Timeline",
+        "items": [
+          {
+            "question": "How long does it take to build a custom automation?",
+            "answer": "Simple single-system automations take 1-2 weeks. Multi-system workflows with complex business logic typically take 3-6 weeks. Large-scale automation platforms with dashboards and reporting take 2-3 months. We deliver in weekly sprints so you see progress immediately."
+          },
+          {
+            "question": "What is the typical ROI of automation projects?",
+            "answer": "Most clients achieve full ROI within 2-4 months. A typical automation saving 20 hours per week pays for itself within the first month. We provide detailed ROI projections during the discovery phase so you can make informed investment decisions."
+          },
+          {
+            "question": "Can my team maintain the automations after handoff?",
+            "answer": "Absolutely. We write clean, well-documented Python code and provide comprehensive runbooks. We also offer optional training sessions to upskill your team on maintaining and extending the automations independently."
+          }
+        ]
+      }
+    ]
+  }
+}

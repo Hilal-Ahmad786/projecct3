@@ -52,7 +52,16 @@
     "contact": "İletişim",
     "getQuote": "Teklif Al",
     "language": "Dil",
-    "menu": "Menü"
+    "menu": "Menü",
+    "serviceNav": {
+      "overview": "Genel Bakış",
+      "features": "Özellikler",
+      "process": "Süreç",
+      "techStack": "Teknoloji",
+      "portfolio": "Portföy",
+      "faq": "SSS",
+      "security": "Güvenlik"
+    }
   },
   "megaMenu": {
     "webDesign": "Web & Tasarım",
@@ -1568,6 +1577,35 @@
       "draftFound": "Kaydedilmemiş bir taslağınız var. Devam etmek ister misiniz?",
       "discard": "Sil",
       "restore": "Geri Yükle"
+    },
+    "errors": {
+      "required": "Bu alan zorunludur",
+      "email": "Lütfen geçerli bir e-posta adresi girin",
+      "phone": "Lütfen geçerli bir telefon numarası girin",
+      "minLength": "En az {{min}} karakter olmalıdır",
+      "maxLength": "{{max}} karakterden fazla olmamalıdır",
+      "invalidUrl": "Lütfen geçerli bir URL girin"
+    },
+    "labels": {
+      "name": "Ad",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "company": "Şirket",
+      "message": "Mesaj",
+      "subject": "Konu",
+      "budget": "Bütçe",
+      "timeline": "Zaman Çizelgesi",
+      "projectType": "Proje Türü",
+      "description": "Açıklama"
+    },
+    "placeholders": {
+      "name": "Adınızı girin",
+      "email": "E-postanızı girin",
+      "phone": "Telefon numaranızı girin",
+      "company": "Şirket adınızı girin",
+      "message": "Projeniz hakkında bilgi verin...",
+      "subject": "Konu nedir?",
+      "search": "Ara..."
     }
   },
   "navigation": {
@@ -2155,6 +2193,126 @@
         "description": "Buyuk dil modellerinin gucunu uygulamalariniza tasiyalim.",
         "primaryCta": "Entegrasyon Teklifi Alin",
         "secondaryCta": "Teknik Danismanlik"
+      }
+    },
+    "webDevelopmentPage": {
+      "title": "Our Web Development Services",
+      "description": "From concept to deployment, we deliver comprehensive web solutions that help businesses thrive in the digital landscape.",
+      "items": {
+        "customApps": {
+          "title": "Custom Web Applications",
+          "description": "Tailor-made web solutions built from the ground up to meet your unique business requirements and workflow."
+        },
+        "ecommerce": {
+          "title": "E-commerce Solutions",
+          "description": "Powerful online stores with secure payments, inventory management, and seamless user experiences that drive conversions."
+        },
+        "cms": {
+          "title": "Content Management Systems",
+          "description": "User-friendly CMS platforms that empower your team to manage content efficiently without technical expertise."
+        },
+        "pwa": {
+          "title": "Progressive Web Apps",
+          "description": "Fast, reliable, and engaging web applications that work offline and feel like native mobile apps."
+        },
+        "api": {
+          "title": "API Integration",
+          "description": "Seamlessly connect your web application with third-party services, payment gateways, and external data sources."
+        },
+        "performance": {
+          "title": "Performance Optimization",
+          "description": "Speed up your existing website with advanced optimization techniques for better user experience and SEO rankings."
+        }
+      }
+    },
+    "mobileDevelopmentPage": {
+      "title": "Mobile Development Services",
+      "description": "From concept to launch, we provide comprehensive mobile app development services tailored to your business needs.",
+      "items": {
+        "ios": {
+          "title": "iOS Development",
+          "description": "Build stunning native iOS apps using Swift and SwiftUI. We create high-performance applications optimized for iPhone, iPad, and Apple Watch."
+        },
+        "android": {
+          "title": "Android Development",
+          "description": "Develop powerful Android applications using Kotlin and Jetpack Compose. We ensure compatibility across the diverse Android ecosystem."
+        },
+        "crossPlatform": {
+          "title": "Cross-Platform Apps",
+          "description": "Save time and budget with React Native or Flutter development. One codebase delivers native experiences on both iOS and Android."
+        },
+        "maintenance": {
+          "title": "App Maintenance",
+          "description": "Keep your app running smoothly with regular updates, bug fixes, and performance improvements. We provide ongoing support and monitoring."
+        },
+        "performance": {
+          "title": "Performance Optimization",
+          "description": "Optimize your app for speed, battery efficiency, and smooth animations. We ensure your users enjoy a fast, responsive experience."
+        },
+        "aso": {
+          "title": "App Store Optimization",
+          "description": "Maximize your app visibility with ASO strategies. We optimize listings, keywords, and screenshots to drive organic downloads."
+        }
+      }
+    },
+    "aiServicesPage": {
+      "title": "Comprehensive AI Services",
+      "description": "From strategy to implementation, we offer end-to-end AI services to transform your business operations.",
+      "items": {
+        "consulting": {
+          "title": "AI Consulting",
+          "description": "Strategic guidance to identify AI opportunities, assess feasibility, and create a roadmap for successful AI adoption in your organization."
+        },
+        "customDev": {
+          "title": "Custom AI Development",
+          "description": "Bespoke AI solutions built from the ground up to address your unique business challenges and requirements."
+        },
+        "automation": {
+          "title": "Process Automation",
+          "description": "Intelligent automation solutions that streamline workflows, reduce manual tasks, and increase operational efficiency."
+        },
+        "vision": {
+          "title": "Computer Vision",
+          "description": "Advanced image and video analysis systems for object detection, facial recognition, quality control, and visual inspection."
+        },
+        "analytics": {
+          "title": "Intelligent Analytics",
+          "description": "AI-powered analytics platforms that transform raw data into actionable insights and predictive intelligence."
+        },
+        "nlp": {
+          "title": "Natural Language Processing",
+          "description": "Text analysis, sentiment detection, chatbots, and document processing solutions powered by state-of-the-art NLP models."
+        }
+      }
+    },
+    "ecommercePage": {
+      "title": "Complete E-Commerce Solutions",
+      "description": "Everything you need to launch, run, and scale a successful online store",
+      "items": {
+        "storefronts": {
+          "title": "Custom Storefronts",
+          "description": "Beautifully designed, fully customized online stores that reflect your brand identity and provide exceptional shopping experiences."
+        },
+        "payments": {
+          "title": "Payment Integration",
+          "description": "Seamless integration with multiple payment gateways including Stripe, PayPal, and local payment methods for global reach."
+        },
+        "inventory": {
+          "title": "Inventory Management",
+          "description": "Real-time inventory tracking, automated stock alerts, and multi-warehouse support to streamline your operations."
+        },
+        "analytics": {
+          "title": "Analytics & Insights",
+          "description": "Comprehensive dashboards with sales analytics, customer behavior tracking, and conversion optimization insights."
+        },
+        "orders": {
+          "title": "Order Processing",
+          "description": "Automated order management with fulfillment tracking, returns handling, and customer notification systems."
+        },
+        "mobile": {
+          "title": "Mobile Commerce",
+          "description": "Responsive, mobile-first designs and progressive web apps that capture the growing mobile shopping market."
+        }
       }
     }
   },
@@ -3937,6 +4095,2352 @@
       "description": "Urunlerinizi kara ve ziyaretcilerinizi sadik musterilere donusturen bir e-ticaret platformu insa edelim.",
       "schedule": "Danismanlik Randevusu Alin",
       "caseStudies": "Basari Hikayelerini Goruntule"
+    }
+  },
+  "cookieConsent": {
+    "title": "Gizliliğinize değer veriyoruz",
+    "description": "Tarama deneyiminizi geliştirmek, site trafiğini analiz etmek ve içeriği kişiselleştirmek için çerezler kullanıyoruz. \"Tümünü Kabul Et\" seçeneğine tıklayarak çerez kullanımımızı onaylamış olursunuz.",
+    "privacyPolicy": "Gizlilik Politikası",
+    "customize": "Özelleştir",
+    "decline": "Reddet",
+    "acceptAll": "Tümünü Kabul Et",
+    "preferencesTitle": "Çerez Tercihleri",
+    "necessaryCookies": "Gerekli Çerezler",
+    "necessaryDesc": "Web sitesinin düzgün çalışması için gereklidir",
+    "analyticsCookies": "Analiz Çerezleri",
+    "analyticsDesc": "Ziyaretçilerin sitemizi nasıl kullandığını anlamamıza yardımcı olur",
+    "marketingCookies": "Pazarlama Çerezleri",
+    "marketingDesc": "İlgili reklamlar sunmak için kullanılır",
+    "cancel": "İptal",
+    "savePreferences": "Tercihleri Kaydet"
+  },
+  "serviceSubpages": {
+    "common": {
+      "viewDetails": "Detayları Gör",
+      "stillHaveQuestions": "Hâlâ sorularınız mı var?",
+      "stillHaveQuestionsDesc": "Aradığınız cevabı bulamıyor musunuz? Ekibimiz hizmetlerimizle ilgili her türlü sorunuzda yardımcı olmak için burada.",
+      "contactUs": "Bize Ulaşın",
+      "searchQuestions": "Soru ara...",
+      "noMatchingQuestions": "Eşleşen soru bulunamadı.",
+      "clearSearch": "Aramayı temizle",
+      "all": "Tümü",
+      "challenge": "Zorluk",
+      "solution": "Çözüm",
+      "keyResults": "Temel Sonuçlar",
+      "filterByCategory": "Kategoriye göre filtrele",
+      "viewProject": "Projeyi Gör",
+      "proficiency": "Yetkinlik",
+      "stepNumber": "Adım {{number}}",
+      "scrollToExplore": "Keşfetmek için kaydır",
+      "requestService": "Hizmet Talep Et"
+    },
+    "ai-solutions": {
+      "serviceName": "Yapay Zeka Cozumleri",
+      "features": {
+        "headline": "Olculebilir Yatirim Getirisi Saglayan Kurumsal Yapay Zeka",
+        "subtitle": "Akilli Otomasyon ve Tahmine Dayali Analitik",
+        "description": "Mevcut altyapiniza sorunsuz entegre olan, ham verileri eyleme donusturulebilir icgoruler haline getiren ve karmasik karar alma is akislarini otomatiklestiren uretim duzeyi yapay zeka sistemleri gelistiriyoruz.",
+        "items": [
+          {
+            "icon": "brain",
+            "title": "Ozel Makine Ogrenimi Modelleri",
+            "description": "Sektore ozel zorluklari yuksek dogrulukla cozmek icin ozel verilerinizle egitilmis, amaca yonelik ML modelleri.",
+            "details": [
+              "Sektorunuze ozel denetimli ve denetimsiz ogrenme hatlari",
+              "Otomatik sapma algilama ve performans izleme ile surekli model yeniden egitimi",
+              "SHAP ve LIME yorumlanabilirlik katmanlariyla aciklanabilir yapay zeka ciktilari"
+            ]
+          },
+          {
+            "icon": "chat",
+            "title": "Konusma Yapay Zekasi ve NLP",
+            "description": "Baglami, duyguyu ve niyeti anlayan akilli sohbet botlari ve dogal dil isleme sistemleri gelistirin.",
+            "details": [
+              "Oturumlar arasi bellek ve baglam koruma ile cok adimli diyalog yonetimi",
+              "Lehce farkindalikli isleme ile 40'tan fazla dili destekleyen cok dilli destek",
+              "Temellendirilmis yanitlar icin CRM, yardim masasi ve bilgi tabani platformlariyla entegrasyon"
+            ]
+          },
+          {
+            "icon": "eye",
+            "title": "Bilgisayar Gorusu Sistemleri",
+            "description": "Uretim, perakende ve saglik sektorleri icin otomatik gorsel denetim, nesne algilama ve goruntu siniflandirma.",
+            "details": [
+              "100ms altinda cikarim gecikmesiyle gercek zamanli video akisi analizi",
+              "Kusur tespiti ve kalite guvencesi icin ozel egitimli algilama modelleri",
+              "Sirket ici kameralar ve IoT cihazlari icin uc birim dagitim optimizasyonu"
+            ]
+          },
+          {
+            "icon": "chart",
+            "title": "Tahmine Dayali Analitik ve Tahminleme",
+            "description": "Talep, musteri kaybi ve pazar degisimlerini gerceklesmeden once ongoren zaman serisi tahminleme ve tahmin modelleri.",
+            "details": [
+              "Istatistiksel ve derin ogrenme yaklasimlarini birlestiren topluluk tahminleme",
+              "Risk degerlendirmesi icin Monte Carlo simulasyonlariyla senaryo modelleme",
+              "Yapilandirilmis ve yapilandirilmamis veri kaynaklarindan otomatik ozellik muhendisligi"
+            ]
+          },
+          {
+            "icon": "search",
+            "title": "Akilli Belge Isleme",
+            "description": "Yapay zeka destekli belge anlama ile faturalar, sozlesmeler ve formlardan bilgi cikarma, siniflandirma ve yonlendirme.",
+            "details": [
+              "Tablolar, basliklar ve ic ice yapilar icin duzen farkindalikli OCR ile cikarim",
+              "Sektore ozel terminoloji ve kodlar icin ozel varlik tanima",
+              "Insan dongusu yukseltme is akislariyla otomatik dogrulama kurallari"
+            ]
+          },
+          {
+            "icon": "sparkles",
+            "title": "Uretken Yapay Zeka Entegrasyonu",
+            "description": "Guvenli, kurumsal duzeyde uretken yapay zeka uygulamalariyla buyuk dil modellerinin gucunden yararlanin.",
+            "details": [
+              "Dogrulugu yuksek, kaynak destekli yanitlar icin vektor veritabanlariyla RAG hatlari",
+              "Veri gizliligi garantileriyle ozel veri kumeleri uzerinde ince ayarli temel modeller",
+              "Pazarlama, dokumantasyon ve raporlama icin icerik uretim is akislari"
+            ]
+          },
+          {
+            "icon": "lightning",
+            "title": "MLOps ve Model Yasam Dongusu Yonetimi",
+            "description": "Uretimde ML modellerinin egitimi, dagitimi, izlenmesi ve versiyonlanmasi icin uctan uca altyapi.",
+            "details": [
+              "Otomatik A/B testi ve kanarya dagitimi ile model dagitimi icin CI/CD hatlari",
+              "Dogruluk, gecikme ve kaynak kullanimini izleyen gercek zamanli performans panolari",
+              "Egitim verisinden uretim uc noktasina tam soy izleme ile model kayit defteri"
+            ]
+          },
+          {
+            "icon": "shield",
+            "title": "Yapay Zeka Yonetisimi ve Uyumluluk",
+            "description": "Yerlesik onyargi algilama, denetim izleri ve seffaflik ile yapay zeka sistemlerinizin duzenleyici gereksinimleri karsiladiginden emin olun.",
+            "details": [
+              "Korunan demografik ozellikler genelinde adalet olcumleri ve onyargi denetimi",
+              "Tam tekrarlanabilirlik ile her tahmin icin kapsamli denetim kaydi"
+            ]
+          }
+        ],
+        "stats": [
+          {
+            "label": "Dagitilan Model",
+            "value": "200+"
+          },
+          {
+            "label": "Ort. Dogruluk Iyilesmesi",
+            "value": "%34"
+          },
+          {
+            "label": "Isleme Hizi Kazanimi",
+            "value": "12x"
+          },
+          {
+            "label": "Musteri Tutma Orani",
+            "value": "%96"
+          }
+        ]
+      },
+      "process": {
+        "headline": "Veri Stratejisinden Uretim Yapay Zekasina",
+        "subtitle": "Kanitlanmis Yapay Zeka Gelistirme Surecimiz",
+        "description": "Her yapay zeka girisimi icin riski azaltan ve degere ulasma suresini hizlandiran yapilandirilmis, yinelemeli bir yaklasim izliyoruz.",
+        "steps": [
+          {
+            "title": "Kesif ve Veri Degerlendirmesi",
+            "description": "Mevcut veri varliklarinizi denetliyoruz, yuksek etkili kullanim alanlarini belirliyoruz ve is KPI'lariyla uyumlu basari olcutleri tanimliyoruz.",
+            "icon": "search",
+            "details": [
+              "Otomasyon firsatlarini ortaya cikarmak icin paydas gorusmeleri ve surec haritalama",
+              "Tamliligi, tutarliligi ve etiketleme hazirligini kapsayan veri kalitesi degerlendirmesi",
+              "Uygulama yol haritasi ve kaynak planlamasi ile yatirim getirisi projeksiyonu"
+            ]
+          },
+          {
+            "title": "Veri Muhendisligi ve Hazirlama",
+            "description": "Model egitimi ve cikarim icin verilerinizi temizleyen, donusturen ve zenginlestiren saglam veri hatlari olusturun.",
+            "icon": "database",
+            "details": [
+              "Sema dogrulamasi ve anomali algulama ile ETL hatti insasi",
+              "Projeler arasi yeniden kullanilabilir, versiyonlu ozellik kumeleri icin ozellik deposu gelistirme",
+              "Sinif dengesizligi ve seyrek veri kumelerini gidermek icin veri artirma stratejileri"
+            ]
+          },
+          {
+            "title": "Model Gelistirme ve Egitim",
+            "description": "Kullanim durumunuz icin en iyi performans gosteren mimariyi secmek uzere titiz degerlendirmeyle yinelemeli deney.",
+            "icon": "brain",
+            "details": [
+              "Bayes arami ve sinir agi mimari arami kullanarak hiperparametre optimizasyonu",
+              "Genellestirilebilirlik saglamak icin tabakalandirilmis orneklemeyle capraz dogrulama",
+              "Temel modellere ve sektor standartlarina gore karsilastirmali degerlendirme"
+            ]
+          },
+          {
+            "title": "Entegrasyon ve Dagitim",
+            "description": "Gereksinimlerinize bagli olarak API uc noktalari, toplu isleme veya uc birim cikarimi ile uretim duzeyi dagitim.",
+            "icon": "rocket",
+            "details": [
+              "Otomatik olcekleme ve yuk dengeleme ile konteynerize model sunumu",
+              "Kimlik dogrulama ve hiz sinirlamasi ile REST ve gRPC API uc noktalari",
+              "Uretim riskini en aza indirmek icin golge dagitimi ve kademeli kullanima acma"
+            ]
+          },
+          {
+            "title": "Izleme ve Optimizasyon",
+            "description": "Model bozulmasinda otomatik yeniden egitim tetikleyicileri ve proaktif uyari ile surekli performans takibi.",
+            "icon": "chart",
+            "details": [
+              "Giris dagilimlarinda ve tahmin ciktilarinda gercek zamanli sapma algilama",
+              "Performans esik ihlalleri tarafindan tetiklenen otomatik yeniden egitim hatlari",
+              "Optimizasyon onerileri ile aylik performans degerlendirmeleri"
+            ]
+          }
+        ]
+      },
+      "techStack": {
+        "headline": "En Yeni Yapay Zeka Teknoloji Yigini",
+        "subtitle": "Kullandigimiz Araclar ve Cerceveler",
+        "description": "Uretim ortamlarinda guvenilir sekilde olceklenen cozumler olusturmak icin en olgun ve yuksek performansli yapay zeka cercevelerinden yararlaniyoruz.",
+        "categories": [
+          {
+            "category": "ML ve Derin Ogrenme Cerceveleri",
+            "items": [
+              {
+                "name": "TensorFlow",
+                "description": "Olceklenebilir model dagitimi icin TF Serving ile uretim duzeyi derin ogrenme"
+              },
+              {
+                "name": "PyTorch",
+                "description": "Ozel model mimarileri ve hizli prototipleme icin arastirmadan uretime cerceve"
+              },
+              {
+                "name": "scikit-learn",
+                "description": "Tablo verisi, ozellik muhendisligi ve temel modeller icin klasik ML algoritmalari"
+              },
+              {
+                "name": "Keras",
+                "description": "Sinir agi mimarileriyle hizli deney yapmak icin ust duzey API"
+              }
+            ]
+          },
+          {
+            "category": "LLM ve NLP Platformlari",
+            "items": [
+              {
+                "name": "OpenAI",
+                "description": "Icerik uretimi, ozetleme ve akil yurutme gorevleri icin GPT-4 entegrasyonu"
+              },
+              {
+                "name": "Hugging Face",
+                "description": "NER, siniflandirma ve gomme uretimi icin acik kaynakli transformer modelleri"
+              },
+              {
+                "name": "LangChain",
+                "description": "RAG hatlari ve coklu ajan sistemleri olusturmak icin orkestrasyon cercevesi"
+              }
+            ]
+          },
+          {
+            "category": "Altyapi ve MLOps",
+            "items": [
+              {
+                "name": "AWS",
+                "description": "Uctan uca ML yasam dongusu yonetimi icin SageMaker, Bedrock ve Lambda"
+              },
+              {
+                "name": "Docker",
+                "description": "Ortamlar arasi tutarli dagitim icin konteynerize model sunumu"
+              },
+              {
+                "name": "Kubernetes",
+                "description": "Degisken talep altinda otomatik olcekleme cikarim is yukleri icin orkestrasyon"
+              },
+              {
+                "name": "PostgreSQL",
+                "description": "Hibrit arama ve gomme icin pgvector ile yapilandirilmis veri depolama"
+              }
+            ]
+          }
+        ]
+      },
+      "portfolio": {
+        "headline": "Gercek Is Sonuclari Saglayan Yapay Zeka Cozumleri",
+        "subtitle": "Secilmis Vaka Calismalari",
+        "description": "Yapay zeka uygulamalarimizin sektorler arasi operasyonlari nasil donusturdugunu ve rekabet avantajlari olusturdugunu gorun.",
+        "items": [
+          {
+            "title": "Filo Yonetimi icin Kestirimci Bakim Platformu",
+            "industry": "Ulasim ve Lojistik",
+            "challenge": "Ulusal bir lojistik sirketi, plansiz arac arizalari nedeniyle yillik 2,3 milyon dolar kaybediyordu; bu durum teslimat gecikmeleri ve acil onarim maliyetlerine neden oluyordu.",
+            "solution": "1.200 aractan alinan sensor telemetrisi verilerini kullanarak, bilesenlerin 14 gun oncesinden arizalanmasini tahmin eden gradient boosting modelleriyle bir kestirimci bakim sistemi olusturduk.",
+            "results": [
+              "Dagitimin ilk alti ayinda plansiz durma suresi %73 azaldi",
+              "Acil onarim ve cekme maliyetlerinden yillik 1,8 milyon dolar tasarruf saglandi",
+              "Zamaninda teslimat orani %84'ten %96'ya yukseldi"
+            ],
+            "stats": [
+              {
+                "label": "Durma Suresi Azalmasi",
+                "value": "%73"
+              },
+              {
+                "label": "Yillik Tasarruf",
+                "value": "1,8M$"
+              }
+            ]
+          },
+          {
+            "title": "Sigorta icin Yapay Zeka Destekli Hasar Isleme",
+            "industry": "Sigorta ve Finans Hizmetleri",
+            "challenge": "Manuel hasar incelemesi ortalama 12 is gunu suruyordu; bu durum musteri memnuniyetsizligine ve karmasik hasarlarda %22 vazgecme oranina yol aciyordu.",
+            "solution": "NLP tabanli hasar degerlendirmesi ve dolandiricilik tespiti ile akilli belge isleme hatti kuruldu; rutin hasarlarin %68'i uctan uca otomatiklestirildi.",
+            "results": [
+              "Ortalama hasar isleme suresi 12 gundon 2,4 gune dusuruldu",
+              "Ilk yilda 4,2 milyon dolarlik potansiyel dolandiricilik hasari tespit edildi",
+              "Musteri memnuniyet puani 41 puan iyilesti (NPS)"
+            ],
+            "stats": [
+              {
+                "label": "Isleme Hizi",
+                "value": "5x Daha Hizli"
+              },
+              {
+                "label": "Tespit Edilen Dolandiricilik",
+                "value": "4,2M$"
+              }
+            ]
+          },
+          {
+            "title": "Perakende Zinciri icin Talep Tahmin Motoru",
+            "industry": "Perakende ve E-Ticaret",
+            "challenge": "200 magazali bir perakende zinciri envanter dengesizlikleriyle mucadele ediyordu; bu durum yillik 6 milyon dolarlik indirimler ve yuksek talepli urunlerde sik stok tukenmesine neden oluyordu.",
+            "solution": "Dis sinyalleri (hava durumu, etkinlikler, promosyonlar) LSTM aglariyla birlestirerek her magazada SKU duzeyinde talebi tahmin eden bir topluluk tahmin motoru olusturuldu.",
+            "results": [
+              "Fazla stok indirimleri %38 azaltilarak 2,3 milyon dolar kar marji geri kazanildi",
+              "En iyi performans gosteren kategorilerde stok tukenmesi olaylari %52 azaldi"
+            ],
+            "stats": [
+              {
+                "label": "Indirim Azalmasi",
+                "value": "%38"
+              },
+              {
+                "label": "Stok Tukenmesi Dususu",
+                "value": "%52"
+              }
+            ]
+          },
+          {
+            "title": "Saglik Hizmetlerinde Hasta Kabul icin Konusma Yapay Zekasi",
+            "industry": "Saglik",
+            "challenge": "Bir hastane agi aylik 15.000 hasta kabul formu isliyordu; bu islem 22 tam zamanli calisan gerektiriyordu ve %7 hata orani vardi.",
+            "solution": "Hastalarin gercek zamanli dogrulamayla dijital olarak kabul islemini tamamlamasini saglayan, sesten metne ve NLP varlik cikarimi ozellikli bir konusma yapay zekasi sistemi uygulamaya alindi.",
+            "results": [
+              "Hasta kabul is akislarinin %81'i %99,2 veri dogruluguyla otomatiklestirildi",
+              "Personel ihtiyaci 22'den 6 tam zamanli calisana dusurulerek kaynaklar hasta bakimina yonlendirildi",
+              "Hasta basina ortalama kabul suresi 25 dakikadan 8 dakikaya indirildi"
+            ],
+            "stats": [
+              {
+                "label": "Otomasyon Orani",
+                "value": "%81"
+              },
+              {
+                "label": "Dogruluk",
+                "value": "%99,2"
+              }
+            ]
+          }
+        ],
+        "aggregateStats": [
+          {
+            "label": "Teslim Edilen Yapay Zeka Projesi",
+            "value": "120+"
+          },
+          {
+            "label": "Toplam Musteri Tasarrufu",
+            "value": "48M$+"
+          },
+          {
+            "label": "Ortalama Yatirim Getirisi",
+            "value": "%340"
+          },
+          {
+            "label": "Hizmet Verilen Sektor",
+            "value": "18"
+          }
+        ]
+      },
+      "faq": {
+        "headline": "Yapay Zeka Cozumleri SSS",
+        "subtitle": "Sik Sorulan Sorular",
+        "description": "Yapay zeka gelistirme hizmetlerimiz ve katilim surecimiz hakkinda en sik aldigimiz sorularin yanitlari.",
+        "categories": [
+          {
+            "category": "Baslangic",
+            "items": [
+              {
+                "question": "Bir yapay zeka projesine baslamak icin ne kadar veriye ihtiyacimiz var?",
+                "answer": "Bu, sorunun karmasikligina baglidir. Bircok siniflandirma ve tahmin gorevi icin birkac bin etiketli ornek guclu sonuclar uretebilir. Bilgisayar gorusu icin genellikle sinif basina en az 1.000 aciklamali goruntu oneriyoruz. Veri gereksinimlerini onemli olcude azaltabilecek veri artirma ve transfer ogrenme stratejileri de sunuyoruz. Kesif asamasinda mevcut verilerinizi degerlendiriyoruz ve net bir oneri sunuyoruz."
+              },
+              {
+                "question": "Verilerimiz daginik veya eksikse ne olur?",
+                "answer": "Gercek dunya verisinin cogu daginiktir -- bu tamamen normaldir. Veri muhendisligi asamasimiz kapsamli temizleme, yineleme kaldirma, eksik veri tamamlama ve dogrulama adimlari icerir. Zamanla veri butunlugunu iyilestirmeye devam eden otomatik veri kalitesi hatlari olusturuyoruz."
+              },
+              {
+                "question": "Tipik bir yapay zeka projesi baslangictan uretime ne kadar surer?",
+                "answer": "Odakli bir konsept kaniti 4-6 hafta icinde teslim edilebilir. Entegrasyon, izleme ve optimizasyon ile tam uretim dagitimi, veri hazirligina ve sistem karmasikligina bagli olarak genellikle 3-5 ay surer. Ilerlemeyi surekli gormeniz icin iki haftada bir demolarla cevik bir yaklasim kullaniyoruz."
+              }
+            ]
+          },
+          {
+            "category": "Teknik ve Guvenlik",
+            "items": [
+              {
+                "question": "Mevcut bulut altyapimizla calisabilir misiniz?",
+                "answer": "Kesinlikle. AWS, Google Cloud ve Azure uzerinde dagitim yapiyoruz ve kati veri ikameti gereksinimleri olan kuruluslar icin sirket ici dagitimlarda derin deneyime sahibiz. Cozumlerimizi mevcut CI/CD hatlariniz, veri ambarlariniz ve izleme araclarinizla entegre olacak sekilde tasarliyoruz."
+              },
+              {
+                "question": "Yapay zeka model guvenligini ve veri gizliligini nasil sagliyorsunuz?",
+                "answer": "Guvenlik her katmana yerlestirilmistir. Sifrelenmis veri hatlari, rol tabanli erisim kontrolleri ve ozel VPC dagitimlari kullaniyoruz. Hassas sektorler icin ham veriyi ifsa etmeden modelleri egiten federatif ogrenme ve diferansiyel gizlilik tekniklerini destekliyoruz. Tum sureclerimiz SOC 2 ve GDPR uyumludur."
+              },
+              {
+                "question": "Model performansi zamanla duserse ne olur?",
+                "answer": "Tahmin dogrulugunu, veri sapmasini ve ozellik onemini gercek zamanli olarak izleyen kapsamli bir izleme uyguluyoruz. Performans yapilandirilmis esiklerin altina dustugunde, en son verileri kullanarak otomatik yeniden egitim hatlari devreye girer. Ayrica proaktif olarak optimizasyon firsatlarini belirlemek icin ucaylik model degerlendirmeleri yapiyoruz."
+              }
+            ]
+          },
+          {
+            "category": "Maliyet ve Katilim",
+            "items": [
+              {
+                "question": "Bir yapay zeka projesi genellikle ne kadara mal olur?",
+                "answer": "Yapay zeka projeleri kapsama gore onemli olcude farklilik gosterir. Odakli bir NLP veya siniflandirma cozumu 40.000-80.000$ araliginda baslayabilirken, birden fazla model ve entegrasyona sahip kurumsal olcekli tahmini platformlar 150.000-500.000$+ araliginda olabilir. Kesif asamasinin ardindan ayrintili tahminler sunuyoruz ve butce riskini yonetmek icin asamali teslimat sunuyoruz."
+              },
+              {
+                "question": "Dagitimdan sonra surekli destek sunuyor musunuz?",
+                "answer": "Evet. Model izleme, yeniden egitim, performans optimizasyonu ve oncelikli hata duzeltmeleri iceren katmanli destek planlari sunuyoruz. Cogu musteri, ekibinizin altyapi yerine is sonuclarina odaklanmasini saglayan yonetilen yapay zeka hizmetimizi tercih ediyor."
+              },
+              {
+                "question": "Ic ekibimizi yapay zeka sistemlerini yonetmeleri icin egitebilir misiniz?",
+                "answer": "Kesinlikle. Bilgi aktarimi katilimimizin temel bir parcasidir. Model mimarisi, izleme panolari ve yeniden egitim prosedurlerini kapsayan uygulamali egitim oturumlari, ayrintili dokumantasyon ve kaydedilmis rehber videolar sunuyoruz. Amacimiz gelismis destek icin hazir olurken ekibinizi yeterli hale getirmektir."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "api-development": {
+      "serviceName": "API Gelistirme",
+      "features": {
+        "headline": "Olcek, Guvenlik ve Hiz icin Tasarlanmis API'ler",
+        "subtitle": "Kurumsal Duzeyde API Muhendisligi",
+        "description": "Modern dijital ekosistemlerin omurgasi olarak hizmet eden, hizmetler, is ortaklari ve platformlar arasi sorunsuz entegrasyon saglayan saglam API'ler tasarliyor ve gelistiriyoruz.",
+        "items": [
+          {
+            "icon": "code",
+            "title": "RESTful API Tasarimi ve Gelistirme",
+            "description": "Temiz kaynak modellemesi, versiyonlama ve kapsamli dokumantasyon ile standartlara uygun REST API'leri.",
+            "details": [
+              "Otomatik kod uretimi ve dogrulama ile OpenAPI 3.1 spesifikasyon oncelikli tasarim",
+              "Sayfalama, filtreleme ve alan secimi ile HATEOAS uyumlu yanitlar",
+              "Geriye uyumlu evrim stratejileri ile anlamsal versiyonlama"
+            ]
+          },
+          {
+            "icon": "lightning",
+            "title": "GraphQL API Uygulamasi",
+            "description": "Karmasik veri sorgulari icin fazla veri cekmeyi ortadan kaldiran ve gidis-donus sayisini azaltan esnek, istemci odakli API'ler.",
+            "details": [
+              "Guclu tipleme ve ic gozlem ozellikleri ile sema oncelikli tasarim",
+              "Verimli N+1 sorgu cozumu icin DataLoader kalip uygulamasi",
+              "WebSocket uzerinden gercek zamanli veri akisi icin abonelik destegi"
+            ]
+          },
+          {
+            "icon": "shield",
+            "title": "API Guvenligi ve Kimlik Dogrulama",
+            "description": "Uc noktalarinizi ve verilerinizi korumak icin OAuth 2.0, JWT, API anahtarlari ve hiz sinirlamasi ile cok katmanli guvenlik.",
+            "details": [
+              "Guvenli ucuncu taraf yetkilendirmesi icin OAuth 2.0 ve OpenID Connect akislari",
+              "Yenileme belirteci rotasyonu ile JWT tabanli durumsuz kimlik dogrulama",
+              "IP beyaz listeleme, CORS yapilandirmasi ve istek imza dogrulamasi"
+            ]
+          },
+          {
+            "icon": "server",
+            "title": "Mikro Hizmet Mimarisi",
+            "description": "Monolitleri iyi tanimlanmis API sozlesmeleriyle baglanan bagimsiz dagitilabilir mikro hizmetlere ayrisma.",
+            "details": [
+              "Hizmet siniri tanimlama ve sinirli baglamlar icin alan odakli tasarim",
+              "Gevsek baglanma icin mesaj kuyruklariyla olay gududlu iletisim",
+              "Devre kesiciler ve yeniden deneme politikalariyla hizmet meshi uygulamasi"
+            ]
+          },
+          {
+            "icon": "database",
+            "title": "API Gecidi ve Yonetimi",
+            "description": "Trafik yonetimi, analitik, hiz sinirlamasi ve gelistirici portali saglama icin merkezi API gecidi.",
+            "details": [
+              "Hizmet kumeleri arasinda istek yonlendirme, yuk dengeleme ve trafik sekillendirme",
+              "Gecikme, hata oranlari ve kullanim kaliplarini izleyen gercek zamanli analitik panolari",
+              "Etkilesimli dokumantasyon, sandbox ortamlari ve API anahtar yonetimi ile gelistirici portali"
+            ]
+          },
+          {
+            "icon": "globe",
+            "title": "Ucuncu Taraf API Entegrasyonu",
+            "description": "Guvenilir API entegrasyonlari ile sistemlerinizi odeme islemcileri, CRM'ler, ERP'ler ve SaaS platformlariyla baglama.",
+            "details": [
+              "Saticidan bagimsiz entegrasyon katmanlari icin adaptor kalip uygulamasi",
+              "Idempotanlik, yeniden deneme mantigi ve olum mektubu kuyruklariyla webhook islemesi",
+              "Uyumsuz semalar arasinda veri donusumu ve esleme"
+            ]
+          },
+          {
+            "icon": "chart",
+            "title": "API Performans Optimizasyonu",
+            "description": "Onbellekleme stratejileri, sorgu optimizasyonu ve verimli serializasyon ile 50ms altinda yanit sureleri elde edin.",
+            "details": [
+              "Redis, CDN uc onbellekleme ve ETag tabanli kosullu isteklerle cok katmanli onbellekleme",
+              "Baglanti havuzlama ve okuma replikalariyla veritabani sorgu optimizasyonu",
+              "Alan duzeyinde secimle yanit sikistirma ve yuk minimizasyonu"
+            ]
+          },
+          {
+            "icon": "document",
+            "title": "API Dokumantasyonu ve Test",
+            "description": "Dagitimlar arasinda guvenilirligi saglayan kapsamli test takimlariyla otomatik uretilen, etkilesimli dokumantasyon.",
+            "details": [
+              "Dokumantasyondan canli istek yurutme ile Swagger UI ve Redoc entegrasyonu",
+              "Hizmet sinirlari arasinda kirilma degisikliklerini onlemek icin Pact ile sozlesme testi"
+            ]
+          }
+        ],
+        "stats": [
+          {
+            "label": "Teslim Edilen API",
+            "value": "500+"
+          },
+          {
+            "label": "Ort. Yanit Suresi",
+            "value": "<45ms"
+          },
+          {
+            "label": "Calisma Suresi Garantisi",
+            "value": "%99,99"
+          },
+          {
+            "label": "Gunluk Islenen Istek",
+            "value": "2 Milyar+"
+          }
+        ]
+      },
+      "process": {
+        "headline": "Dogru Yapilan API Gelistirme",
+        "subtitle": "Yapilandirilmis API Muhendisligi Surecimiz",
+        "description": "Olusturdugumuz her API, tutarlilik, guvenilirlik ve gelistirici deneyimi mukemmelligini saglayan titiz bir sureci takip eder.",
+        "steps": [
+          {
+            "title": "API Stratejisi ve Sozlesme Tasarimi",
+            "description": "Herhangi bir kod yazmadan once paydaslarla isbirligi icinde kaynak modellerini, uc nokta yapilarini ve veri sozlesmelerini tanimlayin.",
+            "icon": "document",
+            "details": [
+              "Is yeteneklerini API kaynaklarina eslemek icin paydas calistayi",
+              "Inceleme dongusleri ve sema dogrulamasi ile OpenAPI spesifikasyon taslagi",
+              "Coklu ekip ortamlari icin tuketici gududlu sozlesme muzakeresi"
+            ]
+          },
+          {
+            "title": "Mimari ve Altyapi Planlamasi",
+            "description": "Olceklenebilirlik ve gecikme gereksinimlerinizi karsilamak icin dogru mimari kaliplari, protokolleri ve altyapiyi secin.",
+            "icon": "server",
+            "details": [
+              "Verimlilik, gecikme ve ekip uzmanligi gereksinimlerine dayali teknoloji secimi",
+              "Tekrarlanabilir, versiyon kontrollü ortamlar icin Kod Olarak Altyapi sablonlari",
+              "Yuk modellemesi ve otomatik olcekleme esik yapilandirmasi ile kapasite planlamasi"
+            ]
+          },
+          {
+            "title": "Yinelemeli Gelistirme ve Test",
+            "description": "Her yinelemede surekli entegrasyon, otomatik test ve paydas incelemesi ile odakli sprintlerde API'ler olusturun.",
+            "icon": "code",
+            "details": [
+              "Birim, entegrasyon ve uctan uca test kapsamiyla test gududlu gelistirme",
+              "Her commit'te geriye uyumluluk saglayan otomatik sozlesme dogrulamasi",
+              "CI hattina entegre regresyon uyarilariyla performans karsilastirmasi"
+            ]
+          },
+          {
+            "title": "Guvenlik Saglamislarstirma ve Uyumluluk",
+            "description": "Penetrasyon testi, guvenlik acigi taramasi ve uyumluluk dogrulamasi ile kapsamli guvenlik incelemesi.",
+            "icon": "shield",
+            "details": [
+              "OWASP API Guvenlik En Onemli 10 degerlendirmesi ve iyilestirmesi",
+              "CI/CD hattinda otomatik bagimlilik taramasi ve sirr algilama",
+              "SOC 2, HIPAA ve PCI-DSS gereksinimleri icin uyumluluk dokumantasyonu"
+            ]
+          },
+          {
+            "title": "Dagitim ve Gozlemlenebilirlik Kurulumu",
+            "description": "Tum uc noktalarda kapsamli izleme, uyari ve dagitik izleme ile sifir kesinti dagitimi.",
+            "icon": "rocket",
+            "details": [
+              "Risksiz kullanima acmalar icin mavi-yesil ve kanarya dagitim stratejileri",
+              "Mikro hizmet sinirlari arasinda korelasyon kimlikleri ile dagitik izleme",
+              "Hata orani artislari, gecikme bozulmasi ve kota ihlalleri icin ozel uyari kurallari"
+            ]
+          }
+        ]
+      },
+      "techStack": {
+        "headline": "Savas Alaninda Test Edilmis API Teknoloji Yigini",
+        "subtitle": "Guvendigimiz Cerceveler ve Araclar",
+        "description": "Dunya genelinde sektorler arasi gunluk milyarlarca istegi karsilayan kanitlanmis teknolojiler kullaniyoruz.",
+        "categories": [
+          {
+            "category": "API Cerceceleri ve Diller",
+            "items": [
+              {
+                "name": "NodeJS",
+                "description": "Yuksek verimli, engellemeyen API sunuculari icin Express ve Fastify"
+              },
+              {
+                "name": "Python",
+                "description": "Hizli, tip guvenli API gelistirme icin FastAPI ve Django REST Framework"
+              },
+              {
+                "name": "GraphQL",
+                "description": "Esnek, sema gududlu sorgu API'leri icin Apollo Server ve Hasura"
+              },
+              {
+                "name": "TypeScript",
+                "description": "API sozlesmelerinden istemci SDK'larina uctan uca tip guvenligi"
+              }
+            ]
+          },
+          {
+            "category": "Altyapi ve Dagitim",
+            "items": [
+              {
+                "name": "Docker",
+                "description": "Tum ortamlarda tutarli dagitim icin konteynerize hizmetler"
+              },
+              {
+                "name": "Kubernetes",
+                "description": "Yatay pod otomatik olcekleme ve yuvarlanma guncellemeleri ile orkestrasyon"
+              },
+              {
+                "name": "Nginx",
+                "description": "Hiz sinirlamasi ve SSL sonlandirmasi ile ters proxy ve yuk dengeleme"
+              },
+              {
+                "name": "Terraform",
+                "description": "Tekrarlanabilir coklu bulut API dagitimlari icin Kod Olarak Altyapi"
+              }
+            ]
+          },
+          {
+            "category": "Veri ve Onbellekleme",
+            "items": [
+              {
+                "name": "PostgreSQL",
+                "description": "Gelismis indeksleme ve bolumleme ile birincil iliskisel veri deposu"
+              },
+              {
+                "name": "Redis",
+                "description": "Bellek ici onbellekleme, oturum depolama ve hiz sinirlamasi arka ucu"
+              },
+              {
+                "name": "MongoDB",
+                "description": "Esnek semalar ve yuksek yazma is yukleri icin belge depolama"
+              }
+            ]
+          }
+        ]
+      },
+      "portfolio": {
+        "headline": "Olcekte Gercek Isleri Guclendiren API'ler",
+        "subtitle": "Secilmis Vaka Calismalari",
+        "description": "API muhendisligimizin musterilerimiz icin dijital donusumu ve yeni gelir akislarini nasil mumkun kildigini kesfedin.",
+        "items": [
+          {
+            "title": "Fintech icin Acik Bankacilik API Platformu",
+            "industry": "Finans Hizmetleri",
+            "challenge": "Orta olcekli bir banka, PSD2 acik bankacilik duzenlemelerine uymasi ve ayni zamanda finansal veri ve odeme hizmetleri etrafinda bir gelistirici ekosistemi olusturmasi gerekiyordu.",
+            "solution": "OAuth 2.0, onay yonetimi ve gelistirici portali ile PSD2 uyumlu bir API platformu olusturuldu. Ucuncu taraf testi icin hiz sinirlamasi, denetim kaydi ve sandbox ortamlari uygulamaya alindi.",
+            "results": [
+              "Lansmandan sonraki 12 ay icinde 85 ucuncu taraf fintech ortagi dahil edildi",
+              "Gunluk 12 milyonun uzerinde API cagrisi %99,99 calisma suresiyle islendi",
+              "Ilk yilda 3,2 milyon dolar yeni API geliri elde edildi"
+            ],
+            "stats": [
+              {
+                "label": "Ortak Entegrasyonlari",
+                "value": "85"
+              },
+              {
+                "label": "Gunluk API Cagrilari",
+                "value": "12M+"
+              }
+            ]
+          },
+          {
+            "title": "Cok Kanalli Perakende icin Gercek Zamanli Envanter Senkronizasyon API'si",
+            "industry": "Perakende ve E-Ticaret",
+            "challenge": "340 magazasi ve bir e-ticaret platformu olan bir perakendeci, yalitilmis sistemler nedeniyle fazla satisa ve musteri sikayetlerine neden olan envanter uyumsuzluklariyla karsilasiyordu.",
+            "solution": "POS, depo ve e-ticaret sistemleri arasinda stok seviyelerini neredeyse gercek zamanli olarak senkronize etmek icin webhook'lar ve mesaj kuyruklari kullanan olay gududlu bir envanter API'si tasarlandi.",
+            "results": [
+              "Tum kanallarda envanter uyumsuzluklari %94 azaltildi",
+              "Daha once online siparislerin %8'ini etkileyen fazla satis olaylari ortadan kaldirildi",
+              "Magazadan kargolama imkani saglandi, ortalama teslimat suresi 1,4 gun kisaltildi"
+            ],
+            "stats": [
+              {
+                "label": "Senkronizasyon Dogrulugu",
+                "value": "%99,7"
+              },
+              {
+                "label": "Fazla Satis Azalmasi",
+                "value": "%100"
+              }
+            ]
+          },
+          {
+            "title": "EHR Entegrasyonu icin Saglik Veri Degisim API'si",
+            "industry": "Saglik",
+            "challenge": "14 hastaneden olusan bir saglik agi, HIPAA uyumlulugu ve veri butunlugunu korurken farkli EHR sistemleri arasinda hasta kayitlarini paylasma ihtiyaci duyuyordu.",
+            "solution": "Epic, Cerner ve Allscripts'ten gelen verileri ayrintili onay yonetimi ile birlesik bir hasta kaydi API'sine normalize eden FHIR uyumlu bir API gecidi olusturuldu.",
+            "results": [
+              "14 hastane ve 2.300 hekim birlesik hasta veri API'sine baglandi",
+              "Akilli esleme algoritmalariyla mukerrer hasta kayitlari %67 azaltildi",
+              "Ortalama sevk isleme suresi 4 gunden 6 saate dusuruldu"
+            ],
+            "stats": [
+              {
+                "label": "Baglanan Sistemler",
+                "value": "14"
+              },
+              {
+                "label": "Sevk Hizi",
+                "value": "16x Daha Hizli"
+              }
+            ]
+          }
+        ],
+        "aggregateStats": [
+          {
+            "label": "Uretimde API",
+            "value": "500+"
+          },
+          {
+            "label": "Toplam Islenen Istek",
+            "value": "850 Milyar+"
+          },
+          {
+            "label": "Ortalama Calisma Suresi",
+            "value": "%99,98"
+          },
+          {
+            "label": "Kurumsal Musteriler",
+            "value": "75+"
+          }
+        ]
+      },
+      "faq": {
+        "headline": "API Gelistirme SSS",
+        "subtitle": "Sik Sorulan Sorular",
+        "description": "API gelistirme hizmetlerimiz hakkinda mimari kararlarindan surekli bakima kadar bilmeniz gereken her sey.",
+        "categories": [
+          {
+            "category": "Mimari ve Tasarim",
+            "items": [
+              {
+                "question": "API'miz icin REST mi yoksa GraphQL mi secmeliyiz?",
+                "answer": "Kullanim durumunuza baglidir. REST, onceden tahmin edilebilir erisim kaliplari ve guclu onbellekleme ihtiyaclari olan basit, kaynak odakli API'ler icin idealdir. GraphQL, istemcilerin degisen veri sekillerini talep etmesi gerektiginde, ozellikle mobil uygulamalar veya karmasik on yuz panolari icin oneconlanir. Genellikle hibrit bir yaklasim oneriyoruz: halka acik API'ler icin REST ve dahili on yuz tuketimi icin GraphQL."
+              },
+              {
+                "question": "API versiyonlamasini nasil yonetiyorsunuz?",
+                "answer": "Halka acik API'ler icin URL tabanli versiyonlama kullaniyoruz (ornegin /v1/, /v2/) cunku acik ve tuketicilerin anlamasi kolaydir. Dahili API'ler icin URL'leri temiz tutmak adina baslik tabanli versiyonlamayi tercih ediyoruz. Buyuk versiyonlar icinde geriye uyumlulugu koruyoruz ve kirilma degisiklikleri icin en az 6 aylik kullanim disi birakma suresi sagliyoruz."
+              },
+              {
+                "question": "Mevcut monolitik API'mizi mikro hizmetlere gecebilir misiniz?",
+                "answer": "Evet. Mevcut tuketicileri aksatmadan monolitleri kademeli olarak ayrristirmak icin strangler fig kalibini kullaniyoruz. Sinirli baglamlari belirleyerek basliyoruz, ardindan API uyumlulugunu koruyarak hizmetleri birer birer cikartiyoruz. Cogu gecis, monolitin boyutuna bagli olarak 4-8 ayda tamamlanir."
+              }
+            ]
+          },
+          {
+            "category": "Performans ve Guvenilirlik",
+            "items": [
+              {
+                "question": "Hangi yanit surelerini bekleyebiliriz?",
+                "answer": "Tipik CRUD islemleri icin API'lerimiz 95. yuzdelik dilimde tutarli olarak 50ms'nin altinda yanit suresi elde eder. Karmasik toplama sorgulari genellikle 100-200ms icinde yanit verir. Bunu cok katmanli onbellekleme, optimize edilmis veritabani sorgulari ve verimli serializasyon yoluyla elde ediyoruz."
+              },
+              {
+                "question": "API guvenilirligi ve calisma suresini nasil sagliyorsunuz?",
+                "answer": "Birden fazla guvenilirlik kalibini uyguluyoruz: basamakli arizalari onlemek icin devre kesiciler, ustel geri cekilmeli yeniden deneme mantigi, yuk dengeleyici entegrasyonu icin saglik kontrolu uc noktalari ve kritik olmayan bagimliliklarda zarif bozulma. Coklu AZ dagitimlari ve otomatik olcekleme ile birlikte API'lerimiz tutarli olarak %99,99 calisma suresi elde eder."
+              },
+              {
+                "question": "Trafik artislarini nasil yonetiyorsunuz?",
+                "answer": "API'lerimiz 60 saniyenin altinda trafik kaliplarina yanit veren otomatik olcekleme altyapisinda dagitilir. Istek kuyruklama, belirtec kovasi algoritmalariyla hiz sinirlamasi ve okuma agirlikli uc noktalar icin CDN onbellekleme uyguluyoruz."
+              }
+            ]
+          },
+          {
+            "category": "Entegrasyon ve Destek",
+            "items": [
+              {
+                "question": "API tuketicileri icin SDK sagliyormusunuz?",
+                "answer": "Evet. OpenAPI spesifikasyonundan TypeScript, Python, Java ve Go icin otomatik olarak istemci SDK'lari uretiyoruz. Bu SDK'lar tip tanimlamalari, hata isleme, yeniden deneme mantigi ve kimlik dogrulama yardimcilari icerir."
+              },
+              {
+                "question": "Mevcut tuketiciler icin kirilma degisikliklerini nasil yonetiyorsunuz?",
+                "answer": "Kati bir kullanim disi birakma politikasi izliyoruz: degisiklikleri en az 6 ay once duyuruyoruz, gecis kilavuzlari sagliyoruz ve eski ve yeni versiyonlarin paralel calismasini sunuyoruz. Kaldirilmis uc noktalari kullanan tuketicileri belirlemek icin API analizlerini kullaniyor ve gecislerine yardimci olmak icin proaktif olarak iletisime geciyoruz."
+              },
+              {
+                "question": "Hangi surekli destegi sagliyorsunuz?",
+                "answer": "API destek katmanlarimiz otomatik olay yaniti ile 7/24 izleme, ucaylik performans degerlendirmeleri, guvenlik yamalama ve bagimlilik guncellemelerini icerir. Kurumsal musteriler SLA uyumlulugunu yoneten ve performansi proaktif olarak optimize eden ozel bir API guvenilirlik muhendisi alir."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "web-development": {
+      "serviceName": "Web Gelistirme",
+      "features": {
+        "headline": "Donusum Saglayan ve Olceklenen Web Uygulamalari",
+        "subtitle": "Modern Full-Stack Web Muhendisligi",
+        "description": "Modern cerceveler ve en iyi uygulamalar kullanarak olaganustu kullanici deneyimleri ve olculebilir is sonuclari sunan performansli, erisilebilir web uygulamalari gelistiriyoruz.",
+        "items": [
+          {
+            "icon": "globe",
+            "title": "Ilerlemeli Web Uygulamalari",
+            "description": "Tum cihazlarda calisan cevimdisi destek, push bildirimleri ve aninda yukleme ile uygulama benzeri web deneyimleri.",
+            "details": [
+              "Cevimdisi oncelikli islevsellik ve arka plan senkronizasyonu icin Service Worker uygulamasi",
+              "Ana ekran kurulumu ve acilis ekranlari icin App Manifest yapilandirmasi",
+              "Tum performans kategorilerinde 90+ hedefleyen Lighthouse puan optimizasyonu"
+            ]
+          },
+          {
+            "icon": "rocket",
+            "title": "Sunucu Tarafi Renderlama ve Statik Uretim",
+            "description": "SEO siralamasini ve Core Web Vitals puanlarini artiran SSR ve SSG stratejileriyle yildirim hizinda sayfa yuklemeleri.",
+            "details": [
+              "CDN duzeyinde onbellekleme ve aninda gecersiz kilma ile Next.js ISR",
+              "Ilerlemeli sayfa renderlama ve iyilestirilmis Time to First Byte icin Streaming SSR",
+              "Sunucu tarafi veri gerektirmeyen sayfalar icin otomatik statik optimizasyon"
+            ]
+          },
+          {
+            "icon": "palette",
+            "title": "UI/UX Tasarim ve Tasarim Sistemleri",
+            "description": "Marka tutarliligi saglayan ve gelistirmeyi hizlandiran yeniden kullanilabilir bilesen kitapliklariyla butunlesik tasarim sistemleri.",
+            "details": [
+              "Otomatik bilesen uretimi ve tasarim belirteci senkronizasyonu ile Figma'dan koda hatti",
+              "Tum etkilesilerde WCAG 2.2 AA standartlarini karsilayan erisilebilirlik oncelikli tasarim",
+              "Performanstan odun vermeden kullanilabilirligi artiran hareket tasarimi ve mikro etkisilimler"
+            ]
+          },
+          {
+            "icon": "cart",
+            "title": "E-Ticaret ve Pazar Yeri Gelistirme",
+            "description": "Sorunsuz odeme, envanter yonetimi ve odeme isleme ile yuksek donusum oranlari saglayan cevrimici magazalar.",
+            "details": [
+              "Shopify, Medusa veya ozel arka uclarla baslksiz ticaret mimarisi",
+              "Stripe, PayPal ve Apple Pay entegrasyonu ile tek tikla odeme optimizasyonu",
+              "Kullanici davranisina dayali urun oneri motorlari ve dinamik fiyatlandirma"
+            ]
+          },
+          {
+            "icon": "chart",
+            "title": "Analitik Panolari ve Veri Gorsellestirme",
+            "description": "Karmasik veri kumelerini gercek zamanli guncellemelerle eyleme donusturulebilir icgorulere donusturen etkilesimli panolar.",
+            "details": [
+              "Sektore ozel gorsellestirmeler icin D3.js ve Recharts ile ozel grafik bilesenleri",
+              "Canli izleme panolari icin WebSocket uzerinden gercek zamanli veri akisi",
+              "PDF, CSV ve zamanlanmis e-posta raporu uretimi ile disa aktarma islevi"
+            ]
+          },
+          {
+            "icon": "lock",
+            "title": "Kimlik Dogrulama ve Kullanici Yonetimi",
+            "description": "SSO, MFA ve rol tabanli erisim kontrolu ile guvenli, surtusmesiz kimlik dogrulama akislari.",
+            "details": [
+              "Buyuk kimlik saglayicilariyla kurumsal SSO icin OAuth 2.0 ve SAML entegrasyonu",
+              "Sihirli baglantilar, biyometri ve passkey'ler araciligiyla parolasiz kimlik dogrulama",
+              "Cok kiraciil uygulamalar icin ayrintili rol tabanli ve ozellik tabanli erisim kontrolu"
+            ]
+          },
+          {
+            "icon": "search",
+            "title": "SEO ve Performans Optimizasyonu",
+            "description": "Organik trafik buyumesini ve kullanici katilimini artiran teknik SEO uygulamasi ve performans ayari.",
+            "details": [
+              "Core Web Vitals optimizasyonu: LCP 2,5sn altinda, FID 100ms altinda, CLS 0,1 altinda",
+              "Zengin arama sonuclari ve bilgi paneli uygunlugu icin yapilandirilmis veri isareti",
+              "Yeni nesil formatlar, tembel yukleme ve duyarli srcset'lerle gorsel optimizasyonu"
+            ]
+          },
+          {
+            "icon": "cog",
+            "title": "CMS Entegrasyonu ve Icerik Yonetimi",
+            "description": "Pazarlama ekiplerini bagimsiz olarak yayinlamaya guclendiren basliksiz CMS platformlariyla esnek icerik yonetimi.",
+            "details": [
+              "Yapilandirilmis icerik icin Sanity, Contentful veya Strapi ile basliksiz CMS entegrasyonu",
+              "Teknik olmayan icerik yazarlari icin gorsel duzenleme ve canli onizleme yetenekleri"
+            ]
+          }
+        ],
+        "stats": [
+          {
+            "label": "Baslatilan Web Uygulamasi",
+            "value": "350+"
+          },
+          {
+            "label": "Ort. Performans Puani",
+            "value": "94/100"
+          },
+          {
+            "label": "Toplam Aylik Kullanici",
+            "value": "28M+"
+          },
+          {
+            "label": "Donusum Orani Artisi",
+            "value": "%47"
+          }
+        ]
+      },
+      "process": {
+        "headline": "Uctan Uca Web Gelistirme Sureci",
+        "subtitle": "Konseptten Lansmana ve Otesine",
+        "description": "Yapilandirilmis gelistirme surecimiz, her web projesinin zamaninda, butce dahilinde teslim edilmesini ve beklentileri asmasini saglar.",
+        "steps": [
+          {
+            "title": "Kesif ve UX Arastirmasi",
+            "description": "Gercek verilere dayali bir web stratejisi tanimlamak icin kullanicilariniz, pazariniz ve is hedefleriniz hakkinda derinlemesine inceleme.",
+            "icon": "search",
+            "details": [
+              "Firsatlari belirlemek icin kullanici gorusmeleri, yolculuk haritalama ve rekabet analizi",
+              "Kart siralama egzersizleri ile bilgi mimarisi ve icerik stratejisi gelistirme",
+              "Teknik fizibilite degerlendirmesi ve performans butcesi belirleme"
+            ]
+          },
+          {
+            "title": "Tasarim ve Prototipleme",
+            "description": "Gelistirme baslamadan once kullanici testi ile dogrulanan yuksek dogruluklu tasarimlar ve etkilesimli prototipler.",
+            "icon": "palette",
+            "details": [
+              "Paydas inceleme dongusleriyle Figma'da wireframe ve hizli prototipleme",
+              "Gezinme ve donusum akislarini dogrulamak icin hedef kullanicilarla kullanilabilirlik testi",
+              "Bilesen spesifikasyonlari ve etkilesim kaliplariyla tasarim sistemi olusturma"
+            ]
+          },
+          {
+            "title": "Frontend ve Backend Gelistirme",
+            "description": "Surekli entegrasyon ve otomatik kalite kontrolleri ile paralel frontend ve backend gelistirme.",
+            "icon": "code",
+            "details": [
+              "Yalitilmis UI olusturma ve test icin Storybook ile bilesen odakli gelistirme",
+              "Frontend-backend uyumunu saglayan tip guvenli sozlesmelerle API entegrasyonu",
+              "%85+ kod kapsamiyla birim, entegrasyon ve E2E duzeylerinde otomatik test"
+            ]
+          },
+          {
+            "title": "QA, Performans ve Erisilebilirlik Denetimi",
+            "description": "Tarayicilar arasi test, performans dogrulama ve erisilebilirlik uyumlulugunu kapsayan kapsamli kalite guvencesi.",
+            "icon": "check",
+            "details": [
+              "20+ tarayici-cihaz kombinasyonunda tarayicilar arasi ve cihazlar arasi test",
+              "Her pull request'te zorlanan performans butceleri ile Lighthouse CI",
+              "Ekran okuyucu testi ve klavye gezinme dogrulamasi ile WCAG 2.2 AA uyumluluk denetimi"
+            ]
+          },
+          {
+            "title": "Lansman ve Buyume Optimizasyonu",
+            "description": "Anahtar metrikleri surekli iyilestirmek icin sorunsuz uretim dagitimi ve ardindan veri odakli optimizasyon.",
+            "icon": "rocket",
+            "details": [
+              "CDN yapilandirmasi, DNS gecisi ve SSL saglama ile sifir kesinti dagitimi",
+              "Donusum izleme, isi haritalari ve oturum kaydi ile analitik kurulumu",
+              "Anahtar acilis sayfallarinda surekli CRO deneyleri icin A/B test cercevesi"
+            ]
+          }
+        ]
+      },
+      "techStack": {
+        "headline": "Modern Web Teknoloji Yigini",
+        "subtitle": "Uzman Oldugumuz Cerceveler ve Araclar",
+        "description": "Olaganustu dijital deneyimler sunmak icin en uretken ve performansli web teknolojilerini kullaniyoruz.",
+        "categories": [
+          {
+            "category": "Frontend Cerceveleri",
+            "items": [
+              {
+                "name": "React",
+                "description": "Hook'lar, context ve eszamanli renderlama ile bilesen tabanli UI gelistirme"
+              },
+              {
+                "name": "NextJS",
+                "description": "SSR, SSG, ISR ve API route'lari ile full-stack React cercevesi"
+              },
+              {
+                "name": "TypeScript",
+                "description": "Calisma zamani hatalarini azaltan ve gelistirici hizini artiran uctan uca tip guvenligi"
+              },
+              {
+                "name": "TailwindCSS",
+                "description": "Minimum paket boyutuyla hizli, tutarli UI gelistirme icin utility-first CSS"
+              }
+            ]
+          },
+          {
+            "category": "Backend ve Veri",
+            "items": [
+              {
+                "name": "NodeJS",
+                "description": "Yuksek eszamanlilikli web uygulamalari icin olay gududlu sunucu calisma zamani"
+              },
+              {
+                "name": "PostgreSQL",
+                "description": "Tam metin arama ve JSON destegi ile birincil iliskisel veritabani"
+              },
+              {
+                "name": "Redis",
+                "description": "Oturum yonetimi, onbellekleme ve gercek zamanli pub/sub mesajlasma"
+              },
+              {
+                "name": "Stripe",
+                "description": "Abonelikler, faturalandirma ve pazar yeri odemelerle odeme isleme"
+              }
+            ]
+          },
+          {
+            "category": "DevOps ve Barindirma",
+            "items": [
+              {
+                "name": "Docker",
+                "description": "Ortam tutarliligi icin konteynerize gelistirme ve dagitim"
+              },
+              {
+                "name": "AWS",
+                "description": "Olceklenebilir, kurusel olarak dagitilmis barindirma icin CloudFront, S3, ECS ve RDS"
+              },
+              {
+                "name": "GitHub",
+                "description": "Actions CI/CD, kod inceleme ve otomatik surumlerle versiyon kontrolu"
+              }
+            ]
+          }
+        ]
+      },
+      "portfolio": {
+        "headline": "Is Buyumesini Yonlendiren Web Projeleri",
+        "subtitle": "Secilmis Vaka Calismalari",
+        "description": "Web gelistirme uzmanligimizin sirketlerin gelirini artirmasina, katilimi iyilestirmesine ve operasyonlarini olceklendirmesine nasil yardimci oldugunu gorun.",
+        "items": [
+          {
+            "title": "Tedarik Zinciri Yonetimi icin B2B SaaS Platformu",
+            "industry": "Lojistik ve Tedarik Zinciri",
+            "challenge": "Bir tedarik zinciri girisimi, karmasik cok adimli is akislari, gercek zamanli takip ve gondericiler, tasiyicilar ve depolar arasinda is birligini yonetebilen bir web platformuna ihtiyac duyuyordu.",
+            "solution": "Gercek zamanli WebSocket guncellemeleri, rol tabanli panolar ve surukle-birak is akisi olusturucu ile bir Next.js uygulamasi gelistirildi. Kullanim tabanli fiyatlandirma ile Stripe faturalandirmasi uygulamaya alindi.",
+            "results": [
+              "Lansmandan sonraki 8 ay icinde 0'dan 2.400 aktif is kullanicisina ulasildi",
+              "Kuresel olarak 2 saniyenin altinda sayfa yuklemeleriyle 94 Lighthouse performans puani elde edildi",
+              "Self-servis akislarla musteri ise aliztirma suresi 3 gunden 4 saate dusuruldu"
+            ],
+            "stats": [
+              {
+                "label": "Aktif Kullanicilar",
+                "value": "2.400+"
+              },
+              {
+                "label": "Performans Puani",
+                "value": "94/100"
+              }
+            ]
+          },
+          {
+            "title": "Moda Markasi icin E-Ticaret Platformu Yeniden Insasi",
+            "industry": "Moda ve Perakende",
+            "challenge": "Yillik 18 milyon dolar online gelire sahip bir DTC moda markasi, yavas sayfa yuklemeleri (ortalama 6,2sn), kotü mobil UX ve %74 sepet terk orani nedeniyle musterilerini kaybediyordu.",
+            "solution": "Baslksiz Shopify ile Next.js uzerinde vitrin yeniden insaa edildi, tek tikla odeme uygulamaya alindi, yapay zeka destekli beden onerileri ve tum Core Web Vitals optimize edildi.",
+            "results": [
+              "Donusum orani %1,8'den %3,4'e yukseltilerek 6,2 milyon dolar ek gelir saglandi",
+              "Sayfa yukleme suresi 6,2sn'den 1,4sn'ye dusurulerek hemen cikma orani %38 iyilestirildi",
+              "Optimize edilmis odeme akisiyla sepet terk orani %74'ten %51'e dusuruldu"
+            ],
+            "stats": [
+              {
+                "label": "Gelir Artisi",
+                "value": "6,2M$"
+              },
+              {
+                "label": "Sayfa Yukleme Suresi",
+                "value": "1,4sn"
+              }
+            ]
+          },
+          {
+            "title": "Tele Saglik Platformu icin Hasta Portali",
+            "industry": "Saglik",
+            "challenge": "Bir tele saglik sirketi, tum cihazlarda video gorusmeleri, recete yonetimi ve tibbi kayit erisimini destekleyen HIPAA uyumlu bir hasta portaline ihtiyac duyuyordu.",
+            "solution": "WebRTC video arama, uctan uca sifreleme ve WCAG 2.2 AA'yi karsilayan erisilebilir UI ile bir PWA gelistirildi. FHIR API'leri araciligiyla Epic EHR ile entegre edildi.",
+            "results": [
+              "%99,7 baglanti basari orani ile aylik 45.000 video gorusmesi gerceklestirildi",
+              "Mukemmel erisilebilirlik denetim puaniyla WCAG 2.2 AA uyumlulugu elde edildi",
+              "Otomatik hatirlaticilar ve kolay yeniden zamanlama ile hasta gelmeme orani %23'ten %8'e dusuruldu"
+            ],
+            "stats": [
+              {
+                "label": "Aylik Gorusmeler",
+                "value": "45K"
+              },
+              {
+                "label": "Gelmeme Azalmasi",
+                "value": "%65"
+              }
+            ]
+          },
+          {
+            "title": "Sanal Turlu Gayrimenkul Pazar Yeri",
+            "industry": "Gayrimenkul",
+            "challenge": "Bir gayrimenkul firmasi, Zillow ve Redfin'den farklilssmak icin 3D sanal turlar, ipotek hesaplayicilari ve mahalle analitikleri ile modern bir listeleme pazar yeri istiyordu.",
+            "solution": "Three.js sanal tur entegrasyonu, SEO icin sunucu tarafi renderlanmis listeleme sayfalari ve D3.js gorsellestirmeleriyle gercek zamanli piyasa veri panolari ile bir Next.js platformu gelistirildi.",
+            "results": [
+              "6 ay icinde 340'tan fazla yerel gayrimenkul anahtar kelimesi icin Google'da 1. sayfada yer alindi",
+              "Onceki web sitesine kiyasla ortalama oturum suresi 4,2 kat artirildi",
+              "Platform araciligiyla ayda 1.200 nitelikli potansiyel musteri uretildi"
+            ],
+            "stats": [
+              {
+                "label": "SEO Anahtar Kelimeleri (1. Sayfa)",
+                "value": "340+"
+              },
+              {
+                "label": "Aylik Potansiyel Musteriler",
+                "value": "1.200"
+              }
+            ]
+          }
+        ],
+        "aggregateStats": [
+          {
+            "label": "Teslim Edilen Web Uygulamasi",
+            "value": "350+"
+          },
+          {
+            "label": "Toplam Aylik Trafik",
+            "value": "28M+"
+          },
+          {
+            "label": "Ort. Performans Puani",
+            "value": "94"
+          },
+          {
+            "label": "Musteri Memnuniyeti",
+            "value": "4,9/5"
+          }
+        ]
+      },
+      "faq": {
+        "headline": "Web Gelistirme SSS",
+        "subtitle": "Sik Sorulan Sorular",
+        "description": "Web gelistirme surecimiz, teknoloji secimleri ve katilim modelleri hakkinda sik sorulan sorularin yanitlari.",
+        "categories": [
+          {
+            "category": "Teknoloji ve Mimari",
+            "items": [
+              {
+                "question": "Cogu web projesi icin neden Next.js oneriyorsunuz?",
+                "answer": "Next.js, gelistirici deneyimi, performans ve esneklik arasinda en iyi dengeyi saglar. SEO icin sunucu tarafi renderlama, hiz icin statik uretim ve etkilesim icin istemci tarafi renderlamayi tek bir cercevede destekler. Yerlesik gorsel optimizasyonu, kod bolme ve API route'lari ek arac ihtiyacini azaltir."
+              },
+              {
+                "question": "Mevcut backend veya CMS'imizle calisabilir misiniz?",
+                "answer": "Kesinlikle. Siklikla REST veya GraphQL API'leri araciligiyla mevcut backend'lere baglanan frontend'ler olusturuyoruz. Basliksiz CMS platformlari (Sanity, Contentful, Strapi), e-ticaret arka uclari (Shopify, Medusa) ve Node.js, Python, Java veya .NET ile olusturulmus ozel API'lerle derin entegrasyon deneyimimiz var."
+              },
+              {
+                "question": "Cihazlar arasi duyarli tasarimi nasil yonetiyorsunuz?",
+                "answer": "Mobil oncelikli bir yaklasim izliyoruz; once mobil ekranlar icin tasarliyor ve olusturuyor, ardindan tabletler ve masaustu icin gelistiriyoruz. Akici duzenler olusturmak icin CSS Grid, Flexbox ve konteyner sorgulari kullaniyoruz. Her proje, iOS Safari, Android Chrome ve masaustu tarayicilari dahil 20'den fazla cihaz-tarayici kombinasyonunda test edilir."
+              }
+            ]
+          },
+          {
+            "category": "Performans ve SEO",
+            "items": [
+              {
+                "question": "Hangi Core Web Vitals puanlarini bekleyebiliriz?",
+                "answer": "Performans, Erisilebilirlik, En Iyi Uygulamalar ve SEO genelinde 90+ Lighthouse puanlarini hedefliyoruz ve tutarli olarak elde ediyoruz. Ozellikle: LCP 2,5 saniyenin altinda, FID 100ms altinda ve CLS 0,1 altinda. CI hattimizda performans butcelerini zorluyoruz."
+              },
+              {
+                "question": "Web uygulamalari icin SEO'ya nasil yaklasiyorsunuz?",
+                "answer": "SEO stratejimiz uc sutunu kapsar: teknik SEO (SSR, yapilandirilmis veri, site haritasi uretimi, Core Web Vitals), sayfa ici optimizasyon (semantik HTML, baslik hiyerarsisi, meta etiketleri) ve taranabilirlik (dogru dahili baglantilama, kanonik URL'ler, robots.txt yapilandirmasi)."
+              },
+              {
+                "question": "SEO siralamalarini kaybetmeden mevcut bir platformdan gecis yapmamiza yardimci olabilir misiniz?",
+                "answer": "Evet, platform gecisleri uzmanlik alanlarimizdan biridir. Kapsamli yonlendirme haritalari olusturuyoruz, URL yapilarini mumkun oldugunda koruyoruz, tum meta verileri aktariyoruz ve gecis sonrasi tarama hatalarini Search Console'da izliyoruz. Yuksek oncelikli anahtar kelimeler icin sifir siralama kaybiyla 40'tan fazla gecisi tamamladik."
+              }
+            ]
+          },
+          {
+            "category": "Zaman Cizelgesi ve Butce",
+            "items": [
+              {
+                "question": "Tipik bir web gelistirme projesi ne kadar surer?",
+                "answer": "Bir pazarlama web sitesi veya acilis sayfasi genellikle 4-8 hafta surer. Kimlik dogrulama, panolar ve entegrasyonlara sahip tam ozellikli bir web uygulamasi 3-6 ay surer. Pazar yerleri veya SaaS urunleri gibi karmasik platformlar ilk lansman icin 6-12 ay surebilir."
+              },
+              {
+                "question": "Web gelistirme genellikle ne kadara mal olur?",
+                "answer": "Pazarlama web siteleri ve kurumsal siteler 25.000-75.000$ araligindadir. Ozel islevsellige sahip web uygulamalari 75.000-250.000$ araligindadir. Kurumsal SaaS platformlari genellikle 200.000$'dan baslar. Iyi tanimlanmis kapsamlar icin sabit fiyatli katilimlar ve gelisen projeler icin zaman ve malzeme bazli calismalar sunuyoruz."
+              },
+              {
+                "question": "Surekli bakim ve destek saguyor musunuz?",
+                "answer": "Evet. Guvenlik guncellemeleri, bagimlilik bakimi, performans izleme, hata duzeltmeleri ve ozellik iyilestirmelerini iceren aylik hizmet sozlesmesi paketleri sunuyoruz. Cogu musteri uygulamalarini guvenli, hizli ve guncel tutmak icin ilk gelistirme maliyetinin yillik %15-20'sini bakima yatirir."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "mobile-development": {
+      "serviceName": "Mobil Gelistirme",
+      "features": {
+        "headline": "Yerel Kalitede Mobil Uygulamalar, Hizli Teslim",
+        "subtitle": "Coklu Platform ve Yerel Mobil Muhendislik",
+        "description": "Coklu platform verimliligindan yararlanarak yerel his, hiz veya platforma ozel yeteneklerden odun vermeden kullanicilarin sevecegi yuksek performansli mobil uygulamalar gelistiriyoruz.",
+        "items": [
+          {
+            "icon": "mobile",
+            "title": "Flutter ile Coklu Platform Gelistirme",
+            "description": "Piksel mukemmel UI, yerel performans ve %95+ kod paylasimi ile iOS ve Android icin tek kod tabani uygulamalar.",
+            "details": [
+              "Markaya ozel tasarim sistemleri ve etkisilimler icin ozel widget gelistirme",
+              "Yerel API'lere ve cihaz yeteneklerine erismek icin platform kanal entegrasyonu",
+              "Yerele kiyasla yineleme dongulerini 10 kat azaltan Hot Reload gelistirme akisi"
+            ]
+          },
+          {
+            "icon": "lightning",
+            "title": "Yerel iOS ve Android Gelistirme",
+            "description": "Maksimum performans, platform entegrasyonu ve en son isletim sistemi ozelliklerine erisim icin tamamen yerel uygulamalar.",
+            "details": [
+              "Modern eszamanlilik ve Combine reaktif kaliplariz ile iOS icin Swift ve SwiftUI",
+              "Material Design 3 uyumlulugu ile Android icin Kotlin ve Jetpack Compose",
+              "Kamera, GPU, ARKit ve ML Kit ozellikleri icin platforma ozel optimizasyonlar"
+            ]
+          },
+          {
+            "icon": "cloud",
+            "title": "Cevimdisi Oncelikli Mimari",
+            "description": "Internet olmadan kusursuz calisan ve baglanti yeniden saglandiginda sorunsuz senkronize olan uygulamalar.",
+            "details": [
+              "Yapilandirilmis cevimdisi depolama icin SQLite ve Hive ile yerel veritabani uygulamasi",
+              "Nihai tutarlilik ile coklu cihaz senkronizasyonu icin catisma cozme stratejileri",
+              "Akilli yeniden deneme ve bant genisligi farkindalikli veri aktarimi ile arka plan senkronizasyonu"
+            ]
+          },
+          {
+            "icon": "lock",
+            "title": "Mobil Guvenlik ve Uyumluluk",
+            "description": "Biyometrik kimlik dogrulama, sertifika sabitleme ve sifrelenmis yerel depolama ile kurumsal duzeyde guvenlik.",
+            "details": [
+              "Face ID, Touch ID ve Android BiometricPrompt ile biyometrik kimlik dogrulama",
+              "MITM saldirillarini onlemek icin SSL sertifika sabitleme ve calisma zamani butunluk kontrolleri",
+              "Hassas kimlik bilgileri ve belirtecler icin sifrelenmis anahtarlik ve anahtar deposu depolama"
+            ]
+          },
+          {
+            "icon": "chart",
+            "title": "Analitik ve Kullanici Katilimi",
+            "description": "Tutma ve yasam boyu degeri artiran uygulama ici analitik, push bildirimler ve katilim araclari.",
+            "details": [
+              "Davranissal icgoruler icin Firebase Analytics, Mixpanel veya Amplitude ile olay izleme",
+              "Segmentasyon, A/B testi ve derin baglantilama ile push bildirim orkestrasyonu",
+              "Kullanici ise alistirma icin uygulama ici mesajlasma ve ozellik duyuru katmanlari"
+            ]
+          },
+          {
+            "icon": "cog",
+            "title": "Uygulama Magazasi Optimizasyonu ve Dagitim",
+            "description": "Otomatik derlemeler, beta testi ve uygulama magazasi listeleme optimizasyonu ile kolaylastirilmis surum yonetimi.",
+            "details": [
+              "Otomatik imzalama, derleme ve magaza gonderimi icin Fastlane ile CI/CD hatlari",
+              "Yapilandirilmis beta programlari icin TestFlight ve Google Play dahili test kanallari",
+              "Anahtar kelime optimizasyonu, ekran goruntusu tasarimi ve A/B test edilmis aciklamalarla ASO"
+            ]
+          },
+          {
+            "icon": "globe",
+            "title": "Backend ve API Entegrasyonu",
+            "description": "Baglantili deneyimler icin REST API'leri, GraphQL, WebSocket'ler ve gercek zamanli veritabanlariyla sorunsuz entegrasyon.",
+            "details": [
+              "Derleme zamani guvenligi icin OpenAPI spesifikasyonlarindan tipli API istemci uretimi",
+              "WebSocket ve Firebase Realtime Database entegrasyonu ile gercek zamanli ozellikler",
+              "Sayfalama, onbellekleme ve iyimser UI guncellemeleri ile verimli veri yukleme"
+            ]
+          },
+          {
+            "icon": "users",
+            "title": "Erisilebilirlik ve Uluslararasilastirma",
+            "description": "Tam erisilebilirlik destegi ve cok dilli yeteneklerle kuresel kitlelere ulasan kapsayici uygulamalar.",
+            "details": [
+              "Semantik agac ozellestirmesi ile VoiceOver ve TalkBack optimizasyonu",
+              "Tarih, sayi ve para birimleri icin yerel ayar farkindalikli bicimlendirme ile RTL duzen destegi"
+            ]
+          }
+        ],
+        "stats": [
+          {
+            "label": "Baslatilan Uygulama",
+            "value": "180+"
+          },
+          {
+            "label": "Toplam Indirme",
+            "value": "12M+"
+          },
+          {
+            "label": "Ort. Magaza Puani",
+            "value": "4,8"
+          },
+          {
+            "label": "Cokme Orani",
+            "value": "%99,7 Cokme Yok"
+          }
+        ]
+      },
+      "process": {
+        "headline": "Kalite icin Tasarlanmis Mobil Gelistirme Sureci",
+        "subtitle": "Konseptten Uygulama Magazasi Basarisina",
+        "description": "Mobil gelistirme surecimiz, her uygulamanin ilk gunden itibaren hizli, kararli ve kullanildikca keyif veren bir uygulama olmasini saglar.",
+        "steps": [
+          {
+            "title": "Urun Stratejisi ve Platform Degerlendirmesi",
+            "description": "Platform secimi, ozellik onceliklendirme ve pazara cikis zaman cizelgesi dahil mobil stratejinizi tanimlayin.",
+            "icon": "search",
+            "details": [
+              "Her iki platformda kullanici persona gelistirme ve rakip uygulama analizi",
+              "Hedef kitle, ozellikler ve butce kisitlamalarina dayali platform onerisi",
+              "Asamali teslimat icin MoSCoW onceliklendirmesi ile MVP ozellik kapsami"
+            ]
+          },
+          {
+            "title": "Mobil icin UI/UX Tasarimi",
+            "description": "iOS Human Interface Guidelines ve Material Design ilkelerini takip eden platforma yerel tasarim.",
+            "icon": "palette",
+            "details": [
+              "Hareket gezinmesi ve dokunsal geri bildirim tasarimi ile dokunma icin optimize edilmis arayuzler",
+              "Hem iOS hem de Android'de yerel hissettiren platforma uyarlanabilir bilesenler",
+              "Fiziksel cihazlarda gercek kullanicilarla test edilmis etkilesimli prototipler"
+            ]
+          },
+          {
+            "title": "Cevik Gelistirme ve Yineleme",
+            "description": "Gelistirme boyunca paydaslarin gercek cihazlarda test etmesini saglayan duzeli beta surumleridye iki haftali sprintler.",
+            "icon": "code",
+            "details": [
+              "TestFlight ve Firebase App Distribution araciligiyla test edenlere dagitilan otomatik derlemelerle ozellik dallanmasi",
+              "%80+ kod kapsami gereksinimleri ile widget ve entegrasyon testi",
+              "Gercek cihaz testi ve geri bildirim entegrasyonu ile haftalik paydas demolari"
+            ]
+          },
+          {
+            "title": "Kalite Guvencesi ve Cihaz Testi",
+            "description": "Guvenilirlik saglamak icin cihaz, isletim sistemi ve ag kosullari matrisi boyunca titiz test.",
+            "icon": "check",
+            "details": [
+              "Pazar payinin en ust %95'ini kapsayan 30'dan fazla fiziksel cihazda manuel test",
+              "Entegrasyon ve uctan uca test takimlariyla otomatik UI testi",
+              "Bellek sizintilari, pil tuketimi ve baslatma suresi optimizasyonu icin performans profilleme"
+            ]
+          },
+          {
+            "title": "Lansman ve Lansman Sonrasi Optimizasyon",
+            "description": "Surekli izleme, cokme raporlamasi ve yinelemeli iyilestirmelerle yonetilen uygulama magazasi gonderimi.",
+            "icon": "rocket",
+            "details": [
+              "Inceleme kilavuzu uyumluluk kontrolleri dahil uygulama magazasi gonderim yonetimi",
+              "Otomatik uyari ile Crashlytics ve performans izleme kurulumu",
+              "Veri odakli ozellik yol haritasi planlamasi ile lansman sonrasi analitik inceleme"
+            ]
+          }
+        ]
+      },
+      "techStack": {
+        "headline": "Mobil Teknoloji Yigini",
+        "subtitle": "Kullandigimiz Cerceveler ve Araclar",
+        "description": "Gelistirme verimliligini ve uzun vadeli surudurulebilirligi korurken en iyi kullanici deneyimini sunan teknolojileri seciyoruz.",
+        "categories": [
+          {
+            "category": "Mobil Cerceveler",
+            "items": [
+              {
+                "name": "Flutter",
+                "description": "Tutarli 60fps UI icin ozel renderlama motoruna sahip coklu platform cercevesi"
+              },
+              {
+                "name": "Swift",
+                "description": "Modern, bildirimsel arayuzler icin SwiftUI ile yerel iOS gelistirme"
+              },
+              {
+                "name": "Kotlin",
+                "description": "Jetpack Compose ve Coroutines ile yerel Android gelistirme"
+              },
+              {
+                "name": "React",
+                "description": "Derin JavaScript ekosistemi entegrasyonu gerektiren projeler icin React Native"
+              }
+            ]
+          },
+          {
+            "category": "Backend ve Hizmetler",
+            "items": [
+              {
+                "name": "NodeJS",
+                "description": "Sohbet ve canli ozellikler icin WebSocket destekli gercek zamanli API sunuculari"
+              },
+              {
+                "name": "FastAPI",
+                "description": "ML model sunumu ve veri isleme icin yuksek performansli Python API'leri"
+              },
+              {
+                "name": "PostgreSQL",
+                "description": "Cok kiraciil uygulamalar icin satir duzeyinde guvenlikle birincil veri depolama"
+              },
+              {
+                "name": "Redis",
+                "description": "Canli ozellikler icin gercek zamanli onbellekleme, oturum yonetimi ve pub/sub"
+              }
+            ]
+          },
+          {
+            "category": "DevOps ve Dagitim",
+            "items": [
+              {
+                "name": "GitHub",
+                "description": "Otomatik derlemeler ve kod inceleme icin Actions ile versiyon kontrolu"
+              },
+              {
+                "name": "Google Cloud",
+                "description": "Kimlik dogrulama, analitik, cokme raporu ve push bildirimleri icin Firebase paketi"
+              },
+              {
+                "name": "Docker",
+                "description": "Tutarli test ve uretim ortamlari icin konteynerize backend hizmetleri"
+              }
+            ]
+          }
+        ]
+      },
+      "portfolio": {
+        "headline": "Kullanicilarin Kullanmayi Sevdigi Mobil Uygulamalar",
+        "subtitle": "Secilmis Vaka Calismalari",
+        "description": "Mobil gelistirme uzmanligimizin isletmelerin kullanicilariyla etkilesim kurmasina, operasyonlari kolaylastirmasina ve gelir uretmesine nasil yardimci oldugunu kesfedin.",
+        "items": [
+          {
+            "title": "Kentsel Market Zinciri icin Talep Uzerine Teslimat Uygulamasi",
+            "industry": "Gida ve Market",
+            "challenge": "45 subeseli bolgesel bir market zinciri, gercek zamanli envanter, teslimat takibi ve sadakat entegrasyonu gerektiren, Instacart ve DoorDash ile rekabet edecek bir mobil siparis uygulamasina ihtiyac duyuyordu.",
+            "solution": "WebSocket uzerinden gercek zamanli siparis takibi, magaza ici teslim alma icin barkod tarama ve mevcut POS ile entegre edilmis sadakat puan sistemi ile bir Flutter uygulamasi gelistirildi.",
+            "results": [
+              "Ilk 3 ayda 4,8 yildiz ortalama puanla 85.000 indirmeye ulasildi",
+              "6 ay icinde toplam gelirin %23'u mobil siparislerden saglandi",
+              "Kisisellstirilmis push teklifleriyle musteri tekrar satin alma orani %34 artirildi"
+            ],
+            "stats": [
+              {
+                "label": "Indirmeler (3 ay)",
+                "value": "85K"
+              },
+              {
+                "label": "Mobil Gelir Payi",
+                "value": "%23"
+              }
+            ]
+          },
+          {
+            "title": "Kamu Hizmetleri icin Saha Hizmet Yonetimi Uygulamasi",
+            "industry": "Enerji ve Kamu Hizmetleri",
+            "challenge": "800 saha teknisyenine sahip bir kamu hizmeti sirketi, kagit formlara ve telefon gorusmelerine guvenerek zamanlama verimsizlikleri, kacan randevular ve ortalama 6 gunluk bilet cozum suresine neden oluyordu.",
+            "solution": "GPS yonlendirme, dijital is emirleri, foto dokumantasyon ve SAP arka ucu ile senkronize gercek zamanli sevk entegrasyonu ile cevimdisi oncelikli bir Flutter uygulamasi gelistirildi.",
+            "results": [
+              "Ortalama bilet cozum suresi 6 gunden 1,8 gune dusuruldu",
+              "Kagit tabanli is akislari ortadan kaldirilarak yazdirma ve islemede yillik 420.000$ tasarruf saglandi",
+              "Ekipman gecmisine mobil erisimle ilk seferde duzeltme orani %62'den %89'a yukseltildi"
+            ],
+            "stats": [
+              {
+                "label": "Cozum Suresi",
+                "value": "%70 Daha Hizli"
+              },
+              {
+                "label": "Yillik Tasarruf",
+                "value": "420K$"
+              }
+            ]
+          },
+          {
+            "title": "Giyilebilir Cihaz Entegrasyonlu Fitness ve Saglik Uygulamasi",
+            "industry": "Saglik ve Fitness",
+            "challenge": "Bir fitness girisimi, kisisellstirilmis antrenman planlari, beslenme takibi ve sosyal maceralar sunmak icin Apple Watch, Fitbit ve Garmin ile entegre bir mobil uygulamaya ihtiyac duyuyordu.",
+            "solution": "HealthKit ve Google Fit entegrasyonu, gercek zamanli lider tablosu ve ML destekli antrenman oneri motoru ile yerel iOS (Swift) ve Android (Kotlin) uygulamalari gelistirildi.",
+            "results": [
+              "%68 aylik tutma orani ile 200.000 aktif kullaniciya ulasildi",
+              "App Store'da 4,9 yildiz ve Google Play'de 4,7 yildiz degerlendirme korundu",
+              "Kullanicilar onceki uygulama versiyonuna kiyasla haftada 3,2 kat daha fazla antrenman tamamladi"
+            ],
+            "stats": [
+              {
+                "label": "Aktif Kullanicilar",
+                "value": "200K"
+              },
+              {
+                "label": "Aylik Tutma",
+                "value": "%68"
+              }
+            ]
+          },
+          {
+            "title": "Dijital Oncelikli Kredi Birligi icin Bankacilik Uygulamasi",
+            "industry": "Finans Hizmetleri",
+            "challenge": "120.000 uyeye hizmet veren bir kredi birligi, neobanklarla rekabet etmek icin cek yatirma, P2P transfer, butceleme araclari ve biyometrik giris ozellikleri olan modern bir mobil bankacilik uygulamasina ihtiyac duyuyordu.",
+            "solution": "Biyometrik kimlik dogrulama, gercek zamanli islem bildirimleri, hesap toplama icin Plaid entegrasyonu ve yapay zeka destekli harcama icgoruleri panosu ile bir Flutter uygulamasi gelistirildi.",
+            "results": [
+              "12 ay icinde uye benimseme orani %31'den %78'e yukseltildi",
+              "Uyeler self-servis mobil bankacilika gecerken sube ziyaretleri %45 azaldi",
+              "2024 yilinda Finovate tarafindan 'En Iyi Kredi Birligi Uygulamasi' olarak taninma aldi"
+            ],
+            "stats": [
+              {
+                "label": "Uye Benimseme",
+                "value": "%78"
+              },
+              {
+                "label": "Sube Ziyaret Azalmasi",
+                "value": "%45"
+              }
+            ]
+          }
+        ],
+        "aggregateStats": [
+          {
+            "label": "Teslim Edilen Uygulama",
+            "value": "180+"
+          },
+          {
+            "label": "Toplam Indirme",
+            "value": "12M+"
+          },
+          {
+            "label": "Ortalama Puan",
+            "value": "4,8/5"
+          },
+          {
+            "label": "Desteklenen Platformlar",
+            "value": "iOS ve Android"
+          }
+        ]
+      },
+      "faq": {
+        "headline": "Mobil Gelistirme SSS",
+        "subtitle": "Sik Sorulan Sorular",
+        "description": "Mobil uygulama gelistirme hizmetlerimiz, teknoloji secimleri ve teslimat surecimiz hakkinda sik sorulan sorularin yanitlari.",
+        "categories": [
+          {
+            "category": "Platform ve Teknoloji",
+            "items": [
+              {
+                "question": "Yerel mi yoksa coklu platform uygulama mi gelistirmeliyiz?",
+                "answer": "Cogu is uygulamasi icin coklu platform gelistirme icin Flutter oneriyoruz. iOS ve Android arasinda %95+ kod paylasimi ile yerel duzey performans sunar, gelistirme suresi ve maliyetini %40-50 kisaltir. Uygulamaniz AR, gelismis kamera ozellikleri veya Bluetooth donanim iletisimi gibi derin platform entegrasyonu gerektirdiginde yerel gelistirme (Swift/Kotlin) oneriyoruz."
+              },
+              {
+                "question": "Mevcut web sitemizi mobil uygulamaya donusturebilir misiniz?",
+                "answer": "Yapabiliriz, ancak bir web sitesini basitce bir WebView'a sarmalamaktansa yerel yeteneklerden yararlanan, amaca uygun tasarlanmis bir mobil deneyim olusturmayi oneriyoruz. Mevcut backend API'lerinizi ve is mantiginizi yeniden kullanirken mobil icin optimize edilmis bir UI olusturuyoruz."
+              },
+              {
+                "question": "Uygulama guncellemelerini ve yeni isletim sistemi versiyonlarini nasil yonetiyorsunuz?",
+                "answer": "Apple ve Google gelistirici betalarini yillik konferanslarindan (WWDC ve Google I/O) itibaren izliyoruz ve kirilma degisikliklerini veya yeni firsatlari proaktif olarak belirliyoruz. Bakim planlarimiz buyuk surumlerden sonraki 2 hafta icinde isletim sistemi uyumluluk guncellemeleri iceriyor."
+              }
+            ]
+          },
+          {
+            "category": "Gelistirme ve Test",
+            "items": [
+              {
+                "question": "Bir mobil uygulama gelistirmek ne kadar surer?",
+                "answer": "Temel ozelliklere sahip odakli bir MVP genellikle 3-4 ay surer. Kimlik dogrulama, odemeler, gercek zamanli ozellikler ve cevimdisi destege sahip zengin ozellikli bir uygulama 5-8 ay surer. Gelistirme boyunca test edip geri bildirim vermeniz icin her 2 haftada bir calisan derlemeler teslim ediyoruz."
+              },
+              {
+                "question": "Farkli cihazlarda nasil test ediyorsunuz?",
+                "answer": "Hem iOS hem de Android icin pazar payinin en ust %95'ini kapsayan 30'dan fazla fiziksel cihazdan olusan bir cihaz laboratuvari bulunduruyoruz. Birden fazla isletim sistemi versiyonu, ekran boyutu ve ag kosulunda test ediyoruz."
+              },
+              {
+                "question": "Uygulama magazasi incelemesi ve onayi ne durumda?",
+                "answer": "Uygulama magazasi listeleme olusturma, ekran goruntusu tasarimi, meta veri optimizasyonu ve Apple App Store Inceleme Kurallari ve Google Play politikalarina uyumluluk dahil tum gonderim surecini yonetiyoruz. Ilk gonderim onay oranumiz %94'tur."
+              }
+            ]
+          },
+          {
+            "category": "Maliyet ve Bakim",
+            "items": [
+              {
+                "question": "Mobil uygulama gelistirme ne kadara mal olur?",
+                "answer": "Coklu platform MVP'si 50.000-100.000$'dan baslar. Backend gelistirmeli tam ozellikli bir uygulama 100.000-300.000$ araligindadir. Karmasik entegrasyonlara sahip kurumsal uygulamalar genellikle 250.000-600.000$+ araligindadir. Flutter ile coklu platform gelistirme, ayri yerel uygulamalar gelistirmeye kiyasla genellikle %40-50 tasarruf saglar."
+              },
+              {
+                "question": "Hangi surekli maliyetleri butcelemeiliyiz?",
+                "answer": "Apple Developer (yillik 99$) ve Google Play (tek seferlik 25$) hesaplari, backend barindirma maliyetleri (olcege bagli olarak aylik 200-2.000$), push bildirim hizmetleri, analitik araclari ve bakim gelistirme planlayiniz. Cogu musteri guncellemeler ve iyilestirmeler icin ilk gelistirme maliyetinin yillik %15-20'sini butceler."
+              },
+              {
+                "question": "Lansman sonrasi destek sunuyor musunuz?",
+                "answer": "Evet. Mobil destek planlarimiz cokme izleme ve hata duzeltmeleri, isletim sistemi uyumluluk guncellemeleri, performans optimizasyonu, guvenlik yamalari ve ozellik gelistirme saatlerini icerir. Uc katman sunuyoruz: Temel (izleme ve kritik duzeltmeler), Buyume (aylik ozellik gelistirme dahil) ve Kurumsal (SLA garantili ozel mobil ekip)."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "data-analytics": {
+      "serviceName": "Veri Analitigi",
+      "features": {
+        "headline": "Ham Veriyi Stratejik Icgorulere Donusturun",
+        "subtitle": "Gelismis Analitik Cozumleri",
+        "description": "Modern analitik platformlari, tahmine dayali modelleme ve sezgisel gorsellestirme panolari araciligiyla kuruluslarin verilerinin tam potansiyelini ortaya cikarmalaarina yardimci oluyoruz.",
+        "items": [
+          {
+            "icon": "chart",
+            "title": "Is Zekasi Panolari",
+            "description": "Birden fazla kaynaktan gelen verileri yoneticiler ve operasyonel paydaslar icin tek bir gorunumde birlestiren etkilesimli, gercek zamanli panolar.",
+            "details": [
+              "Rol tabanli erisim kontrolleriyle surukle-birak pano olusturucu",
+              "Saniyenin altinda sorgu performansiyla gercek zamanli veri yenileme",
+              "Musteriye yonelik portallar icin beyaz etiket secenekleriyle gomulu analitik"
+            ]
+          },
+          {
+            "icon": "brain",
+            "title": "Tahmine Dayali Analitik ve Tahminleme",
+            "description": "Trendleri, talep tahminini ve musteri davranisini olculebilir dogruluk iyilestirmeleriyle belirleyen makine ogrenimi modelleri.",
+            "details": [
+              "Gelir, envanter ve kaynak planlamasi icin zaman serisi tahminleme",
+              "Eyleme gecirilebilir tutma tetikleyicileri ile musteri kaybi tahmin modelleri",
+              "Dolandiricilik ve kalite guvencesi icin anomali algilama hatlari"
+            ]
+          },
+          {
+            "icon": "database",
+            "title": "Veri Ambari Mimarisi",
+            "description": "Hizli, guvenilir sorgulama icin yapilandirilmis ve yapilandirilmamis verileri merkezilestiren olceklenebilir, bulut yerel veri ambari cozumleri.",
+            "details": [
+              "Analitik is yukleri icin optimize edilmis yildiz ve kar tanesi sema tasarimi",
+              "Veri kalitesi dogrulama kapilariyla artimli ETL hatlari"
+            ]
+          },
+          {
+            "icon": "search",
+            "title": "Musteri Analitigi ve Segmentasyon",
+            "description": "Davranissal kaliplari, yasam boyu deger tahminlerini ve mikro segment firsatlarini ortaya cikaran derinlemesine musteri analizi.",
+            "details": [
+              "Edinme kanallari arasinda RFM puanlama ve kohort analizi",
+              "Hedefli pazarlama kampanyalari icin benzer kitle modellemesi",
+              "Coklu temas noktali musteri yolculuklari genelinde atif modellemesi"
+            ]
+          },
+          {
+            "icon": "lightning",
+            "title": "Gercek Zamanli Akis Isleme",
+            "description": "Zamana duyarli is kararlari icin saniyede milyonlarca olayi isleyen olay gududlu analitik hatlari.",
+            "details": [
+              "Apache Kafka ve Flink tabanli akis mimarileri",
+              "IoT ve tikizma akisi verileri icin karmasik olay isleme"
+            ]
+          },
+          {
+            "icon": "cog",
+            "title": "Veri Yonetisimi ve Kalite",
+            "description": "Tum veri yasam dongusu boyunca dogruluk, tutarlilik ve uyumluluk saglayan kapsamli veri yonetisimi cerceceleri.",
+            "details": [
+              "Soy izleme ile otomatik veri kataloglama",
+              "Esik tabanli uyariyla veri kalitesi puan kartlari",
+              "Kisisel veri islemesi icin GDPR ve CCPA uyumluluk otomasyonu"
+            ]
+          },
+          {
+            "icon": "eye",
+            "title": "Gelismis Veri Gorsellestirme",
+            "description": "Karmasik veri kumelerini teknik ve teknik olmayan kitlelere erisilebilir kilan ilgi cekici gorsel anlatimlar.",
+            "details": [
+              "Ozel kullanim alanlari icin ozel D3.js ve Plotly gorsellestirmeleri",
+              "Etkilesimli harita tabanli panolarla cografi-mekansal analitik"
+            ]
+          },
+          {
+            "icon": "users",
+            "title": "Self-Servis Analitik Yetkilendirme",
+            "description": "Is kullanicilarini yonetilen, kullanici dostu araclar ve kuratoryali veri kumeleriyle verileri bagimsiz olarak kesfetmeleri icin guclendirin.",
+            "details": [
+              "Is dostu veri kesfetmesi icin anlamsal katman soyutlamasi",
+              "Yaygin is sorulari icin rehberli analitik sablonlari",
+              "Analitik benimseme icin egitim programlari ve dokumantasyon"
+            ]
+          }
+        ],
+        "stats": [
+          {
+            "label": "Daha Hizli Icgoruler",
+            "value": "10x"
+          },
+          {
+            "label": "Entegre Veri Kaynagi",
+            "value": "200+"
+          },
+          {
+            "label": "Sorgu Performans Kazanimi",
+            "value": "%85"
+          },
+          {
+            "label": "Tahmin Dogrulugu",
+            "value": "%94"
+          }
+        ]
+      },
+      "process": {
+        "headline": "Veri Analitigi Surecimiz",
+        "subtitle": "Ham Veriden Eyleme Gecirilebilir Zekaya",
+        "description": "Parcalanmis veri ortamlarini birlesik analitik ekosistemlerine donusturen, her asamada olculebilir is sonuclari sunan yapilandirilmis bir metodoloji.",
+        "steps": [
+          {
+            "title": "Veri Denetimi ve Strateji",
+            "description": "Mevcut veri altyapinizi degerlendiriyor, bosluklar belirliyoruz ve is hedefleriniz ile KPI'larinizla uyumlu bir yol haritasi tanimliyoruz.",
+            "icon": "search",
+            "details": [
+              "Mevcut veri kaynaklari, hatlari ve raporlama araclarinin envanteri",
+              "Analitik gereksinimlerini is hedeflerine eslemek icin paydas gorusmeleri",
+              "Onceliklendirilmis onerilerle olgunluk degerlendirmesi"
+            ]
+          },
+          {
+            "title": "Mimari ve Hat Tasarimi",
+            "description": "Buyume icin olusturulmus otomatik veri alma, donusum ve depolama hatlariyla olceklenebilir bir veri mimarisi tasarlayin.",
+            "icon": "database",
+            "details": [
+              "Bulut yerel ambar ve veri golu mimarisi tasarimi",
+              "Hata islemesi ve izleme ile ETL/ELT hatti planlari"
+            ]
+          },
+          {
+            "title": "Model Gelistirme ve Dogrulama",
+            "description": "Gecmis verilerinizi kullanarak tahmin modelleri, puanlama algoritmalari ve istatistiksel cerceveler olusturun ve dogrulayin.",
+            "icon": "brain",
+            "details": [
+              "Capraz dogrulama ile ozellik muhendisligi ve model egitimi",
+              "Model performansi karsilastirmasi icin A/B test cerceceleri",
+              "Duzenlenmis sektorler icin onyargi algilama ve adalet denetimi"
+            ]
+          },
+          {
+            "title": "Pano ve Raporlama Dagitimi",
+            "description": "Kurulusunuzdaki her paydas grubuna ozel etkilesimli panolar ve otomatik raporlar dagitin.",
+            "icon": "chart",
+            "details": [
+              "SSO entegrasyonu ile rol tabanli pano dagitimi",
+              "Zamanlanmis rapor uretimi ve dagitim otomasyonu"
+            ]
+          },
+          {
+            "title": "Optimizasyon ve Bilgi Aktarimi",
+            "description": "Modelleri surekli iyilestirin, sorgu performansini optimize edin ve ekibinizi analitik platformu koruma ve genisletme konusunda egitin.",
+            "icon": "rocket",
+            "details": [
+              "Ucaylik model yeniden egitim ve performans karsilastirmasi",
+              "Bulut is yukleri icin sorgu optimizasyonu ve maliyet yonetimi",
+              "Analistler ve is kullanicilari icin uygulamali egitim calistayi"
+            ]
+          }
+        ]
+      },
+      "techStack": {
+        "headline": "Analitik Teknoloji Yigini",
+        "subtitle": "Kurumsal Duzeyde Araclar ve Platformlar",
+        "description": "Veri hacimleriniz ve is karmasikliginiz ile olceklenen analitik cozumler olusturmak icin sektorde lider teknolojilerden yararlaniyoruz.",
+        "categories": [
+          {
+            "category": "Veri Isleme ve ML",
+            "items": [
+              {
+                "name": "Python",
+                "description": "Veri donusumu, istatistiksel analiz ve makine ogrenimi is akislari icin birincil dil"
+              },
+              {
+                "name": "scikit-learn",
+                "description": "Siniflandirma, regresyon ve kumeleme gorevleri icin klasik ML algoritmalari"
+              },
+              {
+                "name": "TensorFlow",
+                "description": "Gelismis tahmin modelleri ve sinir agi mimarileri icin derin ogrenme cercevesi"
+              },
+              {
+                "name": "Kafka",
+                "description": "Gercek zamanli veri alma ve isleme hatlari icin dagitik olay akisi"
+              }
+            ]
+          },
+          {
+            "category": "Depolama ve Veritabanlari",
+            "items": [
+              {
+                "name": "PostgreSQL",
+                "description": "Yapilandirilmis analitik is yukleri ve karmasik sorgular icin iliskisel veritabani"
+              },
+              {
+                "name": "MongoDB",
+                "description": "API'ler, gunlukler ve IoT cihazlarindan gelen yari yapilandirilmis veriler icin belge deposu"
+              },
+              {
+                "name": "Redis",
+                "description": "Pano sorgu hizlandirmasi ve oturum yonetimi icin bellek ici onbellek katmani"
+              },
+              {
+                "name": "Elasticsearch",
+                "description": "Operasyonel zeka panolari icin tam metin arama ve gunluk analitigi"
+              }
+            ]
+          },
+          {
+            "category": "Bulut ve Altyapi",
+            "items": [
+              {
+                "name": "AWS",
+                "description": "Sunucusuz veri ambarlama ve ETL orkestrasyonu icin Redshift, Glue ve Athena"
+              },
+              {
+                "name": "Google Cloud",
+                "description": "Petabayt olcekli analitik ve akis isleme icin BigQuery ve Dataflow"
+              },
+              {
+                "name": "Docker",
+                "description": "Tekrarlanabilir model egitimi ve dagitimi icin konteynerize analitik ortamlari"
+              }
+            ]
+          }
+        ]
+      },
+      "portfolio": {
+        "headline": "Analitik Basari Hikayeleri",
+        "subtitle": "Sektorler Arasi Olculebilir Etki",
+        "description": "Veri analitigi cozumlerimizin karar almayi nasil donusturdugu ve musterilerimiz icin onemli is sonuclari yarattigi konusunda gercek dunya ornekleri.",
+        "items": [
+          {
+            "title": "Perakende Talep Tahmin Platformu",
+            "industry": "Perakende ve E-Ticaret",
+            "challenge": "400+ SKU'lu cok kanalli bir perakendeci, hatali manuel talep tahmini nedeniyle yillik 2,3 milyon dolar israf ve satis kaybi yasayan kronik fazla stok ve stok tukenmesi sorunlari yasiyordu.",
+            "solution": "POS verisi, hava durumu kaliplari, promosyon takvimleri ve bolgesel demografiyi otomatik yeniden siparis tetikleyicileriyle birlesik bir tahmin motoruna entegre eden ML destekli bir talep tahmin platformu olusturuldu.",
+            "results": [
+              "Ilk ceyrekte stok tukenmesi olaylari %62 azaldi",
+              "Fazla envanter tasima maliyetleri yillik 1,1 milyon dolar azaldi",
+              "Mevsimsel ve mevsimsel olmayan kategorilerde %94 tahmin dogrulugu elde edildi"
+            ],
+            "stats": [
+              {
+                "label": "Tahmin Dogrulugu",
+                "value": "%94"
+              },
+              {
+                "label": "Yillik Tasarruf",
+                "value": "1,1M$"
+              }
+            ]
+          },
+          {
+            "title": "Saglik Hasta Akis Analitigi",
+            "industry": "Saglik",
+            "challenge": "Bolgesel bir hastane agi acil servis asiri kalabaligi ve tutarsiz hasta bekleme sureleriyle mucadele ediyordu; bu durum azalan hasta memnuniyeti puanlari ve personel tukenmisligine yol aciyordu.",
+            "solution": "EHR verisi, personel cizelgeleri ve gecmis kabul kaliplarini entegre ederek yogunluk donemlerini tahmin eden ve kaynak tahsisini dinamik olarak optimize eden gercek zamanli bir hasta akis analitik panosu dagitildi.",
+            "results": [
+              "Uc tesiste ortalama acil servis bekleme sureleri %34 azaldi",
+              "Hasta memnuniyeti puanlari 5 uzerinden 3,2'den 4,5'e yukseldi"
+            ],
+            "stats": [
+              {
+                "label": "Bekleme Suresi Azalmasi",
+                "value": "%34"
+              },
+              {
+                "label": "Hasta Memnuniyeti",
+                "value": "4,5/5"
+              }
+            ]
+          },
+          {
+            "title": "Finansal Risk Puanlama Motoru",
+            "industry": "Finans Hizmetleri",
+            "challenge": "Orta olcekli bir kredi kurulusa, nitelikli basvuru sahiplerini reddederken riskli borclu onaylayan yuksek yanlis pozitif oranlari ureten eski kredi puanlama modellerine dayaniyordu.",
+            "solution": "Duzenleyici uyumluluk icin aciklanabilir yapay zeka ciktilariyla gradient boosting, lojistik regresyon ve davranissal analitigi birlestiren bir topluluk ML risk puanlama motoru gelistirildi.",
+            "results": [
+              "Onay hacmini %15 artirirken temerrut oranlari %28 azaltildi",
+              "Otomatik risk katmanlama yoluyla manuel inceleme kuyrugu %40 azaltildi",
+              "Aciklanabilir model ciktilariyla tam duzenleyici uyumluluk elde edildi"
+            ],
+            "stats": [
+              {
+                "label": "Temerrut Azalmasi",
+                "value": "%28"
+              },
+              {
+                "label": "Onay Artisi",
+                "value": "%15"
+              }
+            ]
+          }
+        ],
+        "aggregateStats": [
+          {
+            "label": "Teslim Edilen Analitik Projesi",
+            "value": "120+"
+          },
+          {
+            "label": "Gunluk Islenen Veri Noktasi",
+            "value": "5 Milyar+"
+          },
+          {
+            "label": "Musteriler icin Ortalama Yatirim Getirisi",
+            "value": "%340"
+          },
+          {
+            "label": "Hizmet Verilen Sektor",
+            "value": "18"
+          }
+        ]
+      },
+      "faq": {
+        "headline": "Veri Analitigi SSS",
+        "subtitle": "Sik Sorulan Sorular",
+        "description": "Veri analitigi hizmetlerimiz, uygulama yaklasimimiz ve beklenen sonuclar hakkinda en sik sorulan sorularin yanitlari.",
+        "categories": [
+          {
+            "category": "Baslangic",
+            "items": [
+              {
+                "question": "Tipik bir analitik projesi baslangictan dagitima ne kadar surer?",
+                "answer": "Cogu analitik projesi asamali bir yaklasim izler. Odakli bir pano veya raporlama projesi genellikle 6-8 hafta surer; kapsamli bir veri ambari ve tahmine dayali analitik platformu ise 3-6 ay arasindadir. Erken sonuclar gormeniz icin her asamada artimli deger sunuyoruz."
+              },
+              {
+                "question": "Baslamadan once hangi verilerin hazir olmasi gerekiyor?",
+                "answer": "Baslamak icin mukemmel temiz verilere ihtiyaciniz yok. Kesif asamasi, mevcut kaynaklari degerlendirdigimiz, kalite sorunlarini belirledigimiz ve iyilestirme planlari olusturdugumuz kapsamli bir veri denetimi icerir. Ister elektronik tablolarda, veritabanlarinda, SaaS platformlarinda veya eski sistemlerde olsun mevcut verilerinizle calisiyoruz."
+              },
+              {
+                "question": "Tableau veya Power BI gibi mevcut BI araclarimizla calisabilir misiniz?",
+                "answer": "Kesinlikle. Arac bagimsiziz ve siklikla mevcut BI platformlariyla entegrasyon yapiyoruz. Tableau, Power BI, Looker veya Metabase kullaniyor olsaniz da mevcut kurulumunuzu gelistirebilir veya is gerekcelisi desteklediginde gecis onerebiliriz."
+              }
+            ]
+          },
+          {
+            "category": "Teknik Uygulama",
+            "items": [
+              {
+                "question": "Farkli formatlardaki birden fazla kaynaktan gelen verileri nasil yonetiyorsunuz?",
+                "answer": "Sema dogrulama, veri tipi normalizasyonu ve yineleme kaldirma mantigi ile saglam ETL/ELT hatlari olusturuyoruz. Hatlarimiz yapilandirilmis veritabanlari, yari yapilandirilmis API'ler, duz dosyalar ve akis verilerini yoneterek her seyi tutarli bir analitik modele birlestiriyor."
+              },
+              {
+                "question": "Veri guvenligi ve gizliligini saglamak icin hangi onlemleri aliyorsunuz?",
+                "answer": "Guvenlik her katmana yerlestirilmistir. Duragan ve aktarim halinde sifreleme, rol tabanli erisim kontrolleri, kisisel veriler icin veri maskeleme ve tam denetim kaydi uyguluyoruz. Duzenlenmis sektorler icin HIPAA, GDPR, SOC 2 ve diger ilgili cercevelerle uyumlulugu sagliyoruz."
+              },
+              {
+                "question": "Tahmin modelleriniz zamanla nasil dogru kaliyor?",
+                "answer": "Uretimde tahmin sapmasi, ozellik dagulim degisiklikleri ve dogruluk metriklerini izleyen model izleme hatlari uyguluyoruz. Performans belirlenen esiklerin otesinde bozuldugunda, en son verileri kullanarak otomatik yeniden egitim is akislari tetiklenir."
+              }
+            ]
+          },
+          {
+            "category": "Yatirim Getirisi ve Is Etkisi",
+            "items": [
+              {
+                "question": "Veri analitigi yatirimindan ne tur bir yatirim getirisi bekleyebiliriz?",
+                "answer": "Yatirim getirisi kullanim durumuna gore degisir, ancak musterilerimiz genellikle ilk yil icinde 3-5 kat getiri gorur. Yaygin deger itici gucleri arasinda surec optimizasyonu yoluyla azaltilmis operasyonel maliyetler, daha iyi musteri hedeflemesi yoluyla artan gelir ve tahmine dayali uyari yoluyla risk azaltma yer alir."
+              },
+              {
+                "question": "Bir analitik projesinin basarisini nasil olcuyorsunuz?",
+                "answer": "Is KPI'larinizla uyumlu olarak strateji asamasinda basari metriklerini tanimliyoruz. Bunlar arasinda tahmin dogrulugu iyilestirmeleri, pano benimseme oranlari, sorgu performansi karsilastirmalari, maliyet tasarruflari veya veri odakli kararlardan elde edilen gelir artisi yer alabilir."
+              },
+              {
+                "question": "Ilk dagitimdan sonra surekli destek saguyor musunuz?",
+                "answer": "Evet. Model yeniden egitimi, pano guncellemeleri, hat izleme, performans optimizasyonu ve ozel analitik isteklerini iceren esnek destek katmanlari sunuyoruz. Bircok musteri bizi ucaylik is degerlendirmeleri ve surekli iyilestirme sprintleri icin tutar."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "conversational-ai": {
+      "serviceName": "Konusma Yapay Zekasi",
+      "features": {
+        "headline": "Sonuc Odakli Akilli Konusmalar",
+        "subtitle": "Yeni Nesil Yapay Zeka Iletisimi",
+        "description": "Baglami anlayan, gecmisi hatirlayan ve karmasik sorgulari cozen konusma yapay zekasi sistemleri tasarliyor ve dagitiyoruz; musteri etkilesimlerini sinir bozucu komut dosyalarindan dogal, uretken diyaloglara donusturuyoruz.",
+        "items": [
+          {
+            "icon": "chat",
+            "title": "Kurumsal Sohbet Botu Gelistirme",
+            "description": "Karmasik, cok adimli konusmalari insan benzeri anlayis ve dogrulukla yoneten buyuk dil modelleriyle desteklenen ozel sohbet botlari.",
+            "details": [
+              "Oturumlar arasi baglam koruma ile cok adimli diyalog yonetimi",
+              "Guven puanlamasi ve zarif geri donus yonlendirmesi ile niyet siniflandirmasi",
+              "Tam konusma baglami aktarimi ile insan temsilciye sorunsuz gecis"
+            ]
+          },
+          {
+            "icon": "brain",
+            "title": "RAG Destekli Bilgi Asistanlari",
+            "description": "Olgusal olarak dogru yanitlar icin yapay zeka yanitlarini ozel belgeleriniz, politikalariniz ve bilgi tabanlarinizda temellendiren Getirme-Arttirilmis Uretim sistemleri.",
+            "details": [
+              "Belgeler, SSS'ler ve bilgi makaleleri icin vektor gomme hatlari",
+              "Hassasiyet icin anlamsalal ve anahtar kelime almayibirlestiren hibrit arama",
+              "Uretilen her yanit icin kaynak alintisi ve guven puanlamasi"
+            ]
+          },
+          {
+            "icon": "globe",
+            "title": "Cok Dilli Konusma Destegi",
+            "description": "Otomatik dil algilama ve kulturel olarak uygun yanit uretimi ile 50'den fazla dilde akici iletisim kuran yapay zeka asistanlari.",
+            "details": [
+              "Gercek zamanli dil algilama ve konusma ortasinda sorunsuz gecis",
+              "Bolgesel iletisim normlarini dikkate alan kulturel olarak uyarlanmis yanitlar"
+            ]
+          },
+          {
+            "icon": "cog",
+            "title": "Is Akisi Otomasyon Ajanlari",
+            "description": "Soru yanitlamanin otesine gecen, dogal konusma araciligiyla islemleri yurutuen, randevu alan, siparis isleyen ve kayitlari guncelleyen yapay zeka ajanlari.",
+            "details": [
+              "Konusma komutlari araciligiyla CRUD islemleri gerceklestiren API baglantili ajanlar",
+              "Onay ve geri alma yeteneklerine sahip cok adimli is akisi orkestrasyonu",
+              "Uctan uca otomasyon icin CRM, ERP ve biletleme sistemleriyle entegrasyon"
+            ]
+          },
+          {
+            "icon": "sparkles",
+            "title": "Sesli Yapay Zeka ve Konusma Arayuzleri",
+            "description": "IVR sistemleri, ses asistanlari ve dogal dil anlama ile konusmadan eyleme arayuzleri icin sesle etkinlestirilen yapay zeka cozumleri.",
+            "details": [
+              "Alana ozel sozluk ince ayari ile konusmadan metne",
+              "Duygu farkindalikli ses sentezi ile dogal metinden konusmaya",
+              "Guvenli self-servis etkilesimler icin ses biyometrik kimlik dogrulama"
+            ]
+          },
+          {
+            "icon": "search",
+            "title": "Konusma Tabanli Arama ve Kesif",
+            "description": "Kullanici niyetini anlayan ve kesin, baglamsal sonuclar sunan dogal dil sorgulamasiyla geleneksel anahtar kelime aramasisinin yerini alin.",
+            "details": [
+              "Veritabanlari ve kataloglar icin dogal dilden yapilandirilmis sorgu cevirisi",
+              "Sonuclari diyalog yoluyla daraltanbfasetli konusma akislari"
+            ]
+          },
+          {
+            "icon": "chart",
+            "title": "Analitik ve Konusma Zekasi",
+            "description": "Yapay zeka performansini ve musteri memnuniyetini surekli optimize etmek icin konusma kaliplari, duygu eglilimleri ve cozum oranlari hakkinda derin analitik.",
+            "details": [
+              "Gercek zamanli duygu analizi ve yukseltme tetikleyici algilama",
+              "Terk ve cozum izleme ile konusma huni analitigi",
+              "Ortaya cikan musteri endiselerini proaktif olarak belirlemek icin konu kumeleme"
+            ]
+          },
+          {
+            "icon": "shield",
+            "title": "Guvenlik ve Uyumluluk Koruyuculari",
+            "description": "Halusinasyonlari onleyen, marka yonergelerini zorlayan ve her etkilesimde duzenleyici uyumlulugu saglayan kurumsal duzeyde guvenlik katmanlari.",
+            "details": [
+              "Yapilandiriabilir esiklerle icerik filtreleme ve zararli icerik algilama",
+              "Marka ses tonu zorlama ve konu disi konusma yonlendirmesi"
+            ]
+          }
+        ],
+        "stats": [
+          {
+            "label": "Cozum Orani",
+            "value": "%87"
+          },
+          {
+            "label": "Desteklenen Dil",
+            "value": "50+"
+          },
+          {
+            "label": "Ort. Yanit Suresi",
+            "value": "<2sn"
+          },
+          {
+            "label": "Musteri Memnuniyeti",
+            "value": "4,6/5"
+          }
+        ]
+      },
+      "process": {
+        "headline": "Konusma Yapay Zekasi Surecimiz",
+        "subtitle": "Konseptten Akilli Asistana",
+        "description": "Kullanicilari memnun eden, operasyonel maliyetleri azaltan ve kanallar ile diller arasinda zahmetsizce olceklenen konusma yapay zekasi sistemleri olusturmak icin kanitlanmis bir metodoloji.",
+        "steps": [
+          {
+            "title": "Konusma Tasarimi ve Kapsam Belirleme",
+            "description": "Musteri etkilesimlerinizi analiz ediyoruz, konusma akislarini haritaliyoruz ve yapay zeka asistani kisiligini, yeteneklerini ve basari metriklerini tanimliyoruz.",
+            "icon": "chat",
+            "details": [
+              "Oruntu analizi icin mevcut destek biletlerini, sohbet gunluklerini ve cagri kayitlarini denetleme",
+              "Mutlu yollari ve uc durumlari kapsayan konusma akis diyagramlari tasarlama",
+              "Persona, ses tonu ve yukseltme politikalarini tanimlama"
+            ]
+          },
+          {
+            "title": "Bilgi Tabani ve Veri Hazirlama",
+            "description": "Hizli, dogru alma icin optimize edilmis vektor depolarinda kurumsal bilginizi derleyin, yapilandirin ve gomin.",
+            "icon": "database",
+            "details": [
+              "Parcalama ve meta veri zenginlestirme ile belge alma hatti",
+              "Eksik kapsam alanlari icin bilgi boslugu analizi ve icerik olusturma"
+            ]
+          },
+          {
+            "title": "Model Ince Ayari ve Entegrasyon",
+            "description": "Alan verileriniz uzerinde dil modellerini yapilandirin ve ince ayar yapin, ardindan mevcut teknoloji yiginiz ve is sistemlerinizle entegre edin.",
+            "icon": "brain",
+            "details": [
+              "Alan dogrulugu icin prompt muhendisligi ve az ornekli optimizasyon",
+              "CRM, biletleme ve backend is sistemleriyle API entegrasyonu",
+              "Proaktif konusma baslatma icin webhook ve olay gududlu tetikleyiciler"
+            ]
+          },
+          {
+            "title": "Test ve Guvenlik Dogrulamasi",
+            "description": "Lansman oncesi dogruluk, guvenlik ve tutarli performans saglamak icin binlerce konusma senaryosunda titiz test.",
+            "icon": "shield",
+            "details": [
+              "Niyet tanima ve varlik cikarimini kapsayan otomatik test takimlari",
+              "Dusmanlik girdileri ve uc durum islemesi icin kirmizi takim testi"
+            ]
+          },
+          {
+            "title": "Dagitim ve Surekli Ogrenme",
+            "description": "Sectiniz kanallarda lansman yapin ve her konusma ile yapay zekayi daha akilli yapan geri bildirim donguleri uygulayin.",
+            "icon": "rocket",
+            "details": [
+              "Mevcut destek kanallarina karsi A/B testi ile asamali kullanima acma",
+              "Dusuk guvenli yanitlar icin insan dongulu inceleme is akislari",
+              "Eyleme gecirilebilir optimizasyon onerileriyle haftalik performans raporlari"
+            ]
+          }
+        ]
+      },
+      "techStack": {
+        "headline": "Konusma Yapay Zekasi Teknoloji Yigini",
+        "subtitle": "En Yeni Dil Teknolojileri",
+        "description": "Hizli, dogru ve kurumsal hazir konusma yapay zekasi olusturmak icin en guclu dil modellerini saglam muhendislik cerceceleriyle birlestiriyoruz.",
+        "categories": [
+          {
+            "category": "Yapay Zeka ve Dil Modelleri",
+            "items": [
+              {
+                "name": "OpenAI",
+                "description": "Yuksek kaliteli dogal dil anlama ve uretim icin GPT-4 ve gomme modelleri"
+              },
+              {
+                "name": "Hugging Face",
+                "description": "Alana ozel ince ayar ve sirket ici dagitimlar icin acik kaynakli transformer modelleri"
+              },
+              {
+                "name": "LangChain",
+                "description": "Arac cagrisi ile karmasik, cok adimli yapay zeka ajan is akislari olusturmak icin orkestrasyon cercevesi"
+              },
+              {
+                "name": "Python",
+                "description": "ML hatlari, API hizmetleri ve prompt muhendisligi is akislari icin temel gelistirme dili"
+              }
+            ]
+          },
+          {
+            "category": "Altyapi ve Veri",
+            "items": [
+              {
+                "name": "Redis",
+                "description": "Milisaniyenin altinda baglam alma icin oturum ve konusma durumu onbellekleme"
+              },
+              {
+                "name": "PostgreSQL",
+                "description": "Konusma gecmisi, kullanici profilleri ve analitik verileri icin kalici depolama"
+              },
+              {
+                "name": "Elasticsearch",
+                "description": "RAG bilgi tabani almasi icin hibrit anahtar kelime ve vektor arama"
+              }
+            ]
+          },
+          {
+            "category": "Dagitim ve Izleme",
+            "items": [
+              {
+                "name": "Docker",
+                "description": "Model sunumu, API gecidi ve konusma yonetimi icin konteynerize mikro hizmetler"
+              },
+              {
+                "name": "Kubernetes",
+                "description": "Degisken konusma hacimlerini yonetmek icin otomatik olcekleme orkestrasyonu"
+              },
+              {
+                "name": "AWS",
+                "description": "Model barindirma icin SageMaker, sunucusuz isleme icin Lambda ve izleme icin CloudWatch"
+              },
+              {
+                "name": "Grafana",
+                "description": "Gecikme, cozum oranlari ve konusma kalitesi metriklerini izleyen gercek zamanli panolar"
+              }
+            ]
+          }
+        ]
+      },
+      "portfolio": {
+        "headline": "Konusma Yapay Zekasi Vaka Calismalari",
+        "subtitle": "Gercek Is Degeri Sunan Yapay Zeka Asistanlari",
+        "description": "Konusma yapay zekasi cozumlerimizin musteri destegini nasil donusturdugunu, operasyonlari nasil kolaylastirdigini ve sektorler arasi kuruluslar icin yeni katilim kanallari olusturdugunu kesfedin.",
+        "items": [
+          {
+            "title": "Sigorta Hasar Sanal Asistani",
+            "industry": "Sigorta",
+            "challenge": "Ulusal bir sigorta saglayicisi, arama basina ortalama 15 dakikayi asan islem sureleri ve yogun donemlerde %35 arama terk orani nedeniyle musteri kaybediyordu.",
+            "solution": "Musterileri tum hasar sureci boyunca yonlendiren, belge yukleme, durum kontrolu ve karmasik vakalari uzmanlara yonlendirme yetenegine sahip, hasar yonetim sistemiyle entegre RAG destekli bir sanal asistan dagitildi.",
+            "results": [
+              "Ortalama hasar islem suresi 15 dakikadan 4 dakikaya dusuruldu",
+              "Insan temsilci katilimi olmadan %78 ilk temas cozum orani elde edildi",
+              "Arama terk orani %35'ten %8'e dusuruldu"
+            ],
+            "stats": [
+              {
+                "label": "Islem Suresi Azalmasi",
+                "value": "%73"
+              },
+              {
+                "label": "Ilk Temas Cozumu",
+                "value": "%78"
+              }
+            ]
+          },
+          {
+            "title": "E-Ticaret Alisveris Danismani",
+            "industry": "Perakende ve E-Ticaret",
+            "challenge": "Cevrimici bir moda perakendecisi, 50.000'den fazla urun katalogu arasinda tercihlerine uyan urunleri bulamayan musteriler nedeniyle yuksek sepet terk oranlari ve dusuk urun kesfi ile mucadele ediyordu.",
+            "solution": "Dogal diyalog araciligiyla stil tercihlerini anlayan, gorsel onizlemelerle urunler oneren, beden sorularini yanitleyan ve dogrudan sohbet arayuzunde siparis isleyen bir konusma alisveris danismani olusturuldu.",
+            "results": [
+              "Danismanol destekli satinalmalar icin ortalama siparis degeri %28 artirildi",
+              "Proaktif konusma tetikleyicileri yoluyla sepet terk orani %19 azaltildi"
+            ],
+            "stats": [
+              {
+                "label": "Ortalama Siparis Degeri Artisi",
+                "value": "%28"
+              },
+              {
+                "label": "Sepet Terk Orani Dususu",
+                "value": "%19"
+              }
+            ]
+          },
+          {
+            "title": "Dahili BT Yardim Masasi Otomasyonu",
+            "industry": "Teknoloji",
+            "challenge": "5.000 calisanli bir kurulusun BT destek biletleri parola sifirlama, VPN sorunlari ve yazilim erisim istekleri gibi tekrarlayan konularla dolup tasiyordu; bu durum yardim masasi kapasitesinin %60'ini tuketiyor ve 48 saatlik cozum birikmelerine neden oluyordu.",
+            "solution": "Active Directory, ServiceNow ve Okta ile entegre, parola sifirlama, erisim saglama ve yaygin sorun giderme prosedurlerini tam denetim izleriyle otomatiklestiren yapay zeka destekli bir BT yardim masasi botu uygulamaya alindi.",
+            "results": [
+              "Tum BT destek biletlerinin %65'i insan mudehalesi olmadan otomatiklestirildi",
+              "Otomatik istekler icin ortalama cozum suresi 48 saatten 3 dakikaya dusuruldu",
+              "Karmasik altyapi projeleri icin yillik 2.400 yardim masasi saati serbest birakildi"
+            ],
+            "stats": [
+              {
+                "label": "Otomatiklestirilen Biletler",
+                "value": "%65"
+              },
+              {
+                "label": "Yillik Tasarruf Edilen Saat",
+                "value": "2.400"
+              }
+            ]
+          }
+        ],
+        "aggregateStats": [
+          {
+            "label": "Aylik Yonetilen Konusma",
+            "value": "2M+"
+          },
+          {
+            "label": "Dagitilan Yapay Zeka Asistani",
+            "value": "85+"
+          },
+          {
+            "label": "Ortalama CSAT Puani",
+            "value": "4,6/5"
+          },
+          {
+            "label": "Destek Maliyeti Azalmasi",
+            "value": "%55"
+          }
+        ]
+      },
+      "faq": {
+        "headline": "Konusma Yapay Zekasi SSS",
+        "subtitle": "Sorulariniz Yanitlandi",
+        "description": "Teknik gereksinimlerden beklenen sonuclara ve zaman cizelgelerine kadar isletmeniz icin konusma yapay zekasi uygulamasi hakkinda bilmeniz gereken her sey.",
+        "categories": [
+          {
+            "category": "Teknoloji ve Yetenekler",
+            "items": [
+              {
+                "question": "Kural tabanli sohbet botu ile konusma yapay zekasi asistani arasindaki fark nedir?",
+                "answer": "Kural tabanli sohbet botlari onceden tanimlanmis karar agacllarini izler ve yalnizca onceden tahmin edilen sorulari yonetebilir. Konusma yapay zekasi asistanlarimiz dogal dili anlamak, beklenmeyen sorgulari yonetmek, cok adimli konusmalarda baglami korumak ve bilgi tabaninizda temellendirilmis insan benzeri yanitlar uretmek icin buyuk dil modellerini kullanir."
+              },
+              {
+                "question": "Yapay zeka asistani mevcut sistemlerimizdeki verilere erisebilir ve guncelleyebilir mi?",
+                "answer": "Evet. CRM'inize, biletleme sisteminize, veritabanlariniza ve ucuncu taraf API'lerine okuyup yazabilen arac cagrisi yeteneklerine sahip yapay zeka ajanlari olusturuyoruz. Her islem kimlik dogrulanir, kaydedilir ve hassas islemler icin yurutme oncesi kullanici onay gerektirebilir."
+              },
+              {
+                "question": "Yapay zekanin yanlis veya halusinasyon yanitlar uretmesini nasil onluyorsunuz?",
+                "answer": "Dogrulanmis bilgi tabanindaRAG temellendirmesi, insan gecisini tetikleyen guven esikleri, icerik filtreleme koruyuculari ve isaretlenmis konusmalarin insan incelemesiyle surekli izleme dahil birden fazla guvenlik katmani uyguluyoruz. Bu katmanli yaklasim genellikle %95'in uzerinde olgusal dogruluk elde eder."
+              }
+            ]
+          },
+          {
+            "category": "Uygulama ve Entegrasyon",
+            "items": [
+              {
+                "question": "Konusma yapay zekasi hangi kanallarda dagitilabilir?",
+                "answer": "Cozumlerimiz web sohbet widget'larini, mobil uygulamalari, WhatsApp, Facebook Messenger, Slack, Microsoft Teams, SMS, sesli IVR sistemlerini ve ozel API uc noktalarini destekler. Birlesik konusma gecmisiyle birden fazla kanal uzerinde ayni anda dagitim yapabiliriz."
+              },
+              {
+                "question": "Bir konusma yapay zekasi asistani olusturmak ve dagitmak ne kadar surer?",
+                "answer": "RAG yeteneklerine sahip odakli bir sohbet botu genellikle 6-10 hafta surer. Birden fazla sistem entegrasyonu, ses yetenekleri ve cok dil destegi iceren daha karmasik dagitimlar 3-5 ay arasindadir. Ilk 4 hafta icinde islevsel bir MVP teslim ediyoruz."
+              },
+              {
+                "question": "Yapay zeka bir soruyu yanitleleyamedijginde ne olur?",
+                "answer": "Zarif yukseltme yollari tasarliyoruz. Yapay zeka dusuk guven veya kapsam disi sorgular algladiginda, konusma gecmisi, algilanan niyet ve etkilesim sirasinda toplanan ilgili musteri verileri dahil tam baglamla insan temsilciye sorunsuz bir sekilde aktarir."
+              }
+            ]
+          },
+          {
+            "category": "Maliyetler ve Bakim",
+            "items": [
+              {
+                "question": "Konusma yapay zekasi sistemi calistirmanin surekli maliyetleri nelerdir?",
+                "answer": "Surekli maliyetler arasinda LLM API kullanimi (konusma basina genellikle 0,01-0,05$), bulut altyapi barindirma ve istege bagli destek hizmet sozlesmesi yer alir. Cogu musteri ilk yil icinde tamamen insan personeliyle calisan destek operasyonlarina kiyasla %40-60 net maliyet dususu gorur."
+              },
+              {
+                "question": "Yapay zekayi yeni urunler ve politika degisiklikleriyle nasil guncel tutuyorsunuz?",
+                "answer": "Icerik yonetim sistemleriniz, bilgi tabanlariniz ve belge depolarinizla senkronize olan otomatik bilgi alma hatlari olusturuyoruz. Bir urun sayfasini veya politika belgesini guncellediginizde, yapay zeka bilgi tabani otomatik olarak birkacsaat icinde yenilenir."
+              },
+              {
+                "question": "Dagitimdan sonra yapay zeka asistanini kendimiz yonetebilir ve guncelleyebilir miyiz?",
+                "answer": "Kesinlikle. Ekibinizin bilgi tabanlarini guncelleyebilecegi, konusma akislarini ayarlayabilecegi, isaretlenmis etkilesimleri inceleyebilecegi ve performans metriklerini izleyebilecegi bir yonetim panosu sagliyoruz. Ayrica ekibinizin tamamen yeterli hale gelmesini saglamak icin egitim oturumlari da sunuyoruz."
+              }
+            ]
+          }
+        ]
+      }
     }
   }
 }

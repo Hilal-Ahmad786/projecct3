@@ -9,7 +9,7 @@ import ContactHeroAnimation from '@/components/animations/ContactHeroAnimation';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function ContactHero() {
-  const { dir, isLoading } = useTranslations();
+  const { dir, isLoading, t: tGlobal } = useTranslations();
   const t = useSectionTranslations('contact.hero');
   const [mounted, setMounted] = useState(false);
 
@@ -186,7 +186,7 @@ export default function ContactHero() {
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
       >
         <div className="flex flex-col items-center gap-2 text-gray-400 hover:text-gray-600 transition-colors cursor-pointer">
-          <span className="text-xs font-medium uppercase tracking-wide">Scroll</span>
+          <span className="text-xs font-medium uppercase tracking-wide">{tGlobal('common.scroll')}</span>
           <motion.div
             animate={{ y: [0, 4, 0] }}
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}

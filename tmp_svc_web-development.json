@@ -1,0 +1,397 @@
+{
+  "serviceName": "Web Development",
+  "features": {
+    "headline": "Web Applications That Convert and Scale",
+    "subtitle": "Modern Full-Stack Web Engineering",
+    "description": "We build performant, accessible web applications using modern frameworks and best practices that deliver exceptional user experiences and measurable business results.",
+    "items": [
+      {
+        "icon": "globe",
+        "title": "Progressive Web Applications",
+        "description": "App-like web experiences with offline support, push notifications, and instant loading that work across all devices.",
+        "details": [
+          "Service worker implementation for offline-first functionality and background sync",
+          "App manifest configuration for home screen installation and splash screens",
+          "Lighthouse score optimization targeting 90+ across all performance categories"
+        ]
+      },
+      {
+        "icon": "rocket",
+        "title": "Server-Side Rendering & Static Generation",
+        "description": "Blazing-fast page loads with SSR and SSG strategies that boost SEO rankings and Core Web Vitals scores.",
+        "details": [
+          "Next.js ISR for dynamic content with CDN-level caching and instant invalidation",
+          "Streaming SSR for progressive page rendering and improved Time to First Byte",
+          "Automatic static optimization for pages that do not require server-side data"
+        ]
+      },
+      {
+        "icon": "palette",
+        "title": "UI/UX Design & Design Systems",
+        "description": "Cohesive design systems with reusable component libraries that ensure brand consistency and accelerate development.",
+        "details": [
+          "Figma-to-code pipeline with automated component generation and design token sync",
+          "Accessibility-first design meeting WCAG 2.2 AA standards across all interactions",
+          "Motion design and micro-interactions that enhance usability without compromising performance"
+        ]
+      },
+      {
+        "icon": "cart",
+        "title": "E-Commerce & Marketplace Development",
+        "description": "High-converting online stores with seamless checkout, inventory management, and payment processing.",
+        "details": [
+          "Headless commerce architecture with Shopify, Medusa, or custom backends",
+          "One-click checkout optimization with Stripe, PayPal, and Apple Pay integration",
+          "Product recommendation engines and dynamic pricing based on user behavior"
+        ]
+      },
+      {
+        "icon": "chart",
+        "title": "Analytics Dashboards & Data Visualization",
+        "description": "Interactive dashboards that transform complex datasets into actionable insights with real-time updates.",
+        "details": [
+          "Custom chart components with D3.js and Recharts for domain-specific visualizations",
+          "Real-time data streaming via WebSockets for live monitoring dashboards",
+          "Export functionality with PDF, CSV, and scheduled email report generation"
+        ]
+      },
+      {
+        "icon": "lock",
+        "title": "Authentication & User Management",
+        "description": "Secure, frictionless authentication flows with SSO, MFA, and role-based access control.",
+        "details": [
+          "OAuth 2.0 and SAML integration for enterprise SSO with major identity providers",
+          "Passwordless authentication via magic links, biometrics, and passkeys",
+          "Granular role-based and attribute-based access control for multi-tenant applications"
+        ]
+      },
+      {
+        "icon": "search",
+        "title": "SEO & Performance Optimization",
+        "description": "Technical SEO implementation and performance tuning that drives organic traffic growth and user engagement.",
+        "details": [
+          "Core Web Vitals optimization: LCP under 2.5s, FID under 100ms, CLS under 0.1",
+          "Structured data markup for rich search results and knowledge panel eligibility",
+          "Image optimization with next-gen formats, lazy loading, and responsive srcsets"
+        ]
+      },
+      {
+        "icon": "cog",
+        "title": "CMS Integration & Content Management",
+        "description": "Flexible content management with headless CMS platforms that empower marketing teams to publish independently.",
+        "details": [
+          "Headless CMS integration with Sanity, Contentful, or Strapi for structured content",
+          "Visual editing and live preview capabilities for non-technical content authors"
+        ]
+      }
+    ],
+    "stats": [
+      {
+        "label": "Web Apps Launched",
+        "value": "350+"
+      },
+      {
+        "label": "Avg. Performance Score",
+        "value": "94/100"
+      },
+      {
+        "label": "Combined Monthly Users",
+        "value": "28M+"
+      },
+      {
+        "label": "Conversion Rate Lift",
+        "value": "47%"
+      }
+    ]
+  },
+  "process": {
+    "headline": "End-to-End Web Development Process",
+    "subtitle": "From Concept to Launch and Beyond",
+    "description": "Our structured development process ensures every web project is delivered on time, on budget, and exceeds expectations.",
+    "steps": [
+      {
+        "title": "Discovery & UX Research",
+        "description": "Deep-dive into your users, market, and business goals to define a web strategy grounded in real data.",
+        "icon": "search",
+        "details": [
+          "User interviews, journey mapping, and competitive analysis to identify opportunities",
+          "Information architecture and content strategy development with card sorting exercises",
+          "Technical feasibility assessment and performance budget definition"
+        ]
+      },
+      {
+        "title": "Design & Prototyping",
+        "description": "High-fidelity designs and interactive prototypes validated through user testing before development begins.",
+        "icon": "palette",
+        "details": [
+          "Wireframing and rapid prototyping in Figma with stakeholder review cycles",
+          "Usability testing with target users to validate navigation and conversion flows",
+          "Design system creation with component specifications and interaction patterns"
+        ]
+      },
+      {
+        "title": "Frontend & Backend Development",
+        "description": "Parallel frontend and backend development with continuous integration and automated quality gates.",
+        "icon": "code",
+        "details": [
+          "Component-driven development with Storybook for isolated UI building and testing",
+          "API integration with type-safe contracts ensuring frontend-backend alignment",
+          "Automated testing at unit, integration, and E2E levels with 85%+ code coverage"
+        ]
+      },
+      {
+        "title": "QA, Performance & Accessibility Audit",
+        "description": "Comprehensive quality assurance covering cross-browser testing, performance validation, and accessibility compliance.",
+        "icon": "check",
+        "details": [
+          "Cross-browser and cross-device testing across 20+ browser-device combinations",
+          "Lighthouse CI with performance budgets enforced on every pull request",
+          "WCAG 2.2 AA compliance audit with screen reader testing and keyboard navigation validation"
+        ]
+      },
+      {
+        "title": "Launch & Growth Optimization",
+        "description": "Smooth production deployment followed by data-driven optimization to continuously improve key metrics.",
+        "icon": "rocket",
+        "details": [
+          "Zero-downtime deployment with CDN configuration, DNS cutover, and SSL provisioning",
+          "Analytics setup with conversion tracking, heatmaps, and session recording",
+          "A/B testing framework for ongoing CRO experiments on key landing pages"
+        ]
+      }
+    ]
+  },
+  "techStack": {
+    "headline": "Modern Web Technology Stack",
+    "subtitle": "Frameworks & Tools We Master",
+    "description": "We use the most productive and performant web technologies to deliver exceptional digital experiences.",
+    "categories": [
+      {
+        "category": "Frontend Frameworks",
+        "items": [
+          {
+            "name": "React",
+            "description": "Component-based UI development with hooks, context, and concurrent rendering"
+          },
+          {
+            "name": "NextJS",
+            "description": "Full-stack React framework with SSR, SSG, ISR, and API routes"
+          },
+          {
+            "name": "TypeScript",
+            "description": "End-to-end type safety reducing runtime errors and improving developer velocity"
+          },
+          {
+            "name": "TailwindCSS",
+            "description": "Utility-first CSS for rapid, consistent UI development with minimal bundle size"
+          }
+        ]
+      },
+      {
+        "category": "Backend & Data",
+        "items": [
+          {
+            "name": "NodeJS",
+            "description": "Event-driven server runtime for high-concurrency web applications"
+          },
+          {
+            "name": "PostgreSQL",
+            "description": "Primary relational database with full-text search and JSON support"
+          },
+          {
+            "name": "Redis",
+            "description": "Session management, caching, and real-time pub/sub messaging"
+          },
+          {
+            "name": "Stripe",
+            "description": "Payment processing with subscriptions, invoicing, and marketplace payouts"
+          }
+        ]
+      },
+      {
+        "category": "DevOps & Hosting",
+        "items": [
+          {
+            "name": "Docker",
+            "description": "Containerized development and deployment for environment consistency"
+          },
+          {
+            "name": "AWS",
+            "description": "CloudFront, S3, ECS, and RDS for scalable, globally distributed hosting"
+          },
+          {
+            "name": "GitHub",
+            "description": "Version control with Actions CI/CD, code review, and automated releases"
+          }
+        ]
+      }
+    ]
+  },
+  "portfolio": {
+    "headline": "Web Projects That Drive Business Growth",
+    "subtitle": "Selected Case Studies",
+    "description": "See how our web development expertise has helped companies increase revenue, improve engagement, and scale operations.",
+    "items": [
+      {
+        "title": "B2B SaaS Platform for Supply Chain Management",
+        "industry": "Logistics & Supply Chain",
+        "challenge": "A supply chain startup needed a web platform that could handle complex multi-step workflows, real-time tracking, and collaboration between shippers, carriers, and warehouses.",
+        "solution": "Built a Next.js application with real-time WebSocket updates, role-based dashboards, and a drag-and-drop workflow builder. Implemented Stripe billing with usage-based pricing.",
+        "results": [
+          "Scaled from 0 to 2,400 active business users within 8 months of launch",
+          "Achieved 94 Lighthouse performance score with sub-2-second page loads globally",
+          "Reduced customer onboarding time from 3 days to 4 hours with self-serve flows"
+        ],
+        "stats": [
+          {
+            "label": "Active Users",
+            "value": "2,400+"
+          },
+          {
+            "label": "Performance Score",
+            "value": "94/100"
+          }
+        ]
+      },
+      {
+        "title": "E-Commerce Platform Rebuild for Fashion Brand",
+        "industry": "Fashion & Retail",
+        "challenge": "A DTC fashion brand with $18M in annual online revenue was losing customers due to slow page loads (6.2s average), poor mobile UX, and a 74% cart abandonment rate.",
+        "solution": "Rebuilt the storefront on Next.js with headless Shopify, implemented one-click checkout, AI-powered size recommendations, and optimized all Core Web Vitals.",
+        "results": [
+          "Increased conversion rate from 1.8% to 3.4%, driving $6.2M in incremental revenue",
+          "Reduced page load time from 6.2s to 1.4s, improving bounce rate by 38%",
+          "Decreased cart abandonment from 74% to 51% with optimized checkout flow"
+        ],
+        "stats": [
+          {
+            "label": "Revenue Increase",
+            "value": "$6.2M"
+          },
+          {
+            "label": "Page Load Time",
+            "value": "1.4s"
+          }
+        ]
+      },
+      {
+        "title": "Patient Portal for Telehealth Platform",
+        "industry": "Healthcare",
+        "challenge": "A telehealth company needed a HIPAA-compliant patient portal supporting video consultations, prescription management, and medical record access across all devices.",
+        "solution": "Developed a PWA with WebRTC video calling, end-to-end encryption, and an accessible UI meeting WCAG 2.2 AA. Integrated with Epic EHR through FHIR APIs.",
+        "results": [
+          "Enabled 45,000 video consultations per month with 99.7% connection success rate",
+          "Achieved WCAG 2.2 AA compliance with a perfect accessibility audit score",
+          "Reduced patient no-show rate from 23% to 8% with automated reminders and easy rescheduling"
+        ],
+        "stats": [
+          {
+            "label": "Monthly Consultations",
+            "value": "45K"
+          },
+          {
+            "label": "No-Show Reduction",
+            "value": "65%"
+          }
+        ]
+      },
+      {
+        "title": "Real Estate Marketplace with Virtual Tours",
+        "industry": "Real Estate",
+        "challenge": "A real estate firm wanted a modern listing marketplace with 3D virtual tours, mortgage calculators, and neighborhood analytics to differentiate from Zillow and Redfin.",
+        "solution": "Built a Next.js platform with Three.js virtual tour integration, server-side rendered listing pages for SEO, and real-time market data dashboards with D3.js visualizations.",
+        "results": [
+          "Ranked on page 1 of Google for 340+ local real estate keywords within 6 months",
+          "Increased average session duration by 4.2x compared to the previous website",
+          "Generated 1,200 qualified leads per month through the platform"
+        ],
+        "stats": [
+          {
+            "label": "SEO Keywords (Page 1)",
+            "value": "340+"
+          },
+          {
+            "label": "Monthly Leads",
+            "value": "1,200"
+          }
+        ]
+      }
+    ],
+    "aggregateStats": [
+      {
+        "label": "Web Apps Delivered",
+        "value": "350+"
+      },
+      {
+        "label": "Combined Monthly Traffic",
+        "value": "28M+"
+      },
+      {
+        "label": "Avg. Performance Score",
+        "value": "94"
+      },
+      {
+        "label": "Client Satisfaction",
+        "value": "4.9/5"
+      }
+    ]
+  },
+  "faq": {
+    "headline": "Web Development FAQ",
+    "subtitle": "Common Questions",
+    "description": "Answers to frequently asked questions about our web development process, technology choices, and engagement models.",
+    "categories": [
+      {
+        "category": "Technology & Architecture",
+        "items": [
+          {
+            "question": "Why do you recommend Next.js for most web projects?",
+            "answer": "Next.js provides the best balance of developer experience, performance, and flexibility. It supports server-side rendering for SEO, static generation for speed, and client-side rendering for interactivity -- all in one framework. Its built-in image optimization, code splitting, and API routes reduce the need for additional tools. For projects that need a different approach, we also work with Remix, Astro, and custom React setups."
+          },
+          {
+            "question": "Can you work with our existing backend or CMS?",
+            "answer": "Absolutely. We frequently build frontends that connect to existing backends via REST or GraphQL APIs. We have deep integration experience with headless CMS platforms (Sanity, Contentful, Strapi), e-commerce backends (Shopify, Medusa), and custom APIs built in Node.js, Python, Java, or .NET."
+          },
+          {
+            "question": "How do you handle responsive design across devices?",
+            "answer": "We follow a mobile-first approach, designing and building for mobile screens first and then enhancing for tablets and desktops. We use CSS Grid, Flexbox, and container queries to create fluid layouts. Every project is tested across 20+ device-browser combinations including iOS Safari, Android Chrome, and desktop browsers."
+          }
+        ]
+      },
+      {
+        "category": "Performance & SEO",
+        "items": [
+          {
+            "question": "What Core Web Vitals scores can we expect?",
+            "answer": "We target and consistently achieve Lighthouse scores of 90+ across Performance, Accessibility, Best Practices, and SEO. Specifically: LCP under 2.5 seconds, FID under 100ms, and CLS under 0.1. We enforce performance budgets in our CI pipeline, so regressions are caught before deployment."
+          },
+          {
+            "question": "How do you approach SEO for web applications?",
+            "answer": "Our SEO strategy covers three pillars: technical SEO (SSR, structured data, sitemap generation, Core Web Vitals), on-page optimization (semantic HTML, heading hierarchy, meta tags), and crawlability (proper internal linking, canonical URLs, robots.txt configuration). For SPAs, we ensure all content is server-rendered for search engine indexing."
+          },
+          {
+            "question": "Can you help us migrate from an existing platform without losing SEO rankings?",
+            "answer": "Yes, platform migrations are one of our specialties. We create comprehensive redirect maps, preserve URL structures where possible, transfer all metadata, and monitor Search Console for crawl errors post-migration. We have completed over 40 migrations with zero ranking loss for high-priority keywords."
+          }
+        ]
+      },
+      {
+        "category": "Timeline & Budget",
+        "items": [
+          {
+            "question": "How long does a typical web development project take?",
+            "answer": "A marketing website or landing page typically takes 4-8 weeks. A full-featured web application with authentication, dashboards, and integrations takes 3-6 months. Complex platforms like marketplaces or SaaS products may take 6-12 months for the initial launch, followed by ongoing iteration. We provide detailed timelines after our discovery phase."
+          },
+          {
+            "question": "What does web development typically cost?",
+            "answer": "Marketing websites and corporate sites range from $25,000-$75,000. Web applications with custom functionality range from $75,000-$250,000. Enterprise SaaS platforms typically start at $200,000+. We offer fixed-price engagements for well-defined scopes and time-and-materials for evolving projects. All estimates are provided after a thorough discovery phase."
+          },
+          {
+            "question": "Do you provide ongoing maintenance and support?",
+            "answer": "Yes. We offer monthly retainer packages that include security updates, dependency maintenance, performance monitoring, bug fixes, and feature enhancements. Most clients invest 15-20% of the initial build cost annually in maintenance to keep their applications secure, fast, and up-to-date."
+          }
+        ]
+      }
+    ]
+  }
+}

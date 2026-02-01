@@ -1,0 +1,373 @@
+{
+  "serviceName": "E-Commerce Development",
+  "features": {
+    "headline": "Powerful E-Commerce Solutions",
+    "subtitle": "Build Stores That Convert",
+    "description": "We design and develop high-performance online stores that turn browsers into buyers, combining stunning design with seamless checkout experiences.",
+    "items": [
+      {
+        "icon": "cart",
+        "title": "Custom Storefront Design",
+        "description": "Beautifully crafted storefronts tailored to your brand identity and optimized for maximum conversions.",
+        "details": [
+          "Responsive product catalogs with advanced filtering and search",
+          "Brand-aligned visual design with conversion-focused layouts",
+          "A/B tested landing pages for seasonal campaigns"
+        ]
+      },
+      {
+        "icon": "lock",
+        "title": "Secure Payment Integration",
+        "description": "PCI-compliant payment processing with support for multiple gateways and global currencies.",
+        "details": [
+          "Stripe, PayPal, and regional payment gateway integration",
+          "Multi-currency support with automatic exchange rate updates",
+          "Fraud detection and chargeback prevention systems"
+        ]
+      },
+      {
+        "icon": "database",
+        "title": "Inventory Management",
+        "description": "Real-time inventory tracking across multiple warehouses and sales channels with automated restocking alerts.",
+        "details": [
+          "Multi-warehouse stock synchronization in real time",
+          "Automated low-stock alerts and purchase order generation",
+          "Variant and bundle management with SKU tracking"
+        ]
+      },
+      {
+        "icon": "globe",
+        "title": "Multi-Channel Selling",
+        "description": "Sell seamlessly across your website, marketplaces, and social media from a single unified dashboard.",
+        "details": [
+          "Amazon, eBay, and Walmart marketplace integrations",
+          "Social commerce on Instagram, Facebook, and TikTok"
+        ]
+      },
+      {
+        "icon": "chart",
+        "title": "Analytics & Reporting",
+        "description": "Comprehensive sales analytics with customer behavior tracking and revenue forecasting dashboards.",
+        "details": [
+          "Real-time revenue, AOV, and conversion rate dashboards",
+          "Customer lifetime value and cohort analysis",
+          "Funnel drop-off analysis with actionable recommendations"
+        ]
+      },
+      {
+        "icon": "users",
+        "title": "Customer Account Portals",
+        "description": "Self-service customer portals with order history, wishlists, loyalty programs, and subscription management.",
+        "details": [
+          "Order tracking with real-time shipping updates",
+          "Wishlist, saved carts, and product comparison features",
+          "Loyalty points and referral reward systems"
+        ]
+      },
+      {
+        "icon": "lightning",
+        "title": "Performance Optimization",
+        "description": "Blazing-fast page loads and smooth interactions to reduce bounce rates and boost search rankings.",
+        "details": [
+          "Image optimization with lazy loading and CDN delivery",
+          "Server-side rendering for instant product page loads"
+        ]
+      },
+      {
+        "icon": "search",
+        "title": "SEO & Product Discovery",
+        "description": "Search engine optimized product pages with intelligent site search and personalized recommendations.",
+        "details": [
+          "Schema markup for rich snippets in search results",
+          "AI-powered on-site search with typo tolerance",
+          "Personalized product recommendations based on browsing history"
+        ]
+      }
+    ],
+    "stats": [
+      {
+        "label": "Average Conversion Lift",
+        "value": "67%"
+      },
+      {
+        "label": "Stores Launched",
+        "value": "180+"
+      },
+      {
+        "label": "Total GMV Processed",
+        "value": "$50M+"
+      },
+      {
+        "label": "Avg Page Load Time",
+        "value": "1.2s"
+      }
+    ]
+  },
+  "process": {
+    "headline": "Our E-Commerce Development Process",
+    "subtitle": "From Concept to Conversions",
+    "description": "A proven methodology that transforms your product catalog into a revenue-generating machine, carefully optimized at every stage.",
+    "steps": [
+      {
+        "title": "Market & Competitor Analysis",
+        "description": "We research your industry, competitors, and target audience to define a winning e-commerce strategy.",
+        "icon": "search",
+        "details": [
+          "Competitive landscape audit with pricing and UX benchmarking",
+          "Target customer persona development and journey mapping",
+          "Platform and technology stack recommendation"
+        ]
+      },
+      {
+        "title": "UX Design & Prototyping",
+        "description": "Conversion-focused wireframes and high-fidelity mockups tested with real users before development begins.",
+        "icon": "palette",
+        "details": [
+          "Mobile-first wireframes for all key shopping flows",
+          "Interactive prototypes with user testing sessions",
+          "Design system creation for consistent brand presentation"
+        ]
+      },
+      {
+        "title": "Storefront Development",
+        "description": "Full-stack build of your store with custom features, third-party integrations, and performance optimization.",
+        "icon": "code",
+        "details": [
+          "Component-based frontend with headless CMS integration",
+          "Payment gateway, shipping, and tax engine setup"
+        ]
+      },
+      {
+        "title": "Testing & Quality Assurance",
+        "description": "Rigorous testing of the entire shopping experience from browsing to checkout across all devices.",
+        "icon": "check",
+        "details": [
+          "Cross-browser and cross-device checkout flow testing",
+          "Load testing to handle traffic spikes during sales events",
+          "Security audit and PCI compliance verification"
+        ]
+      },
+      {
+        "title": "Launch & Growth Optimization",
+        "description": "Strategic launch followed by continuous conversion rate optimization and feature enhancements.",
+        "icon": "rocket",
+        "details": [
+          "Phased rollout with real-time monitoring dashboards",
+          "Post-launch A/B testing on product pages and checkout",
+          "Monthly performance reviews with growth recommendations"
+        ]
+      }
+    ]
+  },
+  "techStack": {
+    "headline": "E-Commerce Technology Stack",
+    "subtitle": "Built on Proven Platforms",
+    "description": "We leverage industry-leading e-commerce platforms and tools to build scalable, secure, and feature-rich online stores.",
+    "categories": [
+      {
+        "category": "Frontend & Frameworks",
+        "items": [
+          {
+            "name": "NextJS",
+            "description": "Server-rendered React storefronts for lightning-fast page loads and SEO."
+          },
+          {
+            "name": "React",
+            "description": "Dynamic, component-based UI for interactive product browsing experiences."
+          },
+          {
+            "name": "TailwindCSS",
+            "description": "Utility-first CSS for rapidly building custom, responsive store designs."
+          },
+          {
+            "name": "TypeScript",
+            "description": "Type-safe codebase ensuring reliability across complex commerce logic."
+          }
+        ]
+      },
+      {
+        "category": "Commerce & Payments",
+        "items": [
+          {
+            "name": "Shopify",
+            "description": "Enterprise-grade commerce platform with extensive app ecosystem."
+          },
+          {
+            "name": "Stripe",
+            "description": "Flexible payment processing with support for subscriptions and global payments."
+          },
+          {
+            "name": "WordPress",
+            "description": "WooCommerce-powered stores for content-rich commerce experiences."
+          }
+        ]
+      },
+      {
+        "category": "Backend & Infrastructure",
+        "items": [
+          {
+            "name": "NodeJS",
+            "description": "High-performance backend for real-time inventory and order processing."
+          },
+          {
+            "name": "PostgreSQL",
+            "description": "Relational database for complex product catalogs and order management."
+          },
+          {
+            "name": "Redis",
+            "description": "In-memory caching for fast cart operations and session management."
+          },
+          {
+            "name": "AWS",
+            "description": "Scalable cloud hosting with auto-scaling for peak traffic periods."
+          }
+        ]
+      }
+    ]
+  },
+  "portfolio": {
+    "headline": "E-Commerce Success Stories",
+    "subtitle": "Stores That Deliver Results",
+    "description": "See how we have helped brands across industries launch and scale profitable online stores.",
+    "items": [
+      {
+        "title": "Premium Fashion Marketplace",
+        "industry": "Fashion & Apparel",
+        "challenge": "A luxury fashion brand needed a multi-vendor marketplace that maintained their premium brand experience while scaling to hundreds of independent sellers.",
+        "solution": "We built a headless commerce platform on NextJS with Stripe Connect for seller payouts, advanced size filtering, and a virtual try-on integration.",
+        "results": [
+          "Achieved $2.4M in GMV within the first six months",
+          "Cart abandonment rate reduced from 78% to 34%",
+          "Onboarded 120 independent sellers in the first quarter"
+        ],
+        "stats": [
+          {
+            "label": "Revenue Growth",
+            "value": "340%"
+          },
+          {
+            "label": "Conversion Rate",
+            "value": "4.8%"
+          }
+        ]
+      },
+      {
+        "title": "Organic Grocery Delivery Platform",
+        "industry": "Food & Beverage",
+        "challenge": "A regional organic grocery chain wanted to launch same-day delivery with subscription boxes and real-time inventory synced across 12 store locations.",
+        "solution": "We developed a custom e-commerce platform with real-time inventory sync, route-optimized delivery scheduling, and a subscription management engine.",
+        "results": [
+          "Processed 8,000+ orders per week within three months",
+          "Subscription box retention rate of 82% after six months"
+        ],
+        "stats": [
+          {
+            "label": "Weekly Orders",
+            "value": "8,000+"
+          },
+          {
+            "label": "Retention Rate",
+            "value": "82%"
+          }
+        ]
+      },
+      {
+        "title": "B2B Industrial Parts Store",
+        "industry": "Manufacturing & Industrial",
+        "challenge": "A wholesale distributor needed a B2B portal with tiered pricing, bulk ordering, quote requests, and integration with their legacy ERP system.",
+        "solution": "We built a custom B2B storefront with role-based pricing, RFQ workflows, net-30 payment terms, and a bi-directional ERP sync using custom APIs.",
+        "results": [
+          "Online orders increased from 5% to 62% of total revenue",
+          "Average order processing time reduced from 48 hours to 15 minutes",
+          "Customer support tickets decreased by 45% through self-service"
+        ],
+        "stats": [
+          {
+            "label": "Online Revenue Share",
+            "value": "62%"
+          },
+          {
+            "label": "Processing Time",
+            "value": "-97%"
+          }
+        ]
+      }
+    ],
+    "aggregateStats": [
+      {
+        "label": "Stores Launched",
+        "value": "180+"
+      },
+      {
+        "label": "Combined GMV",
+        "value": "$50M+"
+      },
+      {
+        "label": "Average ROI",
+        "value": "420%"
+      },
+      {
+        "label": "Client Satisfaction",
+        "value": "97%"
+      }
+    ]
+  },
+  "faq": {
+    "headline": "E-Commerce FAQ",
+    "subtitle": "Common Questions Answered",
+    "description": "Everything you need to know about our e-commerce development services and how we can help grow your online business.",
+    "categories": [
+      {
+        "category": "Platform & Technology",
+        "items": [
+          {
+            "question": "Which e-commerce platform is best for my business?",
+            "answer": "The ideal platform depends on your scale, budget, and requirements. We typically recommend Shopify for fast launches, WooCommerce for content-heavy stores, and custom headless solutions for high-traffic brands needing maximum flexibility and performance."
+          },
+          {
+            "question": "Can you migrate my existing store to a new platform?",
+            "answer": "Yes, we handle full-service migrations including product data, customer accounts, order history, and SEO redirects. We ensure zero downtime during the transition and verify all data integrity post-migration."
+          },
+          {
+            "question": "Do you support headless commerce architectures?",
+            "answer": "Absolutely. We specialize in headless builds using NextJS as the frontend with Shopify, Medusa, or custom backends. This gives you maximum control over the shopping experience with best-in-class performance."
+          }
+        ]
+      },
+      {
+        "category": "Payments & Security",
+        "items": [
+          {
+            "question": "What payment methods can you integrate?",
+            "answer": "We integrate all major payment processors including Stripe, PayPal, Square, and Authorize.net. We also support Apple Pay, Google Pay, buy-now-pay-later services like Klarna, and cryptocurrency payments."
+          },
+          {
+            "question": "How do you ensure PCI compliance?",
+            "answer": "We use tokenized payment processing through certified gateways, never storing card data on your servers. We implement SSL encryption, secure authentication, and conduct regular security audits to maintain full PCI DSS compliance."
+          },
+          {
+            "question": "Can you set up international payments and multi-currency?",
+            "answer": "Yes, we configure multi-currency storefronts with automatic exchange rate updates, localized pricing, and region-specific payment methods to maximize global conversion rates."
+          }
+        ]
+      },
+      {
+        "category": "Growth & Optimization",
+        "items": [
+          {
+            "question": "How do you optimize conversion rates?",
+            "answer": "We use data-driven A/B testing, heatmap analysis, and funnel optimization to continuously improve your store. Common wins include streamlined checkout flows, better product photography layouts, and personalized recommendations."
+          },
+          {
+            "question": "Do you offer ongoing support after launch?",
+            "answer": "Yes, we provide monthly retainer plans that include performance monitoring, bug fixes, feature enhancements, conversion optimization, and regular security updates to keep your store running smoothly."
+          },
+          {
+            "question": "Can you integrate with my existing ERP or CRM?",
+            "answer": "We build custom integrations with popular ERPs like SAP, NetSuite, and Odoo, as well as CRMs like Salesforce and HubSpot. We ensure bi-directional data sync for orders, inventory, and customer records."
+          }
+        ]
+      }
+    ]
+  }
+}

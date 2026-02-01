@@ -1,0 +1,397 @@
+{
+  "serviceName": "Mobile Development",
+  "features": {
+    "headline": "Native-Quality Mobile Apps, Delivered Fast",
+    "subtitle": "Cross-Platform & Native Mobile Engineering",
+    "description": "We build high-performance mobile applications that users love, leveraging cross-platform efficiency without sacrificing native feel, speed, or platform-specific capabilities.",
+    "items": [
+      {
+        "icon": "mobile",
+        "title": "Cross-Platform Development with Flutter",
+        "description": "Single codebase apps for iOS and Android with pixel-perfect UI, native performance, and 95%+ code sharing.",
+        "details": [
+          "Custom widget development for brand-specific design systems and interactions",
+          "Platform channel integration for accessing native APIs and device capabilities",
+          "Hot reload development workflow reducing iteration cycles by 10x versus native"
+        ]
+      },
+      {
+        "icon": "lightning",
+        "title": "Native iOS & Android Development",
+        "description": "Fully native apps for maximum performance, platform integration, and access to the latest OS features.",
+        "details": [
+          "Swift and SwiftUI for iOS with modern concurrency and Combine reactive patterns",
+          "Kotlin with Jetpack Compose for Android with Material Design 3 compliance",
+          "Platform-specific optimizations for camera, GPU, ARKit, and ML Kit features"
+        ]
+      },
+      {
+        "icon": "cloud",
+        "title": "Offline-First Architecture",
+        "description": "Apps that work flawlessly without internet, syncing seamlessly when connectivity is restored.",
+        "details": [
+          "Local database implementation with SQLite and Hive for structured offline storage",
+          "Conflict resolution strategies for multi-device sync with eventual consistency",
+          "Background sync with intelligent retry and bandwidth-aware data transfer"
+        ]
+      },
+      {
+        "icon": "lock",
+        "title": "Mobile Security & Compliance",
+        "description": "Enterprise-grade security with biometric authentication, certificate pinning, and encrypted local storage.",
+        "details": [
+          "Biometric authentication with Face ID, Touch ID, and Android BiometricPrompt",
+          "SSL certificate pinning and runtime integrity checks to prevent MITM attacks",
+          "Encrypted keychain and keystore storage for sensitive credentials and tokens"
+        ]
+      },
+      {
+        "icon": "chart",
+        "title": "Analytics & User Engagement",
+        "description": "In-app analytics, push notifications, and engagement tools that drive retention and lifetime value.",
+        "details": [
+          "Event tracking with Firebase Analytics, Mixpanel, or Amplitude for behavioral insights",
+          "Push notification orchestration with segmentation, A/B testing, and deep linking",
+          "In-app messaging and feature announcement overlays for user onboarding"
+        ]
+      },
+      {
+        "icon": "cog",
+        "title": "App Store Optimization & Deployment",
+        "description": "Streamlined release management with automated builds, beta testing, and app store listing optimization.",
+        "details": [
+          "CI/CD pipelines with Fastlane for automated signing, building, and store submission",
+          "TestFlight and Google Play internal testing tracks for structured beta programs",
+          "ASO with keyword optimization, screenshot design, and A/B tested descriptions"
+        ]
+      },
+      {
+        "icon": "globe",
+        "title": "Backend & API Integration",
+        "description": "Seamless integration with REST APIs, GraphQL, WebSockets, and real-time databases for connected experiences.",
+        "details": [
+          "Typed API client generation from OpenAPI specs for compile-time safety",
+          "Real-time features with WebSocket and Firebase Realtime Database integration",
+          "Efficient data loading with pagination, caching, and optimistic UI updates"
+        ]
+      },
+      {
+        "icon": "users",
+        "title": "Accessibility & Internationalization",
+        "description": "Inclusive apps that reach global audiences with full accessibility support and multi-language capabilities.",
+        "details": [
+          "VoiceOver and TalkBack optimization with semantic tree customization",
+          "RTL layout support and locale-aware formatting for dates, numbers, and currencies"
+        ]
+      }
+    ],
+    "stats": [
+      {
+        "label": "Apps Launched",
+        "value": "180+"
+      },
+      {
+        "label": "Combined Downloads",
+        "value": "12M+"
+      },
+      {
+        "label": "Avg. Store Rating",
+        "value": "4.8"
+      },
+      {
+        "label": "Crash-Free Rate",
+        "value": "99.7%"
+      }
+    ]
+  },
+  "process": {
+    "headline": "Mobile Development Process Built for Quality",
+    "subtitle": "From Concept to App Store Success",
+    "description": "Our mobile development process ensures every app is fast, stable, and delightful to use from day one.",
+    "steps": [
+      {
+        "title": "Product Strategy & Platform Assessment",
+        "description": "Define your mobile strategy including platform choice, feature prioritization, and go-to-market timeline.",
+        "icon": "search",
+        "details": [
+          "User persona development and competitive app analysis across both platforms",
+          "Platform recommendation based on target audience, features, and budget constraints",
+          "MVP feature scoping with MoSCoW prioritization for phased delivery"
+        ]
+      },
+      {
+        "title": "UI/UX Design for Mobile",
+        "description": "Platform-native design that follows iOS Human Interface Guidelines and Material Design principles.",
+        "icon": "palette",
+        "details": [
+          "Touch-optimized interfaces with gesture navigation and haptic feedback design",
+          "Platform-adaptive components that feel native on both iOS and Android",
+          "Interactive prototypes tested with real users on physical devices"
+        ]
+      },
+      {
+        "title": "Agile Development & Iteration",
+        "description": "Two-week sprints with regular beta releases, allowing stakeholders to test on real devices throughout development.",
+        "icon": "code",
+        "details": [
+          "Feature branching with automated builds distributed to testers via TestFlight and Firebase App Distribution",
+          "Widget and integration testing with 80%+ code coverage requirements",
+          "Weekly stakeholder demos with real device testing and feedback integration"
+        ]
+      },
+      {
+        "title": "Quality Assurance & Device Testing",
+        "description": "Rigorous testing across a matrix of devices, OS versions, and network conditions to ensure reliability.",
+        "icon": "check",
+        "details": [
+          "Manual testing on 30+ physical devices covering top 95% of market share",
+          "Automated UI testing with integration and end-to-end test suites",
+          "Performance profiling for memory leaks, battery drain, and startup time optimization"
+        ]
+      },
+      {
+        "title": "Launch & Post-Launch Optimization",
+        "description": "Managed app store submission with ongoing monitoring, crash reporting, and iterative improvements.",
+        "icon": "rocket",
+        "details": [
+          "App store submission management including review guideline compliance checks",
+          "Crashlytics and performance monitoring setup with automated alerting",
+          "Post-launch analytics review with data-driven feature roadmap planning"
+        ]
+      }
+    ]
+  },
+  "techStack": {
+    "headline": "Mobile Technology Stack",
+    "subtitle": "Frameworks & Tools We Use",
+    "description": "We choose technologies that deliver the best user experience while maintaining development efficiency and long-term maintainability.",
+    "categories": [
+      {
+        "category": "Mobile Frameworks",
+        "items": [
+          {
+            "name": "Flutter",
+            "description": "Cross-platform framework with custom rendering engine for consistent 60fps UI"
+          },
+          {
+            "name": "Swift",
+            "description": "Native iOS development with SwiftUI for modern, declarative interfaces"
+          },
+          {
+            "name": "Kotlin",
+            "description": "Native Android development with Jetpack Compose and Coroutines"
+          },
+          {
+            "name": "React",
+            "description": "React Native for projects requiring deep JavaScript ecosystem integration"
+          }
+        ]
+      },
+      {
+        "category": "Backend & Services",
+        "items": [
+          {
+            "name": "NodeJS",
+            "description": "Real-time API servers with WebSocket support for chat and live features"
+          },
+          {
+            "name": "FastAPI",
+            "description": "High-performance Python APIs for ML model serving and data processing"
+          },
+          {
+            "name": "PostgreSQL",
+            "description": "Primary data storage with row-level security for multi-tenant apps"
+          },
+          {
+            "name": "Redis",
+            "description": "Real-time caching, session management, and pub/sub for live features"
+          }
+        ]
+      },
+      {
+        "category": "DevOps & Distribution",
+        "items": [
+          {
+            "name": "GitHub",
+            "description": "Version control with Actions for automated builds and code review"
+          },
+          {
+            "name": "Google Cloud",
+            "description": "Firebase suite for authentication, analytics, crashlytics, and push notifications"
+          },
+          {
+            "name": "Docker",
+            "description": "Containerized backend services for consistent staging and production environments"
+          }
+        ]
+      }
+    ]
+  },
+  "portfolio": {
+    "headline": "Mobile Apps Users Love to Use",
+    "subtitle": "Selected Case Studies",
+    "description": "Explore how our mobile development expertise has helped businesses engage users, streamline operations, and generate revenue.",
+    "items": [
+      {
+        "title": "On-Demand Delivery App for Urban Grocery Chain",
+        "industry": "Food & Grocery",
+        "challenge": "A regional grocery chain with 45 locations needed a mobile ordering app to compete with Instacart and DoorDash, requiring real-time inventory, delivery tracking, and loyalty integration.",
+        "solution": "Built a Flutter app with real-time order tracking via WebSockets, barcode scanning for in-store pickup, and a loyalty points system integrated with their existing POS.",
+        "results": [
+          "Achieved 85,000 downloads in the first 3 months with a 4.8-star average rating",
+          "Drove 23% of total revenue through mobile orders within 6 months",
+          "Increased customer repeat purchase rate by 34% through personalized push offers"
+        ],
+        "stats": [
+          {
+            "label": "Downloads (3 months)",
+            "value": "85K"
+          },
+          {
+            "label": "Mobile Revenue Share",
+            "value": "23%"
+          }
+        ]
+      },
+      {
+        "title": "Field Service Management App for Utilities",
+        "industry": "Energy & Utilities",
+        "challenge": "A utility company with 800 field technicians relied on paper forms and phone calls, causing scheduling inefficiencies, missed appointments, and a 6-day average ticket resolution time.",
+        "solution": "Developed an offline-first Flutter app with GPS routing, digital work orders, photo documentation, and real-time dispatch integration syncing with their SAP backend.",
+        "results": [
+          "Reduced average ticket resolution time from 6 days to 1.8 days",
+          "Eliminated paper-based workflows, saving $420K annually in printing and processing",
+          "Improved first-time fix rate from 62% to 89% with mobile access to equipment history"
+        ],
+        "stats": [
+          {
+            "label": "Resolution Time",
+            "value": "70% Faster"
+          },
+          {
+            "label": "Annual Savings",
+            "value": "$420K"
+          }
+        ]
+      },
+      {
+        "title": "Fitness & Wellness App with Wearable Integration",
+        "industry": "Health & Fitness",
+        "challenge": "A fitness startup needed a mobile app that integrated with Apple Watch, Fitbit, and Garmin to deliver personalized workout plans, nutrition tracking, and social challenges.",
+        "solution": "Built native iOS (Swift) and Android (Kotlin) apps with HealthKit and Google Fit integration, real-time leaderboards, and an ML-powered workout recommendation engine.",
+        "results": [
+          "Reached 200,000 active users with 68% monthly retention rate",
+          "Maintained a 4.9-star rating on App Store and 4.7 on Google Play",
+          "Users completed 3.2x more workouts per week compared to the previous app version"
+        ],
+        "stats": [
+          {
+            "label": "Active Users",
+            "value": "200K"
+          },
+          {
+            "label": "Monthly Retention",
+            "value": "68%"
+          }
+        ]
+      },
+      {
+        "title": "Banking App for Digital-First Credit Union",
+        "industry": "Financial Services",
+        "challenge": "A credit union serving 120,000 members needed a modern mobile banking app with check deposit, P2P transfers, budgeting tools, and biometric login to compete with neobanks.",
+        "solution": "Developed a Flutter app with biometric authentication, real-time transaction notifications, Plaid integration for account aggregation, and an AI-powered spending insights dashboard.",
+        "results": [
+          "Achieved 78% member adoption within 12 months, up from 31% on the previous app",
+          "Reduced branch visits by 45% as members shifted to self-service mobile banking",
+          "Received \"Best Credit Union App\" recognition from Finovate in 2024"
+        ],
+        "stats": [
+          {
+            "label": "Member Adoption",
+            "value": "78%"
+          },
+          {
+            "label": "Branch Visit Reduction",
+            "value": "45%"
+          }
+        ]
+      }
+    ],
+    "aggregateStats": [
+      {
+        "label": "Apps Delivered",
+        "value": "180+"
+      },
+      {
+        "label": "Total Downloads",
+        "value": "12M+"
+      },
+      {
+        "label": "Average Rating",
+        "value": "4.8/5"
+      },
+      {
+        "label": "Platforms Supported",
+        "value": "iOS & Android"
+      }
+    ]
+  },
+  "faq": {
+    "headline": "Mobile Development FAQ",
+    "subtitle": "Common Questions",
+    "description": "Answers to frequently asked questions about our mobile app development services, technology choices, and delivery process.",
+    "categories": [
+      {
+        "category": "Platform & Technology",
+        "items": [
+          {
+            "question": "Should we build a native or cross-platform app?",
+            "answer": "For most business applications, we recommend Flutter for cross-platform development. It delivers native-level performance with 95%+ code sharing between iOS and Android, cutting development time and cost by 40-50%. We recommend native development (Swift/Kotlin) when your app requires deep platform integration like AR, advanced camera features, or Bluetooth hardware communication where platform-specific APIs are essential."
+          },
+          {
+            "question": "Can you convert our existing website into a mobile app?",
+            "answer": "We can, but we recommend against simply wrapping a website in a WebView. Instead, we build a purpose-designed mobile experience that leverages native capabilities like push notifications, offline access, biometrics, and camera. We reuse your existing backend APIs and business logic while creating a mobile-optimized UI. This approach typically takes 60-70% of the time of building from scratch."
+          },
+          {
+            "question": "How do you handle app updates and new OS versions?",
+            "answer": "We monitor Apple and Google developer betas starting from their annual conferences (WWDC and Google I/O) and proactively identify breaking changes or new opportunities. Our maintenance plans include OS compatibility updates within 2 weeks of major releases, ensuring your app works perfectly on day one of any new iOS or Android version."
+          }
+        ]
+      },
+      {
+        "category": "Development & Testing",
+        "items": [
+          {
+            "question": "How long does it take to build a mobile app?",
+            "answer": "A focused MVP with core features typically takes 3-4 months. A feature-rich app with authentication, payments, real-time features, and offline support takes 5-8 months. Complex enterprise apps with integrations to multiple backend systems may take 8-12 months. We deliver working builds every 2 weeks so you can test and provide feedback throughout development."
+          },
+          {
+            "question": "How do you test on different devices?",
+            "answer": "We maintain a device lab with 30+ physical devices covering the top 95% of market share for both iOS and Android. We test across multiple OS versions (current and two previous major versions), screen sizes, and network conditions. We also use cloud-based device farms for extended compatibility testing across hundreds of device-OS combinations."
+          },
+          {
+            "question": "What about app store review and approval?",
+            "answer": "We manage the entire submission process including app store listing creation, screenshot design, metadata optimization, and compliance with Apple App Store Review Guidelines and Google Play policies. Our first-submission approval rate is 94%, and we handle any rejection responses promptly. Typical review times are 24-48 hours for both stores."
+          }
+        ]
+      },
+      {
+        "category": "Cost & Maintenance",
+        "items": [
+          {
+            "question": "What does mobile app development cost?",
+            "answer": "A cross-platform MVP starts at $50,000-$100,000. A full-featured app with backend development ranges from $100,000-$300,000. Enterprise apps with complex integrations, compliance requirements, and advanced features typically range from $250,000-$600,000+. Cross-platform development with Flutter typically saves 40-50% compared to building separate native apps."
+          },
+          {
+            "question": "What ongoing costs should we budget for?",
+            "answer": "Plan for Apple Developer ($99/year) and Google Play ($25 one-time) accounts, hosting costs for your backend ($200-$2,000/month depending on scale), push notification services, analytics tools, and maintenance development. Most clients budget 15-20% of the initial build cost annually for updates, OS compatibility, and feature improvements."
+          },
+          {
+            "question": "Do you offer post-launch support?",
+            "answer": "Yes. Our mobile support plans include crash monitoring and bug fixes, OS compatibility updates, performance optimization, security patches, and feature development hours. We offer three tiers: Essential (monitoring and critical fixes), Growth (includes monthly feature development), and Enterprise (dedicated mobile team with SLA guarantees)."
+          }
+        ]
+      }
+    ]
+  }
+}
