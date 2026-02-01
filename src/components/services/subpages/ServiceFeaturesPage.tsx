@@ -115,9 +115,8 @@ export default function ServiceFeaturesPage({
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-50px' }}
                 transition={{ duration: 0.5, delay: index * 0.08 }}
-                className={`group relative p-8 bg-white rounded-2xl border border-gray-100 ${colors.hoverBorder} hover:shadow-xl transition-all duration-500 ${
-                  isFeatured ? 'lg:col-span-2 lg:flex lg:items-start lg:gap-8' : ''
-                }`}
+                className={`group relative p-8 bg-white rounded-2xl border border-gray-100 ${colors.hoverBorder} hover:shadow-xl transition-all duration-500 ${isFeatured ? 'lg:col-span-2 lg:flex lg:items-start lg:gap-8' : ''
+                  }`}
               >
                 {/* Icon */}
                 <div className={`w-12 h-12 rounded-xl ${colors.bgLight} flex items-center justify-center flex-shrink-0 group-hover:${colors.bg} group-hover:text-white transition-all duration-300 ${colors.text} mb-4 lg:mb-0`}>
@@ -133,7 +132,7 @@ export default function ServiceFeaturesPage({
                   </p>
 
                   {/* Detail list - reveals on hover */}
-                  {feature.details.length > 0 && (
+                  {feature.details?.length > 0 && (
                     <div className="max-h-0 overflow-hidden group-hover:max-h-96 transition-all duration-500 ease-in-out">
                       <ul className="space-y-2 pt-4 border-t border-gray-100">
                         {feature.details.map((detail, i) => (

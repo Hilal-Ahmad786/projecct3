@@ -6441,6 +6441,1481 @@
           }
         ]
       }
+    },
+    "computer-vision": {
+      "serviceName": "Bilgisayarlı Görü Hizmetleri",
+      "features": {
+        "headline": "Uygulamalarınızı Görme Yeteneğiyle Güçlendirin",
+        "description": "Görsel bilgileri algılayan, anlayan ve buna göre hareket eden sistemlerle iş süreçlerinizi otomatikleştirin.",
+        "items": [
+          {
+            "icon": "eye",
+            "title": "Nesne Tespiti ve Tanıma",
+            "description": "Görüntülerdeki ve videolardaki nesneleri yüksek doğrulukla tespit edin ve sınıflandırın.",
+            "details": [
+              "YOLO, Mask R-CNN ve Faster R-CNN ile hassas tespit",
+              "Özel veri setleri ile model eğitimi",
+              "Gerçek zamanlı video işleme entegrasyonu"
+            ]
+          },
+          {
+            "icon": "scan",
+            "title": "Görüntü Segmentasyonu",
+            "description": "Tıbbi görüntüleme ve endüstriyel denetim için hassas piksel düzeyinde analiz.",
+            "details": [
+              "Semantik ve Instance segmentasyon",
+              "Medikal görüntülerde tümör/anomali tespiti",
+              "Uydu görüntüsü analizi"
+            ]
+          },
+          {
+            "icon": "face",
+            "title": "Yüz Tanıma ve Analiz",
+            "description": "Güvenli geçiş ve kimlik doğrulama için KVKK uyumlu yüz tanıma sistemleri.",
+            "details": [
+              "Canlılık (Liveness) tespiti",
+              "Duygu analizi ve demografik tahmin",
+              "Maskeli yüz tanıma"
+            ]
+          },
+          {
+            "icon": "video",
+            "title": "Video Analitiği",
+            "description": "Güvenlik ve operasyonel verimlilik için gerçek zamanlı video akışı analizi.",
+            "details": [
+              "Kalabalık yönetimi ve kişi sayma",
+              "Şüpheli davranış tespiti",
+              "Trafik analizi ve plaka okuma (ANPR)"
+            ]
+          },
+          {
+            "icon": "document",
+            "title": "OCR ve Belge İşleme",
+            "description": "Basılı ve el yazısı metinleri dijital verilere dönüştürün.",
+            "details": [
+              "Fatura ve makbuz ayrıştırma",
+              "Kimlik ve pasaport okuma",
+              "Tablo ve form verisi çıkarma"
+            ]
+          },
+          {
+            "icon": "sparkles",
+            "title": "Üretken Görsel Yapay Zeka",
+            "description": "Yaratıcı projeler için yapay zeka destekli görüntü oluşturma ve düzenleme.",
+            "details": [
+              "Stable Diffusion ile görsel üretimi",
+              "Görüntü iyileştirme ve restorasyon",
+              "Metinden videoya dönüştürme"
+            ]
+          }
+        ]
+      },
+      "process": {
+        "headline": "Pikselden İçgörüye",
+        "subtitle": "Bilgisayarlı Görü Geliştirme Sürecimiz",
+        "description": "Veri toplamadan model dağıtımına kadar uçtan uca, titiz bir geliştirme süreci izliyoruz.",
+        "steps": [
+          {
+            "title": "Veri Analizi ve Gereksinimler",
+            "description": "Mevcut görsel verilerinizi analiz ediyor ve başarı kriterlerini belirliyoruz.",
+            "icon": "search",
+            "details": [
+              "Veri seti kalite ve çeşitlilik kontrolü",
+              "Tespit hedeflerinin belirlenmesi",
+              "Donanım kısıtlamalarının analizi"
+            ]
+          },
+          {
+            "title": "Veri Toplama ve Etiketleme",
+            "description": "Yüksek kaliteli eğitim setleri oluşturmak için verileri topluyor ve etiketliyoruz.",
+            "icon": "database",
+            "details": [
+              "Profesyonel veri etiketleme ekipleri",
+              "Sentetik veri üretimi ve artırma (Augmentation)",
+              "Dengesiz veri setlerinin düzeltilmesi"
+            ]
+          },
+          {
+            "title": "Model Eğitimi",
+            "description": "En son mimarileri kullanarak modelleri eğitiyor ve optimize ediyoruz.",
+            "icon": "brain",
+            "details": [
+              "YOLO, ResNet, ViT gibi modern mimariler",
+              "Transfer öğrenme ile hızlı sonuçlar",
+              "Hiperparametre optimizasyonu"
+            ]
+          },
+          {
+            "title": "Optimizasyon ve Dağıtım",
+            "description": "Modelleri hedef donanımda çalışacak şekilde optimize ediyoruz.",
+            "icon": "chip",
+            "details": [
+              "TensorRT ve ONNX ile hızlandırma",
+              "Edge cihazlar (Jetson, Raspberry Pi) için optimizasyon",
+              "Bulut API entegrasyonu"
+            ]
+          },
+          {
+            "title": "İzleme ve Bakım",
+            "description": "Sistemi canlı ortamda izliyor ve sürekli iyileştiriyoruz.",
+            "icon": "monitor",
+            "details": [
+              "Model performans takibi (Drift detection)",
+              "Otomatik yeniden eğitim döngüleri",
+              "Gerçek zamanlı uyarı sistemleri"
+            ]
+          }
+        ]
+      },
+      "techStack": {
+        "headline": "Bilgisayarlı Görü Teknolojileri",
+        "subtitle": "Kullandığımız Araçlar",
+        "description": "Endüstri standardı kütüphaneler ve donanımlar ile çalışıyoruz.",
+        "categories": [
+          {
+            "category": "Frameworkler",
+            "items": [
+              {
+                "name": "PyTorch",
+                "description": "Araştırma ve üretim için esnek derin öğrenme kütüphanesi."
+              },
+              {
+                "name": "OpenCV",
+                "description": "Gerçek zamanlı görüntü işleme kütüphanesi."
+              },
+              {
+                "name": "YOLOv8",
+                "description": "Gerçek zamanlı nesne tespiti için son teknoloji modeller."
+              }
+            ]
+          },
+          {
+            "category": "Dağıtım",
+            "items": [
+              {
+                "name": "NVIDIA TensorRT",
+                "description": "GPU üzerinde yüksek performanslı çıkarım."
+              },
+              {
+                "name": "ONNX Runtime",
+                "description": "Platformdan bağımsız model çalıştırma motoru."
+              }
+            ]
+          }
+        ]
+      },
+      "portfolio": {
+        "headline": "Başarı Hikayeleri",
+        "subtitle": "Hayata Geçirdiğimiz Projeler",
+        "description": "Bilgisayarlı görü çözümlerimizin iş dünyasındaki etkilerini keşfedin.",
+        "items": [
+          {
+            "title": "Üretim Hattı Kalite Kontrolü",
+            "industry": "Üretim",
+            "challenge": "Manuel kontrollerde gözden kaçan hatalar maliyetleri artırıyordu.",
+            "solution": "Kamera tabanlı otomatik hata tespit sistemi kuruldu.",
+            "results": [
+              "Hata tespit oranında %99.3 başarı",
+              "İade oranlarında %90 düşüş",
+              "Kontrol hızında 3 kat artış"
+            ],
+            "stats": [
+              {
+                "label": "Doğruluk",
+                "value": "%99.3"
+              },
+              {
+                "label": "Tasarruf",
+                "value": "2.1M₺"
+              }
+            ]
+          }
+        ],
+        "aggregateStats": [
+          {
+            "label": "İşlenen Görüntü",
+            "value": "10M+"
+          },
+          {
+            "label": "Ortalama Doğruluk",
+            "value": "%97"
+          }
+        ]
+      },
+      "faq": {
+        "headline": "Sıkça Sorulan Sorular",
+        "subtitle": "Bilgisayarlı Görü Hakkında",
+        "description": "Merak ettiğiniz soruların yanıtları.",
+        "categories": [
+          {
+            "category": "Genel",
+            "items": [
+              {
+                "question": "Hangi kamera sistemlerini destekliyorsunuz?",
+                "answer": "IP kameralar, endüstriyel GigE kameralar, USB web kameraları ve drone kameraları dahil olmak üzere çoğu standart görüntüleme cihazıyla entegrasyon sağlayabiliyoruz."
+              },
+              {
+                "question": "Kişisel verilerin gizliliği nasıl sağlanıyor?",
+                "answer": "KVKK ve GDPR uyumlu çalışıyoruz. Yüz bulanıklaştırma, anonimleştirme ve verilerin cihaz üzerinde (edge) işlenip sunucuya gönderilmemesi gibi yöntemler kullanıyoruz."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "mlops-deployment": {
+      "serviceName": "MLOps ve Dağıtım",
+      "features": {
+        "headline": "Yapay Zeka Modellerini Üretime Taşıyın",
+        "description": "Makine öğrenimi projelerinizi laboratuvar ortamından çıkarıp ölçeklenebilir, güvenilir üretim sistemlerine dönüştürün.",
+        "items": [
+          {
+            "icon": "pipeline",
+            "title": "CI/CD Otomasyonu",
+            "description": "Model eğitimi ve dağıtımı için otomatik test ve entegrasyon süreçleri.",
+            "details": [
+              "Otomatik model eğitimi tetikleyicileri",
+              "Entegrasyon testleri ve validasyon",
+              "Sürüm kontrolü ve geri alma (rollback)"
+            ]
+          },
+          {
+            "icon": "server",
+            "title": "Model Sunumu (Serving)",
+            "description": "Düşük gecikme süreli ve yüksek erişilebilirlikli API'ler.",
+            "details": [
+              "REST ve gRPC API endpointleri",
+              "Yük dengeleme ve otomatik ölçeklendirme",
+              "Canary ve Blue-Green dağıtımlar"
+            ]
+          },
+          {
+            "icon": "monitor",
+            "title": "Model İzleme",
+            "description": "Veri kayması (data drift) ve model performansı takibi.",
+            "details": [
+              "Girdi ve çıktı verisi dağılım analizi",
+              "Performans metrikleri (Doğruluk, F1-Score) takibi",
+              "Anomali tespiti ve uyarılar"
+            ]
+          },
+          {
+            "icon": "database",
+            "title": "Özellik Mağazası (Feature Store)",
+            "description": "Eğitim ve çıkarım arasında veri tutarlılığı sağlayan merkezi yapı.",
+            "details": [
+              "Özelliklerin (features) yeniden kullanımı",
+              "Zaman yolculuğu ile geçmiş veriye erişim",
+              "Eğitim ve canlı ortam tutarlılığı"
+            ]
+          },
+          {
+            "icon": "cloud",
+            "title": "Çoklu Bulut Desteği",
+            "description": "AWS, Azure, GCP veya şirket içi (on-premise) kurulumlar.",
+            "details": [
+              "Hibrit bulut mimarileri",
+              "Konteyner orkestrasyonu (Kubernetes)",
+              "Maliyet optimizasyonu"
+            ]
+          },
+          {
+            "icon": "security",
+            "title": "Yapay Zeka Güvenliği",
+            "description": "Model yönetişimi, erişim kontrolleri ve uyumluluk.",
+            "details": [
+              "Model açıklanabilirliği (XAI)",
+              "RBAC tabanlı erişim kontrolü",
+              "Denetim izleri (Audit trails)"
+            ]
+          }
+        ]
+      },
+      "process": {
+        "headline": "Sürdürülebilir Yapay Zeka",
+        "subtitle": "MLOps Yaklaşımımız",
+        "description": "Modellerinizin her zaman güncel ve performanslı kalmasını sağlıyoruz.",
+        "steps": [
+          {
+            "title": "Mevcut Durum Analizi",
+            "description": "Altyapınızı ve iş akışlarınızı inceleyerek MLOps yol haritası çıkarıyoruz.",
+            "icon": "search",
+            "details": [
+              "Altyapı denetimi",
+              "Takım yetkinlik analizi",
+              "Araç seçimi"
+            ]
+          },
+          {
+            "title": "Boru Hattı (Pipeline) Tasarımı",
+            "description": "Veri, eğitim ve dağıtım için otomatik akışlar tasarlıyoruz.",
+            "icon": "blueprint",
+            "details": [
+              "Tekrarlanabilir deneyler",
+              "Versiyon kontrolü (DVC, MLflow)",
+              "Otomatik testler"
+            ]
+          },
+          {
+            "title": "Altyapı Kurulumu",
+            "description": "Kubernetes ve bulut servisleri üzerinde ölçeklenebilir altyapı kuruyoruz.",
+            "icon": "server",
+            "details": [
+              "IaC (Terraform) kullanımı",
+              "GPU kümesi yönetimi",
+              "Güvenlik yapılandırması"
+            ]
+          },
+          {
+            "title": "İzleme ve İyileştirme",
+            "description": "Sistemleri sürekli izleyerek performans düşüşlerine anında müdahale ediyoruz.",
+            "icon": "monitor",
+            "details": [
+              "Grafana panoları",
+              "Otomatik uyarılar",
+              "Yeniden eğitim tetikleyicileri"
+            ]
+          }
+        ]
+      },
+      "techStack": {
+        "headline": "MLOps Araç Setimiz",
+        "subtitle": "Kullandığımız Teknolojiler",
+        "description": "En iyi açık kaynak ve kurumsal araçları kullanıyoruz.",
+        "categories": [
+          {
+            "category": "Orkestrasyon",
+            "items": [
+              {
+                "name": "Kubeflow",
+                "description": "Kubernetes üzerinde makine öğrenimi iş akışları."
+              },
+              {
+                "name": "MLflow",
+                "description": "Model yaşam döngüsü yönetimi."
+              },
+              {
+                "name": "Airflow",
+                "description": "Veri işleme hattı zamanlayıcısı."
+              }
+            ]
+          },
+          {
+            "category": "Sunum & İzleme",
+            "items": [
+              {
+                "name": "Seldon Core",
+                "description": "Gelişmiş model dağıtımı."
+              },
+              {
+                "name": "Prometheus",
+                "description": "Sistem ve metrik izleme."
+              }
+            ]
+          }
+        ]
+      },
+      "portfolio": {
+        "headline": "Operasyonel Mükemmellik",
+        "subtitle": "Referans Projeler",
+        "description": "Müşterilerimizin yapay zeka operasyonlarını nasıl dönüştürdük.",
+        "items": [
+          {
+            "title": "Finans Sektörü için Dolandırıcılık Tespiti",
+            "industry": "Finans",
+            "challenge": "Model güncellemeleri aylar sürüyordu.",
+            "solution": "Otomatik yeniden eğitim hattı kuruldu.",
+            "results": [
+              "Güncelleme süresi 1 güne indi",
+              "Dolandırıcılık yakalama oranı %15 arttı",
+              "Operasyonel maliyet %50 düştü"
+            ],
+            "stats": [
+              {
+                "label": "Hız Artışı",
+                "value": "30x"
+              },
+              {
+                "label": "Maliyet Tasarrufu",
+                "value": "%50"
+              }
+            ]
+          }
+        ],
+        "aggregateStats": [
+          {
+            "label": "Canlıdaki Model",
+            "value": "500+"
+          },
+          {
+            "label": "Günlük İstek",
+            "value": "100M+"
+          }
+        ]
+      },
+      "faq": {
+        "headline": "MLOps SSS",
+        "subtitle": "Merak Edilenler",
+        "description": "MLOps süreçleri hakkında detaylı bilgiler.",
+        "categories": [
+          {
+            "category": "Genel",
+            "items": [
+              {
+                "question": "Neden MLOps'a ihtiyacım var?",
+                "answer": "Modellerinizi laboratuvardan çıkarıp iş değeri yaratan ürünlere dönüştürmek, hataları azaltmak ve sürdürülebilirliği sağlamak için MLOps şarttır."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "cybersecurity": {
+      "serviceName": "Siber Güvenlik",
+      "features": {
+        "headline": "Dijital Varlıklarınızı Koruyun",
+        "description": "Gelişmiş tehdit algılama ve proaktif güvenlik çözümleri.",
+        "items": [
+          {
+            "icon": "shield",
+            "title": "Sızma Testi",
+            "description": "Sistem açıklarını bulmak için etik hackleme.",
+            "details": [
+              "Web ve mobil uygulama testleri",
+              "Ağ altyapısı taraması",
+              "Sosyal mühendislik simülasyonları"
+            ]
+          },
+          {
+            "icon": "lock",
+            "title": "Veri Şifreleme",
+            "description": "Hassas verileriniz için uçtan uca koruma.",
+            "details": [
+              "Veritabanı ve dosya şifreleme",
+              "SSL/TLS yönetimi",
+              "Anahtar yönetimi (KMS)"
+            ]
+          },
+          {
+            "icon": "monitor",
+            "title": "7/24 İzleme (SOC)",
+            "description": "Güvenlik olaylarına anında müdahale.",
+            "details": [
+              "Gerçek zamanlı tehdit avcılığı",
+              "Olay müdahale (Incident Response)",
+              "Günlük (Log) analizi"
+            ]
+          },
+          {
+            "icon": "cloud",
+            "title": "Bulut Güvenliği",
+            "description": "AWS, Azure ve GCP altyapılarınızın güvenliği.",
+            "details": [
+              "Konfigürasyon denetimi",
+              "Kimlik ve erişim yönetimi (IAM)",
+              "Konteyner güvenliği"
+            ]
+          }
+        ]
+      },
+      "process": {
+        "headline": "Güvenlik Yaklaşımımız",
+        "subtitle": "Sıfır Güven Mimarisi",
+        "description": "Asla güvenme, her zaman doğrula prensibiyle çalışıyoruz.",
+        "steps": [
+          {
+            "title": "Risk Analizi",
+            "description": "Güvenlik açıklarını ve riskleri belirliyoruz.",
+            "icon": "search",
+            "details": [
+              "Varlık envanteri",
+              "Tehdit modelleme"
+            ]
+          },
+          {
+            "title": "Koruma ve Tespit",
+            "description": "Savunma katmanlarını oluşturuyoruz.",
+            "icon": "shield",
+            "details": [
+              "Firewall kurulumu",
+              "EDR çözümleri"
+            ]
+          }
+        ]
+      },
+      "techStack": {
+        "headline": "Güvenlik Teknolojileri",
+        "subtitle": "Uzmanlık Alanlarımız",
+        "description": "En güvenilir güvenlik araçlarını kullanıyoruz.",
+        "categories": [
+          {
+            "category": "Araçlar",
+            "items": [
+              {
+                "name": "Burp Suite",
+                "description": "Web uygulama güvenliği testi."
+              },
+              {
+                "name": "Splunk",
+                "description": "Güvenlik bilgileri ve olay yönetimi (SIEM)."
+              }
+            ]
+          }
+        ]
+      },
+      "portfolio": {
+        "headline": "Güvenlik Referansları",
+        "subtitle": "Koruduğumuz Değerler",
+        "description": "Müşterilerimizi siber tehditlere karşı nasıl koruduk?",
+        "items": [
+          {
+            "title": "E-Ticaret Platformu Güvenliği",
+            "industry": "E-Ticaret",
+            "challenge": "Sık yaşanan DDoS saldırıları.",
+            "solution": "WAF ve DDoS koruma kalkanı kurulumu.",
+            "results": [
+              "Saldırıların %100 engellenmesi",
+              "Kesintisiz hizmet"
+            ],
+            "stats": [
+              {
+                "label": "Kesinti",
+                "value": "0 dk"
+              }
+            ]
+          }
+        ],
+        "aggregateStats": [
+          {
+            "label": "Engellenen Saldırı",
+            "value": "1M+"
+          }
+        ]
+      },
+      "faq": {
+        "headline": "Güvenlik SSS",
+        "subtitle": "Sorular",
+        "description": "Siber güvenlik hakkında bilinmesi gerekenler.",
+        "categories": [
+          {
+            "category": "Genel",
+            "items": [
+              {
+                "question": "Sızma testi ne sıklıkla yapılmalı?",
+                "answer": "Yılda en az bir kez veya her büyük sistem güncellemesinden sonra yapılmasını öneriyoruz."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "devops-cloud": {
+      "serviceName": "DevOps ve Bulut",
+      "features": {
+        "headline": "Altyapınızı Modernize Edin",
+        "description": "Hızlı, güvenilir ve ölçeklenebilir yazılım teslimatı.",
+        "items": [
+          {
+            "icon": "cloud",
+            "title": "Bulut Migrasyonu",
+            "description": "Sistemlerinizi güvenle buluta taşıyın.",
+            "details": [
+              "Lift-and-shift stratejileri",
+              "Cloud-native dönüşüm",
+              "Maliyet analizi"
+            ]
+          },
+          {
+            "icon": "pipeline",
+            "title": "CI/CD",
+            "description": "Sürekli entegrasyon ve dağıtım.",
+            "details": [
+              "Jenkins/GitLab CI kurulumu",
+              "Otomatik test otomasyonu",
+              "Docker imaj yönetimi"
+            ]
+          },
+          {
+            "icon": "server",
+            "title": "Konteynerizasyon",
+            "description": "Docker ve Kubernetes yönetimi.",
+            "details": [
+              "Mikroservis mimarisi",
+              "Helm chart yönetimi",
+              "Service mesh (Istio)"
+            ]
+          }
+        ]
+      },
+      "process": {
+        "headline": "DevOps Süreçleri",
+        "subtitle": "Otomasyon ve Hız",
+        "description": "Manuel işleri azaltıp verimliliği artırıyoruz.",
+        "steps": [
+          {
+            "title": "Değerlendirme",
+            "description": "Mevcut süreçlerin analizi.",
+            "icon": "search",
+            "details": [
+              "Darboğaz analizi",
+              "Kültürel dönüşüm planı"
+            ]
+          },
+          {
+            "title": "Otomasyon",
+            "description": "Altyapı ve kod dağıtımının otomatize edilmesi.",
+            "icon": "cog",
+            "details": [
+              "Ansible/Chef ile konfigürasyon",
+              "Betik yazılımı"
+            ]
+          }
+        ]
+      },
+      "techStack": {
+        "headline": "DevOps Araçları",
+        "subtitle": "Teknoloji Yığını",
+        "description": "Kubernetes, Terraform, AWS, Azure.",
+        "categories": [
+          {
+            "category": "Altyapı",
+            "items": [
+              {
+                "name": "Terraform",
+                "description": "Infrastructure as Code."
+              }
+            ]
+          }
+        ]
+      },
+      "portfolio": {
+        "headline": "DevOps Projeleri",
+        "subtitle": "Başarılar",
+        "description": "Bulut dönüşüm hikayeleri.",
+        "items": [
+          {
+            "title": "SaaS Platformu Ölçekleme",
+            "industry": "Teknoloji",
+            "challenge": "Yüksek trafikte performans sorunları.",
+            "solution": "Kubernetes ve Auto-scaling kurulumu.",
+            "results": [
+              "%99.99 Uptime",
+              "Maliyet optimizasyonu"
+            ],
+            "stats": [
+              {
+                "label": "Uptime",
+                "value": "%99.99"
+              }
+            ]
+          }
+        ],
+        "aggregateStats": []
+      },
+      "faq": {
+        "headline": "DevOps SSS",
+        "subtitle": "Sorular",
+        "description": "Bulut ve DevOps hakkında sorular.",
+        "categories": [
+          {
+            "category": "Genel",
+            "items": [
+              {
+                "question": "DevOps nedir?",
+                "answer": "Yazılım geliştirme (Dev) ve operasyon (Ops) ekiplerinin işbirliğini artıran bir kültür ve yöntemler bütünüdür."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "digital-marketing": {
+      "serviceName": "Dijital Pazarlama",
+      "features": {
+        "headline": "Büyüme Odaklı Pazarlama",
+        "description": "Markanızı dijital dünyada öne çıkarın.",
+        "items": [
+          {
+            "icon": "search",
+            "title": "SEO",
+            "description": "Arama motoru optimizasyonu.",
+            "details": [
+              "Teknik SEO analizi",
+              "İçerik optimizasyonu",
+              "Backlink inşası"
+            ]
+          },
+          {
+            "icon": "speaker",
+            "title": "Sosyal Medya",
+            "description": "Marka bilinirliği yönetimi.",
+            "details": [
+              "İçerik takvimi yönetimi",
+              "Topluluk yönetimi",
+              "Influencer pazarlama"
+            ]
+          },
+          {
+            "icon": "chart",
+            "title": "Veri Analitiği",
+            "description": "Performans ölçümü ve raporlama.",
+            "details": [
+              "Dönüşüm izleme (Conversion tracking)",
+              "Kullanıcı davranış analizi",
+              "ROI hesaplama"
+            ]
+          }
+        ]
+      },
+      "process": {
+        "headline": "Pazarlama Stratejisi",
+        "subtitle": "Veri Odaklı Yaklaşım",
+        "description": "Hedef kitlenize en doğru kanallardan ulaşıyoruz.",
+        "steps": [
+          {
+            "title": "Analiz",
+            "description": "Pazar ve rakip analizi.",
+            "icon": "search",
+            "details": [
+              "SWOT analizi",
+              "Persona oluşturma"
+            ]
+          },
+          {
+            "title": "Uygulama",
+            "description": "Kampanya yönetimi.",
+            "icon": "rocket",
+            "details": [
+              "Reklam kurulumu",
+              "A/B testleri"
+            ]
+          }
+        ]
+      },
+      "techStack": {
+        "headline": "Pazarlama Araçları",
+        "subtitle": "Kullandığımız Teknolojiler",
+        "description": "Google Analytics, SEMrush, HubSpot.",
+        "categories": [
+          {
+            "category": "Analitik",
+            "items": [
+              {
+                "name": "Google Analytics 4",
+                "description": "Kullanıcı davranışı analizi."
+              }
+            ]
+          }
+        ]
+      },
+      "portfolio": {
+        "headline": "Pazarlama Başarıları",
+        "subtitle": "Büyüyen Markalar",
+        "description": "Dijital varlıkları nasıl büyüttük?",
+        "items": [
+          {
+            "title": "E-Ticaret SEO Çalışması",
+            "industry": "Perakende",
+            "challenge": "Düşük organik trafik.",
+            "solution": "Kapsamlı SEO ve içerik stratejisi.",
+            "results": [
+              "Trafikte %200 artış",
+              "Satışlarda yükseliş"
+            ],
+            "stats": [
+              {
+                "label": "Trafik",
+                "value": "+%200"
+              }
+            ]
+          }
+        ],
+        "aggregateStats": []
+      },
+      "faq": {
+        "headline": "Pazarlama SSS",
+        "subtitle": "Merak Edilenler",
+        "description": "Dijital pazarlama hizmetlerimiz hakkında.",
+        "categories": [
+          {
+            "category": "Genel",
+            "items": [
+              {
+                "question": "SEO sonuçları ne zaman görülür?",
+                "answer": "Genellikle 3-6 ay içinde belirgin sonuçlar alınmaya başlanır."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "e-commerce": {
+      "serviceName": "E-Ticaret Çözümleri",
+      "features": {
+        "headline": "Online Satışlarınızı Artırın",
+        "description": "Güçlü, güvenli ve kullanıcı dostu e-ticaret siteleri.",
+        "items": [
+          {
+            "icon": "cart",
+            "title": "Özel E-Ticaret Siteleri",
+            "description": "İhtiyacınıza yönelik tasarımlar.",
+            "details": [
+              "Özel tema geliştirme",
+              "Ürün yönetim paneli",
+              "Stok takibi"
+            ]
+          },
+          {
+            "icon": "card",
+            "title": "Ödeme Entegrasyonları",
+            "description": "Güvenli ödeme altyapıları.",
+            "details": [
+              "Sanal POS entegrasyonu",
+              "Kripto ödeme seçenekleri",
+              "Abonelik modelleri"
+            ]
+          },
+          {
+            "icon": "mobile",
+            "title": "Mobil Uyumlu",
+            "description": "Her cihazda kusursuz deneyim.",
+            "details": [
+              "Responsive tasarım",
+              "Hızlı yükleme süreleri (PWA)",
+              "Mobil ödeme kolaylığı"
+            ]
+          }
+        ]
+      },
+      "process": {
+        "headline": "E-Ticaret Geliştirme",
+        "subtitle": "Satış Odaklı Tasarım",
+        "description": "Ziyaretçileri müşteriye dönüştüren siteler yapıyoruz.",
+        "steps": [
+          {
+            "title": "UX Tasarımı",
+            "description": "Kullanıcı deneyimi optimizasyonu.",
+            "icon": "palette",
+            "details": [
+              "Sepet terk analizi",
+              "Ödeme adımı optimizasyonu"
+            ]
+          },
+          {
+            "title": "Geliştirme",
+            "description": "Güvenli kodlama.",
+            "icon": "code",
+            "details": [
+              "SSL kurulumu",
+              "PCI DSS uyumluluğu"
+            ]
+          }
+        ]
+      },
+      "techStack": {
+        "headline": "E-Ticaret Teknolojileri",
+        "subtitle": "Altyapılar",
+        "description": "Shopify, WooCommerce, Magento, Next.js.",
+        "categories": [
+          {
+            "category": "Platformlar",
+            "items": [
+              {
+                "name": "Shopify",
+                "description": "Hızlı ve güvenilir e-ticaret."
+              }
+            ]
+          }
+        ]
+      },
+      "portfolio": {
+        "headline": "E-Ticaret Referansları",
+        "subtitle": "Kişiselleştirilmiş Mağazalar",
+        "description": "Başarılı online mağazalar.",
+        "items": [
+          {
+            "title": "Moda Markası Lansmanı",
+            "industry": "Moda",
+            "challenge": "Yeni bir markanın online varlığı.",
+            "solution": "Shopify tabanlı özel tasarım mağaza.",
+            "results": [
+              "İlk ayda yüksek satış",
+              "Mobil trafikte başarı"
+            ],
+            "stats": [
+              {
+                "label": "Dönüşüm",
+                "value": "%3.5"
+              }
+            ]
+          }
+        ],
+        "aggregateStats": []
+      },
+      "faq": {
+        "headline": "E-Ticaret SSS",
+        "subtitle": "Sorular",
+        "description": "E-ticaret paketlerimiz hakkında.",
+        "categories": [
+          {
+            "category": "Genel",
+            "items": [
+              {
+                "question": "Hangi ödeme sistemlerini destekliyorsunuz?",
+                "answer": "Iyzico, Stripe, PayPal ve tüm major bankaların sanal POS'larını entegre edebiliyoruz."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "llm-finetuning": {
+      "serviceName": "LLM İnce Ayar (Fine-tuning)",
+      "features": {
+        "headline": "Yapay Zekayı İşinize Göre Eğitin",
+        "description": "Llama, Mistral ve GPT gibi modelleri kendi verilerinizle özelleştirin.",
+        "items": [
+          {
+            "icon": "adjustments",
+            "title": "Alan Uyarlaması",
+            "description": "Sektörel terimleri anlayan modeller.",
+            "details": [
+              "Hukuk, tıp ve finans alanlarına özel eğitim",
+              "Şirket içi bilgi tabanı entegrasyonu",
+              "Özel terminoloji eğitimi"
+            ]
+          },
+          {
+            "icon": "lock",
+            "title": "Veri Gizliliği",
+            "description": "Kendi sunucularınızda çalışan yapay zeka.",
+            "details": [
+              "Veri dışarı çıkmadan eğitim",
+              "On-premise (yerinde) kurulum",
+              "GDPR uyumlu süreçler"
+            ]
+          }
+        ]
+      },
+      "process": {
+        "headline": "Eğitim Süreci",
+        "subtitle": "Veriden Modele",
+        "description": "Ham veriyi akıllı bir asistana dönüştürüyoruz.",
+        "steps": [
+          {
+            "title": "Veri Hazırlama",
+            "description": "Temizleme ve formatlama.",
+            "icon": "database",
+            "details": [
+              "Veri anonimleştirme",
+              "Format dönüşümü (JSONL)",
+              "Kalite kontrol"
+            ]
+          },
+          {
+            "title": "Eğitim (Fine-tuning)",
+            "description": "LoRA ve QLoRA teknikleri.",
+            "icon": "brain",
+            "details": [
+              "Hiperparametre ayarı",
+              "Eğitim takibi (Loss monitoring)",
+              "Model değerlendirme"
+            ]
+          }
+        ]
+      },
+      "techStack": {
+        "headline": "LLM Araçları",
+        "subtitle": "Kullandığımız Teknolojiler",
+        "description": "Hugging Face, PyTorch, DeepSpeed.",
+        "categories": [
+          {
+            "category": "Kütüphaneler",
+            "items": [
+              {
+                "name": "Hugging Face",
+                "description": "Transformers kütüphanesi."
+              }
+            ]
+          }
+        ]
+      },
+      "portfolio": {
+        "headline": "LLM Projeleri",
+        "subtitle": "Özelleştirilmiş Çözümler",
+        "description": "Kuruma özel yapay zeka modelleri.",
+        "items": [
+          {
+            "title": "Hukuk Asistanı",
+            "industry": "Hukuk",
+            "challenge": "Türkçe hukuk terimlerinde yetersizlik.",
+            "solution": "İçtihat metinleri ile eğitilmiş ince ayarlı model.",
+            "results": [
+              "%95 terim doğruluğu",
+              "Dilekçe yazımında hızlanma"
+            ],
+            "stats": [
+              {
+                "label": "Doğruluk",
+                "value": "%95"
+              }
+            ]
+          }
+        ],
+        "aggregateStats": []
+      },
+      "faq": {
+        "headline": "LLM SSS",
+        "subtitle": "Merak Edilenler",
+        "description": "Kendi modelinizi eğitmek hakkında.",
+        "categories": [
+          {
+            "category": "Genel",
+            "items": [
+              {
+                "question": "Ne kadar veri gerekiyor?",
+                "answer": "İnce ayar (fine-tuning) için genellikle birkaç yüz ila bin kaliteli örnek yeterli olabilmektedir."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "machine-learning": {
+      "serviceName": "Makine Öğrenimi",
+      "features": {
+        "headline": "Veriyle Geleceği Tahmin Edin",
+        "description": "Kestirimci analizler ve akıllı algoritmalar.",
+        "items": [
+          {
+            "icon": "chart",
+            "title": "Tahminleme",
+            "description": "Satış ve talep tahminleri.",
+            "details": [
+              "Zaman serisi analizi",
+              "Talep öngörüsü (Demand forecasting)",
+              "Stok optimizasyonu"
+            ]
+          },
+          {
+            "icon": "users",
+            "title": "Müşteri Segmentasyonu",
+            "description": "Kişiselleştirilmiş pazarlama için gruplama.",
+            "details": [
+              "K-Means kümeleme",
+              "RFM analizi",
+              "Davranışsal segmantasyon"
+            ]
+          }
+        ]
+      },
+      "process": {
+        "headline": "ML Geliştirme",
+        "subtitle": "Bilimsel Yaklaşım",
+        "description": "Hipotezden modele.",
+        "steps": [
+          {
+            "title": "Veri Keşfi",
+            "description": "Veriyi anlama ve temizleme.",
+            "icon": "search",
+            "details": [
+              "Eksik veri tamamlama",
+              "Aykırı değer tespiti"
+            ]
+          },
+          {
+            "title": "Modelleme",
+            "description": "Algoritma seçimi ve eğitim.",
+            "icon": "brain",
+            "details": [
+              "Model seçimi (XGBoost, LightGBM)",
+              "Çapraz doğrulama"
+            ]
+          }
+        ]
+      },
+      "techStack": {
+        "headline": "ML Teknolojileri",
+        "subtitle": "Araçlar",
+        "description": "Scikit-learn, XGBoost, TensorFlow.",
+        "categories": [
+          {
+            "category": "Kütüphaneler",
+            "items": [
+              {
+                "name": "Scikit-learn",
+                "description": "Klasik makine öğrenimi."
+              }
+            ]
+          }
+        ]
+      },
+      "portfolio": {
+        "headline": "ML Projeleri",
+        "subtitle": "Etkili Sonuçlar",
+        "description": "Veri odaklı kararlar.",
+        "items": [
+          {
+            "title": "Kredi Risk Analizi",
+            "industry": "Finans",
+            "challenge": "Riskli kredilerin tespiti.",
+            "solution": "Geçmiş verilerle eğitilen risk skoru modeli.",
+            "results": [
+              "Batak kredilerde %20 azalma"
+            ],
+            "stats": [
+              {
+                "label": "Risk Azalması",
+                "value": "%20"
+              }
+            ]
+          }
+        ],
+        "aggregateStats": []
+      },
+      "faq": {
+        "headline": "ML SSS",
+        "subtitle": "Sorular",
+        "description": "Makine öğrenimi hakkında.",
+        "categories": [
+          {
+            "category": "Genel",
+            "items": [
+              {
+                "question": "Hangi veriler gerekli?",
+                "answer": "Geçmişe dönük, temiz ve düzenli yapısal veriler en iyi sonuçları verir."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "rag-solutions": {
+      "serviceName": "RAG Çözümleri",
+      "features": {
+        "headline": "Verilerinizle Konuşun",
+        "description": "Retrieval-Augmented Generation ile kurum içi verilerinize erişin.",
+        "items": [
+          {
+            "icon": "search",
+            "title": "Semantik Arama",
+            "description": "Anlamsal yakınlığa göre arama.",
+            "details": [
+              "Anahtar kelime ötesi arama",
+              "Vektör veritabanı entegrasyonu",
+              "Çok dilli arama desteği"
+            ]
+          },
+          {
+            "icon": "chat",
+            "title": "Doküman Sohbeti",
+            "description": "PDF ve Word dosyalarıyla soru-cevap.",
+            "details": [
+              "Uzun doküman özeti",
+              "Sayfa referansı verme",
+              "Tablo ve grafik okuma"
+            ]
+          }
+        ]
+      },
+      "process": {
+        "headline": "RAG Kurulumu",
+        "subtitle": "Entegrasyon",
+        "description": "Verilerinizi vektör veritabanlarına aktarıyoruz.",
+        "steps": [
+          {
+            "title": "İndeksleme",
+            "description": "Vektörleştirme işlemi.",
+            "icon": "database",
+            "details": [
+              "Chunking stratejileri",
+              "Embedding modelleri (OpenAI/Cohere)"
+            ]
+          },
+          {
+            "title": "Sorgulama",
+            "description": "LLM ile birleştirme.",
+            "icon": "chat",
+            "details": [
+              "Prompt mühendisliği",
+              "Context penceresi yönetimi"
+            ]
+          }
+        ]
+      },
+      "techStack": {
+        "headline": "RAG Teknolojileri",
+        "subtitle": "Vektör Veritabanları",
+        "description": "Pinecone, Qdrant, LangChain.",
+        "categories": [
+          {
+            "category": "Araçlar",
+            "items": [
+              {
+                "name": "LangChain",
+                "description": "Zincirleme işlemler."
+              }
+            ]
+          }
+        ]
+      },
+      "portfolio": {
+        "headline": "RAG Uygulamaları",
+        "subtitle": "Bilgi Yönetimi",
+        "description": "Kurumsal hafızaya erişim.",
+        "items": [
+          {
+            "title": "İK Politikaları Botu",
+            "industry": "Kurumsal",
+            "challenge": "Çalışan sorularına hızlı yanıt.",
+            "solution": "İK el kitapçığı ile çalışan RAG botu.",
+            "results": [
+              "İKY yükünde %40 azalma"
+            ],
+            "stats": [
+              {
+                "label": "Verimlilik",
+                "value": "%40"
+              }
+            ]
+          }
+        ],
+        "aggregateStats": []
+      },
+      "faq": {
+        "headline": "RAG SSS",
+        "subtitle": "Sorular",
+        "description": "RAG sistemi hakkında.",
+        "categories": [
+          {
+            "category": "Genel",
+            "items": [
+              {
+                "question": "Halüsinasyon (yanlış bilgi) riski var mı?",
+                "answer": "RAG sistemleri, cevabı sadece verilen kaynaklardan üretmeye zorlanarak bu risk minimize edilir."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "python-automation": {
+      "serviceName": "Python Otomasyonu",
+      "features": {
+        "headline": "İşlerinizi Otatiğe Bağlayın",
+        "description": "Tekrarlayan görevleri Python scriptleri ile çözün.",
+        "items": [
+          {
+            "icon": "code",
+            "title": "Veri Kazıma (Scraping)",
+            "description": "Web sitelerinden otomatik veri toplama.",
+            "details": [
+              "Rakip fiyat analizi",
+              "Sosyal medya verisi toplama",
+              "Haber ve içerik takibi"
+            ]
+          },
+          {
+            "icon": "cog",
+            "title": "Süreç Otomasyonu",
+            "description": "Excel, PDF ve email işlemleri.",
+            "details": [
+              "Otomatik raporlama",
+              "Fatura işleme",
+              "Toplu email gönderimi"
+            ]
+          }
+        ]
+      },
+      "process": {
+        "headline": "Otomasyon Süreci",
+        "subtitle": "Verimlilik",
+        "description": "Zaman kazandıran çözümler.",
+        "steps": [
+          {
+            "title": "Tanımlama",
+            "description": "Manuel süreçlerin tespiti.",
+            "icon": "search",
+            "details": [
+              "İş akışı haritalama",
+              "Zaman analizi"
+            ]
+          },
+          {
+            "title": "Kodlama",
+            "description": "Script geliştirme.",
+            "icon": "code",
+            "details": [
+              "Modüler kod yapısı",
+              "Hata yönetimi"
+            ]
+          }
+        ]
+      },
+      "techStack": {
+        "headline": "Python Araçları",
+        "subtitle": "Kütüphaneler",
+        "description": "Selenium, Pandas, Beautiful Soup.",
+        "categories": [
+          {
+            "category": "Kütüphaneler",
+            "items": [
+              {
+                "name": "Selenium",
+                "description": "Web otomasyonu."
+              }
+            ]
+          }
+        ]
+      },
+      "portfolio": {
+        "headline": "Otomasyon Örnekleri",
+        "subtitle": "Zaman Tasarrufu",
+        "description": "Otomasyonun gücü.",
+        "items": [
+          {
+            "title": "Fiyat Takip Sistemi",
+            "industry": "E-Ticaret",
+            "challenge": "Rakip fiyat analizi.",
+            "solution": "Günlük fiyat çeken bot.",
+            "results": [
+              "Rekabetçi fiyatlandırma"
+            ],
+            "stats": [
+              {
+                "label": "Tasarruf",
+                "value": "10 saat/hafta"
+              }
+            ]
+          }
+        ],
+        "aggregateStats": []
+      },
+      "faq": {
+        "headline": "Otomasyon SSS",
+        "subtitle": "Sorular",
+        "description": "Python çözümleri hakkında.",
+        "categories": [
+          {
+            "category": "Genel",
+            "items": [
+              {
+                "question": "Hangi işletim sistemlerinde çalışır?",
+                "answer": "Windows, Mac ve Linux sunucularda çalışabilir."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "ui-ux-design": {
+      "serviceName": "UI/UX Tasarım",
+      "features": {
+        "headline": "Kullanıcı Odaklı Tasarım",
+        "description": "Estetik ve fonksiyonelliğin mükemmel uyumu.",
+        "items": [
+          {
+            "icon": "palette",
+            "title": "Arayüz Tasarımı (UI)",
+            "description": "Modern ve çekici ekranlar.",
+            "details": [
+              "Tasarım sistemi oluşturma",
+              "İkon ve illüstrasyon setleri",
+              "Erişilebilirlik (A11y) uyumu"
+            ]
+          },
+          {
+            "icon": "users",
+            "title": "Kullanıcı Deneyimi (UX)",
+            "description": "Akıcı ve sezgisel akışlar.",
+            "details": [
+              "Kullanıcı yolculuğu haritaları",
+              "Wireframe çizimi",
+              "Kullanılabilirli testi"
+            ]
+          }
+        ]
+      },
+      "process": {
+        "headline": "Tasarım Süreci",
+        "subtitle": "Design Thinking",
+        "description": "Empati ile başlayan tasarım yolculuğu.",
+        "steps": [
+          {
+            "title": "Araştırma",
+            "description": "Kullanıcı ihtiyaçları.",
+            "icon": "search",
+            "details": [
+              "Rakip analizi",
+              "Kullanıcı görüşmeleri"
+            ]
+          },
+          {
+            "title": "Prototipleme",
+            "description": "Figma'da interaktif çizimler.",
+            "icon": "palette",
+            "details": [
+              "Yüksek sadakatli prototipler",
+              "Animasyon ve geçişler"
+            ]
+          }
+        ]
+      },
+      "techStack": {
+        "headline": "Tasarım Araçları",
+        "subtitle": "Yazılımlar",
+        "description": "Figma, Adobe XD, Sketch.",
+        "categories": [
+          {
+            "category": "Araçlar",
+            "items": [
+              {
+                "name": "Figma",
+                "description": "İşbirlikçi tasarım aracı."
+              }
+            ]
+          }
+        ]
+      },
+      "portfolio": {
+        "headline": "Tasarım Çalışmaları",
+        "subtitle": "Görsel Şölen",
+        "description": "Ödüllü tasarımlarımız.",
+        "items": [
+          {
+            "title": "Mobil Bankacılık Uygulaması",
+            "industry": "Finans",
+            "challenge": "Karmaşık işlemlerin basitleştirilmesi.",
+            "solution": "Minimalist ve kullanıcı dostu arayüz.",
+            "results": [
+              "Müşteri memnuniyetinde artış"
+            ],
+            "stats": [
+              {
+                "label": "Memnuniyet",
+                "value": "4.8/5"
+              }
+            ]
+          }
+        ],
+        "aggregateStats": []
+      },
+      "faq": {
+        "headline": "Tasarım SSS",
+        "subtitle": "Sorular",
+        "description": "Tasarım hizmetlerimiz.",
+        "categories": [
+          {
+            "category": "Genel",
+            "items": [
+              {
+                "question": "Yazılım geliştirme de yapıyor musunuz?",
+                "answer": "Evet, tasarımlarımızı birebir koda döküyoruz."
+              }
+            ]
+          }
+        ]
+      }
     }
   }
 }
