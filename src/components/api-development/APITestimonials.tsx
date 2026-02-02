@@ -2,38 +2,51 @@
 
 import { motion } from 'framer-motion';
 import { StarIcon } from '@heroicons/react/24/solid';
+import { useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function APITestimonials() {
-    const testimonials = [
-        {
-            quote: 'Their API development team delivered exactly what we needed. The documentation was exceptional and the integration process was seamless. Our development time was cut in half.',
-            author: 'Michael Chen',
-            role: 'CTO, TechFlow Solutions',
-            rating: 5
-        },
-        {
-            quote: 'We needed a complex GraphQL API to unify our data sources. The team not only delivered on time but also suggested optimizations that improved our query performance by 40%.',
-            author: 'Sarah Williams',
-            role: 'VP of Engineering, DataSync Inc',
-            rating: 5
-        },
-        {
-            quote: 'The security implementation was top-notch. OAuth 2.0, rate limiting, and comprehensive logging - everything we needed for enterprise compliance. Highly recommended.',
-            author: 'David Kumar',
-            role: 'Security Lead, FinanceHub',
-            rating: 5
-        }
-    ];
+    const t = useSectionTranslations('apiDevelopment');
+
+    const getTestimonials = () => {
+        try {
+            const items = t('testimonials.items');
+            if (Array.isArray(items) && items.length > 0) return items;
+        } catch (e) { /* fallback */ }
+        return [
+            {
+                quote: 'Their API development team delivered exactly what we needed. The documentation was exceptional and the integration process was seamless. Our development time was cut in half.',
+                author: 'Michael Chen',
+                role: 'CTO, TechFlow Solutions',
+                rating: 5
+            },
+            {
+                quote: 'We needed a complex GraphQL API to unify our data sources. The team not only delivered on time but also suggested optimizations that improved our query performance by 40%.',
+                author: 'Sarah Williams',
+                role: 'VP of Engineering, DataSync Inc',
+                rating: 5
+            },
+            {
+                quote: 'The security implementation was top-notch. OAuth 2.0, rate limiting, and comprehensive logging - everything we needed for enterprise compliance. Highly recommended.',
+                author: 'David Kumar',
+                role: 'Security Lead, FinanceHub',
+                rating: 5
+            }
+        ];
+    };
+
+    const testimonials = getTestimonials();
+    const eyebrow = t('testimonials.eyebrow') || 'Client Testimonials';
+    const title = t('testimonials.title') || 'What Our Clients Say';
 
     return (
         <section className="py-24 bg-white overflow-hidden">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
                     <span className="text-teal-600 font-medium tracking-wider uppercase text-sm mb-4 block">
-                        Client Testimonials
+                        {eyebrow}
                     </span>
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900">
-                        What Our Clients Say
+                        {title}
                     </h2>
                 </div>
 

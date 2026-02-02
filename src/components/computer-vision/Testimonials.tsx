@@ -1,25 +1,38 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function Testimonials() {
-    const testimonials = [
-        {
-            quote: "The quality inspection system catches defects our human inspectors miss. We've reduced returns by 85% since deployment.",
-            author: "Hans Mueller",
-            role: "Plant Director, Manufacturing",
-        },
-        {
-            quote: "Their object detection model processes our warehouse inventory in real-time. We finally have accurate stock counts without manual audits.",
-            author: "Patricia Lee",
-            role: "Supply Chain VP, Logistics",
-        },
-        {
-            quote: "The medical imaging AI they developed helps our radiologists catch issues they might have missed. It's become an essential second opinion.",
-            author: "Dr. Maria Santos",
-            role: "Chief Radiologist, Hospital Network",
-        },
-    ];
+    const t = useSectionTranslations('aiServices.computerVision');
+
+    const getTestimonials = () => {
+        try {
+            const items = t('testimonials.items');
+            if (Array.isArray(items) && items.length > 0) return items;
+        } catch (e) { /* fallback */ }
+        return [
+            {
+                quote: "The quality inspection system catches defects our human inspectors miss. We've reduced returns by 85% since deployment.",
+                author: "Hans Mueller",
+                role: "Plant Director, Manufacturing",
+            },
+            {
+                quote: "Their object detection model processes our warehouse inventory in real-time. We finally have accurate stock counts without manual audits.",
+                author: "Patricia Lee",
+                role: "Supply Chain VP, Logistics",
+            },
+            {
+                quote: "The medical imaging AI they developed helps our radiologists catch issues they might have missed. It's become an essential second opinion.",
+                author: "Dr. Maria Santos",
+                role: "Chief Radiologist, Hospital Network",
+            },
+        ];
+    };
+
+    const testimonials = getTestimonials();
+    const eyebrow = t('testimonials.eyebrow') || 'Client Success Stories';
+    const title = t('testimonials.title') || 'What Our Clients Say';
 
     return (
         <section className="py-24 bg-gray-50">
@@ -28,12 +41,12 @@ export default function Testimonials() {
                     <div className="flex items-center justify-center gap-3 mb-6">
                         <div className="w-8 h-0.5 bg-rose-600"></div>
                         <span className="text-xs font-medium text-rose-600 uppercase tracking-wide">
-                            Client Success Stories
+                            {eyebrow}
                         </span>
                         <div className="w-8 h-0.5 bg-rose-600"></div>
                     </div>
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900">
-                        What Our Clients Say
+                        {title}
                     </h2>
                 </div>
 

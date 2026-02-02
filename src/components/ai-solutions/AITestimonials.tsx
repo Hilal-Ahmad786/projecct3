@@ -1,25 +1,38 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function AITestimonials() {
-    const testimonials = [
-        {
-            quote: "Their AI solution transformed our customer service operations. We reduced response times by 60% while improving customer satisfaction scores significantly.",
-            author: "Sarah Chen",
-            role: "CTO, TechVentures Inc.",
-        },
-        {
-            quote: "The predictive analytics platform they built has become essential to our business. We now forecast demand with 95% accuracy, reducing waste and increasing profits.",
-            author: "Michael Rodriguez",
-            role: "VP of Operations, RetailMax",
-        },
-        {
-            quote: "Working with their AI team was exceptional. They understood our complex requirements and delivered a solution that exceeded our expectations in both quality and timeline.",
-            author: "Emma Thompson",
-            role: "Director of Innovation, HealthFirst",
-        },
-    ];
+    const t = useSectionTranslations('aiSolutions');
+
+    const getTestimonials = () => {
+        try {
+            const items = t('testimonials.items');
+            if (Array.isArray(items) && items.length > 0) return items;
+        } catch (e) { /* fallback */ }
+        return [
+            {
+                quote: "Their AI solution transformed our customer service operations. We reduced response times by 60% while improving customer satisfaction scores significantly.",
+                author: "Sarah Chen",
+                role: "CTO, TechVentures Inc.",
+            },
+            {
+                quote: "The predictive analytics platform they built has become essential to our business. We now forecast demand with 95% accuracy, reducing waste and increasing profits.",
+                author: "Michael Rodriguez",
+                role: "VP of Operations, RetailMax",
+            },
+            {
+                quote: "Working with their AI team was exceptional. They understood our complex requirements and delivered a solution that exceeded our expectations in both quality and timeline.",
+                author: "Emma Thompson",
+                role: "Director of Innovation, HealthFirst",
+            },
+        ];
+    };
+
+    const testimonials = getTestimonials();
+    const eyebrow = t('testimonials.eyebrow') || 'Client Success Stories';
+    const title = t('testimonials.title') || 'What Our Clients Say';
 
     return (
         <section className="py-24 bg-gray-50">
@@ -28,12 +41,12 @@ export default function AITestimonials() {
                     <div className="flex items-center justify-center gap-3 mb-6">
                         <div className="w-8 h-0.5 bg-indigo-600"></div>
                         <span className="text-xs font-medium text-indigo-600 uppercase tracking-wide">
-                            Client Success Stories
+                            {eyebrow}
                         </span>
                         <div className="w-8 h-0.5 bg-indigo-600"></div>
                     </div>
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900">
-                        What Our Clients Say
+                        {title}
                     </h2>
                 </div>
 

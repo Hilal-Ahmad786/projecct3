@@ -2,38 +2,51 @@
 
 import { motion } from 'framer-motion';
 import { StarIcon } from '@heroicons/react/24/solid';
+import { useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function EcommerceTestimonials() {
-    const testimonials = [
-        {
-            quote: 'Our online sales increased by 340% within the first six months after launching our new store. The checkout optimization alone was a game-changer.',
-            author: 'Sarah Mitchell',
-            role: 'CEO, Luxe Fashion Co.',
-            rating: 5
-        },
-        {
-            quote: 'The inventory management system they built has saved us countless hours. We can now manage multiple warehouses seamlessly from one dashboard.',
-            author: 'David Chen',
-            role: 'Operations Director, TechGadgets',
-            rating: 5
-        },
-        {
-            quote: 'From concept to launch in just 8 weeks, and the store handles our Black Friday traffic without breaking a sweat. Exceptional work.',
-            author: 'Emma Rodriguez',
-            role: 'Founder, Artisan Home Goods',
-            rating: 5
-        }
-    ];
+    const t = useSectionTranslations('ecommerce');
+
+    const getTestimonials = () => {
+        try {
+            const items = t('testimonials.items');
+            if (Array.isArray(items) && items.length > 0) return items;
+        } catch (e) { /* fallback */ }
+        return [
+            {
+                quote: 'Our online sales increased by 340% within the first six months after launching our new store. The checkout optimization alone was a game-changer.',
+                author: 'Sarah Mitchell',
+                role: 'CEO, Luxe Fashion Co.',
+                rating: 5
+            },
+            {
+                quote: 'The inventory management system they built has saved us countless hours. We can now manage multiple warehouses seamlessly from one dashboard.',
+                author: 'David Chen',
+                role: 'Operations Director, TechGadgets',
+                rating: 5
+            },
+            {
+                quote: 'From concept to launch in just 8 weeks, and the store handles our Black Friday traffic without breaking a sweat. Exceptional work.',
+                author: 'Emma Rodriguez',
+                role: 'Founder, Artisan Home Goods',
+                rating: 5
+            }
+        ];
+    };
+
+    const testimonials = getTestimonials();
+    const eyebrow = t('testimonials.eyebrow') || 'Client Success Stories';
+    const title = t('testimonials.title') || 'Trusted by Growing Brands';
 
     return (
         <section className="py-24 bg-white overflow-hidden">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
                     <span className="text-emerald-600 font-medium tracking-wider uppercase text-sm mb-4 block">
-                        Client Success Stories
+                        {eyebrow}
                     </span>
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900">
-                        Trusted by Growing Brands
+                        {title}
                     </h2>
                 </div>
 

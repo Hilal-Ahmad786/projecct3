@@ -1,25 +1,38 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function Testimonials() {
-    const testimonials = [
-        {
-            quote: "The fine-tuned model understands our legal terminology perfectly. It drafts documents that require minimal editing—something generic models couldn't do.",
-            author: "Elizabeth Chen",
-            role: "Partner, Law Firm",
-        },
-        {
-            quote: "Fine-tuning on our support data created an assistant that sounds like our best agents. Customer satisfaction scores improved immediately.",
-            author: "Mark Stevens",
-            role: "CX Director, Tech Company",
-        },
-        {
-            quote: "Our fine-tuned medical model achieves 95% accuracy on domain-specific tasks where GPT-4 struggled at 70%. The investment was absolutely worth it.",
-            author: "Dr. James Wilson",
-            role: "Chief Medical Informatics Officer",
-        },
-    ];
+    const t = useSectionTranslations('aiServices.llmFinetuning');
+
+    const getTestimonials = () => {
+        try {
+            const items = t('testimonials.items');
+            if (Array.isArray(items) && items.length > 0) return items;
+        } catch (e) { /* fallback */ }
+        return [
+            {
+                quote: "The fine-tuned model understands our legal terminology perfectly. It drafts documents that require minimal editing\u2014something generic models couldn't do.",
+                author: "Elizabeth Chen",
+                role: "Partner, Law Firm",
+            },
+            {
+                quote: "Fine-tuning on our support data created an assistant that sounds like our best agents. Customer satisfaction scores improved immediately.",
+                author: "Mark Stevens",
+                role: "CX Director, Tech Company",
+            },
+            {
+                quote: "Our fine-tuned medical model achieves 95% accuracy on domain-specific tasks where GPT-4 struggled at 70%. The investment was absolutely worth it.",
+                author: "Dr. James Wilson",
+                role: "Chief Medical Informatics Officer",
+            },
+        ];
+    };
+
+    const testimonials = getTestimonials();
+    const eyebrow = t('testimonials.eyebrow') || 'Client Success Stories';
+    const title = t('testimonials.title') || 'What Our Clients Say';
 
     return (
         <section className="py-24 bg-gray-50">
@@ -28,12 +41,12 @@ export default function Testimonials() {
                     <div className="flex items-center justify-center gap-3 mb-6">
                         <div className="w-8 h-0.5 bg-violet-600"></div>
                         <span className="text-xs font-medium text-violet-600 uppercase tracking-wide">
-                            Client Success Stories
+                            {eyebrow}
                         </span>
                         <div className="w-8 h-0.5 bg-violet-600"></div>
                     </div>
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900">
-                        What Our Clients Say
+                        {title}
                     </h2>
                 </div>
 

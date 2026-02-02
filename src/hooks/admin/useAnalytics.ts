@@ -133,3 +133,67 @@ function getSessionId(): string {
   }
   return sessionId;
 }
+
+// Hook for traffic sources
+export function useTrafficSources(period: string = '7d') {
+  const url = buildUrl('/api/admin/analytics/sources', { period });
+
+  const { data, error, isLoading, mutate } = useSWR<{ success: boolean; data: unknown }>(
+    url,
+    fetcher,
+    {
+      revalidateOnFocus: false,
+      refreshInterval: 60000, // Refresh every 60 seconds
+    }
+  );
+
+  return {
+    sources: data?.data,
+    isLoading,
+    isError: !!error,
+    error,
+    mutate,
+  };
+}
+
+// Hook for realtime analytics (active visitors)
+export function useRealtimeAnalytics() {
+  const { data, error, isLoading, mutate } = useSWR<{ success: boolean; data: unknown }>(
+    '/api/admin/analytics/realtime',
+    fetcher,
+    {
+      revalidateOnFocus: false,
+      refreshInterval: 5000, // Refresh every 5 seconds
+    }
+  );
+
+  return {
+    visitors: data?.data,
+    isLoading,
+    isError: !!error,
+    error,
+    mutate,
+  };
+}
+
+// Hook for analytics metrics
+export function useAnalyticsMetrics(period: string = '7d') {
+  const url = buildUrl('/api/admin/analytics/overview', { period, metrics: 'true' });
+
+  const { data, error, isLoading, mutate } = useSWR<{ success: boolean; data: unknown }>(
+    url,
+    fetcher,
+    {
+      revalidateOnFocus: false,
+      refreshInterval: 60000, // Refresh every 60 seconds
+    }
+  );
+
+  return {
+    metrics: data?.data,
+    isLoading,
+    isError: !!error,
+    error,
+    mutate,
+  };
+}

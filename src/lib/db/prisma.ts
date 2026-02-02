@@ -3,26 +3,25 @@
 // Prisma 7 with pg adapter for direct database connections
 
 import { PrismaClient } from '@prisma/client'
+import { PrismaPg } from '@prisma/adapter-pg'
 
 const globalForPrisma = global as unknown as { prisma: PrismaClient | undefined }
 
-const databaseUrl = process.env.DATABASE_URL
+const databaseUrl = process.env.POSTGRES_PRISMA_URL || process.env.DATABASE_URL
 
 // Create Prisma client - lazy loaded to avoid build issues
 function createPrismaClient(): PrismaClient {
-  // During build or when no DATABASE_URL, return a basic client
-  // This prevents build failures when the database isn't available
   if (!databaseUrl) {
     console.warn('DATABASE_URL not set. Database operations will fail.')
-    // Return a client that will throw on actual queries
-    // but won't crash during build/static generation
-    return new PrismaClient()
+    // Return a minimal client - will throw on actual queries but won't crash during build
+    const adapter = new PrismaPg({ connectionString: 'postgresql://localhost:5432/dummy' })
+    return new PrismaClient({ adapter })
   }
 
-  // For Prisma 7 with driver adapters, we can use the connection URL directly
-  // The adapter setup is handled automatically when DATABASE_URL is set
+  const adapter = new PrismaPg({ connectionString: databaseUrl })
   return new PrismaClient({
-    log: process.env.NODE_ENV === 'development' ? ['query', 'error', 'warn'] : ['error'],
+    adapter,
+    log: process.env.NODE_ENV === 'development' ? ['error', 'warn'] : ['error'],
   })
 }
 

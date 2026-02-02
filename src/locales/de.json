@@ -79,7 +79,8 @@
       "projects": "Projekte",
       "clients": "Kunden",
       "years": "Jahre"
-    }
+    },
+    "scroll": "Scrollen"
   },
   "about": {
     "hero": {
@@ -1021,6 +1022,10 @@
     "eyebrow": "Kundenstimmen",
     "title": "Was unsere Kund:innen sagen",
     "subtitle": "Vertrauen Sie nicht nur unserem Wort. So beschreiben Kund:innen die Zusammenarbeit mit uns.",
+    "loading": "Bewertungen werden geladen...",
+    "noTestimonials": "Derzeit keine Bewertungen verfügbar.",
+    "previous": "Vorherige Bewertungen",
+    "next": "Nächste Bewertungen",
     "clientSatisfaction": "Kundenzufriedenheit",
     "responseTime": "Reaktionszeit",
     "onTimeDelivery": "Pünktliche Lieferung",
@@ -1424,6 +1429,11 @@
         "activeCollaboration": "Aktive Zusammenarbeit",
         "excellence": "Exzellenz",
         "live": "LIVE"
+      },
+      "chipLabels": {
+        "automation": "Automatisierung",
+        "infrastructure": "Infrastruktur",
+        "design": "Design"
       }
     },
     "aboutRightExcellence": {
@@ -1638,6 +1648,9 @@
     "chat": "Chat",
     "open": "Kontaktmenü öffnen",
     "close": "Menü schließen",
+    "ariaWhatsApp": "Kontakt über WhatsApp",
+    "ariaCall": "Rufen Sie uns an",
+    "ariaChat": "Chat starten",
     "dialogTitle": "Wie können wir helfen?",
     "dialogSubtitle": "Wählen Sie eine Frage oder senden Sie eine individuelle Nachricht",
     "selectQuestion": "Schnellfragen",

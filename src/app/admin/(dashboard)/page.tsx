@@ -2,7 +2,9 @@
 
 import { useState, useEffect, useRef } from 'react';
 import RecentLeadsTable from '@/components/admin/widgets/RecentLeadsTable';
+import RecentInteractionsTable from '@/components/admin/widgets/RecentInteractionsTable';
 import TrafficChart from '@/components/admin/widgets/TrafficChart';
+import { useDashboard } from '@/hooks/admin/useDashboard';
 import {
     UsersIcon,
     EnvelopeIcon,
@@ -83,6 +85,24 @@ function useAnimatedCounter(end: number, duration: number = 2000, startOnView: b
     return { count, ref };
 }
 
+// Loading Skeleton for Stat Cards
+function StatCardSkeleton({ gradient }: { gradient: string }) {
+    return (
+        <div className={`relative overflow-hidden rounded-2xl p-6 text-white ${gradient} shadow-lg animate-pulse`}>
+            <div className="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-white/10 rounded-full blur-2xl" />
+            <div className="absolute bottom-0 left-0 -mb-4 -ml-4 w-20 h-20 bg-black/10 rounded-full blur-xl" />
+            <div className="relative">
+                <div className="flex items-center justify-between mb-4">
+                    <div className="p-2 bg-white/20 rounded-lg backdrop-blur-sm w-9 h-9" />
+                    <div className="w-14 h-6 bg-white/20 rounded-full" />
+                </div>
+                <div className="h-8 w-24 bg-white/20 rounded mb-1" />
+                <div className="h-4 w-20 bg-white/20 rounded" />
+            </div>
+        </div>
+    );
+}
+
 // Animated Stat Card Component
 function AnimatedStatCard({
     title,
@@ -91,7 +111,8 @@ function AnimatedStatCard({
     prefix = '',
     change,
     icon: Icon,
-    gradient
+    gradient,
+    isLoading = false,
 }: {
     title: string;
     value: number;
@@ -100,9 +121,14 @@ function AnimatedStatCard({
     change: number;
     icon: React.ComponentType<{ className?: string }>;
     gradient: string;
+    isLoading?: boolean;
 }) {
     const { count, ref } = useAnimatedCounter(value);
     const isPositive = change > 0;
+
+    if (isLoading) {
+        return <StatCardSkeleton gradient={gradient} />;
+    }
 
     return (
         <div ref={ref} className={`relative overflow-hidden rounded-2xl p-6 text-white ${gradient} shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1`}>
@@ -126,13 +152,16 @@ function AnimatedStatCard({
 }
 
 // Conversion Funnel Component
-function ConversionFunnel() {
+function ConversionFunnel({ stats, isLoading }: { stats?: { totalLeads: number; qualifiedLeads: number; convertedLeads: number; conversionRate: number }; isLoading: boolean }) {
+    const totalLeads = stats?.totalLeads ?? 0;
+    const qualifiedLeads = stats?.qualifiedLeads ?? 0;
+    const convertedLeads = stats?.convertedLeads ?? 0;
+    const conversionRate = stats?.conversionRate ?? 0;
+
     const funnelData = [
-        { stage: 'Visitors', count: 12543, color: 'from-blue-500 to-blue-600', width: '100%' },
-        { stage: 'Engaged', count: 5420, color: 'from-cyan-500 to-cyan-600', width: '80%' },
-        { stage: 'Leads', count: 1850, color: 'from-emerald-500 to-emerald-600', width: '60%' },
-        { stage: 'Qualified', count: 620, color: 'from-amber-500 to-amber-600', width: '40%' },
-        { stage: 'Converted', count: 156, color: 'from-purple-500 to-purple-600', width: '25%' },
+        { stage: 'Total Leads', count: totalLeads, color: 'from-blue-500 to-blue-600', width: '100%' },
+        { stage: 'Qualified', count: qualifiedLeads, color: 'from-amber-500 to-amber-600', width: totalLeads > 0 ? `${Math.max((qualifiedLeads / totalLeads) * 100, 10)}%` : '50%' },
+        { stage: 'Converted', count: convertedLeads, color: 'from-purple-500 to-purple-600', width: totalLeads > 0 ? `${Math.max((convertedLeads / totalLeads) * 100, 10)}%` : '25%' },
     ];
 
     return (
@@ -143,7 +172,7 @@ function ConversionFunnel() {
                     <p className="text-sm text-gray-500">Track your customer journey</p>
                 </div>
                 <div className="text-right">
-                    <p className="text-2xl font-bold text-emerald-600">1.24%</p>
+                    <p className="text-2xl font-bold text-emerald-600">{isLoading ? '...' : `${conversionRate.toFixed(2)}%`}</p>
                     <p className="text-xs text-gray-500">Overall Conversion</p>
                 </div>
             </div>
@@ -170,12 +199,12 @@ function ConversionFunnel() {
 }
 
 // Goals & Targets Component
-function GoalsTargets() {
+function GoalsTargets({ stats, isLoading }: { stats?: { totalLeads: number; newLeads: number; conversionRate: number; projectRequests: number }; isLoading: boolean }) {
     const goals = [
-        { name: 'Monthly Revenue', current: 24500, target: 30000, icon: CurrencyDollarIcon, color: 'emerald' },
-        { name: 'New Leads', current: 48, target: 100, icon: UserPlusIcon, color: 'blue' },
-        { name: 'Website Traffic', current: 12543, target: 15000, icon: EyeIcon, color: 'purple' },
-        { name: 'Conversion Rate', current: 1.24, target: 2.0, icon: ArrowTrendingUpIcon, color: 'amber' },
+        { name: 'Total Leads', current: stats?.totalLeads ?? 0, target: 100, icon: UsersIcon, color: 'emerald' },
+        { name: 'New Leads', current: stats?.newLeads ?? 0, target: 50, icon: UserPlusIcon, color: 'blue' },
+        { name: 'Project Requests', current: stats?.projectRequests ?? 0, target: 30, icon: EyeIcon, color: 'purple' },
+        { name: 'Conversion Rate', current: stats?.conversionRate ?? 0, target: 5.0, icon: ArrowTrendingUpIcon, color: 'amber' },
     ];
 
     const colorClasses: Record<string, { bg: string; fill: string; text: string }> = {
@@ -241,16 +270,73 @@ function GoalsTargets() {
     );
 }
 
+// Helper to format relative time
+function formatRelativeTime(dateString: string): string {
+    const date = new Date(dateString);
+    const now = new Date();
+    const diffMs = now.getTime() - date.getTime();
+    const diffMins = Math.floor(diffMs / 60000);
+    if (diffMins < 1) return 'Just now';
+    if (diffMins < 60) return `${diffMins} min ago`;
+    const diffHours = Math.floor(diffMins / 60);
+    if (diffHours < 24) return `${diffHours} hour${diffHours > 1 ? 's' : ''} ago`;
+    const diffDays = Math.floor(diffHours / 24);
+    return `${diffDays} day${diffDays > 1 ? 's' : ''} ago`;
+}
+
 // Activity Feed Component
-function ActivityFeed() {
-    const activities = [
-        { id: 1, action: 'New lead received', detail: 'John Smith submitted a contact form', time: '2 min ago', icon: EnvelopeIcon, color: 'bg-blue-500' },
-        { id: 2, action: 'Project completed', detail: 'E-commerce website for ABC Corp', time: '15 min ago', icon: CheckCircleIcon, color: 'bg-emerald-500' },
-        { id: 3, action: 'Payment received', detail: '$2,400 from XYZ Industries', time: '1 hour ago', icon: CurrencyDollarIcon, color: 'bg-green-500' },
-        { id: 4, action: 'New user signup', detail: 'sarah@company.com registered', time: '2 hours ago', icon: UserPlusIcon, color: 'bg-purple-500' },
-        { id: 5, action: 'Security alert resolved', detail: 'Suspicious login blocked', time: '3 hours ago', icon: ShieldCheckIcon, color: 'bg-amber-500' },
-        { id: 6, action: 'Blog post published', detail: 'AI Trends in 2024', time: '5 hours ago', icon: DocumentTextIcon, color: 'bg-pink-500' },
-    ];
+function ActivityFeed({ recentActivity, isLoading }: {
+    recentActivity?: {
+        leads: Array<{ id: string; name: string; email: string; status: string; createdAt: string }>;
+        projectRequests: Array<{ id: string; name: string; projectType: string; status: string; createdAt: string }>;
+        messages: Array<{ id: string; name: string; subject: string; status: string; createdAt: string }>;
+    };
+    isLoading: boolean;
+}) {
+    // Build unified activity list from real data
+    const activities: Array<{ id: string; action: string; detail: string; time: string; icon: React.ComponentType<{ className?: string }>; color: string; sortDate: string }> = [];
+
+    if (recentActivity) {
+        recentActivity.leads?.forEach((lead) => {
+            activities.push({
+                id: `lead-${lead.id}`,
+                action: 'New lead received',
+                detail: `${lead.name} (${lead.email})`,
+                time: formatRelativeTime(lead.createdAt),
+                icon: EnvelopeIcon,
+                color: 'bg-blue-500',
+                sortDate: lead.createdAt,
+            });
+        });
+        recentActivity.projectRequests?.forEach((req) => {
+            activities.push({
+                id: `project-${req.id}`,
+                action: 'Project request',
+                detail: `${req.name} - ${req.projectType}`,
+                time: formatRelativeTime(req.createdAt),
+                icon: RocketLaunchIcon,
+                color: 'bg-emerald-500',
+                sortDate: req.createdAt,
+            });
+        });
+        recentActivity.messages?.forEach((msg) => {
+            activities.push({
+                id: `msg-${msg.id}`,
+                action: 'Contact message',
+                detail: `${msg.name}: ${msg.subject}`,
+                time: formatRelativeTime(msg.createdAt),
+                icon: ChatBubbleLeftRightIcon,
+                color: 'bg-purple-500',
+                sortDate: msg.createdAt,
+            });
+        });
+    }
+
+    // Sort by most recent first
+    activities.sort((a, b) => new Date(b.sortDate).getTime() - new Date(a.sortDate).getTime());
+
+    // Fallback when no data
+    const displayActivities = activities.length > 0 ? activities.slice(0, 6) : [];
 
     return (
         <div className="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm">
@@ -262,26 +348,45 @@ function ActivityFeed() {
                 <button className="text-sm text-emerald-600 hover:text-emerald-700 font-medium">View All</button>
             </div>
             <div className="space-y-4 max-h-80 overflow-y-auto pr-2 custom-scrollbar">
-                {activities.map((activity, index) => {
-                    const Icon = activity.icon;
-                    return (
-                        <div key={activity.id} className="flex gap-3 group">
-                            <div className="relative">
-                                <div className={`w-9 h-9 rounded-full ${activity.color} flex items-center justify-center shadow-sm`}>
-                                    <Icon className="w-4 h-4 text-white" />
-                                </div>
-                                {index < activities.length - 1 && (
-                                    <div className="absolute top-9 left-1/2 -translate-x-1/2 w-0.5 h-6 bg-gray-100" />
-                                )}
-                            </div>
-                            <div className="flex-1 pb-4">
-                                <p className="text-sm font-medium text-gray-900 group-hover:text-emerald-600 transition-colors">{activity.action}</p>
-                                <p className="text-xs text-gray-500 mt-0.5">{activity.detail}</p>
-                                <p className="text-xs text-gray-400 mt-1">{activity.time}</p>
+                {isLoading ? (
+                    Array.from({ length: 4 }).map((_, i) => (
+                        <div key={i} className="flex gap-3 animate-pulse">
+                            <div className="w-9 h-9 rounded-full bg-gray-200" />
+                            <div className="flex-1 pb-4 space-y-2">
+                                <div className="h-4 w-32 bg-gray-200 rounded" />
+                                <div className="h-3 w-48 bg-gray-100 rounded" />
+                                <div className="h-3 w-16 bg-gray-100 rounded" />
                             </div>
                         </div>
-                    );
-                })}
+                    ))
+                ) : displayActivities.length === 0 ? (
+                    <div className="text-center py-8">
+                        <ClockIcon className="w-10 h-10 text-gray-300 mx-auto mb-2" />
+                        <p className="text-sm text-gray-500">No recent activity yet</p>
+                        <p className="text-xs text-gray-400 mt-1">Activity will appear here as leads and messages come in</p>
+                    </div>
+                ) : (
+                    displayActivities.map((activity, index) => {
+                        const Icon = activity.icon;
+                        return (
+                            <div key={activity.id} className="flex gap-3 group">
+                                <div className="relative">
+                                    <div className={`w-9 h-9 rounded-full ${activity.color} flex items-center justify-center shadow-sm`}>
+                                        <Icon className="w-4 h-4 text-white" />
+                                    </div>
+                                    {index < displayActivities.length - 1 && (
+                                        <div className="absolute top-9 left-1/2 -translate-x-1/2 w-0.5 h-6 bg-gray-100" />
+                                    )}
+                                </div>
+                                <div className="flex-1 pb-4">
+                                    <p className="text-sm font-medium text-gray-900 group-hover:text-emerald-600 transition-colors">{activity.action}</p>
+                                    <p className="text-xs text-gray-500 mt-0.5">{activity.detail}</p>
+                                    <p className="text-xs text-gray-400 mt-1">{activity.time}</p>
+                                </div>
+                            </div>
+                        );
+                    })
+                )}
             </div>
         </div>
     );
@@ -389,6 +494,7 @@ function QuickActions() {
 // Main Dashboard Component
 export default function AdminDashboard() {
     const [currentTime, setCurrentTime] = useState(new Date());
+    const { stats, recentActivity, isLoading, isError } = useDashboard();
 
     useEffect(() => {
         const timer = setInterval(() => setCurrentTime(new Date()), 1000);
@@ -436,37 +542,50 @@ export default function AdminDashboard() {
             </div>
 
             {/* Animated Stats Grid */}
+            {isError && (
+                <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm text-amber-700">
+                    Unable to load dashboard data. Showing default values. Please check your connection and try again.
+                </div>
+            )}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <AnimatedStatCard
-                    title="Total Visitors"
-                    value={12543}
-                    change={12.5}
+                    title="Total Leads"
+                    value={stats?.totalLeads ?? 0}
+                    change={0}
                     icon={EyeIcon}
                     gradient="bg-gradient-to-br from-blue-500 to-blue-600"
+                    isLoading={isLoading}
                 />
                 <AnimatedStatCard
                     title="New Leads"
-                    value={48}
-                    change={8.2}
+                    value={stats?.newLeads ?? 0}
+                    change={0}
                     icon={EnvelopeIcon}
                     gradient="bg-gradient-to-br from-emerald-500 to-emerald-600"
+                    isLoading={isLoading}
                 />
                 <AnimatedStatCard
                     title="Conversions"
-                    value={156}
-                    change={-2.4}
+                    value={stats?.convertedLeads ?? 0}
+                    change={0}
                     icon={UsersIcon}
                     gradient="bg-gradient-to-br from-purple-500 to-purple-600"
+                    isLoading={isLoading}
                 />
                 <AnimatedStatCard
-                    title="Revenue"
-                    value={24500}
-                    prefix="$"
-                    change={15.3}
+                    title="Project Requests"
+                    value={stats?.projectRequests ?? 0}
+                    change={0}
                     icon={CurrencyDollarIcon}
                     gradient="bg-gradient-to-br from-amber-500 to-orange-500"
+                    isLoading={isLoading}
                 />
             </div>
+            {!isLoading && !isError && (stats?.totalLeads ?? 0) === 0 && (
+                <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 text-sm text-blue-700 text-center">
+                    Your dashboard is ready! Data will populate here as you receive leads, project requests, and messages.
+                </div>
+            )}
 
             {/* Today's Highlights + Quick Actions Row */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -478,8 +597,8 @@ export default function AdminDashboard() {
 
             {/* Conversion Funnel + Goals Row */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <ConversionFunnel />
-                <GoalsTargets />
+                <ConversionFunnel stats={stats} isLoading={isLoading} />
+                <GoalsTargets stats={stats} isLoading={isLoading} />
             </div>
 
             {/* Charts and Activity Row */}
@@ -487,7 +606,7 @@ export default function AdminDashboard() {
                 <div className="lg:col-span-2">
                     <TrafficChart />
                 </div>
-                <ActivityFeed />
+                <ActivityFeed recentActivity={recentActivity} isLoading={isLoading} />
             </div>
 
             {/* Top Pages Section */}
@@ -569,8 +688,11 @@ export default function AdminDashboard() {
                 </div>
             </div>
 
-            {/* Recent Leads Table */}
-            <RecentLeadsTable />
+            {/* Recent Leads & Interactions */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <RecentLeadsTable />
+                <RecentInteractionsTable />
+            </div>
         </div>
     );
 }

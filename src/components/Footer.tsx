@@ -332,8 +332,8 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="flex items-center group"
             >
-              <span className="text-zinc-500 mr-2 group-hover:text-amber-600 transition-colors">{t('developedBy')}</span>
-              <div className="flex items-center text-amber-600 group-hover:text-amber-500 transition-colors">
+              <span className="text-zinc-500 mr-2 group-hover:text-emerald-600 transition-colors">{t('developedBy')}</span>
+              <div className="flex items-center text-emerald-600 group-hover:text-emerald-500 transition-colors">
                 {/* Custom Crescent Icon */}
                 <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 -rotate-12">
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c1.85 0 3.58-.5 5.08-1.38-.7.13-1.42.21-2.16.21-5.52 0-10-4.48-10-10S9.42 2.83 14.92 2.83c.74 0 1.46.08 2.16.21C15.58 2.5 13.85 2 12 2z" />

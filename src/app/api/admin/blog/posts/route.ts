@@ -58,6 +58,7 @@ const createPostSchema = z.object({
   tags: z.array(z.string()).optional(),
   status: z.enum(['DRAFT', 'PUBLISHED', 'ARCHIVED']).optional(),
   featured: z.boolean().optional(),
+  scheduledAt: z.string().datetime().optional().nullable(),
   translations: z.array(z.object({
     locale: z.string(),
     title: z.string(),
@@ -86,10 +87,13 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const { translations, ...postData } = validation.data;
+    const { translations, scheduledAt: scheduledAtStr, ...postData } = validation.data;
 
     // Create the blog post
-    const post = await createBlogPost(postData);
+    const post = await createBlogPost({
+      ...postData,
+      scheduledAt: scheduledAtStr ? new Date(scheduledAtStr) : undefined,
+    });
 
     // Create translations if provided
     if (translations && translations.length > 0) {

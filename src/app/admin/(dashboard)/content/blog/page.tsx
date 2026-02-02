@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
+import ReactMarkdown from 'react-markdown';
 import {
     PencilIcon,
     TrashIcon,
@@ -16,8 +17,10 @@ import {
     ChartBarIcon,
     ArrowPathIcon,
     LanguageIcon,
+    DocumentDuplicateIcon,
 } from '@heroicons/react/24/outline';
 import { StarIcon } from '@heroicons/react/24/solid';
+import MarkdownToolbar from '@/components/admin/forms/MarkdownToolbar';
 
 // Types matching the database schema
 interface BlogTranslation {
@@ -44,6 +47,7 @@ interface BlogPost {
     status: 'DRAFT' | 'PUBLISHED' | 'ARCHIVED';
     featured: boolean;
     publishedAt?: string;
+    scheduledAt?: string;
     createdAt: string;
     updatedAt: string;
     translations: BlogTranslation[];
@@ -81,6 +85,21 @@ export default function BlogContentPage() {
     const [showSeoPreview, setShowSeoPreview] = useState<string | null>(null);
     const [viewMode, setViewMode] = useState<'list' | 'grid'>('list');
 
+    // Bulk selection
+    const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
+    const [bulkMode, setBulkMode] = useState(false);
+
+    // Slug manually edited
+    const [slugManuallyEdited, setSlugManuallyEdited] = useState(false);
+
+    // Content preview mode
+    const [contentViewMode, setContentViewMode] = useState<'write' | 'preview' | 'split'>('write');
+
+    // Textarea refs for MarkdownToolbar
+    const contentWriteRef = useRef<HTMLTextAreaElement>(null);
+    const contentSplitRef = useRef<HTMLTextAreaElement>(null);
+    const translationContentRefs = useRef<Record<string, HTMLTextAreaElement | null>>({});
+
     // Form state
     const emptyPost = {
         title: '',
@@ -94,6 +113,7 @@ export default function BlogContentPage() {
         featuredImage: '',
         metaTitle: '',
         metaDescription: '',
+        scheduledAt: '',
         translations: locales.slice(1).map(locale => ({
             locale: locale.code,
             title: '',
@@ -106,6 +126,15 @@ export default function BlogContentPage() {
     const [formData, setFormData] = useState(emptyPost);
     const [activeTab, setActiveTab] = useState<'content' | 'translations' | 'seo'>('content');
     const [activeTranslationLocale, setActiveTranslationLocale] = useState('tr');
+
+    // Word count / reading time
+    const wordCount = useMemo(() => {
+        const words = formData.content.trim().split(/\s+/).filter(Boolean);
+        return words.length;
+    }, [formData.content]);
+
+    const readingTime = useMemo(() => Math.max(1, Math.ceil(wordCount / 200)), [wordCount]);
+    const charCount = formData.content.length;
 
     // Fetch posts from API
     const fetchPosts = useCallback(async () => {
@@ -193,6 +222,7 @@ export default function BlogContentPage() {
             featuredImage: post.featuredImage || '',
             metaTitle: post.metaTitle || '',
             metaDescription: post.metaDescription || '',
+            scheduledAt: post.scheduledAt ? new Date(post.scheduledAt).toISOString().slice(0, 16) : '',
             translations: locales.slice(1).map(locale => {
                 const existing = post.translations.find(t => t.locale === locale.code);
                 return {
@@ -205,8 +235,10 @@ export default function BlogContentPage() {
                 };
             }),
         });
+        setSlugManuallyEdited(true);
         setShowEditModal(post.id);
         setActiveTab('content');
+        setContentViewMode('write');
     };
 
     const savePost = async () => {
@@ -215,7 +247,7 @@ export default function BlogContentPage() {
         setError(null);
 
         try {
-            const postData = {
+            const postData: Record<string, unknown> = {
                 title: formData.title,
                 slug: formData.slug || formData.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, ''),
                 excerpt: formData.excerpt || undefined,
@@ -229,6 +261,12 @@ export default function BlogContentPage() {
                 metaDescription: formData.metaDescription || undefined,
                 translations: formData.translations.filter(t => t.title && t.content),
             };
+
+            if (formData.scheduledAt) {
+                postData.scheduledAt = new Date(formData.scheduledAt).toISOString();
+            } else if (showEditModal) {
+                postData.scheduledAt = null;
+            }
 
             if (showEditModal) {
                 const res = await fetch(`/api/admin/blog/posts/${showEditModal}`, {
@@ -283,6 +321,64 @@ export default function BlogContentPage() {
         }
     };
 
+    const duplicatePost = async (id: string) => {
+        try {
+            const res = await fetch(`/api/admin/blog/posts/${id}/duplicate`, { method: 'POST' });
+            const data = await res.json();
+            if (data.success) {
+                await fetchPosts();
+            } else {
+                setError(data.message || 'Failed to duplicate post');
+            }
+        } catch (err) {
+            setError('Failed to duplicate post');
+            console.error('Error duplicating post:', err);
+        }
+    };
+
+    // Bulk actions
+    const toggleSelect = (id: string) => {
+        setSelectedIds(prev => {
+            const next = new Set(prev);
+            if (next.has(id)) next.delete(id);
+            else next.add(id);
+            return next;
+        });
+    };
+
+    const toggleSelectAll = () => {
+        if (selectedIds.size === posts.length) {
+            setSelectedIds(new Set());
+        } else {
+            setSelectedIds(new Set(posts.map(p => p.id)));
+        }
+    };
+
+    const bulkAction = async (action: 'PUBLISHED' | 'DRAFT' | 'ARCHIVED' | 'DELETE') => {
+        const ids = Array.from(selectedIds);
+        if (ids.length === 0) return;
+
+        try {
+            for (const id of ids) {
+                if (action === 'DELETE') {
+                    await fetch(`/api/admin/blog/posts/${id}`, { method: 'DELETE' });
+                } else {
+                    await fetch(`/api/admin/blog/posts/${id}`, {
+                        method: 'PATCH',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ status: action }),
+                    });
+                }
+            }
+            setSelectedIds(new Set());
+            setBulkMode(false);
+            await fetchPosts();
+        } catch (err) {
+            setError('Bulk action failed');
+            console.error('Error performing bulk action:', err);
+        }
+    };
+
     const updateTranslation = (locale: string, field: string, value: string) => {
         setFormData(prev => ({
             ...prev,
@@ -292,7 +388,7 @@ export default function BlogContentPage() {
         }));
     };
 
-    const PostModal = ({ isEdit = false }: { isEdit?: boolean }) => (
+    const renderPostModal = (isEdit: boolean) => (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
             <div className="bg-white rounded-2xl w-full max-w-4xl max-h-[90vh] overflow-hidden shadow-xl">
                 <div className="px-6 py-4 border-b border-gray-200 flex items-center justify-between">
@@ -304,6 +400,8 @@ export default function BlogContentPage() {
                             isEdit ? setShowEditModal(null) : setShowAddModal(false);
                             setFormData(emptyPost);
                             setActiveTab('content');
+                            setSlugManuallyEdited(false);
+                            setContentViewMode('write');
                         }}
                         className="p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg"
                     >
@@ -369,25 +467,36 @@ export default function BlogContentPage() {
                                 <input
                                     type="text"
                                     value={formData.title}
-                                    onChange={(e) => setFormData(prev => ({
-                                        ...prev,
-                                        title: e.target.value,
-                                        slug: e.target.value.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, ''),
-                                        metaTitle: prev.metaTitle || e.target.value,
-                                    }))}
+                                    onChange={(e) => {
+                                        const newTitle = e.target.value;
+                                        setFormData(prev => ({
+                                            ...prev,
+                                            title: newTitle,
+                                            slug: slugManuallyEdited ? prev.slug : newTitle.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, ''),
+                                            metaTitle: prev.metaTitle || newTitle,
+                                        }));
+                                    }}
                                     placeholder="Enter post title..."
                                     className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
                                 />
                             </div>
 
                             <div>
-                                <label className="block text-sm font-medium text-gray-700 mb-1">URL Slug</label>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">
+                                    URL Slug
+                                    {!slugManuallyEdited && (
+                                        <span className="ml-2 px-2 py-0.5 text-xs bg-blue-100 text-blue-600 rounded-full">Auto-generated</span>
+                                    )}
+                                </label>
                                 <div className="flex items-center">
                                     <span className="px-3 py-2 bg-gray-100 border border-r-0 border-gray-200 rounded-l-lg text-sm text-gray-500">/blog/</span>
                                     <input
                                         type="text"
                                         value={formData.slug}
-                                        onChange={(e) => setFormData(prev => ({ ...prev, slug: e.target.value }))}
+                                        onChange={(e) => {
+                                            setSlugManuallyEdited(true);
+                                            setFormData(prev => ({ ...prev, slug: e.target.value }));
+                                        }}
                                         className="flex-1 px-4 py-2 border border-gray-200 rounded-r-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
                                     />
                                 </div>
@@ -408,15 +517,95 @@ export default function BlogContentPage() {
                                 />
                             </div>
 
+                            {/* Content with Markdown Preview */}
                             <div>
-                                <label className="block text-sm font-medium text-gray-700 mb-1">Content (English) *</label>
-                                <textarea
-                                    value={formData.content}
-                                    onChange={(e) => setFormData(prev => ({ ...prev, content: e.target.value }))}
-                                    rows={10}
-                                    placeholder="Write your blog post content here... (Markdown supported)"
-                                    className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent resize-none font-mono text-sm"
-                                />
+                                <div className="flex items-center justify-between mb-1">
+                                    <label className="block text-sm font-medium text-gray-700">Content (English) *</label>
+                                    <div className="flex items-center gap-1 bg-gray-100 rounded-lg p-0.5">
+                                        <button
+                                            onClick={() => setContentViewMode('write')}
+                                            className={`px-3 py-1 text-xs rounded-md transition-colors ${contentViewMode === 'write' ? 'bg-white shadow text-gray-900 font-medium' : 'text-gray-500'}`}
+                                        >
+                                            Write
+                                        </button>
+                                        <button
+                                            onClick={() => setContentViewMode('preview')}
+                                            className={`px-3 py-1 text-xs rounded-md transition-colors ${contentViewMode === 'preview' ? 'bg-white shadow text-gray-900 font-medium' : 'text-gray-500'}`}
+                                        >
+                                            Preview
+                                        </button>
+                                        <button
+                                            onClick={() => setContentViewMode('split')}
+                                            className={`px-3 py-1 text-xs rounded-md transition-colors ${contentViewMode === 'split' ? 'bg-white shadow text-gray-900 font-medium' : 'text-gray-500'}`}
+                                        >
+                                            Split
+                                        </button>
+                                    </div>
+                                </div>
+
+                                {contentViewMode === 'write' && (
+                                    <div>
+                                        <MarkdownToolbar
+                                            textareaRef={contentWriteRef}
+                                            value={formData.content}
+                                            onChange={(val) => setFormData(prev => ({ ...prev, content: val }))}
+                                        />
+                                        <textarea
+                                            ref={contentWriteRef}
+                                            value={formData.content}
+                                            onChange={(e) => setFormData(prev => ({ ...prev, content: e.target.value }))}
+                                            rows={12}
+                                            placeholder="Write your blog post content here... (Markdown supported)"
+                                            className="w-full px-4 py-2 border border-gray-200 rounded-b-lg rounded-t-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent resize-none font-mono text-sm"
+                                        />
+                                    </div>
+                                )}
+
+                                {contentViewMode === 'preview' && (
+                                    <div className="border border-gray-200 rounded-lg p-4 min-h-[300px] prose prose-sm max-w-none prose-headings:text-gray-900 prose-p:text-gray-600 prose-a:text-emerald-600">
+                                        {formData.content ? (
+                                            <ReactMarkdown>{formData.content}</ReactMarkdown>
+                                        ) : (
+                                            <p className="text-gray-400 italic">Nothing to preview yet...</p>
+                                        )}
+                                    </div>
+                                )}
+
+                                {contentViewMode === 'split' && (
+                                    <div className="grid grid-cols-2 gap-4">
+                                        <div>
+                                            <MarkdownToolbar
+                                                textareaRef={contentSplitRef}
+                                                value={formData.content}
+                                                onChange={(val) => setFormData(prev => ({ ...prev, content: val }))}
+                                            />
+                                            <textarea
+                                                ref={contentSplitRef}
+                                                value={formData.content}
+                                                onChange={(e) => setFormData(prev => ({ ...prev, content: e.target.value }))}
+                                                rows={12}
+                                                placeholder="Write your blog post content here... (Markdown supported)"
+                                                className="w-full px-4 py-2 border border-gray-200 rounded-b-lg rounded-t-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent resize-none font-mono text-sm"
+                                            />
+                                        </div>
+                                        <div className="border border-gray-200 rounded-lg p-4 overflow-y-auto max-h-[300px] prose prose-sm max-w-none prose-headings:text-gray-900 prose-p:text-gray-600 prose-a:text-emerald-600">
+                                            {formData.content ? (
+                                                <ReactMarkdown>{formData.content}</ReactMarkdown>
+                                            ) : (
+                                                <p className="text-gray-400 italic">Preview will appear here...</p>
+                                            )}
+                                        </div>
+                                    </div>
+                                )}
+
+                                {/* Word count & reading time */}
+                                <div className="flex items-center gap-3 mt-1 text-xs text-gray-400">
+                                    <span>{wordCount} words</span>
+                                    <span>|</span>
+                                    <span>{readingTime} min read</span>
+                                    <span>|</span>
+                                    <span>{charCount} characters</span>
+                                </div>
                             </div>
 
                             {/* Featured image */}
@@ -462,6 +651,24 @@ export default function BlogContentPage() {
                                     </select>
                                 </div>
                             </div>
+
+                            {/* Scheduled Publishing */}
+                            {formData.status === 'DRAFT' && (
+                                <div>
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">Schedule Publishing</label>
+                                    <input
+                                        type="datetime-local"
+                                        value={formData.scheduledAt}
+                                        onChange={(e) => setFormData(prev => ({ ...prev, scheduledAt: e.target.value }))}
+                                        className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                                    />
+                                    {formData.scheduledAt && (
+                                        <p className="mt-1 text-xs text-blue-600">
+                                            Will auto-publish on {new Date(formData.scheduledAt).toLocaleString()}
+                                        </p>
+                                    )}
+                                </div>
+                            )}
 
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-1">Tags (comma-separated)</label>
@@ -551,12 +758,18 @@ export default function BlogContentPage() {
 
                                     <div>
                                         <label className="block text-sm font-medium text-gray-700 mb-1">Content ({locale.name})</label>
+                                        <MarkdownToolbar
+                                            textareaRef={{ current: translationContentRefs.current[locale.code] ?? null }}
+                                            value={formData.translations.find(t => t.locale === locale.code)?.content || ''}
+                                            onChange={(val) => updateTranslation(locale.code, 'content', val)}
+                                        />
                                         <textarea
+                                            ref={(el) => { translationContentRefs.current[locale.code] = el; }}
                                             value={formData.translations.find(t => t.locale === locale.code)?.content || ''}
                                             onChange={(e) => updateTranslation(locale.code, 'content', e.target.value)}
                                             rows={10}
                                             placeholder={`Write content in ${locale.name}... (Markdown supported)`}
-                                            className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent resize-none font-mono text-sm"
+                                            className="w-full px-4 py-2 border border-gray-200 rounded-b-lg rounded-t-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent resize-none font-mono text-sm"
                                             dir={locale.code === 'ar' || locale.code === 'ur' ? 'rtl' : 'ltr'}
                                         />
                                     </div>
@@ -666,6 +879,8 @@ export default function BlogContentPage() {
                                 isEdit ? setShowEditModal(null) : setShowAddModal(false);
                                 setFormData(emptyPost);
                                 setActiveTab('content');
+                                setSlugManuallyEdited(false);
+                                setContentViewMode('write');
                             }}
                             className="px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
                         >
@@ -695,6 +910,12 @@ export default function BlogContentPage() {
                 </div>
                 <div className="flex items-center gap-2">
                     <button
+                        onClick={() => { setBulkMode(!bulkMode); setSelectedIds(new Set()); }}
+                        className={`px-3 py-2 text-sm rounded-lg transition-colors ${bulkMode ? 'bg-blue-100 text-blue-700' : 'text-gray-500 hover:text-gray-700 hover:bg-gray-100'}`}
+                    >
+                        {bulkMode ? 'Cancel Selection' : 'Select'}
+                    </button>
+                    <button
                         onClick={fetchPosts}
                         className="p-2 text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
                         title="Refresh"
@@ -702,7 +923,7 @@ export default function BlogContentPage() {
                         <ArrowPathIcon className={`w-5 h-5 ${loading ? 'animate-spin' : ''}`} />
                     </button>
                     <button
-                        onClick={() => setShowAddModal(true)}
+                        onClick={() => { setShowAddModal(true); setSlugManuallyEdited(false); setContentViewMode('write'); }}
                         className="flex items-center gap-2 px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors"
                     >
                         <PlusIcon className="w-5 h-5" />
@@ -710,6 +931,27 @@ export default function BlogContentPage() {
                     </button>
                 </div>
             </div>
+
+            {/* Bulk Actions Bar */}
+            {bulkMode && selectedIds.size > 0 && (
+                <div className="flex items-center gap-3 bg-blue-50 border border-blue-200 rounded-lg px-4 py-3">
+                    <span className="text-sm font-medium text-blue-800">{selectedIds.size} selected</span>
+                    <div className="flex items-center gap-2 ml-auto">
+                        <button onClick={() => bulkAction('PUBLISHED')} className="px-3 py-1.5 text-xs font-medium bg-emerald-600 text-white rounded-lg hover:bg-emerald-700">
+                            Publish
+                        </button>
+                        <button onClick={() => bulkAction('DRAFT')} className="px-3 py-1.5 text-xs font-medium bg-yellow-500 text-white rounded-lg hover:bg-yellow-600">
+                            Draft
+                        </button>
+                        <button onClick={() => bulkAction('ARCHIVED')} className="px-3 py-1.5 text-xs font-medium bg-gray-500 text-white rounded-lg hover:bg-gray-600">
+                            Archive
+                        </button>
+                        <button onClick={() => { if (confirm(`Delete ${selectedIds.size} posts?`)) bulkAction('DELETE'); }} className="px-3 py-1.5 text-xs font-medium bg-red-600 text-white rounded-lg hover:bg-red-700">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            )}
 
             {/* Error Message */}
             {error && (
@@ -784,7 +1026,6 @@ export default function BlogContentPage() {
                 </div>
 
                 <div className="flex flex-wrap items-center gap-2">
-                    {/* Category Filter */}
                     <select
                         value={selectedCategory}
                         onChange={(e) => setSelectedCategory(e.target.value)}
@@ -795,7 +1036,6 @@ export default function BlogContentPage() {
                         ))}
                     </select>
 
-                    {/* Status Filter */}
                     <div className="flex items-center gap-1 bg-white border border-gray-200 rounded-lg p-1">
                         <button
                             onClick={() => setStatusFilter('all')}
@@ -817,7 +1057,6 @@ export default function BlogContentPage() {
                         </button>
                     </div>
 
-                    {/* View Toggle */}
                     <div className="flex items-center gap-1 bg-white border border-gray-200 rounded-lg p-1">
                         <button
                             onClick={() => setViewMode('list')}
@@ -839,6 +1078,21 @@ export default function BlogContentPage() {
                 </div>
             </div>
 
+            {/* Bulk select all */}
+            {bulkMode && posts.length > 0 && (
+                <div className="flex items-center gap-2">
+                    <label className="flex items-center gap-2 cursor-pointer text-sm text-gray-600">
+                        <input
+                            type="checkbox"
+                            checked={selectedIds.size === posts.length}
+                            onChange={toggleSelectAll}
+                            className="w-4 h-4 rounded border-gray-300 text-emerald-600"
+                        />
+                        Select all ({posts.length})
+                    </label>
+                </div>
+            )}
+
             {/* Loading State */}
             {loading && (
                 <div className="flex items-center justify-center py-12">
@@ -852,6 +1106,18 @@ export default function BlogContentPage() {
                     {posts.map((post) => (
                         <div key={post.id} className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition-all">
                             <div className="flex">
+                                {/* Checkbox for bulk mode */}
+                                {bulkMode && (
+                                    <div className="flex items-center px-3">
+                                        <input
+                                            type="checkbox"
+                                            checked={selectedIds.has(post.id)}
+                                            onChange={() => toggleSelect(post.id)}
+                                            className="w-4 h-4 rounded border-gray-300 text-emerald-600"
+                                        />
+                                    </div>
+                                )}
+
                                 {/* Featured Image */}
                                 <div className="w-48 h-40 flex-shrink-0 bg-gradient-to-br from-emerald-400 to-blue-500 relative">
                                     {post.featuredImage ? (
@@ -882,16 +1148,20 @@ export default function BlogContentPage() {
                                                 <span className="px-2 py-0.5 text-xs font-medium rounded-full bg-gray-100 text-gray-600">
                                                     {post.category}
                                                 </span>
-                                                {/* Translation count */}
                                                 <span className="px-2 py-0.5 text-xs font-medium rounded-full bg-blue-50 text-blue-600 flex items-center gap-1">
                                                     <LanguageIcon className="w-3 h-3" />
                                                     {post.translations.length + 1} lang
                                                 </span>
+                                                {post.scheduledAt && post.status === 'DRAFT' && (
+                                                    <span className="px-2 py-0.5 text-xs font-medium rounded-full bg-blue-100 text-blue-700 flex items-center gap-1">
+                                                        <ClockIcon className="w-3 h-3" />
+                                                        Scheduled
+                                                    </span>
+                                                )}
                                             </div>
                                             <h3 className="font-semibold text-gray-900 mb-1 line-clamp-1">{post.title}</h3>
                                             <p className="text-sm text-gray-500 mb-2 line-clamp-2">{post.excerpt}</p>
 
-                                            {/* Meta */}
                                             <div className="flex items-center gap-4 text-xs text-gray-500">
                                                 <div className="flex items-center gap-1">
                                                     <CalendarIcon className="w-3 h-3" />
@@ -899,7 +1169,6 @@ export default function BlogContentPage() {
                                                 </div>
                                             </div>
 
-                                            {/* Tags */}
                                             <div className="flex flex-wrap gap-1 mt-2">
                                                 {post.tags.slice(0, 3).map((tag, idx) => (
                                                     <span key={idx} className="px-2 py-0.5 text-xs bg-gray-100 text-gray-600 rounded">
@@ -926,6 +1195,13 @@ export default function BlogContentPage() {
                                                 title={post.featured ? 'Remove from featured' : 'Add to featured'}
                                             >
                                                 <StarIcon className="w-4 h-4" />
+                                            </button>
+                                            <button
+                                                onClick={() => duplicatePost(post.id)}
+                                                className="p-1.5 text-gray-400 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
+                                                title="Duplicate"
+                                            >
+                                                <DocumentDuplicateIcon className="w-4 h-4" />
                                             </button>
                                             <button
                                                 onClick={() => setShowSeoPreview(post.id)}
@@ -962,7 +1238,17 @@ export default function BlogContentPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {posts.map((post) => (
                         <div key={post.id} className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition-all group">
-                            {/* Featured Image */}
+                            {/* Checkbox for bulk mode */}
+                            {bulkMode && (
+                                <div className="absolute top-3 right-3 z-10">
+                                    <input
+                                        type="checkbox"
+                                        checked={selectedIds.has(post.id)}
+                                        onChange={() => toggleSelect(post.id)}
+                                        className="w-4 h-4 rounded border-gray-300 text-emerald-600"
+                                    />
+                                </div>
+                            )}
                             <div className="relative aspect-video bg-gradient-to-br from-emerald-400 to-blue-500">
                                 {post.featuredImage ? (
                                     <img src={post.featuredImage} alt={post.title} className="w-full h-full object-cover" />
@@ -982,7 +1268,6 @@ export default function BlogContentPage() {
                                         {post.status}
                                     </span>
                                 </div>
-                                {/* Hover overlay */}
                                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-3">
                                     <button
                                         onClick={() => openEditModal(post)}
@@ -990,8 +1275,11 @@ export default function BlogContentPage() {
                                     >
                                         <PencilIcon className="w-5 h-5" />
                                     </button>
-                                    <button className="p-3 bg-white/20 hover:bg-white/30 rounded-full text-white transition-colors">
-                                        <EyeIcon className="w-5 h-5" />
+                                    <button
+                                        onClick={() => duplicatePost(post.id)}
+                                        className="p-3 bg-white/20 hover:bg-white/30 rounded-full text-white transition-colors"
+                                    >
+                                        <DocumentDuplicateIcon className="w-5 h-5" />
                                     </button>
                                     <button
                                         onClick={() => setShowDeleteModal(post.id)}
@@ -1018,7 +1306,6 @@ export default function BlogContentPage() {
                                     {post.publishedAt ? new Date(post.publishedAt).toLocaleDateString() : 'Draft'}
                                 </div>
 
-                                {/* Actions */}
                                 <div className="flex items-center justify-between pt-3 border-t border-gray-100 mt-3">
                                     <button
                                         onClick={() => toggleFeatured(post.id, post.featured)}
@@ -1099,8 +1386,8 @@ export default function BlogContentPage() {
             )}
 
             {/* Add/Edit Modal */}
-            {showAddModal && <PostModal />}
-            {showEditModal && <PostModal isEdit />}
+            {showAddModal && renderPostModal(false)}
+            {showEditModal && renderPostModal(true)}
 
             {/* SEO Preview Modal */}
             {showSeoPreview && (

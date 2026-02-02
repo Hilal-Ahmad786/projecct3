@@ -6,7 +6,7 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider  = "postgresql"
 }
 
 // Lead Model - Main contact/lead information
@@ -283,6 +283,7 @@ model BlogPost {
 
   // Dates
   publishedAt   DateTime?
+  scheduledAt   DateTime?
   createdAt     DateTime        @default(now())
   updatedAt     DateTime        @updatedAt
 
@@ -337,4 +338,187 @@ model BlogCategory {
 
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
+}
+
+// Notification Model - Admin notifications
+model Notification {
+  id        String   @id @default(cuid())
+  userId    String?
+  type      String   @default("info") // info, success, warning, error, lead, message, request
+  priority  String   @default("medium") // low, medium, high, urgent
+  title     String
+  message   String
+  read      Boolean  @default(false)
+  actionUrl String?
+  metadata  Json?
+
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+  @@index([read])
+  @@index([createdAt])
+}
+
+// Service Model - Company services
+model Service {
+  id               String   @id @default(cuid())
+  name             String
+  slug             String   @unique
+  description      String?
+  shortDescription String?  @db.Text
+  fullDescription  String?  @db.Text
+  icon             String?
+  heroImage        String?
+  features         String[]
+  benefits         String[]
+  content          Json?    // process, technologies, portfolio, faq
+  status           String   @default("published") // published, draft
+  featured         Boolean  @default(false)
+  order            Int      @default(0)
+  color            String?
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // Relations
+  pricingPackages PricingPackage[]
+  translations    ServiceTranslation[]
+
+  @@index([slug])
+  @@index([status])
+}
+
+// Service Translation Model
+model ServiceTranslation {
+  id               String   @id @default(cuid())
+  serviceId        String
+  service          Service  @relation(fields: [serviceId], references: [id], onDelete: Cascade)
+  locale           String   // en, tr, de, ur, ar
+  name             String
+  shortDescription String?  @db.Text
+  fullDescription  String?  @db.Text
+  features         String[]
+  benefits         String[]
+  content          Json?    // process, technologies, portfolio, faq in this locale
+  metaTitle        String?
+  metaDescription  String?  @db.Text
+
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  @@unique([serviceId, locale])
+  @@index([serviceId])
+  @@index([locale])
+}
+
+// Pricing Package Model
+model PricingPackage {
+  id          String   @id @default(cuid())
+  serviceId   String
+  service     Service  @relation(fields: [serviceId], references: [id], onDelete: Cascade)
+  tier        String   @default("starter") // starter, professional, enterprise
+  name        String
+  price       String
+  description String?
+  features      String[]
+  highlighted   Boolean  @default(false)
+  billingPeriod String   @default("monthly")
+  yearlyPrice   String?
+  ctaText       String?
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([serviceId])
+  @@index([tier])
+}
+
+// Project Model - Portfolio projects
+model Project {
+  id              String    @id @default(cuid())
+  name            String
+  slug            String    @unique
+  client          String?
+  category        String?
+  industry        String?
+  status          String    @default("published") // published, draft
+  featured        Boolean   @default(false)
+  thumbnail       String?
+  description     String?   @db.Text
+  fullDescription String?   @db.Text
+  challenge       String?   @db.Text
+  solution        String?   @db.Text
+  images          String[]
+  technologies    String[]
+  results         Json?     // array of { metric, value }
+  duration        String?
+  teamSize        String?
+  content         Json?     // flexible JSON for detailed project content
+  completedDate   DateTime?
+  projectUrl      String?
+
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  // Relations
+  translations    ProjectTranslation[]
+
+  @@index([slug])
+  @@index([status])
+  @@index([category])
+}
+
+// Project Translation Model
+model ProjectTranslation {
+  id              String   @id @default(cuid())
+  projectId       String
+  project         Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  locale          String   // en, tr, de, ur, ar
+  name            String
+  description     String?  @db.Text
+  fullDescription String?  @db.Text
+  challenge       String?  @db.Text
+  solution        String?  @db.Text
+  results         Json?
+  content         Json?
+
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@unique([projectId, locale])
+  @@index([projectId])
+  @@index([locale])
+}
+
+// Report Record Model - Generated reports
+model ReportRecord {
+  id             String    @id @default(cuid())
+  name           String
+  type           String    // traffic, leads, revenue, users
+  format         String    @default("PDF") // PDF, CSV, JSON, Excel
+  status         String    @default("completed") // pending, generating, completed, failed
+  fileUrl        String?
+  dateRangeStart DateTime?
+  dateRangeEnd   DateTime?
+  generatedBy    String?
+
+  createdAt      DateTime  @default(now())
+
+  @@index([type])
+  @@index([createdAt])
+}
+
+// Scheduled Report Model
+model ScheduledReport {
+  id        String   @id @default(cuid())
+  name      String
+  type      String   // traffic, leads, revenue, users
+  frequency String   // weekly, monthly, quarterly
+  nextRunAt DateTime?
+  status    String   @default("active") // active, paused
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([status])
 }

@@ -612,6 +612,913 @@ export async function updateAdminUserLastLogin(id: string) {
   });
 }
 
+// ==================== ADMIN USER CRUD QUERIES ====================
+
+export async function createAdminUser(data: {
+  email: string;
+  name: string;
+  password: string;
+  role?: 'SUPER_ADMIN' | 'ADMIN' | 'MANAGER' | 'VIEWER';
+}) {
+  // Dynamic import bcryptjs to avoid build issues
+  const bcrypt = await import('bcryptjs');
+  const passwordHash = await bcrypt.hash(data.password, 12);
+
+  return getPrismaClient().adminUser.create({
+    data: {
+      email: data.email,
+      name: data.name,
+      passwordHash,
+      role: data.role || 'VIEWER',
+    },
+    select: {
+      id: true,
+      email: true,
+      name: true,
+      role: true,
+      isActive: true,
+      lastLogin: true,
+      createdAt: true,
+    },
+  });
+}
+
+export async function updateAdminUser(
+  id: string,
+  data: {
+    name?: string;
+    email?: string;
+    role?: 'SUPER_ADMIN' | 'ADMIN' | 'MANAGER' | 'VIEWER';
+    isActive?: boolean;
+    password?: string;
+  }
+) {
+  const updateData: Record<string, unknown> = {};
+  if (data.name !== undefined) updateData.name = data.name;
+  if (data.email !== undefined) updateData.email = data.email;
+  if (data.role !== undefined) updateData.role = data.role;
+  if (data.isActive !== undefined) updateData.isActive = data.isActive;
+  if (data.password) {
+    const bcrypt = await import('bcryptjs');
+    updateData.passwordHash = await bcrypt.hash(data.password, 12);
+  }
+
+  return getPrismaClient().adminUser.update({
+    where: { id },
+    data: updateData,
+    select: {
+      id: true,
+      email: true,
+      name: true,
+      role: true,
+      isActive: true,
+      lastLogin: true,
+      createdAt: true,
+    },
+  });
+}
+
+export async function deleteAdminUser(id: string) {
+  return getPrismaClient().adminUser.delete({ where: { id } });
+}
+
+// ==================== SETTINGS QUERIES ====================
+
+export async function getSettings(category?: string) {
+  const where = category ? { category } : {};
+  return getPrismaClient().setting.findMany({ where, orderBy: { key: 'asc' } });
+}
+
+export async function getSetting(key: string) {
+  return getPrismaClient().setting.findUnique({ where: { key } });
+}
+
+export async function upsertSetting(key: string, value: unknown, category: string = 'general') {
+  return getPrismaClient().setting.upsert({
+    where: { key },
+    update: { value: value as any, category },
+    create: { key, value: value as any, category },
+  });
+}
+
+export async function bulkUpsertSettings(settings: Array<{ key: string; value: unknown; category?: string }>) {
+  const results = [];
+  for (const s of settings) {
+    const result = await upsertSetting(s.key, s.value, s.category || 'general');
+    results.push(result);
+  }
+  return results;
+}
+
+// ==================== NOTIFICATION QUERIES ====================
+
+export async function getNotifications(
+  userId?: string,
+  filters: { read?: boolean; type?: string } = {},
+  pagination: PaginationParams = {}
+) {
+  const { page = 1, limit = 20, sortOrder = 'desc' } = pagination;
+  const skip = (page - 1) * limit;
+
+  const where: Record<string, unknown> = {};
+  if (userId) where.userId = userId;
+  if (filters.read !== undefined) where.read = filters.read;
+  if (filters.type) where.type = filters.type;
+
+  const [data, total] = await Promise.all([
+    getPrismaClient().notification.findMany({
+      where,
+      orderBy: { createdAt: sortOrder },
+      skip,
+      take: limit,
+    }),
+    getPrismaClient().notification.count({ where }),
+  ]);
+
+  return { data, total, page, limit, totalPages: Math.ceil(total / limit) };
+}
+
+export async function createNotification(data: {
+  userId?: string;
+  type?: string;
+  priority?: string;
+  title: string;
+  message: string;
+  actionUrl?: string;
+  metadata?: Record<string, unknown>;
+}) {
+  return getPrismaClient().notification.create({ data });
+}
+
+export async function markNotificationRead(id: string) {
+  return getPrismaClient().notification.update({
+    where: { id },
+    data: { read: true },
+  });
+}
+
+export async function markAllNotificationsRead(userId?: string) {
+  const where: Record<string, unknown> = { read: false };
+  if (userId) where.userId = userId;
+  return getPrismaClient().notification.updateMany({
+    where,
+    data: { read: true },
+  });
+}
+
+export async function deleteNotification(id: string) {
+  return getPrismaClient().notification.delete({ where: { id } });
+}
+
+export async function getUnreadCount(userId?: string) {
+  const where: Record<string, unknown> = { read: false };
+  if (userId) where.userId = userId;
+  return getPrismaClient().notification.count({ where });
+}
+
+// ==================== SERVICE QUERIES ====================
+
+export interface ServiceFilters {
+  status?: string;
+  featured?: boolean;
+  search?: string;
+}
+
+export async function getServices(
+  filters: ServiceFilters = {},
+  pagination: PaginationParams = {}
+) {
+  const { page = 1, limit = 50, sortBy = 'order', sortOrder = 'asc' } = pagination;
+  const skip = (page - 1) * limit;
+
+  const where: Record<string, unknown> = {};
+  if (filters.status) where.status = filters.status;
+  if (filters.featured !== undefined) where.featured = filters.featured;
+  if (filters.search) {
+    where.OR = [
+      { name: { contains: filters.search, mode: 'insensitive' } },
+      { description: { contains: filters.search, mode: 'insensitive' } },
+    ];
+  }
+
+  const [data, total] = await Promise.all([
+    getPrismaClient().service.findMany({
+      where,
+      include: { _count: { select: { pricingPackages: true } } },
+      orderBy: { [sortBy]: sortOrder },
+      skip,
+      take: limit,
+    }),
+    getPrismaClient().service.count({ where }),
+  ]);
+
+  return { data, total, page, limit, totalPages: Math.ceil(total / limit) };
+}
+
+export async function getServiceById(id: string) {
+  return getPrismaClient().service.findUnique({
+    where: { id },
+    include: { pricingPackages: true, translations: true },
+  });
+}
+
+export async function createService(data: {
+  name: string;
+  slug: string;
+  description?: string;
+  shortDescription?: string;
+  fullDescription?: string;
+  icon?: string;
+  heroImage?: string;
+  features?: string[];
+  benefits?: string[];
+  content?: any;
+  status?: string;
+  featured?: boolean;
+  order?: number;
+  color?: string;
+}) {
+  return getPrismaClient().service.create({ data });
+}
+
+export async function updateService(id: string, data: {
+  name?: string;
+  slug?: string;
+  description?: string;
+  shortDescription?: string;
+  fullDescription?: string;
+  icon?: string;
+  heroImage?: string;
+  features?: string[];
+  benefits?: string[];
+  content?: any;
+  status?: string;
+  featured?: boolean;
+  order?: number;
+  color?: string;
+}) {
+  return getPrismaClient().service.update({ where: { id }, data });
+}
+
+export async function reorderServices(orders: { id: string; order: number }[]) {
+  const prisma = getPrismaClient();
+  return prisma.$transaction(
+    orders.map(({ id, order }) =>
+      prisma.service.update({ where: { id }, data: { order } })
+    )
+  );
+}
+
+export async function deleteService(id: string) {
+  return getPrismaClient().service.delete({ where: { id } });
+}
+
+// ==================== PRICING PACKAGE QUERIES ====================
+
+export async function getPricingPackages(serviceId?: string) {
+  const where = serviceId ? { serviceId } : {};
+  return getPrismaClient().pricingPackage.findMany({
+    where,
+    include: { service: { select: { id: true, name: true, slug: true } } },
+    orderBy: [{ service: { order: 'asc' } }, { tier: 'asc' }],
+  });
+}
+
+export async function createPricingPackage(data: {
+  serviceId: string;
+  tier?: string;
+  name: string;
+  price: string;
+  description?: string;
+  features?: string[];
+  highlighted?: boolean;
+  billingPeriod?: string;
+  yearlyPrice?: string;
+  ctaText?: string;
+}) {
+  return getPrismaClient().pricingPackage.create({
+    data,
+    include: { service: { select: { id: true, name: true, slug: true } } },
+  });
+}
+
+export async function updatePricingPackage(id: string, data: {
+  tier?: string;
+  name?: string;
+  price?: string;
+  description?: string;
+  features?: string[];
+  highlighted?: boolean;
+  billingPeriod?: string;
+  yearlyPrice?: string;
+  ctaText?: string;
+}) {
+  return getPrismaClient().pricingPackage.update({
+    where: { id },
+    data,
+    include: { service: { select: { id: true, name: true, slug: true } } },
+  });
+}
+
+export async function duplicatePricingPackage(id: string) {
+  const prisma = getPrismaClient();
+  const original = await prisma.pricingPackage.findUnique({ where: { id } });
+  if (!original) throw new Error('Package not found');
+
+  return prisma.pricingPackage.create({
+    data: {
+      serviceId: original.serviceId,
+      tier: original.tier,
+      name: `${original.name} (Copy)`,
+      price: original.price,
+      description: original.description,
+      features: original.features,
+      highlighted: false,
+      billingPeriod: original.billingPeriod,
+      yearlyPrice: original.yearlyPrice,
+      ctaText: original.ctaText,
+    },
+    include: { service: { select: { id: true, name: true, slug: true } } },
+  });
+}
+
+export async function deletePricingPackage(id: string) {
+  return getPrismaClient().pricingPackage.delete({ where: { id } });
+}
+
+// ==================== PROJECT QUERIES ====================
+
+export interface ProjectFilters {
+  status?: string;
+  category?: string;
+  featured?: boolean;
+  search?: string;
+}
+
+export async function getProjects(
+  filters: ProjectFilters = {},
+  pagination: PaginationParams = {}
+) {
+  const { page = 1, limit = 20, sortBy = 'createdAt', sortOrder = 'desc' } = pagination;
+  const skip = (page - 1) * limit;
+
+  const where: Record<string, unknown> = {};
+  if (filters.status) where.status = filters.status;
+  if (filters.category) where.category = filters.category;
+  if (filters.featured !== undefined) where.featured = filters.featured;
+  if (filters.search) {
+    where.OR = [
+      { name: { contains: filters.search, mode: 'insensitive' } },
+      { client: { contains: filters.search, mode: 'insensitive' } },
+      { description: { contains: filters.search, mode: 'insensitive' } },
+    ];
+  }
+
+  const [data, total] = await Promise.all([
+    getPrismaClient().project.findMany({
+      where,
+      orderBy: { [sortBy]: sortOrder },
+      skip,
+      take: limit,
+    }),
+    getPrismaClient().project.count({ where }),
+  ]);
+
+  return { data, total, page, limit, totalPages: Math.ceil(total / limit) };
+}
+
+export async function getProjectById(id: string) {
+  return getPrismaClient().project.findUnique({
+    where: { id },
+    include: { translations: true },
+  });
+}
+
+export async function createProject(data: {
+  name: string;
+  slug: string;
+  client?: string;
+  category?: string;
+  industry?: string;
+  status?: string;
+  featured?: boolean;
+  thumbnail?: string;
+  description?: string;
+  fullDescription?: string;
+  challenge?: string;
+  solution?: string;
+  images?: string[];
+  technologies?: string[];
+  results?: any;
+  duration?: string;
+  teamSize?: string;
+  content?: any;
+  completedDate?: Date;
+  projectUrl?: string;
+}) {
+  return getPrismaClient().project.create({ data });
+}
+
+export async function updateProject(id: string, data: {
+  name?: string;
+  slug?: string;
+  client?: string;
+  category?: string;
+  industry?: string;
+  status?: string;
+  featured?: boolean;
+  thumbnail?: string;
+  description?: string;
+  fullDescription?: string;
+  challenge?: string;
+  solution?: string;
+  images?: string[];
+  technologies?: string[];
+  results?: any;
+  duration?: string;
+  teamSize?: string;
+  content?: any;
+  completedDate?: Date;
+  projectUrl?: string;
+}) {
+  return getPrismaClient().project.update({ where: { id }, data });
+}
+
+export async function deleteProject(id: string) {
+  return getPrismaClient().project.delete({ where: { id } });
+}
+
+// ==================== SERVICE TRANSLATION QUERIES ====================
+
+export async function getServiceTranslations(serviceId: string) {
+  return getPrismaClient().serviceTranslation.findMany({
+    where: { serviceId },
+    orderBy: { locale: 'asc' },
+  });
+}
+
+export async function upsertServiceTranslation(serviceId: string, locale: string, data: {
+  name: string;
+  shortDescription?: string;
+  fullDescription?: string;
+  features?: string[];
+  benefits?: string[];
+  content?: any;
+  metaTitle?: string;
+  metaDescription?: string;
+}) {
+  const existing = await getPrismaClient().serviceTranslation.findUnique({
+    where: { serviceId_locale: { serviceId, locale } },
+  });
+
+  if (existing) {
+    return getPrismaClient().serviceTranslation.update({
+      where: { id: existing.id },
+      data,
+    });
+  }
+
+  return getPrismaClient().serviceTranslation.create({
+    data: { serviceId, locale, ...data },
+  });
+}
+
+export async function deleteServiceTranslation(serviceId: string, locale: string) {
+  return getPrismaClient().serviceTranslation.delete({
+    where: { serviceId_locale: { serviceId, locale } },
+  });
+}
+
+// ==================== PROJECT TRANSLATION QUERIES ====================
+
+export async function getProjectTranslations(projectId: string) {
+  return getPrismaClient().projectTranslation.findMany({
+    where: { projectId },
+    orderBy: { locale: 'asc' },
+  });
+}
+
+export async function upsertProjectTranslation(projectId: string, locale: string, data: {
+  name: string;
+  description?: string;
+  fullDescription?: string;
+  challenge?: string;
+  solution?: string;
+  results?: any;
+  content?: any;
+}) {
+  const existing = await getPrismaClient().projectTranslation.findUnique({
+    where: { projectId_locale: { projectId, locale } },
+  });
+
+  if (existing) {
+    return getPrismaClient().projectTranslation.update({
+      where: { id: existing.id },
+      data,
+    });
+  }
+
+  return getPrismaClient().projectTranslation.create({
+    data: { projectId, locale, ...data },
+  });
+}
+
+export async function deleteProjectTranslation(projectId: string, locale: string) {
+  return getPrismaClient().projectTranslation.delete({
+    where: { projectId_locale: { projectId, locale } },
+  });
+}
+
+// ==================== REPORT QUERIES ====================
+
+export async function getReportRecords(
+  filters: { type?: string } = {},
+  pagination: PaginationParams = {}
+) {
+  const { page = 1, limit = 20, sortOrder = 'desc' } = pagination;
+  const skip = (page - 1) * limit;
+
+  const where: Record<string, unknown> = {};
+  if (filters.type) where.type = filters.type;
+
+  const [data, total] = await Promise.all([
+    getPrismaClient().reportRecord.findMany({
+      where,
+      orderBy: { createdAt: sortOrder },
+      skip,
+      take: limit,
+    }),
+    getPrismaClient().reportRecord.count({ where }),
+  ]);
+
+  return { data, total, page, limit, totalPages: Math.ceil(total / limit) };
+}
+
+export async function createReportRecord(data: {
+  name: string;
+  type: string;
+  format?: string;
+  status?: string;
+  fileUrl?: string;
+  dateRangeStart?: Date;
+  dateRangeEnd?: Date;
+  generatedBy?: string;
+}) {
+  return getPrismaClient().reportRecord.create({ data });
+}
+
+export async function getScheduledReports() {
+  return getPrismaClient().scheduledReport.findMany({
+    orderBy: { createdAt: 'desc' },
+  });
+}
+
+export async function createScheduledReport(data: {
+  name: string;
+  type: string;
+  frequency: string;
+  nextRunAt?: Date;
+  status?: string;
+}) {
+  return getPrismaClient().scheduledReport.create({ data });
+}
+
+export async function updateScheduledReport(id: string, data: {
+  name?: string;
+  type?: string;
+  frequency?: string;
+  nextRunAt?: Date;
+  status?: string;
+}) {
+  return getPrismaClient().scheduledReport.update({ where: { id }, data });
+}
+
+// ==================== SECURITY QUERIES ====================
+
+export async function getSecurityEvents(days: number = 30) {
+  const startDate = new Date();
+  startDate.setDate(startDate.getDate() - days);
+
+  return getPrismaClient().analyticsEvent.findMany({
+    where: {
+      eventType: { in: ['security_alert', 'failed_login', 'blocked_ip'] },
+      createdAt: { gte: startDate },
+    },
+    orderBy: { createdAt: 'desc' },
+    take: 50,
+  });
+}
+
+export async function getSecuritySummary() {
+  const now = new Date();
+  const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const thirtyDaysAgo = new Date();
+  thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+
+  const [threatsToday, totalBlocked, checklist] = await Promise.all([
+    getPrismaClient().analyticsEvent.count({
+      where: {
+        eventType: { in: ['security_alert', 'failed_login', 'blocked_ip'] },
+        createdAt: { gte: todayStart },
+      },
+    }),
+    getPrismaClient().analyticsEvent.count({
+      where: {
+        eventType: { in: ['security_alert', 'failed_login', 'blocked_ip'] },
+        createdAt: { gte: thirtyDaysAgo },
+      },
+    }),
+    getPrismaClient().setting.findUnique({ where: { key: 'security_checklist' } }),
+  ]);
+
+  // Calculate security score from checklist
+  let securityScore = 100;
+  if (checklist?.value) {
+    const items = checklist.value as Array<{ name: string; status: boolean }>;
+    const passedCount = items.filter(i => i.status).length;
+    securityScore = items.length > 0 ? Math.round((passedCount / items.length) * 100) : 100;
+  }
+
+  return {
+    securityScore,
+    threatsToday,
+    totalBlocked,
+    sslActive: true,
+  };
+}
+
+export async function getBlockedIPs() {
+  const setting = await getPrismaClient().setting.findUnique({ where: { key: 'blocked_ips' } });
+  return (setting?.value as Array<{ ip: string; reason: string; blockedAt: string; attempts: number }>) || [];
+}
+
+export async function addBlockedIP(ip: string, reason: string) {
+  const current = await getBlockedIPs();
+  const updated = [...current, { ip, reason, blockedAt: new Date().toISOString(), attempts: 1 }];
+  await upsertSetting('blocked_ips', updated, 'security');
+  return updated;
+}
+
+export async function removeBlockedIP(ip: string) {
+  const current = await getBlockedIPs();
+  const updated = current.filter(item => item.ip !== ip);
+  await upsertSetting('blocked_ips', updated, 'security');
+  return updated;
+}
+
+export async function getSecurityChecklist() {
+  const setting = await getPrismaClient().setting.findUnique({ where: { key: 'security_checklist' } });
+  return (setting?.value as Array<{ name: string; status: boolean }>) || [];
+}
+
+export async function updateSecurityChecklist(items: Array<{ name: string; status: boolean }>) {
+  await upsertSetting('security_checklist', items, 'security');
+  return items;
+}
+
+// ==================== EXTENDED ANALYTICS QUERIES ====================
+
+export async function getAnalyticsMetrics(days: number = 7) {
+  const startDate = new Date();
+  startDate.setDate(startDate.getDate() - days);
+
+  const prevStartDate = new Date();
+  prevStartDate.setDate(prevStartDate.getDate() - days * 2);
+
+  const [currentPageViews, currentSessions, prevPageViews, prevSessions] = await Promise.all([
+    getPrismaClient().analyticsEvent.count({
+      where: { eventType: 'pageview', createdAt: { gte: startDate } },
+    }),
+    getPrismaClient().analyticsEvent.groupBy({
+      by: ['sessionId'],
+      where: { createdAt: { gte: startDate } },
+    }),
+    getPrismaClient().analyticsEvent.count({
+      where: { eventType: 'pageview', createdAt: { gte: prevStartDate, lt: startDate } },
+    }),
+    getPrismaClient().analyticsEvent.groupBy({
+      by: ['sessionId'],
+      where: { createdAt: { gte: prevStartDate, lt: startDate } },
+    }),
+  ]);
+
+  const uniqueVisitors = currentSessions.length;
+  const prevUniqueVisitors = prevSessions.length;
+  const avgPerSession = uniqueVisitors > 0 ? (currentPageViews / uniqueVisitors).toFixed(1) : '0';
+
+  return {
+    pageViews: currentPageViews,
+    pageViewsChange: prevPageViews > 0 ? Math.round(((currentPageViews - prevPageViews) / prevPageViews) * 100) : 0,
+    uniqueVisitors,
+    uniqueVisitorsChange: prevUniqueVisitors > 0 ? Math.round(((uniqueVisitors - prevUniqueVisitors) / prevUniqueVisitors) * 100) : 0,
+    avgPerSession: parseFloat(avgPerSession),
+    bounceRate: 0, // Would need more complex session analysis
+  };
+}
+
+export async function getTrafficSources(days: number = 7) {
+  const startDate = new Date();
+  startDate.setDate(startDate.getDate() - days);
+
+  const events = await getPrismaClient().analyticsEvent.groupBy({
+    by: ['referrer'],
+    where: { createdAt: { gte: startDate } },
+    _count: true,
+    orderBy: { _count: { referrer: 'desc' } },
+  });
+
+  const total = events.reduce((sum, e) => sum + e._count, 0);
+
+  return events.map(e => ({
+    source: categorizeReferrer(e.referrer),
+    referrer: e.referrer || 'Direct',
+    visitors: e._count,
+    percentage: total > 0 ? Math.round((e._count / total) * 100) : 0,
+  }));
+}
+
+function categorizeReferrer(referrer: string | null): string {
+  if (!referrer) return 'Direct';
+  const r = referrer.toLowerCase();
+  if (r.includes('google') || r.includes('bing') || r.includes('yahoo') || r.includes('duckduckgo')) return 'Organic Search';
+  if (r.includes('facebook') || r.includes('twitter') || r.includes('linkedin') || r.includes('instagram')) return 'Social Media';
+  if (r.includes('mail') || r.includes('email')) return 'Email';
+  return 'Referral';
+}
+
+export async function getTopPagesDetailed(days: number = 7) {
+  const startDate = new Date();
+  startDate.setDate(startDate.getDate() - days);
+
+  const pages = await getPrismaClient().analyticsEvent.groupBy({
+    by: ['page'],
+    where: { eventType: 'pageview', createdAt: { gte: startDate } },
+    _count: true,
+    orderBy: { _count: { page: 'desc' } },
+    take: 10,
+  });
+
+  // Get unique visitors per page
+  const results = await Promise.all(
+    pages.map(async (p) => {
+      const uniqueSessions = await getPrismaClient().analyticsEvent.groupBy({
+        by: ['sessionId'],
+        where: { page: p.page, eventType: 'pageview', createdAt: { gte: startDate } },
+      });
+      return {
+        page: p.page,
+        views: p._count,
+        unique: uniqueSessions.length,
+        bounce: '0%',
+      };
+    })
+  );
+
+  return results;
+}
+
+// ==================== TRAFFIC QUERIES ====================
+
+export async function getTrafficByDevice(days: number = 7) {
+  const startDate = new Date();
+  startDate.setDate(startDate.getDate() - days);
+
+  return getPrismaClient().analyticsEvent.groupBy({
+    by: ['device'],
+    where: { createdAt: { gte: startDate }, device: { not: null } },
+    _count: true,
+    orderBy: { _count: { device: 'desc' } },
+  });
+}
+
+export async function getTrafficByCountry(days: number = 7) {
+  const startDate = new Date();
+  startDate.setDate(startDate.getDate() - days);
+
+  return getPrismaClient().analyticsEvent.groupBy({
+    by: ['country'],
+    where: { createdAt: { gte: startDate }, country: { not: null } },
+    _count: true,
+    orderBy: { _count: { country: 'desc' } },
+    take: 20,
+  });
+}
+
+export async function getTrafficByBrowser(days: number = 7) {
+  const startDate = new Date();
+  startDate.setDate(startDate.getDate() - days);
+
+  return getPrismaClient().analyticsEvent.groupBy({
+    by: ['browser'],
+    where: { createdAt: { gte: startDate }, browser: { not: null } },
+    _count: true,
+    orderBy: { _count: { browser: 'desc' } },
+  });
+}
+
+export async function getTrafficByReferrer(days: number = 7) {
+  const startDate = new Date();
+  startDate.setDate(startDate.getDate() - days);
+
+  return getPrismaClient().analyticsEvent.groupBy({
+    by: ['referrer'],
+    where: { createdAt: { gte: startDate } },
+    _count: true,
+    orderBy: { _count: { referrer: 'desc' } },
+    take: 20,
+  });
+}
+
+export async function getActiveVisitors() {
+  const fiveMinutesAgo = new Date();
+  fiveMinutesAgo.setMinutes(fiveMinutesAgo.getMinutes() - 5);
+
+  const [activeSessions, activePages] = await Promise.all([
+    getPrismaClient().analyticsEvent.groupBy({
+      by: ['sessionId'],
+      where: { createdAt: { gte: fiveMinutesAgo } },
+    }),
+    getPrismaClient().analyticsEvent.groupBy({
+      by: ['page'],
+      where: { eventType: 'pageview', createdAt: { gte: fiveMinutesAgo } },
+      _count: true,
+      orderBy: { _count: { page: 'desc' } },
+      take: 10,
+    }),
+  ]);
+
+  return {
+    activeVisitors: activeSessions.length,
+    activePages: activePages.map(p => ({ page: p.page, visitors: p._count })),
+  };
+}
+
+export async function getHourlyTraffic(days: number = 1) {
+  const startDate = new Date();
+  startDate.setDate(startDate.getDate() - days);
+
+  const events = await getPrismaClient().analyticsEvent.findMany({
+    where: { eventType: 'pageview', createdAt: { gte: startDate } },
+    select: { createdAt: true },
+  });
+
+  // Group by hour
+  const hourly: Record<number, number> = {};
+  for (let i = 0; i < 24; i++) hourly[i] = 0;
+  events.forEach(e => {
+    const hour = new Date(e.createdAt).getHours();
+    hourly[hour]++;
+  });
+
+  return Object.entries(hourly).map(([hour, count]) => ({
+    hour: parseInt(hour),
+    visitors: count,
+  }));
+}
+
+export async function generateReportData(type: string, dateRangeStart?: Date, dateRangeEnd?: Date) {
+  const start = dateRangeStart || new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);
+  const end = dateRangeEnd || new Date();
+
+  switch (type) {
+    case 'traffic': {
+      const [pageViews, visitors, topPages] = await Promise.all([
+        getPrismaClient().analyticsEvent.count({
+          where: { eventType: 'pageview', createdAt: { gte: start, lte: end } },
+        }),
+        getPrismaClient().analyticsEvent.groupBy({
+          by: ['sessionId'],
+          where: { createdAt: { gte: start, lte: end } },
+        }),
+        getPageViews(Math.ceil((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24))),
+      ]);
+      return { pageViews, uniqueVisitors: visitors.length, topPages };
+    }
+    case 'leads': {
+      const [total, byStatus, bySource] = await Promise.all([
+        getPrismaClient().lead.count({ where: { createdAt: { gte: start, lte: end } } }),
+        getPrismaClient().lead.groupBy({
+          by: ['status'],
+          where: { createdAt: { gte: start, lte: end } },
+          _count: true,
+        }),
+        getPrismaClient().lead.groupBy({
+          by: ['source'],
+          where: { createdAt: { gte: start, lte: end } },
+          _count: true,
+        }),
+      ]);
+      return { total, byStatus, bySource };
+    }
+    case 'users': {
+      const users = await getAdminUsers();
+      return { totalUsers: users.length, users };
+    }
+    default:
+      return { message: 'Unknown report type' };
+  }
+}
+
 // ==================== ANALYTICS QUERIES ====================
 
 export async function trackAnalyticsEvent(data: {

@@ -1,25 +1,38 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function Testimonials() {
-    const testimonials = [
-        {
-            quote: "The AI agent they built handles 80% of our customer inquiries autonomously. Our support team can now focus on complex cases that truly need human attention.",
-            author: "Amanda Chen",
-            role: "Head of Customer Success, E-commerce",
-        },
-        {
-            quote: "Their multi-agent system orchestrates our entire content workflow—from research to writing to publishing. What took days now happens in hours.",
-            author: "Robert Kim",
-            role: "Content Director, Media Company",
-        },
-        {
-            quote: "The agents they deployed reduced our manual data processing by 90%. They work around the clock without errors or fatigue.",
-            author: "Sarah Martinez",
-            role: "Operations Manager, Financial Services",
-        },
-    ];
+    const t = useSectionTranslations('aiServices.aiAgents');
+
+    const getTestimonials = () => {
+        try {
+            const items = t('testimonials.items');
+            if (Array.isArray(items) && items.length > 0) return items;
+        } catch (e) { /* fallback */ }
+        return [
+            {
+                quote: "The AI agent they built handles 80% of our customer inquiries autonomously. Our support team can now focus on complex cases that truly need human attention.",
+                author: "Amanda Chen",
+                role: "Head of Customer Success, E-commerce",
+            },
+            {
+                quote: "Their multi-agent system orchestrates our entire content workflow\u2014from research to writing to publishing. What took days now happens in hours.",
+                author: "Robert Kim",
+                role: "Content Director, Media Company",
+            },
+            {
+                quote: "The agents they deployed reduced our manual data processing by 90%. They work around the clock without errors or fatigue.",
+                author: "Sarah Martinez",
+                role: "Operations Manager, Financial Services",
+            },
+        ];
+    };
+
+    const testimonials = getTestimonials();
+    const eyebrow = t('testimonials.eyebrow') || 'Client Success Stories';
+    const title = t('testimonials.title') || 'What Our Clients Say';
 
     return (
         <section className="py-24 bg-gray-50">
@@ -28,12 +41,12 @@ export default function Testimonials() {
                     <div className="flex items-center justify-center gap-3 mb-6">
                         <div className="w-8 h-0.5 bg-emerald-600"></div>
                         <span className="text-xs font-medium text-emerald-600 uppercase tracking-wide">
-                            Client Success Stories
+                            {eyebrow}
                         </span>
                         <div className="w-8 h-0.5 bg-emerald-600"></div>
                     </div>
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900">
-                        What Our Clients Say
+                        {title}
                     </h2>
                 </div>
 

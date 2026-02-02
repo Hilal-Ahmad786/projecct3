@@ -44,6 +44,7 @@ const updatePostSchema = z.object({
   tags: z.array(z.string()).optional(),
   status: z.enum(['DRAFT', 'PUBLISHED', 'ARCHIVED']).optional(),
   featured: z.boolean().optional(),
+  scheduledAt: z.string().datetime().optional().nullable(),
   translations: z.array(z.object({
     locale: z.string(),
     title: z.string(),
@@ -76,10 +77,13 @@ export async function PATCH(
       );
     }
 
-    const { translations, ...postData } = validation.data;
+    const { translations, scheduledAt: scheduledAtStr, ...postData } = validation.data;
 
     // Update the blog post
-    const post = await updateBlogPost(id, postData);
+    const post = await updateBlogPost(id, {
+      ...postData,
+      ...(scheduledAtStr !== undefined ? { scheduledAt: scheduledAtStr ? new Date(scheduledAtStr) : null } : {}),
+    });
 
     // Update translations if provided
     if (translations && translations.length > 0) {

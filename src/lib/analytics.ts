@@ -25,14 +25,17 @@ export const trackEvent = (eventName: string, params?: any) => {
 
 export const trackWhatsAppClick = (source: string, message?: string) => {
   trackEvent('whatsapp_click', { source, message });
+  trackToServer('whatsapp_click', source, message);
 };
 
 export const trackPhoneCall = (source: string) => {
   trackEvent('phone_call', { source });
+  trackToServer('phone_call', source);
 };
 
 export const trackChatOpen = (source: string) => {
   trackEvent('chat_open', { source });
+  trackToServer('chat_open', source);
 };
 
 export const trackQuoteRequest = (source: string) => {
@@ -225,3 +228,46 @@ export const trackTimeOnPage = (seconds: number, pagePath: string) => {
     value: seconds,
   });
 };
+
+// ==========================================
+// Server-side tracking (fire-and-forget)
+// ==========================================
+
+const trackToServer = (eventType: string, source: string, message?: string) => {
+  if (typeof window === 'undefined') return;
+  try {
+    const payload: Record<string, string> = {
+      eventType,
+      source,
+      page: window.location.pathname,
+      sessionId: getOrCreateSessionId(),
+    };
+    if (message) payload.message = message;
+
+    // navigator.sendBeacon is preferred — it survives page navigations
+    const blob = new Blob([JSON.stringify(payload)], { type: 'application/json' });
+    if (navigator.sendBeacon) {
+      navigator.sendBeacon('/api/tracking', blob);
+    } else {
+      fetch('/api/tracking', {
+        method: 'POST',
+        body: JSON.stringify(payload),
+        headers: { 'Content-Type': 'application/json' },
+        keepalive: true,
+      }).catch(() => {});
+    }
+  } catch {
+    // Tracking should never break the app
+  }
+};
+
+function getOrCreateSessionId(): string {
+  if (typeof window === 'undefined') return 'server';
+  const key = 'pk_session_id';
+  let id = sessionStorage.getItem(key);
+  if (!id) {
+    id = `s-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+    sessionStorage.setItem(key, id);
+  }
+  return id;
+}

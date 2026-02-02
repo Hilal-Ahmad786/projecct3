@@ -1,25 +1,38 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function Testimonials() {
-    const testimonials = [
-        {
-            quote: "Our legal team now gets accurate answers from 10 years of contracts in seconds. The RAG system has become indispensable for due diligence.",
-            author: "Michael Torres",
-            role: "General Counsel, Tech Corporation",
-        },
-        {
-            quote: "Customer support queries that used to require escalation are now answered instantly by the RAG chatbot with perfect accuracy and citations.",
-            author: "Lisa Wang",
-            role: "VP Customer Experience, SaaS Platform",
-        },
-        {
-            quote: "Our engineers can now search across thousands of technical documents and get precise answers. It's transformed how we onboard new team members.",
-            author: "James Anderson",
-            role: "Engineering Director, Manufacturing",
-        },
-    ];
+    const t = useSectionTranslations('aiServices.ragSolutions');
+
+    const getTestimonials = () => {
+        try {
+            const items = t('testimonials.items');
+            if (Array.isArray(items) && items.length > 0) return items;
+        } catch (e) { /* fallback */ }
+        return [
+            {
+                quote: "Our legal team now gets accurate answers from 10 years of contracts in seconds. The RAG system has become indispensable for due diligence.",
+                author: "Michael Torres",
+                role: "General Counsel, Tech Corporation",
+            },
+            {
+                quote: "Customer support queries that used to require escalation are now answered instantly by the RAG chatbot with perfect accuracy and citations.",
+                author: "Lisa Wang",
+                role: "VP Customer Experience, SaaS Platform",
+            },
+            {
+                quote: "Our engineers can now search across thousands of technical documents and get precise answers. It's transformed how we onboard new team members.",
+                author: "James Anderson",
+                role: "Engineering Director, Manufacturing",
+            },
+        ];
+    };
+
+    const testimonials = getTestimonials();
+    const eyebrow = t('testimonials.eyebrow') || 'Client Success Stories';
+    const title = t('testimonials.title') || 'What Our Clients Say';
 
     return (
         <section className="py-24 bg-gray-50">
@@ -28,12 +41,12 @@ export default function Testimonials() {
                     <div className="flex items-center justify-center gap-3 mb-6">
                         <div className="w-8 h-0.5 bg-blue-600"></div>
                         <span className="text-xs font-medium text-blue-600 uppercase tracking-wide">
-                            Client Success Stories
+                            {eyebrow}
                         </span>
                         <div className="w-8 h-0.5 bg-blue-600"></div>
                     </div>
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900">
-                        What Our Clients Say
+                        {title}
                     </h2>
                 </div>
 

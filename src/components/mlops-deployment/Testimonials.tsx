@@ -1,25 +1,38 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function Testimonials() {
-    const testimonials = [
-        {
-            quote: "We went from monthly model deployments to daily releases. The MLOps platform they built gave us the confidence to iterate rapidly.",
-            author: "Kevin Zhang",
-            role: "ML Engineering Lead, Fintech",
-        },
-        {
-            quote: "Model monitoring caught a data drift issue that would have cost us millions. The investment in proper MLOps paid for itself in the first month.",
-            author: "Rachel Green",
-            role: "Chief Data Officer, Retail",
-        },
-        {
-            quote: "They reduced our model training time by 70% and inference costs by 50%. The efficiency gains have been transformational.",
-            author: "Thomas Wright",
-            role: "VP of AI, Healthcare Startup",
-        },
-    ];
+    const t = useSectionTranslations('aiServices.mlopsDeployment');
+
+    const getTestimonials = () => {
+        try {
+            const items = t('testimonials.items');
+            if (Array.isArray(items) && items.length > 0) return items;
+        } catch (e) { /* fallback */ }
+        return [
+            {
+                quote: "We went from monthly model deployments to daily releases. The MLOps platform they built gave us the confidence to iterate rapidly.",
+                author: "Kevin Zhang",
+                role: "ML Engineering Lead, Fintech",
+            },
+            {
+                quote: "Model monitoring caught a data drift issue that would have cost us millions. The investment in proper MLOps paid for itself in the first month.",
+                author: "Rachel Green",
+                role: "Chief Data Officer, Retail",
+            },
+            {
+                quote: "They reduced our model training time by 70% and inference costs by 50%. The efficiency gains have been transformational.",
+                author: "Thomas Wright",
+                role: "VP of AI, Healthcare Startup",
+            },
+        ];
+    };
+
+    const testimonials = getTestimonials();
+    const eyebrow = t('testimonials.eyebrow') || 'Client Success Stories';
+    const title = t('testimonials.title') || 'What Our Clients Say';
 
     return (
         <section className="py-24 bg-gray-50">
@@ -28,12 +41,12 @@ export default function Testimonials() {
                     <div className="flex items-center justify-center gap-3 mb-6">
                         <div className="w-8 h-0.5 bg-amber-600"></div>
                         <span className="text-xs font-medium text-amber-600 uppercase tracking-wide">
-                            Client Success Stories
+                            {eyebrow}
                         </span>
                         <div className="w-8 h-0.5 bg-amber-600"></div>
                     </div>
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900">
-                        What Our Clients Say
+                        {title}
                     </h2>
                 </div>
 

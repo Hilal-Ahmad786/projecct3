@@ -2,38 +2,51 @@
 
 import { motion } from 'framer-motion';
 import { StarIcon } from '@heroicons/react/24/solid';
+import { useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function AnalyticsTestimonials() {
-    const testimonials = [
-        {
-            quote: 'Their analytics platform transformed how we understand our customers. We saw a 40% increase in conversion rates within the first quarter.',
-            author: 'Sarah Chen',
-            role: 'VP of Marketing, TechRetail Inc.',
-            rating: 5
-        },
-        {
-            quote: 'The predictive models they built helped us reduce inventory costs by 25% while improving product availability. Exceptional work.',
-            author: 'Michael Torres',
-            role: 'Supply Chain Director, Global Logistics',
-            rating: 5
-        },
-        {
-            quote: 'Finally, our executives have real-time visibility into company performance. The dashboards are intuitive and the insights are invaluable.',
-            author: 'Emma Richardson',
-            role: 'CFO, FinanceFirst Solutions',
-            rating: 5
-        }
-    ];
+    const t = useSectionTranslations('dataAnalytics');
+
+    const getTestimonials = () => {
+        try {
+            const items = t('testimonials.items');
+            if (Array.isArray(items) && items.length > 0) return items;
+        } catch (e) { /* fallback */ }
+        return [
+            {
+                quote: 'Their analytics platform transformed how we understand our customers. We saw a 40% increase in conversion rates within the first quarter.',
+                author: 'Sarah Chen',
+                role: 'VP of Marketing, TechRetail Inc.',
+                rating: 5
+            },
+            {
+                quote: 'The predictive models they built helped us reduce inventory costs by 25% while improving product availability. Exceptional work.',
+                author: 'Michael Torres',
+                role: 'Supply Chain Director, Global Logistics',
+                rating: 5
+            },
+            {
+                quote: 'Finally, our executives have real-time visibility into company performance. The dashboards are intuitive and the insights are invaluable.',
+                author: 'Emma Richardson',
+                role: 'CFO, FinanceFirst Solutions',
+                rating: 5
+            }
+        ];
+    };
+
+    const testimonials = getTestimonials();
+    const eyebrow = t('testimonials.eyebrow') || 'Client Success Stories';
+    const title = t('testimonials.title') || 'Trusted by Industry Leaders';
 
     return (
         <section className="py-24 bg-white overflow-hidden">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
                     <span className="text-cyan-600 font-medium tracking-wider uppercase text-sm mb-4 block">
-                        Client Success Stories
+                        {eyebrow}
                     </span>
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900">
-                        Trusted by Industry Leaders
+                        {title}
                     </h2>
                 </div>
 

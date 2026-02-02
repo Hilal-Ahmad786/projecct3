@@ -1,25 +1,38 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function Testimonials() {
-    const testimonials = [
-        {
-            quote: "Their prompt engineering reduced our API costs by 60% while actually improving output quality. The ROI was immediate and significant.",
-            author: "David Park",
-            role: "VP of Engineering, AI Startup",
-        },
-        {
-            quote: "We went from inconsistent, unpredictable outputs to reliable, production-grade responses. The difference in our customer experience was dramatic.",
-            author: "Jennifer Liu",
-            role: "Product Director, SaaS Company",
-        },
-        {
-            quote: "They turned our vague requirements into precise prompts that consistently deliver exactly what we need. True experts in their craft.",
-            author: "Marcus Johnson",
-            role: "CTO, Healthcare Platform",
-        },
-    ];
+    const t = useSectionTranslations('aiServices.promptEngineering');
+
+    const getTestimonials = () => {
+        try {
+            const items = t('testimonials.items');
+            if (Array.isArray(items) && items.length > 0) return items;
+        } catch (e) { /* fallback */ }
+        return [
+            {
+                quote: "Their prompt engineering reduced our API costs by 60% while actually improving output quality. The ROI was immediate and significant.",
+                author: "David Park",
+                role: "VP of Engineering, AI Startup",
+            },
+            {
+                quote: "We went from inconsistent, unpredictable outputs to reliable, production-grade responses. The difference in our customer experience was dramatic.",
+                author: "Jennifer Liu",
+                role: "Product Director, SaaS Company",
+            },
+            {
+                quote: "They turned our vague requirements into precise prompts that consistently deliver exactly what we need. True experts in their craft.",
+                author: "Marcus Johnson",
+                role: "CTO, Healthcare Platform",
+            },
+        ];
+    };
+
+    const testimonials = getTestimonials();
+    const eyebrow = t('testimonials.eyebrow') || 'Client Success Stories';
+    const title = t('testimonials.title') || 'What Our Clients Say';
 
     return (
         <section className="py-24 bg-gray-50">
@@ -28,12 +41,12 @@ export default function Testimonials() {
                     <div className="flex items-center justify-center gap-3 mb-6">
                         <div className="w-8 h-0.5 bg-violet-600"></div>
                         <span className="text-xs font-medium text-violet-600 uppercase tracking-wide">
-                            Client Success Stories
+                            {eyebrow}
                         </span>
                         <div className="w-8 h-0.5 bg-violet-600"></div>
                     </div>
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900">
-                        What Our Clients Say
+                        {title}
                     </h2>
                 </div>
 

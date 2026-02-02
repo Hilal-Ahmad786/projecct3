@@ -2,38 +2,51 @@
 
 import { motion } from 'framer-motion';
 import { StarIcon } from '@heroicons/react/24/solid';
+import { useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function AutomationTestimonials() {
-    const testimonials = [
-        {
-            quote: 'The automation solution reduced our data entry time by 90%. What used to take our team a full day now completes in under an hour.',
-            author: 'Michael Chen',
-            role: 'Operations Director',
-            rating: 5
-        },
-        {
-            quote: 'Their Python scripts transformed our reporting process. We now have real-time insights that were previously impossible to obtain.',
-            author: 'Sarah Williams',
-            role: 'Data Analyst',
-            rating: 5
-        },
-        {
-            quote: 'Professional, efficient, and the code quality is exceptional. They delivered exactly what we needed and more.',
-            author: 'David Patel',
-            role: 'CTO, TechStart Inc.',
-            rating: 5
-        }
-    ];
+    const t = useSectionTranslations('pythonAutomation');
+
+    const getTestimonials = () => {
+        try {
+            const items = t('testimonials.items');
+            if (Array.isArray(items) && items.length > 0) return items;
+        } catch (e) { /* fallback */ }
+        return [
+            {
+                quote: 'The automation solution reduced our data entry time by 90%. What used to take our team a full day now completes in under an hour.',
+                author: 'Michael Chen',
+                role: 'Operations Director',
+                rating: 5
+            },
+            {
+                quote: 'Their Python scripts transformed our reporting process. We now have real-time insights that were previously impossible to obtain.',
+                author: 'Sarah Williams',
+                role: 'Data Analyst',
+                rating: 5
+            },
+            {
+                quote: 'Professional, efficient, and the code quality is exceptional. They delivered exactly what we needed and more.',
+                author: 'David Patel',
+                role: 'CTO, TechStart Inc.',
+                rating: 5
+            }
+        ];
+    };
+
+    const testimonials = getTestimonials();
+    const eyebrow = t('testimonials.eyebrow') || 'Testimonials';
+    const title = t('testimonials.title') || 'What Our Clients Say';
 
     return (
         <section className="py-24 bg-white overflow-hidden">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
                     <span className="text-orange-600 font-medium tracking-wider uppercase text-sm mb-4 block">
-                        Testimonials
+                        {eyebrow}
                     </span>
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900">
-                        What Our Clients Say
+                        {title}
                     </h2>
                 </div>
 

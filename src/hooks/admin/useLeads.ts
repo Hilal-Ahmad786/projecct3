@@ -47,13 +47,14 @@ const fetcher = async (url: string) => {
 
 // Build URL with query params
 function buildUrl(base: string, params: Record<string, string | number | undefined>) {
-  const url = new URL(base, window.location.origin);
+  const searchParams = new URLSearchParams();
   Object.entries(params).forEach(([key, value]) => {
     if (value !== undefined) {
-      url.searchParams.set(key, String(value));
+      searchParams.set(key, String(value));
     }
   });
-  return url.toString();
+  const qs = searchParams.toString();
+  return qs ? `${base}?${qs}` : base;
 }
 
 // Hook for fetching leads list

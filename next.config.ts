@@ -1,30 +1,23 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   typescript: {
     ignoreBuildErrors: true,
   },
-  
-  // Add this to fix useSearchParams error
-  experimental: {
-    missingSuspenseWithCSRBailout: false,
-  },
-  
+
+
   trailingSlash: false,
-  
+
   images: {
     formats: ['image/webp', 'image/avif'],
     minimumCacheTTL: 60,
   },
-  
+
   async redirects() {
     // Admin panel is now accessible - add authentication in production
     return [];
   },
-  
+
   async headers() {
     return [
       {

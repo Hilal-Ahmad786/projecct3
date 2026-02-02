@@ -2,38 +2,51 @@
 
 import { motion } from 'framer-motion';
 import { StarIcon } from '@heroicons/react/24/solid';
+import { useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function DesignTestimonials() {
-    const testimonials = [
-        {
-            quote: "The team completely transformed our app's user experience. Our user engagement increased by 150% within three months of the redesign launch.",
-            author: "Sarah Chen",
-            role: "Product Director, TechFlow",
-            rating: 5
-        },
-        {
-            quote: "Their attention to detail is unmatched. Every pixel, every interaction was thoughtfully crafted. Our customers constantly compliment our new interface.",
-            author: "Marcus Johnson",
-            role: "CEO, Innovate Labs",
-            rating: 5
-        },
-        {
-            quote: "Working with this design team was a game-changer. They took the time to understand our users and delivered a solution that exceeded all expectations.",
-            author: "Emily Rodriguez",
-            role: "Head of Product, StartupXYZ",
-            rating: 5
-        }
-    ];
+    const t = useSectionTranslations('servicePages.uiUxDesign');
+
+    const getTestimonials = () => {
+        try {
+            const items = t('testimonials.items');
+            if (Array.isArray(items) && items.length > 0) return items;
+        } catch (e) { /* fallback */ }
+        return [
+            {
+                quote: "The team completely transformed our app's user experience. Our user engagement increased by 150% within three months of the redesign launch.",
+                author: "Sarah Chen",
+                role: "Product Director, TechFlow",
+                rating: 5
+            },
+            {
+                quote: "Their attention to detail is unmatched. Every pixel, every interaction was thoughtfully crafted. Our customers constantly compliment our new interface.",
+                author: "Marcus Johnson",
+                role: "CEO, Innovate Labs",
+                rating: 5
+            },
+            {
+                quote: "Working with this design team was a game-changer. They took the time to understand our users and delivered a solution that exceeded all expectations.",
+                author: "Emily Rodriguez",
+                role: "Head of Product, StartupXYZ",
+                rating: 5
+            }
+        ];
+    };
+
+    const testimonials = getTestimonials();
+    const eyebrow = t('testimonials.eyebrow') || 'Client Success Stories';
+    const title = t('testimonials.title') || 'What Our Clients Say';
 
     return (
         <section className="py-24 bg-white overflow-hidden">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
                     <span className="text-pink-500 font-medium tracking-wider uppercase text-sm mb-4 block">
-                        Client Success Stories
+                        {eyebrow}
                     </span>
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900">
-                        What Our Clients Say
+                        {title}
                     </h2>
                 </div>
 

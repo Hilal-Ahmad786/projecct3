@@ -1,25 +1,38 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function MobileTestimonials() {
-    const testimonials = [
-        {
-            quote: 'They transformed our idea into a beautiful, intuitive app that our users absolutely love. The attention to detail and commitment to quality exceeded our expectations.',
-            author: 'Sarah Chen',
-            role: 'CEO, FitTrack Pro',
-        },
-        {
-            quote: 'The team delivered our e-commerce app on time and within budget. Sales through our mobile channel increased by 150% within the first quarter after launch.',
-            author: 'Michael Rodriguez',
-            role: 'Founder, ShopEase',
-        },
-        {
-            quote: 'Outstanding technical expertise and communication throughout the project. They handled complex integrations seamlessly and provided excellent post-launch support.',
-            author: 'Emily Watson',
-            role: 'CTO, HealthConnect',
-        },
-    ];
+    const t = useSectionTranslations('mobileDevelopment');
+
+    const getTestimonials = () => {
+        try {
+            const items = t('testimonials.items');
+            if (Array.isArray(items) && items.length > 0) return items;
+        } catch (e) { /* fallback */ }
+        return [
+            {
+                quote: 'They transformed our idea into a beautiful, intuitive app that our users absolutely love. The attention to detail and commitment to quality exceeded our expectations.',
+                author: 'Sarah Chen',
+                role: 'CEO, FitTrack Pro',
+            },
+            {
+                quote: 'The team delivered our e-commerce app on time and within budget. Sales through our mobile channel increased by 150% within the first quarter after launch.',
+                author: 'Michael Rodriguez',
+                role: 'Founder, ShopEase',
+            },
+            {
+                quote: 'Outstanding technical expertise and communication throughout the project. They handled complex integrations seamlessly and provided excellent post-launch support.',
+                author: 'Emily Watson',
+                role: 'CTO, HealthConnect',
+            },
+        ];
+    };
+
+    const testimonials = getTestimonials();
+    const eyebrow = t('testimonials.eyebrow') || 'Client Success Stories';
+    const title = t('testimonials.title') || 'What Our Clients Say';
 
     return (
         <section className="py-24 bg-gray-50">
@@ -28,12 +41,12 @@ export default function MobileTestimonials() {
                     <div className="flex items-center justify-center gap-3 mb-6">
                         <div className="w-8 h-0.5 bg-blue-600"></div>
                         <span className="text-xs font-medium text-blue-600 uppercase tracking-wide">
-                            Client Success Stories
+                            {eyebrow}
                         </span>
                         <div className="w-8 h-0.5 bg-blue-600"></div>
                     </div>
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900">
-                        What Our Clients Say
+                        {title}
                     </h2>
                 </div>
 

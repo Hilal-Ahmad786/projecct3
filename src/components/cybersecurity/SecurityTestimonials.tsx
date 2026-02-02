@@ -2,38 +2,51 @@
 
 import { motion } from 'framer-motion';
 import { StarIcon } from '@heroicons/react/24/solid';
+import { useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function SecurityTestimonials() {
-    const testimonials = [
-        {
-            quote: 'Their penetration testing uncovered critical vulnerabilities we had missed for years. The remediation support was exceptional, and our security posture has improved dramatically.',
-            author: 'Michael Chen',
-            role: 'CTO, FinanceHub Inc.',
-            rating: 5
-        },
-        {
-            quote: 'The 24/7 SOC monitoring has been a game-changer. We detected and stopped a ransomware attack within minutes. Their incident response team was professional and thorough.',
-            author: 'Sarah Johnson',
-            role: 'CISO, HealthCare Systems',
-            rating: 5
-        },
-        {
-            quote: 'Achieving SOC 2 compliance seemed daunting until we partnered with them. Their expertise streamlined the entire process and we were certified ahead of schedule.',
-            author: 'David Martinez',
-            role: 'VP of Engineering, CloudScale',
-            rating: 5
-        }
-    ];
+    const t = useSectionTranslations('cybersecurity');
+
+    const getTestimonials = () => {
+        try {
+            const items = t('testimonials.items');
+            if (Array.isArray(items) && items.length > 0) return items;
+        } catch (e) { /* fallback */ }
+        return [
+            {
+                quote: 'Their penetration testing uncovered critical vulnerabilities we had missed for years. The remediation support was exceptional, and our security posture has improved dramatically.',
+                author: 'Michael Chen',
+                role: 'CTO, FinanceHub Inc.',
+                rating: 5
+            },
+            {
+                quote: 'The 24/7 SOC monitoring has been a game-changer. We detected and stopped a ransomware attack within minutes. Their incident response team was professional and thorough.',
+                author: 'Sarah Johnson',
+                role: 'CISO, HealthCare Systems',
+                rating: 5
+            },
+            {
+                quote: 'Achieving SOC 2 compliance seemed daunting until we partnered with them. Their expertise streamlined the entire process and we were certified ahead of schedule.',
+                author: 'David Martinez',
+                role: 'VP of Engineering, CloudScale',
+                rating: 5
+            }
+        ];
+    };
+
+    const testimonials = getTestimonials();
+    const eyebrow = t('testimonials.eyebrow') || 'Client Success Stories';
+    const title = t('testimonials.title') || 'Trusted by Security-Conscious Organizations';
 
     return (
         <section className="py-24 bg-white overflow-hidden">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
                     <span className="text-red-500 font-medium tracking-wider uppercase text-sm mb-4 block">
-                        Client Success Stories
+                        {eyebrow}
                     </span>
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900">
-                        Trusted by Security-Conscious Organizations
+                        {title}
                     </h2>
                 </div>
 

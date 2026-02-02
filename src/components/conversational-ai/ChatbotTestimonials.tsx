@@ -2,38 +2,51 @@
 
 import { motion } from 'framer-motion';
 import { StarIcon } from '@heroicons/react/24/solid';
+import { useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function ChatbotTestimonials() {
-    const testimonials = [
-        {
-            quote: 'The chatbot reduced our support tickets by 60% in the first month. Our customers love getting instant answers at any hour.',
-            author: 'Sarah Chen',
-            role: 'Head of Customer Success, TechFlow',
-            rating: 5
-        },
-        {
-            quote: 'Their AI assistant handles lead qualification perfectly. It asks the right questions and books meetings directly in our calendar.',
-            author: 'Michael Torres',
-            role: 'Sales Director, GrowthHub',
-            rating: 5
-        },
-        {
-            quote: 'We were skeptical about AI chat, but the natural conversations and accurate responses exceeded all expectations.',
-            author: 'Emma Williams',
-            role: 'COO, RetailPlus',
-            rating: 5
-        }
-    ];
+    const t = useSectionTranslations('conversationalAI');
+
+    const getTestimonials = () => {
+        try {
+            const items = t('testimonials.items');
+            if (Array.isArray(items) && items.length > 0) return items;
+        } catch (e) { /* fallback */ }
+        return [
+            {
+                quote: 'The chatbot reduced our support tickets by 60% in the first month. Our customers love getting instant answers at any hour.',
+                author: 'Sarah Chen',
+                role: 'Head of Customer Success, TechFlow',
+                rating: 5
+            },
+            {
+                quote: 'Their AI assistant handles lead qualification perfectly. It asks the right questions and books meetings directly in our calendar.',
+                author: 'Michael Torres',
+                role: 'Sales Director, GrowthHub',
+                rating: 5
+            },
+            {
+                quote: 'We were skeptical about AI chat, but the natural conversations and accurate responses exceeded all expectations.',
+                author: 'Emma Williams',
+                role: 'COO, RetailPlus',
+                rating: 5
+            }
+        ];
+    };
+
+    const testimonials = getTestimonials();
+    const eyebrow = t('testimonials.eyebrow') || 'Client Success Stories';
+    const title = t('testimonials.title') || 'Trusted by Industry Leaders';
 
     return (
         <section className="py-24 bg-white overflow-hidden">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
                     <span className="text-violet-600 font-medium tracking-wider uppercase text-sm mb-4 block">
-                        Client Success Stories
+                        {eyebrow}
                     </span>
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900">
-                        Trusted by Industry Leaders
+                        {title}
                     </h2>
                 </div>
 

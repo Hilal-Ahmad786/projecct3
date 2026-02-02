@@ -1,10 +1,10 @@
-// src/app/layout.tsx
 import './globals.css'
 import { ReactNode } from 'react'
 import Analytics from '@/components/Analytics'
 import SecurityGuard from '@/components/SecurityGuard'
 import ReCaptcha from '@/components/ReCaptcha'
 import { cookies } from 'next/headers'
+import { Analytics as VercelAnalytics } from '@vercel/analytics/next'
 
 export const metadata = {
     metadataBase: new URL('https://paksoft.com.tr'),
@@ -82,6 +82,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
             <body className="flex flex-col min-h-screen" suppressHydrationWarning>
                 <SecurityGuard />
                 {children}
+                <VercelAnalytics />
             </body>
         </html>
     )

@@ -108,7 +108,8 @@
       "projects": "Proje",
       "clients": "Müşteri",
       "years": "Yıl"
-    }
+    },
+    "scroll": "Kaydır"
   },
   "about": {
     "hero": {
@@ -1050,6 +1051,10 @@
     "eyebrow": "Müşteri Geri Bildirimleri",
     "title": "Müşterilerimiz Ne Diyor",
     "subtitle": "Sadece bizim sözümüze güvenmeyin. Müşterilerimizin bizimle çalışma deneyimleri hakkında söyledikleri burada.",
+    "loading": "Referanslar yükleniyor...",
+    "noTestimonials": "Şu anda referans bulunmamaktadır.",
+    "previous": "Önceki referanslar",
+    "next": "Sonraki referanslar",
     "clientSatisfaction": "Müşteri Memnuniyeti",
     "responseTime": "Yanıt Süresi",
     "onTimeDelivery": "Zamanında Teslimat",
@@ -1453,6 +1458,11 @@
         "activeCollaboration": "Aktif işbirliği",
         "excellence": "Mükemmellik",
         "live": "CANLI"
+      },
+      "chipLabels": {
+        "automation": "Otomasyon",
+        "infrastructure": "Altyapı",
+        "design": "Tasarım"
       }
     },
     "aboutRightExcellence": {
@@ -1667,6 +1677,9 @@
     "chat": "Sohbet",
     "open": "İletişim menüsünü aç",
     "close": "Menüyü kapat",
+    "ariaWhatsApp": "WhatsApp ile iletişime geçin",
+    "ariaCall": "Bizi arayın",
+    "ariaChat": "Sohbet başlatın",
     "dialogTitle": "Nasıl yardımcı olabiliriz?",
     "dialogSubtitle": "Bir soru seçin veya özel mesaj gönderin",
     "selectQuestion": "Hızlı Sorular",

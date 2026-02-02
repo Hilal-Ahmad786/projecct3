@@ -46,28 +46,33 @@ export default function HeroRightEnhanced() {
 
   // Service chips with localized labels
   const services: Service[] = useMemo(() => {
+    const chipLabels = t('chipLabels') || {};
+    const automationLabel = chipLabels.automation || 'Automation';
+    const infrastructureLabel = chipLabels.infrastructure || 'Infrastructure';
+    const designLabel = chipLabels.design || 'Design';
+
     try {
       const heroServices = tHero('services');
       if (Array.isArray(heroServices) && heroServices.length >= 4) {
         return [
           { label: heroServices[2] || 'AI Solutions',      color: 'bg-emerald-500', angleDeg: 330, delay: 0 },
           { label: heroServices[0] || 'Development',       color: 'bg-blue-500',    angleDeg: 45,  delay: 0.1 },
-          { label: 'Automation',                           color: 'bg-amber-500',   angleDeg: 135, delay: 0.2 },
-          { label: 'Infrastructure',                       color: 'bg-slate-500',   angleDeg: 225, delay: 0.3 },
-          { label: 'Design',                               color: 'bg-violet-500',  angleDeg: 270, delay: 0.4 },
+          { label: automationLabel,                        color: 'bg-amber-500',   angleDeg: 135, delay: 0.2 },
+          { label: infrastructureLabel,                    color: 'bg-slate-500',   angleDeg: 225, delay: 0.3 },
+          { label: designLabel,                            color: 'bg-violet-500',  angleDeg: 270, delay: 0.4 },
         ];
       }
     } catch (error) {
       console.error('Error loading hero services:', error);
     }
-    
+
     // Fallback services
     return [
-      { label: 'AI Solutions',      color: 'bg-emerald-500', angleDeg: 330, delay: 0 },
-      { label: 'Development',       color: 'bg-blue-500',    angleDeg: 45,  delay: 0.1 },
-      { label: 'Automation',        color: 'bg-amber-500',   angleDeg: 135, delay: 0.2 },
-      { label: 'Infrastructure',    color: 'bg-slate-500',   angleDeg: 225, delay: 0.3 },
-      { label: 'Design',            color: 'bg-violet-500',  angleDeg: 270, delay: 0.4 },
+      { label: 'AI Solutions',         color: 'bg-emerald-500', angleDeg: 330, delay: 0 },
+      { label: 'Development',          color: 'bg-blue-500',    angleDeg: 45,  delay: 0.1 },
+      { label: automationLabel,        color: 'bg-amber-500',   angleDeg: 135, delay: 0.2 },
+      { label: infrastructureLabel,    color: 'bg-slate-500',   angleDeg: 225, delay: 0.3 },
+      { label: designLabel,            color: 'bg-violet-500',  angleDeg: 270, delay: 0.4 },
     ];
   }, [tHero]);
 

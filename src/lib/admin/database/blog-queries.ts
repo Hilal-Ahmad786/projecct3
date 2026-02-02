@@ -101,6 +101,7 @@ export async function createBlogPost(data: {
   featured?: boolean;
   publishedAt?: Date;
   authorId?: string;
+  scheduledAt?: Date;
 }) {
   // Auto-publish date if status is PUBLISHED
   const publishedAt = data.status === 'PUBLISHED' && !data.publishedAt
@@ -133,6 +134,7 @@ export async function updateBlogPost(
     status?: BlogStatus;
     featured?: boolean;
     publishedAt?: Date;
+    scheduledAt?: Date | null;
   }
 ) {
   // Auto-publish date if changing to PUBLISHED
@@ -318,6 +320,55 @@ export async function getPublishedBlogPosts(
     limit,
     totalPages: Math.ceil(total / limit),
   };
+}
+
+// Duplicate a blog post with translations
+export async function duplicateBlogPost(id: string) {
+  const prisma = getPrismaClient();
+  const original = await prisma.blogPost.findUnique({
+    where: { id },
+    include: { translations: true },
+  });
+  if (!original) throw new Error('Blog post not found');
+
+  const newSlug = `${original.slug}-copy-${Date.now().toString(36)}`;
+
+  const newPost = await prisma.blogPost.create({
+    data: {
+      slug: newSlug,
+      title: `${original.title} (Copy)`,
+      excerpt: original.excerpt,
+      content: original.content,
+      featuredImage: original.featuredImage,
+      metaTitle: original.metaTitle,
+      metaDescription: original.metaDescription,
+      category: original.category,
+      tags: original.tags,
+      status: 'DRAFT',
+      featured: false,
+    },
+    include: { translations: true },
+  });
+
+  // Copy translations
+  for (const t of original.translations) {
+    await prisma.blogTranslation.create({
+      data: {
+        postId: newPost.id,
+        locale: t.locale,
+        title: t.title,
+        excerpt: t.excerpt,
+        content: t.content,
+        metaTitle: t.metaTitle,
+        metaDescription: t.metaDescription,
+      },
+    });
+  }
+
+  return prisma.blogPost.findUnique({
+    where: { id: newPost.id },
+    include: { translations: true },
+  });
 }
 
 // Get blog stats for admin dashboard

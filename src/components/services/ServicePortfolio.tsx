@@ -2,9 +2,14 @@
 
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { ServiceData } from '@/data/services'
 
-export default function ServicePortfolio({ portfolio }: { portfolio: ServiceData['portfolio'] }) {
+interface PortfolioItem {
+    title: string;
+    category: string;
+    image: string;
+}
+
+export default function ServicePortfolio({ portfolio }: { portfolio: PortfolioItem[] }) {
     if (!portfolio || portfolio.length === 0) return null
 
     return (

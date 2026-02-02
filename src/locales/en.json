@@ -108,7 +108,8 @@
       "projects": "Projects",
       "clients": "Clients",
       "years": "Years"
-    }
+    },
+    "scroll": "Scroll"
   },
   "about": {
     "hero": {
@@ -1050,6 +1051,10 @@
     "eyebrow": "Client Feedback",
     "title": "What Our Clients Say",
     "subtitle": "Don't just take our word for it. Here's what our clients have to say about working with us.",
+    "loading": "Loading testimonials...",
+    "noTestimonials": "No testimonials available at the moment.",
+    "previous": "Previous testimonials",
+    "next": "Next testimonials",
     "clientSatisfaction": "Client Satisfaction",
     "responseTime": "Response Time",
     "onTimeDelivery": "On-Time Delivery",
@@ -2337,6 +2342,11 @@
         "performance": "Performance",
         "satisfaction": "Satisfaction"
       },
+      "chipLabels": {
+        "automation": "Automation",
+        "infrastructure": "Infrastructure",
+        "design": "Design"
+      },
       "notifications": {
         "activeCollaboration": "Active collaboration",
         "excellence": "Excellence",
@@ -2553,6 +2563,9 @@
     "chat": "Chat",
     "open": "Open contact menu",
     "close": "Close menu",
+    "ariaWhatsApp": "Contact via WhatsApp",
+    "ariaCall": "Call us",
+    "ariaChat": "Start chat",
     "dialogTitle": "How can we help?",
     "dialogSubtitle": "Choose a question or send custom message",
     "selectQuestion": "Quick Questions",
