@@ -64,11 +64,10 @@
     }
   },
   "megaMenu": {
-    "webDesign": "Web & Design",
+    "webSoftware": "Web & Software",
     "aiMl": "AI & Machine Learning",
-    "mobile": "Mobile",
-    "automation": "Automation & DevOps",
-    "marketing": "Marketing & Analytics",
+    "marketingGrowth": "Marketing & Growth",
+    "infrastructure": "Infrastructure",
     "viewAll": "View All Services",
     "services": {
       "web-development": "Web Development",
@@ -76,6 +75,9 @@
       "api-development": "API Development",
       "ui-ux-design": "UI/UX Design",
       "mobile-development": "Mobile Development",
+      "saas-development": "SaaS Development",
+      "wordpress-development": "WordPress Development",
+      "graphic-design": "Graphic Design",
       "ai-solutions": "AI Solutions",
       "machine-learning": "Machine Learning",
       "conversational-ai": "Conversational AI",
@@ -84,12 +86,20 @@
       "prompt-engineering": "Prompt Engineering",
       "ai-agents": "AI Agents",
       "rag-solutions": "RAG Solutions",
+      "seo": "SEO",
+      "google-ads": "Google Ads (PPC)",
+      "meta-ads": "Meta Ads",
+      "social-media-marketing": "Social Media Marketing",
+      "email-marketing": "Email Marketing",
+      "content-marketing": "Content Marketing",
+      "tiktok-ads": "TikTok Ads",
+      "linkedin-ads": "LinkedIn Ads",
       "python-automation": "Python Automation",
       "devops-cloud": "DevOps & Cloud",
       "mlops-deployment": "MLOps Deployment",
-      "digital-marketing": "Digital Marketing",
       "data-analytics": "Data Analytics",
-      "cybersecurity": "Cybersecurity"
+      "cybersecurity": "Cybersecurity",
+      "cloud-migration": "Cloud Migration"
     }
   },
   "hero": {
@@ -210,10 +220,9 @@
       "title": "Our Services",
       "subtitle": "We deliver comprehensive digital solutions that drive growth and efficiency for modern businesses.",
       "categories": {
-        "automation": "Automation",
-        "ai": "AI Solutions",
-        "web": "Development",
-        "design": "Design & Marketing",
+        "web": "Web & Software",
+        "ai": "AI & ML",
+        "marketing": "Marketing & Growth",
         "infrastructure": "Infrastructure"
       },
       "readyToStart": "Ready to Get Started?",
@@ -322,14 +331,134 @@
           "Design Systems"
         ]
       },
-      "digitalMarketing": {
-        "title": "Digital Marketing",
-        "description": "Comprehensive digital marketing strategies to grow your online presence.",
+      "seo": {
+        "title": "SEO",
+        "description": "Dominate search results with data-driven SEO strategies for organic growth.",
         "features": [
-          "SEO Optimization",
+          "Technical SEO Audits",
+          "Keyword Strategy",
+          "Link Building",
+          "Local SEO"
+        ]
+      },
+      "googleAds": {
+        "title": "Google Ads (PPC)",
+        "description": "Drive instant qualified traffic with expertly managed Google Ads campaigns.",
+        "features": [
+          "Search Campaigns",
+          "Display & Remarketing",
+          "Shopping Ads",
+          "Conversion Tracking"
+        ]
+      },
+      "metaAds": {
+        "title": "Meta Ads",
+        "description": "Reach billions of users with targeted Facebook & Instagram ad campaigns.",
+        "features": [
+          "Custom Audiences",
+          "Creative Design",
+          "Retargeting",
+          "Dynamic Ads"
+        ]
+      },
+      "socialMediaMarketing": {
+        "title": "Social Media Marketing",
+        "description": "Build engaged communities and grow your brand across social platforms.",
+        "features": [
           "Content Strategy",
-          "Social Media",
-          "Analytics"
+          "Community Management",
+          "Influencer Partnerships",
+          "Social Analytics"
+        ]
+      },
+      "emailMarketing": {
+        "title": "Email Marketing",
+        "description": "Nurture leads and drive conversions with personalized email campaigns.",
+        "features": [
+          "Campaign Design",
+          "Marketing Automation",
+          "List Segmentation",
+          "A/B Testing"
+        ]
+      },
+      "contentMarketing": {
+        "title": "Content Marketing",
+        "description": "Attract and engage your audience with valuable, strategic content.",
+        "features": [
+          "Content Strategy",
+          "Blog Writing",
+          "Whitepapers",
+          "Video Scripts"
+        ]
+      },
+      "tiktokAds": {
+        "title": "TikTok Ads",
+        "description": "Reach Gen Z and Millennials with viral TikTok ad campaigns.",
+        "features": [
+          "In-Feed Ads",
+          "Creator Partnerships",
+          "Video Production",
+          "TikTok Shop"
+        ]
+      },
+      "linkedinAds": {
+        "title": "LinkedIn Ads",
+        "description": "Generate high-quality B2B leads with precision LinkedIn advertising.",
+        "features": [
+          "Sponsored Content",
+          "Lead Gen Forms",
+          "ABM Campaigns",
+          "InMail Ads"
+        ]
+      },
+      "saasDevelopment": {
+        "title": "SaaS Development",
+        "description": "Build scalable, multi-tenant SaaS platforms from concept to launch.",
+        "features": [
+          "Multi-Tenant Architecture",
+          "Subscription Billing",
+          "Admin Dashboard",
+          "API-First Design"
+        ]
+      },
+      "wordpressDevelopment": {
+        "title": "WordPress Development",
+        "description": "Professional WordPress websites and custom CMS solutions.",
+        "features": [
+          "Custom Themes",
+          "Plugin Development",
+          "WooCommerce",
+          "Speed Optimization"
+        ]
+      },
+      "graphicDesign": {
+        "title": "Graphic Design",
+        "description": "Create stunning visual identities and marketing materials.",
+        "features": [
+          "Logo & Branding",
+          "Marketing Collateral",
+          "Social Media Graphics",
+          "Brand Guidelines"
+        ]
+      },
+      "cybersecurity": {
+        "title": "Cybersecurity",
+        "description": "Protect your digital assets with enterprise-grade security solutions.",
+        "features": [
+          "Penetration Testing",
+          "Security Audits",
+          "Compliance Support",
+          "Incident Response"
+        ]
+      },
+      "cloudMigration": {
+        "title": "Cloud Migration",
+        "description": "Seamlessly migrate your infrastructure to the cloud for better performance.",
+        "features": [
+          "Cloud Readiness Assessment",
+          "Migration Planning",
+          "Application Refactoring",
+          "Post-Migration Optimization"
         ]
       },
       "ecommerceSolutions": {

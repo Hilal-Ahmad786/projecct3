@@ -29,6 +29,17 @@ import {
   ServerStackIcon,
   EyeIcon,
   AdjustmentsHorizontalIcon,
+  MagnifyingGlassIcon,
+  CursorArrowRaysIcon,
+  ShareIcon,
+  EnvelopeIcon,
+  DocumentTextIcon,
+  PlayIcon,
+  BriefcaseIcon,
+  CloudIcon,
+  GlobeEuropeAfricaIcon,
+  SwatchIcon,
+  ShieldCheckIcon,
 } from '@heroicons/react/24/outline';
 
 export default function ServicesSection() {
@@ -38,7 +49,7 @@ export default function ServicesSection() {
   const tCommon = useSectionTranslations('common');
   const prefersReducedMotion = useReducedMotion();
 
-  const [activeCategory, setActiveCategory] = useState('automation');
+  const [activeCategory, setActiveCategory] = useState('web');
 
   if (isLoading) {
     return (
@@ -52,33 +63,47 @@ export default function ServicesSection() {
   }
 
   const categories = [
-    { key: 'automation', label: t('categories.automation') },
-    { key: 'ai', label: t('categories.ai') },
     { key: 'web', label: t('categories.web') },
-    { key: 'design', label: t('categories.design') },
+    { key: 'ai', label: t('categories.ai') },
+    { key: 'marketing', label: t('categories.marketing') },
     { key: 'infrastructure', label: t('categories.infrastructure') },
   ];
 
   const services = [
-    { title: tServices('pythonAutomation.title'), icon: Cog6ToothIcon, description: tServices('pythonAutomation.description'), category: 'automation', features: tServices('pythonAutomation.features'), slug: 'python-automation' },
-    { title: tServices('dataAnalytics.title'), icon: ChartBarSquareIcon, description: tServices('dataAnalytics.description'), category: 'automation', features: tServices('dataAnalytics.features'), slug: 'data-analytics' },
-    { title: tServices('machineLearning.title'), icon: CubeIcon, description: tServices('machineLearning.description'), category: 'ai', features: tServices('machineLearning.features'), slug: 'machine-learning' },
+    // Web & Software
+    { title: tServices('webApplications.title'), icon: ComputerDesktopIcon, description: tServices('webApplications.description'), category: 'web', features: tServices('webApplications.features'), slug: 'web-development' },
+    { title: tServices('ecommerceSolutions.title'), icon: ShoppingCartIcon, description: tServices('ecommerceSolutions.description'), category: 'web', features: tServices('ecommerceSolutions.features'), slug: 'e-commerce' },
+    { title: tServices('apiDevelopment.title'), icon: LinkIcon, description: tServices('apiDevelopment.description'), category: 'web', features: tServices('apiDevelopment.features'), slug: 'api-development' },
+    { title: tServices('uiuxDesign.title'), icon: PencilSquareIcon, description: tServices('uiuxDesign.description'), category: 'web', features: tServices('uiuxDesign.features'), slug: 'ui-ux-design' },
+    { title: tServices('mobileDevelopment.title'), icon: DevicePhoneMobileIcon, description: tServices('mobileDevelopment.description'), category: 'web', features: tServices('mobileDevelopment.features'), slug: 'mobile-development' },
+    { title: tServices('saasDevelopment.title'), icon: CloudIcon, description: tServices('saasDevelopment.description'), category: 'web', features: tServices('saasDevelopment.features'), slug: 'saas-development' },
+    { title: tServices('wordpressDevelopment.title'), icon: GlobeEuropeAfricaIcon, description: tServices('wordpressDevelopment.description'), category: 'web', features: tServices('wordpressDevelopment.features'), slug: 'wordpress-development' },
+    { title: tServices('graphicDesign.title'), icon: SwatchIcon, description: tServices('graphicDesign.description'), category: 'web', features: tServices('graphicDesign.features'), slug: 'graphic-design' },
+    // AI & ML
     { title: tServices('aiIntegration.title'), icon: PhotoIcon, description: tServices('aiIntegration.description'), category: 'ai', features: tServices('aiIntegration.features'), slug: 'ai-solutions' },
+    { title: tServices('machineLearning.title'), icon: CubeIcon, description: tServices('machineLearning.description'), category: 'ai', features: tServices('machineLearning.features'), slug: 'machine-learning' },
     { title: tServices('conversationalAI.title'), icon: ChatBubbleBottomCenterTextIcon, description: tServices('conversationalAI.description'), category: 'ai', features: tServices('conversationalAI.features'), slug: 'conversational-ai' },
+    { title: tServices('computerVision.title'), icon: EyeIcon, description: tServices('computerVision.description'), category: 'ai', features: tServices('computerVision.features'), slug: 'computer-vision' },
+    { title: tServices('llmFinetuning.title'), icon: AdjustmentsHorizontalIcon, description: tServices('llmFinetuning.description'), category: 'ai', features: tServices('llmFinetuning.features'), slug: 'llm-finetuning' },
     { title: tServices('promptEngineering.title'), icon: CommandLineIcon, description: tServices('promptEngineering.description'), category: 'ai', features: tServices('promptEngineering.features'), slug: 'prompt-engineering' },
     { title: tServices('aiAgents.title'), icon: CpuChipIcon, description: tServices('aiAgents.description'), category: 'ai', features: tServices('aiAgents.features'), slug: 'ai-agents' },
     { title: tServices('ragSolutions.title'), icon: CircleStackIcon, description: tServices('ragSolutions.description'), category: 'ai', features: tServices('ragSolutions.features'), slug: 'rag-solutions' },
-    { title: tServices('mlopsDeployment.title'), icon: ServerStackIcon, description: tServices('mlopsDeployment.description'), category: 'ai', features: tServices('mlopsDeployment.features'), slug: 'mlops-deployment' },
-    { title: tServices('computerVision.title'), icon: EyeIcon, description: tServices('computerVision.description'), category: 'ai', features: tServices('computerVision.features'), slug: 'computer-vision' },
-    { title: tServices('llmFinetuning.title'), icon: AdjustmentsHorizontalIcon, description: tServices('llmFinetuning.description'), category: 'ai', features: tServices('llmFinetuning.features'), slug: 'llm-finetuning' },
-    { title: tServices('apiDevelopment.title'), icon: LinkIcon, description: tServices('apiDevelopment.description'), category: 'web', features: tServices('apiDevelopment.features'), slug: 'api-development' },
-    { title: tServices('webApplications.title'), icon: ComputerDesktopIcon, description: tServices('webApplications.description'), category: 'web', features: tServices('webApplications.features'), slug: 'web-development' },
-    { title: tServices('fullStackDevelopment.title'), icon: CodeBracketSquareIcon, description: tServices('fullStackDevelopment.description'), category: 'web', features: tServices('fullStackDevelopment.features'), slug: 'web-development' },
-    { title: tServices('mobileDevelopment.title'), icon: DevicePhoneMobileIcon, description: tServices('mobileDevelopment.description'), category: 'web', features: tServices('mobileDevelopment.features'), slug: 'mobile-development' },
-    { title: tServices('uiuxDesign.title'), icon: PencilSquareIcon, description: tServices('uiuxDesign.description'), category: 'design', features: tServices('uiuxDesign.features'), slug: 'ui-ux-design' },
-    { title: tServices('digitalMarketing.title'), icon: MegaphoneIcon, description: tServices('digitalMarketing.description'), category: 'design', features: tServices('digitalMarketing.features'), slug: 'digital-marketing' },
-    { title: tServices('ecommerceSolutions.title'), icon: ShoppingCartIcon, description: tServices('ecommerceSolutions.description'), category: 'infrastructure', features: tServices('ecommerceSolutions.features'), slug: 'e-commerce' },
+    // Marketing & Growth
+    { title: tServices('seo.title'), icon: MagnifyingGlassIcon, description: tServices('seo.description'), category: 'marketing', features: tServices('seo.features'), slug: 'seo' },
+    { title: tServices('googleAds.title'), icon: CursorArrowRaysIcon, description: tServices('googleAds.description'), category: 'marketing', features: tServices('googleAds.features'), slug: 'google-ads' },
+    { title: tServices('metaAds.title'), icon: ShareIcon, description: tServices('metaAds.description'), category: 'marketing', features: tServices('metaAds.features'), slug: 'meta-ads' },
+    { title: tServices('socialMediaMarketing.title'), icon: MegaphoneIcon, description: tServices('socialMediaMarketing.description'), category: 'marketing', features: tServices('socialMediaMarketing.features'), slug: 'social-media-marketing' },
+    { title: tServices('emailMarketing.title'), icon: EnvelopeIcon, description: tServices('emailMarketing.description'), category: 'marketing', features: tServices('emailMarketing.features'), slug: 'email-marketing' },
+    { title: tServices('contentMarketing.title'), icon: DocumentTextIcon, description: tServices('contentMarketing.description'), category: 'marketing', features: tServices('contentMarketing.features'), slug: 'content-marketing' },
+    { title: tServices('tiktokAds.title'), icon: PlayIcon, description: tServices('tiktokAds.description'), category: 'marketing', features: tServices('tiktokAds.features'), slug: 'tiktok-ads' },
+    { title: tServices('linkedinAds.title'), icon: BriefcaseIcon, description: tServices('linkedinAds.description'), category: 'marketing', features: tServices('linkedinAds.features'), slug: 'linkedin-ads' },
+    // Infrastructure
+    { title: tServices('pythonAutomation.title'), icon: Cog6ToothIcon, description: tServices('pythonAutomation.description'), category: 'infrastructure', features: tServices('pythonAutomation.features'), slug: 'python-automation' },
     { title: tServices('devopsInfrastructure.title'), icon: CloudArrowUpIcon, description: tServices('devopsInfrastructure.description'), category: 'infrastructure', features: tServices('devopsInfrastructure.features'), slug: 'devops-cloud' },
+    { title: tServices('mlopsDeployment.title'), icon: ServerStackIcon, description: tServices('mlopsDeployment.description'), category: 'infrastructure', features: tServices('mlopsDeployment.features'), slug: 'mlops-deployment' },
+    { title: tServices('dataAnalytics.title'), icon: ChartBarSquareIcon, description: tServices('dataAnalytics.description'), category: 'infrastructure', features: tServices('dataAnalytics.features'), slug: 'data-analytics' },
+    { title: tServices('cybersecurity.title'), icon: ShieldCheckIcon, description: tServices('cybersecurity.description'), category: 'infrastructure', features: tServices('cybersecurity.features'), slug: 'cybersecurity' },
+    { title: tServices('cloudMigration.title'), icon: CloudArrowUpIcon, description: tServices('cloudMigration.description'), category: 'infrastructure', features: tServices('cloudMigration.features'), slug: 'cloud-migration' },
   ];
 
   const filteredServices = services.filter(service => service.category === activeCategory);

@@ -181,10 +181,9 @@
       "title": "Unsere Leistungen",
       "subtitle": "Wir liefern umfassende Digitallösungen, die Wachstum und Effizienz für moderne Unternehmen vorantreiben.",
       "categories": {
-        "automation": "Automatisierung",
+        "web": "Web & Software",
         "ai": "KI-Lösungen",
-        "web": "Entwicklung",
-        "design": "Design & Marketing",
+        "marketing": "Marketing & Wachstum",
         "infrastructure": "Infrastruktur"
       },
       "readyToStart": "Bereit zum Start?",
@@ -293,15 +292,70 @@
           "Designsysteme"
         ]
       },
-      "digitalMarketing": {
-        "title": "Digitales Marketing",
-        "description": "Ganzheitliche Digital-Marketing-Strategien zur Steigerung Ihrer Online-Präsenz.",
-        "features": [
-          "SEO-Optimierung",
-          "Content-Strategie",
-          "Social Media",
-          "Analytics"
-        ]
+      "seo": {
+        "title": "SEO",
+        "description": "Dominieren Sie Suchergebnisse mit datengesteuerten SEO-Strategien.",
+        "features": ["Technische SEO-Audits", "Keyword-Strategie", "Linkaufbau", "Lokales SEO"]
+      },
+      "googleAds": {
+        "title": "Google Ads (PPC)",
+        "description": "Sofortigen qualifizierten Traffic mit professionell verwalteten Google Ads-Kampagnen.",
+        "features": ["Suchkampagnen", "Display & Remarketing", "Shopping Ads", "Conversion-Tracking"]
+      },
+      "metaAds": {
+        "title": "Meta Ads",
+        "description": "Erreichen Sie Milliarden von Nutzern mit gezielten Facebook- & Instagram-Kampagnen.",
+        "features": ["Custom Audiences", "Kreativdesign", "Retargeting", "Dynamische Anzeigen"]
+      },
+      "socialMediaMarketing": {
+        "title": "Social Media Marketing",
+        "description": "Bauen Sie engagierte Communities auf und steigern Sie Ihre Marke.",
+        "features": ["Content-Strategie", "Community Management", "Influencer-Partnerschaften", "Social Analytics"]
+      },
+      "emailMarketing": {
+        "title": "E-Mail-Marketing",
+        "description": "Pflegen Sie Leads und steigern Sie Conversions mit personalisierten E-Mail-Kampagnen.",
+        "features": ["Kampagnen-Design", "Marketing-Automatisierung", "Listensegmentierung", "A/B-Tests"]
+      },
+      "contentMarketing": {
+        "title": "Content Marketing",
+        "description": "Gewinnen und binden Sie Ihre Zielgruppe mit wertvollen, strategischen Inhalten.",
+        "features": ["Content-Strategie", "Blog-Texte", "Whitepapers", "Video-Skripte"]
+      },
+      "tiktokAds": {
+        "title": "TikTok Ads",
+        "description": "Erreichen Sie Gen Z und Millennials mit viralen TikTok-Kampagnen.",
+        "features": ["In-Feed Ads", "Creator-Partnerschaften", "Videoproduktion", "TikTok Shop"]
+      },
+      "linkedinAds": {
+        "title": "LinkedIn Ads",
+        "description": "Generieren Sie hochwertige B2B-Leads mit gezielter LinkedIn-Werbung.",
+        "features": ["Gesponserte Inhalte", "Lead Gen Formulare", "ABM-Kampagnen", "InMail Ads"]
+      },
+      "saasDevelopment": {
+        "title": "SaaS-Entwicklung",
+        "description": "Skalierbare, mandantenfähige SaaS-Plattformen von der Idee bis zum Launch.",
+        "features": ["Multi-Tenant-Architektur", "Abo-Abrechnung", "Admin-Dashboard", "API-First Design"]
+      },
+      "wordpressDevelopment": {
+        "title": "WordPress-Entwicklung",
+        "description": "Professionelle WordPress-Websites und individuelle CMS-Lösungen.",
+        "features": ["Custom Themes", "Plugin-Entwicklung", "WooCommerce", "Geschwindigkeitsoptimierung"]
+      },
+      "graphicDesign": {
+        "title": "Grafikdesign",
+        "description": "Erstellen Sie beeindruckende visuelle Identitäten und Marketingmaterialien.",
+        "features": ["Logo & Branding", "Marketing-Materialien", "Social Media Grafiken", "Markenrichtlinien"]
+      },
+      "cybersecurity": {
+        "title": "Cybersicherheit",
+        "description": "Schützen Sie Ihre digitalen Assets mit Enterprise-Sicherheitslösungen.",
+        "features": ["Penetrationstests", "Sicherheitsaudits", "Compliance-Unterstützung", "Incident Response"]
+      },
+      "cloudMigration": {
+        "title": "Cloud-Migration",
+        "description": "Migrieren Sie Ihre Infrastruktur nahtlos in die Cloud.",
+        "features": ["Cloud-Bereitschaftsbewertung", "Migrationsplanung", "Anwendungsrefactoring", "Post-Migrations-Optimierung"]
       },
       "ecommerceSolutions": {
         "title": "E-Commerce-Lösungen",
@@ -2318,32 +2372,42 @@
     }
   },
   "megaMenu": {
-    "webDesign": "Web & Design",
-    "aiMl": "KI & Machine Learning",
-    "mobile": "Mobile Apps",
-    "automation": "Automatisierung & DevOps",
-    "marketing": "Marketing & Analytics",
+    "webSoftware": "Web & Software",
+    "aiMl": "KI & Maschinelles Lernen",
+    "marketingGrowth": "Marketing & Wachstum",
+    "infrastructure": "Infrastruktur",
     "viewAll": "Alle Dienste anzeigen",
     "services": {
       "web-development": "Webentwicklung",
       "e-commerce": "E-Commerce",
       "api-development": "API-Entwicklung",
-      "ui-ux-design": "UI/UX-Design",
-      "mobile-development": "Mobile App-Entwicklung",
-      "ai-solutions": "KI-Loesungen",
-      "machine-learning": "Machine Learning",
-      "conversational-ai": "Conversational AI",
+      "ui-ux-design": "UI/UX Design",
+      "mobile-development": "Mobile Entwicklung",
+      "saas-development": "SaaS-Entwicklung",
+      "wordpress-development": "WordPress-Entwicklung",
+      "graphic-design": "Grafikdesign",
+      "ai-solutions": "KI-Lösungen",
+      "machine-learning": "Maschinelles Lernen",
+      "conversational-ai": "Konversations-KI",
       "computer-vision": "Computer Vision",
       "llm-finetuning": "LLM-Feinabstimmung",
       "prompt-engineering": "Prompt Engineering",
       "ai-agents": "KI-Agenten",
-      "rag-solutions": "RAG-Loesungen",
+      "rag-solutions": "RAG-Lösungen",
+      "seo": "SEO",
+      "google-ads": "Google Ads (PPC)",
+      "meta-ads": "Meta Ads",
+      "social-media-marketing": "Social Media Marketing",
+      "email-marketing": "E-Mail-Marketing",
+      "content-marketing": "Content Marketing",
+      "tiktok-ads": "TikTok Ads",
+      "linkedin-ads": "LinkedIn Ads",
       "python-automation": "Python-Automatisierung",
       "devops-cloud": "DevOps & Cloud",
       "mlops-deployment": "MLOps-Bereitstellung",
-      "digital-marketing": "Digitales Marketing",
       "data-analytics": "Datenanalyse",
-      "cybersecurity": "Cybersicherheit"
+      "cybersecurity": "Cybersicherheit",
+      "cloud-migration": "Cloud-Migration"
     }
   },
   "aiServices": {

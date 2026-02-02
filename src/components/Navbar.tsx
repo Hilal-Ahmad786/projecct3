@@ -27,6 +27,17 @@ import {
   MegaphoneIcon,
   PresentationChartLineIcon,
   ShieldCheckIcon,
+  MagnifyingGlassIcon,
+  CursorArrowRaysIcon,
+  ShareIcon,
+  EnvelopeIcon,
+  DocumentTextIcon,
+  PlayIcon,
+  BriefcaseIcon,
+  CloudArrowUpIcon,
+  GlobeEuropeAfricaIcon,
+  SwatchIcon,
+  ServerStackIcon,
 } from '@heroicons/react/24/outline';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 import { locales, localeNames, type Locale } from '@/lib/i18n';
@@ -41,6 +52,9 @@ const serviceIcons: Record<string, React.ElementType> = {
   'api-development': LinkIcon,
   'ui-ux-design': PaintBrushIcon,
   'mobile-development': DevicePhoneMobileIcon,
+  'saas-development': CloudIcon,
+  'wordpress-development': GlobeEuropeAfricaIcon,
+  'graphic-design': SwatchIcon,
   'ai-solutions': CpuChipIcon,
   'machine-learning': ChartBarIcon,
   'conversational-ai': ChatBubbleLeftRightIcon,
@@ -49,12 +63,20 @@ const serviceIcons: Record<string, React.ElementType> = {
   'prompt-engineering': PencilSquareIcon,
   'ai-agents': UserGroupIcon,
   'rag-solutions': BookOpenIcon,
+  'seo': MagnifyingGlassIcon,
+  'google-ads': CursorArrowRaysIcon,
+  'meta-ads': ShareIcon,
+  'social-media-marketing': MegaphoneIcon,
+  'email-marketing': EnvelopeIcon,
+  'content-marketing': DocumentTextIcon,
+  'tiktok-ads': PlayIcon,
+  'linkedin-ads': BriefcaseIcon,
   'python-automation': CommandLineIcon,
   'devops-cloud': CloudIcon,
   'mlops-deployment': RocketLaunchIcon,
-  'digital-marketing': MegaphoneIcon,
   'data-analytics': PresentationChartLineIcon,
   'cybersecurity': ShieldCheckIcon,
+  'cloud-migration': CloudArrowUpIcon,
 };
 
 // Gradient backgrounds for service tiles
@@ -64,6 +86,9 @@ const serviceGradients: Record<string, string> = {
   'api-development': 'from-purple-500/10 to-purple-600/10 hover:from-purple-500/20 hover:to-purple-600/20 border-purple-200/50',
   'ui-ux-design': 'from-pink-500/10 to-pink-600/10 hover:from-pink-500/20 hover:to-pink-600/20 border-pink-200/50',
   'mobile-development': 'from-cyan-500/10 to-cyan-600/10 hover:from-cyan-500/20 hover:to-cyan-600/20 border-cyan-200/50',
+  'saas-development': 'from-sky-500/10 to-sky-600/10 hover:from-sky-500/20 hover:to-sky-600/20 border-sky-200/50',
+  'wordpress-development': 'from-blue-400/10 to-indigo-500/10 hover:from-blue-400/20 hover:to-indigo-500/20 border-blue-200/50',
+  'graphic-design': 'from-fuchsia-500/10 to-fuchsia-600/10 hover:from-fuchsia-500/20 hover:to-fuchsia-600/20 border-fuchsia-200/50',
   'ai-solutions': 'from-violet-500/10 to-violet-600/10 hover:from-violet-500/20 hover:to-violet-600/20 border-violet-200/50',
   'machine-learning': 'from-indigo-500/10 to-indigo-600/10 hover:from-indigo-500/20 hover:to-indigo-600/20 border-indigo-200/50',
   'conversational-ai': 'from-teal-500/10 to-teal-600/10 hover:from-teal-500/20 hover:to-teal-600/20 border-teal-200/50',
@@ -72,12 +97,20 @@ const serviceGradients: Record<string, string> = {
   'prompt-engineering': 'from-rose-500/10 to-rose-600/10 hover:from-rose-500/20 hover:to-rose-600/20 border-rose-200/50',
   'ai-agents': 'from-fuchsia-500/10 to-fuchsia-600/10 hover:from-fuchsia-500/20 hover:to-fuchsia-600/20 border-fuchsia-200/50',
   'rag-solutions': 'from-lime-500/10 to-lime-600/10 hover:from-lime-500/20 hover:to-lime-600/20 border-lime-200/50',
+  'seo': 'from-green-500/10 to-green-600/10 hover:from-green-500/20 hover:to-green-600/20 border-green-200/50',
+  'google-ads': 'from-blue-500/10 to-yellow-500/10 hover:from-blue-500/20 hover:to-yellow-500/20 border-blue-200/50',
+  'meta-ads': 'from-blue-600/10 to-indigo-500/10 hover:from-blue-600/20 hover:to-indigo-500/20 border-blue-200/50',
+  'social-media-marketing': 'from-pink-500/10 to-rose-500/10 hover:from-pink-500/20 hover:to-rose-500/20 border-pink-200/50',
+  'email-marketing': 'from-amber-500/10 to-orange-500/10 hover:from-amber-500/20 hover:to-orange-500/20 border-amber-200/50',
+  'content-marketing': 'from-teal-500/10 to-emerald-500/10 hover:from-teal-500/20 hover:to-emerald-500/20 border-teal-200/50',
+  'tiktok-ads': 'from-gray-800/10 to-pink-500/10 hover:from-gray-800/20 hover:to-pink-500/20 border-gray-200/50',
+  'linkedin-ads': 'from-blue-700/10 to-blue-500/10 hover:from-blue-700/20 hover:to-blue-500/20 border-blue-200/50',
   'python-automation': 'from-yellow-500/10 to-yellow-600/10 hover:from-yellow-500/20 hover:to-yellow-600/20 border-yellow-200/50',
   'devops-cloud': 'from-sky-500/10 to-sky-600/10 hover:from-sky-500/20 hover:to-sky-600/20 border-sky-200/50',
   'mlops-deployment': 'from-red-500/10 to-red-600/10 hover:from-red-500/20 hover:to-red-600/20 border-red-200/50',
-  'digital-marketing': 'from-green-500/10 to-green-600/10 hover:from-green-500/20 hover:to-green-600/20 border-green-200/50',
   'data-analytics': 'from-slate-500/10 to-slate-600/10 hover:from-slate-500/20 hover:to-slate-600/20 border-slate-200/50',
   'cybersecurity': 'from-gray-500/10 to-gray-600/10 hover:from-gray-500/20 hover:to-gray-600/20 border-gray-200/50',
+  'cloud-migration': 'from-cyan-500/10 to-blue-500/10 hover:from-cyan-500/20 hover:to-blue-500/20 border-cyan-200/50',
 };
 
 // Icon colors for services
@@ -87,6 +120,9 @@ const serviceIconColors: Record<string, string> = {
   'api-development': 'text-purple-600',
   'ui-ux-design': 'text-pink-600',
   'mobile-development': 'text-cyan-600',
+  'saas-development': 'text-sky-600',
+  'wordpress-development': 'text-blue-500',
+  'graphic-design': 'text-fuchsia-600',
   'ai-solutions': 'text-violet-600',
   'machine-learning': 'text-indigo-600',
   'conversational-ai': 'text-teal-600',
@@ -95,30 +131,37 @@ const serviceIconColors: Record<string, string> = {
   'prompt-engineering': 'text-rose-600',
   'ai-agents': 'text-fuchsia-600',
   'rag-solutions': 'text-lime-600',
+  'seo': 'text-green-600',
+  'google-ads': 'text-blue-600',
+  'meta-ads': 'text-blue-700',
+  'social-media-marketing': 'text-pink-600',
+  'email-marketing': 'text-amber-600',
+  'content-marketing': 'text-teal-600',
+  'tiktok-ads': 'text-gray-800',
+  'linkedin-ads': 'text-blue-700',
   'python-automation': 'text-yellow-600',
   'devops-cloud': 'text-sky-600',
   'mlops-deployment': 'text-red-600',
-  'digital-marketing': 'text-green-600',
   'data-analytics': 'text-slate-600',
   'cybersecurity': 'text-gray-600',
+  'cloud-migration': 'text-cyan-600',
 };
 
-// Service categories with their items
+// Service categories with their items — 4 balanced columns
 const serviceCategories = {
-  webDev: {
+  webSoftware: {
     services: [
       { slug: 'web-development' },
       { slug: 'e-commerce' },
       { slug: 'api-development' },
       { slug: 'ui-ux-design' },
-    ]
-  },
-  mobileDev: {
-    services: [
       { slug: 'mobile-development' },
+      { slug: 'saas-development' },
+      { slug: 'wordpress-development' },
+      { slug: 'graphic-design' },
     ]
   },
-  aiServices: {
+  aiMl: {
     services: [
       { slug: 'ai-solutions' },
       { slug: 'machine-learning' },
@@ -130,24 +173,28 @@ const serviceCategories = {
       { slug: 'rag-solutions' },
     ]
   },
-  automation: {
+  marketing: {
+    services: [
+      { slug: 'seo' },
+      { slug: 'google-ads' },
+      { slug: 'meta-ads' },
+      { slug: 'social-media-marketing' },
+      { slug: 'email-marketing' },
+      { slug: 'content-marketing' },
+      { slug: 'tiktok-ads' },
+      { slug: 'linkedin-ads' },
+    ]
+  },
+  infrastructure: {
     services: [
       { slug: 'python-automation' },
       { slug: 'devops-cloud' },
       { slug: 'mlops-deployment' },
-    ]
-  },
-  marketing: {
-    services: [
-      { slug: 'digital-marketing' },
       { slug: 'data-analytics' },
+      { slug: 'cybersecurity' },
+      { slug: 'cloud-migration' },
     ]
   },
-  security: {
-    services: [
-      { slug: 'cybersecurity' },
-    ]
-  }
 };
 
 export default function Navbar() {
@@ -306,7 +353,7 @@ export default function Navbar() {
 
                   {/* Mega Dropdown */}
                   {servicesOpen && (
-                    <div className={`absolute top-full mt-4 ${dir === 'rtl' ? 'right-0' : 'left-1/2 -translate-x-1/2'} w-[900px] bg-white/95 backdrop-blur-xl border border-gray-200 rounded-2xl shadow-2xl p-8 z-50`}>
+                    <div className={`absolute top-full mt-4 ${dir === 'rtl' ? 'right-0' : 'left-1/2 -translate-x-1/2'} w-[1100px] bg-white/95 backdrop-blur-xl border border-gray-200 rounded-2xl shadow-2xl p-8 z-50`}>
                       {/* Header */}
                       <div className="flex items-center justify-between mb-6 pb-4 border-b border-gray-100">
                         <div>
@@ -325,17 +372,17 @@ export default function Navbar() {
                         </Link>
                       </div>
 
-                      <div className="grid grid-cols-3 gap-8">
-                        {/* Column 1: Web & Design */}
+                      <div className="grid grid-cols-4 gap-6 max-h-[75vh] overflow-y-auto">
+                        {/* Column 1: Web & Software */}
                         <div>
                           <div className="flex items-center gap-2 mb-4">
                             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
                               <CodeBracketIcon className="w-4 h-4 text-white" />
                             </div>
-                            <h3 className="text-sm font-semibold text-gray-900">{tServices('webDesign')}</h3>
+                            <h3 className="text-sm font-semibold text-gray-900">{tServices('webSoftware')}</h3>
                           </div>
-                          <div className="space-y-2">
-                            {serviceCategories.webDev.services.map((service) => {
+                          <div className="space-y-1.5">
+                            {serviceCategories.webSoftware.services.map((service) => {
                               const IconComponent = serviceIcons[service.slug] || CpuChipIcon;
                               const gradient = serviceGradients[service.slug];
                               const iconColor = serviceIconColors[service.slug];
@@ -344,49 +391,17 @@ export default function Navbar() {
                                   key={service.slug}
                                   href={getServicePath(service.slug)}
                                   onClick={handleLinkClick}
-                                  className={`group flex items-center gap-3 p-2.5 rounded-xl bg-gradient-to-br ${gradient} border transition-all duration-300 hover:shadow-md hover:scale-[1.02]`}
+                                  className={`group flex items-center gap-2.5 p-2 rounded-xl bg-gradient-to-br ${gradient} border transition-all duration-300 hover:shadow-md hover:scale-[1.02]`}
                                 >
-                                  <div className={`flex-shrink-0 w-9 h-9 rounded-lg bg-white shadow-sm flex items-center justify-center ${iconColor} group-hover:scale-110 transition-transform duration-300`}>
-                                    <IconComponent className="w-4.5 h-4.5" />
+                                  <div className={`flex-shrink-0 w-8 h-8 rounded-lg bg-white shadow-sm flex items-center justify-center ${iconColor} group-hover:scale-110 transition-transform duration-300`}>
+                                    <IconComponent className="w-4 h-4" />
                                   </div>
-                                  <span className="text-sm font-medium text-gray-700 group-hover:text-gray-900 transition-colors">
+                                  <span className="text-[13px] font-medium text-gray-700 group-hover:text-gray-900 transition-colors">
                                     {tServices(`services.${service.slug}`)}
                                   </span>
                                 </Link>
                               );
                             })}
-                          </div>
-
-                          {/* Mobile Section */}
-                          <div className="mt-6">
-                            <div className="flex items-center gap-2 mb-4">
-                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-500 to-cyan-600 flex items-center justify-center">
-                                <DevicePhoneMobileIcon className="w-4 h-4 text-white" />
-                              </div>
-                              <h3 className="text-sm font-semibold text-gray-900">{tServices('mobile')}</h3>
-                            </div>
-                            <div className="space-y-2">
-                              {serviceCategories.mobileDev.services.map((service) => {
-                                const IconComponent = serviceIcons[service.slug] || CpuChipIcon;
-                                const gradient = serviceGradients[service.slug];
-                                const iconColor = serviceIconColors[service.slug];
-                                return (
-                                  <Link
-                                    key={service.slug}
-                                    href={getServicePath(service.slug)}
-                                    onClick={handleLinkClick}
-                                    className={`group flex items-center gap-3 p-2.5 rounded-xl bg-gradient-to-br ${gradient} border transition-all duration-300 hover:shadow-md hover:scale-[1.02]`}
-                                  >
-                                    <div className={`flex-shrink-0 w-9 h-9 rounded-lg bg-white shadow-sm flex items-center justify-center ${iconColor} group-hover:scale-110 transition-transform duration-300`}>
-                                      <IconComponent className="w-4.5 h-4.5" />
-                                    </div>
-                                    <span className="text-sm font-medium text-gray-700 group-hover:text-gray-900 transition-colors">
-                                      {tServices(`services.${service.slug}`)}
-                                    </span>
-                                  </Link>
-                                );
-                              })}
-                            </div>
                           </div>
                         </div>
 
@@ -398,8 +413,8 @@ export default function Navbar() {
                             </div>
                             <h3 className="text-sm font-semibold text-gray-900">{tServices('aiMl')}</h3>
                           </div>
-                          <div className="space-y-2">
-                            {serviceCategories.aiServices.services.map((service) => {
+                          <div className="space-y-1.5">
+                            {serviceCategories.aiMl.services.map((service) => {
                               const IconComponent = serviceIcons[service.slug] || CpuChipIcon;
                               const gradient = serviceGradients[service.slug];
                               const iconColor = serviceIconColors[service.slug];
@@ -408,12 +423,12 @@ export default function Navbar() {
                                   key={service.slug}
                                   href={getServicePath(service.slug)}
                                   onClick={handleLinkClick}
-                                  className={`group flex items-center gap-3 p-2.5 rounded-xl bg-gradient-to-br ${gradient} border transition-all duration-300 hover:shadow-md hover:scale-[1.02]`}
+                                  className={`group flex items-center gap-2.5 p-2 rounded-xl bg-gradient-to-br ${gradient} border transition-all duration-300 hover:shadow-md hover:scale-[1.02]`}
                                 >
-                                  <div className={`flex-shrink-0 w-9 h-9 rounded-lg bg-white shadow-sm flex items-center justify-center ${iconColor} group-hover:scale-110 transition-transform duration-300`}>
-                                    <IconComponent className="w-4.5 h-4.5" />
+                                  <div className={`flex-shrink-0 w-8 h-8 rounded-lg bg-white shadow-sm flex items-center justify-center ${iconColor} group-hover:scale-110 transition-transform duration-300`}>
+                                    <IconComponent className="w-4 h-4" />
                                   </div>
-                                  <span className="text-sm font-medium text-gray-700 group-hover:text-gray-900 transition-colors">
+                                  <span className="text-[13px] font-medium text-gray-700 group-hover:text-gray-900 transition-colors">
                                     {tServices(`services.${service.slug}`)}
                                   </span>
                                 </Link>
@@ -422,102 +437,67 @@ export default function Navbar() {
                           </div>
                         </div>
 
-                        {/* Column 3: Infrastructure & Marketing */}
+                        {/* Column 3: Marketing & Growth */}
                         <div>
-                          {/* Automation Section */}
-                          <div className="mb-6">
-                            <div className="flex items-center gap-2 mb-4">
-                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center">
-                                <CommandLineIcon className="w-4 h-4 text-white" />
-                              </div>
-                              <h3 className="text-sm font-semibold text-gray-900">{tServices('automation')}</h3>
+                          <div className="flex items-center gap-2 mb-4">
+                            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center">
+                              <MegaphoneIcon className="w-4 h-4 text-white" />
                             </div>
-                            <div className="space-y-2">
-                              {serviceCategories.automation.services.map((service) => {
-                                const IconComponent = serviceIcons[service.slug] || CpuChipIcon;
-                                const gradient = serviceGradients[service.slug];
-                                const iconColor = serviceIconColors[service.slug];
-                                return (
-                                  <Link
-                                    key={service.slug}
-                                    href={getServicePath(service.slug)}
-                                    onClick={handleLinkClick}
-                                    className={`group flex items-center gap-3 p-2.5 rounded-xl bg-gradient-to-br ${gradient} border transition-all duration-300 hover:shadow-md hover:scale-[1.02]`}
-                                  >
-                                    <div className={`flex-shrink-0 w-9 h-9 rounded-lg bg-white shadow-sm flex items-center justify-center ${iconColor} group-hover:scale-110 transition-transform duration-300`}>
-                                      <IconComponent className="w-4.5 h-4.5" />
-                                    </div>
-                                    <span className="text-sm font-medium text-gray-700 group-hover:text-gray-900 transition-colors">
-                                      {tServices(`services.${service.slug}`)}
-                                    </span>
-                                  </Link>
-                                );
-                              })}
-                            </div>
+                            <h3 className="text-sm font-semibold text-gray-900">{tServices('marketingGrowth')}</h3>
                           </div>
-
-                          {/* Marketing Section */}
-                          <div className="mb-6">
-                            <div className="flex items-center gap-2 mb-4">
-                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center">
-                                <MegaphoneIcon className="w-4 h-4 text-white" />
-                              </div>
-                              <h3 className="text-sm font-semibold text-gray-900">{tServices('marketing')}</h3>
-                            </div>
-                            <div className="space-y-2">
-                              {serviceCategories.marketing.services.map((service) => {
-                                const IconComponent = serviceIcons[service.slug] || CpuChipIcon;
-                                const gradient = serviceGradients[service.slug];
-                                const iconColor = serviceIconColors[service.slug];
-                                return (
-                                  <Link
-                                    key={service.slug}
-                                    href={getServicePath(service.slug)}
-                                    onClick={handleLinkClick}
-                                    className={`group flex items-center gap-3 p-2.5 rounded-xl bg-gradient-to-br ${gradient} border transition-all duration-300 hover:shadow-md hover:scale-[1.02]`}
-                                  >
-                                    <div className={`flex-shrink-0 w-9 h-9 rounded-lg bg-white shadow-sm flex items-center justify-center ${iconColor} group-hover:scale-110 transition-transform duration-300`}>
-                                      <IconComponent className="w-4.5 h-4.5" />
-                                    </div>
-                                    <span className="text-sm font-medium text-gray-700 group-hover:text-gray-900 transition-colors">
-                                      {tServices(`services.${service.slug}`)}
-                                    </span>
-                                  </Link>
-                                );
-                              })}
-                            </div>
+                          <div className="space-y-1.5">
+                            {serviceCategories.marketing.services.map((service) => {
+                              const IconComponent = serviceIcons[service.slug] || CpuChipIcon;
+                              const gradient = serviceGradients[service.slug];
+                              const iconColor = serviceIconColors[service.slug];
+                              return (
+                                <Link
+                                  key={service.slug}
+                                  href={getServicePath(service.slug)}
+                                  onClick={handleLinkClick}
+                                  className={`group flex items-center gap-2.5 p-2 rounded-xl bg-gradient-to-br ${gradient} border transition-all duration-300 hover:shadow-md hover:scale-[1.02]`}
+                                >
+                                  <div className={`flex-shrink-0 w-8 h-8 rounded-lg bg-white shadow-sm flex items-center justify-center ${iconColor} group-hover:scale-110 transition-transform duration-300`}>
+                                    <IconComponent className="w-4 h-4" />
+                                  </div>
+                                  <span className="text-[13px] font-medium text-gray-700 group-hover:text-gray-900 transition-colors">
+                                    {tServices(`services.${service.slug}`)}
+                                  </span>
+                                </Link>
+                              );
+                            })}
                           </div>
+                        </div>
 
-                          {/* Security Section */}
-                          <div>
-                            <div className="flex items-center gap-2 mb-4">
-                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-gray-600 to-gray-700 flex items-center justify-center">
-                                <ShieldCheckIcon className="w-4 h-4 text-white" />
-                              </div>
-                              <h3 className="text-sm font-semibold text-gray-900">Security</h3>
+                        {/* Column 4: Infrastructure */}
+                        <div>
+                          <div className="flex items-center gap-2 mb-4">
+                            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center">
+                              <ServerStackIcon className="w-4 h-4 text-white" />
                             </div>
-                            <div className="space-y-2">
-                              {serviceCategories.security.services.map((service) => {
-                                const IconComponent = serviceIcons[service.slug] || CpuChipIcon;
-                                const gradient = serviceGradients[service.slug];
-                                const iconColor = serviceIconColors[service.slug];
-                                return (
-                                  <Link
-                                    key={service.slug}
-                                    href={getServicePath(service.slug)}
-                                    onClick={handleLinkClick}
-                                    className={`group flex items-center gap-3 p-2.5 rounded-xl bg-gradient-to-br ${gradient} border transition-all duration-300 hover:shadow-md hover:scale-[1.02]`}
-                                  >
-                                    <div className={`flex-shrink-0 w-9 h-9 rounded-lg bg-white shadow-sm flex items-center justify-center ${iconColor} group-hover:scale-110 transition-transform duration-300`}>
-                                      <IconComponent className="w-4.5 h-4.5" />
-                                    </div>
-                                    <span className="text-sm font-medium text-gray-700 group-hover:text-gray-900 transition-colors">
-                                      {tServices(`services.${service.slug}`)}
-                                    </span>
-                                  </Link>
-                                );
-                              })}
-                            </div>
+                            <h3 className="text-sm font-semibold text-gray-900">{tServices('infrastructure')}</h3>
+                          </div>
+                          <div className="space-y-1.5">
+                            {serviceCategories.infrastructure.services.map((service) => {
+                              const IconComponent = serviceIcons[service.slug] || CpuChipIcon;
+                              const gradient = serviceGradients[service.slug];
+                              const iconColor = serviceIconColors[service.slug];
+                              return (
+                                <Link
+                                  key={service.slug}
+                                  href={getServicePath(service.slug)}
+                                  onClick={handleLinkClick}
+                                  className={`group flex items-center gap-2.5 p-2 rounded-xl bg-gradient-to-br ${gradient} border transition-all duration-300 hover:shadow-md hover:scale-[1.02]`}
+                                >
+                                  <div className={`flex-shrink-0 w-8 h-8 rounded-lg bg-white shadow-sm flex items-center justify-center ${iconColor} group-hover:scale-110 transition-transform duration-300`}>
+                                    <IconComponent className="w-4 h-4" />
+                                  </div>
+                                  <span className="text-[13px] font-medium text-gray-700 group-hover:text-gray-900 transition-colors">
+                                    {tServices(`services.${service.slug}`)}
+                                  </span>
+                                </Link>
+                              );
+                            })}
                           </div>
                         </div>
                       </div>
@@ -708,18 +688,18 @@ export default function Navbar() {
 
                     {mobileServicesOpen && (
                       <div className="mt-2 ml-4 space-y-4 pb-4">
-                        {/* Web & Design */}
+                        {/* Web & Software */}
                         <div>
                           <div className="flex items-center gap-2 mb-2 px-2">
                             <div className="w-6 h-6 rounded-md bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
                               <CodeBracketIcon className="w-3 h-3 text-white" />
                             </div>
                             <h4 className="text-xs font-semibold text-gray-700 uppercase tracking-wider">
-                              {tServices('webDesign')}
+                              {tServices('webSoftware')}
                             </h4>
                           </div>
                           <ul className="space-y-1">
-                            {serviceCategories.webDev.services.map((service) => {
+                            {serviceCategories.webSoftware.services.map((service) => {
                               const IconComponent = serviceIcons[service.slug] || CpuChipIcon;
                               const iconColor = serviceIconColors[service.slug];
                               return (
@@ -749,7 +729,7 @@ export default function Navbar() {
                             </h4>
                           </div>
                           <ul className="space-y-1">
-                            {serviceCategories.aiServices.services.map((service) => {
+                            {serviceCategories.aiMl.services.map((service) => {
                               const IconComponent = serviceIcons[service.slug] || CpuChipIcon;
                               const iconColor = serviceIconColors[service.slug];
                               return (
@@ -768,60 +748,14 @@ export default function Navbar() {
                           </ul>
                         </div>
 
-                        {/* Mobile & Infrastructure */}
-                        <div>
-                          <div className="flex items-center gap-2 mb-2 px-2">
-                            <div className="w-6 h-6 rounded-md bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center">
-                              <CommandLineIcon className="w-3 h-3 text-white" />
-                            </div>
-                            <h4 className="text-xs font-semibold text-gray-700 uppercase tracking-wider">
-                              {tServices('automation')}
-                            </h4>
-                          </div>
-                          <ul className="space-y-1">
-                            {serviceCategories.mobileDev.services.map((service) => {
-                              const IconComponent = serviceIcons[service.slug] || CpuChipIcon;
-                              const iconColor = serviceIconColors[service.slug];
-                              return (
-                                <li key={service.slug}>
-                                  <Link
-                                    href={getServicePath(service.slug)}
-                                    onClick={() => setOpen(false)}
-                                    className="flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900 px-2 py-1.5 hover:bg-gray-50 rounded-lg transition-colors"
-                                  >
-                                    <IconComponent className={`w-4 h-4 ${iconColor}`} />
-                                    <span>{tServices(`services.${service.slug}`)}</span>
-                                  </Link>
-                                </li>
-                              );
-                            })}
-                            {serviceCategories.automation.services.map((service) => {
-                              const IconComponent = serviceIcons[service.slug] || CpuChipIcon;
-                              const iconColor = serviceIconColors[service.slug];
-                              return (
-                                <li key={service.slug}>
-                                  <Link
-                                    href={getServicePath(service.slug)}
-                                    onClick={() => setOpen(false)}
-                                    className="flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900 px-2 py-1.5 hover:bg-gray-50 rounded-lg transition-colors"
-                                  >
-                                    <IconComponent className={`w-4 h-4 ${iconColor}`} />
-                                    <span>{tServices(`services.${service.slug}`)}</span>
-                                  </Link>
-                                </li>
-                              );
-                            })}
-                          </ul>
-                        </div>
-
-                        {/* Marketing & Security */}
+                        {/* Marketing & Growth */}
                         <div>
                           <div className="flex items-center gap-2 mb-2 px-2">
                             <div className="w-6 h-6 rounded-md bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center">
                               <MegaphoneIcon className="w-3 h-3 text-white" />
                             </div>
                             <h4 className="text-xs font-semibold text-gray-700 uppercase tracking-wider">
-                              {tServices('marketing')}
+                              {tServices('marketingGrowth')}
                             </h4>
                           </div>
                           <ul className="space-y-1">
@@ -841,7 +775,21 @@ export default function Navbar() {
                                 </li>
                               );
                             })}
-                            {serviceCategories.security.services.map((service) => {
+                          </ul>
+                        </div>
+
+                        {/* Infrastructure */}
+                        <div>
+                          <div className="flex items-center gap-2 mb-2 px-2">
+                            <div className="w-6 h-6 rounded-md bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center">
+                              <ServerStackIcon className="w-3 h-3 text-white" />
+                            </div>
+                            <h4 className="text-xs font-semibold text-gray-700 uppercase tracking-wider">
+                              {tServices('infrastructure')}
+                            </h4>
+                          </div>
+                          <ul className="space-y-1">
+                            {serviceCategories.infrastructure.services.map((service) => {
                               const IconComponent = serviceIcons[service.slug] || CpuChipIcon;
                               const iconColor = serviceIconColors[service.slug];
                               return (

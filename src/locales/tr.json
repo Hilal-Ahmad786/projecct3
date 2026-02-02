@@ -64,32 +64,42 @@
     }
   },
   "megaMenu": {
-    "webDesign": "Web & Tasarım",
-    "aiMl": "AI & Makine Öğrenimi",
-    "mobile": "Mobil",
-    "automation": "Otomasyon & DevOps",
-    "marketing": "Pazarlama & Analitik",
+    "webSoftware": "Web & Yazılım",
+    "aiMl": "Yapay Zeka & ML",
+    "marketingGrowth": "Pazarlama & Büyüme",
+    "infrastructure": "Altyapı",
     "viewAll": "Tüm Hizmetleri Gör",
     "services": {
       "web-development": "Web Geliştirme",
       "e-commerce": "E-Ticaret",
       "api-development": "API Geliştirme",
       "ui-ux-design": "UI/UX Tasarım",
-      "mobile-development": "Mobil Uygulama",
+      "mobile-development": "Mobil Geliştirme",
+      "saas-development": "SaaS Geliştirme",
+      "wordpress-development": "WordPress Geliştirme",
+      "graphic-design": "Grafik Tasarım",
       "ai-solutions": "Yapay Zeka Çözümleri",
-      "machine-learning": "Makine Öğrenimi",
+      "machine-learning": "Makine Öğrenmesi",
       "conversational-ai": "Konuşma Yapay Zekası",
-      "computer-vision": "Bilgisayar Görüşü",
+      "computer-vision": "Bilgisayarlı Görü",
       "llm-finetuning": "LLM İnce Ayar",
       "prompt-engineering": "Prompt Mühendisliği",
-      "ai-agents": "AI Ajanlar",
+      "ai-agents": "Yapay Zeka Ajanları",
       "rag-solutions": "RAG Çözümleri",
-      "python-automation": "Python Otomasyonu",
-      "devops-cloud": "DevOps & Cloud",
+      "seo": "SEO",
+      "google-ads": "Google Ads (PPC)",
+      "meta-ads": "Meta Reklamları",
+      "social-media-marketing": "Sosyal Medya Pazarlama",
+      "email-marketing": "E-posta Pazarlama",
+      "content-marketing": "İçerik Pazarlama",
+      "tiktok-ads": "TikTok Reklamları",
+      "linkedin-ads": "LinkedIn Reklamları",
+      "python-automation": "Python Otomasyon",
+      "devops-cloud": "DevOps & Bulut",
       "mlops-deployment": "MLOps Dağıtım",
-      "digital-marketing": "Dijital Pazarlama",
       "data-analytics": "Veri Analitiği",
-      "cybersecurity": "Siber Güvenlik"
+      "cybersecurity": "Siber Güvenlik",
+      "cloud-migration": "Bulut Göçü"
     }
   },
   "hero": {
@@ -210,10 +220,9 @@
       "title": "Hizmetlerimiz",
       "subtitle": "Modern işletmeler için büyüme ve verimlilik sağlayan kapsamlı dijital çözümler sunuyoruz.",
       "categories": {
-        "automation": "Otomasyon",
-        "ai": "AI Çözümleri",
-        "web": "Geliştirme",
-        "design": "Tasarım ve Pazarlama",
+        "web": "Web & Yazılım",
+        "ai": "Yapay Zeka",
+        "marketing": "Pazarlama & Büyüme",
         "infrastructure": "Altyapı"
       },
       "readyToStart": "Başlamaya Hazır mısınız?",
@@ -322,15 +331,70 @@
           "Tasarım Sistemleri"
         ]
       },
-      "digitalMarketing": {
-        "title": "Dijital Pazarlama",
-        "description": "Çevrimiçi varlığınızı büyütmek için kapsamlı dijital pazarlama stratejileri.",
-        "features": [
-          "SEO Optimizasyonu",
-          "İçerik Stratejisi",
-          "Sosyal Medya",
-          "Analitik"
-        ]
+      "seo": {
+        "title": "SEO",
+        "description": "Veri odaklı SEO stratejileri ile arama sonuçlarına hakim olun.",
+        "features": ["Teknik SEO Denetimleri", "Anahtar Kelime Stratejisi", "Link Oluşturma", "Yerel SEO"]
+      },
+      "googleAds": {
+        "title": "Google Ads (PPC)",
+        "description": "Profesyonelce yönetilen Google Ads kampanyaları ile anında nitelikli trafik.",
+        "features": ["Arama Kampanyaları", "Görüntülü & Yeniden Pazarlama", "Alışveriş Reklamları", "Dönüşüm Takibi"]
+      },
+      "metaAds": {
+        "title": "Meta Reklamları",
+        "description": "Hedefli Facebook & Instagram reklam kampanyaları ile milyarlarca kullanıcıya ulaşın.",
+        "features": ["Özel Kitleler", "Yaratıcı Tasarım", "Yeniden Hedefleme", "Dinamik Reklamlar"]
+      },
+      "socialMediaMarketing": {
+        "title": "Sosyal Medya Pazarlama",
+        "description": "Etkileşimli topluluklar oluşturun ve markanızı sosyal platformlarda büyütün.",
+        "features": ["İçerik Stratejisi", "Topluluk Yönetimi", "Influencer Ortaklıkları", "Sosyal Analitik"]
+      },
+      "emailMarketing": {
+        "title": "E-posta Pazarlama",
+        "description": "Kişiselleştirilmiş e-posta kampanyaları ile potansiyel müşterileri besleyin.",
+        "features": ["Kampanya Tasarımı", "Pazarlama Otomasyonu", "Liste Segmentasyonu", "A/B Testi"]
+      },
+      "contentMarketing": {
+        "title": "İçerik Pazarlama",
+        "description": "Değerli, stratejik içeriklerle hedef kitlenizi çekin ve etkileşim kurun.",
+        "features": ["İçerik Stratejisi", "Blog Yazıları", "Teknik Belgeler", "Video Senaryoları"]
+      },
+      "tiktokAds": {
+        "title": "TikTok Reklamları",
+        "description": "Viral TikTok reklam kampanyaları ile Gen Z ve Millennials'a ulaşın.",
+        "features": ["In-Feed Reklamlar", "İçerik Üretici Ortaklıkları", "Video Prodüksiyonu", "TikTok Shop"]
+      },
+      "linkedinAds": {
+        "title": "LinkedIn Reklamları",
+        "description": "Hassas LinkedIn reklamları ile yüksek kaliteli B2B potansiyel müşteriler üretin.",
+        "features": ["Sponsorlu İçerik", "Lead Gen Formları", "ABM Kampanyaları", "InMail Reklamları"]
+      },
+      "saasDevelopment": {
+        "title": "SaaS Geliştirme",
+        "description": "Konseptten lansmana kadar ölçeklenebilir, çok kiracılı SaaS platformları oluşturun.",
+        "features": ["Çok Kiracılı Mimari", "Abonelik Faturalandırma", "Yönetici Paneli", "API-First Tasarım"]
+      },
+      "wordpressDevelopment": {
+        "title": "WordPress Geliştirme",
+        "description": "Profesyonel WordPress web siteleri ve özel CMS çözümleri.",
+        "features": ["Özel Temalar", "Eklenti Geliştirme", "WooCommerce", "Hız Optimizasyonu"]
+      },
+      "graphicDesign": {
+        "title": "Grafik Tasarım",
+        "description": "Çarpıcı görsel kimlikler ve pazarlama materyalleri oluşturun.",
+        "features": ["Logo & Marka", "Pazarlama Materyalleri", "Sosyal Medya Grafikleri", "Marka Rehberleri"]
+      },
+      "cybersecurity": {
+        "title": "Siber Güvenlik",
+        "description": "Dijital varlıklarınızı kurumsal düzeyde güvenlik çözümleriyle koruyun.",
+        "features": ["Sızma Testleri", "Güvenlik Denetimleri", "Uyumluluk Desteği", "Olay Müdahalesi"]
+      },
+      "cloudMigration": {
+        "title": "Bulut Göçü",
+        "description": "Altyapınızı daha iyi performans için sorunsuzca buluta taşıyın.",
+        "features": ["Bulut Hazırlık Değerlendirmesi", "Göç Planlaması", "Uygulama Yeniden Yapılandırma", "Göç Sonrası Optimizasyon"]
       },
       "ecommerceSolutions": {
         "title": "E-Ticaret Çözümleri",
