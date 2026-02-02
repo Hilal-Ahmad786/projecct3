@@ -14,3 +14,4 @@ export * from './useProjects';
 export * from './useReports';
 export * from './useTraffic';
 export * from './useSecurity';
+export * from './useMedia';

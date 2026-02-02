@@ -21,6 +21,7 @@ import {
 } from '@heroicons/react/24/outline';
 import { StarIcon } from '@heroicons/react/24/solid';
 import MarkdownToolbar from '@/components/admin/forms/MarkdownToolbar';
+import { MediaPicker } from '@/components/admin/media';
 
 // Types matching the database schema
 interface BlogTranslation {
@@ -609,21 +610,12 @@ export default function BlogContentPage() {
                             </div>
 
                             {/* Featured image */}
-                            <div>
-                                <label className="block text-sm font-medium text-gray-700 mb-1">Featured Image URL</label>
-                                <input
-                                    type="text"
-                                    value={formData.featuredImage}
-                                    onChange={(e) => setFormData(prev => ({ ...prev, featuredImage: e.target.value }))}
-                                    placeholder="https://example.com/image.jpg"
-                                    className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
-                                />
-                                {formData.featuredImage && (
-                                    <div className="mt-2 relative aspect-video max-w-xs rounded-lg overflow-hidden bg-gray-100">
-                                        <img src={formData.featuredImage} alt="Preview" className="object-cover w-full h-full" />
-                                    </div>
-                                )}
-                            </div>
+                            <MediaPicker
+                                label="Featured Image"
+                                value={formData.featuredImage}
+                                onChange={(url) => setFormData(prev => ({ ...prev, featuredImage: url }))}
+                                placeholder="No featured image selected"
+                            />
 
                             <div className="grid grid-cols-2 gap-4">
                                 <div>

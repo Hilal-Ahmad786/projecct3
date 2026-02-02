@@ -28,6 +28,7 @@ import TagInput from '@/components/admin/forms/TagInput';
 import StepBuilder from '@/components/admin/forms/StepBuilder';
 import FAQBuilder from '@/components/admin/forms/FAQBuilder';
 import MarkdownToolbar from '@/components/admin/forms/MarkdownToolbar';
+import { MediaPicker } from '@/components/admin/media';
 
 // ─── Gradient presets ───────────────────────────────────────────────
 const GRADIENT_PRESETS = [
@@ -357,21 +358,12 @@ function ServiceEditModal({
                             className="w-full px-4 py-2 border border-gray-200 rounded-b-lg rounded-t-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent resize-none font-mono text-sm"
                         />
                     </div>
-                    <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-1">Hero Image URL</label>
-                        <input
-                            type="text"
-                            value={data.heroImage}
-                            onChange={(e) => onChange({ ...data, heroImage: e.target.value })}
-                            placeholder="https://example.com/hero-image.jpg"
-                            className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
-                        />
-                        {data.heroImage && (
-                            <div className="mt-2 relative aspect-video max-w-xs rounded-lg overflow-hidden bg-gray-100">
-                                <img src={data.heroImage} alt="Hero preview" className="object-cover w-full h-full" />
-                            </div>
-                        )}
-                    </div>
+                    <MediaPicker
+                        label="Hero Image"
+                        value={data.heroImage}
+                        onChange={(url) => onChange({ ...data, heroImage: url })}
+                        placeholder="No hero image selected"
+                    />
                 </div>
             )}
 
@@ -436,16 +428,14 @@ function ServiceEditModal({
                                             placeholder="Project title..."
                                             className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
                                         />
-                                        <input
-                                            type="text"
+                                        <MediaPicker
                                             value={item.image}
-                                            onChange={(e) => {
+                                            onChange={(url) => {
                                                 const updated = [...data.portfolio];
-                                                updated[index] = { ...updated[index], image: e.target.value };
+                                                updated[index] = { ...updated[index], image: url };
                                                 onChange({ ...data, portfolio: updated });
                                             }}
-                                            placeholder="Image URL..."
-                                            className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                                            placeholder="No image"
                                         />
                                     </div>
                                     <button

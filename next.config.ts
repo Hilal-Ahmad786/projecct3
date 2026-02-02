@@ -11,6 +11,12 @@ const nextConfig = {
   images: {
     formats: ['image/webp', 'image/avif'],
     minimumCacheTTL: 60,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '*.public.blob.vercel-storage.com',
+      },
+    ],
   },
 
   async redirects() {

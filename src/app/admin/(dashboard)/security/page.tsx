@@ -128,19 +128,24 @@ export default function SecurityPage() {
           ]
         : [];
 
-    /* ---------- derived security checklist from summary ---------- */
-    const securityChecklist = summary
-        ? [
-              { name: 'SSL/TLS Certificate', status: !!summary.sslActive, lastChecked: 'Today' },
-              { name: 'Firewall Active', status: true, lastChecked: 'Today' },
-              { name: 'DDoS Protection', status: true, lastChecked: 'Today' },
-              { name: 'Two-Factor Authentication', status: true, lastChecked: 'Today' },
-              { name: 'Rate Limiting', status: true, lastChecked: 'Today' },
-              { name: 'Input Validation', status: true, lastChecked: 'Yesterday' },
-              { name: 'CORS Configuration', status: true, lastChecked: 'Yesterday' },
-              { name: 'Security Headers', status: (summary.securityScore ?? 0) >= 90, lastChecked: 'Yesterday' },
-          ]
-        : [];
+    /* ---------- fetch real security checklist ---------- */
+    const [securityChecklist, setSecurityChecklist] = useState<Array<{ name: string; status: boolean; lastChecked: string }>>([]);
+    const [checklistLoading, setChecklistLoading] = useState(true);
+
+    useState(() => {
+        fetch('/api/admin/security/checklist')
+            .then(r => r.json())
+            .then(data => {
+                if (data.checklist) {
+                    setSecurityChecklist(data.checklist.map((item: { name: string; status: boolean; lastChecked: string }) => ({
+                        ...item,
+                        lastChecked: item.lastChecked ? timeAgo(item.lastChecked) : 'Unknown',
+                    })));
+                }
+            })
+            .catch(() => {})
+            .finally(() => setChecklistLoading(false));
+    });
 
     /* ---------- handlers ---------- */
     async function handleAddIP(e: React.FormEvent) {
@@ -277,7 +282,7 @@ export default function SecurityPage() {
                         <h3 className="text-lg font-semibold text-gray-900">Security Checklist</h3>
                     </div>
                     <div className="divide-y divide-gray-200">
-                        {summaryLoading
+                        {(summaryLoading || checklistLoading)
                             ? Array.from({ length: 8 }).map((_, i) => <ChecklistSkeleton key={i} />)
                             : securityChecklist.length === 0
                               ? (

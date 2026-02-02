@@ -1,6 +1,8 @@
 'use client';
 
-import { RefObject } from 'react';
+import { RefObject, useState } from 'react';
+import MediaLibraryModal from '@/components/admin/media/MediaLibraryModal';
+import type { MediaItem } from '@/hooks/admin/useMedia';
 
 interface MarkdownToolbarProps {
     textareaRef: RefObject<HTMLTextAreaElement | null>;
@@ -14,6 +16,7 @@ type InsertAction = {
     prefix: string;
     suffix: string;
     block?: boolean;
+    mediaInsert?: boolean;
 };
 
 const actions: InsertAction[] = [
@@ -25,7 +28,7 @@ const actions: InsertAction[] = [
     { label: 'Bullet List', icon: '\u2022', prefix: '- ', suffix: '', block: true },
     { label: 'Numbered List', icon: '1.', prefix: '1. ', suffix: '', block: true },
     { label: 'Link', icon: '\uD83D\uDD17', prefix: '[', suffix: '](url)' },
-    { label: 'Image', icon: '\uD83D\uDDBC', prefix: '![alt](', suffix: ')' },
+    { label: 'Image', icon: '\uD83D\uDDBC', prefix: '![alt](', suffix: ')', mediaInsert: true },
     { label: 'Code', icon: '< >', prefix: '`', suffix: '`' },
     { label: 'Code Block', icon: '{ }', prefix: '```\n', suffix: '\n```', block: true },
     { label: 'Quote', icon: '\u201C', prefix: '> ', suffix: '', block: true },
@@ -34,6 +37,8 @@ const actions: InsertAction[] = [
 ];
 
 export default function MarkdownToolbar({ textareaRef, value, onChange }: MarkdownToolbarProps) {
+    const [showMediaModal, setShowMediaModal] = useState(false);
+
     const insertMarkdown = (action: InsertAction) => {
         const textarea = textareaRef.current;
         if (!textarea) return;
@@ -67,19 +72,51 @@ export default function MarkdownToolbar({ textareaRef, value, onChange }: Markdo
         });
     };
 
+    const handleMediaSelect = (item: MediaItem) => {
+        const textarea = textareaRef.current;
+        const start = textarea?.selectionStart ?? value.length;
+        const end = textarea?.selectionEnd ?? value.length;
+        const alt = item.alt || item.title || item.filename;
+        const markdown = `![${alt}](${item.url})`;
+        const newText = value.slice(0, start) + markdown + value.slice(end);
+        onChange(newText);
+        setShowMediaModal(false);
+
+        requestAnimationFrame(() => {
+            if (textarea) {
+                textarea.focus();
+                const pos = start + markdown.length;
+                textarea.setSelectionRange(pos, pos);
+            }
+        });
+    };
+
     return (
-        <div className="flex flex-wrap gap-0.5 p-1.5 bg-gray-50 border border-gray-200 rounded-t-lg border-b-0">
-            {actions.map((action, idx) => (
-                <button
-                    key={idx}
-                    type="button"
-                    onClick={() => insertMarkdown(action)}
-                    title={action.label}
-                    className="px-2 py-1 text-xs font-medium text-gray-600 hover:text-emerald-700 hover:bg-emerald-50 rounded transition-colors min-w-[28px] text-center"
-                >
-                    {action.icon}
-                </button>
-            ))}
-        </div>
+        <>
+            <div className="flex flex-wrap gap-0.5 p-1.5 bg-gray-50 border border-gray-200 rounded-t-lg border-b-0">
+                {actions.map((action, idx) => (
+                    <button
+                        key={idx}
+                        type="button"
+                        onClick={() => {
+                            if (action.mediaInsert) {
+                                setShowMediaModal(true);
+                            } else {
+                                insertMarkdown(action);
+                            }
+                        }}
+                        title={action.label}
+                        className="px-2 py-1 text-xs font-medium text-gray-600 hover:text-emerald-700 hover:bg-emerald-50 rounded transition-colors min-w-[28px] text-center"
+                    >
+                        {action.icon}
+                    </button>
+                ))}
+            </div>
+            <MediaLibraryModal
+                open={showMediaModal}
+                onClose={() => setShowMediaModal(false)}
+                onSelect={handleMediaSelect}
+            />
+        </>
     );
 }

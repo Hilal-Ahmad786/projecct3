@@ -490,6 +490,27 @@ model ProjectTranslation {
   @@index([locale])
 }
 
+// Media Model - Uploaded media files
+model Media {
+  id         String   @id @default(cuid())
+  filename   String
+  url        String
+  type       String   // image/jpeg, video/mp4, etc.
+  size       Int      // bytes
+  width      Int?
+  height     Int?
+  alt        String?
+  title      String?
+  folder     String   @default("general")
+  tags       String[]
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@index([folder])
+  @@index([type])
+  @@index([createdAt])
+}
+
 // Report Record Model - Generated reports
 model ReportRecord {
   id             String    @id @default(cuid())

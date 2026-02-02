@@ -22,6 +22,7 @@ import TabbedModal from '@/components/admin/forms/TabbedModal';
 import ArrayEditor from '@/components/admin/forms/ArrayEditor';
 import TagInput from '@/components/admin/forms/TagInput';
 import ResultsEditor from '@/components/admin/forms/ResultsEditor';
+import { MediaPicker, MultiMediaPicker } from '@/components/admin/media';
 
 const categories = ['All', 'E-Commerce', 'Automation', 'Mobile', 'AI', 'Analytics', 'DevOps', 'Web App', 'SaaS'];
 
@@ -336,27 +337,18 @@ function ProjectEditModal({
             {/* Tab 3: Media & Tech */}
             {activeTab === 'media' && (
                 <div className="space-y-6">
-                    <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-1">Thumbnail URL</label>
-                        <input
-                            type="text"
-                            value={data.thumbnail}
-                            onChange={(e) => onChange({ ...data, thumbnail: e.target.value })}
-                            placeholder="https://example.com/thumbnail.jpg"
-                            className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
-                        />
-                        {data.thumbnail && (
-                            <div className="mt-2 relative aspect-video max-w-xs rounded-lg overflow-hidden bg-gray-100">
-                                <img src={data.thumbnail} alt="Thumbnail preview" className="object-cover w-full h-full" />
-                            </div>
-                        )}
-                    </div>
+                    <MediaPicker
+                        label="Thumbnail"
+                        value={data.thumbnail}
+                        onChange={(url) => onChange({ ...data, thumbnail: url })}
+                        placeholder="No thumbnail selected"
+                    />
 
-                    <ArrayEditor
-                        label="Gallery Images (URLs)"
-                        items={data.images}
+                    <MultiMediaPicker
+                        label="Gallery Images"
+                        value={data.images}
                         onChange={(images) => onChange({ ...data, images })}
-                        placeholder="https://example.com/image.jpg"
+                        placeholder="No gallery images"
                     />
 
                     <TagInput
