@@ -1,10 +1,11 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import useSWR from 'swr';
 import RecentLeadsTable from '@/components/admin/widgets/RecentLeadsTable';
 import RecentInteractionsTable from '@/components/admin/widgets/RecentInteractionsTable';
 import TrafficChart from '@/components/admin/widgets/TrafficChart';
-import { useDashboard } from '@/hooks/admin/useDashboard';
+import { useDashboard, type DashboardStats } from '@/hooks/admin/useDashboard';
 import {
     UsersIcon,
     EnvelopeIcon,
@@ -24,7 +25,6 @@ import {
     ArrowUpIcon,
     SparklesIcon,
     FireIcon,
-    TrophyIcon,
     FlagIcon,
     ChatBubbleLeftRightIcon,
     ShieldCheckIcon,
@@ -392,32 +392,37 @@ function ActivityFeed({ recentActivity, isLoading }: {
     );
 }
 
-// Today's Highlights Component
-function TodaysHighlights() {
+// Today's Highlights Component — driven by real dashboard stats
+function TodaysHighlights({ stats, recentActivity, isLoading }: {
+    stats?: DashboardStats;
+    recentActivity?: {
+        leads: Array<{ id: string; name: string; email: string; status: string; createdAt: string }>;
+        projectRequests: Array<{ id: string; name: string; projectType: string; status: string; createdAt: string }>;
+        messages: Array<{ id: string; name: string; subject: string; status: string; createdAt: string }>;
+    };
+    isLoading: boolean;
+}) {
+    const latestLead = recentActivity?.leads?.[0];
+    const latestRequest = recentActivity?.projectRequests?.[0];
+
     const highlights = [
         {
-            title: 'Best Performing Page',
-            value: '/services/web-development',
-            metric: '2,450 views',
-            icon: TrophyIcon,
-            trend: '+15%',
-            positive: true
+            title: 'Total Leads',
+            value: isLoading ? '...' : `${stats?.totalLeads ?? 0} leads`,
+            metric: `${stats?.newLeads ?? 0} new this period`,
+            icon: UsersIcon,
         },
         {
-            title: 'Hot Lead',
-            value: 'Tech Startup Inc.',
-            metric: '$15k potential',
+            title: 'Latest Lead',
+            value: latestLead ? latestLead.name : 'No leads yet',
+            metric: latestLead ? latestLead.email : 'Leads will appear here',
             icon: FireIcon,
-            trend: 'High Priority',
-            positive: true
         },
         {
-            title: 'Peak Traffic Hour',
-            value: '2:00 PM - 3:00 PM',
-            metric: '520 visitors',
+            title: 'Project Requests',
+            value: isLoading ? '...' : `${stats?.projectRequests ?? 0} requests`,
+            metric: latestRequest ? `Latest: ${latestRequest.name}` : 'No requests yet',
             icon: SparklesIcon,
-            trend: '+22%',
-            positive: true
         },
     ];
 
@@ -428,24 +433,33 @@ function TodaysHighlights() {
                 <h3 className="text-lg font-semibold">Today&apos;s Highlights</h3>
             </div>
             <div className="space-y-4">
-                {highlights.map((item, index) => {
-                    const Icon = item.icon;
-                    return (
-                        <div key={index} className="flex items-center gap-4 p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-colors">
-                            <div className="p-2 rounded-lg bg-gradient-to-br from-amber-400 to-orange-500">
-                                <Icon className="w-5 h-5 text-white" />
-                            </div>
-                            <div className="flex-1">
-                                <p className="text-xs text-gray-400">{item.title}</p>
-                                <p className="text-sm font-semibold text-white">{item.value}</p>
-                                <p className="text-xs text-gray-500">{item.metric}</p>
-                            </div>
-                            <div className={`px-2 py-1 rounded text-xs font-medium ${item.positive ? 'bg-emerald-500/20 text-emerald-400' : 'bg-red-500/20 text-red-400'}`}>
-                                {item.trend}
+                {isLoading ? (
+                    Array.from({ length: 3 }).map((_, i) => (
+                        <div key={i} className="flex items-center gap-4 p-3 rounded-xl bg-white/5 animate-pulse">
+                            <div className="w-9 h-9 rounded-lg bg-white/10" />
+                            <div className="flex-1 space-y-2">
+                                <div className="h-3 w-20 bg-white/10 rounded" />
+                                <div className="h-4 w-28 bg-white/10 rounded" />
                             </div>
                         </div>
-                    );
-                })}
+                    ))
+                ) : (
+                    highlights.map((item, index) => {
+                        const Icon = item.icon;
+                        return (
+                            <div key={index} className="flex items-center gap-4 p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-colors">
+                                <div className="p-2 rounded-lg bg-gradient-to-br from-amber-400 to-orange-500">
+                                    <Icon className="w-5 h-5 text-white" />
+                                </div>
+                                <div className="flex-1">
+                                    <p className="text-xs text-gray-400">{item.title}</p>
+                                    <p className="text-sm font-semibold text-white">{item.value}</p>
+                                    <p className="text-xs text-gray-500">{item.metric}</p>
+                                </div>
+                            </div>
+                        );
+                    })
+                )}
             </div>
         </div>
     );
@@ -484,6 +498,122 @@ function QuickActions() {
                             <p className="text-sm font-medium text-gray-900">{action.name}</p>
                             <p className="text-xs text-gray-500">{action.description}</p>
                         </button>
+                    );
+                })}
+            </div>
+        </div>
+    );
+}
+
+// Top Performing Pages — fetches real data from analytics API
+function TopPerformingPages() {
+    const { data, isLoading } = useSWR<{ success: boolean; data: { topPages: Array<{ page: string; count: number }> } }>(
+        '/api/admin/analytics/pageviews?period=7d',
+        (url: string) => fetch(url).then(r => r.json()),
+        { revalidateOnFocus: false, refreshInterval: 60000 }
+    );
+
+    const pages = data?.data?.topPages || [];
+    const maxViews = pages.length > 0 ? pages[0].count : 1;
+
+    return (
+        <div className="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm">
+            <div className="flex items-center justify-between mb-6">
+                <h3 className="text-lg font-semibold text-gray-900">Top Performing Pages</h3>
+                <span className="text-xs font-medium text-gray-500 bg-gray-100 px-2 py-1 rounded-full">Last 7 days</span>
+            </div>
+            {isLoading ? (
+                <div className="space-y-4">
+                    {Array.from({ length: 5 }).map((_, i) => (
+                        <div key={i} className="animate-pulse">
+                            <div className="flex items-center justify-between mb-2">
+                                <div className="flex items-center gap-3">
+                                    <div className="w-6 h-6 rounded-full bg-gray-200" />
+                                    <div className="h-4 w-40 bg-gray-200 rounded" />
+                                </div>
+                                <div className="h-4 w-16 bg-gray-200 rounded" />
+                            </div>
+                            <div className="h-2 bg-gray-100 rounded-full" />
+                        </div>
+                    ))}
+                </div>
+            ) : pages.length === 0 ? (
+                <div className="text-center py-8">
+                    <DocumentTextIcon className="w-10 h-10 text-gray-300 mx-auto mb-2" />
+                    <p className="text-sm text-gray-500">No page view data yet</p>
+                    <p className="text-xs text-gray-400 mt-1">Page analytics will appear here as visitors browse your site</p>
+                </div>
+            ) : (
+                <div className="space-y-4">
+                    {pages.slice(0, 5).map((item, index) => {
+                        const percent = maxViews > 0 ? Math.round((item.count / maxViews) * 100) : 0;
+                        return (
+                            <div key={index} className="group">
+                                <div className="flex items-center justify-between text-sm mb-2">
+                                    <div className="flex items-center gap-3">
+                                        <span className="w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-xs font-bold">
+                                            {index + 1}
+                                        </span>
+                                        <span className="font-medium text-gray-900 group-hover:text-emerald-600 transition-colors truncate max-w-[200px]">{item.page}</span>
+                                    </div>
+                                    <span className="text-gray-500">{item.count.toLocaleString()} views</span>
+                                </div>
+                                <div className="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
+                                    <div
+                                        className="h-full bg-gradient-to-r from-emerald-400 to-emerald-500 rounded-full transition-all duration-700 group-hover:from-emerald-500 group-hover:to-emerald-600"
+                                        style={{ width: `${percent}%` }}
+                                    />
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
+            )}
+        </div>
+    );
+}
+
+// Performance Overview — driven by real dashboard stats
+function PerformanceOverview({ stats, isLoading }: { stats?: DashboardStats; isLoading: boolean }) {
+    const overviewItems = [
+        {
+            label: 'Total Leads',
+            value: isLoading ? '...' : (stats?.totalLeads ?? 0).toLocaleString(),
+            icon: UsersIcon,
+        },
+        {
+            label: 'Conversion Rate',
+            value: isLoading ? '...' : `${(stats?.conversionRate ?? 0).toFixed(1)}%`,
+            icon: ArrowTrendingUpIcon,
+        },
+        {
+            label: 'Unread Messages',
+            value: isLoading ? '...' : (stats?.unreadMessages ?? 0).toLocaleString(),
+            icon: DocumentTextIcon,
+        },
+        {
+            label: 'Pending Requests',
+            value: isLoading ? '...' : (stats?.pendingRequests ?? 0).toLocaleString(),
+            icon: ClockIcon,
+        },
+    ];
+
+    return (
+        <div className="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm">
+            <div className="flex items-center justify-between mb-6">
+                <h3 className="text-lg font-semibold text-gray-900">Performance Overview</h3>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+                {overviewItems.map((item, index) => {
+                    const Icon = item.icon;
+                    return (
+                        <div key={index} className="p-4 rounded-xl bg-gray-50 hover:bg-gray-100 transition-colors">
+                            <div className="flex items-center gap-2 mb-2">
+                                <Icon className="w-4 h-4 text-gray-500" />
+                                <span className="text-xs text-gray-500">{item.label}</span>
+                            </div>
+                            <span className="text-xl font-bold text-gray-900">{item.value}</span>
+                        </div>
                     );
                 })}
             </div>
@@ -531,7 +661,9 @@ export default function AdminDashboard() {
                         <button className="flex items-center gap-2 px-4 py-2 bg-white/20 hover:bg-white/30 rounded-lg transition-colors backdrop-blur-sm">
                             <BellIcon className="w-5 h-5" />
                             <span className="text-sm font-medium">Notifications</span>
-                            <span className="bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">3</span>
+                            {(stats?.unreadMessages ?? 0) > 0 && (
+                                <span className="bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">{stats?.unreadMessages}</span>
+                            )}
                         </button>
                         <button className="flex items-center gap-2 px-4 py-2 bg-white text-emerald-700 hover:bg-emerald-50 rounded-lg transition-colors font-medium">
                             <ChatBubbleLeftRightIcon className="w-5 h-5" />
@@ -589,7 +721,7 @@ export default function AdminDashboard() {
 
             {/* Today's Highlights + Quick Actions Row */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                <TodaysHighlights />
+                <TodaysHighlights stats={stats} recentActivity={recentActivity} isLoading={isLoading} />
                 <div className="lg:col-span-2">
                     <QuickActions />
                 </div>
@@ -609,83 +741,10 @@ export default function AdminDashboard() {
                 <ActivityFeed recentActivity={recentActivity} isLoading={isLoading} />
             </div>
 
-            {/* Top Pages Section */}
+            {/* Top Pages + Performance Overview */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <div className="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm">
-                    <div className="flex items-center justify-between mb-6">
-                        <h3 className="text-lg font-semibold text-gray-900">Top Performing Pages</h3>
-                        <span className="text-xs font-medium text-gray-500 bg-gray-100 px-2 py-1 rounded-full">Last 7 days</span>
-                    </div>
-                    <div className="space-y-4">
-                        {[
-                            { page: '/services/web-development', views: 2450, percent: 100, trend: '+15%' },
-                            { page: '/contact', views: 1820, percent: 74, trend: '+8%' },
-                            { page: '/services/ai-solutions', views: 1240, percent: 51, trend: '+22%' },
-                            { page: '/about', views: 980, percent: 40, trend: '+5%' },
-                            { page: '/projects', views: 720, percent: 29, trend: '-3%' },
-                        ].map((item, index) => (
-                            <div key={index} className="group">
-                                <div className="flex items-center justify-between text-sm mb-2">
-                                    <div className="flex items-center gap-3">
-                                        <span className="w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-xs font-bold">
-                                            {index + 1}
-                                        </span>
-                                        <span className="font-medium text-gray-900 group-hover:text-emerald-600 transition-colors">{item.page}</span>
-                                    </div>
-                                    <div className="flex items-center gap-3">
-                                        <span className="text-gray-500">{item.views.toLocaleString()} views</span>
-                                        <span className={`text-xs font-medium ${item.trend.startsWith('+') ? 'text-emerald-500' : 'text-red-500'}`}>
-                                            {item.trend}
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
-                                    <div
-                                        className="h-full bg-gradient-to-r from-emerald-400 to-emerald-500 rounded-full transition-all duration-700 group-hover:from-emerald-500 group-hover:to-emerald-600"
-                                        style={{ width: `${item.percent}%` }}
-                                    />
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-
-                {/* Performance Overview */}
-                <div className="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm">
-                    <div className="flex items-center justify-between mb-6">
-                        <h3 className="text-lg font-semibold text-gray-900">Performance Overview</h3>
-                        <select className="text-sm border border-gray-200 rounded-lg px-3 py-1.5 text-gray-600 focus:outline-none focus:ring-2 focus:ring-emerald-500">
-                            <option>This Week</option>
-                            <option>This Month</option>
-                            <option>This Year</option>
-                        </select>
-                    </div>
-                    <div className="grid grid-cols-2 gap-4">
-                        {[
-                            { label: 'Avg. Session Duration', value: '4m 32s', change: '+12%', icon: ClockIcon },
-                            { label: 'Bounce Rate', value: '32.5%', change: '-5%', icon: ArrowTrendingUpIcon },
-                            { label: 'Pages per Session', value: '3.8', change: '+8%', icon: DocumentTextIcon },
-                            { label: 'New vs Returning', value: '65/35%', change: '+3%', icon: UsersIcon },
-                        ].map((item, index) => {
-                            const Icon = item.icon;
-                            const isPositive = item.change.startsWith('+') || (item.label === 'Bounce Rate' && item.change.startsWith('-'));
-                            return (
-                                <div key={index} className="p-4 rounded-xl bg-gray-50 hover:bg-gray-100 transition-colors">
-                                    <div className="flex items-center gap-2 mb-2">
-                                        <Icon className="w-4 h-4 text-gray-500" />
-                                        <span className="text-xs text-gray-500">{item.label}</span>
-                                    </div>
-                                    <div className="flex items-end justify-between">
-                                        <span className="text-xl font-bold text-gray-900">{item.value}</span>
-                                        <span className={`text-xs font-medium ${isPositive ? 'text-emerald-500' : 'text-red-500'}`}>
-                                            {item.change}
-                                        </span>
-                                    </div>
-                                </div>
-                            );
-                        })}
-                    </div>
-                </div>
+                <TopPerformingPages />
+                <PerformanceOverview stats={stats} isLoading={isLoading} />
             </div>
 
             {/* Recent Leads & Interactions */}
