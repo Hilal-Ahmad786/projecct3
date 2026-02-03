@@ -947,14 +947,14 @@ export default function Navbar() {
     { label: t('contact'), href: '/contact', localizedHref: getLocalizedPath('/contact', locale) },
   ];
 
-  // Service Microsite Links
+  // Service Microsite Links - use anchor links for same-page navigation
   const serviceLinks = [
     { label: t('serviceNav.overview'), href: `/services/${currentServiceSlug}`, localizedHref: `/services/${currentServiceSlug}` },
-    { label: t('serviceNav.features'), href: `/services/${currentServiceSlug}/features`, localizedHref: `/services/${currentServiceSlug}/features` },
-    { label: t('serviceNav.process'), href: `/services/${currentServiceSlug}/process`, localizedHref: `/services/${currentServiceSlug}/process` },
-    { label: t('serviceNav.techStack'), href: `/services/${currentServiceSlug}/tech-stack`, localizedHref: `/services/${currentServiceSlug}/tech-stack` },
-    { label: t('serviceNav.portfolio'), href: `/services/${currentServiceSlug}/portfolio`, localizedHref: `/services/${currentServiceSlug}/portfolio` },
-    { label: t('serviceNav.faq'), href: `/services/${currentServiceSlug}/faq`, localizedHref: `/services/${currentServiceSlug}/faq` },
+    { label: t('serviceNav.features'), href: `/services/${currentServiceSlug}#features`, localizedHref: `/services/${currentServiceSlug}#features` },
+    { label: t('serviceNav.process'), href: `/services/${currentServiceSlug}#process`, localizedHref: `/services/${currentServiceSlug}#process` },
+    { label: t('serviceNav.techStack'), href: `/services/${currentServiceSlug}#tech-stack`, localizedHref: `/services/${currentServiceSlug}#tech-stack` },
+    { label: t('serviceNav.portfolio'), href: `/services/${currentServiceSlug}#portfolio`, localizedHref: `/services/${currentServiceSlug}#portfolio` },
+    { label: t('serviceNav.faq'), href: `/services/${currentServiceSlug}#faq`, localizedHref: `/services/${currentServiceSlug}#faq` },
   ];
 
   const currentLinks = isServicePage ? serviceLinks : mainLinks;

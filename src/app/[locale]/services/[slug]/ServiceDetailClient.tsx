@@ -514,7 +514,7 @@ function TechStrip({ technologies }: { technologies: Technology[] }) {
   const items = [...technologies, ...technologies, ...technologies];
 
   return (
-    <div className="w-full bg-gray-50 border-y border-gray-100 overflow-hidden py-8">
+    <div id="tech-stack" className="w-full bg-gray-50 border-y border-gray-100 overflow-hidden py-8">
       <div className="relative flex">
         {/* Gradient Masks */}
         <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-gray-50 to-transparent z-10" />
@@ -732,7 +732,7 @@ function FAQSection({ faq }: { faq: FAQItem[] }) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="py-24 bg-gray-50">
+    <section id="faq" className="py-24 bg-gray-50">
       <div className="container mx-auto px-4 max-w-3xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">
