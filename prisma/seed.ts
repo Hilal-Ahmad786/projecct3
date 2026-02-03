@@ -140,6 +140,27 @@ async function main() {
           { question: 'Can AI solutions integrate with our existing systems?', answer: 'Yes, we design AI solutions with integration in mind. We can connect to your existing databases, APIs, CRM systems, and other business tools through secure APIs and data pipelines.' },
           { question: 'How do you ensure AI model accuracy and reliability?', answer: 'We use rigorous testing methodologies, cross-validation, and continuous monitoring. We also implement feedback loops to improve model performance over time and alert systems for detecting model drift.' },
         ],
+        animation: {
+          heroVisual: 'brain-network',
+          bgPattern: 'dots',
+          decorations: 'circles',
+          motion: 'pulse',
+          featureStyle: 'gradient-border',
+          processLayout: 'cards',
+          particleCount: 80,
+          glowIntensity: 'strong',
+          colorScheme: 'accent',
+          animationSpeed: 'slow',
+          neuronCount: 12,
+          connectionDensity: 'high',
+          synapseGlow: true,
+          dataFlowSpeed: 2.5,
+          brainPulseRate: 1.8,
+          primaryColor: '#8B5CF6',
+          secondaryColor: '#EC4899',
+          accentColor: '#06B6D4',
+          gradientAngle: 135,
+        },
       },
       status: 'published',
       featured: true,
@@ -202,6 +223,29 @@ async function main() {
           { question: 'How long does it take to build a mobile app?', answer: 'A minimum viable product (MVP) typically takes 3-4 months. Full-featured apps usually require 6-12 months depending on complexity and the number of platforms targeted.' },
           { question: 'Do you help with app store submission?', answer: 'Yes, we handle the entire submission process for both Apple App Store and Google Play Store, including preparing all required assets, descriptions, and ensuring compliance with store guidelines.' },
         ],
+        animation: {
+          heroVisual: 'mobile-device',
+          bgPattern: 'waves',
+          decorations: 'triangles',
+          motion: 'float',
+          featureStyle: 'icon-left',
+          processLayout: 'steps-horizontal',
+          particleCount: 35,
+          glowIntensity: 'subtle',
+          colorScheme: 'secondary',
+          animationSpeed: 'normal',
+          deviceRotation: true,
+          screenContent: 'app-interface',
+          notificationBubbles: 3,
+          swipeGestures: true,
+          appIconsFloat: true,
+          iosAndroidSplit: true,
+          primaryColor: '#10B981',
+          secondaryColor: '#3B82F6',
+          accentColor: '#F59E0B',
+          deviceShadow: 'large',
+          reflectionIntensity: 0.3,
+        },
       },
       status: 'published',
       featured: true,
@@ -243,6 +287,27 @@ async function main() {
           { question: 'How do you handle errors and failures?', answer: 'We implement comprehensive error handling with retries, logging, and alerting. Failed tasks can be automatically retried, and you receive notifications for issues requiring attention.' },
           { question: 'Can automations run on our existing systems?', answer: 'Yes, Python automation can run on Windows, Mac, or Linux servers, in the cloud, or even on your existing computers. We recommend the best deployment approach for your situation.' },
         ],
+        animation: {
+          heroVisual: 'terminal',
+          bgPattern: 'diagonal-lines',
+          decorations: 'hexagons',
+          motion: 'cascade',
+          featureStyle: 'numbered',
+          processLayout: 'timeline',
+          particleCount: 55,
+          glowIntensity: 'medium',
+          colorScheme: 'gradient',
+          animationSpeed: 'fast',
+          terminalLines: ['>>> import automation', '>>> task.run()', 'Success: 1000 records processed'],
+          cursorBlink: true,
+          codeHighlighting: true,
+          outputStreaming: true,
+          primaryColor: '#3776AB',
+          secondaryColor: '#FFD43B',
+          accentColor: '#306998',
+          terminalTheme: 'dark',
+          syntaxColors: ['#F8F8F2', '#FF79C6', '#BD93F9'],
+        },
       },
       status: 'published',
       featured: false,
@@ -284,6 +349,30 @@ async function main() {
           { question: 'Can our team access and modify the dashboards?', answer: 'Yes, we design self-service analytics solutions that allow your team to explore data, create custom reports, and modify dashboards without technical expertise.' },
           { question: 'How long does it take to implement a data analytics solution?', answer: 'A basic dashboard can be delivered in 2-4 weeks. Comprehensive data warehouse and analytics platform implementations typically take 2-4 months.' },
         ],
+        animation: {
+          heroVisual: 'chart-graph',
+          bgPattern: 'hexagons',
+          decorations: 'dots',
+          motion: 'wave',
+          featureStyle: 'bordered',
+          processLayout: 'cards',
+          particleCount: 60,
+          glowIntensity: 'subtle',
+          colorScheme: 'primary',
+          animationSpeed: 'normal',
+          chartTypes: ['bar', 'line', 'pie', 'scatter'],
+          dataPoints: 24,
+          animatedBars: true,
+          lineDrawing: true,
+          tooltipsEnabled: true,
+          axisLabels: true,
+          primaryColor: '#6366F1',
+          secondaryColor: '#22C55E',
+          accentColor: '#F59E0B',
+          chartBackground: 'transparent',
+          gridLines: true,
+          legendPosition: 'bottom',
+        },
       },
       status: 'published',
       featured: false,
@@ -325,6 +414,30 @@ async function main() {
           { question: 'Can you explain how the model makes decisions?', answer: 'Yes, we prioritize model interpretability. We use explainable AI techniques like SHAP values, feature importance, and attention visualization to understand and explain model decisions.' },
           { question: 'How do you handle model updates and retraining?', answer: 'We implement MLOps pipelines that automatically monitor model performance, detect drift, and trigger retraining when needed. This ensures your models stay accurate over time.' },
         ],
+        animation: {
+          heroVisual: 'network-nodes',
+          bgPattern: 'circles',
+          decorations: 'lines',
+          motion: 'orbit',
+          featureStyle: 'minimal',
+          processLayout: 'zigzag',
+          particleCount: 70,
+          glowIntensity: 'strong',
+          colorScheme: 'accent',
+          animationSpeed: 'slow',
+          nodeCount: 15,
+          connectionLines: true,
+          dataFlowParticles: true,
+          layerVisualization: ['input', 'hidden1', 'hidden2', 'output'],
+          weightGradient: true,
+          activationGlow: true,
+          trainingAnimation: true,
+          primaryColor: '#EC4899',
+          secondaryColor: '#8B5CF6',
+          accentColor: '#06B6D4',
+          nodeSize: 'medium',
+          connectionOpacity: 0.6,
+        },
       },
       status: 'published',
       featured: false,
@@ -5140,6 +5253,800 @@ async function main() {
       });
     }
     console.log(`Seeded ${fullStackTranslations.length} translations for full-stack-development`);
+  }
+
+  // ==================== BATCH 1: Parent Service Translations (web-development, ai-solutions, mobile-development) ====================
+
+  // Web Development Translations
+  const webDevService = await prisma.service.findUnique({ where: { slug: 'web-development' } });
+  if (webDevService) {
+    const webDevTranslations = [
+      {
+        serviceId: webDevService.id,
+        locale: 'tr',
+        name: 'Web Geliştirme',
+        shortDescription: 'Son teknoloji ile oluşturulmuş özel, yüksek performanslı web siteleri.',
+        fullDescription: 'Sadece web siteleri değil, dijital deneyimler inşa ediyoruz. Web geliştirme ekibimiz, iş hedeflerinize uygun son derece hızlı, SEO optimize ve ölçeklenebilir web uygulamaları oluşturmak için Next.js ve React gibi en son framework\'leri kullanır. İster kurumsal bir site, ister karmaşık bir SaaS platformu veya özel bir portal ihtiyacınız olsun, performans gösteren kod sunuyoruz.',
+        features: [
+          'Özel Next.js & React Geliştirme',
+          'Progressive Web Apps (PWA)',
+          'API Entegrasyonu & Geliştirme',
+          'Performans Optimizasyonu (Core Web Vitals)',
+          'Headless CMS Çözümleri',
+          'Responsive & Mobile-First Tasarım',
+        ],
+        benefits: [
+          'Çok hızlı yükleme süreleri',
+          'Üstün SEO sıralama potansiyeli',
+          'Büyüme için ölçeklenebilir mimari',
+          'Güvenli ve bakımı kolay kod',
+        ],
+        content: {
+          process: [
+            { step: 1, title: 'Keşif & Strateji', description: 'Teknik yol haritasını tanımlamak için işinizi, hedef kitlenizi ve hedeflerinizi anlayarak başlıyoruz.' },
+            { step: 2, title: 'UX/UI Tasarım', description: 'Tasarımcılarımız marka kimliğinizle uyumlu, sezgisel, yüksek sadakatli prototipler oluşturur.' },
+            { step: 3, title: 'Geliştirme', description: 'Ölçeklenebilirlik ve güvenlik sağlayan modern standartları kullanarak temiz, semantik kod yazıyoruz.' },
+            { step: 4, title: 'Test & Lansman', description: 'Cihazlar ve tarayıcılar arasında kapsamlı test, kusursuz bir lansman günü sağlar.' },
+          ],
+          faq: [
+            { question: 'Bir web sitesi oluşturmak ne kadar sürer?', answer: 'Standart bir kurumsal web sitesi genellikle 4-6 hafta sürer, daha karmaşık web uygulamaları kapsam ve özelliklere bağlı olarak 3-6 ay sürebilir.' },
+            { question: 'Hosting ve bakım sağlıyor musunuz?', answer: 'Evet, güvenli hosting, günlük yedeklemeler ve düzenli güvenlik güncellemeleri içeren kapsamlı bakım paketleri sunuyoruz.' },
+            { question: 'Web sitem mobil uyumlu olacak mı?', answer: 'Kesinlikle. Mobile-first bir yaklaşım benimsiyoruz, sitenizin akıllı telefonlarda, tabletlerde ve masaüstlerinde mükemmel görünmesini ve performans göstermesini sağlıyoruz.' },
+            { question: 'İçeriği kendim güncelleyebilir miyim?', answer: 'Evet, metin, görsel ve blog yazılarını kolayca güncellemenizi sağlayan kullanıcı dostu İçerik Yönetim Sistemleri (CMS) entegre ediyoruz.' },
+          ],
+        },
+      },
+      {
+        serviceId: webDevService.id,
+        locale: 'de',
+        name: 'Web-Entwicklung',
+        shortDescription: 'Individuelle, leistungsstarke Websites mit modernster Technologie.',
+        fullDescription: 'Wir bauen mehr als nur Websites; wir schaffen digitale Erlebnisse. Unser Web-Entwicklungsteam nutzt die neuesten Frameworks wie Next.js und React, um blitzschnelle, SEO-optimierte und skalierbare Webanwendungen zu erstellen, die auf Ihre Geschäftsziele zugeschnitten sind.',
+        features: [
+          'Individuelle Next.js & React Entwicklung',
+          'Progressive Web Apps (PWA)',
+          'API-Integration & Entwicklung',
+          'Performance-Optimierung (Core Web Vitals)',
+          'Headless CMS Lösungen',
+          'Responsive & Mobile-First Design',
+        ],
+        benefits: [
+          'Blitzschnelle Ladezeiten',
+          'Überlegenes SEO-Ranking-Potenzial',
+          'Skalierbare Architektur für Wachstum',
+          'Sicherer und wartbarer Code',
+        ],
+        content: {
+          process: [
+            { step: 1, title: 'Entdeckung & Strategie', description: 'Wir beginnen damit, Ihr Unternehmen, Ihre Zielgruppe und Ihre Ziele zu verstehen, um die technische Roadmap zu definieren.' },
+            { step: 2, title: 'UX/UI Design', description: 'Unsere Designer erstellen intuitive, hochwertige Prototypen, die zu Ihrer Markenidentität passen.' },
+            { step: 3, title: 'Entwicklung', description: 'Wir schreiben sauberen, semantischen Code unter Verwendung moderner Standards für Skalierbarkeit und Sicherheit.' },
+            { step: 4, title: 'Test & Launch', description: 'Rigorose Tests auf verschiedenen Geräten und Browsern gewährleisten einen reibungslosen Launch.' },
+          ],
+          faq: [
+            { question: 'Wie lange dauert es, eine Website zu erstellen?', answer: 'Eine Standard-Unternehmenswebsite dauert in der Regel 4-6 Wochen, komplexere Webanwendungen können 3-6 Monate dauern.' },
+            { question: 'Bieten Sie Hosting und Wartung an?', answer: 'Ja, wir bieten umfassende Wartungspakete mit sicherem Hosting, täglichen Backups und regelmäßigen Sicherheitsupdates.' },
+            { question: 'Wird meine Website mobilfreundlich sein?', answer: 'Absolut. Wir verfolgen einen Mobile-First-Ansatz und stellen sicher, dass Ihre Website auf allen Geräten perfekt aussieht und funktioniert.' },
+            { question: 'Kann ich den Inhalt selbst aktualisieren?', answer: 'Ja, wir integrieren benutzerfreundliche Content-Management-Systeme (CMS), mit denen Sie Texte, Bilder und Blog-Beiträge einfach aktualisieren können.' },
+          ],
+        },
+      },
+      {
+        serviceId: webDevService.id,
+        locale: 'ar',
+        name: 'تطوير الويب',
+        shortDescription: 'مواقع ويب مخصصة وعالية الأداء مبنية بأحدث التقنيات.',
+        fullDescription: 'نحن نبني أكثر من مجرد مواقع ويب؛ نحن نبني تجارب رقمية. يستفيد فريق تطوير الويب لدينا من أحدث الأطر مثل Next.js و React لإنشاء تطبيقات ويب سريعة للغاية ومحسنة لمحركات البحث وقابلة للتطوير ومصممة خصيصاً لأهداف عملك.',
+        features: [
+          'تطوير Next.js و React مخصص',
+          'تطبيقات الويب التقدمية (PWA)',
+          'تكامل وتطوير واجهات برمجة التطبيقات',
+          'تحسين الأداء (Core Web Vitals)',
+          'حلول Headless CMS',
+          'تصميم متجاوب ومتوافق مع الجوال أولاً',
+        ],
+        benefits: [
+          'أوقات تحميل فائقة السرعة',
+          'إمكانية ترتيب SEO متفوقة',
+          'بنية قابلة للتطوير للنمو',
+          'كود آمن وقابل للصيانة',
+        ],
+        content: {
+          process: [
+            { step: 1, title: 'الاكتشاف والاستراتيجية', description: 'نبدأ بفهم عملك وجمهورك وأهدافك لتحديد خارطة الطريق التقنية.' },
+            { step: 2, title: 'تصميم UX/UI', description: 'يقوم مصممونا بإنشاء نماذج أولية بديهية وعالية الدقة تتوافق مع هوية علامتك التجارية.' },
+            { step: 3, title: 'التطوير', description: 'نكتب كوداً نظيفاً ودلالياً باستخدام معايير حديثة لضمان قابلية التوسع والأمان.' },
+            { step: 4, title: 'الاختبار والإطلاق', description: 'يضمن الاختبار الشامل عبر الأجهزة والمتصفحات إطلاقاً سلساً.' },
+          ],
+          faq: [
+            { question: 'كم يستغرق بناء موقع ويب؟', answer: 'يستغرق موقع الويب المؤسسي القياسي عادةً 4-6 أسابيع، بينما قد تستغرق تطبيقات الويب الأكثر تعقيداً 3-6 أشهر.' },
+            { question: 'هل توفرون الاستضافة والصيانة؟', answer: 'نعم، نقدم حزم صيانة شاملة تتضمن استضافة آمنة ونسخ احتياطية يومية وتحديثات أمنية منتظمة.' },
+            { question: 'هل سيكون موقعي متوافقاً مع الجوال؟', answer: 'بالتأكيد. نتبع نهج الجوال أولاً لضمان أن موقعك يبدو ويعمل بشكل مثالي على جميع الأجهزة.' },
+            { question: 'هل يمكنني تحديث المحتوى بنفسي؟', answer: 'نعم، نقوم بدمج أنظمة إدارة محتوى سهلة الاستخدام تتيح لك تحديث النصوص والصور ومنشورات المدونة بسهولة.' },
+          ],
+        },
+      },
+      {
+        serviceId: webDevService.id,
+        locale: 'ur',
+        name: 'ویب ڈویلپمنٹ',
+        shortDescription: 'جدید ترین ٹیکنالوجی کے ساتھ بنائی گئی کسٹم، اعلیٰ کارکردگی والی ویب سائٹس۔',
+        fullDescription: 'ہم صرف ویب سائٹس نہیں بناتے؛ ہم ڈیجیٹل تجربات بناتے ہیں۔ ہماری ویب ڈویلپمنٹ ٹیم آپ کے کاروباری اہداف کے مطابق انتہائی تیز، SEO-آپٹیمائزڈ، اور قابل توسیع ویب ایپلیکیشنز بنانے کے لیے Next.js اور React جیسے جدید ترین فریم ورکس استعمال کرتی ہے۔',
+        features: [
+          'کسٹم Next.js اور React ڈویلپمنٹ',
+          'پروگریسو ویب ایپس (PWA)',
+          'API انٹیگریشن اور ڈویلپمنٹ',
+          'پرفارمنس آپٹیمائزیشن (Core Web Vitals)',
+          'Headless CMS سلوشنز',
+          'ریسپانسو اور موبائل-فرسٹ ڈیزائن',
+        ],
+        benefits: [
+          'بجلی کی رفتار سے لوڈنگ',
+          'بہتر SEO رینکنگ کی صلاحیت',
+          'ترقی کے لیے قابل توسیع فن تعمیر',
+          'محفوظ اور قابل دیکھ بھال کوڈ',
+        ],
+        content: {
+          process: [
+            { step: 1, title: 'دریافت اور حکمت عملی', description: 'ہم آپ کے کاروبار، سامعین، اور اہداف کو سمجھ کر تکنیکی روڈ میپ کی وضاحت کرتے ہیں۔' },
+            { step: 2, title: 'UX/UI ڈیزائن', description: 'ہمارے ڈیزائنرز آپ کی برانڈ شناخت کے مطابق بدیہی، اعلیٰ معیار کے پروٹو ٹائپس بناتے ہیں۔' },
+            { step: 3, title: 'ڈویلپمنٹ', description: 'ہم قابل توسیعی اور سیکیورٹی کو یقینی بناتے ہوئے جدید معیارات کا استعمال کرتے ہوئے صاف، معنی خیز کوڈ لکھتے ہیں۔' },
+            { step: 4, title: 'ٹیسٹنگ اور لانچ', description: 'ڈیوائسز اور براؤزرز پر سخت جانچ بے عیب لانچ کو یقینی بناتی ہے۔' },
+          ],
+          faq: [
+            { question: 'ویب سائٹ بنانے میں کتنا وقت لگتا ہے؟', answer: 'معیاری کارپوریٹ ویب سائٹ عام طور پر 4-6 ہفتے لیتی ہے، جبکہ زیادہ پیچیدہ ویب ایپلیکیشنز 3-6 ماہ لے سکتی ہیں۔' },
+            { question: 'کیا آپ ہوسٹنگ اور مینٹیننس فراہم کرتے ہیں؟', answer: 'جی ہاں، ہم محفوظ ہوسٹنگ، روزانہ بیک اپ، اور باقاعدہ سیکیورٹی اپڈیٹس کے ساتھ جامع مینٹیننس پیکجز پیش کرتے ہیں۔' },
+            { question: 'کیا میری ویب سائٹ موبائل-فرینڈلی ہوگی؟', answer: 'بالکل۔ ہم موبائل-فرسٹ اپروچ اپناتے ہیں تاکہ آپ کی سائٹ تمام ڈیوائسز پر بہترین نظر آئے اور کام کرے۔' },
+            { question: 'کیا میں خود مواد اپڈیٹ کر سکتا ہوں؟', answer: 'جی ہاں، ہم صارف دوست CMS انٹیگریٹ کرتے ہیں جو آپ کو آسانی سے ٹیکسٹ، تصاویر اور بلاگ پوسٹس اپڈیٹ کرنے دیتے ہیں۔' },
+          ],
+        },
+      },
+    ];
+
+    for (const translation of webDevTranslations) {
+      await prisma.serviceTranslation.upsert({
+        where: { serviceId_locale: { serviceId: translation.serviceId, locale: translation.locale } },
+        update: { name: translation.name, shortDescription: translation.shortDescription, fullDescription: translation.fullDescription, features: translation.features, benefits: translation.benefits, content: translation.content as any },
+        create: { serviceId: translation.serviceId, locale: translation.locale, name: translation.name, shortDescription: translation.shortDescription, fullDescription: translation.fullDescription, features: translation.features, benefits: translation.benefits, content: translation.content as any },
+      });
+    }
+    console.log(`Seeded ${webDevTranslations.length} translations for web-development`);
+  }
+
+  // AI Solutions Translations
+  const aiSolutionsService = await prisma.service.findUnique({ where: { slug: 'ai-solutions' } });
+  if (aiSolutionsService) {
+    const aiTranslations = [
+      {
+        serviceId: aiSolutionsService.id,
+        locale: 'tr',
+        name: 'Yapay Zeka Çözümleri',
+        shortDescription: 'Akıllı otomasyon ve makine öğrenimi modelleri.',
+        fullDescription: 'Yapay Zekanın gücünü açığa çıkarın. Tahminsel analizlerden doğal dil işleme chatbotlarına, en son AI modellerini iş akışlarınıza entegre ediyoruz. AI çözümlerimiz işletmelerin karmaşık süreçleri otomatikleştirmesine, verilerden eyleme dönüştürülebilir içgörüler elde etmesine ve müşterilere ölçekte kişiselleştirilmiş deneyimler sunmasına yardımcı olur.',
+        features: [
+          'Özel Makine Öğrenimi Modelleri',
+          'Doğal Dil İşleme (NLP)',
+          'Bilgisayarlı Görü Çözümleri',
+          'Tahminsel Analitik & Tahminleme',
+          'AI Destekli Chatbotlar & Sanal Asistanlar',
+          'Öneri Sistemleri',
+          'Duygu Analizi',
+          'Anomali Tespiti',
+        ],
+        benefits: [
+          'Tekrarlayan görevleri otomatikleştirin ve operasyonel maliyetleri azaltın',
+          'Tahminsel içgörülerle veri odaklı kararlar alın',
+          'Kişiselleştirme ile müşteri deneyimlerini geliştirin',
+          'Orantılı iş gücü artışı olmadan operasyonları ölçeklendirin',
+          'İnovasyon yoluyla rekabet avantajı kazanın',
+          'Doğruluğu artırın ve insan hatasını azaltın',
+        ],
+        content: {
+          process: [
+            { step: 1, title: 'Problem Tanımı', description: 'AI\'nın en çok değer yaratabileceği yerleri belirlemek için iş zorluklarınızı analiz ediyor ve net başarı metrikleri tanımlıyoruz.' },
+            { step: 2, title: 'Veri Değerlendirmesi', description: 'Model geliştirme için en iyi yaklaşımı belirlemek üzere veri kalitesi, kullanılabilirlik ve yapınızı değerlendiriyoruz.' },
+            { step: 3, title: 'Model Geliştirme', description: 'Veri bilimcilerimiz en son algoritmalar ve framework\'ler kullanarak özel modeller oluşturup eğitiyor.' },
+            { step: 4, title: 'Entegrasyon & Test', description: 'AI çözümünü mevcut sistemlerinize entegre ediyor ve kapsamlı test ve doğrulama yapıyoruz.' },
+            { step: 5, title: 'Dağıtım & İzleme', description: 'Çözümü üretime alıyor ve model performansı ve doğruluğu için sürekli izleme kuruyoruz.' },
+          ],
+          faq: [
+            { question: 'AI çözümleri için ne tür veriye ihtiyacım var?', answer: 'Veri gereksinimleri spesifik AI çözümüne bağlıdır. Genel olarak, kullanım durumunuzla ilgili geçmiş veriye ihtiyacınız var. Yapılandırılmış (veritabanları, tablolar) veya yapılandırılmamış (metin, görüntüler, ses) verilerle çalışabiliriz.' },
+            { question: 'Bir AI çözümü geliştirmek ne kadar sürer?', answer: 'Kavram kanıtı 4-8 haftada geliştirilebilir. Tam üretim dağıtımı karmaşıklık, veri kullanılabilirliği ve entegrasyon gereksinimlerine bağlı olarak genellikle 3-6 ay sürer.' },
+            { question: 'AI çözümleri mevcut sistemlerimizle entegre olabilir mi?', answer: 'Evet, AI çözümlerini entegrasyon düşünülerek tasarlıyoruz. Mevcut veritabanlarınıza, API\'lerinize, CRM sistemlerinize güvenli API\'ler ve veri pipeline\'ları aracılığıyla bağlanabiliriz.' },
+            { question: 'AI model doğruluğunu ve güvenilirliğini nasıl sağlıyorsunuz?', answer: 'Titiz test metodolojileri, çapraz doğrulama ve sürekli izleme kullanıyoruz. Model performansını zaman içinde iyileştirmek için geri bildirim döngüleri ve model kaymasını tespit etmek için uyarı sistemleri uyguluyoruz.' },
+          ],
+        },
+      },
+      {
+        serviceId: aiSolutionsService.id,
+        locale: 'de',
+        name: 'KI-Lösungen',
+        shortDescription: 'Intelligente Automatisierung und Machine-Learning-Modelle.',
+        fullDescription: 'Erschließen Sie die Kraft der Künstlichen Intelligenz. Von prädiktiver Analytik bis zu NLP-Chatbots integrieren wir modernste KI-Modelle in Ihre Workflows. Unsere KI-Lösungen helfen Unternehmen, komplexe Prozesse zu automatisieren, handlungsrelevante Erkenntnisse aus Daten zu gewinnen und personalisierte Kundenerlebnisse im großen Maßstab zu liefern.',
+        features: [
+          'Individuelle Machine-Learning-Modelle',
+          'Natural Language Processing (NLP)',
+          'Computer-Vision-Lösungen',
+          'Prädiktive Analytik & Forecasting',
+          'KI-gestützte Chatbots & Virtuelle Assistenten',
+          'Empfehlungssysteme',
+          'Sentiment-Analyse',
+          'Anomalie-Erkennung',
+        ],
+        benefits: [
+          'Repetitive Aufgaben automatisieren und Betriebskosten senken',
+          'Datengestützte Entscheidungen mit prädiktiven Erkenntnissen treffen',
+          'Kundenerlebnisse durch Personalisierung verbessern',
+          'Operationen ohne proportionale Personalaufstockung skalieren',
+          'Wettbewerbsvorteil durch Innovation gewinnen',
+          'Genauigkeit verbessern und menschliche Fehler reduzieren',
+        ],
+        content: {
+          process: [
+            { step: 1, title: 'Problemdefinition', description: 'Wir analysieren Ihre Geschäftsherausforderungen, um herauszufinden, wo KI den größten Wert schaffen kann.' },
+            { step: 2, title: 'Datenbewertung', description: 'Wir bewerten Ihre Datenqualität, -verfügbarkeit und -struktur, um den besten Ansatz für die Modellentwicklung zu bestimmen.' },
+            { step: 3, title: 'Modellentwicklung', description: 'Unsere Data Scientists bauen und trainieren individuelle Modelle mit modernsten Algorithmen.' },
+            { step: 4, title: 'Integration & Tests', description: 'Wir integrieren die KI-Lösung in Ihre bestehenden Systeme und führen gründliche Tests durch.' },
+            { step: 5, title: 'Bereitstellung & Monitoring', description: 'Wir stellen die Lösung in Produktion bereit und richten kontinuierliches Monitoring für Modellleistung ein.' },
+          ],
+          faq: [
+            { question: 'Welche Art von Daten benötige ich für KI-Lösungen?', answer: 'Die Datenanforderungen hängen von der spezifischen KI-Lösung ab. Generell benötigen Sie historische Daten, die für Ihren Anwendungsfall relevant sind.' },
+            { question: 'Wie lange dauert die Entwicklung einer KI-Lösung?', answer: 'Ein Proof-of-Concept kann in 4-8 Wochen entwickelt werden. Vollständige Produktionsbereitstellung dauert typischerweise 3-6 Monate.' },
+            { question: 'Können KI-Lösungen in unsere bestehenden Systeme integriert werden?', answer: 'Ja, wir entwerfen KI-Lösungen mit Blick auf Integration. Wir können uns mit Ihren bestehenden Datenbanken, APIs und CRM-Systemen verbinden.' },
+            { question: 'Wie gewährleisten Sie KI-Modellgenauigkeit und Zuverlässigkeit?', answer: 'Wir verwenden rigorose Testmethoden, Kreuzvalidierung und kontinuierliches Monitoring. Wir implementieren auch Feedback-Schleifen zur Verbesserung.' },
+          ],
+        },
+      },
+      {
+        serviceId: aiSolutionsService.id,
+        locale: 'ar',
+        name: 'حلول الذكاء الاصطناعي',
+        shortDescription: 'أتمتة ذكية ونماذج تعلم الآلة.',
+        fullDescription: 'أطلق العنان لقوة الذكاء الاصطناعي. من التحليلات التنبؤية إلى روبوتات الدردشة لمعالجة اللغة الطبيعية، نقوم بدمج أحدث نماذج الذكاء الاصطناعي في سير عملك. تساعد حلول الذكاء الاصطناعي لدينا الشركات على أتمتة العمليات المعقدة واكتساب رؤى قابلة للتنفيذ من البيانات وتقديم تجارب مخصصة للعملاء على نطاق واسع.',
+        features: [
+          'نماذج تعلم آلة مخصصة',
+          'معالجة اللغة الطبيعية (NLP)',
+          'حلول الرؤية الحاسوبية',
+          'التحليلات التنبؤية والتوقعات',
+          'روبوتات الدردشة والمساعدين الافتراضيين المدعومين بالذكاء الاصطناعي',
+          'أنظمة التوصية',
+          'تحليل المشاعر',
+          'الكشف عن الشذوذ',
+        ],
+        benefits: [
+          'أتمتة المهام المتكررة وخفض التكاليف التشغيلية',
+          'اتخاذ قرارات مدعومة بالبيانات مع رؤى تنبؤية',
+          'تحسين تجارب العملاء من خلال التخصيص',
+          'توسيع العمليات دون زيادة متناسبة في القوى العاملة',
+          'اكتساب ميزة تنافسية من خلال الابتكار',
+          'تحسين الدقة وتقليل الأخطاء البشرية',
+        ],
+        content: {
+          process: [
+            { step: 1, title: 'تعريف المشكلة', description: 'نحلل تحديات عملك لتحديد أين يمكن للذكاء الاصطناعي خلق أكبر قيمة ونحدد مقاييس نجاح واضحة.' },
+            { step: 2, title: 'تقييم البيانات', description: 'نقيم جودة بياناتك وتوفرها وبنيتها لتحديد أفضل نهج لتطوير النموذج.' },
+            { step: 3, title: 'تطوير النموذج', description: 'يقوم علماء البيانات لدينا ببناء وتدريب نماذج مخصصة باستخدام أحدث الخوارزميات والأطر.' },
+            { step: 4, title: 'التكامل والاختبار', description: 'نقوم بدمج حل الذكاء الاصطناعي في أنظمتك الحالية ونجري اختبارات وتحققات شاملة.' },
+            { step: 5, title: 'النشر والمراقبة', description: 'ننشر الحل في الإنتاج ونقوم بإعداد مراقبة مستمرة لأداء النموذج ودقته.' },
+          ],
+          faq: [
+            { question: 'ما نوع البيانات التي أحتاجها لحلول الذكاء الاصطناعي؟', answer: 'تعتمد متطلبات البيانات على حل الذكاء الاصطناعي المحدد. بشكل عام، تحتاج إلى بيانات تاريخية ذات صلة بحالة استخدامك.' },
+            { question: 'كم يستغرق تطوير حل الذكاء الاصطناعي؟', answer: 'يمكن تطوير إثبات المفهوم في 4-8 أسابيع. عادةً ما يستغرق النشر الكامل في الإنتاج 3-6 أشهر.' },
+            { question: 'هل يمكن لحلول الذكاء الاصطناعي التكامل مع أنظمتنا الحالية؟', answer: 'نعم، نصمم حلول الذكاء الاصطناعي مع مراعاة التكامل. يمكننا الاتصال بقواعد البيانات وواجهات برمجة التطبيقات وأنظمة CRM الحالية.' },
+            { question: 'كيف تضمنون دقة وموثوقية نموذج الذكاء الاصطناعي؟', answer: 'نستخدم منهجيات اختبار صارمة والتحقق المتبادل والمراقبة المستمرة. كما ننفذ حلقات تغذية راجعة للتحسين.' },
+          ],
+        },
+      },
+      {
+        serviceId: aiSolutionsService.id,
+        locale: 'ur',
+        name: 'AI سلوشنز',
+        shortDescription: 'ذہین آٹومیشن اور مشین لرننگ ماڈلز۔',
+        fullDescription: 'مصنوعی ذہانت کی طاقت کو کھولیں۔ پیشن گوئی کے تجزیات سے لے کر قدرتی زبان کی پروسیسنگ چیٹ بوٹس تک، ہم جدید ترین AI ماڈلز کو آپ کے ورک فلوز میں ضم کرتے ہیں۔ ہمارے AI سلوشنز کاروباروں کو پیچیدہ عمل کو خودکار بنانے، ڈیٹا سے قابل عمل بصیرت حاصل کرنے، اور صارفین کو بڑے پیمانے پر ذاتی نوعیت کے تجربات فراہم کرنے میں مدد کرتے ہیں۔',
+        features: [
+          'کسٹم مشین لرننگ ماڈلز',
+          'نیچرل لینگویج پروسیسنگ (NLP)',
+          'کمپیوٹر ویژن سلوشنز',
+          'پریڈکٹو اینالیٹکس اور فورکاسٹنگ',
+          'AI سے چلنے والے چیٹ بوٹس اور ورچوئل اسسٹنٹس',
+          'ریکمنڈیشن سسٹمز',
+          'سینٹیمنٹ اینالیسس',
+          'انومالی ڈٹیکشن',
+        ],
+        benefits: [
+          'دہرائے جانے والے کاموں کو خودکار بنائیں اور آپریشنل اخراجات کم کریں',
+          'پیشن گوئی کی بصیرت کے ساتھ ڈیٹا سے چلنے والے فیصلے کریں',
+          'ذاتی نوعیت کے ذریعے صارف کے تجربات کو بہتر بنائیں',
+          'متناسب افرادی قوت میں اضافے کے بغیر آپریشنز کو بڑھائیں',
+          'جدت طرازی کے ذریعے مسابقتی فائدہ حاصل کریں',
+          'درستگی میں بہتری لائیں اور انسانی غلطی کو کم کریں',
+        ],
+        content: {
+          process: [
+            { step: 1, title: 'مسئلے کی تعریف', description: 'ہم آپ کے کاروباری چیلنجز کا تجزیہ کرتے ہیں تاکہ یہ شناخت کر سکیں کہ AI سب سے زیادہ قدر کہاں پیدا کر سکتا ہے۔' },
+            { step: 2, title: 'ڈیٹا کا جائزہ', description: 'ہم ماڈل ڈیولپمنٹ کے لیے بہترین نقطہ نظر کا تعین کرنے کے لیے آپ کے ڈیٹا کے معیار، دستیابی اور ڈھانچے کا جائزہ لیتے ہیں۔' },
+            { step: 3, title: 'ماڈل ڈیولپمنٹ', description: 'ہمارے ڈیٹا سائنسدان جدید ترین الگورتھمز کا استعمال کرتے ہوئے کسٹم ماڈلز بناتے اور ٹرین کرتے ہیں۔' },
+            { step: 4, title: 'انٹیگریشن اور ٹیسٹنگ', description: 'ہم AI سلوشن کو آپ کے موجودہ سسٹمز میں ضم کرتے ہیں اور مکمل ٹیسٹنگ اور توثیق کرتے ہیں۔' },
+            { step: 5, title: 'ڈپلائمنٹ اور مانیٹرنگ', description: 'ہم سلوشن کو پروڈکشن میں ڈپلائی کرتے ہیں اور ماڈل کی کارکردگی کے لیے مسلسل مانیٹرنگ سیٹ اپ کرتے ہیں۔' },
+          ],
+          faq: [
+            { question: 'AI سلوشنز کے لیے مجھے کس قسم کے ڈیٹا کی ضرورت ہے؟', answer: 'ڈیٹا کی ضروریات مخصوص AI سلوشن پر منحصر ہیں۔ عام طور پر، آپ کو اپنے استعمال کے معاملے سے متعلق تاریخی ڈیٹا کی ضرورت ہے۔' },
+            { question: 'AI سلوشن تیار کرنے میں کتنا وقت لگتا ہے؟', answer: 'پروف آف کانسیپٹ 4-8 ہفتوں میں تیار کیا جا سکتا ہے۔ مکمل پروڈکشن ڈپلائمنٹ عام طور پر 3-6 ماہ لیتی ہے۔' },
+            { question: 'کیا AI سلوشنز ہمارے موجودہ سسٹمز کے ساتھ ضم ہو سکتے ہیں؟', answer: 'جی ہاں، ہم انٹیگریشن کو ذہن میں رکھتے ہوئے AI سلوشنز ڈیزائن کرتے ہیں۔ ہم آپ کے موجودہ ڈیٹا بیسز، APIs، CRM سسٹمز سے جڑ سکتے ہیں۔' },
+            { question: 'آپ AI ماڈل کی درستگی اور قابل اعتماد کیسے یقینی بناتے ہیں؟', answer: 'ہم سخت ٹیسٹنگ طریقہ کار، کراس-ویلیڈیشن، اور مسلسل مانیٹرنگ استعمال کرتے ہیں۔ ہم بہتری کے لیے فیڈبیک لوپس بھی نافذ کرتے ہیں۔' },
+          ],
+        },
+      },
+    ];
+
+    for (const translation of aiTranslations) {
+      await prisma.serviceTranslation.upsert({
+        where: { serviceId_locale: { serviceId: translation.serviceId, locale: translation.locale } },
+        update: { name: translation.name, shortDescription: translation.shortDescription, fullDescription: translation.fullDescription, features: translation.features, benefits: translation.benefits, content: translation.content as any },
+        create: { serviceId: translation.serviceId, locale: translation.locale, name: translation.name, shortDescription: translation.shortDescription, fullDescription: translation.fullDescription, features: translation.features, benefits: translation.benefits, content: translation.content as any },
+      });
+    }
+    console.log(`Seeded ${aiTranslations.length} translations for ai-solutions`);
+  }
+
+  // Mobile Development Translations
+  const mobileDevService = await prisma.service.findUnique({ where: { slug: 'mobile-development' } });
+  if (mobileDevService) {
+    const mobileTranslations = [
+      {
+        serviceId: mobileDevService.id,
+        locale: 'tr',
+        name: 'Mobil Geliştirme',
+        shortDescription: 'Native ve cross-platform mobil uygulamalar.',
+        fullDescription: 'Müşterilerinize nerede olurlarsa olsunlar ulaşın. iOS ve Android için güzel, kullanıcı dostu mobil uygulamalar tasarlıyor ve geliştiriyoruz. React Native ve Flutter gibi modern framework\'ler kullanarak, geliştirme maliyetlerini ve pazara çıkış süresini optimize ederken native benzeri deneyimler sunan yüksek performanslı uygulamalar sunuyoruz.',
+        features: [
+          'Native iOS Geliştirme (Swift)',
+          'Native Android Geliştirme (Kotlin)',
+          'Cross-Platform Geliştirme (React Native, Flutter)',
+          'App Store Optimizasyonu (ASO)',
+          'Push Bildirimleri & Gerçek Zamanlı Güncellemeler',
+          'Offline-First Mimari',
+          'Biyometrik Kimlik Doğrulama',
+          'Uygulama İçi Satın Alımlar & Abonelikler',
+        ],
+        benefits: [
+          'Hem iOS hem Android platformlarında kullanıcılara ulaşın',
+          'Cross-platform verimliliği ile native benzeri performans',
+          'Paylaşılan kod tabanı ile daha hızlı pazara çıkış',
+          'Azaltılmış geliştirme ve bakım maliyetleri',
+          'Cihaz özellikleriyle sorunsuz entegrasyon',
+          'Düzenli güncellemeler ve özellik geliştirmeleri',
+        ],
+        content: {
+          process: [
+            { step: 1, title: 'Keşif & Planlama', description: 'Uygulama gereksinimlerinizi, hedef kitlenizi ve temel özelliklerinizi tanımlıyoruz, detaylı wireframe\'ler ve kullanıcı akışları oluşturuyoruz.' },
+            { step: 2, title: 'UI/UX Tasarım', description: 'Tasarımcılarımız en iyi kullanıcı deneyimi için iOS ve Android tasarım yönergelerini takip eden çarpıcı, sezgisel arayüzler oluşturur.' },
+            { step: 3, title: 'Geliştirme & İterasyon', description: 'Uygulamanızı çevik metodoloji kullanarak oluşturuyoruz, düzenli güncellemeler sunuyor ve süreç boyunca geri bildirim dahil ediyoruz.' },
+            { step: 4, title: 'Kalite Güvencesi', description: 'Birden fazla cihaz ve işletim sistemi sürümünde kapsamlı test, uygulamanızın tüm kullanıcılar için kusursuz çalışmasını sağlar.' },
+            { step: 5, title: 'Lansman & Destek', description: 'Uygulama mağazası başvurularını, lansman pazarlama desteğini yönetiyoruz ve sürekli bakım ve güncellemeler sağlıyoruz.' },
+          ],
+          faq: [
+            { question: 'Native mi yoksa cross-platform uygulama mı geliştirmeliyim?', answer: 'Gereksinimlerinize bağlıdır. Cross-platform (React Native, Flutter) daha hızlı geliştirme ve düşük maliyetlerle çoğu uygulama için idealdir. Maksimum performans veya derin platform entegrasyonu gerektiren uygulamalar için native geliştirme daha iyidir.' },
+            { question: 'Mobil uygulama geliştirme maliyeti ne kadar?', answer: 'Maliyetler karmaşıklık, özellikler ve platform seçimine göre değişir. Basit bir uygulama 25.000$\'dan başlayabilirken, gelişmiş özelliklere sahip karmaşık uygulamalar 75.000$ ile 250.000$+ arasında değişebilir.' },
+            { question: 'Mobil uygulama geliştirmek ne kadar sürer?', answer: 'Minimum uygulanabilir ürün (MVP) genellikle 3-4 ay sürer. Tam özellikli uygulamalar karmaşıklığa ve hedeflenen platform sayısına bağlı olarak genellikle 6-12 ay gerektirir.' },
+            { question: 'Uygulama mağazası gönderimi konusunda yardımcı oluyor musunuz?', answer: 'Evet, hem Apple App Store hem de Google Play Store için tüm gerekli varlıkları, açıklamaları hazırlama ve mağaza yönergelerine uyumu sağlama dahil olmak üzere tüm gönderim sürecini yönetiyoruz.' },
+          ],
+        },
+      },
+      {
+        serviceId: mobileDevService.id,
+        locale: 'de',
+        name: 'Mobile Entwicklung',
+        shortDescription: 'Native und plattformübergreifende mobile Apps.',
+        fullDescription: 'Erreichen Sie Ihre Kunden, wo immer sie sind. Wir entwerfen und entwickeln schöne, benutzerfreundliche mobile Anwendungen für iOS und Android. Mit modernen Frameworks wie React Native und Flutter liefern wir leistungsstarke Apps mit nativer Benutzererfahrung bei optimierten Entwicklungskosten und kürzerer Time-to-Market.',
+        features: [
+          'Native iOS-Entwicklung (Swift)',
+          'Native Android-Entwicklung (Kotlin)',
+          'Plattformübergreifende Entwicklung (React Native, Flutter)',
+          'App Store Optimierung (ASO)',
+          'Push-Benachrichtigungen & Echtzeit-Updates',
+          'Offline-First-Architektur',
+          'Biometrische Authentifizierung',
+          'In-App-Käufe & Abonnements',
+        ],
+        benefits: [
+          'Nutzer auf iOS und Android Plattformen erreichen',
+          'Native Leistung mit plattformübergreifender Effizienz',
+          'Schnellere Time-to-Market mit geteilter Codebasis',
+          'Reduzierte Entwicklungs- und Wartungskosten',
+          'Nahtlose Integration mit Gerätefunktionen',
+          'Regelmäßige Updates und Feature-Erweiterungen',
+        ],
+        content: {
+          process: [
+            { step: 1, title: 'Entdeckung & Planung', description: 'Wir definieren Ihre App-Anforderungen, Zielgruppe und Kernfunktionen und erstellen detaillierte Wireframes und User Flows.' },
+            { step: 2, title: 'UI/UX Design', description: 'Unsere Designer erstellen beeindruckende, intuitive Oberflächen nach iOS und Android Design-Richtlinien für die beste Benutzererfahrung.' },
+            { step: 3, title: 'Entwicklung & Iteration', description: 'Wir bauen Ihre App mit agiler Methodik, liefern regelmäßige Updates und integrieren Feedback während des gesamten Prozesses.' },
+            { step: 4, title: 'Qualitätssicherung', description: 'Umfassende Tests auf mehreren Geräten und OS-Versionen stellen sicher, dass Ihre App für alle Nutzer einwandfrei funktioniert.' },
+            { step: 5, title: 'Launch & Support', description: 'Wir kümmern uns um App-Store-Einreichungen, Launch-Marketing-Support und bieten fortlaufende Wartung und Updates.' },
+          ],
+          faq: [
+            { question: 'Sollte ich eine native oder plattformübergreifende App entwickeln?', answer: 'Es hängt von Ihren Anforderungen ab. Plattformübergreifend (React Native, Flutter) ist ideal für die meisten Apps mit schnellerer Entwicklung und geringeren Kosten. Native Entwicklung ist besser für Apps, die maximale Leistung erfordern.' },
+            { question: 'Wie viel kostet die Entwicklung einer mobilen App?', answer: 'Die Kosten variieren je nach Komplexität, Funktionen und Plattformwahl. Eine einfache App kann bei 25.000$ beginnen, komplexe Apps mit erweiterten Funktionen können zwischen 75.000$ und 250.000$+ liegen.' },
+            { question: 'Wie lange dauert es, eine mobile App zu entwickeln?', answer: 'Ein Minimum Viable Product (MVP) dauert typischerweise 3-4 Monate. Voll ausgestattete Apps benötigen in der Regel 6-12 Monate je nach Komplexität.' },
+            { question: 'Helfen Sie bei der App-Store-Einreichung?', answer: 'Ja, wir übernehmen den gesamten Einreichungsprozess für Apple App Store und Google Play Store, einschließlich aller erforderlichen Assets und Beschreibungen.' },
+          ],
+        },
+      },
+      {
+        serviceId: mobileDevService.id,
+        locale: 'ar',
+        name: 'تطوير تطبيقات الجوال',
+        shortDescription: 'تطبيقات جوال أصلية ومتعددة المنصات.',
+        fullDescription: 'تواصل مع عملائك أينما كانوا. نحن نصمم ونطور تطبيقات جوال جميلة وسهلة الاستخدام لنظامي iOS و Android. باستخدام أطر عمل حديثة مثل React Native و Flutter، نقدم تطبيقات عالية الأداء توفر تجارب شبيهة بالتطبيقات الأصلية مع تحسين تكاليف التطوير ووقت الوصول للسوق.',
+        features: [
+          'تطوير iOS أصلي (Swift)',
+          'تطوير Android أصلي (Kotlin)',
+          'تطوير متعدد المنصات (React Native، Flutter)',
+          'تحسين متجر التطبيقات (ASO)',
+          'إشعارات الدفع والتحديثات الفورية',
+          'بنية أوفلاين أولاً',
+          'المصادقة البيومترية',
+          'عمليات الشراء والاشتراكات داخل التطبيق',
+        ],
+        benefits: [
+          'الوصول للمستخدمين على منصتي iOS و Android',
+          'أداء شبيه بالأصلي مع كفاءة متعددة المنصات',
+          'وصول أسرع للسوق مع قاعدة كود مشتركة',
+          'تكاليف تطوير وصيانة مخفضة',
+          'تكامل سلس مع ميزات الجهاز',
+          'تحديثات منتظمة وتحسينات الميزات',
+        ],
+        content: {
+          process: [
+            { step: 1, title: 'الاكتشاف والتخطيط', description: 'نحدد متطلبات تطبيقك وجمهورك المستهدف والميزات الأساسية مع إنشاء wireframes وتدفقات المستخدم المفصلة.' },
+            { step: 2, title: 'تصميم UI/UX', description: 'يقوم مصممونا بإنشاء واجهات مذهلة وبديهية تتبع إرشادات تصميم iOS و Android للحصول على أفضل تجربة مستخدم.' },
+            { step: 3, title: 'التطوير والتكرار', description: 'نبني تطبيقك باستخدام منهجية Agile، ونقدم تحديثات منتظمة وندمج الملاحظات طوال العملية.' },
+            { step: 4, title: 'ضمان الجودة', description: 'يضمن الاختبار الشامل على أجهزة متعددة وإصدارات نظام التشغيل أن تطبيقك يعمل بشكل مثالي لجميع المستخدمين.' },
+            { step: 5, title: 'الإطلاق والدعم', description: 'نتعامل مع إرسال متجر التطبيقات ودعم تسويق الإطلاق ونوفر الصيانة والتحديثات المستمرة.' },
+          ],
+          faq: [
+            { question: 'هل يجب أن أبني تطبيقاً أصلياً أم متعدد المنصات؟', answer: 'يعتمد على متطلباتك. متعدد المنصات (React Native، Flutter) مثالي لمعظم التطبيقات مع تطوير أسرع وتكاليف أقل. التطوير الأصلي أفضل للتطبيقات التي تتطلب أقصى أداء.' },
+            { question: 'كم تكلفة تطوير تطبيق جوال؟', answer: 'تختلف التكاليف بناءً على التعقيد والميزات واختيار المنصة. قد يبدأ تطبيق بسيط من 25,000 دولار، بينما التطبيقات المعقدة قد تتراوح بين 75,000 و 250,000+ دولار.' },
+            { question: 'كم يستغرق بناء تطبيق جوال؟', answer: 'يستغرق الحد الأدنى من المنتج القابل للتطبيق (MVP) عادةً 3-4 أشهر. تتطلب التطبيقات كاملة الميزات عادةً 6-12 شهراً.' },
+            { question: 'هل تساعدون في إرسال متجر التطبيقات؟', answer: 'نعم، نتعامل مع عملية الإرسال الكاملة لكل من Apple App Store و Google Play Store، بما في ذلك إعداد جميع الأصول والأوصاف المطلوبة.' },
+          ],
+        },
+      },
+      {
+        serviceId: mobileDevService.id,
+        locale: 'ur',
+        name: 'موبائل ڈویلپمنٹ',
+        shortDescription: 'نیٹو اور کراس پلیٹ فارم موبائل ایپس۔',
+        fullDescription: 'اپنے صارفین تک پہنچیں جہاں بھی وہ ہوں۔ ہم iOS اور Android کے لیے خوبصورت، صارف دوست موبائل ایپلیکیشنز ڈیزائن اور ڈویلپ کرتے ہیں۔ React Native اور Flutter جیسے جدید فریم ورکس استعمال کرتے ہوئے، ہم ہائی پرفارمنس ایپس فراہم کرتے ہیں جو ڈویلپمنٹ لاگت اور ٹائم ٹو مارکیٹ کو بہتر بناتے ہوئے نیٹو جیسے تجربات فراہم کرتی ہیں۔',
+        features: [
+          'نیٹو iOS ڈویلپمنٹ (Swift)',
+          'نیٹو Android ڈویلپمنٹ (Kotlin)',
+          'کراس پلیٹ فارم ڈویلپمنٹ (React Native، Flutter)',
+          'App Store آپٹیمائزیشن (ASO)',
+          'پش نوٹیفیکیشنز اور ریئل ٹائم اپڈیٹس',
+          'آف لائن فرسٹ آرکیٹیکچر',
+          'بائیومیٹرک تصدیق',
+          'ان ایپ خریداریاں اور سبسکرپشنز',
+        ],
+        benefits: [
+          'iOS اور Android دونوں پلیٹ فارمز پر صارفین تک پہنچیں',
+          'کراس پلیٹ فارم کارکردگی کے ساتھ نیٹو جیسی پرفارمنس',
+          'مشترکہ کوڈ بیس کے ساتھ تیز تر مارکیٹ تک رسائی',
+          'کم ڈویلپمنٹ اور مینٹیننس اخراجات',
+          'ڈیوائس فیچرز کے ساتھ بغیر کسی رکاوٹ کے انٹیگریشن',
+          'باقاعدہ اپڈیٹس اور فیچر میں بہتری',
+        ],
+        content: {
+          process: [
+            { step: 1, title: 'دریافت اور منصوبہ بندی', description: 'ہم آپ کی ایپ کی ضروریات، ہدف سامعین، اور بنیادی خصوصیات کی وضاحت کرتے ہیں جبکہ تفصیلی وائر فریمز اور یوزر فلوز بناتے ہیں۔' },
+            { step: 2, title: 'UI/UX ڈیزائن', description: 'ہمارے ڈیزائنرز بہترین یوزر ایکسپیرینس کے لیے iOS اور Android ڈیزائن گائیڈ لائنز کی پیروی کرتے ہوئے شاندار، بدیہی انٹرفیس بناتے ہیں۔' },
+            { step: 3, title: 'ڈویلپمنٹ اور تکرار', description: 'ہم ایجائل میتھڈولوجی استعمال کرتے ہوئے آپ کی ایپ بناتے ہیں، باقاعدہ اپڈیٹس فراہم کرتے ہیں اور پورے عمل میں فیڈبیک شامل کرتے ہیں۔' },
+            { step: 4, title: 'کوالٹی ایشورنس', description: 'متعدد ڈیوائسز اور OS ورژنز پر جامع ٹیسٹنگ یقینی بناتی ہے کہ آپ کی ایپ تمام صارفین کے لیے بے عیب کام کرے۔' },
+            { step: 5, title: 'لانچ اور سپورٹ', description: 'ہم ایپ اسٹور سبمیشنز، لانچ مارکیٹنگ سپورٹ سنبھالتے ہیں اور جاری مینٹیننس اور اپڈیٹس فراہم کرتے ہیں۔' },
+          ],
+          faq: [
+            { question: 'کیا مجھے نیٹو یا کراس پلیٹ فارم ایپ بنانی چاہیے؟', answer: 'یہ آپ کی ضروریات پر منحصر ہے۔ کراس پلیٹ فارم (React Native، Flutter) تیز ڈویلپمنٹ اور کم لاگت کے ساتھ زیادہ تر ایپس کے لیے مثالی ہے۔ زیادہ سے زیادہ پرفارمنس کی ضرورت والی ایپس کے لیے نیٹو ڈویلپمنٹ بہتر ہے۔' },
+            { question: 'موبائل ایپ ڈویلپمنٹ کی لاگت کتنی ہے؟', answer: 'لاگت پیچیدگی، فیچرز، اور پلیٹ فارم کے انتخاب کی بنیاد پر مختلف ہوتی ہے۔ ایک سادہ ایپ $25,000 سے شروع ہو سکتی ہے، جبکہ پیچیدہ ایپس $75,000 سے $250,000+ تک ہو سکتی ہیں۔' },
+            { question: 'موبائل ایپ بنانے میں کتنا وقت لگتا ہے؟', answer: 'MVP عام طور پر 3-4 ماہ لیتا ہے۔ مکمل فیچرڈ ایپس کو عام طور پر پیچیدگی کے لحاظ سے 6-12 ماہ درکار ہوتے ہیں۔' },
+            { question: 'کیا آپ ایپ اسٹور سبمیشن میں مدد کرتے ہیں؟', answer: 'جی ہاں، ہم Apple App Store اور Google Play Store دونوں کے لیے پورے سبمیشن عمل کو سنبھالتے ہیں، بشمول تمام مطلوبہ اثاثے اور وضاحتیں تیار کرنا۔' },
+          ],
+        },
+      },
+    ];
+
+    for (const translation of mobileTranslations) {
+      await prisma.serviceTranslation.upsert({
+        where: { serviceId_locale: { serviceId: translation.serviceId, locale: translation.locale } },
+        update: { name: translation.name, shortDescription: translation.shortDescription, fullDescription: translation.fullDescription, features: translation.features, benefits: translation.benefits, content: translation.content as any },
+        create: { serviceId: translation.serviceId, locale: translation.locale, name: translation.name, shortDescription: translation.shortDescription, fullDescription: translation.fullDescription, features: translation.features, benefits: translation.benefits, content: translation.content as any },
+      });
+    }
+    console.log(`Seeded ${mobileTranslations.length} translations for mobile-development`);
+  }
+
+  // ==================== BATCH 2: Python Automation, Data Analytics, Machine Learning ====================
+
+  // Python Automation Translations
+  const pythonAutoService = await prisma.service.findUnique({ where: { slug: 'python-automation' } });
+  if (pythonAutoService) {
+    const pythonTranslations = [
+      {
+        serviceId: pythonAutoService.id,
+        locale: 'tr',
+        name: 'Python Otomasyonu',
+        shortDescription: 'Python ile iş akışlarını ve süreçleri otomatikleştirin.',
+        fullDescription: 'Tekrarlayan görevleri ortadan kaldırın ve özel Python otomasyon çözümleriyle üretkenliğinizi artırın. Web scraping ve veri işlemeden rapor oluşturma ve sistem entegrasyonuna kadar, saatlerce manuel işten tasarruf sağlayan scriptler ve uygulamalar geliştiriyoruz.',
+        features: ['Web Scraping & Veri Çıkarma', 'Rapor Oluşturma & Otomasyon', 'Dosya İşleme & Dönüşüm', 'E-posta & İletişim Otomasyonu', 'Veritabanı İşlemleri & Migrasyon', 'API Entegrasyon Scriptleri', 'Zamanlanmış Görev Otomasyonu', 'Test & QA Otomasyonu'],
+        benefits: ['Tekrarlayan görevlerde yüzlerce saat tasarruf edin', 'Veri işlemede insan hatasını azaltın', '7/24 otomatik işlemleri etkinleştirin', 'Personeli daha değerli işlere yönlendirin', 'Veri doğruluğunu ve tutarlılığını artırın', 'Personel eklemeden operasyonları ölçeklendirin'],
+        content: {
+          process: [
+            { step: 1, title: 'Süreç Analizi', description: 'Mevcut manuel süreçlerinizi belgeliyor, otomasyon fırsatlarını belirliyoruz.' },
+            { step: 2, title: 'Çözüm Tasarımı', description: 'Veri akışları, hata yönetimi ve zamanlama gereksinimleri dahil otomasyon mimarisini tasarlıyoruz.' },
+            { step: 3, title: 'Geliştirme', description: 'Uygun loglama, hata yönetimi ve yapılandırma yönetimi ile temiz, iyi belgelenmiş Python kodu yazıyoruz.' },
+            { step: 4, title: 'Test & Doğrulama', description: 'Güvenilirliği sağlamak için çeşitli senaryolar ve uç durumlarla otomasyonu kapsamlı test ediyoruz.' },
+            { step: 5, title: 'Dağıtım & Eğitim', description: 'Çözümü dağıtıyor, zamanlamayı ayarlıyor ve ekibinizi kullanım ve temel bakım konusunda eğitiyoruz.' },
+          ],
+          faq: [
+            { question: 'Hangi tür görevler otomatikleştirilebilir?', answer: 'Hemen hemen her tekrarlayan bilgisayar görevi: veri girişi, rapor oluşturma, dosya yönetimi, web scraping, e-posta işleme, sosyal medya paylaşımı, veritabanı işlemleri ve sistem entegrasyonları.' },
+            { question: 'Web scraping yasal mı?', answer: 'Web sitesinin kullanım şartlarına ve yargı yetkisine bağlıdır. Scraping çözümlerimizin robots.txt, hız limitleri ve kullanım şartlarına uymasını sağlıyoruz.' },
+          ],
+        },
+      },
+      {
+        serviceId: pythonAutoService.id,
+        locale: 'de',
+        name: 'Python-Automatisierung',
+        shortDescription: 'Automatisieren Sie Workflows und Prozesse mit Python.',
+        fullDescription: 'Eliminieren Sie repetitive Aufgaben und steigern Sie Ihre Produktivität mit maßgeschneiderten Python-Automatisierungslösungen. Von Web-Scraping und Datenverarbeitung bis hin zur Berichtserstellung und Systemintegration entwickeln wir Skripte und Anwendungen, die Stunden manueller Arbeit einsparen.',
+        features: ['Web-Scraping & Datenextraktion', 'Berichtserstellung & Automatisierung', 'Dateiverarbeitung & Transformation', 'E-Mail- & Kommunikationsautomatisierung', 'Datenbankoperationen & Migration', 'API-Integrationsskripte', 'Geplante Aufgabenautomatisierung', 'Test- & QA-Automatisierung'],
+        benefits: ['Hunderte Stunden bei repetitiven Aufgaben sparen', 'Menschliche Fehler bei der Datenverarbeitung reduzieren', '24/7 automatisierte Abläufe ermöglichen', 'Mitarbeiter für höherwertige Arbeit freisetzen', 'Datengenauigkeit und -konsistenz verbessern', 'Operationen ohne zusätzliches Personal skalieren'],
+        content: {
+          process: [
+            { step: 1, title: 'Prozessanalyse', description: 'Wir dokumentieren Ihre aktuellen manuellen Prozesse und identifizieren Automatisierungsmöglichkeiten.' },
+            { step: 2, title: 'Lösungsdesign', description: 'Wir entwerfen die Automatisierungsarchitektur einschließlich Datenflüsse und Fehlerbehandlung.' },
+            { step: 3, title: 'Entwicklung', description: 'Wir schreiben sauberen, gut dokumentierten Python-Code mit ordnungsgemäßer Protokollierung.' },
+            { step: 4, title: 'Test & Validierung', description: 'Wir testen die Automatisierung gründlich mit verschiedenen Szenarien und Randfällen.' },
+            { step: 5, title: 'Bereitstellung & Schulung', description: 'Wir stellen die Lösung bereit und schulen Ihr Team in Nutzung und grundlegender Wartung.' },
+          ],
+          faq: [
+            { question: 'Welche Arten von Aufgaben können automatisiert werden?', answer: 'Fast jede repetitive Computeraufgabe: Dateneingabe, Berichtserstellung, Dateiverwaltung, Web-Scraping, E-Mail-Verarbeitung, Social-Media-Posting, Datenbankoperationen und Systemintegrationen.' },
+          ],
+        },
+      },
+      {
+        serviceId: pythonAutoService.id,
+        locale: 'ar',
+        name: 'أتمتة Python',
+        shortDescription: 'أتمتة سير العمل والعمليات باستخدام Python.',
+        fullDescription: 'تخلص من المهام المتكررة وعزز إنتاجيتك باستخدام حلول أتمتة Python المخصصة. من استخراج البيانات من الويب ومعالجة البيانات إلى إنشاء التقارير وتكامل الأنظمة، نبني نصوصاً برمجية وتطبيقات توفر ساعات من العمل اليدوي.',
+        features: ['استخراج البيانات من الويب', 'إنشاء التقارير والأتمتة', 'معالجة وتحويل الملفات', 'أتمتة البريد الإلكتروني والاتصالات', 'عمليات قواعد البيانات والترحيل', 'نصوص تكامل API', 'أتمتة المهام المجدولة', 'أتمتة الاختبار وضمان الجودة'],
+        benefits: ['وفر مئات الساعات في المهام المتكررة', 'قلل الأخطاء البشرية في معالجة البيانات', 'مكّن العمليات الآلية على مدار الساعة', 'حرر الموظفين للعمل ذي القيمة الأعلى', 'حسّن دقة البيانات واتساقها', 'وسّع العمليات دون إضافة موظفين'],
+        content: {
+          process: [
+            { step: 1, title: 'تحليل العمليات', description: 'نوثق عملياتك اليدوية الحالية ونحدد فرص الأتمتة.' },
+            { step: 2, title: 'تصميم الحل', description: 'نصمم بنية الأتمتة بما في ذلك تدفقات البيانات ومعالجة الأخطاء.' },
+            { step: 3, title: 'التطوير', description: 'نكتب كود Python نظيفاً وموثقاً جيداً مع التسجيل ومعالجة الأخطاء المناسبة.' },
+            { step: 4, title: 'الاختبار والتحقق', description: 'نختبر الأتمتة بشكل شامل مع سيناريوهات وحالات حدية متنوعة.' },
+            { step: 5, title: 'النشر والتدريب', description: 'ننشر الحل ونعد الجدولة وندرب فريقك على الاستخدام والصيانة الأساسية.' },
+          ],
+          faq: [
+            { question: 'ما أنواع المهام التي يمكن أتمتتها؟', answer: 'تقريباً أي مهمة كمبيوتر متكررة: إدخال البيانات، إنشاء التقارير، إدارة الملفات، استخراج البيانات من الويب، معالجة البريد الإلكتروني، النشر على وسائل التواصل الاجتماعي، عمليات قواعد البيانات، وتكامل الأنظمة.' },
+          ],
+        },
+      },
+      {
+        serviceId: pythonAutoService.id,
+        locale: 'ur',
+        name: 'Python آٹومیشن',
+        shortDescription: 'Python کے ساتھ ورک فلوز اور عمل کو خودکار بنائیں۔',
+        fullDescription: 'دہرائے جانے والے کاموں کو ختم کریں اور کسٹم Python آٹومیشن سلوشنز کے ساتھ اپنی پیداواری صلاحیت کو بڑھائیں۔ ویب سکریپنگ اور ڈیٹا پروسیسنگ سے لے کر رپورٹ جنریشن اور سسٹم انٹیگریشن تک، ہم سکرپٹس اور ایپلیکیشنز بناتے ہیں جو گھنٹوں کے دستی کام کو بچاتے ہیں۔',
+        features: ['ویب سکریپنگ اور ڈیٹا نکالنا', 'رپورٹ جنریشن اور آٹومیشن', 'فائل پروسیسنگ اور تبدیلی', 'ای میل اور کمیونیکیشن آٹومیشن', 'ڈیٹا بیس آپریشنز اور مائیگریشن', 'API انٹیگریشن سکرپٹس', 'شیڈیولڈ ٹاسک آٹومیشن', 'ٹیسٹنگ اور QA آٹومیشن'],
+        benefits: ['دہرائے جانے والے کاموں میں سینکڑوں گھنٹے بچائیں', 'ڈیٹا پروسیسنگ میں انسانی غلطی کم کریں', '24/7 خودکار آپریشنز کو فعال کریں', 'عملے کو زیادہ قیمتی کام کے لیے آزاد کریں', 'ڈیٹا کی درستگی اور مطابقت کو بہتر بنائیں', 'عملے کو بڑھائے بغیر آپریشنز کو بڑھائیں'],
+        content: {
+          process: [
+            { step: 1, title: 'عمل کا تجزیہ', description: 'ہم آپ کے موجودہ دستی عمل کو دستاویز کرتے ہیں اور آٹومیشن کے مواقع کی شناخت کرتے ہیں۔' },
+            { step: 2, title: 'حل کی ڈیزائن', description: 'ہم ڈیٹا فلوز اور ایرر ہینڈلنگ سمیت آٹومیشن آرکیٹیکچر ڈیزائن کرتے ہیں۔' },
+            { step: 3, title: 'ڈویلپمنٹ', description: 'ہم مناسب لاگنگ اور ایرر ہینڈلنگ کے ساتھ صاف، اچھی طرح سے دستاویز شدہ Python کوڈ لکھتے ہیں۔' },
+            { step: 4, title: 'ٹیسٹنگ اور توثیق', description: 'ہم مختلف منظرناموں اور ایج کیسز کے ساتھ آٹومیشن کی مکمل جانچ کرتے ہیں۔' },
+            { step: 5, title: 'ڈپلائمنٹ اور ٹریننگ', description: 'ہم حل ڈپلائی کرتے ہیں اور آپ کی ٹیم کو استعمال اور بنیادی دیکھ بھال کی تربیت دیتے ہیں۔' },
+          ],
+          faq: [
+            { question: 'کون سی قسم کے کام خودکار ہو سکتے ہیں؟', answer: 'تقریباً ہر دہرایا جانے والا کمپیوٹر ٹاسک: ڈیٹا انٹری، رپورٹ جنریشن، فائل مینجمنٹ، ویب سکریپنگ، ای میل پروسیسنگ، سوشل میڈیا پوسٹنگ، ڈیٹا بیس آپریشنز، اور سسٹم انٹیگریشنز۔' },
+          ],
+        },
+      },
+    ];
+    for (const t of pythonTranslations) { await prisma.serviceTranslation.upsert({ where: { serviceId_locale: { serviceId: t.serviceId, locale: t.locale } }, update: { name: t.name, shortDescription: t.shortDescription, fullDescription: t.fullDescription, features: t.features, benefits: t.benefits, content: t.content as any }, create: t as any }); }
+    console.log(`Seeded ${pythonTranslations.length} translations for python-automation`);
+  }
+
+  // Data Analytics Translations
+  const dataAnalyticsService = await prisma.service.findUnique({ where: { slug: 'data-analytics' } });
+  if (dataAnalyticsService) {
+    const dataAnalyticsTranslations = [
+      {
+        serviceId: dataAnalyticsService.id,
+        locale: 'tr',
+        name: 'Veri Analitiği',
+        shortDescription: 'Ham veriyi eyleme dönüştürülebilir iş içgörülerine dönüştürün.',
+        fullDescription: 'Verilerinizi rekabet avantajına dönüştürün. Veri analitiği hizmetlerimiz, daha iyi iş kararları almanızı sağlayan kalıpları, trendleri ve içgörüleri ortaya çıkarmak için veri toplama, işleme ve görselleştirme konusunda yardımcı olur.',
+        features: ['İş Zekası Panelleri', 'Gerçek Zamanlı Veri Görselleştirme', 'ETL Pipeline Geliştirme', 'Veri Ambarı Tasarımı', 'Özel Raporlama Çözümleri', 'KPI İzleme & Takip', 'Veri Kalite Yönetimi', 'Self-Servis Analitik Araçları'],
+        benefits: ['Daha hızlı, veriye dayalı kararlar alın', 'Gelir fırsatlarını ve maliyet tasarruflarını belirleyin', 'Müşteri davranışını ve tercihlerini anlayın', 'İş performansını gerçek zamanlı izleyin', 'Gelecekteki trendleri ve pazar değişikliklerini tahmin edin', 'Operasyonel verimliliği artırın'],
+        content: {
+          process: [
+            { step: 1, title: 'Veri Keşfi', description: 'Mevcut veri kaynaklarınızı denetliyor, veri kalitesi sorunlarını belirliyoruz.' },
+            { step: 2, title: 'Mimari Tasarım', description: 'Veri pipeline\'ları, depolama çözümleri ve işleme framework\'leri dahil ölçeklenebilir veri mimarisi tasarlıyoruz.' },
+            { step: 3, title: 'Veri Entegrasyonu', description: 'Birden fazla kaynaktan veri çıkarmak, dönüştürmek ve birleşik veri ambarına yüklemek için ETL pipeline\'ları oluşturuyoruz.' },
+            { step: 4, title: 'Görselleştirme & Raporlama', description: 'Paydaşlar için anlaşılması kolay formatta içgörüler sunan etkileşimli paneller ve raporlar oluşturuyoruz.' },
+            { step: 5, title: 'Eğitim & Optimizasyon', description: 'Ekibinizi analitik araçlar konusunda eğitiyor ve kullanıcı geri bildirimlerine göre panelleri sürekli optimize ediyoruz.' },
+          ],
+          faq: [
+            { question: 'Hangi veri kaynaklarını entegre edebilirsiniz?', answer: 'Veritabanları, API\'ler, bulut hizmetleri, elektronik tablolar, CRM sistemleri, pazarlama platformları ve IoT cihazları dahil neredeyse her veri kaynağını entegre edebiliriz.' },
+            { question: 'Veri güvenliğini ve gizliliğini nasıl sağlıyorsunuz?', answer: 'Şifreleme, erişim kontrolleri, veri maskeleme ve GDPR ve CCPA gibi düzenlemelere uyum dahil endüstri standardı güvenlik uygulamalarını uyguluyoruz.' },
+          ],
+        },
+      },
+      {
+        serviceId: dataAnalyticsService.id,
+        locale: 'de',
+        name: 'Datenanalyse',
+        shortDescription: 'Verwandeln Sie Rohdaten in umsetzbare Geschäftserkenntnisse.',
+        fullDescription: 'Machen Sie Ihre Daten zu einem Wettbewerbsvorteil. Unsere Datenanalyse-Services helfen Ihnen, Daten zu sammeln, zu verarbeiten und zu visualisieren, um Muster, Trends und Erkenntnisse aufzudecken, die bessere Geschäftsentscheidungen ermöglichen.',
+        features: ['Business-Intelligence-Dashboards', 'Echtzeit-Datenvisualisierung', 'ETL-Pipeline-Entwicklung', 'Data-Warehouse-Design', 'Individuelle Berichtslösungen', 'KPI-Tracking & Monitoring', 'Datenqualitätsmanagement', 'Self-Service-Analysetools'],
+        benefits: ['Schnellere, datengestützte Entscheidungen treffen', 'Umsatzchancen und Kosteneinsparungen identifizieren', 'Kundenverhalten und -präferenzen verstehen', 'Geschäftsleistung in Echtzeit überwachen', 'Zukünftige Trends und Marktveränderungen vorhersagen', 'Betriebseffizienz verbessern'],
+        content: {
+          process: [
+            { step: 1, title: 'Datenentdeckung', description: 'Wir prüfen Ihre bestehenden Datenquellen und identifizieren Datenqualitätsprobleme.' },
+            { step: 2, title: 'Architekturdesign', description: 'Wir entwerfen eine skalierbare Datenarchitektur mit Pipelines, Speicherlösungen und Verarbeitungsframeworks.' },
+            { step: 3, title: 'Datenintegration', description: 'Wir bauen ETL-Pipelines, um Daten aus mehreren Quellen in ein einheitliches Data Warehouse zu laden.' },
+            { step: 4, title: 'Visualisierung & Berichterstattung', description: 'Wir erstellen interaktive Dashboards und Berichte, die Erkenntnisse verständlich präsentieren.' },
+            { step: 5, title: 'Schulung & Optimierung', description: 'Wir schulen Ihr Team in Analysetools und optimieren Dashboards basierend auf Feedback.' },
+          ],
+          faq: [
+            { question: 'Welche Datenquellen können Sie integrieren?', answer: 'Wir können praktisch jede Datenquelle integrieren: Datenbanken, APIs, Cloud-Services, Tabellen, CRM-Systeme, Marketing-Plattformen und IoT-Geräte.' },
+          ],
+        },
+      },
+      {
+        serviceId: dataAnalyticsService.id,
+        locale: 'ar',
+        name: 'تحليلات البيانات',
+        shortDescription: 'حول البيانات الخام إلى رؤى أعمال قابلة للتنفيذ.',
+        fullDescription: 'حول بياناتك إلى ميزة تنافسية. تساعدك خدمات تحليلات البيانات لدينا على جمع البيانات ومعالجتها وتصورها للكشف عن الأنماط والاتجاهات والرؤى التي تقود قرارات أعمال أفضل.',
+        features: ['لوحات ذكاء الأعمال', 'تصور البيانات في الوقت الفعلي', 'تطوير خطوط أنابيب ETL', 'تصميم مستودع البيانات', 'حلول التقارير المخصصة', 'تتبع ومراقبة مؤشرات الأداء الرئيسية', 'إدارة جودة البيانات', 'أدوات التحليل الذاتي'],
+        benefits: ['اتخذ قرارات أسرع مدعومة بالبيانات', 'حدد فرص الإيرادات وتوفير التكاليف', 'افهم سلوك العملاء وتفضيلاتهم', 'راقب أداء الأعمال في الوقت الفعلي', 'توقع الاتجاهات المستقبلية وتغيرات السوق', 'حسّن الكفاءة التشغيلية'],
+        content: {
+          process: [
+            { step: 1, title: 'اكتشاف البيانات', description: 'نراجع مصادر البيانات الحالية ونحدد مشاكل جودة البيانات.' },
+            { step: 2, title: 'تصميم البنية', description: 'نصمم بنية بيانات قابلة للتطوير تشمل خطوط الأنابيب وحلول التخزين وأطر المعالجة.' },
+            { step: 3, title: 'تكامل البيانات', description: 'نبني خطوط أنابيب ETL لاستخراج البيانات وتحويلها وتحميلها من مصادر متعددة إلى مستودع بيانات موحد.' },
+            { step: 4, title: 'التصور والتقارير', description: 'ننشئ لوحات معلومات وتقارير تفاعلية تقدم الرؤى بتنسيق سهل الفهم.' },
+            { step: 5, title: 'التدريب والتحسين', description: 'ندرب فريقك على أدوات التحليل ونحسن اللوحات باستمرار بناءً على ملاحظات المستخدمين.' },
+          ],
+          faq: [
+            { question: 'ما مصادر البيانات التي يمكنكم دمجها؟', answer: 'يمكننا دمج أي مصدر بيانات تقريباً بما في ذلك قواعد البيانات وواجهات برمجة التطبيقات والخدمات السحابية وجداول البيانات وأنظمة CRM ومنصات التسويق وأجهزة IoT.' },
+          ],
+        },
+      },
+      {
+        serviceId: dataAnalyticsService.id,
+        locale: 'ur',
+        name: 'ڈیٹا اینالیٹکس',
+        shortDescription: 'خام ڈیٹا کو قابل عمل کاروباری بصیرت میں تبدیل کریں۔',
+        fullDescription: 'اپنے ڈیٹا کو مسابقتی فائدے میں بدلیں۔ ہماری ڈیٹا اینالیٹکس سروسز آپ کو ڈیٹا جمع کرنے، پروسیس کرنے اور ویژولائز کرنے میں مدد کرتی ہیں تاکہ پیٹرنز، ٹرینڈز اور بصیرت کو ظاہر کیا جا سکے جو بہتر کاروباری فیصلے چلاتے ہیں۔',
+        features: ['بزنس انٹیلیجنس ڈیش بورڈز', 'ریئل ٹائم ڈیٹا ویژولائزیشن', 'ETL پائپ لائن ڈیولپمنٹ', 'ڈیٹا ویئر ہاؤس ڈیزائن', 'کسٹم رپورٹنگ سلوشنز', 'KPI ٹریکنگ اور مانیٹرنگ', 'ڈیٹا کوالٹی مینجمنٹ', 'سیلف سروس اینالیٹکس ٹولز'],
+        benefits: ['تیز تر، ڈیٹا سے چلنے والے فیصلے کریں', 'آمدنی کے مواقع اور لاگت کی بچت کی شناخت کریں', 'صارف کے رویے اور ترجیحات کو سمجھیں', 'ریئل ٹائم میں کاروباری کارکردگی کی نگرانی کریں', 'مستقبل کے رجحانات اور مارکیٹ کی تبدیلیوں کی پیشن گوئی کریں', 'آپریشنل کارکردگی میں بہتری لائیں'],
+        content: {
+          process: [
+            { step: 1, title: 'ڈیٹا دریافت', description: 'ہم آپ کے موجودہ ڈیٹا ذرائع کا آڈٹ کرتے ہیں اور ڈیٹا کوالٹی کے مسائل کی شناخت کرتے ہیں۔' },
+            { step: 2, title: 'آرکیٹیکچر ڈیزائن', description: 'ہم ڈیٹا پائپ لائنز، اسٹوریج سلوشنز اور پروسیسنگ فریم ورکس سمیت قابل توسیع ڈیٹا آرکیٹیکچر ڈیزائن کرتے ہیں۔' },
+            { step: 3, title: 'ڈیٹا انٹیگریشن', description: 'ہم متعدد ذرائع سے ڈیٹا نکالنے، تبدیل کرنے اور یکجا ڈیٹا ویئر ہاؤس میں لوڈ کرنے کے لیے ETL پائپ لائنز بناتے ہیں۔' },
+            { step: 4, title: 'ویژولائزیشن اور رپورٹنگ', description: 'ہم انٹرایکٹو ڈیش بورڈز اور رپورٹس بناتے ہیں جو اسٹیک ہولڈرز کے لیے آسان فارمیٹ میں بصیرت پیش کرتی ہیں۔' },
+            { step: 5, title: 'ٹریننگ اور آپٹیمائزیشن', description: 'ہم آپ کی ٹیم کو اینالیٹکس ٹولز پر تربیت دیتے ہیں اور صارف کے فیڈبیک کی بنیاد پر ڈیش بورڈز کو مسلسل بہتر بناتے ہیں۔' },
+          ],
+          faq: [
+            { question: 'آپ کون سے ڈیٹا ذرائع انٹیگریٹ کر سکتے ہیں؟', answer: 'ہم تقریباً کوئی بھی ڈیٹا سورس انٹیگریٹ کر سکتے ہیں بشمول ڈیٹا بیسز، APIs، کلاؤڈ سروسز، اسپریڈ شیٹس، CRM سسٹمز، مارکیٹنگ پلیٹ فارمز، اور IoT ڈیوائسز۔' },
+          ],
+        },
+      },
+    ];
+    for (const t of dataAnalyticsTranslations) { await prisma.serviceTranslation.upsert({ where: { serviceId_locale: { serviceId: t.serviceId, locale: t.locale } }, update: { name: t.name, shortDescription: t.shortDescription, fullDescription: t.fullDescription, features: t.features, benefits: t.benefits, content: t.content as any }, create: t as any }); }
+    console.log(`Seeded ${dataAnalyticsTranslations.length} translations for data-analytics`);
+  }
+
+  // Machine Learning Translations
+  const machineLearningService = await prisma.service.findUnique({ where: { slug: 'machine-learning' } });
+  if (machineLearningService) {
+    const mlTranslations = [
+      {
+        serviceId: machineLearningService.id,
+        locale: 'tr',
+        name: 'Makine Öğrenimi',
+        shortDescription: 'Verilerinizden öğrenen ve gelişen özel ML modelleri.',
+        fullDescription: 'Karmaşık iş problemlerini çözmek için makine öğreniminin gücünden yararlanın. Sonuçları tahmin edebilen, veriyi sınıflandırabilen, anomalileri tespit edebilen ve karar vermeyi otomatikleştirebilen özel ML modelleri geliştiriyoruz. Geleneksel algoritmalardan derin öğrenme sinir ağlarına kadar, özel kullanım durumunuz için doğru yaklaşımı seçiyoruz.',
+        features: ['Denetimli & Denetimsiz Öğrenme', 'Derin Öğrenme Sinir Ağları', 'Zaman Serisi Tahmini', 'Sınıflandırma & Regresyon Modelleri', 'Kümeleme & Segmentasyon', 'Özellik Mühendisliği & Seçimi', 'Model Açıklanabilirliği & Yorumlanabilirliği', 'MLOps & Model Yaşam Döngüsü Yönetimi'],
+        benefits: ['Karmaşık karar verme süreçlerini otomatikleştirin', 'Yüksek doğrulukla gelecekteki sonuçları tahmin edin', 'Büyük veri setlerinde gizli kalıpları keşfedin', 'Akıllı otomasyon yoluyla uzmanlığı ölçeklendirin', 'Daha fazla veriyle sürekli iyileştirin', 'Öngörücü bakım yoluyla maliyetleri azaltın'],
+        content: {
+          process: [
+            { step: 1, title: 'Problem Çerçeveleme', description: 'İş probleminizi makine öğrenimi problemine dönüştürüyor ve ölçülebilir başarı kriterleri tanımlıyoruz.' },
+            { step: 2, title: 'Veri Hazırlığı', description: 'Verilerinizi toplayıp temizliyor, model performansını maksimize etmek için özellik mühendisliği yapıyoruz.' },
+            { step: 3, title: 'Model Seçimi & Eğitim', description: 'Kullanım durumunuz için en iyi modeli bulmak için birden fazla algoritma ve mimari ile deneyler yapıyoruz.' },
+            { step: 4, title: 'Doğrulama & İnce Ayar', description: 'Model performansını titizlikle doğruluyor ve optimal sonuçlar elde etmek için hiperparametreleri ince ayarlıyoruz.' },
+            { step: 5, title: 'Dağıtım & MLOps', description: 'Otomatik yeniden eğitim pipeline\'ları ve performans izleme ile modelleri üretime dağıtıyoruz.' },
+          ],
+          faq: [
+            { question: 'Makine öğrenimi için ne kadar veriye ihtiyacım var?', answer: 'Problem karmaşıklığına bağlıdır. Basit modeller binlerce kayıtla çalışabilirken, derin öğrenme genellikle yüz binlerce veya milyonlarca veri gerektirir.' },
+            { question: 'Makine öğrenimi tahminleri ne kadar doğru?', answer: 'Doğruluk problem ve veri kalitesine göre değişir. Uygun doğrulama teknikleri kullanıyor ve gerçekçi beklentiler belirliyoruz. Çoğu üretim modeli kullanım durumuna bağlı olarak %80-95 doğruluk elde eder.' },
+          ],
+        },
+      },
+      {
+        serviceId: machineLearningService.id,
+        locale: 'de',
+        name: 'Maschinelles Lernen',
+        shortDescription: 'Individuelle ML-Modelle, die aus Ihren Daten lernen und sich verbessern.',
+        fullDescription: 'Nutzen Sie die Kraft des maschinellen Lernens zur Lösung komplexer Geschäftsprobleme. Wir entwickeln individuelle ML-Modelle, die Ergebnisse vorhersagen, Daten klassifizieren, Anomalien erkennen und Entscheidungen automatisieren können. Von traditionellen Algorithmen bis zu Deep-Learning-Neuronalen Netzen wählen wir den richtigen Ansatz für Ihren spezifischen Anwendungsfall.',
+        features: ['Überwachtes & Unüberwachtes Lernen', 'Deep-Learning Neuronale Netze', 'Zeitreihenprognose', 'Klassifikations- & Regressionsmodelle', 'Clustering & Segmentierung', 'Feature Engineering & Auswahl', 'Modell-Erklärbarkeit & Interpretierbarkeit', 'MLOps & Modell-Lebenszyklusmanagement'],
+        benefits: ['Komplexe Entscheidungsprozesse automatisieren', 'Zukünftige Ergebnisse mit hoher Genauigkeit vorhersagen', 'Verborgene Muster in großen Datensätzen entdecken', 'Expertise durch intelligente Automatisierung skalieren', 'Mit mehr Daten kontinuierlich verbessern', 'Kosten durch vorausschauende Wartung reduzieren'],
+        content: {
+          process: [
+            { step: 1, title: 'Problemformulierung', description: 'Wir übersetzen Ihr Geschäftsproblem in ein Machine-Learning-Problem und definieren messbare Erfolgskriterien.' },
+            { step: 2, title: 'Datenvorbereitung', description: 'Wir sammeln, bereinigen und transformieren Ihre Daten und führen Feature Engineering durch.' },
+            { step: 3, title: 'Modellauswahl & Training', description: 'Wir experimentieren mit mehreren Algorithmen und Architekturen, um das beste Modell zu finden.' },
+            { step: 4, title: 'Validierung & Tuning', description: 'Wir validieren die Modellleistung rigoros und optimieren Hyperparameter für optimale Ergebnisse.' },
+            { step: 5, title: 'Bereitstellung & MLOps', description: 'Wir stellen Modelle mit automatisierten Retraining-Pipelines und Performance-Monitoring in Produktion bereit.' },
+          ],
+          faq: [
+            { question: 'Wie viele Daten benötige ich für maschinelles Lernen?', answer: 'Es hängt von der Problemkomplexität ab. Einfache Modelle können mit Tausenden von Datensätzen arbeiten, während Deep Learning typischerweise Hunderttausende oder Millionen erfordert.' },
+          ],
+        },
+      },
+      {
+        serviceId: machineLearningService.id,
+        locale: 'ar',
+        name: 'التعلم الآلي',
+        shortDescription: 'نماذج تعلم آلي مخصصة تتعلم وتتحسن من بياناتك.',
+        fullDescription: 'استغل قوة التعلم الآلي لحل مشاكل الأعمال المعقدة. نطور نماذج تعلم آلي مخصصة يمكنها التنبؤ بالنتائج وتصنيف البيانات واكتشاف الشذوذ وأتمتة صنع القرار. من الخوارزميات التقليدية إلى الشبكات العصبية للتعلم العميق، نختار النهج الصحيح لحالة استخدامك المحددة.',
+        features: ['التعلم الخاضع للإشراف وغير الخاضع للإشراف', 'الشبكات العصبية للتعلم العميق', 'التنبؤ بالسلاسل الزمنية', 'نماذج التصنيف والانحدار', 'التجميع والتقسيم', 'هندسة واختيار الميزات', 'قابلية تفسير النموذج', 'MLOps وإدارة دورة حياة النموذج'],
+        benefits: ['أتمتة عمليات صنع القرار المعقدة', 'توقع النتائج المستقبلية بدقة عالية', 'اكتشاف الأنماط المخفية في مجموعات البيانات الكبيرة', 'توسيع نطاق الخبرة من خلال الأتمتة الذكية', 'التحسين المستمر مع المزيد من البيانات', 'تقليل التكاليف من خلال الصيانة التنبؤية'],
+        content: {
+          process: [
+            { step: 1, title: 'صياغة المشكلة', description: 'نترجم مشكلة عملك إلى مشكلة تعلم آلي ونحدد معايير نجاح قابلة للقياس.' },
+            { step: 2, title: 'إعداد البيانات', description: 'نجمع بياناتك وننظفها ونحولها، ونجري هندسة الميزات لتعظيم أداء النموذج.' },
+            { step: 3, title: 'اختيار النموذج والتدريب', description: 'نجرب خوارزميات وبنى متعددة للعثور على أفضل نموذج لحالة استخدامك.' },
+            { step: 4, title: 'التحقق والضبط', description: 'نتحقق بصرامة من أداء النموذج ونضبط المعلمات الفائقة لتحقيق نتائج مثلى.' },
+            { step: 5, title: 'النشر و MLOps', description: 'ننشر النماذج في الإنتاج مع خطوط أنابيب إعادة التدريب الآلية ومراقبة الأداء.' },
+          ],
+          faq: [
+            { question: 'كم من البيانات أحتاج للتعلم الآلي؟', answer: 'يعتمد على تعقيد المشكلة. قد تعمل النماذج البسيطة مع آلاف السجلات، بينما يتطلب التعلم العميق عادةً مئات الآلاف أو الملايين.' },
+          ],
+        },
+      },
+      {
+        serviceId: machineLearningService.id,
+        locale: 'ur',
+        name: 'مشین لرننگ',
+        shortDescription: 'کسٹم ML ماڈلز جو آپ کے ڈیٹا سے سیکھتے اور بہتر ہوتے ہیں۔',
+        fullDescription: 'پیچیدہ کاروباری مسائل حل کرنے کے لیے مشین لرننگ کی طاقت کا فائدہ اٹھائیں۔ ہم کسٹم ML ماڈلز تیار کرتے ہیں جو نتائج کی پیشن گوئی کر سکتے ہیں، ڈیٹا کی درجہ بندی کر سکتے ہیں، بے قاعدگیوں کا پتہ لگا سکتے ہیں، اور فیصلہ سازی کو خودکار بنا سکتے ہیں۔',
+        features: ['سپروائزڈ اور ان سپروائزڈ لرننگ', 'ڈیپ لرننگ نیورل نیٹ ورکس', 'ٹائم سیریز فورکاسٹنگ', 'کلاسیفیکیشن اور ریگریشن ماڈلز', 'کلسٹرنگ اور سیگمنٹیشن', 'فیچر انجینئرنگ اور سلیکشن', 'ماڈل وضاحت اور تشریح', 'MLOps اور ماڈل لائف سائیکل مینجمنٹ'],
+        benefits: ['پیچیدہ فیصلہ سازی کے عمل کو خودکار بنائیں', 'اعلیٰ درستگی کے ساتھ مستقبل کے نتائج کی پیشن گوئی کریں', 'بڑے ڈیٹا سیٹس میں چھپے ہوئے پیٹرنز دریافت کریں', 'ذہین آٹومیشن کے ذریعے مہارت کو بڑھائیں', 'مزید ڈیٹا کے ساتھ مسلسل بہتر بنائیں', 'پیشن گوئی کی دیکھ بھال کے ذریعے اخراجات کم کریں'],
+        content: {
+          process: [
+            { step: 1, title: 'مسئلے کی تشکیل', description: 'ہم آپ کے کاروباری مسئلے کو مشین لرننگ مسئلے میں ترجمہ کرتے ہیں اور قابل پیمائش کامیابی کے معیار کی وضاحت کرتے ہیں۔' },
+            { step: 2, title: 'ڈیٹا کی تیاری', description: 'ہم آپ کا ڈیٹا جمع کرتے، صاف کرتے اور تبدیل کرتے ہیں، ماڈل کی کارکردگی کو زیادہ سے زیادہ کرنے کے لیے فیچر انجینئرنگ کرتے ہیں۔' },
+            { step: 3, title: 'ماڈل سلیکشن اور ٹریننگ', description: 'ہم آپ کے استعمال کے معاملے کے لیے بہترین ماڈل تلاش کرنے کے لیے متعدد الگورتھمز اور فن تعمیر کے ساتھ تجربات کرتے ہیں۔' },
+            { step: 4, title: 'توثیق اور ٹیوننگ', description: 'ہم سختی سے ماڈل کی کارکردگی کی توثیق کرتے ہیں اور بہترین نتائج حاصل کرنے کے لیے ہائپر پیرامیٹرز کو فائن ٹیون کرتے ہیں۔' },
+            { step: 5, title: 'ڈپلائمنٹ اور MLOps', description: 'ہم خودکار ری ٹریننگ پائپ لائنز اور پرفارمنس مانیٹرنگ کے ساتھ ماڈلز کو پروڈکشن میں ڈپلائی کرتے ہیں۔' },
+          ],
+          faq: [
+            { question: 'مشین لرننگ کے لیے مجھے کتنے ڈیٹا کی ضرورت ہے؟', answer: 'یہ مسئلے کی پیچیدگی پر منحصر ہے۔ سادہ ماڈلز ہزاروں ریکارڈز کے ساتھ کام کر سکتے ہیں، جبکہ ڈیپ لرننگ کو عام طور پر لاکھوں یا کروڑوں کی ضرورت ہوتی ہے۔' },
+          ],
+        },
+      },
+    ];
+    for (const t of mlTranslations) { await prisma.serviceTranslation.upsert({ where: { serviceId_locale: { serviceId: t.serviceId, locale: t.locale } }, update: { name: t.name, shortDescription: t.shortDescription, fullDescription: t.fullDescription, features: t.features, benefits: t.benefits, content: t.content as any }, create: t as any }); }
+    console.log(`Seeded ${mlTranslations.length} translations for machine-learning`);
   }
 
   // React Native Development Translations
