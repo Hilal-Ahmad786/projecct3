@@ -48,6 +48,7 @@ export default async function ServiceProcessPage({ params }: PageProps) {
       serviceColor={service.color}
       steps={process}
       processLayout={animation?.processLayout}
+      animation={animation}
       locale={locale}
     />
   );

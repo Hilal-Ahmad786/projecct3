@@ -39,6 +39,7 @@ export default async function ServiceTechStackPage({ params }: PageProps) {
 
   const content = service.content as any || {};
   const technologies = content.technologies || [];
+  const animation = content.animation;
 
   return (
     <TechStackPageClient
@@ -46,6 +47,7 @@ export default async function ServiceTechStackPage({ params }: PageProps) {
       serviceSlug={slug}
       serviceColor={service.color}
       technologies={technologies}
+      animation={animation}
       locale={locale}
     />
   );

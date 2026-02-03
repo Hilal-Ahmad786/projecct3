@@ -47,6 +47,7 @@ export default async function ServiceFeaturesPage({ params }: PageProps) {
       serviceColor={service.color}
       features={features}
       featureStyle={animation?.featureStyle}
+      animation={animation}
       locale={locale}
     />
   );

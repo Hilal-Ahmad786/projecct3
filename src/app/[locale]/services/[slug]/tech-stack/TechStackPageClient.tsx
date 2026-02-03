@@ -1,10 +1,15 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import Link from 'next/link';
-import { ArrowRightIcon } from '@heroicons/react/24/outline';
-import { CpuChipIcon, ServerStackIcon, CloudIcon } from '@heroicons/react/24/solid';
-import ParticleNetwork from '@/components/ParticleNetwork';
+import { useRef } from 'react';
+import { ArrowRightIcon, CpuChipIcon } from '@heroicons/react/24/outline';
+import {
+  SubPageBgPattern,
+  FloatingDecorations,
+  SubPageHeroVisual,
+  type SubPageAnimation
+} from '@/components/services/subpage-animations';
 
 interface Technology {
   name: string;
@@ -16,381 +21,380 @@ interface TechStackPageClientProps {
   serviceSlug: string;
   serviceColor?: string;
   technologies: Technology[];
+  animation?: SubPageAnimation;
   locale: string;
 }
 
-const colorClasses: Record<string, { gradient: string; accent: string; light: string; dark: string }> = {
-  emerald: { gradient: 'from-emerald-500 to-teal-600', accent: 'text-emerald-600', light: 'bg-emerald-50', dark: 'bg-emerald-600' },
-  blue: { gradient: 'from-blue-500 to-indigo-600', accent: 'text-blue-600', light: 'bg-blue-50', dark: 'bg-blue-600' },
-  violet: { gradient: 'from-violet-500 to-purple-600', accent: 'text-violet-600', light: 'bg-violet-50', dark: 'bg-violet-600' },
-  amber: { gradient: 'from-amber-500 to-orange-600', accent: 'text-amber-600', light: 'bg-amber-50', dark: 'bg-amber-600' },
-  rose: { gradient: 'from-rose-500 to-pink-600', accent: 'text-rose-600', light: 'bg-rose-50', dark: 'bg-rose-600' },
-  gray: { gradient: 'from-gray-600 to-gray-800', accent: 'text-gray-700', light: 'bg-gray-50', dark: 'bg-gray-700' },
-};
-
-const techIconMap: Record<string, string> = {
-  react: '⚛️', nextjs: '▲', typescript: '🔷', javascript: '🟨', nodejs: '🟢',
-  python: '🐍', django: '🎸', flask: '🧪', postgresql: '🐘', mongodb: '🍃',
-  mysql: '🐬', redis: '🔴', docker: '🐳', kubernetes: '☸️', aws: '☁️',
-  gcp: '🌐', azure: '🔵', graphql: '◈', rest: '🔗', tailwind: '💨',
-  figma: '🎨', git: '🔀', github: '🐙', linux: '🐧', nginx: '🟩',
-  terraform: '🏗️', ansible: '🔧', jenkins: '🤖', default: '⚙️',
+// Tech icon mapping
+const techIcons: Record<string, string> = {
+  react: '⚛', nextjs: '▲', typescript: '◇', javascript: '◆', nodejs: '⬢',
+  python: '◈', django: '◇', postgresql: '◐', mongodb: '◑', redis: '◉',
+  docker: '◫', kubernetes: '⎈', aws: '◧', gcp: '◨', azure: '◩',
+  graphql: '◈', tailwind: '◇', figma: '◆', git: '◐', default: '○',
+  tensorflow: '◇', pytorch: '◈', openai: '◉', vue: '◆', angular: '◇',
+  flutter: '◈', swift: '◇', kotlin: '◆', rust: '◉', go: '◐',
 };
 
 function getTechIcon(iconName: string): string {
-  const normalizedName = iconName.toLowerCase().replace(/[^a-z]/g, '');
-  return techIconMap[normalizedName] || techIconMap.default;
-}
-
-// Categorize technologies
-function categorizeTech(technologies: Technology[]) {
-  const categories: Record<string, Technology[]> = {
-    'Frontend': [],
-    'Backend': [],
-    'Database': [],
-    'DevOps & Cloud': [],
-    'Other': [],
-  };
-
-  const frontendKeywords = ['react', 'vue', 'angular', 'next', 'nuxt', 'svelte', 'tailwind', 'css', 'html', 'javascript', 'typescript', 'figma'];
-  const backendKeywords = ['node', 'python', 'django', 'flask', 'express', 'fastapi', 'rails', 'laravel', 'php', 'java', 'spring', 'go', 'rust', 'graphql', 'rest', 'api'];
-  const databaseKeywords = ['postgres', 'mysql', 'mongo', 'redis', 'sqlite', 'elasticsearch', 'cassandra', 'dynamo'];
-  const devopsKeywords = ['docker', 'kubernetes', 'aws', 'azure', 'gcp', 'terraform', 'ansible', 'jenkins', 'github', 'gitlab', 'ci', 'cd', 'nginx', 'linux'];
-
-  technologies.forEach(tech => {
-    const name = tech.name.toLowerCase();
-    if (frontendKeywords.some(k => name.includes(k))) {
-      categories['Frontend'].push(tech);
-    } else if (backendKeywords.some(k => name.includes(k))) {
-      categories['Backend'].push(tech);
-    } else if (databaseKeywords.some(k => name.includes(k))) {
-      categories['Database'].push(tech);
-    } else if (devopsKeywords.some(k => name.includes(k))) {
-      categories['DevOps & Cloud'].push(tech);
-    } else {
-      categories['Other'].push(tech);
-    }
-  });
-
-  return Object.entries(categories).filter(([, techs]) => techs.length > 0);
+  const key = iconName.toLowerCase().replace(/[^a-z]/g, '');
+  return techIcons[key] || techIcons.default;
 }
 
 export default function TechStackPageClient({
   serviceName,
   serviceSlug,
-  serviceColor = 'emerald',
   technologies,
+  animation,
   locale
 }: TechStackPageClientProps) {
-  const colors = colorClasses[serviceColor] || colorClasses.emerald;
-  const categorizedTech = categorizeTech(technologies);
+  const gridRef = useRef<HTMLDivElement>(null);
+  const isInView = useInView(gridRef, { once: true, margin: '-100px' });
+
+  // Get animation config or use defaults for tech-stack page
+  const config = animation || {
+    heroVisual: 'circuit-board' as const,
+    bgPattern: 'hexagons' as const,
+    decorations: 'hexagons' as const,
+    motion: 'pulse' as const,
+    primaryColor: '#8B5CF6',
+    secondaryColor: '#06B6D4',
+  };
 
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 pt-20 pb-32">
-        {/* Background Elements */}
-        <div className="absolute inset-0 z-0">
-          <ParticleNetwork className="opacity-30" />
-        </div>
+      <section className="relative min-h-[80vh] pt-32 pb-24 overflow-hidden">
+        {/* Background Pattern */}
+        <SubPageBgPattern pattern={config.bgPattern} opacity={0.05} />
 
-        {/* Animated Code Lines */}
-        <div className="absolute inset-0 z-0 overflow-hidden">
-          {[...Array(10)].map((_, i) => (
-            <motion.div
-              key={i}
-              initial={{ x: '-100%', opacity: 0 }}
-              animate={{ x: '200%', opacity: [0, 1, 1, 0] }}
-              transition={{
-                duration: 8 + i * 0.5,
-                repeat: Infinity,
-                delay: i * 0.8,
-                ease: 'linear'
-              }}
-              className={`absolute h-px bg-gradient-to-r ${colors.gradient} opacity-30`}
-              style={{ top: `${10 + i * 8}%`, width: `${20 + Math.random() * 30}%` }}
+        {/* Floating Decorations */}
+        <FloatingDecorations type={config.decorations} accentColor={config.primaryColor} />
+
+        {/* Hero Visual */}
+        <div className="absolute right-[2%] top-1/2 -translate-y-1/2 hidden xl:block">
+          <motion.div
+            initial={{ opacity: 0, rotate: -10 }}
+            animate={{ opacity: 1, rotate: 0 }}
+            transition={{ duration: 1, ease: [0.4, 0, 0.2, 1] }}
+          >
+            <SubPageHeroVisual
+              type={config.heroVisual}
+              motionType={config.motion}
+              primaryColor={config.primaryColor}
+              secondaryColor={config.secondaryColor}
             />
-          ))}
+          </motion.div>
         </div>
 
-        {/* Floating Tech Icons */}
-        <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-          {['⚛️', '🐳', '☁️', '🐍', '🔷', '🟢'].map((emoji, i) => (
-            <motion.div
-              key={i}
-              animate={{
-                y: [0, -30, 0],
-                rotate: [0, 10, -10, 0],
-                opacity: [0.2, 0.4, 0.2],
-              }}
-              transition={{
-                duration: 5 + i,
-                repeat: Infinity,
-                delay: i * 0.5,
-              }}
-              className="absolute text-4xl"
-              style={{
-                left: `${15 + i * 15}%`,
-                top: `${20 + (i % 3) * 25}%`,
-              }}
-            >
-              {emoji}
-            </motion.div>
-          ))}
-        </div>
+        {/* Floating Tech Symbols */}
+        {['◇', '⬢', '◈'].map((symbol, i) => (
+          <motion.div
+            key={i}
+            animate={{
+              y: [0, -20, 0],
+              opacity: [0.2, 0.5, 0.2],
+              rotate: [0, 10, 0]
+            }}
+            transition={{
+              duration: 4 + i,
+              repeat: Infinity,
+              delay: i * 0.5
+            }}
+            className="absolute text-5xl hidden lg:block"
+            style={{
+              top: `${30 + i * 15}%`,
+              right: `${8 + i * 5}%`,
+              color: config.primaryColor + '40',
+            }}
+          >
+            {symbol}
+          </motion.div>
+        ))}
 
         <div className="container mx-auto px-4 relative z-10">
           {/* Breadcrumb */}
           <motion.nav
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="flex items-center gap-2 text-sm text-slate-400 mb-8"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            className="flex items-center gap-2 text-sm text-gray-400 mb-12"
           >
-            <Link href={`/${locale}/services`} className="hover:text-white transition-colors">Services</Link>
-            <span>/</span>
-            <Link href={`/${locale}/services/${serviceSlug}`} className="hover:text-white transition-colors">{serviceName}</Link>
-            <span>/</span>
-            <span className="text-white">Tech Stack</span>
+            <Link href={`/${locale}/services`} className="hover:text-gray-900 transition-colors">Services</Link>
+            <span className="text-gray-300">/</span>
+            <Link href={`/${locale}/services/${serviceSlug}`} className="hover:text-gray-900 transition-colors">{serviceName}</Link>
+            <span className="text-gray-300">/</span>
+            <span className="text-gray-900">Tech Stack</span>
           </motion.nav>
 
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              {/* Badge */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm mb-6"
-              >
-                <CpuChipIcon className="w-4 h-4 text-cyan-400" />
-                <span className="text-sm font-medium text-white">Technology Stack</span>
-              </motion.div>
-
-              {/* Title */}
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
-              >
-                Powered by
-                <br />
-                <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                  Modern Technology
-                </span>
-              </motion.h1>
-
-              {/* Description */}
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="text-xl text-slate-300 max-w-xl mb-8 leading-relaxed"
-              >
-                We use cutting-edge technologies and proven frameworks to build scalable, maintainable, and high-performance solutions for {serviceName.toLowerCase()}.
-              </motion.p>
-
-              {/* Stats */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="flex gap-8"
-              >
-                <div>
-                  <div className="text-3xl font-bold text-white">{technologies.length}+</div>
-                  <div className="text-sm text-slate-400">Technologies</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-white">Battle</div>
-                  <div className="text-sm text-slate-400">Tested</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-white">Scalable</div>
-                  <div className="text-sm text-slate-400">Architecture</div>
-                </div>
-              </motion.div>
-            </div>
-
-            {/* Tech Visual */}
+          <div className="max-w-3xl">
+            {/* Eyebrow */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="hidden lg:flex justify-center"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="flex items-center gap-3 mb-6"
             >
-              <div className="relative">
-                {/* Hexagonal Grid */}
-                <div className="grid grid-cols-4 gap-3">
-                  {technologies.slice(0, 12).map((tech, i) => (
-                    <motion.div
-                      key={i}
-                      initial={{ opacity: 0, scale: 0 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      transition={{ duration: 0.4, delay: 0.5 + i * 0.05 }}
-                      whileHover={{ scale: 1.1, zIndex: 10 }}
-                      className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center text-2xl hover:bg-white/20 transition-all cursor-default"
-                    >
-                      {getTechIcon(tech.icon)}
-                    </motion.div>
-                  ))}
-                </div>
-                {/* Glow Effect */}
-                <div className={`absolute inset-0 bg-gradient-to-r ${colors.gradient} rounded-3xl blur-3xl opacity-20 -z-10`} />
+              <motion.div
+                animate={{ rotate: [0, 360] }}
+                transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
+                className="w-10 h-10 rounded-lg flex items-center justify-center"
+                style={{ backgroundColor: config.primaryColor + '20' }}
+              >
+                <CpuChipIcon className="w-5 h-5" style={{ color: config.primaryColor }} />
+              </motion.div>
+              <span className="text-xs font-medium uppercase tracking-widest" style={{ color: config.primaryColor }}>
+                Technologies
+              </span>
+            </motion.div>
+
+            {/* Title */}
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="text-5xl md:text-6xl lg:text-7xl font-light text-gray-900 mb-8 leading-[1.1] tracking-tight"
+            >
+              Powered by
+              <br />
+              <span className="font-semibold" style={{ color: config.primaryColor }}>Modern Tech</span>
+            </motion.h1>
+
+            {/* Description */}
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-xl text-gray-500 max-w-2xl leading-relaxed mb-12"
+            >
+              We leverage proven, battle-tested technologies to build solutions that scale.
+              Each tool is chosen for performance, reliability, and long-term maintainability.
+            </motion.p>
+
+            {/* Stats */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="flex gap-16 border-t border-gray-100 pt-8"
+            >
+              <div>
+                <motion.div
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ type: 'spring', delay: 0.5 }}
+                  className="text-5xl font-light"
+                  style={{ color: config.primaryColor }}
+                >
+                  {technologies.length}+
+                </motion.div>
+                <div className="text-sm text-gray-400 mt-1">Technologies</div>
+              </div>
+              <div>
+                <div className="text-5xl font-light text-gray-900">Open</div>
+                <div className="text-sm text-gray-400 mt-1">Source First</div>
+              </div>
+              <div>
+                <div className="text-5xl font-light text-gray-900">∞</div>
+                <div className="text-sm text-gray-400 mt-1">Scalable</div>
               </div>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Technologies Grid Section */}
-      <section className="py-24 bg-white">
+      {/* Tech Grid Section */}
+      <section className="py-32 bg-gray-50" ref={gridRef}>
         <div className="container mx-auto px-4">
           {technologies.length === 0 ? (
-            <div className="text-center py-16">
-              <CpuChipIcon className="w-16 h-16 text-gray-300 mx-auto mb-4" />
-              <h2 className="text-2xl font-medium text-gray-900 mb-2">Tech Stack Coming Soon</h2>
-              <p className="text-gray-600">We're preparing detailed technology information for this service.</p>
+            <div className="text-center py-20">
+              <motion.div
+                animate={{ rotate: 360 }}
+                transition={{ duration: 10, repeat: Infinity, ease: 'linear' }}
+                className="w-20 h-20 border-2 flex items-center justify-center mx-auto mb-6"
+                style={{ borderColor: config.primaryColor }}
+              >
+                <span className="text-3xl" style={{ color: config.primaryColor }}>◇</span>
+              </motion.div>
+              <h2 className="text-2xl font-light text-gray-900 mb-2">Tech Stack Coming Soon</h2>
+              <p className="text-gray-500">We're preparing our technology documentation.</p>
             </div>
-          ) : categorizedTech.length > 1 ? (
-            /* Categorized View */
-            <div className="space-y-16">
-              {categorizedTech.map(([category, techs], catIndex) => (
+          ) : (
+            <>
+              {/* Section Header */}
+              <div className="max-w-2xl mx-auto text-center mb-16">
                 <motion.div
-                  key={category}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: catIndex * 0.1 }}
+                  className="flex items-center justify-center gap-3 mb-6"
                 >
-                  <h2 className="text-2xl font-bold text-gray-900 mb-8 flex items-center gap-3">
-                    {category === 'Frontend' && <span className="text-2xl">🎨</span>}
-                    {category === 'Backend' && <ServerStackIcon className="w-6 h-6 text-gray-600" />}
-                    {category === 'Database' && <span className="text-2xl">🗄️</span>}
-                    {category === 'DevOps & Cloud' && <CloudIcon className="w-6 h-6 text-gray-600" />}
-                    {category === 'Other' && <span className="text-2xl">🔧</span>}
-                    {category}
-                  </h2>
-                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-                    {techs.map((tech, index) => (
-                      <motion.div
-                        key={index}
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.3, delay: index * 0.03 }}
-                        whileHover={{ y: -5, scale: 1.02 }}
-                        className="bg-white rounded-xl p-5 border border-gray-100 hover:border-gray-200 hover:shadow-lg transition-all duration-300 group text-center"
-                      >
-                        <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">
-                          {getTechIcon(tech.icon)}
-                        </div>
-                        <h3 className="text-sm font-medium text-gray-900">{tech.name}</h3>
-                      </motion.div>
-                    ))}
-                  </div>
+                  <div className="w-8 h-px bg-gray-300" />
+                  <span className="text-xs font-medium text-gray-500 uppercase tracking-widest">
+                    Our Stack
+                  </span>
+                  <div className="w-8 h-px bg-gray-300" />
                 </motion.div>
-              ))}
-            </div>
-          ) : (
-            /* Simple Grid View */
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
-              {technologies.map((tech, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: index * 0.05 }}
-                  whileHover={{ y: -5, scale: 1.02 }}
-                  className="bg-white rounded-xl p-6 border border-gray-100 hover:border-gray-300 hover:shadow-xl transition-all duration-300 group text-center"
-                >
-                  <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                    {getTechIcon(tech.icon)}
-                  </div>
-                  <h3 className="text-lg font-medium text-gray-900">{tech.name}</h3>
-                </motion.div>
-              ))}
-            </div>
+              </div>
+
+              {/* Staggered Grid Animation */}
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-1 bg-gray-200 max-w-5xl mx-auto">
+                {technologies.map((tech, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, scale: 0.5, rotate: -10 }}
+                    animate={isInView ? { opacity: 1, scale: 1, rotate: 0 } : {}}
+                    transition={{
+                      duration: 0.5,
+                      delay: index * 0.05,
+                      ease: [0.4, 0, 0.2, 1]
+                    }}
+                    whileHover={{ scale: 1.05 }}
+                    className="bg-white p-8 text-center group cursor-default relative overflow-hidden"
+                  >
+                    {/* Hover Background */}
+                    <motion.div
+                      initial={{ opacity: 0 }}
+                      whileHover={{ opacity: 0.05 }}
+                      className="absolute inset-0"
+                      style={{ backgroundColor: config.primaryColor }}
+                    />
+
+                    <motion.div
+                      className="text-4xl mb-3 transition-all duration-300 group-hover:scale-110"
+                      style={{ color: config.primaryColor + '80' }}
+                      whileHover={{ scale: 1.2, rotate: 5, color: config.primaryColor }}
+                      transition={{ type: 'spring', stiffness: 300 }}
+                    >
+                      {getTechIcon(tech.icon)}
+                    </motion.div>
+                    <div className="text-sm font-medium text-gray-700 group-hover:text-gray-900 transition-colors relative z-10">
+                      {tech.name}
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </>
           )}
         </div>
       </section>
 
-      {/* Why These Technologies Section */}
-      <section className="py-24 bg-slate-50">
+      {/* Why These Technologies */}
+      <section className="py-32 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
-              <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">
-                Why We Choose <span className="font-semibold">These Technologies</span>
-              </h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">
-                Our technology choices are driven by performance, reliability, and long-term maintainability.
-              </p>
-            </motion.div>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              {[
-                { icon: '🚀', title: 'Performance', desc: 'Optimized for speed and efficiency to deliver the best user experience.' },
-                { icon: '🔄', title: 'Scalability', desc: 'Built to grow with your business, from startup to enterprise scale.' },
-                { icon: '🛡️', title: 'Security', desc: 'Industry-standard security practices and regular updates.' },
-                { icon: '📚', title: 'Community', desc: 'Strong community support and extensive documentation.' },
-                { icon: '🔧', title: 'Maintainability', desc: 'Clean code practices for easy updates and long-term maintenance.' },
-                { icon: '💰', title: 'Cost-Effective', desc: 'Balanced cost and value for sustainable technology investments.' },
-              ].map((item, i) => (
+          <div className="max-w-5xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-20 items-center">
+              <div>
                 <motion.div
-                  key={i}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
-                  className="text-center p-6 bg-white rounded-2xl border border-gray-100"
+                  className="flex items-center gap-3 mb-6"
                 >
-                  <div className="text-4xl mb-4">{item.icon}</div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.title}</h3>
-                  <p className="text-gray-500 text-sm">{item.desc}</p>
+                  <div className="w-8 h-px bg-gray-900" />
+                  <span className="text-xs font-medium text-gray-500 uppercase tracking-widest">
+                    Philosophy
+                  </span>
                 </motion.div>
-              ))}
+
+                <motion.h2
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.1 }}
+                  className="text-4xl font-light text-gray-900 mb-6"
+                >
+                  Technology choices
+                  <br />
+                  <span className="font-semibold" style={{ color: config.primaryColor }}>that matter</span>
+                </motion.h2>
+
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.2 }}
+                  className="text-gray-500 leading-relaxed"
+                >
+                  We don't chase trends. Every technology in our stack is proven, well-documented,
+                  and chosen for long-term viability. Your project deserves tools that will last.
+                </motion.p>
+              </div>
+
+              <div className="grid grid-cols-2 gap-8">
+                {[
+                  { symbol: '◇', label: 'Performance', desc: 'Optimized for speed' },
+                  { symbol: '⬢', label: 'Scalability', desc: 'Grows with you' },
+                  { symbol: '◈', label: 'Security', desc: 'Built-in protection' },
+                  { symbol: '○', label: 'Community', desc: 'Strong ecosystem' },
+                ].map((item, i) => (
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.15 }}
+                    whileHover={{ y: -5 }}
+                    className="text-center group"
+                  >
+                    <motion.div
+                      animate={{ scale: [1, 1.1, 1] }}
+                      transition={{ duration: 3, repeat: Infinity, delay: i * 0.5 }}
+                      className="text-3xl mb-3 transition-colors"
+                      style={{ color: config.primaryColor + '60' }}
+                    >
+                      {item.symbol}
+                    </motion.div>
+                    <h3 className="font-medium text-gray-900 mb-1 group-hover:translate-y-[-2px] transition-transform">
+                      {item.label}
+                    </h3>
+                    <p className="text-sm text-gray-500">{item.desc}</p>
+                  </motion.div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-br from-slate-900 to-slate-800">
-        <div className="container mx-auto px-4">
+      <section className="py-24 bg-gray-900 relative overflow-hidden">
+        {/* Animated hexagon */}
+        <motion.svg
+          animate={{ rotate: 360 }}
+          transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
+          className="absolute -right-20 top-1/2 -translate-y-1/2 w-80 h-80 opacity-10"
+          viewBox="0 0 200 200"
+        >
+          <polygon points="100,10 190,50 190,150 100,190 10,150 10,50" fill="none" stroke="white" strokeWidth="1" />
+        </motion.svg>
+
+        <div className="container mx-auto px-4 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="max-w-4xl mx-auto text-center"
+            className="max-w-3xl mx-auto text-center"
           >
-            <CpuChipIcon className="w-16 h-16 text-cyan-400 mx-auto mb-6" />
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Ready to Build Something Amazing?
+            <h2 className="text-3xl md:text-4xl font-light text-white mb-6">
+              Ready to build with modern tech?
             </h2>
-            <p className="text-slate-300 text-lg mb-8 max-w-xl mx-auto">
-              Let's leverage these technologies to create a powerful solution for your business.
+            <p className="text-gray-400 mb-10 max-w-xl mx-auto">
+              Let's leverage these technologies for your project.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href={`/${locale}/contact`}
-                className={`inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r ${colors.gradient} text-white rounded-xl font-semibold hover:opacity-90 transition-opacity`}
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 text-gray-900 font-medium transition-all hover:scale-105"
+                style={{ backgroundColor: config.primaryColor }}
               >
                 Start Your Project
-                <ArrowRightIcon className="w-5 h-5" />
+                <ArrowRightIcon className="w-4 h-4" />
               </Link>
               <Link
                 href={`/${locale}/services/${serviceSlug}/portfolio`}
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 text-white rounded-xl font-semibold hover:bg-white/20 transition-colors border border-white/20"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-gray-700 text-white font-medium hover:bg-white/5 transition-colors"
               >
-                View Our Portfolio
+                View Portfolio
               </Link>
             </div>
           </motion.div>
