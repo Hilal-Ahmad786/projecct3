@@ -228,7 +228,7 @@ export default function ServiceDetailClient({ service }: { service: ServiceDetai
     <>
       {/* ── Breadcrumb for child services ─────────────────────────── */}
       {parentService && (
-        <div className="bg-gray-50 border-b border-gray-100">
+        <div className="bg-gray-50 border-b border-gray-100 pt-20 lg:pt-24">
           <div className="container mx-auto px-4 py-3">
             <nav className="flex items-center gap-2 text-sm text-gray-500">
               <Link href="/services" className="hover:text-gray-900 transition-colors">
@@ -246,7 +246,7 @@ export default function ServiceDetailClient({ service }: { service: ServiceDetai
       )}
 
       {/* ── 1. Hero (two-column, animated) ──────────────────────────── */}
-      <HeroSection service={service} colors={colors} accent={accent} process={process} animation={animation} />
+      <HeroSection service={service} colors={colors} accent={accent} process={process} animation={animation} hasBreadcrumb={!!parentService} />
 
       {/* ── 2. Tech Strip (scrolling) ───────────────────────────────── */}
       {technologies.length > 0 && <TechStrip technologies={technologies} />}
@@ -303,18 +303,20 @@ function HeroSection({
   accent,
   process,
   animation,
+  hasBreadcrumb = false,
 }: {
   service: ServiceDetailData;
   colors: typeof accentColors[AccentColor];
   accent: AccentColor;
   process: ProcessStep[];
   animation?: ServiceAnimation;
+  hasBreadcrumb?: boolean;
 }) {
   const emojiIcon = iconMap[service.icon || ''] || '🔧';
   const hasAnimation = !!animation;
 
   return (
-    <section className="relative overflow-hidden bg-white pt-24 pb-20 lg:pt-32 lg:pb-28">
+    <section className={`relative overflow-hidden bg-white pb-20 lg:pb-28 ${hasBreadcrumb ? 'pt-12 lg:pt-16' : 'pt-24 lg:pt-32'}`}>
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <ParticleNetwork className="opacity-40" />
