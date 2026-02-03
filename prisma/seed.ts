@@ -479,6 +479,29 @@ async function main() {
           { question: 'Which channels can the chatbot work on?', answer: 'We deploy chatbots across web, mobile apps, Facebook Messenger, WhatsApp, Slack, Microsoft Teams, SMS, and voice assistants like Alexa. Multi-channel deployment uses a single conversation logic.' },
           { question: 'How do you train the bot on our specific domain?', answer: 'We train on your existing data: FAQs, support tickets, product documentation, and conversation logs. We also create synthetic training data and fine-tune models on your specific terminology and use cases.' },
         ],
+        animation: {
+          heroVisual: 'chat-bubbles',
+          bgPattern: 'dots',
+          decorations: 'circles',
+          motion: 'float',
+          featureStyle: 'icon-left',
+          processLayout: 'cards',
+          particleCount: 40,
+          glowIntensity: 'medium',
+          colorScheme: 'secondary',
+          animationSpeed: 'normal',
+          bubbleCount: 5,
+          typingIndicator: true,
+          messageFlow: 'alternating',
+          avatarPulse: true,
+          sentimentColors: true,
+          replyAnimation: 'slide-up',
+          primaryColor: '#06B6D4',
+          secondaryColor: '#8B5CF6',
+          accentColor: '#10B981',
+          bubbleStyle: 'rounded',
+          conversationDepth: 4,
+        },
       },
       status: 'published',
       featured: false,
@@ -520,6 +543,29 @@ async function main() {
           { question: 'What about API versioning?', answer: 'We implement versioning strategies (URL path, headers, or query params) that allow API evolution without breaking existing consumers. We plan for backward compatibility from the start.' },
           { question: 'Do you provide API documentation?', answer: 'Yes, comprehensive documentation is essential. We use OpenAPI/Swagger for REST APIs and generate interactive documentation with code examples in multiple languages.' },
         ],
+        animation: {
+          heroVisual: 'data-flow',
+          bgPattern: 'grid',
+          decorations: 'lines',
+          motion: 'cascade',
+          featureStyle: 'bordered',
+          processLayout: 'steps-horizontal',
+          particleCount: 50,
+          glowIntensity: 'subtle',
+          colorScheme: 'gradient',
+          animationSpeed: 'fast',
+          endpointNodes: 6,
+          requestFlowAnimation: true,
+          jsonHighlight: true,
+          httpMethods: ['GET', 'POST', 'PUT', 'DELETE'],
+          responseStatusCodes: [200, 201, 404],
+          connectionPaths: true,
+          primaryColor: '#F59E0B',
+          secondaryColor: '#3B82F6',
+          accentColor: '#10B981',
+          flowDirection: 'horizontal',
+          packetVisualization: true,
+        },
       },
       status: 'published',
       featured: false,
@@ -561,6 +607,30 @@ async function main() {
           { question: 'What deliverables will we receive?', answer: 'Deliverables typically include user personas, user flows, wireframes, high-fidelity mockups, interactive prototypes, design systems, and developer handoff documentation.' },
           { question: 'How do you ensure designs are accessible?', answer: 'We follow WCAG guidelines and design for accessibility from the start. This includes proper color contrast, keyboard navigation, screen reader support, and clear visual hierarchy.' },
         ],
+        animation: {
+          heroVisual: 'palette-canvas',
+          bgPattern: 'waves',
+          decorations: 'mixed',
+          motion: 'morph',
+          featureStyle: 'gradient-border',
+          processLayout: 'zigzag',
+          particleCount: 35,
+          glowIntensity: 'medium',
+          colorScheme: 'accent',
+          animationSpeed: 'slow',
+          colorSwatches: ['#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FFEAA7'],
+          brushStrokes: true,
+          wireframeOverlay: true,
+          prototypeFrames: 3,
+          cursorTrail: true,
+          layerStack: true,
+          gridSnap: true,
+          primaryColor: '#EC4899',
+          secondaryColor: '#8B5CF6',
+          accentColor: '#F59E0B',
+          canvasRotation: 5,
+          designToolIcons: ['figma', 'sketch', 'pen', 'shapes'],
+        },
       },
       status: 'published',
       featured: false,
@@ -601,6 +671,29 @@ async function main() {
           { question: 'What is the difference between on-page and off-page SEO?', answer: 'On-page SEO optimizes elements on your website (content, meta tags, structure). Off-page SEO builds authority through external signals like backlinks and brand mentions.' },
           { question: 'Do you handle local SEO?', answer: 'Yes, we optimize Google Business profiles, build local citations, manage reviews, and target location-based keywords for businesses serving specific areas.' },
         ],
+        animation: {
+          heroVisual: 'target-bullseye',
+          bgPattern: 'diagonal-lines',
+          decorations: 'triangles',
+          motion: 'pulse',
+          featureStyle: 'numbered',
+          processLayout: 'timeline',
+          particleCount: 45,
+          glowIntensity: 'medium',
+          colorScheme: 'primary',
+          animationSpeed: 'normal',
+          rankingBars: true,
+          searchResults: 3,
+          keywordCloud: true,
+          graphUpward: true,
+          serpSimulation: true,
+          linkNetwork: true,
+          primaryColor: '#22C55E',
+          secondaryColor: '#3B82F6',
+          accentColor: '#F59E0B',
+          targetRings: 4,
+          pulseRate: 1.5,
+        },
       },
       status: 'published',
       featured: false,
@@ -639,6 +732,29 @@ async function main() {
           { question: 'What is a good ROAS?', answer: 'A healthy ROAS varies by industry, typically 3:1 to 8:1. We set ROAS targets based on your margins and continuously optimize to exceed them.' },
           { question: 'Do you manage Google Shopping campaigns?', answer: 'Yes, we manage Shopping and Performance Max campaigns including product feed optimization, bid management, and audience segmentation.' },
         ],
+        animation: {
+          heroVisual: 'dashboard',
+          bgPattern: 'grid',
+          decorations: 'squares',
+          motion: 'wave',
+          featureStyle: 'icon-top',
+          processLayout: 'cards',
+          particleCount: 55,
+          glowIntensity: 'strong',
+          colorScheme: 'gradient',
+          animationSpeed: 'fast',
+          clickAnimation: true,
+          roasCounter: true,
+          bidAdjustment: true,
+          campaignCards: 3,
+          conversionSparkles: true,
+          adPreview: true,
+          primaryColor: '#4285F4',
+          secondaryColor: '#34A853',
+          accentColor: '#FBBC04',
+          googleColors: true,
+          metricsDisplay: ['CPC', 'CTR', 'ROAS'],
+        },
       },
       status: 'published',
       featured: false,
@@ -677,6 +793,29 @@ async function main() {
           { question: 'What ad formats work best?', answer: 'Video ads and carousel formats typically outperform static images. We test multiple formats including Reels, Stories, and collection ads to find what resonates with your audience.' },
           { question: 'How much budget do I need?', answer: 'We recommend a minimum of $1,500/month to generate meaningful data. Higher budgets allow faster optimization and scaling of winning campaigns.' },
         ],
+        animation: {
+          heroVisual: 'megaphone-3d',
+          bgPattern: 'circles',
+          decorations: 'dots',
+          motion: 'float',
+          featureStyle: 'gradient-border',
+          processLayout: 'steps-horizontal',
+          particleCount: 50,
+          glowIntensity: 'medium',
+          colorScheme: 'accent',
+          animationSpeed: 'normal',
+          socialIcons: ['facebook', 'instagram', 'messenger'],
+          likesAnimation: true,
+          shareWaves: true,
+          audienceTargeting: true,
+          carouselPreview: true,
+          engagementMetrics: true,
+          primaryColor: '#1877F2',
+          secondaryColor: '#E4405F',
+          accentColor: '#833AB4',
+          gradientMeta: true,
+          reachVisualization: true,
+        },
       },
       status: 'published',
       featured: false,
@@ -715,6 +854,29 @@ async function main() {
           { question: 'Do you create the content?', answer: 'Yes, we handle everything from strategy to creation—graphics, captions, hashtags, and video content tailored for each platform.' },
           { question: 'How do you measure social media ROI?', answer: 'We track engagement rate, follower growth, website traffic from social, lead generation, and conversion attribution to demonstrate clear business impact.' },
         ],
+        animation: {
+          heroVisual: 'network-nodes',
+          bgPattern: 'circles',
+          decorations: 'mixed',
+          motion: 'float',
+          featureStyle: 'icon-top',
+          processLayout: 'cards',
+          particleCount: 65,
+          glowIntensity: 'medium',
+          colorScheme: 'gradient',
+          animationSpeed: 'normal',
+          socialIcons: ['instagram', 'linkedin', 'tiktok', 'twitter', 'youtube'],
+          networkConnections: true,
+          followerGrowth: true,
+          engagementPulse: true,
+          hashtagFloats: true,
+          communityBubbles: true,
+          primaryColor: '#E4405F',
+          secondaryColor: '#0A66C2',
+          accentColor: '#00F2EA',
+          connectionLines: true,
+          viralSpread: true,
+        },
       },
       status: 'published',
       featured: false,
@@ -753,6 +915,30 @@ async function main() {
           { question: 'What email automations should I have?', answer: 'Essential automations include welcome series, abandoned cart, post-purchase, win-back, and re-engagement flows. We build custom flows based on your customer journey.' },
           { question: 'How often should I send emails?', answer: 'Frequency depends on your audience and content. Most brands do well with 2-4 emails per week. We monitor engagement metrics to find the optimal frequency.' },
         ],
+        animation: {
+          heroVisual: 'workflow-diagram',
+          bgPattern: 'diagonal-lines',
+          decorations: 'squares',
+          motion: 'cascade',
+          featureStyle: 'bordered',
+          processLayout: 'zigzag',
+          particleCount: 45,
+          glowIntensity: 'subtle',
+          colorScheme: 'primary',
+          animationSpeed: 'normal',
+          envelopeIcons: true,
+          automationFlow: true,
+          openRateGauge: true,
+          clickRateVisual: true,
+          segmentationBubbles: true,
+          deliveryAnimation: true,
+          primaryColor: '#6366F1',
+          secondaryColor: '#06B6D4',
+          accentColor: '#10B981',
+          inboxPreview: true,
+          abTestSplit: true,
+          conversionFunnel: true,
+        },
       },
       status: 'published',
       featured: false,
@@ -791,6 +977,30 @@ async function main() {
           { question: 'How does content marketing support SEO?', answer: 'Quality content targets specific keywords, earns backlinks, increases dwell time, and establishes topical authority—all critical ranking factors for search engines.' },
           { question: 'How do you measure content performance?', answer: 'We track organic traffic, rankings, engagement metrics, lead generation, social shares, and conversion attribution to measure content ROI.' },
         ],
+        animation: {
+          heroVisual: 'lightbulb',
+          bgPattern: 'waves',
+          decorations: 'circles',
+          motion: 'morph',
+          featureStyle: 'gradient-border',
+          processLayout: 'timeline',
+          particleCount: 40,
+          glowIntensity: 'medium',
+          colorScheme: 'accent',
+          animationSpeed: 'slow',
+          documentIcons: true,
+          penWriting: true,
+          ideaSparkles: true,
+          contentTypes: ['blog', 'video', 'infographic', 'whitepaper', 'ebook'],
+          keywordCloud: true,
+          trafficGrowth: true,
+          primaryColor: '#F59E0B',
+          secondaryColor: '#8B5CF6',
+          accentColor: '#EC4899',
+          authorityBuilding: true,
+          contentCalendar: true,
+          repurposingFlow: true,
+        },
       },
       status: 'published',
       featured: false,
@@ -6047,6 +6257,836 @@ async function main() {
     ];
     for (const t of mlTranslations) { await prisma.serviceTranslation.upsert({ where: { serviceId_locale: { serviceId: t.serviceId, locale: t.locale } }, update: { name: t.name, shortDescription: t.shortDescription, fullDescription: t.fullDescription, features: t.features, benefits: t.benefits, content: t.content as any }, create: t as any }); }
     console.log(`Seeded ${mlTranslations.length} translations for machine-learning`);
+  }
+
+  // ==================== BATCH 3: Conversational AI, API Development, UI/UX Design ====================
+
+  // Conversational AI Translations
+  const conversationalAiService = await prisma.service.findUnique({ where: { slug: 'conversational-ai' } });
+  if (conversationalAiService) {
+    const conversationalAiTranslations = [
+      {
+        serviceId: conversationalAiService.id,
+        locale: 'tr',
+        name: 'Konuşmacı AI',
+        shortDescription: 'Akıllı chatbotlar ve sanal asistanlar oluşturun.',
+        fullDescription: 'Müşteri etkileşimlerini AI destekli konuşma arayüzleriyle dönüştürün. Doğal dili anlayan, karmaşık sorguları ele alan ve kişiselleştirilmiş deneyimler sunan akıllı chatbotlar ve sanal asistanlar oluşturuyoruz. Müşteri destek otomasyonundan satış yardımına kadar, konuşmacı AI çözümlerimiz 7/24 çalışır ve zahmetsizce ölçeklenir.',
+        features: ['Özel Chatbot Geliştirme', 'Doğal Dil Anlama (NLU)', 'Çok Kanallı Dağıtım', 'Duygu Analizi', 'Niyet Tanıma & Varlık Çıkarma', 'İnsan Devir Teslim Entegrasyonu', 'Çok Dilli Destek', 'Analitik & Konuşma İçgörüleri'],
+        benefits: ['7/24 anında müşteri desteği sağlayın', 'Destek maliyetlerini %40-60 azaltın', 'Sınırsız eşzamanlı görüşme yönetin', 'Hızlı yanıtlarla müşteri memnuniyetini artırın', 'İnsan temsilcileri karmaşık sorunlara ayırın', 'Değerli müşteri içgörüleri toplayın'],
+        content: {
+          process: [
+            { step: 1, title: 'Kullanım Durumu Tanımı', description: 'Otomatikleştirmek istediğiniz konuşmaları belirliyoruz ve kapsamı, personaları ve başarı metriklerini tanımlıyoruz.' },
+            { step: 2, title: 'Konuşma Tasarımı', description: 'Konuşma akışlarını, diyalog senaryolarını tasarlıyor ve niyetleri, varlıkları ve yedek davranışları tanımlıyoruz.' },
+            { step: 3, title: 'AI Model Eğitimi', description: 'Kullanıcı mesajlarının doğru anlaşılmasını sağlamak için NLU modellerini verileriniz ve alan terminolojiniz üzerinde eğitiyoruz.' },
+            { step: 4, title: 'Entegrasyon & Geliştirme', description: 'Chatbotu oluşturuyor, sistemlerinizle (CRM, veritabanları, API\'ler) entegre ediyor ve kanallarınıza dağıtıyoruz.' },
+            { step: 5, title: 'Test & İyileştirme', description: 'Kapsamlı test yapıyor, izleme ile başlatıyor ve konuşma analitiğine dayalı sürekli iyileştiriyoruz.' },
+          ],
+          faq: [
+            { question: 'Bu chatbotlar ne kadar akıllı?', answer: 'Modern konuşmacı AI bağlamı anlayabilir, çok turlu konuşmaları yönetebilir, niyet varyasyonlarını tanıyabilir ve ilgili yanıtlar verebilir. GPT entegrasyonu ile insan benzeri yaratıcı yanıtlar bile üretebilirler.' },
+            { question: 'Bot cevap veremediğinde ne olur?', answer: 'Gerektiğinde insan temsilcilere akıllı devir teslim uyguluyoruz. Bot karmaşık sorguları veya sinirli kullanıcıları tanır ve konuşmayı tam bağlamla ekibinize sorunsuz aktarır.' },
+          ],
+        },
+      },
+      {
+        serviceId: conversationalAiService.id,
+        locale: 'de',
+        name: 'Konversationale KI',
+        shortDescription: 'Intelligente Chatbots und virtuelle Assistenten erstellen.',
+        fullDescription: 'Transformieren Sie Kundeninteraktionen mit KI-gestützten Konversationsschnittstellen. Wir bauen intelligente Chatbots und virtuelle Assistenten, die natürliche Sprache verstehen, komplexe Anfragen bearbeiten und personalisierte Erlebnisse bieten.',
+        features: ['Individuelle Chatbot-Entwicklung', 'Natural Language Understanding (NLU)', 'Multi-Channel-Bereitstellung', 'Sentiment-Analyse', 'Intent-Erkennung & Entity-Extraktion', 'Human-Handoff-Integration', 'Mehrsprachige Unterstützung', 'Analytics & Conversation Insights'],
+        benefits: ['24/7 sofortigen Kundensupport bieten', 'Supportkosten um 40-60% senken', 'Unbegrenzte gleichzeitige Gespräche führen', 'Kundenzufriedenheit durch schnelle Antworten verbessern', 'Menschliche Agenten für komplexe Probleme freisetzen', 'Wertvolle Kundeneinblicke sammeln'],
+        content: {
+          process: [
+            { step: 1, title: 'Use-Case-Definition', description: 'Wir identifizieren die zu automatisierenden Gespräche und definieren Umfang, Personas und Erfolgsmetriken.' },
+            { step: 2, title: 'Conversation Design', description: 'Wir entwerfen Gesprächsabläufe, schreiben Dialogskripte und definieren Intents, Entities und Fallback-Verhalten.' },
+            { step: 3, title: 'KI-Model-Training', description: 'Wir trainieren NLU-Modelle auf Ihren Daten und Fachvokabular für genaues Verständnis.' },
+            { step: 4, title: 'Integration & Entwicklung', description: 'Wir bauen den Chatbot, integrieren mit Ihren Systemen und stellen auf Ihren Kanälen bereit.' },
+            { step: 5, title: 'Test & Verbesserung', description: 'Wir testen ausführlich, starten mit Monitoring und verbessern kontinuierlich basierend auf Analytics.' },
+          ],
+          faq: [
+            { question: 'Wie intelligent sind diese Chatbots?', answer: 'Moderne konversationale KI kann Kontext verstehen, mehrstufige Gespräche führen, Intent-Variationen erkennen und relevante Antworten geben.' },
+          ],
+        },
+      },
+      {
+        serviceId: conversationalAiService.id,
+        locale: 'ar',
+        name: 'الذكاء الاصطناعي للمحادثات',
+        shortDescription: 'بناء روبوتات دردشة ومساعدين افتراضيين أذكياء.',
+        fullDescription: 'حول تفاعلات العملاء مع واجهات المحادثة المدعومة بالذكاء الاصطناعي. نبني روبوتات دردشة ومساعدين افتراضيين أذكياء يفهمون اللغة الطبيعية ويتعاملون مع الاستفسارات المعقدة ويقدمون تجارب مخصصة.',
+        features: ['تطوير روبوت دردشة مخصص', 'فهم اللغة الطبيعية (NLU)', 'نشر متعدد القنوات', 'تحليل المشاعر', 'التعرف على النية واستخراج الكيانات', 'تكامل التسليم البشري', 'دعم متعدد اللغات', 'التحليلات ورؤى المحادثة'],
+        benefits: ['توفير دعم عملاء فوري على مدار الساعة', 'تقليل تكاليف الدعم بنسبة 40-60%', 'التعامل مع محادثات متزامنة غير محدودة', 'تحسين رضا العملاء بالردود السريعة', 'تحرير الوكلاء البشريين للمشاكل المعقدة', 'جمع رؤى قيمة عن العملاء'],
+        content: {
+          process: [
+            { step: 1, title: 'تعريف حالة الاستخدام', description: 'نحدد المحادثات التي تريد أتمتتها ونعرف النطاق والشخصيات ومقاييس النجاح.' },
+            { step: 2, title: 'تصميم المحادثة', description: 'نصمم تدفقات المحادثة ونكتب نصوص الحوار ونحدد النوايا والكيانات والسلوكيات الاحتياطية.' },
+            { step: 3, title: 'تدريب نموذج الذكاء الاصطناعي', description: 'ندرب نماذج NLU على بياناتك ومفردات مجالك لضمان فهم دقيق لرسائل المستخدمين.' },
+            { step: 4, title: 'التكامل والتطوير', description: 'نبني روبوت الدردشة وندمجه مع أنظمتك وننشره على قنواتك.' },
+            { step: 5, title: 'الاختبار والتحسين', description: 'نختبر بشكل مكثف ونطلق مع المراقبة ونحسن باستمرار بناءً على تحليلات المحادثة.' },
+          ],
+          faq: [
+            { question: 'ما مدى ذكاء هذه الروبوتات؟', answer: 'يمكن للذكاء الاصطناعي للمحادثات الحديث فهم السياق والتعامل مع المحادثات متعددة الأدوار والتعرف على تنويعات النية وتقديم ردود ذات صلة.' },
+          ],
+        },
+      },
+      {
+        serviceId: conversationalAiService.id,
+        locale: 'ur',
+        name: 'کنورسیشنل AI',
+        shortDescription: 'ذہین چیٹ بوٹس اور ورچوئل اسسٹنٹس بنائیں۔',
+        fullDescription: 'AI سے چلنے والے کنورسیشنل انٹرفیسز کے ساتھ صارفین کے تعاملات کو تبدیل کریں۔ ہم ذہین چیٹ بوٹس اور ورچوئل اسسٹنٹس بناتے ہیں جو قدرتی زبان سمجھتے ہیں، پیچیدہ سوالات کو سنبھالتے ہیں، اور ذاتی نوعیت کے تجربات فراہم کرتے ہیں۔',
+        features: ['کسٹم چیٹ بوٹ ڈیولپمنٹ', 'نیچرل لینگویج انڈرسٹینڈنگ (NLU)', 'ملٹی چینل ڈپلائمنٹ', 'سینٹیمنٹ اینالیسس', 'انٹینٹ ریکگنیشن اور اینٹٹی ایکسٹریکشن', 'ہیومن ہینڈ آف انٹیگریشن', 'ملٹی لنگول سپورٹ', 'اینالیٹکس اور کنورسیشن انسائٹس'],
+        benefits: ['24/7 فوری کسٹمر سپورٹ فراہم کریں', 'سپورٹ کے اخراجات 40-60% کم کریں', 'لامحدود بیک وقت بات چیت سنبھالیں', 'تیز جوابات کے ساتھ صارف کی اطمینان میں بہتری لائیں', 'انسانی ایجنٹس کو پیچیدہ مسائل کے لیے آزاد کریں', 'قیمتی صارف کی بصیرت جمع کریں'],
+        content: {
+          process: [
+            { step: 1, title: 'یوز کیس کی تعریف', description: 'ہم شناخت کرتے ہیں کہ آپ کون سی بات چیت خودکار کرنا چاہتے ہیں اور دائرہ کار، پرسناز اور کامیابی کے میٹرکس کی وضاحت کرتے ہیں۔' },
+            { step: 2, title: 'کنورسیشن ڈیزائن', description: 'ہم کنورسیشن فلوز ڈیزائن کرتے ہیں، ڈائیلاگ اسکرپٹس لکھتے ہیں، اور انٹینٹس، اینٹٹیز اور فال بیک بیہیویئرز کی وضاحت کرتے ہیں۔' },
+            { step: 3, title: 'AI ماڈل ٹریننگ', description: 'ہم صارف کے پیغامات کی درست سمجھ کو یقینی بنانے کے لیے آپ کے ڈیٹا اور ڈومین ووکیبلری پر NLU ماڈلز ٹرین کرتے ہیں۔' },
+            { step: 4, title: 'انٹیگریشن اور ڈیولپمنٹ', description: 'ہم چیٹ بوٹ بناتے ہیں، آپ کے سسٹمز کے ساتھ انٹیگریٹ کرتے ہیں، اور آپ کے چینلز پر ڈپلائی کرتے ہیں۔' },
+            { step: 5, title: 'ٹیسٹنگ اور بہتری', description: 'ہم مکمل طور پر ٹیسٹ کرتے ہیں، مانیٹرنگ کے ساتھ لانچ کرتے ہیں، اور کنورسیشن اینالیٹکس کی بنیاد پر مسلسل بہتر بناتے ہیں۔' },
+          ],
+          faq: [
+            { question: 'یہ چیٹ بوٹس کتنے ذہین ہیں؟', answer: 'جدید کنورسیشنل AI سیاق و سباق سمجھ سکتا ہے، ملٹی ٹرن بات چیت سنبھال سکتا ہے، انٹینٹ ویریئیشنز پہچان سکتا ہے، اور متعلقہ جوابات دے سکتا ہے۔' },
+          ],
+        },
+      },
+    ];
+    for (const t of conversationalAiTranslations) { await prisma.serviceTranslation.upsert({ where: { serviceId_locale: { serviceId: t.serviceId, locale: t.locale } }, update: { name: t.name, shortDescription: t.shortDescription, fullDescription: t.fullDescription, features: t.features, benefits: t.benefits, content: t.content as any }, create: t as any }); }
+    console.log(`Seeded ${conversationalAiTranslations.length} translations for conversational-ai`);
+  }
+
+  // API Development Translations
+  const apiDevService = await prisma.service.findUnique({ where: { slug: 'api-development' } });
+  if (apiDevService) {
+    const apiDevTranslations = [
+      {
+        serviceId: apiDevService.id,
+        locale: 'tr',
+        name: 'API Geliştirme',
+        shortDescription: 'Uygulamalarınızı güçlendiren sağlam API\'ler oluşturun.',
+        fullDescription: 'API\'ler modern yazılımın bel kemiğidir. Sistemler arasında sorunsuz entegrasyonu sağlayan ölçeklenebilir, güvenli ve iyi belgelenmiş API\'ler tasarlıyor ve geliştiriyoruz. REST API\'ler, GraphQL endpoint\'leri veya gerçek zamanlı WebSocket bağlantıları ihtiyacınız olsun, geliştiricilerin kullanmayı sevdiği arayüzler oluşturuyoruz.',
+        features: ['RESTful API Tasarımı & Geliştirme', 'GraphQL API Uygulaması', 'API Gateway & Yönetimi', 'Kimlik Doğrulama & Yetkilendirme', 'API Dokümantasyonu (OpenAPI/Swagger)', 'Rate Limiting & Throttling', 'Versiyonlama & Geriye Uyumluluk', 'Gerçek Zamanlı API\'ler (WebSockets, SSE)'],
+        benefits: ['Sorunsuz sistem entegrasyonunu etkinleştirin', 'Birden fazla istemci için tutarlı arayüzler sağlayın', 'Frontend uygulamalarından bağımsız ölçeklendirin', 'API ürünleri aracılığıyla veri ve hizmetleri monetize edin', 'Partner ve üçüncü taraf entegrasyonlarını hızlandırın', 'Mimarinizi geleceğe hazırlayın'],
+        content: {
+          process: [
+            { step: 1, title: 'Gereksinim Analizi', description: 'Doğru API stratejisini tasarlamak için entegrasyon ihtiyaçlarınızı, veri modellerinizi ve tüketici gereksinimlerinizi anlıyoruz.' },
+            { step: 2, title: 'API Tasarımı', description: 'REST veya GraphQL en iyi uygulamalarını takip ederek tutarlılık ve kullanılabilirlik sağlayan detaylı API spesifikasyonları oluşturuyoruz.' },
+            { step: 3, title: 'Geliştirme', description: 'Uygun hata yönetimi, doğrulama, kimlik doğrulama ve kapsamlı loglama ile API\'yi oluşturuyoruz.' },
+            { step: 4, title: 'Test & Dokümantasyon', description: 'Tüm endpoint\'ler için otomatik testler yazıyor ve örneklerle geliştirici dostu dokümantasyon oluşturuyoruz.' },
+            { step: 5, title: 'Dağıtım & İzleme', description: 'Uygun güvenlikle dağıtıyor, izleme kuruyoruz ve sürekli destek ve bakım sağlıyoruz.' },
+          ],
+          faq: [
+            { question: 'REST mi GraphQL mi kullanmalıyım?', answer: 'REST daha basit ve yaygın olarak anlaşılır, basit CRUD işlemleri için idealdir. GraphQL, istemcilerin esnek sorgulara ihtiyaç duyduğu veya over-fetching\'i azaltmak istediğiniz durumlarda daha iyidir.' },
+            { question: 'API güvenliğini nasıl ele alıyorsunuz?', answer: 'Endüstri standardı güvenliği uyguluyoruz: OAuth 2.0/JWT kimlik doğrulama, HTTPS şifreleme, girdi doğrulama, rate limiting ve API anahtar yönetimi.' },
+          ],
+        },
+      },
+      {
+        serviceId: apiDevService.id,
+        locale: 'de',
+        name: 'API-Entwicklung',
+        shortDescription: 'Robuste APIs erstellen, die Ihre Anwendungen antreiben.',
+        fullDescription: 'APIs sind das Rückgrat moderner Software. Wir entwerfen und entwickeln skalierbare, sichere und gut dokumentierte APIs, die nahtlose Integration zwischen Systemen ermöglichen. Ob REST-APIs, GraphQL-Endpoints oder Echtzeit-WebSocket-Verbindungen - wir bauen Schnittstellen, die Entwickler gerne nutzen.',
+        features: ['RESTful API Design & Entwicklung', 'GraphQL API Implementierung', 'API Gateway & Management', 'Authentifizierung & Autorisierung', 'API-Dokumentation (OpenAPI/Swagger)', 'Rate Limiting & Throttling', 'Versionierung & Abwärtskompatibilität', 'Echtzeit-APIs (WebSockets, SSE)'],
+        benefits: ['Nahtlose Systemintegration ermöglichen', 'Konsistente Schnittstellen für mehrere Clients bereitstellen', 'Unabhängig von Frontend-Anwendungen skalieren', 'Daten und Services über API-Produkte monetarisieren', 'Partner- und Drittanbieter-Integrationen beschleunigen', 'Ihre Architektur zukunftssicher machen'],
+        content: {
+          process: [
+            { step: 1, title: 'Anforderungsanalyse', description: 'Wir verstehen Ihre Integrationsbedürfnisse, Datenmodelle und Verbraucheranforderungen, um die richtige API-Strategie zu entwerfen.' },
+            { step: 2, title: 'API-Design', description: 'Wir erstellen detaillierte API-Spezifikationen nach REST- oder GraphQL-Best-Practices für Konsistenz und Benutzerfreundlichkeit.' },
+            { step: 3, title: 'Entwicklung', description: 'Wir bauen die API mit ordnungsgemäßer Fehlerbehandlung, Validierung, Authentifizierung und umfassender Protokollierung.' },
+            { step: 4, title: 'Test & Dokumentation', description: 'Wir schreiben automatisierte Tests für alle Endpoints und erstellen entwicklerfreundliche Dokumentation mit Beispielen.' },
+            { step: 5, title: 'Bereitstellung & Monitoring', description: 'Wir stellen mit angemessener Sicherheit bereit, richten Monitoring ein und bieten laufende Unterstützung.' },
+          ],
+          faq: [
+            { question: 'Sollte ich REST oder GraphQL verwenden?', answer: 'REST ist einfacher und weit verbreitet, ideal für einfache CRUD-Operationen. GraphQL ist besser, wenn Clients flexible Abfragen benötigen oder Sie Over-Fetching reduzieren möchten.' },
+          ],
+        },
+      },
+      {
+        serviceId: apiDevService.id,
+        locale: 'ar',
+        name: 'تطوير واجهات برمجة التطبيقات',
+        shortDescription: 'بناء واجهات برمجة تطبيقات قوية تشغل تطبيقاتك.',
+        fullDescription: 'واجهات برمجة التطبيقات هي العمود الفقري للبرمجيات الحديثة. نصمم ونطور واجهات برمجة تطبيقات قابلة للتطوير وآمنة وموثقة جيداً تمكن من التكامل السلس بين الأنظمة. سواء كنت تحتاج REST APIs أو GraphQL أو اتصالات WebSocket في الوقت الفعلي، نبني واجهات يحب المطورون استخدامها.',
+        features: ['تصميم وتطوير RESTful API', 'تنفيذ GraphQL API', 'بوابة وإدارة API', 'المصادقة والتفويض', 'توثيق API (OpenAPI/Swagger)', 'تحديد المعدل والاختناق', 'الإصدارات والتوافق مع الإصدارات السابقة', 'واجهات API في الوقت الفعلي (WebSockets, SSE)'],
+        benefits: ['تمكين التكامل السلس للأنظمة', 'توفير واجهات متسقة لعملاء متعددين', 'التوسع بشكل مستقل عن تطبيقات الواجهة الأمامية', 'تحقيق الدخل من البيانات والخدمات عبر منتجات API', 'تسريع تكامل الشركاء والأطراف الثالثة', 'تأمين بنيتك للمستقبل'],
+        content: {
+          process: [
+            { step: 1, title: 'تحليل المتطلبات', description: 'نفهم احتياجات التكامل ونماذج البيانات ومتطلبات المستهلكين لتصميم استراتيجية API الصحيحة.' },
+            { step: 2, title: 'تصميم API', description: 'ننشئ مواصفات API مفصلة تتبع أفضل ممارسات REST أو GraphQL لضمان الاتساق وسهولة الاستخدام.' },
+            { step: 3, title: 'التطوير', description: 'نبني API مع معالجة الأخطاء المناسبة والتحقق والمصادقة والتسجيل الشامل.' },
+            { step: 4, title: 'الاختبار والتوثيق', description: 'نكتب اختبارات آلية لجميع النقاط النهائية وننشئ توثيقاً صديقاً للمطورين مع أمثلة.' },
+            { step: 5, title: 'النشر والمراقبة', description: 'ننشر بأمان مناسب ونعد المراقبة ونوفر الدعم والصيانة المستمرة.' },
+          ],
+          faq: [
+            { question: 'هل يجب أن أستخدم REST أو GraphQL؟', answer: 'REST أبسط ومفهوم على نطاق واسع، مثالي لعمليات CRUD المباشرة. GraphQL أفضل عندما يحتاج العملاء استعلامات مرنة أو تريد تقليل الإفراط في الجلب.' },
+          ],
+        },
+      },
+      {
+        serviceId: apiDevService.id,
+        locale: 'ur',
+        name: 'API ڈیولپمنٹ',
+        shortDescription: 'اپنی ایپلیکیشنز کو طاقت دینے والے مضبوط APIs بنائیں۔',
+        fullDescription: 'APIs جدید سافٹ ویئر کی ریڑھ کی ہڈی ہیں۔ ہم سسٹمز کے درمیان بغیر کسی رکاوٹ کے انٹیگریشن کو فعال کرنے والے قابل توسیع، محفوظ اور اچھی طرح سے دستاویز شدہ APIs ڈیزائن اور ڈویلپ کرتے ہیں۔ چاہے آپ کو REST APIs، GraphQL endpoints، یا ریئل ٹائم WebSocket کنکشنز کی ضرورت ہو، ہم ایسے انٹرفیس بناتے ہیں جو ڈویلپرز استعمال کرنا پسند کرتے ہیں۔',
+        features: ['RESTful API ڈیزائن اور ڈیولپمنٹ', 'GraphQL API امپلیمنٹیشن', 'API گیٹ وے اور مینجمنٹ', 'آتھنٹیکیشن اور آتھورائزیشن', 'API ڈاکیومنٹیشن (OpenAPI/Swagger)', 'ریٹ لمیٹنگ اور تھروٹلنگ', 'ورژننگ اور بیکورڈ کمپیٹیبیلٹی', 'ریئل ٹائم APIs (WebSockets, SSE)'],
+        benefits: ['بغیر کسی رکاوٹ کے سسٹم انٹیگریشن کو فعال کریں', 'متعدد کلائنٹس کے لیے مستقل انٹرفیس فراہم کریں', 'فرنٹ اینڈ ایپلیکیشنز سے آزادانہ طور پر سکیل کریں', 'API پروڈکٹس کے ذریعے ڈیٹا اور سروسز کو مونیٹائز کریں', 'پارٹنر اور تھرڈ پارٹی انٹیگریشنز کو تیز کریں', 'اپنے فن تعمیر کو مستقبل کے لیے تیار کریں'],
+        content: {
+          process: [
+            { step: 1, title: 'ریکوائرمنٹس اینالیسس', description: 'ہم صحیح API حکمت عملی ڈیزائن کرنے کے لیے آپ کی انٹیگریشن ضروریات، ڈیٹا ماڈلز، اور کنزیومر ریکوائرمنٹس کو سمجھتے ہیں۔' },
+            { step: 2, title: 'API ڈیزائن', description: 'ہم مستقل مزاجی اور استعمال میں آسانی کو یقینی بناتے ہوئے REST یا GraphQL بہترین طریقوں کی پیروی کرتے ہوئے تفصیلی API سپیسیفیکیشنز بناتے ہیں۔' },
+            { step: 3, title: 'ڈیولپمنٹ', description: 'ہم مناسب ایرر ہینڈلنگ، ویلیڈیشن، آتھنٹیکیشن، اور جامع لاگنگ کے ساتھ API بناتے ہیں۔' },
+            { step: 4, title: 'ٹیسٹنگ اور ڈاکیومنٹیشن', description: 'ہم تمام endpoints کے لیے آٹومیٹڈ ٹیسٹس لکھتے ہیں اور مثالوں کے ساتھ ڈویلپر فرینڈلی ڈاکیومنٹیشن بناتے ہیں۔' },
+            { step: 5, title: 'ڈپلائمنٹ اور مانیٹرنگ', description: 'ہم مناسب سیکیورٹی کے ساتھ ڈپلائی کرتے ہیں، مانیٹرنگ سیٹ اپ کرتے ہیں، اور جاری سپورٹ فراہم کرتے ہیں۔' },
+          ],
+          faq: [
+            { question: 'کیا مجھے REST یا GraphQL استعمال کرنا چاہیے؟', answer: 'REST سادہ اور وسیع پیمانے پر سمجھا جاتا ہے، سادہ CRUD آپریشنز کے لیے مثالی ہے۔ GraphQL بہتر ہے جب کلائنٹس کو لچکدار کوئیریز کی ضرورت ہو یا آپ over-fetching کو کم کرنا چاہتے ہوں۔' },
+          ],
+        },
+      },
+    ];
+    for (const t of apiDevTranslations) { await prisma.serviceTranslation.upsert({ where: { serviceId_locale: { serviceId: t.serviceId, locale: t.locale } }, update: { name: t.name, shortDescription: t.shortDescription, fullDescription: t.fullDescription, features: t.features, benefits: t.benefits, content: t.content as any }, create: t as any }); }
+    console.log(`Seeded ${apiDevTranslations.length} translations for api-development`);
+  }
+
+  // UI/UX Design Translations
+  const uiuxService = await prisma.service.findUnique({ where: { slug: 'ui-ux-design' } });
+  if (uiuxService) {
+    const uiuxTranslations = [
+      {
+        serviceId: uiuxService.id,
+        locale: 'tr',
+        name: 'UI/UX Tasarım',
+        shortDescription: 'Güzel, sezgisel kullanıcı deneyimleri oluşturun.',
+        fullDescription: 'Tasarım sadece görünüm değil, aynı zamanda işlevseliktir. UI/UX tasarım hizmetlerimiz estetik güzelliği fonksiyonel mükemmellikle birleştirir. Kullanıcı araştırması yapıyor, wireframe ve prototipler oluşturuyor ve kullanıcıları memnun eden ve iş hedeflerine ulaşan piksel mükemmelliğinde tasarımlar sunuyoruz.',
+        features: ['Kullanıcı Araştırması & Persona Geliştirme', 'Bilgi Mimarisi', 'Wireframing & Prototipleme', 'Görsel Tasarım & Marka', 'Etkileşim Tasarımı', 'Kullanılabilirlik Testi', 'Tasarım Sistemi Oluşturma', 'Erişilebilirlik (WCAG) Uyumluluğu'],
+        benefits: ['Kullanıcı etkileşimini ve tutundurmasını artırın', 'Dönüşüm oranlarını iyileştirin', 'Net spesifikasyonlarla geliştirme maliyetlerini azaltın', 'Tüm temas noktalarında marka tutarlılığı oluşturun', 'Sezgisel tasarımla destek maliyetlerini azaltın', 'Erişilebilirlik uyumluluğu sağlayın'],
+        content: {
+          process: [
+            { step: 1, title: 'Araştırma & Keşif', description: 'Problem alanını anlamak için kullanıcı araştırması, rekabet analizi ve paydaş görüşmeleri yapıyoruz.' },
+            { step: 2, title: 'Bilgi Mimarisi', description: 'Mantıksal, sezgisel navigasyon yapıları oluşturmak için içeriği düzenliyor ve kullanıcı akışlarını tanımlıyoruz.' },
+            { step: 3, title: 'Wireframing', description: 'Görsel tasarımdan önce çözümleri keşfetmek ve konseptleri doğrulamak için düşük sadakatli wireframe\'ler oluşturuyoruz.' },
+            { step: 4, title: 'Görsel Tasarım', description: 'Marka kimliğinizle yüksek sadakatli tasarımlar oluşturuyor, güzel ve tutarlı arayüzler yaratıyoruz.' },
+            { step: 5, title: 'Prototipleme & Test', description: 'Etkileşimli prototipler oluşturuyor ve tasarımı doğrulamak ve geliştirmek için kullanılabilirlik testleri yapıyoruz.' },
+          ],
+          faq: [
+            { question: 'UI ve UX tasarımı arasındaki fark nedir?', answer: 'UX (Kullanıcı Deneyimi) genel his ve işlevselliğe odaklanır - kullanıcıların görevleri nasıl tamamladığı. UI (Kullanıcı Arayüzü) görsel öğelere odaklanır - ürünün nasıl göründüğü. İkisi de harika ürünler için gereklidir.' },
+            { question: 'Kullanıcı araştırması yapıyor musunuz?', answer: 'Evet, kullanıcı araştırması sürecimizin temelidir. Kullanıcı ihtiyaçlarını anlamak ve tasarım kararlarını doğrulamak için görüşmeler, anketler, kullanılabilirlik testleri ve analitik analizi yapıyoruz.' },
+          ],
+        },
+      },
+      {
+        serviceId: uiuxService.id,
+        locale: 'de',
+        name: 'UI/UX Design',
+        shortDescription: 'Schöne, intuitive Benutzererlebnisse schaffen.',
+        fullDescription: 'Design ist nicht nur, wie es aussieht, sondern wie es funktioniert. Unsere UI/UX-Designservices kombinieren ästhetische Schönheit mit funktionaler Exzellenz. Wir führen Nutzerforschung durch, erstellen Wireframes und Prototypen und liefern pixelgenaue Designs, die Nutzer begeistern und Geschäftsziele erreichen.',
+        features: ['Nutzerforschung & Persona-Entwicklung', 'Informationsarchitektur', 'Wireframing & Prototyping', 'Visuelles Design & Branding', 'Interaktionsdesign', 'Usability-Tests', 'Design-System-Erstellung', 'Barrierefreiheit (WCAG) Compliance'],
+        benefits: ['Benutzerengagement und -bindung steigern', 'Konversionsraten verbessern', 'Entwicklungskosten durch klare Spezifikationen reduzieren', 'Markenkonsistenz über alle Touchpoints aufbauen', 'Supportkosten durch intuitives Design senken', 'Barrierefreiheits-Compliance erreichen'],
+        content: {
+          process: [
+            { step: 1, title: 'Forschung & Entdeckung', description: 'Wir führen Nutzerforschung, Wettbewerbsanalyse und Stakeholder-Interviews durch, um den Problemraum zu verstehen.' },
+            { step: 2, title: 'Informationsarchitektur', description: 'Wir organisieren Inhalte und definieren Nutzerflüsse, um logische, intuitive Navigationsstrukturen zu schaffen.' },
+            { step: 3, title: 'Wireframing', description: 'Wir erstellen Low-Fidelity-Wireframes, um Lösungen zu erkunden und Konzepte vor dem visuellen Design zu validieren.' },
+            { step: 4, title: 'Visuelles Design', description: 'Wir gestalten High-Fidelity-Designs mit Ihrer Markenidentität und schaffen schöne, konsistente Oberflächen.' },
+            { step: 5, title: 'Prototyping & Tests', description: 'Wir bauen interaktive Prototypen und führen Usability-Tests durch, um das Design zu validieren und zu verfeinern.' },
+          ],
+          faq: [
+            { question: 'Was ist der Unterschied zwischen UI- und UX-Design?', answer: 'UX (User Experience) konzentriert sich auf das Gesamtgefühl und die Funktionalität - wie Nutzer Aufgaben erledigen. UI (User Interface) konzentriert sich auf die visuellen Elemente - wie das Produkt aussieht.' },
+          ],
+        },
+      },
+      {
+        serviceId: uiuxService.id,
+        locale: 'ar',
+        name: 'تصميم واجهة المستخدم وتجربة المستخدم',
+        shortDescription: 'إنشاء تجارب مستخدم جميلة وبديهية.',
+        fullDescription: 'التصميم ليس فقط كيف يبدو، بل كيف يعمل. تجمع خدمات تصميم UI/UX لدينا بين الجمال الجمالي والتميز الوظيفي. نجري أبحاث المستخدم وننشئ wireframes ونماذج أولية ونقدم تصميمات مثالية البكسل تسعد المستخدمين وتحقق أهداف العمل.',
+        features: ['أبحاث المستخدم وتطوير الشخصيات', 'هندسة المعلومات', 'Wireframing والنماذج الأولية', 'التصميم المرئي والعلامة التجارية', 'تصميم التفاعل', 'اختبار قابلية الاستخدام', 'إنشاء نظام التصميم', 'امتثال إمكانية الوصول (WCAG)'],
+        benefits: ['زيادة مشاركة المستخدم والاحتفاظ به', 'تحسين معدلات التحويل', 'تقليل تكاليف التطوير بمواصفات واضحة', 'بناء اتساق العلامة التجارية عبر نقاط الاتصال', 'تقليل تكاليف الدعم بتصميم بديهي', 'تحقيق امتثال إمكانية الوصول'],
+        content: {
+          process: [
+            { step: 1, title: 'البحث والاكتشاف', description: 'نجري أبحاث المستخدم وتحليل المنافسين ومقابلات أصحاب المصلحة لفهم مساحة المشكلة.' },
+            { step: 2, title: 'هندسة المعلومات', description: 'ننظم المحتوى ونحدد تدفقات المستخدم لإنشاء هياكل تنقل منطقية وبديهية.' },
+            { step: 3, title: 'Wireframing', description: 'ننشئ wireframes منخفضة الدقة لاستكشاف الحلول والتحقق من صحة المفاهيم قبل التصميم المرئي.' },
+            { step: 4, title: 'التصميم المرئي', description: 'نصمم تصميمات عالية الدقة مع هوية علامتك التجارية، وننشئ واجهات جميلة ومتسقة.' },
+            { step: 5, title: 'النماذج الأولية والاختبار', description: 'نبني نماذج أولية تفاعلية ونجري اختبارات قابلية الاستخدام للتحقق من صحة التصميم وتحسينه.' },
+          ],
+          faq: [
+            { question: 'ما الفرق بين تصميم UI و UX؟', answer: 'UX (تجربة المستخدم) يركز على الشعور العام والوظائف - كيف ينجز المستخدمون المهام. UI (واجهة المستخدم) يركز على العناصر المرئية - كيف يبدو المنتج.' },
+          ],
+        },
+      },
+      {
+        serviceId: uiuxService.id,
+        locale: 'ur',
+        name: 'UI/UX ڈیزائن',
+        shortDescription: 'خوبصورت، بدیہی صارف تجربات بنائیں۔',
+        fullDescription: 'ڈیزائن صرف یہ نہیں کہ یہ کیسا دکھتا ہے، بلکہ یہ کہ یہ کیسے کام کرتا ہے۔ ہماری UI/UX ڈیزائن سروسز جمالیاتی خوبصورتی کو فنکشنل عمدگی کے ساتھ جوڑتی ہیں۔ ہم صارف کی تحقیق کرتے ہیں، wireframes اور prototypes بناتے ہیں، اور پکسل پرفیکٹ ڈیزائنز فراہم کرتے ہیں جو صارفین کو خوش کرتے ہیں اور کاروباری اہداف حاصل کرتے ہیں۔',
+        features: ['صارف کی تحقیق اور پرسنا ڈیولپمنٹ', 'انفارمیشن آرکیٹیکچر', 'Wireframing اور Prototyping', 'ویژول ڈیزائن اور برانڈنگ', 'انٹریکشن ڈیزائن', 'یوزیبیلٹی ٹیسٹنگ', 'ڈیزائن سسٹم کریئیشن', 'ایکسیسیبیلٹی (WCAG) کمپلائنس'],
+        benefits: ['صارف کی مصروفیت اور برقراری میں اضافہ کریں', 'کنورژن ریٹس کو بہتر بنائیں', 'واضح سپیسیفیکیشنز کے ساتھ ڈویلپمنٹ کے اخراجات کم کریں', 'تمام ٹچ پوائنٹس پر برانڈ کی مستقل مزاجی بنائیں', 'بدیہی ڈیزائن کے ساتھ سپورٹ کے اخراجات کم کریں', 'ایکسیسیبیلٹی کمپلائنس حاصل کریں'],
+        content: {
+          process: [
+            { step: 1, title: 'ریسرچ اور دریافت', description: 'ہم مسئلے کی جگہ کو سمجھنے کے لیے صارف کی تحقیق، مسابقتی تجزیہ، اور اسٹیک ہولڈر انٹرویوز کرتے ہیں۔' },
+            { step: 2, title: 'انفارمیشن آرکیٹیکچر', description: 'ہم منطقی، بدیہی نیویگیشن ڈھانچے بنانے کے لیے مواد کو منظم کرتے ہیں اور صارف کے فلوز کی وضاحت کرتے ہیں۔' },
+            { step: 3, title: 'Wireframing', description: 'ہم ویژول ڈیزائن سے پہلے حل تلاش کرنے اور تصورات کی توثیق کرنے کے لیے لو-فیڈیلٹی wireframes بناتے ہیں۔' },
+            { step: 4, title: 'ویژول ڈیزائن', description: 'ہم آپ کی برانڈ شناخت کے ساتھ ہائی-فیڈیلٹی ڈیزائنز بناتے ہیں، خوبصورت اور مستقل انٹرفیس تخلیق کرتے ہیں۔' },
+            { step: 5, title: 'Prototyping اور ٹیسٹنگ', description: 'ہم انٹرایکٹو prototypes بناتے ہیں اور ڈیزائن کی توثیق اور بہتری کے لیے یوزیبیلٹی ٹیسٹنگ کرتے ہیں۔' },
+          ],
+          faq: [
+            { question: 'UI اور UX ڈیزائن میں کیا فرق ہے؟', answer: 'UX (یوزر ایکسپیرینس) مجموعی احساس اور فعالیت پر توجہ مرکوز کرتا ہے - صارفین کام کیسے مکمل کرتے ہیں۔ UI (یوزر انٹرفیس) بصری عناصر پر توجہ مرکوز کرتا ہے - پروڈکٹ کیسا دکھتا ہے۔' },
+          ],
+        },
+      },
+    ];
+    for (const t of uiuxTranslations) { await prisma.serviceTranslation.upsert({ where: { serviceId_locale: { serviceId: t.serviceId, locale: t.locale } }, update: { name: t.name, shortDescription: t.shortDescription, fullDescription: t.fullDescription, features: t.features, benefits: t.benefits, content: t.content as any }, create: t as any }); }
+    console.log(`Seeded ${uiuxTranslations.length} translations for ui-ux-design`);
+  }
+
+  // ==================== BATCH 4: SEO, Google Ads, Meta Ads ====================
+
+  // SEO Translations
+  const seoService = await prisma.service.findUnique({ where: { slug: 'seo' } });
+  if (seoService) {
+    const seoTranslations = [
+      {
+        serviceId: seoService.id,
+        locale: 'tr',
+        name: 'SEO',
+        shortDescription: 'Veri odaklı SEO stratejileriyle arama sonuçlarına hakim olun.',
+        fullDescription: 'Kapsamlı SEO hizmetlerimizle organik görünürlüğünüzü artırın ve nitelikli trafik çekin. Web sitenizin Google ve diğer arama motorlarında daha üst sıralarda yer almasına yardımcı olmak için teknik optimizasyon, içerik stratejisi ve link oluşturmayı birleştiriyoruz.',
+        features: ['Teknik SEO Denetimleri', 'Sayfa İçi Optimizasyon', 'Anahtar Kelime Araştırması & Strateji', 'Link Oluşturma & Erişim', 'Yerel SEO & Google İşletme', 'İçerik Stratejisi & Optimizasyon'],
+        benefits: ['Organik trafiği %200-500 artırın', 'Müşteri edinme maliyetlerini düşürün', 'Uzun vadeli marka otoritesi oluşturun', 'Arama sonuçlarında rakipleri geçin'],
+        content: {
+          process: [
+            { step: 1, title: 'SEO Denetimi', description: 'Sitenizin teknik sağlığı, içeriği ve backlink profilinin kapsamlı denetimini yapıyoruz.' },
+            { step: 2, title: 'Anahtar Kelime Stratejisi', description: 'İş hedefleriniz ve arama amacıyla uyumlu yüksek değerli anahtar kelimeleri araştırıyor ve önceliklendiriyoruz.' },
+            { step: 3, title: 'Sayfa İçi Optimizasyon', description: 'Maksimum alaka için meta etiketleri, içerik yapısı, iç bağlantılar ve şema işaretlemesini optimize ediyoruz.' },
+            { step: 4, title: 'Sayfa Dışı & Link Oluşturma', description: 'Erişim, misafir yazarlık ve dijital PR kampanyaları aracılığıyla yüksek kaliteli backlink\'ler oluşturuyoruz.' },
+            { step: 5, title: 'İzleme & Raporlama', description: 'Sıralamaları, trafiği ve dönüşümleri takip ediyor, eyleme dönüştürülebilir içgörülerle aylık raporlar sunuyoruz.' },
+          ],
+          faq: [
+            { question: 'SEO sonuçlarını ne zaman görürüm?', answer: 'İlk iyileştirmeler 3-6 ayda görülür, önemli sonuçlar 6-12 ayda elde edilir. SEO, zaman içinde biriken uzun vadeli bir yatırımdır.' },
+            { question: 'İlk sayfa sıralamasını garanti ediyor musunuz?', answer: 'Hiçbir etik SEO ajansı belirli sıralamaları garanti edemez. Veri odaklı strateji, şeffaf raporlama ve organik büyümenizi maksimize etmek için sürekli optimizasyonu garanti ediyoruz.' },
+          ],
+        },
+      },
+      {
+        serviceId: seoService.id,
+        locale: 'de',
+        name: 'SEO',
+        shortDescription: 'Dominieren Sie Suchergebnisse mit datengesteuerten SEO-Strategien.',
+        fullDescription: 'Steigern Sie Ihre organische Sichtbarkeit und generieren Sie qualifizierten Traffic mit unseren umfassenden SEO-Diensten. Wir kombinieren technische Optimierung, Content-Strategie und Linkaufbau, um Ihrer Website zu helfen, bei Google und anderen Suchmaschinen höher zu ranken.',
+        features: ['Technische SEO-Audits', 'On-Page-Optimierung', 'Keyword-Recherche & Strategie', 'Linkaufbau & Outreach', 'Lokales SEO & Google Business', 'Content-Strategie & Optimierung'],
+        benefits: ['Organischen Traffic um 200-500% steigern', 'Kundenakquisitionskosten senken', 'Langfristige Markenautorität aufbauen', 'Wettbewerber in Suchergebnissen übertreffen'],
+        content: {
+          process: [
+            { step: 1, title: 'SEO-Audit', description: 'Wir führen ein umfassendes Audit der technischen Gesundheit, des Inhalts und des Backlink-Profils Ihrer Website durch.' },
+            { step: 2, title: 'Keyword-Strategie', description: 'Wir recherchieren und priorisieren hochwertige Keywords, die mit Ihren Geschäftszielen und Suchintentionen übereinstimmen.' },
+            { step: 3, title: 'On-Page-Optimierung', description: 'Wir optimieren Meta-Tags, Content-Struktur, interne Verlinkung und Schema-Markup für maximale Relevanz.' },
+            { step: 4, title: 'Off-Page & Linkaufbau', description: 'Wir bauen hochwertige Backlinks durch Outreach, Gastbeiträge und digitale PR-Kampagnen auf.' },
+            { step: 5, title: 'Monitoring & Reporting', description: 'Wir verfolgen Rankings, Traffic und Conversions und liefern monatliche Berichte mit umsetzbaren Erkenntnissen.' },
+          ],
+          faq: [
+            { question: 'Wie lange bis ich SEO-Ergebnisse sehe?', answer: 'Erste Verbesserungen erscheinen in 3-6 Monaten, signifikante Ergebnisse in 6-12 Monaten. SEO ist eine langfristige Investition.' },
+          ],
+        },
+      },
+      {
+        serviceId: seoService.id,
+        locale: 'ar',
+        name: 'تحسين محركات البحث',
+        shortDescription: 'هيمن على نتائج البحث باستراتيجيات SEO المدعومة بالبيانات.',
+        fullDescription: 'زد من ظهورك العضوي واجذب حركة مرور مؤهلة مع خدمات SEO الشاملة لدينا. نجمع بين التحسين التقني واستراتيجية المحتوى وبناء الروابط لمساعدة موقعك على الترتيب أعلى في Google ومحركات البحث الأخرى.',
+        features: ['تدقيقات SEO التقنية', 'التحسين على الصفحة', 'بحث الكلمات المفتاحية والاستراتيجية', 'بناء الروابط والتواصل', 'SEO المحلي وGoogle Business', 'استراتيجية المحتوى والتحسين'],
+        benefits: ['زيادة حركة المرور العضوية بنسبة 200-500%', 'خفض تكاليف اكتساب العملاء', 'بناء سلطة العلامة التجارية على المدى الطويل', 'التفوق على المنافسين في نتائج البحث'],
+        content: {
+          process: [
+            { step: 1, title: 'تدقيق SEO', description: 'نجري تدقيقاً شاملاً للصحة التقنية لموقعك والمحتوى وملف الروابط الخلفية.' },
+            { step: 2, title: 'استراتيجية الكلمات المفتاحية', description: 'نبحث ونرتب أولويات الكلمات المفتاحية عالية القيمة المتوافقة مع أهداف عملك ونية البحث.' },
+            { step: 3, title: 'التحسين على الصفحة', description: 'نحسن العلامات الوصفية وبنية المحتوى والروابط الداخلية وترميز المخطط لأقصى صلة.' },
+            { step: 4, title: 'خارج الصفحة وبناء الروابط', description: 'نبني روابط خلفية عالية الجودة من خلال التواصل والنشر كضيف وحملات العلاقات العامة الرقمية.' },
+            { step: 5, title: 'المراقبة والتقارير', description: 'نتتبع الترتيب وحركة المرور والتحويلات ونقدم تقارير شهرية مع رؤى قابلة للتنفيذ.' },
+          ],
+          faq: [
+            { question: 'متى سأرى نتائج SEO؟', answer: 'تظهر التحسينات الأولية في 3-6 أشهر، مع نتائج مهمة في 6-12 شهراً. SEO استثمار طويل الأمد يتراكم بمرور الوقت.' },
+          ],
+        },
+      },
+      {
+        serviceId: seoService.id,
+        locale: 'ur',
+        name: 'SEO',
+        shortDescription: 'ڈیٹا سے چلنے والی SEO حکمت عملیوں کے ساتھ سرچ نتائج پر غلبہ حاصل کریں۔',
+        fullDescription: 'ہماری جامع SEO سروسز کے ساتھ اپنی آرگینک ویزیبیلٹی بڑھائیں اور کوالیفائیڈ ٹریفک حاصل کریں۔ ہم آپ کی ویب سائٹ کو Google اور دیگر سرچ انجنز پر اعلیٰ رینک کرنے میں مدد کے لیے تکنیکی آپٹیمائزیشن، کنٹینٹ اسٹریٹجی، اور لنک بلڈنگ کو یکجا کرتے ہیں۔',
+        features: ['تکنیکی SEO آڈٹس', 'آن پیج آپٹیمائزیشن', 'کی ورڈ ریسرچ اور اسٹریٹجی', 'لنک بلڈنگ اور آؤٹ ریچ', 'لوکل SEO اور Google Business', 'کنٹینٹ اسٹریٹجی اور آپٹیمائزیشن'],
+        benefits: ['آرگینک ٹریفک 200-500% بڑھائیں', 'کسٹمر ایکوزیشن کاسٹ کم کریں', 'طویل مدتی برانڈ اتھارٹی بنائیں', 'سرچ نتائج میں حریفوں کو پیچھے چھوڑیں'],
+        content: {
+          process: [
+            { step: 1, title: 'SEO آڈٹ', description: 'ہم آپ کی سائٹ کی تکنیکی صحت، کنٹینٹ، اور بیک لنک پروفائل کا جامع آڈٹ کرتے ہیں۔' },
+            { step: 2, title: 'کی ورڈ اسٹریٹجی', description: 'ہم آپ کے کاروباری اہداف اور سرچ انٹینٹ کے ساتھ ملنے والے اعلیٰ قدر والے کی ورڈز تحقیق اور ترجیح دیتے ہیں۔' },
+            { step: 3, title: 'آن پیج آپٹیمائزیشن', description: 'ہم زیادہ سے زیادہ مطابقت کے لیے میٹا ٹیگز، کنٹینٹ سٹرکچر، انٹرنل لنکنگ، اور اسکیما مارک اپ کو آپٹیمائز کرتے ہیں۔' },
+            { step: 4, title: 'آف پیج اور لنک بلڈنگ', description: 'ہم آؤٹ ریچ، گیسٹ پوسٹنگ، اور ڈیجیٹل PR مہمات کے ذریعے اعلیٰ معیار کے بیک لنکس بناتے ہیں۔' },
+            { step: 5, title: 'مانیٹرنگ اور رپورٹنگ', description: 'ہم رینکنگز، ٹریفک، اور کنورژنز کو ٹریک کرتے ہیں، قابل عمل بصیرت کے ساتھ ماہانہ رپورٹس فراہم کرتے ہیں۔' },
+          ],
+          faq: [
+            { question: 'SEO نتائج کب نظر آئیں گے؟', answer: 'ابتدائی بہتری 3-6 ماہ میں ظاہر ہوتی ہے، اہم نتائج 6-12 ماہ میں۔ SEO ایک طویل مدتی سرمایہ کاری ہے جو وقت کے ساتھ بڑھتی ہے۔' },
+          ],
+        },
+      },
+    ];
+    for (const t of seoTranslations) { await prisma.serviceTranslation.upsert({ where: { serviceId_locale: { serviceId: t.serviceId, locale: t.locale } }, update: { name: t.name, shortDescription: t.shortDescription, fullDescription: t.fullDescription, features: t.features, benefits: t.benefits, content: t.content as any }, create: t as any }); }
+    console.log(`Seeded ${seoTranslations.length} translations for seo`);
+  }
+
+  // Google Ads Translations
+  const googleAdsService = await prisma.service.findUnique({ where: { slug: 'google-ads' } });
+  if (googleAdsService) {
+    const googleAdsTranslations = [
+      {
+        serviceId: googleAdsService.id,
+        locale: 'tr',
+        name: 'Google Ads (PPC)',
+        shortDescription: 'Profesyonelce yönetilen Google Ads kampanyalarıyla anında nitelikli trafik çekin.',
+        fullDescription: 'Profesyonelce yönetilen Google Ads kampanyalarıyla ROI\'nizi maksimize edin. Markanızı doğru kitleye doğru anda ulaştıran yüksek hedefli arama, görüntüleme ve alışveriş kampanyaları oluşturuyoruz. PPC uzmanlarımız en yüksek performans için teklifleri, reklam metinlerini ve açılış sayfalarını sürekli optimize ediyor.',
+        features: ['Arama Kampanyası Yönetimi', 'Görüntüleme & Yeniden Pazarlama Reklamları', 'Alışveriş & Performance Max', 'Dönüşüm İzleme Kurulumu', 'Açılış Sayfası Optimizasyonu', 'A/B Testi & Reklam Metni'],
+        benefits: ['Google\'da anında görünürlük', 'Hassas kitle hedefleme', 'Her dolar için ölçülebilir ROI', 'Sonuçlara göre kampanyaları hızla ölçeklendirin'],
+        content: {
+          process: [
+            { step: 1, title: 'Hesap Denetimi & Kurulum', description: 'Mevcut hesabınızı denetliyor veya uygun dönüşüm izleme ve atıfla yeni bir hesap kuruyoruz.' },
+            { step: 2, title: 'Anahtar Kelime & Kitle Araştırması', description: 'Hassas hedefleme için yüksek amaçlı anahtar kelimeleri, negatif anahtar kelimeleri ve kitle segmentlerini belirliyoruz.' },
+            { step: 3, title: 'Kampanya Oluşturma', description: 'Etkileyici reklam metni, uzantılar ve optimize edilmiş teklif stratejileriyle yapılandırılmış kampanyalar oluşturuyoruz.' },
+            { step: 4, title: 'Optimizasyon & Ölçeklendirme', description: 'Kazanan kampanyaları sürekli test ediyor, geliştiriyor ve ölçeklendirirken düşük performanslıları duraklatıyoruz.' },
+          ],
+          faq: [
+            { question: 'Google Ads için ne kadar bütçe ayırmalıyım?', answer: 'Bütçeler sektör ve hedeflere göre değişir. Anlamlı veriler için ayda en az 2.000$ ile başlamanızı öneriyoruz.' },
+            { question: 'Sonuçları ne kadar çabuk göreceğim?', answer: 'SEO\'nun aksine, PPC neredeyse anında trafik sağlar. Saatler içinde tıklamalar görmeye başlayabilirsiniz.' },
+          ],
+        },
+      },
+      {
+        serviceId: googleAdsService.id,
+        locale: 'de',
+        name: 'Google Ads (PPC)',
+        shortDescription: 'Sofortigen qualifizierten Traffic mit professionell verwalteten Google Ads-Kampagnen.',
+        fullDescription: 'Maximieren Sie Ihren ROI mit professionell verwalteten Google Ads-Kampagnen. Wir erstellen hochgradig zielgerichtete Such-, Display- und Shopping-Kampagnen, die Ihre Marke zur richtigen Zeit vor die richtige Zielgruppe bringen.',
+        features: ['Search-Kampagnen-Management', 'Display & Remarketing Ads', 'Shopping & Performance Max', 'Conversion-Tracking-Setup', 'Landing-Page-Optimierung', 'A/B-Tests & Anzeigentexte'],
+        benefits: ['Sofortige Sichtbarkeit auf Google', 'Präzises Zielgruppen-Targeting', 'Messbarer ROI für jeden Euro', 'Kampagnen basierend auf Ergebnissen schnell skalieren'],
+        content: {
+          process: [
+            { step: 1, title: 'Account-Audit & Setup', description: 'Wir auditieren Ihr bestehendes Konto oder richten ein neues mit ordnungsgemäßem Conversion-Tracking ein.' },
+            { step: 2, title: 'Keyword- & Zielgruppenrecherche', description: 'Wir identifizieren High-Intent-Keywords, negative Keywords und Zielgruppensegmente für präzises Targeting.' },
+            { step: 3, title: 'Kampagnenerstellung', description: 'Wir bauen strukturierte Kampagnen mit überzeugenden Anzeigentexten und optimierten Gebotsstrategien.' },
+            { step: 4, title: 'Optimierung & Skalierung', description: 'Wir testen, verfeinern und skalieren kontinuierlich erfolgreiche Kampagnen.' },
+          ],
+          faq: [
+            { question: 'Wie viel Budget sollte ich für Google Ads einplanen?', answer: 'Budgets variieren je nach Branche und Zielen. Wir empfehlen mindestens 2.000€/Monat für aussagekräftige Daten.' },
+          ],
+        },
+      },
+      {
+        serviceId: googleAdsService.id,
+        locale: 'ar',
+        name: 'إعلانات Google (PPC)',
+        shortDescription: 'جذب حركة مرور مؤهلة فورية مع حملات Google Ads المدارة باحترافية.',
+        fullDescription: 'عظّم عائد الاستثمار الخاص بك مع حملات Google Ads المدارة باحترافية. ننشئ حملات بحث وعرض وتسوق عالية الاستهداف تضع علامتك التجارية أمام الجمهور المناسب في اللحظة المناسبة.',
+        features: ['إدارة حملات البحث', 'إعلانات العرض وإعادة التسويق', 'التسوق و Performance Max', 'إعداد تتبع التحويل', 'تحسين صفحة الهبوط', 'اختبار A/B ونص الإعلان'],
+        benefits: ['ظهور فوري على Google', 'استهداف جمهور دقيق', 'عائد استثمار قابل للقياس على كل دولار', 'توسيع نطاق الحملات بسرعة بناءً على النتائج'],
+        content: {
+          process: [
+            { step: 1, title: 'تدقيق الحساب والإعداد', description: 'نراجع حسابك الحالي أو نعد حساباً جديداً مع تتبع التحويل المناسب والإسناد.' },
+            { step: 2, title: 'بحث الكلمات المفتاحية والجمهور', description: 'نحدد الكلمات المفتاحية عالية النية والكلمات المفتاحية السلبية وشرائح الجمهور للاستهداف الدقيق.' },
+            { step: 3, title: 'إنشاء الحملة', description: 'نبني حملات منظمة مع نص إعلاني مقنع وإضافات واستراتيجيات عروض أسعار محسنة.' },
+            { step: 4, title: 'التحسين والتوسع', description: 'نختبر ونحسن ونوسع نطاق الحملات الناجحة باستمرار مع إيقاف الحملات ضعيفة الأداء.' },
+          ],
+          faq: [
+            { question: 'كم يجب أن أخصص ميزانية لـ Google Ads؟', answer: 'تختلف الميزانيات حسب الصناعة والأهداف. نوصي بالبدء بما لا يقل عن 2000 دولار شهرياً للحصول على بيانات ذات معنى.' },
+          ],
+        },
+      },
+      {
+        serviceId: googleAdsService.id,
+        locale: 'ur',
+        name: 'Google Ads (PPC)',
+        shortDescription: 'پیشہ ورانہ طریقے سے مینیج کیے گئے Google Ads کیمپینز کے ساتھ فوری کوالیفائیڈ ٹریفک حاصل کریں۔',
+        fullDescription: 'پیشہ ورانہ طریقے سے مینیج کیے گئے Google Ads کیمپینز کے ساتھ اپنے ROI کو زیادہ سے زیادہ کریں۔ ہم انتہائی ٹارگٹڈ سرچ، ڈسپلے، اور شاپنگ کیمپینز بناتے ہیں جو آپ کے برانڈ کو صحیح وقت پر صحیح سامعین کے سامنے رکھتے ہیں۔',
+        features: ['سرچ کیمپین مینجمنٹ', 'ڈسپلے اور ری مارکیٹنگ ایڈز', 'شاپنگ اور Performance Max', 'کنورژن ٹریکنگ سیٹ اپ', 'لینڈنگ پیج آپٹیمائزیشن', 'A/B ٹیسٹنگ اور ایڈ کاپی'],
+        benefits: ['Google پر فوری ویزیبیلٹی', 'درست آڈیئنس ٹارگٹنگ', 'ہر ڈالر پر قابل پیمائش ROI', 'نتائج کی بنیاد پر کیمپینز کو تیزی سے سکیل کریں'],
+        content: {
+          process: [
+            { step: 1, title: 'اکاؤنٹ آڈٹ اور سیٹ اپ', description: 'ہم آپ کے موجودہ اکاؤنٹ کا آڈٹ کرتے ہیں یا مناسب کنورژن ٹریکنگ کے ساتھ نیا اکاؤنٹ سیٹ اپ کرتے ہیں۔' },
+            { step: 2, title: 'کی ورڈ اور آڈیئنس ریسرچ', description: 'ہم درست ٹارگٹنگ کے لیے ہائی انٹینٹ کی ورڈز، نیگیٹو کی ورڈز، اور آڈیئنس سیگمنٹس کی شناخت کرتے ہیں۔' },
+            { step: 3, title: 'کیمپین تخلیق', description: 'ہم متاثر کن ایڈ کاپی، ایکسٹینشنز، اور آپٹیمائزڈ بڈنگ اسٹریٹجیز کے ساتھ اسٹرکچرڈ کیمپینز بناتے ہیں۔' },
+            { step: 4, title: 'آپٹیمائزیشن اور سکیلنگ', description: 'ہم جیتنے والے کیمپینز کو مسلسل ٹیسٹ، بہتر، اور سکیل کرتے ہیں جبکہ کم کارکردگی والوں کو روکتے ہیں۔' },
+          ],
+          faq: [
+            { question: 'Google Ads کے لیے کتنا بجٹ رکھنا چاہیے؟', answer: 'بجٹ انڈسٹری اور اہداف کے لحاظ سے مختلف ہوتے ہیں۔ ہم معنی خیز ڈیٹا کے لیے کم از کم $2,000/ماہ سے شروع کرنے کی سفارش کرتے ہیں۔' },
+          ],
+        },
+      },
+    ];
+    for (const t of googleAdsTranslations) { await prisma.serviceTranslation.upsert({ where: { serviceId_locale: { serviceId: t.serviceId, locale: t.locale } }, update: { name: t.name, shortDescription: t.shortDescription, fullDescription: t.fullDescription, features: t.features, benefits: t.benefits, content: t.content as any }, create: t as any }); }
+    console.log(`Seeded ${googleAdsTranslations.length} translations for google-ads`);
+  }
+
+  // Meta Ads Translations
+  const metaAdsService = await prisma.service.findUnique({ where: { slug: 'meta-ads' } });
+  if (metaAdsService) {
+    const metaAdsTranslations = [
+      {
+        serviceId: metaAdsService.id,
+        locale: 'tr',
+        name: 'Meta Reklamları',
+        shortDescription: 'Hedefli Facebook & Instagram reklam kampanyalarıyla milyarlarca kullanıcıya ulaşın.',
+        fullDescription: 'Facebook ve Instagram\'da ideal müşterilerinize ulaşmak için Meta\'nın reklam platformunun gücünden yararlanın. Gelişmiş hedefleme, özel kitleler ve benzer modelleme ile ölçekte farkındalık, etkileşim ve dönüşüm sağlayan görsel açıdan etkileyici reklam kampanyaları oluşturuyoruz.',
+        features: ['Facebook & Instagram Reklam Yönetimi', 'Özel & Benzer Kitleler', 'Piksel & Conversion API Kurulumu', 'Yaratıcı Tasarım & Video Reklamlar', 'Yeniden Hedefleme Kampanyaları', 'Katalog & Dinamik Reklamlar'],
+        benefits: ['3+ milyar aylık aktif kullanıcıya erişin', 'Gelişmiş demografik ve ilgi alanı hedeflemesi', 'Marka farkındalığı için görsel hikaye anlatımı', 'Arama reklamlarına kıyasla daha düşük edinim maliyeti'],
+        content: {
+          process: [
+            { step: 1, title: 'Kitle & Piksel Kurulumu', description: 'Meta Piksel, Conversion API yapılandırıyor ve müşteri verilerinize dayalı özel kitle segmentleri oluşturuyoruz.' },
+            { step: 2, title: 'Yaratıcı Geliştirme', description: 'Facebook ve Instagram yerleşimleri için dikkat çekici görseller, videolar ve reklam metinleri tasarlıyoruz.' },
+            { step: 3, title: 'Kampanya Lansmanı', description: 'Uygun test çerçeveleri, kitle bölümleri ve bütçe tahsisi ile kampanyaları yapılandırıyoruz.' },
+            { step: 4, title: 'Ölçeklendirme & Optimizasyon', description: 'Teklif optimizasyonu yoluyla maliyet verimliliğini korurken kazanan yaratıcıları ve kitleleri ölçeklendiriyoruz.' },
+          ],
+          faq: [
+            { question: 'Hangi tür Meta reklam kampanyaları yürütüyorsunuz?', answer: 'Hedeflerinize ve dönüşüm hunisi aşamanıza bağlı olarak farkındalık, trafik, etkileşim, lead generation, dönüşümler ve katalog satışları kampanyaları yürütüyoruz.' },
+            { question: 'iOS gizlilik değişikliklerini nasıl ele alıyorsunuz?', answer: 'Doğru izleme için Piksel\'in yanına Conversion API uyguluyoruz, geniş hedefleme stratejileri kullanıyoruz ve kampanya etkinliğini korumak için birinci taraf verileri için optimize ediyoruz.' },
+          ],
+        },
+      },
+      {
+        serviceId: metaAdsService.id,
+        locale: 'de',
+        name: 'Meta Ads',
+        shortDescription: 'Erreichen Sie Milliarden von Nutzern mit zielgerichteten Facebook & Instagram Kampagnen.',
+        fullDescription: 'Nutzen Sie die Kraft der Meta-Werbeplattform, um Ihre idealen Kunden auf Facebook und Instagram zu erreichen. Wir erstellen visuell überzeugende Werbekampagnen mit fortschrittlichem Targeting, Custom Audiences und Lookalike-Modellierung.',
+        features: ['Facebook & Instagram Anzeigenverwaltung', 'Custom & Lookalike Audiences', 'Pixel & Conversion API Setup', 'Kreativdesign & Video Ads', 'Retargeting-Kampagnen', 'Katalog & Dynamic Ads'],
+        benefits: ['Zugang zu 3+ Milliarden monatlich aktiven Nutzern', 'Fortschrittliches demografisches und Interessen-Targeting', 'Visuelles Storytelling für Markenbekanntheit', 'Niedrigere Akquisitionskosten vs. Suchanzeigen'],
+        content: {
+          process: [
+            { step: 1, title: 'Zielgruppen & Pixel Setup', description: 'Wir konfigurieren Meta Pixel, Conversion API und bauen Custom Audience Segmente basierend auf Ihren Kundendaten.' },
+            { step: 2, title: 'Kreativ-Entwicklung', description: 'Wir designen scroll-stoppende Visuals, Videos und Anzeigentexte für Facebook und Instagram.' },
+            { step: 3, title: 'Kampagnen-Launch', description: 'Wir strukturieren Kampagnen mit ordnungsgemäßen Test-Frameworks, Zielgruppen-Splits und Budgetallokation.' },
+            { step: 4, title: 'Skalieren & Optimieren', description: 'Wir skalieren erfolgreiche Creatives und Zielgruppen bei gleichzeitiger Kosteneffizienz.' },
+          ],
+          faq: [
+            { question: 'Welche Arten von Meta-Werbekampagnen führen Sie durch?', answer: 'Wir führen Awareness-, Traffic-, Engagement-, Lead-Generierungs-, Conversions- und Katalogverkaufs-Kampagnen je nach Ihren Zielen durch.' },
+          ],
+        },
+      },
+      {
+        serviceId: metaAdsService.id,
+        locale: 'ar',
+        name: 'إعلانات Meta',
+        shortDescription: 'الوصول لمليارات المستخدمين بحملات Facebook و Instagram المستهدفة.',
+        fullDescription: 'استفد من قوة منصة إعلانات Meta للوصول إلى عملائك المثاليين على Facebook و Instagram. ننشئ حملات إعلانية جذابة بصرياً مع استهداف متقدم وجماهير مخصصة ونمذجة lookalike لزيادة الوعي والتفاعل والتحويلات على نطاق واسع.',
+        features: ['إدارة إعلانات Facebook و Instagram', 'الجماهير المخصصة و Lookalike', 'إعداد Pixel و Conversion API', 'التصميم الإبداعي وإعلانات الفيديو', 'حملات إعادة الاستهداف', 'الكتالوج والإعلانات الديناميكية'],
+        benefits: ['الوصول إلى أكثر من 3 مليار مستخدم نشط شهرياً', 'استهداف ديموغرافي واهتمامات متقدم', 'سرد بصري للتوعية بالعلامة التجارية', 'تكلفة اكتساب أقل مقارنة بإعلانات البحث'],
+        content: {
+          process: [
+            { step: 1, title: 'إعداد الجمهور و Pixel', description: 'نقوم بتكوين Meta Pixel و Conversion API وبناء شرائح جمهور مخصصة بناءً على بيانات عملائك.' },
+            { step: 2, title: 'تطوير الإبداع', description: 'نصمم صوراً ومقاطع فيديو ونصوص إعلانية تجذب الانتباه لمواضع Facebook و Instagram.' },
+            { step: 3, title: 'إطلاق الحملة', description: 'نهيكل الحملات بأطر اختبار مناسبة وتقسيمات الجمهور وتخصيص الميزانية.' },
+            { step: 4, title: 'التوسع والتحسين', description: 'نوسع نطاق الإبداعات والجماهير الناجحة مع الحفاظ على كفاءة التكلفة من خلال تحسين العروض.' },
+          ],
+          faq: [
+            { question: 'ما أنواع حملات إعلانات Meta التي تديرونها؟', answer: 'ندير حملات التوعية والحركة والتفاعل وتوليد العملاء المحتملين والتحويلات ومبيعات الكتالوج حسب أهدافك ومرحلة القمع.' },
+          ],
+        },
+      },
+      {
+        serviceId: metaAdsService.id,
+        locale: 'ur',
+        name: 'Meta ایڈز',
+        shortDescription: 'ٹارگٹڈ Facebook اور Instagram ایڈ کیمپینز کے ساتھ اربوں صارفین تک پہنچیں۔',
+        fullDescription: 'Facebook اور Instagram پر اپنے مثالی صارفین تک پہنچنے کے لیے Meta کے ایڈورٹائزنگ پلیٹ فارم کی طاقت کا فائدہ اٹھائیں۔ ہم ایڈوانسڈ ٹارگٹنگ، کسٹم آڈیئنسز، اور lookalike ماڈلنگ کے ساتھ بصری طور پر متاثر کن ایڈ کیمپینز بناتے ہیں۔',
+        features: ['Facebook اور Instagram ایڈ مینجمنٹ', 'کسٹم اور Lookalike آڈیئنسز', 'Pixel اور Conversion API سیٹ اپ', 'کریئٹو ڈیزائن اور ویڈیو ایڈز', 'ری ٹارگٹنگ کیمپینز', 'کیٹلاگ اور ڈائنامک ایڈز'],
+        benefits: ['3+ ارب ماہانہ ایکٹو صارفین تک رسائی', 'ایڈوانسڈ ڈیموگرافک اور انٹرسٹ ٹارگٹنگ', 'برانڈ آگاہی کے لیے ویژول سٹوری ٹیلنگ', 'سرچ ایڈز کے مقابلے میں کم ایکوزیشن کاسٹ'],
+        content: {
+          process: [
+            { step: 1, title: 'آڈیئنس اور Pixel سیٹ اپ', description: 'ہم Meta Pixel، Conversion API کنفیگر کرتے ہیں اور آپ کے کسٹمر ڈیٹا کی بنیاد پر کسٹم آڈیئنس سیگمنٹس بناتے ہیں۔' },
+            { step: 2, title: 'کریئٹو ڈیولپمنٹ', description: 'ہم Facebook اور Instagram پلیسمنٹس کے لیے سکرول روکنے والے ویژولز، ویڈیوز، اور ایڈ کاپی ڈیزائن کرتے ہیں۔' },
+            { step: 3, title: 'کیمپین لانچ', description: 'ہم مناسب ٹیسٹنگ فریم ورکس، آڈیئنس سپلٹس، اور بجٹ ایلوکیشن کے ساتھ کیمپینز کی ساخت بناتے ہیں۔' },
+            { step: 4, title: 'سکیل اور آپٹیمائز', description: 'ہم بڈ آپٹیمائزیشن کے ذریعے لاگت کی کارکردگی برقرار رکھتے ہوئے جیتنے والے کریئٹوز اور آڈیئنسز کو سکیل کرتے ہیں۔' },
+          ],
+          faq: [
+            { question: 'آپ کس قسم کے Meta ایڈ کیمپینز چلاتے ہیں؟', answer: 'ہم آپ کے اہداف اور فنل اسٹیج کے لحاظ سے awareness، ٹریفک، engagement، lead generation، conversions، اور catalog sales کیمپینز چلاتے ہیں۔' },
+          ],
+        },
+      },
+    ];
+    for (const t of metaAdsTranslations) { await prisma.serviceTranslation.upsert({ where: { serviceId_locale: { serviceId: t.serviceId, locale: t.locale } }, update: { name: t.name, shortDescription: t.shortDescription, fullDescription: t.fullDescription, features: t.features, benefits: t.benefits, content: t.content as any }, create: t as any }); }
+    console.log(`Seeded ${metaAdsTranslations.length} translations for meta-ads`);
+  }
+
+  // Social Media Marketing Translations
+  const socialMediaService = await prisma.service.findUnique({ where: { slug: 'social-media-marketing' } });
+  if (socialMediaService) {
+    const socialMediaTranslations = [
+      {
+        serviceId: socialMediaService.id,
+        locale: 'tr',
+        name: 'Sosyal Medya Pazarlaması',
+        shortDescription: 'Sosyal platformlarda etkileşimli topluluklar oluşturun ve markanızı büyütün.',
+        fullDescription: 'Sosyal medya varlığınızı stratejik içerik oluşturma, topluluk yönetimi ve büyüme taktikleriyle dönüştürün. Instagram, LinkedIn, TikTok, X ve daha fazlası için platforma özgü stratejiler geliştiriyoruz.',
+        features: ['İçerik Takvimi ve Stratejisi', 'Topluluk Yönetimi', 'Influencer Ortaklıkları', 'Sosyal Dinleme ve Analitik', 'Marka Sesi Geliştirme', 'Platforma Özgü İçerik'],
+        benefits: ['Otantik marka topluluğu oluşturun', 'Marka bilinirliğini organik olarak artırın', 'Sosyal medyadan web sitesi trafiği çekin', 'Müşteri sadakati ve elde tutmayı iyileştirin'],
+        content: {
+          process: [
+            { step: 1, title: 'Sosyal Denetim', description: 'Mevcut sosyal medya varlığınızı, rakipleri ve kitleyi analiz edip fırsatları belirliyoruz.' },
+            { step: 2, title: 'Strateji ve İçerik Planı', description: 'Temalar, paylaşım programı ve platforma özgü taktiklerle içerik stratejisi geliştiriyoruz.' },
+            { step: 3, title: 'İçerik Oluşturma', description: 'Marka sesinize uygun ilgi çekici gönderiler, hikayeler, reels ve videolar üretiyoruz.' },
+            { step: 4, title: 'Etkileşim ve Büyüme', description: 'Topluluk etkileşimlerini yönetiyor, büyüme kampanyaları yürütüyor ve analitiklere göre stratejiyi uyarlıyoruz.' },
+          ],
+          faq: [
+            { question: 'İşletmem hangi sosyal platformlarda olmalı?', answer: 'Kitlenize bağlı. B2B şirketleri LinkedIn\'e, B2C ise Instagram ve TikTok\'a odaklanmalı. Kitlenizin en aktif olduğu platformları önceliklendirmenize yardımcı oluyoruz.' },
+            { question: 'Ne sıklıkla paylaşmalıyız?', answer: 'Tutarlılık sıklıktan daha önemli. Genellikle platform başına haftada 3-5 gönderi, artı günlük hikayeler ve topluluk etkileşimi öneriyoruz.' },
+          ],
+        },
+      },
+      {
+        serviceId: socialMediaService.id,
+        locale: 'de',
+        name: 'Social Media Marketing',
+        shortDescription: 'Bauen Sie engagierte Communities auf und wachsen Sie auf sozialen Plattformen.',
+        fullDescription: 'Transformieren Sie Ihre Social-Media-Präsenz mit strategischer Content-Erstellung, Community Management und Wachstumstaktiken. Wir entwickeln plattformspezifische Strategien für Instagram, LinkedIn, TikTok, X und mehr.',
+        features: ['Content-Kalender & Strategie', 'Community Management', 'Influencer-Partnerschaften', 'Social Listening & Analytics', 'Marken-Stimmenentwicklung', 'Plattformspezifischer Content'],
+        benefits: ['Authentische Marken-Community aufbauen', 'Markenbekanntheit organisch steigern', 'Website-Traffic aus Social Media', 'Kundenloyalität verbessern'],
+        content: {
+          process: [
+            { step: 1, title: 'Social Audit', description: 'Wir analysieren Ihre aktuelle Präsenz, Wettbewerber und Zielgruppe.' },
+            { step: 2, title: 'Strategie & Content-Plan', description: 'Wir entwickeln eine Content-Strategie mit Themen und Posting-Zeitplan.' },
+            { step: 3, title: 'Content-Erstellung', description: 'Wir produzieren ansprechende Posts, Stories, Reels und Videos.' },
+            { step: 4, title: 'Engagement & Wachstum', description: 'Wir managen Community-Interaktionen und passen die Strategie basierend auf Analytics an.' },
+          ],
+          faq: [
+            { question: 'Auf welchen Plattformen sollte mein Unternehmen sein?', answer: 'Das hängt von Ihrer Zielgruppe ab. B2B sollte sich auf LinkedIn konzentrieren, B2C auf Instagram und TikTok.' },
+          ],
+        },
+      },
+      {
+        serviceId: socialMediaService.id,
+        locale: 'ar',
+        name: 'التسويق عبر وسائل التواصل الاجتماعي',
+        shortDescription: 'قم ببناء مجتمعات متفاعلة ونمو علامتك التجارية عبر المنصات الاجتماعية.',
+        fullDescription: 'حول حضورك على وسائل التواصل الاجتماعي من خلال إنشاء محتوى استراتيجي وإدارة المجتمع وتكتيكات النمو. نطور استراتيجيات خاصة بكل منصة لـ Instagram و LinkedIn و TikTok و X والمزيد.',
+        features: ['تقويم المحتوى والاستراتيجية', 'إدارة المجتمع', 'شراكات المؤثرين', 'الاستماع الاجتماعي والتحليلات', 'تطوير صوت العلامة التجارية', 'محتوى خاص بالمنصة'],
+        benefits: ['بناء مجتمع علامة تجارية أصيل', 'زيادة الوعي بالعلامة التجارية عضوياً', 'جلب حركة مرور من وسائل التواصل', 'تحسين ولاء العملاء'],
+        content: {
+          process: [
+            { step: 1, title: 'تدقيق اجتماعي', description: 'نحلل حضورك الحالي والمنافسين والجمهور لتحديد الفرص.' },
+            { step: 2, title: 'الاستراتيجية وخطة المحتوى', description: 'نطور استراتيجية محتوى مع موضوعات وجدول نشر وتكتيكات خاصة بالمنصة.' },
+            { step: 3, title: 'إنشاء المحتوى', description: 'ننتج منشورات وقصص وريلز ومقاطع فيديو جذابة متوافقة مع صوت علامتك التجارية.' },
+            { step: 4, title: 'التفاعل والنمو', description: 'ندير تفاعلات المجتمع ونشغل حملات النمو ونكيف الاستراتيجية بناءً على التحليلات.' },
+          ],
+          faq: [
+            { question: 'على أي منصات يجب أن يكون عملي؟', answer: 'يعتمد على جمهورك. يجب على شركات B2B التركيز على LinkedIn، و B2C على Instagram و TikTok.' },
+          ],
+        },
+      },
+      {
+        serviceId: socialMediaService.id,
+        locale: 'ur',
+        name: 'سوشل میڈیا مارکیٹنگ',
+        shortDescription: 'سوشل پلیٹ فارمز پر مصروف کمیونٹیز بنائیں اور اپنا برانڈ بڑھائیں۔',
+        fullDescription: 'اسٹریٹجک مواد کی تخلیق، کمیونٹی مینجمنٹ، اور ترقی کی حکمت عملیوں کے ساتھ اپنی سوشل میڈیا موجودگی کو تبدیل کریں۔ ہم Instagram، LinkedIn، TikTok، X اور مزید کے لیے پلیٹ فارم کے مطابق حکمت عملی تیار کرتے ہیں۔',
+        features: ['مواد کیلنڈر اور حکمت عملی', 'کمیونٹی مینجمنٹ', 'انفلوئنسر پارٹنرشپس', 'سوشل لسننگ اور اینالیٹکس', 'برانڈ وائس ڈیولپمنٹ', 'پلیٹ فارم کے مطابق مواد'],
+        benefits: ['مستند برانڈ کمیونٹی بنائیں', 'آرگینک طور پر برانڈ آگاہی بڑھائیں', 'سوشل سے ویب سائٹ ٹریفک لائیں', 'کسٹمر لائلٹی بہتر کریں'],
+        content: {
+          process: [
+            { step: 1, title: 'سوشل آڈٹ', description: 'ہم آپ کی موجودہ موجودگی، حریفوں، اور سامعین کا تجزیہ کرتے ہیں۔' },
+            { step: 2, title: 'حکمت عملی اور مواد پلان', description: 'ہم تھیمز، پوسٹنگ شیڈول، اور پلیٹ فارم کی مخصوص حکمت عملی تیار کرتے ہیں۔' },
+            { step: 3, title: 'مواد کی تخلیق', description: 'ہم آپ کے برانڈ کی آواز کے مطابق دلکش پوسٹس، سٹوریز، ریلز، اور ویڈیوز بناتے ہیں۔' },
+            { step: 4, title: 'انگیجمنٹ اور ترقی', description: 'ہم کمیونٹی انٹریکشنز کا انتظام کرتے ہیں، ترقی کی مہمات چلاتے ہیں، اور اینالیٹکس کی بنیاد پر حکمت عملی کو ایڈجسٹ کرتے ہیں۔' },
+          ],
+          faq: [
+            { question: 'میرا کاروبار کن سوشل پلیٹ فارمز پر ہونا چاہیے؟', answer: 'یہ آپ کے سامعین پر منحصر ہے۔ B2B کمپنیوں کو LinkedIn پر توجہ دینی چاہیے، B2C کو Instagram اور TikTok پر۔' },
+          ],
+        },
+      },
+    ];
+    for (const t of socialMediaTranslations) { await prisma.serviceTranslation.upsert({ where: { serviceId_locale: { serviceId: t.serviceId, locale: t.locale } }, update: { name: t.name, shortDescription: t.shortDescription, fullDescription: t.fullDescription, features: t.features, benefits: t.benefits, content: t.content as any }, create: t as any }); }
+    console.log(`Seeded ${socialMediaTranslations.length} translations for social-media-marketing`);
+  }
+
+  // Email Marketing Translations
+  const emailMarketingService = await prisma.service.findUnique({ where: { slug: 'email-marketing' } });
+  if (emailMarketingService) {
+    const emailMarketingTranslations = [
+      {
+        serviceId: emailMarketingService.id,
+        locale: 'tr',
+        name: 'E-posta Pazarlaması',
+        shortDescription: 'Kişiselleştirilmiş e-posta kampanyalarıyla potansiyel müşterileri besleyin ve dönüşümleri artırın.',
+        fullDescription: 'E-posta pazarlaması en yüksek yatırım getirisine sahip dijital kanaldır. Potansiyel müşterileri besleyen, dönüştüren ve mevcut müşterileri koruyan e-posta kampanyaları tasarlıyor ve otomatikleştiriyoruz. Hoş geldin dizilerinden terk edilmiş sepet kurtarmaya kadar, e-posta stratejilerimiz etkileyici metin yazımını akıllı segmentasyon ve otomasyonla birleştirir.',
+        features: ['E-posta Kampanya Tasarımı ve Metin Yazarlığı', 'Pazarlama Otomasyonu Akışları', 'Liste Segmentasyonu ve Kişiselleştirme', 'A/B Testi ve Optimizasyon', 'Teslimat Yönetimi', 'Analitik ve Gelir Atıfı'],
+        benefits: ['E-posta pazarlamasında ortalama 42:1 ROI', 'Potansiyel müşteri beslemeyi 7/24 otomatikleştirin', 'Segmentasyonla ölçekte kişiselleştirin', 'Kitlenizin sahibi olun (algoritma değişikliği yok)'],
+        content: {
+          process: [
+            { step: 1, title: 'Denetim ve Strateji', description: 'Mevcut e-posta kurulumunuzu, liste sağlığını denetliyor ve müşteri yolculuğunuzla uyumlu bir strateji tanımlıyoruz.' },
+            { step: 2, title: 'Kurulum ve Segmentasyon', description: 'E-posta platformunuzu kuruyor veya taşıyor, segmentler oluşturuyor ve izleme ile otomasyon tetikleyicilerini yapılandırıyoruz.' },
+            { step: 3, title: 'İçerik ve Otomasyon', description: 'E-posta şablonları tasarlıyor, metin yazıyor ve önemli yaşam döngüsü aşamaları için otomatik akışlar oluşturuyoruz.' },
+            { step: 4, title: 'Optimize Et ve Ölçekle', description: 'Açılma oranlarını ve dönüşümleri sürekli iyileştirmek için konu satırları, içerik ve gönderim zamanlarını A/B test ediyoruz.' },
+          ],
+          faq: [
+            { question: 'Hangi e-posta platformunu öneriyorsunuz?', answer: 'İhtiyaçlarınıza bağlı. Klaviyo e-ticaret için en iyisi, HubSpot B2B için ve Mailchimp küçük işletmeler için. Doğru platformu seçip kurmanıza yardımcı oluyoruz.' },
+            { question: 'E-posta teslimatını nasıl iyileştiriyorsunuz?', answer: 'SPF, DKIM, DMARC gibi uygun kimlik doğrulama uyguluyoruz, liste hijyenini koruyoruz, gönderici alan adlarını ısıtıyoruz ve gelen kutusu yerleşimini maksimize etmek için en iyi uygulamaları takip ediyoruz.' },
+          ],
+        },
+      },
+      {
+        serviceId: emailMarketingService.id,
+        locale: 'de',
+        name: 'E-Mail-Marketing',
+        shortDescription: 'Pflegen Sie Leads und steigern Sie Conversions mit personalisierten E-Mail-Kampagnen.',
+        fullDescription: 'E-Mail-Marketing bleibt der digitale Kanal mit dem höchsten ROI. Wir designen und automatisieren E-Mail-Kampagnen, die Leads pflegen, Interessenten konvertieren und Kunden binden.',
+        features: ['E-Mail-Kampagnendesign & Texterstellung', 'Marketing-Automatisierungsflows', 'Listensegmentierung & Personalisierung', 'A/B-Tests & Optimierung', 'Zustellbarkeitsmanagement', 'Analytics & Umsatz-Attribution'],
+        benefits: ['Durchschnittlich 42:1 ROI im E-Mail-Marketing', 'Lead-Nurturing rund um die Uhr automatisieren', 'Personalisierung im großen Maßstab', 'Besitzen Sie Ihre Zielgruppe (keine Algorithmus-Änderungen)'],
+        content: {
+          process: [
+            { step: 1, title: 'Audit & Strategie', description: 'Wir auditieren Ihr aktuelles E-Mail-Setup, die Listen-Gesundheit und definieren eine Strategie.' },
+            { step: 2, title: 'Setup & Segmentierung', description: 'Wir richten Ihre E-Mail-Plattform ein, erstellen Segmente und konfigurieren Tracking.' },
+            { step: 3, title: 'Content & Automatisierung', description: 'Wir designen E-Mail-Templates, schreiben Texte und bauen automatisierte Flows.' },
+            { step: 4, title: 'Optimieren & Skalieren', description: 'Wir A/B-testen Betreffzeilen, Inhalte und Sendezeiten kontinuierlich.' },
+          ],
+          faq: [
+            { question: 'Welche E-Mail-Plattform empfehlen Sie?', answer: 'Klaviyo für E-Commerce, HubSpot für B2B und Mailchimp für kleine Unternehmen.' },
+          ],
+        },
+      },
+      {
+        serviceId: emailMarketingService.id,
+        locale: 'ar',
+        name: 'التسويق عبر البريد الإلكتروني',
+        shortDescription: 'قم برعاية العملاء المحتملين وزيادة التحويلات من خلال حملات البريد الإلكتروني المخصصة.',
+        fullDescription: 'يظل التسويق عبر البريد الإلكتروني القناة الرقمية الأعلى عائداً على الاستثمار. نحن نصمم وننفذ حملات بريد إلكتروني آلية تغذي العملاء المحتملين وتحول الفرص وتحافظ على العملاء.',
+        features: ['تصميم حملات البريد الإلكتروني وكتابة النصوص', 'تدفقات أتمتة التسويق', 'تقسيم القوائم والتخصيص', 'اختبار A/B والتحسين', 'إدارة قابلية التسليم', 'التحليلات وإسناد الإيرادات'],
+        benefits: ['متوسط عائد استثمار 42:1 للتسويق عبر البريد الإلكتروني', 'أتمتة رعاية العملاء المحتملين على مدار الساعة', 'التخصيص على نطاق واسع', 'امتلاك جمهورك (لا تغييرات في الخوارزمية)'],
+        content: {
+          process: [
+            { step: 1, title: 'التدقيق والاستراتيجية', description: 'نقوم بمراجعة إعداد البريد الإلكتروني الحالي وصحة القائمة ونحدد استراتيجية متوافقة مع رحلة عميلك.' },
+            { step: 2, title: 'الإعداد والتقسيم', description: 'نقوم بإعداد أو نقل منصة البريد الإلكتروني الخاصة بك وبناء الشرائح وتكوين التتبع.' },
+            { step: 3, title: 'المحتوى والأتمتة', description: 'نصمم قوالب البريد الإلكتروني ونكتب النصوص ونبني تدفقات آلية لمراحل دورة الحياة الرئيسية.' },
+            { step: 4, title: 'التحسين والتوسع', description: 'نختبر A/B عناوين الموضوع والمحتوى وأوقات الإرسال لتحسين معدلات الفتح والتحويلات باستمرار.' },
+          ],
+          faq: [
+            { question: 'أي منصة بريد إلكتروني توصون بها؟', answer: 'Klaviyo للتجارة الإلكترونية، HubSpot لـ B2B، و Mailchimp للأعمال الصغيرة.' },
+          ],
+        },
+      },
+      {
+        serviceId: emailMarketingService.id,
+        locale: 'ur',
+        name: 'ای میل مارکیٹنگ',
+        shortDescription: 'ذاتی نوعیت کی ای میل مہمات کے ساتھ لیڈز کی پرورش کریں اور کنورژنز بڑھائیں۔',
+        fullDescription: 'ای میل مارکیٹنگ سب سے زیادہ ROI والا ڈیجیٹل چینل ہے۔ ہم ای میل مہمات ڈیزائن اور آٹومیٹ کرتے ہیں جو لیڈز کی پرورش کرتی ہیں، امکانات کو تبدیل کرتی ہیں، اور گاہکوں کو برقرار رکھتی ہیں۔',
+        features: ['ای میل کیمپین ڈیزائن اور کاپی رائٹنگ', 'مارکیٹنگ آٹومیشن فلوز', 'لسٹ سیگمنٹیشن اور پرسنلائزیشن', 'A/B ٹیسٹنگ اور آپٹیمائزیشن', 'ڈیلیوریبلٹی مینجمنٹ', 'اینالیٹکس اور ریوینیو ایٹریبیوشن'],
+        benefits: ['ای میل مارکیٹنگ میں اوسط 42:1 ROI', 'لیڈ نرچرنگ کو 24/7 آٹومیٹ کریں', 'سیگمنٹیشن کے ساتھ پیمانے پر پرسنلائز کریں', 'اپنے سامعین کے مالک بنیں (کوئی الگورتھم تبدیلیاں نہیں)'],
+        content: {
+          process: [
+            { step: 1, title: 'آڈٹ اور حکمت عملی', description: 'ہم آپ کے موجودہ ای میل سیٹ اپ، لسٹ ہیلتھ کا آڈٹ کرتے ہیں اور آپ کے کسٹمر جرنی کے مطابق حکمت عملی تیار کرتے ہیں۔' },
+            { step: 2, title: 'سیٹ اپ اور سیگمنٹیشن', description: 'ہم آپ کا ای میل پلیٹ فارم سیٹ اپ یا مائیگریٹ کرتے ہیں، سیگمنٹس بناتے ہیں، اور ٹریکنگ کنفیگر کرتے ہیں۔' },
+            { step: 3, title: 'مواد اور آٹومیشن', description: 'ہم ای میل ٹیمپلیٹس ڈیزائن کرتے ہیں، کاپی لکھتے ہیں، اور کلیدی لائف سائیکل مراحل کے لیے آٹومیٹڈ فلوز بناتے ہیں۔' },
+            { step: 4, title: 'آپٹیمائز اور اسکیل کریں', description: 'ہم اوپن ریٹس اور کنورژنز کو مسلسل بہتر بنانے کے لیے سبجیکٹ لائنز، مواد، اور سینڈ ٹائمز کو A/B ٹیسٹ کرتے ہیں۔' },
+          ],
+          faq: [
+            { question: 'آپ کون سا ای میل پلیٹ فارم تجویز کرتے ہیں؟', answer: 'ای کامرس کے لیے Klaviyo، B2B کے لیے HubSpot، اور چھوٹے کاروباروں کے لیے Mailchimp۔' },
+          ],
+        },
+      },
+    ];
+    for (const t of emailMarketingTranslations) { await prisma.serviceTranslation.upsert({ where: { serviceId_locale: { serviceId: t.serviceId, locale: t.locale } }, update: { name: t.name, shortDescription: t.shortDescription, fullDescription: t.fullDescription, features: t.features, benefits: t.benefits, content: t.content as any }, create: t as any }); }
+    console.log(`Seeded ${emailMarketingTranslations.length} translations for email-marketing`);
+  }
+
+  // Content Marketing Translations
+  const contentMarketingService = await prisma.service.findUnique({ where: { slug: 'content-marketing' } });
+  if (contentMarketingService) {
+    const contentMarketingTranslations = [
+      {
+        serviceId: contentMarketingService.id,
+        locale: 'tr',
+        name: 'İçerik Pazarlaması',
+        shortDescription: 'Değerli, stratejik içerikle kitlenizi çekin ve etkileşime geçirin.',
+        fullDescription: 'Stratejik içerik pazarlaması ile otorite oluşturun ve organik büyümeyi sağlayın. Hedef kitlenizi çeken, eğiten ve dönüştüren kapsamlı içerik stratejileri geliştiriyoruz. Blog yazılarından ve teknik dokümanlardan video senaryolarına ve infografiklere kadar, sıralanan, yankı uyandıran ve gelir getiren içerik oluşturuyoruz.',
+        features: ['İçerik Stratejisi ve Planlama', 'Blog Yazısı ve Makale Yazarlığı', 'Teknik Dokümanlar ve Vaka Çalışmaları', 'Video Senaryosu ve Prodüksiyon', 'İnfografik Tasarımı', 'İçerik Dağıtımı ve Tanıtımı'],
+        benefits: ['Düşünce liderliği ve güven oluşturun', 'Uzun vadeli organik trafik çekin', 'Kaliteli içerikle SEO\'yu destekleyin', 'Kapılı içerikle potansiyel müşteri oluşturun'],
+        content: {
+          process: [
+            { step: 1, title: 'İçerik Denetimi ve Strateji', description: 'Mevcut içeriğinizi, rakip ortamını ve kitle ihtiyaçlarını analiz ederek içerik yol haritası tanımlıyoruz.' },
+            { step: 2, title: 'Konu ve Anahtar Kelime Araştırması', description: 'Arama amacı ve iş hedeflerinizle uyumlu yüksek değerli konuları belirliyoruz.' },
+            { step: 3, title: 'İçerik Oluşturma', description: 'Yazarlarımız ve tasarımcılarımız her kanal için SEO optimize edilmiş yüksek kaliteli içerik üretir.' },
+            { step: 4, title: 'Dağıtım ve Güçlendirme', description: 'İçeriği kanallar arasında dağıtıyor ve tanıtım, sendikasyon ve yeniden amaçlandırma yoluyla erişimi artırıyoruz.' },
+          ],
+          faq: [
+            { question: 'Hangi tür içerikler oluşturuyorsunuz?', answer: 'Blog yazıları, makaleler, teknik dokümanlar, vaka çalışmaları, e-kitaplar, infografikler, video senaryoları, sosyal medya içeriği ve e-posta bültenleri üretiyoruz.' },
+            { question: 'İçerik pazarlaması SEO\'yu nasıl destekler?', answer: 'Kaliteli içerik belirli anahtar kelimeleri hedefler, geri bağlantılar kazanır, sayfada kalma süresini artırır ve konusal otorite oluşturur—hepsi kritik sıralama faktörleridir.' },
+          ],
+        },
+      },
+      {
+        serviceId: contentMarketingService.id,
+        locale: 'de',
+        name: 'Content Marketing',
+        shortDescription: 'Gewinnen und binden Sie Ihr Publikum mit wertvollem, strategischem Content.',
+        fullDescription: 'Bauen Sie Autorität auf und treiben Sie organisches Wachstum durch strategisches Content Marketing voran. Wir entwickeln umfassende Content-Strategien, die Ihre Zielgruppe anziehen, informieren und konvertieren.',
+        features: ['Content-Strategie & Planung', 'Blog-Posts & Artikel schreiben', 'Whitepapers & Case Studies', 'Video-Skript & Produktion', 'Infografik-Design', 'Content-Distribution & Promotion'],
+        benefits: ['Thought Leadership und Vertrauen aufbauen', 'Langfristigen organischen Traffic generieren', 'SEO mit Qualitäts-Content unterstützen', 'Leads durch Gated Content generieren'],
+        content: {
+          process: [
+            { step: 1, title: 'Content Audit & Strategie', description: 'Wir analysieren bestehenden Content, Wettbewerber und Publikumsbedürfnisse.' },
+            { step: 2, title: 'Themen- & Keyword-Recherche', description: 'Wir identifizieren hochwertige Themen basierend auf Suchintention und Geschäftszielen.' },
+            { step: 3, title: 'Content-Erstellung', description: 'Unsere Autoren und Designer produzieren hochwertigen, SEO-optimierten Content.' },
+            { step: 4, title: 'Distribution & Verstärkung', description: 'Wir verteilen Content über Kanäle und verstärken die Reichweite durch Promotion.' },
+          ],
+          faq: [
+            { question: 'Welche Arten von Content erstellen Sie?', answer: 'Blog-Posts, Artikel, Whitepapers, Case Studies, E-Books, Infografiken, Video-Skripte, Social-Media-Content und E-Mail-Newsletter.' },
+          ],
+        },
+      },
+      {
+        serviceId: contentMarketingService.id,
+        locale: 'ar',
+        name: 'التسويق بالمحتوى',
+        shortDescription: 'اجذب جمهورك وتفاعل معه بمحتوى قيم واستراتيجي.',
+        fullDescription: 'ابن السلطة وادفع النمو العضوي من خلال التسويق بالمحتوى الاستراتيجي. نطور استراتيجيات محتوى شاملة تجذب وتثقف وتحول جمهورك المستهدف.',
+        features: ['استراتيجية المحتوى والتخطيط', 'كتابة منشورات المدونة والمقالات', 'الأوراق البيضاء ودراسات الحالة', 'سيناريو الفيديو والإنتاج', 'تصميم الإنفوجرافيك', 'توزيع المحتوى والترويج'],
+        benefits: ['بناء القيادة الفكرية والثقة', 'جذب حركة مرور عضوية طويلة المدى', 'دعم SEO بمحتوى عالي الجودة', 'توليد عملاء محتملين من خلال المحتوى المحمي'],
+        content: {
+          process: [
+            { step: 1, title: 'تدقيق المحتوى والاستراتيجية', description: 'نحلل محتواك الحالي ومشهد المنافسين واحتياجات الجمهور لتحديد خارطة طريق المحتوى.' },
+            { step: 2, title: 'بحث الموضوعات والكلمات المفتاحية', description: 'نحدد الموضوعات ذات القيمة العالية التي تتوافق مع نية البحث وأهداف عملك.' },
+            { step: 3, title: 'إنشاء المحتوى', description: 'ينتج كتابنا ومصممونا محتوى عالي الجودة ومحسن لـ SEO مصمم لكل قناة.' },
+            { step: 4, title: 'التوزيع والتضخيم', description: 'نوزع المحتوى عبر القنوات ونضخم الوصول من خلال الترويج وإعادة النشر وإعادة التوظيف.' },
+          ],
+          faq: [
+            { question: 'ما أنواع المحتوى التي تنشئونها؟', answer: 'ننتج منشورات المدونة والمقالات والأوراق البيضاء ودراسات الحالة والكتب الإلكترونية والإنفوجرافيك وسيناريوهات الفيديو ومحتوى وسائل التواصل الاجتماعي والنشرات الإخبارية.' },
+          ],
+        },
+      },
+      {
+        serviceId: contentMarketingService.id,
+        locale: 'ur',
+        name: 'کنٹینٹ مارکیٹنگ',
+        shortDescription: 'قیمتی، اسٹریٹجک مواد کے ساتھ اپنے سامعین کو اپنی طرف متوجہ کریں اور ان کو مشغول رکھیں۔',
+        fullDescription: 'اسٹریٹجک کنٹینٹ مارکیٹنگ کے ذریعے اتھارٹی بنائیں اور آرگینک ترقی حاصل کریں۔ ہم جامع مواد کی حکمت عملی تیار کرتے ہیں جو آپ کے ہدف سامعین کو اپنی طرف متوجہ کرتی ہے، تعلیم دیتی ہے اور تبدیل کرتی ہے۔',
+        features: ['مواد کی حکمت عملی اور منصوبہ بندی', 'بلاگ پوسٹ اور آرٹیکل رائٹنگ', 'وائٹ پیپرز اور کیس اسٹڈیز', 'ویڈیو اسکرپٹ اور پروڈکشن', 'انفوگرافک ڈیزائن', 'مواد کی تقسیم اور پروموشن'],
+        benefits: ['تھاٹ لیڈرشپ اور اعتماد بنائیں', 'طویل مدتی آرگینک ٹریفک حاصل کریں', 'معیاری مواد کے ساتھ SEO کی حمایت کریں', 'گیٹڈ کنٹینٹ کے ذریعے لیڈز جنریٹ کریں'],
+        content: {
+          process: [
+            { step: 1, title: 'مواد آڈٹ اور حکمت عملی', description: 'ہم آپ کے موجودہ مواد، حریف کے منظر نامے، اور سامعین کی ضروریات کا تجزیہ کرکے مواد کا روڈ میپ تیار کرتے ہیں۔' },
+            { step: 2, title: 'موضوع اور کی ورڈ ریسرچ', description: 'ہم سرچ انٹینٹ اور آپ کے کاروباری مقاصد کے مطابق اعلیٰ قیمت والے موضوعات کی شناخت کرتے ہیں۔' },
+            { step: 3, title: 'مواد کی تخلیق', description: 'ہمارے رائٹرز اور ڈیزائنرز ہر چینل کے لیے اعلیٰ معیار کا، SEO-آپٹیمائزڈ مواد تیار کرتے ہیں۔' },
+            { step: 4, title: 'تقسیم اور ایمپلیفیکیشن', description: 'ہم چینلز میں مواد تقسیم کرتے ہیں اور پروموشن، سنڈیکیشن، اور ری پرپزنگ کے ذریعے رسائی بڑھاتے ہیں۔' },
+          ],
+          faq: [
+            { question: 'آپ کس قسم کے مواد بناتے ہیں؟', answer: 'ہم بلاگ پوسٹس، مضامین، وائٹ پیپرز، کیس اسٹڈیز، ای بکس، انفوگرافکس، ویڈیو اسکرپٹس، سوشل میڈیا کنٹینٹ، اور ای میل نیوز لیٹرز تیار کرتے ہیں۔' },
+          ],
+        },
+      },
+    ];
+    for (const t of contentMarketingTranslations) { await prisma.serviceTranslation.upsert({ where: { serviceId_locale: { serviceId: t.serviceId, locale: t.locale } }, update: { name: t.name, shortDescription: t.shortDescription, fullDescription: t.fullDescription, features: t.features, benefits: t.benefits, content: t.content as any }, create: t as any }); }
+    console.log(`Seeded ${contentMarketingTranslations.length} translations for content-marketing`);
   }
 
   // React Native Development Translations
