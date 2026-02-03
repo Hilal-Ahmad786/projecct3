@@ -13,7 +13,7 @@ export default function ServicePortfolio({ portfolio }: { portfolio: PortfolioIt
     if (!portfolio || portfolio.length === 0) return null
 
     return (
-        <section id="portfolio" className="py-20 bg-white">
+        <section className="py-20 bg-white">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl font-bold text-gray-900 mb-4">Recent Projects</h2>

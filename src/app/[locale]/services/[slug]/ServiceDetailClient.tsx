@@ -399,7 +399,7 @@ function HeroSection({
                 Start Your Project
               </Button>
               {process.length > 0 && (
-                <Button href="#process" variant="secondary" size="lg">
+                <Button href={`/services/${service.slug}/process`} variant="secondary" size="lg">
                   How We Work
                 </Button>
               )}
@@ -514,7 +514,7 @@ function TechStrip({ technologies }: { technologies: Technology[] }) {
   const items = [...technologies, ...technologies, ...technologies];
 
   return (
-    <div id="tech-stack" className="w-full bg-gray-50 border-y border-gray-100 overflow-hidden py-8">
+    <div className="w-full bg-gray-50 border-y border-gray-100 overflow-hidden py-8">
       <div className="relative flex">
         {/* Gradient Masks */}
         <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-gray-50 to-transparent z-10" />
@@ -545,7 +545,7 @@ function FeaturesSection({ features, featureStyle }: { features: string[]; featu
   const style = featureStyle || 'icon-top';
 
   return (
-    <section id="features" className="py-24 bg-gray-50">
+    <section className="py-24 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6">
@@ -619,7 +619,7 @@ function ProcessSection({ steps, processLayout }: { steps: ProcessStep[]; proces
   const layout = processLayout || 'cards';
 
   return (
-    <section id="process" className="py-24 bg-white">
+    <section className="py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">Our Process</h2>
@@ -732,7 +732,7 @@ function FAQSection({ faq }: { faq: FAQItem[] }) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="py-24 bg-gray-50">
+    <section className="py-24 bg-gray-50">
       <div className="container mx-auto px-4 max-w-3xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">
