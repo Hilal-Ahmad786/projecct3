@@ -1,8 +1,6 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
-import Link from 'next/link';
 import { Locale, locales, defaultLocale } from '@/lib/i18n';
-import { ChevronLeftIcon } from '@heroicons/react/24/outline';
 import TechStackPageClient from './TechStackPageClient';
 
 interface PageProps {
@@ -24,8 +22,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `${service.name} Tech Stack | PakSoft`,
-    description: `Discover the technologies and tools we use for ${service.name}.`,
+    title: `${service.name} Tech Stack & Technologies | PakSoft`,
+    description: `Discover the cutting-edge technologies and tools we use for ${service.name}. Modern, scalable, and battle-tested solutions.`,
   };
 }
 
@@ -43,25 +41,12 @@ export default async function ServiceTechStackPage({ params }: PageProps) {
   const technologies = content.technologies || [];
 
   return (
-    <main className="min-h-screen bg-white">
-      {/* Back Navigation */}
-      <div className="bg-gray-50 border-b border-gray-100">
-        <div className="container mx-auto px-4 py-4">
-          <Link
-            href={`/${locale}/services/${slug}`}
-            className="inline-flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900 transition-colors"
-          >
-            <ChevronLeftIcon className="w-4 h-4" />
-            Back to {service.name}
-          </Link>
-        </div>
-      </div>
-
-      {/* Tech Stack Content */}
-      <TechStackPageClient
-        serviceName={service.name}
-        technologies={technologies}
-      />
-    </main>
+    <TechStackPageClient
+      serviceName={service.name}
+      serviceSlug={slug}
+      serviceColor={service.color}
+      technologies={technologies}
+      locale={locale}
+    />
   );
 }

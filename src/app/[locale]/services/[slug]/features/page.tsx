@@ -1,8 +1,6 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
-import Link from 'next/link';
 import { Locale, locales, defaultLocale } from '@/lib/i18n';
-import { ChevronLeftIcon } from '@heroicons/react/24/outline';
 import FeaturesPageClient from './FeaturesPageClient';
 
 interface PageProps {
@@ -24,8 +22,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `${service.name} Features | PakSoft`,
-    description: `Explore the key features and capabilities of our ${service.name} service.`,
+    title: `${service.name} Features & Capabilities | PakSoft`,
+    description: `Explore the key features and capabilities of our ${service.name} service. Discover what makes our solutions stand out.`,
   };
 }
 
@@ -43,26 +41,13 @@ export default async function ServiceFeaturesPage({ params }: PageProps) {
   const animation = (service.content as any)?.animation;
 
   return (
-    <main className="min-h-screen bg-white">
-      {/* Back Navigation */}
-      <div className="bg-gray-50 border-b border-gray-100">
-        <div className="container mx-auto px-4 py-4">
-          <Link
-            href={`/${locale}/services/${slug}`}
-            className="inline-flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900 transition-colors"
-          >
-            <ChevronLeftIcon className="w-4 h-4" />
-            Back to {service.name}
-          </Link>
-        </div>
-      </div>
-
-      {/* Features Content */}
-      <FeaturesPageClient
-        serviceName={service.name}
-        features={features}
-        featureStyle={animation?.featureStyle}
-      />
-    </main>
+    <FeaturesPageClient
+      serviceName={service.name}
+      serviceSlug={slug}
+      serviceColor={service.color}
+      features={features}
+      featureStyle={animation?.featureStyle}
+      locale={locale}
+    />
   );
 }
