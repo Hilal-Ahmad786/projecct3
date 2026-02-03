@@ -1810,14 +1810,76 @@ async function main() {
     // Web Development children
     {
       name: 'Frontend Development', slug: 'frontend-development',
-      description: 'Modern frontend web development',
-      shortDescription: 'Build fast, interactive user interfaces with React, Next.js, and modern frontend technologies.',
-      fullDescription: 'Create stunning, performant user interfaces that delight users. We specialize in React, Next.js, and modern frontend frameworks to build responsive, accessible, and lightning-fast web experiences.',
+      description: 'Modern frontend web development with cutting-edge technologies',
+      shortDescription: 'Build fast, interactive user interfaces with React, Next.js, and modern frontend technologies that deliver exceptional user experiences.',
+      fullDescription: 'Create stunning, performant user interfaces that delight users and drive conversions. We specialize in React, Next.js, and modern frontend frameworks to build responsive, accessible, and lightning-fast web experiences. Our frontend engineers combine pixel-perfect design implementation with performance optimization to deliver interfaces that load instantly and respond smoothly to user interactions.',
       icon: 'code', heroImage: '/images/services/frontend-dev-hero.jpg', color: 'blue',
-      features: ['React & Next.js Development', 'TypeScript Implementation', 'Responsive & Mobile-First Design', 'State Management', 'Component Library Development', 'Performance Optimization'],
-      benefits: ['Lightning-fast user experiences', 'Cross-browser compatibility', 'Accessible & SEO-friendly interfaces', 'Maintainable component architecture'],
-      content: { process: [{ step: 1, title: 'UI Requirements', description: 'Analyze design specs and plan frontend architecture.' }, { step: 2, title: 'Component Architecture', description: 'Design modular component system with state management.' }, { step: 3, title: 'Development & Testing', description: 'Build components with unit and integration tests.' }, { step: 4, title: 'Performance Optimization', description: 'Optimize bundle size, lazy loading, and Core Web Vitals.' }], technologies: [{ name: 'React', icon: 'react' }, { name: 'Next.js', icon: 'nextjs' }, { name: 'TypeScript', icon: 'typescript' }, { name: 'Tailwind CSS', icon: 'tailwind' }, { name: 'Zustand', icon: 'zustand' }, { name: 'Storybook', icon: 'storybook' }], faq: [{ question: 'Which frontend framework do you recommend?', answer: 'Next.js with React for most projects due to SEO, performance, and developer experience.' }, { question: 'Do you follow accessibility standards?', answer: 'Yes, we follow WCAG 2.1 AA guidelines and test with screen readers.' }, { question: 'How do you handle state management?', answer: 'Zustand or Redux Toolkit for complex state, React Query for server state.' }, { question: 'Can you work with our existing design system?', answer: 'Absolutely. We integrate with existing design systems or help build one.' }] },
-      status: 'published', featured: false, order: 31, parentSlug: 'web-development', category: 'web-software', isParent: false,
+      features: [
+        'React & Next.js Development',
+        'TypeScript Implementation',
+        'Responsive & Mobile-First Design',
+        'State Management (Redux, Zustand, Jotai)',
+        'Component Library Development',
+        'Performance Optimization & Core Web Vitals',
+        'Server-Side Rendering & Static Generation',
+        'Micro-Frontend Architecture'
+      ],
+      benefits: [
+        'Lightning-fast user experiences with sub-second load times',
+        'Cross-browser compatibility across all major browsers',
+        'Accessible & SEO-friendly interfaces following WCAG 2.1',
+        'Maintainable component architecture with design systems',
+        'Future-proof codebase with TypeScript',
+        'Optimized bundle sizes for mobile users'
+      ],
+      content: {
+        process: [
+          { step: 1, title: 'Discovery & UI Requirements', description: 'We analyze design specs, user flows, and business requirements to plan the optimal frontend architecture. This includes evaluating performance targets, browser support needs, and accessibility requirements.' },
+          { step: 2, title: 'Component Architecture Design', description: 'Design a modular, scalable component system with proper state management patterns. We create component hierarchies, define data flow, and establish coding standards for the team.' },
+          { step: 3, title: 'Iterative Development', description: 'Build components using test-driven development with unit tests, integration tests, and visual regression tests. Each component is developed in isolation using Storybook for documentation.' },
+          { step: 4, title: 'Performance Optimization', description: 'Optimize bundle size through code splitting, lazy loading, and tree shaking. We fine-tune Core Web Vitals (LCP, FID, CLS) to ensure excellent user experience and SEO rankings.' },
+          { step: 5, title: 'Quality Assurance & Launch', description: 'Comprehensive cross-browser testing, accessibility audits, and performance profiling. We ensure your frontend is production-ready with monitoring and error tracking in place.' }
+        ],
+        technologies: [
+          { name: 'React', icon: 'react' },
+          { name: 'Next.js', icon: 'nextjs' },
+          { name: 'TypeScript', icon: 'typescript' },
+          { name: 'Tailwind CSS', icon: 'tailwind' },
+          { name: 'Zustand', icon: 'zustand' },
+          { name: 'Storybook', icon: 'storybook' },
+          { name: 'Framer Motion', icon: 'framer' },
+          { name: 'React Query', icon: 'reactquery' },
+          { name: 'Vitest', icon: 'vitest' },
+          { name: 'Playwright', icon: 'playwright' }
+        ],
+        portfolio: [
+          { title: 'E-Commerce Platform Redesign', category: 'Web Application', image: '/images/portfolio/frontend-ecommerce.jpg', description: 'Complete frontend rebuild for a major retailer achieving 40% improvement in conversion rates.' },
+          { title: 'SaaS Dashboard Interface', category: 'Dashboard', image: '/images/portfolio/frontend-dashboard.jpg', description: 'Real-time analytics dashboard with complex data visualizations and interactive charts.' },
+          { title: 'Healthcare Patient Portal', category: 'Healthcare', image: '/images/portfolio/frontend-healthcare.jpg', description: 'HIPAA-compliant patient portal with appointment scheduling and telemedicine integration.' },
+          { title: 'Financial Trading Platform', category: 'FinTech', image: '/images/portfolio/frontend-fintech.jpg', description: 'High-performance trading interface with real-time data updates and complex order management.' }
+        ],
+        faq: [
+          { question: 'Which frontend framework do you recommend?', answer: 'For most projects, we recommend Next.js with React due to its excellent SEO capabilities, built-in performance optimizations, and superior developer experience. For simpler projects or SPAs, Vite with React is a great choice. We evaluate each project\'s specific needs to make the best recommendation.' },
+          { question: 'Do you follow accessibility standards?', answer: 'Absolutely. We follow WCAG 2.1 AA guidelines as a minimum standard and can achieve AAA compliance when required. Our development process includes automated accessibility testing, manual screen reader testing, and keyboard navigation verification.' },
+          { question: 'How do you handle state management?', answer: 'We choose state management solutions based on application complexity. For server state, we use React Query or SWR. For client state, we prefer Zustand for its simplicity, though we also work with Redux Toolkit, Jotai, or Recoil based on project needs. The goal is always the simplest solution that meets requirements.' },
+          { question: 'Can you work with our existing design system?', answer: 'Yes, we regularly integrate with existing design systems including Figma libraries, Storybook components, and custom design tokens. We can also help build or extend your design system with proper documentation and component APIs.' },
+          { question: 'How do you ensure frontend performance?', answer: 'We implement multiple optimization strategies: code splitting and lazy loading, image optimization with next/image, efficient CSS with Tailwind, proper caching strategies, and continuous monitoring of Core Web Vitals. We aim for Lighthouse scores of 90+ across all metrics.' },
+          { question: 'What is your testing approach?', answer: 'We follow a comprehensive testing pyramid: unit tests with Vitest/Jest for individual components, integration tests for component interactions, and end-to-end tests with Playwright for critical user flows. We also implement visual regression testing to catch unintended UI changes.' }
+        ],
+        animation: {
+          heroVisual: 'code-editor',
+          bgPattern: 'grid',
+          decorations: 'squares',
+          motion: 'type',
+          featureStyle: 'gradient-border',
+          processLayout: 'timeline',
+          particleCount: 50,
+          glowIntensity: 'medium',
+          colorScheme: 'primary',
+          animationSpeed: 'normal'
+        }
+      },
+      status: 'published', featured: true, order: 31, parentSlug: 'web-development', category: 'web-software', isParent: false,
     },
     {
       name: 'Backend Development', slug: 'backend-development',
