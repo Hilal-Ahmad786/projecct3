@@ -226,27 +226,8 @@ export default function ServiceDetailClient({ service }: { service: ServiceDetai
 
   return (
     <>
-      {/* ── Breadcrumb for child services ─────────────────────────── */}
-      {parentService && (
-        <div className="bg-gray-50 border-b border-gray-100 pt-20 lg:pt-24">
-          <div className="container mx-auto px-4 py-3">
-            <nav className="flex items-center gap-2 text-sm text-gray-500">
-              <Link href="/services" className="hover:text-gray-900 transition-colors">
-                Services
-              </Link>
-              <ChevronRightIcon className="w-3.5 h-3.5" />
-              <Link href={`/services/${parentService.slug}`} className="hover:text-gray-900 transition-colors">
-                {parentService.name}
-              </Link>
-              <ChevronRightIcon className="w-3.5 h-3.5" />
-              <span className="text-gray-900 font-medium">{service.name}</span>
-            </nav>
-          </div>
-        </div>
-      )}
-
       {/* ── 1. Hero (two-column, animated) ──────────────────────────── */}
-      <HeroSection service={service} colors={colors} accent={accent} process={process} animation={animation} hasBreadcrumb={!!parentService} />
+      <HeroSection service={service} colors={colors} accent={accent} process={process} animation={animation} />
 
       {/* ── 2. Tech Strip (scrolling) ───────────────────────────────── */}
       {technologies.length > 0 && <TechStrip technologies={technologies} />}
@@ -303,20 +284,19 @@ function HeroSection({
   accent,
   process,
   animation,
-  hasBreadcrumb = false,
 }: {
   service: ServiceDetailData;
   colors: typeof accentColors[AccentColor];
   accent: AccentColor;
   process: ProcessStep[];
   animation?: ServiceAnimation;
-  hasBreadcrumb?: boolean;
 }) {
   const emojiIcon = iconMap[service.icon || ''] || '🔧';
   const hasAnimation = !!animation;
+  const parentService = service.parentService;
 
   return (
-    <section className={`relative overflow-hidden bg-white pb-20 lg:pb-28 ${hasBreadcrumb ? 'pt-12 lg:pt-16' : 'pt-24 lg:pt-32'}`}>
+    <section className="relative overflow-hidden bg-white pt-24 pb-20 lg:pt-32 lg:pb-28">
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <ParticleNetwork className="opacity-40" />
@@ -360,6 +340,28 @@ function HeroSection({
             transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
             className="space-y-8"
           >
+            {/* Breadcrumb */}
+            <nav className="flex items-center gap-2 text-sm text-gray-400">
+              <Link href="/services" className="hover:text-gray-900 transition-colors">
+                Services
+              </Link>
+              {parentService ? (
+                <>
+                  <ChevronRightIcon className="w-3.5 h-3.5" />
+                  <Link href={`/services/${parentService.slug}`} className="hover:text-gray-900 transition-colors">
+                    {parentService.name}
+                  </Link>
+                  <ChevronRightIcon className="w-3.5 h-3.5" />
+                  <span className="text-gray-900">{service.name}</span>
+                </>
+              ) : (
+                <>
+                  <ChevronRightIcon className="w-3.5 h-3.5" />
+                  <span className="text-gray-900">{service.name}</span>
+                </>
+              )}
+            </nav>
+
             {/* Eyebrow */}
             <div className="flex items-center gap-3">
               <div className="w-8 h-0.5 bg-gray-900" />
