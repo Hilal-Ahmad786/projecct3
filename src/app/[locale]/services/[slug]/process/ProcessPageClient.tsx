@@ -112,13 +112,13 @@ export default function ProcessPageClient({
           ))}
         </div>
 
-        <div className="container mx-auto px-4 relative z-10">
-          {/* Breadcrumb */}
+        {/* Breadcrumb - Outside fading container */}
+        <div className="container mx-auto px-4 relative z-20 mb-8">
           <motion.nav
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
-            className="flex items-center gap-2 text-sm text-gray-400 mb-12"
+            className="flex items-center gap-2 text-sm text-gray-400"
           >
             <Link href={`/${locale}/services`} className="hover:text-gray-900 transition-colors">Services</Link>
             <span className="text-gray-300">/</span>
@@ -126,7 +126,9 @@ export default function ProcessPageClient({
             <span className="text-gray-300">/</span>
             <span className="text-gray-900">Process</span>
           </motion.nav>
+        </div>
 
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
             {/* Eyebrow */}
             <motion.div
