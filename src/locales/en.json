@@ -66,8 +66,11 @@
   "megaMenu": {
     "webSoftware": "Web & Software",
     "aiMl": "AI & Machine Learning",
+    "aiData": "AI & Data",
     "marketingGrowth": "Marketing & Growth",
     "infrastructure": "Infrastructure",
+    "design": "Design & Creative",
+    "consulting": "Consulting & Strategy",
     "viewAll": "View All Services",
     "services": {
       "web-development": "Web Development",
@@ -99,7 +102,199 @@
       "mlops-deployment": "MLOps Deployment",
       "data-analytics": "Data Analytics",
       "cybersecurity": "Cybersecurity",
-      "cloud-migration": "Cloud Migration"
+      "cloud-migration": "Cloud Migration",
+      "frontend-development": "Frontend Development",
+      "backend-development": "Backend Development",
+      "progressive-web-apps": "Progressive Web Apps",
+      "shopify-development": "Shopify Development",
+      "woocommerce-development": "WooCommerce Development",
+      "marketplace-development": "Marketplace Development",
+      "rest-api-development": "REST API Development",
+      "graphql-development": "GraphQL Development",
+      "third-party-api-integration": "Third-Party API Integration",
+      "ui-design": "UI Design",
+      "ux-research": "UX Research",
+      "prototyping-wireframing": "Prototyping & Wireframing",
+      "ios-development": "iOS Development",
+      "android-development": "Android Development",
+      "flutter-development": "Flutter Development",
+      "logo-brand-identity": "Logo & Brand Identity",
+      "print-packaging-design": "Print & Packaging Design",
+      "motion-graphics": "Motion Graphics",
+      "ai-consulting-strategy": "AI Consulting & Strategy",
+      "custom-ai-development": "Custom AI Development",
+      "predictive-analytics": "Predictive Analytics",
+      "nlp-text-processing": "NLP & Text Processing",
+      "recommendation-systems": "Recommendation Systems",
+      "chatbot-development": "Chatbot Development",
+      "voice-assistant-development": "Voice Assistant Development",
+      "technical-seo": "Technical SEO",
+      "local-seo": "Local SEO",
+      "link-building": "Link Building",
+      "google-search-ads": "Google Search Ads",
+      "google-display-ads": "Google Display Ads",
+      "youtube-ads": "YouTube Ads",
+      "facebook-ads": "Facebook Ads",
+      "instagram-ads": "Instagram Ads",
+      "social-media-management": "Social Media Management",
+      "influencer-marketing": "Influencer Marketing",
+      "email-automation": "Email Automation",
+      "newsletter-design": "Newsletter Design",
+      "blog-copywriting": "Blog & Copywriting",
+      "video-production-marketing": "Video Production & Marketing",
+      "web-scraping": "Web Scraping",
+      "workflow-automation": "Workflow Automation",
+      "ci-cd-pipelines": "CI/CD Pipelines",
+      "docker-kubernetes": "Docker & Kubernetes",
+      "cloud-management": "Cloud Management",
+      "business-intelligence": "Business Intelligence",
+      "big-data-etl": "Big Data & ETL",
+      "penetration-testing": "Penetration Testing",
+      "security-audits-compliance": "Security Audits & Compliance",
+      "full-stack-development": "Full-Stack Development",
+      "headless-cms-development": "Headless CMS Development",
+      "jamstack-development": "Jamstack Development",
+      "magento-development": "Magento Development",
+      "custom-ecommerce": "Custom E-Commerce",
+      "b2b-ecommerce": "B2B E-Commerce",
+      "react-native-development": "React Native Development",
+      "cross-platform-apps": "Cross-Platform Apps",
+      "api-gateway": "API Gateway",
+      "mvp-development": "MVP Development",
+      "multi-tenant-architecture": "Multi-Tenant Architecture",
+      "saas-migration": "SaaS Migration",
+      "custom-wordpress-themes": "Custom WordPress Themes",
+      "wordpress-plugin-development": "WordPress Plugin Development",
+      "wordpress-optimization": "WordPress Optimization",
+      "enterprise-software": "Enterprise Software",
+      "crm-development": "CRM Development",
+      "erp-development": "ERP Development",
+      "hrms-development": "HRMS Development",
+      "custom-business-software": "Custom Business Software",
+      "web3-blockchain": "Web3 & Blockchain",
+      "smart-contracts": "Smart Contracts",
+      "dapp-development": "DApp Development",
+      "nft-marketplace": "NFT Marketplace",
+      "defi-solutions": "DeFi Solutions",
+      "tokenization": "Tokenization",
+      "no-code-low-code": "No-Code/Low-Code",
+      "bubble-development": "Bubble Development",
+      "webflow-development": "Webflow Development",
+      "airtable-solutions": "Airtable Solutions",
+      "zapier-automation": "Zapier Automation",
+      "llm-services": "LLM Services",
+      "ai-integration": "AI Integration",
+      "ai-poc-mvp": "AI POC/MVP",
+      "anomaly-detection": "Anomaly Detection",
+      "time-series-forecasting": "Time Series Forecasting",
+      "whatsapp-bots": "WhatsApp Bots",
+      "customer-service-ai": "Customer Service AI",
+      "image-recognition": "Image Recognition",
+      "object-detection": "Object Detection",
+      "video-analytics": "Video Analytics",
+      "ocr-document-processing": "OCR & Document Processing",
+      "gpt-claude-api-integration": "GPT/Claude API Integration",
+      "custom-llm-development": "Custom LLM Development",
+      "autonomous-agents": "Autonomous Agents",
+      "multi-agent-systems": "Multi-Agent Systems",
+      "ai-workflow-automation": "AI Workflow Automation",
+      "knowledge-base-ai": "Knowledge Base AI",
+      "document-qa": "Document Q&A",
+      "enterprise-search-ai": "Enterprise Search AI",
+      "data-pipeline-automation": "Data Pipeline Automation",
+      "rpa-solutions": "RPA Solutions",
+      "international-seo": "International SEO",
+      "ecommerce-seo": "E-Commerce SEO",
+      "geo-ai-search-optimization": "GEO / AI Search Optimization",
+      "google-shopping": "Google Shopping",
+      "performance-max": "Performance Max",
+      "advantage-plus-campaigns": "Advantage+ Campaigns",
+      "community-management": "Community Management",
+      "social-commerce": "Social Commerce",
+      "tiktok-marketing": "TikTok Marketing",
+      "tiktok-shop": "TikTok Shop",
+      "tiktok-content": "TikTok Content",
+      "linkedin-marketing": "LinkedIn Marketing",
+      "linkedin-lead-gen": "LinkedIn Lead Gen",
+      "company-page-management": "Company Page Management",
+      "whatsapp-marketing": "WhatsApp Marketing",
+      "whatsapp-business-api": "WhatsApp Business API",
+      "whatsapp-campaigns": "WhatsApp Campaigns",
+      "whatsapp-commerce": "WhatsApp Commerce",
+      "email-deliverability": "Email Deliverability",
+      "content-strategy": "Content Strategy",
+      "podcast-production": "Podcast Production",
+      "cro": "Conversion Rate Optimization",
+      "ab-testing": "A/B Testing",
+      "landing-page-optimization": "Landing Page Optimization",
+      "funnel-optimization": "Funnel Optimization",
+      "ux-analytics": "UX Analytics",
+      "marketing-automation": "Marketing Automation",
+      "hubspot-implementation": "HubSpot Implementation",
+      "salesforce-marketing-cloud": "Salesforce Marketing Cloud",
+      "custom-marketing-automation": "Custom Marketing Automation",
+      "marketplace-ads": "Marketplace Ads",
+      "amazon-ppc": "Amazon PPC",
+      "trendyol-ads": "Trendyol Ads",
+      "app-store-optimization": "App Store Optimization",
+      "design-systems": "Design Systems",
+      "mobile-app-design": "Mobile App Design",
+      "social-media-graphics": "Social Media Graphics",
+      "presentation-design": "Presentation Design",
+      "explainer-videos": "Explainer Videos",
+      "social-animations": "Social Animations",
+      "product-animations": "Product Animations",
+      "web-design": "Web Design",
+      "corporate-website-design": "Corporate Website Design",
+      "landing-page-design": "Landing Page Design",
+      "ecommerce-design": "E-Commerce Design",
+      "brand-strategy": "Brand Strategy",
+      "brand-positioning": "Brand Positioning",
+      "brand-guidelines": "Brand Guidelines",
+      "rebranding": "Rebranding",
+      "3d-ar-vr": "3D & AR/VR",
+      "3d-product-visualization": "3D Product Visualization",
+      "ar-experiences": "AR Experiences",
+      "virtual-tours": "Virtual Tours",
+      "infrastructure-as-code": "Infrastructure as Code",
+      "aws-migration": "AWS Migration",
+      "azure-migration": "Azure Migration",
+      "google-cloud-migration": "Google Cloud Migration",
+      "model-deployment": "Model Deployment",
+      "model-monitoring": "Model Monitoring",
+      "ml-pipelines": "ML Pipelines",
+      "data-visualization": "Data Visualization",
+      "real-time-analytics": "Real-Time Analytics",
+      "gdpr-compliance": "GDPR Compliance",
+      "soc2-compliance": "SOC 2 Compliance",
+      "database-services": "Database Services",
+      "database-design": "Database Design",
+      "database-optimization": "Database Optimization",
+      "database-migration": "Database Migration",
+      "performance-optimization": "Performance Optimization",
+      "website-speed-optimization": "Website Speed Optimization",
+      "core-web-vitals": "Core Web Vitals",
+      "server-optimization": "Server Optimization",
+      "managed-services": "Managed Services",
+      "continuous-monitoring": "24/7 Monitoring",
+      "maintenance-support": "Maintenance & Support",
+      "disaster-recovery": "Disaster Recovery",
+      "digital-transformation": "Digital Transformation",
+      "digital-strategy": "Digital Strategy",
+      "process-digitization": "Process Digitization",
+      "technology-consulting": "Technology Consulting",
+      "tech-stack-assessment": "Tech Stack Assessment",
+      "architecture-design": "Architecture Design",
+      "ai-strategy": "AI Strategy",
+      "ai-readiness-assessment": "AI Readiness Assessment",
+      "ai-roi-analysis": "AI ROI Analysis",
+      "growth-strategy": "Growth Strategy",
+      "startup-services": "Startup Services",
+      "startup-mvp-development": "Startup MVP Development",
+      "technical-cto": "Technical CTO",
+      "staff-augmentation": "Staff Augmentation",
+      "developer-outsourcing": "Developer Outsourcing",
+      "dedicated-teams": "Dedicated Teams"
     }
   },
   "hero": {
@@ -221,9 +416,11 @@
       "subtitle": "We deliver comprehensive digital solutions that drive growth and efficiency for modern businesses.",
       "categories": {
         "web": "Web & Software",
-        "ai": "AI & ML",
+        "ai": "AI & Data",
         "marketing": "Marketing & Growth",
-        "infrastructure": "Infrastructure"
+        "infrastructure": "Infrastructure",
+        "design": "Design & Creative",
+        "consulting": "Consulting & Strategy"
       },
       "readyToStart": "Ready to Get Started?",
       "readyDescription": "Let's discuss your project and explore how we can help you achieve your goals.",
@@ -261,8 +458,8 @@
           "NLP Solutions"
         ]
       },
-      "aiIntegration": {
-        "title": "AI Integration",
+      "aiSolutions": {
+        "title": "AI Solutions",
         "description": "Seamlessly integrate AI capabilities into your existing systems and workflows.",
         "features": [
           "API Integration",
@@ -271,7 +468,7 @@
           "Monitoring"
         ]
       },
-      "conversationalAI": {
+      "conversationalAi": {
         "title": "Conversational AI",
         "description": "Intelligent chatbots and virtual assistants for enhanced customer engagement.",
         "features": [
@@ -291,8 +488,8 @@
           "Documentation"
         ]
       },
-      "webApplications": {
-        "title": "Web Applications",
+      "webDevelopment": {
+        "title": "Web Development",
         "description": "Modern, responsive web applications built with cutting-edge technologies.",
         "features": [
           "React/Next.js",
@@ -303,12 +500,12 @@
       },
       "fullStackDevelopment": {
         "title": "Full-Stack Development",
-        "description": "Complete web solutions from database design to user interface implementation.",
+        "description": "End-to-end web application development combining frontend and backend expertise.",
         "features": [
-          "Frontend & Backend",
-          "Database Design",
-          "Security Implementation",
-          "Testing"
+          "MERN/MEAN Stack",
+          "Next.js Full-Stack",
+          "Database Integration",
+          "API Development"
         ]
       },
       "mobileDevelopment": {
@@ -321,7 +518,7 @@
           "App Store Deployment"
         ]
       },
-      "uiuxDesign": {
+      "uiUxDesign": {
         "title": "UI/UX Design",
         "description": "User-centered design solutions that prioritize usability and aesthetic appeal.",
         "features": [
@@ -461,8 +658,8 @@
           "Post-Migration Optimization"
         ]
       },
-      "ecommerceSolutions": {
-        "title": "E-Commerce Solutions",
+      "eCommerce": {
+        "title": "E-Commerce",
         "description": "Complete e-commerce platforms with payment integration and inventory management.",
         "features": [
           "Payment Processing",
@@ -471,8 +668,8 @@
           "Customer Portal"
         ]
       },
-      "devopsInfrastructure": {
-        "title": "DevOps & Infrastructure",
+      "devopsCloud": {
+        "title": "DevOps & Cloud",
         "description": "Streamlined deployment pipelines and scalable cloud infrastructure solutions.",
         "features": [
           "CI/CD Pipelines",
@@ -540,7 +737,967 @@
           "RLHF Implementation",
           "Model Evaluation"
         ]
+      },
+      "frontendDevelopment": {
+        "title": "Frontend Development",
+        "description": "Build fast, interactive user interfaces with React, Next.js, and modern frontend technologies.",
+        "features": ["React & Next.js", "TypeScript", "Responsive Design", "Performance Optimization"]
+      },
+      "backendDevelopment": {
+        "title": "Backend Development",
+        "description": "Build robust, scalable backend systems with Node.js, Python, and cloud-native architectures.",
+        "features": ["Node.js & Express", "Python & Django", "Database Design", "Microservices"]
+      },
+      "progressiveWebApps": {
+        "title": "Progressive Web Apps",
+        "description": "Deliver app-like experiences on the web with offline support and push notifications.",
+        "features": ["Offline Support", "Push Notifications", "Installable", "Service Workers"]
+      },
+      "shopifyDevelopment": {
+        "title": "Shopify Development",
+        "description": "Custom Shopify stores and apps that drive sales and deliver exceptional shopping experiences.",
+        "features": ["Custom Themes", "Shopify Apps", "Payment Integration", "Store Optimization"]
+      },
+      "woocommerceDevelopment": {
+        "title": "WooCommerce Development",
+        "description": "Powerful WooCommerce solutions for WordPress-based online stores.",
+        "features": ["Custom Plugins", "Payment Gateways", "Inventory Management", "Performance Tuning"]
+      },
+      "marketplaceDevelopment": {
+        "title": "Marketplace Development",
+        "description": "Multi-vendor marketplace platforms connecting buyers and sellers.",
+        "features": ["Multi-Vendor Support", "Payment Splitting", "Review Systems", "Search & Filtering"]
+      },
+      "restApiDevelopment": {
+        "title": "REST API Development",
+        "description": "Well-designed RESTful APIs that power web and mobile applications.",
+        "features": ["RESTful Design", "Authentication", "Rate Limiting", "API Documentation"]
+      },
+      "graphqlDevelopment": {
+        "title": "GraphQL Development",
+        "description": "Flexible GraphQL APIs for efficient data fetching and real-time updates.",
+        "features": ["Schema Design", "Resolvers", "Subscriptions", "Performance Optimization"]
+      },
+      "thirdPartyApiIntegration": {
+        "title": "Third-Party API Integration",
+        "description": "Seamless integration with payment gateways, CRMs, and external services.",
+        "features": ["Payment APIs", "CRM Integration", "Social APIs", "Webhook Setup"]
+      },
+      "uiDesign": {
+        "title": "UI Design",
+        "description": "Beautiful, intuitive interface designs that engage users and reinforce your brand.",
+        "features": ["Visual Design", "Design Systems", "Responsive Layouts", "Brand Consistency"]
+      },
+      "uxResearch": {
+        "title": "UX Research",
+        "description": "Data-driven UX research to understand user needs and optimize experiences.",
+        "features": ["User Interviews", "Usability Testing", "Analytics Review", "Persona Development"]
+      },
+      "prototypingWireframing": {
+        "title": "Prototyping & Wireframing",
+        "description": "Interactive prototypes and wireframes to validate ideas before development.",
+        "features": ["Wireframes", "Interactive Prototypes", "User Flow Mapping", "Stakeholder Presentations"]
+      },
+      "iosDevelopment": {
+        "title": "iOS Development",
+        "description": "Native iOS apps built with Swift for optimal performance on Apple devices.",
+        "features": ["Swift & SwiftUI", "App Store Optimization", "Push Notifications", "In-App Purchases"]
+      },
+      "androidDevelopment": {
+        "title": "Android Development",
+        "description": "Native Android apps built with Kotlin for the world's most popular mobile platform.",
+        "features": ["Kotlin & Jetpack", "Material Design", "Google Play Store", "Background Services"]
+      },
+      "flutterDevelopment": {
+        "title": "Flutter Development",
+        "description": "Cross-platform mobile apps with Flutter for iOS and Android from a single codebase.",
+        "features": ["Single Codebase", "Native Performance", "Custom Widgets", "Hot Reload"]
+      },
+      "logoBrandIdentity": {
+        "title": "Logo & Brand Identity",
+        "description": "Distinctive logos and brand identity systems that make your business memorable.",
+        "features": ["Logo Design", "Brand Guidelines", "Color Palette", "Typography Selection"]
+      },
+      "printPackagingDesign": {
+        "title": "Print & Packaging Design",
+        "description": "Eye-catching print materials and packaging designs that stand out.",
+        "features": ["Business Cards", "Brochures", "Product Packaging", "Marketing Collateral"]
+      },
+      "motionGraphics": {
+        "title": "Motion Graphics",
+        "description": "Engaging motion graphics and animations that bring your brand to life.",
+        "features": ["Brand Animations", "Explainer Videos", "Social Media Content", "UI Animations"]
+      },
+      "aiConsultingStrategy": {
+        "title": "AI Consulting & Strategy",
+        "description": "Strategic AI consulting to identify opportunities and plan implementation.",
+        "features": ["AI Readiness Assessment", "Strategy Roadmap", "ROI Analysis", "Vendor Evaluation"]
+      },
+      "customAiDevelopment": {
+        "title": "Custom AI Development",
+        "description": "Bespoke AI solutions tailored to your unique business challenges.",
+        "features": ["Custom Models", "Data Pipeline", "Model Training", "Production Deployment"]
+      },
+      "predictiveAnalytics": {
+        "title": "Predictive Analytics",
+        "description": "ML models that forecast trends, predict outcomes, and drive data-informed decisions.",
+        "features": ["Forecasting Models", "Anomaly Detection", "Churn Prediction", "Demand Planning"]
+      },
+      "nlpTextProcessing": {
+        "title": "NLP & Text Processing",
+        "description": "Natural language processing solutions for text analysis and understanding.",
+        "features": ["Sentiment Analysis", "Text Classification", "Entity Recognition", "Language Translation"]
+      },
+      "recommendationSystems": {
+        "title": "Recommendation Systems",
+        "description": "Personalized recommendation engines that boost engagement and conversions.",
+        "features": ["Collaborative Filtering", "Content-Based", "Hybrid Systems", "A/B Testing"]
+      },
+      "chatbotDevelopment": {
+        "title": "Chatbot Development",
+        "description": "Intelligent chatbots that handle customer inquiries and automate support.",
+        "features": ["NLU Integration", "Multi-Channel", "Conversation Design", "Analytics Dashboard"]
+      },
+      "voiceAssistantDevelopment": {
+        "title": "Voice Assistant Development",
+        "description": "Custom voice assistants for Alexa, Google Assistant, and proprietary platforms.",
+        "features": ["Voice UI Design", "Speech Recognition", "Multi-Platform", "Custom Wake Words"]
+      },
+      "technicalSeo": {
+        "title": "Technical SEO",
+        "description": "Fix technical issues that prevent search engines from crawling and indexing your site.",
+        "features": ["Site Speed", "Core Web Vitals", "Schema Markup", "Crawl Optimization"]
+      },
+      "localSeo": {
+        "title": "Local SEO",
+        "description": "Dominate local search results and attract customers in your area.",
+        "features": ["Google Business Profile", "Local Citations", "Review Management", "Local Content"]
+      },
+      "linkBuilding": {
+        "title": "Link Building",
+        "description": "Strategic link building campaigns that boost your domain authority.",
+        "features": ["Outreach Campaigns", "Guest Posting", "Digital PR", "Competitor Analysis"]
+      },
+      "googleSearchAds": {
+        "title": "Google Search Ads",
+        "description": "High-converting Google Search campaigns that capture intent-driven traffic.",
+        "features": ["Keyword Research", "Ad Copywriting", "Bid Management", "Conversion Tracking"]
+      },
+      "googleDisplayAds": {
+        "title": "Google Display Ads",
+        "description": "Visual display campaigns across Google's network for brand awareness.",
+        "features": ["Banner Design", "Audience Targeting", "Remarketing", "Performance Reporting"]
+      },
+      "youtubeAds": {
+        "title": "YouTube Ads",
+        "description": "Video advertising campaigns on YouTube to reach your target audience.",
+        "features": ["Video Ad Creation", "Audience Targeting", "TrueView Ads", "Performance Analytics"]
+      },
+      "facebookAds": {
+        "title": "Facebook Ads",
+        "description": "Targeted Facebook advertising campaigns that drive engagement and conversions.",
+        "features": ["Audience Targeting", "Ad Creative", "Retargeting", "Conversion Optimization"]
+      },
+      "instagramAds": {
+        "title": "Instagram Ads",
+        "description": "Visual Instagram campaigns that connect with your audience through compelling content.",
+        "features": ["Story Ads", "Reels Ads", "Shopping Ads", "Influencer Partnerships"]
+      },
+      "socialMediaManagement": {
+        "title": "Social Media Management",
+        "description": "Full-service social media management to grow your online presence.",
+        "features": ["Content Calendar", "Community Management", "Analytics", "Brand Voice"]
+      },
+      "influencerMarketing": {
+        "title": "Influencer Marketing",
+        "description": "Strategic influencer partnerships that amplify your brand reach.",
+        "features": ["Influencer Discovery", "Campaign Management", "Content Collaboration", "ROI Tracking"]
+      },
+      "emailAutomation": {
+        "title": "Email Automation",
+        "description": "Automated email workflows that nurture leads and drive conversions.",
+        "features": ["Drip Campaigns", "Behavioral Triggers", "Segmentation", "A/B Testing"]
+      },
+      "newsletterDesign": {
+        "title": "Newsletter Design",
+        "description": "Engaging newsletter designs that keep your audience informed and connected.",
+        "features": ["Template Design", "Content Strategy", "Subscriber Growth", "Analytics"]
+      },
+      "blogCopywriting": {
+        "title": "Blog & Copywriting",
+        "description": "SEO-optimized content that drives organic traffic and establishes authority.",
+        "features": ["Blog Posts", "Landing Pages", "SEO Copywriting", "Content Strategy"]
+      },
+      "videoProductionMarketing": {
+        "title": "Video Production & Marketing",
+        "description": "Professional video content that tells your brand story and engages audiences.",
+        "features": ["Video Production", "Editing & Post", "Distribution Strategy", "Performance Tracking"]
+      },
+      "webScraping": {
+        "title": "Web Scraping",
+        "description": "Automated data extraction from websites for market research and analysis.",
+        "features": ["Custom Scrapers", "Data Cleaning", "Scheduled Extraction", "Anti-Detection"]
+      },
+      "workflowAutomation": {
+        "title": "Workflow Automation",
+        "description": "Automate repetitive business processes to save time and reduce errors.",
+        "features": ["Process Mapping", "Tool Integration", "Custom Scripts", "Monitoring"]
+      },
+      "ciCdPipelines": {
+        "title": "CI/CD Pipelines",
+        "description": "Automated build, test, and deployment pipelines for reliable software delivery.",
+        "features": ["GitHub Actions", "Jenkins", "Automated Testing", "Deployment Automation"]
+      },
+      "dockerKubernetes": {
+        "title": "Docker & Kubernetes",
+        "description": "Container orchestration for scalable, portable application deployments.",
+        "features": ["Docker Setup", "Kubernetes Clusters", "Helm Charts", "Auto-Scaling"]
+      },
+      "cloudManagement": {
+        "title": "Cloud Management",
+        "description": "Comprehensive cloud infrastructure management across AWS, Azure, and GCP.",
+        "features": ["Cost Optimization", "Security Monitoring", "Performance Tuning", "Disaster Recovery"]
+      },
+      "businessIntelligence": {
+        "title": "Business Intelligence",
+        "description": "BI dashboards and reporting that turn data into actionable business insights.",
+        "features": ["Dashboard Design", "KPI Tracking", "Data Visualization", "Custom Reports"]
+      },
+      "bigDataEtl": {
+        "title": "Big Data & ETL",
+        "description": "Large-scale data processing and ETL pipelines for data warehousing.",
+        "features": ["ETL Pipelines", "Data Warehousing", "Stream Processing", "Data Quality"]
+      },
+      "penetrationTesting": {
+        "title": "Penetration Testing",
+        "description": "Comprehensive security testing to identify vulnerabilities before attackers do.",
+        "features": ["Web App Testing", "Network Testing", "API Security", "Detailed Reports"]
+      },
+      "securityAuditsCompliance": {
+        "title": "Security Audits & Compliance",
+        "description": "Security audits and compliance assessments for regulatory requirements.",
+        "features": ["GDPR Compliance", "SOC 2 Audits", "Security Policies", "Risk Assessment"]
+      },
+      "headlessCmsDevelopment": {
+        "title": "Headless CMS Development",
+        "description": "Decoupled content management systems for flexible, multi-channel content delivery.",
+        "features": ["Strapi & Contentful", "Sanity.io", "API-First Architecture", "Multi-Channel Publishing"]
+      },
+      "jamstackDevelopment": {
+        "title": "Jamstack Development",
+        "description": "Modern Jamstack websites with pre-rendered pages and serverless functions.",
+        "features": ["Static Site Generation", "Serverless Functions", "CDN Deployment", "Headless Integration"]
+      },
+      "magentoDevelopment": {
+        "title": "Magento Development",
+        "description": "Enterprise-grade Magento e-commerce solutions for large-scale online stores.",
+        "features": ["Magento 2", "Custom Extensions", "Multi-Store Setup", "Performance Tuning"]
+      },
+      "customEcommerce": {
+        "title": "Custom E-Commerce",
+        "description": "Bespoke e-commerce platforms built to your exact business requirements.",
+        "features": ["Custom Cart Systems", "Payment Integration", "Inventory Management", "Order Automation"]
+      },
+      "b2bEcommerce": {
+        "title": "B2B E-Commerce",
+        "description": "Business-to-business e-commerce platforms with bulk ordering and account management.",
+        "features": ["Bulk Pricing", "Account Management", "Quote Systems", "ERP Integration"]
+      },
+      "reactNativeDevelopment": {
+        "title": "React Native Development",
+        "description": "Cross-platform mobile apps with React Native for iOS and Android.",
+        "features": ["Code Sharing", "Native Modules", "Hot Reloading", "Expo Framework"]
+      },
+      "crossPlatformApps": {
+        "title": "Cross-Platform Apps",
+        "description": "Build once, deploy everywhere with modern cross-platform frameworks.",
+        "features": ["Shared Codebase", "Native Performance", "Platform-Specific UI", "OTA Updates"]
+      },
+      "apiGateway": {
+        "title": "API Gateway",
+        "description": "Centralized API gateway solutions for microservices orchestration and management.",
+        "features": ["Rate Limiting", "Authentication", "Load Balancing", "API Versioning"]
+      },
+      "mvpDevelopment": {
+        "title": "MVP Development",
+        "description": "Rapid minimum viable product development to validate your SaaS idea.",
+        "features": ["Rapid Prototyping", "Core Feature Focus", "User Feedback Loops", "Iterative Development"]
+      },
+      "multiTenantArchitecture": {
+        "title": "Multi-Tenant Architecture",
+        "description": "Scalable multi-tenant SaaS architectures for serving multiple customers.",
+        "features": ["Data Isolation", "Tenant Management", "Scalable Infrastructure", "Custom Branding"]
+      },
+      "saasMigration": {
+        "title": "SaaS Migration",
+        "description": "Migrate legacy applications to modern SaaS architectures.",
+        "features": ["Architecture Assessment", "Data Migration", "Cloud Deployment", "Zero-Downtime Migration"]
+      },
+      "customWordpressThemes": {
+        "title": "Custom WordPress Themes",
+        "description": "Bespoke WordPress themes designed and built for your brand.",
+        "features": ["Custom Design", "Gutenberg Blocks", "Theme Customizer", "Performance Optimized"]
+      },
+      "wordpressPluginDevelopment": {
+        "title": "WordPress Plugin Development",
+        "description": "Custom WordPress plugins to extend functionality for your specific needs.",
+        "features": ["Custom Functionality", "API Integration", "WooCommerce Plugins", "Security Best Practices"]
+      },
+      "wordpressOptimization": {
+        "title": "WordPress Optimization",
+        "description": "Speed up and secure your WordPress site for peak performance.",
+        "features": ["Speed Optimization", "Security Hardening", "Database Cleanup", "Caching Setup"]
+      },
+      "enterpriseSoftware": {
+        "title": "Enterprise Software",
+        "description": "Custom enterprise software solutions to streamline business operations.",
+        "features": ["CRM Systems", "ERP Solutions", "Workflow Automation", "System Integration"]
+      },
+      "crmDevelopment": {
+        "title": "CRM Development",
+        "description": "Custom CRM solutions to manage customer relationships and sales pipelines.",
+        "features": ["Contact Management", "Sales Pipeline", "Email Integration", "Analytics Dashboard"]
+      },
+      "erpDevelopment": {
+        "title": "ERP Development",
+        "description": "Enterprise resource planning systems to unify business processes.",
+        "features": ["Financial Management", "Supply Chain", "HR Module", "Reporting"]
+      },
+      "hrmsDevelopment": {
+        "title": "HRMS Development",
+        "description": "Human resource management systems for employee lifecycle management.",
+        "features": ["Employee Portal", "Payroll Integration", "Leave Management", "Performance Reviews"]
+      },
+      "customBusinessSoftware": {
+        "title": "Custom Business Software",
+        "description": "Tailored software solutions designed around your unique business processes.",
+        "features": ["Process Automation", "Custom Workflows", "Integration APIs", "Scalable Architecture"]
+      },
+      "web3Blockchain": {
+        "title": "Web3 & Blockchain",
+        "description": "Decentralized applications and blockchain solutions for the next web.",
+        "features": ["Smart Contracts", "DApp Development", "Token Economics", "DeFi Protocols"]
+      },
+      "smartContracts": {
+        "title": "Smart Contracts",
+        "description": "Secure, audited smart contracts on Ethereum, Solana, and other chains.",
+        "features": ["Solidity Development", "Security Audits", "Gas Optimization", "Multi-Chain Support"]
+      },
+      "dappDevelopment": {
+        "title": "DApp Development",
+        "description": "Decentralized applications with Web3 wallet integration and on-chain logic.",
+        "features": ["Wallet Integration", "On-Chain Logic", "IPFS Storage", "Cross-Chain Support"]
+      },
+      "nftMarketplace": {
+        "title": "NFT Marketplace",
+        "description": "Custom NFT marketplace platforms for minting, buying, and selling digital assets.",
+        "features": ["Minting Engine", "Auction System", "Royalty Management", "Multi-Chain Support"]
+      },
+      "defiSolutions": {
+        "title": "DeFi Solutions",
+        "description": "Decentralized finance protocols including lending, staking, and yield farming.",
+        "features": ["Lending Protocols", "Staking Platforms", "Yield Farming", "Liquidity Pools"]
+      },
+      "tokenization": {
+        "title": "Tokenization",
+        "description": "Asset tokenization and token creation for fundraising and digital ownership.",
+        "features": ["Token Design", "ICO/IDO Launch", "Governance Tokens", "Compliance"]
+      },
+      "noCodeLowCode": {
+        "title": "No-Code/Low-Code",
+        "description": "Rapid application development using no-code and low-code platforms.",
+        "features": ["Bubble Apps", "Webflow Sites", "Workflow Automation", "Database Solutions"]
+      },
+      "bubbleDevelopment": {
+        "title": "Bubble Development",
+        "description": "Full-featured web applications built on the Bubble no-code platform.",
+        "features": ["Custom Workflows", "Database Design", "Plugin Integration", "Responsive Design"]
+      },
+      "webflowDevelopment": {
+        "title": "Webflow Development",
+        "description": "Pixel-perfect websites built and managed in Webflow.",
+        "features": ["Visual Development", "CMS Integration", "E-Commerce", "Custom Animations"]
+      },
+      "airtableSolutions": {
+        "title": "Airtable Solutions",
+        "description": "Custom Airtable databases and automations for business operations.",
+        "features": ["Database Design", "Automation Scripts", "Interface Design", "Integration Setup"]
+      },
+      "zapierAutomation": {
+        "title": "Zapier Automation",
+        "description": "Connect and automate workflows across thousands of apps with Zapier.",
+        "features": ["Multi-Step Zaps", "Custom Logic", "Error Handling", "Scheduled Triggers"]
+      },
+      "llmServices": {
+        "title": "LLM Services",
+        "description": "Large language model services including fine-tuning, integration, and custom development.",
+        "features": ["Model Fine-Tuning", "API Integration", "Custom LLMs", "Prompt Engineering"]
+      },
+      "aiIntegration": {
+        "title": "AI Integration",
+        "description": "Seamlessly integrate AI capabilities into your existing applications and workflows.",
+        "features": ["API Integration", "Model Deployment", "Data Pipeline Setup", "Performance Monitoring"]
+      },
+      "aiPocMvp": {
+        "title": "AI POC/MVP",
+        "description": "Rapid AI proof-of-concept and MVP development to validate AI use cases.",
+        "features": ["Feasibility Analysis", "Rapid Prototyping", "Data Assessment", "ROI Projection"]
+      },
+      "anomalyDetection": {
+        "title": "Anomaly Detection",
+        "description": "ML-powered anomaly detection for fraud prevention and system monitoring.",
+        "features": ["Real-Time Detection", "Pattern Recognition", "Alert Systems", "Model Training"]
+      },
+      "timeSeriesForecasting": {
+        "title": "Time Series Forecasting",
+        "description": "Predictive models for demand forecasting, financial analysis, and trend prediction.",
+        "features": ["Demand Forecasting", "Financial Modeling", "Seasonal Analysis", "Multi-Variate Models"]
+      },
+      "whatsappBots": {
+        "title": "WhatsApp Bots",
+        "description": "Automated WhatsApp chatbots for customer engagement and support.",
+        "features": ["WhatsApp Business API", "Natural Language Understanding", "Rich Media Messages", "CRM Integration"]
+      },
+      "customerServiceAi": {
+        "title": "Customer Service AI",
+        "description": "AI-powered customer service automation for faster resolution and support.",
+        "features": ["Ticket Routing", "Auto-Response", "Sentiment Analysis", "Knowledge Base Integration"]
+      },
+      "imageRecognition": {
+        "title": "Image Recognition",
+        "description": "Custom image recognition models for classification and visual search.",
+        "features": ["Image Classification", "Visual Search", "Brand Detection", "Quality Inspection"]
+      },
+      "objectDetection": {
+        "title": "Object Detection",
+        "description": "Real-time object detection models for tracking and counting.",
+        "features": ["Real-Time Detection", "Multi-Object Tracking", "Custom Training", "Edge Deployment"]
+      },
+      "videoAnalytics": {
+        "title": "Video Analytics",
+        "description": "AI-powered video analysis for surveillance, retail, and manufacturing.",
+        "features": ["Motion Detection", "People Counting", "Behavior Analysis", "Real-Time Processing"]
+      },
+      "ocrDocumentProcessing": {
+        "title": "OCR & Document Processing",
+        "description": "Intelligent document processing with OCR and data extraction.",
+        "features": ["Text Extraction", "Form Processing", "Invoice Parsing", "Multi-Language Support"]
+      },
+      "gptClaudeApiIntegration": {
+        "title": "GPT/Claude API Integration",
+        "description": "Integrate OpenAI GPT and Anthropic Claude APIs into your applications.",
+        "features": ["API Setup", "Prompt Engineering", "Fine-Tuning", "Cost Optimization"]
+      },
+      "customLlmDevelopment": {
+        "title": "Custom LLM Development",
+        "description": "Build and train custom large language models for your domain.",
+        "features": ["Custom Training Data", "Domain Adaptation", "Model Evaluation", "Deployment Pipeline"]
+      },
+      "autonomousAgents": {
+        "title": "Autonomous Agents",
+        "description": "Self-directed AI agents that complete complex tasks independently.",
+        "features": ["Goal-Oriented Planning", "Tool Usage", "Memory Systems", "Error Recovery"]
+      },
+      "multiAgentSystems": {
+        "title": "Multi-Agent Systems",
+        "description": "Orchestrated multi-agent systems for collaborative AI task completion.",
+        "features": ["Agent Orchestration", "Task Delegation", "Inter-Agent Communication", "Conflict Resolution"]
+      },
+      "aiWorkflowAutomation": {
+        "title": "AI Workflow Automation",
+        "description": "Automate complex business workflows with AI-powered decision making.",
+        "features": ["Process Mining", "Decision Automation", "Document Processing", "Intelligent Routing"]
+      },
+      "knowledgeBaseAi": {
+        "title": "Knowledge Base AI",
+        "description": "AI-powered knowledge bases that answer questions from your documents.",
+        "features": ["Document Ingestion", "Semantic Search", "Context-Aware Answers", "Source Citations"]
+      },
+      "documentQa": {
+        "title": "Document Q&A",
+        "description": "Ask questions about your documents and get accurate, sourced answers.",
+        "features": ["PDF Processing", "Multi-Document Support", "Contextual Understanding", "Citation Links"]
+      },
+      "enterpriseSearchAi": {
+        "title": "Enterprise Search AI",
+        "description": "AI-powered enterprise search across all your internal knowledge systems.",
+        "features": ["Multi-Source Indexing", "Semantic Search", "Permission-Aware", "Analytics Dashboard"]
+      },
+      "dataPipelineAutomation": {
+        "title": "Data Pipeline Automation",
+        "description": "Automated data pipelines for ETL, data transformation, and analytics.",
+        "features": ["ETL Automation", "Data Validation", "Scheduled Pipelines", "Error Monitoring"]
+      },
+      "rpaSolutions": {
+        "title": "RPA Solutions",
+        "description": "Robotic process automation to eliminate repetitive manual tasks.",
+        "features": ["Bot Development", "Process Recording", "Scheduled Tasks", "Exception Handling"]
+      },
+      "internationalSeo": {
+        "title": "International SEO",
+        "description": "Multi-language and multi-region SEO strategy for global reach.",
+        "features": ["Hreflang Setup", "Geo-Targeting", "Multi-Language Content", "Local Link Building"]
+      },
+      "ecommerceSeo": {
+        "title": "E-Commerce SEO",
+        "description": "Specialized SEO for online stores to drive organic product discovery.",
+        "features": ["Product Schema", "Category Optimization", "Review Markup", "Site Speed"]
+      },
+      "geoAiSearchOptimization": {
+        "title": "GEO / AI Search Optimization",
+        "description": "Optimize your content for AI-powered search engines and generative search.",
+        "features": ["AI Search Visibility", "Structured Data", "Content Authority", "Citation Optimization"]
+      },
+      "googleShopping": {
+        "title": "Google Shopping",
+        "description": "Google Shopping campaigns and product feed optimization.",
+        "features": ["Product Feed Setup", "Merchant Center", "Smart Shopping", "Feed Optimization"]
+      },
+      "performanceMax": {
+        "title": "Performance Max",
+        "description": "Google Performance Max campaigns for cross-channel automated advertising.",
+        "features": ["Asset Groups", "Audience Signals", "Cross-Channel Reach", "Smart Bidding"]
+      },
+      "advantagePlusCampaigns": {
+        "title": "Advantage+ Campaigns",
+        "description": "Meta Advantage+ automated campaigns for maximum reach and efficiency.",
+        "features": ["Automated Targeting", "Creative Optimization", "Budget Allocation", "Cross-Platform Reach"]
+      },
+      "communityManagement": {
+        "title": "Community Management",
+        "description": "Build and manage thriving online communities around your brand.",
+        "features": ["Engagement Strategy", "Moderation", "Content Calendar", "Crisis Management"]
+      },
+      "socialCommerce": {
+        "title": "Social Commerce",
+        "description": "Turn social media platforms into direct sales channels.",
+        "features": ["Shop Setup", "Product Tagging", "Live Shopping", "Checkout Integration"]
+      },
+      "tiktokMarketing": {
+        "title": "TikTok Marketing",
+        "description": "Comprehensive TikTok marketing including ads, shop, and content strategy.",
+        "features": ["TikTok Ads", "TikTok Shop", "Content Strategy", "Creator Partnerships"]
+      },
+      "tiktokShop": {
+        "title": "TikTok Shop",
+        "description": "Set up and optimize your TikTok Shop for social commerce.",
+        "features": ["Shop Setup", "Product Listings", "Live Shopping", "Affiliate Program"]
+      },
+      "tiktokContent": {
+        "title": "TikTok Content",
+        "description": "TikTok content creation and strategy for organic growth.",
+        "features": ["Trend Analysis", "Content Creation", "Hashtag Strategy", "Analytics"]
+      },
+      "linkedinMarketing": {
+        "title": "LinkedIn Marketing",
+        "description": "B2B marketing on LinkedIn including ads, lead gen, and thought leadership.",
+        "features": ["LinkedIn Ads", "Lead Generation", "Thought Leadership", "Company Page Growth"]
+      },
+      "linkedinLeadGen": {
+        "title": "LinkedIn Lead Gen",
+        "description": "LinkedIn lead generation campaigns and Sales Navigator strategies.",
+        "features": ["Lead Gen Forms", "Sales Navigator", "InMail Campaigns", "Account-Based Marketing"]
+      },
+      "companyPageManagement": {
+        "title": "Company Page Management",
+        "description": "Professional LinkedIn company page management and content strategy.",
+        "features": ["Content Strategy", "Employee Advocacy", "Analytics", "Follower Growth"]
+      },
+      "whatsappMarketing": {
+        "title": "WhatsApp Marketing",
+        "description": "WhatsApp Business marketing for direct customer engagement.",
+        "features": ["Business API", "Broadcast Campaigns", "Catalog Management", "Automated Replies"]
+      },
+      "whatsappBusinessApi": {
+        "title": "WhatsApp Business API",
+        "description": "WhatsApp Business API integration for automated messaging at scale.",
+        "features": ["API Setup", "Template Messages", "Webhook Integration", "Analytics"]
+      },
+      "whatsappCampaigns": {
+        "title": "WhatsApp Campaigns",
+        "description": "Targeted WhatsApp broadcast campaigns for promotions and updates.",
+        "features": ["Audience Segmentation", "Template Design", "Delivery Tracking", "Opt-In Management"]
+      },
+      "whatsappCommerce": {
+        "title": "WhatsApp Commerce",
+        "description": "Enable buying and selling directly through WhatsApp conversations.",
+        "features": ["Product Catalogs", "Cart & Checkout", "Payment Integration", "Order Tracking"]
+      },
+      "emailDeliverability": {
+        "title": "Email Deliverability",
+        "description": "Improve email deliverability rates and inbox placement.",
+        "features": ["SPF/DKIM/DMARC", "List Hygiene", "Reputation Monitoring", "Warm-Up Strategy"]
+      },
+      "contentStrategy": {
+        "title": "Content Strategy",
+        "description": "Data-driven content strategy aligned with business goals and audience needs.",
+        "features": ["Content Audit", "Editorial Calendar", "Keyword Research", "Content Pillars"]
+      },
+      "podcastProduction": {
+        "title": "Podcast Production",
+        "description": "End-to-end podcast production from recording to distribution.",
+        "features": ["Recording & Editing", "Show Notes", "Distribution", "Promotion Strategy"]
+      },
+      "cro": {
+        "title": "Conversion Rate Optimization",
+        "description": "Data-driven optimization to increase conversions and revenue.",
+        "features": ["A/B Testing", "Heatmap Analysis", "Funnel Optimization", "User Research"]
+      },
+      "abTesting": {
+        "title": "A/B Testing",
+        "description": "Systematic A/B testing to optimize pages, CTAs, and user flows.",
+        "features": ["Hypothesis Design", "Test Setup", "Statistical Analysis", "Winner Implementation"]
+      },
+      "landingPageOptimization": {
+        "title": "Landing Page Optimization",
+        "description": "Optimize landing pages for maximum conversions and lower bounce rates.",
+        "features": ["Copy Optimization", "Layout Testing", "CTA Placement", "Speed Optimization"]
+      },
+      "funnelOptimization": {
+        "title": "Funnel Optimization",
+        "description": "Identify and fix leaks in your conversion funnel.",
+        "features": ["Funnel Mapping", "Drop-Off Analysis", "Micro-Conversions", "Retargeting Strategy"]
+      },
+      "uxAnalytics": {
+        "title": "UX Analytics",
+        "description": "Understand user behavior with heatmaps, session recordings, and analytics.",
+        "features": ["Heatmaps", "Session Recording", "Click Tracking", "Scroll Depth Analysis"]
+      },
+      "marketingAutomation": {
+        "title": "Marketing Automation",
+        "description": "Implement and optimize marketing automation platforms.",
+        "features": ["Lead Scoring", "Drip Campaigns", "Behavioral Triggers", "CRM Integration"]
+      },
+      "hubspotImplementation": {
+        "title": "HubSpot Implementation",
+        "description": "Full HubSpot setup, customization, and onboarding.",
+        "features": ["CRM Setup", "Workflow Automation", "Custom Properties", "Reporting Dashboards"]
+      },
+      "salesforceMarketingCloud": {
+        "title": "Salesforce Marketing Cloud",
+        "description": "Salesforce Marketing Cloud implementation and campaign management.",
+        "features": ["Journey Builder", "Email Studio", "Audience Segmentation", "Analytics"]
+      },
+      "customMarketingAutomation": {
+        "title": "Custom Marketing Automation",
+        "description": "Bespoke marketing automation solutions tailored to your stack.",
+        "features": ["Custom Workflows", "API Integration", "Multi-Channel Triggers", "Custom Reporting"]
+      },
+      "marketplaceAds": {
+        "title": "Marketplace Ads",
+        "description": "Advertising on Amazon, Trendyol, and app stores.",
+        "features": ["Amazon PPC", "Marketplace SEO", "Product Listings", "Bid Optimization"]
+      },
+      "amazonPpc": {
+        "title": "Amazon PPC",
+        "description": "Amazon sponsored products and brand campaigns for maximum visibility.",
+        "features": ["Keyword Research", "Campaign Structure", "Bid Management", "ACOS Optimization"]
+      },
+      "trendyolAds": {
+        "title": "Trendyol Ads",
+        "description": "Advertising and store optimization on Turkey's largest marketplace.",
+        "features": ["Product Ads", "Store Optimization", "Pricing Strategy", "Performance Analytics"]
+      },
+      "appStoreOptimization": {
+        "title": "App Store Optimization",
+        "description": "Optimize your app's visibility and downloads in app stores.",
+        "features": ["Keyword Optimization", "A/B Testing", "Rating Management", "Competitor Analysis"]
+      },
+      "designSystems": {
+        "title": "Design Systems",
+        "description": "Scalable design systems and component libraries for consistent UI.",
+        "features": ["Component Library", "Style Guide", "Token System", "Documentation"]
+      },
+      "mobileAppDesign": {
+        "title": "Mobile App Design",
+        "description": "Beautiful, intuitive mobile app interfaces for iOS and Android.",
+        "features": ["iOS & Android Design", "Gesture-Based UI", "Dark Mode", "Accessibility"]
+      },
+      "socialMediaGraphics": {
+        "title": "Social Media Graphics",
+        "description": "Eye-catching social media visuals and templates for your brand.",
+        "features": ["Post Templates", "Story Design", "Cover Images", "Ad Creatives"]
+      },
+      "presentationDesign": {
+        "title": "Presentation Design",
+        "description": "Professional presentation design for pitches, reports, and keynotes.",
+        "features": ["Pitch Decks", "Investor Presentations", "Data Visualization", "Template Systems"]
+      },
+      "explainerVideos": {
+        "title": "Explainer Videos",
+        "description": "Animated explainer videos that simplify complex ideas.",
+        "features": ["Script Writing", "Storyboarding", "2D/3D Animation", "Voiceover"]
+      },
+      "socialAnimations": {
+        "title": "Social Animations",
+        "description": "Short animated content for social media engagement.",
+        "features": ["Looping Animations", "Story Animations", "GIF Creation", "Brand Animations"]
+      },
+      "productAnimations": {
+        "title": "Product Animations",
+        "description": "3D product animations and renders for marketing and e-commerce.",
+        "features": ["3D Rendering", "Product Turntables", "Feature Highlights", "Exploded Views"]
+      },
+      "webDesign": {
+        "title": "Web Design",
+        "description": "Beautiful, conversion-focused website designs.",
+        "features": ["UI Design", "Responsive Layouts", "Interactive Prototypes", "Design Handoff"]
+      },
+      "corporateWebsiteDesign": {
+        "title": "Corporate Website Design",
+        "description": "Professional corporate website designs that build trust and authority.",
+        "features": ["Brand-Aligned Design", "Multi-Page Layouts", "Content Strategy", "SEO Structure"]
+      },
+      "landingPageDesign": {
+        "title": "Landing Page Design",
+        "description": "High-converting landing page designs for campaigns and launches.",
+        "features": ["Conversion-Focused", "A/B Variants", "Mobile-First", "CTA Optimization"]
+      },
+      "ecommerceDesign": {
+        "title": "E-Commerce Design",
+        "description": "E-commerce store designs optimized for browsing and buying.",
+        "features": ["Product Pages", "Cart Design", "Checkout Flow", "Mobile Shopping"]
+      },
+      "brandStrategy": {
+        "title": "Brand Strategy",
+        "description": "Strategic brand development to differentiate and position your business.",
+        "features": ["Brand Positioning", "Competitive Analysis", "Brand Voice", "Visual Identity"]
+      },
+      "brandPositioning": {
+        "title": "Brand Positioning",
+        "description": "Define your unique position in the market and the minds of customers.",
+        "features": ["Market Research", "Positioning Statement", "Value Proposition", "Competitive Mapping"]
+      },
+      "brandGuidelines": {
+        "title": "Brand Guidelines",
+        "description": "Comprehensive brand guidelines for consistent communication.",
+        "features": ["Logo Usage", "Color System", "Typography Rules", "Tone of Voice"]
+      },
+      "rebranding": {
+        "title": "Rebranding",
+        "description": "Strategic rebranding to refresh your brand identity and market position.",
+        "features": ["Brand Audit", "New Identity Design", "Migration Strategy", "Stakeholder Alignment"]
+      },
+      "3dArVr": {
+        "title": "3D & AR/VR",
+        "description": "Immersive 3D, augmented reality, and virtual reality experiences.",
+        "features": ["3D Modeling", "AR Filters", "VR Environments", "Interactive Experiences"]
+      },
+      "3dProductVisualization": {
+        "title": "3D Product Visualization",
+        "description": "Photorealistic 3D product renders and interactive viewers.",
+        "features": ["3D Modeling", "Photorealistic Rendering", "360° Views", "Configurators"]
+      },
+      "arExperiences": {
+        "title": "AR Experiences",
+        "description": "Augmented reality experiences for marketing, retail, and education.",
+        "features": ["AR Filters", "Product Try-On", "Interactive AR", "WebAR"]
+      },
+      "virtualTours": {
+        "title": "Virtual Tours",
+        "description": "360° virtual tours for real estate, hospitality, and showrooms.",
+        "features": ["360° Photography", "Interactive Hotspots", "VR Compatibility", "Embedding"]
+      },
+      "infrastructureAsCode": {
+        "title": "Infrastructure as Code",
+        "description": "Manage infrastructure through code with Terraform, Pulumi, and CloudFormation.",
+        "features": ["Terraform", "Pulumi", "Version Control", "Automated Provisioning"]
+      },
+      "awsMigration": {
+        "title": "AWS Migration",
+        "description": "Migrate your workloads to Amazon Web Services.",
+        "features": ["Assessment", "Migration Planning", "Data Transfer", "Optimization"]
+      },
+      "azureMigration": {
+        "title": "Azure Migration",
+        "description": "Migrate your infrastructure to Microsoft Azure cloud.",
+        "features": ["Azure Assessment", "Hybrid Setup", "Data Migration", "Cost Optimization"]
+      },
+      "googleCloudMigration": {
+        "title": "Google Cloud Migration",
+        "description": "Migrate to Google Cloud Platform for scalability and AI capabilities.",
+        "features": ["GCP Setup", "Data Migration", "BigQuery Integration", "Cost Management"]
+      },
+      "modelDeployment": {
+        "title": "Model Deployment",
+        "description": "Deploy ML models to production with monitoring and scaling.",
+        "features": ["Container Deployment", "API Serving", "Auto-Scaling", "A/B Model Testing"]
+      },
+      "modelMonitoring": {
+        "title": "Model Monitoring",
+        "description": "Monitor ML model performance, drift, and data quality in production.",
+        "features": ["Drift Detection", "Performance Metrics", "Alerting", "Retraining Triggers"]
+      },
+      "mlPipelines": {
+        "title": "ML Pipelines",
+        "description": "Automated ML pipelines for training, evaluation, and deployment.",
+        "features": ["Pipeline Orchestration", "Feature Stores", "Experiment Tracking", "Automated Retraining"]
+      },
+      "dataVisualization": {
+        "title": "Data Visualization",
+        "description": "Interactive dashboards and data visualizations for business insights.",
+        "features": ["Dashboard Design", "Real-Time Data", "Custom Charts", "Drill-Down Reports"]
+      },
+      "realTimeAnalytics": {
+        "title": "Real-Time Analytics",
+        "description": "Real-time data processing and analytics for instant business insights.",
+        "features": ["Stream Processing", "Live Dashboards", "Event-Driven Architecture", "Alerting"]
+      },
+      "gdprCompliance": {
+        "title": "GDPR Compliance",
+        "description": "Ensure your systems comply with GDPR and data privacy regulations.",
+        "features": ["Data Audit", "Privacy Policy", "Consent Management", "Data Subject Rights"]
+      },
+      "soc2Compliance": {
+        "title": "SOC 2 Compliance",
+        "description": "Achieve SOC 2 compliance for enterprise trust and security.",
+        "features": ["Gap Assessment", "Policy Development", "Control Implementation", "Audit Preparation"]
+      },
+      "databaseServices": {
+        "title": "Database Services",
+        "description": "Database design, optimization, and migration services.",
+        "features": ["Schema Design", "Query Optimization", "Migration", "High Availability"]
+      },
+      "databaseDesign": {
+        "title": "Database Design",
+        "description": "Optimized database schema design for performance and scalability.",
+        "features": ["Schema Design", "Normalization", "Indexing Strategy", "Data Modeling"]
+      },
+      "databaseOptimization": {
+        "title": "Database Optimization",
+        "description": "Optimize database performance for faster queries and lower costs.",
+        "features": ["Query Optimization", "Index Tuning", "Connection Pooling", "Caching Strategy"]
+      },
+      "databaseMigration": {
+        "title": "Database Migration",
+        "description": "Safely migrate databases between platforms with zero data loss.",
+        "features": ["Schema Conversion", "Data Transfer", "Validation", "Rollback Planning"]
+      },
+      "performanceOptimization": {
+        "title": "Performance Optimization",
+        "description": "Comprehensive performance optimization for web applications.",
+        "features": ["Speed Audits", "Core Web Vitals", "Server Tuning", "CDN Setup"]
+      },
+      "websiteSpeedOptimization": {
+        "title": "Website Speed Optimization",
+        "description": "Make your website lightning fast with comprehensive speed optimization.",
+        "features": ["Image Optimization", "Code Minification", "Lazy Loading", "CDN Configuration"]
+      },
+      "coreWebVitals": {
+        "title": "Core Web Vitals",
+        "description": "Improve Core Web Vitals scores for better SEO and user experience.",
+        "features": ["LCP Optimization", "FID/INP Fixes", "CLS Reduction", "Performance Monitoring"]
+      },
+      "serverOptimization": {
+        "title": "Server Optimization",
+        "description": "Optimize server configuration and infrastructure for peak performance.",
+        "features": ["Server Tuning", "Load Balancing", "Caching Layers", "Auto-Scaling"]
+      },
+      "managedServices": {
+        "title": "Managed Services",
+        "description": "24/7 managed IT services for reliability and peace of mind.",
+        "features": ["Monitoring", "Maintenance", "Incident Response", "Capacity Planning"]
+      },
+      "continuousMonitoring": {
+        "title": "24/7 Monitoring",
+        "description": "Round-the-clock infrastructure monitoring and incident response.",
+        "features": ["Uptime Monitoring", "Performance Alerts", "Log Analysis", "Incident Response"]
+      },
+      "maintenanceSupport": {
+        "title": "Maintenance & Support",
+        "description": "Ongoing maintenance and technical support for your applications.",
+        "features": ["Bug Fixes", "Security Patches", "Feature Updates", "Technical Support"]
+      },
+      "disasterRecovery": {
+        "title": "Disaster Recovery",
+        "description": "Disaster recovery planning and implementation for business continuity.",
+        "features": ["Backup Strategy", "Recovery Testing", "Failover Setup", "RTO/RPO Planning"]
+      },
+      "digitalTransformation": {
+        "title": "Digital Transformation",
+        "description": "Strategic digital transformation to modernize your business operations.",
+        "features": ["Digital Strategy", "Process Optimization", "Technology Roadmap", "Change Management"]
+      },
+      "digitalStrategy": {
+        "title": "Digital Strategy",
+        "description": "Comprehensive digital strategy aligned with your business objectives.",
+        "features": ["Market Analysis", "Technology Assessment", "Roadmap Development", "KPI Definition"]
+      },
+      "processDigitization": {
+        "title": "Process Digitization",
+        "description": "Convert manual processes into efficient digital workflows.",
+        "features": ["Process Mapping", "Tool Selection", "Implementation", "Training"]
+      },
+      "technologyConsulting": {
+        "title": "Technology Consulting",
+        "description": "Expert technology consulting to make informed decisions.",
+        "features": ["Tech Assessment", "Architecture Review", "Vendor Evaluation", "Implementation Plan"]
+      },
+      "techStackAssessment": {
+        "title": "Tech Stack Assessment",
+        "description": "Evaluate your current technology stack and recommend improvements.",
+        "features": ["Current State Analysis", "Gap Analysis", "Recommendations", "Migration Plan"]
+      },
+      "architectureDesign": {
+        "title": "Architecture Design",
+        "description": "System architecture design for scalability and maintainability.",
+        "features": ["System Design", "Microservices Planning", "Database Architecture", "Infrastructure Design"]
+      },
+      "aiStrategy": {
+        "title": "AI Strategy",
+        "description": "Strategic AI planning to identify and prioritize AI opportunities.",
+        "features": ["AI Readiness", "Use Case Identification", "ROI Analysis", "Implementation Roadmap"]
+      },
+      "aiReadinessAssessment": {
+        "title": "AI Readiness Assessment",
+        "description": "Assess your organization's readiness for AI adoption.",
+        "features": ["Data Assessment", "Infrastructure Review", "Skills Gap Analysis", "Roadmap"]
+      },
+      "aiRoiAnalysis": {
+        "title": "AI ROI Analysis",
+        "description": "Calculate the return on investment for AI initiatives.",
+        "features": ["Cost-Benefit Analysis", "Use Case Prioritization", "Resource Planning", "Timeline Estimation"]
+      },
+      "growthStrategy": {
+        "title": "Growth Strategy",
+        "description": "Data-driven growth strategy to scale your business.",
+        "features": ["Market Analysis", "Growth Levers", "Channel Strategy", "Metrics Framework"]
+      },
+      "startupServices": {
+        "title": "Startup Services",
+        "description": "Technical services designed for startups from idea to scale.",
+        "features": ["MVP Development", "Tech Advisory", "Investor Materials", "Scaling Strategy"]
+      },
+      "startupMvpDevelopment": {
+        "title": "Startup MVP Development",
+        "description": "Rapid MVP development to validate your startup idea and attract investors.",
+        "features": ["Lean Development", "User Testing", "Investor Demo", "Iteration Support"]
+      },
+      "technicalCto": {
+        "title": "Technical CTO",
+        "description": "Fractional CTO services for technical leadership and strategy.",
+        "features": ["Technical Strategy", "Team Building", "Architecture Decisions", "Investor Relations"]
+      },
+      "staffAugmentation": {
+        "title": "Staff Augmentation",
+        "description": "Scale your development team with skilled engineers.",
+        "features": ["Developer Screening", "Quick Onboarding", "Flexible Terms", "Quality Assurance"]
+      },
+      "developerOutsourcing": {
+        "title": "Developer Outsourcing",
+        "description": "Outsource development to experienced, vetted engineers.",
+        "features": ["Skill Matching", "Project Management", "Code Reviews", "Communication Tools"]
+      },
+      "dedicatedTeams": {
+        "title": "Dedicated Teams",
+        "description": "Hire dedicated development teams that work exclusively on your project.",
+        "features": ["Full-Time Allocation", "Team Lead Included", "Agile Process", "Transparent Reporting"]
       }
+    },
+    "detail": {
+      "specializedServices": "Specialized Services",
+      "backTo": "Back to {parent}",
+      "exploreSubServices": "Explore Our Specialized Solutions"
     },
     "pricing": {
       "eyebrow": "Pricing",

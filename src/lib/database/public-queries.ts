@@ -61,10 +61,38 @@ function mergeServiceTranslation(service: any, locale?: string) {
     fullDescription: translation.fullDescription || base.fullDescription,
     features: translation.features?.length ? translation.features : base.features,
     benefits: translation.benefits?.length ? translation.benefits : base.benefits,
-    content: translation.content || base.content,
+    content: translation.content
+      ? {
+          ...(base.content as Record<string, unknown> || {}),
+          ...(translation.content as Record<string, unknown> || {}),
+          animation: (base.content as Record<string, unknown>)?.animation,
+        }
+      : base.content,
     metaTitle: translation.metaTitle,
     metaDescription: translation.metaDescription,
   };
+}
+
+// ==================== SUB-SERVICE QUERIES ====================
+
+export async function getSubServices(parentSlug: string, locale?: string) {
+  const services = await getPrismaClient().service.findMany({
+    where: { parentSlug, status: { in: ['published', 'active'] } },
+    include: {
+      translations: locale ? { where: { locale } } : false,
+    },
+    orderBy: { order: 'asc' },
+  });
+
+  return services.map((service) => mergeServiceTranslation(service, locale));
+}
+
+export async function getParentService(slug: string, locale?: string) {
+  const service = await getPrismaClient().service.findFirst({
+    where: { slug, status: { in: ['published', 'active'] } },
+    select: { name: true, slug: true, icon: true, color: true },
+  });
+  return service;
 }
 
 // ==================== PROJECT QUERIES ====================

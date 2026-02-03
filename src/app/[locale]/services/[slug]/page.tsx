@@ -25,6 +25,16 @@ async function getService(slug: string, locale: string) {
   return getPublishedServiceBySlug(slug, locale);
 }
 
+async function getSubServicesData(parentSlug: string, locale: string) {
+  const { getSubServices } = await import('@/lib/database/public-queries');
+  return getSubServices(parentSlug, locale);
+}
+
+async function getParentServiceData(parentSlug: string) {
+  const { getParentService } = await import('@/lib/database/public-queries');
+  return getParentService(parentSlug);
+}
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug, locale } = await params;
   const validLocale = locales.includes(locale) ? locale : defaultLocale;
@@ -79,13 +89,41 @@ export default async function ServicePage({ params }: PageProps) {
     technologies?: { name: string; icon: string }[];
     portfolio?: { title: string; category: string; image: string }[];
     faq?: { question: string; answer: string }[];
+    animation?: {
+      heroVisual: string;
+      bgPattern: string;
+      decorations: string;
+      motion: string;
+      featureStyle: string;
+      processLayout: string;
+    };
   };
 
   const faq = content.faq || [];
 
+  // Fetch sub-services if this is a parent, or parent info if this is a child
+  let subServices: { slug: string; name: string; shortDescription?: string; icon?: string; color?: string }[] = [];
+  let parentService: { name: string; slug: string; icon?: string; color?: string } | null = null;
+
+  if (service.isParent) {
+    const subs = await getSubServicesData(slug, locale);
+    subServices = subs.map((s: any) => ({
+      slug: s.slug,
+      name: s.name,
+      shortDescription: s.shortDescription || s.description,
+      icon: s.icon,
+      color: s.color,
+    }));
+  }
+
+  if (service.parentSlug) {
+    parentService = await getParentServiceData(service.parentSlug) as any;
+  }
+
   const breadcrumbItems = [
     { name: 'Home', url: `${baseUrl}/${locale}` },
     { name: 'Services', url: `${baseUrl}/${locale}/services` },
+    ...(parentService ? [{ name: parentService.name, url: `${baseUrl}/${locale}/services/${parentService.slug}` }] : []),
     { name: service.name, url: `${baseUrl}/${locale}/services/${slug}` },
   ];
 
@@ -102,6 +140,10 @@ export default async function ServicePage({ params }: PageProps) {
     benefits: service.benefits || [],
     content,
     pricingPackages: service.pricingPackages as ServiceDetailData['pricingPackages'],
+    isParent: service.isParent || false,
+    parentSlug: service.parentSlug || undefined,
+    parentService: parentService || undefined,
+    subServices: subServices.length > 0 ? subServices : undefined,
   };
 
   return (

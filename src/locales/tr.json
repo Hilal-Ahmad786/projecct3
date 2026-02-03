@@ -67,7 +67,10 @@
     "webSoftware": "Web & Yazılım",
     "aiMl": "Yapay Zeka & ML",
     "marketingGrowth": "Pazarlama & Büyüme",
+    "aiData": "Yapay Zeka & Veri",
     "infrastructure": "Altyapı",
+    "design": "Tasarım & Yaratıcılık",
+    "consulting": "Danışmanlık & Strateji",
     "viewAll": "Tüm Hizmetleri Gör",
     "services": {
       "web-development": "Web Geliştirme",
@@ -99,7 +102,199 @@
       "mlops-deployment": "MLOps Dağıtım",
       "data-analytics": "Veri Analitiği",
       "cybersecurity": "Siber Güvenlik",
-      "cloud-migration": "Bulut Göçü"
+      "cloud-migration": "Bulut Göçü",
+      "frontend-development": "Ön Uç Geliştirme",
+      "backend-development": "Arka Uç Geliştirme",
+      "progressive-web-apps": "Progresif Web Uygulamaları",
+      "shopify-development": "Shopify Geliştirme",
+      "woocommerce-development": "WooCommerce Geliştirme",
+      "marketplace-development": "Pazar Yeri Geliştirme",
+      "rest-api-development": "REST API Geliştirme",
+      "graphql-development": "GraphQL Geliştirme",
+      "third-party-api-integration": "Üçüncü Taraf API Entegrasyonu",
+      "ui-design": "Arayüz Tasarımı",
+      "ux-research": "Kullanıcı Deneyimi Araştırması",
+      "prototyping-wireframing": "Prototipleme ve Tel Çerçeve",
+      "ios-development": "iOS Geliştirme",
+      "android-development": "Android Geliştirme",
+      "flutter-development": "Flutter Geliştirme",
+      "logo-brand-identity": "Logo ve Marka Kimliği",
+      "print-packaging-design": "Baskı ve Ambalaj Tasarımı",
+      "motion-graphics": "Hareketli Grafikler",
+      "ai-consulting-strategy": "Yapay Zeka Danışmanlığı ve Strateji",
+      "custom-ai-development": "Özel Yapay Zeka Geliştirme",
+      "predictive-analytics": "Tahmine Dayalı Analitik",
+      "nlp-text-processing": "Doğal Dil İşleme",
+      "recommendation-systems": "Öneri Sistemleri",
+      "chatbot-development": "Chatbot Geliştirme",
+      "voice-assistant-development": "Sesli Asistan Geliştirme",
+      "technical-seo": "Teknik SEO",
+      "local-seo": "Yerel SEO",
+      "link-building": "Bağlantı Kurma",
+      "google-search-ads": "Google Arama Reklamları",
+      "google-display-ads": "Google Görüntülü Reklamlar",
+      "youtube-ads": "YouTube Reklamları",
+      "facebook-ads": "Facebook Reklamları",
+      "instagram-ads": "Instagram Reklamları",
+      "social-media-management": "Sosyal Medya Yönetimi",
+      "influencer-marketing": "Influencer Pazarlama",
+      "email-automation": "E-posta Otomasyonu",
+      "newsletter-design": "Bülten Tasarımı",
+      "blog-copywriting": "Blog ve Metin Yazarlığı",
+      "video-production-marketing": "Video Prodüksiyon ve Pazarlama",
+      "web-scraping": "Web Kazıma",
+      "workflow-automation": "İş Akışı Otomasyonu",
+      "ci-cd-pipelines": "CI/CD İşlem Hatları",
+      "docker-kubernetes": "Docker ve Kubernetes",
+      "cloud-management": "Bulut Yönetimi",
+      "business-intelligence": "İş Zekası",
+      "big-data-etl": "Büyük Veri ve ETL",
+      "penetration-testing": "Sızma Testi",
+      "security-audits-compliance": "Güvenlik Denetimleri ve Uyumluluk",
+      "full-stack-development": "Full-Stack Geliştirme",
+      "headless-cms-development": "Headless CMS Geliştirme",
+      "jamstack-development": "Jamstack Geliştirme",
+      "magento-development": "Magento Geliştirme",
+      "custom-ecommerce": "Özel E-Ticaret",
+      "b2b-ecommerce": "B2B E-Ticaret",
+      "react-native-development": "React Native Geliştirme",
+      "cross-platform-apps": "Çapraz Platform Uygulamalar",
+      "api-gateway": "API Gateway",
+      "mvp-development": "MVP Geliştirme",
+      "multi-tenant-architecture": "Çok Kiracılı Mimari",
+      "saas-migration": "SaaS Göçü",
+      "custom-wordpress-themes": "Özel WordPress Temaları",
+      "wordpress-plugin-development": "WordPress Eklenti Geliştirme",
+      "wordpress-optimization": "WordPress Optimizasyonu",
+      "enterprise-software": "Kurumsal Yazılım",
+      "crm-development": "CRM Geliştirme",
+      "erp-development": "ERP Geliştirme",
+      "hrms-development": "HRMS Geliştirme",
+      "custom-business-software": "Özel İş Yazılımı",
+      "web3-blockchain": "Web3 & Blockchain",
+      "smart-contracts": "Akıllı Sözleşmeler",
+      "dapp-development": "DApp Geliştirme",
+      "nft-marketplace": "NFT Pazar Yeri",
+      "defi-solutions": "DeFi Çözümleri",
+      "tokenization": "Tokenizasyon",
+      "no-code-low-code": "No-Code/Low-Code",
+      "bubble-development": "Bubble Geliştirme",
+      "webflow-development": "Webflow Geliştirme",
+      "airtable-solutions": "Airtable Çözümleri",
+      "zapier-automation": "Zapier Otomasyonu",
+      "llm-services": "LLM Hizmetleri",
+      "ai-integration": "Yapay Zeka Entegrasyonu",
+      "ai-poc-mvp": "Yapay Zeka POC/MVP",
+      "anomaly-detection": "Anomali Tespiti",
+      "time-series-forecasting": "Zaman Serisi Tahmini",
+      "whatsapp-bots": "WhatsApp Botları",
+      "customer-service-ai": "Müşteri Hizmeti Yapay Zekası",
+      "image-recognition": "Görüntü Tanıma",
+      "object-detection": "Nesne Algılama",
+      "video-analytics": "Video Analitiği",
+      "ocr-document-processing": "OCR & Belge İşleme",
+      "gpt-claude-api-integration": "GPT/Claude API Entegrasyonu",
+      "custom-llm-development": "Özel LLM Geliştirme",
+      "autonomous-agents": "Otonom Ajanlar",
+      "multi-agent-systems": "Çoklu Ajan Sistemleri",
+      "ai-workflow-automation": "Yapay Zeka İş Akışı Otomasyonu",
+      "knowledge-base-ai": "Bilgi Tabanı Yapay Zekası",
+      "document-qa": "Belge Soru-Cevap",
+      "enterprise-search-ai": "Kurumsal Arama Yapay Zekası",
+      "data-pipeline-automation": "Veri Hattı Otomasyonu",
+      "rpa-solutions": "RPA Çözümleri",
+      "international-seo": "Uluslararası SEO",
+      "ecommerce-seo": "E-Ticaret SEO",
+      "geo-ai-search-optimization": "GEO / Yapay Zeka Arama Optimizasyonu",
+      "google-shopping": "Google Shopping",
+      "performance-max": "Performance Max",
+      "advantage-plus-campaigns": "Advantage+ Kampanyaları",
+      "community-management": "Topluluk Yönetimi",
+      "social-commerce": "Sosyal Ticaret",
+      "tiktok-marketing": "TikTok Pazarlama",
+      "tiktok-shop": "TikTok Mağaza",
+      "tiktok-content": "TikTok İçerik",
+      "linkedin-marketing": "LinkedIn Pazarlama",
+      "linkedin-lead-gen": "LinkedIn Potansiyel Müşteri",
+      "company-page-management": "Şirket Sayfası Yönetimi",
+      "whatsapp-marketing": "WhatsApp Pazarlama",
+      "whatsapp-business-api": "WhatsApp Business API",
+      "whatsapp-campaigns": "WhatsApp Kampanyaları",
+      "whatsapp-commerce": "WhatsApp Ticaret",
+      "email-deliverability": "E-posta Teslim Edilebilirliği",
+      "content-strategy": "İçerik Stratejisi",
+      "podcast-production": "Podcast Prodüksiyonu",
+      "cro": "Dönüşüm Oranı Optimizasyonu",
+      "ab-testing": "A/B Testi",
+      "landing-page-optimization": "Açılış Sayfası Optimizasyonu",
+      "funnel-optimization": "Huni Optimizasyonu",
+      "ux-analytics": "UX Analitiği",
+      "marketing-automation": "Pazarlama Otomasyonu",
+      "hubspot-implementation": "HubSpot Uygulaması",
+      "salesforce-marketing-cloud": "Salesforce Marketing Cloud",
+      "custom-marketing-automation": "Özel Pazarlama Otomasyonu",
+      "marketplace-ads": "Pazar Yeri Reklamları",
+      "amazon-ppc": "Amazon PPC",
+      "trendyol-ads": "Trendyol Reklamları",
+      "app-store-optimization": "App Store Optimizasyonu",
+      "design-systems": "Tasarım Sistemleri",
+      "mobile-app-design": "Mobil Uygulama Tasarımı",
+      "social-media-graphics": "Sosyal Medya Grafikleri",
+      "presentation-design": "Sunum Tasarımı",
+      "explainer-videos": "Açıklayıcı Videolar",
+      "social-animations": "Sosyal Animasyonlar",
+      "product-animations": "Ürün Animasyonları",
+      "web-design": "Web Tasarım",
+      "corporate-website-design": "Kurumsal Web Sitesi Tasarımı",
+      "landing-page-design": "Açılış Sayfası Tasarımı",
+      "ecommerce-design": "E-Ticaret Tasarımı",
+      "brand-strategy": "Marka Stratejisi",
+      "brand-positioning": "Marka Konumlandırma",
+      "brand-guidelines": "Marka Kılavuzları",
+      "rebranding": "Yeniden Markalaşma",
+      "3d-ar-vr": "3D & AR/VR",
+      "3d-product-visualization": "3D Ürün Görselleştirme",
+      "ar-experiences": "AR Deneyimleri",
+      "virtual-tours": "Sanal Turlar",
+      "infrastructure-as-code": "Kod Olarak Altyapı",
+      "aws-migration": "AWS Göçü",
+      "azure-migration": "Azure Göçü",
+      "google-cloud-migration": "Google Cloud Göçü",
+      "model-deployment": "Model Dağıtımı",
+      "model-monitoring": "Model İzleme",
+      "ml-pipelines": "ML İşlem Hatları",
+      "data-visualization": "Veri Görselleştirme",
+      "real-time-analytics": "Gerçek Zamanlı Analitik",
+      "gdpr-compliance": "GDPR Uyumluluğu",
+      "soc2-compliance": "SOC 2 Uyumluluğu",
+      "database-services": "Veritabanı Hizmetleri",
+      "database-design": "Veritabanı Tasarımı",
+      "database-optimization": "Veritabanı Optimizasyonu",
+      "database-migration": "Veritabanı Göçü",
+      "performance-optimization": "Performans Optimizasyonu",
+      "website-speed-optimization": "Web Sitesi Hız Optimizasyonu",
+      "core-web-vitals": "Core Web Vitals",
+      "server-optimization": "Sunucu Optimizasyonu",
+      "managed-services": "Yönetilen Hizmetler",
+      "continuous-monitoring": "7/24 İzleme",
+      "maintenance-support": "Bakım & Destek",
+      "disaster-recovery": "Felaket Kurtarma",
+      "digital-transformation": "Dijital Dönüşüm",
+      "digital-strategy": "Dijital Strateji",
+      "process-digitization": "Süreç Dijitalleştirme",
+      "technology-consulting": "Teknoloji Danışmanlığı",
+      "tech-stack-assessment": "Teknoloji Yığını Değerlendirme",
+      "architecture-design": "Mimari Tasarım",
+      "ai-strategy": "Yapay Zeka Stratejisi",
+      "ai-readiness-assessment": "Yapay Zeka Hazırlık Değerlendirmesi",
+      "ai-roi-analysis": "Yapay Zeka ROI Analizi",
+      "growth-strategy": "Büyüme Stratejisi",
+      "startup-services": "Startup Hizmetleri",
+      "startup-mvp-development": "Startup MVP Geliştirme",
+      "technical-cto": "Teknik CTO",
+      "staff-augmentation": "Personel Takviyesi",
+      "developer-outsourcing": "Geliştirici Dış Kaynak",
+      "dedicated-teams": "Adanmış Ekipler"
     }
   },
   "hero": {
@@ -221,9 +416,11 @@
       "subtitle": "Modern işletmeler için büyüme ve verimlilik sağlayan kapsamlı dijital çözümler sunuyoruz.",
       "categories": {
         "web": "Web & Yazılım",
-        "ai": "Yapay Zeka",
+        "ai": "Yapay Zeka & Veri",
         "marketing": "Pazarlama & Büyüme",
-        "infrastructure": "Altyapı"
+        "infrastructure": "Altyapı",
+        "design": "Tasarım & Yaratıcılık",
+        "consulting": "Danışmanlık & Strateji"
       },
       "readyToStart": "Başlamaya Hazır mısınız?",
       "readyDescription": "Projenizi tartışalım ve hedeflerinize nasıl ulaşmanıza yardımcı olabileceğimizi keşfedelim.",
@@ -261,8 +458,8 @@
           "NLP Çözümleri"
         ]
       },
-      "aiIntegration": {
-        "title": "AI Entegrasyonu",
+      "aiSolutions": {
+        "title": "Yapay Zeka Çözümleri",
         "description": "AI yeteneklerini mevcut sistemlerinize ve iş akışlarınıza sorunsuz entegre edin.",
         "features": [
           "API Entegrasyonu",
@@ -271,8 +468,8 @@
           "İzleme"
         ]
       },
-      "conversationalAI": {
-        "title": "Konuşmalı AI",
+      "conversationalAi": {
+        "title": "Konuşma Yapay Zekası",
         "description": "Gelişmiş müşteri etkileşimi için akıllı chatbotlar ve sanal asistanlar.",
         "features": [
           "Doğal Dil İşleme",
@@ -291,8 +488,8 @@
           "Dokümantasyon"
         ]
       },
-      "webApplications": {
-        "title": "Web Uygulamaları",
+      "webDevelopment": {
+        "title": "Web Geliştirme",
         "description": "Son teknoloji teknolojilerle oluşturulmuş modern, duyarlı web uygulamaları.",
         "features": [
           "React/Next.js",
@@ -321,7 +518,7 @@
           "App Store Dağıtımı"
         ]
       },
-      "uiuxDesign": {
+      "uiUxDesign": {
         "title": "UI/UX Tasarım",
         "description": "Kullanılabilirlik ve estetik çekiciliği öncelendiren kullanıcı merkezli tasarım çözümleri.",
         "features": [
@@ -334,70 +531,135 @@
       "seo": {
         "title": "SEO",
         "description": "Veri odaklı SEO stratejileri ile arama sonuçlarına hakim olun.",
-        "features": ["Teknik SEO Denetimleri", "Anahtar Kelime Stratejisi", "Link Oluşturma", "Yerel SEO"]
+        "features": [
+          "Teknik SEO Denetimleri",
+          "Anahtar Kelime Stratejisi",
+          "Link Oluşturma",
+          "Yerel SEO"
+        ]
       },
       "googleAds": {
         "title": "Google Ads (PPC)",
         "description": "Profesyonelce yönetilen Google Ads kampanyaları ile anında nitelikli trafik.",
-        "features": ["Arama Kampanyaları", "Görüntülü & Yeniden Pazarlama", "Alışveriş Reklamları", "Dönüşüm Takibi"]
+        "features": [
+          "Arama Kampanyaları",
+          "Görüntülü & Yeniden Pazarlama",
+          "Alışveriş Reklamları",
+          "Dönüşüm Takibi"
+        ]
       },
       "metaAds": {
         "title": "Meta Reklamları",
         "description": "Hedefli Facebook & Instagram reklam kampanyaları ile milyarlarca kullanıcıya ulaşın.",
-        "features": ["Özel Kitleler", "Yaratıcı Tasarım", "Yeniden Hedefleme", "Dinamik Reklamlar"]
+        "features": [
+          "Özel Kitleler",
+          "Yaratıcı Tasarım",
+          "Yeniden Hedefleme",
+          "Dinamik Reklamlar"
+        ]
       },
       "socialMediaMarketing": {
         "title": "Sosyal Medya Pazarlama",
         "description": "Etkileşimli topluluklar oluşturun ve markanızı sosyal platformlarda büyütün.",
-        "features": ["İçerik Stratejisi", "Topluluk Yönetimi", "Influencer Ortaklıkları", "Sosyal Analitik"]
+        "features": [
+          "İçerik Stratejisi",
+          "Topluluk Yönetimi",
+          "Influencer Ortaklıkları",
+          "Sosyal Analitik"
+        ]
       },
       "emailMarketing": {
         "title": "E-posta Pazarlama",
         "description": "Kişiselleştirilmiş e-posta kampanyaları ile potansiyel müşterileri besleyin.",
-        "features": ["Kampanya Tasarımı", "Pazarlama Otomasyonu", "Liste Segmentasyonu", "A/B Testi"]
+        "features": [
+          "Kampanya Tasarımı",
+          "Pazarlama Otomasyonu",
+          "Liste Segmentasyonu",
+          "A/B Testi"
+        ]
       },
       "contentMarketing": {
         "title": "İçerik Pazarlama",
         "description": "Değerli, stratejik içeriklerle hedef kitlenizi çekin ve etkileşim kurun.",
-        "features": ["İçerik Stratejisi", "Blog Yazıları", "Teknik Belgeler", "Video Senaryoları"]
+        "features": [
+          "İçerik Stratejisi",
+          "Blog Yazıları",
+          "Teknik Belgeler",
+          "Video Senaryoları"
+        ]
       },
       "tiktokAds": {
         "title": "TikTok Reklamları",
         "description": "Viral TikTok reklam kampanyaları ile Gen Z ve Millennials'a ulaşın.",
-        "features": ["In-Feed Reklamlar", "İçerik Üretici Ortaklıkları", "Video Prodüksiyonu", "TikTok Shop"]
+        "features": [
+          "In-Feed Reklamlar",
+          "İçerik Üretici Ortaklıkları",
+          "Video Prodüksiyonu",
+          "TikTok Shop"
+        ]
       },
       "linkedinAds": {
         "title": "LinkedIn Reklamları",
         "description": "Hassas LinkedIn reklamları ile yüksek kaliteli B2B potansiyel müşteriler üretin.",
-        "features": ["Sponsorlu İçerik", "Lead Gen Formları", "ABM Kampanyaları", "InMail Reklamları"]
+        "features": [
+          "Sponsorlu İçerik",
+          "Lead Gen Formları",
+          "ABM Kampanyaları",
+          "InMail Reklamları"
+        ]
       },
       "saasDevelopment": {
         "title": "SaaS Geliştirme",
         "description": "Konseptten lansmana kadar ölçeklenebilir, çok kiracılı SaaS platformları oluşturun.",
-        "features": ["Çok Kiracılı Mimari", "Abonelik Faturalandırma", "Yönetici Paneli", "API-First Tasarım"]
+        "features": [
+          "Çok Kiracılı Mimari",
+          "Abonelik Faturalandırma",
+          "Yönetici Paneli",
+          "API-First Tasarım"
+        ]
       },
       "wordpressDevelopment": {
         "title": "WordPress Geliştirme",
         "description": "Profesyonel WordPress web siteleri ve özel CMS çözümleri.",
-        "features": ["Özel Temalar", "Eklenti Geliştirme", "WooCommerce", "Hız Optimizasyonu"]
+        "features": [
+          "Özel Temalar",
+          "Eklenti Geliştirme",
+          "WooCommerce",
+          "Hız Optimizasyonu"
+        ]
       },
       "graphicDesign": {
         "title": "Grafik Tasarım",
         "description": "Çarpıcı görsel kimlikler ve pazarlama materyalleri oluşturun.",
-        "features": ["Logo & Marka", "Pazarlama Materyalleri", "Sosyal Medya Grafikleri", "Marka Rehberleri"]
+        "features": [
+          "Logo & Marka",
+          "Pazarlama Materyalleri",
+          "Sosyal Medya Grafikleri",
+          "Marka Rehberleri"
+        ]
       },
       "cybersecurity": {
         "title": "Siber Güvenlik",
         "description": "Dijital varlıklarınızı kurumsal düzeyde güvenlik çözümleriyle koruyun.",
-        "features": ["Sızma Testleri", "Güvenlik Denetimleri", "Uyumluluk Desteği", "Olay Müdahalesi"]
+        "features": [
+          "Sızma Testleri",
+          "Güvenlik Denetimleri",
+          "Uyumluluk Desteği",
+          "Olay Müdahalesi"
+        ]
       },
       "cloudMigration": {
         "title": "Bulut Göçü",
         "description": "Altyapınızı daha iyi performans için sorunsuzca buluta taşıyın.",
-        "features": ["Bulut Hazırlık Değerlendirmesi", "Göç Planlaması", "Uygulama Yeniden Yapılandırma", "Göç Sonrası Optimizasyon"]
+        "features": [
+          "Bulut Hazırlık Değerlendirmesi",
+          "Göç Planlaması",
+          "Uygulama Yeniden Yapılandırma",
+          "Göç Sonrası Optimizasyon"
+        ]
       },
-      "ecommerceSolutions": {
-        "title": "E-Ticaret Çözümleri",
+      "eCommerce": {
+        "title": "E-Ticaret",
         "description": "Ödeme entegrasyonu ve envanter yönetimi ile eksiksiz e-ticaret platformları.",
         "features": [
           "Ödeme İşleme",
@@ -406,8 +668,8 @@
           "Müşteri Portalı"
         ]
       },
-      "devopsInfrastructure": {
-        "title": "DevOps ve Altyapı",
+      "devopsCloud": {
+        "title": "DevOps & Bulut",
         "description": "Akıcı dağıtım hatları ve ölçeklenebilir bulut altyapısı çözümleri.",
         "features": [
           "CI/CD Hatları",
@@ -475,7 +737,1922 @@
           "RLHF Uygulaması",
           "Model Değerlendirme"
         ]
+      },
+      "frontendDevelopment": {
+        "title": "Ön Uç Geliştirme",
+        "description": "React, Next.js ve modern ön uç teknolojileri ile hızlı, etkileşimli kullanıcı arayüzleri oluşturun.",
+        "features": [
+          "React & Next.js",
+          "TypeScript",
+          "Duyarlı Tasarım",
+          "Performans Optimizasyonu"
+        ]
+      },
+      "backendDevelopment": {
+        "title": "Arka Uç Geliştirme",
+        "description": "Node.js, Python ve bulut yerel mimarilerle sağlam, ölçeklenebilir arka uç sistemleri oluşturun.",
+        "features": [
+          "Node.js & Express",
+          "Python & Django",
+          "Veritabanı Tasarımı",
+          "Mikroservisler"
+        ]
+      },
+      "progressiveWebApps": {
+        "title": "Progresif Web Uygulamaları",
+        "description": "Çevrimdışı destek ve anlık bildirimlerle web'de uygulama benzeri deneyimler sunun.",
+        "features": [
+          "Çevrimdışı Destek",
+          "Anlık Bildirimler",
+          "Kurulabilir",
+          "Service Workers"
+        ]
+      },
+      "shopifyDevelopment": {
+        "title": "Shopify Geliştirme",
+        "description": "Satışları artıran ve olağanüstü alışveriş deneyimleri sunan özel Shopify mağazaları.",
+        "features": [
+          "Özel Temalar",
+          "Shopify Uygulamaları",
+          "Ödeme Entegrasyonu",
+          "Mağaza Optimizasyonu"
+        ]
+      },
+      "woocommerceDevelopment": {
+        "title": "WooCommerce Geliştirme",
+        "description": "WordPress tabanlı çevrimiçi mağazalar için güçlü WooCommerce çözümleri.",
+        "features": [
+          "Özel Eklentiler",
+          "Ödeme Geçitleri",
+          "Envanter Yönetimi",
+          "Performans Ayarı"
+        ]
+      },
+      "marketplaceDevelopment": {
+        "title": "Pazar Yeri Geliştirme",
+        "description": "Alıcıları ve satıcıları birbirine bağlayan çok satıcılı pazar yeri platformları.",
+        "features": [
+          "Çok Satıcı Desteği",
+          "Ödeme Bölüşümü",
+          "Değerlendirme Sistemleri",
+          "Arama ve Filtreleme"
+        ]
+      },
+      "restApiDevelopment": {
+        "title": "REST API Geliştirme",
+        "description": "Web ve mobil uygulamaları besleyen iyi tasarlanmış RESTful API'ler.",
+        "features": [
+          "RESTful Tasarım",
+          "Kimlik Doğrulama",
+          "Hız Sınırlama",
+          "API Dokümantasyonu"
+        ]
+      },
+      "graphqlDevelopment": {
+        "title": "GraphQL Geliştirme",
+        "description": "Verimli veri çekme ve gerçek zamanlı güncellemeler için esnek GraphQL API'leri.",
+        "features": [
+          "Şema Tasarımı",
+          "Çözümleyiciler",
+          "Abonelikler",
+          "Performans Optimizasyonu"
+        ]
+      },
+      "thirdPartyApiIntegration": {
+        "title": "Üçüncü Taraf API Entegrasyonu",
+        "description": "Ödeme geçitleri, CRM'ler ve harici servislerle sorunsuz entegrasyon.",
+        "features": [
+          "Ödeme API'leri",
+          "CRM Entegrasyonu",
+          "Sosyal API'ler",
+          "Webhook Kurulumu"
+        ]
+      },
+      "uiDesign": {
+        "title": "Arayüz Tasarımı",
+        "description": "Kullanıcıları etkileyen ve markanızı güçlendiren güzel, sezgisel arayüz tasarımları.",
+        "features": [
+          "Görsel Tasarım",
+          "Tasarım Sistemleri",
+          "Duyarlı Düzenler",
+          "Marka Tutarlılığı"
+        ]
+      },
+      "uxResearch": {
+        "title": "Kullanıcı Deneyimi Araştırması",
+        "description": "Kullanıcı ihtiyaçlarını anlamak ve deneyimleri optimize etmek için veri odaklı UX araştırması.",
+        "features": [
+          "Kullanıcı Görüşmeleri",
+          "Kullanılabilirlik Testi",
+          "Analitik İnceleme",
+          "Persona Geliştirme"
+        ]
+      },
+      "prototypingWireframing": {
+        "title": "Prototipleme ve Tel Çerçeve",
+        "description": "Geliştirmeden önce fikirleri doğrulamak için etkileşimli prototipler ve tel çerçeveler.",
+        "features": [
+          "Tel Çerçeveler",
+          "Etkileşimli Prototipler",
+          "Kullanıcı Akış Haritalama",
+          "Paydaş Sunumları"
+        ]
+      },
+      "iosDevelopment": {
+        "title": "iOS Geliştirme",
+        "description": "Apple cihazlarda en iyi performans için Swift ile oluşturulmuş yerel iOS uygulamaları.",
+        "features": [
+          "Swift & SwiftUI",
+          "App Store Optimizasyonu",
+          "Anlık Bildirimler",
+          "Uygulama İçi Satın Alma"
+        ]
+      },
+      "androidDevelopment": {
+        "title": "Android Geliştirme",
+        "description": "Dünyanın en popüler mobil platformu için Kotlin ile oluşturulmuş yerel Android uygulamaları.",
+        "features": [
+          "Kotlin & Jetpack",
+          "Material Design",
+          "Google Play Store",
+          "Arka Plan Servisleri"
+        ]
+      },
+      "flutterDevelopment": {
+        "title": "Flutter Geliştirme",
+        "description": "Tek kod tabanından iOS ve Android için Flutter ile çapraz platform mobil uygulamalar.",
+        "features": [
+          "Tek Kod Tabanı",
+          "Yerel Performans",
+          "Özel Widget'lar",
+          "Hızlı Yeniden Yükleme"
+        ]
+      },
+      "logoBrandIdentity": {
+        "title": "Logo ve Marka Kimliği",
+        "description": "İşletmenizi unutulmaz kılan ayırt edici logolar ve marka kimlik sistemleri.",
+        "features": [
+          "Logo Tasarımı",
+          "Marka Kılavuzları",
+          "Renk Paleti",
+          "Tipografi Seçimi"
+        ]
+      },
+      "printPackagingDesign": {
+        "title": "Baskı ve Ambalaj Tasarımı",
+        "description": "Dikkat çekici baskı malzemeleri ve ambalaj tasarımları.",
+        "features": [
+          "Kartvizitler",
+          "Broşürler",
+          "Ürün Ambalajı",
+          "Pazarlama Materyalleri"
+        ]
+      },
+      "motionGraphics": {
+        "title": "Hareketli Grafikler",
+        "description": "Markanızı hayata geçiren etkileyici hareketli grafikler ve animasyonlar.",
+        "features": [
+          "Marka Animasyonları",
+          "Açıklayıcı Videolar",
+          "Sosyal Medya İçeriği",
+          "Arayüz Animasyonları"
+        ]
+      },
+      "aiConsultingStrategy": {
+        "title": "Yapay Zeka Danışmanlığı ve Strateji",
+        "description": "Fırsatları belirlemek ve uygulama planlamak için stratejik yapay zeka danışmanlığı.",
+        "features": [
+          "YZ Hazırlık Değerlendirmesi",
+          "Strateji Yol Haritası",
+          "Yatırım Getirisi Analizi",
+          "Tedarikçi Değerlendirmesi"
+        ]
+      },
+      "customAiDevelopment": {
+        "title": "Özel Yapay Zeka Geliştirme",
+        "description": "Benzersiz iş zorluklarınıza özel yapay zeka çözümleri.",
+        "features": [
+          "Özel Modeller",
+          "Veri İşlem Hattı",
+          "Model Eğitimi",
+          "Üretime Dağıtım"
+        ]
+      },
+      "predictiveAnalytics": {
+        "title": "Tahmine Dayalı Analitik",
+        "description": "Trendleri tahmin eden, sonuçları öngören ve veri odaklı kararlar yönlendiren ML modelleri.",
+        "features": [
+          "Tahmin Modelleri",
+          "Anomali Tespiti",
+          "Müşteri Kaybı Tahmini",
+          "Talep Planlaması"
+        ]
+      },
+      "nlpTextProcessing": {
+        "title": "Doğal Dil İşleme",
+        "description": "Metin analizi ve anlama için doğal dil işleme çözümleri.",
+        "features": [
+          "Duygu Analizi",
+          "Metin Sınıflandırma",
+          "Varlık Tanıma",
+          "Dil Çevirisi"
+        ]
+      },
+      "recommendationSystems": {
+        "title": "Öneri Sistemleri",
+        "description": "Etkileşimi ve dönüşümleri artıran kişiselleştirilmiş öneri motorları.",
+        "features": [
+          "İşbirlikçi Filtreleme",
+          "İçerik Tabanlı",
+          "Hibrit Sistemler",
+          "A/B Testi"
+        ]
+      },
+      "chatbotDevelopment": {
+        "title": "Chatbot Geliştirme",
+        "description": "Müşteri sorularını yöneten ve desteği otomatikleştiren akıllı chatbotlar.",
+        "features": [
+          "NLU Entegrasyonu",
+          "Çok Kanallı",
+          "Konuşma Tasarımı",
+          "Analitik Paneli"
+        ]
+      },
+      "voiceAssistantDevelopment": {
+        "title": "Sesli Asistan Geliştirme",
+        "description": "Alexa, Google Assistant ve özel platformlar için sesli asistanlar.",
+        "features": [
+          "Ses Arayüzü Tasarımı",
+          "Konuşma Tanıma",
+          "Çok Platform",
+          "Özel Uyandırma Kelimeleri"
+        ]
+      },
+      "technicalSeo": {
+        "title": "Teknik SEO",
+        "description": "Arama motorlarının sitenizi taramasını ve dizine eklemesini engelleyen teknik sorunları düzeltin.",
+        "features": [
+          "Site Hızı",
+          "Core Web Vitals",
+          "Schema İşaretleme",
+          "Tarama Optimizasyonu"
+        ]
+      },
+      "localSeo": {
+        "title": "Yerel SEO",
+        "description": "Yerel arama sonuçlarında öne çıkın ve bölgenizdeki müşterileri çekin.",
+        "features": [
+          "Google İşletme Profili",
+          "Yerel Alıntılar",
+          "İnceleme Yönetimi",
+          "Yerel İçerik"
+        ]
+      },
+      "linkBuilding": {
+        "title": "Bağlantı Kurma",
+        "description": "Alan otoritenizi artıran stratejik bağlantı kurma kampanyaları.",
+        "features": [
+          "Erişim Kampanyaları",
+          "Misafir Yazarlık",
+          "Dijital PR",
+          "Rakip Analizi"
+        ]
+      },
+      "googleSearchAds": {
+        "title": "Google Arama Reklamları",
+        "description": "Niyet odaklı trafiği yakalayan yüksek dönüşümlü Google Arama kampanyaları.",
+        "features": [
+          "Anahtar Kelime Araştırma",
+          "Reklam Metni Yazma",
+          "Teklif Yönetimi",
+          "Dönüşüm İzleme"
+        ]
+      },
+      "googleDisplayAds": {
+        "title": "Google Görüntülü Reklamlar",
+        "description": "Marka bilinirliği için Google ağında görsel reklam kampanyaları.",
+        "features": [
+          "Banner Tasarımı",
+          "Hedef Kitle",
+          "Yeniden Pazarlama",
+          "Performans Raporlama"
+        ]
+      },
+      "youtubeAds": {
+        "title": "YouTube Reklamları",
+        "description": "Hedef kitlenize ulaşmak için YouTube'da video reklam kampanyaları.",
+        "features": [
+          "Video Reklam Oluşturma",
+          "Hedef Kitle",
+          "TrueView Reklamlar",
+          "Performans Analitiği"
+        ]
+      },
+      "facebookAds": {
+        "title": "Facebook Reklamları",
+        "description": "Etkileşimi ve dönüşümleri artıran hedefli Facebook reklam kampanyaları.",
+        "features": [
+          "Hedef Kitle",
+          "Reklam Görseli",
+          "Yeniden Hedefleme",
+          "Dönüşüm Optimizasyonu"
+        ]
+      },
+      "instagramAds": {
+        "title": "Instagram Reklamları",
+        "description": "Etkileyici içeriklerle kitlenizle bağ kuran görsel Instagram kampanyaları.",
+        "features": [
+          "Hikaye Reklamları",
+          "Reels Reklamları",
+          "Alışveriş Reklamları",
+          "Influencer İşbirlikleri"
+        ]
+      },
+      "socialMediaManagement": {
+        "title": "Sosyal Medya Yönetimi",
+        "description": "Çevrimiçi varlığınızı büyütmek için tam kapsamlı sosyal medya yönetimi.",
+        "features": [
+          "İçerik Takvimi",
+          "Topluluk Yönetimi",
+          "Analitik",
+          "Marka Sesi"
+        ]
+      },
+      "influencerMarketing": {
+        "title": "Influencer Pazarlama",
+        "description": "Marka erişiminizi artıran stratejik influencer ortaklıkları.",
+        "features": [
+          "Influencer Keşfi",
+          "Kampanya Yönetimi",
+          "İçerik İşbirliği",
+          "ROI Takibi"
+        ]
+      },
+      "emailAutomation": {
+        "title": "E-posta Otomasyonu",
+        "description": "Potansiyel müşterileri besleyen ve dönüşümleri artıran otomatik e-posta iş akışları.",
+        "features": [
+          "Damla Kampanyaları",
+          "Davranışsal Tetikleyiciler",
+          "Segmentasyon",
+          "A/B Testi"
+        ]
+      },
+      "newsletterDesign": {
+        "title": "Bülten Tasarımı",
+        "description": "Kitlenizi bilgilendiren ve bağlı tutan etkileyici bülten tasarımları.",
+        "features": [
+          "Şablon Tasarımı",
+          "İçerik Stratejisi",
+          "Abone Büyümesi",
+          "Analitik"
+        ]
+      },
+      "blogCopywriting": {
+        "title": "Blog ve Metin Yazarlığı",
+        "description": "Organik trafiği artıran ve otorite oluşturan SEO uyumlu içerik.",
+        "features": [
+          "Blog Yazıları",
+          "Açılış Sayfaları",
+          "SEO Metin Yazarlığı",
+          "İçerik Stratejisi"
+        ]
+      },
+      "videoProductionMarketing": {
+        "title": "Video Prodüksiyon ve Pazarlama",
+        "description": "Marka hikayenizi anlatan ve izleyicileri etkileyen profesyonel video içerik.",
+        "features": [
+          "Video Prodüksiyon",
+          "Kurgu ve Post",
+          "Dağıtım Stratejisi",
+          "Performans Takibi"
+        ]
+      },
+      "webScraping": {
+        "title": "Web Kazıma",
+        "description": "Pazar araştırması ve analiz için web sitelerinden otomatik veri çıkarma.",
+        "features": [
+          "Özel Kazıyıcılar",
+          "Veri Temizleme",
+          "Zamanlanmış Çıkarma",
+          "Tespit Önleme"
+        ]
+      },
+      "workflowAutomation": {
+        "title": "İş Akışı Otomasyonu",
+        "description": "Zaman kazanmak ve hataları azaltmak için tekrarlayan iş süreçlerini otomatikleştirin.",
+        "features": [
+          "Süreç Haritalama",
+          "Araç Entegrasyonu",
+          "Özel Betikler",
+          "İzleme"
+        ]
+      },
+      "ciCdPipelines": {
+        "title": "CI/CD İşlem Hatları",
+        "description": "Güvenilir yazılım teslimi için otomatik derleme, test ve dağıtım hatları.",
+        "features": [
+          "GitHub Actions",
+          "Jenkins",
+          "Otomatik Test",
+          "Dağıtım Otomasyonu"
+        ]
+      },
+      "dockerKubernetes": {
+        "title": "Docker ve Kubernetes",
+        "description": "Ölçeklenebilir, taşınabilir uygulama dağıtımları için konteyner orkestrasyon.",
+        "features": [
+          "Docker Kurulumu",
+          "Kubernetes Kümeleri",
+          "Helm Charts",
+          "Otomatik Ölçekleme"
+        ]
+      },
+      "cloudManagement": {
+        "title": "Bulut Yönetimi",
+        "description": "AWS, Azure ve GCP genelinde kapsamlı bulut altyapı yönetimi.",
+        "features": [
+          "Maliyet Optimizasyonu",
+          "Güvenlik İzleme",
+          "Performans Ayarı",
+          "Felaket Kurtarma"
+        ]
+      },
+      "businessIntelligence": {
+        "title": "İş Zekası",
+        "description": "Verileri eyleme dönüştürülebilir iş bilgilerine dönüştüren BI panoları ve raporlama.",
+        "features": [
+          "Pano Tasarımı",
+          "KPI Takibi",
+          "Veri Görselleştirme",
+          "Özel Raporlar"
+        ]
+      },
+      "bigDataEtl": {
+        "title": "Büyük Veri ve ETL",
+        "description": "Veri ambarı için büyük ölçekli veri işleme ve ETL hatları.",
+        "features": [
+          "ETL İşlem Hatları",
+          "Veri Ambarı",
+          "Akış İşleme",
+          "Veri Kalitesi"
+        ]
+      },
+      "penetrationTesting": {
+        "title": "Sızma Testi",
+        "description": "Saldırganlardan önce güvenlik açıklarını belirlemek için kapsamlı güvenlik testi.",
+        "features": [
+          "Web Uygulama Testi",
+          "Ağ Testi",
+          "API Güvenliği",
+          "Detaylı Raporlar"
+        ]
+      },
+      "securityAuditsCompliance": {
+        "title": "Güvenlik Denetimleri ve Uyumluluk",
+        "description": "Yasal gereksinimler için güvenlik denetimleri ve uyumluluk değerlendirmeleri.",
+        "features": [
+          "KVKK Uyumu",
+          "SOC 2 Denetimleri",
+          "Güvenlik Politikaları",
+          "Risk Değerlendirmesi"
+        ]
+      },
+      "headlessCmsDevelopment": {
+        "title": "Headless CMS Geliştirme",
+        "description": "Esnek, çok kanallı içerik dağıtımı için bağımsız içerik yönetim sistemleri.",
+        "features": [
+          "Strapi & Contentful",
+          "Sanity.io",
+          "API-First Mimari",
+          "Çok Kanallı Yayın"
+        ]
+      },
+      "jamstackDevelopment": {
+        "title": "Jamstack Geliştirme",
+        "description": "Önceden oluşturulmuş sayfalar ve sunucusuz fonksiyonlarla modern Jamstack web siteleri.",
+        "features": [
+          "Statik Site Oluşturma",
+          "Sunucusuz Fonksiyonlar",
+          "CDN Dağıtımı",
+          "Headless Entegrasyon"
+        ]
+      },
+      "magentoDevelopment": {
+        "title": "Magento Geliştirme",
+        "description": "Büyük ölçekli çevrimiçi mağazalar için kurumsal düzeyde Magento e-ticaret çözümleri.",
+        "features": [
+          "Magento 2",
+          "Özel Eklentiler",
+          "Çoklu Mağaza Kurulumu",
+          "Performans Ayarlama"
+        ]
+      },
+      "customEcommerce": {
+        "title": "Özel E-Ticaret",
+        "description": "İş gereksinimlerinize göre özel olarak tasarlanmış e-ticaret platformları.",
+        "features": [
+          "Özel Sepet Sistemleri",
+          "Ödeme Entegrasyonu",
+          "Envanter Yönetimi",
+          "Sipariş Otomasyonu"
+        ]
+      },
+      "b2bEcommerce": {
+        "title": "B2B E-Ticaret",
+        "description": "Toplu sipariş ve hesap yönetimi ile işletmeler arası e-ticaret platformları.",
+        "features": [
+          "Toplu Fiyatlandırma",
+          "Hesap Yönetimi",
+          "Teklif Sistemleri",
+          "ERP Entegrasyonu"
+        ]
+      },
+      "reactNativeDevelopment": {
+        "title": "React Native Geliştirme",
+        "description": "iOS ve Android için React Native ile çapraz platform mobil uygulamalar.",
+        "features": [
+          "Kod Paylaşımı",
+          "Native Modüller",
+          "Hot Reloading",
+          "Expo Framework"
+        ]
+      },
+      "crossPlatformApps": {
+        "title": "Çapraz Platform Uygulamalar",
+        "description": "Modern çapraz platform framework'leri ile bir kez geliştir, her yere dağıt.",
+        "features": [
+          "Paylaşılan Kod Tabanı",
+          "Native Performans",
+          "Platforma Özel UI",
+          "OTA Güncellemeler"
+        ]
+      },
+      "apiGateway": {
+        "title": "API Gateway",
+        "description": "Mikro hizmet orkestrasyon ve yönetimi için merkezi API gateway çözümleri.",
+        "features": [
+          "Hız Sınırlama",
+          "Kimlik Doğrulama",
+          "Yük Dengeleme",
+          "API Versiyonlama"
+        ]
+      },
+      "mvpDevelopment": {
+        "title": "MVP Geliştirme",
+        "description": "Startup fikirlerinizi doğrulamak için hızlı minimum uygulanabilir ürün geliştirme.",
+        "features": [
+          "Yalın Geliştirme",
+          "Kullanıcı Testi",
+          "Hızlı İterasyon",
+          "Pazar Doğrulama"
+        ]
+      },
+      "multiTenantArchitecture": {
+        "title": "Çok Kiracılı Mimari",
+        "description": "SaaS uygulamaları için çok kiracılı mimari tasarım ve geliştirme.",
+        "features": [
+          "Veri İzolasyonu",
+          "Kiracı Yönetimi",
+          "Ölçeklenebilir Mimari",
+          "Güvenlik Katmanları"
+        ]
+      },
+      "saasMigration": {
+        "title": "SaaS Göçü",
+        "description": "Mevcut uygulamalarınızı SaaS modeline dönüştürme ve göç ettirme.",
+        "features": [
+          "Mimari Dönüşüm",
+          "Veri Göçü",
+          "Abonelik Sistemi",
+          "Çok Kiracılık"
+        ]
+      },
+      "customWordpressThemes": {
+        "title": "Özel WordPress Temaları",
+        "description": "Markanıza özel profesyonel WordPress tema tasarımı ve geliştirme.",
+        "features": [
+          "Özel Tema Tasarımı",
+          "Duyarlı Tasarım",
+          "Gutenberg Uyumu",
+          "SEO Optimizasyonu"
+        ]
+      },
+      "wordpressPluginDevelopment": {
+        "title": "WordPress Eklenti Geliştirme",
+        "description": "Özel ihtiyaçlarınız için profesyonel WordPress eklenti geliştirme.",
+        "features": [
+          "Özel Eklentiler",
+          "API Entegrasyonu",
+          "Güvenlik Standartları",
+          "Performans Optimizasyonu"
+        ]
+      },
+      "wordpressOptimization": {
+        "title": "WordPress Optimizasyonu",
+        "description": "WordPress sitenizin hız, güvenlik ve performans optimizasyonu.",
+        "features": [
+          "Hız Optimizasyonu",
+          "Güvenlik Sertleştirme",
+          "Veritabanı Temizleme",
+          "Önbellek Yapılandırma"
+        ]
+      },
+      "enterpriseSoftware": {
+        "title": "Kurumsal Yazılım",
+        "description": "Büyük işletmeler için ölçeklenebilir kurumsal yazılım çözümleri.",
+        "features": [
+          "Kurumsal Mimari",
+          "Yüksek Erişilebilirlik",
+          "Entegrasyon Katmanı",
+          "Kurumsal Güvenlik"
+        ]
+      },
+      "crmDevelopment": {
+        "title": "CRM Geliştirme",
+        "description": "Müşteri ilişkileri yönetimi için özel CRM yazılımı geliştirme.",
+        "features": [
+          "Müşteri Yönetimi",
+          "Satış Pipeline",
+          "Otomasyon İş Akışları",
+          "Raporlama Paneli"
+        ]
+      },
+      "erpDevelopment": {
+        "title": "ERP Geliştirme",
+        "description": "Kurumsal kaynak planlama sistemi tasarımı ve geliştirme.",
+        "features": [
+          "Modüler Mimari",
+          "İş Süreçleri",
+          "Finansal Yönetim",
+          "Tedarik Zinciri"
+        ]
+      },
+      "hrmsDevelopment": {
+        "title": "HRMS Geliştirme",
+        "description": "İnsan kaynakları yönetim sistemi tasarımı ve geliştirme.",
+        "features": [
+          "Personel Yönetimi",
+          "Bordro Sistemi",
+          "İzin Yönetimi",
+          "Performans Değerlendirme"
+        ]
+      },
+      "customBusinessSoftware": {
+        "title": "Özel İş Yazılımları",
+        "description": "İş süreçlerinize özel yazılım çözümleri tasarımı ve geliştirme.",
+        "features": [
+          "İhtiyaç Analizi",
+          "Özel Geliştirme",
+          "Sistem Entegrasyonu",
+          "Eğitim ve Destek"
+        ]
+      },
+      "web3Blockchain": {
+        "title": "Web3 ve Blockchain",
+        "description": "Web3 teknolojileri ve blockchain tabanlı merkezi olmayan uygulamalar.",
+        "features": [
+          "Akıllı Sözleşmeler",
+          "DApp Geliştirme",
+          "Token Ekonomisi",
+          "Merkeziyetsiz Mimari"
+        ]
+      },
+      "smartContracts": {
+        "title": "Akıllı Sözleşmeler",
+        "description": "Ethereum ve diğer blockchain'ler üzerinde akıllı sözleşme geliştirme.",
+        "features": [
+          "Solidity Geliştirme",
+          "Güvenlik Denetimi",
+          "Test Otomasyonu",
+          "Gas Optimizasyonu"
+        ]
+      },
+      "dappDevelopment": {
+        "title": "DApp Geliştirme",
+        "description": "Merkezi olmayan uygulama tasarımı, geliştirme ve dağıtımı.",
+        "features": [
+          "Frontend Entegrasyonu",
+          "Cüzdan Bağlantısı",
+          "Akıllı Sözleşme Etkileşimi",
+          "IPFS Depolama"
+        ]
+      },
+      "nftMarketplace": {
+        "title": "NFT Pazaryeri",
+        "description": "Özel NFT pazaryeri platformu tasarımı ve geliştirme.",
+        "features": [
+          "Mint İşlevi",
+          "Açık Artırma Sistemi",
+          "Koleksiyon Yönetimi",
+          "Cüzdan Entegrasyonu"
+        ]
+      },
+      "defiSolutions": {
+        "title": "DeFi Çözümleri",
+        "description": "Merkezi olmayan finans protokolleri ve uygulamaları geliştirme.",
+        "features": [
+          "Likidite Havuzları",
+          "Yield Farming",
+          "Staking Mekanizmaları",
+          "DEX Entegrasyonu"
+        ]
+      },
+      "tokenization": {
+        "title": "Tokenizasyon",
+        "description": "Varlıkların ve hakların dijital token'lara dönüştürülmesi.",
+        "features": [
+          "Token Tasarımı",
+          "Akıllı Sözleşme",
+          "Uyumluluk Çerçevesi",
+          "Pazar Entegrasyonu"
+        ]
+      },
+      "noCodeLowCode": {
+        "title": "No-Code/Low-Code",
+        "description": "No-code ve low-code platformları ile hızlı uygulama geliştirme.",
+        "features": [
+          "Hızlı Prototipleme",
+          "Görsel Geliştirme",
+          "İş Akışı Otomasyonu",
+          "API Entegrasyonu"
+        ]
+      },
+      "bubbleDevelopment": {
+        "title": "Bubble Geliştirme",
+        "description": "Bubble platformu ile kod yazmadan web uygulaması geliştirme.",
+        "features": [
+          "Görsel Tasarım",
+          "Veritabanı Tasarımı",
+          "İş Mantığı",
+          "Eklenti Entegrasyonu"
+        ]
+      },
+      "webflowDevelopment": {
+        "title": "Webflow Geliştirme",
+        "description": "Webflow ile profesyonel web sitesi tasarımı ve geliştirme.",
+        "features": [
+          "Görsel Tasarım",
+          "CMS Entegrasyonu",
+          "Animasyonlar",
+          "E-Ticaret"
+        ]
+      },
+      "airtableSolutions": {
+        "title": "Airtable Çözümleri",
+        "description": "Airtable ile özel veritabanı ve iş akışı çözümleri.",
+        "features": [
+          "Veritabanı Tasarımı",
+          "Otomasyon Kuralları",
+          "Görünüm Tasarımı",
+          "API Entegrasyonu"
+        ]
+      },
+      "zapierAutomation": {
+        "title": "Zapier Otomasyonu",
+        "description": "Zapier ile uygulamalar arası otomasyon ve entegrasyon.",
+        "features": [
+          "Zap Oluşturma",
+          "Çok Adımlı İş Akışları",
+          "Filtreleme ve Koşullar",
+          "Hata Yönetimi"
+        ]
+      },
+      "llmServices": {
+        "title": "LLM Hizmetleri",
+        "description": "Büyük dil modelleri ile işletmeniz için özelleştirilmiş AI çözümleri.",
+        "features": [
+          "Model Seçimi",
+          "Fine-Tuning",
+          "Prompt Mühendisliği",
+          "Dağıtım Stratejisi"
+        ]
+      },
+      "aiIntegration": {
+        "title": "AI Entegrasyonu",
+        "description": "Mevcut sistemlerinize yapay zeka yeteneklerinin entegrasyonu.",
+        "features": [
+          "API Entegrasyonu",
+          "Model Seçimi",
+          "Veri Hazırlama",
+          "Performans İzleme"
+        ]
+      },
+      "aiPocMvp": {
+        "title": "AI POC/MVP",
+        "description": "Yapay zeka projeleri için kavram kanıtlama ve minimum uygulanabilir ürün.",
+        "features": [
+          "Hızlı Prototipleme",
+          "Model Doğrulama",
+          "Fizibilite Analizi",
+          "ROI Tahminleme"
+        ]
+      },
+      "anomalyDetection": {
+        "title": "Anomali Tespiti",
+        "description": "Makine öğrenimi ile anormal davranış ve veri kalıplarının tespiti.",
+        "features": [
+          "Gerçek Zamanlı Tespit",
+          "Uyarlanabilir Modeller",
+          "Uyarı Sistemi",
+          "Kök Neden Analizi"
+        ]
+      },
+      "timeSeriesForecasting": {
+        "title": "Zaman Serisi Tahmini",
+        "description": "İleri düzey makine öğrenimi ile zaman serisi tahminleri ve öngörüler.",
+        "features": [
+          "Talep Tahmini",
+          "Trend Analizi",
+          "Mevsimsel Modelleme",
+          "Tahmin Doğrulama"
+        ]
+      },
+      "whatsappBots": {
+        "title": "WhatsApp Botları",
+        "description": "Müşteri etkileşimi için akıllı WhatsApp chatbot çözümleri.",
+        "features": [
+          "Otomatik Yanıtlar",
+          "Doğal Dil İşleme",
+          "Çoklu Dil Desteği",
+          "CRM Entegrasyonu"
+        ]
+      },
+      "customerServiceAi": {
+        "title": "Müşteri Hizmetleri AI",
+        "description": "Yapay zeka destekli müşteri hizmetleri otomasyon çözümleri.",
+        "features": [
+          "Akıllı Chatbot",
+          "Otomatik Yönlendirme",
+          "Duygu Analizi",
+          "7/24 Destek"
+        ]
+      },
+      "imageRecognition": {
+        "title": "Görüntü Tanıma",
+        "description": "Derin öğrenme tabanlı görüntü tanıma ve sınıflandırma sistemleri.",
+        "features": [
+          "Nesne Sınıflandırma",
+          "Yüz Tanıma",
+          "Özel Model Eğitimi",
+          "Gerçek Zamanlı İşleme"
+        ]
+      },
+      "objectDetection": {
+        "title": "Nesne Tespiti",
+        "description": "Görüntü ve videolarda gerçek zamanlı nesne tespit ve takip sistemleri.",
+        "features": [
+          "Gerçek Zamanlı Tespit",
+          "Çoklu Nesne Takibi",
+          "Özel Model Eğitimi",
+          "Edge Dağıtımı"
+        ]
+      },
+      "videoAnalytics": {
+        "title": "Video Analitik",
+        "description": "Yapay zeka destekli video analiz ve izleme çözümleri.",
+        "features": [
+          "Hareket Algılama",
+          "Davranış Analizi",
+          "Kalabalık Yönetimi",
+          "Gerçek Zamanlı İzleme"
+        ]
+      },
+      "ocrDocumentProcessing": {
+        "title": "OCR Belge İşleme",
+        "description": "Optik karakter tanıma ile belge dijitalleştirme ve veri çıkarma.",
+        "features": [
+          "Metin Çıkarma",
+          "Belge Sınıflandırma",
+          "Veri Doğrulama",
+          "Çoklu Format Desteği"
+        ]
+      },
+      "gptClaudeApiIntegration": {
+        "title": "GPT & Claude API Entegrasyonu",
+        "description": "GPT ve Claude API'lerinin iş uygulamalarınıza profesyonel entegrasyonu.",
+        "features": [
+          "API Yapılandırma",
+          "Prompt Mühendisliği",
+          "Yanıt Optimizasyonu",
+          "Maliyet Yönetimi"
+        ]
+      },
+      "customLlmDevelopment": {
+        "title": "Özel LLM Geliştirme",
+        "description": "İş ihtiyaçlarınıza özel büyük dil modeli geliştirme ve eğitimi.",
+        "features": [
+          "Model Fine-Tuning",
+          "Özel Veri Eğitimi",
+          "Domain Uzmanlığı",
+          "Performans Optimizasyonu"
+        ]
+      },
+      "autonomousAgents": {
+        "title": "Otonom Ajanlar",
+        "description": "Bağımsız görev yürütme yeteneğine sahip yapay zeka ajanları.",
+        "features": [
+          "Görev Planlama",
+          "Araç Kullanımı",
+          "Bellek Yönetimi",
+          "Çoklu Ajan İşbirliği"
+        ]
+      },
+      "multiAgentSystems": {
+        "title": "Çoklu Ajan Sistemleri",
+        "description": "Karmaşık görevleri çözmek için koordineli çalışan yapay zeka ajan sistemleri.",
+        "features": [
+          "Ajan Orkestrasyonu",
+          "Görev Dağıtımı",
+          "İletişim Protokolleri",
+          "Ölçeklenebilir Mimari"
+        ]
+      },
+      "aiWorkflowAutomation": {
+        "title": "AI İş Akışı Otomasyonu",
+        "description": "Yapay zeka ile iş süreçlerinin akıllı otomasyonu.",
+        "features": [
+          "Süreç Otomasyonu",
+          "Karar Desteği",
+          "Belge İşleme",
+          "Veri Zenginleştirme"
+        ]
+      },
+      "knowledgeBaseAi": {
+        "title": "Bilgi Tabanı AI",
+        "description": "Yapay zeka destekli akıllı bilgi tabanı ve bilgi yönetim sistemleri.",
+        "features": [
+          "Otomatik İndeksleme",
+          "Anlamsal Arama",
+          "İçerik Önerisi",
+          "Bilgi Grafı"
+        ]
+      },
+      "documentQa": {
+        "title": "Belge Soru-Cevap",
+        "description": "Belgeler üzerinde doğal dil ile soru sorma ve yanıt alma sistemi.",
+        "features": [
+          "Belge Analizi",
+          "Doğal Dil Sorguları",
+          "Kaynak Referansı",
+          "Çoklu Format Desteği"
+        ]
+      },
+      "enterpriseSearchAi": {
+        "title": "Kurumsal Arama AI",
+        "description": "Yapay zeka destekli kurumsal arama ve bilgi erişim çözümleri.",
+        "features": [
+          "Anlamsal Arama",
+          "Çoklu Kaynak Tarama",
+          "Kişiselleştirilmiş Sonuçlar",
+          "Vektör Arama"
+        ]
+      },
+      "dataPipelineAutomation": {
+        "title": "Veri Hattı Otomasyonu",
+        "description": "Veri toplama, dönüştürme ve yükleme süreçlerinin otomasyonu.",
+        "features": [
+          "ETL Otomasyonu",
+          "Veri Doğrulama",
+          "Zamanlama Yönetimi",
+          "Hata İşleme"
+        ]
+      },
+      "rpaSolutions": {
+        "title": "RPA Çözümleri",
+        "description": "Robotik süreç otomasyonu ile tekrarlayan görevlerin otomatikleştirilmesi.",
+        "features": [
+          "Süreç Keşfi",
+          "Bot Geliştirme",
+          "Gözetimli Otomasyon",
+          "Gözetimsiz Otomasyon"
+        ]
+      },
+      "internationalSeo": {
+        "title": "Uluslararası SEO",
+        "description": "Çoklu ülke ve dillerde arama motoru optimizasyonu stratejileri.",
+        "features": [
+          "Hreflang Etiketleri",
+          "Yerel Anahtar Kelime Araştırma",
+          "Uluslararası İçerik Stratejisi",
+          "Bölgesel Arama Analizi"
+        ]
+      },
+      "ecommerceSeo": {
+        "title": "E-Ticaret SEO",
+        "description": "Çevrimiçi mağazalar için özel arama motoru optimizasyonu.",
+        "features": [
+          "Ürün Sayfası Optimizasyonu",
+          "Kategori SEO",
+          "Yapısal Veri İşaretleme",
+          "Teknik SEO Denetimi"
+        ]
+      },
+      "geoAiSearchOptimization": {
+        "title": "Coğrafi AI Arama Optimizasyonu",
+        "description": "Yapay zeka destekli konum bazlı arama optimizasyonu.",
+        "features": [
+          "Yerel Arama Optimizasyonu",
+          "Harita Entegrasyonu",
+          "Konum Bazlı Hedefleme",
+          "Bölgesel Analiz"
+        ]
+      },
+      "googleShopping": {
+        "title": "Google Shopping",
+        "description": "Google Shopping kampanyaları ve ürün feed optimizasyonu.",
+        "features": [
+          "Ürün Feed Yönetimi",
+          "Kampanya Optimizasyonu",
+          "Teklif Stratejisi",
+          "Performans Analizi"
+        ]
+      },
+      "performanceMax": {
+        "title": "Performance Max",
+        "description": "Google Performance Max kampanya yönetimi ve optimizasyonu.",
+        "features": [
+          "Çok Kanallı Reklamcılık",
+          "Yapay Zeka Optimizasyonu",
+          "Kitle Hedefleme",
+          "Dönüşüm Takibi"
+        ]
+      },
+      "advantagePlusCampaigns": {
+        "title": "Advantage+ Kampanyaları",
+        "description": "Meta Advantage+ kampanya oluşturma ve optimizasyonu.",
+        "features": [
+          "Otomatik Hedefleme",
+          "Reklam Yaratıcı Optimizasyonu",
+          "Bütçe Dağıtımı",
+          "Performans Raporlama"
+        ]
+      },
+      "communityManagement": {
+        "title": "Topluluk Yönetimi",
+        "description": "Çevrimiçi toplulukların etkin yönetimi ve etkileşim stratejileri.",
+        "features": [
+          "Topluluk Moderasyonu",
+          "Etkileşim Stratejisi",
+          "İçerik Planlama",
+          "Kriz Yönetimi"
+        ]
+      },
+      "socialCommerce": {
+        "title": "Sosyal Ticaret",
+        "description": "Sosyal medya platformları üzerinden doğrudan satış stratejileri.",
+        "features": [
+          "Sosyal Mağaza Kurulumu",
+          "Ürün Kataloğu",
+          "Alışveriş Etiketleri",
+          "Satış Takibi"
+        ]
+      },
+      "tiktokMarketing": {
+        "title": "TikTok Pazarlama",
+        "description": "TikTok platformunda marka bilinirliği ve satış artırma stratejileri.",
+        "features": [
+          "İçerik Stratejisi",
+          "Influencer İşbirliği",
+          "Hashtag Kampanyaları",
+          "Reklam Yönetimi"
+        ]
+      },
+      "tiktokShop": {
+        "title": "TikTok Shop",
+        "description": "TikTok Shop kurulumu ve uçtan uca satış yönetimi.",
+        "features": [
+          "Mağaza Kurulumu",
+          "Ürün Listeleme",
+          "Canlı Yayın Satışı",
+          "Sipariş Yönetimi"
+        ]
+      },
+      "tiktokContent": {
+        "title": "TikTok İçerik",
+        "description": "TikTok için viral ve ilgi çekici içerik üretimi.",
+        "features": [
+          "Video Üretimi",
+          "Trend Analizi",
+          "İçerik Takvimi",
+          "Performans Optimizasyonu"
+        ]
+      },
+      "linkedinMarketing": {
+        "title": "LinkedIn Pazarlama",
+        "description": "LinkedIn üzerinde B2B pazarlama ve marka oluşturma stratejileri.",
+        "features": [
+          "İçerik Pazarlama",
+          "Reklam Kampanyaları",
+          "Hedef Kitle Analizi",
+          "Marka Konumlandırma"
+        ]
+      },
+      "linkedinLeadGen": {
+        "title": "LinkedIn Potansiyel Müşteri Edinme",
+        "description": "LinkedIn üzerinden nitelikli potansiyel müşteri üretimi.",
+        "features": [
+          "Lead Magnet Stratejisi",
+          "InMail Kampanyaları",
+          "Profil Optimizasyonu",
+          "Bağlantı Stratejisi"
+        ]
+      },
+      "companyPageManagement": {
+        "title": "Şirket Sayfası Yönetimi",
+        "description": "Sosyal medya şirket sayfalarının profesyonel yönetimi.",
+        "features": [
+          "Sayfa Optimizasyonu",
+          "İçerik Planlama",
+          "Takipçi Büyümesi",
+          "Analiz ve Raporlama"
+        ]
+      },
+      "whatsappMarketing": {
+        "title": "WhatsApp Pazarlama",
+        "description": "WhatsApp üzerinden etkili pazarlama kampanyaları ve müşteri iletişimi.",
+        "features": [
+          "Toplu Mesajlaşma",
+          "Kampanya Yönetimi",
+          "Müşteri Segmentasyonu",
+          "Performans Takibi"
+        ]
+      },
+      "whatsappBusinessApi": {
+        "title": "WhatsApp Business API",
+        "description": "WhatsApp Business API entegrasyonu ve yapılandırması.",
+        "features": [
+          "API Kurulumu",
+          "Mesaj Şablonları",
+          "Webhook Entegrasyonu",
+          "Otomasyon Kuralları"
+        ]
+      },
+      "whatsappCampaigns": {
+        "title": "WhatsApp Kampanyaları",
+        "description": "WhatsApp üzerinden hedefli pazarlama kampanyaları yönetimi.",
+        "features": [
+          "Kampanya Tasarımı",
+          "Hedef Kitle Seçimi",
+          "A/B Testi",
+          "Dönüşüm Takibi"
+        ]
+      },
+      "whatsappCommerce": {
+        "title": "WhatsApp Ticaret",
+        "description": "WhatsApp üzerinden ürün satışı ve sipariş yönetimi.",
+        "features": [
+          "Ürün Kataloğu",
+          "Sipariş Alma",
+          "Ödeme Entegrasyonu",
+          "Müşteri Desteği"
+        ]
+      },
+      "emailDeliverability": {
+        "title": "E-posta Teslim Edilebilirliği",
+        "description": "E-posta teslimat oranlarını artırma ve gelen kutusu yerleşimini iyileştirme.",
+        "features": [
+          "SPF/DKIM/DMARC Yapılandırma",
+          "İtibar Yönetimi",
+          "Liste Temizleme",
+          "Teslimat İzleme"
+        ]
+      },
+      "contentStrategy": {
+        "title": "İçerik Stratejisi",
+        "description": "Marka hedeflerinize uygun kapsamlı içerik stratejisi geliştirme.",
+        "features": [
+          "İçerik Planlaması",
+          "Editoryal Takvim",
+          "Kitle Analizi",
+          "Kanal Stratejisi"
+        ]
+      },
+      "podcastProduction": {
+        "title": "Podcast Yapımı",
+        "description": "Profesyonel podcast üretimi, düzenleme ve dağıtım hizmetleri.",
+        "features": [
+          "Ses Prodüksiyonu",
+          "İçerik Planlama",
+          "Dağıtım Yönetimi",
+          "Büyüme Stratejisi"
+        ]
+      },
+      "cro": {
+        "title": "Dönüşüm Oranı Optimizasyonu",
+        "description": "Web sitenizin dönüşüm oranlarını artırmak için veri odaklı optimizasyon.",
+        "features": [
+          "Dönüşüm Analizi",
+          "Kullanıcı Davranış Analizi",
+          "Test Stratejisi",
+          "Sürekli İyileştirme"
+        ]
+      },
+      "abTesting": {
+        "title": "A/B Testi",
+        "description": "Veri odaklı A/B ve çok değişkenli testlerle dönüşüm optimizasyonu.",
+        "features": [
+          "Test Tasarımı",
+          "İstatistiksel Analiz",
+          "Kullanıcı Segmentasyonu",
+          "Sonuç Raporlama"
+        ]
+      },
+      "landingPageOptimization": {
+        "title": "Açılış Sayfası Optimizasyonu",
+        "description": "Dönüşüm odaklı açılış sayfası tasarım ve optimizasyonu.",
+        "features": [
+          "Sayfa Tasarımı",
+          "CTA Optimizasyonu",
+          "Form Optimizasyonu",
+          "Hız İyileştirme"
+        ]
+      },
+      "funnelOptimization": {
+        "title": "Dönüşüm Hunisi Optimizasyonu",
+        "description": "Satış ve pazarlama hunilerinizin performans optimizasyonu.",
+        "features": [
+          "Huni Analizi",
+          "Terk Noktası Tespiti",
+          "Mikro Dönüşümler",
+          "Müşteri Yolculuğu"
+        ]
+      },
+      "uxAnalytics": {
+        "title": "UX Analitik",
+        "description": "Kullanıcı deneyimi analitiği ve davranış analizi araçları.",
+        "features": [
+          "Isı Haritaları",
+          "Oturum Kayıtları",
+          "Kullanıcı Akışı",
+          "Huni Analizi"
+        ]
+      },
+      "marketingAutomation": {
+        "title": "Pazarlama Otomasyonu",
+        "description": "Pazarlama süreçlerinizin otomasyonu ve kişiselleştirme.",
+        "features": [
+          "E-posta Otomasyonu",
+          "Lead Puanlama",
+          "Kampanya Yönetimi",
+          "Kişiselleştirme"
+        ]
+      },
+      "hubspotImplementation": {
+        "title": "HubSpot Implementasyonu",
+        "description": "HubSpot platformunun profesyonel kurulumu ve yapılandırması.",
+        "features": [
+          "CRM Kurulumu",
+          "Pazarlama Hub",
+          "Satış Hub",
+          "Otomasyon İş Akışları"
+        ]
+      },
+      "salesforceMarketingCloud": {
+        "title": "Salesforce Marketing Cloud",
+        "description": "Salesforce Marketing Cloud kurulumu ve yönetimi.",
+        "features": [
+          "Journey Builder",
+          "E-posta Studio",
+          "Kitle Segmentasyonu",
+          "Analiz ve Raporlama"
+        ]
+      },
+      "customMarketingAutomation": {
+        "title": "Özel Pazarlama Otomasyonu",
+        "description": "İş ihtiyaçlarınıza özel pazarlama otomasyon çözümleri.",
+        "features": [
+          "Özel İş Akışları",
+          "API Entegrasyonu",
+          "Veri Senkronizasyonu",
+          "Özel Raporlama"
+        ]
+      },
+      "marketplaceAds": {
+        "title": "Pazaryeri Reklamları",
+        "description": "E-ticaret pazaryerlerinde reklam yönetimi ve optimizasyonu.",
+        "features": [
+          "Kampanya Yönetimi",
+          "Teklif Stratejisi",
+          "Ürün Hedefleme",
+          "ROI Optimizasyonu"
+        ]
+      },
+      "amazonPpc": {
+        "title": "Amazon PPC",
+        "description": "Amazon reklam kampanyaları yönetimi ve optimizasyonu.",
+        "features": [
+          "Sponsored Products",
+          "Sponsored Brands",
+          "Anahtar Kelime Stratejisi",
+          "ACoS Optimizasyonu"
+        ]
+      },
+      "trendyolAds": {
+        "title": "Trendyol Reklamları",
+        "description": "Trendyol platformunda reklam kampanyaları yönetimi.",
+        "features": [
+          "Ürün Reklamları",
+          "Mağaza Reklamları",
+          "Bütçe Yönetimi",
+          "Performans Raporlama"
+        ]
+      },
+      "appStoreOptimization": {
+        "title": "Uygulama Mağazası Optimizasyonu",
+        "description": "App Store ve Google Play'de uygulama görünürlüğünü artırma.",
+        "features": [
+          "Anahtar Kelime Optimizasyonu",
+          "Görsel Optimizasyon",
+          "İnceleme Yönetimi",
+          "Rakip Analizi"
+        ]
+      },
+      "designSystems": {
+        "title": "Tasarım Sistemleri",
+        "description": "Tutarlı kullanıcı deneyimi için kapsamlı tasarım sistemi oluşturma.",
+        "features": [
+          "Bileşen Kütüphanesi",
+          "Stil Rehberi",
+          "Tasarım Tokenları",
+          "Dokümantasyon"
+        ]
+      },
+      "mobileAppDesign": {
+        "title": "Mobil Uygulama Tasarımı",
+        "description": "iOS ve Android için kullanıcı odaklı mobil uygulama arayüz tasarımı.",
+        "features": [
+          "UI/UX Tasarım",
+          "Prototipleme",
+          "Etkileşim Tasarımı",
+          "Platform Kılavuzları"
+        ]
+      },
+      "socialMediaGraphics": {
+        "title": "Sosyal Medya Grafikleri",
+        "description": "Sosyal medya platformları için profesyonel görsel içerik tasarımı.",
+        "features": [
+          "Gönderi Tasarımları",
+          "Hikaye Tasarımları",
+          "Kapak Görselleri",
+          "Reklam Görselleri"
+        ]
+      },
+      "presentationDesign": {
+        "title": "Sunum Tasarımı",
+        "description": "Etkileyici kurumsal sunum ve pitch deck tasarımı.",
+        "features": [
+          "Kurumsal Sunumlar",
+          "Pitch Deck",
+          "Infografik Sunumlar",
+          "Şablon Tasarımı"
+        ]
+      },
+      "explainerVideos": {
+        "title": "Tanıtım Videoları",
+        "description": "Ürün ve hizmetlerinizi anlatan profesyonel açıklayıcı videolar.",
+        "features": [
+          "Senaryo Yazımı",
+          "Animasyon",
+          "Seslendirme",
+          "Motion Graphics"
+        ]
+      },
+      "socialAnimations": {
+        "title": "Sosyal Medya Animasyonları",
+        "description": "Sosyal medya için dikkat çekici animasyonlu içerikler.",
+        "features": [
+          "GIF Animasyonlar",
+          "Video Animasyonlar",
+          "Hikaye Animasyonları",
+          "Reklam Animasyonları"
+        ]
+      },
+      "productAnimations": {
+        "title": "Ürün Animasyonları",
+        "description": "Ürün tanıtımı için 3D ve 2D profesyonel animasyonlar.",
+        "features": [
+          "3D Ürün Animasyonu",
+          "Ürün Dönüşü",
+          "Özellik Vurgulama",
+          "Paket Açma Animasyonu"
+        ]
+      },
+      "webDesign": {
+        "title": "Web Tasarım",
+        "description": "Modern ve kullanıcı dostu web sitesi tasarımı.",
+        "features": [
+          "Duyarlı Tasarım",
+          "UI/UX Tasarım",
+          "Prototipleme",
+          "Kullanılabilirlik Testi"
+        ]
+      },
+      "corporateWebsiteDesign": {
+        "title": "Kurumsal Web Sitesi Tasarımı",
+        "description": "Profesyonel ve kurumsal kimliğe uygun web sitesi tasarımı.",
+        "features": [
+          "Kurumsal Kimlik",
+          "İçerik Stratejisi",
+          "SEO Dostu Tasarım",
+          "Çoklu Dil Desteği"
+        ]
+      },
+      "landingPageDesign": {
+        "title": "Açılış Sayfası Tasarımı",
+        "description": "Yüksek dönüşüm oranı hedefleyen açılış sayfası tasarımı.",
+        "features": [
+          "Dönüşüm Odaklı Tasarım",
+          "A/B Test Tasarımı",
+          "CTA Optimizasyonu",
+          "Mobil Öncelikli"
+        ]
+      },
+      "ecommerceDesign": {
+        "title": "E-Ticaret Tasarımı",
+        "description": "Satış odaklı e-ticaret mağaza arayüz tasarımı.",
+        "features": [
+          "Ürün Sayfası Tasarımı",
+          "Sepet Deneyimi",
+          "Ödeme Akışı",
+          "Mobil Ticaret"
+        ]
+      },
+      "brandStrategy": {
+        "title": "Marka Stratejisi",
+        "description": "Kapsamlı marka stratejisi geliştirme ve konumlandırma.",
+        "features": [
+          "Marka Analizi",
+          "Hedef Kitle Araştırma",
+          "Rekabet Analizi",
+          "Marka Hikayesi"
+        ]
+      },
+      "brandPositioning": {
+        "title": "Marka Konumlandırma",
+        "description": "Pazarda güçlü ve farklılaştırıcı marka konumlandırma stratejisi.",
+        "features": [
+          "Pazar Analizi",
+          "Değer Teklifi",
+          "Mesaj Stratejisi",
+          "Farklılaştırma"
+        ]
+      },
+      "brandGuidelines": {
+        "title": "Marka Kılavuzu",
+        "description": "Tutarlı marka iletişimi için kapsamlı marka kılavuzu oluşturma.",
+        "features": [
+          "Logo Kullanımı",
+          "Renk Paleti",
+          "Tipografi",
+          "Görsel Dil"
+        ]
+      },
+      "rebranding": {
+        "title": "Yeniden Markalaştırma",
+        "description": "Marka yenileme ve modernizasyon stratejileri.",
+        "features": [
+          "Marka Denetimi",
+          "Yeni Kimlik Tasarımı",
+          "Geçiş Stratejisi",
+          "İletişim Planı"
+        ]
+      },
+      "3dArVr": {
+        "title": "3D / AR / VR",
+        "description": "3D modelleme, artırılmış gerçeklik ve sanal gerçeklik deneyimleri.",
+        "features": [
+          "3D Modelleme",
+          "AR Geliştirme",
+          "VR Deneyimleri",
+          "Etkileşimli İçerik"
+        ]
+      },
+      "3dProductVisualization": {
+        "title": "3D Ürün Görselleştirme",
+        "description": "Ürünlerinizin fotorealistik 3D görselleştirmesi ve sunumu.",
+        "features": [
+          "3D Modelleme",
+          "Fotorealistik Render",
+          "360° Görünüm",
+          "Etkileşimli 3D"
+        ]
+      },
+      "arExperiences": {
+        "title": "AR Deneyimleri",
+        "description": "Markanız için artırılmış gerçeklik deneyimleri geliştirme.",
+        "features": [
+          "AR Filtreler",
+          "Ürün Deneme",
+          "Mekansal AR",
+          "WebAR Geliştirme"
+        ]
+      },
+      "virtualTours": {
+        "title": "Sanal Turlar",
+        "description": "Mekanlarınız için etkileşimli 360° sanal tur deneyimleri.",
+        "features": [
+          "360° Fotoğrafçılık",
+          "Etkileşimli Navigasyon",
+          "Bilgi Noktaları",
+          "VR Uyumlu"
+        ]
+      },
+      "infrastructureAsCode": {
+        "title": "Kod Olarak Altyapı",
+        "description": "Altyapı kaynaklarının kod ile yönetimi ve otomasyonu.",
+        "features": [
+          "Terraform",
+          "CloudFormation",
+          "Ansible",
+          "Versiyon Kontrolü"
+        ]
+      },
+      "awsMigration": {
+        "title": "AWS Göçü",
+        "description": "Mevcut altyapınızın Amazon Web Services'e güvenli göçü.",
+        "features": [
+          "Göç Planlaması",
+          "Veri Aktarımı",
+          "Uygulama Modernizasyonu",
+          "Maliyet Optimizasyonu"
+        ]
+      },
+      "azureMigration": {
+        "title": "Azure Göçü",
+        "description": "Mevcut altyapınızın Microsoft Azure'a profesyonel göçü.",
+        "features": [
+          "Göç Değerlendirmesi",
+          "Hibrit Bulut",
+          "Active Directory",
+          "Maliyet Yönetimi"
+        ]
+      },
+      "googleCloudMigration": {
+        "title": "Google Cloud Göçü",
+        "description": "Google Cloud Platform'a altyapı göçü ve modernizasyon.",
+        "features": [
+          "GCP Planlama",
+          "Kubernetes Göçü",
+          "BigQuery Entegrasyonu",
+          "Maliyet Analizi"
+        ]
+      },
+      "modelDeployment": {
+        "title": "Model Dağıtımı",
+        "description": "Makine öğrenimi modellerinin üretim ortamına profesyonel dağıtımı.",
+        "features": [
+          "Konteyner Dağıtımı",
+          "API Servisi",
+          "A/B Test",
+          "Ölçeklendirme"
+        ]
+      },
+      "modelMonitoring": {
+        "title": "Model İzleme",
+        "description": "Üretim ortamındaki ML modellerinin performans izleme ve yönetimi.",
+        "features": [
+          "Performans Takibi",
+          "Veri Kayması Tespiti",
+          "Uyarı Sistemi",
+          "Model Versiyonlama"
+        ]
+      },
+      "mlPipelines": {
+        "title": "ML Pipeline'ları",
+        "description": "Uçtan uca makine öğrenimi iş akışı pipeline'ları tasarımı.",
+        "features": [
+          "Veri İşleme",
+          "Model Eğitimi",
+          "Otomatik MLOps",
+          "Pipeline Orkestrasyonu"
+        ]
+      },
+      "dataVisualization": {
+        "title": "Veri Görselleştirme",
+        "description": "Verilerinizi anlamlı ve etkileşimli görselleştirmelerle sunma.",
+        "features": [
+          "Özel Dashboard'lar",
+          "Etkileşimli Grafikler",
+          "Gerçek Zamanlı Veriler",
+          "Raporlama Araçları"
+        ]
+      },
+      "realTimeAnalytics": {
+        "title": "Gerçek Zamanlı Analitik",
+        "description": "Anlık veri analizi ve gerçek zamanlı iş zekası çözümleri.",
+        "features": [
+          "Akış İşleme",
+          "Anlık Dashboard",
+          "Olay Tetikleyiciler",
+          "Performans İzleme"
+        ]
+      },
+      "gdprCompliance": {
+        "title": "GDPR Uyumluluğu",
+        "description": "AB Genel Veri Koruma Yönetmeliği uyumluluğu danışmanlığı ve uygulama.",
+        "features": [
+          "Boşluk Analizi",
+          "Gizlilik Politikaları",
+          "Veri Haritalama",
+          "Çerez Uyumluluğu"
+        ]
+      },
+      "soc2Compliance": {
+        "title": "SOC 2 Uyumluluğu",
+        "description": "SOC 2 güvenlik sertifikası hazırlığı ve uyumluluk yönetimi.",
+        "features": [
+          "Hazırlık Değerlendirmesi",
+          "Politika Geliştirme",
+          "Kontrol Uygulama",
+          "Denetim Desteği"
+        ]
+      },
+      "databaseServices": {
+        "title": "Veritabanı Hizmetleri",
+        "description": "Kapsamlı veritabanı yönetimi, tasarımı ve bakım hizmetleri.",
+        "features": [
+          "Veritabanı Yönetimi",
+          "Yedekleme Stratejisi",
+          "Yüksek Erişilebilirlik",
+          "Performans İzleme"
+        ]
+      },
+      "databaseDesign": {
+        "title": "Veritabanı Tasarımı",
+        "description": "Ölçeklenebilir ve verimli veritabanı şema tasarımı ve modelleme.",
+        "features": [
+          "Şema Tasarımı",
+          "Veri Modelleme",
+          "Normalizasyon",
+          "İndeks Stratejisi"
+        ]
+      },
+      "databaseOptimization": {
+        "title": "Veritabanı Optimizasyonu",
+        "description": "Mevcut veritabanlarınızın performans analizi ve optimizasyonu.",
+        "features": [
+          "Sorgu Optimizasyonu",
+          "İndeks Ayarlama",
+          "Bellek Yapılandırma",
+          "Bağlantı Havuzu"
+        ]
+      },
+      "databaseMigration": {
+        "title": "Veritabanı Göçü",
+        "description": "Veritabanı platformları arası güvenli veri göçü ve dönüştürme.",
+        "features": [
+          "Veri Haritalama",
+          "Güvenli Aktarım",
+          "Doğrulama Testleri",
+          "Kesintisiz Geçiş"
+        ]
+      },
+      "performanceOptimization": {
+        "title": "Performans Optimizasyonu",
+        "description": "Web uygulamaları ve altyapı için kapsamlı performans iyileştirme.",
+        "features": [
+          "Performans Denetimi",
+          "Darboğaz Analizi",
+          "Kod Optimizasyonu",
+          "Altyapı Ayarlama"
+        ]
+      },
+      "websiteSpeedOptimization": {
+        "title": "Web Sitesi Hız Optimizasyonu",
+        "description": "Web sitenizin yükleme süresini kısaltma ve performans iyileştirme.",
+        "features": [
+          "Sayfa Hızı Analizi",
+          "Görsel Optimizasyon",
+          "Kod Küçültme",
+          "CDN Yapılandırma"
+        ]
+      },
+      "coreWebVitals": {
+        "title": "Core Web Vitals",
+        "description": "Google Core Web Vitals metriklerinin iyileştirilmesi ve optimizasyonu.",
+        "features": [
+          "LCP Optimizasyonu",
+          "FID İyileştirme",
+          "CLS Düzeltme",
+          "Performans İzleme"
+        ]
+      },
+      "serverOptimization": {
+        "title": "Sunucu Optimizasyonu",
+        "description": "Sunucu yapılandırması ve performans optimizasyonu.",
+        "features": [
+          "Sunucu Ayarlama",
+          "Önbellek Stratejisi",
+          "Yük Dengeleme",
+          "Kaynak Planlama"
+        ]
+      },
+      "managedServices": {
+        "title": "Yönetilen Hizmetler",
+        "description": "Altyapınızın proaktif yönetimi ve 7/24 izleme hizmetleri.",
+        "features": [
+          "7/24 İzleme",
+          "Proaktif Bakım",
+          "Olay Yönetimi",
+          "Performans Raporlama"
+        ]
+      },
+      "continuousMonitoring": {
+        "title": "Sürekli İzleme",
+        "description": "Sistemlerinizin kesintisiz izlenmesi ve anlık uyarı hizmetleri.",
+        "features": [
+          "Altyapı İzleme",
+          "Uygulama İzleme",
+          "Uyarı Yönetimi",
+          "Durum Paneli"
+        ]
+      },
+      "maintenanceSupport": {
+        "title": "Bakım ve Destek",
+        "description": "Yazılım ve altyapınız için sürekli bakım ve teknik destek.",
+        "features": [
+          "Düzenli Güncellemeler",
+          "Hata Düzeltme",
+          "Güvenlik Yamaları",
+          "Teknik Destek"
+        ]
+      },
+      "disasterRecovery": {
+        "title": "Felaket Kurtarma",
+        "description": "İş sürekliliği için felaket kurtarma planlaması ve uygulama.",
+        "features": [
+          "Kurtarma Planı",
+          "Yedekleme Stratejisi",
+          "Failover Sistemleri",
+          "Düzenli Tatbikat"
+        ]
+      },
+      "digitalTransformation": {
+        "title": "Dijital Dönüşüm",
+        "description": "İşletmenizin kapsamlı dijital dönüşüm stratejisi ve uygulaması.",
+        "features": [
+          "Dijital Strateji",
+          "Süreç Yeniden Tasarımı",
+          "Teknoloji Yol Haritası",
+          "Değişim Yönetimi"
+        ]
+      },
+      "digitalStrategy": {
+        "title": "Dijital Strateji",
+        "description": "İş hedeflerinize uygun dijital strateji geliştirme ve yol haritası.",
+        "features": [
+          "Pazar Analizi",
+          "Dijital Olgunluk",
+          "Yol Haritası",
+          "KPI Tanımlama"
+        ]
+      },
+      "processDigitization": {
+        "title": "Süreç Dijitalleştirme",
+        "description": "Manuel iş süreçlerinin dijitalleştirilmesi ve otomasyonu.",
+        "features": [
+          "Süreç Haritalama",
+          "Dijital İş Akışları",
+          "Belge Yönetimi",
+          "Otomasyon Çözümleri"
+        ]
+      },
+      "technologyConsulting": {
+        "title": "Teknoloji Danışmanlığı",
+        "description": "Teknoloji seçimi ve uygulama konularında uzman danışmanlık.",
+        "features": [
+          "Teknoloji Değerlendirme",
+          "Çözüm Mimarisi",
+          "Satıcı Seçimi",
+          "Uygulama Planı"
+        ]
+      },
+      "techStackAssessment": {
+        "title": "Teknoloji Yığını Değerlendirmesi",
+        "description": "Mevcut teknoloji altyapınızın kapsamlı değerlendirmesi ve öneriler.",
+        "features": [
+          "Mimari İnceleme",
+          "Performans Analizi",
+          "Güvenlik Denetimi",
+          "Modernizasyon Önerileri"
+        ]
+      },
+      "architectureDesign": {
+        "title": "Mimari Tasarım",
+        "description": "Ölçeklenebilir ve sürdürülebilir yazılım mimari tasarımı.",
+        "features": [
+          "Sistem Mimarisi",
+          "Mikro Hizmetler",
+          "API Tasarımı",
+          "Ölçeklenebilirlik Planı"
+        ]
+      },
+      "aiStrategy": {
+        "title": "Yapay Zeka Stratejisi",
+        "description": "İşletmeniz için yapay zeka stratejisi ve uygulama yol haritası.",
+        "features": [
+          "AI Fırsat Analizi",
+          "Kullanım Senaryoları",
+          "ROI Hesaplama",
+          "Uygulama Planı"
+        ]
+      },
+      "aiReadinessAssessment": {
+        "title": "AI Hazırlık Değerlendirmesi",
+        "description": "Organizasyonunuzun yapay zeka hazırlık düzeyinin kapsamlı değerlendirmesi.",
+        "features": [
+          "Veri Olgunluk Analizi",
+          "Altyapı Değerlendirme",
+          "Yetkinlik Analizi",
+          "Hazırlık Raporu"
+        ]
+      },
+      "aiRoiAnalysis": {
+        "title": "AI ROI Analizi",
+        "description": "Yapay zeka yatırımlarının getiri analizi ve fizibilite çalışması.",
+        "features": [
+          "Maliyet Analizi",
+          "Fayda Hesaplama",
+          "Risk Değerlendirme",
+          "Karşılaştırmalı Analiz"
+        ]
+      },
+      "growthStrategy": {
+        "title": "Büyüme Stratejisi",
+        "description": "Veri odaklı işletme büyüme stratejisi ve uygulama planı.",
+        "features": [
+          "Pazar Fırsat Analizi",
+          "Büyüme Kanalları",
+          "Ölçeklendirme Planı",
+          "KPI Çerçevesi"
+        ]
+      },
+      "startupServices": {
+        "title": "Startup Hizmetleri",
+        "description": "Startuplar için teknoloji danışmanlığı ve geliştirme hizmetleri.",
+        "features": [
+          "Teknik Danışmanlık",
+          "MVP Geliştirme",
+          "Ölçeklendirme Desteği",
+          "Yatırımcı Hazırlığı"
+        ]
+      },
+      "startupMvpDevelopment": {
+        "title": "Startup MVP Geliştirme",
+        "description": "Startuplar için hızlı ve maliyet etkin MVP geliştirme.",
+        "features": [
+          "Hızlı Geliştirme",
+          "Yalın Yaklaşım",
+          "Kullanıcı Testi",
+          "Pivot Esnekliği"
+        ]
+      },
+      "technicalCto": {
+        "title": "Teknik CTO",
+        "description": "Yarı zamanlı teknik CTO hizmeti ile stratejik teknoloji liderliği.",
+        "features": [
+          "Teknoloji Stratejisi",
+          "Takım Yönetimi",
+          "Mimari Kararlar",
+          "Yatırımcı İletişimi"
+        ]
+      },
+      "staffAugmentation": {
+        "title": "Personel Güçlendirme",
+        "description": "Uzman yazılım geliştiriciler ile ekibinizi güçlendirme hizmeti.",
+        "features": [
+          "Hızlı Yerleştirme",
+          "Esnek Sözleşme",
+          "Uzman Eşleştirme",
+          "Takım Entegrasyonu"
+        ]
+      },
+      "developerOutsourcing": {
+        "title": "Geliştirici Dış Kaynak",
+        "description": "Profesyonel yazılım geliştirici dış kaynak kullanım hizmetleri.",
+        "features": [
+          "Uzman Geliştiriciler",
+          "Proje Yönetimi",
+          "Kalite Güvence",
+          "Zamanında Teslimat"
+        ]
+      },
+      "dedicatedTeams": {
+        "title": "Özel Takımlar",
+        "description": "Projenize özel atanmış tam zamanlı yazılım geliştirme takımları.",
+        "features": [
+          "Özel Takım Oluşturma",
+          "Doğrudan İletişim",
+          "Esnek Ölçeklendirme",
+          "Uzun Vadeli İşbirliği"
+        ]
       }
+    },
+    "detail": {
+      "specializedServices": "Uzmanlaşmış Hizmetler",
+      "backTo": "{parent} sayfasına dön",
+      "exploreSubServices": "Uzmanlaşmış Çözümlerimizi Keşfedin"
     },
     "pricing": {
       "eyebrow": "Fiyatlandırma",

@@ -376,6 +376,9 @@ model Service {
   featured         Boolean  @default(false)
   order            Int      @default(0)
   color            String?
+  parentSlug       String?
+  category         String?  // "web-software", "ai-ml", "marketing", "infrastructure"
+  isParent         Boolean  @default(false)
 
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
@@ -386,6 +389,8 @@ model Service {
 
   @@index([slug])
   @@index([status])
+  @@index([parentSlug])
+  @@index([category])
 }
 
 // Service Translation Model

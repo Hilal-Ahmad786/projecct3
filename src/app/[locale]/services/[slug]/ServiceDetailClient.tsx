@@ -1,13 +1,15 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircleIcon } from '@heroicons/react/24/solid';
-import { PlusIcon, MinusIcon } from '@heroicons/react/24/outline';
+import { PlusIcon, MinusIcon, ChevronRightIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
 import Button from '@/components/Button';
 import ParticleNetwork from '@/components/ParticleNetwork';
 import ServicePortfolio from '@/components/services/ServicePortfolio';
 import ServiceRequestCTA from '@/components/services/ServiceRequestCTA';
+import { HeroVisual, BgPatternRenderer, DecorationRenderer, type ServiceAnimation } from '@/components/services/hero-visuals';
 
 // ── Types ────────────────────────────────────────────────────────────
 interface ProcessStep {
@@ -39,6 +41,21 @@ interface PricingPackage {
   billingPeriod?: string;
 }
 
+interface SubServiceItem {
+  slug: string;
+  name: string;
+  shortDescription?: string;
+  icon?: string;
+  color?: string;
+}
+
+interface ParentServiceInfo {
+  name: string;
+  slug: string;
+  icon?: string;
+  color?: string;
+}
+
 export interface ServiceDetailData {
   slug: string;
   name: string;
@@ -54,8 +71,13 @@ export interface ServiceDetailData {
     technologies?: Technology[];
     portfolio?: PortfolioItem[];
     faq?: FAQItem[];
+    animation?: ServiceAnimation;
   };
   pricingPackages?: PricingPackage[];
+  isParent?: boolean;
+  parentSlug?: string;
+  parentService?: ParentServiceInfo;
+  subServices?: SubServiceItem[];
 }
 
 // ── Color System ─────────────────────────────────────────────────────
@@ -198,20 +220,42 @@ export default function ServiceDetailClient({ service }: { service: ServiceDetai
   const portfolio = service.content.portfolio || [];
   const faq = service.content.faq || [];
   const pricingPackages = service.pricingPackages || [];
+  const subServices = service.subServices || [];
+  const parentService = service.parentService;
+  const animation = service.content.animation;
 
   return (
     <>
+      {/* ── Breadcrumb for child services ─────────────────────────── */}
+      {parentService && (
+        <div className="bg-gray-50 border-b border-gray-100">
+          <div className="container mx-auto px-4 py-3">
+            <nav className="flex items-center gap-2 text-sm text-gray-500">
+              <Link href="/services" className="hover:text-gray-900 transition-colors">
+                Services
+              </Link>
+              <ChevronRightIcon className="w-3.5 h-3.5" />
+              <Link href={`/services/${parentService.slug}`} className="hover:text-gray-900 transition-colors">
+                {parentService.name}
+              </Link>
+              <ChevronRightIcon className="w-3.5 h-3.5" />
+              <span className="text-gray-900 font-medium">{service.name}</span>
+            </nav>
+          </div>
+        </div>
+      )}
+
       {/* ── 1. Hero (two-column, animated) ──────────────────────────── */}
-      <HeroSection service={service} colors={colors} accent={accent} process={process} />
+      <HeroSection service={service} colors={colors} accent={accent} process={process} animation={animation} />
 
       {/* ── 2. Tech Strip (scrolling) ───────────────────────────────── */}
       {technologies.length > 0 && <TechStrip technologies={technologies} />}
 
       {/* ── 3. Features Grid (animated cards) ───────────────────────── */}
-      {features.length > 0 && <FeaturesSection features={features} />}
+      {features.length > 0 && <FeaturesSection features={features} featureStyle={animation?.featureStyle} />}
 
       {/* ── 4. Process (numbered cards) ─────────────────────────────── */}
-      {process.length > 0 && <ProcessSection steps={process} />}
+      {process.length > 0 && <ProcessSection steps={process} processLayout={animation?.processLayout} />}
 
       {/* ── 5. Benefits ─────────────────────────────────────────────── */}
       {benefits.length > 0 && (
@@ -241,7 +285,10 @@ export default function ServiceDetailClient({ service }: { service: ServiceDetai
       {/* ── 8. Pricing ──────────────────────────────────────────────── */}
       {pricingPackages.length > 0 && <PricingSection packages={pricingPackages} />}
 
-      {/* ── 9. CTA with project request modal ───────────────────────── */}
+      {/* ── 9. Sub-Services Grid (for parent services) ────────────── */}
+      {subServices.length > 0 && <SubServicesSection subServices={subServices} />}
+
+      {/* ── 10. CTA with project request modal ──────────────────────── */}
       <ServiceRequestCTA serviceType={service.slug} />
     </>
   );
@@ -255,38 +302,51 @@ function HeroSection({
   colors,
   accent,
   process,
+  animation,
 }: {
   service: ServiceDetailData;
   colors: typeof accentColors[AccentColor];
   accent: AccentColor;
   process: ProcessStep[];
+  animation?: ServiceAnimation;
 }) {
   const emojiIcon = iconMap[service.icon || ''] || '🔧';
+  const hasAnimation = !!animation;
 
   return (
     <section className="relative overflow-hidden bg-white pt-24 pb-20 lg:pt-32 lg:pb-28">
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <ParticleNetwork className="opacity-40" />
-        <div
-          className="absolute inset-0 opacity-[0.02]"
-          style={{
-            backgroundImage: `
-              linear-gradient(rgba(0,0,0,0.3) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(0,0,0,0.3) 1px, transparent 1px)
-            `,
-            backgroundSize: '64px 64px',
-          }}
-        />
+        {hasAnimation ? (
+          <BgPatternRenderer pattern={animation.bgPattern} />
+        ) : (
+          <div
+            className="absolute inset-0 opacity-[0.02]"
+            style={{
+              backgroundImage: `
+                linear-gradient(rgba(0,0,0,0.3) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0,0,0,0.3) 1px, transparent 1px)
+              `,
+              backgroundSize: '64px 64px',
+            }}
+          />
+        )}
       </div>
 
-      {/* Crescent Decorations */}
-      <div className="absolute top-32 right-20 w-32 h-32">
-        <div className="crescent crescent-right crescent-subtle text-gray-900" />
-      </div>
-      <div className="absolute bottom-32 left-16 w-24 h-24">
-        <div className="crescent crescent-left crescent-subtle text-gray-600" />
-      </div>
+      {/* Decorations */}
+      {hasAnimation ? (
+        <DecorationRenderer type={animation.decorations} accentColor={colors.dot} />
+      ) : (
+        <>
+          <div className="absolute top-32 right-20 w-32 h-32">
+            <div className="crescent crescent-right crescent-subtle text-gray-900" />
+          </div>
+          <div className="absolute bottom-32 left-16 w-24 h-24">
+            <div className="crescent crescent-left crescent-subtle text-gray-600" />
+          </div>
+        </>
+      )}
 
       {/* Main Content */}
       <div className="container mx-auto px-4 relative z-10">
@@ -353,63 +413,74 @@ function HeroSection({
             transition={{ duration: 0.8, delay: 0.2, ease: [0.4, 0, 0.2, 1] }}
             className="relative"
           >
-            <div className="relative aspect-square max-w-lg mx-auto">
-              {/* Animated Background Blobs */}
-              <motion.div
-                animate={{ scale: [1, 1.1, 1], rotate: [0, 5, 0] }}
-                transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
-                className={`absolute top-0 right-0 w-72 h-72 ${colors.blob1} rounded-full mix-blend-multiply filter blur-3xl opacity-60`}
-              />
-              <motion.div
-                animate={{ scale: [1, 1.15, 1], rotate: [0, -5, 0] }}
-                transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-                className={`absolute bottom-0 left-0 w-72 h-72 ${colors.blob2} rounded-full mix-blend-multiply filter blur-3xl opacity-60`}
-              />
-
-              {/* Central Geometric Composition */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                {/* Outer Ring */}
+            {hasAnimation ? (
+              /* Parametric Hero Visual */
+              <div className="relative aspect-square max-w-lg mx-auto flex items-center justify-center">
                 <motion.div
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
-                  className={`absolute w-80 h-80 rounded-full ring-1 ${colors.ring} opacity-40`}
+                  animate={{ scale: [1, 1.1, 1] }}
+                  transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
+                  className={`absolute top-0 right-0 w-64 h-64 ${colors.blob1} rounded-full mix-blend-multiply filter blur-3xl opacity-40`}
                 />
-                {/* Inner Ring */}
                 <motion.div
-                  animate={{ rotate: -360 }}
-                  transition={{ duration: 45, repeat: Infinity, ease: 'linear' }}
-                  className={`absolute w-64 h-64 rounded-full ring-1 ${colors.ring} opacity-30`}
+                  animate={{ scale: [1, 1.15, 1] }}
+                  transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
+                  className={`absolute bottom-0 left-0 w-64 h-64 ${colors.blob2} rounded-full mix-blend-multiply filter blur-3xl opacity-40`}
                 />
-
-                {/* Center Element */}
-                <div className={`relative w-48 h-48 bg-gradient-to-br ${colors.gradientFrom} ${colors.gradientTo} rounded-2xl shadow-lg flex items-center justify-center`}>
-                  <motion.div
-                    animate={{ y: [0, -8, 0] }}
-                    transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-                    className="text-6xl"
-                  >
-                    {emojiIcon}
-                  </motion.div>
+                <div className="relative z-10">
+                  <HeroVisual type={animation.heroVisual} motionType={animation.motion} accentClass={colors.dot} />
                 </div>
-
-                {/* Floating Dots */}
-                <motion.div
-                  animate={{ y: [0, -20, 0] }}
-                  transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
-                  className={`absolute top-16 right-16 w-4 h-4 ${colors.dot} rounded-full opacity-60`}
-                />
-                <motion.div
-                  animate={{ y: [0, 15, 0] }}
-                  transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
-                  className={`absolute bottom-20 left-20 w-3 h-3 ${colors.dot} rounded-full opacity-40`}
-                />
-                <motion.div
-                  animate={{ y: [0, -12, 0] }}
-                  transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-                  className={`absolute top-32 left-8 w-2 h-2 ${colors.dot} rounded-full opacity-50`}
-                />
               </div>
-            </div>
+            ) : (
+              /* Default Visual (emoji-based) */
+              <div className="relative aspect-square max-w-lg mx-auto">
+                <motion.div
+                  animate={{ scale: [1, 1.1, 1], rotate: [0, 5, 0] }}
+                  transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
+                  className={`absolute top-0 right-0 w-72 h-72 ${colors.blob1} rounded-full mix-blend-multiply filter blur-3xl opacity-60`}
+                />
+                <motion.div
+                  animate={{ scale: [1, 1.15, 1], rotate: [0, -5, 0] }}
+                  transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
+                  className={`absolute bottom-0 left-0 w-72 h-72 ${colors.blob2} rounded-full mix-blend-multiply filter blur-3xl opacity-60`}
+                />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <motion.div
+                    animate={{ rotate: 360 }}
+                    transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
+                    className={`absolute w-80 h-80 rounded-full ring-1 ${colors.ring} opacity-40`}
+                  />
+                  <motion.div
+                    animate={{ rotate: -360 }}
+                    transition={{ duration: 45, repeat: Infinity, ease: 'linear' }}
+                    className={`absolute w-64 h-64 rounded-full ring-1 ${colors.ring} opacity-30`}
+                  />
+                  <div className={`relative w-48 h-48 bg-gradient-to-br ${colors.gradientFrom} ${colors.gradientTo} rounded-2xl shadow-lg flex items-center justify-center`}>
+                    <motion.div
+                      animate={{ y: [0, -8, 0] }}
+                      transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+                      className="text-6xl"
+                    >
+                      {emojiIcon}
+                    </motion.div>
+                  </div>
+                  <motion.div
+                    animate={{ y: [0, -20, 0] }}
+                    transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
+                    className={`absolute top-16 right-16 w-4 h-4 ${colors.dot} rounded-full opacity-60`}
+                  />
+                  <motion.div
+                    animate={{ y: [0, 15, 0] }}
+                    transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
+                    className={`absolute bottom-20 left-20 w-3 h-3 ${colors.dot} rounded-full opacity-40`}
+                  />
+                  <motion.div
+                    animate={{ y: [0, -12, 0] }}
+                    transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
+                    className={`absolute top-32 left-8 w-2 h-2 ${colors.dot} rounded-full opacity-50`}
+                  />
+                </div>
+              </div>
+            )}
           </motion.div>
         </div>
       </div>
@@ -470,7 +541,9 @@ function TechStrip({ technologies }: { technologies: Technology[] }) {
 // ═══════════════════════════════════════════════════════════════════════
 // ── FEATURES GRID (animated cards) ───────────────────────────────────
 // ═══════════════════════════════════════════════════════════════════════
-function FeaturesSection({ features }: { features: string[] }) {
+function FeaturesSection({ features, featureStyle }: { features: string[]; featureStyle?: string }) {
+  const style = featureStyle || 'icon-top';
+
   return (
     <section id="features" className="py-24 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -483,7 +556,7 @@ function FeaturesSection({ features }: { features: string[] }) {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className={`grid gap-8 ${style === 'icon-left' ? 'md:grid-cols-2' : 'md:grid-cols-2 lg:grid-cols-3'}`}>
           {features.map((feature, index) => (
             <motion.div
               key={index}
@@ -491,15 +564,46 @@ function FeaturesSection({ features }: { features: string[] }) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white p-8 rounded-2xl border border-gray-100 hover:border-gray-300 hover:shadow-lg transition-all duration-300 group"
+              className={`bg-white rounded-2xl transition-all duration-300 group hover:shadow-lg ${
+                style === 'bordered' ? 'p-8 border-2 border-gray-200 hover:border-gray-400' :
+                style === 'gradient-border' ? 'p-8 border border-gray-100 hover:border-transparent hover:ring-2 hover:ring-emerald-200' :
+                style === 'minimal' ? 'p-6 border-0 shadow-none hover:bg-gray-50' :
+                'p-8 border border-gray-100 hover:border-gray-300'
+              }`}
             >
-              <div className="w-12 h-12 bg-gray-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-gray-900 transition-colors duration-300">
-                <CheckCircleIcon className="w-6 h-6 text-gray-600 group-hover:text-white transition-colors duration-300" />
-              </div>
-              <h3 className="text-xl font-medium text-gray-900 mb-3">{feature}</h3>
-              <p className="text-gray-500 leading-relaxed">
-                Built with precision and scalability in mind.
-              </p>
+              {style === 'icon-left' ? (
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-gray-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-gray-900 transition-colors duration-300">
+                    <CheckCircleIcon className="w-5 h-5 text-gray-600 group-hover:text-white transition-colors duration-300" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-medium text-gray-900 mb-1">{feature}</h3>
+                    <p className="text-gray-500 text-sm leading-relaxed">Built with precision and scalability in mind.</p>
+                  </div>
+                </div>
+              ) : style === 'numbered' ? (
+                <>
+                  <div className="text-3xl font-bold text-gray-100 mb-4 group-hover:text-gray-200 transition-colors">
+                    {String(index + 1).padStart(2, '0')}
+                  </div>
+                  <h3 className="text-xl font-medium text-gray-900 mb-3">{feature}</h3>
+                  <p className="text-gray-500 leading-relaxed">Built with precision and scalability in mind.</p>
+                </>
+              ) : style === 'minimal' ? (
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 rounded-full bg-gray-900 flex-shrink-0" />
+                  <h3 className="text-lg font-medium text-gray-900">{feature}</h3>
+                </div>
+              ) : (
+                /* icon-top (default), bordered, gradient-border */
+                <>
+                  <div className="w-12 h-12 bg-gray-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-gray-900 transition-colors duration-300">
+                    <CheckCircleIcon className="w-6 h-6 text-gray-600 group-hover:text-white transition-colors duration-300" />
+                  </div>
+                  <h3 className="text-xl font-medium text-gray-900 mb-3">{feature}</h3>
+                  <p className="text-gray-500 leading-relaxed">Built with precision and scalability in mind.</p>
+                </>
+              )}
             </motion.div>
           ))}
         </div>
@@ -511,7 +615,9 @@ function FeaturesSection({ features }: { features: string[] }) {
 // ═══════════════════════════════════════════════════════════════════════
 // ── PROCESS SECTION (numbered cards) ─────────────────────────────────
 // ═══════════════════════════════════════════════════════════════════════
-function ProcessSection({ steps }: { steps: ProcessStep[] }) {
+function ProcessSection({ steps, processLayout }: { steps: ProcessStep[]; processLayout?: string }) {
+  const layout = processLayout || 'cards';
+
   return (
     <section id="process" className="py-24 bg-white">
       <div className="container mx-auto px-4">
@@ -520,32 +626,100 @@ function ProcessSection({ steps }: { steps: ProcessStep[] }) {
           <p className="text-gray-600">From concept to launch, we follow a proven methodology.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {steps.map((step, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="relative p-8 rounded-2xl border border-gray-100 bg-white hover:border-gray-300 hover:shadow-lg transition-all duration-300 group"
-            >
-              <div className="absolute top-6 right-8 text-6xl font-bold text-gray-50 opacity-50 group-hover:text-gray-100 transition-colors select-none">
-                {String(step.step).padStart(2, '0')}
-              </div>
-
-              <div className="relative z-10">
-                <div className="w-12 h-12 rounded-lg bg-gray-50 flex items-center justify-center mb-6 group-hover:bg-gray-100 transition-colors">
-                  <span className="text-gray-600 group-hover:text-gray-900 transition-colors">
-                    <ProcessIcon step={step.step} />
-                  </span>
+        {layout === 'timeline' ? (
+          /* Timeline Layout */
+          <div className="max-w-3xl mx-auto relative">
+            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gray-200" />
+            {steps.map((step, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.2 }}
+                className="relative pl-20 pb-12 last:pb-0"
+              >
+                <div className="absolute left-4 top-1 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold z-10">
+                  {step.step}
                 </div>
-                <h3 className="text-xl font-medium text-gray-900 mb-3">{step.title}</h3>
+                <h3 className="text-xl font-medium text-gray-900 mb-2">{step.title}</h3>
                 <p className="text-gray-500 leading-relaxed">{step.description}</p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+              </motion.div>
+            ))}
+          </div>
+        ) : layout === 'steps-horizontal' ? (
+          /* Horizontal Steps */
+          <div className="flex flex-col md:flex-row gap-4 items-start">
+            {steps.map((step, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.15 }}
+                className="flex-1 text-center relative"
+              >
+                <div className="w-12 h-12 mx-auto bg-gray-900 text-white rounded-full flex items-center justify-center text-lg font-bold mb-4">
+                  {step.step}
+                </div>
+                {index < steps.length - 1 && (
+                  <div className="hidden md:block absolute top-6 left-[calc(50%+24px)] right-[calc(-50%+24px)] h-0.5 bg-gray-200" />
+                )}
+                <h3 className="text-lg font-medium text-gray-900 mb-2">{step.title}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">{step.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        ) : layout === 'zigzag' ? (
+          /* Zigzag Layout */
+          <div className="max-w-4xl mx-auto space-y-12">
+            {steps.map((step, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.15 }}
+                className={`flex items-start gap-8 ${index % 2 === 1 ? 'flex-row-reverse text-right' : ''}`}
+              >
+                <div className="w-16 h-16 bg-gray-900 text-white rounded-2xl flex items-center justify-center text-2xl font-bold flex-shrink-0">
+                  {step.step}
+                </div>
+                <div>
+                  <h3 className="text-xl font-medium text-gray-900 mb-2">{step.title}</h3>
+                  <p className="text-gray-500 leading-relaxed">{step.description}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        ) : (
+          /* Cards Layout (default) */
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {steps.map((step, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.2 }}
+                className="relative p-8 rounded-2xl border border-gray-100 bg-white hover:border-gray-300 hover:shadow-lg transition-all duration-300 group"
+              >
+                <div className="absolute top-6 right-8 text-6xl font-bold text-gray-50 opacity-50 group-hover:text-gray-100 transition-colors select-none">
+                  {String(step.step).padStart(2, '0')}
+                </div>
+                <div className="relative z-10">
+                  <div className="w-12 h-12 rounded-lg bg-gray-50 flex items-center justify-center mb-6 group-hover:bg-gray-100 transition-colors">
+                    <span className="text-gray-600 group-hover:text-gray-900 transition-colors">
+                      <ProcessIcon step={step.step} />
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-medium text-gray-900 mb-3">{step.title}</h3>
+                  <p className="text-gray-500 leading-relaxed">{step.description}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );
@@ -660,6 +834,67 @@ function PricingSection({ packages }: { packages: PricingPackage[] }) {
               </Button>
             </motion.div>
           ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// ── SUB-SERVICES SECTION (grid of child services for parent pages) ──
+// ═══════════════════════════════════════════════════════════════════════
+function SubServicesSection({ subServices }: { subServices: SubServiceItem[] }) {
+  return (
+    <section className="py-24 bg-gray-50">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <div className="w-8 h-0.5 bg-gray-900" />
+            <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">
+              Specialized Services
+            </span>
+            <div className="w-8 h-0.5 bg-gray-900" />
+          </div>
+          <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">
+            Explore Our Specialized Solutions
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Dive deeper into our specialized offerings tailored to your specific needs.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          {subServices.map((sub, index) => {
+            const emojiIcon = iconMap[sub.icon || ''] || '🔧';
+            return (
+              <motion.div
+                key={sub.slug}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <Link
+                  href={`/services/${sub.slug}`}
+                  className="block bg-white p-8 rounded-2xl border border-gray-100 hover:border-gray-300 hover:shadow-lg transition-all duration-300 group h-full"
+                >
+                  <div className="text-3xl mb-4">{emojiIcon}</div>
+                  <h3 className="text-xl font-medium text-gray-900 mb-3 group-hover:text-emerald-600 transition-colors">
+                    {sub.name}
+                  </h3>
+                  {sub.shortDescription && (
+                    <p className="text-gray-500 leading-relaxed mb-4 line-clamp-2">
+                      {sub.shortDescription}
+                    </p>
+                  )}
+                  <div className="flex items-center gap-2 text-sm font-medium text-gray-400 group-hover:text-emerald-600 transition-colors">
+                    Learn More
+                    <ArrowRightIcon className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </Link>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
