@@ -10,6 +10,7 @@ import {
   SubPageHeroVisual,
   type SubPageAnimation
 } from '@/components/services/subpage-animations';
+import { useTranslations } from '@/hooks/useTranslations';
 
 interface Technology {
   name: string;
@@ -47,6 +48,7 @@ export default function TechStackPageClient({
   animation,
   locale
 }: TechStackPageClientProps) {
+  const { t } = useTranslations();
   const gridRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(gridRef, { once: true, margin: '-100px' });
 
@@ -119,11 +121,11 @@ export default function TechStackPageClient({
             transition={{ duration: 0.6 }}
             className="flex items-center gap-2 text-sm text-gray-400"
           >
-            <Link href={`/${locale}/services`} className="hover:text-gray-900 transition-colors">Services</Link>
+            <Link href={`/${locale}/services`} className="hover:text-gray-900 transition-colors">{t('services.detail.breadcrumb.services')}</Link>
             <span className="text-gray-300">/</span>
             <Link href={`/${locale}/services/${serviceSlug}`} className="hover:text-gray-900 transition-colors">{serviceName}</Link>
             <span className="text-gray-300">/</span>
-            <span className="text-gray-900">Tech Stack</span>
+            <span className="text-gray-900">{t('services.detail.breadcrumb.techStack')}</span>
           </motion.nav>
         </div>
 
@@ -145,7 +147,7 @@ export default function TechStackPageClient({
                 <CpuChipIcon className="w-5 h-5" style={{ color: config.primaryColor }} />
               </motion.div>
               <span className="text-xs font-medium uppercase tracking-widest" style={{ color: config.primaryColor }}>
-                Technologies
+                {t('services.detail.techStack.eyebrow')}
               </span>
             </motion.div>
 
@@ -156,9 +158,9 @@ export default function TechStackPageClient({
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-5xl md:text-6xl lg:text-7xl font-light text-gray-900 mb-8 leading-[1.1] tracking-tight"
             >
-              Powered by
+              {t('services.detail.techStack.heroTitle')}
               <br />
-              <span className="font-semibold" style={{ color: config.primaryColor }}>Modern Tech</span>
+              <span className="font-semibold" style={{ color: config.primaryColor }}>{t('services.detail.techStack.heroTitleAccent')}</span>
             </motion.h1>
 
             {/* Description */}
@@ -168,8 +170,7 @@ export default function TechStackPageClient({
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl text-gray-500 max-w-2xl leading-relaxed mb-12"
             >
-              We leverage proven, battle-tested technologies to build solutions that scale.
-              Each tool is chosen for performance, reliability, and long-term maintainability.
+              {t('services.detail.techStack.heroDescription')}
             </motion.p>
 
             {/* Stats */}
@@ -189,15 +190,15 @@ export default function TechStackPageClient({
                 >
                   {technologies.length}+
                 </motion.div>
-                <div className="text-sm text-gray-400 mt-1">Technologies</div>
+                <div className="text-sm text-gray-400 mt-1">{t('services.detail.techStack.stats.technologies')}</div>
               </div>
               <div>
-                <div className="text-5xl font-light text-gray-900">Open</div>
-                <div className="text-sm text-gray-400 mt-1">Source First</div>
+                <div className="text-5xl font-light text-gray-900">{t('services.detail.techStack.stats.openSource')}</div>
+                <div className="text-sm text-gray-400 mt-1">{t('services.detail.techStack.stats.sourceFirst')}</div>
               </div>
               <div>
                 <div className="text-5xl font-light text-gray-900">∞</div>
-                <div className="text-sm text-gray-400 mt-1">Scalable</div>
+                <div className="text-sm text-gray-400 mt-1">{t('services.detail.techStack.stats.scalable')}</div>
               </div>
             </motion.div>
           </div>
@@ -217,8 +218,8 @@ export default function TechStackPageClient({
               >
                 <span className="text-3xl" style={{ color: config.primaryColor }}>◇</span>
               </motion.div>
-              <h2 className="text-2xl font-light text-gray-900 mb-2">Tech Stack Coming Soon</h2>
-              <p className="text-gray-500">We're preparing our technology documentation.</p>
+              <h2 className="text-2xl font-light text-gray-900 mb-2">{t('services.detail.techStack.comingSoon')}</h2>
+              <p className="text-gray-500">{t('services.detail.techStack.preparingDocs')}</p>
             </div>
           ) : (
             <>
@@ -232,7 +233,7 @@ export default function TechStackPageClient({
                 >
                   <div className="w-8 h-px bg-gray-300" />
                   <span className="text-xs font-medium text-gray-500 uppercase tracking-widest">
-                    Our Stack
+                    {t('services.detail.techStack.ourStack')}
                   </span>
                   <div className="w-8 h-px bg-gray-300" />
                 </motion.div>
@@ -294,7 +295,7 @@ export default function TechStackPageClient({
                 >
                   <div className="w-8 h-px bg-gray-900" />
                   <span className="text-xs font-medium text-gray-500 uppercase tracking-widest">
-                    Philosophy
+                    {t('services.detail.techStack.philosophy.eyebrow')}
                   </span>
                 </motion.div>
 
@@ -305,9 +306,9 @@ export default function TechStackPageClient({
                   transition={{ delay: 0.1 }}
                   className="text-4xl font-light text-gray-900 mb-6"
                 >
-                  Technology choices
+                  {t('services.detail.techStack.philosophy.title')}
                   <br />
-                  <span className="font-semibold" style={{ color: config.primaryColor }}>that matter</span>
+                  <span className="font-semibold" style={{ color: config.primaryColor }}>{t('services.detail.techStack.philosophy.titleAccent')}</span>
                 </motion.h2>
 
                 <motion.p
@@ -317,17 +318,16 @@ export default function TechStackPageClient({
                   transition={{ delay: 0.2 }}
                   className="text-gray-500 leading-relaxed"
                 >
-                  We don't chase trends. Every technology in our stack is proven, well-documented,
-                  and chosen for long-term viability. Your project deserves tools that will last.
+                  {t('services.detail.techStack.philosophy.description')}
                 </motion.p>
               </div>
 
               <div className="grid grid-cols-2 gap-8">
                 {[
-                  { symbol: '◇', label: 'Performance', desc: 'Optimized for speed' },
-                  { symbol: '⬢', label: 'Scalability', desc: 'Grows with you' },
-                  { symbol: '◈', label: 'Security', desc: 'Built-in protection' },
-                  { symbol: '○', label: 'Community', desc: 'Strong ecosystem' },
+                  { symbol: '◇', label: t('services.detail.techStack.philosophy.performance'), desc: t('services.detail.techStack.philosophy.performanceDesc') },
+                  { symbol: '⬢', label: t('services.detail.techStack.philosophy.scalability'), desc: t('services.detail.techStack.philosophy.scalabilityDesc') },
+                  { symbol: '◈', label: t('services.detail.techStack.philosophy.security'), desc: t('services.detail.techStack.philosophy.securityDesc') },
+                  { symbol: '○', label: t('services.detail.techStack.philosophy.community'), desc: t('services.detail.techStack.philosophy.communityDesc') },
                 ].map((item, i) => (
                   <motion.div
                     key={i}
@@ -378,10 +378,10 @@ export default function TechStackPageClient({
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-3xl md:text-4xl font-light text-white mb-6">
-              Ready to build with modern tech?
+              {t('services.detail.techStack.cta.title')}
             </h2>
             <p className="text-gray-400 mb-10 max-w-xl mx-auto">
-              Let's leverage these technologies for your project.
+              {t('services.detail.techStack.cta.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -389,14 +389,14 @@ export default function TechStackPageClient({
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 text-gray-900 font-medium transition-all hover:scale-105"
                 style={{ backgroundColor: config.primaryColor }}
               >
-                Start Your Project
+                {t('services.detail.techStack.cta.startProject')}
                 <ArrowRightIcon className="w-4 h-4" />
               </Link>
               <Link
                 href={`/${locale}/services/${serviceSlug}/portfolio`}
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-gray-700 text-white font-medium hover:bg-white/5 transition-colors"
               >
-                View Portfolio
+                {t('services.detail.techStack.cta.viewPortfolio')}
               </Link>
             </div>
           </motion.div>

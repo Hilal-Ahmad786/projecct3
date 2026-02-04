@@ -5,6 +5,7 @@ import { motion, AnimatePresence, useScroll, useTransform, useInView } from 'fra
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRightIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
+import { useTranslations } from '@/hooks/useTranslations';
 
 interface PortfolioItem {
   title: string;
@@ -29,6 +30,7 @@ export default function PortfolioPageClient({
   portfolio,
   locale
 }: PortfolioPageClientProps) {
+  const { t } = useTranslations();
   const containerRef = useRef<HTMLDivElement>(null);
   const gridRef = useRef<HTMLDivElement>(null);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
@@ -139,11 +141,11 @@ export default function PortfolioPageClient({
             transition={{ duration: 0.6 }}
             className="flex items-center gap-2 text-sm text-gray-400"
           >
-            <Link href={`/${locale}/services`} className="hover:text-gray-900 transition-colors">Services</Link>
+            <Link href={`/${locale}/services`} className="hover:text-gray-900 transition-colors">{t('services.detail.breadcrumb.services')}</Link>
             <span className="text-gray-300">/</span>
             <Link href={`/${locale}/services/${serviceSlug}`} className="hover:text-gray-900 transition-colors">{serviceName}</Link>
             <span className="text-gray-300">/</span>
-            <span className="text-gray-900">Portfolio</span>
+            <span className="text-gray-900">{t('services.detail.breadcrumb.portfolio')}</span>
           </motion.nav>
         </div>
 
@@ -168,7 +170,7 @@ export default function PortfolioPageClient({
                 <div className="w-3 h-3" style={{ backgroundColor: accentColor }} />
               </motion.div>
               <span className="text-xs font-medium uppercase tracking-widest" style={{ color: accentColor }}>
-                Case Studies
+                {t('services.detail.portfolio.eyebrow')}
               </span>
             </motion.div>
 
@@ -179,9 +181,9 @@ export default function PortfolioPageClient({
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-5xl md:text-6xl lg:text-7xl font-light text-gray-900 mb-8 leading-[1.1] tracking-tight"
             >
-              Selected
+              {t('services.detail.portfolio.heroTitle')}
               <br />
-              <span className="font-semibold" style={{ color: accentColor }}>Works</span>
+              <span className="font-semibold" style={{ color: accentColor }}>{t('services.detail.portfolio.heroTitleAccent')}</span>
             </motion.h1>
 
             {/* Description */}
@@ -191,8 +193,7 @@ export default function PortfolioPageClient({
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl text-gray-500 max-w-2xl leading-relaxed mb-12"
             >
-              A curated collection of our most impactful projects. Each piece represents
-              our commitment to excellence and measurable results.
+              {t('services.detail.portfolio.heroDescription')}
             </motion.p>
 
             {/* Stats */}
@@ -212,15 +213,15 @@ export default function PortfolioPageClient({
                 >
                   {portfolio.length}
                 </motion.div>
-                <div className="text-sm text-gray-400 mt-1">Projects</div>
+                <div className="text-sm text-gray-400 mt-1">{t('services.detail.portfolio.stats.projects')}</div>
               </div>
               <div>
                 <div className="text-5xl font-light text-gray-900">{categories.length}</div>
-                <div className="text-sm text-gray-400 mt-1">Categories</div>
+                <div className="text-sm text-gray-400 mt-1">{t('services.detail.portfolio.stats.categories')}</div>
               </div>
               <div>
                 <div className="text-5xl font-light text-gray-900">100%</div>
-                <div className="text-sm text-gray-400 mt-1">Satisfaction</div>
+                <div className="text-sm text-gray-400 mt-1">{t('services.detail.portfolio.stats.satisfaction')}</div>
               </div>
             </motion.div>
           </div>
@@ -244,8 +245,8 @@ export default function PortfolioPageClient({
                   style={{ backgroundColor: accentColor }}
                 />
               </motion.div>
-              <h2 className="text-2xl font-light text-gray-900 mb-2">Portfolio Coming Soon</h2>
-              <p className="text-gray-500">We're preparing case studies for this service.</p>
+              <h2 className="text-2xl font-light text-gray-900 mb-2">{t('services.detail.breadcrumb.portfolio')} {t('services.detail.features.comingSoon').replace('Features', '')}</h2>
+              <p className="text-gray-500">{t('services.detail.portfolio.preparingCaseStudies')}</p>
             </div>
           ) : (
             <>
@@ -266,7 +267,7 @@ export default function PortfolioPageClient({
                     }`}
                     style={selectedCategory === null ? { backgroundColor: accentColor } : {}}
                   >
-                    All
+                    {t('services.detail.portfolio.filters.all')}
                   </button>
                   {categories.map(cat => (
                     <button
@@ -342,7 +343,7 @@ export default function PortfolioPageClient({
                                   style={{ backgroundColor: accentColor + '40' }}
                                 />
                               </motion.div>
-                              <span className="text-xs text-gray-400 uppercase tracking-wider">Preview</span>
+                              <span className="text-xs text-gray-400 uppercase tracking-wider">{t('services.detail.portfolio.preview')}</span>
                             </div>
                           </div>
                         )}
@@ -377,7 +378,7 @@ export default function PortfolioPageClient({
                                   className="inline-flex items-center gap-2 text-sm transition-colors"
                                   style={{ color: accentColor }}
                                 >
-                                  View Project
+                                  {t('services.detail.portfolio.viewProject')}
                                   <ArrowTopRightOnSquareIcon className="w-4 h-4" />
                                 </a>
                               )}
@@ -466,7 +467,7 @@ export default function PortfolioPageClient({
                 >
                   <div className="w-8 h-px bg-gray-900" />
                   <span className="text-xs font-medium text-gray-500 uppercase tracking-widest">
-                    Impact
+                    {t('services.detail.portfolio.impact.eyebrow')}
                   </span>
                 </motion.div>
 
@@ -477,9 +478,9 @@ export default function PortfolioPageClient({
                   transition={{ delay: 0.1 }}
                   className="text-4xl font-light text-gray-900 mb-6"
                 >
-                  Results that
+                  {t('services.detail.portfolio.impact.title')}
                   <br />
-                  <span className="font-semibold" style={{ color: accentColor }}>speak volumes</span>
+                  <span className="font-semibold" style={{ color: accentColor }}>{t('services.detail.portfolio.impact.titleAccent')}</span>
                 </motion.h2>
 
                 <motion.p
@@ -489,18 +490,17 @@ export default function PortfolioPageClient({
                   transition={{ delay: 0.2 }}
                   className="text-gray-500 leading-relaxed"
                 >
-                  Our portfolio reflects our commitment to delivering measurable outcomes.
-                  Every project is an opportunity to exceed expectations.
+                  {t('services.detail.portfolio.impact.description')}
                 </motion.p>
               </div>
 
               {/* Stats Grid with Sequential Reveal */}
               <div className="grid grid-cols-2 gap-1 bg-gray-200">
                 {[
-                  { value: '150+', label: 'Projects Delivered' },
-                  { value: '98%', label: 'Client Retention' },
-                  { value: '40%', label: 'Performance Gain' },
-                  { value: '5.0', label: 'Average Rating' },
+                  { value: '150+', labelKey: 'projectsDelivered' },
+                  { value: '98%', labelKey: 'clientRetention' },
+                  { value: '40%', labelKey: 'performanceGain' },
+                  { value: '5.0', labelKey: 'averageRating' },
                 ].map((stat, i) => (
                   <motion.div
                     key={i}
@@ -525,7 +525,7 @@ export default function PortfolioPageClient({
                     >
                       {stat.value}
                     </motion.div>
-                    <div className="text-sm text-gray-500">{stat.label}</div>
+                    <div className="text-sm text-gray-500">{t(`services.detail.portfolio.stats.${stat.labelKey}`)}</div>
                   </motion.div>
                 ))}
               </div>
@@ -557,10 +557,10 @@ export default function PortfolioPageClient({
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-3xl md:text-4xl font-light text-white mb-6">
-              Want to see your project here?
+              {t('services.detail.portfolio.cta.title')}
             </h2>
             <p className="text-gray-400 mb-10 max-w-xl mx-auto">
-              Let's create something worth showcasing together.
+              {t('services.detail.portfolio.cta.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -568,14 +568,14 @@ export default function PortfolioPageClient({
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 text-white font-medium transition-all hover:scale-105"
                 style={{ backgroundColor: accentColor }}
               >
-                Start Your Project
+                {t('services.detail.portfolio.cta.startProject')}
                 <ArrowRightIcon className="w-4 h-4" />
               </Link>
               <Link
                 href={`/${locale}/services/${serviceSlug}/faq`}
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-gray-700 text-white font-medium hover:bg-white/5 transition-colors"
               >
-                Have Questions?
+                {t('services.detail.portfolio.cta.haveQuestions')}
               </Link>
             </div>
           </motion.div>

@@ -2416,9 +2416,206 @@
       }
     },
     "detail": {
+      "breadcrumb": {
+        "services": "الخدمات",
+        "process": "العملية",
+        "features": "الميزات",
+        "techStack": "مكدس التكنولوجيا",
+        "portfolio": "المحفظة",
+        "faq": "الأسئلة الشائعة"
+      },
+      "hero": {
+        "eyebrow": "خدمتنا",
+        "startProject": "ابدأ مشروعك",
+        "howWeWork": "كيف نعمل"
+      },
+      "benefits": {
+        "title": "لماذا تختار هذه الخدمة"
+      },
+      "features": {
+        "title": "ما نقدمه",
+        "description": "حلول شاملة مصممة خصيصاً لاحتياجاتك.",
+        "featureDescription": "مبني بدقة وقابلية للتوسع.",
+        "coreFeatures": "الميزات الأساسية",
+        "customizable": "قابل للتخصيص",
+        "scalability": "قابلية التوسع",
+        "heroTitleAccent": "الميزات",
+        "heroDescription": "قدرات شاملة مصممة بدقة. كل ميزة تخدم غرض تقديم نتائج استثنائية لمشروعك.",
+        "featureCardDesc": "مصنوعة بدقة ومبنية للتوسع. تتكامل بسلاسة مع سير عملك الحالي.",
+        "comingSoon": "الميزات قادمة قريباً",
+        "preparingInfo": "نحن نجهز معلومات الميزات التفصيلية.",
+        "philosophy": {
+          "eyebrow": "الفلسفة",
+          "title": "كل ميزة تخدم",
+          "titleAccent": "غرضاً",
+          "description": "نؤمن بالتصميم الهادف. لا ميزات زائدة، لا تعقيد غير ضروري. فقط الأدوات التي تحتاجها لتحقيق نتائج استثنائية.",
+          "goalOriented": "موجه نحو الهدف",
+          "goalDescription": "متوافق مع أهداف عملك",
+          "performance": "الأداء",
+          "performanceDescription": "محسّن للسرعة بأي حجم",
+          "maintainable": "قابل للصيانة",
+          "maintainableDescription": "بنية نظيفة للديمومة"
+        },
+        "cta": {
+          "title": "مستعد للاستفادة من هذه الميزات؟",
+          "startProject": "ابدأ مشروعك",
+          "viewProcess": "عرض العملية"
+        }
+      },
+      "process": {
+        "title": "عمليتنا",
+        "description": "من الفكرة إلى الإطلاق، نتبع منهجية مثبتة.",
+        "comingSoon": "تفاصيل العملية قادمة قريباً",
+        "preparingDocs": "نحن نجهز وثائق المنهجية.",
+        "eyebrow": "منهجيتنا",
+        "heroTitle": "كيف نبني",
+        "heroDescription": "نهج منظم تم صقله عبر سنوات من الخبرة. كل خطوة مصممة للوضوح والكفاءة والنتائج الاستثنائية.",
+        "stats": {
+          "clearSteps": "خطوات واضحة",
+          "agile": "أجايل",
+          "methodology": "المنهجية",
+          "transparency": "الشفافية"
+        },
+        "expectations": {
+          "eyebrow": "التوقعات",
+          "title": "ما يمكنك",
+          "titleAccent": "توقعه منا",
+          "description": "نؤمن بالشفافية الكاملة. ستعرف دائماً أين يقف مشروعك وما الذي سيأتي بعد ذلك.",
+          "weeklyUpdates": "تحديثات أسبوعية",
+          "weeklyUpdatesDesc": "تقارير التقدم كل أسبوع",
+          "directAccess": "وصول مباشر",
+          "directAccessDesc": "تواصل مع فريقك",
+          "milestones": "المعالم",
+          "milestonesDesc": "نقاط تفتيش واضحة للتسليم",
+          "documentation": "التوثيق",
+          "documentationDesc": "تسليم تقني كامل"
+        },
+        "cta": {
+          "title": "مستعد لبدء العملية؟",
+          "description": "لنبدأ بمحادثة حول أهداف مشروعك.",
+          "startProject": "ابدأ مشروعك",
+          "viewFeatures": "عرض الميزات",
+          "viewTechStack": "عرض مكدس التكنولوجيا"
+        }
+      },
+      "techStack": {
+        "eyebrow": "التقنيات",
+        "heroTitle": "مدعوم بـ",
+        "heroTitleAccent": "تكنولوجيا حديثة",
+        "heroDescription": "نستخدم تقنيات مثبتة وموثوقة لبناء حلول قابلة للتوسع. يتم اختيار كل أداة للأداء والموثوقية وسهولة الصيانة على المدى الطويل.",
+        "stats": {
+          "technologies": "التقنيات",
+          "openSource": "مفتوح",
+          "sourceFirst": "المصدر أولاً",
+          "scalable": "قابل للتوسع"
+        },
+        "comingSoon": "مكدس التقنية قريباً",
+        "preparingDocs": "نحن نجهز وثائق التكنولوجيا.",
+        "ourStack": "مكدسنا",
+        "philosophy": {
+          "eyebrow": "الفلسفة",
+          "title": "خيارات التكنولوجيا",
+          "titleAccent": "التي تهم",
+          "description": "نحن لا نطارد الاتجاهات. كل تقنية في مكدسنا مثبتة وموثقة جيداً ومختارة للاستمرارية طويلة المدى. مشروعك يستحق أدوات تدوم.",
+          "performance": "الأداء",
+          "performanceDesc": "محسّن للسرعة",
+          "scalability": "قابلية التوسع",
+          "scalabilityDesc": "ينمو معك",
+          "security": "الأمان",
+          "securityDesc": "حماية مدمجة",
+          "community": "المجتمع",
+          "communityDesc": "نظام بيئي قوي"
+        },
+        "cta": {
+          "title": "مستعد للبناء بالتكنولوجيا الحديثة؟",
+          "description": "دعنا نستفيد من هذه التقنيات لمشروعك.",
+          "startProject": "ابدأ مشروعك",
+          "viewProcess": "عرض العملية",
+          "viewPortfolio": "عرض المحفظة"
+        }
+      },
+      "portfolio": {
+        "eyebrow": "دراسات الحالة",
+        "heroTitle": "أعمال",
+        "heroTitleAccent": "مختارة",
+        "heroDescription": "مجموعة منتقاة من أكثر مشاريعنا تأثيراً. كل قطعة تمثل التزامنا بالتميز والنتائج القابلة للقياس.",
+        "stats": {
+          "projects": "المشاريع",
+          "categories": "الفئات",
+          "satisfaction": "الرضا",
+          "projectsDelivered": "المشاريع المنجزة",
+          "clientRetention": "الاحتفاظ بالعملاء",
+          "performanceGain": "تحسين الأداء",
+          "averageRating": "متوسط التقييم"
+        },
+        "filters": {
+          "all": "الكل"
+        },
+        "preview": "معاينة",
+        "viewProject": "عرض المشروع",
+        "impact": {
+          "eyebrow": "التأثير",
+          "title": "نتائج",
+          "titleAccent": "تتحدث عن نفسها",
+          "description": "محفظتنا تعكس التزامنا بتقديم نتائج قابلة للقياس. كل مشروع هو فرصة لتجاوز التوقعات."
+        },
+        "preparingCaseStudies": "نحن نجهز دراسات الحالة لهذه الخدمة.",
+        "cta": {
+          "title": "هل تريد رؤية مشروعك هنا؟",
+          "description": "دعنا نصنع معاً شيئاً يستحق العرض.",
+          "startProject": "ابدأ مشروعك",
+          "haveQuestions": "لديك أسئلة؟"
+        }
+      },
+      "faq": {
+        "title": "الأسئلة الشائعة",
+        "heroTitle": "الأسئلة",
+        "heroTitleAccent": "المتكررة",
+        "heroDescription": "كل ما تحتاج معرفته عن خدمة {serviceName}. لا تجد ما تبحث عنه؟ نحن هنا للمساعدة.",
+        "stats": {
+          "questions": "الأسئلة",
+          "support": "الدعم",
+          "response": "الاستجابة"
+        },
+        "search": {
+          "placeholder": "ابحث في الأسئلة...",
+          "noResults": "لا توجد نتائج",
+          "noResultsDesc": "جرب البحث بكلمات مختلفة.",
+          "clearSearch": "مسح البحث"
+        },
+        "quickInfo": {
+          "eyebrow": "معلومات سريعة",
+          "title": "معلومات",
+          "titleAccent": "مفيدة",
+          "description": "بعض النصائح السريعة لمساعدتك في البدء مع خدمة {serviceName}.",
+          "gettingStarted": "البدء",
+          "gettingStartedDesc": "اتصل بنا للحصول على استشارة مجانية لمناقشة متطلباتك.",
+          "timeline": "الجدول الزمني",
+          "timelineDesc": "تختلف الجداول الزمنية للمشروع حسب النطاق. نقدم تقديرات مفصلة مسبقاً.",
+          "pricing": "التسعير",
+          "pricingDesc": "خيارات تسعير مرنة مصممة لميزانيتك واحتياجات مشروعك.",
+          "support": "الدعم",
+          "supportDesc": "دعم وصيانة مستمرة متاحة بعد إتمام المشروع."
+        },
+        "cta": {
+          "title": "لا تزال لديك أسئلة؟",
+          "description": "لا تجد الإجابة التي تبحث عنها؟ فريقنا هنا للمساعدة.",
+          "contactUs": "اتصل بنا",
+          "backToService": "العودة إلى الخدمة"
+        },
+        "preparingAnswers": "نحن نجهز إجابات للأسئلة الشائعة."
+      },
+      "pricing": {
+        "title": "الأسعار",
+        "description": "اختر الخطة التي تناسب احتياجاتك.",
+        "mostPopular": "الأكثر شيوعاً",
+        "getStarted": "ابدأ الآن"
+      },
       "specializedServices": "خدمات متخصصة",
       "backTo": "العودة إلى {parent}",
-      "exploreSubServices": "استكشف حلولنا المتخصصة"
+      "exploreSubServices": "استكشف حلولنا المتخصصة",
+      "exploreSubServicesDescription": "تعمق في عروضنا المتخصصة المصممة لاحتياجاتك الخاصة.",
+      "learnMore": "اعرف المزيد"
     },
     "pricing": {
       "eyebrow": "الأسعار",
@@ -2722,6 +2919,21 @@
           "description": "دخل إضافي لعملائنا"
         }
       ]
+    },
+    "detail": {
+      "notFound": "لم يتم العثور على دراسة الحالة",
+      "theChallenge": "التحدي",
+      "ourSolution": "حلنا",
+      "technologiesUsed": "التقنيات المستخدمة",
+      "duration": "المدة",
+      "teamSize": "حجم الفريق",
+      "industry": "الصناعة",
+      "projectGallery": "معرض المشروع",
+      "cta": {
+        "title": "مستعد لبدء مشروعك؟",
+        "description": "دعنا نناقش كيف يمكننا مساعدتك في تحقيق نتائج مماثلة لعملك.",
+        "button": "احصل على استشارة مجانية"
+      }
     }
   },
   "blog": {

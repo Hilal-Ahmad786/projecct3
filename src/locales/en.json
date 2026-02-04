@@ -1695,9 +1695,206 @@
       }
     },
     "detail": {
+      "breadcrumb": {
+        "services": "Services",
+        "process": "Process",
+        "features": "Features",
+        "techStack": "Tech Stack",
+        "portfolio": "Portfolio",
+        "faq": "FAQ"
+      },
+      "hero": {
+        "eyebrow": "Our Service",
+        "startProject": "Start Your Project",
+        "howWeWork": "How We Work"
+      },
+      "benefits": {
+        "title": "Why Choose This Service"
+      },
+      "features": {
+        "title": "What We Deliver",
+        "description": "Comprehensive solutions tailored to your specific needs.",
+        "featureDescription": "Built with precision and scalability in mind.",
+        "coreFeatures": "Core Features",
+        "customizable": "Customizable",
+        "scalability": "Scalability",
+        "heroTitleAccent": "Features",
+        "heroDescription": "Comprehensive capabilities designed with precision. Every feature serves a purpose in delivering exceptional results for your project.",
+        "featureCardDesc": "Crafted with precision and built for scalability. Seamlessly integrates with your existing workflow.",
+        "comingSoon": "Features Coming Soon",
+        "preparingInfo": "We're preparing detailed feature information.",
+        "philosophy": {
+          "eyebrow": "Philosophy",
+          "title": "Every feature serves",
+          "titleAccent": "a purpose",
+          "description": "We believe in purposeful design. No feature bloat, no unnecessary complexity. Just the tools you need to achieve exceptional results.",
+          "goalOriented": "Goal-Oriented",
+          "goalDescription": "Aligned with your business objectives",
+          "performance": "Performance",
+          "performanceDescription": "Optimized for speed at any scale",
+          "maintainable": "Maintainable",
+          "maintainableDescription": "Clean architecture for longevity"
+        },
+        "cta": {
+          "title": "Ready to leverage these features?",
+          "startProject": "Start Your Project",
+          "viewProcess": "View Process"
+        }
+      },
+      "process": {
+        "title": "Our Process",
+        "description": "From concept to launch, we follow a proven methodology.",
+        "comingSoon": "Process Details Coming Soon",
+        "preparingDocs": "We're preparing our methodology documentation.",
+        "eyebrow": "Our Methodology",
+        "heroTitle": "How We Build",
+        "heroDescription": "A systematic approach refined through years of experience. Each step is designed for clarity, efficiency, and exceptional outcomes.",
+        "stats": {
+          "clearSteps": "Clear Steps",
+          "agile": "Agile",
+          "methodology": "Methodology",
+          "transparency": "Transparency"
+        },
+        "expectations": {
+          "eyebrow": "Expectations",
+          "title": "What you can",
+          "titleAccent": "expect from us",
+          "description": "We believe in radical transparency. You'll always know where your project stands and what comes next.",
+          "weeklyUpdates": "Weekly Updates",
+          "weeklyUpdatesDesc": "Progress reports every week",
+          "directAccess": "Direct Access",
+          "directAccessDesc": "Communicate with your team",
+          "milestones": "Milestones",
+          "milestonesDesc": "Clear deliverable checkpoints",
+          "documentation": "Documentation",
+          "documentationDesc": "Complete technical handoff"
+        },
+        "cta": {
+          "title": "Ready to start the process?",
+          "description": "Let's begin with a conversation about your project goals.",
+          "startProject": "Start Your Project",
+          "viewFeatures": "View Features",
+          "viewTechStack": "View Tech Stack"
+        }
+      },
+      "techStack": {
+        "eyebrow": "Technologies",
+        "heroTitle": "Powered by",
+        "heroTitleAccent": "Modern Tech",
+        "heroDescription": "We leverage proven, battle-tested technologies to build solutions that scale. Each tool is chosen for performance, reliability, and long-term maintainability.",
+        "stats": {
+          "technologies": "Technologies",
+          "openSource": "Open",
+          "sourceFirst": "Source First",
+          "scalable": "Scalable"
+        },
+        "comingSoon": "Tech Stack Coming Soon",
+        "preparingDocs": "We're preparing our technology documentation.",
+        "ourStack": "Our Stack",
+        "philosophy": {
+          "eyebrow": "Philosophy",
+          "title": "Technology choices",
+          "titleAccent": "that matter",
+          "description": "We don't chase trends. Every technology in our stack is proven, well-documented, and chosen for long-term viability. Your project deserves tools that will last.",
+          "performance": "Performance",
+          "performanceDesc": "Optimized for speed",
+          "scalability": "Scalability",
+          "scalabilityDesc": "Grows with you",
+          "security": "Security",
+          "securityDesc": "Built-in protection",
+          "community": "Community",
+          "communityDesc": "Strong ecosystem"
+        },
+        "cta": {
+          "title": "Ready to build with modern tech?",
+          "description": "Let's leverage these technologies for your project.",
+          "startProject": "Start Your Project",
+          "viewProcess": "View Process",
+          "viewPortfolio": "View Portfolio"
+        }
+      },
+      "portfolio": {
+        "eyebrow": "Case Studies",
+        "heroTitle": "Selected",
+        "heroTitleAccent": "Works",
+        "heroDescription": "A curated collection of our most impactful projects. Each piece represents our commitment to excellence and measurable results.",
+        "stats": {
+          "projects": "Projects",
+          "categories": "Categories",
+          "satisfaction": "Satisfaction",
+          "projectsDelivered": "Projects Delivered",
+          "clientRetention": "Client Retention",
+          "performanceGain": "Performance Gain",
+          "averageRating": "Average Rating"
+        },
+        "filters": {
+          "all": "All"
+        },
+        "preview": "Preview",
+        "viewProject": "View Project",
+        "impact": {
+          "eyebrow": "Impact",
+          "title": "Results that",
+          "titleAccent": "speak volumes",
+          "description": "Our portfolio reflects our commitment to delivering measurable outcomes. Every project is an opportunity to exceed expectations."
+        },
+        "preparingCaseStudies": "We're preparing case studies for this service.",
+        "cta": {
+          "title": "Want to see your project here?",
+          "description": "Let's create something worth showcasing together.",
+          "startProject": "Start Your Project",
+          "haveQuestions": "Have Questions?"
+        }
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "heroTitle": "Frequently",
+        "heroTitleAccent": "Asked",
+        "heroDescription": "Everything you need to know about our {serviceName} service. Can't find what you're looking for? We're here to help.",
+        "stats": {
+          "questions": "Questions",
+          "support": "Support",
+          "response": "Response"
+        },
+        "search": {
+          "placeholder": "Search questions...",
+          "noResults": "No Results Found",
+          "noResultsDesc": "Try searching with different keywords.",
+          "clearSearch": "Clear Search"
+        },
+        "quickInfo": {
+          "eyebrow": "Quick Info",
+          "title": "Helpful",
+          "titleAccent": "information",
+          "description": "Some quick pointers to help you get started with our {serviceName} service.",
+          "gettingStarted": "Getting Started",
+          "gettingStartedDesc": "Contact us for a free consultation to discuss your requirements.",
+          "timeline": "Timeline",
+          "timelineDesc": "Project timelines vary based on scope. We provide detailed estimates upfront.",
+          "pricing": "Pricing",
+          "pricingDesc": "Flexible pricing options tailored to your budget and project needs.",
+          "support": "Support",
+          "supportDesc": "Ongoing support and maintenance available after project completion."
+        },
+        "cta": {
+          "title": "Still have questions?",
+          "description": "Can't find the answer you're looking for? Our team is here to help.",
+          "contactUs": "Contact Us",
+          "backToService": "Back to Service"
+        },
+        "preparingAnswers": "We're preparing answers to common questions."
+      },
+      "pricing": {
+        "title": "Pricing",
+        "description": "Choose the plan that fits your needs.",
+        "mostPopular": "Most Popular",
+        "getStarted": "Get Started"
+      },
       "specializedServices": "Specialized Services",
       "backTo": "Back to {parent}",
-      "exploreSubServices": "Explore Our Specialized Solutions"
+      "exploreSubServices": "Explore Our Specialized Solutions",
+      "exploreSubServicesDescription": "Dive deeper into our specialized offerings tailored to your specific needs.",
+      "learnMore": "Learn More"
     },
     "pricing": {
       "eyebrow": "Pricing",
@@ -2103,6 +2300,21 @@
           "description": "Additional revenue created for clients"
         }
       ]
+    },
+    "detail": {
+      "notFound": "Case Study Not Found",
+      "theChallenge": "The Challenge",
+      "ourSolution": "Our Solution",
+      "technologiesUsed": "Technologies Used",
+      "duration": "Duration",
+      "teamSize": "Team Size",
+      "industry": "Industry",
+      "projectGallery": "Project Gallery",
+      "cta": {
+        "title": "Ready to Start Your Project?",
+        "description": "Let's discuss how we can help you achieve similar results for your business.",
+        "button": "Get a Free Consultation"
+      }
     }
   },
   "blog": {

@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Locale, locales, defaultLocale } from '@/lib/i18n';
+import { createTranslator } from '@/lib/server-i18n';
 import { generateAlternateLinks } from '@/lib/seo';
 import Button from '@/components/Button';
 import { BreadcrumbJsonLd } from '@/components/seo/JsonLd';
@@ -73,6 +74,7 @@ export const dynamic = 'force-dynamic';
 export default async function CaseStudyPage({ params }: PageProps) {
   const { slug, locale } = await params;
   const project = await getProject(slug, locale);
+  const t = createTranslator(locale);
 
   if (!project) {
     notFound();
@@ -129,7 +131,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
                     <span className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
                       <span className="text-red-600 text-lg">!</span>
                     </span>
-                    The Challenge
+                    {t('projects.detail.theChallenge')}
                   </h2>
                   <p className="text-gray-600 leading-relaxed">{project.challenge}</p>
                 </div>
@@ -138,7 +140,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
                 <div>
                   <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
                     <CheckCircleIcon className="w-8 h-8 text-emerald-600" />
-                    Our Solution
+                    {t('projects.detail.ourSolution')}
                   </h2>
                   <p className="text-gray-600 leading-relaxed">{project.solution}</p>
                 </div>
@@ -164,7 +166,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Technologies Used</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">{t('projects.detail.technologiesUsed')}</h2>
               <div className="flex flex-wrap justify-center gap-4">
                 {project.technologies.map((tech: string, index: number) => (
                   <span key={index} className="px-4 py-2 bg-white rounded-full border border-gray-200 text-gray-700 font-medium">
@@ -187,7 +189,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
                   <div className="flex items-start gap-4">
                     <ClockIcon className="w-6 h-6 text-emerald-600 flex-shrink-0" />
                     <div>
-                      <div className="font-semibold text-gray-900">Duration</div>
+                      <div className="font-semibold text-gray-900">{t('projects.detail.duration')}</div>
                       <div className="text-gray-600">{project.duration}</div>
                     </div>
                   </div>
@@ -196,7 +198,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
                   <div className="flex items-start gap-4">
                     <UserGroupIcon className="w-6 h-6 text-emerald-600 flex-shrink-0" />
                     <div>
-                      <div className="font-semibold text-gray-900">Team Size</div>
+                      <div className="font-semibold text-gray-900">{t('projects.detail.teamSize')}</div>
                       <div className="text-gray-600">{project.teamSize}</div>
                     </div>
                   </div>
@@ -205,7 +207,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
                   <div className="flex items-start gap-4">
                     <CpuChipIcon className="w-6 h-6 text-emerald-600 flex-shrink-0" />
                     <div>
-                      <div className="font-semibold text-gray-900">Industry</div>
+                      <div className="font-semibold text-gray-900">{t('projects.detail.industry')}</div>
                       <div className="text-gray-600">{project.industry}</div>
                     </div>
                   </div>
@@ -221,7 +223,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
-              <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Project Gallery</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">{t('projects.detail.projectGallery')}</h2>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {project.images.map((image: string, index: number) => (
                   <div key={index} className="aspect-video rounded-lg overflow-hidden bg-gray-200">
@@ -237,12 +239,12 @@ export default async function CaseStudyPage({ params }: PageProps) {
       {/* CTA */}
       <section className="py-16 bg-emerald-600">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">Ready to Start Your Project?</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">{t('projects.detail.cta.title')}</h2>
           <p className="text-emerald-100 mb-8 max-w-2xl mx-auto">
-            Let&apos;s discuss how we can help you achieve similar results for your business.
+            {t('projects.detail.cta.description')}
           </p>
           <Button href="/contact" variant="secondary" size="lg" className="bg-white text-emerald-700 hover:bg-gray-100">
-            Get a Free Consultation
+            {t('projects.detail.cta.button')}
           </Button>
         </div>
       </section>

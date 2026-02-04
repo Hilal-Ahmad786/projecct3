@@ -1396,9 +1396,206 @@
       }
     },
     "detail": {
+      "breadcrumb": {
+        "services": "Dienstleistungen",
+        "process": "Prozess",
+        "features": "Funktionen",
+        "techStack": "Technologie-Stack",
+        "portfolio": "Portfolio",
+        "faq": "FAQ"
+      },
+      "hero": {
+        "eyebrow": "Unser Service",
+        "startProject": "Projekt Starten",
+        "howWeWork": "Wie Wir Arbeiten"
+      },
+      "benefits": {
+        "title": "Warum Diesen Service Wählen"
+      },
+      "features": {
+        "title": "Was Wir Liefern",
+        "description": "Umfassende Lösungen, maßgeschneidert für Ihre spezifischen Bedürfnisse.",
+        "featureDescription": "Mit Präzision und Skalierbarkeit entwickelt.",
+        "coreFeatures": "Kernfunktionen",
+        "customizable": "Anpassbar",
+        "scalability": "Skalierbarkeit",
+        "heroTitleAccent": "Funktionen",
+        "heroDescription": "Umfassende Fähigkeiten mit Präzision entwickelt. Jede Funktion dient dem Zweck, außergewöhnliche Ergebnisse für Ihr Projekt zu liefern.",
+        "featureCardDesc": "Mit Präzision gefertigt und für Skalierbarkeit gebaut. Integriert sich nahtlos in Ihren bestehenden Workflow.",
+        "comingSoon": "Funktionen Demnächst",
+        "preparingInfo": "Wir bereiten detaillierte Funktionsinformationen vor.",
+        "philosophy": {
+          "eyebrow": "Philosophie",
+          "title": "Jede Funktion dient",
+          "titleAccent": "einem Zweck",
+          "description": "Wir glauben an zweckmäßiges Design. Keine überflüssigen Funktionen, keine unnötige Komplexität. Nur die Werkzeuge, die Sie für außergewöhnliche Ergebnisse benötigen.",
+          "goalOriented": "Zielorientiert",
+          "goalDescription": "Auf Ihre Geschäftsziele ausgerichtet",
+          "performance": "Leistung",
+          "performanceDescription": "Für Geschwindigkeit in jeder Größenordnung optimiert",
+          "maintainable": "Wartbar",
+          "maintainableDescription": "Saubere Architektur für Langlebigkeit"
+        },
+        "cta": {
+          "title": "Bereit, diese Funktionen zu nutzen?",
+          "startProject": "Projekt Starten",
+          "viewProcess": "Prozess Ansehen"
+        }
+      },
+      "process": {
+        "title": "Unser Prozess",
+        "description": "Vom Konzept bis zum Launch folgen wir einer bewährten Methodik.",
+        "comingSoon": "Prozessdetails Demnächst",
+        "preparingDocs": "Wir bereiten unsere Methodik-Dokumentation vor.",
+        "eyebrow": "Unsere Methodik",
+        "heroTitle": "Wie Wir Bauen",
+        "heroDescription": "Ein systematischer Ansatz, verfeinert durch jahrelange Erfahrung. Jeder Schritt ist auf Klarheit, Effizienz und herausragende Ergebnisse ausgelegt.",
+        "stats": {
+          "clearSteps": "Klare Schritte",
+          "agile": "Agil",
+          "methodology": "Methodik",
+          "transparency": "Transparenz"
+        },
+        "expectations": {
+          "eyebrow": "Erwartungen",
+          "title": "Was Sie",
+          "titleAccent": "von uns erwarten können",
+          "description": "Wir glauben an radikale Transparenz. Sie werden immer wissen, wo Ihr Projekt steht und was als nächstes kommt.",
+          "weeklyUpdates": "Wöchentliche Updates",
+          "weeklyUpdatesDesc": "Fortschrittsberichte jede Woche",
+          "directAccess": "Direkter Zugang",
+          "directAccessDesc": "Kommunizieren Sie mit Ihrem Team",
+          "milestones": "Meilensteine",
+          "milestonesDesc": "Klare Kontrollpunkte für Lieferungen",
+          "documentation": "Dokumentation",
+          "documentationDesc": "Vollständige technische Übergabe"
+        },
+        "cta": {
+          "title": "Bereit, den Prozess zu starten?",
+          "description": "Beginnen wir mit einem Gespräch über Ihre Projektziele.",
+          "startProject": "Projekt Starten",
+          "viewFeatures": "Funktionen Ansehen",
+          "viewTechStack": "Technologie-Stack Ansehen"
+        }
+      },
+      "techStack": {
+        "eyebrow": "Technologien",
+        "heroTitle": "Angetrieben von",
+        "heroTitleAccent": "Moderner Technologie",
+        "heroDescription": "Wir nutzen bewährte, kampferprobte Technologien, um skalierbare Lösungen zu bauen. Jedes Tool wird für Leistung, Zuverlässigkeit und langfristige Wartbarkeit ausgewählt.",
+        "stats": {
+          "technologies": "Technologien",
+          "openSource": "Open",
+          "sourceFirst": "Source First",
+          "scalable": "Skalierbar"
+        },
+        "comingSoon": "Tech-Stack Demnächst",
+        "preparingDocs": "Wir bereiten unsere Technologie-Dokumentation vor.",
+        "ourStack": "Unser Stack",
+        "philosophy": {
+          "eyebrow": "Philosophie",
+          "title": "Technologieentscheidungen",
+          "titleAccent": "die zählen",
+          "description": "Wir jagen keinen Trends hinterher. Jede Technologie in unserem Stack ist bewährt, gut dokumentiert und für langfristige Lebensfähigkeit ausgewählt. Ihr Projekt verdient Werkzeuge, die Bestand haben.",
+          "performance": "Leistung",
+          "performanceDesc": "Für Geschwindigkeit optimiert",
+          "scalability": "Skalierbarkeit",
+          "scalabilityDesc": "Wächst mit Ihnen",
+          "security": "Sicherheit",
+          "securityDesc": "Eingebauter Schutz",
+          "community": "Community",
+          "communityDesc": "Starkes Ökosystem"
+        },
+        "cta": {
+          "title": "Bereit, mit moderner Technologie zu bauen?",
+          "description": "Lassen Sie uns diese Technologien für Ihr Projekt nutzen.",
+          "startProject": "Projekt Starten",
+          "viewProcess": "Prozess Ansehen",
+          "viewPortfolio": "Portfolio Ansehen"
+        }
+      },
+      "portfolio": {
+        "eyebrow": "Fallstudien",
+        "heroTitle": "Ausgewählte",
+        "heroTitleAccent": "Arbeiten",
+        "heroDescription": "Eine kuratierte Sammlung unserer wirkungsvollsten Projekte. Jedes Stück repräsentiert unser Engagement für Exzellenz und messbare Ergebnisse.",
+        "stats": {
+          "projects": "Projekte",
+          "categories": "Kategorien",
+          "satisfaction": "Zufriedenheit",
+          "projectsDelivered": "Gelieferte Projekte",
+          "clientRetention": "Kundenbindung",
+          "performanceGain": "Leistungssteigerung",
+          "averageRating": "Durchschnittsbewertung"
+        },
+        "filters": {
+          "all": "Alle"
+        },
+        "preview": "Vorschau",
+        "viewProject": "Projekt Ansehen",
+        "impact": {
+          "eyebrow": "Wirkung",
+          "title": "Ergebnisse, die",
+          "titleAccent": "Bände sprechen",
+          "description": "Unser Portfolio spiegelt unser Engagement für messbare Ergebnisse wider. Jedes Projekt ist eine Gelegenheit, Erwartungen zu übertreffen."
+        },
+        "preparingCaseStudies": "Wir bereiten Fallstudien für diesen Service vor.",
+        "cta": {
+          "title": "Möchten Sie Ihr Projekt hier sehen?",
+          "description": "Lassen Sie uns gemeinsam etwas Präsentables schaffen.",
+          "startProject": "Projekt Starten",
+          "haveQuestions": "Haben Sie Fragen?"
+        }
+      },
+      "faq": {
+        "title": "Häufig Gestellte Fragen",
+        "heroTitle": "Häufig",
+        "heroTitleAccent": "Gefragt",
+        "heroDescription": "Alles, was Sie über unseren {serviceName}-Service wissen müssen. Können Sie nicht finden, wonach Sie suchen? Wir helfen gerne.",
+        "stats": {
+          "questions": "Fragen",
+          "support": "Support",
+          "response": "Antwort"
+        },
+        "search": {
+          "placeholder": "Fragen suchen...",
+          "noResults": "Keine Ergebnisse gefunden",
+          "noResultsDesc": "Versuchen Sie es mit anderen Suchbegriffen.",
+          "clearSearch": "Suche löschen"
+        },
+        "quickInfo": {
+          "eyebrow": "Schnelle Info",
+          "title": "Hilfreiche",
+          "titleAccent": "Informationen",
+          "description": "Einige schnelle Tipps, die Ihnen den Einstieg in unseren {serviceName}-Service erleichtern.",
+          "gettingStarted": "Erste Schritte",
+          "gettingStartedDesc": "Kontaktieren Sie uns für eine kostenlose Beratung, um Ihre Anforderungen zu besprechen.",
+          "timeline": "Zeitplan",
+          "timelineDesc": "Projektzeiten variieren je nach Umfang. Wir liefern im Voraus detaillierte Schätzungen.",
+          "pricing": "Preisgestaltung",
+          "pricingDesc": "Flexible Preisoptionen, die auf Ihr Budget und Ihre Projektanforderungen zugeschnitten sind.",
+          "support": "Support",
+          "supportDesc": "Laufende Unterstützung und Wartung nach Projektabschluss verfügbar."
+        },
+        "cta": {
+          "title": "Noch Fragen?",
+          "description": "Können Sie die Antwort nicht finden, die Sie suchen? Unser Team ist hier, um zu helfen.",
+          "contactUs": "Kontaktieren Sie uns",
+          "backToService": "Zurück zum Service"
+        },
+        "preparingAnswers": "Wir bereiten Antworten auf häufige Fragen vor."
+      },
+      "pricing": {
+        "title": "Preise",
+        "description": "Wählen Sie den Plan, der Ihren Bedürfnissen entspricht.",
+        "mostPopular": "Am Beliebtesten",
+        "getStarted": "Loslegen"
+      },
       "specializedServices": "Spezialisierte Dienstleistungen",
       "backTo": "Zurück zu {parent}",
-      "exploreSubServices": "Entdecken Sie unsere spezialisierten Lösungen"
+      "exploreSubServices": "Entdecken Sie unsere spezialisierten Lösungen",
+      "exploreSubServicesDescription": "Tauchen Sie tiefer in unsere spezialisierten Angebote ein, die auf Ihre spezifischen Bedürfnisse zugeschnitten sind.",
+      "learnMore": "Mehr Erfahren"
     },
     "pricing": {
       "eyebrow": "Preise",
@@ -1804,6 +2001,21 @@
           "description": "Zusätzlicher Umsatz für Kund:innen"
         }
       ]
+    },
+    "detail": {
+      "notFound": "Fallstudie nicht gefunden",
+      "theChallenge": "Die Herausforderung",
+      "ourSolution": "Unsere Lösung",
+      "technologiesUsed": "Verwendete Technologien",
+      "duration": "Dauer",
+      "teamSize": "Teamgröße",
+      "industry": "Branche",
+      "projectGallery": "Projektgalerie",
+      "cta": {
+        "title": "Bereit, Ihr Projekt zu starten?",
+        "description": "Lassen Sie uns besprechen, wie wir Ihnen helfen können, ähnliche Ergebnisse für Ihr Unternehmen zu erzielen.",
+        "button": "Kostenlose Beratung erhalten"
+      }
     }
   },
   "blog": {

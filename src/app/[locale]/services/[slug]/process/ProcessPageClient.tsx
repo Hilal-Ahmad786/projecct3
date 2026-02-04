@@ -10,6 +10,7 @@ import {
   SubPageHeroVisual,
   type SubPageAnimation
 } from '@/components/services/subpage-animations';
+import { useTranslations } from '@/hooks/useTranslations';
 
 interface ProcessStep {
   step: number;
@@ -45,6 +46,7 @@ export default function ProcessPageClient({
   animation,
   locale
 }: ProcessPageClientProps) {
+  const { t } = useTranslations();
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -120,11 +122,11 @@ export default function ProcessPageClient({
             transition={{ duration: 0.6 }}
             className="flex items-center gap-2 text-sm text-gray-400"
           >
-            <Link href={`/${locale}/services`} className="hover:text-gray-900 transition-colors">Services</Link>
+            <Link href={`/${locale}/services`} className="hover:text-gray-900 transition-colors">{t('services.detail.breadcrumb.services')}</Link>
             <span className="text-gray-300">/</span>
             <Link href={`/${locale}/services/${serviceSlug}`} className="hover:text-gray-900 transition-colors">{serviceName}</Link>
             <span className="text-gray-300">/</span>
-            <span className="text-gray-900">Process</span>
+            <span className="text-gray-900">{t('services.detail.breadcrumb.process')}</span>
           </motion.nav>
         </div>
 
@@ -146,7 +148,7 @@ export default function ProcessPageClient({
                 <ClockIcon className="w-5 h-5" style={{ color: config.primaryColor }} />
               </motion.div>
               <span className="text-xs font-medium uppercase tracking-widest" style={{ color: config.primaryColor }}>
-                Our Methodology
+                {t('services.detail.process.eyebrow')}
               </span>
             </motion.div>
 
@@ -157,7 +159,7 @@ export default function ProcessPageClient({
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-5xl md:text-6xl lg:text-7xl font-light text-gray-900 mb-8 leading-[1.1] tracking-tight"
             >
-              How We Build
+              {t('services.detail.process.heroTitle')}
               <br />
               <span className="font-semibold" style={{ color: config.primaryColor }}>{serviceName}</span>
             </motion.h1>
@@ -169,7 +171,7 @@ export default function ProcessPageClient({
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl text-gray-500 max-w-2xl leading-relaxed mb-12"
             >
-              A systematic approach refined through years of experience. Each step is designed for clarity, efficiency, and exceptional outcomes.
+              {t('services.detail.process.heroDescription')}
             </motion.p>
 
             {/* Process Stats */}
@@ -189,15 +191,15 @@ export default function ProcessPageClient({
                 >
                   {steps.length}
                 </motion.div>
-                <div className="text-sm text-gray-400 mt-1">Clear Steps</div>
+                <div className="text-sm text-gray-400 mt-1">{t('services.detail.process.stats.clearSteps')}</div>
               </div>
               <div>
-                <div className="text-5xl font-light text-gray-900">Agile</div>
-                <div className="text-sm text-gray-400 mt-1">Methodology</div>
+                <div className="text-5xl font-light text-gray-900">{t('services.detail.process.stats.agile')}</div>
+                <div className="text-sm text-gray-400 mt-1">{t('services.detail.process.stats.methodology')}</div>
               </div>
               <div>
                 <div className="text-5xl font-light text-gray-900">100%</div>
-                <div className="text-sm text-gray-400 mt-1">Transparency</div>
+                <div className="text-sm text-gray-400 mt-1">{t('services.detail.process.stats.transparency')}</div>
               </div>
             </motion.div>
           </div>
@@ -232,8 +234,8 @@ export default function ProcessPageClient({
               >
                 <span className="text-3xl font-light" style={{ color: config.primaryColor }}>1</span>
               </motion.div>
-              <h2 className="text-2xl font-light text-gray-900 mb-2">Process Details Coming Soon</h2>
-              <p className="text-gray-500">We're preparing our methodology documentation.</p>
+              <h2 className="text-2xl font-light text-gray-900 mb-2">{t('services.detail.process.comingSoon')}</h2>
+              <p className="text-gray-500">{t('services.detail.process.preparingDocs')}</p>
             </div>
           ) : (
             <div className="max-w-4xl mx-auto relative">
@@ -320,7 +322,7 @@ export default function ProcessPageClient({
                 >
                   <div className="w-8 h-px bg-gray-900" />
                   <span className="text-xs font-medium text-gray-500 uppercase tracking-widest">
-                    Expectations
+                    {t('services.detail.process.expectations.eyebrow')}
                   </span>
                 </motion.div>
 
@@ -331,9 +333,9 @@ export default function ProcessPageClient({
                   transition={{ delay: 0.1 }}
                   className="text-4xl font-light text-gray-900 mb-6"
                 >
-                  What you can
+                  {t('services.detail.process.expectations.title')}
                   <br />
-                  <span className="font-semibold" style={{ color: config.primaryColor }}>expect from us</span>
+                  <span className="font-semibold" style={{ color: config.primaryColor }}>{t('services.detail.process.expectations.titleAccent')}</span>
                 </motion.h2>
 
                 <motion.p
@@ -343,16 +345,16 @@ export default function ProcessPageClient({
                   transition={{ delay: 0.2 }}
                   className="text-gray-500 leading-relaxed"
                 >
-                  We believe in radical transparency. You'll always know where your project stands and what comes next.
+                  {t('services.detail.process.expectations.description')}
                 </motion.p>
               </div>
 
               <div className="grid grid-cols-2 gap-1 bg-gray-200">
                 {[
-                  { label: 'Weekly Updates', desc: 'Progress reports every week' },
-                  { label: 'Direct Access', desc: 'Communicate with your team' },
-                  { label: 'Milestones', desc: 'Clear deliverable checkpoints' },
-                  { label: 'Documentation', desc: 'Complete technical handoff' },
+                  { label: t('services.detail.process.expectations.weeklyUpdates'), desc: t('services.detail.process.expectations.weeklyUpdatesDesc') },
+                  { label: t('services.detail.process.expectations.directAccess'), desc: t('services.detail.process.expectations.directAccessDesc') },
+                  { label: t('services.detail.process.expectations.milestones'), desc: t('services.detail.process.expectations.milestonesDesc') },
+                  { label: t('services.detail.process.expectations.documentation'), desc: t('services.detail.process.expectations.documentationDesc') },
                 ].map((item, i) => (
                   <motion.div
                     key={i}
@@ -397,10 +399,10 @@ export default function ProcessPageClient({
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-3xl md:text-4xl font-light text-white mb-6">
-              Ready to start the process?
+              {t('services.detail.process.cta.title')}
             </h2>
             <p className="text-gray-400 mb-10 max-w-xl mx-auto">
-              Let's begin with a conversation about your project goals.
+              {t('services.detail.process.cta.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -408,14 +410,14 @@ export default function ProcessPageClient({
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 text-gray-900 font-medium transition-all hover:scale-105"
                 style={{ backgroundColor: config.primaryColor }}
               >
-                Start Your Project
+                {t('services.detail.process.cta.startProject')}
                 <ArrowRightIcon className="w-4 h-4" />
               </Link>
               <Link
                 href={`/${locale}/services/${serviceSlug}/tech-stack`}
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-gray-700 text-white font-medium hover:bg-white/5 transition-colors"
               >
-                View Tech Stack
+                {t('services.detail.process.cta.viewTechStack')}
               </Link>
             </div>
           </motion.div>

@@ -10,6 +10,7 @@ import ParticleNetwork from '@/components/ParticleNetwork';
 import ServicePortfolio from '@/components/services/ServicePortfolio';
 import ServiceRequestCTA from '@/components/services/ServiceRequestCTA';
 import { HeroVisual, BgPatternRenderer, DecorationRenderer, type ServiceAnimation } from '@/components/services/hero-visuals';
+import { useTranslations } from '@/hooks/useTranslations';
 
 // ── Types ────────────────────────────────────────────────────────────
 interface ProcessStep {
@@ -210,6 +211,7 @@ function ProcessIcon({ step }: { step: number }) {
 // ── MAIN CLIENT COMPONENT ────────────────────────────────────────────
 // ═══════════════════════════════════════════════════════════════════════
 export default function ServiceDetailClient({ service }: { service: ServiceDetailData }) {
+  const { t } = useTranslations();
   const accent: AccentColor = colorMap[service.color || ''] || 'emerald';
   const colors = accentColors[accent];
 
@@ -243,7 +245,7 @@ export default function ServiceDetailClient({ service }: { service: ServiceDetai
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose This Service</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">{t('services.detail.benefits.title')}</h2>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
               {benefits.map((benefit, index) => (
@@ -291,6 +293,7 @@ function HeroSection({
   process: ProcessStep[];
   animation?: ServiceAnimation;
 }) {
+  const { t } = useTranslations();
   const emojiIcon = iconMap[service.icon || ''] || '🔧';
   const hasAnimation = !!animation;
   const parentService = service.parentService;
@@ -343,7 +346,7 @@ function HeroSection({
             {/* Breadcrumb */}
             <nav className="flex items-center gap-2 text-sm text-gray-400">
               <Link href="/services" className="hover:text-gray-900 transition-colors">
-                Services
+                {t('services.detail.breadcrumb.services')}
               </Link>
               {parentService ? (
                 <>
@@ -366,7 +369,7 @@ function HeroSection({
             <div className="flex items-center gap-3">
               <div className="w-8 h-0.5 bg-gray-900" />
               <span className={`text-xs font-medium ${colors.eyebrow} uppercase tracking-wide`}>
-                Our Service
+                {t('services.detail.hero.eyebrow')}
               </span>
             </div>
 
@@ -400,11 +403,11 @@ function HeroSection({
                   </svg>
                 }
               >
-                Start Your Project
+                {t('services.detail.hero.startProject')}
               </Button>
               {process.length > 0 && (
                 <Button href={`/services/${service.slug}/process`} variant="secondary" size="lg">
-                  How We Work
+                  {t('services.detail.hero.howWeWork')}
                 </Button>
               )}
             </div>
@@ -546,6 +549,7 @@ function TechStrip({ technologies }: { technologies: Technology[] }) {
 // ── FEATURES GRID (animated cards) ───────────────────────────────────
 // ═══════════════════════════════════════════════════════════════════════
 function FeaturesSection({ features, featureStyle }: { features: string[]; featureStyle?: string }) {
+  const { t } = useTranslations();
   const style = featureStyle || 'icon-top';
 
   return (
@@ -553,10 +557,10 @@ function FeaturesSection({ features, featureStyle }: { features: string[]; featu
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6">
-            What We Deliver
+            {t('services.detail.features.title')}
           </h2>
           <p className="text-xl text-gray-600 font-light">
-            Comprehensive solutions tailored to your specific needs.
+            {t('services.detail.features.description')}
           </p>
         </div>
 
@@ -582,7 +586,7 @@ function FeaturesSection({ features, featureStyle }: { features: string[]; featu
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-gray-900 mb-1">{feature}</h3>
-                    <p className="text-gray-500 text-sm leading-relaxed">Built with precision and scalability in mind.</p>
+                    <p className="text-gray-500 text-sm leading-relaxed">{t('services.detail.features.featureDescription')}</p>
                   </div>
                 </div>
               ) : style === 'numbered' ? (
@@ -591,7 +595,7 @@ function FeaturesSection({ features, featureStyle }: { features: string[]; featu
                     {String(index + 1).padStart(2, '0')}
                   </div>
                   <h3 className="text-xl font-medium text-gray-900 mb-3">{feature}</h3>
-                  <p className="text-gray-500 leading-relaxed">Built with precision and scalability in mind.</p>
+                  <p className="text-gray-500 leading-relaxed">{t('services.detail.features.featureDescription')}</p>
                 </>
               ) : style === 'minimal' ? (
                 <div className="flex items-center gap-3">
@@ -605,7 +609,7 @@ function FeaturesSection({ features, featureStyle }: { features: string[]; featu
                     <CheckCircleIcon className="w-6 h-6 text-gray-600 group-hover:text-white transition-colors duration-300" />
                   </div>
                   <h3 className="text-xl font-medium text-gray-900 mb-3">{feature}</h3>
-                  <p className="text-gray-500 leading-relaxed">Built with precision and scalability in mind.</p>
+                  <p className="text-gray-500 leading-relaxed">{t('services.detail.features.featureDescription')}</p>
                 </>
               )}
             </motion.div>
@@ -620,14 +624,15 @@ function FeaturesSection({ features, featureStyle }: { features: string[]; featu
 // ── PROCESS SECTION (numbered cards) ─────────────────────────────────
 // ═══════════════════════════════════════════════════════════════════════
 function ProcessSection({ steps, processLayout }: { steps: ProcessStep[]; processLayout?: string }) {
+  const { t } = useTranslations();
   const layout = processLayout || 'cards';
 
   return (
     <section className="py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">Our Process</h2>
-          <p className="text-gray-600">From concept to launch, we follow a proven methodology.</p>
+          <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">{t('services.detail.process.title')}</h2>
+          <p className="text-gray-600">{t('services.detail.process.description')}</p>
         </div>
 
         {layout === 'timeline' ? (
@@ -733,6 +738,7 @@ function ProcessSection({ steps, processLayout }: { steps: ProcessStep[]; proces
 // ── FAQ SECTION (Plus/Minus accordion) ───────────────────────────────
 // ═══════════════════════════════════════════════════════════════════════
 function FAQSection({ faq }: { faq: FAQItem[] }) {
+  const { t } = useTranslations();
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
@@ -740,7 +746,7 @@ function FAQSection({ faq }: { faq: FAQItem[] }) {
       <div className="container mx-auto px-4 max-w-3xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">
-            Frequently Asked Questions
+            {t('services.detail.faq.title')}
           </h2>
         </div>
 
@@ -787,12 +793,14 @@ function FAQSection({ faq }: { faq: FAQItem[] }) {
 // ── PRICING SECTION (enhanced) ───────────────────────────────────────
 // ═══════════════════════════════════════════════════════════════════════
 function PricingSection({ packages }: { packages: PricingPackage[] }) {
+  const { t } = useTranslations();
+
   return (
     <section className="py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">Pricing</h2>
-          <p className="text-gray-600">Choose the plan that fits your needs.</p>
+          <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">{t('services.detail.pricing.title')}</h2>
+          <p className="text-gray-600">{t('services.detail.pricing.description')}</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -811,7 +819,7 @@ function PricingSection({ packages }: { packages: PricingPackage[] }) {
             >
               {pkg.highlighted && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-emerald-600 text-white text-xs font-medium rounded-full">
-                  Most Popular
+                  {t('services.detail.pricing.mostPopular')}
                 </div>
               )}
               <h3 className="text-xl font-bold text-gray-900 mb-2">{pkg.name}</h3>
@@ -834,7 +842,7 @@ function PricingSection({ packages }: { packages: PricingPackage[] }) {
                 size="md"
                 className="w-full"
               >
-                {pkg.ctaText || 'Get Started'}
+                {pkg.ctaText || t('services.detail.pricing.getStarted')}
               </Button>
             </motion.div>
           ))}
@@ -848,6 +856,8 @@ function PricingSection({ packages }: { packages: PricingPackage[] }) {
 // ── SUB-SERVICES SECTION (grid of child services for parent pages) ──
 // ═══════════════════════════════════════════════════════════════════════
 function SubServicesSection({ subServices }: { subServices: SubServiceItem[] }) {
+  const { t } = useTranslations();
+
   return (
     <section className="py-24 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -855,15 +865,15 @@ function SubServicesSection({ subServices }: { subServices: SubServiceItem[] }) 
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="w-8 h-0.5 bg-gray-900" />
             <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">
-              Specialized Services
+              {t('services.detail.specializedServices')}
             </span>
             <div className="w-8 h-0.5 bg-gray-900" />
           </div>
           <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">
-            Explore Our Specialized Solutions
+            {t('services.detail.exploreSubServices')}
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Dive deeper into our specialized offerings tailored to your specific needs.
+            {t('services.detail.exploreSubServicesDescription')}
           </p>
         </div>
 
@@ -892,7 +902,7 @@ function SubServicesSection({ subServices }: { subServices: SubServiceItem[] }) 
                     </p>
                   )}
                   <div className="flex items-center gap-2 text-sm font-medium text-gray-400 group-hover:text-emerald-600 transition-colors">
-                    Learn More
+                    {t('services.detail.learnMore')}
                     <ArrowRightIcon className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </Link>

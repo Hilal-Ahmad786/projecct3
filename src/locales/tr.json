@@ -2650,9 +2650,206 @@
       }
     },
     "detail": {
+      "breadcrumb": {
+        "services": "Hizmetler",
+        "process": "Süreç",
+        "features": "Özellikler",
+        "techStack": "Teknoloji Yığını",
+        "portfolio": "Portföy",
+        "faq": "SSS"
+      },
+      "hero": {
+        "eyebrow": "Hizmetimiz",
+        "startProject": "Projenizi Başlatın",
+        "howWeWork": "Nasıl Çalışıyoruz"
+      },
+      "benefits": {
+        "title": "Neden Bu Hizmeti Seçmelisiniz"
+      },
+      "features": {
+        "title": "Ne Sunuyoruz",
+        "description": "Özel ihtiyaçlarınıza göre tasarlanmış kapsamlı çözümler.",
+        "featureDescription": "Hassasiyet ve ölçeklenebilirlik göz önünde bulundurularak üretildi.",
+        "coreFeatures": "Temel Özellikler",
+        "customizable": "Özelleştirilebilir",
+        "scalability": "Ölçeklenebilirlik",
+        "heroTitleAccent": "Özellikler",
+        "heroDescription": "Hassasiyetle tasarlanmış kapsamlı yetenekler. Her özellik, projeniz için olağanüstü sonuçlar elde etme amacına hizmet eder.",
+        "featureCardDesc": "Hassasiyetle üretilmiş ve ölçeklenebilirlik için tasarlanmış. Mevcut iş akışınızla sorunsuzca entegre olur.",
+        "comingSoon": "Özellikler Yakında",
+        "preparingInfo": "Detaylı özellik bilgilerini hazırlıyoruz.",
+        "philosophy": {
+          "eyebrow": "Felsefe",
+          "title": "Her özellik",
+          "titleAccent": "bir amaca hizmet eder",
+          "description": "Amaçlı tasarıma inanıyoruz. Gereksiz özellik yığını yok, gereksiz karmaşıklık yok. Sadece olağanüstü sonuçlar elde etmeniz için ihtiyacınız olan araçlar.",
+          "goalOriented": "Hedefe Yönelik",
+          "goalDescription": "İş hedeflerinizle uyumlu",
+          "performance": "Performans",
+          "performanceDescription": "Her ölçekte hız için optimize edilmiş",
+          "maintainable": "Sürdürülebilir",
+          "maintainableDescription": "Uzun ömür için temiz mimari"
+        },
+        "cta": {
+          "title": "Bu özelliklerden yararlanmaya hazır mısınız?",
+          "startProject": "Projenizi Başlatın",
+          "viewProcess": "Süreci Görüntüle"
+        }
+      },
+      "process": {
+        "title": "Sürecimiz",
+        "description": "Konseptten lansmana, kanıtlanmış bir metodoloji izliyoruz.",
+        "comingSoon": "Süreç Detayları Yakında",
+        "preparingDocs": "Metodoloji belgelerimizi hazırlıyoruz.",
+        "eyebrow": "Metodolojimiz",
+        "heroTitle": "Nasıl İnşa Ediyoruz",
+        "heroDescription": "Yılların deneyimiyle rafine edilmiş sistematik bir yaklaşım. Her adım netlik, verimlilik ve olağanüstü sonuçlar için tasarlandı.",
+        "stats": {
+          "clearSteps": "Net Adımlar",
+          "agile": "Çevik",
+          "methodology": "Metodoloji",
+          "transparency": "Şeffaflık"
+        },
+        "expectations": {
+          "eyebrow": "Beklentiler",
+          "title": "Bizden",
+          "titleAccent": "neler bekleyebilirsiniz",
+          "description": "Radikal şeffaflığa inanıyoruz. Projenizin durumunu ve sırada ne olduğunu her zaman bileceksiniz.",
+          "weeklyUpdates": "Haftalık Güncellemeler",
+          "weeklyUpdatesDesc": "Her hafta ilerleme raporları",
+          "directAccess": "Doğrudan Erişim",
+          "directAccessDesc": "Ekibinizle iletişim kurun",
+          "milestones": "Kilometre Taşları",
+          "milestonesDesc": "Net teslim edilebilir kontrol noktaları",
+          "documentation": "Dokümantasyon",
+          "documentationDesc": "Eksiksiz teknik devir"
+        },
+        "cta": {
+          "title": "Süreci başlatmaya hazır mısınız?",
+          "description": "Proje hedefleriniz hakkında bir sohbetle başlayalım.",
+          "startProject": "Projenizi Başlatın",
+          "viewFeatures": "Özellikleri Görüntüle",
+          "viewTechStack": "Teknoloji Yığınını Görüntüle"
+        }
+      },
+      "techStack": {
+        "eyebrow": "Teknolojiler",
+        "heroTitle": "Güçlü",
+        "heroTitleAccent": "Modern Teknoloji",
+        "heroDescription": "Ölçeklenebilir çözümler oluşturmak için kanıtlanmış, savaşta test edilmiş teknolojileri kullanıyoruz. Her araç performans, güvenilirlik ve uzun vadeli sürdürülebilirlik için seçilmiştir.",
+        "stats": {
+          "technologies": "Teknolojiler",
+          "openSource": "Açık",
+          "sourceFirst": "Kaynak Öncelikli",
+          "scalable": "Ölçeklenebilir"
+        },
+        "comingSoon": "Teknoloji Yığını Yakında",
+        "preparingDocs": "Teknoloji belgelerimizi hazırlıyoruz.",
+        "ourStack": "Yığınımız",
+        "philosophy": {
+          "eyebrow": "Felsefe",
+          "title": "Teknoloji seçimleri",
+          "titleAccent": "önemlidir",
+          "description": "Trendleri takip etmiyoruz. Yığınımızdaki her teknoloji kanıtlanmış, iyi belgelenmiş ve uzun vadeli yaşayabilirlik için seçilmiştir. Projeniz kalıcı araçları hak ediyor.",
+          "performance": "Performans",
+          "performanceDesc": "Hız için optimize edilmiş",
+          "scalability": "Ölçeklenebilirlik",
+          "scalabilityDesc": "Sizinle birlikte büyür",
+          "security": "Güvenlik",
+          "securityDesc": "Yerleşik koruma",
+          "community": "Topluluk",
+          "communityDesc": "Güçlü ekosistem"
+        },
+        "cta": {
+          "title": "Modern teknolojiyle geliştirmeye hazır mısınız?",
+          "description": "Bu teknolojileri projeniz için kullanalım.",
+          "startProject": "Projenizi Başlatın",
+          "viewProcess": "Süreci Görüntüle",
+          "viewPortfolio": "Portföyü Görüntüle"
+        }
+      },
+      "portfolio": {
+        "eyebrow": "Vaka Çalışmaları",
+        "heroTitle": "Seçilmiş",
+        "heroTitleAccent": "Çalışmalar",
+        "heroDescription": "En etkili projelerimizin özenle seçilmiş koleksiyonu. Her parça mükemmellik ve ölçülebilir sonuçlara olan bağlılığımızı temsil eder.",
+        "stats": {
+          "projects": "Projeler",
+          "categories": "Kategoriler",
+          "satisfaction": "Memnuniyet",
+          "projectsDelivered": "Teslim Edilen Projeler",
+          "clientRetention": "Müşteri Tutma",
+          "performanceGain": "Performans Kazanımı",
+          "averageRating": "Ortalama Puan"
+        },
+        "filters": {
+          "all": "Tümü"
+        },
+        "preview": "Önizleme",
+        "viewProject": "Projeyi Görüntüle",
+        "impact": {
+          "eyebrow": "Etki",
+          "title": "Çok şey",
+          "titleAccent": "anlatan sonuçlar",
+          "description": "Portföyümüz ölçülebilir sonuçlar sunma taahhüdümüzü yansıtır. Her proje beklentileri aşmak için bir fırsattır."
+        },
+        "preparingCaseStudies": "Bu hizmet için vaka çalışmalarını hazırlıyoruz.",
+        "cta": {
+          "title": "Projenizi burada görmek ister misiniz?",
+          "description": "Birlikte sergilenmeye değer bir şey yaratalım.",
+          "startProject": "Projenizi Başlatın",
+          "haveQuestions": "Sorularınız mı Var?"
+        }
+      },
+      "faq": {
+        "title": "Sıkça Sorulan Sorular",
+        "heroTitle": "Sıkça",
+        "heroTitleAccent": "Sorulan",
+        "heroDescription": "{serviceName} hizmetimiz hakkında bilmeniz gereken her şey. Aradığınızı bulamıyor musunuz? Yardıma hazırız.",
+        "stats": {
+          "questions": "Sorular",
+          "support": "Destek",
+          "response": "Yanıt"
+        },
+        "search": {
+          "placeholder": "Soru ara...",
+          "noResults": "Sonuç Bulunamadı",
+          "noResultsDesc": "Farklı anahtar kelimelerle aramayı deneyin.",
+          "clearSearch": "Aramayı Temizle"
+        },
+        "quickInfo": {
+          "eyebrow": "Hızlı Bilgi",
+          "title": "Yararlı",
+          "titleAccent": "bilgiler",
+          "description": "{serviceName} hizmetimize başlamanıza yardımcı olacak bazı hızlı ipuçları.",
+          "gettingStarted": "Başlarken",
+          "gettingStartedDesc": "Gereksinimlerinizi görüşmek için ücretsiz danışmanlık almak üzere bize ulaşın.",
+          "timeline": "Zaman Çizelgesi",
+          "timelineDesc": "Proje süreleri kapsama göre değişir. Önceden detaylı tahminler sunuyoruz.",
+          "pricing": "Fiyatlandırma",
+          "pricingDesc": "Bütçenize ve proje ihtiyaçlarınıza göre esnek fiyatlandırma seçenekleri.",
+          "support": "Destek",
+          "supportDesc": "Proje tamamlandıktan sonra sürekli destek ve bakım mevcut."
+        },
+        "cta": {
+          "title": "Hala sorularınız mı var?",
+          "description": "Aradığınız cevabı bulamıyor musunuz? Ekibimiz yardımcı olmak için burada.",
+          "contactUs": "Bize Ulaşın",
+          "backToService": "Hizmete Dön"
+        },
+        "preparingAnswers": "Sık sorulan soruların cevaplarını hazırlıyoruz."
+      },
+      "pricing": {
+        "title": "Fiyatlandırma",
+        "description": "İhtiyaçlarınıza uygun planı seçin.",
+        "mostPopular": "En Popüler",
+        "getStarted": "Başlayın"
+      },
       "specializedServices": "Uzmanlaşmış Hizmetler",
       "backTo": "{parent} sayfasına dön",
-      "exploreSubServices": "Uzmanlaşmış Çözümlerimizi Keşfedin"
+      "exploreSubServices": "Uzmanlaşmış Çözümlerimizi Keşfedin",
+      "exploreSubServicesDescription": "Özel ihtiyaçlarınıza göre tasarlanmış uzman tekliflerimizi daha yakından keşfedin.",
+      "learnMore": "Daha Fazla Bilgi"
     },
     "pricing": {
       "eyebrow": "Fiyatlandırma",
@@ -3058,6 +3255,21 @@
           "description": "Müşteriler için yaratılan ek gelir"
         }
       ]
+    },
+    "detail": {
+      "notFound": "Vaka Çalışması Bulunamadı",
+      "theChallenge": "Zorluk",
+      "ourSolution": "Çözümümüz",
+      "technologiesUsed": "Kullanılan Teknolojiler",
+      "duration": "Süre",
+      "teamSize": "Ekip Boyutu",
+      "industry": "Sektör",
+      "projectGallery": "Proje Galerisi",
+      "cta": {
+        "title": "Projenizi Başlatmaya Hazır mısınız?",
+        "description": "İşletmeniz için benzer sonuçlar elde etmenize nasıl yardımcı olabileceğimizi konuşalım.",
+        "button": "Ücretsiz Danışmanlık Alın"
+      }
     }
   },
   "blog": {

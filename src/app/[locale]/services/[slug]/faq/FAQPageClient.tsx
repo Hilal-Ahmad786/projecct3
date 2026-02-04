@@ -4,6 +4,7 @@ import { useState, useRef } from 'react';
 import { motion, AnimatePresence, useScroll, useTransform, useInView } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowRightIcon, PlusIcon } from '@heroicons/react/24/outline';
+import { useTranslations } from '@/hooks/useTranslations';
 
 interface FAQItem {
   question: string;
@@ -24,6 +25,7 @@ export default function FAQPageClient({
   faq,
   locale
 }: FAQPageClientProps) {
+  const { t } = useTranslations();
   const containerRef = useRef<HTMLDivElement>(null);
   const faqRef = useRef<HTMLDivElement>(null);
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -179,11 +181,11 @@ export default function FAQPageClient({
             transition={{ duration: 0.6 }}
             className="flex items-center gap-2 text-sm text-gray-400"
           >
-            <Link href={`/${locale}/services`} className="hover:text-gray-900 transition-colors">Services</Link>
+            <Link href={`/${locale}/services`} className="hover:text-gray-900 transition-colors">{t('services.detail.breadcrumb.services')}</Link>
             <span className="text-gray-300">/</span>
             <Link href={`/${locale}/services/${serviceSlug}`} className="hover:text-gray-900 transition-colors">{serviceName}</Link>
             <span className="text-gray-300">/</span>
-            <span className="text-gray-900">FAQ</span>
+            <span className="text-gray-900">{t('services.detail.breadcrumb.faq')}</span>
           </motion.nav>
         </div>
 
@@ -208,7 +210,7 @@ export default function FAQPageClient({
                 <span className="text-lg font-light" style={{ color: accentColor }}>?</span>
               </motion.div>
               <span className="text-xs font-medium uppercase tracking-widest" style={{ color: accentColor }}>
-                Questions & Answers
+                {t('services.detail.faq.title')}
               </span>
             </motion.div>
 
@@ -219,9 +221,9 @@ export default function FAQPageClient({
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-5xl md:text-6xl lg:text-7xl font-light text-gray-900 mb-8 leading-[1.1] tracking-tight"
             >
-              Frequently
+              {t('services.detail.faq.heroTitle')}
               <br />
-              <span className="font-semibold" style={{ color: accentColor }}>Asked</span>
+              <span className="font-semibold" style={{ color: accentColor }}>{t('services.detail.faq.heroTitleAccent')}</span>
             </motion.h1>
 
             {/* Description */}
@@ -231,8 +233,7 @@ export default function FAQPageClient({
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl text-gray-500 max-w-2xl leading-relaxed mb-12"
             >
-              Everything you need to know about our {serviceName.toLowerCase()} service.
-              Can't find what you're looking for? We're here to help.
+              {t('services.detail.faq.heroDescription').replace('{serviceName}', serviceName.toLowerCase())}
             </motion.p>
 
             {/* Stats */}
@@ -252,15 +253,15 @@ export default function FAQPageClient({
                 >
                   {faq.length}
                 </motion.div>
-                <div className="text-sm text-gray-400 mt-1">Questions</div>
+                <div className="text-sm text-gray-400 mt-1">{t('services.detail.faq.stats.questions')}</div>
               </div>
               <div>
                 <div className="text-5xl font-light text-gray-900">24/7</div>
-                <div className="text-sm text-gray-400 mt-1">Support</div>
+                <div className="text-sm text-gray-400 mt-1">{t('services.detail.faq.stats.support')}</div>
               </div>
               <div>
                 <div className="text-5xl font-light text-gray-900">&lt;2h</div>
-                <div className="text-sm text-gray-400 mt-1">Response</div>
+                <div className="text-sm text-gray-400 mt-1">{t('services.detail.faq.stats.response')}</div>
               </div>
             </motion.div>
           </div>
@@ -279,7 +280,7 @@ export default function FAQPageClient({
             >
               <input
                 type="text"
-                placeholder="Search questions..."
+                placeholder={t('services.detail.faq.search.placeholder')}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full px-6 py-4 pl-14 bg-white border border-gray-200 focus:outline-none transition-colors text-gray-900 placeholder:text-gray-400"
@@ -324,22 +325,22 @@ export default function FAQPageClient({
                 >
                   <span className="text-4xl font-light" style={{ color: accentColor }}>?</span>
                 </motion.div>
-                <h2 className="text-2xl font-light text-gray-900 mb-2">FAQ Coming Soon</h2>
-                <p className="text-gray-500">We're preparing answers to common questions.</p>
+                <h2 className="text-2xl font-light text-gray-900 mb-2">{t('services.detail.breadcrumb.faq')} {t('services.detail.features.comingSoon').replace('Features', '')}</h2>
+                <p className="text-gray-500">{t('services.detail.faq.preparingAnswers')}</p>
               </div>
             ) : filteredFaq.length === 0 ? (
               <div className="text-center py-20">
                 <div className="w-20 h-20 border-2 border-gray-200 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-4xl font-light text-gray-300">∅</span>
                 </div>
-                <h2 className="text-2xl font-light text-gray-900 mb-2">No Results Found</h2>
-                <p className="text-gray-500 mb-4">Try searching with different keywords.</p>
+                <h2 className="text-2xl font-light text-gray-900 mb-2">{t('services.detail.faq.search.noResults')}</h2>
+                <p className="text-gray-500 mb-4">{t('services.detail.faq.search.noResultsDesc')}</p>
                 <button
                   onClick={() => setSearchQuery('')}
                   className="text-sm transition-colors"
                   style={{ color: accentColor }}
                 >
-                  Clear Search
+                  {t('services.detail.faq.search.clearSearch')}
                 </button>
               </div>
             ) : (
@@ -463,7 +464,7 @@ export default function FAQPageClient({
                 >
                   <div className="w-8 h-px bg-gray-900" />
                   <span className="text-xs font-medium text-gray-500 uppercase tracking-widest">
-                    Quick Info
+                    {t('services.detail.faq.quickInfo.eyebrow')}
                   </span>
                 </motion.div>
 
@@ -474,9 +475,9 @@ export default function FAQPageClient({
                   transition={{ delay: 0.1 }}
                   className="text-4xl font-light text-gray-900 mb-6"
                 >
-                  Helpful
+                  {t('services.detail.faq.quickInfo.title')}
                   <br />
-                  <span className="font-semibold" style={{ color: accentColor }}>information</span>
+                  <span className="font-semibold" style={{ color: accentColor }}>{t('services.detail.faq.quickInfo.titleAccent')}</span>
                 </motion.h2>
 
                 <motion.p
@@ -486,17 +487,17 @@ export default function FAQPageClient({
                   transition={{ delay: 0.2 }}
                   className="text-gray-500 leading-relaxed"
                 >
-                  Some quick pointers to help you get started with our {serviceName.toLowerCase()} service.
+                  {t('services.detail.faq.quickInfo.description').replace('{serviceName}', serviceName.toLowerCase())}
                 </motion.p>
               </div>
 
               {/* Info Cards with Staggered Reveal */}
               <div className="grid grid-cols-1 gap-1 bg-gray-200">
                 {[
-                  { label: 'Getting Started', desc: 'Contact us for a free consultation to discuss your requirements.' },
-                  { label: 'Timeline', desc: 'Project timelines vary based on scope. We provide detailed estimates upfront.' },
-                  { label: 'Pricing', desc: 'Flexible pricing options tailored to your budget and project needs.' },
-                  { label: 'Support', desc: 'Ongoing support and maintenance available after project completion.' },
+                  { labelKey: 'gettingStarted', descKey: 'gettingStartedDesc' },
+                  { labelKey: 'timeline', descKey: 'timelineDesc' },
+                  { labelKey: 'pricing', descKey: 'pricingDesc' },
+                  { labelKey: 'support', descKey: 'supportDesc' },
                 ].map((item, i) => (
                   <motion.div
                     key={i}
@@ -520,9 +521,9 @@ export default function FAQPageClient({
                       />
                       <div>
                         <h3 className="font-medium text-gray-900 mb-2 group-hover:translate-x-1 transition-transform">
-                          {item.label}
+                          {t(`services.detail.faq.quickInfo.${item.labelKey}`)}
                         </h3>
-                        <p className="text-sm text-gray-500">{item.desc}</p>
+                        <p className="text-sm text-gray-500">{t(`services.detail.faq.quickInfo.${item.descKey}`)}</p>
                       </div>
                     </div>
                   </motion.div>
@@ -578,10 +579,10 @@ export default function FAQPageClient({
               <span className="text-2xl font-light" style={{ color: accentColor }}>?</span>
             </motion.div>
             <h2 className="text-3xl md:text-4xl font-light text-white mb-6">
-              Still have questions?
+              {t('services.detail.faq.cta.title')}
             </h2>
             <p className="text-gray-400 mb-10 max-w-xl mx-auto">
-              Can't find the answer you're looking for? Our team is here to help.
+              {t('services.detail.faq.cta.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -589,14 +590,14 @@ export default function FAQPageClient({
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 text-white font-medium transition-all hover:scale-105"
                 style={{ backgroundColor: accentColor }}
               >
-                Contact Us
+                {t('services.detail.faq.cta.contactUs')}
                 <ArrowRightIcon className="w-4 h-4" />
               </Link>
               <Link
                 href={`/${locale}/services/${serviceSlug}`}
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-gray-700 text-white font-medium hover:bg-white/5 transition-colors"
               >
-                Back to Service
+                {t('services.detail.faq.cta.backToService')}
               </Link>
             </div>
           </motion.div>

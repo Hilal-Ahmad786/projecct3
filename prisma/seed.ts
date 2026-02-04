@@ -1883,25 +1883,158 @@ async function main() {
     },
     {
       name: 'Backend Development', slug: 'backend-development',
-      description: 'Scalable server-side development',
-      shortDescription: 'Build robust, scalable backend systems with Node.js, Python, and cloud-native architectures.',
-      fullDescription: 'Power your applications with reliable, scalable backend systems. We design and build APIs, microservices, databases, and server infrastructure using Node.js, Python, and Go.',
-      icon: 'cog', heroImage: '/images/services/backend-dev-hero.jpg', color: 'blue',
-      features: ['Node.js & Express/Fastify', 'Python Django & FastAPI', 'Database Design & Optimization', 'Microservices Architecture', 'Authentication & Authorization', 'Message Queues & Events'],
-      benefits: ['Handle millions of concurrent users', 'Secure data processing', 'Scalable architecture', 'Reliable uptime'],
-      content: { process: [{ step: 1, title: 'Architecture Design', description: 'Design system architecture, data models, and API contracts.' }, { step: 2, title: 'Database & Infrastructure', description: 'Set up databases, caching, and cloud infrastructure.' }, { step: 3, title: 'API Development', description: 'Build secure, documented APIs with validation and logging.' }, { step: 4, title: 'Testing & Deployment', description: 'Write tests and set up CI/CD pipelines.' }], technologies: [{ name: 'Node.js', icon: 'nodejs' }, { name: 'Python', icon: 'python' }, { name: 'PostgreSQL', icon: 'postgresql' }, { name: 'Redis', icon: 'redis' }, { name: 'Docker', icon: 'docker' }, { name: 'RabbitMQ', icon: 'rabbitmq' }], faq: [{ question: 'What backend language do you recommend?', answer: 'Node.js for real-time apps, Python for data-intensive work, Go for high-performance microservices.' }, { question: 'How do you handle database scaling?', answer: 'Read replicas, connection pooling, query optimization, and sharding strategies.' }, { question: 'Microservices or monolith?', answer: 'Start with a well-structured monolith, extract microservices as needed.' }, { question: 'How do you ensure API security?', answer: 'JWT/OAuth2 auth, input validation, rate limiting, CORS, OWASP guidelines.' }] },
-      status: 'published', featured: false, order: 32, parentSlug: 'web-development', category: 'web-software', isParent: false,
+      description: 'Scalable server-side development with modern architectures',
+      shortDescription: 'Build robust, scalable backend systems with Node.js, Python, and cloud-native architectures that handle millions of users.',
+      fullDescription: 'Power your applications with reliable, enterprise-grade backend systems. We architect and build high-performance APIs, microservices, databases, and server infrastructure using Node.js, Python, Go, and Rust. Our backend engineers specialize in building systems that scale horizontally, handle complex business logic, and integrate seamlessly with third-party services while maintaining security and data integrity.',
+      icon: 'cog', heroImage: '/images/services/backend-dev-hero.jpg', color: 'emerald',
+      features: [
+        'Node.js & Express/Fastify/NestJS',
+        'Python Django & FastAPI',
+        'Go & Rust for High Performance',
+        'Database Design & Query Optimization',
+        'Microservices & Event-Driven Architecture',
+        'Authentication & Authorization (OAuth2, JWT)',
+        'Message Queues (RabbitMQ, Kafka, SQS)',
+        'Caching Strategies (Redis, Memcached)'
+      ],
+      benefits: [
+        'Handle millions of concurrent users with horizontal scaling',
+        'Secure data processing with encryption at rest and in transit',
+        'Resilient architecture with automatic failover and recovery',
+        'Sub-100ms response times with optimized queries and caching',
+        'Cost-effective infrastructure with auto-scaling',
+        'Comprehensive logging and monitoring for debugging'
+      ],
+      content: {
+        process: [
+          { step: 1, title: 'System Architecture Design', description: 'We design the overall system architecture including service boundaries, data models, API contracts, database schema, and technology stack selection based on your scalability and performance requirements.' },
+          { step: 2, title: 'Database & Infrastructure Setup', description: 'Set up database clusters with proper replication, configure caching layers, establish message queues, and provision cloud infrastructure with infrastructure-as-code (Terraform/Pulumi).' },
+          { step: 3, title: 'Core API Development', description: 'Build secure, well-documented APIs with comprehensive input validation, rate limiting, authentication, authorization, and proper error handling. All endpoints are tested and documented with OpenAPI/Swagger.' },
+          { step: 4, title: 'Integration & Background Jobs', description: 'Implement third-party integrations, background job processing, scheduled tasks, webhooks, and event-driven workflows. Set up monitoring and alerting for all critical paths.' },
+          { step: 5, title: 'Load Testing & Deployment', description: 'Perform load testing to validate scalability targets, optimize bottlenecks, set up CI/CD pipelines, and deploy with zero-downtime strategies (blue-green, canary deployments).' }
+        ],
+        technologies: [
+          { name: 'Node.js', icon: 'nodejs' },
+          { name: 'Python', icon: 'python' },
+          { name: 'Go', icon: 'go' },
+          { name: 'PostgreSQL', icon: 'postgresql' },
+          { name: 'Redis', icon: 'redis' },
+          { name: 'Docker', icon: 'docker' },
+          { name: 'Kubernetes', icon: 'kubernetes' },
+          { name: 'RabbitMQ', icon: 'rabbitmq' },
+          { name: 'Kafka', icon: 'kafka' },
+          { name: 'GraphQL', icon: 'graphql' }
+        ],
+        portfolio: [
+          { title: 'High-Traffic API Gateway', category: 'Infrastructure', image: '/images/portfolio/backend-api-gateway.jpg', description: 'Built API gateway handling 10M+ requests/day with sub-50ms latency, rate limiting, and intelligent routing.' },
+          { title: 'Real-Time Notification System', category: 'Messaging', image: '/images/portfolio/backend-notifications.jpg', description: 'Event-driven notification system processing 1M+ events daily across email, SMS, push, and in-app channels.' },
+          { title: 'E-Commerce Order Processing', category: 'E-Commerce', image: '/images/portfolio/backend-orders.jpg', description: 'Distributed order processing system with inventory management, payment integration, and fulfillment orchestration.' },
+          { title: 'Financial Data Pipeline', category: 'FinTech', image: '/images/portfolio/backend-fintech.jpg', description: 'Secure financial data pipeline with compliance audit trails, encryption, and real-time fraud detection.' }
+        ],
+        faq: [
+          { question: 'What backend language do you recommend?', answer: 'It depends on your use case. Node.js excels for real-time apps and I/O-heavy workloads. Python is ideal for data-intensive work and ML integration. Go offers excellent performance for high-throughput microservices. We often use multiple languages in a polyglot architecture based on each service\'s needs.' },
+          { question: 'How do you handle database scaling?', answer: 'We employ multiple strategies: read replicas for read-heavy workloads, connection pooling (PgBouncer), query optimization with proper indexing, materialized views for complex queries, and horizontal sharding for massive datasets. We also leverage caching (Redis) to reduce database load.' },
+          { question: 'Microservices or monolith?', answer: 'We recommend starting with a well-structured modular monolith that can be decomposed later. Premature microservices add operational complexity. We help identify service boundaries using Domain-Driven Design and extract microservices when scaling or team organization demands it.' },
+          { question: 'How do you ensure API security?', answer: 'Comprehensive security layers: JWT/OAuth2 authentication, role-based access control (RBAC), input validation and sanitization, rate limiting, CORS policies, SQL injection prevention, XSS protection, and adherence to OWASP Top 10 guidelines. We also implement security headers and conduct regular penetration testing.' },
+          { question: 'What about message queues and async processing?', answer: 'We implement message queues (RabbitMQ, Kafka, SQS) for decoupling services, handling background jobs, managing peak loads, and ensuring reliable event delivery. This enables eventual consistency, retry mechanisms, and dead-letter queues for failed messages.' },
+          { question: 'How do you handle monitoring and debugging?', answer: 'We set up comprehensive observability: structured logging (ELK stack or Datadog), distributed tracing (Jaeger/Zipkin), metrics collection (Prometheus/Grafana), alerting rules, and health check endpoints. This enables rapid debugging and proactive issue detection.' }
+        ],
+        animation: {
+          heroVisual: 'terminal',
+          bgPattern: 'dots',
+          decorations: 'hexagons',
+          motion: 'cascade',
+          featureStyle: 'icon-left',
+          processLayout: 'timeline',
+          particleCount: 40,
+          glowIntensity: 'high',
+          colorScheme: 'secondary',
+          animationSpeed: 'normal',
+          floatingElements: ['{}', '=>', '[]', 'API', 'SQL'],
+          codeSnippets: ['async/await', 'SELECT *', 'app.listen()'],
+          primaryColor: '#10B981',
+          secondaryColor: '#3B82F6',
+          accentColor: '#8B5CF6'
+        }
+      },
+      status: 'published', featured: true, order: 32, parentSlug: 'web-development', category: 'web-software', isParent: false,
     },
     {
       name: 'Progressive Web Apps', slug: 'progressive-web-apps',
       description: 'PWA development for app-like web experiences',
-      shortDescription: 'Deliver app-like experiences on the web with offline support, push notifications, and installability.',
-      fullDescription: 'Bridge the gap between web and native apps with Progressive Web Apps. PWAs work offline, send push notifications, and install on any device from a single codebase.',
-      icon: 'code', heroImage: '/images/services/pwa-hero.jpg', color: 'blue',
-      features: ['Offline-First Architecture', 'Push Notifications', 'App Install Prompts', 'Background Sync', 'Service Worker Implementation', 'App Shell Architecture'],
-      benefits: ['Works offline and on slow networks', 'Installable without app stores', 'Single codebase for all platforms', 'Lower cost than native apps'],
-      content: { process: [{ step: 1, title: 'PWA Strategy', description: 'Assess use case and define valuable PWA features.' }, { step: 2, title: 'Architecture', description: 'Design app shell, caching strategies, and offline experience.' }, { step: 3, title: 'Development', description: 'Implement service workers, manifest, and PWA features.' }, { step: 4, title: 'Testing & Launch', description: 'Test across devices, optimize Lighthouse scores.' }], technologies: [{ name: 'Next.js', icon: 'nextjs' }, { name: 'Workbox', icon: 'workbox' }, { name: 'Service Workers', icon: 'pwa' }, { name: 'IndexedDB', icon: 'indexeddb' }, { name: 'Web Push API', icon: 'webpush' }, { name: 'Lighthouse', icon: 'lighthouse' }], faq: [{ question: 'What is a PWA?', answer: 'A website that behaves like a native app with offline support, push notifications, and installability.' }, { question: 'PWA or native app?', answer: 'PWAs for broad reach and lower costs; native apps for heavy device integration.' }, { question: 'Do PWAs work on iOS?', answer: 'Yes, with some limitations compared to Android. We design around them.' }, { question: 'How does offline work?', answer: 'Service workers cache assets and data; syncs automatically when online.' }] },
-      status: 'published', featured: false, order: 33, parentSlug: 'web-development', category: 'web-software', isParent: false,
+      shortDescription: 'Deliver app-like experiences on the web with offline support, push notifications, and installability - all from a single codebase.',
+      fullDescription: 'Bridge the gap between web and native apps with Progressive Web Apps. PWAs combine the best of both worlds: the reach and accessibility of the web with the engagement and reliability of native apps. They work offline, send push notifications, install on any device without app stores, and provide fast, immersive experiences that keep users coming back.',
+      icon: 'device-phone-mobile', heroImage: '/images/services/pwa-hero.jpg', color: 'violet',
+      features: [
+        'Offline-First Architecture',
+        'Push Notifications & Re-engagement',
+        'Add to Home Screen / Install Prompts',
+        'Background Sync & Data Persistence',
+        'Service Worker Implementation',
+        'App Shell Architecture Pattern',
+        'Responsive Across All Devices',
+        'HTTPS & Security Best Practices'
+      ],
+      benefits: [
+        'Works reliably on unreliable networks and offline',
+        'Installable without app store approval process',
+        'Single codebase for web, mobile, and desktop',
+        'Lower development and maintenance costs vs native',
+        'Automatic updates without user intervention',
+        'Discoverable by search engines unlike native apps'
+      ],
+      content: {
+        process: [
+          { step: 1, title: 'PWA Feasibility & Strategy', description: 'Assess your use case to determine which PWA features provide the most value. We analyze user behavior, offline requirements, and engagement goals to create a targeted PWA strategy.' },
+          { step: 2, title: 'App Shell & Caching Architecture', description: 'Design the app shell architecture for instant loading, define caching strategies (cache-first, network-first, stale-while-revalidate), and plan the offline user experience.' },
+          { step: 3, title: 'Service Worker Development', description: 'Implement robust service workers using Workbox for intelligent caching, background sync, and offline functionality. Configure the web app manifest for installability.' },
+          { step: 4, title: 'Push Notification Integration', description: 'Set up push notification infrastructure with subscription management, targeting, and analytics. Design notification strategies that drive engagement without annoying users.' },
+          { step: 5, title: 'Testing, Lighthouse Optimization & Launch', description: 'Test across devices and network conditions, achieve 90+ Lighthouse PWA scores, implement analytics tracking, and deploy with proper caching headers.' }
+        ],
+        technologies: [
+          { name: 'Next.js', icon: 'nextjs' },
+          { name: 'Workbox', icon: 'workbox' },
+          { name: 'Service Workers', icon: 'pwa' },
+          { name: 'IndexedDB', icon: 'indexeddb' },
+          { name: 'Web Push API', icon: 'webpush' },
+          { name: 'Lighthouse', icon: 'lighthouse' },
+          { name: 'Firebase', icon: 'firebase' },
+          { name: 'Web App Manifest', icon: 'pwa' },
+          { name: 'Cache API', icon: 'cache' },
+          { name: 'Background Sync API', icon: 'sync' }
+        ],
+        portfolio: [
+          { title: 'Retail PWA with Offline Catalog', category: 'E-Commerce', image: '/images/portfolio/pwa-retail.jpg', description: 'Offline-capable retail PWA allowing customers to browse products and add to cart even without connectivity. 40% increase in mobile conversions.' },
+          { title: 'Field Service Management App', category: 'Enterprise', image: '/images/portfolio/pwa-field-service.jpg', description: 'PWA for field technicians working in areas with poor connectivity. Offline form submission with automatic sync reduced data entry errors by 60%.' },
+          { title: 'News & Content Platform', category: 'Media', image: '/images/portfolio/pwa-news.jpg', description: 'PWA with aggressive caching and push notifications achieving 3x increase in return visitors and 50% reduction in bounce rate.' },
+          { title: 'Restaurant Ordering PWA', category: 'Food & Beverage', image: '/images/portfolio/pwa-restaurant.jpg', description: 'Installable ordering app without app store presence. 25% of customers installed to home screen, driving repeat orders.' }
+        ],
+        faq: [
+          { question: 'What is a PWA?', answer: 'A Progressive Web App is a website built with modern web technologies that delivers app-like experiences. PWAs are reliable (work offline), fast (respond quickly to user interactions), and engaging (can be installed and receive push notifications) - all without requiring app store distribution.' },
+          { question: 'PWA or native app?', answer: 'Choose PWA for broad reach, lower costs, and faster time-to-market. Choose native when you need deep device integration (camera, sensors, file system), platform-specific features, or App Store presence is critical for your audience. Many businesses start with PWA and add native apps later if needed.' },
+          { question: 'Do PWAs work on iOS?', answer: 'Yes, PWAs work on iOS Safari with some limitations: no push notifications (as of iOS 16.4 this is now supported), limited background sync, and 50MB storage cap. We design around these constraints and ensure a great iOS experience while taking full advantage of Android PWA capabilities.' },
+          { question: 'How does offline mode work?', answer: 'Service workers intercept network requests and serve cached responses when offline. We implement intelligent caching strategies: app shell is always cached, critical data is cached proactively, and background sync queues user actions for when connectivity returns.' },
+          { question: 'Will a PWA hurt my SEO?', answer: 'No, PWAs can actually improve SEO. They\'re still web pages that search engines can crawl. Fast loading times and great Core Web Vitals (which PWA architecture promotes) are SEO ranking factors. Unlike native apps, PWA content is fully indexable.' },
+          { question: 'How do PWA push notifications compare to native?', answer: 'PWA push notifications use the same system notification infrastructure as native apps and look identical to users. On Android, they\'re fully featured. On iOS (16.4+), they now work when the PWA is added to home screen. We help design notification strategies that drive engagement without causing uninstalls.' }
+        ],
+        animation: {
+          heroVisual: 'mobile-device',
+          bgPattern: 'waves',
+          decorations: 'circles',
+          motion: 'pulse',
+          featureStyle: 'bordered',
+          processLayout: 'steps-horizontal',
+          particleCount: 35,
+          glowIntensity: 'medium',
+          colorScheme: 'accent',
+          animationSpeed: 'slow',
+          floatingElements: ['📱', '🔔', '⬇️', '⚡', '📶'],
+          primaryColor: '#8B5CF6',
+          secondaryColor: '#EC4899',
+          accentColor: '#06B6D4'
+        }
+      },
+      status: 'published', featured: true, order: 33, parentSlug: 'web-development', category: 'web-software', isParent: false,
     },
     // E-Commerce children
     {
@@ -11345,6 +11478,594 @@ async function main() {
       for (const t of translations) { await prisma.serviceTranslation.upsert({ where: { serviceId_locale: { serviceId: t.serviceId, locale: t.locale } }, update: { name: t.name, shortDescription: t.shortDescription, fullDescription: t.fullDescription }, create: t as any }); }
       console.log(`Seeded translations for ${svc.slug}`);
     }
+  }
+
+  // Frontend Development Translations (comprehensive)
+  const frontendDev = await prisma.service.findUnique({ where: { slug: 'frontend-development' } });
+  if (frontendDev) {
+    const frontendTranslations = [
+      {
+        serviceId: frontendDev.id,
+        locale: 'tr',
+        name: 'Frontend Geliştirme',
+        shortDescription: 'React, Next.js ve modern frontend teknolojileriyle hızlı, etkileşimli kullanıcı arayüzleri oluşturun.',
+        fullDescription: 'Kullanıcıları memnun eden ve dönüşümleri artıran çarpıcı, performanslı kullanıcı arayüzleri oluşturun. React, Next.js ve modern frontend frameworklerinde uzmanlaşarak duyarlı, erişilebilir ve şimşek hızında web deneyimleri sunuyoruz. Frontend mühendislerimiz, piksel mükemmelliğinde tasarım uygulamasını performans optimizasyonuyla birleştirerek anında yüklenen ve kullanıcı etkileşimlerine sorunsuz yanıt veren arayüzler sunar.',
+        features: [
+          'React & Next.js Geliştirme',
+          'TypeScript Uygulaması',
+          'Duyarlı & Mobil Öncelikli Tasarım',
+          'Durum Yönetimi (Redux, Zustand, Jotai)',
+          'Bileşen Kütüphanesi Geliştirme',
+          'Performans Optimizasyonu & Core Web Vitals',
+          'Sunucu Tarafı Render & Statik Oluşturma',
+          'Mikro-Frontend Mimarisi'
+        ],
+        benefits: [
+          'Saniyenin altında yükleme süreleriyle şimşek hızında kullanıcı deneyimleri',
+          'Tüm büyük tarayıcılarda çapraz tarayıcı uyumluluğu',
+          'WCAG 2.1 uyumlu erişilebilir & SEO dostu arayüzler',
+          'Tasarım sistemleriyle sürdürülebilir bileşen mimarisi',
+          'TypeScript ile geleceğe hazır kod tabanı',
+          'Mobil kullanıcılar için optimize edilmiş paket boyutları'
+        ],
+        content: {
+          process: [
+            { step: 1, title: 'Keşif & UI Gereksinimleri', description: 'Optimal frontend mimarisini planlamak için tasarım özellikleri, kullanıcı akışları ve iş gereksinimlerini analiz ediyoruz.' },
+            { step: 2, title: 'Bileşen Mimarisi Tasarımı', description: 'Uygun durum yönetimi kalıplarıyla modüler, ölçeklenebilir bir bileşen sistemi tasarlıyoruz.' },
+            { step: 3, title: 'İteratif Geliştirme', description: 'Birim testleri, entegrasyon testleri ve görsel regresyon testleriyle test odaklı geliştirme kullanarak bileşenler oluşturuyoruz.' },
+            { step: 4, title: 'Performans Optimizasyonu', description: 'Kod bölme, tembel yükleme ve tree shaking ile paket boyutunu optimize ediyoruz. Core Web Vitals ayarları yapıyoruz.' },
+            { step: 5, title: 'Kalite Güvencesi & Lansman', description: 'Kapsamlı çapraz tarayıcı testi, erişilebilirlik denetimleri ve performans profilleme. İzleme ve hata takibiyle üretime hazır.' }
+          ],
+          faq: [
+            { question: 'Hangi frontend frameworkü öneriyorsunuz?', answer: 'Çoğu proje için mükemmel SEO yetenekleri, yerleşik performans optimizasyonları ve üstün geliştirici deneyimi nedeniyle React ile Next.js öneriyoruz.' },
+            { question: 'Erişilebilirlik standartlarına uyuyor musunuz?', answer: 'Kesinlikle. Minimum standart olarak WCAG 2.1 AA yönergelerini takip ediyoruz ve gerektiğinde AAA uyumluluğunu sağlayabiliriz.' },
+            { question: 'Durum yönetimini nasıl ele alıyorsunuz?', answer: 'Sunucu durumu için React Query veya SWR kullanıyoruz. İstemci durumu için basitliği nedeniyle Zustand tercih ediyoruz.' },
+            { question: 'Mevcut tasarım sistemimizle çalışabilir misiniz?', answer: 'Evet, Figma kütüphaneleri, Storybook bileşenleri ve özel tasarım tokenları dahil mevcut tasarım sistemleriyle düzenli olarak entegre oluyoruz.' },
+            { question: 'Frontend performansını nasıl sağlıyorsunuz?', answer: 'Kod bölme, tembel yükleme, görüntü optimizasyonu, Tailwind ile verimli CSS, önbellekleme stratejileri ve Core Web Vitals izleme uyguluyoruz.' },
+            { question: 'Test yaklaşımınız nedir?', answer: 'Kapsamlı bir test piramidi izliyoruz: Vitest/Jest ile birim testleri, bileşen etkileşimleri için entegrasyon testleri ve Playwright ile kritik kullanıcı akışları için uçtan uca testler.' }
+          ]
+        }
+      },
+      {
+        serviceId: frontendDev.id,
+        locale: 'de',
+        name: 'Frontend-Entwicklung',
+        shortDescription: 'Erstellen Sie schnelle, interaktive Benutzeroberflächen mit React, Next.js und modernen Frontend-Technologien.',
+        fullDescription: 'Erstellen Sie beeindruckende, leistungsstarke Benutzeroberflächen, die Benutzer begeistern und Conversions steigern. Wir sind spezialisiert auf React, Next.js und moderne Frontend-Frameworks, um responsive, zugängliche und blitzschnelle Web-Erlebnisse zu liefern. Unsere Frontend-Ingenieure kombinieren pixelgenaue Design-Implementierung mit Performance-Optimierung.',
+        features: [
+          'React & Next.js Entwicklung',
+          'TypeScript-Implementierung',
+          'Responsive & Mobile-First Design',
+          'State Management (Redux, Zustand, Jotai)',
+          'Komponentenbibliothek-Entwicklung',
+          'Performance-Optimierung & Core Web Vitals',
+          'Server-Side Rendering & Static Generation',
+          'Micro-Frontend-Architektur'
+        ],
+        benefits: [
+          'Blitzschnelle Benutzererlebnisse mit Ladezeiten unter einer Sekunde',
+          'Cross-Browser-Kompatibilität über alle gängigen Browser',
+          'Zugängliche & SEO-freundliche Oberflächen nach WCAG 2.1',
+          'Wartbare Komponentenarchitektur mit Design-Systemen',
+          'Zukunftssichere Codebasis mit TypeScript',
+          'Optimierte Bundle-Größen für mobile Nutzer'
+        ],
+        content: {
+          process: [
+            { step: 1, title: 'Discovery & UI-Anforderungen', description: 'Wir analysieren Designspezifikationen, Benutzerflows und Geschäftsanforderungen, um die optimale Frontend-Architektur zu planen.' },
+            { step: 2, title: 'Komponenten-Architektur-Design', description: 'Wir entwerfen ein modulares, skalierbares Komponentensystem mit geeigneten State-Management-Patterns.' },
+            { step: 3, title: 'Iterative Entwicklung', description: 'Wir bauen Komponenten mit testgetriebener Entwicklung, Unit-Tests, Integrationstests und visuellen Regressionstests.' },
+            { step: 4, title: 'Performance-Optimierung', description: 'Wir optimieren Bundle-Größen durch Code-Splitting, Lazy Loading und Tree Shaking. Core Web Vitals werden fein abgestimmt.' },
+            { step: 5, title: 'Qualitätssicherung & Launch', description: 'Umfassende Cross-Browser-Tests, Accessibility-Audits und Performance-Profiling mit Monitoring und Error-Tracking.' }
+          ],
+          faq: [
+            { question: 'Welches Frontend-Framework empfehlen Sie?', answer: 'Für die meisten Projekte empfehlen wir Next.js mit React aufgrund seiner hervorragenden SEO-Fähigkeiten und integrierten Performance-Optimierungen.' },
+            { question: 'Befolgen Sie Accessibility-Standards?', answer: 'Absolut. Wir folgen WCAG 2.1 AA-Richtlinien als Mindeststandard und können bei Bedarf AAA-Konformität erreichen.' },
+            { question: 'Wie handhaben Sie State Management?', answer: 'Für Server-State verwenden wir React Query oder SWR. Für Client-State bevorzugen wir Zustand wegen seiner Einfachheit.' },
+            { question: 'Können Sie mit unserem bestehenden Design-System arbeiten?', answer: 'Ja, wir integrieren regelmäßig mit bestehenden Design-Systemen einschließlich Figma-Bibliotheken und Storybook-Komponenten.' },
+            { question: 'Wie stellen Sie Frontend-Performance sicher?', answer: 'Wir implementieren Code-Splitting, Lazy Loading, Bildoptimierung mit next/image, effizientes CSS mit Tailwind und Core Web Vitals-Monitoring.' },
+            { question: 'Was ist Ihr Test-Ansatz?', answer: 'Wir folgen einer umfassenden Testpyramide: Unit-Tests mit Vitest/Jest, Integrationstests und End-to-End-Tests mit Playwright.' }
+          ]
+        }
+      },
+      {
+        serviceId: frontendDev.id,
+        locale: 'ar',
+        name: 'تطوير الواجهة الأمامية',
+        shortDescription: 'بناء واجهات مستخدم سريعة وتفاعلية باستخدام React و Next.js وتقنيات الواجهة الأمامية الحديثة.',
+        fullDescription: 'أنشئ واجهات مستخدم مذهلة وعالية الأداء تسعد المستخدمين وتزيد التحويلات. نحن متخصصون في React و Next.js وأطر العمل الحديثة لتقديم تجارب ويب سريعة وسهلة الوصول. يجمع مهندسو الواجهة الأمامية لدينا بين تنفيذ التصميم الدقيق وتحسين الأداء.',
+        features: [
+          'تطوير React و Next.js',
+          'تنفيذ TypeScript',
+          'تصميم متجاوب وأولوية الهاتف المحمول',
+          'إدارة الحالة (Redux, Zustand, Jotai)',
+          'تطوير مكتبة المكونات',
+          'تحسين الأداء و Core Web Vitals',
+          'العرض من جانب الخادم والتوليد الثابت',
+          'بنية Micro-Frontend'
+        ],
+        benefits: [
+          'تجارب مستخدم سريعة مع أوقات تحميل أقل من ثانية',
+          'توافق عبر المتصفحات في جميع المتصفحات الرئيسية',
+          'واجهات صديقة لـ SEO ويمكن الوصول إليها وفقًا لـ WCAG 2.1',
+          'بنية مكونات قابلة للصيانة مع أنظمة التصميم',
+          'قاعدة كود مستعدة للمستقبل مع TypeScript',
+          'أحجام حزم محسنة لمستخدمي الهاتف المحمول'
+        ],
+        content: {
+          process: [
+            { step: 1, title: 'الاكتشاف ومتطلبات واجهة المستخدم', description: 'نحلل مواصفات التصميم وتدفقات المستخدم ومتطلبات العمل لتخطيط البنية الأمثل للواجهة الأمامية.' },
+            { step: 2, title: 'تصميم بنية المكونات', description: 'نصمم نظام مكونات معياري وقابل للتطوير مع أنماط إدارة الحالة المناسبة.' },
+            { step: 3, title: 'التطوير التكراري', description: 'نبني المكونات باستخدام التطوير المدفوع بالاختبار مع اختبارات الوحدة واختبارات التكامل واختبارات الانحدار البصري.' },
+            { step: 4, title: 'تحسين الأداء', description: 'نحسن حجم الحزمة من خلال تقسيم الكود والتحميل البطيء وإزالة الكود غير المستخدم. نضبط Core Web Vitals.' },
+            { step: 5, title: 'ضمان الجودة والإطلاق', description: 'اختبار شامل عبر المتصفحات وتدقيق إمكانية الوصول وتحليل الأداء مع المراقبة وتتبع الأخطاء.' }
+          ],
+          faq: [
+            { question: 'ما إطار العمل الأمامي الذي توصون به؟', answer: 'لمعظم المشاريع، نوصي بـ Next.js مع React بسبب قدراته الممتازة في SEO والتحسينات المدمجة للأداء.' },
+            { question: 'هل تتبعون معايير إمكانية الوصول؟', answer: 'بالتأكيد. نتبع إرشادات WCAG 2.1 AA كمعيار أدنى ويمكننا تحقيق امتثال AAA عند الحاجة.' },
+            { question: 'كيف تتعاملون مع إدارة الحالة؟', answer: 'لحالة الخادم، نستخدم React Query أو SWR. لحالة العميل، نفضل Zustand لبساطته.' },
+            { question: 'هل يمكنكم العمل مع نظام التصميم الحالي؟', answer: 'نعم، نتكامل بانتظام مع أنظمة التصميم الحالية بما في ذلك مكتبات Figma ومكونات Storybook.' },
+            { question: 'كيف تضمنون أداء الواجهة الأمامية؟', answer: 'ننفذ تقسيم الكود والتحميل البطيء وتحسين الصور باستخدام next/image و CSS فعال مع Tailwind ومراقبة Core Web Vitals.' },
+            { question: 'ما هو نهج الاختبار الخاص بكم؟', answer: 'نتبع هرم اختبار شامل: اختبارات الوحدة مع Vitest/Jest واختبارات التكامل واختبارات من طرف إلى طرف مع Playwright.' }
+          ]
+        }
+      },
+      {
+        serviceId: frontendDev.id,
+        locale: 'ur',
+        name: 'فرنٹ اینڈ ڈیولپمنٹ',
+        shortDescription: 'React، Next.js اور جدید فرنٹ اینڈ ٹیکنالوجیز کے ساتھ تیز، انٹرایکٹو یوزر انٹرفیسز بنائیں۔',
+        fullDescription: 'شاندار، اعلیٰ کارکردگی والے یوزر انٹرفیسز بنائیں جو صارفین کو خوش کرتے اور کنورژنز بڑھاتے ہیں۔ ہم React، Next.js اور جدید فرنٹ اینڈ فریم ورکس میں مہارت رکھتے ہیں تاکہ ریسپانسو، قابل رسائی اور بجلی کی رفتار والے ویب تجربات فراہم کر سکیں۔ ہمارے فرنٹ اینڈ انجینئرز پکسل پرفیکٹ ڈیزائن کو کارکردگی کی اصلاح کے ساتھ ملاتے ہیں۔',
+        features: [
+          'React اور Next.js ڈیولپمنٹ',
+          'TypeScript امپلیمنٹیشن',
+          'ریسپانسو اور موبائل فرسٹ ڈیزائن',
+          'اسٹیٹ مینجمنٹ (Redux, Zustand, Jotai)',
+          'کمپوننٹ لائبریری ڈیولپمنٹ',
+          'پرفارمنس آپٹیمائزیشن اور Core Web Vitals',
+          'سرور سائیڈ رینڈرنگ اور سٹیٹک جنریشن',
+          'مائیکرو فرنٹ اینڈ آرکیٹیکچر'
+        ],
+        benefits: [
+          'ایک سیکنڈ سے کم لوڈ ٹائم کے ساتھ بجلی کی رفتار والے صارف تجربات',
+          'تمام بڑے براؤزرز میں کراس براؤزر مطابقت',
+          'WCAG 2.1 کے مطابق قابل رسائی اور SEO دوست انٹرفیسز',
+          'ڈیزائن سسٹمز کے ساتھ قابل دیکھ بھال کمپوننٹ آرکیٹیکچر',
+          'TypeScript کے ساتھ مستقبل کے لیے تیار کوڈ بیس',
+          'موبائل صارفین کے لیے آپٹیمائزڈ بنڈل سائز'
+        ],
+        content: {
+          process: [
+            { step: 1, title: 'دریافت اور UI ضروریات', description: 'ہم بہترین فرنٹ اینڈ آرکیٹیکچر کی منصوبہ بندی کے لیے ڈیزائن کی تفصیلات، صارف کے بہاؤ اور کاروباری ضروریات کا تجزیہ کرتے ہیں۔' },
+            { step: 2, title: 'کمپوننٹ آرکیٹیکچر ڈیزائن', description: 'ہم مناسب اسٹیٹ مینجمنٹ پیٹرنز کے ساتھ ماڈیولر، قابل توسیع کمپوننٹ سسٹم ڈیزائن کرتے ہیں۔' },
+            { step: 3, title: 'تکراری ڈیولپمنٹ', description: 'ہم یونٹ ٹیسٹس، انٹیگریشن ٹیسٹس اور ویژول ریگریشن ٹیسٹس کے ساتھ ٹیسٹ ڈریون ڈیولپمنٹ استعمال کرتے ہوئے کمپوننٹس بناتے ہیں۔' },
+            { step: 4, title: 'پرفارمنس آپٹیمائزیشن', description: 'ہم کوڈ سپلٹنگ، لیزی لوڈنگ اور ٹری شیکنگ کے ذریعے بنڈل سائز کو آپٹیمائز کرتے ہیں۔ Core Web Vitals کو فائن ٹیون کرتے ہیں۔' },
+            { step: 5, title: 'کوالٹی ایشورنس اور لانچ', description: 'جامع کراس براؤزر ٹیسٹنگ، ایکسیسیبلٹی آڈٹس اور پرفارمنس پروفائلنگ۔ مانیٹرنگ اور ایرر ٹریکنگ کے ساتھ پروڈکشن ریڈی۔' }
+          ],
+          faq: [
+            { question: 'آپ کون سا فرنٹ اینڈ فریم ورک تجویز کرتے ہیں؟', answer: 'زیادہ تر پراجیکٹس کے لیے، ہم اس کی بہترین SEO صلاحیتوں اور بلٹ ان پرفارمنس آپٹیمائزیشنز کی وجہ سے React کے ساتھ Next.js تجویز کرتے ہیں۔' },
+            { question: 'کیا آپ ایکسیسیبلٹی معیارات پر عمل کرتے ہیں؟', answer: 'بالکل۔ ہم کم از کم معیار کے طور پر WCAG 2.1 AA رہنما خطوط پر عمل کرتے ہیں اور ضرورت پڑنے پر AAA تعمیل حاصل کر سکتے ہیں۔' },
+            { question: 'آپ اسٹیٹ مینجمنٹ کو کیسے سنبھالتے ہیں؟', answer: 'سرور اسٹیٹ کے لیے، ہم React Query یا SWR استعمال کرتے ہیں۔ کلائنٹ اسٹیٹ کے لیے، ہم اس کی سادگی کے لیے Zustand کو ترجیح دیتے ہیں۔' },
+            { question: 'کیا آپ ہمارے موجودہ ڈیزائن سسٹم کے ساتھ کام کر سکتے ہیں؟', answer: 'جی ہاں، ہم Figma لائبریریز اور Storybook کمپوننٹس سمیت موجودہ ڈیزائن سسٹمز کے ساتھ باقاعدگی سے انٹیگریٹ کرتے ہیں۔' },
+            { question: 'آپ فرنٹ اینڈ پرفارمنس کو کیسے یقینی بناتے ہیں؟', answer: 'ہم کوڈ سپلٹنگ، لیزی لوڈنگ، next/image کے ساتھ امیج آپٹیمائزیشن، Tailwind کے ساتھ موثر CSS اور Core Web Vitals مانیٹرنگ نافذ کرتے ہیں۔' },
+            { question: 'آپ کا ٹیسٹنگ اپروچ کیا ہے؟', answer: 'ہم ایک جامع ٹیسٹنگ پیرامڈ پر عمل کرتے ہیں: Vitest/Jest کے ساتھ یونٹ ٹیسٹس، انٹیگریشن ٹیسٹس، اور Playwright کے ساتھ اینڈ ٹو اینڈ ٹیسٹس۔' }
+          ]
+        }
+      }
+    ];
+
+    for (const translation of frontendTranslations) {
+      await prisma.serviceTranslation.upsert({
+        where: {
+          serviceId_locale: {
+            serviceId: translation.serviceId,
+            locale: translation.locale,
+          },
+        },
+        update: {
+          name: translation.name,
+          shortDescription: translation.shortDescription,
+          fullDescription: translation.fullDescription,
+          features: translation.features,
+          benefits: translation.benefits,
+          content: translation.content as any,
+        },
+        create: translation as any,
+      });
+    }
+    console.log('Seeded comprehensive translations for frontend-development');
+  }
+
+  // Backend Development Translations (comprehensive)
+  const backendDev = await prisma.service.findUnique({ where: { slug: 'backend-development' } });
+  if (backendDev) {
+    const backendTranslations = [
+      {
+        serviceId: backendDev.id,
+        locale: 'tr',
+        name: 'Backend Geliştirme',
+        shortDescription: 'Milyonlarca kullanıcıyı yöneten Node.js, Python ve bulut tabanlı mimarilerle sağlam, ölçeklenebilir backend sistemleri oluşturun.',
+        fullDescription: 'Uygulamalarınızı güvenilir, kurumsal düzeyde backend sistemleriyle güçlendirin. Node.js, Python, Go ve Rust kullanarak yüksek performanslı API\'ler, mikroservisler, veritabanları ve sunucu altyapısı tasarlıyor ve inşa ediyoruz. Backend mühendislerimiz yatay ölçeklenen, karmaşık iş mantığını yöneten sistemler konusunda uzmanlaşmıştır.',
+        features: [
+          'Node.js & Express/Fastify/NestJS',
+          'Python Django & FastAPI',
+          'Yüksek Performans için Go & Rust',
+          'Veritabanı Tasarımı & Sorgu Optimizasyonu',
+          'Mikroservisler & Olay Odaklı Mimari',
+          'Kimlik Doğrulama & Yetkilendirme (OAuth2, JWT)',
+          'Mesaj Kuyrukları (RabbitMQ, Kafka, SQS)',
+          'Önbellekleme Stratejileri (Redis, Memcached)'
+        ],
+        benefits: [
+          'Yatay ölçekleme ile milyonlarca eşzamanlı kullanıcıyı yönetin',
+          'Durağan ve aktarım halinde şifreleme ile güvenli veri işleme',
+          'Otomatik yük devretme ile dayanıklı mimari',
+          'Optimize edilmiş sorgular ve önbellekleme ile 100ms altı yanıt süreleri',
+          'Otomatik ölçekleme ile maliyet etkin altyapı',
+          'Hata ayıklama için kapsamlı günlükleme ve izleme'
+        ],
+        content: {
+          process: [
+            { step: 1, title: 'Sistem Mimarisi Tasarımı', description: 'Ölçeklenebilirlik ve performans gereksinimlerinize göre servis sınırları, veri modelleri, API sözleşmeleri ve veritabanı şeması dahil genel sistem mimarisini tasarlıyoruz.' },
+            { step: 2, title: 'Veritabanı & Altyapı Kurulumu', description: 'Uygun replikasyonla veritabanı kümeleri kurun, önbellekleme katmanlarını yapılandırın, mesaj kuyruklarını oluşturun ve altyapı-kod olarak bulut altyapısı sağlayın.' },
+            { step: 3, title: 'Çekirdek API Geliştirme', description: 'Kapsamlı girdi doğrulama, hız sınırlama, kimlik doğrulama, yetkilendirme ve uygun hata işleme ile güvenli, iyi belgelenmiş API\'ler oluşturun.' },
+            { step: 4, title: 'Entegrasyon & Arka Plan İşleri', description: 'Üçüncü taraf entegrasyonları, arka plan iş işleme, zamanlanmış görevler, webhooklar ve olay odaklı iş akışlarını uygulayın.' },
+            { step: 5, title: 'Yük Testi & Dağıtım', description: 'Ölçeklenebilirlik hedeflerini doğrulamak için yük testi yapın, darboğazları optimize edin, CI/CD pipeline\'larını kurun ve sıfır kesinti stratejileriyle dağıtın.' }
+          ],
+          faq: [
+            { question: 'Hangi backend dilini öneriyorsunuz?', answer: 'Kullanım durumunuza bağlı. Node.js gerçek zamanlı uygulamalar için mükemmel. Python veri yoğun iş ve ML entegrasyonu için ideal. Go yüksek verimli mikroservisler için mükemmel performans sunar.' },
+            { question: 'Veritabanı ölçeklendirmesini nasıl yönetiyorsunuz?', answer: 'Çoklu stratejiler: okuma replikaları, bağlantı havuzlama, sorgu optimizasyonu, materyalize görünümler ve yatay sharding. Veritabanı yükünü azaltmak için önbellekleme de kullanıyoruz.' },
+            { question: 'Mikroservisler mi monolitik mi?', answer: 'Sonradan ayrıştırılabilecek iyi yapılandırılmış modüler bir monolitle başlamanızı öneriyoruz. Erken mikroservisler operasyonel karmaşıklık ekler.' },
+            { question: 'API güvenliğini nasıl sağlıyorsunuz?', answer: 'Kapsamlı güvenlik katmanları: JWT/OAuth2 kimlik doğrulama, rol tabanlı erişim kontrolü, girdi doğrulama, hız sınırlama, CORS politikaları ve OWASP Top 10 yönergelerine uyum.' },
+            { question: 'Mesaj kuyrukları ve asenkron işleme?', answer: 'Servisleri ayırmak, arka plan işlerini yönetmek, yoğun yükleri yönetmek için mesaj kuyrukları (RabbitMQ, Kafka, SQS) uyguluyoruz.' },
+            { question: 'İzleme ve hata ayıklamayı nasıl yönetiyorsunuz?', answer: 'Kapsamlı gözlemlenebilirlik kuruyoruz: yapılandırılmış günlükleme, dağıtık izleme, metrik toplama, uyarı kuralları ve sağlık kontrol uç noktaları.' }
+          ]
+        }
+      },
+      {
+        serviceId: backendDev.id,
+        locale: 'de',
+        name: 'Backend-Entwicklung',
+        shortDescription: 'Erstellen Sie robuste, skalierbare Backend-Systeme mit Node.js, Python und Cloud-nativen Architekturen, die Millionen von Benutzern verarbeiten.',
+        fullDescription: 'Betreiben Sie Ihre Anwendungen mit zuverlässigen, unternehmenstauglichen Backend-Systemen. Wir entwerfen und bauen hochperformante APIs, Microservices, Datenbanken und Server-Infrastruktur mit Node.js, Python, Go und Rust. Unsere Backend-Ingenieure sind spezialisiert auf Systeme, die horizontal skalieren und komplexe Geschäftslogik verarbeiten.',
+        features: [
+          'Node.js & Express/Fastify/NestJS',
+          'Python Django & FastAPI',
+          'Go & Rust für hohe Leistung',
+          'Datenbankdesign & Query-Optimierung',
+          'Microservices & Event-Driven Architecture',
+          'Authentifizierung & Autorisierung (OAuth2, JWT)',
+          'Message Queues (RabbitMQ, Kafka, SQS)',
+          'Caching-Strategien (Redis, Memcached)'
+        ],
+        benefits: [
+          'Millionen gleichzeitiger Benutzer mit horizontaler Skalierung verarbeiten',
+          'Sichere Datenverarbeitung mit Verschlüsselung im Ruhezustand und während der Übertragung',
+          'Resiliente Architektur mit automatischem Failover und Wiederherstellung',
+          'Antwortzeiten unter 100ms mit optimierten Abfragen und Caching',
+          'Kosteneffektive Infrastruktur mit Auto-Scaling',
+          'Umfassendes Logging und Monitoring für Debugging'
+        ],
+        content: {
+          process: [
+            { step: 1, title: 'Systemarchitektur-Design', description: 'Wir entwerfen die gesamte Systemarchitektur einschließlich Service-Grenzen, Datenmodelle, API-Verträge und Datenbank-Schema basierend auf Ihren Skalierbarkeits- und Leistungsanforderungen.' },
+            { step: 2, title: 'Datenbank- & Infrastruktur-Setup', description: 'Richten Sie Datenbank-Cluster mit korrekter Replikation ein, konfigurieren Sie Caching-Schichten, etablieren Sie Message Queues und stellen Sie Cloud-Infrastruktur bereit.' },
+            { step: 3, title: 'Core API Entwicklung', description: 'Erstellen Sie sichere, gut dokumentierte APIs mit umfassender Eingabevalidierung, Rate Limiting, Authentifizierung, Autorisierung und korrekter Fehlerbehandlung.' },
+            { step: 4, title: 'Integration & Background Jobs', description: 'Implementieren Sie Drittanbieter-Integrationen, Background-Job-Verarbeitung, geplante Aufgaben, Webhooks und event-gesteuerte Workflows.' },
+            { step: 5, title: 'Last-Tests & Deployment', description: 'Führen Sie Lasttests durch, optimieren Sie Engpässe, richten Sie CI/CD-Pipelines ein und deployen Sie mit Zero-Downtime-Strategien.' }
+          ],
+          faq: [
+            { question: 'Welche Backend-Sprache empfehlen Sie?', answer: 'Es hängt von Ihrem Anwendungsfall ab. Node.js eignet sich hervorragend für Echtzeit-Apps. Python ist ideal für datenintensive Arbeit und ML-Integration. Go bietet exzellente Leistung für Hochdurchsatz-Microservices.' },
+            { question: 'Wie handhaben Sie Datenbank-Skalierung?', answer: 'Wir setzen mehrere Strategien ein: Read Replicas, Connection Pooling, Query-Optimierung, Materialized Views und horizontales Sharding. Wir nutzen auch Caching zur Reduzierung der Datenbanklast.' },
+            { question: 'Microservices oder Monolith?', answer: 'Wir empfehlen, mit einem gut strukturierten modularen Monolithen zu beginnen, der später zerlegt werden kann. Verfrühte Microservices fügen operationale Komplexität hinzu.' },
+            { question: 'Wie stellen Sie API-Sicherheit sicher?', answer: 'Umfassende Sicherheitsschichten: JWT/OAuth2-Authentifizierung, rollenbasierte Zugriffskontrolle, Eingabevalidierung, Rate Limiting, CORS-Policies und Einhaltung der OWASP Top 10.' },
+            { question: 'Was ist mit Message Queues und asynchroner Verarbeitung?', answer: 'Wir implementieren Message Queues (RabbitMQ, Kafka, SQS) zur Entkopplung von Services, Handhabung von Background Jobs und Management von Spitzenlasten.' },
+            { question: 'Wie handhaben Sie Monitoring und Debugging?', answer: 'Wir richten umfassende Observability ein: strukturiertes Logging, verteiltes Tracing, Metrik-Sammlung, Alerting-Regeln und Health-Check-Endpoints.' }
+          ]
+        }
+      },
+      {
+        serviceId: backendDev.id,
+        locale: 'ar',
+        name: 'تطوير الخلفية',
+        shortDescription: 'بناء أنظمة خلفية قوية وقابلة للتوسع باستخدام Node.js و Python والبنى السحابية الأصلية التي تتعامل مع ملايين المستخدمين.',
+        fullDescription: 'شغّل تطبيقاتك بأنظمة خلفية موثوقة على مستوى المؤسسات. نصمم ونبني واجهات برمجة تطبيقات عالية الأداء والخدمات المصغرة وقواعد البيانات والبنية التحتية للخادم باستخدام Node.js و Python و Go و Rust. يتخصص مهندسو الخلفية لدينا في بناء أنظمة تتوسع أفقياً وتتعامل مع منطق الأعمال المعقد.',
+        features: [
+          'Node.js و Express/Fastify/NestJS',
+          'Python Django و FastAPI',
+          'Go و Rust للأداء العالي',
+          'تصميم قاعدة البيانات وتحسين الاستعلامات',
+          'الخدمات المصغرة والبنية الموجهة بالأحداث',
+          'المصادقة والتفويض (OAuth2, JWT)',
+          'طوابير الرسائل (RabbitMQ, Kafka, SQS)',
+          'استراتيجيات التخزين المؤقت (Redis, Memcached)'
+        ],
+        benefits: [
+          'التعامل مع ملايين المستخدمين المتزامنين بالتوسع الأفقي',
+          'معالجة البيانات الآمنة مع التشفير في السكون والنقل',
+          'بنية مرنة مع تجاوز الفشل التلقائي والاسترداد',
+          'أوقات استجابة أقل من 100 مللي ثانية مع استعلامات محسنة',
+          'بنية تحتية فعالة من حيث التكلفة مع التوسع التلقائي',
+          'تسجيل ومراقبة شاملة لتصحيح الأخطاء'
+        ],
+        content: {
+          process: [
+            { step: 1, title: 'تصميم بنية النظام', description: 'نصمم البنية العامة للنظام بما في ذلك حدود الخدمة ونماذج البيانات وعقود API ومخطط قاعدة البيانات بناءً على متطلبات القابلية للتوسع والأداء.' },
+            { step: 2, title: 'إعداد قاعدة البيانات والبنية التحتية', description: 'إعداد مجموعات قواعد البيانات مع النسخ المتماثل المناسب، وتكوين طبقات التخزين المؤقت، وإنشاء طوابير الرسائل، وتوفير البنية التحتية السحابية.' },
+            { step: 3, title: 'تطوير API الأساسي', description: 'بناء واجهات برمجة تطبيقات آمنة وموثقة جيداً مع التحقق الشامل من المدخلات وتحديد المعدل والمصادقة والتفويض ومعالجة الأخطاء.' },
+            { step: 4, title: 'التكامل والمهام الخلفية', description: 'تنفيذ تكاملات الطرف الثالث ومعالجة المهام الخلفية والمهام المجدولة والـ webhooks وسير العمل الموجه بالأحداث.' },
+            { step: 5, title: 'اختبار الحمل والنشر', description: 'إجراء اختبار الحمل للتحقق من أهداف القابلية للتوسع، وتحسين الاختناقات، وإعداد خطوط أنابيب CI/CD، والنشر بدون توقف.' }
+          ],
+          faq: [
+            { question: 'ما لغة الخلفية التي توصون بها؟', answer: 'يعتمد على حالة الاستخدام. Node.js ممتاز للتطبيقات في الوقت الحقيقي. Python مثالي للعمل المكثف للبيانات وتكامل ML. Go يوفر أداءً ممتازاً للخدمات المصغرة عالية الإنتاجية.' },
+            { question: 'كيف تتعاملون مع توسيع قاعدة البيانات؟', answer: 'نستخدم استراتيجيات متعددة: نسخ القراءة، تجميع الاتصالات، تحسين الاستعلامات، العروض المادية والتجزئة الأفقية. نستخدم أيضاً التخزين المؤقت لتقليل حمل قاعدة البيانات.' },
+            { question: 'الخدمات المصغرة أم المونوليث؟', answer: 'نوصي بالبدء بمونوليث معياري منظم جيداً يمكن تفكيكه لاحقاً. الخدمات المصغرة المبكرة تضيف تعقيداً تشغيلياً.' },
+            { question: 'كيف تضمنون أمان API؟', answer: 'طبقات أمان شاملة: مصادقة JWT/OAuth2، التحكم في الوصول القائم على الأدوار، التحقق من المدخلات، تحديد المعدل، سياسات CORS، والامتثال لـ OWASP Top 10.' },
+            { question: 'ماذا عن طوابير الرسائل والمعالجة غير المتزامنة؟', answer: 'ننفذ طوابير الرسائل (RabbitMQ, Kafka, SQS) لفصل الخدمات ومعالجة المهام الخلفية وإدارة أحمال الذروة.' },
+            { question: 'كيف تتعاملون مع المراقبة وتصحيح الأخطاء؟', answer: 'نعد قابلية المراقبة الشاملة: التسجيل المنظم، التتبع الموزع، جمع المقاييس، قواعد التنبيه، ونقاط نهاية فحص الصحة.' }
+          ]
+        }
+      },
+      {
+        serviceId: backendDev.id,
+        locale: 'ur',
+        name: 'بیک اینڈ ڈیولپمنٹ',
+        shortDescription: 'Node.js، Python اور کلاؤڈ نیٹو آرکیٹیکچرز کے ساتھ مضبوط، قابل توسیع بیک اینڈ سسٹمز بنائیں جو لاکھوں صارفین کو سنبھالتے ہیں۔',
+        fullDescription: 'اپنی ایپلیکیشنز کو قابل اعتماد، انٹرپرائز گریڈ بیک اینڈ سسٹمز سے طاقت دیں۔ ہم Node.js، Python، Go اور Rust استعمال کرتے ہوئے اعلیٰ کارکردگی والی APIs، مائیکرو سروسز، ڈیٹا بیسز اور سرور انفراسٹرکچر ڈیزائن اور بناتے ہیں۔ ہمارے بیک اینڈ انجینئرز افقی طور پر اسکیل ہونے والے سسٹمز میں مہارت رکھتے ہیں۔',
+        features: [
+          'Node.js اور Express/Fastify/NestJS',
+          'Python Django اور FastAPI',
+          'اعلیٰ کارکردگی کے لیے Go اور Rust',
+          'ڈیٹا بیس ڈیزائن اور کوئری آپٹیمائزیشن',
+          'مائیکرو سروسز اور ایونٹ ڈریون آرکیٹیکچر',
+          'اتھینٹیکیشن اور اتھورائزیشن (OAuth2, JWT)',
+          'میسج کیوز (RabbitMQ, Kafka, SQS)',
+          'کیشنگ اسٹریٹیجیز (Redis, Memcached)'
+        ],
+        benefits: [
+          'افقی اسکیلنگ کے ساتھ لاکھوں بیک وقت صارفین کو سنبھالیں',
+          'ریسٹ اور ٹرانزٹ میں انکرپشن کے ساتھ محفوظ ڈیٹا پروسیسنگ',
+          'خودکار فیل اوور اور ریکوری کے ساتھ لچکدار آرکیٹیکچر',
+          'آپٹیمائزڈ کوئریز اور کیشنگ کے ساتھ 100ms سے کم رسپانس ٹائم',
+          'آٹو اسکیلنگ کے ساتھ لاگت مؤثر انفراسٹرکچر',
+          'ڈیبگنگ کے لیے جامع لاگنگ اور مانیٹرنگ'
+        ],
+        content: {
+          process: [
+            { step: 1, title: 'سسٹم آرکیٹیکچر ڈیزائن', description: 'ہم آپ کی اسکیلیبلٹی اور پرفارمنس ضروریات کی بنیاد پر سروس باؤنڈریز، ڈیٹا ماڈلز، API کنٹریکٹس اور ڈیٹا بیس اسکیما سمیت مجموعی سسٹم آرکیٹیکچر ڈیزائن کرتے ہیں۔' },
+            { step: 2, title: 'ڈیٹا بیس اور انفراسٹرکچر سیٹ اپ', description: 'مناسب ریپلیکیشن کے ساتھ ڈیٹا بیس کلسٹرز سیٹ اپ کریں، کیشنگ لیئرز کنفیگر کریں، میسج کیوز قائم کریں اور کلاؤڈ انفراسٹرکچر فراہم کریں۔' },
+            { step: 3, title: 'کور API ڈیولپمنٹ', description: 'جامع ان پٹ ویلیڈیشن، ریٹ لمیٹنگ، اتھینٹیکیشن، اتھورائزیشن اور مناسب ایرر ہینڈلنگ کے ساتھ محفوظ، اچھی طرح دستاویزی APIs بنائیں۔' },
+            { step: 4, title: 'انٹیگریشن اور بیک گراؤنڈ جابز', description: 'تھرڈ پارٹی انٹیگریشنز، بیک گراؤنڈ جاب پروسیسنگ، شیڈولڈ ٹاسکس، ویب ہکس اور ایونٹ ڈریون ورک فلوز نافذ کریں۔' },
+            { step: 5, title: 'لوڈ ٹیسٹنگ اور ڈیپلائمنٹ', description: 'اسکیلیبلٹی ٹارگٹس کی توثیق کے لیے لوڈ ٹیسٹنگ کریں، باٹل نیکس آپٹیمائز کریں، CI/CD پائپ لائنز سیٹ اپ کریں اور زیرو ڈاؤن ٹائم اسٹریٹیجیز کے ساتھ ڈیپلائی کریں۔' }
+          ],
+          faq: [
+            { question: 'آپ کون سی بیک اینڈ لینگویج تجویز کرتے ہیں؟', answer: 'یہ آپ کے استعمال کے کیس پر منحصر ہے۔ Node.js ریئل ٹائم ایپس کے لیے بہترین ہے۔ Python ڈیٹا انٹینسو کام اور ML انٹیگریشن کے لیے مثالی ہے۔ Go ہائی تھروپٹ مائیکرو سروسز کے لیے بہترین پرفارمنس دیتا ہے۔' },
+            { question: 'آپ ڈیٹا بیس اسکیلنگ کو کیسے سنبھالتے ہیں؟', answer: 'ہم متعدد حکمت عملیاں استعمال کرتے ہیں: ریڈ ریپلیکاز، کنکشن پولنگ، کوئری آپٹیمائزیشن، میٹریلائزڈ ویوز اور ہورائزنٹل شارڈنگ۔ ہم ڈیٹا بیس لوڈ کم کرنے کے لیے کیشنگ بھی استعمال کرتے ہیں۔' },
+            { question: 'مائیکرو سروسز یا مونولیتھ؟', answer: 'ہم ایک اچھی ساخت والے ماڈیولر مونولیتھ سے شروع کرنے کی سفارش کرتے ہیں جسے بعد میں تقسیم کیا جا سکے۔ قبل از وقت مائیکرو سروسز آپریشنل پیچیدگی بڑھاتی ہیں۔' },
+            { question: 'آپ API سیکیورٹی کو کیسے یقینی بناتے ہیں؟', answer: 'جامع سیکیورٹی لیئرز: JWT/OAuth2 اتھینٹیکیشن، رول بیسڈ ایکسیس کنٹرول، ان پٹ ویلیڈیشن، ریٹ لمیٹنگ، CORS پالیسیز اور OWASP Top 10 گائیڈ لائنز کی پابندی۔' },
+            { question: 'میسج کیوز اور ایسینک پروسیسنگ کے بارے میں کیا؟', answer: 'ہم سروسز کو ڈیکپل کرنے، بیک گراؤنڈ جابز ہینڈل کرنے اور پیک لوڈز منیج کرنے کے لیے میسج کیوز (RabbitMQ, Kafka, SQS) نافذ کرتے ہیں۔' },
+            { question: 'آپ مانیٹرنگ اور ڈیبگنگ کو کیسے سنبھالتے ہیں؟', answer: 'ہم جامع آبزرویبلٹی سیٹ اپ کرتے ہیں: سٹرکچرڈ لاگنگ، ڈسٹری بیوٹڈ ٹریسنگ، میٹرکس کلیکشن، الرٹنگ رولز اور ہیلتھ چیک اینڈ پوائنٹس۔' }
+          ]
+        }
+      }
+    ];
+
+    for (const translation of backendTranslations) {
+      await prisma.serviceTranslation.upsert({
+        where: {
+          serviceId_locale: {
+            serviceId: translation.serviceId,
+            locale: translation.locale,
+          },
+        },
+        update: {
+          name: translation.name,
+          shortDescription: translation.shortDescription,
+          fullDescription: translation.fullDescription,
+          features: translation.features,
+          benefits: translation.benefits,
+          content: translation.content as any,
+        },
+        create: translation as any,
+      });
+    }
+    console.log('Seeded comprehensive translations for backend-development');
+  }
+
+  // Progressive Web Apps Translations (comprehensive)
+  const pwaDev = await prisma.service.findUnique({ where: { slug: 'progressive-web-apps' } });
+  if (pwaDev) {
+    const pwaTranslations = [
+      {
+        serviceId: pwaDev.id,
+        locale: 'tr',
+        name: 'Progressive Web Apps (PWA)',
+        shortDescription: 'Web üzerinde uygulama benzeri deneyimler sunun - çevrimdışı destek, push bildirimleri ve kurulabilirlik - hepsi tek kod tabanından.',
+        fullDescription: 'Progressive Web Apps ile web ve yerel uygulamalar arasındaki boşluğu kapatın. PWA\'lar her iki dünyanın en iyisini birleştirir: webin erişimi ve erişilebilirliği ile yerel uygulamaların etkileşimi ve güvenilirliği. Çevrimdışı çalışır, push bildirimleri gönderir, uygulama mağazaları olmadan herhangi bir cihaza kurulur.',
+        features: [
+          'Çevrimdışı Öncelikli Mimari',
+          'Push Bildirimleri & Yeniden Etkileşim',
+          'Ana Ekrana Ekle / Kurulum İstemleri',
+          'Arka Plan Senkronizasyonu & Veri Kalıcılığı',
+          'Service Worker Uygulaması',
+          'App Shell Mimari Deseni',
+          'Tüm Cihazlarda Duyarlı',
+          'HTTPS & Güvenlik En İyi Uygulamaları'
+        ],
+        benefits: [
+          'Güvenilmez ağlarda ve çevrimdışı güvenilir çalışır',
+          'Uygulama mağazası onay süreci olmadan kurulabilir',
+          'Web, mobil ve masaüstü için tek kod tabanı',
+          'Yerel uygulamalara göre daha düşük geliştirme maliyeti',
+          'Kullanıcı müdahalesi olmadan otomatik güncellemeler',
+          'Yerel uygulamaların aksine arama motorları tarafından keşfedilebilir'
+        ],
+        content: {
+          process: [
+            { step: 1, title: 'PWA Fizibilite & Strateji', description: 'Hangi PWA özelliklerinin en fazla değer sağladığını belirlemek için kullanım durumunuzu değerlendiriyoruz. Hedefli bir PWA stratejisi oluşturmak için kullanıcı davranışını analiz ediyoruz.' },
+            { step: 2, title: 'App Shell & Önbellekleme Mimarisi', description: 'Anında yükleme için app shell mimarisini tasarlıyor, önbellekleme stratejilerini tanımlıyor ve çevrimdışı kullanıcı deneyimini planlıyoruz.' },
+            { step: 3, title: 'Service Worker Geliştirme', description: 'Akıllı önbellekleme, arka plan senkronizasyonu ve çevrimdışı işlevsellik için Workbox kullanarak sağlam service workerlar uyguluyoruz.' },
+            { step: 4, title: 'Push Bildirimi Entegrasyonu', description: 'Abonelik yönetimi, hedefleme ve analitiklerle push bildirimi altyapısını kuruyoruz.' },
+            { step: 5, title: 'Test, Lighthouse Optimizasyonu & Lansman', description: 'Cihazlar ve ağ koşullarında test yapıyor, 90+ Lighthouse PWA puanları elde ediyor ve uygun önbellekleme başlıklarıyla dağıtıyoruz.' }
+          ],
+          faq: [
+            { question: 'PWA nedir?', answer: 'Progressive Web App, uygulama benzeri deneyimler sunan modern web teknolojileriyle oluşturulmuş bir web sitesidir. PWA\'lar güvenilir (çevrimdışı çalışır), hızlı ve ilgi çekicidir (kurulabilir ve push bildirimleri alabilir).' },
+            { question: 'PWA mı yerel uygulama mı?', answer: 'Geniş erişim, düşük maliyet ve hızlı pazara sunma için PWA seçin. Derin cihaz entegrasyonu veya App Store varlığı kritik olduğunda yerel seçin.' },
+            { question: 'PWA\'lar iOS\'ta çalışıyor mu?', answer: 'Evet, PWA\'lar iOS Safari\'de bazı sınırlamalarla çalışır. iOS 16.4 itibariyle push bildirimleri artık destekleniyor. Bu kısıtlamalar etrafında tasarlıyoruz.' },
+            { question: 'Çevrimdışı mod nasıl çalışır?', answer: 'Service workerlar ağ isteklerini yakalar ve çevrimdışı olduğunda önbelleğe alınmış yanıtları sunar. Akıllı önbellekleme stratejileri uyguluyoruz.' },
+            { question: 'PWA SEO\'mu etkiler mi?', answer: 'Hayır, PWA\'lar aslında SEO\'yu iyileştirebilir. Hala arama motorlarının tarayabileceği web sayfalarıdır. Hızlı yükleme süreleri SEO sıralama faktörleridir.' },
+            { question: 'PWA push bildirimleri yerel ile nasıl karşılaştırılır?', answer: 'PWA push bildirimleri yerel uygulamalarla aynı sistem bildirimi altyapısını kullanır ve kullanıcılara aynı görünür. Android\'de tam özellikli, iOS\'ta (16.4+) PWA ana ekrana eklendiğinde çalışır.' }
+          ]
+        }
+      },
+      {
+        serviceId: pwaDev.id,
+        locale: 'de',
+        name: 'Progressive Web Apps (PWA)',
+        shortDescription: 'Liefern Sie app-ähnliche Erlebnisse im Web mit Offline-Support, Push-Benachrichtigungen und Installierbarkeit - alles aus einer einzigen Codebasis.',
+        fullDescription: 'Überbrücken Sie die Lücke zwischen Web- und nativen Apps mit Progressive Web Apps. PWAs kombinieren das Beste aus beiden Welten: die Reichweite und Zugänglichkeit des Webs mit dem Engagement und der Zuverlässigkeit nativer Apps. Sie funktionieren offline, senden Push-Benachrichtigungen und können ohne App Stores auf jedem Gerät installiert werden.',
+        features: [
+          'Offline-First-Architektur',
+          'Push-Benachrichtigungen & Re-Engagement',
+          'Zum Startbildschirm hinzufügen / Install-Prompts',
+          'Background Sync & Datenpersistenz',
+          'Service Worker Implementierung',
+          'App Shell Architektur-Pattern',
+          'Responsive auf allen Geräten',
+          'HTTPS & Security Best Practices'
+        ],
+        benefits: [
+          'Funktioniert zuverlässig bei unzuverlässigen Netzwerken und offline',
+          'Installierbar ohne App Store Genehmigungsprozess',
+          'Einzige Codebasis für Web, Mobile und Desktop',
+          'Niedrigere Entwicklungskosten als native Apps',
+          'Automatische Updates ohne Benutzereingriff',
+          'Von Suchmaschinen auffindbar im Gegensatz zu nativen Apps'
+        ],
+        content: {
+          process: [
+            { step: 1, title: 'PWA-Machbarkeit & Strategie', description: 'Wir bewerten Ihren Anwendungsfall, um zu bestimmen, welche PWA-Funktionen den größten Mehrwert bieten. Wir analysieren das Benutzerverhalten für eine gezielte PWA-Strategie.' },
+            { step: 2, title: 'App Shell & Caching-Architektur', description: 'Wir entwerfen die App-Shell-Architektur für sofortiges Laden, definieren Caching-Strategien und planen die Offline-Benutzererfahrung.' },
+            { step: 3, title: 'Service Worker Entwicklung', description: 'Wir implementieren robuste Service Worker mit Workbox für intelligentes Caching, Background Sync und Offline-Funktionalität.' },
+            { step: 4, title: 'Push-Benachrichtigungs-Integration', description: 'Wir richten die Push-Benachrichtigungs-Infrastruktur mit Abonnementverwaltung, Targeting und Analytics ein.' },
+            { step: 5, title: 'Tests, Lighthouse-Optimierung & Launch', description: 'Wir testen auf verschiedenen Geräten und Netzwerkbedingungen, erreichen 90+ Lighthouse PWA-Scores und deployen mit korrekten Caching-Headern.' }
+          ],
+          faq: [
+            { question: 'Was ist eine PWA?', answer: 'Eine Progressive Web App ist eine mit modernen Web-Technologien erstellte Website, die app-ähnliche Erlebnisse bietet. PWAs sind zuverlässig (funktionieren offline), schnell und ansprechend (können installiert werden und Push-Benachrichtigungen empfangen).' },
+            { question: 'PWA oder native App?', answer: 'Wählen Sie PWA für breite Reichweite, niedrigere Kosten und schnellere Markteinführung. Wählen Sie nativ, wenn tiefe Geräteintegration oder App Store-Präsenz kritisch ist.' },
+            { question: 'Funktionieren PWAs auf iOS?', answer: 'Ja, PWAs funktionieren in iOS Safari mit einigen Einschränkungen. Seit iOS 16.4 werden Push-Benachrichtigungen unterstützt. Wir entwerfen um diese Einschränkungen herum.' },
+            { question: 'Wie funktioniert der Offline-Modus?', answer: 'Service Worker fangen Netzwerkanfragen ab und liefern gecachte Antworten, wenn offline. Wir implementieren intelligente Caching-Strategien.' },
+            { question: 'Schadet eine PWA meiner SEO?', answer: 'Nein, PWAs können SEO tatsächlich verbessern. Es sind immer noch Webseiten, die Suchmaschinen crawlen können. Schnelle Ladezeiten sind SEO-Ranking-Faktoren.' },
+            { question: 'Wie vergleichen sich PWA Push-Benachrichtigungen mit nativen?', answer: 'PWA Push-Benachrichtigungen nutzen dieselbe Systembenachrichtigungs-Infrastruktur wie native Apps und sehen für Benutzer identisch aus. Auf Android voll funktionsfähig, auf iOS (16.4+) funktionieren sie, wenn die PWA zum Startbildschirm hinzugefügt wurde.' }
+          ]
+        }
+      },
+      {
+        serviceId: pwaDev.id,
+        locale: 'ar',
+        name: 'تطبيقات الويب التقدمية (PWA)',
+        shortDescription: 'قدم تجارب شبيهة بالتطبيقات على الويب مع دعم وضع عدم الاتصال والإشعارات وقابلية التثبيت - كل ذلك من قاعدة كود واحدة.',
+        fullDescription: 'اسد الفجوة بين تطبيقات الويب والتطبيقات الأصلية مع تطبيقات الويب التقدمية. تجمع PWA بين أفضل ما في العالمين: وصول الويب وإمكانية الوصول إليه مع مشاركة وموثوقية التطبيقات الأصلية. تعمل بدون اتصال، ترسل إشعارات دفع، تُثبت على أي جهاز بدون متاجر التطبيقات.',
+        features: [
+          'بنية أوفلاين أولاً',
+          'إشعارات الدفع وإعادة المشاركة',
+          'إضافة إلى الشاشة الرئيسية / مطالبات التثبيت',
+          'المزامنة في الخلفية واستمرار البيانات',
+          'تنفيذ Service Worker',
+          'نمط بنية App Shell',
+          'استجابة عبر جميع الأجهزة',
+          'HTTPS وأفضل ممارسات الأمان'
+        ],
+        benefits: [
+          'يعمل بشكل موثوق على الشبكات غير الموثوقة وبدون اتصال',
+          'قابل للتثبيت بدون عملية موافقة متجر التطبيقات',
+          'قاعدة كود واحدة للويب والهاتف المحمول وسطح المكتب',
+          'تكاليف تطوير أقل من التطبيقات الأصلية',
+          'تحديثات تلقائية بدون تدخل المستخدم',
+          'قابل للاكتشاف بواسطة محركات البحث على عكس التطبيقات الأصلية'
+        ],
+        content: {
+          process: [
+            { step: 1, title: 'جدوى واستراتيجية PWA', description: 'نقيم حالة الاستخدام الخاصة بك لتحديد ميزات PWA التي توفر أكبر قيمة. نحلل سلوك المستخدم لإنشاء استراتيجية PWA مستهدفة.' },
+            { step: 2, title: 'بنية App Shell والتخزين المؤقت', description: 'نصمم بنية app shell للتحميل الفوري، ونحدد استراتيجيات التخزين المؤقت، ونخطط لتجربة المستخدم بدون اتصال.' },
+            { step: 3, title: 'تطوير Service Worker', description: 'ننفذ service workers قوية باستخدام Workbox للتخزين المؤقت الذكي والمزامنة في الخلفية ووظائف وضع عدم الاتصال.' },
+            { step: 4, title: 'تكامل إشعارات الدفع', description: 'نعد بنية إشعارات الدفع التحتية مع إدارة الاشتراكات والاستهداف والتحليلات.' },
+            { step: 5, title: 'الاختبار وتحسين Lighthouse والإطلاق', description: 'نختبر عبر الأجهزة وظروف الشبكة، ونحقق درجات Lighthouse PWA أعلى من 90، وننشر مع رؤوس التخزين المؤقت المناسبة.' }
+          ],
+          faq: [
+            { question: 'ما هو PWA؟', answer: 'تطبيق الويب التقدمي هو موقع ويب مبني بتقنيات الويب الحديثة يقدم تجارب شبيهة بالتطبيقات. PWAs موثوقة (تعمل بدون اتصال)، سريعة وجذابة (يمكن تثبيتها وتلقي إشعارات الدفع).' },
+            { question: 'PWA أم تطبيق أصلي؟', answer: 'اختر PWA للوصول الواسع والتكاليف المنخفضة والوصول الأسرع للسوق. اختر الأصلي عندما يكون التكامل العميق مع الجهاز أو وجود متجر التطبيقات حاسماً.' },
+            { question: 'هل تعمل PWAs على iOS؟', answer: 'نعم، تعمل PWAs على iOS Safari مع بعض القيود. منذ iOS 16.4 أصبحت إشعارات الدفع مدعومة. نصمم حول هذه القيود.' },
+            { question: 'كيف يعمل وضع عدم الاتصال؟', answer: 'تعترض service workers طلبات الشبكة وتقدم استجابات مخزنة مؤقتاً عند عدم الاتصال. ننفذ استراتيجيات تخزين مؤقت ذكية.' },
+            { question: 'هل ستضر PWA بـ SEO الخاص بي؟', answer: 'لا، يمكن لـ PWAs تحسين SEO فعلياً. لا تزال صفحات ويب يمكن لمحركات البحث الزحف إليها. أوقات التحميل السريعة عوامل تصنيف SEO.' },
+            { question: 'كيف تقارن إشعارات PWA بالأصلية؟', answer: 'تستخدم إشعارات دفع PWA نفس بنية إشعارات النظام مثل التطبيقات الأصلية وتبدو متطابقة للمستخدمين. على Android كاملة الميزات، على iOS (16.4+) تعمل عند إضافة PWA للشاشة الرئيسية.' }
+          ]
+        }
+      },
+      {
+        serviceId: pwaDev.id,
+        locale: 'ur',
+        name: 'پروگریسو ویب ایپس (PWA)',
+        shortDescription: 'ویب پر ایپ جیسے تجربات فراہم کریں - آف لائن سپورٹ، پش نوٹیفیکیشنز اور انسٹالیبلٹی - سب ایک کوڈ بیس سے۔',
+        fullDescription: 'پروگریسو ویب ایپس کے ساتھ ویب اور نیٹو ایپس کے درمیان فرق کو ختم کریں۔ PWAs دونوں دنیاؤں کا بہترین جوڑتی ہیں: ویب کی رسائی اور قابلیت کے ساتھ نیٹو ایپس کی مصروفیت اور قابل اعتماد۔ آف لائن کام کرتی ہیں، پش نوٹیفیکیشنز بھیجتی ہیں، ایپ سٹورز کے بغیر کسی بھی ڈیوائس پر انسٹال ہوتی ہیں۔',
+        features: [
+          'آف لائن فرسٹ آرکیٹیکچر',
+          'پش نوٹیفیکیشنز اور دوبارہ مصروفیت',
+          'ہوم اسکرین میں شامل / انسٹال پرامپٹس',
+          'بیک گراؤنڈ سنک اور ڈیٹا پرسسٹنس',
+          'سروس ورکر امپلیمنٹیشن',
+          'ایپ شیل آرکیٹیکچر پیٹرن',
+          'تمام ڈیوائسز پر ریسپانسو',
+          'HTTPS اور سیکیورٹی بیسٹ پریکٹسز'
+        ],
+        benefits: [
+          'ناقابل اعتماد نیٹ ورکس اور آف لائن پر قابل اعتماد طریقے سے کام کرتا ہے',
+          'ایپ اسٹور اپروول پروسیس کے بغیر انسٹال ہو سکتا ہے',
+          'ویب، موبائل اور ڈیسک ٹاپ کے لیے سنگل کوڈ بیس',
+          'نیٹو ایپس کے مقابلے کم ڈیولپمنٹ لاگت',
+          'صارف کی مداخلت کے بغیر خودکار اپڈیٹس',
+          'نیٹو ایپس کے برعکس سرچ انجنز کے ذریعے قابل دریافت'
+        ],
+        content: {
+          process: [
+            { step: 1, title: 'PWA فیزیبلٹی اور اسٹریٹجی', description: 'ہم آپ کے یوز کیس کا جائزہ لیتے ہیں تاکہ یہ طے کیا جا سکے کہ کون سی PWA فیچرز سب سے زیادہ قیمت فراہم کرتی ہیں۔ ہم ٹارگیٹڈ PWA اسٹریٹجی بنانے کے لیے صارف کے رویے کا تجزیہ کرتے ہیں۔' },
+            { step: 2, title: 'ایپ شیل اور کیشنگ آرکیٹیکچر', description: 'ہم فوری لوڈنگ کے لیے ایپ شیل آرکیٹیکچر ڈیزائن کرتے ہیں، کیشنگ اسٹریٹیجیز متعین کرتے ہیں اور آف لائن صارف تجربے کی منصوبہ بندی کرتے ہیں۔' },
+            { step: 3, title: 'سروس ورکر ڈیولپمنٹ', description: 'ہم ذہین کیشنگ، بیک گراؤنڈ سنک اور آف لائن فنکشنلٹی کے لیے Workbox استعمال کرتے ہوئے مضبوط سروس ورکرز نافذ کرتے ہیں۔' },
+            { step: 4, title: 'پش نوٹیفیکیشن انٹیگریشن', description: 'ہم سبسکرپشن مینجمنٹ، ٹارگیٹنگ اور اینالیٹکس کے ساتھ پش نوٹیفیکیشن انفراسٹرکچر سیٹ اپ کرتے ہیں۔' },
+            { step: 5, title: 'ٹیسٹنگ، Lighthouse آپٹیمائزیشن اور لانچ', description: 'ہم ڈیوائسز اور نیٹ ورک کنڈیشنز پر ٹیسٹ کرتے ہیں، 90+ Lighthouse PWA اسکورز حاصل کرتے ہیں اور مناسب کیشنگ ہیڈرز کے ساتھ ڈیپلائی کرتے ہیں۔' }
+          ],
+          faq: [
+            { question: 'PWA کیا ہے؟', answer: 'پروگریسو ویب ایپ جدید ویب ٹیکنالوجیز سے بنی ایک ویب سائٹ ہے جو ایپ جیسے تجربات فراہم کرتی ہے۔ PWAs قابل اعتماد (آف لائن کام کرتی ہیں)، تیز اور دلکش ہیں (انسٹال ہو سکتی ہیں اور پش نوٹیفیکیشنز وصول کر سکتی ہیں)۔' },
+            { question: 'PWA یا نیٹو ایپ؟', answer: 'وسیع رسائی، کم لاگت اور تیز مارکیٹ میں آنے کے لیے PWA چنیں۔ جب گہری ڈیوائس انٹیگریشن یا ایپ اسٹور کی موجودگی اہم ہو تو نیٹو چنیں۔' },
+            { question: 'کیا PWAs iOS پر کام کرتی ہیں؟', answer: 'جی ہاں، PWAs iOS Safari پر کچھ حدود کے ساتھ کام کرتی ہیں۔ iOS 16.4 سے پش نوٹیفیکیشنز اب سپورٹڈ ہیں۔ ہم ان حدود کے گرد ڈیزائن کرتے ہیں۔' },
+            { question: 'آف لائن موڈ کیسے کام کرتا ہے؟', answer: 'سروس ورکرز نیٹ ورک ریکویسٹس کو روکتے ہیں اور آف لائن ہونے پر کیشڈ جوابات فراہم کرتے ہیں۔ ہم ذہین کیشنگ اسٹریٹیجیز نافذ کرتے ہیں۔' },
+            { question: 'کیا PWA میرے SEO کو نقصان پہنچائے گی؟', answer: 'نہیں، PWAs دراصل SEO کو بہتر بنا سکتی ہیں۔ یہ اب بھی ویب پیجز ہیں جنہیں سرچ انجنز کرال کر سکتے ہیں۔ تیز لوڈنگ ٹائمز SEO رینکنگ فیکٹرز ہیں۔' },
+            { question: 'PWA پش نوٹیفیکیشنز نیٹو سے کیسے موازنہ کرتی ہیں؟', answer: 'PWA پش نوٹیفیکیشنز نیٹو ایپس کی طرح وہی سسٹم نوٹیفیکیشن انفراسٹرکچر استعمال کرتی ہیں اور صارفین کو یکساں نظر آتی ہیں۔ Android پر مکمل فیچرڈ، iOS (16.4+) پر PWA ہوم اسکرین میں شامل ہونے پر کام کرتی ہیں۔' }
+          ]
+        }
+      }
+    ];
+
+    for (const translation of pwaTranslations) {
+      await prisma.serviceTranslation.upsert({
+        where: {
+          serviceId_locale: {
+            serviceId: translation.serviceId,
+            locale: translation.locale,
+          },
+        },
+        update: {
+          name: translation.name,
+          shortDescription: translation.shortDescription,
+          fullDescription: translation.fullDescription,
+          features: translation.features,
+          benefits: translation.benefits,
+          content: translation.content as any,
+        },
+        create: translation as any,
+      });
+    }
+    console.log('Seeded comprehensive translations for progressive-web-apps');
   }
 
   // ==================== PRICING PACKAGES ====================
