@@ -2,6 +2,7 @@
 'use client';
 import Image from "next/image";
 import Link from 'next/link';
+import LocalizedLink from '@/components/LocalizedLink';
 import { trackEmailClick, trackWhatsAppClick, trackPhoneCall } from '@/lib/analytics';
 import { motion } from 'framer-motion';
 import { ChevronUpIcon } from '@heroicons/react/24/solid';
@@ -206,13 +207,13 @@ export default function Footer() {
             <ul className="space-y-3">
               {quickLinks.map(({ label, href }) => (
                 <li key={href}>
-                  <Link
+                  <LocalizedLink
                     href={href}
                     className="text-body text-gray-400 hover:text-white transition-colors flex items-center group"
                   >
                     <span className={`w-0 group-hover:w-2 h-px bg-white transition-all duration-250 ${dir === 'rtl' ? 'ml-0 group-hover:ml-3' : 'mr-0 group-hover:mr-3'}`} />
                     {label}
-                  </Link>
+                  </LocalizedLink>
                 </li>
               ))}
             </ul>
@@ -231,13 +232,13 @@ export default function Footer() {
             <ul className="space-y-3">
               {services.map(({ label, href }) => (
                 <li key={href}>
-                  <Link
+                  <LocalizedLink
                     href={href}
                     className="text-body text-gray-400 hover:text-white transition-colors flex items-center group"
                   >
                     <span className={`w-0 group-hover:w-2 h-px bg-white transition-all duration-250 ${dir === 'rtl' ? 'ml-0 group-hover:ml-3' : 'mr-0 group-hover:mr-3'}`} />
                     {label}
-                  </Link>
+                  </LocalizedLink>
                 </li>
               ))}
             </ul>

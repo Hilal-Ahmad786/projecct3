@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
+import LocalizedLink from '@/components/LocalizedLink';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircleIcon } from '@heroicons/react/24/solid';
 import { PlusIcon, MinusIcon, ChevronRightIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
@@ -345,15 +345,15 @@ function HeroSection({
           >
             {/* Breadcrumb */}
             <nav className="flex items-center gap-2 text-sm text-gray-400">
-              <Link href="/services" className="hover:text-gray-900 transition-colors">
+              <LocalizedLink href="/services" className="hover:text-gray-900 transition-colors">
                 {t('services.detail.breadcrumb.services')}
-              </Link>
+              </LocalizedLink>
               {parentService ? (
                 <>
                   <ChevronRightIcon className="w-3.5 h-3.5" />
-                  <Link href={`/services/${parentService.slug}`} className="hover:text-gray-900 transition-colors">
+                  <LocalizedLink href={`/services/${parentService.slug}`} className="hover:text-gray-900 transition-colors">
                     {parentService.name}
-                  </Link>
+                  </LocalizedLink>
                   <ChevronRightIcon className="w-3.5 h-3.5" />
                   <span className="text-gray-900">{service.name}</span>
                 </>

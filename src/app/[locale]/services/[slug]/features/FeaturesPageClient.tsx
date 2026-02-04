@@ -1,7 +1,7 @@
 'use client';
 
 import { motion, useScroll, useTransform } from 'framer-motion';
-import Link from 'next/link';
+import LocalizedLink from '@/components/LocalizedLink';
 import { useRef } from 'react';
 import { CheckIcon, ArrowRightIcon, SparklesIcon } from '@heroicons/react/24/outline';
 import {
@@ -97,9 +97,9 @@ export default function FeaturesPageClient({
             transition={{ duration: 0.6 }}
             className="flex items-center gap-2 text-sm text-gray-400"
           >
-            <Link href={`/${locale}/services`} className="hover:text-gray-900 transition-colors">{t('services.detail.breadcrumb.services')}</Link>
+            <LocalizedLink href="/services" className="hover:text-gray-900 transition-colors">{t('services.detail.breadcrumb.services')}</LocalizedLink>
             <span className="text-gray-300">/</span>
-            <Link href={`/${locale}/services/${serviceSlug}`} className="hover:text-gray-900 transition-colors">{serviceName}</Link>
+            <LocalizedLink href={`/services/${serviceSlug}`} className="hover:text-gray-900 transition-colors">{serviceName}</LocalizedLink>
             <span className="text-gray-300">/</span>
             <span className="text-gray-900">{t('services.detail.breadcrumb.features')}</span>
           </motion.nav>
@@ -371,20 +371,20 @@ export default function FeaturesPageClient({
               {t('services.detail.features.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href={`/${locale}/contact`}
+              <LocalizedLink
+                href="/contact"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 text-gray-900 font-medium transition-all hover:scale-105"
                 style={{ backgroundColor: config.primaryColor }}
               >
                 {t('services.detail.features.cta.startProject')}
                 <ArrowRightIcon className="w-4 h-4" />
-              </Link>
-              <Link
-                href={`/${locale}/services/${serviceSlug}/process`}
+              </LocalizedLink>
+              <LocalizedLink
+                href={`/services/${serviceSlug}/process`}
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-gray-700 text-white font-medium hover:bg-white/5 transition-colors"
               >
                 {t('services.detail.features.cta.viewProcess')}
-              </Link>
+              </LocalizedLink>
             </div>
           </motion.div>
         </div>

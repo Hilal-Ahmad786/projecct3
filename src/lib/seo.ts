@@ -4,6 +4,7 @@
 import { Metadata } from 'next';
 import { Locale, locales, defaultLocale, localeNames } from './i18n';
 import { getTranslations, createTranslator } from './server-i18n';
+import { localizeFullPath } from './routes';
 
 const baseUrl = 'https://paksoft.com.tr';
 
@@ -23,21 +24,26 @@ interface PageSEOConfig {
   imageUrl?: string;
 }
 
-// Generate hreflang alternate links
+// Generate hreflang alternate links with localized paths
+// The `path` parameter should be the English path (e.g., '/services/web-development/features')
+// This function will translate the path segments for each locale
 export function generateAlternateLinks(path: string): Record<string, string> {
   const languages: Record<string, string> = {};
 
   locales.forEach(locale => {
-    languages[locale] = `${baseUrl}/${locale}${path}`;
+    const localizedPath = localizeFullPath(path, locale);
+    languages[locale] = `${baseUrl}/${locale}${localizedPath}`;
   });
 
-  // Add x-default pointing to default locale
-  languages['x-default'] = `${baseUrl}/${defaultLocale}${path}`;
+  // Add x-default pointing to default locale (English) with English path
+  const defaultLocalizedPath = localizeFullPath(path, defaultLocale);
+  languages['x-default'] = `${baseUrl}/${defaultLocale}${defaultLocalizedPath}`;
 
   return languages;
 }
 
 // Generate full page metadata with hreflang, canonical, OG, etc.
+// The `config.path` should be the English path - it will be localized for the canonical URL
 export function generatePageMetadata(
   locale: Locale,
   config: PageSEOConfig
@@ -47,7 +53,9 @@ export function generatePageMetadata(
 
   const title = t(config.titleKey);
   const description = t(config.descriptionKey);
-  const canonicalUrl = `${baseUrl}/${locale}${config.path}`;
+  // Use localized path for the canonical URL
+  const localizedPath = localizeFullPath(config.path, locale);
+  const canonicalUrl = `${baseUrl}/${locale}${localizedPath}`;
   const imageUrl = config.imageUrl || '/images/og-image.jpg';
 
   return {

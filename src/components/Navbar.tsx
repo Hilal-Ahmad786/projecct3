@@ -80,7 +80,8 @@ import {
 } from '@heroicons/react/24/outline';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 import { locales, localeNames, type Locale } from '@/lib/i18n';
-import { getLocalizedPath } from '@/lib/routes';
+import { getLocalizedPath, localizeFullPath, delocalizePath } from '@/lib/routes';
+import LocalizedLink from '@/components/LocalizedLink';
 import Image from "next/image";
 import { trackQuoteRequest, trackLanguageChange } from '@/lib/analytics';
 
@@ -907,12 +908,17 @@ export default function Navbar() {
   const tCommon = useSectionTranslations('common');
   const tServices = useSectionTranslations('megaMenu');
 
-  // Detect if we are on a service detail page (microsite)
-  const isServicePage = pathname.includes('/services/') && pathname.split('/').length > 3;
+  // Convert localized pathname to English for detection
+  // e.g., /tr/hizmetler/web-development → /services/web-development
+  const pathWithoutLocale = pathname.replace(`/${locale}`, '') || '/';
+  const englishPath = delocalizePath(pathWithoutLocale, locale);
 
-  // Extract current service slug from pathname
+  // Detect if we are on a service detail page (microsite)
+  const isServicePage = englishPath.includes('/services/') && englishPath.split('/').length > 2;
+
+  // Extract current service slug from pathname (using English path)
   const getServiceSlug = () => {
-    const parts = pathname.split('/');
+    const parts = englishPath.split('/');
     const servicesIndex = parts.indexOf('services');
     if (servicesIndex !== -1 && parts[servicesIndex + 1]) {
       return parts[servicesIndex + 1];
@@ -939,22 +945,24 @@ export default function Navbar() {
   }, []);
 
   // Standard Links (without services - it's handled separately)
+  // Uses localizeFullPath for URL path localization
   const mainLinks = [
-    { label: t('home'), href: '/', localizedHref: getLocalizedPath('/', locale) },
-    { label: t('projects'), href: '/projects', localizedHref: getLocalizedPath('/projects', locale) },
-    { label: t('blog'), href: '/blog', localizedHref: getLocalizedPath('/blog', locale) },
-    { label: t('about'), href: '/about', localizedHref: getLocalizedPath('/about', locale) },
-    { label: t('contact'), href: '/contact', localizedHref: getLocalizedPath('/contact', locale) },
+    { label: t('home'), href: '/', localizedHref: `/${locale}` },
+    { label: t('projects'), href: '/projects', localizedHref: `/${locale}${localizeFullPath('/projects', locale)}` },
+    { label: t('blog'), href: '/blog', localizedHref: `/${locale}${localizeFullPath('/blog', locale)}` },
+    { label: t('about'), href: '/about', localizedHref: `/${locale}${localizeFullPath('/about', locale)}` },
+    { label: t('contact'), href: '/contact', localizedHref: `/${locale}${localizeFullPath('/contact', locale)}` },
   ];
 
   // Service Microsite Links - separate pages for each section
+  // Uses localizeFullPath to translate path segments for each locale
   const serviceLinks = [
-    { label: t('serviceNav.overview'), href: `/services/${currentServiceSlug}`, localizedHref: `/services/${currentServiceSlug}` },
-    { label: t('serviceNav.features'), href: `/services/${currentServiceSlug}/features`, localizedHref: `/services/${currentServiceSlug}/features` },
-    { label: t('serviceNav.process'), href: `/services/${currentServiceSlug}/process`, localizedHref: `/services/${currentServiceSlug}/process` },
-    { label: t('serviceNav.techStack'), href: `/services/${currentServiceSlug}/tech-stack`, localizedHref: `/services/${currentServiceSlug}/tech-stack` },
-    { label: t('serviceNav.portfolio'), href: `/services/${currentServiceSlug}/portfolio`, localizedHref: `/services/${currentServiceSlug}/portfolio` },
-    { label: t('serviceNav.faq'), href: `/services/${currentServiceSlug}/faq`, localizedHref: `/services/${currentServiceSlug}/faq` },
+    { label: t('serviceNav.overview'), href: `/services/${currentServiceSlug}`, localizedHref: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}`, locale)}` },
+    { label: t('serviceNav.features'), href: `/services/${currentServiceSlug}/features`, localizedHref: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}/features`, locale)}` },
+    { label: t('serviceNav.process'), href: `/services/${currentServiceSlug}/process`, localizedHref: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}/process`, locale)}` },
+    { label: t('serviceNav.techStack'), href: `/services/${currentServiceSlug}/tech-stack`, localizedHref: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}/tech-stack`, locale)}` },
+    { label: t('serviceNav.portfolio'), href: `/services/${currentServiceSlug}/portfolio`, localizedHref: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}/portfolio`, locale)}` },
+    { label: t('serviceNav.faq'), href: `/services/${currentServiceSlug}/faq`, localizedHref: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}/faq`, locale)}` },
   ];
 
   const currentLinks = isServicePage ? serviceLinks : mainLinks;
@@ -973,8 +981,10 @@ export default function Navbar() {
   };
 
   // Get localized service path based on locale
+  // Uses localizeFullPath to translate path segments (e.g., /services → /hizmetler for Turkish)
   const getServicePath = (slug: string) => {
-    return `/${locale}/services/${slug}`;
+    const englishPath = `/services/${slug}`;
+    return `/${locale}${localizeFullPath(englishPath, locale)}`;
   };
 
   return (
@@ -1145,7 +1155,7 @@ export default function Navbar() {
                   return (
                     <li key={href} className="relative">
                       <Link
-                        href={`/${locale}${localizedHref}`}
+                        href={localizedHref}
                         className={`
                           text-sm font-medium tracking-wide transition-colors duration-250
                           ${isActive ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'}
@@ -1164,7 +1174,7 @@ export default function Navbar() {
                   return (
                     <li key={href} className="relative">
                       <Link
-                        href={`/${locale}${localizedHref}`}
+                        href={localizedHref}
                         onClick={handleLinkClick}
                         className={`
                           text-sm font-medium tracking-wide transition-colors duration-250
@@ -1396,7 +1406,7 @@ export default function Navbar() {
                     return (
                       <li key={href}>
                         <Link
-                          href={`/${locale}${localizedHref}`}
+                          href={localizedHref}
                           className={`
                             block px-4 py-3 text-sm font-medium transition-colors border-l-2
                             ${isActive

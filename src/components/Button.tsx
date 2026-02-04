@@ -1,5 +1,5 @@
 // src/components/Button.tsx
-import Link from 'next/link';
+import LocalizedLink from '@/components/LocalizedLink';
 import React from 'react';
 
 type ButtonProps = {
@@ -126,14 +126,14 @@ export default function Button({
 
   if (href) {
     return (
-      <Link 
-        href={href} 
+      <LocalizedLink
+        href={href}
         className={`${classes} group`}
         aria-disabled={disabled || loading}
         tabIndex={disabled || loading ? -1 : undefined}
       >
         {content}
-      </Link>
+      </LocalizedLink>
     );
   }
 

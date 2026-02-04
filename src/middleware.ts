@@ -161,6 +161,8 @@ export function middleware(request: NextRequest) {
 
 
   // Locale handling (existing logic)
+  // Note: Path rewriting for localized URLs (e.g., /tr/hizmetler → /tr/services)
+  // is handled by rewrites in next.config.ts
   const pathnameHasLocale = locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
   );

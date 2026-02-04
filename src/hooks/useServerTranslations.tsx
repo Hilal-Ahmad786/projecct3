@@ -4,6 +4,7 @@
 import { createContext, useContext, ReactNode, useMemo, useCallback } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { Locale, defaultLocale, isRTL, locales } from '@/lib/i18n';
+import { delocalizePath, localizeFullPath } from '@/lib/routes';
 
 interface TranslationsContextType {
   locale: Locale;
@@ -50,10 +51,22 @@ export function TranslationsProvider({ children, locale, translations }: Transla
   }, [translations]);
 
   // setLocale navigates to the new locale URL - translations are loaded server-side
+  // When switching locales, convert path segments from current locale to new locale
+  // e.g., /de/dienstleistungen/web-dev/portfolio → /tr/hizmetler/web-dev/portfoy
   const setLocale = useCallback(async (newLocale: Locale): Promise<void> => {
     if (newLocale === locale) return;
+
+    // Strip the locale prefix from current path
     const pathWithoutLocale = pathname?.replace(/^\/(en|tr|de|ur|ar)/, '') || '/';
-    const newPath = `/${newLocale}${pathWithoutLocale}`;
+
+    // Convert current locale's path segments to English first
+    const englishPath = delocalizePath(pathWithoutLocale, locale);
+
+    // Then convert English to new locale's path segments
+    const localizedPath = localizeFullPath(englishPath, newLocale);
+
+    // Build new path with new locale prefix
+    const newPath = `/${newLocale}${localizedPath}`;
     router.push(newPath);
   }, [locale, pathname, router]);
 
