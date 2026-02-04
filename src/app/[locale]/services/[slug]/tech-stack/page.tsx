@@ -27,7 +27,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export const dynamic = 'force-dynamic';
+// Enable ISR - revalidate every hour for better performance
+export const revalidate = 3600;
 
 export default async function ServiceTechStackPage({ params }: PageProps) {
   const { slug, locale } = await params;

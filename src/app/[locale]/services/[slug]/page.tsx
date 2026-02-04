@@ -5,6 +5,10 @@ import { generateAlternateLinks } from '@/lib/seo';
 import { ServiceJsonLd, BreadcrumbJsonLd, FAQJsonLd } from '@/components/seo/JsonLd';
 import ServiceDetailClient from './ServiceDetailClient';
 import type { ServiceDetailData } from './ServiceDetailClient';
+import { getTranslations } from '@/lib/server-i18n';
+
+// Enable ISR - revalidate every hour for better performance
+export const revalidate = 3600;
 
 const baseUrl = 'https://paksoft.com.tr';
 
@@ -73,11 +77,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export const dynamic = 'force-dynamic';
-
 export default async function ServicePage({ params }: PageProps) {
   const { slug, locale } = await params;
-  const service = await getService(slug, locale);
+  const [service, translations] = await Promise.all([
+    getService(slug, locale),
+    getTranslations(locale),
+  ]);
 
   if (!service) {
     notFound();
@@ -121,8 +126,8 @@ export default async function ServicePage({ params }: PageProps) {
   }
 
   const breadcrumbItems = [
-    { name: 'Home', url: `${baseUrl}/${locale}` },
-    { name: 'Services', url: `${baseUrl}/${locale}/services` },
+    { name: translations.navbar?.home || 'Home', url: `${baseUrl}/${locale}` },
+    { name: translations.services?.detail?.breadcrumb?.services || 'Services', url: `${baseUrl}/${locale}/services` },
     ...(parentService ? [{ name: parentService.name, url: `${baseUrl}/${locale}/services/${parentService.slug}` }] : []),
     { name: service.name, url: `${baseUrl}/${locale}/services/${slug}` },
   ];

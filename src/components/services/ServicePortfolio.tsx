@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import { useTranslations } from '@/hooks/useTranslations'
 
 interface PortfolioItem {
     title: string;
@@ -10,14 +11,16 @@ interface PortfolioItem {
 }
 
 export default function ServicePortfolio({ portfolio }: { portfolio: PortfolioItem[] }) {
+    const { t } = useTranslations();
+
     if (!portfolio || portfolio.length === 0) return null
 
     return (
         <section className="py-20 bg-white">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-4">Recent Projects</h2>
-                    <p className="text-gray-600">See what we've built for our clients.</p>
+                    <h2 className="text-3xl font-bold text-gray-900 mb-4">{t('services.detail.portfolio.title')}</h2>
+                    <p className="text-gray-600">{t('services.detail.portfolio.description')}</p>
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-8">
@@ -33,9 +36,9 @@ export default function ServicePortfolio({ portfolio }: { portfolio: PortfolioIt
                             <div className="relative aspect-[4/3] overflow-hidden rounded-lg mb-4 bg-gray-100">
                                 {/* Placeholder for actual images - using a colored div if image fails */}
                                 <div className="absolute inset-0 bg-gray-200 flex items-center justify-center text-gray-400">
-                                    Image Placeholder
+                                    {t('services.detail.portfolio.imagePlaceholder')}
                                 </div>
-                                {/* 
+                                {/*
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -45,7 +48,7 @@ export default function ServicePortfolio({ portfolio }: { portfolio: PortfolioIt
                 */}
                                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                     <span className="text-white font-medium px-6 py-2 border border-white rounded-sm">
-                                        View Case Study
+                                        {t('services.detail.portfolio.viewCaseStudy')}
                                     </span>
                                 </div>
                             </div>
