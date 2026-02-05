@@ -242,16 +242,19 @@ export default function ServiceDetailClient({ service }: { service: ServiceDetai
       {/* ── 1. Hero (two-column, animated) ──────────────────────────── */}
       <HeroSection service={service} colors={colors} accent={accent} process={process} animation={animation} />
 
-      {/* ── 2. Tech Strip (scrolling) ───────────────────────────────── */}
+      {/* ── 2. Portfolio (Recent Projects) ───────────────────────────── */}
+      {portfolio.length > 0 && <ServicePortfolio portfolio={portfolio} />}
+
+      {/* ── 3. Tech Strip (scrolling) ───────────────────────────────── */}
       {technologies.length > 0 && <TechStrip technologies={technologies} />}
 
-      {/* ── 3. Features Grid (animated cards) ───────────────────────── */}
+      {/* ── 4. Features Grid (animated cards) ───────────────────────── */}
       {features.length > 0 && <FeaturesSection features={features} featureStyle={animation?.featureStyle} />}
 
-      {/* ── 4. Process (numbered cards) ─────────────────────────────── */}
+      {/* ── 5. Process (numbered cards) ─────────────────────────────── */}
       {process.length > 0 && <ProcessSection steps={process} processLayout={animation?.processLayout} />}
 
-      {/* ── 5. Benefits ─────────────────────────────────────────────── */}
+      {/* ── 6. Benefits ─────────────────────────────────────────────── */}
       {benefits.length > 0 && (
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
@@ -269,9 +272,6 @@ export default function ServiceDetailClient({ service }: { service: ServiceDetai
           </div>
         </section>
       )}
-
-      {/* ── 6. Portfolio ────────────────────────────────────────────── */}
-      {portfolio.length > 0 && <ServicePortfolio portfolio={portfolio} />}
 
       {/* ── 7. FAQ (Plus/Minus accordion) ───────────────────────────── */}
       {faq.length > 0 && <FAQSection faq={faq} />}
