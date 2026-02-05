@@ -128,17 +128,17 @@ export default function ServicePageHero({
         </div>
       </div>
 
-      {/* Crescent Decorations - RTL Aware */}
-      <div className={`absolute top-32 w-32 h-32 ${isRTL ? 'left-20' : 'right-20'}`}>
+      {/* Crescent Decorations - RTL Aware - Hidden on mobile */}
+      <div className={`hidden md:block absolute top-32 w-20 h-20 md:w-32 md:h-32 ${isRTL ? 'left-10 md:left-20' : 'right-10 md:right-20'}`}>
         <div className={`crescent ${isRTL ? 'crescent-left' : 'crescent-right'} crescent-subtle text-gray-900`} />
       </div>
-      <div className={`absolute bottom-32 w-24 h-24 ${isRTL ? 'right-16' : 'left-16'}`}>
+      <div className={`hidden md:block absolute bottom-32 w-16 h-16 md:w-24 md:h-24 ${isRTL ? 'right-8 md:right-16' : 'left-8 md:left-16'}`}>
         <div className={`crescent ${isRTL ? 'crescent-right' : 'crescent-left'} crescent-subtle text-gray-600`} />
       </div>
 
       {/* Main Content */}
       <div className="container mx-auto relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
           {/* Left Column - Content (Right for RTL) */}
           <motion.div
             initial={{ opacity: 0, x: isRTL ? 32 : -32 }}

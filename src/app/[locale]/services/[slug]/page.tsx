@@ -6,6 +6,7 @@ import { ServiceJsonLd, BreadcrumbJsonLd, FAQJsonLd } from '@/components/seo/Jso
 import ServiceDetailClient from './ServiceDetailClient';
 import type { ServiceDetailData } from './ServiceDetailClient';
 import { getTranslations } from '@/lib/server-i18n';
+import { getServicePageContent, type ServicePageContent } from '@/lib/service-content';
 
 // Enable ISR - revalidate every hour for better performance
 export const revalidate = 3600;
@@ -125,30 +126,82 @@ export default async function ServicePage({ params }: PageProps) {
     parentService = await getParentServiceData(service.parentSlug) as any;
   }
 
+  // Get JSON content for this service (fallback if no database translation)
+  const jsonContent = getServicePageContent(translations, slug);
+
+  // PRIORITY: Database content (with translations from admin) > JSON content > English fallback
+  // The 'service' object already has merged translations from mergeServiceTranslation()
+
+  // Use database content first, then JSON as fallback
+  const serviceName = service.name || jsonContent?.hero?.title || slug;
+  const serviceDescription = service.fullDescription || service.shortDescription || service.description || jsonContent?.hero?.description || '';
+
+  // Features: database first, then JSON fallback
+  const features = (service.features && service.features.length > 0)
+    ? service.features
+    : jsonContent?.services?.items?.map(item => item.title) || [];
+
+  // Benefits: database first, then JSON fallback
+  const benefits = (service.benefits && service.benefits.length > 0)
+    ? service.benefits
+    : jsonContent?.whyUs?.benefits?.map(b => b.title) || [];
+
+  // Process steps: database content first, then JSON fallback
+  const process = (content.process && content.process.length > 0)
+    ? content.process
+    : jsonContent?.process?.steps || [];
+
+  // FAQ: database content first, then JSON fallback
+  const faqItems = (content.faq && content.faq.length > 0)
+    ? content.faq
+    : jsonContent?.faq?.items || [];
+
+  // Technologies: database content first, then JSON fallback
+  const technologies = (content.technologies && content.technologies.length > 0)
+    ? content.technologies
+    : jsonContent?.technologies?.items || [];
+
+  // Portfolio: database content first, then JSON fallback
+  const portfolio = (content.portfolio && content.portfolio.length > 0)
+    ? content.portfolio
+    : jsonContent?.portfolio?.items?.map(item => ({
+        title: item.title,
+        category: item.industry || '',
+        image: '',
+      })) || [];
+
   const breadcrumbItems = [
     { name: translations.navbar?.home || 'Home', url: `${baseUrl}/${locale}` },
     { name: translations.services?.detail?.breadcrumb?.services || 'Services', url: `${baseUrl}/${locale}/services` },
     ...(parentService ? [{ name: parentService.name, url: `${baseUrl}/${locale}/services/${parentService.slug}` }] : []),
-    { name: service.name, url: `${baseUrl}/${locale}/services/${slug}` },
+    { name: serviceName, url: `${baseUrl}/${locale}/services/${slug}` },
   ];
 
   // Build serializable data for the client component
   const serviceData: ServiceDetailData = {
     slug,
-    name: service.name,
-    description: service.description,
-    fullDescription: service.fullDescription,
-    shortDescription: service.shortDescription,
+    name: serviceName,
+    description: serviceDescription,
+    fullDescription: serviceDescription,
+    shortDescription: serviceDescription,
     icon: service.icon,
     color: service.color,
-    features: service.features || [],
-    benefits: service.benefits || [],
-    content,
+    features,
+    benefits,
+    content: {
+      ...content,
+      process,
+      faq: faqItems,
+      technologies,
+      portfolio,
+    },
     pricingPackages: service.pricingPackages as ServiceDetailData['pricingPackages'],
     isParent: service.isParent || false,
     parentSlug: service.parentSlug || undefined,
     parentService: parentService || undefined,
     subServices: subServices.length > 0 ? subServices : undefined,
+    // Pass JSON content for components that need additional data
+    _jsonContent: jsonContent as any,
   };
 
   return (

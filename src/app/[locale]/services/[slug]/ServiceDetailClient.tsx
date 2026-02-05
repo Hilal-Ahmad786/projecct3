@@ -79,6 +79,17 @@ export interface ServiceDetailData {
   parentSlug?: string;
   parentService?: ParentServiceInfo;
   subServices?: SubServiceItem[];
+  // JSON content from locale files (if available)
+  _jsonContent?: {
+    hero?: { eyebrow?: string; title?: string; titleAccent?: string; description?: string; cta?: string; secondaryCta?: string };
+    services?: { eyebrow?: string; title?: string; titleAccent?: string; subtitle?: string; items?: Array<{ title: string; description: string; features?: string[] }> };
+    process?: { eyebrow?: string; title?: string; titleAccent?: string; subtitle?: string; steps?: Array<{ step: number; title: string; description: string }> };
+    whyUs?: { eyebrow?: string; title?: string; titleAccent?: string; subtitle?: string; benefits?: Array<{ title: string; description: string }> };
+    technologies?: { eyebrow?: string; title?: string; titleAccent?: string; items?: Array<{ name: string; icon?: string }> };
+    faq?: { eyebrow?: string; title?: string; titleAccent?: string; items?: Array<{ question: string; answer: string }> };
+    portfolio?: { eyebrow?: string; title?: string; titleAccent?: string; items?: any[] };
+    cta?: { title?: string; description?: string; primaryButton?: string; secondaryButton?: string };
+  };
 }
 
 // ── Color System ─────────────────────────────────────────────────────
@@ -247,7 +258,7 @@ export default function ServiceDetailClient({ service }: { service: ServiceDetai
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">{t('services.detail.benefits.title')}</h2>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto">
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start gap-3 p-4">
                   <CheckCircleIcon className="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" />
@@ -375,7 +386,7 @@ function HeroSection({
 
             {/* Title */}
             <div className="space-y-2">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 leading-none">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 leading-none">
                 {service.name.split(' ').slice(0, -1).join(' ')}
                 {service.name.split(' ').length > 1 && <br />}
                 <span className={`font-semibold ${colors.titleAccent}`}>
@@ -387,7 +398,7 @@ function HeroSection({
             </div>
 
             {/* Description */}
-            <p className="text-lg text-gray-600 max-w-lg leading-relaxed">
+            <p className="text-base sm:text-lg text-gray-600 max-w-lg leading-relaxed">
               {service.fullDescription || service.description}
             </p>
 
@@ -422,16 +433,16 @@ function HeroSection({
           >
             {hasAnimation ? (
               /* Parametric Hero Visual */
-              <div className="relative aspect-square max-w-lg mx-auto flex items-center justify-center">
+              <div className="relative aspect-square max-w-xs sm:max-w-sm md:max-w-lg mx-auto flex items-center justify-center">
                 <motion.div
                   animate={{ scale: [1, 1.1, 1] }}
                   transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
-                  className={`absolute top-0 right-0 w-64 h-64 ${colors.blob1} rounded-full mix-blend-multiply filter blur-3xl opacity-40`}
+                  className={`absolute top-0 right-0 w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 ${colors.blob1} rounded-full mix-blend-multiply filter blur-3xl opacity-40`}
                 />
                 <motion.div
                   animate={{ scale: [1, 1.15, 1] }}
                   transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-                  className={`absolute bottom-0 left-0 w-64 h-64 ${colors.blob2} rounded-full mix-blend-multiply filter blur-3xl opacity-40`}
+                  className={`absolute bottom-0 left-0 w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 ${colors.blob2} rounded-full mix-blend-multiply filter blur-3xl opacity-40`}
                 />
                 <div className="relative z-10">
                   <HeroVisual type={animation.heroVisual} motionType={animation.motion} accentClass={colors.dot} />
@@ -439,33 +450,33 @@ function HeroSection({
               </div>
             ) : (
               /* Default Visual (emoji-based) */
-              <div className="relative aspect-square max-w-lg mx-auto">
+              <div className="relative aspect-square max-w-xs sm:max-w-sm md:max-w-lg mx-auto">
                 <motion.div
                   animate={{ scale: [1, 1.1, 1], rotate: [0, 5, 0] }}
                   transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
-                  className={`absolute top-0 right-0 w-72 h-72 ${colors.blob1} rounded-full mix-blend-multiply filter blur-3xl opacity-60`}
+                  className={`absolute top-0 right-0 w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 ${colors.blob1} rounded-full mix-blend-multiply filter blur-3xl opacity-60`}
                 />
                 <motion.div
                   animate={{ scale: [1, 1.15, 1], rotate: [0, -5, 0] }}
                   transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-                  className={`absolute bottom-0 left-0 w-72 h-72 ${colors.blob2} rounded-full mix-blend-multiply filter blur-3xl opacity-60`}
+                  className={`absolute bottom-0 left-0 w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 ${colors.blob2} rounded-full mix-blend-multiply filter blur-3xl opacity-60`}
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <motion.div
                     animate={{ rotate: 360 }}
                     transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
-                    className={`absolute w-80 h-80 rounded-full ring-1 ${colors.ring} opacity-40`}
+                    className={`absolute w-52 h-52 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full ring-1 ${colors.ring} opacity-40`}
                   />
                   <motion.div
                     animate={{ rotate: -360 }}
                     transition={{ duration: 45, repeat: Infinity, ease: 'linear' }}
-                    className={`absolute w-64 h-64 rounded-full ring-1 ${colors.ring} opacity-30`}
+                    className={`absolute w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 rounded-full ring-1 ${colors.ring} opacity-30`}
                   />
-                  <div className={`relative w-48 h-48 bg-gradient-to-br ${colors.gradientFrom} ${colors.gradientTo} rounded-2xl shadow-lg flex items-center justify-center`}>
+                  <div className={`relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 bg-gradient-to-br ${colors.gradientFrom} ${colors.gradientTo} rounded-2xl shadow-lg flex items-center justify-center`}>
                     <motion.div
                       animate={{ y: [0, -8, 0] }}
                       transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-                      className="text-6xl"
+                      className="text-4xl sm:text-5xl md:text-6xl"
                     >
                       {emojiIcon}
                     </motion.div>
@@ -556,15 +567,15 @@ function FeaturesSection({ features, featureStyle }: { features: string[]; featu
     <section className="py-24 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-light text-gray-900 mb-4 sm:mb-6">
             {t('services.detail.features.title')}
           </h2>
-          <p className="text-xl text-gray-600 font-light">
+          <p className="text-lg sm:text-xl text-gray-600 font-light">
             {t('services.detail.features.description')}
           </p>
         </div>
 
-        <div className={`grid gap-8 ${style === 'icon-left' ? 'md:grid-cols-2' : 'md:grid-cols-2 lg:grid-cols-3'}`}>
+        <div className={`grid gap-4 sm:gap-6 md:gap-8 ${style === 'icon-left' ? 'sm:grid-cols-2' : 'sm:grid-cols-2 lg:grid-cols-3'}`}>
           {features.map((feature, index) => (
             <motion.div
               key={index}
@@ -573,10 +584,10 @@ function FeaturesSection({ features, featureStyle }: { features: string[]; featu
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className={`bg-white rounded-2xl transition-all duration-300 group hover:shadow-lg ${
-                style === 'bordered' ? 'p-8 border-2 border-gray-200 hover:border-gray-400' :
-                style === 'gradient-border' ? 'p-8 border border-gray-100 hover:border-transparent hover:ring-2 hover:ring-emerald-200' :
-                style === 'minimal' ? 'p-6 border-0 shadow-none hover:bg-gray-50' :
-                'p-8 border border-gray-100 hover:border-gray-300'
+                style === 'bordered' ? 'p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-gray-400' :
+                style === 'gradient-border' ? 'p-4 sm:p-6 md:p-8 border border-gray-100 hover:border-transparent hover:ring-2 hover:ring-emerald-200' :
+                style === 'minimal' ? 'p-4 sm:p-6 border-0 shadow-none hover:bg-gray-50' :
+                'p-4 sm:p-6 md:p-8 border border-gray-100 hover:border-gray-300'
               }`}
             >
               {style === 'icon-left' ? (
@@ -628,11 +639,11 @@ function ProcessSection({ steps, processLayout }: { steps: ProcessStep[]; proces
   const layout = processLayout || 'cards';
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-12 sm:py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">{t('services.detail.process.title')}</h2>
-          <p className="text-gray-600">{t('services.detail.process.description')}</p>
+        <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-light text-gray-900 mb-3 sm:mb-4">{t('services.detail.process.title')}</h2>
+          <p className="text-sm sm:text-base text-gray-600">{t('services.detail.process.description')}</p>
         </div>
 
         {layout === 'timeline' ? (
@@ -742,15 +753,15 @@ function FAQSection({ faq }: { faq: FAQItem[] }) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-12 sm:py-16 md:py-24 bg-gray-50">
       <div className="container mx-auto px-4 max-w-3xl">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-light text-gray-900 mb-4">
             {t('services.detail.faq.title')}
           </h2>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-3 sm:space-y-4">
           {faq.map((item, index) => (
             <div
               key={index}
@@ -758,9 +769,9 @@ function FAQSection({ faq }: { faq: FAQItem[] }) {
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors"
+                className="w-full flex items-center justify-between p-4 sm:p-6 text-left hover:bg-gray-50 transition-colors"
               >
-                <span className="font-medium text-gray-900 text-lg">{item.question}</span>
+                <span className="font-medium text-gray-900 text-base sm:text-lg pr-4">{item.question}</span>
                 {openIndex === index ? (
                   <MinusIcon className="w-5 h-5 text-gray-900 flex-shrink-0" />
                 ) : (
@@ -796,14 +807,14 @@ function PricingSection({ packages }: { packages: PricingPackage[] }) {
   const { t } = useTranslations();
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-12 sm:py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">{t('services.detail.pricing.title')}</h2>
-          <p className="text-gray-600">{t('services.detail.pricing.description')}</p>
+        <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-light text-gray-900 mb-3 sm:mb-4">{t('services.detail.pricing.title')}</h2>
+          <p className="text-sm sm:text-base text-gray-600">{t('services.detail.pricing.description')}</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-5xl mx-auto">
           {packages.map((pkg) => (
             <motion.div
               key={pkg.id}
@@ -811,7 +822,7 @@ function PricingSection({ packages }: { packages: PricingPackage[] }) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className={`rounded-2xl p-8 border bg-white transition-all duration-300 hover:shadow-lg ${
+              className={`rounded-2xl p-4 sm:p-6 md:p-8 border bg-white transition-all duration-300 hover:shadow-lg ${
                 pkg.highlighted
                   ? 'border-emerald-500 shadow-lg ring-2 ring-emerald-500/20 relative'
                   : 'border-gray-200 hover:border-gray-300'
@@ -888,7 +899,7 @@ function SubServicesSection({ subServices }: { subServices: SubServiceItem[] }) 
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <Link
+                <LocalizedLink
                   href={`/services/${sub.slug}`}
                   className="block bg-white p-8 rounded-2xl border border-gray-100 hover:border-gray-300 hover:shadow-lg transition-all duration-300 group h-full"
                 >
@@ -905,7 +916,7 @@ function SubServicesSection({ subServices }: { subServices: SubServiceItem[] }) 
                     {t('services.detail.learnMore')}
                     <ArrowRightIcon className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </div>
-                </Link>
+                </LocalizedLink>
               </motion.div>
             );
           })}

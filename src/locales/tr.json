@@ -67,6 +67,7 @@
     "webSoftware": "Web & Yazılım",
     "aiMl": "Yapay Zeka & ML",
     "marketingGrowth": "Pazarlama & Büyüme",
+    "marketing": "Dijital Pazarlama",
     "aiData": "Yapay Zeka & Veri",
     "infrastructure": "Altyapı",
     "design": "Tasarım & Yaratıcılık",
@@ -4783,6 +4784,304 @@
           "title": "Mobile Commerce",
           "description": "Responsive, mobile-first designs and progressive web apps that capture the growing mobile shopping market."
         }
+      }
+    },
+    "googleSearchAds": {
+      "hero": {
+        "eyebrow": "Hassas Pazarlama",
+        "title": "Google Arama",
+        "titleAccent": "Reklamları",
+        "description": "Müşteriler ürünlerinizi veya hizmetlerinizi aradığında Google'un en üstünde görünün. Hassas anahtar kelime hedefleme ve akıllı teklif stratejileriyle yüksek niyetli trafik çekin.",
+        "cta": "Kampanyanızı Başlatın",
+        "secondaryCta": "Vaka Çalışmalarını Görün"
+      },
+      "services": {
+        "eyebrow": "Sunduklarımız",
+        "title": "Arama Reklamları",
+        "titleAccent": "Hizmetleri",
+        "subtitle": "ROI'nizi maksimize etmek için kapsamlı Google Ads yönetimi.",
+        "items": [
+          {
+            "title": "Anahtar Kelime Araştırması ve Strateji",
+            "description": "İşletmeniz için yüksek dönüşüm sağlayan anahtar kelimeleri bulmak için derin analiz.",
+            "features": [
+              "Rakip Analizi",
+              "Arama Niyeti Haritalama",
+              "Negatif Anahtar Kelimeler"
+            ]
+          },
+          {
+            "title": "Kampanya Kurulumu ve Yapısı",
+            "description": "Optimum performans için profesyonel kampanya mimarisi.",
+            "features": [
+              "Reklam Grupları",
+              "Eşleme Türleri",
+              "Uzantılar"
+            ]
+          },
+          {
+            "title": "Reklam Metin Yazarlığı",
+            "description": "Tıklama ve dönüşüm sağlayan çekici reklam metinleri.",
+            "features": [
+              "A/B Testi",
+              "RSA Optimizasyonu",
+              "TO İyileştirme"
+            ]
+          },
+          {
+            "title": "Teklif Yönetimi",
+            "description": "Bütçenizi maksimize etmek için akıllı teklif stratejileri.",
+            "features": [
+              "Otomatik Teklif",
+              "Manuel Kontrol",
+              "Bütçe Optimizasyonu"
+            ]
+          },
+          {
+            "title": "Dönüşüm Takibi",
+            "description": "Gerçek sonuçları ölçmek için eksiksiz takip kurulumu.",
+            "features": [
+              "Hedef Kurulumu",
+              "Atıf",
+              "ROI Raporlama"
+            ]
+          },
+          {
+            "title": "Sürekli Optimizasyon",
+            "description": "Daha iyi performans için sürekli iyileştirme.",
+            "features": [
+              "Kalite Puanı",
+              "Açılış Sayfaları",
+              "Performans Analizi"
+            ]
+          }
+        ]
+      },
+      "process": {
+        "eyebrow": "Sürecimiz",
+        "title": "Nasıl",
+        "titleAccent": "Çalışıyoruz",
+        "subtitle": "Google Ads başarısı için kanıtlanmış bir metodoloji.",
+        "steps": [
+          {
+            "step": 1,
+            "title": "Keşif ve Denetim",
+            "description": "Fırsatları belirlemek için işletmenizi, rakiplerinizi ve mevcut kampanyalarınızı analiz ediyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Strateji Geliştirme",
+            "description": "Hedeflerinizle uyumlu özelleştirilmiş bir Google Ads stratejisi oluşturuyoruz."
+          },
+          {
+            "step": 3,
+            "title": "Kampanya Lansmanı",
+            "description": "Uygun takiple optimize edilmiş kampanyalar oluşturup başlatıyoruz."
+          },
+          {
+            "step": 4,
+            "title": "İzleme ve Optimizasyon",
+            "description": "Maksimum ROI için sürekli izleme ve optimizasyon."
+          }
+        ]
+      },
+      "whyUs": {
+        "eyebrow": "Neden Biz",
+        "title": "Google Ads Hizmetimizin",
+        "titleAccent": "Avantajları",
+        "subtitle": "Daha iyi sonuçlar için sertifikalı uzmanlarla çalışın.",
+        "benefits": [
+          {
+            "title": "Google Partner Sertifikalı",
+            "description": "Ekibimiz resmi Google sertifikalarına sahiptir."
+          },
+          {
+            "title": "Veri Odaklı Yaklaşım",
+            "description": "Her karar analitik ve testlerle desteklenir."
+          },
+          {
+            "title": "Şeffaf Raporlama",
+            "description": "Net metrikler ve içgörülerle haftalık raporlar."
+          },
+          {
+            "title": "Uzun Vadeli Sözleşme Yok",
+            "description": "Aydan aya seçeneklerle esnek katılım."
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "SSS",
+        "title": "Sık Sorulan",
+        "titleAccent": "Sorular",
+        "items": [
+          {
+            "question": "Google Ads için ne kadar bütçe ayırmalıyım?",
+            "answer": "Bütçe sektörünüze ve hedeflerinize bağlıdır. Anlamlı sonuçlar için aylık en az 1.000-3.000 dolar ile başlamanızı öneririz. Maksimum ROI için harcamayı optimize etmenize yardımcı oluruz."
+          },
+          {
+            "question": "Sonuçları ne kadar sürede görürüm?",
+            "answer": "İlk veriler günler içinde gelir, ancak optimizasyon genellikle 2-4 hafta sürer. Önemli iyileştirmeler genellikle 60-90 gün içinde görülür."
+          },
+          {
+            "question": "Tüm kampanyayı siz mi yönetiyorsunuz?",
+            "answer": "Evet, anahtar kelime araştırmasından reklam oluşturmaya, teklif vermeye ve sürekli optimizasyona kadar her şeyi biz yönetiyoruz."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Google Ads ile Büyümeye Hazır mısınız?",
+        "description": "Mevcut kampanyalarınızın ücretsiz denetimini alın veya uzman ekibimizle sıfırdan başlayın.",
+        "primaryButton": "Ücretsiz Denetim Al",
+        "secondaryButton": "Bize Ulaşın"
+      }
+    },
+    "instagramAds": {
+      "hero": {
+        "eyebrow": "Görsel Pazarlama",
+        "title": "Instagram",
+        "titleAccent": "Reklamları",
+        "description": "Çarpıcı görsel reklamlarla Instagram'da ideal müşterilerinize ulaşın. Marka bilinirliği oluşturun, etkileşimi artırın ve takipçileri müşteriye dönüştürün.",
+        "cta": "Kampanyanızı Başlatın",
+        "secondaryCta": "Çalışmalarımızı Görün"
+      },
+      "services": {
+        "eyebrow": "Sunduklarımız",
+        "title": "Instagram Reklamları",
+        "titleAccent": "Hizmetleri",
+        "subtitle": "Markanızı büyütmek için tam hizmet Instagram reklamcılığı.",
+        "items": [
+          {
+            "title": "Akış ve Hikaye Reklamları",
+            "description": "Kullanıcı akışlarına doğal olarak karışan göz alıcı reklamlar.",
+            "features": [
+              "Fotoğraf Reklamları",
+              "Video Reklamları",
+              "Carousel Reklamları"
+            ]
+          },
+          {
+            "title": "Reels Reklamcılığı",
+            "description": "Kısa biçimli video içeriğiyle kullanıcıları etkileyin.",
+            "features": [
+              "Viral İçerik",
+              "Trend Sesler",
+              "Yaratıcı Efektler"
+            ]
+          },
+          {
+            "title": "Alışveriş Reklamları",
+            "description": "Instagram'ınızı bir satış kanalına dönüştürün.",
+            "features": [
+              "Ürün Etiketleri",
+              "Mağaza Entegrasyonu",
+              "Ödeme"
+            ]
+          },
+          {
+            "title": "Influencer İşbirliği",
+            "description": "Influencer ortaklıklarıyla erişimi artırın.",
+            "features": [
+              "İçerik Üretici Pazarı",
+              "Markalı İçerik",
+              "Ortaklıklar"
+            ]
+          },
+          {
+            "title": "Hedef Kitle Hedefleme",
+            "description": "Hassas hedeflemeyle doğru insanlara ulaşın.",
+            "features": [
+              "Demografi",
+              "İlgi Alanları",
+              "Benzer Kitleler"
+            ]
+          },
+          {
+            "title": "Yaratıcı Üretim",
+            "description": "Dönüşüm sağlayan profesyonel reklam kreatifi.",
+            "features": [
+              "Tasarım",
+              "Video Prodüksiyon",
+              "Metin Yazarlığı"
+            ]
+          }
+        ]
+      },
+      "process": {
+        "eyebrow": "Sürecimiz",
+        "title": "Sonuçları Nasıl",
+        "titleAccent": "Sağlıyoruz",
+        "subtitle": "Instagram reklamcılığına yaratıcı bir yaklaşım.",
+        "steps": [
+          {
+            "step": 1,
+            "title": "Marka Analizi",
+            "description": "Marka sesinizi, hedef kitlenizi ve rekabet ortamını anlıyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Yaratıcı Strateji",
+            "description": "Hedef kitlenizle rezonans yaratan çekici görsel konseptler geliştiriyoruz."
+          },
+          {
+            "step": 3,
+            "title": "Kampanya Yürütme",
+            "description": "Instagram yerleşimlerinde hedefli kampanyalar başlatıyoruz."
+          },
+          {
+            "step": 4,
+            "title": "Optimize Et ve Ölçekle",
+            "description": "Performansı analiz edip kazanan kreatifları ölçeklendiriyoruz."
+          }
+        ]
+      },
+      "whyUs": {
+        "eyebrow": "Neden Biz",
+        "title": "Instagram Reklamları",
+        "titleAccent": "Uzmanlığı",
+        "subtitle": "Instagram'da neyin işe yaradığını biliyoruz.",
+        "benefits": [
+          {
+            "title": "Yaratıcı Mükemmellik",
+            "description": "Çarpıcı görseller için ödüllü yaratıcı ekip."
+          },
+          {
+            "title": "Meta İş Ortağı",
+            "description": "Doğrudan Meta desteğiyle resmi ortak."
+          },
+          {
+            "title": "E-ticaret Odağı",
+            "description": "Online satışları artırmada uzmanlaşmış."
+          },
+          {
+            "title": "Tam Huni Stratejisi",
+            "description": "Farkındalıktan dönüşüm optimizasyonuna."
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "SSS",
+        "title": "Sık Sorulan",
+        "titleAccent": "Sorular",
+        "items": [
+          {
+            "question": "Hangi tür işletmeler Instagram'da en iyi sonuç alır?",
+            "answer": "Instagram görsel ürünler, yaşam tarzı markaları, moda, güzellik, yiyecek, seyahat ve 45 yaş altı kitleleri hedefleyen her işletme için harika çalışır."
+          },
+          {
+            "question": "Reklam içeriğini siz mi oluşturuyorsunuz?",
+            "answer": "Evet! Yaratıcı ekibimiz fotoğrafçılık, video ve metin yazarlığı dahil konseptten son üretime kadar her şeyi yönetir."
+          },
+          {
+            "question": "Başarıyı nasıl ölçüyorsunuz?",
+            "answer": "Detaylı haftalık raporlamayla erişim, etkileşim, web sitesi trafiği, dönüşümler ve ROAS'ı (Reklam Harcaması Getirisi) takip ediyoruz."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Instagram'da Parlamaya Hazır mısınız?",
+        "description": "Markanızı büyütecek kaydırmayı durduran kampanyalar oluşturalım.",
+        "primaryButton": "Kampanyanızı Başlatın",
+        "secondaryButton": "Portföyü Görün"
       }
     }
   },

@@ -102,7 +102,7 @@ export default function ServiceRequestCTA({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6"
             >
               {t('title')}
             </motion.h2>
@@ -113,7 +113,7 @@ export default function ServiceRequestCTA({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto"
+              className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 md:mb-10 max-w-2xl mx-auto"
             >
               {t('description')}
             </motion.p>
@@ -140,7 +140,7 @@ export default function ServiceRequestCTA({
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.4 }}
-              className="mt-12 flex flex-wrap items-center justify-center gap-8 text-sm text-gray-500"
+              className="mt-8 sm:mt-10 md:mt-12 flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-8 text-xs sm:text-sm text-gray-500"
             >
               <div className="flex items-center gap-2">
                 <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">

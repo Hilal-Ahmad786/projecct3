@@ -1058,7 +1058,7 @@ export default function Navbar() {
 
                   {/* Mega Dropdown — 3-column layout with 6 categories */}
                   {servicesOpen && (
-                    <div className="fixed top-20 left-1/2 -translate-x-1/2 w-[1200px] max-w-[95vw] bg-white/95 backdrop-blur-xl border border-gray-200 rounded-2xl shadow-2xl z-50 flex flex-col" style={{ maxHeight: 'calc(100vh - 6rem)' }}>
+                    <div className="fixed top-20 left-1/2 -translate-x-1/2 w-[95vw] md:w-[90vw] lg:w-[1100px] xl:w-[1200px] bg-white/95 backdrop-blur-xl border border-gray-200 rounded-2xl shadow-2xl z-50 flex flex-col" style={{ maxHeight: 'calc(100vh - 6rem)' }}>
                       {/* Header */}
                       <div className="flex items-center justify-between px-8 pt-6 pb-4 border-b border-gray-100 flex-shrink-0">
                         <div>
@@ -1079,7 +1079,7 @@ export default function Navbar() {
 
                       {/* Single scrollable area with 3 columns (2 rows of 3) */}
                       <div className="overflow-y-auto flex-1 px-8 py-6 scrollbar-thin">
-                        <div className="grid grid-cols-3 gap-5">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
                           {Object.entries(serviceCategories).map(([catKey, cat]) => {
                             const CatIcon = cat.icon;
                             return (
@@ -1108,7 +1108,7 @@ export default function Navbar() {
                                           <div className={`flex-shrink-0 w-7 h-7 rounded-md bg-white shadow-sm flex items-center justify-center ${iconColor} group-hover:scale-110 transition-transform duration-200`}>
                                             <IconComponent className="w-3.5 h-3.5" />
                                           </div>
-                                          <span className="text-[12px] font-semibold text-gray-800 group-hover:text-gray-900 transition-colors leading-tight">
+                                          <span className="text-xs font-semibold text-gray-800 group-hover:text-gray-900 transition-colors leading-tight">
                                             {tServices(`services.${service.slug}`)}
                                           </span>
                                         </Link>
@@ -1126,7 +1126,7 @@ export default function Navbar() {
                                                   className="group flex items-center gap-1.5 px-1.5 py-[3px] rounded-md hover:bg-gray-50 transition-colors duration-150"
                                                 >
                                                   <ChildIcon className={`w-3 h-3 ${childColor} flex-shrink-0 opacity-70 group-hover:opacity-100`} />
-                                                  <span className="text-[11px] text-gray-500 group-hover:text-gray-800 transition-colors leading-tight">
+                                                  <span className="text-[11px] sm:text-xs text-gray-500 group-hover:text-gray-800 transition-colors leading-tight">
                                                     {tServices(`services.${childSlug}`)}
                                                   </span>
                                                 </Link>
