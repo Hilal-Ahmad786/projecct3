@@ -99,6 +99,12 @@ const realProjects = {
     image: '/images/portfolio/100lesme.png',
     url: 'https://www.100lesme.com/'
   },
+  'job-hunter-bot': {
+    title: 'Job Hunter Bot',
+    category: 'Desktop Application / AI Automation',
+    image: '/images/portfolio/job-hunter-bot.png',
+    url: null // Internal tool
+  },
 };
 
 // Get relevant projects based on service type
@@ -173,10 +179,16 @@ function getProjectsForService(slug: string, name: string): typeof realProjects[
     return [realProjects['paper-market'], realProjects['conclife'], realProjects['window-specialist']];
   }
 
-  // AI/ML
+  // AI/ML/Automation
   if (s.includes('ai') || s.includes('machine') || s.includes('nlp') || s.includes('chatbot') ||
-      s.includes('automation') || s.includes('llm') || s.includes('gpt')) {
-    return [realProjects['conclife'], realProjects['paper-market'], realProjects['window-specialist']];
+      s.includes('automation') || s.includes('llm') || s.includes('gpt') || s.includes('scraping') ||
+      s.includes('python') || s.includes('desktop')) {
+    return [realProjects['job-hunter-bot'], realProjects['conclife'], realProjects['paper-market']];
+  }
+
+  // Custom/Enterprise Software
+  if (s.includes('custom') || s.includes('enterprise') || s.includes('business-software')) {
+    return [realProjects['job-hunter-bot'], realProjects['conclife'], realProjects['paper-market']];
   }
 
   // Cloud/DevOps

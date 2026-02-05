@@ -977,6 +977,7 @@ export async function getProjects(
   const [data, total] = await Promise.all([
     getPrismaClient().project.findMany({
       where,
+      include: { translations: true },
       orderBy: { [sortBy]: sortOrder },
       skip,
       take: limit,

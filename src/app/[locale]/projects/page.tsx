@@ -10,8 +10,11 @@ import TechApproachSection from '@/components/TechApproachSection';
 import SuccessMetricsSection from '@/components/SuccessMetricsSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import CtaBanner from '@/components/CtaBanner';
+import { getProjects } from '@/lib/admin/database/queries';
 
 const baseUrl = 'https://paksoft.com.tr';
+
+export const revalidate = 3600; // ISR: revalidate every hour
 
 const ogLocaleMap: Record<Locale, string> = {
   en: 'en_US',
@@ -58,11 +61,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export default function ProjectsPage() {
+export default async function ProjectsPage({ params }: PageProps) {
+  const { locale } = await params;
+
+  // Fetch real projects from database
+  const { data: projects } = await getProjects(
+    { status: 'published' },
+    { limit: 50, sortBy: 'createdAt', sortOrder: 'desc' }
+  );
+
   return (
     <>
       <ProjectsHero />
-      <ProjectsGallerySection />
+      <ProjectsGallerySection projects={projects} locale={locale} />
       <FeaturedCaseStudySection />
       <TechApproachSection />
       <SuccessMetricsSection />
