@@ -1539,15 +1539,18 @@ export async function trackAnalyticsEvent(data: {
   return getPrismaClient().analyticsEvent.create({ data });
 }
 
-export async function getPageViews(days: number = 30) {
-  const startDate = new Date();
-  startDate.setDate(startDate.getDate() - days);
+export async function getPageViews(startDate: Date | number = 30, endDate?: Date) {
+  if (typeof startDate === 'number') {
+    const days = startDate;
+    startDate = new Date();
+    (startDate as Date).setDate((startDate as Date).getDate() - days);
+  }
 
   return getPrismaClient().analyticsEvent.groupBy({
     by: ['page'],
     where: {
       eventType: 'pageview',
-      createdAt: { gte: startDate },
+      createdAt: { gte: startDate as Date, ...(endDate ? { lte: endDate } : {}) },
     },
     _count: true,
     orderBy: { _count: { page: 'desc' } },
@@ -1555,9 +1558,12 @@ export async function getPageViews(days: number = 30) {
   });
 }
 
-export async function getVisitorStats(days: number = 30) {
-  const startDate = new Date();
-  startDate.setDate(startDate.getDate() - days);
+export async function getVisitorStats(startDate: Date | number = 30, endDate?: Date) {
+  if (typeof startDate === 'number') {
+    const days = startDate;
+    startDate = new Date();
+    (startDate as Date).setDate((startDate as Date).getDate() - days);
+  }
 
   const [uniqueVisitors, totalPageViews, topReferrers] = await Promise.all([
     getPrismaClient().analyticsEvent.groupBy({
