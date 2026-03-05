@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import {
     PencilIcon,
     TrashIcon,
@@ -421,11 +422,10 @@ export default function BlogContentPage() {
                 <div className="flex border-b border-gray-200">
                     <button
                         onClick={() => setActiveTab('content')}
-                        className={`px-6 py-3 text-sm font-medium border-b-2 transition-colors ${
-                            activeTab === 'content'
+                        className={`px-6 py-3 text-sm font-medium border-b-2 transition-colors ${activeTab === 'content'
                                 ? 'border-emerald-500 text-emerald-600'
                                 : 'border-transparent text-gray-500 hover:text-gray-700'
-                        }`}
+                            }`}
                     >
                         <span className="flex items-center gap-2">
                             <DocumentTextIcon className="w-4 h-4" />
@@ -434,11 +434,10 @@ export default function BlogContentPage() {
                     </button>
                     <button
                         onClick={() => setActiveTab('translations')}
-                        className={`px-6 py-3 text-sm font-medium border-b-2 transition-colors ${
-                            activeTab === 'translations'
+                        className={`px-6 py-3 text-sm font-medium border-b-2 transition-colors ${activeTab === 'translations'
                                 ? 'border-emerald-500 text-emerald-600'
                                 : 'border-transparent text-gray-500 hover:text-gray-700'
-                        }`}
+                            }`}
                     >
                         <span className="flex items-center gap-2">
                             <LanguageIcon className="w-4 h-4" />
@@ -447,11 +446,10 @@ export default function BlogContentPage() {
                     </button>
                     <button
                         onClick={() => setActiveTab('seo')}
-                        className={`px-6 py-3 text-sm font-medium border-b-2 transition-colors ${
-                            activeTab === 'seo'
+                        className={`px-6 py-3 text-sm font-medium border-b-2 transition-colors ${activeTab === 'seo'
                                 ? 'border-emerald-500 text-emerald-600'
                                 : 'border-transparent text-gray-500 hover:text-gray-700'
-                        }`}
+                            }`}
                     >
                         <span className="flex items-center gap-2">
                             <GlobeAltIcon className="w-4 h-4" />
@@ -565,7 +563,7 @@ export default function BlogContentPage() {
                                 {contentViewMode === 'preview' && (
                                     <div className="border border-gray-200 rounded-lg p-4 min-h-[300px] prose prose-sm max-w-none prose-headings:text-gray-900 prose-p:text-gray-600 prose-a:text-emerald-600">
                                         {formData.content ? (
-                                            <ReactMarkdown>{formData.content}</ReactMarkdown>
+                                            <ReactMarkdown remarkPlugins={[remarkGfm]}>{formData.content}</ReactMarkdown>
                                         ) : (
                                             <p className="text-gray-400 italic">Nothing to preview yet...</p>
                                         )}
@@ -591,7 +589,7 @@ export default function BlogContentPage() {
                                         </div>
                                         <div className="border border-gray-200 rounded-lg p-4 overflow-y-auto max-h-[300px] prose prose-sm max-w-none prose-headings:text-gray-900 prose-p:text-gray-600 prose-a:text-emerald-600">
                                             {formData.content ? (
-                                                <ReactMarkdown>{formData.content}</ReactMarkdown>
+                                                <ReactMarkdown remarkPlugins={[remarkGfm]}>{formData.content}</ReactMarkdown>
                                             ) : (
                                                 <p className="text-gray-400 italic">Preview will appear here...</p>
                                             )}
@@ -695,11 +693,10 @@ export default function BlogContentPage() {
                                     <button
                                         key={locale.code}
                                         onClick={() => setActiveTranslationLocale(locale.code)}
-                                        className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2 ${
-                                            activeTranslationLocale === locale.code
+                                        className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2 ${activeTranslationLocale === locale.code
                                                 ? 'bg-emerald-100 text-emerald-700 border-2 border-emerald-500'
                                                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200 border-2 border-transparent'
-                                        }`}
+                                            }`}
                                     >
                                         <span>{locale.flag}</span>
                                         {locale.name}
@@ -1179,11 +1176,10 @@ export default function BlogContentPage() {
                                         <div className="flex items-center gap-1">
                                             <button
                                                 onClick={() => toggleFeatured(post.id, post.featured)}
-                                                className={`p-1.5 rounded-lg transition-colors ${
-                                                    post.featured
+                                                className={`p-1.5 rounded-lg transition-colors ${post.featured
                                                         ? 'text-yellow-500 hover:bg-yellow-50'
                                                         : 'text-gray-400 hover:bg-gray-50'
-                                                }`}
+                                                    }`}
                                                 title={post.featured ? 'Remove from featured' : 'Add to featured'}
                                             >
                                                 <StarIcon className="w-4 h-4" />
@@ -1301,11 +1297,10 @@ export default function BlogContentPage() {
                                 <div className="flex items-center justify-between pt-3 border-t border-gray-100 mt-3">
                                     <button
                                         onClick={() => toggleFeatured(post.id, post.featured)}
-                                        className={`p-1.5 rounded-lg transition-colors ${
-                                            post.featured
+                                        className={`p-1.5 rounded-lg transition-colors ${post.featured
                                                 ? 'text-yellow-500 hover:bg-yellow-50'
                                                 : 'text-gray-400 hover:bg-gray-50'
-                                        }`}
+                                            }`}
                                     >
                                         <StarIcon className="w-4 h-4" />
                                     </button>

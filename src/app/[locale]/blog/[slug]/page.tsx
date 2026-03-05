@@ -14,6 +14,7 @@ import {
 } from '@heroicons/react/24/outline';
 import { StarIcon } from '@heroicons/react/24/solid';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 export const dynamic = 'force-dynamic';
 
@@ -345,7 +346,7 @@ export default function BlogPostPage() {
                 prose-li:text-gray-700"
               dir={isRTL ? 'rtl' : 'ltr'}
             >
-              <ReactMarkdown>{content.content}</ReactMarkdown>
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>{content.content}</ReactMarkdown>
             </motion.article>
 
             {/* Bottom CTA */}
