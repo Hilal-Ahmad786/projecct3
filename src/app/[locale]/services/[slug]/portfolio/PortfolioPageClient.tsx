@@ -260,10 +260,10 @@ export default function PortfolioPageClient({
                 >
                   <button
                     onClick={() => setSelectedCategory(null)}
-                    className={`px-6 py-3 text-sm font-medium transition-all ${
+                    className={`px-6 py-3 text-sm font-bold rounded-full transition-all ${
                       selectedCategory === null
                         ? 'text-white'
-                        : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-200'
+                        : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-200 shadow-sm'
                     }`}
                     style={selectedCategory === null ? { backgroundColor: accentColor } : {}}
                   >
@@ -273,10 +273,10 @@ export default function PortfolioPageClient({
                     <button
                       key={cat}
                       onClick={() => setSelectedCategory(cat)}
-                      className={`px-6 py-3 text-sm font-medium transition-all ${
+                      className={`px-6 py-3 text-sm font-bold rounded-full transition-all ${
                         selectedCategory === cat
                           ? 'text-white'
-                          : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-200'
+                          : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-200 shadow-sm'
                       }`}
                       style={selectedCategory === cat ? { backgroundColor: accentColor } : {}}
                     >
@@ -287,7 +287,7 @@ export default function PortfolioPageClient({
               )}
 
               {/* Portfolio Grid - Staggered Masonry Reveal */}
-              <div ref={gridRef} className="grid md:grid-cols-2 lg:grid-cols-3 gap-1 bg-gray-200 max-w-6xl mx-auto">
+              <div ref={gridRef} className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
                 <AnimatePresence mode="popLayout">
                   {filteredPortfolio.map((item, index) => (
                     <motion.div
@@ -307,7 +307,7 @@ export default function PortfolioPageClient({
                       exit={{ opacity: 0, scale: 0.9 }}
                       onMouseEnter={() => setHoveredIndex(index)}
                       onMouseLeave={() => setHoveredIndex(null)}
-                      className={`bg-white group cursor-pointer ${
+                      className={`glass bg-white rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden group cursor-pointer ${
                         index % 5 === 0 ? 'md:col-span-2 md:row-span-2' : ''
                       }`}
                     >
@@ -431,7 +431,7 @@ export default function PortfolioPageClient({
                                 initial={{ opacity: 0, y: 10 }}
                                 animate={isGridInView ? { opacity: 1, y: 0 } : {}}
                                 transition={{ delay: index * 0.08 + i * 0.05 + 0.3 }}
-                                className="text-xs text-gray-500 border border-gray-200 px-2 py-1"
+                                className="text-xs font-medium text-gray-600 bg-gray-50 border border-gray-200 rounded-full px-3 py-1.5"
                               >
                                 {tech}
                               </motion.span>
@@ -495,7 +495,7 @@ export default function PortfolioPageClient({
               </div>
 
               {/* Stats Grid with Sequential Reveal */}
-              <div className="grid grid-cols-2 gap-1 bg-gray-200">
+              <div className="grid grid-cols-2 gap-4 sm:gap-6">
                 {[
                   { value: '150+', labelKey: 'projectsDelivered' },
                   { value: '98%', labelKey: 'clientRetention' },
@@ -513,19 +513,19 @@ export default function PortfolioPageClient({
                       stiffness: 100
                     }}
                     whileHover={{ y: -4 }}
-                    className="bg-white p-8 group"
+                    className="glass bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-all group"
                   >
                     <motion.div
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ delay: i * 0.1 + 0.2 }}
-                      className="text-3xl font-light mb-1"
+                      className="text-4xl font-bold mb-2"
                       style={{ color: accentColor }}
                     >
                       {stat.value}
                     </motion.div>
-                    <div className="text-sm text-gray-500">{t(`services.detail.portfolio.stats.${stat.labelKey}`)}</div>
+                    <div className="text-sm font-medium text-gray-500">{t(`services.detail.portfolio.stats.${stat.labelKey}`)}</div>
                   </motion.div>
                 ))}
               </div>
@@ -565,15 +565,15 @@ export default function PortfolioPageClient({
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <LocalizedLink
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 text-white font-medium transition-all hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-white font-bold transition-all hover:scale-105"
                 style={{ backgroundColor: accentColor }}
               >
                 {t('services.detail.portfolio.cta.startProject')}
-                <ArrowRightIcon className="w-4 h-4" />
+                <ArrowRightIcon className="w-5 h-5" />
               </LocalizedLink>
               <LocalizedLink
                 href={`/services/${serviceSlug}/faq`}
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-gray-700 text-white font-medium hover:bg-white/5 transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-gray-700 rounded-full text-white font-bold hover:bg-white/5 transition-colors"
               >
                 {t('services.detail.portfolio.cta.haveQuestions')}
               </LocalizedLink>

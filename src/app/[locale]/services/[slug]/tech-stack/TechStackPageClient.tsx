@@ -240,7 +240,7 @@ export default function TechStackPageClient({
               </div>
 
               {/* Staggered Grid Animation */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-1 bg-gray-200 max-w-5xl mx-auto">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6 max-w-6xl mx-auto">
                 {technologies.map((tech, index) => (
                   <motion.div
                     key={index}
@@ -251,8 +251,8 @@ export default function TechStackPageClient({
                       delay: index * 0.05,
                       ease: [0.4, 0, 0.2, 1]
                     }}
-                    whileHover={{ scale: 1.05 }}
-                    className="bg-white p-8 text-center group cursor-default relative overflow-hidden"
+                    whileHover={{ scale: 1.05, y: -5 }}
+                    className="glass bg-white p-8 text-center rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-lg group cursor-default relative overflow-hidden transition-all duration-300"
                   >
                     {/* Hover Background */}
                     <motion.div
@@ -322,7 +322,7 @@ export default function TechStackPageClient({
                 </motion.p>
               </div>
 
-              <div className="grid grid-cols-2 gap-8">
+              <div className="grid grid-cols-2 gap-6">
                 {[
                   { symbol: '◇', label: t('services.detail.techStack.philosophy.performance'), desc: t('services.detail.techStack.philosophy.performanceDesc') },
                   { symbol: '⬢', label: t('services.detail.techStack.philosophy.scalability'), desc: t('services.detail.techStack.philosophy.scalabilityDesc') },
@@ -336,7 +336,7 @@ export default function TechStackPageClient({
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.15 }}
                     whileHover={{ y: -5 }}
-                    className="text-center group"
+                    className="text-center group bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-all"
                   >
                     <motion.div
                       animate={{ scale: [1, 1.1, 1] }}
@@ -346,10 +346,10 @@ export default function TechStackPageClient({
                     >
                       {item.symbol}
                     </motion.div>
-                    <h3 className="font-medium text-gray-900 mb-1 group-hover:translate-y-[-2px] transition-transform">
+                    <h3 className="font-bold text-gray-900 mb-1 group-hover:translate-y-[-2px] transition-transform">
                       {item.label}
                     </h3>
-                    <p className="text-sm text-gray-500">{item.desc}</p>
+                    <p className="text-sm font-medium text-gray-500">{item.desc}</p>
                   </motion.div>
                 ))}
               </div>
@@ -386,15 +386,15 @@ export default function TechStackPageClient({
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <LocalizedLink
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 text-gray-900 font-medium transition-all hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-white font-bold transition-all hover:scale-105"
                 style={{ backgroundColor: config.primaryColor }}
               >
                 {t('services.detail.techStack.cta.startProject')}
-                <ArrowRightIcon className="w-4 h-4" />
+                <ArrowRightIcon className="w-5 h-5" />
               </LocalizedLink>
               <LocalizedLink
                 href={`/services/${serviceSlug}/portfolio`}
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-gray-700 text-white font-medium hover:bg-white/5 transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-gray-700 rounded-full text-white font-bold hover:bg-white/5 transition-colors"
               >
                 {t('services.detail.techStack.cta.viewPortfolio')}
               </LocalizedLink>

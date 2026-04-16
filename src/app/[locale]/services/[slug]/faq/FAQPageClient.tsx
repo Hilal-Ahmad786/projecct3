@@ -283,7 +283,7 @@ export default function FAQPageClient({
                 placeholder={t('services.detail.faq.search.placeholder')}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full px-6 py-4 pl-14 bg-white border border-gray-200 focus:outline-none transition-colors text-gray-900 placeholder:text-gray-400"
+                className="w-full px-6 py-4 pl-14 bg-white border border-gray-200 rounded-full focus:outline-none shadow-sm transition-all focus:shadow-md text-gray-900 placeholder:text-gray-400"
                 style={{ borderColor: searchQuery ? accentColor : undefined }}
               />
               <svg
@@ -344,7 +344,7 @@ export default function FAQPageClient({
                 </button>
               </div>
             ) : (
-              <div className="space-y-1 bg-gray-100">
+              <div className="space-y-4">
                 {filteredFaq.map((item, index) => (
                   <motion.div
                     key={index}
@@ -358,7 +358,7 @@ export default function FAQPageClient({
                         ease: [0.4, 0, 0.2, 1]
                       }
                     } : {}}
-                    className="bg-white"
+                    className="bg-white rounded-3xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow"
                   >
                     <button
                       onClick={() => setOpenIndex(openIndex === index ? null : index)}
@@ -371,7 +371,7 @@ export default function FAQPageClient({
                           y: openIndex === index ? [0, -2, 0] : 0
                         }}
                         transition={{ duration: 0.3 }}
-                        className="flex-shrink-0 w-8 h-8 border flex items-center justify-center text-xs font-mono transition-colors"
+                        className="flex-shrink-0 w-8 h-8 border rounded-lg flex items-center justify-center text-xs font-bold transition-colors"
                         style={{
                           borderColor: openIndex === index ? accentColor : '#e5e7eb',
                           color: openIndex === index ? accentColor : '#9ca3af',
@@ -398,7 +398,7 @@ export default function FAQPageClient({
                           scale: openIndex === index ? 1.1 : 1
                         }}
                         transition={{ duration: 0.3, type: 'spring', stiffness: 200 }}
-                        className="flex-shrink-0 w-8 h-8 border flex items-center justify-center transition-colors"
+                        className="flex-shrink-0 w-8 h-8 border rounded-full flex items-center justify-center transition-colors"
                         style={{
                           borderColor: openIndex === index ? accentColor : '#e5e7eb',
                           backgroundColor: openIndex === index ? accentColor : 'transparent',
@@ -492,7 +492,7 @@ export default function FAQPageClient({
               </div>
 
               {/* Info Cards with Staggered Reveal */}
-              <div className="grid grid-cols-1 gap-1 bg-gray-200">
+              <div className="grid grid-cols-1 gap-4">
                 {[
                   { labelKey: 'gettingStarted', descKey: 'gettingStartedDesc' },
                   { labelKey: 'timeline', descKey: 'timelineDesc' },
@@ -509,8 +509,8 @@ export default function FAQPageClient({
                       duration: 0.5,
                       ease: [0.4, 0, 0.2, 1]
                     }}
-                    whileHover={{ x: 5, backgroundColor: '#fafafa' }}
-                    className="bg-white p-8 group transition-all cursor-default"
+                    whileHover={{ scale: 1.02, y: -2 }}
+                    className="glass bg-white p-8 rounded-[2rem] border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.06)] group transition-all duration-300 cursor-default"
                   >
                     <div className="flex items-start gap-4">
                       <motion.div
@@ -587,15 +587,15 @@ export default function FAQPageClient({
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <LocalizedLink
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 text-white font-medium transition-all hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-white font-bold transition-all hover:scale-105"
                 style={{ backgroundColor: accentColor }}
               >
                 {t('services.detail.faq.cta.contactUs')}
-                <ArrowRightIcon className="w-4 h-4" />
+                <ArrowRightIcon className="w-5 h-5" />
               </LocalizedLink>
               <LocalizedLink
                 href={`/services/${serviceSlug}`}
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-gray-700 text-white font-medium hover:bg-white/5 transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-gray-700 rounded-full text-white font-bold hover:bg-white/5 transition-colors"
               >
                 {t('services.detail.faq.cta.backToService')}
               </LocalizedLink>

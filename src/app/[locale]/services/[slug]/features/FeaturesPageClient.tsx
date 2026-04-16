@@ -201,7 +201,7 @@ export default function FeaturesPageClient({
               <p className="text-gray-500">{t('services.detail.features.preparingInfo')}</p>
             </div>
           ) : (
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-1 bg-gray-200">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
               {features.map((feature, index) => (
                 <motion.div
                   key={index}
@@ -210,14 +210,14 @@ export default function FeaturesPageClient({
                   viewport={{ once: true, margin: '-50px' }}
                   transition={{ duration: 0.5, delay: index * 0.05 }}
                   whileHover={{ scale: 1.02 }}
-                  className="bg-white p-10 group cursor-default relative overflow-hidden"
+                  className="glass bg-white p-10 rounded-[2rem] border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.06)] group cursor-default relative overflow-hidden transition-all duration-300"
                 >
                   {/* Animated Background on Hover */}
                   <motion.div
                     initial={{ x: '-100%' }}
                     whileHover={{ x: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="absolute inset-0 opacity-5"
+                    className="absolute inset-0 opacity-[0.03]"
                     style={{ backgroundColor: config.primaryColor }}
                   />
 
@@ -227,7 +227,7 @@ export default function FeaturesPageClient({
                     whileInView={{ scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ type: 'spring', delay: index * 0.05 + 0.2 }}
-                    className="text-xs font-mono mb-6"
+                    className="text-xs font-bold mb-6"
                     style={{ color: config.primaryColor }}
                   >
                     {String(index + 1).padStart(2, '0')}
@@ -235,7 +235,7 @@ export default function FeaturesPageClient({
 
                   {/* Feature Icon - Animated Line */}
                   <motion.div
-                    className="w-10 h-1 mb-6 origin-left"
+                    className="w-10 h-1 mb-6 origin-left rounded-full"
                     style={{ backgroundColor: config.primaryColor }}
                     whileInView={{ scaleX: [0, 1] }}
                     viewport={{ once: true }}
@@ -243,12 +243,12 @@ export default function FeaturesPageClient({
                   />
 
                   {/* Feature Title */}
-                  <h3 className="text-lg font-medium text-gray-900 mb-3 group-hover:translate-x-1 transition-transform">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:translate-x-1 transition-transform">
                     {feature}
                   </h3>
 
                   {/* Feature Description */}
-                  <p className="text-sm text-gray-500 leading-relaxed relative z-10">
+                  <p className="text-sm font-medium text-gray-500 leading-relaxed relative z-10">
                     {t('services.detail.features.featureCardDesc')}
                   </p>
 
@@ -256,9 +256,11 @@ export default function FeaturesPageClient({
                   <motion.div
                     initial={{ opacity: 0, x: -10 }}
                     whileHover={{ opacity: 1, x: 0 }}
-                    className="absolute bottom-6 right-6"
+                    className="absolute bottom-8 right-8"
                   >
-                    <ArrowRightIcon className="w-5 h-5" style={{ color: config.primaryColor }} />
+                    <div className="w-10 h-10 rounded-full flex items-center justify-center bg-gray-50 group-hover:bg-gray-900 transition-colors">
+                      <ArrowRightIcon className="w-5 h-5 text-white" />
+                    </div>
                   </motion.div>
                 </motion.div>
               ))}
@@ -321,19 +323,19 @@ export default function FeaturesPageClient({
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.15 }}
                     whileHover={{ x: 5 }}
-                    className="flex items-start gap-4 p-6 border border-gray-100 hover:border-gray-200 transition-all group"
+                    className="flex items-start gap-4 p-6 bg-white rounded-2xl border border-gray-100 hover:border-gray-200 shadow-sm hover:shadow-md transition-all group"
                   >
                     <motion.div
                       animate={{ scale: [1, 1.2, 1] }}
                       transition={{ duration: 2, repeat: Infinity, delay: i * 0.3 }}
-                      className="w-3 h-3 rounded-full mt-1 flex-shrink-0"
+                      className="w-3 h-3 rounded-full mt-1.5 flex-shrink-0"
                       style={{ backgroundColor: config.primaryColor }}
                     />
                     <div>
-                      <h3 className="font-medium text-gray-900 mb-1 group-hover:translate-x-1 transition-transform">
+                      <h3 className="font-bold text-gray-900 mb-1 group-hover:translate-x-0.5 transition-transform">
                         {item.label}
                       </h3>
-                      <p className="text-sm text-gray-500">{item.desc}</p>
+                      <p className="text-sm font-medium text-gray-500">{item.desc}</p>
                     </div>
                   </motion.div>
                 ))}
@@ -373,15 +375,15 @@ export default function FeaturesPageClient({
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <LocalizedLink
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 text-gray-900 font-medium transition-all hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-white font-bold transition-all hover:scale-105"
                 style={{ backgroundColor: config.primaryColor }}
               >
                 {t('services.detail.features.cta.startProject')}
-                <ArrowRightIcon className="w-4 h-4" />
+                <ArrowRightIcon className="w-5 h-5" />
               </LocalizedLink>
               <LocalizedLink
                 href={`/services/${serviceSlug}/process`}
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-gray-700 text-white font-medium hover:bg-white/5 transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-gray-700 rounded-full text-white font-bold hover:bg-white/5 transition-colors"
               >
                 {t('services.detail.features.cta.viewProcess')}
               </LocalizedLink>

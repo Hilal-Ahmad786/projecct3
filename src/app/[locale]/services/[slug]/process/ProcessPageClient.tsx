@@ -271,17 +271,15 @@ export default function ProcessPageClient({
                   {/* Step Content */}
                   <motion.div
                     whileHover={{ x: 10 }}
-                    className="p-10 transition-all duration-300 group"
-                    style={{ backgroundColor: '#fafafa' }}
+                    className="p-10 bg-white rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 group"
                   >
                     <div className="flex items-center gap-4 mb-6">
-                      <span className="md:hidden text-xs font-mono" style={{ color: config.primaryColor }}>
+                      <span className="md:hidden text-xs font-bold" style={{ color: config.primaryColor }}>
                         {String(step.step).padStart(2, '0')}
                       </span>
                       <motion.div
-                        className="w-12 h-12 border flex items-center justify-center"
-                        style={{ borderColor: config.primaryColor + '40' }}
-                        whileHover={{ scale: 1.05, borderColor: config.primaryColor }}
+                        className="w-12 h-12 rounded-xl flex items-center justify-center bg-gray-50 group-hover:bg-gray-100 transition-colors"
+                        whileHover={{ scale: 1.05 }}
                       >
                         <span style={{ color: config.primaryColor }}>
                           {stepIcons[(step.step - 1) % stepIcons.length]}
@@ -349,7 +347,7 @@ export default function ProcessPageClient({
                 </motion.p>
               </div>
 
-              <div className="grid grid-cols-2 gap-1 bg-gray-200">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {[
                   { label: t('services.detail.process.expectations.weeklyUpdates'), desc: t('services.detail.process.expectations.weeklyUpdatesDesc') },
                   { label: t('services.detail.process.expectations.directAccess'), desc: t('services.detail.process.expectations.directAccessDesc') },
@@ -363,18 +361,18 @@ export default function ProcessPageClient({
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.1 }}
                     whileHover={{ scale: 1.02 }}
-                    className="bg-white p-8 group"
+                    className="glass bg-white p-8 rounded-[2rem] border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-lg transition-all group"
                   >
                     <motion.div
                       animate={{ scale: [1, 1.2, 1] }}
                       transition={{ duration: 2, repeat: Infinity, delay: i * 0.3 }}
-                      className="w-2 h-2 rounded-full mb-4"
+                      className="w-3 h-3 rounded-full mb-6"
                       style={{ backgroundColor: config.primaryColor }}
                     />
-                    <h3 className="font-medium text-gray-900 mb-2 group-hover:translate-x-1 transition-transform">
+                    <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:translate-x-1 transition-transform">
                       {item.label}
                     </h3>
-                    <p className="text-sm text-gray-500">{item.desc}</p>
+                    <p className="text-sm font-medium text-gray-500 leading-relaxed">{item.desc}</p>
                   </motion.div>
                 ))}
               </div>
@@ -407,15 +405,15 @@ export default function ProcessPageClient({
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <LocalizedLink
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 text-gray-900 font-medium transition-all hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-white font-bold transition-all hover:scale-105"
                 style={{ backgroundColor: config.primaryColor }}
               >
                 {t('services.detail.process.cta.startProject')}
-                <ArrowRightIcon className="w-4 h-4" />
+                <ArrowRightIcon className="w-5 h-5" />
               </LocalizedLink>
               <LocalizedLink
                 href={`/services/${serviceSlug}/tech-stack`}
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-gray-700 text-white font-medium hover:bg-white/5 transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-gray-700 rounded-full text-white font-bold hover:bg-white/5 transition-colors"
               >
                 {t('services.detail.process.cta.viewTechStack')}
               </LocalizedLink>
