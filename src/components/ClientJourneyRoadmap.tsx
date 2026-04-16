@@ -1,11 +1,10 @@
 // src/components/ClientJourneyRoadmap.tsx
 'use client';
 
-import { useRef } from 'react';
-import { motion, useReducedMotion, useScroll, useTransform, useInView } from 'framer-motion';
+import { useState } from 'react';
+import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import SectionHeader from '@/components/SectionHeader';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
-import { smoothSpring, snappySpring } from '@/lib/animations';
 import {
   ChatBubbleOvalLeftIcon,
   PencilSquareIcon,
@@ -16,17 +15,10 @@ import {
 } from '@heroicons/react/24/outline';
 
 export default function ClientJourneyRoadmap() {
+  const [activeIdx, setActiveIdx] = useState(0);
   const { dir, isLoading } = useTranslations();
   const t = useSectionTranslations('clientJourney');
   const prefersReducedMotion = useReducedMotion();
-  const timelineRef = useRef(null);
-
-  // Scroll-driven timeline line
-  const { scrollYProgress } = useScroll({
-    target: timelineRef,
-    offset: ['start end', 'end start'],
-  });
-  const lineScaleY = useTransform(scrollYProgress, [0, 0.8], [0, 1]);
 
   if (isLoading) {
     return (
@@ -57,7 +49,7 @@ export default function ClientJourneyRoadmap() {
     ];
   };
 
-  const steps = getSteps();
+  const steps = getSteps() as { title: string; description: string; duration: string }[];
   const icons = [
     ChatBubbleOvalLeftIcon,
     PencilSquareIcon,
@@ -67,131 +59,154 @@ export default function ClientJourneyRoadmap() {
     Cog6ToothIcon,
   ];
 
+  const ActiveIcon = icons[activeIdx] || ChatBubbleOvalLeftIcon;
+  const activeStep = steps[activeIdx];
+
   return (
     <section className="section bg-gray-50 relative overflow-hidden" dir={dir}>
-      <div className={`absolute top-20 w-24 h-24 ${dir === 'rtl' ? 'right-16' : 'left-16'}`}>
-        <div className={`crescent ${dir === 'rtl' ? 'crescent-right' : 'crescent-left'} crescent-subtle text-gray-900`} />
+      <div className={`absolute top-20 w-32 h-32 opacity-50 pointer-events-none ${dir === 'rtl' ? 'right-16' : 'left-16'}`}>
+        <div className={`crescent ${dir === 'rtl' ? 'crescent-right' : 'crescent-left'} crescent-subtle text-gray-200`} />
       </div>
 
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4 lg:px-8">
         <SectionHeader
           eyebrow={t('eyebrow')}
           title={t('title')}
           subtitle={t('subtitle')}
-          className="mb-16"
+          className="mb-12 lg:mb-20"
         />
 
-        <div ref={timelineRef} className="relative">
-          {/* Scroll-driven timeline line */}
-          <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px transform -translate-x-1/2">
-            <div className="w-full h-full bg-gray-200" />
-            {!prefersReducedMotion && (
-              <motion.div
-                className="absolute inset-0 w-full bg-gray-400 origin-top"
-                style={{ scaleY: lineScaleY }}
-              />
-            )}
-          </div>
-
-          <div className="space-y-12">
+        <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 relative z-10 max-w-7xl mx-auto">
+          
+          {/* Left Side: Interactive Stepper List */}
+          <div className="lg:col-span-5 xl:col-span-4 flex flex-col gap-2 relative">
+            {/* Visual connecting line that goes through icons */}
+            <div className={`hidden lg:block absolute top-10 bottom-10 w-px bg-gray-200 z-0 ${dir === 'rtl' ? 'right-10' : 'left-10'}`}></div>
+            
             {steps.map((step, idx) => {
-              const Icon = icons[idx] || ChatBubbleOvalLeftIcon;
-              const isEven = idx % 2 === 0;
-              const shouldReverse = dir === 'rtl' ? !isEven : isEven;
+              const isActive = activeIdx === idx;
+              const StepIcon = icons[idx] || ChatBubbleOvalLeftIcon;
 
               return (
-                <StepCard
-                  key={step.title || idx}
-                  step={step}
-                  idx={idx}
-                  Icon={Icon}
-                  shouldReverse={shouldReverse}
-                  dir={dir}
-                  prefersReducedMotion={prefersReducedMotion}
-                />
+                <button
+                  key={idx}
+                  onClick={() => setActiveIdx(idx)}
+                  className={`relative z-10 flex items-center gap-4 p-4 rounded-xl transition-all duration-300 text-start w-full group ${
+                    isActive 
+                      ? 'bg-white shadow-sm border border-gray-100' 
+                      : 'hover:bg-gray-100/50 border border-transparent'
+                  }`}
+                  aria-selected={isActive}
+                  role="tab"
+                >
+                  <div className={`flex flex-shrink-0 items-center justify-center w-12 h-12 rounded-lg transition-colors duration-500 z-10 ${
+                    isActive 
+                      ? 'bg-gray-900 text-white shadow-md scale-105' 
+                      : 'bg-gray-50 text-gray-500 border border-gray-100 group-hover:bg-white group-hover:text-gray-900 group-hover:border-gray-200'
+                  }`}>
+                    <StepIcon className="w-5 h-5" />
+                  </div>
+                  
+                  <div className="flex-1">
+                    <h4 className={`text-sm md:text-base font-bold transition-colors duration-300 ${
+                      isActive ? 'text-gray-900' : 'text-gray-500 group-hover:text-gray-900'
+                    }`}>
+                      {step.title}
+                    </h4>
+                    <span className={`text-xs block mt-0.5 transition-colors duration-300 font-mono tracking-wide uppercase ${
+                      isActive ? 'text-gray-500 font-medium' : 'text-gray-400 group-hover:text-gray-500'
+                    }`}>
+                      {step.duration}
+                    </span>
+                  </div>
+
+                  {isActive && !prefersReducedMotion && (
+                    <motion.div 
+                      layoutId="activeTabIndicator"
+                      className="absolute inset-0 rounded-xl ring-2 ring-gray-900/5 pointer-events-none"
+                      initial={false}
+                      transition={{ type: 'spring', stiffness: 400, damping: 40 }}
+                    />
+                  )}
+                </button>
               );
             })}
           </div>
+
+          {/* Right Side: Stage Display */}
+          <div className="lg:col-span-7 xl:col-span-8">
+             <div className="sticky top-24 bg-white rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 overflow-hidden min-h-[400px] lg:min-h-[500px] flex items-center relative">
+               
+               {/* Decorative background number watermark */}
+               <AnimatePresence>
+                 <motion.div
+                   key={`watermark-${activeIdx}`}
+                   initial={{ opacity: 0, scale: 0.8 }}
+                   animate={{ opacity: 0.03, scale: 1 }}
+                   exit={{ opacity: 0, scale: 1.2 }}
+                   transition={{ duration: 0.8 }}
+                   className={`absolute text-[20rem] font-black text-gray-900 pointer-events-none select-none z-0 ${dir === 'rtl' ? 'left-8' : 'right-8'} top-1/2 -translate-y-1/2 leading-none`}
+                 >
+                   {activeIdx + 1}
+                 </motion.div>
+               </AnimatePresence>
+
+               {/* Stage Content */}
+               <div className="p-8 md:p-12 lg:p-16 w-full relative z-10">
+                 <AnimatePresence mode="wait">
+                   <motion.div
+                     key={`content-${activeIdx}`}
+                     initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: 15 }}
+                     animate={{ opacity: 1, y: 0 }}
+                     exit={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: -15 }}
+                     transition={{ duration: 0.3, ease: 'easeOut' }}
+                   >
+                     <div className="flex flex-col sm:flex-row gap-6 md:gap-8 items-start mb-8">
+                       <div className="w-20 h-20 rounded-2xl bg-gray-50 border border-gray-100 flex items-center justify-center shrink-0 shadow-sm relative overflow-hidden group">
+                         <div className="absolute inset-0 bg-gray-900 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
+                         <ActiveIcon className="w-10 h-10 text-gray-900 relative z-10 transition-colors duration-500 group-hover:text-white" />
+                       </div>
+                       
+                       <div className="pt-2">
+                         <div className="inline-flex items-center px-3 py-1 bg-gray-100 rounded-full text-xs font-bold tracking-widest text-gray-600 uppercase mb-4">
+                           Phase {String(activeIdx + 1).padStart(2, '0')} — {activeStep.duration}
+                         </div>
+                         <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight leading-tight">
+                           {activeStep.title}
+                         </h3>
+                       </div>
+                     </div>
+
+                     <div className={`${dir === 'rtl' ? 'sm:pr-[112px]' : 'sm:pl-[112px]'}`}>
+                        <p className="text-lg lg:text-xl text-gray-600 leading-relaxed max-w-2xl">
+                          {activeStep.description}
+                        </p>
+                        
+                        {/* Interactive Pagination Dots */}
+                        <div className="flex gap-2 mt-12">
+                           {steps.map((_, dotIdx) => (
+                              <button 
+                                key={dotIdx}
+                                aria-label={`Go to step ${dotIdx + 1}`}
+                                className={`h-1.5 rounded-full transition-all duration-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 ${
+                                  activeIdx === dotIdx 
+                                    ? 'w-8 bg-gray-900' 
+                                    : 'w-2 bg-gray-200 hover:bg-gray-400'
+                                }`}
+                                onClick={() => setActiveIdx(dotIdx)}
+                              />
+                           ))}
+                        </div>
+                     </div>
+                   </motion.div>
+                 </AnimatePresence>
+               </div>
+
+             </div>
+          </div>
+
         </div>
       </div>
     </section>
-  );
-}
-
-function StepCard({
-  step,
-  idx,
-  Icon,
-  shouldReverse,
-  dir,
-  prefersReducedMotion,
-}: {
-  step: { title: string; description: string; duration: string };
-  idx: number;
-  Icon: React.ComponentType<{ className?: string }>;
-  shouldReverse: boolean;
-  dir: string;
-  prefersReducedMotion: boolean | null;
-}) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-80px' });
-
-  // Zigzag: odd from left, even from right
-  const slideX = shouldReverse ? (dir === 'rtl' ? 40 : -40) : (dir === 'rtl' ? -40 : 40);
-
-  return (
-    <motion.div
-      ref={ref}
-      initial={prefersReducedMotion ? {} : { opacity: 0, x: slideX }}
-      animate={isInView ? { opacity: 1, x: 0 } : {}}
-      transition={prefersReducedMotion ? { duration: 0 } : { ...smoothSpring, delay: idx * 0.08 }}
-      className="relative"
-    >
-      <div className={`grid lg:grid-cols-2 gap-8 items-center ${shouldReverse ? '' : 'lg:text-right'}`}>
-        <div className={`${shouldReverse ? 'lg:order-1' : 'lg:order-2'}`}>
-          <div className="card">
-            <div className={`flex items-center gap-4 mb-4 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
-              <motion.div
-                className="w-12 h-12 bg-gray-50 border border-gray-200 rounded-sm flex items-center justify-center"
-                initial={prefersReducedMotion ? {} : { scale: 0.5, opacity: 0 }}
-                animate={isInView ? { scale: 1, opacity: 1 } : {}}
-                transition={prefersReducedMotion ? { duration: 0 } : { ...snappySpring, delay: idx * 0.08 + 0.2 }}
-              >
-                <Icon className="h-6 w-6 text-gray-700" />
-              </motion.div>
-              <div className="w-8 h-0.5 bg-gray-200" />
-              <span className="text-caption text-gray-500 uppercase tracking-wide">
-                {step.duration}
-              </span>
-            </div>
-
-            <h3 className="text-title text-gray-900 mb-3">{step.title}</h3>
-            <p className="text-body text-gray-600 leading-relaxed">{step.description}</p>
-          </div>
-        </div>
-
-        {/* Timeline marker */}
-        <div className={`hidden lg:flex items-center justify-center ${shouldReverse ? 'lg:order-2' : 'lg:order-1'}`}>
-          <motion.div
-            className="w-16 h-16 bg-white border-4 border-gray-200 rounded-sm flex items-center justify-center relative z-10"
-            initial={prefersReducedMotion ? {} : { scale: 0.5, opacity: 0 }}
-            animate={isInView ? { scale: 1, opacity: 1 } : {}}
-            transition={prefersReducedMotion ? { duration: 0 } : { ...snappySpring, delay: idx * 0.08 + 0.1 }}
-          >
-            <span className="text-lg font-medium text-gray-700">
-              {String(idx + 1).padStart(2, '0')}
-            </span>
-          </motion.div>
-        </div>
-      </div>
-
-      {/* Mobile timeline marker */}
-      <div className={`lg:hidden flex items-center gap-4 mt-4 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
-        <div className="w-8 h-8 bg-gray-100 border border-gray-200 rounded-sm flex items-center justify-center">
-          <span className="text-sm font-medium text-gray-600">{idx + 1}</span>
-        </div>
-        <div className="flex-1 h-px bg-gray-200" />
-      </div>
-    </motion.div>
   );
 }

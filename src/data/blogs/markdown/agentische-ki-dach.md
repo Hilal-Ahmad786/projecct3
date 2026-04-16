@@ -23,6 +23,9 @@ Im Gegensatz zu generativen KI-Modellen, die lediglich auf Prompts (Eingaben) re
 ---
 
 ### 1. Datenschutzkonforme Content-Strategie
+
+![Content Strategie](/images/Blogs/inner/tech-1.png)
+
 Agentische KI kann unter Berücksichtigung strenger Datenschutzrichtlinien Inhalte planen und optimieren:
 - Identifiziert Themen, die für die DACH-Zielgruppe relevant sind, bei minimalen datenschutzrechtlichen Bedenken.
 - Schlägt Inhaltsstrukturen vor, die Transparenz und Nutzerkontrolle über Daten hervorheben.

@@ -11,6 +11,9 @@ Türkiye, dijital dönüşüm yolculuğunda hızla ilerlerken, **Yapay Zeka (YZ)
 ## Türkiye'de YZ'nin Yükselişi
 
 ### 1. Sektörel Adaptasyon
+
+![Sektörel](/images/Blogs/inner/me-1.png)
+
 Türkiye'de YZ, lojistikten üretime, sağlıktan finansa kadar birçok sektörde kendine yer bulmaktadır. Özellikle lojistik sektöründe rota optimizasyonu gibi alanlarda YZ tabanlı çözümlerin kullanımı hızla artmaktadır. Bu, operasyonel maliyetleri düşürürken hizmet kalitesini son derece yükseltmektedir.
 
 ### 2. KOBİ'ler İçin Fırsatlar

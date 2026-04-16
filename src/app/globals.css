@@ -121,13 +121,14 @@
   --space-3xl: calc(var(--grid-unit) * 12);
   /* 96px */
 
-  /* Minimal Borders and Radius */
+  /* Master Rounded Design Radius System */
   --border-width: 1px;
   --radius-none: 0;
-  --radius-sm: 2px;
-  --radius-md: 4px;
-  --radius-lg: 6px;
-  --radius-xl: 8px;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-2xl: 48px;
 
   /* Swiss Design Shadows - Very Subtle */
   --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.04);
@@ -403,7 +404,7 @@ body {
   gap: var(--space-xs);
   padding: var(--space-sm) var(--space-lg);
   border: var(--border-width) solid transparent;
-  border-radius: var(--radius-sm);
+  border-radius: 9999px; /* Pill shaped buttons */
   font-family: var(--font-primary);
   font-size: 0.875rem;
   font-weight: 500;
@@ -612,16 +613,20 @@ body {
   scrollbar-width: thin;
   scrollbar-color: var(--border-gray) transparent;
 }
+
 .scrollbar-thin::-webkit-scrollbar {
   width: 3px;
 }
+
 .scrollbar-thin::-webkit-scrollbar-track {
   background: transparent;
 }
+
 .scrollbar-thin::-webkit-scrollbar-thumb {
   background: var(--border-gray);
   border-radius: 3px;
 }
+
 .scrollbar-thin::-webkit-scrollbar-thumb:hover {
   background: var(--secondary-gray);
 }
@@ -706,7 +711,7 @@ body {
   border: 1px solid var(--border-gray);
   border-radius: var(--radius-lg);
   transition: border-color var(--duration-short) var(--easing-standard),
-              box-shadow var(--duration-short) var(--easing-standard);
+    box-shadow var(--duration-short) var(--easing-standard);
 }
 
 .form-input::placeholder {
@@ -778,4 +783,297 @@ textarea.form-input {
 .form-input-glass:focus {
   background: var(--glass-bg-strong);
   border-color: var(--primary-dark);
+}
+
+/* =========================================
+   Blog Article - Premium Reading Experience
+   ========================================= */
+
+.blog-article {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1.125rem;
+  line-height: 1.9;
+  color: #374151;
+  letter-spacing: 0.01em;
+}
+
+/* Headings */
+.blog-article h1 {
+  font-family: var(--font-primary);
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #111827;
+  margin-top: 3.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.025em;
+}
+
+.blog-article h2 {
+  font-family: var(--font-primary);
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #111827;
+  margin-top: 3rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #e5e7eb;
+  letter-spacing: -0.02em;
+}
+
+.blog-article h3 {
+  font-family: var(--font-primary);
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #1f2937;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
+}
+
+.blog-article h4 {
+  font-family: var(--font-primary);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #1f2937;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Paragraphs */
+.blog-article p {
+  margin-bottom: 1.75rem;
+  color: #374151;
+}
+
+/* Links */
+.blog-article a {
+  color: var(--accent-emerald);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  font-weight: 500;
+  transition: color var(--duration-short) var(--easing-standard);
+}
+
+.blog-article a:hover {
+  color: #0e7464;
+}
+
+/* Strong / Bold */
+.blog-article strong {
+  font-weight: 700;
+  color: #111827;
+}
+
+/* Images */
+.blog-article img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin: 2.5rem 0;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f3f4f6;
+}
+
+/* Blockquotes */
+.blog-article blockquote {
+  margin: 2.5rem 0;
+  padding: 1.5rem 1.75rem;
+  border-left: 4px solid var(--accent-emerald);
+  background-color: #f0fdf8;
+  border-radius: 0 12px 12px 0;
+  font-style: italic;
+  color: #1f2937;
+}
+
+.blog-article blockquote p {
+  margin-bottom: 0;
+}
+
+/* Unordered Lists */
+.blog-article ul {
+  margin: 1.75rem 0;
+  padding-left: 1.75rem;
+  list-style-type: disc;
+}
+
+.blog-article ul li {
+  margin-bottom: 0.75rem;
+  padding-left: 0.5rem;
+  color: #374151;
+  line-height: 1.8;
+}
+
+/* Ordered Lists */
+.blog-article ol {
+  margin: 1.75rem 0;
+  padding-left: 1.75rem;
+  list-style-type: decimal;
+}
+
+.blog-article ol li {
+  margin-bottom: 0.75rem;
+  padding-left: 0.5rem;
+  color: #374151;
+  line-height: 1.8;
+}
+
+/* Tables */
+.blog-article table {
+  width: 100%;
+  margin: 2.5rem 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e5e7eb;
+  font-family: var(--font-primary);
+  font-size: 0.9375rem;
+}
+
+.blog-article thead {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+.blog-article th {
+  padding: 1rem 1.25rem;
+  text-align: left;
+  font-weight: 600;
+  color: #1e293b;
+  border-bottom: 2px solid #e2e8f0;
+  white-space: nowrap;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.blog-article td {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #f1f5f9;
+  color: #475569;
+  vertical-align: top;
+}
+
+.blog-article tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.blog-article tbody tr:hover {
+  background-color: #fafbfc;
+}
+
+/* Code (inline) */
+.blog-article code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  padding: 0.2em 0.5em;
+  background-color: #f1f5f9;
+  color: #0f766e;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+/* Code blocks */
+.blog-article pre {
+  margin: 2.5rem 0;
+  padding: 1.5rem;
+  background-color: #1e293b;
+  color: #e2e8f0;
+  border-radius: 12px;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.7;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.blog-article pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* Horizontal Rules */
+.blog-article hr {
+  margin: 3rem 0;
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #d1d5db, transparent);
+}
+
+/* First paragraph (drop-cap style feel via larger text) */
+.blog-article>p:first-of-type {
+  font-size: 1.25rem;
+  line-height: 1.85;
+  color: #1f2937;
+}
+
+/* RTL support */
+[dir="rtl"] .blog-article {
+  text-align: right;
+}
+
+[dir="rtl"] .blog-article blockquote {
+  border-left: none;
+  border-right: 4px solid var(--accent-emerald);
+  border-radius: 12px 0 0 12px;
+}
+
+[dir="rtl"] .blog-article th {
+  text-align: right;
+}
+
+[dir="rtl"] .blog-article ul,
+[dir="rtl"] .blog-article ol {
+  padding-left: 0;
+  padding-right: 1.75rem;
+}
+
+/* Make the first heading right after the top of the article not have extra top margin */
+.blog-article>h1:first-child,
+.blog-article>h2:first-child,
+.blog-article>h3:first-child {
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .blog-article {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .blog-article h1 {
+    font-size: 1.75rem;
+  }
+
+  .blog-article h2 {
+    font-size: 1.375rem;
+  }
+
+  .blog-article h3 {
+    font-size: 1.125rem;
+  }
+
+  .blog-article table {
+    font-size: 0.8125rem;
+  }
+
+  .blog-article th,
+  .blog-article td {
+    padding: 0.75rem;
+  }
+
+  .blog-article img {
+    margin: 1.75rem 0;
+    border-radius: 8px;
+  }
 }

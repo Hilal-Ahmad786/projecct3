@@ -247,7 +247,7 @@ export default function ServicesSection() {
   const tCommon = useSectionTranslations('common');
   const prefersReducedMotion = useReducedMotion();
 
-  const [activeCategory, setActiveCategory] = useState('web');
+  const [expandedCategory, setExpandedCategory] = useState<string | null>(null);
 
   if (isLoading) {
     return (
@@ -261,206 +261,265 @@ export default function ServicesSection() {
   }
 
   const categories = [
-    { key: 'web', label: t('categories.web') },
-    { key: 'ai', label: t('categories.ai') },
-    { key: 'marketing', label: t('categories.marketing') },
-    { key: 'design', label: t('categories.design') },
-    { key: 'infrastructure', label: t('categories.infrastructure') },
-    { key: 'consulting', label: t('categories.consulting') },
+    { key: 'web', label: t('categories.web'), icon: CodeBracketIcon, desc: "Scalable web & mobile applications driving enterprise efficiency." },
+    { key: 'ai', label: t('categories.ai'), icon: CpuChipIcon, desc: "Next-generation artificial intelligence and data automation solutions." },
+    { key: 'marketing', label: t('categories.marketing'), icon: RocketLaunchIcon, desc: "Data-driven digital marketing, SEO, and global growth strategies." },
+    { key: 'design', label: t('categories.design'), icon: PaintBrushIcon, desc: "Premium UI/UX design, branding, and immersive digital experiences." },
+    { key: 'infrastructure', label: t('categories.infrastructure'), icon: ServerStackIcon, desc: "Robust cloud architecture, devops, and enterprise cybersecurity." },
+    { key: 'consulting', label: t('categories.consulting'), icon: LightBulbIcon, desc: "Strategic technology consulting for digital transformation." },
   ];
 
-  const currentServices = servicesByCategory[activeCategory] || [];
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: prefersReducedMotion ? 0 : 0.1 },
-    },
-    exit: {
-      opacity: 0,
-      transition: { staggerChildren: 0.05, staggerDirection: -1 },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 24, scale: 0.95 },
-    visible: {
-      opacity: 1, y: 0, scale: 1,
-      transition: prefersReducedMotion ? { duration: 0 } : smoothSpring,
-    },
-    exit: {
-      opacity: 0, y: -12, scale: 0.95,
-      transition: { duration: 0.2 },
-    },
-  };
+  const currentServices = expandedCategory ? servicesByCategory[expandedCategory] || [] : [];
+  const activeLabel = expandedCategory ? categories.find(c => c.key === expandedCategory)?.label : '';
 
   return (
-    <section className="section gradient-bg-mesh relative overflow-hidden" dir={dir}>
-      <BackgroundBlobs className="opacity-40" />
+    <section className="section bg-background-gray relative overflow-hidden py-24 lg:py-32 min-h-screen" dir={dir}>
+      <BackgroundBlobs className="opacity-30" />
 
-      <div className={`absolute top-32 w-28 h-28 ${dir === 'rtl' ? 'left-16' : 'right-16'}`}>
+      {/* Decorative crescent */}
+      <div className={`absolute top-32 w-28 h-28 pointer-events-none ${dir === 'rtl' ? 'left-16' : 'right-16'} z-0`}>
         <div className={`crescent ${dir === 'rtl' ? 'crescent-left' : 'crescent-right'} crescent-subtle text-gray-900`} />
       </div>
 
-      <div className="container mx-auto">
-        <SectionHeader
-          eyebrow={t('eyebrow')}
-          title={t('title')}
-          subtitle={t('subtitle')}
-          className="mb-16"
-        />
-
-        {/* Category Navigation */}
-        <div className="flex flex-wrap justify-center gap-2 mb-16">
-          {categories.map((category) => (
-            <button
-              key={category.key}
-              onClick={() => setActiveCategory(category.key)}
-              className={`
-                relative px-6 py-3 text-sm font-medium border rounded-sm transition-colors duration-250
-                ${activeCategory === category.key
-                  ? 'text-white border-gray-900'
-                  : 'bg-white text-gray-600 border-gray-200 hover:border-gray-300 hover:text-gray-900'
-                }
-              `}
-            >
-              {activeCategory === category.key && (
-                <motion.div
-                  layoutId="activeCategoryPill"
-                  className="absolute inset-0 bg-gray-900 rounded-sm"
-                  transition={prefersReducedMotion ? { duration: 0 } : snappySpring}
-                />
-              )}
-              <span className="relative z-10">{category.label}</span>
-            </button>
-          ))}
-        </div>
-
-        {/* Services Grid */}
+      <div className="container mx-auto px-4 md:px-8 max-w-[1400px] relative z-10">
+        
         <AnimatePresence mode="wait">
-          <motion.div
-            key={activeCategory}
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
-            exit="exit"
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
-          >
-            {currentServices.map((service) => {
-              const tKey = toKey(service.slug);
-              const Icon = icons[service.slug] || CpuChipIcon;
-              const hasChildren = service.children && service.children.length > 0;
-
-              return (
-                <motion.div
-                  key={service.slug}
-                  variants={itemVariants}
-                  whileHover={prefersReducedMotion ? {} : {
-                    rotateX: -2, rotateY: 2,
-                    boxShadow: '0 12px 40px rgba(0,0,0,0.08)',
-                    transition: { duration: 0.3 },
-                  }}
-                  className="glass group hover:glass-strong hover:border-glass transition-all duration-300 rounded-lg p-8 flex flex-col"
-                  style={{ perspective: 800, transformStyle: 'preserve-3d' }}
-                >
-                  {/* Icon */}
-                  <div className="flex items-center gap-4 mb-6">
-                    <motion.div
-                      className="w-12 h-12 bg-gray-50 border border-gray-200 rounded-sm flex items-center justify-center group-hover:bg-gray-100 transition-colors"
-                      whileHover={prefersReducedMotion ? {} : { rotate: 6, scale: 1.05 }}
-                      transition={snappySpring}
+          {!expandedCategory ? (
+            
+            /* VIEW 1: THE BENTO GRID DASHBOARD */
+            <motion.div
+              key="grid-view"
+              initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, scale: 0.95, filter: 'blur(10px)' }}
+              animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
+              exit={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, scale: 0.95, filter: 'blur(10px)' }}
+              transition={prefersReducedMotion ? { duration: 0 } : { duration: 0.5, ease: [0.23, 1, 0.32, 1] }}
+            >
+              <SectionHeader
+                eyebrow={t('eyebrow')}
+                title={t('title')}
+                subtitle={t('subtitle')}
+                className="mb-8 md:mb-12"
+                centered={true}
+              />
+              
+              {/* The Fast Category Tabs for Dashboard View */}
+              <div className="flex flex-wrap justify-center gap-2 mb-12 lg:mb-16">
+                {categories.map((category) => {
+                  const TabIcon = category.icon;
+                  return (
+                    <button
+                      key={category.key}
+                      onClick={() => setExpandedCategory(category.key)}
+                      className="relative px-5 py-2.5 text-sm font-bold rounded-xl transition-all duration-300 flex items-center gap-2.5 group overflow-hidden border bg-white shadow-sm border-gray-100 hover:shadow-md text-gray-600 hover:text-gray-900 hover:border-gray-200"
                     >
-                      <Icon className="h-6 w-6 text-gray-700" />
-                    </motion.div>
-                    <div className="w-8 h-0.5 bg-gray-200 group-hover:bg-gray-300 transition-colors" />
-                  </div>
-
-                  <h3 className="text-title text-gray-900 mb-3">{tServices(`${tKey}.title`)}</h3>
-                  <p className="text-body text-gray-600 mb-6 leading-relaxed">{tServices(`${tKey}.description`)}</p>
-
-                  {/* Features */}
-                  <div className="space-y-2 mb-6">
-                    {(() => {
-                      const features = tServices(`${tKey}.features`);
-                      const arr = Array.isArray(features) ? features : [features];
-                      return arr.map((feature, idx) => (
-                        <div key={idx} className="flex items-center gap-3">
-                          <div className="w-1 h-1 bg-gray-400 rounded-full flex-shrink-0" />
-                          <span className="text-caption text-gray-500">{feature}</span>
+                      <TabIcon className="w-4 h-4 relative z-10 text-gray-400 group-hover:text-gray-900 transition-colors" />
+                      <span className="relative z-10">{category.label}</span>
+                    </button>
+                  );
+                })}
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                {categories.map((cat, idx) => {
+                  const Icon = cat.icon;
+                  return (
+                    <motion.button
+                      key={cat.key}
+                      onClick={() => setExpandedCategory(cat.key)}
+                      whileHover={prefersReducedMotion ? {} : { y: -8 }}
+                      transition={smoothSpring}
+                      className="glass bg-white flex flex-col items-start text-left p-8 md:p-10 hover:bg-gray-50 border border-white hover:border-gray-200 rounded-[2rem] group overflow-hidden relative shadow-[0_8px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)] w-full text-left focus:outline-none"
+                    >
+                      <div className="flex items-center gap-4 mb-6">
+                        <div className="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center relative z-10 group-hover:scale-110 group-hover:bg-primary transition-all duration-500 border border-gray-100 shadow-sm shrink-0">
+                           <Icon className="w-8 h-8 text-primary group-hover:text-white transition-colors duration-500" />
                         </div>
-                      ));
-                    })()}
-                  </div>
-
-                  {/* Sub-services — always visible */}
-                  {hasChildren && (
-                    <div className="mb-6 pt-5 border-t border-gray-200">
-                      <p className="text-overline text-gray-400 mb-4">Specialized Services</p>
-                      <div className="space-y-1">
-                        {service.children!.map((childSlug) => {
-                          const childKey = toKey(childSlug);
-                          const ChildIcon = icons[childSlug] || CpuChipIcon;
-                          return (
-                            <Link
-                              key={childSlug}
-                              href={`/${locale}/services/${childSlug}`}
-                              className="group/child flex items-center gap-3 px-3 py-2 rounded-sm hover:bg-gray-50 transition-colors"
-                            >
-                              <div className="w-7 h-7 bg-gray-50 border border-gray-200 rounded-sm flex items-center justify-center flex-shrink-0 group-hover/child:bg-gray-100 transition-colors">
-                                <ChildIcon className="w-3.5 h-3.5 text-gray-500 group-hover/child:text-gray-700 transition-colors" />
-                              </div>
-                              <span className="text-caption font-medium text-gray-600 group-hover/child:text-gray-900 transition-colors">
-                                {tServices(`${childKey}.title`)}
-                              </span>
-                              <svg className={`w-3.5 h-3.5 text-gray-300 ${dir === 'rtl' ? 'mr-auto rotate-180' : 'ml-auto'} opacity-0 group-hover/child:opacity-100 transition-opacity`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                              </svg>
-                            </Link>
-                          );
-                        })}
+                        <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 relative z-10 tracking-tight leading-tight group-hover:text-primary transition-colors duration-300 text-left">
+                          {cat.label}
+                        </h3>
                       </div>
-                    </div>
-                  )}
+                      
+                      {/* Short Description added back */}
+                      <p className="text-sm lg:text-base text-gray-600 font-medium mb-6 relative z-10 leading-relaxed text-left line-clamp-2">
+                         {cat.desc}
+                      </p>
 
-                  {/* Learn More — pushed to bottom */}
-                  <div className="mt-auto">
-                    <Button
-                      href={`/services/${service.slug}`}
-                      variant="ghost"
-                      size="sm"
-                      rightIcon={
-                        <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-                            d={dir === 'rtl' ? "M11 17l-5-5m0 0l5-5m-5 5h12" : "M13 7l5 5m0 0l-5 5m5-5H6"} />
-                        </svg>
-                      }
-                      className="w-full justify-between"
+                      {/* Important bullet points fetched from top 3 features */}
+                      <div className="space-y-2 mb-8 relative z-10 w-full">
+                         {servicesByCategory[cat.key]?.slice(0, 3).map((s, i) => ( 
+                            <div key={i} className={`flex items-start gap-3 ${dir === 'rtl' ? 'flex-row-reverse text-right' : ''}`}>
+                              <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0 opacity-70 group-hover:opacity-100 transition-opacity" />
+                              <span className="text-sm font-medium text-gray-600 leading-snug group-hover:text-gray-900 transition-colors text-left">
+                                 {tServices(`${toKey(s.slug)}.title`)}
+                              </span>
+                            </div>
+                         ))}
+                      </div>
+                      
+                      <div className="mt-auto pt-6 border-t border-gray-100/50 flex items-center justify-between w-full relative z-10 group-hover:border-primary/20 transition-colors">
+                         <span className="text-xs sm:text-sm font-bold tracking-widest uppercase text-gray-500 group-hover:text-gray-900 transition-colors">
+                           {servicesByCategory[cat.key]?.length} Major Services
+                         </span>
+                         <div className={`w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center text-white scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-x-0 ${dir === 'rtl' ? 'translate-x-4' : '-translate-x-4'}`}>
+                            <svg className={`w-4 h-4 ${dir === 'rtl' ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                         </div>
+                      </div>
+                      
+                      {/* Massive absolute subtle background decorative icon overlay */}
+                      <Icon className={`absolute -bottom-16 w-64 h-64 text-gray-900/[0.03] group-hover:text-primary/10 group-hover:-rotate-12 group-hover:scale-110 transition-all duration-700 pointer-events-none ${dir === 'rtl' ? '-left-16' : '-right-16'}`} />
+                    </motion.button>
+                  );
+                })}
+              </div>
+
+              {/* Bottom CTA */}
+              <div className="mt-16 sm:mt-24 text-center pb-8">
+                 <Button href="/contact" variant="primary" size="lg">
+                    {t('startProject')}
+                 </Button>
+              </div>
+
+            </motion.div>
+            
+          ) : (
+            
+            /* VIEW 2: THE EXPANDED CATEGORY DETAILS */
+            <motion.div
+              key="detail-view"
+              initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, scale: 1.05, filter: 'blur(10px)' }}
+              animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
+              exit={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, scale: 1.05, filter: 'blur(10px)' }}
+              transition={prefersReducedMotion ? { duration: 0 } : { duration: 0.5, ease: [0.23, 1, 0.32, 1] }}
+            >
+              
+              {/* Dynamic Top Navigation Bar With Tabs */}
+              <div className="mb-12 lg:mb-16">
+                <div className={`flex flex-col md:flex-row md:items-end justify-between mb-8 gap-8 border-b border-gray-200/50 pb-8 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
+                  <div>
+                    <button 
+                      onClick={() => setExpandedCategory(null)}
+                      className={`flex items-center gap-2 text-sm font-bold text-gray-500 hover:text-primary transition-colors mb-6 uppercase tracking-wider group ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}
                     >
-                      {tCommon('learnMore')}
-                    </Button>
+                      <svg className={`w-5 h-5 transform transition-transform ${dir === 'rtl' ? 'group-hover:translate-x-1 rotate-180' : 'group-hover:-translate-x-1'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                      </svg>
+                      Back to Selection
+                    </button>
+                    <h2 className={`text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight ${dir === 'rtl' ? 'text-right' : 'text-left'}`}>
+                      {activeLabel}
+                    </h2>
                   </div>
-                </motion.div>
-              );
-            })}
-          </motion.div>
+                  
+                  <div className="shrink-0 flex items-center">
+                    <Button href="/contact" variant="primary" size="lg">{t('startProject')}</Button>
+                  </div>
+                </div>
+
+                {/* The Fast Category Tabs */}
+                <div className="flex flex-wrap justify-start gap-2">
+                  {categories.map((category) => {
+                    const isActive = expandedCategory === category.key;
+                    const TabIcon = category.icon;
+                    return (
+                      <button
+                        key={category.key}
+                        onClick={() => setExpandedCategory(category.key)}
+                        className={`
+                          relative px-4 py-2.5 text-sm font-bold rounded-xl transition-all duration-300 flex items-center gap-2.5 group overflow-hidden border
+                          ${isActive
+                            ? 'text-white border-transparent shadow-[0_4px_15px_rgba(26,26,26,0.15)]'
+                            : 'bg-white shadow-sm border-gray-100 hover:shadow-md text-gray-600 hover:text-gray-900 hover:border-gray-200'
+                          }
+                        `}
+                      >
+                        {isActive && !prefersReducedMotion && (
+                          <motion.div
+                            layoutId="activeCategoryPillDetail"
+                            className="absolute inset-0 bg-gray-900"
+                            transition={smoothSpring}
+                            style={{ zIndex: -1 }}
+                          />
+                        )}
+                        {isActive && prefersReducedMotion && (
+                          <div className="absolute inset-0 bg-gray-900" style={{ zIndex: -1 }} />
+                        )}
+                        
+                        <TabIcon className={`w-4 h-4 relative z-10 ${isActive ? 'text-white' : 'text-gray-400 group-hover:text-gray-900'} transition-colors`} />
+                        <span className="relative z-10">{category.label}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* The Details Grid mapped with current services */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                {currentServices.map((service, idx) => {
+                  const tKey = toKey(service.slug);
+                  const Icon = icons[service.slug] || CpuChipIcon;
+                  const hasChildren = service.children && service.children.length > 0;
+
+                  return (
+                    <motion.div
+                      key={service.slug}
+                      initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 30 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={prefersReducedMotion ? { duration: 0 } : { ...smoothSpring, delay: idx * 0.05 }}
+                      className="glass bg-white/80 backdrop-blur-xl border border-white hover:border-gray-200 rounded-[2rem] overflow-hidden group flex flex-col shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.06)] transition-all duration-500 min-h-[400px] relative"
+                    >
+                      <Link href={`/${locale}/services/${service.slug}`} className="absolute inset-0 z-20"><span className="sr-only">{tCommon('learnMore')}</span></Link>
+
+                      <div className="p-8 md:p-10 pb-0 flex-1 relative">
+                        {/* Huge modern Icon Box */}
+                        <div className="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center border border-gray-100 shadow-sm mb-6 group-hover:scale-105 group-hover:-rotate-3 transition-transform duration-500 relative overflow-hidden">
+                           <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                           <Icon className="h-8 w-8 text-primary/80 group-hover:text-primary transition-colors" />
+                        </div>
+                        
+                        <h3 className={`text-2xl font-bold text-gray-900 mb-4 tracking-tight group-hover:text-primary transition-colors ${dir === 'rtl' ? 'text-right' : 'text-left'}`}>
+                          {tServices(`${tKey}.title`)}
+                        </h3>
+                        <p className={`text-base text-gray-600 mb-8 font-medium leading-relaxed ${dir === 'rtl' ? 'text-right' : 'text-left'}`}>
+                          {tServices(`${tKey}.description`)}
+                        </p>
+
+                        {/* Top Features */}
+                        <div className="space-y-3 mb-8">
+                          {(() => {
+                            const features = tServices(`${tKey}.features`);
+                            const arr: string[] = Array.isArray(features) ? features : (typeof features === 'string' ? [features] : []);
+                            return arr.slice(0, 3).map((feature, i) => ( 
+                              <div key={i} className={`flex items-start gap-3 ${dir === 'rtl' ? 'flex-row-reverse text-right' : ''}`}>
+                                <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0 opacity-70 group-hover:opacity-100 transition-opacity" />
+                                <span className="text-sm font-medium text-gray-600 leading-snug group-hover:text-gray-900 transition-colors">{feature}</span>
+                              </div>
+                            ));
+                          })()}
+                        </div>
+                      </div>
+
+                      {/* Specialized Services Bar */}
+                      <div className={`mt-auto px-8 md:px-10 py-6 bg-gray-50/80 border-t border-gray-100 flex items-center justify-between group-hover:bg-gray-900 transition-colors duration-300 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
+                         <span className="text-xs sm:text-sm font-bold text-gray-500 group-hover:text-white transition-colors uppercase tracking-widest">
+                            {hasChildren ? `${service.children?.length} Specialties` : 'Explore Details'}
+                         </span>
+                         <div className="w-10 h-10 rounded-full bg-white border border-gray-200 group-hover:border-transparent shadow-sm flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <svg className={`w-5 h-5 text-gray-900 ${dir === 'rtl' ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                         </div>
+                      </div>
+                      
+                    </motion.div>
+                  );
+                })}
+              </div>
+            </motion.div>
+          )}
         </AnimatePresence>
 
-        {/* Bottom CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 32 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={prefersReducedMotion ? { duration: 0 } : { ...smoothSpring, delay: 0.3 }}
-          viewport={{ once: true }}
-          className="text-center mt-16 pt-16 border-t border-gray-200"
-        >
-          <h3 className="text-title text-gray-900 mb-4">{t('readyToStart')}</h3>
-          <p className="text-body text-gray-600 mb-8 max-w-lg mx-auto">{t('readyDescription')}</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="primary" size="lg">{t('startProject')}</Button>
-            <Button href="/projects" variant="secondary" size="lg">{t('viewWork')}</Button>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

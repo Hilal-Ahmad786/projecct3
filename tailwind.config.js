@@ -33,6 +33,15 @@ module.exports = {
         sans: ['Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
         mono: ['JetBrains Mono', 'SF Mono', 'Consolas', 'monospace'],
       },
+      borderRadius: {
+        'none': 'var(--radius-none)',
+        'sm': 'var(--radius-sm)',
+        DEFAULT: 'var(--radius-md)',
+        'md': 'var(--radius-md)',
+        'lg': 'var(--radius-lg)',
+        'xl': 'var(--radius-xl)',
+        '2xl': 'var(--radius-2xl)',
+      },
       backdropBlur: {
         xs: '2px',
         sm: '4px',

@@ -3,14 +3,16 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
-import { ChevronDownIcon } from '@heroicons/react/24/solid';
+import { ChatBubbleBottomCenterTextIcon } from '@heroicons/react/24/outline';
 import SectionHeader from '@/components/SectionHeader';
+import BackgroundBlobs from '@/components/BackgroundBlobs';
 import Button from '@/components/Button';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
-import { smoothSpring, snappySpring } from '@/lib/animations';
+import { smoothSpring } from '@/lib/animations';
 
 export default function FAQSection() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  // Start with the first pill active
+  const [activeIndex, setActiveIndex] = useState<number>(0);
   const { dir, isLoading, t: tGlobal } = useTranslations();
   const t = useSectionTranslations('faq');
   const prefersReducedMotion = useReducedMotion();
@@ -46,133 +48,134 @@ export default function FAQSection() {
 
   const faqs = getFAQs();
 
-  const toggle = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
   return (
-    <section className="section gradient-bg-emerald relative overflow-hidden" dir={dir}>
-      <div className={`absolute top-20 w-24 h-24 opacity-[0.02] ${dir === 'rtl' ? 'left-20' : 'right-20'}`}>
+    <section className="section bg-background-gray relative overflow-hidden py-24 lg:py-32" dir={dir}>
+      <BackgroundBlobs className="opacity-30" />
+
+      {/* Subtle decorative ring */}
+      <div className={`absolute top-20 w-24 h-24 opacity-[0.02] ${dir === 'rtl' ? 'left-20' : 'right-20'} pointer-events-none`}>
         <div className="w-full h-full border border-gray-900" style={{ clipPath: 'circle(40% at 70% 30%)' }} />
       </div>
 
-      <div className="container mx-auto">
-        <SectionHeader eyebrow={t('eyebrow')} title={t('title')} subtitle={t('subtitle')} className="mb-16" />
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 max-w-[1200px]">
+        <SectionHeader eyebrow={t('eyebrow')} title={t('title')} subtitle={t('subtitle')} className="mb-12 md:mb-16" />
 
-        <div className="max-w-3xl mx-auto">
-          <div className="space-y-4">
-            {faqs.map((faq, index) => {
-              const isOpen = openIndex === index;
-              return (
-                <motion.div
-                  key={index}
-                  initial={prefersReducedMotion ? {} : { opacity: 0, y: 16 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={prefersReducedMotion ? { duration: 0 } : { ...smoothSpring, delay: index * 0.05 }}
-                  viewport={{ once: true }}
-                  whileHover={prefersReducedMotion ? {} : { x: dir === 'rtl' ? -3 : 3 }}
-                  className="glass hover:glass-strong transition-all duration-300 rounded-lg overflow-hidden relative"
-                >
-                  {/* Active left border accent */}
-                  <AnimatePresence>
-                    {isOpen && (
-                      <motion.div
-                        className={`absolute top-0 bottom-0 w-1 bg-gray-900 ${dir === 'rtl' ? 'right-0' : 'left-0'}`}
-                        initial={{ scaleY: 0 }}
-                        animate={{ scaleY: 1 }}
-                        exit={{ scaleY: 0 }}
-                        transition={prefersReducedMotion ? { duration: 0 } : smoothSpring}
-                        style={{ originY: 0 }}
-                      />
-                    )}
-                  </AnimatePresence>
-
-                  <button
-                    onClick={() => toggle(index)}
-                    className={`w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors focus:outline-none focus:bg-gray-50 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}
-                    aria-expanded={isOpen}
-                  >
-                    <span className={`font-medium text-gray-900 ${dir === 'rtl' ? 'pl-4' : 'pr-4'}`}>
-                      {faq.question}
-                    </span>
-                    <motion.div
-                      className="flex-shrink-0"
-                      animate={{ rotate: isOpen ? 180 : 0 }}
-                      transition={prefersReducedMotion ? { duration: 0 } : snappySpring}
-                    >
-                      <ChevronDownIcon className="w-5 h-5 text-gray-600" />
-                    </motion.div>
-                  </button>
-
-                  <AnimatePresence initial={false}>
-                    {isOpen && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: 'auto', opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={prefersReducedMotion ? { duration: 0 } : {
-                          height: smoothSpring,
-                          opacity: { duration: 0.25 },
-                        }}
-                        className="overflow-hidden"
-                      >
-                        <div className="px-6 pb-6 border-t border-gray-100">
-                          <motion.p
-                            className="text-gray-600 leading-relaxed pt-4"
-                            initial={prefersReducedMotion ? {} : { filter: 'blur(4px)' }}
-                            animate={{ filter: 'blur(0px)' }}
-                            transition={{ duration: 0.3, delay: 0.1 }}
-                          >
-                            {faq.answer}
-                          </motion.p>
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </motion.div>
-              );
-            })}
-          </div>
-
-          {/* Contact CTA */}
-          <motion.div
-            initial={prefersReducedMotion ? {} : { opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={prefersReducedMotion ? { duration: 0 } : { ...smoothSpring, delay: 0.3 }}
-            viewport={{ once: true }}
-            className="mt-12 glass-strong rounded-lg p-8 text-center"
-          >
-            <h3 className="text-lg font-medium text-gray-900 mb-4">{t('stillHaveQuestions')}</h3>
-            <p className="text-gray-600 mb-6">{t('stillHaveQuestionsDescription')}</p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                href="/contact"
-                variant="primary"
-                size="lg"
-                rightIcon={
-                  <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-                      d={dir === 'rtl' ? "M11 17l-5-5m0 0l5-5m-5 5h12" : "M13 7l5 5m0 0l-5 5m5-5H6"} />
-                  </svg>
-                }
+        {/* The Floating Pills Cloud */}
+        <motion.div 
+          initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={prefersReducedMotion ? { duration: 0 } : smoothSpring}
+          className="flex flex-wrap justify-center gap-3 md:gap-4 mb-12 sm:mb-16 relative z-10"
+        >
+          {faqs.map((faq, index) => {
+            const isActive = activeIndex === index;
+            return (
+              <button
+                key={index}
+                onClick={() => setActiveIndex(index)}
+                className={`relative px-5 py-2.5 sm:px-6 sm:py-3 rounded-full text-sm sm:text-base font-medium transition-colors duration-300 group ${
+                  isActive ? 'text-white shadow-[0_4px_20px_rgba(26,26,26,0.3)]' : 'text-gray-600 hover:text-primary bg-white/50 backdrop-blur-md border border-gray-200/50 hover:bg-white hover:border-gray-300'
+                }`}
               >
-                {t('contactUs')}
-              </Button>
-              <Button
-                href="mailto:info@paktechnology.com"
-                variant="secondary"
-                size="lg"
-                leftIcon={
-                  <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
-                }
-              >
-                {t('sendEmail')}
-              </Button>
-            </div>
-          </motion.div>
+                {/* Active Pill Highlight */}
+                {isActive && !prefersReducedMotion && (
+                  <motion.div
+                    layoutId="faqPillHighlight"
+                    className="absolute inset-0 bg-gray-900 rounded-full"
+                    initial={false}
+                    transition={smoothSpring}
+                    style={{ zIndex: -1 }}
+                  />
+                )}
+                {/* Fallback for reduced motion active state */}
+                {isActive && prefersReducedMotion && (
+                  <div className="absolute inset-0 bg-gray-900 rounded-full" style={{ zIndex: -1 }} />
+                )}
+                
+                <span className="relative z-10">{faq.question}</span>
+              </button>
+            )
+          })}
+        </motion.div>
+
+        {/* The Answer Stage */}
+        <div className="max-w-4xl mx-auto relative z-10 min-h-[300px]">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeIndex}
+              initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 15, filter: 'blur(4px)' }}
+              animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+              exit={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: -15, filter: 'blur(4px)' }}
+              transition={{ duration: 0.35, ease: "easeInOut" }}
+              className="glass bg-white/70 backdrop-blur-2xl border border-white shadow-[0_20px_60px_rgba(0,0,0,0.04)] rounded-3xl p-8 sm:p-10 md:p-16 w-full"
+            >
+              <div className={`flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-8 ${dir === 'rtl' ? 'sm:flex-row-reverse' : ''}`}>
+                
+                {/* Decorative Avatar/Letter block */}
+                <div className="w-16 h-16 sm:w-20 sm:h-20 shrink-0 bg-gray-50 rounded-2xl flex items-center justify-center border border-gray-200/80 shadow-sm relative overflow-hidden group">
+                  <div className="absolute inset-0 bg-primary/5 group-hover:bg-primary/10 transition-colors" />
+                  <ChatBubbleBottomCenterTextIcon className="w-8 h-8 sm:w-10 sm:h-10 text-primary/80 group-hover:text-primary group-hover:scale-110 transition-all duration-500" />
+                </div>
+                
+                <div className="flex-grow text-center sm:text-left h-full">
+                  <h3 className={`text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight ${dir === 'rtl' ? 'sm:text-right' : 'sm:text-left'}`}>
+                    {faqs[activeIndex]?.question}
+                  </h3>
+                  
+                  {/* Underline using primary brand color */}
+                  <div className={`w-12 h-1 bg-primary rounded-full mb-6 mx-auto sm:mx-0 ${dir === 'rtl' ? 'sm:ml-auto' : 'sm:mr-auto'}`} />
+
+                  <p className={`text-base sm:text-lg text-gray-600 leading-relaxed font-medium ${dir === 'rtl' ? 'sm:text-right' : 'sm:text-left'}`}>
+                    {faqs[activeIndex]?.answer}
+                  </p>
+                </div>
+
+              </div>
+            </motion.div>
+          </AnimatePresence>
         </div>
+
+        {/* Contact CTA */}
+        <motion.div
+          initial={prefersReducedMotion ? {} : { opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={prefersReducedMotion ? { duration: 0 } : { ...smoothSpring, delay: 0.3 }}
+          viewport={{ once: true }}
+          className="mt-20 max-w-2xl mx-auto glass-strong rounded-2xl p-8 sm:p-10 text-center relative z-10"
+        >
+          <h3 className="text-xl font-bold text-gray-900 mb-3">{t('stillHaveQuestions') || 'Still have questions?'}</h3>
+          <p className="text-gray-600 mb-8">{t('stillHaveQuestionsDescription') || 'Can\'t find the answer you\'re looking for? Please chat to our friendly team.'}</p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button
+              href="/contact"
+              variant="primary"
+              size="lg"
+              className="w-full sm:w-auto"
+              rightIcon={
+                <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={dir === 'rtl' ? "M11 17l-5-5m0 0l5-5m-5 5h12" : "M13 7l5 5m0 0l-5 5m5-5H6"} />
+                </svg>
+              }
+            >
+              {t('contactUs') || 'Contact Us'}
+            </Button>
+            <Button
+              href="mailto:info@paktechnology.com"
+              variant="secondary"
+              size="lg"
+              className="w-full sm:w-auto"
+              leftIcon={
+                <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              }
+            >
+              {t('sendEmail') || 'Send Email'}
+            </Button>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

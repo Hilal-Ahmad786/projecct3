@@ -334,16 +334,7 @@ export default function BlogPostPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="prose prose-lg prose-emerald max-w-none
-                prose-headings:font-bold prose-headings:text-gray-900
-                prose-p:text-gray-700 prose-p:leading-relaxed
-                prose-a:text-emerald-600 prose-a:no-underline hover:prose-a:underline
-                prose-strong:text-gray-900
-                prose-code:text-emerald-700 prose-code:bg-emerald-50 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded
-                prose-pre:bg-gray-900 prose-pre:text-gray-100
-                prose-blockquote:border-l-emerald-500 prose-blockquote:bg-gray-50 prose-blockquote:py-1
-                prose-img:rounded-xl prose-img:shadow-lg
-                prose-li:text-gray-700"
+              className="blog-article max-w-none"
               dir={isRTL ? 'rtl' : 'ltr'}
             >
               <ReactMarkdown remarkPlugins={[remarkGfm]}>{content.content}</ReactMarkdown>

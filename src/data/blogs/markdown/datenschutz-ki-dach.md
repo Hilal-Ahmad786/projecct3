@@ -11,6 +11,9 @@ Die DACH-Region (Deutschland, Österreich, Schweiz) ist weltweit führend, wenn 
 ## Die Bedeutung des Datenschutzes in DACH
 
 ### 1. DSGVO als Goldstandard
+
+![DSGVO Compliance](/images/Blogs/inner/security-1.png)
+
 Die Datenschutz-Grundverordnung (DSGVO) setzt den globalen Standard für den Schutz personenbezogener Daten. In der DACH-Region wird die Einhaltung dieser Vorschriften besonders streng überwacht und durchgesetzt. KI-Anwendungen, die personenbezogene Daten verarbeiten, müssen von Design her datenschutzfreundlich sein (**Privacy by Design**).
 
 ### 2. Vertrauen der Nutzer
