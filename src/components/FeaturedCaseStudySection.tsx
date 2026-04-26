@@ -144,7 +144,7 @@ export default function FeaturedCaseStudySection() {
 
             {/* CTA */}
             <Button
-              href="/projects/ecommerce-platform"
+              href="/projects"
               variant="primary"
               size="lg"
               rightIcon={

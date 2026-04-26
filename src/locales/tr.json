@@ -2871,8 +2871,8 @@
       "customDescription": "Her işletme benzersizdir. Özel gereksinimlerinizi tartışalım ve mükemmel uyum sağlayan özel bir çözüm oluşturalım.",
       "getCustomQuote": "Özel Teklif Alın",
       "viewProjects": "Projeleri Görüntüle",
-      "perMonth": "/ay",
-      "perYear": "/yıl",
+      "perMonth": "ay",
+      "perYear": "yıl",
       "whatsIncluded": "Neler Dahil",
       "projectScope": "Proje Kapsamı",
       "getDetailedQuote": "Detaylı Teklif Al",
@@ -6708,7 +6708,7 @@
         {
           "name": "Baslangic",
           "price": "$2,500",
-          "period": "/aylik",
+          "period": "aylik",
           "description": "DevOps ile tanisan startup'lar ve kucuk ekipler icin ideal.",
           "features": [
             "Temel CI/CD hatti kurulumu",
@@ -6723,7 +6723,7 @@
         {
           "name": "Profesyonel",
           "price": "$6,500",
-          "period": "/aylik",
+          "period": "aylik",
           "description": "Guclu DevOps altyapisina ihtiyac duyan buyuyen ekipler icin.",
           "features": [
             "Guvenlik taramali gelismis CI/CD",

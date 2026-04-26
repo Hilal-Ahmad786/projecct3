@@ -22,8 +22,8 @@ export interface OrganizationProps {
 
 export function OrganizationJsonLd({
   name = 'PakSoft',
-  url = 'https://paksoft.com.tr',
-  logo = 'https://paksoft.com.tr/logo.png',
+  url = 'https://www.paksoft.com.tr',
+  logo = 'https://www.paksoft.com.tr/logo.png',
   description = 'Enterprise web development, AI solutions, e-commerce, automation and digital marketing services',
   email = 'info@paksoft.com',
   telephone = '+90 552 567 71 64',
@@ -88,8 +88,8 @@ export interface LocalBusinessProps {
 
 export function LocalBusinessJsonLd({
   name = 'PakSoft',
-  url = 'https://paksoft.com.tr',
-  image = 'https://paksoft.com.tr/images/office.jpg',
+  url = 'https://www.paksoft.com.tr',
+  image = 'https://www.paksoft.com.tr/images/office.jpg',
   description = 'Enterprise web development, AI solutions, e-commerce, automation and digital marketing services',
   email = 'info@paksoft.com',
   telephone = '+90 552 567 71 64',
@@ -162,7 +162,7 @@ export function ServiceJsonLd({
   description,
   url,
   provider = 'PakSoft',
-  providerUrl = 'https://paksoft.com.tr',
+  providerUrl = 'https://www.paksoft.com.tr',
   areaServed = ['Worldwide'],
   serviceType,
   image,
@@ -268,8 +268,8 @@ export interface WebSiteJsonLdProps {
 
 export function WebSiteJsonLd({
   name = 'PakSoft',
-  url = 'https://paksoft.com.tr',
-  searchUrl = 'https://paksoft.com.tr/search?q={search_term_string}',
+  url = 'https://www.paksoft.com.tr',
+  searchUrl = 'https://www.paksoft.com.tr/search?q={search_term_string}',
 }: WebSiteJsonLdProps) {
   const schema = {
     '@context': 'https://schema.org',

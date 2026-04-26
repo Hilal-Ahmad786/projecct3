@@ -20,7 +20,7 @@ export default function robots(): MetadataRoute.Robots {
                 disallow: ['/'], // Block AI crawlers if desired
             },
         ],
-        sitemap: 'https://paksoft.com.tr/sitemap.xml',
-        host: 'https://paksoft.com.tr',
+        sitemap: 'https://www.paksoft.com.tr/sitemap.xml',
+        host: 'https://www.paksoft.com.tr',
     };
 }

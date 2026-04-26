@@ -7,7 +7,7 @@ import { cookies } from 'next/headers'
 import { Analytics as VercelAnalytics } from '@vercel/analytics/next'
 
 export const metadata = {
-    metadataBase: new URL('https://paksoft.com.tr'),
+    metadataBase: new URL('https://www.paksoft.com.tr'),
     title: {
         default: 'PakSoft – Modern Digital Solutions',
         template: '%s | PakSoft'
@@ -19,7 +19,7 @@ export const metadata = {
     openGraph: {
         type: 'website',
         locale: 'en_US',
-        url: 'https://paksoft.com.tr',
+        url: 'https://www.paksoft.com.tr',
         title: 'PakSoft – Modern Digital Solutions',
         description: 'Enterprise web development, e-commerce, automation bots and digital marketing solutions',
         siteName: 'PakSoft',
@@ -52,16 +52,6 @@ export const metadata = {
     },
     verification: {
         google: '5r6FVNc5T7Y3Fig1PQvnfB4UtoDO9RGMSqWLZANzcdQ',
-    },
-    alternates: {
-        canonical: 'https://paksoft.com.tr',
-        languages: {
-            'en': 'https://paksoft.com.tr/en',
-            'tr': 'https://paksoft.com.tr/tr',
-            'de': 'https://paksoft.com.tr/de',
-            'ur': 'https://paksoft.com.tr/ur',
-            'ar': 'https://paksoft.com.tr/ar',
-        },
     },
 }
 

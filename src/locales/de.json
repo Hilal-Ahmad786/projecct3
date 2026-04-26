@@ -2861,8 +2861,8 @@
           ]
         }
       },
-      "perMonth": "/Monat",
-      "perYear": "/Jahr",
+      "perMonth": "Monat",
+      "perYear": "Jahr",
       "whatsIncluded": "Was enthalten ist",
       "projectScope": "Projektumfang",
       "getDetailedQuote": "Detailliertes Angebot anfordern"
@@ -6708,7 +6708,7 @@
         {
           "name": "Starter",
           "price": "$2.500",
-          "period": "/Monat",
+          "period": "Monat",
           "description": "Ideal fuer Startups und kleine Teams, die mit DevOps beginnen.",
           "features": [
             "Grundlegende CI/CD-Pipeline-Einrichtung",
@@ -6723,7 +6723,7 @@
         {
           "name": "Professional",
           "price": "$6.500",
-          "period": "/Monat",
+          "period": "Monat",
           "description": "Fuer wachsende Teams, die eine robuste DevOps-Infrastruktur benoetigen.",
           "features": [
             "Erweiterte CI/CD mit Sicherheitsscans",

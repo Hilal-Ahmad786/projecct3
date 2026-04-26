@@ -3,12 +3,13 @@ import { Metadata } from 'next'
 import { Locale, locales, defaultLocale } from '@/lib/i18n'
 import { createTranslator } from '@/lib/server-i18n'
 import { generateAlternateLinks } from '@/lib/seo'
+import { localizeFullPath } from '@/lib/routes'
 import ContactHero from '@/components/ContactHero'
 import ContactInfoSection from '@/components/ContactInfoSection'
 import ContactForm from '@/components/ContactForm'
 import MapSection from '@/components/MapSection'
 
-const baseUrl = 'https://paksoft.com.tr'
+const baseUrl = 'https://www.paksoft.com.tr'
 
 const ogLocaleMap: Record<Locale, string> = {
   en: 'en_US',
@@ -34,13 +35,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title,
     description,
     alternates: {
-      canonical: `${baseUrl}/${validLocale}/contact`,
+      canonical: `${baseUrl}/${validLocale}${localizeFullPath('/contact', validLocale)}`,
       languages: generateAlternateLinks('/contact'),
     },
     openGraph: {
       title,
       description,
-      url: `${baseUrl}/${validLocale}/contact`,
+      url: `${baseUrl}/${validLocale}${localizeFullPath('/contact', validLocale)}`,
       siteName: 'PakSoft',
       locale: ogLocaleMap[validLocale],
       alternateLocale: locales.filter(l => l !== validLocale).map(l => ogLocaleMap[l]),

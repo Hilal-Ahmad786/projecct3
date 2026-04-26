@@ -1,7 +1,11 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { Locale, locales, defaultLocale } from '@/lib/i18n';
+import { generateAlternateLinks } from '@/lib/seo';
+import { localizeFullPath } from '@/lib/routes';
 import FeaturesPageClient from './FeaturesPageClient';
+
+const baseUrl = 'https://www.paksoft.com.tr';
 
 interface PageProps {
   params: Promise<{ slug: string; locale: Locale }>;
@@ -21,9 +25,16 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return { title: 'Service Not Found | PakSoft' };
   }
 
+  const path = `/services/${slug}/features`;
+  const localizedPath = localizeFullPath(path, validLocale);
+
   return {
     title: `${service.name} Features & Capabilities | PakSoft`,
     description: `Explore the key features and capabilities of our ${service.name} service. Discover what makes our solutions stand out.`,
+    alternates: {
+      canonical: `${baseUrl}/${validLocale}${localizedPath}`,
+      languages: generateAlternateLinks(path),
+    },
   };
 }
 

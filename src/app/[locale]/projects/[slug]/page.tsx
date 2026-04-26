@@ -12,7 +12,7 @@ import {
   CpuChipIcon,
 } from '@heroicons/react/24/outline';
 
-const baseUrl = 'https://paksoft.com.tr';
+const baseUrl = 'https://www.paksoft.com.tr';
 
 const ogLocaleMap: Record<Locale, string> = {
   en: 'en_US',

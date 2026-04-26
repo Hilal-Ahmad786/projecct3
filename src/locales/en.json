@@ -2871,8 +2871,8 @@
       "customDescription": "Every business is unique. Let's discuss your specific requirements and create a custom solution that fits perfectly.",
       "getCustomQuote": "Get Custom Quote",
       "viewProjects": "View Projects",
-      "perMonth": "/month",
-      "perYear": "/year",
+      "perMonth": "month",
+      "perYear": "year",
       "whatsIncluded": "What's Included",
       "projectScope": "Project Scope",
       "getDetailedQuote": "Get Detailed Quote",
@@ -5734,7 +5734,7 @@
         {
           "name": "Starter",
           "price": "$2,500",
-          "period": "/month",
+          "period": "month",
           "description": "Perfect for startups and small teams getting started with DevOps.",
           "features": [
             "Basic CI/CD pipeline setup",
@@ -5749,7 +5749,7 @@
         {
           "name": "Professional",
           "price": "$6,500",
-          "period": "/month",
+          "period": "month",
           "description": "For growing teams needing robust DevOps infrastructure.",
           "features": [
             "Advanced CI/CD with security scanning",

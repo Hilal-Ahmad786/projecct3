@@ -20,8 +20,42 @@ const nextConfig = {
   },
 
   async redirects() {
-    // Admin panel is now accessible - add authentication in production
-    return [];
+    return [
+      // Turkish blog posts missing locale prefix (old Google-indexed URLs)
+      { source: '/blog/nextjs-cok-dilli-e-ticaret', destination: '/tr/blog/nextjs-cok-dilli-e-ticaret', permanent: true },
+      { source: '/blog/ui-ux-tasarim-prensipleri', destination: '/tr/blog/ui-ux-tasarim-prensipleri', permanent: true },
+      { source: '/blog/react-native-finans-uygulamasi', destination: '/tr/blog/react-native-finans-uygulamasi', permanent: true },
+      { source: '/blog/machine-learning-tahmin-sistemleri', destination: '/tr/blog/machine-learning-tahmin-sistemleri', permanent: true },
+
+      // Services/projects without locale prefix
+      { source: '/services/python-automation', destination: '/en/services/python-automation', permanent: true },
+      { source: '/services/data-analytics', destination: '/en/services/data-analytics', permanent: true },
+      { source: '/projects/ecommerce-platform', destination: '/en/projects', permanent: true },
+      { source: '/projects/design-system', destination: '/en/projects', permanent: true },
+
+      // Non-English locales using English /services path (should use localized path)
+      { source: '/de/services/:slug*', destination: '/de/dienstleistungen/:slug*', permanent: true },
+      { source: '/ar/services/:slug*', destination: '/ar/alkhadamat/:slug*', permanent: true },
+      { source: '/tr/services/:slug*', destination: '/tr/hizmetler/:slug*', permanent: true },
+      { source: '/ur/services/:slug*', destination: '/ur/khidmaat/:slug*', permanent: true },
+
+      // Newsletter page redirect (no newsletter system exists)
+      { source: '/newsletter', destination: '/en/contact', permanent: true },
+
+      // Junk pricing-period paths crawled by Google (from slash-prefixed locale strings)
+      { source: '/month', destination: '/en', permanent: true },
+      { source: '/year', destination: '/en', permanent: true },
+      { source: '/Monat', destination: '/de', permanent: true },
+      { source: '/Jahr', destination: '/de', permanent: true },
+      { source: '/ay', destination: '/tr', permanent: true },
+      { source: '/aylik', destination: '/tr', permanent: true },
+      { source: '/y%C4%B1l', destination: '/tr', permanent: true },
+      { source: '/%D9%85%D8%A7%DB%81%D8%A7%D9%86%DB%81', destination: '/ur', permanent: true },
+      { source: '/%D8%B3%D8%A7%D9%84%D8%A7%D9%86%DB%81', destination: '/ur', permanent: true },
+      { source: '/%D8%B4%D9%87%D8%B1%D9%8A%D9%8B%D8%A7', destination: '/ar', permanent: true },
+      { source: '/%24', destination: '/en', permanent: true },
+      { source: '/%26', destination: '/en', permanent: true },
+    ];
   },
 
   async rewrites() {

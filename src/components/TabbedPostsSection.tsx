@@ -389,7 +389,7 @@ export default function TabbedPostsSection() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
-              href="/newsletter"
+              href="/contact"
               variant="primary"
               size="lg"
               leftIcon={

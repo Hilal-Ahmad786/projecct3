@@ -13,7 +13,7 @@ import TestimonialsSection from '@/components/TestimonialsSection'
 import FAQSection from '@/components/FAQSection'
 import ContactSection from '@/components/ContactSection'
 
-const baseUrl = 'https://paksoft.com.tr'
+const baseUrl = 'https://www.paksoft.com.tr'
 
 const ogLocaleMap: Record<Locale, string> = {
   en: 'en_US',

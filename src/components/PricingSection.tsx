@@ -157,7 +157,7 @@ export default function PricingSection() {
     },
   ];
 
-  const periodLabel = billingCycle === 'monthly' ? t('perMonth') : t('perYear');
+  const periodLabel = `/${billingCycle === 'monthly' ? t('perMonth') : t('perYear')}`;
 
   const containerVariants = {
     hidden: { opacity: 0 },

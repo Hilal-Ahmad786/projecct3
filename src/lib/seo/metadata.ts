@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 
-const baseUrl = 'https://paksoft.com.tr';
+const baseUrl = 'https://www.paksoft.com.tr';
 
 // Service metadata configurations
 export const serviceMetadata: Record<string, {

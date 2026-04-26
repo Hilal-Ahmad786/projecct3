@@ -120,7 +120,7 @@ export default function DemoSection() {
                 </div>
 
                 <Button
-                  href={`/projects/${item.id}`}
+                  href={item.id ? `/projects/${item.id}` : '/projects'}
                   variant="ghost"
                   size="sm"
                   rightIcon={

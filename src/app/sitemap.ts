@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 
-const baseUrl = 'https://paksoft.com.tr';
+const baseUrl = 'https://www.paksoft.com.tr';
 
 // Only include locales that are fully working
 const workingLocales = ['en', 'tr'];

@@ -1,7 +1,11 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { Locale, locales, defaultLocale } from '@/lib/i18n';
+import { generateAlternateLinks } from '@/lib/seo';
+import { localizeFullPath } from '@/lib/routes';
 import ProcessPageClient from './ProcessPageClient';
+
+const baseUrl = 'https://www.paksoft.com.tr';
 
 interface PageProps {
   params: Promise<{ slug: string; locale: Locale }>;
@@ -21,9 +25,16 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return { title: 'Service Not Found | PakSoft' };
   }
 
+  const path = `/services/${slug}/process`;
+  const localizedPath = localizeFullPath(path, validLocale);
+
   return {
     title: `${service.name} Process & Methodology | PakSoft`,
     description: `Learn about our proven process and methodology for ${service.name}. From discovery to deployment, see how we deliver results.`,
+    alternates: {
+      canonical: `${baseUrl}/${validLocale}${localizedPath}`,
+      languages: generateAlternateLinks(path),
+    },
   };
 }
 

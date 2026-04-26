@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { Locale, locales, defaultLocale } from '@/lib/i18n';
 import { generateAlternateLinks } from '@/lib/seo';
+import { localizeFullPath } from '@/lib/routes';
 import { ServiceJsonLd, BreadcrumbJsonLd, FAQJsonLd } from '@/components/seo/JsonLd';
 import ServiceDetailClient from './ServiceDetailClient';
 import type { ServiceDetailData } from './ServiceDetailClient';
@@ -11,7 +12,7 @@ import { getServicePageContent, type ServicePageContent } from '@/lib/service-co
 // Enable ISR - revalidate every hour for better performance
 export const revalidate = 3600;
 
-const baseUrl = 'https://paksoft.com.tr';
+const baseUrl = 'https://www.paksoft.com.tr';
 
 const ogLocaleMap: Record<Locale, string> = {
   en: 'en_US',
@@ -52,18 +53,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const title = `${service.name} | PakSoft`;
   const description = (service.fullDescription || service.shortDescription || service.description || '').slice(0, 160);
   const path = `/services/${slug}`;
+  const localizedPath = localizeFullPath(path, validLocale);
 
   return {
     title,
     description,
     alternates: {
-      canonical: `${baseUrl}/${validLocale}${path}`,
+      canonical: `${baseUrl}/${validLocale}${localizedPath}`,
       languages: generateAlternateLinks(path),
     },
     openGraph: {
       title,
       description,
-      url: `${baseUrl}/${validLocale}${path}`,
+      url: `${baseUrl}/${validLocale}${localizedPath}`,
       siteName: 'PakSoft',
       locale: ogLocaleMap[validLocale],
       alternateLocale: locales.filter(l => l !== validLocale).map(l => ogLocaleMap[l]),

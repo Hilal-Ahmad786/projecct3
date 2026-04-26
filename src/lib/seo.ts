@@ -6,7 +6,7 @@ import { Locale, locales, defaultLocale, localeNames } from './i18n';
 import { getTranslations, createTranslator } from './server-i18n';
 import { localizeFullPath } from './routes';
 
-const baseUrl = 'https://paksoft.com.tr';
+const baseUrl = 'https://www.paksoft.com.tr';
 
 // OpenGraph locale mappings
 const ogLocaleMap: Record<Locale, string> = {

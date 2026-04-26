@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import { Locale, locales, defaultLocale } from '@/lib/i18n';
 import { createTranslator } from '@/lib/server-i18n';
 import { generateAlternateLinks } from '@/lib/seo';
+import { localizeFullPath } from '@/lib/routes';
 import ProjectsHero from '@/components/ProjectsHero';
 import ProjectsGallerySection from '@/components/ProjectsGallerySection';
 import FeaturedCaseStudySection from '@/components/FeaturedCaseStudySection';
@@ -12,7 +13,7 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 import CtaBanner from '@/components/CtaBanner';
 import { getProjects } from '@/lib/admin/database/queries';
 
-const baseUrl = 'https://paksoft.com.tr';
+const baseUrl = 'https://www.paksoft.com.tr';
 
 export const revalidate = 3600; // ISR: revalidate every hour
 
@@ -40,13 +41,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title,
     description,
     alternates: {
-      canonical: `${baseUrl}/${validLocale}/projects`,
+      canonical: `${baseUrl}/${validLocale}${localizeFullPath('/projects', validLocale)}`,
       languages: generateAlternateLinks('/projects'),
     },
     openGraph: {
       title,
       description,
-      url: `${baseUrl}/${validLocale}/projects`,
+      url: `${baseUrl}/${validLocale}${localizeFullPath('/projects', validLocale)}`,
       siteName: 'PakSoft',
       locale: ogLocaleMap[validLocale],
       alternateLocale: locales.filter(l => l !== validLocale).map(l => ogLocaleMap[l]),

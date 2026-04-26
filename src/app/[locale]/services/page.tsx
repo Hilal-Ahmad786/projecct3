@@ -3,6 +3,7 @@ import { Metadata } from 'next'
 import { Locale, locales, defaultLocale } from '@/lib/i18n'
 import { createTranslator } from '@/lib/server-i18n'
 import { generateAlternateLinks } from '@/lib/seo'
+import { localizeFullPath } from '@/lib/routes'
 import ServicesHero from '@/components/ServicesHero'
 import ServicesSection from '@/components/ServicesSection'
 import PricingSection from '@/components/PricingSection'
@@ -10,7 +11,7 @@ import WhyUsSection from '@/components/WhyUsSection'
 import TestimonialsSection from '@/components/TestimonialsSection'
 import CtaBanner from '@/components/CtaBanner'
 
-const baseUrl = 'https://paksoft.com.tr'
+const baseUrl = 'https://www.paksoft.com.tr'
 
 const ogLocaleMap: Record<Locale, string> = {
   en: 'en_US',
@@ -36,13 +37,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title,
     description,
     alternates: {
-      canonical: `${baseUrl}/${validLocale}/services`,
+      canonical: `${baseUrl}/${validLocale}${localizeFullPath('/services', validLocale)}`,
       languages: generateAlternateLinks('/services'),
     },
     openGraph: {
       title,
       description,
-      url: `${baseUrl}/${validLocale}/services`,
+      url: `${baseUrl}/${validLocale}${localizeFullPath('/services', validLocale)}`,
       siteName: 'PakSoft',
       locale: ogLocaleMap[validLocale],
       alternateLocale: locales.filter(l => l !== validLocale).map(l => ogLocaleMap[l]),

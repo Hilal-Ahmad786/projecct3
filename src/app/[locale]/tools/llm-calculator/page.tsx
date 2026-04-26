@@ -70,11 +70,11 @@ const translations: Record<string, Record<string, string>> = {
     ar: 'مقارنة التكاليف',
   },
   perMonth: {
-    en: '/month',
-    tr: '/ay',
-    de: '/Monat',
-    ur: '/ماہ',
-    ar: '/شهر',
+    en: 'month',
+    tr: 'ay',
+    de: 'Monat',
+    ur: 'ماہ',
+    ar: 'شهر',
   },
   recommended: {
     en: 'Recommended',
@@ -611,7 +611,7 @@ export default function LLMCalculatorPage() {
                       <div className="mb-4">
                         <div className="flex items-baseline gap-1">
                           <span className="text-3xl font-bold">${cost.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
-                          <span className="text-gray-400">{t('perMonth')}</span>
+                          <span className="text-gray-400">/{t('perMonth')}</span>
                         </div>
                       </div>
 
