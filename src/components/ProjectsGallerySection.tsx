@@ -66,9 +66,14 @@ export default function ProjectsGallerySection({ projects, locale }: ProjectsGal
     };
   };
 
-  // Extract unique categories from projects
+  // Extract unique categories, deduplicating case-insensitively
   const uniqueCategories = Array.from(
-    new Set(projects.map((p) => p.category).filter(Boolean))
+    new Map(
+      projects
+        .map((p) => p.category)
+        .filter(Boolean)
+        .map((cat: string) => [cat.toLowerCase().replace(/[\s-]+/g, ''), cat])
+    ).values()
   ) as string[];
 
   const categories = [
