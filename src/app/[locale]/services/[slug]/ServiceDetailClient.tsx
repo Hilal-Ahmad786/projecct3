@@ -310,7 +310,7 @@ function HeroSection({
   const parentService = service.parentService;
 
   return (
-    <section className="relative overflow-hidden bg-white pt-[180px] pb-20 lg:pt-[210px] lg:pb-28">
+    <section className="relative overflow-hidden bg-white pt-[140px] pb-20 lg:pt-[160px] lg:pb-28">
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <ParticleNetwork className="opacity-40" />

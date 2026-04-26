@@ -3,7 +3,7 @@ export default function ServiceDetailLoading() {
   return (
     <div className="min-h-screen bg-white animate-pulse">
       {/* Hero Section Skeleton */}
-      <section className="relative min-h-[85vh] pt-[200px] pb-24">
+      <section className="relative min-h-[85vh] pt-[140px] pb-24">
         <div className="container mx-auto px-4">
           {/* Breadcrumb skeleton */}
           <div className="flex items-center gap-2 mb-8">

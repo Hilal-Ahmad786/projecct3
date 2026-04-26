@@ -58,7 +58,7 @@ export default function PortfolioPageClient({
   return (
     <div ref={containerRef} className="min-h-screen bg-white">
       {/* Hero Section - Swiss Minimalist */}
-      <section className="relative min-h-[80vh] pt-[200px] pb-24 overflow-hidden">
+      <section className="relative min-h-[80vh] pt-[140px] pb-24 overflow-hidden">
         {/* Swiss Cross Pattern Background */}
         <div className="absolute inset-0 opacity-[0.03]">
           <svg width="100%" height="100%">

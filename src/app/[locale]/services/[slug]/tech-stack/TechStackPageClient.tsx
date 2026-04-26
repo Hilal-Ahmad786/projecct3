@@ -65,7 +65,7 @@ export default function TechStackPageClient({
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative min-h-[80vh] pt-[200px] pb-24 overflow-hidden">
+      <section className="relative min-h-[80vh] pt-[140px] pb-24 overflow-hidden">
         {/* Background Pattern */}
         <SubPageBgPattern pattern={config.bgPattern} opacity={0.05} />
 
