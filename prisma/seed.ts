@@ -12098,7 +12098,27 @@ async function main() {
     console.log(`Seeded ${pricingPackages.length} pricing packages`);
   }
 
-  // ==================== SAMPLE PROJECTS ====================
+  // ==================== PROJECTS ====================
+
+  // Delete all dummy/placeholder projects that are no longer valid
+  const dummySlugs = [
+    'ecommerce-platform',
+    'automation-suite',
+    'finance-app',
+    'ai-dashboard',
+    'corporate-website',
+    'design-system',
+    'ai-customer-service-chatbot',
+    'ecommerce-transformation',
+    'ecommerce-platform-transformation',
+    'ai-chatbot',
+    'saas-platform',
+    'mobile-finance',
+  ];
+  await prisma.project.deleteMany({
+    where: { slug: { in: dummySlugs } },
+  });
+  console.log('Removed dummy projects');
 
   const projectsData = [
     // ── REAL LIVE PROJECTS ──────────────────────────────────────────────
