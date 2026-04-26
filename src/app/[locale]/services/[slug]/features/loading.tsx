@@ -1,7 +1,7 @@
 export default function FeaturesLoading() {
   return (
     <div className="min-h-screen bg-white animate-pulse">
-      <section className="relative min-h-[80vh] pt-32 pb-24">
+      <section className="relative min-h-[80vh] pt-[200px] pb-24">
         <div className="container mx-auto px-4">
           <div className="flex items-center gap-2 mb-8">
             <div className="h-4 w-16 bg-gray-200 rounded" />

@@ -3743,19 +3743,43 @@
     "viewAllProjects": "Tüm Projeleri Görüntüle",
     "projects": [
       {
-        "title": "E-Ticaret Platformu",
-        "description": "Gelişmiş özellikler ve sorunsuz kullanıcı deneyimi ile modern çevrimiçi mağaza.",
-        "result": "%300 satış artışı"
+        "id": "sivtechmakina",
+        "title": "SivTech Makina – Özel E-Ticaret Mağazası",
+        "image": "/images/Demo/ecommerce-platform.png",
+        "description": "Türk makine üreticisi için özel yazılım ile geliştirilen e-ticaret platformu. Ürün kataloğu, teklif sistemi ve çok dilli destek içermektedir.",
+        "result": "Tam özel e-ticaret lansmanı",
+        "tech": [
+          "Next.js",
+          "Özel Yazılım",
+          "PostgreSQL",
+          "Tailwind CSS"
+        ]
       },
       {
-        "title": "İş Otomasyonu Paketi",
-        "description": "İş operasyonlarını kolaylaştıran kapsamlı otomasyon sistemi.",
-        "result": "%80 zaman tasarrufu"
+        "id": "hextg",
+        "title": "HexTG – Kurumsal Web Sitesi",
+        "image": "/images/Demo/3x.png",
+        "description": "Çok dilli destek, SEO optimizasyonu ve temiz profesyonel tasarıma sahip modern, yüksek performanslı kurumsal web sitesi.",
+        "result": "Sayfa hızı skoru 95+",
+        "tech": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "SEO"
+        ]
       },
       {
-        "title": "Mobil Finans Uygulaması",
-        "description": "Kişisel finans yönetimi için çapraz platform mobil uygulaması.",
-        "result": "50B+ indirme"
+        "id": "roketoyuncak",
+        "title": "Roket Oyuncak – Oyuncak E-Ticaret",
+        "image": "/images/Demo/roketoyuncak.png",
+        "description": "Ürün listeleme, sepet, güvenli ödeme ve envanter yönetimi ile tam özellikli Türk oyuncak e-ticaret platformu.",
+        "result": "Başarılı çevrimiçi mağaza lansmanı",
+        "tech": [
+          "E-Ticaret",
+          "Ürün Kataloğu",
+          "Ödeme Entegrasyonu",
+          "Next.js"
+        ]
       }
     ]
   },

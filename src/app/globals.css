@@ -9,11 +9,17 @@
 /* Hero Section Consistent Styling */
 .hero-section {
   min-height: 80vh;
-  padding-top: 120px;
-  /* Account for fixed navbar */
+  padding-top: 200px;
+  /* Account for fixed navbar (logo is 160px + py padding ≈ 184px) */
   padding-bottom: 80px;
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 180px;
+  }
 }
 
 /* Proper Crescent Shape CSS - Islamic Crescent Moon Design */

@@ -47,7 +47,7 @@ export default function ServicePortfolioPage({
   const filtered = activeFilter === allLabel ? portfolio : portfolio.filter((p: any) => p.industry === activeFilter);
 
   return (
-    <main className="min-h-screen pt-32 pb-20 bg-white relative overflow-hidden">
+    <main className="min-h-screen pt-[200px] pb-20 bg-white relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none">
         <div className={`absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br ${colors.gradient} rounded-full opacity-5 blur-3xl`} />
@@ -128,9 +128,20 @@ export default function ServicePortfolioPage({
 
                     {/* Hover overlay */}
                     <div className={`absolute inset-0 bg-gradient-to-t ${colors.gradientOverlay} opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center`}>
-                      <span className="text-white border-2 border-white px-6 py-2.5 rounded-full font-medium hover:bg-white hover:text-gray-900 transition-colors">
-                        {t('serviceSubpages.common.viewDetails')}
-                      </span>
+                      {project.projectUrl ? (
+                        <a
+                          href={project.projectUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-white border-2 border-white px-6 py-2.5 rounded-full font-medium hover:bg-white hover:text-gray-900 transition-colors"
+                        >
+                          {t('serviceSubpages.common.viewProject') || 'View Live Site ↗'}
+                        </a>
+                      ) : (
+                        <span className="text-white border-2 border-white px-6 py-2.5 rounded-full font-medium">
+                          {t('serviceSubpages.common.viewDetails')}
+                        </span>
+                      )}
                     </div>
                   </div>
 

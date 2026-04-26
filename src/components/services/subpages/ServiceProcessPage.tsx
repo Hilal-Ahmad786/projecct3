@@ -79,7 +79,7 @@ export default function ServiceProcessPage({
   const lineHeight = useTransform(scrollYProgress, [0, 1], ['0%', '100%']);
 
   return (
-    <main className="min-h-screen pt-32 pb-20 bg-white relative overflow-hidden">
+    <main className="min-h-screen pt-[200px] pb-20 bg-white relative overflow-hidden">
       {/* Subtle grid background */}
       <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle, #e5e7eb 1px, transparent 1px)', backgroundSize: '40px 40px', opacity: 0.4 }} />
 

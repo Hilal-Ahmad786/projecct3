@@ -115,7 +115,7 @@ export default function ServiceFAQPage({
   }, [faq, activeCategory, searchQuery]);
 
   return (
-    <main className="min-h-screen pt-32 pb-20 bg-gray-50 relative overflow-hidden">
+    <main className="min-h-screen pt-[200px] pb-20 bg-gray-50 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none">
         <div className={`absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br ${colors.gradient} rounded-full opacity-5 blur-3xl`} />

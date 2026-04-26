@@ -3508,19 +3508,43 @@
     "viewAllProjects": "Alle Projekte ansehen",
     "projects": [
       {
-        "title": "E-Commerce-Plattform",
-        "description": "Moderner Onlineshop mit fortgeschrittenen Features und nahtlosem UX.",
-        "result": "300% Umsatzsteigerung"
+        "id": "sivtechmakina",
+        "title": "SivTech Makina – Maßgeschneiderter E-Commerce",
+        "image": "/images/Demo/ecommerce-platform.png",
+        "description": "Individuell entwickelte E-Commerce-Plattform für einen türkischen Maschinenhersteller mit Produktkatalog, Angebotsystem und Mehrsprachigkeit.",
+        "result": "Vollständiger E-Commerce-Launch",
+        "tech": [
+          "Next.js",
+          "Custom Software",
+          "PostgreSQL",
+          "Tailwind CSS"
+        ]
       },
       {
-        "title": "Business-Automatisierungs-Suite",
-        "description": "Umfassendes Automatisierungssystem zur Verschlankung von Abläufen.",
-        "result": "80% Zeitersparnis"
+        "id": "hextg",
+        "title": "HexTG – Unternehmenswebsite",
+        "image": "/images/Demo/3x.png",
+        "description": "Moderne, leistungsstarke Unternehmenswebsite mit Mehrsprachigkeit, SEO-Optimierung und professionellem Design.",
+        "result": "Page-Speed-Score 95+",
+        "tech": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "SEO"
+        ]
       },
       {
-        "title": "Mobile Finanz-App",
-        "description": "Cross-Platform-App für persönliches Finanzmanagement.",
-        "result": "50K+ Downloads"
+        "id": "roketoyuncak",
+        "title": "Roket Oyuncak – Spielzeug E-Commerce",
+        "image": "/images/Demo/roketoyuncak.png",
+        "description": "Vollständige türkische Spielzeug-E-Commerce-Plattform mit Produktlisting, Warenkorb, sicherer Zahlung und Lagerverwaltung.",
+        "result": "Erfolgreicher Online-Shop-Launch",
+        "tech": [
+          "E-Commerce",
+          "Produktkatalog",
+          "Zahlungsgateway",
+          "Next.js"
+        ]
       }
     ]
   },

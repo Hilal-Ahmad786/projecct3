@@ -41,7 +41,7 @@ export default function ServiceTechStackPage({
   const colors = colorMap[accentColor] || colorMap.purple;
 
   return (
-    <main className="min-h-screen pt-32 pb-20 bg-gray-900 text-white relative overflow-hidden">
+    <main className="min-h-screen pt-[200px] pb-20 bg-gray-900 text-white relative overflow-hidden">
       {/* Animated gradient background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className={`absolute -top-1/2 -right-1/4 w-[600px] h-[600px] bg-gradient-to-br ${colors.gradient} rounded-full opacity-10 blur-[120px] animate-pulse`} />

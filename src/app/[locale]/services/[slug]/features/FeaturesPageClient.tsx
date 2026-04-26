@@ -53,7 +53,7 @@ export default function FeaturesPageClient({
   return (
     <div ref={containerRef} className="min-h-screen bg-white">
       {/* Hero Section with Service-Specific Animation */}
-      <section className="relative min-h-[80vh] pt-32 pb-24 overflow-hidden">
+      <section className="relative min-h-[80vh] pt-[200px] pb-24 overflow-hidden">
         {/* Background Pattern */}
         <SubPageBgPattern pattern={config.bgPattern} opacity={0.06} />
 

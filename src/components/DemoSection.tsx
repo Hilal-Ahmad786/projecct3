@@ -59,7 +59,7 @@ export default function DemoSection() {
   return (
     <section className="section bg-gray-50 relative overflow-hidden">
       <div className="container mx-auto">
-        <SectionHeader title={t('title')} description={t('description')} dir={dir} />
+        <SectionHeader title={t('title')} subtitle={t('subtitle')} />
 
         <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12"
