@@ -1,11 +1,11 @@
 import { MetadataRoute } from 'next';
+import { localizeFullPath } from '@/lib/routes';
+import { Locale } from '@/lib/i18n';
 
 const baseUrl = 'https://www.paksoft.com.tr';
 
-// Only include locales that are fully working
-const workingLocales = ['en', 'tr'];
+const allLocales: Locale[] = ['en', 'tr', 'de', 'ar', 'ur'];
 
-// Priority levels for different page types
 const PRIORITY = {
     home: 1.0,
     mainNav: 0.9,
@@ -15,17 +15,17 @@ const PRIORITY = {
     other: 0.6,
 };
 
-// Main navigation routes
 const mainRoutes = [
     { path: '', priority: PRIORITY.home, changeFreq: 'daily' as const },
     { path: '/about', priority: PRIORITY.mainNav, changeFreq: 'weekly' as const },
     { path: '/contact', priority: PRIORITY.mainNav, changeFreq: 'weekly' as const },
     { path: '/services', priority: PRIORITY.services, changeFreq: 'weekly' as const },
     { path: '/projects', priority: PRIORITY.mainNav, changeFreq: 'weekly' as const },
+    { path: '/careers', priority: PRIORITY.other, changeFreq: 'monthly' as const },
     { path: '/blog', priority: PRIORITY.blog, changeFreq: 'daily' as const },
 ];
 
-// Service detail pages that exist (main page only)
+// All service slugs (slug stays in English across all locales)
 const serviceMainPages = [
     '/services/web-development',
     '/services/mobile-development',
@@ -53,7 +53,7 @@ const serviceMainPages = [
     '/services/ai-maintenance',
 ];
 
-// Services that have full sub-pages (faq, features, etc.)
+// Services that have full sub-pages (matching src/data/serviceSubpages.ts)
 const servicesWithSubPages = [
     '/services/ai-solutions',
     '/services/api-development',
@@ -67,18 +67,18 @@ const servicesWithSubPages = [
     '/services/mobile-development',
     '/services/python-automation',
     '/services/ui-ux-design',
+    '/services/web-development',
 ];
 
-const serviceSubPages = ['/faq', '/features', '/tech-stack', '/portfolio', '/pricing', '/process'];
+const serviceSubPages = ['/faq', '/features', '/tech-stack', '/portfolio', '/process'];
 
-// Generate hreflang alternates for a given path (only working locales)
-function generateAlternates(path: string): Record<string, string> {
+function generateAlternates(englishPath: string): Record<string, string> {
     const alternates: Record<string, string> = {};
-    workingLocales.forEach(locale => {
-        alternates[locale] = `${baseUrl}/${locale}${path}`;
+    allLocales.forEach(locale => {
+        const localizedPath = localizeFullPath(englishPath, locale);
+        alternates[locale] = `${baseUrl}/${locale}${localizedPath}`;
     });
-    // Add x-default pointing to English
-    alternates['x-default'] = `${baseUrl}/en${path}`;
+    alternates['x-default'] = `${baseUrl}/en${englishPath}`;
     return alternates;
 }
 
@@ -86,11 +86,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const sitemapEntries: MetadataRoute.Sitemap = [];
     const currentDate = new Date();
 
-    // Add main routes for each working locale
+    // Main navigation routes
     mainRoutes.forEach(({ path, priority, changeFreq }) => {
-        workingLocales.forEach((locale) => {
+        allLocales.forEach((locale) => {
+            const localizedPath = path ? localizeFullPath(path, locale) : '';
             sitemapEntries.push({
-                url: `${baseUrl}/${locale}${path}`,
+                url: `${baseUrl}/${locale}${localizedPath}`,
                 lastModified: currentDate,
                 changeFrequency: changeFreq,
                 priority: priority,
@@ -101,33 +102,35 @@ export default function sitemap(): MetadataRoute.Sitemap {
         });
     });
 
-    // Add service main pages for each working locale
-    serviceMainPages.forEach((path) => {
-        workingLocales.forEach((locale) => {
+    // Service main pages
+    serviceMainPages.forEach((englishPath) => {
+        allLocales.forEach((locale) => {
+            const localizedPath = localizeFullPath(englishPath, locale);
             sitemapEntries.push({
-                url: `${baseUrl}/${locale}${path}`,
+                url: `${baseUrl}/${locale}${localizedPath}`,
                 lastModified: currentDate,
                 changeFrequency: 'weekly',
                 priority: PRIORITY.serviceDetail,
                 alternates: {
-                    languages: generateAlternates(path),
+                    languages: generateAlternates(englishPath),
                 },
             });
         });
     });
 
-    // Add service sub-pages only for services that have them
+    // Service sub-pages
     servicesWithSubPages.forEach((servicePath) => {
         serviceSubPages.forEach((subPage) => {
-            workingLocales.forEach((locale) => {
-                const fullPath = `${servicePath}${subPage}`;
+            const fullEnglishPath = `${servicePath}${subPage}`;
+            allLocales.forEach((locale) => {
+                const localizedPath = localizeFullPath(fullEnglishPath, locale);
                 sitemapEntries.push({
-                    url: `${baseUrl}/${locale}${fullPath}`,
+                    url: `${baseUrl}/${locale}${localizedPath}`,
                     lastModified: currentDate,
                     changeFrequency: 'monthly',
                     priority: PRIORITY.other,
                     alternates: {
-                        languages: generateAlternates(fullPath),
+                        languages: generateAlternates(fullEnglishPath),
                     },
                 });
             });
