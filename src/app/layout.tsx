@@ -53,6 +53,11 @@ export const metadata = {
     verification: {
         google: '5r6FVNc5T7Y3Fig1PQvnfB4UtoDO9RGMSqWLZANzcdQ',
     },
+    icons: {
+        icon: '/images/logo/rounded.svg',
+        shortcut: '/images/logo/rounded.svg',
+        apple: '/images/logo/rounded.svg',
+    },
 }
 
 interface RootLayoutProps {
