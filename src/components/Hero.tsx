@@ -5,7 +5,6 @@ import {
   useScroll, useTransform, useSpring,
 } from 'framer-motion'
 import { gsap } from 'gsap'
-import ParticleNetwork from '@/components/ParticleNetwork'
 import HeroRightEnhanced from '@/components/HeroRightEnhanced'
 import MagneticButton from '@/components/MagneticButton'
 import Button from '@/components/Button'
@@ -170,8 +169,6 @@ export default function Hero() {
       className="hero-section relative gradient-bg-vibrant overflow-hidden"
       dir={dir}
     >
-      <ParticleNetwork className="opacity-60" />
-
       {/* Swiss Grid Background */}
       <div className="absolute inset-0 opacity-[0.02]">
         <div

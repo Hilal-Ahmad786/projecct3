@@ -271,12 +271,18 @@ export default function HeroRightEnhanced() {
     // so no phantom whitespace leaks below on mobile.
     <div
       ref={containerRef}
-      className="w-full overflow-hidden"
+      className="w-full relative"
       style={{ height: STAGE_H * scale }}
     >
     <div
-      className="mx-auto origin-top"
-      style={{ width: STAGE_W, transform: `scale(${scale})` }}
+      style={{
+        position:        'absolute',
+        top:             0,
+        left:            '50%',
+        width:           STAGE_W,
+        transform:       `translateX(-50%) scale(${scale})`,
+        transformOrigin: '50% 0',
+      }}
     >
     <div
       ref={wrapperRef}
@@ -487,17 +493,12 @@ export default function HeroRightEnhanced() {
               background: 'radial-gradient(ellipse, rgba(255,255,255,0.74) 0%, rgba(255,255,255,0) 100%)',
             }}
           />
-          {/* Brand mark */}
+          {/* Brand mark — two lines sized to stay inside the sphere */}
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
-            <span style={{
-              fontSize:      30,
-              fontWeight:    700,
-              color:         'rgba(255,255,255,0.86)',
-              letterSpacing: '-0.02em',
-              textShadow:    '0 2px 8px rgba(0,0,40,0.30)',
-            }}>
-              P
-            </span>
+            <div style={{ textAlign: 'center', lineHeight: 1.15, textShadow: '0 1px 6px rgba(0,0,40,0.35)' }}>
+              <div style={{ fontSize: 12, fontWeight: 800, color: 'rgba(255,255,255,0.92)', letterSpacing: '0.08em' }}>PAK</div>
+              <div style={{ fontSize: 12, fontWeight: 800, color: 'rgba(255,255,255,0.92)', letterSpacing: '0.08em' }}>SOFT</div>
+            </div>
           </div>
         </div>
 
