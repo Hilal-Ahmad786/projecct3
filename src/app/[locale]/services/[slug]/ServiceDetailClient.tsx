@@ -6,7 +6,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircleIcon } from '@heroicons/react/24/solid';
 import { PlusIcon, MinusIcon, ChevronRightIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
 import Button from '@/components/Button';
-import ParticleNetwork from '@/components/ParticleNetwork';
 import ServicePortfolio from '@/components/services/ServicePortfolio';
 import ServiceRequestCTA from '@/components/services/ServiceRequestCTA';
 import { HeroVisual, BgPatternRenderer, DecorationRenderer, type ServiceAnimation } from '@/components/services/hero-visuals';
@@ -313,21 +312,7 @@ function HeroSection({
     <section className="relative overflow-hidden bg-white pt-[140px] pb-20 lg:pt-[160px] lg:pb-28">
       {/* Background */}
       <div className="absolute inset-0 z-0">
-        <ParticleNetwork className="opacity-40" />
-        {hasAnimation ? (
-          <BgPatternRenderer pattern={animation.bgPattern} />
-        ) : (
-          <div
-            className="absolute inset-0 opacity-[0.02]"
-            style={{
-              backgroundImage: `
-                linear-gradient(rgba(0,0,0,0.3) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(0,0,0,0.3) 1px, transparent 1px)
-              `,
-              backgroundSize: '64px 64px',
-            }}
-          />
-        )}
+        {hasAnimation && <BgPatternRenderer pattern={animation.bgPattern} />}
       </div>
 
       {/* Decorations */}

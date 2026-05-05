@@ -119,58 +119,8 @@ function GlowEffect({ intensity = 'medium', color = 'blue' }: { intensity?: 'sub
 }
 
 // ── Background Patterns ─────────────────────────────────────────────
-export function BgPatternRenderer({ pattern }: { pattern: BgPattern }) {
-  switch (pattern) {
-    case 'grid':
-      return (
-        <div className="absolute inset-0 opacity-[0.03]" style={{
-          backgroundImage: 'linear-gradient(rgba(0,0,0,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.3) 1px, transparent 1px)',
-          backgroundSize: '64px 64px',
-        }} />
-      );
-    case 'dots':
-      return (
-        <div className="absolute inset-0 opacity-[0.04]" style={{
-          backgroundImage: 'radial-gradient(circle, rgba(0,0,0,0.4) 1px, transparent 1px)',
-          backgroundSize: '32px 32px',
-        }} />
-      );
-    case 'waves':
-      return (
-        <svg className="absolute inset-0 w-full h-full opacity-[0.03]" preserveAspectRatio="none">
-          <pattern id="waves" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
-            <path d="M0 10 Q30 0 60 10 Q90 20 120 10" fill="none" stroke="currentColor" strokeWidth="0.5" />
-          </pattern>
-          <rect width="100%" height="100%" fill="url(#waves)" />
-        </svg>
-      );
-    case 'diagonal-lines':
-      return (
-        <div className="absolute inset-0 opacity-[0.03]" style={{
-          backgroundImage: 'repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(0,0,0,0.3) 20px, rgba(0,0,0,0.3) 21px)',
-        }} />
-      );
-    case 'hexagons':
-      return (
-        <svg className="absolute inset-0 w-full h-full opacity-[0.03]" preserveAspectRatio="none">
-          <pattern id="hexagons" x="0" y="0" width="56" height="100" patternUnits="userSpaceOnUse">
-            <path d="M28 66L0 50L0 16L28 0L56 16L56 50L28 66L28 100" fill="none" stroke="currentColor" strokeWidth="0.5" />
-            <path d="M28 0L28 34L0 50L0 84L28 100L56 84L56 50L28 34" fill="none" stroke="currentColor" strokeWidth="0.5" />
-          </pattern>
-          <rect width="100%" height="100%" fill="url(#hexagons)" />
-        </svg>
-      );
-    case 'circles':
-      return (
-        <div className="absolute inset-0 opacity-[0.03]" style={{
-          backgroundImage: 'radial-gradient(circle, rgba(0,0,0,0.2) 8px, transparent 8px)',
-          backgroundSize: '80px 80px',
-        }} />
-      );
-    case 'none':
-    default:
-      return null;
-  }
+export function BgPatternRenderer({ pattern: _ }: { pattern: BgPattern }) {
+  return null;
 }
 
 // ── Floating Decorations ────────────────────────────────────────────
