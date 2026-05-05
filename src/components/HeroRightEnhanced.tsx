@@ -253,6 +253,16 @@ export default function HeroRightEnhanced() {
   const c2 = orbit.cards[2] ?? { x: STAGE_W / 2, y: STAGE_H / 2, z: 0, scale: 1, opacity: 1 }
 
   return (
+    // Responsive centering: on mobile the 480px stage is shrunk to fit.
+    // The outer div owns the height so no whitespace leaks below the scaled content.
+    // overflow-hidden keeps anything that swings past the stage edge contained.
+    <div
+      className="w-full flex justify-center overflow-hidden
+                 h-[336px] sm:h-[408px] lg:h-auto"
+    >
+    <div
+      className="flex-shrink-0 origin-top scale-[0.7] sm:scale-[0.85] lg:scale-100"
+    >
     <div
       ref={wrapperRef}
       className="relative mx-auto"
@@ -751,6 +761,8 @@ export default function HeroRightEnhanced() {
         />
 
       </div>{/* end stage */}
+    </div>{/* end wrapperRef */}
+    </div>{/* end scale wrapper */}
     </div>
   )
 }
