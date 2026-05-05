@@ -3,13 +3,11 @@
 import { motion } from 'framer-motion';
 import { ComponentType } from 'react';
 import Button from '@/components/Button';
-import ParticleNetwork from '@/components/ParticleNetwork';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
 interface ServicePageHeroProps {
   translationKey: string;
   accentColor?: 'gray' | 'emerald' | 'violet' | 'blue' | 'amber' | 'rose';
-  showParticles?: boolean;
   ctaHref?: string;
   secondaryCtaHref?: string;
   AnimationComponent?: ComponentType;
@@ -81,7 +79,6 @@ const accentColors = {
 export default function ServicePageHero({
   translationKey,
   accentColor = 'gray',
-  showParticles = true,
   ctaHref = '/contact',
   secondaryCtaHref,
   AnimationComponent,
@@ -109,25 +106,6 @@ export default function ServicePageHero({
 
   return (
     <section className="hero-section relative overflow-hidden gradient-bg-vibrant" dir={dir}>
-      {/* Background */}
-      <div className="absolute inset-0 z-0">
-        {showParticles && <ParticleNetwork className="opacity-40" />}
-
-        {/* Grid Pattern */}
-        <div className="absolute inset-0 opacity-[0.02]">
-          <div
-            className="w-full h-full"
-            style={{
-              backgroundImage: `
-                linear-gradient(rgba(0,0,0,0.3) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(0,0,0,0.3) 1px, transparent 1px)
-              `,
-              backgroundSize: '64px 64px'
-            }}
-          />
-        </div>
-      </div>
-
       {/* Crescent Decorations - RTL Aware - Hidden on mobile */}
       <div className={`hidden md:block absolute top-32 w-20 h-20 md:w-32 md:h-32 ${isRTL ? 'left-10 md:left-20' : 'right-10 md:right-20'}`}>
         <div className={`crescent ${isRTL ? 'crescent-left' : 'crescent-right'} crescent-subtle text-gray-900`} />

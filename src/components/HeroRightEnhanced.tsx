@@ -309,21 +309,6 @@ export default function HeroRightEnhanced() {
         style={{ width: STAGE_W, height: STAGE_H, overflow: 'visible' }}
       >
 
-        {/* Background grid */}
-        <motion.div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 -z-10"
-          animate={{ opacity: [0.05, 0.07, 0.05] }}
-          transition={{ duration: 14, repeat: Infinity, ease: 'easeInOut' }}
-          style={{
-            backgroundImage: `
-              radial-gradient(circle at 50% 50%, rgba(99,102,241,0.06), transparent 60%),
-              linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px)
-            `,
-            backgroundSize: '100% 100%, 32px 32px, 32px 32px',
-          }}
-        />
 
         {/* ── 3-D orbit rings — own perspective context so CSS rotateX works ── */}
         <div

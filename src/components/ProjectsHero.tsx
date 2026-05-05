@@ -4,7 +4,6 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Button from '@/components/Button';
-import ParticleNetwork from '@/components/ParticleNetwork';
 import ProjectsHeroAnimation from '@/components/animations/ProjectsHeroAnimation';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
@@ -30,22 +29,6 @@ export default function ProjectsHero() {
 
   return (
     <section className="hero-section relative gradient-bg-vibrant overflow-hidden" dir={dir}>
-      {/* Particle Network Background */}
-      <ParticleNetwork className="opacity-60" />
-
-      {/* Swiss Grid Background */}
-      <div className="absolute inset-0 opacity-[0.02]">
-        <div
-          className="w-full h-full"
-          style={{
-            backgroundImage: `
-              linear-gradient(rgba(0,0,0,0.3) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(0,0,0,0.3) 1px, transparent 1px)
-            `,
-            backgroundSize: '64px 64px'
-          }}
-        />
-      </div>
 
       {/* Proper Crescent Elements */}
       <div className={`absolute top-32 w-32 h-32 ${dir === 'rtl' ? 'left-20' : 'right-20'}`}>

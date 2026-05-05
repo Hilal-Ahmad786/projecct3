@@ -169,19 +169,6 @@ export default function Hero() {
       className="hero-section relative gradient-bg-vibrant overflow-hidden"
       dir={dir}
     >
-      {/* Swiss Grid Background */}
-      <div className="absolute inset-0 opacity-[0.02]">
-        <div
-          className="w-full h-full"
-          style={{
-            backgroundImage: `
-              linear-gradient(rgba(0,0,0,0.3) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(0,0,0,0.3) 1px, transparent 1px)
-            `,
-            backgroundSize: '64px 64px',
-          }}
-        />
-      </div>
 
       {/* Crescent Elements — scroll-parallax */}
       <motion.div
