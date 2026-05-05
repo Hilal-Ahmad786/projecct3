@@ -107,12 +107,14 @@ function initialOrbitState(count: number): OrbitState {
 
 // ─────────────────────────────────────────────────────────────────────────────
 export default function HeroRightEnhanced() {
-  const wrapperRef = useRef<HTMLDivElement>(null)
-  const stageRef   = useRef<HTMLDivElement>(null)
-  const angleRef   = useRef(0)
+  const wrapperRef   = useRef<HTMLDivElement>(null)
+  const stageRef     = useRef<HTMLDivElement>(null)
+  const containerRef = useRef<HTMLDivElement>(null)
+  const angleRef     = useRef(0)
 
   const prefersReducedMotion = useReducedMotion()
   const [mounted, setMounted] = useState(false)
+  const [scale, setScale]     = useState(1)
   const isInView = useInView(stageRef, { once: true, amount: 0.3 })
 
   const { dir, isLoading, t: tGlobal } = useTranslations()
@@ -178,6 +180,17 @@ export default function HeroRightEnhanced() {
 
   // ── Mount ─────────────────────────────────────────────────────────────────
   useEffect(() => { setMounted(true) }, [])
+
+  // ── Responsive scale — ResizeObserver keeps scale in sync with actual width ─
+  useEffect(() => {
+    const el = containerRef.current
+    if (!el) return
+    const ro = new ResizeObserver(([entry]) => {
+      setScale(Math.min(1, entry.contentRect.width / STAGE_W))
+    })
+    ro.observe(el)
+    return () => ro.disconnect()
+  }, [])
 
   // ── rAF orbit loop — chips (forward) + cards (reverse) + particles ────────
   useEffect(() => {
@@ -253,19 +266,21 @@ export default function HeroRightEnhanced() {
   const c2 = orbit.cards[2] ?? { x: STAGE_W / 2, y: STAGE_H / 2, z: 0, scale: 1, opacity: 1 }
 
   return (
-    // Responsive centering: on mobile the 480px stage is shrunk to fit.
-    // The outer div owns the height so no whitespace leaks below the scaled content.
-    // overflow-hidden keeps anything that swings past the stage edge contained.
+    // containerRef measures the true rendered column width so we can derive
+    // the exact scale needed. height mirrors the visual (scaled) stage height
+    // so no phantom whitespace leaks below on mobile.
     <div
-      className="w-full flex justify-center overflow-hidden
-                 h-[336px] sm:h-[408px] lg:h-auto"
+      ref={containerRef}
+      className="w-full overflow-hidden"
+      style={{ height: STAGE_H * scale }}
     >
     <div
-      className="flex-shrink-0 origin-top scale-[0.7] sm:scale-[0.85] lg:scale-100"
+      className="mx-auto origin-top"
+      style={{ width: STAGE_W, transform: `scale(${scale})` }}
     >
     <div
       ref={wrapperRef}
-      className="relative mx-auto"
+      className="relative"
       dir={dir}
       style={{ width: STAGE_W, perspective: '1200px', willChange: 'transform' }}
     >
