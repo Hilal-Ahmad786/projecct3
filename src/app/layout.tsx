@@ -1,10 +1,13 @@
 import './globals.css'
 import { ReactNode } from 'react'
+import dynamic from 'next/dynamic'
 import Analytics from '@/components/Analytics'
 import SecurityGuard from '@/components/SecurityGuard'
 import ReCaptcha from '@/components/ReCaptcha'
 import { cookies } from 'next/headers'
 import { Analytics as VercelAnalytics } from '@vercel/analytics/next'
+
+const LenisProvider = dynamic(() => import('@/components/LenisProvider'), { ssr: false })
 
 export const metadata = {
     metadataBase: new URL('https://www.paksoft.com.tr'),
@@ -76,7 +79,9 @@ export default async function RootLayout({ children }: RootLayoutProps) {
             </head>
             <body className="flex flex-col min-h-screen" suppressHydrationWarning>
                 <SecurityGuard />
-                {children}
+                <LenisProvider>
+                    {children}
+                </LenisProvider>
                 <VercelAnalytics />
             </body>
         </html>
