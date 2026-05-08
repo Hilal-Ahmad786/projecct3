@@ -894,12 +894,14 @@ const serviceCategories: Record<string, { key: string; icon: React.ElementType; 
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [navVisible, setNavVisible] = useState(true);
+  const lastScrollY = useRef(0);
   const [open, setOpen] = useState(false);
   const [languageOpen, setLanguageOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<string>('webSoftware');
-  const servicesRef = useRef<HTMLDivElement>(null);
+  const servicesRef = useRef<HTMLLIElement>(null);
   const pathname = usePathname();
   const router = useRouter();
 
@@ -928,8 +930,21 @@ export default function Navbar() {
   const currentServiceSlug = getServiceSlug();
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener('scroll', onScroll);
+    const onScroll = () => {
+      const currentY = window.scrollY;
+      const prevY = lastScrollY.current;
+
+      setScrolled(currentY > 60);
+
+      if (currentY > 120) {
+        setNavVisible(currentY < prevY);
+      } else {
+        setNavVisible(true);
+      }
+
+      lastScrollY.current = currentY;
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
@@ -991,17 +1006,18 @@ export default function Navbar() {
     <>
       <header
         className={`
-          fixed inset-x-0 top-0 z-50 transition-all duration-300
+          fixed inset-x-0 top-0 z-50 transition-all duration-300 will-change-transform
           ${scrolled
-            ? 'glass-strong border-b border-glass shadow-lg py-3'
-            : 'glass-subtle border-b border-glass/50 py-4'
+            ? 'bg-white/80 backdrop-blur-md border-b border-gray-200/60 shadow-sm py-3'
+            : 'bg-transparent border-b border-transparent py-4'
           }
+          ${navVisible ? 'translate-y-0' : '-translate-y-full'}
         `}
         dir={dir}
       >
         <div className="container mx-auto flex items-center justify-between">
           <Link href={`/${locale}`} className="flex items-center gap-3 group">
-            <div className="relative">
+            <div className={`relative transition-all duration-300 ${scrolled ? 'scale-90' : 'scale-100'}`}>
               <Image
                 src="/images/logo/logo.png"
                 alt="PakSoft Logo"

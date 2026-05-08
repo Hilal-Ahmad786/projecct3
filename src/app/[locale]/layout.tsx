@@ -7,6 +7,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import FloatingButtons from '@/components/FloatingButtons'
 import { GlobalJsonLd } from '@/components/seo/JsonLd'
+import PageTransition from '@/components/PageTransition'
 
 interface LocaleLayoutProps {
   children: ReactNode
@@ -24,7 +25,9 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
       <TranslationsProvider locale={validLocale} translations={translations}>
         <GlobalJsonLd />
         <Navbar />
-        <main className="flex-grow">{children}</main>
+        <main className="flex-grow">
+          <PageTransition>{children}</PageTransition>
+        </main>
         <Footer />
         <FloatingButtons />
       </TranslationsProvider>

@@ -6,11 +6,14 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { initGSAP } from '@/lib/gsap'
 
+export const lenisRef: { current: Lenis | null } = { current: null }
+
 export function useLenis() {
   useEffect(() => {
     initGSAP()
 
     const lenis = new Lenis({ autoRaf: false })
+    lenisRef.current = lenis
 
     // Keep ScrollTrigger in sync with every Lenis scroll event
     lenis.on('scroll', ScrollTrigger.update)
@@ -38,6 +41,7 @@ export function useLenis() {
     return () => {
       gsap.ticker.remove(onTick)
       lenis.destroy()
+      lenisRef.current = null
     }
   }, [])
 }

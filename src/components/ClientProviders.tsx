@@ -6,6 +6,16 @@ const LenisProvider = dynamic(
   { ssr: false }
 )
 
+const ScrollProgressBar = dynamic(
+  () => import('@/components/ScrollProgressBar'),
+  { ssr: false }
+)
+
 export function ClientProviders({ children }: { children: React.ReactNode }) {
-  return <LenisProvider>{children}</LenisProvider>
+  return (
+    <LenisProvider>
+      <ScrollProgressBar />
+      {children}
+    </LenisProvider>
+  )
 }

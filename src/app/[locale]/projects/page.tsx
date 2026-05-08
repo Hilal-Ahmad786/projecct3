@@ -6,6 +6,7 @@ import { generateAlternateLinks } from '@/lib/seo';
 import { localizeFullPath } from '@/lib/routes';
 import ProjectsHero from '@/components/ProjectsHero';
 import ProjectsGallerySection from '@/components/ProjectsGallerySection';
+import HorizontalProjectsScroll from '@/components/HorizontalProjectsScroll';
 import FeaturedCaseStudySection from '@/components/FeaturedCaseStudySection';
 import TechApproachSection from '@/components/TechApproachSection';
 import SuccessMetricsSection from '@/components/SuccessMetricsSection';
@@ -74,6 +75,7 @@ export default async function ProjectsPage({ params }: PageProps) {
   return (
     <>
       <ProjectsHero />
+      <HorizontalProjectsScroll projects={projects} locale={locale} />
       <ProjectsGallerySection projects={projects} locale={locale} />
       <FeaturedCaseStudySection />
       <TechApproachSection />
