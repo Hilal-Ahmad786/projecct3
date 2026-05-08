@@ -3,6 +3,8 @@
 
 import { motion } from 'framer-motion';
 import SectionHeader from '@/components/SectionHeader';
+import SplitHeading from '@/components/SplitHeading';
+import ScrollRevealText from '@/components/ScrollRevealText';
 import {
   ClockIcon,
   ShieldCheckIcon,
@@ -69,7 +71,7 @@ export default function WhyUsSection() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: [0.4, 0, 0.2, 1] }
+      transition: { duration: 0.6, ease: [0.4, 0, 0.2, 1] as [number, number, number, number] }
     }
   };
 
@@ -109,14 +111,16 @@ export default function WhyUsSection() {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-title text-gray-900 mb-3">
-                  {advantage.title}
-                </h3>
+                <SplitHeading
+                  tag="h3"
+                  text={advantage.title as string}
+                  className="text-title text-gray-900 mb-3"
+                />
 
                 {/* Description */}
-                <p className="text-body text-gray-600 mb-4 leading-relaxed">
-                  {advantage.description}
-                </p>
+                <ScrollRevealText className="text-body text-gray-600 mb-4 leading-relaxed">
+                  {advantage.description as string}
+                </ScrollRevealText>
 
                 {/* Metric */}
                 <div className="p-3 bg-gray-50 border border-gray-200 rounded-sm">

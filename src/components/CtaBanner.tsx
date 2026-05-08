@@ -3,6 +3,8 @@
 
 import { motion } from 'framer-motion';
 import Button from '@/components/Button';
+import SplitHeading from '@/components/SplitHeading';
+import ScrollRevealText from '@/components/ScrollRevealText';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function CtaBanner() {
@@ -62,28 +64,25 @@ export default function CtaBanner() {
           </div>
 
           {/* Main Heading */}
-          <motion.h2
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="text-headline text-gray-900 mb-6"
-          >
-            {t('title')}
-            <br />
-            <span className="text-gray-600">{t('titleAccent')}</span>
-          </motion.h2>
+          <SplitHeading
+            tag="h2"
+            text={t('title') as string}
+            className="text-headline text-gray-900 mb-2"
+            delay={0.2}
+          />
+          <SplitHeading
+            tag="h2"
+            text={t('titleAccent') as string}
+            className="text-headline text-gray-600 mb-6"
+            delay={0.4}
+          />
 
           {/* Description */}
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            viewport={{ once: true }}
-            className="text-body text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed"
-          >
-            {t('description')}
-          </motion.p>
+          <div className="mb-12 max-w-2xl mx-auto">
+            <ScrollRevealText className="text-body text-gray-600 leading-relaxed">
+              {t('description') as string}
+            </ScrollRevealText>
+          </div>
 
           {/* Action Buttons */}
           <motion.div
