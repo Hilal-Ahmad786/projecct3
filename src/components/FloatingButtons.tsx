@@ -6,7 +6,7 @@ import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import { PhoneIcon, ChatBubbleLeftRightIcon, XMarkIcon, ArrowUpIcon } from '@heroicons/react/24/outline';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 import { trackWhatsAppClick, trackPhoneCall, trackChatOpen } from '@/lib/analytics';
-import { snappySpring, smoothSpring } from '@/lib/animations';
+import { snappySpring } from '@/lib/animations';
 
 export default function FloatingButtons() {
   const [isOpen, setIsOpen] = useState(false);
@@ -177,7 +177,7 @@ export default function FloatingButtons() {
             initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: 20 }}
-            transition={prefersReducedMotion ? { duration: 0 } : smoothSpring}
+            transition={prefersReducedMotion ? { duration: 0 } : snappySpring}
             aria-label="Scroll to top"
           >
             <ArrowUpIcon className="w-4 h-4 text-gray-600" />
@@ -196,7 +196,7 @@ export default function FloatingButtons() {
                 <motion.button
                   key={item.label}
                   onClick={item.onClick}
-                  className={`group flex items-center gap-0 bg-white rounded-full shadow-soft hover:shadow-medium transition-all overflow-hidden ${item.borderClass}`}
+                  className={`flex items-center justify-center w-12 h-12 rounded-full shadow-soft hover:shadow-medium transition-shadow ${item.borderClass}`}
                   aria-label={item.ariaLabel}
                   initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, scale: 0.5, y: 20 }}
                   animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -206,10 +206,7 @@ export default function FloatingButtons() {
                     delay: (menuItems.length - 1 - index) * 0.06,
                   }}
                 >
-                  <span className={`px-4 py-2 text-sm font-medium text-gray-700 max-w-0 group-hover:max-w-xs transition-all duration-250 whitespace-nowrap overflow-hidden ${dir === 'rtl' ? 'order-2' : ''}`}>
-                    {item.label}
-                  </span>
-                  <div className={`w-12 h-12 flex items-center justify-center ${item.iconBg} rounded-full group-hover:scale-110 transition-transform duration-250 flex-shrink-0 ${dir === 'rtl' ? 'order-1' : ''}`}>
+                  <div className={`w-12 h-12 flex items-center justify-center ${item.iconBg} rounded-full flex-shrink-0`}>
                     {item.icon}
                   </div>
                 </motion.button>
