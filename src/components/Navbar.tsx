@@ -901,6 +901,7 @@ export default function Navbar() {
   const [servicesOpen, setServicesOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<string>('webSoftware');
+  const [searchQuery, setSearchQuery] = useState('');
   const servicesRef = useRef<HTMLLIElement>(null);
   const pathname = usePathname();
   const router = useRouter();
@@ -953,6 +954,7 @@ export default function Navbar() {
     const handleClickOutside = (event: MouseEvent) => {
       if (servicesRef.current && !servicesRef.current.contains(event.target as Node)) {
         setServicesOpen(false);
+        setSearchQuery('');
       }
     };
     document.addEventListener('mousedown', handleClickOutside);
@@ -993,6 +995,7 @@ export default function Navbar() {
   const handleLinkClick = () => {
     setOpen(false);
     setServicesOpen(false);
+    setSearchQuery('');
   };
 
   // Get localized service path based on locale
@@ -1056,7 +1059,7 @@ export default function Navbar() {
               {!isServicePage && (
                 <li className="relative" ref={servicesRef}>
                   <button
-                    onClick={() => setServicesOpen(!servicesOpen)}
+                    onClick={() => { setServicesOpen(!servicesOpen); setSearchQuery(''); }}
                     className={`
                       flex items-center gap-1 text-sm font-medium tracking-wide transition-colors duration-250
                       ${pathname.includes('/services')
@@ -1072,92 +1075,125 @@ export default function Navbar() {
                     <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gray-900" />
                   )}
 
-                  {/* Mega Dropdown — 3-column layout with 6 categories */}
+                  {/* Mega Menu — Bento Grid Layout */}
                   {servicesOpen && (
-                    <div className="fixed top-20 left-1/2 -translate-x-1/2 w-[95vw] md:w-[90vw] lg:w-[1100px] xl:w-[1200px] bg-white/95 backdrop-blur-xl border border-gray-200 rounded-2xl shadow-2xl z-50 flex flex-col" style={{ maxHeight: 'calc(100vh - 6rem)' }}>
-                      {/* Header */}
-                      <div className="flex items-center justify-between px-8 pt-6 pb-4 border-b border-gray-100 flex-shrink-0">
+                    <div className="fixed top-20 left-1/2 -translate-x-1/2 w-[95vw] md:w-[90vw] lg:w-[1080px] xl:w-[1260px] bg-white border border-gray-200/70 rounded-2xl shadow-2xl z-50 flex flex-col overflow-hidden" style={{ maxHeight: 'calc(100vh - 6rem)' }}>
+
+                      {/* Header & Search */}
+                      <div className={`flex items-end justify-between gap-6 px-8 pt-6 pb-5 border-b border-gray-100 bg-gray-50/60 flex-shrink-0 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
                         <div>
                           <h2 className="text-lg font-semibold text-gray-900">{t('services')}</h2>
-                          <p className="text-sm text-gray-500 mt-0.5">150+ services across 6 categories</p>
+                          <p className="text-sm text-gray-500 mt-0.5">Comprehensive digital solutions driving growth and efficiency.</p>
                         </div>
-                        <Link
-                          href={`/${locale}/services`}
-                          onClick={handleLinkClick}
-                          className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg hover:bg-gray-800 transition-colors"
-                        >
-                          {tServices('viewAll')}
-                          <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                          </svg>
-                        </Link>
+                        <div className="relative flex-shrink-0 w-64 xl:w-72">
+                          <MagnifyingGlassIcon className={`absolute ${dir === 'rtl' ? 'right-3.5' : 'left-3.5'} top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400 pointer-events-none`} />
+                          <input
+                            type="text"
+                            value={searchQuery}
+                            onChange={(e) => setSearchQuery(e.target.value)}
+                            placeholder="Search services..."
+                            className={`w-full bg-white rounded-full py-2.5 ${dir === 'rtl' ? 'pr-10 pl-4' : 'pl-10 pr-4'} border border-gray-200 focus:border-accent-emerald focus:ring-1 focus:ring-accent-emerald outline-none transition-all text-sm placeholder:text-gray-400`}
+                          />
+                        </div>
                       </div>
 
-                      {/* Single scrollable area with 3 columns (2 rows of 3) */}
-                      <div className="overflow-y-auto flex-1 px-8 py-6 scrollbar-thin">
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+                      {/* Bento Grid */}
+                      <div className="overflow-y-auto flex-1 p-5 scrollbar-thin">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                           {Object.entries(serviceCategories).map(([catKey, cat]) => {
                             const CatIcon = cat.icon;
+                            const isConsulting = catKey === 'consulting';
+                            const q = searchQuery.trim().toLowerCase();
+                            const allServices = q
+                              ? cat.services.filter(s =>
+                                  s.slug.replace(/-/g, ' ').includes(q) ||
+                                  s.children?.some(c => c.replace(/-/g, ' ').includes(q))
+                                )
+                              : cat.services.slice(0, isConsulting ? 2 : 4);
+
+                            if (q && allServices.length === 0) return null;
+
                             return (
-                              <div key={catKey}>
+                              <div key={catKey} className="flex flex-col rounded-xl border border-gray-100 overflow-hidden bg-white">
                                 {/* Category header */}
-                                <div className="flex items-center gap-2 mb-3">
-                                  <div className={`w-7 h-7 rounded-lg bg-gradient-to-br ${cat.gradient} flex items-center justify-center`}>
-                                    <CatIcon className="w-3.5 h-3.5 text-white" />
+                                <div className="flex items-center gap-3 px-4 py-3.5 border-b border-gray-100 bg-gray-50/60 flex-shrink-0">
+                                  <div className={`w-9 h-9 rounded-xl bg-gradient-to-br ${cat.gradient} flex items-center justify-center shadow-sm flex-shrink-0`}>
+                                    <CatIcon className="w-4.5 h-4.5 text-white" />
                                   </div>
-                                  <h3 className="text-xs font-bold text-gray-900 uppercase tracking-wide">{tServices(cat.key)}</h3>
+                                  <h3 className="font-bold text-gray-900 text-sm tracking-tight">{tServices(cat.key)}</h3>
                                 </div>
-                                {/* Services list */}
-                                <div className="space-y-0.5">
-                                  {cat.services.map((service) => {
-                                    const IconComponent = serviceIcons[service.slug] || CpuChipIcon;
-                                    const gradient = serviceGradients[service.slug];
-                                    const iconColor = serviceIconColors[service.slug];
-                                    return (
+
+                                {/* Sub-groups */}
+                                <div className="p-4 flex-1 flex flex-col gap-4">
+                                  <div className="grid grid-cols-2 gap-x-4 gap-y-4">
+                                    {allServices.map((service) => (
                                       <div key={service.slug}>
-                                        {/* Parent service */}
                                         <Link
                                           href={getServicePath(service.slug)}
                                           onClick={handleLinkClick}
-                                          className={`group flex items-center gap-2 p-1.5 rounded-lg bg-gradient-to-br ${gradient} border transition-all duration-200 hover:shadow-sm hover:scale-[1.01]`}
+                                          className={`block font-semibold text-xs text-gray-900 mb-2 ${dir === 'rtl' ? 'border-r-2 border-l-0 pr-2' : 'border-l-2 pl-2'} border-accent-emerald hover:text-accent-emerald transition-colors leading-tight`}
                                         >
-                                          <div className={`flex-shrink-0 w-7 h-7 rounded-md bg-white shadow-sm flex items-center justify-center ${iconColor} group-hover:scale-110 transition-transform duration-200`}>
-                                            <IconComponent className="w-3.5 h-3.5" />
-                                          </div>
-                                          <span className="text-xs font-semibold text-gray-800 group-hover:text-gray-900 transition-colors leading-tight">
-                                            {tServices(`services.${service.slug}`)}
-                                          </span>
+                                          {tServices(`services.${service.slug}`)}
                                         </Link>
-                                        {/* Child sub-services */}
                                         {service.children && service.children.length > 0 && (
-                                          <div className={`${dir === 'rtl' ? 'mr-3 pr-2 border-r' : 'ml-3 pl-2 border-l'} border-gray-200/80 my-0.5`}>
-                                            {service.children.map((childSlug) => {
-                                              const ChildIcon = serviceIcons[childSlug] || CpuChipIcon;
-                                              const childColor = serviceIconColors[childSlug];
-                                              return (
+                                          <ul className="flex flex-col gap-0.5">
+                                            {service.children.slice(0, 4).map((childSlug) => (
+                                              <li key={childSlug}>
                                                 <Link
-                                                  key={childSlug}
                                                   href={getServicePath(childSlug)}
                                                   onClick={handleLinkClick}
-                                                  className="group flex items-center gap-1.5 px-1.5 py-[3px] rounded-md hover:bg-gray-50 transition-colors duration-150"
+                                                  className="text-[12px] text-gray-500 hover:text-accent-emerald transition-colors leading-snug block"
                                                 >
-                                                  <ChildIcon className={`w-3 h-3 ${childColor} flex-shrink-0 opacity-70 group-hover:opacity-100`} />
-                                                  <span className="text-[11px] sm:text-xs text-gray-500 group-hover:text-gray-800 transition-colors leading-tight">
-                                                    {tServices(`services.${childSlug}`)}
-                                                  </span>
+                                                  {tServices(`services.${childSlug}`)}
                                                 </Link>
-                                              );
-                                            })}
-                                          </div>
+                                              </li>
+                                            ))}
+                                          </ul>
                                         )}
                                       </div>
-                                    );
-                                  })}
+                                    ))}
+                                  </div>
+
+                                  {/* "Ready to Scale?" CTA — consulting only */}
+                                  {isConsulting && !q && (
+                                    <div className="mt-auto bg-gray-900 rounded-xl p-5 relative overflow-hidden group">
+                                      <div className="absolute -right-6 -top-6 w-24 h-24 bg-accent-emerald/20 rounded-full blur-xl pointer-events-none" />
+                                      <div className="relative z-10">
+                                        <h4 className="font-semibold text-white text-sm mb-0.5">Ready to Scale?</h4>
+                                        <p className="text-white/70 text-xs mb-3">Schedule a free consultation.</p>
+                                        <Link
+                                          href={`/${locale}${getLocalizedPath('/contact', locale)}`}
+                                          onClick={handleLinkClick}
+                                          className="inline-flex items-center gap-1.5 bg-white text-gray-900 font-semibold text-xs px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors"
+                                        >
+                                          Book Demo
+                                          <svg className="h-3 w-3 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                          </svg>
+                                        </Link>
+                                      </div>
+                                    </div>
+                                  )}
                                 </div>
                               </div>
                             );
                           })}
                         </div>
+                      </div>
+
+                      {/* Bottom bar */}
+                      <div className={`flex items-center justify-between px-8 py-3.5 border-t border-gray-100 bg-gray-50/50 flex-shrink-0 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
+                        <p className="text-xs text-gray-400 font-mono">Explore our full catalog of specialized services</p>
+                        <Link
+                          href={`/${locale}/services`}
+                          onClick={handleLinkClick}
+                          className={`flex items-center gap-1 text-xs font-semibold text-accent-emerald hover:underline ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}
+                        >
+                          {tServices('viewAll')}
+                          <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                          </svg>
+                        </Link>
                       </div>
                     </div>
                   )}

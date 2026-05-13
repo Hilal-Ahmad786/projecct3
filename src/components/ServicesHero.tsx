@@ -6,9 +6,15 @@ import { motion } from 'framer-motion';
 import Button from '@/components/Button';
 import ServicesHeroAnimation from '@/components/animations/ServicesHeroAnimation';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
+import {
+  CodeBracketIcon,
+  DevicePhoneMobileIcon,
+  CpuChipIcon,
+  BoltIcon,
+} from '@heroicons/react/24/outline';
 
 export default function ServicesHero() {
-  const { dir, isLoading, t: tGlobal } = useTranslations();
+  const { dir, isLoading } = useTranslations();
   const t = useSectionTranslations('services.hero');
   const [mounted, setMounted] = useState(false);
 
@@ -28,7 +34,7 @@ export default function ServicesHero() {
 
   // Get categories safely
   const categories = t('categories');
-  const categoryList = Array.isArray(categories) ? categories : [];
+  const categoryList: string[] = Array.isArray(categories) ? (categories as string[]) : [];
 
   return (
     <section className="hero-section relative gradient-bg-vibrant overflow-hidden" dir={dir}>
@@ -103,22 +109,25 @@ export default function ServicesHero() {
             {/* Service Categories */}
             {categoryList.length > 0 && (
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-gray-200">
-                {categoryList.slice(0, 4).map((service: string, index: number) => (
-                  <motion.div
-                    key={service}
-                    initial={{ opacity: 0, y: 16 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 1 + index * 0.1, duration: 0.6 }}
-                    className="text-center sm:text-left"
-                  >
-                    <div className="text-2xl mb-2">
-                      {index === 0 ? "💻" : index === 1 ? "📱" : index === 2 ? "🤖" : "⚡"}
-                    </div>
-                    <div className="text-caption text-gray-500">
-                      {service}
-                    </div>
-                  </motion.div>
-                ))}
+                {categoryList.slice(0, 4).map((service: string, index: number) => {
+                  const CategoryIcon = [CodeBracketIcon, DevicePhoneMobileIcon, CpuChipIcon, BoltIcon][index];
+                  return (
+                    <motion.div
+                      key={service}
+                      initial={{ opacity: 0, y: 16 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 1 + index * 0.1, duration: 0.6 }}
+                      className="flex flex-col items-center sm:items-start gap-2"
+                    >
+                      <div className="w-9 h-9 rounded-lg bg-gray-900 flex items-center justify-center">
+                        <CategoryIcon className="w-5 h-5 text-white" />
+                      </div>
+                      <div className="text-caption text-gray-500 text-center sm:text-left">
+                        {service}
+                      </div>
+                    </motion.div>
+                  );
+                })}
               </div>
             )}
           </motion.div>
@@ -135,24 +144,37 @@ export default function ServicesHero() {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
+      {/* Scroll Indicator – animated mouse */}
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5, duration: 0.8 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        initial={{ opacity: 0, y: 8 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1.8, duration: 0.6 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 cursor-pointer group"
+        onClick={() => window.scrollBy({ top: window.innerHeight * 0.8, behavior: 'smooth' })}
       >
-        <div className="flex flex-col items-center gap-2 text-gray-400 hover:text-gray-600 transition-colors cursor-pointer">
-          <span className="text-xs font-medium uppercase tracking-wide">{tGlobal('common.scroll')}</span>
+        <div className="w-[22px] h-[34px] rounded-full border-2 border-gray-300 group-hover:border-gray-500 transition-colors duration-300 flex items-start justify-center pt-[5px]">
           <motion.div
-            animate={{ y: [0, 4, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          >
-            <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-          </motion.div>
+            animate={{ y: [0, 12, 0], opacity: [1, 0, 1] }}
+            transition={{ duration: 1.6, repeat: Infinity, ease: 'easeInOut' }}
+            className="w-[3px] h-[8px] bg-gray-400 group-hover:bg-gray-600 transition-colors duration-300 rounded-full"
+          />
         </div>
+        <div className="flex flex-col items-center gap-0.5">
+          {[0, 0.15, 0.3].map((delay, i) => (
+            <motion.svg
+              key={i}
+              animate={{ opacity: [0.2, 1, 0.2] }}
+              transition={{ duration: 1.2, repeat: Infinity, ease: 'easeInOut', delay }}
+              className="w-3 h-3 text-gray-300 group-hover:text-gray-500 transition-colors duration-300"
+              fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </motion.svg>
+          ))}
+        </div>
+        <span className="text-[9px] font-semibold tracking-[0.2em] uppercase text-gray-300 group-hover:text-gray-500 transition-colors duration-300">
+          Scroll
+        </span>
       </motion.div>
     </section>
   );

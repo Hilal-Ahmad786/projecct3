@@ -8,6 +8,7 @@ import ServicesHero from '@/components/ServicesHero'
 import ServicesSection from '@/components/ServicesSection'
 import PricingSection from '@/components/PricingSection'
 import WhyUsSection from '@/components/WhyUsSection'
+import ServicesWhyUs from '@/components/ServicesWhyUs'
 import TestimonialsSection from '@/components/TestimonialsSection'
 import CtaBanner from '@/components/CtaBanner'
 
@@ -63,6 +64,7 @@ export default function ServicesPage() {
     <>
       <ServicesHero />
       <ServicesSection />
+      <ServicesWhyUs />
       <PricingSection />
       <WhyUsSection />
       <TestimonialsSection />

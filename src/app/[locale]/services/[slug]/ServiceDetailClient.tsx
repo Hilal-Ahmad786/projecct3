@@ -4,12 +4,20 @@ import { useState } from 'react';
 import LocalizedLink from '@/components/LocalizedLink';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircleIcon } from '@heroicons/react/24/solid';
-import { PlusIcon, MinusIcon, ChevronRightIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
+import {
+  PlusIcon, MinusIcon, ChevronRightIcon, ArrowRightIcon,
+  StarIcon, UserGroupIcon, ClockIcon, TrophyIcon,
+  ShieldCheckIcon, BoltIcon, ChatBubbleLeftRightIcon, CpuChipIcon,
+  CodeBracketIcon, DevicePhoneMobileIcon, GlobeAltIcon, SparklesIcon,
+  PaintBrushIcon, MegaphoneIcon, ShoppingCartIcon, CloudIcon,
+  ServerStackIcon, LightBulbIcon, WrenchScrewdriverIcon,
+} from '@heroicons/react/24/outline';
 import Button from '@/components/Button';
 import ServicePortfolio from '@/components/services/ServicePortfolio';
 import ServiceRequestCTA from '@/components/services/ServiceRequestCTA';
 import { HeroVisual, BgPatternRenderer, DecorationRenderer, type ServiceAnimation } from '@/components/services/hero-visuals';
 import { useTranslations } from '@/hooks/useTranslations';
+import { formatPrice } from '@/lib/currency';
 
 // ── Types ────────────────────────────────────────────────────────────
 interface ProcessStep {
@@ -181,7 +189,7 @@ const accentColors: Record<AccentColor, {
   },
 };
 
-// ── Icon map ─────────────────────────────────────────────────────────
+// ── Icon map (emoji fallback for sub-service cards) ──────────────────
 const iconMap: Record<string, string> = {
   code: '💻',
   cpu: '🤖',
@@ -196,6 +204,26 @@ const iconMap: Record<string, string> = {
   'shopping-cart': '🛒',
   cloud: '☁️',
   shield: '🛡️',
+};
+
+// ── Heroicon map for hero section ─────────────────────────────────────
+type HeroIconComponent = React.ComponentType<{ className?: string }>;
+const heroIconMap: Record<string, HeroIconComponent> = {
+  code:            CodeBracketIcon,
+  cpu:             CpuChipIcon,
+  'device-mobile': DevicePhoneMobileIcon,
+  bolt:            BoltIcon,
+  cog:             WrenchScrewdriverIcon,
+  'chart-bar':     ServerStackIcon,
+  brain:           SparklesIcon,
+  chat:            ChatBubbleLeftRightIcon,
+  api:             GlobeAltIcon,
+  'paint-brush':   PaintBrushIcon,
+  megaphone:       MegaphoneIcon,
+  'shopping-cart': ShoppingCartIcon,
+  cloud:           CloudIcon,
+  shield:          ShieldCheckIcon,
+  light:           LightBulbIcon,
 };
 
 // ── Process icon map ─────────────────────────────────────────────────
@@ -221,7 +249,7 @@ function ProcessIcon({ step }: { step: number }) {
 // ── MAIN CLIENT COMPONENT ────────────────────────────────────────────
 // ═══════════════════════════════════════════════════════════════════════
 export default function ServiceDetailClient({ service }: { service: ServiceDetailData }) {
-  const { t } = useTranslations();
+  const { t, locale } = useTranslations();
   const accent: AccentColor = colorMap[service.color || ''] || 'emerald';
   const colors = accentColors[accent];
 
@@ -236,10 +264,16 @@ export default function ServiceDetailClient({ service }: { service: ServiceDetai
   const parentService = service.parentService;
   const animation = service.content.animation;
 
+  const richCapabilities = service._jsonContent?.services?.items ?? [];
+  const whyUsBenefits = service._jsonContent?.whyUs?.benefits ?? [];
+
   return (
     <>
-      {/* ── 1. Hero (two-column, animated) ──────────────────────────── */}
+      {/* ── 1. Hero ──────────────────────────────────────────────────── */}
       <HeroSection service={service} colors={colors} accent={accent} process={process} animation={animation} />
+
+      {/* ── 1.5. Stats Bar (hidden for now) ─────────────────────────── */}
+      {/* <StatsBar accent={accent} /> */}
 
       {/* ── 2. Portfolio (Recent Projects) ───────────────────────────── */}
       {portfolio.length > 0 && <ServicePortfolio portfolio={portfolio} />}
@@ -247,36 +281,26 @@ export default function ServiceDetailClient({ service }: { service: ServiceDetai
       {/* ── 3. Tech Strip (scrolling) ───────────────────────────────── */}
       {technologies.length > 0 && <TechStrip technologies={technologies} />}
 
-      {/* ── 4. Features Grid (animated cards) ───────────────────────── */}
-      {features.length > 0 && <FeaturesSection features={features} featureStyle={animation?.featureStyle} />}
+      {/* ── 4. Rich Capabilities OR Simple Features ─────────────────── */}
+      {richCapabilities.length > 0
+        ? <CapabilitiesSection items={richCapabilities} jsonContent={service._jsonContent?.services} />
+        : features.length > 0 && <FeaturesSection features={features} featureStyle={animation?.featureStyle} />
+      }
 
       {/* ── 5. Process (numbered cards) ─────────────────────────────── */}
       {process.length > 0 && <ProcessSection steps={process} processLayout={animation?.processLayout} />}
 
-      {/* ── 6. Benefits ─────────────────────────────────────────────── */}
-      {benefits.length > 0 && (
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">{t('services.detail.benefits.title')}</h2>
-            </div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto">
-              {benefits.map((benefit, index) => (
-                <div key={index} className="flex items-start gap-3 p-4">
-                  <CheckCircleIcon className="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">{benefit}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
+      {/* ── 6. Why Choose Us ────────────────────────────────────────── */}
+      <WhyUsSection
+        benefits={whyUsBenefits.length > 0 ? whyUsBenefits : DEFAULT_WHY_US_BENEFITS}
+        jsonContent={service._jsonContent?.whyUs}
+      />
 
       {/* ── 7. FAQ (Plus/Minus accordion) ───────────────────────────── */}
       {faq.length > 0 && <FAQSection faq={faq} />}
 
       {/* ── 8. Pricing ──────────────────────────────────────────────── */}
-      {pricingPackages.length > 0 && <PricingSection packages={pricingPackages} />}
+      {pricingPackages.length > 0 && <PricingSection packages={pricingPackages} locale={locale} />}
 
       {/* ── 9. Sub-Services Grid (for parent services) ────────────── */}
       {subServices.length > 0 && <SubServicesSection subServices={subServices} />}
@@ -284,6 +308,215 @@ export default function ServiceDetailClient({ service }: { service: ServiceDetai
       {/* ── 10. CTA with project request modal ──────────────────────── */}
       <ServiceRequestCTA serviceType={service.slug} />
     </>
+  );
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// ── STATS BAR ────────────────────────────────────────────────────────
+// ═══════════════════════════════════════════════════════════════════════
+const STATS = [
+  { icon: TrophyIcon,    value: '500+', label: 'Projects Delivered' },
+  { icon: UserGroupIcon, value: '300+', label: 'Happy Clients'       },
+  { icon: StarIcon,      value: '98%',  label: 'Satisfaction Rate'   },
+  { icon: ClockIcon,     value: '5+',   label: 'Years of Expertise'  },
+];
+
+function StatsBar({ accent }: { accent: AccentColor }) {
+  const colors = accentColors[accent];
+
+  return (
+    <div className="w-full bg-gray-950 border-y border-gray-800/60">
+      <div className="container mx-auto px-4 py-8">
+        <div className="grid grid-cols-2 md:grid-cols-4">
+          {STATS.map(({ icon: Icon, value, label }, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
+              className={`flex flex-col items-center justify-center py-6 px-4 text-center
+                ${i < 3 ? 'md:border-r border-gray-800/60' : ''}
+                ${i === 0 ? 'border-r border-gray-800/60 md:border-r' : ''}
+                ${i === 1 ? 'md:border-r border-gray-800/60' : ''}
+                ${i === 2 ? 'border-r border-gray-800/60 md:border-r' : ''}
+              `}
+            >
+              <div className={`w-9 h-9 rounded-xl ${colors.blob1} flex items-center justify-center mb-3`}>
+                <Icon className={`w-4 h-4 ${colors.eyebrow}`} />
+              </div>
+              <div className={`text-3xl font-bold ${colors.eyebrow} leading-none mb-1`}>{value}</div>
+              <div className="text-xs text-gray-500 uppercase tracking-wider font-medium mt-1">{label}</div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// ── RICH CAPABILITIES SECTION (from _jsonContent.services.items) ─────
+// ═══════════════════════════════════════════════════════════════════════
+interface CapabilityItem { title: string; description: string; features?: string[] }
+interface CapabilitiesJsonMeta { eyebrow?: string; title?: string; titleAccent?: string; subtitle?: string }
+
+function CapabilitiesSection({
+  items,
+  jsonContent,
+}: {
+  items: CapabilityItem[];
+  jsonContent?: CapabilitiesJsonMeta;
+}) {
+  const { t } = useTranslations();
+  const title = jsonContent?.title || t('services.detail.features.title');
+  const subtitle = jsonContent?.subtitle || t('services.detail.features.description');
+  const eyebrow = jsonContent?.eyebrow;
+
+  return (
+    <section className="py-24 bg-gray-50">
+      <div className="container mx-auto px-4">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          {eyebrow && (
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <div className="w-8 h-0.5 bg-gray-400" />
+              <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">{eyebrow}</span>
+              <div className="w-8 h-0.5 bg-gray-400" />
+            </div>
+          )}
+          <h2 className="text-3xl sm:text-4xl font-light text-gray-900 mb-4">{title}</h2>
+          {subtitle && <p className="text-lg text-gray-600 font-light">{subtitle}</p>}
+        </div>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {items.map((item, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.08 }}
+              className="bg-white rounded-2xl p-6 border border-gray-100 hover:border-gray-300 hover:shadow-lg transition-all duration-300 group flex flex-col"
+            >
+              <div className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <CpuChipIcon className="w-5 h-5 text-white" />
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.title}</h3>
+              <p className="text-gray-500 text-sm leading-relaxed mb-4 flex-1">{item.description}</p>
+              {item.features && item.features.length > 0 && (
+                <ul className="space-y-1.5 mt-auto pt-4 border-t border-gray-100">
+                  {item.features.map((f, fi) => (
+                    <li key={fi} className="flex items-start gap-2 text-sm text-gray-600">
+                      <CheckCircleIcon className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-0.5" />
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// ── BENEFITS SECTION (simple checklist, fallback) ────────────────────
+// ═══════════════════════════════════════════════════════════════════════
+function BenefitsSection({ benefits, t }: { benefits: string[]; t: (key: string) => string }) {
+  return (
+    <section className="py-20 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl font-light text-gray-900 mb-4">{t('services.detail.benefits.title')}</h2>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+          {benefits.map((benefit, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, x: -10 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: index * 0.06 }}
+              className="flex items-start gap-3 p-4 rounded-xl bg-gray-50 border border-gray-100"
+            >
+              <CheckCircleIcon className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
+              <span className="text-gray-700 text-sm leading-relaxed">{benefit}</span>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// ── WHY US SECTION (from _jsonContent.whyUs.benefits) ────────────────
+// ═══════════════════════════════════════════════════════════════════════
+const WHY_US_ICONS = [ShieldCheckIcon, BoltIcon, StarIcon, ChatBubbleLeftRightIcon, TrophyIcon, UserGroupIcon];
+
+const DEFAULT_WHY_US_BENEFITS: WhyUsBenefit[] = [
+  { title: 'Expert Team',               description: 'Our specialists bring years of hands-on experience to every project, ensuring high-quality delivery.' },
+  { title: 'On-Time Delivery',          description: 'We respect your timeline. Every milestone is tracked and met through agile project management.' },
+  { title: 'Transparent Communication', description: 'You are always in the loop. Regular updates and open channels keep collaboration seamless.' },
+  { title: 'Scalable Solutions',        description: 'We build for growth. Our architectures handle increasing load without costly rewrites.' },
+  { title: 'Client-First Approach',     description: 'Your goals drive every decision. We prioritise value delivery over technical complexity.' },
+  { title: 'Post-Launch Support',       description: 'Our engagement does not end at launch. We provide ongoing maintenance and performance monitoring.' },
+];
+interface WhyUsBenefit { title: string; description: string }
+interface WhyUsJsonMeta { eyebrow?: string; title?: string; titleAccent?: string; subtitle?: string }
+
+function WhyUsSection({
+  benefits,
+  jsonContent,
+}: {
+  benefits: WhyUsBenefit[];
+  jsonContent?: WhyUsJsonMeta;
+}) {
+  const { t } = useTranslations();
+  const title = jsonContent?.title || t('services.detail.whyUs.title') || 'Why Choose Us';
+  const subtitle = jsonContent?.subtitle;
+  const eyebrow = jsonContent?.eyebrow;
+
+  return (
+    <section className="py-24 bg-gray-900 text-white">
+      <div className="container mx-auto px-4">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          {eyebrow && (
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <div className="w-8 h-0.5 bg-gray-600" />
+              <span className="text-xs font-medium text-gray-400 uppercase tracking-wide">{eyebrow}</span>
+              <div className="w-8 h-0.5 bg-gray-600" />
+            </div>
+          )}
+          <h2 className="text-3xl sm:text-4xl font-light text-white mb-4">{title}</h2>
+          {subtitle && <p className="text-lg text-gray-400 font-light">{subtitle}</p>}
+        </div>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {benefits.map((benefit, index) => {
+            const Icon = WHY_US_ICONS[index % WHY_US_ICONS.length];
+            return (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.08 }}
+                className="bg-gray-800/60 rounded-2xl p-6 border border-gray-700/50 hover:border-gray-600 transition-colors group"
+              >
+                <div className="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center mb-4 group-hover:bg-emerald-600 transition-colors">
+                  <Icon className="w-5 h-5 text-gray-300 group-hover:text-white transition-colors" />
+                </div>
+                <h3 className="text-base font-semibold text-white mb-2">{benefit.title}</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">{benefit.description}</p>
+              </motion.div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -304,7 +537,7 @@ function HeroSection({
   animation?: ServiceAnimation;
 }) {
   const { t } = useTranslations();
-  const emojiIcon = iconMap[service.icon || ''] || '🔧';
+  const HeroIcon: HeroIconComponent = heroIconMap[service.icon || ''] || WrenchScrewdriverIcon;
   const hasAnimation = !!animation;
   const parentService = service.parentService;
 
@@ -461,9 +694,8 @@ function HeroSection({
                     <motion.div
                       animate={{ y: [0, -8, 0] }}
                       transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-                      className="text-4xl sm:text-5xl md:text-6xl"
                     >
-                      {emojiIcon}
+                      <HeroIcon className={`w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 ${colors.eyebrow}`} />
                     </motion.div>
                   </div>
                   <motion.div
@@ -488,23 +720,39 @@ function HeroSection({
         </div>
       </div>
 
-      {/* Scroll Indicator */}
+      {/* Scroll Indicator – animated mouse */}
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5, duration: 0.8 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        initial={{ opacity: 0, y: 8 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1.8, duration: 0.6 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 cursor-pointer group"
+        onClick={() => window.scrollBy({ top: window.innerHeight * 0.8, behavior: 'smooth' })}
       >
-        <div className="flex flex-col items-center gap-2 text-gray-400 hover:text-gray-600 transition-colors cursor-pointer">
+        {/* Mouse body */}
+        <div className="w-[22px] h-[34px] rounded-full border-2 border-gray-300 group-hover:border-gray-500 transition-colors duration-300 flex items-start justify-center pt-[5px]">
           <motion.div
-            animate={{ y: [0, 4, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-          >
-            <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-          </motion.div>
+            animate={{ y: [0, 12, 0], opacity: [1, 0, 1] }}
+            transition={{ duration: 1.6, repeat: Infinity, ease: 'easeInOut' }}
+            className="w-[3px] h-[8px] bg-gray-400 group-hover:bg-gray-600 transition-colors duration-300 rounded-full"
+          />
         </div>
+        {/* Animated chevrons */}
+        <div className="flex flex-col items-center gap-0.5">
+          {[0, 0.15, 0.3].map((delay, i) => (
+            <motion.svg
+              key={i}
+              animate={{ opacity: [0.2, 1, 0.2] }}
+              transition={{ duration: 1.2, repeat: Infinity, ease: 'easeInOut', delay }}
+              className="w-3 h-3 text-gray-300 group-hover:text-gray-500 transition-colors duration-300"
+              fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </motion.svg>
+          ))}
+        </div>
+        <span className="text-[9px] font-semibold tracking-[0.2em] uppercase text-gray-300 group-hover:text-gray-500 transition-colors duration-300">
+          Scroll
+        </span>
       </motion.div>
     </section>
   );
@@ -788,8 +1036,18 @@ function FAQSection({ faq }: { faq: FAQItem[] }) {
 // ═══════════════════════════════════════════════════════════════════════
 // ── PRICING SECTION (enhanced) ───────────────────────────────────────
 // ═══════════════════════════════════════════════════════════════════════
-function PricingSection({ packages }: { packages: PricingPackage[] }) {
+function PricingSection({ packages, locale }: { packages: PricingPackage[]; locale: string }) {
   const { t } = useTranslations();
+
+  // Try to parse pkg.price as a TRY number (e.g., stored as "15000") and reformat.
+  // If it contains a non-numeric character, display as-is (already formatted string from admin).
+  function displayPrice(raw: string): string {
+    const num = parseFloat(raw.replace(/[₺$€£,\s]/g, ''));
+    if (!isNaN(num) && num > 0 && /^\d[\d,.\s]*$/.test(raw.trim())) {
+      return formatPrice(num, locale);
+    }
+    return raw;
+  }
 
   return (
     <section className="py-12 sm:py-16 md:py-24 bg-white">
@@ -819,7 +1077,7 @@ function PricingSection({ packages }: { packages: PricingPackage[] }) {
                 </div>
               )}
               <h3 className="text-xl font-bold text-gray-900 mb-2">{pkg.name}</h3>
-              <div className="text-3xl font-bold text-gray-900 mb-1">{pkg.price}</div>
+              <div className="text-3xl font-bold text-gray-900 mb-1">{displayPrice(pkg.price)}</div>
               {pkg.billingPeriod && (
                 <p className="text-sm text-gray-500 mb-4">{pkg.billingPeriod}</p>
               )}
@@ -873,33 +1131,37 @@ function SubServicesSection({ subServices }: { subServices: SubServiceItem[] }) 
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {subServices.map((sub, index) => {
-            const emojiIcon = iconMap[sub.icon || ''] || '🔧';
+            const SubIcon: HeroIconComponent = heroIconMap[sub.icon || ''] || WrenchScrewdriverIcon;
+            const subAccent: AccentColor = colorMap[sub.color || ''] || 'emerald';
+            const subColors = accentColors[subAccent];
             return (
               <motion.div
                 key={sub.slug}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.5, delay: index * 0.08 }}
               >
                 <LocalizedLink
                   href={`/services/${sub.slug}`}
-                  className="block bg-white p-8 rounded-2xl border border-gray-100 hover:border-gray-300 hover:shadow-lg transition-all duration-300 group h-full"
+                  className="flex flex-col bg-white p-6 rounded-2xl border border-gray-100 hover:border-gray-200 hover:shadow-lg transition-all duration-300 group h-full"
                 >
-                  <div className="text-3xl mb-4">{emojiIcon}</div>
-                  <h3 className="text-xl font-medium text-gray-900 mb-3 group-hover:text-emerald-600 transition-colors">
+                  <div className={`w-11 h-11 rounded-xl ${subColors.blob1} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                    <SubIcon className={`w-5 h-5 ${subColors.eyebrow}`} />
+                  </div>
+                  <h3 className={`text-base font-semibold text-gray-900 mb-2 group-hover:${subColors.titleAccent} transition-colors`}>
                     {sub.name}
                   </h3>
                   {sub.shortDescription && (
-                    <p className="text-gray-500 leading-relaxed mb-4 line-clamp-2">
+                    <p className="text-gray-500 text-sm leading-relaxed mb-4 flex-1 line-clamp-2">
                       {sub.shortDescription}
                     </p>
                   )}
-                  <div className="flex items-center gap-2 text-sm font-medium text-gray-400 group-hover:text-emerald-600 transition-colors">
+                  <div className={`flex items-center gap-1.5 text-xs font-semibold text-gray-400 group-hover:${subColors.eyebrow} transition-colors mt-auto`}>
                     {t('services.detail.learnMore')}
-                    <ArrowRightIcon className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRightIcon className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </LocalizedLink>
               </motion.div>

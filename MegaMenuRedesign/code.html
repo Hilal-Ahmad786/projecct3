@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PakSoft Services Mega Menu</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                            "outline-variant": "#bec9c0",
+                            "primary-container": "#006644",
+                            "on-tertiary": "#ffffff",
+                            "on-background": "#181d1a",
+                            "on-error-container": "#93000a",
+                            "secondary-fixed": "#d8e2ff",
+                            "tertiary-fixed": "#ffdad7",
+                            "on-primary-fixed": "#002113",
+                            "outline": "#6f7a72",
+                            "surface-bright": "#f7faf5",
+                            "inverse-surface": "#2d312e",
+                            "on-tertiary-container": "#ffc1bd",
+                            "tertiary-fixed-dim": "#ffb3af",
+                            "on-tertiary-fixed": "#3d0508",
+                            "on-primary": "#ffffff",
+                            "surface-dim": "#d7dbd6",
+                            "inverse-on-surface": "#eef2ec",
+                            "surface-container-lowest": "#ffffff",
+                            "secondary-container": "#c4d4fe",
+                            "inverse-primary": "#85d7ad",
+                            "on-surface": "#181d1a",
+                            "on-primary-container": "#8ee1b6",
+                            "surface-tint": "#0e6c49",
+                            "on-secondary": "#ffffff",
+                            "on-error": "#ffffff",
+                            "primary-fixed": "#a0f4c8",
+                            "on-primary-fixed-variant": "#005236",
+                            "surface-container-highest": "#e0e4de",
+                            "tertiary-container": "#8e4240",
+                            "surface-container-low": "#f1f5ef",
+                            "primary-fixed-dim": "#85d7ad",
+                            "error": "#ba1a1a",
+                            "tertiary": "#702b2a",
+                            "error-container": "#ffdad6",
+                            "on-secondary-fixed": "#071b3b",
+                            "background": "#f7faf5",
+                            "surface-variant": "#e0e4de",
+                            "secondary-fixed-dim": "#b6c6f0",
+                            "on-surface-variant": "#3f4943",
+                            "on-secondary-container": "#4b5b7f",
+                            "surface-container-high": "#e5e9e4",
+                            "secondary": "#4e5e82",
+                            "on-secondary-fixed-variant": "#364669",
+                            "primary": "#004c31",
+                            "surface": "#f7faf5",
+                            "on-tertiary-fixed-variant": "#77302f",
+                            "surface-container": "#ebefea"
+                    },
+                    "borderRadius": {
+                            "DEFAULT": "0.25rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "full": "9999px"
+                    },
+                    "spacing": {
+                            "base": "8px",
+                            "gutter": "24px",
+                            "margin-mobile": "16px",
+                            "margin-desktop": "40px",
+                            "bento-gap": "20px"
+                    },
+                    "fontFamily": {
+                            "body-md": ["Inter"],
+                            "headline-md": ["Inter"],
+                            "label-sm": ["Inter"],
+                            "headline-lg": ["Inter"],
+                            "data-mono": ["JetBrains Mono"],
+                            "body-lg": ["Inter"],
+                            "headline-xl": ["Inter"]
+                    },
+                    "fontSize": {
+                            "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                            "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                            "label-sm": ["12px", {"lineHeight": "1", "fontWeight": "600"}],
+                            "headline-lg": ["32px", {"lineHeight": "1.25", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                            "data-mono": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                            "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                            "headline-xl": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar Component -->
+<nav class="bg-surface-container-lowest w-full z-50 sticky top-0 border-b border-outline-variant">
+<div class="flex justify-between items-center w-full px-margin-desktop h-20 max-w-7xl mx-auto">
+<!-- Brand -->
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="font-headline-lg text-headline-lg font-bold text-primary tracking-tight">PakSoft</span>
+</div>
+<!-- Navigation Links -->
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#">Home</a>
+<!-- Active State for Services -->
+<a class="text-primary font-bold border-b-2 border-primary pb-1 flex items-center gap-1 transition-transform scale-95" href="#">
+                    Services
+                    <span class="material-symbols-outlined text-sm">expand_more</span>
+</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#">Projects</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#">Blog</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#">About</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#">Contact</a>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-4">
+<button class="flex items-center gap-1 text-on-surface-variant font-medium hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm">language</span>
+                    EN
+                </button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-sm text-label-sm hover:opacity-90 transition-opacity flex items-center gap-2">
+                    Get Quote
+                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas (Mega Menu Dropdown Context) -->
+<main class="flex-grow w-full px-margin-desktop py-8 max-w-[1600px] mx-auto">
+<!-- Bento Mega Menu Container -->
+<div class="bg-surface-container-lowest rounded-[24px] border border-outline-variant/30 shadow-sm overflow-hidden flex flex-col">
+<!-- Header & Search Bar -->
+<div class="p-8 border-b border-outline-variant/20 flex justify-between items-end bg-surface-bright/50">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-primary mb-2">Our Services</h1>
+<p class="text-on-surface-variant font-body-md">Comprehensive digital solutions driving growth and efficiency.</p>
+</div>
+<div class="relative w-full max-w-md">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="w-full bg-surface-container rounded-full py-3 pl-12 pr-4 border border-outline-variant/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all text-sm font-data-mono placeholder:text-outline/70" placeholder="Search services (e.g., React Native, MLOps)..." type="text"/>
+</div>
+</div>
+<!-- Visual Catalog Layout -->
+<div class="p-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 bg-surface-container-lowest">
+<!-- Category: Web & Software -->
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-4 border-b border-outline-variant/30 pb-4">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed/50 flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-2xl">code_blocks</span>
+</div>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Web &amp; Software</h2>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div>
+<h3 class="font-label-sm text-sm text-on-surface mb-3 font-bold border-l-2 border-primary pl-2">Web Development</h3>
+<ul class="flex flex-col gap-2 font-body-md text-sm text-on-surface-variant">
+<li class="hover:text-primary cursor-pointer transition-colors">Frontend &amp; SPA</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Backend Systems</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Full-Stack Solutions</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Headless CMS</li>
+</ul>
+</div>
+<div>
+<h3 class="font-label-sm text-sm text-on-surface mb-3 font-bold border-l-2 border-primary pl-2">Mobile Development</h3>
+<ul class="flex flex-col gap-2 font-body-md text-sm text-on-surface-variant">
+<li class="hover:text-primary cursor-pointer transition-colors">Native iOS Apps</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Native Android Apps</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Flutter Cross-Platform</li>
+<li class="hover:text-primary cursor-pointer transition-colors">React Native</li>
+</ul>
+</div>
+<div>
+<h3 class="font-label-sm text-sm text-on-surface mb-3 font-bold border-l-2 border-primary pl-2">SaaS &amp; Enterprise</h3>
+<ul class="flex flex-col gap-2 font-body-md text-sm text-on-surface-variant">
+<li class="hover:text-primary cursor-pointer transition-colors">MVP Development</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Multi-Tenant Architectures</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Custom CRM Systems</li>
+<li class="hover:text-primary cursor-pointer transition-colors">ERP Integrations</li>
+</ul>
+</div>
+<div>
+<h3 class="font-label-sm text-sm text-on-surface mb-3 font-bold border-l-2 border-primary pl-2">Emerging Tech</h3>
+<ul class="flex flex-col gap-2 font-body-md text-sm text-on-surface-variant">
+<li class="hover:text-primary cursor-pointer transition-colors">Web3 &amp; DApps</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Smart Contracts</li>
+<li class="hover:text-primary cursor-pointer transition-colors">No-Code Automations</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Low-Code Platforms</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Category: AI & Data -->
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-4 border-b border-outline-variant/30 pb-4">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed/30 flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-2xl">smart_toy</span>
+</div>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">AI &amp; Data</h2>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div>
+<h3 class="font-label-sm text-sm text-on-surface mb-3 font-bold border-l-2 border-primary pl-2">AI Solutions</h3>
+<ul class="flex flex-col gap-2 font-body-md text-sm text-on-surface-variant">
+<li class="hover:text-primary cursor-pointer transition-colors">Machine Learning Models</li>
+<li class="hover:text-primary cursor-pointer transition-colors">LLM Implementations</li>
+<li class="hover:text-primary cursor-pointer transition-colors">RAG Systems</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Conversational AI Chatbots</li>
+</ul>
+</div>
+<div>
+<h3 class="font-label-sm text-sm text-on-surface mb-3 font-bold border-l-2 border-primary pl-2">Data Engineering</h3>
+<ul class="flex flex-col gap-2 font-body-md text-sm text-on-surface-variant">
+<li class="hover:text-primary cursor-pointer transition-colors">Data Pipelines</li>
+<li class="hover:text-primary cursor-pointer transition-colors">ETL Processes</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Data Warehousing</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Real-time Analytics</li>
+</ul>
+</div>
+<div>
+<h3 class="font-label-sm text-sm text-on-surface mb-3 font-bold border-l-2 border-primary pl-2">Specialized AI</h3>
+<ul class="flex flex-col gap-2 font-body-md text-sm text-on-surface-variant">
+<li class="hover:text-primary cursor-pointer transition-colors">Computer Vision</li>
+<li class="hover:text-primary cursor-pointer transition-colors">NLP Applications</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Predictive Analytics</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Recommendation Engines</li>
+</ul>
+</div>
+<div>
+<h3 class="font-label-sm text-sm text-on-surface mb-3 font-bold border-l-2 border-primary pl-2">Data Science</h3>
+<ul class="flex flex-col gap-2 font-body-md text-sm text-on-surface-variant">
+<li class="hover:text-primary cursor-pointer transition-colors">Statistical Analysis</li>
+<li class="hover:text-primary cursor-pointer transition-colors">A/B Testing Strategies</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Data Visualization</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Business Intelligence</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Category: Infrastructure & DevOps -->
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-4 border-b border-outline-variant/30 pb-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-on-surface shadow-sm">
+<span class="material-symbols-outlined text-2xl">dns</span>
+</div>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Infrastructure</h2>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div>
+<h3 class="font-label-sm text-sm text-on-surface mb-3 font-bold border-l-2 border-primary pl-2">Cloud Services</h3>
+<ul class="flex flex-col gap-2 font-body-md text-sm text-on-surface-variant">
+<li class="hover:text-primary cursor-pointer transition-colors">AWS Architecture</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Azure Solutions</li>
+<li class="hover:text-primary cursor-pointer transition-colors">GCP Implementations</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Cloud Migrations</li>
+</ul>
+</div>
+<div>
+<h3 class="font-label-sm text-sm text-on-surface mb-3 font-bold border-l-2 border-primary pl-2">DevOps</h3>
+<ul class="flex flex-col gap-2 font-body-md text-sm text-on-surface-variant">
+<li class="hover:text-primary cursor-pointer transition-colors">CI/CD Pipelines</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Infrastructure as Code</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Containerization (Docker)</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Kubernetes Orchestration</li>
+</ul>
+</div>
+<div>
+<h3 class="font-label-sm text-sm text-on-surface mb-3 font-bold border-l-2 border-primary pl-2">MLOps &amp; Automation</h3>
+<ul class="flex flex-col gap-2 font-body-md text-sm text-on-surface-variant">
+<li class="hover:text-primary cursor-pointer transition-colors">Model Deployment</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Model Monitoring</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Python Automation Scripts</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Workflow Orchestration</li>
+</ul>
+</div>
+<div>
+<h3 class="font-label-sm text-sm text-on-surface mb-3 font-bold border-l-2 border-primary pl-2">Security &amp; Databases</h3>
+<ul class="flex flex-col gap-2 font-body-md text-sm text-on-surface-variant">
+<li class="hover:text-primary cursor-pointer transition-colors">Cybersecurity Audits</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Compliance Management</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Database Optimization</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Disaster Recovery Planning</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Category: Digital Marketing -->
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-4 border-b border-outline-variant/30 pb-4">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed/30 flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-2xl">campaign</span>
+</div>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Digital Marketing</h2>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div>
+<h3 class="font-label-sm text-sm text-on-surface mb-3 font-bold border-l-2 border-primary pl-2">Search &amp; SEO</h3>
+<ul class="flex flex-col gap-2 font-body-md text-sm text-on-surface-variant">
+<li class="hover:text-primary cursor-pointer transition-colors">Technical SEO</li>
+<li class="hover:text-primary cursor-pointer transition-colors">On-Page Optimization</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Google Ads (PPC)</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Local SEO Strategy</li>
+</ul>
+</div>
+<div>
+<h3 class="font-label-sm text-sm text-on-surface mb-3 font-bold border-l-2 border-primary pl-2">Social Media</h3>
+<ul class="flex flex-col gap-2 font-body-md text-sm text-on-surface-variant">
+<li class="hover:text-primary cursor-pointer transition-colors">Meta Ads Campaigns</li>
+<li class="hover:text-primary cursor-pointer transition-colors">TikTok Marketing</li>
+<li class="hover:text-primary cursor-pointer transition-colors">LinkedIn B2B Ads</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Social Profile Management</li>
+</ul>
+</div>
+<div>
+<h3 class="font-label-sm text-sm text-on-surface mb-3 font-bold border-l-2 border-primary pl-2">Direct Marketing</h3>
+<ul class="flex flex-col gap-2 font-body-md text-sm text-on-surface-variant">
+<li class="hover:text-primary cursor-pointer transition-colors">Email Marketing Automation</li>
+<li class="hover:text-primary cursor-pointer transition-colors">WhatsApp Campaigns</li>
+<li class="hover:text-primary cursor-pointer transition-colors">SMS Marketing</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Newsletter Management</li>
+</ul>
+</div>
+<div>
+<h3 class="font-label-sm text-sm text-on-surface mb-3 font-bold border-l-2 border-primary pl-2">Growth &amp; Content</h3>
+<ul class="flex flex-col gap-2 font-body-md text-sm text-on-surface-variant">
+<li class="hover:text-primary cursor-pointer transition-colors">CRO (Conversion Rate Opt.)</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Marketing Automation</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Content Creation Strategy</li>
+<li class="hover:text-primary cursor-pointer transition-colors">Marketplace Advertising</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Category: Design & Creative -->
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-4 border-b border-outline-variant/30 pb-4">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed/50 flex items-center justify-center text-tertiary shadow-sm">
+<span class="material-symbols-outlined text-2xl">draw</span>
+</div>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Design &amp; Creative</h2>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div>
+<h3 class="font-label-sm text-sm text-on-surface mb-3 font-bold border-l-2 border-tertiary pl-2">UI/UX Design</h3>
+<ul class="flex flex-col gap-2 font-body-md text-sm text-on-surface-variant">
+<li class="hover:text-tertiary cursor-pointer transition-colors">Wireframing &amp; Prototyping</li>
+<li class="hover:text-tertiary cursor-pointer transition-colors">User Research</li>
+<li class="hover:text-tertiary cursor-pointer transition-colors">Usability Testing</li>
+<li class="hover:text-tertiary cursor-pointer transition-colors">Design Systems</li>
+</ul>
+</div>
+<div>
+<h3 class="font-label-sm text-sm text-on-surface mb-3 font-bold border-l-2 border-tertiary pl-2">Brand Strategy</h3>
+<ul class="flex flex-col gap-2 font-body-md text-sm text-on-surface-variant">
+<li class="hover:text-tertiary cursor-pointer transition-colors">Logo &amp; Identity</li>
+<li class="hover:text-tertiary cursor-pointer transition-colors">Brand Guidelines</li>
+<li class="hover:text-tertiary cursor-pointer transition-colors">Visual Positioning</li>
+<li class="hover:text-tertiary cursor-pointer transition-colors">Print Materials</li>
+</ul>
+</div>
+<div>
+<h3 class="font-label-sm text-sm text-on-surface mb-3 font-bold border-l-2 border-tertiary pl-2">Motion &amp; 3D</h3>
+<ul class="flex flex-col gap-2 font-body-md text-sm text-on-surface-variant">
+<li class="hover:text-tertiary cursor-pointer transition-colors">Motion Graphics</li>
+<li class="hover:text-tertiary cursor-pointer transition-colors">UI Animations</li>
+<li class="hover:text-tertiary cursor-pointer transition-colors">3D Modeling</li>
+<li class="hover:text-tertiary cursor-pointer transition-colors">AR/VR Experiences</li>
+</ul>
+</div>
+<div>
+<h3 class="font-label-sm text-sm text-on-surface mb-3 font-bold border-l-2 border-tertiary pl-2">Graphic Design</h3>
+<ul class="flex flex-col gap-2 font-body-md text-sm text-on-surface-variant">
+<li class="hover:text-tertiary cursor-pointer transition-colors">Marketing Collateral</li>
+<li class="hover:text-tertiary cursor-pointer transition-colors">Social Media Assets</li>
+<li class="hover:text-tertiary cursor-pointer transition-colors">Illustration</li>
+<li class="hover:text-tertiary cursor-pointer transition-colors">Packaging Design</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Category: Consulting -->
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-4 border-b border-outline-variant/30 pb-4">
+<div class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center text-on-secondary-container shadow-sm">
+<span class="material-symbols-outlined text-2xl">lightbulb</span>
+</div>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Consulting</h2>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div>
+<h3 class="font-label-sm text-sm text-on-surface mb-3 font-bold border-l-2 border-secondary pl-2">Strategy &amp; Transformation</h3>
+<ul class="flex flex-col gap-2 font-body-md text-sm text-on-surface-variant">
+<li class="hover:text-secondary cursor-pointer transition-colors">Digital Transformation</li>
+<li class="hover:text-secondary cursor-pointer transition-colors">Technology Consulting</li>
+<li class="hover:text-secondary cursor-pointer transition-colors">AI Implementation Strategy</li>
+<li class="hover:text-secondary cursor-pointer transition-colors">Growth Consulting</li>
+</ul>
+</div>
+<div>
+<h3 class="font-label-sm text-sm text-on-surface mb-3 font-bold border-l-2 border-secondary pl-2">Staffing &amp; Startups</h3>
+<ul class="flex flex-col gap-2 font-body-md text-sm text-on-surface-variant">
+<li class="hover:text-secondary cursor-pointer transition-colors">Staff Augmentation</li>
+<li class="hover:text-secondary cursor-pointer transition-colors">Dedicated Teams</li>
+<li class="hover:text-secondary cursor-pointer transition-colors">Startup Advisory</li>
+<li class="hover:text-secondary cursor-pointer transition-colors">Technical Due Diligence</li>
+</ul>
+</div>
+</div>
+<!-- Ready to Scale Highlight -->
+<div class="mt-auto bg-primary rounded-xl p-6 relative overflow-hidden group cursor-pointer shadow-md">
+<div class="absolute -right-8 -top-8 w-32 h-32 bg-primary-fixed/20 rounded-full blur-2xl group-hover:bg-primary-fixed/30 transition-colors"></div>
+<div class="relative z-10 flex flex-col sm:flex-row items-center justify-between gap-4">
+<div>
+<h3 class="font-headline-md text-lg font-bold text-on-primary mb-1">Ready to Scale?</h3>
+<p class="text-on-primary/80 text-sm">Schedule a free consultation.</p>
+</div>
+<button class="shrink-0 bg-surface-container-lowest text-primary font-label-sm px-6 py-2 rounded-lg flex items-center justify-center gap-2 group-hover:bg-primary-fixed transition-colors font-bold whitespace-nowrap">
+                                Book Demo
+                                <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Bar / Quick Links -->
+<div class="bg-surface-container px-8 py-4 flex items-center justify-between border-t border-outline-variant/20">
+<p class="text-sm font-data-mono text-on-surface-variant">Explore our full catalog of specialized services</p>
+<a class="text-sm font-label-sm font-bold text-primary hover:underline flex items-center gap-1" href="#">
+                    View Service Catalog Directory
+                    <span class="material-symbols-outlined text-sm">east</span>
+</a>
+</div>
+</div>
+</main>
+<!-- Footer Component -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant w-full mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop py-gutter gap-4 max-w-7xl mx-auto">
+<div class="flex flex-col gap-2">
+<span class="font-headline-md text-headline-md font-bold text-primary">PakSoft</span>
+<span class="font-body-md text-body-md text-on-surface-variant">© 2024 PakSoft Infrastructure Services. All rights reserved.</span>
+</div>
+<div class="flex flex-wrap gap-6 items-center">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Security</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Status</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -4,6 +4,14 @@
 import { motion } from 'framer-motion';
 import SectionHeader from '@/components/SectionHeader';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
+import {
+  RocketLaunchIcon,
+  BoltIcon,
+  BuildingOffice2Icon,
+  WrenchScrewdriverIcon,
+  GlobeAltIcon,
+  CalendarDaysIcon,
+} from '@heroicons/react/24/outline';
 
 export default function OurStoryTimeline() {
   const { dir, isLoading } = useTranslations();
@@ -29,9 +37,9 @@ export default function OurStoryTimeline() {
         // Convert object to array with years as keys
         const milestonesArray = Object.entries(milestonesData).map(([year, data]: [string, any]) => ({
           year,
-          label: data.label || '',
-          description: data.description || '',
-          icon: getIconForYear(year)
+          label: (data.label || '') as string,
+          description: (data.description || '') as string,
+          Icon: getIconForYear(year),
         }));
         
         // Sort by year
@@ -43,50 +51,24 @@ export default function OurStoryTimeline() {
     
     // Fallback data
     return [
-      { 
-        year: '2021', 
-        label: 'Foundation & First MVP', 
-        description: 'R&D supported prototype launched',
-        icon: '🚀'
-      },
-      { 
-        year: '2022', 
-        label: 'Pilot Projects', 
-        description: 'Field tests conducted with 3 different SMEs',
-        icon: '⚡'
-      },
-      { 
-        year: '2023', 
-        label: 'Technopark Application', 
-        description: 'Candidate for R&D Center at Bozok Technopark',
-        icon: '🏢'
-      },
-      { 
-        year: '2024', 
-        label: 'Modular Platform', 
-        description: 'MDL-01…MDL-07 modules live',
-        icon: '🔧'
-      },
-      { 
-        year: '2025', 
-        label: 'International Target', 
-        description: 'Expansion plan to Middle East and Europe',
-        icon: '🌍'
-      },
+      { year: '2021', label: 'Foundation & First MVP',   description: 'R&D supported prototype launched',                  Icon: getIconForYear('2021') },
+      { year: '2022', label: 'Pilot Projects',           description: 'Field tests conducted with 3 different SMEs',        Icon: getIconForYear('2022') },
+      { year: '2023', label: 'Technopark Application',   description: 'Candidate for R&D Center at Bozok Technopark',       Icon: getIconForYear('2023') },
+      { year: '2024', label: 'Modular Platform',         description: 'MDL-01…MDL-07 modules live',                        Icon: getIconForYear('2024') },
+      { year: '2025', label: 'International Target',     description: 'Expansion plan to Middle East and Europe',           Icon: getIconForYear('2025') },
     ];
   };
 
-  // Helper function to get appropriate icon for each year
-  const getIconForYear = (year: string) => {
-    const iconMap: { [key: string]: string } = {
-      '2021': '🚀',
-      '2022': '⚡',
-      '2023': '🏢',
-      '2024': '🔧',
-      '2025': '🌍'
-    };
-    return iconMap[year] || '📅';
+  type TimelineIcon = React.ComponentType<{ className?: string }>;
+  const yearIconMap: { [key: string]: TimelineIcon } = {
+    '2021': RocketLaunchIcon,
+    '2022': BoltIcon,
+    '2023': BuildingOffice2Icon,
+    '2024': WrenchScrewdriverIcon,
+    '2025': GlobeAltIcon,
   };
+
+  const getIconForYear = (year: string): TimelineIcon => yearIconMap[year] || CalendarDaysIcon;
 
   // Get stats from translations with fallback
   const getStats = () => {
@@ -176,7 +158,9 @@ export default function OurStoryTimeline() {
             viewport={{ once: true }}
             className={`grid grid-cols-1 lg:grid-cols-${milestones.length} gap-8 lg:gap-0`}
           >
-            {milestones.map((milestone, index) => (
+            {milestones.map((milestone, index) => {
+              const MilestoneIcon = milestone.Icon;
+              return (
               <motion.div
                 key={milestone.year}
                 variants={itemVariants}
@@ -185,23 +169,15 @@ export default function OurStoryTimeline() {
                 {/* Mobile Timeline Connector */}
                 <div className={`lg:hidden flex items-center gap-4 mb-4 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
                   <div className="w-12 h-12 bg-gray-50 border border-gray-200 rounded-sm flex items-center justify-center">
-                    <span className="text-lg" role="img" aria-label={`${milestone.year} milestone`}>
-                      {milestone.icon}
-                    </span>
+                    <MilestoneIcon className="w-5 h-5 text-gray-700" />
                   </div>
                   <div className="flex-1 h-px bg-gray-200" />
                 </div>
 
                 {/* Desktop Timeline Node */}
                 <div className="hidden lg:flex items-center justify-center relative z-10 mb-6">
-                  <div className="w-16 h-16 bg-white border-4 border-gray-200 rounded-sm flex items-center justify-center relative group hover:border-gray-300 transition-colors">
-                    <span 
-                      className="text-xl group-hover:scale-110 transition-transform"
-                      role="img" 
-                      aria-label={`${milestone.year} milestone`}
-                    >
-                      {milestone.icon}
-                    </span>
+                  <div className="w-16 h-16 bg-white border-4 border-gray-200 rounded-sm flex items-center justify-center relative group hover:border-gray-900 hover:bg-gray-900 transition-colors duration-300">
+                    <MilestoneIcon className="w-7 h-7 text-gray-700 group-hover:text-white transition-colors duration-300" />
                   </div>
                 </div>
 
@@ -227,7 +203,8 @@ export default function OurStoryTimeline() {
                   </div>
                 </div>
               </motion.div>
-            ))}
+              );
+            })}
           </motion.div>
         </div>
 

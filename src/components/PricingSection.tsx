@@ -7,9 +7,10 @@ import SectionHeader from '@/components/SectionHeader';
 import Button from '@/components/Button';
 import { CheckIcon } from '@heroicons/react/24/outline';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
+import { formatPrice, PROJECT_PRICES_TRY } from '@/lib/currency';
 
 export default function PricingSection() {
-  const { dir, isLoading } = useTranslations();
+  const { dir, isLoading, locale } = useTranslations();
   const t = useSectionTranslations('services.pricing');
   const tCommon = useSectionTranslations('common');
 
@@ -84,77 +85,24 @@ export default function PricingSection() {
     },
   ];
 
+  const fp = (key: string) => formatPrice(PROJECT_PRICES_TRY[key] ?? 100000, locale);
+  const startingFrom = t('startingFrom') || 'Starting from';
+
   const projectTiers = [
-    {
-      name: t('projects.corporateWebsite.title'),
-      price: t('projects.corporateWebsite.price'),
-      features: t('projects.corporateWebsite.features'),
-    },
-    {
-      name: t('projects.ecommerceStore.title'),
-      price: t('projects.ecommerceStore.price'),
-      features: t('projects.ecommerceStore.features'),
-    },
-    {
-      name: t('projects.mernApplication.title'),
-      price: t('projects.mernApplication.price'),
-      features: t('projects.mernApplication.features'),
-    },
-    {
-      name: t('projects.mobileApplication.title'),
-      price: t('projects.mobileApplication.price'),
-      features: t('projects.mobileApplication.features'),
-    },
-    {
-      name: t('projects.dataAnalyticsBi.title'),
-      price: t('projects.dataAnalyticsBi.price'),
-      features: t('projects.dataAnalyticsBi.features'),
-    },
-    {
-      name: t('projects.devopsSetup.title'),
-      price: t('projects.devopsSetup.price'),
-      features: t('projects.devopsSetup.features'),
-    },
-    {
-      name: t('projects.promptEngineeringProject.title'),
-      price: t('projects.promptEngineeringProject.price'),
-      features: t('projects.promptEngineeringProject.features'),
-    },
-    {
-      name: t('projects.ragSolution.title'),
-      price: t('projects.ragSolution.price'),
-      features: t('projects.ragSolution.features'),
-    },
-    {
-      name: t('projects.aiAgentDevelopment.title'),
-      price: t('projects.aiAgentDevelopment.price'),
-      features: t('projects.aiAgentDevelopment.features'),
-    },
-    {
-      name: t('projects.llmFinetuning.title'),
-      price: t('projects.llmFinetuning.price'),
-      features: t('projects.llmFinetuning.features'),
-    },
-    {
-      name: t('projects.computerVision.title'),
-      price: t('projects.computerVision.price'),
-      features: t('projects.computerVision.features'),
-    },
-    {
-      name: t('projects.conversationalAiProject.title'),
-      price: t('projects.conversationalAiProject.price'),
-      features: t('projects.conversationalAiProject.features'),
-    },
-    {
-      name: t('projects.mlopsSetup.title'),
-      price: t('projects.mlopsSetup.price'),
-      features: t('projects.mlopsSetup.features'),
-    },
-    {
-      name: t('projects.customEnterprise.title'),
-      price: t('projects.customEnterprise.price'),
-      features: t('projects.customEnterprise.features'),
-    },
+    { name: t('projects.corporateWebsite.title'),          price: `${startingFrom} ${fp('corporateWebsite')}`,          features: t('projects.corporateWebsite.features') },
+    { name: t('projects.ecommerceStore.title'),            price: `${startingFrom} ${fp('ecommerceStore')}`,            features: t('projects.ecommerceStore.features') },
+    { name: t('projects.mernApplication.title'),           price: `${startingFrom} ${fp('mernApplication')}`,           features: t('projects.mernApplication.features') },
+    { name: t('projects.mobileApplication.title'),         price: `${startingFrom} ${fp('mobileApplication')}`,         features: t('projects.mobileApplication.features') },
+    { name: t('projects.dataAnalyticsBi.title'),           price: `${startingFrom} ${fp('dataAnalyticsBi')}`,           features: t('projects.dataAnalyticsBi.features') },
+    { name: t('projects.devopsSetup.title'),               price: `${startingFrom} ${fp('devopsSetup')}`,               features: t('projects.devopsSetup.features') },
+    { name: t('projects.promptEngineeringProject.title'),  price: `${startingFrom} ${fp('promptEngineeringProject')}`,  features: t('projects.promptEngineeringProject.features') },
+    { name: t('projects.ragSolution.title'),               price: `${startingFrom} ${fp('ragSolution')}`,               features: t('projects.ragSolution.features') },
+    { name: t('projects.aiAgentDevelopment.title'),        price: `${startingFrom} ${fp('aiAgentDevelopment')}`,        features: t('projects.aiAgentDevelopment.features') },
+    { name: t('projects.llmFinetuning.title'),             price: `${startingFrom} ${fp('llmFinetuning')}`,             features: t('projects.llmFinetuning.features') },
+    { name: t('projects.computerVision.title'),            price: `${startingFrom} ${fp('computerVision')}`,            features: t('projects.computerVision.features') },
+    { name: t('projects.conversationalAiProject.title'),   price: `${startingFrom} ${fp('conversationalAiProject')}`,   features: t('projects.conversationalAiProject.features') },
+    { name: t('projects.mlopsSetup.title'),                price: `${startingFrom} ${fp('mlopsSetup')}`,                features: t('projects.mlopsSetup.features') },
+    { name: t('projects.customEnterprise.title'),          price: `${startingFrom} ${fp('customEnterprise')}`,          features: t('projects.customEnterprise.features') },
   ];
 
   const periodLabel = `/${billingCycle === 'monthly' ? t('perMonth') : t('perYear')}`;
@@ -310,7 +258,7 @@ export default function PricingSection() {
                         </h3>
                         <div className="pb-6 border-b border-gray-200">
                           <span className="text-3xl font-light text-gray-900">
-                            {price.toLocaleString('tr-TR')}₺
+                            {formatPrice(price, locale)}
                           </span>
                           <span className="text-sm text-gray-500 ml-1">
                             {periodLabel}
