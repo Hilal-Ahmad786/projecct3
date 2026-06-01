@@ -36,9 +36,9 @@ async function getSubServicesData(parentSlug: string, locale: string) {
   return getSubServices(parentSlug, locale);
 }
 
-async function getParentServiceData(parentSlug: string) {
+async function getParentServiceData(parentSlug: string, locale?: string) {
   const { getParentService } = await import('@/lib/database/public-queries');
-  return getParentService(parentSlug);
+  return getParentService(parentSlug, locale);
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -125,7 +125,7 @@ export default async function ServicePage({ params }: PageProps) {
   }
 
   if (service.parentSlug) {
-    parentService = await getParentServiceData(service.parentSlug) as any;
+    parentService = await getParentServiceData(service.parentSlug, locale) as any;
   }
 
   // Get JSON content for this service (fallback if no database translation)

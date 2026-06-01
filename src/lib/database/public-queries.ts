@@ -90,9 +90,13 @@ export async function getSubServices(parentSlug: string, locale?: string) {
 export async function getParentService(slug: string, locale?: string) {
   const service = await getPrismaClient().service.findFirst({
     where: { slug, status: { in: ['published', 'active'] } },
-    select: { name: true, slug: true, icon: true, color: true },
+    include: {
+      translations: locale ? { where: { locale } } : false,
+    },
   });
-  return service;
+  if (!service) return null;
+  const merged = mergeServiceTranslation(service, locale);
+  return { name: merged.name, slug: merged.slug, icon: merged.icon, color: merged.color };
 }
 
 // ==================== PROJECT QUERIES ====================

@@ -90,6 +90,7 @@ const icons: Record<string, React.ElementType> = {
   'rpa-solutions': Cog6ToothIcon,
 
   // ── Marketing & Growth ──
+  'digital-marketing': MegaphoneIcon,
   'seo': MagnifyingGlassIcon, 'technical-seo': WrenchScrewdriverIcon,
   'local-seo': MagnifyingGlassIcon, 'international-seo': GlobeAltIcon,
   'link-building': LinkIcon, 'ecommerce-seo': ShoppingCartIcon,
@@ -192,12 +193,15 @@ const servicesByCategory: Record<string, ServiceEntry[]> = {
     { slug: 'machine-learning', children: ['predictive-analytics', 'nlp-text-processing', 'recommendation-systems', 'anomaly-detection', 'time-series-forecasting'] },
     { slug: 'conversational-ai', children: ['chatbot-development', 'voice-assistant-development', 'whatsapp-bots', 'customer-service-ai'] },
     { slug: 'computer-vision', children: ['image-recognition', 'object-detection', 'video-analytics', 'ocr-document-processing'] },
-    { slug: 'llm-services', children: ['llm-finetuning', 'prompt-engineering', 'gpt-claude-api-integration', 'custom-llm-development'] },
+    { slug: 'llm-finetuning' },
+    { slug: 'prompt-engineering' },
+    { slug: 'llm-services', children: ['gpt-claude-api-integration', 'custom-llm-development'] },
     { slug: 'ai-agents', children: ['autonomous-agents', 'multi-agent-systems', 'ai-workflow-automation'] },
     { slug: 'rag-solutions', children: ['knowledge-base-ai', 'document-qa', 'enterprise-search-ai'] },
     { slug: 'python-automation', children: ['web-scraping', 'workflow-automation', 'data-pipeline-automation', 'rpa-solutions'] },
   ],
   marketing: [
+    { slug: 'digital-marketing' },
     { slug: 'seo', children: ['technical-seo', 'local-seo', 'international-seo', 'link-building', 'ecommerce-seo', 'geo-ai-search-optimization'] },
     { slug: 'google-ads', children: ['google-search-ads', 'google-display-ads', 'youtube-ads', 'google-shopping', 'performance-max'] },
     { slug: 'meta-ads', children: ['facebook-ads', 'instagram-ads', 'advantage-plus-campaigns'] },
@@ -221,13 +225,13 @@ const servicesByCategory: Record<string, ServiceEntry[]> = {
   ],
   infrastructure: [
     { slug: 'devops-cloud', children: ['ci-cd-pipelines', 'docker-kubernetes', 'cloud-management', 'infrastructure-as-code'] },
+    { slug: 'cybersecurity', children: ['penetration-testing', 'security-audits-compliance', 'gdpr-compliance', 'soc2-compliance'] },
+    { slug: 'managed-services', children: ['continuous-monitoring', 'maintenance-support', 'disaster-recovery'] },
+    { slug: 'data-analytics', children: ['business-intelligence', 'big-data-etl', 'data-visualization', 'real-time-analytics'] },
     { slug: 'cloud-migration', children: ['aws-migration', 'azure-migration', 'google-cloud-migration'] },
     { slug: 'mlops-deployment', children: ['model-deployment', 'model-monitoring', 'ml-pipelines'] },
-    { slug: 'data-analytics', children: ['business-intelligence', 'big-data-etl', 'data-visualization', 'real-time-analytics'] },
-    { slug: 'cybersecurity', children: ['penetration-testing', 'security-audits-compliance', 'gdpr-compliance', 'soc2-compliance'] },
     { slug: 'database-services', children: ['database-design', 'database-optimization', 'database-migration'] },
     { slug: 'performance-optimization', children: ['website-speed-optimization', 'core-web-vitals', 'server-optimization'] },
-    { slug: 'managed-services', children: ['continuous-monitoring', 'maintenance-support', 'disaster-recovery'] },
   ],
   consulting: [
     { slug: 'digital-transformation', children: ['digital-strategy', 'process-digitization'] },
