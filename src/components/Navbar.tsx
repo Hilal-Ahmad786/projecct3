@@ -900,6 +900,19 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [navVisible, setNavVisible] = useState(true);
   const lastScrollY = useRef(0);
+  const headerRef = useRef<HTMLElement>(null);
+
+  // Keep --navbar-h in sync with the header's actual rendered height
+  useEffect(() => {
+    const el = headerRef.current;
+    if (!el) return;
+    const obs = new ResizeObserver(([entry]) => {
+      document.documentElement.style.setProperty('--navbar-h', `${entry.contentRect.height}px`);
+    });
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+
   const [open, setOpen] = useState(false);
   const [languageOpen, setLanguageOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
@@ -975,18 +988,16 @@ export default function Navbar() {
     { label: t('contact'), href: '/contact', localizedHref: `/${locale}${localizeFullPath('/contact', locale)}` },
   ];
 
-  // Service Microsite Links - separate pages for each section
-  // Uses localizeFullPath to translate path segments for each locale
-  const serviceLinks = [
-    { label: t('serviceNav.overview'), href: `/services/${currentServiceSlug}`, localizedHref: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}`, locale)}` },
-    { label: t('serviceNav.features'), href: `/services/${currentServiceSlug}/features`, localizedHref: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}/features`, locale)}` },
-    { label: t('serviceNav.process'), href: `/services/${currentServiceSlug}/process`, localizedHref: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}/process`, locale)}` },
-    { label: t('serviceNav.techStack'), href: `/services/${currentServiceSlug}/tech-stack`, localizedHref: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}/tech-stack`, locale)}` },
-    { label: t('serviceNav.portfolio'), href: `/services/${currentServiceSlug}/portfolio`, localizedHref: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}/portfolio`, locale)}` },
-    { label: t('serviceNav.faq'), href: `/services/${currentServiceSlug}/faq`, localizedHref: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}/faq`, locale)}` },
+  // Service page routing links — each has its own page
+  const servicePageLinks = [
+    { label: t('serviceNav.overview'),     href: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}`, locale)}` },
+    { label: t('serviceNav.features'),     href: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}/features`, locale)}` },
+    { label: t('serviceNav.technologies'), href: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}/technologies`, locale)}` },
+    { label: t('serviceNav.process'),      href: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}/process`, locale)}` },
+    { label: t('serviceNav.pricing'),      href: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}/pricing`, locale)}` },
+    { label: t('serviceNav.blog'),         href: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}/blog`, locale)}` },
+    { label: t('serviceNav.faq'),          href: `/${locale}${localizeFullPath(`/services/${currentServiceSlug}/faq`, locale)}` },
   ];
-
-  const currentLinks = isServicePage ? serviceLinks : mainLinks;
 
   const handleLanguageChange = async (newLocale: Locale) => {
     setLanguageOpen(false);
@@ -1037,8 +1048,8 @@ export default function Navbar() {
           </Link>
 
           <nav className="hidden lg:flex items-center">
-            <ul className="flex items-center gap-8">
-              {/* Home Link */}
+            <ul className={`flex items-center ${isServicePage ? 'gap-5' : 'gap-8'}`}>
+              {/* Home Link — hidden on service pages */}
               {!isServicePage && (
                 <li className="relative">
                   <Link
@@ -1059,7 +1070,7 @@ export default function Navbar() {
                 </li>
               )}
 
-              {/* Services Mega Dropdown - Only show when not on service page */}
+              {/* Services Mega Dropdown — hidden on service pages */}
               {!isServicePage && (
                 <li className="relative" ref={servicesRef}>
                   <button
@@ -1087,7 +1098,7 @@ export default function Navbar() {
                       <div className={`flex items-end justify-between gap-6 px-8 pt-6 pb-5 border-b border-gray-100 bg-gray-50/60 flex-shrink-0 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
                         <div>
                           <h2 className="text-lg font-semibold text-gray-900">{t('services')}</h2>
-                          <p className="text-sm text-gray-500 mt-0.5">Comprehensive digital solutions driving growth and efficiency.</p>
+                          <p className="text-sm text-gray-500 mt-0.5">{tServices('subtitle') as string}</p>
                         </div>
                         <div className="relative flex-shrink-0 w-64 xl:w-72">
                           <MagnifyingGlassIcon className={`absolute ${dir === 'rtl' ? 'right-3.5' : 'left-3.5'} top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400 pointer-events-none`} />
@@ -1095,7 +1106,7 @@ export default function Navbar() {
                             type="text"
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
-                            placeholder="Search services..."
+                            placeholder={tServices('searchPlaceholder') as string}
                             className={`w-full bg-white rounded-full py-2.5 ${dir === 'rtl' ? 'pr-10 pl-4' : 'pl-10 pr-4'} border border-gray-200 focus:border-accent-emerald focus:ring-1 focus:ring-accent-emerald outline-none transition-all text-sm placeholder:text-gray-400`}
                           />
                         </div>
@@ -1163,14 +1174,14 @@ export default function Navbar() {
                                     <div className="mt-auto bg-gray-900 rounded-xl p-5 relative overflow-hidden group">
                                       <div className="absolute -right-6 -top-6 w-24 h-24 bg-accent-emerald/20 rounded-full blur-xl pointer-events-none" />
                                       <div className="relative z-10">
-                                        <h4 className="font-semibold text-white text-sm mb-0.5">Ready to Scale?</h4>
-                                        <p className="text-white/70 text-xs mb-3">Schedule a free consultation.</p>
+                                        <h4 className="font-semibold text-white text-sm mb-0.5">{tServices('ctaTitle') as string}</h4>
+                                        <p className="text-white/70 text-xs mb-3">{tServices('ctaDesc') as string}</p>
                                         <Link
                                           href={`/${locale}${getLocalizedPath('/contact', locale)}`}
                                           onClick={handleLinkClick}
                                           className="inline-flex items-center gap-1.5 bg-white text-gray-900 font-semibold text-xs px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors"
                                         >
-                                          Book Demo
+                                          {tServices('ctaButton') as string}
                                           <svg className="h-3 w-3 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                                           </svg>
@@ -1187,7 +1198,7 @@ export default function Navbar() {
 
                       {/* Bottom bar */}
                       <div className={`flex items-center justify-between px-8 py-3.5 border-t border-gray-100 bg-gray-50/50 flex-shrink-0 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
-                        <p className="text-xs text-gray-400 font-mono">Explore our full catalog of specialized services</p>
+                        <p className="text-xs text-gray-400 font-mono">{tServices('exploreAll') as string}</p>
                         <Link
                           href={`/${locale}/services`}
                           onClick={handleLinkClick}
@@ -1204,18 +1215,16 @@ export default function Navbar() {
                 </li>
               )}
 
-              {/* Service page links or remaining main links */}
+              {/* Service page links OR remaining main links */}
               {isServicePage ? (
-                serviceLinks.map(({ label, href, localizedHref }) => {
-                  const isActive = pathname.endsWith(localizedHref);
+                servicePageLinks.map(({ label, href }) => {
+                  const isActive = pathname === href;
                   return (
                     <li key={href} className="relative">
                       <Link
-                        href={localizedHref}
-                        className={`
-                          text-sm font-medium tracking-wide transition-colors duration-250
-                          ${isActive ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'}
-                        `}
+                        href={href}
+                        onClick={handleLinkClick}
+                        className={`text-sm font-medium tracking-wide transition-colors duration-250 ${isActive ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'}`}
                       >
                         {label}
                       </Link>
@@ -1224,7 +1233,6 @@ export default function Navbar() {
                   );
                 })
               ) : (
-                // Remaining main links (projects, blog, about, contact)
                 mainLinks.slice(1).map(({ label, href, localizedHref }) => {
                   const isActive = pathname.endsWith(localizedHref);
                   return (
@@ -1351,6 +1359,24 @@ export default function Navbar() {
 
               <div className="flex-1 px-6 py-6">
                 <ul className="space-y-2">
+                  {/* Service page: show page routing links */}
+                  {isServicePage ? (
+                    servicePageLinks.map(({ label, href }) => {
+                      const isActive = pathname === href;
+                      return (
+                        <li key={href}>
+                          <Link
+                            href={href}
+                            onClick={() => setOpen(false)}
+                            className={`block px-4 py-3 text-sm font-medium transition-colors border-l-2 ${isActive ? 'text-gray-900 border-gray-900 bg-gray-50' : 'text-gray-600 border-transparent hover:text-gray-900 hover:border-gray-300'}`}
+                          >
+                            {label}
+                          </Link>
+                        </li>
+                      );
+                    })
+                  ) : (
+                  <>
                   {/* Home */}
                   <li>
                     <Link
@@ -1477,6 +1503,8 @@ export default function Navbar() {
                       </li>
                     );
                   })}
+                  </>
+                  )}
                 </ul>
 
                 <div className="mt-8 pt-6 border-t border-gray-200">

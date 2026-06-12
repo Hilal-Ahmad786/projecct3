@@ -162,7 +162,7 @@ export default function FAQSection() {
               {t('contactUs') || 'Contact Us'}
             </Button>
             <Button
-              href="mailto:info@paktechnology.com"
+              href="mailto:paksoft3@gmail.com"
               variant="secondary"
               size="lg"
               className="w-full sm:w-auto"

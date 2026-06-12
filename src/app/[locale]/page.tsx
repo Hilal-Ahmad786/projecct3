@@ -12,6 +12,7 @@ import ClientJourneyRoadmap from '@/components/ClientJourneyRoadmap'
 import TestimonialsSection from '@/components/TestimonialsSection'
 import FAQSection from '@/components/FAQSection'
 import ContactSection from '@/components/ContactSection'
+import { PatternDivider } from '@/components/heritage'
 
 const baseUrl = 'https://www.paksoft.com.tr'
 
@@ -73,11 +74,14 @@ export default function HomePage() {
     <>
       <Hero />
       <SocialProofBanner variant="stats" />
+      <PatternDivider className="py-8" />
       <ServicesSection />
       <ProjectDetailSection />
       <DemoSection />
+      <PatternDivider className="py-8" color="var(--heritage-saffron)" />
       <ClientJourneyRoadmap />
       <TestimonialsSection />
+      <PatternDivider className="py-8" />
       <FAQSection />
       <ContactSection />
     </>

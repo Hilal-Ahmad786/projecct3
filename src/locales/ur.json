@@ -39,7 +39,7 @@
     "getQuote": "کوٹیشن حاصل کریں"
   },
   "metadata": {
-    "defaultTitle": "PakTechnology – جدید ڈیجیٹل حل",
+    "defaultTitle": "PakSoft – جدید ڈیجیٹل حل",
     "defaultDescription": "انٹرپرائز ویب ڈویلپمنٹ، ای کامرس، آٹومیشن بوٹس اور ڈیجیٹل مارکیٹنگ حل",
     "keywords": "ویب ڈویلپمنٹ، ڈیجیٹل حل، آٹومیشن، اے آئی، موبائل ایپس، ای کامرس"
   },
@@ -56,11 +56,12 @@
     "serviceNav": {
       "overview": "جائزہ",
       "features": "خصوصیات",
+      "technologies": "ٹیکنالوجیز",
       "process": "عمل",
-      "techStack": "ٹیکنالوجی",
-      "portfolio": "پورٹ فولیو",
+      "pricing": "قیمتیں",
+      "blog": "بلاگ",
       "faq": "سوالات",
-      "security": "سیکیورٹی"
+      "getQuote": "قیمت معلوم کریں"
     }
   },
   "hero": {
@@ -191,7 +192,19 @@
       "readyToStart": "شروع کرنے کے لیے تیار ہیں؟",
       "readyDescription": "آئیے آپ کے پروجیکٹ پر بات کرتے ہیں اور دیکھتے ہیں ہم آپ کے اہداف میں کیسے مدد کر سکتے ہیں۔",
       "startProject": "پروجیکٹ شروع کریں",
-      "viewWork": "ہمارا کام دیکھیں"
+      "viewWork": "ہمارا کام دیکھیں",
+      "categoryDescs": {
+        "web": "انٹرپرائز کارکردگی کو بڑھانے والی ویب اور موبائل ایپلیکیشنز۔",
+        "ai": "اگلی نسل کی مصنوعی ذہانت اور ڈیٹا آٹومیشن حلول۔",
+        "marketing": "ڈیٹا پر مبنی ڈیجیٹل مارکیٹنگ، SEO، اور عالمی ترقی کی حکمتِ عملی۔",
+        "design": "پریمیم UI/UX ڈیزائن، برانڈنگ، اور ڈیجیٹل تجربات۔",
+        "infrastructure": "مضبوط کلاؤڈ آرکیٹیکچر، DevOps، اور سائبر سیکیورٹی۔",
+        "consulting": "ڈیجیٹل تبدیلی کے لیے اسٹریٹجک ٹیکنالوجی مشاورت۔"
+      },
+      "majorServices": "{count} اہم خدمات",
+      "backToSelection": "انتخاب پر واپس",
+      "specialties": "{count} تخصصات",
+      "exploreDetails": "تفصیلات دیکھیں"
     },
     "list": {
       "pythonAutomation": {
@@ -2925,16 +2938,33 @@
       "categories": {
         "all": "تمام پراجیکٹس",
         "web": "ویب ڈویلپمنٹ",
+        "web-development": "ویب ڈویلپمنٹ",
         "mobile": "موبائل ایپس",
+        "mobile-apps": "موبائل ایپس",
         "ecommerce": "ای کامرس",
-        "ai": "اے آئی سولوشنز",
-        "automation": "آٹومیشن"
+        "e-commerce": "ای کامرس",
+        "ai": "اے آئی سولوشنز",
+        "ai-solutions": "اے آئی سولوشنز",
+        "automation": "آٹومیشن",
+        "saas": "SaaS",
+        "healthtech": "ہیلتھ ٹیک",
+        "health-tech": "ہیلتھ ٹیک",
+        "marketplace": "مارکیٹ پلیس",
+        "fintech": "فن ٹیک",
+        "fin-tech": "فن ٹیک",
+        "enterprise": "انٹرپرائز",
+        "startup": "اسٹارٹ اپ",
+        "infrastructure": "انفراسٹرکچر",
+        "consulting": "کنسلٹنگ",
+        "design": "ڈیزائن",
+        "marketing": "مارکیٹنگ"
       },
       "viewAllProjects": "تمام پراجیکٹس دیکھیں",
       "keyResult": "اہم نتیجہ",
       "technology": "ٹیکنالوجی",
       "viewProject": "پراجیکٹ دیکھیں",
-      "startProject": "اپنا پراجیکٹ شروع کریں"
+      "startProject": "اپنا پراجیکٹ شروع کریں",
+      "noResults": "اس زمرے میں کوئی پراجیکٹ نہیں ملا۔"
     },
     "caseStudy": {
       "eyebrow": "کیس اسٹڈی",
@@ -2992,6 +3022,15 @@
         "yearsExperience": "سالہ تجربہ",
         "uptime": "اپ ٹائم",
         "support": "سپورٹ"
+      },
+      "techCategories": {
+        "Frontend": "فرنٹ اینڈ",
+        "Backend": "بیک اینڈ",
+        "Database": "ڈیٹا بیس",
+        "Cloud": "کلاؤڈ",
+        "DevOps": "DevOps",
+        "AI/ML": "اے آئی / ایم ایل",
+        "E-Commerce": "ای کامرس"
       }
     },
     "successMetrics": {
@@ -3035,6 +3074,23 @@
           "label": "پیدا شدہ آمدنی",
           "description": "کلائنٹس کے لیے اضافی ریونیو"
         }
+      ],
+      "testimonials": [
+        {
+          "label": "کلائنٹ اطمینان",
+          "quote": "ہر پہلو میں ہماری توقعات سے بڑھ کر کارکردگی دکھائی",
+          "client": "ٹیک اسٹارٹ اپ CEO"
+        },
+        {
+          "label": "جواب دینے کا وقت",
+          "quote": "ضرورت کے وقت بجلی کی رفتار سے سپورٹ",
+          "client": "ای کامرس ڈائریکٹر"
+        },
+        {
+          "label": "بروقت ڈیلیوری",
+          "quote": "ہمیشہ وعدوں اور ڈیڈ لائنز پر پورا اترتے ہیں",
+          "client": "پراجیکٹ مینیجر"
+        }
       ]
     },
     "detail": {
@@ -3051,6 +3107,34 @@
         "description": "آئیے بات کریں کہ ہم آپ کے کاروبار کے لیے اسی طرح کے نتائج حاصل کرنے میں کیسے مدد کر سکتے ہیں۔",
         "button": "مفت مشاورت حاصل کریں"
       }
+    },
+    "horizontal": {
+      "eyebrow": "ہمارا کام",
+      "title": "نمایاں پروجیکٹس",
+      "hint": "دریافت کرنے کے لیے سکرول کریں",
+      "viewProject": "پروجیکٹ دیکھیں",
+      "demoProjects": [
+        {
+          "name": "سپلائی چین SaaS پلیٹ فارم",
+          "description": "لائیو ڈیش بورڈز کے ساتھ روزانہ 10,000+ شپمنٹس کو سنبھالنے والا ریئل ٹائم فلیٹ ٹریکنگ اور روٹ آپٹیمائزیشن پلیٹ فارم۔"
+        },
+        {
+          "name": "فیشن ای کامرس پلیٹ فارم",
+          "description": "AI سفارشات کے ساتھ ہیڈلیس Shopify اسٹور فرنٹ جس نے کنورژن 38% بڑھایا۔"
+        },
+        {
+          "name": "ٹیلی ہیلتھ پیشنٹ پورٹل",
+          "description": "اپوائنٹمنٹ شیڈیولنگ، ویڈیو مشاورت، اور EHR انٹیگریشن کے ساتھ HIPAA مطابق پیشنٹ پورٹل۔"
+        },
+        {
+          "name": "ریئل اسٹیٹ مارکیٹ پلیس",
+          "description": "ورچوئل ٹورز، AI ویلیوایشن، اور مارگیج کیلکولیٹر کے ساتھ پراپرٹی ڈسکوری پلیٹ فارم۔"
+        },
+        {
+          "name": "فن ٹیک ڈیش بورڈ",
+          "description": "بایومیٹرک تصدیق، فوری ٹرانسفرز، اور ریئل ٹائم اینالیٹکس کے ساتھ کراس پلیٹ فارم بینکنگ ایپ۔"
+        }
+      ]
     }
   },
   "blog": {
@@ -3120,7 +3204,7 @@
       "contactMethods": {
         "email": {
           "label": "ای میل",
-          "value": "info@paktechnology.com"
+          "value": "paksoft3@gmail.com"
         },
         "phone": {
           "label": "فون",
@@ -3222,7 +3306,7 @@
     "contactInfo": {
       "email": {
         "label": "ای میل",
-        "value": "info@paktechnology.com"
+        "value": "paksoft3@gmail.com"
       },
       "phone": {
         "label": "فون",
@@ -3245,7 +3329,108 @@
       "medium": "میڈیم",
       "discord": "ڈسکارڈ"
     },
-    "developedBy": "تیار کردہ"
+    "developedBy": "تیار کردہ",
+    "cta": {
+      "readyToBuild": "بنانے کے لیے تیار ہیں؟",
+      "tagline": "اپنے آئیڈیے کو ڈیجیٹل پروڈکٹ میں بدلیں",
+      "taglineHighlight": "ڈیجیٹل پروڈکٹ",
+      "startProject": "پروجیکٹ شروع کریں",
+      "viewServices": "سروسز دیکھیں"
+    },
+    "brand": {
+      "description": "ترکی سے ویب ڈویلپمنٹ، موبائل ایپس، AI حلوں اور ڈیجیٹل مارکیٹنگ کی مکمل خدمات — 30 سے زائد ممالک میں ٹیموں کا اعتماد۔"
+    },
+    "newsletter": {
+      "label": "نیوزلیٹر",
+      "title": "دوسروں سے آگے رہیں",
+      "description": "AI، ویب ڈویلپمنٹ اور ڈیجیٹل گروتھ اسٹریٹجیز پر ہفتہ وار بصیرت — براہ راست آپ کے ان باکس میں۔",
+      "placeholder": "آپ کی@ای میل.com",
+      "submit": "سبسکرائب کریں",
+      "disclaimer": "کوئی اسپیم نہیں · کبھی بھی انسبسکرائب کریں · GDPR کمپلائنٹ"
+    },
+    "servicesSection": {
+      "heading": "تمام سروسز",
+      "viewAll": "سب دیکھیں →",
+      "cols": {
+        "webDev": "ویب ڈویلپمنٹ",
+        "mobile": "موبائل اور ایپس",
+        "ai": "AI اور مشین لرننگ",
+        "marketing": "ڈیجیٹل مارکیٹنگ",
+        "design": "ڈیزائن اور تخلیق",
+        "devops": "DevOps اور انفراسٹرکچر"
+      }
+    },
+    "nav": {
+      "home": "ہوم",
+      "about": "ہمارے بارے میں",
+      "services": "سروسز",
+      "projects": "پروجیکٹس",
+      "blog": "بلاگ",
+      "contact": "رابطہ کریں"
+    },
+    "legal": {
+      "privacy": "پرائیویسی پالیسی",
+      "terms": "سروس کی شرائط",
+      "cookies": "کوکی پالیسی",
+      "sitemap": "سائٹ میپ"
+    },
+    "copyright": "© {year} PakSoft Technology. جملہ حقوق محفوظ ہیں۔",
+    "backToTop": "اوپر جائیں",
+    "serviceLinks": {
+      "frontendDevelopment": "فرنٹ اینڈ ڈویلپمنٹ",
+      "backendDevelopment": "بیک اینڈ ڈویلپمنٹ",
+      "fullStackDevelopment": "فل اسٹیک ڈویلپمنٹ",
+      "eCommerceSolutions": "ای کامرس حلول",
+      "saasDevelopment": "SaaS ڈویلپمنٹ",
+      "apiDevelopment": "API ڈویلپمنٹ",
+      "wordPressDevelopment": "WordPress ڈویلپمنٹ",
+      "progressiveWebApps": "پروگریسو ویب ایپس",
+      "web3Blockchain": "Web3 اور بلاک چین",
+      "enterpriseSoftware": "انٹرپرائز سافٹ ویئر",
+      "iosDevelopment": "iOS ڈویلپمنٹ",
+      "androidDevelopment": "Android ڈویلپمنٹ",
+      "flutterDevelopment": "Flutter ڈویلپمنٹ",
+      "reactNativeApps": "React Native ایپس",
+      "crossPlatformApps": "کراس پلیٹ فارم ایپس",
+      "mvpDevelopment": "MVP ڈویلپمنٹ",
+      "noCodeLowCode": "No-Code / Low-Code",
+      "aiConsultingStrategy": "AI مشاورت اور حکمتِ عملی",
+      "machineLearning": "مشین لرننگ",
+      "chatbotDevelopment": "چیٹ بوٹ ڈویلپمنٹ",
+      "llmFineTuning": "LLM فائن ٹیوننگ",
+      "promptEngineering": "پرامپٹ انجینئرنگ",
+      "ragSolutions": "RAG حلول",
+      "aiAgents": "AI ایجنٹس",
+      "computerVision": "کمپیوٹر ویژن",
+      "pythonAutomation": "Python آٹومیشن",
+      "mlopsDeployment": "MLOps ڈیپلائمنٹ",
+      "seoServices": "SEO سروسز",
+      "googleAds": "Google اشتہارات",
+      "metaAds": "Meta اشتہارات",
+      "socialMediaMarketing": "سوشل میڈیا مارکیٹنگ",
+      "tikTokMarketing": "TikTok مارکیٹنگ",
+      "linkedInMarketing": "LinkedIn مارکیٹنگ",
+      "whatsAppMarketing": "WhatsApp مارکیٹنگ",
+      "emailMarketing": "ای میل مارکیٹنگ",
+      "contentMarketing": "کانٹینٹ مارکیٹنگ",
+      "marketingAutomation": "مارکیٹنگ آٹومیشن",
+      "uiUxDesign": "UI/UX ڈیزائن",
+      "webDesign": "ویب ڈیزائن",
+      "graphicDesign": "گرافک ڈیزائن",
+      "logoBrandIdentity": "لوگو اور برانڈ آئیڈنٹٹی",
+      "brandStrategy": "برانڈ اسٹریٹجی",
+      "motionGraphics": "موشن گرافکس",
+      "3dArVr": "3D / AR / VR",
+      "croAbTesting": "CRO اور A/B ٹیسٹنگ",
+      "devOpsCiCd": "DevOps اور CI/CD",
+      "cloudMigration": "کلاؤڈ مائیگریشن",
+      "dataAnalyticsBi": "ڈیٹا اینالیٹکس اور BI",
+      "cybersecurity": "سائبر سیکیورٹی",
+      "databaseServices": "ڈیٹا بیس سروسز",
+      "performanceOptimization": "پرفارمنس آپٹمائزیشن",
+      "managedServices": "مینیجڈ سروسز",
+      "techConsulting": "ٹیک کنسلٹنگ"
+    }
   },
   "connect": {
     "title": "PakSoft کے ساتھ رابطہ کریں",
@@ -3300,7 +3485,7 @@
         "author": "Sarah Johnson",
         "role": "CEO",
         "company": "TechStart Solutions",
-        "text": "PakTechnology نے بالکل وہی فراہم کیا جس کی ہمیں ضرورت تھی۔ ان کی باریکی پر توجہ اور پیشہ ورانہ انداز نے پروجیکٹ کو مکمل کامیابی بنایا۔",
+        "text": "PakSoft نے بالکل وہی فراہم کیا جس کی ہمیں ضرورت تھی۔ ان کی باریکی پر توجہ اور پیشہ ورانہ انداز نے پروجیکٹ کو مکمل کامیابی بنایا۔",
         "rating": 5
       },
       {
@@ -3382,6 +3567,49 @@
         "answer": "فکسڈ پرائس پروجیکٹس، آورلی ریٹس اور ریٹینر معاہدے۔ قیمتیں دائرہ کار، پیچیدگی اور ٹائم لائن پر منحصر ہیں۔ آپ کی ضروریات سمجھنے کے بعد ہم تفصیلی کوٹ دیتے ہیں۔"
       }
     ]
+  },
+  "webDevPage": {
+    "hero": {
+      "eyebrow": "ویب ڈویلپمنٹ خدمات",
+      "headline": "ہم ایسی ویب سائٹس بناتے ہیں\nجو آپ جتنی محنت کریں",
+      "sub": "تیز رفتار Next.js ایپلیکیشنز سے لے کر قابل توسیع SaaS پلیٹ فارمز تک — ہم ایسے ڈیجیٹل تجربات تیار کرتے ہیں جو وزیٹرز کو گاہکوں میں بدلتے ہیں۔",
+      "cta1": "اپنا پروجیکٹ شروع کریں",
+      "cta2": "ہمارا کام دیکھیں",
+      "stat1": "مکمل پروجیکٹس",
+      "stat2": "Lighthouse سکور",
+      "stat3": "ماہانہ صارفین"
+    },
+    "subnav": {
+      "overview": "جائزہ",
+      "features": "خصوصیات",
+      "tech": "ٹیکنالوجیز",
+      "process": "عمل",
+      "pricing": "قیمت",
+      "blog": "بلاگ",
+      "faq": "سوالات",
+      "cta": "قیمت لیں"
+    },
+    "blog": {
+      "eyebrow": "بلاگ سے",
+      "headline": "ویب ڈویلپمنٹ بصیرت",
+      "viewAll": "تمام مضامین دیکھیں",
+      "post1": {
+        "title": "2025 میں Core Web Vitals: ہر ڈویلپر کو کیا جاننا چاہیے",
+        "excerpt": "Google کے رینکنگ سگنلز تبدیل ہوتے رہتے ہیں۔ اپنے Lighthouse سکورز کو 95 سے اوپر رکھنے کا طریقہ۔"
+      },
+      "post2": {
+        "title": "Next.js 15 بمقابلہ Remix: کون سا فریم ورک منتخب کریں؟",
+        "excerpt": "2025 کے دو سب سے زیادہ زیر بحث React میٹا فریم ورکس کا عملی موازنہ — اصل bundle سائزوں کے ساتھ۔"
+      },
+      "post3": {
+        "title": "ترکی ای کامرس برانڈ کا لوڈ ٹائم 60٪ کم کیا",
+        "excerpt": "تصویر آپٹیمائزیشن، کوڈ اسپلٹنگ اور CDN حکمت عملی کا پردے کے پیچھے کا منظر۔"
+      },
+      "post4": {
+        "title": "Next.js کے ساتھ کثیر لسانی سائٹس اور RTL سپورٹ",
+        "excerpt": "عربی اور اردو RTL لے آؤٹ کے ساتھ پانچ لوکل ایپس بنانے کے سبق۔"
+      }
+    }
   },
   "webDevelopment": {
     "hero": {
@@ -3594,11 +3822,12 @@
         "description": "24/7 مانیٹرنگ، باقاعدہ اپڈیٹس، بگ فکسز اور فیچر انہانسمنٹس۔",
         "duration": "مسلسل"
       }
-    ]
+    ],
+    "phase": "مرحلہ"
   },
   "projectDetail": {
     "eyebrow": "ہمارا طریقہ",
-    "title": "PakTechnology کیوں؟",
+    "title": "PakSoft کیوں چُنیں؟",
     "subtitle": "تکنیکی مہارت اور اسٹریٹجک سوچ—ایسے حلوں کے لیے جو حقیقی بزنس اثر پیدا کریں۔",
     "modernTechnology": {
       "title": "جدید ٹیکنالوجی",
@@ -3648,6 +3877,58 @@
       "readyDescription": "آئیے آپ کی ضروریات پر بات کریں اور دیکھیں آپ کی وژن کو کیسے حقیقت بنائیں۔",
       "getStarted": "ابھی شروع کریں",
       "viewPortfolio": "پورٹ فولیو دیکھیں"
+    },
+    "stats": [
+      {
+        "value": "150+",
+        "label": "مکمل پروجیکٹس"
+      },
+      {
+        "value": "50+",
+        "label": "مطمئن کلائنٹس"
+      },
+      {
+        "value": "98%",
+        "label": "کامیابی کی شرح"
+      },
+      {
+        "value": "24/7",
+        "label": "سپورٹ دستیاب"
+      }
+    ],
+    "processSteps": [
+      {
+        "step": "01",
+        "title": "دریافت اور منصوبہ بندی",
+        "desc": "ضروریات کو سمجھنا اور پروجیکٹ کا دائرہ کار متعین کرنا"
+      },
+      {
+        "step": "02",
+        "title": "ڈیزائن اور پروٹوٹائپنگ",
+        "desc": "صارف مرکوز ڈیزائن اور انٹرایکٹو پروٹوٹائپس بنانا"
+      },
+      {
+        "step": "03",
+        "title": "ڈویلپمنٹ اور ٹیسٹنگ",
+        "desc": "جامع ٹیسٹنگ کے ساتھ مضبوط حلول تیار کرنا"
+      },
+      {
+        "step": "04",
+        "title": "تعیناتی اور سپورٹ",
+        "desc": "مستقل دیکھ بھال کے ساتھ پروجیکٹ لانچ کرنا"
+      }
+    ],
+    "workflowVisual": {
+      "clientBrief": "کلائنٹ بریف",
+      "yourRequirements": "آپ کی ضروریات",
+      "weBuildIt": "ہم بناتے ہیں",
+      "yourProduct": "آپ کی پروڈکٹ",
+      "phases": {
+        "discovery": "دریافت",
+        "design": "ڈیزائن",
+        "develop": "ڈویلپمنٹ",
+        "deploy": "تعیناتی"
+      }
     }
   },
   "ctaBanner": {
@@ -3660,7 +3941,7 @@
     "emailUs": {
       "title": "ای میل",
       "description": "تفصیلی جواب حاصل کریں",
-      "value": "info@paktechnology.com"
+      "value": "paksoft3@gmail.com"
     },
     "callUs": {
       "title": "کال",
@@ -3729,27 +4010,27 @@
   },
   "pages": {
     "home": {
-      "title": "ہوم - PakTechnology",
-      "description": "PakTechnology کے جدید ڈیجیٹل حلوں کے ساتھ اپنے کاروبار کو بدلیں۔"
+      "title": "ہوم - PakSoft",
+      "description": "PakSoft کے جدید ڈیجیٹل حلوں کے ساتھ اپنے کاروبار کو بدلیں۔"
     },
     "about": {
-      "title": "ہمارے بارے میں - PakTechnology",
-      "description": "PakTechnology کی ٹیم، ہمارا ویژن، مشن اور ڈیجیٹل کمال کا سفر جانیے۔"
+      "title": "ہمارے بارے میں - PakSoft",
+      "description": "PakSoft کی ٹیم، ہمارا ویژن، مشن اور ڈیجیٹل کمال کا سفر جانیے۔"
     },
     "services": {
-      "title": "ہماری سروسز - PakTechnology",
+      "title": "ہماری سروسز - PakSoft",
       "description": "ہماری ویب ڈویلپمنٹ، موبائل ایپس، اے آئی سولوشنز، اور ڈیجیٹل مارکیٹنگ خدمات دریافت کریں۔"
     },
     "projects": {
-      "title": "ہمارے پراجیکٹس - PakTechnology",
+      "title": "ہمارے پراجیکٹس - PakSoft",
       "description": "ہمارے کامیاب ڈیجیٹل پراجیکٹس اور حاصل شدہ نتائج دیکھیں۔"
     },
     "blog": {
-      "title": "بلاگ - PakTechnology",
+      "title": "بلاگ - PakSoft",
       "description": "ٹیکنالوجی، ڈیجیٹل ٹرانسفارمیشن اور بہترین طریقوں پر تازہ ترین مضامین اور ان سائٹس۔"
     },
     "contact": {
-      "title": "رابطہ - PakTechnology",
+      "title": "رابطہ - PakSoft",
       "description": "اپنا پروجیکٹ شروع کرنے اور مفت مشاورت کے لیے ہم سے رابطہ کریں۔"
     }
   },
@@ -4117,27 +4398,27 @@
         "subtitle": "ایک ثابت شدہ طریقہ کار جو معیار اور بروقت ترسیل کو یقینی بناتا ہے۔",
         "steps": [
           {
-            "number": "01",
+            "step": 1,
             "title": "دریافت",
             "description": "آپ کے اہداف، سامعین اور تکنیکی ضروریات کو سمجھنا۔"
           },
           {
-            "number": "02",
+            "step": 2,
             "title": "ڈیزائن",
             "description": "صارف پر مرکوز تجربات کے لیے وائر فریمز اور پروٹو ٹائپس بنانا۔"
           },
           {
-            "number": "03",
+            "step": 3,
             "title": "ڈیولپمنٹ",
             "description": "صاف کوڈ، جدید فریم ورکس اور بہترین طریقوں کے ساتھ تعمیر۔"
           },
           {
-            "number": "04",
+            "step": 4,
             "title": "ٹیسٹنگ",
             "description": "کارکردگی، سیکیورٹی اور مطابقت کو یقینی بنانے کے لیے سخت کوالٹی ایشورنس۔"
           },
           {
-            "number": "05",
+            "step": 5,
             "title": "لانچ",
             "description": "نگرانی اور مسلسل سپورٹ کے ساتھ ہموار ڈیپلائمنٹ۔"
           }
@@ -4148,7 +4429,7 @@
         "title": "انجینئرنگ کی فضیلت",
         "titleAccent": "ڈیزائن سے ملتی ہے",
         "subtitle": "ہم صرف کوڈ نہیں لکھتے - ہم ایسے ڈیجیٹل تجربات تخلیق کرتے ہیں جو صارفین کو پسند آتے ہیں۔",
-        "features": [
+        "benefits": [
           {
             "title": "جدید ٹیکنالوجیز",
             "description": "ہم React، Next.js، TypeScript اور Node.js جیسی جدید ترین ٹیکنالوجیز استعمال کرتے ہیں۔"
@@ -4212,6 +4493,62 @@
         "description": "آئیں ہم ایک ایسا ڈیجیٹل حل بنائیں جو آپ کے کاروبار کے لیے ٹھوس نتائج حاصل کرے۔",
         "primaryCta": "مفت قیمت کا تخمینہ حاصل کریں",
         "secondaryCta": "کال بک کریں"
+      },
+      "technologies": {
+        "eyebrow": "ہماری ٹیک اسٹیک",
+        "title": "ٹیکنالوجیز جو ہم",
+        "titleAccent": "استعمال کرتے ہیں",
+        "subtitle": "ہم تیز، محفوظ اور قابل توسیع ویب ایپلیکیشنز بنانے کے لیے جدید ٹیکنالوجیز استعمال کرتے ہیں۔",
+        "items": [
+          {
+            "name": "Next.js",
+            "icon": "nextjs"
+          },
+          {
+            "name": "React",
+            "icon": "react"
+          },
+          {
+            "name": "TypeScript",
+            "icon": "typescript"
+          },
+          {
+            "name": "Tailwind CSS",
+            "icon": "tailwind"
+          },
+          {
+            "name": "Node.js",
+            "icon": "nodejs"
+          },
+          {
+            "name": "PostgreSQL",
+            "icon": "postgresql"
+          },
+          {
+            "name": "Prisma",
+            "icon": "prisma"
+          },
+          {
+            "name": "Redis",
+            "icon": "redis"
+          },
+          {
+            "name": "Docker",
+            "icon": "docker"
+          },
+          {
+            "name": "AWS",
+            "icon": "aws"
+          },
+          {
+            "name": "Vercel",
+            "icon": "vercel"
+          },
+          {
+            "name": "GitHub Actions",
+            "icon": "github"
+          }
+        ]
       }
     },
     "machineLearning": {
@@ -5364,7 +5701,13 @@
     },
     "aiData": "مصنوعی ذہانت اور ڈیٹا",
     "design": "ڈیزائن اور تخلیقی",
-    "consulting": "مشاورت اور حکمت عملی"
+    "consulting": "مشاورت اور حکمت عملی",
+    "subtitle": "ترقی اور کارکردگی کو فروغ دینے والے جامع ڈیجیٹل حلول۔",
+    "searchPlaceholder": "سروسز تلاش کریں...",
+    "ctaTitle": "اسکیل کرنے کے لیے تیار ہیں؟",
+    "ctaDesc": "مفت مشاورت کا وقت بک کریں۔",
+    "ctaButton": "ڈیمو بک کریں",
+    "exploreAll": "ہماری تمام مخصوص سروسز کا کیٹالاگ دیکھیں"
   },
   "aiServices": {
     "title": "مصنوعی ذہانت کی خدمات",
@@ -8005,43 +8348,58 @@
         ]
       },
       "process": {
-        "title": "ہمارا ویب ڈیولپمنٹ کا عمل",
-        "subtitle": "تصور سے لے کر لانچ تک",
+        "headline": "ہمارا ویب ڈویلپمنٹ کا عمل",
+        "subtitle": "ڈیزائن سے لانچ تک",
+        "description": "ہر پروجیکٹ میں ہم اپنا آزمودہ عمل استعمال کرتے ہیں تاکہ وقت پر، بجٹ کے اندر، اور توقعات سے بڑھ کر نتائج دیں۔",
         "steps": [
           {
-            "phase": "دریافت اور منصوبہ بندی",
-            "description": "آپ کی ضروریات اور صارفین کو سمجھنا۔",
-            "deliverables": [
-              "Requirements documentation",
-              "Wireframes اور mockups",
-              "Technical architecture plan"
+            "title": "Discovery & UX Research",
+            "description": "Deep-dive into your users, market, and business goals to define a web strategy grounded in real data.",
+            "icon": "search",
+            "details": [
+              "User interviews, journey mapping, and competitive analysis to identify opportunities",
+              "Information architecture and content strategy development with card sorting exercises",
+              "Technical feasibility assessment and performance budget definition"
             ]
           },
           {
-            "phase": "ڈیزائن اور Prototyping",
-            "description": "خوبصورت، قابل استعمال interfaces بنانا۔",
-            "deliverables": [
-              "UI/UX designs",
-              "Interactive prototypes",
-              "Design system documentation"
+            "title": "Design & Prototyping",
+            "description": "High-fidelity designs and interactive prototypes validated through user testing before development begins.",
+            "icon": "palette",
+            "details": [
+              "Wireframing and rapid prototyping in Figma with stakeholder review cycles",
+              "Usability testing with target users to validate navigation and conversion flows",
+              "Design system creation with component specifications and interaction patterns"
             ]
           },
           {
-            "phase": "ترقی اور Testing",
-            "description": "بلند معیار کے کوڈ اور مسلسل جانچ کے ساتھ۔",
-            "deliverables": [
-              "Feature development",
-              "Automated testing",
-              "Performance optimization"
+            "title": "Frontend & Backend Development",
+            "description": "Parallel frontend and backend development with continuous integration and automated quality gates.",
+            "icon": "code",
+            "details": [
+              "Component-driven development with Storybook for isolated UI building and testing",
+              "API integration with type-safe contracts ensuring frontend-backend alignment",
+              "Automated testing at unit, integration, and E2E levels with 85%+ code coverage"
             ]
           },
           {
-            "phase": "Deployment اور Support",
-            "description": "محفوظ لانچ اور جاری بہتری۔",
-            "deliverables": [
-              "Production deployment",
-              "Monitoring setup",
-              "Post-launch support"
+            "title": "QA, Performance & Accessibility Audit",
+            "description": "Comprehensive quality assurance covering cross-browser testing, performance validation, and accessibility compliance.",
+            "icon": "check",
+            "details": [
+              "Cross-browser and cross-device testing across 20+ browser-device combinations",
+              "Lighthouse CI with performance budgets enforced on every pull request",
+              "WCAG 2.2 AA compliance audit with screen reader testing and keyboard navigation validation"
+            ]
+          },
+          {
+            "title": "Launch & Growth Optimization",
+            "description": "Smooth production deployment followed by data-driven optimization to continuously improve key metrics.",
+            "icon": "rocket",
+            "details": [
+              "Zero-downtime deployment with CDN configuration, DNS cutover, and SSL provisioning",
+              "Analytics setup with conversion tracking, heatmaps, and session recording",
+              "A/B testing framework for ongoing CRO experiments on key landing pages"
             ]
           }
         ]
@@ -8070,6 +8428,243 @@
         "headline": "اپنی اگلی ویب پروجیکٹ شروع کرنے کے لیے تیار ہیں؟",
         "description": "آئیں ایک ویب ایپلیکیشن بنائیں جو آپ کے صارفین کو پسند ہو اور آپ کے کاروبار کے اہداف کو آگے بڑھائے۔",
         "buttonText": "آئیں بات کریں"
+      },
+      "techStack": {
+        "headline": "Modern Web Technology Stack",
+        "subtitle": "ہماری ٹیکنالوجی",
+        "description": "We use the most productive and performant web technologies to deliver exceptional digital experiences.",
+        "categories": [
+          {
+            "category": "Frontend Frameworks",
+            "items": [
+              {
+                "name": "React",
+                "description": "Component-based UI development with hooks, context, and concurrent rendering"
+              },
+              {
+                "name": "NextJS",
+                "description": "Full-stack React framework with SSR, SSG, ISR, and API routes"
+              },
+              {
+                "name": "TypeScript",
+                "description": "End-to-end type safety reducing runtime errors and improving developer velocity"
+              },
+              {
+                "name": "TailwindCSS",
+                "description": "Utility-first CSS for rapid, consistent UI development with minimal bundle size"
+              }
+            ]
+          },
+          {
+            "category": "Backend & Data",
+            "items": [
+              {
+                "name": "NodeJS",
+                "description": "Event-driven server runtime for high-concurrency web applications"
+              },
+              {
+                "name": "PostgreSQL",
+                "description": "Primary relational database with full-text search and JSON support"
+              },
+              {
+                "name": "Redis",
+                "description": "Session management, caching, and real-time pub/sub messaging"
+              },
+              {
+                "name": "Stripe",
+                "description": "Payment processing with subscriptions, invoicing, and marketplace payouts"
+              }
+            ]
+          },
+          {
+            "category": "DevOps & Hosting",
+            "items": [
+              {
+                "name": "Docker",
+                "description": "Containerized development and deployment for environment consistency"
+              },
+              {
+                "name": "AWS",
+                "description": "CloudFront, S3, ECS, and RDS for scalable, globally distributed hosting"
+              },
+              {
+                "name": "GitHub",
+                "description": "Version control with Actions CI/CD, code review, and automated releases"
+              }
+            ]
+          }
+        ]
+      },
+      "portfolio": {
+        "headline": "ہمارے حالیہ پروجیکٹس",
+        "subtitle": "کلائنٹ کی کامیابی",
+        "description": "دیکھیں ہم نے کلائنٹس کے لیے کیا بنایا ہے۔",
+        "items": [
+          {
+            "title": "B2B SaaS Platform for Supply Chain Management",
+            "industry": "Logistics & Supply Chain",
+            "challenge": "A supply chain startup needed a web platform that could handle complex multi-step workflows, real-time tracking, and collaboration between shippers, carriers, and warehouses.",
+            "solution": "Built a Next.js application with real-time WebSocket updates, role-based dashboards, and a drag-and-drop workflow builder. Implemented Stripe billing with usage-based pricing.",
+            "results": [
+              "Scaled from 0 to 2,400 active business users within 8 months of launch",
+              "Achieved 94 Lighthouse performance score with sub-2-second page loads globally",
+              "Reduced customer onboarding time from 3 days to 4 hours with self-serve flows"
+            ],
+            "stats": [
+              {
+                "label": "Active Users",
+                "value": "2,400+"
+              },
+              {
+                "label": "Performance Score",
+                "value": "94/100"
+              }
+            ],
+            "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80&fit=crop"
+          },
+          {
+            "title": "E-Commerce Platform Rebuild for Fashion Brand",
+            "industry": "Fashion & Retail",
+            "challenge": "A DTC fashion brand with $18M in annual online revenue was losing customers due to slow page loads (6.2s average), poor mobile UX, and a 74% cart abandonment rate.",
+            "solution": "Rebuilt the storefront on Next.js with headless Shopify, implemented one-click checkout, AI-powered size recommendations, and optimized all Core Web Vitals.",
+            "results": [
+              "Increased conversion rate from 1.8% to 3.4%, driving $6.2M in incremental revenue",
+              "Reduced page load time from 6.2s to 1.4s, improving bounce rate by 38%",
+              "Decreased cart abandonment from 74% to 51% with optimized checkout flow"
+            ],
+            "stats": [
+              {
+                "label": "Revenue Increase",
+                "value": "$6.2M"
+              },
+              {
+                "label": "Page Load Time",
+                "value": "1.4s"
+              }
+            ],
+            "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80&fit=crop"
+          },
+          {
+            "title": "Patient Portal for Telehealth Platform",
+            "industry": "Healthcare",
+            "challenge": "A telehealth company needed a HIPAA-compliant patient portal supporting video consultations, prescription management, and medical record access across all devices.",
+            "solution": "Developed a PWA with WebRTC video calling, end-to-end encryption, and an accessible UI meeting WCAG 2.2 AA. Integrated with Epic EHR through FHIR APIs.",
+            "results": [
+              "Enabled 45,000 video consultations per month with 99.7% connection success rate",
+              "Achieved WCAG 2.2 AA compliance with a perfect accessibility audit score",
+              "Reduced patient no-show rate from 23% to 8% with automated reminders and easy rescheduling"
+            ],
+            "stats": [
+              {
+                "label": "Monthly Consultations",
+                "value": "45K"
+              },
+              {
+                "label": "No-Show Reduction",
+                "value": "65%"
+              }
+            ],
+            "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80&fit=crop"
+          },
+          {
+            "title": "Real Estate Marketplace with Virtual Tours",
+            "industry": "Real Estate",
+            "challenge": "A real estate firm wanted a modern listing marketplace with 3D virtual tours, mortgage calculators, and neighborhood analytics to differentiate from Zillow and Redfin.",
+            "solution": "Built a Next.js platform with Three.js virtual tour integration, server-side rendered listing pages for SEO, and real-time market data dashboards with D3.js visualizations.",
+            "results": [
+              "Ranked on page 1 of Google for 340+ local real estate keywords within 6 months",
+              "Increased average session duration by 4.2x compared to the previous website",
+              "Generated 1,200 qualified leads per month through the platform"
+            ],
+            "stats": [
+              {
+                "label": "SEO Keywords (Page 1)",
+                "value": "340+"
+              },
+              {
+                "label": "Monthly Leads",
+                "value": "1,200"
+              }
+            ],
+            "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80&fit=crop"
+          }
+        ],
+        "aggregateStats": [
+          {
+            "label": "Web Apps Delivered",
+            "value": "350+"
+          },
+          {
+            "label": "Combined Monthly Traffic",
+            "value": "28M+"
+          },
+          {
+            "label": "Avg. Performance Score",
+            "value": "94"
+          },
+          {
+            "label": "Client Satisfaction",
+            "value": "4.9/5"
+          }
+        ]
+      },
+      "faq": {
+        "headline": "اکثر پوچھے جانے والے سوالات",
+        "subtitle": "عام سوالات",
+        "description": "Answers to frequently asked questions about our web development process, technology choices, and engagement models.",
+        "categories": [
+          {
+            "category": "Technology & Architecture",
+            "items": [
+              {
+                "question": "Why do you recommend Next.js for most web projects?",
+                "answer": "Next.js provides the best balance of developer experience, performance, and flexibility. It supports server-side rendering for SEO, static generation for speed, and client-side rendering for interactivity -- all in one framework. Its built-in image optimization, code splitting, and API routes reduce the need for additional tools. For projects that need a different approach, we also work with Remix, Astro, and custom React setups."
+              },
+              {
+                "question": "Can you work with our existing backend or CMS?",
+                "answer": "Absolutely. We frequently build frontends that connect to existing backends via REST or GraphQL APIs. We have deep integration experience with headless CMS platforms (Sanity, Contentful, Strapi), e-commerce backends (Shopify, Medusa), and custom APIs built in Node.js, Python, Java, or .NET."
+              },
+              {
+                "question": "How do you handle responsive design across devices?",
+                "answer": "We follow a mobile-first approach, designing and building for mobile screens first and then enhancing for tablets and desktops. We use CSS Grid, Flexbox, and container queries to create fluid layouts. Every project is tested across 20+ device-browser combinations including iOS Safari, Android Chrome, and desktop browsers."
+              }
+            ]
+          },
+          {
+            "category": "Performance & SEO",
+            "items": [
+              {
+                "question": "What Core Web Vitals scores can we expect?",
+                "answer": "We target and consistently achieve Lighthouse scores of 90+ across Performance, Accessibility, Best Practices, and SEO. Specifically: LCP under 2.5 seconds, FID under 100ms, and CLS under 0.1. We enforce performance budgets in our CI pipeline, so regressions are caught before deployment."
+              },
+              {
+                "question": "How do you approach SEO for web applications?",
+                "answer": "Our SEO strategy covers three pillars: technical SEO (SSR, structured data, sitemap generation, Core Web Vitals), on-page optimization (semantic HTML, heading hierarchy, meta tags), and crawlability (proper internal linking, canonical URLs, robots.txt configuration). For SPAs, we ensure all content is server-rendered for search engine indexing."
+              },
+              {
+                "question": "Can you help us migrate from an existing platform without losing SEO rankings?",
+                "answer": "Yes, platform migrations are one of our specialties. We create comprehensive redirect maps, preserve URL structures where possible, transfer all metadata, and monitor Search Console for crawl errors post-migration. We have completed over 40 migrations with zero ranking loss for high-priority keywords."
+              }
+            ]
+          },
+          {
+            "category": "Timeline & Budget",
+            "items": [
+              {
+                "question": "How long does a typical web development project take?",
+                "answer": "A marketing website or landing page typically takes 4-8 weeks. A full-featured web application with authentication, dashboards, and integrations takes 3-6 months. Complex platforms like marketplaces or SaaS products may take 6-12 months for the initial launch, followed by ongoing iteration. We provide detailed timelines after our discovery phase."
+              },
+              {
+                "question": "What does web development typically cost?",
+                "answer": "Marketing websites and corporate sites range from $25,000-$75,000. Web applications with custom functionality range from $75,000-$250,000. Enterprise SaaS platforms typically start at $200,000+. We offer fixed-price engagements for well-defined scopes and time-and-materials for evolving projects. All estimates are provided after a thorough discovery phase."
+              },
+              {
+                "question": "Do you provide ongoing maintenance and support?",
+                "answer": "Yes. We offer monthly retainer packages that include security updates, dependency maintenance, performance monitoring, bug fixes, and feature enhancements. Most clients invest 15-20% of the initial build cost annually in maintenance to keep their applications secure, fast, and up-to-date."
+              }
+            ]
+          }
+        ]
       }
     },
     "mobile-development": {
@@ -12196,5 +12791,31 @@
         ]
       }
     }
+  },
+  "socialProof": {
+    "title": "دنیا بھر کی معروف کمپنیوں کا اعتماد",
+    "stats": [
+      {
+        "value": "+500",
+        "label": "مکمل پروجیکٹس"
+      },
+      {
+        "value": "+200",
+        "label": "مطمئن کلائنٹس"
+      },
+      {
+        "value": "+15",
+        "label": "سال کا تجربہ"
+      },
+      {
+        "value": "+50",
+        "label": "ٹیم ممبران"
+      }
+    ],
+    "badges": [
+      "ISO 27001 سرٹیفائیڈ",
+      "GDPR کمپلائنٹ",
+      "SOC 2 ٹائپ II"
+    ]
   }
 }

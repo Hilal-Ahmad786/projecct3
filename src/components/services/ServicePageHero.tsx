@@ -13,68 +13,7 @@ interface ServicePageHeroProps {
   AnimationComponent?: ComponentType;
 }
 
-const accentColors = {
-  gray: {
-    eyebrow: 'text-gray-500',
-    titleAccent: 'text-gray-900',
-    gradientFrom: 'from-gray-100',
-    gradientTo: 'to-gray-50',
-    ring: 'ring-gray-200',
-    dot: 'bg-gray-900',
-    blob1: 'bg-gray-100',
-    blob2: 'bg-gray-200',
-  },
-  emerald: {
-    eyebrow: 'text-emerald-600',
-    titleAccent: 'text-emerald-600',
-    gradientFrom: 'from-emerald-100',
-    gradientTo: 'to-emerald-50',
-    ring: 'ring-emerald-200',
-    dot: 'bg-emerald-600',
-    blob1: 'bg-emerald-100',
-    blob2: 'bg-emerald-200',
-  },
-  violet: {
-    eyebrow: 'text-violet-600',
-    titleAccent: 'text-violet-600',
-    gradientFrom: 'from-violet-100',
-    gradientTo: 'to-violet-50',
-    ring: 'ring-violet-200',
-    dot: 'bg-violet-600',
-    blob1: 'bg-violet-100',
-    blob2: 'bg-violet-200',
-  },
-  blue: {
-    eyebrow: 'text-blue-600',
-    titleAccent: 'text-blue-600',
-    gradientFrom: 'from-blue-100',
-    gradientTo: 'to-blue-50',
-    ring: 'ring-blue-200',
-    dot: 'bg-blue-600',
-    blob1: 'bg-blue-100',
-    blob2: 'bg-blue-200',
-  },
-  amber: {
-    eyebrow: 'text-amber-600',
-    titleAccent: 'text-amber-600',
-    gradientFrom: 'from-amber-100',
-    gradientTo: 'to-amber-50',
-    ring: 'ring-amber-200',
-    dot: 'bg-amber-600',
-    blob1: 'bg-amber-100',
-    blob2: 'bg-amber-200',
-  },
-  rose: {
-    eyebrow: 'text-rose-600',
-    titleAccent: 'text-rose-600',
-    gradientFrom: 'from-rose-100',
-    gradientTo: 'to-rose-50',
-    ring: 'ring-rose-200',
-    dot: 'bg-rose-600',
-    blob1: 'bg-rose-100',
-    blob2: 'bg-rose-200',
-  },
-};
+import { accentColors } from '@/lib/heritage-accents';
 
 export default function ServicePageHero({
   translationKey,

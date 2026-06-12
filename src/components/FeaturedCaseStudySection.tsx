@@ -10,6 +10,7 @@ export default function FeaturedCaseStudySection() {
   const { dir, isLoading } = useTranslations();
   const t = useSectionTranslations('projects.caseStudy');
   const tStats = useSectionTranslations('stats');
+  const tCommon = useSectionTranslations('common');
 
   // Show loading state if translations are not ready
   if (isLoading) {
@@ -17,7 +18,7 @@ export default function FeaturedCaseStudySection() {
       <section className="section bg-gray-50 relative overflow-hidden">
         <div className="container mx-auto text-center py-24">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"></div>
-          <p className="mt-4 text-gray-600">Loading case study...</p>
+          <p className="mt-4 text-gray-600">{tCommon('loading') as string}</p>
         </div>
       </section>
     );

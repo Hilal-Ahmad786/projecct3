@@ -56,11 +56,12 @@
     "serviceNav": {
       "overview": "Genel Bakış",
       "features": "Özellikler",
+      "technologies": "Teknolojiler",
       "process": "Süreç",
-      "techStack": "Teknoloji",
-      "portfolio": "Portföy",
+      "pricing": "Fiyatlandırma",
+      "blog": "Blog",
       "faq": "SSS",
-      "security": "Güvenlik"
+      "getQuote": "Teklif Al"
     }
   },
   "megaMenu": {
@@ -297,7 +298,13 @@
       "staff-augmentation": "Personel Takviyesi",
       "developer-outsourcing": "Geliştirici Dış Kaynak",
       "dedicated-teams": "Adanmış Ekipler"
-    }
+    },
+    "subtitle": "Büyüme ve verimliliği artıran kapsamlı dijital çözümler.",
+    "searchPlaceholder": "Hizmet ara...",
+    "ctaTitle": "Büyümeye Hazır mısınız?",
+    "ctaDesc": "Ücretsiz danışmanlık randevusu alın.",
+    "ctaButton": "Demo Planla",
+    "exploreAll": "Tüm özel hizmet kataloğumuzu keşfedin"
   },
   "hero": {
     "eyebrow": "Dijital Çözümler",
@@ -427,7 +434,19 @@
       "readyToStart": "Başlamaya Hazır mısınız?",
       "readyDescription": "Projenizi tartışalım ve hedeflerinize nasıl ulaşmanıza yardımcı olabileceğimizi keşfedelim.",
       "startProject": "Proje Başlatın",
-      "viewWork": "Çalışmalarımızı Görün"
+      "viewWork": "Çalışmalarımızı Görün",
+      "categoryDescs": {
+        "web": "Kurumsal verimliliği artıran ölçeklenebilir web ve mobil uygulamalar.",
+        "ai": "Yeni nesil yapay zeka ve veri otomasyon çözümleri.",
+        "marketing": "Veri odaklı dijital pazarlama, SEO ve küresel büyüme stratejileri.",
+        "design": "Üst düzey UI/UX tasarımı, marka kimliği ve dijital deneyimler.",
+        "infrastructure": "Güçlü bulut mimarisi, DevOps ve kurumsal siber güvenlik.",
+        "consulting": "Dijital dönüşüm için stratejik teknoloji danışmanlığı."
+      },
+      "majorServices": "{count} Ana Hizmet",
+      "backToSelection": "Seçime Geri Dön",
+      "specialties": "{count} Uzmanlık Alanı",
+      "exploreDetails": "Detayları Keşfet"
     },
     "list": {
       "pythonAutomation": {
@@ -3161,16 +3180,33 @@
       "categories": {
         "all": "Tüm Projeler",
         "web": "Web Geliştirme",
+        "web-development": "Web Geliştirme",
         "mobile": "Mobil Uygulamalar",
+        "mobile-apps": "Mobil Uygulamalar",
         "ecommerce": "E-Ticaret",
-        "ai": "AI Çözümleri",
-        "automation": "Otomasyon"
+        "e-commerce": "E-Ticaret",
+        "ai": "Yapay Zeka Çözümleri",
+        "ai-solutions": "Yapay Zeka Çözümleri",
+        "automation": "Otomasyon",
+        "saas": "SaaS",
+        "healthtech": "Sağlık Teknolojisi",
+        "health-tech": "Sağlık Teknolojisi",
+        "marketplace": "Pazar Yeri",
+        "fintech": "Fintech",
+        "fin-tech": "Fintech",
+        "enterprise": "Kurumsal",
+        "startup": "Startup",
+        "infrastructure": "Altyapı",
+        "consulting": "Danışmanlık",
+        "design": "Tasarım",
+        "marketing": "Pazarlama"
       },
       "viewAllProjects": "Tüm Projeleri Görüntüle",
       "keyResult": "Anahtar Sonuç",
       "technology": "Teknoloji",
       "viewProject": "Projeyi Görüntüle",
-      "startProject": "Projenizi Başlatın"
+      "startProject": "Projenizi Başlatın",
+      "noResults": "Bu kategoride proje bulunamadı."
     },
     "caseStudy": {
       "eyebrow": "Vaka Çalışması",
@@ -3228,6 +3264,15 @@
         "yearsExperience": "Yıl Deneyim",
         "uptime": "Çalışma Süresi",
         "support": "Destek"
+      },
+      "techCategories": {
+        "Frontend": "Ön Yüz",
+        "Backend": "Arka Yüz",
+        "Database": "Veritabanı",
+        "Cloud": "Bulut",
+        "DevOps": "DevOps",
+        "AI/ML": "YZ / ML",
+        "E-Commerce": "E-Ticaret"
       }
     },
     "successMetrics": {
@@ -3271,6 +3316,23 @@
           "label": "Oluşturulan Gelir",
           "description": "Müşteriler için yaratılan ek gelir"
         }
+      ],
+      "testimonials": [
+        {
+          "label": "Müşteri Memnuniyeti",
+          "quote": "Her açıdan beklentilerimizi aştılar",
+          "client": "Teknoloji Girişimi CEO'su"
+        },
+        {
+          "label": "Yanıt Süresi",
+          "quote": "İhtiyaç duyduğumuzda şimşek hızında destek",
+          "client": "E-Ticaret Direktörü"
+        },
+        {
+          "label": "Zamanında Teslimat",
+          "quote": "Her zaman söz verdiği şeyleri ve tarihleri tutturuyor",
+          "client": "Proje Yöneticisi"
+        }
       ]
     },
     "detail": {
@@ -3287,6 +3349,34 @@
         "description": "İşletmeniz için benzer sonuçlar elde etmenize nasıl yardımcı olabileceğimizi konuşalım.",
         "button": "Ücretsiz Danışmanlık Alın"
       }
+    },
+    "horizontal": {
+      "eyebrow": "Çalışmalarımız",
+      "title": "Öne Çıkan Projeler",
+      "hint": "Keşfetmek için kaydırın",
+      "viewProject": "Projeyi Gör",
+      "demoProjects": [
+        {
+          "name": "Tedarik Zinciri SaaS Platformu",
+          "description": "Günlük 10.000+ gönderiyi canlı panolarla yöneten gerçek zamanlı filo takip ve rota optimizasyon platformu."
+        },
+        {
+          "name": "Moda E-Ticaret Platformu",
+          "description": "Yapay zeka destekli önerilerle dönüşüm oranını %38 artıran headless Shopify mağazası."
+        },
+        {
+          "name": "Tele-Sağlık Hasta Portalı",
+          "description": "Randevu planlama, görüntülü konsültasyon ve EHR entegrasyonu ile HIPAA uyumlu hasta portalı."
+        },
+        {
+          "name": "Gayrimenkul Pazaryeri",
+          "description": "Sanal tur, yapay zeka değerleme ve ipotek hesaplayıcı içeren mülk keşif platformu."
+        },
+        {
+          "name": "FinTek Panosu",
+          "description": "Biyometrik kimlik doğrulama, anlık transferler ve gerçek zamanlı analitik içeren çok platformlu bankacılık uygulaması."
+        }
+      ]
     }
   },
   "blog": {
@@ -3356,7 +3446,7 @@
       "contactMethods": {
         "email": {
           "label": "E-posta",
-          "value": "info@PakSoft.com"
+          "value": "paksoft3@gmail.com"
         },
         "phone": {
           "label": "Telefon",
@@ -3458,7 +3548,7 @@
     "contactInfo": {
       "email": {
         "label": "E-posta",
-        "value": "info@PakSoft.com"
+        "value": "paksoft3@gmail.com"
       },
       "phone": {
         "label": "Telefon",
@@ -3481,7 +3571,108 @@
       "medium": "Medium",
       "discord": "Discord"
     },
-    "developedBy": "Geliştiren"
+    "developedBy": "Geliştiren",
+    "cta": {
+      "readyToBuild": "Başlamaya hazır mısınız?",
+      "tagline": "Fikrinizi dijital ürüne dönüştürün",
+      "taglineHighlight": "dijital ürüne",
+      "startProject": "Projeye Başla",
+      "viewServices": "Hizmetleri Gör"
+    },
+    "brand": {
+      "description": "Web Geliştirme, Mobil Uygulamalar, Yapay Zeka Çözümleri ve Dijital Pazarlama sunan tam hizmet dijital ajans — Türkiye'den 30'dan fazla ülkedeki ekiplerin tercihi."
+    },
+    "newsletter": {
+      "label": "Bülten",
+      "title": "Eğrinin önünde kalın",
+      "description": "Yapay zeka, web geliştirme ve dijital büyüme stratejileri üzerine haftalık içgörüler — doğrudan gelen kutunuza.",
+      "placeholder": "e-posta@adresiniz.com",
+      "submit": "Abone Ol",
+      "disclaimer": "Spam yok · İstediğiniz zaman çıkın · GDPR uyumlu"
+    },
+    "servicesSection": {
+      "heading": "Tüm Hizmetler",
+      "viewAll": "Tümünü gör →",
+      "cols": {
+        "webDev": "Web Geliştirme",
+        "mobile": "Mobil & Uygulamalar",
+        "ai": "Yapay Zeka & Makine Öğrenmesi",
+        "marketing": "Dijital Pazarlama",
+        "design": "Tasarım & Kreatif",
+        "devops": "DevOps & Altyapı"
+      }
+    },
+    "nav": {
+      "home": "Ana Sayfa",
+      "about": "Hakkımızda",
+      "services": "Hizmetler",
+      "projects": "Projeler",
+      "blog": "Blog",
+      "contact": "İletişim"
+    },
+    "legal": {
+      "privacy": "Gizlilik Politikası",
+      "terms": "Kullanım Koşulları",
+      "cookies": "Çerez Politikası",
+      "sitemap": "Site Haritası"
+    },
+    "copyright": "© {year} PakSoft Technology. Tüm hakları saklıdır.",
+    "backToTop": "Başa dön",
+    "serviceLinks": {
+      "frontendDevelopment": "Frontend Geliştirme",
+      "backendDevelopment": "Backend Geliştirme",
+      "fullStackDevelopment": "Full-Stack Geliştirme",
+      "eCommerceSolutions": "E-Ticaret Çözümleri",
+      "saasDevelopment": "SaaS Geliştirme",
+      "apiDevelopment": "API Geliştirme",
+      "wordPressDevelopment": "WordPress Geliştirme",
+      "progressiveWebApps": "İlerici Web Uygulamaları",
+      "web3Blockchain": "Web3 & Blockchain",
+      "enterpriseSoftware": "Kurumsal Yazılım",
+      "iosDevelopment": "iOS Geliştirme",
+      "androidDevelopment": "Android Geliştirme",
+      "flutterDevelopment": "Flutter Geliştirme",
+      "reactNativeApps": "React Native Uygulamaları",
+      "crossPlatformApps": "Çapraz Platform Uygulamaları",
+      "mvpDevelopment": "MVP Geliştirme",
+      "noCodeLowCode": "No-Code / Low-Code",
+      "aiConsultingStrategy": "Yapay Zeka Danışmanlığı & Strateji",
+      "machineLearning": "Makine Öğrenmesi",
+      "chatbotDevelopment": "Chatbot Geliştirme",
+      "llmFineTuning": "LLM İnce Ayarı",
+      "promptEngineering": "Prompt Mühendisliği",
+      "ragSolutions": "RAG Çözümleri",
+      "aiAgents": "Yapay Zeka Ajanları",
+      "computerVision": "Bilgisayarlı Görü",
+      "pythonAutomation": "Python Otomasyonu",
+      "mlopsDeployment": "MLOps Dağıtımı",
+      "seoServices": "SEO Hizmetleri",
+      "googleAds": "Google Reklamları",
+      "metaAds": "Meta Reklamları",
+      "socialMediaMarketing": "Sosyal Medya Pazarlaması",
+      "tikTokMarketing": "TikTok Pazarlaması",
+      "linkedInMarketing": "LinkedIn Pazarlaması",
+      "whatsAppMarketing": "WhatsApp Pazarlaması",
+      "emailMarketing": "E-posta Pazarlaması",
+      "contentMarketing": "İçerik Pazarlaması",
+      "marketingAutomation": "Pazarlama Otomasyonu",
+      "uiUxDesign": "UI/UX Tasarımı",
+      "webDesign": "Web Tasarımı",
+      "graphicDesign": "Grafik Tasarımı",
+      "logoBrandIdentity": "Logo & Marka Kimliği",
+      "brandStrategy": "Marka Stratejisi",
+      "motionGraphics": "Hareketli Grafikler",
+      "3dArVr": "3D / AR / VR",
+      "croAbTesting": "CRO & A/B Testi",
+      "devOpsCiCd": "DevOps & CI/CD",
+      "cloudMigration": "Bulut Geçişi",
+      "dataAnalyticsBi": "Veri Analitiği & BI",
+      "cybersecurity": "Siber Güvenlik",
+      "databaseServices": "Veritabanı Hizmetleri",
+      "performanceOptimization": "Performans Optimizasyonu",
+      "managedServices": "Yönetilen Hizmetler",
+      "techConsulting": "Teknoloji Danışmanlığı"
+    }
   },
   "connect": {
     "title": "PakSoft ile Bağlantı Kurun",
@@ -3618,6 +3809,49 @@
         "answer": "Sabit fiyatlı projeler, saatlik ücretler ve retainer anlaşmaları dahil esnek fiyatlandırma modelleri sunuyoruz. Fiyatlandırma proje kapsamına, karmaşıklığına ve zaman çizelgesine bağlıdır. Özel gereksinimlerinizi anladıktan sonra detaylı teklifler sağlarız."
       }
     ]
+  },
+  "webDevPage": {
+    "hero": {
+      "eyebrow": "Web Geliştirme Hizmetleri",
+      "headline": "Sizin Kadar Çok Çalışan\nWeb Siteleri İnşa Ediyoruz",
+      "sub": "Hızlı Next.js uygulamalarından ölçeklenebilir SaaS platformlarına — ziyaretçileri müşteriye dönüştüren ve gerçek dünya yükü altında ayakta kalan dijital deneyimler geliştiriyoruz.",
+      "cta1": "Projenizi Başlatın",
+      "cta2": "Çalışmalarımızı Görün",
+      "stat1": "Tamamlanan Proje",
+      "stat2": "Lighthouse Skoru",
+      "stat3": "Aylık Kullanıcı"
+    },
+    "subnav": {
+      "overview": "Genel Bakış",
+      "features": "Özellikler",
+      "tech": "Teknolojiler",
+      "process": "Süreç",
+      "pricing": "Fiyatlandırma",
+      "blog": "Blog",
+      "faq": "SSS",
+      "cta": "Teklif Al"
+    },
+    "blog": {
+      "eyebrow": "Blogdan",
+      "headline": "Web Geliştirme İçgörüleri",
+      "viewAll": "Tüm Makaleleri Görüntüle",
+      "post1": {
+        "title": "2025'te Core Web Vitals: Her Geliştiricinin Bilmesi Gerekenler",
+        "excerpt": "Google'ın sıralama sinyalleri gelişmeye devam ediyor. Lighthouse skorlarınızı 95'in üzerinde tutmanın ve kullanıcılarınızı mutlu etmenin yolu."
+      },
+      "post2": {
+        "title": "Next.js 15 ve Remix: Hangi Framework'ü Seçmelisiniz?",
+        "excerpt": "2025'in en çok konuşulan iki React meta-framework'ünün gerçek bundle boyutları ve geliştirici deneyimi skorlarıyla pratik karşılaştırması."
+      },
+      "post3": {
+        "title": "Türk E-Ticaret Markasının Yüklenme Süresini %60 Azalttık",
+        "excerpt": "Yavaş bir WooCommerce sitesini 2 saniyenin altına indiren görsel optimizasyon, kod bölme ve CDN stratejisinin perde arkası."
+      },
+      "post4": {
+        "title": "Next.js ile Çok Dilli Siteler ve RTL Desteği",
+        "excerpt": "Arapça ve Urduca RTL düzenleriyle beş yerel uygulama geliştirmenin dersleri — font yükleme, BiDi CSS ve test stratejileri."
+      }
+    }
   },
   "webDevelopment": {
     "hero": {
@@ -3830,7 +4064,8 @@
         "description": "İşletmeniz büyürken 7/24 teknik destek, düzenli güncellemeler ve özellik geliştirmeleri.",
         "duration": "Devam eden"
       }
-    ]
+    ],
+    "phase": "Aşama"
   },
   "projectDetail": {
     "eyebrow": "Yaklaşımımız",
@@ -3884,6 +4119,58 @@
       "readyDescription": "Gereksinimlerinizi tartışalım ve vizyonunuzu hayata geçirmenize nasıl yardımcı olabileceğimizi keşfedelim.",
       "getStarted": "Başlayın",
       "viewPortfolio": "Portföyü Görüntüle"
+    },
+    "stats": [
+      {
+        "value": "150+",
+        "label": "Tamamlanan Proje"
+      },
+      {
+        "value": "50+",
+        "label": "Memnun Müşteri"
+      },
+      {
+        "value": "98%",
+        "label": "Başarı Oranı"
+      },
+      {
+        "value": "24/7",
+        "label": "Destek Mevcut"
+      }
+    ],
+    "processSteps": [
+      {
+        "step": "01",
+        "title": "Keşif ve Planlama",
+        "desc": "Gereksinimleri anlayıp proje kapsamını tanımlıyoruz"
+      },
+      {
+        "step": "02",
+        "title": "Tasarım ve Prototipleme",
+        "desc": "Kullanıcı odaklı tasarımlar ve etkileşimli prototipler oluşturuyoruz"
+      },
+      {
+        "step": "03",
+        "title": "Geliştirme ve Test",
+        "desc": "Kapsamlı testlerle sağlam çözümler inşa ediyoruz"
+      },
+      {
+        "step": "04",
+        "title": "Dağıtım ve Destek",
+        "desc": "Projenizi süregelen bakımla hayata geçiriyoruz"
+      }
+    ],
+    "workflowVisual": {
+      "clientBrief": "Müşteri Özeti",
+      "yourRequirements": "Gereksinimleriniz",
+      "weBuildIt": "Biz inşa ediyoruz",
+      "yourProduct": "Ürününüz",
+      "phases": {
+        "discovery": "Keşif",
+        "design": "Tasarım",
+        "develop": "Geliştirme",
+        "deploy": "Dağıtım"
+      }
     }
   },
   "ctaBanner": {
@@ -3896,7 +4183,7 @@
     "emailUs": {
       "title": "Bize E-posta Gönderin",
       "description": "Detaylı yanıt alın",
-      "value": "info@PakSoft.com"
+      "value": "paksoft3@gmail.com"
     },
     "callUs": {
       "title": "Bizi Arayın",
@@ -4257,27 +4544,27 @@
         "subtitle": "Kaliteyi ve zamaninda teslimi garanti eden kanitlanmis bir metodoloji.",
         "steps": [
           {
-            "number": "01",
+            "step": 1,
             "title": "Kesif",
             "description": "Hedeflerinizi, hedef kitlenizi ve teknik gereksinimlerinizi anlama."
           },
           {
-            "number": "02",
+            "step": 2,
             "title": "Tasarim",
             "description": "Kullanici odakli deneyimler icin wireframe'ler ve prototiplerin olusturulmasi."
           },
           {
-            "number": "03",
+            "step": 3,
             "title": "Gelistirme",
             "description": "Temiz kod, modern framework'ler ve en iyi uygulamalarla insa etme."
           },
           {
-            "number": "04",
+            "step": 4,
             "title": "Test",
             "description": "Performans, guvenlik ve uyumlulugun saglanmasi icin kapsamli kalite guvencesi."
           },
           {
-            "number": "05",
+            "step": 5,
             "title": "Lansman",
             "description": "Izleme ve surekli destekle sorunsuz deployment."
           }
@@ -4288,7 +4575,7 @@
         "title": "Muhendislik Mukemmelligi",
         "titleAccent": "Tasarimla Bulusuyor",
         "subtitle": "Sadece kod yazmiyoruz - kullanicilarin sevdigi dijital deneyimler yaratiyoruz.",
-        "features": [
+        "benefits": [
           {
             "title": "Modern Teknolojiler",
             "description": "React, Next.js, TypeScript ve Node.js gibi en son teknolojileri kullaniyoruz."
@@ -4350,6 +4637,62 @@
             "quote": "Ekip beklentilerimizin otesinde teslimat yapti. Detaylara olan ozenleri ve teknik uzmanliklari essiz.",
             "author": "Michael Chen",
             "role": "CTO, DataFlow Systems"
+          }
+        ]
+      },
+      "technologies": {
+        "eyebrow": "Teknoloji Yığınımız",
+        "title": "Kullandığımız",
+        "titleAccent": "Teknolojiler",
+        "subtitle": "Hızlı, güvenli ve ölçeklenebilir web uygulamaları için kanıtlanmış modern teknolojilerle geliştiriyoruz.",
+        "items": [
+          {
+            "name": "Next.js",
+            "icon": "nextjs"
+          },
+          {
+            "name": "React",
+            "icon": "react"
+          },
+          {
+            "name": "TypeScript",
+            "icon": "typescript"
+          },
+          {
+            "name": "Tailwind CSS",
+            "icon": "tailwind"
+          },
+          {
+            "name": "Node.js",
+            "icon": "nodejs"
+          },
+          {
+            "name": "PostgreSQL",
+            "icon": "postgresql"
+          },
+          {
+            "name": "Prisma",
+            "icon": "prisma"
+          },
+          {
+            "name": "Redis",
+            "icon": "redis"
+          },
+          {
+            "name": "Docker",
+            "icon": "docker"
+          },
+          {
+            "name": "AWS",
+            "icon": "aws"
+          },
+          {
+            "name": "Vercel",
+            "icon": "vercel"
+          },
+          {
+            "name": "GitHub Actions",
+            "icon": "github"
           }
         ]
       }
@@ -7964,7 +8307,8 @@
                 "label": "Performans Puani",
                 "value": "94/100"
               }
-            ]
+            ],
+            "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80&fit=crop"
           },
           {
             "title": "Moda Markasi icin E-Ticaret Platformu Yeniden Insasi",
@@ -7985,7 +8329,8 @@
                 "label": "Sayfa Yukleme Suresi",
                 "value": "1,4sn"
               }
-            ]
+            ],
+            "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80&fit=crop"
           },
           {
             "title": "Tele Saglik Platformu icin Hasta Portali",
@@ -8006,7 +8351,8 @@
                 "label": "Gelmeme Azalmasi",
                 "value": "%65"
               }
-            ]
+            ],
+            "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80&fit=crop"
           },
           {
             "title": "Sanal Turlu Gayrimenkul Pazar Yeri",
@@ -8027,7 +8373,8 @@
                 "label": "Aylik Potansiyel Musteriler",
                 "value": "1.200"
               }
-            ]
+            ],
+            "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80&fit=crop"
           }
         ],
         "aggregateStats": [
@@ -10722,5 +11069,31 @@
         ]
       }
     }
+  },
+  "socialProof": {
+    "title": "Dünya genelinde önde gelen şirketler tarafından tercih edilen",
+    "stats": [
+      {
+        "value": "500+",
+        "label": "Tamamlanan Proje"
+      },
+      {
+        "value": "200+",
+        "label": "Mutlu Müşteri"
+      },
+      {
+        "value": "15+",
+        "label": "Yıl Deneyim"
+      },
+      {
+        "value": "50+",
+        "label": "Ekip Üyesi"
+      }
+    ],
+    "badges": [
+      "ISO 27001 Sertifikalı",
+      "GDPR Uyumlu",
+      "SOC 2 Tip II"
+    ]
   }
 }

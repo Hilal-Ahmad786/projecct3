@@ -19,11 +19,39 @@ function SplitText3D({
   text,
   mounted,
   prefersReducedMotion,
+  dir = 'ltr',
 }: {
   text: string
   mounted: boolean
   prefersReducedMotion: boolean | null
+  dir?: string
 }) {
+  const isRTL = dir === 'rtl'
+
+  if (isRTL) {
+    // Split by words so Arabic/Urdu letters stay connected within each word
+    const words = text.split(' ')
+    return (
+      <>
+        {words.map((word, i) => (
+          <motion.span
+            key={i}
+            style={{ display: 'inline-block', willChange: 'transform' }}
+            initial={prefersReducedMotion ? {} : { opacity: 0, y: 16 }}
+            animate={mounted ? { opacity: 1, y: 0 } : {}}
+            transition={
+              prefersReducedMotion
+                ? { duration: 0 }
+                : { duration: 0.5, ease: [0.22, 1, 0.36, 1], delay: i * 0.08 }
+            }
+          >
+            {word}{i < words.length - 1 ? ' ' : ''}
+          </motion.span>
+        ))}
+      </>
+    )
+  }
+
   const chars = text.split('')
   return (
     <>
@@ -49,6 +77,7 @@ function SplitText3D({
     </>
   )
 }
+
 
 // ─── Stat with 3D flip entrance ───────────────────────────────────────
 function CountUpStat({ value, label }: { value: string; label: string }) {
@@ -166,23 +195,32 @@ export default function Hero() {
   return (
     <section
       ref={heroRef}
-      className="hero-section relative gradient-bg-vibrant overflow-hidden"
+      className="hero-section relative gradient-bg-vibrant girih-bg girih-bg-fade overflow-hidden"
       dir={dir}
     >
+      {/* Heritage gradient washes */}
+      <div
+        className={`absolute top-0 w-[500px] h-[500px] rounded-full blur-[120px] opacity-50 pointer-events-none ${dir === 'rtl' ? 'right-0' : 'left-0'}`}
+        style={{ background: 'var(--accent-emerald-light)' }}
+      />
+      <div
+        className={`absolute bottom-0 w-[400px] h-[400px] rounded-full blur-[100px] opacity-40 pointer-events-none ${dir === 'rtl' ? 'left-0' : 'right-0'}`}
+        style={{ background: 'var(--heritage-sand)' }}
+      />
 
       {/* Crescent Elements — scroll-parallax */}
       <motion.div
         className={`absolute top-32 w-32 h-32 ${dir === 'rtl' ? 'left-20' : 'right-20'}`}
-        style={{ y: prefersReducedMotion ? 0 : crescentTopY, willChange: 'transform' }}
+        style={{ y: prefersReducedMotion ? 0 : crescentTopY, willChange: 'transform', color: 'var(--heritage-turquoise)' }}
       >
-        <div className={`crescent ${dir === 'rtl' ? 'crescent-left' : 'crescent-right'} crescent-subtle text-gray-900`} />
+        <div className={`crescent ${dir === 'rtl' ? 'crescent-left' : 'crescent-right'} crescent-medium`} />
       </motion.div>
 
       <motion.div
         className={`absolute bottom-32 w-24 h-24 ${dir === 'rtl' ? 'right-16' : 'left-16'}`}
-        style={{ y: prefersReducedMotion ? 0 : crescentBotY, willChange: 'transform' }}
+        style={{ y: prefersReducedMotion ? 0 : crescentBotY, willChange: 'transform', color: 'var(--heritage-saffron)' }}
       >
-        <div className={`crescent ${dir === 'rtl' ? 'crescent-right' : 'crescent-left'} crescent-subtle text-gray-600`} />
+        <div className={`crescent ${dir === 'rtl' ? 'crescent-right' : 'crescent-left'} crescent-medium`} />
       </motion.div>
 
       {/* Main Content */}
@@ -210,9 +248,13 @@ export default function Hero() {
             >
               <motion.div
                 variants={prefersReducedMotion ? undefined : lineDrawItem}
-                className="w-8 h-0.5 bg-gray-900 origin-left"
+                className="w-8 h-0.5 origin-left"
+                style={{ background: 'var(--heritage-turquoise)' }}
               />
-              <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">
+              <span
+                className="text-xs font-medium uppercase tracking-wide"
+                style={{ color: 'var(--heritage-turquoise)' }}
+              >
                 {t('eyebrow')}
               </span>
             </motion.div>
@@ -231,6 +273,7 @@ export default function Hero() {
                     text={t('title') as string}
                     mounted={mounted}
                     prefersReducedMotion={prefersReducedMotion}
+                    dir={dir}
                   />
                 </span>
                 <br />
@@ -242,7 +285,8 @@ export default function Hero() {
                   <AnimatePresence mode="wait">
                     <motion.span
                       key={currentIndex}
-                      className="text-gray-600 inline-block"
+                      className="inline-block"
+                      style={{ color: 'var(--heritage-turquoise)' }}
                       initial={prefersReducedMotion ? {} : { opacity: 0, y: 20, filter: 'blur(8px)' }}
                       animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
                       exit={prefersReducedMotion ? {} : { opacity: 0, y: -20, filter: 'blur(8px)' }}
@@ -256,7 +300,8 @@ export default function Hero() {
                     </motion.span>
                   </AnimatePresence>
                   <motion.div
-                    className="absolute -bottom-2 left-0 h-0.5 bg-gray-900"
+                    className="absolute -bottom-2 left-0 h-0.5"
+                    style={{ background: 'linear-gradient(to right, var(--heritage-turquoise), var(--heritage-saffron))' }}
                     initial={{ width: '0%' }}
                     animate={{ width: '100%' }}
                     transition={prefersReducedMotion ? { duration: 0 } : snappySpring}

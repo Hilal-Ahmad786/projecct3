@@ -37,7 +37,7 @@ export default function TestimonialsSection() {
       console.error('Error parsing testimonials:', error);
     }
     return [
-      { author: 'Sarah Johnson', role: 'CEO', company: 'TechStart Solutions', text: 'PakTechnology delivered exactly what we needed. Their attention to detail, proactive communication, and deeply professional approach made our project a complete success from day one.', rating: 5 },
+      { author: 'Sarah Johnson', role: 'CEO', company: 'TechStart Solutions', text: 'PakSoft delivered exactly what we needed. Their attention to detail, proactive communication, and deeply professional approach made our project a complete success from day one.', rating: 5 },
       { author: 'Lisa Thompson', role: 'Founder', company: 'EcoSmart', text: 'From concept to launch, they guided us through every step. Our e-commerce platform exceeded all expectations. Fantastic UI design.', rating: 5 },
       { author: 'James Park', role: 'Operations Manager', company: 'LogiTech Pro', text: 'The AI solutions they implemented have transformed how we handle customer inquiries. Impressive technical expertise and fast rollout.', rating: 5 },
       { author: 'Ahmed Hassan', role: 'CTO', company: 'InnovateDX', text: 'Stunning workflow automation. Our internal processes are 50% more efficient now thanks to their customized Python enterprise integration solutions.', rating: 5 },
@@ -144,7 +144,7 @@ function BentoCard({ item, dir, variant }: { item: any, dir: string, variant: 'h
       
       {/* Huge subtle watermark quote for Hero card only */}
       {isHero && (
-        <svg className={`absolute w-72 h-72 text-emerald-600/5 -top-16 transition-transform duration-700 pointer-events-none group-hover:scale-110 group-hover:-rotate-6 ${dir === 'rtl' ? '-left-16 transform -scale-x-100' : '-right-16'}`} fill="currentColor" viewBox="0 0 24 24">
+        <svg className={`absolute w-72 h-72 text-[color:var(--heritage-turquoise)]/5 -top-16 transition-transform duration-700 pointer-events-none group-hover:scale-110 group-hover:-rotate-6 ${dir === 'rtl' ? '-left-16 transform -scale-x-100' : '-right-16'}`} fill="currentColor" viewBox="0 0 24 24">
            <path d={dir === 'rtl' 
                ? "M10 21v-7.391c0-5.704-3.731-9.57-8.983-10.609l-.995 2.151c2.432.917 3.995 3.638 3.995 5.849h-4v10h10zm14.017 0v-7.391c0-5.704-3.748-9.57-9-10.609l-.996 2.151c2.433.917 3.996 3.638 3.996 5.849h-4v10h10z"
                : "M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-10zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"
@@ -157,8 +157,8 @@ function BentoCard({ item, dir, variant }: { item: any, dir: string, variant: 'h
         
         {isWide ? (
              <div className="flex flex-col items-center justify-center gap-4">
-                <div className="w-16 h-16 bg-gradient-to-br from-emerald-50 to-teal-50 rounded-full flex items-center justify-center border border-emerald-100 shadow-sm relative z-10">
-                   <svg className="h-6 w-6 text-emerald-600" fill="currentColor" viewBox="0 0 24 24">
+                <div className="w-16 h-16 bg-gradient-to-br from-[color:var(--accent-emerald-light)] to-[color:var(--heritage-sand)] rounded-full flex items-center justify-center border border-[color:var(--accent-emerald-light)] shadow-sm relative z-10">
+                   <svg className="h-6 w-6 text-[color:var(--heritage-turquoise)]" fill="currentColor" viewBox="0 0 24 24">
                      <path d={dir === 'rtl' ? "M10 21v-7.391c0-5.704-3.731-9.57-8.983-10.609l-.995 2.151c2.432.917 3.995 3.638 3.995 5.849h-4v10h10zm14.017 0v-7.391c0-5.704-3.748-9.57-9-10.609l-.996 2.151c2.433.917 3.996 3.638 3.996 5.849h-4v10h10z" : "M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-10zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"} />
                    </svg>
                 </div>
@@ -172,8 +172,8 @@ function BentoCard({ item, dir, variant }: { item: any, dir: string, variant: 'h
              </div>
         ) : (
           <>
-            <div className={`bg-gradient-to-br from-emerald-50 to-teal-50 rounded-full flex items-center justify-center border border-emerald-100 shadow-sm relative z-10 ${isHero ? 'w-16 h-16' : 'w-12 h-12'}`}>
-               <svg className={`${isHero ? 'h-6 w-6' : 'h-5 w-5'} text-emerald-600`} fill="currentColor" viewBox="0 0 24 24">
+            <div className={`bg-gradient-to-br from-[color:var(--accent-emerald-light)] to-[color:var(--heritage-sand)] rounded-full flex items-center justify-center border border-[color:var(--accent-emerald-light)] shadow-sm relative z-10 ${isHero ? 'w-16 h-16' : 'w-12 h-12'}`}>
+               <svg className={`${isHero ? 'h-6 w-6' : 'h-5 w-5'} text-[color:var(--heritage-turquoise)]`} fill="currentColor" viewBox="0 0 24 24">
                  <path d={dir === 'rtl' ? "M10 21v-7.391c0-5.704-3.731-9.57-8.983-10.609l-.995 2.151c2.432.917 3.995 3.638 3.995 5.849h-4v10h10zm14.017 0v-7.391c0-5.704-3.748-9.57-9-10.609l-.996 2.151c2.433.917 3.996 3.638 3.996 5.849h-4v10h10z" : "M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-10zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"} />
                </svg>
             </div>

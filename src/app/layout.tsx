@@ -1,11 +1,30 @@
 import './globals.css'
 import { ReactNode } from 'react'
+import { Noto_Nastaliq_Urdu, Amiri } from 'next/font/google'
 import Analytics from '@/components/Analytics'
 import SecurityGuard from '@/components/SecurityGuard'
 import ReCaptcha from '@/components/ReCaptcha'
 import { ClientProviders } from '@/components/ClientProviders'
 import { cookies } from 'next/headers'
 import { Analytics as VercelAnalytics } from '@vercel/analytics/next'
+
+// Heritage display type for RTL locales — exposed as CSS variables,
+// consumed by globals.css heading rules. preload:false keeps them off
+// the critical path for en/tr/de visitors.
+const nastaliq = Noto_Nastaliq_Urdu({
+    subsets: ['arabic'],
+    weight: ['400', '700'],
+    variable: '--font-nastaliq',
+    display: 'swap',
+    preload: false,
+})
+const amiri = Amiri({
+    subsets: ['arabic'],
+    weight: ['400', '700'],
+    variable: '--font-arabic-display',
+    display: 'swap',
+    preload: false,
+})
 
 export const metadata = {
     metadataBase: new URL('https://www.paksoft.com.tr'),
@@ -37,7 +56,7 @@ export const metadata = {
         card: 'summary_large_image',
         title: 'PakSoft – Modern Digital Solutions',
         description: 'Enterprise web development, e-commerce, automation bots and digital marketing solutions',
-        creator: '@paktechnology',
+        creator: '@paksoft3',
         images: ['/images/twitter-image.jpg'],
     },
     robots: {
@@ -75,7 +94,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
                 <Analytics />
                 <ReCaptcha />
             </head>
-            <body className="flex flex-col min-h-screen" suppressHydrationWarning>
+            <body className={`${nastaliq.variable} ${amiri.variable} flex flex-col min-h-screen`} suppressHydrationWarning>
                 <SecurityGuard />
                 <ClientProviders>
                     {children}

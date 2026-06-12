@@ -108,7 +108,7 @@ async function sendEmailNotifications(
     return;
   }
 
-  const adminEmail = process.env.ADMIN_EMAIL || 'info@paksoft.com';
+  const adminEmail = process.env.ADMIN_EMAIL || 'paksoft3@gmail.com';
 
   // Send notification to admin
   await fetch('https://api.resend.com/emails', {

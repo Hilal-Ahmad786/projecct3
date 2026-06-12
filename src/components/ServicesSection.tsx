@@ -265,12 +265,12 @@ export default function ServicesSection() {
   }
 
   const categories = [
-    { key: 'web', label: t('categories.web'), icon: CodeBracketIcon, desc: "Scalable web & mobile applications driving enterprise efficiency." },
-    { key: 'ai', label: t('categories.ai'), icon: CpuChipIcon, desc: "Next-generation artificial intelligence and data automation solutions." },
-    { key: 'marketing', label: t('categories.marketing'), icon: RocketLaunchIcon, desc: "Data-driven digital marketing, SEO, and global growth strategies." },
-    { key: 'design', label: t('categories.design'), icon: PaintBrushIcon, desc: "Premium UI/UX design, branding, and immersive digital experiences." },
-    { key: 'infrastructure', label: t('categories.infrastructure'), icon: ServerStackIcon, desc: "Robust cloud architecture, devops, and enterprise cybersecurity." },
-    { key: 'consulting', label: t('categories.consulting'), icon: LightBulbIcon, desc: "Strategic technology consulting for digital transformation." },
+    { key: 'web',            label: t('categories.web'),            icon: CodeBracketIcon, desc: t('categoryDescs.web')            as string },
+    { key: 'ai',             label: t('categories.ai'),             icon: CpuChipIcon,     desc: t('categoryDescs.ai')             as string },
+    { key: 'marketing',      label: t('categories.marketing'),      icon: RocketLaunchIcon,desc: t('categoryDescs.marketing')      as string },
+    { key: 'design',         label: t('categories.design'),         icon: PaintBrushIcon,  desc: t('categoryDescs.design')         as string },
+    { key: 'infrastructure', label: t('categories.infrastructure'), icon: ServerStackIcon, desc: t('categoryDescs.infrastructure') as string },
+    { key: 'consulting',     label: t('categories.consulting'),     icon: LightBulbIcon,   desc: t('categoryDescs.consulting')     as string },
   ];
 
   const currentServices = expandedCategory ? servicesByCategory[expandedCategory] || [] : [];
@@ -335,7 +335,7 @@ export default function ServicesSection() {
                       className="glass bg-white flex flex-col items-start text-left p-8 md:p-10 hover:bg-gray-50 border border-white hover:border-gray-200 rounded-[2rem] group overflow-hidden relative shadow-[0_8px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)] w-full text-left focus:outline-none"
                     >
                       <div className="flex items-center gap-4 mb-6">
-                        <div className="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center relative z-10 group-hover:scale-110 group-hover:bg-primary transition-all duration-500 border border-gray-100 shadow-sm shrink-0">
+                        <div className="w-16 h-16 bg-accent-emerald-light rounded-2xl flex items-center justify-center relative z-10 group-hover:scale-110 group-hover:bg-primary transition-all duration-500 border border-gray-100 shadow-sm shrink-0">
                            <Icon className="w-8 h-8 text-primary group-hover:text-white transition-colors duration-500" />
                         </div>
                         <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 relative z-10 tracking-tight leading-tight group-hover:text-primary transition-colors duration-300 text-left">
@@ -362,7 +362,7 @@ export default function ServicesSection() {
                       
                       <div className="mt-auto pt-6 border-t border-gray-100/50 flex items-center justify-between w-full relative z-10 group-hover:border-primary/20 transition-colors">
                          <span className="text-xs sm:text-sm font-bold tracking-widest uppercase text-gray-500 group-hover:text-gray-900 transition-colors">
-                           {servicesByCategory[cat.key]?.length} Major Services
+                           {(t('majorServices') as string).replace('{count}', String(servicesByCategory[cat.key]?.length ?? 0))}
                          </span>
                          <div className={`w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center text-white scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-x-0 ${dir === 'rtl' ? 'translate-x-4' : '-translate-x-4'}`}>
                             <svg className={`w-4 h-4 ${dir === 'rtl' ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -409,7 +409,7 @@ export default function ServicesSection() {
                       <svg className={`w-5 h-5 transform transition-transform ${dir === 'rtl' ? 'group-hover:translate-x-1 rotate-180' : 'group-hover:-translate-x-1'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                       </svg>
-                      Back to Selection
+                      {t('backToSelection') as string}
                     </button>
                     <h2 className={`text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight ${dir === 'rtl' ? 'text-right' : 'text-left'}`}>
                       {activeLabel}
@@ -507,7 +507,9 @@ export default function ServicesSection() {
                       {/* Specialized Services Bar */}
                       <div className={`mt-auto px-8 md:px-10 py-6 bg-gray-50/80 border-t border-gray-100 flex items-center justify-between group-hover:bg-gray-900 transition-colors duration-300 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
                          <span className="text-xs sm:text-sm font-bold text-gray-500 group-hover:text-white transition-colors uppercase tracking-widest">
-                            {hasChildren ? `${service.children?.length} Specialties` : 'Explore Details'}
+                            {hasChildren
+                              ? (t('specialties') as string).replace('{count}', String(service.children?.length ?? 0))
+                              : (t('exploreDetails') as string)}
                          </span>
                          <div className="w-10 h-10 rounded-full bg-white border border-gray-200 group-hover:border-transparent shadow-sm flex items-center justify-center group-hover:scale-110 transition-transform">
                             <svg className={`w-5 h-5 text-gray-900 ${dir === 'rtl' ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">

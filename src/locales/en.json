@@ -56,11 +56,12 @@
     "serviceNav": {
       "overview": "Overview",
       "features": "Features",
+      "technologies": "Technologies",
       "process": "Process",
-      "techStack": "Tech Stack",
-      "portfolio": "Portfolio",
+      "pricing": "Pricing",
+      "blog": "Blog",
       "faq": "FAQ",
-      "security": "Security"
+      "getQuote": "Get a Quote"
     }
   },
   "megaMenu": {
@@ -297,7 +298,13 @@
       "staff-augmentation": "Staff Augmentation",
       "developer-outsourcing": "Developer Outsourcing",
       "dedicated-teams": "Dedicated Teams"
-    }
+    },
+    "subtitle": "Comprehensive digital solutions driving growth and efficiency.",
+    "searchPlaceholder": "Search services...",
+    "ctaTitle": "Ready to Scale?",
+    "ctaDesc": "Schedule a free consultation.",
+    "ctaButton": "Book Demo",
+    "exploreAll": "Explore our full catalog of specialized services"
   },
   "hero": {
     "eyebrow": "Digital Solutions",
@@ -427,7 +434,19 @@
       "readyToStart": "Ready to Get Started?",
       "readyDescription": "Let's discuss your project and explore how we can help you achieve your goals.",
       "startProject": "Start a Project",
-      "viewWork": "View Our Work"
+      "viewWork": "View Our Work",
+      "categoryDescs": {
+        "web": "Scalable web & mobile applications driving enterprise efficiency.",
+        "ai": "Next-generation artificial intelligence and data automation solutions.",
+        "marketing": "Data-driven digital marketing, SEO, and global growth strategies.",
+        "design": "Premium UI/UX design, branding, and immersive digital experiences.",
+        "infrastructure": "Robust cloud architecture, DevOps, and enterprise cybersecurity.",
+        "consulting": "Strategic technology consulting for digital transformation."
+      },
+      "majorServices": "{count} Major Services",
+      "backToSelection": "Back to Selection",
+      "specialties": "{count} Specialties",
+      "exploreDetails": "Explore Details"
     },
     "list": {
       "pythonAutomation": {
@@ -3161,16 +3180,33 @@
       "categories": {
         "all": "All Projects",
         "web": "Web Development",
+        "web-development": "Web Development",
         "mobile": "Mobile Apps",
+        "mobile-apps": "Mobile Apps",
         "ecommerce": "E-Commerce",
+        "e-commerce": "E-Commerce",
         "ai": "AI Solutions",
-        "automation": "Automation"
+        "ai-solutions": "AI Solutions",
+        "automation": "Automation",
+        "saas": "SaaS",
+        "healthtech": "HealthTech",
+        "health-tech": "HealthTech",
+        "marketplace": "Marketplace",
+        "fintech": "FinTech",
+        "fin-tech": "FinTech",
+        "enterprise": "Enterprise",
+        "startup": "Startup",
+        "infrastructure": "Infrastructure",
+        "consulting": "Consulting",
+        "design": "Design",
+        "marketing": "Marketing"
       },
       "viewAllProjects": "View All Projects",
       "keyResult": "Key Result",
       "technology": "Technology",
       "viewProject": "View Project",
-      "startProject": "Start Your Project"
+      "startProject": "Start Your Project",
+      "noResults": "No projects found in this category."
     },
     "caseStudy": {
       "eyebrow": "Case Study",
@@ -3228,6 +3264,15 @@
         "yearsExperience": "Years Experience",
         "uptime": "Uptime",
         "support": "Support"
+      },
+      "techCategories": {
+        "Frontend": "Frontend",
+        "Backend": "Backend",
+        "Database": "Database",
+        "Cloud": "Cloud",
+        "DevOps": "DevOps",
+        "AI/ML": "AI / ML",
+        "E-Commerce": "E-Commerce"
       }
     },
     "successMetrics": {
@@ -3271,6 +3316,23 @@
           "label": "Revenue Generated",
           "description": "Additional revenue created for clients"
         }
+      ],
+      "testimonials": [
+        {
+          "label": "Client Satisfaction",
+          "quote": "Exceeded our expectations in every aspect",
+          "client": "Tech Startup CEO"
+        },
+        {
+          "label": "Response Time",
+          "quote": "Lightning-fast support when we need it",
+          "client": "E-commerce Director"
+        },
+        {
+          "label": "On-Time Delivery",
+          "quote": "Always delivers on promises and deadlines",
+          "client": "Project Manager"
+        }
       ]
     },
     "detail": {
@@ -3287,6 +3349,34 @@
         "description": "Let's discuss how we can help you achieve similar results for your business.",
         "button": "Get a Free Consultation"
       }
+    },
+    "horizontal": {
+      "eyebrow": "Our Work",
+      "title": "Featured Projects",
+      "hint": "Scroll to explore",
+      "viewProject": "View Project",
+      "demoProjects": [
+        {
+          "name": "Supply Chain SaaS Platform",
+          "description": "Real-time fleet tracking and route optimisation platform handling 10,000+ daily shipments with live dashboards."
+        },
+        {
+          "name": "Fashion E-Commerce Platform",
+          "description": "Headless Shopify storefront with AI-powered recommendations, boosting conversion by 38%."
+        },
+        {
+          "name": "Telehealth Patient Portal",
+          "description": "HIPAA-compliant patient portal with appointment scheduling, video consultations, and EHR integration."
+        },
+        {
+          "name": "Real Estate Marketplace",
+          "description": "Property discovery platform with virtual tours, AI valuation, and mortgage calculator."
+        },
+        {
+          "name": "FinTech Dashboard",
+          "description": "Cross-platform banking app with biometric auth, instant transfers, and real-time analytics."
+        }
+      ]
     }
   },
   "blog": {
@@ -3356,7 +3446,7 @@
       "contactMethods": {
         "email": {
           "label": "Email",
-          "value": "info@PakSoft.com"
+          "value": "paksoft3@gmail.com"
         },
         "phone": {
           "label": "Phone",
@@ -3458,7 +3548,7 @@
     "contactInfo": {
       "email": {
         "label": "Email",
-        "value": "info@PakSoft.com"
+        "value": "paksoft3@gmail.com"
       },
       "phone": {
         "label": "Phone",
@@ -3481,7 +3571,108 @@
       "medium": "Medium",
       "discord": "Discord"
     },
-    "developedBy": "Developed by"
+    "developedBy": "Developed by",
+    "cta": {
+      "readyToBuild": "Ready to build?",
+      "tagline": "Turn your idea into a digital product",
+      "taglineHighlight": "digital product",
+      "startProject": "Start a Project",
+      "viewServices": "View Services"
+    },
+    "brand": {
+      "description": "Full-service digital agency delivering Web Development, Mobile Apps, AI Solutions, and Digital Marketing from Turkey — trusted by teams in 30+ countries."
+    },
+    "newsletter": {
+      "label": "Newsletter",
+      "title": "Stay ahead of the curve",
+      "description": "Weekly insights on AI, web development, and digital growth strategies — straight to your inbox.",
+      "placeholder": "your@email.com",
+      "submit": "Subscribe",
+      "disclaimer": "No spam · Unsubscribe anytime · GDPR compliant"
+    },
+    "servicesSection": {
+      "heading": "All Services",
+      "viewAll": "View all →",
+      "cols": {
+        "webDev": "Web Development",
+        "mobile": "Mobile & Apps",
+        "ai": "AI & Machine Learning",
+        "marketing": "Digital Marketing",
+        "design": "Design & Creative",
+        "devops": "DevOps & Infrastructure"
+      }
+    },
+    "nav": {
+      "home": "Home",
+      "about": "About Us",
+      "services": "Services",
+      "projects": "Projects",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "legal": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy",
+      "sitemap": "Sitemap"
+    },
+    "copyright": "© {year} PakSoft Technology. All rights reserved.",
+    "backToTop": "Back to top",
+    "serviceLinks": {
+      "frontendDevelopment": "Frontend Development",
+      "backendDevelopment": "Backend Development",
+      "fullStackDevelopment": "Full-Stack Development",
+      "eCommerceSolutions": "E-Commerce Solutions",
+      "saasDevelopment": "SaaS Development",
+      "apiDevelopment": "API Development",
+      "wordPressDevelopment": "WordPress Development",
+      "progressiveWebApps": "Progressive Web Apps",
+      "web3Blockchain": "Web3 & Blockchain",
+      "enterpriseSoftware": "Enterprise Software",
+      "iosDevelopment": "iOS Development",
+      "androidDevelopment": "Android Development",
+      "flutterDevelopment": "Flutter Development",
+      "reactNativeApps": "React Native Apps",
+      "crossPlatformApps": "Cross-Platform Apps",
+      "mvpDevelopment": "MVP Development",
+      "noCodeLowCode": "No-Code / Low-Code",
+      "aiConsultingStrategy": "AI Consulting & Strategy",
+      "machineLearning": "Machine Learning",
+      "chatbotDevelopment": "Chatbot Development",
+      "llmFineTuning": "LLM Fine-Tuning",
+      "promptEngineering": "Prompt Engineering",
+      "ragSolutions": "RAG Solutions",
+      "aiAgents": "AI Agents",
+      "computerVision": "Computer Vision",
+      "pythonAutomation": "Python Automation",
+      "mlopsDeployment": "MLOps Deployment",
+      "seoServices": "SEO Services",
+      "googleAds": "Google Ads",
+      "metaAds": "Meta Ads",
+      "socialMediaMarketing": "Social Media Marketing",
+      "tikTokMarketing": "TikTok Marketing",
+      "linkedInMarketing": "LinkedIn Marketing",
+      "whatsAppMarketing": "WhatsApp Marketing",
+      "emailMarketing": "Email Marketing",
+      "contentMarketing": "Content Marketing",
+      "marketingAutomation": "Marketing Automation",
+      "uiUxDesign": "UI/UX Design",
+      "webDesign": "Web Design",
+      "graphicDesign": "Graphic Design",
+      "logoBrandIdentity": "Logo & Brand Identity",
+      "brandStrategy": "Brand Strategy",
+      "motionGraphics": "Motion Graphics",
+      "3dArVr": "3D / AR / VR",
+      "croAbTesting": "CRO & A/B Testing",
+      "devOpsCiCd": "DevOps & CI/CD",
+      "cloudMigration": "Cloud Migration",
+      "dataAnalyticsBi": "Data Analytics & BI",
+      "cybersecurity": "Cybersecurity",
+      "databaseServices": "Database Services",
+      "performanceOptimization": "Performance Optimization",
+      "managedServices": "Managed Services",
+      "techConsulting": "Tech Consulting"
+    }
   },
   "connect": {
     "title": "Connect with PakSoft",
@@ -3618,6 +3809,49 @@
         "answer": "We offer flexible pricing models including fixed-price projects, hourly rates, and retainer agreements. Pricing depends on project scope, complexity, and timeline. We provide detailed quotes after understanding your specific requirements."
       }
     ]
+  },
+  "webDevPage": {
+    "hero": {
+      "eyebrow": "Web Development Services",
+      "headline": "We Build Websites That\nWork As Hard As You Do",
+      "sub": "From blazing-fast Next.js applications to scalable SaaS platforms — we engineer digital experiences that convert visitors into customers and stand up under real-world load.",
+      "cta1": "Start Your Project",
+      "cta2": "See Our Work",
+      "stat1": "Projects Launched",
+      "stat2": "Lighthouse Score",
+      "stat3": "Monthly Users Served"
+    },
+    "subnav": {
+      "overview": "Overview",
+      "features": "Features",
+      "tech": "Technologies",
+      "process": "Process",
+      "pricing": "Pricing",
+      "blog": "Blog",
+      "faq": "FAQ",
+      "cta": "Get a Quote"
+    },
+    "blog": {
+      "eyebrow": "From the Blog",
+      "headline": "Web Development Insights",
+      "viewAll": "View All Articles",
+      "post1": {
+        "title": "Core Web Vitals in 2025: What Every Developer Must Know",
+        "excerpt": "Google's ranking signals keep evolving. Here's how to keep your Lighthouse scores above 95 and your users happy with sub-2-second load times."
+      },
+      "post2": {
+        "title": "Next.js 15 vs Remix: Which Framework Should You Choose?",
+        "excerpt": "A practical side-by-side comparison of the two most-discussed React meta-frameworks of 2025 — including real bundle sizes and DX scores."
+      },
+      "post3": {
+        "title": "How We Cut Load Time by 60% for a Turkish E-Commerce Brand",
+        "excerpt": "A behind-the-scenes look at the image optimisation, code splitting, and CDN strategy that transformed a slow WooCommerce site into a sub-2s experience."
+      },
+      "post4": {
+        "title": "Building Multilingual Sites with Next.js and Full RTL Support",
+        "excerpt": "Lessons from building five-locale applications with Arabic and Urdu RTL layouts — covering font loading, BiDi CSS, and testing strategies."
+      }
+    }
   },
   "webDevelopment": {
     "hero": {
@@ -4718,7 +4952,8 @@
         "description": "24/7 technical support, regular updates, and feature enhancements as your business grows.",
         "duration": "Ongoing"
       }
-    ]
+    ],
+    "phase": "Phase"
   },
   "projectDetail": {
     "eyebrow": "Our Approach",
@@ -4772,6 +5007,58 @@
       "readyDescription": "Let's discuss your requirements and explore how we can help bring your vision to life.",
       "getStarted": "Get Started",
       "viewPortfolio": "View Portfolio"
+    },
+    "stats": [
+      {
+        "value": "150+",
+        "label": "Projects Completed"
+      },
+      {
+        "value": "50+",
+        "label": "Satisfied Clients"
+      },
+      {
+        "value": "98%",
+        "label": "Success Rate"
+      },
+      {
+        "value": "24/7",
+        "label": "Support Available"
+      }
+    ],
+    "processSteps": [
+      {
+        "step": "01",
+        "title": "Discovery & Planning",
+        "desc": "Understanding requirements and defining project scope"
+      },
+      {
+        "step": "02",
+        "title": "Design & Prototyping",
+        "desc": "Creating user-centered designs and interactive prototypes"
+      },
+      {
+        "step": "03",
+        "title": "Development & Testing",
+        "desc": "Building robust solutions with comprehensive testing"
+      },
+      {
+        "step": "04",
+        "title": "Deployment & Support",
+        "desc": "Launching your project with ongoing maintenance"
+      }
+    ],
+    "workflowVisual": {
+      "clientBrief": "Client Brief",
+      "yourRequirements": "Your requirements",
+      "weBuildIt": "We build it",
+      "yourProduct": "Your product",
+      "phases": {
+        "discovery": "Discovery",
+        "design": "Design",
+        "develop": "Develop",
+        "deploy": "Deploy"
+      }
     }
   },
   "ctaBanner": {
@@ -4784,7 +5071,7 @@
     "emailUs": {
       "title": "Email Us",
       "description": "Get a detailed response",
-      "value": "info@PakSoft.com"
+      "value": "paksoft3@gmail.com"
     },
     "callUs": {
       "title": "Call Us",
@@ -5988,27 +6275,27 @@
         "subtitle": "A proven methodology that ensures quality and timely delivery.",
         "steps": [
           {
-            "number": "01",
+            "step": 1,
             "title": "Discovery",
             "description": "Understanding your goals, audience, and technical requirements."
           },
           {
-            "number": "02",
+            "step": 2,
             "title": "Design",
             "description": "Creating wireframes and prototypes for user-centered experiences."
           },
           {
-            "number": "03",
+            "step": 3,
             "title": "Development",
             "description": "Building with clean code, modern frameworks, and best practices."
           },
           {
-            "number": "04",
+            "step": 4,
             "title": "Testing",
             "description": "Rigorous QA to ensure performance, security, and compatibility."
           },
           {
-            "number": "05",
+            "step": 5,
             "title": "Launch",
             "description": "Smooth deployment with monitoring and ongoing support."
           }
@@ -6019,7 +6306,7 @@
         "title": "Engineering Excellence",
         "titleAccent": "Meets Design",
         "subtitle": "We don't just write code – we craft digital experiences that users love.",
-        "features": [
+        "benefits": [
           {
             "title": "Modern Tech Stack",
             "description": "We use cutting-edge technologies like React, Next.js, TypeScript, and Node.js."
@@ -6083,6 +6370,62 @@
         "description": "Let's create a web solution that drives results for your business.",
         "primaryCta": "Get Free Quote",
         "secondaryCta": "Schedule a Call"
+      },
+      "technologies": {
+        "eyebrow": "Our Tech Stack",
+        "title": "Technologies We",
+        "titleAccent": "Master",
+        "subtitle": "We build with proven, cutting-edge technologies to deliver fast, secure, and scalable web applications.",
+        "items": [
+          {
+            "name": "Next.js",
+            "icon": "nextjs"
+          },
+          {
+            "name": "React",
+            "icon": "react"
+          },
+          {
+            "name": "TypeScript",
+            "icon": "typescript"
+          },
+          {
+            "name": "Tailwind CSS",
+            "icon": "tailwind"
+          },
+          {
+            "name": "Node.js",
+            "icon": "nodejs"
+          },
+          {
+            "name": "PostgreSQL",
+            "icon": "postgresql"
+          },
+          {
+            "name": "Prisma",
+            "icon": "prisma"
+          },
+          {
+            "name": "Redis",
+            "icon": "redis"
+          },
+          {
+            "name": "Docker",
+            "icon": "docker"
+          },
+          {
+            "name": "AWS",
+            "icon": "aws"
+          },
+          {
+            "name": "Vercel",
+            "icon": "vercel"
+          },
+          {
+            "name": "GitHub Actions",
+            "icon": "github"
+          }
+        ]
       }
     },
     "machineLearning": {
@@ -8557,7 +8900,8 @@
                 "label": "Performance Score",
                 "value": "94/100"
               }
-            ]
+            ],
+            "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80&fit=crop"
           },
           {
             "title": "E-Commerce Platform Rebuild for Fashion Brand",
@@ -8578,7 +8922,8 @@
                 "label": "Page Load Time",
                 "value": "1.4s"
               }
-            ]
+            ],
+            "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80&fit=crop"
           },
           {
             "title": "Patient Portal for Telehealth Platform",
@@ -8599,7 +8944,8 @@
                 "label": "No-Show Reduction",
                 "value": "65%"
               }
-            ]
+            ],
+            "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80&fit=crop"
           },
           {
             "title": "Real Estate Marketplace with Virtual Tours",
@@ -8620,7 +8966,8 @@
                 "label": "Monthly Leads",
                 "value": "1,200"
               }
-            ]
+            ],
+            "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80&fit=crop"
           }
         ],
         "aggregateStats": [
@@ -13071,5 +13418,31 @@
     "marketingDesc": "Used to deliver relevant advertisements",
     "cancel": "Cancel",
     "savePreferences": "Save Preferences"
+  },
+  "socialProof": {
+    "title": "Trusted by leading companies worldwide",
+    "stats": [
+      {
+        "value": "500+",
+        "label": "Projects Completed"
+      },
+      {
+        "value": "200+",
+        "label": "Happy Clients"
+      },
+      {
+        "value": "15+",
+        "label": "Years Experience"
+      },
+      {
+        "value": "50+",
+        "label": "Team Members"
+      }
+    ],
+    "badges": [
+      "ISO 27001 Certified",
+      "GDPR Compliant",
+      "SOC 2 Type II"
+    ]
   }
 }

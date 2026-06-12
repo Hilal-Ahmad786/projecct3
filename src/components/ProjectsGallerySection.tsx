@@ -76,11 +76,18 @@ export default function ProjectsGallerySection({ projects, locale }: ProjectsGal
     ).values()
   ) as string[];
 
+  const translateCategory = (cat: string) => {
+    const key = cat.toLowerCase().replace(/[\s_]+/g, '-');
+    const translated = t(`categories.${key}`) as string;
+    // t() returns the full key path when not found — detect miss and fall back
+    return translated && !translated.startsWith('projects.') ? translated : cat;
+  };
+
   const categories = [
-    { key: 'all', label: t('categories.all') || 'All' },
+    { key: 'all', label: (t('categories.all') as string) || 'All Projects' },
     ...uniqueCategories.map((cat) => ({
       key: cat.toLowerCase().replace(/\s+/g, '-'),
-      label: cat,
+      label: translateCategory(cat),
     })),
   ];
 
@@ -226,7 +233,7 @@ export default function ProjectsGallerySection({ projects, locale }: ProjectsGal
                     {(project.industry || project.category) && (
                       <div className="flex flex-wrap gap-2">
                         <span className="px-3 py-1 bg-emerald-50 border border-emerald-200 rounded-full text-xs text-emerald-700 font-medium">
-                          {String(project.industry || project.category)}
+                          {translateCategory(String(project.industry || project.category))}
                         </span>
                       </div>
                     )}
@@ -287,7 +294,7 @@ export default function ProjectsGallerySection({ projects, locale }: ProjectsGal
           </motion.div>
         ) : (
           <div className="text-center py-16">
-            <p className="text-gray-500">No projects found in this category.</p>
+            <p className="text-gray-500">{(t('noResults') as string) || 'No projects found in this category.'}</p>
           </div>
         )}
 

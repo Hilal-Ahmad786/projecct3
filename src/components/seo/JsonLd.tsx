@@ -25,7 +25,7 @@ export function OrganizationJsonLd({
   url = 'https://www.paksoft.com.tr',
   logo = 'https://www.paksoft.com.tr/logo.png',
   description = 'Enterprise web development, AI solutions, e-commerce, automation and digital marketing services',
-  email = 'info@paksoft.com',
+  email = 'paksoft3@gmail.com',
   telephone = '+90 552 567 71 64',
   address = {
     streetAddress: 'Bozok Technopark',
@@ -34,7 +34,9 @@ export function OrganizationJsonLd({
   },
   sameAs = [
     'https://linkedin.com/company/paksoft',
-    'https://twitter.com/paksoft',
+    'https://facebook.com/Paksoft',
+    'https://instagram.com/paksoft3',
+    'https://twitter.com/paksoft3',
     'https://github.com/paksoft',
   ],
 }: OrganizationProps) {
@@ -91,7 +93,7 @@ export function LocalBusinessJsonLd({
   url = 'https://www.paksoft.com.tr',
   image = 'https://www.paksoft.com.tr/images/office.jpg',
   description = 'Enterprise web development, AI solutions, e-commerce, automation and digital marketing services',
-  email = 'info@paksoft.com',
+  email = 'paksoft3@gmail.com',
   telephone = '+90 552 567 71 64',
   priceRange = '$$',
   address = {

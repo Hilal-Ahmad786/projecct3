@@ -55,7 +55,7 @@ export default function ContactSection() {
   };
 
   const contactMethods = [
-    { icon: EnvelopeIcon, title: t('hero.contactMethods.email.label'), value: t('hero.contactMethods.email.value'), href: 'mailto:info@paktechnology.com', description: t('info.visitOffice') },
+    { icon: EnvelopeIcon, title: t('hero.contactMethods.email.label'), value: t('hero.contactMethods.email.value'), href: 'mailto:paksoft3@gmail.com', description: t('info.visitOffice') },
     { icon: PhoneIcon, title: t('hero.contactMethods.phone.label'), value: t('hero.contactMethods.phone.value'), href: 'tel:+905525677164', description: t('info.schedule.mondayFridayTime') },
     { icon: MapPinIcon, title: t('info.ourLocation'), value: t('map.address'), href: 'https://maps.google.com/maps?q=Yozgat,Turkey', description: t('info.getDirections') },
     { icon: ClockIcon, title: t('hero.contactMethods.responseTime.label'), value: t('hero.contactMethods.responseTime.value'), href: null, description: t('info.schedule.mondayFridayTime') }

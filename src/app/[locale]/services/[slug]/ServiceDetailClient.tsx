@@ -1,8 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import LocalizedLink from '@/components/LocalizedLink';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useInView } from 'framer-motion';
 import { CheckCircleIcon } from '@heroicons/react/24/solid';
 import {
   PlusIcon, MinusIcon, ChevronRightIcon, ArrowRightIcon,
@@ -100,94 +100,7 @@ export interface ServiceDetailData {
 }
 
 // ── Color System ─────────────────────────────────────────────────────
-type AccentColor = 'gray' | 'emerald' | 'violet' | 'blue' | 'amber' | 'rose';
-
-const colorMap: Record<string, AccentColor> = {
-  gray: 'gray',
-  emerald: 'emerald',
-  green: 'emerald',
-  violet: 'violet',
-  purple: 'violet',
-  blue: 'blue',
-  amber: 'amber',
-  yellow: 'amber',
-  orange: 'amber',
-  rose: 'rose',
-  red: 'rose',
-  pink: 'rose',
-};
-
-const accentColors: Record<AccentColor, {
-  eyebrow: string;
-  titleAccent: string;
-  gradientFrom: string;
-  gradientTo: string;
-  ring: string;
-  dot: string;
-  blob1: string;
-  blob2: string;
-}> = {
-  gray: {
-    eyebrow: 'text-gray-500',
-    titleAccent: 'text-gray-900',
-    gradientFrom: 'from-gray-100',
-    gradientTo: 'to-gray-50',
-    ring: 'ring-gray-200',
-    dot: 'bg-gray-900',
-    blob1: 'bg-gray-100',
-    blob2: 'bg-gray-200',
-  },
-  emerald: {
-    eyebrow: 'text-emerald-600',
-    titleAccent: 'text-emerald-600',
-    gradientFrom: 'from-emerald-100',
-    gradientTo: 'to-emerald-50',
-    ring: 'ring-emerald-200',
-    dot: 'bg-emerald-600',
-    blob1: 'bg-emerald-100',
-    blob2: 'bg-emerald-200',
-  },
-  violet: {
-    eyebrow: 'text-violet-600',
-    titleAccent: 'text-violet-600',
-    gradientFrom: 'from-violet-100',
-    gradientTo: 'to-violet-50',
-    ring: 'ring-violet-200',
-    dot: 'bg-violet-600',
-    blob1: 'bg-violet-100',
-    blob2: 'bg-violet-200',
-  },
-  blue: {
-    eyebrow: 'text-blue-600',
-    titleAccent: 'text-blue-600',
-    gradientFrom: 'from-blue-100',
-    gradientTo: 'to-blue-50',
-    ring: 'ring-blue-200',
-    dot: 'bg-blue-600',
-    blob1: 'bg-blue-100',
-    blob2: 'bg-blue-200',
-  },
-  amber: {
-    eyebrow: 'text-amber-600',
-    titleAccent: 'text-amber-600',
-    gradientFrom: 'from-amber-100',
-    gradientTo: 'to-amber-50',
-    ring: 'ring-amber-200',
-    dot: 'bg-amber-600',
-    blob1: 'bg-amber-100',
-    blob2: 'bg-amber-200',
-  },
-  rose: {
-    eyebrow: 'text-rose-600',
-    titleAccent: 'text-rose-600',
-    gradientFrom: 'from-rose-100',
-    gradientTo: 'to-rose-50',
-    ring: 'ring-rose-200',
-    dot: 'bg-rose-600',
-    blob1: 'bg-rose-100',
-    blob2: 'bg-rose-200',
-  },
-};
+import { AccentColor, colorMap, accentColors } from '@/lib/heritage-accents';
 
 // ── Icon map (emoji fallback for sub-service cards) ──────────────────
 const iconMap: Record<string, string> = {
@@ -248,7 +161,17 @@ function ProcessIcon({ step }: { step: number }) {
 // ═══════════════════════════════════════════════════════════════════════
 // ── MAIN CLIENT COMPONENT ────────────────────────────────────────────
 // ═══════════════════════════════════════════════════════════════════════
-export default function ServiceDetailClient({ service }: { service: ServiceDetailData }) {
+type SectionKey = 'hero' | 'portfolio' | 'technologies' | 'features' | 'process' | 'whyUs' | 'faq' | 'pricing' | 'subServices' | 'cta';
+
+export default function ServiceDetailClient({
+  service,
+  hideHero = false,
+  showSections,
+}: {
+  service: ServiceDetailData;
+  hideHero?: boolean;
+  showSections?: SectionKey[];
+}) {
   const { t, locale } = useTranslations();
   const accent: AccentColor = colorMap[service.color || ''] || 'emerald';
   const colors = accentColors[accent];
@@ -267,46 +190,71 @@ export default function ServiceDetailClient({ service }: { service: ServiceDetai
   const richCapabilities = service._jsonContent?.services?.items ?? [];
   const whyUsBenefits = service._jsonContent?.whyUs?.benefits ?? [];
 
+  const show = (key: SectionKey) => !showSections || showSections.includes(key);
+
   return (
     <>
       {/* ── 1. Hero ──────────────────────────────────────────────────── */}
-      <HeroSection service={service} colors={colors} accent={accent} process={process} animation={animation} />
-
-      {/* ── 1.5. Stats Bar (hidden for now) ─────────────────────────── */}
-      {/* <StatsBar accent={accent} /> */}
+      {show('hero') && !hideHero && (
+        <div id="overview">
+          <HeroSection service={service} colors={colors} accent={accent} process={process} animation={animation} />
+        </div>
+      )}
 
       {/* ── 2. Portfolio (Recent Projects) ───────────────────────────── */}
-      {portfolio.length > 0 && <ServicePortfolio portfolio={portfolio} />}
+      {show('portfolio') && portfolio.length > 0 && <ServicePortfolio portfolio={portfolio} />}
 
       {/* ── 3. Tech Strip (scrolling) ───────────────────────────────── */}
-      {technologies.length > 0 && <TechStrip technologies={technologies} />}
+      {show('technologies') && (
+        <div id="technologies">
+          {technologies.length > 0 && <TechStrip technologies={technologies} />}
+        </div>
+      )}
 
       {/* ── 4. Rich Capabilities OR Simple Features ─────────────────── */}
-      {richCapabilities.length > 0
-        ? <CapabilitiesSection items={richCapabilities} jsonContent={service._jsonContent?.services} />
-        : features.length > 0 && <FeaturesSection features={features} featureStyle={animation?.featureStyle} />
-      }
+      {show('features') && (
+        <div id="features">
+          {richCapabilities.length > 0
+            ? <CapabilitiesSection items={richCapabilities} jsonContent={service._jsonContent?.services} />
+            : features.length > 0 && <FeaturesSection features={features} featureStyle={animation?.featureStyle} />
+          }
+        </div>
+      )}
 
       {/* ── 5. Process (numbered cards) ─────────────────────────────── */}
-      {process.length > 0 && <ProcessSection steps={process} processLayout={animation?.processLayout} />}
+      {show('process') && (
+        <div id="process">
+          {process.length > 0 && <ProcessSection steps={process} processLayout={animation?.processLayout} />}
+        </div>
+      )}
 
       {/* ── 6. Why Choose Us ────────────────────────────────────────── */}
-      <WhyUsSection
-        benefits={whyUsBenefits.length > 0 ? whyUsBenefits : DEFAULT_WHY_US_BENEFITS}
-        jsonContent={service._jsonContent?.whyUs}
-      />
+      {show('whyUs') && (
+        <WhyUsSection
+          benefits={whyUsBenefits.length > 0 ? whyUsBenefits : DEFAULT_WHY_US_BENEFITS}
+          jsonContent={service._jsonContent?.whyUs}
+        />
+      )}
 
       {/* ── 7. FAQ (Plus/Minus accordion) ───────────────────────────── */}
-      {faq.length > 0 && <FAQSection faq={faq} />}
+      {show('faq') && (
+        <div id="faq">
+          {faq.length > 0 && <FAQSection faq={faq} />}
+        </div>
+      )}
 
       {/* ── 8. Pricing ──────────────────────────────────────────────── */}
-      {pricingPackages.length > 0 && <PricingSection packages={pricingPackages} locale={locale} />}
+      {show('pricing') && (
+        <div id="pricing">
+          {pricingPackages.length > 0 && <PricingSection packages={pricingPackages} locale={locale} />}
+        </div>
+      )}
 
       {/* ── 9. Sub-Services Grid (for parent services) ────────────── */}
-      {subServices.length > 0 && <SubServicesSection subServices={subServices} />}
+      {show('subServices') && subServices.length > 0 && <SubServicesSection subServices={subServices} />}
 
       {/* ── 10. CTA with project request modal ──────────────────────── */}
-      <ServiceRequestCTA serviceType={service.slug} />
+      {show('cta') && <ServiceRequestCTA serviceType={service.slug} />}
     </>
   );
 }
@@ -865,114 +813,281 @@ function FeaturesSection({ features, featureStyle }: { features: string[]; featu
 }
 
 // ═══════════════════════════════════════════════════════════════════════
-// ── PROCESS SECTION (numbered cards) ─────────────────────────────────
+// ── PROCESS STEP ILLUSTRATIONS ───────────────────────────────────────
+// ═══════════════════════════════════════════════════════════════════════
+
+function DiscoveryIllustration({ active }: { active: boolean }) {
+  return (
+    <svg viewBox="0 0 80 56" className="w-full h-full" fill="none">
+      {/* Document */}
+      <rect x="16" y="4" width="34" height="44" rx="3" stroke="#d1d5db" strokeWidth="1.5" fill="white" />
+      <rect x="16" y="4" width="34" height="8" rx="3" fill="#f3f4f6" />
+      {/* Checkbox rows */}
+      {[0, 1, 2].map((i) => (
+        <g key={i}>
+          <rect x="22" y={18 + i * 10} width="6" height="6" rx="1" stroke="#9ca3af" strokeWidth="1" fill="white" />
+          <motion.path
+            d={`M23.5 ${21 + i * 10} l2 2 3 -3`}
+            stroke="#111827" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"
+            initial={{ pathLength: 0, opacity: 0 }}
+            animate={active ? { pathLength: 1, opacity: 1 } : { pathLength: 0, opacity: 0 }}
+            transition={{ duration: 0.3, delay: 0.4 + i * 0.25 }}
+          />
+          <motion.rect
+            x="32" y={20 + i * 10} width={i === 0 ? 12 : i === 1 ? 9 : 11} height="2" rx="1" fill="#d1d5db"
+            initial={{ scaleX: 0, originX: 0 }} style={{ transformOrigin: '32px center' }}
+            animate={active ? { scaleX: 1 } : { scaleX: 0 }}
+            transition={{ duration: 0.3, delay: 0.3 + i * 0.25 }}
+          />
+        </g>
+      ))}
+      {/* Magnifier */}
+      <motion.g
+        initial={{ opacity: 0, scale: 0.5, x: 8, y: -4 }}
+        animate={active ? { opacity: 1, scale: 1, x: 0, y: 0 } : { opacity: 0 }}
+        transition={{ duration: 0.4, delay: 0.1 }}
+        style={{ transformOrigin: '58px 22px' }}
+      >
+        <circle cx="58" cy="22" r="10" stroke="#374151" strokeWidth="1.5" fill="white" />
+        <circle cx="58" cy="22" r="5" stroke="#6b7280" strokeWidth="1" fill="#f9fafb" />
+        <line x1="65" y1="29" x2="70" y2="34" stroke="#374151" strokeWidth="2" strokeLinecap="round" />
+      </motion.g>
+    </svg>
+  );
+}
+
+function DesignIllustration({ active }: { active: boolean }) {
+  const boxes = [
+    { x: 12, y: 6, w: 56, h: 12 },   // header bar
+    { x: 12, y: 22, w: 22, h: 26 },  // sidebar
+    { x: 38, y: 22, w: 30, h: 12 },  // main top
+    { x: 38, y: 38, w: 30, h: 10 },  // main bottom
+  ];
+  return (
+    <svg viewBox="0 0 80 56" className="w-full h-full" fill="none">
+      {boxes.map((b, i) => (
+        <motion.rect
+          key={i}
+          x={b.x} y={b.y} width={b.w} height={b.h} rx="2"
+          fill={i === 0 ? '#f3f4f6' : 'white'} stroke="#d1d5db" strokeWidth="1"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={active ? { opacity: 1, scale: 1 } : { opacity: 0 }}
+          transition={{ duration: 0.35, delay: 0.2 + i * 0.15 }}
+          style={{ transformOrigin: `${b.x + b.w / 2}px ${b.y + b.h / 2}px` }}
+        />
+      ))}
+      {/* Pencil */}
+      <motion.g
+        initial={{ opacity: 0, rotate: -20 }}
+        animate={active ? { opacity: 1, rotate: 0 } : { opacity: 0 }}
+        transition={{ duration: 0.4, delay: 0.8 }}
+        style={{ transformOrigin: '66px 10px' }}
+      >
+        <rect x="60" y="4" width="4" height="14" rx="1" fill="#374151" transform="rotate(30 64 10)" />
+        <path d="M62 17 l-2 4 4-1 z" fill="#6b7280" transform="rotate(30 64 10)" />
+      </motion.g>
+      {/* Color dots */}
+      {['#60a5fa', '#34d399', '#f472b6'].map((c, i) => (
+        <motion.circle
+          key={c} cx={16 + i * 7} cy={52} r="3" fill={c}
+          initial={{ scale: 0 }} animate={active ? { scale: 1 } : { scale: 0 }}
+          transition={{ delay: 0.9 + i * 0.08, type: 'spring', bounce: 0.5 }}
+          style={{ transformOrigin: `${16 + i * 7}px 52px` }}
+        />
+      ))}
+    </svg>
+  );
+}
+
+function DevelopIllustration({ active }: { active: boolean }) {
+  const lines = [
+    { y: 14, w: 52, color: '#c792ea', indent: 0 },
+    { y: 22, w: 38, color: '#82aaff', indent: 8 },
+    { y: 30, w: 44, color: '#c3e88d', indent: 8 },
+    { y: 38, w: 28, color: '#ff9d00', indent: 16 },
+    { y: 46, w: 20, color: '#82aaff', indent: 8 },
+  ];
+  return (
+    <svg viewBox="0 0 80 56" className="w-full h-full" fill="none">
+      {/* Editor window */}
+      <rect x="4" y="4" width="72" height="48" rx="3" fill="#0f111a" />
+      <rect x="4" y="4" width="72" height="9" rx="3" fill="#181926" />
+      {['#ef4444', '#f59e0b', '#22c55e'].map((c, i) => (
+        <circle key={c} cx={11 + i * 7} cy="8.5" r="2.5" fill={c} opacity="0.7" />
+      ))}
+      {lines.map((l, i) => (
+        <motion.rect
+          key={i} x={8 + l.indent} y={l.y} rx="1"
+          height="4" fill={l.color}
+          initial={{ width: 0 }}
+          animate={active ? { width: l.w - l.indent } : { width: 0 }}
+          transition={{ duration: 0.4, delay: 0.3 + i * 0.18, ease: 'easeOut' }}
+        />
+      ))}
+      {/* Cursor blink */}
+      {active && (
+        <motion.rect x="10" y="46" width="1.5" height="6" rx="0.5" fill="white"
+          animate={{ opacity: [1, 0, 1] }} transition={{ duration: 0.8, repeat: Infinity }}
+        />
+      )}
+    </svg>
+  );
+}
+
+function DeployIllustration({ active }: { active: boolean }) {
+  return (
+    <svg viewBox="0 0 80 56" className="w-full h-full" fill="none">
+      {/* Server blocks */}
+      {[0, 1, 2].map((i) => (
+        <g key={i}>
+          <rect x="8" y={8 + i * 14} width="40" height="10" rx="2" fill="white" stroke="#e5e7eb" strokeWidth="1" />
+          <motion.circle
+            cx="16" cy={13 + i * 14} r="3"
+            fill={i === 0 ? '#22c55e' : '#d1d5db'}
+            initial={{ fill: '#d1d5db' }}
+            animate={active ? { fill: i === 0 ? '#22c55e' : i === 1 ? '#22c55e' : '#22c55e' } : {}}
+            transition={{ delay: 0.4 + i * 0.4, duration: 0.3 }}
+          />
+          <motion.rect
+            x="22" y={11 + i * 14} height="2" rx="1" fill="#e5e7eb"
+            initial={{ width: 0 }}
+            animate={active ? { width: 20 } : { width: 0 }}
+            transition={{ delay: 0.3 + i * 0.3, duration: 0.4 }}
+          />
+        </g>
+      ))}
+      {/* Live badge */}
+      <motion.g
+        initial={{ opacity: 0, scale: 0.7 }}
+        animate={active ? { opacity: 1, scale: 1 } : { opacity: 0 }}
+        transition={{ delay: 1.4, type: 'spring', bounce: 0.4 }}
+        style={{ transformOrigin: '62px 20px' }}
+      >
+        <rect x="52" y="12" width="22" height="14" rx="7" fill="#111827" />
+        <motion.circle cx="60" cy="19" r="3" fill="#22c55e"
+          animate={active ? { opacity: [1, 0.3, 1] } : {}}
+          transition={{ duration: 1.2, repeat: Infinity, delay: 1.6 }}
+        />
+        <text x="65" y="22" fontSize="5" fontWeight="700" fill="white" fontFamily="monospace">LIVE</text>
+      </motion.g>
+      {/* Arrow up trend */}
+      <motion.path
+        d="M56 48 L60 40 L65 44 L70 34"
+        stroke="#22c55e" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"
+        fill="none"
+        initial={{ pathLength: 0 }}
+        animate={active ? { pathLength: 1 } : { pathLength: 0 }}
+        transition={{ delay: 1.6, duration: 0.6 }}
+      />
+    </svg>
+  );
+}
+
+const STEP_ILLUSTRATIONS = [DiscoveryIllustration, DesignIllustration, DevelopIllustration, DeployIllustration];
+
+function ProcessStepCard({ step, index, total }: { step: ProcessStep; index: number; total: number }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref, { once: true, margin: '-60px 0px' });
+  const IllustrationComp = STEP_ILLUSTRATIONS[index % STEP_ILLUSTRATIONS.length];
+  const num = String(step.step).padStart(2, '0');
+
+  return (
+    <div ref={ref} className="relative flex-1 min-w-0">
+      {/* Connecting arrow — right side, hidden on last item */}
+      {index < total - 1 && (
+        <div className="hidden md:flex absolute top-[52px] -right-px z-10 items-center">
+          <motion.div
+            className="h-px bg-gray-300 origin-left"
+            initial={{ scaleX: 0 }}
+            animate={isInView ? { scaleX: 1 } : {}}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            style={{ width: '100%' }}
+          />
+          <svg className="w-3 h-3 text-gray-300 -ml-1 flex-shrink-0" viewBox="0 0 12 12" fill="currentColor">
+            <path d="M4 2l5 4-5 4V2z" />
+          </svg>
+        </div>
+      )}
+
+      {/* Card */}
+      <motion.div
+        initial={{ opacity: 0, y: 24 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.55, delay: index * 0.12, ease: [0.22, 1, 0.36, 1] }}
+        className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-md hover:border-gray-300 transition-all duration-300 group h-full flex flex-col"
+      >
+        {/* Illustration area */}
+        <div className="relative bg-gray-50 border-b border-gray-100 px-4 pt-4 pb-3" style={{ height: 88 }}>
+          <IllustrationComp active={isInView} />
+          {/* Step number badge */}
+          <div className="absolute top-3 right-3 w-7 h-7 rounded-full bg-white border border-gray-200 flex items-center justify-center shadow-sm">
+            <span className="text-[11px] font-bold text-gray-700">{num}</span>
+          </div>
+        </div>
+
+        {/* Text */}
+        <div className="p-5 flex flex-col gap-2 flex-1">
+          <h3 className="text-base font-semibold text-gray-900 leading-snug group-hover:text-gray-700 transition-colors">
+            {step.title}
+          </h3>
+          <p className="text-sm text-gray-500 leading-relaxed">
+            {step.description}
+          </p>
+        </div>
+      </motion.div>
+    </div>
+  );
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// ── PROCESS SECTION ──────────────────────────────────────────────────
 // ═══════════════════════════════════════════════════════════════════════
 function ProcessSection({ steps, processLayout }: { steps: ProcessStep[]; processLayout?: string }) {
   const { t } = useTranslations();
-  const layout = processLayout || 'cards';
+  const headerRef = useRef<HTMLDivElement>(null);
+  const headerInView = useInView(headerRef, { once: true });
 
   return (
-    <section className="py-12 sm:py-16 md:py-24 bg-white">
+    <section className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-8 sm:mb-12 md:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-light text-gray-900 mb-3 sm:mb-4">{t('services.detail.process.title')}</h2>
-          <p className="text-sm sm:text-base text-gray-600">{t('services.detail.process.description')}</p>
+        {/* Header */}
+        <div ref={headerRef} className="text-center mb-12 md:mb-16">
+          <motion.div
+            className="flex items-center justify-center gap-3 mb-4"
+            initial={{ opacity: 0, y: 10 }}
+            animate={headerInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.5 }}
+          >
+            <div className="w-8 h-px bg-gray-300" />
+            <span className="text-xs font-semibold uppercase tracking-widest text-gray-400">
+              {t('services.detail.process.eyebrow') || 'How We Work'}
+            </span>
+            <div className="w-8 h-px bg-gray-300" />
+          </motion.div>
+          <motion.h2
+            className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3"
+            initial={{ opacity: 0, y: 10 }}
+            animate={headerInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
+            {t('services.detail.process.title')}
+          </motion.h2>
+          <motion.p
+            className="text-sm sm:text-base text-gray-500 max-w-2xl mx-auto"
+            initial={{ opacity: 0, y: 10 }}
+            animate={headerInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            {t('services.detail.process.description')}
+          </motion.p>
         </div>
 
-        {layout === 'timeline' ? (
-          /* Timeline Layout */
-          <div className="max-w-3xl mx-auto relative">
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gray-200" />
-            {steps.map((step, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
-                className="relative pl-20 pb-12 last:pb-0"
-              >
-                <div className="absolute left-4 top-1 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold z-10">
-                  {step.step}
-                </div>
-                <h3 className="text-xl font-medium text-gray-900 mb-2">{step.title}</h3>
-                <p className="text-gray-500 leading-relaxed">{step.description}</p>
-              </motion.div>
-            ))}
-          </div>
-        ) : layout === 'steps-horizontal' ? (
-          /* Horizontal Steps */
-          <div className="flex flex-col md:flex-row gap-4 items-start">
-            {steps.map((step, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.15 }}
-                className="flex-1 text-center relative"
-              >
-                <div className="w-12 h-12 mx-auto bg-gray-900 text-white rounded-full flex items-center justify-center text-lg font-bold mb-4">
-                  {step.step}
-                </div>
-                {index < steps.length - 1 && (
-                  <div className="hidden md:block absolute top-6 left-[calc(50%+24px)] right-[calc(-50%+24px)] h-0.5 bg-gray-200" />
-                )}
-                <h3 className="text-lg font-medium text-gray-900 mb-2">{step.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{step.description}</p>
-              </motion.div>
-            ))}
-          </div>
-        ) : layout === 'zigzag' ? (
-          /* Zigzag Layout */
-          <div className="max-w-4xl mx-auto space-y-12">
-            {steps.map((step, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.15 }}
-                className={`flex items-start gap-8 ${index % 2 === 1 ? 'flex-row-reverse text-right' : ''}`}
-              >
-                <div className="w-16 h-16 bg-gray-900 text-white rounded-2xl flex items-center justify-center text-2xl font-bold flex-shrink-0">
-                  {step.step}
-                </div>
-                <div>
-                  <h3 className="text-xl font-medium text-gray-900 mb-2">{step.title}</h3>
-                  <p className="text-gray-500 leading-relaxed">{step.description}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        ) : (
-          /* Cards Layout (default) */
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {steps.map((step, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
-                className="relative p-8 rounded-2xl border border-gray-100 bg-white hover:border-gray-300 hover:shadow-lg transition-all duration-300 group"
-              >
-                <div className="absolute top-6 right-8 text-6xl font-bold text-gray-50 opacity-50 group-hover:text-gray-100 transition-colors select-none">
-                  {String(step.step).padStart(2, '0')}
-                </div>
-                <div className="relative z-10">
-                  <div className="w-12 h-12 rounded-lg bg-gray-50 flex items-center justify-center mb-6 group-hover:bg-gray-100 transition-colors">
-                    <span className="text-gray-600 group-hover:text-gray-900 transition-colors">
-                      <ProcessIcon step={step.step} />
-                    </span>
-                  </div>
-                  <h3 className="text-xl font-medium text-gray-900 mb-3">{step.title}</h3>
-                  <p className="text-gray-500 leading-relaxed">{step.description}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        )}
+        {/* Steps — responsive flex/grid */}
+        <div className="flex flex-col md:flex-row gap-4 md:gap-3 lg:gap-5 items-stretch">
+          {steps.map((step, i) => (
+            <ProcessStepCard key={i} step={step} index={i} total={steps.length} />
+          ))}
+        </div>
       </div>
     </section>
   );

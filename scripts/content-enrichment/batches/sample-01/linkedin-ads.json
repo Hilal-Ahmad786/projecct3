@@ -1,0 +1,58 @@
+{
+  "slug": "linkedin-ads",
+  "en": {
+    "name": "LinkedIn Ads",
+    "shortDescription": "Reach decision-makers where they already think about work. We build LinkedIn campaigns that turn precise B2B targeting into qualified pipeline — not just impressions and vanity clicks.",
+    "fullDescription": "LinkedIn is the only platform where you can target a VP of Engineering at a 200-person fintech by job title, seniority, and company — but that precision comes at premium CPCs, and wasted spend hurts twice as much. We run LinkedIn Ads with B2B discipline: tight audience definitions matched to your ICP, offers that respect where the buyer is in their journey, creative built for a professional feed, and conversion tracking wired through to your CRM so we optimize for pipeline and revenue, not click-through rate. From Lead Gen Forms and document ads to retargeting and Account-Based Marketing plays for named target accounts, every campaign is structured to be measured — and killed or scaled based on what your sales team actually receives.",
+    "features": [
+      "ICP Definition & Audience Architecture",
+      "Account-Based Marketing (ABM) Campaigns",
+      "Lead Gen Forms & Landing Page Funnels",
+      "Sponsored Content, Document & Video Ads",
+      "Retargeting & Lookalike Audiences",
+      "CRM Integration & Offline Conversion Tracking",
+      "Creative Production & Ad Copywriting",
+      "Budget Pacing, Bidding & A/B Testing"
+    ],
+    "benefits": [
+      "Pipeline from decision-makers, not junior clicks",
+      "Lower cost-per-qualified-lead through tight ICP targeting",
+      "Sales and marketing aligned on one lead definition",
+      "Full-funnel visibility from impression to closed deal",
+      "Creative that earns attention in a professional feed",
+      "Spend that scales only when the numbers prove it"
+    ],
+    "metaTitle": "LinkedIn Ads Agency — B2B Lead Generation | PakSoft",
+    "metaDescription": "LinkedIn advertising for B2B: ABM campaigns, Lead Gen Forms, CRM-tracked conversions, and creative that reaches real decision-makers. Build qualified pipeline — get a free audit.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "ICP & Offer Strategy", "description": "We define exactly who we're targeting — titles, seniority, industries, company sizes, named accounts — and match each audience to an offer appropriate for its stage: insight content for cold audiences, demos and trials for warm ones. B2B campaigns fail on mismatched offers more than on targeting." },
+        { "step": 2, "title": "Tracking & CRM Foundation", "description": "Before spending a lira, we install the Insight Tag, configure conversions API, and connect LinkedIn to your CRM so leads carry campaign data into the pipeline. This lets us optimize toward qualified opportunities instead of raw form fills." },
+        { "step": 3, "title": "Campaign & Audience Build", "description": "Campaigns are structured by funnel stage and audience, with exclusions to prevent overlap and frequency caps to protect your brand. For ABM, we sync named account lists and build per-segment messaging." },
+        { "step": 4, "title": "Creative Production", "description": "We produce the ad creative — copy, static visuals, documents, and short video — designed for how people actually scroll LinkedIn. Each concept ships in multiple variants so testing starts from day one." },
+        { "step": 5, "title": "Launch & Optimization", "description": "After launch we manage bids, budgets, and rotation weekly, cutting what underperforms and feeding winners. Optimization decisions use CRM-stage data — an ad with cheap leads that never become opportunities gets killed regardless of its CTR." },
+        { "step": 6, "title": "Reporting & Scaling", "description": "Monthly reports show spend against pipeline and revenue contribution, by audience and creative — in language your leadership reads. Once cost-per-opportunity is stable and acceptable, we scale budgets deliberately and expand to new segments." }
+      ],
+      "faq": [
+        { "question": "Is LinkedIn worth the high CPCs compared to Google or Meta?", "answer": "For B2B with deal sizes above roughly $5k, usually yes — you're paying more per click for dramatically better audience quality, reaching specific titles at specific companies. The math is simple: a $15 CPC that produces real pipeline beats a $2 CPC that produces students and job seekers. We model break-even cost-per-opportunity with you before launching." },
+        { "question": "What budget do we need to start?", "answer": "We recommend at least $2,500–4,000/month in ad spend for a meaningful test — enough for LinkedIn's delivery system to exit the learning phase and for statistically useful lead volume. Below that, budget concentrates on one tight audience and a single offer rather than spreading thin." },
+        { "question": "Lead Gen Forms or landing pages — which is better?", "answer": "Lead Gen Forms typically convert 2–4x better because they pre-fill profile data, making them ideal for top-of-funnel offers like guides and webinars. Landing pages produce higher-intent leads for demo and pricing requests. We usually run both, matched to funnel stage, and let your CRM data decide the mix." },
+        { "question": "How quickly will we see qualified leads?", "answer": "First leads typically arrive within 1–2 weeks of launch; judging lead quality through your sales process takes 4–8 weeks depending on your sales cycle. We set this expectation up front: LinkedIn is a pipeline-building channel, not a same-week-revenue channel." },
+        { "question": "Can you target specific companies on our wishlist (ABM)?", "answer": "Yes — named account lists are LinkedIn's standout capability. We upload your target accounts, layer title and seniority filters on top, and run per-segment messaging. Combined with retargeting, this keeps your solution in front of a buying committee throughout long deal cycles." },
+        { "question": "Do you create the ad creative or just manage the campaigns?", "answer": "Both. Creative is included: copywriting, static design, document ads, and short video edits — produced for a professional feed where useful insight outperforms hard selling. Client-supplied creative is welcome too; we'll tell you honestly what we expect to work and test it against ours." },
+        { "question": "How do you measure success beyond clicks and form fills?", "answer": "We track leads into your CRM and report on what matters commercially: marketing-qualified leads, opportunities created, pipeline value, and closed revenue per campaign. Offline conversion uploads feed deal outcomes back into LinkedIn, which improves its optimization too." },
+        { "question": "Our previous LinkedIn campaigns produced junk leads. What would you do differently?", "answer": "Junk leads usually trace to three causes: audiences too broad, offers misaligned with funnel stage, and optimizing for cheap form fills instead of CRM outcomes. We fix the audience definition first, match offers to intent, add qualifying friction where needed, and judge every ad by what your sales team reports back." }
+      ],
+      "technologies": [
+        { "icon": "linkedin", "name": "LinkedIn Campaign Manager" },
+        { "icon": "linkedin", "name": "LinkedIn Insight Tag" },
+        { "icon": "hubspot", "name": "HubSpot" },
+        { "icon": "salesforce", "name": "Salesforce" },
+        { "icon": "ga4", "name": "Google Analytics 4" },
+        { "icon": "zapier", "name": "Zapier" },
+        { "icon": "figma", "name": "Figma" },
+        { "icon": "looker", "name": "Looker Studio" }
+      ]
+    }
+  }
+}

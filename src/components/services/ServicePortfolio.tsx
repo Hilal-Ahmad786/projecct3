@@ -12,45 +12,58 @@ interface PortfolioItem {
     url?: string;
 }
 
+const FALLBACK_GRADIENTS = [
+    'from-blue-500 to-blue-700',
+    'from-violet-500 to-violet-700',
+    'from-emerald-500 to-teal-700',
+    'from-orange-500 to-rose-600',
+    'from-cyan-500 to-blue-600',
+    'from-indigo-500 to-purple-700',
+];
+
 export default function ServicePortfolio({ portfolio }: { portfolio: PortfolioItem[] }) {
     const { t } = useTranslations();
 
     if (!portfolio || portfolio.length === 0) return null
 
     return (
-        <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+        <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
             <div className="container mx-auto px-4">
-                <div className="text-center mb-16">
-                    <motion.span
+                <div className="text-center mb-14">
+                    <motion.div
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="inline-block px-4 py-1.5 bg-emerald-100 text-emerald-700 rounded-full text-sm font-medium mb-4"
+                        className="flex items-center justify-center gap-3 mb-4"
                     >
-                        {t('services.detail.portfolio.eyebrow') || 'Our Work'}
-                    </motion.span>
+                        <div className="w-8 h-px bg-gray-300" />
+                        <span className="text-xs font-semibold uppercase tracking-widest text-gray-400">
+                            {t('services.detail.portfolio.eyebrow') || 'Case Studies'}
+                        </span>
+                        <div className="w-8 h-px bg-gray-300" />
+                    </motion.div>
                     <motion.h2
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
-                        className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
+                        className="text-3xl md:text-4xl font-light text-gray-900 mb-3"
                     >
-                        {t('services.detail.portfolio.title')}
+                        {t('services.detail.portfolio.title') || 'Recent Projects'}
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ delay: 0.2 }}
-                        className="text-gray-600 max-w-2xl mx-auto"
+                        transition={{ delay: 0.15 }}
+                        className="text-gray-500 max-w-xl mx-auto"
                     >
-                        {t('services.detail.portfolio.description')}
+                        {t('services.detail.portfolio.description') || "See what we've built for our clients."}
                     </motion.p>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {portfolio.slice(0, 6).map((project, index) => (
+                <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                    {portfolio.slice(0, 4).map((project, index) => (
                         <PortfolioCard key={index} project={project} index={index} />
                     ))}
                 </div>
@@ -62,6 +75,7 @@ export default function ServicePortfolio({ portfolio }: { portfolio: PortfolioIt
 function PortfolioCard({ project, index }: { project: PortfolioItem; index: number }) {
     const { t } = useTranslations();
     const [imageError, setImageError] = useState(false);
+    const gradient = FALLBACK_GRADIENTS[index % FALLBACK_GRADIENTS.length];
 
     const handleClick = () => {
         if (project.url) {
@@ -71,41 +85,55 @@ function PortfolioCard({ project, index }: { project: PortfolioItem; index: numb
 
     return (
         <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 28 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.1, duration: 0.5 }}
+            transition={{ delay: index * 0.08, duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
             viewport={{ once: true }}
             onClick={handleClick}
-            className="group cursor-pointer"
+            className={`group ${project.url ? 'cursor-pointer' : 'cursor-default'}`}
         >
-            <div className="relative aspect-[16/10] overflow-hidden rounded-xl mb-4 bg-gray-100 shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+            {/* Image / gradient thumbnail */}
+            <div className="relative aspect-[16/9] overflow-hidden rounded-2xl mb-4 shadow-md group-hover:shadow-xl transition-shadow duration-400">
                 {!imageError && project.image ? (
                     <Image
                         src={project.image}
                         alt={project.title}
                         fill
-                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        className="object-cover transition-transform duration-600 group-hover:scale-105"
                         onError={() => setImageError(true)}
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        sizes="(max-width: 768px) 100vw, 50vw"
                     />
                 ) : (
-                    <div className="absolute inset-0 bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center">
-                        <span className="text-white text-4xl font-bold opacity-30">
+                    <div className={`absolute inset-0 bg-gradient-to-br ${gradient} flex items-center justify-center`}>
+                        <span className="text-white text-6xl font-bold opacity-20 select-none">
                             {project.title.charAt(0)}
                         </span>
                     </div>
                 )}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                    <span className="text-white font-medium flex items-center gap-2">
+
+                {/* Always-visible category chip */}
+                <div className="absolute top-4 left-4 z-10">
+                    <span className="inline-block px-3 py-1 bg-white/90 backdrop-blur-sm text-gray-700 text-xs font-semibold rounded-full shadow-sm">
+                        {project.category}
+                    </span>
+                </div>
+
+                {/* Hover overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                    <span className="text-white text-sm font-medium flex items-center gap-2">
                         {t('services.detail.portfolio.viewProject') || 'View Project'}
-                        <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                         </svg>
                     </span>
                 </div>
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors">{project.title}</h3>
-            <p className="text-emerald-600 text-sm font-medium">{project.category}</p>
+
+            {/* Text below card */}
+            <h3 className="text-lg font-semibold text-gray-900 mb-0.5 leading-snug group-hover:text-blue-600 transition-colors duration-200">
+                {project.title}
+            </h3>
+            <p className="text-sm text-gray-400 font-medium">{project.category}</p>
         </motion.div>
     )
 }

@@ -39,7 +39,7 @@
     "getQuote": "احصل على عرض سعر"
   },
   "metadata": {
-    "defaultTitle": "PakTechnology – حلول رقمية حديثة",
+    "defaultTitle": "PakSoft – حلول رقمية حديثة",
     "defaultDescription": "تطوير ويب للمؤسسات، التجارة الإلكترونية، روبوتات الأتمتة وحلول التسويق الرقمي",
     "keywords": "تطوير الويب، الحلول الرقمية، الأتمتة، الذكاء الاصطناعي، تطبيقات الجوال، التجارة الإلكترونية"
   },
@@ -56,11 +56,12 @@
     "serviceNav": {
       "overview": "نظرة عامة",
       "features": "المميزات",
+      "technologies": "التقنيات",
       "process": "العملية",
-      "techStack": "التقنيات",
-      "portfolio": "الأعمال",
+      "pricing": "الأسعار",
+      "blog": "المدونة",
       "faq": "الأسئلة الشائعة",
-      "security": "الأمان"
+      "getQuote": "احصل على عرض"
     }
   },
   "hero": {
@@ -191,7 +192,19 @@
       "readyToStart": "هل أنت مستعد للبدء؟",
       "readyDescription": "دعنا نناقش مشروعك ونستكشف كيف يمكننا مساعدتك في تحقيق أهدافك.",
       "startProject": "ابدأ مشروعاً",
-      "viewWork": "شاهد أعمالنا"
+      "viewWork": "شاهد أعمالنا",
+      "categoryDescs": {
+        "web": "تطبيقات ويب وموبايل قابلة للتوسع تعزز كفاءة المؤسسات.",
+        "ai": "حلول ذكاء اصطناعي وأتمتة بيانات من الجيل التالي.",
+        "marketing": "تسويق رقمي مبني على البيانات، SEO، واستراتيجيات النمو العالمي.",
+        "design": "تصميم UI/UX احترافي وهوية بصرية وتجارب رقمية فريدة.",
+        "infrastructure": "بنية سحابية متينة وDevOps وأمن سيبراني للمؤسسات.",
+        "consulting": "استشارات تقنية استراتيجية للتحول الرقمي."
+      },
+      "majorServices": "{count} خدمة رئيسية",
+      "backToSelection": "العودة إلى الاختيار",
+      "specialties": "{count} تخصص",
+      "exploreDetails": "استعراض التفاصيل"
     },
     "list": {
       "pythonAutomation": {
@@ -2825,16 +2838,33 @@
       "categories": {
         "all": "كل المشاريع",
         "web": "تطوير الويب",
+        "web-development": "تطوير الويب",
         "mobile": "تطبيقات الجوال",
+        "mobile-apps": "تطبيقات الجوال",
         "ecommerce": "التجارة الإلكترونية",
+        "e-commerce": "التجارة الإلكترونية",
         "ai": "حلول الذكاء الاصطناعي",
-        "automation": "الأتمتة"
+        "ai-solutions": "حلول الذكاء الاصطناعي",
+        "automation": "الأتمتة",
+        "saas": "SaaS",
+        "healthtech": "التقنية الصحية",
+        "health-tech": "التقنية الصحية",
+        "marketplace": "السوق الإلكتروني",
+        "fintech": "التقنية المالية",
+        "fin-tech": "التقنية المالية",
+        "enterprise": "المؤسسات",
+        "startup": "الشركات الناشئة",
+        "infrastructure": "البنية التحتية",
+        "consulting": "الاستشارات",
+        "design": "التصميم",
+        "marketing": "التسويق"
       },
       "viewAllProjects": "عرض كل المشاريع",
       "keyResult": "النتيجة الأبرز",
       "technology": "التقنية",
       "viewProject": "عرض المشروع",
-      "startProject": "ابدأ مشروعك"
+      "startProject": "ابدأ مشروعك",
+      "noResults": "لا توجد مشاريع في هذه الفئة."
     },
     "caseStudy": {
       "eyebrow": "دراسة حالة",
@@ -2892,6 +2922,15 @@
         "yearsExperience": "سنوات خبرة",
         "uptime": "الجاهزية",
         "support": "الدعم"
+      },
+      "techCategories": {
+        "Frontend": "واجهة أمامية",
+        "Backend": "واجهة خلفية",
+        "Database": "قاعدة البيانات",
+        "Cloud": "سحابة",
+        "DevOps": "DevOps",
+        "AI/ML": "ذكاء اصطناعي",
+        "E-Commerce": "تجارة إلكترونية"
       }
     },
     "successMetrics": {
@@ -2935,6 +2974,23 @@
           "label": "إيرادات متولدة",
           "description": "دخل إضافي لعملائنا"
         }
+      ],
+      "testimonials": [
+        {
+          "label": "رضا العملاء",
+          "quote": "تجاوزوا توقعاتنا في كل جانب",
+          "client": "الرئيس التنفيذي لشركة ناشئة تقنية"
+        },
+        {
+          "label": "وقت الاستجابة",
+          "quote": "دعم فائق السرعة عند الحاجة",
+          "client": "مدير التجارة الإلكترونية"
+        },
+        {
+          "label": "التسليم في الوقت المحدد",
+          "quote": "دائمًا يفي بالوعود والمواعيد النهائية",
+          "client": "مدير المشروع"
+        }
       ]
     },
     "detail": {
@@ -2951,6 +3007,34 @@
         "description": "دعنا نناقش كيف يمكننا مساعدتك في تحقيق نتائج مماثلة لعملك.",
         "button": "احصل على استشارة مجانية"
       }
+    },
+    "horizontal": {
+      "eyebrow": "أعمالنا",
+      "title": "المشاريع المميزة",
+      "hint": "اسحب للاستكشاف",
+      "viewProject": "عرض المشروع",
+      "demoProjects": [
+        {
+          "name": "منصة SaaS لسلسلة التوريد",
+          "description": "منصة تتبع الأسطول وتحسين المسارات في الوقت الفعلي تعالج أكثر من 10,000 شحنة يومية مع لوحات معلومات حية."
+        },
+        {
+          "name": "منصة أزياء للتجارة الإلكترونية",
+          "description": "واجهة Shopify بدون رأس مع توصيات مدعومة بالذكاء الاصطناعي، رفعت معدل التحويل بنسبة 38%."
+        },
+        {
+          "name": "بوابة المرضى للرعاية الصحية عن بُعد",
+          "description": "بوابة مرضى متوافقة مع HIPAA تتضمن جدولة المواعيد، الاستشارات المرئية، وتكامل السجلات الصحية."
+        },
+        {
+          "name": "سوق العقارات الإلكتروني",
+          "description": "منصة اكتشاف العقارات مع جولات افتراضية وتقييم بالذكاء الاصطناعي وحاسبة الرهن العقاري."
+        },
+        {
+          "name": "لوحة تحكم FinTech",
+          "description": "تطبيق مصرفي متعدد المنصات مع مصادقة بيومترية وتحويلات فورية وتحليلات في الوقت الفعلي."
+        }
+      ]
     }
   },
   "blog": {
@@ -3020,7 +3104,7 @@
       "contactMethods": {
         "email": {
           "label": "البريد الإلكتروني",
-          "value": "info@paktechnology.com"
+          "value": "paksoft3@gmail.com"
         },
         "phone": {
           "label": "الهاتف",
@@ -3111,8 +3195,8 @@
     },
     "contactInfo": {
       "email": {
-        "label": "البريد",
-        "value": "info@paktechnology.com"
+        "label": "البريد الإلكتروني",
+        "value": "paksoft3@gmail.com"
       },
       "phone": {
         "label": "الهاتف",
@@ -3135,7 +3219,108 @@
       "medium": "ميديوم",
       "discord": "ديسكورد"
     },
-    "developedBy": "تم التطوير بواسطة"
+    "developedBy": "طُوِّر بواسطة",
+    "cta": {
+      "readyToBuild": "هل أنت مستعد للبناء؟",
+      "tagline": "حوّل فكرتك إلى منتج رقمي",
+      "taglineHighlight": "منتج رقمي",
+      "startProject": "ابدأ مشروعًا",
+      "viewServices": "عرض الخدمات"
+    },
+    "brand": {
+      "description": "وكالة رقمية متكاملة تقدم تطوير الويب وتطبيقات الهاتف وحلول الذكاء الاصطناعي والتسويق الرقمي من تركيا — موثوقة لدى فرق في أكثر من 30 دولة."
+    },
+    "newsletter": {
+      "label": "النشرة البريدية",
+      "title": "ابقَ في طليعة المشهد",
+      "description": "رؤى أسبوعية حول الذكاء الاصطناعي وتطوير الويب واستراتيجيات النمو الرقمي — مباشرةً إلى بريدك.",
+      "placeholder": "بريدك@الإلكتروني.com",
+      "submit": "اشتراك",
+      "disclaimer": "لا رسائل مزعجة · إلغاء الاشتراك في أي وقت · متوافق مع GDPR"
+    },
+    "servicesSection": {
+      "heading": "جميع الخدمات",
+      "viewAll": "عرض الكل →",
+      "cols": {
+        "webDev": "تطوير الويب",
+        "mobile": "الجوّال والتطبيقات",
+        "ai": "الذكاء الاصطناعي والتعلم الآلي",
+        "marketing": "التسويق الرقمي",
+        "design": "التصميم والإبداع",
+        "devops": "DevOps والبنية التحتية"
+      }
+    },
+    "nav": {
+      "home": "الرئيسية",
+      "about": "من نحن",
+      "services": "الخدمات",
+      "projects": "المشاريع",
+      "blog": "المدونة",
+      "contact": "اتصل بنا"
+    },
+    "legal": {
+      "privacy": "سياسة الخصوصية",
+      "terms": "شروط الخدمة",
+      "cookies": "سياسة ملفات الارتباط",
+      "sitemap": "خريطة الموقع"
+    },
+    "copyright": "© {year} PakSoft Technology. جميع الحقوق محفوظة.",
+    "backToTop": "العودة للأعلى",
+    "serviceLinks": {
+      "frontendDevelopment": "تطوير الواجهة الأمامية",
+      "backendDevelopment": "تطوير الواجهة الخلفية",
+      "fullStackDevelopment": "تطوير Full-Stack",
+      "eCommerceSolutions": "حلول التجارة الإلكترونية",
+      "saasDevelopment": "تطوير SaaS",
+      "apiDevelopment": "تطوير API",
+      "wordPressDevelopment": "تطوير WordPress",
+      "progressiveWebApps": "تطبيقات الويب التقدمية",
+      "web3Blockchain": "Web3 والبلوكتشين",
+      "enterpriseSoftware": "برمجيات المؤسسات",
+      "iosDevelopment": "تطوير iOS",
+      "androidDevelopment": "تطوير Android",
+      "flutterDevelopment": "تطوير Flutter",
+      "reactNativeApps": "تطبيقات React Native",
+      "crossPlatformApps": "تطبيقات متعددة المنصات",
+      "mvpDevelopment": "تطوير MVP",
+      "noCodeLowCode": "No-Code / Low-Code",
+      "aiConsultingStrategy": "استشارات الذكاء الاصطناعي والاستراتيجية",
+      "machineLearning": "التعلم الآلي",
+      "chatbotDevelopment": "تطوير روبوتات الدردشة",
+      "llmFineTuning": "ضبط نماذج اللغة الكبيرة",
+      "promptEngineering": "هندسة التوجيهات",
+      "ragSolutions": "حلول RAG",
+      "aiAgents": "وكلاء الذكاء الاصطناعي",
+      "computerVision": "رؤية الحاسوب",
+      "pythonAutomation": "أتمتة Python",
+      "mlopsDeployment": "نشر MLOps",
+      "seoServices": "خدمات تحسين محركات البحث",
+      "googleAds": "إعلانات Google",
+      "metaAds": "إعلانات Meta",
+      "socialMediaMarketing": "التسويق عبر وسائل التواصل",
+      "tikTokMarketing": "التسويق عبر TikTok",
+      "linkedInMarketing": "التسويق عبر LinkedIn",
+      "whatsAppMarketing": "التسويق عبر WhatsApp",
+      "emailMarketing": "التسويق بالبريد الإلكتروني",
+      "contentMarketing": "التسويق بالمحتوى",
+      "marketingAutomation": "أتمتة التسويق",
+      "uiUxDesign": "تصميم UI/UX",
+      "webDesign": "تصميم المواقع",
+      "graphicDesign": "التصميم الجرافيكي",
+      "logoBrandIdentity": "الشعار وهوية العلامة التجارية",
+      "brandStrategy": "استراتيجية العلامة التجارية",
+      "motionGraphics": "الرسوم المتحركة",
+      "3dArVr": "ثلاثي الأبعاد / AR / VR",
+      "croAbTesting": "تحسين التحويل واختبار A/B",
+      "devOpsCiCd": "DevOps و CI/CD",
+      "cloudMigration": "الهجرة إلى السحابة",
+      "dataAnalyticsBi": "تحليل البيانات وذكاء الأعمال",
+      "cybersecurity": "الأمن السيبراني",
+      "databaseServices": "خدمات قواعد البيانات",
+      "performanceOptimization": "تحسين الأداء",
+      "managedServices": "الخدمات المُدارة",
+      "techConsulting": "الاستشارات التقنية"
+    }
   },
   "connect": {
     "title": "تواصل مع PakSoft",
@@ -3190,7 +3375,7 @@
         "author": "Sarah Johnson",
         "role": "CEO",
         "company": "TechStart Solutions",
-        "text": "قدمت PakTechnology ما نحتاجه بالضبط. اهتمامهم بالتفاصيل ونهجهم المهني جعلا مشروعنا نجاحاً كاملاً.",
+        "text": "قدمت PakSoft ما نحتاجه بالضبط. اهتمامهم بالتفاصيل ونهجهم المهني جعلا مشروعنا نجاحاً كاملاً.",
         "rating": 5
       },
       {
@@ -3272,6 +3457,49 @@
         "answer": "لدينا نماذج مرنة: سعر ثابت، أجر بالساعة، وعقود احتفاظ. يعتمد التسعير على النطاق والتعقيد والجدول الزمني. نقدّم عروض أسعار مفصلة بعد فهم متطلباتك."
       }
     ]
+  },
+  "webDevPage": {
+    "hero": {
+      "eyebrow": "خدمات تطوير الويب",
+      "headline": "نبني مواقع تعمل بجد\nمثلك تماماً",
+      "sub": "من تطبيقات Next.js فائقة السرعة إلى منصات SaaS قابلة للتوسع — نصنع تجارب رقمية تحوّل الزوار إلى عملاء.",
+      "cta1": "ابدأ مشروعك",
+      "cta2": "اطّلع على أعمالنا",
+      "stat1": "مشروع أُطلق",
+      "stat2": "درجة Lighthouse",
+      "stat3": "مستخدم شهرياً"
+    },
+    "subnav": {
+      "overview": "نظرة عامة",
+      "features": "الميزات",
+      "tech": "التقنيات",
+      "process": "العملية",
+      "pricing": "الأسعار",
+      "blog": "المدونة",
+      "faq": "أسئلة شائعة",
+      "cta": "احصل على عرض"
+    },
+    "blog": {
+      "eyebrow": "من المدونة",
+      "headline": "رؤى تطوير الويب",
+      "viewAll": "عرض جميع المقالات",
+      "post1": {
+        "title": "Core Web Vitals في 2025: ما يجب أن يعرفه كل مطوّر",
+        "excerpt": "إشارات Google للترتيب في تطور مستمر. إليك كيفية إبقاء درجات Lighthouse فوق 95 وإسعاد مستخدميك."
+      },
+      "post2": {
+        "title": "Next.js 15 مقابل Remix: أي إطار عمل يجب أن تختار؟",
+        "excerpt": "مقارنة عملية بين أكثر إطارَي React meta نقاشاً في 2025 — بأحجام bundle حقيقية ودرجات تجربة المطوّر."
+      },
+      "post3": {
+        "title": "كيف خفّضنا وقت تحميل متجر إلكتروني تركي بنسبة 60٪",
+        "excerpt": "نظرة خلف الكواليس على استراتيجية تحسين الصور وتقسيم الكود وشبكة CDN التي حوّلت الموقع."
+      },
+      "post4": {
+        "title": "بناء مواقع متعددة اللغات مع Next.js ودعم RTL الكامل",
+        "excerpt": "دروس من بناء تطبيقات بخمس لغات مع تخطيطات RTL للعربية والأردية في Next.js App Router."
+      }
+    }
   },
   "webDevelopment": {
     "hero": {
@@ -3484,11 +3712,12 @@
         "description": "مراقبة على مدار الساعة، تحديثات منتظمة، إصلاح أخطاء وتطوير ميزات.",
         "duration": "مستمر"
       }
-    ]
+    ],
+    "phase": "المرحلة"
   },
   "projectDetail": {
     "eyebrow": "منهجنا",
-    "title": "لماذا PakTechnology",
+    "title": "لماذا تختار PakSoft",
     "subtitle": "نمزج الخبرة التقنية بالتفكير الاستراتيجي لتقديم حلول تحدث أثراً حقيقياً.",
     "modernTechnology": {
       "title": "تقنيات حديثة",
@@ -3538,6 +3767,58 @@
       "readyDescription": "دعنا نناقش متطلباتك ونستكشف كيف نحوّل رؤيتك إلى واقع.",
       "getStarted": "ابدأ الآن",
       "viewPortfolio": "عرض الأعمال"
+    },
+    "stats": [
+      {
+        "value": "150+",
+        "label": "مشروع مكتمل"
+      },
+      {
+        "value": "50+",
+        "label": "عميل راضٍ"
+      },
+      {
+        "value": "98%",
+        "label": "معدل النجاح"
+      },
+      {
+        "value": "24/7",
+        "label": "دعم متواصل"
+      }
+    ],
+    "processSteps": [
+      {
+        "step": "01",
+        "title": "الاكتشاف والتخطيط",
+        "desc": "فهم المتطلبات وتحديد نطاق المشروع"
+      },
+      {
+        "step": "02",
+        "title": "التصميم والنماذج",
+        "desc": "إنشاء تصاميم تركز على المستخدم ونماذج تفاعلية"
+      },
+      {
+        "step": "03",
+        "title": "التطوير والاختبار",
+        "desc": "بناء حلول متينة مع اختبار شامل"
+      },
+      {
+        "step": "04",
+        "title": "النشر والدعم",
+        "desc": "إطلاق مشروعك مع الصيانة المستمرة"
+      }
+    ],
+    "workflowVisual": {
+      "clientBrief": "موجز العميل",
+      "yourRequirements": "متطلباتك",
+      "weBuildIt": "نحن نبنيها",
+      "yourProduct": "منتجك",
+      "phases": {
+        "discovery": "اكتشاف",
+        "design": "تصميم",
+        "develop": "تطوير",
+        "deploy": "نشر"
+      }
     }
   },
   "ctaBanner": {
@@ -3550,7 +3831,7 @@
     "emailUs": {
       "title": "راسلنا",
       "description": "تحصل على رد مفصل",
-      "value": "info@paktechnology.com"
+      "value": "paksoft3@gmail.com"
     },
     "callUs": {
       "title": "اتصل بنا",
@@ -3619,27 +3900,27 @@
   },
   "pages": {
     "home": {
-      "title": "الرئيسية - PakTechnology",
-      "description": "حوّل عملك بحلول PakTechnology الرقمية الحديثة."
+      "title": "الرئيسية - PakSoft",
+      "description": "حوّل عملك بحلول PakSoft الرقمية الحديثة."
     },
     "about": {
-      "title": "من نحن - PakTechnology",
-      "description": "تعرّف على فريق PakTechnology ورؤيتنا ورسالتنا ورحلة تميّزنا الرقمي."
+      "title": "من نحن - PakSoft",
+      "description": "تعرّف على فريق PakSoft ورؤيتنا ورسالتنا ورحلة تميّزنا الرقمي."
     },
     "services": {
-      "title": "خدماتنا - PakTechnology",
+      "title": "خدماتنا - PakSoft",
       "description": "استكشف خدمات تطوير الويب وتطبيقات الجوال وحلول الذكاء الاصطناعي والتسويق الرقمي."
     },
     "projects": {
-      "title": "مشاريعنا - PakTechnology",
+      "title": "مشاريعنا - PakSoft",
       "description": "اطلع على مشاريعنا الرقمية الناجحة والنتائج التي حققناها لعملائنا."
     },
     "blog": {
-      "title": "المدونة - PakTechnology",
+      "title": "المدونة - PakSoft",
       "description": "أحدث المقالات والرؤى حول التكنولوجيا والتحول الرقمي وأفضل الممارسات."
     },
     "contact": {
-      "title": "اتصل بنا - PakTechnology",
+      "title": "اتصل بنا - PakSoft",
       "description": "تواصل لبدء مشروعك واحصل على استشارة مجانية."
     }
   },
@@ -4028,27 +4309,27 @@
         "subtitle": "منهجية مثبتة تضمن الجودة والتسليم في الوقت المحدد.",
         "steps": [
           {
-            "number": "01",
+            "step": 1,
             "title": "الاستكشاف",
             "description": "فهم أهدافك وجمهورك ومتطلباتك التقنية."
           },
           {
-            "number": "02",
+            "step": 2,
             "title": "التصميم",
             "description": "إنشاء نماذج أولية وتصاميم تجريبية لتجارب محورها المستخدم."
           },
           {
-            "number": "03",
+            "step": 3,
             "title": "التطوير",
             "description": "البناء بكود نظيف وأطر حديثة وأفضل الممارسات."
           },
           {
-            "number": "04",
+            "step": 4,
             "title": "الاختبار",
             "description": "ضمان جودة صارم لضمان الأداء والأمان والتوافق."
           },
           {
-            "number": "05",
+            "step": 5,
             "title": "الإطلاق",
             "description": "نشر سلس مع مراقبة ودعم مستمر."
           }
@@ -4059,7 +4340,7 @@
         "title": "التميز الهندسي",
         "titleAccent": "يلتقي بالتصميم",
         "subtitle": "لا نكتب الكود فحسب - بل نصنع تجارب رقمية يحبها المستخدمون.",
-        "features": [
+        "benefits": [
           {
             "title": "تقنيات حديثة",
             "description": "نستخدم أحدث التقنيات مثل React وNext.js وTypeScript وNode.js."
@@ -4123,6 +4404,62 @@
         "description": "دعنا ننشئ حلاً رقمياً يحقق نتائج ملموسة لأعمالك.",
         "primaryCta": "احصل على عرض سعر مجاني",
         "secondaryCta": "حجز مكالمة"
+      },
+      "technologies": {
+        "eyebrow": "مجموعة تقنياتنا",
+        "title": "التقنيات التي",
+        "titleAccent": "نتقنها",
+        "subtitle": "نبني بتقنيات حديثة وموثوقة لتقديم تطبيقات ويب سريعة وآمنة وقابلة للتوسع.",
+        "items": [
+          {
+            "name": "Next.js",
+            "icon": "nextjs"
+          },
+          {
+            "name": "React",
+            "icon": "react"
+          },
+          {
+            "name": "TypeScript",
+            "icon": "typescript"
+          },
+          {
+            "name": "Tailwind CSS",
+            "icon": "tailwind"
+          },
+          {
+            "name": "Node.js",
+            "icon": "nodejs"
+          },
+          {
+            "name": "PostgreSQL",
+            "icon": "postgresql"
+          },
+          {
+            "name": "Prisma",
+            "icon": "prisma"
+          },
+          {
+            "name": "Redis",
+            "icon": "redis"
+          },
+          {
+            "name": "Docker",
+            "icon": "docker"
+          },
+          {
+            "name": "AWS",
+            "icon": "aws"
+          },
+          {
+            "name": "Vercel",
+            "icon": "vercel"
+          },
+          {
+            "name": "GitHub Actions",
+            "icon": "github"
+          }
+        ]
       }
     },
     "machineLearning": {
@@ -5163,7 +5500,13 @@
       "staff-augmentation": "تعزيز فريق العمل",
       "developer-outsourcing": "الاستعانة بمطورين خارجيين",
       "dedicated-teams": "فرق مخصصة"
-    }
+    },
+    "subtitle": "حلول رقمية شاملة تدفع النمو وتعزز الكفاءة.",
+    "searchPlaceholder": "ابحث عن الخدمات...",
+    "ctaTitle": "هل أنت مستعد للنمو؟",
+    "ctaDesc": "احجز استشارة مجانية الآن.",
+    "ctaButton": "احجز عرضًا",
+    "exploreAll": "استعرض كامل كتالوج خدماتنا المتخصصة"
   },
   "aiServices": {
     "title": "خدمات الذكاء الاصطناعي",
@@ -8006,7 +8349,8 @@
                 "label": "درجة الأداء",
                 "value": "94/100"
               }
-            ]
+            ],
+            "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80&fit=crop"
           },
           {
             "title": "إعادة بناء منصة التجارة الإلكترونية لعلامة أزياء",
@@ -8027,7 +8371,8 @@
                 "label": "وقت تحميل الصفحة",
                 "value": "1.4s"
               }
-            ]
+            ],
+            "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80&fit=crop"
           },
           {
             "title": "بوابة المرضى لمنصة الرعاية الصحية عن بعد",
@@ -8048,7 +8393,8 @@
                 "label": "تقليل عدم الحضور",
                 "value": "65%"
               }
-            ]
+            ],
+            "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80&fit=crop"
           },
           {
             "title": "سوق عقارات مع جولات افتراضية",
@@ -8069,7 +8415,8 @@
                 "label": "العملاء المحتملون شهرياً",
                 "value": "1,200"
               }
-            ]
+            ],
+            "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80&fit=crop"
           }
         ],
         "aggregateStats": [
@@ -12745,5 +13092,31 @@
         ]
       }
     }
+  },
+  "socialProof": {
+    "title": "موثوق به من قِبَل الشركات الرائدة حول العالم",
+    "stats": [
+      {
+        "value": "+500",
+        "label": "مشروع مكتمل"
+      },
+      {
+        "value": "+200",
+        "label": "عميل سعيد"
+      },
+      {
+        "value": "+15",
+        "label": "سنة خبرة"
+      },
+      {
+        "value": "+50",
+        "label": "عضو في الفريق"
+      }
+    ],
+    "badges": [
+      "معتمد ISO 27001",
+      "متوافق مع GDPR",
+      "SOC 2 النوع الثاني"
+    ]
   }
 }

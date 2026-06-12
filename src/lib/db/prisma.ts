@@ -18,7 +18,15 @@ function createPrismaClient(): PrismaClient {
     return new PrismaClient({ adapter })
   }
 
-  const adapter = new PrismaPg({ connectionString: databaseUrl })
+  // Neon pooler caps concurrent connections — keep this process's pool small
+  // and release idle connections fast so dev server + Prisma Studio + scripts
+  // can coexist without "timed out fetching a connection" errors.
+  const adapter = new PrismaPg({
+    connectionString: databaseUrl,
+    max: 5,
+    idleTimeoutMillis: 30_000,
+    connectionTimeoutMillis: 10_000,
+  })
   return new PrismaClient({
     adapter,
     log: process.env.NODE_ENV === 'development' ? ['error', 'warn'] : ['error'],

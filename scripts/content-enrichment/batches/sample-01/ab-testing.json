@@ -1,0 +1,278 @@
+{
+  "slug": "ab-testing",
+  "en": {
+    "name": "A/B Testing",
+    "shortDescription": "Replace opinions with evidence. We design statistically rigorous A/B and multivariate tests that reveal what your visitors actually respond to — and turn those findings into measurable conversion growth.",
+    "fullDescription": "Most website changes are guesses. A/B testing replaces those guesses with evidence: we form hypotheses from your analytics and user research, design controlled experiments, and let real visitor behavior decide. Our team handles the full experimentation lifecycle — prioritizing test ideas by expected impact, building variants that load without flicker, running tests to true statistical significance, and translating results into decisions your team can act on. Whether you are optimizing a landing page, a pricing table, or a full checkout funnel, we build a repeatable testing program rather than one-off experiments, so every month compounds the learning of the last one.",
+    "features": [
+      "Hypothesis Backlog & Prioritization (ICE/PXL)",
+      "Test Design & Sample Size Calculation",
+      "Flicker-Free Variant Development",
+      "Multivariate & Split-URL Testing",
+      "Server-Side & Client-Side Experiments",
+      "Statistical Analysis & Significance Testing",
+      "Segmented Result Interpretation",
+      "Winner Rollout & Knowledge Base"
+    ],
+    "benefits": [
+      "Decisions backed by visitor behavior, not opinions",
+      "Lower risk — changes are validated before full rollout",
+      "Compounding conversion gains month over month",
+      "Deep understanding of what motivates your audience",
+      "No more redesign debates — the data settles them",
+      "A documented library of what works for your market"
+    ],
+    "metaTitle": "A/B Testing Services — CRO Experiments | PakSoft",
+    "metaDescription": "Statistically rigorous A/B testing: hypothesis design, flicker-free variants, significance analysis, and winner rollout. Turn traffic into conversions — get a free experiment audit.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Research & Hypothesis", "description": "We mine your analytics, heatmaps, session recordings, and user feedback to find friction points. Each finding becomes a written hypothesis with a predicted outcome and a priority score." },
+        { "step": 2, "title": "Test Design", "description": "We calculate the required sample size and duration up front so the test can actually reach significance. Success metrics, guardrail metrics, and audience segments are defined before a single visitor sees a variant." },
+        { "step": 3, "title": "Variant Build & QA", "description": "Variants are built to load without flicker and behave identically across devices and browsers. We QA tracking before launch so the data you get is data you can trust." },
+        { "step": 4, "title": "Run & Monitor", "description": "The experiment runs untouched until it reaches the planned sample size — no peeking, no premature stops. We monitor guardrail metrics daily to catch any negative side effects early." },
+        { "step": 5, "title": "Analysis & Decision", "description": "We analyze results overall and by segment, separating genuine lifts from statistical noise. Every test ends with a clear decision: roll out, iterate, or archive with documented learnings." },
+        { "step": 6, "title": "Rollout & Next Cycle", "description": "Winning variants are implemented permanently in your codebase, not left running in the testing tool. Learnings feed the hypothesis backlog, and the next experiment starts immediately." }
+      ],
+      "faq": [
+        { "question": "How long does a typical A/B test need to run?", "answer": "Most tests need 2–4 weeks to reach statistical significance, depending on your traffic volume and the size of the effect. We calculate the required duration before launch — if your traffic can't support a meaningful test, we'll tell you and suggest higher-impact alternatives like radical redesigns or qualitative research." },
+        { "question": "How much traffic do I need for A/B testing?", "answer": "As a rule of thumb, you need at least 1,000 conversions per month on the page being tested to detect a 10% lift in a reasonable time. With less traffic we shift strategy: fewer, bolder tests with bigger expected effects, or testing higher-traffic pages first." },
+        { "question": "Which testing tools do you work with?", "answer": "We work with VWO, Optimizely, Convert, AB Tasty, and Growthbook, and we build server-side experiments with feature-flag platforms like LaunchDarkly. If you don't have a tool yet, we'll recommend one that fits your stack, traffic, and budget — including capable low-cost options." },
+        { "question": "Will A/B tests slow down my website?", "answer": "Done properly, no. We use anti-flicker techniques sparingly, load variant code asynchronously, and prefer server-side testing for performance-critical pages. We also monitor Core Web Vitals as guardrail metrics during every experiment." },
+        { "question": "What's the difference between A/B and multivariate testing?", "answer": "An A/B test compares complete page versions, while a multivariate test measures how several smaller elements interact — for example three headlines combined with two images. Multivariate tests need significantly more traffic, so we typically reserve them for high-volume pages." },
+        { "question": "What happens if a test loses?", "answer": "A losing test is still a win: it stopped you from shipping a change that would have hurt conversions, and it teaches you something real about your audience. Roughly half of all tests lose — that's exactly why testing matters. Every result is documented in your learnings library." },
+        { "question": "Can you test changes deeper than the UI, like pricing or algorithms?", "answer": "Yes. With server-side experimentation we can test pricing structures, search rankings, recommendation logic, onboarding flows, and email sequences. These deeper tests often produce far larger business impact than surface-level UI changes." },
+        { "question": "How do you report results?", "answer": "You get a plain-language summary with the conversion lift, confidence level, segment breakdowns, and revenue projection — plus the raw statistics for your analysts. Every test ends with an explicit recommendation, never just a dashboard screenshot." }
+      ],
+      "technologies": [
+        { "icon": "vwo", "name": "VWO" },
+        { "icon": "optimizely", "name": "Optimizely" },
+        { "icon": "convert", "name": "Convert" },
+        { "icon": "growthbook", "name": "GrowthBook" },
+        { "icon": "launchdarkly", "name": "LaunchDarkly" },
+        { "icon": "ga4", "name": "Google Analytics 4" },
+        { "icon": "hotjar", "name": "Hotjar" },
+        { "icon": "bigquery", "name": "BigQuery" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "A/B Testi",
+    "shortDescription": "Görüşleri kanıtlarla değiştirin. Ziyaretçilerinizin gerçekte neye tepki verdiğini ortaya çıkaran, istatistiksel olarak titiz A/B ve çok değişkenli testler tasarlıyor ve bu bulguları ölçülebilir dönüşüm artışına çeviriyoruz.",
+    "fullDescription": "Web sitesi değişikliklerinin çoğu tahminden ibarettir. A/B testi bu tahminlerin yerine kanıt koyar: Analitik verilerinizden ve kullanıcı araştırmalarından hipotezler oluşturur, kontrollü deneyler tasarlar ve kararı gerçek ziyaretçi davranışına bırakırız. Ekibimiz deney sürecinin tamamını yönetir — test fikirlerini beklenen etkiye göre önceliklendirir, titremeden yüklenen varyantlar geliştirir, testleri gerçek istatistiksel anlamlılığa ulaşana kadar çalıştırır ve sonuçları ekibinizin uygulayabileceği kararlara dönüştürür. İster bir açılış sayfasını, ister fiyatlandırma tablosunu, ister tüm ödeme hunisini optimize ediyor olun; tek seferlik denemeler yerine tekrarlanabilir bir test programı kurarız. Böylece her ay bir öncekinin öğrenimleri üzerine katlanarak büyür.",
+    "features": [
+      "Hipotez Listesi ve Önceliklendirme (ICE/PXL)",
+      "Test Tasarımı ve Örneklem Büyüklüğü Hesabı",
+      "Titremesiz (Flicker-Free) Varyant Geliştirme",
+      "Çok Değişkenli ve Split-URL Testleri",
+      "Sunucu ve İstemci Taraflı Deneyler",
+      "İstatistiksel Analiz ve Anlamlılık Testi",
+      "Segment Bazlı Sonuç Yorumlama",
+      "Kazanan Varyantın Yayını ve Bilgi Bankası"
+    ],
+    "benefits": [
+      "Görüşlere değil, ziyaretçi davranışına dayalı kararlar",
+      "Daha düşük risk — değişiklikler yayına alınmadan doğrulanır",
+      "Ay be ay birikerek artan dönüşüm kazanımları",
+      "Hedef kitlenizi neyin motive ettiğine dair derin içgörü",
+      "Tasarım tartışmalarına son — veriler karar verir",
+      "Pazarınızda neyin işe yaradığını belgeleyen bir arşiv"
+    ],
+    "metaTitle": "A/B Testi Hizmetleri — CRO Deneyleri | PakSoft",
+    "metaDescription": "İstatistiksel olarak titiz A/B testleri: hipotez tasarımı, titremesiz varyantlar, anlamlılık analizi ve kazanan yayını. Trafiği dönüşüme çevirin — ücretsiz deney denetimi alın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Araştırma ve Hipotez", "description": "Analitik verilerinizi, ısı haritalarını, oturum kayıtlarını ve kullanıcı geri bildirimlerini inceleyerek sürtünme noktalarını buluruz. Her bulgu, öngörülen sonucu ve öncelik puanı olan yazılı bir hipoteze dönüşür." },
+        { "step": 2, "title": "Test Tasarımı", "description": "Testin gerçekten anlamlılığa ulaşabilmesi için gereken örneklem büyüklüğünü ve süreyi baştan hesaplarız. Başarı metrikleri, koruma metrikleri ve hedef segmentler, tek bir ziyaretçi varyantı görmeden önce tanımlanır." },
+        { "step": 3, "title": "Varyant Geliştirme ve QA", "description": "Varyantlar titreme olmadan yüklenecek ve tüm cihaz ve tarayıcılarda aynı şekilde çalışacak biçimde geliştirilir. Yayından önce izleme kurulumunu test ederiz; böylece elde ettiğiniz veri güvenilir olur." },
+        { "step": 4, "title": "Çalıştırma ve İzleme", "description": "Deney, planlanan örneklem büyüklüğüne ulaşana kadar müdahale edilmeden çalışır — erken bakış yok, erken durdurma yok. Olumsuz yan etkileri erkenden yakalamak için koruma metriklerini günlük olarak izleriz." },
+        { "step": 5, "title": "Analiz ve Karar", "description": "Sonuçları hem genel hem de segment bazında analiz eder, gerçek artışları istatistiksel gürültüden ayırırız. Her test net bir kararla biter: yayına al, geliştir veya öğrenimleri belgeleyerek arşivle." },
+        { "step": 6, "title": "Yayın ve Yeni Döngü", "description": "Kazanan varyantlar test aracında bırakılmaz, kod tabanınıza kalıcı olarak işlenir. Öğrenimler hipotez listesini besler ve bir sonraki deney hemen başlar." }
+      ],
+      "faq": [
+        { "question": "Tipik bir A/B testi ne kadar sürmeli?", "answer": "Çoğu test, trafik hacminize ve etki büyüklüğüne bağlı olarak istatistiksel anlamlılığa ulaşmak için 2–4 hafta gerektirir. Gereken süreyi yayından önce hesaplarız — trafiğiniz anlamlı bir testi destekleyemiyorsa bunu açıkça söyler ve radikal yeniden tasarım ya da nitel araştırma gibi daha etkili alternatifler öneririz." },
+        { "question": "A/B testi için ne kadar trafiğe ihtiyacım var?", "answer": "Pratik bir kural olarak, %10'luk bir artışı makul sürede tespit edebilmek için test edilen sayfada ayda en az 1.000 dönüşüm gerekir. Daha az trafikte stratejiyi değiştiririz: daha büyük etki beklenen daha az ve daha cesur testler ya da önce yüksek trafikli sayfaların test edilmesi." },
+        { "question": "Hangi test araçlarıyla çalışıyorsunuz?", "answer": "VWO, Optimizely, Convert, AB Tasty ve GrowthBook ile çalışıyor; LaunchDarkly gibi feature-flag platformlarıyla sunucu taraflı deneyler kuruyoruz. Henüz bir aracınız yoksa, teknolojinize, trafiğinize ve bütçenize uygun bir öneri sunarız — uygun maliyetli seçenekler dahil." },
+        { "question": "A/B testleri sitemi yavaşlatır mı?", "answer": "Doğru uygulandığında hayır. Anti-flicker tekniklerini ölçülü kullanır, varyant kodunu asenkron yükler ve performansın kritik olduğu sayfalarda sunucu taraflı testleri tercih ederiz. Ayrıca her deneyde Core Web Vitals değerlerini koruma metriği olarak izleriz." },
+        { "question": "A/B testi ile çok değişkenli test arasındaki fark nedir?", "answer": "A/B testi sayfanın bütün versiyonlarını karşılaştırır; çok değişkenli test ise birden fazla küçük öğenin birbiriyle nasıl etkileştiğini ölçer — örneğin üç başlığın iki görselle kombinasyonu. Çok değişkenli testler belirgin şekilde daha fazla trafik gerektirdiğinden bunları genellikle yüksek hacimli sayfalara saklarız." },
+        { "question": "Test kaybederse ne olur?", "answer": "Kaybeden bir test yine de kazançtır: Dönüşümlerinize zarar verecek bir değişikliği yayınlamanızı engellemiş ve kitleniz hakkında gerçek bir şey öğretmiştir. Tüm testlerin yaklaşık yarısı kaybeder — test etmenin önemi de tam olarak budur. Her sonuç öğrenim arşivinize işlenir." },
+        { "question": "Fiyatlandırma veya algoritma gibi arayüzden derin şeyleri test edebilir misiniz?", "answer": "Evet. Sunucu taraflı deneylerle fiyat yapılarını, arama sıralamalarını, öneri mantığını, kullanıcı alıştırma akışlarını ve e-posta dizilerini test edebiliriz. Bu derin testler çoğu zaman yüzeysel arayüz değişikliklerinden çok daha büyük iş etkisi yaratır." },
+        { "question": "Sonuçları nasıl raporluyorsunuz?", "answer": "Dönüşüm artışı, güven düzeyi, segment kırılımları ve gelir projeksiyonunu içeren sade bir özet alırsınız — analistleriniz için ham istatistiklerle birlikte. Her test, yalnızca bir gösterge paneli ekran görüntüsüyle değil, açık bir tavsiyeyle sonuçlanır." }
+      ],
+      "technologies": [
+        { "icon": "vwo", "name": "VWO" },
+        { "icon": "optimizely", "name": "Optimizely" },
+        { "icon": "convert", "name": "Convert" },
+        { "icon": "growthbook", "name": "GrowthBook" },
+        { "icon": "launchdarkly", "name": "LaunchDarkly" },
+        { "icon": "ga4", "name": "Google Analytics 4" },
+        { "icon": "hotjar", "name": "Hotjar" },
+        { "icon": "bigquery", "name": "BigQuery" }
+      ]
+    }
+  },
+  "de": {
+    "name": "A/B-Testing",
+    "shortDescription": "Ersetzen Sie Meinungen durch Belege. Wir entwickeln statistisch fundierte A/B- und multivariate Tests, die zeigen, worauf Ihre Besucher wirklich reagieren — und machen daraus messbares Conversion-Wachstum.",
+    "fullDescription": "Die meisten Website-Änderungen sind Vermutungen. A/B-Testing ersetzt diese Vermutungen durch Belege: Wir bilden Hypothesen aus Ihren Analytics-Daten und Ihrer Nutzerforschung, entwerfen kontrollierte Experimente und lassen das tatsächliche Besucherverhalten entscheiden. Unser Team betreut den gesamten Experimentier-Zyklus — wir priorisieren Testideen nach erwartetem Effekt, entwickeln Varianten, die ohne Flackern laden, führen Tests bis zur echten statistischen Signifikanz und übersetzen Ergebnisse in Entscheidungen, die Ihr Team umsetzen kann. Ob Landingpage, Preistabelle oder kompletter Checkout-Funnel: Wir bauen ein wiederholbares Testprogramm statt einmaliger Experimente, sodass jeder Monat auf den Erkenntnissen des vorherigen aufbaut.",
+    "features": [
+      "Hypothesen-Backlog & Priorisierung (ICE/PXL)",
+      "Testdesign & Stichprobenberechnung",
+      "Flicker-freie Varianten-Entwicklung",
+      "Multivariate & Split-URL-Tests",
+      "Server- und Client-seitige Experimente",
+      "Statistische Analyse & Signifikanzprüfung",
+      "Segmentierte Ergebnisinterpretation",
+      "Gewinner-Rollout & Wissensdatenbank"
+    ],
+    "benefits": [
+      "Entscheidungen auf Basis von Besucherverhalten statt Meinungen",
+      "Geringeres Risiko — Änderungen werden vor dem Rollout validiert",
+      "Monat für Monat kumulierende Conversion-Gewinne",
+      "Tiefes Verständnis dafür, was Ihre Zielgruppe motiviert",
+      "Keine Redesign-Debatten mehr — die Daten entscheiden",
+      "Eine dokumentierte Bibliothek dessen, was in Ihrem Markt funktioniert"
+    ],
+    "metaTitle": "A/B-Testing — CRO-Experimente | PakSoft",
+    "metaDescription": "Statistisch fundiertes A/B-Testing: Hypothesendesign, flicker-freie Varianten, Signifikanzanalyse und Gewinner-Rollout. Machen Sie aus Traffic Conversions — jetzt kostenloses Audit sichern.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Research & Hypothese", "description": "Wir werten Ihre Analytics, Heatmaps, Session-Recordings und Nutzerfeedback aus, um Reibungspunkte zu finden. Jeder Befund wird zu einer schriftlichen Hypothese mit prognostiziertem Ergebnis und Prioritätsscore." },
+        { "step": 2, "title": "Testdesign", "description": "Wir berechnen vorab die nötige Stichprobengröße und Laufzeit, damit der Test Signifikanz überhaupt erreichen kann. Erfolgs- und Guardrail-Metriken sowie Zielsegmente stehen fest, bevor ein einziger Besucher eine Variante sieht." },
+        { "step": 3, "title": "Varianten-Build & QA", "description": "Varianten laden ohne Flackern und verhalten sich auf allen Geräten und Browsern identisch. Vor dem Start prüfen wir das Tracking, damit Sie Daten erhalten, denen Sie vertrauen können." },
+        { "step": 4, "title": "Laufzeit & Monitoring", "description": "Das Experiment läuft unangetastet bis zur geplanten Stichprobengröße — kein vorzeitiges Reinschauen, kein verfrühter Abbruch. Guardrail-Metriken überwachen wir täglich, um negative Nebeneffekte früh zu erkennen." },
+        { "step": 5, "title": "Analyse & Entscheidung", "description": "Wir analysieren Ergebnisse gesamt und je Segment und trennen echte Uplifts von statistischem Rauschen. Jeder Test endet mit einer klaren Entscheidung: ausrollen, iterieren oder mit dokumentierten Learnings archivieren." },
+        { "step": 6, "title": "Rollout & nächster Zyklus", "description": "Gewinner-Varianten werden dauerhaft in Ihre Codebasis übernommen, nicht im Testtool belassen. Die Learnings fließen ins Hypothesen-Backlog, und das nächste Experiment startet sofort." }
+      ],
+      "faq": [
+        { "question": "Wie lange muss ein typischer A/B-Test laufen?", "answer": "Die meisten Tests brauchen 2–4 Wochen bis zur statistischen Signifikanz, abhängig von Trafficvolumen und Effektgröße. Wir berechnen die nötige Laufzeit vor dem Start — und wenn Ihr Traffic keinen aussagekräftigen Test trägt, sagen wir das offen und schlagen wirksamere Alternativen vor." },
+        { "question": "Wie viel Traffic brauche ich für A/B-Testing?", "answer": "Als Faustregel: mindestens 1.000 Conversions pro Monat auf der getesteten Seite, um einen 10%-Uplift in vertretbarer Zeit nachzuweisen. Bei weniger Traffic ändern wir die Strategie: weniger, dafür mutigere Tests mit größeren erwarteten Effekten — oder zuerst trafficstärkere Seiten." },
+        { "question": "Mit welchen Testing-Tools arbeiten Sie?", "answer": "Wir arbeiten mit VWO, Optimizely, Convert, AB Tasty und GrowthBook und bauen serverseitige Experimente mit Feature-Flag-Plattformen wie LaunchDarkly. Falls Sie noch kein Tool haben, empfehlen wir eines, das zu Stack, Traffic und Budget passt — auch günstige Optionen." },
+        { "question": "Verlangsamen A/B-Tests meine Website?", "answer": "Richtig umgesetzt: nein. Wir setzen Anti-Flicker-Techniken sparsam ein, laden Variantencode asynchron und bevorzugen serverseitiges Testing auf performancekritischen Seiten. Zusätzlich überwachen wir die Core Web Vitals als Guardrail-Metriken in jedem Experiment." },
+        { "question": "Was ist der Unterschied zwischen A/B- und multivariaten Tests?", "answer": "Ein A/B-Test vergleicht komplette Seitenversionen, ein multivariater Test misst das Zusammenspiel mehrerer kleiner Elemente — etwa drei Headlines kombiniert mit zwei Bildern. Multivariate Tests brauchen deutlich mehr Traffic und bleiben daher meist Seiten mit hohem Volumen vorbehalten." },
+        { "question": "Was passiert, wenn ein Test verliert?", "answer": "Ein verlorener Test ist trotzdem ein Gewinn: Er hat verhindert, dass Sie eine Änderung ausrollen, die Ihren Conversions geschadet hätte — und Sie haben etwas Echtes über Ihre Zielgruppe gelernt. Rund die Hälfte aller Tests verliert; genau deshalb lohnt sich Testen. Jedes Ergebnis wird dokumentiert." },
+        { "question": "Können Sie auch tiefere Änderungen testen, etwa Preise oder Algorithmen?", "answer": "Ja. Mit serverseitigem Experimentieren testen wir Preisstrukturen, Suchrankings, Empfehlungslogik, Onboarding-Flows und E-Mail-Strecken. Diese tieferen Tests erzeugen oft deutlich größere Geschäftseffekte als oberflächliche UI-Änderungen." },
+        { "question": "Wie berichten Sie die Ergebnisse?", "answer": "Sie erhalten eine verständliche Zusammenfassung mit Conversion-Uplift, Konfidenzniveau, Segmentaufschlüsselung und Umsatzprojektion — plus Rohstatistiken für Ihre Analysten. Jeder Test endet mit einer expliziten Empfehlung, nie nur mit einem Dashboard-Screenshot." }
+      ],
+      "technologies": [
+        { "icon": "vwo", "name": "VWO" },
+        { "icon": "optimizely", "name": "Optimizely" },
+        { "icon": "convert", "name": "Convert" },
+        { "icon": "growthbook", "name": "GrowthBook" },
+        { "icon": "launchdarkly", "name": "LaunchDarkly" },
+        { "icon": "ga4", "name": "Google Analytics 4" },
+        { "icon": "hotjar", "name": "Hotjar" },
+        { "icon": "bigquery", "name": "BigQuery" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "اے/بی ٹیسٹنگ",
+    "shortDescription": "رائے کی جگہ ثبوت کو دیجیے۔ ہم شماریاتی طور پر مضبوط اے/بی اور ملٹی ویریئیٹ ٹیسٹ ڈیزائن کرتے ہیں جو بتاتے ہیں کہ آپ کے وزیٹرز واقعی کس چیز پر ردِعمل دیتے ہیں — اور ان نتائج کو قابلِ پیمائش کنورژن گروتھ میں بدلتے ہیں۔",
+    "fullDescription": "ویب سائٹ کی بیشتر تبدیلیاں محض اندازے ہوتی ہیں۔ اے/بی ٹیسٹنگ ان اندازوں کی جگہ ثبوت رکھتی ہے: ہم آپ کے اینالیٹکس اور یوزر ریسرچ سے مفروضے بناتے ہیں، کنٹرولڈ تجربات ڈیزائن کرتے ہیں، اور فیصلہ حقیقی وزیٹر رویّے پر چھوڑتے ہیں۔ ہماری ٹیم تجربے کے پورے سائیکل کی ذمہ دار ہوتی ہے — ٹیسٹ آئیڈیاز کو متوقع اثر کے لحاظ سے ترجیح دینا، بغیر جھلملاہٹ کے لوڈ ہونے والے ویریئنٹس بنانا، ٹیسٹ کو حقیقی شماریاتی معنویت تک چلانا، اور نتائج کو ایسے فیصلوں میں ڈھالنا جن پر آپ کی ٹیم عمل کر سکے۔ چاہے آپ لینڈنگ پیج بہتر کر رہے ہوں، پرائسنگ ٹیبل یا مکمل چیک آؤٹ فنل — ہم یک بارگی تجربات کے بجائے ایک قابلِ تکرار ٹیسٹنگ پروگرام بناتے ہیں، تاکہ ہر مہینہ پچھلے مہینے کی سیکھ پر استوار ہو۔",
+    "features": [
+      "مفروضوں کی فہرست اور ترجیح بندی (ICE/PXL)",
+      "ٹیسٹ ڈیزائن اور سیمپل سائز کا حساب",
+      "جھلملاہٹ سے پاک ویریئنٹ ڈیولپمنٹ",
+      "ملٹی ویریئیٹ اور اسپلٹ یو آر ایل ٹیسٹنگ",
+      "سرور سائیڈ اور کلائنٹ سائیڈ تجربات",
+      "شماریاتی تجزیہ اور معنویت کی جانچ",
+      "سیگمنٹ کے لحاظ سے نتائج کی تشریح",
+      "جیتنے والے ویریئنٹ کا نفاذ اور نالج بیس"
+    ],
+    "benefits": [
+      "فیصلے رائے پر نہیں، وزیٹر کے رویّے پر مبنی",
+      "کم خطرہ — تبدیلیاں مکمل اجراء سے پہلے جانچی جاتی ہیں",
+      "ماہ بہ ماہ بڑھتے ہوئے کنورژن فوائد",
+      "آپ کی آڈینس کو متحرک کرنے والے عوامل کی گہری سمجھ",
+      "ڈیزائن پر بحث ختم — فیصلہ ڈیٹا کرتا ہے",
+      "آپ کی مارکیٹ میں کارگر حکمتِ عملیوں کا مستند ریکارڈ"
+    ],
+    "metaTitle": "اے/بی ٹیسٹنگ سروسز — CRO تجربات | PakSoft",
+    "metaDescription": "شماریاتی طور پر مضبوط اے/بی ٹیسٹنگ: مفروضہ ڈیزائن، جھلملاہٹ سے پاک ویریئنٹس، معنویت کا تجزیہ اور کامیاب ویریئنٹ کا نفاذ۔ ٹریفک کو کنورژن میں بدلیں — مفت آڈٹ حاصل کریں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "تحقیق اور مفروضہ", "description": "ہم آپ کے اینالیٹکس، ہیٹ میپس، سیشن ریکارڈنگز اور یوزر فیڈبیک کا جائزہ لے کر رکاوٹ کے مقامات تلاش کرتے ہیں۔ ہر دریافت ایک تحریری مفروضہ بنتی ہے جس کے ساتھ متوقع نتیجہ اور ترجیحی اسکور ہوتا ہے۔" },
+        { "step": 2, "title": "ٹیسٹ ڈیزائن", "description": "ہم درکار سیمپل سائز اور دورانیہ پہلے سے طے کرتے ہیں تاکہ ٹیسٹ واقعی معنویت تک پہنچ سکے۔ کامیابی کے میٹرکس، حفاظتی میٹرکس اور آڈینس سیگمنٹس کسی وزیٹر کے ویریئنٹ دیکھنے سے پہلے متعین ہو جاتے ہیں۔" },
+        { "step": 3, "title": "ویریئنٹ کی تیاری اور جانچ", "description": "ویریئنٹس اس طرح بنائے جاتے ہیں کہ بغیر جھلملاہٹ کے لوڈ ہوں اور ہر ڈیوائس اور براؤزر پر یکساں کام کریں۔ لانچ سے پہلے ہم ٹریکنگ کی مکمل جانچ کرتے ہیں تاکہ حاصل ہونے والا ڈیٹا قابلِ اعتماد ہو۔" },
+        { "step": 4, "title": "اجراء اور نگرانی", "description": "تجربہ طے شدہ سیمپل سائز تک بغیر مداخلت چلتا ہے — نہ قبل از وقت جھانکنا، نہ جلد بازی میں روکنا۔ منفی اثرات کو بروقت پکڑنے کے لیے ہم حفاظتی میٹرکس کی روزانہ نگرانی کرتے ہیں۔" },
+        { "step": 5, "title": "تجزیہ اور فیصلہ", "description": "ہم نتائج کا مجموعی اور سیگمنٹ وار تجزیہ کرتے ہیں اور حقیقی بہتری کو شماریاتی شور سے الگ کرتے ہیں۔ ہر ٹیسٹ ایک واضح فیصلے پر ختم ہوتا ہے: نافذ کریں، بہتر بنائیں، یا سیکھ کو محفوظ کر کے آرکائیو کریں۔" },
+        { "step": 6, "title": "نفاذ اور اگلا سائیکل", "description": "جیتنے والے ویریئنٹس ٹیسٹنگ ٹول میں نہیں چھوڑے جاتے بلکہ آپ کے کوڈ بیس میں مستقل شامل کیے جاتے ہیں۔ حاصل شدہ سیکھ مفروضوں کی فہرست کو تقویت دیتی ہے اور اگلا تجربہ فوراً شروع ہو جاتا ہے۔" }
+      ],
+      "faq": [
+        { "question": "ایک عام اے/بی ٹیسٹ کتنا عرصہ چلنا چاہیے؟", "answer": "زیادہ تر ٹیسٹس کو شماریاتی معنویت تک پہنچنے کے لیے 2 تا 4 ہفتے درکار ہوتے ہیں، جو آپ کے ٹریفک اور اثر کے حجم پر منحصر ہے۔ ہم درکار دورانیہ لانچ سے پہلے طے کرتے ہیں — اگر آپ کا ٹریفک بامعنی ٹیسٹ کے لیے ناکافی ہو تو ہم صاف بتا دیتے ہیں اور زیادہ مؤثر متبادل تجویز کرتے ہیں۔" },
+        { "question": "اے/بی ٹیسٹنگ کے لیے کتنا ٹریفک چاہیے؟", "answer": "ایک عمومی اصول کے طور پر، جس صفحے کا ٹیسٹ ہو رہا ہو وہاں ماہانہ کم از کم 1,000 کنورژنز ہونے چاہئیں تاکہ 10٪ بہتری مناسب وقت میں ثابت ہو سکے۔ کم ٹریفک پر ہم حکمتِ عملی بدلتے ہیں: کم مگر زیادہ جرات مندانہ ٹیسٹ، یا پہلے زیادہ ٹریفک والے صفحات۔" },
+        { "question": "آپ کون سے ٹیسٹنگ ٹولز استعمال کرتے ہیں؟", "answer": "ہم VWO، Optimizely، Convert، AB Tasty اور GrowthBook کے ساتھ کام کرتے ہیں اور LaunchDarkly جیسے فیچر فلیگ پلیٹ فارمز سے سرور سائیڈ تجربات بناتے ہیں۔ اگر آپ کے پاس ابھی کوئی ٹول نہیں تو ہم آپ کے سسٹم، ٹریفک اور بجٹ کے مطابق موزوں ترین ٹول تجویز کرتے ہیں۔" },
+        { "question": "کیا اے/بی ٹیسٹ میری ویب سائٹ کو سست کر دیں گے؟", "answer": "درست طریقے سے کیے جائیں تو نہیں۔ ہم اینٹی فلکر تکنیکیں محدود انداز میں استعمال کرتے ہیں، ویریئنٹ کوڈ کو asynchronous طریقے سے لوڈ کرتے ہیں اور کارکردگی کے لحاظ سے حساس صفحات پر سرور سائیڈ ٹیسٹنگ کو ترجیح دیتے ہیں۔ ہر تجربے میں Core Web Vitals کی نگرانی بھی شامل ہے۔" },
+        { "question": "اے/بی اور ملٹی ویریئیٹ ٹیسٹ میں کیا فرق ہے؟", "answer": "اے/بی ٹیسٹ صفحے کے مکمل ورژنز کا موازنہ کرتا ہے جبکہ ملٹی ویریئیٹ ٹیسٹ کئی چھوٹے عناصر کے باہمی اثر کو ناپتا ہے — مثلاً تین سرخیاں اور دو تصاویر کے امتزاج۔ ملٹی ویریئیٹ ٹیسٹس کو نمایاں طور پر زیادہ ٹریفک درکار ہوتا ہے، اس لیے ہم انہیں عموماً زیادہ وزٹ والے صفحات کے لیے رکھتے ہیں۔" },
+        { "question": "اگر ٹیسٹ ناکام ہو جائے تو کیا ہوتا ہے؟", "answer": "ناکام ٹیسٹ بھی دراصل فائدہ ہے: اس نے آپ کو ایسی تبدیلی جاری کرنے سے روک دیا جو کنورژنز کو نقصان پہنچاتی، اور آپ کی آڈینس کے بارے میں کچھ حقیقی سکھایا۔ تقریباً نصف ٹیسٹ ناکام ہوتے ہیں — ٹیسٹنگ کی اہمیت اسی لیے ہے۔ ہر نتیجہ آپ کے ریکارڈ میں محفوظ ہوتا ہے۔" },
+        { "question": "کیا آپ یوزر انٹرفیس سے گہری چیزیں، جیسے قیمتیں یا الگورتھم، بھی ٹیسٹ کر سکتے ہیں؟", "answer": "جی ہاں۔ سرور سائیڈ تجربات کے ذریعے ہم قیمتوں کے ڈھانچے، سرچ رینکنگ، ریکمنڈیشن لاجک، آن بورڈنگ فلو اور ای میل سیریز ٹیسٹ کر سکتے ہیں۔ یہ گہرے ٹیسٹ اکثر سطحی UI تبدیلیوں سے کہیں بڑا کاروباری اثر پیدا کرتے ہیں۔" },
+        { "question": "آپ نتائج کی رپورٹ کیسے دیتے ہیں؟", "answer": "آپ کو سادہ زبان میں خلاصہ ملتا ہے جس میں کنورژن میں اضافہ، اعتماد کی سطح، سیگمنٹ وار تفصیل اور آمدنی کا تخمینہ شامل ہوتا ہے — ساتھ ہی آپ کے تجزیہ کاروں کے لیے خام اعداد و شمار بھی۔ ہر ٹیسٹ ایک واضح سفارش پر ختم ہوتا ہے، محض ڈیش بورڈ کے اسکرین شاٹ پر نہیں۔" }
+      ],
+      "technologies": [
+        { "icon": "vwo", "name": "VWO" },
+        { "icon": "optimizely", "name": "Optimizely" },
+        { "icon": "convert", "name": "Convert" },
+        { "icon": "growthbook", "name": "GrowthBook" },
+        { "icon": "launchdarkly", "name": "LaunchDarkly" },
+        { "icon": "ga4", "name": "Google Analytics 4" },
+        { "icon": "hotjar", "name": "Hotjar" },
+        { "icon": "bigquery", "name": "BigQuery" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "اختبار A/B",
+    "shortDescription": "استبدلوا الآراء بالأدلة. نصمّم اختبارات A/B واختبارات متعددة المتغيرات بدقة إحصائية تكشف ما يتفاعل معه زوّاركم فعلاً — ونحوّل هذه النتائج إلى نموّ قابل للقياس في التحويلات.",
+    "fullDescription": "معظم تغييرات المواقع الإلكترونية مجرد تخمينات. اختبار A/B يستبدل هذه التخمينات بالأدلة: نبني الفرضيات من بيانات التحليلات وأبحاث المستخدمين، ونصمّم تجارب محكومة، ونترك القرار لسلوك الزوّار الحقيقي. يتولى فريقنا دورة التجربة كاملة — ترتيب أفكار الاختبار حسب الأثر المتوقع، وبناء نسخ تُحمَّل دون وميض، وتشغيل الاختبارات حتى بلوغ الدلالة الإحصائية الحقيقية، وترجمة النتائج إلى قرارات يمكن لفريقكم تنفيذها. سواء كنتم تحسّنون صفحة هبوط أو جدول أسعار أو مسار شراء كاملاً، نبني برنامج اختبار قابلاً للتكرار بدلاً من تجارب متفرقة، بحيث يتراكم تعلّم كل شهر فوق ما سبقه.",
+    "features": [
+      "قائمة الفرضيات وترتيب الأولويات (ICE/PXL)",
+      "تصميم الاختبار وحساب حجم العيّنة",
+      "تطوير نسخ خالية من الوميض",
+      "اختبارات متعددة المتغيرات وSplit-URL",
+      "تجارب من جهة الخادم ومن جهة المتصفح",
+      "التحليل الإحصائي واختبار الدلالة",
+      "تفسير النتائج حسب الشرائح",
+      "تعميم النسخة الفائزة وقاعدة معرفية"
+    ],
+    "benefits": [
+      "قرارات مبنية على سلوك الزوّار لا على الآراء",
+      "مخاطر أقل — تُختبر التغييرات قبل تعميمها",
+      "مكاسب تحويل تتراكم شهراً بعد شهر",
+      "فهم عميق لما يحفّز جمهوركم",
+      "لا مزيد من جدالات التصميم — البيانات تحسم",
+      "سجلّ موثّق لما ينجح في سوقكم"
+    ],
+    "metaTitle": "خدمات اختبار A/B — تجارب CRO | PakSoft",
+    "metaDescription": "اختبارات A/B بدقة إحصائية: تصميم الفرضيات، نسخ خالية من الوميض، تحليل الدلالة، وتعميم النسخة الفائزة. حوّلوا الزيارات إلى تحويلات — احصلوا على تدقيق مجاني.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "البحث والفرضية", "description": "نفحص بيانات التحليلات والخرائط الحرارية وتسجيلات الجلسات وملاحظات المستخدمين لاكتشاف نقاط الاحتكاك. تتحوّل كل ملاحظة إلى فرضية مكتوبة مع نتيجة متوقعة ودرجة أولوية." },
+        { "step": 2, "title": "تصميم الاختبار", "description": "نحسب مسبقاً حجم العيّنة والمدة اللازمتين ليتمكن الاختبار فعلاً من بلوغ الدلالة. تُحدَّد مقاييس النجاح ومقاييس الحماية وشرائح الجمهور قبل أن يرى أي زائر النسخة التجريبية." },
+        { "step": 3, "title": "بناء النسخ وضمان الجودة", "description": "تُبنى النسخ بحيث تُحمَّل دون وميض وتعمل بشكل متطابق على جميع الأجهزة والمتصفحات. نختبر التتبّع قبل الإطلاق لتكون البيانات التي تحصلون عليها جديرة بالثقة." },
+        { "step": 4, "title": "التشغيل والمراقبة", "description": "تعمل التجربة دون تدخّل حتى بلوغ حجم العيّنة المخطط — لا اطّلاع مبكر ولا إيقاف متسرّع. نراقب مقاييس الحماية يومياً لرصد أي آثار جانبية سلبية مبكراً." },
+        { "step": 5, "title": "التحليل والقرار", "description": "نحلّل النتائج إجمالاً وحسب الشرائح، ونفصل التحسّن الحقيقي عن الضجيج الإحصائي. ينتهي كل اختبار بقرار واضح: التعميم، أو التحسين، أو الأرشفة مع توثيق الدروس المستفادة." },
+        { "step": 6, "title": "التعميم والدورة التالية", "description": "تُدمج النسخ الفائزة بشكل دائم في الكود الخاص بكم ولا تُترك في أداة الاختبار. تُغذّي الدروس المستفادة قائمة الفرضيات، وتبدأ التجربة التالية فوراً." }
+      ],
+      "faq": [
+        { "question": "كم يحتاج اختبار A/B النموذجي من الوقت؟", "answer": "تحتاج معظم الاختبارات من أسبوعين إلى أربعة أسابيع لبلوغ الدلالة الإحصائية، حسب حجم الزيارات وحجم الأثر. نحسب المدة اللازمة قبل الإطلاق — وإذا كانت زياراتكم لا تكفي لاختبار ذي معنى، نخبركم بصراحة ونقترح بدائل أكثر فاعلية." },
+        { "question": "ما حجم الزيارات الذي أحتاجه لاختبار A/B؟", "answer": "كقاعدة عامة، تحتاجون إلى 1,000 تحويل شهرياً على الأقل في الصفحة المختبَرة لرصد تحسّن بنسبة 10٪ في وقت معقول. مع زيارات أقل نغيّر الاستراتيجية: اختبارات أقل وأجرأ بآثار متوقعة أكبر، أو البدء بالصفحات الأعلى زيارة." },
+        { "question": "ما الأدوات التي تعملون بها؟", "answer": "نعمل مع VWO وOptimizely وConvert وAB Tasty وGrowthBook، ونبني تجارب من جهة الخادم عبر منصات Feature Flags مثل LaunchDarkly. إذا لم تكن لديكم أداة بعد، نرشّح ما يناسب بنيتكم التقنية وزياراتكم وميزانيتكم — بما في ذلك خيارات اقتصادية." },
+        { "question": "هل تُبطئ اختبارات A/B موقعي؟", "answer": "إذا نُفّذت بشكل صحيح، فلا. نستخدم تقنيات منع الوميض باعتدال، ونحمّل كود النسخ بشكل غير متزامن، ونفضّل الاختبار من جهة الخادم في الصفحات الحساسة للأداء. كما نراقب Core Web Vitals كمقاييس حماية في كل تجربة." },
+        { "question": "ما الفرق بين اختبار A/B والاختبار متعدد المتغيرات؟", "answer": "يقارن اختبار A/B نسخاً كاملة من الصفحة، بينما يقيس الاختبار متعدد المتغيرات تفاعل عدة عناصر صغيرة معاً — مثل ثلاثة عناوين مع صورتين. تتطلب الاختبارات متعددة المتغيرات زيارات أكبر بكثير، لذا نخصصها عادةً للصفحات عالية الحركة." },
+        { "question": "ماذا يحدث إذا خسر الاختبار؟", "answer": "الاختبار الخاسر مكسب أيضاً: لقد منعكم من إطلاق تغيير كان سيضرّ بالتحويلات، وعلّمكم شيئاً حقيقياً عن جمهوركم. نحو نصف الاختبارات تخسر — وهذا بالضبط سبب أهمية الاختبار. تُوثَّق كل نتيجة في سجلّ التعلّم الخاص بكم." },
+        { "question": "هل يمكنكم اختبار ما هو أعمق من الواجهة، مثل الأسعار أو الخوارزميات؟", "answer": "نعم. عبر التجارب من جهة الخادم يمكننا اختبار هياكل التسعير وترتيب نتائج البحث ومنطق التوصيات ومسارات التهيئة وسلاسل البريد الإلكتروني. غالباً ما تحقق هذه الاختبارات العميقة أثراً تجارياً أكبر بكثير من تغييرات الواجهة السطحية." },
+        { "question": "كيف تقدّمون تقارير النتائج؟", "answer": "تحصلون على ملخص بلغة واضحة يتضمن نسبة تحسّن التحويل ومستوى الثقة وتفصيل الشرائح وإسقاط الإيرادات — إضافة إلى الإحصاءات الخام لمحلليكم. ينتهي كل اختبار بتوصية صريحة، وليس بمجرد لقطة شاشة من لوحة تحكم." }
+      ],
+      "technologies": [
+        { "icon": "vwo", "name": "VWO" },
+        { "icon": "optimizely", "name": "Optimizely" },
+        { "icon": "convert", "name": "Convert" },
+        { "icon": "growthbook", "name": "GrowthBook" },
+        { "icon": "launchdarkly", "name": "LaunchDarkly" },
+        { "icon": "ga4", "name": "Google Analytics 4" },
+        { "icon": "hotjar", "name": "Hotjar" },
+        { "icon": "bigquery", "name": "BigQuery" }
+      ]
+    }
+  }
+}

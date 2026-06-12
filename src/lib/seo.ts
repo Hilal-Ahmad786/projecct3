@@ -87,7 +87,7 @@ export function generatePageMetadata(
       title,
       description,
       images: [imageUrl],
-      creator: '@paktechnology',
+      creator: '@paksoft3',
     },
     robots: {
       index: true,
@@ -151,7 +151,9 @@ export function generateOrganizationSchema() {
       availableLanguage: ['English', 'Turkish', 'German', 'Arabic', 'Urdu'],
     },
     sameAs: [
-      'https://twitter.com/paktechnology',
+      'https://twitter.com/paksoft3',
+      'https://facebook.com/Paksoft',
+      'https://instagram.com/paksoft3',
       'https://www.linkedin.com/company/paksoft',
     ],
   };

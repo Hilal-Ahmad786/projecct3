@@ -1,7 +1,7 @@
 // src/components/TechApproachSection.tsx
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import SectionHeader from '@/components/SectionHeader';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
@@ -25,6 +25,11 @@ export default function TechApproachSection() {
   const t = useSectionTranslations('projects.techApproach');
   const tStats = useSectionTranslations('stats');
   const tCommon = useSectionTranslations('common');
+
+  const translateTechCategory = (cat: string) => {
+    const translated = t(`techCategories.${cat}`) as string;
+    return translated && !translated.startsWith('projects.') ? translated : cat;
+  };
 
   if (isLoading) {
     return (
@@ -65,7 +70,7 @@ export default function TechApproachSection() {
     }
   ];
 
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -75,7 +80,7 @@ export default function TechApproachSection() {
     }
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
@@ -131,7 +136,7 @@ export default function TechApproachSection() {
                     {tech.name}
                   </div>
                   <div className="text-xs text-gray-500">
-                    {tech.category}
+                    {translateTechCategory(tech.category)}
                   </div>
                 </motion.div>
               ))}

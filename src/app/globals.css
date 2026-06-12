@@ -6,6 +6,33 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Tailwind v4 theme — replaces the unloaded tailwind.config.js colors.
+   primary/accent map to the Modern Heritage palette so utilities like
+   bg-primary and text-accent-emerald render heritage colors. */
+@theme {
+  --color-primary: #0e7c7b;
+  --color-primary-gray: #333333;
+  --color-secondary: #666666;
+  --color-secondary-light: #999999;
+  --color-accent-emerald: #0e7c7b;
+  --color-accent-crimson: #c4572e;
+  --color-accent-emerald-light: #e6f2f2;
+  --color-accent-crimson-light: #f9ece5;
+  --color-background-gray: #f8f8f8;
+  --color-background-cream: #fafafa;
+  --color-heritage-turquoise: #0e7c7b;
+  --color-heritage-turquoise-light: #e6f2f2;
+  --color-heritage-lapis: #1a3a6b;
+  --color-heritage-lapis-light: #e9eef6;
+  --color-heritage-terracotta: #c4572e;
+  --color-heritage-terracotta-light: #f9ece5;
+  --color-heritage-saffron: #b97a17;
+  --color-heritage-saffron-bright: #e8a33d;
+  --color-heritage-saffron-light: #fbf1df;
+  --color-heritage-ivory: #faf6ef;
+  --color-heritage-sand: #f3ecdf;
+}
+
 
 /* Hero Section Consistent Styling */
 .hero-section {
@@ -98,14 +125,28 @@
   --cream: #fafafa;
 
   /* Accent Colors - Used Sparingly */
-  --accent-emerald: #16a085;
-  /* Muted emerald - only for key CTAs */
-  --accent-crimson: #c0392b;
-  /* Muted crimson - only for highlights */
-  --accent-emerald-light: #e8f5f0;
-  /* Very light emerald for subtle backgrounds */
-  --accent-crimson-light: #fdeaea;
-  /* Very light crimson for subtle backgrounds */
+  /* Modern Heritage palette: İznik turquoise + terracotta replace the old
+     emerald/crimson under the same variable names so every existing
+     component picks them up without changes. */
+  --accent-emerald: #0e7c7b;
+  /* İznik turquoise - key CTAs */
+  --accent-crimson: #c4572e;
+  /* Terracotta - highlights */
+  --accent-emerald-light: #e6f2f2;
+  /* Very light turquoise for subtle backgrounds */
+  --accent-crimson-light: #f9ece5;
+  /* Very light terracotta for subtle backgrounds */
+
+  /* Modern Heritage extended palette */
+  --heritage-turquoise: #0e7c7b;
+  --heritage-turquoise-deep: #095d5c;
+  --heritage-lapis: #1a3a6b;
+  --heritage-lapis-deep: #122a4f;
+  --heritage-terracotta: #c4572e;
+  --heritage-saffron: #e8a33d;
+  --heritage-ivory: #faf6ef;
+  /* Warm ivory for alternate section backgrounds */
+  --heritage-sand: #f3ecdf;
 
   /* Swiss Design Typography */
   --font-primary: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -131,11 +172,11 @@
   /* Master Rounded Design Radius System */
   --border-width: 1px;
   --radius-none: 0;
-  --radius-sm: 12px;
-  --radius-md: 16px;
-  --radius-lg: 24px;
-  --radius-xl: 32px;
-  --radius-2xl: 48px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-xl: 14px;
+  --radius-2xl: 20px;
 
   /* Swiss Design Shadows - Very Subtle */
   --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.04);
@@ -1083,4 +1124,81 @@ textarea.form-input {
     margin: 1.75rem 0;
     border-radius: 8px;
   }
+}
+/* ═══════════════════════════════════════════════════════════════════
+   Modern Heritage Design System
+   Swiss grid discipline + South Asian / Anatolian visual language
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ── Display type for RTL locales ──
+   --font-nastaliq / --font-arabic-display are set by next/font in the
+   root layout; system fallbacks keep ur/ar readable if they fail. */
+[dir='rtl'][lang='ur'] h1,
+[dir='rtl'][lang='ur'] h2,
+[dir='rtl'][lang='ur'] h3 {
+  font-family: var(--font-nastaliq, 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif);
+  line-height: 2;
+  letter-spacing: 0;
+}
+
+[dir='rtl'][lang='ar'] h1,
+[dir='rtl'][lang='ar'] h2,
+[dir='rtl'][lang='ar'] h3 {
+  font-family: var(--font-arabic-display, 'Amiri', 'Noto Naskh Arabic', serif);
+  line-height: 1.7;
+  letter-spacing: 0;
+}
+
+/* ── Arch masks ──
+   Pointed (Mughal/Ottoman) arch for images and cards. */
+.arch-mask {
+  clip-path: polygon(
+    0% 100%, 0% 28%,
+    2% 21%, 6% 14%, 12% 8%, 20% 4%, 30% 1.5%, 40% 0.3%, 50% 0%,
+    60% 0.3%, 70% 1.5%, 80% 4%, 88% 8%, 94% 14%, 98% 21%, 100% 28%,
+    100% 100%
+  );
+}
+
+.arch-mask-tall {
+  aspect-ratio: 3 / 4;
+}
+
+/* ── Heritage section backgrounds ── */
+.heritage-section-ivory {
+  background-color: var(--heritage-ivory);
+}
+
+.heritage-section-lapis {
+  background-color: var(--heritage-lapis);
+  color: var(--pure-white);
+}
+
+/* ── Girih pattern as tiling background (inline SVG, currentColor-safe) ── */
+.girih-bg {
+  position: relative;
+}
+
+.girih-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='none' stroke='%230e7c7b' stroke-width='1'%3E%3Cpath d='M48 8 L72 20 L80 48 L72 76 L48 88 L24 76 L16 48 L24 20 Z'/%3E%3Cpath d='M48 24 L62 31 L67 48 L62 65 L48 72 L34 65 L29 48 L34 31 Z'/%3E%3Cpath d='M48 8 L48 24 M72 20 L62 31 M80 48 L67 48 M72 76 L62 65 M48 88 L48 72 M24 76 L34 65 M16 48 L29 48 M24 20 L34 31'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 96px 96px;
+}
+
+.girih-bg-saffron::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='none' stroke='%23e8a33d' stroke-width='1'%3E%3Cpath d='M48 8 L72 20 L80 48 L72 76 L48 88 L24 76 L16 48 L24 20 Z'/%3E%3Cpath d='M48 24 L62 31 L67 48 L62 65 L48 72 L34 65 L29 48 L34 31 Z'/%3E%3Cpath d='M48 8 L48 24 M72 20 L62 31 M80 48 L67 48 M72 76 L62 65 M48 88 L48 72 M24 76 L34 65 M16 48 L29 48 M24 20 L34 31'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.girih-bg-strong::before {
+  opacity: 0.1;
+}
+
+/* Fade the pattern toward the top so heading areas stay clean */
+.girih-bg-fade::before {
+  -webkit-mask-image: linear-gradient(to top, black 20%, transparent 75%);
+  mask-image: linear-gradient(to top, black 20%, transparent 75%);
 }

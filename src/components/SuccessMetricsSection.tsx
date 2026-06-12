@@ -1,7 +1,7 @@
 // src/components/SuccessMetricsSection.tsx
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import SectionHeader from '@/components/SectionHeader';
 import Button from '@/components/Button';
 import {
@@ -73,41 +73,39 @@ export default function SuccessMetricsSection() {
   const testimonialMetrics = [
     {
       metric: tStats('clientSatisfaction95'),
-      label: 'Client Satisfaction',
-      quote: 'Exceeded our expectations in every aspect',
-      client: 'Tech Startup CEO'
+      label:  t('testimonials.0.label')  as string,
+      quote:  t('testimonials.0.quote')  as string,
+      client: t('testimonials.0.client') as string,
     },
     {
       metric: tStats('responseTime24h'),
-      label: 'Response Time',
-      quote: 'Lightning-fast support when we need it',
-      client: 'E-commerce Director'
+      label:  t('testimonials.1.label')  as string,
+      quote:  t('testimonials.1.quote')  as string,
+      client: t('testimonials.1.client') as string,
     },
     {
       metric: tStats('onTimeDelivery100'),
-      label: 'On-Time Delivery',
-      quote: 'Always delivers on promises and deadlines',
-      client: 'Project Manager'
-    }
+      label:  t('testimonials.2.label')  as string,
+      quote:  t('testimonials.2.quote')  as string,
+      client: t('testimonials.2.client') as string,
+    },
   ];
 
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.1
-      }
-    }
+      transition: { staggerChildren: 0.1 },
+    },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 24 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: [0.4, 0, 0.2, 1] }
-    }
+      transition: { duration: 0.6, ease: [0.4, 0, 0.2, 1] },
+    },
   };
 
   return (
