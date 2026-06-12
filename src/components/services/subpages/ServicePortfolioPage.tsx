@@ -10,20 +10,7 @@ interface ServicePortfolioPageProps {
   accentColor: string;
 }
 
-const colorMap: Record<string, { bg: string; bgLight: string; text: string; gradient: string; gradientOverlay: string; hoverBorder: string }> = {
-  purple: { bg: 'bg-purple-600', bgLight: 'bg-purple-50', text: 'text-purple-600', gradient: 'from-purple-600 to-purple-800', gradientOverlay: 'from-purple-600/90 to-purple-900/90', hoverBorder: 'hover:border-purple-300' },
-  teal: { bg: 'bg-teal-600', bgLight: 'bg-teal-50', text: 'text-teal-600', gradient: 'from-teal-600 to-teal-800', gradientOverlay: 'from-teal-600/90 to-teal-900/90', hoverBorder: 'hover:border-teal-300' },
-  blue: { bg: 'bg-blue-600', bgLight: 'bg-blue-50', text: 'text-blue-600', gradient: 'from-blue-600 to-blue-800', gradientOverlay: 'from-blue-600/90 to-blue-900/90', hoverBorder: 'hover:border-blue-300' },
-  emerald: { bg: 'bg-emerald-600', bgLight: 'bg-emerald-50', text: 'text-emerald-600', gradient: 'from-emerald-600 to-emerald-800', gradientOverlay: 'from-emerald-600/90 to-emerald-900/90', hoverBorder: 'hover:border-emerald-300' },
-  orange: { bg: 'bg-orange-600', bgLight: 'bg-orange-50', text: 'text-orange-600', gradient: 'from-orange-600 to-orange-800', gradientOverlay: 'from-orange-600/90 to-orange-900/90', hoverBorder: 'hover:border-orange-300' },
-  rose: { bg: 'bg-rose-600', bgLight: 'bg-rose-50', text: 'text-rose-600', gradient: 'from-rose-600 to-rose-800', gradientOverlay: 'from-rose-600/90 to-rose-900/90', hoverBorder: 'hover:border-rose-300' },
-  cyan: { bg: 'bg-cyan-600', bgLight: 'bg-cyan-50', text: 'text-cyan-600', gradient: 'from-cyan-600 to-cyan-800', gradientOverlay: 'from-cyan-600/90 to-cyan-900/90', hoverBorder: 'hover:border-cyan-300' },
-  amber: { bg: 'bg-amber-600', bgLight: 'bg-amber-50', text: 'text-amber-600', gradient: 'from-amber-600 to-amber-800', gradientOverlay: 'from-amber-600/90 to-amber-900/90', hoverBorder: 'hover:border-amber-300' },
-  indigo: { bg: 'bg-indigo-600', bgLight: 'bg-indigo-50', text: 'text-indigo-600', gradient: 'from-indigo-600 to-indigo-800', gradientOverlay: 'from-indigo-600/90 to-indigo-900/90', hoverBorder: 'hover:border-indigo-300' },
-  violet: { bg: 'bg-violet-600', bgLight: 'bg-violet-50', text: 'text-violet-600', gradient: 'from-violet-600 to-violet-800', gradientOverlay: 'from-violet-600/90 to-violet-900/90', hoverBorder: 'hover:border-violet-300' },
-  red: { bg: 'bg-red-600', bgLight: 'bg-red-50', text: 'text-red-600', gradient: 'from-red-600 to-red-800', gradientOverlay: 'from-red-600/90 to-red-900/90', hoverBorder: 'hover:border-red-300' },
-  pink: { bg: 'bg-pink-600', bgLight: 'bg-pink-50', text: 'text-pink-600', gradient: 'from-pink-600 to-pink-800', gradientOverlay: 'from-pink-600/90 to-pink-900/90', hoverBorder: 'hover:border-pink-300' },
-};
+import { richColorMap as colorMap } from '@/lib/heritage-accents';
 
 export default function ServicePortfolioPage({
   serviceSlug,
@@ -64,7 +51,7 @@ export default function ServicePortfolioPage({
           <span className={`${colors.text} font-medium tracking-wider uppercase text-sm mb-4 block`}>
             {subtitle}
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+          <h1 className="text-display font-light text-gray-900 leading-none mb-6">
             {headline}
           </h1>
           <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">

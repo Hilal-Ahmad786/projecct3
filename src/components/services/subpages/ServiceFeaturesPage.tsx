@@ -9,20 +9,7 @@ interface ServiceFeaturesPageProps {
   accentColor: string;
 }
 
-const colorMap: Record<string, { bg: string; bgLight: string; text: string; border: string; gradient: string; hoverBorder: string }> = {
-  purple: { bg: 'bg-purple-600', bgLight: 'bg-purple-100', text: 'text-purple-600', border: 'border-purple-500', gradient: 'from-purple-600 to-purple-800', hoverBorder: 'hover:border-purple-300' },
-  teal: { bg: 'bg-teal-600', bgLight: 'bg-teal-100', text: 'text-teal-600', border: 'border-teal-500', gradient: 'from-teal-600 to-teal-800', hoverBorder: 'hover:border-teal-300' },
-  blue: { bg: 'bg-blue-600', bgLight: 'bg-blue-100', text: 'text-blue-600', border: 'border-blue-500', gradient: 'from-blue-600 to-blue-800', hoverBorder: 'hover:border-blue-300' },
-  emerald: { bg: 'bg-emerald-600', bgLight: 'bg-emerald-100', text: 'text-emerald-600', border: 'border-emerald-500', gradient: 'from-emerald-600 to-emerald-800', hoverBorder: 'hover:border-emerald-300' },
-  orange: { bg: 'bg-orange-600', bgLight: 'bg-orange-100', text: 'text-orange-600', border: 'border-orange-500', gradient: 'from-orange-600 to-orange-800', hoverBorder: 'hover:border-orange-300' },
-  rose: { bg: 'bg-rose-600', bgLight: 'bg-rose-100', text: 'text-rose-600', border: 'border-rose-500', gradient: 'from-rose-600 to-rose-800', hoverBorder: 'hover:border-rose-300' },
-  cyan: { bg: 'bg-cyan-600', bgLight: 'bg-cyan-100', text: 'text-cyan-600', border: 'border-cyan-500', gradient: 'from-cyan-600 to-cyan-800', hoverBorder: 'hover:border-cyan-300' },
-  amber: { bg: 'bg-amber-600', bgLight: 'bg-amber-100', text: 'text-amber-600', border: 'border-amber-500', gradient: 'from-amber-600 to-amber-800', hoverBorder: 'hover:border-amber-300' },
-  indigo: { bg: 'bg-indigo-600', bgLight: 'bg-indigo-100', text: 'text-indigo-600', border: 'border-indigo-500', gradient: 'from-indigo-600 to-indigo-800', hoverBorder: 'hover:border-indigo-300' },
-  violet: { bg: 'bg-violet-600', bgLight: 'bg-violet-100', text: 'text-violet-600', border: 'border-violet-500', gradient: 'from-violet-600 to-violet-800', hoverBorder: 'hover:border-violet-300' },
-  red: { bg: 'bg-red-600', bgLight: 'bg-red-100', text: 'text-red-600', border: 'border-red-500', gradient: 'from-red-600 to-red-800', hoverBorder: 'hover:border-red-300' },
-  pink: { bg: 'bg-pink-600', bgLight: 'bg-pink-100', text: 'text-pink-600', border: 'border-pink-500', gradient: 'from-pink-600 to-pink-800', hoverBorder: 'hover:border-pink-300' },
-};
+import { richColorMap as colorMap } from '@/lib/heritage-accents';
 
 const iconComponents: Record<string, JSX.Element> = {
   brain: <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg>,
@@ -96,7 +83,7 @@ export default function ServiceFeaturesPage({
           >
             {subtitle}
           </motion.span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+          <h1 className="text-display font-light text-gray-900 leading-none mb-6">
             {headline}
           </h1>
           <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">

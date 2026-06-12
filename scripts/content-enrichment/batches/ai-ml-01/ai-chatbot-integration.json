@@ -1,0 +1,278 @@
+{
+  "slug": "ai-chatbot-integration",
+  "en": {
+    "name": "AI Chatbot Integration",
+    "shortDescription": "Add a GPT- or Claude-powered assistant to your website or app that answers from your own knowledge base — accurate, on-brand, and live in weeks, with human handoff built in.",
+    "fullDescription": "A generic chatbot frustrates customers; a well-integrated one resolves them. We build assistants on GPT-4-class and Claude models, grounded in your actual content through retrieval-augmented generation (RAG) — your help center, product docs, policies, and FAQs become the source of every answer, with citations. The integration covers what production demands: streaming responses, multi-turn context, intent routing, human handoff to your support desk, multilingual replies, and analytics on what customers actually ask. We tune the assistant's voice to your brand, set guardrails so it declines what it shouldn't answer, and connect it to Intercom, Zendesk, or your own UI. Most projects go from kickoff to a live, monitored chatbot in 3–6 weeks.",
+    "features": [
+      "GPT-4 & Claude Model Integration",
+      "Custom Knowledge Base (RAG) with Citations",
+      "Multi-Turn Conversation Memory",
+      "Intent Recognition & Smart Routing",
+      "Human Handoff to Your Support Desk",
+      "Multilingual Support",
+      "Brand Voice & Guardrail Configuration",
+      "Conversation Analytics & Insights"
+    ],
+    "benefits": [
+      "Answer customer questions instantly, 24/7",
+      "Cut support ticket volume on repetitive questions",
+      "Consistent, sourced answers instead of guesswork",
+      "Scale support without growing the team",
+      "Learn what customers ask from conversation analytics",
+      "Higher satisfaction from faster first responses"
+    ],
+    "metaTitle": "AI Chatbot Integration — GPT & Claude | PakSoft",
+    "metaDescription": "Custom GPT and Claude chatbots grounded in your knowledge base: cited answers, human handoff, multilingual support. Live in 3–6 weeks — request a free demo.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Scope & Knowledge Audit", "description": "We define what the chatbot should handle, what it must refuse, and where it hands off to humans. Then we audit your content sources — help center, docs, policies — for gaps the bot would expose." },
+        { "step": 2, "title": "Knowledge Pipeline & RAG Setup", "description": "Your content is chunked, embedded, and indexed in a vector database with a sync pipeline so updates flow automatically. We tune retrieval until the right passages surface for real customer questions." },
+        { "step": 3, "title": "Assistant Build & Brand Voice", "description": "We engineer the system prompt, response format, and guardrails, and configure tone to match your brand. Streaming, conversation memory, and intent routing are built into the integration." },
+        { "step": 4, "title": "Channel Integration", "description": "The assistant is embedded in your website, app, or support platform such as Intercom or Zendesk, with human handoff wired to your team's queue. We test the full journey from first question to escalation." },
+        { "step": 5, "title": "Evaluation & QA", "description": "Before launch we run the bot against a test set of real customer questions and score accuracy, groundedness, and tone. Wrong or ungrounded answers are fixed at the retrieval or prompt level, not patched ad hoc." },
+        { "step": 6, "title": "Launch & Continuous Tuning", "description": "We launch to a portion of traffic first and monitor resolution rate, handoff rate, and customer feedback. Weekly reviews of failed conversations drive ongoing improvements to content and prompts." }
+      ],
+      "faq": [
+        { "question": "How do you stop the chatbot from making things up?", "answer": "Grounding is the main defense: with RAG, the model answers only from retrieved passages of your own content and cites its sources. We add guardrails that make the bot say \"I don't know\" and offer a human instead of guessing when retrieval finds nothing relevant. Pre-launch evaluation against real customer questions measures the hallucination rate before customers ever see the bot." },
+        { "question": "What content do we need to provide?", "answer": "Whatever already answers customer questions: help center articles, product documentation, policy pages, internal macros, even past ticket resolutions. A few dozen well-written articles are enough to start — coverage matters more than volume. The knowledge audit in week one shows exactly where the gaps are." },
+        { "question": "How much does it cost to run per month?", "answer": "Model usage is usually the smallest line item: a typical grounded answer costs a fraction of a cent to a few cents depending on the model, so even thousands of conversations a month typically stay in the tens of dollars range. Vector database hosting adds a modest fixed cost. Compare that against the loaded cost of a human answering the same repetitive questions." },
+        { "question": "GPT or Claude — which is better for chatbots?", "answer": "Both are excellent, and the honest answer is: it depends on your content and tone requirements, so we benchmark both on your actual questions. Claude tends to follow nuanced instructions and refusal policies closely; GPT-4-class models have broad ecosystem support. The architecture we build is model-agnostic, so you can switch later without rebuilding." },
+        { "question": "Can it hand over to a human agent?", "answer": "Yes, and it should — handoff is a feature, not a failure. We configure triggers: explicit customer request, detected frustration, low-confidence answers, or sensitive topics like billing disputes. The human agent receives the full conversation transcript so the customer never repeats themselves." },
+        { "question": "Does it work in multiple languages?", "answer": "Modern LLMs handle major languages well, including Turkish, German, Arabic, and Urdu — the bot can answer in the customer's language even if your knowledge base is in English. For your most important non-English markets we recommend evaluating answer quality per language and translating the highest-traffic articles for best accuracy." },
+        { "question": "How does the bot stay up to date when our docs change?", "answer": "The ingestion pipeline re-syncs your sources on a schedule or via webhooks, so published changes reach the bot within minutes to hours without manual work. Deleted or outdated pages drop out of the index automatically. We also flag questions the bot answered from stale content during weekly reviews." },
+        { "question": "What about data privacy and where our data goes?", "answer": "Your knowledge base lives in your own vector database, and API providers like OpenAI and Anthropic do not train on business API data under their standard terms. We can add PII redaction before messages reach the model, EU data residency options, and self-hosted open-source models where regulation demands full control." }
+      ],
+      "technologies": [
+        { "icon": "openai", "name": "OpenAI GPT-4" },
+        { "icon": "anthropic", "name": "Anthropic Claude" },
+        { "icon": "langchain", "name": "LangChain" },
+        { "icon": "pinecone", "name": "Pinecone" },
+        { "icon": "vercel", "name": "Vercel AI SDK" },
+        { "icon": "intercom", "name": "Intercom" },
+        { "icon": "zendesk", "name": "Zendesk" },
+        { "icon": "langsmith", "name": "LangSmith" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Yapay Zeka Chatbot Entegrasyonu",
+    "shortDescription": "Web sitenize veya uygulamanıza, kendi bilgi tabanınızdan yanıt veren GPT ya da Claude destekli bir asistan ekleyin — doğru, markanıza uygun, insan devri yerleşik ve haftalar içinde yayında.",
+    "fullDescription": "Sıradan bir chatbot müşteriyi yorar; iyi entegre edilmiş olanı ise sorununu çözer. GPT-4 sınıfı ve Claude modelleri üzerine, retrieval-augmented generation (RAG) ile gerçek içeriğinize dayanan asistanlar geliştiriyoruz — yardım merkeziniz, ürün dokümanlarınız, politikalarınız ve SSS'leriniz her yanıtın kaynağı olur, üstelik atıflarla. Entegrasyon, üretimin gerektirdiği her şeyi kapsar: akışlı yanıtlar, çok turlu bağlam, niyet yönlendirme, destek masanıza insan devri, çok dilli yanıtlar ve müşterilerin gerçekte ne sorduğuna dair analizler. Asistanın ses tonunu markanıza göre ayarlar, yanıtlamaması gerekenleri reddetmesi için koruma bariyerleri koyar ve Intercom, Zendesk veya kendi arayüzünüze bağlarız. Çoğu proje, başlangıçtan canlı ve izlenen bir chatbota 3–6 haftada ulaşır.",
+    "features": [
+      "GPT-4 ve Claude Model Entegrasyonu",
+      "Atıflı Özel Bilgi Tabanı (RAG)",
+      "Çok Turlu Konuşma Hafızası",
+      "Niyet Tanıma ve Akıllı Yönlendirme",
+      "Destek Ekibinize İnsan Devri",
+      "Çok Dilli Destek",
+      "Marka Sesi ve Koruma Bariyeri Yapılandırması",
+      "Konuşma Analitiği ve İçgörüler"
+    ],
+    "benefits": [
+      "Müşteri sorularını 7/24 anında yanıtlayın",
+      "Tekrarlayan sorularda destek talebi hacmini azaltın",
+      "Tahmin yerine tutarlı, kaynaklı yanıtlar",
+      "Ekip büyütmeden desteği ölçeklendirin",
+      "Konuşma analitiğiyle müşterilerin ne sorduğunu öğrenin",
+      "Daha hızlı ilk yanıtla daha yüksek memnuniyet"
+    ],
+    "metaTitle": "Yapay Zeka Chatbot Entegrasyonu | PakSoft",
+    "metaDescription": "Bilgi tabanınıza dayalı özel GPT ve Claude chatbotları: kaynaklı yanıtlar, insan devri, çok dilli destek. 3–6 haftada yayında — ücretsiz demo talep edin.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Kapsam ve Bilgi Denetimi", "description": "Chatbotun neleri yanıtlayacağını, neleri reddedeceğini ve nerede insana devredeceğini tanımlarız. Ardından içerik kaynaklarınızı — yardım merkezi, dokümanlar, politikalar — botun açığa çıkaracağı boşluklar için denetleriz." },
+        { "step": 2, "title": "Bilgi Hattı ve RAG Kurulumu", "description": "İçeriğiniz parçalanır, embedding'e dönüştürülür ve bir vektör veritabanında dizinlenir; güncellemelerin otomatik akması için senkronizasyon hattı kurulur. Gerçek müşteri soruları için doğru pasajlar öne çıkana kadar getirme mantığını ince ayar yaparız." },
+        { "step": 3, "title": "Asistan Geliştirme ve Marka Sesi", "description": "Sistem promptunu, yanıt biçimini ve koruma bariyerlerini tasarlar, tonu markanıza uyacak şekilde yapılandırırız. Akışlı yanıtlar, konuşma hafızası ve niyet yönlendirme entegrasyonun parçasıdır." },
+        { "step": 4, "title": "Kanal Entegrasyonu", "description": "Asistan; web sitenize, uygulamanıza veya Intercom, Zendesk gibi destek platformunuza gömülür, insan devri ekibinizin kuyruğuna bağlanır. İlk sorudan eskalasyona kadar tüm yolculuğu test ederiz." },
+        { "step": 5, "title": "Değerlendirme ve QA", "description": "Yayından önce botu gerçek müşteri sorularından oluşan bir test setiyle çalıştırır; doğruluğu, kaynak dayanağını ve tonu puanlarız. Yanlış veya dayanaksız yanıtlar geçici yamalarla değil, getirme veya prompt düzeyinde düzeltilir." },
+        { "step": 6, "title": "Yayın ve Sürekli İyileştirme", "description": "Önce trafiğin bir bölümüne açar; çözüm oranını, devir oranını ve müşteri geri bildirimini izleriz. Başarısız konuşmaların haftalık incelemesi, içerik ve promptlarda sürekli iyileştirmeyi besler." }
+      ],
+      "faq": [
+        { "question": "Chatbotun uydurma yanıtlar vermesini nasıl engelliyorsunuz?", "answer": "Ana savunma, yanıtları kaynağa dayandırmaktır: RAG ile model yalnızca kendi içeriğinizden getirilen pasajlara dayanarak yanıt verir ve kaynaklarını gösterir. Getirme ilgili bir şey bulamadığında botun tahmin etmek yerine \"bilmiyorum\" deyip insan önermesini sağlayan bariyerler ekleriz. Yayın öncesi değerlendirme, halüsinasyon oranını müşteriler botu görmeden önce ölçer." },
+        { "question": "Hangi içerikleri sağlamamız gerekiyor?", "answer": "Müşteri sorularını halihazırda yanıtlayan her şeyi: yardım merkezi makaleleri, ürün dokümantasyonu, politika sayfaları, dahili hazır yanıtlar, hatta geçmiş talep çözümleri. Başlamak için iyi yazılmış birkaç düzine makale yeterlidir — kapsam, hacimden daha önemlidir. İlk haftadaki bilgi denetimi boşlukların tam olarak nerede olduğunu gösterir." },
+        { "question": "Aylık işletme maliyeti ne kadar?", "answer": "Model kullanımı genellikle en küçük kalemdir: Kaynaklı tipik bir yanıt, modele bağlı olarak bir kuruşun altından birkaç kuruşa mal olur; ayda binlerce konuşma bile çoğunlukla onlarca dolar seviyesinde kalır. Vektör veritabanı barındırma mütevazı bir sabit maliyet ekler. Bunu, aynı tekrarlayan soruları yanıtlayan bir çalışanın toplam maliyetiyle karşılaştırın." },
+        { "question": "GPT mi Claude mu — chatbot için hangisi daha iyi?", "answer": "İkisi de mükemmeldir; dürüst yanıt şu: İçeriğinize ve ton gereksinimlerinize bağlıdır, bu yüzden ikisini de gerçek sorularınız üzerinde kıyaslarız. Claude, incelikli talimatlara ve reddetme politikalarına sıkı uyma eğilimindedir; GPT-4 sınıfı modellerin ekosistem desteği geniştir. Kurduğumuz mimari modelden bağımsızdır; ileride yeniden inşa etmeden geçiş yapabilirsiniz." },
+        { "question": "Konuşmayı bir insan temsilciye devredebilir mi?", "answer": "Evet, hatta devretmelidir — devir bir hata değil, özelliktir. Tetikleyicileri yapılandırırız: müşterinin açık talebi, algılanan memnuniyetsizlik, düşük güvenli yanıtlar veya fatura anlaşmazlıkları gibi hassas konular. İnsan temsilci konuşmanın tam dökümünü alır; müşteri kendini asla tekrarlamaz." },
+        { "question": "Birden çok dilde çalışır mı?", "answer": "Modern LLM'ler Türkçe, Almanca, Arapça ve Urduca dahil başlıca dilleri iyi yönetir — bilgi tabanınız İngilizce olsa bile bot müşterinin dilinde yanıt verebilir. En önemli pazarlarınız için yanıt kalitesini dil bazında değerlendirmenizi ve en çok ziyaret edilen makaleleri çevirmenizi öneririz; doğruluk böyle en yüksek olur." },
+        { "question": "Dokümanlarımız değiştiğinde bot nasıl güncel kalıyor?", "answer": "İçerik alma hattı kaynaklarınızı zamanlanmış olarak veya webhook'larla yeniden senkronize eder; yayınlanan değişiklikler manuel iş olmadan dakikalar ila saatler içinde bota ulaşır. Silinen veya eskiyen sayfalar dizinden otomatik düşer. Haftalık incelemelerde botun bayat içerikten yanıtladığı soruları da işaretleriz." },
+        { "question": "Veri gizliliği ve verilerimizin nereye gittiği konusunda durum nedir?", "answer": "Bilgi tabanınız kendi vektör veritabanınızda durur; OpenAI ve Anthropic gibi API sağlayıcıları standart koşullarında kurumsal API verileriyle model eğitmez. Mesajlar modele ulaşmadan önce kişisel veri maskeleme, AB veri yerleşimi seçenekleri ve mevzuatın tam kontrol gerektirdiği durumlar için kendi sunucunuzda barındırılan açık kaynak modeller ekleyebiliriz." }
+      ],
+      "technologies": [
+        { "icon": "openai", "name": "OpenAI GPT-4" },
+        { "icon": "anthropic", "name": "Anthropic Claude" },
+        { "icon": "langchain", "name": "LangChain" },
+        { "icon": "pinecone", "name": "Pinecone" },
+        { "icon": "vercel", "name": "Vercel AI SDK" },
+        { "icon": "intercom", "name": "Intercom" },
+        { "icon": "zendesk", "name": "Zendesk" },
+        { "icon": "langsmith", "name": "LangSmith" }
+      ]
+    }
+  },
+  "de": {
+    "name": "KI-Chatbot-Integration",
+    "shortDescription": "Ergänzen Sie Ihre Website oder App um einen GPT- oder Claude-Assistenten, der aus Ihrer eigenen Wissensbasis antwortet — präzise, markenkonform, mit menschlicher Übergabe und in wenigen Wochen live.",
+    "fullDescription": "Ein generischer Chatbot frustriert Kunden; ein gut integrierter löst ihre Anliegen. Wir bauen Assistenten auf GPT-4-Klasse- und Claude-Modellen, verankert in Ihren echten Inhalten per Retrieval-Augmented Generation (RAG) — Helpcenter, Produktdokumentation, Richtlinien und FAQs werden zur Quelle jeder Antwort, mit Quellenangaben. Die Integration deckt ab, was der Produktivbetrieb verlangt: Streaming-Antworten, mehrstufiger Gesprächskontext, Intent-Routing, Übergabe an Ihren Support, mehrsprachige Antworten und Analysen dessen, was Kunden wirklich fragen. Wir stimmen die Tonalität auf Ihre Marke ab, setzen Guardrails, damit der Bot Unzulässiges ablehnt, und verbinden ihn mit Intercom, Zendesk oder Ihrer eigenen Oberfläche. Die meisten Projekte gehen in 3–6 Wochen vom Kickoff zum live geschalteten, überwachten Chatbot.",
+    "features": [
+      "GPT-4- & Claude-Modellintegration",
+      "Eigene Wissensbasis (RAG) mit Quellenangaben",
+      "Mehrstufiges Gesprächsgedächtnis",
+      "Intent-Erkennung & intelligentes Routing",
+      "Übergabe an Ihren Support-Desk",
+      "Mehrsprachige Unterstützung",
+      "Markenstimme & Guardrail-Konfiguration",
+      "Gesprächsanalysen & Insights"
+    ],
+    "benefits": [
+      "Kundenfragen sofort beantworten, rund um die Uhr",
+      "Ticketvolumen bei wiederkehrenden Fragen senken",
+      "Konsistente, belegte Antworten statt Rätselraten",
+      "Support skalieren, ohne das Team zu vergrößern",
+      "Aus Gesprächsanalysen lernen, was Kunden fragen",
+      "Höhere Zufriedenheit durch schnellere Erstantworten"
+    ],
+    "metaTitle": "KI-Chatbot-Integration — GPT & Claude | PakSoft",
+    "metaDescription": "Individuelle GPT- und Claude-Chatbots auf Basis Ihrer Wissensbasis: belegte Antworten, menschliche Übergabe, mehrsprachig. Live in 3–6 Wochen — Demo anfragen.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Scope & Wissens-Audit", "description": "Wir definieren, was der Chatbot bearbeiten soll, was er ablehnen muss und wo er an Menschen übergibt. Anschließend prüfen wir Ihre Inhaltsquellen — Helpcenter, Doku, Richtlinien — auf Lücken, die der Bot offenlegen würde." },
+        { "step": 2, "title": "Wissens-Pipeline & RAG-Aufbau", "description": "Ihre Inhalte werden segmentiert, eingebettet und in einer Vektordatenbank indexiert, mit einer Sync-Pipeline, die Aktualisierungen automatisch übernimmt. Das Retrieval tunen wir, bis bei echten Kundenfragen die richtigen Passagen erscheinen." },
+        { "step": 3, "title": "Assistenten-Build & Markenstimme", "description": "Wir entwickeln System-Prompt, Antwortformat und Guardrails und konfigurieren die Tonalität passend zu Ihrer Marke. Streaming, Gesprächsgedächtnis und Intent-Routing sind fester Bestandteil der Integration." },
+        { "step": 4, "title": "Kanal-Integration", "description": "Der Assistent wird in Ihre Website, App oder Support-Plattform wie Intercom oder Zendesk eingebettet, die Übergabe an Menschen mit der Queue Ihres Teams verbunden. Wir testen die gesamte Journey von der ersten Frage bis zur Eskalation." },
+        { "step": 5, "title": "Evaluation & QA", "description": "Vor dem Launch testen wir den Bot gegen ein Set echter Kundenfragen und bewerten Genauigkeit, Quellentreue und Ton. Falsche oder unbelegte Antworten werden auf Retrieval- oder Prompt-Ebene behoben, nicht notdürftig geflickt." },
+        { "step": 6, "title": "Launch & laufendes Tuning", "description": "Wir starten zunächst mit einem Teil des Traffics und überwachen Lösungsquote, Übergaberate und Kundenfeedback. Wöchentliche Reviews gescheiterter Gespräche treiben kontinuierliche Verbesserungen an Inhalten und Prompts." }
+      ],
+      "faq": [
+        { "question": "Wie verhindern Sie, dass der Chatbot Dinge erfindet?", "answer": "Die wichtigste Verteidigung ist Grounding: Mit RAG antwortet das Modell nur aus abgerufenen Passagen Ihrer eigenen Inhalte und nennt die Quellen. Guardrails sorgen dafür, dass der Bot \"Das weiß ich nicht\" sagt und einen Menschen anbietet, statt zu raten, wenn das Retrieval nichts Relevantes findet. Die Evaluation vor dem Launch misst die Halluzinationsrate, bevor Kunden den Bot je sehen." },
+        { "question": "Welche Inhalte müssen wir liefern?", "answer": "Alles, was Kundenfragen heute schon beantwortet: Helpcenter-Artikel, Produktdokumentation, Richtlinienseiten, interne Textbausteine, sogar gelöste Tickets. Ein paar Dutzend gut geschriebene Artikel reichen für den Start — Abdeckung zählt mehr als Menge. Das Wissens-Audit in Woche eins zeigt genau, wo die Lücken liegen." },
+        { "question": "Was kostet der monatliche Betrieb?", "answer": "Die Modellnutzung ist meist der kleinste Posten: Eine typische belegte Antwort kostet je nach Modell Bruchteile eines Cents bis wenige Cent, sodass selbst Tausende Gespräche pro Monat meist im zweistelligen Dollarbereich bleiben. Das Hosting der Vektordatenbank kommt als moderater Fixbetrag hinzu. Vergleichen Sie das mit den Vollkosten eines Menschen, der dieselben wiederkehrenden Fragen beantwortet." },
+        { "question": "GPT oder Claude — was ist besser für Chatbots?", "answer": "Beide sind ausgezeichnet, und die ehrliche Antwort lautet: Es hängt von Ihren Inhalten und Tonalitätsanforderungen ab, deshalb benchmarken wir beide auf Ihren echten Fragen. Claude folgt nuancierten Anweisungen und Ablehnungsregeln tendenziell sehr genau; GPT-4-Klasse-Modelle haben breite Ökosystem-Unterstützung. Unsere Architektur ist modellagnostisch — Sie können später wechseln, ohne neu zu bauen." },
+        { "question": "Kann der Bot an einen menschlichen Agenten übergeben?", "answer": "Ja, und das soll er auch — die Übergabe ist ein Feature, kein Versagen. Wir konfigurieren Auslöser: ausdrücklicher Kundenwunsch, erkannte Frustration, Antworten mit niedriger Konfidenz oder sensible Themen wie Abrechnungsstreitigkeiten. Der menschliche Agent erhält das vollständige Transkript, sodass sich der Kunde nie wiederholen muss." },
+        { "question": "Funktioniert der Bot in mehreren Sprachen?", "answer": "Moderne LLMs beherrschen die großen Sprachen gut, darunter Deutsch, Türkisch, Arabisch und Urdu — der Bot kann in der Sprache des Kunden antworten, selbst wenn Ihre Wissensbasis englisch ist. Für Ihre wichtigsten Märkte empfehlen wir, die Antwortqualität pro Sprache zu evaluieren und die meistbesuchten Artikel zu übersetzen." },
+        { "question": "Wie bleibt der Bot aktuell, wenn sich unsere Doku ändert?", "answer": "Die Ingestion-Pipeline synchronisiert Ihre Quellen nach Zeitplan oder per Webhooks; veröffentlichte Änderungen erreichen den Bot ohne Handarbeit innerhalb von Minuten bis Stunden. Gelöschte oder veraltete Seiten fallen automatisch aus dem Index. In den wöchentlichen Reviews markieren wir zudem Fragen, die der Bot aus veralteten Inhalten beantwortet hat." },
+        { "question": "Wie steht es um Datenschutz und den Verbleib unserer Daten?", "answer": "Ihre Wissensbasis liegt in Ihrer eigenen Vektordatenbank, und API-Anbieter wie OpenAI und Anthropic trainieren unter ihren Standardbedingungen nicht mit Business-API-Daten. Auf Wunsch ergänzen wir PII-Schwärzung vor dem Modellaufruf, EU-Datenresidenz-Optionen und selbst gehostete Open-Source-Modelle, wo Regulierung volle Kontrolle verlangt." }
+      ],
+      "technologies": [
+        { "icon": "openai", "name": "OpenAI GPT-4" },
+        { "icon": "anthropic", "name": "Anthropic Claude" },
+        { "icon": "langchain", "name": "LangChain" },
+        { "icon": "pinecone", "name": "Pinecone" },
+        { "icon": "vercel", "name": "Vercel AI SDK" },
+        { "icon": "intercom", "name": "Intercom" },
+        { "icon": "zendesk", "name": "Zendesk" },
+        { "icon": "langsmith", "name": "LangSmith" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "AI چیٹ بوٹ انٹیگریشن",
+    "shortDescription": "اپنی ویب سائٹ یا ایپ میں GPT یا Claude پر مبنی ایسا اسسٹنٹ شامل کریں جو آپ کے اپنے نالج بیس سے جواب دے — درست، آپ کے برانڈ کے مطابق، انسانی منتقلی کے ساتھ اور چند ہفتوں میں لائیو۔",
+    "fullDescription": "عام سا چیٹ بوٹ گاہک کو الجھاتا ہے؛ اچھی طرح مربوط چیٹ بوٹ اس کا مسئلہ حل کرتا ہے۔ ہم GPT-4 درجے اور Claude ماڈلز پر اسسٹنٹس بناتے ہیں جو retrieval-augmented generation (RAG) کے ذریعے آپ کے حقیقی مواد پر مبنی ہوتے ہیں — آپ کا ہیلپ سینٹر، پروڈکٹ دستاویزات، پالیسیاں اور FAQs ہر جواب کا ماخذ بنتے ہیں، حوالوں کے ساتھ۔ انٹیگریشن میں پروڈکشن کی ہر ضرورت شامل ہے: streaming جوابات، کئی مراحل کی گفتگو کا سیاق، نیت کی شناخت اور روٹنگ، آپ کے سپورٹ ڈیسک کو انسانی منتقلی، کئی زبانوں میں جوابات اور اس کا تجزیہ کہ گاہک واقعی کیا پوچھتے ہیں۔ ہم اسسٹنٹ کا لہجہ آپ کے برانڈ کے مطابق بناتے ہیں، گارڈریلز لگاتے ہیں تاکہ وہ نامناسب سوالات سے انکار کرے، اور اسے Intercom، Zendesk یا آپ کے اپنے انٹرفیس سے جوڑتے ہیں۔ زیادہ تر منصوبے آغاز سے لائیو چیٹ بوٹ تک 3 تا 6 ہفتوں میں پہنچتے ہیں۔",
+    "features": [
+      "GPT-4 اور Claude ماڈل انٹیگریشن",
+      "حوالہ جات کے ساتھ مخصوص نالج بیس (RAG)",
+      "کئی مراحل کی گفتگو کی میموری",
+      "نیت کی شناخت اور ذہین روٹنگ",
+      "آپ کے سپورٹ ڈیسک کو انسانی منتقلی",
+      "کثیر اللسانی سہولت",
+      "برانڈ کے لہجے اور گارڈریلز کی ترتیب",
+      "گفتگو کے تجزیات اور بصیرتیں"
+    ],
+    "benefits": [
+      "گاہکوں کے سوالوں کے فوری جواب، 24/7",
+      "بار بار پوچھے جانے والے سوالوں پر سپورٹ ٹکٹس میں کمی",
+      "اندازوں کے بجائے مستند اور یکساں جوابات",
+      "ٹیم بڑھائے بغیر سپورٹ کو وسعت دیں",
+      "گفتگو کے تجزیوں سے جانیں کہ گاہک کیا پوچھتے ہیں",
+      "تیز پہلے جواب سے زیادہ اطمینان"
+    ],
+    "metaTitle": "AI چیٹ بوٹ انٹیگریشن — GPT اور Claude | PakSoft",
+    "metaDescription": "آپ کے نالج بیس پر مبنی GPT اور Claude چیٹ بوٹس: حوالوں کے ساتھ جوابات، انسانی منتقلی اور کئی زبانیں۔ 3 تا 6 ہفتوں میں لائیو — مفت ڈیمو حاصل کریں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "دائرہ کار اور مواد کا جائزہ", "description": "ہم طے کرتے ہیں کہ چیٹ بوٹ کن سوالوں کو سنبھالے گا، کن سے انکار کرے گا اور کہاں انسان کو منتقل کرے گا۔ پھر آپ کے مواد کے ذرائع — ہیلپ سینٹر، دستاویزات، پالیسیاں — کا جائزہ لیتے ہیں تاکہ وہ خلا سامنے آئیں جو بوٹ ظاہر کر دے گا۔" },
+        { "step": 2, "title": "نالج پائپ لائن اور RAG سیٹ اپ", "description": "آپ کا مواد ٹکڑوں میں تقسیم ہو کر embeddings میں بدلتا ہے اور ویکٹر ڈیٹا بیس میں محفوظ ہوتا ہے؛ ساتھ ہی ایسا نظام بنتا ہے جس سے تازہ تبدیلیاں خودکار طور پر پہنچتی ہیں۔ ہم retrieval کو اس وقت تک بہتر کرتے ہیں جب تک حقیقی سوالوں پر درست اقتباسات سامنے نہ آئیں۔" },
+        { "step": 3, "title": "اسسٹنٹ کی تیاری اور برانڈ کا لہجہ", "description": "ہم سسٹم پرامپٹ، جواب کا انداز اور گارڈریلز تیار کرتے ہیں اور لہجہ آپ کے برانڈ کے مطابق طے کرتے ہیں۔ streaming، گفتگو کی میموری اور نیت کی روٹنگ انٹیگریشن کا حصہ ہوتے ہیں۔" },
+        { "step": 4, "title": "چینل انٹیگریشن", "description": "اسسٹنٹ آپ کی ویب سائٹ، ایپ یا Intercom اور Zendesk جیسے سپورٹ پلیٹ فارم میں شامل کیا جاتا ہے اور انسانی منتقلی آپ کی ٹیم کی قطار سے جوڑی جاتی ہے۔ ہم پہلے سوال سے eskalation تک پورے سفر کی جانچ کرتے ہیں۔" },
+        { "step": 5, "title": "جانچ اور کوالٹی", "description": "لانچ سے پہلے بوٹ کو گاہکوں کے حقیقی سوالوں کے ٹیسٹ سیٹ پر چلاتے ہیں اور درستگی، ماخذ سے وابستگی اور لہجے کے نمبر دیتے ہیں۔ غلط یا بے بنیاد جوابات عارضی پیوند کے بجائے retrieval یا پرامپٹ کی سطح پر درست ہوتے ہیں۔" },
+        { "step": 6, "title": "لانچ اور مسلسل بہتری", "description": "پہلے ٹریفک کے ایک حصے پر لانچ کرتے ہیں اور حل کی شرح، منتقلی کی شرح اور گاہکوں کی رائے پر نظر رکھتے ہیں۔ ناکام گفتگوؤں کا ہفتہ وار جائزہ مواد اور پرامپٹس کی مسلسل بہتری کی بنیاد بنتا ہے۔" }
+      ],
+      "faq": [
+        { "question": "آپ چیٹ بوٹ کو من گھڑت جواب دینے سے کیسے روکتے ہیں؟", "answer": "بنیادی تحفظ جواب کو ماخذ سے جوڑنا ہے: RAG کے ساتھ ماڈل صرف آپ کے اپنے مواد سے حاصل اقتباسات کی بنیاد پر جواب دیتا ہے اور حوالے دکھاتا ہے۔ ہم ایسے گارڈریلز شامل کرتے ہیں کہ جب retrieval کو متعلقہ مواد نہ ملے تو بوٹ اندازہ لگانے کے بجائے \"مجھے معلوم نہیں\" کہے اور انسان کی پیشکش کرے۔ لانچ سے پہلے حقیقی سوالوں پر جانچ hallucination کی شرح ناپ لیتی ہے۔" },
+        { "question": "ہمیں کون سا مواد فراہم کرنا ہوگا؟", "answer": "وہ سب کچھ جو پہلے ہی گاہکوں کے سوالوں کے جواب دیتا ہے: ہیلپ سینٹر کے مضامین، پروڈکٹ دستاویزات، پالیسی صفحات، اندرونی تیار جوابات، حتیٰ کہ پرانے حل شدہ ٹکٹس بھی۔ شروعات کے لیے چند درجن اچھے مضامین کافی ہیں — موضوعات کا احاطہ مقدار سے زیادہ اہم ہے۔ پہلے ہفتے کا جائزہ بالکل بتا دیتا ہے کہ خلا کہاں ہیں۔" },
+        { "question": "ماہانہ چلانے کی لاگت کتنی ہوتی ہے؟", "answer": "ماڈل کا استعمال عموماً سب سے چھوٹا خرچ ہوتا ہے: ماخذ پر مبنی ایک عام جواب ماڈل کے لحاظ سے سینٹ کے حصے سے چند سینٹ تک پڑتا ہے، اس لیے مہینے میں ہزاروں گفتگوئیں بھی عموماً چند درجن ڈالر میں رہتی ہیں۔ ویکٹر ڈیٹا بیس کی ہوسٹنگ معمولی مقررہ لاگت بڑھاتی ہے۔ اس کا موازنہ اس ملازم کی مکمل لاگت سے کریں جو یہی سوالات بار بار سنبھالتا ہے۔" },
+        { "question": "GPT یا Claude — چیٹ بوٹ کے لیے کون بہتر ہے؟", "answer": "دونوں عمدہ ہیں اور ایماندارانہ جواب یہ ہے: یہ آپ کے مواد اور لہجے کی ضروریات پر منحصر ہے، اس لیے ہم دونوں کو آپ کے حقیقی سوالوں پر پرکھتے ہیں۔ Claude باریک ہدایات اور انکار کی پالیسیوں پر سختی سے عمل کرتا ہے؛ GPT-4 درجے کے ماڈلز کا ایکوسسٹم وسیع ہے۔ ہمارا آرکیٹیکچر ماڈل سے آزاد ہوتا ہے، اس لیے بعد میں دوبارہ بنائے بغیر تبدیلی ممکن ہے۔" },
+        { "question": "کیا یہ گفتگو انسانی نمائندے کو منتقل کر سکتا ہے؟", "answer": "جی ہاں، بلکہ کرنی چاہیے — منتقلی خامی نہیں بلکہ خوبی ہے۔ ہم اس کے محرکات طے کرتے ہیں: گاہک کی واضح درخواست، محسوس کی گئی ناراضی، کم اعتماد والے جوابات یا بلنگ تنازعات جیسے حساس موضوعات۔ انسانی نمائندے کو پوری گفتگو کا متن ملتا ہے تاکہ گاہک کو اپنی بات دہرانی نہ پڑے۔" },
+        { "question": "کیا یہ کئی زبانوں میں کام کرتا ہے؟", "answer": "جدید LLMs اردو، ترکی، جرمن اور عربی سمیت بڑی زبانوں کو اچھی طرح سنبھالتے ہیں — آپ کا نالج بیس انگریزی میں ہو تب بھی بوٹ گاہک کی زبان میں جواب دے سکتا ہے۔ اپنی اہم ترین غیر انگریزی مارکیٹوں کے لیے ہم ہر زبان میں جواب کے معیار کی جانچ اور سب سے زیادہ پڑھے جانے والے مضامین کے ترجمے کا مشورہ دیتے ہیں۔" },
+        { "question": "ہماری دستاویزات بدلیں تو بوٹ تازہ کیسے رہتا ہے؟", "answer": "مواد لینے کی پائپ لائن آپ کے ذرائع کو شیڈول یا webhooks کے ذریعے دوبارہ ہم آہنگ کرتی ہے؛ شائع شدہ تبدیلیاں بغیر دستی محنت چند منٹوں سے گھنٹوں میں بوٹ تک پہنچ جاتی ہیں۔ حذف شدہ یا پرانے صفحات خودبخود انڈیکس سے نکل جاتے ہیں۔ ہفتہ وار جائزوں میں ہم وہ سوالات بھی نشان زد کرتے ہیں جن کے جواب پرانے مواد سے دیے گئے ہوں۔" },
+        { "question": "ڈیٹا پرائیویسی اور ہمارا ڈیٹا کہاں جاتا ہے؟", "answer": "آپ کا نالج بیس آپ کے اپنے ویکٹر ڈیٹا بیس میں رہتا ہے، اور OpenAI اور Anthropic جیسے API فراہم کنندگان اپنی معیاری شرائط کے تحت کاروباری API ڈیٹا پر ماڈل تربیت نہیں دیتے۔ ضرورت ہو تو ہم ماڈل تک پیغام پہنچنے سے پہلے ذاتی معلومات کی صفائی، یورپی یونین میں ڈیٹا رکھنے کے اختیارات اور مکمل کنٹرول کے لیے self-hosted اوپن سورس ماڈلز شامل کر سکتے ہیں۔" }
+      ],
+      "technologies": [
+        { "icon": "openai", "name": "OpenAI GPT-4" },
+        { "icon": "anthropic", "name": "Anthropic Claude" },
+        { "icon": "langchain", "name": "LangChain" },
+        { "icon": "pinecone", "name": "Pinecone" },
+        { "icon": "vercel", "name": "Vercel AI SDK" },
+        { "icon": "intercom", "name": "Intercom" },
+        { "icon": "zendesk", "name": "Zendesk" },
+        { "icon": "langsmith", "name": "LangSmith" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تكامل روبوتات المحادثة بالذكاء الاصطناعي",
+    "shortDescription": "أضيفوا إلى موقعكم أو تطبيقكم مساعداً يعمل بنماذج GPT أو Claude ويجيب من قاعدة معرفتكم الخاصة — دقيق ومتوافق مع علامتكم، مع تحويل للبشر، وجاهز خلال أسابيع.",
+    "fullDescription": "روبوت المحادثة العام يُحبط العملاء؛ أما المتكامل جيداً فيحلّ مشكلاتهم. نبني مساعدين على نماذج فئة GPT-4 وClaude، مرتكزين على محتواكم الفعلي عبر التوليد المعزز بالاسترجاع (RAG) — فيصبح مركز المساعدة ووثائق المنتج والسياسات والأسئلة الشائعة مصدر كل إجابة، مع ذكر المراجع. يغطي التكامل ما يتطلبه الإنتاج: ردود متدفقة، وسياق محادثة متعدد الأدوار، وتوجيه حسب النية، وتحويل بشري إلى فريق الدعم لديكم، وردود متعددة اللغات، وتحليلات لما يسأله العملاء فعلاً. نضبط نبرة المساعد لتطابق علامتكم، ونضع ضوابط حماية ليرفض ما لا يجوز له الإجابة عنه، ونربطه بـ Intercom أو Zendesk أو واجهتكم الخاصة. معظم المشاريع تنتقل من الانطلاق إلى روبوت حيّ ومراقَب خلال 3–6 أسابيع.",
+    "features": [
+      "تكامل نماذج GPT-4 وClaude",
+      "قاعدة معرفة مخصصة (RAG) مع مراجع",
+      "ذاكرة محادثة متعددة الأدوار",
+      "التعرف على النية والتوجيه الذكي",
+      "تحويل بشري إلى فريق الدعم لديكم",
+      "دعم متعدد اللغات",
+      "ضبط نبرة العلامة وضوابط الحماية",
+      "تحليلات المحادثات والرؤى"
+    ],
+    "benefits": [
+      "إجابة فورية عن أسئلة العملاء على مدار الساعة",
+      "خفض حجم تذاكر الدعم في الأسئلة المتكررة",
+      "إجابات متسقة وموثّقة بدلاً من التخمين",
+      "توسيع الدعم دون توسيع الفريق",
+      "معرفة ما يسأله العملاء من تحليلات المحادثات",
+      "رضا أعلى بفضل ردود أولى أسرع"
+    ],
+    "metaTitle": "تكامل روبوتات محادثة GPT وClaude | PakSoft",
+    "metaDescription": "روبوتات محادثة مخصصة بنماذج GPT وClaude ترتكز على قاعدة معرفتكم: إجابات موثّقة، تحويل بشري، ودعم متعدد اللغات. جاهزة خلال 3–6 أسابيع — اطلبوا عرضاً مجانياً.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "تحديد النطاق وتدقيق المعرفة", "description": "نحدد ما ينبغي للروبوت معالجته وما يجب أن يرفضه ومتى يحوّل إلى البشر. ثم ندقق مصادر المحتوى لديكم — مركز المساعدة والوثائق والسياسات — بحثاً عن الثغرات التي سيكشفها الروبوت." },
+        { "step": 2, "title": "خط المعرفة وإعداد RAG", "description": "يُقسَّم محتواكم ويُحوَّل إلى embeddings ويُفهرس في قاعدة بيانات متجهية، مع خط مزامنة ينقل التحديثات تلقائياً. ونضبط الاسترجاع حتى تظهر المقاطع الصحيحة لأسئلة العملاء الحقيقية." },
+        { "step": 3, "title": "بناء المساعد ونبرة العلامة", "description": "نهندس أمر النظام وصيغة الردود وضوابط الحماية، ونضبط النبرة لتطابق علامتكم. الردود المتدفقة وذاكرة المحادثة وتوجيه النية جزء أساسي من التكامل." },
+        { "step": 4, "title": "التكامل مع القنوات", "description": "يُدمج المساعد في موقعكم أو تطبيقكم أو منصة الدعم مثل Intercom أو Zendesk، ويُربط التحويل البشري بقائمة انتظار فريقكم. ونختبر الرحلة كاملة من السؤال الأول حتى التصعيد." },
+        { "step": 5, "title": "التقييم وضمان الجودة", "description": "قبل الإطلاق نشغّل الروبوت على مجموعة اختبار من أسئلة عملاء حقيقية ونقيّم الدقة والارتكاز على المصادر والنبرة. وتُعالَج الإجابات الخاطئة أو غير المستندة على مستوى الاسترجاع أو الأوامر، لا بترقيع مؤقت." },
+        { "step": 6, "title": "الإطلاق والتحسين المستمر", "description": "نطلق الروبوت أولاً على جزء من الزيارات ونراقب معدل الحل ومعدل التحويل البشري وملاحظات العملاء. وتقود المراجعات الأسبوعية للمحادثات الفاشلة تحسينات مستمرة في المحتوى والأوامر." }
+      ],
+      "faq": [
+        { "question": "كيف تمنعون الروبوت من اختلاق الإجابات؟", "answer": "الارتكاز على المصادر هو خط الدفاع الأول: مع RAG لا يجيب النموذج إلا من مقاطع مسترجَعة من محتواكم الخاص ويذكر مراجعه. ونضيف ضوابط تجعل الروبوت يقول \"لا أعرف\" ويعرض التحويل إلى إنسان بدلاً من التخمين عندما لا يجد الاسترجاع شيئاً ذا صلة. كما يقيس التقييم قبل الإطلاق معدل الهلوسة قبل أن يرى العملاء الروبوت أصلاً." },
+        { "question": "ما المحتوى الذي يجب أن نوفره؟", "answer": "كل ما يجيب اليوم عن أسئلة العملاء: مقالات مركز المساعدة، ووثائق المنتج، وصفحات السياسات، والردود الجاهزة الداخلية، وحتى حلول التذاكر السابقة. بضع عشرات من المقالات الجيدة تكفي للبداية — فالتغطية أهم من الكمية. ويُظهر تدقيق المعرفة في الأسبوع الأول مواضع الثغرات بدقة." },
+        { "question": "كم تبلغ تكلفة التشغيل الشهرية؟", "answer": "استخدام النموذج عادةً أصغر بند: الإجابة الموثّقة النموذجية تكلف من جزء من السنت إلى بضعة سنتات حسب النموذج، لذا تبقى آلاف المحادثات شهرياً غالباً في حدود عشرات الدولارات. وتضيف استضافة قاعدة البيانات المتجهية تكلفة ثابتة متواضعة. قارنوا ذلك بالتكلفة الكاملة لموظف يجيب عن الأسئلة المتكررة نفسها." },
+        { "question": "GPT أم Claude — أيهما أفضل لروبوتات المحادثة؟", "answer": "كلاهما ممتاز، والجواب الصادق: يعتمد على محتواكم ومتطلبات النبرة لديكم، لذلك نقيس أداء الاثنين على أسئلتكم الفعلية. يميل Claude إلى الالتزام الدقيق بالتعليمات وسياسات الرفض؛ بينما تتمتع نماذج فئة GPT-4 بدعم واسع في المنظومة. والبنية التي نبنيها محايدة تجاه النموذج، فيمكنكم التبديل لاحقاً دون إعادة بناء." },
+        { "question": "هل يمكنه تحويل المحادثة إلى موظف بشري؟", "answer": "نعم، بل ينبغي له — فالتحويل ميزة وليس فشلاً. نهيّئ المحفّزات: طلب صريح من العميل، أو إحباط ملحوظ، أو إجابات منخفضة الثقة، أو مواضيع حساسة كنزاعات الفوترة. ويتلقى الموظف البشري نص المحادثة كاملاً حتى لا يكرر العميل كلامه أبداً." },
+        { "question": "هل يعمل بعدة لغات؟", "answer": "تجيد النماذج اللغوية الحديثة اللغات الكبرى، ومنها العربية والتركية والألمانية والأردية — ويستطيع الروبوت الرد بلغة العميل حتى لو كانت قاعدة معرفتكم بالإنجليزية. ولأسواقكم الأهم ننصح بتقييم جودة الإجابات لكل لغة وترجمة المقالات الأكثر زيارة لأعلى دقة." },
+        { "question": "كيف يبقى الروبوت محدثاً عندما تتغير وثائقنا؟", "answer": "يعيد خط الاستيعاب مزامنة مصادركم وفق جدول زمني أو عبر webhooks، فتصل التغييرات المنشورة إلى الروبوت خلال دقائق إلى ساعات دون عمل يدوي. وتسقط الصفحات المحذوفة أو القديمة من الفهرس تلقائياً. كما نحدد في المراجعات الأسبوعية الأسئلة التي أُجيب عنها من محتوى قديم." },
+        { "question": "ماذا عن خصوصية البيانات ووجهة بياناتنا؟", "answer": "تبقى قاعدة معرفتكم في قاعدة البيانات المتجهية الخاصة بكم، ومزوّدو API مثل OpenAI وAnthropic لا يدرّبون نماذجهم على بيانات API التجارية وفق شروطهم القياسية. ويمكننا إضافة حجب البيانات الشخصية قبل وصول الرسائل إلى النموذج، وخيارات إقامة البيانات في الاتحاد الأوروبي، ونماذج مفتوحة المصدر مستضافة ذاتياً حيث تتطلب اللوائح سيطرة كاملة." }
+      ],
+      "technologies": [
+        { "icon": "openai", "name": "OpenAI GPT-4" },
+        { "icon": "anthropic", "name": "Anthropic Claude" },
+        { "icon": "langchain", "name": "LangChain" },
+        { "icon": "pinecone", "name": "Pinecone" },
+        { "icon": "vercel", "name": "Vercel AI SDK" },
+        { "icon": "intercom", "name": "Intercom" },
+        { "icon": "zendesk", "name": "Zendesk" },
+        { "icon": "langsmith", "name": "LangSmith" }
+      ]
+    }
+  }
+}

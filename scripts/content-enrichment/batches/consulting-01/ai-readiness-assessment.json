@@ -1,0 +1,278 @@
+{
+  "slug": "ai-readiness-assessment",
+  "en": {
+    "name": "AI Readiness Assessment",
+    "shortDescription": "Know exactly where you stand before investing in AI. We assess your data, infrastructure, skills, and processes against a structured maturity model — and deliver a prioritized, budget-aware action plan.",
+    "fullDescription": "Most AI initiatives fail not because the models are weak, but because the organization is not ready: data is fragmented, infrastructure cannot serve models in production, and nobody owns the outcome. Our AI readiness assessment measures where you stand across five dimensions — data quality and access, infrastructure, skills, processes, and culture — using a structured maturity model. Over a typical three-to-six-week engagement we interview stakeholders, audit your data estate, review your tooling, and benchmark your capabilities. You receive a maturity scorecard, a gap analysis with concrete remediation steps, and a prioritized action plan with realistic budget ranges and timelines — so your first AI investment lands on solid ground instead of becoming another pilot that never reaches production.",
+    "features": [
+      "Data Quality & Accessibility Audit",
+      "Infrastructure & MLOps Capability Review",
+      "Skills Gap & Talent Analysis",
+      "Process & Workflow Evaluation",
+      "Culture & Change Readiness Assessment",
+      "AI Governance & Risk Review",
+      "Maturity Scorecard with Benchmarks",
+      "Prioritized Action Plan with Budget Ranges"
+    ],
+    "benefits": [
+      "Know which gaps block AI adoption before spending on it",
+      "A prioritized roadmap instead of a vague ambition",
+      "Realistic budgets and timelines leadership can commit to",
+      "Early visibility into data privacy and governance risks",
+      "Stakeholder alignment built during the assessment itself",
+      "A measurable baseline to track readiness progress against"
+    ],
+    "metaTitle": "AI Readiness Assessment Services | PakSoft",
+    "metaDescription": "Assess your data, infrastructure, skills, and culture for AI adoption. Get a maturity scorecard and a prioritized action plan — book a free consultation today.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Scoping & Stakeholder Interviews", "description": "We define which business areas the assessment covers and interview leadership, IT, and domain teams. These conversations surface ambitions, concerns, and the unwritten constraints that decide whether AI adoption will actually stick." },
+        { "step": 2, "title": "Data Estate Audit", "description": "We examine your data sources, quality, accessibility, lineage, and governance — the single biggest predictor of AI success. The audit shows which use cases your data can support today and which need foundational work first." },
+        { "step": 3, "title": "Infrastructure & Tooling Review", "description": "We review compute, cloud setup, integration points, and MLOps capability to determine whether models could actually run in production. Security and compliance constraints are mapped at this stage, not discovered later." },
+        { "step": 4, "title": "Skills & Culture Assessment", "description": "We evaluate technical skills, data literacy, and the organization's appetite for data-driven decisions. Each skills gap is mapped to a build, buy, or partner recommendation rather than a generic training plan." },
+        { "step": 5, "title": "Maturity Scoring & Gap Analysis", "description": "Findings are consolidated into a maturity scorecard across the data, infrastructure, talent, process, and culture dimensions. Every gap is rated by severity and by the effort required to close it." },
+        { "step": 6, "title": "Action Plan & Executive Readout", "description": "We present a prioritized action plan with timelines, budget ranges, and quick wins you can start immediately. The readout session aligns leadership on what to fund first — and what to deliberately postpone." }
+      ],
+      "faq": [
+        { "question": "How long does an AI readiness assessment take?", "answer": "A focused assessment of one business unit typically takes three to four weeks; an organization-wide assessment runs five to eight. The duration depends mostly on stakeholder availability and how well your data landscape is documented — we confirm a detailed schedule after the scoping call." },
+        { "question": "What do we receive at the end of the assessment?", "answer": "You get a maturity scorecard across five dimensions, a gap analysis with concrete remediation steps, a prioritized action plan with budget ranges and timelines, and an executive readout deck. Everything is written so that both your board and your engineers can act on it." },
+        { "question": "Why do so many AI projects fail without an assessment?", "answer": "Industry analyses consistently find that the majority of AI pilots never reach production — and the causes are rarely the algorithms. Fragmented data, missing ownership, and infrastructure that cannot serve models reliably are the real blockers, and an assessment surfaces them before you spend on model development." },
+        { "question": "Do we need data scientists on staff before the assessment?", "answer": "No — assessing your current talent is part of the engagement. The skills gap analysis tells you which roles you genuinely need, and whether hiring, upskilling existing staff, or partnering externally is the most cost-effective way to fill each gap." },
+        { "question": "What does an AI maturity model actually measure?", "answer": "It scores your organization on dimensions like data quality and governance, infrastructure and MLOps capability, talent and literacy, process integration, and leadership commitment. The value is not the score itself but the comparison: it shows exactly which dimension is the bottleneck, so investment goes where it changes the outcome." },
+        { "question": "Is the assessment vendor-neutral?", "answer": "Yes. We do not resell AI platforms or take referral fees, so our recommendations are based on your existing stack, your team's skills, and your budget. Where several tools would work, we present the trade-offs and let you decide." },
+        { "question": "What if the assessment shows we are not ready for AI?", "answer": "That is one of the most valuable outcomes it can produce: it stops you from burning budget on initiatives that would stall. You still leave with a foundational roadmap — typically data quality, governance, and integration work — that creates value on its own and makes a later AI investment far more likely to succeed." },
+        { "question": "How is this different from a general IT audit?", "answer": "An IT audit checks the health of your systems; an AI readiness assessment checks whether those systems, your data, and your people can support machine learning in production. It covers AI-specific concerns an IT audit ignores — training data availability, MLOps capability, model governance, and regulatory exposure such as the EU AI Act." }
+      ],
+      "technologies": [
+        { "icon": "document", "name": "Assessment Framework" },
+        { "icon": "chart", "name": "Maturity Model" },
+        { "icon": "databricks", "name": "Databricks" },
+        { "icon": "snowflake", "name": "Snowflake" },
+        { "icon": "sagemaker", "name": "AWS SageMaker" },
+        { "icon": "azureml", "name": "Azure Machine Learning" },
+        { "icon": "powerbi", "name": "Power BI" },
+        { "icon": "python", "name": "Python" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Yapay Zeka Hazırlık Değerlendirmesi",
+    "shortDescription": "Yapay zekaya yatırım yapmadan önce tam olarak nerede durduğunuzu bilin. Verilerinizi, altyapınızı, yetkinliklerinizi ve süreçlerinizi yapılandırılmış bir olgunluk modeliyle değerlendiriyor; önceliklendirilmiş, bütçeye duyarlı bir eylem planı sunuyoruz.",
+    "fullDescription": "Yapay zeka girişimlerinin çoğu modeller zayıf olduğu için değil, kurum hazır olmadığı için başarısız olur: Veriler dağınıktır, altyapı modelleri canlı ortamda çalıştıramaz ve sonucun sahibi yoktur. Yapay zeka hazırlık değerlendirmemiz, yapılandırılmış bir olgunluk modeli kullanarak beş boyutta nerede durduğunuzu ölçer — veri kalitesi ve erişimi, altyapı, yetkinlikler, süreçler ve kültür. Genellikle üç ila altı hafta süren çalışmada paydaşlarla görüşür, veri varlığınızı denetler, araçlarınızı inceler ve yetkinliklerinizi kıyaslarız. Sonunda bir olgunluk karnesi, somut iyileştirme adımları içeren bir eksiklik analizi ve gerçekçi bütçe aralıkları ile zaman çizelgeleri içeren önceliklendirilmiş bir eylem planı alırsınız — böylece ilk yapay zeka yatırımınız, asla canlıya çıkmayan bir pilot olmak yerine sağlam bir zemine oturur.",
+    "features": [
+      "Veri Kalitesi ve Erişilebilirlik Denetimi",
+      "Altyapı ve MLOps Yetkinlik İncelemesi",
+      "Yetkinlik Açığı ve Yetenek Analizi",
+      "Süreç ve İş Akışı Değerlendirmesi",
+      "Kültür ve Değişim Hazırlığı Değerlendirmesi",
+      "Yapay Zeka Yönetişimi ve Risk İncelemesi",
+      "Kıyaslamalı Olgunluk Karnesi",
+      "Bütçe Aralıklı Önceliklendirilmiş Eylem Planı"
+    ],
+    "benefits": [
+      "Harcama yapmadan önce yapay zekayı engelleyen eksikleri bilin",
+      "Belirsiz bir hedef yerine önceliklendirilmiş bir yol haritası",
+      "Yönetimin taahhüt edebileceği gerçekçi bütçe ve takvimler",
+      "Veri gizliliği ve yönetişim risklerine erken görünürlük",
+      "Değerlendirme sürecinde inşa edilen paydaş uyumu",
+      "Hazırlık ilerlemesini izleyebileceğiniz ölçülebilir bir başlangıç noktası"
+    ],
+    "metaTitle": "Yapay Zeka Hazırlık Değerlendirmesi | PakSoft",
+    "metaDescription": "Verilerinizi, altyapınızı, yetkinliklerinizi ve kültürünüzü yapay zekaya hazırlık açısından değerlendirin. Olgunluk karnesi ve eylem planı için ücretsiz görüşme alın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Kapsam ve Paydaş Görüşmeleri", "description": "Değerlendirmenin hangi iş alanlarını kapsayacağını tanımlar; yönetim, BT ve alan ekipleriyle görüşmeler yaparız. Bu görüşmeler hedefleri, endişeleri ve yapay zeka adaptasyonunun kalıcı olup olmayacağını belirleyen yazılı olmayan kısıtları ortaya çıkarır." },
+        { "step": 2, "title": "Veri Varlığı Denetimi", "description": "Veri kaynaklarınızı, kalitesini, erişilebilirliğini, kökenini ve yönetişimini inceleriz — yapay zeka başarısının en güçlü tek göstergesi budur. Denetim, verinizin bugün hangi kullanım senaryolarını destekleyebileceğini ve hangilerinin önce temel çalışma gerektirdiğini gösterir." },
+        { "step": 3, "title": "Altyapı ve Araç İncelemesi", "description": "Modellerin canlı ortamda gerçekten çalışıp çalışamayacağını görmek için işlem gücünü, bulut kurulumunu, entegrasyon noktalarını ve MLOps yetkinliğini inceleriz. Güvenlik ve uyumluluk kısıtları bu aşamada haritalanır, sonradan keşfedilmez." },
+        { "step": 4, "title": "Yetkinlik ve Kültür Değerlendirmesi", "description": "Teknik yetkinlikleri, veri okuryazarlığını ve kurumun veriye dayalı karar alma iştahını değerlendiririz. Her yetkinlik açığı, genel bir eğitim planı yerine geliştir, satın al veya iş birliği yap önerisiyle eşleştirilir." },
+        { "step": 5, "title": "Olgunluk Puanlaması ve Eksiklik Analizi", "description": "Bulgular; veri, altyapı, yetenek, süreç ve kültür boyutlarını kapsayan bir olgunluk karnesinde birleştirilir. Her eksiklik, hem önem derecesine hem de kapatılması için gereken çabaya göre derecelendirilir." },
+        { "step": 6, "title": "Eylem Planı ve Yönetici Sunumu", "description": "Zaman çizelgeleri, bütçe aralıkları ve hemen başlayabileceğiniz hızlı kazanımlar içeren önceliklendirilmiş bir eylem planı sunarız. Sunum oturumu, yönetimi önce neyin fonlanacağı — ve neyin bilinçli olarak erteleneceği — konusunda hizalar." }
+      ],
+      "faq": [
+        { "question": "Bir yapay zeka hazırlık değerlendirmesi ne kadar sürer?", "answer": "Tek bir iş birimine odaklanan değerlendirme genellikle üç ila dört hafta, kurum genelindeki değerlendirme ise beş ila sekiz hafta sürer. Süre çoğunlukla paydaşların müsaitliğine ve veri ortamınızın ne kadar iyi belgelendiğine bağlıdır — ayrıntılı takvimi kapsam görüşmesinden sonra netleştiririz." },
+        { "question": "Değerlendirmenin sonunda ne alırız?", "answer": "Beş boyutu kapsayan bir olgunluk karnesi, somut iyileştirme adımları içeren bir eksiklik analizi, bütçe aralıkları ve takvimler içeren önceliklendirilmiş bir eylem planı ve bir yönetici sunum dosyası alırsınız. Her şey hem yönetim kurulunuzun hem de mühendislerinizin uygulayabileceği şekilde yazılır." },
+        { "question": "Değerlendirme olmadan neden bu kadar çok yapay zeka projesi başarısız oluyor?", "answer": "Sektör analizleri, yapay zeka pilotlarının çoğunun asla canlıya çıkmadığını tutarlı biçimde gösteriyor — ve nedenler nadiren algoritmalardır. Asıl engeller dağınık veri, sahiplik eksikliği ve modelleri güvenilir biçimde çalıştıramayan altyapıdır; değerlendirme bunları siz model geliştirmeye harcama yapmadan önce ortaya çıkarır." },
+        { "question": "Değerlendirmeden önce kadromuzda veri bilimci olması gerekir mi?", "answer": "Hayır — mevcut yeteneğinizi değerlendirmek çalışmanın bir parçasıdır. Yetkinlik açığı analizi hangi rollere gerçekten ihtiyaç duyduğunuzu ve her açığı kapatmanın en uygun maliyetli yolunun işe alım mı, mevcut ekibin geliştirilmesi mi yoksa dış iş birliği mi olduğunu söyler." },
+        { "question": "Yapay zeka olgunluk modeli gerçekte neyi ölçer?", "answer": "Kurumunuzu veri kalitesi ve yönetişimi, altyapı ve MLOps yetkinliği, yetenek ve okuryazarlık, süreç entegrasyonu ile liderlik kararlılığı gibi boyutlarda puanlar. Değer puanın kendisinde değil karşılaştırmadadır: Hangi boyutun darboğaz olduğunu tam olarak gösterir, böylece yatırım sonucu değiştirecek yere gider." },
+        { "question": "Değerlendirme tedarikçiden bağımsız mı?", "answer": "Evet. Yapay zeka platformu satmıyor ve yönlendirme komisyonu almıyoruz; önerilerimiz mevcut teknolojinize, ekibinizin yetkinliklerine ve bütçenize dayanır. Birden fazla aracın işe yarayacağı durumlarda artı ve eksileri sunar, kararı size bırakırız." },
+        { "question": "Ya değerlendirme yapay zekaya hazır olmadığımızı gösterirse?", "answer": "Bu, üretebileceği en değerli sonuçlardan biridir: Tıkanacak girişimlere bütçe yakmanızı engeller. Yine de kendi başına değer üreten — genellikle veri kalitesi, yönetişim ve entegrasyon çalışmaları içeren — temel bir yol haritasıyla ayrılırsınız; bu da sonraki yapay zeka yatırımınızın başarı olasılığını ciddi biçimde artırır." },
+        { "question": "Bunun genel bir BT denetiminden farkı nedir?", "answer": "BT denetimi sistemlerinizin sağlığını kontrol eder; yapay zeka hazırlık değerlendirmesi ise bu sistemlerin, verinizin ve insanlarınızın makine öğrenimini canlı ortamda destekleyip destekleyemeyeceğini kontrol eder. Eğitim verisi mevcudiyeti, MLOps yetkinliği, model yönetişimi ve EU AI Act gibi düzenleyici riskler dahil, BT denetiminin görmezden geldiği yapay zekaya özgü konuları kapsar." }
+      ],
+      "technologies": [
+        { "icon": "document", "name": "Assessment Framework" },
+        { "icon": "chart", "name": "Maturity Model" },
+        { "icon": "databricks", "name": "Databricks" },
+        { "icon": "snowflake", "name": "Snowflake" },
+        { "icon": "sagemaker", "name": "AWS SageMaker" },
+        { "icon": "azureml", "name": "Azure Machine Learning" },
+        { "icon": "powerbi", "name": "Power BI" },
+        { "icon": "python", "name": "Python" }
+      ]
+    }
+  },
+  "de": {
+    "name": "KI-Readiness-Assessment",
+    "shortDescription": "Wissen Sie genau, wo Sie stehen, bevor Sie in KI investieren. Wir bewerten Daten, Infrastruktur, Kompetenzen und Prozesse anhand eines strukturierten Reifegradmodells — und liefern einen priorisierten, budgetbewussten Maßnahmenplan.",
+    "fullDescription": "Die meisten KI-Initiativen scheitern nicht an schwachen Modellen, sondern an mangelnder Bereitschaft der Organisation: Daten sind fragmentiert, die Infrastruktur kann Modelle nicht produktiv betreiben, und niemand verantwortet das Ergebnis. Unser KI-Readiness-Assessment misst anhand eines strukturierten Reifegradmodells, wo Sie in fünf Dimensionen stehen — Datenqualität und -zugang, Infrastruktur, Kompetenzen, Prozesse und Kultur. In einem typischerweise drei- bis sechswöchigen Engagement interviewen wir Stakeholder, auditieren Ihre Datenlandschaft, prüfen Ihr Tooling und benchmarken Ihre Fähigkeiten. Sie erhalten eine Reifegrad-Scorecard, eine Gap-Analyse mit konkreten Maßnahmen und einen priorisierten Aktionsplan mit realistischen Budgetspannen und Zeitplänen — damit Ihre erste KI-Investition auf festem Boden landet, statt ein weiterer Pilot zu werden, der nie produktiv geht.",
+    "features": [
+      "Audit von Datenqualität & -zugänglichkeit",
+      "Review von Infrastruktur & MLOps-Fähigkeit",
+      "Skills-Gap- & Talentanalyse",
+      "Prozess- & Workflow-Bewertung",
+      "Kultur- & Change-Readiness-Bewertung",
+      "KI-Governance- & Risiko-Review",
+      "Reifegrad-Scorecard mit Benchmarks",
+      "Priorisierter Maßnahmenplan mit Budgetspannen"
+    ],
+    "benefits": [
+      "Sie kennen die Blocker der KI-Einführung, bevor Sie Geld ausgeben",
+      "Eine priorisierte Roadmap statt einer vagen Ambition",
+      "Realistische Budgets und Zeitpläne, zu denen die Führung stehen kann",
+      "Frühe Sicht auf Datenschutz- und Governance-Risiken",
+      "Stakeholder-Alignment entsteht bereits während des Assessments",
+      "Eine messbare Baseline, an der Sie Fortschritt verfolgen"
+    ],
+    "metaTitle": "KI-Readiness-Assessment | PakSoft",
+    "metaDescription": "Bewerten Sie Daten, Infrastruktur, Kompetenzen und Kultur für die KI-Einführung. Reifegrad-Scorecard plus priorisierter Maßnahmenplan — jetzt kostenlose Beratung buchen.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Scoping & Stakeholder-Interviews", "description": "Wir definieren, welche Geschäftsbereiche das Assessment abdeckt, und interviewen Führung, IT und Fachteams. Diese Gespräche bringen Ambitionen, Bedenken und die ungeschriebenen Einschränkungen ans Licht, die über den Erfolg der KI-Einführung entscheiden." },
+        { "step": 2, "title": "Audit der Datenlandschaft", "description": "Wir untersuchen Datenquellen, Qualität, Zugänglichkeit, Herkunft und Governance — den stärksten Einzelprädiktor für KI-Erfolg. Das Audit zeigt, welche Anwendungsfälle Ihre Daten heute tragen und welche zuerst Grundlagenarbeit benötigen." },
+        { "step": 3, "title": "Infrastruktur- & Tooling-Review", "description": "Wir prüfen Rechenkapazität, Cloud-Setup, Integrationspunkte und MLOps-Fähigkeit, um festzustellen, ob Modelle tatsächlich produktiv laufen könnten. Sicherheits- und Compliance-Anforderungen werden in dieser Phase kartiert, nicht später entdeckt." },
+        { "step": 4, "title": "Kompetenz- & Kulturbewertung", "description": "Wir bewerten technische Skills, Datenkompetenz und die Bereitschaft der Organisation zu datengetriebenen Entscheidungen. Jede Kompetenzlücke wird einer Build-, Buy- oder Partner-Empfehlung zugeordnet statt einem generischen Schulungsplan." },
+        { "step": 5, "title": "Reifegrad-Scoring & Gap-Analyse", "description": "Die Befunde fließen in eine Reifegrad-Scorecard über die Dimensionen Daten, Infrastruktur, Talent, Prozesse und Kultur. Jede Lücke wird nach Schweregrad und nach dem Aufwand bewertet, sie zu schließen." },
+        { "step": 6, "title": "Maßnahmenplan & Executive Readout", "description": "Wir präsentieren einen priorisierten Maßnahmenplan mit Zeitplänen, Budgetspannen und Quick Wins, die Sie sofort starten können. Die Readout-Session richtet die Führung darauf aus, was zuerst finanziert wird — und was bewusst verschoben wird." }
+      ],
+      "faq": [
+        { "question": "Wie lange dauert ein KI-Readiness-Assessment?", "answer": "Ein fokussiertes Assessment einer Geschäftseinheit dauert typischerweise drei bis vier Wochen; ein organisationsweites fünf bis acht. Die Dauer hängt vor allem von der Verfügbarkeit der Stakeholder und der Dokumentation Ihrer Datenlandschaft ab — den detaillierten Zeitplan bestätigen wir nach dem Scoping-Call." },
+        { "question": "Was erhalten wir am Ende des Assessments?", "answer": "Sie erhalten eine Reifegrad-Scorecard über fünf Dimensionen, eine Gap-Analyse mit konkreten Maßnahmen, einen priorisierten Aktionsplan mit Budgetspannen und Zeitplänen sowie ein Executive-Readout-Deck. Alles ist so geschrieben, dass sowohl Ihr Vorstand als auch Ihre Entwickler damit arbeiten können." },
+        { "question": "Warum scheitern so viele KI-Projekte ohne Assessment?", "answer": "Branchenanalysen zeigen konsistent, dass die Mehrheit der KI-Piloten nie produktiv geht — und die Ursachen sind selten die Algorithmen. Fragmentierte Daten, fehlende Verantwortlichkeit und eine Infrastruktur, die Modelle nicht zuverlässig betreiben kann, sind die wahren Blocker; ein Assessment deckt sie auf, bevor Sie in Modellentwicklung investieren." },
+        { "question": "Brauchen wir vor dem Assessment bereits Data Scientists?", "answer": "Nein — die Bewertung Ihres aktuellen Talents ist Teil des Engagements. Die Skills-Gap-Analyse zeigt, welche Rollen Sie wirklich brauchen und ob Einstellung, Weiterbildung bestehender Mitarbeitender oder externe Partnerschaft der kosteneffizienteste Weg ist, jede Lücke zu schließen." },
+        { "question": "Was misst ein KI-Reifegradmodell eigentlich?", "answer": "Es bewertet Ihre Organisation in Dimensionen wie Datenqualität und Governance, Infrastruktur und MLOps-Fähigkeit, Talent und Datenkompetenz, Prozessintegration und Führungs-Commitment. Der Wert liegt nicht im Score selbst, sondern im Vergleich: Er zeigt genau, welche Dimension der Engpass ist, damit die Investition dorthin fließt, wo sie das Ergebnis verändert." },
+        { "question": "Ist das Assessment herstellerneutral?", "answer": "Ja. Wir verkaufen keine KI-Plattformen weiter und nehmen keine Vermittlungsprovisionen; unsere Empfehlungen basieren auf Ihrem bestehenden Stack, den Fähigkeiten Ihres Teams und Ihrem Budget. Wo mehrere Tools passen würden, legen wir die Trade-offs offen und Sie entscheiden." },
+        { "question": "Was passiert, wenn das Assessment zeigt, dass wir nicht bereit sind?", "answer": "Das ist eines der wertvollsten möglichen Ergebnisse: Es bewahrt Sie davor, Budget in Initiativen zu verbrennen, die ins Stocken geraten würden. Sie gehen trotzdem mit einer Grundlagen-Roadmap nach Hause — typischerweise Datenqualität, Governance und Integrationsarbeit —, die für sich genommen Wert schafft und eine spätere KI-Investition deutlich erfolgswahrscheinlicher macht." },
+        { "question": "Worin unterscheidet sich das von einem allgemeinen IT-Audit?", "answer": "Ein IT-Audit prüft die Gesundheit Ihrer Systeme; ein KI-Readiness-Assessment prüft, ob diese Systeme, Ihre Daten und Ihre Menschen Machine Learning im Produktivbetrieb tragen können. Es deckt KI-spezifische Themen ab, die ein IT-Audit ignoriert — Verfügbarkeit von Trainingsdaten, MLOps-Fähigkeit, Modell-Governance und regulatorische Anforderungen wie den EU AI Act." }
+      ],
+      "technologies": [
+        { "icon": "document", "name": "Assessment Framework" },
+        { "icon": "chart", "name": "Maturity Model" },
+        { "icon": "databricks", "name": "Databricks" },
+        { "icon": "snowflake", "name": "Snowflake" },
+        { "icon": "sagemaker", "name": "AWS SageMaker" },
+        { "icon": "azureml", "name": "Azure Machine Learning" },
+        { "icon": "powerbi", "name": "Power BI" },
+        { "icon": "python", "name": "Python" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "AI ریڈینیس اسیسمنٹ",
+    "shortDescription": "AI میں سرمایہ کاری سے پہلے جانیے کہ آپ کہاں کھڑے ہیں۔ ہم آپ کے ڈیٹا، انفراسٹرکچر، مہارتوں اور عمل کو ایک منظم میچورٹی ماڈل پر پرکھتے ہیں — اور ترجیحات اور بجٹ کے مطابق ایک عملی منصوبہ دیتے ہیں۔",
+    "fullDescription": "زیادہ تر AI منصوبے اس لیے ناکام نہیں ہوتے کہ ماڈل کمزور ہوتے ہیں، بلکہ اس لیے کہ ادارہ تیار نہیں ہوتا: ڈیٹا بکھرا ہوا ہوتا ہے، انفراسٹرکچر ماڈلز کو پروڈکشن میں نہیں چلا سکتا، اور نتیجے کا کوئی ذمہ دار نہیں ہوتا۔ ہماری AI ریڈینیس اسیسمنٹ ایک منظم میچورٹی ماڈل کے ذریعے پانچ جہتوں میں آپ کی پوزیشن ناپتی ہے — ڈیٹا کا معیار اور رسائی، انفراسٹرکچر، مہارتیں، عمل اور ادارہ جاتی کلچر۔ عموماً تین سے چھ ہفتوں کے اس کام میں ہم اسٹیک ہولڈرز کے انٹرویو کرتے ہیں، آپ کے ڈیٹا کا آڈٹ کرتے ہیں، ٹولز کا جائزہ لیتے ہیں اور صلاحیتوں کا موازنہ کرتے ہیں۔ آخر میں آپ کو میچورٹی اسکور کارڈ، ٹھوس اصلاحی اقدامات کے ساتھ کمی کا تجزیہ، اور حقیقت پسندانہ بجٹ اور ٹائم لائن کے ساتھ ترجیح شدہ عملی منصوبہ ملتا ہے — تاکہ آپ کی پہلی AI سرمایہ کاری ایک اور ناکام پائلٹ بننے کے بجائے مضبوط بنیاد پر کھڑی ہو۔",
+    "features": [
+      "ڈیٹا کے معیار اور رسائی کا آڈٹ",
+      "انفراسٹرکچر اور MLOps صلاحیت کا جائزہ",
+      "مہارتوں کی کمی اور ٹیلنٹ کا تجزیہ",
+      "عمل اور ورک فلو کی جانچ",
+      "کلچر اور تبدیلی کی تیاری کا جائزہ",
+      "AI گورننس اور رسک ریویو",
+      "موازنوں کے ساتھ میچورٹی اسکور کارڈ",
+      "بجٹ تخمینوں کے ساتھ ترجیح شدہ عملی منصوبہ"
+    ],
+    "benefits": [
+      "خرچ کرنے سے پہلے جانیں کہ AI اپنانے میں کون سی رکاوٹیں ہیں",
+      "مبہم خواہش کے بجائے ترجیح شدہ روڈ میپ",
+      "حقیقت پسندانہ بجٹ اور ٹائم لائنز جن پر قیادت اعتماد کر سکے",
+      "ڈیٹا پرائیویسی اور گورننس کے خطرات کی بروقت نشاندہی",
+      "اسیسمنٹ کے دوران ہی اسٹیک ہولڈرز کی ہم آہنگی",
+      "پیش رفت ناپنے کے لیے ایک قابلِ پیمائش بنیاد"
+    ],
+    "metaTitle": "AI ریڈینیس اسیسمنٹ سروسز | PakSoft",
+    "metaDescription": "AI اپنانے کے لیے اپنے ڈیٹا، انفراسٹرکچر، مہارتوں اور کلچر کا جائزہ لیں۔ میچورٹی اسکور کارڈ اور ترجیح شدہ عملی منصوبہ حاصل کریں — مفت مشاورت بک کریں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "دائرہ کار اور اسٹیک ہولڈر انٹرویوز", "description": "ہم طے کرتے ہیں کہ اسیسمنٹ کن کاروباری شعبوں کا احاطہ کرے گی اور قیادت، IT اور متعلقہ ٹیموں کے انٹرویو کرتے ہیں۔ یہی گفتگو عزائم، خدشات اور وہ غیر تحریری حدود سامنے لاتی ہے جو طے کرتی ہیں کہ AI اپنانا پائیدار ہوگا یا نہیں۔" },
+        { "step": 2, "title": "ڈیٹا اثاثوں کا آڈٹ", "description": "ہم آپ کے ڈیٹا ذرائع، معیار، رسائی، ماخذ اور گورننس کا جائزہ لیتے ہیں — جو AI کی کامیابی کا سب سے بڑا واحد اشارہ ہے۔ یہ آڈٹ بتاتا ہے کہ آپ کا ڈیٹا آج کون سے استعمالات کو سہارا دے سکتا ہے اور کن کے لیے پہلے بنیادی کام درکار ہے۔" },
+        { "step": 3, "title": "انفراسٹرکچر اور ٹولز کا جائزہ", "description": "ہم کمپیوٹ، کلاؤڈ سیٹ اپ، انٹیگریشن پوائنٹس اور MLOps صلاحیت کا جائزہ لیتے ہیں تاکہ معلوم ہو کہ ماڈلز واقعی پروڈکشن میں چل سکیں گے یا نہیں۔ سیکیورٹی اور کمپلائنس کی حدود اسی مرحلے پر نقشے میں آ جاتی ہیں، بعد میں دریافت نہیں ہوتیں۔" },
+        { "step": 4, "title": "مہارتوں اور کلچر کی جانچ", "description": "ہم تکنیکی مہارتوں، ڈیٹا لٹریسی اور ادارے کے ڈیٹا پر مبنی فیصلوں کے رجحان کا جائزہ لیتے ہیں۔ ہر کمی کو عمومی تربیتی پلان کے بجائے 'خود بنائیں، خریدیں یا شراکت کریں' کی واضح سفارش سے جوڑا جاتا ہے۔" },
+        { "step": 5, "title": "میچورٹی اسکورنگ اور کمی کا تجزیہ", "description": "تمام نتائج ڈیٹا، انفراسٹرکچر، ٹیلنٹ، عمل اور کلچر کی جہتوں پر مشتمل میچورٹی اسکور کارڈ میں یکجا کیے جاتے ہیں۔ ہر کمی کو اس کی سنگینی اور اسے دور کرنے کے لیے درکار محنت کے لحاظ سے درجہ دیا جاتا ہے۔" },
+        { "step": 6, "title": "عملی منصوبہ اور انتظامی پریزنٹیشن", "description": "ہم ٹائم لائنز، بجٹ تخمینوں اور فوری شروع ہونے والے کوئیک وِنز پر مشتمل ترجیح شدہ عملی منصوبہ پیش کرتے ہیں۔ یہ اجلاس قیادت کو اس پر ہم آہنگ کرتا ہے کہ پہلے کس چیز پر خرچ ہو — اور کیا دانستہ مؤخر کیا جائے۔" }
+      ],
+      "faq": [
+        { "question": "AI ریڈینیس اسیسمنٹ میں کتنا وقت لگتا ہے؟", "answer": "ایک کاروباری یونٹ پر مرکوز اسیسمنٹ عموماً تین سے چار ہفتے لیتی ہے؛ پورے ادارے کی اسیسمنٹ پانچ سے آٹھ ہفتے۔ دورانیہ زیادہ تر اسٹیک ہولڈرز کی دستیابی اور آپ کے ڈیٹا کی دستاویزات کے معیار پر منحصر ہے — تفصیلی شیڈول ہم ابتدائی ملاقات کے بعد طے کرتے ہیں۔" },
+        { "question": "اسیسمنٹ کے اختتام پر ہمیں کیا ملتا ہے؟", "answer": "آپ کو پانچ جہتوں پر مشتمل میچورٹی اسکور کارڈ، ٹھوس اصلاحی اقدامات کے ساتھ کمی کا تجزیہ، بجٹ تخمینوں اور ٹائم لائنز والا ترجیح شدہ عملی منصوبہ، اور ایک انتظامی پریزنٹیشن ملتی ہے۔ سب کچھ اس انداز میں لکھا جاتا ہے کہ بورڈ اور انجینئر دونوں اس پر عمل کر سکیں۔" },
+        { "question": "اسیسمنٹ کے بغیر اتنے AI منصوبے ناکام کیوں ہوتے ہیں؟", "answer": "صنعتی تجزیے مسلسل بتاتے ہیں کہ AI پائلٹس کی اکثریت کبھی پروڈکشن تک نہیں پہنچتی — اور وجوہات شاذ ہی الگورتھم ہوتے ہیں۔ اصل رکاوٹیں بکھرا ہوا ڈیٹا، ذمہ داری کا فقدان اور ایسا انفراسٹرکچر ہیں جو ماڈلز کو قابلِ اعتماد طریقے سے نہیں چلا سکتا؛ اسیسمنٹ یہ سب ماڈل ڈیولپمنٹ پر خرچ سے پہلے ظاہر کر دیتی ہے۔" },
+        { "question": "کیا اسیسمنٹ سے پہلے ہمارے پاس ڈیٹا سائنٹسٹ ہونے چاہئیں؟", "answer": "نہیں — آپ کے موجودہ ٹیلنٹ کی جانچ خود اس کام کا حصہ ہے۔ مہارتوں کی کمی کا تجزیہ بتاتا ہے کہ آپ کو واقعی کن کرداروں کی ضرورت ہے، اور ہر کمی پورا کرنے کا سب سے کفایتی راستہ نئی بھرتی ہے، موجودہ ٹیم کی تربیت یا بیرونی شراکت۔" },
+        { "question": "AI میچورٹی ماڈل دراصل کیا ناپتا ہے؟", "answer": "یہ آپ کے ادارے کو ڈیٹا کے معیار اور گورننس، انفراسٹرکچر اور MLOps صلاحیت، ٹیلنٹ اور ڈیٹا لٹریسی، عمل میں انضمام اور قیادت کے عزم جیسی جہتوں پر اسکور دیتا ہے۔ اصل قدر اسکور میں نہیں موازنے میں ہے: یہ ٹھیک ٹھیک بتاتا ہے کہ کون سی جہت رکاوٹ ہے، تاکہ سرمایہ وہیں جائے جہاں نتیجہ بدلتا ہے۔" },
+        { "question": "کیا یہ اسیسمنٹ کسی وینڈر سے غیر جانب دار ہے؟", "answer": "جی ہاں۔ ہم AI پلیٹ فارمز کی فروخت یا کمیشن نہیں لیتے؛ ہماری سفارشات آپ کے موجودہ سسٹم، ٹیم کی مہارتوں اور بجٹ پر مبنی ہوتی ہیں۔ جہاں کئی ٹولز کارگر ہوں، ہم ان کے فائدے نقصان سامنے رکھتے ہیں اور فیصلہ آپ پر چھوڑتے ہیں۔" },
+        { "question": "اگر اسیسمنٹ بتائے کہ ہم AI کے لیے تیار نہیں تو؟", "answer": "یہ اس کے سب سے قیمتی نتائج میں سے ایک ہے: یہ آپ کو ان منصوبوں پر بجٹ ضائع کرنے سے بچاتا ہے جو رک جاتے۔ پھر بھی آپ ایک بنیادی روڈ میپ کے ساتھ رخصت ہوتے ہیں — عموماً ڈیٹا کوالٹی، گورننس اور انٹیگریشن کا کام — جو بذاتِ خود فائدہ دیتا ہے اور بعد کی AI سرمایہ کاری کی کامیابی کا امکان نمایاں بڑھا دیتا ہے۔" },
+        { "question": "یہ عام IT آڈٹ سے کیسے مختلف ہے؟", "answer": "IT آڈٹ آپ کے سسٹمز کی صحت جانچتا ہے؛ AI ریڈینیس اسیسمنٹ یہ جانچتی ہے کہ آیا وہ سسٹمز، آپ کا ڈیٹا اور آپ کے لوگ مشین لرننگ کو پروڈکشن میں سہارا دے سکتے ہیں۔ اس میں وہ AI مخصوص امور شامل ہیں جنہیں IT آڈٹ نظرانداز کرتا ہے — ٹریننگ ڈیٹا کی دستیابی، MLOps صلاحیت، ماڈل گورننس اور EU AI Act جیسے ضوابط۔" }
+      ],
+      "technologies": [
+        { "icon": "document", "name": "Assessment Framework" },
+        { "icon": "chart", "name": "Maturity Model" },
+        { "icon": "databricks", "name": "Databricks" },
+        { "icon": "snowflake", "name": "Snowflake" },
+        { "icon": "sagemaker", "name": "AWS SageMaker" },
+        { "icon": "azureml", "name": "Azure Machine Learning" },
+        { "icon": "powerbi", "name": "Power BI" },
+        { "icon": "python", "name": "Python" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تقييم الجاهزية للذكاء الاصطناعي",
+    "shortDescription": "اعرفوا موقعكم بدقة قبل الاستثمار في الذكاء الاصطناعي. نقيّم بياناتكم وبنيتكم التحتية ومهاراتكم وعملياتكم وفق نموذج نضج منهجي — ونسلّم خطة عمل مرتّبة الأولويات وواقعية الميزانية.",
+    "fullDescription": "لا تفشل معظم مبادرات الذكاء الاصطناعي بسبب ضعف النماذج، بل لأن المؤسسة غير جاهزة: البيانات مبعثرة، والبنية التحتية لا تستطيع تشغيل النماذج في بيئة الإنتاج، ولا أحد يملك مسؤولية النتيجة. يقيس تقييم الجاهزية لدينا موقعكم عبر خمسة أبعاد — جودة البيانات وإتاحتها، والبنية التحتية، والمهارات، والعمليات، والثقافة المؤسسية — باستخدام نموذج نضج منهجي. خلال فترة تمتد عادةً من ثلاثة إلى ستة أسابيع نجري مقابلات مع أصحاب المصلحة، وندقق أصول البيانات، ونراجع الأدوات، ونقارن قدراتكم بالمعايير المرجعية. تحصلون في النهاية على بطاقة نضج، وتحليل للفجوات مع خطوات معالجة ملموسة، وخطة عمل مرتّبة الأولويات بميزانيات وجداول زمنية واقعية — لتقوم أول استثماراتكم في الذكاء الاصطناعي على أرض صلبة بدل أن تتحول إلى تجربة أخرى لا تصل إلى الإنتاج.",
+    "features": [
+      "تدقيق جودة البيانات وإتاحتها",
+      "مراجعة البنية التحتية وقدرات MLOps",
+      "تحليل فجوات المهارات والمواهب",
+      "تقييم العمليات وسير العمل",
+      "تقييم الثقافة والجاهزية للتغيير",
+      "مراجعة حوكمة الذكاء الاصطناعي والمخاطر",
+      "بطاقة نضج مع مقارنات مرجعية",
+      "خطة عمل مرتّبة الأولويات بنطاقات ميزانية"
+    ],
+    "benefits": [
+      "معرفة العوائق أمام تبنّي الذكاء الاصطناعي قبل الإنفاق عليه",
+      "خارطة طريق مرتّبة الأولويات بدل طموح غامض",
+      "ميزانيات وجداول واقعية يمكن للقيادة الالتزام بها",
+      "رؤية مبكرة لمخاطر خصوصية البيانات والحوكمة",
+      "توافق أصحاب المصلحة يُبنى أثناء التقييم نفسه",
+      "خط أساس قابل للقياس لتتبّع تقدّم الجاهزية"
+    ],
+    "metaTitle": "تقييم الجاهزية للذكاء الاصطناعي | PakSoft",
+    "metaDescription": "قيّموا بياناتكم وبنيتكم التحتية ومهاراتكم وثقافتكم لتبنّي الذكاء الاصطناعي. احصلوا على بطاقة نضج وخطة عمل مرتّبة الأولويات — احجزوا استشارة مجانية اليوم.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "تحديد النطاق ومقابلات أصحاب المصلحة", "description": "نحدد مجالات الأعمال التي يغطيها التقييم ونجري مقابلات مع القيادة وفرق تقنية المعلومات والفرق التشغيلية. تكشف هذه الحوارات الطموحات والمخاوف والقيود غير المكتوبة التي تقرر ما إذا كان تبنّي الذكاء الاصطناعي سيستمر فعلاً." },
+        { "step": 2, "title": "تدقيق أصول البيانات", "description": "نفحص مصادر بياناتكم وجودتها وإتاحتها ومنشأها وحوكمتها — وهي أقوى مؤشر منفرد على نجاح الذكاء الاصطناعي. يبيّن التدقيق حالات الاستخدام التي تدعمها بياناتكم اليوم وتلك التي تحتاج إلى عمل تأسيسي أولاً." },
+        { "step": 3, "title": "مراجعة البنية التحتية والأدوات", "description": "نراجع القدرة الحاسوبية وإعداد السحابة ونقاط التكامل وقدرات MLOps لمعرفة ما إذا كانت النماذج ستعمل فعلاً في بيئة الإنتاج. تُرسم قيود الأمان والامتثال في هذه المرحلة، ولا تُكتشف لاحقاً." },
+        { "step": 4, "title": "تقييم المهارات والثقافة", "description": "نقيّم المهارات التقنية ومحو الأمية بالبيانات ومدى تقبّل المؤسسة للقرارات المبنية على البيانات. تُربط كل فجوة مهارات بتوصية واضحة — بناء داخلي أو شراء أو شراكة — بدلاً من خطة تدريب عامة." },
+        { "step": 5, "title": "تسجيل النضج وتحليل الفجوات", "description": "تُجمَع النتائج في بطاقة نضج تغطي أبعاد البيانات والبنية التحتية والمواهب والعمليات والثقافة. تُصنَّف كل فجوة حسب خطورتها وحسب الجهد المطلوب لسدّها." },
+        { "step": 6, "title": "خطة العمل والعرض التنفيذي", "description": "نقدّم خطة عمل مرتّبة الأولويات مع جداول زمنية ونطاقات ميزانية ومكاسب سريعة يمكن البدء بها فوراً. توحّد جلسة العرض رؤية القيادة حول ما يُموَّل أولاً — وما يُؤجَّل عن قصد." }
+      ],
+      "faq": [
+        { "question": "كم يستغرق تقييم الجاهزية للذكاء الاصطناعي؟", "answer": "يستغرق التقييم المركّز على وحدة أعمال واحدة عادةً من ثلاثة إلى أربعة أسابيع، بينما يمتد التقييم على مستوى المؤسسة من خمسة إلى ثمانية. تعتمد المدة أساساً على توافر أصحاب المصلحة وجودة توثيق بياناتكم — ونؤكد الجدول التفصيلي بعد مكالمة تحديد النطاق." },
+        { "question": "ماذا نستلم في نهاية التقييم؟", "answer": "تحصلون على بطاقة نضج عبر خمسة أبعاد، وتحليل فجوات مع خطوات معالجة ملموسة، وخطة عمل مرتّبة الأولويات بنطاقات ميزانية وجداول زمنية، وعرض تنفيذي. كل شيء مكتوب بحيث يستطيع مجلس إدارتكم ومهندسوكم العمل به على حد سواء." },
+        { "question": "لماذا تفشل مشاريع كثيرة للذكاء الاصطناعي بدون تقييم؟", "answer": "تُظهر التحليلات القطاعية باستمرار أن غالبية تجارب الذكاء الاصطناعي لا تصل أبداً إلى الإنتاج — والأسباب نادراً ما تكون الخوارزميات. العوائق الحقيقية هي البيانات المبعثرة وغياب المسؤولية وبنية تحتية لا تشغّل النماذج بموثوقية؛ والتقييم يكشفها قبل أن تنفقوا على تطوير النماذج." },
+        { "question": "هل نحتاج إلى علماء بيانات قبل التقييم؟", "answer": "لا — تقييم مواهبكم الحالية جزء من العمل نفسه. يبيّن تحليل فجوات المهارات الأدوار التي تحتاجونها فعلاً، وما إذا كان التوظيف أو تطوير الموظفين الحاليين أو الشراكة الخارجية هو الطريق الأكثر كفاءة من حيث التكلفة لسدّ كل فجوة." },
+        { "question": "ماذا يقيس نموذج نضج الذكاء الاصطناعي فعلياً؟", "answer": "يمنح مؤسستكم درجات في أبعاد مثل جودة البيانات وحوكمتها، والبنية التحتية وقدرات MLOps، والمواهب ومحو الأمية بالبيانات، وتكامل العمليات، والتزام القيادة. القيمة ليست في الدرجة نفسها بل في المقارنة: فهو يُظهر بدقة أي بُعد يشكّل عنق الزجاجة، ليذهب الاستثمار حيث يغيّر النتيجة." },
+        { "question": "هل التقييم محايد تجاه المورّدين؟", "answer": "نعم. لا نعيد بيع منصات الذكاء الاصطناعي ولا نتقاضى عمولات إحالة، لذا تستند توصياتنا إلى بنيتكم القائمة ومهارات فريقكم وميزانيتكم. وحين تصلح عدة أدوات، نعرض المفاضلات بشفافية ونترك القرار لكم." },
+        { "question": "ماذا لو أظهر التقييم أننا غير جاهزين للذكاء الاصطناعي؟", "answer": "هذه واحدة من أثمن النتائج الممكنة: فهي تمنعكم من حرق الميزانية على مبادرات كانت ستتعثر. ومع ذلك تخرجون بخارطة طريق تأسيسية — عادةً أعمال جودة البيانات والحوكمة والتكامل — تخلق قيمة بحد ذاتها وترفع كثيراً احتمال نجاح استثمار لاحق في الذكاء الاصطناعي." },
+        { "question": "ما الفرق بين هذا التقييم وتدقيق تقنية المعلومات العام؟", "answer": "يفحص تدقيق تقنية المعلومات صحة أنظمتكم؛ أما تقييم الجاهزية للذكاء الاصطناعي فيفحص ما إذا كانت تلك الأنظمة وبياناتكم وفرقكم قادرة على دعم تعلّم الآلة في الإنتاج. وهو يغطي جوانب خاصة بالذكاء الاصطناعي يتجاهلها التدقيق التقليدي — توافر بيانات التدريب، وقدرات MLOps، وحوكمة النماذج، والمتطلبات التنظيمية مثل EU AI Act." }
+      ],
+      "technologies": [
+        { "icon": "document", "name": "Assessment Framework" },
+        { "icon": "chart", "name": "Maturity Model" },
+        { "icon": "databricks", "name": "Databricks" },
+        { "icon": "snowflake", "name": "Snowflake" },
+        { "icon": "sagemaker", "name": "AWS SageMaker" },
+        { "icon": "azureml", "name": "Azure Machine Learning" },
+        { "icon": "powerbi", "name": "Power BI" },
+        { "icon": "python", "name": "Python" }
+      ]
+    }
+  }
+}

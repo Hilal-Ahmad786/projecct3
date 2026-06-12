@@ -1,0 +1,684 @@
+[
+ {
+  "slug": "brand-guidelines",
+  "name": "Brand Guidelines",
+  "parentSlug": "brand-strategy",
+  "shortDescription": "Create comprehensive brand guidelines for consistent application.",
+  "fullDescription": "Document your brand for consistent use. We create comprehensive brand guidelines covering logo usage, colors, typography, imagery, and voice.",
+  "features": [
+   "Logo Guidelines",
+   "Color System",
+   "Typography",
+   "Imagery Style",
+   "Voice & Tone",
+   "Application Examples"
+  ],
+  "benefits": [
+   "Brand consistency",
+   "Team alignment",
+   "Faster execution",
+   "Quality control",
+   "Brand protection",
+   "Scalable identity"
+  ],
+  "technologies": [
+   {
+    "icon": "figma",
+    "name": "Figma"
+   },
+   {
+    "icon": "notion",
+    "name": "Notion"
+   },
+   {
+    "icon": "document",
+    "name": "PDF"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "brand-positioning",
+  "name": "Brand Positioning",
+  "parentSlug": "brand-strategy",
+  "shortDescription": "Define your unique position in the market and customers minds.",
+  "fullDescription": "Carve out your space in the market. We help you define a distinctive brand position that differentiates you from competitors and resonates with your target audience.",
+  "features": [
+   "Competitive Analysis",
+   "Target Audience",
+   "Value Proposition",
+   "Positioning Statement",
+   "Differentiation",
+   "Market Mapping"
+  ],
+  "benefits": [
+   "Clear differentiation",
+   "Customer focus",
+   "Marketing direction",
+   "Competitive edge",
+   "Team alignment",
+   "Consistent messaging"
+  ],
+  "technologies": [
+   {
+    "icon": "chart",
+    "name": "Research"
+   },
+   {
+    "icon": "users",
+    "name": "Workshops"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "brand-strategy",
+  "name": "Brand Strategy",
+  "parentSlug": null,
+  "shortDescription": "Develop a brand strategy that differentiates and resonates.",
+  "fullDescription": "Build brands that matter. We develop comprehensive brand strategies including positioning, messaging, personality, and visual direction.",
+  "features": [
+   "Brand Positioning",
+   "Messaging Framework",
+   "Brand Personality",
+   "Competitive Analysis",
+   "Target Audience",
+   "Brand Guidelines"
+  ],
+  "benefits": [
+   "Clear differentiation",
+   "Consistent messaging",
+   "Customer connection",
+   "Team alignment",
+   "Marketing effectiveness",
+   "Brand equity"
+  ],
+  "technologies": [
+   {
+    "icon": "chart",
+    "name": "Research Tools"
+   },
+   {
+    "icon": "users",
+    "name": "Workshops"
+   },
+   {
+    "icon": "document",
+    "name": "Documentation"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "corporate-website-design",
+  "name": "Corporate Website Design",
+  "parentSlug": "web-design",
+  "shortDescription": "Design professional corporate websites that build trust and credibility.",
+  "fullDescription": "Create a digital presence that reflects your corporate identity. We design polished, professional websites for enterprises and established businesses.",
+  "features": [
+   "Brand Integration",
+   "Multi-page Design",
+   "Content Strategy",
+   "Stakeholder Alignment",
+   "Responsive Design",
+   "CMS Planning"
+  ],
+  "benefits": [
+   "Professional image",
+   "Stakeholder confidence",
+   "Clear messaging",
+   "Lead generation",
+   "Brand authority",
+   "Global reach"
+  ],
+  "technologies": [
+   {
+    "icon": "figma",
+    "name": "Figma"
+   },
+   {
+    "icon": "wordpress",
+    "name": "WordPress"
+   },
+   {
+    "icon": "nextjs",
+    "name": "Next.js"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "design-systems",
+  "name": "Design Systems",
+  "parentSlug": "ui-ux-design",
+  "shortDescription": "Build scalable design systems for consistent product experiences.",
+  "fullDescription": "Create a single source of truth for design. We build comprehensive design systems with component libraries, guidelines, and documentation for efficient design at scale.",
+  "features": [
+   "Component Library",
+   "Design Tokens",
+   "Documentation",
+   "Pattern Library",
+   "Accessibility",
+   "Version Control"
+  ],
+  "benefits": [
+   "Consistency",
+   "Faster design",
+   "Easier maintenance",
+   "Team alignment",
+   "Scalability",
+   "Quality assurance"
+  ],
+  "technologies": [
+   {
+    "icon": "figma",
+    "name": "Figma"
+   },
+   {
+    "icon": "storybook",
+    "name": "Storybook"
+   },
+   {
+    "icon": "tokens",
+    "name": "Tokens Studio"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "ecommerce-design",
+  "name": "E-commerce Design",
+  "parentSlug": "web-design",
+  "shortDescription": "Design online stores that showcase products and drive sales.",
+  "fullDescription": "Create shopping experiences that convert. We design e-commerce websites with intuitive navigation, compelling product pages, and smooth checkout flows.",
+  "features": [
+   "Product Pages",
+   "Category Design",
+   "Checkout Flow",
+   "Mobile Shopping",
+   "Product Search",
+   "Trust Signals"
+  ],
+  "benefits": [
+   "Higher sales",
+   "Lower cart abandonment",
+   "Better UX",
+   "Mobile-friendly",
+   "Brand experience",
+   "Customer loyalty"
+  ],
+  "technologies": [
+   {
+    "icon": "figma",
+    "name": "Figma"
+   },
+   {
+    "icon": "shopify",
+    "name": "Shopify"
+   },
+   {
+    "icon": "woocommerce",
+    "name": "WooCommerce"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "explainer-videos",
+  "name": "Explainer Videos",
+  "parentSlug": "motion-graphics",
+  "shortDescription": "Create animated explainer videos that simplify complex ideas.",
+  "fullDescription": "Explain your product or service in 60-90 seconds. We create animated explainer videos that communicate value propositions clearly and memorably.",
+  "features": [
+   "Script Writing",
+   "Storyboarding",
+   "2D Animation",
+   "Voice Over",
+   "Sound Design",
+   "Multiple Formats"
+  ],
+  "benefits": [
+   "Clear communication",
+   "Higher conversion",
+   "Better retention",
+   "Shareable content",
+   "Professional quality",
+   "Versatile usage"
+  ],
+  "technologies": [
+   {
+    "icon": "aftereffects",
+    "name": "After Effects"
+   },
+   {
+    "icon": "illustrator",
+    "name": "Illustrator"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "graphic-design",
+  "name": "Graphic Design",
+  "parentSlug": null,
+  "shortDescription": "Professional graphic design for all your visual communication needs.",
+  "fullDescription": "Create stunning visuals that communicate your brand. From logos to marketing materials, our designers deliver professional graphics that capture attention and drive action.",
+  "features": [
+   "Logo Design",
+   "Brand Identity",
+   "Print Design",
+   "Packaging",
+   "Social Graphics",
+   "Presentations"
+  ],
+  "benefits": [
+   "Professional look",
+   "Brand consistency",
+   "Higher engagement",
+   "Competitive edge",
+   "Memorable identity",
+   "Quality materials"
+  ],
+  "technologies": [
+   {
+    "icon": "adobe",
+    "name": "Adobe Creative Suite"
+   },
+   {
+    "icon": "figma",
+    "name": "Figma"
+   },
+   {
+    "icon": "illustrator",
+    "name": "Illustrator"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "landing-page-design",
+  "name": "Landing Page Design",
+  "parentSlug": "web-design",
+  "shortDescription": "Design high-converting landing pages for campaigns and products.",
+  "fullDescription": "Turn visitors into customers with landing pages designed for conversion. We create focused, persuasive landing pages that drive action.",
+  "features": [
+   "Conversion Focus",
+   "A/B Testing Ready",
+   "Fast Loading",
+   "Mobile Optimized",
+   "Clear CTAs",
+   "Trust Elements"
+  ],
+  "benefits": [
+   "Higher conversion",
+   "Better ad ROI",
+   "Clear messaging",
+   "Fast launch",
+   "Easy testing",
+   "Measurable results"
+  ],
+  "technologies": [
+   {
+    "icon": "unbounce",
+    "name": "Unbounce"
+   },
+   {
+    "icon": "webflow",
+    "name": "Webflow"
+   },
+   {
+    "icon": "figma",
+    "name": "Figma"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "logo-brand-identity",
+  "name": "Logo & Brand Identity",
+  "parentSlug": "graphic-design",
+  "shortDescription": "Create a memorable logo and cohesive brand identity.",
+  "fullDescription": "Build a brand that stands out. We design distinctive logos and complete brand identity systems including color palettes, typography, and visual guidelines.",
+  "features": [
+   "Logo Design",
+   "Color Palette",
+   "Typography",
+   "Brand Guidelines",
+   "Brand Assets",
+   "Stationery Design"
+  ],
+  "benefits": [
+   "Memorable identity",
+   "Brand recognition",
+   "Professional image",
+   "Consistency",
+   "Competitive edge",
+   "Customer trust"
+  ],
+  "technologies": [
+   {
+    "icon": "illustrator",
+    "name": "Illustrator"
+   },
+   {
+    "icon": "figma",
+    "name": "Figma"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "mobile-app-design",
+  "name": "Mobile App Design",
+  "parentSlug": "ui-ux-design",
+  "shortDescription": "Design intuitive and beautiful mobile app experiences.",
+  "fullDescription": "Create mobile apps users love. We design native iOS and Android experiences with intuitive navigation, beautiful interfaces, and smooth interactions.",
+  "features": [
+   "iOS Design",
+   "Android Design",
+   "User Research",
+   "Prototyping",
+   "Usability Testing",
+   "Design Handoff"
+  ],
+  "benefits": [
+   "User-friendly apps",
+   "Higher retention",
+   "Better ratings",
+   "Native feel",
+   "Faster development",
+   "Reduced iterations"
+  ],
+  "technologies": [
+   {
+    "icon": "figma",
+    "name": "Figma"
+   },
+   {
+    "icon": "principle",
+    "name": "Principle"
+   },
+   {
+    "icon": "zeplin",
+    "name": "Zeplin"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "motion-graphics",
+  "name": "Motion Graphics",
+  "parentSlug": "graphic-design",
+  "shortDescription": "Create engaging animated content for marketing and communication.",
+  "fullDescription": "Bring your message to life with motion. We create animated videos, social content, and product animations that capture attention and drive engagement.",
+  "features": [
+   "Explainer Videos",
+   "Social Animations",
+   "Product Animations",
+   "Logo Animations",
+   "Animated Infographics",
+   "Video Intros"
+  ],
+  "benefits": [
+   "Higher engagement",
+   "Better retention",
+   "Complex concepts simplified",
+   "Professional content",
+   "Social performance",
+   "Brand recall"
+  ],
+  "technologies": [
+   {
+    "icon": "aftereffects",
+    "name": "After Effects"
+   },
+   {
+    "icon": "premiere",
+    "name": "Premiere"
+   },
+   {
+    "icon": "lottie",
+    "name": "Lottie"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "print-packaging-design",
+  "name": "Print & Packaging Design",
+  "parentSlug": "graphic-design",
+  "shortDescription": "Design print materials and product packaging that sells.",
+  "fullDescription": "Create impactful print collateral and packaging. From business cards to product boxes, we design materials that look great in the physical world.",
+  "features": [
+   "Business Cards",
+   "Brochures",
+   "Packaging",
+   "Labels",
+   "Posters",
+   "Print Ads"
+  ],
+  "benefits": [
+   "Professional materials",
+   "Shelf appeal",
+   "Brand consistency",
+   "Quality printing",
+   "Customer impression",
+   "Sales boost"
+  ],
+  "technologies": [
+   {
+    "icon": "indesign",
+    "name": "InDesign"
+   },
+   {
+    "icon": "illustrator",
+    "name": "Illustrator"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "product-animations",
+  "name": "Product Animations",
+  "parentSlug": "motion-graphics",
+  "shortDescription": "Showcase products with stunning 3D and 2D animations.",
+  "fullDescription": "Make products come alive with animation. We create product demos, 360 views, and feature highlights that showcase your products in the best light.",
+  "features": [
+   "3D Product Tours",
+   "360 Views",
+   "Feature Highlights",
+   "Assembly Animations",
+   "Product Demos",
+   "E-commerce Videos"
+  ],
+  "benefits": [
+   "Better understanding",
+   "Higher conversion",
+   "Reduced returns",
+   "Premium perception",
+   "Versatile usage",
+   "Competitive edge"
+  ],
+  "technologies": [
+   {
+    "icon": "blender",
+    "name": "Blender"
+   },
+   {
+    "icon": "c4d",
+    "name": "Cinema 4D"
+   },
+   {
+    "icon": "aftereffects",
+    "name": "After Effects"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "rebranding",
+  "name": "Rebranding",
+  "parentSlug": "brand-strategy",
+  "shortDescription": "Transform your brand with strategic rebranding.",
+  "fullDescription": "Evolve your brand for the future. We guide rebranding projects from strategy through execution, refreshing or completely transforming your brand identity.",
+  "features": [
+   "Brand Audit",
+   "Strategy Development",
+   "Visual Identity",
+   "Messaging Update",
+   "Launch Planning",
+   "Transition Management"
+  ],
+  "benefits": [
+   "Modern perception",
+   "Market relevance",
+   "Competitive edge",
+   "New audience reach",
+   "Team energy",
+   "Growth catalyst"
+  ],
+  "technologies": [
+   {
+    "icon": "tools",
+    "name": "Brand Tools"
+   },
+   {
+    "icon": "design",
+    "name": "Design Suite"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "social-animations",
+  "name": "Social Animations",
+  "parentSlug": "motion-graphics",
+  "shortDescription": "Create eye-catching animated content for social media.",
+  "fullDescription": "Stop the scroll with animated social content. We create GIFs, short videos, and animated posts that perform better than static images.",
+  "features": [
+   "Animated Posts",
+   "Story Animations",
+   "GIFs",
+   "Cinemagraphs",
+   "Ad Animations",
+   "Reels/TikTok"
+  ],
+  "benefits": [
+   "Higher engagement",
+   "More shares",
+   "Scroll-stopping",
+   "Platform optimized",
+   "Brand personality",
+   "Viral potential"
+  ],
+  "technologies": [
+   {
+    "icon": "aftereffects",
+    "name": "After Effects"
+   },
+   {
+    "icon": "lottie",
+    "name": "Lottie"
+   },
+   {
+    "icon": "canva",
+    "name": "Canva"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "social-media-graphics",
+  "name": "Social Media Graphics",
+  "parentSlug": "graphic-design",
+  "shortDescription": "Create scroll-stopping social media graphics for all platforms.",
+  "fullDescription": "Stand out in the feed with custom social media graphics. We design posts, stories, covers, and ads optimized for each platform engagement.",
+  "features": [
+   "Post Graphics",
+   "Story Templates",
+   "Cover Images",
+   "Ad Creatives",
+   "Carousel Posts",
+   "Video Thumbnails"
+  ],
+  "benefits": [
+   "Higher engagement",
+   "Brand consistency",
+   "Platform optimized",
+   "Time savings",
+   "Professional look",
+   "More followers"
+  ],
+  "technologies": [
+   {
+    "icon": "canva",
+    "name": "Canva"
+   },
+   {
+    "icon": "photoshop",
+    "name": "Photoshop"
+   },
+   {
+    "icon": "figma",
+    "name": "Figma"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "web-design",
+  "name": "Web Design",
+  "parentSlug": null,
+  "shortDescription": "Design stunning websites that engage visitors and drive conversions.",
+  "fullDescription": "Create websites that impress and convert. We design modern, responsive websites optimized for user experience and business goals.",
+  "features": [
+   "Responsive Design",
+   "Conversion Optimization",
+   "Brand Integration",
+   "Interactive Elements",
+   "Accessibility",
+   "Performance Focus"
+  ],
+  "benefits": [
+   "Professional image",
+   "Higher conversion",
+   "Better UX",
+   "Mobile-friendly",
+   "SEO-ready",
+   "Brand consistency"
+  ],
+  "technologies": [
+   {
+    "icon": "figma",
+    "name": "Figma"
+   },
+   {
+    "icon": "webflow",
+    "name": "Webflow"
+   },
+   {
+    "icon": "framer",
+    "name": "Framer"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ }
+]

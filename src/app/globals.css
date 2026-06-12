@@ -22,13 +22,22 @@
   --color-background-cream: #fafafa;
   --color-heritage-turquoise: #0e7c7b;
   --color-heritage-turquoise-light: #e6f2f2;
+  --color-heritage-turquoise-deep: #095d5c;
   --color-heritage-lapis: #1a3a6b;
   --color-heritage-lapis-light: #e9eef6;
+  --color-heritage-lapis-deep: #122a4f;
   --color-heritage-terracotta: #c4572e;
   --color-heritage-terracotta-light: #f9ece5;
+  --color-heritage-terracotta-deep: #9c4423;
   --color-heritage-saffron: #b97a17;
   --color-heritage-saffron-bright: #e8a33d;
   --color-heritage-saffron-light: #fbf1df;
+  --color-heritage-saffron-deep: #8f5d10;
+  /* soft = readable accents on dark backgrounds */
+  --color-heritage-turquoise-soft: #7dd3c8;
+  --color-heritage-lapis-soft: #9bb8e8;
+  --color-heritage-saffron-soft: #f2c479;
+  --color-heritage-terracotta-soft: #e69873;
   --color-heritage-ivory: #faf6ef;
   --color-heritage-sand: #f3ecdf;
 }

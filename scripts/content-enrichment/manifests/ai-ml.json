@@ -1,0 +1,2138 @@
+[
+ {
+  "slug": "ai-agents",
+  "name": "AI Agents",
+  "parentSlug": null,
+  "shortDescription": "Build autonomous AI agents that handle complex multi-step tasks.",
+  "fullDescription": "Create intelligent AI agents that autonomously execute complex workflows, make decisions, and interact with tools and APIs. We build multi-agent systems that can research, analyze, plan, and act on your behalf. From customer service agents to data analysis assistants, our AI agents work tirelessly to augment your team.",
+  "features": [
+   "Multi-Agent Orchestration",
+   "Tool & API Integration",
+   "Memory & Context Management",
+   "Decision-Making Frameworks",
+   "Human-in-the-Loop Workflows",
+   "Agent Monitoring & Logging"
+  ],
+  "benefits": [
+   "Automate complex multi-step workflows",
+   "Scale operations without human bottlenecks",
+   "24/7 autonomous task execution",
+   "Reduce operational costs significantly",
+   "Handle tasks too complex for simple automation"
+  ],
+  "technologies": [
+   {
+    "icon": "langchain",
+    "name": "LangChain"
+   },
+   {
+    "icon": "crewai",
+    "name": "CrewAI"
+   },
+   {
+    "icon": "autogen",
+    "name": "AutoGen"
+   },
+   {
+    "icon": "openai",
+    "name": "OpenAI Assistants"
+   },
+   {
+    "icon": "langgraph",
+    "name": "LangGraph"
+   },
+   {
+    "icon": "anthropic",
+    "name": "Anthropic Claude"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "ai-chatbot-integration",
+  "name": "AI Chatbot Integration",
+  "parentSlug": "conversational-ai",
+  "shortDescription": "Integrate intelligent AI chatbots powered by GPT-4 and Claude into your website, app, or customer service.",
+  "fullDescription": "Add conversational AI to your products with custom GPT-4 and Claude-powered chatbots. We build intelligent assistants that understand context, access your knowledge base, and provide helpful, on-brand responses 24/7.",
+  "features": [
+   "GPT-4 & Claude Integration",
+   "Custom Knowledge Base (RAG)",
+   "Multi-Turn Conversations",
+   "Intent Recognition",
+   "Human Handoff",
+   "Multi-Language Support",
+   "Analytics & Insights",
+   "Brand Voice Customization"
+  ],
+  "benefits": [
+   "Answer questions 24/7 instantly",
+   "Reduce support ticket volume",
+   "Consistent, accurate responses",
+   "Scale without hiring",
+   "Learn from every conversation",
+   "Improve customer satisfaction"
+  ],
+  "technologies": [
+   {
+    "icon": "openai",
+    "name": "OpenAI GPT-4"
+   },
+   {
+    "icon": "anthropic",
+    "name": "Anthropic Claude"
+   },
+   {
+    "icon": "langchain",
+    "name": "LangChain"
+   },
+   {
+    "icon": "pinecone",
+    "name": "Pinecone"
+   },
+   {
+    "icon": "vercel",
+    "name": "Vercel AI SDK"
+   },
+   {
+    "icon": "intercom",
+    "name": "Intercom"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "ai-consulting-strategy",
+  "name": "AI Consulting & Strategy",
+  "parentSlug": "ai-solutions",
+  "shortDescription": "Develop a clear AI strategy aligned with your business goals and roadmap to implementation.",
+  "fullDescription": "Navigate the AI landscape with expert guidance. We help you identify high-impact AI opportunities, build business cases, select the right technologies, and create implementation roadmaps that deliver measurable ROI.",
+  "features": [
+   "AI Readiness Assessment",
+   "Use Case Identification",
+   "Technology Selection",
+   "ROI Analysis & Business Cases",
+   "Implementation Roadmap",
+   "Team Training & Upskilling"
+  ],
+  "benefits": [
+   "Clear AI strategy aligned to business goals",
+   "Avoid costly technology mistakes",
+   "Prioritized implementation plan",
+   "Faster time to AI value"
+  ],
+  "technologies": [
+   {
+    "icon": "openai",
+    "name": "OpenAI"
+   },
+   {
+    "icon": "azure",
+    "name": "Azure AI"
+   },
+   {
+    "icon": "aws",
+    "name": "AWS AI"
+   },
+   {
+    "icon": "googlecloud",
+    "name": "Google AI"
+   },
+   {
+    "icon": "huggingface",
+    "name": "Hugging Face"
+   },
+   {
+    "icon": "langchain",
+    "name": "LangChain"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "ai-image-generation",
+  "name": "AI Image Generation",
+  "parentSlug": "ai-solutions",
+  "shortDescription": "Create custom AI image generation solutions using DALL-E, Stable Diffusion, and Midjourney APIs.",
+  "fullDescription": "Harness the power of generative AI for images. We build custom image generation pipelines, fine-tune models on your brand assets, and integrate AI image capabilities into your products for marketing, e-commerce, design, and creative workflows.",
+  "features": [
+   "DALL-E & Stable Diffusion Integration",
+   "Custom Model Fine-Tuning",
+   "Brand-Consistent Image Generation",
+   "Product Image Variations",
+   "Background Removal & Replacement",
+   "Image Upscaling & Enhancement",
+   "Batch Processing Pipelines",
+   "Content Moderation"
+  ],
+  "benefits": [
+   "Generate unlimited creative assets",
+   "Reduce photography and design costs",
+   "Personalize images at scale",
+   "Speed up creative workflows",
+   "Maintain brand consistency",
+   "Enable user-generated content"
+  ],
+  "technologies": [
+   {
+    "icon": "openai",
+    "name": "OpenAI DALL-E"
+   },
+   {
+    "icon": "stability",
+    "name": "Stable Diffusion"
+   },
+   {
+    "icon": "midjourney",
+    "name": "Midjourney API"
+   },
+   {
+    "icon": "comfyui",
+    "name": "ComfyUI"
+   },
+   {
+    "icon": "replicate",
+    "name": "Replicate"
+   },
+   {
+    "icon": "aws",
+    "name": "AWS SageMaker"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "ai-integration",
+  "name": "AI Integration",
+  "parentSlug": "ai-solutions",
+  "shortDescription": "Integrate AI capabilities into your existing systems and workflows.",
+  "fullDescription": "Seamlessly add AI to your tech stack. We connect AI models to your CRM, ERP, databases, and applications with proper data flow, error handling, and monitoring.",
+  "features": [
+   "System Integration",
+   "API Development",
+   "Data Pipelines",
+   "Error Handling",
+   "Monitoring",
+   "Documentation"
+  ],
+  "benefits": [
+   "Seamless adoption",
+   "Minimal disruption",
+   "Reliable operation",
+   "Scalable architecture",
+   "Maintainable code",
+   "Fast deployment"
+  ],
+  "technologies": [
+   {
+    "icon": "api",
+    "name": "REST APIs"
+   },
+   {
+    "icon": "webhook",
+    "name": "Webhooks"
+   },
+   {
+    "icon": "kafka",
+    "name": "Kafka"
+   },
+   {
+    "icon": "python",
+    "name": "Python"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "ai-poc-mvp",
+  "name": "AI PoC & MVP",
+  "parentSlug": "ai-solutions",
+  "shortDescription": "Validate AI ideas quickly with proof of concepts and MVPs.",
+  "fullDescription": "Test AI hypotheses before full investment. We build rapid PoCs to validate feasibility and MVPs to test market fit, reducing risk and accelerating learning.",
+  "features": [
+   "Rapid Prototyping",
+   "Feasibility Testing",
+   "Performance Benchmarks",
+   "User Testing",
+   "Iteration",
+   "Go/No-Go Decision"
+  ],
+  "benefits": [
+   "Risk reduction",
+   "Fast learning",
+   "Cost efficiency",
+   "Stakeholder confidence",
+   "Clear next steps",
+   "Technical validation"
+  ],
+  "technologies": [
+   {
+    "icon": "python",
+    "name": "Python"
+   },
+   {
+    "icon": "jupyter",
+    "name": "Jupyter"
+   },
+   {
+    "icon": "streamlit",
+    "name": "Streamlit"
+   },
+   {
+    "icon": "openai",
+    "name": "OpenAI"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "ai-solutions",
+  "name": "AI Solutions",
+  "parentSlug": null,
+  "shortDescription": "Intelligent automation and machine learning models.",
+  "fullDescription": "Unlock the power of Artificial Intelligence. From predictive analytics to natural language processing chatbots, we integrate state-of-the-art AI models into your workflows. Our AI solutions help businesses automate complex processes, gain actionable insights from data, and deliver personalized experiences to customers at scale.",
+  "features": [
+   "Custom Machine Learning Models",
+   "Natural Language Processing (NLP)",
+   "Computer Vision Solutions",
+   "Predictive Analytics & Forecasting",
+   "AI-Powered Chatbots & Virtual Assistants",
+   "Recommendation Systems",
+   "Sentiment Analysis",
+   "Anomaly Detection"
+  ],
+  "benefits": [
+   "Automate repetitive tasks and reduce operational costs",
+   "Make data-driven decisions with predictive insights",
+   "Enhance customer experiences with personalization",
+   "Scale operations without proportional workforce increases",
+   "Gain competitive advantage through innovation",
+   "Improve accuracy and reduce human error"
+  ],
+  "technologies": [
+   {
+    "icon": "python",
+    "name": "Python"
+   },
+   {
+    "icon": "tensorflow",
+    "name": "TensorFlow"
+   },
+   {
+    "icon": "pytorch",
+    "name": "PyTorch"
+   },
+   {
+    "icon": "openai",
+    "name": "OpenAI"
+   },
+   {
+    "icon": "huggingface",
+    "name": "Hugging Face"
+   },
+   {
+    "icon": "scikitlearn",
+    "name": "Scikit-learn"
+   },
+   {
+    "icon": "aws",
+    "name": "AWS SageMaker"
+   },
+   {
+    "icon": "googlecloud",
+    "name": "Google Cloud AI"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "ai-workflow-automation",
+  "name": "AI Workflow Automation",
+  "parentSlug": "ai-agents",
+  "shortDescription": "Automate complex business workflows with AI intelligence.",
+  "fullDescription": "Transform manual workflows into intelligent automated processes. We combine AI decision-making with traditional automation to handle exceptions, learn from outcomes, and improve over time.",
+  "features": [
+   "Intelligent Routing",
+   "Decision Automation",
+   "Exception Handling",
+   "Process Mining",
+   "Continuous Learning",
+   "Human Escalation"
+  ],
+  "benefits": [
+   "Reduced manual work",
+   "Faster processing",
+   "Fewer errors",
+   "Better decisions",
+   "Scalable operations",
+   "Cost savings"
+  ],
+  "technologies": [
+   {
+    "icon": "n8n",
+    "name": "n8n"
+   },
+   {
+    "icon": "zapier",
+    "name": "Zapier"
+   },
+   {
+    "icon": "openai",
+    "name": "OpenAI"
+   },
+   {
+    "icon": "python",
+    "name": "Python"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "anomaly-detection",
+  "name": "Anomaly Detection",
+  "parentSlug": "machine-learning",
+  "shortDescription": "Detect unusual patterns and outliers in your data using ML.",
+  "fullDescription": "Build ML systems that identify anomalies in time series, transactions, network traffic, and manufacturing data. Catch fraud, defects, and failures before they cause damage.",
+  "features": [
+   "Real-time Detection",
+   "Adaptive Thresholds",
+   "Root Cause Analysis",
+   "Alert Management",
+   "Historical Analysis",
+   "Custom Models"
+  ],
+  "benefits": [
+   "Fraud prevention",
+   "Quality assurance",
+   "Security monitoring",
+   "Predictive maintenance",
+   "Cost avoidance",
+   "Risk reduction"
+  ],
+  "technologies": [
+   {
+    "icon": "ai",
+    "name": "Isolation Forest"
+   },
+   {
+    "icon": "ai",
+    "name": "Autoencoders"
+   },
+   {
+    "icon": "ai",
+    "name": "Prophet"
+   },
+   {
+    "icon": "python",
+    "name": "Python"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "autonomous-agents",
+  "name": "Autonomous Agents",
+  "parentSlug": "ai-agents",
+  "shortDescription": "Build AI agents that can reason, plan, and execute tasks autonomously.",
+  "fullDescription": "Create intelligent AI agents that can break down complex tasks, use tools, and achieve goals with minimal human intervention. From research agents to coding assistants.",
+  "features": [
+   "Task Planning",
+   "Tool Usage",
+   "Memory Systems",
+   "Multi-step Reasoning",
+   "Error Recovery",
+   "Human-in-loop"
+  ],
+  "benefits": [
+   "Task automation",
+   "Complex problem solving",
+   "Reduced workload",
+   "24/7 operation",
+   "Scalable intelligence",
+   "Continuous improvement"
+  ],
+  "technologies": [
+   {
+    "icon": "langchain",
+    "name": "LangChain"
+   },
+   {
+    "icon": "openai",
+    "name": "AutoGPT"
+   },
+   {
+    "icon": "ai",
+    "name": "CrewAI"
+   },
+   {
+    "icon": "python",
+    "name": "Python"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "business-intelligence-solutions",
+  "name": "Business Intelligence Solutions",
+  "parentSlug": "data-analytics",
+  "shortDescription": "Build BI platforms with interactive dashboards, KPI tracking, and self-service analytics.",
+  "fullDescription": "Business Intelligence turns your data into competitive advantage. We build BI solutions that connect data sources and deliver insights through dashboards.",
+  "features": [
+   "Data Warehouse Design",
+   "ETL Pipeline Development",
+   "Dashboard Development",
+   "KPI Definition & Tracking",
+   "Self-Service Analytics",
+   "Embedded Analytics",
+   "Automated Reporting",
+   "Data Governance"
+  ],
+  "benefits": [
+   "Data-driven decisions",
+   "Real-time visibility",
+   "Identify trends early",
+   "Democratized data access",
+   "Reduced reporting effort",
+   "Competitive insights"
+  ],
+  "technologies": [
+   {
+    "icon": "📊",
+    "name": "Tableau"
+   },
+   {
+    "icon": "📈",
+    "name": "Power BI"
+   },
+   {
+    "icon": "👀",
+    "name": "Looker"
+   },
+   {
+    "icon": "❄️",
+    "name": "Snowflake"
+   },
+   {
+    "icon": "🔧",
+    "name": "dbt"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 5
+ },
+ {
+  "slug": "chatbot-development",
+  "name": "Chatbot Development",
+  "parentSlug": "conversational-ai",
+  "shortDescription": "Build intelligent chatbots that handle customer inquiries, qualify leads, and automate support.",
+  "fullDescription": "Deploy AI-powered chatbots that transform customer interactions. We build chatbots for customer support, lead qualification, appointment booking, and FAQ automation across web, mobile, and messaging platforms.",
+  "features": [
+   "Multi-Platform Deployment",
+   "NLU Intent Recognition",
+   "Context-Aware Conversations",
+   "Human Handoff",
+   "Multi-Language Support",
+   "Analytics Dashboard"
+  ],
+  "benefits": [
+   "24/7 instant responses",
+   "60% reduction in support tickets",
+   "Consistent customer experience",
+   "Scalable without hiring"
+  ],
+  "technologies": [
+   {
+    "icon": "openai",
+    "name": "OpenAI GPT"
+   },
+   {
+    "icon": "googlecloud",
+    "name": "Dialogflow"
+   },
+   {
+    "icon": "rasa",
+    "name": "Rasa"
+   },
+   {
+    "icon": "langchain",
+    "name": "LangChain"
+   },
+   {
+    "icon": "twilio",
+    "name": "Twilio"
+   },
+   {
+    "icon": "whatsapp",
+    "name": "WhatsApp API"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "computer-vision",
+  "name": "Computer Vision",
+  "parentSlug": null,
+  "shortDescription": "Extract insights from images and video with advanced computer vision.",
+  "fullDescription": "Transform visual data into actionable intelligence with our computer vision solutions. We build custom models for object detection, image classification, facial recognition, OCR, and video analytics. From quality inspection in manufacturing to medical imaging analysis, our CV solutions automate visual tasks with superhuman accuracy.",
+  "features": [
+   "Object Detection & Recognition",
+   "Image Classification & Segmentation",
+   "OCR & Document Processing",
+   "Video Analytics & Tracking",
+   "Facial Recognition Systems",
+   "Quality Inspection Automation"
+  ],
+  "benefits": [
+   "Automate visual inspection tasks",
+   "Process thousands of images per second",
+   "Reduce human error in visual analysis",
+   "Enable real-time video monitoring",
+   "Extract data from unstructured visual content"
+  ],
+  "technologies": [
+   {
+    "icon": "opencv",
+    "name": "OpenCV"
+   },
+   {
+    "icon": "yolo",
+    "name": "YOLO"
+   },
+   {
+    "icon": "tensorflow",
+    "name": "TensorFlow"
+   },
+   {
+    "icon": "pytorch",
+    "name": "PyTorch Vision"
+   },
+   {
+    "icon": "aws",
+    "name": "AWS Rekognition"
+   },
+   {
+    "icon": "googlecloud",
+    "name": "Google Vision AI"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "computer-vision-solutions",
+  "name": "Computer Vision Solutions",
+  "parentSlug": "ai-solutions",
+  "shortDescription": "Implement image recognition, object detection, OCR, and video analytics.",
+  "fullDescription": "Computer vision enables machines to understand visual content. We build solutions for object detection, classification, OCR, and video analytics.",
+  "features": [
+   "Object Detection",
+   "Image Classification",
+   "Facial Recognition",
+   "OCR & Document Processing",
+   "Video Analytics",
+   "Defect Detection",
+   "Pose Estimation",
+   "Image Segmentation"
+  ],
+  "benefits": [
+   "Automate visual inspection",
+   "Process documents at scale",
+   "Enable new user experiences",
+   "Quality control automation",
+   "Security and surveillance",
+   "Accessibility features"
+  ],
+  "technologies": [
+   {
+    "icon": "🔥",
+    "name": "PyTorch"
+   },
+   {
+    "icon": "👁️",
+    "name": "OpenCV"
+   },
+   {
+    "icon": "🎯",
+    "name": "YOLO"
+   },
+   {
+    "icon": "⚡",
+    "name": "TensorRT"
+   },
+   {
+    "icon": "☁️",
+    "name": "AWS Rekognition"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 5
+ },
+ {
+  "slug": "conversational-ai",
+  "name": "Conversational AI",
+  "parentSlug": null,
+  "shortDescription": "Build intelligent chatbots and virtual assistants.",
+  "fullDescription": "Transform customer interactions with AI-powered conversational interfaces. We build intelligent chatbots and virtual assistants that understand natural language, handle complex queries, and provide personalized experiences. From customer support automation to sales assistance, our conversational AI solutions operate 24/7 and scale effortlessly.",
+  "features": [
+   "Custom Chatbot Development",
+   "Natural Language Understanding (NLU)",
+   "Multi-Channel Deployment",
+   "Sentiment Analysis",
+   "Intent Recognition & Entity Extraction",
+   "Human Handoff Integration",
+   "Multilingual Support",
+   "Analytics & Conversation Insights"
+  ],
+  "benefits": [
+   "Provide 24/7 instant customer support",
+   "Reduce support costs by 40-60%",
+   "Handle unlimited simultaneous conversations",
+   "Improve customer satisfaction with fast responses",
+   "Free human agents for complex issues",
+   "Gather valuable customer insights"
+  ],
+  "technologies": [
+   {
+    "icon": "openai",
+    "name": "OpenAI GPT"
+   },
+   {
+    "icon": "googlecloud",
+    "name": "Google Dialogflow"
+   },
+   {
+    "icon": "aws",
+    "name": "Amazon Lex"
+   },
+   {
+    "icon": "azure",
+    "name": "Microsoft Bot Framework"
+   },
+   {
+    "icon": "rasa",
+    "name": "Rasa"
+   },
+   {
+    "icon": "langchain",
+    "name": "LangChain"
+   },
+   {
+    "icon": "twilio",
+    "name": "Twilio"
+   },
+   {
+    "icon": "intercom",
+    "name": "Intercom"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "custom-ai-development",
+  "name": "Custom AI Development",
+  "parentSlug": "ai-solutions",
+  "shortDescription": "Build custom AI solutions tailored to your unique business challenges and data.",
+  "fullDescription": "Get AI solutions designed specifically for your business. We develop custom AI applications from scratch, combining multiple AI capabilities to solve your unique challenges with solutions that off-the-shelf products cannot match.",
+  "features": [
+   "Custom Model Development",
+   "AI Application Architecture",
+   "Data Pipeline Engineering",
+   "Model Training & Optimization",
+   "Production Deployment",
+   "Continuous Improvement"
+  ],
+  "benefits": [
+   "Solutions tailored to your data",
+   "Competitive advantage through proprietary AI",
+   "Full ownership of models",
+   "Optimized for your specific use case"
+  ],
+  "technologies": [
+   {
+    "icon": "python",
+    "name": "Python"
+   },
+   {
+    "icon": "pytorch",
+    "name": "PyTorch"
+   },
+   {
+    "icon": "tensorflow",
+    "name": "TensorFlow"
+   },
+   {
+    "icon": "fastapi",
+    "name": "FastAPI"
+   },
+   {
+    "icon": "docker",
+    "name": "Docker"
+   },
+   {
+    "icon": "kubernetes",
+    "name": "Kubernetes"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "custom-llm-development",
+  "name": "Custom LLM Development",
+  "parentSlug": "llm-services",
+  "shortDescription": "Build custom language models tailored to your domain.",
+  "fullDescription": "Develop custom LLMs trained on your data for specialized tasks. From domain-specific fine-tuning to training from scratch, we build language models that understand your business.",
+  "features": [
+   "Custom Training",
+   "Domain Adaptation",
+   "Data Preparation",
+   "Model Evaluation",
+   "Deployment",
+   "Continuous Learning"
+  ],
+  "benefits": [
+   "Domain expertise",
+   "Data privacy",
+   "Custom vocabulary",
+   "Better accuracy",
+   "Competitive moat",
+   "Full ownership"
+  ],
+  "technologies": [
+   {
+    "icon": "pytorch",
+    "name": "PyTorch"
+   },
+   {
+    "icon": "huggingface",
+    "name": "Hugging Face"
+   },
+   {
+    "icon": "ai",
+    "name": "PEFT"
+   },
+   {
+    "icon": "ai",
+    "name": "vLLM"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "customer-service-ai",
+  "name": "Customer Service AI",
+  "parentSlug": "conversational-ai",
+  "shortDescription": "Transform customer service with AI-powered automation and insights.",
+  "fullDescription": "Implement AI solutions that revolutionize customer service. From intelligent routing to sentiment analysis and automated responses, we help you deliver faster, better support.",
+  "features": [
+   "Smart Routing",
+   "Sentiment Analysis",
+   "Auto-responses",
+   "Agent Assist",
+   "Knowledge Base AI",
+   "Quality Scoring"
+  ],
+  "benefits": [
+   "Faster resolution",
+   "Higher CSAT",
+   "Reduced costs",
+   "Agent productivity",
+   "Consistent quality",
+   "Scalable support"
+  ],
+  "technologies": [
+   {
+    "icon": "openai",
+    "name": "OpenAI"
+   },
+   {
+    "icon": "zendesk",
+    "name": "Zendesk"
+   },
+   {
+    "icon": "intercom",
+    "name": "Intercom"
+   },
+   {
+    "icon": "python",
+    "name": "Python"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "data-pipeline-automation",
+  "name": "Data Pipeline Automation",
+  "parentSlug": "python-automation",
+  "shortDescription": "Automate data pipelines for reliable data processing.",
+  "fullDescription": "Move and transform data automatically. We build robust data pipelines that extract, transform, and load data reliably and efficiently.",
+  "features": [
+   "ETL Pipelines",
+   "Data Validation",
+   "Scheduling",
+   "Error Handling",
+   "Monitoring",
+   "Scalability"
+  ],
+  "benefits": [
+   "Reliable data",
+   "Automation",
+   "Time savings",
+   "Data quality",
+   "Scalability",
+   "Cost efficiency"
+  ],
+  "technologies": [
+   {
+    "icon": "airflow",
+    "name": "Airflow"
+   },
+   {
+    "icon": "dbt",
+    "name": "dbt"
+   },
+   {
+    "icon": "spark",
+    "name": "Spark"
+   },
+   {
+    "icon": "fivetran",
+    "name": "Fivetran"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "data-visualization",
+  "name": "Data Visualization",
+  "parentSlug": "data-analytics",
+  "shortDescription": "Create insightful dashboards and visualizations that make data actionable.",
+  "fullDescription": "Data visualization turns complex data into clear insights. We create interactive dashboards, custom visualizations, and data stories that help you understand your data and communicate findings effectively. From executive dashboards to customer-facing analytics, we design visualizations that drive decisions.",
+  "features": [
+   "Dashboard Design & Development",
+   "Interactive Data Exploration",
+   "Custom Chart Development",
+   "Real-Time Data Visualization",
+   "Embedded Analytics",
+   "Report Automation",
+   "Data Storytelling",
+   "Mobile-Optimized Dashboards"
+  ],
+  "benefits": [
+   "Faster decision making",
+   "Identify trends and patterns",
+   "Communicate insights effectively",
+   "Self-service analytics for teams",
+   "Reduce report generation time",
+   "Impress stakeholders with compelling visuals"
+  ],
+  "technologies": [
+   {
+    "icon": "📊",
+    "name": "Tableau"
+   },
+   {
+    "icon": "📈",
+    "name": "Power BI"
+   },
+   {
+    "icon": "📉",
+    "name": "D3.js"
+   },
+   {
+    "icon": "👁️",
+    "name": "Looker"
+   },
+   {
+    "icon": "🎯",
+    "name": "Metabase"
+   },
+   {
+    "icon": "🦸",
+    "name": "Apache Superset"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "document-qa",
+  "name": "Document Q&A",
+  "parentSlug": "rag-solutions",
+  "shortDescription": "Ask questions and get answers from your documents using AI.",
+  "fullDescription": "Upload documents and ask questions in natural language. Our Document Q&A systems understand context, cite sources, and provide accurate answers from contracts, reports, manuals, and more.",
+  "features": [
+   "Multi-document QA",
+   "Source Citations",
+   "Context Awareness",
+   "Follow-up Questions",
+   "Summary Generation",
+   "Export Answers"
+  ],
+  "benefits": [
+   "Fast research",
+   "Accurate answers",
+   "Time savings",
+   "Better decisions",
+   "Knowledge access",
+   "Audit trail"
+  ],
+  "technologies": [
+   {
+    "icon": "ai",
+    "name": "LlamaIndex"
+   },
+   {
+    "icon": "openai",
+    "name": "OpenAI"
+   },
+   {
+    "icon": "weaviate",
+    "name": "Weaviate"
+   },
+   {
+    "icon": "python",
+    "name": "Python"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "enterprise-search-ai",
+  "name": "Enterprise Search AI",
+  "parentSlug": "rag-solutions",
+  "shortDescription": "Unified AI search across all your enterprise data and systems.",
+  "fullDescription": "Deploy AI-powered search that understands intent and finds information across emails, documents, databases, and applications. One search box for your entire enterprise knowledge.",
+  "features": [
+   "Unified Search",
+   "Intent Understanding",
+   "Personalization",
+   "Federated Search",
+   "Access Control",
+   "Analytics"
+  ],
+  "benefits": [
+   "Find anything fast",
+   "Cross-system search",
+   "Secure access",
+   "Productivity boost",
+   "Knowledge discovery",
+   "Reduced silos"
+  ],
+  "technologies": [
+   {
+    "icon": "elasticsearch",
+    "name": "Elasticsearch"
+   },
+   {
+    "icon": "openai",
+    "name": "OpenAI"
+   },
+   {
+    "icon": "database",
+    "name": "Vector DBs"
+   },
+   {
+    "icon": "api",
+    "name": "APIs"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "etl-pipelines",
+  "name": "ETL Pipelines",
+  "parentSlug": "data-analytics",
+  "shortDescription": "Design and implement ETL/ELT pipelines that keep your data warehouse fresh and reliable.",
+  "fullDescription": "ETL pipelines are the backbone of data infrastructure. We build robust pipelines that extract data from diverse sources, transform it for analysis, and load it into your data warehouse. Whether you need batch processing, real-time streaming, or hybrid approaches, we deliver pipelines that are reliable, maintainable, and scalable.",
+  "features": [
+   "Pipeline Design & Architecture",
+   "Source Connectors",
+   "Data Transformation",
+   "Data Quality & Validation",
+   "Orchestration & Scheduling",
+   "Incremental Loading",
+   "Real-Time Streaming",
+   "Monitoring & Alerting"
+  ],
+  "benefits": [
+   "Reliable, automated data flows",
+   "Single source of truth",
+   "Reduced manual data work",
+   "Fresh data for decision making",
+   "Scalable to any data volume",
+   "Traceable data lineage"
+  ],
+  "technologies": [
+   {
+    "icon": "🌬️",
+    "name": "Apache Airflow"
+   },
+   {
+    "icon": "🔧",
+    "name": "dbt"
+   },
+   {
+    "icon": "🔌",
+    "name": "Fivetran"
+   },
+   {
+    "icon": "🔄",
+    "name": "Airbyte"
+   },
+   {
+    "icon": "⚡",
+    "name": "Spark"
+   },
+   {
+    "icon": "📨",
+    "name": "Kafka"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "fraud-detection-systems",
+  "name": "Fraud Detection Systems",
+  "parentSlug": "ai-solutions",
+  "shortDescription": "Implement ML-powered fraud detection for transactions and user behavior.",
+  "fullDescription": "Fraud costs businesses billions annually. We build fraud detection systems using machine learning to identify suspicious activity in real-time.",
+  "features": [
+   "Real-Time Transaction Scoring",
+   "Anomaly Detection",
+   "Behavioral Biometrics",
+   "Device Fingerprinting",
+   "Network Analysis",
+   "Rule Engine",
+   "Case Management",
+   "Model Explainability"
+  ],
+  "benefits": [
+   "Reduced fraud losses",
+   "Real-time protection",
+   "Lower false positives",
+   "Regulatory compliance",
+   "Customer trust",
+   "Operational efficiency"
+  ],
+  "technologies": [
+   {
+    "icon": "🌲",
+    "name": "XGBoost"
+   },
+   {
+    "icon": "🔥",
+    "name": "PyTorch"
+   },
+   {
+    "icon": "📮",
+    "name": "Apache Kafka"
+   },
+   {
+    "icon": "📬",
+    "name": "Redis"
+   },
+   {
+    "icon": "🔗",
+    "name": "Neo4j"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 5
+ },
+ {
+  "slug": "gpt-claude-api-integration",
+  "name": "GPT & Claude API Integration",
+  "parentSlug": "llm-services",
+  "shortDescription": "Integrate GPT-4 and Claude APIs into your applications.",
+  "fullDescription": "Seamlessly integrate OpenAI GPT and Anthropic Claude APIs into your products. We handle authentication, rate limiting, prompt optimization, and cost management for production-ready AI.",
+  "features": [
+   "API Integration",
+   "Rate Limiting",
+   "Error Handling",
+   "Prompt Caching",
+   "Cost Tracking",
+   "Response Streaming"
+  ],
+  "benefits": [
+   "Quick integration",
+   "Reliable service",
+   "Cost control",
+   "Best practices",
+   "Scalable architecture",
+   "Production ready"
+  ],
+  "technologies": [
+   {
+    "icon": "openai",
+    "name": "OpenAI API"
+   },
+   {
+    "icon": "anthropic",
+    "name": "Anthropic API"
+   },
+   {
+    "icon": "nodejs",
+    "name": "Node.js"
+   },
+   {
+    "icon": "python",
+    "name": "Python"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "image-recognition",
+  "name": "Image Recognition",
+  "parentSlug": "computer-vision",
+  "shortDescription": "Identify objects, scenes, and patterns in images using AI.",
+  "fullDescription": "Build custom image recognition systems that identify products, detect defects, classify content, and extract information from visual data with high accuracy.",
+  "features": [
+   "Object Detection",
+   "Image Classification",
+   "Scene Understanding",
+   "Custom Training",
+   "Real-time Processing",
+   "API Access"
+  ],
+  "benefits": [
+   "Automation",
+   "Quality control",
+   "Content moderation",
+   "Inventory management",
+   "Visual search",
+   "Data extraction"
+  ],
+  "technologies": [
+   {
+    "icon": "pytorch",
+    "name": "PyTorch"
+   },
+   {
+    "icon": "tensorflow",
+    "name": "TensorFlow"
+   },
+   {
+    "icon": "ai",
+    "name": "YOLO"
+   },
+   {
+    "icon": "opencv",
+    "name": "OpenCV"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "knowledge-base-ai",
+  "name": "Knowledge Base AI",
+  "parentSlug": "rag-solutions",
+  "shortDescription": "Build intelligent knowledge bases that understand and retrieve information.",
+  "fullDescription": "Create AI-powered knowledge bases that understand context, answer questions naturally, and learn from interactions. Perfect for internal wikis, customer support, and documentation.",
+  "features": [
+   "Semantic Search",
+   "Question Answering",
+   "Auto-categorization",
+   "Content Suggestions",
+   "Multi-format Support",
+   "Analytics"
+  ],
+  "benefits": [
+   "Instant answers",
+   "Reduced tickets",
+   "Knowledge sharing",
+   "Self-service",
+   "Always up-to-date",
+   "Institutional memory"
+  ],
+  "technologies": [
+   {
+    "icon": "pinecone",
+    "name": "Pinecone"
+   },
+   {
+    "icon": "openai",
+    "name": "OpenAI"
+   },
+   {
+    "icon": "langchain",
+    "name": "LangChain"
+   },
+   {
+    "icon": "nextjs",
+    "name": "Next.js"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "llm-finetuning",
+  "name": "LLM Fine-tuning",
+  "parentSlug": null,
+  "shortDescription": "Adapt large language models to your specific domain and use cases.",
+  "fullDescription": "Unlock the full potential of large language models by fine-tuning them on your domain data. We specialize in adapting models like GPT, Llama, and Mistral to understand your industry terminology, follow your guidelines, and produce outputs tailored to your specific business needs. From instruction tuning to RLHF, we make AI speak your language.",
+  "features": [
+   "Domain-Specific Fine-tuning",
+   "Instruction Tuning & Alignment",
+   "LoRA & QLoRA Efficient Training",
+   "RLHF Implementation",
+   "Custom Dataset Curation",
+   "Model Evaluation & Benchmarking"
+  ],
+  "benefits": [
+   "Models that understand your domain",
+   "Improved accuracy on specific tasks",
+   "Reduced hallucination with domain knowledge",
+   "Cost-effective vs training from scratch",
+   "Maintain data privacy with self-hosted models"
+  ],
+  "technologies": [
+   {
+    "icon": "huggingface",
+    "name": "Hugging Face"
+   },
+   {
+    "icon": "pytorch",
+    "name": "PyTorch"
+   },
+   {
+    "icon": "lora",
+    "name": "LoRA/QLoRA"
+   },
+   {
+    "icon": "wandb",
+    "name": "Weights & Biases"
+   },
+   {
+    "icon": "vllm",
+    "name": "vLLM"
+   },
+   {
+    "icon": "axolotl",
+    "name": "Axolotl"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "llm-services",
+  "name": "LLM Services",
+  "parentSlug": null,
+  "shortDescription": "Leverage large language models for your business applications.",
+  "fullDescription": "Harness the power of LLMs like GPT-4, Claude, and open-source models. We help you integrate, fine-tune, and deploy language models for content generation, analysis, and automation.",
+  "features": [
+   "LLM Integration",
+   "Fine-tuning",
+   "Prompt Engineering",
+   "Custom Models",
+   "API Development",
+   "Cost Optimization"
+  ],
+  "benefits": [
+   "Advanced NLP",
+   "Content automation",
+   "Customer insights",
+   "Process automation",
+   "Competitive edge",
+   "Scalable AI"
+  ],
+  "technologies": [
+   {
+    "icon": "openai",
+    "name": "OpenAI"
+   },
+   {
+    "icon": "anthropic",
+    "name": "Claude"
+   },
+   {
+    "icon": "langchain",
+    "name": "LangChain"
+   },
+   {
+    "icon": "python",
+    "name": "Python"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "machine-learning",
+  "name": "Machine Learning",
+  "parentSlug": null,
+  "shortDescription": "Custom ML models that learn and improve from your data.",
+  "fullDescription": "Harness the power of machine learning to solve complex business problems. We develop custom ML models that can predict outcomes, classify data, detect anomalies, and automate decision-making. From traditional algorithms to deep learning neural networks, we select the right approach for your specific use case.",
+  "features": [
+   "Supervised & Unsupervised Learning",
+   "Deep Learning Neural Networks",
+   "Time Series Forecasting",
+   "Classification & Regression Models",
+   "Clustering & Segmentation",
+   "Feature Engineering & Selection",
+   "Model Explainability & Interpretability",
+   "MLOps & Model Lifecycle Management"
+  ],
+  "benefits": [
+   "Automate complex decision-making processes",
+   "Predict future outcomes with high accuracy",
+   "Discover hidden patterns in large datasets",
+   "Scale expertise through intelligent automation",
+   "Continuously improve with more data",
+   "Reduce costs through predictive maintenance"
+  ],
+  "technologies": [
+   {
+    "icon": "python",
+    "name": "Python"
+   },
+   {
+    "icon": "tensorflow",
+    "name": "TensorFlow"
+   },
+   {
+    "icon": "pytorch",
+    "name": "PyTorch"
+   },
+   {
+    "icon": "scikitlearn",
+    "name": "Scikit-learn"
+   },
+   {
+    "icon": "keras",
+    "name": "Keras"
+   },
+   {
+    "icon": "mlflow",
+    "name": "MLflow"
+   },
+   {
+    "icon": "kubeflow",
+    "name": "Kubeflow"
+   },
+   {
+    "icon": "jupyter",
+    "name": "Jupyter"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "mlops-model-deployment",
+  "name": "MLOps & Model Deployment",
+  "parentSlug": "ai-solutions",
+  "shortDescription": "Deploy and manage ML models in production with monitoring and automation.",
+  "fullDescription": "Getting ML models to production is harder than building them. We implement MLOps practices for reliable ML pipelines.",
+  "features": [
+   "Model Training Pipelines",
+   "Experiment Tracking",
+   "Model Registry",
+   "Automated Deployment",
+   "A/B Testing Framework",
+   "Model Monitoring",
+   "Drift Detection",
+   "Feature Store"
+  ],
+  "benefits": [
+   "Faster model deployment",
+   "Reproducible experiments",
+   "Reliable model serving",
+   "Early drift detection",
+   "Automated retraining",
+   "Governance & compliance"
+  ],
+  "technologies": [
+   {
+    "icon": "📊",
+    "name": "MLflow"
+   },
+   {
+    "icon": "☸️",
+    "name": "Kubeflow"
+   },
+   {
+    "icon": "🧠",
+    "name": "SageMaker"
+   },
+   {
+    "icon": "📈",
+    "name": "Weights & Biases"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 5
+ },
+ {
+  "slug": "multi-agent-systems",
+  "name": "Multi-Agent Systems",
+  "parentSlug": "ai-agents",
+  "shortDescription": "Design systems where multiple AI agents collaborate to solve problems.",
+  "fullDescription": "Build sophisticated multi-agent systems where specialized agents work together. Create agent teams for research, coding, analysis, and creative tasks with coordinated workflows.",
+  "features": [
+   "Agent Orchestration",
+   "Role Specialization",
+   "Communication Protocols",
+   "Conflict Resolution",
+   "Shared Memory",
+   "Task Distribution"
+  ],
+  "benefits": [
+   "Complex automation",
+   "Specialized expertise",
+   "Parallel processing",
+   "Emergent capabilities",
+   "Robust systems",
+   "Flexible architecture"
+  ],
+  "technologies": [
+   {
+    "icon": "ai",
+    "name": "CrewAI"
+   },
+   {
+    "icon": "microsoft",
+    "name": "AutoGen"
+   },
+   {
+    "icon": "langchain",
+    "name": "LangGraph"
+   },
+   {
+    "icon": "python",
+    "name": "Python"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "natural-language-processing",
+  "name": "Natural Language Processing",
+  "parentSlug": "ai-solutions",
+  "shortDescription": "Create NLP solutions for text analysis, sentiment detection, chatbots, and language generation.",
+  "fullDescription": "Natural Language Processing enables machines to understand and work with human language. We build NLP solutions that extract insights from text, power intelligent chatbots, analyze sentiment, summarize documents, and generate human-like content—using both traditional ML and modern LLMs.",
+  "features": [
+   "Text Classification & Categorization",
+   "Sentiment Analysis",
+   "Named Entity Recognition",
+   "Text Summarization",
+   "Language Translation",
+   "Question Answering Systems",
+   "Document Understanding",
+   "Custom LLM Fine-tuning"
+  ],
+  "benefits": [
+   "Automate document processing",
+   "Understand customer sentiment at scale",
+   "Extract structured data from unstructured text",
+   "Enable natural human-computer interaction",
+   "Multilingual content capabilities",
+   "Reduce manual text analysis workload"
+  ],
+  "technologies": [
+   {
+    "icon": "🔤",
+    "name": "spaCy"
+   },
+   {
+    "icon": "🤗",
+    "name": "Hugging Face"
+   },
+   {
+    "icon": "🧠",
+    "name": "OpenAI"
+   },
+   {
+    "icon": "📚",
+    "name": "BERT"
+   },
+   {
+    "icon": "🔗",
+    "name": "LangChain"
+   },
+   {
+    "icon": "📖",
+    "name": "NLTK"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "nlp-text-processing",
+  "name": "NLP & Text Processing",
+  "parentSlug": "machine-learning",
+  "shortDescription": "Extract insights from text data with sentiment analysis, entity recognition, and text classification.",
+  "fullDescription": "Unlock value from unstructured text data. We build NLP solutions for sentiment analysis, named entity recognition, text classification, summarization, and language translation.",
+  "features": [
+   "Sentiment Analysis",
+   "Named Entity Recognition",
+   "Text Classification",
+   "Document Summarization",
+   "Language Detection & Translation",
+   "Keyword Extraction"
+  ],
+  "benefits": [
+   "Understand customer sentiment at scale",
+   "Automate document processing",
+   "Extract structured data from text",
+   "Multi-language support"
+  ],
+  "technologies": [
+   {
+    "icon": "spacy",
+    "name": "spaCy"
+   },
+   {
+    "icon": "huggingface",
+    "name": "Hugging Face"
+   },
+   {
+    "icon": "nltk",
+    "name": "NLTK"
+   },
+   {
+    "icon": "openai",
+    "name": "OpenAI"
+   },
+   {
+    "icon": "langchain",
+    "name": "LangChain"
+   },
+   {
+    "icon": "python",
+    "name": "Python"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "object-detection",
+  "name": "Object Detection",
+  "parentSlug": "computer-vision",
+  "shortDescription": "Detect and locate objects in images and video streams.",
+  "fullDescription": "Implement real-time object detection for security, retail analytics, autonomous systems, and manufacturing. Our models locate and identify multiple objects with bounding boxes and confidence scores.",
+  "features": [
+   "Real-time Detection",
+   "Multi-object Tracking",
+   "Custom Objects",
+   "Edge Deployment",
+   "Video Analytics",
+   "Alert Systems"
+  ],
+  "benefits": [
+   "Security monitoring",
+   "Inventory tracking",
+   "Traffic analysis",
+   "Quality inspection",
+   "People counting",
+   "Anomaly detection"
+  ],
+  "technologies": [
+   {
+    "icon": "ai",
+    "name": "YOLO"
+   },
+   {
+    "icon": "ai",
+    "name": "Detectron2"
+   },
+   {
+    "icon": "nvidia",
+    "name": "TensorRT"
+   },
+   {
+    "icon": "opencv",
+    "name": "OpenCV"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "ocr-document-processing",
+  "name": "OCR & Document Processing",
+  "parentSlug": "computer-vision",
+  "shortDescription": "Extract text and data from documents, forms, and images.",
+  "fullDescription": "Automate document processing with intelligent OCR. Extract structured data from invoices, receipts, forms, IDs, and handwritten documents with high accuracy.",
+  "features": [
+   "Text Extraction",
+   "Form Processing",
+   "Table Detection",
+   "Handwriting Recognition",
+   "Multi-language",
+   "Data Validation"
+  ],
+  "benefits": [
+   "Eliminate manual entry",
+   "Faster processing",
+   "Reduced errors",
+   "Searchable archives",
+   "Compliance ready",
+   "Cost savings"
+  ],
+  "technologies": [
+   {
+    "icon": "ocr",
+    "name": "Tesseract"
+   },
+   {
+    "icon": "azure",
+    "name": "Azure Form Recognizer"
+   },
+   {
+    "icon": "aws",
+    "name": "AWS Textract"
+   },
+   {
+    "icon": "python",
+    "name": "Python"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "predictive-analytics",
+  "name": "Predictive Analytics",
+  "parentSlug": "data-analytics",
+  "shortDescription": "Forecast trends, predict customer behavior, and anticipate risks with ML-powered analytics.",
+  "fullDescription": "Predictive analytics uses historical data and machine learning to forecast future outcomes. We build predictive models that help you anticipate customer churn, forecast demand, detect fraud, predict equipment failures, and make data-driven decisions before events occur.",
+  "features": [
+   "Demand Forecasting",
+   "Customer Churn Prediction",
+   "Fraud Detection",
+   "Predictive Maintenance",
+   "Risk Scoring",
+   "Lead Scoring",
+   "Price Optimization",
+   "Anomaly Detection"
+  ],
+  "benefits": [
+   "Make proactive instead of reactive decisions",
+   "Reduce costs by anticipating problems",
+   "Increase revenue by predicting opportunities",
+   "Optimize inventory and resources",
+   "Reduce fraud and risk exposure",
+   "Improve customer retention"
+  ],
+  "technologies": [
+   {
+    "icon": "🔧",
+    "name": "scikit-learn"
+   },
+   {
+    "icon": "🚀",
+    "name": "XGBoost"
+   },
+   {
+    "icon": "📈",
+    "name": "Prophet"
+   },
+   {
+    "icon": "🧮",
+    "name": "TensorFlow"
+   },
+   {
+    "icon": "📊",
+    "name": "MLflow"
+   },
+   {
+    "icon": "⚡",
+    "name": "Databricks"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "prompt-engineering",
+  "name": "Prompt Engineering",
+  "parentSlug": null,
+  "shortDescription": "Maximize AI output quality with expertly crafted prompt systems.",
+  "fullDescription": "Get the most out of large language models with professional prompt engineering. We design, test, and optimize prompt systems that deliver consistent, high-quality AI outputs for your specific workflows. From chain-of-thought reasoning to few-shot learning, we build prompt architectures that make AI reliable and production-ready.",
+  "features": [
+   "Prompt System Architecture",
+   "Chain-of-Thought Design",
+   "Few-Shot & Zero-Shot Optimization",
+   "Output Validation & Guardrails",
+   "Prompt Testing & Evaluation",
+   "Production Prompt Pipelines"
+  ],
+  "benefits": [
+   "Improve AI output quality by 50-300%",
+   "Reduce hallucination and errors",
+   "Create reusable prompt templates",
+   "Save on API costs with efficient prompts",
+   "Build reliable AI-powered workflows"
+  ],
+  "technologies": [
+   {
+    "icon": "openai",
+    "name": "OpenAI API"
+   },
+   {
+    "icon": "anthropic",
+    "name": "Anthropic Claude"
+   },
+   {
+    "icon": "langchain",
+    "name": "LangChain"
+   },
+   {
+    "icon": "promptfoo",
+    "name": "PromptFoo"
+   },
+   {
+    "icon": "langsmith",
+    "name": "LangSmith"
+   },
+   {
+    "icon": "guardrails",
+    "name": "Guardrails AI"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "rag-solutions",
+  "name": "RAG Solutions",
+  "parentSlug": null,
+  "shortDescription": "Build AI that answers accurately using your own data and knowledge base.",
+  "fullDescription": "Retrieval-Augmented Generation (RAG) combines the power of large language models with your proprietary data. We build enterprise RAG systems that let your team ask questions in natural language and get accurate, sourced answers from your documents, databases, and knowledge bases. Eliminate hallucination and unlock your institutional knowledge.",
+  "features": [
+   "Document Ingestion & Processing",
+   "Vector Database Architecture",
+   "Semantic Search & Retrieval",
+   "Multi-Source Knowledge Bases",
+   "Citation & Source Tracking",
+   "Hybrid Search (Semantic + Keyword)"
+  ],
+  "benefits": [
+   "Accurate AI answers from your data",
+   "Eliminate LLM hallucination",
+   "Unlock institutional knowledge",
+   "Reduce time spent searching for information",
+   "Keep sensitive data in your infrastructure"
+  ],
+  "technologies": [
+   {
+    "icon": "pinecone",
+    "name": "Pinecone"
+   },
+   {
+    "icon": "weaviate",
+    "name": "Weaviate"
+   },
+   {
+    "icon": "langchain",
+    "name": "LangChain"
+   },
+   {
+    "icon": "llamaindex",
+    "name": "LlamaIndex"
+   },
+   {
+    "icon": "openai",
+    "name": "OpenAI Embeddings"
+   },
+   {
+    "icon": "chroma",
+    "name": "Chroma"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "recommendation-systems",
+  "name": "Recommendation Systems",
+  "parentSlug": "ai-solutions",
+  "shortDescription": "Create personalized recommendation engines for products, content, and experiences.",
+  "fullDescription": "Recommendation systems drive engagement on Netflix, Amazon, and Spotify. We build personalized engines based on behavior and preferences.",
+  "features": [
+   "Collaborative Filtering",
+   "Content-Based Recommendations",
+   "Hybrid Approaches",
+   "Real-Time Personalization",
+   "A/B Testing Framework",
+   "Explainable Recommendations",
+   "Cold Start Handling",
+   "Multi-Armed Bandits"
+  ],
+  "benefits": [
+   "Increased engagement",
+   "Higher conversion rates",
+   "Improved user experience",
+   "Personalization at scale",
+   "Discovery of long-tail items",
+   "Customer retention"
+  ],
+  "technologies": [
+   {
+    "icon": "🔶",
+    "name": "TensorFlow Recommenders"
+   },
+   {
+    "icon": "☁️",
+    "name": "AWS Personalize"
+   },
+   {
+    "icon": "💡",
+    "name": "LightFM"
+   },
+   {
+    "icon": "📬",
+    "name": "Redis"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 5
+ },
+ {
+  "slug": "rpa-solutions",
+  "name": "RPA Solutions",
+  "parentSlug": "python-automation",
+  "shortDescription": "Automate repetitive tasks with robotic process automation.",
+  "fullDescription": "Let robots handle the mundane. We implement RPA solutions that automate repetitive manual tasks, freeing your team for higher-value work.",
+  "features": [
+   "Process Analysis",
+   "Bot Development",
+   "Attended/Unattended",
+   "Exception Handling",
+   "Monitoring",
+   "Scalability"
+  ],
+  "benefits": [
+   "Time savings",
+   "Reduced errors",
+   "Cost reduction",
+   "Employee satisfaction",
+   "Scalability",
+   "Compliance"
+  ],
+  "technologies": [
+   {
+    "icon": "uipath",
+    "name": "UiPath"
+   },
+   {
+    "icon": "aa",
+    "name": "Automation Anywhere"
+   },
+   {
+    "icon": "python",
+    "name": "Python"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "time-series-forecasting",
+  "name": "Time Series Forecasting",
+  "parentSlug": "machine-learning",
+  "shortDescription": "Predict future values from historical time series data.",
+  "fullDescription": "Build accurate forecasting models for demand planning, financial projections, resource allocation, and capacity planning using advanced time series ML techniques.",
+  "features": [
+   "Demand Forecasting",
+   "Financial Projections",
+   "Capacity Planning",
+   "Seasonal Adjustment",
+   "Confidence Intervals",
+   "What-if Analysis"
+  ],
+  "benefits": [
+   "Better planning",
+   "Reduced inventory",
+   "Optimized resources",
+   "Risk management",
+   "Cost savings",
+   "Strategic insights"
+  ],
+  "technologies": [
+   {
+    "icon": "ai",
+    "name": "Prophet"
+   },
+   {
+    "icon": "ai",
+    "name": "ARIMA"
+   },
+   {
+    "icon": "ai",
+    "name": "LSTM"
+   },
+   {
+    "icon": "python",
+    "name": "Python"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "video-analytics",
+  "name": "Video Analytics",
+  "parentSlug": "computer-vision",
+  "shortDescription": "Extract insights from video streams with AI-powered analytics.",
+  "fullDescription": "Transform video data into actionable insights. Our video analytics solutions handle people counting, behavior analysis, license plate recognition, and real-time event detection.",
+  "features": [
+   "People Counting",
+   "Behavior Analysis",
+   "Event Detection",
+   "Heat Maps",
+   "Dwell Time",
+   "License Plate Recognition"
+  ],
+  "benefits": [
+   "Retail insights",
+   "Security enhancement",
+   "Traffic optimization",
+   "Customer behavior",
+   "Operational efficiency",
+   "Evidence collection"
+  ],
+  "technologies": [
+   {
+    "icon": "nvidia",
+    "name": "DeepStream"
+   },
+   {
+    "icon": "opencv",
+    "name": "OpenCV"
+   },
+   {
+    "icon": "nvidia",
+    "name": "TensorRT"
+   },
+   {
+    "icon": "python",
+    "name": "Python"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "voice-assistant-development",
+  "name": "Voice Assistant Development",
+  "parentSlug": "conversational-ai",
+  "shortDescription": "Create voice experiences for Alexa, Google Assistant, and custom voice interfaces.",
+  "fullDescription": "Voice is the next frontier of human-computer interaction. We build voice assistants that make your brand accessible through speech—from Alexa Skills and Google Actions to custom voice interfaces. Our voice solutions handle natural conversation, integrate with your backend, and provide delightful user experiences.",
+  "features": [
+   "Alexa Skill Development",
+   "Google Action Development",
+   "Custom Voice Interfaces",
+   "Voice UI/UX Design",
+   "Natural Language Understanding",
+   "Backend Integration",
+   "Voice Analytics",
+   "Multi-Modal Experiences"
+  ],
+  "benefits": [
+   "Hands-free accessibility",
+   "New customer touchpoint",
+   "Brand presence on smart speakers",
+   "Improved customer service efficiency",
+   "Accessibility for visually impaired",
+   "Stand out from competitors"
+  ],
+  "technologies": [
+   {
+    "icon": "🔵",
+    "name": "Alexa Skills Kit"
+   },
+   {
+    "icon": "🟡",
+    "name": "Dialogflow"
+   },
+   {
+    "icon": "🤖",
+    "name": "Amazon Lex"
+   },
+   {
+    "icon": "🎙️",
+    "name": "Voiceflow"
+   },
+   {
+    "icon": "🔊",
+    "name": "Rasa"
+   },
+   {
+    "icon": "👂",
+    "name": "Whisper"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "whatsapp-bots",
+  "name": "WhatsApp Bots",
+  "parentSlug": "conversational-ai",
+  "shortDescription": "Build intelligent WhatsApp chatbots for customer support and sales.",
+  "fullDescription": "Create AI-powered WhatsApp chatbots that handle customer inquiries, qualify leads, book appointments, and provide 24/7 support with natural conversations.",
+  "features": [
+   "AI Conversations",
+   "Multi-language",
+   "Intent Recognition",
+   "Human Handoff",
+   "Quick Replies",
+   "Media Support"
+  ],
+  "benefits": [
+   "24/7 availability",
+   "Instant responses",
+   "Reduced support costs",
+   "Lead qualification",
+   "Scalable support",
+   "Consistent quality"
+  ],
+  "technologies": [
+   {
+    "icon": "google",
+    "name": "Dialogflow"
+   },
+   {
+    "icon": "openai",
+    "name": "OpenAI"
+   },
+   {
+    "icon": "whatsapp",
+    "name": "WhatsApp API"
+   },
+   {
+    "icon": "nodejs",
+    "name": "Node.js"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ }
+]

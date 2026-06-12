@@ -1,0 +1,273 @@
+{
+  "slug": "aws-migration",
+  "en": {
+    "name": "AWS Migration",
+    "shortDescription": "Move workloads to AWS without betting the business on a weekend cutover. We assess, plan, and execute migrations using the 6 Rs framework — with rehearsed rollbacks, verified data integrity, and right-sized costs.",
+    "fullDescription": "A successful AWS migration is planned backwards from the cutover. We start with a discovery of your application portfolio — dependencies, data volumes, compliance constraints — and assign each workload a strategy from the 6 Rs: rehost for speed, replatform to managed services like RDS, or refactor where the payoff justifies the effort. Migrations run in waves, starting with low-risk workloads; AWS MGN replicates servers and DMS streams database changes continuously, so cutover windows shrink from weekends to minutes. Every wave has a tested rollback path. We build your landing zone with Terraform — accounts, networking, IAM guardrails — and right-size instances before the first invoice, because lift-and-shift on default sizes is the most common reason cloud bills disappoint.",
+    "features": [
+      "Portfolio Discovery & Dependency Mapping",
+      "6 Rs Migration Strategy (Rehost/Replatform/Refactor)",
+      "AWS Landing Zone & Account Architecture",
+      "Server Migration with AWS MGN",
+      "Database Migration with AWS DMS",
+      "Wave Planning & Cutover Rehearsals",
+      "Cost Right-Sizing & Savings Plans",
+      "Post-Migration Validation & Optimization"
+    ],
+    "benefits": [
+      "Cutover windows measured in minutes, not weekends",
+      "A tested rollback path for every migration wave",
+      "Cloud costs right-sized before the first invoice",
+      "Security and IAM guardrails from day one",
+      "No surprise dependencies breaking mid-migration",
+      "A documented AWS foundation your team can operate"
+    ],
+    "metaTitle": "AWS Migration Services — Plan & Execute | PakSoft",
+    "metaDescription": "AWS migration with the 6 Rs framework: discovery, wave planning, MGN and DMS replication, rehearsed cutovers, and right-sized costs. Get a free assessment.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Discovery & Assessment", "description": "We inventory your applications, servers, databases, and the dependencies between them using automated discovery plus interviews with your team. The output is a migration readiness report with data volumes, compliance constraints, and a realistic TCO comparison." },
+        { "step": 2, "title": "Strategy & Wave Planning", "description": "Each workload gets a 6 Rs decision — rehost, replatform, refactor, retire, retain, or repurchase — based on business value and technical debt. Workloads are grouped into migration waves, starting with low-risk systems so the process is proven before anything critical moves." },
+        { "step": 3, "title": "Landing Zone Build", "description": "We build your AWS foundation with Terraform: multi-account structure, VPC networking, IAM guardrails, centralized logging, and encryption defaults. Everything is code-reviewed and reproducible, so the environment is auditable from its first day." },
+        { "step": 4, "title": "Replication & Rehearsal", "description": "AWS MGN replicates servers and DMS streams database changes continuously, keeping targets in sync with production. We rehearse each cutover against the replicated environment until the runbook is boring." },
+        { "step": 5, "title": "Cutover & Validation", "description": "Cutovers happen in agreed windows with DNS-level switching, while the source environment stays intact as the rollback path. Each wave is validated against functional and performance checklists before we declare it done." },
+        { "step": 6, "title": "Optimization & Handover", "description": "After stabilization we right-size instances, apply Savings Plans, and tune storage tiers so the bill reflects actual usage. Your team receives dashboards, runbooks, and a knowledge-transfer session — with optional managed support afterwards." }
+      ],
+      "faq": [
+        { "question": "How long does an AWS migration take?", "answer": "A small estate of 5–20 servers typically migrates in 4–8 weeks; mid-size environments with databases and interdependent applications run 3–6 months in waves. The discovery phase, usually 2–3 weeks, is what turns that range into a committed plan — we don't quote timelines before seeing dependency maps." },
+        { "question": "How much downtime should we expect during cutover?", "answer": "With MGN and DMS replicating continuously, most cutovers complete in minutes — the switch is a DNS change, not a data copy. Databases migrated with DMS change-data-capture typically see near-zero downtime. Where a legacy system genuinely needs a longer window, you'll know weeks in advance, not on cutover night." },
+        { "question": "Should we rehost, replatform, or refactor?", "answer": "Rehost (lift-and-shift) is fastest and lowest-risk but carries existing inefficiencies into the cloud; replatforming to managed services like RDS or ECS usually offers the best effort-to-benefit ratio. Full refactoring pays off only for systems you actively develop — we recommend it per workload, never as a blanket strategy." },
+        { "question": "What happens if a cutover fails?", "answer": "Every wave has a rehearsed rollback: the source environment stays running and in sync until validation completes, so falling back is a DNS change away. We define a point of no return per workload in advance — before it, rollback takes minutes; after it, we fix forward using the contingency steps documented in the runbook." },
+        { "question": "Will AWS actually be cheaper than our current setup?", "answer": "Not automatically — a lift-and-shift on default instance sizes often costs more than the hardware it replaced. Savings come from right-sizing, autoscaling, storage tiering, and Savings Plans, which together commonly reduce the post-migration bill by 20–40%. We model TCO honestly during assessment, including the cases where staying put wins." },
+        { "question": "How do you migrate databases without losing data?", "answer": "AWS DMS replicates the source continuously and applies ongoing changes until cutover, while validation jobs compare row counts and checksums on both sides. For engine changes — say Oracle to Aurora PostgreSQL — we use the Schema Conversion Tool and budget extra testing time, because stored procedures rarely convert untouched." },
+        { "question": "Can you meet our compliance and data residency requirements?", "answer": "Yes. The landing zone enforces encryption, least-privilege IAM, and audit logging from day one, and workloads are pinned to regions that satisfy GDPR or Türkiye's KVKK residency rules — eu-central-1 and the AWS Middle East regions are common choices. Because the controls are code, auditors can trace every one of them." },
+        { "question": "What support do you provide after the migration?", "answer": "Every migration includes a hypercare period — typically 2–4 weeks — where we monitor closely and tune whatever production traffic reveals. After handover you keep the dashboards, runbooks, and trained staff; ongoing managed operations are optional, never a lock-in." }
+      ],
+      "technologies": [
+        { "icon": "aws", "name": "AWS Migration Hub" },
+        { "icon": "aws", "name": "AWS DMS" },
+        { "icon": "aws", "name": "AWS MGN" },
+        { "icon": "aws", "name": "AWS Control Tower" },
+        { "icon": "aws", "name": "Amazon RDS" },
+        { "icon": "terraform", "name": "Terraform" },
+        { "icon": "aws", "name": "Amazon CloudWatch" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "AWS Geçişi",
+    "shortDescription": "İş yüklerinizi, işinizi bir hafta sonu geçişine emanet etmeden AWS'ye taşıyın. 6 R çerçevesiyle değerlendirir, planlar ve uygularız — provası yapılmış geri dönüş planları, doğrulanmış veri bütünlüğü ve baştan doğru boyutlandırılmış maliyetlerle.",
+    "fullDescription": "Başarılı bir AWS geçişi, geçiş anından geriye doğru planlanır. Uygulama portföyünüzün keşfiyle başlarız — bağımlılıklar, veri hacimleri, uyumluluk kısıtları — ve her iş yüküne 6 R çerçevesinden bir strateji atarız: hız için rehost, RDS gibi yönetilen servislere replatform, getirisi emeği karşılıyorsa refactor. Geçişler düşük riskli iş yükleriyle başlayan dalgalar halinde ilerler; AWS MGN sunucuları, DMS ise veritabanı değişikliklerini sürekli replike eder ve geçiş pencereleri hafta sonlarından dakikalara iner. Her dalganın test edilmiş bir geri dönüş yolu vardır. Landing zone'unuzu Terraform ile kurarız — hesaplar, ağ yapısı, IAM korumaları — ve ilk faturadan önce sunucuları doğru boyutlandırırız; çünkü varsayılan boyutlarla yapılan lift-and-shift, bulut faturalarının hayal kırıklığı yaratmasının en yaygın nedenidir.",
+    "features": [
+      "Portföy Keşfi ve Bağımlılık Haritalama",
+      "6 R Geçiş Stratejisi (Rehost/Replatform/Refactor)",
+      "AWS Landing Zone ve Hesap Mimarisi",
+      "AWS MGN ile Sunucu Geçişi",
+      "AWS DMS ile Veritabanı Geçişi",
+      "Dalga Planlama ve Geçiş Provaları",
+      "Maliyet Boyutlandırma ve Savings Plans",
+      "Geçiş Sonrası Doğrulama ve Optimizasyon"
+    ],
+    "benefits": [
+      "Hafta sonlarıyla değil, dakikalarla ölçülen geçiş pencereleri",
+      "Her geçiş dalgası için test edilmiş geri dönüş planı",
+      "İlk faturadan önce doğru boyutlandırılmış bulut maliyetleri",
+      "İlk günden itibaren güvenlik ve IAM korumaları",
+      "Geçiş ortasında patlayan sürpriz bağımlılıklar yok",
+      "Ekibinizin işletebileceği belgelenmiş bir AWS altyapısı"
+    ],
+    "metaTitle": "AWS Geçiş Hizmetleri — Planlama ve Uygulama | PakSoft",
+    "metaDescription": "6 R çerçevesiyle AWS geçişi: keşif, dalga planlama, MGN ve DMS replikasyonu, provalı geçişler ve doğru boyutlandırılmış maliyetler. Ücretsiz değerlendirme alın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Keşif ve Değerlendirme", "description": "Otomatik keşif araçları ve ekibinizle yapılan görüşmelerle uygulamalarınızı, sunucularınızı, veritabanlarınızı ve aralarındaki bağımlılıkları çıkarırız. Çıktı; veri hacimleri, uyumluluk kısıtları ve gerçekçi bir TCO karşılaştırması içeren bir geçiş hazırlık raporudur." },
+        { "step": 2, "title": "Strateji ve Dalga Planlama", "description": "Her iş yükü, iş değeri ve teknik borca göre bir 6 R kararı alır — rehost, replatform, refactor, retire, retain veya repurchase. İş yükleri dalgalara ayrılır; kritik sistemler taşınmadan önce süreç düşük riskli sistemlerle kanıtlanır." },
+        { "step": 3, "title": "Landing Zone Kurulumu", "description": "AWS temelinizi Terraform ile kurarız: çoklu hesap yapısı, VPC ağı, IAM korumaları, merkezi loglama ve varsayılan şifreleme. Her şey kod incelemesinden geçer ve yeniden üretilebilirdir; ortam ilk gününden itibaren denetlenebilir." },
+        { "step": 4, "title": "Replikasyon ve Prova", "description": "AWS MGN sunucuları, DMS ise veritabanı değişikliklerini sürekli replike ederek hedefleri üretimle senkron tutar. Her geçişin provasını, runbook sıradanlaşana kadar replike ortam üzerinde yaparız." },
+        { "step": 5, "title": "Geçiş ve Doğrulama", "description": "Geçişler, kaynak ortam geri dönüş yolu olarak ayakta tutulurken, kararlaştırılmış pencerelerde DNS seviyesinde yönlendirmeyle yapılır. Her dalga, tamamlandı denmeden önce işlevsel ve performans kontrol listeleriyle doğrulanır." },
+        { "step": 6, "title": "Optimizasyon ve Devir", "description": "Stabilizasyonun ardından sunucuları doğru boyutlandırır, Savings Plans uygular ve depolama katmanlarını gerçek kullanıma göre ayarlarız. Ekibiniz panolar, runbook'lar ve bir bilgi aktarımı oturumu alır — sonrasında isteğe bağlı yönetilen destek sunulur." }
+      ],
+      "faq": [
+        { "question": "Bir AWS geçişi ne kadar sürer?", "answer": "5–20 sunuculuk küçük bir ortam genellikle 4–8 haftada taşınır; veritabanları ve birbirine bağımlı uygulamalar içeren orta ölçekli ortamlar dalgalar halinde 3–6 ay sürer. Genellikle 2–3 hafta süren keşif aşaması, bu aralığı taahhüt edilebilir bir plana dönüştürür — bağımlılık haritalarını görmeden takvim sözü vermeyiz." },
+        { "question": "Geçiş sırasında ne kadar kesinti beklemeliyiz?", "answer": "MGN ve DMS sürekli replikasyon yaptığı için çoğu geçiş dakikalar içinde tamamlanır — anahtar bir DNS değişikliğidir, veri kopyalama değil. DMS'in değişiklik yakalama (CDC) özelliğiyle taşınan veritabanlarında kesinti genellikle sıfıra yakındır. Eski bir sistemin gerçekten daha uzun bir pencereye ihtiyacı varsa bunu geçiş gecesi değil, haftalar öncesinden bilirsiniz." },
+        { "question": "Rehost mu, replatform mu, refactor mı yapmalıyız?", "answer": "Rehost (lift-and-shift) en hızlı ve en düşük riskli yoldur ama mevcut verimsizlikleri buluta taşır; RDS veya ECS gibi yönetilen servislere replatform genellikle en iyi emek-fayda oranını sunar. Tam refactoring yalnızca aktif geliştirdiğiniz sistemlerde kendini amorti eder — bunu genel bir strateji olarak değil, iş yükü bazında öneririz." },
+        { "question": "Geçiş başarısız olursa ne olur?", "answer": "Her dalganın provası yapılmış bir geri dönüş planı vardır: kaynak ortam, doğrulama tamamlanana kadar çalışır ve senkron kalır; geri dönmek bir DNS değişikliği kadar yakındır. Her iş yükü için dönüşü olmayan noktayı önceden tanımlarız — öncesinde geri dönüş dakikalar alır, sonrasında runbook'ta belgelenmiş acil durum adımlarıyla ileriye doğru düzeltiriz." },
+        { "question": "AWS mevcut altyapımızdan gerçekten daha ucuz olur mu?", "answer": "Otomatik olarak değil — varsayılan sunucu boyutlarıyla yapılan lift-and-shift çoğu zaman yerini aldığı donanımdan daha pahalıya gelir. Tasarruf; doğru boyutlandırma, otomatik ölçekleme, depolama katmanları ve Savings Plans ile gelir; bunlar birlikte geçiş sonrası faturayı genellikle %20–40 azaltır. TCO'yu değerlendirme aşamasında dürüstçe modelleriz — mevcut altyapıda kalmanın kazandığı durumlar dahil." },
+        { "question": "Veritabanlarını veri kaybetmeden nasıl taşıyorsunuz?", "answer": "AWS DMS kaynağı sürekli replike eder ve geçiş anına kadar değişiklikleri uygulamaya devam eder; doğrulama işleri ise iki taraftaki satır sayılarını ve sağlama toplamlarını karşılaştırır. Motor değişikliklerinde — örneğin Oracle'dan Aurora PostgreSQL'e — Schema Conversion Tool kullanır ve ek test süresi ayırırız, çünkü saklı yordamlar nadiren dokunulmadan dönüşür." },
+        { "question": "Uyumluluk ve veri yerleşimi gereksinimlerimizi karşılayabilir misiniz?", "answer": "Evet. Landing zone ilk günden şifrelemeyi, en az yetki ilkesine dayalı IAM'i ve denetim loglarını zorunlu kılar; iş yükleri GDPR veya Türkiye'deki KVKK kurallarını karşılayan bölgelere sabitlenir — eu-central-1 ve AWS Orta Doğu bölgeleri sık tercih edilir. Kontroller kod olduğu için denetçiler her birini izleyebilir." },
+        { "question": "Geçişten sonra nasıl bir destek sağlıyorsunuz?", "answer": "Her geçiş, genellikle 2–4 haftalık bir hypercare dönemi içerir; bu sürede sistemi yakından izler ve üretim trafiğinin ortaya çıkardığı her şeyi ince ayar yaparız. Devirden sonra panolar, runbook'lar ve eğitilmiş ekibiniz sizde kalır; sürekli yönetilen operasyon isteğe bağlıdır, asla bir bağımlılık değildir." }
+      ],
+      "technologies": [
+        { "icon": "aws", "name": "AWS Migration Hub" },
+        { "icon": "aws", "name": "AWS DMS" },
+        { "icon": "aws", "name": "AWS MGN" },
+        { "icon": "aws", "name": "AWS Control Tower" },
+        { "icon": "aws", "name": "Amazon RDS" },
+        { "icon": "terraform", "name": "Terraform" },
+        { "icon": "aws", "name": "Amazon CloudWatch" }
+      ]
+    }
+  },
+  "de": {
+    "name": "AWS-Migration",
+    "shortDescription": "Migrieren Sie Workloads zu AWS, ohne das Geschäft auf einen Wochenend-Cutover zu setzen. Wir bewerten, planen und migrieren nach dem 6-R-Framework — mit geprobten Rollbacks, verifizierter Datenintegrität und von Anfang an richtig dimensionierten Kosten.",
+    "fullDescription": "Eine erfolgreiche AWS-Migration wird vom Cutover aus rückwärts geplant. Wir starten mit einer Discovery Ihres Anwendungsportfolios — Abhängigkeiten, Datenvolumen, Compliance-Vorgaben — und ordnen jedem Workload eine Strategie aus den 6 R zu: Rehost für Geschwindigkeit, Replatform auf Managed Services wie RDS oder Refactoring, wo sich der Aufwand lohnt. Die Migration läuft in Wellen, beginnend mit risikoarmen Workloads; AWS MGN repliziert Server und DMS streamt Datenbankänderungen kontinuierlich, sodass Cutover-Fenster von Wochenenden auf Minuten schrumpfen. Jede Welle hat einen getesteten Rollback-Pfad. Die Landing Zone bauen wir mit Terraform — Accounts, Netzwerk, IAM-Guardrails — und dimensionieren Instanzen vor der ersten Rechnung richtig, denn Lift-and-Shift in Standardgrößen ist der häufigste Grund für enttäuschende Cloud-Rechnungen.",
+    "features": [
+      "Portfolio-Discovery & Abhängigkeitsanalyse",
+      "6-R-Migrationsstrategie (Rehost/Replatform/Refactor)",
+      "AWS Landing Zone & Account-Architektur",
+      "Server-Migration mit AWS MGN",
+      "Datenbank-Migration mit AWS DMS",
+      "Wellenplanung & Cutover-Proben",
+      "Kosten-Rightsizing & Savings Plans",
+      "Validierung & Optimierung nach der Migration"
+    ],
+    "benefits": [
+      "Cutover-Fenster in Minuten statt Wochenenden",
+      "Getesteter Rollback-Pfad für jede Migrationswelle",
+      "Cloud-Kosten vor der ersten Rechnung richtig dimensioniert",
+      "Sicherheits- und IAM-Guardrails ab Tag eins",
+      "Keine überraschenden Abhängigkeiten mitten in der Migration",
+      "Ein dokumentiertes AWS-Fundament, das Ihr Team betreiben kann"
+    ],
+    "metaTitle": "AWS-Migration — Planung & Umsetzung | PakSoft",
+    "metaDescription": "AWS-Migration mit 6-R-Framework: Discovery, Wellenplanung, MGN/DMS-Replikation, geprobte Cutover, optimierte Kosten. Jetzt kostenloses Assessment sichern.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Discovery & Assessment", "description": "Wir inventarisieren Anwendungen, Server, Datenbanken und ihre Abhängigkeiten — mit automatisierter Discovery und Interviews mit Ihrem Team. Das Ergebnis ist ein Readiness-Report mit Datenvolumen, Compliance-Vorgaben und einem realistischen TCO-Vergleich." },
+        { "step": 2, "title": "Strategie & Wellenplanung", "description": "Jeder Workload erhält eine 6-R-Entscheidung — Rehost, Replatform, Refactor, Retire, Retain oder Repurchase — auf Basis von Geschäftswert und technischer Schuld. Die Workloads werden in Wellen gruppiert, beginnend mit risikoarmen Systemen, bevor kritische Systeme bewegt werden." },
+        { "step": 3, "title": "Landing-Zone-Aufbau", "description": "Wir bauen Ihr AWS-Fundament mit Terraform: Multi-Account-Struktur, VPC-Netzwerk, IAM-Guardrails, zentrales Logging und Verschlüsselung als Standard. Alles ist code-reviewed und reproduzierbar — die Umgebung ist vom ersten Tag an auditierbar." },
+        { "step": 4, "title": "Replikation & Probe", "description": "AWS MGN repliziert Server und DMS streamt Datenbankänderungen kontinuierlich, sodass die Zielumgebung mit der Produktion synchron bleibt. Jeden Cutover proben wir gegen die replizierte Umgebung, bis das Runbook Routine ist." },
+        { "step": 5, "title": "Cutover & Validierung", "description": "Cutover finden in vereinbarten Fenstern per DNS-Umschaltung statt, während die Quellumgebung als Rollback-Pfad intakt bleibt. Jede Welle wird gegen funktionale und Performance-Checklisten validiert, bevor wir sie für abgeschlossen erklären." },
+        { "step": 6, "title": "Optimierung & Übergabe", "description": "Nach der Stabilisierung dimensionieren wir Instanzen richtig, aktivieren Savings Plans und justieren Storage-Tiers, damit die Rechnung die tatsächliche Nutzung widerspiegelt. Ihr Team erhält Dashboards, Runbooks und eine Knowledge-Transfer-Session — optional mit Managed Support danach." }
+      ],
+      "faq": [
+        { "question": "Wie lange dauert eine AWS-Migration?", "answer": "Eine kleine Umgebung mit 5–20 Servern migriert typischerweise in 4–8 Wochen; mittelgroße Umgebungen mit Datenbanken und voneinander abhängigen Anwendungen laufen 3–6 Monate in Wellen. Die Discovery-Phase von meist 2–3 Wochen macht aus dieser Spanne einen verbindlichen Plan — Termine nennen wir erst, wenn wir die Abhängigkeitskarten kennen." },
+        { "question": "Mit wie viel Ausfallzeit müssen wir beim Cutover rechnen?", "answer": "Da MGN und DMS kontinuierlich replizieren, sind die meisten Cutover in Minuten erledigt — der Wechsel ist eine DNS-Änderung, keine Datenkopie. Datenbanken mit DMS Change Data Capture erreichen in der Regel nahezu null Ausfallzeit. Braucht ein Legacy-System wirklich ein längeres Fenster, wissen Sie das Wochen vorher — nicht in der Cutover-Nacht." },
+        { "question": "Sollen wir rehosten, replatformen oder refactoren?", "answer": "Rehost (Lift-and-Shift) ist am schnellsten und risikoärmsten, nimmt aber bestehende Ineffizienzen mit in die Cloud; Replatforming auf Managed Services wie RDS oder ECS bietet meist das beste Aufwand-Nutzen-Verhältnis. Volles Refactoring lohnt sich nur für Systeme, die Sie aktiv weiterentwickeln — wir empfehlen es pro Workload, nie pauschal." },
+        { "question": "Was passiert, wenn ein Cutover fehlschlägt?", "answer": "Jede Welle hat einen geprobten Rollback: Die Quellumgebung läuft synchron weiter, bis die Validierung abgeschlossen ist — der Rückweg ist eine DNS-Änderung. Pro Workload definieren wir vorab einen Point of no Return: davor dauert der Rollback Minuten, danach wird mit den im Runbook dokumentierten Notfallschritten vorwärts korrigiert." },
+        { "question": "Wird AWS wirklich günstiger als unser aktuelles Setup?", "answer": "Nicht automatisch — ein Lift-and-Shift mit Standard-Instanzgrößen kostet oft mehr als die abgelöste Hardware. Einsparungen entstehen durch Rightsizing, Autoscaling, Storage-Tiering und Savings Plans, die die Rechnung nach der Migration zusammen häufig um 20–40 % senken. Wir rechnen die TCO im Assessment ehrlich durch — auch für die Fälle, in denen Bleiben gewinnt." },
+        { "question": "Wie migrieren Sie Datenbanken ohne Datenverlust?", "answer": "AWS DMS repliziert die Quelle kontinuierlich und spielt laufende Änderungen bis zum Cutover ein; Validierungsjobs vergleichen Zeilenzahlen und Prüfsummen auf beiden Seiten. Bei Engine-Wechseln — etwa Oracle zu Aurora PostgreSQL — nutzen wir das Schema Conversion Tool und planen zusätzliche Testzeit ein, denn Stored Procedures lassen sich selten unverändert übernehmen." },
+        { "question": "Können Sie unsere Compliance- und Datenresidenz-Anforderungen erfüllen?", "answer": "Ja. Die Landing Zone erzwingt von Tag eins Verschlüsselung, Least-Privilege-IAM und Audit-Logging; Workloads werden an Regionen gebunden, die DSGVO- oder KVKK-Vorgaben erfüllen — eu-central-1 und die AWS-Regionen im Nahen Osten sind übliche Optionen. Da die Kontrollen Code sind, können Auditoren jede einzelne nachvollziehen." },
+        { "question": "Welchen Support bieten Sie nach der Migration?", "answer": "Jede Migration umfasst eine Hypercare-Phase von typischerweise 2–4 Wochen, in der wir eng monitoren und nachjustieren, was der Produktionsverkehr zeigt. Nach der Übergabe behalten Sie Dashboards, Runbooks und geschulte Mitarbeiter; fortlaufender Managed Service ist optional — nie ein Lock-in." }
+      ],
+      "technologies": [
+        { "icon": "aws", "name": "AWS Migration Hub" },
+        { "icon": "aws", "name": "AWS DMS" },
+        { "icon": "aws", "name": "AWS MGN" },
+        { "icon": "aws", "name": "AWS Control Tower" },
+        { "icon": "aws", "name": "Amazon RDS" },
+        { "icon": "terraform", "name": "Terraform" },
+        { "icon": "aws", "name": "Amazon CloudWatch" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "AWS مائیگریشن",
+    "shortDescription": "اپنے ورک لوڈز کاروبار کو ویک اینڈ کٹ اوور پر داؤ پر لگائے بغیر AWS پر منتقل کریں۔ ہم 6 R فریم ورک سے جائزہ، منصوبہ بندی اور عمل درآمد کرتے ہیں — مشق شدہ رول بیک، تصدیق شدہ ڈیٹا اور درست سائز کے اخراجات کے ساتھ۔",
+    "fullDescription": "کامیاب AWS مائیگریشن کی منصوبہ بندی کٹ اوور سے پیچھے کی طرف کی جاتی ہے۔ ہم آپ کے ایپلیکیشن پورٹ فولیو کی دریافت سے آغاز کرتے ہیں — انحصار، ڈیٹا کا حجم، کمپلائنس کی پابندیاں — اور ہر ورک لوڈ کو 6 R میں سے ایک حکمتِ عملی دیتے ہیں: رفتار کے لیے rehost، RDS جیسی منیجڈ سروسز کی طرف replatform، اور جہاں فائدہ محنت کا جواز فراہم کرے وہاں refactor۔ منتقلی کم خطرے والے ورک لوڈز سے شروع ہو کر لہروں میں آگے بڑھتی ہے؛ AWS MGN سرورز کو اور DMS ڈیٹا بیس کی تبدیلیوں کو مسلسل ریپلیکیٹ کرتا ہے، جس سے کٹ اوور ویک اینڈ کے بجائے منٹوں میں سمٹ آتا ہے۔ ہر لہر کا آزمودہ رول بیک راستہ ہوتا ہے۔ ہم آپ کا landing zone Terraform سے بناتے ہیں — اکاؤنٹس، نیٹ ورکنگ، IAM گارڈریلز — اور پہلے بل سے پہلے انسٹینسز کو درست سائز دیتے ہیں، کیونکہ ڈیفالٹ سائز پر lift-and-shift ہی کلاؤڈ بلوں کے مایوس کن نکلنے کی سب سے عام وجہ ہے۔",
+    "features": [
+      "پورٹ فولیو کی دریافت اور انحصار کی نقشہ بندی",
+      "6 R مائیگریشن حکمتِ عملی (Rehost/Replatform/Refactor)",
+      "AWS Landing Zone اور اکاؤنٹ آرکیٹیکچر",
+      "AWS MGN کے ذریعے سرور مائیگریشن",
+      "AWS DMS کے ذریعے ڈیٹا بیس مائیگریشن",
+      "لہروں کی منصوبہ بندی اور کٹ اوور کی مشقیں",
+      "لاگت کی درست سائزنگ اور Savings Plans",
+      "مائیگریشن کے بعد توثیق اور آپٹیمائزیشن"
+    ],
+    "benefits": [
+      "ویک اینڈ نہیں، منٹوں میں ناپے جانے والے کٹ اوور وقفے",
+      "ہر مائیگریشن لہر کے لیے آزمودہ رول بیک منصوبہ",
+      "پہلے بل سے پہلے درست سائز کیے گئے کلاؤڈ اخراجات",
+      "پہلے دن سے سیکیورٹی اور IAM گارڈریلز",
+      "مائیگریشن کے دوران اچانک ٹوٹنے والے انحصار نہیں",
+      "ایک مستند AWS بنیاد جسے آپ کی ٹیم خود چلا سکے"
+    ],
+    "metaTitle": "AWS مائیگریشن سروسز — منصوبہ و عمل | PakSoft",
+    "metaDescription": "6 R فریم ورک کے ساتھ AWS مائیگریشن: دریافت، لہروں کی منصوبہ بندی، MGN اور DMS ریپلیکیشن، مشق شدہ کٹ اوور اور درست سائز کے اخراجات۔ مفت جائزہ حاصل کریں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "دریافت اور جائزہ", "description": "خودکار ڈسکوری ٹولز اور آپ کی ٹیم سے انٹرویوز کے ذریعے ہم آپ کی ایپلیکیشنز، سرورز، ڈیٹا بیسز اور ان کے باہمی انحصار کی فہرست بناتے ہیں۔ نتیجہ ایک مائیگریشن تیاری رپورٹ ہوتی ہے جس میں ڈیٹا کا حجم، کمپلائنس کی پابندیاں اور حقیقت پسندانہ TCO موازنہ شامل ہوتا ہے۔" },
+        { "step": 2, "title": "حکمتِ عملی اور لہروں کی منصوبہ بندی", "description": "ہر ورک لوڈ کے لیے کاروباری قدر اور تکنیکی قرضے کی بنیاد پر 6 R کا فیصلہ ہوتا ہے — rehost، replatform، refactor، retire، retain یا repurchase۔ ورک لوڈز کو لہروں میں تقسیم کیا جاتا ہے؛ کوئی اہم نظام منتقل ہونے سے پہلے عمل کم خطرے والے نظاموں پر ثابت کیا جاتا ہے۔" },
+        { "step": 3, "title": "Landing Zone کی تعمیر", "description": "ہم آپ کی AWS بنیاد Terraform سے بناتے ہیں: ملٹی اکاؤنٹ ڈھانچہ، VPC نیٹ ورکنگ، IAM گارڈریلز، مرکزی لاگنگ اور ڈیفالٹ انکرپشن۔ ہر چیز کوڈ ریویو سے گزرتی ہے اور دوبارہ قابلِ تعمیر ہوتی ہے، اس لیے ماحول پہلے دن سے قابلِ آڈٹ ہوتا ہے۔" },
+        { "step": 4, "title": "ریپلیکیشن اور مشق", "description": "AWS MGN سرورز کو اور DMS ڈیٹا بیس کی تبدیلیوں کو مسلسل ریپلیکیٹ کرتا ہے، جس سے ہدف ماحول پروڈکشن کے ساتھ ہم آہنگ رہتا ہے۔ ہم ہر کٹ اوور کی مشق ریپلیکیٹڈ ماحول پر اتنی بار کرتے ہیں کہ runbook معمول بن جائے۔" },
+        { "step": 5, "title": "کٹ اوور اور توثیق", "description": "کٹ اوور طے شدہ وقفوں میں DNS سطح کی سوئچنگ سے ہوتا ہے، جبکہ ماخذ ماحول رول بیک راستے کے طور پر برقرار رہتا ہے۔ ہر لہر کو مکمل قرار دینے سے پہلے فنکشنل اور پرفارمنس چیک لسٹس سے جانچا جاتا ہے۔" },
+        { "step": 6, "title": "آپٹیمائزیشن اور حوالگی", "description": "استحکام کے بعد ہم انسٹینسز کو درست سائز دیتے ہیں، Savings Plans لاگو کرتے ہیں اور اسٹوریج کی تہوں کو حقیقی استعمال کے مطابق ایڈجسٹ کرتے ہیں۔ آپ کی ٹیم کو ڈیش بورڈز، runbooks اور علم کی منتقلی کا سیشن ملتا ہے — بعد ازاں اختیاری منیجڈ سپورٹ بھی دستیاب ہے۔" }
+      ],
+      "faq": [
+        { "question": "AWS مائیگریشن میں کتنا وقت لگتا ہے؟", "answer": "5 تا 20 سرورز کا چھوٹا ماحول عموماً 4 تا 8 ہفتوں میں منتقل ہو جاتا ہے؛ ڈیٹا بیسز اور باہم منحصر ایپلیکیشنز والے درمیانے ماحول لہروں میں 3 تا 6 ماہ لیتے ہیں۔ دریافت کا مرحلہ، جو عموماً 2 تا 3 ہفتے ہوتا ہے، اسی اندازے کو پختہ منصوبے میں بدلتا ہے — ہم انحصار کے نقشے دیکھے بغیر ٹائم لائن کا وعدہ نہیں کرتے۔" },
+        { "question": "کٹ اوور کے دوران کتنے ڈاؤن ٹائم کی توقع رکھیں؟", "answer": "چونکہ MGN اور DMS مسلسل ریپلیکیشن کرتے ہیں، زیادہ تر کٹ اوور منٹوں میں مکمل ہو جاتے ہیں — سوئچ ایک DNS تبدیلی ہے، ڈیٹا کی نقل نہیں۔ DMS کے change data capture سے منتقل ہونے والے ڈیٹا بیسز میں ڈاؤن ٹائم تقریباً صفر ہوتا ہے۔ اگر کسی پرانے نظام کو واقعی لمبا وقفہ چاہیے تو آپ کو یہ بات کٹ اوور کی رات نہیں بلکہ ہفتوں پہلے معلوم ہو جاتی ہے۔" },
+        { "question": "ہمیں rehost کرنا چاہیے، replatform یا refactor؟", "answer": "Rehost (lift-and-shift) تیز ترین اور کم خطرہ راستہ ہے مگر موجودہ خامیاں بھی کلاؤڈ میں ساتھ لے جاتا ہے؛ RDS یا ECS جیسی منیجڈ سروسز کی طرف replatform عموماً محنت اور فائدے کا بہترین تناسب دیتا ہے۔ مکمل refactoring صرف انہی نظاموں میں سود مند ہے جنہیں آپ فعال طور پر ڈیولپ کرتے ہیں — ہم اس کی سفارش ہر ورک لوڈ کے حساب سے کرتے ہیں، عمومی پالیسی کے طور پر نہیں۔" },
+        { "question": "اگر کٹ اوور ناکام ہو جائے تو کیا ہوگا؟", "answer": "ہر لہر کا مشق شدہ رول بیک ہوتا ہے: ماخذ ماحول توثیق مکمل ہونے تک چلتا اور ہم آہنگ رہتا ہے، اس لیے واپسی محض ایک DNS تبدیلی کی دوری پر ہے۔ ہم ہر ورک لوڈ کے لیے ناقابلِ واپسی نقطہ پہلے سے طے کرتے ہیں — اس سے پہلے رول بیک منٹوں کا کام ہے، اس کے بعد runbook میں درج ہنگامی اقدامات کے ساتھ آگے بڑھ کر اصلاح کی جاتی ہے۔" },
+        { "question": "کیا AWS واقعی ہمارے موجودہ سیٹ اپ سے سستا ہوگا؟", "answer": "خود بخود نہیں — ڈیفالٹ انسٹینس سائز پر lift-and-shift اکثر اُس ہارڈویئر سے مہنگا پڑتا ہے جس کی جگہ وہ لیتا ہے۔ بچت درست سائزنگ، آٹو اسکیلنگ، اسٹوریج کی تہوں اور Savings Plans سے آتی ہے، جو مل کر مائیگریشن کے بعد کا بل عموماً 20 تا 40 فیصد کم کر دیتے ہیں۔ ہم جائزے کے دوران TCO کا ایمانداری سے حساب لگاتے ہیں — ان صورتوں سمیت جہاں موجودہ جگہ رہنا بہتر ہو۔" },
+        { "question": "آپ ڈیٹا ضائع کیے بغیر ڈیٹا بیس کیسے منتقل کرتے ہیں؟", "answer": "AWS DMS ماخذ کو مسلسل ریپلیکیٹ کرتا ہے اور کٹ اوور تک جاری تبدیلیاں لاگو کرتا رہتا ہے، جبکہ توثیقی جابز دونوں اطراف کی صفوں کی تعداد اور checksums کا موازنہ کرتی ہیں۔ انجن کی تبدیلی میں — مثلاً Oracle سے Aurora PostgreSQL — ہم Schema Conversion Tool استعمال کرتے ہیں اور اضافی ٹیسٹنگ کا وقت رکھتے ہیں، کیونکہ stored procedures شاذ ہی بغیر ترمیم کے منتقل ہوتے ہیں۔" },
+        { "question": "کیا آپ ہماری کمپلائنس اور ڈیٹا ریزیڈنسی کی شرائط پوری کر سکتے ہیں؟", "answer": "جی ہاں۔ Landing zone پہلے دن سے انکرپشن، کم سے کم اختیار والے IAM اور آڈٹ لاگنگ کو لازم بناتا ہے، اور ورک لوڈز ان ریجنز سے منسلک کیے جاتے ہیں جو GDPR یا ترکیہ کے KVKK قواعد پر پورا اترتے ہیں — eu-central-1 اور AWS کے مشرقِ وسطیٰ کے ریجنز عام انتخاب ہیں۔ کنٹرولز کوڈ کی صورت میں ہیں، اس لیے آڈیٹرز ہر ایک کا سراغ لگا سکتے ہیں۔" },
+        { "question": "مائیگریشن کے بعد آپ کیا سپورٹ دیتے ہیں؟", "answer": "ہر مائیگریشن میں hypercare کا دورانیہ شامل ہے — عموماً 2 تا 4 ہفتے — جس میں ہم قریب سے نگرانی کرتے ہیں اور پروڈکشن ٹریفک جو کچھ ظاہر کرے اسے بہتر بناتے ہیں۔ حوالگی کے بعد ڈیش بورڈز، runbooks اور تربیت یافتہ عملہ آپ کے پاس رہتا ہے؛ مسلسل منیجڈ آپریشنز اختیاری ہیں، کوئی جبری وابستگی نہیں۔" }
+      ],
+      "technologies": [
+        { "icon": "aws", "name": "AWS Migration Hub" },
+        { "icon": "aws", "name": "AWS DMS" },
+        { "icon": "aws", "name": "AWS MGN" },
+        { "icon": "aws", "name": "AWS Control Tower" },
+        { "icon": "aws", "name": "Amazon RDS" },
+        { "icon": "terraform", "name": "Terraform" },
+        { "icon": "aws", "name": "Amazon CloudWatch" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "الترحيل إلى AWS",
+    "shortDescription": "انقلوا أعباء العمل إلى AWS دون المخاطرة بأعمالكم في تحويل نهاية أسبوع. نقيّم ونخطط وننفّذ الترحيل وفق إطار 6 R — مع خطط تراجع مُجرّبة، وسلامة بيانات مُتحقَّق منها، وتكاليف مضبوطة الحجم منذ البداية.",
+    "fullDescription": "يُخطَّط الترحيل الناجح إلى AWS عكسياً انطلاقاً من لحظة التحويل. نبدأ باستكشاف محفظة تطبيقاتكم — الاعتماديات وأحجام البيانات وقيود الامتثال — ونحدد لكل عبء عمل استراتيجية من إطار 6 R: إعادة الاستضافة (rehost) للسرعة، أو الانتقال إلى خدمات مُدارة مثل RDS، أو إعادة الهيكلة حيث يبرر العائد الجهد. يجري الترحيل على موجات تبدأ بالأنظمة منخفضة المخاطر؛ يكرّر AWS MGN الخوادم وينقل DMS تغييرات قواعد البيانات باستمرار، فتتقلص نوافذ التحويل من عطلات نهاية الأسبوع إلى دقائق. ولكل موجة مسار تراجع مُختبَر. نبني الـ landing zone بواسطة Terraform — الحسابات والشبكات وضوابط IAM — ونضبط أحجام الموارد قبل أول فاتورة، لأن النقل كما هو بأحجام افتراضية هو السبب الأكثر شيوعاً لخيبة الأمل في فواتير السحابة.",
+    "features": [
+      "استكشاف المحفظة ورسم خريطة الاعتماديات",
+      "استراتيجية الترحيل وفق 6 R (Rehost/Replatform/Refactor)",
+      "بناء AWS Landing Zone وهيكلة الحسابات",
+      "ترحيل الخوادم عبر AWS MGN",
+      "ترحيل قواعد البيانات عبر AWS DMS",
+      "تخطيط الموجات وتمارين التحويل",
+      "ضبط أحجام التكاليف وخطط Savings Plans",
+      "التحقق والتحسين بعد الترحيل"
+    ],
+    "benefits": [
+      "نوافذ تحويل تُقاس بالدقائق لا بعطلات نهاية الأسبوع",
+      "مسار تراجع مُختبَر لكل موجة ترحيل",
+      "تكاليف سحابية مضبوطة الحجم قبل أول فاتورة",
+      "ضوابط أمان وIAM من اليوم الأول",
+      "لا اعتماديات مفاجئة تتعطل في منتصف الترحيل",
+      "أساس AWS موثّق يمكن لفريقكم تشغيله بنفسه"
+    ],
+    "metaTitle": "خدمات الترحيل إلى AWS — تخطيط وتنفيذ | PakSoft",
+    "metaDescription": "ترحيل إلى AWS وفق إطار 6 R: استكشاف، تخطيط موجات، نسخ متواصل عبر MGN وDMS، تحويلات مُجرّبة وتكاليف مضبوطة. احصلوا على تقييم مجاني.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "الاستكشاف والتقييم", "description": "نُحصي التطبيقات والخوادم وقواعد البيانات والاعتماديات بينها عبر أدوات استكشاف آلية ومقابلات مع فريقكم. الناتج تقرير جاهزية للترحيل يتضمن أحجام البيانات وقيود الامتثال ومقارنة TCO واقعية." },
+        { "step": 2, "title": "الاستراتيجية وتخطيط الموجات", "description": "يحصل كل عبء عمل على قرار من إطار 6 R — rehost أو replatform أو refactor أو retire أو retain أو repurchase — بناءً على القيمة التجارية والدين التقني. تُجمَّع الأعباء في موجات تبدأ بالأنظمة منخفضة المخاطر، فيُثبَت المسار قبل نقل أي نظام حرج." },
+        { "step": 3, "title": "بناء الـ Landing Zone", "description": "نبني أساس AWS لديكم بواسطة Terraform: هيكل متعدد الحسابات، وشبكات VPC، وضوابط IAM، وتسجيل مركزي، وتشفير افتراضي. كل شيء يمر بمراجعة كود وقابل لإعادة الإنشاء، فتكون البيئة قابلة للتدقيق من يومها الأول." },
+        { "step": 4, "title": "النسخ المتواصل والتمرين", "description": "يكرّر AWS MGN الخوادم وينقل DMS تغييرات قواعد البيانات باستمرار، فتبقى البيئة الهدف متزامنة مع الإنتاج. نتمرّن على كل تحويل في البيئة المنسوخة حتى يصبح الـ runbook أمراً روتينياً." },
+        { "step": 5, "title": "التحويل والتحقق", "description": "تتم التحويلات في نوافذ متفق عليها عبر تبديل على مستوى DNS، بينما تبقى البيئة المصدر سليمة كمسار تراجع. تُتحقَّق كل موجة وفق قوائم فحص وظيفية وأدائية قبل إعلان اكتمالها." },
+        { "step": 6, "title": "التحسين والتسليم", "description": "بعد الاستقرار نضبط أحجام الموارد ونفعّل Savings Plans ونحسّن طبقات التخزين لتعكس الفاتورة الاستخدام الفعلي. يتسلّم فريقكم لوحات متابعة وكتيبات تشغيل وجلسة نقل معرفة — مع دعم مُدار اختياري لاحقاً." }
+      ],
+      "faq": [
+        { "question": "كم يستغرق الترحيل إلى AWS؟", "answer": "بيئة صغيرة من 5 إلى 20 خادماً تُرحَّل عادةً خلال 4 إلى 8 أسابيع؛ أما البيئات المتوسطة بقواعد بيانات وتطبيقات مترابطة فتستغرق 3 إلى 6 أشهر على موجات. مرحلة الاستكشاف، وعادةً ما تمتد من أسبوعين إلى ثلاثة، هي التي تحوّل هذا النطاق إلى خطة ملزمة — فنحن لا نَعِد بجداول زمنية قبل رؤية خرائط الاعتماديات." },
+        { "question": "ما حجم التوقف المتوقع أثناء التحويل؟", "answer": "بفضل النسخ المتواصل عبر MGN وDMS، تكتمل معظم التحويلات في دقائق — فالتبديل تغيير في DNS وليس نسخاً للبيانات. قواعد البيانات المُرحَّلة عبر آلية change data capture في DMS تشهد عادةً توقفاً شبه معدوم. وإذا احتاج نظام قديم فعلاً إلى نافذة أطول، فستعرفون ذلك قبل أسابيع، لا في ليلة التحويل." },
+        { "question": "هل نختار rehost أم replatform أم refactor؟", "answer": "إعادة الاستضافة (lift-and-shift) هي الأسرع والأقل خطورة لكنها تنقل أوجه القصور القائمة إلى السحابة؛ بينما يقدّم الانتقال إلى خدمات مُدارة مثل RDS أو ECS عادةً أفضل نسبة جهد إلى عائد. إعادة الهيكلة الكاملة لا تُجدي إلا للأنظمة التي تطوّرونها بنشاط — لذلك نوصي بها لكل عبء عمل على حدة، لا كاستراتيجية شاملة." },
+        { "question": "ماذا يحدث إذا فشل التحويل؟", "answer": "لكل موجة خطة تراجع مُجرّبة: تبقى البيئة المصدر عاملة ومتزامنة حتى اكتمال التحقق، فالعودة لا تبعد سوى تغيير في DNS. نحدّد مسبقاً نقطة اللاعودة لكل عبء عمل — قبلها يستغرق التراجع دقائق، وبعدها نصحّح بالمضي قدماً وفق خطوات الطوارئ الموثّقة في الـ runbook." },
+        { "question": "هل ستكون AWS فعلاً أرخص من بنيتنا الحالية؟", "answer": "ليس تلقائياً — فالنقل كما هو بأحجام افتراضية يكلّف غالباً أكثر من العتاد الذي حلّ محله. تأتي الوفورات من ضبط الأحجام والتوسّع التلقائي وطبقات التخزين وSavings Plans، وهي مجتمعةً تخفض الفاتورة بعد الترحيل عادةً بنسبة 20 إلى 40٪. نحسب التكلفة الإجمالية بصدق أثناء التقييم — بما في ذلك الحالات التي يكون فيها البقاء على الوضع الحالي هو الخيار الرابح." },
+        { "question": "كيف ترحّلون قواعد البيانات دون فقدان بيانات؟", "answer": "يكرّر AWS DMS المصدر باستمرار ويطبّق التغييرات الجارية حتى لحظة التحويل، بينما تقارن مهام التحقق أعداد الصفوف والـ checksums على الجانبين. عند تغيير المحرّك — مثل الانتقال من Oracle إلى Aurora PostgreSQL — نستخدم أداة Schema Conversion Tool ونخصص وقت اختبار إضافياً، لأن الإجراءات المخزّنة نادراً ما تتحول دون تعديل." },
+        { "question": "هل تلبّون متطلبات الامتثال وإقامة البيانات لدينا؟", "answer": "نعم. تفرض الـ landing zone منذ اليوم الأول التشفير وصلاحيات IAM بمبدأ الحد الأدنى وسجلات التدقيق، وتُثبَّت أعباء العمل في مناطق تستوفي قواعد GDPR أو قانون KVKK التركي — وتُعدّ eu-central-1 ومناطق AWS في الشرق الأوسط خيارات شائعة. ولأن الضوابط مكتوبة ككود، يمكن للمدققين تتبّع كل واحد منها." },
+        { "question": "ما الدعم الذي تقدمونه بعد الترحيل؟", "answer": "يتضمن كل ترحيل فترة hypercare — عادةً من أسبوعين إلى أربعة — نراقب فيها عن كثب ونعالج ما تكشفه حركة الإنتاج الفعلية. بعد التسليم تحتفظون بلوحات المتابعة وكتيبات التشغيل والفريق المدرَّب؛ أما التشغيل المُدار المستمر فاختياري، ولا ارتباط إجبارياً أبداً." }
+      ],
+      "technologies": [
+        { "icon": "aws", "name": "AWS Migration Hub" },
+        { "icon": "aws", "name": "AWS DMS" },
+        { "icon": "aws", "name": "AWS MGN" },
+        { "icon": "aws", "name": "AWS Control Tower" },
+        { "icon": "aws", "name": "Amazon RDS" },
+        { "icon": "terraform", "name": "Terraform" },
+        { "icon": "aws", "name": "Amazon CloudWatch" }
+      ]
+    }
+  }
+}

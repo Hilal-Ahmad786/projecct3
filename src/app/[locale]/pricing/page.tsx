@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import { motion } from 'framer-motion';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
@@ -123,12 +124,13 @@ export default function PricingPage() {
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-gradient-to-br from-gray-50 via-white to-gray-50">
         <div className="container mx-auto px-4">
+          <Breadcrumbs className="mb-6" items={[{ label: 'Home', href: '/' }, { label: t('title') as string || 'Pricing' }]} />
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="text-center max-w-3xl mx-auto"
           >
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h1 className="text-display font-light text-gray-900 leading-none mb-4">
               {t('title')}
             </h1>
             <p className="text-xl text-gray-600">

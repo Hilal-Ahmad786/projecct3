@@ -1,0 +1,3913 @@
+[
+ {
+  "slug": "airtable-solutions",
+  "name": "Airtable Solutions",
+  "parentSlug": "no-code-low-code",
+  "shortDescription": "Build custom databases and workflows with Airtable.",
+  "fullDescription": "Transform your business operations with Airtable as a powerful database and automation platform. We build custom bases, views, automations, and integrations for CRM, project management, inventory, and more.",
+  "features": [
+   "Custom Bases",
+   "Views & Interfaces",
+   "Automations",
+   "Form Integration",
+   "API Access",
+   "Sync with Other Tools"
+  ],
+  "benefits": [
+   "Flexible database",
+   "Easy collaboration",
+   "No-code automations",
+   "Custom interfaces",
+   "Real-time sync",
+   "Affordable solution"
+  ],
+  "technologies": [
+   {
+    "icon": "airtable",
+    "name": "Airtable"
+   },
+   {
+    "icon": "zapier",
+    "name": "Zapier"
+   },
+   {
+    "icon": "make",
+    "name": "Make"
+   },
+   {
+    "icon": "softr",
+    "name": "Softr"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "android-development",
+  "name": "Android Development",
+  "parentSlug": "mobile-development",
+  "shortDescription": "Build native Android applications with Kotlin for optimal performance on all Android devices.",
+  "fullDescription": "Reach the world is largest mobile platform with native Android development. We build high-quality Android apps with Kotlin and Jetpack Compose, optimized for the diverse Android ecosystem.",
+  "features": [
+   "Native Kotlin Development",
+   "Jetpack Compose UI",
+   "Material Design 3",
+   "Google Play Services",
+   "Background Processing",
+   "Device Compatibility"
+  ],
+  "benefits": [
+   "Access 3B+ Android devices",
+   "Best Android performance",
+   "Google ecosystem integration",
+   "Flexible distribution options"
+  ],
+  "technologies": [
+   {
+    "icon": "kotlin",
+    "name": "Kotlin"
+   },
+   {
+    "icon": "jetpack",
+    "name": "Jetpack Compose"
+   },
+   {
+    "icon": "androidstudio",
+    "name": "Android Studio"
+   },
+   {
+    "icon": "room",
+    "name": "Room DB"
+   },
+   {
+    "icon": "firebase",
+    "name": "Firebase"
+   },
+   {
+    "icon": "gradle",
+    "name": "Gradle"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "api-development",
+  "name": "API Development",
+  "parentSlug": null,
+  "shortDescription": "Build robust APIs that power your applications.",
+  "fullDescription": "APIs are the backbone of modern software. We design and develop scalable, secure, and well-documented APIs that enable seamless integration between systems. Whether you need REST APIs, GraphQL endpoints, or real-time WebSocket connections, we build interfaces that developers love to use.",
+  "features": [
+   "RESTful API Design & Development",
+   "GraphQL API Implementation",
+   "API Gateway & Management",
+   "Authentication & Authorization",
+   "API Documentation (OpenAPI/Swagger)",
+   "Rate Limiting & Throttling",
+   "Versioning & Backward Compatibility",
+   "Real-time APIs (WebSockets, SSE)"
+  ],
+  "benefits": [
+   "Enable seamless system integration",
+   "Provide consistent interfaces for multiple clients",
+   "Scale independently from frontend applications",
+   "Monetize data and services through API products",
+   "Accelerate partner and third-party integrations",
+   "Future-proof your architecture"
+  ],
+  "technologies": [
+   {
+    "icon": "nodejs",
+    "name": "Node.js"
+   },
+   {
+    "icon": "python",
+    "name": "Python"
+   },
+   {
+    "icon": "graphql",
+    "name": "GraphQL"
+   },
+   {
+    "icon": "postgresql",
+    "name": "PostgreSQL"
+   },
+   {
+    "icon": "redis",
+    "name": "Redis"
+   },
+   {
+    "icon": "kong",
+    "name": "Kong"
+   },
+   {
+    "icon": "swagger",
+    "name": "Swagger"
+   },
+   {
+    "icon": "postman",
+    "name": "Postman"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "api-gateway",
+  "name": "API Gateway",
+  "parentSlug": "api-development",
+  "shortDescription": "Implement API gateways for security, routing, and management.",
+  "fullDescription": "Centralize your API management with enterprise-grade API gateway solutions. We implement gateways that handle authentication, rate limiting, routing, transformation, and monitoring for all your APIs.",
+  "features": [
+   "Request Routing",
+   "Authentication & Authorization",
+   "Rate Limiting",
+   "Request/Response Transformation",
+   "Load Balancing",
+   "API Analytics"
+  ],
+  "benefits": [
+   "Centralized security",
+   "Simplified client integration",
+   "Better observability",
+   "Easier versioning",
+   "Protocol translation",
+   "Reduced complexity"
+  ],
+  "technologies": [
+   {
+    "icon": "kong",
+    "name": "Kong"
+   },
+   {
+    "icon": "aws",
+    "name": "AWS API Gateway"
+   },
+   {
+    "icon": "nginx",
+    "name": "Nginx"
+   },
+   {
+    "icon": "envoy",
+    "name": "Envoy"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "api-rate-limiting-throttling",
+  "name": "API Rate Limiting & Throttling",
+  "parentSlug": "api-development",
+  "shortDescription": "Implement rate limiting, quotas, and API traffic management.",
+  "fullDescription": "We implement rate limiting strategies that protect infrastructure while providing fair access.",
+  "features": [
+   "Rate Limiting Algorithms",
+   "User/API Key Quotas",
+   "Burst Handling",
+   "Tiered Limits",
+   "Retry-After Headers",
+   "Usage Analytics",
+   "Real-Time Monitoring",
+   "Dynamic Throttling"
+  ],
+  "benefits": [
+   "Infrastructure protection",
+   "Fair resource allocation",
+   "Abuse prevention",
+   "Cost control",
+   "SLA enforcement",
+   "Predictable performance"
+  ],
+  "technologies": [
+   {
+    "icon": "📬",
+    "name": "Redis"
+   },
+   {
+    "icon": "🦍",
+    "name": "Kong"
+   },
+   {
+    "icon": "☁️",
+    "name": "AWS API Gateway"
+   },
+   {
+    "icon": "🟢",
+    "name": "NGINX"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 5
+ },
+ {
+  "slug": "api-security-authentication",
+  "name": "API Security & Authentication",
+  "parentSlug": "api-development",
+  "shortDescription": "Implement robust API security with OAuth 2.0, JWT tokens, API keys, and rate limiting.",
+  "fullDescription": "Protect your APIs from unauthorized access and abuse. We implement industry-standard authentication protocols, authorization systems, rate limiting, and security best practices to keep your data safe while providing smooth developer experiences.",
+  "features": [
+   "OAuth 2.0 & OpenID Connect",
+   "JWT Token Management",
+   "API Key Authentication",
+   "Role-Based Access Control",
+   "Rate Limiting & Throttling",
+   "Request Signing & Validation",
+   "Security Audit Logging",
+   "API Gateway Configuration"
+  ],
+  "benefits": [
+   "Prevent unauthorized access",
+   "Protect against API abuse",
+   "Compliance with security standards",
+   "Granular access control",
+   "Audit trail for all access",
+   "Developer-friendly authentication"
+  ],
+  "technologies": [
+   {
+    "icon": "auth0",
+    "name": "Auth0"
+   },
+   {
+    "icon": "clerk",
+    "name": "Clerk"
+   },
+   {
+    "icon": "nextjs",
+    "name": "NextAuth.js"
+   },
+   {
+    "icon": "oauth",
+    "name": "OAuth 2.0"
+   },
+   {
+    "icon": "kong",
+    "name": "Kong"
+   },
+   {
+    "icon": "aws",
+    "name": "AWS API Gateway"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "ar-development",
+  "name": "AR Development",
+  "parentSlug": "mobile-development",
+  "shortDescription": "Create AR apps for mobile, smart glasses, and enterprise use cases.",
+  "fullDescription": "Augmented Reality overlays digital content onto the real world, creating new possibilities for retail, education, manufacturing, and entertainment. We develop AR experiences using ARKit, ARCore, and enterprise AR platforms. From try-before-you-buy retail apps to industrial maintenance guides, we bring AR from concept to production.",
+  "features": [
+   "ARKit & ARCore Development",
+   "WebAR Experiences",
+   "AR Product Visualization",
+   "Location-Based AR",
+   "Image & Object Recognition",
+   "Face Filters & Effects",
+   "Enterprise AR Solutions",
+   "AR Cloud & Persistence"
+  ],
+  "benefits": [
+   "Enhanced customer engagement",
+   "Reduced product returns with visualization",
+   "Improved training and maintenance efficiency",
+   "Memorable brand experiences",
+   "Competitive differentiation",
+   "Works on existing smartphones"
+  ],
+  "technologies": [
+   {
+    "icon": "📱",
+    "name": "ARKit"
+   },
+   {
+    "icon": "🤖",
+    "name": "ARCore"
+   },
+   {
+    "icon": "🌐",
+    "name": "8th Wall"
+   },
+   {
+    "icon": "🎮",
+    "name": "Unity AR"
+   },
+   {
+    "icon": "👁️",
+    "name": "Vuforia"
+   },
+   {
+    "icon": "✨",
+    "name": "Spark AR"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "ar-experiences",
+  "name": "AR Experiences",
+  "parentSlug": "ar-development",
+  "shortDescription": "Create engaging augmented reality experiences for marketing and apps.",
+  "fullDescription": "Blend digital with reality. We develop AR experiences for product visualization, interactive marketing, training, and entertainment.",
+  "features": [
+   "WebAR",
+   "App-based AR",
+   "Product Visualization",
+   "AR Filters",
+   "Markerless AR",
+   "Analytics"
+  ],
+  "benefits": [
+   "Engagement",
+   "Product understanding",
+   "Marketing impact",
+   "Brand differentiation",
+   "Mobile-first",
+   "Shareable content"
+  ],
+  "technologies": [
+   {
+    "icon": "apple",
+    "name": "ARKit"
+   },
+   {
+    "icon": "google",
+    "name": "ARCore"
+   },
+   {
+    "icon": "ar",
+    "name": "8th Wall"
+   },
+   {
+    "icon": "meta",
+    "name": "Spark AR"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "b2b-ecommerce",
+  "name": "B2B E-Commerce",
+  "parentSlug": "e-commerce",
+  "shortDescription": "Build powerful B2B e-commerce platforms with complex pricing and ordering.",
+  "fullDescription": "B2B e-commerce requires specialized features that consumer platforms lack. We build B2B platforms with customer-specific pricing, bulk ordering, quote management, approval workflows, and ERP integration.",
+  "features": [
+   "Customer-Specific Pricing",
+   "Bulk Ordering",
+   "Quote Management",
+   "Approval Workflows",
+   "ERP Integration",
+   "Credit Terms & Invoicing"
+  ],
+  "benefits": [
+   "Streamlined B2B sales",
+   "Reduced order errors",
+   "24/7 ordering",
+   "Better customer experience",
+   "Lower sales costs",
+   "Faster order processing"
+  ],
+  "technologies": [
+   {
+    "icon": "magento",
+    "name": "Magento"
+   },
+   {
+    "icon": "sap",
+    "name": "SAP"
+   },
+   {
+    "icon": "salesforce",
+    "name": "Salesforce"
+   },
+   {
+    "icon": "netsuite",
+    "name": "NetSuite"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "backend-development",
+  "name": "Backend Development",
+  "parentSlug": "web-development",
+  "shortDescription": "Build robust, scalable backend systems with Node.js, Python, and cloud-native architectures that handle millions of users.",
+  "fullDescription": "Power your applications with reliable, enterprise-grade backend systems. We architect and build high-performance APIs, microservices, databases, and server infrastructure using Node.js, Python, Go, and Rust. Our backend engineers specialize in building systems that scale horizontally, handle complex business logic, and integrate seamlessly with third-party services while maintaining security and data integrity.",
+  "features": [
+   "Node.js & Express/Fastify/NestJS",
+   "Python Django & FastAPI",
+   "Go & Rust for High Performance",
+   "Database Design & Query Optimization",
+   "Microservices & Event-Driven Architecture",
+   "Authentication & Authorization (OAuth2, JWT)",
+   "Message Queues (RabbitMQ, Kafka, SQS)",
+   "Caching Strategies (Redis, Memcached)"
+  ],
+  "benefits": [
+   "Handle millions of concurrent users with horizontal scaling",
+   "Secure data processing with encryption at rest and in transit",
+   "Resilient architecture with automatic failover and recovery",
+   "Sub-100ms response times with optimized queries and caching",
+   "Cost-effective infrastructure with auto-scaling",
+   "Comprehensive logging and monitoring for debugging"
+  ],
+  "technologies": [
+   {
+    "icon": "nodejs",
+    "name": "Node.js"
+   },
+   {
+    "icon": "python",
+    "name": "Python"
+   },
+   {
+    "icon": "go",
+    "name": "Go"
+   },
+   {
+    "icon": "postgresql",
+    "name": "PostgreSQL"
+   },
+   {
+    "icon": "redis",
+    "name": "Redis"
+   },
+   {
+    "icon": "docker",
+    "name": "Docker"
+   },
+   {
+    "icon": "kubernetes",
+    "name": "Kubernetes"
+   },
+   {
+    "icon": "rabbitmq",
+    "name": "RabbitMQ"
+   },
+   {
+    "icon": "kafka",
+    "name": "Kafka"
+   },
+   {
+    "icon": "graphql",
+    "name": "GraphQL"
+   }
+  ],
+  "faqCount": 6,
+  "processCount": 5
+ },
+ {
+  "slug": "blockchain-development",
+  "name": "Blockchain Development",
+  "parentSlug": "web-development",
+  "shortDescription": "Develop secure smart contracts, DApps, and blockchain integrations on Ethereum, Solana, and more.",
+  "fullDescription": "We build blockchain solutions that bring transparency, security, and decentralization to your business. From smart contracts on Ethereum and Solana to full DApp development, token creation, and NFT marketplaces—we help you leverage Web3 technology effectively.",
+  "features": [
+   "Smart Contract Development",
+   "DApp Frontend & Backend",
+   "Token Creation (ERC-20, ERC-721)",
+   "NFT Marketplace Development",
+   "Wallet Integration",
+   "Cross-Chain Solutions",
+   "Smart Contract Auditing",
+   "Gas Optimization"
+  ],
+  "benefits": [
+   "Immutable, tamper-proof records",
+   "Trustless transactions without intermediaries",
+   "Global accessibility 24/7",
+   "Programmable money and assets",
+   "Transparent audit trails",
+   "New revenue streams through tokenization"
+  ],
+  "technologies": [
+   {
+    "icon": "📜",
+    "name": "Solidity"
+   },
+   {
+    "icon": "💎",
+    "name": "Ethereum"
+   },
+   {
+    "icon": "🌞",
+    "name": "Solana"
+   },
+   {
+    "icon": "👷",
+    "name": "Hardhat"
+   },
+   {
+    "icon": "🌐",
+    "name": "Web3.js"
+   },
+   {
+    "icon": "📦",
+    "name": "IPFS"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "booking-reservation-systems",
+  "name": "Booking & Reservation Systems",
+  "parentSlug": "enterprise-software",
+  "shortDescription": "Create scheduling and reservation platforms for any booking use case.",
+  "fullDescription": "We build custom booking platforms with availability management, payment integration, and notifications.",
+  "features": [
+   "Real-Time Availability",
+   "Online Booking Widget",
+   "Calendar Integration",
+   "Payment Processing",
+   "Automated Reminders",
+   "Resource Management",
+   "Staff Scheduling",
+   "Waitlist Management"
+  ],
+  "benefits": [
+   "24/7 booking capability",
+   "Reduced no-shows",
+   "Staff time savings",
+   "Better resource utilization",
+   "Customer convenience",
+   "Revenue optimization"
+  ],
+  "technologies": [
+   {
+    "icon": "⚡",
+    "name": "Next.js"
+   },
+   {
+    "icon": "🐘",
+    "name": "PostgreSQL"
+   },
+   {
+    "icon": "💳",
+    "name": "Stripe"
+   },
+   {
+    "icon": "📅",
+    "name": "Google Calendar API"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 5
+ },
+ {
+  "slug": "bubble-development",
+  "name": "Bubble Development",
+  "parentSlug": "no-code-low-code",
+  "shortDescription": "Build powerful web applications with Bubble no-code platform.",
+  "fullDescription": "Create complex web applications without code using Bubble.io. Perfect for startups, internal tools, and MVPs. We build full-featured applications with databases, user auth, payments, and API integrations.",
+  "features": [
+   "Database Design",
+   "User Authentication",
+   "Payment Integration",
+   "API Connections",
+   "Responsive Design",
+   "Workflows & Logic"
+  ],
+  "benefits": [
+   "10x faster development",
+   "Lower costs",
+   "Easy to iterate",
+   "No developers needed for updates",
+   "Production-ready",
+   "Scalable hosting"
+  ],
+  "technologies": [
+   {
+    "icon": "bubble",
+    "name": "Bubble"
+   },
+   {
+    "icon": "stripe",
+    "name": "Stripe"
+   },
+   {
+    "icon": "zapier",
+    "name": "Zapier"
+   },
+   {
+    "icon": "api",
+    "name": "API Connector"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "code-review-refactoring",
+  "name": "Code Review & Refactoring",
+  "parentSlug": "web-development",
+  "shortDescription": "Expert code audits and refactoring to improve maintainability.",
+  "fullDescription": "We conduct thorough code reviews and refactor strategically to improve code quality.",
+  "features": [
+   "Code Quality Audit",
+   "Architecture Review",
+   "Security Review",
+   "Performance Analysis",
+   "Refactoring Roadmap",
+   "Incremental Refactoring",
+   "Test Coverage Improvement",
+   "Documentation Updates"
+  ],
+  "benefits": [
+   "Reduced technical debt",
+   "Faster development",
+   "Fewer bugs",
+   "Easier onboarding",
+   "Better performance",
+   "Improved security"
+  ],
+  "technologies": [
+   {
+    "icon": "📊",
+    "name": "SonarQube"
+   },
+   {
+    "icon": "📝",
+    "name": "ESLint"
+   },
+   {
+    "icon": "🃏",
+    "name": "Jest"
+   },
+   {
+    "icon": "📘",
+    "name": "TypeScript"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 5
+ },
+ {
+  "slug": "crm-development",
+  "name": "CRM Development",
+  "parentSlug": "enterprise-software",
+  "shortDescription": "Create CRM solutions that fit your unique sales pipeline and customer management needs.",
+  "fullDescription": "Off-the-shelf CRMs rarely fit perfectly. We build custom CRM systems tailored to your exact sales process, customer segments, and workflows. From lead management and opportunity tracking to customer success automation and reporting, our CRMs integrate with your existing tools and scale with your business.",
+  "features": [
+   "Contact & Lead Management",
+   "Sales Pipeline Automation",
+   "Email Integration",
+   "Task & Activity Tracking",
+   "Custom Field & Workflows",
+   "Reporting & Analytics",
+   "Mobile Access",
+   "Third-Party Integrations"
+  ],
+  "benefits": [
+   "Fits your exact process",
+   "No per-seat licensing fees",
+   "Full data ownership",
+   "Competitive advantage",
+   "Seamless integrations",
+   "Scalable architecture"
+  ],
+  "technologies": [
+   {
+    "icon": "⚡",
+    "name": "Next.js"
+   },
+   {
+    "icon": "🐘",
+    "name": "PostgreSQL"
+   },
+   {
+    "icon": "📬",
+    "name": "Redis"
+   },
+   {
+    "icon": "📞",
+    "name": "Twilio"
+   },
+   {
+    "icon": "📧",
+    "name": "SendGrid"
+   },
+   {
+    "icon": "⚡",
+    "name": "Zapier"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "cross-platform-apps",
+  "name": "Cross-Platform Apps",
+  "parentSlug": "mobile-development",
+  "shortDescription": "Build iOS and Android apps from a single codebase with React Native or Flutter.",
+  "fullDescription": "Maximize your mobile development investment with cross-platform development. We use React Native and Flutter to build native-quality apps for iOS and Android from a single codebase, reducing development time and costs while maintaining excellent user experience.",
+  "features": [
+   "Single Codebase",
+   "Native Performance",
+   "Hot Reload Development",
+   "Platform-Specific UI",
+   "Code Sharing with Web",
+   "OTA Updates"
+  ],
+  "benefits": [
+   "50% faster development",
+   "Single team for both platforms",
+   "Consistent UX",
+   "Easier maintenance",
+   "Cost effective",
+   "Faster time-to-market"
+  ],
+  "technologies": [
+   {
+    "icon": "react",
+    "name": "React Native"
+   },
+   {
+    "icon": "flutter",
+    "name": "Flutter"
+   },
+   {
+    "icon": "expo",
+    "name": "Expo"
+   },
+   {
+    "icon": "firebase",
+    "name": "Firebase"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "custom-business-software",
+  "name": "Custom Business Software",
+  "parentSlug": "enterprise-software",
+  "shortDescription": "Build custom software solutions for your unique business processes.",
+  "fullDescription": "When off-the-shelf software does not fit, we build custom applications tailored to your exact business processes. From inventory systems to customer portals, we deliver solutions that work the way you do.",
+  "features": [
+   "Process Automation",
+   "Custom Workflows",
+   "Third-Party Integration",
+   "Reporting & Analytics",
+   "Role-Based Access",
+   "Mobile Access"
+  ],
+  "benefits": [
+   "Perfect fit for your processes",
+   "Competitive advantage",
+   "No licensing fees",
+   "Full customization",
+   "Integration flexibility",
+   "Scalable growth"
+  ],
+  "technologies": [
+   {
+    "icon": "react",
+    "name": "React"
+   },
+   {
+    "icon": "nodejs",
+    "name": "Node.js"
+   },
+   {
+    "icon": "postgresql",
+    "name": "PostgreSQL"
+   },
+   {
+    "icon": "docker",
+    "name": "Docker"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "custom-ecommerce",
+  "name": "Custom E-Commerce",
+  "parentSlug": "e-commerce",
+  "shortDescription": "Build custom e-commerce platforms tailored to your unique business needs.",
+  "fullDescription": "Go beyond template-based solutions with fully custom e-commerce development. We build bespoke online stores with unique features, custom checkout flows, and integrations specific to your business model.",
+  "features": [
+   "Custom Checkout Flows",
+   "Unique Product Configurators",
+   "Multi-Currency Support",
+   "Custom Inventory Logic",
+   "B2B & B2C Hybrid",
+   "Subscription Commerce"
+  ],
+  "benefits": [
+   "Unique brand experience",
+   "No platform limitations",
+   "Custom integrations",
+   "Scalable architecture",
+   "Full ownership",
+   "Competitive advantage"
+  ],
+  "technologies": [
+   {
+    "icon": "nextjs",
+    "name": "Next.js"
+   },
+   {
+    "icon": "stripe",
+    "name": "Stripe"
+   },
+   {
+    "icon": "postgresql",
+    "name": "PostgreSQL"
+   },
+   {
+    "icon": "redis",
+    "name": "Redis"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "custom-wordpress-themes",
+  "name": "Custom WordPress Themes",
+  "parentSlug": "wordpress-development",
+  "shortDescription": "Get a unique WordPress theme designed and built for your brand.",
+  "fullDescription": "Stand out with a custom WordPress theme built from scratch for your specific needs. No bloated page builders - just clean, fast, and SEO-optimized code that matches your brand perfectly.",
+  "features": [
+   "Custom Design",
+   "Clean Code",
+   "Gutenberg Blocks",
+   "ACF Integration",
+   "Speed Optimized",
+   "SEO Ready"
+  ],
+  "benefits": [
+   "Unique brand identity",
+   "Fast performance",
+   "No theme conflicts",
+   "Easy content management",
+   "Future-proof",
+   "Full ownership"
+  ],
+  "technologies": [
+   {
+    "icon": "wordpress",
+    "name": "WordPress"
+   },
+   {
+    "icon": "php",
+    "name": "PHP"
+   },
+   {
+    "icon": "acf",
+    "name": "ACF"
+   },
+   {
+    "icon": "tailwind",
+    "name": "Tailwind"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "dapp-development",
+  "name": "dApp Development",
+  "parentSlug": "web3-blockchain",
+  "shortDescription": "Build decentralized applications that run on blockchain.",
+  "fullDescription": "Create fully decentralized applications that leverage blockchain for trustless, transparent operations. We build dApps for DeFi, gaming, social, and enterprise use cases with modern web frontends.",
+  "features": [
+   "Wallet Connection",
+   "Smart Contract Integration",
+   "Decentralized Storage",
+   "Token Gating",
+   "DAO Integration",
+   "Cross-Chain Support"
+  ],
+  "benefits": [
+   "No central point of failure",
+   "User-owned data",
+   "Transparent operations",
+   "Global accessibility",
+   "Programmable incentives",
+   "Censorship resistance"
+  ],
+  "technologies": [
+   {
+    "icon": "react",
+    "name": "React"
+   },
+   {
+    "icon": "web3",
+    "name": "Web3.js"
+   },
+   {
+    "icon": "solidity",
+    "name": "Solidity"
+   },
+   {
+    "icon": "thegraph",
+    "name": "The Graph"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "defi-solutions",
+  "name": "DeFi Solutions",
+  "parentSlug": "web3-blockchain",
+  "shortDescription": "Build DeFi protocols for lending, trading, and yield generation.",
+  "fullDescription": "Enter decentralized finance with custom DeFi protocol development. We build lending platforms, DEXs, yield aggregators, and other DeFi applications with battle-tested security practices.",
+  "features": [
+   "Lending Protocols",
+   "DEX Development",
+   "Yield Farming",
+   "Liquidity Pools",
+   "Governance Systems",
+   "Cross-Chain Bridges"
+  ],
+  "benefits": [
+   "Permissionless access",
+   "Programmable finance",
+   "Transparent operations",
+   "Composability",
+   "Global reach",
+   "New revenue models"
+  ],
+  "technologies": [
+   {
+    "icon": "solidity",
+    "name": "Solidity"
+   },
+   {
+    "icon": "uniswap",
+    "name": "Uniswap"
+   },
+   {
+    "icon": "aave",
+    "name": "Aave"
+   },
+   {
+    "icon": "chainlink",
+    "name": "Chainlink"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "desktop-application-development",
+  "name": "Desktop Application Development",
+  "parentSlug": "web-development",
+  "shortDescription": "Create cross-platform desktop apps with Electron, Tauri, or native frameworks.",
+  "fullDescription": "Desktop applications offer performance and capabilities that web apps can't match. We build desktop software using Electron, Tauri, or native frameworks for Windows, macOS, and Linux.",
+  "features": [
+   "Cross-Platform Development",
+   "Native Performance",
+   "System Integration",
+   "Offline Functionality",
+   "Auto-Updates",
+   "Code Signing & Distribution",
+   "Hardware Access",
+   "Custom UI Frameworks"
+  ],
+  "benefits": [
+   "Full system access",
+   "Offline-first capability",
+   "Better performance than web",
+   "Deep OS integration",
+   "No browser limitations",
+   "Professional software feel"
+  ],
+  "technologies": [
+   {
+    "icon": "⚡",
+    "name": "Electron"
+   },
+   {
+    "icon": "🦀",
+    "name": "Tauri"
+   },
+   {
+    "icon": "🟣",
+    "name": ".NET MAUI"
+   },
+   {
+    "icon": "🔲",
+    "name": "Qt"
+   },
+   {
+    "icon": "🍎",
+    "name": "Swift"
+   },
+   {
+    "icon": "🦀",
+    "name": "Rust"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 5
+ },
+ {
+  "slug": "e-commerce",
+  "name": "E-Commerce",
+  "parentSlug": null,
+  "shortDescription": "Build powerful online stores that drive sales.",
+  "fullDescription": "Launch and scale your online business with our comprehensive e-commerce solutions. We build custom e-commerce platforms, integrate with major marketplaces, and optimize for conversions. From product catalogs to payment processing, inventory management to order fulfillment, we deliver complete solutions that help you sell more.",
+  "features": [
+   "Custom E-Commerce Development",
+   "Shopify & WooCommerce Solutions",
+   "Payment Gateway Integration",
+   "Inventory & Order Management",
+   "Multi-Channel Selling",
+   "Shopping Cart Optimization",
+   "Product Information Management",
+   "Subscription & Recurring Billing"
+  ],
+  "benefits": [
+   "Increase online sales and revenue",
+   "Reach customers globally 24/7",
+   "Reduce operational costs with automation",
+   "Gain insights with sales analytics",
+   "Scale easily during peak seasons",
+   "Build customer loyalty with great experiences"
+  ],
+  "technologies": [
+   {
+    "icon": "shopify",
+    "name": "Shopify"
+   },
+   {
+    "icon": "woocommerce",
+    "name": "WooCommerce"
+   },
+   {
+    "icon": "magento",
+    "name": "Magento"
+   },
+   {
+    "icon": "stripe",
+    "name": "Stripe"
+   },
+   {
+    "icon": "paypal",
+    "name": "PayPal"
+   },
+   {
+    "icon": "contentful",
+    "name": "Contentful"
+   },
+   {
+    "icon": "algolia",
+    "name": "Algolia"
+   },
+   {
+    "icon": "klaviyo",
+    "name": "Klaviyo"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "enterprise-software",
+  "name": "Enterprise Software",
+  "parentSlug": null,
+  "shortDescription": "Build robust, scalable enterprise software tailored to your business needs.",
+  "fullDescription": "Transform your business operations with custom enterprise software solutions. We design and develop large-scale applications that streamline workflows, integrate systems, and drive organizational efficiency. From ERP systems to custom business applications, we deliver enterprise-grade solutions built for reliability and scale.",
+  "features": [
+   "Custom ERP Development",
+   "Business Process Automation",
+   "Legacy System Modernization",
+   "Enterprise Integration",
+   "Workflow Management",
+   "Business Intelligence Dashboards"
+  ],
+  "benefits": [
+   "Streamlined business operations",
+   "Improved data visibility",
+   "Reduced manual processes",
+   "Scalable architecture",
+   "Enhanced security",
+   "Better decision making"
+  ],
+  "technologies": [
+   {
+    "icon": "java",
+    "name": "Java"
+   },
+   {
+    "icon": "dotnet",
+    "name": ".NET"
+   },
+   {
+    "icon": "postgresql",
+    "name": "PostgreSQL"
+   },
+   {
+    "icon": "azure",
+    "name": "Azure"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 5
+ },
+ {
+  "slug": "erp-development",
+  "name": "ERP Development",
+  "parentSlug": "enterprise-software",
+  "shortDescription": "Create integrated ERP solutions for inventory, finance, HR, and operations.",
+  "fullDescription": "Enterprise Resource Planning systems integrate all business operations. We build custom ERP solutions that unify inventory, finance, HR, manufacturing, and operations into a single platform. Unlike one-size-fits-all ERPs, our custom solutions match your exact processes while providing the integration and visibility you need.",
+  "features": [
+   "Inventory Management",
+   "Financial Accounting",
+   "HR & Payroll",
+   "Supply Chain Management",
+   "Manufacturing & Production",
+   "Project Management",
+   "Business Intelligence",
+   "Multi-Location Support"
+  ],
+  "benefits": [
+   "Single source of truth",
+   "Process automation",
+   "Real-time visibility",
+   "Reduced manual data entry",
+   "Custom workflows",
+   "Scalable architecture"
+  ],
+  "technologies": [
+   {
+    "icon": "⚡",
+    "name": "Next.js"
+   },
+   {
+    "icon": "🐘",
+    "name": "PostgreSQL"
+   },
+   {
+    "icon": "📬",
+    "name": "Redis"
+   },
+   {
+    "icon": "📮",
+    "name": "Apache Kafka"
+   },
+   {
+    "icon": "🔍",
+    "name": "Elasticsearch"
+   },
+   {
+    "icon": "🐳",
+    "name": "Docker"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "event-driven-architecture",
+  "name": "Event-Driven Architecture",
+  "parentSlug": "api-development",
+  "shortDescription": "Implement event sourcing, message queues, and reactive architectures.",
+  "fullDescription": "We design and implement event-driven systems using message queues, event sourcing, and CQRS patterns.",
+  "features": [
+   "Message Queue Implementation",
+   "Event Sourcing",
+   "CQRS Pattern",
+   "Saga Pattern",
+   "Dead Letter Handling",
+   "Event Schema Registry",
+   "Exactly-Once Processing",
+   "Event Replay"
+  ],
+  "benefits": [
+   "Loose coupling",
+   "Better scalability",
+   "Audit trail built-in",
+   "Async processing",
+   "Resilience",
+   "Temporal queries"
+  ],
+  "technologies": [
+   {
+    "icon": "📮",
+    "name": "Apache Kafka"
+   },
+   {
+    "icon": "🐰",
+    "name": "RabbitMQ"
+   },
+   {
+    "icon": "☁️",
+    "name": "AWS SQS/SNS"
+   },
+   {
+    "icon": "💾",
+    "name": "EventStoreDB"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 5
+ },
+ {
+  "slug": "flutter-development",
+  "name": "Flutter Development",
+  "parentSlug": "mobile-development",
+  "shortDescription": "Create stunning cross-platform apps with Flutter—one codebase for iOS, Android, web, and desktop.",
+  "fullDescription": "Flutter enables true cross-platform development with a single codebase that compiles to native code. We build beautiful, fast Flutter apps that look and feel native on every platform. With hot reload, rich widgets, and Dart's productivity, we deliver polished apps faster.",
+  "features": [
+   "Cross-Platform (iOS, Android, Web, Desktop)",
+   "Custom Widget Development",
+   "State Management (Riverpod, BLoC)",
+   "Firebase Integration",
+   "Platform-Specific Customizations",
+   "Animations & Transitions",
+   "Internationalization & Localization",
+   "CI/CD with Codemagic/Fastlane"
+  ],
+  "benefits": [
+   "Single codebase for all platforms",
+   "Near-native performance",
+   "Beautiful, customizable UI",
+   "Fast development with hot reload",
+   "Growing ecosystem and community",
+   "Cost-effective multi-platform development"
+  ],
+  "technologies": [
+   {
+    "icon": "🦋",
+    "name": "Flutter"
+   },
+   {
+    "icon": "🎯",
+    "name": "Dart"
+   },
+   {
+    "icon": "🔥",
+    "name": "Firebase"
+   },
+   {
+    "icon": "🌊",
+    "name": "Riverpod"
+   },
+   {
+    "icon": "⚡",
+    "name": "GetX"
+   },
+   {
+    "icon": "🐝",
+    "name": "Hive"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "frontend-development",
+  "name": "Frontend Development",
+  "parentSlug": "web-development",
+  "shortDescription": "Build fast, interactive user interfaces with React, Next.js, and modern frontend technologies that deliver exceptional user experiences.",
+  "fullDescription": "Create stunning, performant user interfaces that delight users and drive conversions. We specialize in React, Next.js, and modern frontend frameworks to build responsive, accessible, and lightning-fast web experiences. Our frontend engineers combine pixel-perfect design implementation with performance optimization to deliver interfaces that load instantly and respond smoothly to user interactions.",
+  "features": [
+   "React & Next.js Development",
+   "TypeScript Implementation",
+   "Responsive & Mobile-First Design",
+   "State Management (Redux, Zustand, Jotai)",
+   "Component Library Development",
+   "Performance Optimization & Core Web Vitals",
+   "Server-Side Rendering & Static Generation",
+   "Micro-Frontend Architecture"
+  ],
+  "benefits": [
+   "Lightning-fast user experiences with sub-second load times",
+   "Cross-browser compatibility across all major browsers",
+   "Accessible & SEO-friendly interfaces following WCAG 2.1",
+   "Maintainable component architecture with design systems",
+   "Future-proof codebase with TypeScript",
+   "Optimized bundle sizes for mobile users"
+  ],
+  "technologies": [
+   {
+    "icon": "react",
+    "name": "React"
+   },
+   {
+    "icon": "nextjs",
+    "name": "Next.js"
+   },
+   {
+    "icon": "typescript",
+    "name": "TypeScript"
+   },
+   {
+    "icon": "tailwind",
+    "name": "Tailwind CSS"
+   },
+   {
+    "icon": "zustand",
+    "name": "Zustand"
+   },
+   {
+    "icon": "storybook",
+    "name": "Storybook"
+   },
+   {
+    "icon": "framer",
+    "name": "Framer Motion"
+   },
+   {
+    "icon": "reactquery",
+    "name": "React Query"
+   },
+   {
+    "icon": "vitest",
+    "name": "Vitest"
+   },
+   {
+    "icon": "playwright",
+    "name": "Playwright"
+   }
+  ],
+  "faqCount": 6,
+  "processCount": 5
+ },
+ {
+  "slug": "full-stack-development",
+  "name": "Full-Stack Development",
+  "parentSlug": "web-development",
+  "shortDescription": "Build complete web applications from frontend to backend with a unified, full-stack approach.",
+  "fullDescription": "Get the best of both worlds with our full-stack development service. We design, build, and deploy complete web applications handling everything from pixel-perfect user interfaces to robust server-side logic, databases, and DevOps. Our full-stack engineers work across the entire technology stack to deliver cohesive, high-performance applications with seamless data flow between frontend and backend.",
+  "features": [
+   "React & Next.js Frontend",
+   "Node.js & Python Backend",
+   "Database Design & ORM Integration",
+   "REST & GraphQL API Development",
+   "Authentication & Authorization",
+   "Real-Time Features (WebSockets)",
+   "CI/CD Pipeline Setup",
+   "Cloud Deployment & Scaling"
+  ],
+  "benefits": [
+   "Single team owns the entire stack, reducing handoff delays",
+   "Consistent architecture from UI to database",
+   "Faster iteration with shared context",
+   "Unified testing strategy across all layers",
+   "Cost-effective compared to separate frontend and backend teams",
+   "Seamless integration between frontend and backend"
+  ],
+  "technologies": [
+   {
+    "icon": "nextjs",
+    "name": "Next.js"
+   },
+   {
+    "icon": "react",
+    "name": "React"
+   },
+   {
+    "icon": "nodejs",
+    "name": "Node.js"
+   },
+   {
+    "icon": "typescript",
+    "name": "TypeScript"
+   },
+   {
+    "icon": "postgresql",
+    "name": "PostgreSQL"
+   },
+   {
+    "icon": "prisma",
+    "name": "Prisma"
+   },
+   {
+    "icon": "docker",
+    "name": "Docker"
+   },
+   {
+    "icon": "vercel",
+    "name": "Vercel"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "graphql-api-development",
+  "name": "GraphQL API Development",
+  "parentSlug": "api-development",
+  "shortDescription": "Design and implement GraphQL APIs that give clients exactly the data they need.",
+  "fullDescription": "GraphQL gives clients the power to ask for exactly what they need. We design and build GraphQL APIs that reduce over-fetching, improve performance, and simplify frontend development. From greenfield APIs to migrating from REST, we implement GraphQL with proper schema design, security, caching, and real-time subscriptions.",
+  "features": [
+   "Schema Design",
+   "Resolver Implementation",
+   "Authentication & Authorization",
+   "Real-Time Subscriptions",
+   "DataLoader & N+1 Prevention",
+   "Federation & Stitching",
+   "Caching Strategies",
+   "REST to GraphQL Migration"
+  ],
+  "benefits": [
+   "Clients get exactly needed data",
+   "Single endpoint simplicity",
+   "Strong typing and introspection",
+   "Reduced API versions",
+   "Faster frontend development",
+   "Built-in documentation"
+  ],
+  "technologies": [
+   {
+    "icon": "🚀",
+    "name": "Apollo Server"
+   },
+   {
+    "icon": "🧘",
+    "name": "GraphQL Yoga"
+   },
+   {
+    "icon": "⚡",
+    "name": "Hasura"
+   },
+   {
+    "icon": "💎",
+    "name": "Prisma"
+   },
+   {
+    "icon": "📘",
+    "name": "TypeGraphQL"
+   },
+   {
+    "icon": "⚙️",
+    "name": "GraphQL Codegen"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "graphql-development",
+  "name": "GraphQL Development",
+  "parentSlug": "api-development",
+  "shortDescription": "Build flexible, efficient GraphQL APIs that let clients query exactly the data they need.",
+  "fullDescription": "Implement GraphQL APIs that give frontend teams the power to request exactly the data they need. We design schemas, implement resolvers, handle subscriptions, and optimize performance for production-grade GraphQL.",
+  "features": [
+   "Schema Design & Modeling",
+   "Query & Mutation Resolvers",
+   "Real-time Subscriptions",
+   "DataLoader & N+1 Prevention",
+   "Authentication & Authorization",
+   "Federation & Stitching"
+  ],
+  "benefits": [
+   "Flexible data fetching",
+   "Reduced over-fetching",
+   "Strong type system",
+   "Real-time capabilities"
+  ],
+  "technologies": [
+   {
+    "icon": "apollo",
+    "name": "Apollo Server"
+   },
+   {
+    "icon": "graphql",
+    "name": "GraphQL"
+   },
+   {
+    "icon": "typegraphql",
+    "name": "TypeGraphQL"
+   },
+   {
+    "icon": "prisma",
+    "name": "Prisma"
+   },
+   {
+    "icon": "dataloader",
+    "name": "DataLoader"
+   },
+   {
+    "icon": "redis",
+    "name": "Redis"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "headless-cms-development",
+  "name": "Headless CMS Development",
+  "parentSlug": "web-development",
+  "shortDescription": "Implement flexible headless CMS solutions that separate content from presentation for ultimate flexibility.",
+  "fullDescription": "Break free from monolithic CMS limitations with headless architecture. We implement and customize headless CMS platforms that let your content team work independently while developers build fast, modern frontends using any technology.",
+  "features": [
+   "Strapi & Contentful Implementation",
+   "Sanity.io Custom Schemas",
+   "Multi-Channel Content Delivery",
+   "GraphQL & REST APIs",
+   "Content Modeling",
+   "Preview & Draft Workflows",
+   "Localization Support",
+   "Webhook Integrations"
+  ],
+  "benefits": [
+   "Content reusable across web, mobile, and IoT",
+   "Developers free to choose any frontend",
+   "Better performance with static generation",
+   "Easier scaling and security",
+   "Content team independence",
+   "Future-proof architecture"
+  ],
+  "technologies": [
+   {
+    "icon": "strapi",
+    "name": "Strapi"
+   },
+   {
+    "icon": "contentful",
+    "name": "Contentful"
+   },
+   {
+    "icon": "sanity",
+    "name": "Sanity"
+   },
+   {
+    "icon": "prismic",
+    "name": "Prismic"
+   },
+   {
+    "icon": "nextjs",
+    "name": "Next.js"
+   },
+   {
+    "icon": "graphql",
+    "name": "GraphQL"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "headless-commerce",
+  "name": "Headless Commerce",
+  "parentSlug": "ecommerce-solutions",
+  "shortDescription": "Create decoupled e-commerce with headless CMS and commerce APIs.",
+  "fullDescription": "We build headless e-commerce solutions using commerce APIs with custom frontends.",
+  "features": [
+   "Headless Commerce Backend",
+   "Custom Storefront",
+   "Multi-Channel Publishing",
+   "Performance Optimization",
+   "Personalization",
+   "Checkout Customization",
+   "Inventory APIs",
+   "Order Management"
+  ],
+  "benefits": [
+   "Faster page loads",
+   "Complete design freedom",
+   "Multi-channel from one backend",
+   "Better developer experience",
+   "Future-proof architecture",
+   "SEO advantages"
+  ],
+  "technologies": [
+   {
+    "icon": "⚡",
+    "name": "Next.js"
+   },
+   {
+    "icon": "🛍️",
+    "name": "Shopify Storefront"
+   },
+   {
+    "icon": "🐙",
+    "name": "Medusa"
+   },
+   {
+    "icon": "📝",
+    "name": "Sanity"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 5
+ },
+ {
+  "slug": "hrms-development",
+  "name": "HRMS Development",
+  "parentSlug": "enterprise-software",
+  "shortDescription": "Build custom HRMS solutions for workforce management.",
+  "fullDescription": "Streamline your HR operations with a custom Human Resource Management System. We build HRMS platforms covering recruitment, onboarding, payroll, performance, leave management, and employee self-service.",
+  "features": [
+   "Recruitment & ATS",
+   "Onboarding Workflows",
+   "Payroll Processing",
+   "Leave Management",
+   "Performance Reviews",
+   "Employee Self-Service"
+  ],
+  "benefits": [
+   "Streamlined HR processes",
+   "Reduced paperwork",
+   "Better compliance",
+   "Employee engagement",
+   "Data-driven decisions",
+   "Cost savings"
+  ],
+  "technologies": [
+   {
+    "icon": "react",
+    "name": "React"
+   },
+   {
+    "icon": "nodejs",
+    "name": "Node.js"
+   },
+   {
+    "icon": "postgresql",
+    "name": "PostgreSQL"
+   },
+   {
+    "icon": "aws",
+    "name": "AWS"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "inventory-management-systems",
+  "name": "Inventory Management Systems",
+  "parentSlug": "enterprise-software",
+  "shortDescription": "Create inventory tracking solutions with real-time stock visibility.",
+  "fullDescription": "We build custom inventory systems that track stock levels, automate reordering, and manage multiple warehouses.",
+  "features": [
+   "Real-Time Stock Tracking",
+   "Multi-Warehouse Support",
+   "Barcode/RFID Integration",
+   "Automated Reordering",
+   "Demand Forecasting",
+   "Lot/Serial Tracking",
+   "Inventory Valuation",
+   "Sales Channel Integration"
+  ],
+  "benefits": [
+   "Prevent stockouts",
+   "Reduce excess inventory",
+   "Real-time visibility",
+   "Faster fulfillment",
+   "Better cash flow",
+   "Accurate reporting"
+  ],
+  "technologies": [
+   {
+    "icon": "⚡",
+    "name": "Next.js"
+   },
+   {
+    "icon": "🐘",
+    "name": "PostgreSQL"
+   },
+   {
+    "icon": "📬",
+    "name": "Redis"
+   },
+   {
+    "icon": "🛒",
+    "name": "Shopify API"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 5
+ },
+ {
+  "slug": "ios-development",
+  "name": "iOS Development",
+  "parentSlug": "mobile-development",
+  "shortDescription": "Build native iOS applications with Swift for the best Apple ecosystem experience.",
+  "fullDescription": "Deliver premium iOS experiences with native Swift development. We build performant, beautiful iOS apps that leverage Apple frameworks like SwiftUI, ARKit, CoreML, and HealthKit.",
+  "features": [
+   "Native Swift Development",
+   "SwiftUI & UIKit",
+   "ARKit & CoreML Integration",
+   "Apple Watch & iPad Apps",
+   "App Store Optimization",
+   "TestFlight Beta Testing"
+  ],
+  "benefits": [
+   "Best iOS performance",
+   "Access all Apple APIs",
+   "Premium user experience",
+   "Apple ecosystem integration"
+  ],
+  "technologies": [
+   {
+    "icon": "swift",
+    "name": "Swift"
+   },
+   {
+    "icon": "swiftui",
+    "name": "SwiftUI"
+   },
+   {
+    "icon": "xcode",
+    "name": "Xcode"
+   },
+   {
+    "icon": "coredata",
+    "name": "CoreData"
+   },
+   {
+    "icon": "firebase",
+    "name": "Firebase"
+   },
+   {
+    "icon": "testflight",
+    "name": "TestFlight"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "iot-development",
+  "name": "IoT Development",
+  "parentSlug": "enterprise-software",
+  "shortDescription": "Create smart, connected products with IoT sensors, gateways, and cloud platforms.",
+  "fullDescription": "The Internet of Things connects physical devices to digital systems. We develop IoT solutions from sensor integration and edge computing to cloud platforms and analytics dashboards. Whether you're building smart home products, industrial monitoring, or fleet tracking, we create the full IoT stack.",
+  "features": [
+   "Sensor Integration",
+   "Edge Computing",
+   "IoT Gateway Development",
+   "Cloud Platform Integration",
+   "Real-Time Data Processing",
+   "Device Management",
+   "OTA Updates",
+   "IoT Security"
+  ],
+  "benefits": [
+   "Connect physical and digital worlds",
+   "Real-time monitoring and control",
+   "Predictive maintenance",
+   "Data-driven insights",
+   "Automation opportunities",
+   "New revenue streams"
+  ],
+  "technologies": [
+   {
+    "icon": "☁️",
+    "name": "AWS IoT"
+   },
+   {
+    "icon": "🔷",
+    "name": "Azure IoT Hub"
+   },
+   {
+    "icon": "📨",
+    "name": "MQTT"
+   },
+   {
+    "icon": "🔌",
+    "name": "ESP32/Arduino"
+   },
+   {
+    "icon": "🍓",
+    "name": "Raspberry Pi"
+   },
+   {
+    "icon": "📊",
+    "name": "InfluxDB"
+   }
+  ],
+  "faqCount": 2,
+  "processCount": 5
+ },
+ {
+  "slug": "jamstack-development",
+  "name": "JAMstack Development",
+  "parentSlug": "web-development",
+  "shortDescription": "Build blazing-fast websites with JAMstack architecture.",
+  "fullDescription": "Leverage the JAMstack architecture for websites that are faster, more secure, and easier to scale. We build with Next.js, Gatsby, and headless CMS platforms to deliver static-first experiences with dynamic capabilities.",
+  "features": [
+   "Static Site Generation",
+   "Headless CMS Integration",
+   "Edge Deployment",
+   "API-First Architecture",
+   "Incremental Static Regeneration",
+   "CDN Distribution"
+  ],
+  "benefits": [
+   "Ultra-fast performance",
+   "Better security",
+   "Easier scaling",
+   "Lower hosting costs",
+   "Improved SEO",
+   "Better developer experience"
+  ],
+  "technologies": [
+   {
+    "icon": "nextjs",
+    "name": "Next.js"
+   },
+   {
+    "icon": "gatsby",
+    "name": "Gatsby"
+   },
+   {
+    "icon": "contentful",
+    "name": "Contentful"
+   },
+   {
+    "icon": "vercel",
+    "name": "Vercel"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "learning-management-systems",
+  "name": "Learning Management Systems",
+  "parentSlug": "enterprise-software",
+  "shortDescription": "Create e-learning platforms with courses, assessments, and progress tracking.",
+  "fullDescription": "We build custom LMS platforms with course management, video hosting, assessments, and certifications.",
+  "features": [
+   "Course Builder",
+   "Video Hosting & Streaming",
+   "Quizzes & Assessments",
+   "Progress Tracking",
+   "Certifications & Badges",
+   "Discussion Forums",
+   "SCORM/xAPI Support",
+   "Mobile Learning"
+  ],
+  "benefits": [
+   "Scalable training delivery",
+   "Consistent learning experience",
+   "Progress visibility",
+   "Reduced training costs",
+   "Compliance tracking",
+   "Self-paced learning"
+  ],
+  "technologies": [
+   {
+    "icon": "⚡",
+    "name": "Next.js"
+   },
+   {
+    "icon": "🎬",
+    "name": "Mux"
+   },
+   {
+    "icon": "🐘",
+    "name": "PostgreSQL"
+   },
+   {
+    "icon": "💳",
+    "name": "Stripe"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 5
+ },
+ {
+  "slug": "legacy-system-modernization",
+  "name": "Legacy System Modernization",
+  "parentSlug": "enterprise-software",
+  "shortDescription": "Modernize legacy applications with updated architecture, cloud migration, and new interfaces.",
+  "fullDescription": "Legacy systems hold valuable business logic but become increasingly difficult to maintain. We modernize through refactoring, re-platforming, or rebuilding.",
+  "features": [
+   "Application Assessment",
+   "Incremental Modernization",
+   "Cloud Migration",
+   "API Wrapping",
+   "Database Migration",
+   "UI Modernization",
+   "Microservices Extraction",
+   "Documentation Recovery"
+  ],
+  "benefits": [
+   "Reduced maintenance costs",
+   "Improved performance",
+   "Better developer experience",
+   "Cloud-ready architecture",
+   "Enhanced security",
+   "Future-proof technology"
+  ],
+  "technologies": [
+   {
+    "icon": "🐳",
+    "name": "Docker"
+   },
+   {
+    "icon": "☸️",
+    "name": "Kubernetes"
+   },
+   {
+    "icon": "☁️",
+    "name": "AWS Migration"
+   },
+   {
+    "icon": "🚪",
+    "name": "API Gateway"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 5
+ },
+ {
+  "slug": "magento-development",
+  "name": "Magento Development",
+  "parentSlug": "e-commerce",
+  "shortDescription": "Create powerful, scalable e-commerce platforms with Magento/Adobe Commerce.",
+  "fullDescription": "Magento (Adobe Commerce) is the platform for complex, enterprise e-commerce. We build and customize Magento stores that handle complex catalogs, B2B workflows, multiple storefronts, and advanced integrations. Our expertise covers custom module development, performance optimization, and enterprise implementations.",
+  "features": [
+   "Custom Module Development",
+   "Theme Customization",
+   "Multi-Store Setup",
+   "B2B Commerce Features",
+   "ERP/CRM Integration",
+   "Performance Optimization",
+   "Migration to Magento 2",
+   "Adobe Commerce Cloud"
+  ],
+  "benefits": [
+   "Handle complex product configurations",
+   "Advanced B2B capabilities",
+   "Multi-store from single backend",
+   "Highly customizable",
+   "Robust for enterprise scale",
+   "Adobe ecosystem integration"
+  ],
+  "technologies": [
+   {
+    "icon": "🏪",
+    "name": "Magento 2"
+   },
+   {
+    "icon": "🐘",
+    "name": "PHP"
+   },
+   {
+    "icon": "📊",
+    "name": "GraphQL"
+   },
+   {
+    "icon": "🔍",
+    "name": "Elasticsearch"
+   },
+   {
+    "icon": "⚡",
+    "name": "Varnish"
+   },
+   {
+    "icon": "🔴",
+    "name": "Redis"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "marketplace-development",
+  "name": "Marketplace Development",
+  "parentSlug": "e-commerce",
+  "shortDescription": "Build multi-vendor marketplace platforms connecting buyers and sellers at scale.",
+  "fullDescription": "Create thriving online marketplaces that connect buyers and sellers. We build multi-vendor platforms with vendor management, commission systems, dispute resolution, and seamless payment splitting.",
+  "features": [
+   "Multi-Vendor Management",
+   "Commission & Payout Systems",
+   "Vendor Onboarding Flows",
+   "Review & Rating Systems",
+   "Payment Splitting",
+   "Admin Dashboard"
+  ],
+  "benefits": [
+   "Scalable platform business model",
+   "Network effects drive growth",
+   "Revenue from commissions",
+   "Lower inventory risk"
+  ],
+  "technologies": [
+   {
+    "icon": "nextjs",
+    "name": "Next.js"
+   },
+   {
+    "icon": "stripe",
+    "name": "Stripe Connect"
+   },
+   {
+    "icon": "postgresql",
+    "name": "PostgreSQL"
+   },
+   {
+    "icon": "redis",
+    "name": "Redis"
+   },
+   {
+    "icon": "algolia",
+    "name": "Algolia"
+   },
+   {
+    "icon": "aws",
+    "name": "AWS"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "microservices-architecture",
+  "name": "Microservices Architecture",
+  "parentSlug": "api-development",
+  "shortDescription": "Break monoliths into independently deployable services for scale and agility.",
+  "fullDescription": "Microservices enable teams to build, deploy, and scale services independently. We help you design microservices architectures that match your organization and requirements. From domain-driven design to service communication patterns, container orchestration, and observability, we guide the transition from monolith to microservices or build greenfield distributed systems.",
+  "features": [
+   "Domain-Driven Design",
+   "Service Decomposition",
+   "API Gateway Design",
+   "Event-Driven Architecture",
+   "Service Mesh Implementation",
+   "Distributed Tracing",
+   "Circuit Breakers & Resilience",
+   "Monolith Strangler Pattern"
+  ],
+  "benefits": [
+   "Independent scaling per service",
+   "Technology flexibility per service",
+   "Faster deployment cycles",
+   "Team autonomy",
+   "Fault isolation",
+   "Easier maintenance"
+  ],
+  "technologies": [
+   {
+    "icon": "☸️",
+    "name": "Kubernetes"
+   },
+   {
+    "icon": "📡",
+    "name": "gRPC"
+   },
+   {
+    "icon": "📮",
+    "name": "Kafka"
+   },
+   {
+    "icon": "🕸️",
+    "name": "Istio"
+   },
+   {
+    "icon": "🔍",
+    "name": "Jaeger"
+   },
+   {
+    "icon": "🏛️",
+    "name": "Consul"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "mobile-development",
+  "name": "Mobile Development",
+  "parentSlug": null,
+  "shortDescription": "Native and cross-platform mobile apps.",
+  "fullDescription": "Reach your customers wherever they are. We design and develop beautiful, user-friendly mobile applications for iOS and Android. Using modern frameworks like React Native and Flutter, we deliver high-performance apps that provide native-like experiences while optimizing development costs and time-to-market.",
+  "features": [
+   "Native iOS Development (Swift)",
+   "Native Android Development (Kotlin)",
+   "Cross-Platform Development (React Native, Flutter)",
+   "App Store Optimization (ASO)",
+   "Push Notifications & Real-time Updates",
+   "Offline-First Architecture",
+   "Biometric Authentication",
+   "In-App Purchases & Subscriptions"
+  ],
+  "benefits": [
+   "Reach users on both iOS and Android platforms",
+   "Native-like performance with cross-platform efficiency",
+   "Faster time-to-market with shared codebase",
+   "Reduced development and maintenance costs",
+   "Seamless integration with device features",
+   "Regular updates and feature enhancements"
+  ],
+  "technologies": [
+   {
+    "icon": "react",
+    "name": "React Native"
+   },
+   {
+    "icon": "flutter",
+    "name": "Flutter"
+   },
+   {
+    "icon": "swift",
+    "name": "Swift"
+   },
+   {
+    "icon": "kotlin",
+    "name": "Kotlin"
+   },
+   {
+    "icon": "firebase",
+    "name": "Firebase"
+   },
+   {
+    "icon": "graphql",
+    "name": "GraphQL"
+   },
+   {
+    "icon": "redux",
+    "name": "Redux"
+   },
+   {
+    "icon": "expo",
+    "name": "Expo"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "multi-tenant-architecture",
+  "name": "Multi-Tenant Architecture",
+  "parentSlug": "enterprise-software",
+  "shortDescription": "Design and implement scalable multi-tenant architectures.",
+  "fullDescription": "Build SaaS platforms that efficiently serve multiple customers from shared infrastructure. We design multi-tenant architectures with proper data isolation, customization, and scaling strategies.",
+  "features": [
+   "Tenant Isolation",
+   "Shared Infrastructure",
+   "Per-Tenant Customization",
+   "Tenant-Aware APIs",
+   "Usage Metering",
+   "Tenant Management"
+  ],
+  "benefits": [
+   "Lower per-customer costs",
+   "Easier maintenance",
+   "Faster feature rollouts",
+   "Efficient scaling",
+   "Simplified operations",
+   "Better resource utilization"
+  ],
+  "technologies": [
+   {
+    "icon": "postgresql",
+    "name": "PostgreSQL"
+   },
+   {
+    "icon": "redis",
+    "name": "Redis"
+   },
+   {
+    "icon": "kubernetes",
+    "name": "Kubernetes"
+   },
+   {
+    "icon": "aws",
+    "name": "AWS"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "multi-tenant-saas-architecture",
+  "name": "Multi-Tenant SaaS Architecture",
+  "parentSlug": "enterprise-software",
+  "shortDescription": "Create SaaS applications with tenant isolation and billing.",
+  "fullDescription": "We design and build SaaS platforms with tenant isolation, usage-based billing, and enterprise features.",
+  "features": [
+   "Tenant Isolation",
+   "Usage-Based Billing",
+   "Self-Service Admin",
+   "Role-Based Access",
+   "SSO Integration",
+   "White-Labeling",
+   "API Access",
+   "Usage Analytics"
+  ],
+  "benefits": [
+   "Scalable architecture",
+   "Predictable costs",
+   "Enterprise-ready",
+   "Self-service growth",
+   "Usage monetization",
+   "Secure isolation"
+  ],
+  "technologies": [
+   {
+    "icon": "⚡",
+    "name": "Next.js"
+   },
+   {
+    "icon": "🐘",
+    "name": "PostgreSQL"
+   },
+   {
+    "icon": "💳",
+    "name": "Stripe"
+   },
+   {
+    "icon": "🔐",
+    "name": "Auth0"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 5
+ },
+ {
+  "slug": "mvp-development",
+  "name": "MVP Development",
+  "parentSlug": "saas-development",
+  "shortDescription": "Launch your product idea quickly with lean MVP development.",
+  "fullDescription": "Validate your product idea with a Minimum Viable Product built for speed and learning. We help startups go from concept to launch quickly, focusing on core features that test your hypothesis while building a foundation for scale.",
+  "features": [
+   "Rapid Prototyping",
+   "Core Feature Focus",
+   "User Feedback Integration",
+   "Scalable Foundation",
+   "Analytics Built-In",
+   "Iterative Development"
+  ],
+  "benefits": [
+   "Faster time-to-market",
+   "Lower initial investment",
+   "Validated learning",
+   "Investor-ready product",
+   "Pivot flexibility",
+   "User-driven development"
+  ],
+  "technologies": [
+   {
+    "icon": "nextjs",
+    "name": "Next.js"
+   },
+   {
+    "icon": "vercel",
+    "name": "Vercel"
+   },
+   {
+    "icon": "supabase",
+    "name": "Supabase"
+   },
+   {
+    "icon": "stripe",
+    "name": "Stripe"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "nft-marketplace",
+  "name": "NFT Marketplace",
+  "parentSlug": "web3-blockchain",
+  "shortDescription": "Build custom NFT marketplaces for digital collectibles and assets.",
+  "fullDescription": "Launch your own NFT marketplace with custom features, royalty systems, and unique user experiences. We build marketplaces for art, gaming, real estate, and other digital asset categories.",
+  "features": [
+   "Minting & Listing",
+   "Auction & Fixed Price",
+   "Royalty System",
+   "Collection Management",
+   "Wallet Integration",
+   "IPFS Storage"
+  ],
+  "benefits": [
+   "New revenue streams",
+   "Creator royalties",
+   "Global market access",
+   "Provable ownership",
+   "Secondary sales income",
+   "Community building"
+  ],
+  "technologies": [
+   {
+    "icon": "solidity",
+    "name": "Solidity"
+   },
+   {
+    "icon": "ipfs",
+    "name": "IPFS"
+   },
+   {
+    "icon": "react",
+    "name": "React"
+   },
+   {
+    "icon": "ethers",
+    "name": "Ethers.js"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "nft-marketplace-development",
+  "name": "NFT Marketplace Development",
+  "parentSlug": "blockchain-development",
+  "shortDescription": "Create white-label NFT marketplaces with minting, trading, and auction features.",
+  "fullDescription": "NFT marketplaces enable creators and collectors to trade digital assets. We build custom NFT platforms tailored to your niche—art, music, gaming items, real estate, or any tokenized asset. Our marketplaces include minting, auctions, royalties, and wallet integration, built on Ethereum, Polygon, or your preferred chain.",
+  "features": [
+   "Custom Marketplace UI/UX",
+   "Lazy Minting",
+   "Auction & Fixed Price Sales",
+   "Creator Royalties",
+   "Multi-Chain Support",
+   "Wallet Integration",
+   "Collection Management",
+   "Admin Dashboard"
+  ],
+  "benefits": [
+   "Own your marketplace and fees",
+   "Custom branding and features",
+   "Built-in creator royalties",
+   "Lower fees than major platforms",
+   "Community-specific features",
+   "Full control over curation"
+  ],
+  "technologies": [
+   {
+    "icon": "💎",
+    "name": "Ethereum/Polygon"
+   },
+   {
+    "icon": "📁",
+    "name": "IPFS/Arweave"
+   },
+   {
+    "icon": "📊",
+    "name": "The Graph"
+   },
+   {
+    "icon": "👛",
+    "name": "WalletConnect"
+   },
+   {
+    "icon": "⚡",
+    "name": "Next.js"
+   },
+   {
+    "icon": "🧪",
+    "name": "Alchemy"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "no-code-low-code",
+  "name": "No-Code & Low-Code",
+  "parentSlug": null,
+  "shortDescription": "Build powerful applications faster with no-code and low-code platforms.",
+  "fullDescription": "Accelerate your digital transformation with no-code and low-code solutions. We leverage platforms like Webflow, Bubble, Airtable, and Zapier to build powerful applications in a fraction of the time. Perfect for MVPs, internal tools, and rapid prototyping without sacrificing quality.",
+  "features": [
+   "Webflow Websites",
+   "Bubble Applications",
+   "Airtable Databases",
+   "Zapier Automations",
+   "Internal Tool Development",
+   "MVP Prototyping"
+  ],
+  "benefits": [
+   "10x faster development",
+   "Lower development costs",
+   "Easy to maintain",
+   "Quick iterations",
+   "Non-technical team friendly",
+   "Rapid time-to-market"
+  ],
+  "technologies": [
+   {
+    "icon": "webflow",
+    "name": "Webflow"
+   },
+   {
+    "icon": "bubble",
+    "name": "Bubble"
+   },
+   {
+    "icon": "airtable",
+    "name": "Airtable"
+   },
+   {
+    "icon": "zapier",
+    "name": "Zapier"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 5
+ },
+ {
+  "slug": "payment-gateway-integration",
+  "name": "Payment Gateway Integration",
+  "parentSlug": "ecommerce-solutions",
+  "shortDescription": "Accept payments globally with secure, PCI-compliant payment integrations.",
+  "fullDescription": "Payment integration is critical for e-commerce and SaaS businesses. We integrate payment gateways including Stripe, PayPal, Braintree, and regional providers with proper security, PCI compliance, and fraud prevention. From simple checkout to complex subscription billing, marketplace payouts, and multi-currency support, we handle the payment complexity.",
+  "features": [
+   "Stripe Integration",
+   "PayPal & Braintree",
+   "Subscription Billing",
+   "Marketplace Payouts",
+   "Multi-Currency Support",
+   "Fraud Prevention",
+   "PCI Compliance",
+   "Invoice & Receipt Generation"
+  ],
+  "benefits": [
+   "Accept payments globally",
+   "Reduce cart abandonment",
+   "Automated recurring billing",
+   "Fraud protection",
+   "Multiple payment methods",
+   "Compliance handled"
+  ],
+  "technologies": [
+   {
+    "icon": "💜",
+    "name": "Stripe"
+   },
+   {
+    "icon": "🅿️",
+    "name": "PayPal"
+   },
+   {
+    "icon": "🌳",
+    "name": "Braintree"
+   },
+   {
+    "icon": "⬜",
+    "name": "Square"
+   },
+   {
+    "icon": "🔵",
+    "name": "Adyen"
+   },
+   {
+    "icon": "🏦",
+    "name": "Plaid"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "progressive-web-apps",
+  "name": "Progressive Web Apps",
+  "parentSlug": "web-development",
+  "shortDescription": "Create app-like experiences on the web with PWA technology—installable, fast, and working offline.",
+  "fullDescription": "Progressive Web Apps combine the best of web and native apps. We build PWAs that load instantly, work offline, and can be installed on any device. Using service workers, app manifests, and modern APIs, we create experiences that rival native apps while maintaining the reach of the web.",
+  "features": [
+   "Service Worker Implementation",
+   "Offline-First Architecture",
+   "App Manifest & Install Prompts",
+   "Push Notifications",
+   "Background Sync",
+   "Responsive Design for All Devices",
+   "Performance Optimization",
+   "App Store Publishing (PWA Builder)"
+  ],
+  "benefits": [
+   "Install on any device without app stores",
+   "Works offline and on flaky networks",
+   "Faster than traditional web apps",
+   "Single codebase for all platforms",
+   "Automatic updates without user intervention",
+   "Lower development costs than native apps"
+  ],
+  "technologies": [
+   {
+    "icon": "📦",
+    "name": "Workbox"
+   },
+   {
+    "icon": "⚙️",
+    "name": "Service Workers"
+   },
+   {
+    "icon": "💾",
+    "name": "IndexedDB"
+   },
+   {
+    "icon": "🔔",
+    "name": "Web Push"
+   },
+   {
+    "icon": "🛠️",
+    "name": "PWA Builder"
+   },
+   {
+    "icon": "🏠",
+    "name": "Lighthouse"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "prototyping-wireframing",
+  "name": "Prototyping & Wireframing",
+  "parentSlug": "ui-ux-design",
+  "shortDescription": "Validate ideas fast with interactive prototypes and wireframes before writing any code.",
+  "fullDescription": "Test and validate your product ideas before investing in development. We create wireframes and interactive prototypes that simulate the real user experience, enabling stakeholder alignment and user testing.",
+  "features": [
+   "Low-Fidelity Wireframes",
+   "High-Fidelity Prototypes",
+   "Interactive Click-Through Demos",
+   "User Flow Diagrams",
+   "Information Architecture",
+   "Stakeholder Presentations"
+  ],
+  "benefits": [
+   "Validate before building",
+   "Align stakeholders early",
+   "Reduce development costs",
+   "Test with real users"
+  ],
+  "technologies": [
+   {
+    "icon": "figma",
+    "name": "Figma"
+   },
+   {
+    "icon": "invision",
+    "name": "InVision"
+   },
+   {
+    "icon": "principle",
+    "name": "Principle"
+   },
+   {
+    "icon": "whimsical",
+    "name": "Whimsical"
+   },
+   {
+    "icon": "miro",
+    "name": "Miro"
+   },
+   {
+    "icon": "marvel",
+    "name": "Marvel"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "react-native-development",
+  "name": "React Native Development",
+  "parentSlug": "mobile-development",
+  "shortDescription": "Build native mobile apps for iOS and Android using a single React Native codebase.",
+  "fullDescription": "Leverage your web development skills to build truly native mobile applications. React Native combines the best of native development with React, enabling rapid development of high-quality apps that feel truly native on both iOS and Android platforms.",
+  "features": [
+   "Single Codebase for iOS & Android",
+   "Native UI Components",
+   "Hot Reloading Development",
+   "Native Module Integration",
+   "Push Notifications",
+   "Offline-First Architecture",
+   "App Store Deployment",
+   "Performance Optimization"
+  ],
+  "benefits": [
+   "60% faster development than native",
+   "Share code between mobile and web",
+   "Access to native device features",
+   "Large ecosystem of libraries",
+   "Easy updates via CodePush",
+   "Cost-effective maintenance"
+  ],
+  "technologies": [
+   {
+    "icon": "reactnative",
+    "name": "React Native"
+   },
+   {
+    "icon": "typescript",
+    "name": "TypeScript"
+   },
+   {
+    "icon": "expo",
+    "name": "Expo"
+   },
+   {
+    "icon": "redux",
+    "name": "Redux Toolkit"
+   },
+   {
+    "icon": "react",
+    "name": "React Navigation"
+   },
+   {
+    "icon": "firebase",
+    "name": "Firebase"
+   },
+   {
+    "icon": "microsoft",
+    "name": "CodePush"
+   },
+   {
+    "icon": "fastlane",
+    "name": "Fastlane"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "real-time-applications",
+  "name": "Real-Time Applications",
+  "parentSlug": "web-development",
+  "shortDescription": "Create live dashboards, collaborative tools, and instant messaging with real-time tech.",
+  "fullDescription": "Real-time applications deliver instant updates without page refresh. We build collaborative tools, live dashboards, chat applications, multiplayer games, and live streaming features using WebSockets, Server-Sent Events, and real-time databases. From architecture to scaling, we create responsive experiences that keep users engaged.",
+  "features": [
+   "WebSocket Implementation",
+   "Server-Sent Events",
+   "Real-Time Databases",
+   "Collaborative Editing",
+   "Presence & Typing Indicators",
+   "Live Notifications",
+   "Real-Time Analytics Dashboards",
+   "Horizontal Scaling"
+  ],
+  "benefits": [
+   "Instant user feedback",
+   "Enhanced collaboration",
+   "Reduced server polling",
+   "Engaging user experience",
+   "Live data visualization",
+   "Competitive differentiation"
+  ],
+  "technologies": [
+   {
+    "icon": "🔌",
+    "name": "Socket.io"
+   },
+   {
+    "icon": "📤",
+    "name": "Pusher"
+   },
+   {
+    "icon": "🔥",
+    "name": "Firebase Realtime"
+   },
+   {
+    "icon": "📬",
+    "name": "Redis Pub/Sub"
+   },
+   {
+    "icon": "🌐",
+    "name": "Ably"
+   },
+   {
+    "icon": "🧱",
+    "name": "Liveblocks"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "rest-api-development",
+  "name": "REST API Development",
+  "parentSlug": "api-development",
+  "shortDescription": "Design and build clean, scalable RESTful APIs following industry best practices.",
+  "fullDescription": "Build robust RESTful APIs that power web and mobile applications. We follow REST conventions, implement proper HTTP methods, status codes, pagination, and versioning for developer-friendly APIs.",
+  "features": [
+   "RESTful API Design",
+   "OpenAPI/Swagger Documentation",
+   "Authentication (JWT, OAuth2)",
+   "Rate Limiting & Throttling",
+   "Versioning Strategies",
+   "Automated Testing"
+  ],
+  "benefits": [
+   "Industry-standard API design",
+   "Easy integration for consumers",
+   "Comprehensive documentation",
+   "Scalable architecture"
+  ],
+  "technologies": [
+   {
+    "icon": "nodejs",
+    "name": "Node.js"
+   },
+   {
+    "icon": "express",
+    "name": "Express"
+   },
+   {
+    "icon": "swagger",
+    "name": "Swagger"
+   },
+   {
+    "icon": "postman",
+    "name": "Postman"
+   },
+   {
+    "icon": "postgresql",
+    "name": "PostgreSQL"
+   },
+   {
+    "icon": "redis",
+    "name": "Redis"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "saas-development",
+  "name": "SaaS Development",
+  "parentSlug": null,
+  "shortDescription": "Build scalable, multi-tenant SaaS platforms from concept to launch.",
+  "fullDescription": "Turn your software idea into a profitable SaaS business. We design and develop cloud-native, multi-tenant SaaS platforms with subscription billing, user management, analytics dashboards, and API access. Our SaaS solutions are built for scale from day one, with the architecture to support millions of users.",
+  "features": [
+   "Multi-Tenant Architecture",
+   "Subscription Billing & Payments",
+   "Role-Based Access Control",
+   "API-First Development",
+   "Admin Dashboard & Analytics",
+   "White-Label & Customization"
+  ],
+  "benefits": [
+   "Recurring revenue business model",
+   "Scale to millions of users",
+   "Reduce per-customer costs",
+   "Faster time-to-market",
+   "Built-in analytics and insights"
+  ],
+  "technologies": [
+   {
+    "icon": "nextjs",
+    "name": "Next.js"
+   },
+   {
+    "icon": "nodejs",
+    "name": "Node.js"
+   },
+   {
+    "icon": "postgresql",
+    "name": "PostgreSQL"
+   },
+   {
+    "icon": "stripe",
+    "name": "Stripe"
+   },
+   {
+    "icon": "redis",
+    "name": "Redis"
+   },
+   {
+    "icon": "aws",
+    "name": "AWS"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "saas-migration",
+  "name": "SaaS Migration",
+  "parentSlug": "saas-development",
+  "shortDescription": "Transform your software into a scalable SaaS platform.",
+  "fullDescription": "Convert your existing software into a modern, multi-tenant SaaS platform. We handle the technical transformation including multi-tenancy, subscription billing, user management, and cloud infrastructure migration.",
+  "features": [
+   "Multi-Tenant Conversion",
+   "Subscription Billing Setup",
+   "User Management System",
+   "Cloud Migration",
+   "API Layer Development",
+   "Data Migration"
+  ],
+  "benefits": [
+   "Recurring revenue model",
+   "Scalable infrastructure",
+   "Lower per-customer costs",
+   "Automatic updates for all",
+   "Usage analytics",
+   "Global accessibility"
+  ],
+  "technologies": [
+   {
+    "icon": "aws",
+    "name": "AWS"
+   },
+   {
+    "icon": "stripe",
+    "name": "Stripe"
+   },
+   {
+    "icon": "auth0",
+    "name": "Auth0"
+   },
+   {
+    "icon": "postgresql",
+    "name": "PostgreSQL"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "shopify-development",
+  "name": "Shopify Development",
+  "parentSlug": "e-commerce",
+  "shortDescription": "Create beautiful, high-converting Shopify stores with custom themes and app integrations.",
+  "fullDescription": "Shopify makes e-commerce accessible, and we make it exceptional. We build custom Shopify stores that convert—from theme customization and app development to Shopify Plus implementations. Whether you're launching your first store or scaling to enterprise, we deliver Shopify solutions that drive sales.",
+  "features": [
+   "Custom Theme Development",
+   "Shopify App Development",
+   "Shopify Plus Implementation",
+   "Migration to Shopify",
+   "Performance Optimization",
+   "Checkout Customization",
+   "Multi-Currency & Multi-Language",
+   "Integration with ERP/CRM"
+  ],
+  "benefits": [
+   "Fast time to market",
+   "Reliable, hosted infrastructure",
+   "Built-in payment processing",
+   "Extensive app marketplace",
+   "Automatic security and compliance",
+   "Scales with your business"
+  ],
+  "technologies": [
+   {
+    "icon": "🛍️",
+    "name": "Shopify"
+   },
+   {
+    "icon": "💧",
+    "name": "Liquid"
+   },
+   {
+    "icon": "⚛️",
+    "name": "Hydrogen"
+   },
+   {
+    "icon": "🖥️",
+    "name": "Shopify CLI"
+   },
+   {
+    "icon": "📧",
+    "name": "Klaviyo"
+   },
+   {
+    "icon": "🔄",
+    "name": "ReCharge"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "smart-contract-development",
+  "name": "Smart Contract Development",
+  "parentSlug": "blockchain-development",
+  "shortDescription": "Develop and audit smart contracts for DeFi, NFTs, DAOs, and custom blockchain applications.",
+  "fullDescription": "Smart contracts are the backbone of decentralized applications. We develop secure, gas-optimized smart contracts for Ethereum, Polygon, Solana, and other chains. From DeFi protocols and NFT marketplaces to DAOs and custom blockchain logic, our contracts are thoroughly tested and audited to protect your assets and users.",
+  "features": [
+   "ERC-20 & ERC-721 Tokens",
+   "DeFi Protocol Development",
+   "DAO & Governance Contracts",
+   "Cross-Chain Bridges",
+   "Gas Optimization",
+   "Security Auditing",
+   "Upgrade Patterns (Proxy)",
+   "Multi-Signature Wallets"
+  ],
+  "benefits": [
+   "Trustless, automated execution",
+   "Transparent, verifiable logic",
+   "Reduced intermediary costs",
+   "Immutable once deployed",
+   "Composability with DeFi ecosystem",
+   "Global accessibility 24/7"
+  ],
+  "technologies": [
+   {
+    "icon": "💎",
+    "name": "Solidity"
+   },
+   {
+    "icon": "🦀",
+    "name": "Rust (Solana)"
+   },
+   {
+    "icon": "⚒️",
+    "name": "Hardhat"
+   },
+   {
+    "icon": "🔨",
+    "name": "Foundry"
+   },
+   {
+    "icon": "🛡️",
+    "name": "OpenZeppelin"
+   },
+   {
+    "icon": "🔗",
+    "name": "Chainlink"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "smart-contracts",
+  "name": "Smart Contracts",
+  "parentSlug": "web3-blockchain",
+  "shortDescription": "Build secure, audited smart contracts for blockchain applications.",
+  "fullDescription": "We develop, test, and audit smart contracts for DeFi, NFTs, DAOs, and custom blockchain applications. Security is paramount - every contract undergoes rigorous testing and formal verification.",
+  "features": [
+   "Solidity Development",
+   "Security Auditing",
+   "Gas Optimization",
+   "Upgradeable Contracts",
+   "Multi-Sig Wallets",
+   "Automated Testing"
+  ],
+  "benefits": [
+   "Trustless execution",
+   "Immutable logic",
+   "Reduced intermediaries",
+   "Transparent operations",
+   "Programmable money",
+   "Global accessibility"
+  ],
+  "technologies": [
+   {
+    "icon": "solidity",
+    "name": "Solidity"
+   },
+   {
+    "icon": "hardhat",
+    "name": "Hardhat"
+   },
+   {
+    "icon": "openzeppelin",
+    "name": "OpenZeppelin"
+   },
+   {
+    "icon": "foundry",
+    "name": "Foundry"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "technical-documentation",
+  "name": "Technical Documentation",
+  "parentSlug": "api-development",
+  "shortDescription": "Write developer documentation, API references, and technical guides.",
+  "fullDescription": "We create API references, SDK guides, tutorials, and architecture docs for developer adoption.",
+  "features": [
+   "API Documentation",
+   "SDK Guides",
+   "Interactive Examples",
+   "Architecture Docs",
+   "Changelog Management",
+   "Search & Navigation",
+   "Version Management",
+   "Code Samples"
+  ],
+  "benefits": [
+   "Faster developer adoption",
+   "Reduced support burden",
+   "Better developer experience",
+   "Self-service onboarding",
+   "Professional image",
+   "Community enablement"
+  ],
+  "technologies": [
+   {
+    "icon": "🦖",
+    "name": "Docusaurus"
+   },
+   {
+    "icon": "📖",
+    "name": "GitBook"
+   },
+   {
+    "icon": "📋",
+    "name": "OpenAPI"
+   },
+   {
+    "icon": "🌿",
+    "name": "Mintlify"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 5
+ },
+ {
+  "slug": "telemedicine-platforms",
+  "name": "Telemedicine Platforms",
+  "parentSlug": "enterprise-software",
+  "shortDescription": "Create secure video consultation platforms for healthcare providers.",
+  "fullDescription": "We build HIPAA-compliant telehealth platforms with secure video, scheduling, EHR integration, and e-prescriptions.",
+  "features": [
+   "HIPAA-Compliant Video",
+   "Appointment Scheduling",
+   "EHR/EMR Integration",
+   "E-Prescriptions",
+   "Patient Portal",
+   "Secure Messaging",
+   "Virtual Waiting Room",
+   "Payment Processing"
+  ],
+  "benefits": [
+   "Expanded patient reach",
+   "Reduced no-shows",
+   "Improved access to care",
+   "Provider efficiency",
+   "Patient convenience",
+   "Revenue diversification"
+  ],
+  "technologies": [
+   {
+    "icon": "📹",
+    "name": "Twilio Video"
+   },
+   {
+    "icon": "☁️",
+    "name": "AWS HIPAA"
+   },
+   {
+    "icon": "🏥",
+    "name": "HL7 FHIR"
+   },
+   {
+    "icon": "⚡",
+    "name": "Next.js"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 5
+ },
+ {
+  "slug": "third-party-api-integration",
+  "name": "Third-Party API Integration",
+  "parentSlug": "api-development",
+  "shortDescription": "Seamlessly connect your systems with payment processors, CRMs, ERPs, and any third-party API.",
+  "fullDescription": "Connect your applications with the tools and services you rely on. We integrate payment gateways, CRM systems, marketing platforms, ERPs, and custom APIs to create unified, automated workflows.",
+  "features": [
+   "Payment Gateway Integration",
+   "CRM & ERP Connections",
+   "Marketing Platform APIs",
+   "Webhook Implementation",
+   "Data Synchronization",
+   "Error Handling & Retry Logic"
+  ],
+  "benefits": [
+   "Unified data across systems",
+   "Automated workflows",
+   "Reduced manual data entry",
+   "Real-time synchronization"
+  ],
+  "technologies": [
+   {
+    "icon": "stripe",
+    "name": "Stripe"
+   },
+   {
+    "icon": "hubspot",
+    "name": "HubSpot"
+   },
+   {
+    "icon": "salesforce",
+    "name": "Salesforce"
+   },
+   {
+    "icon": "zapier",
+    "name": "Zapier"
+   },
+   {
+    "icon": "webhooks",
+    "name": "Webhooks"
+   },
+   {
+    "icon": "nodejs",
+    "name": "Node.js"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "tokenization",
+  "name": "Tokenization",
+  "parentSlug": "web3-blockchain",
+  "shortDescription": "Tokenize real-world assets on the blockchain.",
+  "fullDescription": "Convert real-world assets into blockchain tokens for fractional ownership, improved liquidity, and global trading. We help with real estate, art, equity, and other asset tokenization projects.",
+  "features": [
+   "Token Design",
+   "Smart Contract Development",
+   "Regulatory Compliance",
+   "Issuance Platform",
+   "Secondary Trading",
+   "Investor Portal"
+  ],
+  "benefits": [
+   "Fractional ownership",
+   "Improved liquidity",
+   "Global investor access",
+   "24/7 trading",
+   "Reduced intermediaries",
+   "Transparent cap table"
+  ],
+  "technologies": [
+   {
+    "icon": "solidity",
+    "name": "Solidity"
+   },
+   {
+    "icon": "ethereum",
+    "name": "ERC-20"
+   },
+   {
+    "icon": "polygon",
+    "name": "Polygon"
+   },
+   {
+    "icon": "openzeppelin",
+    "name": "OpenZeppelin"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "ui-design",
+  "name": "UI Design",
+  "parentSlug": "ui-ux-design",
+  "shortDescription": "Create beautiful, pixel-perfect visual interfaces that strengthen your brand and delight users.",
+  "fullDescription": "Craft visually stunning interfaces that communicate your brand and guide users effortlessly. Our UI designers create cohesive design systems, responsive layouts, and interactive elements that look beautiful on every device.",
+  "features": [
+   "Visual Design & Branding",
+   "Design System Creation",
+   "Responsive Layouts",
+   "Icon & Illustration Design",
+   "Dark Mode Design",
+   "Micro-Interactions"
+  ],
+  "benefits": [
+   "Consistent brand experience",
+   "Higher user engagement",
+   "Faster development with design systems",
+   "Professional visual identity"
+  ],
+  "technologies": [
+   {
+    "icon": "figma",
+    "name": "Figma"
+   },
+   {
+    "icon": "adobexd",
+    "name": "Adobe XD"
+   },
+   {
+    "icon": "sketch",
+    "name": "Sketch"
+   },
+   {
+    "icon": "zeplin",
+    "name": "Zeplin"
+   },
+   {
+    "icon": "lottie",
+    "name": "Lottie"
+   },
+   {
+    "icon": "storybook",
+    "name": "Storybook"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "ui-ux-design",
+  "name": "UI/UX Design",
+  "parentSlug": null,
+  "shortDescription": "Create beautiful, intuitive user experiences.",
+  "fullDescription": "Design is not just how it looks, but how it works. Our UI/UX design services combine aesthetic beauty with functional excellence. We conduct user research, create wireframes and prototypes, and deliver pixel-perfect designs that delight users and achieve business goals. Great design drives engagement, conversions, and customer loyalty.",
+  "features": [
+   "User Research & Persona Development",
+   "Information Architecture",
+   "Wireframing & Prototyping",
+   "Visual Design & Branding",
+   "Interaction Design",
+   "Usability Testing",
+   "Design System Creation",
+   "Accessibility (WCAG) Compliance"
+  ],
+  "benefits": [
+   "Increase user engagement and retention",
+   "Improve conversion rates",
+   "Reduce development costs with clear specifications",
+   "Build brand consistency across touchpoints",
+   "Reduce support costs with intuitive design",
+   "Achieve accessibility compliance"
+  ],
+  "technologies": [
+   {
+    "icon": "figma",
+    "name": "Figma"
+   },
+   {
+    "icon": "sketch",
+    "name": "Sketch"
+   },
+   {
+    "icon": "adobexd",
+    "name": "Adobe XD"
+   },
+   {
+    "icon": "invision",
+    "name": "InVision"
+   },
+   {
+    "icon": "principle",
+    "name": "Principle"
+   },
+   {
+    "icon": "zeplin",
+    "name": "Zeplin"
+   },
+   {
+    "icon": "maze",
+    "name": "Maze"
+   },
+   {
+    "icon": "hotjar",
+    "name": "Hotjar"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "unity-game-development",
+  "name": "Unity Game Development",
+  "parentSlug": "mobile-development",
+  "shortDescription": "Build cross-platform games and interactive experiences with Unity, from mobile to console.",
+  "fullDescription": "Unity powers over 50% of the world's games. We develop stunning 2D and 3D games, interactive experiences, and simulations using Unity. From mobile games to VR experiences, our Unity developers bring your creative vision to life with polished gameplay, beautiful graphics, and cross-platform deployment to iOS, Android, PC, consoles, and web.",
+  "features": [
+   "2D & 3D Game Development",
+   "Mobile Game Development",
+   "VR/AR Game Integration",
+   "Multiplayer Networking",
+   "Game Physics & AI",
+   "Asset Pipeline Optimization",
+   "Cross-Platform Deployment",
+   "Game Analytics Integration"
+  ],
+  "benefits": [
+   "Deploy to 20+ platforms from single codebase",
+   "Massive asset store ecosystem",
+   "Industry-standard game engine",
+   "Strong community and documentation",
+   "Rapid prototyping and iteration",
+   "Cost-effective development"
+  ],
+  "technologies": [
+   {
+    "icon": "🎮",
+    "name": "Unity"
+   },
+   {
+    "icon": "💻",
+    "name": "C#"
+   },
+   {
+    "icon": "🌐",
+    "name": "Photon"
+   },
+   {
+    "icon": "☁️",
+    "name": "PlayFab"
+   },
+   {
+    "icon": "🔥",
+    "name": "Firebase"
+   },
+   {
+    "icon": "📦",
+    "name": "Addressables"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "unreal-engine-development",
+  "name": "Unreal Engine Development",
+  "parentSlug": "mobile-development",
+  "shortDescription": "Create photorealistic games and real-time 3D experiences with Unreal Engine.",
+  "fullDescription": "Unreal Engine 5 pushes the boundaries of real-time 3D with Nanite and Lumen technology. We develop AAA-quality games, architectural visualizations, virtual production for film, and enterprise simulations. Our Unreal developers master Blueprint visual scripting and C++ to create stunning experiences with movie-quality graphics.",
+  "features": [
+   "AAA Game Development",
+   "Architectural Visualization",
+   "Virtual Production",
+   "Real-Time Ray Tracing",
+   "Nanite & Lumen Integration",
+   "MetaHuman Characters",
+   "Multiplayer with Lyra",
+   "Enterprise Simulations"
+  ],
+  "benefits": [
+   "Photorealistic graphics out of the box",
+   "Cutting-edge rendering technology",
+   "Blueprint visual scripting for rapid dev",
+   "Industry-standard for AAA games",
+   "Growing adoption in film/TV production",
+   "Free until $1M revenue"
+  ],
+  "technologies": [
+   {
+    "icon": "🔷",
+    "name": "Unreal Engine 5"
+   },
+   {
+    "icon": "⚡",
+    "name": "C++"
+   },
+   {
+    "icon": "📘",
+    "name": "Blueprints"
+   },
+   {
+    "icon": "🎨",
+    "name": "Quixel"
+   },
+   {
+    "icon": "✨",
+    "name": "Niagara"
+   },
+   {
+    "icon": "👤",
+    "name": "MetaHumans"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "ux-research",
+  "name": "UX Research",
+  "parentSlug": "ui-ux-design",
+  "shortDescription": "Understand your users deeply through research, testing, and data-driven insights.",
+  "fullDescription": "Make design decisions backed by real user data. We conduct user interviews, surveys, usability testing, and analytics analysis to uncover user needs, pain points, and behaviors that inform better product design.",
+  "features": [
+   "User Interviews & Surveys",
+   "Usability Testing",
+   "Persona Development",
+   "Journey Mapping",
+   "A/B Testing & Analytics",
+   "Competitive Analysis"
+  ],
+  "benefits": [
+   "Data-driven design decisions",
+   "Reduced development waste",
+   "Higher user satisfaction",
+   "Validated product concepts"
+  ],
+  "technologies": [
+   {
+    "icon": "maze",
+    "name": "Maze"
+   },
+   {
+    "icon": "hotjar",
+    "name": "Hotjar"
+   },
+   {
+    "icon": "usertesting",
+    "name": "UserTesting"
+   },
+   {
+    "icon": "googleanalytics",
+    "name": "Google Analytics"
+   },
+   {
+    "icon": "figma",
+    "name": "Figma"
+   },
+   {
+    "icon": "miro",
+    "name": "Miro"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "virtual-tours",
+  "name": "Virtual Tours",
+  "parentSlug": "vr-development",
+  "shortDescription": "Create immersive virtual tours for real estate and hospitality.",
+  "fullDescription": "Transport viewers anywhere. We create 360-degree virtual tours for real estate, hotels, venues, and tourist attractions with interactive elements.",
+  "features": [
+   "360 Photography",
+   "Virtual Walkthrough",
+   "Interactive Elements",
+   "VR Compatible",
+   "Embedding",
+   "Analytics"
+  ],
+  "benefits": [
+   "Remote viewing",
+   "Engagement",
+   "Lead generation",
+   "Time savings",
+   "Competitive edge",
+   "24/7 access"
+  ],
+  "technologies": [
+   {
+    "icon": "matterport",
+    "name": "Matterport"
+   },
+   {
+    "icon": "camera",
+    "name": "360 Cameras"
+   },
+   {
+    "icon": "vr",
+    "name": "VR"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "vr-development",
+  "name": "VR Development",
+  "parentSlug": "mobile-development",
+  "shortDescription": "Build VR applications for Meta Quest, PSVR, and enterprise headsets.",
+  "fullDescription": "Virtual Reality creates fully immersive experiences that transport users to new worlds. We develop VR applications for Meta Quest, PCVR, PSVR, and enterprise headsets. From VR games and entertainment to corporate training, virtual showrooms, and therapeutic applications, we create experiences that leverage the unique capabilities of VR.",
+  "features": [
+   "Meta Quest Development",
+   "PCVR (SteamVR/Oculus)",
+   "Enterprise VR Training",
+   "VR Collaboration Spaces",
+   "Hand & Eye Tracking",
+   "VR Physics & Interaction",
+   "Social VR Features",
+   "VR Analytics & Heatmaps"
+  ],
+  "benefits": [
+   "Fully immersive experiences",
+   "Safe training environment for dangerous tasks",
+   "Memorable product demonstrations",
+   "Remote collaboration in shared spaces",
+   "Therapy and wellness applications",
+   "Growing consumer VR market"
+  ],
+  "technologies": [
+   {
+    "icon": "🥽",
+    "name": "Meta Quest SDK"
+   },
+   {
+    "icon": "💨",
+    "name": "SteamVR"
+   },
+   {
+    "icon": "🎮",
+    "name": "Unity XR"
+   },
+   {
+    "icon": "🔷",
+    "name": "Unreal VR"
+   },
+   {
+    "icon": "🔓",
+    "name": "OpenXR"
+   },
+   {
+    "icon": "🌐",
+    "name": "WebXR"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "web-development",
+  "name": "Web Development",
+  "parentSlug": null,
+  "shortDescription": "Custom, high-performance websites built with cutting-edge technology.",
+  "fullDescription": "We build more than just websites; we build digital experiences. Our web development team leverages the latest frameworks like Next.js and React to create blazing-fast, SEO-optimized, and scalable web applications tailored to your business goals. Whether you need a corporate site, a complex SaaS platform, or a custom portal, we deliver code that performs.",
+  "features": [
+   "Custom Next.js & React Development",
+   "Progressive Web Apps (PWA)",
+   "API Integration & Development",
+   "Performance Optimization (Core Web Vitals)",
+   "Headless CMS Solutions",
+   "Responsive & Mobile-First Design"
+  ],
+  "benefits": [
+   "Lightning-fast load times",
+   "Superior SEO ranking potential",
+   "Scalable architecture for growth",
+   "Secure and maintainable code"
+  ],
+  "technologies": [
+   {
+    "icon": "nextjs",
+    "name": "Next.js"
+   },
+   {
+    "icon": "react",
+    "name": "React"
+   },
+   {
+    "icon": "typescript",
+    "name": "TypeScript"
+   },
+   {
+    "icon": "tailwind",
+    "name": "Tailwind CSS"
+   },
+   {
+    "icon": "nodejs",
+    "name": "Node.js"
+   },
+   {
+    "icon": "postgresql",
+    "name": "PostgreSQL"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "web3-blockchain",
+  "name": "Web3 & Blockchain",
+  "parentSlug": null,
+  "shortDescription": "Build decentralized applications and blockchain solutions for the future.",
+  "fullDescription": "Enter the decentralized web with our comprehensive Web3 and blockchain development services. We build smart contracts, dApps, DeFi protocols, NFT marketplaces, and tokenization platforms. Our blockchain expertise spans Ethereum, Polygon, Solana, and other leading networks.",
+  "features": [
+   "Smart Contract Development",
+   "dApp Development",
+   "DeFi Protocol Design",
+   "NFT Marketplace Development",
+   "Token Creation & ICO",
+   "Blockchain Integration"
+  ],
+  "benefits": [
+   "Decentralized & transparent",
+   "Immutable record keeping",
+   "Reduced intermediaries",
+   "Global accessibility",
+   "Programmable money",
+   "New revenue models"
+  ],
+  "technologies": [
+   {
+    "icon": "solidity",
+    "name": "Solidity"
+   },
+   {
+    "icon": "ethereum",
+    "name": "Ethereum"
+   },
+   {
+    "icon": "web3",
+    "name": "Web3.js"
+   },
+   {
+    "icon": "hardhat",
+    "name": "Hardhat"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 5
+ },
+ {
+  "slug": "webflow-development",
+  "name": "Webflow Development",
+  "parentSlug": "no-code-low-code",
+  "shortDescription": "Build beautiful, responsive websites with Webflow.",
+  "fullDescription": "Leverage Webflow visual development platform for stunning, responsive websites without traditional coding. Perfect for marketing sites, portfolios, and content-driven websites with easy client management.",
+  "features": [
+   "Visual Development",
+   "CMS Integration",
+   "Responsive Design",
+   "Animations & Interactions",
+   "Form Handling",
+   "Hosting Included"
+  ],
+  "benefits": [
+   "Faster development",
+   "Easy content updates",
+   "No plugins needed",
+   "Built-in hosting",
+   "SEO friendly",
+   "Professional results"
+  ],
+  "technologies": [
+   {
+    "icon": "webflow",
+    "name": "Webflow"
+   },
+   {
+    "icon": "zapier",
+    "name": "Zapier"
+   },
+   {
+    "icon": "memberstack",
+    "name": "Memberstack"
+   },
+   {
+    "icon": "finsweet",
+    "name": "Finsweet"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "woocommerce-development",
+  "name": "WooCommerce Development",
+  "parentSlug": "e-commerce",
+  "shortDescription": "Build powerful WordPress-based online stores with WooCommerce customization.",
+  "fullDescription": "Leverage WooCommerce for flexible, customizable e-commerce on WordPress. We build custom WooCommerce stores with unique themes, custom plugins, and optimized checkout experiences.",
+  "features": [
+   "Custom WooCommerce Themes",
+   "Plugin Development",
+   "Payment Gateway Integration",
+   "Inventory Management",
+   "Subscription Products",
+   "Performance Optimization"
+  ],
+  "benefits": [
+   "Full control over your store",
+   "No monthly platform fees",
+   "Unlimited customization",
+   "WordPress ecosystem access"
+  ],
+  "technologies": [
+   {
+    "icon": "wordpress",
+    "name": "WordPress"
+   },
+   {
+    "icon": "woocommerce",
+    "name": "WooCommerce"
+   },
+   {
+    "icon": "php",
+    "name": "PHP"
+   },
+   {
+    "icon": "mysql",
+    "name": "MySQL"
+   },
+   {
+    "icon": "stripe",
+    "name": "Stripe"
+   },
+   {
+    "icon": "api",
+    "name": "REST API"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "wordpress-development",
+  "name": "WordPress Development",
+  "parentSlug": "web-development",
+  "shortDescription": "Create powerful WordPress sites with custom themes, plugins, and optimized performance.",
+  "fullDescription": "WordPress powers over 40% of the web for good reason. We build custom WordPress solutions—from marketing sites to complex applications. Our expertise covers custom theme development, plugin creation, performance optimization, security hardening, and headless WordPress architectures.",
+  "features": [
+   "Custom Theme Development",
+   "Plugin Development",
+   "WooCommerce Integration",
+   "Performance Optimization",
+   "Security Hardening",
+   "Headless WordPress (REST/GraphQL)",
+   "Migration & Upgrades",
+   "Multisite Setup"
+  ],
+  "benefits": [
+   "Easy content management for non-technical users",
+   "Massive plugin ecosystem",
+   "SEO-friendly out of the box",
+   "Cost-effective for content-heavy sites",
+   "Large talent pool for maintenance",
+   "Proven, battle-tested platform"
+  ],
+  "technologies": [
+   {
+    "icon": "📝",
+    "name": "WordPress"
+   },
+   {
+    "icon": "🐘",
+    "name": "PHP"
+   },
+   {
+    "icon": "🔧",
+    "name": "ACF"
+   },
+   {
+    "icon": "🎨",
+    "name": "Elementor"
+   },
+   {
+    "icon": "🛒",
+    "name": "WooCommerce"
+   },
+   {
+    "icon": "⚡",
+    "name": "WP Engine"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "wordpress-optimization",
+  "name": "WordPress Optimization",
+  "parentSlug": "wordpress-development",
+  "shortDescription": "Make your WordPress site lightning fast with expert optimization.",
+  "fullDescription": "Transform a slow WordPress site into a speed demon. We optimize database, caching, images, hosting, and code to achieve sub-second load times and perfect Core Web Vitals scores.",
+  "features": [
+   "Database Optimization",
+   "Caching Setup",
+   "Image Optimization",
+   "Code Cleanup",
+   "CDN Configuration",
+   "Core Web Vitals"
+  ],
+  "benefits": [
+   "Faster load times",
+   "Better SEO rankings",
+   "Lower bounce rates",
+   "Higher conversions",
+   "Reduced hosting costs",
+   "Better UX"
+  ],
+  "technologies": [
+   {
+    "icon": "rocket",
+    "name": "WP Rocket"
+   },
+   {
+    "icon": "cloudflare",
+    "name": "Cloudflare"
+   },
+   {
+    "icon": "redis",
+    "name": "Redis"
+   },
+   {
+    "icon": "imgix",
+    "name": "Imgix"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "wordpress-plugin-development",
+  "name": "WordPress Plugin Development",
+  "parentSlug": "wordpress-development",
+  "shortDescription": "Build custom WordPress plugins for unique functionality.",
+  "fullDescription": "Extend WordPress with custom plugins built for your specific needs. We develop plugins following WordPress coding standards, ensuring compatibility, security, and maintainability.",
+  "features": [
+   "Custom Functionality",
+   "API Integrations",
+   "Admin Interfaces",
+   "Shortcodes & Blocks",
+   "WooCommerce Extensions",
+   "Security Focused"
+  ],
+  "benefits": [
+   "Exact functionality needed",
+   "No plugin conflicts",
+   "Optimized performance",
+   "Easy updates",
+   "Full control",
+   "White-label ready"
+  ],
+  "technologies": [
+   {
+    "icon": "wordpress",
+    "name": "WordPress"
+   },
+   {
+    "icon": "php",
+    "name": "PHP"
+   },
+   {
+    "icon": "react",
+    "name": "React"
+   },
+   {
+    "icon": "api",
+    "name": "REST API"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "zapier-automation",
+  "name": "Zapier Automation",
+  "parentSlug": "no-code-low-code",
+  "shortDescription": "Automate workflows and connect your apps with Zapier.",
+  "fullDescription": "Connect your business tools and automate repetitive workflows with Zapier. We design and implement automated workflows that save hours of manual work across your tech stack.",
+  "features": [
+   "Multi-Step Zaps",
+   "Conditional Logic",
+   "Data Transformation",
+   "Error Handling",
+   "Scheduled Triggers",
+   "Webhook Integration"
+  ],
+  "benefits": [
+   "Hours saved weekly",
+   "Reduced errors",
+   "Faster processes",
+   "Better data sync",
+   "No manual handoffs",
+   "Scalable operations"
+  ],
+  "technologies": [
+   {
+    "icon": "zapier",
+    "name": "Zapier"
+   },
+   {
+    "icon": "webhook",
+    "name": "Webhooks"
+   },
+   {
+    "icon": "api",
+    "name": "APIs"
+   },
+   {
+    "icon": "make",
+    "name": "Make"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ }
+]

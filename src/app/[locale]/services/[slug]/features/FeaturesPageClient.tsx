@@ -1,6 +1,7 @@
 'use client';
 
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { toHeritageHex } from '@/lib/heritage-accents';
 import LocalizedLink from '@/components/LocalizedLink';
 import { useRef } from 'react';
 import { CheckIcon, ArrowRightIcon, SparklesIcon } from '@heroicons/react/24/outline';
@@ -41,7 +42,7 @@ export default function FeaturesPageClient({
   const heroScale = useTransform(scrollYProgress, [0, 0.3], [1, 0.95]);
 
   // Get animation config or use defaults for features page
-  const config = animation || {
+  const rawConfig = animation || {
     heroVisual: 'layers-stack' as const,
     bgPattern: 'grid' as const,
     decorations: 'squares' as const,
@@ -49,6 +50,7 @@ export default function FeaturesPageClient({
     primaryColor: '#10B981',
     secondaryColor: '#3B82F6',
   };
+  const config = { ...rawConfig, primaryColor: toHeritageHex(rawConfig.primaryColor), secondaryColor: rawConfig.secondaryColor ? toHeritageHex(rawConfig.secondaryColor) : undefined };
 
   return (
     <div ref={containerRef} className="min-h-screen bg-white">
@@ -135,7 +137,7 @@ export default function FeaturesPageClient({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-5xl md:text-6xl lg:text-7xl font-light text-gray-900 mb-8 leading-[1.1] tracking-tight"
+              className="text-display font-light text-gray-900 mb-8 leading-none"
             >
               {serviceName}
               <br />

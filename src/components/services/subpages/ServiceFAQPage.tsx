@@ -15,20 +15,7 @@ interface ServiceFAQPageProps {
   accentColor: string;
 }
 
-const colorMap: Record<string, { bg: string; bgLight: string; text: string; gradient: string; border: string; ring: string }> = {
-  purple: { bg: 'bg-purple-600', bgLight: 'bg-purple-50', text: 'text-purple-600', gradient: 'from-purple-600 to-purple-800', border: 'border-purple-200', ring: 'ring-purple-500' },
-  teal: { bg: 'bg-teal-600', bgLight: 'bg-teal-50', text: 'text-teal-600', gradient: 'from-teal-600 to-teal-800', border: 'border-teal-200', ring: 'ring-teal-500' },
-  blue: { bg: 'bg-blue-600', bgLight: 'bg-blue-50', text: 'text-blue-600', gradient: 'from-blue-600 to-blue-800', border: 'border-blue-200', ring: 'ring-blue-500' },
-  emerald: { bg: 'bg-emerald-600', bgLight: 'bg-emerald-50', text: 'text-emerald-600', gradient: 'from-emerald-600 to-emerald-800', border: 'border-emerald-200', ring: 'ring-emerald-500' },
-  orange: { bg: 'bg-orange-600', bgLight: 'bg-orange-50', text: 'text-orange-600', gradient: 'from-orange-600 to-orange-800', border: 'border-orange-200', ring: 'ring-orange-500' },
-  rose: { bg: 'bg-rose-600', bgLight: 'bg-rose-50', text: 'text-rose-600', gradient: 'from-rose-600 to-rose-800', border: 'border-rose-200', ring: 'ring-rose-500' },
-  cyan: { bg: 'bg-cyan-600', bgLight: 'bg-cyan-50', text: 'text-cyan-600', gradient: 'from-cyan-600 to-cyan-800', border: 'border-cyan-200', ring: 'ring-cyan-500' },
-  amber: { bg: 'bg-amber-600', bgLight: 'bg-amber-50', text: 'text-amber-600', gradient: 'from-amber-600 to-amber-800', border: 'border-amber-200', ring: 'ring-amber-500' },
-  indigo: { bg: 'bg-indigo-600', bgLight: 'bg-indigo-50', text: 'text-indigo-600', gradient: 'from-indigo-600 to-indigo-800', border: 'border-indigo-200', ring: 'ring-indigo-500' },
-  violet: { bg: 'bg-violet-600', bgLight: 'bg-violet-50', text: 'text-violet-600', gradient: 'from-violet-600 to-violet-800', border: 'border-violet-200', ring: 'ring-violet-500' },
-  red: { bg: 'bg-red-600', bgLight: 'bg-red-50', text: 'text-red-600', gradient: 'from-red-600 to-red-800', border: 'border-red-200', ring: 'ring-red-500' },
-  pink: { bg: 'bg-pink-600', bgLight: 'bg-pink-50', text: 'text-pink-600', gradient: 'from-pink-600 to-pink-800', border: 'border-pink-200', ring: 'ring-pink-500' },
-};
+import { richColorMap as colorMap } from '@/lib/heritage-accents';
 
 function AccordionItem({
   item,
@@ -133,7 +120,7 @@ export default function ServiceFAQPage({
           <span className={`${colors.text} font-medium tracking-wider uppercase text-sm mb-4 block`}>
             {subtitle}
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+          <h1 className="text-display font-light text-gray-900 leading-none mb-6">
             {headline}
           </h1>
           <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">

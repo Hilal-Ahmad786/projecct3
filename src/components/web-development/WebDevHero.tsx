@@ -75,8 +75,8 @@ export default function WebDevHero({ serviceName, description }: { serviceName: 
               {...(prefersReducedMotion ? {} : { initial: { opacity: 0, y: 12 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.4, ease: [0.22, 1, 0.36, 1] } })}
               className={`flex items-center gap-3 ${isRTL ? 'flex-row-reverse' : ''}`}
             >
-              <div className="w-8 h-px bg-gray-900" />
-              <span className="text-xs font-semibold uppercase tracking-widest text-gray-500">
+              <div className="w-8 h-0.5 bg-heritage-turquoise" />
+              <span className="text-overline text-heritage-turquoise">
                 {t('hero.eyebrow') as string || 'Web Development Services'}
               </span>
             </motion.div>
@@ -89,7 +89,7 @@ export default function WebDevHero({ serviceName, description }: { serviceName: 
                   text={line}
                   tag="h1"
                   delay={i * 0.1}
-                  className={`text-3xl sm:text-4xl xl:text-5xl font-bold tracking-tight leading-[1.15] text-gray-900 ${i === 1 ? 'text-blue-600' : ''}`}
+                  className={`text-display font-light leading-none ${i === 1 ? 'font-semibold text-heritage-turquoise' : 'text-gray-900'}`}
                 />
               ))}
             </div>

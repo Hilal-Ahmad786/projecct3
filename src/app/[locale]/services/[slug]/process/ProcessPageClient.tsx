@@ -1,6 +1,7 @@
 'use client';
 
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { toHeritageHex } from '@/lib/heritage-accents';
 import LocalizedLink from '@/components/LocalizedLink';
 import { useRef } from 'react';
 import { ArrowRightIcon, ArrowDownIcon, ClockIcon } from '@heroicons/react/24/outline';
@@ -56,7 +57,7 @@ export default function ProcessPageClient({
   const lineProgress = useTransform(scrollYProgress, [0.1, 0.8], ['0%', '100%']);
 
   // Get animation config or use defaults for process page
-  const config = animation || {
+  const rawConfig = animation || {
     heroVisual: 'workflow-diagram' as const,
     bgPattern: 'diagonal-lines' as const,
     decorations: 'circles' as const,
@@ -64,6 +65,7 @@ export default function ProcessPageClient({
     primaryColor: '#3B82F6',
     secondaryColor: '#8B5CF6',
   };
+  const config = { ...rawConfig, primaryColor: toHeritageHex(rawConfig.primaryColor), secondaryColor: rawConfig.secondaryColor ? toHeritageHex(rawConfig.secondaryColor) : undefined };
 
   return (
     <div ref={containerRef} className="min-h-screen bg-white">
@@ -157,7 +159,7 @@ export default function ProcessPageClient({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-5xl md:text-6xl lg:text-7xl font-light text-gray-900 mb-8 leading-[1.1] tracking-tight"
+              className="text-display font-light text-gray-900 mb-8 leading-none"
             >
               {t('services.detail.process.heroTitle')}
               <br />

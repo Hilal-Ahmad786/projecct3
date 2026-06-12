@@ -11,17 +11,7 @@ interface ServiceProcessPageProps {
   accentColor: string;
 }
 
-const colorMap: Record<string, { hex: string; bg: string; text: string; gradient: string; border: string; ring: string; light: string }> = {
-  purple:  { hex: '#9333ea', bg: 'bg-purple-600',  text: 'text-purple-600',  gradient: 'from-purple-500 to-purple-700',  border: 'border-purple-200', ring: 'ring-purple-100',  light: 'bg-purple-50'  },
-  teal:    { hex: '#0d9488', bg: 'bg-teal-600',    text: 'text-teal-600',    gradient: 'from-teal-500 to-teal-700',      border: 'border-teal-200',   ring: 'ring-teal-100',    light: 'bg-teal-50'    },
-  blue:    { hex: '#2563eb', bg: 'bg-blue-600',    text: 'text-blue-600',    gradient: 'from-blue-500 to-blue-700',      border: 'border-blue-200',   ring: 'ring-blue-100',    light: 'bg-blue-50'    },
-  emerald: { hex: '#059669', bg: 'bg-emerald-600', text: 'text-emerald-600', gradient: 'from-emerald-500 to-emerald-700',border: 'border-emerald-200',ring: 'ring-emerald-100', light: 'bg-emerald-50' },
-  orange:  { hex: '#ea580c', bg: 'bg-orange-600',  text: 'text-orange-600',  gradient: 'from-orange-500 to-orange-700',  border: 'border-orange-200', ring: 'ring-orange-100',  light: 'bg-orange-50'  },
-  rose:    { hex: '#e11d48', bg: 'bg-rose-600',    text: 'text-rose-600',    gradient: 'from-rose-500 to-rose-700',      border: 'border-rose-200',   ring: 'ring-rose-100',    light: 'bg-rose-50'    },
-  indigo:  { hex: '#4f46e5', bg: 'bg-indigo-600',  text: 'text-indigo-600',  gradient: 'from-indigo-500 to-indigo-700',  border: 'border-indigo-200', ring: 'ring-indigo-100',  light: 'bg-indigo-50'  },
-  violet:  { hex: '#7c3aed', bg: 'bg-violet-600',  text: 'text-violet-600',  gradient: 'from-violet-500 to-violet-700',  border: 'border-violet-200', ring: 'ring-violet-100',  light: 'bg-violet-50'  },
-  cyan:    { hex: '#0891b2', bg: 'bg-cyan-600',    text: 'text-cyan-600',    gradient: 'from-cyan-500 to-cyan-700',      border: 'border-cyan-200',   ring: 'ring-cyan-100',    light: 'bg-cyan-50'    },
-};
+import { processColorMap as colorMap } from '@/lib/heritage-accents';
 
 const STEP_ICONS: Record<string, React.ReactElement> = {
   search:    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg>,
@@ -220,7 +210,7 @@ export default function ServiceProcessPage({ serviceSlug, accentColor }: Service
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-[1.1] tracking-tight mb-6"
+              className="text-display font-light text-gray-900 leading-none mb-6"
             >
               {headline}
             </motion.h1>
@@ -336,7 +326,7 @@ export default function ServiceProcessPage({ serviceSlug, accentColor }: Service
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.1 }}
-                className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-4"
+                className="text-headline text-gray-900 mb-4"
               >
                 What you can expect
               </motion.h2>

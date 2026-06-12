@@ -10,20 +10,7 @@ interface ServiceTechStackPageProps {
   accentColor: string;
 }
 
-const colorMap: Record<string, { text: string; textDark: string; gradient: string; border: string; bgCard: string }> = {
-  purple: { text: 'text-purple-400', textDark: 'text-purple-300', gradient: 'from-purple-600 to-purple-800', border: 'border-purple-500/30', bgCard: 'hover:bg-purple-900/30' },
-  teal: { text: 'text-teal-400', textDark: 'text-teal-300', gradient: 'from-teal-600 to-teal-800', border: 'border-teal-500/30', bgCard: 'hover:bg-teal-900/30' },
-  blue: { text: 'text-blue-400', textDark: 'text-blue-300', gradient: 'from-blue-600 to-blue-800', border: 'border-blue-500/30', bgCard: 'hover:bg-blue-900/30' },
-  emerald: { text: 'text-emerald-400', textDark: 'text-emerald-300', gradient: 'from-emerald-600 to-emerald-800', border: 'border-emerald-500/30', bgCard: 'hover:bg-emerald-900/30' },
-  orange: { text: 'text-orange-400', textDark: 'text-orange-300', gradient: 'from-orange-600 to-orange-800', border: 'border-orange-500/30', bgCard: 'hover:bg-orange-900/30' },
-  rose: { text: 'text-rose-400', textDark: 'text-rose-300', gradient: 'from-rose-600 to-rose-800', border: 'border-rose-500/30', bgCard: 'hover:bg-rose-900/30' },
-  cyan: { text: 'text-cyan-400', textDark: 'text-cyan-300', gradient: 'from-cyan-600 to-cyan-800', border: 'border-cyan-500/30', bgCard: 'hover:bg-cyan-900/30' },
-  amber: { text: 'text-amber-400', textDark: 'text-amber-300', gradient: 'from-amber-600 to-amber-800', border: 'border-amber-500/30', bgCard: 'hover:bg-amber-900/30' },
-  indigo: { text: 'text-indigo-400', textDark: 'text-indigo-300', gradient: 'from-indigo-600 to-indigo-800', border: 'border-indigo-500/30', bgCard: 'hover:bg-indigo-900/30' },
-  violet: { text: 'text-violet-400', textDark: 'text-violet-300', gradient: 'from-violet-600 to-violet-800', border: 'border-violet-500/30', bgCard: 'hover:bg-violet-900/30' },
-  red: { text: 'text-red-400', textDark: 'text-red-300', gradient: 'from-red-600 to-red-800', border: 'border-red-500/30', bgCard: 'hover:bg-red-900/30' },
-  pink: { text: 'text-pink-400', textDark: 'text-pink-300', gradient: 'from-pink-600 to-pink-800', border: 'border-pink-500/30', bgCard: 'hover:bg-pink-900/30' },
-};
+import { darkColorMap as colorMap } from '@/lib/heritage-accents';
 
 export default function ServiceTechStackPage({
   serviceSlug,
@@ -82,7 +69,7 @@ export default function ServiceTechStackPage({
           <span className={`${colors.text} font-medium tracking-wider uppercase text-sm mb-4 block`}>
             {subtitle}
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          <h1 className="text-display font-light leading-none mb-6">
             {headline}
           </h1>
           <p className="text-xl text-gray-400 leading-relaxed max-w-3xl mx-auto">

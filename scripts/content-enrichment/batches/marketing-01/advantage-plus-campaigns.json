@@ -1,0 +1,278 @@
+{
+  "slug": "advantage-plus-campaigns",
+  "en": {
+    "name": "Advantage+ Campaigns",
+    "shortDescription": "Put Meta's machine learning to work. We set up and manage Advantage+ Shopping and App campaigns that automate targeting, placement, and creative testing — lowering CPAs while you scale spend with confidence.",
+    "fullDescription": "Advantage+ is Meta's AI-driven campaign type, and it rewards advertisers who feed it well. The algorithm decides who sees your ads, so performance depends on the inputs you still control: conversion signal quality, creative variety, and clean account structure. We configure Advantage+ Shopping and App campaigns on that foundation — verifying Pixel and Conversions API events, structuring product catalogs, and supplying enough creative variations for the system to test. Then we manage the parts automation cannot: budget pacing between Advantage+ and manual campaigns, spend caps for existing customers, and creative refresh before fatigue sets in. The result is a setup where Meta's machine learning works for your margins instead of just your spend — typically lowering cost per acquisition while simplifying day-to-day management.",
+    "features": [
+      "Advantage+ Shopping Campaign Setup",
+      "Advantage+ App Campaign Management",
+      "Pixel & Conversions API Signal Audit",
+      "Catalog & Dynamic Creative Optimization",
+      "Existing Customer Budget Caps",
+      "Creative Volume & Fatigue Management",
+      "Advantage+ vs Manual Campaign Mix",
+      "Incrementality & Performance Reporting"
+    ],
+    "benefits": [
+      "Lower CPAs through Meta's machine learning",
+      "Less manual campaign management overhead",
+      "Faster scaling without audience guesswork",
+      "Stronger conversion signals, better optimization",
+      "Creative testing at a volume humans can't match",
+      "Clear reporting on what automation actually delivers"
+    ],
+    "metaTitle": "Advantage+ Campaign Management — Meta AI Ads | PakSoft",
+    "metaDescription": "Advantage+ Shopping and App campaigns managed by experts: CAPI signal setup, creative testing, and budget control that lowers CPA. Book a free Meta ads audit.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Account & Signal Audit", "description": "We review your Meta account structure, Pixel events, and Conversions API coverage, because Advantage+ performance is only as good as the data it learns from. Gaps in event match quality are fixed before any budget moves." },
+        { "step": 2, "title": "Campaign Architecture", "description": "We design the mix between Advantage+ and manual campaigns, define existing-customer budget caps, and set realistic CPA or ROAS targets. Catalogs and product sets are structured so the algorithm promotes the right items." },
+        { "step": 3, "title": "Creative Supply", "description": "Advantage+ tests combinations automatically, so it needs volume: we prepare diverse hooks, formats, and aspect ratios across image and video. Each batch gives the algorithm genuinely distinct angles, not near-duplicates." },
+        { "step": 4, "title": "Launch & Learning Phase", "description": "Campaigns launch with budgets sized to exit the learning phase quickly — roughly 50 conversions per week per campaign. We avoid mid-learning edits that reset optimization and quietly inflate costs." },
+        { "step": 5, "title": "Optimization Cycles", "description": "We monitor CPA, ROAS, and creative fatigue weekly, replacing declining assets and rebalancing budgets between campaign types. Placement and audience breakdowns show where the algorithm finds efficient conversions." },
+        { "step": 6, "title": "Scaling & Reporting", "description": "Once targets are stable, we scale budgets in measured increments to protect performance. Monthly reports separate genuine incremental results from conversions you would have captured anyway." }
+      ],
+      "faq": [
+        { "question": "What exactly does Advantage+ automate?", "answer": "Advantage+ hands targeting, placements, and budget distribution across creatives to Meta's machine learning. What stays in your control — and where we focus — is the creative supply, the conversion signals the algorithm learns from, total budget, and the cap on how much is spent on existing customers." },
+        { "question": "When should I use Advantage+ instead of manual campaigns?", "answer": "Advantage+ shines for e-commerce with broad appeal and steady conversion volume — roughly 50 purchases per week gives the algorithm enough to learn from. For narrow B2B niches, brand-new pixels, or strict audience exclusion requirements, manual campaigns with defined audiences usually perform better; most accounts end up running a mix." },
+        { "question": "How much budget do I need for Advantage+ to work?", "answer": "Enough to generate around 50 conversions per week, since that's what the learning phase needs. If your CPA is $20, plan on roughly $1,000 per week as a floor; with smaller budgets we consolidate into fewer campaigns rather than splitting spend so thin that nothing exits learning." },
+        { "question": "How do you stop Advantage+ from spending on existing customers?", "answer": "We upload your customer lists and set the existing-customer budget cap, typically at 10–20%, so most spend goes to genuinely new buyers. Without this, Advantage+ often retargets warm audiences heavily — which makes the dashboard look great while delivering little incremental revenue." },
+        { "question": "Why is the Conversions API so important for Advantage+?", "answer": "Since iOS privacy changes, browser pixels alone miss a meaningful share of conversions, and an algorithmic campaign type amplifies that blind spot. The Conversions API sends events server-side, improving match quality and giving the algorithm a fuller picture — accounts usually see more reported conversions and more stable optimization after CAPI is set up properly." },
+        { "question": "How many creatives does an Advantage+ campaign need?", "answer": "We recommend launching with at least 8–12 genuinely different assets — different hooks, formats, and messages, not the same image in three colors. We then refresh creatives every 2–4 weeks as frequency climbs and CTR declines, because creative is the single biggest performance lever left in an automated campaign." },
+        { "question": "How long until I see results?", "answer": "The learning phase typically takes about a week with sufficient conversion volume, and a fair performance read needs 2–4 weeks of stable running. Judging an Advantage+ campaign in its first few days — or editing it repeatedly during learning — is the most common way advertisers sabotage it." },
+        { "question": "How do you report on Advantage+ performance?", "answer": "You get blended CPA and ROAS alongside a comparison against your manual campaigns, plus creative-level insights showing which angles drive results. We're also candid about attribution: Meta tends to over-credit itself, so we cross-check against analytics and, where volume allows, recommend holdout-based incrementality checks." }
+      ],
+      "technologies": [
+        { "icon": "meta", "name": "Meta Ads Manager" },
+        { "icon": "metapixel", "name": "Meta Pixel" },
+        { "icon": "capi", "name": "Conversions API" },
+        { "icon": "ga4", "name": "Google Analytics 4" },
+        { "icon": "triplewhale", "name": "Triple Whale" },
+        { "icon": "hyros", "name": "Hyros" },
+        { "icon": "shopify", "name": "Shopify" },
+        { "icon": "canva", "name": "Canva" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Advantage+ Kampanyaları",
+    "shortDescription": "Meta'nın makine öğrenimini sizin için çalıştırın. Hedeflemeyi, yerleşimi ve kreatif testlerini otomatikleştiren Advantage+ Shopping ve App kampanyaları kurar ve yönetiriz — CPA'larınızı düşürürken harcamayı güvenle ölçeklendirmenizi sağlarız.",
+    "fullDescription": "Advantage+, Meta'nın yapay zekâ destekli kampanya türüdür ve onu doğru besleyen reklamverenleri ödüllendirir. Reklamlarınızı kimin göreceğine algoritma karar verir; bu yüzden performans, hâlâ sizin kontrolünüzde olan girdilere bağlıdır: dönüşüm sinyali kalitesi, kreatif çeşitliliği ve düzenli hesap yapısı. Advantage+ Shopping ve App kampanyalarını bu temel üzerine kurarız — Pixel ve Conversions API olaylarını doğrular, ürün kataloglarını yapılandırır ve sistemin test edebileceği kadar kreatif varyasyon sağlarız. Ardından otomasyonun yapamadığı kısımları yönetiriz: Advantage+ ile manuel kampanyalar arasında bütçe dengesi, mevcut müşteriler için harcama limitleri ve yorgunluk başlamadan kreatif yenileme. Sonuç, Meta'nın makine öğreniminin yalnızca harcamanız için değil kâr marjınız için çalıştığı bir kurulumdur — genellikle edinim maliyetini düşürürken günlük yönetimi de sadeleştirir.",
+    "features": [
+      "Advantage+ Shopping Kampanya Kurulumu",
+      "Advantage+ App Kampanya Yönetimi",
+      "Pixel ve Conversions API Sinyal Denetimi",
+      "Katalog ve Dinamik Kreatif Optimizasyonu",
+      "Mevcut Müşteri Bütçe Limitleri",
+      "Kreatif Hacmi ve Yorgunluk Yönetimi",
+      "Advantage+ / Manuel Kampanya Dengesi",
+      "Artımlılık ve Performans Raporlama"
+    ],
+    "benefits": [
+      "Meta'nın makine öğrenimiyle daha düşük CPA",
+      "Daha az manuel kampanya yönetimi yükü",
+      "Kitle tahminlerine takılmadan hızlı ölçekleme",
+      "Güçlü dönüşüm sinyalleri, daha iyi optimizasyon",
+      "İnsan gücünü aşan hacimde kreatif testi",
+      "Otomasyonun gerçekte ne kazandırdığını gösteren net raporlar"
+    ],
+    "metaTitle": "Advantage+ Kampanya Yönetimi — Meta AI | PakSoft",
+    "metaDescription": "Uzman yönetiminde Advantage+ Shopping ve App kampanyaları: CAPI sinyal kurulumu, kreatif testleri ve CPA düşüren bütçe kontrolü. Ücretsiz Meta reklam denetimi alın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Hesap ve Sinyal Denetimi", "description": "Meta hesap yapınızı, Pixel olaylarınızı ve Conversions API kapsamınızı inceleriz; çünkü Advantage+ performansı ancak öğrendiği veri kadar iyidir. Olay eşleşme kalitesindeki boşluklar, tek bir bütçe hareketi olmadan önce kapatılır." },
+        { "step": 2, "title": "Kampanya Mimarisi", "description": "Advantage+ ile manuel kampanyalar arasındaki dengeyi tasarlar, mevcut müşteri bütçe limitlerini tanımlar ve gerçekçi CPA veya ROAS hedefleri belirleriz. Kataloglar ve ürün setleri, algoritmanın doğru ürünleri öne çıkaracağı şekilde yapılandırılır." },
+        { "step": 3, "title": "Kreatif Beslemesi", "description": "Advantage+ kombinasyonları otomatik test ettiği için hacme ihtiyaç duyar: görsel ve videoda farklı kancalar, formatlar ve en-boy oranları hazırlarız. Her parti, algoritmaya birbirinin kopyası değil, gerçekten farklı açılar sunar." },
+        { "step": 4, "title": "Lansman ve Öğrenme Aşaması", "description": "Kampanyalar, öğrenme aşamasından hızla çıkacak bütçelerle yayına alınır — kampanya başına haftada yaklaşık 50 dönüşüm hedeflenir. Optimizasyonu sıfırlayan ve maliyetleri sessizce şişiren öğrenme dönemi müdahalelerinden kaçınırız." },
+        { "step": 5, "title": "Optimizasyon Döngüleri", "description": "CPA, ROAS ve kreatif yorgunluğunu haftalık izler, düşüşe geçen varlıkları değiştirir ve kampanya türleri arasında bütçeyi yeniden dengeleriz. Yerleşim ve kitle kırılımları, algoritmanın verimli dönüşümleri nerede bulduğunu gösterir." },
+        { "step": 6, "title": "Ölçekleme ve Raporlama", "description": "Hedefler istikrar kazandığında bütçeleri performansı koruyacak ölçülü adımlarla artırırız. Aylık raporlar, gerçek artımlı sonuçları zaten elde edeceğiniz dönüşümlerden ayırır." }
+      ],
+      "faq": [
+        { "question": "Advantage+ tam olarak neyi otomatikleştirir?", "answer": "Advantage+; hedeflemeyi, yerleşimleri ve kreatifler arası bütçe dağılımını Meta'nın makine öğrenimine devreder. Sizin kontrolünüzde kalan — ve bizim odaklandığımız — alanlar ise kreatif beslemesi, algoritmanın öğrendiği dönüşüm sinyalleri, toplam bütçe ve mevcut müşterilere ayrılan harcama limitidir." },
+        { "question": "Advantage+ yerine ne zaman manuel kampanya kullanmalıyım?", "answer": "Advantage+, geniş kitleye hitap eden ve istikrarlı dönüşüm hacmi olan e-ticarette parlar — haftada yaklaşık 50 satın alma, algoritmanın öğrenmesi için yeterlidir. Dar B2B nişlerinde, yeni kurulmuş pixel'lerde veya katı kitle hariç tutma gereksinimlerinde tanımlı kitleli manuel kampanyalar genellikle daha iyi sonuç verir; çoğu hesap ikisini birlikte çalıştırır." },
+        { "question": "Advantage+ için ne kadar bütçe gerekir?", "answer": "Haftada yaklaşık 50 dönüşüm üretecek kadar; öğrenme aşamasının ihtiyacı budur. CPA'nız 20 dolar ise taban olarak haftada yaklaşık 1.000 dolar planlayın; daha küçük bütçelerde harcamayı bölmek yerine daha az kampanyada toplarız ki en azından biri öğrenme aşamasını tamamlayabilsin." },
+        { "question": "Advantage+'ın mevcut müşterilere harcama yapmasını nasıl engelliyorsunuz?", "answer": "Müşteri listelerinizi yükler ve mevcut müşteri bütçe limitini genellikle %10–20 aralığında ayarlarız; böylece harcamanın çoğu gerçekten yeni alıcılara gider. Bu yapılmazsa Advantage+ sıcak kitleleri yoğun şekilde yeniden hedefler — gösterge paneli harika görünür ama artımlı gelir azdır." },
+        { "question": "Conversions API, Advantage+ için neden bu kadar önemli?", "answer": "iOS gizlilik değişikliklerinden bu yana tarayıcı pixel'leri dönüşümlerin önemli bir bölümünü kaçırıyor; algoritmik bir kampanya türü bu kör noktayı daha da büyütür. Conversions API olayları sunucu tarafından gönderir, eşleşme kalitesini yükseltir ve algoritmaya daha eksiksiz bir tablo sunar — düzgün CAPI kurulumundan sonra hesaplar genellikle daha fazla raporlanan dönüşüm ve daha istikrarlı optimizasyon görür." },
+        { "question": "Bir Advantage+ kampanyası kaç kreatife ihtiyaç duyar?", "answer": "Lansmanda en az 8–12 gerçekten farklı varlık öneririz — aynı görselin üç renk versiyonu değil; farklı kancalar, formatlar ve mesajlar. Frekans yükselip CTR düştükçe kreatifleri 2–4 haftada bir yenileriz; çünkü kreatif, otomatik bir kampanyada elinizde kalan en büyük performans kaldıracıdır." },
+        { "question": "Sonuçları ne zaman görmeye başlarım?", "answer": "Yeterli dönüşüm hacmiyle öğrenme aşaması genellikle bir hafta sürer; adil bir performans değerlendirmesi içinse 2–4 haftalık istikrarlı yayın gerekir. Bir Advantage+ kampanyasını ilk birkaç gününde yargılamak — ya da öğrenme sırasında tekrar tekrar düzenlemek — reklamverenlerin kampanyayı baltalamasının en yaygın yoludur." },
+        { "question": "Advantage+ performansını nasıl raporluyorsunuz?", "answer": "Manuel kampanyalarınızla karşılaştırmalı olarak birleşik CPA ve ROAS, ayrıca hangi açıların sonuç getirdiğini gösteren kreatif düzeyinde içgörüler alırsınız. Atıf konusunda da açık sözlüyüz: Meta kendine fazla pay çıkarma eğilimindedir; bu yüzden sonuçları analitik verileriyle çapraz kontrol eder, hacim elverdiğinde holdout temelli artımlılık testleri öneririz." }
+      ],
+      "technologies": [
+        { "icon": "meta", "name": "Meta Ads Manager" },
+        { "icon": "metapixel", "name": "Meta Pixel" },
+        { "icon": "capi", "name": "Conversions API" },
+        { "icon": "ga4", "name": "Google Analytics 4" },
+        { "icon": "triplewhale", "name": "Triple Whale" },
+        { "icon": "hyros", "name": "Hyros" },
+        { "icon": "shopify", "name": "Shopify" },
+        { "icon": "canva", "name": "Canva" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Advantage+ Kampagnen",
+    "shortDescription": "Lassen Sie Metas Machine Learning für sich arbeiten. Wir richten Advantage+ Shopping- und App-Kampagnen ein, die Targeting, Platzierung und Creative-Tests automatisieren — für sinkende CPAs bei sicher skalierbarem Budget.",
+    "fullDescription": "Advantage+ ist Metas KI-gesteuerter Kampagnentyp — und er belohnt Werbetreibende, die ihn richtig füttern. Der Algorithmus entscheidet, wer Ihre Anzeigen sieht; die Performance hängt daher von den Eingaben ab, die Sie weiterhin kontrollieren: Qualität der Conversion-Signale, Creative-Vielfalt und eine saubere Kontostruktur. Wir konfigurieren Advantage+ Shopping- und App-Kampagnen auf dieser Grundlage — wir prüfen Pixel- und Conversions-API-Events, strukturieren Produktkataloge und liefern genügend Creative-Varianten für die automatischen Tests. Anschließend steuern wir, was Automatisierung nicht kann: die Budgetverteilung zwischen Advantage+ und manuellen Kampagnen, Ausgabenlimits für Bestandskunden und Creative-Refreshes, bevor Ermüdung einsetzt. Das Ergebnis ist ein Setup, in dem Metas Machine Learning für Ihre Marge arbeitet statt nur für Ihr Budget — mit typischerweise sinkenden Akquisitionskosten und deutlich weniger täglichem Verwaltungsaufwand.",
+    "features": [
+      "Advantage+ Shopping-Kampagnen-Setup",
+      "Advantage+ App-Kampagnen-Management",
+      "Pixel- & Conversions-API-Signal-Audit",
+      "Katalog- & Dynamic-Creative-Optimierung",
+      "Budgetlimits für Bestandskunden",
+      "Creative-Volumen & Fatigue-Management",
+      "Advantage+/manueller Kampagnen-Mix",
+      "Inkrementalitäts- & Performance-Reporting"
+    ],
+    "benefits": [
+      "Niedrigere CPAs durch Metas Machine Learning",
+      "Weniger manueller Verwaltungsaufwand",
+      "Schnellere Skalierung ohne Zielgruppen-Rätselraten",
+      "Stärkere Conversion-Signale, bessere Optimierung",
+      "Creative-Tests in einem Volumen, das manuell unerreichbar ist",
+      "Klares Reporting darüber, was die Automatisierung wirklich leistet"
+    ],
+    "metaTitle": "Advantage+ Kampagnen — Meta-KI-Werbung | PakSoft",
+    "metaDescription": "Advantage+ Shopping- und App-Kampagnen vom Profi: CAPI-Signal-Setup, Creative-Tests und Budgetkontrolle für sinkende CPAs. Jetzt kostenloses Meta-Ads-Audit sichern.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Konto- & Signal-Audit", "description": "Wir prüfen Ihre Meta-Kontostruktur, Pixel-Events und Conversions-API-Abdeckung, denn Advantage+ ist nur so gut wie die Daten, aus denen es lernt. Lücken in der Event-Match-Qualität schließen wir, bevor auch nur ein Euro Budget bewegt wird." },
+        { "step": 2, "title": "Kampagnen-Architektur", "description": "Wir gestalten den Mix aus Advantage+ und manuellen Kampagnen, definieren Budgetlimits für Bestandskunden und setzen realistische CPA- oder ROAS-Ziele. Kataloge und Produktsets werden so strukturiert, dass der Algorithmus die richtigen Artikel bewirbt." },
+        { "step": 3, "title": "Creative-Versorgung", "description": "Advantage+ testet Kombinationen automatisch und braucht dafür Volumen: Wir liefern unterschiedliche Hooks, Formate und Seitenverhältnisse in Bild und Video. Jede Charge bietet dem Algorithmus wirklich verschiedene Blickwinkel statt Beinahe-Duplikate." },
+        { "step": 4, "title": "Launch & Lernphase", "description": "Kampagnen starten mit Budgets, die die Lernphase zügig abschließen — als Richtwert rund 50 Conversions pro Woche und Kampagne. Auf Änderungen während der Lernphase verzichten wir, da sie die Optimierung zurücksetzen und die Kosten still erhöhen." },
+        { "step": 5, "title": "Optimierungszyklen", "description": "Wir überwachen CPA, ROAS und Creative-Ermüdung wöchentlich, ersetzen schwächelnde Assets und verteilen Budgets zwischen den Kampagnentypen neu. Platzierungs- und Zielgruppenaufschlüsselungen zeigen, wo der Algorithmus effiziente Conversions findet." },
+        { "step": 6, "title": "Skalierung & Reporting", "description": "Sind die Ziele stabil, erhöhen wir Budgets in maßvollen Schritten, um die Performance zu schützen. Monatsberichte trennen echte inkrementelle Ergebnisse von Conversions, die Sie ohnehin erzielt hätten." }
+      ],
+      "faq": [
+        { "question": "Was genau automatisiert Advantage+?", "answer": "Advantage+ übergibt Targeting, Platzierungen und die Budgetverteilung über die Creatives an Metas Machine Learning. In Ihrer Hand bleiben — und genau dort setzen wir an — die Creative-Versorgung, die Conversion-Signale, aus denen der Algorithmus lernt, das Gesamtbudget und das Limit für Ausgaben an Bestandskunden." },
+        { "question": "Wann sollte ich Advantage+ statt manueller Kampagnen einsetzen?", "answer": "Advantage+ glänzt im E-Commerce mit breiter Zielgruppe und stabilem Conversion-Volumen — rund 50 Käufe pro Woche geben dem Algorithmus genug Lernmaterial. Für enge B2B-Nischen, ganz neue Pixel oder strikte Ausschlussanforderungen sind manuelle Kampagnen mit definierten Zielgruppen meist besser; die meisten Konten fahren am Ende einen Mix." },
+        { "question": "Wie viel Budget brauche ich, damit Advantage+ funktioniert?", "answer": "Genug für etwa 50 Conversions pro Woche — das braucht die Lernphase. Bei einem CPA von 20 € sollten Sie rund 1.000 € pro Woche als Untergrenze einplanen; bei kleineren Budgets konsolidieren wir in weniger Kampagnen, statt das Budget so dünn zu verteilen, dass nichts die Lernphase verlässt." },
+        { "question": "Wie verhindern Sie, dass Advantage+ Budget für Bestandskunden ausgibt?", "answer": "Wir laden Ihre Kundenlisten hoch und setzen das Bestandskunden-Budgetlimit, typischerweise auf 10–20 %, damit der Großteil der Ausgaben an wirklich neue Käufer geht. Ohne dieses Limit retargetet Advantage+ oft stark die warme Zielgruppe — das Dashboard sieht großartig aus, liefert aber kaum inkrementellen Umsatz." },
+        { "question": "Warum ist die Conversions API für Advantage+ so wichtig?", "answer": "Seit den iOS-Datenschutzänderungen verpassen Browser-Pixel allein einen erheblichen Teil der Conversions — und ein algorithmischer Kampagnentyp verstärkt diesen blinden Fleck. Die Conversions API sendet Events serverseitig, verbessert die Match-Qualität und gibt dem Algorithmus ein vollständigeres Bild; nach sauberem CAPI-Setup sehen Konten in der Regel mehr erfasste Conversions und eine stabilere Optimierung." },
+        { "question": "Wie viele Creatives braucht eine Advantage+ Kampagne?", "answer": "Wir empfehlen den Start mit mindestens 8–12 wirklich unterschiedlichen Assets — verschiedene Hooks, Formate und Botschaften, nicht dasselbe Bild in drei Farben. Danach erneuern wir Creatives alle 2–4 Wochen, sobald die Frequenz steigt und die CTR sinkt, denn das Creative ist der größte verbliebene Performance-Hebel in einer automatisierten Kampagne." },
+        { "question": "Wie schnell sehe ich Ergebnisse?", "answer": "Die Lernphase dauert bei ausreichendem Conversion-Volumen etwa eine Woche; eine faire Bewertung der Performance braucht 2–4 Wochen stabilen Betrieb. Eine Advantage+ Kampagne in den ersten Tagen zu beurteilen — oder sie während der Lernphase wiederholt zu bearbeiten — ist der häufigste Weg, sie zu sabotieren." },
+        { "question": "Wie berichten Sie über die Advantage+ Performance?", "answer": "Sie erhalten kombinierte CPA- und ROAS-Werte im Vergleich zu Ihren manuellen Kampagnen sowie Einblicke auf Creative-Ebene, welche Ansätze Ergebnisse bringen. Beim Thema Attribution sind wir ehrlich: Meta schreibt sich gern zu viel zu, daher gleichen wir mit Ihren Analytics-Daten ab und empfehlen bei ausreichendem Volumen Holdout-basierte Inkrementalitätstests." }
+      ],
+      "technologies": [
+        { "icon": "meta", "name": "Meta Ads Manager" },
+        { "icon": "metapixel", "name": "Meta Pixel" },
+        { "icon": "capi", "name": "Conversions API" },
+        { "icon": "ga4", "name": "Google Analytics 4" },
+        { "icon": "triplewhale", "name": "Triple Whale" },
+        { "icon": "hyros", "name": "Hyros" },
+        { "icon": "shopify", "name": "Shopify" },
+        { "icon": "canva", "name": "Canva" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "Advantage+ کمپینز",
+    "shortDescription": "Meta کی مشین لرننگ کو اپنے لیے کام پر لگائیں۔ ہم Advantage+ Shopping اور App کمپینز ترتیب دیتے اور چلاتے ہیں جو ٹارگٹنگ، پلیسمنٹ اور کری ایٹو ٹیسٹنگ خودکار بناتی ہیں — CPA کم کرتے ہوئے خرچ کو اعتماد سے بڑھانے کا موقع دیتی ہیں۔",
+    "fullDescription": "Advantage+ دراصل Meta کی AI پر مبنی کمپین قسم ہے، اور یہ انہی اشتہار دہندگان کو نوازتی ہے جو اسے درست ڈیٹا فراہم کرتے ہیں۔ آپ کے اشتہارات کون دیکھے گا، اس کا فیصلہ الگورتھم کرتا ہے؛ اس لیے کارکردگی ان عوامل پر منحصر ہے جو اب بھی آپ کے ہاتھ میں ہیں: کنورژن سگنل کا معیار، کری ایٹو کا تنوع اور صاف ستھرا اکاؤنٹ ڈھانچہ۔ ہم Advantage+ Shopping اور App کمپینز اسی بنیاد پر کھڑی کرتے ہیں — Pixel اور Conversions API ایونٹس کی تصدیق، پروڈکٹ کیٹلاگ کی تنظیم، اور سسٹم کی جانچ کے لیے کافی کری ایٹو ورژنز کی فراہمی۔ پھر ہم وہ حصے سنبھالتے ہیں جو آٹومیشن نہیں کر سکتی: Advantage+ اور مینول کمپینز کے درمیان بجٹ کی تقسیم، موجودہ گاہکوں پر خرچ کی حد، اور تھکاوٹ شروع ہونے سے پہلے کری ایٹو کی تجدید۔ نتیجہ ایسا سیٹ اپ ہے جس میں Meta کی مشین لرننگ صرف آپ کے خرچ کے لیے نہیں بلکہ آپ کے منافع کے لیے کام کرتی ہے — عموماً حصولِ گاہک کی لاگت کم ہوتی ہے اور روزمرہ انتظام بھی آسان ہو جاتا ہے۔",
+    "features": [
+      "Advantage+ Shopping کمپین سیٹ اپ",
+      "Advantage+ App کمپین مینجمنٹ",
+      "Pixel اور Conversions API سگنل آڈٹ",
+      "کیٹلاگ اور ڈائنامک کری ایٹو آپٹیمائزیشن",
+      "موجودہ گاہکوں کے لیے بجٹ کی حدیں",
+      "کری ایٹو حجم اور تھکاوٹ کا انتظام",
+      "Advantage+ اور مینول کمپین کا توازن",
+      "اضافی اثر اور کارکردگی کی رپورٹنگ"
+    ],
+    "benefits": [
+      "Meta کی مشین لرننگ سے کم CPA",
+      "دستی کمپین مینجمنٹ کا کم بوجھ",
+      "آڈینس کے اندازوں کے بغیر تیز اسکیلنگ",
+      "مضبوط کنورژن سگنلز، بہتر آپٹیمائزیشن",
+      "انسانی صلاحیت سے بڑھ کر کری ایٹو ٹیسٹنگ",
+      "آٹومیشن کے حقیقی نتائج کی واضح رپورٹنگ"
+    ],
+    "metaTitle": "Advantage+ کمپین مینجمنٹ — Meta AI اشتہارات | PakSoft",
+    "metaDescription": "ماہرین کے زیرِ انتظام Advantage+ Shopping اور App کمپینز: CAPI سگنل سیٹ اپ، کری ایٹو ٹیسٹنگ اور CPA کم کرنے والا بجٹ کنٹرول۔ مفت Meta ایڈز آڈٹ حاصل کریں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "اکاؤنٹ اور سگنل آڈٹ", "description": "ہم آپ کے Meta اکاؤنٹ کا ڈھانچہ، Pixel ایونٹس اور Conversions API کوریج کا جائزہ لیتے ہیں، کیونکہ Advantage+ کی کارکردگی اتنی ہی اچھی ہوتی ہے جتنا اچھا ڈیٹا اسے ملے۔ ایونٹ میچ کوالٹی کی کمیاں کسی بھی بجٹ منتقلی سے پہلے دور کی جاتی ہیں۔" },
+        { "step": 2, "title": "کمپین کا ڈھانچہ", "description": "ہم Advantage+ اور مینول کمپینز کا توازن طے کرتے ہیں، موجودہ گاہکوں کے لیے بجٹ کی حد مقرر کرتے ہیں اور حقیقت پسندانہ CPA یا ROAS اہداف رکھتے ہیں۔ کیٹلاگ اور پروڈکٹ سیٹس اس طرح ترتیب پاتے ہیں کہ الگورتھم درست مصنوعات کو نمایاں کرے۔" },
+        { "step": 3, "title": "کری ایٹو کی فراہمی", "description": "Advantage+ امتزاجات خود بخود ٹیسٹ کرتا ہے، اس لیے اسے حجم درکار ہوتا ہے: ہم تصویر اور ویڈیو میں مختلف ہکس، فارمیٹس اور اسپیکٹ ریشوز تیار کرتے ہیں۔ ہر کھیپ الگورتھم کو واقعی الگ زاویے دیتی ہے، ملتے جلتے نقول نہیں۔" },
+        { "step": 4, "title": "لانچ اور لرننگ فیز", "description": "کمپینز ایسے بجٹ کے ساتھ شروع ہوتی ہیں جو لرننگ فیز جلد مکمل کرا دے — اندازاً فی کمپین ہفتہ وار 50 کنورژنز۔ لرننگ کے دوران ایسی ترامیم سے گریز کرتے ہیں جو آپٹیمائزیشن ری سیٹ کر کے لاگت خاموشی سے بڑھا دیتی ہیں۔" },
+        { "step": 5, "title": "آپٹیمائزیشن سائیکل", "description": "ہم CPA، ROAS اور کری ایٹو تھکاوٹ کی ہفتہ وار نگرانی کرتے ہیں، کمزور پڑتے اثاثے بدلتے ہیں اور کمپین اقسام کے درمیان بجٹ کا توازن نو کرتے ہیں۔ پلیسمنٹ اور آڈینس کی تفصیل بتاتی ہے کہ الگورتھم کفایتی کنورژنز کہاں پا رہا ہے۔" },
+        { "step": 6, "title": "اسکیلنگ اور رپورٹنگ", "description": "اہداف مستحکم ہونے پر ہم بجٹ کو ناپ تول کر بڑھاتے ہیں تاکہ کارکردگی محفوظ رہے۔ ماہانہ رپورٹس حقیقی اضافی نتائج کو ان کنورژنز سے الگ کرتی ہیں جو آپ کو ویسے بھی مل جاتے۔" }
+      ],
+      "faq": [
+        { "question": "Advantage+ اصل میں کیا کچھ خودکار کرتا ہے؟", "answer": "Advantage+ ٹارگٹنگ، پلیسمنٹس اور کری ایٹوز کے درمیان بجٹ کی تقسیم Meta کی مشین لرننگ کے حوالے کر دیتا ہے۔ جو کچھ آپ کے اختیار میں رہتا ہے — اور جہاں ہم توجہ دیتے ہیں — وہ ہے کری ایٹو کی فراہمی، وہ کنورژن سگنلز جن سے الگورتھم سیکھتا ہے، مجموعی بجٹ اور موجودہ گاہکوں پر خرچ کی حد۔" },
+        { "question": "مینول کمپینز کے بجائے Advantage+ کب استعمال کروں؟", "answer": "Advantage+ وسیع اپیل اور مستحکم کنورژن حجم والی ای کامرس میں سب سے بہتر چلتا ہے — ہفتہ وار تقریباً 50 خریداریاں الگورتھم کے سیکھنے کے لیے کافی ہوتی ہیں۔ تنگ B2B نیچز، بالکل نئے pixel یا سخت آڈینس اخراج کی شرائط میں متعین آڈینس والی مینول کمپینز عموماً بہتر رہتی ہیں؛ بیشتر اکاؤنٹس بالآخر دونوں کا امتزاج چلاتے ہیں۔" },
+        { "question": "Advantage+ کے لیے کتنا بجٹ درکار ہے؟", "answer": "اتنا کہ ہفتے میں تقریباً 50 کنورژنز پیدا ہوں، کیونکہ لرننگ فیز کو اسی کی ضرورت ہے۔ اگر آپ کا CPA 20 ڈالر ہے تو کم از کم تقریباً 1,000 ڈالر فی ہفتہ رکھیں؛ چھوٹے بجٹ میں ہم خرچ بانٹنے کے بجائے کم کمپینز میں یکجا کرتے ہیں تاکہ کوئی نہ کوئی کمپین لرننگ فیز مکمل کر سکے۔" },
+        { "question": "آپ Advantage+ کو موجودہ گاہکوں پر خرچ کرنے سے کیسے روکتے ہیں؟", "answer": "ہم آپ کی کسٹمر لسٹیں اپ لوڈ کر کے موجودہ گاہکوں کے بجٹ کی حد عموماً 10–20٪ پر مقرر کرتے ہیں، تاکہ زیادہ تر خرچ واقعی نئے خریداروں تک جائے۔ ایسا نہ ہو تو Advantage+ اکثر گرم آڈینس کو ہی بار بار ہدف بناتا ہے — ڈیش بورڈ شاندار لگتا ہے مگر اضافی آمدنی برائے نام ہوتی ہے۔" },
+        { "question": "Conversions API اتنی اہم کیوں ہے؟", "answer": "iOS کی پرائیویسی تبدیلیوں کے بعد صرف براؤزر pixel کنورژنز کا قابلِ ذکر حصہ کھو دیتا ہے، اور الگورتھمک کمپین یہ اندھا گوشہ مزید بڑھا دیتی ہے۔ Conversions API ایونٹس سرور سائیڈ سے بھیجتی ہے، میچ کوالٹی بہتر کرتی ہے اور الگورتھم کو مکمل تصویر دیتی ہے — درست CAPI سیٹ اپ کے بعد اکاؤنٹس کو عموماً زیادہ رپورٹ شدہ کنورژنز اور مستحکم آپٹیمائزیشن ملتی ہے۔" },
+        { "question": "ایک Advantage+ کمپین کو کتنے کری ایٹوز چاہئیں؟", "answer": "ہم لانچ پر کم از کم 8 تا 12 واقعی مختلف اثاثوں کی سفارش کرتے ہیں — مختلف ہکس، فارمیٹس اور پیغامات، ایک ہی تصویر تین رنگوں میں نہیں۔ پھر جوں جوں فریکوئنسی بڑھے اور CTR گرے، ہر 2 تا 4 ہفتوں میں کری ایٹو تازہ کرتے ہیں؛ کیونکہ خودکار کمپین میں کری ایٹو ہی سب سے بڑا بچا ہوا کارکردگی کا ذریعہ ہے۔" },
+        { "question": "نتائج کب نظر آنا شروع ہوں گے؟", "answer": "کافی کنورژن حجم کے ساتھ لرننگ فیز عموماً ایک ہفتہ لیتی ہے، اور منصفانہ جائزے کے لیے 2 تا 4 ہفتے کا مستحکم اجراء درکار ہے۔ Advantage+ کمپین کو پہلے چند دنوں میں پرکھنا — یا لرننگ کے دوران بار بار ترمیم کرنا — اشتہار دہندگان کے اپنی ہی کمپین کو نقصان پہنچانے کا سب سے عام طریقہ ہے۔" },
+        { "question": "آپ Advantage+ کی کارکردگی کیسے رپورٹ کرتے ہیں؟", "answer": "آپ کو مینول کمپینز سے موازنے کے ساتھ مجموعی CPA اور ROAS ملتے ہیں، نیز کری ایٹو سطح کی بصیرتیں کہ کون سے زاویے نتائج لا رہے ہیں۔ ایٹریبیوشن پر بھی ہم صاف گو ہیں: Meta خود کو زیادہ کریڈٹ دینے کی طرف مائل ہے، اس لیے ہم اینالیٹکس سے کراس چیک کرتے ہیں اور حجم اجازت دے تو holdout پر مبنی اضافی اثر کی جانچ تجویز کرتے ہیں۔" }
+      ],
+      "technologies": [
+        { "icon": "meta", "name": "Meta Ads Manager" },
+        { "icon": "metapixel", "name": "Meta Pixel" },
+        { "icon": "capi", "name": "Conversions API" },
+        { "icon": "ga4", "name": "Google Analytics 4" },
+        { "icon": "triplewhale", "name": "Triple Whale" },
+        { "icon": "hyros", "name": "Hyros" },
+        { "icon": "shopify", "name": "Shopify" },
+        { "icon": "canva", "name": "Canva" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "حملات Advantage+",
+    "shortDescription": "اجعلوا تعلّم الآلة لدى Meta يعمل لصالحكم. نُعِدّ وندير حملات Advantage+ للتسوّق والتطبيقات التي تُتمتم الاستهداف والمواضع واختبار الإعلانات — لخفض تكلفة الاستحواذ مع توسيع الإنفاق بثقة.",
+    "fullDescription": "Advantage+ هو نوع الحملات المعتمد على الذكاء الاصطناعي لدى Meta، وهو يكافئ المعلنين الذين يغذّونه بالبيانات الصحيحة. الخوارزمية هي التي تقرر من يرى إعلاناتكم، لذا تعتمد النتائج على المدخلات التي ما زالت بأيديكم: جودة إشارات التحويل، وتنوّع المواد الإعلانية، وبنية حساب منظمة. نبني حملات Advantage+ للتسوّق والتطبيقات على هذا الأساس — نتحقق من أحداث Pixel وConversions API، وننظّم كتالوجات المنتجات، ونوفّر ما يكفي من النسخ الإبداعية ليختبرها النظام. ثم ندير ما لا تستطيع الأتمتة فعله: توزيع الميزانية بين Advantage+ والحملات اليدوية، وسقف الإنفاق على العملاء الحاليين، وتجديد المواد الإعلانية قبل أن يصيبها الإرهاق. النتيجة إعداد يعمل فيه تعلّم الآلة لدى Meta لصالح هوامش أرباحكم لا لمجرد إنفاقكم — مع خفض تكلفة الاستحواذ عادةً وتبسيط الإدارة اليومية.",
+    "features": [
+      "إعداد حملات Advantage+ للتسوّق",
+      "إدارة حملات Advantage+ للتطبيقات",
+      "تدقيق إشارات Pixel وConversions API",
+      "تحسين الكتالوج والإعلانات الديناميكية",
+      "سقف ميزانية للعملاء الحاليين",
+      "إدارة حجم المواد الإعلانية وإرهاقها",
+      "موازنة Advantage+ مع الحملات اليدوية",
+      "تقارير الأثر الإضافي والأداء"
+    ],
+    "benefits": [
+      "تكلفة استحواذ أقل بفضل تعلّم الآلة لدى Meta",
+      "عبء أقل في الإدارة اليدوية للحملات",
+      "توسّع أسرع دون تخمين الجمهور",
+      "إشارات تحويل أقوى تعني تحسيناً أفضل",
+      "اختبار مواد إعلانية بحجم يفوق القدرة البشرية",
+      "تقارير واضحة عمّا تحققه الأتمتة فعلاً"
+    ],
+    "metaTitle": "إدارة حملات Advantage+ — إعلانات Meta | PakSoft",
+    "metaDescription": "حملات Advantage+ للتسوّق والتطبيقات بإدارة خبراء: إعداد إشارات CAPI، اختبار المواد الإعلانية، وضبط ميزانية يخفض تكلفة الاستحواذ. احجزوا تدقيقاً مجانياً لإعلانات Meta.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "تدقيق الحساب والإشارات", "description": "نراجع بنية حساب Meta وأحداث Pixel وتغطية Conversions API، لأن أداء Advantage+ لا يتجاوز جودة البيانات التي يتعلم منها. نعالج ثغرات جودة مطابقة الأحداث قبل تحريك أي ميزانية." },
+        { "step": 2, "title": "هندسة الحملات", "description": "نصمّم المزيج بين Advantage+ والحملات اليدوية، ونحدد سقف ميزانية العملاء الحاليين، ونضع أهدافاً واقعية لتكلفة الاستحواذ أو ROAS. تُنظَّم الكتالوجات ومجموعات المنتجات بحيث تروّج الخوارزمية للمنتجات الصحيحة." },
+        { "step": 3, "title": "تزويد المواد الإعلانية", "description": "يختبر Advantage+ التركيبات تلقائياً، لذا يحتاج إلى حجم كافٍ: نجهّز خطافات وصيغاً وأبعاداً متنوعة في الصور والفيديو. كل دفعة تمنح الخوارزمية زوايا مختلفة حقاً، لا نسخاً شبه متطابقة." },
+        { "step": 4, "title": "الإطلاق ومرحلة التعلّم", "description": "تنطلق الحملات بميزانيات تكفي للخروج سريعاً من مرحلة التعلّم — نحو 50 تحويلاً أسبوعياً لكل حملة. نتجنّب التعديلات أثناء التعلّم لأنها تعيد ضبط التحسين وترفع التكاليف بصمت." },
+        { "step": 5, "title": "دورات التحسين", "description": "نراقب تكلفة الاستحواذ وROAS وإرهاق المواد الإعلانية أسبوعياً، فنستبدل الأصول المتراجعة ونعيد توزيع الميزانيات بين أنواع الحملات. تُظهر تفاصيل المواضع والجمهور أين تجد الخوارزمية تحويلات اقتصادية." },
+        { "step": 6, "title": "التوسّع والتقارير", "description": "عند استقرار الأهداف نرفع الميزانيات بخطوات مدروسة لحماية الأداء. تفصل التقارير الشهرية النتائج الإضافية الحقيقية عن التحويلات التي كنتم ستحققونها على أي حال." }
+      ],
+      "faq": [
+        { "question": "ما الذي يُتمتمه Advantage+ تحديداً؟", "answer": "يُسلِّم Advantage+ الاستهداف والمواضع وتوزيع الميزانية بين الإعلانات إلى تعلّم الآلة لدى Meta. ما يبقى بأيديكم — وهو محور عملنا — هو تزويد المواد الإعلانية، وإشارات التحويل التي تتعلم منها الخوارزمية، والميزانية الإجمالية، وسقف الإنفاق على العملاء الحاليين." },
+        { "question": "متى أستخدم Advantage+ بدلاً من الحملات اليدوية؟", "answer": "يتألق Advantage+ في التجارة الإلكترونية ذات الجاذبية الواسعة وحجم التحويلات المستقر — نحو 50 عملية شراء أسبوعياً تمنح الخوارزمية ما يكفي للتعلّم. أما في تخصصات B2B الضيقة أو مع Pixel جديد كلياً أو متطلبات استبعاد صارمة للجمهور، فالحملات اليدوية بجماهير محددة تتفوق غالباً؛ ومعظم الحسابات تنتهي إلى تشغيل مزيج من الاثنين." },
+        { "question": "كم أحتاج من الميزانية ليعمل Advantage+؟", "answer": "ما يكفي لتوليد نحو 50 تحويلاً أسبوعياً، فهذا ما تحتاجه مرحلة التعلّم. إذا كانت تكلفة الاستحواذ لديكم 20 دولاراً، فخططوا لنحو 1,000 دولار أسبوعياً كحد أدنى؛ ومع ميزانيات أصغر ندمج الإنفاق في حملات أقل بدلاً من تشتيته بحيث لا تُكمل أي حملة مرحلة التعلّم." },
+        { "question": "كيف تمنعون Advantage+ من الإنفاق على العملاء الحاليين؟", "answer": "نرفع قوائم عملائكم ونضبط سقف ميزانية العملاء الحاليين، عادة بين 10 و20٪، ليذهب معظم الإنفاق إلى مشترين جدد فعلاً. من دون ذلك يميل Advantage+ إلى إعادة استهداف الجمهور الدافئ بكثافة — فتبدو لوحة التحكم رائعة بينما الإيراد الإضافي ضئيل." },
+        { "question": "لماذا تُعدّ Conversions API بهذه الأهمية؟", "answer": "منذ تغييرات الخصوصية في iOS، يفقد Pixel المتصفح وحده حصة معتبرة من التحويلات، ونوع الحملات الخوارزمي يضخّم هذه النقطة العمياء. ترسل Conversions API الأحداث من جهة الخادم، فتحسّن جودة المطابقة وتمنح الخوارزمية صورة أكمل — وبعد إعدادها بشكل سليم ترى الحسابات عادة تحويلات مسجلة أكثر وتحسيناً أكثر استقراراً." },
+        { "question": "كم تحتاج حملة Advantage+ من المواد الإعلانية؟", "answer": "نوصي بالانطلاق بما لا يقل عن 8 إلى 12 أصلاً مختلفاً حقاً — خطافات وصيغ ورسائل متنوعة، لا الصورة نفسها بثلاثة ألوان. ثم نجدد المواد كل 2 إلى 4 أسابيع كلما ارتفع التكرار وتراجع معدل النقر، لأن المادة الإعلانية هي أكبر رافعة أداء متبقية في حملة مؤتمتة." },
+        { "question": "متى أبدأ برؤية النتائج؟", "answer": "تستغرق مرحلة التعلّم نحو أسبوع مع حجم تحويلات كافٍ، ويتطلب التقييم العادل من 2 إلى 4 أسابيع من التشغيل المستقر. الحكم على حملة Advantage+ في أيامها الأولى — أو تعديلها مراراً أثناء التعلّم — هو أكثر الطرق شيوعاً التي يفسد بها المعلنون حملاتهم." },
+        { "question": "كيف تقدّمون تقارير أداء Advantage+؟", "answer": "تحصلون على تكلفة الاستحواذ وROAS المجمّعين مع مقارنة بحملاتكم اليدوية، إضافة إلى رؤى على مستوى كل مادة إعلانية تُظهر أي الزوايا تحقق النتائج. ونحن صريحون في موضوع الإسناد: تميل Meta إلى منح نفسها فضلاً زائداً، لذا نقارن مع بيانات التحليلات ونوصي، حيث يسمح الحجم، باختبارات الأثر الإضافي القائمة على مجموعات الضبط." }
+      ],
+      "technologies": [
+        { "icon": "meta", "name": "Meta Ads Manager" },
+        { "icon": "metapixel", "name": "Meta Pixel" },
+        { "icon": "capi", "name": "Conversions API" },
+        { "icon": "ga4", "name": "Google Analytics 4" },
+        { "icon": "triplewhale", "name": "Triple Whale" },
+        { "icon": "hyros", "name": "Hyros" },
+        { "icon": "shopify", "name": "Shopify" },
+        { "icon": "canva", "name": "Canva" }
+      ]
+    }
+  }
+}

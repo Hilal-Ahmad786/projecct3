@@ -47,7 +47,7 @@ export default function PortfolioPageClient({
   const isGridInView = useInView(gridRef, { once: true, margin: '-100px' });
 
   // Swiss minimalist emerald accent
-  const accentColor = '#16a085';
+  const accentColor = '#0e7c7b';
 
   // Get unique categories
   const categories = [...new Set(portfolio.map(p => p.category))];
@@ -179,7 +179,7 @@ export default function PortfolioPageClient({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-5xl md:text-6xl lg:text-7xl font-light text-gray-900 mb-8 leading-[1.1] tracking-tight"
+              className="text-display font-light text-gray-900 mb-8 leading-none"
             >
               {t('services.detail.portfolio.heroTitle')}
               <br />

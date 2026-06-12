@@ -1,6 +1,7 @@
 'use client';
 
 import { motion, useInView } from 'framer-motion';
+import { toHeritageHex } from '@/lib/heritage-accents';
 import LocalizedLink from '@/components/LocalizedLink';
 import { useRef } from 'react';
 import { ArrowRightIcon, CpuChipIcon } from '@heroicons/react/24/outline';
@@ -53,7 +54,7 @@ export default function TechStackPageClient({
   const isInView = useInView(gridRef, { once: true, margin: '-100px' });
 
   // Get animation config or use defaults for tech-stack page
-  const config = animation || {
+  const rawConfig = animation || {
     heroVisual: 'circuit-board' as const,
     bgPattern: 'hexagons' as const,
     decorations: 'hexagons' as const,
@@ -61,6 +62,7 @@ export default function TechStackPageClient({
     primaryColor: '#8B5CF6',
     secondaryColor: '#06B6D4',
   };
+  const config = { ...rawConfig, primaryColor: toHeritageHex(rawConfig.primaryColor), secondaryColor: rawConfig.secondaryColor ? toHeritageHex(rawConfig.secondaryColor) : undefined };
 
   return (
     <div className="min-h-screen bg-white">
@@ -156,7 +158,7 @@ export default function TechStackPageClient({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-5xl md:text-6xl lg:text-7xl font-light text-gray-900 mb-8 leading-[1.1] tracking-tight"
+              className="text-display font-light text-gray-900 mb-8 leading-none"
             >
               {t('services.detail.techStack.heroTitle')}
               <br />

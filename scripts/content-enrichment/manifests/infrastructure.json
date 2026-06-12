@@ -1,0 +1,2025 @@
+[
+ {
+  "slug": "aws-migration",
+  "name": "AWS Migration",
+  "parentSlug": "cloud-migration",
+  "shortDescription": "Migrate to Amazon Web Services with expert guidance.",
+  "fullDescription": "Move to AWS the right way. We leverage AWS migration tools and best practices to migrate workloads efficiently while optimizing for cost and performance.",
+  "features": [
+   "AWS Assessment",
+   "Migration Hub",
+   "Database Migration",
+   "Server Migration",
+   "Application Migration",
+   "Cost Optimization"
+  ],
+  "benefits": [
+   "AWS expertise",
+   "Minimal disruption",
+   "Cost savings",
+   "Best practices",
+   "Security",
+   "Scalability"
+  ],
+  "technologies": [
+   {
+    "icon": "aws",
+    "name": "AWS Migration Hub"
+   },
+   {
+    "icon": "aws",
+    "name": "AWS DMS"
+   },
+   {
+    "icon": "aws",
+    "name": "AWS SMS"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "azure-migration",
+  "name": "Azure Migration",
+  "parentSlug": "cloud-migration",
+  "shortDescription": "Migrate to Microsoft Azure for enterprise cloud solutions.",
+  "fullDescription": "Transition to Azure with enterprise-grade migration. We help organizations move to Azure with focus on hybrid scenarios, Active Directory integration, and Microsoft ecosystem optimization.",
+  "features": [
+   "Azure Migrate",
+   "Hybrid Cloud",
+   "AD Integration",
+   "SQL Migration",
+   "VM Migration",
+   "App Service Migration"
+  ],
+  "benefits": [
+   "Microsoft integration",
+   "Hybrid flexibility",
+   "Enterprise features",
+   "Compliance",
+   "Global scale",
+   "Cost management"
+  ],
+  "technologies": [
+   {
+    "icon": "azure",
+    "name": "Azure Migrate"
+   },
+   {
+    "icon": "azure",
+    "name": "Azure Site Recovery"
+   },
+   {
+    "icon": "azure",
+    "name": "Azure DMS"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "big-data-etl",
+  "name": "Big Data & ETL",
+  "parentSlug": "data-analytics",
+  "shortDescription": "Build scalable data pipelines that extract, transform, and load data from any source.",
+  "fullDescription": "Handle data at any scale with robust ETL pipelines that collect, transform, and load into your data warehouse.",
+  "features": [
+   "ETL Pipeline Development",
+   "Data Warehouse Design",
+   "Real-Time Streaming",
+   "Data Quality",
+   "Schema Evolution",
+   "Pipeline Orchestration"
+  ],
+  "benefits": [
+   "Unified data",
+   "Reliable pipelines",
+   "Scalable processing",
+   "Clean data"
+  ],
+  "technologies": [
+   {
+    "icon": "spark",
+    "name": "Apache Spark"
+   },
+   {
+    "icon": "airflow",
+    "name": "Airflow"
+   },
+   {
+    "icon": "dbt",
+    "name": "dbt"
+   },
+   {
+    "icon": "snowflake",
+    "name": "Snowflake"
+   },
+   {
+    "icon": "kafka",
+    "name": "Kafka"
+   },
+   {
+    "icon": "googlecloud",
+    "name": "BigQuery"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "business-intelligence",
+  "name": "Business Intelligence",
+  "parentSlug": "data-analytics",
+  "shortDescription": "Transform data into interactive dashboards and reports that drive decisions.",
+  "fullDescription": "Empower decision-makers with real-time BI dashboards, automated reports, and self-service analytics.",
+  "features": [
+   "Interactive Dashboards",
+   "Automated Reporting",
+   "KPI Tracking",
+   "Self-Service Analytics",
+   "Data Modeling",
+   "Executive Scorecards"
+  ],
+  "benefits": [
+   "Faster decisions",
+   "Real-time visibility",
+   "Less reporting time",
+   "Data democratization"
+  ],
+  "technologies": [
+   {
+    "icon": "tableau",
+    "name": "Tableau"
+   },
+   {
+    "icon": "powerbi",
+    "name": "Power BI"
+   },
+   {
+    "icon": "looker",
+    "name": "Looker"
+   },
+   {
+    "icon": "metabase",
+    "name": "Metabase"
+   },
+   {
+    "icon": "dbt",
+    "name": "dbt"
+   },
+   {
+    "icon": "snowflake",
+    "name": "Snowflake"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "ci-cd-pipelines",
+  "name": "CI/CD Pipelines",
+  "parentSlug": "devops-cloud",
+  "shortDescription": "Automate your build, test, and deployment process for faster, reliable releases.",
+  "fullDescription": "Ship code faster with automated CI/CD pipelines that build, test, and deploy automatically.",
+  "features": [
+   "Pipeline Design",
+   "Automated Testing",
+   "Multi-Environment Deploys",
+   "Rollback Strategies",
+   "Security Scanning",
+   "Monitoring"
+  ],
+  "benefits": [
+   "Faster releases",
+   "Fewer failures",
+   "Consistent deploys",
+   "Early bug detection"
+  ],
+  "technologies": [
+   {
+    "icon": "github",
+    "name": "GitHub Actions"
+   },
+   {
+    "icon": "gitlab",
+    "name": "GitLab CI"
+   },
+   {
+    "icon": "jenkins",
+    "name": "Jenkins"
+   },
+   {
+    "icon": "argocd",
+    "name": "ArgoCD"
+   },
+   {
+    "icon": "docker",
+    "name": "Docker"
+   },
+   {
+    "icon": "terraform",
+    "name": "Terraform"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "cloud-cost-optimization",
+  "name": "Cloud Cost Optimization",
+  "parentSlug": "devops-cloud",
+  "shortDescription": "Analyze and optimize AWS, Azure, or GCP costs with FinOps practices.",
+  "fullDescription": "Cloud bills grow faster than expected. We analyze spending, identify waste, and implement optimizations.",
+  "features": [
+   "Cost Analysis & Attribution",
+   "Rightsizing Recommendations",
+   "Reserved Instance Planning",
+   "Spot Instance Strategies",
+   "Idle Resource Detection",
+   "Architecture Optimization",
+   "Cost Allocation Tags",
+   "Budget Alerts & Governance"
+  ],
+  "benefits": [
+   "20-40% typical cost reduction",
+   "Visibility into spending",
+   "Accountability by team",
+   "Predictable budgets",
+   "Sustainable growth",
+   "Better architecture decisions"
+  ],
+  "technologies": [
+   {
+    "icon": "📊",
+    "name": "AWS Cost Explorer"
+   },
+   {
+    "icon": "☸️",
+    "name": "Kubecost"
+   },
+   {
+    "icon": "💵",
+    "name": "Infracost"
+   },
+   {
+    "icon": "☁️",
+    "name": "CloudHealth"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 5
+ },
+ {
+  "slug": "cloud-management",
+  "name": "Cloud Management",
+  "parentSlug": "devops-cloud",
+  "shortDescription": "Optimize and manage your cloud for performance, cost, and security.",
+  "fullDescription": "Get the most from your cloud investment with management and optimization across AWS, Azure, and GCP.",
+  "features": [
+   "Cost Optimization",
+   "Performance Monitoring",
+   "Security Management",
+   "Resource Right-Sizing",
+   "Multi-Cloud",
+   "Compliance"
+  ],
+  "benefits": [
+   "30-50% cost reduction",
+   "Improved reliability",
+   "Security compliance",
+   "Expert operations"
+  ],
+  "technologies": [
+   {
+    "icon": "aws",
+    "name": "AWS"
+   },
+   {
+    "icon": "azure",
+    "name": "Azure"
+   },
+   {
+    "icon": "googlecloud",
+    "name": "Google Cloud"
+   },
+   {
+    "icon": "terraform",
+    "name": "Terraform"
+   },
+   {
+    "icon": "cloudhealth",
+    "name": "CloudHealth"
+   },
+   {
+    "icon": "datadog",
+    "name": "Datadog"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "cloud-migration",
+  "name": "Cloud Migration",
+  "parentSlug": null,
+  "shortDescription": "Migrate your infrastructure to the cloud securely and efficiently.",
+  "fullDescription": "Move to the cloud with confidence. We plan and execute cloud migrations to AWS, Azure, or Google Cloud with minimal downtime and maximum efficiency.",
+  "features": [
+   "Assessment",
+   "Migration Planning",
+   "Data Migration",
+   "Application Migration",
+   "Testing",
+   "Optimization"
+  ],
+  "benefits": [
+   "Reduced costs",
+   "Scalability",
+   "Better performance",
+   "Global reach",
+   "Disaster recovery",
+   "Modern infrastructure"
+  ],
+  "technologies": [
+   {
+    "icon": "aws",
+    "name": "AWS"
+   },
+   {
+    "icon": "azure",
+    "name": "Azure"
+   },
+   {
+    "icon": "gcp",
+    "name": "GCP"
+   },
+   {
+    "icon": "terraform",
+    "name": "Terraform"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "continuous-monitoring",
+  "name": "Continuous Monitoring",
+  "parentSlug": "managed-services",
+  "shortDescription": "24/7 infrastructure and application monitoring.",
+  "fullDescription": "Never miss an issue. We implement comprehensive monitoring for infrastructure, applications, and business metrics with intelligent alerting.",
+  "features": [
+   "Infrastructure Monitoring",
+   "APM",
+   "Log Management",
+   "Alerting",
+   "Dashboards",
+   "On-call Support"
+  ],
+  "benefits": [
+   "Early detection",
+   "Faster resolution",
+   "Visibility",
+   "Trend analysis",
+   "Proactive management",
+   "Reduced downtime"
+  ],
+  "technologies": [
+   {
+    "icon": "datadog",
+    "name": "Datadog"
+   },
+   {
+    "icon": "prometheus",
+    "name": "Prometheus"
+   },
+   {
+    "icon": "grafana",
+    "name": "Grafana"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "core-web-vitals",
+  "name": "Core Web Vitals",
+  "parentSlug": "performance-optimization",
+  "shortDescription": "Improve Core Web Vitals for better SEO and user experience.",
+  "fullDescription": "Pass Core Web Vitals. We optimize LCP, FID, CLS, and INP to meet Google performance requirements and improve real user experience.",
+  "features": [
+   "LCP Optimization",
+   "FID/INP Fix",
+   "CLS Prevention",
+   "Real User Monitoring",
+   "Lab Testing",
+   "Continuous Tracking"
+  ],
+  "benefits": [
+   "Better SEO",
+   "Improved UX",
+   "Google compliance",
+   "Higher rankings",
+   "User satisfaction",
+   "Competitive edge"
+  ],
+  "technologies": [
+   {
+    "icon": "google",
+    "name": "PageSpeed Insights"
+   },
+   {
+    "icon": "google",
+    "name": "Web Vitals"
+   },
+   {
+    "icon": "chart",
+    "name": "RUM"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "cybersecurity",
+  "name": "Cybersecurity",
+  "parentSlug": null,
+  "shortDescription": "Protect your digital assets with enterprise-grade security.",
+  "fullDescription": "Safeguard your business from cyber threats with our comprehensive security solutions. We provide end-to-end cybersecurity services including vulnerability assessments, penetration testing, security architecture design, and incident response. Our team helps you build a robust security posture that protects your data, systems, and reputation.",
+  "features": [
+   "Vulnerability Assessment & Penetration Testing",
+   "Security Architecture Design",
+   "Cloud Security Solutions",
+   "Identity & Access Management (IAM)",
+   "Security Information & Event Management (SIEM)",
+   "Incident Response & Recovery",
+   "Compliance & Regulatory Support",
+   "Security Awareness Training"
+  ],
+  "benefits": [
+   "Protect sensitive data and customer information",
+   "Maintain compliance with industry regulations",
+   "Reduce risk of costly data breaches",
+   "Build customer trust and confidence",
+   "Enable secure digital transformation",
+   "Minimize business disruption from incidents"
+  ],
+  "technologies": [
+   {
+    "icon": "aws",
+    "name": "AWS Security"
+   },
+   {
+    "icon": "azure",
+    "name": "Azure Security"
+   },
+   {
+    "icon": "splunk",
+    "name": "Splunk"
+   },
+   {
+    "icon": "crowdstrike",
+    "name": "CrowdStrike"
+   },
+   {
+    "icon": "okta",
+    "name": "Okta"
+   },
+   {
+    "icon": "paloalto",
+    "name": "Palo Alto"
+   },
+   {
+    "icon": "qualys",
+    "name": "Qualys"
+   },
+   {
+    "icon": "hashicorp",
+    "name": "HashiCorp Vault"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "cybersecurity-auditing",
+  "name": "Cybersecurity Auditing",
+  "parentSlug": "cybersecurity",
+  "shortDescription": "Identify security vulnerabilities before attackers do with thorough security audits.",
+  "fullDescription": "Cybersecurity audits reveal vulnerabilities before they become breaches. We conduct comprehensive security assessments covering application security, infrastructure, cloud configurations, and compliance. Our audits include vulnerability scanning, code review, configuration analysis, and actionable remediation guidance prioritized by risk.",
+  "features": [
+   "Application Security Audit",
+   "Infrastructure Assessment",
+   "Cloud Security Review",
+   "Code Security Review",
+   "Compliance Gap Analysis",
+   "Social Engineering Assessment",
+   "Third-Party Risk Assessment",
+   "Executive Risk Report"
+  ],
+  "benefits": [
+   "Identify vulnerabilities proactively",
+   "Prioritized remediation roadmap",
+   "Compliance documentation",
+   "Reduced breach risk",
+   "Security posture baseline",
+   "Stakeholder confidence"
+  ],
+  "technologies": [
+   {
+    "icon": "🕷️",
+    "name": "Burp Suite"
+   },
+   {
+    "icon": "🔍",
+    "name": "Nessus"
+   },
+   {
+    "icon": "⚡",
+    "name": "OWASP ZAP"
+   },
+   {
+    "icon": "📝",
+    "name": "Semgrep"
+   },
+   {
+    "icon": "☁️",
+    "name": "ScoutSuite"
+   },
+   {
+    "icon": "🐳",
+    "name": "Trivy"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "data-analytics",
+  "name": "Data Analytics",
+  "parentSlug": null,
+  "shortDescription": "Transform raw data into actionable business insights.",
+  "fullDescription": "Turn your data into a competitive advantage. Our data analytics services help you collect, process, and visualize data to uncover patterns, trends, and insights that drive better business decisions. From real-time dashboards to comprehensive reporting solutions, we empower your organization to become truly data-driven.",
+  "features": [
+   "Business Intelligence Dashboards",
+   "Real-time Data Visualization",
+   "ETL Pipeline Development",
+   "Data Warehouse Design",
+   "Custom Reporting Solutions",
+   "KPI Tracking & Monitoring",
+   "Data Quality Management",
+   "Self-Service Analytics Tools"
+  ],
+  "benefits": [
+   "Make faster, data-driven decisions",
+   "Identify revenue opportunities and cost savings",
+   "Understand customer behavior and preferences",
+   "Monitor business performance in real-time",
+   "Predict future trends and market changes",
+   "Improve operational efficiency"
+  ],
+  "technologies": [
+   {
+    "icon": "tableau",
+    "name": "Tableau"
+   },
+   {
+    "icon": "powerbi",
+    "name": "Power BI"
+   },
+   {
+    "icon": "spark",
+    "name": "Apache Spark"
+   },
+   {
+    "icon": "snowflake",
+    "name": "Snowflake"
+   },
+   {
+    "icon": "googlecloud",
+    "name": "BigQuery"
+   },
+   {
+    "icon": "looker",
+    "name": "Looker"
+   },
+   {
+    "icon": "dbt",
+    "name": "dbt"
+   },
+   {
+    "icon": "airflow",
+    "name": "Airflow"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "database-design",
+  "name": "Database Design",
+  "parentSlug": "database-services",
+  "shortDescription": "Design scalable, efficient database schemas for your applications.",
+  "fullDescription": "Build databases that perform. We design optimized schemas with proper normalization, indexing strategies, and data models that scale with your business.",
+  "features": [
+   "Schema Design",
+   "Data Modeling",
+   "Normalization",
+   "Index Strategy",
+   "Relationship Design",
+   "Documentation"
+  ],
+  "benefits": [
+   "Efficient queries",
+   "Data integrity",
+   "Scalability",
+   "Maintainability",
+   "Performance",
+   "Clear structure"
+  ],
+  "technologies": [
+   {
+    "icon": "postgresql",
+    "name": "PostgreSQL"
+   },
+   {
+    "icon": "diagram",
+    "name": "ERD Tools"
+   },
+   {
+    "icon": "prisma",
+    "name": "Prisma"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "database-design-optimization",
+  "name": "Database Design & Optimization",
+  "parentSlug": "data-analytics",
+  "shortDescription": "Design efficient database schemas and optimize query performance for scalable, fast applications.",
+  "fullDescription": "Build a solid data foundation for your application. We design normalized schemas, optimize indexes, tune queries, and implement caching strategies that keep your database fast as you scale to millions of records.",
+  "features": [
+   "Schema Design & Modeling",
+   "Index Optimization",
+   "Query Performance Tuning",
+   "Database Migration",
+   "Replication & Sharding",
+   "Caching Strategies",
+   "Backup & Recovery",
+   "Database Monitoring"
+  ],
+  "benefits": [
+   "Sub-millisecond query response",
+   "Handle millions of records",
+   "Reduced infrastructure costs",
+   "Data integrity & consistency",
+   "Disaster recovery ready",
+   "Scalable architecture"
+  ],
+  "technologies": [
+   {
+    "icon": "postgresql",
+    "name": "PostgreSQL"
+   },
+   {
+    "icon": "mysql",
+    "name": "MySQL"
+   },
+   {
+    "icon": "mongodb",
+    "name": "MongoDB"
+   },
+   {
+    "icon": "redis",
+    "name": "Redis"
+   },
+   {
+    "icon": "prisma",
+    "name": "Prisma"
+   },
+   {
+    "icon": "postgresql",
+    "name": "PgBouncer"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "database-migration",
+  "name": "Database Migration",
+  "parentSlug": "database-services",
+  "shortDescription": "Migrate databases between platforms with zero data loss.",
+  "fullDescription": "Move databases safely. We handle complex database migrations between platforms, versions, and cloud providers with comprehensive testing and minimal downtime.",
+  "features": [
+   "Platform Migration",
+   "Version Upgrades",
+   "Cloud Migration",
+   "Data Validation",
+   "Cutover Planning",
+   "Rollback Strategy"
+  ],
+  "benefits": [
+   "Zero data loss",
+   "Minimal downtime",
+   "Platform flexibility",
+   "Version currency",
+   "Risk mitigation",
+   "Validated migration"
+  ],
+  "technologies": [
+   {
+    "icon": "aws",
+    "name": "AWS DMS"
+   },
+   {
+    "icon": "postgresql",
+    "name": "pgloader"
+   },
+   {
+    "icon": "tools",
+    "name": "Migration Tools"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "database-optimization",
+  "name": "Database Optimization",
+  "parentSlug": "database-services",
+  "shortDescription": "Optimize database performance for faster queries and lower costs.",
+  "fullDescription": "Make your database fly. We analyze and optimize query performance, indexing, caching, and configuration for significant performance improvements.",
+  "features": [
+   "Query Analysis",
+   "Index Optimization",
+   "Configuration Tuning",
+   "Caching Strategy",
+   "Connection Pooling",
+   "Performance Monitoring"
+  ],
+  "benefits": [
+   "Faster queries",
+   "Reduced costs",
+   "Better scalability",
+   "Improved UX",
+   "Resource efficiency",
+   "Proactive management"
+  ],
+  "technologies": [
+   {
+    "icon": "database",
+    "name": "EXPLAIN"
+   },
+   {
+    "icon": "postgresql",
+    "name": "pg_stat"
+   },
+   {
+    "icon": "redis",
+    "name": "Redis"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "database-services",
+  "name": "Database Services",
+  "parentSlug": null,
+  "shortDescription": "Comprehensive database design, optimization, and management.",
+  "fullDescription": "Get the most from your data. We provide end-to-end database services from design through optimization, covering SQL, NoSQL, and cloud-native databases.",
+  "features": [
+   "Database Design",
+   "Performance Tuning",
+   "Migration",
+   "High Availability",
+   "Backup & Recovery",
+   "Monitoring"
+  ],
+  "benefits": [
+   "Better performance",
+   "Data integrity",
+   "High availability",
+   "Cost optimization",
+   "Scalability",
+   "Expert support"
+  ],
+  "technologies": [
+   {
+    "icon": "postgresql",
+    "name": "PostgreSQL"
+   },
+   {
+    "icon": "mysql",
+    "name": "MySQL"
+   },
+   {
+    "icon": "mongodb",
+    "name": "MongoDB"
+   },
+   {
+    "icon": "redis",
+    "name": "Redis"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "devops-cloud",
+  "name": "DevOps & Cloud",
+  "parentSlug": null,
+  "shortDescription": "Streamline development and scale with cloud infrastructure.",
+  "fullDescription": "Accelerate your software delivery with modern DevOps practices and cloud-native architecture. We help you build automated CI/CD pipelines, implement infrastructure as code, and migrate to cloud platforms. Our DevOps services reduce deployment time, improve reliability, and enable your team to ship faster with confidence.",
+  "features": [
+   "CI/CD Pipeline Automation",
+   "Infrastructure as Code (IaC)",
+   "Cloud Migration & Architecture",
+   "Kubernetes & Container Orchestration",
+   "Monitoring & Observability",
+   "Cost Optimization",
+   "Disaster Recovery & Backup",
+   "Site Reliability Engineering (SRE)"
+  ],
+  "benefits": [
+   "Deploy updates faster with automated pipelines",
+   "Reduce infrastructure costs with optimization",
+   "Scale automatically based on demand",
+   "Improve system reliability and uptime",
+   "Enable faster recovery from failures",
+   "Empower developers with self-service infrastructure"
+  ],
+  "technologies": [
+   {
+    "icon": "aws",
+    "name": "AWS"
+   },
+   {
+    "icon": "azure",
+    "name": "Azure"
+   },
+   {
+    "icon": "googlecloud",
+    "name": "Google Cloud"
+   },
+   {
+    "icon": "kubernetes",
+    "name": "Kubernetes"
+   },
+   {
+    "icon": "docker",
+    "name": "Docker"
+   },
+   {
+    "icon": "terraform",
+    "name": "Terraform"
+   },
+   {
+    "icon": "github",
+    "name": "GitHub Actions"
+   },
+   {
+    "icon": "jenkins",
+    "name": "Jenkins"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "disaster-recovery",
+  "name": "Disaster Recovery",
+  "parentSlug": "managed-services",
+  "shortDescription": "Plan and implement disaster recovery for business continuity.",
+  "fullDescription": "Be prepared for anything. We design and implement disaster recovery solutions with defined RPO/RTO, automated failover, and regular testing.",
+  "features": [
+   "DR Planning",
+   "Backup Strategy",
+   "Failover Setup",
+   "Testing",
+   "Documentation",
+   "Recovery Automation"
+  ],
+  "benefits": [
+   "Business continuity",
+   "Data protection",
+   "Faster recovery",
+   "Compliance",
+   "Peace of mind",
+   "Risk mitigation"
+  ],
+  "technologies": [
+   {
+    "icon": "aws",
+    "name": "AWS Backup"
+   },
+   {
+    "icon": "azure",
+    "name": "Azure Site Recovery"
+   },
+   {
+    "icon": "veeam",
+    "name": "Veeam"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "disaster-recovery-planning",
+  "name": "Disaster Recovery Planning",
+  "parentSlug": "devops-cloud",
+  "shortDescription": "Design and implement DR strategies for cloud and on-premise infrastructure.",
+  "fullDescription": "Disasters happen. We design and implement disaster recovery solutions that ensure business continuity.",
+  "features": [
+   "DR Strategy & Planning",
+   "Backup Architecture",
+   "Multi-Region Failover",
+   "RTO/RPO Definition",
+   "Automated Recovery",
+   "DR Testing & Drills",
+   "Runbook Development",
+   "Ransomware Recovery"
+  ],
+  "benefits": [
+   "Business continuity",
+   "Regulatory compliance",
+   "Customer trust",
+   "Reduced downtime costs",
+   "Predictable recovery",
+   "Insurance requirements"
+  ],
+  "technologies": [
+   {
+    "icon": "☁️",
+    "name": "AWS Backup"
+   },
+   {
+    "icon": "🔷",
+    "name": "Azure Site Recovery"
+   },
+   {
+    "icon": "💾",
+    "name": "Veeam"
+   },
+   {
+    "icon": "🏗️",
+    "name": "Terraform"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 5
+ },
+ {
+  "slug": "docker-kubernetes",
+  "name": "Docker & Kubernetes",
+  "parentSlug": "devops-cloud",
+  "shortDescription": "Containerize applications and orchestrate deployments with Docker and Kubernetes.",
+  "fullDescription": "Modernize your infrastructure with containers for scalable, portable, and resilient deployments.",
+  "features": [
+   "Containerization",
+   "Kubernetes Clusters",
+   "Helm Charts",
+   "Service Mesh",
+   "Auto-Scaling",
+   "Container Security"
+  ],
+  "benefits": [
+   "Consistent environments",
+   "Efficient resources",
+   "Auto-scaling",
+   "Portable deploys"
+  ],
+  "technologies": [
+   {
+    "icon": "docker",
+    "name": "Docker"
+   },
+   {
+    "icon": "kubernetes",
+    "name": "Kubernetes"
+   },
+   {
+    "icon": "helm",
+    "name": "Helm"
+   },
+   {
+    "icon": "istio",
+    "name": "Istio"
+   },
+   {
+    "icon": "prometheus",
+    "name": "Prometheus"
+   },
+   {
+    "icon": "grafana",
+    "name": "Grafana"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "gdpr-compliance",
+  "name": "GDPR Compliance",
+  "parentSlug": "cybersecurity",
+  "shortDescription": "Achieve and maintain GDPR compliance for your organization.",
+  "fullDescription": "Navigate GDPR with confidence. We help organizations achieve compliance with data protection regulations including gap analysis, implementation, and ongoing support.",
+  "features": [
+   "Gap Analysis",
+   "Policy Development",
+   "Technical Implementation",
+   "Training",
+   "DPO Support",
+   "Audit Support"
+  ],
+  "benefits": [
+   "Legal compliance",
+   "Risk reduction",
+   "Customer trust",
+   "Competitive advantage",
+   "Avoid fines",
+   "Best practices"
+  ],
+  "technologies": [
+   {
+    "icon": "shield",
+    "name": "Privacy Tools"
+   },
+   {
+    "icon": "document",
+    "name": "Documentation"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "google-cloud-migration",
+  "name": "Google Cloud Migration",
+  "parentSlug": "cloud-migration",
+  "shortDescription": "Migrate to Google Cloud Platform for data and AI-ready infrastructure.",
+  "fullDescription": "Move to GCP for cutting-edge capabilities. We migrate workloads to Google Cloud with focus on data analytics, machine learning, and Kubernetes-native applications.",
+  "features": [
+   "GCP Assessment",
+   "Anthos Migration",
+   "BigQuery Migration",
+   "GKE Deployment",
+   "Cloud SQL",
+   "Data Migration"
+  ],
+  "benefits": [
+   "Data & AI ready",
+   "Kubernetes native",
+   "BigQuery analytics",
+   "Global network",
+   "Cost efficiency",
+   "Innovation"
+  ],
+  "technologies": [
+   {
+    "icon": "gcp",
+    "name": "Migrate for Compute"
+   },
+   {
+    "icon": "gcp",
+    "name": "Anthos"
+   },
+   {
+    "icon": "gcp",
+    "name": "BigQuery"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "identity-access-management",
+  "name": "Identity & Access Management",
+  "parentSlug": "cybersecurity",
+  "shortDescription": "Build robust IAM solutions with SSO, MFA, RBAC, and identity federation.",
+  "fullDescription": "Identity and Access Management is the foundation of application security. We implement SSO, MFA, RBAC, and identity federation.",
+  "features": [
+   "Single Sign-On (SSO)",
+   "Multi-Factor Authentication",
+   "Role-Based Access Control",
+   "Identity Federation",
+   "OAuth 2.0 / OpenID Connect",
+   "Directory Integration",
+   "Privileged Access Management",
+   "Audit Logging"
+  ],
+  "benefits": [
+   "Enhanced security posture",
+   "Simplified user experience",
+   "Centralized access control",
+   "Compliance support",
+   "Reduced password fatigue",
+   "Audit trail for access"
+  ],
+  "technologies": [
+   {
+    "icon": "🔒",
+    "name": "Auth0"
+   },
+   {
+    "icon": "🔵",
+    "name": "Okta"
+   },
+   {
+    "icon": "🔑",
+    "name": "Keycloak"
+   },
+   {
+    "icon": "🔷",
+    "name": "Azure AD"
+   },
+   {
+    "icon": "☁️",
+    "name": "AWS Cognito"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 5
+ },
+ {
+  "slug": "infrastructure-as-code",
+  "name": "Infrastructure as Code",
+  "parentSlug": "devops-cloud",
+  "shortDescription": "Manage infrastructure with code for consistency and automation.",
+  "fullDescription": "Treat infrastructure like software. We implement IaC using Terraform, Pulumi, or CloudFormation for version-controlled, reproducible, and automated infrastructure.",
+  "features": [
+   "Terraform",
+   "CloudFormation",
+   "Pulumi",
+   "GitOps",
+   "Module Development",
+   "State Management"
+  ],
+  "benefits": [
+   "Reproducibility",
+   "Version control",
+   "Automation",
+   "Consistency",
+   "Documentation",
+   "Disaster recovery"
+  ],
+  "technologies": [
+   {
+    "icon": "terraform",
+    "name": "Terraform"
+   },
+   {
+    "icon": "aws",
+    "name": "AWS CDK"
+   },
+   {
+    "icon": "pulumi",
+    "name": "Pulumi"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "kubernetes-orchestration",
+  "name": "Kubernetes Orchestration",
+  "parentSlug": "devops-cloud",
+  "shortDescription": "Orchestrate containers with Kubernetes for scalable, resilient microservices deployments.",
+  "fullDescription": "Kubernetes is the standard for container orchestration. We help you adopt Kubernetes effectively—from initial cluster setup to production-grade deployments. Our services cover cluster architecture, workload migration, CI/CD integration, monitoring, and ongoing operations for self-managed or managed Kubernetes (EKS, GKE, AKS).",
+  "features": [
+   "Cluster Architecture & Setup",
+   "Workload Migration",
+   "Helm Chart Development",
+   "Service Mesh (Istio/Linkerd)",
+   "GitOps with ArgoCD/Flux",
+   "Monitoring & Observability",
+   "Security & RBAC",
+   "Cost Optimization"
+  ],
+  "benefits": [
+   "Automatic scaling based on demand",
+   "Self-healing deployments",
+   "Consistent environments dev to prod",
+   "Efficient resource utilization",
+   "Declarative infrastructure",
+   "Portable across clouds"
+  ],
+  "technologies": [
+   {
+    "icon": "☸️",
+    "name": "Kubernetes"
+   },
+   {
+    "icon": "⎈",
+    "name": "Helm"
+   },
+   {
+    "icon": "🔄",
+    "name": "ArgoCD"
+   },
+   {
+    "icon": "📊",
+    "name": "Prometheus"
+   },
+   {
+    "icon": "🕸️",
+    "name": "Istio"
+   },
+   {
+    "icon": "🤠",
+    "name": "Rancher"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "maintenance-support",
+  "name": "Maintenance & Support",
+  "parentSlug": "managed-services",
+  "shortDescription": "Ongoing maintenance and support for your applications.",
+  "fullDescription": "Keep your applications running smoothly. We provide ongoing maintenance, updates, bug fixes, and support to ensure reliability and security.",
+  "features": [
+   "Bug Fixes",
+   "Security Updates",
+   "Feature Updates",
+   "Performance Tuning",
+   "Technical Support",
+   "Documentation"
+  ],
+  "benefits": [
+   "Reliability",
+   "Security",
+   "Up-to-date software",
+   "Expert support",
+   "Peace of mind",
+   "Cost efficiency"
+  ],
+  "technologies": [
+   {
+    "icon": "git",
+    "name": "Version Control"
+   },
+   {
+    "icon": "cicd",
+    "name": "CI/CD"
+   },
+   {
+    "icon": "ticket",
+    "name": "Ticketing"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "managed-services",
+  "name": "Managed Services",
+  "parentSlug": null,
+  "shortDescription": "Comprehensive managed services for your IT infrastructure.",
+  "fullDescription": "Let us handle your IT. We provide end-to-end managed services including monitoring, maintenance, support, and optimization for your infrastructure.",
+  "features": [
+   "24/7 Monitoring",
+   "Incident Response",
+   "Maintenance",
+   "Security Management",
+   "Backup & Recovery",
+   "Performance Management"
+  ],
+  "benefits": [
+   "Peace of mind",
+   "Reduced downtime",
+   "Expert support",
+   "Cost predictability",
+   "Focus on business",
+   "Proactive management"
+  ],
+  "technologies": [
+   {
+    "icon": "chart",
+    "name": "Monitoring Tools"
+   },
+   {
+    "icon": "cog",
+    "name": "Automation"
+   },
+   {
+    "icon": "shield",
+    "name": "Security"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "ml-pipelines",
+  "name": "ML Pipelines",
+  "parentSlug": "mlops-deployment",
+  "shortDescription": "Build automated ML pipelines for training and deployment.",
+  "fullDescription": "Create end-to-end ML pipelines that automate data processing, training, validation, and deployment. Reproducible, versioned, and ready for continuous improvement.",
+  "features": [
+   "Data Pipelines",
+   "Feature Engineering",
+   "Training Automation",
+   "Validation Gates",
+   "Deployment Automation",
+   "Experiment Tracking"
+  ],
+  "benefits": [
+   "Reproducibility",
+   "Faster iteration",
+   "Quality gates",
+   "Team collaboration",
+   "Audit trail",
+   "Scalable ML"
+  ],
+  "technologies": [
+   {
+    "icon": "kubernetes",
+    "name": "Kubeflow"
+   },
+   {
+    "icon": "airflow",
+    "name": "Airflow"
+   },
+   {
+    "icon": "mlflow",
+    "name": "MLflow"
+   },
+   {
+    "icon": "dvc",
+    "name": "DVC"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "mlops-deployment",
+  "name": "MLOps Deployment",
+  "parentSlug": null,
+  "shortDescription": "Deploy, monitor, and scale ML models in production with confidence.",
+  "fullDescription": "Bridge the gap between ML experimentation and production with our MLOps services. We build automated pipelines for model training, testing, deployment, and monitoring. Our MLOps practices ensure your models are reproducible, scalable, and continuously improving in production environments.",
+  "features": [
+   "Model Serving & Inference APIs",
+   "Automated Training Pipelines",
+   "Model Versioning & Registry",
+   "Performance Monitoring & Drift Detection",
+   "A/B Testing & Canary Deployments",
+   "GPU Infrastructure Management"
+  ],
+  "benefits": [
+   "Deploy models to production faster",
+   "Ensure model reproducibility",
+   "Detect and respond to model drift",
+   "Scale inference based on demand",
+   "Reduce ML infrastructure costs"
+  ],
+  "technologies": [
+   {
+    "icon": "mlflow",
+    "name": "MLflow"
+   },
+   {
+    "icon": "kubeflow",
+    "name": "Kubeflow"
+   },
+   {
+    "icon": "kubernetes",
+    "name": "Kubernetes"
+   },
+   {
+    "icon": "docker",
+    "name": "Docker"
+   },
+   {
+    "icon": "seldon",
+    "name": "Seldon Core"
+   },
+   {
+    "icon": "wandb",
+    "name": "Weights & Biases"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "model-deployment",
+  "name": "Model Deployment",
+  "parentSlug": "mlops-deployment",
+  "shortDescription": "Deploy machine learning models to production reliably.",
+  "fullDescription": "Take ML models from notebook to production. We handle containerization, API development, scaling, monitoring, and versioning for reliable model serving.",
+  "features": [
+   "Model Serving",
+   "API Development",
+   "Auto-scaling",
+   "A/B Testing",
+   "Versioning",
+   "Rollback"
+  ],
+  "benefits": [
+   "Production ready",
+   "Reliable serving",
+   "Easy updates",
+   "Cost optimization",
+   "Performance monitoring",
+   "Fast iteration"
+  ],
+  "technologies": [
+   {
+    "icon": "docker",
+    "name": "Docker"
+   },
+   {
+    "icon": "kubernetes",
+    "name": "Kubernetes"
+   },
+   {
+    "icon": "python",
+    "name": "FastAPI"
+   },
+   {
+    "icon": "mlflow",
+    "name": "MLflow"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "model-monitoring",
+  "name": "Model Monitoring",
+  "parentSlug": "mlops-deployment",
+  "shortDescription": "Monitor ML models in production for drift and performance.",
+  "fullDescription": "Keep models performing well in production. We implement drift detection, performance monitoring, alerting, and automated retraining triggers to maintain model quality.",
+  "features": [
+   "Drift Detection",
+   "Performance Tracking",
+   "Alerting",
+   "Dashboard",
+   "Retraining Triggers",
+   "Data Quality"
+  ],
+  "benefits": [
+   "Quality assurance",
+   "Early warning",
+   "Automated response",
+   "Visibility",
+   "Compliance",
+   "Continuous improvement"
+  ],
+  "technologies": [
+   {
+    "icon": "ai",
+    "name": "Evidently"
+   },
+   {
+    "icon": "prometheus",
+    "name": "Prometheus"
+   },
+   {
+    "icon": "grafana",
+    "name": "Grafana"
+   },
+   {
+    "icon": "mlflow",
+    "name": "MLflow"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "penetration-testing",
+  "name": "Penetration Testing",
+  "parentSlug": "cybersecurity",
+  "shortDescription": "Ethical hacking to find vulnerabilities attackers would exploit, before they do.",
+  "fullDescription": "Penetration testing simulates real-world attacks on your systems. Our certified ethical hackers attempt to breach your defenses using the same techniques as malicious actors. We test web applications, APIs, networks, cloud infrastructure, and employee awareness. You get proof of exploitability and concrete steps to fix vulnerabilities.",
+  "features": [
+   "Web Application Pentesting",
+   "API Security Testing",
+   "Network Penetration Testing",
+   "Cloud Infrastructure Testing",
+   "Mobile App Pentesting",
+   "Red Team Exercises",
+   "Phishing Simulations",
+   "Physical Security Testing"
+  ],
+  "benefits": [
+   "Proof of exploitability",
+   "Real-world attack simulation",
+   "Validate security controls",
+   "Compliance requirement fulfillment",
+   "Security awareness improvement",
+   "Incident response preparation"
+  ],
+  "technologies": [
+   {
+    "icon": "💀",
+    "name": "Metasploit"
+   },
+   {
+    "icon": "🎯",
+    "name": "Cobalt Strike"
+   },
+   {
+    "icon": "🐉",
+    "name": "Kali Linux"
+   },
+   {
+    "icon": "🕷️",
+    "name": "Burp Suite"
+   },
+   {
+    "icon": "🐕",
+    "name": "BloodHound"
+   },
+   {
+    "icon": "⚛️",
+    "name": "Nuclei"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "performance-optimization",
+  "name": "Performance Optimization",
+  "parentSlug": null,
+  "shortDescription": "Optimize website and application performance for better UX.",
+  "fullDescription": "Make your applications fast. We analyze and optimize performance across the stack from frontend to backend to infrastructure.",
+  "features": [
+   "Performance Audit",
+   "Core Web Vitals",
+   "Backend Optimization",
+   "CDN Setup",
+   "Caching Strategy",
+   "Monitoring"
+  ],
+  "benefits": [
+   "Faster load times",
+   "Better SEO",
+   "Higher conversion",
+   "Lower bounce rate",
+   "Improved UX",
+   "Cost efficiency"
+  ],
+  "technologies": [
+   {
+    "icon": "google",
+    "name": "Lighthouse"
+   },
+   {
+    "icon": "test",
+    "name": "WebPageTest"
+   },
+   {
+    "icon": "cloud",
+    "name": "CDNs"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "performance-testing-optimization",
+  "name": "Performance Testing & Optimization",
+  "parentSlug": "devops-cloud",
+  "shortDescription": "Load testing, stress testing, and performance optimization for scalable apps.",
+  "fullDescription": "Performance issues destroy user experience. We conduct load tests, stress tests, and capacity planning to identify bottlenecks.",
+  "features": [
+   "Load Testing",
+   "Stress Testing",
+   "Capacity Planning",
+   "APM Implementation",
+   "Database Optimization",
+   "Caching Strategies",
+   "CDN Configuration",
+   "Performance Monitoring"
+  ],
+  "benefits": [
+   "Confident scaling",
+   "Better user experience",
+   "Reduced infrastructure costs",
+   "Proactive issue detection",
+   "Data-driven optimization",
+   "SLA compliance"
+  ],
+  "technologies": [
+   {
+    "icon": "📊",
+    "name": "k6"
+   },
+   {
+    "icon": "🦗",
+    "name": "Locust"
+   },
+   {
+    "icon": "📈",
+    "name": "Grafana"
+   },
+   {
+    "icon": "🐕",
+    "name": "Datadog"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 5
+ },
+ {
+  "slug": "python-automation",
+  "name": "Python Automation",
+  "parentSlug": null,
+  "shortDescription": "Automate workflows and processes with Python.",
+  "fullDescription": "Eliminate repetitive tasks and supercharge your productivity with custom Python automation solutions. From web scraping and data processing to report generation and system integration, we build scripts and applications that save hours of manual work. Our Python solutions are reliable, maintainable, and designed to scale with your needs.",
+  "features": [
+   "Web Scraping & Data Extraction",
+   "Report Generation & Automation",
+   "File Processing & Transformation",
+   "Email & Communication Automation",
+   "Database Operations & Migration",
+   "API Integration Scripts",
+   "Scheduled Task Automation",
+   "Testing & QA Automation"
+  ],
+  "benefits": [
+   "Save hundreds of hours on repetitive tasks",
+   "Reduce human error in data processing",
+   "Enable 24/7 automated operations",
+   "Free up staff for higher-value work",
+   "Improve data accuracy and consistency",
+   "Scale operations without adding headcount"
+  ],
+  "technologies": [
+   {
+    "icon": "python",
+    "name": "Python"
+   },
+   {
+    "icon": "selenium",
+    "name": "Selenium"
+   },
+   {
+    "icon": "beautifulsoup",
+    "name": "Beautiful Soup"
+   },
+   {
+    "icon": "pandas",
+    "name": "Pandas"
+   },
+   {
+    "icon": "celery",
+    "name": "Celery"
+   },
+   {
+    "icon": "airflow",
+    "name": "Apache Airflow"
+   },
+   {
+    "icon": "fastapi",
+    "name": "FastAPI"
+   },
+   {
+    "icon": "pytest",
+    "name": "Pytest"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "real-time-analytics",
+  "name": "Real-time Analytics",
+  "parentSlug": "data-analytics",
+  "shortDescription": "Process and analyze data in real-time for instant insights.",
+  "fullDescription": "Get insights as they happen. We build real-time analytics solutions that process streaming data and deliver instant dashboards and alerts.",
+  "features": [
+   "Stream Processing",
+   "Real-time Dashboards",
+   "Instant Alerts",
+   "Event Detection",
+   "Time Series",
+   "Scalability"
+  ],
+  "benefits": [
+   "Instant insights",
+   "Fast decisions",
+   "Anomaly detection",
+   "Competitive edge",
+   "Operational intelligence",
+   "Customer insights"
+  ],
+  "technologies": [
+   {
+    "icon": "kafka",
+    "name": "Kafka"
+   },
+   {
+    "icon": "flink",
+    "name": "Flink"
+   },
+   {
+    "icon": "clickhouse",
+    "name": "ClickHouse"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "security-audits-compliance",
+  "name": "Security Audits & Compliance",
+  "parentSlug": "cybersecurity",
+  "shortDescription": "Achieve and maintain security compliance with thorough audits and remediation.",
+  "fullDescription": "Meet regulatory requirements with comprehensive security audits against industry standards and compliance certifications.",
+  "features": [
+   "SOC 2 Compliance",
+   "ISO 27001",
+   "GDPR Compliance",
+   "PCI DSS",
+   "Security Policies",
+   "Risk Assessment"
+  ],
+  "benefits": [
+   "Regulatory compliance",
+   "Customer trust",
+   "Reduced legal risk",
+   "Competitive advantage"
+  ],
+  "technologies": [
+   {
+    "icon": "vanta",
+    "name": "Vanta"
+   },
+   {
+    "icon": "drata",
+    "name": "Drata"
+   },
+   {
+    "icon": "aws",
+    "name": "AWS Config"
+   },
+   {
+    "icon": "qualys",
+    "name": "Qualys"
+   },
+   {
+    "icon": "nessus",
+    "name": "Nessus"
+   },
+   {
+    "icon": "splunk",
+    "name": "Splunk"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "serverless-architecture",
+  "name": "Serverless Architecture",
+  "parentSlug": "devops-cloud",
+  "shortDescription": "Build scalable, cost-effective applications using serverless architecture with AWS Lambda, Vercel, and edge computing.",
+  "fullDescription": "Eliminate server management and pay only for what you use. We design and build serverless applications using AWS Lambda, Vercel Edge Functions, and managed services that auto-scale from zero to millions of requests.",
+  "features": [
+   "AWS Lambda & API Gateway",
+   "Vercel & Cloudflare Workers",
+   "Event-Driven Architecture",
+   "Serverless Databases",
+   "Edge Computing",
+   "Auto-Scaling & Cost Optimization",
+   "Monitoring & Observability",
+   "Cold Start Optimization"
+  ],
+  "benefits": [
+   "Zero server maintenance",
+   "Pay per execution, not uptime",
+   "Automatic scaling to any load",
+   "Reduced operational complexity",
+   "Global edge deployment",
+   "Faster time to market"
+  ],
+  "technologies": [
+   {
+    "icon": "aws",
+    "name": "AWS Lambda"
+   },
+   {
+    "icon": "vercel",
+    "name": "Vercel"
+   },
+   {
+    "icon": "cloudflare",
+    "name": "Cloudflare Workers"
+   },
+   {
+    "icon": "aws",
+    "name": "DynamoDB"
+   },
+   {
+    "icon": "terraform",
+    "name": "Terraform"
+   },
+   {
+    "icon": "sst",
+    "name": "SST"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "terraform-infrastructure",
+  "name": "Terraform Infrastructure",
+  "parentSlug": "devops-cloud",
+  "shortDescription": "Define and provision cloud infrastructure with Terraform for consistency and automation.",
+  "fullDescription": "Infrastructure as Code (IaC) with Terraform brings software engineering practices to infrastructure management. We help you adopt Terraform for consistent, version-controlled, automated infrastructure across AWS, Azure, GCP, and more. From initial setup to module development and CI/CD integration, we make your infrastructure reproducible and auditable.",
+  "features": [
+   "Terraform Module Development",
+   "Multi-Cloud Infrastructure",
+   "State Management & Backends",
+   "CI/CD Pipeline Integration",
+   "Drift Detection & Remediation",
+   "Security & Compliance as Code",
+   "Cost Estimation & Optimization",
+   "Migration from Manual Infrastructure"
+  ],
+  "benefits": [
+   "Version-controlled infrastructure",
+   "Reproducible environments",
+   "Reduced manual errors",
+   "Faster provisioning",
+   "Infrastructure documentation as code",
+   "Multi-cloud consistency"
+  ],
+  "technologies": [
+   {
+    "icon": "🏗️",
+    "name": "Terraform"
+   },
+   {
+    "icon": "☁️",
+    "name": "Terraform Cloud"
+   },
+   {
+    "icon": "🌱",
+    "name": "Terragrunt"
+   },
+   {
+    "icon": "🔒",
+    "name": "tfsec"
+   },
+   {
+    "icon": "✅",
+    "name": "Checkov"
+   },
+   {
+    "icon": "🏛️",
+    "name": "Atlantis"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 5
+ },
+ {
+  "slug": "web-scraping",
+  "name": "Web Scraping",
+  "parentSlug": "python-automation",
+  "shortDescription": "Extract valuable data from websites at scale with reliable web scraping solutions.",
+  "fullDescription": "Collect web data automatically with custom scrapers for product data, pricing, reviews, and competitive intelligence.",
+  "features": [
+   "Custom Scraper Development",
+   "Anti-Bot Strategies",
+   "Scheduled Collection",
+   "Data Cleaning",
+   "API Delivery",
+   "Proxy Management"
+  ],
+  "benefits": [
+   "Competitive intelligence",
+   "Price monitoring",
+   "Lead data",
+   "Market research at scale"
+  ],
+  "technologies": [
+   {
+    "icon": "python",
+    "name": "Python"
+   },
+   {
+    "icon": "scrapy",
+    "name": "Scrapy"
+   },
+   {
+    "icon": "selenium",
+    "name": "Selenium"
+   },
+   {
+    "icon": "beautifulsoup",
+    "name": "Beautiful Soup"
+   },
+   {
+    "icon": "playwright",
+    "name": "Playwright"
+   },
+   {
+    "icon": "postgresql",
+    "name": "PostgreSQL"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ },
+ {
+  "slug": "website-speed-optimization",
+  "name": "Website Speed Optimization",
+  "parentSlug": "performance-optimization",
+  "shortDescription": "Make your website lightning fast with comprehensive optimization.",
+  "fullDescription": "Speed up your website. We optimize images, code, caching, and delivery to dramatically improve load times and user experience.",
+  "features": [
+   "Image Optimization",
+   "Code Minification",
+   "Lazy Loading",
+   "CDN Setup",
+   "Browser Caching",
+   "Resource Hints"
+  ],
+  "benefits": [
+   "Faster pages",
+   "Better SEO",
+   "Higher conversion",
+   "Mobile performance",
+   "Reduced bounce",
+   "User satisfaction"
+  ],
+  "technologies": [
+   {
+    "icon": "google",
+    "name": "PageSpeed"
+   },
+   {
+    "icon": "cloudflare",
+    "name": "Cloudflare"
+   },
+   {
+    "icon": "webpack",
+    "name": "webpack"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "workflow-automation",
+  "name": "Workflow Automation",
+  "parentSlug": "python-automation",
+  "shortDescription": "Automate repetitive business workflows to save time and reduce errors.",
+  "fullDescription": "Eliminate manual tasks with custom workflow automations for reports, data processing, file management, and integrations.",
+  "features": [
+   "Process Optimization",
+   "Script Development",
+   "Scheduling",
+   "Cross-System Integration",
+   "Error Handling",
+   "Dashboard"
+  ],
+  "benefits": [
+   "Save hundreds of hours",
+   "Eliminate errors",
+   "Faster processes",
+   "24/7 operations"
+  ],
+  "technologies": [
+   {
+    "icon": "python",
+    "name": "Python"
+   },
+   {
+    "icon": "airflow",
+    "name": "Apache Airflow"
+   },
+   {
+    "icon": "celery",
+    "name": "Celery"
+   },
+   {
+    "icon": "n8n",
+    "name": "n8n"
+   },
+   {
+    "icon": "zapier",
+    "name": "Zapier"
+   },
+   {
+    "icon": "make",
+    "name": "Make"
+   }
+  ],
+  "faqCount": 4,
+  "processCount": 4
+ }
+]

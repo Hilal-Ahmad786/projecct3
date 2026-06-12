@@ -1,0 +1,278 @@
+{
+  "slug": "ai-agents",
+  "en": {
+    "name": "AI Agents",
+    "shortDescription": "Build autonomous AI agents that plan, use tools, and complete multi-step work on their own. We design agent systems with guardrails, memory, and human oversight — automation that handles complexity without losing control.",
+    "fullDescription": "An AI agent does more than answer questions — it breaks a goal into steps, calls your tools and APIs, checks its own results, and keeps going until the job is done. We build production agent systems on LangGraph, CrewAI, and the OpenAI and Claude APIs: single agents for focused tasks like research, triage, and reporting, and orchestrated multi-agent teams for workflows that span systems. Every agent ships with the parts demos skip — persistent memory, retry and error recovery, token budgets, full action logging, and human approval gates for sensitive steps. The result is automation you can audit and trust, not a black box. Most first agents reach production in 4–8 weeks.",
+    "features": [
+      "Multi-Agent Orchestration",
+      "Tool & API Integration",
+      "Memory & Context Management",
+      "Planning & Reasoning Frameworks",
+      "Human-in-the-Loop Approval Gates",
+      "Guardrails & Output Validation",
+      "Agent Evaluation & Benchmarking",
+      "Monitoring, Logging & Cost Controls"
+    ],
+    "benefits": [
+      "Automate multi-step workflows end to end",
+      "Scale operations without adding headcount",
+      "24/7 execution with human oversight where it matters",
+      "Full audit trail of every agent action",
+      "Lower operational costs on repetitive knowledge work",
+      "Handle tasks too complex for rule-based automation"
+    ],
+    "metaTitle": "AI Agent Development Services | PakSoft",
+    "metaDescription": "We build autonomous AI agents with tool use, memory, guardrails, and human oversight — production-ready in 4–8 weeks. Book a free agent feasibility consultation.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Workflow Discovery", "description": "We map the workflow you want to automate step by step, including the systems it touches and the decisions it requires. Together we define what success looks like and which steps must stay under human control." },
+        { "step": 2, "title": "Architecture & Model Selection", "description": "We choose between a single agent and a multi-agent design, and select models by comparing accuracy, latency, and cost on your actual tasks. Tool interfaces, memory strategy, and guardrails are specified before development starts." },
+        { "step": 3, "title": "Agent Development", "description": "We build the agent with typed tool integrations, structured outputs, and recovery logic for failed steps. Sensitive actions are wired through approval gates so a human signs off before anything irreversible happens." },
+        { "step": 4, "title": "Evaluation & Hardening", "description": "We test the agent against a benchmark set of real cases and measure task completion, accuracy, and cost per run. Edge cases that break the agent become regression tests before launch." },
+        { "step": 5, "title": "Pilot & Rollout", "description": "The agent first runs in shadow mode or on a limited scope while your team reviews its decisions. We expand its autonomy gradually as the metrics support it." },
+        { "step": 6, "title": "Monitoring & Improvement", "description": "In production, every run is logged with full traces, token costs, and outcomes. We review failures, refine prompts and tools, and feed learnings back so the agent improves month over month." }
+      ],
+      "faq": [
+        { "question": "What's the difference between an AI agent and a chatbot?", "answer": "A chatbot answers questions in a conversation; an agent pursues a goal — it plans steps, calls tools and APIs, checks intermediate results, and continues until the task is finished. That makes agents suitable for work like triaging tickets end to end, compiling research reports, or reconciling data across systems, where a chatbot would stop at giving advice." },
+        { "question": "How reliable are AI agents in production?", "answer": "Reliability depends less on the model and more on engineering: constrained tools, structured outputs, validation of every step, and retries with fallbacks. With those in place, well-scoped agents routinely complete the large majority of runs without intervention — and the remainder escalate to a human instead of failing silently. We measure completion rates on your real cases before launch." },
+        { "question": "How long does it take to build a production agent?", "answer": "A focused single-task agent typically takes 4–8 weeks from discovery to production, including evaluation and a pilot phase. Multi-agent systems spanning several departments or tools run 2–4 months. The biggest schedule variable is usually API access to your internal systems, not the AI itself." },
+        { "question": "What does it cost to run an agent?", "answer": "Agent runs consume far more tokens than simple chat because of planning and tool loops — a complex task can use 50,000–500,000 tokens. Depending on the model, that ranges from a fraction of a cent to a few dollars per task. We set per-run token budgets, cache repeated context, and route easy steps to cheaper models to keep unit costs predictable." },
+        { "question": "Which model do you use — GPT, Claude, or open source?", "answer": "We benchmark candidates on your actual tasks rather than picking by reputation. Frontier models like Claude and GPT-4-class models handle complex reasoning best, while smaller open-source models often win on cost for high-volume, narrow steps. Many of our agents use a mix: a strong model for planning, cheaper models for routine sub-tasks." },
+        { "question": "Can agents take actions in our systems safely?", "answer": "Yes, with layered controls: agents only get the specific API permissions they need, destructive actions require human approval, and every action is logged and reversible where possible. We typically start agents in read-only or draft mode and expand write access only after the pilot proves accuracy." },
+        { "question": "What happens when an agent gets something wrong?", "answer": "Errors are designed for, not just hoped against. Failed validations trigger retries with adjusted context; repeated failures escalate to a human with the full trace of what the agent did and why. Every failure case feeds the evaluation set, so the same mistake is caught in testing next time." },
+        { "question": "When is an agent the wrong solution?", "answer": "If the workflow is fully deterministic — same inputs, same steps, every time — classic automation or RPA is cheaper and more reliable. Agents earn their cost when tasks need judgment, unstructured inputs, or dynamic multi-step planning. In discovery we'll tell you honestly which category your workflow falls into." }
+      ],
+      "technologies": [
+        { "icon": "langchain", "name": "LangChain" },
+        { "icon": "langgraph", "name": "LangGraph" },
+        { "icon": "crewai", "name": "CrewAI" },
+        { "icon": "autogen", "name": "AutoGen" },
+        { "icon": "openai", "name": "OpenAI Assistants" },
+        { "icon": "anthropic", "name": "Anthropic Claude" },
+        { "icon": "langsmith", "name": "LangSmith" },
+        { "icon": "n8n", "name": "n8n" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Yapay Zeka Ajanları",
+    "shortDescription": "Kendi başına plan yapan, araç kullanan ve çok adımlı işleri tamamlayan otonom yapay zeka ajanları geliştirin. Koruma bariyerleri, hafıza ve insan denetimiyle tasarladığımız ajan sistemleri, kontrolü kaybetmeden karmaşıklığın üstesinden gelir.",
+    "fullDescription": "Bir yapay zeka ajanı soru yanıtlamaktan fazlasını yapar: Hedefi adımlara böler, araçlarınızı ve API'lerinizi çağırır, kendi sonuçlarını kontrol eder ve iş bitene kadar devam eder. LangGraph, CrewAI ile OpenAI ve Claude API'leri üzerinde üretime hazır ajan sistemleri kuruyoruz: Araştırma, önceliklendirme ve raporlama gibi odaklı görevler için tekil ajanlar; sistemler arası iş akışları için ise koordineli çoklu ajan ekipleri. Her ajan, demolarda atlanan parçalarla teslim edilir — kalıcı hafıza, hata kurtarma ve yeniden deneme mantığı, token bütçeleri, eksiksiz eylem kaydı ve hassas adımlar için insan onay kapıları. Sonuç, kara kutu değil; denetleyebileceğiniz ve güvenebileceğiniz bir otomasyondur. İlk ajanların çoğu 4–8 haftada üretime geçer.",
+    "features": [
+      "Çoklu Ajan Orkestrasyonu",
+      "Araç ve API Entegrasyonu",
+      "Hafıza ve Bağlam Yönetimi",
+      "Planlama ve Akıl Yürütme Çerçeveleri",
+      "İnsan Onaylı (Human-in-the-Loop) Akışlar",
+      "Koruma Bariyerleri ve Çıktı Doğrulama",
+      "Ajan Değerlendirme ve Kıyaslama",
+      "İzleme, Kayıt ve Maliyet Kontrolleri"
+    ],
+    "benefits": [
+      "Çok adımlı iş akışlarını uçtan uca otomatikleştirin",
+      "Kadro büyütmeden operasyonları ölçeklendirin",
+      "Gereken yerde insan denetimiyle 7/24 çalışma",
+      "Her ajan eyleminin eksiksiz denetim kaydı",
+      "Tekrarlayan bilgi işlerinde daha düşük operasyon maliyeti",
+      "Kural tabanlı otomasyona fazla karmaşık gelen görevleri çözün"
+    ],
+    "metaTitle": "Yapay Zeka Ajanı Geliştirme | PakSoft",
+    "metaDescription": "Araç kullanımı, hafıza, koruma bariyerleri ve insan denetimine sahip otonom yapay zeka ajanları — 4–8 haftada üretime hazır. Ücretsiz fizibilite görüşmesi alın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "İş Akışı Keşfi", "description": "Otomatikleştirmek istediğiniz iş akışını, dokunduğu sistemler ve gerektirdiği kararlar dahil adım adım haritalandırırız. Başarının neye benzediğini ve hangi adımların insan kontrolünde kalması gerektiğini birlikte tanımlarız." },
+        { "step": 2, "title": "Mimari ve Model Seçimi", "description": "Tekil ajan ile çoklu ajan tasarımı arasında seçim yapar; modelleri gerçek görevleriniz üzerinde doğruluk, gecikme ve maliyet açısından karşılaştırarak belirleriz. Araç arayüzleri, hafıza stratejisi ve koruma bariyerleri geliştirme başlamadan önce netleşir." },
+        { "step": 3, "title": "Ajan Geliştirme", "description": "Ajanı tipli araç entegrasyonları, yapılandırılmış çıktılar ve başarısız adımlar için kurtarma mantığıyla geliştiririz. Hassas eylemler onay kapılarından geçirilir; geri alınamaz bir işlem gerçekleşmeden önce bir insan onay verir." },
+        { "step": 4, "title": "Değerlendirme ve Sağlamlaştırma", "description": "Ajanı gerçek vakalardan oluşan bir kıyaslama setiyle test eder; görev tamamlama oranını, doğruluğu ve çalıştırma başına maliyeti ölçeriz. Ajanı zorlayan uç durumlar, yayından önce regresyon testlerine dönüşür." },
+        { "step": 5, "title": "Pilot ve Yayına Alma", "description": "Ajan önce gölge modunda veya sınırlı bir kapsamda çalışır; ekibiniz bu süreçte kararlarını inceler. Metrikler destekledikçe özerkliğini kademeli olarak genişletiriz." },
+        { "step": 6, "title": "İzleme ve İyileştirme", "description": "Üretimde her çalıştırma; tam izler, token maliyetleri ve sonuçlarla kaydedilir. Hataları inceler, promptları ve araçları iyileştirir, öğrenimleri geri besleriz — böylece ajan ay be ay gelişir." }
+      ],
+      "faq": [
+        { "question": "Yapay zeka ajanı ile chatbot arasındaki fark nedir?", "answer": "Chatbot bir sohbette soruları yanıtlar; ajan ise bir hedefin peşinden gider — adımları planlar, araçları ve API'leri çağırır, ara sonuçları kontrol eder ve görev bitene kadar devam eder. Bu yüzden ajanlar; destek taleplerini uçtan uca işlemek, araştırma raporları derlemek veya sistemler arası veri mutabakatı gibi chatbotun yalnızca tavsiye verip duracağı işler için uygundur." },
+        { "question": "Yapay zeka ajanları üretimde ne kadar güvenilir?", "answer": "Güvenilirlik modelden çok mühendisliğe bağlıdır: kısıtlanmış araçlar, yapılandırılmış çıktılar, her adımın doğrulanması ve yedekli yeniden denemeler. Bunlar yerindeyse, kapsamı iyi belirlenmiş ajanlar çalıştırmaların büyük çoğunluğunu müdahalesiz tamamlar; kalanlar da sessizce başarısız olmak yerine bir insana yönlendirilir. Tamamlama oranlarını yayından önce gerçek vakalarınızla ölçeriz." },
+        { "question": "Üretime hazır bir ajan geliştirmek ne kadar sürer?", "answer": "Tek göreve odaklı bir ajan, değerlendirme ve pilot aşaması dahil keşiften üretime genellikle 4–8 hafta sürer. Birden çok departmana veya araca yayılan çoklu ajan sistemleri 2–4 ay alır. Takvimi en çok etkileyen değişken genellikle yapay zekanın kendisi değil, iç sistemlerinize API erişimidir." },
+        { "question": "Bir ajanı çalıştırmanın maliyeti nedir?", "answer": "Planlama ve araç döngüleri nedeniyle ajan çalıştırmaları basit sohbetten çok daha fazla token tüketir — karmaşık bir görev 50.000–500.000 token kullanabilir. Modele bağlı olarak bu, görev başına bir kuruşun altından birkaç dolara kadar değişir. Birim maliyetleri öngörülebilir tutmak için çalıştırma başına token bütçeleri koyar, tekrarlanan bağlamı önbelleğe alır ve kolay adımları daha ucuz modellere yönlendiririz." },
+        { "question": "Hangi modeli kullanıyorsunuz — GPT, Claude yoksa açık kaynak mı?", "answer": "Adayları üne göre değil, gerçek görevleriniz üzerinde kıyaslayarak seçeriz. Claude ve GPT-4 sınıfı öncü modeller karmaşık akıl yürütmede en iyisidir; küçük açık kaynak modeller ise yüksek hacimli, dar kapsamlı adımlarda maliyet açısından öne geçer. Ajanlarımızın çoğu karma yapı kullanır: Planlama için güçlü bir model, rutin alt görevler için daha ucuz modeller." },
+        { "question": "Ajanlar sistemlerimizde güvenle işlem yapabilir mi?", "answer": "Evet, katmanlı kontrollerle: Ajanlar yalnızca ihtiyaç duydukları API izinlerini alır, yıkıcı eylemler insan onayı gerektirir ve her eylem kaydedilir, mümkün olduğunda geri alınabilir. Ajanları genellikle salt okunur veya taslak modunda başlatır, yazma yetkisini ancak pilot doğruluğu kanıtladıktan sonra genişletiriz." },
+        { "question": "Ajan bir hata yaparsa ne olur?", "answer": "Hatalar umulmaz, tasarlanır. Başarısız doğrulamalar, düzeltilmiş bağlamla yeniden denemeleri tetikler; tekrarlanan başarısızlıklar, ajanın ne yaptığını ve nedenini gösteren tam izle birlikte bir insana yönlendirilir. Her hata vakası değerlendirme setine eklenir; aynı hata bir dahaki sefere testte yakalanır." },
+        { "question": "Ajan ne zaman yanlış çözümdür?", "answer": "İş akışı tamamen deterministikse — aynı girdiler, aynı adımlar, her seferinde — klasik otomasyon veya RPA hem daha ucuz hem daha güvenilirdir. Ajanlar; görevler muhakeme, yapılandırılmamış girdiler veya dinamik çok adımlı planlama gerektirdiğinde maliyetini hak eder. Keşif aşamasında iş akışınızın hangi kategoriye girdiğini dürüstçe söyleriz." }
+      ],
+      "technologies": [
+        { "icon": "langchain", "name": "LangChain" },
+        { "icon": "langgraph", "name": "LangGraph" },
+        { "icon": "crewai", "name": "CrewAI" },
+        { "icon": "autogen", "name": "AutoGen" },
+        { "icon": "openai", "name": "OpenAI Assistants" },
+        { "icon": "anthropic", "name": "Anthropic Claude" },
+        { "icon": "langsmith", "name": "LangSmith" },
+        { "icon": "n8n", "name": "n8n" }
+      ]
+    }
+  },
+  "de": {
+    "name": "KI-Agenten",
+    "shortDescription": "Autonome KI-Agenten, die eigenständig planen, Tools nutzen und mehrstufige Aufgaben abschließen. Wir entwickeln Agentensysteme mit Guardrails, Gedächtnis und menschlicher Aufsicht — Automatisierung, die Komplexität bewältigt, ohne die Kontrolle zu verlieren.",
+    "fullDescription": "Ein KI-Agent beantwortet nicht nur Fragen — er zerlegt ein Ziel in Schritte, ruft Ihre Tools und APIs auf, prüft seine eigenen Ergebnisse und arbeitet weiter, bis die Aufgabe erledigt ist. Wir bauen produktionsreife Agentensysteme auf LangGraph, CrewAI sowie den OpenAI- und Claude-APIs: einzelne Agenten für fokussierte Aufgaben wie Recherche, Triage und Reporting, und orchestrierte Multi-Agenten-Teams für systemübergreifende Workflows. Jeder Agent kommt mit dem, was Demos auslassen — persistentes Gedächtnis, Retry- und Fehlerbehandlung, Token-Budgets, lückenloses Aktionslogging und menschliche Freigabe-Gates für sensible Schritte. Das Ergebnis ist Automatisierung, die Sie prüfen und der Sie vertrauen können, keine Blackbox. Die meisten ersten Agenten erreichen die Produktion in 4–8 Wochen.",
+    "features": [
+      "Multi-Agenten-Orchestrierung",
+      "Tool- & API-Integration",
+      "Gedächtnis- & Kontextmanagement",
+      "Planungs- & Reasoning-Frameworks",
+      "Human-in-the-Loop-Freigabe-Gates",
+      "Guardrails & Output-Validierung",
+      "Agenten-Evaluation & Benchmarking",
+      "Monitoring, Logging & Kostenkontrolle"
+    ],
+    "benefits": [
+      "Mehrstufige Workflows Ende-zu-Ende automatisieren",
+      "Operations skalieren ohne zusätzliches Personal",
+      "24/7-Ausführung mit menschlicher Aufsicht, wo es zählt",
+      "Lückenloser Audit-Trail jeder Agentenaktion",
+      "Geringere Betriebskosten bei repetitiver Wissensarbeit",
+      "Aufgaben lösen, die für regelbasierte Automatisierung zu komplex sind"
+    ],
+    "metaTitle": "KI-Agenten-Entwicklung | PakSoft",
+    "metaDescription": "Wir bauen autonome KI-Agenten mit Tool-Nutzung, Gedächtnis, Guardrails und menschlicher Aufsicht — produktionsreif in 4–8 Wochen. Jetzt kostenlose Beratung sichern.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Workflow-Discovery", "description": "Wir kartieren den zu automatisierenden Workflow Schritt für Schritt, inklusive der beteiligten Systeme und der nötigen Entscheidungen. Gemeinsam definieren wir, wie Erfolg aussieht und welche Schritte unter menschlicher Kontrolle bleiben müssen." },
+        { "step": 2, "title": "Architektur & Modellauswahl", "description": "Wir entscheiden zwischen Einzel- und Multi-Agenten-Design und wählen Modelle anhand von Genauigkeit, Latenz und Kosten auf Ihren realen Aufgaben aus. Tool-Schnittstellen, Gedächtnisstrategie und Guardrails stehen fest, bevor die Entwicklung beginnt." },
+        { "step": 3, "title": "Agenten-Entwicklung", "description": "Wir bauen den Agenten mit typisierten Tool-Integrationen, strukturierten Outputs und Recovery-Logik für fehlgeschlagene Schritte. Sensible Aktionen laufen über Freigabe-Gates, sodass ein Mensch zustimmt, bevor etwas Unumkehrbares passiert." },
+        { "step": 4, "title": "Evaluation & Härtung", "description": "Wir testen den Agenten gegen ein Benchmark-Set realer Fälle und messen Aufgabenabschluss, Genauigkeit und Kosten pro Lauf. Edge Cases, die den Agenten brechen, werden vor dem Launch zu Regressionstests." },
+        { "step": 5, "title": "Pilot & Rollout", "description": "Der Agent läuft zunächst im Schattenmodus oder mit begrenztem Umfang, während Ihr Team seine Entscheidungen prüft. Die Autonomie erweitern wir schrittweise, sobald die Metriken es tragen." },
+        { "step": 6, "title": "Monitoring & Verbesserung", "description": "In der Produktion wird jeder Lauf mit vollständigen Traces, Token-Kosten und Ergebnissen protokolliert. Wir analysieren Fehler, verfeinern Prompts und Tools und speisen die Erkenntnisse zurück — so wird der Agent Monat für Monat besser." }
+      ],
+      "faq": [
+        { "question": "Was unterscheidet einen KI-Agenten von einem Chatbot?", "answer": "Ein Chatbot beantwortet Fragen in einem Gespräch; ein Agent verfolgt ein Ziel — er plant Schritte, ruft Tools und APIs auf, prüft Zwischenergebnisse und arbeitet weiter, bis die Aufgabe erledigt ist. Damit eignen sich Agenten für Arbeit wie die End-zu-End-Bearbeitung von Tickets, das Erstellen von Rechercheberichten oder den Datenabgleich zwischen Systemen — dort, wo ein Chatbot beim Ratschlag stehen bliebe." },
+        { "question": "Wie zuverlässig sind KI-Agenten in der Produktion?", "answer": "Zuverlässigkeit hängt weniger vom Modell ab als vom Engineering: eingeschränkte Tools, strukturierte Outputs, Validierung jedes Schritts und Retries mit Fallbacks. Damit schließen gut abgegrenzte Agenten den Großteil der Läufe ohne Eingriff ab — und der Rest eskaliert an einen Menschen, statt still zu scheitern. Die Abschlussraten messen wir vor dem Launch an Ihren realen Fällen." },
+        { "question": "Wie lange dauert die Entwicklung eines produktionsreifen Agenten?", "answer": "Ein fokussierter Einzelaufgaben-Agent braucht typischerweise 4–8 Wochen von Discovery bis Produktion, inklusive Evaluation und Pilotphase. Multi-Agenten-Systeme über mehrere Abteilungen oder Tools hinweg dauern 2–4 Monate. Die größte Zeitvariable ist meist der API-Zugang zu Ihren internen Systemen, nicht die KI selbst." },
+        { "question": "Was kostet der Betrieb eines Agenten?", "answer": "Agentenläufe verbrauchen wegen Planungs- und Tool-Schleifen deutlich mehr Tokens als einfacher Chat — eine komplexe Aufgabe kann 50.000–500.000 Tokens nutzen. Je nach Modell liegt das zwischen Bruchteilen eines Cents und wenigen Dollar pro Aufgabe. Wir setzen Token-Budgets pro Lauf, cachen wiederkehrenden Kontext und leiten einfache Schritte an günstigere Modelle, damit die Stückkosten planbar bleiben." },
+        { "question": "Welches Modell nutzen Sie — GPT, Claude oder Open Source?", "answer": "Wir benchmarken Kandidaten auf Ihren realen Aufgaben, statt nach Reputation zu wählen. Frontier-Modelle wie Claude und Modelle der GPT-4-Klasse sind bei komplexem Reasoning am stärksten; kleinere Open-Source-Modelle gewinnen bei hochvolumigen, eng umrissenen Schritten oft beim Preis. Viele unserer Agenten nutzen einen Mix: ein starkes Modell fürs Planen, günstigere für Routine-Teilaufgaben." },
+        { "question": "Können Agenten sicher in unseren Systemen handeln?", "answer": "Ja, mit gestaffelten Kontrollen: Agenten erhalten nur die konkret benötigten API-Berechtigungen, destruktive Aktionen erfordern menschliche Freigabe, und jede Aktion wird protokolliert und ist wo möglich umkehrbar. Wir starten Agenten meist im Read-only- oder Entwurfsmodus und erweitern Schreibrechte erst, wenn der Pilot die Genauigkeit belegt hat." },
+        { "question": "Was passiert, wenn ein Agent einen Fehler macht?", "answer": "Fehler werden eingeplant, nicht nur erhofft. Fehlgeschlagene Validierungen lösen Retries mit angepasstem Kontext aus; wiederholte Fehlschläge eskalieren an einen Menschen — mit dem vollständigen Trace dessen, was der Agent getan hat und warum. Jeder Fehlerfall fließt ins Evaluationsset, sodass derselbe Fehler beim nächsten Mal im Test auffällt." },
+        { "question": "Wann ist ein Agent die falsche Lösung?", "answer": "Wenn der Workflow vollständig deterministisch ist — gleiche Eingaben, gleiche Schritte, jedes Mal — sind klassische Automatisierung oder RPA günstiger und zuverlässiger. Agenten rechtfertigen ihre Kosten, wenn Aufgaben Urteilsvermögen, unstrukturierte Eingaben oder dynamische mehrstufige Planung erfordern. In der Discovery sagen wir Ihnen ehrlich, in welche Kategorie Ihr Workflow fällt." }
+      ],
+      "technologies": [
+        { "icon": "langchain", "name": "LangChain" },
+        { "icon": "langgraph", "name": "LangGraph" },
+        { "icon": "crewai", "name": "CrewAI" },
+        { "icon": "autogen", "name": "AutoGen" },
+        { "icon": "openai", "name": "OpenAI Assistants" },
+        { "icon": "anthropic", "name": "Anthropic Claude" },
+        { "icon": "langsmith", "name": "LangSmith" },
+        { "icon": "n8n", "name": "n8n" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "AI ایجنٹس",
+    "shortDescription": "ایسے خودمختار AI ایجنٹس بنوائیں جو خود منصوبہ بناتے ہیں، ٹولز استعمال کرتے ہیں اور کئی مراحل پر مشتمل کام مکمل کرتے ہیں۔ ہم گارڈریلز، میموری اور انسانی نگرانی کے ساتھ ایجنٹ سسٹمز ڈیزائن کرتے ہیں — ایسی آٹومیشن جو کنٹرول کھوئے بغیر پیچیدگی سنبھالتی ہے۔",
+    "fullDescription": "AI ایجنٹ صرف سوالوں کے جواب نہیں دیتا — وہ ہدف کو مراحل میں تقسیم کرتا ہے، آپ کے ٹولز اور APIs کو استعمال کرتا ہے، اپنے نتائج خود جانچتا ہے اور کام مکمل ہونے تک جاری رہتا ہے۔ ہم LangGraph، CrewAI اور OpenAI و Claude APIs پر پروڈکشن کے قابل ایجنٹ سسٹمز بناتے ہیں: تحقیق، درجہ بندی اور رپورٹنگ جیسے مخصوص کاموں کے لیے واحد ایجنٹس، اور کئی سسٹمز پر پھیلے ورک فلوز کے لیے مربوط ملٹی ایجنٹ ٹیمیں۔ ہر ایجنٹ میں وہ سب شامل ہوتا ہے جو ڈیمو میں نظرانداز ہو جاتا ہے — مستقل میموری، خرابی کی بحالی اور دوبارہ کوشش، token بجٹ، ہر عمل کا مکمل ریکارڈ، اور حساس مراحل کے لیے انسانی منظوری۔ نتیجہ بلیک باکس نہیں بلکہ قابلِ جانچ اور قابلِ اعتماد آٹومیشن ہے۔ زیادہ تر پہلے ایجنٹس 4 تا 8 ہفتوں میں پروڈکشن میں آ جاتے ہیں۔",
+    "features": [
+      "ملٹی ایجنٹ آرکیسٹریشن",
+      "ٹول اور API انٹیگریشن",
+      "میموری اور کانٹیکسٹ مینجمنٹ",
+      "منصوبہ بندی اور استدلال کے فریم ورکس",
+      "انسانی منظوری کے ساتھ ورک فلوز (Human-in-the-Loop)",
+      "گارڈریلز اور آؤٹ پٹ کی توثیق",
+      "ایجنٹ کی جانچ اور بینچ مارکنگ",
+      "نگرانی، لاگنگ اور لاگت کنٹرول"
+    ],
+    "benefits": [
+      "کئی مراحل کے ورک فلوز کی شروع سے آخر تک آٹومیشن",
+      "عملہ بڑھائے بغیر آپریشنز کو وسعت دیں",
+      "ضروری مقامات پر انسانی نگرانی کے ساتھ 24/7 کام",
+      "ایجنٹ کے ہر عمل کا مکمل آڈٹ ریکارڈ",
+      "بار بار ہونے والے علمی کاموں پر کم آپریشنل لاگت",
+      "ایسے کام جو سادہ rule-based آٹومیشن کے بس سے باہر ہیں"
+    ],
+    "metaTitle": "AI ایجنٹ ڈیولپمنٹ سروسز | PakSoft",
+    "metaDescription": "ٹول کے استعمال، میموری، گارڈریلز اور انسانی نگرانی والے خودمختار AI ایجنٹس — 4 تا 8 ہفتوں میں پروڈکشن کے لیے تیار۔ مفت فزیبلٹی مشاورت حاصل کریں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "ورک فلو کی دریافت", "description": "ہم اس ورک فلو کا مرحلہ وار نقشہ بناتے ہیں جسے آپ خودکار کرنا چاہتے ہیں، بشمول وہ سسٹمز جن سے یہ جڑا ہے اور وہ فیصلے جو اس میں درکار ہیں۔ کامیابی کی تعریف اور کون سے مراحل انسانی کنٹرول میں رہیں گے، یہ ہم مل کر طے کرتے ہیں۔" },
+        { "step": 2, "title": "آرکیٹیکچر اور ماڈل کا انتخاب", "description": "ہم واحد ایجنٹ اور ملٹی ایجنٹ ڈیزائن میں سے انتخاب کرتے ہیں اور ماڈلز کا موازنہ آپ کے حقیقی کاموں پر درستگی، رفتار اور لاگت کے لحاظ سے کرتے ہیں۔ ٹول انٹرفیس، میموری حکمتِ عملی اور گارڈریلز ڈیولپمنٹ شروع ہونے سے پہلے طے ہو جاتے ہیں۔" },
+        { "step": 3, "title": "ایجنٹ ڈیولپمنٹ", "description": "ہم ایجنٹ کو منظم ٹول انٹیگریشنز، structured آؤٹ پٹس اور ناکام مراحل کے لیے بحالی کے نظام کے ساتھ بناتے ہیں۔ حساس اعمال منظوری کے مراحل سے گزرتے ہیں تاکہ کوئی ناقابلِ واپسی کام ہونے سے پہلے انسان اجازت دے۔" },
+        { "step": 4, "title": "جانچ اور مضبوطی", "description": "ہم ایجنٹ کو حقیقی کیسز کے بینچ مارک سیٹ پر آزماتے ہیں اور کام کی تکمیل، درستگی اور فی رن لاگت ناپتے ہیں۔ جو مشکل کیسز ایجنٹ کو ناکام کرتے ہیں، وہ لانچ سے پہلے regression ٹیسٹس بن جاتے ہیں۔" },
+        { "step": 5, "title": "پائلٹ اور اجراء", "description": "ایجنٹ پہلے shadow موڈ میں یا محدود دائرے میں چلتا ہے اور آپ کی ٹیم اس کے فیصلوں کا جائزہ لیتی ہے۔ جیسے جیسے میٹرکس اعتماد دلاتے ہیں، ہم اس کی خودمختاری بتدریج بڑھاتے ہیں۔" },
+        { "step": 6, "title": "نگرانی اور بہتری", "description": "پروڈکشن میں ہر رن مکمل ٹریس، token لاگت اور نتائج کے ساتھ ریکارڈ ہوتا ہے۔ ہم ناکامیوں کا جائزہ لیتے ہیں، پرامپٹس اور ٹولز کو بہتر بناتے ہیں اور سیکھ کو واپس شامل کرتے ہیں تاکہ ایجنٹ ماہ بہ ماہ بہتر ہو۔" }
+      ],
+      "faq": [
+        { "question": "AI ایجنٹ اور چیٹ بوٹ میں کیا فرق ہے؟", "answer": "چیٹ بوٹ گفتگو میں سوالوں کے جواب دیتا ہے؛ ایجنٹ ایک ہدف کے پیچھے جاتا ہے — وہ مراحل کی منصوبہ بندی کرتا ہے، ٹولز اور APIs استعمال کرتا ہے، درمیانی نتائج جانچتا ہے اور کام مکمل ہونے تک رکتا نہیں۔ اسی لیے ایجنٹس ایسے کاموں کے لیے موزوں ہیں جیسے سپورٹ ٹکٹس کو شروع سے آخر تک نمٹانا، تحقیقی رپورٹیں تیار کرنا یا سسٹمز کے درمیان ڈیٹا کا ملاپ — جہاں چیٹ بوٹ صرف مشورہ دے کر رک جاتا۔" },
+        { "question": "پروڈکشن میں AI ایجنٹس کتنے قابلِ اعتماد ہیں؟", "answer": "قابلِ اعتماد ہونا ماڈل سے زیادہ انجینئرنگ پر منحصر ہے: محدود ٹولز، structured آؤٹ پٹس، ہر مرحلے کی توثیق اور fallback کے ساتھ دوبارہ کوششیں۔ یہ سب موجود ہوں تو واضح دائرہ کار والے ایجنٹس اکثریتی رنز بغیر مداخلت مکمل کرتے ہیں — اور باقی خاموش ناکامی کے بجائے انسان کو منتقل ہو جاتے ہیں۔ ہم لانچ سے پہلے آپ کے حقیقی کیسز پر تکمیل کی شرح ناپتے ہیں۔" },
+        { "question": "پروڈکشن کے قابل ایجنٹ بنانے میں کتنا وقت لگتا ہے؟", "answer": "ایک مخصوص کام والا ایجنٹ عموماً دریافت سے پروڈکشن تک 4 تا 8 ہفتے لیتا ہے، جس میں جانچ اور پائلٹ مرحلہ شامل ہے۔ کئی شعبوں یا ٹولز پر پھیلے ملٹی ایجنٹ سسٹمز 2 تا 4 ماہ لیتے ہیں۔ شیڈول پر سب سے زیادہ اثر عموماً AI نہیں بلکہ آپ کے اندرونی سسٹمز تک API رسائی ڈالتی ہے۔" },
+        { "question": "ایجنٹ چلانے کی لاگت کیا ہے؟", "answer": "منصوبہ بندی اور ٹول کے چکروں کی وجہ سے ایجنٹ سادہ چیٹ سے کہیں زیادہ tokens استعمال کرتا ہے — ایک پیچیدہ کام 50,000 تا 500,000 tokens لے سکتا ہے۔ ماڈل کے لحاظ سے یہ فی کام ایک سینٹ کے حصے سے چند ڈالر تک ہو سکتا ہے۔ لاگت قابلِ پیشگوئی رکھنے کے لیے ہم فی رن token بجٹ مقرر کرتے ہیں، دہرائے جانے والے کانٹیکسٹ کو cache کرتے ہیں اور آسان مراحل سستے ماڈلز کو دیتے ہیں۔" },
+        { "question": "آپ کون سا ماڈل استعمال کرتے ہیں — GPT، Claude یا اوپن سورس؟", "answer": "ہم ماڈلز کو شہرت کی بنیاد پر نہیں بلکہ آپ کے حقیقی کاموں پر بینچ مارک کر کے چنتے ہیں۔ Claude اور GPT-4 درجے کے ماڈلز پیچیدہ استدلال میں بہترین ہیں، جبکہ چھوٹے اوپن سورس ماڈلز زیادہ حجم والے محدود مراحل میں لاگت کے لحاظ سے اکثر بہتر رہتے ہیں۔ ہمارے بیشتر ایجنٹس مرکب طریقہ اپناتے ہیں: منصوبہ بندی کے لیے طاقتور ماڈل اور معمول کے ذیلی کاموں کے لیے سستے ماڈلز۔" },
+        { "question": "کیا ایجنٹس ہمارے سسٹمز میں محفوظ طریقے سے کام کر سکتے ہیں؟", "answer": "جی ہاں، کئی پرتوں والے کنٹرولز کے ساتھ: ایجنٹس کو صرف وہی API اجازتیں ملتی ہیں جو درکار ہیں، نقصان دہ اعمال کے لیے انسانی منظوری لازم ہے اور ہر عمل ریکارڈ ہوتا ہے، اور جہاں ممکن ہو قابلِ واپسی ہے۔ ہم ایجنٹس کو عموماً صرف پڑھنے یا مسودے کے موڈ میں شروع کرتے ہیں اور لکھنے کی اجازت پائلٹ کی کامیابی کے بعد ہی بڑھاتے ہیں۔" },
+        { "question": "اگر ایجنٹ غلطی کر بیٹھے تو کیا ہوتا ہے؟", "answer": "غلطیوں کے لیے پہلے سے منصوبہ بندی کی جاتی ہے۔ ناکام توثیق بہتر کانٹیکسٹ کے ساتھ دوبارہ کوشش کراتی ہے؛ مسلسل ناکامی پر معاملہ مکمل ٹریس کے ساتھ انسان کو منتقل ہوتا ہے کہ ایجنٹ نے کیا کیا اور کیوں۔ ہر ناکامی جانچ کے سیٹ میں شامل ہوتی ہے تاکہ وہی غلطی اگلی بار ٹیسٹنگ میں پکڑی جائے۔" },
+        { "question": "ایجنٹ کب غلط انتخاب ہوتا ہے؟", "answer": "اگر ورک فلو مکمل طور پر متعین ہے — ہر بار وہی ان پٹ، وہی مراحل — تو روایتی آٹومیشن یا RPA سستی اور زیادہ قابلِ اعتماد ہے۔ ایجنٹس اپنی لاگت تب وصول کراتے ہیں جب کام میں فیصلہ سازی، غیر منظم ڈیٹا یا متحرک کئی مراحل کی منصوبہ بندی درکار ہو۔ دریافت کے مرحلے میں ہم صاف بتا دیتے ہیں کہ آپ کا ورک فلو کس زمرے میں آتا ہے۔" }
+      ],
+      "technologies": [
+        { "icon": "langchain", "name": "LangChain" },
+        { "icon": "langgraph", "name": "LangGraph" },
+        { "icon": "crewai", "name": "CrewAI" },
+        { "icon": "autogen", "name": "AutoGen" },
+        { "icon": "openai", "name": "OpenAI Assistants" },
+        { "icon": "anthropic", "name": "Anthropic Claude" },
+        { "icon": "langsmith", "name": "LangSmith" },
+        { "icon": "n8n", "name": "n8n" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "وكلاء الذكاء الاصطناعي",
+    "shortDescription": "ابنوا وكلاء ذكاء اصطناعي مستقلين يخططون ويستخدمون الأدوات وينجزون مهامّ متعددة الخطوات بأنفسهم. نصمّم أنظمة وكلاء مزوّدة بضوابط حماية وذاكرة وإشراف بشري — أتمتة تتعامل مع التعقيد دون فقدان السيطرة.",
+    "fullDescription": "وكيل الذكاء الاصطناعي يفعل أكثر من الإجابة عن الأسئلة — فهو يقسّم الهدف إلى خطوات، ويستدعي أدواتكم وواجهات API لديكم، ويتحقق من نتائجه بنفسه، ويواصل العمل حتى إنجاز المهمة. نبني أنظمة وكلاء جاهزة للإنتاج على LangGraph وCrewAI وواجهات OpenAI وClaude: وكلاء فرديين لمهام محددة كالبحث والفرز وإعداد التقارير، وفرق وكلاء متعددين منسّقة لمسارات العمل الممتدة عبر الأنظمة. كل وكيل يُسلَّم مع ما تتجاهله العروض التجريبية — ذاكرة دائمة، ومنطق إعادة المحاولة واستعادة الأخطاء، وميزانيات tokens، وسجلّ كامل لكل إجراء، وبوابات موافقة بشرية للخطوات الحساسة. النتيجة أتمتة يمكنكم تدقيقها والوثوق بها، لا صندوق أسود. معظم الوكلاء الأوائل يصلون إلى الإنتاج خلال 4–8 أسابيع.",
+    "features": [
+      "تنسيق وكلاء متعددين",
+      "تكامل الأدوات وواجهات API",
+      "إدارة الذاكرة والسياق",
+      "أطر التخطيط والاستدلال",
+      "بوابات موافقة بشرية (Human-in-the-Loop)",
+      "ضوابط حماية والتحقق من المخرجات",
+      "تقييم الوكلاء وقياس أدائهم",
+      "المراقبة والتسجيل وضبط التكاليف"
+    ],
+    "benefits": [
+      "أتمتة مسارات العمل متعددة الخطوات من البداية إلى النهاية",
+      "توسيع العمليات دون زيادة عدد الموظفين",
+      "تنفيذ على مدار الساعة مع إشراف بشري حيث يلزم",
+      "سجلّ تدقيق كامل لكل إجراء يقوم به الوكيل",
+      "تكاليف تشغيلية أقل في الأعمال المعرفية المتكررة",
+      "إنجاز مهام أعقد من قدرة الأتمتة القائمة على القواعد"
+    ],
+    "metaTitle": "تطوير وكلاء الذكاء الاصطناعي | PakSoft",
+    "metaDescription": "نبني وكلاء ذكاء اصطناعي مستقلين مع استخدام الأدوات والذاكرة وضوابط الحماية والإشراف البشري — جاهزون للإنتاج خلال 4–8 أسابيع. احجزوا استشارة جدوى مجانية.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "استكشاف مسار العمل", "description": "نرسم خريطة مسار العمل المراد أتمتته خطوة بخطوة، بما يشمل الأنظمة التي يمسّها والقرارات التي يتطلبها. ونحدّد معكم شكل النجاح وأي الخطوات يجب أن تبقى تحت السيطرة البشرية." },
+        { "step": 2, "title": "البنية واختيار النموذج", "description": "نختار بين تصميم الوكيل الواحد والوكلاء المتعددين، وننتقي النماذج بمقارنة الدقة وزمن الاستجابة والتكلفة على مهامكم الفعلية. وتُحدَّد واجهات الأدوات واستراتيجية الذاكرة وضوابط الحماية قبل بدء التطوير." },
+        { "step": 3, "title": "تطوير الوكيل", "description": "نبني الوكيل بتكاملات أدوات منضبطة ومخرجات منظّمة ومنطق استعادة للخطوات الفاشلة. وتمرّ الإجراءات الحساسة عبر بوابات موافقة بحيث يوافق إنسان قبل أي عملية لا رجعة فيها." },
+        { "step": 4, "title": "التقييم والتقوية", "description": "نختبر الوكيل على مجموعة قياس من حالات حقيقية ونقيس إتمام المهام والدقة والتكلفة لكل تشغيل. والحالات الحدّية التي تُفشل الوكيل تتحول إلى اختبارات انحدار قبل الإطلاق." },
+        { "step": 5, "title": "التجربة والتعميم", "description": "يعمل الوكيل أولاً في وضع الظل أو ضمن نطاق محدود بينما يراجع فريقكم قراراته. ثم نوسّع استقلاليته تدريجياً كلما دعمت المقاييس ذلك." },
+        { "step": 6, "title": "المراقبة والتحسين", "description": "في الإنتاج يُسجَّل كل تشغيل بمساراته الكاملة وتكاليف tokens والنتائج. نراجع الإخفاقات ونحسّن الأوامر والأدوات ونعيد تغذية الدروس المستفادة، فيتحسّن الوكيل شهراً بعد شهر." }
+      ],
+      "faq": [
+        { "question": "ما الفرق بين وكيل الذكاء الاصطناعي وروبوت المحادثة؟", "answer": "روبوت المحادثة يجيب عن الأسئلة في حوار؛ أما الوكيل فيسعى وراء هدف — يخطط الخطوات، ويستدعي الأدوات وواجهات API، ويتحقق من النتائج الوسيطة، ويواصل حتى إنجاز المهمة. لذلك يناسب الوكلاء أعمالاً مثل معالجة التذاكر من البداية إلى النهاية، أو إعداد تقارير بحثية، أو مطابقة البيانات بين الأنظمة — حيث كان روبوت المحادثة سيكتفي بتقديم النصيحة." },
+        { "question": "ما مدى موثوقية وكلاء الذكاء الاصطناعي في الإنتاج؟", "answer": "تعتمد الموثوقية على الهندسة أكثر من النموذج: أدوات مقيّدة، ومخرجات منظّمة، وتحقق من كل خطوة، وإعادة محاولات مع بدائل احتياطية. مع توفر ذلك، ينجز الوكلاء جيّدو التحديد الغالبية الكبرى من التشغيلات دون تدخل — وما تبقى يُصعَّد إلى إنسان بدلاً من الفشل بصمت. ونقيس معدلات الإتمام على حالاتكم الحقيقية قبل الإطلاق." },
+        { "question": "كم يستغرق بناء وكيل جاهز للإنتاج؟", "answer": "الوكيل المركّز على مهمة واحدة يستغرق عادةً 4–8 أسابيع من الاستكشاف إلى الإنتاج، شاملاً التقييم ومرحلة تجريبية. وأنظمة الوكلاء المتعددين الممتدة عبر أقسام أو أدوات عدة تستغرق 2–4 أشهر. والمتغيّر الأكبر في الجدول الزمني عادةً هو الوصول إلى واجهات API لأنظمتكم الداخلية، لا الذكاء الاصطناعي نفسه." },
+        { "question": "كم تبلغ تكلفة تشغيل الوكيل؟", "answer": "تستهلك تشغيلات الوكلاء tokens أكثر بكثير من المحادثة البسيطة بسبب حلقات التخطيط والأدوات — فقد تستخدم المهمة المعقدة 50,000–500,000 token. وحسب النموذج، يتراوح ذلك بين جزء من السنت وبضعة دولارات لكل مهمة. نضع ميزانيات tokens لكل تشغيل، ونخزّن السياق المتكرر مؤقتاً، ونوجّه الخطوات السهلة إلى نماذج أرخص لإبقاء تكلفة الوحدة قابلة للتنبؤ." },
+        { "question": "أي نموذج تستخدمون — GPT أم Claude أم المفتوح المصدر؟", "answer": "نقيس أداء المرشحين على مهامكم الفعلية بدلاً من الاختيار حسب الشهرة. النماذج الرائدة مثل Claude ونماذج فئة GPT-4 هي الأقوى في الاستدلال المعقد، بينما تتفوق النماذج المفتوحة الأصغر غالباً في التكلفة للخطوات الضيقة عالية الحجم. كثير من وكلائنا يستخدم مزيجاً: نموذج قوي للتخطيط ونماذج أرخص للمهام الفرعية الروتينية." },
+        { "question": "هل يمكن للوكلاء تنفيذ إجراءات في أنظمتنا بأمان؟", "answer": "نعم، عبر ضوابط متعددة الطبقات: لا يحصل الوكلاء إلا على صلاحيات API المحددة التي يحتاجونها، وتتطلب الإجراءات التدميرية موافقة بشرية، ويُسجَّل كل إجراء ويكون قابلاً للتراجع حيثما أمكن. نبدأ الوكلاء عادةً في وضع القراءة فقط أو وضع المسودة، ولا نوسّع صلاحيات الكتابة إلا بعد أن تثبت التجربة الدقة." },
+        { "question": "ماذا يحدث إذا أخطأ الوكيل؟", "answer": "الأخطاء مصمَّم لها مسبقاً، لا متروكة للحظ. فالتحقق الفاشل يطلق إعادة محاولة بسياق معدّل؛ والإخفاقات المتكررة تُصعَّد إلى إنسان مع المسار الكامل لما فعله الوكيل ولماذا. وكل حالة فشل تُضاف إلى مجموعة التقييم، فيُكتشف الخطأ نفسه في الاختبار في المرة التالية." },
+        { "question": "متى يكون الوكيل الحلّ الخاطئ؟", "answer": "إذا كان مسار العمل حتمياً بالكامل — المدخلات نفسها والخطوات نفسها في كل مرة — فالأتمتة التقليدية أو RPA أرخص وأكثر موثوقية. يستحق الوكلاء تكلفتهم عندما تتطلب المهام حكماً بشرياً أو مدخلات غير منظّمة أو تخطيطاً ديناميكياً متعدد الخطوات. وفي مرحلة الاستكشاف نخبركم بصراحة إلى أي فئة ينتمي مسار عملكم." }
+      ],
+      "technologies": [
+        { "icon": "langchain", "name": "LangChain" },
+        { "icon": "langgraph", "name": "LangGraph" },
+        { "icon": "crewai", "name": "CrewAI" },
+        { "icon": "autogen", "name": "AutoGen" },
+        { "icon": "openai", "name": "OpenAI Assistants" },
+        { "icon": "anthropic", "name": "Anthropic Claude" },
+        { "icon": "langsmith", "name": "LangSmith" },
+        { "icon": "n8n", "name": "n8n" }
+      ]
+    }
+  }
+}

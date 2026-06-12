@@ -46,9 +46,9 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
       <div className={`${alignClass} ${className}`} dir={dir}>
         {eyebrow && (
           <div className={`flex items-center gap-3 mb-6 ${centered ? 'justify-center' : dir === 'rtl' ? 'justify-end' : 'justify-start'}`}>
-            <div className="w-8 h-0.5 bg-gray-900" />
-            <span className="text-overline">{eyebrow}</span>
-            <div className="w-8 h-0.5 bg-gray-900" />
+            <div className="w-8 h-0.5 bg-heritage-turquoise" />
+            <span className="text-overline text-heritage-turquoise">{eyebrow}</span>
+            <div className="w-8 h-0.5 bg-heritage-turquoise" />
           </div>
         )}
         <h2 className="text-headline text-gray-900 mb-6">{title}</h2>
@@ -76,9 +76,9 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
           variants={prefersReducedMotion ? undefined : eyebrowVariants}
           className={`flex items-center gap-3 mb-6 ${centered ? 'justify-center' : dir === 'rtl' ? 'justify-end' : 'justify-start'}`}
         >
-          <div className="w-8 h-0.5 bg-gray-900" />
-          <span className="text-overline">{eyebrow}</span>
-          <div className="w-8 h-0.5 bg-gray-900" />
+          <div className="w-8 h-0.5 bg-heritage-turquoise" />
+          <span className="text-overline text-heritage-turquoise">{eyebrow}</span>
+          <div className="w-8 h-0.5 bg-heritage-turquoise" />
         </motion.div>
       )}
 

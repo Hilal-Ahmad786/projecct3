@@ -2,6 +2,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import { motion } from 'framer-motion';
 import Button from '@/components/Button';
 import BlogHeroAnimation from '@/components/animations/BlogHeroAnimation';
@@ -9,7 +10,7 @@ import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations
 
 export default function BlogHero() {
   const [mounted, setMounted] = useState(false);
-  const { dir, isLoading, t: tGlobal } = useTranslations();
+  const { dir, isLoading, t: tGlobal, t: tNav } = useTranslations();
   const t = useSectionTranslations('blog.hero');
 
   useEffect(() => {
@@ -40,6 +41,7 @@ export default function BlogHero() {
 
       {/* Main Content - Two Column Layout */}
       <div className="container mx-auto">
+        <Breadcrumbs className="pt-6 mb-6" items={[{ label: tNav('navbar.home') as string, href: '/' }, { label: tNav('navbar.blog') as string }]} />
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Column - Content */}
           <motion.div

@@ -2,13 +2,14 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import { motion } from 'framer-motion';
 import Button from '@/components/Button';
 import ContactHeroAnimation from '@/components/animations/ContactHeroAnimation';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function ContactHero() {
-  const { dir, isLoading, t: tGlobal } = useTranslations();
+  const { dir, isLoading, t: tGlobal, t: tNav } = useTranslations();
   const t = useSectionTranslations('contact.hero');
   const [mounted, setMounted] = useState(false);
 
@@ -40,6 +41,7 @@ export default function ContactHero() {
 
       {/* Main Content - Two Column Layout */}
       <div className="container mx-auto">
+        <Breadcrumbs className="pt-6 mb-6" items={[{ label: tNav('navbar.home') as string, href: '/' }, { label: tNav('navbar.contact') as string }]} />
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Column - Content */}
           <motion.div

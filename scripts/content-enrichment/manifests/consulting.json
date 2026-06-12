@@ -1,0 +1,594 @@
+[
+ {
+  "slug": "ai-readiness-assessment",
+  "name": "AI Readiness Assessment",
+  "parentSlug": "ai-strategy",
+  "shortDescription": "Evaluate your organization readiness for AI adoption.",
+  "fullDescription": "Comprehensive assessment of your data, infrastructure, processes, and team capabilities for AI. Identify gaps and create a prioritized action plan for AI readiness.",
+  "features": [
+   "Data Assessment",
+   "Infrastructure Review",
+   "Skills Gap Analysis",
+   "Process Evaluation",
+   "Culture Assessment",
+   "Action Plan"
+  ],
+  "benefits": [
+   "Clear understanding",
+   "Prioritized actions",
+   "Risk awareness",
+   "Budget clarity",
+   "Timeline realism",
+   "Stakeholder buy-in"
+  ],
+  "technologies": [
+   {
+    "icon": "document",
+    "name": "Assessment Framework"
+   },
+   {
+    "icon": "chart",
+    "name": "Maturity Model"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "ai-roi-analysis",
+  "name": "AI ROI Analysis",
+  "parentSlug": "ai-strategy",
+  "shortDescription": "Calculate the business value and ROI of AI initiatives.",
+  "fullDescription": "Build business cases for AI investments with rigorous ROI analysis. We model costs, benefits, risks, and timelines to help you make informed AI investment decisions.",
+  "features": [
+   "Cost Modeling",
+   "Benefit Quantification",
+   "Risk Assessment",
+   "Sensitivity Analysis",
+   "Payback Calculation",
+   "Business Case"
+  ],
+  "benefits": [
+   "Informed decisions",
+   "Budget justification",
+   "Risk awareness",
+   "Stakeholder alignment",
+   "Priority clarity",
+   "Success metrics"
+  ],
+  "technologies": [
+   {
+    "icon": "calculator",
+    "name": "Financial Models"
+   },
+   {
+    "icon": "excel",
+    "name": "Excel"
+   },
+   {
+    "icon": "chart",
+    "name": "Analytics"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "ai-strategy",
+  "name": "AI Strategy",
+  "parentSlug": null,
+  "shortDescription": "Develop a comprehensive AI strategy aligned with your business goals.",
+  "fullDescription": "Create a roadmap for AI adoption in your organization. We assess opportunities, evaluate readiness, prioritize use cases, and build a practical plan for AI transformation.",
+  "features": [
+   "AI Readiness Assessment",
+   "Use Case Prioritization",
+   "ROI Analysis",
+   "Technology Selection",
+   "Roadmap Development",
+   "Change Management"
+  ],
+  "benefits": [
+   "Clear direction",
+   "Risk mitigation",
+   "Resource optimization",
+   "Competitive advantage",
+   "Stakeholder alignment",
+   "Measurable outcomes"
+  ],
+  "technologies": [
+   {
+    "icon": "document",
+    "name": "Frameworks"
+   },
+   {
+    "icon": "chart",
+    "name": "Analysis Tools"
+   },
+   {
+    "icon": "calculator",
+    "name": "ROI Models"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "architecture-design",
+  "name": "Architecture Design",
+  "parentSlug": "technology-consulting",
+  "shortDescription": "Design scalable, maintainable system architectures.",
+  "fullDescription": "Build on solid foundations. We design system architectures that are scalable, maintainable, secure, and aligned with your business requirements.",
+  "features": [
+   "System Design",
+   "Microservices",
+   "Cloud Architecture",
+   "Data Architecture",
+   "Security Design",
+   "Documentation"
+  ],
+  "benefits": [
+   "Scalability",
+   "Maintainability",
+   "Performance",
+   "Security",
+   "Cost efficiency",
+   "Team productivity"
+  ],
+  "technologies": [
+   {
+    "icon": "cloud",
+    "name": "Cloud Platforms"
+   },
+   {
+    "icon": "diagram",
+    "name": "Design Tools"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "dedicated-teams",
+  "name": "Dedicated Teams",
+  "parentSlug": "staff-augmentation",
+  "shortDescription": "Get a dedicated team working exclusively on your projects.",
+  "fullDescription": "Your team, your way. We build dedicated teams that work exclusively on your projects with full integration into your processes and culture.",
+  "features": [
+   "Exclusive Team",
+   "Full Integration",
+   "Your Processes",
+   "Long-term Partnership",
+   "Team Stability",
+   "Knowledge Building"
+  ],
+  "benefits": [
+   "Deep expertise",
+   "Team continuity",
+   "Cultural fit",
+   "Ownership",
+   "Predictable costs",
+   "Partnership"
+  ],
+  "technologies": [
+   {
+    "icon": "code",
+    "name": "Your Stack"
+   },
+   {
+    "icon": "tools",
+    "name": "Your Tools"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "developer-outsourcing",
+  "name": "Developer Outsourcing",
+  "parentSlug": "staff-augmentation",
+  "shortDescription": "Outsource development work to skilled offshore teams.",
+  "fullDescription": "Quality development at scale. We provide outsourced development teams that deliver quality work with effective communication and project management.",
+  "features": [
+   "Full-stack Teams",
+   "Project Management",
+   "Quality Assurance",
+   "Communication",
+   "Timezone Coverage",
+   "Cost Efficiency"
+  ],
+  "benefits": [
+   "Cost savings",
+   "Scalability",
+   "Quality delivery",
+   "Focus on core",
+   "Flexible capacity",
+   "Speed"
+  ],
+  "technologies": [
+   {
+    "icon": "code",
+    "name": "Modern Stacks"
+   },
+   {
+    "icon": "agile",
+    "name": "Agile"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "digital-strategy",
+  "name": "Digital Strategy",
+  "parentSlug": "digital-transformation",
+  "shortDescription": "Develop a winning digital strategy for your organization.",
+  "fullDescription": "Chart your digital future. We develop comprehensive digital strategies that align technology investments with business objectives and competitive positioning.",
+  "features": [
+   "Market Analysis",
+   "Technology Assessment",
+   "Competitive Positioning",
+   "Investment Prioritization",
+   "Roadmap Development",
+   "KPI Framework"
+  ],
+  "benefits": [
+   "Clear direction",
+   "Aligned investments",
+   "Competitive edge",
+   "Risk mitigation",
+   "Stakeholder alignment",
+   "Measurable outcomes"
+  ],
+  "technologies": [
+   {
+    "icon": "chart",
+    "name": "Strategy Tools"
+   },
+   {
+    "icon": "search",
+    "name": "Research"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "digital-transformation",
+  "name": "Digital Transformation",
+  "parentSlug": null,
+  "shortDescription": "Transform your business with comprehensive digital strategy.",
+  "fullDescription": "Navigate digital transformation with expert guidance. We help organizations modernize processes, adopt new technologies, and build digital capabilities for the future.",
+  "features": [
+   "Digital Strategy",
+   "Process Digitization",
+   "Technology Roadmap",
+   "Change Management",
+   "Digital Culture",
+   "ROI Measurement"
+  ],
+  "benefits": [
+   "Competitive advantage",
+   "Operational efficiency",
+   "Customer experience",
+   "Innovation culture",
+   "Revenue growth",
+   "Future readiness"
+  ],
+  "technologies": [
+   {
+    "icon": "document",
+    "name": "Strategy Frameworks"
+   },
+   {
+    "icon": "stack",
+    "name": "Technology Stack"
+   },
+   {
+    "icon": "users",
+    "name": "Change Management"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "growth-strategy",
+  "name": "Growth Strategy",
+  "parentSlug": null,
+  "shortDescription": "Develop strategies for sustainable business growth.",
+  "fullDescription": "Accelerate your growth. We help identify growth opportunities, develop go-to-market strategies, and optimize acquisition and retention for sustainable growth.",
+  "features": [
+   "Market Analysis",
+   "Growth Opportunities",
+   "Go-to-Market",
+   "Pricing Strategy",
+   "Channel Strategy",
+   "Growth Metrics"
+  ],
+  "benefits": [
+   "Revenue growth",
+   "Market expansion",
+   "Customer acquisition",
+   "Competitive advantage",
+   "Data-driven growth",
+   "Sustainable scaling"
+  ],
+  "technologies": [
+   {
+    "icon": "chart",
+    "name": "Analytics"
+   },
+   {
+    "icon": "search",
+    "name": "Research"
+   },
+   {
+    "icon": "document",
+    "name": "Frameworks"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "process-digitization",
+  "name": "Process Digitization",
+  "parentSlug": "digital-transformation",
+  "shortDescription": "Digitize manual processes for efficiency and scalability.",
+  "fullDescription": "Move from paper to digital. We analyze and digitize manual processes, implementing workflows, automation, and digital tools for operational efficiency.",
+  "features": [
+   "Process Mapping",
+   "Digital Workflow Design",
+   "Tool Selection",
+   "Implementation",
+   "Training",
+   "Optimization"
+  ],
+  "benefits": [
+   "Efficiency gains",
+   "Cost reduction",
+   "Error elimination",
+   "Visibility",
+   "Scalability",
+   "Employee satisfaction"
+  ],
+  "technologies": [
+   {
+    "icon": "workflow",
+    "name": "Workflow Tools"
+   },
+   {
+    "icon": "cog",
+    "name": "Automation"
+   },
+   {
+    "icon": "api",
+    "name": "Integration"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "staff-augmentation",
+  "name": "Staff Augmentation",
+  "parentSlug": null,
+  "shortDescription": "Scale your team with skilled developers and specialists.",
+  "fullDescription": "Extend your team on demand. We provide skilled developers, designers, and specialists who integrate with your team to accelerate delivery.",
+  "features": [
+   "Developer Teams",
+   "Specialist Roles",
+   "Flexible Engagement",
+   "Quick Onboarding",
+   "Team Integration",
+   "Quality Assurance"
+  ],
+  "benefits": [
+   "Rapid scaling",
+   "Skill access",
+   "Cost flexibility",
+   "Reduced hiring risk",
+   "Project acceleration",
+   "Knowledge transfer"
+  ],
+  "technologies": [
+   {
+    "icon": "code",
+    "name": "Various Stacks"
+   },
+   {
+    "icon": "agile",
+    "name": "Agile"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "startup-mvp-development",
+  "name": "Startup MVP Development",
+  "parentSlug": "startup-services",
+  "shortDescription": "Build your MVP quickly to validate your startup idea.",
+  "fullDescription": "Validate your idea fast. We build MVPs that test your core hypothesis with real users, using lean development practices and modern technology.",
+  "features": [
+   "Rapid Development",
+   "Core Features",
+   "User Testing",
+   "Iteration",
+   "Scalable Foundation",
+   "Launch Support"
+  ],
+  "benefits": [
+   "Fast validation",
+   "Cost efficiency",
+   "User feedback",
+   "Investor traction",
+   "Scalable base",
+   "Market learning"
+  ],
+  "technologies": [
+   {
+    "icon": "react",
+    "name": "React/Next.js"
+   },
+   {
+    "icon": "nodejs",
+    "name": "Node.js"
+   },
+   {
+    "icon": "cloud",
+    "name": "Cloud"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "startup-services",
+  "name": "Startup Services",
+  "parentSlug": null,
+  "shortDescription": "Technical services designed for startups and entrepreneurs.",
+  "fullDescription": "Build your startup on solid foundations. We provide technical services tailored for startups including MVP development, technical leadership, and scalable architecture.",
+  "features": [
+   "MVP Development",
+   "Technical CTO",
+   "Architecture Design",
+   "Team Building",
+   "Investor Support",
+   "Scaling Guidance"
+  ],
+  "benefits": [
+   "Fast to market",
+   "Cost efficiency",
+   "Technical excellence",
+   "Investor ready",
+   "Scalable foundation",
+   "Expert guidance"
+  ],
+  "technologies": [
+   {
+    "icon": "stack",
+    "name": "Modern Stack"
+   },
+   {
+    "icon": "agile",
+    "name": "Agile"
+   },
+   {
+    "icon": "cloud",
+    "name": "Cloud"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "tech-stack-assessment",
+  "name": "Tech Stack Assessment",
+  "parentSlug": "technology-consulting",
+  "shortDescription": "Evaluate your technology stack for performance and scalability.",
+  "fullDescription": "Know your technology health. We assess your current tech stack for performance, scalability, security, and alignment with business needs.",
+  "features": [
+   "Architecture Review",
+   "Performance Analysis",
+   "Security Assessment",
+   "Scalability Review",
+   "Technical Debt",
+   "Recommendations"
+  ],
+  "benefits": [
+   "Clear visibility",
+   "Risk identification",
+   "Optimization opportunities",
+   "Informed planning",
+   "Investment guidance",
+   "Competitive insight"
+  ],
+  "technologies": [
+   {
+    "icon": "chart",
+    "name": "Analysis Tools"
+   },
+   {
+    "icon": "document",
+    "name": "Frameworks"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "technical-cto",
+  "name": "Technical CTO",
+  "parentSlug": "startup-services",
+  "shortDescription": "Get CTO-level technical leadership without full-time commitment.",
+  "fullDescription": "Technical leadership on demand. We provide fractional CTO services for startups and growing companies needing strategic technical guidance.",
+  "features": [
+   "Technical Strategy",
+   "Team Leadership",
+   "Architecture Decisions",
+   "Vendor Management",
+   "Investor Support",
+   "Hiring Guidance"
+  ],
+  "benefits": [
+   "Expert leadership",
+   "Cost efficiency",
+   "Strategic guidance",
+   "Team development",
+   "Technical credibility",
+   "Flexibility"
+  ],
+  "technologies": [
+   {
+    "icon": "user",
+    "name": "Leadership"
+   },
+   {
+    "icon": "chart",
+    "name": "Strategy"
+   },
+   {
+    "icon": "diagram",
+    "name": "Architecture"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ },
+ {
+  "slug": "technology-consulting",
+  "name": "Technology Consulting",
+  "parentSlug": null,
+  "shortDescription": "Expert technology guidance for better business decisions.",
+  "fullDescription": "Make informed technology decisions. We provide expert consulting on technology strategy, architecture, vendor selection, and implementation.",
+  "features": [
+   "Tech Assessment",
+   "Architecture Review",
+   "Vendor Evaluation",
+   "Build vs Buy",
+   "Technology Roadmap",
+   "Implementation Oversight"
+  ],
+  "benefits": [
+   "Informed decisions",
+   "Risk reduction",
+   "Cost optimization",
+   "Best practices",
+   "Vendor negotiation",
+   "Strategic alignment"
+  ],
+  "technologies": [
+   {
+    "icon": "document",
+    "name": "Assessment Frameworks"
+   },
+   {
+    "icon": "book",
+    "name": "Industry Knowledge"
+   }
+  ],
+  "faqCount": 1,
+  "processCount": 4
+ }
+]

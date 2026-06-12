@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { Locale, locales, defaultLocale } from '@/lib/i18n';
+import Breadcrumbs from '@/components/Breadcrumbs'
 import { generateAlternateLinks } from '@/lib/seo';
 import { localizeFullPath } from '@/lib/routes';
 import Button from '@/components/Button';
@@ -172,6 +173,7 @@ export default async function CareersPage({ params }: PageProps) {
       <section className="section bg-gray-950 text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/20 to-transparent pointer-events-none" />
         <div className="container mx-auto text-center relative">
+          <Breadcrumbs className="justify-center mb-6" items={[{ label: 'Home', href: '/' }, { label: 'Careers' }]} />
           <span className="text-overline text-emerald-400 mb-4 block">{c.eyebrow}</span>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-light text-white mb-6 max-w-3xl mx-auto">
             {c.heading}

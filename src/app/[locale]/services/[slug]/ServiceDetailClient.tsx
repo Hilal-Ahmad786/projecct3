@@ -2,6 +2,7 @@
 
 import { useState, useRef } from 'react';
 import LocalizedLink from '@/components/LocalizedLink';
+import SocialProofBanner from '@/components/SocialProofBanner';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
 import { CheckCircleIcon } from '@heroicons/react/24/solid';
 import {
@@ -253,7 +254,10 @@ export default function ServiceDetailClient({
       {/* ── 9. Sub-Services Grid (for parent services) ────────────── */}
       {show('subServices') && subServices.length > 0 && <SubServicesSection subServices={subServices} />}
 
-      {/* ── 10. CTA with project request modal ──────────────────────── */}
+      {/* ── 10. Social proof — trust signals before the ask ─────────── */}
+      {show('cta') && <SocialProofBanner variant="combined" />}
+
+      {/* ── 11. CTA with project request modal ──────────────────────── */}
       {show('cta') && <ServiceRequestCTA serviceType={service.slug} />}
     </>
   );
@@ -332,7 +336,7 @@ function CapabilitiesSection({
               <div className="w-8 h-0.5 bg-gray-400" />
             </div>
           )}
-          <h2 className="text-3xl sm:text-4xl font-light text-gray-900 mb-4">{title}</h2>
+          <h2 className="text-headline text-gray-900 mb-4">{title}</h2>
           {subtitle && <p className="text-lg text-gray-600 font-light">{subtitle}</p>}
         </div>
 
@@ -377,7 +381,7 @@ function BenefitsSection({ benefits, t }: { benefits: string[]; t: (key: string)
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-light text-gray-900 mb-4">{t('services.detail.benefits.title')}</h2>
+          <h2 className="text-headline text-gray-900 mb-4">{t('services.detail.benefits.title')}</h2>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
           {benefits.map((benefit, index) => (
@@ -438,7 +442,7 @@ function WhyUsSection({
               <div className="w-8 h-0.5 bg-gray-600" />
             </div>
           )}
-          <h2 className="text-3xl sm:text-4xl font-light text-white mb-4">{title}</h2>
+          <h2 className="text-headline text-white mb-4">{title}</h2>
           {subtitle && <p className="text-lg text-gray-400 font-light">{subtitle}</p>}
         </div>
 
@@ -552,7 +556,7 @@ function HeroSection({
 
             {/* Title */}
             <div className="space-y-2">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 leading-none">
+              <h1 className="text-display font-light text-gray-900 leading-none">
                 {service.name.split(' ').slice(0, -1).join(' ')}
                 {service.name.split(' ').length > 1 && <br />}
                 <span className={`font-semibold ${colors.titleAccent}`}>
@@ -748,7 +752,7 @@ function FeaturesSection({ features, featureStyle }: { features: string[]; featu
     <section className="py-24 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-light text-gray-900 mb-4 sm:mb-6">
+          <h2 className="text-headline text-gray-900 mb-4 sm:mb-6">
             {t('services.detail.features.title')}
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 font-light">
@@ -1065,7 +1069,7 @@ function ProcessSection({ steps, processLayout }: { steps: ProcessStep[]; proces
             <div className="w-8 h-px bg-gray-300" />
           </motion.div>
           <motion.h2
-            className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3"
+            className="text-headline text-gray-900 mb-3"
             initial={{ opacity: 0, y: 10 }}
             animate={headerInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.1 }}
@@ -1104,7 +1108,7 @@ function FAQSection({ faq }: { faq: FAQItem[] }) {
     <section className="py-12 sm:py-16 md:py-24 bg-gray-50">
       <div className="container mx-auto px-4 max-w-3xl">
         <div className="text-center mb-8 sm:mb-12 md:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-light text-gray-900 mb-4">
+          <h2 className="text-headline text-gray-900 mb-4">
             {t('services.detail.faq.title')}
           </h2>
         </div>
@@ -1168,7 +1172,7 @@ function PricingSection({ packages, locale }: { packages: PricingPackage[]; loca
     <section className="py-12 sm:py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 sm:mb-12 md:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-light text-gray-900 mb-3 sm:mb-4">{t('services.detail.pricing.title')}</h2>
+          <h2 className="text-headline text-gray-900 mb-3 sm:mb-4">{t('services.detail.pricing.title')}</h2>
           <p className="text-sm sm:text-base text-gray-600">{t('services.detail.pricing.description')}</p>
         </div>
 

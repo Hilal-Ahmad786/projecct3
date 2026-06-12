@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useParams, notFound } from 'next/navigation';
@@ -291,8 +292,11 @@ export default function BlogPostPage() {
                 </span>
               </div>
 
+              {/* Breadcrumbs */}
+              <Breadcrumbs className="mb-4" items={[{ label: 'Home', href: '/' }, { label: 'Blog', href: '/blog' }, { label: content.title }]} />
+
               {/* Title */}
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              <h1 className="text-display font-light text-gray-900 mb-6 leading-none">
                 {content.title}
               </h1>
 

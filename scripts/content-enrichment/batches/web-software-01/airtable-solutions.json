@@ -1,0 +1,273 @@
+{
+  "slug": "airtable-solutions",
+  "en": {
+    "name": "Airtable Solutions",
+    "shortDescription": "Turn scattered spreadsheets into a structured operations hub. We design Airtable bases, interfaces, and automations that run your CRM, projects, and inventory — typically live within two to four weeks.",
+    "fullDescription": "Most teams run critical operations on spreadsheets that were never meant to be databases. We rebuild those workflows on Airtable: properly structured relational bases, Interface Designer dashboards tailored to each role, and automations that handle the handoffs people forget. Our work covers CRM pipelines, project tracking, inventory, content calendars, and approval workflows — connected to the rest of your stack through Make, Zapier, n8n, or the Airtable API, and opened up to clients through Softr portals where needed. Because Airtable has real limits, we design around them from day one: record caps, permission granularity, and API rate limits all shape the architecture. The result is working software in weeks, with a clean schema you can migrate off when you eventually outgrow it.",
+    "features": [
+      "Relational Base Architecture & Schema Design",
+      "Interface Designer Dashboards per Role",
+      "Native Automations & Custom Scripting",
+      "Client & Team Portals with Softr",
+      "Form Intake & Approval Workflows",
+      "Zapier, Make & n8n Integrations",
+      "Airtable API & Webhook Development",
+      "Migration from Spreadsheets & Legacy Tools"
+    ],
+    "benefits": [
+      "One source of truth instead of scattered spreadsheets",
+      "Working software in weeks, not months",
+      "Hours of manual data entry automated away",
+      "Tools your team can adjust without developers",
+      "A fraction of the cost of custom software",
+      "A clean exit path when you outgrow no-code"
+    ],
+    "metaTitle": "Airtable Consulting & Automation | PakSoft",
+    "metaDescription": "Custom Airtable bases, interfaces, and automations for CRM, projects, and inventory — designed by experts and live in weeks. Book a free workflow audit today.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Process Mapping", "description": "We sit with the people who actually do the work and map how data moves through your business today. Every spreadsheet, email handoff, and copy-paste step is documented so nothing gets lost in the rebuild." },
+        { "step": 2, "title": "Base & Schema Design", "description": "We design a relational schema with linked records, lookups, and rollups instead of one giant flat table. The schema is reviewed against Airtable's record and permission limits so it still works at three times your current volume." },
+        { "step": 3, "title": "Automations & Integrations", "description": "Native automations handle notifications, status changes, and record creation; Make, Zapier, or n8n connect Airtable to your email, accounting, and messaging tools. Complex logic gets custom scripts with proper error handling." },
+        { "step": 4, "title": "Interfaces & Portals", "description": "Each role gets an Interface Designer view that shows only what they need — sales sees pipeline, operations sees fulfillment. External clients get a Softr portal so they never need an Airtable seat." },
+        { "step": 5, "title": "Data Migration & Testing", "description": "We import and deduplicate your existing data, then run the old and new systems in parallel for a defined period. Edge cases surface in days rather than after the old system is gone." },
+        { "step": 6, "title": "Training & Handover", "description": "Your team gets hands-on training plus a documented guide to the base structure and every automation. The goal is that you can extend the system yourself and only call us for the hard parts." }
+      ],
+      "faq": [
+        { "question": "When is Airtable the right choice — and when is it the wrong one?", "answer": "Airtable shines for internal operations: CRM for small sales teams, project and content tracking, inventory, intake workflows — anywhere you need structured data plus flexibility, fast. It is the wrong choice for high-volume transactional systems, customer-facing products with thousands of concurrent users, or anything needing complex row-level permissions. We will tell you honestly when custom software is the better investment." },
+        { "question": "What are Airtable's limits that I should know about before committing?", "answer": "The biggest ones are record caps per base — 50,000 on the Team plan, 125,000 on Business, 500,000 on Enterprise — an API rate limit of 5 requests per second, and permissions that work at base and table level rather than per row. None of these are dealbreakers for typical operations workloads, but they must shape the architecture from day one, which is exactly what we design for." },
+        { "question": "How long does a typical Airtable project take?", "answer": "A focused single-base build like a CRM or project tracker usually takes 1–2 weeks. A multi-base operations platform with automations, integrations, and a client portal typically runs 4–6 weeks including data migration and parallel testing. Compare that with 3–6 months for equivalent custom software." },
+        { "question": "Can external clients use the system without us paying for Airtable seats?", "answer": "Yes — that is usually the main cost question. Anyone who edits inside Airtable needs a paid seat, but external users can submit data through forms and view or update their records through a Softr portal that authenticates them separately. For a client-facing workflow this routinely saves hundreds of dollars per month in seat costs." },
+        { "question": "Can Airtable replace our CRM or ERP?", "answer": "For a small-to-mid-size sales team, an Airtable CRM tailored to your exact pipeline often beats a generic CRM you only use 20% of. A full ERP is a different story: payroll, double-entry accounting, and regulatory reporting belong in dedicated systems. The sweet spot is Airtable as the operations layer, integrated with your accounting tool rather than replacing it." },
+        { "question": "How do Airtable automations work, and where do they fall short?", "answer": "Native automations are trigger-action rules — record updated, send email, create record — with a quota of automation runs per month that depends on your plan, and a cap of 50 automations per base. For multi-step logic, branching, or talking to external APIs reliably, we move that work to Make or n8n, which also gives you execution logs and retry handling that native automations lack." },
+        { "question": "Is our data safe in Airtable? What about compliance?", "answer": "Airtable is SOC 2 Type II certified, encrypts data in transit and at rest, and offers SSO and admin controls on higher plans. The practical caveats are data residency — hosting is US-based — and the coarse permission model, which we work around with synced bases and portal-level access control. For strict regulatory environments we will flag early whether Airtable fits." },
+        { "question": "What happens if we outgrow Airtable?", "answer": "That is a feature of how we build, not a crisis. Because we design proper relational schemas, exporting to PostgreSQL and rebuilding as a custom app later is a structured migration, not an archaeology project. Many clients run on Airtable for two or three years, validate their processes cheaply, and migrate only the parts that hit real limits." }
+      ],
+      "technologies": [
+        { "icon": "airtable", "name": "Airtable" },
+        { "icon": "zapier", "name": "Zapier" },
+        { "icon": "make", "name": "Make" },
+        { "icon": "n8n", "name": "n8n" },
+        { "icon": "softr", "name": "Softr" },
+        { "icon": "fillout", "name": "Fillout" },
+        { "icon": "whalesync", "name": "Whalesync" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Airtable Çözümleri",
+    "shortDescription": "Dağınık tabloları yapılandırılmış bir operasyon merkezine dönüştürün. CRM, proje ve envanter süreçlerinizi yöneten Airtable veritabanları, arayüzler ve otomasyonlar tasarlıyoruz — genellikle iki ila dört hafta içinde yayında.",
+    "fullDescription": "Çoğu ekip, kritik operasyonlarını hiçbir zaman veritabanı olarak tasarlanmamış tablolar üzerinde yürütür. Biz bu iş akışlarını Airtable üzerinde yeniden kurarız: doğru yapılandırılmış ilişkisel veritabanları, her role özel Interface Designer panelleri ve insanların unuttuğu devir teslimleri üstlenen otomasyonlar. Çalışmalarımız CRM hatları, proje takibi, envanter, içerik takvimleri ve onay akışlarını kapsar — Make, Zapier, n8n veya Airtable API'si üzerinden mevcut araçlarınıza bağlanır, gerektiğinde Softr portallarıyla müşterilerinize açılır. Airtable'ın gerçek sınırları olduğundan, ilk günden bunları gözeterek tasarlarız: kayıt limitleri, yetki ayrıntı düzeyi ve API hız limitleri mimariyi şekillendirir. Sonuç: haftalar içinde çalışan bir yazılım ve büyüdüğünüzde sorunsuzca taşınabilecek temiz bir veri şeması.",
+    "features": [
+      "İlişkisel Veritabanı Mimarisi ve Şema Tasarımı",
+      "Role Özel Interface Designer Panelleri",
+      "Yerleşik Otomasyonlar ve Özel Scriptler",
+      "Softr ile Müşteri ve Ekip Portalları",
+      "Form Girişi ve Onay Akışları",
+      "Zapier, Make ve n8n Entegrasyonları",
+      "Airtable API ve Webhook Geliştirme",
+      "Tablolardan ve Eski Araçlardan Veri Taşıma"
+    ],
+    "benefits": [
+      "Dağınık tablolar yerine tek bir doğru kaynak",
+      "Aylar değil, haftalar içinde çalışan yazılım",
+      "Saatler süren manuel veri girişi otomatikleşir",
+      "Ekibinizin geliştiriciye ihtiyaç duymadan düzenleyebildiği araçlar",
+      "Özel yazılım maliyetinin çok küçük bir kısmı",
+      "No-code'u aştığınızda temiz bir geçiş yolu"
+    ],
+    "metaTitle": "Airtable Danışmanlığı ve Otomasyon | PakSoft",
+    "metaDescription": "CRM, proje ve envanter için özel Airtable veritabanları, arayüzler ve otomasyonlar — uzman tasarımıyla haftalar içinde yayında. Ücretsiz iş akışı analizi alın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Süreç Haritalama", "description": "İşi fiilen yapan kişilerle oturup verinin bugün işletmenizde nasıl aktığını haritalarız. Her tablo, e-posta devri ve kopyala-yapıştır adımı belgelenir; böylece yeniden kurulumda hiçbir şey kaybolmaz." },
+        { "step": 2, "title": "Veritabanı ve Şema Tasarımı", "description": "Tek bir dev düz tablo yerine bağlantılı kayıtlar, lookup ve rollup alanlarıyla ilişkisel bir şema tasarlarız. Şema, Airtable'ın kayıt ve yetki limitlerine göre gözden geçirilir; mevcut hacminizin üç katında bile çalışmaya devam eder." },
+        { "step": 3, "title": "Otomasyonlar ve Entegrasyonlar", "description": "Yerleşik otomasyonlar bildirimleri, durum değişikliklerini ve kayıt oluşturmayı üstlenir; Make, Zapier veya n8n ise Airtable'ı e-posta, muhasebe ve mesajlaşma araçlarınıza bağlar. Karmaşık mantık, düzgün hata yönetimine sahip özel scriptlerle çözülür." },
+        { "step": 4, "title": "Arayüzler ve Portallar", "description": "Her role yalnızca ihtiyacı olanı gösteren bir Interface Designer ekranı kurulur — satış ekibi pipeline'ı, operasyon ekibi sevkiyatı görür. Dış müşteriler Softr portalı kullanır; böylece hiçbir zaman Airtable lisansına ihtiyaç duymazlar." },
+        { "step": 5, "title": "Veri Taşıma ve Test", "description": "Mevcut verilerinizi içe aktarır ve tekrarları temizleriz; ardından eski ve yeni sistemi belirli bir süre paralel çalıştırırız. Uç senaryolar eski sistem kapatıldıktan sonra değil, günler içinde ortaya çıkar." },
+        { "step": 6, "title": "Eğitim ve Devir", "description": "Ekibiniz uygulamalı eğitim alır; veritabanı yapısı ve her otomasyon için yazılı bir kılavuz teslim edilir. Hedef, sistemi kendinizin genişletebilmesi ve bizi yalnızca zor kısımlar için aramanızdır." }
+      ],
+      "faq": [
+        { "question": "Airtable ne zaman doğru, ne zaman yanlış tercihtir?", "answer": "Airtable iç operasyonlarda parlar: küçük satış ekipleri için CRM, proje ve içerik takibi, envanter, talep toplama akışları — yapılandırılmış veri ve esnekliğin hızla gerektiği her yerde. Yüksek hacimli işlemsel sistemler, binlerce eşzamanlı kullanıcılı müşteri ürünleri veya satır düzeyinde karmaşık yetkilendirme gerektiren işler için yanlış tercihtir. Özel yazılımın daha iyi yatırım olduğu durumu size dürüstçe söyleriz." },
+        { "question": "Karar vermeden önce bilmem gereken Airtable limitleri neler?", "answer": "En önemlileri: veritabanı başına kayıt limitleri — Team planında 50.000, Business'ta 125.000, Enterprise'da 500.000 — saniyede 5 istekle sınırlı API hızı ve satır bazında değil, veritabanı ve tablo düzeyinde çalışan yetkilendirme. Tipik operasyon yükleri için bunların hiçbiri engel değildir; ancak mimariyi ilk günden şekillendirmeleri gerekir — bizim tasarım yaklaşımımız da tam olarak budur." },
+        { "question": "Tipik bir Airtable projesi ne kadar sürer?", "answer": "CRM veya proje takibi gibi odaklı tek veritabanlı bir kurulum genellikle 1–2 hafta sürer. Otomasyonlar, entegrasyonlar ve müşteri portalı içeren çok veritabanlı bir operasyon platformu ise veri taşıma ve paralel test dahil 4–6 hafta alır. Eşdeğer özel yazılım için bu süre 3–6 aydır." },
+        { "question": "Dış müşteriler Airtable lisansı ödemeden sistemi kullanabilir mi?", "answer": "Evet — maliyet sorusunun özü genellikle budur. Airtable içinde düzenleme yapan herkesin ücretli lisansa ihtiyacı vardır; ancak dış kullanıcılar formlar üzerinden veri gönderebilir ve ayrı kimlik doğrulamalı bir Softr portalı üzerinden kayıtlarını görüntüleyip güncelleyebilir. Müşteriye dönük bir akışta bu, aylık lisans maliyetlerinden düzenli olarak yüzlerce dolar tasarruf sağlar." },
+        { "question": "Airtable CRM'imizin veya ERP'mizin yerini alabilir mi?", "answer": "Küçük ve orta ölçekli bir satış ekibi için, tam olarak sizin sürecinize göre kurulmuş bir Airtable CRM, yalnızca %20'sini kullandığınız jenerik bir CRM'den çoğu zaman daha iyidir. Tam bir ERP ise farklı bir hikâyedir: bordro, çift taraflı muhasebe ve mevzuat raporlaması özel sistemlere aittir. İdeal kullanım, Airtable'ı muhasebe aracınızın yerine koymak değil, onunla entegre bir operasyon katmanı yapmaktır." },
+        { "question": "Airtable otomasyonları nasıl çalışır, nerede yetersiz kalır?", "answer": "Yerleşik otomasyonlar tetikleyici-eylem kurallarıdır — kayıt güncellendi, e-posta gönder, kayıt oluştur — ve plana bağlı aylık çalıştırma kotası ile veritabanı başına 50 otomasyon sınırı vardır. Çok adımlı mantık, dallanma veya dış API'lerle güvenilir iletişim için bu işi Make veya n8n'e taşırız; bunlar yerleşik otomasyonlarda olmayan çalıştırma kayıtları ve yeniden deneme mekanizması da sunar." },
+        { "question": "Verilerimiz Airtable'da güvende mi? Uyumluluk durumu nedir?", "answer": "Airtable SOC 2 Type II sertifikalıdır, veriyi hem aktarımda hem depolamada şifreler; üst planlarda SSO ve yönetici kontrolleri sunar. Pratikteki çekinceler veri lokasyonu — barındırma ABD merkezlidir — ve kaba taneli yetki modelidir; bunu senkronize veritabanları ve portal düzeyinde erişim kontrolüyle aşarız. Sıkı düzenlemeye tabi sektörlerde Airtable'ın uygun olup olmadığını baştan netleştiririz." },
+        { "question": "Airtable'ı aşarsak ne olur?", "answer": "Bu bizim kurulum şeklimizin bir özelliğidir, kriz değil. Düzgün ilişkisel şemalar tasarladığımız için verileri PostgreSQL'e aktarıp daha sonra özel bir uygulama olarak yeniden kurmak yapılandırılmış bir geçiştir, arkeolojik kazı değil. Birçok müşterimiz iki üç yıl Airtable üzerinde çalışır, süreçlerini düşük maliyetle doğrular ve yalnızca gerçek limitlere takılan kısımları taşır." }
+      ],
+      "technologies": [
+        { "icon": "airtable", "name": "Airtable" },
+        { "icon": "zapier", "name": "Zapier" },
+        { "icon": "make", "name": "Make" },
+        { "icon": "n8n", "name": "n8n" },
+        { "icon": "softr", "name": "Softr" },
+        { "icon": "fillout", "name": "Fillout" },
+        { "icon": "whalesync", "name": "Whalesync" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Airtable-Lösungen",
+    "shortDescription": "Verwandeln Sie verstreute Tabellen in eine strukturierte Operations-Zentrale. Wir entwerfen Airtable-Bases, Interfaces und Automatisierungen für CRM, Projekte und Lagerbestand — in der Regel in zwei bis vier Wochen produktiv.",
+    "fullDescription": "Viele Teams betreiben kritische Abläufe in Tabellen, die nie als Datenbank gedacht waren. Wir bauen diese Workflows auf Airtable neu auf: sauber strukturierte relationale Bases, Interface-Designer-Dashboards für jede Rolle und Automatisierungen, die die Übergaben übernehmen, die sonst vergessen werden. Unsere Arbeit umfasst CRM-Pipelines, Projektsteuerung, Lagerbestand, Redaktionspläne und Freigabe-Workflows — verbunden mit Ihrem restlichen Stack über Make, Zapier, n8n oder die Airtable API und bei Bedarf für Kunden geöffnet über Softr-Portale. Weil Airtable echte Grenzen hat, planen wir von Anfang an damit: Datensatz-Limits, Berechtigungsgranularität und API-Rate-Limits prägen die Architektur. Das Ergebnis ist funktionierende Software in Wochen — mit einem sauberen Schema, das Sie später migrieren können, wenn Sie herauswachsen.",
+    "features": [
+      "Relationale Base-Architektur & Schema-Design",
+      "Interface-Designer-Dashboards je Rolle",
+      "Native Automatisierungen & Custom Scripting",
+      "Kunden- & Team-Portale mit Softr",
+      "Formular-Eingänge & Freigabe-Workflows",
+      "Integrationen mit Zapier, Make & n8n",
+      "Airtable-API- & Webhook-Entwicklung",
+      "Migration aus Tabellen & Altsystemen"
+    ],
+    "benefits": [
+      "Eine zentrale Datenquelle statt verstreuter Tabellen",
+      "Funktionierende Software in Wochen statt Monaten",
+      "Stunden manueller Dateneingabe wegautomatisiert",
+      "Werkzeuge, die Ihr Team ohne Entwickler anpassen kann",
+      "Ein Bruchteil der Kosten von Individualsoftware",
+      "Ein sauberer Migrationspfad, wenn No-Code nicht mehr reicht"
+    ],
+    "metaTitle": "Airtable-Beratung & Automatisierung | PakSoft",
+    "metaDescription": "Individuelle Airtable-Bases, Interfaces und Automatisierungen für CRM, Projekte und Lager — von Experten gebaut, in Wochen produktiv. Jetzt kostenloses Workflow-Audit sichern.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Prozess-Mapping", "description": "Wir setzen uns mit den Menschen zusammen, die die Arbeit tatsächlich machen, und kartieren, wie Daten heute durch Ihr Unternehmen fließen. Jede Tabelle, jede E-Mail-Übergabe und jeder Copy-Paste-Schritt wird dokumentiert, damit beim Neuaufbau nichts verloren geht." },
+        { "step": 2, "title": "Base- & Schema-Design", "description": "Statt einer riesigen flachen Tabelle entwerfen wir ein relationales Schema mit verknüpften Datensätzen, Lookups und Rollups. Das Schema wird gegen Airtables Datensatz- und Berechtigungslimits geprüft, damit es auch beim Dreifachen Ihres heutigen Volumens funktioniert." },
+        { "step": 3, "title": "Automatisierungen & Integrationen", "description": "Native Automatisierungen übernehmen Benachrichtigungen, Statuswechsel und das Anlegen von Datensätzen; Make, Zapier oder n8n verbinden Airtable mit E-Mail, Buchhaltung und Messaging. Komplexe Logik wird mit eigenen Skripten samt sauberem Fehlerhandling gelöst." },
+        { "step": 4, "title": "Interfaces & Portale", "description": "Jede Rolle erhält eine Interface-Designer-Ansicht, die nur das Nötige zeigt — der Vertrieb sieht die Pipeline, Operations sieht die Abwicklung. Externe Kunden erhalten ein Softr-Portal und brauchen damit nie einen Airtable-Sitzplatz." },
+        { "step": 5, "title": "Datenmigration & Tests", "description": "Wir importieren und bereinigen Ihre Bestandsdaten und lassen Alt- und Neusystem für eine definierte Zeit parallel laufen. Randfälle tauchen so innerhalb von Tagen auf — nicht erst, wenn das alte System abgeschaltet ist." },
+        { "step": 6, "title": "Schulung & Übergabe", "description": "Ihr Team erhält praxisnahe Schulungen plus eine dokumentierte Anleitung zur Base-Struktur und jeder Automatisierung. Ziel ist, dass Sie das System selbst erweitern können und uns nur für die schwierigen Teile brauchen." }
+      ],
+      "faq": [
+        { "question": "Wann ist Airtable die richtige Wahl — und wann die falsche?", "answer": "Airtable glänzt bei internen Abläufen: CRM für kleine Vertriebsteams, Projekt- und Content-Steuerung, Lagerbestand, Antrags-Workflows — überall dort, wo strukturierte Daten plus Flexibilität schnell gebraucht werden. Die falsche Wahl ist es für transaktionsintensive Systeme, kundenseitige Produkte mit Tausenden gleichzeitigen Nutzern oder komplexe Berechtigungen auf Zeilenebene. Wir sagen Ihnen ehrlich, wann Individualsoftware die bessere Investition ist." },
+        { "question": "Welche Airtable-Limits sollte ich vor der Entscheidung kennen?", "answer": "Die wichtigsten: Datensatz-Obergrenzen pro Base — 50.000 im Team-Plan, 125.000 bei Business, 500.000 bei Enterprise —, ein API-Rate-Limit von 5 Anfragen pro Sekunde und Berechtigungen auf Base- und Tabellenebene statt pro Zeile. Für typische Operations-Workloads ist nichts davon ein K.-o.-Kriterium, aber die Architektur muss von Tag eins darauf ausgelegt sein — genau dafür entwerfen wir." },
+        { "question": "Wie lange dauert ein typisches Airtable-Projekt?", "answer": "Ein fokussierter Aufbau mit einer Base — etwa ein CRM oder Projekttracker — dauert meist 1–2 Wochen. Eine Operations-Plattform mit mehreren Bases, Automatisierungen, Integrationen und Kundenportal liegt inklusive Datenmigration und Paralleltest typischerweise bei 4–6 Wochen. Vergleichbare Individualsoftware braucht 3–6 Monate." },
+        { "question": "Können externe Kunden das System nutzen, ohne dass wir Airtable-Sitzplätze bezahlen?", "answer": "Ja — das ist meist die zentrale Kostenfrage. Wer innerhalb von Airtable editiert, braucht einen bezahlten Sitzplatz; externe Nutzer können aber Daten über Formulare einreichen und ihre Datensätze über ein separat authentifiziertes Softr-Portal einsehen und aktualisieren. Bei kundenseitigen Workflows spart das regelmäßig mehrere Hundert Dollar Sitzplatzkosten pro Monat." },
+        { "question": "Kann Airtable unser CRM oder ERP ersetzen?", "answer": "Für ein kleines bis mittleres Vertriebsteam schlägt ein auf Ihre Pipeline zugeschnittenes Airtable-CRM oft das generische CRM, von dem Sie nur 20 % nutzen. Ein vollständiges ERP ist eine andere Geschichte: Lohnabrechnung, doppelte Buchführung und regulatorisches Reporting gehören in dedizierte Systeme. Der Sweet Spot ist Airtable als Operations-Schicht, integriert mit Ihrer Buchhaltung statt als deren Ersatz." },
+        { "question": "Wie funktionieren Airtable-Automatisierungen, und wo stoßen sie an Grenzen?", "answer": "Native Automatisierungen sind Trigger-Aktion-Regeln — Datensatz geändert, E-Mail senden, Datensatz anlegen — mit einem planabhängigen monatlichen Kontingent an Läufen und maximal 50 Automatisierungen pro Base. Für mehrstufige Logik, Verzweigungen oder zuverlässige Aufrufe externer APIs verlagern wir die Arbeit zu Make oder n8n — inklusive Ausführungsprotokollen und Retry-Handling, die nativen Automatisierungen fehlen." },
+        { "question": "Sind unsere Daten in Airtable sicher? Wie sieht es mit Compliance aus?", "answer": "Airtable ist SOC 2 Type II zertifiziert, verschlüsselt Daten bei Übertragung und Speicherung und bietet in höheren Plänen SSO und Admin-Kontrollen. Die praktischen Einschränkungen sind die Datenresidenz — das Hosting ist US-basiert — und das grobe Berechtigungsmodell, das wir mit synchronisierten Bases und Zugriffskontrolle auf Portalebene umgehen. In streng regulierten Branchen klären wir früh, ob Airtable passt." },
+        { "question": "Was passiert, wenn wir aus Airtable herauswachsen?", "answer": "Das ist ein Merkmal unserer Bauweise, keine Krise. Weil wir saubere relationale Schemata entwerfen, ist der Export nach PostgreSQL und der spätere Neuaufbau als Individual-App eine strukturierte Migration, kein Ausgrabungsprojekt. Viele Kunden arbeiten zwei bis drei Jahre mit Airtable, validieren ihre Prozesse kostengünstig und migrieren nur die Teile, die an echte Grenzen stoßen." }
+      ],
+      "technologies": [
+        { "icon": "airtable", "name": "Airtable" },
+        { "icon": "zapier", "name": "Zapier" },
+        { "icon": "make", "name": "Make" },
+        { "icon": "n8n", "name": "n8n" },
+        { "icon": "softr", "name": "Softr" },
+        { "icon": "fillout", "name": "Fillout" },
+        { "icon": "whalesync", "name": "Whalesync" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "Airtable حل",
+    "shortDescription": "بکھری ہوئی اسپریڈ شیٹس کو ایک منظم آپریشنز مرکز میں بدلیں۔ ہم Airtable بیسز، انٹرفیسز اور آٹومیشنز ڈیزائن کرتے ہیں جو آپ کے CRM، پراجیکٹس اور انوینٹری کو چلاتے ہیں — عموماً دو سے چار ہفتوں میں تیار۔",
+    "fullDescription": "زیادہ تر ٹیمیں اپنے اہم آپریشنز ایسی اسپریڈ شیٹس پر چلاتی ہیں جو کبھی ڈیٹابیس بننے کے لیے تھیں ہی نہیں۔ ہم ان ورک فلوز کو Airtable پر از سرِ نو تعمیر کرتے ہیں: درست ساخت کے حامل relational بیسز، ہر کردار کے لیے مخصوص Interface Designer ڈیش بورڈز، اور ایسی آٹومیشنز جو وہ کام سنبھالتی ہیں جو لوگ بھول جاتے ہیں۔ ہمارا کام CRM پائپ لائنز، پراجیکٹ ٹریکنگ، انوینٹری، کانٹینٹ کیلنڈرز اور منظوری کے ورک فلوز پر محیط ہے — جو Make، Zapier، n8n یا Airtable API کے ذریعے آپ کے باقی نظام سے جڑتا ہے اور ضرورت پڑنے پر Softr پورٹلز کے ذریعے کلائنٹس کے لیے کھولا جاتا ہے۔ چونکہ Airtable کی حقیقی حدود ہیں، ہم پہلے دن سے انہیں مدِنظر رکھ کر ڈیزائن کرتے ہیں: ریکارڈ کی حدیں، اجازتوں کی سطح اور API ریٹ لمٹس سب فنِ تعمیر کو شکل دیتے ہیں۔ نتیجہ: ہفتوں میں چلتا ہوا سافٹ ویئر، اور ایک صاف اسکیمہ جسے بڑھنے پر باآسانی منتقل کیا جا سکے۔",
+    "features": [
+      "Relational بیس آرکیٹیکچر اور اسکیمہ ڈیزائن",
+      "ہر کردار کے لیے Interface Designer ڈیش بورڈز",
+      "بلٹ اِن آٹومیشنز اور کسٹم اسکرپٹنگ",
+      "Softr کے ذریعے کلائنٹ اور ٹیم پورٹلز",
+      "فارم اِن ٹیک اور منظوری کے ورک فلوز",
+      "Zapier، Make اور n8n انٹیگریشنز",
+      "Airtable API اور Webhook ڈیولپمنٹ",
+      "اسپریڈ شیٹس اور پرانے ٹولز سے ڈیٹا منتقلی"
+    ],
+    "benefits": [
+      "بکھری شیٹس کے بجائے سچائی کا ایک ہی ماخذ",
+      "مہینوں نہیں، ہفتوں میں چلتا ہوا سافٹ ویئر",
+      "گھنٹوں کی دستی ڈیٹا انٹری خودکار",
+      "ایسے ٹولز جنہیں آپ کی ٹیم بغیر ڈیولپر کے بدل سکے",
+      "کسٹم سافٹ ویئر کی لاگت کا معمولی حصہ",
+      "no-code سے آگے بڑھنے پر صاف منتقلی کا راستہ"
+    ],
+    "metaTitle": "Airtable کنسلٹنگ اور آٹومیشن | PakSoft",
+    "metaDescription": "CRM، پراجیکٹس اور انوینٹری کے لیے کسٹم Airtable بیسز، انٹرفیسز اور آٹومیشنز — ماہرانہ ڈیزائن، ہفتوں میں تیار۔ آج ہی مفت ورک فلو آڈٹ بُک کریں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "عمل کی نقشہ بندی", "description": "ہم ان لوگوں کے ساتھ بیٹھتے ہیں جو حقیقت میں کام کرتے ہیں اور یہ نقشہ بناتے ہیں کہ آج آپ کے کاروبار میں ڈیٹا کیسے گردش کرتا ہے۔ ہر اسپریڈ شیٹ، ای میل کی منتقلی اور کاپی پیسٹ کا مرحلہ دستاویز ہوتا ہے تاکہ نئی تعمیر میں کچھ بھی نہ کھوئے۔" },
+        { "step": 2, "title": "بیس اور اسکیمہ ڈیزائن", "description": "ایک بہت بڑی سادہ ٹیبل کے بجائے ہم منسلک ریکارڈز، lookup اور rollup فیلڈز کے ساتھ relational اسکیمہ ڈیزائن کرتے ہیں۔ اسکیمے کو Airtable کے ریکارڈ اور اجازت کی حدود کے مطابق جانچا جاتا ہے تاکہ یہ آپ کے موجودہ حجم سے تین گنا پر بھی چلتا رہے۔" },
+        { "step": 3, "title": "آٹومیشنز اور انٹیگریشنز", "description": "بلٹ اِن آٹومیشنز اطلاعات، اسٹیٹس کی تبدیلیاں اور ریکارڈ بنانے کا کام سنبھالتی ہیں؛ Make، Zapier یا n8n Airtable کو آپ کے ای میل، اکاؤنٹنگ اور میسجنگ ٹولز سے جوڑتے ہیں۔ پیچیدہ منطق کے لیے مناسب ایرر ہینڈلنگ والے کسٹم اسکرپٹس استعمال ہوتے ہیں۔" },
+        { "step": 4, "title": "انٹرفیسز اور پورٹلز", "description": "ہر کردار کو ایک Interface Designer ویو ملتا ہے جو صرف وہی دکھاتا ہے جو درکار ہو — سیلز کو پائپ لائن نظر آتی ہے، آپریشنز کو ترسیل۔ بیرونی کلائنٹس کے لیے Softr پورٹل بنتا ہے تاکہ انہیں کبھی Airtable کی سیٹ نہ خریدنی پڑے۔" },
+        { "step": 5, "title": "ڈیٹا منتقلی اور جانچ", "description": "ہم آپ کا موجودہ ڈیٹا درآمد کر کے تکرار صاف کرتے ہیں، پھر پرانے اور نئے نظام کو ایک متعین مدت تک متوازی چلاتے ہیں۔ اس طرح غیر معمولی صورتیں دنوں میں سامنے آ جاتی ہیں، پرانا نظام بند ہونے کے بعد نہیں۔" },
+        { "step": 6, "title": "تربیت اور حوالگی", "description": "آپ کی ٹیم کو عملی تربیت ملتی ہے اور بیس کے ڈھانچے اور ہر آٹومیشن کی دستاویزی گائیڈ فراہم کی جاتی ہے۔ مقصد یہ ہے کہ آپ نظام کو خود بڑھا سکیں اور ہمیں صرف مشکل حصوں کے لیے بلائیں۔" }
+      ],
+      "faq": [
+        { "question": "Airtable کب درست انتخاب ہے — اور کب غلط؟", "answer": "Airtable اندرونی آپریشنز میں کمال دکھاتا ہے: چھوٹی سیلز ٹیموں کے لیے CRM، پراجیکٹ اور کانٹینٹ ٹریکنگ، انوینٹری، درخواست وصولی کے ورک فلوز — جہاں بھی منظم ڈیٹا اور لچک تیزی سے درکار ہو۔ یہ زیادہ حجم کے ٹرانزیکشنل سسٹمز، ہزاروں بیک وقت صارفین والی کسٹمر پروڈکٹس، یا قطار کی سطح کی پیچیدہ اجازتوں کے لیے غلط انتخاب ہے۔ جہاں کسٹم سافٹ ویئر بہتر سرمایہ کاری ہو، ہم صاف بتا دیتے ہیں۔" },
+        { "question": "فیصلہ کرنے سے پہلے مجھے Airtable کی کون سی حدود معلوم ہونی چاہئیں؟", "answer": "سب سے اہم: ہر بیس میں ریکارڈز کی حد — Team پلان میں 50,000، Business میں 125,000، Enterprise میں 500,000 — فی سیکنڈ 5 درخواستوں کی API ریٹ لمٹ، اور اجازتیں جو قطار کے بجائے بیس اور ٹیبل کی سطح پر کام کرتی ہیں۔ عام آپریشنل کاموں کے لیے ان میں سے کوئی بھی رکاوٹ نہیں، مگر فنِ تعمیر کو پہلے دن سے انہی کے مطابق ڈھالنا ضروری ہے — ہم بالکل یہی کرتے ہیں۔" },
+        { "question": "ایک عام Airtable پراجیکٹ کتنا وقت لیتا ہے؟", "answer": "CRM یا پراجیکٹ ٹریکر جیسی ایک بیس پر مرکوز تعمیر عموماً 1–2 ہفتے لیتی ہے۔ آٹومیشنز، انٹیگریشنز اور کلائنٹ پورٹل والا کئی بیسز کا آپریشنز پلیٹ فارم، ڈیٹا منتقلی اور متوازی جانچ سمیت، عام طور پر 4–6 ہفتے لیتا ہے۔ اس کے مقابلے میں مساوی کسٹم سافٹ ویئر 3–6 مہینے مانگتا ہے۔" },
+        { "question": "کیا بیرونی کلائنٹس بغیر Airtable سیٹس خریدے نظام استعمال کر سکتے ہیں؟", "answer": "جی ہاں — لاگت کا اصل سوال عموماً یہی ہوتا ہے۔ Airtable کے اندر ترمیم کرنے والے ہر فرد کو ادا شدہ سیٹ چاہیے، لیکن بیرونی صارفین فارمز کے ذریعے ڈیٹا جمع کرا سکتے ہیں اور الگ تصدیق والے Softr پورٹل سے اپنے ریکارڈز دیکھ اور اپڈیٹ کر سکتے ہیں۔ کلائنٹ سے جڑے ورک فلو میں اس سے ماہانہ سینکڑوں ڈالر کی سیٹ لاگت بچ جاتی ہے۔" },
+        { "question": "کیا Airtable ہمارے CRM یا ERP کی جگہ لے سکتا ہے؟", "answer": "چھوٹی اور درمیانی سیلز ٹیم کے لیے، بالکل آپ کی پائپ لائن کے مطابق بنایا گیا Airtable CRM اکثر اس جنرک CRM سے بہتر ہوتا ہے جس کا آپ صرف 20٪ استعمال کرتے ہیں۔ مکمل ERP الگ معاملہ ہے: تنخواہیں، ڈبل انٹری اکاؤنٹنگ اور قانونی رپورٹنگ مخصوص نظاموں کا کام ہے۔ بہترین استعمال یہ ہے کہ Airtable کو اکاؤنٹنگ ٹول کا متبادل نہیں بلکہ اس سے منسلک آپریشنز کی پرت بنایا جائے۔" },
+        { "question": "Airtable کی آٹومیشنز کیسے کام کرتی ہیں اور کہاں کم پڑتی ہیں؟", "answer": "بلٹ اِن آٹومیشنز ٹرگر-ایکشن قواعد ہیں — ریکارڈ اپڈیٹ ہوا، ای میل بھیجو، ریکارڈ بناؤ — جن پر پلان کے مطابق ماہانہ رنز کا کوٹہ اور فی بیس 50 آٹومیشنز کی حد لاگو ہوتی ہے۔ کئی مراحل کی منطق، شاخ در شاخ فیصلوں یا بیرونی APIs سے قابلِ اعتماد رابطے کے لیے ہم یہ کام Make یا n8n پر منتقل کر دیتے ہیں، جو execution logs اور retry کا نظام بھی دیتے ہیں جو بلٹ اِن آٹومیشنز میں نہیں ہوتا۔" },
+        { "question": "کیا ہمارا ڈیٹا Airtable میں محفوظ ہے؟ کمپلائنس کا کیا ہوگا؟", "answer": "Airtable کے پاس SOC 2 Type II سرٹیفکیشن ہے، ڈیٹا منتقلی اور ذخیرے دونوں میں خفیہ (encrypted) رہتا ہے، اور اعلیٰ پلانز میں SSO اور ایڈمن کنٹرولز ملتے ہیں۔ عملی قباحتیں دو ہیں: ڈیٹا کی رہائش — ہوسٹنگ امریکہ میں ہے — اور موٹے درجے کا اجازت ماڈل، جسے ہم synced bases اور پورٹل سطح کی رسائی کنٹرول سے حل کرتے ہیں۔ سخت ضوابط والے شعبوں میں ہم شروع میں ہی واضح کر دیتے ہیں کہ Airtable موزوں ہے یا نہیں۔" },
+        { "question": "اگر ہم Airtable سے آگے نکل جائیں تو کیا ہوگا؟", "answer": "یہ ہمارے تعمیراتی انداز کی خوبی ہے، کوئی بحران نہیں۔ چونکہ ہم درست relational اسکیمے بناتے ہیں، اس لیے ڈیٹا PostgreSQL میں منتقل کر کے بعد میں کسٹم ایپ بنانا ایک منظم منتقلی ہوتی ہے، کھدائی کا منصوبہ نہیں۔ بہت سے کلائنٹس دو تین سال Airtable پر چلتے ہیں، اپنے عمل کم خرچ میں آزما لیتے ہیں اور صرف وہی حصے منتقل کرتے ہیں جو حقیقی حدوں سے ٹکراتے ہیں۔" }
+      ],
+      "technologies": [
+        { "icon": "airtable", "name": "Airtable" },
+        { "icon": "zapier", "name": "Zapier" },
+        { "icon": "make", "name": "Make" },
+        { "icon": "n8n", "name": "n8n" },
+        { "icon": "softr", "name": "Softr" },
+        { "icon": "fillout", "name": "Fillout" },
+        { "icon": "whalesync", "name": "Whalesync" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "حلول Airtable",
+    "shortDescription": "حوّلوا الجداول المبعثرة إلى مركز عمليات منظّم. نصمّم قواعد Airtable وواجهات وأتمتة تدير CRM ومشاريعكم ومخزونكم — وتدخل الخدمة عادةً خلال أسبوعين إلى أربعة أسابيع.",
+    "fullDescription": "تدير معظم الفرق عملياتها الحرجة على جداول لم تُصمَّم يوماً لتكون قواعد بيانات. نعيد بناء هذه العمليات على Airtable: قواعد علائقية منظمة بإتقان، ولوحات Interface Designer مخصصة لكل دور، وأتمتة تتولى عمليات التسليم التي ينساها الناس. يشمل عملنا مسارات CRM وتتبّع المشاريع والمخزون وتقاويم المحتوى ومسارات الموافقات — موصولة ببقية أدواتكم عبر Make وZapier وn8n أو Airtable API، ومفتوحة للعملاء عبر بوابات Softr عند الحاجة. ولأن لـ Airtable حدوداً حقيقية، نصمّم منذ اليوم الأول مع مراعاتها: سقوف السجلات ومستوى الصلاحيات وحدود معدل API كلها تشكّل البنية. النتيجة برمجية عاملة خلال أسابيع، مع مخطط بيانات نظيف يمكنكم الانتقال منه عندما تتجاوزونه مستقبلاً.",
+    "features": [
+      "بنية قواعد علائقية وتصميم المخططات",
+      "لوحات Interface Designer لكل دور",
+      "أتمتة مدمجة وبرمجة نصية مخصصة",
+      "بوابات للعملاء والفرق عبر Softr",
+      "استقبال النماذج ومسارات الموافقات",
+      "تكاملات Zapier وMake وn8n",
+      "تطوير Airtable API وWebhooks",
+      "الترحيل من الجداول والأدوات القديمة"
+    ],
+    "benefits": [
+      "مصدر واحد للحقيقة بدلاً من جداول مبعثرة",
+      "برمجية عاملة خلال أسابيع لا أشهر",
+      "أتمتة ساعات من إدخال البيانات اليدوي",
+      "أدوات يعدّلها فريقكم دون مطوّرين",
+      "جزء يسير من تكلفة البرمجيات المخصصة",
+      "مسار خروج نظيف عندما تتجاوزون حلول no-code"
+    ],
+    "metaTitle": "استشارات وأتمتة Airtable | PakSoft",
+    "metaDescription": "قواعد Airtable مخصصة وواجهات وأتمتة لإدارة CRM والمشاريع والمخزون — بتصميم خبراء وجاهزة خلال أسابيع. احجزوا تدقيقاً مجانياً لسير عملكم اليوم.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "رسم خريطة العمليات", "description": "نجلس مع الأشخاص الذين يؤدّون العمل فعلاً ونرسم كيف تتحرك البيانات في شركتكم اليوم. تُوثَّق كل جدول وكل تسليم عبر البريد وكل خطوة نسخ ولصق حتى لا يضيع شيء أثناء إعادة البناء." },
+        { "step": 2, "title": "تصميم القاعدة والمخطط", "description": "بدلاً من جدول مسطّح ضخم نصمّم مخططاً علائقياً بسجلات مترابطة وحقول lookup وrollup. يُراجَع المخطط مقابل حدود السجلات والصلاحيات في Airtable ليظل يعمل حتى عند ثلاثة أضعاف حجمكم الحالي." },
+        { "step": 3, "title": "الأتمتة والتكاملات", "description": "تتولى الأتمتة المدمجة الإشعارات وتغييرات الحالة وإنشاء السجلات؛ بينما يربط Make أو Zapier أو n8n منصة Airtable بأدوات البريد والمحاسبة والمراسلة لديكم. أما المنطق المعقد فيُنفَّذ بسكربتات مخصصة مع معالجة سليمة للأخطاء." },
+        { "step": 4, "title": "الواجهات والبوابات", "description": "يحصل كل دور على شاشة Interface Designer تعرض ما يحتاجه فقط — المبيعات ترى المسار، والعمليات ترى التنفيذ. ويحصل العملاء الخارجيون على بوابة Softr فلا يحتاجون أبداً إلى مقعد Airtable مدفوع." },
+        { "step": 5, "title": "ترحيل البيانات والاختبار", "description": "نستورد بياناتكم الحالية وننظّفها من التكرار، ثم نشغّل النظامين القديم والجديد بالتوازي لفترة محددة. هكذا تظهر الحالات الاستثنائية خلال أيام، لا بعد إيقاف النظام القديم." },
+        { "step": 6, "title": "التدريب والتسليم", "description": "يتلقى فريقكم تدريباً عملياً مع دليل موثّق لبنية القاعدة وكل عملية أتمتة. الهدف أن توسّعوا النظام بأنفسكم ولا تستدعونا إلا للأجزاء الصعبة." }
+      ],
+      "faq": [
+        { "question": "متى يكون Airtable الخيار الصحيح — ومتى يكون الخيار الخاطئ؟", "answer": "يتألق Airtable في العمليات الداخلية: CRM لفرق المبيعات الصغيرة، تتبّع المشاريع والمحتوى، المخزون، مسارات استقبال الطلبات — حيثما احتجتم بيانات منظمة ومرونة بسرعة. وهو الخيار الخاطئ للأنظمة عالية الحركة المعاملاتية، أو المنتجات الموجهة للعملاء بآلاف المستخدمين المتزامنين، أو الصلاحيات المعقدة على مستوى الصف. وسنخبركم بصراحة متى تكون البرمجيات المخصصة الاستثمار الأفضل." },
+        { "question": "ما حدود Airtable التي يجب أن أعرفها قبل الالتزام؟", "answer": "أهمها: سقوف السجلات لكل قاعدة — 50,000 في خطة Team و125,000 في Business و500,000 في Enterprise — وحدّ معدل API يبلغ 5 طلبات في الثانية، وصلاحيات تعمل على مستوى القاعدة والجدول لا على مستوى الصف. لا يشكّل أيٌّ منها عائقاً لأحمال العمليات المعتادة، لكن يجب أن تشكّل البنية منذ اليوم الأول — وهذا بالضبط ما نصمّم لأجله." },
+        { "question": "كم يستغرق مشروع Airtable النموذجي؟", "answer": "يستغرق بناء مركّز بقاعدة واحدة — مثل CRM أو متتبّع مشاريع — عادةً أسبوعاً إلى أسبوعين. أما منصة عمليات متعددة القواعد مع أتمتة وتكاملات وبوابة عملاء فتستغرق عادةً 4–6 أسابيع شاملة ترحيل البيانات والاختبار المتوازي. قارنوا ذلك بثلاثة إلى ستة أشهر لبرمجية مخصصة مكافئة." },
+        { "question": "هل يمكن للعملاء الخارجيين استخدام النظام دون أن ندفع مقاعد Airtable؟", "answer": "نعم — وهذا عادةً جوهر سؤال التكلفة. كل من يحرّر داخل Airtable يحتاج مقعداً مدفوعاً، لكن المستخدمين الخارجيين يستطيعون إرسال البيانات عبر النماذج وعرض سجلاتهم وتحديثها عبر بوابة Softr بمصادقة مستقلة. في مسار عمل موجّه للعملاء يوفّر هذا بانتظام مئات الدولارات شهرياً من تكاليف المقاعد." },
+        { "question": "هل يستطيع Airtable أن يحلّ محل CRM أو ERP لدينا؟", "answer": "لفريق مبيعات صغير أو متوسط، كثيراً ما يتفوق CRM مبني على Airtable وفق مساركم بالضبط على نظام CRM عام لا تستخدمون منه سوى 20٪. أما ERP الكامل فقصة مختلفة: الرواتب والمحاسبة بالقيد المزدوج والتقارير التنظيمية مكانها أنظمة متخصصة. الاستخدام الأمثل هو جعل Airtable طبقة العمليات المتكاملة مع أداة المحاسبة لديكم، لا بديلاً عنها." },
+        { "question": "كيف تعمل أتمتة Airtable، وأين تقصر؟", "answer": "الأتمتة المدمجة قواعد من نوع مشغّل-إجراء — سجل تحدّث، أرسل بريداً، أنشئ سجلاً — مع حصة شهرية من مرات التشغيل حسب الخطة وسقف 50 أتمتة لكل قاعدة. للمنطق متعدد الخطوات أو التفرّع أو الاتصال الموثوق بواجهات API خارجية ننقل العمل إلى Make أو n8n، اللذين يوفّران أيضاً سجلات تنفيذ وآلية إعادة محاولة تفتقر إليها الأتمتة المدمجة." },
+        { "question": "هل بياناتنا آمنة في Airtable؟ وماذا عن الامتثال؟", "answer": "يحمل Airtable شهادة SOC 2 Type II، ويشفّر البيانات أثناء النقل والتخزين، ويوفّر SSO وأدوات تحكم إدارية في الخطط الأعلى. التحفّظان العمليان هما مكان إقامة البيانات — الاستضافة أمريكية — ونموذج الصلاحيات الخشن، ونعالجهما بالقواعد المتزامنة والتحكم بالوصول على مستوى البوابة. وفي القطاعات شديدة التنظيم نوضح مبكراً ما إذا كان Airtable مناسباً." },
+        { "question": "ماذا يحدث إذا تجاوزنا قدرات Airtable؟", "answer": "هذه ميزة في طريقة بنائنا، لا أزمة. لأننا نصمّم مخططات علائقية سليمة، يصبح التصدير إلى PostgreSQL وإعادة البناء لاحقاً كتطبيق مخصص عملية ترحيل منظمة لا مشروع تنقيب. كثير من العملاء يعملون على Airtable سنتين أو ثلاثاً، يتحققون من عملياتهم بتكلفة منخفضة، ثم لا يرحّلون إلا الأجزاء التي تصطدم بحدود حقيقية." }
+      ],
+      "technologies": [
+        { "icon": "airtable", "name": "Airtable" },
+        { "icon": "zapier", "name": "Zapier" },
+        { "icon": "make", "name": "Make" },
+        { "icon": "n8n", "name": "n8n" },
+        { "icon": "softr", "name": "Softr" },
+        { "icon": "fillout", "name": "Fillout" },
+        { "icon": "whalesync", "name": "Whalesync" }
+      ]
+    }
+  }
+}

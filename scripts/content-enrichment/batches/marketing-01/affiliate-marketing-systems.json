@@ -1,0 +1,278 @@
+{
+  "slug": "affiliate-marketing-systems",
+  "en": {
+    "name": "Affiliate Marketing Systems",
+    "shortDescription": "Launch a partner channel you fully control. We build custom affiliate platforms with reliable server-side tracking, flexible commission structures, automated payouts, and fraud detection — so your program scales without disputes.",
+    "fullDescription": "An affiliate program lives or dies by its tracking. We build affiliate marketing systems where every click, lead, and sale is attributed reliably — using first-party, server-side tracking that survives ad blockers and cookie restrictions. On top of that foundation we implement the business logic that makes programs work: percentage, flat, tiered, and recurring commission models; configurable cookie windows and attribution rules; automated payouts through Stripe Connect or PayPal with thresholds and tax data collection; and fraud checks that flag self-referrals, cookie stuffing, and coupon leaks before money leaves your account. Affiliates get a clean portal with real-time stats, links, and creatives. Whether you replace an expensive SaaS or launch your first program, you own the platform, the data, and the margin.",
+    "features": [
+      "First-Party, Server-Side Click & Conversion Tracking",
+      "Percentage, Flat, Tiered & Recurring Commissions",
+      "Multi-Tier & Sub-Affiliate Programs",
+      "Automated Payouts (Stripe Connect, PayPal)",
+      "Fraud Detection & Self-Referral Blocking",
+      "Affiliate Portal with Real-Time Analytics",
+      "Coupon Codes & Creative Asset Library",
+      "Webhook & E-commerce Platform Integrations"
+    ],
+    "benefits": [
+      "Pay for results, not impressions — performance-based growth",
+      "No per-affiliate SaaS fees eating your margin",
+      "Trustworthy tracking means fewer commission disputes",
+      "Payouts run themselves — no monthly spreadsheet ritual",
+      "Fraud is caught before it's paid, not after",
+      "Full ownership of partner data and program rules"
+    ],
+    "metaTitle": "Custom Affiliate Marketing Systems & Platforms | PakSoft",
+    "metaDescription": "We build affiliate platforms with server-side tracking, flexible commissions, automated payouts, and fraud detection. Own your partner channel — get a free scoping call.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Program & Commission Design", "description": "We define the economics first: commission rates your margin can sustain, cookie windows, attribution rules, and payout thresholds. A program designed on paper before code prevents expensive rule changes after affiliates have joined." },
+        { "step": 2, "title": "Tracking Architecture", "description": "We design first-party, server-side tracking that attributes conversions even with ad blockers and ITP restrictions in play. Postback URLs, signed links, and deduplication logic are specified so every sale maps to exactly one affiliate." },
+        { "step": 3, "title": "Platform Build", "description": "We develop the affiliate portal, admin dashboard, and commission engine on a modern stack like Next.js and PostgreSQL. Integrations with your checkout — Shopify, Stripe, or custom — are built and tested against real order flows." },
+        { "step": 4, "title": "Payouts & Compliance", "description": "Automated payouts go live through Stripe Connect or PayPal, with minimum thresholds, hold periods for refunds, and tax form collection where required. Every payment is traceable back to the individual conversions that earned it." },
+        { "step": 5, "title": "Fraud Rules & QA", "description": "We implement checks for self-referrals, cookie stuffing, duplicate accounts, and suspicious conversion patterns, with flagged commissions held for review. End-to-end testing covers the full journey from click to paid commission." },
+        { "step": 6, "title": "Launch & Program Growth", "description": "We launch with your founding affiliates, monitor tracking accuracy in production, and tune fraud thresholds against real traffic. Recruitment pages, tiered incentives, and reporting help the program grow beyond the first cohort." }
+      ],
+      "faq": [
+        { "question": "Should I build a custom system or use SaaS like Tapfiliate or Impact?", "answer": "SaaS is the right start for most small programs — you can launch in days for $100–500 per month. Custom makes sense when fees scale painfully (many tools charge by affiliate count or revenue share), when you need commission logic they don't support, or when partner data ownership matters. We help with both and will tell you honestly if SaaS is enough." },
+        { "question": "How does affiliate tracking actually work, and why do cookies fail?", "answer": "Classic tracking sets a third-party cookie on click and reads it at checkout — but Safari's ITP caps such cookies at days and ad blockers strip them entirely, silently costing affiliates commissions. We use first-party cookies plus server-side postbacks keyed to click IDs, so attribution survives blockers, cross-device gaps shrink, and disputes drop sharply." },
+        { "question": "What commission structures can the system support?", "answer": "Anything you can define: flat per sale, percentage of order value, tiered rates that rise with volume, recurring commissions on subscriptions, and multi-tier overrides for sub-affiliates. We generally advise starting simple — one clear rate — because complex structures confuse recruits; the system lets you add sophistication once the program proves itself." },
+        { "question": "How are affiliates paid out?", "answer": "We typically automate payouts via Stripe Connect or PayPal Payouts on a monthly cycle, with a minimum threshold (commonly $50) and a 30–60 day hold to cover refunds and chargebacks before commission is released. The system also collects payout details and tax information during onboarding so finance never chases affiliates by email." },
+        { "question": "How do you prevent affiliate fraud?", "answer": "The common patterns are self-referrals, cookie stuffing, coupon-site poaching of organic sales, and fake or stolen-card orders. We detect them with IP and device matching, conversion-rate anomaly flags, new-customer checks, and hold periods — flagged commissions wait for manual review instead of being paid automatically. Mature programs typically reject a low single-digit percentage of commissions this way." },
+        { "question": "How long does it take to build an affiliate platform?", "answer": "A focused MVP — tracking, one commission model, affiliate portal, and automated payouts — typically takes 6–10 weeks. Multi-tier structures, marketplace-style features, or complex ERP integrations push that to 3–4 months. We always ship the tracking core first, since everything else depends on its accuracy." },
+        { "question": "Can it integrate with my existing store or billing system?", "answer": "Yes — that integration is the heart of the build. We hook into Shopify, WooCommerce, Stripe, or your custom checkout via webhooks so conversions register server-side in real time, including refund events that claw back commission. Subscription businesses get renewal webhooks driving recurring commissions automatically." },
+        { "question": "What does a good affiliate program cost to run beyond development?", "answer": "Budget for commissions themselves (typically 10–30% of affiliate-driven revenue depending on margins), modest infrastructure costs, and — most underestimated — partner management time for recruiting, answering questions, and providing creatives. Programs with an actively managed partner relationship routinely outperform set-and-forget programs by a wide margin." }
+      ],
+      "technologies": [
+        { "icon": "nextjs", "name": "Next.js" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "stripe", "name": "Stripe Connect" },
+        { "icon": "segment", "name": "Segment" },
+        { "icon": "redis", "name": "Redis" },
+        { "icon": "shopify", "name": "Shopify" },
+        { "icon": "tapfiliate", "name": "Tapfiliate" },
+        { "icon": "paypal", "name": "PayPal Payouts" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Affiliate Pazarlama Sistemleri",
+    "shortDescription": "Tamamen sizin kontrolünüzde bir iş ortaklığı kanalı kurun. Güvenilir sunucu taraflı izleme, esnek komisyon yapıları, otomatik ödemeler ve sahtecilik tespiti içeren özel affiliate platformları geliştiriyoruz — programınız anlaşmazlık olmadan ölçeklensin.",
+    "fullDescription": "Bir affiliate programı, izleme altyapısı kadar yaşar. Her tıklamanın, potansiyel müşterinin ve satışın güvenilir biçimde atfedildiği affiliate pazarlama sistemleri kuruyoruz — reklam engelleyicilere ve çerez kısıtlamalarına dayanan birinci taraf, sunucu taraflı izlemeyle. Bu temelin üzerine programları işleten iş mantığını ekliyoruz: yüzdesel, sabit, kademeli ve yinelenen komisyon modelleri; yapılandırılabilir çerez süreleri ve atıf kuralları; eşik ve vergi bilgisi toplamalı Stripe Connect veya PayPal üzerinden otomatik ödemeler; ve para hesabınızdan çıkmadan kendi kendine yönlendirmeleri, cookie stuffing'i ve kupon sızıntılarını işaretleyen sahtecilik kontrolleri. İş ortaklarınız; gerçek zamanlı istatistikler, bağlantılar ve kreatifler içeren temiz bir portala kavuşur. İster pahalı bir SaaS'ı değiştirin ister ilk programınızı başlatın; platform, veri ve kâr marjı size ait olur.",
+    "features": [
+      "Birinci Taraf, Sunucu Taraflı Tıklama ve Dönüşüm İzleme",
+      "Yüzdesel, Sabit, Kademeli ve Yinelenen Komisyonlar",
+      "Çok Katmanlı ve Alt-Affiliate Programları",
+      "Otomatik Ödemeler (Stripe Connect, PayPal)",
+      "Sahtecilik Tespiti ve Kendine Yönlendirme Engeli",
+      "Gerçek Zamanlı Analitikli Affiliate Portalı",
+      "Kupon Kodları ve Kreatif Varlık Kütüphanesi",
+      "Webhook ve E-ticaret Platform Entegrasyonları"
+    ],
+    "benefits": [
+      "Gösterim için değil, sonuç için ödeme — performansa dayalı büyüme",
+      "Marjınızı eriten kişi başı SaaS ücretleri yok",
+      "Güvenilir izleme, daha az komisyon anlaşmazlığı demek",
+      "Ödemeler kendiliğinden yürür — aylık tablo eziyeti biter",
+      "Sahtecilik ödendikten sonra değil, ödenmeden yakalanır",
+      "Ortak verileri ve program kuralları tamamen sizde"
+    ],
+    "metaTitle": "Özel Affiliate Pazarlama Sistemleri | PakSoft",
+    "metaDescription": "Sunucu taraflı izleme, esnek komisyonlar, otomatik ödemeler ve sahtecilik tespitiyle affiliate platformları kuruyoruz. Kanalınızın sahibi olun — ücretsiz görüşme planlayın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Program ve Komisyon Tasarımı", "description": "Önce ekonomiyi tanımlarız: marjınızın kaldırabileceği komisyon oranları, çerez süreleri, atıf kuralları ve ödeme eşikleri. Kod yazılmadan kâğıt üzerinde tasarlanan bir program, iş ortakları katıldıktan sonra yapılacak pahalı kural değişikliklerini önler." },
+        { "step": 2, "title": "İzleme Mimarisi", "description": "Reklam engelleyiciler ve ITP kısıtlamaları devredeyken bile dönüşümleri atfeden birinci taraf, sunucu taraflı bir izleme tasarlarız. Postback URL'leri, imzalı bağlantılar ve tekilleştirme mantığı; her satışın tam olarak bir iş ortağına eşlenmesi için belirlenir." },
+        { "step": 3, "title": "Platform Geliştirme", "description": "Affiliate portalını, yönetim panelini ve komisyon motorunu Next.js ve PostgreSQL gibi modern bir yığında geliştiririz. Shopify, Stripe veya özel ödeme sisteminizle entegrasyonlar gerçek sipariş akışlarına karşı test edilir." },
+        { "step": 4, "title": "Ödemeler ve Uyumluluk", "description": "Otomatik ödemeler; minimum eşikler, iadeler için bekletme süreleri ve gerektiğinde vergi formu toplamayla Stripe Connect veya PayPal üzerinden devreye alınır. Her ödeme, onu kazandıran tekil dönüşümlere kadar izlenebilir." },
+        { "step": 5, "title": "Sahtecilik Kuralları ve QA", "description": "Kendine yönlendirme, cookie stuffing, mükerrer hesap ve şüpheli dönüşüm kalıpları için kontroller kurar, işaretlenen komisyonları incelemeye alırız. Uçtan uca testler, tıklamadan ödenen komisyona kadar tüm yolculuğu kapsar." },
+        { "step": 6, "title": "Lansman ve Program Büyütme", "description": "Kurucu iş ortaklarınızla yayına çıkar, canlıda izleme doğruluğunu gözler ve sahtecilik eşiklerini gerçek trafiğe göre ayarlarız. Başvuru sayfaları, kademeli teşvikler ve raporlama, programın ilk gruptan öteye büyümesini sağlar." }
+      ],
+      "faq": [
+        { "question": "Özel sistem mi kurmalıyım, Tapfiliate veya Impact gibi SaaS mı kullanmalıyım?", "answer": "Çoğu küçük program için doğru başlangıç SaaS'tır — ayda 100–500 dolara günler içinde yayına çıkabilirsiniz. Özel sistem; ücretler can acıtacak şekilde büyüdüğünde (birçok araç iş ortağı sayısına veya ciro payına göre ücretlendirir), desteklemedikleri bir komisyon mantığı gerektiğinde ya da ortak verisinin sahipliği önemli olduğunda mantıklıdır. İkisinde de yardımcı oluruz; SaaS yeterliyse bunu dürüstçe söyleriz." },
+        { "question": "Affiliate izleme gerçekte nasıl çalışır, çerezler neden yetersiz kalır?", "answer": "Klasik izleme, tıklamada üçüncü taraf çerez bırakır ve ödeme sayfasında okur — ancak Safari'nin ITP'si bu çerezleri günlerle sınırlar, reklam engelleyiciler ise tamamen siler ve iş ortakları sessizce komisyon kaybeder. Biz birinci taraf çerezleri tıklama kimliğine bağlı sunucu taraflı postback'lerle birleştiririz; böylece atıf engelleyicilere dayanır, cihazlar arası boşluklar küçülür ve anlaşmazlıklar belirgin biçimde azalır." },
+        { "question": "Sistem hangi komisyon yapılarını destekleyebilir?", "answer": "Tanımlayabildiğiniz her şeyi: satış başına sabit tutar, sipariş tutarının yüzdesi, hacimle artan kademeli oranlar, aboneliklerde yinelenen komisyonlar ve alt iş ortakları için çok katmanlı paylar. Genellikle basit başlamayı öneririz — tek ve net bir oran — çünkü karmaşık yapılar yeni katılanların kafasını karıştırır; program kendini kanıtladıkça sistem incelik eklemenize izin verir." },
+        { "question": "İş ortaklarına ödemeler nasıl yapılır?", "answer": "Ödemeleri genellikle aylık döngüde Stripe Connect veya PayPal Payouts ile otomatikleştiririz; minimum eşik (yaygın olarak 50 dolar) ve komisyon serbest bırakılmadan önce iade ile ters ibrazları karşılayan 30–60 günlük bekletme süresi uygulanır. Sistem, ödeme bilgilerini ve vergi verilerini kayıt sırasında topladığı için finans ekibi kimseyi e-postayla kovalamaz." },
+        { "question": "Affiliate sahteciliğini nasıl önlüyorsunuz?", "answer": "Yaygın kalıplar; kendine yönlendirme, cookie stuffing, kupon sitelerinin organik satışları sahiplenmesi ve sahte ya da çalıntı kartlı siparişlerdir. Bunları IP ve cihaz eşleştirme, dönüşüm oranı anomali işaretleri, yeni müşteri kontrolleri ve bekletme süreleriyle tespit ederiz — işaretlenen komisyonlar otomatik ödenmek yerine manuel incelemeye girer. Olgun programlar bu yolla komisyonların düşük tek haneli bir yüzdesini reddeder." },
+        { "question": "Bir affiliate platformu kurmak ne kadar sürer?", "answer": "Odaklı bir MVP — izleme, tek komisyon modeli, affiliate portalı ve otomatik ödemeler — genellikle 6–10 hafta sürer. Çok katmanlı yapılar, pazaryeri tarzı özellikler veya karmaşık ERP entegrasyonları bunu 3–4 aya çıkarır. Önce daima izleme çekirdeğini teslim ederiz; çünkü geri kalan her şey onun doğruluğuna dayanır." },
+        { "question": "Mevcut mağazam veya faturalama sistemimle entegre olur mu?", "answer": "Evet — bu entegrasyon işin kalbidir. Shopify, WooCommerce, Stripe veya özel ödeme akışınıza webhook'larla bağlanırız; dönüşümler sunucu tarafında gerçek zamanlı kaydedilir, komisyonu geri alan iade olayları da dahil. Abonelik işletmelerinde yenileme webhook'ları yinelenen komisyonları otomatik tetikler." },
+        { "question": "Geliştirme dışında iyi bir affiliate programının maliyeti nedir?", "answer": "Komisyonların kendisi (marjlara bağlı olarak affiliate kaynaklı cironun genellikle %10–30'u), mütevazı altyapı maliyetleri ve — en çok hafife alınan kalem — iş ortağı bulma, soruları yanıtlama ve kreatif sağlama için ayrılan yönetim zamanı için bütçe ayırın. Aktif yönetilen ortak ilişkisine sahip programlar, kur-unut programlarını açık farkla geride bırakır." }
+      ],
+      "technologies": [
+        { "icon": "nextjs", "name": "Next.js" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "stripe", "name": "Stripe Connect" },
+        { "icon": "segment", "name": "Segment" },
+        { "icon": "redis", "name": "Redis" },
+        { "icon": "shopify", "name": "Shopify" },
+        { "icon": "tapfiliate", "name": "Tapfiliate" },
+        { "icon": "paypal", "name": "PayPal Payouts" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Affiliate-Marketing-Systeme",
+    "shortDescription": "Starten Sie einen Partnerkanal, den Sie vollständig kontrollieren. Wir entwickeln individuelle Affiliate-Plattformen mit zuverlässigem serverseitigem Tracking, flexiblen Provisionsmodellen, automatisierten Auszahlungen und Betrugserkennung — damit Ihr Programm ohne Streitfälle skaliert.",
+    "fullDescription": "Ein Affiliate-Programm steht und fällt mit seinem Tracking. Wir bauen Affiliate-Systeme, in denen jeder Klick, Lead und Verkauf zuverlässig zugeordnet wird — mit First-Party-Tracking auf Serverseite, das Adblocker und Cookie-Beschränkungen übersteht. Auf diesem Fundament implementieren wir die Geschäftslogik, die Programme erfolgreich macht: prozentuale, fixe, gestaffelte und wiederkehrende Provisionsmodelle; konfigurierbare Cookie-Laufzeiten und Attributionsregeln; automatisierte Auszahlungen über Stripe Connect oder PayPal mit Schwellenwerten und Steuerdaten-Erfassung; sowie Betrugsprüfungen, die Selbstvermittlungen, Cookie-Stuffing und Coupon-Lecks erkennen, bevor Geld Ihr Konto verlässt. Ihre Partner erhalten ein übersichtliches Portal mit Echtzeit-Statistiken, Links und Werbemitteln. Ob Sie ein teures SaaS ablösen oder Ihr erstes Programm starten: Plattform, Daten und Marge gehören Ihnen.",
+    "features": [
+      "First-Party-Tracking auf Serverseite für Klicks & Conversions",
+      "Prozentuale, fixe, gestaffelte & wiederkehrende Provisionen",
+      "Multi-Tier- & Sub-Affiliate-Programme",
+      "Automatisierte Auszahlungen (Stripe Connect, PayPal)",
+      "Betrugserkennung & Blockierung von Selbstvermittlung",
+      "Partner-Portal mit Echtzeit-Analytics",
+      "Gutscheincodes & Werbemittel-Bibliothek",
+      "Webhook- & E-Commerce-Integrationen"
+    ],
+    "benefits": [
+      "Bezahlung für Ergebnisse statt Impressionen — performancebasiertes Wachstum",
+      "Keine SaaS-Gebühren pro Partner, die Ihre Marge auffressen",
+      "Verlässliches Tracking bedeutet weniger Provisionsstreitigkeiten",
+      "Auszahlungen laufen automatisch — kein monatliches Tabellen-Ritual",
+      "Betrug wird vor der Auszahlung erkannt, nicht danach",
+      "Volle Hoheit über Partnerdaten und Programmregeln"
+    ],
+    "metaTitle": "Affiliate-Marketing-Systeme nach Maß | PakSoft",
+    "metaDescription": "Wir entwickeln Affiliate-Plattformen mit serverseitigem Tracking, flexiblen Provisionen, automatischen Auszahlungen und Betrugserkennung. Jetzt kostenloses Erstgespräch sichern.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Programm- & Provisionsdesign", "description": "Zuerst definieren wir die Ökonomie: Provisionssätze, die Ihre Marge trägt, Cookie-Laufzeiten, Attributionsregeln und Auszahlungsschwellen. Ein auf dem Papier durchdachtes Programm verhindert teure Regeländerungen, nachdem Partner bereits beigetreten sind." },
+        { "step": 2, "title": "Tracking-Architektur", "description": "Wir entwerfen First-Party-Tracking auf Serverseite, das Conversions auch bei Adblockern und ITP-Beschränkungen korrekt zuordnet. Postback-URLs, signierte Links und Deduplizierungslogik stellen sicher, dass jeder Verkauf genau einem Partner zugeordnet wird." },
+        { "step": 3, "title": "Plattform-Entwicklung", "description": "Wir entwickeln Partner-Portal, Admin-Dashboard und Provisions-Engine auf einem modernen Stack wie Next.js und PostgreSQL. Integrationen mit Ihrem Checkout — Shopify, Stripe oder Eigenentwicklung — werden gegen echte Bestellabläufe getestet." },
+        { "step": 4, "title": "Auszahlungen & Compliance", "description": "Automatisierte Auszahlungen gehen über Stripe Connect oder PayPal live — mit Mindestschwellen, Haltefristen für Rückerstattungen und Erfassung von Steuerdaten, wo nötig. Jede Zahlung lässt sich bis zu den einzelnen Conversions zurückverfolgen, die sie verdient haben." },
+        { "step": 5, "title": "Betrugsregeln & QA", "description": "Wir implementieren Prüfungen auf Selbstvermittlung, Cookie-Stuffing, Mehrfachkonten und auffällige Conversion-Muster; markierte Provisionen werden zur Prüfung zurückgehalten. End-to-End-Tests decken den gesamten Weg vom Klick bis zur ausgezahlten Provision ab." },
+        { "step": 6, "title": "Launch & Programmwachstum", "description": "Wir starten mit Ihren Gründungspartnern, überwachen die Tracking-Genauigkeit im Live-Betrieb und justieren Betrugsschwellen anhand echten Traffics. Bewerbungsseiten, gestaffelte Anreize und Reporting lassen das Programm über die erste Kohorte hinauswachsen." }
+      ],
+      "faq": [
+        { "question": "Eigenes System bauen oder SaaS wie Tapfiliate oder Impact nutzen?", "answer": "Für die meisten kleinen Programme ist SaaS der richtige Einstieg — Start in wenigen Tagen für 100–500 € pro Monat. Eine Eigenentwicklung lohnt sich, wenn die Gebühren schmerzhaft skalieren (viele Tools berechnen nach Partnerzahl oder Umsatzanteil), wenn Sie Provisionslogik brauchen, die dort fehlt, oder wenn Datenhoheit zählt. Wir unterstützen beides — und sagen ehrlich, wenn SaaS genügt." },
+        { "question": "Wie funktioniert Affiliate-Tracking, und warum versagen Cookies?", "answer": "Klassisches Tracking setzt beim Klick ein Drittanbieter-Cookie und liest es im Checkout aus — doch Safaris ITP begrenzt solche Cookies auf Tage, und Adblocker entfernen sie komplett, wodurch Partner still Provisionen verlieren. Wir kombinieren First-Party-Cookies mit serverseitigen Postbacks auf Basis von Klick-IDs: Die Attribution übersteht Blocker, geräteübergreifende Lücken schrumpfen, und Streitfälle gehen deutlich zurück." },
+        { "question": "Welche Provisionsmodelle kann das System abbilden?", "answer": "Alles, was Sie definieren können: Fixbetrag pro Verkauf, Prozentsatz des Bestellwerts, mit dem Volumen steigende Staffelraten, wiederkehrende Provisionen bei Abos und Multi-Tier-Anteile für Sub-Affiliates. Wir raten meist zu einem einfachen Start — ein klarer Satz — weil komplexe Strukturen neue Partner verwirren; mehr Raffinesse lässt sich nachrüsten, sobald sich das Programm bewährt hat." },
+        { "question": "Wie werden Partner ausgezahlt?", "answer": "Üblicherweise automatisieren wir Auszahlungen über Stripe Connect oder PayPal Payouts im Monatszyklus — mit Mindestschwelle (häufig 50 €) und einer Haltefrist von 30–60 Tagen, die Rückerstattungen und Chargebacks abdeckt, bevor die Provision freigegeben wird. Auszahlungsdaten und Steuerinformationen erfasst das System beim Onboarding, sodass die Buchhaltung niemandem hinterher-mailen muss." },
+        { "question": "Wie verhindern Sie Affiliate-Betrug?", "answer": "Die häufigsten Muster sind Selbstvermittlung, Cookie-Stuffing, Coupon-Seiten, die organische Verkäufe abgreifen, sowie Bestellungen mit gefälschten oder gestohlenen Karten. Wir erkennen sie über IP- und Geräteabgleich, Anomalie-Flags bei Conversion-Raten, Neukundenprüfungen und Haltefristen — markierte Provisionen gehen in die manuelle Prüfung statt in die automatische Auszahlung. Reife Programme lehnen so typischerweise einen niedrigen einstelligen Prozentsatz der Provisionen ab." },
+        { "question": "Wie lange dauert die Entwicklung einer Affiliate-Plattform?", "answer": "Ein fokussiertes MVP — Tracking, ein Provisionsmodell, Partner-Portal und automatisierte Auszahlungen — dauert in der Regel 6–10 Wochen. Multi-Tier-Strukturen, Marktplatz-Features oder komplexe ERP-Integrationen verlängern das auf 3–4 Monate. Den Tracking-Kern liefern wir immer zuerst, denn alles Weitere hängt von seiner Genauigkeit ab." },
+        { "question": "Lässt sich das System mit meinem Shop oder Billing integrieren?", "answer": "Ja — genau diese Integration ist das Herzstück. Wir binden Shopify, WooCommerce, Stripe oder Ihren eigenen Checkout per Webhooks an, sodass Conversions serverseitig in Echtzeit registriert werden — inklusive Rückerstattungs-Events, die Provisionen zurückbuchen. Bei Abo-Geschäften treiben Renewal-Webhooks wiederkehrende Provisionen automatisch an." },
+        { "question": "Was kostet der Betrieb eines guten Affiliate-Programms über die Entwicklung hinaus?", "answer": "Kalkulieren Sie die Provisionen selbst (je nach Marge typischerweise 10–30 % des partnergetriebenen Umsatzes), moderate Infrastrukturkosten und — der am meisten unterschätzte Posten — Zeit für Partnermanagement: Rekrutierung, Fragen beantworten, Werbemittel bereitstellen. Programme mit aktiv gepflegten Partnerbeziehungen schlagen Set-and-Forget-Programme regelmäßig um Längen." }
+      ],
+      "technologies": [
+        { "icon": "nextjs", "name": "Next.js" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "stripe", "name": "Stripe Connect" },
+        { "icon": "segment", "name": "Segment" },
+        { "icon": "redis", "name": "Redis" },
+        { "icon": "shopify", "name": "Shopify" },
+        { "icon": "tapfiliate", "name": "Tapfiliate" },
+        { "icon": "paypal", "name": "PayPal Payouts" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "ایفیلی ایٹ مارکیٹنگ سسٹمز",
+    "shortDescription": "ایسا پارٹنر چینل شروع کریں جو مکمل آپ کے کنٹرول میں ہو۔ ہم قابلِ اعتماد سرور سائیڈ ٹریکنگ، لچکدار کمیشن ڈھانچوں، خودکار ادائیگیوں اور فراڈ ڈیٹیکشن کے ساتھ کسٹم ایفیلی ایٹ پلیٹ فارمز بناتے ہیں — تاکہ آپ کا پروگرام تنازعات کے بغیر بڑھے۔",
+    "fullDescription": "ایفیلی ایٹ پروگرام کی زندگی اس کی ٹریکنگ پر منحصر ہے۔ ہم ایسے ایفیلی ایٹ سسٹمز بناتے ہیں جن میں ہر کلک، لیڈ اور سیل قابلِ اعتماد طریقے سے منسوب ہوتی ہے — فرسٹ پارٹی، سرور سائیڈ ٹریکنگ کے ذریعے جو ایڈ بلاکرز اور کوکی پابندیوں کے باوجود قائم رہتی ہے۔ اس بنیاد پر ہم وہ کاروباری منطق نافذ کرتے ہیں جو پروگرام چلاتی ہے: فیصدی، مقررہ، درجہ وار اور بار بار ملنے والے کمیشن ماڈلز؛ قابلِ ترتیب کوکی ونڈوز اور ایٹریبیوشن قواعد؛ حد اور ٹیکس معلومات کے ساتھ Stripe Connect یا PayPal کے ذریعے خودکار ادائیگیاں؛ اور ایسے فراڈ چیکس جو رقم نکلنے سے پہلے سیلف ریفرل، cookie stuffing اور کوپن لیکس کی نشاندہی کرتے ہیں۔ ایفیلی ایٹس کو حقیقی وقت کے اعداد و شمار، لنکس اور کری ایٹوز والا صاف ستھرا پورٹل ملتا ہے۔ چاہے مہنگا SaaS بدلیں یا پہلا پروگرام شروع کریں — پلیٹ فارم، ڈیٹا اور منافع آپ کے اپنے ہوتے ہیں۔",
+    "features": [
+      "فرسٹ پارٹی، سرور سائیڈ کلک اور کنورژن ٹریکنگ",
+      "فیصدی، مقررہ، درجہ وار اور بار بار کمیشن",
+      "ملٹی ٹیئر اور سب ایفیلی ایٹ پروگرامز",
+      "خودکار ادائیگیاں (Stripe Connect، PayPal)",
+      "فراڈ ڈیٹیکشن اور سیلف ریفرل کی روک تھام",
+      "حقیقی وقت کے تجزیات والا ایفیلی ایٹ پورٹل",
+      "کوپن کوڈز اور کری ایٹو اثاثوں کی لائبریری",
+      "Webhook اور ای کامرس پلیٹ فارم انضمام"
+    ],
+    "benefits": [
+      "امپریشن نہیں، نتائج کی ادائیگی — کارکردگی پر مبنی ترقی",
+      "منافع کھا جانے والی فی ایفیلی ایٹ SaaS فیس نہیں",
+      "قابلِ اعتماد ٹریکنگ یعنی کمیشن کے کم جھگڑے",
+      "ادائیگیاں خود چلتی ہیں — ماہانہ اسپریڈ شیٹ کی مشقت ختم",
+      "فراڈ ادائیگی کے بعد نہیں، پہلے پکڑا جاتا ہے",
+      "پارٹنر ڈیٹا اور پروگرام کے قواعد کی مکمل ملکیت"
+    ],
+    "metaTitle": "کسٹم ایفیلی ایٹ مارکیٹنگ سسٹمز | PakSoft",
+    "metaDescription": "ہم سرور سائیڈ ٹریکنگ، لچکدار کمیشن، خودکار ادائیگیوں اور فراڈ ڈیٹیکشن والے ایفیلی ایٹ پلیٹ فارمز بناتے ہیں۔ اپنے پارٹنر چینل کے مالک بنیں — مفت مشاورتی کال بک کریں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "پروگرام اور کمیشن ڈیزائن", "description": "سب سے پہلے ہم معاشیات طے کرتے ہیں: ایسے کمیشن ریٹس جو آپ کا منافع برداشت کر سکے، کوکی ونڈوز، ایٹریبیوشن قواعد اور ادائیگی کی حدیں۔ کوڈ سے پہلے کاغذ پر ڈیزائن کیا گیا پروگرام ایفیلی ایٹس کی شمولیت کے بعد مہنگی قانون سازی سے بچاتا ہے۔" },
+        { "step": 2, "title": "ٹریکنگ آرکیٹیکچر", "description": "ہم فرسٹ پارٹی، سرور سائیڈ ٹریکنگ ڈیزائن کرتے ہیں جو ایڈ بلاکرز اور ITP پابندیوں کے باوجود کنورژنز منسوب کرتی ہے۔ Postback URLs، دستخط شدہ لنکس اور ڈی ڈپلیکیشن منطق طے کی جاتی ہے تاکہ ہر سیل بالکل ایک ایفیلی ایٹ سے جڑے۔" },
+        { "step": 3, "title": "پلیٹ فارم کی تیاری", "description": "ہم ایفیلی ایٹ پورٹل، ایڈمن ڈیش بورڈ اور کمیشن انجن Next.js اور PostgreSQL جیسے جدید اسٹیک پر بناتے ہیں۔ آپ کے چیک آؤٹ — Shopify، Stripe یا کسٹم — کے ساتھ انضمام حقیقی آرڈر فلو پر آزمایا جاتا ہے۔" },
+        { "step": 4, "title": "ادائیگیاں اور تعمیل", "description": "خودکار ادائیگیاں Stripe Connect یا PayPal کے ذریعے فعال ہوتی ہیں؛ کم از کم حد، ریفنڈز کے لیے ہولڈ مدت اور جہاں ضروری ہو ٹیکس فارم کی وصولی شامل ہے۔ ہر ادائیگی ان انفرادی کنورژنز تک قابلِ سراغ ہے جنہوں نے اسے کمایا۔" },
+        { "step": 5, "title": "فراڈ قواعد اور جانچ", "description": "ہم سیلف ریفرل، cookie stuffing، نقلی اکاؤنٹس اور مشکوک کنورژن پیٹرنز کے چیکس نافذ کرتے ہیں اور نشان زدہ کمیشن جائزے کے لیے روکے جاتے ہیں۔ اینڈ ٹو اینڈ ٹیسٹنگ کلک سے ادا شدہ کمیشن تک پورے سفر کا احاطہ کرتی ہے۔" },
+        { "step": 6, "title": "لانچ اور پروگرام کی نمو", "description": "ہم آپ کے ابتدائی ایفیلی ایٹس کے ساتھ لانچ کرتے ہیں، پروڈکشن میں ٹریکنگ کی درستگی پر نظر رکھتے ہیں اور حقیقی ٹریفک کے مطابق فراڈ کی حدیں ایڈجسٹ کرتے ہیں۔ بھرتی کے صفحات، درجہ وار ترغیبات اور رپورٹنگ پروگرام کو پہلے گروپ سے آگے بڑھاتے ہیں۔" }
+      ],
+      "faq": [
+        { "question": "کسٹم سسٹم بناؤں یا Tapfiliate اور Impact جیسا SaaS استعمال کروں؟", "answer": "زیادہ تر چھوٹے پروگراموں کے لیے درست آغاز SaaS ہے — ماہانہ 100 تا 500 ڈالر میں چند دنوں میں لانچ ممکن ہے۔ کسٹم سسٹم تب معقول ہے جب فیسیں تکلیف دہ حد تک بڑھیں (کئی ٹولز ایفیلی ایٹ کی تعداد یا آمدنی کے حصے پر چارج کرتے ہیں)، جب ایسی کمیشن منطق درکار ہو جو وہ سپورٹ نہیں کرتے، یا جب پارٹنر ڈیٹا کی ملکیت اہم ہو۔ ہم دونوں میں مدد کرتے ہیں اور SaaS کافی ہو تو صاف بتا دیتے ہیں۔" },
+        { "question": "ایفیلی ایٹ ٹریکنگ اصل میں کیسے کام کرتی ہے اور کوکیز کیوں ناکام ہوتی ہیں؟", "answer": "روایتی ٹریکنگ کلک پر تھرڈ پارٹی کوکی رکھتی ہے اور چیک آؤٹ پر پڑھتی ہے — مگر Safari کا ITP ایسی کوکیز کو چند دنوں تک محدود کر دیتا ہے اور ایڈ بلاکرز انہیں مکمل ہٹا دیتے ہیں، جس سے ایفیلی ایٹس خاموشی سے کمیشن کھو بیٹھتے ہیں۔ ہم فرسٹ پارٹی کوکیز کو کلک ID سے جڑے سرور سائیڈ postbacks کے ساتھ ملاتے ہیں؛ یوں ایٹریبیوشن بلاکرز سے بچ جاتی ہے اور تنازعات نمایاں طور پر کم ہوتے ہیں۔" },
+        { "question": "سسٹم کون سے کمیشن ڈھانچے سپورٹ کر سکتا ہے؟", "answer": "جو بھی آپ متعین کر سکیں: فی سیل مقررہ رقم، آرڈر ویلیو کا فیصد، حجم کے ساتھ بڑھتے درجہ وار ریٹس، سبسکرپشنز پر بار بار کمیشن اور سب ایفیلی ایٹس کے لیے ملٹی ٹیئر حصے۔ ہم عموماً سادہ آغاز کا مشورہ دیتے ہیں — ایک واضح ریٹ — کیونکہ پیچیدہ ڈھانچے نئے شامل ہونے والوں کو الجھاتے ہیں؛ پروگرام خود کو ثابت کرے تو سسٹم میں پیچیدگی بعد میں شامل ہو سکتی ہے۔" },
+        { "question": "ایفیلی ایٹس کو ادائیگی کیسے ہوتی ہے؟", "answer": "ہم عموماً Stripe Connect یا PayPal Payouts کے ذریعے ماہانہ سائیکل پر ادائیگیاں خودکار بناتے ہیں؛ کم از کم حد (عام طور پر 50 ڈالر) اور کمیشن جاری ہونے سے پہلے ریفنڈز اور چارج بیکس کے لیے 30 تا 60 دن کا ہولڈ شامل ہوتا ہے۔ سسٹم آن بورڈنگ کے دوران ادائیگی کی تفصیلات اور ٹیکس معلومات بھی جمع کرتا ہے تاکہ فنانس ٹیم کسی کے پیچھے ای میل نہ دوڑائے۔" },
+        { "question": "آپ ایفیلی ایٹ فراڈ کیسے روکتے ہیں؟", "answer": "عام طریقے ہیں: سیلف ریفرل، cookie stuffing، کوپن سائٹس کا آرگینک سیلز ہتھیانا اور جعلی یا چوری شدہ کارڈ کے آرڈرز۔ ہم انہیں IP اور ڈیوائس میچنگ، کنورژن ریٹ کی بے قاعدگی کے اشاروں، نئے گاہک کی جانچ اور ہولڈ مدتوں سے پکڑتے ہیں — نشان زدہ کمیشن خودکار ادائیگی کے بجائے دستی جائزے میں جاتے ہیں۔ پختہ پروگرام اس طرح کمیشنز کا کم یک ہندسی فیصد مسترد کرتے ہیں۔" },
+        { "question": "ایفیلی ایٹ پلیٹ فارم بنانے میں کتنا وقت لگتا ہے؟", "answer": "مرکوز MVP — ٹریکنگ، ایک کمیشن ماڈل، ایفیلی ایٹ پورٹل اور خودکار ادائیگیاں — عموماً 6 تا 10 ہفتے لیتا ہے۔ ملٹی ٹیئر ڈھانچے، مارکیٹ پلیس طرز کی خصوصیات یا پیچیدہ ERP انضمام اسے 3 تا 4 ماہ تک لے جاتے ہیں۔ ہم ہمیشہ پہلے ٹریکنگ کور ڈیلیور کرتے ہیں، کیونکہ باقی سب اسی کی درستگی پر کھڑا ہے۔" },
+        { "question": "کیا یہ میرے موجودہ اسٹور یا بلنگ سسٹم سے جڑ سکتا ہے؟", "answer": "جی ہاں — یہی انضمام پورے کام کا مرکز ہے۔ ہم Shopify، WooCommerce، Stripe یا آپ کے کسٹم چیک آؤٹ سے webhooks کے ذریعے جڑتے ہیں تاکہ کنورژنز سرور سائیڈ پر حقیقی وقت میں درج ہوں، بشمول ریفنڈ ایونٹس جو کمیشن واپس لیتے ہیں۔ سبسکرپشن کاروبار میں تجدید کے webhooks بار بار کمیشن خود بخود چلاتے ہیں۔" },
+        { "question": "ڈیولپمنٹ کے علاوہ اچھے ایفیلی ایٹ پروگرام کی لاگت کیا ہے؟", "answer": "کمیشن خود (مارجن کے لحاظ سے ایفیلی ایٹ آمدنی کا عموماً 10 تا 30 فیصد)، معمولی انفراسٹرکچر اخراجات اور — سب سے زیادہ نظر انداز ہونے والی مد — پارٹنر مینجمنٹ کا وقت: بھرتی، سوالات کے جواب اور کری ایٹوز کی فراہمی کا بجٹ رکھیں۔ فعال طور پر سنبھالے گئے پارٹنر تعلقات والے پروگرام لگا کر بھول جانے والے پروگراموں سے واضح فرق سے آگے نکلتے ہیں۔" }
+      ],
+      "technologies": [
+        { "icon": "nextjs", "name": "Next.js" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "stripe", "name": "Stripe Connect" },
+        { "icon": "segment", "name": "Segment" },
+        { "icon": "redis", "name": "Redis" },
+        { "icon": "shopify", "name": "Shopify" },
+        { "icon": "tapfiliate", "name": "Tapfiliate" },
+        { "icon": "paypal", "name": "PayPal Payouts" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "أنظمة التسويق بالعمولة",
+    "shortDescription": "أطلقوا قناة شركاء تتحكمون بها بالكامل. نبني منصات تسويق بالعمولة مخصصة بتتبّع موثوق من جهة الخادم، وهياكل عمولات مرنة، ومدفوعات مؤتمتة، وكشف للاحتيال — ليتوسع برنامجكم دون نزاعات.",
+    "fullDescription": "برنامج التسويق بالعمولة يحيا أو يموت بجودة تتبّعه. نبني أنظمة يُنسب فيها كل نقرة وعميل محتمل وعملية بيع بشكل موثوق — عبر تتبّع من الطرف الأول ومن جهة الخادم يصمد أمام مانعات الإعلانات وقيود ملفات تعريف الارتباط. وفوق هذا الأساس ننفّذ منطق الأعمال الذي يُنجح البرامج: نماذج عمولة نسبية وثابتة ومتدرجة ومتكررة؛ نوافذ تتبّع وقواعد إسناد قابلة للضبط؛ مدفوعات مؤتمتة عبر Stripe Connect أو PayPal مع حدود دنيا وجمع البيانات الضريبية؛ وفحوصات احتيال ترصد الإحالة الذاتية وحشو الكوكيز وتسرّب الكوبونات قبل خروج المال من حسابكم. يحصل المسوّقون على بوابة أنيقة بإحصاءات فورية وروابط ومواد إعلانية. سواء استبدلتم SaaS مكلفاً أو أطلقتم برنامجكم الأول، فالمنصة والبيانات والهامش ملك لكم.",
+    "features": [
+      "تتبّع النقرات والتحويلات من الطرف الأول ومن جهة الخادم",
+      "عمولات نسبية وثابتة ومتدرجة ومتكررة",
+      "برامج متعددة المستويات ومسوّقون فرعيون",
+      "مدفوعات مؤتمتة (Stripe Connect وPayPal)",
+      "كشف الاحتيال وحظر الإحالة الذاتية",
+      "بوابة مسوّقين بتحليلات فورية",
+      "أكواد كوبونات ومكتبة مواد إعلانية",
+      "تكاملات Webhook ومنصات التجارة الإلكترونية"
+    ],
+    "benefits": [
+      "الدفع مقابل النتائج لا الظهور — نموّ قائم على الأداء",
+      "لا رسوم SaaS لكل مسوّق تلتهم هامشكم",
+      "تتبّع موثوق يعني نزاعات عمولة أقل",
+      "المدفوعات تدير نفسها — لا طقوس جداول شهرية",
+      "يُكشف الاحتيال قبل الدفع لا بعده",
+      "ملكية كاملة لبيانات الشركاء وقواعد البرنامج"
+    ],
+    "metaTitle": "أنظمة تسويق بالعمولة مخصصة | PakSoft",
+    "metaDescription": "نبني منصات تسويق بالعمولة بتتبّع من جهة الخادم وعمولات مرنة ومدفوعات مؤتمتة وكشف للاحتيال. امتلكوا قناة شركائكم — احجزوا مكالمة استشارية مجانية اليوم.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "تصميم البرنامج والعمولات", "description": "نحدد الاقتصاديات أولاً: نسب عمولة يتحمّلها هامشكم، ونوافذ التتبّع، وقواعد الإسناد، وحدود الدفع. البرنامج المصمم على الورق قبل الكود يجنّبكم تغييرات قواعد مكلفة بعد انضمام المسوّقين." },
+        { "step": 2, "title": "هندسة التتبّع", "description": "نصمّم تتبّعاً من الطرف الأول ومن جهة الخادم يَنسب التحويلات حتى مع مانعات الإعلانات وقيود ITP. تُحدَّد روابط postback والروابط الموقّعة ومنطق إزالة التكرار بحيث تُنسب كل عملية بيع إلى مسوّق واحد بالضبط." },
+        { "step": 3, "title": "بناء المنصة", "description": "نطوّر بوابة المسوّقين ولوحة الإدارة ومحرك العمولات على بنية حديثة مثل Next.js وPostgreSQL. تُبنى التكاملات مع نظام الدفع لديكم — Shopify أو Stripe أو نظام مخصص — وتُختبر على تدفقات طلبات حقيقية." },
+        { "step": 4, "title": "المدفوعات والامتثال", "description": "تنطلق المدفوعات المؤتمتة عبر Stripe Connect أو PayPal مع حدود دنيا وفترات احتجاز لتغطية الاستردادات وجمع النماذج الضريبية عند اللزوم. كل دفعة قابلة للتتبّع وصولاً إلى التحويلات الفردية التي كسبتها." },
+        { "step": 5, "title": "قواعد مكافحة الاحتيال والجودة", "description": "ننفّذ فحوصات للإحالة الذاتية وحشو الكوكيز والحسابات المكررة وأنماط التحويل المريبة، مع احتجاز العمولات المعلَّمة للمراجعة. تغطي الاختبارات الشاملة الرحلة كاملة من النقرة إلى العمولة المدفوعة." },
+        { "step": 6, "title": "الإطلاق ونموّ البرنامج", "description": "نطلق البرنامج مع شركائكم المؤسسين، ونراقب دقة التتبّع في بيئة الإنتاج، ونضبط حدود كشف الاحتيال وفق الحركة الفعلية. صفحات التجنيد والحوافز المتدرجة والتقارير تساعد البرنامج على النمو بعد الدفعة الأولى." }
+      ],
+      "faq": [
+        { "question": "هل أبني نظاماً مخصصاً أم أستخدم SaaS مثل Tapfiliate أو Impact؟", "answer": "SaaS هو البداية الصحيحة لمعظم البرامج الصغيرة — يمكنكم الانطلاق خلال أيام مقابل 100 إلى 500 دولار شهرياً. النظام المخصص منطقي عندما تتضخم الرسوم مع التوسع (كثير من الأدوات تُحاسب حسب عدد المسوّقين أو حصة من الإيراد)، أو عند الحاجة إلى منطق عمولات لا تدعمه، أو عندما تهمّ ملكية بيانات الشركاء. نساعد في الحالتين ونخبركم بصراحة إن كان SaaS كافياً." },
+        { "question": "كيف يعمل تتبّع العمولات فعلياً، ولماذا تفشل الكوكيز؟", "answer": "التتبّع التقليدي يضع كوكي من طرف ثالث عند النقر ويقرأه عند الدفع — لكن ITP في Safari يحدّ عمر هذه الكوكيز بأيام، ومانعات الإعلانات تحذفها كلياً، فيخسر المسوّقون عمولاتهم بصمت. نحن نمزج كوكيز الطرف الأول مع postbacks من جهة الخادم مرتبطة بمعرّف النقرة، فيصمد الإسناد أمام المانعات وتتقلص فجوات تعدد الأجهزة وتنخفض النزاعات بوضوح." },
+        { "question": "ما هياكل العمولات التي يدعمها النظام؟", "answer": "كل ما يمكنكم تعريفه: مبلغ ثابت لكل بيع، نسبة من قيمة الطلب, نسب متدرجة ترتفع مع الحجم، عمولات متكررة على الاشتراكات، وحصص متعددة المستويات للمسوّقين الفرعيين. ننصح عادة بالبدء ببساطة — نسبة واحدة واضحة — لأن الهياكل المعقدة تربك المنضمين الجدد؛ ويتيح النظام إضافة التعقيد لاحقاً متى أثبت البرنامج نفسه." },
+        { "question": "كيف تُدفع العمولات للمسوّقين؟", "answer": "نُؤتمت المدفوعات عادة عبر Stripe Connect أو PayPal Payouts بدورة شهرية، مع حد أدنى (50 دولاراً غالباً) وفترة احتجاز من 30 إلى 60 يوماً لتغطية الاستردادات وعمليات رد المبالغ قبل تحرير العمولة. كما يجمع النظام بيانات الدفع والمعلومات الضريبية أثناء التسجيل حتى لا يلاحق فريق المالية أحداً بالبريد." },
+        { "question": "كيف تمنعون الاحتيال في برامج العمولة؟", "answer": "الأنماط الشائعة هي الإحالة الذاتية وحشو الكوكيز واستيلاء مواقع الكوبونات على مبيعات عضوية والطلبات ببطاقات مزورة أو مسروقة. نكشفها بمطابقة IP والأجهزة، وإشارات الشذوذ في معدلات التحويل، وفحوص العميل الجديد، وفترات الاحتجاز — فتذهب العمولات المعلَّمة إلى مراجعة يدوية بدل الدفع التلقائي. البرامج الناضجة ترفض بهذه الطريقة نسبة أحادية منخفضة من العمولات عادةً." },
+        { "question": "كم يستغرق بناء منصة تسويق بالعمولة؟", "answer": "يستغرق MVP مركّز — التتبّع ونموذج عمولة واحد وبوابة المسوّقين والمدفوعات المؤتمتة — عادة من 6 إلى 10 أسابيع. الهياكل متعددة المستويات أو ميزات السوق المفتوح أو تكاملات ERP المعقدة ترفع المدة إلى 3 أو 4 أشهر. نسلّم نواة التتبّع أولاً دائماً، لأن كل شيء آخر يعتمد على دقتها." },
+        { "question": "هل يتكامل النظام مع متجري أو نظام الفوترة الحالي؟", "answer": "نعم — هذا التكامل هو قلب المشروع. نرتبط بـ Shopify أو WooCommerce أو Stripe أو نظام الدفع المخصص لديكم عبر webhooks لتُسجَّل التحويلات من جهة الخادم فورياً، بما في ذلك أحداث الاسترداد التي تسترجع العمولة. وفي أعمال الاشتراكات تقود webhooks التجديد العمولات المتكررة تلقائياً." },
+        { "question": "ما تكلفة تشغيل برنامج عمولة جيد بعد التطوير؟", "answer": "خصصوا ميزانية للعمولات نفسها (عادة 10 إلى 30٪ من الإيراد القادم عبر المسوّقين حسب الهوامش)، وتكاليف بنية تحتية متواضعة، و— البند الأكثر استهانة — وقت إدارة الشركاء للتجنيد والإجابة عن الأسئلة وتوفير المواد الإعلانية. البرامج ذات العلاقات المُدارة بنشاط تتفوق بفارق كبير على برامج «أطلِق وانسَ»." }
+      ],
+      "technologies": [
+        { "icon": "nextjs", "name": "Next.js" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "stripe", "name": "Stripe Connect" },
+        { "icon": "segment", "name": "Segment" },
+        { "icon": "redis", "name": "Redis" },
+        { "icon": "shopify", "name": "Shopify" },
+        { "icon": "tapfiliate", "name": "Tapfiliate" },
+        { "icon": "paypal", "name": "PayPal Payouts" }
+      ]
+    }
+  }
+}

@@ -2,12 +2,13 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import Button from '@/components/Button';
 import AboutHeroAnimation from '@/components/animations/AboutHeroAnimation';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 
 export default function AboutHero() {
-  const { dir, isLoading, t: tGlobal } = useTranslations();
+  const { dir, isLoading, t: tGlobal, t: tNav } = useTranslations();
   const t = useSectionTranslations('about.hero');
 
   // Show loading state if translations are not ready
@@ -35,6 +36,7 @@ export default function AboutHero() {
       </div>
 
       <div className="container mx-auto">
+        <Breadcrumbs className="pt-6 mb-6" items={[{ label: tNav('navbar.home') as string, href: '/' }, { label: tNav('navbar.about') as string }]} />
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
           <motion.div
