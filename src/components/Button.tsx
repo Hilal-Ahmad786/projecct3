@@ -4,7 +4,7 @@ import React from 'react';
 
 type ButtonProps = {
   href?: string;
-  variant?: 'primary' | 'secondary' | 'ghost' | 'emerald' | 'crimson';
+  variant?: 'primary' | 'secondary' | 'ghost' | 'emerald' | 'crimson' | 'outline';
   size?: 'sm' | 'md' | 'lg';
   children: React.ReactNode;
   className?: string;
@@ -32,6 +32,12 @@ const variants = {
     bg-transparent text-gray-600 border border-transparent
     hover:bg-gray-50 hover:text-gray-900
     focus:ring-2 focus:ring-gray-500 focus:ring-offset-2
+    transition-all duration-250 ease-standard
+  `,
+  outline: `
+    bg-transparent text-heritage-turquoise border border-heritage-turquoise
+    hover:bg-heritage-turquoise hover:text-white
+    focus:ring-2 focus:ring-heritage-turquoise focus:ring-offset-2
     transition-all duration-250 ease-standard
   `,
   emerald: `

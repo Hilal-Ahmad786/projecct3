@@ -5,7 +5,7 @@
 
 import React from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
-import { H, Scene, GirihHalo, HeritageParticles, drawIn, riseIn, popIn, starPoints } from './primitives';
+import { H, Scene, GirihHalo, HeritageParticles, drawIn, riseIn, popIn, starPoints , useSceneLabels } from './primitives';
 
 /* ── brain-network (neural net with cascading signals) ───────────── */
 const NN_LAYERS = [
@@ -154,6 +154,7 @@ export function NetworkNodesScene() {
 
 /* ── chat-bubbles (AI conversation) ──────────────────────────────── */
 export function ChatBubblesScene() {
+  const L = useSceneLabels();
   const reduced = useReducedMotion();
   return (
     <Scene glow={H.terracotta}>
@@ -168,7 +169,7 @@ export function ChatBubblesScene() {
           className="self-end max-w-[75%] rounded-2xl rounded-br-md px-3.5 py-2.5 shadow-md"
           style={{ background: H.lapis }}
         >
-          <div className="text-[10px] text-white leading-relaxed">Can you summarize today&apos;s sales report?</div>
+          <div className="text-[10px] text-white leading-relaxed">{L('chatQuestion', 'Can you summarize today’s sales report?')}</div>
         </motion.div>
 
         {/* typing indicator → answer */}
@@ -213,13 +214,13 @@ export function ChatBubblesScene() {
             className="text-[10px] leading-relaxed"
             style={{ color: H.ink }}
           >
-            Revenue is up <b style={{ color: H.turquoiseDeep }}>+24%</b> — 312 orders. Top region: <b style={{ color: H.terracotta }}>Istanbul</b> 🎯
+            {L('chatAnswerPre', 'Revenue is up')} <b style={{ color: H.turquoiseDeep }}>+24%</b> {L('chatAnswerMid', '— 312 orders. Top region:')} <b style={{ color: H.terracotta }}>Istanbul</b> 🎯
           </motion.div>
         </motion.div>
 
         {/* quick replies */}
         <motion.div {...riseIn(3.2)} className="self-start flex gap-1.5">
-          {['Full report', 'Forecast'].map((label, i) => (
+          {[L('fullReport', 'Full report'), L('forecast', 'Forecast')].map((label, i) => (
             <motion.span
               key={label}
               className="text-[9px] font-semibold px-2.5 py-1 rounded-full"

@@ -1,0 +1,278 @@
+{
+  "slug": "azure-migration",
+  "en": {
+    "name": "Azure Migration",
+    "shortDescription": "Migrate to Microsoft Azure the way enterprises actually run: hybrid-first, Entra ID-integrated, and licensed smartly. We plan waves, rehearse cutovers, and use Azure Hybrid Benefit so Windows and SQL workloads don't pay twice.",
+    "fullDescription": "Azure migrations succeed or fail on the Microsoft estate around them — Active Directory, SQL Server licensing, Office 365 tenancy, and the on-premises systems that aren't going anywhere yet. We start with an Azure Migrate assessment that maps dependencies and sizes targets, then design a landing zone aligned with Microsoft's Cloud Adoption Framework: management groups, hub-spoke networking, Entra ID integration, and policy guardrails as code. Workloads move in waves — Azure Site Recovery replicates VMs, Azure DMS streams databases — with rehearsed cutovers and a rollback path per wave. Where you hold Software Assurance, Azure Hybrid Benefit can cut Windows and SQL VM costs by up to 40%, and we model that before you commit. Hybrid scenarios stay first-class: ExpressRoute or VPN connectivity and Azure Arc keep remaining on-prem systems managed from one plane.",
+    "features": [
+      "Azure Migrate Assessment & Dependency Mapping",
+      "Landing Zone per Cloud Adoption Framework",
+      "Entra ID & Hybrid Identity Integration",
+      "VM Replication with Azure Site Recovery",
+      "SQL Migration with Azure DMS",
+      "Azure Hybrid Benefit & License Optimization",
+      "Hybrid Connectivity (ExpressRoute/VPN, Azure Arc)",
+      "Wave Planning, Cutover Rehearsals & Rollback"
+    ],
+    "benefits": [
+      "Cutover windows measured in minutes, not weekends",
+      "Windows and SQL licensing costs cut with Hybrid Benefit",
+      "One identity plane across cloud and on-premises",
+      "Policy guardrails and audit logging from day one",
+      "Hybrid systems managed alongside cloud, not against it",
+      "A documented Azure foundation your team can operate"
+    ],
+    "metaTitle": "Azure Migration Services — Hybrid-First | PakSoft",
+    "metaDescription": "Azure migration with Cloud Adoption Framework landing zones, Site Recovery and DMS replication, Entra ID integration, and Hybrid Benefit savings. Get a free assessment.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Assessment & Discovery", "description": "Azure Migrate agents inventory your servers, databases, and the dependencies between them, while we review licensing agreements and compliance constraints with your team. The output is a readiness report with right-sized Azure targets and an honest TCO that includes Hybrid Benefit." },
+        { "step": 2, "title": "Strategy & Wave Planning", "description": "Each workload gets a strategy — rehost to Azure VMs, replatform to App Service or Azure SQL, refactor, or retain on-premises behind Azure Arc. Workloads are grouped into waves starting with low-risk systems, so the process is proven before anything business-critical moves." },
+        { "step": 3, "title": "Landing Zone Build", "description": "We build your foundation with Terraform or Bicep following the Cloud Adoption Framework: management groups, hub-spoke networking, Entra ID integration, Azure Policy guardrails, and centralized logging. Everything is code-reviewed and reproducible, so the environment is auditable from day one." },
+        { "step": 4, "title": "Replication & Rehearsal", "description": "Azure Site Recovery replicates VMs and Azure DMS streams database changes continuously, keeping targets in sync with production. We run test failovers against the replicated environment until the cutover runbook is boring." },
+        { "step": 5, "title": "Cutover & Validation", "description": "Cutovers happen in agreed windows with DNS-level switching while the source environment stays intact as the rollback path. Each wave is validated against functional and performance checklists — including identity flows — before we declare it done." },
+        { "step": 6, "title": "Optimization & Handover", "description": "After stabilization we right-size VMs, apply Reserved Instances and Hybrid Benefit, and tune storage tiers so the bill reflects actual usage. Your team receives dashboards, runbooks, and a knowledge-transfer session, with optional managed support afterwards." }
+      ],
+      "faq": [
+        { "question": "How long does an Azure migration take?", "answer": "A small estate of 5–20 servers typically migrates in 4–8 weeks; mid-size environments with SQL databases and interdependent applications run 3–6 months in waves. The 2–3 week assessment phase is what turns that range into a committed plan — we don't quote timelines before seeing dependency maps." },
+        { "question": "Why choose Azure over AWS or Google Cloud?", "answer": "If your estate is Windows Server, SQL Server, and Active Directory, Azure usually wins on integration and licensing: Hybrid Benefit reuses licenses you already own, and Entra ID extends the identity model you already run. For greenfield Linux or container-first workloads the case is less automatic — we'll tell you honestly when another cloud fits better." },
+        { "question": "How does Azure Hybrid Benefit actually save money?", "answer": "If you hold Windows Server or SQL Server licenses with Software Assurance, Hybrid Benefit lets you apply them to Azure VMs instead of paying for licensing inside the hourly rate — savings of up to 40% on Windows VMs and more on SQL. Combined with Reserved Instances, total compute savings often reach 60–70% versus pay-as-you-go. We model this per workload during assessment." },
+        { "question": "Can we keep some systems on-premises?", "answer": "Yes — hybrid is a design goal, not a compromise. ExpressRoute or site-to-site VPN keeps latency-sensitive links private, and Azure Arc brings on-prem servers under the same policy, monitoring, and update management as cloud resources. Many clients run hybrid for years by choice, not as a transitional state." },
+        { "question": "How do you handle Active Directory during migration?", "answer": "We extend, not replace: Entra ID Connect synchronizes your on-prem AD so users keep one identity across both worlds, and domain controllers can run as Azure VMs for cloud-local authentication. A full move to cloud-only Entra ID is possible later, but we never force it as a migration prerequisite." },
+        { "question": "What downtime should we expect during cutover?", "answer": "With Site Recovery and DMS replicating continuously, most cutovers complete in minutes — the switch is a DNS change, not a data copy. SQL migrations using DMS online mode see near-zero downtime. Where a legacy system genuinely needs a longer window, you'll know weeks in advance, not on cutover night." },
+        { "question": "What happens if a cutover fails?", "answer": "Every wave has a rehearsed rollback: the source environment stays running and in sync until validation completes, so falling back is a DNS change away. We define a point of no return per workload in advance — before it, rollback takes minutes; after it, we fix forward using the contingency steps in the runbook." },
+        { "question": "Can you meet our compliance and data residency requirements?", "answer": "Yes. The landing zone enforces encryption, least-privilege access, and audit logging through Azure Policy from day one, and workloads are pinned to regions that satisfy GDPR or Türkiye's KVKK rules — Germany West Central and the UAE regions are common choices. Because controls are code, auditors can trace every one of them." }
+      ],
+      "technologies": [
+        { "icon": "azure", "name": "Azure Migrate" },
+        { "icon": "azure", "name": "Azure Site Recovery" },
+        { "icon": "azure", "name": "Azure DMS" },
+        { "icon": "azure", "name": "Microsoft Entra ID" },
+        { "icon": "azure", "name": "Azure Arc" },
+        { "icon": "terraform", "name": "Terraform" },
+        { "icon": "azure", "name": "Bicep" },
+        { "icon": "azure", "name": "Azure Monitor" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Azure Geçişi",
+    "shortDescription": "Microsoft Azure'a kurumsal şirketlerin gerçekte çalıştığı gibi geçin: hibrit öncelikli, Entra ID entegrasyonlu ve akıllı lisanslamayla. Dalgaları planlar, geçişlerin provasını yapar ve Azure Hybrid Benefit ile Windows ve SQL iş yüklerinin iki kez ödeme yapmasını önleriz.",
+    "fullDescription": "Azure geçişleri, etrafındaki Microsoft ekosistemiyle başarılı ya da başarısız olur — Active Directory, SQL Server lisansları, Office 365 ve henüz hiçbir yere gitmeyecek şirket içi sistemler. Bağımlılıkları haritalayan ve hedefleri boyutlandıran bir Azure Migrate değerlendirmesiyle başlar, ardından Microsoft'un Cloud Adoption Framework'üne uygun bir landing zone tasarlarız: yönetim grupları, hub-spoke ağ yapısı, Entra ID entegrasyonu ve kod olarak politika korumaları. İş yükleri dalgalar halinde taşınır — Azure Site Recovery sanal makineleri, Azure DMS veritabanlarını replike eder — her dalgada provası yapılmış geçişler ve bir geri dönüş yolu vardır. Software Assurance'ınız varsa Azure Hybrid Benefit, Windows ve SQL VM maliyetlerini %40'a varan oranda düşürebilir; bunu siz taahhüt vermeden önce modelleriz. Hibrit senaryolar birinci sınıftır: ExpressRoute veya VPN bağlantısı ve Azure Arc, kalan şirket içi sistemleri tek bir düzlemden yönetilebilir kılar.",
+    "features": [
+      "Azure Migrate Değerlendirmesi ve Bağımlılık Haritalama",
+      "Cloud Adoption Framework Uyumlu Landing Zone",
+      "Entra ID ve Hibrit Kimlik Entegrasyonu",
+      "Azure Site Recovery ile VM Replikasyonu",
+      "Azure DMS ile SQL Geçişi",
+      "Azure Hybrid Benefit ve Lisans Optimizasyonu",
+      "Hibrit Bağlantı (ExpressRoute/VPN, Azure Arc)",
+      "Dalga Planlama, Geçiş Provaları ve Geri Dönüş"
+    ],
+    "benefits": [
+      "Hafta sonlarıyla değil, dakikalarla ölçülen geçiş pencereleri",
+      "Hybrid Benefit ile düşürülen Windows ve SQL lisans maliyetleri",
+      "Bulut ve şirket içi için tek kimlik düzlemi",
+      "İlk günden politika korumaları ve denetim logları",
+      "Bulutla çatışmayan, birlikte yönetilen hibrit sistemler",
+      "Ekibinizin işletebileceği belgelenmiş bir Azure altyapısı"
+    ],
+    "metaTitle": "Azure Geçiş Hizmetleri — Hibrit Öncelikli | PakSoft",
+    "metaDescription": "Cloud Adoption Framework landing zone, Site Recovery ve DMS replikasyonu, Entra ID entegrasyonu ve Hybrid Benefit tasarrufuyla Azure geçişi. Ücretsiz değerlendirme alın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Değerlendirme ve Keşif", "description": "Azure Migrate ajanları sunucularınızı, veritabanlarınızı ve aralarındaki bağımlılıkları çıkarırken, biz de ekibinizle lisans sözleşmelerini ve uyumluluk kısıtlarını gözden geçiririz. Çıktı; doğru boyutlandırılmış Azure hedefleri ve Hybrid Benefit'i içeren dürüst bir TCO içeren hazırlık raporudur." },
+        { "step": 2, "title": "Strateji ve Dalga Planlama", "description": "Her iş yükü bir strateji alır — Azure VM'lere rehost, App Service veya Azure SQL'e replatform, refactor ya da Azure Arc arkasında şirket içinde tutma. İş yükleri düşük riskli sistemlerle başlayan dalgalara ayrılır; kritik sistemler taşınmadan önce süreç kanıtlanır." },
+        { "step": 3, "title": "Landing Zone Kurulumu", "description": "Temelinizi Cloud Adoption Framework'e uygun olarak Terraform veya Bicep ile kurarız: yönetim grupları, hub-spoke ağ, Entra ID entegrasyonu, Azure Policy korumaları ve merkezi loglama. Her şey kod incelemesinden geçer ve yeniden üretilebilirdir; ortam ilk günden denetlenebilir." },
+        { "step": 4, "title": "Replikasyon ve Prova", "description": "Azure Site Recovery sanal makineleri, Azure DMS ise veritabanı değişikliklerini sürekli replike ederek hedefleri üretimle senkron tutar. Geçiş runbook'u sıradanlaşana kadar replike ortamda test failover'ları çalıştırırız." },
+        { "step": 5, "title": "Geçiş ve Doğrulama", "description": "Geçişler, kaynak ortam geri dönüş yolu olarak ayakta tutulurken, kararlaştırılmış pencerelerde DNS seviyesinde yönlendirmeyle yapılır. Her dalga, tamamlandı denmeden önce kimlik akışları dahil işlevsel ve performans kontrol listeleriyle doğrulanır." },
+        { "step": 6, "title": "Optimizasyon ve Devir", "description": "Stabilizasyonun ardından VM'leri doğru boyutlandırır, Reserved Instance ve Hybrid Benefit uygular, depolama katmanlarını gerçek kullanıma göre ayarlarız. Ekibiniz panolar, runbook'lar ve bir bilgi aktarımı oturumu alır; sonrasında isteğe bağlı yönetilen destek sunulur." }
+      ],
+      "faq": [
+        { "question": "Bir Azure geçişi ne kadar sürer?", "answer": "5–20 sunuculuk küçük bir ortam genellikle 4–8 haftada taşınır; SQL veritabanları ve birbirine bağımlı uygulamalar içeren orta ölçekli ortamlar dalgalar halinde 3–6 ay sürer. Genellikle 2–3 hafta süren değerlendirme aşaması bu aralığı taahhüt edilebilir bir plana dönüştürür — bağımlılık haritalarını görmeden takvim sözü vermeyiz." },
+        { "question": "Neden AWS veya Google Cloud yerine Azure?", "answer": "Altyapınız Windows Server, SQL Server ve Active Directory üzerine kuruluysa Azure entegrasyon ve lisanslamada genellikle öne geçer: Hybrid Benefit zaten sahip olduğunuz lisansları yeniden kullanır, Entra ID ise hâlihazırda işlettiğiniz kimlik modelini genişletir. Sıfırdan Linux veya konteyner odaklı iş yüklerinde tablo bu kadar net değildir — başka bir bulut daha uygunsa bunu dürüstçe söyleriz." },
+        { "question": "Azure Hybrid Benefit gerçekte nasıl tasarruf sağlar?", "answer": "Software Assurance kapsamında Windows Server veya SQL Server lisanslarınız varsa, Hybrid Benefit bu lisansları saatlik ücrete gömülü lisans bedelini ödemek yerine Azure VM'lerde kullanmanızı sağlar — Windows VM'lerde %40'a varan, SQL'de daha yüksek tasarruf demektir. Reserved Instance ile birleştiğinde toplam işlem tasarrufu kullandıkça öde modeline göre çoğu zaman %60–70'e ulaşır. Bunu değerlendirme sırasında iş yükü bazında modelleriz." },
+        { "question": "Bazı sistemleri şirket içinde tutabilir miyiz?", "answer": "Evet — hibrit bir taviz değil, tasarım hedefidir. ExpressRoute veya site-to-site VPN gecikmeye duyarlı bağlantıları özel tutar; Azure Arc ise şirket içi sunucuları bulut kaynaklarıyla aynı politika, izleme ve güncelleme yönetimine alır. Birçok müşterimiz hibriti geçici bir durum olarak değil, bilinçli bir tercih olarak yıllarca işletir." },
+        { "question": "Geçiş sırasında Active Directory'yi nasıl ele alıyorsunuz?", "answer": "Değiştirmek yerine genişletiriz: Entra ID Connect şirket içi AD'nizi senkronize eder, böylece kullanıcılar iki dünyada da tek kimlikle çalışır; etki alanı denetleyicileri bulut içi kimlik doğrulama için Azure VM olarak da çalışabilir. Tamamen buluta dayalı Entra ID'ye geçiş ileride mümkündür, ancak bunu asla bir geçiş ön koşulu olarak dayatmayız." },
+        { "question": "Geçiş sırasında ne kadar kesinti beklemeliyiz?", "answer": "Site Recovery ve DMS sürekli replikasyon yaptığı için çoğu geçiş dakikalar içinde tamamlanır — anahtar bir DNS değişikliğidir, veri kopyalama değil. DMS'in çevrimiçi moduyla taşınan SQL veritabanlarında kesinti sıfıra yakındır. Eski bir sistemin gerçekten daha uzun bir pencereye ihtiyacı varsa bunu geçiş gecesi değil, haftalar öncesinden bilirsiniz." },
+        { "question": "Geçiş başarısız olursa ne olur?", "answer": "Her dalganın provası yapılmış bir geri dönüş planı vardır: kaynak ortam, doğrulama tamamlanana kadar çalışır ve senkron kalır; geri dönmek bir DNS değişikliği kadar yakındır. Her iş yükü için dönüşü olmayan noktayı önceden tanımlarız — öncesinde geri dönüş dakikalar alır, sonrasında runbook'taki acil durum adımlarıyla ileriye doğru düzeltiriz." },
+        { "question": "Uyumluluk ve veri yerleşimi gereksinimlerimizi karşılayabilir misiniz?", "answer": "Evet. Landing zone ilk günden itibaren Azure Policy aracılığıyla şifrelemeyi, en az yetki ilkesini ve denetim loglarını zorunlu kılar; iş yükleri GDPR veya Türkiye'deki KVKK kurallarını karşılayan bölgelere sabitlenir — Germany West Central ve BAE bölgeleri sık tercih edilir. Kontroller kod olduğu için denetçiler her birini izleyebilir." }
+      ],
+      "technologies": [
+        { "icon": "azure", "name": "Azure Migrate" },
+        { "icon": "azure", "name": "Azure Site Recovery" },
+        { "icon": "azure", "name": "Azure DMS" },
+        { "icon": "azure", "name": "Microsoft Entra ID" },
+        { "icon": "azure", "name": "Azure Arc" },
+        { "icon": "terraform", "name": "Terraform" },
+        { "icon": "azure", "name": "Bicep" },
+        { "icon": "azure", "name": "Azure Monitor" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Azure-Migration",
+    "shortDescription": "Migrieren Sie zu Microsoft Azure, wie Unternehmen wirklich arbeiten: hybrid-first, mit Entra-ID-Integration und kluger Lizenzierung. Wir planen Wellen, proben Cutover und nutzen Azure Hybrid Benefit, damit Windows- und SQL-Workloads nicht doppelt zahlen.",
+    "fullDescription": "Azure-Migrationen stehen und fallen mit dem Microsoft-Umfeld: Active Directory, SQL-Server-Lizenzen, Office-365-Tenant und die On-Premises-Systeme, die vorerst bleiben. Wir starten mit einem Azure-Migrate-Assessment, das Abhängigkeiten kartiert und Zielgrößen bestimmt, und entwerfen dann eine Landing Zone nach Microsofts Cloud Adoption Framework: Management Groups, Hub-Spoke-Netzwerk, Entra-ID-Integration und Policy-Guardrails als Code. Workloads wandern in Wellen — Azure Site Recovery repliziert VMs, Azure DMS streamt Datenbanken — mit geprobten Cutovern und einem Rollback-Pfad pro Welle. Mit Software Assurance kann Azure Hybrid Benefit die Kosten für Windows- und SQL-VMs um bis zu 40 % senken — wir rechnen das durch, bevor Sie sich festlegen. Hybride Szenarien bleiben erstklassig: ExpressRoute- oder VPN-Konnektivität und Azure Arc verwalten verbleibende On-Prem-Systeme über eine Ebene.",
+    "features": [
+      "Azure-Migrate-Assessment & Abhängigkeitsanalyse",
+      "Landing Zone nach Cloud Adoption Framework",
+      "Entra ID & hybride Identitätsintegration",
+      "VM-Replikation mit Azure Site Recovery",
+      "SQL-Migration mit Azure DMS",
+      "Azure Hybrid Benefit & Lizenzoptimierung",
+      "Hybride Konnektivität (ExpressRoute/VPN, Azure Arc)",
+      "Wellenplanung, Cutover-Proben & Rollback"
+    ],
+    "benefits": [
+      "Cutover-Fenster in Minuten statt Wochenenden",
+      "Windows- und SQL-Lizenzkosten dank Hybrid Benefit gesenkt",
+      "Eine Identitätsebene für Cloud und On-Premises",
+      "Policy-Guardrails und Audit-Logging ab Tag eins",
+      "Hybride Systeme werden mitverwaltet, nicht ausgegrenzt",
+      "Ein dokumentiertes Azure-Fundament, das Ihr Team betreiben kann"
+    ],
+    "metaTitle": "Azure-Migration — Hybrid-First geplant | PakSoft",
+    "metaDescription": "Azure-Migration mit CAF-Landing-Zone, Site-Recovery- und DMS-Replikation, Entra-ID-Integration und Hybrid-Benefit-Ersparnis. Jetzt kostenloses Assessment sichern.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Assessment & Discovery", "description": "Azure-Migrate-Agents inventarisieren Server, Datenbanken und ihre Abhängigkeiten, während wir Lizenzverträge und Compliance-Vorgaben mit Ihrem Team durchgehen. Das Ergebnis ist ein Readiness-Report mit richtig dimensionierten Azure-Zielen und einer ehrlichen TCO inklusive Hybrid Benefit." },
+        { "step": 2, "title": "Strategie & Wellenplanung", "description": "Jeder Workload erhält eine Strategie — Rehost auf Azure-VMs, Replatform auf App Service oder Azure SQL, Refactoring oder Verbleib on-premises hinter Azure Arc. Die Workloads werden in Wellen gruppiert, beginnend mit risikoarmen Systemen, bevor Geschäftskritisches bewegt wird." },
+        { "step": 3, "title": "Landing-Zone-Aufbau", "description": "Wir bauen Ihr Fundament mit Terraform oder Bicep nach dem Cloud Adoption Framework: Management Groups, Hub-Spoke-Netzwerk, Entra-ID-Integration, Azure-Policy-Guardrails und zentrales Logging. Alles ist code-reviewed und reproduzierbar — die Umgebung ist vom ersten Tag an auditierbar." },
+        { "step": 4, "title": "Replikation & Probe", "description": "Azure Site Recovery repliziert VMs und Azure DMS streamt Datenbankänderungen kontinuierlich, sodass die Zielumgebung mit der Produktion synchron bleibt. Wir fahren Test-Failover gegen die replizierte Umgebung, bis das Cutover-Runbook Routine ist." },
+        { "step": 5, "title": "Cutover & Validierung", "description": "Cutover finden in vereinbarten Fenstern per DNS-Umschaltung statt, während die Quellumgebung als Rollback-Pfad intakt bleibt. Jede Welle wird gegen funktionale und Performance-Checklisten validiert — inklusive der Identitätsflüsse — bevor wir sie für abgeschlossen erklären." },
+        { "step": 6, "title": "Optimierung & Übergabe", "description": "Nach der Stabilisierung dimensionieren wir VMs richtig, aktivieren Reserved Instances und Hybrid Benefit und justieren Storage-Tiers, damit die Rechnung die tatsächliche Nutzung widerspiegelt. Ihr Team erhält Dashboards, Runbooks und eine Knowledge-Transfer-Session — optional mit Managed Support danach." }
+      ],
+      "faq": [
+        { "question": "Wie lange dauert eine Azure-Migration?", "answer": "Eine kleine Umgebung mit 5–20 Servern migriert typischerweise in 4–8 Wochen; mittelgroße Umgebungen mit SQL-Datenbanken und voneinander abhängigen Anwendungen laufen 3–6 Monate in Wellen. Die 2–3-wöchige Assessment-Phase macht aus dieser Spanne einen verbindlichen Plan — Termine nennen wir erst, wenn wir die Abhängigkeitskarten kennen." },
+        { "question": "Warum Azure statt AWS oder Google Cloud?", "answer": "Besteht Ihre Landschaft aus Windows Server, SQL Server und Active Directory, gewinnt Azure meist bei Integration und Lizenzierung: Hybrid Benefit nutzt vorhandene Lizenzen weiter, und Entra ID erweitert das Identitätsmodell, das Sie bereits betreiben. Für Greenfield-Linux- oder Container-Workloads ist der Fall weniger eindeutig — wir sagen Ihnen ehrlich, wenn eine andere Cloud besser passt." },
+        { "question": "Wie spart Azure Hybrid Benefit konkret Geld?", "answer": "Wer Windows-Server- oder SQL-Server-Lizenzen mit Software Assurance besitzt, kann sie per Hybrid Benefit auf Azure-VMs anwenden, statt die Lizenz im Stundenpreis mitzubezahlen — bis zu 40 % Ersparnis bei Windows-VMs, bei SQL noch mehr. Kombiniert mit Reserved Instances erreichen die Compute-Einsparungen gegenüber Pay-as-you-go oft 60–70 %. Wir modellieren das im Assessment pro Workload." },
+        { "question": "Können wir einige Systeme on-premises behalten?", "answer": "Ja — hybrid ist ein Designziel, kein Kompromiss. ExpressRoute oder Site-to-Site-VPN hält latenzkritische Verbindungen privat, und Azure Arc bringt On-Prem-Server unter dieselbe Policy-, Monitoring- und Update-Verwaltung wie Cloud-Ressourcen. Viele Kunden betreiben Hybrid jahrelang aus Überzeugung, nicht als Übergangszustand." },
+        { "question": "Wie gehen Sie während der Migration mit Active Directory um?", "answer": "Wir erweitern statt zu ersetzen: Entra ID Connect synchronisiert Ihr On-Prem-AD, sodass Nutzer in beiden Welten eine Identität behalten; Domain Controller können für cloud-lokale Authentifizierung als Azure-VMs laufen. Ein vollständiger Umstieg auf Cloud-only Entra ID ist später möglich, aber nie Voraussetzung der Migration." },
+        { "question": "Mit wie viel Ausfallzeit müssen wir beim Cutover rechnen?", "answer": "Da Site Recovery und DMS kontinuierlich replizieren, sind die meisten Cutover in Minuten erledigt — der Wechsel ist eine DNS-Änderung, keine Datenkopie. SQL-Migrationen im DMS-Online-Modus erreichen nahezu null Ausfallzeit. Braucht ein Legacy-System wirklich ein längeres Fenster, wissen Sie das Wochen vorher — nicht in der Cutover-Nacht." },
+        { "question": "Was passiert, wenn ein Cutover fehlschlägt?", "answer": "Jede Welle hat einen geprobten Rollback: Die Quellumgebung läuft synchron weiter, bis die Validierung abgeschlossen ist — der Rückweg ist eine DNS-Änderung. Pro Workload definieren wir vorab einen Point of no Return: davor dauert der Rollback Minuten, danach wird mit den im Runbook dokumentierten Notfallschritten vorwärts korrigiert." },
+        { "question": "Können Sie unsere Compliance- und Datenresidenz-Anforderungen erfüllen?", "answer": "Ja. Die Landing Zone erzwingt von Tag eins Verschlüsselung, Least-Privilege-Zugriff und Audit-Logging über Azure Policy; Workloads werden an Regionen gebunden, die DSGVO- oder KVKK-Vorgaben erfüllen — Germany West Central und die VAE-Regionen sind übliche Optionen. Da die Kontrollen Code sind, können Auditoren jede einzelne nachvollziehen." }
+      ],
+      "technologies": [
+        { "icon": "azure", "name": "Azure Migrate" },
+        { "icon": "azure", "name": "Azure Site Recovery" },
+        { "icon": "azure", "name": "Azure DMS" },
+        { "icon": "azure", "name": "Microsoft Entra ID" },
+        { "icon": "azure", "name": "Azure Arc" },
+        { "icon": "terraform", "name": "Terraform" },
+        { "icon": "azure", "name": "Bicep" },
+        { "icon": "azure", "name": "Azure Monitor" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "Azure مائیگریشن",
+    "shortDescription": "Microsoft Azure پر اس طرح منتقل ہوں جیسے ادارے واقعی کام کرتے ہیں: ہائبرڈ اول، Entra ID انٹیگریشن اور سمجھ داری سے لائسنسنگ کے ساتھ۔ ہم لہریں پلان کرتے، کٹ اوور کی مشق کرتے اور Azure Hybrid Benefit سے Windows اور SQL کی دوہری ادائیگی روکتے ہیں۔",
+    "fullDescription": "Azure مائیگریشن کی کامیابی اس کے گرد موجود Microsoft ماحول پر منحصر ہے — Active Directory، SQL Server لائسنس، Office 365 اور وہ آن پریمسز نظام جو فی الحال کہیں نہیں جا رہے۔ ہم Azure Migrate کے جائزے سے آغاز کرتے ہیں جو انحصار کا نقشہ بناتا اور اہداف کے سائز طے کرتا ہے، پھر Microsoft کے Cloud Adoption Framework کے مطابق landing zone ڈیزائن کرتے ہیں: مینجمنٹ گروپس، hub-spoke نیٹ ورکنگ، Entra ID انٹیگریشن اور کوڈ کی صورت میں پالیسی گارڈریلز۔ ورک لوڈز لہروں میں منتقل ہوتے ہیں — Azure Site Recovery ورچوئل مشینوں کو اور Azure DMS ڈیٹا بیسز کو ریپلیکیٹ کرتا ہے — ہر لہر کے لیے مشق شدہ کٹ اوور اور رول بیک راستہ ہوتا ہے۔ اگر آپ کے پاس Software Assurance ہے تو Azure Hybrid Benefit ونڈوز اور SQL VM کے اخراجات 40 فیصد تک کم کر سکتا ہے، اور ہم یہ حساب آپ کے عہد کرنے سے پہلے لگاتے ہیں۔ ہائبرڈ منظرنامے اولین درجے کے رہتے ہیں: ExpressRoute یا VPN رابطہ اور Azure Arc باقی آن پریمسز نظاموں کو ایک ہی جگہ سے قابلِ انتظام بناتے ہیں۔",
+    "features": [
+      "Azure Migrate جائزہ اور انحصار کی نقشہ بندی",
+      "Cloud Adoption Framework کے مطابق Landing Zone",
+      "Entra ID اور ہائبرڈ شناختی انٹیگریشن",
+      "Azure Site Recovery کے ذریعے VM ریپلیکیشن",
+      "Azure DMS کے ذریعے SQL مائیگریشن",
+      "Azure Hybrid Benefit اور لائسنس آپٹیمائزیشن",
+      "ہائبرڈ کنیکٹیویٹی (ExpressRoute/VPN، Azure Arc)",
+      "لہروں کی منصوبہ بندی، کٹ اوور مشقیں اور رول بیک"
+    ],
+    "benefits": [
+      "ویک اینڈ نہیں، منٹوں میں ناپے جانے والے کٹ اوور وقفے",
+      "Hybrid Benefit سے کم ہونے والے Windows اور SQL لائسنس اخراجات",
+      "کلاؤڈ اور آن پریمسز کے لیے ایک ہی شناختی نظام",
+      "پہلے دن سے پالیسی گارڈریلز اور آڈٹ لاگنگ",
+      "کلاؤڈ کے ساتھ مل کر چلنے والے ہائبرڈ نظام",
+      "ایک مستند Azure بنیاد جسے آپ کی ٹیم خود چلا سکے"
+    ],
+    "metaTitle": "Azure مائیگریشن سروسز — ہائبرڈ اول | PakSoft",
+    "metaDescription": "Cloud Adoption Framework کے landing zone، Site Recovery اور DMS ریپلیکیشن، Entra ID انٹیگریشن اور Hybrid Benefit بچت کے ساتھ Azure مائیگریشن۔ مفت جائزہ حاصل کریں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "جائزہ اور دریافت", "description": "Azure Migrate ایجنٹس آپ کے سرورز، ڈیٹا بیسز اور ان کے باہمی انحصار کی فہرست بناتے ہیں، جبکہ ہم آپ کی ٹیم کے ساتھ لائسنس معاہدوں اور کمپلائنس پابندیوں کا جائزہ لیتے ہیں۔ نتیجہ ایک تیاری رپورٹ ہے جس میں درست سائز کے Azure اہداف اور Hybrid Benefit سمیت ایماندارانہ TCO شامل ہے۔" },
+        { "step": 2, "title": "حکمتِ عملی اور لہروں کی منصوبہ بندی", "description": "ہر ورک لوڈ کو ایک حکمتِ عملی ملتی ہے — Azure VMs پر rehost، App Service یا Azure SQL پر replatform، refactor یا Azure Arc کے پیچھے آن پریمسز برقرار رکھنا۔ ورک لوڈز کم خطرے والے نظاموں سے شروع ہونے والی لہروں میں تقسیم ہوتے ہیں تاکہ اہم نظام منتقل ہونے سے پہلے عمل ثابت ہو جائے۔" },
+        { "step": 3, "title": "Landing Zone کی تعمیر", "description": "ہم آپ کی بنیاد Cloud Adoption Framework کے مطابق Terraform یا Bicep سے بناتے ہیں: مینجمنٹ گروپس، hub-spoke نیٹ ورک، Entra ID انٹیگریشن، Azure Policy گارڈریلز اور مرکزی لاگنگ۔ ہر چیز کوڈ ریویو سے گزرتی اور دوبارہ قابلِ تعمیر ہوتی ہے، اس لیے ماحول پہلے دن سے قابلِ آڈٹ ہے۔" },
+        { "step": 4, "title": "ریپلیکیشن اور مشق", "description": "Azure Site Recovery ورچوئل مشینوں کو اور Azure DMS ڈیٹا بیس کی تبدیلیوں کو مسلسل ریپلیکیٹ کرتا ہے، جس سے ہدف ماحول پروڈکشن کے ساتھ ہم آہنگ رہتا ہے۔ ہم ریپلیکیٹڈ ماحول پر ٹیسٹ failover اتنی بار چلاتے ہیں کہ کٹ اوور runbook معمول بن جائے۔" },
+        { "step": 5, "title": "کٹ اوور اور توثیق", "description": "کٹ اوور طے شدہ وقفوں میں DNS سطح کی سوئچنگ سے ہوتا ہے، جبکہ ماخذ ماحول رول بیک راستے کے طور پر برقرار رہتا ہے۔ ہر لہر کو مکمل قرار دینے سے پہلے شناختی فلو سمیت فنکشنل اور پرفارمنس چیک لسٹس سے جانچا جاتا ہے۔" },
+        { "step": 6, "title": "آپٹیمائزیشن اور حوالگی", "description": "استحکام کے بعد ہم VMs کو درست سائز دیتے ہیں، Reserved Instances اور Hybrid Benefit لاگو کرتے ہیں اور اسٹوریج کی تہوں کو حقیقی استعمال کے مطابق ایڈجسٹ کرتے ہیں۔ آپ کی ٹیم کو ڈیش بورڈز، runbooks اور علم کی منتقلی کا سیشن ملتا ہے — بعد ازاں اختیاری منیجڈ سپورٹ بھی دستیاب ہے۔" }
+      ],
+      "faq": [
+        { "question": "Azure مائیگریشن میں کتنا وقت لگتا ہے؟", "answer": "5 تا 20 سرورز کا چھوٹا ماحول عموماً 4 تا 8 ہفتوں میں منتقل ہو جاتا ہے؛ SQL ڈیٹا بیسز اور باہم منحصر ایپلیکیشنز والے درمیانے ماحول لہروں میں 3 تا 6 ماہ لیتے ہیں۔ 2 تا 3 ہفتوں کا جائزہ مرحلہ اسی اندازے کو پختہ منصوبے میں بدلتا ہے — ہم انحصار کے نقشے دیکھے بغیر ٹائم لائن کا وعدہ نہیں کرتے۔" },
+        { "question": "AWS یا Google Cloud کے بجائے Azure کیوں؟", "answer": "اگر آپ کا نظام Windows Server، SQL Server اور Active Directory پر کھڑا ہے تو انٹیگریشن اور لائسنسنگ میں Azure عموماً آگے رہتا ہے: Hybrid Benefit آپ کے موجودہ لائسنس دوبارہ استعمال کرتا ہے اور Entra ID اسی شناختی ماڈل کو وسعت دیتا ہے جو آپ پہلے سے چلا رہے ہیں۔ نئے Linux یا کنٹینر مرکوز ورک لوڈز کے لیے فیصلہ اتنا واضح نہیں — اگر کوئی اور کلاؤڈ بہتر ہو تو ہم ایمانداری سے بتا دیتے ہیں۔" },
+        { "question": "Azure Hybrid Benefit حقیقت میں پیسہ کیسے بچاتا ہے؟", "answer": "اگر آپ کے پاس Software Assurance کے ساتھ Windows Server یا SQL Server لائسنس ہیں تو Hybrid Benefit انہیں Azure VMs پر لاگو کرنے دیتا ہے، بجائے اس کے کہ گھنٹہ وار قیمت میں شامل لائسنس فیس دوبارہ ادا کریں — Windows VMs پر 40 فیصد تک اور SQL پر اس سے بھی زیادہ بچت۔ Reserved Instances کے ساتھ ملا کر کل کمپیوٹ بچت pay-as-you-go کے مقابلے میں اکثر 60 تا 70 فیصد تک پہنچ جاتی ہے۔ ہم جائزے کے دوران یہ حساب ہر ورک لوڈ کے لیے الگ لگاتے ہیں۔" },
+        { "question": "کیا ہم کچھ نظام آن پریمسز رکھ سکتے ہیں؟", "answer": "جی ہاں — ہائبرڈ کوئی سمجھوتہ نہیں بلکہ ڈیزائن کا ہدف ہے۔ ExpressRoute یا site-to-site VPN تاخیر کے حساس روابط کو نجی رکھتا ہے اور Azure Arc آن پریمسز سرورز کو کلاؤڈ وسائل جیسی پالیسی، نگرانی اور اپڈیٹ مینجمنٹ میں لے آتا ہے۔ بہت سے کلائنٹس ہائبرڈ کو عارضی حالت نہیں بلکہ شعوری انتخاب کے طور پر برسوں چلاتے ہیں۔" },
+        { "question": "مائیگریشن کے دوران Active Directory کا کیا ہوگا؟", "answer": "ہم بدلنے کے بجائے وسعت دیتے ہیں: Entra ID Connect آپ کی آن پریمسز AD کو سنک کرتا ہے تاکہ صارفین دونوں دنیاؤں میں ایک ہی شناخت رکھیں، اور ڈومین کنٹرولرز کلاؤڈ میں مقامی تصدیق کے لیے Azure VMs کے طور پر چل سکتے ہیں۔ مکمل کلاؤڈ بیسڈ Entra ID پر منتقلی بعد میں ممکن ہے، مگر ہم اسے کبھی مائیگریشن کی شرط نہیں بناتے۔" },
+        { "question": "کٹ اوور کے دوران کتنے ڈاؤن ٹائم کی توقع رکھیں؟", "answer": "چونکہ Site Recovery اور DMS مسلسل ریپلیکیشن کرتے ہیں، زیادہ تر کٹ اوور منٹوں میں مکمل ہو جاتے ہیں — سوئچ ایک DNS تبدیلی ہے، ڈیٹا کی نقل نہیں۔ DMS کے آن لائن موڈ سے منتقل ہونے والے SQL ڈیٹا بیسز میں ڈاؤن ٹائم تقریباً صفر ہوتا ہے۔ اگر کسی پرانے نظام کو واقعی لمبا وقفہ چاہیے تو آپ کو یہ ہفتوں پہلے معلوم ہو جاتا ہے، کٹ اوور کی رات نہیں۔" },
+        { "question": "اگر کٹ اوور ناکام ہو جائے تو کیا ہوگا؟", "answer": "ہر لہر کا مشق شدہ رول بیک ہوتا ہے: ماخذ ماحول توثیق مکمل ہونے تک چلتا اور ہم آہنگ رہتا ہے، اس لیے واپسی محض ایک DNS تبدیلی کی دوری پر ہے۔ ہم ہر ورک لوڈ کے لیے ناقابلِ واپسی نقطہ پہلے سے طے کرتے ہیں — اس سے پہلے رول بیک منٹوں کا کام ہے، اس کے بعد runbook میں درج ہنگامی اقدامات کے ساتھ آگے بڑھ کر اصلاح کی جاتی ہے۔" },
+        { "question": "کیا آپ ہماری کمپلائنس اور ڈیٹا ریزیڈنسی کی شرائط پوری کر سکتے ہیں؟", "answer": "جی ہاں۔ Landing zone پہلے دن سے Azure Policy کے ذریعے انکرپشن، کم سے کم اختیار اور آڈٹ لاگنگ کو لازم بناتا ہے، اور ورک لوڈز ان ریجنز سے منسلک ہوتے ہیں جو GDPR یا ترکیہ کے KVKK قواعد پر پورا اترتے ہیں — Germany West Central اور UAE ریجنز عام انتخاب ہیں۔ کنٹرولز کوڈ کی صورت میں ہیں، اس لیے آڈیٹرز ہر ایک کا سراغ لگا سکتے ہیں۔" }
+      ],
+      "technologies": [
+        { "icon": "azure", "name": "Azure Migrate" },
+        { "icon": "azure", "name": "Azure Site Recovery" },
+        { "icon": "azure", "name": "Azure DMS" },
+        { "icon": "azure", "name": "Microsoft Entra ID" },
+        { "icon": "azure", "name": "Azure Arc" },
+        { "icon": "terraform", "name": "Terraform" },
+        { "icon": "azure", "name": "Bicep" },
+        { "icon": "azure", "name": "Azure Monitor" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "الترحيل إلى Azure",
+    "shortDescription": "انتقلوا إلى Microsoft Azure كما تعمل المؤسسات فعلاً: نهج هجين أولاً، وتكامل مع Entra ID، وترخيص ذكي. نخطط الموجات ونتمرّن على التحويلات ونستخدم Azure Hybrid Benefit حتى لا تدفع أعباء Windows وSQL مرتين.",
+    "fullDescription": "نجاح الترحيل إلى Azure يتوقف على بيئة Microsoft المحيطة به — Active Directory وتراخيص SQL Server وOffice 365 والأنظمة المحلية التي لن تغادر بعد. نبدأ بتقييم عبر Azure Migrate يرسم خريطة الاعتماديات ويحدد أحجام الأهداف، ثم نصمم landing zone وفق إطار Cloud Adoption Framework من Microsoft: مجموعات إدارة، وشبكات hub-spoke، وتكامل Entra ID، وضوابط سياسات مكتوبة ككود. تنتقل أعباء العمل على موجات — يكرّر Azure Site Recovery الأجهزة الافتراضية وينقل Azure DMS قواعد البيانات — مع تحويلات مُجرّبة ومسار تراجع لكل موجة. وإذا كنتم تملكون Software Assurance، يمكن لـ Azure Hybrid Benefit خفض تكاليف أجهزة Windows وSQL بنسبة تصل إلى 40٪، ونحسب ذلك قبل أي التزام. تبقى السيناريوهات الهجينة من الدرجة الأولى: اتصال ExpressRoute أو VPN وأداة Azure Arc تُبقي الأنظمة المحلية المتبقية مُدارة من مستوى واحد.",
+    "features": [
+      "تقييم Azure Migrate ورسم خريطة الاعتماديات",
+      "بناء Landing Zone وفق Cloud Adoption Framework",
+      "تكامل Entra ID والهوية الهجينة",
+      "نسخ الأجهزة الافتراضية عبر Azure Site Recovery",
+      "ترحيل SQL عبر Azure DMS",
+      "تحسين التراخيص مع Azure Hybrid Benefit",
+      "الاتصال الهجين (ExpressRoute/VPN وAzure Arc)",
+      "تخطيط الموجات وتمارين التحويل ومسارات التراجع"
+    ],
+    "benefits": [
+      "نوافذ تحويل تُقاس بالدقائق لا بعطلات نهاية الأسبوع",
+      "تكاليف تراخيص Windows وSQL مخفّضة عبر Hybrid Benefit",
+      "مستوى هوية واحد للسحابة والأنظمة المحلية",
+      "ضوابط سياسات وسجلات تدقيق من اليوم الأول",
+      "أنظمة هجينة تُدار مع السحابة لا بمعزل عنها",
+      "أساس Azure موثّق يمكن لفريقكم تشغيله بنفسه"
+    ],
+    "metaTitle": "خدمات الترحيل إلى Azure — نهج هجين | PakSoft",
+    "metaDescription": "ترحيل إلى Azure مع landing zone وفق إطار CAF، ونسخ عبر Site Recovery وDMS، وتكامل Entra ID، ووفورات Hybrid Benefit. احصلوا على تقييم مجاني.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "التقييم والاستكشاف", "description": "تُحصي وكلاء Azure Migrate الخوادم وقواعد البيانات والاعتماديات بينها، بينما نراجع مع فريقكم اتفاقيات الترخيص وقيود الامتثال. الناتج تقرير جاهزية بأهداف Azure مضبوطة الحجم وتكلفة إجمالية صادقة تشمل Hybrid Benefit." },
+        { "step": 2, "title": "الاستراتيجية وتخطيط الموجات", "description": "يحصل كل عبء عمل على استراتيجية — rehost إلى أجهزة Azure الافتراضية، أو replatform إلى App Service أو Azure SQL، أو refactor، أو البقاء محلياً خلف Azure Arc. تُجمَّع الأعباء في موجات تبدأ بالأنظمة منخفضة المخاطر، فيُثبَت المسار قبل نقل أي نظام حرج." },
+        { "step": 3, "title": "بناء الـ Landing Zone", "description": "نبني أساسكم بواسطة Terraform أو Bicep وفق إطار Cloud Adoption Framework: مجموعات إدارة، وشبكة hub-spoke، وتكامل Entra ID، وضوابط Azure Policy، وتسجيل مركزي. كل شيء يمر بمراجعة كود وقابل لإعادة الإنشاء، فتكون البيئة قابلة للتدقيق من يومها الأول." },
+        { "step": 4, "title": "النسخ المتواصل والتمرين", "description": "يكرّر Azure Site Recovery الأجهزة الافتراضية وينقل Azure DMS تغييرات قواعد البيانات باستمرار، فتبقى البيئة الهدف متزامنة مع الإنتاج. نُجري اختبارات failover في البيئة المنسوخة حتى يصبح كتيّب التحويل أمراً روتينياً." },
+        { "step": 5, "title": "التحويل والتحقق", "description": "تتم التحويلات في نوافذ متفق عليها عبر تبديل على مستوى DNS، بينما تبقى البيئة المصدر سليمة كمسار تراجع. تُتحقَّق كل موجة وفق قوائم فحص وظيفية وأدائية — بما فيها مسارات الهوية — قبل إعلان اكتمالها." },
+        { "step": 6, "title": "التحسين والتسليم", "description": "بعد الاستقرار نضبط أحجام الأجهزة الافتراضية ونفعّل Reserved Instances وHybrid Benefit ونحسّن طبقات التخزين لتعكس الفاتورة الاستخدام الفعلي. يتسلّم فريقكم لوحات متابعة وكتيبات تشغيل وجلسة نقل معرفة — مع دعم مُدار اختياري لاحقاً." }
+      ],
+      "faq": [
+        { "question": "كم يستغرق الترحيل إلى Azure؟", "answer": "بيئة صغيرة من 5 إلى 20 خادماً تُرحَّل عادةً خلال 4 إلى 8 أسابيع؛ أما البيئات المتوسطة بقواعد بيانات SQL وتطبيقات مترابطة فتستغرق 3 إلى 6 أشهر على موجات. مرحلة التقييم التي تمتد من أسبوعين إلى ثلاثة هي التي تحوّل هذا النطاق إلى خطة ملزمة — فنحن لا نَعِد بجداول زمنية قبل رؤية خرائط الاعتماديات." },
+        { "question": "لماذا نختار Azure بدلاً من AWS أو Google Cloud؟", "answer": "إذا كانت بنيتكم قائمة على Windows Server وSQL Server وActive Directory، فعادةً ما يتفوق Azure في التكامل والترخيص: يعيد Hybrid Benefit استخدام التراخيص التي تملكونها أصلاً، ويوسّع Entra ID نموذج الهوية الذي تشغّلونه بالفعل. أما لأعباء Linux أو الحاويات الجديدة فالقرار أقل حسماً — وسنخبركم بصراحة إن كانت سحابة أخرى أنسب." },
+        { "question": "كيف يوفّر Azure Hybrid Benefit المال فعلياً؟", "answer": "إذا كنتم تملكون تراخيص Windows Server أو SQL Server مع Software Assurance، يتيح لكم Hybrid Benefit تطبيقها على أجهزة Azure الافتراضية بدلاً من دفع كلفة الترخيص المضمّنة في السعر بالساعة — أي وفر يصل إلى 40٪ على أجهزة Windows وأكثر على SQL. ومع Reserved Instances تصل وفورات الحوسبة الإجمالية غالباً إلى 60–70٪ مقارنة بالدفع حسب الاستخدام. نحسب ذلك لكل عبء عمل أثناء التقييم." },
+        { "question": "هل يمكننا إبقاء بعض الأنظمة محلياً؟", "answer": "نعم — الهجين هدف تصميمي لا حل وسط. يُبقي ExpressRoute أو VPN الموقعي الروابط الحساسة للزمن خاصة، ويُدخل Azure Arc الخوادم المحلية تحت نفس إدارة السياسات والمراقبة والتحديثات التي تخضع لها موارد السحابة. كثير من عملائنا يشغّلون بيئة هجينة لسنوات عن قناعة، لا كمرحلة انتقالية." },
+        { "question": "كيف تتعاملون مع Active Directory أثناء الترحيل؟", "answer": "نوسّع ولا نستبدل: يزامن Entra ID Connect دليل AD المحلي لديكم فيحتفظ المستخدمون بهوية واحدة في العالمين، ويمكن تشغيل وحدات التحكم بالنطاق كأجهزة Azure افتراضية للمصادقة داخل السحابة. الانتقال الكامل إلى Entra ID سحابي فقط ممكن لاحقاً، لكننا لا نفرضه أبداً كشرط للترحيل." },
+        { "question": "ما حجم التوقف المتوقع أثناء التحويل؟", "answer": "بفضل النسخ المتواصل عبر Site Recovery وDMS، تكتمل معظم التحويلات في دقائق — فالتبديل تغيير في DNS وليس نسخاً للبيانات. ترحيلات SQL بالوضع المباشر في DMS تشهد توقفاً شبه معدوم. وإذا احتاج نظام قديم فعلاً إلى نافذة أطول، فستعرفون ذلك قبل أسابيع، لا في ليلة التحويل." },
+        { "question": "ماذا يحدث إذا فشل التحويل؟", "answer": "لكل موجة خطة تراجع مُجرّبة: تبقى البيئة المصدر عاملة ومتزامنة حتى اكتمال التحقق، فالعودة لا تبعد سوى تغيير في DNS. نحدّد مسبقاً نقطة اللاعودة لكل عبء عمل — قبلها يستغرق التراجع دقائق، وبعدها نصحّح بالمضي قدماً وفق خطوات الطوارئ الموثّقة في كتيّب التشغيل." },
+        { "question": "هل تلبّون متطلبات الامتثال وإقامة البيانات لدينا؟", "answer": "نعم. تفرض الـ landing zone منذ اليوم الأول التشفير وصلاحيات الحد الأدنى وسجلات التدقيق عبر Azure Policy، وتُثبَّت أعباء العمل في مناطق تستوفي قواعد GDPR أو قانون KVKK التركي — وتُعدّ Germany West Central ومناطق الإمارات خيارات شائعة. ولأن الضوابط مكتوبة ككود، يمكن للمدققين تتبّع كل واحد منها." }
+      ],
+      "technologies": [
+        { "icon": "azure", "name": "Azure Migrate" },
+        { "icon": "azure", "name": "Azure Site Recovery" },
+        { "icon": "azure", "name": "Azure DMS" },
+        { "icon": "azure", "name": "Microsoft Entra ID" },
+        { "icon": "azure", "name": "Azure Arc" },
+        { "icon": "terraform", "name": "Terraform" },
+        { "icon": "azure", "name": "Bicep" },
+        { "icon": "azure", "name": "Azure Monitor" }
+      ]
+    }
+  }
+}

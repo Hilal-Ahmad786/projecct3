@@ -53,7 +53,7 @@ export default function WebDevHero({ serviceName, description }: { serviceName: 
         <motion.nav
           aria-label="Breadcrumb"
           {...(prefersReducedMotion ? {} : { initial: { opacity: 0, y: -8 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.3 } })}
-          className={`flex items-center gap-1.5 text-xs text-gray-400 pt-6 mb-6 ${isRTL ? 'flex-row-reverse' : ''}`}
+          className="flex items-center gap-1.5 text-xs text-gray-400 pt-6 mb-6"
         >
           <LocalizedLink href="/" className="hover:text-gray-600 transition-colors">Home</LocalizedLink>
           <svg className={`w-3 h-3 text-gray-300 flex-shrink-0 ${isRTL ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -66,14 +66,14 @@ export default function WebDevHero({ serviceName, description }: { serviceName: 
           <span className="text-gray-600 font-medium">Web Development</span>
         </motion.nav>
 
-        <div className={`grid lg:grid-cols-2 gap-12 xl:gap-20 items-center ${isRTL ? 'lg:flex lg:flex-row-reverse' : ''}`}>
+        <div className="grid lg:grid-cols-2 gap-12 xl:gap-20 items-center">
 
           {/* ── Left: copy ── */}
           <div className="space-y-8 max-w-xl">
             {/* Eyebrow */}
             <motion.div
               {...(prefersReducedMotion ? {} : { initial: { opacity: 0, y: 12 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.4, ease: [0.22, 1, 0.36, 1] } })}
-              className={`flex items-center gap-3 ${isRTL ? 'flex-row-reverse' : ''}`}
+              className="flex items-center gap-3"
             >
               <div className="w-8 h-0.5 bg-heritage-turquoise" />
               <span className="text-overline text-heritage-turquoise">
@@ -102,7 +102,7 @@ export default function WebDevHero({ serviceName, description }: { serviceName: 
             {/* CTAs */}
             <motion.div
               {...(prefersReducedMotion ? {} : { initial: { opacity: 0, y: 16 }, animate: { opacity: 1, y: 0 }, transition: { ...smoothSpring, delay: 0.4 } })}
-              className={`flex flex-wrap gap-4 ${isRTL ? 'flex-row-reverse' : ''}`}
+              className="flex flex-wrap gap-4"
             >
               <LocalizedLink
                 href="/contact"
@@ -124,7 +124,7 @@ export default function WebDevHero({ serviceName, description }: { serviceName: 
             {/* Trust badges */}
             <motion.div
               {...(prefersReducedMotion ? {} : { initial: { opacity: 0 }, animate: { opacity: 1 }, transition: { duration: 0.5, delay: 0.6 } })}
-              className={`flex flex-wrap gap-2 ${isRTL ? 'flex-row-reverse' : ''}`}
+              className="flex flex-wrap gap-2"
             >
               {TRUST_BADGES.map((badge, i) => (
                 <motion.span

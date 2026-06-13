@@ -297,14 +297,63 @@
       "technical-cto": "Teknik CTO",
       "staff-augmentation": "Personel Takviyesi",
       "developer-outsourcing": "Geliştirici Dış Kaynak",
-      "dedicated-teams": "Adanmış Ekipler"
+      "dedicated-teams": "Adanmış Ekipler",
+      "accessibility-compliance": "Erişilebilirlik Uyumluluğu",
+      "affiliate-marketing-systems": "Affiliate Pazarlama Sistemleri",
+      "ai-chatbot-integration": "Yapay Zeka Chatbot Entegrasyonu",
+      "ai-image-generation": "AI Görsel Üretimi",
+      "api-rate-limiting-throttling": "API Hız Sınırlama",
+      "api-security-authentication": "API Güvenliği & Kimlik Doğrulama",
+      "ar-development": "AR Geliştirme",
+      "blockchain-development": "Blockchain Geliştirme",
+      "booking-reservation-systems": "Rezervasyon Sistemleri",
+      "business-intelligence-solutions": "İş Zekası Çözümleri",
+      "cloud-cost-optimization": "Bulut Maliyet Optimizasyonu",
+      "code-review-refactoring": "Kod İnceleme ve Yeniden Düzenleme",
+      "computer-vision-solutions": "Bilgisayarlı Görme Çözümleri",
+      "conversion-rate-optimization": "Dönüşüm Oranı Optimizasyonu",
+      "cybersecurity-auditing": "Siber Güvenlik Denetimi",
+      "database-design-optimization": "Veritabanı Tasarımı & Optimizasyonu",
+      "desktop-application-development": "Masaüstü Uygulama Geliştirme",
+      "disaster-recovery-planning": "Felaket Kurtarma Planlaması",
+      "email-marketing-automation": "E-posta Pazarlama Otomasyonu",
+      "etl-pipelines": "ETL Pipeline'ları",
+      "event-driven-architecture": "Olay Odaklı Mimari",
+      "fraud-detection-systems": "Dolandırıcılık Tespit Sistemleri",
+      "graphql-api-development": "GraphQL API Geliştirme",
+      "headless-commerce": "Headless E-Ticaret",
+      "identity-access-management": "Kimlik ve Erişim Yönetimi",
+      "inventory-management-systems": "Envanter Yönetim Sistemleri",
+      "iot-development": "IoT Geliştirme",
+      "kubernetes-orchestration": "Kubernetes Orkestrasyon",
+      "learning-management-systems": "Öğrenme Yönetim Sistemleri",
+      "legacy-system-modernization": "Eski Sistem Modernizasyonu",
+      "microservices-architecture": "Mikroservis Mimarisi",
+      "mlops-model-deployment": "MLOps ve Model Dağıtımı",
+      "multi-tenant-saas-architecture": "Çoklu Kiracı SaaS Mimarisi",
+      "natural-language-processing": "Doğal Dil İşleme",
+      "nft-marketplace-development": "NFT Pazaryeri Geliştirme",
+      "payment-gateway-integration": "Ödeme Geçidi Entegrasyonu",
+      "performance-testing-optimization": "Performans Testi ve Optimizasyon",
+      "real-time-applications": "Gerçek Zamanlı Uygulamalar",
+      "serverless-architecture": "Serverless Mimari",
+      "smart-contract-development": "Akıllı Sözleşme Geliştirme",
+      "social-media-integration": "Sosyal Medya Entegrasyonu",
+      "technical-documentation": "Teknik Dokümantasyon",
+      "telemedicine-platforms": "Telemedicine Platformları",
+      "terraform-infrastructure": "Terraform Altyapısı",
+      "unity-game-development": "Unity Oyun Geliştirme",
+      "unreal-engine-development": "Unreal Engine Geliştirme",
+      "video-marketing": "Video Pazarlama",
+      "vr-development": "VR Geliştirme"
     },
     "subtitle": "Büyüme ve verimliliği artıran kapsamlı dijital çözümler.",
     "searchPlaceholder": "Hizmet ara...",
     "ctaTitle": "Büyümeye Hazır mısınız?",
     "ctaDesc": "Ücretsiz danışmanlık randevusu alın.",
     "ctaButton": "Demo Planla",
-    "exploreAll": "Tüm özel hizmet kataloğumuzu keşfedin"
+    "exploreAll": "Tüm özel hizmet kataloğumuzu keşfedin",
+    "noResults": "Hizmet bulunamadı"
   },
   "hero": {
     "eyebrow": "Dijital Çözümler",
@@ -2678,6 +2727,198 @@
           "Esnek Ölçeklendirme",
           "Uzun Vadeli İşbirliği"
         ]
+      },
+      "accessibilityCompliance": {
+        "title": "Erişilebilirlik Uyumluluğu",
+        "description": "Erişilebilirlik Uyumluluğu hizmetleri."
+      },
+      "affiliateMarketingSystems": {
+        "title": "Affiliate Pazarlama Sistemleri",
+        "description": "Tamamen sizin kontrolünüzde bir iş ortaklığı kanalı kurun. Güvenilir sunucu taraflı izleme, esnek komisyon yapıları, otomatik…"
+      },
+      "aiChatbotIntegration": {
+        "title": "Yapay Zeka Chatbot Entegrasyonu",
+        "description": "Web sitenize veya uygulamanıza, kendi bilgi tabanınızdan yanıt veren GPT ya da Claude destekli bir asistan ekleyin — doğru,…"
+      },
+      "aiImageGeneration": {
+        "title": "AI Görsel Üretimi",
+        "description": "DALL-E, Stable Diffusion ve Midjourney API'lerini kullanarak özel AI görsel üretim çözümleri oluşturun."
+      },
+      "apiRateLimitingThrottling": {
+        "title": "API Hız Sınırlama",
+        "description": "API Hız Sınırlama hizmetleri."
+      },
+      "apiSecurityAuthentication": {
+        "title": "API Güvenliği & Kimlik Doğrulama",
+        "description": "OAuth 2.0, JWT token'ları, API anahtarları ve hız sınırlaması ile sağlam API güvenliği uygulayın."
+      },
+      "arDevelopment": {
+        "title": "AR Geliştirme",
+        "description": "Mobil, akıllı gözlükler ve kurumsal kullanım için artırılmış gerçeklik uygulamaları oluşturun."
+      },
+      "blockchainDevelopment": {
+        "title": "Blockchain Geliştirme",
+        "description": "Ethereum, Solana ve daha fazlasında güvenli akıllı sözleşmeler, DApp'ler ve blockchain entegrasyonları geliştirin."
+      },
+      "bookingReservationSystems": {
+        "title": "Rezervasyon Sistemleri",
+        "description": "Rezervasyon Sistemleri hizmetleri."
+      },
+      "businessIntelligenceSolutions": {
+        "title": "İş Zekası Çözümleri",
+        "description": "Etkileşimli gösterge panelleri, KPI takibi ve self-servis analitikle BI platformları oluşturun."
+      },
+      "cloudCostOptimization": {
+        "title": "Bulut Maliyet Optimizasyonu",
+        "description": "Bulut Maliyet Optimizasyonu hizmetleri."
+      },
+      "codeReviewRefactoring": {
+        "title": "Kod İnceleme ve Yeniden Düzenleme",
+        "description": "Kod İnceleme ve Yeniden Düzenleme hizmetleri."
+      },
+      "computerVisionSolutions": {
+        "title": "Bilgisayarlı Görme Çözümleri",
+        "description": "Görüntü tanıma, nesne algılama, OCR ve video analitiği uygulayın."
+      },
+      "conversionRateOptimization": {
+        "title": "Dönüşüm Oranı Optimizasyonu",
+        "description": "Veri odaklı A/B testi, UX iyileştirmeleri ve açılış sayfası optimizasyonu ile dönüşümleri artırın."
+      },
+      "cybersecurityAuditing": {
+        "title": "Siber Güvenlik Denetimi",
+        "description": "Saldırganlardan önce güvenlik açıklarını tespit etmek için kapsamlı güvenlik değerlendirmeleri."
+      },
+      "databaseDesignOptimization": {
+        "title": "Veritabanı Tasarımı & Optimizasyonu",
+        "description": "Ölçeklenebilir, hızlı uygulamalar için verimli veritabanı şemaları tasarlayın ve sorgu performansını optimize edin."
+      },
+      "desktopApplicationDevelopment": {
+        "title": "Masaüstü Uygulama Geliştirme",
+        "description": "Electron, Tauri veya yerel çerçevelerle platformlar arası masaüstü uygulamaları oluşturun."
+      },
+      "disasterRecoveryPlanning": {
+        "title": "Felaket Kurtarma Planlaması",
+        "description": "Felaket Kurtarma Planlaması hizmetleri."
+      },
+      "emailMarketingAutomation": {
+        "title": "E-posta Pazarlama Otomasyonu",
+        "description": "Müşteri adaylarını besleyen ve müşterileri elde tutan otomatik e-posta kampanyaları oluşturun."
+      },
+      "etlPipelines": {
+        "title": "ETL Pipeline'ları",
+        "description": "Veri ambarınızı taze ve güvenilir tutan ETL/ELT pipeline'ları tasarlayın ve uygulayın."
+      },
+      "eventDrivenArchitecture": {
+        "title": "Olay Odaklı Mimari",
+        "description": "Olay Odaklı Mimari hizmetleri."
+      },
+      "fraudDetectionSystems": {
+        "title": "Dolandırıcılık Tespit Sistemleri",
+        "description": "Dolandırıcılık Tespit Sistemleri hizmetleri."
+      },
+      "graphqlApiDevelopment": {
+        "title": "GraphQL API Geliştirme",
+        "description": "Modern uygulamalar için GraphQL ile esnek, verimli API'ler oluşturun."
+      },
+      "headlessCommerce": {
+        "title": "Headless E-Ticaret",
+        "description": "Headless E-Ticaret hizmetleri."
+      },
+      "identityAccessManagement": {
+        "title": "Kimlik ve Erişim Yönetimi",
+        "description": "SSO, MFA, RBAC ve kimlik federasyonu ile sağlam IAM çözümleri oluşturun."
+      },
+      "inventoryManagementSystems": {
+        "title": "Envanter Yönetim Sistemleri",
+        "description": "Envanter Yönetim Sistemleri hizmetleri."
+      },
+      "iotDevelopment": {
+        "title": "IoT Geliştirme",
+        "description": "IoT sensörleri, geçitler ve bulut platformlarıyla akıllı, bağlantılı ürünler oluşturun."
+      },
+      "kubernetesOrchestration": {
+        "title": "Kubernetes Orkestrasyon",
+        "description": "Ölçeklenebilir, dayanıklı mikroservis dağıtımları için Kubernetes ile konteynerları orkestre edin."
+      },
+      "learningManagementSystems": {
+        "title": "Öğrenme Yönetim Sistemleri",
+        "description": "Öğrenme Yönetim Sistemleri hizmetleri."
+      },
+      "legacySystemModernization": {
+        "title": "Eski Sistem Modernizasyonu",
+        "description": "Eski uygulamaları güncel mimari ve bulut geçişiyle modernize edin."
+      },
+      "microservicesArchitecture": {
+        "title": "Mikroservis Mimarisi",
+        "description": "Ölçek ve çeviklik için bağımsız olarak dağıtılabilir servislere monolitleri ayırın."
+      },
+      "mlopsModelDeployment": {
+        "title": "MLOps ve Model Dağıtımı",
+        "description": "İzleme ve otomasyonla ML modellerini prodüksiyonda dağıtın ve yönetin."
+      },
+      "multiTenantSaasArchitecture": {
+        "title": "Çoklu Kiracı SaaS Mimarisi",
+        "description": "Çoklu Kiracı SaaS Mimarisi hizmetleri."
+      },
+      "naturalLanguageProcessing": {
+        "title": "Doğal Dil İşleme",
+        "description": "Metin analizi, duygu algılama, sohbet botları ve dil üretimi için NLP çözümleri oluşturun."
+      },
+      "nftMarketplaceDevelopment": {
+        "title": "NFT Pazaryeri Geliştirme",
+        "description": "Sanat, koleksiyon ve oyun için özel NFT pazaryerleri oluşturun."
+      },
+      "paymentGatewayIntegration": {
+        "title": "Ödeme Geçidi Entegrasyonu",
+        "description": "Stripe, PayPal ve bölgesel sağlayıcılarla güvenli ödeme işleme entegre edin."
+      },
+      "performanceTestingOptimization": {
+        "title": "Performans Testi ve Optimizasyon",
+        "description": "Performans Testi ve Optimizasyon hizmetleri."
+      },
+      "realTimeApplications": {
+        "title": "Gerçek Zamanlı Uygulamalar",
+        "description": "WebSockets ve gerçek zamanlı altyapı ile anında güncellenen uygulamalar oluşturun."
+      },
+      "serverlessArchitecture": {
+        "title": "Serverless Mimari",
+        "description": "AWS Lambda, Vercel ve edge computing ile ölçeklenebilir, maliyet etkin uygulamalar oluşturun."
+      },
+      "smartContractDevelopment": {
+        "title": "Akıllı Sözleşme Geliştirme",
+        "description": "Ethereum, Solana ve diğer blokzincirlerde güvenli, denetlenmiş akıllı sözleşmeler oluşturun."
+      },
+      "socialMediaIntegration": {
+        "title": "Sosyal Medya Entegrasyonu",
+        "description": "Sosyal Medya Entegrasyonu hizmetleri."
+      },
+      "technicalDocumentation": {
+        "title": "Teknik Dokümantasyon",
+        "description": "Teknik Dokümantasyon hizmetleri."
+      },
+      "telemedicinePlatforms": {
+        "title": "Telemedicine Platformları",
+        "description": "Telemedicine Platformları hizmetleri."
+      },
+      "terraformInfrastructure": {
+        "title": "Terraform Altyapısı",
+        "description": "Tutarlılık ve otomasyon için Terraform ile bulut altyapısını tanımlayın ve sağlayın."
+      },
+      "unityGameDevelopment": {
+        "title": "Unity Oyun Geliştirme",
+        "description": "Mobil, PC ve konsol dahil tüm platformlar için Unity ile 2D ve 3D oyunlar oluşturun."
+      },
+      "unrealEngineDevelopment": {
+        "title": "Unreal Engine Geliştirme",
+        "description": "Unreal Engine 5 ile AAA kalitesinde oyunlar ve gerçek zamanlı 3D deneyimler oluşturun."
+      },
+      "videoMarketing": {
+        "title": "Video Pazarlama",
+        "description": "Pazarlama, eğitim ve marka hikayesi anlatımı için çekici video içeriği üretin."
+      },
+      "vrDevelopment": {
+        "title": "VR Geliştirme",
+        "description": "Eğitim, eğlence ve kurumsal için sürükleyici sanal gerçeklik deneyimleri oluşturun."
       }
     },
     "detail": {
@@ -2884,7 +3125,52 @@
       "backTo": "{parent} sayfasına dön",
       "exploreSubServices": "Uzmanlaşmış Çözümlerimizi Keşfedin",
       "exploreSubServicesDescription": "Özel ihtiyaçlarınıza göre tasarlanmış uzman tekliflerimizi daha yakından keşfedin.",
-      "learnMore": "Daha Fazla Bilgi"
+      "learnMore": "Daha Fazla Bilgi",
+      "whyUs": {
+        "title": "Neden PakSoft?",
+        "benefits": [
+          {
+            "title": "Uzman Ekip",
+            "description": "Uzmanlarımız her projeye yılların deneyimini taşır ve yüksek kaliteli teslimat sağlar."
+          },
+          {
+            "title": "Zamanında Teslimat",
+            "description": "Takviminize saygı duyarız. Her kilometre taşı çevik proje yönetimiyle izlenir ve zamanında tamamlanır."
+          },
+          {
+            "title": "Şeffaf İletişim",
+            "description": "Her zaman sürecin içindesiniz. Düzenli güncellemeler ve açık iletişim kanalları iş birliğini kusursuz kılar."
+          },
+          {
+            "title": "Ölçeklenebilir Çözümler",
+            "description": "Büyüme için geliştiririz. Mimarilerimiz artan yükü maliyetli yeniden yazımlar olmadan karşılar."
+          },
+          {
+            "title": "Önce Müşteri Yaklaşımı",
+            "description": "Hedefleriniz her kararı yönlendirir. Teknik karmaşıklık yerine değer üretmeye öncelik veririz."
+          },
+          {
+            "title": "Yayın Sonrası Destek",
+            "description": "İş birliğimiz yayınla bitmez. Sürekli bakım ve performans izleme hizmeti sunarız."
+          }
+        ]
+      },
+      "pricingPage": {
+        "eyebrow": "Fiyatlandırma",
+        "titleAccent": "Fiyatlandırma",
+        "subtitle": "Projenizle birlikte ölçeklenen şeffaf fiyatlandırma. Bir paket seçin veya size özel teklif alın — gizli ücret yok.",
+        "quoteTitle": "Her proje benzersizdir",
+        "quoteDesc": "Bu hizmet projeye özel kapsamlanır. Hedeflerinizi iletin, 48 saat içinde detaylı ve sabit fiyatlı bir teklif gönderelim.",
+        "bullet1": "48 saat içinde sabit fiyatlı teklif",
+        "bullet2": "Ücretsiz danışmanlık ve kapsam incelemesi",
+        "bullet3": "Planı onaylayana kadar taahhüt yok"
+      },
+      "blogPage": {
+        "eyebrow": "İçgörüler",
+        "titleAccent": "İçgörüler",
+        "subtitle": "Ekibimizden rehberler, derinlemesine incelemeler ve deneyimler — bugün uygulayabileceğiniz pratik bilgiler.",
+        "viewAll": "Tüm Yazıları Gör"
+      }
     },
     "pricing": {
       "eyebrow": "Fiyatlandırma",
@@ -3662,7 +3948,7 @@
       "logoBrandIdentity": "Logo & Marka Kimliği",
       "brandStrategy": "Marka Stratejisi",
       "motionGraphics": "Hareketli Grafikler",
-      "3dArVr": "3D / AR / VR",
+      "3dArVr": "AR Geliştirme",
       "croAbTesting": "CRO & A/B Testi",
       "devOpsCiCd": "DevOps & CI/CD",
       "cloudMigration": "Bulut Geçişi",
@@ -3671,7 +3957,16 @@
       "databaseServices": "Veritabanı Hizmetleri",
       "performanceOptimization": "Performans Optimizasyonu",
       "managedServices": "Yönetilen Hizmetler",
-      "techConsulting": "Teknoloji Danışmanlığı"
+      "techConsulting": "Teknoloji Danışmanlığı",
+      "conversationalAi": "Konuşma Yapay Zekası",
+      "llmServices": "LLM Hizmetleri",
+      "digitalMarketing": "Dijital Pazarlama",
+      "marketplaceAds": "Pazar Yeri Reklamları",
+      "digitalTransformation": "Dijital Dönüşüm",
+      "aiStrategy": "Yapay Zeka Stratejisi",
+      "growthStrategy": "Büyüme Stratejisi",
+      "startupServices": "Startup Hizmetleri",
+      "staffAugmentation": "Personel Takviyesi"
     }
   },
   "connect": {
@@ -11095,5 +11390,61 @@
       "GDPR Uyumlu",
       "SOC 2 Tip II"
     ]
+  },
+  "sceneLabels": {
+    "live": "canlı",
+    "noErrors": "0 hata",
+    "orderConfirmed": "Sipariş onaylandı!",
+    "uptime": "%99,99 çalışma süresi",
+    "growth": "Büyüme",
+    "roi": "ROI",
+    "leads": "Potansiyel",
+    "opsCenter": "Operasyon Merkezi",
+    "requests": "istek/sn",
+    "capacity": "kapasite %78",
+    "sources": "kaynaklar",
+    "transform": "dönüşüm",
+    "warehouse": "veri ambarı",
+    "insights": "3 içgörü ✓",
+    "yourInfra": "altyapınız",
+    "secured": "✓ güvende",
+    "plan": "planla",
+    "build": "geliştir",
+    "test": "test et",
+    "ship": "✓ yayınla",
+    "retry": "tekrar ↻",
+    "reach": "erişim +%312 ↗",
+    "scaleUp": "büyüme modu 🚀",
+    "checkout": "ödeme ✓",
+    "uiLayer": "Arayüz / Sunum",
+    "logicLayer": "İş Mantığı",
+    "apiLayer": "API Katmanı",
+    "dbLayer": "Veritabanı",
+    "chatQuestion": "Bugünkü satış raporunu özetler misin?",
+    "chatAnswerPre": "Gelir arttı",
+    "chatAnswerMid": "— 312 sipariş. En iyi bölge:",
+    "fullReport": "Tam rapor",
+    "forecast": "Tahmin",
+    "yourSite": "siteniz.com",
+    "rankUp": "1. sıra",
+    "openRate": "açılma oranı",
+    "subject1": "Haftalık büyüme raporunuz",
+    "subject2": "Size yeni bir müşteri adayı atandı",
+    "subject3": "Kampanya sonuçları geldi",
+    "visitors": "Ziyaretçi",
+    "signups": "Kayıt",
+    "customers": "Müşteri",
+    "optimized": "optimize ↑",
+    "followers": "takipçi",
+    "newPost": "Yeni gönderi yayınlandı",
+    "views": "görüntülenme",
+    "watchTime": "izlenme süresi",
+    "todo": "Yapılacak",
+    "doing": "Devam ediyor",
+    "done": "Tamamlandı",
+    "queryTime": "sorgu 12ms",
+    "indexed": "dizinlendi ✓",
+    "blockConfirmed": "blok onaylandı",
+    "wallet": "Cüzdan"
   }
 }

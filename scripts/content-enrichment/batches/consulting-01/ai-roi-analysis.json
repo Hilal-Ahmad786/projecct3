@@ -1,0 +1,273 @@
+{
+  "slug": "ai-roi-analysis",
+  "en": {
+    "name": "AI ROI Analysis",
+    "shortDescription": "Put real numbers behind your AI ambitions. We model the full cost of AI initiatives — build, run, and risk — against quantified benefits, so every investment decision rests on evidence instead of hype.",
+    "fullDescription": "AI budgets are approved on optimism and cancelled on invoices. Our AI ROI analysis replaces both with numbers: we model the full cost of an initiative — data preparation, development, infrastructure, inference at scale, retraining, and the people needed to run it — and set it against benefits quantified from your own baselines, not vendor benchmarks. Sensitivity analysis shows how the case shifts when adoption, accuracy, or usage volumes move, and payback, NPV, and break-even points make competing options comparable. A typical engagement runs two to four weeks per initiative and produces a working financial model, a risk-adjusted business case, and an executive deck — so leadership can fund, defer, or stop each use case with confidence.",
+    "features": [
+      "Total Cost of Ownership Modeling",
+      "Benefit Quantification from Your Own Baselines",
+      "Sensitivity & Scenario Analysis",
+      "Payback, NPV & Break-even Calculation",
+      "Risk-Adjusted Business Case Development",
+      "Build vs Buy Cost Comparison",
+      "Inference & Retraining Cost Forecasts",
+      "Executive-Ready Investment Deck"
+    ],
+    "benefits": [
+      "Investment decisions backed by defensible numbers",
+      "Hidden AI running costs surfaced before they bite",
+      "A business case finance and the board can sign off",
+      "Clear go/no-go thresholds for every use case",
+      "Stakeholders aligned on how success will be measured",
+      "A reusable ROI model for future AI initiatives"
+    ],
+    "metaTitle": "AI ROI Analysis & Business Cases | PakSoft",
+    "metaDescription": "Model the true costs, benefits, and risks of AI before you invest. Get a defensible business case with payback and sensitivity analysis — book a free consultation.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Scoping & Use Case Definition", "description": "We define which AI initiatives the analysis covers and what decision it must support — fund, defer, or stop. Together with your stakeholders we agree the benefit hypotheses, the baselines they will be measured against, and the time horizon of the case." },
+        { "step": 2, "title": "Cost Modeling", "description": "We build a total-cost-of-ownership model covering data preparation, development, licensing, infrastructure, inference at production volumes, retraining cycles, and the operating team. Build-versus-buy alternatives are costed side by side so the comparison is honest." },
+        { "step": 3, "title": "Benefit Quantification", "description": "Each claimed benefit — hours saved, conversion uplift, error reduction, churn avoided — is tied to a measurable baseline from your own data. Where a baseline does not exist yet, we define how to establish one before money is committed." },
+        { "step": 4, "title": "Risk & Sensitivity Analysis", "description": "We stress-test the case against the variables that actually move it: adoption rates, model accuracy, usage volumes, and token or compute prices. The output is a range of outcomes with explicit best, expected, and worst cases rather than a single seductive number." },
+        { "step": 5, "title": "Business Case Assembly", "description": "Costs, benefits, and risks are consolidated into payback period, NPV, and break-even calculations per use case. Initiatives are ranked so leadership sees not just whether each one pays off, but in which order to fund them." },
+        { "step": 6, "title": "Executive Readout & Decision Support", "description": "We present the findings in a decision-focused session with the financial model handed over, not just a PDF. Your team keeps a working workbook it can update as assumptions change — turning a one-off analysis into a reusable investment tool." }
+      ],
+      "faq": [
+        { "question": "How long does an AI ROI analysis take?", "answer": "A single, well-scoped use case typically takes two to three weeks; a portfolio of three to five initiatives runs four to six. The biggest variable is data availability — if baselines for the claimed benefits already exist, the analysis moves considerably faster." },
+        { "question": "What exactly do we receive at the end?", "answer": "You get a working financial model covering costs, benefits, and scenarios; a risk-adjusted business case with payback, NPV, and break-even per initiative; and an executive deck built for a funding decision. The model is handed over as an editable workbook, not a static report." },
+        { "question": "How do you quantify soft benefits like productivity or customer satisfaction?", "answer": "We translate them into measurable proxies tied to your own data — hours redeployed, ticket resolution times, repeat purchase rates — and state the conversion assumptions openly. Benefits that cannot be tied to any measurable baseline are flagged as unquantified rather than silently inflated into the case." },
+        { "question": "Which AI costs do organizations most often underestimate?", "answer": "Data preparation, inference at production volume, and retraining are the usual blind spots — pilots are cheap, production is not. We also model the human side: prompt and model maintenance, monitoring, and the domain experts whose time the system will consume." },
+        { "question": "How accurate can an ROI forecast for AI really be?", "answer": "No forecast survives contact with production unchanged, which is why we deliver ranges with explicit assumptions instead of one precise-looking number. The sensitivity analysis shows which assumptions dominate the outcome, so you know exactly what to validate in a pilot before scaling spend." },
+        { "question": "Can you analyze AI systems we already run?", "answer": "Yes — post-investment reviews are a common engagement. We compare actual costs and realized benefits against the original assumptions, identify where value is leaking, and recommend whether to scale, optimize, or retire the system." },
+        { "question": "How is this different from the ROI calculator our AI vendor gave us?", "answer": "Vendor calculators are sales tools: they use the vendor's benchmark benefits and rarely include integration, data work, or internal staffing. Our analysis is vendor-neutral, builds on your baselines, and includes the costs vendors have no incentive to mention." },
+        { "question": "What happens if the analysis shows the ROI is negative?", "answer": "Then it has just saved you the cost of finding out in production. The analysis shows which lever — cost, adoption, or scope — would flip the case, so you can either restructure the initiative to clear the threshold or redirect the budget to a use case that does." }
+      ],
+      "technologies": [
+        { "icon": "calculator", "name": "Financial Models" },
+        { "icon": "excel", "name": "Excel" },
+        { "icon": "chart", "name": "Analytics" },
+        { "icon": "powerbi", "name": "Power BI" },
+        { "icon": "python", "name": "Python" },
+        { "icon": "tableau", "name": "Tableau" },
+        { "icon": "googlesheets", "name": "Google Sheets" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Yapay Zeka ROI Analizi",
+    "shortDescription": "Yapay zeka hedeflerinizi gerçek rakamlara dayandırın. Yapay zeka girişimlerinin tüm maliyetini — geliştirme, işletme ve risk — ölçülmüş faydalarla karşılaştırarak modelliyoruz; böylece her yatırım kararı söylentiye değil kanıta dayanır.",
+    "fullDescription": "Yapay zeka bütçeleri iyimserlikle onaylanır, faturalarla iptal edilir. Yapay zeka ROI analizimiz ikisinin yerine rakamları koyar: Bir girişimin tüm maliyetini — veri hazırlığı, geliştirme, altyapı, ölçekli çıkarım, yeniden eğitim ve sistemi işletecek ekip — modeller ve bunu tedarikçi vaatlerine değil, kendi referans değerlerinizden ölçülen faydalara karşı koyarız. Duyarlılık analizi; benimseme oranı, doğruluk veya kullanım hacmi değiştiğinde tablonun nasıl kaydığını gösterir; geri ödeme süresi, NPV ve başabaş noktaları seçenekleri karşılaştırılabilir kılar. Tipik bir çalışma girişim başına iki ila dört hafta sürer ve çalışan bir finansal model, riske göre düzeltilmiş bir iş gerekçesi ve bir yönetici sunumu üretir — böylece yönetim her kullanım senaryosunu güvenle fonlayabilir, erteleyebilir veya durdurabilir.",
+    "features": [
+      "Toplam Sahip Olma Maliyeti Modellemesi",
+      "Kendi Referans Değerlerinizle Fayda Ölçümü",
+      "Duyarlılık ve Senaryo Analizi",
+      "Geri Ödeme, NPV ve Başabaş Hesabı",
+      "Riske Göre Düzeltilmiş İş Gerekçesi",
+      "Geliştir-Satın Al Maliyet Karşılaştırması",
+      "Çıkarım ve Yeniden Eğitim Maliyet Tahminleri",
+      "Yönetime Hazır Yatırım Sunumu"
+    ],
+    "benefits": [
+      "Savunulabilir rakamlara dayanan yatırım kararları",
+      "Gizli yapay zeka işletme maliyetleri sorun olmadan ortaya çıkar",
+      "Finansın ve yönetim kurulunun onaylayabileceği bir iş gerekçesi",
+      "Her kullanım senaryosu için net devam/dur eşikleri",
+      "Başarının nasıl ölçüleceği konusunda hizalanmış paydaşlar",
+      "Gelecekteki yapay zeka girişimleri için yeniden kullanılabilir bir ROI modeli"
+    ],
+    "metaTitle": "Yapay Zeka ROI Analizi | PakSoft",
+    "metaDescription": "Yatırım yapmadan önce yapay zekanın gerçek maliyetlerini, faydalarını ve risklerini modelleyin. Geri ödeme ve duyarlılık analizli iş gerekçesi için ücretsiz görüşme alın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Kapsam ve Kullanım Senaryosu Tanımı", "description": "Analizin hangi yapay zeka girişimlerini kapsayacağını ve hangi kararı destekleyeceğini — fonla, ertele veya durdur — tanımlarız. Paydaşlarınızla birlikte fayda hipotezlerini, bunların ölçüleceği referans değerleri ve iş gerekçesinin zaman ufkunu netleştiririz." },
+        { "step": 2, "title": "Maliyet Modellemesi", "description": "Veri hazırlığı, geliştirme, lisanslama, altyapı, üretim hacminde çıkarım, yeniden eğitim döngüleri ve işletme ekibini kapsayan bir toplam sahip olma maliyeti modeli kurarız. Geliştirme ve satın alma alternatifleri yan yana maliyetlendirilir, böylece karşılaştırma dürüst olur." },
+        { "step": 3, "title": "Fayda Ölçümü", "description": "İddia edilen her fayda — kazanılan saatler, dönüşüm artışı, hata azalması, önlenen müşteri kaybı — kendi verinizden gelen ölçülebilir bir referans değere bağlanır. Henüz referans değer yoksa, para taahhüt edilmeden önce nasıl oluşturulacağını tanımlarız." },
+        { "step": 4, "title": "Risk ve Duyarlılık Analizi", "description": "İş gerekçesini gerçekten hareket ettiren değişkenlere — benimseme oranları, model doğruluğu, kullanım hacimleri, token veya işlem gücü fiyatları — karşı stres testi yaparız. Çıktı, tek bir çekici rakam yerine en iyi, beklenen ve en kötü senaryoları açıkça gösteren bir sonuç aralığıdır." },
+        { "step": 5, "title": "İş Gerekçesinin Oluşturulması", "description": "Maliyetler, faydalar ve riskler; kullanım senaryosu başına geri ödeme süresi, NPV ve başabaş hesaplarında birleştirilir. Girişimler sıralanır; böylece yönetim yalnızca her birinin kendini ödeyip ödemediğini değil, hangi sırayla fonlanacağını da görür." },
+        { "step": 6, "title": "Yönetici Sunumu ve Karar Desteği", "description": "Bulguları karar odaklı bir oturumda sunar ve finansal modeli yalnızca bir PDF olarak değil, çalışan bir dosya olarak teslim ederiz. Ekibiniz varsayımlar değiştikçe güncelleyebileceği bir çalışma dosyasına sahip olur — tek seferlik analiz, yeniden kullanılabilir bir yatırım aracına dönüşür." }
+      ],
+      "faq": [
+        { "question": "Bir yapay zeka ROI analizi ne kadar sürer?", "answer": "İyi kapsamlanmış tek bir kullanım senaryosu genellikle iki ila üç hafta, üç ila beş girişimden oluşan bir portföy ise dört ila altı hafta sürer. En büyük değişken veri mevcudiyetidir — iddia edilen faydalar için referans değerler zaten varsa analiz belirgin biçimde hızlanır." },
+        { "question": "Sonunda tam olarak ne alırız?", "answer": "Maliyetleri, faydaları ve senaryoları kapsayan çalışan bir finansal model; girişim başına geri ödeme, NPV ve başabaş içeren riske göre düzeltilmiş bir iş gerekçesi; ve fonlama kararı için hazırlanmış bir yönetici sunumu alırsınız. Model statik bir rapor olarak değil, düzenlenebilir bir çalışma dosyası olarak teslim edilir." },
+        { "question": "Verimlilik veya müşteri memnuniyeti gibi yumuşak faydaları nasıl ölçüyorsunuz?", "answer": "Bunları kendi verinize bağlı ölçülebilir göstergelere — yeniden değerlendirilen saatler, talep çözüm süreleri, tekrar satın alma oranları — çevirir ve dönüşüm varsayımlarını açıkça belirtiriz. Ölçülebilir bir referans değere bağlanamayan faydalar, sessizce şişirilmek yerine ölçülmemiş olarak işaretlenir." },
+        { "question": "Kurumlar en çok hangi yapay zeka maliyetlerini hafife alıyor?", "answer": "Veri hazırlığı, üretim hacminde çıkarım ve yeniden eğitim olağan kör noktalardır — pilotlar ucuzdur, üretim değildir. İnsan tarafını da modelleriz: prompt ve model bakımı, izleme ve sistemin zamanını tüketeceği alan uzmanları." },
+        { "question": "Yapay zeka için ROI tahmini gerçekte ne kadar isabetli olabilir?", "answer": "Hiçbir tahmin üretim ortamıyla temasından değişmeden çıkmaz; bu yüzden kesin görünen tek bir rakam yerine açık varsayımlı aralıklar sunarız. Duyarlılık analizi sonucu hangi varsayımların belirlediğini gösterir; böylece harcamayı büyütmeden önce pilotta tam olarak neyi doğrulamanız gerektiğini bilirsiniz." },
+        { "question": "Halihazırda çalıştırdığımız yapay zeka sistemlerini analiz edebilir misiniz?", "answer": "Evet — yatırım sonrası incelemeler sık yaptığımız bir çalışmadır. Gerçekleşen maliyetleri ve elde edilen faydaları başlangıç varsayımlarıyla karşılaştırır, değerin nereden sızdığını belirler ve sistemi büyütme, iyileştirme veya emekliye ayırma önerisi sunarız." },
+        { "question": "Bunun yapay zeka tedarikçimizin verdiği ROI hesaplayıcısından farkı nedir?", "answer": "Tedarikçi hesaplayıcıları satış araçlarıdır: Tedarikçinin kendi kıyas faydalarını kullanır ve entegrasyonu, veri çalışmasını veya iç kadro maliyetini nadiren içerir. Bizim analizimiz tedarikçiden bağımsızdır, sizin referans değerleriniz üzerine kurulur ve tedarikçilerin anmaya hiç hevesli olmadığı maliyetleri de kapsar." },
+        { "question": "Analiz ROI'nin negatif olduğunu gösterirse ne olur?", "answer": "O zaman bunu üretimde öğrenmenin maliyetinden sizi kurtarmış demektir. Analiz, tabloyu hangi kaldıracın — maliyet, benimseme veya kapsam — tersine çevireceğini gösterir; böylece girişimi eşiği aşacak şekilde yeniden yapılandırabilir ya da bütçeyi bunu başaran bir senaryoya yönlendirebilirsiniz." }
+      ],
+      "technologies": [
+        { "icon": "calculator", "name": "Financial Models" },
+        { "icon": "excel", "name": "Excel" },
+        { "icon": "chart", "name": "Analytics" },
+        { "icon": "powerbi", "name": "Power BI" },
+        { "icon": "python", "name": "Python" },
+        { "icon": "tableau", "name": "Tableau" },
+        { "icon": "googlesheets", "name": "Google Sheets" }
+      ]
+    }
+  },
+  "de": {
+    "name": "KI-ROI-Analyse",
+    "shortDescription": "Hinterlegen Sie Ihre KI-Ambitionen mit echten Zahlen. Wir modellieren die vollen Kosten von KI-Initiativen — Aufbau, Betrieb und Risiko — gegen quantifizierte Nutzen, damit jede Investitionsentscheidung auf Evidenz statt auf Hype beruht.",
+    "fullDescription": "KI-Budgets werden mit Optimismus bewilligt und mit Rechnungen gestrichen. Unsere KI-ROI-Analyse ersetzt beides durch Zahlen: Wir modellieren die vollen Kosten einer Initiative — Datenaufbereitung, Entwicklung, Infrastruktur, Inferenz im Produktionsmaßstab, Retraining und das Team für den Betrieb — und stellen sie Nutzen gegenüber, die aus Ihren eigenen Baselines quantifiziert werden, nicht aus Anbieter-Benchmarks. Die Sensitivitätsanalyse zeigt, wie der Business Case kippt, wenn sich Adoption, Genauigkeit oder Nutzungsvolumen verschieben; Amortisationszeit, NPV und Break-even machen konkurrierende Optionen vergleichbar. Ein typisches Engagement dauert zwei bis vier Wochen pro Initiative und liefert ein funktionierendes Finanzmodell, einen risikoadjustierten Business Case und ein Executive Deck — damit die Führung jeden Use Case mit Zuversicht finanzieren, verschieben oder stoppen kann.",
+    "features": [
+      "Total-Cost-of-Ownership-Modellierung",
+      "Nutzenquantifizierung aus Ihren eigenen Baselines",
+      "Sensitivitäts- & Szenarioanalyse",
+      "Amortisations-, NPV- & Break-even-Berechnung",
+      "Risikoadjustierter Business Case",
+      "Build-vs-Buy-Kostenvergleich",
+      "Inferenz- & Retraining-Kostenprognosen",
+      "Entscheidungsreifes Executive Deck"
+    ],
+    "benefits": [
+      "Investitionsentscheidungen mit belastbaren Zahlen",
+      "Versteckte KI-Betriebskosten werden sichtbar, bevor sie wehtun",
+      "Ein Business Case, den Finanzabteilung und Vorstand freigeben können",
+      "Klare Go/No-Go-Schwellen für jeden Use Case",
+      "Stakeholder einig darüber, woran Erfolg gemessen wird",
+      "Ein wiederverwendbares ROI-Modell für künftige KI-Initiativen"
+    ],
+    "metaTitle": "KI-ROI-Analyse & Business Cases | PakSoft",
+    "metaDescription": "Modellieren Sie Kosten, Nutzen und Risiken von KI, bevor Sie investieren. Belastbarer Business Case mit Sensitivitätsanalyse — jetzt kostenlose Beratung buchen.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Scoping & Use-Case-Definition", "description": "Wir definieren, welche KI-Initiativen die Analyse abdeckt und welche Entscheidung sie stützen muss — finanzieren, verschieben oder stoppen. Gemeinsam mit Ihren Stakeholdern legen wir die Nutzenhypothesen, die zugehörigen Baselines und den Zeithorizont des Business Case fest." },
+        { "step": 2, "title": "Kostenmodellierung", "description": "Wir bauen ein Total-Cost-of-Ownership-Modell über Datenaufbereitung, Entwicklung, Lizenzen, Infrastruktur, Inferenz bei Produktionsvolumen, Retraining-Zyklen und das Betriebsteam. Build- und Buy-Alternativen werden nebeneinander kalkuliert, damit der Vergleich ehrlich bleibt." },
+        { "step": 3, "title": "Nutzenquantifizierung", "description": "Jeder behauptete Nutzen — eingesparte Stunden, Conversion-Steigerung, weniger Fehler, vermiedene Abwanderung — wird an eine messbare Baseline aus Ihren eigenen Daten gebunden. Wo noch keine Baseline existiert, definieren wir, wie sie etabliert wird, bevor Geld gebunden wird." },
+        { "step": 4, "title": "Risiko- & Sensitivitätsanalyse", "description": "Wir testen den Case gegen die Variablen, die ihn wirklich bewegen: Adoptionsraten, Modellgenauigkeit, Nutzungsvolumen sowie Token- oder Compute-Preise. Das Ergebnis ist eine Bandbreite mit explizitem Best-, Erwartungs- und Worst-Case statt einer einzigen verführerischen Zahl." },
+        { "step": 5, "title": "Business-Case-Erstellung", "description": "Kosten, Nutzen und Risiken werden je Use Case zu Amortisationszeit, NPV und Break-even konsolidiert. Die Initiativen werden gerankt, sodass die Führung nicht nur sieht, ob sich jede einzelne rechnet, sondern auch in welcher Reihenfolge sie finanziert werden sollten." },
+        { "step": 6, "title": "Executive Readout & Entscheidungsunterstützung", "description": "Wir präsentieren die Ergebnisse in einer entscheidungsorientierten Session und übergeben das Finanzmodell — nicht nur ein PDF. Ihr Team behält ein bearbeitbares Arbeitsdokument, das es bei veränderten Annahmen aktualisieren kann; aus der Einmalanalyse wird ein wiederverwendbares Investitionswerkzeug." }
+      ],
+      "faq": [
+        { "question": "Wie lange dauert eine KI-ROI-Analyse?", "answer": "Ein gut umrissener einzelner Use Case dauert typischerweise zwei bis drei Wochen; ein Portfolio aus drei bis fünf Initiativen vier bis sechs. Die größte Variable ist die Datenverfügbarkeit — existieren bereits Baselines für die behaupteten Nutzen, geht die Analyse deutlich schneller." },
+        { "question": "Was genau erhalten wir am Ende?", "answer": "Sie erhalten ein funktionierendes Finanzmodell über Kosten, Nutzen und Szenarien; einen risikoadjustierten Business Case mit Amortisation, NPV und Break-even je Initiative; und ein Executive Deck für die Finanzierungsentscheidung. Das Modell wird als bearbeitbares Arbeitsdokument übergeben, nicht als statischer Bericht." },
+        { "question": "Wie quantifizieren Sie weiche Nutzen wie Produktivität oder Kundenzufriedenheit?", "answer": "Wir übersetzen sie in messbare Proxys aus Ihren eigenen Daten — umverteilte Stunden, Ticket-Lösungszeiten, Wiederkaufraten — und legen die Umrechnungsannahmen offen. Nutzen, die sich an keine messbare Baseline binden lassen, werden als unquantifiziert markiert statt stillschweigend in den Case hineingerechnet." },
+        { "question": "Welche KI-Kosten unterschätzen Organisationen am häufigsten?", "answer": "Datenaufbereitung, Inferenz bei Produktionsvolumen und Retraining sind die üblichen blinden Flecken — Piloten sind billig, Produktion ist es nicht. Wir modellieren auch die menschliche Seite: Prompt- und Modellpflege, Monitoring und die Fachexperten, deren Zeit das System beanspruchen wird." },
+        { "question": "Wie genau kann eine ROI-Prognose für KI wirklich sein?", "answer": "Keine Prognose übersteht den Kontakt mit der Produktion unverändert — deshalb liefern wir Bandbreiten mit expliziten Annahmen statt einer präzise wirkenden Einzelzahl. Die Sensitivitätsanalyse zeigt, welche Annahmen das Ergebnis dominieren, sodass Sie genau wissen, was Sie in einem Pilot validieren sollten, bevor Sie die Ausgaben skalieren." },
+        { "question": "Können Sie auch KI-Systeme analysieren, die wir bereits betreiben?", "answer": "Ja — Post-Investment-Reviews sind ein häufiges Engagement. Wir vergleichen tatsächliche Kosten und realisierte Nutzen mit den ursprünglichen Annahmen, identifizieren, wo Wert verloren geht, und empfehlen, ob das System skaliert, optimiert oder abgeschaltet werden sollte." },
+        { "question": "Worin unterscheidet sich das vom ROI-Rechner unseres KI-Anbieters?", "answer": "Anbieter-Rechner sind Vertriebswerkzeuge: Sie verwenden die Benchmark-Nutzen des Anbieters und enthalten selten Integration, Datenarbeit oder interne Personalkosten. Unsere Analyse ist herstellerneutral, baut auf Ihren Baselines auf und umfasst die Kosten, die Anbieter ungern erwähnen." },
+        { "question": "Was passiert, wenn die Analyse einen negativen ROI zeigt?", "answer": "Dann hat sie Ihnen gerade die Kosten erspart, das in der Produktion herauszufinden. Die Analyse zeigt, welcher Hebel — Kosten, Adoption oder Scope — den Case drehen würde; Sie können die Initiative entsprechend umbauen oder das Budget in einen Use Case lenken, der die Schwelle erreicht." }
+      ],
+      "technologies": [
+        { "icon": "calculator", "name": "Financial Models" },
+        { "icon": "excel", "name": "Excel" },
+        { "icon": "chart", "name": "Analytics" },
+        { "icon": "powerbi", "name": "Power BI" },
+        { "icon": "python", "name": "Python" },
+        { "icon": "tableau", "name": "Tableau" },
+        { "icon": "googlesheets", "name": "Google Sheets" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "AI ROI تجزیہ",
+    "shortDescription": "اپنے AI عزائم کو حقیقی اعداد پر کھڑا کریں۔ ہم AI منصوبوں کی مکمل لاگت — تعمیر، آپریشن اور رسک — کو ناپے گئے فوائد کے مقابل رکھ کر ماڈل کرتے ہیں، تاکہ ہر سرمایہ کاری کا فیصلہ شور کے بجائے شواہد پر ہو۔",
+    "fullDescription": "AI بجٹ امید پر منظور ہوتے ہیں اور بلوں پر منسوخ۔ ہمارا AI ROI تجزیہ دونوں کی جگہ اعداد رکھتا ہے: ہم کسی منصوبے کی پوری لاگت — ڈیٹا کی تیاری، ڈیولپمنٹ، انفراسٹرکچر، پروڈکشن پیمانے پر inference، دوبارہ تربیت اور سسٹم چلانے والی ٹیم — کو ماڈل کرتے ہیں اور اسے وینڈر کے دعووں کے بجائے آپ کے اپنے بنیادی اعداد سے ناپے گئے فوائد کے مقابل رکھتے ہیں۔ حساسیت کا تجزیہ دکھاتا ہے کہ اپنانے کی شرح، درستگی یا استعمال کا حجم بدلنے پر نتیجہ کیسے بدلتا ہے؛ payback، NPV اور بریک ایون پوائنٹس مختلف آپشنز کا موازنہ ممکن بناتے ہیں۔ عام طور پر یہ کام فی منصوبہ دو سے چار ہفتے لیتا ہے اور ایک قابلِ استعمال مالیاتی ماڈل، رسک کے لحاظ سے ایڈجسٹ شدہ بزنس کیس اور انتظامی پریزنٹیشن فراہم کرتا ہے — تاکہ قیادت ہر استعمال کو اعتماد سے فنڈ کرے، مؤخر کرے یا روک دے۔",
+    "features": [
+      "کلِ ملکیتی لاگت (TCO) کی ماڈلنگ",
+      "آپ کے اپنے بنیادی اعداد سے فوائد کی پیمائش",
+      "حساسیت اور منظرنامے کا تجزیہ",
+      "Payback، NPV اور بریک ایون کا حساب",
+      "رسک کے لحاظ سے ایڈجسٹ شدہ بزنس کیس",
+      "خود بنانے بمقابلہ خریدنے کا لاگتی موازنہ",
+      "Inference اور دوبارہ تربیت کی لاگت کے تخمینے",
+      "قیادت کے لیے تیار سرمایہ کاری پریزنٹیشن"
+    ],
+    "benefits": [
+      "قابلِ دفاع اعداد پر مبنی سرمایہ کاری کے فیصلے",
+      "AI کی پوشیدہ آپریشنل لاگتیں نقصان پہنچانے سے پہلے سامنے آ جاتی ہیں",
+      "ایسا بزنس کیس جسے فنانس اور بورڈ منظور کر سکیں",
+      "ہر استعمال کے لیے واضح آگے بڑھنے یا رکنے کی حدیں",
+      "کامیابی کس پیمانے پر ناپی جائے گی، اس پر اسٹیک ہولڈرز کی ہم آہنگی",
+      "آئندہ AI منصوبوں کے لیے دوبارہ قابلِ استعمال ROI ماڈل"
+    ],
+    "metaTitle": "AI ROI تجزیہ اور بزنس کیس | PakSoft",
+    "metaDescription": "سرمایہ کاری سے پہلے AI کی حقیقی لاگت، فوائد اور خطرات ماڈل کریں۔ payback اور حساسیت کے تجزیے کے ساتھ قابلِ دفاع بزنس کیس کے لیے مفت مشاورت بک کریں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "دائرہ کار اور استعمال کی تعریف", "description": "ہم طے کرتے ہیں کہ تجزیہ کن AI منصوبوں کا احاطہ کرے گا اور کس فیصلے کو سہارا دے گا — فنڈ کریں، مؤخر کریں یا روکیں۔ آپ کے اسٹیک ہولڈرز کے ساتھ مل کر فوائد کے مفروضے، انہیں ناپنے کے بنیادی اعداد اور بزنس کیس کا دورانیہ طے کیا جاتا ہے۔" },
+        { "step": 2, "title": "لاگت کی ماڈلنگ", "description": "ہم ایک مکمل TCO ماڈل بناتے ہیں جس میں ڈیٹا کی تیاری، ڈیولپمنٹ، لائسنس، انفراسٹرکچر، پروڈکشن حجم پر inference، دوبارہ تربیت کے سائیکل اور آپریشنل ٹیم شامل ہیں۔ خود بنانے اور خریدنے کے متبادل ساتھ ساتھ لاگت زدہ کیے جاتے ہیں تاکہ موازنہ دیانت دارانہ رہے۔" },
+        { "step": 3, "title": "فوائد کی پیمائش", "description": "ہر دعویٰ شدہ فائدہ — بچائے گئے گھنٹے، کنورژن میں اضافہ، غلطیوں میں کمی، روکے گئے کسٹمر نقصان — آپ کے اپنے ڈیٹا سے آنے والے قابلِ پیمائش بنیادی عدد سے جوڑا جاتا ہے۔ جہاں ابھی کوئی بنیادی عدد موجود نہ ہو، وہاں ہم رقم لگانے سے پہلے اسے قائم کرنے کا طریقہ متعین کرتے ہیں۔" },
+        { "step": 4, "title": "رسک اور حساسیت کا تجزیہ", "description": "ہم بزنس کیس کو ان متغیرات پر پرکھتے ہیں جو اسے واقعی ہلاتے ہیں: اپنانے کی شرح، ماڈل کی درستگی، استعمال کا حجم، اور token یا کمپیوٹ کی قیمتیں۔ نتیجہ ایک پُرکشش واحد عدد کے بجائے بہترین، متوقع اور بدترین صورتوں پر مشتمل واضح دائرہ ہوتا ہے۔" },
+        { "step": 5, "title": "بزنس کیس کی تیاری", "description": "لاگتیں، فوائد اور خطرات فی استعمال payback، NPV اور بریک ایون کے حساب میں یکجا کیے جاتے ہیں۔ منصوبوں کی درجہ بندی کی جاتی ہے تاکہ قیادت صرف یہ نہ دیکھے کہ ہر منصوبہ منافع بخش ہے یا نہیں، بلکہ یہ بھی کہ انہیں کس ترتیب سے فنڈ کیا جائے۔" },
+        { "step": 6, "title": "انتظامی پریزنٹیشن اور فیصلے کی معاونت", "description": "ہم نتائج فیصلہ مرکوز اجلاس میں پیش کرتے ہیں اور مالیاتی ماڈل محض PDF نہیں بلکہ قابلِ ترمیم فائل کی صورت میں حوالے کرتے ہیں۔ آپ کی ٹیم کے پاس ایسی ورک بک رہتی ہے جسے مفروضے بدلنے پر اپڈیٹ کیا جا سکے — یوں ایک بار کا تجزیہ بار بار کام آنے والے سرمایہ کاری ٹول میں بدل جاتا ہے۔" }
+      ],
+      "faq": [
+        { "question": "AI ROI تجزیے میں کتنا وقت لگتا ہے؟", "answer": "ایک اچھی طرح متعین استعمال کا تجزیہ عموماً دو سے تین ہفتے لیتا ہے؛ تین سے پانچ منصوبوں کا پورٹ فولیو چار سے چھ ہفتے۔ سب سے بڑا متغیر ڈیٹا کی دستیابی ہے — اگر دعویٰ شدہ فوائد کے بنیادی اعداد پہلے سے موجود ہوں تو تجزیہ خاصا تیز ہو جاتا ہے۔" },
+        { "question": "آخر میں ہمیں بالکل کیا ملتا ہے؟", "answer": "آپ کو لاگت، فوائد اور منظرناموں پر مشتمل قابلِ استعمال مالیاتی ماڈل؛ فی منصوبہ payback، NPV اور بریک ایون والا رسک ایڈجسٹڈ بزنس کیس؛ اور فنڈنگ کے فیصلے کے لیے بنی انتظامی پریزنٹیشن ملتی ہے۔ ماڈل جامد رپورٹ نہیں بلکہ قابلِ ترمیم ورک بک کی شکل میں دیا جاتا ہے۔" },
+        { "question": "آپ پیداواریت یا کسٹمر اطمینان جیسے نرم فوائد کیسے ناپتے ہیں؟", "answer": "ہم انہیں آپ کے اپنے ڈیٹا سے جُڑے قابلِ پیمائش اشاروں میں بدلتے ہیں — دوبارہ مختص کیے گئے گھنٹے، ٹکٹ حل کرنے کے اوقات، دوبارہ خریداری کی شرح — اور تبدیلی کے مفروضے کھل کر بیان کرتے ہیں۔ جو فوائد کسی قابلِ پیمائش بنیاد سے نہ جوڑے جا سکیں، انہیں خاموشی سے بڑھا چڑھا کر شامل کرنے کے بجائے غیر ناپا ہوا قرار دیا جاتا ہے۔" },
+        { "question": "ادارے کن AI لاگتوں کو سب سے زیادہ کم سمجھتے ہیں؟", "answer": "ڈیٹا کی تیاری، پروڈکشن حجم پر inference اور دوبارہ تربیت عام اندھے گوشے ہیں — پائلٹ سستے ہوتے ہیں، پروڈکشن نہیں۔ ہم انسانی پہلو بھی ماڈل کرتے ہیں: prompt اور ماڈل کی دیکھ بھال، مانیٹرنگ، اور وہ ماہرین جن کا وقت سسٹم استعمال کرے گا۔" },
+        { "question": "AI کے لیے ROI کا تخمینہ واقعی کتنا درست ہو سکتا ہے؟", "answer": "کوئی تخمینہ پروڈکشن سے ٹکرا کر جوں کا توں نہیں رہتا؛ اسی لیے ہم درست نظر آنے والے ایک عدد کے بجائے واضح مفروضوں والے دائرے دیتے ہیں۔ حساسیت کا تجزیہ بتاتا ہے کہ نتیجے پر کون سے مفروضے غالب ہیں، تاکہ خرچ بڑھانے سے پہلے آپ جان لیں کہ پائلٹ میں بالکل کیا جانچنا ہے۔" },
+        { "question": "کیا آپ ہمارے پہلے سے چلتے AI سسٹمز کا تجزیہ کر سکتے ہیں؟", "answer": "جی ہاں — سرمایہ کاری کے بعد کے جائزے ہمارا معمول کا کام ہیں۔ ہم اصل لاگتوں اور حاصل شدہ فوائد کا ابتدائی مفروضوں سے موازنہ کرتے ہیں، بتاتے ہیں کہ قدر کہاں ضائع ہو رہی ہے، اور سفارش کرتے ہیں کہ سسٹم کو بڑھایا جائے، بہتر کیا جائے یا بند کر دیا جائے۔" },
+        { "question": "یہ ہمارے AI وینڈر کے دیے ہوئے ROI کیلکولیٹر سے کیسے مختلف ہے؟", "answer": "وینڈر کیلکولیٹر فروخت کے اوزار ہوتے ہیں: وہ وینڈر کے اپنے بینچ مارک فوائد استعمال کرتے ہیں اور انٹیگریشن، ڈیٹا کے کام یا اندرونی عملے کی لاگت شاذ ہی شامل کرتے ہیں۔ ہمارا تجزیہ وینڈر سے غیر جانب دار ہے، آپ کے بنیادی اعداد پر کھڑا ہے اور ان لاگتوں کو بھی گنتا ہے جنہیں بتانے میں وینڈرز کی کوئی دلچسپی نہیں۔" },
+        { "question": "اگر تجزیہ بتائے کہ ROI منفی ہے تو کیا ہوگا؟", "answer": "تب اس نے آپ کو یہ بات پروڈکشن میں جا کر جاننے کی قیمت سے بچا لیا۔ تجزیہ دکھاتا ہے کہ کون سا عنصر — لاگت، اپنانا یا دائرہ کار — نتیجہ پلٹ سکتا ہے؛ آپ منصوبے کی ساخت بدل کر اسے حد سے اوپر لا سکتے ہیں یا بجٹ ایسے استعمال کی طرف موڑ سکتے ہیں جو یہ حد عبور کرتا ہو۔" }
+      ],
+      "technologies": [
+        { "icon": "calculator", "name": "Financial Models" },
+        { "icon": "excel", "name": "Excel" },
+        { "icon": "chart", "name": "Analytics" },
+        { "icon": "powerbi", "name": "Power BI" },
+        { "icon": "python", "name": "Python" },
+        { "icon": "tableau", "name": "Tableau" },
+        { "icon": "googlesheets", "name": "Google Sheets" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تحليل عائد الاستثمار في الذكاء الاصطناعي",
+    "shortDescription": "ضعوا أرقاماً حقيقية خلف طموحاتكم في الذكاء الاصطناعي. نمذج التكلفة الكاملة للمبادرات — البناء والتشغيل والمخاطر — مقابل منافع مقيسة، لتستند كل قرارات الاستثمار إلى الأدلة لا إلى الضجيج.",
+    "fullDescription": "تُعتمد ميزانيات الذكاء الاصطناعي بالتفاؤل وتُلغى بالفواتير. يستبدل تحليلنا لعائد الاستثمار كليهما بالأرقام: نمذج التكلفة الكاملة للمبادرة — تجهيز البيانات، والتطوير، والبنية التحتية، والاستدلال على نطاق الإنتاج، وإعادة التدريب، والفريق اللازم للتشغيل — ونضعها مقابل منافع مقيسة من خطوط الأساس الخاصة بكم، لا من معايير المورّدين. يبيّن تحليل الحساسية كيف تتغير الجدوى عندما تتحرك نسب التبنّي أو الدقة أو أحجام الاستخدام، بينما تجعل فترة الاسترداد وصافي القيمة الحالية ونقطة التعادل الخيارات المتنافسة قابلة للمقارنة. يستغرق العمل عادةً من أسبوعين إلى أربعة لكل مبادرة، ويسلّم نموذجاً مالياً عاملاً، ودراسة جدوى معدّلة بالمخاطر، وعرضاً تنفيذياً — لتموّل القيادة كل حالة استخدام أو تؤجلها أو توقفها بثقة.",
+    "features": [
+      "نمذجة التكلفة الإجمالية للملكية",
+      "قياس المنافع من خطوط الأساس الخاصة بكم",
+      "تحليل الحساسية والسيناريوهات",
+      "حساب فترة الاسترداد وصافي القيمة الحالية ونقطة التعادل",
+      "دراسة جدوى معدّلة بالمخاطر",
+      "مقارنة تكلفة البناء مقابل الشراء",
+      "توقعات تكاليف الاستدلال وإعادة التدريب",
+      "عرض استثماري جاهز للإدارة التنفيذية"
+    ],
+    "benefits": [
+      "قرارات استثمار مدعومة بأرقام يمكن الدفاع عنها",
+      "كشف تكاليف التشغيل الخفية للذكاء الاصطناعي قبل أن تضرّ",
+      "دراسة جدوى يستطيع قسم المالية ومجلس الإدارة اعتمادها",
+      "عتبات واضحة للمضي أو التوقف لكل حالة استخدام",
+      "توافق أصحاب المصلحة على كيفية قياس النجاح",
+      "نموذج عائد استثمار قابل لإعادة الاستخدام في مبادرات قادمة"
+    ],
+    "metaTitle": "تحليل عائد استثمار الذكاء الاصطناعي | PakSoft",
+    "metaDescription": "نمذجوا التكاليف والمنافع والمخاطر الحقيقية للذكاء الاصطناعي قبل الاستثمار. دراسة جدوى مع تحليل الاسترداد والحساسية — احجزوا استشارة مجانية اليوم.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "تحديد النطاق وتعريف حالات الاستخدام", "description": "نحدد مبادرات الذكاء الاصطناعي التي يغطيها التحليل والقرار الذي يجب أن يدعمه — تمويل أو تأجيل أو إيقاف. ونتفق مع أصحاب المصلحة على فرضيات المنافع وخطوط الأساس التي ستُقاس عليها والأفق الزمني للدراسة." },
+        { "step": 2, "title": "نمذجة التكاليف", "description": "نبني نموذجاً للتكلفة الإجمالية للملكية يغطي تجهيز البيانات والتطوير والتراخيص والبنية التحتية والاستدلال بأحجام الإنتاج ودورات إعادة التدريب وفريق التشغيل. وتُحتسب بدائل البناء والشراء جنباً إلى جنب لتبقى المقارنة نزيهة." },
+        { "step": 3, "title": "قياس المنافع", "description": "تُربط كل منفعة مزعومة — ساعات موفّرة، أو ارتفاع في التحويل، أو انخفاض في الأخطاء، أو تسرّب عملاء متجنَّب — بخط أساس قابل للقياس من بياناتكم. وحيث لا يوجد خط أساس بعد، نحدد كيفية إنشائه قبل الالتزام بأي إنفاق." },
+        { "step": 4, "title": "تحليل المخاطر والحساسية", "description": "نختبر الجدوى ضد المتغيرات التي تحركها فعلاً: نسب التبنّي، ودقة النماذج، وأحجام الاستخدام، وأسعار الرموز أو الحوسبة. والناتج نطاق نتائج بحالات فضلى ومتوقعة وأسوأ معلنة بوضوح، لا رقم واحد مغرٍ." },
+        { "step": 5, "title": "تجميع دراسة الجدوى", "description": "تُدمج التكاليف والمنافع والمخاطر في حسابات فترة الاسترداد وصافي القيمة الحالية ونقطة التعادل لكل حالة استخدام. وتُرتَّب المبادرات بحيث لا ترى القيادة فقط ما إذا كانت كل واحدة مجدية، بل أيضاً بأي ترتيب ينبغي تمويلها." },
+        { "step": 6, "title": "العرض التنفيذي ودعم القرار", "description": "نعرض النتائج في جلسة موجهة للقرار ونسلّم النموذج المالي نفسه، لا مجرد ملف PDF. يحتفظ فريقكم بملف عمل قابل للتعديل يحدّثه كلما تغيّرت الافتراضات — فيتحول التحليل من عمل لمرة واحدة إلى أداة استثمار قابلة لإعادة الاستخدام." }
+      ],
+      "faq": [
+        { "question": "كم يستغرق تحليل عائد الاستثمار في الذكاء الاصطناعي؟", "answer": "تستغرق حالة الاستخدام الواحدة جيدة التحديد عادةً من أسبوعين إلى ثلاثة؛ بينما تمتد محفظة من ثلاث إلى خمس مبادرات من أربعة إلى ستة أسابيع. والمتغير الأكبر هو توافر البيانات — فإن وُجدت خطوط أساس للمنافع المزعومة مسبقاً، تقدّم التحليل أسرع بكثير." },
+        { "question": "ماذا نستلم بالضبط في النهاية؟", "answer": "تحصلون على نموذج مالي عامل يغطي التكاليف والمنافع والسيناريوهات؛ ودراسة جدوى معدّلة بالمخاطر مع فترة الاسترداد وصافي القيمة الحالية ونقطة التعادل لكل مبادرة؛ وعرض تنفيذي مُعدّ لقرار التمويل. ويُسلَّم النموذج كملف عمل قابل للتعديل، لا كتقرير جامد." },
+        { "question": "كيف تقيسون المنافع غير الملموسة مثل الإنتاجية أو رضا العملاء؟", "answer": "نترجمها إلى مؤشرات قابلة للقياس مرتبطة ببياناتكم — ساعات أُعيد توجيهها، وأزمنة حل التذاكر، ومعدلات تكرار الشراء — ونعلن افتراضات التحويل بشفافية. أما المنافع التي يتعذر ربطها بأي خط أساس قابل للقياس فتُوسم بأنها غير مقيسة بدل تضخيمها في الدراسة بصمت." },
+        { "question": "ما تكاليف الذكاء الاصطناعي التي تستهين بها المؤسسات أكثر؟", "answer": "تجهيز البيانات والاستدلال بأحجام الإنتاج وإعادة التدريب هي النقاط العمياء المعتادة — فالتجارب رخيصة، أما الإنتاج فلا. كما نمذج الجانب البشري: صيانة الموجهات والنماذج، والمراقبة، وخبراء المجال الذين سيستهلك النظام وقتهم." },
+        { "question": "ما مدى دقة توقعات عائد الاستثمار في الذكاء الاصطناعي فعلياً؟", "answer": "لا تنجو أي توقعات من الاحتكاك بالإنتاج دون تغيير، ولهذا نسلّم نطاقات بافتراضات معلنة بدل رقم واحد يبدو دقيقاً. ويبيّن تحليل الحساسية أي الافتراضات تهيمن على النتيجة، فتعرفون بالضبط ما يجب التحقق منه في تجربة أولية قبل توسيع الإنفاق." },
+        { "question": "هل يمكنكم تحليل أنظمة ذكاء اصطناعي نشغّلها بالفعل؟", "answer": "نعم — مراجعات ما بعد الاستثمار من أعمالنا المعتادة. نقارن التكاليف الفعلية والمنافع المتحققة بالافتراضات الأصلية، ونحدد مواضع تسرّب القيمة، ونوصي بتوسيع النظام أو تحسينه أو إيقافه." },
+        { "question": "ما الفرق بين هذا وحاسبة العائد التي قدّمها لنا مورّد الذكاء الاصطناعي؟", "answer": "حاسبات المورّدين أدوات بيع: تستخدم منافع المورّد المرجعية ونادراً ما تشمل التكامل أو أعمال البيانات أو تكلفة الكوادر الداخلية. أما تحليلنا فمحايد تجاه المورّدين، ويُبنى على خطوط الأساس الخاصة بكم، ويشمل التكاليف التي لا مصلحة للمورّدين في ذكرها." },
+        { "question": "ماذا يحدث إذا أظهر التحليل أن العائد سلبي؟", "answer": "عندها يكون قد وفّر عليكم كلفة اكتشاف ذلك في الإنتاج. يبيّن التحليل أي رافعة — التكلفة أو التبنّي أو النطاق — يمكن أن تقلب النتيجة، فتعيدون هيكلة المبادرة لتتجاوز العتبة أو توجهون الميزانية إلى حالة استخدام تتجاوزها فعلاً." }
+      ],
+      "technologies": [
+        { "icon": "calculator", "name": "Financial Models" },
+        { "icon": "excel", "name": "Excel" },
+        { "icon": "chart", "name": "Analytics" },
+        { "icon": "powerbi", "name": "Power BI" },
+        { "icon": "python", "name": "Python" },
+        { "icon": "tableau", "name": "Tableau" },
+        { "icon": "googlesheets", "name": "Google Sheets" }
+      ]
+    }
+  }
+}

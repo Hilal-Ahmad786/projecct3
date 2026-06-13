@@ -6,6 +6,19 @@
 
 import React from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
+import { useTranslations } from '@/hooks/useTranslations';
+
+// ── Localized scene labels ───────────────────────────────────────────
+// Scenes contain short UI words ("secured", "checkout"). They resolve
+// through the sceneLabels section of the locale files; the EN fallback
+// keeps scenes working if a key is ever missing.
+export function useSceneLabels() {
+  const { t } = useTranslations();
+  return (key: string, fallback: string): string => {
+    const v = t(`sceneLabels.${key}`);
+    return typeof v === 'string' && !v.includes('sceneLabels') ? v : fallback;
+  };
+}
 
 // ── Palette ──────────────────────────────────────────────────────────
 export const H = {

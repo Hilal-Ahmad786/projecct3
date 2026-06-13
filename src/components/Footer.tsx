@@ -54,6 +54,8 @@ const SERVICE_COLS = [
       { linkKey: 'computerVision',        label: 'Computer Vision',         href: '/services/computer-vision'         },
       { linkKey: 'pythonAutomation',      label: 'Python Automation',       href: '/services/python-automation'       },
       { linkKey: 'mlopsDeployment',       label: 'MLOps Deployment',        href: '/services/mlops-deployment'        },
+      { linkKey: 'conversationalAi', label: 'Conversational AI', href: '/services/conversational-ai' },
+      { linkKey: 'llmServices', label: 'LLM Services', href: '/services/llm-services' },
     ],
   },
   {
@@ -71,6 +73,8 @@ const SERVICE_COLS = [
       { linkKey: 'emailMarketing',        label: 'Email Marketing',         href: '/services/email-marketing'         },
       { linkKey: 'contentMarketing',      label: 'Content Marketing',       href: '/services/content-marketing'       },
       { linkKey: 'marketingAutomation',   label: 'Marketing Automation',    href: '/services/marketing-automation'    },
+      { linkKey: 'digitalMarketing', label: 'Digital Marketing', href: '/services/digital-marketing' },
+      { linkKey: 'marketplaceAds', label: 'Marketplace Ads', href: '/services/marketplace-ads' },
     ],
   },
   {
@@ -84,7 +88,7 @@ const SERVICE_COLS = [
       { linkKey: 'logoBrandIdentity',     label: 'Logo & Brand Identity',   href: '/services/logo-brand-identity'     },
       { linkKey: 'brandStrategy',         label: 'Brand Strategy',          href: '/services/brand-strategy'          },
       { linkKey: 'motionGraphics',        label: 'Motion Graphics',         href: '/services/motion-graphics'         },
-      { linkKey: '3dArVr',               label: '3D / AR / VR',            href: '/services/3d-ar-vr'                },
+      { linkKey: '3dArVr',               label: 'AR / VR Development',     href: '/services/ar-development'          },
       { linkKey: 'croAbTesting',          label: 'CRO & A/B Testing',       href: '/services/cro'                     },
     ],
   },
@@ -101,6 +105,11 @@ const SERVICE_COLS = [
       { linkKey: 'performanceOptimization',label:'Performance Optimization', href: '/services/performance-optimization'},
       { linkKey: 'managedServices',       label: 'Managed Services',        href: '/services/managed-services'        },
       { linkKey: 'techConsulting',        label: 'Tech Consulting',         href: '/services/technology-consulting'   },
+      { linkKey: 'digitalTransformation', label: 'Digital Transformation', href: '/services/digital-transformation' },
+      { linkKey: 'aiStrategy', label: 'AI Strategy', href: '/services/ai-strategy' },
+      { linkKey: 'growthStrategy', label: 'Growth Strategy', href: '/services/growth-strategy' },
+      { linkKey: 'startupServices', label: 'Startup Services', href: '/services/startup-services' },
+      { linkKey: 'staffAugmentation', label: 'Staff Augmentation', href: '/services/staff-augmentation' },
     ],
   },
 ];
@@ -319,7 +328,9 @@ export default function Footer() {
                   </LocalizedLink>
                   <ul className="space-y-2.5">
                     {links.map(({ linkKey, label, href: lhref }) => {
-                      const translatedLabel = (t(`serviceLinks.${linkKey}`) as string) || label;
+                      const raw = t(`serviceLinks.${linkKey}`) as string;
+                      // translator returns the key path when missing — fall back to the hardcoded label
+                      const translatedLabel = raw && !raw.includes('serviceLinks.') ? raw : label;
                       return (
                         <li key={lhref}>
                           <LocalizedLink

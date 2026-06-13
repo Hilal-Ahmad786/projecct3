@@ -2436,6 +2436,198 @@
           "تواصل يومي",
           "قابلية التوسع"
         ]
+      },
+      "accessibilityCompliance": {
+        "title": "امتثال إمكانية الوصول",
+        "description": "خدمات امتثال إمكانية الوصول."
+      },
+      "affiliateMarketingSystems": {
+        "title": "أنظمة التسويق بالعمولة",
+        "description": "أطلقوا قناة شركاء تتحكمون بها بالكامل. نبني منصات تسويق بالعمولة مخصصة بتتبّع موثوق من جهة الخادم، وهياكل عمولات مرنة، ومدفوعات…"
+      },
+      "aiChatbotIntegration": {
+        "title": "تكامل روبوتات المحادثة بالذكاء الاصطناعي",
+        "description": "أضيفوا إلى موقعكم أو تطبيقكم مساعداً يعمل بنماذج GPT أو Claude ويجيب من قاعدة معرفتكم الخاصة — دقيق ومتوافق مع علامتكم، مع تحويل…"
+      },
+      "aiImageGeneration": {
+        "title": "توليد الصور بالذكاء الاصطناعي",
+        "description": "أنشئ حلول توليد صور AI مخصصة باستخدام DALL-E و Stable Diffusion و Midjourney APIs."
+      },
+      "apiRateLimitingThrottling": {
+        "title": "تحديد معدل API",
+        "description": "خدمات تحديد معدل API."
+      },
+      "apiSecurityAuthentication": {
+        "title": "أمان API والمصادقة",
+        "description": "قم بتنفيذ أمان API قوي مع OAuth 2.0 ورموز JWT ومفاتيح API وتحديد المعدل."
+      },
+      "arDevelopment": {
+        "title": "تطوير AR",
+        "description": "أنشئ تطبيقات الواقع المعزز للجوال والنظارات الذكية وحالات الاستخدام المؤسسية."
+      },
+      "blockchainDevelopment": {
+        "title": "تطوير البلوكتشين",
+        "description": "طور عقوداً ذكية آمنة وتطبيقات لامركزية وتكاملات بلوكتشين على Ethereum و Solana والمزيد."
+      },
+      "bookingReservationSystems": {
+        "title": "أنظمة الحجز",
+        "description": "خدمات أنظمة الحجز."
+      },
+      "businessIntelligenceSolutions": {
+        "title": "حلول ذكاء الأعمال",
+        "description": "أنشئ منصات BI مع لوحات معلومات تفاعلية وتحليلات الخدمة الذاتية."
+      },
+      "cloudCostOptimization": {
+        "title": "تحسين تكلفة السحابة",
+        "description": "خدمات تحسين تكلفة السحابة."
+      },
+      "codeReviewRefactoring": {
+        "title": "مراجعة الكود وإعادة الهيكلة",
+        "description": "خدمات مراجعة الكود وإعادة الهيكلة."
+      },
+      "computerVisionSolutions": {
+        "title": "حلول الرؤية الحاسوبية",
+        "description": "نفذ التعرف على الصور واكتشاف الكائنات و OCR وتحليل الفيديو."
+      },
+      "conversionRateOptimization": {
+        "title": "تحسين معدل التحويل",
+        "description": "قم بزيادة التحويلات من خلال اختبار A/B المدفوع بالبيانات وتحسينات تجربة المستخدم وتحسين صفحات الهبوط."
+      },
+      "cybersecurityAuditing": {
+        "title": "تدقيق الأمن السيبراني",
+        "description": "تقييمات أمنية شاملة لتحديد نقاط الضعف قبل المهاجمين."
+      },
+      "databaseDesignOptimization": {
+        "title": "تصميم وتحسين قواعد البيانات",
+        "description": "صمم مخططات قواعد بيانات فعالة وحسن أداء الاستعلام للتطبيقات القابلة للتطوير والسريعة."
+      },
+      "desktopApplicationDevelopment": {
+        "title": "تطوير تطبيقات سطح المكتب",
+        "description": "أنشئ تطبيقات سطح مكتب عبر المنصات باستخدام Electron أو Tauri."
+      },
+      "disasterRecoveryPlanning": {
+        "title": "تخطيط التعافي من الكوارث",
+        "description": "خدمات تخطيط التعافي من الكوارث."
+      },
+      "emailMarketingAutomation": {
+        "title": "أتمتة التسويق عبر البريد الإلكتروني",
+        "description": "أنشئ حملات بريد إلكتروني آلية تغذي العملاء المحتملين وتحتفظ بالعملاء."
+      },
+      "etlPipelines": {
+        "title": "خطوط أنابيب ETL",
+        "description": "صمم ونفذ خطوط أنابيب ETL/ELT التي تحافظ على مستودع البيانات محدثاً وموثوقاً."
+      },
+      "eventDrivenArchitecture": {
+        "title": "البنية الموجهة بالأحداث",
+        "description": "خدمات البنية الموجهة بالأحداث."
+      },
+      "fraudDetectionSystems": {
+        "title": "أنظمة كشف الاحتيال",
+        "description": "خدمات أنظمة كشف الاحتيال."
+      },
+      "graphqlApiDevelopment": {
+        "title": "تطوير GraphQL API",
+        "description": "أنشئ واجهات برمجة تطبيقات مرنة وفعالة باستخدام GraphQL للتطبيقات الحديثة."
+      },
+      "headlessCommerce": {
+        "title": "التجارة بدون واجهة",
+        "description": "خدمات التجارة بدون واجهة."
+      },
+      "identityAccessManagement": {
+        "title": "إدارة الهوية والوصول",
+        "description": "أنشئ حلول IAM قوية مع SSO و MFA و RBAC واتحاد الهوية."
+      },
+      "inventoryManagementSystems": {
+        "title": "أنظمة إدارة المخزون",
+        "description": "خدمات أنظمة إدارة المخزون."
+      },
+      "iotDevelopment": {
+        "title": "تطوير إنترنت الأشياء",
+        "description": "أنشئ منتجات ذكية متصلة باستخدام أجهزة استشعار IoT والمنصات السحابية."
+      },
+      "kubernetesOrchestration": {
+        "title": "تنسيق Kubernetes",
+        "description": "قم بتنسيق الحاويات باستخدام Kubernetes لعمليات نشر الخدمات المصغرة القابلة للتطوير والمرنة."
+      },
+      "learningManagementSystems": {
+        "title": "أنظمة إدارة التعلم",
+        "description": "خدمات أنظمة إدارة التعلم."
+      },
+      "legacySystemModernization": {
+        "title": "تحديث الأنظمة القديمة",
+        "description": "حدّث التطبيقات القديمة ببنية محدثة وترحيل سحابي."
+      },
+      "microservicesArchitecture": {
+        "title": "بنية الخدمات المصغرة",
+        "description": "قسّم المونوليث إلى خدمات قابلة للنشر بشكل مستقل للتوسع والمرونة."
+      },
+      "mlopsModelDeployment": {
+        "title": "MLOps ونشر النماذج",
+        "description": "انشر وأدر نماذج ML في الإنتاج مع المراقبة والأتمتة."
+      },
+      "multiTenantSaasArchitecture": {
+        "title": "بنية SaaS متعددة المستأجرين",
+        "description": "خدمات بنية SaaS متعددة المستأجرين."
+      },
+      "naturalLanguageProcessing": {
+        "title": "معالجة اللغة الطبيعية",
+        "description": "أنشئ حلول NLP لتحليل النص واكتشاف المشاعر وروبوتات الدردشة وتوليد اللغة."
+      },
+      "nftMarketplaceDevelopment": {
+        "title": "تطوير سوق NFT",
+        "description": "أنشئ أسواق NFT مخصصة للفن والمقتنيات والألعاب."
+      },
+      "paymentGatewayIntegration": {
+        "title": "تكامل بوابة الدفع",
+        "description": "دمج معالجة الدفع الآمنة مع Stripe و PayPal ومقدمي الخدمات الإقليميين."
+      },
+      "performanceTestingOptimization": {
+        "title": "اختبار الأداء والتحسين",
+        "description": "خدمات اختبار الأداء والتحسين."
+      },
+      "realTimeApplications": {
+        "title": "تطبيقات الوقت الحقيقي",
+        "description": "أنشئ تطبيقات بتحديثات فورية باستخدام WebSockets والبنية التحتية للوقت الحقيقي."
+      },
+      "serverlessArchitecture": {
+        "title": "البنية بدون خادم",
+        "description": "قم ببناء تطبيقات قابلة للتطوير وفعالة من حيث التكلفة باستخدام AWS Lambda و Vercel وحوسبة الحافة."
+      },
+      "smartContractDevelopment": {
+        "title": "تطوير العقود الذكية",
+        "description": "أنشئ عقود ذكية آمنة ومدققة على Ethereum و Solana وسلاسل الكتل الأخرى."
+      },
+      "socialMediaIntegration": {
+        "title": "تكامل وسائل التواصل الاجتماعي",
+        "description": "خدمات تكامل وسائل التواصل الاجتماعي."
+      },
+      "technicalDocumentation": {
+        "title": "التوثيق التقني",
+        "description": "خدمات التوثيق التقني."
+      },
+      "telemedicinePlatforms": {
+        "title": "منصات التطبيب عن بعد",
+        "description": "خدمات منصات التطبيب عن بعد."
+      },
+      "terraformInfrastructure": {
+        "title": "البنية التحتية Terraform",
+        "description": "حدد وزود البنية التحتية السحابية باستخدام Terraform للاتساق والأتمتة."
+      },
+      "unityGameDevelopment": {
+        "title": "تطوير ألعاب Unity",
+        "description": "أنشئ ألعاب 2D و 3D غامرة باستخدام Unity لجميع المنصات."
+      },
+      "unrealEngineDevelopment": {
+        "title": "تطوير Unreal Engine",
+        "description": "أنشئ ألعاب بجودة AAA وتجارب 3D في الوقت الحقيقي مع Unreal Engine 5."
+      },
+      "videoMarketing": {
+        "title": "تسويق الفيديو",
+        "description": "أنتج محتوى فيديو مقنع للتسويق والتدريب وسرد قصة العلامة التجارية."
+      },
+      "vrDevelopment": {
+        "title": "تطوير VR",
+        "description": "أنشئ تجارب واقع افتراضي غامرة للتدريب والترفيه والمؤسسات."
       }
     },
     "detail": {
@@ -2642,7 +2834,52 @@
       "backTo": "العودة إلى {parent}",
       "exploreSubServices": "استكشف حلولنا المتخصصة",
       "exploreSubServicesDescription": "تعمق في عروضنا المتخصصة المصممة لاحتياجاتك الخاصة.",
-      "learnMore": "اعرف المزيد"
+      "learnMore": "اعرف المزيد",
+      "whyUs": {
+        "title": "لماذا تختار PakSoft؟",
+        "benefits": [
+          {
+            "title": "فريق خبير",
+            "description": "يجلب متخصصونا سنوات من الخبرة العملية إلى كل مشروع، بما يضمن تسليماً عالي الجودة."
+          },
+          {
+            "title": "تسليم في الموعد",
+            "description": "نحترم جدولكم الزمني. تتم متابعة كل مرحلة وإنجازها عبر إدارة مشاريع رشيقة."
+          },
+          {
+            "title": "تواصل شفاف",
+            "description": "أنتم دائماً على اطلاع. تحديثات منتظمة وقنوات مفتوحة تجعل التعاون سلساً."
+          },
+          {
+            "title": "حلول قابلة للتوسع",
+            "description": "نبني للنمو. تتحمل بنياتنا الأحمال المتزايدة دون إعادة بناء مكلفة."
+          },
+          {
+            "title": "العميل أولاً",
+            "description": "أهدافكم توجّه كل قرار. نمنح الأولوية لتحقيق القيمة على التعقيد التقني."
+          },
+          {
+            "title": "دعم ما بعد الإطلاق",
+            "description": "لا ينتهي تعاوننا عند الإطلاق. نقدم صيانة مستمرة ومراقبة للأداء."
+          }
+        ]
+      },
+      "pricingPage": {
+        "eyebrow": "الأسعار",
+        "titleAccent": "الأسعار",
+        "subtitle": "أسعار شفافة تتناسب مع حجم مشروعكم. اختاروا باقة أو احصلوا على عرض مخصص — دون أي رسوم خفية.",
+        "quoteTitle": "كل مشروع فريد",
+        "quoteDesc": "تُحدَّد تكلفة هذه الخدمة حسب المشروع. أخبرونا بأهدافكم وسنرسل عرضاً مفصلاً بسعر ثابت خلال 48 ساعة.",
+        "bullet1": "عرض بسعر ثابت خلال 48 ساعة",
+        "bullet2": "استشارة مجانية ومراجعة النطاق",
+        "bullet3": "لا التزام حتى الموافقة على الخطة"
+      },
+      "blogPage": {
+        "eyebrow": "رؤى",
+        "titleAccent": "رؤى",
+        "subtitle": "أدلة وتحليلات معمّقة ودروس من فريقنا — معرفة عملية يمكنكم تطبيقها اليوم.",
+        "viewAll": "عرض جميع المقالات"
+      }
     },
     "pricing": {
       "eyebrow": "الأسعار",
@@ -3310,7 +3547,7 @@
       "logoBrandIdentity": "الشعار وهوية العلامة التجارية",
       "brandStrategy": "استراتيجية العلامة التجارية",
       "motionGraphics": "الرسوم المتحركة",
-      "3dArVr": "ثلاثي الأبعاد / AR / VR",
+      "3dArVr": "تطوير AR",
       "croAbTesting": "تحسين التحويل واختبار A/B",
       "devOpsCiCd": "DevOps و CI/CD",
       "cloudMigration": "الهجرة إلى السحابة",
@@ -3319,7 +3556,16 @@
       "databaseServices": "خدمات قواعد البيانات",
       "performanceOptimization": "تحسين الأداء",
       "managedServices": "الخدمات المُدارة",
-      "techConsulting": "الاستشارات التقنية"
+      "techConsulting": "الاستشارات التقنية",
+      "conversationalAi": "الذكاء الاصطناعي للمحادثة",
+      "llmServices": "خدمات نماذج اللغات الكبيرة",
+      "digitalMarketing": "التسويق الرقمي",
+      "marketplaceAds": "إعلانات الأسواق الإلكترونية",
+      "digitalTransformation": "التحول الرقمي",
+      "aiStrategy": "استراتيجية الذكاء الاصطناعي",
+      "growthStrategy": "استراتيجية النمو",
+      "startupServices": "خدمات الشركات الناشئة",
+      "staffAugmentation": "تعزيز فريق العمل"
     }
   },
   "connect": {
@@ -5499,14 +5745,63 @@
       "technical-cto": "مدير تقني (CTO) بالتعاقد",
       "staff-augmentation": "تعزيز فريق العمل",
       "developer-outsourcing": "الاستعانة بمطورين خارجيين",
-      "dedicated-teams": "فرق مخصصة"
+      "dedicated-teams": "فرق مخصصة",
+      "accessibility-compliance": "امتثال إمكانية الوصول",
+      "affiliate-marketing-systems": "أنظمة التسويق بالعمولة",
+      "ai-chatbot-integration": "تكامل روبوتات المحادثة بالذكاء الاصطناعي",
+      "ai-image-generation": "توليد الصور بالذكاء الاصطناعي",
+      "api-rate-limiting-throttling": "تحديد معدل API",
+      "api-security-authentication": "أمان API والمصادقة",
+      "ar-development": "تطوير AR",
+      "blockchain-development": "تطوير البلوكتشين",
+      "booking-reservation-systems": "أنظمة الحجز",
+      "business-intelligence-solutions": "حلول ذكاء الأعمال",
+      "cloud-cost-optimization": "تحسين تكلفة السحابة",
+      "code-review-refactoring": "مراجعة الكود وإعادة الهيكلة",
+      "computer-vision-solutions": "حلول الرؤية الحاسوبية",
+      "conversion-rate-optimization": "تحسين معدل التحويل",
+      "cybersecurity-auditing": "تدقيق الأمن السيبراني",
+      "database-design-optimization": "تصميم وتحسين قواعد البيانات",
+      "desktop-application-development": "تطوير تطبيقات سطح المكتب",
+      "disaster-recovery-planning": "تخطيط التعافي من الكوارث",
+      "email-marketing-automation": "أتمتة التسويق عبر البريد الإلكتروني",
+      "etl-pipelines": "خطوط أنابيب ETL",
+      "event-driven-architecture": "البنية الموجهة بالأحداث",
+      "fraud-detection-systems": "أنظمة كشف الاحتيال",
+      "graphql-api-development": "تطوير GraphQL API",
+      "headless-commerce": "التجارة بدون واجهة",
+      "identity-access-management": "إدارة الهوية والوصول",
+      "inventory-management-systems": "أنظمة إدارة المخزون",
+      "iot-development": "تطوير إنترنت الأشياء",
+      "kubernetes-orchestration": "تنسيق Kubernetes",
+      "learning-management-systems": "أنظمة إدارة التعلم",
+      "legacy-system-modernization": "تحديث الأنظمة القديمة",
+      "microservices-architecture": "بنية الخدمات المصغرة",
+      "mlops-model-deployment": "MLOps ونشر النماذج",
+      "multi-tenant-saas-architecture": "بنية SaaS متعددة المستأجرين",
+      "natural-language-processing": "معالجة اللغة الطبيعية",
+      "nft-marketplace-development": "تطوير سوق NFT",
+      "payment-gateway-integration": "تكامل بوابة الدفع",
+      "performance-testing-optimization": "اختبار الأداء والتحسين",
+      "real-time-applications": "تطبيقات الوقت الحقيقي",
+      "serverless-architecture": "البنية بدون خادم",
+      "smart-contract-development": "تطوير العقود الذكية",
+      "social-media-integration": "تكامل وسائل التواصل الاجتماعي",
+      "technical-documentation": "التوثيق التقني",
+      "telemedicine-platforms": "منصات التطبيب عن بعد",
+      "terraform-infrastructure": "البنية التحتية Terraform",
+      "unity-game-development": "تطوير ألعاب Unity",
+      "unreal-engine-development": "تطوير Unreal Engine",
+      "video-marketing": "تسويق الفيديو",
+      "vr-development": "تطوير VR"
     },
     "subtitle": "حلول رقمية شاملة تدفع النمو وتعزز الكفاءة.",
     "searchPlaceholder": "ابحث عن الخدمات...",
     "ctaTitle": "هل أنت مستعد للنمو؟",
     "ctaDesc": "احجز استشارة مجانية الآن.",
     "ctaButton": "احجز عرضًا",
-    "exploreAll": "استعرض كامل كتالوج خدماتنا المتخصصة"
+    "exploreAll": "استعرض كامل كتالوج خدماتنا المتخصصة",
+    "noResults": "لم يتم العثور على خدمات"
   },
   "aiServices": {
     "title": "خدمات الذكاء الاصطناعي",
@@ -13118,5 +13413,61 @@
       "متوافق مع GDPR",
       "SOC 2 النوع الثاني"
     ]
+  },
+  "sceneLabels": {
+    "live": "مباشر",
+    "noErrors": "0 أخطاء",
+    "orderConfirmed": "تم تأكيد الطلب!",
+    "uptime": "وقت تشغيل 99.99%",
+    "growth": "النمو",
+    "roi": "العائد",
+    "leads": "العملاء المحتملون",
+    "opsCenter": "مركز العمليات",
+    "requests": "طلبات/ث",
+    "capacity": "السعة 78%",
+    "sources": "المصادر",
+    "transform": "التحويل",
+    "warehouse": "مستودع البيانات",
+    "insights": "3 رؤى ✓",
+    "yourInfra": "بنيتكم التحتية",
+    "secured": "✓ مؤمَّن",
+    "plan": "خطّط",
+    "build": "ابنِ",
+    "test": "اختبر",
+    "ship": "✓ أطلق",
+    "retry": "أعد ↻",
+    "reach": "الوصول +312% ↗",
+    "scaleUp": "وضع النمو 🚀",
+    "checkout": "الدفع ✓",
+    "uiLayer": "الواجهة / العرض",
+    "logicLayer": "منطق الأعمال",
+    "apiLayer": "طبقة API",
+    "dbLayer": "قاعدة البيانات",
+    "chatQuestion": "هل يمكنك تلخيص تقرير مبيعات اليوم؟",
+    "chatAnswerPre": "الإيرادات ارتفعت",
+    "chatAnswerMid": "— 312 طلباً. أفضل منطقة:",
+    "fullReport": "التقرير الكامل",
+    "forecast": "التوقعات",
+    "yourSite": "موقعكم.com",
+    "rankUp": "المرتبة 1",
+    "openRate": "معدل الفتح",
+    "subject1": "تقرير النمو الأسبوعي",
+    "subject2": "عميل محتمل جديد لك",
+    "subject3": "نتائج الحملة جاهزة",
+    "visitors": "الزوار",
+    "signups": "التسجيلات",
+    "customers": "العملاء",
+    "optimized": "محسَّن ↑",
+    "followers": "متابعون",
+    "newPost": "تم نشر منشور جديد",
+    "views": "مشاهدات",
+    "watchTime": "مدة المشاهدة",
+    "todo": "للتنفيذ",
+    "doing": "قيد التنفيذ",
+    "done": "منجز",
+    "queryTime": "استعلام 12ms",
+    "indexed": "مفهرس ✓",
+    "blockConfirmed": "تم تأكيد الكتلة",
+    "wallet": "المحفظة"
   }
 }

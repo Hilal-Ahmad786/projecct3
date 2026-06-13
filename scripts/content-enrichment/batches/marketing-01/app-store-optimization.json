@@ -1,0 +1,278 @@
+{
+  "slug": "app-store-optimization",
+  "en": {
+    "name": "App Store Optimization",
+    "shortDescription": "Get your app discovered and downloaded. We optimize keywords, metadata, screenshots, and reviews across the App Store and Google Play — then prove every change with measured conversion lifts.",
+    "fullDescription": "Most app installs still start with a store search, yet most listings are written once and forgotten. We treat ASO as an ongoing experimentation program: keyword research grounded in real search volume and difficulty data, metadata written within Apple's 30-character title and 100-character keyword field constraints, and screenshots designed to communicate value in the first two frames — where most browsers stop scrolling. Because Apple and Google rank apps differently (Google indexes your full description; Apple does not), we maintain separate strategies per store. Visual changes are validated with Google Play's store listing experiments and Apple's Product Page Optimization, and review velocity and ratings are managed as ranking inputs, not afterthoughts. The result: more organic installs and a lower blended cost per acquisition.",
+    "features": [
+      "Keyword Research & Difficulty Analysis",
+      "Title, Subtitle & Description Optimization",
+      "Screenshot & Preview Video Design",
+      "A/B Testing (PPO & Play Experiments)",
+      "Rating & Review Management",
+      "Competitor & Category Tracking",
+      "Localization for Key Markets",
+      "Custom Product Pages for Paid Traffic"
+    ],
+    "benefits": [
+      "More organic installs without extra ad spend",
+      "Lower blended cost per acquisition",
+      "Higher search rankings on both stores",
+      "Better install conversion from the same traffic",
+      "Stronger ratings that compound visibility",
+      "Listings validated by experiments, not taste"
+    ],
+    "metaTitle": "App Store Optimization (ASO) Services | PakSoft",
+    "metaDescription": "Full-cycle ASO for iOS and Android: keyword strategy, metadata, screenshot testing, and review management that grow organic installs. Request a free listing audit.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "ASO Audit & Benchmark", "description": "We audit your current keyword rankings, conversion rates, ratings profile, and visual assets against your top category competitors. This produces a baseline so every later change can be measured against real numbers." },
+        { "step": 2, "title": "Keyword Strategy", "description": "Using Sensor Tower and AppTweak data, we map search terms by volume, difficulty, and relevance, then assign them to title, subtitle, and keyword field by priority. Apple and Google get separate keyword plans because their indexing rules differ fundamentally." },
+        { "step": 3, "title": "Metadata & Creative Production", "description": "We rewrite titles, subtitles, and descriptions around the keyword plan while keeping them readable and persuasive for humans. Screenshots and preview videos are designed to communicate your core value within the first two frames." },
+        { "step": 4, "title": "Experimentation", "description": "Visual and copy variants are tested with Google Play store listing experiments and Apple Product Page Optimization. We run each test to adequate sample size before declaring a winner, exactly as we would in web CRO." },
+        { "step": 5, "title": "Review & Rating Program", "description": "We implement smart in-app review prompts triggered after positive moments, and set up workflows for responding to negative reviews quickly. Rating trends are monitored weekly because they directly affect both ranking and conversion." },
+        { "step": 6, "title": "Iterate & Localize", "description": "Rankings, conversion, and competitor moves are reviewed monthly, and the keyword plan is updated accordingly. High-potential markets get localized metadata and creatives, which routinely outperform auto-translated listings." }
+      ],
+      "faq": [
+        { "question": "How long does ASO take to show results?", "answer": "Keyword ranking movements typically appear within 2-6 weeks of a metadata update, while conversion improvements from new screenshots can show within days of a winning test. Building a strong organic install base is a 3-6 month compounding effort — ASO is a program, not a one-time fix." },
+        { "question": "How is ASO different between the App Store and Google Play?", "answer": "Apple indexes your title, subtitle, and a hidden 100-character keyword field, but not your description; Google indexes your full description and weighs keyword frequency in it. Google also factors engagement and retention signals more heavily, which is why the two stores need genuinely separate strategies." },
+        { "question": "Can you do ASO without changing the app itself?", "answer": "Mostly yes — keywords, metadata, screenshots, and review responses are all store-level work. The exception is the review prompt: triggering Apple's or Google's native rating dialog at the right moment requires a small in-app change, and we provide your developers exact implementation guidance." },
+        { "question": "How important are ratings for rankings?", "answer": "Very: both stores use rating value and review velocity as ranking signals, and users filter by them mentally regardless. Moving from 4.0 to 4.5 stars typically produces a meaningful lift in conversion rate, which itself feeds back into rankings — it's one of the highest-leverage ASO inputs." },
+        { "question": "Do you also handle Apple Search Ads or Google App Campaigns?", "answer": "We can, and they pair naturally with ASO: paid keyword data reveals which terms actually convert, and Apple Search Ads impression share protects the rankings ASO builds. Custom product pages let us send each paid audience to a tailored listing variant." },
+        { "question": "Is keyword stuffing in the description still effective?", "answer": "On Apple it never was, since descriptions aren't indexed; on Google it actively hurts, because the algorithm detects unnatural density and users bounce from spammy copy. We target a natural 2-3% keyword presence in Play descriptions woven into genuinely persuasive text." },
+        { "question": "Should we localize our store listing?", "answer": "If a market drives or could drive meaningful installs, yes — localized listings consistently convert better than English-only ones, often by 20-40% in non-English markets. We prioritize locales by your analytics and category opportunity, and localize keywords natively rather than translating them literally." },
+        { "question": "How do you measure ASO success?", "answer": "We track keyword rankings, category rank, store impressions, product page conversion rate, and organic install volume — separated from paid installs so the organic effect is visible. You get a monthly report connecting each change we made to the movement it produced." }
+      ],
+      "technologies": [
+        { "icon": "appstoreconnect", "name": "App Store Connect" },
+        { "icon": "googleplayconsole", "name": "Google Play Console" },
+        { "icon": "sensortower", "name": "Sensor Tower" },
+        { "icon": "apptweak", "name": "AppTweak" },
+        { "icon": "appfollow", "name": "AppFollow" },
+        { "icon": "appsflyer", "name": "AppsFlyer" },
+        { "icon": "figma", "name": "Figma" },
+        { "icon": "firebase", "name": "Firebase" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Uygulama Mağazası Optimizasyonu",
+    "shortDescription": "Uygulamanızın keşfedilmesini ve indirilmesini sağlayın. App Store ve Google Play'de anahtar kelimeleri, meta verileri, ekran görüntülerini ve yorumları optimize ediyor, her değişikliği ölçülmüş dönüşüm artışlarıyla kanıtlıyoruz.",
+    "fullDescription": "Uygulama indirmelerinin çoğu hâlâ mağaza aramasıyla başlar; ancak listelemelerin çoğu bir kez yazılıp unutulur. Biz ASO'yu süregelen bir deney programı olarak ele alırız: gerçek arama hacmi ve zorluk verisine dayalı anahtar kelime araştırması, Apple'ın 30 karakterlik başlık ve 100 karakterlik anahtar kelime alanı sınırlarına göre yazılmış meta veriler ve değeri ilk iki karede anlatan ekran görüntüleri — çünkü kullanıcıların çoğu orada kaydırmayı bırakır. Apple ve Google uygulamaları farklı sıraladığından (Google açıklamanın tamamını dizine ekler, Apple eklemez) her mağaza için ayrı strateji yürütürüz. Görsel değişiklikler Google Play mağaza deneyleri ve Apple'ın Product Page Optimization aracıyla doğrulanır; puan ve yorum hızı sonradan akla gelen bir detay değil, sıralama girdisi olarak yönetilir. Sonuç: daha fazla organik indirme ve daha düşük ortalama edinim maliyeti.",
+    "features": [
+      "Anahtar Kelime Araştırması ve Zorluk Analizi",
+      "Başlık, Alt Başlık ve Açıklama Optimizasyonu",
+      "Ekran Görüntüsü ve Tanıtım Videosu Tasarımı",
+      "A/B Testleri (PPO ve Play Deneyleri)",
+      "Puan ve Yorum Yönetimi",
+      "Rakip ve Kategori Takibi",
+      "Önemli Pazarlar için Yerelleştirme",
+      "Ücretli Trafik için Özel Ürün Sayfaları"
+    ],
+    "benefits": [
+      "Ek reklam harcaması olmadan daha fazla organik indirme",
+      "Daha düşük ortalama edinim maliyeti",
+      "Her iki mağazada daha yüksek arama sıralamaları",
+      "Aynı trafikten daha yüksek indirme dönüşümü",
+      "Görünürlüğü katlayan daha güçlü puanlar",
+      "Zevke göre değil, deneyle doğrulanmış listelemeler"
+    ],
+    "metaTitle": "Uygulama Mağazası Optimizasyonu (ASO) | PakSoft",
+    "metaDescription": "iOS ve Android için uçtan uca ASO: anahtar kelime stratejisi, meta veri, ekran görüntüsü testleri ve yorum yönetimiyle organik indirmeyi büyütün. Ücretsiz denetim isteyin.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "ASO Denetimi ve Kıyaslama", "description": "Mevcut anahtar kelime sıralamalarınızı, dönüşüm oranlarınızı, puan profilinizi ve görsellerinizi kategorinizdeki en güçlü rakiplerle karşılaştırarak denetleriz. Bu, sonraki her değişikliğin gerçek rakamlarla ölçülebilmesi için bir başlangıç çizgisi oluşturur." },
+        { "step": 2, "title": "Anahtar Kelime Stratejisi", "description": "Sensor Tower ve AppTweak verileriyle arama terimlerini hacim, zorluk ve alaka düzeyine göre haritalar; önceliğe göre başlık, alt başlık ve anahtar kelime alanına atarız. Dizinleme kuralları temelden farklı olduğu için Apple ve Google ayrı kelime planları alır." },
+        { "step": 3, "title": "Meta Veri ve Görsel Üretimi", "description": "Başlıkları, alt başlıkları ve açıklamaları kelime planına göre, insanlar için okunabilir ve ikna edici kalacak şekilde yeniden yazarız. Ekran görüntüleri ve tanıtım videoları temel değerinizi ilk iki karede anlatacak şekilde tasarlanır." },
+        { "step": 4, "title": "Deney Süreci", "description": "Görsel ve metin varyantları Google Play mağaza deneyleri ve Apple Product Page Optimization ile test edilir. Tıpkı web CRO'da olduğu gibi, kazananı ilan etmeden önce her testi yeterli örneklem büyüklüğüne ulaştırırız." },
+        { "step": 5, "title": "Puan ve Yorum Programı", "description": "Olumlu anlardan sonra tetiklenen akıllı uygulama içi değerlendirme istemleri kurar, olumsuz yorumlara hızlı yanıt için iş akışları oluştururuz. Puan eğilimleri hem sıralamayı hem dönüşümü doğrudan etkilediği için haftalık izlenir." },
+        { "step": 6, "title": "İterasyon ve Yerelleştirme", "description": "Sıralamalar, dönüşüm ve rakip hamleleri aylık gözden geçirilir; kelime planı buna göre güncellenir. Potansiyeli yüksek pazarlar, otomatik çevirili listelemelerden düzenli olarak daha iyi performans gösteren yerelleştirilmiş meta veri ve görseller alır." }
+      ],
+      "faq": [
+        { "question": "ASO sonuçları ne kadar sürede görülür?", "answer": "Anahtar kelime sıralama hareketleri genellikle bir meta veri güncellemesinden sonraki 2-6 hafta içinde görülür; yeni ekran görüntülerinden gelen dönüşüm artışı ise kazanan bir testten günler sonra ortaya çıkabilir. Güçlü bir organik indirme tabanı kurmak 3-6 aylık birikimli bir çabadır — ASO tek seferlik bir düzeltme değil, bir programdır." },
+        { "question": "App Store ile Google Play'de ASO nasıl farklılaşır?", "answer": "Apple başlığı, alt başlığı ve gizli 100 karakterlik anahtar kelime alanını dizine ekler ama açıklamayı eklemez; Google ise açıklamanın tamamını dizine ekler ve içindeki kelime sıklığını dikkate alır. Google ayrıca etkileşim ve elde tutma sinyallerine daha çok ağırlık verir; iki mağazanın gerçekten ayrı stratejiler gerektirmesinin nedeni budur." },
+        { "question": "Uygulamanın kendisini değiştirmeden ASO yapılabilir mi?", "answer": "Büyük ölçüde evet — anahtar kelimeler, meta veri, ekran görüntüleri ve yorum yanıtları tamamen mağaza düzeyinde işlerdir. İstisna, değerlendirme istemi: Apple veya Google'ın yerel puanlama penceresini doğru anda tetiklemek küçük bir uygulama içi değişiklik gerektirir; geliştiricilerinize birebir uygulama rehberi veririz." },
+        { "question": "Puanlar sıralama için ne kadar önemli?", "answer": "Çok önemli: Her iki mağaza da puan değerini ve yorum hızını sıralama sinyali olarak kullanır; kullanıcılar da zaten zihinlerinde bunlara göre eler. 4,0'dan 4,5 yıldıza çıkmak dönüşüm oranında genellikle anlamlı bir artış sağlar ve bu artış sıralamaya geri besleme yapar — ASO'nun en yüksek kaldıraçlı girdilerinden biridir." },
+        { "question": "Apple Search Ads veya Google Uygulama Kampanyalarını da yönetiyor musunuz?", "answer": "Evet; üstelik ASO ile doğal bir bütün oluştururlar: ücretli kelime verisi hangi terimlerin gerçekten dönüşüm getirdiğini gösterir, Apple Search Ads gösterim payı da ASO'nun kazandırdığı sıralamaları korur. Özel ürün sayfalarıyla her ücretli kitleyi kendine uygun bir listeleme varyantına gönderebiliriz." },
+        { "question": "Açıklamaya anahtar kelime yığmak hâlâ işe yarıyor mu?", "answer": "Apple'da hiçbir zaman yaramadı çünkü açıklamalar dizine eklenmez; Google'da ise aktif olarak zarar verir çünkü algoritma doğal olmayan yoğunluğu tespit eder ve kullanıcılar spam görünümlü metinden uzaklaşır. Play açıklamalarında, gerçekten ikna edici bir metne örülmüş doğal %2-3'lük kelime varlığını hedefleriz." },
+        { "question": "Mağaza listelememizi yerelleştirmeli miyiz?", "answer": "Bir pazar anlamlı indirme getiriyorsa veya getirebilecekse evet — yerelleştirilmiş listelemeler, İngilizce olmayan pazarlarda çoğu zaman %20-40 oranında daha iyi dönüşüm sağlar. Yerel ayarları analitik verinize ve kategori fırsatına göre önceliklendirir, anahtar kelimeleri birebir çevirmek yerine o dilde yeniden araştırırız." },
+        { "question": "ASO başarısını nasıl ölçüyorsunuz?", "answer": "Anahtar kelime sıralamalarını, kategori sırasını, mağaza gösterimlerini, ürün sayfası dönüşüm oranını ve organik indirme hacmini izleriz — organik etkinin görünmesi için ücretli indirmelerden ayrıştırılmış olarak. Her ay, yaptığımız her değişikliği yarattığı hareketle ilişkilendiren bir rapor alırsınız." }
+      ],
+      "technologies": [
+        { "icon": "appstoreconnect", "name": "App Store Connect" },
+        { "icon": "googleplayconsole", "name": "Google Play Console" },
+        { "icon": "sensortower", "name": "Sensor Tower" },
+        { "icon": "apptweak", "name": "AppTweak" },
+        { "icon": "appfollow", "name": "AppFollow" },
+        { "icon": "appsflyer", "name": "AppsFlyer" },
+        { "icon": "figma", "name": "Figma" },
+        { "icon": "firebase", "name": "Firebase" }
+      ]
+    }
+  },
+  "de": {
+    "name": "App Store Optimierung",
+    "shortDescription": "Machen Sie Ihre App auffindbar und überzeugend. Wir optimieren Keywords, Metadaten, Screenshots und Bewertungen im App Store und bei Google Play — und belegen jede Änderung mit gemessenen Conversion-Steigerungen.",
+    "fullDescription": "Die meisten App-Installationen beginnen noch immer mit einer Store-Suche — doch die meisten Listings werden einmal geschrieben und dann vergessen. Wir betreiben ASO als fortlaufendes Experimentierprogramm: Keyword-Research auf Basis echter Suchvolumen- und Schwierigkeitsdaten, Metadaten innerhalb von Apples 30-Zeichen-Titel und dem 100-Zeichen-Keyword-Feld, und Screenshots, die den Produktwert in den ersten zwei Frames vermitteln — dort, wo die meisten Nutzer aufhören zu scrollen. Da Apple und Google unterschiedlich ranken (Google indexiert die komplette Beschreibung, Apple nicht), führen wir pro Store eine eigene Strategie. Visuelle Änderungen validieren wir mit Google Plays Store-Listing-Experimenten und Apples Product Page Optimization; Bewertungsdynamik und Ratings steuern wir als Ranking-Faktoren, nicht als Nebensache. Das Ergebnis: mehr organische Installs und geringere durchschnittliche Akquisitionskosten.",
+    "features": [
+      "Keyword-Research & Schwierigkeitsanalyse",
+      "Titel-, Untertitel- & Beschreibungsoptimierung",
+      "Screenshot- & Preview-Video-Design",
+      "A/B-Tests (PPO & Play-Experimente)",
+      "Bewertungs- & Review-Management",
+      "Wettbewerber- & Kategorie-Tracking",
+      "Lokalisierung für Schlüsselmärkte",
+      "Custom Product Pages für Paid Traffic"
+    ],
+    "benefits": [
+      "Mehr organische Installs ohne zusätzliches Werbebudget",
+      "Niedrigere durchschnittliche Akquisitionskosten",
+      "Bessere Suchrankings in beiden Stores",
+      "Höhere Install-Conversion aus demselben Traffic",
+      "Stärkere Ratings, die die Sichtbarkeit verstärken",
+      "Listings, die Experimente bestätigen — nicht Geschmack"
+    ],
+    "metaTitle": "App Store Optimierung (ASO) | PakSoft",
+    "metaDescription": "ASO für iOS und Android aus einer Hand: Keyword-Strategie, Metadaten, Screenshot-Tests und Review-Management für mehr organische Installs. Kostenloses Audit anfordern.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "ASO-Audit & Benchmark", "description": "Wir prüfen Ihre aktuellen Keyword-Rankings, Conversion-Raten, Ihr Bewertungsprofil und Ihre visuellen Assets im Vergleich zu den stärksten Kategorie-Wettbewerbern. So entsteht eine Baseline, an der sich jede spätere Änderung messen lässt." },
+        { "step": 2, "title": "Keyword-Strategie", "description": "Mit Daten von Sensor Tower und AppTweak ordnen wir Suchbegriffe nach Volumen, Schwierigkeit und Relevanz und verteilen sie priorisiert auf Titel, Untertitel und Keyword-Feld. Apple und Google erhalten getrennte Keyword-Pläne, weil ihre Indexierungsregeln sich grundlegend unterscheiden." },
+        { "step": 3, "title": "Metadaten & Creative-Produktion", "description": "Wir schreiben Titel, Untertitel und Beschreibungen entlang des Keyword-Plans neu — lesbar und überzeugend für Menschen. Screenshots und Preview-Videos werden so gestaltet, dass sie Ihren Kernwert in den ersten zwei Frames transportieren." },
+        { "step": 4, "title": "Experimente", "description": "Visuelle und textliche Varianten testen wir mit Google-Play-Store-Experimenten und Apples Product Page Optimization. Jeder Test läuft bis zur ausreichenden Stichprobengröße, bevor wir einen Gewinner erklären — genau wie im Web-CRO." },
+        { "step": 5, "title": "Bewertungsprogramm", "description": "Wir implementieren intelligente In-App-Bewertungsdialoge, die nach positiven Momenten ausgelöst werden, und richten Workflows für schnelle Antworten auf negative Reviews ein. Rating-Trends überwachen wir wöchentlich, da sie Ranking und Conversion direkt beeinflussen." },
+        { "step": 6, "title": "Iteration & Lokalisierung", "description": "Rankings, Conversion und Wettbewerberbewegungen werden monatlich ausgewertet, der Keyword-Plan entsprechend angepasst. Märkte mit hohem Potenzial erhalten lokalisierte Metadaten und Creatives, die automatisch übersetzte Listings regelmäßig übertreffen." }
+      ],
+      "faq": [
+        { "question": "Wie schnell zeigt ASO Ergebnisse?", "answer": "Keyword-Ranking-Bewegungen erscheinen typischerweise 2-6 Wochen nach einem Metadaten-Update, während Conversion-Verbesserungen durch neue Screenshots schon Tage nach einem gewonnenen Test sichtbar werden. Eine starke organische Install-Basis aufzubauen ist ein kumulativer Prozess über 3-6 Monate — ASO ist ein Programm, keine Einmalmaßnahme." },
+        { "question": "Worin unterscheidet sich ASO zwischen App Store und Google Play?", "answer": "Apple indexiert Titel, Untertitel und ein verborgenes 100-Zeichen-Keyword-Feld, aber nicht die Beschreibung; Google indexiert die komplette Beschreibung und gewichtet die Keyword-Häufigkeit darin. Google bezieht zudem Engagement- und Retention-Signale stärker ein — deshalb brauchen die beiden Stores wirklich getrennte Strategien." },
+        { "question": "Geht ASO ohne Änderungen an der App selbst?", "answer": "Größtenteils ja — Keywords, Metadaten, Screenshots und Review-Antworten sind reine Store-Arbeit. Die Ausnahme ist der Bewertungsdialog: Apples oder Googles natives Rating-Fenster im richtigen Moment auszulösen erfordert eine kleine In-App-Änderung, für die wir Ihren Entwicklern eine präzise Anleitung liefern." },
+        { "question": "Wie wichtig sind Bewertungen für das Ranking?", "answer": "Sehr wichtig: Beide Stores nutzen Bewertungswert und Review-Geschwindigkeit als Ranking-Signale, und Nutzer filtern ohnehin danach. Der Sprung von 4,0 auf 4,5 Sterne bringt typischerweise einen spürbaren Conversion-Anstieg, der wiederum ins Ranking zurückfließt — einer der wirksamsten ASO-Hebel überhaupt." },
+        { "question": "Übernehmen Sie auch Apple Search Ads oder Google App Campaigns?", "answer": "Ja — und sie ergänzen ASO auf natürliche Weise: Paid-Keyword-Daten zeigen, welche Begriffe tatsächlich konvertieren, und der Impression Share von Apple Search Ads schützt die Rankings, die ASO aufbaut. Mit Custom Product Pages leiten wir jede Paid-Zielgruppe auf eine passende Listing-Variante." },
+        { "question": "Funktioniert Keyword-Stuffing in der Beschreibung noch?", "answer": "Bei Apple hat es nie funktioniert, da Beschreibungen nicht indexiert werden; bei Google schadet es aktiv, weil der Algorithmus unnatürliche Dichte erkennt und Nutzer von spamartigen Texten abspringen. Wir zielen auf eine natürliche Keyword-Präsenz von 2-3 % in Play-Beschreibungen, eingewoben in wirklich überzeugenden Text." },
+        { "question": "Sollten wir unser Store-Listing lokalisieren?", "answer": "Wenn ein Markt relevante Installs bringt oder bringen könnte: ja. Lokalisierte Listings konvertieren in nicht-englischen Märkten oft 20-40 % besser als rein englische. Wir priorisieren Locales nach Ihren Analytics-Daten und der Kategorie-Chance und recherchieren Keywords nativ, statt sie wörtlich zu übersetzen." },
+        { "question": "Wie messen Sie ASO-Erfolg?", "answer": "Wir tracken Keyword-Rankings, Kategorie-Rang, Store-Impressionen, Produktseiten-Conversion und organisches Install-Volumen — getrennt von Paid Installs, damit der organische Effekt sichtbar bleibt. Monatlich erhalten Sie einen Report, der jede Änderung mit der ausgelösten Bewegung verknüpft." }
+      ],
+      "technologies": [
+        { "icon": "appstoreconnect", "name": "App Store Connect" },
+        { "icon": "googleplayconsole", "name": "Google Play Console" },
+        { "icon": "sensortower", "name": "Sensor Tower" },
+        { "icon": "apptweak", "name": "AppTweak" },
+        { "icon": "appfollow", "name": "AppFollow" },
+        { "icon": "appsflyer", "name": "AppsFlyer" },
+        { "icon": "figma", "name": "Figma" },
+        { "icon": "firebase", "name": "Firebase" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "ایپ اسٹور آپٹیمائزیشن",
+    "shortDescription": "اپنی ایپ کو دریافت اور ڈاؤن لوڈ کے قابل بنائیں۔ ہم App Store اور Google Play پر کلیدی الفاظ، میٹا ڈیٹا، اسکرین شاٹس اور ریویوز بہتر کرتے ہیں — اور ہر تبدیلی کو ناپی گئی کنورژن بہتری سے ثابت کرتے ہیں۔",
+    "fullDescription": "ایپ کی زیادہ تر انسٹالز آج بھی اسٹور کی تلاش سے شروع ہوتی ہیں، مگر زیادہ تر لسٹنگز ایک بار لکھ کر بھلا دی جاتی ہیں۔ ہم ASO کو ایک جاری تجرباتی پروگرام کے طور پر چلاتے ہیں: حقیقی سرچ والیوم اور مشکل کے ڈیٹا پر مبنی کلیدی الفاظ کی تحقیق، Apple کے 30 حرفی ٹائٹل اور 100 حرفی کی ورڈ فیلڈ کی حدود میں لکھا گیا میٹا ڈیٹا، اور ایسے اسکرین شاٹس جو پہلے دو فریمز میں ایپ کی قدر واضح کر دیں — کیونکہ زیادہ تر صارفین وہیں اسکرول روک دیتے ہیں۔ چونکہ Apple اور Google ایپس کو مختلف انداز میں رینک کرتے ہیں (Google پوری تفصیل کو انڈیکس کرتا ہے، Apple نہیں)، اس لیے ہم ہر اسٹور کے لیے الگ حکمتِ عملی رکھتے ہیں۔ بصری تبدیلیاں Google Play کے اسٹور تجربات اور Apple کی Product Page Optimization سے جانچی جاتی ہیں، جبکہ ریٹنگز اور ریویوز کو رینکنگ کے عوامل کے طور پر سنبھالا جاتا ہے۔ نتیجہ: زیادہ آرگینک انسٹالز اور کم مجموعی لاگت۔",
+    "features": [
+      "کلیدی الفاظ کی تحقیق اور مشکل کا تجزیہ",
+      "ٹائٹل، سب ٹائٹل اور تفصیل کی بہتری",
+      "اسکرین شاٹ اور پری ویو ویڈیو ڈیزائن",
+      "A/B ٹیسٹنگ (PPO اور Play تجربات)",
+      "ریٹنگ اور ریویو مینجمنٹ",
+      "حریف اور کیٹیگری کی نگرانی",
+      "اہم مارکیٹوں کے لیے لوکلائزیشن",
+      "ادا شدہ ٹریفک کے لیے Custom Product Pages"
+    ],
+    "benefits": [
+      "اضافی اشتہاری خرچ کے بغیر زیادہ آرگینک انسٹالز",
+      "کم مجموعی لاگت فی حصولِ صارف",
+      "دونوں اسٹورز پر بہتر سرچ رینکنگ",
+      "اسی ٹریفک سے زیادہ انسٹال کنورژن",
+      "نمائش کو بڑھانے والی مضبوط ریٹنگز",
+      "ذوق پر نہیں، تجربات سے ثابت شدہ لسٹنگز"
+    ],
+    "metaTitle": "ایپ اسٹور آپٹیمائزیشن (ASO) سروسز | PakSoft",
+    "metaDescription": "iOS اور Android کے لیے مکمل ASO: کلیدی الفاظ کی حکمتِ عملی، میٹا ڈیٹا، اسکرین شاٹ ٹیسٹنگ اور ریویو مینجمنٹ سے آرگینک انسٹالز بڑھائیں۔ مفت لسٹنگ آڈٹ حاصل کریں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "ASO آڈٹ اور بینچ مارک", "description": "ہم آپ کی موجودہ کی ورڈ رینکنگ، کنورژن ریٹس، ریٹنگ پروفائل اور بصری مواد کا آپ کی کیٹیگری کے بہترین حریفوں سے موازنہ کرتے ہیں۔ اس سے ایک بنیادی لکیر بنتی ہے تاکہ بعد کی ہر تبدیلی حقیقی اعداد سے ناپی جا سکے۔" },
+        { "step": 2, "title": "کلیدی الفاظ کی حکمتِ عملی", "description": "Sensor Tower اور AppTweak کے ڈیٹا سے ہم سرچ ٹرمز کو والیوم، مشکل اور مطابقت کے مطابق ترتیب دیتے ہیں اور ترجیح کے لحاظ سے ٹائٹل، سب ٹائٹل اور کی ورڈ فیلڈ میں رکھتے ہیں۔ انڈیکسنگ کے اصول بنیادی طور پر مختلف ہونے کی وجہ سے Apple اور Google کو الگ الگ منصوبے ملتے ہیں۔" },
+        { "step": 3, "title": "میٹا ڈیٹا اور تخلیقی مواد", "description": "ہم ٹائٹلز، سب ٹائٹلز اور تفصیلات کو کی ورڈ پلان کے مطابق دوبارہ لکھتے ہیں مگر انہیں انسانوں کے لیے قابلِ مطالعہ اور قائل کرنے والا رکھتے ہیں۔ اسکرین شاٹس اور پری ویو ویڈیوز اس طرح ڈیزائن ہوتے ہیں کہ آپ کی بنیادی قدر پہلے دو فریمز میں واضح ہو جائے۔" },
+        { "step": 4, "title": "تجربات", "description": "بصری اور متنی ویریئنٹس کو Google Play کے اسٹور لسٹنگ تجربات اور Apple کی Product Page Optimization سے جانچا جاتا ہے۔ ویب CRO کی طرح، فاتح کے اعلان سے پہلے ہر ٹیسٹ کو مناسب سیمپل سائز تک چلایا جاتا ہے۔" },
+        { "step": 5, "title": "ریٹنگ اور ریویو پروگرام", "description": "ہم مثبت لمحات کے بعد متحرک ہونے والے سمجھ دار اِن ایپ ریویو پرامپٹس نافذ کرتے ہیں اور منفی ریویوز کے فوری جواب کے لیے ورک فلو بناتے ہیں۔ ریٹنگ کے رجحانات ہفتہ وار مانیٹر ہوتے ہیں کیونکہ یہ رینکنگ اور کنورژن دونوں پر براہِ راست اثر ڈالتے ہیں۔" },
+        { "step": 6, "title": "بہتری اور لوکلائزیشن", "description": "رینکنگ، کنورژن اور حریفوں کی حرکتوں کا ماہانہ جائزہ لیا جاتا ہے اور کی ورڈ پلان اسی کے مطابق اپ ڈیٹ ہوتا ہے۔ زیادہ امکانات والی مارکیٹوں کو لوکلائزڈ میٹا ڈیٹا اور تخلیقی مواد ملتا ہے، جو خودکار ترجمہ شدہ لسٹنگز سے مستقل بہتر کارکردگی دکھاتا ہے۔" }
+      ],
+      "faq": [
+        { "question": "ASO کے نتائج کتنے عرصے میں نظر آتے ہیں؟", "answer": "میٹا ڈیٹا اپ ڈیٹ کے بعد کی ورڈ رینکنگ کی حرکت عموماً 2-6 ہفتوں میں ظاہر ہوتی ہے، جبکہ نئے اسکرین شاٹس سے کنورژن کی بہتری کامیاب ٹیسٹ کے چند دنوں میں دکھ سکتی ہے۔ مضبوط آرگینک انسٹال بیس بنانا 3-6 ماہ کی تدریجی کوشش ہے — ASO ایک پروگرام ہے، یک بارگی اصلاح نہیں۔" },
+        { "question": "App Store اور Google Play میں ASO کیسے مختلف ہے؟", "answer": "Apple ٹائٹل، سب ٹائٹل اور پوشیدہ 100 حرفی کی ورڈ فیلڈ کو انڈیکس کرتا ہے مگر تفصیل کو نہیں؛ Google پوری تفصیل انڈیکس کرتا ہے اور اس میں کلیدی الفاظ کی تکرار کو وزن دیتا ہے۔ Google اشتراک اور برقراری کے سگنلز کو بھی زیادہ اہمیت دیتا ہے، اسی لیے دونوں اسٹورز کو واقعی الگ حکمتِ عملیاں درکار ہیں۔" },
+        { "question": "کیا ایپ میں تبدیلی کے بغیر ASO ممکن ہے؟", "answer": "زیادہ تر ہاں — کلیدی الفاظ، میٹا ڈیٹا، اسکرین شاٹس اور ریویو جوابات سب اسٹور کی سطح کا کام ہیں۔ استثنا ریویو پرامپٹ ہے: Apple یا Google کے اصل ریٹنگ ڈائیلاگ کو درست لمحے پر متحرک کرنے کے لیے ایپ میں چھوٹی سی تبدیلی درکار ہوتی ہے، جس کے لیے ہم آپ کے ڈیولپرز کو مکمل رہنمائی دیتے ہیں۔" },
+        { "question": "رینکنگ کے لیے ریٹنگز کتنی اہم ہیں؟", "answer": "بہت اہم: دونوں اسٹورز ریٹنگ کی قدر اور ریویوز کی رفتار کو رینکنگ سگنل کے طور پر استعمال کرتے ہیں، اور صارفین بھی ذہنی طور پر انہی سے فیصلہ کرتے ہیں۔ 4.0 سے 4.5 ستاروں تک جانا کنورژن ریٹ میں عموماً نمایاں اضافہ کرتا ہے، جو خود رینکنگ کو مزید بہتر کرتا ہے — یہ ASO کے سب سے مؤثر عوامل میں سے ہے۔" },
+        { "question": "کیا آپ Apple Search Ads یا Google App Campaigns بھی سنبھالتے ہیں؟", "answer": "جی ہاں، اور یہ ASO کے ساتھ فطری جوڑ بناتے ہیں: ادا شدہ کی ورڈ ڈیٹا بتاتا ہے کہ کون سی اصطلاحات واقعی کنورژن لاتی ہیں، اور Apple Search Ads کا امپریشن شیئر ASO سے بنی رینکنگ کی حفاظت کرتا ہے۔ Custom Product Pages کے ذریعے ہم ہر ادا شدہ آڈینس کو موزوں لسٹنگ ویریئنٹ پر بھیج سکتے ہیں۔" },
+        { "question": "کیا تفصیل میں کلیدی الفاظ بھرنا اب بھی کارگر ہے؟", "answer": "Apple پر یہ کبھی کارگر نہیں تھا کیونکہ تفصیلات انڈیکس نہیں ہوتیں؛ Google پر یہ الٹا نقصان دیتا ہے کیونکہ الگورتھم غیر فطری کثافت پکڑ لیتا ہے اور صارفین اسپام نما متن سے دور بھاگتے ہیں۔ ہم Play کی تفصیلات میں 2-3٪ کی فطری موجودگی کا ہدف رکھتے ہیں جو واقعی قائل کرنے والے متن میں پروئی ہو۔" },
+        { "question": "کیا ہمیں اپنی اسٹور لسٹنگ لوکلائز کرنی چاہیے؟", "answer": "اگر کوئی مارکیٹ بامعنی انسٹالز لاتی ہے یا لا سکتی ہے تو ہاں — لوکلائزڈ لسٹنگز غیر انگریزی مارکیٹوں میں اکثر 20-40٪ بہتر کنورژن دیتی ہیں۔ ہم آپ کے اینالیٹکس اور کیٹیگری کے مواقع کی بنیاد پر زبانوں کو ترجیح دیتے ہیں اور کلیدی الفاظ کا لفظی ترجمہ کرنے کے بجائے اسی زبان میں نئی تحقیق کرتے ہیں۔" },
+        { "question": "آپ ASO کی کامیابی کیسے ناپتے ہیں؟", "answer": "ہم کی ورڈ رینکنگ، کیٹیگری رینک، اسٹور امپریشنز، پروڈکٹ پیج کنورژن ریٹ اور آرگینک انسٹال والیوم ٹریک کرتے ہیں — ادا شدہ انسٹالز سے الگ کر کے تاکہ آرگینک اثر صاف نظر آئے۔ آپ کو ماہانہ رپورٹ ملتی ہے جو ہماری ہر تبدیلی کو اس کے پیدا کردہ نتیجے سے جوڑتی ہے۔" }
+      ],
+      "technologies": [
+        { "icon": "appstoreconnect", "name": "App Store Connect" },
+        { "icon": "googleplayconsole", "name": "Google Play Console" },
+        { "icon": "sensortower", "name": "Sensor Tower" },
+        { "icon": "apptweak", "name": "AppTweak" },
+        { "icon": "appfollow", "name": "AppFollow" },
+        { "icon": "appsflyer", "name": "AppsFlyer" },
+        { "icon": "figma", "name": "Figma" },
+        { "icon": "firebase", "name": "Firebase" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تحسين متاجر التطبيقات",
+    "shortDescription": "اجعلوا تطبيقكم قابلاً للاكتشاف والتنزيل. نحسّن الكلمات المفتاحية والبيانات الوصفية ولقطات الشاشة والتقييمات في App Store وGoogle Play — ونثبت كل تغيير بزيادات تحويل مقاسة.",
+    "fullDescription": "ما تزال معظم عمليات تثبيت التطبيقات تبدأ ببحث داخل المتجر، ومع ذلك تُكتب معظم الصفحات مرة واحدة ثم تُنسى. نتعامل مع ASO كبرنامج تجارب مستمر: بحث كلمات مفتاحية مبني على بيانات حقيقية لحجم البحث وصعوبته، وبيانات وصفية مكتوبة ضمن قيود Apple — عنوان من 30 حرفاً وحقل كلمات من 100 حرف — ولقطات شاشة توصل القيمة في أول إطارين، حيث يتوقف معظم المتصفحين عن التمرير. ولأن Apple وGoogle يرتّبان التطبيقات بطرق مختلفة (Google يفهرس الوصف الكامل بينما Apple لا يفعل)، نعتمد استراتيجية منفصلة لكل متجر. نتحقق من التغييرات البصرية عبر تجارب Google Play وأداة Product Page Optimization من Apple، وندير وتيرة التقييمات والمراجعات كعوامل ترتيب لا كتفاصيل ثانوية. النتيجة: تثبيتات عضوية أكثر وتكلفة اكتساب أقل.",
+    "features": [
+      "بحث الكلمات المفتاحية وتحليل الصعوبة",
+      "تحسين العنوان والعنوان الفرعي والوصف",
+      "تصميم لقطات الشاشة وفيديو المعاينة",
+      "اختبارات A/B (تجارب PPO وPlay)",
+      "إدارة التقييمات والمراجعات",
+      "تتبّع المنافسين والفئات",
+      "التوطين للأسواق الرئيسية",
+      "صفحات منتج مخصصة للحملات المدفوعة"
+    ],
+    "benefits": [
+      "تثبيتات عضوية أكثر دون إنفاق إعلاني إضافي",
+      "تكلفة اكتساب إجمالية أقل",
+      "ترتيب أعلى في البحث على المتجرين",
+      "تحويل تثبيت أعلى من الحركة نفسها",
+      "تقييمات أقوى تضاعف الظهور",
+      "صفحات مثبتة بالتجارب لا بالذوق الشخصي"
+    ],
+    "metaTitle": "خدمات تحسين متاجر التطبيقات ASO | PakSoft",
+    "metaDescription": "ASO متكامل لنظامي iOS وAndroid: استراتيجية كلمات مفتاحية وبيانات وصفية واختبار لقطات الشاشة وإدارة المراجعات لزيادة التثبيتات العضوية. اطلبوا تدقيقاً مجانياً الآن.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "تدقيق ASO وقياس الأساس", "description": "ندقّق ترتيب كلماتكم الحالية ومعدلات التحويل وملف التقييمات والأصول البصرية مقارنة بأقوى منافسي فئتكم. ينتج عن ذلك خط أساس يتيح قياس كل تغيير لاحق بأرقام حقيقية." },
+        { "step": 2, "title": "استراتيجية الكلمات المفتاحية", "description": "ببيانات Sensor Tower وAppTweak، نصنّف عبارات البحث حسب الحجم والصعوبة والصلة، ثم نوزعها على العنوان والعنوان الفرعي وحقل الكلمات حسب الأولوية. يحصل Apple وGoogle على خطتين منفصلتين لأن قواعد الفهرسة لديهما تختلف جوهرياً." },
+        { "step": 3, "title": "البيانات الوصفية والمحتوى الإبداعي", "description": "نعيد كتابة العناوين والعناوين الفرعية والأوصاف وفق خطة الكلمات مع إبقائها مقروءة ومقنعة للبشر. وتُصمَّم لقطات الشاشة وفيديوهات المعاينة لإيصال قيمتكم الجوهرية في أول إطارين." },
+        { "step": 4, "title": "التجارب", "description": "تُختبر النسخ البصرية والنصية عبر تجارب صفحات المتجر في Google Play وأداة Product Page Optimization من Apple. نشغّل كل اختبار حتى حجم عيّنة كافٍ قبل إعلان الفائز، تماماً كما نفعل في تحسين التحويل على الويب." },
+        { "step": 5, "title": "برنامج التقييمات والمراجعات", "description": "نطبّق مطالبات تقييم ذكية داخل التطبيق تُفعَّل بعد اللحظات الإيجابية، ونبني آليات للرد السريع على المراجعات السلبية. ونراقب اتجاهات التقييم أسبوعياً لأنها تؤثر مباشرة في الترتيب والتحويل معاً." },
+        { "step": 6, "title": "التكرار والتوطين", "description": "نراجع الترتيب والتحويل وتحركات المنافسين شهرياً ونحدّث خطة الكلمات وفقاً لذلك. وتحصل الأسواق الواعدة على بيانات وصفية ومحتوى بصري موطّن، يتفوق باستمرار على الصفحات المترجمة آلياً." }
+      ],
+      "faq": [
+        { "question": "متى تظهر نتائج ASO؟", "answer": "تظهر تحركات ترتيب الكلمات عادةً خلال 2-6 أسابيع من تحديث البيانات الوصفية، بينما قد تظهر تحسينات التحويل من لقطات الشاشة الجديدة بعد أيام من اختبار رابح. أما بناء قاعدة تثبيتات عضوية قوية فجهد تراكمي يمتد 3-6 أشهر — فـ ASO برنامج مستمر لا إصلاح لمرة واحدة." },
+        { "question": "كيف يختلف ASO بين App Store وGoogle Play؟", "answer": "يفهرس Apple العنوان والعنوان الفرعي وحقل كلمات خفياً من 100 حرف، لكنه لا يفهرس الوصف؛ بينما يفهرس Google الوصف كاملاً ويزن تكرار الكلمات فيه. كما يولي Google وزناً أكبر لإشارات التفاعل والاحتفاظ بالمستخدمين، ولهذا يحتاج المتجران استراتيجيتين منفصلتين فعلاً." },
+        { "question": "هل يمكن تنفيذ ASO دون تعديل التطبيق نفسه؟", "answer": "غالباً نعم — فالكلمات المفتاحية والبيانات الوصفية ولقطات الشاشة والرد على المراجعات كلها عمل على مستوى المتجر. الاستثناء هو مطالبة التقييم: تفعيل نافذة التقييم الأصلية من Apple أو Google في اللحظة المناسبة يتطلب تعديلاً صغيراً داخل التطبيق، ونزوّد مطوريكم بإرشادات تنفيذ دقيقة." },
+        { "question": "ما مدى أهمية التقييمات للترتيب؟", "answer": "مهمة جداً: يستخدم المتجران قيمة التقييم ووتيرة المراجعات كإشارات ترتيب، والمستخدمون يفرزون بها ذهنياً على أي حال. والانتقال من 4.0 إلى 4.5 نجوم يحقق عادةً رفعاً ملموساً في معدل التحويل، وهو ما يغذي الترتيب بدوره — إنها من أعلى مدخلات ASO تأثيراً." },
+        { "question": "هل تديرون أيضاً Apple Search Ads أو Google App Campaigns؟", "answer": "نعم، وهي تتكامل طبيعياً مع ASO: تكشف بيانات الكلمات المدفوعة العبارات التي تحوّل فعلاً، وتحمي حصة ظهور Apple Search Ads الترتيب الذي يبنيه ASO. وتتيح لنا صفحات المنتج المخصصة توجيه كل جمهور مدفوع إلى نسخة صفحة ملائمة له." },
+        { "question": "هل ما يزال حشو الكلمات في الوصف مجدياً؟", "answer": "لدى Apple لم يكن مجدياً قط لأن الأوصاف لا تُفهرس؛ ولدى Google يضرّ فعلياً لأن الخوارزمية ترصد الكثافة غير الطبيعية وينفر المستخدمون من النصوص المحشوة. نستهدف حضوراً طبيعياً للكلمات بنسبة 2-3٪ في أوصاف Play منسوجاً في نص مقنع حقاً." },
+        { "question": "هل ينبغي لنا توطين صفحة المتجر؟", "answer": "إذا كان سوق ما يحقق تثبيتات مهمة أو يمكنه ذلك، فنعم — تحوّل الصفحات الموطّنة باستمرار أفضل من الإنجليزية فقط، غالباً بنسبة 20-40٪ في الأسواق غير الإنجليزية. نرتب اللغات حسب بيانات تحليلاتكم وفرص الفئة، ونبحث الكلمات بلغة السوق الأصلية بدل ترجمتها حرفياً." },
+        { "question": "كيف تقيسون نجاح ASO؟", "answer": "نتتبع ترتيب الكلمات وترتيب الفئة وانطباعات المتجر ومعدل تحويل صفحة المنتج وحجم التثبيتات العضوية — مفصولة عن التثبيتات المدفوعة ليظهر الأثر العضوي بوضوح. وتصلكم شهرياً تقارير تربط كل تغيير أجريناه بالحركة التي أحدثها." }
+      ],
+      "technologies": [
+        { "icon": "appstoreconnect", "name": "App Store Connect" },
+        { "icon": "googleplayconsole", "name": "Google Play Console" },
+        { "icon": "sensortower", "name": "Sensor Tower" },
+        { "icon": "apptweak", "name": "AppTweak" },
+        { "icon": "appfollow", "name": "AppFollow" },
+        { "icon": "appsflyer", "name": "AppsFlyer" },
+        { "icon": "figma", "name": "Figma" },
+        { "icon": "firebase", "name": "Firebase" }
+      ]
+    }
+  }
+}

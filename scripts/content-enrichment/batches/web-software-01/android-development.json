@@ -1,0 +1,278 @@
+{
+  "slug": "android-development",
+  "en": {
+    "name": "Android Development",
+    "shortDescription": "Reach the world's largest mobile platform with native Android apps built in Kotlin and Jetpack Compose — fast, Material Design 3 compliant, and engineered to run well across thousands of device models.",
+    "fullDescription": "Android powers over three billion active devices, but that reach comes with real engineering challenges: thousands of screen sizes, manufacturers that modify the OS, and aggressive battery managers that kill background work. We build native Android apps in Kotlin with Jetpack Compose that handle this diversity by design — offline-first data layers with Room, reliable background processing with WorkManager, and UIs that adapt from budget phones to tablets and foldables. Our team manages the full lifecycle: architecture, sprint-based development, device-matrix QA, Play Store submission, and the annual target-API upgrades Google requires. The result is an app that feels at home on Android instead of a port that merely runs on it.",
+    "features": [
+      "Native Kotlin Development",
+      "Jetpack Compose UI",
+      "Material Design 3 & Dynamic Color",
+      "Google Play Services Integration",
+      "Offline-First Architecture (Room, DataStore)",
+      "Reliable Background Processing (WorkManager)",
+      "Phone, Tablet & Foldable Compatibility",
+      "Play Store Release & CI/CD Automation"
+    ],
+    "benefits": [
+      "Access to 3B+ active Android devices worldwide",
+      "Full native performance with no cross-platform overhead",
+      "Deep Google ecosystem integration — Maps, ML Kit, Wear OS",
+      "Flexible distribution: Play Store, private channels, or enterprise sideloading",
+      "Lower crash rates through structured device-matrix testing",
+      "Faster, safer releases with staged rollouts and automated pipelines"
+    ],
+    "metaTitle": "Android App Development — Kotlin & Compose | PakSoft",
+    "metaDescription": "Native Android development in Kotlin and Jetpack Compose: Material Design 3, offline-first architecture, and Play Store launch support. Get a free estimate.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Discovery & Platform Strategy", "description": "We define your target users, the minimum Android version worth supporting, and whether native is genuinely the right call over cross-platform. You leave this phase with a scoped feature list, a device-support matrix, and a realistic timeline." },
+        { "step": 2, "title": "UX & Material Design", "description": "We design screens that follow Material Design 3 conventions so the app feels instantly familiar to Android users. Prototypes are clickable and tested on real devices before any production code is written." },
+        { "step": 3, "title": "Architecture & Setup", "description": "We establish a modular Kotlin codebase with MVVM or MVI, dependency injection via Hilt, and a CI pipeline from day one. This foundation keeps the project maintainable as features and team size grow." },
+        { "step": 4, "title": "Sprint Development", "description": "Features are built in two-week sprints with a working build delivered to your internal test track at the end of each one. You see real progress on real devices, not slide decks." },
+        { "step": 5, "title": "Device-Matrix QA", "description": "We test on a curated matrix of physical and cloud devices covering popular manufacturers, OS versions, and screen classes. Battery behavior, process death, and poor-network scenarios are tested explicitly, not left to chance." },
+        { "step": 6, "title": "Launch & Iteration", "description": "We handle Play Store listing assets, data-safety declarations, and a staged rollout that starts at a small percentage of users. Post-launch, Crashlytics and Play vitals feed a prioritized improvement backlog." }
+      ],
+      "faq": [
+        { "question": "Should I build native Android or use a cross-platform framework?", "answer": "Native Kotlin is the right choice when you need deep hardware access, top-tier performance, or heavy use of platform APIs like background services, widgets, or Wear OS. If you need iOS and Android quickly on a limited budget and your app is mostly forms and lists, Flutter or React Native can be more economical — and we will tell you honestly which fits your case." },
+        { "question": "How long does an Android app take to build?", "answer": "A focused MVP typically takes 8–14 weeks; a full-featured product with payments, offline sync, and complex integrations runs 4–6 months. The biggest cost drivers are custom backend work, the number of third-party integrations, and how far down the device matrix you need to support." },
+        { "question": "Which Android versions do you support?", "answer": "We usually recommend a minimum of Android 8 (API 26) or 9, which covers well over 90% of active devices while avoiding the heavy workarounds older versions demand. We pick the exact floor based on your market data — emerging-market audiences often skew older than European ones." },
+        { "question": "Do you use Jetpack Compose or XML layouts?", "answer": "Jetpack Compose is our default for new projects: it is Google's recommended toolkit, cuts UI code significantly, and makes dynamic theming and animation far easier. For existing XML codebases we adopt Compose incrementally screen by screen, since the two interoperate cleanly." },
+        { "question": "How does Google Play review work, and can my app get rejected?", "answer": "Play review is mostly automated and usually completes within 24–48 hours, but policy violations around data safety, permissions, and ads cause real rejections. New personal developer accounts must also run a closed test with at least 12 testers for 14 days before production release — we plan for this from the start so it never delays your launch." },
+        { "question": "What ongoing maintenance does an Android app need?", "answer": "Google requires apps to target a recent API level every year, and new OS releases regularly change permission and background-work behavior. Plan for at least one maintenance cycle per year plus dependency updates; we offer support plans that cover these upgrades, monitoring, and small improvements." },
+        { "question": "Can my app work offline?", "answer": "Yes, and on Android it should — connectivity is unreliable for a large share of users. We build offline-first with a local Room database as the source of truth and background synchronization via WorkManager, so the app stays usable on the metro or in areas with weak coverage." },
+        { "question": "How do you keep the app fast on low-end devices?", "answer": "We set performance budgets early: cold start under 2 seconds, smooth 60fps scrolling, and an APK/AAB size kept lean with R8 shrinking and on-demand resource delivery. We profile on genuinely cheap hardware, because an app that is fast on a flagship can still be unusable on a $120 phone." }
+      ],
+      "technologies": [
+        { "icon": "kotlin", "name": "Kotlin" },
+        { "icon": "jetpackcompose", "name": "Jetpack Compose" },
+        { "icon": "androidstudio", "name": "Android Studio" },
+        { "icon": "room", "name": "Room DB" },
+        { "icon": "hilt", "name": "Hilt" },
+        { "icon": "retrofit", "name": "Retrofit" },
+        { "icon": "firebase", "name": "Firebase" },
+        { "icon": "gradle", "name": "Gradle" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Android Geliştirme",
+    "shortDescription": "Kotlin ve Jetpack Compose ile geliştirilen native Android uygulamalarıyla dünyanın en büyük mobil platformuna ulaşın — hızlı, Material Design 3 uyumlu ve binlerce farklı cihaz modelinde sorunsuz çalışacak şekilde tasarlanmış.",
+    "fullDescription": "Android, üç milyardan fazla aktif cihaza güç veriyor; ancak bu erişim ciddi mühendislik zorluklarıyla birlikte gelir: binlerce ekran boyutu, işletim sistemini değiştiren üreticiler ve arka plan işlerini sonlandıran agresif pil yöneticileri. Biz bu çeşitliliği tasarım aşamasından itibaren ele alan, Kotlin ve Jetpack Compose tabanlı native Android uygulamaları geliştiriyoruz — Room ile çevrimdışı öncelikli veri katmanları, WorkManager ile güvenilir arka plan işleme ve bütçe telefonlardan tabletlere ve katlanabilir cihazlara uyum sağlayan arayüzler. Ekibimiz tüm yaşam döngüsünü yönetir: mimari, sprint bazlı geliştirme, cihaz matrisi testleri, Play Store yayını ve Google'ın her yıl zorunlu kıldığı hedef API güncellemeleri. Sonuç, Android'de yalnızca çalışan bir uyarlama değil, platforma ait hisseden bir uygulamadır.",
+    "features": [
+      "Native Kotlin Geliştirme",
+      "Jetpack Compose Arayüzleri",
+      "Material Design 3 ve Dinamik Renkler",
+      "Google Play Services Entegrasyonu",
+      "Çevrimdışı Öncelikli Mimari (Room, DataStore)",
+      "Güvenilir Arka Plan İşleme (WorkManager)",
+      "Telefon, Tablet ve Katlanabilir Cihaz Uyumluluğu",
+      "Play Store Yayını ve CI/CD Otomasyonu"
+    ],
+    "benefits": [
+      "Dünya genelinde 3 milyardan fazla aktif Android cihaza erişim",
+      "Cross-platform yükü olmadan tam native performans",
+      "Derin Google ekosistemi entegrasyonu — Maps, ML Kit, Wear OS",
+      "Esnek dağıtım: Play Store, özel kanallar veya kurumsal yükleme",
+      "Yapılandırılmış cihaz matrisi testleriyle daha düşük çökme oranları",
+      "Aşamalı yayın ve otomatik pipeline'larla daha hızlı, güvenli sürümler"
+    ],
+    "metaTitle": "Android Uygulama Geliştirme — Kotlin | PakSoft",
+    "metaDescription": "Kotlin ve Jetpack Compose ile native Android geliştirme: Material Design 3, çevrimdışı öncelikli mimari ve Play Store yayın desteği. Ücretsiz teklif alın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Keşif ve Platform Stratejisi", "description": "Hedef kullanıcılarınızı, desteklemeye değer en düşük Android sürümünü ve native geliştirmenin cross-platform'a göre gerçekten doğru tercih olup olmadığını birlikte belirleriz. Bu aşamanın sonunda kapsamı netleşmiş bir özellik listesi, cihaz destek matrisi ve gerçekçi bir zaman planı elde edersiniz." },
+        { "step": 2, "title": "UX ve Material Tasarım", "description": "Uygulamanın Android kullanıcılarına anında tanıdık gelmesi için Material Design 3 kurallarına uygun ekranlar tasarlarız. Prototipler tıklanabilir hâlde hazırlanır ve üretim kodu yazılmadan önce gerçek cihazlarda test edilir." },
+        { "step": 3, "title": "Mimari ve Kurulum", "description": "MVVM veya MVI deseni, Hilt ile bağımlılık enjeksiyonu ve ilk günden işleyen bir CI hattıyla modüler bir Kotlin kod tabanı kurarız. Bu temel, özellikler ve ekip büyüdükçe projenin sürdürülebilir kalmasını sağlar." },
+        { "step": 4, "title": "Sprint Bazlı Geliştirme", "description": "Özellikler iki haftalık sprintlerde geliştirilir ve her sprint sonunda çalışan bir sürüm iç test kanalınıza teslim edilir. İlerlemeyi sunum slaytlarında değil, gerçek cihazlarda görürsünüz." },
+        { "step": 5, "title": "Cihaz Matrisi Testleri", "description": "Popüler üreticileri, işletim sistemi sürümlerini ve ekran sınıflarını kapsayan fiziksel ve bulut tabanlı bir cihaz matrisinde test yaparız. Pil davranışı, süreç sonlandırma ve zayıf ağ senaryoları şansa bırakılmaz, açıkça test edilir." },
+        { "step": 6, "title": "Yayın ve İyileştirme", "description": "Play Store görsellerini, veri güvenliği beyanlarını ve kullanıcıların küçük bir yüzdesiyle başlayan aşamalı yayını biz yönetiriz. Yayın sonrasında Crashlytics ve Play vitals verileri, önceliklendirilmiş bir iyileştirme listesini besler." }
+      ],
+      "faq": [
+        { "question": "Native Android mi geliştirmeliyim yoksa cross-platform bir framework mü kullanmalıyım?", "answer": "Derin donanım erişimi, üst düzey performans veya arka plan servisleri, widget'lar ya da Wear OS gibi platform API'lerinin yoğun kullanımı gerekiyorsa native Kotlin doğru tercihtir. Sınırlı bütçeyle iOS ve Android'e hızla çıkmanız gerekiyorsa ve uygulamanız ağırlıklı olarak form ve listelerden oluşuyorsa Flutter veya React Native daha ekonomik olabilir — hangisinin size uyduğunu dürüstçe söyleriz." },
+        { "question": "Bir Android uygulaması ne kadar sürede geliştirilir?", "answer": "Odaklı bir MVP genellikle 8–14 hafta sürer; ödeme, çevrimdışı senkronizasyon ve karmaşık entegrasyonlar içeren tam kapsamlı bir ürün 4–6 ayı bulur. Maliyeti en çok etkileyen faktörler özel backend geliştirme, üçüncü taraf entegrasyon sayısı ve desteklenecek cihaz yelpazesinin genişliğidir." },
+        { "question": "Hangi Android sürümlerini destekliyorsunuz?", "answer": "Genellikle minimum Android 8 (API 26) veya 9 öneririz; bu, aktif cihazların %90'ından fazlasını kapsarken eski sürümlerin gerektirdiği ağır geçici çözümlerden kaçınmanızı sağlar. Kesin alt sınırı pazar verilerinize göre belirleriz — gelişmekte olan pazarlardaki kullanıcılar Avrupa'dakilere göre genellikle daha eski cihazlar kullanır." },
+        { "question": "Jetpack Compose mu yoksa XML layout mu kullanıyorsunuz?", "answer": "Yeni projelerde varsayılanımız Jetpack Compose: Google'ın önerdiği araç seti, arayüz kodunu önemli ölçüde azaltıyor ve dinamik tema ile animasyonları çok daha kolay hâle getiriyor. Mevcut XML kod tabanlarında ise Compose'u ekran ekran kademeli olarak devreye alırız; iki teknoloji sorunsuz birlikte çalışır." },
+        { "question": "Google Play incelemesi nasıl işler, uygulamam reddedilebilir mi?", "answer": "Play incelemesi büyük ölçüde otomatiktir ve genellikle 24–48 saat içinde tamamlanır; ancak veri güvenliği, izinler ve reklamlarla ilgili politika ihlalleri gerçek retlere yol açar. Yeni bireysel geliştirici hesaplarının üretim yayınından önce en az 12 test kullanıcısıyla 14 günlük kapalı test yapması da zorunludur — bunu baştan planladığımız için lansmanınız asla gecikmez." },
+        { "question": "Bir Android uygulaması ne tür sürekli bakım gerektirir?", "answer": "Google, uygulamaların her yıl güncel bir API seviyesini hedeflemesini zorunlu kılar ve yeni işletim sistemi sürümleri izin ve arka plan davranışlarını düzenli olarak değiştirir. Yılda en az bir bakım döngüsü ve bağımlılık güncellemeleri için plan yapın; bu yükseltmeleri, izlemeyi ve küçük iyileştirmeleri kapsayan destek paketleri sunuyoruz." },
+        { "question": "Uygulamam çevrimdışı çalışabilir mi?", "answer": "Evet — ve Android'de çalışmalıdır da; kullanıcıların önemli bir bölümü için bağlantı güvenilir değildir. Yerel Room veritabanını ana veri kaynağı yapan ve WorkManager ile arka planda senkronize eden çevrimdışı öncelikli bir mimari kurarız; böylece uygulama metroda veya zayıf kapsama alanlarında kullanılabilir kalır." },
+        { "question": "Düşük donanımlı cihazlarda uygulamayı nasıl hızlı tutuyorsunuz?", "answer": "Performans bütçelerini erkenden belirleriz: 2 saniyenin altında soğuk başlatma, akıcı 60fps kaydırma ve R8 küçültme ile isteğe bağlı kaynak dağıtımı sayesinde yalın tutulan APK/AAB boyutu. Profilleme işlemini gerçekten ucuz donanımlarda yaparız; çünkü amiral gemisi bir telefonda hızlı olan uygulama, 120 dolarlık bir telefonda kullanılamaz olabilir." }
+      ],
+      "technologies": [
+        { "icon": "kotlin", "name": "Kotlin" },
+        { "icon": "jetpackcompose", "name": "Jetpack Compose" },
+        { "icon": "androidstudio", "name": "Android Studio" },
+        { "icon": "room", "name": "Room DB" },
+        { "icon": "hilt", "name": "Hilt" },
+        { "icon": "retrofit", "name": "Retrofit" },
+        { "icon": "firebase", "name": "Firebase" },
+        { "icon": "gradle", "name": "Gradle" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Android-Entwicklung",
+    "shortDescription": "Erreichen Sie die größte Mobilplattform der Welt mit nativen Android-Apps in Kotlin und Jetpack Compose — schnell, konform mit Material Design 3 und ausgelegt auf Tausende unterschiedlicher Gerätemodelle.",
+    "fullDescription": "Android läuft auf über drei Milliarden aktiven Geräten — doch diese Reichweite bringt echte technische Herausforderungen mit sich: Tausende Bildschirmgrößen, Hersteller, die das Betriebssystem verändern, und aggressive Akku-Manager, die Hintergrundprozesse beenden. Wir entwickeln native Android-Apps in Kotlin mit Jetpack Compose, die diese Vielfalt von Grund auf berücksichtigen — Offline-First-Datenschichten mit Room, zuverlässige Hintergrundverarbeitung mit WorkManager und Oberflächen, die vom Budget-Smartphone bis zu Tablets und Foldables skalieren. Unser Team betreut den gesamten Lebenszyklus: Architektur, Sprint-Entwicklung, Tests über eine Gerätematrix, Play-Store-Einreichung und die jährlichen Target-API-Upgrades, die Google verlangt. Das Ergebnis ist eine App, die sich auf Android zu Hause fühlt — kein bloß lauffähiger Port.",
+    "features": [
+      "Native Kotlin-Entwicklung",
+      "Jetpack-Compose-Oberflächen",
+      "Material Design 3 & Dynamic Color",
+      "Google-Play-Services-Integration",
+      "Offline-First-Architektur (Room, DataStore)",
+      "Zuverlässige Hintergrundverarbeitung (WorkManager)",
+      "Kompatibilität mit Phones, Tablets & Foldables",
+      "Play-Store-Release & CI/CD-Automatisierung"
+    ],
+    "benefits": [
+      "Zugang zu über 3 Mrd. aktiven Android-Geräten weltweit",
+      "Volle native Performance ohne Cross-Platform-Overhead",
+      "Tiefe Integration ins Google-Ökosystem — Maps, ML Kit, Wear OS",
+      "Flexible Distribution: Play Store, private Kanäle oder Enterprise-Sideloading",
+      "Niedrigere Crash-Raten durch strukturierte Gerätematrix-Tests",
+      "Schnellere, sicherere Releases dank Staged Rollouts und Automatisierung"
+    ],
+    "metaTitle": "Android-App-Entwicklung — Kotlin & Compose | PakSoft",
+    "metaDescription": "Native Android-Entwicklung mit Kotlin und Jetpack Compose: Material Design 3, Offline-First-Architektur und Play-Store-Launch. Jetzt kostenloses Angebot anfordern.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Discovery & Plattformstrategie", "description": "Wir definieren Ihre Zielnutzer, die niedrigste sinnvoll unterstützte Android-Version und ob nativ gegenüber Cross-Platform wirklich die richtige Wahl ist. Am Ende dieser Phase stehen ein klar umrissener Funktionsumfang, eine Geräte-Supportmatrix und ein realistischer Zeitplan." },
+        { "step": 2, "title": "UX & Material Design", "description": "Wir gestalten Screens nach den Konventionen von Material Design 3, damit sich die App für Android-Nutzer sofort vertraut anfühlt. Prototypen sind klickbar und werden auf echten Geräten getestet, bevor Produktionscode entsteht." },
+        { "step": 3, "title": "Architektur & Setup", "description": "Wir bauen eine modulare Kotlin-Codebasis mit MVVM oder MVI, Dependency Injection über Hilt und einer CI-Pipeline ab dem ersten Tag. Dieses Fundament hält das Projekt wartbar, wenn Funktionsumfang und Team wachsen." },
+        { "step": 4, "title": "Sprint-Entwicklung", "description": "Funktionen entstehen in zweiwöchigen Sprints, an deren Ende jeweils ein lauffähiger Build in Ihrem internen Test-Track landet. Sie sehen echten Fortschritt auf echten Geräten — nicht auf Folien." },
+        { "step": 5, "title": "Gerätematrix-QA", "description": "Wir testen auf einer kuratierten Matrix aus physischen und Cloud-Geräten über gängige Hersteller, OS-Versionen und Bildschirmklassen hinweg. Akku-Verhalten, Prozessabbrüche und schwache Netzverbindungen werden gezielt getestet statt dem Zufall überlassen." },
+        { "step": 6, "title": "Launch & Iteration", "description": "Wir übernehmen Play-Store-Assets, Datensicherheitserklärungen und einen Staged Rollout, der bei einem kleinen Nutzeranteil beginnt. Nach dem Launch speisen Crashlytics und Play Vitals ein priorisiertes Verbesserungs-Backlog." }
+      ],
+      "faq": [
+        { "question": "Sollte ich nativ für Android entwickeln oder ein Cross-Platform-Framework nutzen?", "answer": "Natives Kotlin ist die richtige Wahl bei tiefem Hardwarezugriff, höchsten Performance-Anforderungen oder intensiver Nutzung von Plattform-APIs wie Hintergrunddiensten, Widgets oder Wear OS. Wenn Sie iOS und Android schnell mit begrenztem Budget brauchen und Ihre App vor allem aus Formularen und Listen besteht, können Flutter oder React Native wirtschaftlicher sein — wir sagen Ihnen ehrlich, was zu Ihrem Fall passt." },
+        { "question": "Wie lange dauert die Entwicklung einer Android-App?", "answer": "Ein fokussiertes MVP dauert typischerweise 8–14 Wochen; ein vollwertiges Produkt mit Zahlungen, Offline-Sync und komplexen Integrationen 4–6 Monate. Die größten Kostentreiber sind individuelles Backend, die Zahl der Drittanbieter-Integrationen und die Breite der unterstützten Gerätematrix." },
+        { "question": "Welche Android-Versionen unterstützen Sie?", "answer": "Wir empfehlen in der Regel mindestens Android 8 (API 26) oder 9 — das deckt deutlich über 90 % der aktiven Geräte ab und vermeidet die aufwendigen Workarounds älterer Versionen. Die genaue Untergrenze legen wir anhand Ihrer Marktdaten fest; in Schwellenmärkten sind ältere Geräte häufiger als in Europa." },
+        { "question": "Nutzen Sie Jetpack Compose oder XML-Layouts?", "answer": "Jetpack Compose ist unser Standard für neue Projekte: Es ist Googles empfohlenes Toolkit, reduziert UI-Code erheblich und macht dynamisches Theming und Animationen deutlich einfacher. Bestehende XML-Codebasen migrieren wir schrittweise Screen für Screen, da beide Technologien sauber interoperieren." },
+        { "question": "Wie läuft das Google-Play-Review, und kann meine App abgelehnt werden?", "answer": "Das Play-Review ist weitgehend automatisiert und meist in 24–48 Stunden abgeschlossen; Policy-Verstöße bei Datensicherheit, Berechtigungen und Werbung führen jedoch zu echten Ablehnungen. Neue persönliche Entwicklerkonten müssen vor dem Produktiv-Release zudem einen geschlossenen Test mit mindestens 12 Testern über 14 Tage durchführen — wir planen das von Anfang an ein, damit Ihr Launch nie ins Stocken gerät." },
+        { "question": "Welche laufende Wartung braucht eine Android-App?", "answer": "Google verlangt jedes Jahr, dass Apps ein aktuelles API-Level anvisieren, und neue OS-Versionen ändern regelmäßig das Verhalten von Berechtigungen und Hintergrundarbeit. Kalkulieren Sie mindestens einen Wartungszyklus pro Jahr plus Dependency-Updates ein; unsere Supportpakete decken diese Upgrades, Monitoring und kleinere Verbesserungen ab." },
+        { "question": "Kann meine App offline funktionieren?", "answer": "Ja — und auf Android sollte sie das auch, denn für viele Nutzer ist die Verbindung unzuverlässig. Wir entwickeln offline-first mit einer lokalen Room-Datenbank als Source of Truth und Hintergrund-Synchronisierung über WorkManager, damit die App auch in der U-Bahn oder bei schwachem Empfang nutzbar bleibt." },
+        { "question": "Wie halten Sie die App auf Low-End-Geräten schnell?", "answer": "Wir setzen früh Performance-Budgets: Kaltstart unter 2 Sekunden, flüssiges Scrollen mit 60 fps und eine schlanke APK/AAB-Größe dank R8-Shrinking und bedarfsgesteuerter Ressourcen. Profiling machen wir auf wirklich günstiger Hardware — eine App, die auf einem Flaggschiff schnell ist, kann auf einem 120-Euro-Gerät trotzdem unbenutzbar sein." }
+      ],
+      "technologies": [
+        { "icon": "kotlin", "name": "Kotlin" },
+        { "icon": "jetpackcompose", "name": "Jetpack Compose" },
+        { "icon": "androidstudio", "name": "Android Studio" },
+        { "icon": "room", "name": "Room DB" },
+        { "icon": "hilt", "name": "Hilt" },
+        { "icon": "retrofit", "name": "Retrofit" },
+        { "icon": "firebase", "name": "Firebase" },
+        { "icon": "gradle", "name": "Gradle" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "اینڈرائیڈ ڈیولپمنٹ",
+    "shortDescription": "Kotlin اور Jetpack Compose سے بنی native اینڈرائیڈ ایپس کے ذریعے دنیا کے سب سے بڑے موبائل پلیٹ فارم تک پہنچیں — تیز رفتار، Material Design 3 کے مطابق اور ہزاروں مختلف ڈیوائس ماڈلز پر بہترین کارکردگی کے لیے تیار۔",
+    "fullDescription": "اینڈرائیڈ تین ارب سے زائد فعال ڈیوائسز پر چلتا ہے، مگر یہ وسعت حقیقی انجینئرنگ چیلنجز کے ساتھ آتی ہے: ہزاروں اسکرین سائز، آپریٹنگ سسٹم میں ردوبدل کرنے والے مینوفیکچررز، اور بیک گراؤنڈ کام روک دینے والے سخت بیٹری منیجرز۔ ہم Kotlin اور Jetpack Compose پر native اینڈرائیڈ ایپس بناتے ہیں جو اس تنوع کو شروع ہی سے مدنظر رکھتی ہیں — Room کے ساتھ آف لائن فرسٹ ڈیٹا لیئرز، WorkManager کے ذریعے قابلِ اعتماد بیک گراؤنڈ پراسیسنگ، اور ایسے انٹرفیس جو سستے فونز سے لے کر ٹیبلٹس اور فولڈ ایبل ڈیوائسز تک ڈھل جاتے ہیں۔ ہماری ٹیم پورا لائف سائیکل سنبھالتی ہے: آرکیٹیکچر، اسپرنٹ بنیادوں پر ڈیولپمنٹ، ڈیوائس میٹرکس ٹیسٹنگ، Play Store پر اشاعت، اور Google کی سالانہ لازمی target API اپ گریڈز۔ نتیجہ ایک ایسی ایپ ہے جو اینڈرائیڈ پر محض چلتی نہیں بلکہ اسی کی لگتی ہے۔",
+    "features": [
+      "Native Kotlin ڈیولپمنٹ",
+      "Jetpack Compose انٹرفیس",
+      "Material Design 3 اور ڈائنامک کلر",
+      "Google Play Services انٹیگریشن",
+      "آف لائن فرسٹ آرکیٹیکچر (Room، DataStore)",
+      "قابلِ اعتماد بیک گراؤنڈ پراسیسنگ (WorkManager)",
+      "فون، ٹیبلٹ اور فولڈ ایبل ڈیوائسز سے ہم آہنگی",
+      "Play Store ریلیز اور CI/CD آٹومیشن"
+    ],
+    "benefits": [
+      "دنیا بھر میں 3 ارب سے زائد فعال اینڈرائیڈ ڈیوائسز تک رسائی",
+      "کراس پلیٹ فارم بوجھ کے بغیر مکمل native کارکردگی",
+      "Google ایکو سسٹم سے گہری انٹیگریشن — Maps، ML Kit، Wear OS",
+      "لچک دار تقسیم: Play Store، نجی چینلز یا انٹرپرائز انسٹالیشن",
+      "منظم ڈیوائس میٹرکس ٹیسٹنگ سے کریش کی کم شرح",
+      "مرحلہ وار اجراء اور خودکار پائپ لائنز سے تیز اور محفوظ ریلیزز"
+    ],
+    "metaTitle": "اینڈرائیڈ ایپ ڈیولپمنٹ — Kotlin | PakSoft",
+    "metaDescription": "Kotlin اور Jetpack Compose پر native اینڈرائیڈ ڈیولپمنٹ: Material Design 3، آف لائن فرسٹ آرکیٹیکچر اور Play Store لانچ سپورٹ۔ آج ہی مفت تخمینہ حاصل کریں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "دریافت اور پلیٹ فارم حکمتِ عملی", "description": "ہم آپ کے ہدف صارفین، سپورٹ کے قابل کم از کم اینڈرائیڈ ورژن، اور یہ طے کرتے ہیں کہ آیا native واقعی کراس پلیٹ فارم سے بہتر انتخاب ہے۔ اس مرحلے کے اختتام پر آپ کے پاس واضح فیچر لسٹ، ڈیوائس سپورٹ میٹرکس اور حقیقت پسندانہ ٹائم لائن ہوتی ہے۔" },
+        { "step": 2, "title": "UX اور Material ڈیزائن", "description": "ہم Material Design 3 کے اصولوں کے مطابق اسکرینیں ڈیزائن کرتے ہیں تاکہ ایپ اینڈرائیڈ صارفین کو فوراً مانوس لگے۔ پروٹوٹائپس قابلِ کلک ہوتے ہیں اور پروڈکشن کوڈ لکھنے سے پہلے حقیقی ڈیوائسز پر آزمائے جاتے ہیں۔" },
+        { "step": 3, "title": "آرکیٹیکچر اور سیٹ اپ", "description": "ہم MVVM یا MVI پیٹرن، Hilt کے ذریعے ڈیپنڈنسی انجیکشن اور پہلے دن سے فعال CI پائپ لائن کے ساتھ ماڈیولر Kotlin کوڈ بیس قائم کرتے ہیں۔ یہ بنیاد فیچرز اور ٹیم کے بڑھنے پر بھی پروجیکٹ کو قابلِ انتظام رکھتی ہے۔" },
+        { "step": 4, "title": "اسپرنٹ ڈیولپمنٹ", "description": "فیچرز دو ہفتوں کے اسپرنٹس میں بنتے ہیں اور ہر اسپرنٹ کے آخر میں ایک چلتی ہوئی بلڈ آپ کے اندرونی ٹیسٹ ٹریک پر پہنچتی ہے۔ آپ پیش رفت سلائیڈز پر نہیں بلکہ حقیقی ڈیوائسز پر دیکھتے ہیں۔" },
+        { "step": 5, "title": "ڈیوائس میٹرکس کوالٹی ٹیسٹنگ", "description": "ہم مقبول مینوفیکچررز، OS ورژنز اور اسکرین کلاسز پر مشتمل فزیکل اور کلاؤڈ ڈیوائسز کے منتخب میٹرکس پر ٹیسٹ کرتے ہیں۔ بیٹری رویّہ، پراسیس کا بند ہونا اور کمزور نیٹ ورک کے حالات قسمت پر نہیں چھوڑے جاتے بلکہ باقاعدہ جانچے جاتے ہیں۔" },
+        { "step": 6, "title": "لانچ اور بہتری", "description": "ہم Play Store کی لسٹنگ، ڈیٹا سیفٹی ڈیکلریشنز اور صارفین کے چھوٹے حصے سے شروع ہونے والا مرحلہ وار اجراء سنبھالتے ہیں۔ لانچ کے بعد Crashlytics اور Play vitals کا ڈیٹا ترجیحی بہتری کی فہرست کو تقویت دیتا ہے۔" }
+      ],
+      "faq": [
+        { "question": "مجھے native اینڈرائیڈ بنانا چاہیے یا کراس پلیٹ فارم فریم ورک استعمال کرنا چاہیے؟", "answer": "اگر آپ کو گہری ہارڈویئر رسائی، اعلیٰ ترین کارکردگی یا بیک گراؤنڈ سروسز، widgets یا Wear OS جیسی پلیٹ فارم APIs کا بھرپور استعمال درکار ہو تو native Kotlin درست انتخاب ہے۔ اگر محدود بجٹ میں iOS اور اینڈرائیڈ دونوں جلد چاہئیں اور ایپ زیادہ تر فارمز اور فہرستوں پر مشتمل ہو تو Flutter یا React Native زیادہ کفایتی ہو سکتے ہیں — ہم ایمانداری سے بتائیں گے کہ آپ کے لیے کیا بہتر ہے۔" },
+        { "question": "اینڈرائیڈ ایپ بننے میں کتنا وقت لگتا ہے؟", "answer": "ایک مرکوز MVP عموماً 8 تا 14 ہفتے لیتا ہے؛ ادائیگیوں، آف لائن سنک اور پیچیدہ انٹیگریشنز والی مکمل پروڈکٹ 4 تا 6 ماہ تک جاتی ہے۔ لاگت پر سب سے زیادہ اثر کسٹم بیک اینڈ، تھرڈ پارٹی انٹیگریشنز کی تعداد اور سپورٹ کی جانے والی ڈیوائسز کی وسعت ڈالتی ہے۔" },
+        { "question": "آپ کون سے اینڈرائیڈ ورژنز سپورٹ کرتے ہیں؟", "answer": "ہم عموماً کم از کم Android 8 (API 26) یا 9 تجویز کرتے ہیں، جو فعال ڈیوائسز کے 90 فیصد سے زائد کا احاطہ کرتا ہے اور پرانے ورژنز کے بھاری حل طلب مسائل سے بچاتا ہے۔ حتمی حد آپ کی مارکیٹ کے ڈیٹا پر طے ہوتی ہے — ترقی پذیر مارکیٹوں میں صارفین اکثر یورپ کی نسبت پرانی ڈیوائسز استعمال کرتے ہیں۔" },
+        { "question": "آپ Jetpack Compose استعمال کرتے ہیں یا XML layouts؟", "answer": "نئے پروجیکٹس کے لیے ہمارا ڈیفالٹ Jetpack Compose ہے: یہ Google کا تجویز کردہ ٹول کٹ ہے، UI کوڈ نمایاں طور پر کم کرتا ہے اور ڈائنامک تھیمنگ اور اینیمیشن کو بہت آسان بناتا ہے۔ موجودہ XML کوڈ بیس میں ہم Compose کو اسکرین بہ اسکرین بتدریج شامل کرتے ہیں، کیونکہ دونوں ٹیکنالوجیز باہم بخوبی کام کرتی ہیں۔" },
+        { "question": "Google Play کا جائزہ کیسے ہوتا ہے اور کیا میری ایپ مسترد ہو سکتی ہے؟", "answer": "Play کا جائزہ زیادہ تر خودکار ہوتا ہے اور عموماً 24 تا 48 گھنٹوں میں مکمل ہو جاتا ہے، تاہم ڈیٹا سیفٹی، اجازتوں اور اشتہارات سے متعلق پالیسی خلاف ورزیاں واقعی مسترد ہونے کا سبب بنتی ہیں۔ نئے ذاتی ڈیولپر اکاؤنٹس کو پروڈکشن ریلیز سے پہلے کم از کم 12 ٹیسٹرز کے ساتھ 14 دن کا کلوزڈ ٹیسٹ بھی کرنا ہوتا ہے — ہم اسے شروع ہی سے منصوبے میں رکھتے ہیں تاکہ لانچ کبھی تاخیر کا شکار نہ ہو۔" },
+        { "question": "اینڈرائیڈ ایپ کو کس قسم کی مسلسل دیکھ بھال درکار ہوتی ہے؟", "answer": "Google ہر سال ایپس سے تازہ API لیول ہدف بنانے کا تقاضا کرتا ہے، اور نئے OS ریلیزز اجازتوں اور بیک گراؤنڈ کام کے رویّے کو باقاعدگی سے بدلتے ہیں۔ سال میں کم از کم ایک مینٹیننس سائیکل اور ڈیپنڈنسی اپ ڈیٹس کی منصوبہ بندی کریں؛ ہم ایسے سپورٹ پلانز پیش کرتے ہیں جو یہ اپ گریڈز، مانیٹرنگ اور چھوٹی بہتریاں شامل رکھتے ہیں۔" },
+        { "question": "کیا میری ایپ آف لائن کام کر سکتی ہے؟", "answer": "جی ہاں — اور اینڈرائیڈ پر کرنی بھی چاہیے، کیونکہ صارفین کے بڑے حصے کے لیے انٹرنیٹ کنکشن غیر یقینی ہوتا ہے۔ ہم مقامی Room ڈیٹابیس کو بنیادی ماخذ بنا کر اور WorkManager کے ذریعے بیک گراؤنڈ سنکرونائزیشن کے ساتھ آف لائن فرسٹ ایپ بناتے ہیں، تاکہ ایپ میٹرو میں یا کمزور سگنل والے علاقوں میں بھی قابلِ استعمال رہے۔" },
+        { "question": "کم قیمت ڈیوائسز پر آپ ایپ کو تیز کیسے رکھتے ہیں؟", "answer": "ہم شروع ہی میں کارکردگی کے اہداف طے کرتے ہیں: 2 سیکنڈ سے کم کولڈ اسٹارٹ، رواں 60fps اسکرولنگ، اور R8 شرنکنگ اور آن ڈیمانڈ ریسورس ڈیلیوری سے ہلکا APK/AAB سائز۔ پروفائلنگ ہم واقعی سستے ہارڈویئر پر کرتے ہیں، کیونکہ فلیگ شپ فون پر تیز چلنے والی ایپ 120 ڈالر کے فون پر ناقابلِ استعمال بھی ہو سکتی ہے۔" }
+      ],
+      "technologies": [
+        { "icon": "kotlin", "name": "Kotlin" },
+        { "icon": "jetpackcompose", "name": "Jetpack Compose" },
+        { "icon": "androidstudio", "name": "Android Studio" },
+        { "icon": "room", "name": "Room DB" },
+        { "icon": "hilt", "name": "Hilt" },
+        { "icon": "retrofit", "name": "Retrofit" },
+        { "icon": "firebase", "name": "Firebase" },
+        { "icon": "gradle", "name": "Gradle" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تطوير تطبيقات Android",
+    "shortDescription": "اوصلوا إلى أكبر منصة جوّال في العالم بتطبيقات Android أصلية مبنية بـ Kotlin وJetpack Compose — سريعة، متوافقة مع Material Design 3، ومصمّمة للعمل بسلاسة على آلاف طرازات الأجهزة.",
+    "fullDescription": "يعمل Android على أكثر من ثلاثة مليارات جهاز نشط، لكن هذا الانتشار يحمل تحديات هندسية حقيقية: آلاف أحجام الشاشات، ومصنّعون يعدّلون نظام التشغيل، ومديرو بطارية صارمون يوقفون المهام الخلفية. نبني تطبيقات Android أصلية بـ Kotlin وJetpack Compose تتعامل مع هذا التنوع منذ التصميم — طبقات بيانات تعمل دون اتصال أولاً مع Room، ومعالجة خلفية موثوقة عبر WorkManager، وواجهات تتكيّف من الهواتف الاقتصادية إلى الأجهزة اللوحية والقابلة للطي. يتولى فريقنا دورة الحياة كاملة: البنية المعمارية، والتطوير بنظام السباقات، واختبارات مصفوفة الأجهزة، والنشر على Play Store، وترقيات target API السنوية التي تشترطها Google. النتيجة تطبيق ينتمي فعلاً إلى Android، لا نسخة منقولة تعمل عليه فحسب.",
+    "features": [
+      "تطوير أصلي بلغة Kotlin",
+      "واجهات Jetpack Compose",
+      "Material Design 3 والألوان الديناميكية",
+      "تكامل مع Google Play Services",
+      "بنية تعمل دون اتصال أولاً (Room وDataStore)",
+      "معالجة خلفية موثوقة (WorkManager)",
+      "توافق مع الهواتف والأجهزة اللوحية والقابلة للطي",
+      "إطلاق على Play Store وأتمتة CI/CD"
+    ],
+    "benefits": [
+      "وصول إلى أكثر من 3 مليارات جهاز Android نشط حول العالم",
+      "أداء أصلي كامل دون أعباء الحلول متعددة المنصات",
+      "تكامل عميق مع منظومة Google — Maps وML Kit وWear OS",
+      "توزيع مرن: Play Store أو قنوات خاصة أو تثبيت مؤسسي",
+      "معدلات انهيار أقل بفضل اختبارات منظّمة على مصفوفة أجهزة",
+      "إصدارات أسرع وأكثر أماناً عبر الطرح التدريجي والأتمتة"
+    ],
+    "metaTitle": "تطوير تطبيقات Android — Kotlin | PakSoft",
+    "metaDescription": "تطوير Android أصلي بـ Kotlin وJetpack Compose: تصميم Material Design 3، بنية تعمل دون اتصال، ودعم كامل لإطلاق التطبيق على Play Store. اطلبوا تقديراً مجانياً اليوم.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "الاستكشاف واستراتيجية المنصة", "description": "نحدّد مستخدميكم المستهدفين، وأدنى إصدار Android يستحق الدعم، وما إذا كان التطوير الأصلي هو الخيار الصحيح فعلاً مقارنة بالحلول متعددة المنصات. تخرجون من هذه المرحلة بقائمة ميزات محددة النطاق، ومصفوفة دعم أجهزة، وجدول زمني واقعي." },
+        { "step": 2, "title": "تجربة المستخدم وتصميم Material", "description": "نصمّم الشاشات وفق معايير Material Design 3 ليبدو التطبيق مألوفاً فوراً لمستخدمي Android. النماذج الأولية قابلة للنقر وتُختبر على أجهزة حقيقية قبل كتابة أي كود إنتاجي." },
+        { "step": 3, "title": "البنية المعمارية والتأسيس", "description": "نؤسس قاعدة كود Kotlin معيارية بنمط MVVM أو MVI، مع حقن التبعيات عبر Hilt وخط CI يعمل من اليوم الأول. هذا الأساس يحافظ على قابلية الصيانة مع نمو الميزات وحجم الفريق." },
+        { "step": 4, "title": "التطوير بنظام السباقات", "description": "تُبنى الميزات في سباقات مدتها أسبوعان، وفي نهاية كل سباق تصلكم نسخة عاملة على مسار الاختبار الداخلي. ترون تقدّماً حقيقياً على أجهزة حقيقية، لا في عروض تقديمية." },
+        { "step": 5, "title": "اختبار مصفوفة الأجهزة", "description": "نختبر على مصفوفة منتقاة من الأجهزة الفعلية والسحابية تغطي المصنّعين الشائعين وإصدارات النظام وفئات الشاشات. سلوك البطارية وإنهاء العمليات وضعف الشبكة تُختبر بشكل صريح ولا تُترك للصدفة." },
+        { "step": 6, "title": "الإطلاق والتحسين", "description": "نتولى أصول صفحة Play Store وإقرارات أمان البيانات وطرحاً تدريجياً يبدأ بنسبة صغيرة من المستخدمين. بعد الإطلاق، تغذّي بيانات Crashlytics وPlay vitals قائمة تحسينات مرتّبة حسب الأولوية." }
+      ],
+      "faq": [
+        { "question": "هل أبني تطبيقاً أصلياً لـ Android أم أستخدم إطار عمل متعدد المنصات؟", "answer": "Kotlin الأصلي هو الخيار الصحيح عندما تحتاجون وصولاً عميقاً للعتاد، أو أداءً من الطراز الأول، أو استخداماً مكثفاً لواجهات المنصة مثل الخدمات الخلفية أو Widgets أو Wear OS. أما إذا أردتم iOS وAndroid بسرعة وبميزانية محدودة وكان تطبيقكم في معظمه نماذج وقوائم، فقد يكون Flutter أو React Native أوفر — وسنخبركم بصراحة بما يناسب حالتكم." },
+        { "question": "كم يستغرق بناء تطبيق Android؟", "answer": "يستغرق MVP المركّز عادة 8–14 أسبوعاً؛ والمنتج المكتمل بالمدفوعات والمزامنة دون اتصال والتكاملات المعقدة يحتاج 4–6 أشهر. أكبر محركات التكلفة هي العمل الخلفي المخصص، وعدد تكاملات الجهات الخارجية، ومدى اتساع مصفوفة الأجهزة المدعومة." },
+        { "question": "ما إصدارات Android التي تدعمونها؟", "answer": "نوصي عادة بحد أدنى Android 8 (API 26) أو 9، وهو ما يغطي أكثر من 90٪ من الأجهزة النشطة مع تجنّب الحلول الالتفافية المرهقة للإصدارات الأقدم. نحدّد الحد الأدنى الدقيق بناءً على بيانات سوقكم — جمهور الأسواق الناشئة يميل لأجهزة أقدم من الجمهور الأوروبي." },
+        { "question": "هل تستخدمون Jetpack Compose أم تخطيطات XML؟", "answer": "Jetpack Compose هو خيارنا الافتراضي للمشاريع الجديدة: فهو مجموعة الأدوات الموصى بها من Google، ويقلّص كود الواجهة بشكل كبير، ويسهّل التنسيق الديناميكي والحركات. في قواعد كود XML القائمة نعتمد Compose تدريجياً شاشة بشاشة، إذ تتكامل التقنيتان بسلاسة." },
+        { "question": "كيف تعمل مراجعة Google Play، وهل قد يُرفض تطبيقي؟", "answer": "مراجعة Play آلية في معظمها وتكتمل عادة خلال 24–48 ساعة، لكن مخالفات السياسات المتعلقة بأمان البيانات والأذونات والإعلانات تؤدي إلى رفض فعلي. كما يجب على حسابات المطورين الشخصية الجديدة إجراء اختبار مغلق مع 12 مختبِراً على الأقل لمدة 14 يوماً قبل الإصدار الإنتاجي — نخطط لذلك منذ البداية كي لا يتأخر إطلاقكم أبداً." },
+        { "question": "ما الصيانة المستمرة التي يحتاجها تطبيق Android؟", "answer": "تشترط Google كل عام أن تستهدف التطبيقات مستوى API حديثاً، وتغيّر إصدارات النظام الجديدة باستمرار سلوك الأذونات والعمل الخلفي. خططوا لدورة صيانة سنوية على الأقل مع تحديثات التبعيات؛ ونقدّم خطط دعم تغطي هذه الترقيات والمراقبة والتحسينات الصغيرة." },
+        { "question": "هل يمكن لتطبيقي العمل دون اتصال بالإنترنت؟", "answer": "نعم — وعلى Android ينبغي ذلك، فالاتصال غير موثوق لشريحة كبيرة من المستخدمين. نبني التطبيق بمبدأ العمل دون اتصال أولاً، مع قاعدة بيانات Room محلية كمصدر للحقيقة ومزامنة خلفية عبر WorkManager، ليبقى التطبيق صالحاً للاستخدام في المترو أو مناطق التغطية الضعيفة." },
+        { "question": "كيف تحافظون على سرعة التطبيق على الأجهزة الاقتصادية؟", "answer": "نضع ميزانيات أداء مبكراً: إقلاع بارد أقل من ثانيتين، وتمرير سلس بمعدل 60 إطاراً في الثانية، وحجم APK/AAB رشيق بفضل تقليص R8 وتسليم الموارد عند الطلب. ونجري قياس الأداء على أجهزة رخيصة فعلاً، لأن تطبيقاً سريعاً على هاتف رائد قد يكون غير قابل للاستخدام على هاتف بسعر 120 دولاراً." }
+      ],
+      "technologies": [
+        { "icon": "kotlin", "name": "Kotlin" },
+        { "icon": "jetpackcompose", "name": "Jetpack Compose" },
+        { "icon": "androidstudio", "name": "Android Studio" },
+        { "icon": "room", "name": "Room DB" },
+        { "icon": "hilt", "name": "Hilt" },
+        { "icon": "retrofit", "name": "Retrofit" },
+        { "icon": "firebase", "name": "Firebase" },
+        { "icon": "gradle", "name": "Gradle" }
+      ]
+    }
+  }
+}

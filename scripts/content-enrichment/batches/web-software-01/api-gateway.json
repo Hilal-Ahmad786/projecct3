@@ -1,0 +1,278 @@
+{
+  "slug": "api-gateway",
+  "en": {
+    "name": "API Gateway",
+    "shortDescription": "Put a single, secure front door in front of all your APIs. We design and deploy gateways that centralize authentication, rate limiting, routing, and observability — without adding noticeable latency.",
+    "fullDescription": "As APIs multiply, every backend team ends up re-implementing the same authentication, throttling, and logging code — inconsistently. An API gateway moves those cross-cutting concerns to one managed layer. We implement gateways with Kong, AWS API Gateway, Envoy, and NGINX, choosing the platform that fits your hosting model, traffic profile, and budget rather than defaulting to one vendor. Our work covers route design, JWT and OAuth 2.0 validation at the edge, rate limiting and quota policies, request transformation for legacy backends, and canary releases for safe version rollouts. We migrate existing traffic incrementally behind the gateway with zero downtime, and we instrument everything so you finally see who calls which API, how often, and how fast.",
+    "features": [
+      "Request Routing & Load Balancing",
+      "Edge Authentication (OAuth 2.0, JWT, mTLS)",
+      "Rate Limiting & Quota Policies",
+      "Request/Response Transformation",
+      "API Versioning & Canary Releases",
+      "Response Caching & Compression",
+      "Developer Portal & API Key Management",
+      "Gateway Observability (Logs, Metrics, Tracing)"
+    ],
+    "benefits": [
+      "One enforcement point for every security policy",
+      "Clients integrate against a single stable endpoint",
+      "Backend teams stop duplicating auth and throttling code",
+      "Full visibility into API traffic and consumers",
+      "Safe, gradual rollouts of new API versions",
+      "Lower operational complexity as your API count grows"
+    ],
+    "metaTitle": "API Gateway Implementation — Kong, AWS, Envoy | PakSoft",
+    "metaDescription": "API gateway implementation with Kong, AWS API Gateway, and Envoy: centralized auth, rate limiting, routing, and traffic observability. Book a free architecture review.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "API Inventory & Requirements", "description": "We catalogue your existing APIs, consumers, traffic volumes, and the security and compliance rules each endpoint must enforce. This inventory exposes inconsistencies — duplicate auth logic, missing rate limits — that the gateway will eliminate." },
+        { "step": 2, "title": "Platform Selection", "description": "We compare managed options like AWS API Gateway against self-hosted Kong, Envoy, or NGINX on cost, latency, plugin needs, and operational ownership. You get a written recommendation with the tradeoffs spelled out, not a default vendor pick." },
+        { "step": 3, "title": "Architecture & Policy Design", "description": "We design the routing topology, authentication flows, rate-limit tiers, and transformation rules as declarative configuration kept in version control. Every policy is reviewed against your compliance requirements before anything goes live." },
+        { "step": 4, "title": "Implementation & Migration", "description": "The gateway is deployed alongside your existing setup, and traffic is shifted route by route using weighted DNS or load-balancer rules. Each migrated API is verified under production traffic before the next one moves, so there is no big-bang cutover." },
+        { "step": 5, "title": "Security Hardening & Load Testing", "description": "We pen-test the edge configuration, verify token validation and CORS behavior, and load-test the gateway to confirm it adds single-digit milliseconds at your peak traffic. Rate limits are tuned against real consumption patterns, not guesses." },
+        { "step": 6, "title": "Observability & Handover", "description": "Dashboards, alerts, and distributed tracing are wired into your monitoring stack so anomalies surface before consumers complain. We document the configuration, train your team on policy changes, and hand over full ownership." }
+      ],
+      "faq": [
+        { "question": "Do I actually need an API gateway, or is a reverse proxy enough?", "answer": "If you run one or two APIs with a single consumer, a reverse proxy like NGINX is usually enough. A gateway pays off once you have multiple APIs, external consumers, or per-client policies — API keys, quotas, usage analytics, monetization. The honest answer depends on your API count and consumer diversity, and we will tell you if you do not need one yet." },
+        { "question": "How much latency does a gateway add?", "answer": "A well-configured gateway typically adds 1–10 milliseconds per request; Envoy and Kong sit at the low end of that range. Most of the overhead comes from misconfigured plugins or synchronous calls to external auth services, which we avoid by caching token validation results at the edge." },
+        { "question": "Managed (AWS API Gateway) or self-hosted (Kong, Envoy) — which is better?", "answer": "Managed gateways remove operational burden but charge per million requests, which gets expensive at high volume — AWS API Gateway can cost more than the compute behind it past a few hundred million requests monthly. Self-hosted Kong or Envoy has a flat infrastructure cost and more plugin flexibility, but you own upgrades and scaling. We model both against your projected traffic before recommending." },
+        { "question": "Can the gateway handle authentication for all my services?", "answer": "Yes — that is one of its main jobs. The gateway validates JWTs, performs OAuth 2.0 token introspection, or checks API keys at the edge, then forwards verified identity claims as headers to your backends. Your services stop carrying their own auth middleware, which removes an entire class of inconsistency bugs." },
+        { "question": "How do you migrate existing APIs behind a gateway without downtime?", "answer": "We run the gateway in parallel with your current entry points and shift traffic incrementally — typically starting at 5–10% per route with instant rollback available. Consumers keep using the same URLs because DNS or the load balancer handles the switch. A full migration of 20–30 APIs usually takes 3–6 weeks." },
+        { "question": "What is the difference between an API gateway and a service mesh?", "answer": "A gateway manages north-south traffic — requests entering your system from outside — while a service mesh like Istio manages east-west traffic between internal services. They complement rather than replace each other; many teams need only the gateway, and adding a mesh prematurely is a common source of unnecessary complexity." },
+        { "question": "Can a gateway help with API versioning?", "answer": "Significantly. The gateway can route /v1 and /v2 to different backends, translate old request formats to new ones so legacy clients keep working, and run canary releases that send a small percentage of traffic to a new version. This lets you deprecate versions on a schedule backed by real usage data from gateway analytics." },
+        { "question": "What does an API gateway project cost and how long does it take?", "answer": "A focused implementation for a handful of APIs typically takes 3–5 weeks; enterprise rollouts with custom plugins, a developer portal, and dozens of services run 2–4 months. Ongoing cost depends heavily on the managed-versus-self-hosted decision, which is why we include a 12-month total-cost projection in the platform recommendation." }
+      ],
+      "technologies": [
+        { "icon": "kong", "name": "Kong" },
+        { "icon": "aws", "name": "AWS API Gateway" },
+        { "icon": "envoy", "name": "Envoy" },
+        { "icon": "nginx", "name": "NGINX" },
+        { "icon": "tyk", "name": "Tyk" },
+        { "icon": "kubernetes", "name": "Kubernetes" },
+        { "icon": "keycloak", "name": "Keycloak" },
+        { "icon": "grafana", "name": "Grafana" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "API Gateway",
+    "shortDescription": "Tüm API'lerinizin önüne tek ve güvenli bir giriş kapısı koyun. Kimlik doğrulama, hız sınırlama, yönlendirme ve izlenebilirliği merkezileştiren gateway'leri, fark edilir gecikme eklemeden tasarlayıp devreye alıyoruz.",
+    "fullDescription": "API sayısı arttıkça her backend ekibi aynı kimlik doğrulama, kısıtlama ve loglama kodunu — üstelik tutarsız biçimde — yeniden yazar. API gateway bu ortak sorumlulukları tek bir yönetilen katmana taşır. Kong, AWS API Gateway, Envoy ve NGINX ile gateway kuruyor; tek bir tedarikçiye saplanmak yerine barındırma modelinize, trafik profilinize ve bütçenize uyan platformu seçiyoruz. Çalışmamız rota tasarımını, uçta JWT ve OAuth 2.0 doğrulamasını, hız sınırı ve kota politikalarını, eski backend'ler için istek dönüşümünü ve güvenli sürüm geçişleri için canary yayınlarını kapsar. Mevcut trafiği sıfır kesintiyle, kademeli olarak gateway arkasına taşırız ve her şeyi ölçümleriz; böylece hangi API'yi kimin, ne sıklıkla ve ne hızla çağırdığını nihayet görürsünüz.",
+    "features": [
+      "İstek Yönlendirme ve Yük Dengeleme",
+      "Uçta Kimlik Doğrulama (OAuth 2.0, JWT, mTLS)",
+      "Hız Sınırlama ve Kota Politikaları",
+      "İstek/Yanıt Dönüşümü",
+      "API Sürümleme ve Canary Yayınları",
+      "Yanıt Önbellekleme ve Sıkıştırma",
+      "Geliştirici Portalı ve API Anahtarı Yönetimi",
+      "Gateway İzlenebilirliği (Log, Metrik, Tracing)"
+    ],
+    "benefits": [
+      "Tüm güvenlik politikaları için tek uygulama noktası",
+      "İstemciler tek ve kararlı bir uç noktaya entegre olur",
+      "Backend ekipleri auth ve kısıtlama kodunu tekrarlamayı bırakır",
+      "API trafiği ve tüketicileri üzerinde tam görünürlük",
+      "Yeni API sürümlerinin güvenli, kademeli yayını",
+      "API sayısı arttıkça azalan operasyonel karmaşıklık"
+    ],
+    "metaTitle": "API Gateway Kurulumu — Kong, AWS, Envoy | PakSoft",
+    "metaDescription": "Kong, AWS API Gateway ve Envoy ile API gateway kurulumu: merkezi kimlik doğrulama, hız sınırlama, yönlendirme ve trafik izlenebilirliği. Ücretsiz mimari inceleme alın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "API Envanteri ve Gereksinimler", "description": "Mevcut API'lerinizi, tüketicilerini, trafik hacimlerini ve her uç noktanın uyması gereken güvenlik ile uyumluluk kurallarını çıkarırız. Bu envanter, gateway'in ortadan kaldıracağı tutarsızlıkları — tekrarlanan auth mantığı, eksik hız sınırları — gün yüzüne çıkarır." },
+        { "step": 2, "title": "Platform Seçimi", "description": "AWS API Gateway gibi yönetilen seçenekleri; maliyet, gecikme, eklenti ihtiyaçları ve operasyonel sahiplik açısından kendi sunucunuzda çalışan Kong, Envoy veya NGINX ile karşılaştırırız. Varsayılan bir tedarikçi değil, artı ve eksileri yazılı olarak açıklanmış bir öneri alırsınız." },
+        { "step": 3, "title": "Mimari ve Politika Tasarımı", "description": "Yönlendirme topolojisini, kimlik doğrulama akışlarını, hız sınırı kademelerini ve dönüşüm kurallarını sürüm kontrolünde tutulan bildirimsel yapılandırma olarak tasarlarız. Her politika yayına alınmadan önce uyumluluk gereksinimlerinize göre gözden geçirilir." },
+        { "step": 4, "title": "Uygulama ve Geçiş", "description": "Gateway mevcut kurulumunuzun yanına konuşlandırılır; trafik, ağırlıklı DNS veya yük dengeleyici kurallarıyla rota rota kaydırılır. Taşınan her API, bir sonrakine geçilmeden önce gerçek üretim trafiği altında doğrulanır — büyük patlamalı geçiş yoktur." },
+        { "step": 5, "title": "Güvenlik Sıkılaştırma ve Yük Testi", "description": "Uç yapılandırmasını sızma testinden geçirir, token doğrulamasını ve CORS davranışını kontrol eder, gateway'in zirve trafiğinizde yalnızca tek haneli milisaniyeler eklediğini yük testiyle kanıtlarız. Hız sınırları tahminle değil, gerçek kullanım kalıplarına göre ayarlanır." },
+        { "step": 6, "title": "İzlenebilirlik ve Devir", "description": "Panolar, uyarılar ve dağıtık izleme mevcut monitoring altyapınıza bağlanır; anormallikler tüketiciler şikayet etmeden önce görünür olur. Yapılandırmayı belgeleyip ekibinizi politika değişiklikleri konusunda eğitir, sahipliği tamamen devrederiz." }
+      ],
+      "faq": [
+        { "question": "Gerçekten API gateway'e ihtiyacım var mı, reverse proxy yetmez mi?", "answer": "Tek tüketicili bir iki API çalıştırıyorsanız NGINX gibi bir reverse proxy genellikle yeterlidir. Gateway; birden fazla API'niz, harici tüketicileriniz veya müşteri bazlı politikalarınız — API anahtarları, kotalar, kullanım analitiği, ücretlendirme — olduğunda karşılığını verir. Dürüst yanıt API sayınıza ve tüketici çeşitliliğinize bağlıdır; henüz ihtiyacınız yoksa bunu açıkça söyleriz." },
+        { "question": "Gateway ne kadar gecikme ekler?", "answer": "İyi yapılandırılmış bir gateway istek başına genellikle 1–10 milisaniye ekler; Envoy ve Kong bu aralığın alt ucundadır. Ek yükün çoğu yanlış yapılandırılmış eklentilerden veya harici auth servislerine yapılan senkron çağrılardan gelir; biz token doğrulama sonuçlarını uçta önbellekleyerek bundan kaçınırız." },
+        { "question": "Yönetilen (AWS API Gateway) mi, kendi sunucumda (Kong, Envoy) mi daha iyi?", "answer": "Yönetilen gateway'ler operasyon yükünü kaldırır ama milyon istek başına ücretlendirilir; yüksek hacimde pahalanır — AWS API Gateway, aylık birkaç yüz milyon isteğin üzerinde arkasındaki sunuculardan daha pahalıya gelebilir. Kendi sunucunuzdaki Kong veya Envoy'un sabit altyapı maliyeti ve daha fazla eklenti esnekliği vardır, ancak güncelleme ve ölçekleme size aittir. Öneriden önce ikisini de öngörülen trafiğinize göre modelleriz." },
+        { "question": "Gateway tüm servislerimin kimlik doğrulamasını üstlenebilir mi?", "answer": "Evet — bu zaten temel görevlerinden biridir. Gateway uçta JWT doğrular, OAuth 2.0 token introspection yapar veya API anahtarlarını kontrol eder; doğrulanmış kimlik bilgilerini header olarak backend'lerinize iletir. Servisleriniz kendi auth middleware'lerini taşımayı bırakır ve koca bir tutarsızlık hatası sınıfı ortadan kalkar." },
+        { "question": "Mevcut API'leri kesinti olmadan gateway arkasına nasıl taşıyorsunuz?", "answer": "Gateway'i mevcut giriş noktalarınızla paralel çalıştırır ve trafiği kademeli kaydırırız — genellikle rota başına %5–10 ile başlanır ve anında geri dönüş imkanı vardır. DNS veya yük dengeleyici geçişi üstlendiği için tüketiciler aynı URL'leri kullanmaya devam eder. 20–30 API'nin tam geçişi genellikle 3–6 hafta sürer." },
+        { "question": "API gateway ile service mesh arasındaki fark nedir?", "answer": "Gateway kuzey-güney trafiği, yani sisteminize dışarıdan giren istekleri yönetir; Istio gibi bir service mesh ise iç servisler arasındaki doğu-batı trafiğini yönetir. Birbirinin yerine geçmez, birbirini tamamlarlar; birçok ekibe yalnızca gateway yeter ve mesh'i erken eklemek gereksiz karmaşıklığın yaygın bir kaynağıdır." },
+        { "question": "Gateway, API sürümleme konusunda yardımcı olur mu?", "answer": "Hem de çok. Gateway /v1 ve /v2'yi farklı backend'lere yönlendirebilir, eski istek formatlarını yenilerine çevirerek eski istemcilerin çalışmaya devam etmesini sağlayabilir ve trafiğin küçük bir yüzdesini yeni sürüme gönderen canary yayınları çalıştırabilir. Böylece sürümleri, gateway analitiğinden gelen gerçek kullanım verisine dayalı bir takvimle emekliye ayırabilirsiniz." },
+        { "question": "API gateway projesi ne kadar sürer ve maliyeti nedir?", "answer": "Birkaç API için odaklı bir kurulum genellikle 3–5 hafta sürer; özel eklentiler, geliştirici portalı ve onlarca servis içeren kurumsal projeler 2–4 aya yayılır. Süregelen maliyet büyük ölçüde yönetilen-kendi sunucusu kararına bağlıdır; bu yüzden platform önerisine 12 aylık toplam maliyet projeksiyonu ekleriz." }
+      ],
+      "technologies": [
+        { "icon": "kong", "name": "Kong" },
+        { "icon": "aws", "name": "AWS API Gateway" },
+        { "icon": "envoy", "name": "Envoy" },
+        { "icon": "nginx", "name": "NGINX" },
+        { "icon": "tyk", "name": "Tyk" },
+        { "icon": "kubernetes", "name": "Kubernetes" },
+        { "icon": "keycloak", "name": "Keycloak" },
+        { "icon": "grafana", "name": "Grafana" }
+      ]
+    }
+  },
+  "de": {
+    "name": "API Gateway",
+    "shortDescription": "Eine einzige, sichere Eingangstür für alle Ihre APIs. Wir konzipieren und betreiben Gateways, die Authentifizierung, Rate Limiting, Routing und Observability zentralisieren — ohne spürbare Latenz hinzuzufügen.",
+    "fullDescription": "Wenn APIs sich vermehren, implementiert jedes Backend-Team denselben Authentifizierungs-, Throttling- und Logging-Code neu — und zwar inkonsistent. Ein API Gateway verlagert diese Querschnittsaufgaben in eine zentrale, verwaltete Schicht. Wir implementieren Gateways mit Kong, AWS API Gateway, Envoy und NGINX und wählen die Plattform, die zu Ihrem Hosting-Modell, Traffic-Profil und Budget passt, statt standardmäßig auf einen Anbieter zu setzen. Unsere Arbeit umfasst Routen-Design, JWT- und OAuth-2.0-Validierung am Edge, Rate-Limit- und Quota-Richtlinien, Request-Transformation für Legacy-Backends sowie Canary Releases für sichere Versionswechsel. Bestehenden Traffic migrieren wir schrittweise und ohne Ausfallzeit hinter das Gateway — und instrumentieren alles, damit Sie endlich sehen, wer welche API wie oft und wie schnell aufruft.",
+    "features": [
+      "Request-Routing & Load Balancing",
+      "Edge-Authentifizierung (OAuth 2.0, JWT, mTLS)",
+      "Rate Limiting & Quota-Richtlinien",
+      "Request/Response-Transformation",
+      "API-Versionierung & Canary Releases",
+      "Response-Caching & Kompression",
+      "Developer-Portal & API-Key-Verwaltung",
+      "Gateway-Observability (Logs, Metriken, Tracing)"
+    ],
+    "benefits": [
+      "Ein Durchsetzungspunkt für jede Sicherheitsrichtlinie",
+      "Clients integrieren gegen einen einzigen stabilen Endpunkt",
+      "Backend-Teams duplizieren keinen Auth- und Throttling-Code mehr",
+      "Volle Sichtbarkeit über API-Traffic und Konsumenten",
+      "Sichere, schrittweise Rollouts neuer API-Versionen",
+      "Geringere operative Komplexität bei wachsender API-Zahl"
+    ],
+    "metaTitle": "API-Gateway-Implementierung — Kong, Envoy | PakSoft",
+    "metaDescription": "API-Gateway-Implementierung mit Kong, AWS API Gateway und Envoy: zentrale Auth, Rate Limiting, Routing und Traffic-Observability. Jetzt kostenloses Architektur-Review sichern.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "API-Inventur & Anforderungen", "description": "Wir katalogisieren Ihre bestehenden APIs, Konsumenten, Traffic-Volumina sowie die Sicherheits- und Compliance-Regeln jedes Endpunkts. Diese Inventur deckt Inkonsistenzen auf — duplizierte Auth-Logik, fehlende Rate Limits —, die das Gateway beseitigen wird." },
+        { "step": 2, "title": "Plattformauswahl", "description": "Wir vergleichen verwaltete Optionen wie AWS API Gateway mit selbst gehostetem Kong, Envoy oder NGINX nach Kosten, Latenz, Plugin-Bedarf und operativer Verantwortung. Sie erhalten eine schriftliche Empfehlung mit klar benannten Tradeoffs statt einer Standard-Anbieterwahl." },
+        { "step": 3, "title": "Architektur & Richtlinien-Design", "description": "Wir entwerfen Routing-Topologie, Authentifizierungsflüsse, Rate-Limit-Stufen und Transformationsregeln als deklarative Konfiguration unter Versionskontrolle. Jede Richtlinie wird vor dem Go-live gegen Ihre Compliance-Anforderungen geprüft." },
+        { "step": 4, "title": "Implementierung & Migration", "description": "Das Gateway wird parallel zu Ihrem bestehenden Setup ausgerollt; der Traffic wandert Route für Route über gewichtete DNS- oder Load-Balancer-Regeln. Jede migrierte API wird unter Produktionstraffic verifiziert, bevor die nächste folgt — kein Big-Bang-Umstieg." },
+        { "step": 5, "title": "Security-Härtung & Lasttest", "description": "Wir testen die Edge-Konfiguration auf Schwachstellen, verifizieren Token-Validierung und CORS-Verhalten und belegen per Lasttest, dass das Gateway bei Ihrem Spitzentraffic nur einstellige Millisekunden hinzufügt. Rate Limits werden an realen Nutzungsmustern kalibriert, nicht an Schätzungen." },
+        { "step": 6, "title": "Observability & Übergabe", "description": "Dashboards, Alerts und Distributed Tracing werden in Ihren Monitoring-Stack integriert, sodass Anomalien sichtbar werden, bevor Konsumenten sich beschweren. Wir dokumentieren die Konfiguration, schulen Ihr Team in Richtlinienänderungen und übergeben die volle Verantwortung." }
+      ],
+      "faq": [
+        { "question": "Brauche ich wirklich ein API Gateway, oder reicht ein Reverse Proxy?", "answer": "Bei ein oder zwei APIs mit einem einzigen Konsumenten reicht ein Reverse Proxy wie NGINX meist aus. Ein Gateway lohnt sich, sobald Sie mehrere APIs, externe Konsumenten oder kundenspezifische Richtlinien haben — API-Keys, Quotas, Nutzungsanalysen, Monetarisierung. Die ehrliche Antwort hängt von API-Anzahl und Konsumentenvielfalt ab, und wir sagen Ihnen offen, wenn Sie noch keines brauchen." },
+        { "question": "Wie viel Latenz fügt ein Gateway hinzu?", "answer": "Ein gut konfiguriertes Gateway addiert typischerweise 1–10 Millisekunden pro Request; Envoy und Kong liegen am unteren Ende dieser Spanne. Der meiste Overhead stammt aus fehlkonfigurierten Plugins oder synchronen Aufrufen externer Auth-Dienste — das vermeiden wir, indem wir Token-Validierungsergebnisse am Edge cachen." },
+        { "question": "Verwaltet (AWS API Gateway) oder selbst gehostet (Kong, Envoy) — was ist besser?", "answer": "Verwaltete Gateways nehmen Ihnen den Betrieb ab, rechnen aber pro Million Requests ab und werden bei hohem Volumen teuer — AWS API Gateway kann ab einigen Hundert Millionen Requests monatlich mehr kosten als die dahinterliegende Infrastruktur. Selbst gehostetes Kong oder Envoy hat fixe Infrastrukturkosten und mehr Plugin-Flexibilität, dafür verantworten Sie Upgrades und Skalierung. Wir modellieren beides gegen Ihren prognostizierten Traffic." },
+        { "question": "Kann das Gateway die Authentifizierung für alle meine Services übernehmen?", "answer": "Ja — das ist eine seiner Hauptaufgaben. Das Gateway validiert JWTs, führt OAuth-2.0-Token-Introspection durch oder prüft API-Keys am Edge und reicht verifizierte Identitätsdaten als Header an Ihre Backends weiter. Ihre Services brauchen keine eigene Auth-Middleware mehr, was eine ganze Klasse von Inkonsistenzfehlern eliminiert." },
+        { "question": "Wie migrieren Sie bestehende APIs ohne Ausfallzeit hinter ein Gateway?", "answer": "Wir betreiben das Gateway parallel zu Ihren aktuellen Eintrittspunkten und verschieben den Traffic schrittweise — typischerweise beginnend mit 5–10 % pro Route, mit sofortigem Rollback. Konsumenten nutzen weiter dieselben URLs, weil DNS oder der Load Balancer den Wechsel übernimmt. Eine vollständige Migration von 20–30 APIs dauert üblicherweise 3–6 Wochen." },
+        { "question": "Was ist der Unterschied zwischen API Gateway und Service Mesh?", "answer": "Ein Gateway verwaltet Nord-Süd-Traffic — Requests, die von außen in Ihr System kommen —, während ein Service Mesh wie Istio den Ost-West-Traffic zwischen internen Services steuert. Sie ergänzen sich, statt sich zu ersetzen; viele Teams brauchen nur das Gateway, und ein verfrühtes Mesh ist eine häufige Quelle unnötiger Komplexität." },
+        { "question": "Hilft ein Gateway bei der API-Versionierung?", "answer": "Erheblich. Das Gateway kann /v1 und /v2 auf unterschiedliche Backends routen, alte Request-Formate in neue übersetzen, damit Legacy-Clients weiterlaufen, und Canary Releases fahren, die einen kleinen Traffic-Anteil an die neue Version senden. So können Sie Versionen nach einem Zeitplan abkündigen, der auf realen Nutzungsdaten aus der Gateway-Analytik basiert." },
+        { "question": "Was kostet ein API-Gateway-Projekt und wie lange dauert es?", "answer": "Eine fokussierte Implementierung für eine Handvoll APIs dauert typischerweise 3–5 Wochen; Enterprise-Rollouts mit Custom-Plugins, Developer-Portal und Dutzenden Services laufen 2–4 Monate. Die laufenden Kosten hängen stark von der Entscheidung verwaltet vs. selbst gehostet ab — deshalb enthält unsere Plattformempfehlung eine 12-Monats-Gesamtkostenprojektion." }
+      ],
+      "technologies": [
+        { "icon": "kong", "name": "Kong" },
+        { "icon": "aws", "name": "AWS API Gateway" },
+        { "icon": "envoy", "name": "Envoy" },
+        { "icon": "nginx", "name": "NGINX" },
+        { "icon": "tyk", "name": "Tyk" },
+        { "icon": "kubernetes", "name": "Kubernetes" },
+        { "icon": "keycloak", "name": "Keycloak" },
+        { "icon": "grafana", "name": "Grafana" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "API گیٹ وے",
+    "shortDescription": "اپنی تمام APIs کے سامنے ایک واحد، محفوظ داخلی دروازہ رکھیں۔ ہم ایسے گیٹ وے ڈیزائن اور نصب کرتے ہیں جو تصدیق، ریٹ لمٹنگ، روٹنگ اور نگرانی کو مرکزی بناتے ہیں — بغیر محسوس ہونے والی تاخیر کے۔",
+    "fullDescription": "جیسے جیسے APIs بڑھتی ہیں، ہر بیک اینڈ ٹیم وہی تصدیق، تھروٹلنگ اور لاگنگ کوڈ دوبارہ — اور غیر مستقل انداز میں — لکھتی ہے۔ API گیٹ وے ان مشترکہ ذمہ داریوں کو ایک منظم مرکزی تہہ میں منتقل کر دیتا ہے۔ ہم Kong، AWS API Gateway، Envoy اور NGINX کے ساتھ گیٹ وے نافذ کرتے ہیں اور کسی ایک وینڈر پر اَڑے رہنے کے بجائے وہ پلیٹ فارم چنتے ہیں جو آپ کے ہوسٹنگ ماڈل، ٹریفک اور بجٹ سے میل کھائے۔ ہمارا کام روٹ ڈیزائن، ایج پر JWT اور OAuth 2.0 کی توثیق، ریٹ لمٹ اور کوٹہ پالیسیاں، پرانے بیک اینڈز کے لیے ریکویسٹ ٹرانسفارمیشن اور محفوظ ورژن منتقلی کے لیے canary ریلیز پر محیط ہے۔ موجودہ ٹریفک کو ہم بغیر کسی بندش کے مرحلہ وار گیٹ وے کے پیچھے منتقل کرتے ہیں اور ہر چیز کی پیمائش کرتے ہیں، تاکہ آپ آخرکار دیکھ سکیں کہ کون سی API کو کون، کتنی بار اور کتنی رفتار سے کال کرتا ہے۔",
+    "features": [
+      "ریکویسٹ روٹنگ اور لوڈ بیلنسنگ",
+      "ایج پر تصدیق (OAuth 2.0، JWT، mTLS)",
+      "ریٹ لمٹنگ اور کوٹہ پالیسیاں",
+      "ریکویسٹ/رسپانس ٹرانسفارمیشن",
+      "API ورژننگ اور Canary ریلیز",
+      "رسپانس کیشنگ اور کمپریشن",
+      "ڈیولپر پورٹل اور API کلید کا انتظام",
+      "گیٹ وے کی نگرانی (لاگز، میٹرکس، ٹریسنگ)"
+    ],
+    "benefits": [
+      "ہر سیکیورٹی پالیسی کے نفاذ کا ایک ہی مقام",
+      "کلائنٹس ایک مستحکم اینڈ پوائنٹ سے منسلک ہوتے ہیں",
+      "بیک اینڈ ٹیمیں auth اور تھروٹلنگ کوڈ دہرانا چھوڑ دیتی ہیں",
+      "API ٹریفک اور صارفین پر مکمل نظر",
+      "نئے API ورژنز کا محفوظ اور بتدریج اجراء",
+      "APIs بڑھنے کے باوجود کم آپریشنل پیچیدگی"
+    ],
+    "metaTitle": "API گیٹ وے سروسز — Kong، AWS، Envoy | PakSoft",
+    "metaDescription": "Kong، AWS API Gateway اور Envoy کے ساتھ API گیٹ وے کا نفاذ: مرکزی تصدیق، ریٹ لمٹنگ، روٹنگ اور ٹریفک کی مکمل نگرانی۔ مفت آرکیٹیکچر ریویو حاصل کریں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "API انوینٹری اور تقاضے", "description": "ہم آپ کی موجودہ APIs، ان کے صارفین، ٹریفک کے حجم اور ہر اینڈ پوائنٹ پر لاگو سیکیورٹی و تعمیلی قواعد کی فہرست بناتے ہیں۔ یہ انوینٹری ان بے قاعدگیوں کو سامنے لاتی ہے — دہرایا گیا auth کوڈ، غائب ریٹ لمٹس — جنہیں گیٹ وے ختم کرے گا۔" },
+        { "step": 2, "title": "پلیٹ فارم کا انتخاب", "description": "ہم AWS API Gateway جیسے منظم آپشنز کا موازنہ خود میزبانی والے Kong، Envoy یا NGINX سے لاگت، تاخیر، پلگ اِن ضروریات اور آپریشنل ذمہ داری کی بنیاد پر کرتے ہیں۔ آپ کو کسی طے شدہ وینڈر کے بجائے فوائد و نقصانات کے ساتھ تحریری سفارش ملتی ہے۔" },
+        { "step": 3, "title": "آرکیٹیکچر اور پالیسی ڈیزائن", "description": "روٹنگ کا ڈھانچہ، تصدیقی فلو، ریٹ لمٹ درجات اور ٹرانسفارمیشن قواعد کو ہم ورژن کنٹرول میں رکھی جانے والی ڈیکلیریٹو کنفیگریشن کے طور پر ڈیزائن کرتے ہیں۔ ہر پالیسی لائیو ہونے سے پہلے آپ کے تعمیلی تقاضوں کے مطابق جانچی جاتی ہے۔" },
+        { "step": 4, "title": "نفاذ اور منتقلی", "description": "گیٹ وے آپ کے موجودہ سیٹ اپ کے ساتھ متوازی نصب ہوتا ہے اور ٹریفک ویٹڈ DNS یا لوڈ بیلنسر قواعد کے ذریعے روٹ بہ روٹ منتقل کیا جاتا ہے۔ ہر منتقل شدہ API اگلی منتقلی سے پہلے حقیقی پروڈکشن ٹریفک میں جانچی جاتی ہے — یکدم تبدیلی نہیں ہوتی۔" },
+        { "step": 5, "title": "سیکیورٹی سخت کاری اور لوڈ ٹیسٹنگ", "description": "ہم ایج کنفیگریشن کی سیکیورٹی جانچ کرتے ہیں، ٹوکن توثیق اور CORS رویّے کی تصدیق کرتے ہیں اور لوڈ ٹیسٹ سے ثابت کرتے ہیں کہ گیٹ وے عروج کے ٹریفک پر صرف چند ملی سیکنڈ کا اضافہ کرتا ہے۔ ریٹ لمٹس اندازوں پر نہیں، حقیقی استعمال کے نمونوں پر ترتیب دی جاتی ہیں۔" },
+        { "step": 6, "title": "نگرانی اور حوالگی", "description": "ڈیش بورڈز، الرٹس اور ڈسٹری بیوٹڈ ٹریسنگ آپ کے مانیٹرنگ نظام سے جوڑ دیے جاتے ہیں تاکہ خرابیاں صارفین کی شکایت سے پہلے نظر آ جائیں۔ ہم کنفیگریشن کی دستاویز بناتے ہیں، آپ کی ٹیم کو پالیسی تبدیلیوں کی تربیت دیتے ہیں اور مکمل ملکیت سونپ دیتے ہیں۔" }
+      ],
+      "faq": [
+        { "question": "کیا مجھے واقعی API گیٹ وے چاہیے، یا reverse proxy کافی ہے؟", "answer": "اگر آپ ایک یا دو APIs ایک ہی صارف کے لیے چلاتے ہیں تو NGINX جیسا reverse proxy عموماً کافی ہے۔ گیٹ وے تب فائدہ دیتا ہے جب متعدد APIs، بیرونی صارفین یا فی کلائنٹ پالیسیاں — API کلیدیں، کوٹے، استعمال کے اعداد و شمار، مونیٹائزیشن — درکار ہوں۔ ایماندارانہ جواب آپ کی APIs کی تعداد پر منحصر ہے، اور اگر ابھی ضرورت نہیں تو ہم صاف بتا دیں گے۔" },
+        { "question": "گیٹ وے کتنی تاخیر کا اضافہ کرتا ہے؟", "answer": "اچھی طرح ترتیب دیا گیا گیٹ وے فی ریکویسٹ عموماً 1 تا 10 ملی سیکنڈ کا اضافہ کرتا ہے؛ Envoy اور Kong اس حد کے نچلے سرے پر ہیں۔ زیادہ تر اضافی بوجھ غلط کنفیگر شدہ پلگ اِنز یا بیرونی auth سروسز کی synchronous کالز سے آتا ہے، جس سے ہم ٹوکن توثیق کے نتائج ایج پر کیش کر کے بچتے ہیں۔" },
+        { "question": "منظم (AWS API Gateway) بہتر ہے یا خود میزبانی (Kong، Envoy)؟", "answer": "منظم گیٹ وے آپریشنل بوجھ ہٹا دیتے ہیں مگر فی ملین ریکویسٹ چارج کرتے ہیں، جو زیادہ حجم پر مہنگا پڑتا ہے — ماہانہ چند سو ملین ریکویسٹس کے بعد AWS API Gateway اپنے پیچھے موجود انفراسٹرکچر سے زیادہ مہنگا ہو سکتا ہے۔ خود میزبانی والے Kong یا Envoy کی لاگت مستقل اور پلگ اِن لچک زیادہ ہے، مگر اپ گریڈ اور اسکیلنگ آپ کی ذمہ داری بنتی ہے۔ سفارش سے پہلے ہم دونوں کو آپ کے متوقع ٹریفک پر ماڈل کرتے ہیں۔" },
+        { "question": "کیا گیٹ وے میری تمام سروسز کی تصدیق سنبھال سکتا ہے؟", "answer": "جی ہاں — یہ اس کے بنیادی کاموں میں سے ہے۔ گیٹ وے ایج پر JWT کی توثیق کرتا ہے، OAuth 2.0 ٹوکن introspection انجام دیتا ہے یا API کلیدیں جانچتا ہے، اور تصدیق شدہ شناختی معلومات ہیڈرز کی صورت میں بیک اینڈز کو بھیجتا ہے۔ آپ کی سروسز کو اپنا auth کوڈ رکھنے کی ضرورت نہیں رہتی، جس سے بے قاعدگی کی خرابیوں کی پوری قسم ختم ہو جاتی ہے۔" },
+        { "question": "موجودہ APIs کو بغیر بندش کے گیٹ وے کے پیچھے کیسے منتقل کرتے ہیں؟", "answer": "ہم گیٹ وے کو آپ کے موجودہ داخلی راستوں کے ساتھ متوازی چلاتے ہیں اور ٹریفک بتدریج منتقل کرتے ہیں — عموماً فی روٹ 5 تا 10 فیصد سے آغاز، فوری rollback کی سہولت کے ساتھ۔ DNS یا لوڈ بیلنسر تبدیلی سنبھالتا ہے اس لیے صارفین وہی URLs استعمال کرتے رہتے ہیں۔ 20 تا 30 APIs کی مکمل منتقلی عموماً 3 تا 6 ہفتے لیتی ہے۔" },
+        { "question": "API گیٹ وے اور service mesh میں کیا فرق ہے؟", "answer": "گیٹ وے شمال-جنوب ٹریفک سنبھالتا ہے یعنی باہر سے نظام میں آنے والی ریکویسٹس، جبکہ Istio جیسا service mesh اندرونی سروسز کے درمیان مشرق-مغرب ٹریفک کا انتظام کرتا ہے۔ یہ ایک دوسرے کے متبادل نہیں بلکہ تکمیلی ہیں؛ بہت سی ٹیموں کو صرف گیٹ وے کافی ہوتا ہے اور قبل از وقت mesh شامل کرنا غیر ضروری پیچیدگی کا عام سبب ہے۔" },
+        { "question": "کیا گیٹ وے API ورژننگ میں مدد دیتا ہے؟", "answer": "خاصی مدد دیتا ہے۔ گیٹ وے /v1 اور /v2 کو مختلف بیک اینڈز کی طرف بھیج سکتا ہے، پرانے ریکویسٹ فارمیٹس کو نئے میں بدل سکتا ہے تاکہ پرانے کلائنٹس چلتے رہیں، اور canary ریلیز چلا سکتا ہے جو ٹریفک کا چھوٹا حصہ نئے ورژن کو دیتی ہے۔ یوں آپ ورژنز کو گیٹ وے کے حقیقی استعمال کے ڈیٹا پر مبنی شیڈول سے ریٹائر کر سکتے ہیں۔" },
+        { "question": "API گیٹ وے منصوبے کی لاگت اور مدت کیا ہوتی ہے؟", "answer": "چند APIs کے لیے مرکوز نفاذ عموماً 3 تا 5 ہفتے لیتا ہے؛ حسبِ ضرورت پلگ اِنز، ڈیولپر پورٹل اور درجنوں سروسز والے ادارہ جاتی منصوبے 2 تا 4 ماہ تک جاتے ہیں۔ جاری لاگت بڑی حد تک منظم بمقابلہ خود میزبانی کے فیصلے پر منحصر ہے، اسی لیے ہم پلیٹ فارم سفارش میں 12 ماہ کی کل لاگت کا تخمینہ شامل کرتے ہیں۔" }
+      ],
+      "technologies": [
+        { "icon": "kong", "name": "Kong" },
+        { "icon": "aws", "name": "AWS API Gateway" },
+        { "icon": "envoy", "name": "Envoy" },
+        { "icon": "nginx", "name": "NGINX" },
+        { "icon": "tyk", "name": "Tyk" },
+        { "icon": "kubernetes", "name": "Kubernetes" },
+        { "icon": "keycloak", "name": "Keycloak" },
+        { "icon": "grafana", "name": "Grafana" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "بوابة API",
+    "shortDescription": "ضعوا باباً أمامياً واحداً وآمناً أمام جميع واجهات API لديكم. نصمّم وننشر بوابات تُمركز المصادقة وتحديد المعدل والتوجيه والمراقبة — دون إضافة تأخير ملحوظ.",
+    "fullDescription": "مع تكاثر واجهات API، يعيد كل فريق Backend كتابة كود المصادقة والتقييد والتسجيل نفسه — وبشكل غير متسق. تنقل بوابة API هذه المهام المشتركة إلى طبقة مُدارة واحدة. ننفّذ البوابات باستخدام Kong وAWS API Gateway وEnvoy وNGINX، ونختار المنصة التي تناسب نموذج الاستضافة وحجم الحركة والميزانية لديكم بدلاً من الانحياز لمورّد واحد. يشمل عملنا تصميم المسارات، والتحقق من JWT وOAuth 2.0 عند الحافة، وسياسات تحديد المعدل والحصص، وتحويل الطلبات للأنظمة القديمة، وإصدارات canary للانتقال الآمن بين النسخ. ننقل الحركة الحالية خلف البوابة تدريجياً دون أي انقطاع، ونقيس كل شيء لتروا أخيراً مَن يستدعي أي API وكم مرة وبأي سرعة.",
+    "features": [
+      "توجيه الطلبات وموازنة الحمل",
+      "المصادقة عند الحافة (OAuth 2.0، JWT، mTLS)",
+      "تحديد المعدل وسياسات الحصص",
+      "تحويل الطلبات والاستجابات",
+      "إدارة إصدارات API وإطلاقات Canary",
+      "التخزين المؤقت للاستجابات والضغط",
+      "بوابة المطوّرين وإدارة مفاتيح API",
+      "مراقبة البوابة (سجلات، مقاييس، تتبّع)"
+    ],
+    "benefits": [
+      "نقطة واحدة لفرض كل سياسات الأمان",
+      "يتكامل العملاء مع نقطة نهاية واحدة مستقرة",
+      "تتوقف فرق Backend عن تكرار كود المصادقة والتقييد",
+      "رؤية كاملة لحركة API ومستهلكيها",
+      "إطلاق تدريجي وآمن لإصدارات API الجديدة",
+      "تعقيد تشغيلي أقل مع تزايد عدد الواجهات"
+    ],
+    "metaTitle": "تنفيذ بوابات API — Kong وAWS وEnvoy | PakSoft",
+    "metaDescription": "تنفيذ بوابات API باستخدام Kong وAWS API Gateway وEnvoy: مصادقة مركزية، تحديد معدل، توجيه ومراقبة كاملة للحركة. احصلوا على مراجعة معمارية مجانية اليوم.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "جرد الواجهات والمتطلبات", "description": "نُعدّ قائمة بواجهات API الحالية ومستهلكيها وأحجام الحركة وقواعد الأمان والامتثال لكل نقطة نهاية. يكشف هذا الجرد أوجه عدم الاتساق — منطق مصادقة مكرر، حدود معدل مفقودة — التي ستزيلها البوابة." },
+        { "step": 2, "title": "اختيار المنصة", "description": "نقارن الخيارات المُدارة مثل AWS API Gateway مع الاستضافة الذاتية لـ Kong أو Envoy أو NGINX من حيث التكلفة والتأخير واحتياجات الإضافات والمسؤولية التشغيلية. تحصلون على توصية مكتوبة توضح المقايضات بدلاً من اختيار مورّد افتراضي." },
+        { "step": 3, "title": "تصميم المعمارية والسياسات", "description": "نصمّم بنية التوجيه وتدفقات المصادقة ومستويات تحديد المعدل وقواعد التحويل كتهيئة تصريحية محفوظة في نظام التحكم بالإصدارات. تُراجَع كل سياسة وفق متطلبات الامتثال لديكم قبل تفعيلها." },
+        { "step": 4, "title": "التنفيذ والترحيل", "description": "تُنشر البوابة بالتوازي مع البنية الحالية، وتُنقل الحركة مساراً تلو الآخر عبر قواعد DNS الموزونة أو موازن الحمل. تُتحقق كل واجهة منقولة تحت حركة الإنتاج الفعلية قبل الانتقال إلى التالية — لا انتقال دفعة واحدة." },
+        { "step": 5, "title": "تقوية الأمان واختبار الحمل", "description": "نختبر تهيئة الحافة أمنياً، ونتحقق من التحقق من الرموز وسلوك CORS، ونثبت عبر اختبار الحمل أن البوابة لا تضيف سوى مللي ثوانٍ معدودة في ذروة الحركة. تُضبط حدود المعدل وفق أنماط الاستخدام الحقيقية لا التخمين." },
+        { "step": 6, "title": "المراقبة والتسليم", "description": "تُربط لوحات المتابعة والتنبيهات والتتبّع الموزّع بمنظومة المراقبة لديكم لتظهر الحالات الشاذة قبل أن يشتكي المستهلكون. نوثّق التهيئة وندرّب فريقكم على تعديل السياسات ونسلّم الملكية كاملة." }
+      ],
+      "faq": [
+        { "question": "هل أحتاج فعلاً إلى بوابة API أم يكفي reverse proxy؟", "answer": "إذا كنتم تشغّلون واجهة أو اثنتين لمستهلك واحد، فغالباً يكفي reverse proxy مثل NGINX. تؤتي البوابة ثمارها عندما تتعدد الواجهات أو المستهلكون الخارجيون أو السياسات الخاصة بكل عميل — مفاتيح API، حصص، تحليلات استخدام، تسييل. الجواب الصادق يعتمد على عدد واجهاتكم وتنوّع مستهلكيها، وسنخبركم بوضوح إن لم تكونوا بحاجة إليها بعد." },
+        { "question": "كم يضيف الـ gateway من التأخير؟", "answer": "تضيف البوابة المُهيأة جيداً عادةً من 1 إلى 10 مللي ثانية لكل طلب؛ ويقع Envoy وKong عند الطرف الأدنى من هذا النطاق. يأتي معظم العبء من إضافات مُهيأة بشكل خاطئ أو استدعاءات متزامنة لخدمات مصادقة خارجية، وهو ما نتجنبه بتخزين نتائج التحقق من الرموز مؤقتاً عند الحافة." },
+        { "question": "أيهما أفضل: المُدار (AWS API Gateway) أم الاستضافة الذاتية (Kong، Envoy)؟", "answer": "تُزيل البوابات المُدارة العبء التشغيلي لكنها تُحاسب لكل مليون طلب، ما يجعلها مكلفة عند الأحجام العالية — قد يتجاوز AWS API Gateway تكلفة البنية خلفه بعد بضع مئات الملايين من الطلبات شهرياً. أما Kong أو Envoy المستضاف ذاتياً فتكلفته ثابتة ومرونة إضافاته أكبر، لكن الترقيات والتوسّع مسؤوليتكم. نُعدّ نمذجة للخيارين وفق حركتكم المتوقعة قبل التوصية." },
+        { "question": "هل يمكن للبوابة تولّي المصادقة لجميع خدماتي؟", "answer": "نعم — هذه إحدى مهامها الأساسية. تتحقق البوابة من JWT عند الحافة، أو تُجري OAuth 2.0 token introspection، أو تفحص مفاتيح API، ثم تمرر بيانات الهوية المُتحقق منها كترويسات إلى خدماتكم الخلفية. تتخلص خدماتكم من برمجيات المصادقة الخاصة بها، فتختفي فئة كاملة من أخطاء عدم الاتساق." },
+        { "question": "كيف ترحّلون الواجهات الحالية خلف البوابة دون انقطاع؟", "answer": "نشغّل البوابة بالتوازي مع نقاط الدخول الحالية وننقل الحركة تدريجياً — عادةً بدءاً من 5 إلى 10٪ لكل مسار مع إمكانية تراجع فوري. يستمر المستهلكون باستخدام العناوين نفسها لأن DNS أو موازن الحمل يتولى التبديل. يستغرق الترحيل الكامل لـ 20 إلى 30 واجهة عادةً من 3 إلى 6 أسابيع." },
+        { "question": "ما الفرق بين بوابة API وservice mesh؟", "answer": "تدير البوابة الحركة الشمالية-الجنوبية — الطلبات الداخلة إلى نظامكم من الخارج — بينما يدير service mesh مثل Istio الحركة الشرقية-الغربية بين الخدمات الداخلية. هما متكاملان لا متنافسان؛ كثير من الفرق تكفيها البوابة وحدها، وإضافة mesh قبل أوانه مصدر شائع لتعقيد لا داعي له." },
+        { "question": "هل تساعد البوابة في إدارة إصدارات API؟", "answer": "إلى حد كبير. يمكن للبوابة توجيه /v1 و/v2 إلى أنظمة خلفية مختلفة، وترجمة صيغ الطلبات القديمة إلى الجديدة ليستمر عمل العملاء القدامى، وتشغيل إطلاقات canary ترسل نسبة صغيرة من الحركة إلى الإصدار الجديد. هكذا يمكنكم إيقاف الإصدارات وفق جدول مبني على بيانات استخدام حقيقية من تحليلات البوابة." },
+        { "question": "كم يكلّف مشروع بوابة API وكم يستغرق؟", "answer": "يستغرق التنفيذ المركّز لعدد قليل من الواجهات عادةً من 3 إلى 5 أسابيع؛ أما النشر المؤسسي مع إضافات مخصصة وبوابة مطوّرين وعشرات الخدمات فيمتد من شهرين إلى أربعة أشهر. تعتمد التكلفة الجارية بشدة على قرار المُدار مقابل الاستضافة الذاتية، ولهذا نُرفق بتوصية المنصة إسقاطاً للتكلفة الإجمالية على 12 شهراً." }
+      ],
+      "technologies": [
+        { "icon": "kong", "name": "Kong" },
+        { "icon": "aws", "name": "AWS API Gateway" },
+        { "icon": "envoy", "name": "Envoy" },
+        { "icon": "nginx", "name": "NGINX" },
+        { "icon": "tyk", "name": "Tyk" },
+        { "icon": "kubernetes", "name": "Kubernetes" },
+        { "icon": "keycloak", "name": "Keycloak" },
+        { "icon": "grafana", "name": "Grafana" }
+      ]
+    }
+  }
+}

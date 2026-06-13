@@ -64,7 +64,8 @@ export default function ServiceBlogFeed({ category, placeholderPosts, viewAllHre
       .then(data => {
         if (cancelled) return;
         const all: BlogPost[] = data?.data ?? [];
-        const filtered = all.filter(p => p.category === category).slice(0, 4);
+        const matched = all.filter(p => p.category === category);
+        const filtered = (matched.length ? matched : all).slice(0, 4);
         setPosts(filtered);
         setLoading(false);
       })

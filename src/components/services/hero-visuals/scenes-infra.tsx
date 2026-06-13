@@ -5,12 +5,13 @@
 
 import React from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
-import { H, Scene, GirihHalo, HeritageParticles, drawIn, riseIn, popIn, starPoints, octagonPoints } from './primitives';
+import { H, Scene, GirihHalo, HeritageParticles, drawIn, riseIn, popIn, starPoints, octagonPoints , useSceneLabels } from './primitives';
 
 /* ── cloud-stack ─────────────────────────────────────────────────── */
 const CLOUD_D = 'M 78 128 a 26 26 0 0 1 6 -51 a 34 34 0 0 1 66 -8 a 24 24 0 0 1 14 45 q -4 14 -20 14 h -52 q -10 0 -14 -8 z';
 
 export function CloudStackScene() {
+  const L = useSceneLabels();
   const reduced = useReducedMotion();
   const orbiters = [
     { label: 'API', color: H.terracotta },
@@ -52,7 +53,7 @@ export function CloudStackScene() {
         {/* ground services */}
         <motion.g {...riseIn(1.4)}>
           <rect x="76" y="196" width="92" height="20" rx="7" fill={H.white} stroke={H.sand} strokeWidth="1.5" />
-          <text x="122" y="209.5" textAnchor="middle" fontSize="9" fontWeight="600" fill={H.lapis}>your infrastructure</text>
+          <text x="122" y="209.5" textAnchor="middle" fontSize="9" fontWeight="600" fill={H.lapis}>{L('yourInfra', 'your infrastructure')}</text>
         </motion.g>
       </svg>
       {/* orbiting service chips */}
@@ -149,6 +150,7 @@ export function GearSystemScene() {
 const SHIELD_D = 'M 120 34 L 178 56 V 118 q 0 46 -58 72 q -58 -26 -58 -72 V 56 Z';
 
 export function ShieldLockScene() {
+  const L = useSceneLabels();
   const reduced = useReducedMotion();
   return (
     <Scene glow={H.lapis}>
@@ -219,7 +221,7 @@ export function ShieldLockScene() {
         {/* secure badge */}
         <motion.g {...popIn(2.4)}>
           <rect x="86" y="204" width="68" height="20" rx="10" fill={H.turquoise} />
-          <text x="120" y="217.5" textAnchor="middle" fontSize="10" fontWeight="700" fill={H.white}>✓ secured</text>
+          <text x="120" y="217.5" textAnchor="middle" fontSize="10" fontWeight="700" fill={H.white}>{L('secured', '✓ secured')}</text>
         </motion.g>
       </svg>
     </Scene>
@@ -228,6 +230,7 @@ export function ShieldLockScene() {
 
 /* ── workflow-diagram ────────────────────────────────────────────── */
 export function WorkflowDiagramScene() {
+  const L = useSceneLabels();
   const reduced = useReducedMotion();
   const steps = [
     { x: 48, y: 56, color: H.turquoise },
@@ -274,16 +277,16 @@ export function WorkflowDiagramScene() {
         <motion.path d="M 192 144 V 188" fill="none" stroke={H.terracotta} strokeWidth="1.6" strokeDasharray="4 4" {...drawIn(2.2, 0.5)} opacity={0.6} />
         <motion.g {...popIn(2.5)}>
           <rect x="92" y="188" width="56" height="26" rx="13" fill={H.turquoise} />
-          <text x="120" y="205" textAnchor="middle" fontSize="10" fontWeight="700" fill={H.white}>✓ ship</text>
+          <text x="120" y="205" textAnchor="middle" fontSize="10" fontWeight="700" fill={H.white}>{L('ship', '✓ ship')}</text>
         </motion.g>
         <motion.g {...popIn(2.7)}>
           <rect x="166" y="188" width="52" height="26" rx="13" fill={H.white} stroke={H.terracotta} strokeWidth="1.6" />
-          <text x="192" y="205" textAnchor="middle" fontSize="10" fontWeight="700" fill={H.terracotta}>retry ↻</text>
+          <text x="192" y="205" textAnchor="middle" fontSize="10" fontWeight="700" fill={H.terracotta}>{L('retry', 'retry ↻')}</text>
         </motion.g>
         {/* labels above */}
-        <motion.text {...riseIn(1)} x="48" y="32" textAnchor="middle" fontSize="9" fill="#8a8275">plan</motion.text>
-        <motion.text {...riseIn(1.1)} x="120" y="32" textAnchor="middle" fontSize="9" fill="#8a8275">build</motion.text>
-        <motion.text {...riseIn(1.2)} x="192" y="32" textAnchor="middle" fontSize="9" fill="#8a8275">test</motion.text>
+        <motion.text {...riseIn(1)} x="48" y="32" textAnchor="middle" fontSize="9" fill="#8a8275">{L('plan', 'plan')}</motion.text>
+        <motion.text {...riseIn(1.1)} x="120" y="32" textAnchor="middle" fontSize="9" fill="#8a8275">{L('build', 'build')}</motion.text>
+        <motion.text {...riseIn(1.2)} x="192" y="32" textAnchor="middle" fontSize="9" fill="#8a8275">{L('test', 'test')}</motion.text>
       </svg>
     </Scene>
   );

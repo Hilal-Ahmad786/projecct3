@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { servicesByCategory, type ServiceEntry } from '@/data/serviceHierarchy';
 import { useState, useEffect, useRef } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import {
@@ -800,99 +801,43 @@ const serviceIconColors: Record<string, string> = {
 };
 
 // Service categories with parent/child hierarchy
-type ServiceEntry = { slug: string; children?: string[] };
+
 const serviceCategories: Record<string, { key: string; icon: React.ElementType; gradient: string; services: ServiceEntry[] }> = {
   webSoftware: {
     key: 'webSoftware',
     icon: CodeBracketIcon,
     gradient: 'from-blue-500 to-blue-600',
-    services: [
-      { slug: 'web-development', children: ['frontend-development', 'backend-development', 'full-stack-development', 'progressive-web-apps', 'headless-cms-development', 'jamstack-development'] },
-      { slug: 'e-commerce', children: ['shopify-development', 'woocommerce-development', 'magento-development', 'custom-ecommerce', 'marketplace-development', 'b2b-ecommerce'] },
-      { slug: 'mobile-development', children: ['ios-development', 'android-development', 'flutter-development', 'react-native-development', 'cross-platform-apps'] },
-      { slug: 'api-development', children: ['rest-api-development', 'graphql-development', 'third-party-api-integration', 'api-gateway'] },
-      { slug: 'saas-development', children: ['mvp-development', 'multi-tenant-architecture', 'saas-migration'] },
-      { slug: 'wordpress-development', children: ['custom-wordpress-themes', 'wordpress-plugin-development', 'wordpress-optimization'] },
-      { slug: 'enterprise-software', children: ['crm-development', 'erp-development', 'hrms-development', 'custom-business-software'] },
-      { slug: 'web3-blockchain', children: ['smart-contracts', 'dapp-development', 'nft-marketplace', 'defi-solutions', 'tokenization'] },
-      { slug: 'no-code-low-code', children: ['bubble-development', 'webflow-development', 'airtable-solutions', 'zapier-automation'] },
-    ]
+    services: servicesByCategory.web,
   },
   aiData: {
     key: 'aiData',
     icon: CpuChipIcon,
     gradient: 'from-violet-500 to-violet-600',
-    services: [
-      { slug: 'ai-solutions', children: ['ai-consulting-strategy', 'custom-ai-development', 'ai-integration', 'ai-poc-mvp'] },
-      { slug: 'machine-learning', children: ['predictive-analytics', 'nlp-text-processing', 'recommendation-systems', 'anomaly-detection', 'time-series-forecasting'] },
-      { slug: 'conversational-ai', children: ['chatbot-development', 'voice-assistant-development', 'whatsapp-bots', 'customer-service-ai'] },
-      { slug: 'llm-services', children: ['llm-finetuning', 'prompt-engineering', 'gpt-claude-api-integration', 'custom-llm-development'] },
-      { slug: 'computer-vision', children: ['image-recognition', 'object-detection', 'video-analytics', 'ocr-document-processing'] },
-      { slug: 'ai-agents', children: ['autonomous-agents', 'multi-agent-systems', 'ai-workflow-automation'] },
-      { slug: 'rag-solutions', children: ['knowledge-base-ai', 'document-qa', 'enterprise-search-ai'] },
-      { slug: 'python-automation', children: ['web-scraping', 'workflow-automation', 'data-pipeline-automation', 'rpa-solutions'] },
-    ]
+    services: servicesByCategory.ai,
   },
   marketing: {
     key: 'marketing',
     icon: MegaphoneIcon,
     gradient: 'from-green-500 to-green-600',
-    services: [
-      { slug: 'digital-marketing', children: ['seo', 'google-ads', 'meta-ads', 'social-media-marketing'] },
-      { slug: 'seo', children: ['technical-seo', 'local-seo', 'international-seo', 'link-building', 'ecommerce-seo', 'geo-ai-search-optimization'] },
-      { slug: 'google-ads', children: ['google-search-ads', 'google-display-ads', 'youtube-ads', 'google-shopping', 'performance-max'] },
-      { slug: 'meta-ads', children: ['facebook-ads', 'instagram-ads', 'advantage-plus-campaigns'] },
-      { slug: 'social-media-marketing', children: ['social-media-management', 'influencer-marketing', 'community-management', 'social-commerce'] },
-      { slug: 'tiktok-marketing', children: ['tiktok-ads', 'tiktok-shop', 'tiktok-content'] },
-      { slug: 'linkedin-marketing', children: ['linkedin-ads', 'linkedin-lead-gen', 'company-page-management'] },
-      { slug: 'whatsapp-marketing', children: ['whatsapp-business-api', 'whatsapp-campaigns', 'whatsapp-commerce'] },
-      { slug: 'email-marketing', children: ['email-automation', 'newsletter-design', 'email-deliverability'] },
-      { slug: 'content-marketing', children: ['blog-copywriting', 'video-production-marketing', 'content-strategy', 'podcast-production'] },
-      { slug: 'cro', children: ['ab-testing', 'landing-page-optimization', 'funnel-optimization', 'ux-analytics'] },
-      { slug: 'marketing-automation', children: ['hubspot-implementation', 'salesforce-marketing-cloud', 'custom-marketing-automation'] },
-      { slug: 'marketplace-ads', children: ['amazon-ppc', 'trendyol-ads', 'app-store-optimization'] },
-    ]
+    services: servicesByCategory.marketing,
   },
   design: {
     key: 'design',
     icon: PaintBrushIcon,
     gradient: 'from-pink-500 to-pink-600',
-    services: [
-      { slug: 'ui-ux-design', children: ['ui-design', 'ux-research', 'prototyping-wireframing', 'design-systems', 'mobile-app-design'] },
-      { slug: 'graphic-design', children: ['logo-brand-identity', 'print-packaging-design', 'social-media-graphics', 'presentation-design'] },
-      { slug: 'motion-graphics', children: ['explainer-videos', 'social-animations', 'product-animations'] },
-      { slug: 'web-design', children: ['corporate-website-design', 'landing-page-design', 'ecommerce-design'] },
-      { slug: 'brand-strategy', children: ['brand-positioning', 'brand-guidelines', 'rebranding'] },
-      { slug: '3d-ar-vr', children: ['3d-product-visualization', 'ar-experiences', 'virtual-tours'] },
-    ]
+    services: servicesByCategory.design,
   },
   infrastructure: {
     key: 'infrastructure',
     icon: ServerStackIcon,
     gradient: 'from-orange-500 to-orange-600',
-    services: [
-      { slug: 'devops-cloud', children: ['ci-cd-pipelines', 'docker-kubernetes', 'cloud-management', 'infrastructure-as-code'] },
-      { slug: 'cybersecurity', children: ['penetration-testing', 'security-audits-compliance', 'gdpr-compliance', 'soc2-compliance'] },
-      { slug: 'managed-services', children: ['continuous-monitoring', 'maintenance-support', 'disaster-recovery'] },
-      { slug: 'data-analytics', children: ['business-intelligence', 'big-data-etl', 'data-visualization', 'real-time-analytics'] },
-      { slug: 'cloud-migration', children: ['aws-migration', 'azure-migration', 'google-cloud-migration'] },
-      { slug: 'mlops-deployment', children: ['model-deployment', 'model-monitoring', 'ml-pipelines'] },
-      { slug: 'database-services', children: ['database-design', 'database-optimization', 'database-migration'] },
-      { slug: 'performance-optimization', children: ['website-speed-optimization', 'core-web-vitals', 'server-optimization'] },
-    ]
+    services: servicesByCategory.infrastructure,
   },
   consulting: {
     key: 'consulting',
     icon: LightBulbIcon,
     gradient: 'from-slate-500 to-slate-600',
-    services: [
-      { slug: 'digital-transformation', children: ['digital-strategy', 'process-digitization'] },
-      { slug: 'technology-consulting', children: ['tech-stack-assessment', 'architecture-design'] },
-      { slug: 'ai-strategy', children: ['ai-readiness-assessment', 'ai-roi-analysis'] },
-      { slug: 'growth-strategy' },
-      { slug: 'startup-services', children: ['startup-mvp-development', 'technical-cto'] },
-      { slug: 'staff-augmentation', children: ['developer-outsourcing', 'dedicated-teams'] },
-    ]
+    services: servicesByCategory.consulting,
   },
 };
 
@@ -919,6 +864,7 @@ export default function Navbar() {
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<string>('webSoftware');
   const [searchQuery, setSearchQuery] = useState('');
+  const [activeMegaCat, setActiveMegaCat] = useState('webSoftware');
   const servicesRef = useRef<HTMLLIElement>(null);
   const pathname = usePathname();
   const router = useRouter();
@@ -1112,88 +1058,91 @@ export default function Navbar() {
                         </div>
                       </div>
 
-                      {/* Bento Grid */}
-                      <div className="overflow-y-auto flex-1 p-5 scrollbar-thin">
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                          {Object.entries(serviceCategories).map(([catKey, cat]) => {
-                            const CatIcon = cat.icon;
-                            const isConsulting = catKey === 'consulting';
-                            const q = searchQuery.trim().toLowerCase();
-                            const allServices = q
-                              ? cat.services.filter(s =>
-                                  s.slug.replace(/-/g, ' ').includes(q) ||
-                                  s.children?.some(c => c.replace(/-/g, ' ').includes(q))
-                                )
-                              : cat.services.slice(0, isConsulting ? 2 : 4);
+                      {/* Category tabs */}
+                      <div className={`flex gap-1.5 px-5 pt-4 pb-3 overflow-x-auto flex-shrink-0 border-b border-gray-100 bg-white ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
+                        {Object.entries(serviceCategories).map(([catKey, cat]) => {
+                          const CatIcon = cat.icon;
+                          const isActive = activeMegaCat === catKey && !searchQuery.trim();
+                          const count = cat.services.reduce((n, s) => n + 1 + (s.children?.length || 0), 0);
+                          return (
+                            <button
+                              key={catKey}
+                              onClick={() => { setActiveMegaCat(catKey); setSearchQuery(''); }}
+                              className={`flex items-center gap-2 px-3.5 py-2 rounded-full text-xs font-semibold whitespace-nowrap transition-all border ${isActive ? 'bg-heritage-turquoise text-white border-heritage-turquoise shadow-sm' : 'bg-white text-gray-600 border-gray-200 hover:border-heritage-turquoise hover:text-heritage-turquoise'}`}
+                            >
+                              <CatIcon className="w-4 h-4" />
+                              {tServices(cat.key)}
+                              <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded-full ${isActive ? 'bg-white/20 text-white' : 'bg-gray-100 text-gray-500'}`}>{count}</span>
+                            </button>
+                          );
+                        })}
+                      </div>
 
-                            if (q && allServices.length === 0) return null;
-
+                      {/* Full catalog — all groups, all services */}
+                      <div className="overflow-y-auto flex-1 p-6 scrollbar-thin">
+                        {(() => {
+                          const q = searchQuery.trim().toLowerCase();
+                          const svcLabel = (slug: string) => String(tServices(`services.${slug}`)).toLowerCase();
+                          const matches = (slug: string) => slug.replace(/-/g, ' ').includes(q) || svcLabel(slug).includes(q);
+                          const cats = q
+                            ? Object.entries(serviceCategories)
+                            : Object.entries(serviceCategories).filter(([k]) => k === activeMegaCat);
+                          const rendered = cats.map(([catKey, cat]) => {
+                            const groups = (q
+                              ? cat.services
+                                  .map(s => {
+                                    const kids = (s.children || []).filter(matches);
+                                    const self = matches(s.slug);
+                                    if (!self && kids.length === 0) return null;
+                                    return { slug: s.slug, children: self && kids.length === 0 ? (s.children || []) : kids };
+                                  })
+                                  .filter(Boolean) as { slug: string; children: string[] }[]
+                              : cat.services.map(s => ({ slug: s.slug, children: s.children || [] })));
+                            if (groups.length === 0) return null;
                             return (
-                              <div key={catKey} className="flex flex-col rounded-xl border border-gray-100 overflow-hidden bg-white">
-                                {/* Category header */}
-                                <div className="flex items-center gap-3 px-4 py-3.5 border-b border-gray-100 bg-gray-50/60 flex-shrink-0">
-                                  <div className={`w-9 h-9 rounded-xl bg-gradient-to-br ${cat.gradient} flex items-center justify-center shadow-sm flex-shrink-0`}>
-                                    <CatIcon className="w-4.5 h-4.5 text-white" />
+                              <div key={catKey} className="mb-8 last:mb-0">
+                                {q && (
+                                  <div className={`flex items-center gap-2 mb-3 ${dir === 'rtl' ? 'flex-row-reverse' : ''}`}>
+                                    <span className="text-[11px] font-bold uppercase tracking-widest text-heritage-turquoise">{tServices(cat.key)}</span>
+                                    <span className="h-px flex-1 bg-gray-100" />
                                   </div>
-                                  <h3 className="font-bold text-gray-900 text-sm tracking-tight">{tServices(cat.key)}</h3>
-                                </div>
-
-                                {/* Sub-groups */}
-                                <div className="p-4 flex-1 flex flex-col gap-4">
-                                  <div className="grid grid-cols-2 gap-x-4 gap-y-4">
-                                    {allServices.map((service) => (
-                                      <div key={service.slug}>
-                                        <Link
-                                          href={getServicePath(service.slug)}
-                                          onClick={handleLinkClick}
-                                          className={`block font-semibold text-xs text-gray-900 mb-2 ${dir === 'rtl' ? 'border-r-2 border-l-0 pr-2' : 'border-l-2 pl-2'} border-accent-emerald hover:text-accent-emerald transition-colors leading-tight`}
-                                        >
-                                          {tServices(`services.${service.slug}`)}
-                                        </Link>
-                                        {service.children && service.children.length > 0 && (
-                                          <ul className="flex flex-col gap-0.5">
-                                            {service.children.slice(0, 4).map((childSlug) => (
-                                              <li key={childSlug}>
-                                                <Link
-                                                  href={getServicePath(childSlug)}
-                                                  onClick={handleLinkClick}
-                                                  className="text-[12px] text-gray-500 hover:text-accent-emerald transition-colors leading-snug block"
-                                                >
-                                                  {tServices(`services.${childSlug}`)}
-                                                </Link>
-                                              </li>
-                                            ))}
-                                          </ul>
-                                        )}
-                                      </div>
-                                    ))}
-                                  </div>
-
-                                  {/* "Ready to Scale?" CTA — consulting only */}
-                                  {isConsulting && !q && (
-                                    <div className="mt-auto bg-gray-900 rounded-xl p-5 relative overflow-hidden group">
-                                      <div className="absolute -right-6 -top-6 w-24 h-24 bg-accent-emerald/20 rounded-full blur-xl pointer-events-none" />
-                                      <div className="relative z-10">
-                                        <h4 className="font-semibold text-white text-sm mb-0.5">{tServices('ctaTitle') as string}</h4>
-                                        <p className="text-white/70 text-xs mb-3">{tServices('ctaDesc') as string}</p>
-                                        <Link
-                                          href={`/${locale}${getLocalizedPath('/contact', locale)}`}
-                                          onClick={handleLinkClick}
-                                          className="inline-flex items-center gap-1.5 bg-white text-gray-900 font-semibold text-xs px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors"
-                                        >
-                                          {tServices('ctaButton') as string}
-                                          <svg className="h-3 w-3 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                                          </svg>
-                                        </Link>
-                                      </div>
+                                )}
+                                <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-6">
+                                  {groups.map(group => (
+                                    <div key={group.slug}>
+                                      <Link
+                                        href={getServicePath(group.slug)}
+                                        onClick={handleLinkClick}
+                                        className={`block font-semibold text-[13px] text-gray-900 mb-2 ${dir === 'rtl' ? 'border-r-2 border-l-0 pr-2' : 'border-l-2 pl-2'} border-heritage-turquoise hover:text-heritage-turquoise transition-colors leading-tight`}
+                                      >
+                                        {tServices(`services.${group.slug}`)}
+                                      </Link>
+                                      {group.children.length > 0 && (
+                                        <ul className="flex flex-col gap-1">
+                                          {group.children.map(childSlug => (
+                                            <li key={childSlug}>
+                                              <Link
+                                                href={getServicePath(childSlug)}
+                                                onClick={handleLinkClick}
+                                                className="text-[12px] text-gray-500 hover:text-heritage-turquoise transition-colors leading-snug block"
+                                              >
+                                                {tServices(`services.${childSlug}`)}
+                                              </Link>
+                                            </li>
+                                          ))}
+                                        </ul>
+                                      )}
                                     </div>
-                                  )}
+                                  ))}
                                 </div>
                               </div>
                             );
-                          })}
-                        </div>
+                          });
+                          const any = rendered.some(r => r !== null);
+                          return any ? rendered : (
+                            <div className="text-center py-10 text-sm text-gray-400">{tServices('noResults') as string}</div>
+                          );
+                        })()}
                       </div>
 
                       {/* Bottom bar */}

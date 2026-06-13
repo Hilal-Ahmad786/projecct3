@@ -29,6 +29,8 @@ const nextConfig = {
 
   async redirects() {
     return [
+      // tech-stack → technologies (canonical sub-nav URL)
+      { source: '/:locale/services/:slug/tech-stack', destination: '/:locale/services/:slug/technologies', permanent: true },
       // Turkish blog posts missing locale prefix (old Google-indexed URLs)
       { source: '/blog/nextjs-cok-dilli-e-ticaret', destination: '/tr/blog/nextjs-cok-dilli-e-ticaret', permanent: true },
       { source: '/blog/ui-ux-tasarim-prensipleri', destination: '/tr/blog/ui-ux-tasarim-prensipleri', permanent: true },

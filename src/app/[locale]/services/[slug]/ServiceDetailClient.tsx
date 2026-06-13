@@ -190,6 +190,10 @@ export default function ServiceDetailClient({
 
   const richCapabilities = service._jsonContent?.services?.items ?? [];
   const whyUsBenefits = service._jsonContent?.whyUs?.benefits ?? [];
+  const tWhyUs = t('services.detail.whyUs.benefits');
+  const translatedWhyUsDefaults: WhyUsBenefit[] = Array.isArray(tWhyUs) && tWhyUs.length > 0
+    ? (tWhyUs as WhyUsBenefit[])
+    : DEFAULT_WHY_US_BENEFITS;
 
   const show = (key: SectionKey) => !showSections || showSections.includes(key);
 
@@ -232,7 +236,7 @@ export default function ServiceDetailClient({
       {/* ── 6. Why Choose Us ────────────────────────────────────────── */}
       {show('whyUs') && (
         <WhyUsSection
-          benefits={whyUsBenefits.length > 0 ? whyUsBenefits : DEFAULT_WHY_US_BENEFITS}
+          benefits={whyUsBenefits.length > 0 ? whyUsBenefits : translatedWhyUsDefaults}
           jsonContent={service._jsonContent?.whyUs}
         />
       )}

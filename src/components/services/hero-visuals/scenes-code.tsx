@@ -5,7 +5,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
-import { H, Scene, GirihHalo, HeritageParticles, popIn, riseIn, starPoints } from './primitives';
+import { H, Scene, GirihHalo, HeritageParticles, popIn, riseIn, starPoints , useSceneLabels } from './primitives';
 
 /* ── Looping typewriter for short code lines ─────────────────────── */
 function useLoopTyping(lines: string[], speed = 45, holdMs = 2600) {
@@ -61,6 +61,7 @@ function tokenColor(word: string): string {
 
 /* ── code-editor ─────────────────────────────────────────────────── */
 export function CodeEditorScene() {
+  const L = useSceneLabels();
   const reduced = useReducedMotion();
   const lines = useLoopTyping(EDITOR_LINES);
   return (
@@ -86,7 +87,7 @@ export function CodeEditorScene() {
               animate={reduced ? undefined : { opacity: [0.6, 1, 0.6] }}
               transition={{ duration: 2, repeat: Infinity }}
             >
-              ● live
+              ● {L('live', 'live')}
             </motion.span>
           </div>
           {/* Code body */}
@@ -112,7 +113,7 @@ export function CodeEditorScene() {
           </div>
           {/* Status bar with lighthouse score */}
           <div className="flex items-center justify-between px-3 py-1.5 text-[9px]" style={{ background: H.lapis, color: '#9fb3d1' }}>
-            <span>✓ 0 errors</span>
+            <span>✓ {L('noErrors', '0 errors')}</span>
             <motion.span {...popIn(1.4)} className="font-semibold" style={{ color: H.saffron }}>⚡ 98 Lighthouse</motion.span>
           </div>
         </motion.div>
@@ -186,6 +187,7 @@ export function TerminalScene() {
 
 /* ── mobile-device ───────────────────────────────────────────────── */
 export function MobileDeviceScene() {
+  const L = useSceneLabels();
   const reduced = useReducedMotion();
   return (
     <Scene glow={H.terracotta}>
@@ -220,7 +222,7 @@ export function MobileDeviceScene() {
                 style={{ background: H.white }}
               >
                 <span className="w-4 h-4 rounded-md flex items-center justify-center text-[7px] text-white" style={{ background: H.saffron }}>✓</span>
-                <span className="text-[7px] font-medium" style={{ color: H.ink }}>Order confirmed!</span>
+                <span className="text-[7px] font-medium" style={{ color: H.ink }}>{L('orderConfirmed', 'Order confirmed!')}</span>
               </motion.div>
               {/* cards build up */}
               <div className="p-2.5 space-y-2">
@@ -260,14 +262,15 @@ export function MobileDeviceScene() {
 }
 
 /* ── layers-stack (isometric architecture) ───────────────────────── */
-const LAYERS = [
-  { label: 'UI / Presentation', color: H.turquoise },
-  { label: 'Business Logic', color: H.lapis },
-  { label: 'API Layer', color: H.terracotta },
-  { label: 'Database', color: H.saffron },
+const LAYER_DEFS = [
+  { key: 'uiLayer', fallback: 'UI / Presentation', color: H.turquoise },
+  { key: 'logicLayer', fallback: 'Business Logic', color: H.lapis },
+  { key: 'apiLayer', fallback: 'API Layer', color: H.terracotta },
+  { key: 'dbLayer', fallback: 'Database', color: H.saffron },
 ];
 
 export function LayersStackScene() {
+  const L = useSceneLabels();
   const reduced = useReducedMotion();
   return (
     <Scene glow={H.lapis}>
@@ -275,7 +278,7 @@ export function LayersStackScene() {
       <HeritageParticles count={10} />
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="relative" style={{ width: 240, height: 260 }}>
-          {LAYERS.map((layer, i) => (
+          {LAYER_DEFS.map((layer, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: -60 }}
@@ -285,27 +288,31 @@ export function LayersStackScene() {
               style={{ top: i * 58, x: '-50%' }}
             >
               <motion.div
+                className="relative w-52 h-16"
                 animate={reduced ? undefined : { y: [0, -5, 0] }}
                 transition={{ duration: 3.5, repeat: Infinity, delay: i * 0.4, ease: 'easeInOut' }}
               >
-                {/* isometric slab */}
+                {/* isometric slab (decorative) */}
                 <div
-                  className="w-52 h-16 shadow-xl flex items-center justify-center"
+                  className="absolute inset-0 shadow-xl"
+                  aria-hidden="true"
                   style={{
                     background: `linear-gradient(135deg, ${layer.color}, ${layer.color}dd)`,
                     transform: 'rotateX(55deg) rotateZ(-42deg)',
-                    transformStyle: 'preserve-3d',
                     borderRadius: 10,
                     border: '1px solid rgba(255,255,255,0.3)',
                   }}
+                />
+                {/* label floats flat above the slab so it never clips */}
+                <span
+                  className="absolute inset-0 flex items-center justify-center text-[11px] font-bold tracking-wide px-2 py-0.5"
+                  style={{ color: layer.color === '#e8a33d' ? '#5c3a05' : '#ffffff', textShadow: '0 1px 6px rgba(0,0,0,0.35)' }}
                 >
-                  <span className="text-[10px] font-bold text-white tracking-wide" style={{ transform: 'rotateZ(42deg) rotateX(-30deg)' }}>
-                    {layer.label}
-                  </span>
-                </div>
+                  {L(layer.key, layer.fallback)}
+                </span>
               </motion.div>
               {/* data pulse between layers */}
-              {i < LAYERS.length - 1 && !reduced && (
+              {i < LAYER_DEFS.length - 1 && !reduced && (
                 <motion.div
                   className="absolute left-1/2 w-1.5 h-1.5 rounded-full"
                   style={{ background: H.saffron, top: 38 }}
@@ -385,6 +392,7 @@ export function PuzzlePiecesScene() {
 
 /* ── server-stack ────────────────────────────────────────────────── */
 export function ServerStackScene() {
+  const L = useSceneLabels();
   const reduced = useReducedMotion();
   return (
     <Scene glow={H.lapis}>
@@ -435,7 +443,7 @@ export function ServerStackScene() {
           ))}
           {/* uptime badge */}
           <motion.div {...popIn(1.4)} className="mx-auto w-max px-3 py-1 rounded-full text-[10px] font-bold shadow-md" style={{ background: H.turquoise, color: H.white }}>
-            ▲ 99.99% uptime
+            ▲ {L('uptime', '99.99% uptime')}
           </motion.div>
         </motion.div>
       </div>

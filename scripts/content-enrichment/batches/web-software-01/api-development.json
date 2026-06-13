@@ -1,0 +1,278 @@
+{
+  "slug": "api-development",
+  "en": {
+    "name": "API Development",
+    "shortDescription": "Design and build the APIs your products run on — REST, GraphQL, and real-time endpoints that are documented, versioned, secured, and fast enough to power every client you ship.",
+    "fullDescription": "APIs are the contracts your whole product stack depends on, and bad ones are expensive to fix once clients depend on them. We design APIs contract-first: the OpenAPI or GraphQL schema is written, reviewed, and agreed before implementation begins, so frontend and backend teams build in parallel against a stable interface. From there we deliver production-grade endpoints with authentication, pagination, idempotency for unsafe operations, consistent error semantics, and rate limiting — plus the documentation and SDK-friendly conventions that make third-party developers actually want to integrate. Whether you need a REST API for a mobile app, a GraphQL layer over legacy systems, or WebSocket channels for live features, we build interfaces designed to survive years of change without breaking their consumers.",
+    "features": [
+      "RESTful API Design & Development",
+      "GraphQL API Implementation",
+      "Contract-First Design (OpenAPI/Swagger)",
+      "Authentication & Authorization (OAuth 2.0, JWT)",
+      "Versioning & Backward Compatibility Strategy",
+      "Rate Limiting & Quota Management",
+      "Real-Time APIs (WebSockets, SSE, Webhooks)",
+      "Automated Testing & Performance Benchmarking"
+    ],
+    "benefits": [
+      "Frontend and backend teams build in parallel against a stable contract",
+      "One consistent interface serves web, mobile, and partner clients",
+      "APIs scale independently of the applications that consume them",
+      "Monetize data and services as self-serve API products",
+      "Partner integrations that take days instead of months",
+      "An architecture that absorbs change without breaking consumers"
+    ],
+    "metaTitle": "API Development — REST, GraphQL & Real-Time | PakSoft",
+    "metaDescription": "Contract-first API development: REST, GraphQL, and WebSocket endpoints with OAuth security, versioning, and OpenAPI docs. Book a free architecture consultation.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Domain & Consumer Analysis", "description": "We map who will consume the API — your own apps, partners, or paying customers — and what operations and data each consumer actually needs. This determines the protocol choice, authentication model, and how strict versioning needs to be." },
+        { "step": 2, "title": "Contract Design", "description": "We write the full OpenAPI or GraphQL schema before any implementation: resources, naming, error formats, and pagination conventions. The contract is reviewed with your team and frozen, so client development can start immediately against mocks." },
+        { "step": 3, "title": "Implementation", "description": "Endpoints are built with validation at the boundary, idempotency keys for payment-like operations, and structured logging from the first commit. Every endpoint ships with automated tests covering both happy paths and failure modes." },
+        { "step": 4, "title": "Security & Hardening", "description": "We implement OAuth 2.0 or API-key authentication, scope-based authorization, input sanitization, and rate limits per consumer tier. The API is reviewed against the OWASP API Security Top 10 before anything reaches production." },
+        { "step": 5, "title": "Performance & Load Testing", "description": "We benchmark realistic traffic patterns and tune the slow paths — N+1 queries, missing indexes, oversized payloads — until p95 latency meets the agreed budget. Caching layers with Redis are added where they pay off, not by default." },
+        { "step": 6, "title": "Documentation & Handover", "description": "You receive interactive API docs, a Postman collection, code examples, and a changelog process for future versions. We define deprecation policies up front so evolving the API never strands existing integrations." }
+      ],
+      "faq": [
+        { "question": "Should I choose REST or GraphQL?", "answer": "REST remains the best default for public APIs and simple resource models: it caches well over HTTP, every developer knows it, and tooling is universal. GraphQL earns its complexity when many different clients need different slices of the same data — typically dashboards and mobile apps over a rich domain — because it eliminates over-fetching and endpoint sprawl. We often combine them: REST for public surface, GraphQL for internal product UIs." },
+        { "question": "How long does a typical API project take?", "answer": "A well-scoped API for a single product — 15 to 30 endpoints with auth, docs, and tests — typically takes 4 to 8 weeks. Public-facing API products take longer because rate limiting, developer onboarding, monitoring, and documentation polish become first-class features rather than afterthoughts." },
+        { "question": "How do you handle API versioning?", "answer": "Our first goal is to avoid breaking changes entirely through additive evolution — new fields and endpoints rather than changed ones. When a breaking change is unavoidable we version explicitly (URL path or header), run old and new versions side by side, and publish a deprecation timeline with usage monitoring so no consumer is surprised." },
+        { "question": "What does good API performance look like?", "answer": "For typical CRUD operations we target p95 latency under 200ms and p99 under 500ms at expected load; read-heavy endpoints often reach sub-50ms with Redis caching. The number that matters most is the tail, not the average — a fast median with a slow p99 still means thousands of bad requests per day at scale." },
+        { "question": "How do you secure the APIs you build?", "answer": "Authentication via OAuth 2.0, OpenID Connect, or signed API keys depending on the consumer type; authorization enforced per-scope and per-resource, never just at the route level. We add rate limiting, input validation at the schema boundary, and audit logging, and we review against the OWASP API Security Top 10 — broken object-level authorization is the most common real-world API vulnerability, so we test for it explicitly." },
+        { "question": "Can you build APIs on top of our legacy systems?", "answer": "Yes — this is one of the most valuable uses of an API layer. We wrap legacy databases, SOAP services, or ERP systems behind a clean modern interface, which lets you build new apps and integrations without touching the fragile core. The legacy system can then be modernized or replaced incrementally behind the stable contract." },
+        { "question": "Do you provide API documentation?", "answer": "Always — an undocumented API is unfinished work. Every project ships with an OpenAPI specification, interactive docs (Swagger UI or a hosted portal), a ready-to-import Postman collection, and request/response examples for every endpoint. For partner-facing APIs we also write onboarding guides covering authentication and common workflows." },
+        { "question": "What about webhooks and real-time features?", "answer": "We build webhook systems with signed payloads, automatic retries with exponential backoff, and delivery dashboards — the details that separate reliable webhooks from ones partners complain about. For live in-app features like chat, presence, or dashboards we use WebSockets or Server-Sent Events, choosing based on whether you need bidirectional communication." }
+      ],
+      "technologies": [
+        { "icon": "nodejs", "name": "Node.js" },
+        { "icon": "python", "name": "Python (FastAPI)" },
+        { "icon": "graphql", "name": "GraphQL" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "redis", "name": "Redis" },
+        { "icon": "kong", "name": "Kong" },
+        { "icon": "swagger", "name": "OpenAPI / Swagger" },
+        { "icon": "postman", "name": "Postman" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "API Geliştirme",
+    "shortDescription": "Ürünlerinizin üzerinde çalıştığı API'leri tasarlayıp geliştiriyoruz — REST, GraphQL ve gerçek zamanlı uç noktalar; belgelenmiş, sürümlenmiş, güvenli ve yayınladığınız her istemciyi besleyecek kadar hızlı.",
+    "fullDescription": "API'ler, tüm ürün yığınınızın bağlı olduğu sözleşmelerdir ve istemciler onlara bağımlı hâle geldikten sonra kötü tasarlanmış olanları düzeltmek pahalıdır. Biz API'leri sözleşme öncelikli tasarlarız: OpenAPI veya GraphQL şeması, geliştirme başlamadan önce yazılır, gözden geçirilir ve onaylanır; böylece frontend ve backend ekipleri kararlı bir arayüz üzerinde paralel çalışır. Ardından kimlik doğrulama, sayfalama, kritik işlemler için idempotency, tutarlı hata semantiği ve hız sınırlama içeren üretim kalitesinde uç noktalar teslim ederiz — üstelik üçüncü taraf geliştiricilerin gerçekten entegre olmak isteyeceği dokümantasyon ve SDK dostu standartlarla birlikte. İster mobil uygulama için REST API, ister eski sistemler üzerine GraphQL katmanı, ister canlı özellikler için WebSocket kanalları gerekiyor olsun; tüketicilerini bozmadan yıllarca değişime dayanacak arayüzler inşa ederiz.",
+    "features": [
+      "RESTful API Tasarımı ve Geliştirme",
+      "GraphQL API Uygulaması",
+      "Sözleşme Öncelikli Tasarım (OpenAPI/Swagger)",
+      "Kimlik Doğrulama ve Yetkilendirme (OAuth 2.0, JWT)",
+      "Sürümleme ve Geriye Dönük Uyumluluk Stratejisi",
+      "Hız Sınırlama ve Kota Yönetimi",
+      "Gerçek Zamanlı API'ler (WebSockets, SSE, Webhooks)",
+      "Otomatik Test ve Performans Ölçümü"
+    ],
+    "benefits": [
+      "Frontend ve backend ekipleri kararlı bir sözleşme üzerinde paralel çalışır",
+      "Web, mobil ve iş ortağı istemcilerine tek tutarlı arayüz",
+      "API'ler, onları tüketen uygulamalardan bağımsız ölçeklenir",
+      "Veri ve servislerinizi self servis API ürünlerine dönüştürerek gelir elde edin",
+      "Aylar değil günler süren iş ortağı entegrasyonları",
+      "Tüketicileri bozmadan değişimi karşılayan bir mimari"
+    ],
+    "metaTitle": "API Geliştirme — REST, GraphQL | PakSoft",
+    "metaDescription": "Sözleşme öncelikli API geliştirme: OAuth güvenliği, sürümleme ve OpenAPI dokümantasyonuyla REST, GraphQL ve WebSocket uç noktaları. Ücretsiz mimari danışmanlık alın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Alan ve Tüketici Analizi", "description": "API'yi kimin tüketeceğini — kendi uygulamalarınız, iş ortaklarınız veya ödeme yapan müşteriler — ve her tüketicinin gerçekte hangi işlem ve verilere ihtiyaç duyduğunu haritalandırırız. Bu analiz; protokol seçimini, kimlik doğrulama modelini ve sürümlemenin ne kadar katı olması gerektiğini belirler." },
+        { "step": 2, "title": "Sözleşme Tasarımı", "description": "Herhangi bir geliştirmeden önce tam OpenAPI veya GraphQL şemasını yazarız: kaynaklar, adlandırma, hata formatları ve sayfalama standartları. Sözleşme ekibinizle gözden geçirilip sabitlenir; böylece istemci geliştirme mock'lar üzerinde hemen başlayabilir." },
+        { "step": 3, "title": "Geliştirme", "description": "Uç noktalar; sınırda doğrulama, ödeme benzeri işlemler için idempotency anahtarları ve ilk commit'ten itibaren yapılandırılmış loglama ile geliştirilir. Her uç nokta, hem başarılı senaryoları hem de hata durumlarını kapsayan otomatik testlerle teslim edilir." },
+        { "step": 4, "title": "Güvenlik ve Sıkılaştırma", "description": "OAuth 2.0 veya API anahtarı tabanlı kimlik doğrulama, kapsam bazlı yetkilendirme, girdi temizleme ve tüketici katmanına göre hız sınırları uygularız. API, üretime çıkmadan önce OWASP API Security Top 10 listesine göre denetlenir." },
+        { "step": 5, "title": "Performans ve Yük Testi", "description": "Gerçekçi trafik desenlerini ölçer ve yavaş noktaları — N+1 sorgular, eksik indeksler, şişkin yanıtlar — p95 gecikmesi hedeflenen bütçeye inene kadar iyileştiririz. Redis önbellek katmanları varsayılan olarak değil, gerçekten kazandırdığı yerlerde eklenir." },
+        { "step": 6, "title": "Dokümantasyon ve Teslim", "description": "Etkileşimli API dokümantasyonu, Postman koleksiyonu, kod örnekleri ve gelecek sürümler için bir changelog süreci teslim alırsınız. Kullanımdan kaldırma politikalarını baştan tanımlarız; böylece API'nin evrimi mevcut entegrasyonları asla ortada bırakmaz." }
+      ],
+      "faq": [
+        { "question": "REST mi GraphQL mi seçmeliyim?", "answer": "Halka açık API'ler ve basit kaynak modelleri için REST hâlâ en iyi varsayılandır: HTTP üzerinde iyi önbelleklenir, her geliştirici bilir ve araç desteği evrenseldir. GraphQL ise farklı istemcilerin aynı verinin farklı kesitlerine ihtiyaç duyduğu durumlarda — tipik olarak zengin bir alan modeli üzerindeki panolar ve mobil uygulamalar — karmaşıklığını hak eder; çünkü gereksiz veri çekmeyi ve uç nokta kalabalığını ortadan kaldırır. Sıklıkla ikisini birleştiririz: dışa açık yüzey için REST, iç ürün arayüzleri için GraphQL." },
+        { "question": "Tipik bir API projesi ne kadar sürer?", "answer": "Tek bir ürün için iyi kapsamlanmış bir API — kimlik doğrulama, dokümantasyon ve testlerle birlikte 15 ila 30 uç nokta — genellikle 4 ila 8 hafta sürer. Halka açık API ürünleri daha uzun sürer; çünkü hız sınırlama, geliştirici onboarding'i, izleme ve dokümantasyon kalitesi sonradan akla gelen detaylar değil, birinci sınıf özellikler hâline gelir." },
+        { "question": "API sürümlemesini nasıl yönetiyorsunuz?", "answer": "İlk hedefimiz, kırıcı değişikliklerden eklemeli evrimle tamamen kaçınmaktır — mevcut alanları değiştirmek yerine yeni alanlar ve uç noktalar eklemek. Kırıcı değişiklik kaçınılmazsa açıkça sürümleriz (URL yolu veya header), eski ve yeni sürümleri yan yana çalıştırır, kullanım izlemesiyle birlikte bir kullanımdan kaldırma takvimi yayınlarız; böylece hiçbir tüketici sürprizle karşılaşmaz." },
+        { "question": "İyi API performansı neye benzer?", "answer": "Tipik CRUD işlemleri için beklenen yük altında p95 gecikmesinde 200ms, p99'da 500ms altını hedefleriz; okuma ağırlıklı uç noktalar Redis önbelleğiyle çoğu zaman 50ms'nin altına iner. En önemli sayı ortalama değil kuyruktur — medyanı hızlı ama p99'u yavaş bir API, ölçekte her gün binlerce kötü istek demektir." },
+        { "question": "Geliştirdiğiniz API'leri nasıl güvence altına alıyorsunuz?", "answer": "Tüketici tipine göre OAuth 2.0, OpenID Connect veya imzalı API anahtarlarıyla kimlik doğrulama; yalnızca rota seviyesinde değil, kapsam ve kaynak bazında uygulanan yetkilendirme. Hız sınırlama, şema sınırında girdi doğrulama ve denetim loglaması ekler, OWASP API Security Top 10'a göre gözden geçiririz — gerçek dünyada en yaygın API açığı nesne düzeyinde bozuk yetkilendirmedir ve bunu özellikle test ederiz." },
+        { "question": "Eski sistemlerimizin üzerine API kurabilir misiniz?", "answer": "Evet — bu, bir API katmanının en değerli kullanımlarından biridir. Eski veritabanlarını, SOAP servislerini veya ERP sistemlerini temiz ve modern bir arayüzün arkasına alırız; böylece kırılgan çekirdeğe dokunmadan yeni uygulamalar ve entegrasyonlar geliştirebilirsiniz. Eski sistem daha sonra bu kararlı sözleşmenin arkasında kademeli olarak modernize edilebilir veya değiştirilebilir." },
+        { "question": "API dokümantasyonu sağlıyor musunuz?", "answer": "Her zaman — dokümante edilmemiş bir API, bitmemiş iştir. Her proje; OpenAPI spesifikasyonu, etkileşimli dokümantasyon (Swagger UI veya barındırılan portal), içe aktarılmaya hazır Postman koleksiyonu ve her uç nokta için istek/yanıt örnekleriyle teslim edilir. İş ortaklarına açık API'ler için kimlik doğrulama ve yaygın iş akışlarını anlatan onboarding kılavuzları da yazarız." },
+        { "question": "Webhook'lar ve gerçek zamanlı özellikler konusunda ne yapıyorsunuz?", "answer": "İmzalı payload'lar, üstel geri çekilmeli otomatik yeniden denemeler ve teslimat panolarıyla webhook sistemleri kurarız — güvenilir webhook'ları, iş ortaklarının şikâyet ettiklerinden ayıran detaylar bunlardır. Sohbet, çevrim içi durum veya canlı panolar gibi uygulama içi özellikler için, çift yönlü iletişim ihtiyacınıza göre WebSockets veya Server-Sent Events kullanırız." }
+      ],
+      "technologies": [
+        { "icon": "nodejs", "name": "Node.js" },
+        { "icon": "python", "name": "Python (FastAPI)" },
+        { "icon": "graphql", "name": "GraphQL" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "redis", "name": "Redis" },
+        { "icon": "kong", "name": "Kong" },
+        { "icon": "swagger", "name": "OpenAPI / Swagger" },
+        { "icon": "postman", "name": "Postman" }
+      ]
+    }
+  },
+  "de": {
+    "name": "API-Entwicklung",
+    "shortDescription": "Wir entwerfen und bauen die APIs, auf denen Ihre Produkte laufen — REST, GraphQL und Echtzeit-Endpunkte: dokumentiert, versioniert, abgesichert und schnell genug für jeden Client, den Sie ausliefern.",
+    "fullDescription": "APIs sind die Verträge, von denen Ihr gesamter Produkt-Stack abhängt — und schlechte sind teuer zu reparieren, sobald Clients auf ihnen aufbauen. Wir entwickeln APIs Contract-First: Das OpenAPI- oder GraphQL-Schema wird geschrieben, geprüft und abgenommen, bevor die Implementierung beginnt, sodass Frontend- und Backend-Teams parallel gegen eine stabile Schnittstelle arbeiten. Darauf aufbauend liefern wir produktionsreife Endpunkte mit Authentifizierung, Pagination, Idempotenz für kritische Operationen, konsistenter Fehlersemantik und Rate Limiting — plus Dokumentation und SDK-freundlichen Konventionen, mit denen Drittentwickler gern integrieren. Ob REST-API für eine Mobile App, GraphQL-Schicht über Legacy-Systemen oder WebSocket-Kanäle für Live-Funktionen: Wir bauen Schnittstellen, die Jahre des Wandels überstehen, ohne ihre Konsumenten zu brechen.",
+    "features": [
+      "RESTful-API-Design & -Entwicklung",
+      "GraphQL-API-Implementierung",
+      "Contract-First-Design (OpenAPI/Swagger)",
+      "Authentifizierung & Autorisierung (OAuth 2.0, JWT)",
+      "Versionierung & Abwärtskompatibilität",
+      "Rate Limiting & Kontingentverwaltung",
+      "Echtzeit-APIs (WebSockets, SSE, Webhooks)",
+      "Automatisierte Tests & Performance-Benchmarks"
+    ],
+    "benefits": [
+      "Frontend- und Backend-Teams arbeiten parallel gegen einen stabilen Vertrag",
+      "Eine konsistente Schnittstelle für Web-, Mobile- und Partner-Clients",
+      "APIs skalieren unabhängig von den Anwendungen, die sie nutzen",
+      "Daten und Services als Self-Service-API-Produkte monetarisieren",
+      "Partner-Integrationen in Tagen statt Monaten",
+      "Eine Architektur, die Wandel verkraftet, ohne Konsumenten zu brechen"
+    ],
+    "metaTitle": "API-Entwicklung — REST, GraphQL & Echtzeit | PakSoft",
+    "metaDescription": "Contract-First-API-Entwicklung: REST-, GraphQL- und WebSocket-Endpunkte mit OAuth-Sicherheit, Versionierung und OpenAPI-Doku. Jetzt kostenlose Beratung buchen.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Domänen- & Konsumentenanalyse", "description": "Wir klären, wer die API nutzen wird — eigene Apps, Partner oder zahlende Kunden — und welche Operationen und Daten jeder Konsument tatsächlich braucht. Daraus ergeben sich Protokollwahl, Authentifizierungsmodell und die nötige Strenge der Versionierung." },
+        { "step": 2, "title": "Vertragsdesign", "description": "Wir schreiben das vollständige OpenAPI- oder GraphQL-Schema vor jeder Implementierung: Ressourcen, Benennung, Fehlerformate und Pagination-Konventionen. Der Vertrag wird mit Ihrem Team geprüft und eingefroren, sodass die Client-Entwicklung sofort gegen Mocks starten kann." },
+        { "step": 3, "title": "Implementierung", "description": "Endpunkte entstehen mit Validierung an der Grenze, Idempotency-Keys für zahlungsähnliche Operationen und strukturiertem Logging ab dem ersten Commit. Jeder Endpunkt wird mit automatisierten Tests für Erfolgs- und Fehlerfälle ausgeliefert." },
+        { "step": 4, "title": "Sicherheit & Härtung", "description": "Wir implementieren OAuth 2.0 oder API-Key-Authentifizierung, Scope-basierte Autorisierung, Input-Sanitization und Rate Limits je Konsumentenstufe. Vor dem Produktivgang prüfen wir die API gegen die OWASP API Security Top 10." },
+        { "step": 5, "title": "Performance- & Lasttests", "description": "Wir benchmarken realistische Trafficmuster und optimieren die langsamen Pfade — N+1-Queries, fehlende Indizes, überdimensionierte Payloads — bis die p95-Latenz das vereinbarte Budget erfüllt. Redis-Caching kommt dorthin, wo es sich lohnt, nicht per Default." },
+        { "step": 6, "title": "Dokumentation & Übergabe", "description": "Sie erhalten interaktive API-Dokumentation, eine Postman-Collection, Codebeispiele und einen Changelog-Prozess für künftige Versionen. Deprecation-Richtlinien definieren wir vorab, damit die Weiterentwicklung der API bestehende Integrationen nie im Stich lässt." }
+      ],
+      "faq": [
+        { "question": "Sollte ich REST oder GraphQL wählen?", "answer": "REST bleibt der beste Standard für öffentliche APIs und einfache Ressourcenmodelle: Es cached gut über HTTP, jeder Entwickler kennt es, und das Tooling ist universell. GraphQL rechtfertigt seine Komplexität, wenn viele verschiedene Clients unterschiedliche Ausschnitte derselben Daten brauchen — typischerweise Dashboards und Mobile Apps über einer reichen Domäne —, weil es Over-Fetching und Endpunkt-Wildwuchs eliminiert. Oft kombinieren wir beides: REST nach außen, GraphQL für interne Produkt-UIs." },
+        { "question": "Wie lange dauert ein typisches API-Projekt?", "answer": "Eine sauber umrissene API für ein einzelnes Produkt — 15 bis 30 Endpunkte mit Auth, Doku und Tests — dauert typischerweise 4 bis 8 Wochen. Öffentliche API-Produkte brauchen länger, weil Rate Limiting, Entwickler-Onboarding, Monitoring und Dokumentationsqualität dort zu Kernfunktionen werden statt zu Nebensachen." },
+        { "question": "Wie gehen Sie mit API-Versionierung um?", "answer": "Unser erstes Ziel ist, Breaking Changes durch additive Evolution ganz zu vermeiden — neue Felder und Endpunkte statt geänderter. Ist ein Breaking Change unvermeidbar, versionieren wir explizit (URL-Pfad oder Header), betreiben alte und neue Version parallel und veröffentlichen einen Deprecation-Zeitplan mit Nutzungsmonitoring, damit kein Konsument überrascht wird." },
+        { "question": "Wie sieht gute API-Performance aus?", "answer": "Für typische CRUD-Operationen zielen wir auf eine p95-Latenz unter 200 ms und p99 unter 500 ms bei erwarteter Last; leseintensive Endpunkte erreichen mit Redis-Caching oft unter 50 ms. Entscheidend ist der Tail, nicht der Durchschnitt — ein schneller Median mit langsamem p99 bedeutet bei Skalierung trotzdem Tausende schlechte Requests pro Tag." },
+        { "question": "Wie sichern Sie die APIs ab, die Sie bauen?", "answer": "Authentifizierung über OAuth 2.0, OpenID Connect oder signierte API-Keys je nach Konsumententyp; Autorisierung pro Scope und Ressource, nie nur auf Routenebene. Dazu kommen Rate Limiting, Input-Validierung an der Schemagrenze und Audit-Logging, geprüft gegen die OWASP API Security Top 10 — Broken Object Level Authorization ist die häufigste reale API-Schwachstelle, also testen wir gezielt darauf." },
+        { "question": "Können Sie APIs über unsere Legacy-Systeme bauen?", "answer": "Ja — das ist einer der wertvollsten Einsatzzwecke einer API-Schicht. Wir kapseln Legacy-Datenbanken, SOAP-Services oder ERP-Systeme hinter einer sauberen modernen Schnittstelle, sodass Sie neue Apps und Integrationen bauen können, ohne den fragilen Kern anzufassen. Das Altsystem lässt sich anschließend hinter dem stabilen Vertrag schrittweise modernisieren oder ersetzen." },
+        { "question": "Liefern Sie API-Dokumentation mit?", "answer": "Immer — eine undokumentierte API ist unfertige Arbeit. Jedes Projekt umfasst eine OpenAPI-Spezifikation, interaktive Doku (Swagger UI oder gehostetes Portal), eine importfertige Postman-Collection und Request/Response-Beispiele für jeden Endpunkt. Für Partner-APIs schreiben wir zusätzlich Onboarding-Guides zu Authentifizierung und typischen Workflows." },
+        { "question": "Was ist mit Webhooks und Echtzeit-Funktionen?", "answer": "Wir bauen Webhook-Systeme mit signierten Payloads, automatischen Retries mit Exponential Backoff und Delivery-Dashboards — genau die Details, die zuverlässige Webhooks von denen unterscheiden, über die sich Partner beschweren. Für Live-Funktionen wie Chat, Präsenz oder Dashboards nutzen wir WebSockets oder Server-Sent Events, je nachdem, ob bidirektionale Kommunikation nötig ist." }
+      ],
+      "technologies": [
+        { "icon": "nodejs", "name": "Node.js" },
+        { "icon": "python", "name": "Python (FastAPI)" },
+        { "icon": "graphql", "name": "GraphQL" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "redis", "name": "Redis" },
+        { "icon": "kong", "name": "Kong" },
+        { "icon": "swagger", "name": "OpenAPI / Swagger" },
+        { "icon": "postman", "name": "Postman" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "API ڈیولپمنٹ",
+    "shortDescription": "وہ APIs ڈیزائن اور تیار کریں جن پر آپ کی پروڈکٹس چلتی ہیں — REST، GraphQL اور ریئل ٹائم اینڈ پوائنٹس؛ مکمل دستاویزات، ورژننگ اور سیکیورٹی کے ساتھ، اور اتنے تیز کہ آپ کا ہر کلائنٹ ان پر چل سکے۔",
+    "fullDescription": "APIs وہ معاہدے ہیں جن پر آپ کا پورا پروڈکٹ اسٹیک انحصار کرتا ہے، اور جب کلائنٹس ان پر منحصر ہو جائیں تو ناقص APIs کی اصلاح مہنگی پڑتی ہے۔ ہم APIs کو کنٹریکٹ فرسٹ انداز میں ڈیزائن کرتے ہیں: OpenAPI یا GraphQL اسکیمہ عمل درآمد شروع ہونے سے پہلے لکھا، جانچا اور منظور کیا جاتا ہے، تاکہ فرنٹ اینڈ اور بیک اینڈ ٹیمیں ایک مستحکم انٹرفیس پر متوازی کام کر سکیں۔ پھر ہم پروڈکشن معیار کے اینڈ پوائنٹس فراہم کرتے ہیں — تصدیق، پیجینیشن، حساس آپریشنز کے لیے idempotency، یکساں ایرر سیمینٹکس اور ریٹ لمٹنگ کے ساتھ — نیز ایسی دستاویزات اور SDK دوست روایات جو تھرڈ پارٹی ڈیولپرز کو واقعی انٹیگریشن پر آمادہ کرتی ہیں۔ موبائل ایپ کے لیے REST API ہو، پرانے سسٹمز پر GraphQL لیئر یا لائیو فیچرز کے لیے WebSocket چینلز — ہم ایسے انٹرفیس بناتے ہیں جو برسوں کی تبدیلی اپنے صارفین کو توڑے بغیر سہہ جائیں۔",
+    "features": [
+      "RESTful API ڈیزائن اور ڈیولپمنٹ",
+      "GraphQL API کا نفاذ",
+      "کنٹریکٹ فرسٹ ڈیزائن (OpenAPI/Swagger)",
+      "تصدیق اور اجازت (OAuth 2.0، JWT)",
+      "ورژننگ اور پسماندہ مطابقت کی حکمتِ عملی",
+      "ریٹ لمٹنگ اور کوٹہ مینجمنٹ",
+      "ریئل ٹائم APIs (WebSockets، SSE، Webhooks)",
+      "خودکار ٹیسٹنگ اور کارکردگی کی پیمائش"
+    ],
+    "benefits": [
+      "فرنٹ اینڈ اور بیک اینڈ ٹیمیں مستحکم کنٹریکٹ پر متوازی کام کرتی ہیں",
+      "ویب، موبائل اور پارٹنر کلائنٹس کے لیے ایک ہی یکساں انٹرفیس",
+      "APIs انہیں استعمال کرنے والی ایپلیکیشنز سے آزاد ہو کر اسکیل ہوتی ہیں",
+      "اپنے ڈیٹا اور سروسز کو سیلف سروس API پروڈکٹس کے طور پر منیٹائز کریں",
+      "پارٹنر انٹیگریشنز مہینوں کے بجائے دنوں میں",
+      "ایسا آرکیٹیکچر جو صارفین کو توڑے بغیر تبدیلی جذب کرے"
+    ],
+    "metaTitle": "API ڈیولپمنٹ — REST، GraphQL | PakSoft",
+    "metaDescription": "کنٹریکٹ فرسٹ API ڈیولپمنٹ: OAuth سیکیورٹی، ورژننگ اور OpenAPI دستاویزات کے ساتھ REST، GraphQL اور WebSocket اینڈ پوائنٹس۔ مفت آرکیٹیکچر مشاورت بک کریں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "ڈومین اور صارف کا تجزیہ", "description": "ہم نقشہ بناتے ہیں کہ API کون استعمال کرے گا — آپ کی اپنی ایپس، پارٹنرز یا ادائیگی کرنے والے گاہک — اور ہر صارف کو واقعی کن آپریشنز اور ڈیٹا کی ضرورت ہے۔ یہی تجزیہ پروٹوکول کا انتخاب، تصدیق کا ماڈل اور ورژننگ کی سختی طے کرتا ہے۔" },
+        { "step": 2, "title": "کنٹریکٹ ڈیزائن", "description": "کسی بھی عمل درآمد سے پہلے ہم مکمل OpenAPI یا GraphQL اسکیمہ لکھتے ہیں: ریسورسز، نام رکھنے کے اصول، ایرر فارمیٹس اور پیجینیشن کے معیارات۔ کنٹریکٹ آپ کی ٹیم کے ساتھ جانچ کر حتمی کر دیا جاتا ہے، تاکہ کلائنٹ ڈیولپمنٹ فوراً mocks پر شروع ہو سکے۔" },
+        { "step": 3, "title": "عمل درآمد", "description": "اینڈ پوائنٹس سرحد پر ویلیڈیشن، ادائیگی جیسے آپریشنز کے لیے idempotency keys اور پہلے commit سے منظم لاگنگ کے ساتھ بنائے جاتے ہیں۔ ہر اینڈ پوائنٹ کامیاب اور ناکام دونوں صورتوں کا احاطہ کرنے والے خودکار ٹیسٹس کے ساتھ تیار ہوتا ہے۔" },
+        { "step": 4, "title": "سیکیورٹی اور مضبوطی", "description": "ہم OAuth 2.0 یا API key تصدیق، اسکوپ کی بنیاد پر اجازت، ان پٹ کی صفائی اور صارف کے درجے کے مطابق ریٹ لمٹس نافذ کرتے ہیں۔ پروڈکشن سے پہلے API کا OWASP API Security Top 10 کے مطابق جائزہ لیا جاتا ہے۔" },
+        { "step": 5, "title": "کارکردگی اور لوڈ ٹیسٹنگ", "description": "ہم حقیقت پسندانہ ٹریفک پیٹرنز کی پیمائش کرتے ہیں اور سست راستوں — N+1 کوئریز، غائب انڈیکسز، بھاری payloads — کو اس وقت تک بہتر بناتے ہیں جب تک p95 لیٹنسی طے شدہ ہدف پر نہ آ جائے۔ Redis کیشنگ وہیں لگائی جاتی ہے جہاں واقعی فائدہ دے، بطور ڈیفالٹ نہیں۔" },
+        { "step": 6, "title": "دستاویزات اور حوالگی", "description": "آپ کو انٹرایکٹو API دستاویزات، Postman کلیکشن، کوڈ کی مثالیں اور آئندہ ورژنز کے لیے changelog کا طریقہ کار ملتا ہے۔ ہم کسی فیچر کو متروک کرنے کی پالیسیاں شروع ہی میں طے کرتے ہیں تاکہ API کا ارتقاء موجودہ انٹیگریشنز کو کبھی بے یار و مددگار نہ چھوڑے۔" }
+      ],
+      "faq": [
+        { "question": "مجھے REST چننا چاہیے یا GraphQL؟", "answer": "عوامی APIs اور سادہ ریسورس ماڈلز کے لیے REST اب بھی بہترین ڈیفالٹ ہے: یہ HTTP پر اچھی طرح کیش ہوتا ہے، ہر ڈیولپر اس سے واقف ہے اور ٹولنگ ہر جگہ دستیاب ہے۔ GraphQL اپنی پیچیدگی تب جائز ٹھہراتا ہے جب کئی مختلف کلائنٹس کو ایک ہی ڈیٹا کے مختلف حصے درکار ہوں — عموماً بھرپور ڈومین پر ڈیش بورڈز اور موبائل ایپس — کیونکہ یہ ضرورت سے زیادہ ڈیٹا کھینچنے اور اینڈ پوائنٹس کے پھیلاؤ کو ختم کرتا ہے۔ ہم اکثر دونوں ملا کر استعمال کرتے ہیں: بیرونی سطح کے لیے REST، اندرونی پروڈکٹ UIs کے لیے GraphQL۔" },
+        { "question": "ایک عام API پروجیکٹ کتنے عرصے میں مکمل ہوتا ہے؟", "answer": "ایک پروڈکٹ کے لیے اچھی طرح متعین API — تصدیق، دستاویزات اور ٹیسٹس کے ساتھ 15 تا 30 اینڈ پوائنٹس — عموماً 4 تا 8 ہفتے لیتی ہے۔ عوامی API پروڈکٹس زیادہ وقت لیتی ہیں کیونکہ وہاں ریٹ لمٹنگ، ڈیولپر آن بورڈنگ، مانیٹرنگ اور دستاویزات کا معیار ضمنی نہیں بلکہ بنیادی فیچرز بن جاتے ہیں۔" },
+        { "question": "آپ API ورژننگ کیسے سنبھالتے ہیں؟", "answer": "ہمارا پہلا ہدف یہ ہے کہ اضافی ارتقاء کے ذریعے توڑنے والی تبدیلیوں سے مکمل بچا جائے — موجودہ فیلڈز بدلنے کے بجائے نئی فیلڈز اور اینڈ پوائنٹس شامل کیے جائیں۔ جب توڑنے والی تبدیلی ناگزیر ہو تو ہم واضح ورژننگ کرتے ہیں (URL path یا header)، پرانے اور نئے ورژن ساتھ ساتھ چلاتے ہیں، اور استعمال کی نگرانی کے ساتھ متروکیت کا شیڈول جاری کرتے ہیں تاکہ کوئی صارف حیران نہ ہو۔" },
+        { "question": "اچھی API کارکردگی کیسی ہوتی ہے؟", "answer": "عام CRUD آپریشنز کے لیے ہم متوقع لوڈ پر p95 لیٹنسی 200ms اور p99 لیٹنسی 500ms سے کم کا ہدف رکھتے ہیں؛ پڑھنے پر مبنی اینڈ پوائنٹس Redis کیشنگ سے اکثر 50ms سے نیچے آ جاتے ہیں۔ سب سے اہم عدد اوسط نہیں بلکہ آخری سرا (tail) ہے — تیز میڈین مگر سست p99 کا مطلب بڑے پیمانے پر روزانہ ہزاروں خراب درخواستیں ہیں۔" },
+        { "question": "آپ اپنی بنائی ہوئی APIs کو محفوظ کیسے بناتے ہیں؟", "answer": "صارف کی نوعیت کے مطابق OAuth 2.0، OpenID Connect یا دستخط شدہ API keys سے تصدیق؛ اجازت صرف روٹ کی سطح پر نہیں بلکہ اسکوپ اور ریسورس کی سطح پر نافذ کی جاتی ہے۔ ہم ریٹ لمٹنگ، اسکیمہ کی سرحد پر ان پٹ ویلیڈیشن اور آڈٹ لاگنگ شامل کرتے ہیں اور OWASP API Security Top 10 کے مطابق جائزہ لیتے ہیں — حقیقی دنیا میں سب سے عام API کمزوری object-level authorization کی خرابی ہے، اس لیے ہم خاص طور پر اس کی جانچ کرتے ہیں۔" },
+        { "question": "کیا آپ ہمارے پرانے سسٹمز کے اوپر APIs بنا سکتے ہیں؟", "answer": "جی ہاں — یہ API لیئر کے قیمتی ترین استعمالات میں سے ایک ہے۔ ہم پرانے ڈیٹابیسز، SOAP سروسز یا ERP سسٹمز کو ایک صاف ستھرے جدید انٹرفیس کے پیچھے سمیٹ دیتے ہیں، جس سے آپ نازک بنیادی نظام کو چھیڑے بغیر نئی ایپس اور انٹیگریشنز بنا سکتے ہیں۔ بعد ازاں پرانا سسٹم اسی مستحکم کنٹریکٹ کے پیچھے بتدریج جدید یا تبدیل کیا جا سکتا ہے۔" },
+        { "question": "کیا آپ API دستاویزات فراہم کرتے ہیں؟", "answer": "ہمیشہ — بغیر دستاویزات کے API ادھورا کام ہے۔ ہر پروجیکٹ میں OpenAPI اسپیسیفیکیشن، انٹرایکٹو دستاویزات (Swagger UI یا ہوسٹڈ پورٹل)، فوری امپورٹ کے قابل Postman کلیکشن اور ہر اینڈ پوائنٹ کے لیے درخواست/جواب کی مثالیں شامل ہوتی ہیں۔ پارٹنرز کے لیے بننے والی APIs کے ساتھ ہم تصدیق اور عام ورک فلوز پر آن بورڈنگ گائیڈز بھی لکھتے ہیں۔" },
+        { "question": "Webhooks اور ریئل ٹائم فیچرز کا کیا ہوگا؟", "answer": "ہم دستخط شدہ payloads، exponential backoff کے ساتھ خودکار دوبارہ کوششوں اور ڈیلیوری ڈیش بورڈز والے webhook سسٹمز بناتے ہیں — یہی تفصیلات قابلِ اعتماد webhooks کو ان سے الگ کرتی ہیں جن کی پارٹنرز شکایت کرتے ہیں۔ چیٹ، موجودگی یا لائیو ڈیش بورڈز جیسے فیچرز کے لیے ہم WebSockets یا Server-Sent Events استعمال کرتے ہیں، اس بنیاد پر کہ آپ کو دو طرفہ رابطہ درکار ہے یا نہیں۔" }
+      ],
+      "technologies": [
+        { "icon": "nodejs", "name": "Node.js" },
+        { "icon": "python", "name": "Python (FastAPI)" },
+        { "icon": "graphql", "name": "GraphQL" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "redis", "name": "Redis" },
+        { "icon": "kong", "name": "Kong" },
+        { "icon": "swagger", "name": "OpenAPI / Swagger" },
+        { "icon": "postman", "name": "Postman" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تطوير واجهات API",
+    "shortDescription": "نصمّم ونبني واجهات API التي تقوم عليها منتجاتكم — نقاط نهاية REST وGraphQL وفورية؛ موثّقة ومُدارة الإصدارات ومؤمَّنة، وسريعة بما يكفي لتشغيل كل تطبيق تطلقونه.",
+    "fullDescription": "واجهات API هي العقود التي يعتمد عليها كامل نظام منتجاتكم، وإصلاح الرديء منها مكلف بعد أن ترتبط به التطبيقات. نصمّم واجهات API بمنهج العقد أولاً: يُكتب مخطط OpenAPI أو GraphQL ويُراجع ويُعتمد قبل بدء التنفيذ، فتعمل فرق الواجهة والخلفية بالتوازي على واجهة مستقرة. ثم نسلّم نقاط نهاية بمستوى الإنتاج تشمل المصادقة، وترقيم الصفحات، وخاصية idempotency للعمليات الحساسة، ودلالات أخطاء متسقة، وتحديد معدل الطلبات — إضافة إلى التوثيق والمعايير الصديقة لحزم SDK التي تجعل مطوّري الجهات الخارجية يرغبون فعلاً في التكامل. سواء احتجتم REST API لتطبيق جوّال، أو طبقة GraphQL فوق أنظمة قديمة، أو قنوات WebSocket للميزات الحية، نبني واجهات تتحمل سنوات من التغيير دون كسر مستهلكيها.",
+    "features": [
+      "تصميم وتطوير RESTful API",
+      "تنفيذ GraphQL API",
+      "تصميم بمنهج العقد أولاً (OpenAPI/Swagger)",
+      "المصادقة والتفويض (OAuth 2.0 وJWT)",
+      "استراتيجية الإصدارات والتوافق مع النسخ السابقة",
+      "تحديد معدل الطلبات وإدارة الحصص",
+      "واجهات فورية (WebSockets وSSE وWebhooks)",
+      "اختبارات آلية وقياس الأداء"
+    ],
+    "benefits": [
+      "فرق الواجهة والخلفية تعمل بالتوازي على عقد مستقر",
+      "واجهة واحدة متسقة تخدم الويب والجوّال وعملاء الشركاء",
+      "تتوسّع الواجهات باستقلال عن التطبيقات التي تستهلكها",
+      "حقّقوا دخلاً من بياناتكم وخدماتكم كمنتجات API ذاتية الخدمة",
+      "تكاملات شركاء تستغرق أياماً بدل أشهر",
+      "بنية تستوعب التغيير دون كسر المستهلكين"
+    ],
+    "metaTitle": "تطوير API — REST وGraphQL | PakSoft",
+    "metaDescription": "تطوير API بمنهج العقد أولاً: نقاط نهاية REST وGraphQL وWebSocket مع أمان OAuth وإدارة الإصدارات وتوثيق OpenAPI. احجزوا استشارة معمارية مجانية اليوم.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "تحليل النطاق والمستهلكين", "description": "نحدّد من سيستهلك الواجهة — تطبيقاتكم أم الشركاء أم عملاء يدفعون — وما العمليات والبيانات التي يحتاجها كل مستهلك فعلاً. هذا يحدّد اختيار البروتوكول ونموذج المصادقة ومدى صرامة إدارة الإصدارات المطلوبة." },
+        { "step": 2, "title": "تصميم العقد", "description": "نكتب مخطط OpenAPI أو GraphQL كاملاً قبل أي تنفيذ: الموارد والتسمية وصيغ الأخطاء ومعايير ترقيم الصفحات. يُراجع العقد مع فريقكم ثم يُثبَّت، فيبدأ تطوير العملاء فوراً على نماذج محاكاة." },
+        { "step": 3, "title": "التنفيذ", "description": "تُبنى نقاط النهاية مع التحقق من المدخلات عند الحدود، ومفاتيح idempotency للعمليات الشبيهة بالمدفوعات، وتسجيل منظّم منذ أول commit. وتُسلَّم كل نقطة نهاية مع اختبارات آلية تغطي المسارات الناجحة وحالات الفشل معاً." },
+        { "step": 4, "title": "الأمان والتحصين", "description": "ننفّذ المصادقة عبر OAuth 2.0 أو مفاتيح API، والتفويض القائم على النطاقات، وتعقيم المدخلات، وحدود معدل الطلبات لكل فئة مستهلكين. وتُراجع الواجهة وفق قائمة OWASP API Security Top 10 قبل وصول أي شيء إلى الإنتاج." },
+        { "step": 5, "title": "الأداء واختبارات الحمل", "description": "نقيس أنماط حركة واقعية ونعالج المسارات البطيئة — استعلامات N+1 والفهارس الناقصة والحمولات الضخمة — حتى تبلغ كمونية p95 الميزانية المتفق عليها. وتُضاف طبقات التخزين المؤقت بـ Redis حيث تجدي فعلاً، لا بشكل افتراضي." },
+        { "step": 6, "title": "التوثيق والتسليم", "description": "تحصلون على توثيق تفاعلي للواجهة، ومجموعة Postman، وأمثلة كود، وآلية changelog للإصدارات القادمة. ونحدّد سياسات الإيقاف التدريجي مسبقاً كي لا يترك تطوّر الواجهة أي تكامل قائم معلّقاً." }
+      ],
+      "faq": [
+        { "question": "هل أختار REST أم GraphQL؟", "answer": "يبقى REST الخيار الافتراضي الأفضل للواجهات العامة ونماذج الموارد البسيطة: يُخزَّن مؤقتاً جيداً عبر HTTP، ويعرفه كل مطوّر، وأدواته متوفرة في كل مكان. أما GraphQL فيستحق تعقيده عندما تحتاج تطبيقات مختلفة كثيرة إلى شرائح مختلفة من البيانات نفسها — عادة لوحات التحكم وتطبيقات الجوّال فوق نطاق غني — لأنه يلغي جلب البيانات الزائد وتكاثر نقاط النهاية. وكثيراً ما نجمع بينهما: REST للسطح العام، وGraphQL لواجهات المنتج الداخلية." },
+        { "question": "كم يستغرق مشروع API نموذجي؟", "answer": "واجهة محددة النطاق لمنتج واحد — من 15 إلى 30 نقطة نهاية مع المصادقة والتوثيق والاختبارات — تستغرق عادة 4 إلى 8 أسابيع. أما منتجات API العامة فتحتاج وقتاً أطول، لأن تحديد معدل الطلبات وتهيئة المطورين والمراقبة وجودة التوثيق تصبح فيها ميزات أساسية لا تفاصيل ثانوية." },
+        { "question": "كيف تتعاملون مع إصدارات الواجهة؟", "answer": "هدفنا الأول تجنّب التغييرات الكاسرة كلياً عبر التطوير الإضافي — حقول ونقاط نهاية جديدة بدلاً من تعديل القائمة. وعندما يكون التغيير الكاسر حتمياً، نعتمد إصداراً صريحاً (في مسار URL أو في الترويسة)، ونشغّل الإصدارين القديم والجديد جنباً إلى جنب، وننشر جدولاً زمنياً للإيقاف مع مراقبة الاستخدام كي لا يتفاجأ أي مستهلك." },
+        { "question": "كيف يبدو الأداء الجيد للواجهة؟", "answer": "لعمليات CRUD المعتادة نستهدف كمونية p95 أقل من 200 ملّي ثانية وp99 أقل من 500 عند الحمل المتوقع؛ وكثيراً ما تنزل نقاط النهاية القرائية تحت 50 ملّي ثانية مع التخزين المؤقت بـ Redis. الرقم الأهم هو الذيل لا المتوسط — وسيط سريع مع p99 بطيء يعني آلاف الطلبات السيئة يومياً عند التوسع." },
+        { "question": "كيف تؤمّنون الواجهات التي تبنونها؟", "answer": "مصادقة عبر OAuth 2.0 أو OpenID Connect أو مفاتيح API موقّعة حسب نوع المستهلك؛ وتفويض يُفرض على مستوى النطاق والمورد، لا على مستوى المسار فقط. نضيف تحديد معدل الطلبات والتحقق من المدخلات عند حدود المخطط وسجلات التدقيق، ونراجع وفق OWASP API Security Top 10 — وخلل التفويض على مستوى الكائنات هو أكثر ثغرات الواجهات شيوعاً في الواقع، لذا نختبره تحديداً." },
+        { "question": "هل يمكنكم بناء واجهات فوق أنظمتنا القديمة؟", "answer": "نعم — وهذا من أعلى استخدامات طبقة API قيمةً. نغلّف قواعد البيانات القديمة أو خدمات SOAP أو أنظمة ERP خلف واجهة حديثة نظيفة، فتبنون تطبيقات وتكاملات جديدة دون المساس بالنواة الهشة. ويمكن بعدها تحديث النظام القديم أو استبداله تدريجياً خلف العقد المستقر." },
+        { "question": "هل تقدّمون توثيقاً للواجهة؟", "answer": "دائماً — الواجهة غير الموثّقة عمل غير مكتمل. يُسلَّم كل مشروع مع مواصفة OpenAPI وتوثيق تفاعلي (Swagger UI أو بوابة مستضافة) ومجموعة Postman جاهزة للاستيراد وأمثلة طلب/استجابة لكل نقطة نهاية. وللواجهات الموجهة للشركاء نكتب أيضاً أدلة تهيئة تغطي المصادقة وسير العمل الشائع." },
+        { "question": "ماذا عن Webhooks والميزات الفورية؟", "answer": "نبني أنظمة Webhooks بحمولات موقّعة وإعادة محاولات تلقائية مع تباطؤ أُسّي ولوحات متابعة للتسليم — وهي التفاصيل التي تفصل بين Webhooks موثوقة وأخرى يشكو منها الشركاء. وللميزات الحية داخل التطبيق مثل الدردشة أو الحضور أو لوحات التحكم نستخدم WebSockets أو Server-Sent Events حسب حاجتكم إلى اتصال ثنائي الاتجاه." }
+      ],
+      "technologies": [
+        { "icon": "nodejs", "name": "Node.js" },
+        { "icon": "python", "name": "Python (FastAPI)" },
+        { "icon": "graphql", "name": "GraphQL" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "redis", "name": "Redis" },
+        { "icon": "kong", "name": "Kong" },
+        { "icon": "swagger", "name": "OpenAPI / Swagger" },
+        { "icon": "postman", "name": "Postman" }
+      ]
+    }
+  }
+}

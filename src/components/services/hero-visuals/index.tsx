@@ -28,6 +28,10 @@ import {
   MegaphoneScene, RocketLaunchScene, TargetBullseyeScene,
   ShoppingCartScene, PaletteCanvasScene,
 } from './scenes-marketing';
+import {
+  SerpRankingScene, EmailInboxScene, FunnelScene, SocialFeedScene,
+  KanbanBoardScene, VideoPlayerScene, DatabaseRingsScene, CryptoChainScene,
+} from './scenes-growth';
 
 // ── Animation Types ──────────────────────────────────────────────────
 export type HeroVisualType =
@@ -36,7 +40,9 @@ export type HeroVisualType =
   | 'workflow-diagram' | 'data-flow' | 'shopping-cart-3d' | 'megaphone-3d' | 'rocket-launch'
   | 'puzzle-pieces' | 'circuit-board' | 'satellite' | 'microscope' | 'lightbulb'
   | 'gear-system' | 'network-nodes' | 'layers-stack' | 'target-bullseye' | 'chat-bubbles'
-  | 'server-stack';
+  | 'server-stack'
+  | 'serp-ranking' | 'email-inbox' | 'funnel' | 'social-feed'
+  | 'kanban-board' | 'video-player' | 'database-rings' | 'crypto-chain';
 
 export type BgPattern = 'grid' | 'dots' | 'waves' | 'diagonal-lines' | 'hexagons' | 'circles' | 'none';
 export type DecorationType = 'circles' | 'squares' | 'triangles' | 'hexagons' | 'dots' | 'lines' | 'mixed';
@@ -173,6 +179,14 @@ const SCENES: Record<HeroVisualType, React.ComponentType> = {
   'target-bullseye': TargetBullseyeScene,
   'chat-bubbles': ChatBubblesScene,
   'server-stack': ServerStackScene,
+  'serp-ranking': SerpRankingScene,
+  'email-inbox': EmailInboxScene,
+  'funnel': FunnelScene,
+  'social-feed': SocialFeedScene,
+  'kanban-board': KanbanBoardScene,
+  'video-player': VideoPlayerScene,
+  'database-rings': DatabaseRingsScene,
+  'crypto-chain': CryptoChainScene,
 };
 
 // ── Main dispatcher (public API unchanged) ──────────────────────────

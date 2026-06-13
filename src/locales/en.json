@@ -297,14 +297,63 @@
       "technical-cto": "Technical CTO",
       "staff-augmentation": "Staff Augmentation",
       "developer-outsourcing": "Developer Outsourcing",
-      "dedicated-teams": "Dedicated Teams"
+      "dedicated-teams": "Dedicated Teams",
+      "accessibility-compliance": "Accessibility Compliance",
+      "affiliate-marketing-systems": "Affiliate Marketing Systems",
+      "ai-chatbot-integration": "AI Chatbot Integration",
+      "ai-image-generation": "AI Image Generation",
+      "api-rate-limiting-throttling": "API Rate Limiting & Throttling",
+      "api-security-authentication": "API Security & Authentication",
+      "ar-development": "AR Development",
+      "blockchain-development": "Blockchain Development",
+      "booking-reservation-systems": "Booking & Reservation Systems",
+      "business-intelligence-solutions": "Business Intelligence Solutions",
+      "cloud-cost-optimization": "Cloud Cost Optimization",
+      "code-review-refactoring": "Code Review & Refactoring",
+      "computer-vision-solutions": "Computer Vision Solutions",
+      "conversion-rate-optimization": "Conversion Rate Optimization",
+      "cybersecurity-auditing": "Cybersecurity Auditing",
+      "database-design-optimization": "Database Design & Optimization",
+      "desktop-application-development": "Desktop Application Development",
+      "disaster-recovery-planning": "Disaster Recovery Planning",
+      "email-marketing-automation": "Email Marketing Automation",
+      "etl-pipelines": "ETL Pipelines",
+      "event-driven-architecture": "Event-Driven Architecture",
+      "fraud-detection-systems": "Fraud Detection Systems",
+      "graphql-api-development": "GraphQL API Development",
+      "headless-commerce": "Headless Commerce",
+      "identity-access-management": "Identity & Access Management",
+      "inventory-management-systems": "Inventory Management Systems",
+      "iot-development": "IoT Development",
+      "kubernetes-orchestration": "Kubernetes Orchestration",
+      "learning-management-systems": "Learning Management Systems",
+      "legacy-system-modernization": "Legacy System Modernization",
+      "microservices-architecture": "Microservices Architecture",
+      "mlops-model-deployment": "MLOps & Model Deployment",
+      "multi-tenant-saas-architecture": "Multi-Tenant SaaS Architecture",
+      "natural-language-processing": "Natural Language Processing",
+      "nft-marketplace-development": "NFT Marketplace Development",
+      "payment-gateway-integration": "Payment Gateway Integration",
+      "performance-testing-optimization": "Performance Testing & Optimization",
+      "real-time-applications": "Real-Time Applications",
+      "serverless-architecture": "Serverless Architecture",
+      "smart-contract-development": "Smart Contract Development",
+      "social-media-integration": "Social Media Integration",
+      "technical-documentation": "Technical Documentation",
+      "telemedicine-platforms": "Telemedicine Platforms",
+      "terraform-infrastructure": "Terraform Infrastructure",
+      "unity-game-development": "Unity Game Development",
+      "unreal-engine-development": "Unreal Engine Development",
+      "video-marketing": "Video Marketing",
+      "vr-development": "VR Development"
     },
     "subtitle": "Comprehensive digital solutions driving growth and efficiency.",
     "searchPlaceholder": "Search services...",
     "ctaTitle": "Ready to Scale?",
     "ctaDesc": "Schedule a free consultation.",
     "ctaButton": "Book Demo",
-    "exploreAll": "Explore our full catalog of specialized services"
+    "exploreAll": "Explore our full catalog of specialized services",
+    "noResults": "No services found"
   },
   "hero": {
     "eyebrow": "Digital Solutions",
@@ -2678,6 +2727,198 @@
           "Agile Process",
           "Transparent Reporting"
         ]
+      },
+      "accessibilityCompliance": {
+        "title": "Accessibility Compliance",
+        "description": "Make your product usable by everyone and defensible in court. We audit against WCAG 2.1/2.2, remediate issues at the code level,…"
+      },
+      "affiliateMarketingSystems": {
+        "title": "Affiliate Marketing Systems",
+        "description": "Launch a partner channel you fully control. We build custom affiliate platforms with reliable server-side tracking, flexible…"
+      },
+      "aiChatbotIntegration": {
+        "title": "AI Chatbot Integration",
+        "description": "Add a GPT- or Claude-powered assistant to your website or app that answers from your own knowledge base — accurate, on-brand, and…"
+      },
+      "aiImageGeneration": {
+        "title": "AI Image Generation",
+        "description": "Create custom AI image generation solutions using DALL-E, Stable Diffusion, and Midjourney APIs."
+      },
+      "apiRateLimitingThrottling": {
+        "title": "API Rate Limiting & Throttling",
+        "description": "Implement rate limiting, quotas, and API traffic management."
+      },
+      "apiSecurityAuthentication": {
+        "title": "API Security & Authentication",
+        "description": "Implement robust API security with OAuth 2.0, JWT tokens, API keys, and rate limiting."
+      },
+      "arDevelopment": {
+        "title": "AR Development",
+        "description": "Create AR apps for mobile, smart glasses, and enterprise use cases."
+      },
+      "blockchainDevelopment": {
+        "title": "Blockchain Development",
+        "description": "Develop secure smart contracts, DApps, and blockchain integrations on Ethereum, Solana, and more."
+      },
+      "bookingReservationSystems": {
+        "title": "Booking & Reservation Systems",
+        "description": "Create scheduling and reservation platforms for any booking use case."
+      },
+      "businessIntelligenceSolutions": {
+        "title": "Business Intelligence Solutions",
+        "description": "Build BI platforms with interactive dashboards, KPI tracking, and self-service analytics."
+      },
+      "cloudCostOptimization": {
+        "title": "Cloud Cost Optimization",
+        "description": "Analyze and optimize AWS, Azure, or GCP costs with FinOps practices."
+      },
+      "codeReviewRefactoring": {
+        "title": "Code Review & Refactoring",
+        "description": "Expert code audits and refactoring to improve maintainability."
+      },
+      "computerVisionSolutions": {
+        "title": "Computer Vision Solutions",
+        "description": "Implement image recognition, object detection, OCR, and video analytics."
+      },
+      "conversionRateOptimization": {
+        "title": "Conversion Rate Optimization",
+        "description": "Increase conversions with data-driven A/B testing, UX improvements, and landing page optimization."
+      },
+      "cybersecurityAuditing": {
+        "title": "Cybersecurity Auditing",
+        "description": "Identify security vulnerabilities before attackers do with thorough security audits."
+      },
+      "databaseDesignOptimization": {
+        "title": "Database Design & Optimization",
+        "description": "Design efficient database schemas and optimize query performance for scalable, fast applications."
+      },
+      "desktopApplicationDevelopment": {
+        "title": "Desktop Application Development",
+        "description": "Create cross-platform desktop apps with Electron, Tauri, or native frameworks."
+      },
+      "disasterRecoveryPlanning": {
+        "title": "Disaster Recovery Planning",
+        "description": "Design and implement DR strategies for cloud and on-premise infrastructure."
+      },
+      "emailMarketingAutomation": {
+        "title": "Email Marketing Automation",
+        "description": "Build sophisticated email automation flows that convert and retain at scale."
+      },
+      "etlPipelines": {
+        "title": "ETL Pipelines",
+        "description": "Design and implement ETL/ELT pipelines that keep your data warehouse fresh and reliable."
+      },
+      "eventDrivenArchitecture": {
+        "title": "Event-Driven Architecture",
+        "description": "Implement event sourcing, message queues, and reactive architectures."
+      },
+      "fraudDetectionSystems": {
+        "title": "Fraud Detection Systems",
+        "description": "Implement ML-powered fraud detection for transactions and user behavior."
+      },
+      "graphqlApiDevelopment": {
+        "title": "GraphQL API Development",
+        "description": "Design and implement GraphQL APIs that give clients exactly the data they need."
+      },
+      "headlessCommerce": {
+        "title": "Headless Commerce",
+        "description": "Create decoupled e-commerce with headless CMS and commerce APIs."
+      },
+      "identityAccessManagement": {
+        "title": "Identity & Access Management",
+        "description": "Build robust IAM solutions with SSO, MFA, RBAC, and identity federation."
+      },
+      "inventoryManagementSystems": {
+        "title": "Inventory Management Systems",
+        "description": "Create inventory tracking solutions with real-time stock visibility."
+      },
+      "iotDevelopment": {
+        "title": "IoT Development",
+        "description": "Create smart, connected products with IoT sensors, gateways, and cloud platforms."
+      },
+      "kubernetesOrchestration": {
+        "title": "Kubernetes Orchestration",
+        "description": "Orchestrate containers with Kubernetes for scalable, resilient microservices deployments."
+      },
+      "learningManagementSystems": {
+        "title": "Learning Management Systems",
+        "description": "Create e-learning platforms with courses, assessments, and progress tracking."
+      },
+      "legacySystemModernization": {
+        "title": "Legacy System Modernization",
+        "description": "Modernize legacy applications with updated architecture, cloud migration, and new interfaces."
+      },
+      "microservicesArchitecture": {
+        "title": "Microservices Architecture",
+        "description": "Break monoliths into independently deployable services for scale and agility."
+      },
+      "mlopsModelDeployment": {
+        "title": "MLOps & Model Deployment",
+        "description": "Deploy and manage ML models in production with monitoring and automation."
+      },
+      "multiTenantSaasArchitecture": {
+        "title": "Multi-Tenant SaaS Architecture",
+        "description": "Create SaaS applications with tenant isolation and billing."
+      },
+      "naturalLanguageProcessing": {
+        "title": "Natural Language Processing",
+        "description": "Create NLP solutions for text analysis, sentiment detection, chatbots, and language generation."
+      },
+      "nftMarketplaceDevelopment": {
+        "title": "NFT Marketplace Development",
+        "description": "Create white-label NFT marketplaces with minting, trading, and auction features."
+      },
+      "paymentGatewayIntegration": {
+        "title": "Payment Gateway Integration",
+        "description": "Accept payments globally with secure, PCI-compliant payment integrations."
+      },
+      "performanceTestingOptimization": {
+        "title": "Performance Testing & Optimization",
+        "description": "Load testing, stress testing, and performance optimization for scalable apps."
+      },
+      "realTimeApplications": {
+        "title": "Real-Time Applications",
+        "description": "Create live dashboards, collaborative tools, and instant messaging with real-time tech."
+      },
+      "serverlessArchitecture": {
+        "title": "Serverless Architecture",
+        "description": "Build scalable, cost-effective applications using serverless architecture with AWS Lambda, Vercel, and edge computing."
+      },
+      "smartContractDevelopment": {
+        "title": "Smart Contract Development",
+        "description": "Develop and audit smart contracts for DeFi, NFTs, DAOs, and custom blockchain applications."
+      },
+      "socialMediaIntegration": {
+        "title": "Social Media Integration",
+        "description": "Integrate social login, sharing, and APIs from major social platforms."
+      },
+      "technicalDocumentation": {
+        "title": "Technical Documentation",
+        "description": "Write developer documentation, API references, and technical guides."
+      },
+      "telemedicinePlatforms": {
+        "title": "Telemedicine Platforms",
+        "description": "Create secure video consultation platforms for healthcare providers."
+      },
+      "terraformInfrastructure": {
+        "title": "Terraform Infrastructure",
+        "description": "Define and provision cloud infrastructure with Terraform for consistency and automation."
+      },
+      "unityGameDevelopment": {
+        "title": "Unity Game Development",
+        "description": "Build cross-platform games and interactive experiences with Unity, from mobile to console."
+      },
+      "unrealEngineDevelopment": {
+        "title": "Unreal Engine Development",
+        "description": "Create photorealistic games and real-time 3D experiences with Unreal Engine."
+      },
+      "videoMarketing": {
+        "title": "Video Marketing",
+        "description": "Produce compelling video content for marketing, training, and brand storytelling."
+      },
+      "vrDevelopment": {
+        "title": "VR Development",
+        "description": "Build VR applications for Meta Quest, PSVR, and enterprise headsets."
       }
     },
     "detail": {
@@ -2884,7 +3125,52 @@
       "backTo": "Back to {parent}",
       "exploreSubServices": "Explore Our Specialized Solutions",
       "exploreSubServicesDescription": "Dive deeper into our specialized offerings tailored to your specific needs.",
-      "learnMore": "Learn More"
+      "learnMore": "Learn More",
+      "whyUs": {
+        "title": "Why Choose PakSoft",
+        "benefits": [
+          {
+            "title": "Expert Team",
+            "description": "Our specialists bring years of hands-on experience to every project, ensuring high-quality delivery."
+          },
+          {
+            "title": "On-Time Delivery",
+            "description": "We respect your timeline. Every milestone is tracked and met through agile project management."
+          },
+          {
+            "title": "Transparent Communication",
+            "description": "You are always in the loop. Regular updates and open channels keep collaboration seamless."
+          },
+          {
+            "title": "Scalable Solutions",
+            "description": "We build for growth. Our architectures handle increasing load without costly rewrites."
+          },
+          {
+            "title": "Client-First Approach",
+            "description": "Your goals drive every decision. We prioritise value delivery over technical complexity."
+          },
+          {
+            "title": "Post-Launch Support",
+            "description": "Our engagement does not end at launch. We provide ongoing maintenance and performance monitoring."
+          }
+        ]
+      },
+      "pricingPage": {
+        "eyebrow": "Pricing",
+        "titleAccent": "Pricing",
+        "subtitle": "Transparent pricing that scales with your project. Choose a package or get a tailored quote — no hidden fees, ever.",
+        "quoteTitle": "Every project is unique",
+        "quoteDesc": "This service is scoped individually. Tell us your goals and we will send a detailed, fixed-price proposal within 48 hours.",
+        "bullet1": "Fixed-price proposal within 48 hours",
+        "bullet2": "Free consultation and scope review",
+        "bullet3": "No commitment until you approve the plan"
+      },
+      "blogPage": {
+        "eyebrow": "Insights",
+        "titleAccent": "Insights",
+        "subtitle": "Guides, deep-dives, and lessons learned from our team — practical knowledge you can apply today.",
+        "viewAll": "View All Articles"
+      }
     },
     "pricing": {
       "eyebrow": "Pricing",
@@ -3662,7 +3948,7 @@
       "logoBrandIdentity": "Logo & Brand Identity",
       "brandStrategy": "Brand Strategy",
       "motionGraphics": "Motion Graphics",
-      "3dArVr": "3D / AR / VR",
+      "3dArVr": "AR Development",
       "croAbTesting": "CRO & A/B Testing",
       "devOpsCiCd": "DevOps & CI/CD",
       "cloudMigration": "Cloud Migration",
@@ -3671,7 +3957,16 @@
       "databaseServices": "Database Services",
       "performanceOptimization": "Performance Optimization",
       "managedServices": "Managed Services",
-      "techConsulting": "Tech Consulting"
+      "techConsulting": "Tech Consulting",
+      "conversationalAi": "Conversational AI",
+      "llmServices": "LLM Services",
+      "digitalMarketing": "Digital Marketing",
+      "marketplaceAds": "Marketplace Ads",
+      "digitalTransformation": "Digital Transformation",
+      "aiStrategy": "AI Strategy",
+      "growthStrategy": "Growth Strategy",
+      "startupServices": "Startup Services",
+      "staffAugmentation": "Staff Augmentation"
     }
   },
   "connect": {
@@ -13444,5 +13739,61 @@
       "GDPR Compliant",
       "SOC 2 Type II"
     ]
+  },
+  "sceneLabels": {
+    "live": "live",
+    "noErrors": "0 errors",
+    "orderConfirmed": "Order confirmed!",
+    "uptime": "99.99% uptime",
+    "growth": "Growth",
+    "roi": "ROI",
+    "leads": "Leads",
+    "opsCenter": "Operations Center",
+    "requests": "requests/s",
+    "capacity": "capacity 78%",
+    "sources": "sources",
+    "transform": "transform",
+    "warehouse": "warehouse",
+    "insights": "3 insights ✓",
+    "yourInfra": "your infrastructure",
+    "secured": "✓ secured",
+    "plan": "plan",
+    "build": "build",
+    "test": "test",
+    "ship": "✓ ship",
+    "retry": "retry ↻",
+    "reach": "reach +312% ↗",
+    "scaleUp": "scale-up mode 🚀",
+    "checkout": "checkout ✓",
+    "uiLayer": "UI / Presentation",
+    "logicLayer": "Business Logic",
+    "apiLayer": "API Layer",
+    "dbLayer": "Database",
+    "chatQuestion": "Can you summarize today's sales report?",
+    "chatAnswerPre": "Revenue is up",
+    "chatAnswerMid": "— 312 orders. Top region:",
+    "fullReport": "Full report",
+    "forecast": "Forecast",
+    "yourSite": "your-website.com",
+    "rankUp": "#1 ranking",
+    "openRate": "open rate",
+    "subject1": "Your weekly growth report",
+    "subject2": "New lead assigned to you",
+    "subject3": "Campaign results are in",
+    "visitors": "Visitors",
+    "signups": "Sign-ups",
+    "customers": "Customers",
+    "optimized": "optimized ↑",
+    "followers": "followers",
+    "newPost": "New post published",
+    "views": "views",
+    "watchTime": "watch time",
+    "todo": "To do",
+    "doing": "In progress",
+    "done": "Done",
+    "queryTime": "query 12ms",
+    "indexed": "indexed ✓",
+    "blockConfirmed": "block confirmed",
+    "wallet": "Wallet"
   }
 }

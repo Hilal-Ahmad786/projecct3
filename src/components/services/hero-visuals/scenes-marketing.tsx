@@ -5,10 +5,11 @@
 
 import React from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
-import { H, Scene, GirihHalo, HeritageParticles, drawIn, riseIn, popIn, starPoints } from './primitives';
+import { H, Scene, GirihHalo, HeritageParticles, drawIn, riseIn, popIn, starPoints , useSceneLabels } from './primitives';
 
 /* ── megaphone-3d (campaign reach) ───────────────────────────────── */
 export function MegaphoneScene() {
+  const L = useSceneLabels();
   const reduced = useReducedMotion();
   const flyouts = [
     { icon: '♥', color: H.terracotta, x: 178, y: 64 },
@@ -63,7 +64,7 @@ export function MegaphoneScene() {
         {/* reach badge */}
         <motion.g {...popIn(1.8)}>
           <rect x="74" y="196" width="92" height="22" rx="11" fill={H.terracotta} />
-          <text x="120" y="211" textAnchor="middle" fontSize="10" fontWeight="700" fill={H.white}>reach +312% ↗</text>
+          <text x="120" y="211" textAnchor="middle" fontSize="10" fontWeight="700" fill={H.white}>{L('reach', 'reach +312% ↗')}</text>
         </motion.g>
       </svg>
     </Scene>
@@ -72,6 +73,7 @@ export function MegaphoneScene() {
 
 /* ── rocket-launch (growth) ──────────────────────────────────────── */
 export function RocketLaunchScene() {
+  const L = useSceneLabels();
   const reduced = useReducedMotion();
   return (
     <Scene glow={H.terracotta}>
@@ -134,7 +136,7 @@ export function RocketLaunchScene() {
       </motion.div>
       {/* metric badge */}
       <motion.div {...popIn(3.6)} className="absolute left-1/2 -translate-x-1/2 bottom-5 px-3 py-1 rounded-full text-[10px] font-bold shadow-md" style={{ background: H.lapis, color: H.white }}>
-        scale-up mode 🚀
+        {L('scaleUp', 'scale-up mode 🚀')}
       </motion.div>
     </Scene>
   );
@@ -208,6 +210,7 @@ export function TargetBullseyeScene() {
 
 /* ── shopping-cart-3d (e-commerce) ───────────────────────────────── */
 export function ShoppingCartScene() {
+  const L = useSceneLabels();
   const reduced = useReducedMotion();
   const products = [
     { x: 60, color: H.turquoise, delay: 1 },
@@ -261,7 +264,7 @@ export function ShoppingCartScene() {
         {/* checkout button */}
         <motion.g {...popIn(3)}>
           <rect x="76" y="204" width="88" height="24" rx="12" fill={H.turquoise} />
-          <text x="120" y="220" textAnchor="middle" fontSize="10.5" fontWeight="700" fill={H.white}>checkout ✓</text>
+          <text x="120" y="220" textAnchor="middle" fontSize="10.5" fontWeight="700" fill={H.white}>{L('checkout', 'checkout ✓')}</text>
         </motion.g>
       </svg>
     </Scene>

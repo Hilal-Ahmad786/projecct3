@@ -1,0 +1,57 @@
+import { notFound } from 'next/navigation';
+import { Metadata } from 'next';
+import { Locale, locales, defaultLocale } from '@/lib/i18n';
+import { generateAlternateLinks } from '@/lib/seo';
+import { localizeFullPath } from '@/lib/routes';
+import ServiceDetailClient from '../ServiceDetailClient';
+import PricingPageClient from './PricingPageClient';
+import { getServiceData, baseUrl } from '../_shared';
+
+export const revalidate = 3600;
+
+interface PageProps {
+  params: Promise<{ slug: string; locale: Locale }>;
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug, locale } = await params;
+  const validLocale = locales.includes(locale) ? locale : defaultLocale;
+  const data = await getServiceData(slug, validLocale);
+  if (!data) return { title: 'Service Not Found | PakSoft' };
+
+  const path = `/services/${slug}/pricing`;
+  const localizedPath = localizeFullPath(path, validLocale);
+  return {
+    title: `${data.service.name} Pricing & Packages | PakSoft`,
+    description: `Transparent pricing for ${data.service.name}. Choose a package or get a tailored, fixed-price proposal within 48 hours — no hidden fees.`,
+    alternates: {
+      canonical: `${baseUrl}/${validLocale}${localizedPath}`,
+      languages: generateAlternateLinks(path),
+    },
+  };
+}
+
+export default async function ServicePricingPage({ params }: PageProps) {
+  const { slug, locale } = await params;
+  const validLocale = locales.includes(locale) ? locale : defaultLocale;
+  const data = await getServiceData(slug, validLocale);
+  if (!data) notFound();
+
+  const hasPackages = (data.service.pricingPackages?.length ?? 0) > 0;
+
+  return (
+    <main className="min-h-screen bg-white">
+      <PricingPageClient
+        serviceName={data.service.name}
+        serviceSlug={slug}
+        serviceColor={data.service.color}
+        hasPackages={hasPackages}
+      />
+      <ServiceDetailClient
+        service={data.service}
+        hideHero
+        showSections={hasPackages ? ['pricing', 'faq', 'cta'] : ['faq', 'cta']}
+      />
+    </main>
+  );
+}

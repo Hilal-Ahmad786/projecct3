@@ -4,7 +4,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
-import { H, Scene, GirihHalo, HeritageParticles, drawIn, riseIn, popIn, PathDot, starPoints } from './primitives';
+import { H, Scene, GirihHalo, HeritageParticles, drawIn, riseIn, popIn, PathDot, starPoints , useSceneLabels } from './primitives';
 
 /* ── Counting number ─────────────────────────────────────────────── */
 function CountUp({ to, suffix = '', duration = 1800, delay = 0 }: { to: number; suffix?: string; duration?: number; delay?: number }) {
@@ -30,6 +30,7 @@ const BARS = [42, 68, 50, 84, 64, 96];
 const LINE_D = 'M 16 96 C 40 88, 56 64, 78 60 C 104 54, 118 38, 150 24';
 
 export function ChartGraphScene() {
+  const L = useSceneLabels();
   const reduced = useReducedMotion();
   return (
     <Scene glow={H.turquoise}>
@@ -45,9 +46,9 @@ export function ChartGraphScene() {
           {/* KPI row */}
           <div className="flex gap-2">
             {[
-              { label: 'Growth', val: 247, suffix: '%', color: H.turquoise },
-              { label: 'ROI', val: 5, suffix: 'x', color: H.terracotta },
-              { label: 'Leads', val: 1842, suffix: '', color: H.lapis },
+              { label: L('growth', 'Growth'), val: 247, suffix: '%', color: H.turquoise },
+              { label: L('roi', 'ROI'), val: 5, suffix: 'x', color: H.terracotta },
+              { label: L('leads', 'Leads'), val: 1842, suffix: '', color: H.lapis },
             ].map((kpi, i) => (
               <motion.div key={i} {...riseIn(0.4 + i * 0.15)} className="flex-1 rounded-lg px-2 py-1.5" style={{ background: H.ivory }}>
                 <div className="text-[8px] uppercase tracking-wider" style={{ color: '#8a8275' }}>{kpi.label}</div>
@@ -95,6 +96,7 @@ export function ChartGraphScene() {
 
 /* ── dashboard ───────────────────────────────────────────────────── */
 export function DashboardScene() {
+  const L = useSceneLabels();
   const reduced = useReducedMotion();
   return (
     <Scene glow={H.lapis}>
@@ -109,7 +111,7 @@ export function DashboardScene() {
         >
           {/* header */}
           <div className="flex items-center justify-between px-3 py-2" style={{ background: H.lapis }}>
-            <span className="text-[10px] font-semibold text-white tracking-wide">Operations Center</span>
+            <span className="text-[10px] font-semibold text-white tracking-wide">{L('opsCenter', 'Operations Center')}</span>
             <motion.span
               className="w-2 h-2 rounded-full"
               style={{ background: H.saffron }}
@@ -137,11 +139,11 @@ export function DashboardScene() {
                   transition={{ delay: 0.8, duration: 2.2, ease: 'easeInOut' }}
                 />
               </svg>
-              <span className="text-[8px] font-semibold" style={{ color: H.turquoiseDeep }}>capacity 78%</span>
+              <span className="text-[8px] font-semibold" style={{ color: H.turquoiseDeep }}>{L('capacity', 'capacity 78%')}</span>
             </motion.div>
             {/* sparkline */}
             <motion.div {...riseIn(0.55)} className="rounded-lg p-2" style={{ background: H.ivory }}>
-              <div className="text-[8px] mb-1 uppercase tracking-wider" style={{ color: '#8a8275' }}>requests/s</div>
+              <div className="text-[8px] mb-1 uppercase tracking-wider" style={{ color: '#8a8275' }}>{L('requests', 'requests/s')}</div>
               <svg viewBox="0 0 90 34" className="w-full">
                 <motion.path
                   d="M 2 26 L 14 20 L 26 24 L 38 12 L 50 18 L 62 8 L 74 14 L 88 4"
@@ -185,6 +187,7 @@ const FLOW_PATHS = [
 ];
 
 export function DataFlowScene() {
+  const L = useSceneLabels();
   const reduced = useReducedMotion();
   return (
     <Scene glow={H.turquoise}>
@@ -230,9 +233,9 @@ export function DataFlowScene() {
           ))}
         </motion.g>
         {/* labels */}
-        <motion.text {...riseIn(1.6)} x="27" y="200" textAnchor="middle" fontSize="9" fill="#8a8275">sources</motion.text>
-        <motion.text {...riseIn(1.7)} x="136" y="160" textAnchor="middle" fontSize="9" fill="#8a8275">transform</motion.text>
-        <motion.text {...riseIn(1.8)} x="219" y="160" textAnchor="middle" fontSize="9" fill="#8a8275">warehouse</motion.text>
+        <motion.text {...riseIn(1.6)} x="27" y="200" textAnchor="middle" fontSize="9" fill="#8a8275">{L('sources', 'sources')}</motion.text>
+        <motion.text {...riseIn(1.7)} x="136" y="160" textAnchor="middle" fontSize="9" fill="#8a8275">{L('transform', 'transform')}</motion.text>
+        <motion.text {...riseIn(1.8)} x="219" y="160" textAnchor="middle" fontSize="9" fill="#8a8275">{L('warehouse', 'warehouse')}</motion.text>
       </svg>
     </Scene>
   );
@@ -240,6 +243,7 @@ export function DataFlowScene() {
 
 /* ── microscope (research / data science scan) ───────────────────── */
 export function MicroscopeScene() {
+  const L = useSceneLabels();
   const reduced = useReducedMotion();
   const cells = Array.from({ length: 36 }, (_, i) => ({ x: (i % 6) * 30 + 30, y: Math.floor(i / 6) * 30 + 30 }));
   const anomalies = [8, 15, 27];
@@ -282,7 +286,7 @@ export function MicroscopeScene() {
         {/* findings badge */}
         <motion.g {...popIn(1.8)}>
           <rect x="150" y="196" width="76" height="22" rx="11" fill={H.lapis} />
-          <text x="188" y="210" textAnchor="middle" fontSize="10" fontWeight="700" fill={H.white}>3 insights ✓</text>
+          <text x="188" y="210" textAnchor="middle" fontSize="10" fontWeight="700" fill={H.white}>{L('insights', '3 insights ✓')}</text>
         </motion.g>
       </svg>
     </Scene>

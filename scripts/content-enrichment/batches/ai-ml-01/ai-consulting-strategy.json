@@ -1,0 +1,273 @@
+{
+  "slug": "ai-consulting-strategy",
+  "en": {
+    "name": "AI Consulting & Strategy",
+    "shortDescription": "Get a clear, prioritized AI strategy instead of scattered experiments. We assess your data and team readiness, identify high-ROI use cases, and deliver a roadmap your organization can actually execute.",
+    "fullDescription": "Most AI initiatives stall not because the technology falls short, but because companies start with a model instead of a business problem. Our consulting engagements begin with what you have: your data, your systems, and your team's skills. We score candidate use cases by expected ROI, data readiness, and implementation risk, narrowing dozens of ideas down to the two or three worth funding first. You get an honest build-vs-buy analysis — sometimes a 200-dollar-per-month API beats a six-month custom build — plus a costed roadmap, vendor and model recommendations, and governance guidance covering the EU AI Act and data privacy. A typical strategy engagement runs 3–6 weeks and ends with a plan your own team can execute, with or without us.",
+    "features": [
+      "AI Readiness & Data Maturity Assessment",
+      "Use Case Discovery & Prioritization",
+      "Build-vs-Buy & Vendor Selection",
+      "ROI Modeling & Business Cases",
+      "Costed Implementation Roadmap",
+      "AI Governance & EU AI Act Guidance",
+      "Pilot Scoping & Success Metrics",
+      "Team Training & Upskilling Workshops"
+    ],
+    "benefits": [
+      "A prioritized AI plan tied to business goals",
+      "Avoid expensive technology dead ends",
+      "Build-vs-buy decided before budgets are committed",
+      "Faster path from idea to first measurable win",
+      "Compliance and model risk addressed from day one",
+      "A team that understands and owns the strategy"
+    ],
+    "metaTitle": "AI Consulting & Strategy Services | PakSoft",
+    "metaDescription": "Independent AI consulting: readiness assessment, use-case prioritization, build-vs-buy analysis, and a costed roadmap in 3–6 weeks. Book a free strategy call.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Discovery & Stakeholder Interviews", "description": "We interview leadership and the teams closest to daily operations to understand goals, pain points, and constraints. This grounds the strategy in real workflows instead of AI hype." },
+        { "step": 2, "title": "Data & Readiness Audit", "description": "We review your data sources, quality, access paths, and infrastructure, along with your team's current skills. The audit shows which use cases are feasible today and which need groundwork first." },
+        { "step": 3, "title": "Use Case Identification & Scoring", "description": "We collect candidate use cases across departments and score each on expected ROI, data readiness, and implementation risk. The output is a ranked shortlist, not a wish list." },
+        { "step": 4, "title": "Business Case & Build-vs-Buy Analysis", "description": "For the top use cases we model costs, savings, and payback periods, and compare off-the-shelf APIs against custom development. You see the numbers behind every recommendation." },
+        { "step": 5, "title": "Roadmap & Governance Design", "description": "We deliver a phased 6–18 month roadmap with budgets, milestones, and team requirements, plus governance policies covering data privacy, model risk, and the EU AI Act. Every phase has a measurable exit criterion." },
+        { "step": 6, "title": "Enablement & Handover", "description": "We train your team through workshops and pairing sessions so the strategy does not depend on us. Many clients have us implement the first use case; others run entirely with their own teams." }
+      ],
+      "faq": [
+        { "question": "How do you decide which AI use cases to prioritize?", "answer": "We score every candidate on three axes: business value, data readiness, and implementation risk. The best first project is high value, runs on data you already have, and tolerates imperfect accuracy with a human review step. A quick win shipped in 2–3 months builds the internal momentum that bigger initiatives need." },
+        { "question": "Do we need our own data scientists to adopt AI?", "answer": "Not necessarily. API-based LLM solutions can be built and maintained by ordinary software engineers, which is where most companies should start. Custom predictive models do need data science skills, but those can be contracted for the build phase — the readiness audit tells you exactly which skills your roadmap requires." },
+        { "question": "How long does a strategy engagement take, and what does it cost?", "answer": "A typical engagement runs 3–6 weeks depending on company size and the number of departments involved. The cost is a small fraction of a single failed AI project — which is precisely what it exists to prevent. You receive fixed-scope pricing after a free initial call." },
+        { "question": "Should we build custom AI or buy off-the-shelf?", "answer": "Buy when the problem is generic — transcription, OCR, standard chat — because commercial APIs are cheaper and better than anything you would build. Build when your proprietary data creates a real advantage competitors cannot copy. Most companies land on a hybrid: a commercial LLM connected to their own data through retrieval, which costs far less than training anything." },
+        { "question": "How do you measure ROI on AI projects?", "answer": "We baseline the current process first — hours spent, error rates, cycle times — because without a baseline nobody can prove value later. Typical automation wins land between 20% and 60% time reduction on the targeted process. The business case states the expected range and the measurement method before any development starts." },
+        { "question": "Is our data good enough for AI?", "answer": "It depends entirely on the use case. LLM-based document and chat solutions need little or no training data — they work off documents you already have. Predictive models need thousands of clean historical examples, and if those do not exist yet, data collection becomes phase one of the roadmap rather than a reason to abandon the idea." },
+        { "question": "What about the EU AI Act and compliance?", "answer": "The Act classifies systems by risk tier, and most business applications fall into minimal or limited risk, requiring mainly transparency measures. Use cases touching HR decisions, credit scoring, or biometrics count as high-risk and carry strict documentation and oversight obligations. We classify each use case during scoring so compliance cost is part of the business case, not a surprise." },
+        { "question": "When would you advise against using AI?", "answer": "When a rules-based system solves the problem more cheaply, when the data the model would need does not exist, or when the process has zero tolerance for error and no room for human review. Roughly a quarter of the use cases we assess end with that recommendation — telling you no early is the cheapest outcome a consultant can deliver." }
+      ],
+      "technologies": [
+        { "icon": "openai", "name": "OpenAI" },
+        { "icon": "anthropic", "name": "Anthropic Claude" },
+        { "icon": "azure", "name": "Azure AI" },
+        { "icon": "aws", "name": "AWS Bedrock" },
+        { "icon": "googlecloud", "name": "Google Vertex AI" },
+        { "icon": "huggingface", "name": "Hugging Face" },
+        { "icon": "langchain", "name": "LangChain" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Yapay Zeka Danışmanlığı ve Stratejisi",
+    "shortDescription": "Dağınık denemeler yerine net ve önceliklendirilmiş bir yapay zeka stratejisi edinin. Veri ve ekip hazırlığınızı değerlendirir, yüksek getirili kullanım senaryolarını belirler ve kurumunuzun gerçekten uygulayabileceği bir yol haritası sunarız.",
+    "fullDescription": "Yapay zeka girişimlerinin çoğu teknoloji yetersiz kaldığı için değil, şirketler bir iş probleminden değil bir modelden yola çıktığı için tıkanır. Danışmanlık çalışmalarımız elinizde olanla başlar: verileriniz, sistemleriniz ve ekibinizin becerileri. Aday kullanım senaryolarını beklenen getiri, veri hazırlığı ve uygulama riskine göre puanlar; onlarca fikri önce finanse edilmeye değer iki üç senaryoya indiririz. Dürüst bir geliştir-mi-satın-al-mı analizi alırsınız — bazen ayda birkaç yüz dolarlık bir API, altı aylık özel geliştirmeyi geride bırakır. Buna maliyetlendirilmiş bir yol haritası, tedarikçi ve model önerileri ile AB Yapay Zeka Yasası ve veri gizliliğini kapsayan yönetişim rehberliği eşlik eder. Tipik bir strateji çalışması 3–6 hafta sürer ve ekibinizin bizimle ya da bizsiz uygulayabileceği bir planla tamamlanır.",
+    "features": [
+      "Yapay Zeka Hazırlık ve Veri Olgunluk Değerlendirmesi",
+      "Kullanım Senaryosu Keşfi ve Önceliklendirme",
+      "Geliştir mi Satın Al mı Analizi ve Tedarikçi Seçimi",
+      "ROI Modelleme ve İş Gerekçeleri",
+      "Maliyetlendirilmiş Uygulama Yol Haritası",
+      "Yapay Zeka Yönetişimi ve AB Yapay Zeka Yasası Rehberliği",
+      "Pilot Kapsamı ve Başarı Metrikleri",
+      "Ekip Eğitimi ve Beceri Geliştirme Atölyeleri"
+    ],
+    "benefits": [
+      "İş hedeflerine bağlı, önceliklendirilmiş bir yapay zeka planı",
+      "Pahalı teknoloji çıkmazlarından kaçının",
+      "Bütçe bağlanmadan önce geliştir-satın al kararı netleşir",
+      "Fikirden ilk ölçülebilir kazanıma daha hızlı yol",
+      "Uyumluluk ve model riski ilk günden ele alınır",
+      "Stratejiyi anlayan ve sahiplenen bir ekip"
+    ],
+    "metaTitle": "Yapay Zeka Danışmanlığı ve Strateji | PakSoft",
+    "metaDescription": "Bağımsız yapay zeka danışmanlığı: hazırlık değerlendirmesi, kullanım senaryosu önceliklendirme ve 3–6 haftada maliyetli yol haritası. Ücretsiz görüşme alın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Keşif ve Paydaş Görüşmeleri", "description": "Hedefleri, sorun noktalarını ve kısıtları anlamak için yöneticilerle ve günlük operasyona en yakın ekiplerle görüşürüz. Böylece strateji, yapay zeka hype'ına değil gerçek iş akışlarına dayanır." },
+        { "step": 2, "title": "Veri ve Hazırlık Denetimi", "description": "Veri kaynaklarınızı, kaliteyi, erişim yollarını ve altyapıyı, ayrıca ekibinizin mevcut becerilerini inceleriz. Denetim, hangi senaryoların bugün uygulanabilir olduğunu, hangilerinin önce hazırlık gerektirdiğini gösterir." },
+        { "step": 3, "title": "Kullanım Senaryosu Belirleme ve Puanlama", "description": "Departmanlar genelinde aday senaryoları toplar; her birini beklenen getiri, veri hazırlığı ve uygulama riskine göre puanlarız. Çıktı bir dilek listesi değil, sıralanmış kısa bir listedir." },
+        { "step": 4, "title": "İş Gerekçesi ve Geliştir-Satın Al Analizi", "description": "En iyi senaryolar için maliyetleri, tasarrufları ve geri ödeme sürelerini modelleriz; hazır API'leri özel geliştirmeyle karşılaştırırız. Her önerinin arkasındaki rakamları görürsünüz." },
+        { "step": 5, "title": "Yol Haritası ve Yönetişim Tasarımı", "description": "Bütçeler, kilometre taşları ve ekip gereksinimleriyle 6–18 aylık aşamalı bir yol haritası; veri gizliliği, model riski ve AB Yapay Zeka Yasası'nı kapsayan yönetişim politikaları teslim ederiz. Her aşamanın ölçülebilir bir çıkış kriteri vardır." },
+        { "step": 6, "title": "Yetkinleştirme ve Devir", "description": "Strateji bize bağımlı kalmasın diye ekibinizi atölyeler ve eşli çalışma oturumlarıyla eğitiriz. Birçok müşteri ilk senaryoyu bize uygulattırır; bazıları tamamen kendi ekibiyle ilerler." }
+      ],
+      "faq": [
+        { "question": "Hangi yapay zeka senaryolarına öncelik verileceğine nasıl karar veriyorsunuz?", "answer": "Her adayı üç eksende puanlarız: iş değeri, veri hazırlığı ve uygulama riski. En iyi ilk proje yüksek değerlidir, halihazırda sahip olduğunuz verilerle çalışır ve insan kontrolü adımıyla kusursuz olmayan doğruluğu tolere eder. 2–3 ayda yayına alınan hızlı bir kazanım, büyük girişimlerin ihtiyaç duyduğu iç ivmeyi yaratır." },
+        { "question": "Yapay zekayı benimsemek için kendi veri bilimcilerimize ihtiyacımız var mı?", "answer": "Şart değil. API tabanlı LLM çözümlerini sıradan yazılım mühendisleri geliştirip sürdürebilir; çoğu şirketin başlaması gereken yer de burasıdır. Özel tahmin modelleri veri bilimi becerisi gerektirir, ancak bu beceriler geliştirme aşaması için dışarıdan alınabilir — hazırlık denetimi, yol haritanızın tam olarak hangi becerilere ihtiyaç duyduğunu söyler." },
+        { "question": "Bir strateji çalışması ne kadar sürer ve maliyeti nedir?", "answer": "Tipik bir çalışma, şirket büyüklüğüne ve dahil olan departman sayısına bağlı olarak 3–6 hafta sürer. Maliyeti, başarısız tek bir yapay zeka projesinin küçük bir kesridir — zaten amacı da tam olarak bunu önlemektir. Ücretsiz ilk görüşmenin ardından sabit kapsamlı fiyat alırsınız." },
+        { "question": "Özel yapay zeka mı geliştirmeliyiz, hazır çözüm mü almalıyız?", "answer": "Problem genelse — transkripsiyon, OCR, standart sohbet — satın alın; ticari API'ler geliştirebileceğiniz her şeyden hem ucuz hem iyidir. Tescilli verileriniz rakiplerin kopyalayamayacağı gerçek bir avantaj yaratıyorsa geliştirin. Çoğu şirket hibrit modelde karar kılar: kendi verilerine retrieval ile bağlanmış ticari bir LLM — bu, herhangi bir model eğitmekten çok daha ucuzdur." },
+        { "question": "Yapay zeka projelerinde ROI'yi nasıl ölçüyorsunuz?", "answer": "Önce mevcut süreci ölçeriz — harcanan saatler, hata oranları, çevrim süreleri — çünkü taban çizgisi olmadan kimse sonradan değeri kanıtlayamaz. Tipik otomasyon kazanımları, hedeflenen süreçte %20 ile %60 arası zaman tasarrufudur. İş gerekçesi, geliştirme başlamadan önce beklenen aralığı ve ölçüm yöntemini belirtir." },
+        { "question": "Verilerimiz yapay zeka için yeterince iyi mi?", "answer": "Tamamen kullanım senaryosuna bağlı. LLM tabanlı doküman ve sohbet çözümleri çok az eğitim verisiyle ya da hiç eğitim verisi olmadan çalışır — zaten elinizdeki dokümanları kullanırlar. Tahmin modelleri binlerce temiz geçmiş örnek ister; bunlar henüz yoksa veri toplama, fikirden vazgeçme nedeni değil yol haritasının birinci aşaması olur." },
+        { "question": "AB Yapay Zeka Yasası ve uyumluluk konusunda ne yapıyorsunuz?", "answer": "Yasa, sistemleri risk katmanlarına göre sınıflandırır; iş uygulamalarının çoğu, esas olarak şeffaflık önlemleri gerektiren minimal veya sınırlı risk kategorisine girer. İK kararlarına, kredi puanlamasına veya biyometriye dokunan senaryolar yüksek riskli sayılır ve sıkı dokümantasyon ile gözetim yükümlülükleri taşır. Her senaryoyu puanlama sırasında sınıflandırırız; böylece uyumluluk maliyeti sürpriz değil, iş gerekçesinin parçası olur." },
+        { "question": "Yapay zeka kullanmamayı ne zaman önerirsiniz?", "answer": "Kural tabanlı bir sistem problemi daha ucuza çözüyorsa, modelin ihtiyaç duyacağı veri mevcut değilse veya süreç hataya sıfır tolerans gösterip insan kontrolüne yer bırakmıyorsa. Değerlendirdiğimiz senaryoların kabaca dörtte biri bu öneriyle sonuçlanır — erken aşamada hayır demek, bir danışmanın sunabileceği en ucuz sonuçtur." }
+      ],
+      "technologies": [
+        { "icon": "openai", "name": "OpenAI" },
+        { "icon": "anthropic", "name": "Anthropic Claude" },
+        { "icon": "azure", "name": "Azure AI" },
+        { "icon": "aws", "name": "AWS Bedrock" },
+        { "icon": "googlecloud", "name": "Google Vertex AI" },
+        { "icon": "huggingface", "name": "Hugging Face" },
+        { "icon": "langchain", "name": "LangChain" }
+      ]
+    }
+  },
+  "de": {
+    "name": "KI-Beratung & Strategie",
+    "shortDescription": "Eine klare, priorisierte KI-Strategie statt verstreuter Experimente. Wir bewerten Ihre Daten- und Teamreife, identifizieren Use Cases mit hohem ROI und liefern eine Roadmap, die Ihre Organisation wirklich umsetzen kann.",
+    "fullDescription": "Die meisten KI-Initiativen scheitern nicht an der Technologie, sondern daran, dass Unternehmen mit einem Modell statt mit einem Geschäftsproblem starten. Unsere Beratung beginnt bei dem, was Sie haben: Ihren Daten, Ihren Systemen und den Fähigkeiten Ihres Teams. Wir bewerten Kandidaten-Use-Cases nach erwartetem ROI, Datenreife und Umsetzungsrisiko und verdichten Dutzende Ideen auf die zwei oder drei, die zuerst finanziert werden sollten. Sie erhalten eine ehrliche Make-or-Buy-Analyse — manchmal schlägt eine API für 200 Dollar im Monat eine sechsmonatige Eigenentwicklung — plus eine kalkulierte Roadmap, Anbieter- und Modellempfehlungen sowie Governance-Leitlinien zu EU AI Act und Datenschutz. Ein typisches Strategieprojekt dauert 3–6 Wochen und endet mit einem Plan, den Ihr Team mit oder ohne uns umsetzen kann.",
+    "features": [
+      "KI-Readiness- & Datenreife-Assessment",
+      "Use-Case-Discovery & Priorisierung",
+      "Make-or-Buy-Analyse & Anbieterauswahl",
+      "ROI-Modellierung & Business Cases",
+      "Kalkulierte Implementierungs-Roadmap",
+      "KI-Governance & EU-AI-Act-Beratung",
+      "Pilot-Scoping & Erfolgsmetriken",
+      "Teamschulung & Upskilling-Workshops"
+    ],
+    "benefits": [
+      "Ein priorisierter KI-Plan, der an Geschäftszielen hängt",
+      "Teure technologische Sackgassen vermeiden",
+      "Make-or-Buy entschieden, bevor Budgets gebunden sind",
+      "Schnellerer Weg von der Idee zum ersten messbaren Erfolg",
+      "Compliance und Modellrisiko von Tag eins an adressiert",
+      "Ein Team, das die Strategie versteht und trägt"
+    ],
+    "metaTitle": "KI-Beratung & Strategie | PakSoft",
+    "metaDescription": "Unabhängige KI-Beratung: Readiness-Assessment, Use-Case-Priorisierung, Make-or-Buy-Analyse und kalkulierte Roadmap in 3–6 Wochen. Jetzt kostenloses Gespräch buchen.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Discovery & Stakeholder-Interviews", "description": "Wir sprechen mit der Führung und den Teams, die dem Tagesgeschäft am nächsten sind, um Ziele, Schmerzpunkte und Restriktionen zu verstehen. So gründet die Strategie auf realen Workflows statt auf KI-Hype." },
+        { "step": 2, "title": "Daten- & Readiness-Audit", "description": "Wir prüfen Ihre Datenquellen, Qualität, Zugriffswege und Infrastruktur sowie die aktuellen Fähigkeiten Ihres Teams. Das Audit zeigt, welche Use Cases heute machbar sind und welche erst Vorarbeit brauchen." },
+        { "step": 3, "title": "Use-Case-Identifikation & Scoring", "description": "Wir sammeln Kandidaten-Use-Cases über alle Abteilungen und bewerten jeden nach erwartetem ROI, Datenreife und Umsetzungsrisiko. Das Ergebnis ist eine gerankte Shortlist, keine Wunschliste." },
+        { "step": 4, "title": "Business Case & Make-or-Buy-Analyse", "description": "Für die Top-Use-Cases modellieren wir Kosten, Einsparungen und Amortisationszeiten und vergleichen fertige APIs mit Eigenentwicklung. Sie sehen die Zahlen hinter jeder Empfehlung." },
+        { "step": 5, "title": "Roadmap & Governance-Design", "description": "Wir liefern eine phasenweise Roadmap über 6–18 Monate mit Budgets, Meilensteinen und Teamanforderungen, plus Governance-Richtlinien zu Datenschutz, Modellrisiko und EU AI Act. Jede Phase hat ein messbares Abschlusskriterium." },
+        { "step": 6, "title": "Enablement & Übergabe", "description": "Wir schulen Ihr Team in Workshops und Pairing-Sessions, damit die Strategie nicht von uns abhängt. Viele Kunden lassen uns den ersten Use Case umsetzen; andere arbeiten komplett mit eigenen Teams weiter." }
+      ],
+      "faq": [
+        { "question": "Wie entscheiden Sie, welche KI-Use-Cases priorisiert werden?", "answer": "Wir bewerten jeden Kandidaten auf drei Achsen: Geschäftswert, Datenreife und Umsetzungsrisiko. Das beste Erstprojekt hat hohen Wert, läuft auf Daten, die Sie bereits besitzen, und toleriert unvollkommene Genauigkeit dank eines menschlichen Prüfschritts. Ein Quick Win, der in 2–3 Monaten live geht, schafft den internen Schwung, den größere Initiativen brauchen." },
+        { "question": "Brauchen wir eigene Data Scientists für KI?", "answer": "Nicht zwingend. API-basierte LLM-Lösungen können von normalen Softwareentwicklern gebaut und betrieben werden — dort sollten die meisten Unternehmen anfangen. Eigene Vorhersagemodelle erfordern Data-Science-Kompetenz, die sich aber für die Bauphase extern einkaufen lässt; das Readiness-Audit zeigt genau, welche Skills Ihre Roadmap erfordert." },
+        { "question": "Wie lange dauert ein Strategieprojekt und was kostet es?", "answer": "Ein typisches Projekt dauert 3–6 Wochen, abhängig von Unternehmensgröße und Zahl der beteiligten Abteilungen. Die Kosten sind ein Bruchteil eines einzigen gescheiterten KI-Projekts — und genau das soll es verhindern. Nach einem kostenlosen Erstgespräch erhalten Sie einen Festpreis mit fixem Umfang." },
+        { "question": "Sollten wir KI selbst entwickeln oder fertig kaufen?", "answer": "Kaufen, wenn das Problem generisch ist — Transkription, OCR, Standard-Chat —, denn kommerzielle APIs sind günstiger und besser als jede Eigenentwicklung. Selbst bauen, wenn Ihre proprietären Daten einen echten Vorteil schaffen, den Wettbewerber nicht kopieren können. Die meisten Unternehmen landen bei einem Hybrid: ein kommerzielles LLM, per Retrieval an die eigenen Daten angebunden — deutlich günstiger, als irgendetwas zu trainieren." },
+        { "question": "Wie messen Sie den ROI von KI-Projekten?", "answer": "Wir vermessen zuerst den Ist-Prozess — aufgewendete Stunden, Fehlerraten, Durchlaufzeiten —, denn ohne Baseline kann später niemand den Wert belegen. Typische Automatisierungsgewinne liegen bei 20 bis 60 Prozent Zeitersparnis im Zielprozess. Der Business Case nennt die erwartete Spanne und die Messmethode, bevor die Entwicklung beginnt." },
+        { "question": "Sind unsere Daten gut genug für KI?", "answer": "Das hängt vollständig vom Use Case ab. LLM-basierte Dokumenten- und Chat-Lösungen brauchen wenig oder gar keine Trainingsdaten — sie arbeiten mit Dokumenten, die Sie schon haben. Vorhersagemodelle benötigen Tausende saubere historische Beispiele; existieren die noch nicht, wird Datensammlung Phase eins der Roadmap statt ein Grund, die Idee aufzugeben." },
+        { "question": "Was ist mit dem EU AI Act und Compliance?", "answer": "Der AI Act klassifiziert Systeme nach Risikostufen; die meisten Geschäftsanwendungen fallen unter minimales oder begrenztes Risiko und erfordern vor allem Transparenzmaßnahmen. Use Cases rund um Personalentscheidungen, Kreditscoring oder Biometrie gelten als Hochrisiko mit strengen Dokumentations- und Aufsichtspflichten. Wir klassifizieren jeden Use Case schon beim Scoring, sodass Compliance-Kosten Teil des Business Case sind — keine Überraschung." },
+        { "question": "Wann raten Sie von KI ab?", "answer": "Wenn ein regelbasiertes System das Problem günstiger löst, wenn die Daten, die das Modell bräuchte, nicht existieren, oder wenn der Prozess null Fehlertoleranz hat und keinen Raum für menschliche Prüfung lässt. Etwa ein Viertel der Use Cases, die wir bewerten, endet mit genau dieser Empfehlung — ein frühes Nein ist das günstigste Ergebnis, das Beratung liefern kann." }
+      ],
+      "technologies": [
+        { "icon": "openai", "name": "OpenAI" },
+        { "icon": "anthropic", "name": "Anthropic Claude" },
+        { "icon": "azure", "name": "Azure AI" },
+        { "icon": "aws", "name": "AWS Bedrock" },
+        { "icon": "googlecloud", "name": "Google Vertex AI" },
+        { "icon": "huggingface", "name": "Hugging Face" },
+        { "icon": "langchain", "name": "LangChain" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "AI کنسلٹنگ اور حکمتِ عملی",
+    "shortDescription": "بکھرے ہوئے تجربات کے بجائے واضح اور ترجیح شدہ AI حکمتِ عملی حاصل کریں۔ ہم آپ کے ڈیٹا اور ٹیم کی تیاری جانچتے ہیں، زیادہ منافع بخش استعمالات شناخت کرتے ہیں اور ایسا روڈ میپ دیتے ہیں جس پر آپ کا ادارہ واقعی عمل کر سکے۔",
+    "fullDescription": "زیادہ تر AI منصوبے اس لیے ناکام نہیں ہوتے کہ ٹیکنالوجی کمزور ہے، بلکہ اس لیے کہ کمپنیاں کاروباری مسئلے کے بجائے کسی ماڈل سے آغاز کرتی ہیں۔ ہماری کنسلٹنگ آپ کی موجودہ صورتحال سے شروع ہوتی ہے: آپ کا ڈیٹا، آپ کے سسٹمز اور آپ کی ٹیم کی مہارتیں۔ ہم ممکنہ استعمالات کو متوقع منافع، ڈیٹا کی تیاری اور عمل درآمد کے خطرے پر پرکھتے ہیں اور درجنوں خیالات کو ان دو تین منصوبوں تک محدود کرتے ہیں جو پہلے سرمایہ کاری کے لائق ہیں۔ آپ کو ایماندارانہ بناؤ-یا-خریدو تجزیہ ملتا ہے — بعض اوقات ماہانہ چند سو ڈالر کی API چھ ماہ کی کسٹم ڈیولپمنٹ سے بہتر نکلتی ہے — ساتھ ہی لاگت سمیت روڈ میپ، وینڈر اور ماڈل کی سفارشات، اور EU AI Act اور ڈیٹا پرائیویسی پر گورننس رہنمائی۔ عام طور پر یہ کام 3 تا 6 ہفتے لیتا ہے اور ایسے منصوبے پر ختم ہوتا ہے جس پر آپ کی اپنی ٹیم ہمارے ساتھ یا ہمارے بغیر عمل کر سکتی ہے۔",
+    "features": [
+      "AI تیاری اور ڈیٹا میچورٹی کا جائزہ",
+      "استعمال کے مواقع کی دریافت اور ترجیح بندی",
+      "بناؤ یا خریدو تجزیہ اور وینڈر کا انتخاب",
+      "ROI ماڈلنگ اور کاروباری جواز",
+      "لاگت سمیت عمل درآمد کا روڈ میپ",
+      "AI گورننس اور EU AI Act رہنمائی",
+      "پائلٹ کا دائرہ کار اور کامیابی کے معیار",
+      "ٹیم کی تربیت اور مہارت سازی کی ورکشاپس"
+    ],
+    "benefits": [
+      "کاروباری اہداف سے جڑا ترجیح شدہ AI منصوبہ",
+      "مہنگے تکنیکی بند راستوں سے بچاؤ",
+      "بجٹ مختص ہونے سے پہلے بناؤ-یا-خریدو کا فیصلہ",
+      "خیال سے پہلی قابلِ پیمائش کامیابی تک تیز راستہ",
+      "پہلے دن سے کمپلائنس اور ماڈل رسک کا احاطہ",
+      "ایسی ٹیم جو حکمتِ عملی کو سمجھتی اور اپناتی ہے"
+    ],
+    "metaTitle": "AI کنسلٹنگ اور حکمتِ عملی | PakSoft",
+    "metaDescription": "آزاد AI کنسلٹنگ: تیاری کا جائزہ، استعمالات کی ترجیح بندی، بناؤ-یا-خریدو تجزیہ اور 3 تا 6 ہفتوں میں لاگت سمیت روڈ میپ۔ آج ہی مفت اسٹریٹجی کال بک کریں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "دریافت اور اسٹیک ہولڈر انٹرویوز", "description": "ہم قیادت اور روزمرہ آپریشنز کے قریب ترین ٹیموں سے بات کرتے ہیں تاکہ اہداف، مسائل اور حدود کو سمجھ سکیں۔ یوں حکمتِ عملی AI کے شور شرابے کے بجائے حقیقی ورک فلوز پر قائم ہوتی ہے۔" },
+        { "step": 2, "title": "ڈیٹا اور تیاری کا آڈٹ", "description": "ہم آپ کے ڈیٹا ذرائع، معیار، رسائی کے راستوں اور انفراسٹرکچر کے ساتھ ساتھ ٹیم کی موجودہ مہارتوں کا جائزہ لیتے ہیں۔ آڈٹ بتاتا ہے کہ کون سے استعمالات آج ممکن ہیں اور کن کے لیے پہلے بنیادی کام درکار ہے۔" },
+        { "step": 3, "title": "استعمالات کی شناخت اور اسکورنگ", "description": "ہم تمام شعبوں سے ممکنہ استعمالات جمع کرتے ہیں اور ہر ایک کو متوقع منافع، ڈیٹا کی تیاری اور عمل درآمد کے خطرے پر اسکور دیتے ہیں۔ نتیجہ خواہشات کی فہرست نہیں بلکہ درجہ بند مختصر فہرست ہوتا ہے۔" },
+        { "step": 4, "title": "کاروباری جواز اور بناؤ-یا-خریدو تجزیہ", "description": "بہترین استعمالات کے لیے ہم لاگت، بچت اور سرمایہ واپسی کی مدت کا ماڈل بناتے ہیں اور تیار APIs کا کسٹم ڈیولپمنٹ سے موازنہ کرتے ہیں۔ ہر سفارش کے پیچھے موجود اعداد آپ کے سامنے ہوتے ہیں۔" },
+        { "step": 5, "title": "روڈ میپ اور گورننس ڈیزائن", "description": "ہم بجٹ، سنگِ میل اور ٹیم کی ضروریات کے ساتھ 6 تا 18 ماہ کا مرحلہ وار روڈ میپ دیتے ہیں، نیز ڈیٹا پرائیویسی، ماڈل رسک اور EU AI Act پر گورننس پالیسیاں۔ ہر مرحلے کا قابلِ پیمائش اختتامی معیار ہوتا ہے۔" },
+        { "step": 6, "title": "صلاحیت سازی اور حوالگی", "description": "ہم ورکشاپس اور مشترکہ سیشنز کے ذریعے آپ کی ٹیم کو تربیت دیتے ہیں تاکہ حکمتِ عملی ہم پر منحصر نہ رہے۔ کئی کلائنٹس پہلا منصوبہ ہم سے بنواتے ہیں؛ کچھ مکمل طور پر اپنی ٹیم کے ساتھ آگے بڑھتے ہیں۔" }
+      ],
+      "faq": [
+        { "question": "آپ کیسے طے کرتے ہیں کہ کن AI استعمالات کو ترجیح دی جائے؟", "answer": "ہم ہر امیدوار کو تین محوروں پر پرکھتے ہیں: کاروباری قدر، ڈیٹا کی تیاری اور عمل درآمد کا خطرہ۔ بہترین پہلا منصوبہ وہ ہے جو زیادہ قدر رکھتا ہو، آپ کے موجودہ ڈیٹا پر چلے اور انسانی جائزے کے مرحلے کے ساتھ نامکمل درستگی برداشت کر سکے۔ 2 تا 3 ماہ میں مکمل ہونے والی فوری کامیابی وہ اندرونی رفتار پیدا کرتی ہے جس کی بڑے منصوبوں کو ضرورت ہوتی ہے۔" },
+        { "question": "کیا AI اپنانے کے لیے ہمیں اپنے ڈیٹا سائنٹسٹس کی ضرورت ہے؟", "answer": "ضروری نہیں۔ API پر مبنی LLM حل عام سافٹ ویئر انجینئرز بنا اور چلا سکتے ہیں، اور زیادہ تر کمپنیوں کو یہیں سے شروع کرنا چاہیے۔ کسٹم پیشگوئی ماڈلز کے لیے ڈیٹا سائنس کی مہارت درکار ہوتی ہے، مگر یہ مہارت تعمیراتی مرحلے کے لیے باہر سے لی جا سکتی ہے — تیاری کا آڈٹ واضح بتاتا ہے کہ آپ کے روڈ میپ کو کن مہارتوں کی ضرورت ہے۔" },
+        { "question": "اسٹریٹجی پروجیکٹ کتنا وقت لیتا ہے اور لاگت کیا ہے؟", "answer": "عام طور پر 3 تا 6 ہفتے، کمپنی کے حجم اور شامل شعبوں کی تعداد کے مطابق۔ اس کی لاگت کسی ایک ناکام AI پروجیکٹ کا معمولی حصہ ہوتی ہے — اور اس کا مقصد ہی ایسی ناکامی روکنا ہے۔ مفت ابتدائی کال کے بعد آپ کو متعین دائرہ کار کے ساتھ مقررہ قیمت ملتی ہے۔" },
+        { "question": "ہمیں کسٹم AI بنانا چاہیے یا تیار حل خریدنا چاہیے؟", "answer": "اگر مسئلہ عمومی ہے — ٹرانسکرپشن، OCR، عام چیٹ — تو خریدیں؛ تجارتی APIs آپ کی ہر ممکنہ تعمیر سے سستی اور بہتر ہیں۔ اگر آپ کا مخصوص ڈیٹا ایسا حقیقی فائدہ دیتا ہے جس کی نقل حریف نہیں کر سکتے تو بنائیں۔ زیادہ تر کمپنیاں درمیانی راستہ اپناتی ہیں: تجارتی LLM جو retrieval کے ذریعے ان کے اپنے ڈیٹا سے جڑا ہو — یہ کوئی بھی ماڈل تربیت دینے سے کہیں سستا ہے۔" },
+        { "question": "AI منصوبوں میں ROI کیسے ناپا جاتا ہے؟", "answer": "ہم پہلے موجودہ عمل کی بنیادی پیمائش کرتے ہیں — صرف ہونے والے گھنٹے، غلطی کی شرح، تکمیل کا دورانیہ — کیونکہ بنیادی اعداد کے بغیر بعد میں کوئی قدر ثابت نہیں کر سکتا۔ عام آٹومیشن فوائد ہدف شدہ عمل میں 20 تا 60 فیصد وقت کی بچت کے درمیان ہوتے ہیں۔ کاروباری جواز ڈیولپمنٹ شروع ہونے سے پہلے متوقع حد اور پیمائش کا طریقہ بیان کرتا ہے۔" },
+        { "question": "کیا ہمارا ڈیٹا AI کے لیے کافی اچھا ہے؟", "answer": "یہ مکمل طور پر استعمال پر منحصر ہے۔ LLM پر مبنی دستاویزی اور چیٹ حل بہت کم یا بالکل تربیتی ڈیٹا کے بغیر چلتے ہیں — وہ آپ کے موجودہ دستاویزات استعمال کرتے ہیں۔ پیشگوئی ماڈلز کو ہزاروں صاف تاریخی مثالیں چاہییں؛ اگر وہ ابھی موجود نہیں تو ڈیٹا جمع کرنا خیال ترک کرنے کی وجہ نہیں بلکہ روڈ میپ کا پہلا مرحلہ بن جاتا ہے۔" },
+        { "question": "EU AI Act اور کمپلائنس کا کیا ہوگا؟", "answer": "یہ قانون سسٹمز کو خطرے کے درجوں میں تقسیم کرتا ہے؛ زیادہ تر کاروباری ایپلیکیشنز کم یا محدود خطرے میں آتی ہیں جن کے لیے بنیادی طور پر شفافیت کے اقدامات درکار ہیں۔ HR فیصلوں، کریڈٹ اسکورنگ یا بایومیٹرکس کو چھونے والے استعمالات اعلیٰ خطرہ شمار ہوتے ہیں اور سخت دستاویزی و نگرانی کی پابندیاں رکھتے ہیں۔ ہم اسکورنگ کے دوران ہی ہر استعمال کی درجہ بندی کرتے ہیں تاکہ کمپلائنس کی لاگت کاروباری جواز کا حصہ ہو، اچانک جھٹکا نہیں۔" },
+        { "question": "آپ AI استعمال نہ کرنے کا مشورہ کب دیتے ہیں؟", "answer": "جب اصول پر مبنی سسٹم مسئلہ سستے میں حل کر دے، جب ماڈل کو درکار ڈیٹا موجود ہی نہ ہو، یا جب عمل میں غلطی کی صفر گنجائش ہو اور انسانی جائزے کا کوئی راستہ نہ ہو۔ ہمارے جائزہ شدہ استعمالات کا تقریباً ایک چوتھائی اسی سفارش پر ختم ہوتا ہے — جلد انکار کر دینا وہ سستا ترین نتیجہ ہے جو کوئی کنسلٹنٹ دے سکتا ہے۔" }
+      ],
+      "technologies": [
+        { "icon": "openai", "name": "OpenAI" },
+        { "icon": "anthropic", "name": "Anthropic Claude" },
+        { "icon": "azure", "name": "Azure AI" },
+        { "icon": "aws", "name": "AWS Bedrock" },
+        { "icon": "googlecloud", "name": "Google Vertex AI" },
+        { "icon": "huggingface", "name": "Hugging Face" },
+        { "icon": "langchain", "name": "LangChain" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "استشارات واستراتيجية الذكاء الاصطناعي",
+    "shortDescription": "احصلوا على استراتيجية ذكاء اصطناعي واضحة ومرتّبة الأولويات بدل التجارب المتفرقة. نقيّم جاهزية بياناتكم وفريقكم، ونحدد حالات الاستخدام عالية العائد، ونسلّم خارطة طريق تستطيع مؤسستكم تنفيذها فعلاً.",
+    "fullDescription": "معظم مبادرات الذكاء الاصطناعي لا تتعثر لقصور في التقنية، بل لأن الشركات تبدأ من نموذج بدلاً من مشكلة عمل. تبدأ استشاراتنا مما تملكونه فعلاً: بياناتكم وأنظمتكم ومهارات فريقكم. نقيّم حالات الاستخدام المرشحة وفق العائد المتوقع وجاهزية البيانات ومخاطر التنفيذ، ونختزل عشرات الأفكار إلى حالتين أو ثلاث تستحق التمويل أولاً. تحصلون على تحليل صريح للبناء مقابل الشراء — أحياناً تتفوق واجهة API بمئتي دولار شهرياً على تطوير مخصص يستغرق ستة أشهر — إضافة إلى خارطة طريق مُكلّفة مالياً، وتوصيات بالمزوّدين والنماذج، وإرشادات حوكمة تغطي قانون الذكاء الاصطناعي الأوروبي وخصوصية البيانات. يستغرق المشروع الاستراتيجي النموذجي 3–6 أسابيع وينتهي بخطة يستطيع فريقكم تنفيذها معنا أو من دوننا.",
+    "features": [
+      "تقييم جاهزية الذكاء الاصطناعي ونضج البيانات",
+      "اكتشاف حالات الاستخدام وترتيب أولوياتها",
+      "تحليل البناء مقابل الشراء واختيار المزوّدين",
+      "نمذجة العائد على الاستثمار ودراسات الجدوى",
+      "خارطة طريق تنفيذية مُكلّفة مالياً",
+      "حوكمة الذكاء الاصطناعي وإرشادات قانون EU AI Act",
+      "تحديد نطاق المشروع التجريبي ومقاييس النجاح",
+      "تدريب الفرق وورش رفع المهارات"
+    ],
+    "benefits": [
+      "خطة ذكاء اصطناعي مرتّبة الأولويات ومرتبطة بأهداف العمل",
+      "تجنّب الطرق التقنية المسدودة المكلفة",
+      "حسم قرار البناء أو الشراء قبل ربط الميزانيات",
+      "مسار أسرع من الفكرة إلى أول مكسب قابل للقياس",
+      "معالجة الامتثال ومخاطر النماذج من اليوم الأول",
+      "فريق يفهم الاستراتيجية ويتبنّاها"
+    ],
+    "metaTitle": "استشارات الذكاء الاصطناعي والاستراتيجية | PakSoft",
+    "metaDescription": "استشارات ذكاء اصطناعي مستقلة: تقييم الجاهزية، ترتيب حالات الاستخدام، تحليل البناء مقابل الشراء، وخارطة طريق خلال 3–6 أسابيع. احجزوا مكالمة مجانية اليوم.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "الاستكشاف ومقابلات أصحاب المصلحة", "description": "نقابل القيادة والفرق الأقرب إلى العمليات اليومية لفهم الأهداف ونقاط الألم والقيود. وهكذا تُبنى الاستراتيجية على مسارات عمل حقيقية لا على ضجيج الذكاء الاصطناعي." },
+        { "step": 2, "title": "تدقيق البيانات والجاهزية", "description": "نراجع مصادر بياناتكم وجودتها ومسارات الوصول إليها وبنيتكم التحتية، إضافة إلى مهارات فريقكم الحالية. يبيّن التدقيق أي حالات الاستخدام ممكنة اليوم وأيها يحتاج تمهيداً أولاً." },
+        { "step": 3, "title": "تحديد حالات الاستخدام وتقييمها", "description": "نجمع حالات الاستخدام المرشحة من مختلف الأقسام ونقيّم كل واحدة وفق العائد المتوقع وجاهزية البيانات ومخاطر التنفيذ. والناتج قائمة قصيرة مرتّبة، لا قائمة أمنيات." },
+        { "step": 4, "title": "دراسة الجدوى وتحليل البناء مقابل الشراء", "description": "لأفضل حالات الاستخدام ننمذج التكاليف والوفورات وفترات استرداد الاستثمار، ونقارن الواجهات الجاهزة بالتطوير المخصص. وترون الأرقام وراء كل توصية." },
+        { "step": 5, "title": "تصميم خارطة الطريق والحوكمة", "description": "نسلّم خارطة طريق مرحلية تمتد 6–18 شهراً مع الميزانيات والمعالم ومتطلبات الفريق، إضافة إلى سياسات حوكمة تغطي خصوصية البيانات ومخاطر النماذج وقانون EU AI Act. ولكل مرحلة معيار إنجاز قابل للقياس." },
+        { "step": 6, "title": "التمكين والتسليم", "description": "ندرّب فريقكم عبر ورش عمل وجلسات عمل مشتركة حتى لا تبقى الاستراتيجية معتمدة علينا. كثير من العملاء يكلّفوننا بتنفيذ حالة الاستخدام الأولى؛ وآخرون يمضون بفرقهم الخاصة بالكامل." }
+      ],
+      "faq": [
+        { "question": "كيف تقررون أي حالات استخدام الذكاء الاصطناعي تُمنح الأولوية؟", "answer": "نقيّم كل مرشح على ثلاثة محاور: قيمة العمل، وجاهزية البيانات، ومخاطر التنفيذ. أفضل مشروع أول هو ما يحمل قيمة عالية ويعمل على بيانات تملكونها بالفعل ويتسامح مع دقة غير كاملة بوجود خطوة مراجعة بشرية. والمكسب السريع الذي يُطلق خلال 2–3 أشهر يولّد الزخم الداخلي الذي تحتاجه المبادرات الأكبر." },
+        { "question": "هل نحتاج إلى علماء بيانات لدينا لتبنّي الذكاء الاصطناعي؟", "answer": "ليس بالضرورة. الحلول المبنية على واجهات LLM يمكن أن يبنيها ويشغّلها مهندسو برمجيات عاديون، وهنا ينبغي أن تبدأ معظم الشركات. أما النماذج التنبؤية المخصصة فتتطلب مهارات علم بيانات يمكن التعاقد عليها لمرحلة البناء — ويحدد تدقيق الجاهزية بدقة أي المهارات تتطلبها خارطة طريقكم." },
+        { "question": "كم يستغرق المشروع الاستراتيجي وكم يكلّف؟", "answer": "يستغرق المشروع النموذجي 3–6 أسابيع حسب حجم الشركة وعدد الأقسام المعنية. وتكلفته جزء صغير من تكلفة مشروع ذكاء اصطناعي فاشل واحد — وهو بالضبط ما وُجد لمنعه. وتحصلون على سعر ثابت بنطاق محدد بعد مكالمة أولى مجانية." },
+        { "question": "هل نبني ذكاء اصطناعياً مخصصاً أم نشتري حلاً جاهزاً؟", "answer": "اشتروا عندما تكون المشكلة عامة — التفريغ الصوتي أو OCR أو المحادثة القياسية — لأن الواجهات التجارية أرخص وأفضل من أي شيء ستبنونه. وابنوا عندما تخلق بياناتكم الخاصة ميزة حقيقية لا يستطيع المنافسون نسخها. وتستقر معظم الشركات على حل هجين: نموذج LLM تجاري موصول ببياناتها عبر الاسترجاع، وهو أرخص بكثير من تدريب أي نموذج." },
+        { "question": "كيف تقيسون العائد على الاستثمار في مشاريع الذكاء الاصطناعي؟", "answer": "نقيس العملية الحالية أولاً — الساعات المبذولة ومعدلات الخطأ وأزمنة الدورة — لأنه من دون خط أساس لا يستطيع أحد إثبات القيمة لاحقاً. ومكاسب الأتمتة النموذجية تتراوح بين 20% و60% توفيراً في الوقت على العملية المستهدفة. وتنص دراسة الجدوى على النطاق المتوقع وطريقة القياس قبل بدء أي تطوير." },
+        { "question": "هل بياناتنا جيدة بما يكفي للذكاء الاصطناعي؟", "answer": "يعتمد ذلك كلياً على حالة الاستخدام. حلول المستندات والمحادثة المبنية على LLM تحتاج بيانات تدريب قليلة أو لا تحتاجها أصلاً — فهي تعمل على مستندات تملكونها بالفعل. أما النماذج التنبؤية فتحتاج آلاف الأمثلة التاريخية النظيفة؛ وإن لم تكن موجودة بعد، يصبح جمع البيانات المرحلة الأولى من خارطة الطريق لا سبباً للتخلي عن الفكرة." },
+        { "question": "ماذا عن قانون الذكاء الاصطناعي الأوروبي والامتثال؟", "answer": "يصنّف القانون الأنظمة حسب درجات الخطورة، ومعظم تطبيقات الأعمال تقع في فئة الخطر الأدنى أو المحدود التي تتطلب أساساً تدابير شفافية. أما حالات الاستخدام التي تمسّ قرارات الموارد البشرية أو التصنيف الائتماني أو القياسات الحيوية فتُعد عالية الخطورة وتحمل التزامات توثيق وإشراف صارمة. نصنّف كل حالة استخدام أثناء التقييم بحيث تكون تكلفة الامتثال جزءاً من دراسة الجدوى لا مفاجأة." },
+        { "question": "متى تنصحون بعدم استخدام الذكاء الاصطناعي؟", "answer": "عندما يحل نظام قائم على القواعد المشكلة بتكلفة أقل، أو عندما لا توجد البيانات التي سيحتاجها النموذج، أو عندما لا تحتمل العملية أي خطأ ولا تتيح مجالاً للمراجعة البشرية. نحو ربع حالات الاستخدام التي نقيّمها ينتهي بهذه التوصية — فقول لا مبكراً هو أرخص نتيجة يمكن أن يقدمها مستشار." }
+      ],
+      "technologies": [
+        { "icon": "openai", "name": "OpenAI" },
+        { "icon": "anthropic", "name": "Anthropic Claude" },
+        { "icon": "azure", "name": "Azure AI" },
+        { "icon": "aws", "name": "AWS Bedrock" },
+        { "icon": "googlecloud", "name": "Google Vertex AI" },
+        { "icon": "huggingface", "name": "Hugging Face" },
+        { "icon": "langchain", "name": "LangChain" }
+      ]
+    }
+  }
+}

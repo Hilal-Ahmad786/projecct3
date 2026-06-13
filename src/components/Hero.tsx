@@ -91,7 +91,7 @@ function CountUpStat({ value, label }: { value: string; label: string }) {
   const count = useCountUp(target, prefersReducedMotion ? 0 : 2000, isInView)
 
   return (
-    <div ref={ref} className="text-center sm:text-left">
+    <div ref={ref} className="text-center sm:text-start">
       <motion.div
         className="text-2xl font-light text-gray-900 mb-1"
         style={{ willChange: 'transform', perspective: '400px' }}
@@ -239,7 +239,7 @@ export default function Hero() {
               opacity: prefersReducedMotion ? 1 : parallaxOpacity,
               willChange: 'transform, opacity',
             }}
-            className={`space-y-8 ${dir === 'rtl' ? 'lg:order-2' : ''}`}
+            className="space-y-8"
           >
             {/* Overline */}
             <motion.div
@@ -381,7 +381,7 @@ export default function Hero() {
             initial={{ opacity: 0, x: dir === 'rtl' ? -32 : 32 }}
             animate={{ opacity: mounted ? 1 : 0, x: mounted ? 0 : (dir === 'rtl' ? -32 : 32) }}
             transition={prefersReducedMotion ? { duration: 0 } : { ...smoothSpring, delay: 0.35 }}
-            className={`relative ${dir === 'rtl' ? 'lg:order-1' : ''}`}
+            className="relative"
           >
             <HeroRightEnhanced />
           </motion.div>

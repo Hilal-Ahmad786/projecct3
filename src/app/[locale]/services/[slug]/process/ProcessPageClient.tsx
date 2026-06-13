@@ -1,6 +1,7 @@
 'use client';
 
 import { motion, useScroll, useTransform } from 'framer-motion';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import { toHeritageHex } from '@/lib/heritage-accents';
 import LocalizedLink from '@/components/LocalizedLink';
 import { useRef } from 'react';
@@ -118,18 +119,12 @@ export default function ProcessPageClient({
 
         {/* Breadcrumb - Outside fading container */}
         <div className="container mx-auto px-4 relative z-20 mb-8">
-          <motion.nav
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6 }}
-            className="flex items-center gap-2 text-sm text-gray-400"
-          >
-            <LocalizedLink href="/services" className="hover:text-gray-900 transition-colors">{t('services.detail.breadcrumb.services')}</LocalizedLink>
-            <span className="text-gray-300">/</span>
-            <LocalizedLink href={`/services/${serviceSlug}`} className="hover:text-gray-900 transition-colors">{serviceName}</LocalizedLink>
-            <span className="text-gray-300">/</span>
-            <span className="text-gray-900">{t('services.detail.breadcrumb.process')}</span>
-          </motion.nav>
+          <Breadcrumbs items={[
+            { label: t('navbar.home') as string, href: '/' },
+            { label: t('services.detail.breadcrumb.services') as string, href: '/services' },
+            { label: serviceName, href: `/services/${serviceSlug}` },
+            { label: t('services.detail.breadcrumb.process') as string },
+          ]} />
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
