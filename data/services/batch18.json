@@ -1,0 +1,436 @@
+{
+  "multi-tenant-architecture": {
+    "en": {
+      "name": "Multi-Tenant Architecture",
+      "shortDescription": "Design and implement scalable multi-tenant architectures.",
+      "fullDescription": "Building software for multiple distinct organizations requires a specialized architectural approach. Our Multi-Tenant Architecture consulting and development services focus on designing systems where a single instance of software serves multiple tenants (customers), while strictly isolating their data and configurations. We help you choose the right isolation strategy—whether it's separate databases per tenant, separate schemas, or row-level security within a shared table—based on your compliance, performance, and cost requirements. By optimizing shared infrastructure, we drastically reduce your operational overhead while ensuring enterprise-grade security and scalability.",
+      "features": [
+        "Data Isolation Strategies (Row-Level, Schema-Level, DB-Level)",
+        "Tenant-Aware API Routing & Authentication",
+        "Shared vs. Dedicated Infrastructure Provisioning",
+        "Cross-Tenant Data Aggregation & Analytics",
+        "Per-Tenant Customization (Themes, Workflows)",
+        "Automated Tenant Provisioning & Teardown"
+      ],
+      "benefits": [
+        "Significantly Lower Infrastructure Costs",
+        "Simplified Maintenance (Update once, deploy to all)",
+        "Strict Data Privacy & Security Compliance",
+        "Scalable Resource Allocation",
+        "Faster Time-to-Market for New Features"
+      ],
+      "content": {
+        "process": [
+          { "title": "Requirement Analysis", "description": "Evaluating data privacy laws, expected load, and customization needs to select the right isolation model." },
+          { "title": "Database Design", "description": "Architecting the PostgreSQL schema to support row-level security or schema-per-tenant designs." },
+          { "title": "API & Middleware Development", "description": "Building tenant-aware routing that automatically injects tenant context into every request." },
+          { "title": "Infrastructure as Code", "description": "Using Terraform/Kubernetes to manage shared resources and spin up dedicated instances when required." },
+          { "title": "Security Auditing", "description": "Rigorous penetration testing to ensure zero data leakage between tenants." }
+        ],
+        "technologies": [
+          "PostgreSQL (Row-Level Security / Schemas)",
+          "Node.js / Go",
+          "Redis (Tenant-Scoped Caching)",
+          "Kubernetes",
+          "AWS / Google Cloud",
+          "Terraform"
+        ],
+        "faq": [
+          { "question": "What is the best way to isolate tenant data?", "answer": "It depends on your scale and compliance needs. 'Shared DB, Shared Schema' with Row-Level Security is the most cost-effective and easiest to maintain. 'Shared DB, Separate Schema' offers a good middle ground. 'Separate DB per Tenant' is the most expensive but often required for strict enterprise compliance (e.g., HIPAA/SOC2)." },
+          { "question": "How do you handle custom features for specific tenants?", "answer": "We build a core system with feature flags and configuration overrides. This allows you to toggle specific features, UI themes, or custom workflows on a per-tenant basis without branching your main codebase." }
+        ]
+      },
+      "metaTitle": "Multi-Tenant Architecture Consulting | Scalable Systems",
+      "metaDescription": "Design secure, scalable multi-tenant architectures. We specialize in tenant isolation, shared infrastructure, and database design for enterprise software."
+    },
+    "tr": {
+      "name": "Çok Kiracılı (Multi-Tenant) Mimari",
+      "shortDescription": "Ölçeklenebilir çok kiracılı mimariler tasarlayın ve uygulayın.",
+      "fullDescription": "Birden fazla farklı kuruluş için yazılım oluşturmak, özel bir mimari yaklaşım gerektirir. Çok Kiracılı (Multi-Tenant) Mimari danışmanlık ve geliştirme hizmetlerimiz, yazılımın tek bir örneğinin birden fazla kiracıya (müşteriye) hizmet verdiği ve aynı zamanda verilerini ve yapılandırmalarını kesin olarak izole ettiği sistemler tasarlamaya odaklanır. Uyumluluk, performans ve maliyet gereksinimlerinize bağlı olarak, kiracı başına ayrı veritabanları, ayrı şemalar veya paylaşılan bir tablo içinde satır düzeyinde güvenlik (row-level security) gibi doğru izolasyon stratejisini seçmenize yardımcı oluyoruz. Paylaşılan altyapıyı optimize ederek, kurumsal düzeyde güvenlik ve ölçeklenebilirlik sağlarken işletme yükünüzü önemli ölçüde azaltıyoruz.",
+      "features": [
+        "Veri İzolasyon Stratejileri (Satır Düzeyi, Şema Düzeyi, DB Düzeyi)",
+        "Kiracı Farkındalıklı API Yönlendirme ve Kimlik Doğrulama",
+        "Paylaşılan ve Özel Altyapı Sağlama",
+        "Kiracılar Arası Veri Toplama ve Analitik",
+        "Kiracı Başına Özelleştirme (Temalar, İş Akışları)",
+        "Otomatik Kiracı Sağlama (Provisioning) ve Kapatma"
+      ],
+      "benefits": [
+        "Önemli Ölçüde Daha Düşük Altyapı Maliyetleri",
+        "Basitleştirilmiş Bakım (Bir kez güncelleyin, herkese dağıtın)",
+        "Sıkı Veri Gizliliği ve Güvenlik Uyumluluğu",
+        "Ölçeklenebilir Kaynak Tahsisi",
+        "Yeni Özellikler İçin Pazara Çıkış Süresini Hızlandırma"
+      ],
+      "content": {
+        "process": [
+          { "title": "Gereksinim Analizi", "description": "Doğru izolasyon modelini seçmek için veri gizliliği yasalarını, beklenen yükü ve özelleştirme ihtiyaçlarını değerlendirme." },
+          { "title": "Veritabanı Tasarımı", "description": "Satır düzeyinde güvenliği veya kiracı başına şema tasarımlarını desteklemek için PostgreSQL şemasını oluşturma." },
+          { "title": "API ve Ara Yazılım Geliştirme", "description": "Her isteğe otomatik olarak kiracı bağlamını (context) enjekte eden kiracı farkındalıklı yönlendirme oluşturma." },
+          { "title": "Kod Olarak Altyapı (IaC)", "description": "Paylaşılan kaynakları yönetmek ve gerektiğinde özel örnekler (instances) oluşturmak için Terraform/Kubernetes kullanma." },
+          { "title": "Güvenlik Denetimi", "description": "Kiracılar arasında sıfır veri sızıntısı sağlamak için titiz sızma testleri." }
+        ],
+        "technologies": [
+          "PostgreSQL (Satır Düzeyinde Güvenlik / Şemalar)",
+          "Node.js / Go",
+          "Redis (Kiracı Kapsamlı Önbelleğe Alma)",
+          "Kubernetes",
+          "AWS / Google Cloud",
+          "Terraform"
+        ],
+        "faq": [
+          { "question": "Kiracı verilerini izole etmenin en iyi yolu nedir?", "answer": "Ölçek ve uyumluluk ihtiyaçlarınıza bağlıdır. Satır Düzeyinde Güvenlik ile 'Paylaşılan DB, Paylaşılan Şema', en uygun maliyetli ve bakımı en kolay olanıdır. 'Paylaşılan DB, Ayrı Şema' iyi bir orta yol sunar. 'Kiracı Başına Ayrı DB' en pahalı olanıdır ancak genellikle katı kurumsal uyumluluk (örneğin, HIPAA/SOC2) için gereklidir." },
+          { "question": "Belirli kiracılar için özel özellikleri nasıl ele alıyorsunuz?", "answer": "Özellik geçişleri (feature flags) ve yapılandırma geçersiz kılmaları (overrides) ile çekirdek bir sistem oluşturuyoruz. Bu, ana kod tabanınızı dallandırmadan belirli özellikleri, kullanıcı arayüzü temalarını veya özel iş akışlarını kiracı bazında açıp kapatmanıza olanak tanır." }
+        ]
+      },
+      "metaTitle": "Çok Kiracılı (Multi-Tenant) Mimari Danışmanlığı",
+      "metaDescription": "Güvenli, ölçeklenebilir çok kiracılı mimariler tasarlayın. Kurumsal yazılımlar için kiracı izolasyonu, paylaşılan altyapı ve veritabanı tasarımında uzmanız."
+    },
+    "de": {
+      "name": "Multi-Tenant-Architektur",
+      "shortDescription": "Entwurf und Implementierung skalierbarer mandantenfähiger (Multi-Tenant) Architekturen.",
+      "fullDescription": "Die Entwicklung von Software für mehrere unterschiedliche Organisationen erfordert einen speziellen Architekturansatz. Unsere Beratungs- und Entwicklungsdienste für Multi-Tenant-Architekturen konzentrieren sich auf den Entwurf von Systemen, bei denen eine einzige Softwareinstanz mehrere Mandanten (Kunden) bedient, während deren Daten und Konfigurationen streng isoliert bleiben. Wir helfen Ihnen bei der Auswahl der richtigen Isolationsstrategie – ob separate Datenbanken pro Mandant, separate Schemata oder Row-Level-Security innerhalb einer gemeinsamen Tabelle – basierend auf Ihren Compliance-, Leistungs- und Kostenanforderungen. Durch die Optimierung der gemeinsam genutzten Infrastruktur reduzieren wir Ihren Betriebsaufwand drastisch und gewährleisten gleichzeitig Sicherheit und Skalierbarkeit auf Unternehmensniveau.",
+      "features": [
+        "Datenisolationsstrategien (Row-Level, Schema-Level, DB-Level)",
+        "Mandantenfähiges (Tenant-Aware) API-Routing & Authentifizierung",
+        "Bereitstellung gemeinsamer vs. dedizierter Infrastruktur",
+        "Mandantenübergreifende Datenaggregation & Analytik",
+        "Mandantenspezifische Anpassung (Themes, Workflows)",
+        "Automatisiertes Tenant-Provisioning & Teardown"
+      ],
+      "benefits": [
+        "Deutlich geringere Infrastrukturkosten",
+        "Vereinfachte Wartung (Einmal updaten, für alle bereitstellen)",
+        "Strenge Einhaltung von Datenschutz & Sicherheit",
+        "Skalierbare Ressourcenzuweisung",
+        "Schnellere Markteinführung neuer Funktionen"
+      ],
+      "content": {
+        "process": [
+          { "title": "Anforderungsanalyse", "description": "Bewertung von Datenschutzgesetzen, erwarteter Last und Anpassungsbedürfnissen zur Wahl des richtigen Isolationsmodells." },
+          { "title": "Datenbank-Design", "description": "Architektur des PostgreSQL-Schemas zur Unterstützung von Row-Level-Security oder Schema-per-Tenant-Designs." },
+          { "title": "API- & Middleware-Entwicklung", "description": "Aufbau eines mandantenfähigen Routings, das automatisch den Tenant-Kontext in jeden Request injiziert." },
+          { "title": "Infrastructure as Code", "description": "Nutzung von Terraform/Kubernetes zur Verwaltung gemeinsamer Ressourcen und Bereitstellung dedizierter Instanzen." },
+          { "title": "Sicherheitsprüfung", "description": "Strenge Penetrationstests, um sicherzustellen, dass keine Daten zwischen Mandanten durchsickern." }
+        ],
+        "technologies": [
+          "PostgreSQL (Row-Level Security / Schemas)",
+          "Node.js / Go",
+          "Redis (Mandantenbezogenes Caching)",
+          "Kubernetes",
+          "AWS / Google Cloud",
+          "Terraform"
+        ],
+        "faq": [
+          { "question": "Was ist der beste Weg, um Mandantendaten zu isolieren?", "answer": "Das hängt von Ihrer Skalierung und Compliance ab. 'Gemeinsame DB, gemeinsames Schema' mit Row-Level-Security ist am kostengünstigsten. 'Gemeinsame DB, separates Schema' ist ein guter Mittelweg. 'Separate DB pro Mandant' ist teuer, aber oft für strenge Compliance (z.B. HIPAA) erforderlich." },
+          { "question": "Wie gehen Sie mit individuellen Funktionen für bestimmte Mandanten um?", "answer": "Wir bauen ein Kernsystem mit Feature-Flags. So können Sie spezifische Funktionen, Themes oder Workflows pro Mandant aktivieren, ohne die Codebasis zu verzweigen." }
+        ]
+      },
+      "metaTitle": "Multi-Tenant-Architektur Beratung | Mandantenfähige Systeme",
+      "metaDescription": "Entwerfen Sie sichere, skalierbare Multi-Tenant-Architekturen. Spezialisiert auf Mandantenisolation, gemeinsame Infrastruktur und Datenbankdesign."
+    },
+    "ur": {
+      "name": "ملٹی کرایہ دار فن تعمیر",
+      "shortDescription": "اسکیل ایبل ملٹی ٹین کرایہ دار فن تعمیرات کو ڈیزائن اور نافذ کریں۔",
+      "fullDescription": "متعدد الگ الگ تنظیموں کے لیے سافٹ ویئر بنانے کے لیے ایک خصوصی تعمیراتی نقطہ نظر کی ضرورت ہوتی ہے۔ ہماری ملٹی ٹین کرایہ دار آرکیٹیکچر کنسلٹنگ اور ڈیولپمنٹ سروسز ایسے سسٹمز کو ڈیزائن کرنے پر توجہ مرکوز کرتی ہیں جہاں سافٹ ویئر کی ایک مثال متعدد کرایہ داروں (گاہکوں) کو ان کے ڈیٹا اور کنفیگریشنز کو سختی سے الگ کرتے ہوئے پیش کرتی ہے۔ ہم صحیح آئسولیشن حکمت عملی کا انتخاب کرنے میں آپ کی مدد کرتے ہیں—چاہے وہ کرایہ دار کے لیے الگ ڈیٹا بیس ہوں، الگ سکیمیں ہوں، یا مشترکہ جدول کے اندر قطار کی سطح کی سیکیورٹی—آپ کی تعمیل، کارکردگی، اور لاگت کی ضروریات کی بنیاد پر۔ مشترکہ بنیادی ڈھانچے کو بہتر بنا کر، ہم انٹرپرائز گریڈ سیکیورٹی اور اسکیل ایبلٹی کو یقینی بناتے ہوئے آپ کے آپریشنل اوور ہیڈ کو کافی حد تک کم کرتے ہیں۔",
+      "features": [
+        "ڈیٹا آئسولیشن کی حکمت عملی (رو-لیول، اسکیما لیول، ڈی بی لیول)",
+        "کرایہ دار سے باخبر API روٹنگ اور توثیق",
+        "مشترکہ بمقابلہ وقف انفراسٹرکچر کی فراہمی",
+        "کراس ٹین کرایہ دار ڈیٹا جمع اور تجزیات",
+        "کرایہ دار کے لحاظ سے تخصیص (موضوعات، ورک فلوز)",
+        "خودکار کرایہ دار کی فراہمی اور ٹیر ڈاؤن"
+      ],
+      "benefits": [
+        "بنیادی ڈھانچے کے اخراجات میں نمایاں طور پر کم",
+        "آسان دیکھ بھال (ایک بار اپ ڈیٹ کریں، سب پر تعینات کریں)",
+        "ڈیٹا کی رازداری اور سلامتی کی سخت تعمیل",
+        "قابل توسیع وسائل کی تقسیم",
+        "نئی خصوصیات کے لیے مارکیٹ میں تیزی سے وقت"
+      ],
+      "content": {
+        "process": [
+          { "title": "ضرورت کا تجزیہ", "description": "الگ تھلگ ہونے کے صحیح ماڈل کو منتخب کرنے کے لیے ڈیٹا کی رازداری کے قوانین، متوقع بوجھ، اور تخصیص کی ضروریات کا اندازہ لگانا۔" },
+          { "title": "ڈیٹا بیس ڈیزائن", "description": "قطار کی سطح کی سیکیورٹی یا سکیمہ فی کرایہ دار ڈیزائن کی حمایت کرنے کے لیے PostgreSQL اسکیما کو آرکیٹیکٹ کرنا۔" },
+          { "title": "API اور مڈل ویئر کی ترقی", "description": "ٹینینٹ سے آگاہ روٹنگ کی تعمیر جو خود بخود کرایہ دار کے تناظر کو ہر درخواست میں داخل کرتی ہے۔" },
+          { "title": "انفراسٹرکچر بطور کوڈ", "description": "مشترکہ وسائل کا نظم کرنے اور ضرورت پڑنے پر وقف شدہ مثالوں کو گھمانے کے لیے Terraform/Kubernetes کا استعمال کرنا۔" },
+          { "title": "سیکیورٹی آڈیٹنگ", "description": "کرایہ داروں کے درمیان ڈیٹا کے رساو کو یقینی بنانے کے لیے سخت دخول کی جانچ۔" }
+        ],
+        "technologies": [
+          "PostgreSQL (قطار کی سطح کی حفاظت / اسکیمیں)",
+          "Node.js / Go",
+          "Redis (کرایہ دار کے دائرہ کار کیشنگ)",
+          "Kubernetes",
+          "AWS / Google Cloud",
+          "Terraform"
+        ],
+        "faq": [
+          { "question": "کرایہ دار کے ڈیٹا کو الگ کرنے کا بہترین طریقہ کیا ہے؟", "answer": "یہ آپ کے پیمانے اور تعمیل کی ضروریات پر منحصر ہے۔ قطار کی سطح کی سیکیورٹی کے ساتھ 'Shared DB, Shared Schema' سب سے زیادہ سرمایہ کاری اور برقرار رکھنے میں آسان ہے۔ 'Shared DB, Separate Schema' درمیانی بنیاد پیش کرتا ہے۔ 'علیحدہ ڈی بی فی ٹین کرایہ دار' سب سے مہنگا ہے لیکن اکثر انٹرپرائز کی سخت تعمیل (مثال کے طور پر، HIPAA/SOC2) کے لیے درکار ہوتا ہے۔" },
+          { "question": "آپ مخصوص کرایہ داروں کے لیے اپنی مرضی کی خصوصیات کو کیسے ہینڈل کرتے ہیں؟", "answer": "ہم فیچر فلیگس اور کنفیگریشن اوور رائیڈز کے ساتھ ایک بنیادی نظام بناتے ہیں۔ اس سے آپ اپنے مرکزی کوڈ بیس کو برانچ کیے بغیر کسی مخصوص خصوصیات، UI تھیمز، یا اپنی مرضی کے مطابق ورک فلوز کو کرایہ دار کی بنیاد پر ٹوگل کر سکتے ہیں۔" }
+        ]
+      },
+      "metaTitle": "ملٹی ٹین کرایہ دار فن تعمیر مشاورتی | توسیع پذیر نظام",
+      "metaDescription": "محفوظ، اسکیل ایبل ملٹی ٹیننٹ فن تعمیرات کو ڈیزائن کریں۔ ہم انٹرپرائز سافٹ ویئر کے لیے کرایہ دار کو الگ تھلگ کرنے، مشترکہ انفراسٹرکچر، اور ڈیٹا بیس ڈیزائن میں مہارت رکھتے ہیں۔"
+    },
+    "ar": {
+      "name": "البنية متعددة المستأجرين (Multi-Tenant)",
+      "shortDescription": "تصميم وتنفيذ بنيات متعددة المستأجرين قابلة للتطوير.",
+      "fullDescription": "يتطلب بناء برامج لمؤسسات متميزة ومتعددة نهجًا معماريًا متخصصًا. تركز خدماتنا الاستشارية وتطوير البنية متعددة المستأجرين (Multi-Tenant) على تصميم أنظمة يخدم فيها مثيل واحد من البرنامج مستأجرين (عملاء) متعددين، مع عزل بياناتهم وتكويناتهم بشكل صارم. نساعدك على اختيار استراتيجية العزل الصحيحة — سواء كانت قواعد بيانات منفصلة لكل مستأجر، أو مخططات (Schemas) منفصلة، أو أمان على مستوى الصف (Row-level security) داخل جدول مشترك — بناءً على متطلبات الامتثال والأداء والتكلفة الخاصة بك. من خلال تحسين البنية التحتية المشتركة، نقوم بتقليل النفقات التشغيلية الخاصة بك بشكل كبير مع ضمان الأمان وقابلية التوسع على مستوى المؤسسات.",
+      "features": [
+        "استراتيجيات عزل البيانات (مستوى الصف، مستوى المخطط، مستوى قاعدة البيانات)",
+        "توجيه API والمصادقة المدرك للمستأجر (Tenant-Aware)",
+        "توفير البنية التحتية المشتركة مقابل المخصصة",
+        "تجميع البيانات والتحليلات عبر المستأجرين",
+        "تخصيص لكل مستأجر (سمات، سير عمل)",
+        "توفير آلي للمستأجر وإلغاؤه"
+      ],
+      "benefits": [
+        "تكاليف بنية تحتية أقل بكثير",
+        "صيانة مبسطة (قم بالتحديث مرة واحدة، وانشر للجميع)",
+        "امتثال صارم لخصوصية البيانات والأمان",
+        "تخصيص الموارد القابل للتطوير",
+        "وقت أسرع لطرح ميزات جديدة في السوق"
+      ],
+      "content": {
+        "process": [
+          { "title": "تحليل المتطلبات", "description": "تقييم قوانين خصوصية البيانات، والحمل المتوقع، واحتياجات التخصيص لاختيار نموذج العزل المناسب." },
+          { "title": "تصميم قاعدة البيانات", "description": "تصميم مخطط PostgreSQL لدعم الأمان على مستوى الصف أو تصميم مخطط لكل مستأجر." },
+          { "title": "تطوير الواجهة وبرمجيات الوسيطة (Middleware)", "description": "بناء توجيه مدرك للمستأجر يقوم تلقائيًا بحقن سياق المستأجر في كل طلب." },
+          { "title": "البنية التحتية ككود (IaC)", "description": "استخدام Terraform / Kubernetes لإدارة الموارد المشتركة وإنشاء مثيلات مخصصة عند الحاجة." },
+          { "title": "تدقيق الأمان", "description": "اختبار اختراق صارم لضمان عدم وجود تسرب للبيانات بين المستأجرين." }
+        ],
+        "technologies": [
+          "PostgreSQL (أمان مستوى الصف / المخططات)",
+          "Node.js / Go",
+          "Redis (التخزين المؤقت على مستوى المستأجر)",
+          "Kubernetes",
+          "AWS / Google Cloud",
+          "Terraform"
+        ],
+        "faq": [
+          { "question": "ما هي أفضل طريقة لعزل بيانات المستأجر؟", "answer": "يعتمد ذلك على احتياجات التوسع والامتثال لديك. 'قاعدة بيانات مشتركة، مخطط مشترك' مع الأمان على مستوى الصف هو الأكثر فعالية من حيث التكلفة والأسهل في الصيانة. 'قاعدة بيانات مشتركة، مخطط منفصل' يوفر حلاً وسطًا جيدًا. 'قاعدة بيانات منفصلة لكل مستأجر' هي الأكثر تكلفة ولكنها غالبًا ما تكون مطلوبة للامتثال الصارم للمؤسسات (مثل HIPAA / SOC2)." },
+          { "question": "كيف تتعامل مع الميزات المخصصة لمستأجرين معينين؟", "answer": "نحن نبني نظامًا أساسيًا مع تبديل الميزات (Feature flags) وتجاوزات التكوين. يتيح لك ذلك تبديل ميزات معينة، أو سمات واجهة المستخدم، أو تدفقات العمل المخصصة على أساس كل مستأجر دون تفريع قاعدة التعليمات البرمجية الرئيسية (Codebase) الخاصة بك." }
+        ]
+      },
+      "metaTitle": "استشارات البنية متعددة المستأجرين | أنظمة قابلة للتطوير",
+      "metaDescription": "تصميم بنيات متعددة المستأجرين آمنة وقابلة للتطوير. نحن متخصصون في عزل المستأجر، والبنية التحتية المشتركة، وتصميم قواعد البيانات لبرامج المؤسسات."
+    }
+  },
+  "multi-tenant-saas-architecture": {
+    "en": {
+      "name": "Multi-Tenant SaaS Architecture",
+      "shortDescription": "Create SaaS applications with tenant isolation, SSO, and automated billing.",
+      "fullDescription": "Launching a successful B2B Software-as-a-Service (SaaS) product requires more than just good features; it requires a rock-solid, scalable foundation. Our Multi-Tenant SaaS Architecture services provide the blueprint and implementation for your entire product. We build systems that handle complex organizational structures (teams within companies), granular Role-Based Access Control (RBAC), Single Sign-On (SSO/SAML) for enterprise clients, and automated usage-based billing logic. Using modern frameworks like Next.js and robust backends, we deliver a SaaS platform that allows you to confidently onboard thousands of businesses without compromising security or performance.",
+      "features": [
+        "Enterprise SSO (SAML, OAuth) via Auth0 or WorkOS",
+        "Hierarchical RBAC & Team Management",
+        "Automated Subscription & Usage-Based Billing (Stripe)",
+        "Self-Service Admin & Billing Portals for Tenants",
+        "White-Labeling & Custom Domain Support",
+        "Robust Tenant Data Isolation & Soft Deletes"
+      ],
+      "benefits": [
+        "Rapid Onboarding of Enterprise Clients (SSO ready)",
+        "Automated Revenue Operations & Tax Compliance",
+        "Zero Data Leakage Between Rival Customers",
+        "Empowered Tenants (Self-Service reduces support tickets)",
+        "Scalable Foundation Designed for High Growth"
+      ],
+      "content": {
+        "process": [
+          { "title": "Data Modeling", "description": "Designing the database schema to ensure every table is securely tied to a Tenant ID." },
+          { "title": "Identity & Access Management", "description": "Implementing Auth0 or NextAuth for secure, cross-tenant identity management and RBAC." },
+          { "title": "Billing Logic", "description": "Integrating Stripe for complex tier-based, metered, or per-seat billing cycles." },
+          { "title": "Core SaaS Features", "description": "Building the essential non-functional requirements: audit logs, webhooks, and API keys." },
+          { "title": "Frontend Implementation", "description": "Developing a responsive Next.js dashboard with a unified UI component library." }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Node.js / NestJS",
+          "PostgreSQL / Prisma",
+          "Stripe (Billing)",
+          "Auth0 / WorkOS (SSO)",
+          "AWS / Vercel"
+        ],
+        "faq": [
+          { "question": "Can you implement usage-based (metered) billing?", "answer": "Yes. We deeply integrate with Stripe to track API calls, storage used, or active seats, and automatically invoice the tenant at the end of the billing cycle based on their exact usage." },
+          { "question": "Enterprise clients want SSO (Single Sign-On). Is that included?", "answer": "Yes. We can integrate enterprise identity providers using WorkOS or Auth0, allowing your clients to log into your SaaS using their existing Okta, Azure AD, or Google Workspace credentials." }
+        ]
+      },
+      "metaTitle": "SaaS Architecture Development | B2B Multi-Tenant Systems",
+      "metaDescription": "Build a scalable B2B SaaS platform. We provide expert multi-tenant architecture, Stripe billing integration, enterprise SSO, and tenant isolation."
+    },
+    "tr": {
+      "name": "Çok Kiracılı (Multi-Tenant) SaaS Mimarisi",
+      "shortDescription": "Kiracı izolasyonu, SSO ve otomatik faturalandırma ile SaaS uygulamaları oluşturun.",
+      "fullDescription": "Başarılı bir B2B Hizmet Olarak Yazılım (SaaS) ürünü piyasaya sürmek, iyi özelliklerden daha fazlasını gerektirir; kaya gibi sağlam, ölçeklenebilir bir temel gerektirir. Çok Kiracılı SaaS Mimarisi hizmetlerimiz, tüm ürününüz için plan ve uygulama sağlar. Karmaşık organizasyonel yapıları (şirket içindeki ekipler), ayrıntılı Rol Tabanlı Erişim Kontrolünü (RBAC), kurumsal müşteriler için Tek Oturum Açma (SSO/SAML) sistemini ve otomatik kullanıma dayalı faturalandırma mantığını işleyen sistemler oluşturuyoruz. Next.js gibi modern çerçeveler ve sağlam arka uçlar kullanarak, güvenlik veya performanstan ödün vermeden binlerce işletmeyi güvenle sisteme dahil etmenize olanak tanıyan bir SaaS platformu sunuyoruz.",
+      "features": [
+        "Auth0 veya WorkOS aracılığıyla Kurumsal SSO (SAML, OAuth)",
+        "Hiyerarşik RBAC ve Ekip Yönetimi",
+        "Otomatik Abonelik ve Kullanıma Dayalı Faturalandırma (Stripe)",
+        "Kiracılar için Self Servis Yönetici ve Faturalandırma Portalları",
+        "Beyaz Etiketleme (White-Labeling) ve Özel Alan Adı Desteği",
+        "Güçlü Kiracı Veri İzolasyonu ve Geçici Silme (Soft Deletes)"
+      ],
+      "benefits": [
+        "Kurumsal Müşterilerin Hızlı İşe Alımı (SSO hazır)",
+        "Otomatik Gelir Operasyonları ve Vergi Uyumluluğu",
+        "Rakip Müşteriler Arasında Sıfır Veri Sızıntısı",
+        "Güçlendirilmiş Kiracılar (Self Servis destek biletlerini azaltır)",
+        "Yüksek Büyüme İçin Tasarlanmış Ölçeklenebilir Temel"
+      ],
+      "content": {
+        "process": [
+          { "title": "Veri Modelleme", "description": "Her tablonun güvenli bir şekilde bir Kiracı Kimliğine (Tenant ID) bağlı olmasını sağlamak için veritabanı şemasını tasarlama." },
+          { "title": "Kimlik ve Erişim Yönetimi", "description": "Güvenli, kiracılar arası kimlik yönetimi ve RBAC için Auth0 veya NextAuth'u uygulama." },
+          { "title": "Faturalandırma Mantığı", "description": "Karmaşık kademe tabanlı, ölçülü veya koltuk başına faturalandırma döngüleri için Stripe'ı entegre etme." },
+          { "title": "Temel SaaS Özellikleri", "description": "Temel işlevsel olmayan gereksinimleri oluşturma: denetim günlükleri (audit logs), web kancaları (webhooks) ve API anahtarları." },
+          { "title": "Ön Uç Uygulaması", "description": "Birleştirilmiş bir UI bileşen kütüphanesi ile duyarlı bir Next.js panosu geliştirme." }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Node.js / NestJS",
+          "PostgreSQL / Prisma",
+          "Stripe (Faturalandırma)",
+          "Auth0 / WorkOS (SSO)",
+          "AWS / Vercel"
+        ],
+        "faq": [
+          { "question": "Kullanıma dayalı (ölçülü) faturalandırma uygulayabilir misiniz?", "answer": "Evet. API çağrılarını, kullanılan depolama alanını veya aktif koltukları izlemek için Stripe ile derinlemesine entegre oluyor ve faturalandırma döngüsünün sonunda kiracıya tam kullanımlarına göre otomatik olarak fatura kesiyoruz." },
+          { "question": "Kurumsal müşteriler SSO (Tek Oturum Açma) istiyor. Bu dahil mi?", "answer": "Evet. Müşterilerinizin mevcut Okta, Azure AD veya Google Workspace kimlik bilgilerini kullanarak SaaS'ınıza giriş yapmalarına olanak tanıyan WorkOS veya Auth0 kullanarak kurumsal kimlik sağlayıcılarını entegre edebiliriz." }
+        ]
+      },
+      "metaTitle": "SaaS Mimarisi Geliştirme | B2B Çok Kiracılı Sistemler",
+      "metaDescription": "Ölçeklenebilir bir B2B SaaS platformu oluşturun. Uzman çok kiracılı mimari, Stripe faturalandırma entegrasyonu, kurumsal SSO ve kiracı izolasyonu sağlıyoruz."
+    },
+    "de": {
+      "name": "Multi-Tenant SaaS-Architektur",
+      "shortDescription": "Erstellen Sie SaaS-Anwendungen mit Mandantenisolation, SSO und automatisierter Abrechnung.",
+      "fullDescription": "Die Einführung eines erfolgreichen B2B Software-as-a-Service (SaaS) Produkts erfordert mehr als nur gute Funktionen; es erfordert ein felsenfestes, skalierbares Fundament. Unsere Dienstleistungen für Multi-Tenant SaaS-Architekturen liefern den Bauplan und die Implementierung für Ihr gesamtes Produkt. Wir bauen Systeme, die komplexe Organisationsstrukturen (Teams innerhalb von Unternehmen), granulare rollenbasierte Zugriffskontrolle (RBAC), Single Sign-On (SSO/SAML) für Unternehmenskunden und automatisierte, nutzungsbasierte Abrechnungslogik verarbeiten. Mit modernen Frameworks wie Next.js und robusten Backends liefern wir eine SaaS-Plattform, die es Ihnen ermöglicht, Tausende von Unternehmen ohne Kompromisse bei Sicherheit oder Leistung an Bord zu holen.",
+      "features": [
+        "Enterprise SSO (SAML, OAuth) via Auth0 oder WorkOS",
+        "Hierarchische RBAC & Teamverwaltung",
+        "Automatisierte Abonnements & nutzungsbasierte Abrechnung (Stripe)",
+        "Self-Service Admin- & Rechnungsportale für Mandanten",
+        "White-Labeling & Custom Domain Support",
+        "Robuste Mandantendatenisolation & Soft Deletes"
+      ],
+      "benefits": [
+        "Schnelles Onboarding von Unternehmenskunden (SSO-ready)",
+        "Automatisierte Revenue Operations & Steuer-Compliance",
+        "Keine Datenlecks zwischen rivalisierenden Kunden",
+        "Gestärkte Mandanten (Self-Service reduziert Support-Tickets)",
+        "Skalierbares Fundament, konzipiert für hohes Wachstum"
+      ],
+      "content": {
+        "process": [
+          { "title": "Datenmodellierung", "description": "Entwurf des Datenbankschemas, um sicherzustellen, dass jede Tabelle sicher an eine Tenant ID gebunden ist." },
+          { "title": "Identity & Access Management", "description": "Implementierung von Auth0 zur sicheren, mandantenübergreifenden Identitätsverwaltung." },
+          { "title": "Abrechnungslogik", "description": "Integration von Stripe für komplexe, stufenbasierte oder nutzungsabhängige Abrechnungszyklen." },
+          { "title": "SaaS-Kernfunktionen", "description": "Entwicklung essenzieller Features: Audit-Logs, Webhooks und API-Schlüssel." },
+          { "title": "Frontend-Implementierung", "description": "Entwicklung eines responsiven Next.js Dashboards mit einer einheitlichen UI-Komponentenbibliothek." }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Node.js / NestJS",
+          "PostgreSQL / Prisma",
+          "Stripe (Abrechnung)",
+          "Auth0 / WorkOS (SSO)",
+          "AWS / Vercel"
+        ],
+        "faq": [
+          { "question": "Können Sie eine nutzungsbasierte Abrechnung implementieren?", "answer": "Ja. Wir integrieren Stripe tiefgehend, um API-Aufrufe, genutzten Speicher oder aktive Benutzer zu verfolgen, und stellen dem Mandanten am Ende des Zyklus automatisch eine genaue Rechnung." },
+          { "question": "Unternehmenskunden wünschen SSO (Single Sign-On). Ist das inbegriffen?", "answer": "Ja. Wir können Enterprise-Identity-Provider über WorkOS oder Auth0 integrieren, sodass sich Ihre Kunden mit ihren bestehenden Okta-, Azure AD- oder Google Workspace-Zugangsdaten bei Ihrer SaaS anmelden können." }
+        ]
+      },
+      "metaTitle": "SaaS-Architektur Entwicklung | B2B Multi-Tenant Systeme",
+      "metaDescription": "Bauen Sie eine skalierbare B2B-SaaS-Plattform. Wir bieten Multi-Tenant-Architektur, Stripe-Integration, Enterprise SSO und Mandantenisolation."
+    },
+    "ur": {
+      "name": "ملٹی ٹین کرایہ دار ساس آرکیٹیکچر",
+      "shortDescription": "کرایہ دار کی تنہائی، SSO، اور خودکار بلنگ کے ساتھ SaaS ایپلی کیشنز بنائیں۔",
+      "fullDescription": "B2B سافٹ ویئر-بطور-سروس (SaaS) پروڈکٹ کے کامیاب آغاز کے لیے صرف اچھی خصوصیات سے زیادہ کی ضرورت ہوتی ہے۔ اسے ایک چٹان کی طرح ٹھوس، قابل توسیع فاؤنڈیشن کی ضرورت ہے۔ ہماری ملٹی ٹین کرایہ دار ساس آرکیٹیکچر سروسز آپ کے پورے پروڈکٹ کے لیے بلیو پرنٹ اور نفاذ فراہم کرتی ہیں۔ ہم ایسے سسٹمز بناتے ہیں جو پیچیدہ تنظیمی ڈھانچے (کمپنیوں کے اندر ٹیمیں)، گرانولر رول بیسڈ ایکسیس کنٹرول (RBAC)، انٹرپرائز کلائنٹس کے لیے سنگل سائن آن (SSO/SAML)، اور خودکار استعمال پر مبنی بلنگ منطق کو ہینڈل کرتے ہیں۔ Next.js اور مضبوط بیک اینڈز جیسے جدید فریم ورکس کا استعمال کرتے ہوئے، ہم ایک SaaS پلیٹ فارم فراہم کرتے ہیں جو آپ کو سیکیورٹی یا کارکردگی پر سمجھوتہ کیے بغیر اعتماد کے ساتھ ہزاروں کاروباروں کو آن بورڈ کرنے کی اجازت دیتا ہے۔",
+      "features": [
+        "انٹرپرائز ایس ایس او (SAML، OAuth) بذریعہ Auth0 یا WorkOS",
+        "درجہ بندی والے RBAC اور ٹیم مینجمنٹ",
+        "خودکار رکنیت اور استعمال پر مبنی بلنگ (Stripe)",
+        "کرایہ داروں کے لیے سیلف سروس ایڈمن اور بلنگ پورٹلز",
+        "وائٹ لیبلنگ اور کسٹم ڈومین سپورٹ",
+        "مضبوط کرایہ دار کا ڈیٹا الگ تھلگ اور نرم حذف"
+      ],
+      "benefits": [
+        "انٹرپرائز کلائنٹس کی تیزی سے آن بورڈنگ (SSO کے لیے تیار)",
+        "خودکار ریونیو آپریشنز اور ٹیکس کی تعمیل",
+        "حریف گاہکوں کے درمیان زیرو ڈیٹا لیکیج",
+        "بااختیار کرایہ دار (سیلف سروس سپورٹ ٹکٹوں کو کم کرتی ہے)",
+        "قابل توسیع فاؤنڈیشن اعلی نمو کے لیے ڈیزائن کی گئی ہے۔"
+      ],
+      "content": {
+        "process": [
+          { "title": "ڈیٹا ماڈلنگ", "description": "اس بات کو یقینی بنانے کے لیے ڈیٹا بیس اسکیما کو ڈیزائن کرنا کہ ہر ٹیبل محفوظ طریقے سے ٹینینٹ آئی ڈی سے منسلک ہے۔" },
+          { "title": "شناخت اور رسائی کا انتظام", "description": "محفوظ، کراس ٹین کرایہ دار شناختی نظم و نسق اور RBAC کے لیے Auth0 یا NextAuth کو نافذ کرنا۔" },
+          { "title": "بلنگ لاجک", "description": "پیچیدہ ٹائر پر مبنی، میٹرڈ، یا فی سیٹ بلنگ سائیکل کے لیے سٹرائپ کو یکجا کرنا۔" },
+          { "title": "بنیادی ساس کی خصوصیات", "description": "ضروری غیر فعال تقاضوں کی تعمیر: آڈٹ لاگز، ویب ہکس، اور API کیز۔" },
+          { "title": "فرنٹ اینڈ کا نفاذ", "description": "یونیفائیڈ UI اجزاء کی لائبریری کے ساتھ ریسپانسیو Next.js ڈیش بورڈ تیار کرنا۔" }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Node.js / NestJS",
+          "PostgreSQL / Prisma",
+          "Stripe (Billing)",
+          "Auth0 / WorkOS (SSO)",
+          "AWS / Vercel"
+        ],
+        "faq": [
+          { "question": "کیا آپ استعمال پر مبنی (میٹرڈ) بلنگ کو لاگو کر سکتے ہیں؟", "answer": "جی ہاں. ہم API کالز، استعمال شدہ اسٹوریج، یا ایکٹو سیٹوں کو ٹریک کرنے کے لیے اسٹرائپ کے ساتھ گہرائی سے انضمام کرتے ہیں، اور ان کے صحیح استعمال کی بنیاد پر بلنگ سائیکل کے اختتام پر کرایہ دار کو خود بخود انوائس کرتے ہیں۔" },
+          { "question": "انٹرپرائز کلائنٹ SSO (سنگل سائن آن) چاہتے ہیں۔ کیا اس میں شامل ہے؟", "answer": "جی ہاں. ہم WorkOS یا Auth0 کا استعمال کرتے ہوئے انٹرپرائز کی شناخت فراہم کرنے والوں کو ضم کر سکتے ہیں، جو آپ کے کلائنٹس کو ان کے موجودہ Okta، Azure AD، یا Google Workspace اسناد کا استعمال کرتے ہوئے آپ کے SaaS میں لاگ ان کرنے کی اجازت دیتا ہے۔" }
+        ]
+      },
+      "metaTitle": "ساس آرکیٹیکچر ڈیولپمنٹ | B2B ملٹی ٹین کرایہ دار سسٹمز",
+      "metaDescription": "ایک توسیع پذیر B2B SaaS پلیٹ فارم بنائیں۔ ہم ماہر ملٹی ٹین کرایہ دار کا فن تعمیر، پٹی بلنگ انضمام، انٹرپرائز SSO، اور کرایہ دار تنہائی فراہم کرتے ہیں۔"
+    },
+    "ar": {
+      "name": "بنية SaaS متعددة المستأجرين",
+      "shortDescription": "إنشاء تطبيقات SaaS مع عزل المستأجر، و SSO، والفوترة الآلية.",
+      "fullDescription": "يتطلب إطلاق منتج B2B كخدمة (SaaS) ناجح أكثر من مجرد ميزات جيدة؛ فهو يتطلب أساسًا صلبًا وقابلاً للتطوير. توفر خدمات بنية SaaS متعددة المستأجرين (Multi-Tenant) لدينا المخطط والتنفيذ لمنتجك بأكمله. نحن نبني أنظمة تتعامل مع الهياكل التنظيمية المعقدة (فرق داخل الشركات)، والتحكم الدقيق في الوصول القائم على الأدوار (RBAC)، وتسجيل الدخول الموحد (SSO / SAML) لعملاء المؤسسات، والمنطق الآلي للفوترة القائمة على الاستخدام. باستخدام أطر عمل حديثة مثل Next.js وخلفيات قوية، نقدم منصة SaaS تتيح لك ضم آلاف الشركات بثقة دون المساومة على الأمان أو الأداء.",
+      "features": [
+        "SSO للمؤسسات (SAML ، OAuth) عبر Auth0 أو WorkOS",
+        "إدارة هرمية لـ RBAC والفرق",
+        "اشتراكات تلقائية وفوترة قائمة على الاستخدام (Stripe)",
+        "بوابات خدمة ذاتية للإدارة والفوترة للمستأجرين",
+        "تسمية بيضاء (White-Labeling) ودعم النطاق المخصص",
+        "عزل قوي لبيانات المستأجر والحذف الناعم (Soft Deletes)"
+      ],
+      "benefits": [
+        "إعداد سريع لعملاء المؤسسات (جاهز لـ SSO)",
+        "عمليات الإيرادات الآلية والامتثال الضريبي",
+        "صفر تسرب بيانات بين العملاء المتنافسين",
+        "تمكين المستأجرين (الخدمة الذاتية تقلل تذاكر الدعم)",
+        "أساس قابل للتطوير مصمم للنمو المرتفع"
+      ],
+      "content": {
+        "process": [
+          { "title": "نمذجة البيانات", "description": "تصميم مخطط قاعدة البيانات لضمان ارتباط كل جدول بأمان بمعرف مستأجر (Tenant ID)." },
+          { "title": "إدارة الهوية والوصول", "description": "تنفيذ Auth0 أو NextAuth لإدارة الهوية الآمنة عبر المستأجرين و RBAC." },
+          { "title": "منطق الفوترة", "description": "دمج Stripe لدورات الفوترة المعقدة القائمة على الفئات، أو المقاسة، أو لكل مقعد." },
+          { "title": "ميزات SaaS الأساسية", "description": "بناء المتطلبات غير الوظيفية الأساسية: سجلات التدقيق (Audit logs)، و Webhooks، ومفاتيح API." },
+          { "title": "تطوير الواجهة الأمامية", "description": "تطوير لوحة تحكم Next.js متجاوبة مع مكتبة مكونات واجهة مستخدم موحدة." }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Node.js / NestJS",
+          "PostgreSQL / Prisma",
+          "Stripe (للفوترة)",
+          "Auth0 / WorkOS (SSO)",
+          "AWS / Vercel"
+        ],
+        "faq": [
+          { "question": "هل يمكنك تنفيذ الفوترة القائمة على الاستخدام (المقاسة)؟", "answer": "نعم. نحن نندمج بعمق مع Stripe لتتبع مكالمات API، أو التخزين المستخدم، أو المقاعد النشطة، ونقوم تلقائيًا بإصدار فاتورة للمستأجر في نهاية دورة الفوترة بناءً على استخدامه الدقيق." },
+          { "question": "عملاء المؤسسات يريدون SSO (تسجيل دخول موحد). هل هذا مشمول؟", "answer": "نعم. يمكننا دمج موفري هوية المؤسسات باستخدام WorkOS أو Auth0، مما يتيح لعملائك تسجيل الدخول إلى SaaS الخاص بك باستخدام بيانات اعتماد Okta أو Azure AD أو Google Workspace الحالية الخاصة بهم." }
+        ]
+      },
+      "metaTitle": "تطوير بنية SaaS | أنظمة B2B متعددة المستأجرين",
+      "metaDescription": "قم ببناء منصة B2B SaaS قابلة للتطوير. نحن نقدم خبرة في البنية متعددة المستأجرين، وتكامل فوترة Stripe، و SSO للمؤسسات، وعزل المستأجر."
+    }
+  }
+}

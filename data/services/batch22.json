@@ -1,0 +1,436 @@
+{
+  "react-native-development": {
+    "en": {
+      "name": "React Native Development",
+      "shortDescription": "Build native mobile apps for iOS and Android using a single React Native codebase.",
+      "fullDescription": "Building two separate apps for iOS and Android is expensive, time-consuming, and difficult to maintain. Our React Native Development services solve this by allowing you to write code once and deploy it across both major platforms natively. Backed by Meta (Facebook), React Native does not just wrap a website in an app; it renders true native UI components, delivering the buttery-smooth performance and look-and-feel your users expect. Whether you are building an offline-first utility app, a real-time chat platform, or a complex e-commerce storefront, we leverage React Native with TypeScript and Expo to accelerate your time-to-market while drastically reducing ongoing maintenance costs.",
+      "features": [
+        "Single Codebase for iOS & Android",
+        "True Native UI Component Rendering",
+        "Offline-First Architecture & Data Syncing",
+        "Push Notifications (Firebase, OneSignal)",
+        "Over-The-Air (OTA) Updates (CodePush)",
+        "Hardware Integration (Camera, GPS, Biometrics)"
+      ],
+      "benefits": [
+        "Cut Development Costs by up to 40%",
+        "Faster Time-to-Market (Launch on both stores simultaneously)",
+        "Seamless Native Performance (60 FPS)",
+        "Simplified Maintenance with One Codebase",
+        "Instant App Updates Without App Store Approval (OTA)"
+      ],
+      "content": {
+        "process": [
+          { "title": "Architecture & Prototyping", "description": "Designing the component structure, state management (Redux/Zustand), and navigation flows." },
+          { "title": "UI/UX Implementation", "description": "Translating Figma designs into responsive, pixel-perfect React Native components." },
+          { "title": "Backend Integration", "description": "Connecting the app to your REST APIs or GraphQL endpoints, and setting up Firebase for auth/push." },
+          { "title": "Native Module Bridging", "description": "Writing custom Java/Swift code for any specific hardware features not supported out-of-the-box." },
+          { "title": "Testing & Deployment", "description": "Automating builds with Fastlane and deploying to TestFlight and the Google Play Console." }
+        ],
+        "technologies": [
+          "React Native / Expo",
+          "TypeScript",
+          "React Navigation",
+          "Redux Toolkit / Zustand",
+          "Firebase / CodePush",
+          "Fastlane (CI/CD)"
+        ],
+        "faq": [
+          { "question": "Does React Native perform as well as native Swift/Kotlin?", "answer": "For 95% of applications, the performance difference is indistinguishable to the user. React Native renders true native components. The only exceptions are highly graphic-intensive 3D games or apps doing extremely heavy background processing, where pure native might be preferred." },
+          { "question": "What are Over-The-Air (OTA) updates?", "answer": "OTA updates allow us to push bug fixes and UI changes directly to the user's app over the internet, bypassing the lengthy Apple/Google app store review processes. This ensures all users are instantly on the latest version." }
+        ]
+      },
+      "metaTitle": "React Native App Development Company | Cross-Platform Experts",
+      "metaDescription": "Build native iOS and Android apps faster with a single codebase. Our React Native development services deliver high performance and reduced maintenance costs."
+    },
+    "tr": {
+      "name": "React Native Geliştirme",
+      "shortDescription": "Tek bir React Native kod tabanı kullanarak iOS ve Android için yerel (native) mobil uygulamalar oluşturun.",
+      "fullDescription": "iOS ve Android için iki ayrı uygulama geliştirmek pahalıdır, zaman alır ve bakımı zordur. React Native Geliştirme hizmetlerimiz, kodu bir kez yazıp her iki büyük platformda da yerel olarak dağıtmanıza olanak tanıyarak bu sorunu çözer. Meta (Facebook) tarafından desteklenen React Native, bir web sitesini sadece uygulamanın içine sarmakla kalmaz; gerçek yerel kullanıcı arayüzü (UI) bileşenleri oluşturarak kullanıcılarınızın beklediği o akıcı performansı ve görünümü sunar. İster çevrimdışı öncelikli bir yardımcı uygulama (offline-first utility app), ister gerçek zamanlı bir sohbet platformu veya karmaşık bir e-ticaret vitrini oluşturuyor olun, pazara çıkış sürenizi hızlandırmak ve devam eden bakım maliyetlerini büyük ölçüde azaltmak için TypeScript ve Expo ile React Native'den yararlanıyoruz.",
+      "features": [
+        "iOS ve Android İçin Tek Kod Tabanı",
+        "Gerçek Yerel (Native) UI Bileşeni Oluşturma",
+        "Çevrimdışı Öncelikli (Offline-First) Mimari ve Veri Senkronizasyonu",
+        "Anında Bildirimler (Push Notifications - Firebase, OneSignal)",
+        "Kablosuz (Over-The-Air - OTA) Güncellemeler (CodePush)",
+        "Donanım Entegrasyonu (Kamera, GPS, Biyometri)"
+      ],
+      "benefits": [
+        "Geliştirme Maliyetlerini %40'a Kadar Düşürün",
+        "Pazara Daha Hızlı Çıkış (Her iki mağazada da aynı anda yayınlayın)",
+        "Kusursuz Yerel Performans (60 FPS)",
+        "Tek Kod Tabanı ile Basitleştirilmiş Bakım",
+        "App Store Onayı Olmadan Anında Uygulama Güncellemeleri (OTA)"
+      ],
+      "content": {
+        "process": [
+          { "title": "Mimari ve Prototipleme", "description": "Bileşen yapısını, durum yönetimini (Redux/Zustand) ve gezinme (navigation) akışlarını tasarlama." },
+          { "title": "UI/UX Uygulaması", "description": "Figma tasarımlarını duyarlı, piksel açısından mükemmel React Native bileşenlerine dönüştürme." },
+          { "title": "Arka Uç Entegrasyonu", "description": "Uygulamayı REST API'lerinize veya GraphQL uç noktalarınıza bağlama ve auth/push için Firebase'i ayarlama." },
+          { "title": "Yerel (Native) Modül Köprüleme", "description": "Kutudan çıktığı haliyle desteklenmeyen belirli donanım özellikleri için özel Java/Swift kodu yazma." },
+          { "title": "Test ve Dağıtım", "description": "Fastlane ile yapıları (builds) otomatikleştirme ve TestFlight ile Google Play Console'a dağıtma." }
+        ],
+        "technologies": [
+          "React Native / Expo",
+          "TypeScript",
+          "React Navigation",
+          "Redux Toolkit / Zustand",
+          "Firebase / CodePush",
+          "Fastlane (CI/CD)"
+        ],
+        "faq": [
+          { "question": "React Native, yerel Swift/Kotlin kadar iyi performans gösteriyor mu?", "answer": "Uygulamaların %95'i için performans farkı kullanıcı tarafından ayırt edilemez. React Native gerçek yerel bileşenler oluşturur. Tek istisna, aşırı grafik yoğun 3D oyunlar veya arka planda çok ağır işlemler yapan uygulamalardır; bu tür durumlarda saf yerel tercih edilebilir." },
+          { "question": "Kablosuz (OTA) güncellemeler nedir?", "answer": "OTA güncellemeleri, Apple/Google uygulama mağazasının uzun inceleme süreçlerini atlayarak hata düzeltmelerini ve kullanıcı arayüzü değişikliklerini internet üzerinden doğrudan kullanıcının uygulamasına göndermemize olanak tanır. Bu, tüm kullanıcıların anında en son sürümde olmasını sağlar." }
+        ]
+      },
+      "metaTitle": "React Native Geliştirme Şirketi | Çapraz Platform Uzmanları",
+      "metaDescription": "Tek bir kod tabanıyla iOS ve Android uygulamalarını daha hızlı oluşturun. React Native geliştirme hizmetlerimiz yüksek performans sunar ve bakım maliyetlerini düşürür."
+    },
+    "de": {
+      "name": "React Native Entwicklung",
+      "shortDescription": "Bauen Sie native mobile Apps für iOS und Android mit einer einzigen React Native-Codebasis.",
+      "fullDescription": "Zwei separate Apps für iOS und Android zu entwickeln, ist teuer, zeitaufwendig und schwer zu warten. Unsere React Native Entwicklungsdienste lösen dieses Problem, indem sie es Ihnen ermöglichen, Code einmal zu schreiben und ihn nativ auf beiden großen Plattformen bereitzustellen. Unterstützt von Meta (Facebook) verpackt React Native nicht einfach eine Website in eine App; es rendert echte native UI-Komponenten und liefert so die reibungslose Performance und das Look-and-Feel, das Ihre Nutzer erwarten. Egal, ob Sie eine Offline-First-Utility-App, eine Echtzeit-Chat-Plattform oder einen komplexen E-Commerce-Shop entwickeln, wir nutzen React Native mit TypeScript und Expo, um Ihre Time-to-Market zu beschleunigen und die laufenden Wartungskosten drastisch zu senken.",
+      "features": [
+        "Eine Codebasis für iOS & Android",
+        "Echtes natives UI-Komponenten-Rendering",
+        "Offline-First-Architektur & Datensynchronisation",
+        "Push-Benachrichtigungen (Firebase, OneSignal)",
+        "Over-The-Air (OTA) Updates (CodePush)",
+        "Hardware-Integration (Kamera, GPS, Biometrie)"
+      ],
+      "benefits": [
+        "Senkung der Entwicklungskosten um bis zu 40%",
+        "Schnellere Time-to-Market (Gleichzeitiger Launch in beiden Stores)",
+        "Nahtlose native Performance (60 FPS)",
+        "Vereinfachte Wartung durch eine einzige Codebasis",
+        "Sofortige App-Updates ohne App Store-Freigabe (OTA)"
+      ],
+      "content": {
+        "process": [
+          { "title": "Architektur & Prototyping", "description": "Design der Komponentenstruktur, State Management (Redux/Zustand) und Navigationsflüsse." },
+          { "title": "UI/UX Implementierung", "description": "Übersetzung von Figma-Designs in responsive, pixelperfekte React Native Komponenten." },
+          { "title": "Backend Integration", "description": "Anbindung der App an Ihre REST-APIs oder GraphQL-Endpunkte." },
+          { "title": "Native Module Bridging", "description": "Schreiben von benutzerdefiniertem Java/Swift-Code für spezielle Hardwarefunktionen." },
+          { "title": "Testing & Deployment", "description": "Automatisierte Builds mit Fastlane und Bereitstellung in TestFlight und Google Play." }
+        ],
+        "technologies": [
+          "React Native / Expo",
+          "TypeScript",
+          "React Navigation",
+          "Redux Toolkit / Zustand",
+          "Firebase / CodePush",
+          "Fastlane (CI/CD)"
+        ],
+        "faq": [
+          { "question": "Ist React Native so performant wie natives Swift/Kotlin?", "answer": "Für 95% der Anwendungen ist der Performance-Unterschied für den Nutzer nicht wahrnehmbar. React Native rendert echte native Komponenten." },
+          { "question": "Was sind Over-The-Air (OTA) Updates?", "answer": "OTA-Updates ermöglichen es uns, Fehlerbehebungen und UI-Änderungen über das Internet direkt in die App des Nutzers zu pushen, ohne den App-Store-Review-Prozess durchlaufen zu müssen." }
+        ]
+      },
+      "metaTitle": "React Native App Entwicklung | Cross-Platform Agentur",
+      "metaDescription": "Entwickeln Sie native iOS und Android Apps schneller mit einer Codebasis. Unsere React Native Agentur liefert Top-Performance bei geringeren Kosten."
+    },
+    "ur": {
+      "name": "React مقامی ترقی",
+      "shortDescription": "ایک ہی ری ایکٹ نیٹو کوڈ بیس کا استعمال کرتے ہوئے iOS اور Android کے لیے مقامی موبائل ایپس بنائیں۔",
+      "fullDescription": "iOS اور Android کے لیے دو الگ الگ ایپس بنانا مہنگا، وقت طلب، اور برقرار رکھنا مشکل ہے۔ ہماری ری ایکٹ نیٹو ڈیولپمنٹ سروسز آپ کو ایک بار کوڈ لکھنے اور دونوں بڑے پلیٹ فارمز پر مقامی طور پر اسے متعین کرنے کی اجازت دے کر اسے حل کرتی ہیں۔ میٹا (فیس بک) کی حمایت یافتہ، React Native صرف ایک ایپ میں ویب سائٹ کو لپیٹتا نہیں ہے۔ یہ آپ کے صارفین کی توقع کے مطابق بٹر-ہموار کارکردگی اور شکل و صورت فراہم کرتے ہوئے درست مقامی UI اجزاء پیش کرتا ہے۔ چاہے آپ ایک آف لائن فرسٹ یوٹیلیٹی ایپ، ایک ریئل ٹائم چیٹ پلیٹ فارم، یا ایک پیچیدہ ای کامرس اسٹور فرنٹ بنا رہے ہیں، ہم آپ کے ٹائم ٹو مارکیٹ کو تیز کرنے کے لیے TypeScript اور Expo کے ساتھ React Native کا فائدہ اٹھاتے ہیں جبکہ جاری دیکھ بھال کے اخراجات کو زبردست کم کرتے ہیں۔ .",
+      "features": [
+        "iOS اور Android کے لیے سنگل کوڈ بیس",
+        "صحیح مقامی UI اجزاء کی پیش کش",
+        "آف لائن فرسٹ آرکیٹیکچر اور ڈیٹا کی مطابقت پذیری۔",
+        "پش اطلاعات (فائر بیس، ون سگنل)",
+        "اوور دی ایئر (OTA) اپڈیٹس (کوڈ پش)",
+        "ہارڈ ویئر انٹیگریشن (کیمرہ، جی پی ایس، بائیو میٹرکس)"
+      ],
+      "benefits": [
+        "ترقیاتی اخراجات میں 40 فیصد تک کمی کریں۔",
+        "تیز تر ٹائم ٹو مارکیٹ (دونوں اسٹورز پر بیک وقت لانچ کریں)",
+        "ہموار مقامی کارکردگی (60 FPS)",
+        "ایک کوڈ بیس کے ساتھ آسان دیکھ بھال",
+        "ایپ اسٹور کی منظوری کے بغیر فوری ایپ اپ ڈیٹس (OTA)"
+      ],
+      "content": {
+        "process": [
+          { "title": "آرکیٹیکچر اور پروٹو ٹائپنگ", "description": "اجزاء کی ساخت، ریاستی انتظام (Redux/Zustand)، اور نیویگیشن بہاؤ کو ڈیزائن کرنا۔" },
+          { "title": "UI/UX کا نفاذ", "description": "Figma ڈیزائنز کو جوابدہ، پکسل پرفیکٹ ری ایکٹ نیٹو اجزاء میں ترجمہ کرنا۔" },
+          { "title": "پسدید انضمام", "description": "ایپ کو اپنے REST APIs یا GraphQL اینڈ پوائنٹس سے جوڑنا، اور Auth/Push کے لیے Firebase کو ترتیب دینا۔" },
+          { "title": "مقامی ماڈیول برجنگ", "description": "باکس سے باہر کی حمایت یافتہ کسی بھی مخصوص ہارڈ ویئر خصوصیات کے لیے حسب ضرورت جاوا/سوئفٹ کوڈ لکھنا۔" },
+          { "title": "ٹیسٹنگ اور تعیناتی", "description": "فاسٹ لین کے ساتھ آٹومیٹنگ کی تعمیر اور ٹیسٹ فلائٹ اور گوگل پلے کنسول پر تعینات کرنا۔" }
+        ],
+        "technologies": [
+          "React Native / Expo",
+          "TypeScript",
+          "React Navigation",
+          "Redux Toolkit / Zustand",
+          "Firebase / CodePush",
+          "Fastlane (CI/CD)"
+        ],
+        "faq": [
+          { "question": "کیا React Native مقامی Swift/Kotlin کی طرح کام کرتا ہے؟", "answer": "95% ایپلی کیشنز کے لیے، کارکردگی میں فرق صارف کے لیے الگ نہیں کیا جا سکتا۔ مقامی اجزاء کو درست کرنے کے لیے مقامی رینڈرز کا ردعمل ظاہر کریں۔ استثنیٰ صرف انتہائی گرافک پر مبنی 3D گیمز یا بہت زیادہ بیک گراؤنڈ پروسیسنگ کرنے والی ایپس ہیں، جہاں خالص مقامی کو ترجیح دی جا سکتی ہے۔" },
+          { "question": "اوور دی ایئر (OTA) اپ ڈیٹس کیا ہیں؟", "answer": "OTA اپ ڈیٹس ہمیں طویل Apple/Google ایپ اسٹور کے جائزے کے عمل کو نظرانداز کرتے ہوئے بگ فکسز اور UI کی تبدیلیاں براہ راست انٹرنیٹ پر صارف کی ایپ پر کرنے کی اجازت دیتی ہیں۔ یہ یقینی بناتا ہے کہ تمام صارفین فوری طور پر تازہ ترین ورژن پر ہیں۔" }
+        ]
+      },
+      "metaTitle": "React نیٹو ایپ ڈویلپمنٹ کمپنی | کراس پلیٹ فارم کے ماہرین",
+      "metaDescription": "ایک ہی کوڈ بیس کے ساتھ مقامی iOS اور Android ایپس تیزی سے بنائیں۔ ہماری ری ایکٹ نیٹو ترقیاتی خدمات اعلی کارکردگی فراہم کرتی ہیں اور دیکھ بھال کے اخراجات کو کم کرتی ہیں۔"
+    },
+    "ar": {
+      "name": "تطوير React Native",
+      "shortDescription": "بناء تطبيقات هاتف أصلية (Native) لأنظمة iOS و Android باستخدام قاعدة برمجية واحدة من React Native.",
+      "fullDescription": "بناء تطبيقين منفصلين لنظامي iOS و Android أمر مكلف ويستغرق وقتًا طويلاً ويصعب صيانته. تحل خدمات تطوير React Native لدينا هذه المشكلة من خلال السماح لك بكتابة الكود مرة واحدة ونشره عبر كلتا المنصتين الرئيسيتين بشكل أصلي. مدعومًا من Meta (Facebook)، لا يقوم React Native بمجرد تغليف موقع ويب في تطبيق؛ بل إنه يعرض مكونات واجهة مستخدم (UI) أصلية حقيقية، مما يوفر أداءً سلسًا ومظهرًا يتوقعه المستخدمون. سواء كنت تبني تطبيقًا يعمل دون اتصال بالإنترنت (Offline-first)، أو منصة دردشة في الوقت الفعلي، أو واجهة متجر تجارة إلكترونية معقدة، فإننا نستفيد من React Native مع TypeScript و Expo لتسريع وقت وصولك إلى السوق مع تقليل تكاليف الصيانة المستمرة بشكل كبير.",
+      "features": [
+        "قاعدة برمجية (Codebase) واحدة لأنظمة iOS و Android",
+        "عرض حقيقي لمكونات واجهة المستخدم الأصلية",
+        "بنية تعمل دون اتصال (Offline-first) ومزامنة البيانات",
+        "إشعارات الدفع (Firebase ، OneSignal)",
+        "تحديثات عبر الهواء (OTA) بدون انتظار المتجر (CodePush)",
+        "تكامل الأجهزة (الكاميرا، GPS، القياسات الحيوية/Biometrics)"
+      ],
+      "benefits": [
+        "خفض تكاليف التطوير بنسبة تصل إلى 40٪",
+        "وقت أسرع للوصول إلى السوق (الإطلاق في كلا المتجرين في وقت واحد)",
+        "أداء أصلي سلس (60 إطارًا في الثانية)",
+        "صيانة مبسطة مع قاعدة برمجية واحدة",
+        "تحديثات فورية للتطبيق بدون موافقة متجر التطبيقات (OTA)"
+      ],
+      "content": {
+        "process": [
+          { "title": "البنية الهندسية والنماذج الأولية", "description": "تصميم هيكل المكونات، وإدارة الحالة (Redux/Zustand)، وتدفقات التنقل (Navigation)." },
+          { "title": "تنفيذ واجهة/تجربة المستخدم", "description": "ترجمة تصميمات Figma إلى مكونات React Native متجاوبة ومثالية (Pixel-perfect)." },
+          { "title": "تكامل النهاية الخلفية (Backend)", "description": "ربط التطبيق بواجهات برمجة التطبيقات (REST APIs) أو GraphQL، وإعداد Firebase للمصادقة/الإشعارات." },
+          { "title": "ربط الوحدات الأصلية (Native Module Bridging)", "description": "كتابة تعليمات برمجية مخصصة بـ Java/Swift لأي ميزات أجهزة محددة غير مدعومة افتراضيًا." },
+          { "title": "الاختبار والنشر", "description": "أتمتة الإنشاءات (Builds) باستخدام Fastlane والنشر على TestFlight و Google Play Console." }
+        ],
+        "technologies": [
+          "React Native / Expo",
+          "TypeScript",
+          "React Navigation",
+          "Redux Toolkit / Zustand",
+          "Firebase / CodePush",
+          "Fastlane (للتكامل/النشر المستمر)"
+        ],
+        "faq": [
+          { "question": "هل أداء React Native يضاهي أداء Swift/Kotlin الأصلي؟", "answer": "بالنسبة لـ 95٪ من التطبيقات، لا يمكن للمستخدم تمييز فرق الأداء. يقوم React Native بعرض مكونات أصلية حقيقية. الاستثناءات الوحيدة هي الألعاب ثلاثية الأبعاد التي تتطلب رسوميات مكثفة أو التطبيقات التي تقوم بمعالجة ثقيلة جدًا في الخلفية، حيث قد يُفضل الاستخدام الأصلي النقي." },
+          { "question": "ما هي التحديثات عبر الهواء (OTA)؟", "answer": "تتيح لنا تحديثات OTA إرسال إصلاحات الأخطاء وتغييرات واجهة المستخدم مباشرة إلى تطبيق المستخدم عبر الإنترنت، متجاوزين عمليات المراجعة الطويلة في متجر تطبيقات Apple/Google. وهذا يضمن حصول جميع المستخدمين على أحدث إصدار على الفور." }
+        ]
+      },
+      "metaTitle": "شركة تطوير تطبيقات React Native | خبراء المنصات المتعددة",
+      "metaDescription": "قم ببناء تطبيقات iOS و Android الأصلية بشكل أسرع باستخدام قاعدة برمجية واحدة. توفر خدمات تطوير React Native لدينا أداءً عاليًا وتكاليف صيانة منخفضة."
+    }
+  },
+  "saas-development": {
+    "en": {
+      "name": "SaaS Development",
+      "shortDescription": "Build scalable, multi-tenant SaaS platforms from concept to launch.",
+      "fullDescription": "Software-as-a-Service (SaaS) is the gold standard for recurring revenue, but building a robust SaaS platform requires complex architecture. Our SaaS Development services handle the heavy lifting, taking your product from initial concept to a fully scalable, cloud-native application. We architect multi-tenant databases to keep customer data strictly isolated and secure. We implement complex role-based access control (RBAC), layered subscription billing tiers via Stripe, and comprehensive admin dashboards to manage your users. Using a modern stack like Next.js, Node.js, and PostgreSQL, we build SaaS platforms designed to handle thousands of concurrent users with sub-second response times.",
+      "features": [
+        "Secure Multi-Tenant Database Architecture",
+        "Subscription Billing & Metered Usage (Stripe Billing)",
+        "Role-Based Access Control (RBAC) & Team Management",
+        "Super-Admin Dashboards & Platform Analytics",
+        "White-Labeling & Custom Domain Support",
+        "API-First Design for Third-Party Integrations"
+      ],
+      "benefits": [
+        "Accelerate Time-to-Market with Pre-Built SaaS Modules",
+        "Scale Effortlessly with Cloud-Native AWS/Vercel Infrastructure",
+        "Guarantee Data Security & GDPR/CCPA Compliance",
+        "Maximize Recurring Revenue with Flexible Billing Tiers",
+        "Reduce Churn with Highly Performant, Responsive UIs"
+      ],
+      "content": {
+        "process": [
+          { "title": "System Architecture", "description": "Designing the database schema for multi-tenancy (row-level security vs. separate schemas)." },
+          { "title": "Core Infrastructure", "description": "Setting up the authentication, user roles, and Stripe subscription logic before touching the UI." },
+          { "title": "Feature Development", "description": "Building the core value proposition of your SaaS using Next.js and API endpoints." },
+          { "title": "Admin & Tenant Portals", "description": "Creating the interfaces where your users manage their teams, and where you manage the platform." },
+          { "title": "Stress Testing & Launch", "description": "Simulating high traffic to ensure the cloud infrastructure scales elastically." }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Node.js / NestJS",
+          "PostgreSQL / Supabase",
+          "Stripe (Billing & Connect)",
+          "Redis (Caching & Queues)",
+          "AWS / Vercel"
+        ],
+        "faq": [
+          { "question": "What is Multi-Tenant Architecture?", "answer": "Multi-tenancy means a single instance of the software serves multiple customers (tenants). We meticulously design the database using techniques like Row-Level Security (RLS) to ensure that Tenant A can absolutely never access Tenant B's data." },
+          { "question": "Can you handle usage-based (metered) billing?", "answer": "Yes. Beyond standard flat-rate subscriptions, we can integrate Stripe Metered Billing to charge users based on exact consumption (e.g., number of API calls made, GB of storage used, or emails sent)." }
+        ]
+      },
+      "metaTitle": "SaaS Development Company | B2B SaaS Agency",
+      "metaDescription": "Build scalable, secure multi-tenant SaaS applications. We specialize in Next.js, PostgreSQL, Stripe billing, and scalable cloud architecture."
+    },
+    "tr": {
+      "name": "SaaS Geliştirme",
+      "shortDescription": "Konseptten lansmana kadar ölçeklenebilir, çok kiracılı (multi-tenant) SaaS platformları oluşturun.",
+      "fullDescription": "Hizmet Olarak Yazılım (SaaS), yinelenen gelir için altın standarttır, ancak sağlam bir SaaS platformu oluşturmak karmaşık bir mimari gerektirir. SaaS Geliştirme hizmetlerimiz, ürününüzü ilk konseptten tam ölçeklenebilir, bulutta yerel (cloud-native) bir uygulamaya taşıyarak ağır işleri üstlenir. Müşteri verilerini kesinlikle yalıtılmış ve güvenli tutmak için çok kiracılı (multi-tenant) veritabanları tasarlıyoruz. Karmaşık rol tabanlı erişim kontrolü (RBAC), Stripe üzerinden katmanlı abonelik faturalandırması ve kullanıcılarınızı yönetmek için kapsamlı yönetici (admin) panoları uyguluyoruz. Next.js, Node.js ve PostgreSQL gibi modern bir yığın (stack) kullanarak, binlerce eşzamanlı kullanıcıyı saniyenin altında yanıt süreleriyle idare edecek şekilde tasarlanmış SaaS platformları oluşturuyoruz.",
+      "features": [
+        "Güvenli Çok Kiracılı (Multi-Tenant) Veritabanı Mimarisi",
+        "Abonelik Faturalandırması ve Kullanıma Dayalı Ödeme (Stripe Billing)",
+        "Rol Tabanlı Erişim Kontrolü (RBAC) ve Ekip Yönetimi",
+        "Süper Yönetici Panoları ve Platform Analitiği",
+        "Beyaz Etiketleme (White-Labeling) ve Özel Alan Adı Desteği",
+        "Üçüncü Taraf Entegrasyonları için API Öncelikli Tasarım"
+      ],
+      "benefits": [
+        "Önceden Oluşturulmuş SaaS Modülleri ile Pazara Çıkış Süresini Hızlandırma",
+        "Bulutta Yerel AWS/Vercel Altyapısı ile Zahmetsizce Ölçekleme",
+        "Veri Güvenliğini ve GDPR/CCPA Uyumluluğunu Garanti Etme",
+        "Esnek Faturalandırma Katmanlarıyla Yinelenen Geliri En Üst Düzeye Çıkarma",
+        "Yüksek Performanslı, Duyarlı Kullanıcı Arayüzleri ile Müşteri Kaybını (Churn) Azaltma"
+      ],
+      "content": {
+        "process": [
+          { "title": "Sistem Mimarisi", "description": "Çoklu kiracılık (multi-tenancy) için veritabanı şemasını tasarlama (satır düzeyinde güvenlik ile ayrı şemalar karşılaştırması)." },
+          { "title": "Temel Altyapı", "description": "Kullanıcı arayüzüne dokunmadan önce kimlik doğrulama, kullanıcı rolleri ve Stripe abonelik mantığını ayarlama." },
+          { "title": "Özellik Geliştirme", "description": "Next.js ve API uç noktalarını kullanarak SaaS'ınızın temel değer teklifini oluşturma." },
+          { "title": "Yönetici ve Kiracı Portalları", "description": "Kullanıcılarınızın ekiplerini yönettiği ve sizin platformu yönettiğiniz arayüzleri oluşturma." },
+          { "title": "Stres Testi ve Lansman", "description": "Bulut altyapısının esnek bir şekilde ölçeklendiğinden emin olmak için yüksek trafiği simüle etme." }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Node.js / NestJS",
+          "PostgreSQL / Supabase",
+          "Stripe (Billing & Connect)",
+          "Redis (Önbelleğe Alma ve Kuyruklar)",
+          "AWS / Vercel"
+        ],
+        "faq": [
+          { "question": "Çok Kiracılı (Multi-Tenant) Mimari nedir?", "answer": "Çoklu kiracılık, yazılımın tek bir örneğinin birden çok müşteriye (kiracıya) hizmet vermesi anlamına gelir. A Kiracısının, B Kiracısının verilerine kesinlikle hiçbir zaman erişemeyeceğinden emin olmak için Satır Düzeyinde Güvenlik (RLS) gibi teknikleri kullanarak veritabanını titizlikle tasarlıyoruz." },
+          { "question": "Kullanıma dayalı (ölçülü) faturalandırmayı yönetebilir misiniz?", "answer": "Evet. Standart sabit oranlı aboneliklerin ötesinde, kullanıcıları kesin tüketime göre (örneğin yapılan API çağrısı sayısı, kullanılan depolama GB'ı veya gönderilen e-postalar) ücretlendirmek için Stripe Metered Billing'i entegre edebiliriz." }
+        ]
+      },
+      "metaTitle": "SaaS Geliştirme Şirketi | B2B SaaS Ajansı",
+      "metaDescription": "Ölçeklenebilir, güvenli çok kiracılı (multi-tenant) SaaS uygulamaları oluşturun. Next.js, PostgreSQL, Stripe faturalandırma ve bulut mimarisinde uzmanız."
+    },
+    "de": {
+      "name": "SaaS-Entwicklung",
+      "shortDescription": "Bauen Sie skalierbare, mandantenfähige SaaS-Plattformen vom Konzept bis zum Launch.",
+      "fullDescription": "Software-as-a-Service (SaaS) ist der Goldstandard für wiederkehrende Einnahmen, aber der Aufbau einer robusten SaaS-Plattform erfordert eine komplexe Architektur. Unsere SaaS-Entwicklungsdienste übernehmen die schwere Arbeit und bringen Ihr Produkt vom ersten Konzept zu einer vollständig skalierbaren, Cloud-nativen Anwendung. Wir entwerfen mandantenfähige (Multi-Tenant) Datenbanken, um Kundendaten strikt isoliert und sicher zu halten. Wir implementieren komplexe rollenbasierte Zugriffskontrollen (RBAC), mehrstufige Abonnement-Abrechnungen via Stripe und umfassende Admin-Dashboards zur Verwaltung Ihrer Nutzer. Mit einem modernen Stack wie Next.js, Node.js und PostgreSQL bauen wir SaaS-Plattformen, die darauf ausgelegt sind, Tausende gleichzeitiger Nutzer mit Antwortzeiten im Millisekundenbereich zu bedienen.",
+      "features": [
+        "Sichere mandantenfähige (Multi-Tenant) Datenbankarchitektur",
+        "Subscription Billing & nutzungsbasierte Abrechnung (Stripe Billing)",
+        "Rollenbasierte Zugriffskontrolle (RBAC) & Teamverwaltung",
+        "Super-Admin Dashboards & Plattform-Analysen",
+        "White-Labeling & Custom Domain Support",
+        "API-First Design für Drittanbieter-Integrationen"
+      ],
+      "benefits": [
+        "Beschleunigte Time-to-Market durch vorgefertigte SaaS-Module",
+        "Mühelose Skalierung mit Cloud-nativer AWS/Vercel-Infrastruktur",
+        "Garantierte Datensicherheit & DSGVO-Konformität",
+        "Maximierung wiederkehrender Einnahmen durch flexible Tarife",
+        "Reduzierung der Abwanderung durch hochperformante UIs"
+      ],
+      "content": {
+        "process": [
+          { "title": "Systemarchitektur", "description": "Design des Datenbankschemas für Multi-Tenancy (Row-Level Security)." },
+          { "title": "Kerninfrastruktur", "description": "Einrichtung von Authentifizierung, Rollen und Stripe-Abo-Logik." },
+          { "title": "Feature-Entwicklung", "description": "Aufbau der Kernfunktionen Ihres SaaS mit Next.js und API-Endpunkten." },
+          { "title": "Admin- & Mandanten-Portale", "description": "Erstellung der Interfaces für Nutzer-Teams und die Plattformverwaltung." },
+          { "title": "Stresstests & Launch", "description": "Simulation von hohem Traffic, um die Skalierbarkeit der Cloud sicherzustellen." }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Node.js / NestJS",
+          "PostgreSQL / Supabase",
+          "Stripe (Billing & Connect)",
+          "Redis (Caching & Queues)",
+          "AWS / Vercel"
+        ],
+        "faq": [
+          { "question": "Was ist eine Multi-Tenant-Architektur?", "answer": "Multi-Tenancy bedeutet, dass eine einzige Instanz der Software mehrere Kunden (Mandanten) bedient. Wir nutzen Techniken wie Row-Level Security (RLS), um zu garantieren, dass Mandant A niemals auf die Daten von Mandant B zugreifen kann." },
+          { "question": "Können Sie nutzungsbasierte Abrechnungen realisieren?", "answer": "Ja. Neben Flatrate-Abos können wir Stripe Metered Billing integrieren, um Nutzer exakt nach Verbrauch abizurechnen (z.B. API-Aufrufe, Speicherplatz, E-Mails)." }
+        ]
+      },
+      "metaTitle": "SaaS Entwicklung Agentur | B2B SaaS Experten",
+      "metaDescription": "Bauen Sie skalierbare, sichere mandantenfähige SaaS-Applikationen. Spezialisiert auf Next.js, PostgreSQL, Stripe und Cloud-Architektur."
+    },
+    "ur": {
+      "name": "SaaS ڈیولپمنٹ",
+      "shortDescription": "تصور سے لے کر لانچ تک اسکیل ایبل، ملٹی ٹیننٹ ساس پلیٹ فارمز بنائیں۔",
+      "fullDescription": "Software-as-a-Service (SaaS) بار بار آنے والی آمدنی کے لیے سونے کا معیار ہے، لیکن ایک مضبوط ساس پلیٹ فارم بنانے کے لیے پیچیدہ فن تعمیر کی ضرورت ہوتی ہے۔ ہماری SaaS ڈیولپمنٹ سروسز آپ کے پروڈکٹ کو ابتدائی تصور سے لے کر مکمل طور پر توسیع پذیر، کلاؤڈ نیٹیو ایپلیکیشن تک بھاری لفٹنگ کو سنبھالتی ہیں۔ ہم کسٹمر کے ڈیٹا کو سختی سے الگ تھلگ اور محفوظ رکھنے کے لیے ملٹی ٹینینٹ ڈیٹا بیس تیار کرتے ہیں۔ ہم پیچیدہ کردار پر مبنی رسائی کنٹرول (RBAC)، پٹی کے ذریعے ٹائرڈ سبسکرپشن بلنگ، اور آپ کے صارفین کا نظم کرنے کے لیے جامع منتظم ڈیش بورڈز نافذ کرتے ہیں۔ Next.js، Node.js، اور PostgreSQL جیسے جدید اسٹیک کا استعمال کرتے ہوئے، ہم ساس پلیٹ فارمز بناتے ہیں جو ذیلی سیکنڈ رسپانس اوقات کے ساتھ ہزاروں ہم وقتی صارفین کو ہینڈل کرنے کے لیے ڈیزائن کیے گئے ہیں۔",
+      "features": [
+        "سیکیور ملٹی ٹیننٹ ڈیٹا بیس آرکیٹیکچر",
+        "سبسکرپشن بلنگ اور میٹرڈ کا استعمال (پٹی کی بلنگ)",
+        "رول بیسڈ ایکسیس کنٹرول (RBAC) اور ٹیم مینجمنٹ",
+        "سپر ایڈمن ڈیش بورڈز اور پلیٹ فارم اینالیٹکس",
+        "وائٹ لیبلنگ اور کسٹم ڈومین سپورٹ",
+        "تھرڈ پارٹی انضمام کے لیے API کا پہلا ڈیزائن"
+      ],
+      "benefits": [
+        "پہلے سے بنے ہوئے ساس ماڈیولز کے ساتھ مارکیٹ میں تیزی لائیں۔",
+        "کلاؤڈ مقامی AWS/Vercel انفراسٹرکچر کے ساتھ آسانی سے اسکیل کریں",
+        "ڈیٹا سیکیورٹی اور GDPR/CCPA کی تعمیل کی ضمانت دیں۔",
+        "لچکدار بلنگ ٹائرز کے ساتھ بار بار ہونے والی آمدنی کو زیادہ سے زیادہ کریں۔",
+        "انتہائی کارکردگی والے، جوابدہ UIs کے ساتھ چرن کو کم کریں۔"
+      ],
+      "content": {
+        "process": [
+          { "title": "سسٹم آرکیٹیکچر", "description": "ملٹی کرایہ داری کے لیے ڈیٹا بیس اسکیما کو ڈیزائن کرنا (رو لیول کی سیکیورٹی بمقابلہ الگ اسکیمس)۔" },
+          { "title": "بنیادی انفراسٹرکچر", "description": "UI کو چھونے سے پہلے تصدیق، صارف کے کردار، اور سٹرائپ سبسکرپشن منطق ترتیب دینا۔" },
+          { "title": "فیچر ڈیولپمنٹ", "description": "Next.js اور API اینڈ پوائنٹس کا استعمال کرتے ہوئے اپنے ساس کی بنیادی قدر کی تجویز تیار کریں۔" },
+          { "title": "ایڈمن اور کرایہ دار پورٹلز", "description": "ایسے انٹرفیس بنانا جہاں آپ کے صارفین اپنی ٹیموں کا نظم کرتے ہیں، اور جہاں آپ پلیٹ فارم کا نظم کرتے ہیں۔" },
+          { "title": "تناؤ کی جانچ اور لانچ", "description": "اس بات کو یقینی بنانے کے لیے کہ کلاؤڈ انفراسٹرکچر لچکدار طریقے سے اسکیل کرتا ہے ہائی ٹریفک کی نقل کرنا۔" }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Node.js / NestJS",
+          "PostgreSQL / Supabase",
+          "Stripe (Billing & Connect)",
+          "Redis (Caching & Queues)",
+          "AWS / Vercel"
+        ],
+        "faq": [
+          { "question": "ملٹی ٹیننٹ آرکیٹیکچر کیا ہے؟", "answer": "کثیر کرایہ داری کا مطلب ہے کہ سافٹ ویئر کی ایک مثال متعدد صارفین (کرایہ داروں) کو فراہم کرتی ہے۔ ہم ڈیٹا بیس کو احتیاط سے ڈیزائن کرتے ہیں جیسی رو-لیول سیکیورٹی (RLS) کا استعمال کرتے ہوئے اس بات کو یقینی بنانے کے لیے کہ کرایہ دار A کبھی بھی کرایہ دار B کے ڈیٹا تک بالکل رسائی حاصل نہیں کرسکتا۔" },
+          { "question": "کیا آپ استعمال پر مبنی (میٹرڈ) بلنگ کو سنبھال سکتے ہیں؟", "answer": "جی ہاں. معیاری فلیٹ ریٹ سبسکرپشنز کے علاوہ، ہم سٹرائپ میٹرڈ بلنگ کو ضم کر سکتے ہیں تاکہ صارفین سے درست کھپت کی بنیاد پر چارج کیا جا سکے (مثلاً، کی گئی API کالز کی تعداد، استعمال شدہ اسٹوریج کا GB، یا بھیجی گئی ای میلز)۔" }
+        ]
+      },
+      "metaTitle": "SaaS ڈیولپمنٹ کمپنی | B2B SaaS ایجنسی",
+      "metaDescription": "اسکیل ایبل، محفوظ ملٹی ٹیننٹ SaaS ایپلیکیشنز بنائیں۔ ہم Next.js، PostgreSQL، Stripe بلنگ، اور قابل توسیع کلاؤڈ فن تعمیر میں مہارت رکھتے ہیں۔"
+    },
+    "ar": {
+      "name": "تطوير SaaS (البرمجيات كخدمة)",
+      "shortDescription": "بناء منصات SaaS قابلة للتطوير ومتعددة المستأجرين (Multi-tenant) من المفهوم إلى الإطلاق.",
+      "fullDescription": "تعتبر البرمجيات كخدمة (SaaS) المعيار الذهبي للإيرادات المتكررة، لكن بناء منصة SaaS قوية يتطلب بنية هندسية معقدة. تتولى خدمات تطوير SaaS الخاصة بنا المهام الصعبة، حيث تأخذ منتجك من المفهوم الأولي إلى تطبيق سحابي (Cloud-native) قابل للتطوير بالكامل. نقوم بهندسة قواعد بيانات متعددة المستأجرين للحفاظ على بيانات العملاء معزولة وآمنة تمامًا. كما نطبق نظامًا معقدًا للتحكم في الوصول القائم على الأدوار (RBAC)، ومستويات فوترة اشتراك متدرجة عبر Stripe، ولوحات تحكم إدارية شاملة لإدارة المستخدمين. باستخدام حزمة تقنية حديثة مثل Next.js و Node.js و PostgreSQL، نبني منصات SaaS مصممة للتعامل مع آلاف المستخدمين المتزامنين بأوقات استجابة في أجزاء من الثانية.",
+      "features": [
+        "بنية قاعدة بيانات آمنة متعددة المستأجرين (Multi-Tenant)",
+        "فوترة الاشتراكات والاستخدام المقاس (Stripe Billing)",
+        "التحكم في الوصول القائم على الأدوار (RBAC) وإدارة الفِرق",
+        "لوحات تحكم المسؤول المتميز (Super-Admin) وتحليلات المنصة",
+        "العلامة البيضاء (White-Labeling) ودعم النطاق المخصص",
+        "تصميم يعتمد على واجهة برمجة التطبيقات (API-First) لعمليات تكامل الجهات الخارجية"
+      ],
+      "benefits": [
+        "تسريع وقت الوصول إلى السوق بوحدات SaaS مسبقة الصنع",
+        "التوسع بسهولة مع البنية التحتية السحابية لـ AWS/Vercel",
+        "ضمان أمان البيانات والامتثال لـ GDPR/CCPA",
+        "تعظيم الإيرادات المتكررة مع مستويات فوترة مرنة",
+        "تقليل معدل التخلي (Churn) من خلال واجهات مستخدم سريعة الاستجابة وعالية الأداء"
+      ],
+      "content": {
+        "process": [
+          { "title": "بنية النظام الهندسي", "description": "تصميم مخطط قاعدة البيانات للمستأجرين المتعددين (أمان مستوى الصف RLS مقابل المخططات المنفصلة)." },
+          { "title": "البنية التحتية الأساسية", "description": "إعداد المصادقة، وأدوار المستخدمين، ومنطق اشتراك Stripe قبل المساس بواجهة المستخدم." },
+          { "title": "تطوير الميزات", "description": "بناء القيمة الأساسية لـ SaaS الخاص بك باستخدام Next.js ونقاط نهاية API." },
+          { "title": "بوابات الإدارة والمستأجرين", "description": "إنشاء الواجهات حيث يدير المستخدمون فرقهم، وحيث تدير أنت المنصة." },
+          { "title": "اختبار التحمل (Stress Testing) والإطلاق", "description": "محاكاة حركة المرور العالية لضمان توسع البنية التحتية السحابية بمرونة." }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Node.js / NestJS",
+          "PostgreSQL / Supabase",
+          "Stripe (للأسعار والربط)",
+          "Redis (للتخزين المؤقت وقوائم الانتظار)",
+          "AWS / Vercel"
+        ],
+        "faq": [
+          { "question": "ما هي الهندسة المعمارية متعددة المستأجرين (Multi-Tenant)؟", "answer": "تعدد المستأجرين يعني أن نسخة واحدة من البرنامج تخدم عدة عملاء (مستأجرين). نحن نصمم قاعدة البيانات بدقة باستخدام تقنيات مثل أمان مستوى الصف (RLS) للتأكد من أن المستأجر (أ) لا يمكنه مطلقًا الوصول إلى بيانات المستأجر (ب)." },
+          { "question": "هل يمكنك التعامل مع الفوترة القائمة على الاستخدام (المقاسة)؟", "answer": "نعم. بخلاف الاشتراكات القياسية ذات السعر الثابت، يمكننا دمج Stripe Metered Billing لفرض رسوم على المستخدمين بناءً على الاستهلاك الدقيق (مثل عدد مكالمات API التي تم إجراؤها، أو غيغابايت التخزين المستخدم، أو رسائل البريد الإلكتروني المرسلة)." }
+        ]
+      },
+      "metaTitle": "شركة تطوير SaaS | وكالة B2B SaaS",
+      "metaDescription": "بناء تطبيقات SaaS آمنة وقابلة للتطوير ومتعددة المستأجرين. نحن متخصصون في Next.js و PostgreSQL و Stripe وبنية السحابة القابلة للتطوير."
+    }
+  }
+}

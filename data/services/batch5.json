@@ -1,0 +1,430 @@
+{
+  "code-review-refactoring": {
+    "en": {
+      "name": "Code Review & Refactoring",
+      "shortDescription": "Expert code audits and refactoring to improve maintainability.",
+      "fullDescription": "Ensure the longevity and security of your digital products with our expert Code Review & Refactoring services. Over time, software accumulates technical debt, leading to slow performance, security vulnerabilities, and difficult maintenance. Our seasoned engineers conduct comprehensive code audits, analyzing your architecture against industry best practices. We then provide a strategic roadmap and perform incremental refactoring to optimize performance, improve test coverage, and modernize legacy systems without disrupting your ongoing business operations.",
+      "features": [
+        "Code Quality Audit",
+        "Architecture Review",
+        "Security Review",
+        "Performance Analysis",
+        "Refactoring Roadmap",
+        "Incremental Refactoring",
+        "Test Coverage Improvement",
+        "Documentation Updates"
+      ],
+      "benefits": [
+        "Reduced Technical Debt",
+        "Improved System Performance",
+        "Enhanced Security Posture",
+        "Easier Onboarding for New Developers",
+        "Lower Long-Term Maintenance Costs"
+      ],
+      "content": {
+        "process": [
+          { "title": "Initial Assessment", "description": "Reviewing the current codebase, dependencies, and architecture." },
+          { "title": "Automated Analysis", "description": "Running static analysis tools to identify immediate vulnerabilities." },
+          { "title": "Manual Code Review", "description": "Expert engineers reviewing business logic and structural integrity." },
+          { "title": "Refactoring Plan", "description": "Prioritizing critical fixes and outlining an incremental upgrade path." },
+          { "title": "Execution & Testing", "description": "Refactoring the code while increasing unit and integration test coverage." }
+        ],
+        "technologies": [
+          "SonarQube",
+          "ESLint",
+          "Jest",
+          "TypeScript",
+          "Docker",
+          "GitHub Actions"
+        ],
+        "faq": [
+          { "question": "Will refactoring break my existing application?", "answer": "No. We use an incremental approach backed by robust unit testing to ensure that functionality remains intact while the underlying code structure is improved." },
+          { "question": "Do you only review specific languages?", "answer": "While we specialize in JavaScript/TypeScript ecosystems (React, Node.js), our senior engineers can audit Python, Java, and PHP codebases as well." }
+        ]
+      },
+      "metaTitle": "Code Review & Refactoring Services | Tech Debt Reduction",
+      "metaDescription": "Improve software maintainability with expert code audits and refactoring. We reduce technical debt, enhance security, and optimize performance."
+    },
+    "tr": {
+      "name": "Kod İncelemesi ve Yeniden Düzenleme",
+      "shortDescription": "Sürdürülebilirliği artırmak için uzman kod denetimleri ve yeniden düzenleme.",
+      "fullDescription": "Uzman Kod İncelemesi ve Yeniden Düzenleme hizmetlerimizle dijital ürünlerinizin uzun ömürlülüğünü ve güvenliğini sağlayın. Zamanla yazılımlar teknik borç biriktirerek yavaş performansa, güvenlik açıklarına ve zor bakıma yol açar. Deneyimli mühendislerimiz kapsamlı kod denetimleri yürütür ve mimarinizi sektördeki en iyi uygulamalara göre analiz eder. Ardından stratejik bir yol haritası sunarız ve devam eden ticari operasyonlarınızı kesintiye uğratmadan performansı optimize etmek, test kapsamını iyileştirmek ve eski sistemleri modernize etmek için aşamalı yeniden düzenleme (refactoring) gerçekleştiririz.",
+      "features": [
+        "Kod Kalitesi Denetimi",
+        "Mimari İncelemesi",
+        "Güvenlik İncelemesi",
+        "Performans Analizi",
+        "Yeniden Düzenleme Yol Haritası",
+        "Aşamalı Yeniden Düzenleme",
+        "Test Kapsamının İyileştirilmesi",
+        "Dokümantasyon Güncellemeleri"
+      ],
+      "benefits": [
+        "Azaltılmış Teknik Borç",
+        "Gelişmiş Sistem Performansı",
+        "Geliştirilmiş Güvenlik Duruşu",
+        "Yeni Geliştiriciler İçin Daha Kolay Oryantasyon",
+        "Daha Düşük Uzun Vadeli Bakım Maliyetleri"
+      ],
+      "content": {
+        "process": [
+          { "title": "İlk Değerlendirme", "description": "Mevcut kod tabanını, bağımlılıkları ve mimariyi inceleme." },
+          { "title": "Otomatik Analiz", "description": "Acil güvenlik açıklarını belirlemek için statik analiz araçlarını çalıştırma." },
+          { "title": "Manuel Kod İncelemesi", "description": "Uzman mühendislerin iş mantığını ve yapısal bütünlüğü gözden geçirmesi." },
+          { "title": "Yeniden Düzenleme Planı", "description": "Kritik düzeltmelere öncelik verme ve aşamalı bir yükseltme yolu belirleme." },
+          { "title": "Yürütme ve Test Etme", "description": "Birim ve entegrasyon test kapsamını artırırken kodu yeniden düzenleme." }
+        ],
+        "technologies": [
+          "SonarQube",
+          "ESLint",
+          "Jest",
+          "TypeScript"
+        ],
+        "faq": [
+          { "question": "Yeniden düzenleme mevcut uygulamamı bozar mı?", "answer": "Hayır. Temeldeki kod yapısı iyileştirilirken işlevselliğin bozulmadan kalmasını sağlamak için sağlam birim testleriyle desteklenen artımlı bir yaklaşım kullanıyoruz." },
+          { "question": "Sadece belirli dilleri mi inceliyorsunuz?", "answer": "JavaScript/TypeScript ekosistemlerinde (React, Node.js) uzmanlaşmış olsak da, kıdemli mühendislerimiz Python, Java ve PHP kod tabanlarını da denetleyebilir." }
+        ]
+      },
+      "metaTitle": "Kod İnceleme ve Refactoring Hizmetleri | Teknik Borç Azaltma",
+      "metaDescription": "Uzman kod denetimleri ve yeniden düzenleme ile yazılımın sürdürülebilirliğini artırın. Teknik borcu azaltıyor, güvenliği artırıyor ve performansı optimize ediyoruz."
+    },
+    "de": {
+      "name": "Code-Review & Refactoring",
+      "shortDescription": "Experten-Code-Audits und Refactoring zur Verbesserung der Wartbarkeit.",
+      "fullDescription": "Sichern Sie die Langlebigkeit und Sicherheit Ihrer digitalen Produkte mit unseren Experten-Services für Code-Review & Refactoring. Im Laufe der Zeit sammelt Software technische Schulden an, was zu langsamer Leistung, Sicherheitslücken und schwieriger Wartung führt. Unsere erfahrenen Ingenieure führen umfassende Code-Audits durch und analysieren Ihre Architektur anhand von Branchen-Best-Practices. Anschließend erstellen wir eine strategische Roadmap und führen schrittweises Refactoring durch, um die Leistung zu optimieren, die Testabdeckung zu verbessern und Legacy-Systeme zu modernisieren, ohne Ihre laufenden Geschäftsabläufe zu unterbrechen.",
+      "features": [
+        "Code-Qualitäts-Audit",
+        "Architekturüberprüfung",
+        "Sicherheitsüberprüfung",
+        "Leistungsanalyse",
+        "Refactoring-Roadmap",
+        "Schrittweises Refactoring",
+        "Verbesserung der Testabdeckung",
+        "Dokumentationsaktualisierungen"
+      ],
+      "benefits": [
+        "Reduzierte technische Schulden",
+        "Verbesserte Systemleistung",
+        "Erhöhte Sicherheit",
+        "Einfacheres Onboarding für neue Entwickler",
+        "Niedrigere langfristige Wartungskosten"
+      ],
+      "content": {
+        "process": [
+          { "title": "Ersteinschätzung", "description": "Überprüfung der aktuellen Codebasis, Abhängigkeiten und Architektur." },
+          { "title": "Automatisierte Analyse", "description": "Ausführung statischer Analysetools zur Identifizierung unmittelbarer Schwachstellen." },
+          { "title": "Manuelles Code-Review", "description": "Erfahrene Ingenieure überprüfen die Geschäftslogik und die strukturelle Integrität." },
+          { "title": "Refactoring-Plan", "description": "Priorisierung kritischer Fehler und Skizzierung eines schrittweisen Upgrade-Pfads." },
+          { "title": "Ausführung & Tests", "description": "Refactoring des Codes bei gleichzeitiger Erhöhung der Unit- und Integrationstest-Abdeckung." }
+        ],
+        "technologies": [
+          "SonarQube",
+          "ESLint",
+          "Jest",
+          "TypeScript"
+        ],
+        "faq": [
+          { "question": "Wird das Refactoring meine bestehende Anwendung beeinträchtigen?", "answer": "Nein. Wir verwenden einen inkrementellen Ansatz, der durch robuste Unit-Tests unterstützt wird, um sicherzustellen, dass die Funktionalität erhalten bleibt, während die zugrunde liegende Codestruktur verbessert wird." },
+          { "question": "Überprüfen Sie nur bestimmte Sprachen?", "answer": "Während wir uns auf JavaScript/TypeScript-Ökosysteme (React, Node.js) spezialisiert haben, können unsere leitenden Ingenieure auch Python-, Java- und PHP-Codebasen prüfen." }
+        ]
+      },
+      "metaTitle": "Code-Review & Refactoring-Dienste | Reduzierung technischer Schulden",
+      "metaDescription": "Verbessern Sie die Wartbarkeit von Software durch fachkundige Code-Audits und Refactoring. Wir reduzieren technische Schulden und optimieren die Leistung."
+    },
+    "ur": {
+      "name": "کوڈ کا جائزہ اور ری فیکٹرنگ",
+      "shortDescription": "بحالی کو بہتر بنانے کے لیے ماہر کوڈ آڈٹ اور ری فیکٹرنگ۔",
+      "fullDescription": "ہماری ماہر کوڈ ریویو اور ری فیکٹرنگ سروسز کے ساتھ اپنی ڈیجیٹل مصنوعات کی لمبی عمر اور سیکیورٹی کو یقینی بنائیں۔ وقت گزرنے کے ساتھ، سافٹ ویئر تکنیکی قرض جمع کرتا ہے، جس کی وجہ سے کارکردگی سست ہوتی ہے، سیکیورٹی کے خطرات پیدا ہوتے ہیں، اور مشکل دیکھ بھال ہوتی ہے۔ ہمارے تجربہ کار انجینئرز صنعت کے بہترین طریقوں کے خلاف آپ کے فن تعمیر کا تجزیہ کرتے ہوئے جامع کوڈ آڈٹ کرتے ہیں۔ اس کے بعد ہم ایک اسٹریٹجک روڈ میپ فراہم کرتے ہیں اور آپ کے جاری کاروباری کاموں میں خلل ڈالے بغیر کارکردگی کو بہتر بنانے، ٹیسٹ کوریج کو بہتر بنانے، اور پرانے سسٹمز کو جدید بنانے کے لیے انکریمنٹل ری فیکٹرنگ کرتے ہیں۔",
+      "features": [
+        "کوڈ کوالٹی آڈٹ",
+        "آرکیٹیکچر کا جائزہ",
+        "سیکیورٹی کا جائزہ",
+        "کارکردگی کا تجزیہ",
+        "ری فیکٹرنگ روڈ میپ",
+        "انکریمنٹل ری فیکٹرنگ",
+        "ٹیسٹ کوریج کی بہتری",
+        "دستاویزات کی تازہ کاری"
+      ],
+      "benefits": [
+        "کم شدہ تکنیکی قرض",
+        "نظام کی کارکردگی میں بہتری",
+        "بہتر سیکورٹی کی کرنسی",
+        "نئے ڈیولپرز کے لیے آسان آن بورڈنگ",
+        "طویل مدتی دیکھ بھال کے اخراجات میں کمی"
+      ],
+      "content": {
+        "process": [
+          { "title": "ابتدائی تشخیص", "description": "موجودہ کوڈ بیس، انحصار، اور فن تعمیر کا جائزہ لینا۔" },
+          { "title": "خودکار تجزیہ", "description": "فوری خطرات کی نشاندہی کرنے کے لیے جامد تجزیہ ٹولز چلانا۔" },
+          { "title": "دستی کوڈ کا جائزہ", "description": "ماہر انجینئرز کاروباری منطق اور ساختی سالمیت کا جائزہ لے رہے ہیں۔" },
+          { "title": "ری فیکٹرنگ پلان", "description": "اہم اصلاحات کو ترجیح دینا اور بتدریج اپ گریڈ کے راستے کا خاکہ بنانا۔" },
+          { "title": "عمل درآمد اور ٹیسٹنگ", "description": "یونٹ اور انضمام ٹیسٹ کوریج کو بڑھاتے ہوئے کوڈ کو ری فیکٹر کرنا۔" }
+        ],
+        "technologies": [
+          "SonarQube",
+          "ESLint",
+          "Jest",
+          "TypeScript"
+        ],
+        "faq": [
+          { "question": "کیا ری فیکٹرنگ میری موجودہ ایپلیکیشن کو توڑ دے گی؟", "answer": "نہیں، ہم مضبوط یونٹ ٹیسٹنگ کے ذریعے حمایت یافتہ ایک اضافی نقطہ نظر استعمال کرتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ فعالیت برقرار ہے جبکہ بنیادی کوڈ کی ساخت بہتر ہوتی ہے۔" },
+          { "question": "کیا آپ صرف مخصوص زبانوں کا جائزہ لیتے ہیں؟", "answer": "اگرچہ ہم JavaScript/TypeScript ایکو سسٹمز (React, Node.js) میں مہارت رکھتے ہیں، ہمارے سینئر انجینئرز Python، Java، اور PHP کوڈ بیسز کا بھی آڈٹ کر سکتے ہیں۔" }
+        ]
+      },
+      "metaTitle": "کوڈ ریویو اور ری فیکٹرنگ سروسز | ٹیک ڈیبٹ میں کمی",
+      "metaDescription": "ماہر کوڈ آڈٹ اور ری فیکٹرنگ کے ساتھ سافٹ ویئر کی دیکھ بھال کو بہتر بنائیں۔ ہم تکنیکی قرض کو کم کرتے ہیں، سیکورٹی کو بڑھاتے ہیں، اور کارکردگی کو بہتر بناتے ہیں۔"
+    },
+    "ar": {
+      "name": "مراجعة الكود وإعادة الهيكلة",
+      "shortDescription": "تدقيق الكود المتخصص وإعادة الهيكلة لتحسين قابلية الصيانة.",
+      "fullDescription": "تأكد من طول عمر وأمان منتجاتك الرقمية من خلال خدمات مراجعة الكود وإعادة الهيكلة (Refactoring) المتخصصة لدينا. بمرور الوقت، تتراكم الديون التقنية للبرامج، مما يؤدي إلى بطء الأداء، ونقاط الضعف الأمنية، وصعوبة الصيانة. يقوم مهندسونا المتمرسون بإجراء عمليات تدقيق شاملة للكود، وتحليل بنيتك مقابل أفضل الممارسات الصناعية. ثم نقدم خارطة طريق استراتيجية ونقوم بإعادة هيكلة تدريجية لتحسين الأداء، وتحسين تغطية الاختبار، وتحديث الأنظمة القديمة دون تعطيل عمليات عملك الجارية.",
+      "features": [
+        "تدقيق جودة الكود",
+        "مراجعة البنية",
+        "مراجعة أمنية",
+        "تحليل الأداء",
+        "خارطة طريق إعادة الهيكلة",
+        "إعادة هيكلة تدريجية",
+        "تحسين تغطية الاختبار",
+        "تحديثات الوثائق"
+      ],
+      "benefits": [
+        "انخفاض الدين التقني",
+        "تحسين أداء النظام",
+        "تعزيز الموقف الأمني",
+        "تأهيل أسهل للمطورين الجدد",
+        "انخفاض تكاليف الصيانة طويلة الأجل"
+      ],
+      "content": {
+        "process": [
+          { "title": "التقييم الأولي", "description": "مراجعة قاعدة التعليمات البرمجية الحالية والتبعيات والهندسة المعمارية." },
+          { "title": "التحليل الآلي", "description": "تشغيل أدوات التحليل الثابت لتحديد نقاط الضعف الفورية." },
+          { "title": "مراجعة الكود اليدوية", "description": "مهندسون خبراء يراجعون منطق العمل والنزاهة الهيكلية." },
+          { "title": "خطة إعادة الهيكلة", "description": "إعطاء الأولوية للإصلاحات الحاسمة وتحديد مسار ترقية تدريجي." },
+          { "title": "التنفيذ والاختبار", "description": "إعادة هيكلة التعليمات البرمجية مع زيادة تغطية اختبار الوحدة والتكامل." }
+        ],
+        "technologies": [
+          "SonarQube",
+          "ESLint",
+          "Jest",
+          "TypeScript"
+        ],
+        "faq": [
+          { "question": "هل ستؤدي إعادة الهيكلة إلى تعطل تطبيقي الحالي؟", "answer": "لا. نحن نستخدم نهجًا تدريجيًا مدعومًا باختبارات وحدة قوية لضمان بقاء الوظيفة سليمة بينما يتم تحسين بنية الكود الأساسية." },
+          { "question": "هل تراجعون لغات محددة فقط؟", "answer": "على الرغم من أننا متخصصون في أنظمة JavaScript / TypeScript (React ، Node.js) ، يمكن لكبار المهندسين لدينا تدقيق قواعد أكواد Python و Java و PHP أيضًا." }
+        ]
+      },
+      "metaTitle": "خدمات مراجعة الكود وإعادة الهيكلة | الحد من الديون التقنية",
+      "metaDescription": "قم بتحسين صيانة البرامج من خلال عمليات تدقيق التعليمات البرمجية وإعادة الهيكلة من قبل الخبراء. نحن نقلل الديون التقنية ونعزز الأمان ونحسن الأداء."
+    }
+  },
+  "cross-platform-apps": {
+    "en": {
+      "name": "Cross-Platform Apps",
+      "shortDescription": "Build iOS and Android apps from a single codebase with React Native or Flutter.",
+      "fullDescription": "Maximize your reach while minimizing development time and costs with our Cross-Platform App development services. By utilizing modern frameworks like React Native and Flutter, we engineer applications that look and feel completely native on both iOS and Android—all from a single, unified codebase. This approach guarantees faster time-to-market, synchronized feature releases across platforms, and significantly lower long-term maintenance overhead, allowing you to focus your budget on innovation and growth.",
+      "features": [
+        "Single Codebase",
+        "Native Performance",
+        "Hot Reload Development",
+        "Platform-Specific UI",
+        "Code Sharing with Web",
+        "Over-The-Air (OTA) Updates"
+      ],
+      "benefits": [
+        "Faster Time-to-Market",
+        "Lower Development Costs",
+        "Simplified Maintenance",
+        "Uniform Brand Experience",
+        "Simultaneous Launch on App Stores"
+      ],
+      "content": {
+        "process": [
+          { "title": "UI/UX Design", "description": "Creating cross-platform designs that adapt naturally to iOS and Android guidelines." },
+          { "title": "Architecture Setup", "description": "Structuring the codebase for maximum reusability and scalability." },
+          { "title": "Development", "description": "Writing the core application logic using React Native or Flutter." },
+          { "title": "Native Modules Integration", "description": "Bridging native device features (camera, GPS) when necessary." },
+          { "title": "App Store Submission", "description": "Handling the rigorous approval processes for both Apple App Store and Google Play." }
+        ],
+        "technologies": [
+          "React Native",
+          "Flutter",
+          "Expo",
+          "Firebase",
+          "Redux",
+          "Dart"
+        ],
+        "faq": [
+          { "question": "Will my app feel slow compared to a fully native app?", "answer": "Not at all. Modern cross-platform frameworks compile down to native code and deliver 60fps performance, making them indistinguishable from apps built natively with Swift or Kotlin." },
+          { "question": "What happens if we need a specific device feature, like Bluetooth?", "answer": "We can easily write custom native bridges or use existing community modules to connect your cross-platform app to any device-specific hardware API." }
+        ]
+      },
+      "metaTitle": "Cross-Platform App Development | React Native & Flutter",
+      "metaDescription": "Develop high-performance iOS and Android applications from a single codebase using React Native or Flutter. Save time and reduce development costs."
+    },
+    "tr": {
+      "name": "Çapraz Platform Uygulamaları",
+      "shortDescription": "React Native veya Flutter ile tek bir kod tabanından iOS ve Android uygulamaları oluşturun.",
+      "fullDescription": "Çapraz Platform Uygulama geliştirme hizmetlerimizle geliştirme süresini ve maliyetlerini en aza indirirken erişiminizi en üst düzeye çıkarın. React Native ve Flutter gibi modern çerçeveleri kullanarak, tek ve birleşik bir kod tabanından hem iOS hem de Android'de tamamen yerel (native) görünen ve hissettiren uygulamalar geliştiriyoruz. Bu yaklaşım, pazara daha hızlı çıkış, platformlar arası senkronize özellik yayınları ve önemli ölçüde daha düşük uzun vadeli bakım yükü sağlayarak bütçenizi inovasyon ve büyümeye odaklamanıza olanak tanır.",
+      "features": [
+        "Tek Kod Tabanı",
+        "Yerel Performans",
+        "Hızlı Yeniden Yükleme (Hot Reload)",
+        "Platforma Özel UI",
+        "Web ile Kod Paylaşımı",
+        "Kablosuz (OTA) Güncellemeler"
+      ],
+      "benefits": [
+        "Pazara Daha Hızlı Çıkış",
+        "Düşük Geliştirme Maliyetleri",
+        "Basitleştirilmiş Bakım",
+        "Tek Tip Marka Deneyimi",
+        "Uygulama Mağazalarında Eşzamanlı Lansman"
+      ],
+      "content": {
+        "process": [
+          { "title": "UI/UX Tasarımı", "description": "iOS ve Android yönergelerine doğal olarak uyum sağlayan platformlar arası tasarımlar oluşturma." },
+          { "title": "Mimari Kurulum", "description": "Maksimum yeniden kullanılabilirlik ve ölçeklenebilirlik için kod tabanını yapılandırma." },
+          { "title": "Geliştirme", "description": "React Native veya Flutter kullanarak temel uygulama mantığını yazma." },
+          { "title": "Yerel Modül Entegrasyonu", "description": "Gerektiğinde yerel cihaz özelliklerini (kamera, GPS) bağlama." },
+          { "title": "App Store Gönderimi", "description": "Hem Apple App Store hem de Google Play için zorlu onay süreçlerini yönetme." }
+        ],
+        "technologies": [
+          "React Native",
+          "Flutter",
+          "Expo",
+          "Firebase"
+        ],
+        "faq": [
+          { "question": "Uygulamam tamamen yerel bir uygulamaya kıyasla yavaş mı hissettirecek?", "answer": "Kesinlikle hayır. Modern çapraz platform çerçeveleri yerel koda derlenir ve 60 fps performans sunarak onları Swift veya Kotlin ile yerel olarak oluşturulmuş uygulamalardan ayırt edilemez hale getirir." },
+          { "question": "Bluetooth gibi belirli bir cihaza özel özelliğe ihtiyacımız olursa ne olur?", "answer": "Çapraz platform uygulamanızı cihaza özgü herhangi bir donanım API'sine bağlamak için kolayca özel yerel köprüler yazabilir veya mevcut topluluk modüllerini kullanabiliriz." }
+        ]
+      },
+      "metaTitle": "Çapraz Platform Uygulama Geliştirme | React Native ve Flutter",
+      "metaDescription": "React Native veya Flutter kullanarak tek bir kod tabanından yüksek performanslı iOS ve Android uygulamaları geliştirin. Zamandan tasarruf edin ve maliyetleri azaltın."
+    },
+    "de": {
+      "name": "Cross-Platform-Apps",
+      "shortDescription": "Erstellen Sie iOS- und Android-Apps aus einer einzigen Codebasis mit React Native oder Flutter.",
+      "fullDescription": "Maximieren Sie Ihre Reichweite und minimieren Sie gleichzeitig Entwicklungszeit und -kosten mit unseren Entwicklungsdiensten für Cross-Platform-Apps. Durch die Nutzung moderner Frameworks wie React Native und Flutter entwickeln wir Anwendungen, die auf iOS und Android komplett nativ aussehen und sich anfühlen – alles aus einer einzigen, einheitlichen Codebasis. Dieser Ansatz garantiert eine schnellere Markteinführung, synchronisierte Funktionsfreigaben auf allen Plattformen und deutlich geringere langfristige Wartungskosten, sodass Sie Ihr Budget auf Innovation und Wachstum konzentrieren können.",
+      "features": [
+        "Einzelne Codebasis",
+        "Native Leistung",
+        "Hot Reload-Entwicklung",
+        "Plattformspezifische UI",
+        "Code-Sharing mit dem Web",
+        "Over-The-Air (OTA) Updates"
+      ],
+      "benefits": [
+        "Schnellere Markteinführung",
+        "Niedrigere Entwicklungskosten",
+        "Vereinfachte Wartung",
+        "Einheitliches Markenerlebnis",
+        "Gleichzeitiger Start in den App Stores"
+      ],
+      "content": {
+        "process": [
+          { "title": "UI/UX-Design", "description": "Erstellung plattformübergreifender Designs, die sich auf natürliche Weise an iOS- und Android-Richtlinien anpassen." },
+          { "title": "Architektur-Setup", "description": "Strukturierung der Codebasis für maximale Wiederverwendbarkeit und Skalierbarkeit." },
+          { "title": "Entwicklung", "description": "Schreiben der Kernanwendungslogik mit React Native oder Flutter." },
+          { "title": "Integration nativer Module", "description": "Überbrückung nativer Gerätefunktionen (Kamera, GPS) bei Bedarf." },
+          { "title": "Einreichung im App Store", "description": "Bewältigung der strengen Genehmigungsprozesse für den Apple App Store und Google Play." }
+        ],
+        "technologies": [
+          "React Native",
+          "Flutter",
+          "Expo",
+          "Firebase"
+        ],
+        "faq": [
+          { "question": "Wird sich meine App im Vergleich zu einer vollständig nativen App langsam anfühlen?", "answer": "Ganz und gar nicht. Moderne Cross-Platform-Frameworks werden zu nativem Code kompiliert und liefern eine Leistung von 60fps, sodass sie nicht von Apps zu unterscheiden sind, die nativ mit Swift oder Kotlin erstellt wurden." },
+          { "question": "Was passiert, wenn wir eine bestimmte Gerätefunktion wie Bluetooth benötigen?", "answer": "Wir können ganz einfach benutzerdefinierte native Brücken schreiben oder vorhandene Community-Module verwenden, um Ihre plattformübergreifende App mit jeder gerätespezifischen Hardware-API zu verbinden." }
+        ]
+      },
+      "metaTitle": "Cross-Platform-App-Entwicklung | React Native & Flutter",
+      "metaDescription": "Entwickeln Sie hochleistungsfähige iOS- und Android-Anwendungen aus einer einzigen Codebasis mit React Native oder Flutter. Sparen Sie Zeit und Kosten."
+    },
+    "ur": {
+      "name": "کراس پلیٹ فارم ایپس",
+      "shortDescription": "React Native یا Flutter کے ساتھ ایک کوڈ بیس سے iOS اور Android ایپس بنائیں۔",
+      "fullDescription": "ہماری کراس پلیٹ فارم ایپ ڈویلپمنٹ سروسز کے ساتھ ترقی کے وقت اور اخراجات کو کم کرتے ہوئے اپنی رسائی کو زیادہ سے زیادہ کریں۔ React Native اور Flutter جیسے جدید فریم ورکس کا استعمال کرتے ہوئے، ہم ایسی ایپلیکیشنز بناتے ہیں جو iOS اور Android دونوں پر مکمل طور پر مقامی (native) نظر آتی ہیں اور محسوس ہوتی ہیں — یہ سب ایک ہی کوڈ بیس سے۔ یہ نقطہ نظر تیزی سے مارکیٹ میں آنے کے وقت، پلیٹ فارمز میں مطابقت پذیر خصوصیت کی ریلیز، اور نمایاں طور پر کم طویل مدتی دیکھ بھال کے اوور ہیڈ کی ضمانت دیتا ہے، جس سے آپ اپنے بجٹ کو جدت اور ترقی پر مرکوز کر سکتے ہیں۔",
+      "features": [
+        "سنگل کوڈ بیس",
+        "مقامی کارکردگی",
+        "ہاٹ ری لوڈ ڈیولپمنٹ",
+        "پلیٹ فارم کے لیے مخصوص UI",
+        "ویب کے ساتھ کوڈ شیئرنگ",
+        "اوور دی ایئر (OTA) اپڈیٹس"
+      ],
+      "benefits": [
+        "مارکیٹ کا تیز تر وقت",
+        "کم ترقیاتی اخراجات",
+        "آسان دیکھ بھال",
+        "یکساں برانڈ کا تجربہ",
+        "ایپ اسٹورز پر بیک وقت لانچ"
+      ],
+      "content": {
+        "process": [
+          { "title": "UI/UX ڈیزائن", "description": "کراس پلیٹ فارم ڈیزائن بنانا جو قدرتی طور پر iOS اور Android کے رہنما خطوط کے مطابق ہوں۔" },
+          { "title": "آرکیٹیکچر سیٹ اپ", "description": "زیادہ سے زیادہ دوبارہ قابل استعمال اور اسکیل ایبلٹی کے لیے کوڈ بیس کی تشکیل۔" },
+          { "title": "ترقی", "description": "React Native یا Flutter کا استعمال کرتے ہوئے بنیادی ایپلیکیشن کی منطق لکھنا۔" },
+          { "title": "مقامی ماڈیولز کا انضمام", "description": "ضرورت پڑنے پر مقامی ڈیوائس کی خصوصیات (کیمرہ، GPS) کو پُل کرنا۔" },
+          { "title": "ایپ اسٹور جمع کرانا", "description": "ایپل ایپ اسٹور اور گوگل پلے دونوں کے لیے منظوری کے سخت عمل کو سنبھالنا۔" }
+        ],
+        "technologies": [
+          "React Native",
+          "Flutter",
+          "Expo",
+          "Firebase"
+        ],
+        "faq": [
+          { "question": "کیا میری ایپ مکمل طور پر مقامی ایپ کے مقابلے میں سست محسوس ہوگی؟", "answer": "بالکل نہیں۔ جدید کراس پلیٹ فارم فریم ورک مقامی کوڈ میں مرتب ہوتے ہیں اور 60fps کی کارکردگی پیش کرتے ہیں، جو انہیں Swift یا Kotlin کے ساتھ مقامی طور پر بنائی گئی ایپس سے الگ نہیں کرتے ہیں۔" },
+          { "question": "کیا ہوتا ہے اگر ہمیں کسی مخصوص ڈیوائس کی خصوصیت کی ضرورت ہو، جیسے بلوٹوتھ؟", "answer": "ہم آپ کی کراس پلیٹ فارم ایپ کو کسی بھی ڈیوائس سے متعلق مخصوص ہارڈویئر API سے مربوط کرنے کے لیے اپنی مرضی کے مقامی پل آسانی سے لکھ سکتے ہیں یا موجودہ کمیونٹی ماڈیولز استعمال کر سکتے ہیں۔" }
+        ]
+      },
+      "metaTitle": "کراس پلیٹ فارم ایپ ڈیولپمنٹ | ری ایکٹ نیٹیو اور فلٹر",
+      "metaDescription": "React Native یا Flutter کا استعمال کرتے ہوئے ایک کوڈ بیس سے اعلی کارکردگی والی iOS اور Android ایپلیکیشنز تیار کریں۔ وقت کی بچت اور اخراجات کو کم کریں۔"
+    },
+    "ar": {
+      "name": "تطبيقات عبر المنصات",
+      "shortDescription": "بناء تطبيقات iOS و Android من قاعدة تعليمات برمجية واحدة باستخدام React Native أو Flutter.",
+      "fullDescription": "قم بزيادة وصولك إلى أقصى حد مع تقليل وقت التطوير والتكاليف من خلال خدمات تطوير التطبيقات عبر المنصات (Cross-Platform). من خلال استخدام أطر عمل حديثة مثل React Native و Flutter، نقوم بهندسة التطبيقات التي تبدو وكأنها أصلية (Native) تمامًا على كل من iOS و Android - كل ذلك من قاعدة تعليمات برمجية واحدة وموحدة. يضمن هذا النهج وقتًا أسرع للوصول إلى السوق، وإصدارات ميزات متزامنة عبر المنصات، وتقليل أعباء الصيانة على المدى الطويل بشكل كبير، مما يتيح لك تركيز ميزانيتك على الابتكار والنمو.",
+      "features": [
+        "قاعدة كود واحدة",
+        "أداء أصلي (Native)",
+        "تطوير Hot Reload",
+        "واجهة مستخدم خاصة بالمنصة",
+        "مشاركة الكود مع الويب",
+        "تحديثات عبر الهواء (OTA)"
+      ],
+      "benefits": [
+        "وقت وصول أسرع إلى السوق",
+        "تكاليف تطوير أقل",
+        "صيانة مبسطة",
+        "تجربة علامة تجارية موحدة",
+        "إطلاق متزامن في متاجر التطبيقات"
+      ],
+      "content": {
+        "process": [
+          { "title": "تصميم UI/UX", "description": "إنشاء تصميمات عبر المنصات تتكيف بشكل طبيعي مع إرشادات iOS و Android." },
+          { "title": "إعداد البنية", "description": "هيكلة قاعدة الكود لتحقيق أقصى قدر من قابلية إعادة الاستخدام وقابلية التوسع." },
+          { "title": "التطوير", "description": "كتابة منطق التطبيق الأساسي باستخدام React Native أو Flutter." },
+          { "title": "تكامل الوحدات الأصلية", "description": "سد ميزات الجهاز الأصلية (الكاميرا ، GPS) عند الضرورة." },
+          { "title": "التقديم لمتجر التطبيقات", "description": "التعامل مع عمليات الموافقة الصارمة لكل من Apple App Store و Google Play." }
+        ],
+        "technologies": [
+          "React Native",
+          "Flutter",
+          "Expo",
+          "Firebase"
+        ],
+        "faq": [
+          { "question": "هل سيبدو تطبيقي بطيئًا مقارنة بتطبيق أصلي بالكامل؟", "answer": "على الإطلاق. تُجمّع أطر العمل الحديثة عبر الأنظمة الأساسية إلى كود أصلي وتقدم أداءً بمعدل 60 إطارًا في الثانية، مما يجعلها لا يمكن تمييزها عن التطبيقات المصممة محليًا باستخدام Swift أو Kotlin." },
+          { "question": "ماذا يحدث إذا احتجنا إلى ميزة جهاز معينة، مثل البلوتوث؟", "answer": "يمكننا بسهولة كتابة جسور أصلية مخصصة أو استخدام وحدات المجتمع الحالية لربط تطبيقك عبر الأنظمة الأساسية بأي واجهة برمجة تطبيقات للأجهزة خاصة بالجهاز." }
+        ]
+      },
+      "metaTitle": "تطوير تطبيقات عبر المنصات | React Native و Flutter",
+      "metaDescription": "قم بتطوير تطبيقات iOS و Android عالية الأداء من قاعدة تعليمات برمجية واحدة باستخدام React Native أو Flutter. وفر الوقت وقلل التكاليف."
+    }
+  }
+}

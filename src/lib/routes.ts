@@ -63,6 +63,10 @@ export const pathSegments: Record<string, Record<Locale, string>> = {
   'features': { en: 'features', tr: 'ozellikler', de: 'funktionen', ur: 'khasusiyat', ar: 'almiizat' },
   'process': { en: 'process', tr: 'surec', de: 'prozess', ur: 'tariqa', ar: 'alamaliat' },
   'tech-stack': { en: 'tech-stack', tr: 'teknoloji', de: 'technologie', ur: 'technology', ar: 'altiqniat' },
+  // 'technologies' is the canonical tech segment (tech-stack redirects here).
+  // Listed after 'tech-stack' so the reverse lookup resolves the shared
+  // localized segment (e.g. 'altiqniat') to 'technologies'.
+  'technologies': { en: 'technologies', tr: 'teknoloji', de: 'technologie', ur: 'technology', ar: 'altiqniat' },
   'portfolio': { en: 'portfolio', tr: 'portfoy', de: 'portfolio', ur: 'portfolio', ar: 'almalaf' },
   'faq': { en: 'faq', tr: 'sss', de: 'faq', ur: 'sawalat', ar: 'asila' },
 };

@@ -1,0 +1,436 @@
+{
+  "inventory-management-systems": {
+    "en": {
+      "name": "Inventory Management Systems",
+      "shortDescription": "Create inventory tracking solutions with real-time stock visibility.",
+      "fullDescription": "Gain absolute control over your stock with our custom Inventory Management Systems (IMS). For retail, manufacturing, and logistics companies, losing track of inventory means losing money. We build tailored, high-performance systems that provide real-time, global visibility into your supply chain. Whether you need to integrate RFID/Barcode scanning on the warehouse floor, manage multi-location stock routing, or predict future demand using AI forecasting, we deliver solutions that prevent stockouts, eliminate dead stock, and perfectly synchronize with your existing e-commerce and ERP platforms.",
+      "features": [
+        "Real-Time Stock Tracking & Visibility",
+        "Multi-Warehouse & Multi-Location Routing",
+        "Barcode, QR & RFID Scanner Integration",
+        "Automated Reordering & Alerts",
+        "AI-Driven Demand Forecasting",
+        "Lot, Batch & Serial Number Tracking"
+      ],
+      "benefits": [
+        "Elimination of Costly Stockouts & Overstock",
+        "Massively Improved Warehouse Efficiency",
+        "Accurate Inventory Valuation for Finance",
+        "Seamless Syncing Across All Sales Channels",
+        "Reduction in Inventory Shrinkage & Loss"
+      ],
+      "content": {
+        "process": [
+          { "title": "Supply Chain Audit", "description": "Analyzing your current receiving, picking, packing, and shipping workflows." },
+          { "title": "System Architecture", "description": "Designing the database to handle high-frequency stock movements." },
+          { "title": "Hardware Integration", "description": "Connecting the software to physical barcode or RFID scanners used by warehouse staff." },
+          { "title": "Software Integration", "description": "Syncing the IMS with your Shopify, WooCommerce, or enterprise ERP systems." },
+          { "title": "Training & Rollout", "description": "Providing on-the-floor training for warehouse managers and operators." }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Node.js",
+          "PostgreSQL",
+          "Redis (for real-time caching)",
+          "Shopify / Amazon APIs",
+          "Zebra / Honeywell SDKs"
+        ],
+        "faq": [
+          { "question": "Can the system automatically reorder stock when it gets low?", "answer": "Yes. We can implement automated reordering logic. When a specific SKU hits a predefined safety stock level, the system can automatically generate and send a Purchase Order (PO) to your designated supplier." },
+          { "question": "Will this sync with my online store?", "answer": "Absolutely. Seamless omnichannel syncing is a core feature. If an item sells in your physical store or on Amazon, your Shopify inventory will instantly update to prevent overselling." }
+        ]
+      },
+      "metaTitle": "Custom Inventory Management System (IMS) Development",
+      "metaDescription": "Build a high-performance Inventory Management System. We specialize in real-time tracking, multi-warehouse routing, and barcode/RFID integrations."
+    },
+    "tr": {
+      "name": "Envanter Yönetim Sistemleri",
+      "shortDescription": "Gerçek zamanlı stok görünürlüğü ile envanter takip çözümleri oluşturun.",
+      "fullDescription": "Özel Envanter Yönetim Sistemlerimiz (IMS) ile stokunuz üzerinde mutlak kontrol sağlayın. Perakende, üretim ve lojistik şirketleri için envanterin izini kaybetmek, para kaybetmek anlamına gelir. Tedarik zincirinize gerçek zamanlı, küresel görünürlük sağlayan, yüksek performanslı, size özel sistemler oluşturuyoruz. İster depo zemininde RFID/Barkod taramasını entegre etmeniz, ister çok lokasyonlu stok yönlendirmesini yönetmeniz veya yapay zeka tahmini kullanarak gelecekteki talebi tahmin etmeniz gereksin; stok tükenmelerini önleyen, ölü stoğu ortadan kaldıran ve mevcut e-ticaret ve ERP platformlarınızla mükemmel şekilde senkronize olan çözümler sunuyoruz.",
+      "features": [
+        "Gerçek Zamanlı Stok Takibi ve Görünürlük",
+        "Çoklu Depo ve Çoklu Konum Yönlendirmesi",
+        "Barkod, QR ve RFID Tarayıcı Entegrasyonu",
+        "Otomatik Yeniden Sipariş ve Uyarılar",
+        "Yapay Zeka Destekli Talep Tahmini",
+        "Parti, Yığın ve Seri Numarası Takibi"
+      ],
+      "benefits": [
+        "Maliyetli Stok Tükenmeleri ve Aşırı Stokların Ortadan Kaldırılması",
+        "Depo Verimliliğinde Büyük Artış",
+        "Finans İçin Doğru Envanter Değerlemesi",
+        "Tüm Satış Kanallarında Kesintisiz Senkronizasyon",
+        "Envanter Kaybının ve Firenin Azaltılması"
+      ],
+      "content": {
+        "process": [
+          { "title": "Tedarik Zinciri Denetimi", "description": "Mevcut mal kabul, toplama, paketleme ve nakliye iş akışlarınızı analiz etme." },
+          { "title": "Sistem Mimarisi", "description": "Veritabanını yüksek frekanslı stok hareketlerini idare edecek şekilde tasarlama." },
+          { "title": "Donanım Entegrasyonu", "description": "Yazılımı depo personeli tarafından kullanılan fiziksel barkod veya RFID tarayıcılarına bağlama." },
+          { "title": "Yazılım Entegrasyonu", "description": "IMS'yi Shopify, WooCommerce veya kurumsal ERP sistemlerinizle senkronize etme." },
+          { "title": "Eğitim ve Lansman", "description": "Depo yöneticileri ve operatörleri için sahada eğitim sağlama." }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Node.js",
+          "PostgreSQL",
+          "Redis (gerçek zamanlı önbelleğe alma)",
+          "Shopify / Amazon API'leri",
+          "Zebra / Honeywell SDK'ları"
+        ],
+        "faq": [
+          { "question": "Sistem stok azaldığında otomatik olarak yeniden sipariş verebilir mi?", "answer": "Evet. Otomatik yeniden sipariş mantığı uygulayabiliriz. Belirli bir SKU önceden tanımlanmış bir güvenlik stoku seviyesine ulaştığında, sistem belirlenmiş tedarikçinize otomatik olarak bir Satın Alma Siparişi (PO) oluşturup gönderebilir." },
+          { "question": "Bu benim çevrimiçi mağazamla senkronize olacak mı?", "answer": "Kesinlikle. Kesintisiz çok kanallı senkronizasyon temel bir özelliktir. Fiziksel mağazanızda veya Amazon'da bir ürün satıldığında, aşırı satışı önlemek için Shopify envanteriniz anında güncellenir." }
+        ]
+      },
+      "metaTitle": "Özel Envanter Yönetim Sistemi (IMS) Geliştirme",
+      "metaDescription": "Yüksek performanslı bir Envanter Yönetim Sistemi oluşturun. Gerçek zamanlı izleme, çoklu depo yönlendirmesi ve barkod/RFID entegrasyonlarında uzmanız."
+    },
+    "de": {
+      "name": "Lagerverwaltungssysteme",
+      "shortDescription": "Erstellen Sie Lösungen zur Bestandsverfolgung mit Echtzeit-Sichtbarkeit des Bestands.",
+      "fullDescription": "Gewinnen Sie mit unseren maßgeschneiderten Inventory Management Systems (IMS) die absolute Kontrolle über Ihren Lagerbestand. Für Einzelhandels-, Fertigungs- und Logistikunternehmen bedeutet der Verlust des Überblicks über den Lagerbestand den Verlust von Geld. Wir bauen maßgeschneiderte, hochleistungsfähige Systeme, die Echtzeit- und globale Transparenz in Ihrer Lieferkette bieten. Unabhängig davon, ob Sie RFID-/Barcode-Scans im Lager integrieren, standortübergreifende Bestandsführung verwalten oder die zukünftige Nachfrage mithilfe von KI prognostizieren müssen, liefern wir Lösungen, die Fehlbestände verhindern, tote Bestände eliminieren und perfekt mit Ihren E-Commerce- und ERP-Plattformen synchronisieren.",
+      "features": [
+        "Echtzeit-Bestandsverfolgung & Transparenz",
+        "Multi-Warehouse- & standortübergreifendes Routing",
+        "Barcode-, QR- & RFID-Scanner-Integration",
+        "Automatisierte Nachbestellung & Alarme",
+        "KI-gestützte Nachfrageprognose",
+        "Chargen-, Los- & Seriennummernverfolgung"
+      ],
+      "benefits": [
+        "Vermeidung teurer Fehl- & Überbestände",
+        "Massiv verbesserte Lagereffizienz",
+        "Genaue Bestandsbewertung für die Finanzabteilung",
+        "Nahtlose Synchronisierung über alle Vertriebskanäle",
+        "Reduzierung von Lagerschwund & Verlust"
+      ],
+      "content": {
+        "process": [
+          { "title": "Supply Chain Audit", "description": "Analyse Ihrer aktuellen Wareneingangs-, Kommissionier-, Verpackungs- und Versandabläufe." },
+          { "title": "Systemarchitektur", "description": "Entwurf der Datenbank für hochfrequente Lagerbewegungen." },
+          { "title": "Hardware-Integration", "description": "Anbindung der Software an physische Barcode- oder RFID-Scanner, die vom Lagerpersonal verwendet werden." },
+          { "title": "Software-Integration", "description": "Synchronisierung des IMS mit Ihren Shopify-, WooCommerce- oder ERP-Systemen." },
+          { "title": "Schulung & Einführung", "description": "Bereitstellung von Schulungen vor Ort für Lagerleiter und Bediener." }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Node.js",
+          "PostgreSQL",
+          "Redis",
+          "Shopify / Amazon APIs",
+          "Zebra / Honeywell SDKs"
+        ],
+        "faq": [
+          { "question": "Kann das System automatisch nachbestellen, wenn der Bestand zur Neige geht?", "answer": "Ja. Wir können eine automatisierte Nachbestelllogik implementieren. Wenn ein bestimmter Artikel einen vordefinierten Sicherheitsbestand erreicht, kann das System automatisch eine Bestellung (Purchase Order) generieren und an den Lieferanten senden." },
+          { "question": "Wird dies mit meinem Online-Shop synchronisiert?", "answer": "Absolut. Wenn ein Artikel in Ihrem physischen Geschäft oder auf Amazon verkauft wird, aktualisiert sich Ihr Shopify-Bestand sofort, um Überverkäufe zu vermeiden." }
+        ]
+      },
+      "metaTitle": "Entwicklung von Lagerverwaltungssystemen (IMS) | Echtzeit-Tracking",
+      "metaDescription": "Bauen Sie ein hochleistungsfähiges Lagerverwaltungssystem. Wir sind spezialisiert auf Echtzeitverfolgung, Multi-Warehouse-Routing und RFID-Integrationen."
+    },
+    "ur": {
+      "name": "انوینٹری کے انتظام کے نظام",
+      "shortDescription": "ریئل ٹائم اسٹاک کی مرئیت کے ساتھ انوینٹری ٹریکنگ کے حل بنائیں۔",
+      "fullDescription": "ہمارے حسب ضرورت انوینٹری مینجمنٹ سسٹمز (IMS) کے ساتھ اپنے اسٹاک پر مکمل کنٹرول حاصل کریں۔ ریٹیل، مینوفیکچرنگ، اور لاجسٹک کمپنیوں کے لیے، انوینٹری کا ٹریک کھونے کا مطلب پیسے کھونا ہے۔ ہم تیار کردہ، اعلیٰ کارکردگی والے سسٹمز بناتے ہیں جو آپ کی سپلائی چین میں حقیقی وقت، عالمی مرئیت فراہم کرتے ہیں۔ چاہے آپ کو گودام کے فرش پر RFID/Barcode اسکیننگ کو مربوط کرنے کی ضرورت ہے، کثیر مقام کی اسٹاک روٹنگ کا انتظام کرنا ہے، یا AI کی پیشن گوئی کا استعمال کرتے ہوئے مستقبل کی مانگ کی پیشین گوئی کرنے کی ضرورت ہے، ہم ایسے حل فراہم کرتے ہیں جو اسٹاک آؤٹ کو روکتے ہیں، ڈیڈ اسٹاک کو ختم کرتے ہیں، اور آپ کے موجودہ ای کامرس اور ای آر پی پلیٹ فارمز کے ساتھ بالکل ہم آہنگ ہوتے ہیں۔",
+      "features": [
+        "ریئل ٹائم اسٹاک ٹریکنگ اور مرئیت",
+        "ملٹی ویئر ہاؤس اور ملٹی لوکیشن روٹنگ",
+        "بارکوڈ، کیو آر اور آر ایف آئی ڈی سکینر انٹیگریشن",
+        "خودکار ری آرڈرنگ اور الرٹس",
+        "AI-Driven ڈیمانڈ کی پیشن گوئی",
+        "لاٹ، بیچ اور سیریل نمبر ٹریکنگ"
+      ],
+      "benefits": [
+        "مہنگے اسٹاک آؤٹس اور اوور اسٹاک کا خاتمہ",
+        "گودام کی استعداد میں بڑے پیمانے پر بہتری",
+        "مالیات کے لیے درست انوینٹری ویلیوایشن",
+        "تمام سیلز چینلز میں ہموار مطابقت پذیری۔",
+        "انوینٹری کے سکڑنے اور نقصان میں کمی"
+      ],
+      "content": {
+        "process": [
+          { "title": "سپلائی چین آڈٹ", "description": "آپ کے موجودہ وصولی، چننا، پیکنگ، اور شپنگ ورک فلو کا تجزیہ کرنا۔" },
+          { "title": "سسٹم آرکیٹیکچر", "description": "ہائی فریکوئنسی اسٹاک کی نقل و حرکت کو سنبھالنے کے لیے ڈیٹا بیس کو ڈیزائن کرنا۔" },
+          { "title": "ہارڈ ویئر کا انضمام", "description": "گودام کے عملے کے ذریعہ استعمال ہونے والے جسمانی بارکوڈ یا آر ایف آئی ڈی اسکینرز سے سافٹ ویئر کو جوڑنا۔" },
+          { "title": "سافٹ ویئر انٹیگریشن", "description": "اپنے Shopify، WooCommerce، یا انٹرپرائز ERP سسٹمز کے ساتھ IMS کی مطابقت پذیری کریں۔" },
+          { "title": "ٹریننگ اور رول آؤٹ", "description": "گودام مینیجرز اور آپریٹرز کے لیے فرش پر تربیت فراہم کرنا۔" }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Node.js",
+          "PostgreSQL",
+          "Redis",
+          "Shopify / Amazon APIs",
+          "Zebra / Honeywell SDKs"
+        ],
+        "faq": [
+          { "question": "جب اسٹاک کم ہو جائے تو کیا سسٹم خود بخود اسے دوبارہ ترتیب دے سکتا ہے؟", "answer": "ہاں۔ ہم خودکار ری آرڈرنگ منطق کو نافذ کر سکتے ہیں۔ جب کوئی مخصوص SKU پہلے سے طے شدہ حفاظتی اسٹاک کی سطح پر پہنچ جاتا ہے، تو نظام خود بخود تیار ہو سکتا ہے اور آپ کے نامزد سپلائر کو پرچیز آرڈر (PO) بھیج سکتا ہے۔" },
+          { "question": "کیا یہ میرے آن لائن اسٹور کے ساتھ مطابقت پذیر ہوگا؟", "answer": "بالکل۔ ہموار اومنی چینل کی مطابقت پذیری ایک بنیادی خصوصیت ہے۔ اگر آپ کے فزیکل اسٹور میں یا Amazon پر کوئی آئٹم بکتا ہے، تو زیادہ فروخت کو روکنے کے لیے آپ کی Shopify انوینٹری فوری طور پر اپ ڈیٹ ہو جائے گی۔" }
+        ]
+      },
+      "metaTitle": "اپنی مرضی کے مطابق انوینٹری مینجمنٹ سسٹم (IMS) کی ترقی",
+      "metaDescription": "ایک اعلی کارکردگی انوینٹری مینجمنٹ سسٹم بنائیں۔ ہم ریئل ٹائم ٹریکنگ، ملٹی ویئر ہاؤس روٹنگ، اور بارکوڈ/آر ایف آئی ڈی انٹیگریشن میں مہارت رکھتے ہیں۔"
+    },
+    "ar": {
+      "name": "أنظمة إدارة المخزون (IMS)",
+      "shortDescription": "قم بإنشاء حلول تتبع المخزون مع رؤية المخزون في الوقت الفعلي.",
+      "fullDescription": "احصل على تحكم مطلق في مخزونك من خلال أنظمة إدارة المخزون (IMS) المخصصة لدينا. بالنسبة لشركات البيع بالتجزئة والتصنيع والخدمات اللوجستية، فإن فقدان تتبع المخزون يعني فقدان المال. نحن نبني أنظمة مخصصة وعالية الأداء توفر رؤية عالمية وفي الوقت الفعلي لسلسلة التوريد الخاصة بك. سواء كنت بحاجة إلى دمج مسح RFID / الباركود على أرضية المستودع، أو إدارة توجيه المخزون متعدد المواقع، أو التنبؤ بالطلب المستقبلي باستخدام الذكاء الاصطناعي، فإننا نقدم حلولاً تمنع نفاد المخزون، وتقضي على المخزون الميت، وتتزامن بشكل مثالي مع منصات التجارة الإلكترونية و ERP الحالية لديك.",
+      "features": [
+        "تتبع المخزون والرؤية في الوقت الفعلي",
+        "توجيه المستودعات والمواقع المتعددة",
+        "تكامل ماسح الباركود، QR و RFID",
+        "إعادة الطلب والتنبيهات المؤتمتة",
+        "التنبؤ بالطلب المدفوع بالذكاء الاصطناعي",
+        "تتبع الدفعة (Lot) والتشغيلة والرقم التسلسلي"
+      ],
+      "benefits": [
+        "القضاء على نفاد المخزون وتكدسه المكلف",
+        "تحسين كفاءة المستودع بشكل هائل",
+        "تقييم دقيق للمخزون للإدارات المالية",
+        "مزامنة سلسة عبر جميع قنوات البيع",
+        "تقليل انكماش وخسارة المخزون"
+      ],
+      "content": {
+        "process": [
+          { "title": "تدقيق سلسلة التوريد", "description": "تحليل سير عمل الاستلام والالتقاط والتعبئة والشحن الحالي." },
+          { "title": "بنية النظام", "description": "تصميم قاعدة البيانات للتعامل مع حركات المخزون عالية التردد." },
+          { "title": "تكامل الأجهزة", "description": "ربط البرنامج بالباركود الفعلي أو ماسحات RFID التي يستخدمها موظفو المستودع." },
+          { "title": "تكامل البرامج", "description": "مزامنة IMS مع أنظمة Shopify أو WooCommerce أو ERP للمؤسسات." },
+          { "title": "التدريب والإطلاق", "description": "توفير تدريب ميداني لمديري ومشغلي المستودعات." }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Node.js",
+          "PostgreSQL",
+          "Redis (للتخزين المؤقت)",
+          "Shopify / Amazon APIs",
+          "Zebra / Honeywell SDKs"
+        ],
+        "faq": [
+          { "question": "هل يمكن للنظام إعادة طلب المخزون تلقائيًا عندما ينخفض؟", "answer": "نعم. يمكننا تنفيذ منطق إعادة الطلب التلقائي. عندما يصل رمز SKU معين إلى مستوى مخزون أمان محدد مسبقًا، يمكن للنظام إنشاء أمر شراء (PO) وإرساله تلقائيًا إلى المورد المعين الخاص بك." },
+          { "question": "هل سيتزامن هذا مع متجري عبر الإنترنت؟", "answer": "بالتأكيد. تعد المزامنة السلسة عبر القنوات المتعددة (Omnichannel) ميزة أساسية. إذا تم بيع عنصر ما في متجرك الفعلي أو على أمازون، فسيتم تحديث مخزون Shopify الخاص بك على الفور لمنع البيع الزائد (Overselling)." }
+        ]
+      },
+      "metaTitle": "تطوير أنظمة إدارة المخزون (IMS) المخصصة",
+      "metaDescription": "قم ببناء نظام إدارة مخزون عالي الأداء. نحن متخصصون في التتبع في الوقت الفعلي، والتوجيه متعدد المستودعات، وتكاملات الباركود / RFID."
+    }
+  },
+  "ios-development": {
+    "en": {
+      "name": "iOS Development",
+      "shortDescription": "Build native iOS applications with Swift for the best Apple ecosystem experience.",
+      "fullDescription": "Deliver a premium, uncompromising user experience to Apple users with our Native iOS Development services. While cross-platform tools are great, nothing beats the performance, fluid animations, and deep hardware integration of a purely native app built with Swift and SwiftUI. If your app relies on heavy 3D rendering, machine learning (CoreML), augmented reality (ARKit), or needs to seamlessly interact with Apple Watch and iPad, native development is the gold standard. We build fast, secure, and beautiful iOS applications that perfectly adhere to Apple's Human Interface Guidelines, ensuring a quick App Store approval and high user retention.",
+      "features": [
+        "Native Swift & SwiftUI Development",
+        "CoreML (Machine Learning) & ARKit Integration",
+        "Apple Watch (watchOS) & iPadOS Support",
+        "Deep Hardware Access (Camera, LiDAR, Haptics)",
+        "In-App Purchases & Apple Pay Integration",
+        "TestFlight Beta Testing & App Store Deployment"
+      ],
+      "benefits": [
+        "Unmatched App Performance & Responsiveness",
+        "Fluid, Apple-Standard Animations",
+        "Immediate Access to the Latest iOS Features",
+        "Enhanced Security & Memory Management",
+        "Higher Trust & Conversion from Apple Users"
+      ],
+      "content": {
+        "process": [
+          { "title": "iOS UI/UX Design", "description": "Designing interfaces that strict adherence to Apple's Human Interface Guidelines." },
+          { "title": "Architecture Setup", "description": "Structuring the project using MVVM or Clean Architecture for maintainability." },
+          { "title": "Swift Development", "description": "Coding the app using Swift and building the UI with declarative SwiftUI." },
+          { "title": "Backend Connectivity", "description": "Integrating Firebase, custom REST APIs, or GraphQL endpoints." },
+          { "title": "App Store Submission", "description": "Managing provisioning profiles, TestFlight betas, and the final App Store review process." }
+        ],
+        "technologies": [
+          "Swift & SwiftUI",
+          "UIKit",
+          "Xcode",
+          "CoreData / Realm",
+          "ARKit / CoreML",
+          "Firebase"
+        ],
+        "faq": [
+          { "question": "Should I build a native iOS app or use Flutter/React Native?", "answer": "If you need to launch on both iOS and Android simultaneously on a strict budget, use Flutter. If you want to build an industry-leading, Apple-first experience that relies on heavy graphics, complex animations, or the absolute latest Apple hardware features (like LiDAR), Native iOS is the only choice." },
+          { "question": "Will you help get the app approved by Apple?", "answer": "Yes. Apple's review process is notoriously strict. We design and build the app to meet all their guidelines from day one, and we handle the entire submission process on your behalf." }
+        ]
+      },
+      "metaTitle": "Native iOS App Development Company | Swift & SwiftUI",
+      "metaDescription": "Build premium, high-performance native iOS applications. We specialize in Swift, SwiftUI, ARKit, and CoreML for iPhone and iPad."
+    },
+    "tr": {
+      "name": "iOS Geliştirme",
+      "shortDescription": "En iyi Apple ekosistemi deneyimi için Swift ile yerel iOS uygulamaları oluşturun.",
+      "fullDescription": "Yerel (Native) iOS Geliştirme hizmetlerimizle Apple kullanıcılarına tavizsiz, birinci sınıf bir kullanıcı deneyimi sunun. Çapraz platform araçları harika olsa da, Swift ve SwiftUI ile oluşturulmuş tamamen yerel bir uygulamanın performansını, akıcı animasyonlarını ve derin donanım entegrasyonunu hiçbir şey geçemez. Uygulamanız ağır 3D işleme, makine öğrenimi (CoreML), artırılmış gerçeklik (ARKit) gerektiriyorsa veya Apple Watch ve iPad ile sorunsuz bir şekilde etkileşime girmesi gerekiyorsa, yerel geliştirme altın standarttır. Apple'ın İnsan Arayüzü Yönergelerine (Human Interface Guidelines) mükemmel şekilde uyan, hızlı App Store onayı ve yüksek kullanıcı tutma oranı sağlayan hızlı, güvenli ve güzel iOS uygulamaları geliştiriyoruz.",
+      "features": [
+        "Yerel Swift ve SwiftUI Geliştirme",
+        "CoreML (Makine Öğrenimi) ve ARKit Entegrasyonu",
+        "Apple Watch (watchOS) ve iPadOS Desteği",
+        "Derin Donanım Erişimi (Kamera, LiDAR, Dokunsal Geri Bildirim)",
+        "Uygulama İçi Satın Alımlar ve Apple Pay Entegrasyonu",
+        "TestFlight Beta Testi ve App Store Dağıtımı"
+      ],
+      "benefits": [
+        "Eşsiz Uygulama Performansı ve Yanıt Verme Süresi",
+        "Akıcı, Apple Standardında Animasyonlar",
+        "En Son iOS Özelliklerine Anında Erişim",
+        "Gelişmiş Güvenlik ve Bellek Yönetimi",
+        "Apple Kullanıcılarından Daha Yüksek Güven ve Dönüşüm"
+      ],
+      "content": {
+        "process": [
+          { "title": "iOS UI/UX Tasarımı", "description": "Apple'ın İnsan Arayüzü Yönergelerine sıkı sıkıya bağlı arayüzler tasarlama." },
+          { "title": "Mimari Kurulumu", "description": "Sürdürülebilirlik için MVVM veya Temiz Mimari (Clean Architecture) kullanarak projeyi yapılandırma." },
+          { "title": "Swift Geliştirme", "description": "Uygulamayı Swift kullanarak kodlama ve kullanıcı arayüzünü bildirime dayalı (declarative) SwiftUI ile oluşturma." },
+          { "title": "Arka Uç Bağlantısı", "description": "Firebase, özel REST API'leri veya GraphQL uç noktalarını entegre etme." },
+          { "title": "App Store Gönderimi", "description": "Yetkilendirme profillerini (provisioning profiles), TestFlight betalarını ve son App Store inceleme sürecini yönetme." }
+        ],
+        "technologies": [
+          "Swift ve SwiftUI",
+          "UIKit",
+          "Xcode",
+          "CoreData / Realm",
+          "ARKit / CoreML",
+          "Firebase"
+        ],
+        "faq": [
+          { "question": "Yerel bir iOS uygulaması mı oluşturmalıyım yoksa Flutter/React Native mi kullanmalıyım?", "answer": "Sıkı bir bütçeyle hem iOS hem de Android'de aynı anda piyasaya sürmeniz gerekiyorsa Flutter'ı kullanın. Ağır grafiklere, karmaşık animasyonlara veya (LiDAR gibi) en yeni Apple donanım özelliklerine dayanan, sektör lideri, Apple öncelikli bir deneyim oluşturmak istiyorsanız, Yerel (Native) iOS tek seçenektir." },
+          { "question": "Uygulamanın Apple tarafından onaylanmasına yardımcı olacak mısınız?", "answer": "Evet. Apple'ın inceleme süreci oldukça katıdır. Uygulamayı ilk günden itibaren tüm yönergelerini karşılayacak şekilde tasarlıyor ve oluşturuyoruz ve tüm gönderim sürecini sizin adınıza biz hallediyoruz." }
+        ]
+      },
+      "metaTitle": "Yerel iOS Uygulama Geliştirme Şirketi | Swift ve SwiftUI",
+      "metaDescription": "Premium, yüksek performanslı yerel iOS uygulamaları oluşturun. iPhone ve iPad için Swift, SwiftUI, ARKit ve CoreML'de uzmanız."
+    },
+    "de": {
+      "name": "iOS-Entwicklung",
+      "shortDescription": "Erstellen Sie native iOS-Anwendungen mit Swift für das beste Erlebnis im Apple-Ökosystem.",
+      "fullDescription": "Bieten Sie Apple-Nutzern mit unseren Native iOS Development Services ein erstklassiges, kompromissloses Benutzererlebnis. Auch wenn plattformübergreifende Tools großartig sind, geht nichts über die Leistung, die flüssigen Animationen und die tiefe Hardware-Integration einer rein nativen App, die mit Swift und SwiftUI entwickelt wurde. Wenn Ihre App stark auf 3D-Rendering, maschinelles Lernen (CoreML) oder Augmented Reality (ARKit) angewiesen ist oder nahtlos mit Apple Watch und iPad interagieren muss, ist die native Entwicklung der Goldstandard. Wir entwickeln schnelle, sichere und schöne iOS-Anwendungen, die sich perfekt an die Human Interface Guidelines von Apple halten und eine schnelle Zulassung im App Store gewährleisten.",
+      "features": [
+        "Native Swift- & SwiftUI-Entwicklung",
+        "CoreML (Maschinelles Lernen) & ARKit-Integration",
+        "Apple Watch (watchOS) & iPadOS-Unterstützung",
+        "Tiefer Hardware-Zugriff (Kamera, LiDAR, Haptik)",
+        "In-App-Käufe & Apple Pay-Integration",
+        "TestFlight-Betatests & App-Store-Bereitstellung"
+      ],
+      "benefits": [
+        "Unübertroffene App-Leistung & Reaktionsfähigkeit",
+        "Flüssige Animationen nach Apple-Standard",
+        "Sofortiger Zugriff auf die neuesten iOS-Funktionen",
+        "Verbesserte Sicherheit & Speicherverwaltung",
+        "Höheres Vertrauen & Konversion bei Apple-Nutzern"
+      ],
+      "content": {
+        "process": [
+          { "title": "iOS UI/UX Design", "description": "Entwurf von Schnittstellen unter strikter Einhaltung der Apple Human Interface Guidelines." },
+          { "title": "Architektur-Setup", "description": "Strukturierung des Projekts mit MVVM oder Clean Architecture für bessere Wartbarkeit." },
+          { "title": "Swift-Entwicklung", "description": "Programmierung der App mit Swift und Aufbau der Benutzeroberfläche mit dem deklarativen SwiftUI." },
+          { "title": "Backend-Konnektivität", "description": "Integration von Firebase, benutzerdefinierten REST-APIs oder GraphQL." },
+          { "title": "App Store Einreichung", "description": "Verwaltung von Provisioning Profiles, TestFlight-Betas und dem finalen App Store Review-Prozess." }
+        ],
+        "technologies": [
+          "Swift & SwiftUI",
+          "UIKit",
+          "Xcode",
+          "CoreData / Realm",
+          "ARKit / CoreML",
+          "Firebase"
+        ],
+        "faq": [
+          { "question": "Sollte ich eine native iOS-App entwickeln oder Flutter/React Native verwenden?", "answer": "Wenn Sie mit einem knappen Budget gleichzeitig auf iOS und Android starten müssen, verwenden Sie Flutter. Wenn Sie ein branchenführendes, Apple-spezifisches Erlebnis aufbauen möchten, das auf komplexe Animationen oder die absolut neuesten Apple-Hardwarefunktionen angewiesen ist, ist Native iOS die einzige Wahl." },
+          { "question": "Helfen Sie dabei, die App von Apple genehmigen zu lassen?", "answer": "Ja. Der Überprüfungsprozess von Apple ist bekanntermaßen streng. Wir entwerfen und bauen die App vom ersten Tag an so, dass sie alle Richtlinien erfüllt." }
+        ]
+      },
+      "metaTitle": "Entwicklung nativer iOS-Apps | Swift & SwiftUI Agentur",
+      "metaDescription": "Erstellen Sie erstklassige, hochleistungsfähige native iOS-Anwendungen. Wir sind spezialisiert auf Swift, SwiftUI und ARKit für iPhone und iPad."
+    },
+    "ur": {
+      "name": "آئی او ایس ڈیولپمنٹ",
+      "shortDescription": "بہترین ایپل ایکو سسٹم کے تجربے کے لیے سوئفٹ کے ساتھ مقامی iOS ایپلی کیشنز بنائیں۔",
+      "fullDescription": "ہماری مقامی iOS ڈویلپمنٹ سروسز کے ساتھ ایپل صارفین کو پریمیم، غیر سمجھوتہ کرنے والا صارف کا تجربہ فراہم کریں۔ اگرچہ کراس پلیٹ فارم ٹولز بہت اچھے ہیں، لیکن سوئفٹ اور SwiftUI کے ساتھ بنائی گئی خالصتاً مقامی ایپ کی کارکردگی، روانی کی متحرک تصاویر، اور ہارڈویئر کے گہرے انضمام کو کوئی بھی نہیں ہرا سکتا۔ اگر آپ کی ایپ کا انحصار ہیوی 3D رینڈرنگ، مشین لرننگ (CoreML)، آگمینٹڈ رئیلٹی (ARKit) پر ہے، یا ایپل واچ اور آئی پیڈ کے ساتھ بغیر کسی رکاوٹ کے تعامل کرنے کی ضرورت ہے، تو مقامی ترقی سونے کا معیار ہے۔ ہم تیز، محفوظ، اور خوبصورت iOS ایپلی کیشنز بناتے ہیں جو کہ Apple کی ہیومن انٹرفیس کے رہنما خطوط پر مکمل عمل پیرا ہوتے ہیں، ایک فوری ایپ اسٹور کی منظوری اور صارف کی اعلی برقراری کو یقینی بناتے ہیں۔",
+      "features": [
+        "مقامی سوئفٹ اور SwiftUI ڈیولپمنٹ",
+        "کور ایم ایل (مشین لرننگ) اور آر کٹ انٹیگریشن",
+        "Apple Watch (watchOS) اور iPadOS سپورٹ",
+        "ہارڈ ویئر تک گہری رسائی (کیمرا، لیڈار، ہیپٹکس)",
+        "ایپ میں خریداریاں اور ایپل پے انٹیگریشن",
+        "ٹیسٹ فلائٹ بیٹا ٹیسٹنگ اور ایپ اسٹور کی تعیناتی"
+      ],
+      "benefits": [
+        "بے مثال ایپ کی کارکردگی اور ردعمل",
+        "فلوئڈ، ایپل اسٹینڈرڈ اینیمیشنز",
+        "جدید ترین iOS خصوصیات تک فوری رسائی",
+        "بہتر سیکورٹی اور میموری کا انتظام",
+        "ایپل صارفین کی طرف سے اعلی اعتماد اور تبدیلی"
+      ],
+      "content": {
+        "process": [
+          { "title": "iOS UI/UX ڈیزائن", "description": "ایپل کی انسانی انٹرفیس کے رہنما خطوط پر سختی سے عمل کرنے والے انٹرفیس کو ڈیزائن کرنا۔" },
+          { "title": "فن تعمیر کی ترتیب", "description": "بحالی کی اہلیت کے لیے MVVM یا کلین آرکیٹیکچر کا استعمال کرتے ہوئے پروجیکٹ کی تشکیل۔" },
+          { "title": "سوئفٹ ڈیولپمنٹ", "description": "Swift کا استعمال کرتے ہوئے ایپ کو کوڈ کرنا اور ڈیکلریٹو SwiftUI کے ساتھ UI بنانا۔" },
+          { "title": "پسدید کنیکٹیویٹی", "description": "فائر بیس کو مربوط کرنا، کسٹم REST APIs، یا GraphQL اینڈ پوائنٹس۔" },
+          { "title": "ایپ اسٹور جمع کروانا", "description": "پروویژننگ پروفائلز، ٹیسٹ فلائٹ بیٹاس، اور آخری ایپ اسٹور کے جائزے کے عمل کا انتظام کرنا۔" }
+        ],
+        "technologies": [
+          "Swift & SwiftUI",
+          "UIKit",
+          "Xcode",
+          "CoreData / Realm",
+          "ARKit / CoreML",
+          "Firebase"
+        ],
+        "faq": [
+          { "question": "کیا مجھے مقامی iOS ایپ بنانا چاہیے یا Flutter/React Native استعمال کرنا چاہیے؟", "answer": "اگر آپ کو سخت بجٹ پر ایک ساتھ iOS اور Android دونوں پر لانچ کرنے کی ضرورت ہے تو فلٹر کا استعمال کریں۔ اگر آپ انڈسٹری کی معروف، Apple-پہلا تجربہ بنانا چاہتے ہیں جو کہ بھاری گرافکس، پیچیدہ اینیمیشنز، یا Apple ہارڈویئر کی بالکل جدید خصوصیات (جیسے LiDAR) پر انحصار کرتا ہے، تو Native iOS واحد انتخاب ہے۔" },
+          { "question": "کیا آپ ایپل سے ایپ منظور کروانے میں مدد کریں گے؟", "answer": "جی ہاں. ایپل کا جائزہ لینے کا عمل بدنام زمانہ سخت ہے۔ ہم پہلے دن سے ہی ان کے تمام رہنما خطوط کو پورا کرنے کے لیے ایپ کو ڈیزائن اور بناتے ہیں، اور ہم آپ کی جانب سے جمع کرانے کے پورے عمل کو سنبھالتے ہیں۔" }
+        ]
+      },
+      "metaTitle": "مقامی iOS ایپ ڈویلپمنٹ کمپنی | سوئفٹ اور SwiftUI",
+      "metaDescription": "پریمیم، اعلی کارکردگی والے مقامی iOS ایپلی کیشنز بنائیں۔ ہم آئی فون اور آئی پیڈ کے لیے سوئفٹ، SwiftUI، ARKit، اور CoreML میں مہارت رکھتے ہیں۔"
+    },
+    "ar": {
+      "name": "تطوير تطبيقات iOS",
+      "shortDescription": "بناء تطبيقات iOS أصلية باستخدام Swift للحصول على أفضل تجربة في نظام Apple البيئي.",
+      "fullDescription": "قدم تجربة مستخدم متميزة ولا تشوبها شائبة لمستخدمي Apple من خلال خدمات تطوير تطبيقات iOS الأصلية (Native) لدينا. في حين أن الأدوات عبر المنصات (Cross-platform) رائعة، لا شيء يتفوق على الأداء، والرسوم المتحركة السلسة، والتكامل العميق للأجهزة لتطبيق أصلي تمامًا تم إنشاؤه باستخدام Swift و SwiftUI. إذا كان تطبيقك يعتمد على عرض ثلاثي الأبعاد ثقيل، أو التعلم الآلي (CoreML)، أو الواقع المعزز (ARKit)، أو يحتاج إلى التفاعل بسلاسة مع Apple Watch و iPad، فإن التطوير الأصلي هو المعيار الذهبي. نحن نبني تطبيقات iOS سريعة وآمنة وجميلة تلتزم تمامًا بإرشادات واجهة المستخدم (Human Interface Guidelines) من Apple، مما يضمن الموافقة السريعة على App Store والاحتفاظ العالي بالمستخدمين.",
+      "features": [
+        "تطوير أصلي (Native) باستخدام Swift و SwiftUI",
+        "تكامل CoreML (التعلم الآلي) و ARKit",
+        "دعم Apple Watch (watchOS) و iPadOS",
+        "وصول عميق للأجهزة (الكاميرا، LiDAR، اللمس/Haptics)",
+        "عمليات الشراء داخل التطبيق وتكامل Apple Pay",
+        "اختبار TestFlight التجريبي والنشر على متجر التطبيقات"
+      ],
+      "benefits": [
+        "أداء تطبيق واستجابة لا مثيل لهما",
+        "رسوم متحركة سلسة ومتوافقة مع معايير Apple",
+        "وصول فوري إلى أحدث ميزات iOS",
+        "أمان محسّن وإدارة للذاكرة",
+        "ثقة وتحويل أعلى من مستخدمي Apple"
+      ],
+      "content": {
+        "process": [
+          { "title": "تصميم iOS UI/UX", "description": "تصميم واجهات تلتزم التزامًا صارمًا بإرشادات الواجهة البشرية من Apple." },
+          { "title": "إعداد البنية", "description": "هيكلة المشروع باستخدام MVVM أو البنية النظيفة (Clean Architecture) لسهولة الصيانة." },
+          { "title": "تطوير Swift", "description": "ترميز التطبيق باستخدام Swift وبناء واجهة المستخدم باستخدام SwiftUI التعريفي." },
+          { "title": "اتصال الواجهة الخلفية", "description": "تكامل Firebase أو واجهات برمجة تطبيقات REST المخصصة أو نقاط نهاية GraphQL." },
+          { "title": "الإرسال إلى متجر التطبيقات", "description": "إدارة ملفات تعريف التوفير (provisioning profiles)، وإصدارات TestFlight التجريبية، وعملية المراجعة النهائية لمتجر التطبيقات." }
+        ],
+        "technologies": [
+          "Swift & SwiftUI",
+          "UIKit",
+          "Xcode",
+          "CoreData / Realm",
+          "ARKit / CoreML",
+          "Firebase"
+        ],
+        "faq": [
+          { "question": "هل يجب أن أبني تطبيق iOS أصليًا أم أستخدم Flutter / React Native؟", "answer": "إذا كنت بحاجة إلى الإطلاق على كل من iOS و Android في وقت واحد وبميزانية صارمة، فاستخدم Flutter. إذا كنت ترغب في بناء تجربة رائدة في الصناعة تعطي الأولوية لـ Apple وتعتمد على رسومات ثقيلة، أو رسوم متحركة معقدة، أو أحدث ميزات أجهزة Apple المطلقة (مثل LiDAR)، فإن نظام iOS الأصلي هو الخيار الوحيد." },
+          { "question": "هل ستساعدون في الحصول على موافقة Apple على التطبيق؟", "answer": "نعم. عملية المراجعة في Apple صارمة للغاية. نحن نصمم ونبني التطبيق لتلبية جميع إرشاداتهم من اليوم الأول، ونتعامل مع عملية الإرسال بأكملها نيابة عنك." }
+        ]
+      },
+      "metaTitle": "شركة تطوير تطبيقات iOS الأصلية | Swift و SwiftUI",
+      "metaDescription": "بناء تطبيقات iOS أصلية (Native) متميزة وعالية الأداء. نحن متخصصون في التطوير بـ Swift و SwiftUI و ARKit لأجهزة iPhone و iPad."
+    }
+  }
+}

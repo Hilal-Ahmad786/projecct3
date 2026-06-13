@@ -1,0 +1,278 @@
+{
+  "slug": "headless-cms-development",
+  "en": {
+    "name": "Headless CMS Development",
+    "shortDescription": "Decouple content from presentation with a headless CMS — your editors work in a friendly interface while developers build fast frontends in any framework, with content delivered by API to web, mobile, and beyond.",
+    "fullDescription": "A headless CMS separates where content is managed from where it's shown, freeing your editors and your developers to each work in their best tools. We implement and customize platforms like Strapi, Contentful, and Sanity, designing content models that match how your team thinks rather than forcing them into rigid templates. Content is delivered over GraphQL or REST to a fast Next.js frontend, native mobile apps, digital signage, or anywhere else — write once, publish everywhere. We set up preview and draft workflows so editors see changes before they go live, localization for multi-language sites, and webhooks that rebuild your static site the moment content changes. The result is a future-proof architecture: editors stay productive, developers stay free to choose their stack, and your content outlives any single channel.",
+    "features": [
+      "Strapi, Contentful & Sanity Implementation",
+      "Custom Content Modeling",
+      "GraphQL & REST Content APIs",
+      "Multi-Channel Content Delivery",
+      "Preview & Draft Workflows",
+      "Localization & Internationalization",
+      "Webhook-Driven Static Rebuilds",
+      "Editor Roles & Permissions"
+    ],
+    "benefits": [
+      "Content reusable across web, mobile, and IoT",
+      "Developers free to use any frontend framework",
+      "Faster, more secure sites via static generation",
+      "Editors work independently of developers",
+      "Easier scaling and a smaller attack surface",
+      "Future-proof: content outlives any one channel"
+    ],
+    "metaTitle": "Headless CMS Development | PakSoft",
+    "metaDescription": "Implement a headless CMS with Strapi, Contentful, or Sanity: custom content models, preview workflows, localization, and multi-channel delivery. Get an estimate.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Platform & Content Audit", "description": "We assess your content, channels, and team workflow, then recommend the right platform — self-hosted Strapi for control, Contentful or Sanity for managed convenience. The choice depends on budget, editor needs, and how much infrastructure you want to own." },
+        { "step": 2, "title": "Content Modeling", "description": "We design content types and relationships around how your editors actually think about content, not around how it happens to look on one page. A clean model is what makes content reusable across channels instead of locked to a single layout." },
+        { "step": 3, "title": "CMS Setup & Customization", "description": "We configure the CMS, build custom fields and components, and set roles and permissions so each editor sees what they need. Where the platform falls short, we extend it with plugins or custom code rather than compromising the workflow." },
+        { "step": 4, "title": "Frontend Integration", "description": "We connect the content API to a fast frontend — usually Next.js — with static generation or incremental regeneration for speed and SEO. The frontend is decoupled, so you can add a mobile app or other channel later against the same content." },
+        { "step": 5, "title": "Preview, Localization & Webhooks", "description": "We wire up draft previews so editors see changes before publishing, configure localization for multi-language content, and set webhooks that rebuild or revalidate pages the instant content changes. Editors get a publish button that just works." },
+        { "step": 6, "title": "Training, Launch & Handover", "description": "We migrate existing content, train your editors on the new interface, and launch. You leave with a documented setup your team runs day to day, plus the option of ongoing support for upgrades and new content types." }
+      ],
+      "faq": [
+        { "question": "What does 'headless' mean and why would I want it?", "answer": "A traditional CMS like classic WordPress couples content management and the website together. A headless CMS removes the front end — the 'head' — and delivers content via API instead, so you can build the frontend in any technology and reuse the same content across web, mobile apps, and other channels. You want it when you need multiple channels, a modern fast frontend, or freedom from a monolithic platform's constraints." },
+        { "question": "Which headless CMS should I choose?", "answer": "It depends on your priorities. Strapi is open-source and self-hosted, giving full control and no per-seat fees but requiring you to run it. Contentful is a polished, enterprise-grade managed service with strong reliability. Sanity offers a highly customizable editing experience and real-time collaboration. We match the platform to your budget, editor needs, and how much infrastructure you want to manage." },
+        { "question": "Is a headless CMS harder for my content editors?", "answer": "Done well, no — modern headless platforms have excellent editing interfaces, and we configure content models around how your team works. The key is preview: editors need to see how content will look before publishing, which we set up so the experience feels as natural as a traditional CMS. The trade-off is that the initial setup requires more developer involvement than installing a theme." },
+        { "question": "Can I still preview content before publishing?", "answer": "Yes. Preview is essential and we always implement it. We connect the CMS's draft mode to your frontend so editors can see exactly how a page will render with their unpublished changes, including across different layouts and devices. Without good preview, a headless setup frustrates editors, so we treat it as a non-negotiable part of the build." },
+        { "question": "Does a headless CMS help with performance and SEO?", "answer": "Significantly. Because content is delivered by API, you can statically generate pages at build time and serve them from a CDN, which produces very fast load times and excellent Core Web Vitals. There's no database query on each page view and a much smaller attack surface than a monolithic CMS. We pair the CMS with Next.js static or incremental generation for the best of speed and freshness." },
+        { "question": "Can it handle multiple languages?", "answer": "Yes. Headless platforms have strong localization support, letting editors manage content in multiple languages from one place while the frontend serves the right locale to each user. This is a natural fit for businesses serving multiple markets — exactly the kind of multi-language delivery a decoupled architecture handles cleanly. We design the content model with localization in mind from the start." },
+        { "question": "How does content reach my website and apps?", "answer": "The CMS exposes content through a GraphQL or REST API. Your website fetches it at build time or on request, and any other channel — a mobile app, digital signage, a partner integration — calls the same API. This is the core advantage: you write content once and publish it everywhere, instead of duplicating it per channel and keeping copies in sync." },
+        { "question": "Can you migrate our existing content?", "answer": "Yes. We export content from your current CMS or database, map it to the new content model, and import it with validation so nothing is lost or malformed. Migration is planned carefully with test runs, especially for large content libraries or sites with complex relationships. A clean migration is essential, because editors won't trust a system that mangled their existing content." }
+      ],
+      "technologies": [
+        { "icon": "strapi", "name": "Strapi" },
+        { "icon": "contentful", "name": "Contentful" },
+        { "icon": "sanity", "name": "Sanity" },
+        { "icon": "prismic", "name": "Prismic" },
+        { "icon": "nextdotjs", "name": "Next.js" },
+        { "icon": "graphql", "name": "GraphQL" },
+        { "icon": "vercel", "name": "Vercel" },
+        { "icon": "typescript", "name": "TypeScript" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Headless CMS Geliştirme",
+    "shortDescription": "Headless bir CMS ile içeriği sunumdan ayırın — editörleriniz dostane bir arayüzde çalışırken geliştiriciler herhangi bir framework'te hızlı frontend kurar, içerik web, mobil ve ötesine API ile teslim edilir.",
+    "fullDescription": "Headless bir CMS, içeriğin nerede yönetildiğini nerede gösterildiğinden ayırır; böylece editörleriniz ve geliştiricileriniz en iyi araçlarında çalışabilir. Strapi, Contentful ve Sanity gibi platformları uygular ve özelleştirir, ekibinizi katı şablonlara zorlamak yerine onların düşünme biçimine uyan içerik modelleri tasarlarız. İçerik, GraphQL veya REST üzerinden hızlı bir Next.js frontend'e, native mobil uygulamalara, dijital tabelaya veya başka herhangi bir yere teslim edilir — bir kez yaz, her yerde yayınla. Editörlerin değişiklikleri yayına almadan görmesi için önizleme ve taslak akışları, çok dilli siteler için yerelleştirme ve içerik değiştiği an statik sitenizi yeniden inşa eden webhook'lar kurarız. Sonuç geleceğe dayanıklı bir mimaridir: editörler üretken kalır, geliştiriciler yığınlarını seçmekte özgür kalır ve içeriğiniz tek bir kanaldan uzun ömürlü olur.",
+    "features": [
+      "Strapi, Contentful ve Sanity Uygulaması",
+      "Özel İçerik Modelleme",
+      "GraphQL ve REST İçerik API'leri",
+      "Çok Kanallı İçerik Teslimi",
+      "Önizleme ve Taslak Akışları",
+      "Yerelleştirme ve Uluslararasılaştırma",
+      "Webhook Tabanlı Statik Yeniden İnşa",
+      "Editör Rolleri ve İzinleri"
+    ],
+    "benefits": [
+      "İçerik web, mobil ve IoT genelinde yeniden kullanılabilir",
+      "Geliştiriciler herhangi bir frontend framework'ü kullanmakta özgür",
+      "Statik üretimle daha hızlı, daha güvenli siteler",
+      "Editörler geliştiricilerden bağımsız çalışır",
+      "Daha kolay ölçekleme ve daha küçük saldırı yüzeyi",
+      "Geleceğe dayanıklı: içerik tek bir kanaldan uzun yaşar"
+    ],
+    "metaTitle": "Headless CMS Geliştirme | PakSoft",
+    "metaDescription": "Strapi, Contentful veya Sanity ile headless CMS uygulayın: özel içerik modelleri, önizleme akışları, yerelleştirme ve çok kanallı teslim. Teklif alın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Platform ve İçerik Denetimi", "description": "İçeriğinizi, kanallarınızı ve ekip akışınızı değerlendirir, ardından doğru platformu öneririz — kontrol için kendi barındırdığınız Strapi, yönetilen kolaylık için Contentful veya Sanity. Seçim bütçeye, editör ihtiyaçlarına ve ne kadar altyapıya sahip olmak istediğinize bağlıdır." },
+        { "step": 2, "title": "İçerik Modelleme", "description": "İçerik türlerini ve ilişkilerini, içeriğin bir sayfada nasıl göründüğüne göre değil, editörlerinizin içerik hakkında gerçekte nasıl düşündüğüne göre tasarlarız. Temiz bir model, içeriği tek bir düzene kilitlemek yerine kanallar arasında yeniden kullanılabilir yapan şeydir." },
+        { "step": 3, "title": "CMS Kurulumu ve Özelleştirme", "description": "CMS'i yapılandırır, özel alanlar ve bileşenler kurar ve her editörün ihtiyacını görmesi için rol ve izinler ayarlarız. Platform yetersiz kaldığında, akışı bozmak yerine onu eklentiler veya özel kodla genişletiriz." },
+        { "step": 4, "title": "Frontend Entegrasyonu", "description": "İçerik API'sini hızlı bir frontend'e — genellikle Next.js — hız ve SEO için statik üretim veya artımlı yeniden üretimle bağlarız. Frontend ayrıştırılmıştır; böylece daha sonra aynı içeriğe karşı bir mobil uygulama veya başka kanal ekleyebilirsiniz." },
+        { "step": 5, "title": "Önizleme, Yerelleştirme ve Webhook'lar", "description": "Editörlerin yayınlamadan değişiklikleri görmesi için taslak önizlemelerini bağlar, çok dilli içerik için yerelleştirmeyi yapılandırır ve içerik değiştiği an sayfaları yeniden inşa eden veya yeniden doğrulayan webhook'lar ayarlarız. Editörler basitçe çalışan bir yayınla düğmesi alır." },
+        { "step": 6, "title": "Eğitim, Lansman ve Teslim", "description": "Mevcut içeriği taşır, editörlerinizi yeni arayüzde eğitir ve yayına alırız. Ekibinizin günlük çalıştırdığı belgelenmiş bir kurulumla, ayrıca yükseltmeler ve yeni içerik türleri için sürekli destek seçeneğiyle ayrılırsınız." }
+      ],
+      "faq": [
+        { "question": "'Headless' ne demek ve neden isterim?", "answer": "Klasik WordPress gibi geleneksel bir CMS, içerik yönetimini ve web sitesini birbirine bağlar. Headless bir CMS ön ucu — 'baş'ı — kaldırır ve içeriği bunun yerine API ile teslim eder; böylece frontend'i herhangi bir teknolojide kurabilir ve aynı içeriği web, mobil uygulamalar ve diğer kanallar arasında yeniden kullanabilirsiniz. Birden çok kanala, modern hızlı bir frontend'e veya monolitik bir platformun kısıtlarından özgürlüğe ihtiyaç duyduğunuzda istersiniz." },
+        { "question": "Hangi headless CMS'i seçmeliyim?", "answer": "Önceliklerinize bağlı. Strapi açık kaynak ve kendi barındırdığınızdır; tam kontrol ve koltuk başına ücret yok verir ama onu çalıştırmanızı gerektirir. Contentful, güçlü güvenilirliğe sahip cilalı, kurumsal düzeyde yönetilen bir hizmettir. Sanity, son derece özelleştirilebilir bir düzenleme deneyimi ve gerçek zamanlı iş birliği sunar. Platformu bütçenize, editör ihtiyaçlarınıza ve ne kadar altyapı yönetmek istediğinize göre eşleriz." },
+        { "question": "Headless CMS, içerik editörlerim için daha mı zor?", "answer": "İyi yapıldığında hayır — modern headless platformların mükemmel düzenleme arayüzleri vardır ve içerik modellerini ekibinizin çalışma biçimine göre yapılandırırız. Anahtar önizlemedir: editörlerin içeriğin yayınlamadan önce nasıl görüneceğini görmesi gerekir; bunu deneyim geleneksel bir CMS kadar doğal hissedecek şekilde kurarız. Ödünleşim, ilk kurulumun bir tema yüklemekten daha fazla geliştirici katılımı gerektirmesidir." },
+        { "question": "İçeriği yayınlamadan önce yine de önizleyebilir miyim?", "answer": "Evet. Önizleme elzemdir ve onu her zaman uygularız. CMS'in taslak modunu frontend'inize bağlarız; böylece editörler bir sayfanın yayınlanmamış değişiklikleriyle, farklı düzenler ve cihazlar genelinde tam olarak nasıl render edileceğini görebilir. İyi önizleme olmadan headless bir kurulum editörleri sinirlendirir, bu yüzden onu yapımın pazarlık edilemez bir parçası olarak ele alırız." },
+        { "question": "Headless CMS performans ve SEO'ya yardım eder mi?", "answer": "Önemli ölçüde. İçerik API ile teslim edildiği için sayfaları derleme zamanında statik üretip bir CDN'den sunabilirsiniz; bu çok hızlı yükleme süreleri ve mükemmel Core Web Vitals üretir. Her sayfa görüntülemesinde veritabanı sorgusu yoktur ve monolitik bir CMS'ten çok daha küçük bir saldırı yüzeyi vardır. CMS'i hız ve tazeliğin en iyisi için Next.js statik veya artımlı üretimle eşleriz." },
+        { "question": "Birden çok dili kaldırabilir mi?", "answer": "Evet. Headless platformların güçlü yerelleştirme desteği vardır; editörlerin içeriği tek bir yerden birden çok dilde yönetmesini sağlarken frontend her kullanıcıya doğru yerel ayarı sunar. Bu, birden çok pazara hizmet veren işletmeler için doğal bir uyumdur — ayrıştırılmış bir mimarinin temiz biçimde hallettiği tam da bu tür çok dilli teslimdir. İçerik modelini baştan yerelleştirme akılda tutarak tasarlarız." },
+        { "question": "İçerik web sitem ve uygulamalarıma nasıl ulaşır?", "answer": "CMS, içeriği bir GraphQL veya REST API ile sunar. Web siteniz onu derleme zamanında veya istek üzerine çeker ve başka herhangi bir kanal — bir mobil uygulama, dijital tabela, bir ortak entegrasyonu — aynı API'yi çağırır. Temel avantaj budur: içeriği bir kez yazar ve her yerde yayınlarsınız, kanal başına çoğaltıp kopyaları senkronda tutmak yerine." },
+        { "question": "Mevcut içeriğimizi taşıyabilir misiniz?", "answer": "Evet. İçeriği mevcut CMS'inizden veya veritabanınızdan dışa aktarır, yeni içerik modeline eşler ve hiçbir şey kaybolmadan veya bozulmadan doğrulamayla içe aktarırız. Geçiş, özellikle büyük içerik kütüphaneleri veya karmaşık ilişkili siteler için test çalıştırmalarıyla dikkatle planlanır. Temiz bir geçiş elzemdir, çünkü editörler mevcut içeriklerini bozan bir sisteme güvenmez." }
+      ],
+      "technologies": [
+        { "icon": "strapi", "name": "Strapi" },
+        { "icon": "contentful", "name": "Contentful" },
+        { "icon": "sanity", "name": "Sanity" },
+        { "icon": "prismic", "name": "Prismic" },
+        { "icon": "nextdotjs", "name": "Next.js" },
+        { "icon": "graphql", "name": "GraphQL" },
+        { "icon": "vercel", "name": "Vercel" },
+        { "icon": "typescript", "name": "TypeScript" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Headless-CMS-Entwicklung",
+    "shortDescription": "Entkoppeln Sie Inhalt von Darstellung mit einem Headless-CMS — Ihre Redakteure arbeiten in einer freundlichen Oberfläche, Entwickler bauen schnelle Frontends in jedem Framework, Inhalte per API für Web, Mobile und mehr.",
+    "fullDescription": "Ein Headless-CMS trennt, wo Inhalt verwaltet wird, von dort, wo er gezeigt wird, und befreit Redakteure und Entwickler, jeweils in ihren besten Tools zu arbeiten. Wir implementieren und passen Plattformen wie Strapi, Contentful und Sanity an und entwerfen Content-Modelle, die zur Denkweise Ihres Teams passen, statt es in starre Templates zu zwingen. Inhalt wird über GraphQL oder REST an ein schnelles Next.js-Frontend, native Mobile-Apps, Digital Signage oder anderswohin geliefert — einmal schreiben, überall veröffentlichen. Wir richten Preview- und Draft-Workflows ein, damit Redakteure Änderungen vor dem Livegang sehen, Lokalisierung für mehrsprachige Sites und Webhooks, die Ihre statische Site neu bauen, sobald sich Inhalt ändert. Das Ergebnis ist eine zukunftssichere Architektur: Redakteure bleiben produktiv, Entwickler frei in der Stack-Wahl, und Ihr Content überlebt jeden einzelnen Kanal.",
+    "features": [
+      "Strapi-, Contentful- & Sanity-Implementierung",
+      "Individuelle Content-Modellierung",
+      "GraphQL- & REST-Content-APIs",
+      "Multi-Channel-Content-Delivery",
+      "Preview- & Draft-Workflows",
+      "Lokalisierung & Internationalisierung",
+      "Webhook-getriebene Static-Rebuilds",
+      "Redakteur-Rollen & -Berechtigungen"
+    ],
+    "benefits": [
+      "Content wiederverwendbar über Web, Mobile und IoT",
+      "Entwickler frei in der Wahl des Frontend-Frameworks",
+      "Schnellere, sicherere Sites durch Static Generation",
+      "Redakteure arbeiten unabhängig von Entwicklern",
+      "Einfachere Skalierung und kleinere Angriffsfläche",
+      "Zukunftssicher: Content überlebt jeden einzelnen Kanal"
+    ],
+    "metaTitle": "Headless-CMS-Entwicklung | PakSoft",
+    "metaDescription": "Implementieren Sie ein Headless-CMS mit Strapi, Contentful oder Sanity: Content-Modelle, Preview-Workflows, Lokalisierung und Multi-Channel-Delivery. Angebot anfordern.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Plattform- & Content-Audit", "description": "Wir bewerten Ihren Content, Ihre Kanäle und Ihren Team-Workflow und empfehlen dann die richtige Plattform — selbst gehostetes Strapi für Kontrolle, Contentful oder Sanity für Managed-Komfort. Die Wahl hängt von Budget, Redakteursbedarf und davon ab, wie viel Infrastruktur Sie besitzen wollen." },
+        { "step": 2, "title": "Content-Modellierung", "description": "Wir entwerfen Content-Typen und -Beziehungen danach, wie Ihre Redakteure wirklich über Inhalt denken, nicht danach, wie er zufällig auf einer Seite aussieht. Ein sauberes Modell macht Content über Kanäle wiederverwendbar, statt ihn an ein einziges Layout zu binden." },
+        { "step": 3, "title": "CMS-Setup & Anpassung", "description": "Wir konfigurieren das CMS, bauen benutzerdefinierte Felder und Komponenten und setzen Rollen und Berechtigungen, sodass jeder Redakteur sieht, was er braucht. Wo die Plattform zu kurz greift, erweitern wir sie mit Plugins oder Custom Code, statt den Workflow zu kompromittieren." },
+        { "step": 4, "title": "Frontend-Integration", "description": "Wir verbinden die Content-API mit einem schnellen Frontend — meist Next.js — mit Static Generation oder Incremental Regeneration für Tempo und SEO. Das Frontend ist entkoppelt, sodass Sie später eine Mobile-App oder einen anderen Kanal gegen denselben Content ergänzen können." },
+        { "step": 5, "title": "Preview, Lokalisierung & Webhooks", "description": "Wir verdrahten Draft-Previews, damit Redakteure Änderungen vor dem Veröffentlichen sehen, konfigurieren Lokalisierung für mehrsprachigen Content und setzen Webhooks, die Seiten neu bauen oder revalidieren, sobald sich Inhalt ändert. Redakteure erhalten einen Veröffentlichen-Button, der einfach funktioniert." },
+        { "step": 6, "title": "Schulung, Launch & Übergabe", "description": "Wir migrieren bestehenden Content, schulen Ihre Redakteure auf der neuen Oberfläche und gehen live. Sie gehen mit einem dokumentierten Setup, das Ihr Team täglich betreibt, plus optionalem laufenden Support für Upgrades und neue Content-Typen." }
+      ],
+      "faq": [
+        { "question": "Was bedeutet 'headless' und warum sollte ich es wollen?", "answer": "Ein traditionelles CMS wie klassisches WordPress koppelt Content-Management und Website zusammen. Ein Headless-CMS entfernt das Frontend — den 'Kopf' — und liefert Content stattdessen per API, sodass Sie das Frontend in jeder Technologie bauen und denselben Content über Web, Mobile-Apps und andere Kanäle wiederverwenden können. Sie wollen es, wenn Sie mehrere Kanäle, ein modernes schnelles Frontend oder Freiheit von den Zwängen einer monolithischen Plattform brauchen." },
+        { "question": "Welches Headless-CMS soll ich wählen?", "answer": "Hängt von Ihren Prioritäten ab. Strapi ist Open-Source und selbst gehostet, gibt volle Kontrolle und keine Platzgebühren, erfordert aber, dass Sie es betreiben. Contentful ist ein ausgereifter, Enterprise-tauglicher Managed Service mit hoher Zuverlässigkeit. Sanity bietet ein hochgradig anpassbares Editing-Erlebnis und Echtzeit-Kollaboration. Wir matchen die Plattform mit Budget, Redakteursbedarf und gewünschtem Infrastruktur-Aufwand." },
+        { "question": "Ist ein Headless-CMS schwerer für meine Redakteure?", "answer": "Gut gemacht nein — moderne Headless-Plattformen haben hervorragende Editing-Oberflächen, und wir konfigurieren Content-Modelle um die Arbeitsweise Ihres Teams. Der Schlüssel ist Preview: Redakteure müssen vor dem Veröffentlichen sehen, wie Content aussieht, was wir so einrichten, dass es sich so natürlich anfühlt wie ein traditionelles CMS. Der Trade-off: Das initiale Setup braucht mehr Entwicklerbeteiligung als das Installieren eines Themes." },
+        { "question": "Kann ich Content trotzdem vor dem Veröffentlichen ansehen?", "answer": "Ja. Preview ist essenziell und wir implementieren es immer. Wir verbinden den Draft-Modus des CMS mit Ihrem Frontend, sodass Redakteure exakt sehen, wie eine Seite mit ihren unveröffentlichten Änderungen rendert — über verschiedene Layouts und Geräte hinweg. Ohne gute Preview frustriert ein Headless-Setup Redakteure, daher behandeln wir es als nicht verhandelbaren Teil des Baus." },
+        { "question": "Hilft ein Headless-CMS bei Performance und SEO?", "answer": "Erheblich. Da Content per API geliefert wird, können Sie Seiten zur Build-Zeit statisch generieren und aus einem CDN ausliefern, was sehr schnelle Ladezeiten und exzellente Core Web Vitals erzeugt. Es gibt keine Datenbankabfrage pro Seitenaufruf und eine viel kleinere Angriffsfläche als bei einem monolithischen CMS. Wir kombinieren das CMS mit Next.js Static oder Incremental Generation für das Beste aus Tempo und Aktualität." },
+        { "question": "Kann es mehrere Sprachen handhaben?", "answer": "Ja. Headless-Plattformen haben starke Lokalisierungsunterstützung, sodass Redakteure Content in mehreren Sprachen an einem Ort verwalten, während das Frontend jedem Nutzer das richtige Locale liefert. Das passt natürlich zu Unternehmen, die mehrere Märkte bedienen — genau die Art mehrsprachiger Auslieferung, die eine entkoppelte Architektur sauber handhabt. Wir entwerfen das Content-Modell von Anfang an mit Lokalisierung im Blick." },
+        { "question": "Wie gelangt Content auf meine Website und Apps?", "answer": "Das CMS stellt Content über eine GraphQL- oder REST-API bereit. Ihre Website holt ihn zur Build-Zeit oder auf Anfrage, und jeder andere Kanal — eine Mobile-App, Digital Signage, eine Partnerintegration — ruft dieselbe API. Das ist der Kernvorteil: Sie schreiben Content einmal und veröffentlichen ihn überall, statt ihn pro Kanal zu duplizieren und Kopien synchron zu halten." },
+        { "question": "Können Sie unseren bestehenden Content migrieren?", "answer": "Ja. Wir exportieren Content aus Ihrem aktuellen CMS oder Ihrer Datenbank, mappen ihn auf das neue Content-Modell und importieren ihn mit Validierung, sodass nichts verloren geht oder fehlerhaft ist. Migration wird sorgfältig mit Testläufen geplant, besonders bei großen Content-Bibliotheken oder Sites mit komplexen Beziehungen. Eine saubere Migration ist essenziell, denn Redakteure vertrauen keinem System, das ihren Bestandscontent zerstört hat." }
+      ],
+      "technologies": [
+        { "icon": "strapi", "name": "Strapi" },
+        { "icon": "contentful", "name": "Contentful" },
+        { "icon": "sanity", "name": "Sanity" },
+        { "icon": "prismic", "name": "Prismic" },
+        { "icon": "nextdotjs", "name": "Next.js" },
+        { "icon": "graphql", "name": "GraphQL" },
+        { "icon": "vercel", "name": "Vercel" },
+        { "icon": "typescript", "name": "TypeScript" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "Headless CMS ڈیولپمنٹ",
+    "shortDescription": "Headless CMS سے مواد کو پیشکش سے الگ کریں — آپ کے ایڈیٹرز ایک دوستانہ انٹرفیس میں کام کریں جبکہ ڈیولپرز کسی بھی framework میں تیز frontend بنائیں، مواد API کے ذریعے web، mobile اور اس سے آگے پہنچے۔",
+    "fullDescription": "Headless CMS اس بات کو الگ کرتا ہے کہ مواد کہاں منظم ہوتا ہے اور کہاں دکھایا جاتا ہے، تاکہ آپ کے ایڈیٹرز اور ڈیولپرز ہر ایک اپنے بہترین اوزار میں کام کر سکیں۔ ہم Strapi، Contentful اور Sanity جیسے پلیٹ فارمز نافذ اور حسبِ ضرورت بناتے ہیں، ایسے content models ڈیزائن کرتے ہوئے جو آپ کی ٹیم کے سوچنے کے انداز سے مطابقت رکھیں نہ کہ انہیں سخت templates میں دھکیلیں۔ مواد GraphQL یا REST کے ذریعے تیز Next.js frontend، native mobile ایپس، digital signage یا کہیں اور پہنچتا ہے — ایک بار لکھیں، ہر جگہ شائع کریں۔ ہم ایسے preview اور draft flows بناتے ہیں کہ ایڈیٹرز تبدیلیاں لائیو ہونے سے پہلے دیکھیں، کثیر لسانی سائٹس کے لیے localization، اور ایسے webhooks جو مواد بدلتے ہی آپ کی static سائٹ دوبارہ بنائیں۔ نتیجہ مستقبل کے لیے تیار آرکیٹیکچر ہے: ایڈیٹرز نتیجہ خیز رہتے ہیں، ڈیولپرز اپنا stack چننے میں آزاد رہتے ہیں اور آپ کا مواد کسی ایک چینل سے زیادہ زندہ رہتا ہے۔",
+    "features": [
+      "Strapi، Contentful اور Sanity نفاذ",
+      "Custom Content Modeling",
+      "GraphQL اور REST Content APIs",
+      "کثیر چینل مواد کی ترسیل",
+      "Preview اور Draft flows",
+      "Localization اور Internationalization",
+      "Webhook پر مبنی Static دوبارہ تعمیر",
+      "ایڈیٹر roles اور اجازتیں"
+    ],
+    "benefits": [
+      "مواد web، mobile اور IoT میں قابلِ دوبارہ استعمال",
+      "ڈیولپرز کوئی بھی frontend framework استعمال کرنے میں آزاد",
+      "Static generation سے تیز، زیادہ محفوظ سائٹس",
+      "ایڈیٹرز ڈیولپرز سے آزاد کام کرتے ہیں",
+      "آسان اسکیلنگ اور چھوٹی حملہ سطح",
+      "مستقبل کے لیے تیار: مواد کسی ایک چینل سے زیادہ زندہ رہتا ہے"
+    ],
+    "metaTitle": "Headless CMS ڈیولپمنٹ | PakSoft",
+    "metaDescription": "Strapi، Contentful یا Sanity سے headless CMS نافذ کریں: custom content models، preview flows، localization اور کثیر چینل ترسیل۔ تخمینہ لیں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "پلیٹ فارم اور مواد آڈٹ", "description": "ہم آپ کے مواد، چینلز اور ٹیم flow کا جائزہ لیتے ہیں، پھر درست پلیٹ فارم تجویز کرتے ہیں — کنٹرول کے لیے خود میزبان Strapi، managed سہولت کے لیے Contentful یا Sanity۔ انتخاب بجٹ، ایڈیٹر ضروریات اور آپ کتنا انفراسٹرکچر رکھنا چاہتے ہیں، پر منحصر ہے۔" },
+        { "step": 2, "title": "Content Modeling", "description": "ہم content types اور تعلقات کو اس بنیاد پر ڈیزائن کرتے ہیں کہ آپ کے ایڈیٹرز مواد کے بارے میں حقیقت میں کیسے سوچتے ہیں، نہ کہ یہ ایک صفحے پر کیسا نظر آتا ہے۔ صاف ماڈل وہ ہے جو مواد کو ایک layout میں قید کرنے کے بجائے چینلز میں قابلِ دوبارہ استعمال بناتا ہے۔" },
+        { "step": 3, "title": "CMS سیٹ اپ اور حسبِ ضرورت", "description": "ہم CMS ترتیب دیتے ہیں، custom فیلڈز اور components بناتے ہیں اور roles اور اجازتیں طے کرتے ہیں تاکہ ہر ایڈیٹر وہی دیکھے جو اسے چاہیے۔ جہاں پلیٹ فارم ناکافی ہو، ہم flow سے سمجھوتہ کرنے کے بجائے اسے plugins یا custom کوڈ سے بڑھاتے ہیں۔" },
+        { "step": 4, "title": "Frontend انٹیگریشن", "description": "ہم content API کو ایک تیز frontend — عموماً Next.js — سے رفتار اور SEO کے لیے static generation یا incremental regeneration کے ساتھ جوڑتے ہیں۔ Frontend الگ ہوتا ہے، تاکہ آپ بعد میں اسی مواد کے مقابل mobile ایپ یا دوسرا چینل شامل کر سکیں۔" },
+        { "step": 5, "title": "Preview، Localization اور Webhooks", "description": "ہم draft previews جوڑتے ہیں تاکہ ایڈیٹرز شائع کرنے سے پہلے تبدیلیاں دیکھیں، کثیر لسانی مواد کے لیے localization ترتیب دیتے ہیں اور ایسے webhooks لگاتے ہیں جو مواد بدلتے ہی صفحات دوبارہ بنائیں یا revalidate کریں۔ ایڈیٹرز کو ایک ایسا publish بٹن ملتا ہے جو بس چلتا ہے۔" },
+        { "step": 6, "title": "تربیت، لانچ اور حوالگی", "description": "ہم موجودہ مواد منتقل کرتے ہیں، آپ کے ایڈیٹرز کو نئے انٹرفیس پر تربیت دیتے ہیں اور لانچ کرتے ہیں۔ آپ ایک دستاویزی سیٹ اپ کے ساتھ نکلتے ہیں جسے آپ کی ٹیم روزانہ چلاتی ہے، مع upgrades اور نئے content types کے لیے مسلسل سپورٹ کا اختیار۔" }
+      ],
+      "faq": [
+        { "question": "'Headless' کا کیا مطلب اور میں اسے کیوں چاہوں؟", "answer": "کلاسک WordPress جیسا روایتی CMS مواد کے انتظام اور ویب سائٹ کو ایک ساتھ جوڑتا ہے۔ Headless CMS فرنٹ اینڈ — 'سر' — ہٹا دیتا ہے اور مواد اس کے بجائے API سے پہنچاتا ہے، تاکہ آپ frontend کسی بھی ٹیکنالوجی میں بنا سکیں اور وہی مواد web، mobile ایپس اور دیگر چینلز میں دوبارہ استعمال کر سکیں۔ آپ اسے تب چاہتے ہیں جب آپ کو کئی چینلز، ایک جدید تیز frontend، یا monolithic پلیٹ فارم کی پابندیوں سے آزادی چاہیے۔" },
+        { "question": "مجھے کون سا headless CMS چننا چاہیے؟", "answer": "آپ کی ترجیحات پر منحصر ہے۔ Strapi اوپن سورس اور خود میزبان ہے، مکمل کنٹرول اور فی سیٹ فیس نہیں دیتا مگر آپ کو اسے چلانا پڑتا ہے۔ Contentful مضبوط بھروسے والی صیقل شدہ، انٹرپرائز معیار کی managed سروس ہے۔ Sanity انتہائی حسبِ ضرورت editing تجربہ اور حقیقی وقت کا تعاون دیتا ہے۔ ہم پلیٹ فارم کو آپ کے بجٹ، ایڈیٹر ضروریات اور آپ کتنا انفراسٹرکچر سنبھالنا چاہتے ہیں سے جوڑتے ہیں۔" },
+        { "question": "کیا headless CMS میرے مواد ایڈیٹرز کے لیے زیادہ مشکل ہے؟", "answer": "اچھی طرح کیا جائے تو نہیں — جدید headless پلیٹ فارمز کے بہترین editing انٹرفیس ہوتے ہیں اور ہم content models کو آپ کی ٹیم کے کام کے انداز کے گرد ترتیب دیتے ہیں۔ کلید preview ہے: ایڈیٹرز کو شائع کرنے سے پہلے دیکھنا ہوتا ہے کہ مواد کیسا لگے گا، جسے ہم اس طرح ترتیب دیتے ہیں کہ تجربہ روایتی CMS جتنا فطری محسوس ہو۔ سمجھوتہ یہ ہے کہ ابتدائی سیٹ اپ theme انسٹال کرنے سے زیادہ ڈیولپر شمولیت مانگتا ہے۔" },
+        { "question": "کیا میں پھر بھی شائع کرنے سے پہلے مواد دیکھ سکتا ہوں؟", "answer": "جی ہاں۔ Preview لازم ہے اور ہم اسے ہمیشہ نافذ کرتے ہیں۔ ہم CMS کا draft موڈ آپ کے frontend سے جوڑتے ہیں تاکہ ایڈیٹرز بالکل دیکھ سکیں کہ کوئی صفحہ ان کی غیر شائع شدہ تبدیلیوں کے ساتھ کیسے render ہوگا، بشمول مختلف layouts اور ڈیوائسز۔ اچھے preview کے بغیر headless سیٹ اپ ایڈیٹرز کو پریشان کرتا ہے، اس لیے ہم اسے تعمیر کا ناقابلِ مذاکرہ حصہ سمجھتے ہیں۔" },
+        { "question": "کیا headless CMS کارکردگی اور SEO میں مدد دیتا ہے؟", "answer": "نمایاں طور پر۔ چونکہ مواد API سے پہنچتا ہے، آپ صفحات کو build وقت پر static generate کر کے CDN سے پیش کر سکتے ہیں، جو بہت تیز لوڈ ٹائم اور بہترین Core Web Vitals پیدا کرتا ہے۔ ہر صفحہ دیکھنے پر ڈیٹابیس query نہیں ہوتی اور monolithic CMS سے بہت چھوٹی حملہ سطح ہوتی ہے۔ ہم CMS کو رفتار اور تازگی کے بہترین کے لیے Next.js static یا incremental generation سے جوڑتے ہیں۔" },
+        { "question": "کیا یہ کئی زبانیں سنبھال سکتا ہے؟", "answer": "جی ہاں۔ Headless پلیٹ فارمز کی مضبوط localization سپورٹ ہوتی ہے، جو ایڈیٹرز کو مواد ایک جگہ سے کئی زبانوں میں منظم کرنے دیتی ہے جبکہ frontend ہر صارف کو درست locale پیش کرتا ہے۔ یہ کئی مارکیٹوں کو خدمت دینے والے کاروباروں کے لیے فطری موزونیت ہے — بالکل وہی کثیر لسانی ترسیل جسے الگ کیا گیا آرکیٹیکچر صاف سنبھالتا ہے۔ ہم content model کو شروع سے localization ذہن میں رکھ کر ڈیزائن کرتے ہیں۔" },
+        { "question": "مواد میری ویب سائٹ اور ایپس تک کیسے پہنچتا ہے؟", "answer": "CMS مواد کو GraphQL یا REST API کے ذریعے پیش کرتا ہے۔ آپ کی ویب سائٹ اسے build وقت پر یا درخواست پر fetch کرتی ہے، اور کوئی بھی دوسرا چینل — mobile ایپ، digital signage، شراکت دار انٹیگریشن — وہی API کال کرتا ہے۔ یہی بنیادی فائدہ ہے: آپ مواد ایک بار لکھتے ہیں اور ہر جگہ شائع کرتے ہیں، فی چینل نقل اور کاپیاں ہم آہنگ رکھنے کے بجائے۔" },
+        { "question": "کیا آپ ہمارا موجودہ مواد منتقل کر سکتے ہیں؟", "answer": "جی ہاں۔ ہم مواد آپ کے موجودہ CMS یا ڈیٹابیس سے ایکسپورٹ کرتے ہیں، اسے نئے content model سے map کرتے ہیں، اور validation کے ساتھ import کرتے ہیں تاکہ کچھ ضائع یا خراب نہ ہو۔ منتقلی احتیاط سے test runs کے ساتھ منصوبہ بند ہوتی ہے، خاص طور پر بڑی content libraries یا پیچیدہ تعلقات والی سائٹس کے لیے۔ صاف منتقلی لازم ہے، کیونکہ ایڈیٹرز ایسے سسٹم پر بھروسا نہیں کریں گے جس نے ان کا موجودہ مواد بگاڑ دیا۔" }
+      ],
+      "technologies": [
+        { "icon": "strapi", "name": "Strapi" },
+        { "icon": "contentful", "name": "Contentful" },
+        { "icon": "sanity", "name": "Sanity" },
+        { "icon": "prismic", "name": "Prismic" },
+        { "icon": "nextdotjs", "name": "Next.js" },
+        { "icon": "graphql", "name": "GraphQL" },
+        { "icon": "vercel", "name": "Vercel" },
+        { "icon": "typescript", "name": "TypeScript" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تطوير أنظمة إدارة محتوى Headless",
+    "shortDescription": "افصلوا المحتوى عن العرض بنظام إدارة محتوى Headless — يعمل محرّروكم في واجهة ودودة بينما يبني المطوّرون واجهات أمامية سريعة بأي إطار، ويُسلَّم المحتوى عبر API إلى الويب والجوال وأبعد.",
+    "fullDescription": "يفصل نظام Headless مكان إدارة المحتوى عن مكان عرضه، فيحرّر محرّريكم ومطوّريكم ليعمل كلٌّ بأفضل أدواته. ننفّذ ونخصّص منصات مثل Strapi وContentful وSanity، ونصمّم نماذج محتوى تطابق طريقة تفكير فريقكم بدل حشره في قوالب جامدة. يُسلَّم المحتوى عبر GraphQL أو REST إلى واجهة Next.js سريعة وتطبيقات جوال أصلية ولافتات رقمية وأي مكان آخر — اكتبوا مرة وانشروا في كل مكان. نهيّئ تدفقات معاينة ومسوّدات كي يرى المحرّرون التغييرات قبل النشر، وتوطيناً للمواقع متعددة اللغات، وويب هوكس تعيد بناء موقعكم الثابت لحظة تغيّر المحتوى. والنتيجة بنية مستقبلية: يبقى المحرّرون منتجين، ويبقى المطوّرون أحراراً في اختيار مكدّسهم، ويعيش محتواكم أطول من أي قناة واحدة.",
+    "features": [
+      "تنفيذ Strapi وContentful وSanity",
+      "نمذجة محتوى مخصّصة",
+      "واجهات محتوى GraphQL وREST",
+      "تسليم محتوى متعدد القنوات",
+      "تدفقات المعاينة والمسوّدات",
+      "التوطين والتدويل",
+      "إعادة بناء ثابتة مدفوعة بالويب هوكس",
+      "أدوار وأذونات المحرّرين"
+    ],
+    "benefits": [
+      "محتوى قابل لإعادة الاستخدام عبر الويب والجوال وإنترنت الأشياء",
+      "المطوّرون أحرار في استخدام أي إطار واجهة أمامية",
+      "مواقع أسرع وأكثر أماناً عبر التوليد الثابت",
+      "المحرّرون يعملون باستقلال عن المطوّرين",
+      "توسّع أسهل وسطح هجوم أصغر",
+      "مستقبلية: المحتوى يعيش أطول من أي قناة"
+    ],
+    "metaTitle": "تطوير أنظمة إدارة محتوى Headless | PakSoft",
+    "metaDescription": "نفّذوا نظام Headless بـ Strapi أو Contentful أو Sanity: نماذج محتوى مخصّصة وتدفقات معاينة وتوطين وتسليم متعدد القنوات. اطلبوا تقديراً.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "تدقيق المنصة والمحتوى", "description": "نقيّم محتواكم وقنواتكم وسير عمل فريقكم، ثم نوصي بالمنصة الصحيحة — Strapi ذاتي الاستضافة للتحكم، أو Contentful أو Sanity للراحة المُدارة. يعتمد الاختيار على الميزانية وحاجات المحرّرين وقدر البنية التي تريدون امتلاكها." },
+        { "step": 2, "title": "نمذجة المحتوى", "description": "نصمّم أنواع المحتوى وعلاقاته حول كيف يفكّر محرّروكم فعلاً في المحتوى، لا حول شكله على صفحة واحدة. والنموذج النظيف هو ما يجعل المحتوى قابلاً لإعادة الاستخدام عبر القنوات بدل حبسه في تخطيط واحد." },
+        { "step": 3, "title": "إعداد النظام وتخصيصه", "description": "نهيّئ النظام ونبني حقولاً ومكوّنات مخصّصة ونضع الأدوار والأذونات كي يرى كل محرّر ما يحتاجه. وحيث تقصر المنصة، نوسّعها بإضافات أو كود مخصّص بدل المساومة على سير العمل." },
+        { "step": 4, "title": "تكامل الواجهة الأمامية", "description": "نربط واجهة المحتوى بواجهة أمامية سريعة — عادة Next.js — بتوليد ثابت أو تجديد تدريجي للسرعة وSEO. والواجهة الأمامية مفصولة، فيمكنكم لاحقاً إضافة تطبيق جوال أو قناة أخرى مقابل المحتوى نفسه." },
+        { "step": 5, "title": "المعاينة والتوطين والويب هوكس", "description": "نوصّل معاينات المسوّدات كي يرى المحرّرون التغييرات قبل النشر، ونهيّئ التوطين للمحتوى متعدد اللغات، ونضع ويب هوكس تعيد بناء الصفحات أو التحقق منها لحظة تغيّر المحتوى. ويحصل المحرّرون على زر نشر يعمل ببساطة." },
+        { "step": 6, "title": "التدريب والإطلاق والتسليم", "description": "نرحّل المحتوى الحالي وندرّب محرّريكم على الواجهة الجديدة ونطلق. تخرجون بإعداد موثَّق يشغّله فريقكم يومياً، مع خيار دعم مستمر للترقيات وأنواع المحتوى الجديدة." }
+      ],
+      "faq": [
+        { "question": "ماذا يعني 'Headless' ولماذا أريده؟", "answer": "النظام التقليدي مثل WordPress الكلاسيكي يقرن إدارة المحتوى بالموقع معاً. ونظام Headless يزيل الواجهة الأمامية — 'الرأس' — ويسلّم المحتوى عبر API بدلاً منها، فتبنون الواجهة بأي تقنية وتعيدون استخدام المحتوى نفسه عبر الويب وتطبيقات الجوال وقنوات أخرى. تريدونه حين تحتاجون قنوات متعددة أو واجهة حديثة سريعة أو التحرّر من قيود منصة أحادية." },
+        { "question": "أي نظام Headless أختار؟", "answer": "يعتمد على أولوياتكم. Strapi مفتوح المصدر وذاتي الاستضافة، يمنح تحكماً كاملاً ولا رسوم لكل مقعد لكنه يتطلب تشغيله. وContentful خدمة مُدارة مصقولة بمستوى المؤسسات وموثوقية عالية. وSanity يقدّم تجربة تحرير قابلة للتخصيص بقوة وتعاوناً لحظياً. نطابق المنصة مع ميزانيتكم وحاجات المحرّرين وقدر البنية التي تريدون إدارتها." },
+        { "question": "هل نظام Headless أصعب على محرّري المحتوى؟", "answer": "إن نُفّذ جيداً فلا — للمنصات الحديثة واجهات تحرير ممتازة، ونهيّئ نماذج المحتوى حول طريقة عمل فريقكم. المفتاح هو المعاينة: يحتاج المحرّرون رؤية شكل المحتوى قبل النشر، وهو ما نهيّئه كي تبدو التجربة طبيعية كنظام تقليدي. والمفاضلة أن الإعداد الأولي يتطلب مشاركة مطوّر أكثر من تثبيت قالب." },
+        { "question": "هل يمكنني معاينة المحتوى قبل النشر؟", "answer": "نعم. المعاينة جوهرية وننفّذها دائماً. نربط وضع المسوّدة في النظام بواجهتكم الأمامية كي يرى المحرّرون بالضبط كيف ستُعرَض صفحة بتغييراتهم غير المنشورة، عبر تخطيطات وأجهزة مختلفة. ودون معاينة جيدة يُحبِط إعداد Headless المحرّرين، لذا نعدّه جزءاً غير قابل للتفاوض من البناء." },
+        { "question": "هل يساعد نظام Headless في الأداء وSEO؟", "answer": "بشكل كبير. لأن المحتوى يُسلَّم عبر API، يمكنكم توليد الصفحات ثابتاً وقت البناء وتقديمها من CDN، ما ينتج أوقات تحميل سريعة جداً وCore Web Vitals ممتازة. ولا استعلام قاعدة بيانات عند كل عرض صفحة وسطح هجوم أصغر بكثير من نظام أحادي. ونقرن النظام بـ Next.js للتوليد الثابت أو التدريجي للجمع بين السرعة والطزاجة." },
+        { "question": "هل يتعامل مع لغات متعددة؟", "answer": "نعم. للمنصات دعم توطين قوي يتيح للمحرّرين إدارة المحتوى بعدة لغات من مكان واحد بينما تقدّم الواجهة اللغة الصحيحة لكل مستخدم. وهذا ملائم طبيعياً للأعمال التي تخدم أسواقاً متعددة — وهو بالضبط نوع التسليم متعدد اللغات الذي تتولاه بنية مفصولة بنظافة. ونصمّم نموذج المحتوى مع التوطين في الحسبان منذ البداية." },
+        { "question": "كيف يصل المحتوى إلى موقعي وتطبيقاتي؟", "answer": "يكشف النظام المحتوى عبر واجهة GraphQL أو REST. يجلبه موقعكم وقت البناء أو عند الطلب، وأي قناة أخرى — تطبيق جوال أو لافتة رقمية أو تكامل شريك — تستدعي الواجهة نفسها. وهذه الميزة الأساسية: تكتبون المحتوى مرة وتنشرونه في كل مكان بدل تكراره لكل قناة وإبقاء النسخ متزامنة." },
+        { "question": "هل يمكنكم ترحيل محتوانا الحالي؟", "answer": "نعم. نصدّر المحتوى من نظامكم أو قاعدة بياناتكم الحالية، ونربطه بنموذج المحتوى الجديد، ونستورده بتحقّق كي لا يُفقَد أو يتشوّه شيء. ويُخطَّط للترحيل بعناية مع تجارب، خصوصاً لمكتبات المحتوى الكبيرة أو المواقع ذات العلاقات المعقدة. والترحيل النظيف جوهري، لأن المحرّرين لن يثقوا بنظام شوّه محتواهم الحالي." }
+      ],
+      "technologies": [
+        { "icon": "strapi", "name": "Strapi" },
+        { "icon": "contentful", "name": "Contentful" },
+        { "icon": "sanity", "name": "Sanity" },
+        { "icon": "prismic", "name": "Prismic" },
+        { "icon": "nextdotjs", "name": "Next.js" },
+        { "icon": "graphql", "name": "GraphQL" },
+        { "icon": "vercel", "name": "Vercel" },
+        { "icon": "typescript", "name": "TypeScript" }
+      ]
+    }
+  }
+}

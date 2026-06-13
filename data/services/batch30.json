@@ -1,0 +1,436 @@
+{
+  "zapier-automation": {
+    "en": {
+      "name": "Zapier Automation",
+      "shortDescription": "Connect your apps and automate repetitive workflows to save time.",
+      "fullDescription": "Manual data entry and repetitive administrative tasks drain your team's time and increase the risk of human error. Our Zapier Automation services connect the disparate software tools your business relies on, creating seamless, automated workflows (Zaps). Whether you need to automatically add new Facebook Leads to your CRM, send Slack notifications for new e-commerce orders, or synchronize Google Sheets with your accounting software, we build robust, multi-step automations. We focus on streamlining your operations so your team can focus on high-value, strategic work rather than copying and pasting data.",
+      "features": [
+        "Custom Zap Creation & Workflow Mapping",
+        "Multi-Step Automations with Conditional Logic (Paths)",
+        "CRM, E-commerce, and Marketing Tool Integrations",
+        "Webhooks and Custom API Connections via Zapier",
+        "Error Handling & Failed Zap Troubleshooting",
+        "Process Optimization Consulting"
+      ],
+      "benefits": [
+        "Save Hundreds of Hours of Manual Admin Work",
+        "Eliminate Human Error in Data Entry and Transfers",
+        "Speed Up Lead Response Times with Instant Notifications",
+        "Connect Legacy Software with Modern Cloud Apps",
+        "Scale Your Operations Without Hiring Additional Admin Staff"
+      ],
+      "content": {
+        "process": [
+          { "title": "Workflow Audit", "description": "Identifying repetitive tasks and mapping out the data flow between your current software tools." },
+          { "title": "Zap Design", "description": "Designing the automation logic, including triggers, actions, formatting, and conditional paths." },
+          { "title": "Integration Setup", "description": "Authenticating your apps within Zapier and configuring Webhooks for unsupported tools." },
+          { "title": "Testing", "description": "Running sample data through the Zap to ensure fields map correctly and errors are handled." },
+          { "title": "Deployment & Handover", "description": "Turning on the automations, monitoring the initial runs, and providing documentation." }
+        ],
+        "technologies": [
+          "Zapier",
+          "Make (Integromat)",
+          "Webhooks",
+          "REST APIs",
+          "HubSpot / Salesforce / Pipedrive",
+          "Slack / Google Workspace"
+        ],
+        "faq": [
+          { "question": "What if the app I use isn't on Zapier?", "answer": "Zapier supports over 5,000 apps, but if yours isn't listed, we can usually still connect it using Zapier's built-in Webhooks or by writing custom API requests within the Zap, provided the app has an accessible API." },
+          { "question": "Are multi-step Zaps reliable?", "answer": "Yes, but they require careful configuration. We build robust Zaps that include formatting steps (to ensure data matches perfectly between apps) and conditional logic (Paths) to handle different scenarios gracefully without failing." }
+        ]
+      },
+      "metaTitle": "Zapier Automation Expert | Workflow & API Integrations",
+      "metaDescription": "Automate repetitive tasks and connect your apps with our Zapier automation services. We build complex, multi-step Zaps to streamline your business workflows."
+    },
+    "tr": {
+      "name": "Zapier Otomasyonu",
+      "shortDescription": "Uygulamalarınızı bağlayın ve zamandan tasarruf etmek için tekrarlayan iş akışlarını otomatikleştirin.",
+      "fullDescription": "Manuel veri girişi ve tekrarlayan idari görevler ekibinizin zamanını tüketir ve insan hatası riskini artırır. Zapier Otomasyon hizmetlerimiz, işletmenizin güvendiği farklı yazılım araçlarını birbirine bağlayarak sorunsuz, otomatik iş akışları (Zaps) oluşturur. İster yeni Facebook Potansiyel Müşterilerini (Leads) CRM'inize otomatik olarak eklemeniz, ister yeni e-ticaret siparişleri için Slack bildirimleri göndermeniz veya Google E-Tabloları (Sheets) muhasebe yazılımınızla senkronize etmeniz gereksin, sağlam, çok adımlı otomasyonlar oluşturuyoruz. Ekibinizin verileri kopyalayıp yapıştırmak yerine yüksek değerli, stratejik işlere odaklanabilmesi için operasyonlarınızı kolaylaştırmaya odaklanıyoruz.",
+      "features": [
+        "Özel Zap Oluşturma ve İş Akışı (Workflow) Haritalama",
+        "Koşullu Mantık (Paths) İçeren Çok Adımlı Otomasyonlar",
+        "CRM, E-ticaret ve Pazarlama Aracı Entegrasyonları",
+        "Zapier Üzerinden Webhook'lar ve Özel API Bağlantıları",
+        "Hata Yönetimi ve Başarısız Zap Sorunlarını Giderme",
+        "Süreç Optimizasyonu Danışmanlığı"
+      ],
+      "benefits": [
+        "Yüzlerce Saatlik Manuel Yönetici İşinden Tasarruf Etme",
+        "Veri Girişi ve Aktarımlarında İnsan Hatasını Ortadan Kaldırma",
+        "Anında Bildirimlerle Müşteri Adayı (Lead) Yanıt Sürelerini Hızlandırma",
+        "Eski (Legacy) Yazılımları Modern Bulut Uygulamalarıyla Bağlama",
+        "Ek Yönetici Personel İşe Almadan Operasyonlarınızı Ölçeklendirme"
+      ],
+      "content": {
+        "process": [
+          { "title": "İş Akışı Denetimi", "description": "Tekrarlayan görevleri belirleme ve mevcut yazılım araçlarınız arasındaki veri akışının haritasını çıkarma." },
+          { "title": "Zap Tasarımı", "description": "Tetikleyiciler (triggers), eylemler (actions), biçimlendirme ve koşullu yollar (paths) dahil olmak üzere otomasyon mantığını tasarlama." },
+          { "title": "Entegrasyon Kurulumu", "description": "Zapier içinde uygulamalarınızın kimliğini doğrulama ve desteklenmeyen araçlar için Webhook'ları yapılandırma." },
+          { "title": "Test Etme", "description": "Alanların (fields) doğru şekilde eşleştiğinden ve hataların giderildiğinden emin olmak için Zap üzerinden örnek veriler çalıştırma." },
+          { "title": "Dağıtım ve Devir (Handover)", "description": "Otomasyonları açma, ilk çalışmaları izleme ve dokümantasyon sağlama." }
+        ],
+        "technologies": [
+          "Zapier",
+          "Make (Eski adıyla Integromat)",
+          "Webhook'lar",
+          "REST API'ler",
+          "HubSpot / Salesforce / Pipedrive",
+          "Slack / Google Workspace"
+        ],
+        "faq": [
+          { "question": "Kullandığım uygulama Zapier'de yoksa ne olur?", "answer": "Zapier 5.000'den fazla uygulamayı destekler, ancak sizinki listede yoksa, uygulamanın erişilebilir bir API'si olması koşuluyla, Zapier'in yerleşik Webhook'larını kullanarak veya Zap içinde özel API istekleri yazarak genellikle yine de bağlayabiliriz." },
+          { "question": "Çok adımlı Zap'ler güvenilir mi?", "answer": "Evet, ancak dikkatli bir yapılandırma gerektirirler. Uygulamalar arasında verilerin mükemmel şekilde eşleşmesini sağlamak için biçimlendirme adımlarını (formatting steps) ve farklı senaryoları başarısız olmadan zarif bir şekilde ele almak için koşullu mantığı (Paths) içeren sağlam Zap'ler oluşturuyoruz." }
+        ]
+      },
+      "metaTitle": "Zapier Otomasyon Uzmanı | İş Akışı ve API Entegrasyonları",
+      "metaDescription": "Zapier otomasyon hizmetlerimizle tekrarlayan görevleri otomatikleştirin ve uygulamalarınızı bağlayın. İş akışlarınızı hızlandırmak için karmaşık Zap'ler oluşturuyoruz."
+    },
+    "de": {
+      "name": "Zapier-Automatisierung",
+      "shortDescription": "Verbinden Sie Ihre Apps und automatisieren Sie wiederkehrende Workflows, um Zeit zu sparen.",
+      "fullDescription": "Manuelle Dateneingabe und wiederkehrende administrative Aufgaben fressen die Zeit Ihres Teams und erhöhen das Risiko menschlicher Fehler. Unsere Zapier-Automatisierungsdienste verbinden die verschiedenen Software-Tools, auf die sich Ihr Unternehmen verlässt, und schaffen nahtlose, automatisierte Workflows (Zaps). Egal, ob Sie neue Facebook-Leads automatisch in Ihr CRM eintragen, Slack-Benachrichtigungen für neue E-Commerce-Bestellungen senden oder Google Sheets mit Ihrer Buchhaltungssoftware synchronisieren möchten – wir bauen robuste, mehrstufige Automatisierungen. Wir fokussieren uns auf die Optimierung Ihrer Abläufe, damit Ihr Team sich auf wertschöpfende, strategische Arbeit konzentrieren kann, statt Daten zu kopieren.",
+      "features": [
+        "Erstellung individueller Zaps & Workflow-Mapping",
+        "Mehrstufige Automatisierungen mit bedingter Logik (Paths)",
+        "Integration von CRM-, E-Commerce- und Marketing-Tools",
+        "Webhooks und Custom API-Anbindungen via Zapier",
+        "Fehlerbehandlung (Error Handling) & Troubleshooting",
+        "Beratung zur Prozessoptimierung"
+      ],
+      "benefits": [
+        "Einsparung hunderter Stunden manueller Administrationsarbeit",
+        "Eliminierung menschlicher Fehler bei Dateneingabe & -transfer",
+        "Schnellere Reaktionszeiten auf Leads durch Sofortbenachrichtigungen",
+        "Verbindung von Legacy-Software mit modernen Cloud-Apps",
+        "Skalierung der Abläufe ohne zusätzliches Verwaltungspersonal"
+      ],
+      "content": {
+        "process": [
+          { "title": "Workflow-Audit", "description": "Identifizierung manueller Aufgaben und Dokumentation des Datenflusses zwischen Ihren Tools." },
+          { "title": "Zap-Design", "description": "Entwurf der Logik inkl. Trigger, Actions, Formatierungsschritten und bedingten Pfaden." },
+          { "title": "Setup & Integration", "description": "Authentifizierung der Apps in Zapier und Konfiguration von Webhooks für Nischen-Tools." },
+          { "title": "Testing", "description": "Testlauf mit Beispieldaten, um korrektes Feld-Mapping und Fehlerbehandlung sicherzustellen." },
+          { "title": "Go-Live & Übergabe", "description": "Aktivierung der Zaps, Monitoring der ersten Durchläufe und Übergabe der Dokumentation." }
+        ],
+        "technologies": [
+          "Zapier",
+          "Make (ehem. Integromat)",
+          "Webhooks",
+          "REST APIs",
+          "HubSpot / Salesforce / Pipedrive",
+          "Slack / Google Workspace"
+        ],
+        "faq": [
+          { "question": "Was passiert, wenn meine App nicht auf Zapier verfügbar ist?", "answer": "Zapier unterstützt über 5.000 Apps. Sollte Ihre nicht dabei sein, können wir sie meistens über Zapiers integrierte Webhooks oder durch das Schreiben individueller API-Requests innerhalb des Zaps anbinden, sofern die App eine offene API besitzt." },
+          { "question": "Sind mehrstufige Zaps zuverlässig?", "answer": "Ja, sie erfordern jedoch eine sorgfältige Konfiguration. Wir bauen robuste Zaps, die Formatierungsschritte (zur Datenanpassung zwischen Apps) und bedingte Logik (Paths) enthalten, um verschiedene Szenarien fehlerfrei und automatisch abzufangen." }
+        ]
+      },
+      "metaTitle": "Zapier Agentur | Automatisierung & Workflow-Integration",
+      "metaDescription": "Automatisieren Sie Prozesse und verbinden Sie Apps mit Zapier. Wir bauen komplexe, mehrstufige Workflows, um Ihr Business effizienter zu machen."
+    },
+    "ur": {
+      "name": "زیپیئر آٹومیشن",
+      "shortDescription": "وقت بچانے کے لیے اپنی ایپس کو مربوط کریں اور بار بار چلنے والے ورک فلو کو خودکار بنائیں۔",
+      "fullDescription": "دستی ڈیٹا انٹری اور دہرائے جانے والے انتظامی کام آپ کی ٹیم کا وقت ضائع کرتے ہیں اور انسانی غلطی کے خطرے کو بڑھاتے ہیں۔ ہماری Zapier آٹومیشن سروسز ان مختلف سافٹ ویئر ٹولز کو جوڑتی ہیں جن پر آپ کے کاروبار کا انحصار ہے، جو کہ ہموار، خودکار ورک فلوز (Zaps) بناتے ہیں۔ چاہے آپ کو اپنے CRM میں خودکار طور پر نئے Facebook لیڈز شامل کرنے کی ضرورت ہو، نئے ای کامرس آرڈرز کے لیے سلیک اطلاعات بھیجیں، یا اپنے اکاؤنٹنگ سافٹ ویئر کے ساتھ Google Sheets کو ہم آہنگ کریں، ہم مضبوط، کثیر مرحلہ خودکار کارروائیاں بناتے ہیں۔ ہم آپ کے کاموں کو ہموار کرنے پر توجہ مرکوز کرتے ہیں تاکہ آپ کی ٹیم ڈیٹا کاپی کرنے اور چسپاں کرنے کے بجائے اعلیٰ قدر، سٹریٹجک کام پر توجہ مرکوز کر سکے۔",
+      "features": [
+        "کسٹم زپ کی تخلیق اور ورک فلو میپنگ",
+        "مشروط منطق کے ساتھ ملٹی سٹیپ آٹومیشنز (راستے)",
+        "CRM، ای کامرس، اور مارکیٹنگ ٹول انٹیگریشنز",
+        "زیپیئر کے ذریعے ویب ہکس اور کسٹم API کنکشنز",
+        "ایرر ہینڈلنگ اور فیلڈ زیپ ٹربل شوٹنگ",
+        "عمل کی اصلاح سے متعلق مشاورت"
+      ],
+      "benefits": [
+        "دستی ایڈمن کام کے سینکڑوں گھنٹے بچائیں۔",
+        "ڈیٹا انٹری اور ٹرانسفرز میں انسانی خرابی کو ختم کریں۔",
+        "فوری اطلاعات کے ساتھ لیڈ رسپانس ٹائم کو تیز کریں۔",
+        "جدید کلاؤڈ ایپس کے ساتھ میراثی سافٹ ویئر کو مربوط کریں۔",
+        "اضافی ایڈمن اسٹاف کی خدمات حاصل کیے بغیر اپنے کاموں کو اسکیل کریں۔"
+      ],
+      "content": {
+        "process": [
+          { "title": "ورک فلو آڈٹ", "description": "تکراری کاموں کی نشاندہی کرنا اور اپنے موجودہ سافٹ ویئر ٹولز کے درمیان ڈیٹا کے بہاؤ کو نقشہ بنانا۔" },
+          { "title": "زپ ڈیزائن", "description": "آٹومیشن لاجک کو ڈیزائن کرنا، بشمول ٹرگرز، ایکشنز، فارمیٹنگ، اور مشروط راستے۔" },
+          { "title": "انٹیگریشن سیٹ اپ", "description": "Zapier کے اندر اپنی ایپس کی توثیق کرنا اور غیر تعاون یافتہ ٹولز کے لیے Webhooks کو ترتیب دینا۔" },
+          { "title": "جانچ", "description": "اس بات کو یقینی بنانے کے لیے کہ فیلڈز کا نقشہ درست طریقے سے اور غلطیوں کو سنبھالا جائے، Zap کے ذریعے نمونے کا ڈیٹا چلانا۔" },
+          { "title": "تعیناتی اور حوالہ دینا", "description": "آٹومیشن کو آن کرنا، ابتدائی رنز کی نگرانی کرنا، اور دستاویزات فراہم کرنا۔" }
+        ],
+        "technologies": [
+          "Zapier",
+          "Make (Integromat)",
+          "Webhooks",
+          "REST APIs",
+          "HubSpot / Salesforce / Pipedrive",
+          "Slack / Google Workspace"
+        ],
+        "faq": [
+          { "question": "کیا ہوگا اگر میں جو ایپ استعمال کرتا ہوں وہ Zapier پر نہ ہو؟", "answer": "Zapier 5,000 سے زیادہ ایپس کو سپورٹ کرتا ہے، لیکن اگر آپ کا فہرست میں نہیں ہے، تو ہم اسے اب بھی Zapier کے بلٹ ان Webhooks کا استعمال کر کے یا Zap کے اندر حسب ضرورت API درخواستیں لکھ کر جوڑ سکتے ہیں، بشرطیکہ ایپ کے پاس قابل رسائی API ہو۔" },
+          { "question": "کیا ملٹی سٹیپ زپس قابل اعتماد ہیں؟", "answer": "ہاں، لیکن انہیں محتاط ترتیب کی ضرورت ہے۔ ہم مضبوط Zaps بناتے ہیں جن میں فارمیٹنگ کے مراحل شامل ہوتے ہیں (اس بات کو یقینی بنانے کے لیے کہ ڈیٹا ایپس کے درمیان بالکل میل کھاتا ہے) اور مشروط منطق (راستے) مختلف منظرناموں کو ناکام کیے بغیر خوبصورتی سے ہینڈل کرنے کے لیے۔" }
+        ]
+      },
+      "metaTitle": "Zapier آٹومیشن کے ماہر | ورک فلو اور API انٹیگریشنز",
+      "metaDescription": "دہرائے جانے والے کاموں کو خودکار بنائیں اور اپنی ایپس کو ہماری Zapier آٹومیشن سروسز سے مربوط کریں۔ ہم آپ کے کاروباری ورک فلو کو ہموار کرنے کے لیے پیچیدہ، ملٹی سٹیپ Zaps بناتے ہیں۔"
+    },
+    "ar": {
+      "name": "أتمتة زابير (Zapier)",
+      "shortDescription": "اربط تطبيقاتك وقم بأتمتة مهام سير العمل المتكررة لتوفير الوقت.",
+      "fullDescription": "يؤدي إدخال البيانات يدويًا والمهام الإدارية المتكررة إلى استنزاف وقت فريقك وزيادة خطر حدوث أخطاء بشرية. تقوم خدمات أتمتة Zapier لدينا بربط أدوات البرامج المختلفة التي يعتمد عليها عملك، مما يؤدي إلى إنشاء مهام سير عمل مؤتمتة وسلسة (تُعرف باسم Zaps). سواء كنت بحاجة إلى إضافة عملاء محتملين جدد (Leads) من فيسبوك تلقائيًا إلى نظام CRM الخاص بك، أو إرسال إشعارات على تطبيق Slack لطلبات التجارة الإلكترونية الجديدة، أو مزامنة جداول بيانات Google (Google Sheets) مع برنامج المحاسبة الخاص بك، فإننا نبني عمليات أتمتة قوية ومتعددة الخطوات. ينصب تركيزنا على تبسيط عملياتك حتى يتمكن فريقك من التركيز على العمل الاستراتيجي عالي القيمة بدلاً من نسخ البيانات ولصقها.",
+      "features": [
+        "إنشاء Zaps مخصصة وتخطيط سير العمل (Workflow Mapping)",
+        "أتمتة متعددة الخطوات مع المنطق الشرطي (المسارات - Paths)",
+        "تكامل أدوات إدارة علاقات العملاء (CRM) والتجارة الإلكترونية والتسويق",
+        "استخدام خطافات الويب (Webhooks) واتصالات API المخصصة عبر Zapier",
+        "التعامل مع الأخطاء واستكشاف أعطال Zaps الفاشلة وإصلاحها",
+        "استشارات تحسين العمليات (Process Optimization)"
+      ],
+      "benefits": [
+        "توفير مئات الساعات من العمل الإداري اليدوي",
+        "القضاء على الأخطاء البشرية في إدخال البيانات ونقلها",
+        "تسريع أوقات الاستجابة للعملاء المحتملين من خلال الإشعارات الفورية",
+        "ربط البرامج القديمة (Legacy) بالتطبيقات السحابية الحديثة",
+        "توسيع نطاق عملياتك دون تعيين موظفين إداريين إضافيين"
+      ],
+      "content": {
+        "process": [
+          { "title": "تدقيق سير العمل", "description": "تحديد المهام المتكررة ورسم خرائط لتدفق البيانات بين أدوات البرامج الحالية الخاصة بك." },
+          { "title": "تصميم الـ Zap", "description": "تصميم منطق الأتمتة، بما في ذلك المشغلات (Triggers)، والإجراءات (Actions)، والتنسيق، والمسارات الشرطية." },
+          { "title": "إعداد التكامل", "description": "المصادقة (Authenticating) على تطبيقاتك داخل Zapier وتكوين Webhooks للأدوات غير المدعومة بشكل مباشر." },
+          { "title": "الاختبار", "description": "تشغيل بيانات نموذجية عبر الـ Zap لضمان تعيين الحقول (Fields) بشكل صحيح والتعامل مع الأخطاء." },
+          { "title": "النشر والتسليم", "description": "تشغيل الأتمتة، ومراقبة عمليات التشغيل الأولية، وتوفير الوثائق اللازمة." }
+        ],
+        "technologies": [
+          "Zapier",
+          "Make (المعروف سابقاً بـ Integromat)",
+          "خطافات الويب (Webhooks)",
+          "واجهات برمجة تطبيقات REST",
+          "HubSpot / Salesforce / Pipedrive",
+          "Slack / Google Workspace"
+        ],
+        "faq": [
+          { "question": "ماذا لو كان التطبيق الذي أستخدمه غير موجود على Zapier؟", "answer": "يدعم Zapier أكثر من 5000 تطبيق، ولكن إذا لم يكن تطبيقك مدرجًا، فلا يزال بإمكاننا عادةً توصيله باستخدام Webhooks المدمجة في Zapier أو عن طريق كتابة طلبات API مخصصة داخل الـ Zap، شريطة أن يحتوي التطبيق على واجهة برمجة تطبيقات (API) يمكن الوصول إليها." },
+          { "question": "هل الـ Zaps المتعددة الخطوات موثوقة؟", "answer": "نعم، ولكنها تتطلب تكويناً دقيقاً. نحن نبني Zaps قوية تتضمن خطوات تنسيق (لضمان تطابق البيانات تمامًا بين التطبيقات) ومنطقًا شرطيًا (المسارات) للتعامل مع السيناريوهات المختلفة بسلاسة دون أن تفشل." }
+        ]
+      },
+      "metaTitle": "خبير أتمتة Zapier | تكامل سير العمل وواجهات برمجة التطبيقات (API)",
+      "metaDescription": "قم بأتمتة المهام المتكررة واربط تطبيقاتك من خلال خدمات أتمتة Zapier الخاصة بنا. نقوم ببناء Zaps معقدة ومتعددة الخطوات لتبسيط أعمالك."
+    }
+  },
+  "zero-trust-security": {
+    "en": {
+      "name": "Zero Trust Security",
+      "shortDescription": "Never trust, always verify. Advanced cybersecurity architectures for modern enterprises.",
+      "fullDescription": "Traditional perimeter-based security (castle-and-moat) is obsolete in an era of remote work, cloud computing, and sophisticated phishing attacks. Our Zero Trust Security services redesign your IT architecture under a simple premise: 'never trust, always verify.' We implement strict identity verification, micro-segmentation, and least-privilege access controls for every user, device, and application, regardless of whether they are inside or outside your corporate network. By continuously monitoring context and behavior, we drastically reduce your attack surface and limit lateral movement if a breach does occur.",
+      "features": [
+        "Identity & Access Management (IAM) & MFA Implementation",
+        "Network Micro-Segmentation & Software-Defined Perimeters (SDP)",
+        "Endpoint Detection and Response (EDR) Deployment",
+        "Zero Trust Network Access (ZTNA) Replacing Legacy VPNs",
+        "Continuous Context-Aware Risk Assessment",
+        "Cloud Security Posture Management (CSPM)"
+      ],
+      "benefits": [
+        "Mitigate the Risk of Data Breaches and Ransomware",
+        "Secure Remote and Hybrid Workforces Seamlessly",
+        "Prevent Lateral Movement of Attackers Inside Your Network",
+        "Ensure Compliance with Stringent Data Protection Regulations",
+        "Improve User Experience by Replacing Clunky VPNs"
+      ],
+      "content": {
+        "process": [
+          { "title": "Security Assessment", "description": "Auditing your current network, identifying critical data assets, and mapping user access flows." },
+          { "title": "Identity Verification", "description": "Implementing robust IAM, Single Sign-On (SSO), and context-aware Multi-Factor Authentication (MFA)." },
+          { "title": "Micro-Segmentation", "description": "Dividing the network into small, isolated segments to prevent unauthorized lateral movement." },
+          { "title": "Endpoint Security", "description": "Deploying EDR agents to all devices to verify device health before granting access." },
+          { "title": "Monitoring & Policy", "description": "Establishing continuous monitoring and automated policies that revoke access upon suspicious activity." }
+        ],
+        "technologies": [
+          "Okta / Microsoft Entra ID (Azure AD)",
+          "Zscaler / Cloudflare Zero Trust",
+          "CrowdStrike / SentinelOne (EDR)",
+          "Cisco Duo (MFA)",
+          "Palo Alto Prisma Access",
+          "SIEM (Splunk / Datadog)"
+        ],
+        "faq": [
+          { "question": "What is the difference between Zero Trust and a VPN?", "answer": "A traditional VPN provides broad access to the entire network once a user authenticates, acting like a single key to a castle. Zero Trust Network Access (ZTNA) grants access only to specific, individual applications based on continuous verification of the user's identity and device health." },
+          { "question": "Will Zero Trust disrupt my employees' workflow?", "answer": "When implemented correctly, Zero Trust actually improves the user experience. By utilizing Single Sign-On (SSO) and replacing slow VPNs with fast, direct application access (ZTNA), employees can work securely and efficiently from anywhere." }
+        ]
+      },
+      "metaTitle": "Zero Trust Security Services | Advanced Cybersecurity",
+      "metaDescription": "Implement a Zero Trust security architecture to protect your enterprise. We specialize in ZTNA, micro-segmentation, and advanced identity management."
+    },
+    "tr": {
+      "name": "Sıfır Güven Güvenliği (Zero Trust Security)",
+      "shortDescription": "Asla güvenme, her zaman doğrula. Modern işletmeler için gelişmiş siber güvenlik mimarileri.",
+      "fullDescription": "Geleneksel çevre tabanlı güvenlik (kale ve hendek yaklaşımı), uzaktan çalışma, bulut bilişim ve karmaşık kimlik avı (phishing) saldırıları çağında modası geçmiş durumdadır. Sıfır Güven (Zero Trust) Güvenliği hizmetlerimiz, BT mimarinizi basit bir önermeyle yeniden tasarlar: 'asla güvenme, her zaman doğrula.' Şirket ağınızın içinde veya dışında olmalarına bakılmaksızzın her kullanıcı, cihaz ve uygulama için katı kimlik doğrulama, mikro bölümlere ayırma (micro-segmentation) ve en az ayrıcalıklı erişim kontrolleri uyguluyoruz. Bağlamı (context) ve davranışı sürekli izleyerek, saldırı yüzeyinizi önemli ölçüde azaltıyor ve bir ihlal meydana gelirse yanal hareketi (lateral movement) sınırlıyoruz.",
+      "features": [
+        "Kimlik ve Erişim Yönetimi (IAM) ve MFA Uygulaması",
+        "Ağ Mikro Segmentasyonu ve Yazılım Tanımlı Çevreler (SDP)",
+        "Uç Nokta Tespiti ve Yanıtı (EDR) Dağıtımı",
+        "Eski VPN'lerin Yerini Alan Sıfır Güven Ağ Erişimi (ZTNA)",
+        "Sürekli Bağlama Duyarlı Risk Değerlendirmesi",
+        "Bulut Güvenlik Duruşu Yönetimi (CSPM)"
+      ],
+      "benefits": [
+        "Veri İhlalleri ve Fidye Yazılımı (Ransomware) Riskini Azaltma",
+        "Uzaktan ve Hibrit İşgücünü Sorunsuz Bir Şekilde Güvence Altına Alma",
+        "Saldırganların Ağınızdaki Yanal Hareketini Önleme",
+        "Sıkı Veri Koruma Düzenlemelerine Uyumluluk Sağlama",
+        "Hantal VPN'leri Değiştirerek Kullanıcı Deneyimini İyileştirme"
+      ],
+      "content": {
+        "process": [
+          { "title": "Güvenlik Değerlendirmesi", "description": "Mevcut ağınızı denetleme, kritik veri varlıklarını belirleme ve kullanıcı erişim akışlarının haritasını çıkarma." },
+          { "title": "Kimlik Doğrulama", "description": "Sağlam IAM, Tek Oturum Açma (SSO) ve bağlama duyarlı Çok Faktörlü Kimlik Doğrulama (MFA) uygulama." },
+          { "title": "Mikro Segmentasyon", "description": "Yetkisiz yanal hareketi önlemek için ağı küçük, izole edilmiş bölümlere ayırma." },
+          { "title": "Uç Nokta Güvenliği", "description": "Erişim izni vermeden önce cihaz sağlığını doğrulamak için tüm cihazlara EDR aracıları dağıtma." },
+          { "title": "İzleme ve Politika", "description": "Şüpheli faaliyetlerde erişimi iptal eden sürekli izleme ve otomatik politikalar oluşturma." }
+        ],
+        "technologies": [
+          "Okta / Microsoft Entra ID (Azure AD)",
+          "Zscaler / Cloudflare Zero Trust",
+          "CrowdStrike / SentinelOne (EDR)",
+          "Cisco Duo (MFA)",
+          "Palo Alto Prisma Access",
+          "SIEM (Splunk / Datadog)"
+        ],
+        "faq": [
+          { "question": "Sıfır Güven (Zero Trust) ile VPN arasındaki fark nedir?", "answer": "Geleneksel bir VPN, bir kullanıcı kimliğini doğruladıktan sonra tüm ağa geniş bir erişim sağlar ve bir kalenin tek bir anahtarı gibi davranır. Sıfır Güven Ağ Erişimi (ZTNA), kullanıcının kimliğinin ve cihaz sağlığının sürekli doğrulanmasına dayanarak yalnızca belirli, bireysel uygulamalara erişim izni verir." },
+          { "question": "Sıfır Güven çalışanlarımın iş akışını bozacak mı?", "answer": "Doğru uygulandığında Sıfır Güven aslında kullanıcı deneyimini iyileştirir. Tek Oturum Açmayı (SSO) kullanarak ve yavaş VPN'leri hızlı, doğrudan uygulama erişimiyle (ZTNA) değiştirerek, çalışanlar her yerden güvenli ve verimli bir şekilde çalışabilir." }
+        ]
+      },
+      "metaTitle": "Sıfır Güven Güvenlik Hizmetleri (Zero Trust) | Gelişmiş Siber Güvenlik",
+      "metaDescription": "Kuruluşunuzu korumak için bir Sıfır Güven güvenlik mimarisi uygulayın. ZTNA, mikro segmentasyon ve gelişmiş kimlik yönetimi konusunda uzmanız."
+    },
+    "de": {
+      "name": "Zero Trust Security",
+      "shortDescription": "Never trust, always verify. Fortschrittliche Cybersicherheits-Architekturen für Unternehmen.",
+      "fullDescription": "Traditionelle, perimeterbasierte Sicherheit ('Castle-and-Moat') ist im Zeitalter von Remote-Work, Cloud Computing und raffiniertem Phishing veraltet. Unsere Zero Trust Security-Dienste gestalten Ihre IT-Architektur nach einer einfachen Prämisse um: 'Niemals vertrauen, immer verifizieren'. Wir implementieren strenge Identitätsprüfungen, Mikrosegmentierung und Zugriffskontrollen nach dem Prinzip der geringsten Privilegien für jeden Benutzer, jedes Gerät und jede Anwendung – unabhängig davon, ob sie sich innerhalb oder außerhalb des Firmennetzwerks befinden. Durch die kontinuierliche Überwachung von Kontext und Verhalten reduzieren wir Ihre Angriffsfläche drastisch und schränken laterale Bewegungen bei einer eventuellen Kompromittierung strikt ein.",
+      "features": [
+        "Identity & Access Management (IAM) & MFA-Implementierung",
+        "Netzwerk-Mikrosegmentierung & Software-Defined Perimeters (SDP)",
+        "Endpoint Detection and Response (EDR) Deployment",
+        "Zero Trust Network Access (ZTNA) als VPN-Ersatz",
+        "Kontinuierliche, kontextbezogene Risikobewertung",
+        "Cloud Security Posture Management (CSPM)"
+      ],
+      "benefits": [
+        "Minimierung des Risikos von Datenschutzverletzungen & Ransomware",
+        "Nahtlose Absicherung von Remote- & Hybrid-Workforces",
+        "Verhinderung lateraler Bewegungen von Angreifern im Netzwerk",
+        "Gewährleistung der Compliance mit strengen Datenschutzrichtlinien",
+        "Verbesserung der UX durch Ablösung klobiger VPN-Clients"
+      ],
+      "content": {
+        "process": [
+          { "title": "Sicherheits-Assessment", "description": "Audit des Netzwerks, Identifikation kritischer Assets und Mapping der Zugriffswege." },
+          { "title": "Identitätsprüfung", "description": "Einführung von SSO (Single Sign-On) und kontextbezogener Multi-Faktor-Authentifizierung (MFA)." },
+          { "title": "Mikrosegmentierung", "description": "Aufteilung des Netzwerks in kleine, isolierte Segmente." },
+          { "title": "Endpoint-Sicherheit", "description": "Verteilung von EDR-Agenten zur Überprüfung der Gerätegesundheit vor dem Zugriff." },
+          { "title": "Monitoring & Richtlinien", "description": "Etablierung kontinuierlicher Überwachung und automatisierter Entzugs-Richtlinien." }
+        ],
+        "technologies": [
+          "Okta / Microsoft Entra ID (Azure AD)",
+          "Zscaler / Cloudflare Zero Trust",
+          "CrowdStrike / SentinelOne (EDR)",
+          "Cisco Duo (MFA)",
+          "Palo Alto Prisma Access",
+          "SIEM (Splunk / Datadog)"
+        ],
+        "faq": [
+          { "question": "Was ist der Unterschied zwischen Zero Trust und einem VPN?", "answer": "Ein traditionelles VPN gewährt nach der Anmeldung breiten Zugriff auf das gesamte Netzwerk. Zero Trust Network Access (ZTNA) hingegen gewährt nach kontinuierlicher Verifikation von Identität und Gerätegesundheit nur Zugriff auf spezifische, einzelne Anwendungen." },
+          { "question": "Wird Zero Trust den Workflow meiner Mitarbeiter stören?", "answer": "Richtig implementiert, verbessert Zero Trust die UX. Durch Single Sign-On (SSO) und den Ersatz langsamer VPNs durch direkten App-Zugriff (ZTNA) können Mitarbeiter von überall sicher und effizient arbeiten." }
+        ]
+      },
+      "metaTitle": "Zero Trust Security Agentur | ZTNA & Cybersicherheit",
+      "metaDescription": "Schützen Sie Ihr Unternehmen mit einer Zero Trust Security Architektur. Wir sind Experten für ZTNA, Mikrosegmentierung und fortschrittliches Identity Management."
+    },
+    "ur": {
+      "name": "صفر ٹرسٹ سیکیورٹی",
+      "shortDescription": "کبھی بھروسہ نہ کریں، ہمیشہ تصدیق کریں۔ جدید کاروباری اداروں کے لیے جدید سائبر سیکیورٹی فن تعمیر۔",
+      "fullDescription": "ریموٹ ورک، کلاؤڈ کمپیوٹنگ، اور نفیس فشنگ حملوں کے دور میں روایتی دائرہ کار پر مبنی سیکیورٹی (محل اور کھائی) متروک ہے۔ ہماری زیرو ٹرسٹ سیکیورٹی سروسز ایک سادہ بنیاد کے تحت آپ کے IT فن تعمیر کو دوبارہ ڈیزائن کرتی ہیں: 'کبھی بھی بھروسہ نہ کریں، ہمیشہ تصدیق کریں۔' ہم ہر صارف، ڈیوائس، اور ایپلیکیشن کے لیے سخت شناختی تصدیق، مائیکرو سیگمنٹیشن، اور کم از کم مراعات یافتہ رسائی کنٹرول کو لاگو کرتے ہیں، اس بات سے قطع نظر کہ وہ آپ کے کارپوریٹ نیٹ ورک کے اندر ہیں یا باہر۔ سیاق و سباق اور رویے کی مسلسل نگرانی کرنے سے، ہم آپ کے حملے کی سطح کو کافی حد تک کم کرتے ہیں اور خلاف ورزی ہونے کی صورت میں پس منظر کی نقل و حرکت کو محدود کرتے ہیں۔",
+      "features": [
+        "آئیڈینٹیٹی اینڈ ایکسیس مینجمنٹ (IAM) اور MFA کا نفاذ",
+        "نیٹ ورک مائیکرو سیگمنٹیشن اور سافٹ ویئر سے متعین پیریمیٹرز (SDP)",
+        "اینڈ پوائنٹ کا پتہ لگانا اور رسپانس (EDR) کی تعیناتی۔",
+        "زیرو ٹرسٹ نیٹ ورک ایکسیس (ZTNA) میراثی VPNs کی جگہ لے رہا ہے۔",
+        "مسلسل سیاق و سباق سے آگاہ خطرے کی تشخیص",
+        "کلاؤڈ سیکیورٹی پوسچر مینجمنٹ (CSPM)"
+      ],
+      "benefits": [
+        "ڈیٹا کی خلاف ورزیوں اور رینسم ویئر کے خطرے کو کم کریں۔",
+        "سیکیور ریموٹ اور ہائبرڈ ورک فورس بغیر کسی رکاوٹ کے",
+        "اپنے نیٹ ورک کے اندر حملہ آوروں کی لیٹرل موومنٹ کو روکیں۔",
+        "ڈیٹا کے تحفظ کے سخت ضوابط کی تعمیل کو یقینی بنائیں",
+        "کلنکی وی پی این کو تبدیل کرکے صارف کے تجربے کو بہتر بنائیں"
+      ],
+      "content": {
+        "process": [
+          { "title": "سیکورٹی اسسمنٹ", "description": "آپ کے موجودہ نیٹ ورک کا آڈٹ کرنا، ڈیٹا کے اہم اثاثوں کی شناخت کرنا، اور صارف تک رسائی کے بہاؤ کا نقشہ بنانا۔" },
+          { "title": "شناخت کی تصدیق", "description": "مضبوط IAM کا نفاذ، سنگل سائن آن (SSO)، اور سیاق و سباق سے آگاہ ملٹی فیکٹر توثیق (MFA)۔" },
+          { "title": "مائیکرو سیگمنٹیشن", "description": "غیر مجاز پس منظر کی نقل و حرکت کو روکنے کے لیے نیٹ ورک کو چھوٹے، الگ تھلگ حصوں میں تقسیم کرنا۔" },
+          { "title": "اینڈ پوائنٹ سیکیورٹی", "description": "رسائی دینے سے پہلے ڈیوائس کی صحت کی تصدیق کرنے کے لیے تمام آلات پر EDR ایجنٹس کو متعین کرنا۔" },
+          { "title": "مانیٹرنگ اور پالیسی", "description": "مسلسل نگرانی اور خودکار پالیسیاں قائم کرنا جو مشکوک سرگرمی پر رسائی کو منسوخ کرتی ہیں۔" }
+        ],
+        "technologies": [
+          "Okta / Microsoft Entra ID (Azure AD)",
+          "Zscaler / Cloudflare Zero Trust",
+          "CrowdStrike / SentinelOne (EDR)",
+          "Cisco Duo (MFA)",
+          "Palo Alto Prisma Access",
+          "SIEM (Splunk / Datadog)"
+        ],
+        "faq": [
+          { "question": "زیرو ٹرسٹ اور وی پی این میں کیا فرق ہے؟", "answer": "ایک روایتی VPN پورے نیٹ ورک تک وسیع رسائی فراہم کرتا ہے جب صارف کی تصدیق ہو جاتی ہے، محل کی ایک کلید کی طرح کام کرتا ہے۔ زیرو ٹرسٹ نیٹ ورک ایکسیس (ZTNA) صارف کی شناخت اور آلے کی صحت کی مسلسل تصدیق کی بنیاد پر صرف مخصوص، انفرادي ایپلی کیشنز تک رسائی فراہم کرتا ہے۔" },
+          { "question": "کیا زیرو ٹرسٹ میرے ملازمین کے ورک فلو میں خلل ڈالے گا؟", "answer": "جب صحیح طریقے سے لاگو کیا جائے، زیرو ٹرسٹ اصل میں صارف کے تجربے کو بہتر بناتا ہے۔ سنگل سائن آن (SSO) کا استعمال کرتے ہوئے اور سست VPNs کو تیز، براہ راست ایپلیکیشن رسائی (ZTNA) کے ساتھ تبدیل کر کے، ملازمین کہیں سے بھی محفوظ اور مؤثر طریقے سے کام کر سکتے ہیں۔" }
+        ]
+      },
+      "metaTitle": "زیرو ٹرسٹ سیکیورٹی سروسز | ایڈوانسڈ سائبر سیکیورٹی",
+      "metaDescription": "اپنے انٹرپرائز کی حفاظت کے لیے ایک زیرو ٹرسٹ سیکیورٹی فن تعمیر کو نافذ کریں۔ ہم ZTNA، مائیکرو سیگمنٹیشن، اور جدید شناخت کے انتظام میں مہارت رکھتے ہیں۔"
+    },
+    "ar": {
+      "name": "أمان 'انعدام الثقة' (Zero Trust Security)",
+      "shortDescription": "لا تثق أبدًا، تحقق دائمًا. بنى أمن سيبراني متقدمة للمؤسسات الحديثة.",
+      "fullDescription": "أصبح الأمان التقليدي القائم على المحيط (القلعة والخندق) عفا عليه الزمن في عصر العمل عن بُعد، والحوسبة السحابية، وهجمات التصيد الاحتيالي (Phishing) المعقدة. تعيد خدمات أمان 'انعدام الثقة' لدينا تصميم بنية تكنولوجيا المعلومات الخاصة بك بموجب فرضية بسيطة: 'لا تثق أبدًا، تحقق دائمًا'. نحن ننفذ تحققًا صارمًا من الهوية، وتجزئة دقيقة (Micro-segmentation)، وضوابط وصول تعتمد على مبدأ أقل الامتيازات (Least-privilege) لكل مستخدم، وجهاز، وتطبيق، بغض النظر عما إذا كانوا داخل شبكة شركتك أو خارجها. من خلال المراقبة المستمرة للسياق والسلوك، نقلل بشكل كبير من سطح الهجوم (Attack surface) الخاص بك ونحد من الحركة الجانبية (Lateral movement) في حالة حدوث اختراق.",
+      "features": [
+        "تنفيذ إدارة الهوية والوصول (IAM) والمصادقة متعددة العوامل (MFA)",
+        "التجزئة الدقيقة للشبكة (Micro-Segmentation) والمحيطات المعرفة بالبرمجيات (SDP)",
+        "نشر أنظمة اكتشاف نقاط النهاية والاستجابة لها (EDR)",
+        "وصول الشبكة القائم على انعدام الثقة (ZTNA) كبديل لشبكات VPN القديمة",
+        "تقييم مستمر للمخاطر مع مراعاة السياق",
+        "إدارة الموقف الأمني السحابي (CSPM)"
+      ],
+      "benefits": [
+        "التخفيف من مخاطر خروقات البيانات وبرامج الفدية (Ransomware)",
+        "تأمين القوى العاملة عن بُعد والهجينة بسلاسة",
+        "منع الحركة الجانبية (Lateral Movement) للمهاجمين داخل شبكتك",
+        "ضمان الامتثال للوائح حماية البيانات الصارمة",
+        "تحسين تجربة المستخدم عن طريق استبدال شبكات VPN البطيئة والمعقدة"
+      ],
+      "content": {
+        "process": [
+          { "title": "التقييم الأمني", "description": "تدقيق شبكتك الحالية، وتحديد أصول البيانات الهامة، ورسم خرائط لتدفقات وصول المستخدمين." },
+          { "title": "التحقق من الهوية", "description": "تنفيذ نظام إدارة هوية ووصول (IAM) قوي، وتسجيل الدخول الأحادي (SSO)، والمصادقة متعددة العوامل (MFA) المدركة للسياق." },
+          { "title": "التجزئة الدقيقة (Micro-Segmentation)", "description": "تقسيم الشبكة إلى أجزاء صغيرة معزولة لمنع الحركة الجانبية غير المصرح بها." },
+          { "title": "أمان نقاط النهاية (Endpoints)", "description": "نشر وكلاء EDR على جميع الأجهزة للتحقق من صحة الجهاز قبل منح الوصول." },
+          { "title": "المراقبة والسياسات", "description": "إنشاء مراقبة مستمرة وسياسات آلية تلغي الوصول فور اكتشاف نشاط مشبوه." }
+        ],
+        "technologies": [
+          "Okta / Microsoft Entra ID (Azure AD)",
+          "Zscaler / Cloudflare Zero Trust",
+          "CrowdStrike / SentinelOne (EDR)",
+          "Cisco Duo (MFA)",
+          "Palo Alto Prisma Access",
+          "SIEM (مثل Splunk / Datadog)"
+        ],
+        "faq": [
+          { "question": "ما هو الفرق بين نظام 'انعدام الثقة' (Zero Trust) وشبكة الـ VPN؟", "answer": "توفر شبكة VPN التقليدية وصولاً واسعًا إلى الشبكة بأكملها بمجرد مصادقة المستخدم، وتعمل كمفتاح واحد لقلعة. بينما يمنح الوصول إلى الشبكة بانعدام الثقة (ZTNA) الوصول فقط إلى تطبيقات فردية محددة بناءً على التحقق المستمر من هوية المستخدم وصحة الجهاز." },
+          { "question": "هل سيؤدي نظام 'انعدام الثقة' إلى تعطيل سير عمل موظفيّ؟", "answer": "عند تنفيذه بشكل صحيح، فإن نظام Zero Trust يعمل في الواقع على تحسين تجربة المستخدم. من خلال استخدام تسجيل الدخول الأحادي (SSO) واستبدال شبكات VPN البطيئة بوصول مباشر وسريع إلى التطبيقات (ZTNA)، يمكن للموظفين العمل بأمان وكفاءة من أي مكان." }
+        ]
+      },
+      "metaTitle": "خدمات أمان انعدام الثقة (Zero Trust) | أمن سيبراني متقدم",
+      "metaDescription": "قم بتنفيذ بنية أمان 'انعدام الثقة' لحماية مؤسستك. نحن متخصصون في ZTNA والتجزئة الدقيقة (Micro-segmentation) وإدارة الهوية المتقدمة."
+    }
+  }
+}

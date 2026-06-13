@@ -1,0 +1,278 @@
+{
+  "slug": "backend-development",
+  "en": {
+    "name": "Backend Development",
+    "shortDescription": "Build robust, scalable backend systems with Node.js, Python, and Go — high-performance APIs, well-designed databases, and cloud-native architecture engineered to handle real traffic without falling over.",
+    "fullDescription": "The backend is where reliability is won or lost. We architect and build server-side systems that stay fast and correct under load: clean REST or GraphQL APIs, databases designed for your actual query patterns, and services that scale horizontally instead of buckling at the first traffic spike. We work primarily in Node.js, Python, and Go, choosing per workload rather than per fashion, and we treat caching, message queues, and observability as first-class concerns, not afterthoughts. Security and data integrity are built in from the schema up — parameterized queries, proper authentication, encryption in transit and at rest. The result is infrastructure that handles complex business logic, integrates cleanly with third-party services, and gives your team the logging and metrics to debug problems before users notice them.",
+    "features": [
+      "Node.js (Express, Fastify, NestJS)",
+      "Python (Django, FastAPI)",
+      "Go & Rust for High-Throughput Services",
+      "Database Design & Query Optimization",
+      "Microservices & Event-Driven Architecture",
+      "Authentication & Authorization (OAuth2, JWT)",
+      "Message Queues (RabbitMQ, Kafka, SQS)",
+      "Caching with Redis & CDN Strategies"
+    ],
+    "benefits": [
+      "Handle high concurrency with horizontal scaling",
+      "Sub-100ms responses through query tuning and caching",
+      "Resilient architecture with failover and graceful degradation",
+      "Secure data handling with encryption and strict access control",
+      "Cost-efficient infrastructure that auto-scales with demand",
+      "Deep observability for fast debugging and incident response"
+    ],
+    "metaTitle": "Backend Development — Node.js, Python, Go | PakSoft",
+    "metaDescription": "Scalable backend development in Node.js, Python, and Go: high-performance APIs, optimized databases, and cloud-native architecture. Get a free technical estimate.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Requirements & Data Modeling", "description": "We map your domain, expected traffic, and data relationships before writing code, because the data model dictates everything downstream. You get a schema, an API contract, and a scaling plan grounded in your real workload, not assumptions." },
+        { "step": 2, "title": "Architecture & Tech Selection", "description": "We choose between a modular monolith and microservices based on team size and complexity — most products don't need microservices on day one. Language and framework follow the workload: Go or Rust for raw throughput, Node or Python where developer velocity matters more." },
+        { "step": 3, "title": "API & Service Implementation", "description": "We build clean REST or GraphQL APIs with validation, error handling, and versioning from the start. Business logic is separated from transport so it stays testable, and every endpoint is covered by automated tests before it merges." },
+        { "step": 4, "title": "Data Layer & Performance", "description": "We design indexes, tune queries, and add caching where profiling shows it pays off, rather than guessing. Connection pooling, pagination, and N+1 prevention keep the database healthy as traffic grows." },
+        { "step": 5, "title": "Security, Testing & CI/CD", "description": "We add authentication, rate limiting, input validation, and secrets management, then wire a CI pipeline that runs tests and security scans on every commit. Nothing reaches production without passing the gate." },
+        { "step": 6, "title": "Deploy, Monitor & Scale", "description": "We containerize, deploy with zero-downtime rollouts, and instrument the system with structured logs, metrics, and tracing. When load grows, the architecture scales out predictably — and you can see exactly where time is spent." }
+      ],
+      "faq": [
+        { "question": "Should I start with a monolith or microservices?", "answer": "For most products, a well-structured modular monolith is the right starting point. Microservices add real operational overhead — service discovery, distributed tracing, network failure handling — that only pays off once you have multiple teams or genuinely independent scaling needs. We build monoliths with clean module boundaries so they can be split into services later if and when that's actually warranted." },
+        { "question": "Node.js, Python, or Go — which backend language?", "answer": "Node.js excels at I/O-heavy APIs and shares language with your frontend. Python (FastAPI, Django) is unbeatable for data, ML integration, and rapid development. Go shines for high-throughput, low-latency services where you want compiled performance and easy concurrency. We pick per workload, and a single system can mix them — Go for a hot path, Python for an analytics service." },
+        { "question": "How do you make the backend scale?", "answer": "Scaling starts with stateless services so you can run many copies behind a load balancer, plus a database that won't become the bottleneck. We add caching (Redis), read replicas, connection pooling, and async processing via queues so slow work doesn't block requests. Horizontal scaling beats buying a bigger server, and we design for it from the start." },
+        { "question": "How long does a backend project take?", "answer": "A focused API with auth, a handful of resources, and a database typically takes 4–8 weeks. A complex system with microservices, real-time features, multiple integrations, and high-availability requirements runs several months. The biggest variables are the number of integrations, data-migration complexity, and how strict your uptime and compliance requirements are." },
+        { "question": "How do you keep APIs fast?", "answer": "We set performance budgets and profile against real queries rather than guessing. The usual wins are proper database indexes, eliminating N+1 query patterns, caching hot reads in Redis, paginating large responses, and moving slow work to background jobs. Sub-100ms responses are realistic for most endpoints once the data layer is tuned." },
+        { "question": "How do you handle database migrations safely?", "answer": "We use versioned, reversible migrations run through the CI pipeline, never manual SQL on production. For schema changes on live systems we favor backward-compatible, multi-step migrations — add the column, backfill, switch reads, then drop the old one — so deploys never require downtime. Backups and a tested rollback plan are in place before any migration runs." },
+        { "question": "What about monitoring and reliability?", "answer": "We instrument services with structured logging, metrics (latency, error rate, throughput), and distributed tracing so you can pinpoint a slow request across services. Health checks, alerting on real symptoms, and graceful degradation mean problems get caught before users complain. Observability isn't optional — it's how you keep a system reliable as it grows." },
+        { "question": "Can you work with our existing backend?", "answer": "Yes. We regularly join existing codebases to add features, optimize performance, or modernize incrementally. We start by reviewing the architecture and adding tests around the area we'll change, so improvements are safe rather than risky rewrites. A full rebuild is sometimes the right call, but we'll only recommend it when the evidence supports it." }
+      ],
+      "technologies": [
+        { "icon": "nodedotjs", "name": "Node.js" },
+        { "icon": "python", "name": "Python" },
+        { "icon": "go", "name": "Go" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "redis", "name": "Redis" },
+        { "icon": "docker", "name": "Docker" },
+        { "icon": "kubernetes", "name": "Kubernetes" },
+        { "icon": "apachekafka", "name": "Kafka" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Backend Geliştirme",
+    "shortDescription": "Node.js, Python ve Go ile sağlam, ölçeklenebilir backend sistemleri kurun — yüksek performanslı API'ler, iyi tasarlanmış veritabanları ve gerçek trafiği çökmeden taşıyacak şekilde tasarlanmış bulut tabanlı mimari.",
+    "fullDescription": "Güvenilirlik backend'de kazanılır veya kaybedilir. Yük altında hızlı ve doğru kalan sunucu tarafı sistemler tasarlar ve kurarız: temiz REST veya GraphQL API'ler, gerçek sorgu desenlerinize göre tasarlanmış veritabanları ve ilk trafik artışında çökmek yerine yatay ölçeklenen servisler. Çoğunlukla Node.js, Python ve Go ile çalışır, modaya değil iş yüküne göre seçeriz; önbelleğe alma, mesaj kuyrukları ve gözlemlenebilirliği sonradan akla gelen değil birinci sınıf konular olarak ele alırız. Güvenlik ve veri bütünlüğü şemadan itibaren yerleşiktir — parametreli sorgular, doğru kimlik doğrulama, aktarımda ve durağan hâlde şifreleme. Sonuç, karmaşık iş mantığını taşıyan, üçüncü taraf servislerle temiz entegre olan ve ekibinize sorunları kullanıcılar fark etmeden ayıklamak için log ve metrik veren bir altyapıdır.",
+    "features": [
+      "Node.js (Express, Fastify, NestJS)",
+      "Python (Django, FastAPI)",
+      "Yüksek Verim için Go ve Rust",
+      "Veritabanı Tasarımı ve Sorgu Optimizasyonu",
+      "Mikroservisler ve Olay Tabanlı Mimari",
+      "Kimlik Doğrulama ve Yetkilendirme (OAuth2, JWT)",
+      "Mesaj Kuyrukları (RabbitMQ, Kafka, SQS)",
+      "Redis ile Önbellekleme ve CDN Stratejileri"
+    ],
+    "benefits": [
+      "Yatay ölçeklemeyle yüksek eşzamanlılık",
+      "Sorgu ayarı ve önbellekle 100ms altı yanıtlar",
+      "Failover ve zarif bozulmayla dayanıklı mimari",
+      "Şifreleme ve katı erişim kontrolüyle güvenli veri",
+      "Talebe göre otomatik ölçeklenen maliyet etkin altyapı",
+      "Hızlı hata ayıklama için derin gözlemlenebilirlik"
+    ],
+    "metaTitle": "Backend Geliştirme — Node.js, Python, Go | PakSoft",
+    "metaDescription": "Node.js, Python ve Go ile ölçeklenebilir backend geliştirme: yüksek performanslı API'ler, optimize veritabanları ve bulut mimarisi. Ücretsiz teknik teklif alın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Gereksinimler ve Veri Modelleme", "description": "Kod yazmadan önce alanınızı, beklenen trafiği ve veri ilişkilerini haritalarız; çünkü veri modeli aşağı akıştaki her şeyi belirler. Varsayımlara değil gerçek iş yükünüze dayanan bir şema, API sözleşmesi ve ölçekleme planı alırsınız." },
+        { "step": 2, "title": "Mimari ve Teknoloji Seçimi", "description": "Ekip boyutu ve karmaşıklığa göre modüler monolit ile mikroservisler arasında seçim yaparız — çoğu ürün ilk gün mikroservise ihtiyaç duymaz. Dil ve framework iş yükünü izler: ham verim için Go veya Rust, geliştirici hızının daha önemli olduğu yerde Node veya Python." },
+        { "step": 3, "title": "API ve Servis Uygulaması", "description": "Baştan doğrulama, hata yönetimi ve sürümlemeyle temiz REST veya GraphQL API'ler kurarız. İş mantığı taşımadan ayrılır; böylece test edilebilir kalır ve her uç nokta birleşmeden önce otomatik testlerle kapsanır." },
+        { "step": 4, "title": "Veri Katmanı ve Performans", "description": "İndeksleri tasarlar, sorguları ayarlar ve önbelleği tahmin etmek yerine profillemenin işe yaradığını gösterdiği yere ekleriz. Bağlantı havuzlama, sayfalama ve N+1 önleme, trafik büyüdükçe veritabanını sağlıklı tutar." },
+        { "step": 5, "title": "Güvenlik, Test ve CI/CD", "description": "Kimlik doğrulama, hız sınırlama, girdi doğrulama ve sır yönetimi ekler, ardından her commit'te test ve güvenlik taraması çalıştıran bir CI hattı kurarız. Hiçbir şey kapıyı geçmeden üretime ulaşmaz." },
+        { "step": 6, "title": "Dağıtım, İzleme ve Ölçekleme", "description": "Konteynerler, sıfır kesintili dağıtımlarla yayınlar ve sistemi yapılandırılmış log, metrik ve trace ile donatırız. Yük büyüdüğünde mimari öngörülebilir biçimde ölçeklenir — ve zamanın tam olarak nerede harcandığını görebilirsiniz." }
+      ],
+      "faq": [
+        { "question": "Monolit ile mi mikroservislerle mi başlamalıyım?", "answer": "Çoğu ürün için iyi yapılandırılmış modüler bir monolit doğru başlangıçtır. Mikroservisler gerçek operasyonel yük getirir — servis keşfi, dağıtık izleme, ağ hatası yönetimi — ve bu yalnızca birden fazla ekibiniz veya gerçekten bağımsız ölçekleme ihtiyacınız olduğunda işe yarar. Monolitleri temiz modül sınırlarıyla kurarız; böylece gerçekten gerektiğinde sonradan servislere bölünebilirler." },
+        { "question": "Node.js, Python yoksa Go — hangi backend dili?", "answer": "Node.js, I/O ağırlıklı API'lerde mükemmeldir ve frontend'inizle dil paylaşır. Python (FastAPI, Django), veri, ML entegrasyonu ve hızlı geliştirmede rakipsizdir. Go, derlenmiş performans ve kolay eşzamanlılık istediğiniz yüksek verimli, düşük gecikmeli servislerde parlar. İş yüküne göre seçeriz ve tek bir sistem bunları karıştırabilir — sıcak yol için Go, analitik servis için Python." },
+        { "question": "Backend'i nasıl ölçeklersiniz?", "answer": "Ölçekleme, yük dengeleyici arkasında birçok kopya çalıştırabilmeniz için durumsuz servislerle ve darboğaz olmayacak bir veritabanıyla başlar. Önbellek (Redis), okuma replikaları, bağlantı havuzlama ve kuyruklar üzerinden asenkron işleme ekleriz; böylece yavaş iş istekleri bloke etmez. Yatay ölçekleme daha büyük sunucu almaktan iyidir ve bunu baştan tasarlarız." },
+        { "question": "Bir backend projesi ne kadar sürer?", "answer": "Kimlik doğrulama, birkaç kaynak ve veritabanı içeren odaklı bir API genellikle 4–8 hafta sürer. Mikroservis, gerçek zamanlı özellikler, çoklu entegrasyon ve yüksek erişilebilirlik gerektiren karmaşık bir sistem birkaç aya çıkar. En büyük değişkenler entegrasyon sayısı, veri taşıma karmaşıklığı ve uptime ile uyumluluk gereksinimlerinizin katılığıdır." },
+        { "question": "API'leri nasıl hızlı tutuyorsunuz?", "answer": "Performans bütçeleri belirler ve tahmin yerine gerçek sorgulara karşı profilleriz. Olağan kazançlar; doğru veritabanı indeksleri, N+1 sorgu desenlerini ortadan kaldırma, sıcak okumaları Redis'te önbelleğe alma, büyük yanıtları sayfalama ve yavaş işi arka plan işlerine taşımadır. Veri katmanı ayarlandığında çoğu uç nokta için 100ms altı yanıt gerçekçidir." },
+        { "question": "Veritabanı geçişlerini nasıl güvenli yapıyorsunuz?", "answer": "Üretimde manuel SQL yerine CI hattından geçen sürümlü, geri alınabilir geçişler kullanırız. Canlı sistemlerde şema değişiklikleri için geriye uyumlu, çok adımlı geçişleri tercih ederiz — sütunu ekle, doldur, okumaları geçir, ardından eskisini düşür — böylece dağıtımlar kesinti gerektirmez. Herhangi bir geçiş çalışmadan önce yedekler ve test edilmiş bir geri alma planı hazırdır." },
+        { "question": "İzleme ve güvenilirlik ne durumda?", "answer": "Servisleri yapılandırılmış loglama, metrikler (gecikme, hata oranı, verim) ve dağıtık trace ile donatırız; böylece servisler arası yavaş bir isteği saptayabilirsiniz. Sağlık kontrolleri, gerçek belirtilere dayalı uyarılar ve zarif bozulma, sorunların kullanıcılar şikayet etmeden yakalanması demektir. Gözlemlenebilirlik isteğe bağlı değildir — sistem büyürken güvenilir tutmanın yoludur." },
+        { "question": "Mevcut backend'imizle çalışabilir misiniz?", "answer": "Evet. Özellik eklemek, performansı optimize etmek veya kademeli modernleştirmek için düzenli olarak mevcut kod tabanlarına katılırız. Değiştireceğimiz alanı mimariyi inceleyip etrafına test ekleyerek başlarız; böylece iyileştirmeler riskli yeniden yazımlar değil güvenli olur. Tam yeniden inşa bazen doğru karardır ama yalnızca kanıt destekliyorsa öneririz." }
+      ],
+      "technologies": [
+        { "icon": "nodedotjs", "name": "Node.js" },
+        { "icon": "python", "name": "Python" },
+        { "icon": "go", "name": "Go" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "redis", "name": "Redis" },
+        { "icon": "docker", "name": "Docker" },
+        { "icon": "kubernetes", "name": "Kubernetes" },
+        { "icon": "apachekafka", "name": "Kafka" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Backend-Entwicklung",
+    "shortDescription": "Bauen Sie robuste, skalierbare Backend-Systeme mit Node.js, Python und Go — performante APIs, durchdachte Datenbanken und Cloud-native Architektur, die echten Traffic trägt, ohne einzuknicken.",
+    "fullDescription": "Im Backend wird Zuverlässigkeit gewonnen oder verloren. Wir konzipieren und bauen serverseitige Systeme, die unter Last schnell und korrekt bleiben: saubere REST- oder GraphQL-APIs, Datenbanken nach Ihren echten Query-Mustern und Services, die horizontal skalieren statt beim ersten Lastpeak einzubrechen. Wir arbeiten vor allem mit Node.js, Python und Go, gewählt nach Workload statt nach Mode, und behandeln Caching, Message-Queues und Observability als erstklassige Themen, nicht als Nachgedanken. Sicherheit und Datenintegrität sind ab dem Schema eingebaut — parametrisierte Queries, korrekte Authentifizierung, Verschlüsselung bei Übertragung und Ablage. Das Ergebnis ist Infrastruktur, die komplexe Geschäftslogik trägt, sauber mit Drittdiensten integriert und Ihrem Team Logs und Metriken gibt, um Probleme zu finden, bevor Nutzer sie bemerken.",
+    "features": [
+      "Node.js (Express, Fastify, NestJS)",
+      "Python (Django, FastAPI)",
+      "Go & Rust für hohen Durchsatz",
+      "Datenbankdesign & Query-Optimierung",
+      "Microservices & Event-Driven Architecture",
+      "Authentifizierung & Autorisierung (OAuth2, JWT)",
+      "Message-Queues (RabbitMQ, Kafka, SQS)",
+      "Caching mit Redis & CDN-Strategien"
+    ],
+    "benefits": [
+      "Hohe Nebenläufigkeit durch horizontale Skalierung",
+      "Sub-100ms-Antworten durch Query-Tuning und Caching",
+      "Resiliente Architektur mit Failover und Graceful Degradation",
+      "Sichere Datenverarbeitung mit Verschlüsselung und strenger Zugriffskontrolle",
+      "Kosteneffiziente Infrastruktur, die mit der Last mitskaliert",
+      "Tiefe Observability für schnelles Debugging und Incident-Response"
+    ],
+    "metaTitle": "Backend-Entwicklung — Node.js, Python, Go | PakSoft",
+    "metaDescription": "Skalierbare Backend-Entwicklung mit Node.js, Python und Go: performante APIs, optimierte Datenbanken, Cloud-Architektur. Jetzt kostenloses Tech-Angebot anfordern.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Anforderungen & Datenmodellierung", "description": "Wir kartieren Domäne, erwarteten Traffic und Datenbeziehungen, bevor Code entsteht, denn das Datenmodell bestimmt alles Nachgelagerte. Sie erhalten ein Schema, einen API-Vertrag und einen Skalierungsplan auf Basis Ihres echten Workloads, nicht von Annahmen." },
+        { "step": 2, "title": "Architektur & Tech-Auswahl", "description": "Wir wählen zwischen modularem Monolith und Microservices nach Teamgröße und Komplexität — die meisten Produkte brauchen am ersten Tag keine Microservices. Sprache und Framework folgen dem Workload: Go oder Rust für rohen Durchsatz, Node oder Python, wo Entwicklungstempo zählt." },
+        { "step": 3, "title": "API- & Service-Implementierung", "description": "Wir bauen saubere REST- oder GraphQL-APIs mit Validierung, Fehlerbehandlung und Versionierung von Anfang an. Geschäftslogik wird vom Transport getrennt, damit sie testbar bleibt, und jeder Endpunkt ist vor dem Merge durch automatisierte Tests abgedeckt." },
+        { "step": 4, "title": "Datenebene & Performance", "description": "Wir entwerfen Indizes, tunen Queries und ergänzen Caching dort, wo Profiling zeigt, dass es sich lohnt, statt zu raten. Connection-Pooling, Pagination und N+1-Vermeidung halten die Datenbank gesund, wenn der Traffic wächst." },
+        { "step": 5, "title": "Sicherheit, Tests & CI/CD", "description": "Wir ergänzen Authentifizierung, Rate-Limiting, Input-Validierung und Secrets-Management und richten eine CI-Pipeline ein, die bei jedem Commit Tests und Security-Scans fährt. Nichts erreicht die Produktion, ohne das Gate zu passieren." },
+        { "step": 6, "title": "Deploy, Monitoring & Skalierung", "description": "Wir containerisieren, deployen mit Zero-Downtime-Rollouts und instrumentieren das System mit strukturierten Logs, Metriken und Tracing. Wächst die Last, skaliert die Architektur vorhersehbar — und Sie sehen genau, wo Zeit verbraucht wird." }
+      ],
+      "faq": [
+        { "question": "Monolith oder Microservices zum Start?", "answer": "Für die meisten Produkte ist ein gut strukturierter modularer Monolith der richtige Start. Microservices bringen echten Betriebsaufwand — Service-Discovery, Distributed Tracing, Netzwerkfehler-Handling — der sich erst lohnt, wenn Sie mehrere Teams oder wirklich unabhängige Skalierungsbedarfe haben. Wir bauen Monolithen mit sauberen Modulgrenzen, sodass sie sich später aufteilen lassen, wenn es wirklich gerechtfertigt ist." },
+        { "question": "Node.js, Python oder Go — welche Backend-Sprache?", "answer": "Node.js glänzt bei I/O-lastigen APIs und teilt die Sprache mit Ihrem Frontend. Python (FastAPI, Django) ist unschlagbar für Daten, ML-Integration und schnelle Entwicklung. Go überzeugt bei durchsatzstarken, latenzarmen Services mit kompilierter Performance und einfacher Nebenläufigkeit. Wir wählen pro Workload, und ein System kann mischen — Go für einen Hot Path, Python für einen Analytics-Service." },
+        { "question": "Wie machen Sie das Backend skalierbar?", "answer": "Skalierung beginnt mit zustandslosen Services, damit viele Kopien hinter einem Load Balancer laufen, plus einer Datenbank, die nicht zum Flaschenhals wird. Wir ergänzen Caching (Redis), Read-Replicas, Connection-Pooling und asynchrone Verarbeitung über Queues, damit langsame Arbeit Requests nicht blockiert. Horizontale Skalierung schlägt einen größeren Server, und wir planen sie von Anfang an ein." },
+        { "question": "Wie lange dauert ein Backend-Projekt?", "answer": "Eine fokussierte API mit Auth, einigen Ressourcen und Datenbank dauert typischerweise 4–8 Wochen. Ein komplexes System mit Microservices, Echtzeit-Funktionen, mehreren Integrationen und Hochverfügbarkeit läuft mehrere Monate. Die größten Variablen sind die Zahl der Integrationen, die Datenmigrations-Komplexität und wie streng Ihre Uptime- und Compliance-Anforderungen sind." },
+        { "question": "Wie halten Sie APIs schnell?", "answer": "Wir setzen Performance-Budgets und profilen gegen echte Queries statt zu raten. Die üblichen Gewinne: passende Datenbank-Indizes, Beseitigung von N+1-Mustern, Caching heißer Reads in Redis, Pagination großer Antworten und Verlagerung langsamer Arbeit in Background-Jobs. Sub-100ms-Antworten sind für die meisten Endpunkte realistisch, sobald die Datenebene getunt ist." },
+        { "question": "Wie führen Sie Datenbankmigrationen sicher durch?", "answer": "Wir nutzen versionierte, reversible Migrationen über die CI-Pipeline, nie manuelles SQL in der Produktion. Für Schemaänderungen an Live-Systemen bevorzugen wir rückwärtskompatible, mehrstufige Migrationen — Spalte hinzufügen, backfillen, Reads umschalten, dann Altes entfernen — sodass Deploys nie Downtime brauchen. Backups und ein getesteter Rollback-Plan stehen vor jeder Migration bereit." },
+        { "question": "Wie steht es um Monitoring und Zuverlässigkeit?", "answer": "Wir instrumentieren Services mit strukturiertem Logging, Metriken (Latenz, Fehlerrate, Durchsatz) und Distributed Tracing, damit Sie einen langsamen Request über Services hinweg lokalisieren. Health-Checks, Alerting auf echte Symptome und Graceful Degradation sorgen dafür, dass Probleme auffallen, bevor Nutzer klagen. Observability ist nicht optional — so bleibt ein wachsendes System zuverlässig." },
+        { "question": "Können Sie mit unserem bestehenden Backend arbeiten?", "answer": "Ja. Wir steigen regelmäßig in bestehende Codebasen ein, um Funktionen zu ergänzen, Performance zu optimieren oder schrittweise zu modernisieren. Wir starten mit einem Architektur-Review und ergänzen Tests rund um den Änderungsbereich, sodass Verbesserungen sicher statt riskant sind. Ein kompletter Neubau ist manchmal richtig, aber wir empfehlen ihn nur, wenn die Faktenlage ihn stützt." }
+      ],
+      "technologies": [
+        { "icon": "nodedotjs", "name": "Node.js" },
+        { "icon": "python", "name": "Python" },
+        { "icon": "go", "name": "Go" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "redis", "name": "Redis" },
+        { "icon": "docker", "name": "Docker" },
+        { "icon": "kubernetes", "name": "Kubernetes" },
+        { "icon": "apachekafka", "name": "Kafka" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "بیک اینڈ ڈیولپمنٹ",
+    "shortDescription": "Node.js، Python اور Go سے مضبوط، اسکیل ایبل بیک اینڈ سسٹم بنائیں — اعلیٰ کارکردگی والی APIs، بہترین ڈیزائن شدہ ڈیٹابیسز، اور حقیقی ٹریفک کو بغیر گرے سنبھالنے کے لیے تیار cloud-native آرکیٹیکچر۔",
+    "fullDescription": "بھروسا بیک اینڈ پر جیتا یا ہارا جاتا ہے۔ ہم ایسے سرور سائیڈ سسٹم ڈیزائن اور تعمیر کرتے ہیں جو بوجھ کے تحت تیز اور درست رہتے ہیں: صاف REST یا GraphQL APIs، آپ کے اصل query patterns کے مطابق ڈیزائن کیے ڈیٹابیسز، اور ایسے services جو پہلے ٹریفک اضافے پر گرنے کے بجائے افقی طور پر اسکیل ہوتے ہیں۔ ہم بنیادی طور پر Node.js، Python اور Go میں کام کرتے ہیں، فیشن نہیں بلکہ workload کے مطابق چنتے ہیں، اور caching، message queues اور observability کو بعد کی سوچ نہیں بلکہ اولین درجے کے معاملات سمجھتے ہیں۔ سیکیورٹی اور ڈیٹا کی سالمیت schema سے ہی شامل ہوتی ہے — parameterized queries، درست تصدیق، منتقلی اور آرام دونوں میں خفیہ کاری۔ نتیجہ ایسا انفراسٹرکچر ہے جو پیچیدہ business logic سنبھالتا ہے، تھرڈ پارٹی services سے صاف جڑتا ہے، اور آپ کی ٹیم کو مسائل صارفین کے نوٹس کرنے سے پہلے حل کرنے کے لیے logs اور metrics دیتا ہے۔",
+    "features": [
+      "Node.js (Express، Fastify، NestJS)",
+      "Python (Django، FastAPI)",
+      "اعلیٰ throughput کے لیے Go اور Rust",
+      "ڈیٹابیس ڈیزائن اور Query آپٹیمائزیشن",
+      "Microservices اور Event-Driven آرکیٹیکچر",
+      "تصدیق اور اجازت (OAuth2، JWT)",
+      "Message Queues (RabbitMQ، Kafka، SQS)",
+      "Redis سے Caching اور CDN حکمتِ عملی"
+    ],
+    "benefits": [
+      "افقی اسکیلنگ سے اعلیٰ concurrency",
+      "Query ٹیوننگ اور caching سے 100ms سے کم جوابات",
+      "Failover اور نرم تنزلی سے مضبوط آرکیٹیکچر",
+      "خفیہ کاری اور سخت رسائی کنٹرول سے محفوظ ڈیٹا",
+      "طلب کے مطابق خودکار اسکیل ہونے والا کفایتی انفراسٹرکچر",
+      "تیز ڈیبگنگ کے لیے گہری observability"
+    ],
+    "metaTitle": "بیک اینڈ ڈیولپمنٹ — Node.js، Python، Go | PakSoft",
+    "metaDescription": "Node.js، Python اور Go میں اسکیل ایبل بیک اینڈ ڈیولپمنٹ: اعلیٰ کارکردگی APIs، آپٹیمائزڈ ڈیٹابیسز اور cloud آرکیٹیکچر۔ مفت تکنیکی تخمینہ لیں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "تقاضے اور ڈیٹا ماڈلنگ", "description": "کوڈ لکھنے سے پہلے ہم آپ کے domain، متوقع ٹریفک اور ڈیٹا تعلقات کا نقشہ بناتے ہیں، کیونکہ ڈیٹا ماڈل آگے کی ہر چیز طے کرتا ہے۔ آپ کو مفروضوں پر نہیں بلکہ حقیقی workload پر مبنی schema، API معاہدہ اور اسکیلنگ پلان ملتا ہے۔" },
+        { "step": 2, "title": "آرکیٹیکچر اور ٹیکنالوجی انتخاب", "description": "ٹیم کے حجم اور پیچیدگی کے مطابق ہم modular monolith اور microservices کے درمیان منتخب کرتے ہیں — زیادہ تر پروڈکٹس کو پہلے دن microservices کی ضرورت نہیں۔ زبان اور framework workload کے تابع ہیں: خام throughput کے لیے Go یا Rust، جہاں ڈیولپر رفتار اہم ہو وہاں Node یا Python۔" },
+        { "step": 3, "title": "API اور Service نفاذ", "description": "ہم شروع سے validation، error handling اور versioning کے ساتھ صاف REST یا GraphQL APIs بناتے ہیں۔ Business logic کو transport سے الگ رکھا جاتا ہے تاکہ یہ قابلِ ٹیسٹ رہے، اور ہر endpoint merge سے پہلے خودکار ٹیسٹوں سے گزرتا ہے۔" },
+        { "step": 4, "title": "ڈیٹا پرت اور کارکردگی", "description": "ہم indexes ڈیزائن کرتے ہیں، queries ٹیون کرتے ہیں اور caching کو اندازے کے بجائے وہاں شامل کرتے ہیں جہاں profiling فائدہ دکھائے۔ Connection pooling، pagination اور N+1 روک تھام ٹریفک بڑھنے پر ڈیٹابیس کو صحت مند رکھتے ہیں۔" },
+        { "step": 5, "title": "سیکیورٹی، ٹیسٹنگ اور CI/CD", "description": "ہم تصدیق، rate limiting، input validation اور secrets management شامل کرتے ہیں، پھر ایک CI pipeline جوڑتے ہیں جو ہر commit پر ٹیسٹ اور سیکیورٹی اسکین چلاتی ہے۔ کوئی چیز gate پاس کیے بغیر production تک نہیں پہنچتی۔" },
+        { "step": 6, "title": "تعیناتی، نگرانی اور اسکیلنگ", "description": "ہم containerize کرتے ہیں، zero-downtime rollouts سے deploy کرتے ہیں اور سسٹم کو منظم logs، metrics اور tracing سے لیس کرتے ہیں۔ بوجھ بڑھنے پر آرکیٹیکچر متوقع انداز میں اسکیل ہوتا ہے — اور آپ بالکل دیکھ سکتے ہیں کہ وقت کہاں خرچ ہو رہا ہے۔" }
+      ],
+      "faq": [
+        { "question": "مجھے monolith سے شروع کرنا چاہیے یا microservices سے؟", "answer": "زیادہ تر پروڈکٹس کے لیے اچھی ساخت والا modular monolith درست آغاز ہے۔ Microservices حقیقی آپریشنل بوجھ لاتے ہیں — service discovery، distributed tracing، نیٹ ورک خرابی کا انتظام — جو صرف اس وقت فائدہ دیتا ہے جب آپ کے پاس متعدد ٹیمیں یا واقعی آزاد اسکیلنگ ضروریات ہوں۔ ہم monoliths کو صاف module حدود کے ساتھ بناتے ہیں تاکہ جب واقعی ضرورت ہو تو بعد میں services میں تقسیم ہو سکیں۔" },
+        { "question": "Node.js، Python یا Go — کون سی بیک اینڈ زبان؟", "answer": "Node.js I/O بھاری APIs میں بہترین ہے اور آپ کے frontend سے زبان شیئر کرتا ہے۔ Python (FastAPI، Django) ڈیٹا، ML انٹیگریشن اور تیز ڈیولپمنٹ میں لاجواب ہے۔ Go اعلیٰ throughput، کم latency والے services میں چمکتا ہے جہاں آپ compiled کارکردگی اور آسان concurrency چاہیں۔ ہم workload کے مطابق چنتے ہیں اور ایک ہی سسٹم انہیں ملا سکتا ہے — hot path کے لیے Go، analytics service کے لیے Python۔" },
+        { "question": "آپ بیک اینڈ کو کیسے اسکیل کرتے ہیں؟", "answer": "اسکیلنگ stateless services سے شروع ہوتی ہے تاکہ آپ load balancer کے پیچھے کئی کاپیاں چلا سکیں، مع ایسا ڈیٹابیس جو رکاوٹ نہ بنے۔ ہم caching (Redis)، read replicas، connection pooling اور queues کے ذریعے async پراسیسنگ شامل کرتے ہیں تاکہ سست کام requests کو نہ روکے۔ افقی اسکیلنگ بڑا سرور خریدنے سے بہتر ہے اور ہم اسے شروع سے ڈیزائن کرتے ہیں۔" },
+        { "question": "بیک اینڈ پروجیکٹ میں کتنا وقت لگتا ہے؟", "answer": "تصدیق، چند resources اور ڈیٹابیس والی مرکوز API عموماً 4–8 ہفتے لیتی ہے۔ microservices، حقیقی وقت کی خصوصیات، متعدد انٹیگریشنز اور اعلیٰ دستیابی والی پیچیدہ سسٹم کئی ماہ تک جاتی ہے۔ سب سے بڑے متغیرات انٹیگریشنز کی تعداد، ڈیٹا منتقلی کی پیچیدگی اور آپ کی uptime اور تعمیل کی ضروریات کی سختی ہیں۔" },
+        { "question": "آپ APIs کو تیز کیسے رکھتے ہیں؟", "answer": "ہم کارکردگی کے بجٹ طے کرتے ہیں اور اندازے کے بجائے حقیقی queries کے مقابل profile کرتے ہیں۔ عام کامیابیاں ہیں درست ڈیٹابیس indexes، N+1 query patterns کا خاتمہ، گرم reads کو Redis میں cache کرنا، بڑے جوابات کی pagination، اور سست کام کو background jobs میں منتقل کرنا۔ ڈیٹا پرت ٹیون ہونے کے بعد زیادہ تر endpoints کے لیے 100ms سے کم جواب حقیقت پسندانہ ہے۔" },
+        { "question": "آپ ڈیٹابیس migrations کیسے محفوظ کرتے ہیں؟", "answer": "ہم production پر دستی SQL کے بجائے CI pipeline سے گزرنے والے versioned، reversible migrations استعمال کرتے ہیں۔ زندہ سسٹمز پر schema تبدیلیوں کے لیے ہم backward-compatible، کئی مرحلوں والے migrations کو ترجیح دیتے ہیں — column شامل کریں، backfill کریں، reads منتقل کریں، پھر پرانا ہٹا دیں — تاکہ deploys کبھی downtime نہ مانگیں۔ کسی بھی migration سے پہلے backups اور آزمودہ rollback پلان موجود ہوتا ہے۔" },
+        { "question": "نگرانی اور بھروسے کا کیا حال ہے؟", "answer": "ہم services کو منظم logging، metrics (latency، error rate، throughput) اور distributed tracing سے لیس کرتے ہیں تاکہ آپ services کے درمیان کسی سست request کی نشاندہی کر سکیں۔ Health checks، حقیقی علامات پر الرٹس اور نرم تنزلی کا مطلب ہے کہ مسائل صارفین کے شکایت کرنے سے پہلے پکڑے جاتے ہیں۔ Observability اختیاری نہیں — یہی سسٹم کے بڑھنے پر بھروسا برقرار رکھنے کا طریقہ ہے۔" },
+        { "question": "کیا آپ ہمارے موجودہ بیک اینڈ کے ساتھ کام کر سکتے ہیں؟", "answer": "جی ہاں۔ ہم خصوصیات شامل کرنے، کارکردگی آپٹیمائز کرنے یا بتدریج جدید بنانے کے لیے باقاعدگی سے موجودہ کوڈ بیسز میں شامل ہوتے ہیں۔ ہم جس حصے کو بدلیں گے اس کے گرد آرکیٹیکچر کا جائزہ لے کر اور ٹیسٹ شامل کر کے شروع کرتے ہیں، تاکہ بہتریاں خطرناک دوبارہ تحریر کے بجائے محفوظ ہوں۔ مکمل دوبارہ تعمیر کبھی درست فیصلہ ہوتا ہے مگر ہم اسے صرف تب تجویز کرتے ہیں جب شواہد اس کی حمایت کریں۔" }
+      ],
+      "technologies": [
+        { "icon": "nodedotjs", "name": "Node.js" },
+        { "icon": "python", "name": "Python" },
+        { "icon": "go", "name": "Go" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "redis", "name": "Redis" },
+        { "icon": "docker", "name": "Docker" },
+        { "icon": "kubernetes", "name": "Kubernetes" },
+        { "icon": "apachekafka", "name": "Kafka" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تطوير الواجهة الخلفية",
+    "shortDescription": "ابنوا أنظمة خلفية متينة وقابلة للتوسّع بـ Node.js وPython وGo — واجهات API عالية الأداء، وقواعد بيانات محكمة التصميم، وبنية سحابية أصلية مصممة لتحمّل حركة حقيقية دون أن تنهار.",
+    "fullDescription": "في الواجهة الخلفية تُكسب الموثوقية أو تُخسر. نصمّم ونبني أنظمة من جانب الخادم تبقى سريعة وصحيحة تحت الحمل: واجهات REST أو GraphQL نظيفة، وقواعد بيانات مصممة وفق أنماط استعلامكم الفعلية، وخدمات تتوسّع أفقياً بدل أن تنهار عند أول ارتفاع للحركة. نعمل أساساً بـ Node.js وPython وGo، نختار وفق عبء العمل لا وفق الموضة، ونعامل التخزين المؤقت وطوابير الرسائل وقابلية المراقبة كأمور من الدرجة الأولى لا أفكاراً لاحقة. الأمن وسلامة البيانات مدمجان من المخطط صعوداً — استعلامات معلَّمة، ومصادقة سليمة، وتشفير أثناء النقل وفي السكون. النتيجة بنية تحتية تتحمّل منطق العمل المعقّد، وتتكامل بنظافة مع خدمات الطرف الثالث، وتمنح فريقكم السجلات والمقاييس لتصحيح المشكلات قبل أن يلاحظها المستخدمون.",
+    "features": [
+      "Node.js (Express وFastify وNestJS)",
+      "Python (Django وFastAPI)",
+      "Go وRust للإنتاجية العالية",
+      "تصميم قواعد البيانات وتحسين الاستعلامات",
+      "الخدمات المصغّرة والبنية القائمة على الأحداث",
+      "المصادقة والتفويض (OAuth2 وJWT)",
+      "طوابير الرسائل (RabbitMQ وKafka وSQS)",
+      "التخزين المؤقت بـ Redis واستراتيجيات CDN"
+    ],
+    "benefits": [
+      "تحمّل تزامن عالٍ عبر التوسّع الأفقي",
+      "استجابات دون 100 مللي ثانية بضبط الاستعلامات والتخزين المؤقت",
+      "بنية صامدة مع تجاوز الفشل والتدهور اللطيف",
+      "معالجة بيانات آمنة بالتشفير والتحكم الصارم بالوصول",
+      "بنية تحتية موفّرة تتوسّع تلقائياً مع الطلب",
+      "قابلية مراقبة عميقة لتصحيح سريع والاستجابة للحوادث"
+    ],
+    "metaTitle": "تطوير الواجهة الخلفية — Node.js وPython وGo | PakSoft",
+    "metaDescription": "تطوير واجهة خلفية قابلة للتوسّع بـ Node.js وPython وGo: واجهات API عالية الأداء وقواعد بيانات محسّنة وبنية سحابية. اطلبوا تقديراً تقنياً مجانياً.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "المتطلبات ونمذجة البيانات", "description": "نرسم نطاقكم والحركة المتوقعة وعلاقات البيانات قبل كتابة الكود، لأن نموذج البيانات يحدد كل ما يليه. تحصلون على مخطط وعقد API وخطة توسّع مبنية على عبء عملكم الحقيقي لا على افتراضات." },
+        { "step": 2, "title": "البنية واختيار التقنية", "description": "نختار بين أحادية معيارية وخدمات مصغّرة بحسب حجم الفريق والتعقيد — معظم المنتجات لا تحتاج خدمات مصغّرة في اليوم الأول. تتبع اللغة وإطار العمل عبء العمل: Go أو Rust للإنتاجية الخام، وNode أو Python حيث تهم سرعة التطوير أكثر." },
+        { "step": 3, "title": "تنفيذ الواجهات والخدمات", "description": "نبني واجهات REST أو GraphQL نظيفة مع التحقق ومعالجة الأخطاء وترقيم النسخ من البداية. يُفصل منطق العمل عن النقل ليبقى قابلاً للاختبار، وتُغطّى كل نقطة نهاية باختبارات آلية قبل الدمج." },
+        { "step": 4, "title": "طبقة البيانات والأداء", "description": "نصمّم الفهارس ونضبط الاستعلامات ونضيف التخزين المؤقت حيث يُظهر القياس جدواه بدل التخمين. تجميع الاتصالات والترقيم ومنع N+1 تُبقي قاعدة البيانات سليمة مع نمو الحركة." },
+        { "step": 5, "title": "الأمن والاختبار وCI/CD", "description": "نضيف المصادقة وتحديد المعدّل والتحقق من المدخلات وإدارة الأسرار، ثم نربط خط CI يشغّل الاختبارات والفحوص الأمنية عند كل تغيير. لا شيء يصل الإنتاج دون اجتياز البوابة." },
+        { "step": 6, "title": "النشر والمراقبة والتوسّع", "description": "نحوّل إلى حاويات وننشر بطرح دون توقف ونجهّز النظام بسجلات منظّمة ومقاييس وتتبّع. عندما تنمو الأحمال تتوسّع البنية بشكل متوقّع — وترون بالضبط أين يُنفَق الوقت." }
+      ],
+      "faq": [
+        { "question": "هل أبدأ بأحادية أم بخدمات مصغّرة؟", "answer": "لمعظم المنتجات، الأحادية المعيارية حسنة البنية هي البداية الصحيحة. تضيف الخدمات المصغّرة عبئاً تشغيلياً حقيقياً — اكتشاف الخدمات، والتتبّع الموزّع، ومعالجة أعطال الشبكة — لا يؤتي ثماره إلا حين يكون لديكم فرق متعددة أو احتياجات توسّع مستقلة فعلاً. نبني الأحاديات بحدود وحدات نظيفة كي يمكن تقسيمها لاحقاً إلى خدمات إن استدعى الأمر فعلاً." },
+        { "question": "Node.js أم Python أم Go — أي لغة خلفية؟", "answer": "يتفوّق Node.js في واجهات API كثيفة الإدخال/الإخراج ويتشارك اللغة مع واجهتكم الأمامية. وPython (FastAPI وDjango) لا يُجارى في البيانات وتكامل التعلّم الآلي والتطوير السريع. وGo يتألق في الخدمات عالية الإنتاجية منخفضة الكمون حيث تريدون أداء مُصرَّفاً وتزامناً سهلاً. نختار وفق عبء العمل، ويمكن لنظام واحد أن يمزجها — Go لمسار ساخن وPython لخدمة تحليلات." },
+        { "question": "كيف تجعلون الواجهة الخلفية قابلة للتوسّع؟", "answer": "يبدأ التوسّع بخدمات عديمة الحالة كي تشغّلوا نسخاً كثيرة خلف موازِن حمل، إضافة إلى قاعدة بيانات لا تصبح عنق الزجاجة. نضيف التخزين المؤقت (Redis) ونسخ القراءة وتجميع الاتصالات والمعالجة غير المتزامنة عبر الطوابير كي لا يحجب العمل البطيء الطلبات. التوسّع الأفقي يتفوّق على شراء خادم أكبر، ونصمّم له من البداية." },
+        { "question": "كم يستغرق مشروع واجهة خلفية؟", "answer": "واجهة API مركّزة بمصادقة وعدد قليل من الموارد وقاعدة بيانات تستغرق عادة 4–8 أسابيع. ونظام معقّد بخدمات مصغّرة وميزات لحظية وعدة تكاملات ومتطلبات توافر عالٍ يستغرق عدة أشهر. أكبر المتغيرات هي عدد التكاملات، وتعقيد ترحيل البيانات، وصرامة متطلبات وقت التشغيل والامتثال لديكم." },
+        { "question": "كيف تُبقون واجهات API سريعة؟", "answer": "نضع ميزانيات أداء ونقيس مقابل استعلامات حقيقية بدل التخمين. المكاسب المعتادة هي فهارس قاعدة بيانات سليمة، والقضاء على أنماط N+1، وتخزين القراءات الساخنة مؤقتاً في Redis، وترقيم الاستجابات الكبيرة، ونقل العمل البطيء إلى مهام خلفية. استجابات دون 100 مللي ثانية واقعية لمعظم نقاط النهاية بعد ضبط طبقة البيانات." },
+        { "question": "كيف تنفّذون ترحيلات قاعدة البيانات بأمان؟", "answer": "نستخدم ترحيلات مُرقَّمة قابلة للعكس عبر خط CI، لا SQL يدوياً على الإنتاج. ولتغييرات المخطط على الأنظمة الحيّة نفضّل ترحيلات متوافقة للخلف ومتعددة الخطوات — إضافة العمود، ثم التعبئة، ثم تحويل القراءات، ثم إسقاط القديم — كي لا تتطلب عمليات النشر توقفاً. وتكون النسخ الاحتياطية وخطة تراجع مختبَرة جاهزة قبل أي ترحيل." },
+        { "question": "ماذا عن المراقبة والموثوقية؟", "answer": "نجهّز الخدمات بتسجيل منظّم ومقاييس (الكمون ومعدّل الأخطاء والإنتاجية) وتتبّع موزّع كي تحدّدوا طلباً بطيئاً عبر الخدمات. وتعني فحوص الصحة والتنبيه على الأعراض الحقيقية والتدهور اللطيف أن المشكلات تُلتقط قبل أن يشتكي المستخدمون. قابلية المراقبة ليست اختيارية — بها يبقى النظام موثوقاً وهو ينمو." },
+        { "question": "هل يمكنكم العمل مع واجهتنا الخلفية الحالية؟", "answer": "نعم. ننضم بانتظام إلى قواعد كود قائمة لإضافة ميزات أو تحسين الأداء أو التحديث التدريجي. نبدأ بمراجعة البنية وإضافة اختبارات حول المنطقة التي سنغيّرها، كي تكون التحسينات آمنة لا إعادة كتابة محفوفة بالمخاطر. وإعادة البناء الكاملة صحيحة أحياناً، لكننا لا نوصي بها إلا حين تدعمها الأدلة." }
+      ],
+      "technologies": [
+        { "icon": "nodedotjs", "name": "Node.js" },
+        { "icon": "python", "name": "Python" },
+        { "icon": "go", "name": "Go" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "redis", "name": "Redis" },
+        { "icon": "docker", "name": "Docker" },
+        { "icon": "kubernetes", "name": "Kubernetes" },
+        { "icon": "apachekafka", "name": "Kafka" }
+      ]
+    }
+  }
+}

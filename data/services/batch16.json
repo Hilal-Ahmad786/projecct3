@@ -1,0 +1,436 @@
+{
+  "magento-development": {
+    "en": {
+      "name": "Magento Development",
+      "shortDescription": "Create powerful, scalable e-commerce platforms with Magento/Adobe Commerce.",
+      "fullDescription": "Scale your high-volume online store with our expert Magento (Adobe Commerce) Development services. Designed for complex B2B operations and massive B2C catalogs, Magento offers unparalleled flexibility, but requires deep technical expertise to implement correctly. We specialize in building custom Magento 2 architectures, developing bespoke modules, and deeply integrating the platform with your existing ERP (like SAP or NetSuite), CRM, and PIM systems. We focus heavily on performance optimization—utilizing Varnish caching, Elasticsearch, and optimized server configurations to ensure your massive store loads in milliseconds.",
+      "features": [
+        "Custom Magento 2 Theme & Module Development",
+        "Complex B2B & B2C Multi-Store Setups",
+        "Deep ERP, CRM & PIM Integrations",
+        "Advanced Performance & Speed Optimization",
+        "Seamless Migration from Magento 1 or other platforms",
+        "Headless Magento implementations (PWA Studio)"
+      ],
+      "benefits": [
+        "Unparalleled Customization & Flexibility",
+        "Ability to Handle Massive Product Catalogs",
+        "Robust B2B Features (Custom Pricing, Quotes)",
+        "Global Scalability with Multi-Language/Currency",
+        "High Security & PCI Compliance Readiness"
+      ],
+      "content": {
+        "process": [
+          { "title": "Discovery & Architecture", "description": "Mapping out complex product attributes, pricing rules, and integration points." },
+          { "title": "Custom Development", "description": "Building tailored Magento modules and designing a high-converting, responsive theme." },
+          { "title": "System Integration", "description": "Connecting Magento securely to your backend ERP or fulfillment software." },
+          { "title": "Performance Tuning", "description": "Configuring Varnish, Redis, and Elasticsearch for maximum speed." },
+          { "title": "Migration & Launch", "description": "Safely migrating customer data and orders from your old platform to the new Magento 2 instance." }
+        ],
+        "technologies": [
+          "Magento 2 / Adobe Commerce",
+          "PHP / MySQL",
+          "Elasticsearch / OpenSearch",
+          "Varnish Cache",
+          "Redis",
+          "GraphQL (for Headless setups)"
+        ],
+        "faq": [
+          { "question": "Should we use Magento Open Source or Adobe Commerce (Enterprise)?", "answer": "Magento Open Source is free and incredibly powerful, suitable for most large businesses. Adobe Commerce adds advanced B2B features (like company accounts and custom catalogs), premium support, and cloud hosting. We help you choose based on your exact requirements." },
+          { "question": "Magento is known to be slow. How do you fix that?", "answer": "Magento is only slow if configured poorly. We use a combination of Varnish (for full-page caching), Redis (for session/database caching), Elasticsearch (for lightning-fast search), and clean code practices to ensure your Magento store loads in under 2 seconds." }
+        ]
+      },
+      "metaTitle": "Magento 2 Development Agency | Adobe Commerce Experts",
+      "metaDescription": "Build highly scalable, custom e-commerce stores with our expert Magento Development services. We specialize in B2B features, ERP integrations, and performance."
+    },
+    "tr": {
+      "name": "Magento Geliştirme",
+      "shortDescription": "Magento/Adobe Commerce ile güçlü, ölçeklenebilir e-ticaret platformları oluşturun.",
+      "fullDescription": "Uzman Magento (Adobe Commerce) Geliştirme hizmetlerimizle yüksek hacimli çevrimiçi mağazanızı ölçeklendirin. Karmaşık B2B operasyonları ve devasa B2C katalogları için tasarlanan Magento, benzersiz bir esneklik sunar ancak doğru bir şekilde uygulanması için derin teknik uzmanlık gerektirir. Özel Magento 2 mimarileri oluşturma, ısmarlama modüller geliştirme ve platformu mevcut ERP (SAP veya NetSuite gibi), CRM ve PIM sistemlerinizle derinlemesine entegre etme konusunda uzmanız. Devasa mağazanızın milisaniyeler içinde yüklenmesini sağlamak için Varnish önbelleğe alma, Elasticsearch ve optimize edilmiş sunucu yapılandırmalarını kullanarak performans optimizasyonuna büyük önem veriyoruz.",
+      "features": [
+        "Özel Magento 2 Tema ve Modül Geliştirme",
+        "Karmaşık B2B ve B2C Çoklu Mağaza (Multi-Store) Kurulumları",
+        "Derin ERP, CRM ve PIM Entegrasyonları",
+        "Gelişmiş Performans ve Hız Optimizasyonu",
+        "Magento 1'den veya Diğer Platformlardan Sorunsuz Geçiş",
+        "Başsız (Headless) Magento Uygulamaları (PWA Studio)"
+      ],
+      "benefits": [
+        "Benzersiz Özelleştirme ve Esneklik",
+        "Devasa Ürün Kataloglarını İdare Edebilme Yeteneği",
+        "Güçlü B2B Özellikleri (Özel Fiyatlandırma, Teklifler)",
+        "Çoklu Dil/Para Birimi ile Küresel Ölçeklenebilirlik",
+        "Yüksek Güvenlik ve PCI Uyumluluğuna Hazırlık"
+      ],
+      "content": {
+        "process": [
+          { "title": "Keşif ve Mimari", "description": "Karmaşık ürün niteliklerini, fiyatlandırma kurallarını ve entegrasyon noktalarını haritalandırma." },
+          { "title": "Özel Geliştirme", "description": "Özel Magento modülleri oluşturma ve yüksek dönüşüm sağlayan, duyarlı bir tema tasarlama." },
+          { "title": "Sistem Entegrasyonu", "description": "Magento'yu arka uç ERP veya sipariş karşılama yazılımınıza güvenli bir şekilde bağlama." },
+          { "title": "Performans Ayarı", "description": "Maksimum hız için Varnish, Redis ve Elasticsearch'ü yapılandırma." },
+          { "title": "Geçiş ve Lansman", "description": "Müşteri verilerini ve siparişlerini eski platformunuzdan yeni Magento 2 örneğine güvenli bir şekilde taşıma." }
+        ],
+        "technologies": [
+          "Magento 2 / Adobe Commerce",
+          "PHP / MySQL",
+          "Elasticsearch / OpenSearch",
+          "Varnish Önbellek",
+          "Redis",
+          "GraphQL (Başsız kurulumlar için)"
+        ],
+        "faq": [
+          { "question": "Magento Open Source mu yoksa Adobe Commerce (Enterprise) mi kullanmalıyız?", "answer": "Magento Open Source ücretsizdir ve çoğu büyük işletme için uygun olan inanılmaz derecede güçlüdür. Adobe Commerce, gelişmiş B2B özellikleri (şirket hesapları ve özel kataloglar gibi), premium destek ve bulut barındırma ekler. Kesin gereksinimlerinize göre seçim yapmanıza yardımcı oluyoruz." },
+          { "question": "Magento'nun yavaş olduğu bilinir. Bunu nasıl düzeltirsiniz?", "answer": "Magento yalnızca kötü yapılandırılmışsa yavaştır. Magento mağazanızın 2 saniyenin altında yüklenmesini sağlamak için Varnish (tam sayfa önbelleğe alma için), Redis (oturum/veritabanı önbelleğe alma için), Elasticsearch (ışık hızında arama için) ve temiz kod uygulamalarının bir kombinasyonunu kullanıyoruz." }
+        ]
+      },
+      "metaTitle": "Magento 2 Geliştirme Ajansı | Adobe Commerce Uzmanları",
+      "metaDescription": "Uzman Magento Geliştirme hizmetlerimizle son derece ölçeklenebilir, özel e-ticaret mağazaları oluşturun. B2B özelliklerinde, ERP entegrasyonlarında ve hızda uzmanız."
+    },
+    "de": {
+      "name": "Magento-Entwicklung",
+      "shortDescription": "Erstellen Sie leistungsstarke, skalierbare E-Commerce-Plattformen mit Magento/Adobe Commerce.",
+      "fullDescription": "Skalieren Sie Ihren volumenstarken Online-Shop mit unseren fachkundigen Magento (Adobe Commerce) Entwicklungsdiensten. Magento wurde für komplexe B2B-Operationen und massive B2C-Kataloge entwickelt und bietet beispiellose Flexibilität, erfordert jedoch fundiertes technisches Fachwissen für die korrekte Implementierung. Wir sind auf den Aufbau individueller Magento 2-Architekturen, die Entwicklung maßgeschneiderter Module und die tiefe Integration der Plattform in Ihre bestehenden ERP- (wie SAP oder NetSuite), CRM- und PIM-Systeme spezialisiert. Wir legen großen Wert auf Leistungsoptimierung – durch den Einsatz von Varnish-Caching, Elasticsearch und optimierten Serverkonfigurationen, um sicherzustellen, dass Ihr riesiger Shop in Millisekunden geladen wird.",
+      "features": [
+        "Individuelle Magento 2 Theme- & Modulentwicklung",
+        "Komplexe B2B- & B2C-Multi-Store-Setups",
+        "Tiefe ERP-, CRM- & PIM-Integrationen",
+        "Erweiterte Leistungs- & Geschwindigkeitsoptimierung",
+        "Nahtlose Migration von Magento 1 oder anderen Plattformen",
+        "Headless Magento-Implementierungen (PWA Studio)"
+      ],
+      "benefits": [
+        "Beispiellose Anpassbarkeit & Flexibilität",
+        "Fähigkeit zur Handhabung riesiger Produktkataloge",
+        "Robuste B2B-Funktionen (Individuelle Preise, Angebote)",
+        "Globale Skalierbarkeit mit Mehrsprachigkeit/Währungen",
+        "Hohe Sicherheit & PCI-Compliance-Bereitschaft"
+      ],
+      "content": {
+        "process": [
+          { "title": "Discovery & Architektur", "description": "Abbildung komplexer Produktattribute, Preisregeln und Integrationspunkte." },
+          { "title": "Individuelle Entwicklung", "description": "Entwicklung maßgeschneiderter Magento-Module und Design eines konvertierungsstarken Themes." },
+          { "title": "Systemintegration", "description": "Sichere Anbindung von Magento an Ihr Backend-ERP oder Fulfillment-Software." },
+          { "title": "Performance Tuning", "description": "Konfiguration von Varnish, Redis und Elasticsearch für maximale Geschwindigkeit." },
+          { "title": "Migration & Launch", "description": "Sichere Migration von Kundendaten und Bestellungen von Ihrer alten Plattform zu Magento 2." }
+        ],
+        "technologies": [
+          "Magento 2 / Adobe Commerce",
+          "PHP / MySQL",
+          "Elasticsearch / OpenSearch",
+          "Varnish Cache",
+          "Redis",
+          "GraphQL (für Headless)"
+        ],
+        "faq": [
+          { "question": "Sollten wir Magento Open Source oder Adobe Commerce verwenden?", "answer": "Magento Open Source ist kostenlos und extrem leistungsstark. Adobe Commerce bietet zusätzliche B2B-Funktionen (wie Firmenkonten), Premium-Support und Cloud-Hosting. Wir helfen bei der Auswahl basierend auf Ihren Anforderungen." },
+          { "question": "Magento gilt als langsam. Wie beheben Sie das?", "answer": "Magento ist nur bei schlechter Konfiguration langsam. Wir nutzen Varnish, Redis, Elasticsearch und sauberen Code, um Ladezeiten unter 2 Sekunden zu garantieren." }
+        ]
+      },
+      "metaTitle": "Magento 2 Entwicklungsagentur | Adobe Commerce Experten",
+      "metaDescription": "Erstellen Sie hochskalierbare E-Commerce-Shops mit Magento. Wir sind spezialisiert auf B2B, ERP-Integrationen und Performance-Optimierung."
+    },
+    "ur": {
+      "name": "میجنٹو ڈیولپمنٹ",
+      "shortDescription": "Magento/Adobe Commerce کے ساتھ طاقتور، قابل توسیع ای کامرس پلیٹ فارمز بنائیں۔",
+      "fullDescription": "ہماری ماہر میجنٹو (ایڈوب کامرس) ڈیولپمنٹ سروسز کے ساتھ اپنے اعلی حجم والے آن لائن اسٹور کو اسکیل کریں۔ پیچیدہ B2B آپریشنز اور بڑے پیمانے پر B2C کیٹلاگ کے لیے ڈیزائن کیا گیا، Magento بے مثال لچک پیش کرتا ہے، لیکن درست طریقے سے لاگو کرنے کے لیے گہری تکنیکی مہارت کی ضرورت ہے۔ ہم اپنی مرضی کے مطابق Magento 2 فن تعمیرات بنانے، بیسپوک ماڈیولز تیار کرنے، اور پلیٹ فارم کو آپ کے موجودہ ERP (جیسے SAP یا NetSuite)، CRM، اور PIM سسٹمز کے ساتھ گہرائی سے مربوط کرنے میں مہارت رکھتے ہیں۔ ہم آپ کے بڑے سٹور کے ملی سیکنڈز میں لوڈ ہونے کو یقینی بنانے کے لیے وارنش کیشنگ، ایلسٹک سرچ، اور آپٹمائزڈ سرور کنفیگریشنز کا استعمال کرتے ہوئے—کارکردگی کو بہتر بنانے پر بہت زیادہ توجہ مرکوز کرتے ہیں۔",
+      "features": [
+        "حسب ضرورت میجنٹو 2 تھیم اور ماڈیول ڈیولپمنٹ",
+        "پیچیدہ B2B اور B2C ملٹی اسٹور سیٹ اپ",
+        "ڈیپ ERP، CRM اور PIM انٹیگریشنز",
+        "اعلی درجے کی کارکردگی اور رفتار کی اصلاح",
+        "Magento 1 یا دوسرے پلیٹ فارمز سے بغیر کسی رکاوٹ کے منتقلی۔",
+        "ہیڈ لیس میجنٹو کے نفاذ (PWA اسٹوڈیو)"
+      ],
+      "benefits": [
+        "بے مثال تخصیص اور لچک",
+        "بڑے پیمانے پر پروڈکٹ کیٹلاگ کو ہینڈل کرنے کی صلاحیت",
+        "مضبوط B2B خصوصیات (کسٹم قیمتوں کا تعین، قیمتیں)",
+        "کثیر زبان/کرنسی کے ساتھ عالمی اسکیل ایبلٹی",
+        "اعلی سیکورٹی اور پی سی آئی کی تعمیل کی تیاری"
+      ],
+      "content": {
+        "process": [
+          { "title": "دریافت اور فن تعمیر", "description": "پیچیدہ پروڈکٹ کی خصوصیات، قیمتوں کے تعین کے قواعد، اور انضمام کے پوائنٹس کی نقشہ بندی کرنا۔" },
+          { "title": "اپنی مرضی کے مطابق ترقی", "description": "تیار کردہ میجنٹو ماڈیولز بنانا اور اعلیٰ تبدیل کرنے والی، ذمہ دار تھیم کو ڈیزائن کرنا۔" },
+          { "title": "سسٹم انٹیگریشن", "description": "Magento کو آپ کے پسدید ERP یا تکمیلی سافٹ ویئر سے محفوظ طریقے سے جوڑنا۔" },
+          { "title": "پرفارمنس ٹیوننگ", "description": "زیادہ سے زیادہ رفتار کے لیے وارنش، ریڈیس، اور ایلسٹک سرچ کو ترتیب دینا۔" },
+          { "title": "منتقلی اور آغاز", "description": "آپ کے پرانے پلیٹ فارم سے نئے Magento 2 مثال میں گاہک کا ڈیٹا اور آرڈرز محفوظ طریقے سے منتقل کرنا۔" }
+        ],
+        "technologies": [
+          "Magento 2 / Adobe Commerce",
+          "PHP / MySQL",
+          "Elasticsearch / OpenSearch",
+          "Varnish Cache",
+          "Redis",
+          "GraphQL (for Headless setups)"
+        ],
+        "faq": [
+          { "question": "کیا ہمیں Magento Open Source یا Adobe Commerce (Enterprise) کا استعمال کرنا چاہیے؟", "answer": "Magento اوپن سورس مفت اور ناقابل یقین حد تک طاقتور ہے، جو زیادہ تر بڑے کاروباروں کے لیے موزوں ہے۔ ایڈوب کامرس اعلی درجے کی B2B خصوصیات کا اضافہ کرتا ہے (جیسے کمپنی کے اکاؤنٹس اور حسب ضرورت کیٹلاگ)، پریمیم سپورٹ، اور کلاؤڈ ہوسٹنگ۔ ہم آپ کی درست ضروریات کے مطابق انتخاب کرنے میں آپ کی مدد کرتے ہیں۔" },
+          { "question": "میجنٹو سست ہونے کے لیے جانا جاتا ہے۔ آپ اسے کیسے ٹھیک کرتے ہیں؟", "answer": "اگر خراب طریقے سے ترتیب دیا جائے تو میجنٹو صرف سست ہے۔ ہم آپ کے میجنٹو اسٹور کے 2 سیکنڈ کے اندر لوڈ ہونے کو یقینی بنانے کے لیے وارنش (فل پیج کیشنگ کے لیے)، ریڈیس (سیشن/ڈیٹا بیس کیشنگ کے لیے)، ایلسٹک سرچ (بجلی کی تیز رفتار تلاش کے لیے) اور صاف کوڈ کے طریقوں کا مجموعہ استعمال کرتے ہیں۔" }
+        ]
+      },
+      "metaTitle": "میجنٹو 2 ڈیولپمنٹ ایجنسی | ایڈوب کامرس کے ماہرین",
+      "metaDescription": "ہماری ماہر میجنٹو ڈیولپمنٹ سروسز کے ساتھ انتہائی توسیع پذیر، کسٹم ای کامرس اسٹورز بنائیں۔ ہم B2B خصوصیات، ERP انضمام، اور کارکردگی میں مہارت رکھتے ہیں۔"
+    },
+    "ar": {
+      "name": "تطوير ماجنتو (Magento)",
+      "shortDescription": "قم بإنشاء منصات تجارة إلكترونية قوية وقابلة للتطوير باستخدام Magento / Adobe Commerce.",
+      "fullDescription": "قم بتوسيع نطاق متجرك عبر الإنترنت ذي الحجم الكبير من خلال خدمات تطوير Magento (Adobe Commerce) المتخصصة لدينا. تم تصميم Magento لعمليات B2B المعقدة وكتالوجات B2C الضخمة، ويوفر مرونة لا مثيل لها، ولكنه يتطلب خبرة فنية عميقة لتنفيذه بشكل صحيح. نحن متخصصون في بناء بنيات Magento 2 مخصصة، وتطوير وحدات (Modules) حسب الطلب، والدمج العميق للمنصة مع أنظمة ERP الحالية (مثل SAP أو NetSuite) و CRM و PIM. نحن نركز بشدة على تحسين الأداء — باستخدام التخزين المؤقت Varnish و Elasticsearch وتكوينات الخادم المحسّنة لضمان تحميل متجرك الضخم في أجزاء من الثانية.",
+      "features": [
+        "تطوير سمات ووحدات (Modules) مخصصة لـ Magento 2",
+        "إعدادات المتاجر المتعددة (Multi-Store) المعقدة B2B و B2C",
+        "تكاملات عميقة مع أنظمة ERP و CRM و PIM",
+        "تحسين الأداء والسرعة المتقدم",
+        "ترحيل سلس من Magento 1 أو منصات أخرى",
+        "تنفيذات Magento مقطوعة الرأس (PWA Studio)"
+      ],
+      "benefits": [
+        "تخصيص ومرونة لا مثيل لهما",
+        "القدرة على التعامل مع كتالوجات المنتجات الضخمة",
+        "ميزات B2B القوية (تسعير مخصص، عروض أسعار)",
+        "قابلية التوسع العالمية (لغات/عملات متعددة)",
+        "جاهزية عالية للأمان والامتثال لـ PCI"
+      ],
+      "content": {
+        "process": [
+          { "title": "الاكتشاف والهندسة", "description": "رسم خرائط لسمات المنتج المعقدة، وقواعد التسعير، ونقاط التكامل." },
+          { "title": "تطوير مخصص", "description": "بناء وحدات Magento مخصصة وتصميم سمة (Theme) متجاوبة وعالية التحويل." },
+          { "title": "تكامل النظام", "description": "ربط Magento بأمان مع برنامج ERP أو برنامج تلبية الطلبات (Fulfillment) الخاص بك." },
+          { "title": "ضبط الأداء", "description": "تكوين Varnish و Redis و Elasticsearch للحصول على أقصى سرعة." },
+          { "title": "الترحيل والإطلاق", "description": "ترحيل بيانات العملاء والطلبات بأمان من منصتك القديمة إلى مثيل Magento 2 الجديد." }
+        ],
+        "technologies": [
+          "Magento 2 / Adobe Commerce",
+          "PHP / MySQL",
+          "Elasticsearch / OpenSearch",
+          "Varnish Cache",
+          "Redis",
+          "GraphQL (للإعدادات مقطوعة الرأس)"
+        ],
+        "faq": [
+          { "question": "هل يجب أن نستخدم Magento Open Source أم Adobe Commerce (Enterprise)؟", "answer": "Magento Open Source مجاني وقوي بشكل لا يصدق، ومناسب لمعظم الشركات الكبيرة. يضيف Adobe Commerce ميزات B2B متقدمة (مثل حسابات الشركات والكتالوجات المخصصة) والدعم المتميز والاستضافة السحابية. نساعدك على الاختيار بناءً على متطلباتك الدقيقة." },
+          { "question": "يُعرف Magento بأنه بطيء. كيف تصلح ذلك؟", "answer": "Magento بطيء فقط إذا تم تكوينه بشكل سيئ. نستخدم مزيجًا من Varnish (للتخزين المؤقت لصفحة كاملة)، و Redis (للتخزين المؤقت للجلسة/قاعدة البيانات)، و Elasticsearch (للبحث السريع للغاية)، وممارسات الكود النظيف لضمان تحميل متجر Magento الخاص بك في أقل من ثانيتين." }
+        ]
+      },
+      "metaTitle": "وكالة تطوير Magento 2 | خبراء Adobe Commerce",
+      "metaDescription": "قم ببناء متاجر تجارة إلكترونية مخصصة وقابلة للتطوير بدرجة كبيرة من خلال خدمات تطوير Magento المتخصصة لدينا. نحن متخصصون في ميزات B2B وتكاملات ERP."
+    }
+  },
+  "marketplace-development": {
+    "en": {
+      "name": "Marketplace Development",
+      "shortDescription": "Build multi-vendor marketplace platforms connecting buyers and sellers at scale.",
+      "fullDescription": "Disrupt your industry by building a highly scalable, multi-vendor Marketplace. Whether you are creating a B2C platform like Etsy, a B2B service portal like Upwork, or a niche peer-to-peer rental app, marketplaces are complex ecosystems that require flawless execution. We architect marketplace solutions from the ground up, focusing on the three critical pillars: a frictionless buyer experience, powerful vendor management tools, and secure, automated financial routing. By utilizing tools like Stripe Connect, we solve the hardest part of marketplace development—splitting payments and paying out vendors compliantly across the globe.",
+      "features": [
+        "Dedicated Vendor/Seller Portals & Dashboards",
+        "Automated Payment Splitting (Stripe Connect)",
+        "Automated Vendor KYC & Onboarding",
+        "Lightning-Fast Search & Filtering (Algolia)",
+        "Two-Sided Review & Rating Systems",
+        "Internal Messaging & Real-Time Chat"
+      ],
+      "benefits": [
+        "Infinitely Scalable Business Model",
+        "Zero Inventory Holding Costs",
+        "Automated Tax Compliance & Payouts",
+        "High Organic SEO Potential (User-Generated Content)",
+        "Secure Platform with Dispute Resolution Tools"
+      ],
+      "content": {
+        "process": [
+          { "title": "Workflow Mapping", "description": "Defining the entire journey for both buyers and sellers, including the commission structure." },
+          { "title": "Database & Architecture", "description": "Designing a schema that cleanly separates platform data from individual vendor data." },
+          { "title": "Payments Integration", "description": "Implementing Stripe Connect for complex payment routing and KYC compliance." },
+          { "title": "Frontend Development", "description": "Building separate, intuitive interfaces for the storefront, vendor dashboard, and admin panel." },
+          { "title": "Quality Assurance", "description": "Rigorously testing edge cases in payment splitting, refunds, and search functionalities." }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Node.js / NestJS",
+          "PostgreSQL",
+          "Stripe Connect",
+          "Algolia (Search)",
+          "WebSockets (Chat)"
+        ],
+        "faq": [
+          { "question": "How do we handle paying out the sellers?", "answer": "We integrate Stripe Connect. When a buyer makes a $100 purchase, Stripe automatically routes your $10 platform commission to your account, and routes the $90 directly to the seller's bank account, completely handling the legal and tax compliance." },
+          { "question": "Can sellers upload their own products?", "answer": "Yes. We build a dedicated 'Vendor Dashboard' where sellers can manage their own inventory, track their specific orders, upload images, and view their earnings, all isolated from other sellers." }
+        ]
+      },
+      "metaTitle": "Custom Marketplace Development Services | Multi-Vendor Platforms",
+      "metaDescription": "Build scalable multi-vendor marketplaces like Etsy or Upwork. We specialize in custom marketplace development, Stripe Connect integration, and vendor portals."
+    },
+    "tr": {
+      "name": "Pazaryeri Geliştirme",
+      "shortDescription": "Büyük ölçekte alıcı ve satıcıları birbirine bağlayan çok satıcılı pazaryeri platformları oluşturun.",
+      "fullDescription": "Son derece ölçeklenebilir, çok satıcılı bir Pazaryeri oluşturarak sektörünüzde çığır açın. İster Etsy gibi bir B2C platformu, ister Upwork gibi bir B2B hizmet portalı veya niş bir eşler arası kiralama uygulaması oluşturuyor olun, pazaryerleri kusursuz yürütme gerektiren karmaşık ekosistemlerdir. Pazaryeri çözümlerini üç kritik sütuna odaklanarak sıfırdan tasarlıyoruz: sorunsuz bir alıcı deneyimi, güçlü satıcı yönetim araçları ve güvenli, otomatik finansal yönlendirme. Stripe Connect gibi araçları kullanarak, pazar yeri geliştirmenin en zor kısmı olan ödemeleri bölme ve satıcılara küresel çapta uyumlu bir şekilde ödeme yapma sorununu çözüyoruz.",
+      "features": [
+        "Özel Satıcı/Tedarikçi Portalları ve Panoları",
+        "Otomatik Ödeme Bölme (Stripe Connect)",
+        "Otomatik Satıcı Müşterini Tanı (KYC) ve İşe Alım",
+        "Işık Hızında Arama ve Filtreleme (Algolia)",
+        "Çift Taraflı İnceleme ve Puanlama Sistemleri",
+        "Dahili Mesajlaşma ve Gerçek Zamanlı Sohbet"
+      ],
+      "benefits": [
+        "Sonsuz Ölçeklenebilir İş Modeli",
+        "Sıfır Envanter Tutma Maliyeti",
+        "Otomatik Vergi Uyumluluğu ve Ödemeler",
+        "Yüksek Organik SEO Potansiyeli (Kullanıcı Tarafından Oluşturulan İçerik)",
+        "Anlaşmazlık Çözüm Araçları İçeren Güvenli Platform"
+      ],
+      "content": {
+        "process": [
+          { "title": "İş Akışı Haritalama", "description": "Komisyon yapısı dahil olmak üzere hem alıcılar hem de satıcılar için tüm yolculuğu tanımlama." },
+          { "title": "Veritabanı ve Mimari", "description": "Platform verilerini bireysel satıcı verilerinden net bir şekilde ayıran bir şema tasarlama." },
+          { "title": "Ödeme Entegrasyonu", "description": "Karmaşık ödeme yönlendirmesi ve KYC uyumluluğu için Stripe Connect'i uygulama." },
+          { "title": "Ön Uç Geliştirme", "description": "Vitrin, satıcı panosu ve yönetici paneli için ayrı, sezgisel arayüzler oluşturma." },
+          { "title": "Kalite Güvencesi", "description": "Ödeme bölme, geri ödemeler ve arama işlevlerindeki uç durumları (edge cases) titizlikle test etme." }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Node.js / NestJS",
+          "PostgreSQL",
+          "Stripe Connect",
+          "Algolia (Arama)",
+          "WebSockets (Sohbet)"
+        ],
+        "faq": [
+          { "question": "Satıcılara ödeme yapma işini nasıl hallediyoruz?", "answer": "Stripe Connect'i entegre ediyoruz. Bir alıcı 100 dolarlık bir satın alma işlemi yaptığında, Stripe 10 dolarlık platform komisyonunuzu otomatik olarak hesabınıza yönlendirir ve 90 doları doğrudan satıcının banka hesabına yönlendirerek yasal ve vergi uyumluluğunu tamamen halleder." },
+          { "question": "Satıcılar kendi ürünlerini yükleyebilir mi?", "answer": "Evet. Satıcıların kendi envanterlerini yönetebilecekleri, belirli siparişlerini takip edebilecekleri, görsel yükleyebilecekleri ve kazançlarını görüntüleyebilecekleri, diğer satıcılardan tamamen izole edilmiş özel bir 'Satıcı Panosu' oluşturuyoruz." }
+        ]
+      },
+      "metaTitle": "Özel Pazaryeri Geliştirme Hizmetleri | Çok Satıcılı Platformlar",
+      "metaDescription": "Etsy veya Upwork gibi ölçeklenebilir çok satıcılı pazaryerleri oluşturun. Özel pazaryeri geliştirme, Stripe Connect entegrasyonu ve satıcı portallarında uzmanız."
+    },
+    "de": {
+      "name": "Marktplatz-Entwicklung",
+      "shortDescription": "Bauen Sie Multi-Vendor-Marktplatzplattformen, die Käufer und Verkäufer in großem Maßstab verbinden.",
+      "fullDescription": "Erschüttern Sie Ihre Branche durch den Aufbau eines hochskalierbaren Multi-Vendor-Marktplatzes. Egal, ob Sie eine B2C-Plattform wie Etsy, ein B2B-Serviceportal wie Upwork oder eine Nischen-Peer-to-Peer-Miet-App erstellen, Marktplätze sind komplexe Ökosysteme, die eine fehlerfreie Ausführung erfordern. Wir konzipieren Marktplatzlösungen von Grund auf neu und konzentrieren uns auf die drei kritischen Säulen: ein reibungsloses Käufererlebnis, leistungsstarke Tools für das Lieferantenmanagement und sicheres, automatisiertes finanzielles Routing. Durch den Einsatz von Tools wie Stripe Connect lösen wir den schwierigsten Teil der Marktplatzentwicklung – die Aufteilung von Zahlungen und die rechtskonforme Auszahlung von Verkäufern auf der ganzen Welt.",
+      "features": [
+        "Dedizierte Verkäufer-/Händlerportale & Dashboards",
+        "Automatisierte Zahlungsaufteilung (Stripe Connect)",
+        "Automatisierter Vendor-KYC & Onboarding",
+        "Blitzschnelle Suche & Filterung (Algolia)",
+        "Zweiseitige Bewertungs- & Ratingsysteme",
+        "Internes Messaging & Echtzeit-Chat"
+      ],
+      "benefits": [
+        "Unendlich skalierbares Geschäftsmodell",
+        "Keine Kosten für die Lagerhaltung",
+        "Automatisierte Steuer-Compliance & Auszahlungen",
+        "Hohes organisches SEO-Potenzial (User-Generated Content)",
+        "Sichere Plattform mit Tools zur Streitbeilegung"
+      ],
+      "content": {
+        "process": [
+          { "title": "Workflow-Mapping", "description": "Definition der gesamten Customer Journey für Käufer und Verkäufer, einschließlich der Provisionsstruktur." },
+          { "title": "Datenbank & Architektur", "description": "Entwurf eines Schemas, das Plattformdaten sauber von individuellen Verkäuferdaten trennt." },
+          { "title": "Zahlungsintegration", "description": "Implementierung von Stripe Connect für komplexes Payment-Routing und KYC-Compliance." },
+          { "title": "Frontend-Entwicklung", "description": "Aufbau separater, intuitiver Benutzeroberflächen für Schaufenster, Verkäufer-Dashboard und Admin-Panel." },
+          { "title": "Qualitätssicherung", "description": "Strenges Testen von Randfällen bei Zahlungsaufteilungen, Rückerstattungen und Suchfunktionen." }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Node.js / NestJS",
+          "PostgreSQL",
+          "Stripe Connect",
+          "Algolia (Suche)",
+          "WebSockets (Chat)"
+        ],
+        "faq": [
+          { "question": "Wie handhaben wir die Auszahlung der Verkäufer?", "answer": "Wir integrieren Stripe Connect. Wenn ein Käufer für 100 € einkauft, leitet Stripe automatisch Ihre 10 € Plattformprovision auf Ihr Konto und die 90 € direkt auf das Bankkonto des Verkäufers weiter." },
+          { "question": "Können Verkäufer ihre eigenen Produkte hochladen?", "answer": "Ja. Wir bauen ein dediziertes 'Verkäufer-Dashboard', in dem Verkäufer ihr eigenes Inventar verwalten, ihre spezifischen Bestellungen verfolgen und ihre Einnahmen einsehen können." }
+        ]
+      },
+      "metaTitle": "Marktplatz-Entwicklung | Multi-Vendor Plattformen & Stripe Connect",
+      "metaDescription": "Erstellen Sie skalierbare Multi-Vendor-Marktplätze wie Etsy oder Upwork. Spezialisiert auf individuelle Marktplatzentwicklung und Payment-Routing."
+    },
+    "ur": {
+      "name": "مارکیٹ پلیس کی ترقی",
+      "shortDescription": "بڑے پیمانے پر خریداروں اور فروخت کنندگان کو جوڑنے والے ملٹی وینڈر مارکیٹ پلیس پلیٹ فارم بنائیں۔",
+      "fullDescription": "ایک انتہائی قابل توسیع، ملٹی وینڈر مارکیٹ پلیس بنا کر اپنی صنعت میں خلل ڈالیں۔ چاہے آپ Etsy جیسا B2C پلیٹ فارم بنا رہے ہوں، Upwork جیسا B2B سروس پورٹل، یا پیئر ٹو پیئر رینٹل ایپ، مارکیٹ پلیس پیچیدہ ماحولیاتی نظام ہیں جن کو بے عیب عمل درآمد کی ضرورت ہے۔ ہم مارکیٹ پلیس سلوشنز کو گراؤنڈ اپ سے تیار کرتے ہیں، تین اہم ستونوں پر توجہ مرکوز کرتے ہوئے: ایک رگڑ سے پاک خریدار کا تجربہ، طاقتور وینڈر مینجمنٹ ٹولز، اور محفوظ، خودکار مالیاتی روٹنگ۔ اسٹرائپ کنیکٹ جیسے ٹولز کا استعمال کر کے، ہم مارکیٹ پلیس کی ترقی کے مشکل ترین حصے کو حل کرتے ہیں—ادائیگیوں کو تقسیم کرنا اور دنیا بھر میں فروخت کنندگان کو تعمیل کے ساتھ ادا کرنا۔",
+      "features": [
+        "سرشار وینڈر/سیلر پورٹلز اور ڈیش بورڈز",
+        "خودکار ادائیگی کی تقسیم (سٹرائپ کنیکٹ)",
+        "خودکار وینڈر کے وائی سی اور آن بورڈنگ",
+        "بجلی کی تیز تلاش اور فلٹرنگ (الگولیا)",
+        "دو طرفہ جائزہ اور درجہ بندی کے نظام",
+        "اندرونی پیغام رسانی اور ریئل ٹائم چیٹ"
+      ],
+      "benefits": [
+        "لامحدود اسکیل ایبل بزنس ماڈل",
+        "صفر انوینٹری ہولڈنگ کے اخراجات",
+        "خودکار ٹیکس کی تعمیل اور ادائیگیاں",
+        "اعلی نامیاتی SEO پوٹینشل (صارف سے تیار کردہ مواد)",
+        "تنازعات کے حل کے ٹولز کے ساتھ محفوظ پلیٹ فارم"
+      ],
+      "content": {
+        "process": [
+          { "title": "ورک فلو میپنگ", "description": "خرید و فروخت کرنے والوں دونوں کے لیے پورے سفر کی تعریف کرنا، بشمول کمیشن کا ڈھانچہ۔" },
+          { "title": "ڈیٹا بیس اور آرکیٹیکچر", "description": "ایک ایسی سکیما ڈیزائن کرنا جو پلیٹ فارم کے ڈیٹا کو انفرادی وینڈر کے ڈیٹا سے صاف طور پر الگ کرے۔" },
+          { "title": "ادائیگیوں کا انضمام", "description": "پیچیدہ ادائیگی کی روٹنگ اور KYC کی تعمیل کے لیے Stripe Connect کو نافذ کرنا۔" },
+          { "title": "فرنٹ اینڈ ڈیولپمنٹ", "description": "اسٹور فرنٹ، وینڈر ڈیش بورڈ، اور ایڈمن پینل کے لیے الگ، بدیہی انٹرفیس بنانا۔" },
+          { "title": "کوالٹی اشورینس", "description": "ادائیگی کی تقسیم، ریفنڈز، اور تلاش کی فعالیتوں میں ایج کیسز کی سختی سے جانچ کرنا۔" }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Node.js / NestJS",
+          "PostgreSQL",
+          "Stripe Connect",
+          "Algolia (Search)",
+          "WebSockets (Chat)"
+        ],
+        "faq": [
+          { "question": "ہم بیچنے والوں کو ادائیگی کیسے ہینڈل کرتے ہیں؟", "answer": "ہم اسٹرائپ کنیکٹ کو مربوط کرتے ہیں۔ جب کوئی خریدار $100 کی خریداری کرتا ہے، تو سٹرائپ خود بخود آپ کے $10 کے پلیٹ فارم کمیشن کو آپ کے اکاؤنٹ میں بھیج دیتا ہے، اور قانونی اور ٹیکس کی تعمیل کو مکمل طور پر سنبھالتے ہوئے $90 کو براہ راست بیچنے والے کے بینک اکاؤنٹ میں بھیجتا ہے۔" },
+          { "question": "کیا بیچنے والے اپنی مصنوعات خود اپ لوڈ کر سکتے ہیں؟", "answer": "جی ہاں. ہم ایک وقف شدہ 'وینڈر ڈیش بورڈ' بناتے ہیں جہاں فروخت کنندگان اپنی انوینٹری کا خود انتظام کر سکتے ہیں، ان کے مخصوص آرڈرز کو ٹریک کر سکتے ہیں، تصاویر اپ لوڈ کر سکتے ہیں، اور اپنی کمائی دیکھ سکتے ہیں، یہ سب دوسرے بیچنے والوں سے الگ تھلگ ہیں۔" }
+        ]
+      },
+      "metaTitle": "کسٹم مارکیٹ پلیس ڈویلپمنٹ سروسز | ملٹی وینڈر پلیٹ فارمز",
+      "metaDescription": "Etsy یا Upwork کی طرح اسکیل ایبل ملٹی وینڈر مارکیٹ پلیس بنائیں۔ ہم کسٹم مارکیٹ پلیس ڈیولپمنٹ، اسٹرائپ کنیکٹ انٹیگریشن، اور وینڈر پورٹلز میں مہارت رکھتے ہیں۔"
+    },
+    "ar": {
+      "name": "تطوير الأسواق الإلكترونية (Marketplaces)",
+      "shortDescription": "بناء منصات أسواق متعددة البائعين تربط المشترين والبائعين على نطاق واسع.",
+      "fullDescription": "أحدث ثورة في مجالك من خلال بناء سوق (Marketplace) إلكتروني متعدد البائعين وقابل للتطوير بشكل كبير. سواء كنت تنشئ منصة B2C مثل Etsy، أو بوابة خدمات B2B مثل Upwork، أو تطبيق تأجير متخصص بين الأقران (peer-to-peer)، فإن الأسواق عبارة عن أنظمة بيئية معقدة تتطلب تنفيذًا لا تشوبه شائبة. نحن نصمم حلول الأسواق من الألف إلى الياء، مع التركيز على الركائز الثلاث الأساسية: تجربة مشتري سلسة، وأدوات إدارة بائعين قوية، وتوجيه مالي آلي وآمن. من خلال استخدام أدوات مثل Stripe Connect، نقوم بحل الجزء الأصعب من تطوير السوق — تقسيم المدفوعات والدفع للبائعين بشكل متوافق مع القوانين في جميع أنحاء العالم.",
+      "features": [
+        "بوابات ولوحات تحكم مخصصة للبائعين/الموردين",
+        "تقسيم المدفوعات الآلي (Stripe Connect)",
+        "اعتماد البائعين التلقائي (KYC) والتأهيل",
+        "بحث وتصفية فائق السرعة (Algolia)",
+        "أنظمة مراجعة وتقييم ثنائية الاتجاه",
+        "مراسلة داخلية ودردشة في الوقت الفعلي"
+      ],
+      "benefits": [
+        "نموذج عمل قابل للتطوير بلا حدود",
+        "صفر تكاليف الاحتفاظ بالمخزون",
+        "الامتثال الضريبي والمدفوعات الآلية",
+        "إمكانات عالية لـ SEO العضوي (محتوى من إنشاء المستخدمين)",
+        "منصة آمنة مع أدوات لحل النزاعات"
+      ],
+      "content": {
+        "process": [
+          { "title": "رسم خرائط سير العمل", "description": "تحديد الرحلة بأكملها لكل من المشترين والبائعين، بما في ذلك هيكل العمولة." },
+          { "title": "قاعدة البيانات والبنية", "description": "تصميم مخطط يفصل بشكل نظيف بيانات المنصة عن بيانات البائع الفردية." },
+          { "title": "تكامل المدفوعات", "description": "تنفيذ Stripe Connect لتوجيه الدفع المعقد والامتثال لـ KYC." },
+          { "title": "تطوير الواجهة الأمامية", "description": "بناء واجهات منفصلة وبديهية لواجهة المتجر، ولوحة تحكم البائع، ولوحة الإدارة." },
+          { "title": "ضمان الجودة", "description": "اختبار صارم للحالات المعقدة (edge cases) في تقسيم الدفع، واسترداد الأموال، ووظائف البحث." }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Node.js / NestJS",
+          "PostgreSQL",
+          "Stripe Connect",
+          "Algolia (للبحث)",
+          "WebSockets (للدردشة)"
+        ],
+        "faq": [
+          { "question": "كيف نتعامل مع الدفع للبائعين؟", "answer": "نحن ندمج Stripe Connect. عندما يقوم المشتري بعملية شراء بقيمة 100 دولار، يقوم Stripe تلقائيًا بتوجيه عمولة منصتك البالغة 10 دولارات إلى حسابك، وتوجيه الـ 90 دولارًا المتبقية مباشرة إلى الحساب المصرفي للبائع، مع التعامل تمامًا مع الامتثال القانوني والضريبي." },
+          { "question": "هل يمكن للبائعين تحميل منتجاتهم الخاصة؟", "answer": "نعم. نحن نبني 'لوحة تحكم بائع' مخصصة حيث يمكن للبائعين إدارة مخزونهم الخاص، وتتبع طلباتهم المحددة، وتحميل الصور، وعرض أرباحهم، وكل ذلك معزول عن البائعين الآخرين." }
+        ]
+      },
+      "metaTitle": "خدمات تطوير الأسواق الإلكترونية المخصصة | متعددة البائعين",
+      "metaDescription": "قم ببناء أسواق متعددة البائعين قابلة للتطوير مثل Etsy أو Upwork. نحن متخصصون في تطوير الأسواق، وتكامل Stripe Connect، وبوابات البائعين."
+    }
+  }
+}

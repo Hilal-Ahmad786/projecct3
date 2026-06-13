@@ -1,0 +1,278 @@
+{
+  "slug": "api-rate-limiting-throttling",
+  "en": {
+    "name": "API Rate Limiting & Throttling",
+    "shortDescription": "Protect your APIs from abuse and overload with production-grade rate limiting: token-bucket algorithms, per-key quotas, tiered plans, and honest Retry-After headers that keep clients well-behaved.",
+    "fullDescription": "An API without rate limiting is one bad client away from an outage. We design and implement throttling layers that shield your infrastructure while staying fair to legitimate users. Depending on your scale we use token-bucket or sliding-window counters backed by Redis for distributed accuracy, enforce per-key and per-plan quotas, and return correct 429 responses with Retry-After and RateLimit headers so consumers can back off gracefully instead of hammering. We handle the hard parts: burst absorption for spiky traffic, separate limits for read and write endpoints, allowlisting for trusted partners, and limits that hold consistent across many gateway nodes. The result is predictable performance under load, controlled infrastructure cost, and a clear monetization path through tiered usage.",
+    "features": [
+      "Token-Bucket & Sliding-Window Algorithms",
+      "Per-Key, Per-IP & Per-Plan Quotas",
+      "Burst Handling for Spiky Traffic",
+      "Tiered Limits (Free, Pro, Enterprise)",
+      "Standard 429 + Retry-After & RateLimit Headers",
+      "Distributed Counters with Redis",
+      "Real-Time Usage Analytics & Alerting",
+      "Dynamic & Adaptive Throttling"
+    ],
+    "benefits": [
+      "Infrastructure protected from traffic spikes and abuse",
+      "Fair resource allocation across all consumers",
+      "Predictable performance and capacity planning",
+      "Controlled compute and bandwidth costs",
+      "Enforceable SLAs and usage-based pricing tiers",
+      "Clear client feedback that reduces retry storms"
+    ],
+    "metaTitle": "API Rate Limiting & Throttling | PakSoft",
+    "metaDescription": "Production-grade API rate limiting: token-bucket algorithms, per-key quotas, tiered plans, and Redis-backed distributed counters. Protect your API — get a quote.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Traffic Audit & Goals", "description": "We analyze your current request patterns, peak loads, and the endpoints most at risk of abuse. This tells us where limits genuinely belong and what thresholds protect capacity without frustrating real users." },
+        { "step": 2, "title": "Algorithm & Limit Design", "description": "We choose the right algorithm — token bucket for smooth bursts, sliding window for strict fairness — and map limits to your plan tiers. Read and write endpoints get separate budgets so a heavy report query never starves a checkout call." },
+        { "step": 3, "title": "Distributed Implementation", "description": "We implement counters in Redis or your gateway so limits stay consistent across every node, not just one server. Atomic operations and Lua scripts prevent the race conditions that let abusers slip past naive counters." },
+        { "step": 4, "title": "Client-Friendly Responses", "description": "We return proper 429 status codes with Retry-After and the standard RateLimit headers, plus clear error bodies. Well-behaved clients back off automatically, which protects you far better than silent drops." },
+        { "step": 5, "title": "Observability & Tuning", "description": "We wire up dashboards and alerts so you can see who is hitting limits and why. Thresholds are tuned with real data after launch, because the right limit is the one your traffic reveals, not the one guessed up front." },
+        { "step": 6, "title": "Rollout & Documentation", "description": "We roll limits out gradually, often in a monitor-only mode first, so no legitimate integration breaks on day one. Consumers get documentation on their quotas, headers, and how to request higher tiers." }
+      ],
+      "faq": [
+        { "question": "Which rate-limiting algorithm should I use?", "answer": "Token bucket is the most common default: it allows short bursts up to a cap while enforcing a steady average rate, which matches how real clients behave. Fixed-window counters are simplest but let users double their rate at the window boundary; sliding-window log or counter fixes that fairness gap at slightly higher cost. We pick based on how strict your fairness needs are and how much Redis memory you want to spend." },
+        { "question": "Why do I need Redis instead of in-memory counters?", "answer": "In-memory counters only work if every request hits the same server, which is never true behind a load balancer. With multiple API nodes, each would track its own count and a client could effectively multiply their limit by the number of servers. A shared store like Redis — using atomic increments or a Lua script — gives one consistent count across the whole cluster." },
+        { "question": "What's the difference between rate limiting and throttling?", "answer": "Rate limiting rejects requests over a hard threshold, typically with a 429 response. Throttling instead slows requests down — queuing or delaying them — to smooth traffic without outright rejection. Many APIs use both: throttle to absorb bursts, then rate-limit to enforce an absolute ceiling. We help you decide which behavior fits each endpoint." },
+        { "question": "How should clients handle being rate limited?", "answer": "Correctly built clients read the Retry-After header on a 429 response and wait that long before retrying, ideally with exponential backoff and jitter to avoid synchronized retry storms. We return standardized RateLimit-Limit, RateLimit-Remaining, and RateLimit-Reset headers so clients can self-pace before they ever hit the wall. Good documentation here prevents most support tickets." },
+        { "question": "Can rate limits power my pricing tiers?", "answer": "Yes — usage limits are one of the cleanest ways to differentiate plans. We tie quotas to API keys or subscriptions so a Free tier might allow 1,000 requests/day while Pro allows 100,000, with overage handling or upgrade prompts when limits are hit. Pair this with usage analytics and you have a monetizable, self-service product." },
+        { "question": "Where should rate limiting live — gateway, app, or both?", "answer": "An API gateway (Kong, NGINX, AWS API Gateway) is the ideal first line of defense because it rejects abusive traffic before it ever touches your application. For business-specific rules — per-user quotas tied to subscription state — application-level limiting has the context it needs. Most robust setups layer both: coarse protection at the edge, fine-grained policy in the app." },
+        { "question": "Will rate limiting hurt legitimate users?", "answer": "Not if it's designed and rolled out carefully. We start in monitor-only mode to observe real usage, set thresholds above genuine peaks, allowlist trusted partners, and separate limits by endpoint so heavy-but-valid operations don't trip consumer-facing calls. The goal is to stop abuse while real users never notice the limit exists." },
+        { "question": "How do I stop distributed abuse from many IPs?", "answer": "IP-based limits are easy to evade with rotating addresses, so for authenticated APIs we key limits on the API key or account instead. For public endpoints we combine IP limits with behavioral signals and, where needed, a WAF or bot-mitigation layer. Defense in depth matters: rate limiting is one control, not the whole security story." }
+      ],
+      "technologies": [
+        { "icon": "redis", "name": "Redis" },
+        { "icon": "kong", "name": "Kong" },
+        { "icon": "nginx", "name": "NGINX" },
+        { "icon": "amazonaws", "name": "AWS API Gateway" },
+        { "icon": "envoyproxy", "name": "Envoy" },
+        { "icon": "cloudflare", "name": "Cloudflare" },
+        { "icon": "nodedotjs", "name": "Node.js" },
+        { "icon": "prometheus", "name": "Prometheus" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "API Hız Sınırlama ve Throttling",
+    "shortDescription": "API'lerinizi kötüye kullanım ve aşırı yüke karşı üretim kalitesinde hız sınırlamayla koruyun: token-bucket algoritmaları, anahtar başına kotalar, kademeli planlar ve istemcileri uyumlu tutan dürüst Retry-After başlıkları.",
+    "fullDescription": "Hız sınırlaması olmayan bir API, tek bir hatalı istemci yüzünden kesintiye uğrayabilir. Altyapınızı korurken meşru kullanıcılara adil davranan throttling katmanları tasarlar ve uygularız. Ölçeğinize göre dağıtık doğruluk için Redis tabanlı token-bucket veya kayan pencere sayaçları kullanır, anahtar ve plan başına kotalar uygular ve istemcilerin sunucuyu zorlamak yerine düzgünce geri çekilebilmesi için Retry-After ve RateLimit başlıklarıyla doğru 429 yanıtları döndürürüz. Zor kısımları biz hallederiz: ani trafik için burst soğurma, okuma ve yazma uç noktaları için ayrı limitler, güvenilir ortaklar için allowlist ve birçok gateway düğümünde tutarlı kalan limitler. Sonuç, yük altında öngörülebilir performans, kontrollü altyapı maliyeti ve kademeli kullanımla net bir gelir yoludur.",
+    "features": [
+      "Token-Bucket ve Kayan Pencere Algoritmaları",
+      "Anahtar, IP ve Plan Başına Kotalar",
+      "Ani Trafik için Burst Yönetimi",
+      "Kademeli Limitler (Free, Pro, Enterprise)",
+      "Standart 429 + Retry-After ve RateLimit Başlıkları",
+      "Redis ile Dağıtık Sayaçlar",
+      "Gerçek Zamanlı Kullanım Analitiği ve Uyarılar",
+      "Dinamik ve Uyarlanabilir Throttling"
+    ],
+    "benefits": [
+      "Altyapı, trafik artışlarına ve kötüye kullanıma karşı korunur",
+      "Tüm tüketiciler arasında adil kaynak dağılımı",
+      "Öngörülebilir performans ve kapasite planlaması",
+      "Kontrollü işlem gücü ve bant genişliği maliyetleri",
+      "Uygulanabilir SLA'lar ve kullanım bazlı fiyat kademeleri",
+      "Yeniden deneme fırtınalarını azaltan net istemci geri bildirimi"
+    ],
+    "metaTitle": "API Hız Sınırlama ve Throttling | PakSoft",
+    "metaDescription": "Üretim kalitesinde API hız sınırlama: token-bucket algoritmaları, anahtar başına kotalar, kademeli planlar ve Redis tabanlı dağıtık sayaçlar. Hemen teklif alın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Trafik Denetimi ve Hedefler", "description": "Mevcut istek desenlerinizi, zirve yüklerinizi ve kötüye kullanım riski en yüksek uç noktaları analiz ederiz. Bu, limitlerin gerçekten nereye konması gerektiğini ve hangi eşiklerin kullanıcıları rahatsız etmeden kapasiteyi koruduğunu gösterir." },
+        { "step": 2, "title": "Algoritma ve Limit Tasarımı", "description": "Doğru algoritmayı seçeriz — düzgün burstler için token bucket, katı adalet için kayan pencere — ve limitleri plan kademelerinize eşleriz. Okuma ve yazma uç noktaları ayrı bütçeler alır; böylece ağır bir rapor sorgusu asla bir ödeme çağrısını aç bırakmaz." },
+        { "step": 3, "title": "Dağıtık Uygulama", "description": "Sayaçları Redis'te veya gateway'inizde uygularız; böylece limitler tek bir sunucuda değil her düğümde tutarlı kalır. Atomik işlemler ve Lua betikleri, kötü niyetli kullanıcıların naif sayaçları atlamasına izin veren yarış koşullarını önler." },
+        { "step": 4, "title": "İstemci Dostu Yanıtlar", "description": "Retry-After ve standart RateLimit başlıklarıyla birlikte doğru 429 durum kodları ve net hata gövdeleri döndürürüz. Uyumlu istemciler otomatik olarak geri çekilir; bu sizi sessiz düşürmelerden çok daha iyi korur." },
+        { "step": 5, "title": "Gözlemlenebilirlik ve İnce Ayar", "description": "Kimin neden limitlere takıldığını görebilmeniz için panolar ve uyarılar kurarız. Eşikler lansmandan sonra gerçek verilerle ayarlanır; çünkü doğru limit, baştan tahmin edilen değil, trafiğinizin ortaya çıkardığıdır." },
+        { "step": 6, "title": "Devreye Alma ve Dokümantasyon", "description": "Limitleri kademeli olarak, çoğu zaman önce yalnızca izleme modunda devreye alırız; böylece hiçbir meşru entegrasyon ilk gün bozulmaz. Tüketiciler kotaları, başlıkları ve daha yüksek kademe talep etme yöntemleri hakkında dokümantasyon alır." }
+      ],
+      "faq": [
+        { "question": "Hangi hız sınırlama algoritmasını kullanmalıyım?", "answer": "Token bucket en yaygın varsayılandır: bir üst sınıra kadar kısa burstlere izin verirken sabit bir ortalama hızı zorunlu kılar ve bu gerçek istemcilerin davranışına uyar. Sabit pencere sayaçları en basitidir ama kullanıcıların pencere sınırında hızlarını ikiye katlamasına izin verir; kayan pencere bu adalet boşluğunu biraz daha yüksek maliyetle giderir. Seçimi, adalet ihtiyacınızın katılığına ve harcamak istediğiniz Redis belleğine göre yaparız." },
+        { "question": "Neden bellek içi sayaçlar yerine Redis'e ihtiyacım var?", "answer": "Bellek içi sayaçlar yalnızca her istek aynı sunucuya ulaşırsa çalışır ki bu, yük dengeleyici arkasında asla doğru değildir. Birden fazla API düğümüyle her biri kendi sayısını tutar ve bir istemci limitini etkin biçimde sunucu sayısıyla çarpabilir. Redis gibi paylaşımlı bir depo — atomik artışlar veya Lua betiğiyle — tüm küme genelinde tek tutarlı bir sayım sağlar." },
+        { "question": "Hız sınırlama ile throttling arasındaki fark nedir?", "answer": "Hız sınırlama, katı bir eşiğin üzerindeki istekleri genellikle 429 yanıtıyla reddeder. Throttling ise istekleri yavaşlatır — kuyruğa alır veya geciktirir — ve böylece doğrudan reddetmeden trafiği yumuşatır. Birçok API her ikisini kullanır: burstleri soğurmak için throttle, mutlak tavanı zorlamak için rate-limit. Her uç nokta için hangi davranışın uyduğuna karar vermenize yardımcı oluruz." },
+        { "question": "İstemciler hız sınırlamasıyla nasıl başa çıkmalı?", "answer": "Doğru kurgulanmış istemciler bir 429 yanıtındaki Retry-After başlığını okur ve yeniden denemeden önce o kadar bekler; ideal olarak senkronize yeniden deneme fırtınalarından kaçınmak için üstel geri çekilme ve jitter ile. İstemcilerin duvara çarpmadan kendilerini ayarlayabilmesi için standart RateLimit-Limit, RateLimit-Remaining ve RateLimit-Reset başlıkları döndürürüz. Buradaki iyi dokümantasyon çoğu destek talebini önler." },
+        { "question": "Hız limitleri fiyat kademelerime güç verebilir mi?", "answer": "Evet — kullanım limitleri planları ayırmanın en temiz yollarından biridir. Kotaları API anahtarlarına veya aboneliklere bağlarız; örneğin Free kademesi günde 1.000, Pro ise 100.000 isteğe izin verebilir, limitler aşıldığında aşım yönetimi veya yükseltme istemleriyle. Bunu kullanım analitiğiyle birleştirin, gelir getiren self servis bir ürününüz olur." },
+        { "question": "Hız sınırlama nerede olmalı — gateway, uygulama veya her ikisi?", "answer": "Bir API gateway (Kong, NGINX, AWS API Gateway) ideal ilk savunma hattıdır; çünkü kötüye kullanan trafiği uygulamanıza dokunmadan reddeder. İşe özgü kurallar için — abonelik durumuna bağlı kullanıcı başına kotalar — uygulama düzeyinde sınırlamanın ihtiyaç duyduğu bağlam vardır. En sağlam kurulumlar her ikisini katmanlar: kenarda kaba koruma, uygulamada ince ayarlı politika." },
+        { "question": "Hız sınırlama meşru kullanıcılara zarar verir mi?", "answer": "Dikkatli tasarlanıp devreye alınırsa hayır. Gerçek kullanımı gözlemlemek için yalnızca izleme modunda başlarız, eşikleri gerçek zirvelerin üzerine koyarız, güvenilir ortakları allowlist'e alırız ve limitleri uç noktaya göre ayırırız; böylece ağır ama geçerli işlemler tüketiciye yönelik çağrıları tetiklemez. Amaç, kötüye kullanımı durdururken gerçek kullanıcıların limitin varlığını fark etmemesidir." },
+        { "question": "Birçok IP'den gelen dağıtık kötüye kullanımı nasıl durdururum?", "answer": "IP tabanlı limitlerden dönen adreslerle kaçmak kolaydır; bu nedenle kimlik doğrulamalı API'lerde limitleri IP yerine API anahtarına veya hesaba bağlarız. Genel uç noktalar için IP limitlerini davranışsal sinyallerle ve gerektiğinde bir WAF veya bot azaltma katmanıyla birleştiririz. Derinlemesine savunma önemlidir: hız sınırlama bir kontroldür, güvenlik hikayesinin tamamı değil." }
+      ],
+      "technologies": [
+        { "icon": "redis", "name": "Redis" },
+        { "icon": "kong", "name": "Kong" },
+        { "icon": "nginx", "name": "NGINX" },
+        { "icon": "amazonaws", "name": "AWS API Gateway" },
+        { "icon": "envoyproxy", "name": "Envoy" },
+        { "icon": "cloudflare", "name": "Cloudflare" },
+        { "icon": "nodedotjs", "name": "Node.js" },
+        { "icon": "prometheus", "name": "Prometheus" }
+      ]
+    }
+  },
+  "de": {
+    "name": "API-Rate-Limiting & Throttling",
+    "shortDescription": "Schützen Sie Ihre APIs vor Missbrauch und Überlastung mit Rate-Limiting auf Produktionsniveau: Token-Bucket-Algorithmen, Kontingente pro Schlüssel, gestufte Pläne und korrekte Retry-After-Header, die Clients diszipliniert halten.",
+    "fullDescription": "Eine API ohne Rate-Limiting ist nur einen fehlerhaften Client von einem Ausfall entfernt. Wir entwerfen und implementieren Throttling-Schichten, die Ihre Infrastruktur schützen und dabei fair gegenüber legitimen Nutzern bleiben. Je nach Größe nutzen wir Token-Bucket- oder Sliding-Window-Zähler mit Redis für verteilte Genauigkeit, erzwingen Kontingente pro Schlüssel und Plan und liefern korrekte 429-Antworten mit Retry-After- und RateLimit-Headern, damit Clients sich kontrolliert zurückziehen statt den Server zu überrennen. Die kniffligen Teile übernehmen wir: Burst-Absorption für Lastspitzen, getrennte Limits für Lese- und Schreib-Endpunkte, Allowlisting für vertrauenswürdige Partner und Limits, die über viele Gateway-Knoten hinweg konsistent bleiben. Das Ergebnis: vorhersehbare Performance unter Last, kontrollierte Infrastrukturkosten und ein klarer Monetarisierungspfad über gestufte Nutzung.",
+    "features": [
+      "Token-Bucket- & Sliding-Window-Algorithmen",
+      "Kontingente pro Schlüssel, IP & Plan",
+      "Burst-Handling für Lastspitzen",
+      "Gestufte Limits (Free, Pro, Enterprise)",
+      "Standard-429 + Retry-After- & RateLimit-Header",
+      "Verteilte Zähler mit Redis",
+      "Echtzeit-Nutzungsanalyse & Alerting",
+      "Dynamisches & adaptives Throttling"
+    ],
+    "benefits": [
+      "Infrastruktur vor Lastspitzen und Missbrauch geschützt",
+      "Faire Ressourcenverteilung über alle Konsumenten",
+      "Vorhersehbare Performance und Kapazitätsplanung",
+      "Kontrollierte Compute- und Bandbreitenkosten",
+      "Durchsetzbare SLAs und nutzungsbasierte Preisstufen",
+      "Klares Client-Feedback reduziert Retry-Stürme"
+    ],
+    "metaTitle": "API-Rate-Limiting & Throttling | PakSoft",
+    "metaDescription": "Rate-Limiting auf Produktionsniveau: Token-Bucket-Algorithmen, Kontingente pro Schlüssel, gestufte Pläne und Redis-Zähler. Schützen Sie Ihre API — Angebot anfordern.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Traffic-Audit & Ziele", "description": "Wir analysieren Ihre aktuellen Request-Muster, Lastspitzen und die am stärksten missbrauchsgefährdeten Endpunkte. Das zeigt, wo Limits wirklich hingehören und welche Schwellen die Kapazität schützen, ohne echte Nutzer zu frustrieren." },
+        { "step": 2, "title": "Algorithmus- & Limit-Design", "description": "Wir wählen den passenden Algorithmus — Token Bucket für sanfte Bursts, Sliding Window für strikte Fairness — und ordnen Limits Ihren Plan-Stufen zu. Lese- und Schreib-Endpunkte erhalten getrennte Budgets, damit eine schwere Report-Abfrage nie einen Checkout-Call aushungert." },
+        { "step": 3, "title": "Verteilte Implementierung", "description": "Wir setzen Zähler in Redis oder Ihrem Gateway um, damit Limits über jeden Knoten konsistent bleiben, nicht nur auf einem Server. Atomare Operationen und Lua-Skripte verhindern die Race-Conditions, die Missbraucher an naiven Zählern vorbeischlüpfen lassen." },
+        { "step": 4, "title": "Client-freundliche Antworten", "description": "Wir liefern korrekte 429-Statuscodes mit Retry-After und den Standard-RateLimit-Headern sowie klaren Fehler-Bodies. Disziplinierte Clients ziehen sich automatisch zurück, was Sie weit besser schützt als stilles Verwerfen." },
+        { "step": 5, "title": "Observability & Feintuning", "description": "Wir richten Dashboards und Alerts ein, damit Sie sehen, wer wann an Limits stößt und warum. Schwellen werden nach dem Launch mit echten Daten justiert — das richtige Limit ist das, was Ihr Traffic zeigt, nicht das vorab geratene." },
+        { "step": 6, "title": "Rollout & Dokumentation", "description": "Wir führen Limits schrittweise ein, oft zunächst im reinen Monitor-Modus, damit am ersten Tag keine legitime Integration bricht. Konsumenten erhalten Dokumentation zu Kontingenten, Headern und dem Weg zu höheren Stufen." }
+      ],
+      "faq": [
+        { "question": "Welchen Rate-Limiting-Algorithmus sollte ich nutzen?", "answer": "Token Bucket ist der gängigste Standard: Er erlaubt kurze Bursts bis zu einer Obergrenze und erzwingt zugleich eine konstante Durchschnittsrate, was dem Verhalten echter Clients entspricht. Fixed-Window-Zähler sind am einfachsten, lassen Nutzer aber an der Fenstergrenze ihre Rate verdoppeln; Sliding Window schließt diese Fairness-Lücke zu etwas höheren Kosten. Wir wählen je nach Strenge Ihres Fairness-Bedarfs und gewünschtem Redis-Speicher." },
+        { "question": "Warum brauche ich Redis statt In-Memory-Zähler?", "answer": "In-Memory-Zähler funktionieren nur, wenn jeder Request denselben Server trifft — hinter einem Load Balancer nie der Fall. Bei mehreren API-Knoten zählt jeder für sich, und ein Client könnte sein Limit effektiv mit der Serverzahl multiplizieren. Ein gemeinsamer Speicher wie Redis — mit atomaren Inkrementen oder einem Lua-Skript — liefert eine konsistente Zählung über den ganzen Cluster." },
+        { "question": "Was ist der Unterschied zwischen Rate-Limiting und Throttling?", "answer": "Rate-Limiting weist Requests über einer harten Schwelle ab, meist mit einer 429-Antwort. Throttling verlangsamt Requests stattdessen — durch Queuing oder Verzögerung — und glättet so den Traffic ohne direkte Ablehnung. Viele APIs nutzen beides: Throttling zum Abfangen von Bursts, Rate-Limiting zum Erzwingen einer absoluten Obergrenze. Wir helfen Ihnen, pro Endpunkt das passende Verhalten zu wählen." },
+        { "question": "Wie sollten Clients auf Rate-Limiting reagieren?", "answer": "Korrekt gebaute Clients lesen den Retry-After-Header einer 429-Antwort und warten entsprechend, idealerweise mit exponentiellem Backoff und Jitter, um synchronisierte Retry-Stürme zu vermeiden. Wir liefern standardisierte RateLimit-Limit-, RateLimit-Remaining- und RateLimit-Reset-Header, damit Clients sich selbst takten, bevor sie an die Grenze stoßen. Gute Dokumentation hier verhindert die meisten Support-Tickets." },
+        { "question": "Können Rate-Limits meine Preisstufen antreiben?", "answer": "Ja — Nutzungslimits sind eine der saubersten Methoden, Pläne zu differenzieren. Wir binden Kontingente an API-Schlüssel oder Abos, sodass etwa Free 1.000 Requests/Tag und Pro 100.000 erlaubt, mit Overage-Handling oder Upgrade-Hinweisen beim Erreichen. Kombiniert mit Nutzungsanalyse haben Sie ein monetarisierbares Self-Service-Produkt." },
+        { "question": "Wo gehört Rate-Limiting hin — Gateway, App oder beides?", "answer": "Ein API-Gateway (Kong, NGINX, AWS API Gateway) ist die ideale erste Verteidigungslinie, weil es missbräuchlichen Traffic abweist, bevor er Ihre Anwendung erreicht. Für geschäftsspezifische Regeln — Kontingente pro Nutzer abhängig vom Abo-Status — hat App-Level-Limiting den nötigen Kontext. Robuste Setups schichten beides: grober Schutz am Edge, feingranulare Policy in der App." },
+        { "question": "Schadet Rate-Limiting legitimen Nutzern?", "answer": "Nicht, wenn es sorgfältig entworfen und ausgerollt wird. Wir starten im reinen Monitor-Modus, setzen Schwellen über echte Spitzen, nehmen vertrauenswürdige Partner in die Allowlist und trennen Limits nach Endpunkt, damit schwere, aber valide Operationen keine Consumer-Calls auslösen. Ziel ist, Missbrauch zu stoppen, ohne dass echte Nutzer das Limit je bemerken." },
+        { "question": "Wie stoppe ich verteilten Missbrauch über viele IPs?", "answer": "IP-basierte Limits lassen sich mit rotierenden Adressen leicht umgehen; bei authentifizierten APIs binden wir Limits daher an den API-Schlüssel oder Account statt an die IP. Für öffentliche Endpunkte kombinieren wir IP-Limits mit Verhaltenssignalen und bei Bedarf einer WAF- oder Bot-Mitigation-Schicht. Defense in Depth zählt: Rate-Limiting ist eine Kontrolle, nicht die ganze Security-Story." }
+      ],
+      "technologies": [
+        { "icon": "redis", "name": "Redis" },
+        { "icon": "kong", "name": "Kong" },
+        { "icon": "nginx", "name": "NGINX" },
+        { "icon": "amazonaws", "name": "AWS API Gateway" },
+        { "icon": "envoyproxy", "name": "Envoy" },
+        { "icon": "cloudflare", "name": "Cloudflare" },
+        { "icon": "nodedotjs", "name": "Node.js" },
+        { "icon": "prometheus", "name": "Prometheus" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "API ریٹ لمیٹنگ اور تھروٹلنگ",
+    "shortDescription": "اپنی APIs کو غلط استعمال اور اوورلوڈ سے پروڈکشن معیار کی ریٹ لمیٹنگ سے محفوظ رکھیں: token-bucket الگورتھمز، فی key کوٹے، درجہ بند پلانز، اور Retry-After headers جو clients کو منظم رکھتے ہیں۔",
+    "fullDescription": "ریٹ لمیٹنگ کے بغیر API صرف ایک خراب client کے فاصلے پر outage کا شکار ہو سکتی ہے۔ ہم ایسی throttling پرتیں ڈیزائن اور نافذ کرتے ہیں جو آپ کے انفراسٹرکچر کو محفوظ رکھتے ہوئے جائز صارفین کے ساتھ منصفانہ رہتی ہیں۔ آپ کے اسکیل کے مطابق ہم distributed درستی کے لیے Redis پر مبنی token-bucket یا sliding-window counters استعمال کرتے ہیں، فی key اور فی plan کوٹے نافذ کرتے ہیں، اور درست 429 جوابات Retry-After اور RateLimit headers کے ساتھ بھیجتے ہیں تاکہ clients سرور پر دباؤ ڈالنے کے بجائے شائستگی سے پیچھے ہٹ سکیں۔ مشکل حصے ہم سنبھالتے ہیں: اچانک ٹریفک کے لیے burst جذب، read اور write endpoints کے لیے الگ limits، قابلِ اعتماد شراکت داروں کے لیے allowlist، اور ایسے limits جو متعدد gateway nodes پر مستقل رہتے ہیں۔ نتیجہ بوجھ کے تحت متوقع کارکردگی، قابو میں انفراسٹرکچر لاگت، اور درجہ بند استعمال سے واضح آمدنی کا راستہ ہے۔",
+    "features": [
+      "Token-Bucket اور Sliding-Window الگورتھمز",
+      "فی Key، فی IP اور فی Plan کوٹے",
+      "اچانک ٹریفک کے لیے Burst انتظام",
+      "درجہ بند Limits (Free، Pro، Enterprise)",
+      "معیاری 429 + Retry-After اور RateLimit Headers",
+      "Redis کے ساتھ Distributed Counters",
+      "حقیقی وقت میں استعمال کی تجزیات اور الرٹس",
+      "ڈائنامک اور قابلِ موافقت Throttling"
+    ],
+    "benefits": [
+      "انفراسٹرکچر ٹریفک کے اضافے اور غلط استعمال سے محفوظ",
+      "تمام صارفین میں منصفانہ وسائل کی تقسیم",
+      "متوقع کارکردگی اور کیپیسٹی پلاننگ",
+      "قابو میں compute اور بینڈوڈتھ لاگت",
+      "قابلِ نفاذ SLAs اور استعمال پر مبنی قیمت کے درجے",
+      "واضح client فیڈبیک جو retry طوفان کم کرتا ہے"
+    ],
+    "metaTitle": "API ریٹ لمیٹنگ اور تھروٹلنگ | PakSoft",
+    "metaDescription": "پروڈکشن معیار کی API ریٹ لمیٹنگ: token-bucket الگورتھمز، فی key کوٹے، درجہ بند پلانز اور Redis distributed counters۔ اپنی API محفوظ کریں — آج ہی تخمینہ لیں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "ٹریفک آڈٹ اور اہداف", "description": "ہم آپ کے موجودہ request patterns، peak loads اور غلط استعمال کے سب سے زیادہ خطرے والے endpoints کا تجزیہ کرتے ہیں۔ اس سے معلوم ہوتا ہے کہ limits کہاں واقعی ضروری ہیں اور کون سے thresholds جائز صارفین کو پریشان کیے بغیر کیپیسٹی محفوظ رکھتے ہیں۔" },
+        { "step": 2, "title": "الگورتھم اور لمیٹ ڈیزائن", "description": "ہم درست الگورتھم منتخب کرتے ہیں — ہموار bursts کے لیے token bucket، سخت انصاف کے لیے sliding window — اور limits کو آپ کے plan درجوں سے جوڑتے ہیں۔ Read اور write endpoints کو الگ بجٹ ملتے ہیں تاکہ کوئی بھاری report query کبھی کسی checkout کال کو بھوکا نہ رکھے۔" },
+        { "step": 3, "title": "Distributed نفاذ", "description": "ہم counters کو Redis یا آپ کے gateway میں نافذ کرتے ہیں تاکہ limits صرف ایک سرور پر نہیں بلکہ ہر node پر مستقل رہیں۔ Atomic آپریشنز اور Lua اسکرپٹس وہ race conditions روکتے ہیں جو غلط استعمال کرنے والوں کو سادہ counters سے بچ نکلنے دیتے ہیں۔" },
+        { "step": 4, "title": "Client دوست جوابات", "description": "ہم Retry-After اور معیاری RateLimit headers کے ساتھ درست 429 status codes اور واضح error bodies بھیجتے ہیں۔ منظم clients خودکار طور پر پیچھے ہٹ جاتے ہیں، جو آپ کو خاموش drops سے کہیں بہتر محفوظ رکھتا ہے۔" },
+        { "step": 5, "title": "نگرانی اور ٹیوننگ", "description": "ہم dashboards اور alerts بناتے ہیں تاکہ آپ دیکھ سکیں کہ کون کب اور کیوں limits سے ٹکرا رہا ہے۔ Thresholds لانچ کے بعد حقیقی ڈیٹا سے ایڈجسٹ کیے جاتے ہیں، کیونکہ درست limit وہی ہے جو آپ کا ٹریفک ظاہر کرے، نہ کہ پہلے سے اندازہ کیا گیا۔" },
+        { "step": 6, "title": "اجراء اور دستاویزات", "description": "ہم limits کو بتدریج نافذ کرتے ہیں، اکثر پہلے صرف monitor-only موڈ میں، تاکہ پہلے دن کوئی جائز انٹیگریشن نہ ٹوٹے۔ صارفین کو ان کے کوٹے، headers اور اعلیٰ درجہ مانگنے کے طریقے پر دستاویزات ملتی ہیں۔" }
+      ],
+      "faq": [
+        { "question": "مجھے کون سا ریٹ لمیٹنگ الگورتھم استعمال کرنا چاہیے؟", "answer": "Token bucket سب سے عام ڈیفالٹ ہے: یہ ایک حد تک مختصر bursts کی اجازت دیتے ہوئے مستحکم اوسط شرح نافذ کرتا ہے، جو حقیقی clients کے رویے سے مطابقت رکھتا ہے۔ Fixed-window counters سب سے سادہ ہیں مگر window کی حد پر صارفین کو اپنی شرح دگنی کرنے دیتے ہیں؛ sliding window یہ انصاف کا خلا قدرے زیادہ لاگت پر پر کرتا ہے۔ ہم آپ کی انصاف کی ضرورت کی سختی اور Redis میموری کے مطابق انتخاب کرتے ہیں۔" },
+        { "question": "مجھے in-memory counters کے بجائے Redis کیوں چاہیے؟", "answer": "In-memory counters صرف اسی صورت کام کرتے ہیں جب ہر request ایک ہی سرور پر جائے، جو load balancer کے پیچھے کبھی درست نہیں ہوتا۔ متعدد API nodes کے ساتھ ہر ایک اپنی گنتی رکھے گا اور ایک client مؤثر طور پر اپنی limit کو سرورز کی تعداد سے ضرب دے سکتا ہے۔ Redis جیسا مشترکہ store — atomic increments یا Lua اسکرپٹ کے ساتھ — پورے cluster میں ایک مستقل گنتی دیتا ہے۔" },
+        { "question": "ریٹ لمیٹنگ اور تھروٹلنگ میں کیا فرق ہے؟", "answer": "ریٹ لمیٹنگ سخت حد سے زیادہ requests کو عموماً 429 جواب سے مسترد کرتی ہے۔ تھروٹلنگ اس کے بجائے requests کو سست کرتی ہے — queue یا تاخیر — اور یوں براہِ راست مسترد کیے بغیر ٹریفک کو ہموار کرتی ہے۔ بہت سی APIs دونوں استعمال کرتی ہیں: bursts جذب کرنے کے لیے throttle، اور مطلق حد نافذ کرنے کے لیے rate-limit۔ ہم ہر endpoint کے لیے موزوں رویہ طے کرنے میں مدد کرتے ہیں۔" },
+        { "question": "Clients کو ریٹ لمیٹ ہونے پر کیا کرنا چاہیے؟", "answer": "درست بنے clients 429 جواب پر Retry-After header پڑھتے ہیں اور دوبارہ کوشش سے پہلے اتنی دیر انتظار کرتے ہیں، بہتر یہ کہ exponential backoff اور jitter کے ساتھ تاکہ ہم وقت retry طوفان سے بچا جا سکے۔ ہم معیاری RateLimit-Limit، RateLimit-Remaining اور RateLimit-Reset headers بھیجتے ہیں تاکہ clients حد سے ٹکرانے سے پہلے خود کو ایڈجسٹ کر لیں۔ یہاں اچھی دستاویزات زیادہ تر support tickets روک دیتی ہیں۔" },
+        { "question": "کیا ریٹ لمیٹس میرے قیمت کے درجوں کو طاقت دے سکتی ہیں؟", "answer": "جی ہاں — استعمال کی limits پلانز کو الگ کرنے کے صاف ترین طریقوں میں سے ہیں۔ ہم کوٹے API keys یا subscriptions سے جوڑتے ہیں، مثلاً Free درجہ روزانہ 1,000 جبکہ Pro 100,000 requests کی اجازت دے سکتا ہے، حد پہنچنے پر overage یا upgrade prompts کے ساتھ۔ اسے استعمال کی تجزیات کے ساتھ ملا دیں تو آپ کے پاس آمدنی والا self-service پروڈکٹ ہوتا ہے۔" },
+        { "question": "ریٹ لمیٹنگ کہاں ہونی چاہیے — gateway، app یا دونوں؟", "answer": "ایک API gateway (Kong، NGINX، AWS API Gateway) دفاع کی مثالی پہلی صف ہے کیونکہ یہ غلط استعمال کرنے والے ٹریفک کو آپ کی ایپلیکیشن تک پہنچنے سے پہلے ہی مسترد کر دیتا ہے۔ کاروبار سے مخصوص قواعد کے لیے — subscription حالت سے جڑے فی صارف کوٹے — application سطح کی limiting کے پاس مطلوبہ سیاق ہوتا ہے۔ مضبوط ترین سیٹ اپ دونوں کو پرتوں میں رکھتے ہیں: edge پر موٹا تحفظ، app میں باریک پالیسی۔" },
+        { "question": "کیا ریٹ لمیٹنگ جائز صارفین کو نقصان دے گی؟", "answer": "اگر احتیاط سے ڈیزائن اور نافذ کی جائے تو نہیں۔ ہم حقیقی استعمال دیکھنے کے لیے monitor-only موڈ سے شروع کرتے ہیں، thresholds کو حقیقی peaks سے اوپر رکھتے ہیں، قابلِ اعتماد شراکت داروں کو allowlist کرتے ہیں، اور limits کو endpoint کے حساب سے الگ کرتے ہیں تاکہ بھاری مگر جائز عمل صارف کی کالز کو نہ چھیڑیں۔ مقصد یہ ہے کہ غلط استعمال رکے جبکہ حقیقی صارفین کو حد کے وجود کا پتا تک نہ چلے۔" },
+        { "question": "بہت سی IPs سے distributed غلط استعمال کیسے روکوں؟", "answer": "IP پر مبنی limits گھومتی پھرتی addresses سے بچنا آسان ہے، اس لیے تصدیق شدہ APIs میں ہم limits کو IP کے بجائے API key یا account سے جوڑتے ہیں۔ عوامی endpoints کے لیے ہم IP limits کو رویے کے اشاروں اور ضرورت پر WAF یا bot-mitigation پرت کے ساتھ ملاتے ہیں۔ Defense in depth اہم ہے: ریٹ لمیٹنگ ایک کنٹرول ہے، پوری سیکیورٹی کہانی نہیں۔" }
+      ],
+      "technologies": [
+        { "icon": "redis", "name": "Redis" },
+        { "icon": "kong", "name": "Kong" },
+        { "icon": "nginx", "name": "NGINX" },
+        { "icon": "amazonaws", "name": "AWS API Gateway" },
+        { "icon": "envoyproxy", "name": "Envoy" },
+        { "icon": "cloudflare", "name": "Cloudflare" },
+        { "icon": "nodedotjs", "name": "Node.js" },
+        { "icon": "prometheus", "name": "Prometheus" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تحديد معدّل واجهات API والتقييد",
+    "shortDescription": "احموا واجهات API من سوء الاستخدام والحمل الزائد بتحديد معدّل بمستوى الإنتاج: خوارزميات token-bucket، وحصص لكل مفتاح، وخطط متدرجة، وترويسات Retry-After صحيحة تُبقي العملاء منضبطين.",
+    "fullDescription": "واجهة API دون تحديد معدّل تبعد خطوة واحدة فقط عن انقطاع بسبب عميل واحد سيئ. نصمّم وننفّذ طبقات تقييد تحمي بنيتكم التحتية مع البقاء منصفة تجاه المستخدمين الشرعيين. وبحسب حجمكم نستخدم عدّادات token-bucket أو النافذة المنزلقة المدعومة بـ Redis لدقة موزّعة، ونفرض حصصاً لكل مفتاح ولكل خطة، ونعيد استجابات 429 صحيحة مع ترويسات Retry-After وRateLimit كي يتراجع العملاء بلطف بدلاً من إرهاق الخادم. نتولى الأجزاء الصعبة: امتصاص الدفقات لحركة المرور المفاجئة، وحدود منفصلة لنقاط القراءة والكتابة، وقوائم سماح للشركاء الموثوقين، وحدود تبقى متسقة عبر عقد بوابة متعددة. النتيجة أداء متوقع تحت الحمل، وتكلفة بنية تحتية مضبوطة، ومسار واضح لتحقيق الدخل عبر الاستخدام المتدرج.",
+    "features": [
+      "خوارزميات Token-Bucket والنافذة المنزلقة",
+      "حصص لكل مفتاح ولكل IP ولكل خطة",
+      "إدارة الدفقات لحركة المرور المفاجئة",
+      "حدود متدرجة (Free وPro وEnterprise)",
+      "استجابة 429 قياسية مع ترويسات Retry-After وRateLimit",
+      "عدّادات موزّعة باستخدام Redis",
+      "تحليلات استخدام وتنبيهات في الوقت الفعلي",
+      "تقييد ديناميكي وتكيّفي"
+    ],
+    "benefits": [
+      "بنية تحتية محمية من ارتفاع الحركة وسوء الاستخدام",
+      "توزيع عادل للموارد بين جميع المستهلكين",
+      "أداء متوقع وتخطيط للسعة",
+      "تكاليف معالجة ونطاق ترددي مضبوطة",
+      "اتفاقيات مستوى خدمة قابلة للفرض وفئات تسعير حسب الاستخدام",
+      "ردود واضحة للعملاء تقلّل عواصف إعادة المحاولة"
+    ],
+    "metaTitle": "تحديد معدّل واجهات API والتقييد | PakSoft",
+    "metaDescription": "تحديد معدّل API بمستوى الإنتاج: خوارزميات token-bucket، وحصص لكل مفتاح، وخطط متدرجة، وعدّادات Redis موزّعة. احموا واجهتكم — اطلبوا تقديراً اليوم.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "تدقيق الحركة والأهداف", "description": "نحلّل أنماط طلباتكم الحالية وأحمال الذروة ونقاط النهاية الأكثر عرضة لسوء الاستخدام. هذا يكشف أين تنتمي الحدود فعلاً وأي عتبات تحمي السعة دون إحباط المستخدمين الحقيقيين." },
+        { "step": 2, "title": "تصميم الخوارزمية والحدود", "description": "نختار الخوارزمية المناسبة — token bucket للدفقات السلسة، والنافذة المنزلقة للعدالة الصارمة — ونربط الحدود بفئات خطتكم. تحصل نقاط القراءة والكتابة على ميزانيات منفصلة كي لا يجوّع استعلام تقرير ثقيل نداء دفع." },
+        { "step": 3, "title": "تنفيذ موزّع", "description": "ننفّذ العدّادات في Redis أو في بوابتكم كي تبقى الحدود متسقة عبر كل عقدة لا على خادم واحد فقط. العمليات الذرّية ونصوص Lua تمنع حالات السباق التي تتيح للمسيئين تجاوز العدّادات الساذجة." },
+        { "step": 4, "title": "استجابات صديقة للعميل", "description": "نعيد رموز حالة 429 صحيحة مع Retry-After وترويسات RateLimit القياسية، إضافة إلى أجسام خطأ واضحة. العملاء المنضبطون يتراجعون تلقائياً، وهو ما يحميكم أفضل بكثير من الإسقاط الصامت." },
+        { "step": 5, "title": "المراقبة والضبط", "description": "نهيّئ لوحات وتنبيهات لتروا من يصطدم بالحدود ومتى ولماذا. تُضبط العتبات بعد الإطلاق ببيانات حقيقية، لأن الحد الصحيح هو ما تكشفه حركتكم لا ما يُخمَّن مسبقاً." },
+        { "step": 6, "title": "الطرح والتوثيق", "description": "نطرح الحدود تدريجياً، غالباً في وضع المراقبة فقط أولاً، كي لا ينكسر أي تكامل شرعي في اليوم الأول. يحصل المستهلكون على توثيق لحصصهم وترويساتهم وكيفية طلب فئات أعلى." }
+      ],
+      "faq": [
+        { "question": "أي خوارزمية تحديد معدّل ينبغي أن أستخدم؟", "answer": "Token bucket هو الافتراضي الأكثر شيوعاً: يسمح بدفقات قصيرة حتى سقف معيّن مع فرض معدّل وسطي ثابت، بما يطابق سلوك العملاء الحقيقيين. عدّادات النافذة الثابتة هي الأبسط لكنها تتيح للمستخدمين مضاعفة معدّلهم عند حدّ النافذة؛ والنافذة المنزلقة تسدّ فجوة العدالة هذه بتكلفة أعلى قليلاً. نختار وفق صرامة حاجتكم للعدالة ومقدار ذاكرة Redis التي تريدون إنفاقها." },
+        { "question": "لماذا أحتاج Redis بدل العدّادات في الذاكرة؟", "answer": "العدّادات في الذاكرة تعمل فقط إذا وصل كل طلب إلى الخادم نفسه، وهذا لا يصحّ أبداً خلف موازِن حمل. مع عدة عقد API يتتبّع كل منها عدده الخاص، ويمكن لعميل أن يضرب حدّه فعلياً بعدد الخوادم. مخزن مشترك مثل Redis — باستخدام زيادات ذرّية أو نص Lua — يمنح عدّاً واحداً متسقاً عبر العنقود كله." },
+        { "question": "ما الفرق بين تحديد المعدّل والتقييد؟", "answer": "تحديد المعدّل يرفض الطلبات فوق عتبة صارمة، عادة باستجابة 429. أما التقييد فيُبطئ الطلبات — بوضعها في طابور أو تأخيرها — لتنعيم الحركة دون رفض مباشر. تستخدم واجهات كثيرة كليهما: التقييد لامتصاص الدفقات، وتحديد المعدّل لفرض سقف مطلق. نساعدكم في اختيار السلوك الملائم لكل نقطة نهاية." },
+        { "question": "كيف ينبغي للعملاء التعامل مع تحديد المعدّل؟", "answer": "العملاء المبنيّون بشكل صحيح يقرؤون ترويسة Retry-After في استجابة 429 وينتظرون المدة المحددة قبل إعادة المحاولة، ويُفضَّل مع تراجع أُسّي وتشويش زمني لتجنّب عواصف إعادة المحاولة المتزامنة. نعيد ترويسات RateLimit-Limit وRateLimit-Remaining وRateLimit-Reset القياسية كي ينظّم العملاء أنفسهم قبل أن يصطدموا بالحدّ. التوثيق الجيد هنا يمنع معظم تذاكر الدعم." },
+        { "question": "هل يمكن لحدود المعدّل أن تشغّل فئات تسعيري؟", "answer": "نعم — حدود الاستخدام من أنظف الطرق لتمييز الخطط. نربط الحصص بمفاتيح API أو الاشتراكات، فقد تسمح فئة Free بـ 1,000 طلب يومياً بينما تسمح Pro بـ 100,000، مع معالجة التجاوز أو مطالبات الترقية عند بلوغ الحدّ. وبدمج ذلك مع تحليلات الاستخدام يصبح لديكم منتج خدمة ذاتية قابل لتحقيق الدخل." },
+        { "question": "أين ينتمي تحديد المعدّل — البوابة أم التطبيق أم كلاهما؟", "answer": "بوابة API (Kong وNGINX وAWS API Gateway) هي خط الدفاع الأول المثالي لأنها ترفض الحركة المسيئة قبل أن تلمس تطبيقكم. أما القواعد الخاصة بالعمل — حصص لكل مستخدم مرتبطة بحالة الاشتراك — فالتقييد على مستوى التطبيق يملك السياق اللازم لها. أمتن الإعدادات تُطبّق كليهما: حماية خشنة على الحافة وسياسة دقيقة في التطبيق." },
+        { "question": "هل يضرّ تحديد المعدّل بالمستخدمين الشرعيين؟", "answer": "ليس إن صُمِّم وطُرِح بعناية. نبدأ بوضع المراقبة فقط لرصد الاستخدام الحقيقي، ونضع العتبات فوق الذُرى الفعلية، وندرج الشركاء الموثوقين في قائمة السماح، ونفصل الحدود حسب نقطة النهاية كي لا تُطلِق العمليات الثقيلة الصالحة نداءات المستهلكين. الهدف إيقاف سوء الاستخدام دون أن يلاحظ المستخدمون الحقيقيون وجود الحدّ أصلاً." },
+        { "question": "كيف أوقف سوء الاستخدام الموزّع من عناوين IP كثيرة؟", "answer": "حدود IP يسهل تجاوزها بعناوين متبدّلة، لذا في واجهات API الموثَّقة نربط الحدود بمفتاح API أو الحساب بدل IP. وللنقاط العامة ندمج حدود IP مع إشارات سلوكية وعند الحاجة طبقة WAF أو تخفيف للبوتات. الدفاع المتعمّق مهم: تحديد المعدّل ضابط واحد لا قصة الأمن كاملة." }
+      ],
+      "technologies": [
+        { "icon": "redis", "name": "Redis" },
+        { "icon": "kong", "name": "Kong" },
+        { "icon": "nginx", "name": "NGINX" },
+        { "icon": "amazonaws", "name": "AWS API Gateway" },
+        { "icon": "envoyproxy", "name": "Envoy" },
+        { "icon": "cloudflare", "name": "Cloudflare" },
+        { "icon": "nodedotjs", "name": "Node.js" },
+        { "icon": "prometheus", "name": "Prometheus" }
+      ]
+    }
+  }
+}

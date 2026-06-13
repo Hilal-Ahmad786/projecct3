@@ -1,0 +1,436 @@
+{
+  "erp-development": {
+    "en": {
+      "name": "ERP Development",
+      "shortDescription": "Create integrated ERP solutions for inventory, finance, HR, and operations.",
+      "fullDescription": "Streamline your entire business operation with our custom Enterprise Resource Planning (ERP) Development services. Off-the-shelf ERPs often force you to adapt your unique business processes to their rigid software structure, leading to frustration and inefficiency. We build bespoke ERP systems from the ground up, designed specifically around how your company actually works. By centralizing inventory, financial accounting, human resources, and supply chain management into a single source of truth, we eliminate duplicate data entry, reduce costly errors, and provide real-time, actionable business intelligence across all your locations.",
+      "features": [
+        "Inventory & Warehouse Management",
+        "Financial Accounting & Reporting",
+        "HR, Payroll & Employee Self-Service",
+        "Supply Chain & Procurement Management",
+        "Manufacturing & Production Planning",
+        "Multi-Location & Multi-Currency Support"
+      ],
+      "benefits": [
+        "Single Source of Truth for Data",
+        "Massive Reduction in Operational Costs",
+        "Real-Time Visibility into Business Health",
+        "Streamlined Inter-Departmental Workflows",
+        "Perfect Alignment with Unique Business Logic"
+      ],
+      "content": {
+        "process": [
+          { "title": "Business Process Mapping", "description": "Deep-diving into your current operations to map out optimal workflows." },
+          { "title": "Modular System Design", "description": "Architecting independent but connected modules (HR, Finance, etc.)." },
+          { "title": "Core Development", "description": "Building the secure, high-performance backend using Node.js/Next.js and PostgreSQL." },
+          { "title": "Testing & Integration", "description": "Rigorous stress testing and integrating with any necessary external APIs (banking, logistics)." },
+          { "title": "Deployment & Training", "description": "Phased rollout and comprehensive training for your staff." }
+        ],
+        "technologies": [
+          "Next.js & React",
+          "PostgreSQL",
+          "Redis",
+          "Apache Kafka",
+          "Elasticsearch",
+          "Docker & Kubernetes"
+        ],
+        "faq": [
+          { "question": "Why custom ERP instead of SAP or Oracle?", "answer": "Major enterprise ERPs are incredibly expensive, require massive implementation fees, and are notoriously difficult to customize. A custom ERP is built specifically for your exact needs, meaning you don't pay for bloat, and the software adapts to your business, not the other way around." },
+          { "question": "Can the ERP handle multiple physical locations?", "answer": "Yes. Our systems are built with cloud-first architectures, providing real-time data syncing across multiple warehouses, retail storefronts, or international offices." }
+        ]
+      },
+      "metaTitle": "Custom ERP Development Services | Inventory, Finance, HR",
+      "metaDescription": "Bespoke ERP development tailored to your business. We build integrated software for inventory, accounting, HR, and supply chain management."
+    },
+    "tr": {
+      "name": "ERP Geliştirme",
+      "shortDescription": "Envanter, finans, İK ve operasyonlar için entegre ERP çözümleri oluşturun.",
+      "fullDescription": "Özel Kurumsal Kaynak Planlaması (ERP) Geliştirme hizmetlerimizle tüm iş operasyonlarınızı kolaylaştırın. Hazır ERP'ler genellikle sizi benzersiz iş süreçlerinizi katı yazılım yapılarına uyarlamaya zorlar, bu da hayal kırıklığına ve verimsizliğe yol açar. Şirketinizin gerçekte nasıl çalıştığına göre özel olarak tasarlanmış, sıfırdan ısmarlama ERP sistemleri oluşturuyoruz. Envanter, finansal muhasebe, insan kaynakları ve tedarik zinciri yönetimini tek bir doğruluk kaynağında merkezileştirerek, mükerrer veri girişini ortadan kaldırır, maliyetli hataları azaltır ve tüm lokasyonlarınızda gerçek zamanlı, eyleme dönüştürülebilir iş zekası sağlarız.",
+      "features": [
+        "Envanter ve Depo Yönetimi",
+        "Finansal Muhasebe ve Raporlama",
+        "İK, Bordro ve Çalışan Self-Servisi",
+        "Tedarik Zinciri ve Satın Alma Yönetimi",
+        "Üretim ve İmalat Planlaması",
+        "Çoklu Lokasyon ve Çoklu Para Birimi Desteği"
+      ],
+      "benefits": [
+        "Veriler için Tek Doğruluk Kaynağı",
+        "Operasyonel Maliyetlerde Büyük Düşüş",
+        "İşletme Sağlığına Yönelik Gerçek Zamanlı Görünürlük",
+        "Kolaylaştırılmış Departmanlar Arası İş Akışları",
+        "Benzersiz İş Mantığı ile Mükemmel Uyum"
+      ],
+      "content": {
+        "process": [
+          { "title": "İş Süreçleri Haritalaması", "description": "Optimum iş akışlarının haritasını çıkarmak için mevcut operasyonlarınıza derinlemesine dalış." },
+          { "title": "Modüler Sistem Tasarımı", "description": "Bağımsız ancak bağlantılı modülleri (İK, Finans vb.) mimarilendirme." },
+          { "title": "Temel Geliştirme", "description": "Node.js/Next.js ve PostgreSQL kullanarak güvenli, yüksek performanslı arka ucu oluşturma." },
+          { "title": "Test ve Entegrasyon", "description": "Titiz stres testi ve gerekli harici API'lerle (bankacılık, lojistik) entegrasyon." },
+          { "title": "Dağıtım ve Eğitim", "description": "Aşamalı kullanıma sunma ve personeliniz için kapsamlı eğitim." }
+        ],
+        "technologies": [
+          "Next.js ve React",
+          "PostgreSQL",
+          "Redis",
+          "Apache Kafka",
+          "Elasticsearch",
+          "Docker ve Kubernetes"
+        ],
+        "faq": [
+          { "question": "Neden SAP veya Oracle yerine özel ERP?", "answer": "Büyük kurumsal ERP'ler inanılmaz derecede pahalıdır, büyük uygulama ücretleri gerektirir ve özelleştirilmeleri herkesçe bilindiği üzere zordur. Özel bir ERP, tam olarak ihtiyaçlarınıza göre oluşturulur; yani şişkinlik için ödeme yapmazsınız ve yazılım işinize uyum sağlar, tam tersi değil." },
+          { "question": "ERP birden fazla fiziksel konumu idare edebilir mi?", "answer": "Evet. Sistemlerimiz, birden fazla depo, perakende mağazası veya uluslararası ofis arasında gerçek zamanlı veri senkronizasyonu sağlayan bulut öncelikli mimarilerle oluşturulmuştur." }
+        ]
+      },
+      "metaTitle": "Özel ERP Geliştirme Hizmetleri | Envanter, Finans, İK",
+      "metaDescription": "İşletmenize özel tasarlanmış ERP geliştirme. Envanter, muhasebe, İK ve tedarik zinciri yönetimi için entegre yazılımlar oluşturuyoruz."
+    },
+    "de": {
+      "name": "ERP-Entwicklung",
+      "shortDescription": "Erstellen Sie integrierte ERP-Lösungen für Inventar, Finanzen, HR und Betrieb.",
+      "fullDescription": "Optimieren Sie Ihren gesamten Geschäftsbetrieb mit unseren individuellen ERP-Entwicklungsdiensten (Enterprise Resource Planning). Standard-ERPs zwingen Sie oft dazu, Ihre einzigartigen Geschäftsprozesse an ihre starre Softwarestruktur anzupassen, was zu Frustration und Ineffizienz führt. Wir entwickeln maßgeschneiderte ERP-Systeme von Grund auf, die speziell darauf ausgelegt sind, wie Ihr Unternehmen tatsächlich funktioniert. Indem wir Bestandsverwaltung, Finanzbuchhaltung, Personalwesen und Supply-Chain-Management in einer einzigen Quelle der Wahrheit (Single Source of Truth) zentralisieren, eliminieren wir doppelte Dateneingaben, reduzieren kostspielige Fehler und bieten standortübergreifend verwertbare Business Intelligence in Echtzeit.",
+      "features": [
+        "Bestands- & Lagerverwaltung",
+        "Finanzbuchhaltung & Berichterstattung",
+        "HR, Gehaltsabrechnung & Employee Self-Service",
+        "Supply Chain & Beschaffungsmanagement",
+        "Fertigungs- & Produktionsplanung",
+        "Multi-Standort- & Multi-Währungs-Unterstützung"
+      ],
+      "benefits": [
+        "Single Source of Truth für Daten",
+        "Massive Senkung der Betriebskosten",
+        "Echtzeit-Einblick in die Unternehmensgesundheit",
+        "Optimierte abteilungsübergreifende Arbeitsabläufe",
+        "Perfekte Ausrichtung auf einzigartige Geschäftslogik"
+      ],
+      "content": {
+        "process": [
+          { "title": "Geschäftsprozess-Mapping", "description": "Tiefenanalyse Ihrer aktuellen Abläufe, um optimale Workflows zu definieren." },
+          { "title": "Modulares Systemdesign", "description": "Architektur unabhängiger, aber miteinander verbundener Module (HR, Finanzen usw.)." },
+          { "title": "Kernentwicklung", "description": "Aufbau des sicheren, hochleistungsfähigen Backends mit Node.js/Next.js und PostgreSQL." },
+          { "title": "Tests & Integration", "description": "Strenge Stresstests und Integration in externe APIs (Banken, Logistik)." },
+          { "title": "Bereitstellung & Schulung", "description": "Schrittweise Einführung und umfassende Schulung Ihrer Mitarbeiter." }
+        ],
+        "technologies": [
+          "Next.js & React",
+          "PostgreSQL",
+          "Redis",
+          "Apache Kafka",
+          "Elasticsearch",
+          "Docker"
+        ],
+        "faq": [
+          { "question": "Warum ein individuelles ERP anstelle von SAP oder Oracle?", "answer": "Große Unternehmens-ERPs sind extrem teuer, erfordern hohe Implementierungskosten und sind bekanntermaßen schwer anzupassen. Ein individuelles ERP ist genau auf Ihre Bedürfnisse zugeschnitten." },
+          { "question": "Kann das ERP mehrere physische Standorte verwalten?", "answer": "Ja. Unsere Systeme basieren auf Cloud-First-Architekturen, die eine Echtzeit-Datensynchronisation über mehrere Lager, Einzelhandelsgeschäfte oder internationale Büros hinweg ermöglichen." }
+        ]
+      },
+      "metaTitle": "Individuelle ERP-Entwicklung | Bestandsverwaltung, Finanzen, HR",
+      "metaDescription": "Maßgeschneiderte ERP-Entwicklung für Ihr Unternehmen. Wir entwickeln integrierte Software für Bestands-, Buchhaltungs-, Personal- und Supply-Chain-Management."
+    },
+    "ur": {
+      "name": "ای آر پی کی ترقی",
+      "shortDescription": "انوینٹری، فنانس، HR، اور آپریشنز کے لیے مربوط ERP حل بنائیں۔",
+      "fullDescription": "ہماری حسب ضرورت انٹرپرائز ریسورس پلاننگ (ERP) ڈیولپمنٹ سروسز کے ساتھ اپنے پورے کاروباری آپریشن کو ہموار کریں۔ آف دی شیلف ERPs اکثر آپ کو اپنے منفرد کاروباری عمل کو اپنے سخت سافٹ ویئر ڈھانچے کے مطابق ڈھالنے پر مجبور کرتے ہیں، جس سے مایوسی اور نااہلی ہوتی ہے۔ ہم شروع سے ہی بیسپوک ای آر پی سسٹمز بناتے ہیں، خاص طور پر آپ کی کمپنی کے درحقیقت کام کرنے کے طریقے کے ارد گرد ڈیزائن کیا گیا ہے۔ انوینٹری، مالیاتی اکاؤنٹنگ، ہیومن ریسورسز، اور سپلائی چین مینجمنٹ کو سچائی کے ایک واحد ذریعہ میں مرکزی بنا کر، ہم ڈپلیکیٹ ڈیٹا کے اندراج کو ختم کرتے ہیں، مہنگی غلطیوں کو کم کرتے ہیں، اور آپ کے تمام مقامات پر حقیقی وقت، قابل عمل کاروباری ذہانت فراہم کرتے ہیں۔",
+      "features": [
+        "انوینٹری اور ویئر ہاؤس مینجمنٹ",
+        "فنانشل اکاؤنٹنگ اور رپورٹنگ",
+        "HR، پے رول اور ملازم کی سیلف سروس",
+        "سپلائی چین اور پروکیورمنٹ مینجمنٹ",
+        "مینوفیکچرنگ اور پروڈکشن پلاننگ",
+        "کثیر مقام اور کثیر کرنسی کی حمایت"
+      ],
+      "benefits": [
+        "ڈیٹا کے لیے سچائی کا واحد ذریعہ",
+        "آپریشنل اخراجات میں بڑے پیمانے پر کمی",
+        "کاروبار کی صحت کے بارے میں حقیقی وقت کی نمائش",
+        "ہموار بین المحکمہ ورک فلو",
+        "منفرد بزنس لاجک کے ساتھ کامل ہم آہنگی"
+      ],
+      "content": {
+        "process": [
+          { "title": "بزنس پروسیس میپنگ", "description": "زیادہ سے زیادہ ورک فلو کا نقشہ بنانے کے لیے آپ کے موجودہ کاموں میں گہرا غوطہ لگانا۔" },
+          { "title": "ماڈیولر سسٹم ڈیزائن", "description": "آزاد لیکن منسلک ماڈیولز کی تعمیر (HR، فنانس، وغیرہ)۔" },
+          { "title": "بنیادی ترقی", "description": "Node.js/Next.js اور PostgreSQL کا استعمال کرتے ہوئے محفوظ، اعلی کارکردگی والا بیک اینڈ بنانا۔" },
+          { "title": "ٹیسٹنگ اور انٹیگریشن", "description": "سخت تناؤ کی جانچ اور کسی بھی ضروری بیرونی APIs (بینکنگ، لاجسٹکس) کے ساتھ مربوط ہونا۔" },
+          { "title": "تعیناتی اور تربیت", "description": "مرحلہ وار رول آؤٹ اور آپ کے عملے کے لیے جامع تربیت۔" }
+        ],
+        "technologies": [
+          "Next.js & React",
+          "PostgreSQL",
+          "Redis",
+          "Apache Kafka",
+          "Elasticsearch",
+          "Docker & Kubernetes"
+        ],
+        "faq": [
+          { "question": "SAP یا Oracle کے بجائے کسٹم ERP کیوں؟", "answer": "بڑے انٹرپرائز ERPs ناقابل یقین حد تک مہنگے ہیں، ان پر عمل درآمد کی بھاری فیس درکار ہوتی ہے، اور اپنی مرضی کے مطابق کرنا بدنام زمانہ مشکل ہے۔ ایک حسب ضرورت ERP خاص طور پر آپ کی درست ضروریات کے لیے بنایا گیا ہے، جس کا مطلب ہے کہ آپ فلوٹ کے لیے ادائیگی نہیں کرتے، اور سافٹ ویئر آپ کے کاروبار کے مطابق ہوتا ہے، دوسری طرف نہیں۔" },
+          { "question": "کیا ERP متعدد جسمانی مقامات کو سنبھال سکتا ہے؟", "answer": "ہاں۔ ہمارے سسٹمز کلاؤڈ فرسٹ فن تعمیر کے ساتھ بنائے گئے ہیں، جو متعدد گوداموں، ریٹیل اسٹور فرنٹ، یا بین الاقوامی دفاتر میں ریئل ٹائم ڈیٹا کی مطابقت پذیری فراہم کرتے ہیں۔" }
+        ]
+      },
+      "metaTitle": "اپنی مرضی کے مطابق ERP ترقیاتی خدمات | انوینٹری، فنانس، ایچ آر",
+      "metaDescription": "Bespoke ERP ترقی آپ کے کاروبار کے مطابق. ہم انوینٹری، اکاؤنٹنگ، ایچ آر، اور سپلائی چین مینجمنٹ کے لیے مربوط سافٹ ویئر بناتے ہیں۔"
+    },
+    "ar": {
+      "name": "تطوير ERP",
+      "shortDescription": "قم بإنشاء حلول ERP متكاملة للمخزون والتمويل والموارد البشرية والعمليات.",
+      "fullDescription": "قم بتبسيط عمليات عملك بالكامل من خلال خدمات تطوير تخطيط موارد المؤسسات (ERP) المخصصة لدينا. غالبًا ما تجبرك أنظمة ERP الجاهزة على تكييف عمليات عملك الفريدة مع بنية البرامج الصارمة الخاصة بها، مما يؤدي إلى الإحباط وعدم الكفاءة. نحن نبني أنظمة ERP مخصصة من الألف إلى الياء، مصممة خصيصًا حول كيفية عمل شركتك بالفعل. من خلال مركزية المخزون والمحاسبة المالية والموارد البشرية وإدارة سلسلة التوريد في مصدر واحد للحقيقة، نقضي على إدخال البيانات المكرر، ونقلل الأخطاء المكلفة، ونوفر ذكاء أعمال في الوقت الفعلي وقابل للتنفيذ عبر جميع مواقعك.",
+      "features": [
+        "إدارة المخزون والمستودعات",
+        "المحاسبة المالية وإعداد التقارير",
+        "الموارد البشرية وكشوف المرتبات والخدمة الذاتية للموظفين",
+        "إدارة سلسلة التوريد والمشتريات",
+        "تخطيط التصنيع والإنتاج",
+        "دعم المواقع المتعددة والعملات المتعددة"
+      ],
+      "benefits": [
+        "مصدر واحد للحقيقة للبيانات",
+        "انخفاض هائل في التكاليف التشغيلية",
+        "رؤية فورية لصحة العمل",
+        "تبسيط سير العمل بين الأقسام",
+        "توافق تام مع منطق العمل الفريد"
+      ],
+      "content": {
+        "process": [
+          { "title": "رسم خرائط إجراءات العمل", "description": "التعمق في عملياتك الحالية لرسم سير العمل الأمثل." },
+          { "title": "تصميم نظام معياري (Modular)", "description": "هندسة وحدات مستقلة ولكنها متصلة (الموارد البشرية، المالية، إلخ)." },
+          { "title": "التطوير الأساسي", "description": "بناء واجهة خلفية آمنة وعالية الأداء باستخدام Node.js/Next.js و PostgreSQL." },
+          { "title": "الاختبار والتكامل", "description": "اختبار إجهاد صارم والتكامل مع أي واجهات برمجة تطبيقات خارجية ضرورية (البنوك، الخدمات اللوجستية)." },
+          { "title": "النشر والتدريب", "description": "طرح مرحلي وتدريب شامل لموظفيك." }
+        ],
+        "technologies": [
+          "Next.js & React",
+          "PostgreSQL",
+          "Redis",
+          "Apache Kafka",
+          "Elasticsearch",
+          "Docker & Kubernetes"
+        ],
+        "faq": [
+          { "question": "لماذا يجب اختيار ERP مخصص بدلاً من SAP أو Oracle؟", "answer": "أنظمة ERP للمؤسسات الكبرى باهظة الثمن، وتتطلب رسوم تنفيذ ضخمة، ومن الصعب تخصيصها. يتم بناء ERP المخصص خصيصًا لتلبية احتياجاتك الدقيقة، مما يعني أنك لا تدفع مقابل الانتفاخ، والبرنامج يتكيف مع عملك، وليس العكس." },
+          { "question": "هل يمكن لنظام ERP التعامل مع مواقع مادية متعددة؟", "answer": "نعم. تم تصميم أنظمتنا باستخدام بنية تعتمد على السحابة (cloud-first)، مما يوفر مزامنة بيانات في الوقت الفعلي عبر مستودعات متعددة، أو واجهات متاجر تجزئة، أو مكاتب دولية." }
+        ]
+      },
+      "metaTitle": "خدمات تطوير ERP مخصصة | المخزون، المالية، الموارد البشرية",
+      "metaDescription": "تطوير ERP مخصص ومفصل لعملك. نبني برامج متكاملة لإدارة المخزون والمحاسبة والموارد البشرية وسلسلة التوريد."
+    }
+  },
+  "event-driven-architecture": {
+    "en": {
+      "name": "Event-Driven Architecture",
+      "shortDescription": "Implement event sourcing, message queues, and reactive architectures.",
+      "fullDescription": "Scale your applications gracefully with Event-Driven Architecture (EDA). In highly complex, fast-moving environments, traditional synchronous API calls can lead to massive bottlenecks and cascading system failures. We implement robust event-driven systems using tools like Apache Kafka and RabbitMQ. This approach decouples your microservices, allowing them to communicate asynchronously via events. This means your system can process thousands of transactions per second, easily recover from localized failures without losing data, and dynamically scale individual components based on traffic surges.",
+      "features": [
+        "Message Queue Implementation",
+        "Event Sourcing & CQRS Pattern",
+        "Saga Pattern for Distributed Transactions",
+        "Dead Letter Handling & Retry Logic",
+        "Event Schema Registry",
+        "Exactly-Once Processing Guarantees"
+      ],
+      "benefits": [
+        "Extreme Scalability & Throughput",
+        "Loose Coupling Between Microservices",
+        "High Fault Tolerance & Resilience",
+        "Real-Time Data Processing",
+        "Perfect Audit Trails via Event Sourcing"
+      ],
+      "content": {
+        "process": [
+          { "title": "Event Storming", "description": "Collaborative workshop to map out domains, events, and business processes." },
+          { "title": "Topology Design", "description": "Designing the topics, partitions, and message brokers needed for your traffic." },
+          { "title": "Broker Implementation", "description": "Setting up and configuring highly available clusters for Kafka or RabbitMQ." },
+          { "title": "Service Integration", "description": "Writing producers and consumers within your microservices." },
+          { "title": "Monitoring & Observability", "description": "Setting up tracing and alerting for message lag and system health." }
+        ],
+        "technologies": [
+          "Apache Kafka",
+          "RabbitMQ",
+          "AWS SQS / SNS",
+          "EventStoreDB",
+          "Node.js",
+          "Go"
+        ],
+        "faq": [
+          { "question": "What is the difference between REST APIs and Event-Driven architecture?", "answer": "REST APIs are synchronous; Service A asks Service B for data and waits (blocking) until B replies. In EDA, Service A fires an 'Event' into a queue and moves on immediately. Service B consumes that event whenever it's ready. This decoupling makes the overall system much faster and more resilient." },
+          { "question": "When should I move to an Event-Driven architecture?", "answer": "You should consider EDA when you have high-volume transactions, need real-time data streaming (like live dashboards or fraud detection), or when your microservices are suffering from tightly coupled dependencies that make scaling difficult." }
+        ]
+      },
+      "metaTitle": "Event-Driven Architecture Services | Kafka & RabbitMQ",
+      "metaDescription": "Scale your systems with Event-Driven Architecture. We implement message queues, event sourcing, and CQRS using Apache Kafka, RabbitMQ, and AWS."
+    },
+    "tr": {
+      "name": "Olay Güdümlü Mimari",
+      "shortDescription": "Olay kaynağı, mesaj kuyrukları ve reaktif mimariler uygulayın.",
+      "fullDescription": "Uygulamalarınızı Olay Güdümlü Mimari (EDA) ile zarif bir şekilde ölçeklendirin. Son derece karmaşık, hızlı hareket eden ortamlarda, geleneksel senkronize API çağrıları büyük darboğazlara ve ardışık sistem arızalarına yol açabilir. Apache Kafka ve RabbitMQ gibi araçları kullanarak sağlam olay güdümlü sistemler uyguluyoruz. Bu yaklaşım, mikro hizmetlerinizi birbirinden ayırarak olaylar aracılığıyla asenkron olarak iletişim kurmalarını sağlar. Bu, sisteminizin saniyede binlerce işlemi işleyebileceği, veri kaybetmeden yerel arızalardan kolayca kurtulabileceği ve trafik artışlarına bağlı olarak bireysel bileşenleri dinamik olarak ölçeklendirebileceği anlamına gelir.",
+      "features": [
+        "Mesaj Kuyruğu Uygulaması",
+        "Olay Kaynağı (Event Sourcing) ve CQRS Deseni",
+        "Dağıtılmış İşlemler için Saga Deseni",
+        "Ölü Mektup (Dead Letter) İşleme ve Yeniden Deneme Mantığı",
+        "Olay Şema Kaydı",
+        "Tam Olarak Bir Kez İşleme Garantileri"
+      ],
+      "benefits": [
+        "Aşırı Ölçeklenebilirlik ve Verim",
+        "Mikro Hizmetler Arasında Gevşek Bağlantı",
+        "Yüksek Hata Toleransı ve Esneklik",
+        "Gerçek Zamanlı Veri İşleme",
+        "Olay Kaynağı ile Mükemmel Denetim İzleri"
+      ],
+      "content": {
+        "process": [
+          { "title": "Olay Fırtınası (Event Storming)", "description": "Alanları, olayları ve iş süreçlerini haritalamak için işbirliğine dayalı atölye çalışması." },
+          { "title": "Topoloji Tasarımı", "description": "Trafiğiniz için gereken konuları, bölümleri ve mesaj aracılarını tasarlama." },
+          { "title": "Aracı (Broker) Uygulaması", "description": "Kafka veya RabbitMQ için yüksek oranda kullanılabilir kümeler kurma ve yapılandırma." },
+          { "title": "Hizmet Entegrasyonu", "description": "Mikro hizmetleriniz içinde üreticiler (producers) ve tüketiciler (consumers) yazma." },
+          { "title": "İzleme ve Gözlemlenebilirlik", "description": "Mesaj gecikmesi ve sistem sağlığı için izleme ve uyarı ayarlama." }
+        ],
+        "technologies": [
+          "Apache Kafka",
+          "RabbitMQ",
+          "AWS SQS / SNS",
+          "EventStoreDB",
+          "Node.js",
+          "Go"
+        ],
+        "faq": [
+          { "question": "REST API'leri ile Olay Güdümlü mimari arasındaki fark nedir?", "answer": "REST API'leri senkrondur; A Hizmeti B Hizmetinden veri ister ve B cevap verene kadar bekler (bloke eder). EDA'da, A Hizmeti bir kuyruğa bir 'Olay' gönderir ve hemen yoluna devam eder. B Hizmeti hazır olduğunda o olayı tüketir. Bu ayrıştırma genel sistemi çok daha hızlı ve dayanıklı hale getirir." },
+          { "question": "Ne zaman Olay Güdümlü bir mimariye geçmeliyim?", "answer": "Yüksek hacimli işlemleriniz olduğunda, gerçek zamanlı veri akışına (canlı gösterge panelleri veya dolandırıcılık tespiti gibi) ihtiyaç duyduğunuzda veya mikro hizmetleriniz ölçeklemeyi zorlaştıran sıkı sıkıya bağlı bağımlılıklardan muzdarip olduğunda EDA'yı düşünmelisiniz." }
+        ]
+      },
+      "metaTitle": "Olay Güdümlü Mimari Hizmetleri | Kafka ve RabbitMQ",
+      "metaDescription": "Sistemlerinizi Olay Güdümlü Mimari ile ölçeklendirin. Apache Kafka, RabbitMQ ve AWS kullanarak mesaj kuyrukları, olay kaynağı ve CQRS uyguluyoruz."
+    },
+    "de": {
+      "name": "Ereignisgesteuerte Architektur",
+      "shortDescription": "Implementieren Sie Event Sourcing, Message Queues und reaktive Architekturen.",
+      "fullDescription": "Skalieren Sie Ihre Anwendungen elegant mit Event-Driven Architecture (EDA). In hochkomplexen, schnelllebigen Umgebungen können herkömmliche synchrone API-Aufrufe zu massiven Engpässen und kaskadierenden Systemausfällen führen. Wir implementieren robuste ereignisgesteuerte Systeme mit Tools wie Apache Kafka und RabbitMQ. Dieser Ansatz entkoppelt Ihre Microservices, sodass sie asynchron über Ereignisse (Events) kommunizieren können. Das bedeutet, dass Ihr System Tausende von Transaktionen pro Sekunde verarbeiten, sich problemlos von lokalen Ausfällen erholen, ohne Daten zu verlieren, und einzelne Komponenten bei Verkehrsspitzen dynamisch skalieren kann.",
+      "features": [
+        "Message-Queue-Implementierung",
+        "Event Sourcing & CQRS-Muster",
+        "Saga-Muster für verteilte Transaktionen",
+        "Dead-Letter-Handling & Retry-Logik",
+        "Event Schema Registry",
+        "Exactly-Once-Verarbeitungsgarantien"
+      ],
+      "benefits": [
+        "Extreme Skalierbarkeit & Durchsatz",
+        "Lose Kopplung zwischen Microservices",
+        "Hohe Fehlertoleranz & Ausfallsicherheit",
+        "Echtzeit-Datenverarbeitung",
+        "Perfekte Audit-Trails durch Event Sourcing"
+      ],
+      "content": {
+        "process": [
+          { "title": "Event Storming", "description": "Gemeinsamer Workshop zur Abbildung von Domänen, Ereignissen und Geschäftsprozessen." },
+          { "title": "Topologie-Design", "description": "Entwurf der für Ihren Traffic erforderlichen Topics, Partitionen und Message Broker." },
+          { "title": "Broker-Implementierung", "description": "Aufbau und Konfiguration hochverfügbarbarer Cluster für Kafka oder RabbitMQ." },
+          { "title": "Service-Integration", "description": "Schreiben von Producern und Consumern innerhalb Ihrer Microservices." },
+          { "title": "Überwachung & Observability", "description": "Einrichtung von Tracing und Warnmeldungen für Nachrichtenverzögerungen." }
+        ],
+        "technologies": [
+          "Apache Kafka",
+          "RabbitMQ",
+          "AWS SQS / SNS",
+          "EventStoreDB",
+          "Node.js",
+          "Go"
+        ],
+        "faq": [
+          { "question": "Was ist der Unterschied zwischen REST-APIs und ereignisgesteuerter Architektur?", "answer": "REST-APIs sind synchron; Service A fordert Daten von Service B an und wartet (blockiert), bis B antwortet. In der EDA feuert Service A ein 'Ereignis' in eine Warteschlange ab und macht sofort weiter. Service B verarbeitet dieses Ereignis, sobald er bereit ist. Diese Entkopplung macht das System viel schneller." },
+          { "question": "Wann sollte ich zu einer ereignisgesteuerten Architektur wechseln?", "answer": "Sie sollten EDA in Betracht ziehen, wenn Sie ein hohes Transaktionsvolumen haben, Echtzeit-Datenstreaming benötigen (z. B. für Live-Dashboards) oder wenn Ihre Microservices unter eng gekoppelten Abhängigkeiten leiden." }
+        ]
+      },
+      "metaTitle": "Ereignisgesteuerte Architektur | Kafka & RabbitMQ Services",
+      "metaDescription": "Skalieren Sie Ihre Systeme mit ereignisgesteuerter Architektur. Wir implementieren Message Queues und CQRS mit Apache Kafka und RabbitMQ."
+    },
+    "ur": {
+      "name": "ایونٹ پر مبنی فن تعمیر",
+      "shortDescription": "ایونٹ سورسنگ، میسج کی قطاریں، اور ری ایکٹیو آرکیٹیکچر کو لاگو کریں۔",
+      "fullDescription": "ایونٹ ڈریون آرکیٹیکچر (EDA) کے ساتھ اپنی ایپس کو خوبصورتی سے اسکیل کریں۔ انتہائی پیچیدہ، تیزی سے حرکت کرنے والے ماحول میں، روایتی ہم وقت ساز API کالز بڑے پیمانے پر رکاوٹوں اور کاسکیڈنگ سسٹم کی ناکامی کا باعث بن سکتی ہیں۔ ہم Apache Kafka اور RabbitMQ جیسے ٹولز کا استعمال کرتے ہوئے مضبوط ایونٹ سے چلنے والے سسٹمز کو لاگو کرتے ہیں۔ یہ نقطہ نظر آپ کی مائیکرو سروسز کو کم کر دیتا ہے، جس سے وہ واقعات کے ذریعے متضاد طور پر بات چیت کر سکتے ہیں۔ اس کا مطلب ہے کہ آپ کا سسٹم ہزاروں ٹرانزیکشنز فی سیکنڈ پر کارروائی کر سکتا ہے، ڈیٹا کو کھوئے بغیر مقامی ناکامیوں سے آسانی سے بازیافت کر سکتا ہے، اور ٹریفک کے اضافے کی بنیاد پر انفرادی اجزاء کو متحرک طور پر پیمانہ کر سکتا ہے۔",
+      "features": [
+        "پیغام کی قطار پر عمل درآمد",
+        "ایونٹ سورسنگ اور CQRS پیٹرن",
+        "تقسیم شدہ لین دین کے لیے ساگا پیٹرن",
+        "ڈیڈ لیٹر ہینڈلنگ اور دوبارہ کوشش کی منطق",
+        "ایونٹ اسکیما رجسٹری",
+        "بالکل ایک بار پروسیسنگ کی ضمانتیں۔"
+      ],
+      "benefits": [
+        "انتہائی اسکیل ایبلٹی اور تھرو پٹ",
+        "مائیکرو سروسز کے درمیان ڈھیلا کپلنگ",
+        "اعلی خرابی کی رواداری اور لچک",
+        "ریئل ٹائم ڈیٹا پروسیسنگ",
+        "ایونٹ سورسنگ کے ذریعے پرفیکٹ آڈٹ ٹریلز"
+      ],
+      "content": {
+        "process": [
+          { "title": "واقعہ طوفان", "description": "ڈومینز، واقعات، اور کاروباری عمل کا نقشہ بنانے کے لیے تعاونی ورکشاپ۔" },
+          { "title": "ٹاپولوجی ڈیزائن", "description": "آپ کی ٹریفک کے لیے درکار عنوانات، پارٹیشنز، اور میسج بروکرز کو ڈیزائن کرنا۔" },
+          { "title": "بروکر کا نفاذ", "description": "Kafka یا RabbitMQ کے لیے انتہائی دستیاب کلسٹرز کو ترتیب دینا اور ترتیب دینا۔" },
+          { "title": "سروس انٹیگریشن", "description": "آپ کی مائیکرو سروسز میں پروڈیوسروں اور صارفین کو لکھنا۔" },
+          { "title": "مانیٹرنگ اور آبزروایبلٹی", "description": "پیغام کے وقفے اور نظام کی صحت کے لیے ٹریسنگ اور الرٹ ترتیب دینا۔" }
+        ],
+        "technologies": [
+          "Apache Kafka",
+          "RabbitMQ",
+          "AWS SQS / SNS",
+          "EventStoreDB",
+          "Node.js",
+          "Go"
+        ],
+        "faq": [
+          { "question": "REST APIs اور ایونٹ سے چلنے والے فن تعمیر میں کیا فرق ہے؟", "answer": "REST APIs ہم وقت ساز ہیں۔ سروس A سروس B سے ڈیٹا مانگتی ہے اور اس وقت تک انتظار کرتی ہے (بلاکنگ) جب تک B جواب نہ دے۔ EDA میں، سروس A قطار میں ایک 'ایونٹ' کو فائر کرتی ہے اور فوراً آگے بڑھ جاتی ہے۔ سروس B اس واقعے کو کھا جاتی ہے جب بھی وہ تیار ہو۔ یہ ڈیکپلنگ مجموعی نظام کو زیادہ تیز اور زیادہ لچکدار بناتا ہے۔" },
+          { "question": "مجھے ایونٹ سے چلنے والے فن تعمیر کی طرف کب جانا چاہئے؟", "answer": "آپ کو EDA پر اس وقت غور کرنا چاہیے جب آپ کے پاس زیادہ حجم والے لین دین ہوں، آپ کو ریئل ٹائم ڈیٹا سٹریمنگ کی ضرورت ہو (جیسے لائیو ڈیش بورڈز یا فراڈ کا پتہ لگانا)، یا جب آپ کی مائیکرو سروسز مضبوطی سے جڑے ہوئے انحصار سے دوچار ہوں جو اسکیلنگ کو مشکل بناتے ہیں۔" }
+        ]
+      },
+      "metaTitle": "ایونٹ سے چلنے والی آرکیٹیکچر سروسز | کافکا اور ریبٹ ایم کیو",
+      "metaDescription": "ایونٹ ڈریون آرکیٹیکچر کے ساتھ اپنے سسٹم کو اسکیل کریں۔ ہم اپاچی کافکا، ریبٹ ایم کیو، اور اے ڈبلیو ایس کا استعمال کرتے ہوئے پیغام کی قطاریں، ایونٹ سورسنگ، اور CQRS کو نافذ کرتے ہیں۔"
+    },
+    "ar": {
+      "name": "البنية الموجهة بالأحداث (EDA)",
+      "shortDescription": "تنفيذ مصادر الأحداث (Event Sourcing) وقوائم انتظار الرسائل المعمارية التفاعلية.",
+      "fullDescription": "قم بتوسيع نطاق تطبيقاتك برشاقة باستخدام البنية الموجهة بالأحداث (EDA). في البيئات المعقدة وسريعة الحركة، يمكن أن تؤدي استدعاءات واجهة برمجة التطبيقات المتزامنة (Synchronous API) التقليدية إلى اختناقات هائلة وفشل متسلسل في النظام. نحن ننفذ أنظمة قوية تعتمد على الأحداث باستخدام أدوات مثل Apache Kafka و RabbitMQ. هذا النهج يفصل خدماتك المصغرة (microservices)، مما يسمح لها بالتواصل بشكل غير متزامن عبر الأحداث. هذا يعني أن نظامك يمكنه معالجة آلاف المعاملات في الثانية، والتعافي بسهولة من الأعطال المحلية دون فقدان البيانات، وتوسيع نطاق المكونات الفردية ديناميكيًا بناءً على زيادة حركة المرور.",
+      "features": [
+        "تنفيذ طوابير الرسائل (Message Queues)",
+        "مصادر الأحداث (Event Sourcing) ونمط CQRS",
+        "نمط Saga للمعاملات الموزعة",
+        "معالجة الرسائل الميتة (Dead Letter) ومنطق إعادة المحاولة",
+        "سجل مخطط الأحداث (Schema Registry)",
+        "ضمانات المعالجة لمرة واحدة بالضبط (Exactly-Once)"
+      ],
+      "benefits": [
+        "قابلية التوسع والإنتاجية القصوى",
+        "اقتران غير محكم بين الخدمات المصغرة",
+        "تسامح عالٍ مع الأخطاء والمرونة",
+        "معالجة البيانات في الوقت الفعلي",
+        "مسارات تدقيق مثالية عبر مصادر الأحداث"
+      ],
+      "content": {
+        "process": [
+          { "title": "عصف الأحداث (Event Storming)", "description": "ورشة عمل تعاونية لرسم خرائط النطاقات والأحداث وعمليات الأعمال." },
+          { "title": "تصميم الطوبولوجيا", "description": "تصميم الموضوعات (topics) والأقسام ووسطاء الرسائل المطلوبة لحركة المرور الخاصة بك." },
+          { "title": "تنفيذ الوسيط (Broker)", "description": "إعداد وتكوين مجموعات عالية التوفر لـ Kafka أو RabbitMQ." },
+          { "title": "تكامل الخدمة", "description": "كتابة المنتجين (producers) والمستهلكين (consumers) داخل خدماتك المصغرة." },
+          { "title": "المراقبة وقابلية الملاحظة", "description": "إعداد التتبع والتنبيه لتأخر الرسائل وصحة النظام." }
+        ],
+        "technologies": [
+          "Apache Kafka",
+          "RabbitMQ",
+          "AWS SQS / SNS",
+          "EventStoreDB",
+          "Node.js",
+          "Go"
+        ],
+        "faq": [
+          { "question": "ما الفرق بين REST APIs والبنية الموجهة بالأحداث؟", "answer": "واجهات REST متزامنة؛ تطلب الخدمة أ بيانات من الخدمة ب وتنتظر (تحظر) حتى ترد ب. في EDA، تطلق الخدمة أ 'حدثًا' في قائمة انتظار وتنتقل فورًا. تستهلك الخدمة ب هذا الحدث متى كانت جاهزة. هذا الفصل يجعل النظام ككل أسرع بكثير وأكثر مرونة." },
+          { "question": "متى يجب أن أنتقل إلى بنية موجهة بالأحداث؟", "answer": "يجب أن تفكر في EDA عندما يكون لديك حجم معاملات كبير، أو تحتاج إلى تدفق بيانات في الوقت الفعلي (مثل لوحات المعلومات الحية أو اكتشاف الاحتيال)، أو عندما تعاني خدماتك المصغرة من تبعيات مقترنة بإحكام تجعل التوسع صعبًا." }
+        ]
+      },
+      "metaTitle": "خدمات البنية الموجهة بالأحداث | Kafka & RabbitMQ",
+      "metaDescription": "وسّع نطاق أنظمتك باستخدام البنية الموجهة بالأحداث (EDA). نحن ننفذ طوابير الرسائل ومصادر الأحداث باستخدام Apache Kafka و RabbitMQ."
+    }
+  }
+}

@@ -1,0 +1,436 @@
+{
+  "flutter-development": {
+    "en": {
+      "name": "Flutter Development",
+      "shortDescription": "Create stunning cross-platform apps with Flutter—one codebase for iOS, Android, web, and desktop.",
+      "fullDescription": "Accelerate your time-to-market and reduce development costs with our expert Flutter Development services. Created by Google, Flutter allows us to build natively compiled, visually stunning applications for iOS, Android, Web, and Desktop—all from a single, unified codebase. This eliminates the need for separate Swift and Kotlin teams, ensuring feature parity across platforms. We specialize in building complex Flutter architectures using advanced state management solutions like Riverpod and BLoC, integrating seamlessly with Firebase or custom backends, and crafting beautiful, custom-animated UIs that run flawlessly at 60 FPS.",
+      "features": [
+        "True Cross-Platform Development (iOS, Android, Web, Desktop)",
+        "Custom Widget & UI Design",
+        "Advanced State Management (Riverpod, BLoC, GetX)",
+        "Deep Firebase & REST API Integration",
+        "Complex Animations & Transitions",
+        "Automated CI/CD Pipelines (Codemagic, Fastlane)"
+      ],
+      "benefits": [
+        "Significantly Reduced Development Time & Costs",
+        "Consistent UI/UX Across All Devices",
+        "Native-Like Performance & Speed",
+        "Easier Maintenance with a Single Codebase",
+        "Rapid Prototyping & Hot Reload"
+      ],
+      "content": {
+        "process": [
+          { "title": "Architecture & Prototyping", "description": "Defining the state management approach and building interactive UI prototypes." },
+          { "title": "Custom Widget Development", "description": "Creating reusable, pixel-perfect Flutter widgets tailored to your brand." },
+          { "title": "Core Development & API Integration", "description": "Writing clean Dart code and connecting to Firebase or your custom backend." },
+          { "title": "Performance Optimization", "description": "Ensuring smooth 60fps scrolling and minimizing app bundle size." },
+          { "title": "App Store Deployment", "description": "Handling the complex release processes for both Apple App Store and Google Play." }
+        ],
+        "technologies": [
+          "Flutter SDK",
+          "Dart",
+          "Firebase",
+          "Riverpod / BLoC",
+          "Hive / Isar (Local Storage)",
+          "Codemagic"
+        ],
+        "faq": [
+          { "question": "Does a Flutter app perform as well as a native iOS/Android app?", "answer": "Yes. Unlike web-view based frameworks (like Cordova), Flutter compiles directly to native ARM machine code, meaning there's no Javascript bridge slowing things down. The performance is virtually indistinguishable from apps built natively in Swift or Kotlin." },
+          { "question": "Can Flutter use device hardware like the camera or Bluetooth?", "answer": "Absolutely. Flutter has a massive ecosystem of plugins that provide deep access to native hardware features, and we can also write custom platform channels in Swift/Kotlin if you need something highly specific." }
+        ]
+      },
+      "metaTitle": "Flutter App Development Services | iOS & Android",
+      "metaDescription": "Build stunning cross-platform apps with Flutter. Get native performance on iOS and Android from a single codebase, reducing development time and cost."
+    },
+    "tr": {
+      "name": "Flutter Geliştirme",
+      "shortDescription": "Flutter ile çarpıcı çapraz platform uygulamaları oluşturun—iOS, Android, web ve masaüstü için tek bir kod tabanı.",
+      "fullDescription": "Uzman Flutter Geliştirme hizmetlerimizle pazara çıkış sürenizi hızlandırın ve geliştirme maliyetlerini azaltın. Google tarafından oluşturulan Flutter, iOS, Android, Web ve Masaüstü için tamamen yerel (native) olarak derlenen, görsel olarak çarpıcı uygulamaları tek ve birleşik bir kod tabanından oluşturmamıza olanak tanır. Bu, ayrı Swift ve Kotlin ekiplerine olan ihtiyacı ortadan kaldırarak platformlar arasında özellik eşitliği sağlar. Riverpod ve BLoC gibi gelişmiş durum yönetimi (state management) çözümlerini kullanarak karmaşık Flutter mimarileri oluşturma, Firebase veya özel arka uçlarla sorunsuz bir şekilde entegre olma ve 60 FPS'de kusursuz çalışan güzel, özel animasyonlu kullanıcı arayüzleri oluşturma konusunda uzmanız.",
+      "features": [
+        "Gerçek Çapraz Platform Geliştirme (iOS, Android, Web, Masaüstü)",
+        "Özel Widget ve Kullanıcı Arayüzü Tasarımı",
+        "Gelişmiş Durum Yönetimi (Riverpod, BLoC, GetX)",
+        "Derin Firebase ve REST API Entegrasyonu",
+        "Karmaşık Animasyonlar ve Geçişler",
+        "Otomatik CI/CD Hatları (Codemagic, Fastlane)"
+      ],
+      "benefits": [
+        "Önemli Ölçüde Azaltılmış Geliştirme Süresi ve Maliyetleri",
+        "Tüm Cihazlarda Tutarlı UI/UX",
+        "Yerel Uygulama Benzeri Performans ve Hız",
+        "Tek Bir Kod Tabanı ile Daha Kolay Bakım",
+        "Hızlı Prototipleme ve 'Hot Reload' (Anında Yeniden Yükleme)"
+      ],
+      "content": {
+        "process": [
+          { "title": "Mimari ve Prototipleme", "description": "Durum yönetimi yaklaşımını tanımlama ve etkileşimli kullanıcı arayüzü prototipleri oluşturma." },
+          { "title": "Özel Widget Geliştirme", "description": "Markanıza özel, yeniden kullanılabilir, piksel açısından mükemmel Flutter widget'ları oluşturma." },
+          { "title": "Temel Geliştirme ve API Entegrasyonu", "description": "Temiz Dart kodu yazma ve Firebase'e veya özel arka ucunuza bağlanma." },
+          { "title": "Performans Optimizasyonu", "description": "Saniyede 60 kare hızında sorunsuz kaydırma sağlama ve uygulama paketi boyutunu en aza indirme." },
+          { "title": "Uygulama Mağazası Dağıtımı", "description": "Hem Apple App Store hem de Google Play için karmaşık sürüm süreçlerini yönetme." }
+        ],
+        "technologies": [
+          "Flutter SDK",
+          "Dart",
+          "Firebase",
+          "Riverpod / BLoC",
+          "Hive / Isar (Yerel Depolama)",
+          "Codemagic"
+        ],
+        "faq": [
+          { "question": "Bir Flutter uygulaması, yerel bir iOS/Android uygulaması kadar iyi performans gösterir mi?", "answer": "Evet. Web görünümü tabanlı çerçevelerin (Cordova gibi) aksine, Flutter doğrudan yerel ARM makine koduna derlenir, yani işleri yavaşlatan bir Javascript köprüsü yoktur. Performans, yerel olarak Swift veya Kotlin'de oluşturulan uygulamalardan neredeyse ayırt edilemez." },
+          { "question": "Flutter, kamera veya Bluetooth gibi cihaz donanımlarını kullanabilir mi?", "answer": "Kesinlikle. Flutter, yerel donanım özelliklerine derin erişim sağlayan devasa bir eklenti ekosistemine sahiptir ve çok spesifik bir şeye ihtiyacınız olursa Swift/Kotlin'de özel platform kanalları da yazabiliriz." }
+        ]
+      },
+      "metaTitle": "Flutter Uygulama Geliştirme Hizmetleri | iOS ve Android",
+      "metaDescription": "Flutter ile çarpıcı çapraz platform uygulamaları oluşturun. Tek bir kod tabanından iOS ve Android'de yerel performans elde ederek maliyetleri düşürün."
+    },
+    "de": {
+      "name": "Flutter-Entwicklung",
+      "shortDescription": "Erstellen Sie atemberaubende plattformübergreifende Apps mit Flutter – eine Codebasis für iOS, Android, Web und Desktop.",
+      "fullDescription": "Beschleunigen Sie Ihre Markteinführungszeit und senken Sie die Entwicklungskosten mit unseren fachkundigen Flutter-Entwicklungsdiensten. Das von Google entwickelte Flutter ermöglicht es uns, nativ kompilierte, visuell atemberaubende Anwendungen für iOS, Android, Web und Desktop aus einer einzigen, einheitlichen Codebasis zu erstellen. Dies macht separate Swift- und Kotlin-Teams überflüssig und gewährleistet die Funktionsparität auf allen Plattformen. Wir sind darauf spezialisiert, komplexe Flutter-Architekturen mit fortschrittlichen State-Management-Lösungen wie Riverpod und BLoC aufzubauen, sie nahtlos in Firebase oder benutzerdefinierte Backends zu integrieren und schöne, benutzerdefinierte animierte UIs zu erstellen, die fehlerfrei mit 60 FPS laufen.",
+      "features": [
+        "Echte plattformübergreifende Entwicklung (iOS, Android, Web, Desktop)",
+        "Individuelles Widget- & UI-Design",
+        "Erweitertes State Management (Riverpod, BLoC, GetX)",
+        "Tiefe Firebase- & REST-API-Integration",
+        "Komplexe Animationen & Übergänge",
+        "Automatisierte CI/CD-Pipelines (Codemagic, Fastlane)"
+      ],
+      "benefits": [
+        "Erheblich reduzierte Entwicklungszeit & -kosten",
+        "Konsistente UI/UX auf allen Geräten",
+        "Native Leistung & Geschwindigkeit",
+        "Einfachere Wartung mit einer einzigen Codebasis",
+        "Schnelles Prototyping & Hot Reload"
+      ],
+      "content": {
+        "process": [
+          { "title": "Architektur & Prototyping", "description": "Definition des State-Management-Ansatzes und Erstellung interaktiver UI-Prototypen." },
+          { "title": "Individuelle Widget-Entwicklung", "description": "Erstellung wiederverwendbarer, pixelgenauer Flutter-Widgets, die auf Ihre Marke zugeschnitten sind." },
+          { "title": "Kernentwicklung & API-Integration", "description": "Schreiben von sauberem Dart-Code und Anbindung an Firebase oder Ihr benutzerdefiniertes Backend." },
+          { "title": "Leistungsoptimierung", "description": "Sicherstellung von reibungslosem 60fps-Scrolling und Minimierung der App-Bundle-Größe." },
+          { "title": "App-Store-Bereitstellung", "description": "Abwicklung der komplexen Freigabeprozesse für den Apple App Store und Google Play." }
+        ],
+        "technologies": [
+          "Flutter SDK",
+          "Dart",
+          "Firebase",
+          "Riverpod / BLoC",
+          "Hive / Isar (Lokaler Speicher)",
+          "Codemagic"
+        ],
+        "faq": [
+          { "question": "Ist eine Flutter-App genauso leistungsstark wie eine native iOS/Android-App?", "answer": "Ja. Im Gegensatz zu Web-View-basierten Frameworks kompiliert Flutter direkt in nativen ARM-Maschinencode, d.h. es gibt keine Javascript-Brücke, die alles verlangsamt. Die Leistung ist von Apps, die nativ in Swift oder Kotlin erstellt wurden, praktisch nicht zu unterscheiden." },
+          { "question": "Kann Flutter Gerätehardware wie Kamera oder Bluetooth verwenden?", "answer": "Absolut. Flutter verfügt über ein riesiges Ökosystem an Plugins, die tiefen Zugriff auf native Hardwarefunktionen bieten." }
+        ]
+      },
+      "metaTitle": "Flutter App-Entwicklung | Plattformübergreifend für iOS & Android",
+      "metaDescription": "Erstellen Sie atemberaubende plattformübergreifende Apps mit Flutter. Holen Sie sich native Leistung auf iOS und Android aus einer einzigen Codebasis."
+    },
+    "ur": {
+      "name": "پھڑپھڑانے کی ترقی",
+      "shortDescription": "Flutter کے ساتھ شاندار کراس پلیٹ فارم ایپس بنائیں — iOS، Android، ویب، اور ڈیسک ٹاپ کے لیے ایک کوڈ بیس۔",
+      "fullDescription": "اپنے وقت سے لے کر مارکیٹ کو تیز کریں اور ہماری ماہر فلٹر ڈیولپمنٹ سروسز کے ساتھ ترقیاتی اخراجات کو کم کریں۔ گوگل کی طرف سے بنایا گیا، فلٹر ہمیں iOS، Android، ویب، اور ڈیسک ٹاپ کے لیے مقامی طور پر مرتب کردہ، بصری طور پر شاندار ایپلیکیشنز بنانے کی اجازت دیتا ہے—یہ سب ایک ہی متحد کوڈ بیس سے ہے۔ یہ الگ الگ Swift اور Kotlin ٹیموں کی ضرورت کو ختم کرتا ہے، پلیٹ فارمز میں فیچر کی برابری کو یقینی بناتا ہے۔ ہم Riverpod اور BLoC جیسے جدید ترین ریاستی انتظامی حل کا استعمال کرتے ہوئے، Firebase یا حسب ضرورت پسدید کے ساتھ بغیر کسی رکاوٹ کے ضم کرنے، اور 60 FPS پر بے عیب طریقے سے چلنے والے خوبصورت، حسب ضرورت متحرک UI کو تیار کرنے کا استعمال کرتے ہوئے پیچیدہ فلٹر فن تعمیرات بنانے میں مہارت رکھتے ہیں۔",
+      "features": [
+        "سچی کراس پلیٹ فارم ڈیولپمنٹ (iOS، Android، ویب، ڈیسک ٹاپ)",
+        "اپنی مرضی کے ویجیٹ اور UI ڈیزائن",
+        "اعلی درجے کی ریاستی انتظامیہ (Riverpod، BLoC، GetX)",
+        "ڈیپ فائر بیس اور ریسٹ API انٹیگریشن",
+        "پیچیدہ متحرک تصاویر اور تبدیلیاں",
+        "خودکار CI/CD پائپ لائنز (کوڈ میجک، فاسٹ لین)"
+      ],
+      "benefits": [
+        "ترقی کے وقت اور اخراجات میں نمایاں کمی",
+        "تمام آلات پر مستقل UI/UX",
+        "مقامی جیسی کارکردگی اور رفتار",
+        "ایک واحد کوڈ بیس کے ساتھ آسان دیکھ بھال",
+        "تیز پروٹو ٹائپنگ اور ہاٹ ریلوڈ"
+      ],
+      "content": {
+        "process": [
+          { "title": "فن تعمیر اور پروٹو ٹائپنگ", "description": "ریاستی نظم و نسق کے نقطہ نظر کی تعریف کرنا اور انٹرایکٹو UI پروٹو ٹائپس بنانا۔" },
+          { "title": "کسٹم ویجیٹ ڈیولپمنٹ", "description": "آپ کے برانڈ کے مطابق دوبارہ قابل استعمال، پکسل پرفیکٹ فلٹر ویجٹ بنانا۔" },
+          { "title": "بنیادی ترقی اور API انٹیگریشن", "description": "صاف ڈارٹ کوڈ لکھنا اور فائر بیس یا اپنے کسٹم بیک اینڈ سے جڑنا۔" },
+          { "title": "کارکردگی کی اصلاح", "description": "ہموار 60fps سکرولنگ کو یقینی بنانا اور ایپ بنڈل کے سائز کو کم کرنا۔" },
+          { "title": "ایپ اسٹور کی تعیناتی", "description": "ایپل ایپ اسٹور اور گوگل پلے دونوں کے لیے ریلیز کے پیچیدہ عمل کو سنبھالنا۔" }
+        ],
+        "technologies": [
+          "Flutter SDK",
+          "Dart",
+          "Firebase",
+          "Riverpod / BLoC",
+          "Hive / Isar (Local Storage)",
+          "Codemagic"
+        ],
+        "faq": [
+          { "question": "کیا فلٹر ایپ ایک مقامی iOS/Android ایپ کی طرح کارکردگی کا مظاہرہ کرتی ہے؟", "answer": "ہاں۔ ویب ویو پر مبنی فریم ورکس (جیسے کورڈووا) کے برعکس، فلٹر مقامی اے آر ایم مشین کوڈ پر براہ راست مرتب کرتا ہے، جس کا مطلب ہے کہ کوئی جاوا اسکرپٹ پل چیزوں کو سست نہیں کر رہا ہے۔ کارکردگی کو Swift یا Kotlin میں مقامی طور پر بنائی گئی ایپس سے عملی طور پر الگ نہیں کیا جا سکتا۔" },
+          { "question": "کیا فلٹر ڈیوائس کے ہارڈویئر جیسے کیمرہ یا بلوٹوتھ کو استعمال کر سکتا ہے؟", "answer": "بالکل۔ فلٹر میں پلگ انز کا ایک وسیع ماحولیاتی نظام ہے جو مقامی ہارڈ ویئر کی خصوصیات تک گہری رسائی فراہم کرتا ہے، اور اگر آپ کو کسی انتہائی مخصوص چیز کی ضرورت ہو تو ہم Swift/Kotlin میں حسب ضرورت پلیٹ فارم چینلز بھی لکھ سکتے ہیں۔" }
+        ]
+      },
+      "metaTitle": "فلٹر ایپ ڈویلپمنٹ سروسز | آئی او ایس اور اینڈرائیڈ",
+      "metaDescription": "فلٹر کے ساتھ شاندار کراس پلیٹ فارم ایپس بنائیں۔ ترقی کے وقت اور لاگت کو کم کرتے ہوئے، ایک ہی کوڈ بیس سے iOS اور Android پر مقامی کارکردگی حاصل کریں۔"
+    },
+    "ar": {
+      "name": "تطوير تطبيقات Flutter",
+      "shortDescription": "قم بإنشاء تطبيقات مذهلة عبر الأنظمة الأساسية باستخدام فلاتر - قاعدة برمجية واحدة لأنظمة iOS و Android والويب وسطح المكتب.",
+      "fullDescription": "قم بتسريع وقت الوصول إلى السوق وتقليل تكاليف التطوير من خلال خدمات تطوير Flutter المتخصصة لدينا. تم إنشاء Flutter بواسطة Google، ويسمح لنا ببناء تطبيقات مجمعة محليًا (natively compiled) ومذهلة بصريًا لأنظمة iOS و Android و Web و Desktop — كل ذلك من قاعدة تعليمات برمجية واحدة وموحدة. هذا يلغي الحاجة إلى فرق Swift و Kotlin منفصلة، مما يضمن تكافؤ الميزات عبر الأنظمة الأساسية. نحن متخصصون في بناء بنيات Flutter معقدة باستخدام حلول إدارة الحالة المتقدمة مثل Riverpod و BLoC، والتكامل بسلاسة مع Firebase أو واجهات خلفية مخصصة، وصياغة واجهات مستخدم متحركة مخصصة وجميلة تعمل بشكل لا تشوبه شائبة بمعدل 60 إطارًا في الثانية (FPS).",
+      "features": [
+        "تطوير حقيقي عبر الأنظمة (iOS، Android، الويب، سطح المكتب)",
+        "تصميم واجهة المستخدم وعناصر التحكم (Widgets) المخصصة",
+        "إدارة الحالة المتقدمة (Riverpod ، BLoC ، GetX)",
+        "تكامل عميق مع Firebase و REST API",
+        "رسوم متحركة وانتقالات معقدة",
+        "خطوط CI/CD المؤتمتة (Codemagic ، Fastlane)"
+      ],
+      "benefits": [
+        "انخفاض كبير في وقت وتكاليف التطوير",
+        "تجربة مستخدم/واجهة مستخدم (UI/UX) متسقة عبر جميع الأجهزة",
+        "أداء وسرعة شبيهة بالتطبيقات الأصلية (Native)",
+        "صيانة أسهل باستخدام قاعدة بيانات واحدة",
+        "نماذج أولية سريعة وتحميل سريع (Hot Reload)"
+      ],
+      "content": {
+        "process": [
+          { "title": "البنية والنماذج الأولية", "description": "تحديد نهج إدارة الحالة وبناء نماذج أولية تفاعلية لواجهة المستخدم." },
+          { "title": "تطوير واجهة مستخدم (Widget) مخصصة", "description": "إنشاء مكونات Flutter قابلة لإعادة الاستخدام ومثالية بالبكسل ومصممة خصيصًا لعلامتك التجارية." },
+          { "title": "التطوير الأساسي وتكامل API", "description": "كتابة كود Dart نظيف والاتصال بـ Firebase أو واجهتك الخلفية المخصصة." },
+          { "title": "تحسين الأداء", "description": "ضمان التمرير السلس بمعدل 60 إطارًا في الثانية وتقليل حجم حزمة التطبيق." },
+          { "title": "النشر في متجر التطبيقات", "description": "التعامل مع عمليات الإصدار المعقدة لكل من Apple App Store و Google Play." }
+        ],
+        "technologies": [
+          "Flutter SDK",
+          "Dart",
+          "Firebase",
+          "Riverpod / BLoC",
+          "Hive / Isar (التخزين المحلي)",
+          "Codemagic"
+        ],
+        "faq": [
+          { "question": "هل يعمل تطبيق Flutter بنفس كفاءة تطبيق iOS / Android الأصلي؟", "answer": "نعم. على عكس أطر العمل القائمة على عرض الويب (مثل Cordova)، يقوم Flutter بالتجميع مباشرة إلى رمز آلة ARM الأصلي، مما يعني عدم وجود جسر Javascript يبطئ الأمور. لا يمكن تمييز الأداء فعليًا عن التطبيقات المصممة محليًا باستخدام Swift أو Kotlin." },
+          { "question": "هل يمكن لـ Flutter استخدام أجهزة الجهاز مثل الكاميرا أو البلوتوث؟", "answer": "بالتأكيد. يمتلك Flutter نظامًا بيئيًا هائلاً من المكونات الإضافية التي توفر وصولاً عميقًا إلى ميزات الأجهزة الأصلية، ويمكننا أيضًا كتابة قنوات منصات مخصصة في Swift / Kotlin إذا كنت بحاجة إلى شيء محدد للغاية." }
+        ]
+      },
+      "metaTitle": "خدمات تطوير تطبيقات فلاتر (Flutter) | iOS و Android",
+      "metaDescription": "قم ببناء تطبيقات مذهلة عبر الأنظمة الأساسية باستخدام فلاتر. احصل على أداء أصلي على iOS و Android من كود برمجي واحد، مما يقلل الوقت والتكلفة."
+    }
+  },
+  "graphql-development": {
+    "en": {
+      "name": "GraphQL Development",
+      "shortDescription": "Build flexible, efficient GraphQL APIs that let clients query exactly the data they need.",
+      "fullDescription": "Solve the problems of over-fetching and under-fetching with our advanced GraphQL API Development services. Traditional REST APIs often force front-end applications to make multiple requests across different endpoints just to render a single page, resulting in sluggish performance. We design robust GraphQL architectures that provide a single, strongly-typed endpoint. This empowers your React, Vue, or mobile clients to request precisely the data they need in a single query. We handle the complexities of schema design, efficient resolving (solving the N+1 problem with DataLoaders), real-time subscriptions, and scalable API federation.",
+      "features": [
+        "GraphQL Schema Design & Type Modeling",
+        "Efficient Query & Mutation Resolvers",
+        "Real-Time Data with GraphQL Subscriptions",
+        "N+1 Problem Prevention using DataLoader",
+        "Role-Based Authentication & Authorization",
+        "Apollo Federation & Schema Stitching"
+      ],
+      "benefits": [
+        "Massively Reduced Network Payload",
+        "Faster Front-End Rendering",
+        "Self-Documenting API",
+        "Rapid Client-Side Development",
+        "Simplified Microservice Aggregation"
+      ],
+      "content": {
+        "process": [
+          { "title": "Schema Definition", "description": "Collaboratively designing the GraphQL Types, Queries, and Mutations." },
+          { "title": "Backend Setup", "description": "Configuring Apollo Server with Node.js, NestJS, or Python." },
+          { "title": "Resolver Implementation", "description": "Writing the logic to fetch data from your databases or existing REST microservices." },
+          { "title": "Optimization", "description": "Implementing DataLoaders for batching and Redis for query caching." },
+          { "title": "Client Integration", "description": "Assisting your frontend team with setting up Apollo Client or Relay." }
+        ],
+        "technologies": [
+          "GraphQL",
+          "Apollo Server / Client",
+          "TypeGraphQL",
+          "Prisma ORM",
+          "DataLoader",
+          "Redis"
+        ],
+        "faq": [
+          { "question": "Why use GraphQL instead of a standard REST API?", "answer": "In REST, endpoints return fixed data structures. If your mobile app only needs a user's name, but the /users endpoint returns 50 fields including their entire purchase history, you are wasting bandwidth (over-fetching). GraphQL solves this by letting the client dictate exactly what fields it wants returned." },
+          { "question": "Can GraphQL wrap our existing REST APIs?", "answer": "Yes! This is a very common approach. We can build a GraphQL server that acts as an API Gateway, fetching data from your underlying, legacy REST services and presenting it to the frontend as a clean, unified GraphQL graph." }
+        ]
+      },
+      "metaTitle": "GraphQL API Development Services | Apollo & Node.js",
+      "metaDescription": "Build efficient, strongly-typed GraphQL APIs. We solve over-fetching and empower frontends with Apollo Server, DataLoader, and Prisma integrations."
+    },
+    "tr": {
+      "name": "GraphQL Geliştirme",
+      "shortDescription": "İstemcilerin tam olarak ihtiyaç duydukları verileri sorgulamalarına olanak tanıyan esnek, verimli GraphQL API'leri oluşturun.",
+      "fullDescription": "Gelişmiş GraphQL API Geliştirme hizmetlerimizle gereğinden fazla veya az veri çekme (over-fetching/under-fetching) sorunlarını çözün. Geleneksel REST API'leri, genellikle ön uç uygulamalarını yalnızca tek bir sayfayı oluşturmak için farklı uç noktalarda (endpoints) birden fazla istekte bulunmaya zorlar ve bu da yavaş performansa neden olur. Tek ve güçlü bir şekilde yazılmış (strongly-typed) bir uç nokta sağlayan sağlam GraphQL mimarileri tasarlıyoruz. Bu, React, Vue veya mobil istemcilerinizin tam olarak ihtiyaç duydukları verileri tek bir sorguda talep etmelerini sağlar. Şema tasarımı, verimli çözümleme (DataLoaders ile N+1 sorununu çözme), gerçek zamanlı abonelikler ve ölçeklenebilir API federasyonu (birleştirmesi) karmaşıklıklarını biz hallediyoruz.",
+      "features": [
+        "GraphQL Şema Tasarımı ve Tip Modelleme",
+        "Verimli Sorgu (Query) ve Mutasyon (Mutation) Çözümleyicileri",
+        "GraphQL Abonelikleri (Subscriptions) ile Gerçek Zamanlı Veri",
+        "DataLoader kullanarak N+1 Sorununu Önleme",
+        "Role Dayalı Kimlik Doğrulama ve Yetkilendirme",
+        "Apollo Federasyonu ve Şema Birleştirme"
+      ],
+      "benefits": [
+        "Büyük Ölçüde Azaltılmış Ağ Yükü",
+        "Daha Hızlı Ön Uç İşleme",
+        "Kendi Kendini Belgeleyen API",
+        "Hızlı İstemci Tarafı Geliştirme",
+        "Basitleştirilmiş Mikro Hizmet Toplama"
+      ],
+      "content": {
+        "process": [
+          { "title": "Şema Tanımlaması", "description": "GraphQL Tiplerini, Sorgularını ve Mutasyonlarını işbirliği içinde tasarlama." },
+          { "title": "Arka Uç Kurulumu", "description": "Apollo Server'ı Node.js, NestJS veya Python ile yapılandırma." },
+          { "title": "Çözümleyici (Resolver) Uygulaması", "description": "Veritabanlarınızdan veya mevcut REST mikro hizmetlerinizden veri getirme mantığını yazma." },
+          { "title": "Optimizasyon", "description": "Toplu işlem için DataLoader'ları ve sorgu önbelleğe alma için Redis'i uygulama." },
+          { "title": "İstemci Entegrasyonu", "description": "Ön uç ekibinize Apollo Client veya Relay kurulumunda yardımcı olma." }
+        ],
+        "technologies": [
+          "GraphQL",
+          "Apollo Server / Client",
+          "TypeGraphQL",
+          "Prisma ORM",
+          "DataLoader",
+          "Redis"
+        ],
+        "faq": [
+          { "question": "Neden standart bir REST API yerine GraphQL kullanmalıyım?", "answer": "REST'te uç noktalar sabit veri yapıları döndürür. Mobil uygulamanızın yalnızca bir kullanıcının adına ihtiyacı varsa, ancak /users uç noktası tüm satın alma geçmişi dahil olmak üzere 50 alan döndürüyorsa, bant genişliğini boşa harcıyorsunuz (aşırı getirme - over-fetching). GraphQL, istemcinin tam olarak hangi alanların döndürülmesini istediğini belirlemesine izin vererek bunu çözer." },
+          { "question": "GraphQL mevcut REST API'lerimizi sarabilir (wrap edebilir) mi?", "answer": "Evet! Bu çok yaygın bir yaklaşımdır. API Ağ Geçidi (API Gateway) görevi gören, altta yatan eski REST hizmetlerinizden veri alan ve bunları ön uca temiz, birleşik bir GraphQL grafiği olarak sunan bir GraphQL sunucusu oluşturabiliriz." }
+        ]
+      },
+      "metaTitle": "GraphQL API Geliştirme Hizmetleri | Apollo ve Node.js",
+      "metaDescription": "Verimli, güçlü tiplere sahip GraphQL API'leri oluşturun. Apollo Server, DataLoader ve Prisma entegrasyonlarıyla aşırı veri getirme sorununu çözüyoruz."
+    },
+    "de": {
+      "name": "GraphQL-Entwicklung",
+      "shortDescription": "Erstellen Sie flexible, effiziente GraphQL-APIs, mit denen Clients genau die benötigten Daten abfragen können.",
+      "fullDescription": "Lösen Sie die Probleme des Over-Fetching und Under-Fetching mit unseren fortschrittlichen GraphQL-API-Entwicklungsdiensten. Herkömmliche REST-APIs zwingen Front-End-Anwendungen oft dazu, mehrere Anfragen an verschiedene Endpunkte zu stellen, nur um eine einzige Seite zu rendern, was zu einer trägen Leistung führt. Wir entwerfen robuste GraphQL-Architekturen, die einen einzigen, stark typisierten Endpunkt bieten. Dadurch können Ihre React-, Vue- oder mobilen Clients in einer einzigen Abfrage genau die Daten anfordern, die sie benötigen. Wir kümmern uns um die Komplexität von Schema-Design, effizientem Resolving (Lösung des N+1-Problems mit DataLoaders), Echtzeit-Abonnements (Subscriptions) und skalierbarer API-Federation.",
+      "features": [
+        "GraphQL-Schema-Design & Typenmodellierung",
+        "Effiziente Query- & Mutation-Resolver",
+        "Echtzeitdaten mit GraphQL-Subscriptions",
+        "Verhinderung des N+1-Problems mit DataLoader",
+        "Rollenbasierte Authentifizierung & Autorisierung",
+        "Apollo Federation & Schema Stitching"
+      ],
+      "benefits": [
+        "Massiv reduzierte Netzwerk-Payload",
+        "Schnelleres Front-End-Rendering",
+        "Selbstdokumentierende API",
+        "Schnelle clientseitige Entwicklung",
+        "Vereinfachte Aggregation von Microservices"
+      ],
+      "content": {
+        "process": [
+          { "title": "Schema-Definition", "description": "Gemeinsame Gestaltung der GraphQL-Typen, -Queries und -Mutationen." },
+          { "title": "Backend-Setup", "description": "Konfiguration des Apollo Servers mit Node.js, NestJS oder Python." },
+          { "title": "Resolver-Implementierung", "description": "Schreiben der Logik zum Abrufen von Daten aus Ihren Datenbanken oder bestehenden REST-Microservices." },
+          { "title": "Optimierung", "description": "Implementierung von DataLoaders für Batching und Redis für Query-Caching." },
+          { "title": "Client-Integration", "description": "Unterstützung Ihres Frontend-Teams bei der Einrichtung von Apollo Client oder Relay." }
+        ],
+        "technologies": [
+          "GraphQL",
+          "Apollo Server / Client",
+          "TypeGraphQL",
+          "Prisma ORM",
+          "DataLoader",
+          "Redis"
+        ],
+        "faq": [
+          { "question": "Warum GraphQL anstelle einer Standard-REST-API verwenden?", "answer": "In REST geben Endpunkte feste Datenstrukturen zurück. Wenn Ihre mobile App nur den Namen eines Benutzers benötigt, der Endpunkt /users jedoch 50 Felder einschließlich der gesamten Kaufhistorie zurückgibt, verschwenden Sie Bandbreite (Over-Fetching). GraphQL löst dies, indem der Client genau vorschreibt, welche Felder er zurückgegeben haben möchte." },
+          { "question": "Kann GraphQL unsere bestehenden REST-APIs umhüllen (wrappen)?", "answer": "Ja! Dies ist ein sehr verbreiteter Ansatz. Wir können einen GraphQL-Server aufbauen, der als API-Gateway fungiert, Daten von Ihren zugrunde liegenden Legacy-REST-Diensten abruft und sie dem Frontend als sauberen, einheitlichen GraphQL-Graphen präsentiert." }
+        ]
+      },
+      "metaTitle": "GraphQL-API-Entwicklungsdienste | Apollo & Node.js",
+      "metaDescription": "Erstellen Sie effiziente GraphQL-APIs. Wir lösen das Over-Fetching-Problem und stärken Frontends mit Apollo Server, DataLoader und Prisma."
+    },
+    "ur": {
+      "name": "گراف کیو ایل ڈیولپمنٹ",
+      "shortDescription": "لچکدار، موثر GraphQL APIs بنائیں جو کلائنٹس کو بالکل اسی ڈیٹا سے استفسار کرنے دیتے ہیں جس کی انہیں ضرورت ہے۔",
+      "fullDescription": "ہماری جدید GraphQL API ڈیولپمنٹ سروسز کے ساتھ اوور فیچنگ اور انڈر فیچنگ کے مسائل حل کریں۔ روایتی REST APIs اکثر فرنٹ اینڈ ایپلی کیشنز کو مختلف اینڈ پوائنٹس پر متعدد درخواستیں دینے پر مجبور کرتے ہیں تاکہ صرف ایک صفحہ پیش کیا جا سکے، جس کے نتیجے میں کارکردگی سست پڑ جاتی ہے۔ ہم مضبوط GraphQL فن تعمیر کو ڈیزائن کرتے ہیں جو ایک واحد، مضبوطی سے ٹائپ کردہ اختتامی نقطہ فراہم کرتے ہیں۔ یہ آپ کے React، Vue، یا موبائل کلائنٹس کو ایک ہی سوال میں بالکل اسی ڈیٹا کی درخواست کرنے کا اختیار دیتا ہے جس کی انہیں ضرورت ہے۔ ہم اسکیما ڈیزائن کی پیچیدگیوں، موثر حل (ڈیٹا لوڈرز کے ساتھ N+1 کا مسئلہ حل کرنا)، ریئل ٹائم سبسکرپشنز، اور توسیع پذیر API فیڈریشن کو ہینڈل کرتے ہیں۔",
+      "features": [
+        "گراف کیو ایل اسکیما ڈیزائن اور ٹائپ ماڈلنگ",
+        "مؤثر استفسار اور اتپریورتن حل کرنے والے",
+        "گراف کیو ایل سبسکرپشنز کے ساتھ ریئل ٹائم ڈیٹا",
+        "ڈیٹا لوڈر کا استعمال کرتے ہوئے N+1 مسئلہ سے بچاؤ",
+        "کردار پر مبنی توثیق اور اجازت",
+        "اپولو فیڈریشن اور سکیما سلائی"
+      ],
+      "benefits": [
+        "بڑے پیمانے پر نیٹ ورک پے لوڈ کم ہوا۔",
+        "تیز فرنٹ اینڈ رینڈرنگ",
+        "خود دستاویزی API",
+        "تیز کلائنٹ سائیڈ ڈویلپمنٹ",
+        "آسان مائیکرو سروس ایگریگیشن"
+      ],
+      "content": {
+        "process": [
+          { "title": "سکیما کی تعریف", "description": "تعاون کے ساتھ GraphQL اقسام، سوالات، اور اتپریورتن کو ڈیزائن کرنا۔" },
+          { "title": "بیک اینڈ سیٹ اپ", "description": "Node.js، NestJS، یا Python کے ساتھ Apollo Server کو کنفیگر کرنا۔" },
+          { "title": "حل کرنے والے کا نفاذ", "description": "آپ کے ڈیٹا بیس یا موجودہ REST مائیکرو سروسز سے ڈیٹا لانے کے لیے منطق لکھنا۔" },
+          { "title": "اصلاح", "description": "بیچنگ کے لیے ڈیٹا لوڈرز اور استفسار کیشنگ کے لیے ریڈیس کو نافذ کرنا۔" },
+          { "title": "کلائنٹ انٹیگریشن", "description": "اپولو کلائنٹ یا ریلے ترتیب دینے میں آپ کی فرنٹ اینڈ ٹیم کی مدد کرنا۔" }
+        ],
+        "technologies": [
+          "GraphQL",
+          "Apollo Server / Client",
+          "TypeGraphQL",
+          "Prisma ORM",
+          "DataLoader",
+          "Redis"
+        ],
+        "faq": [
+          { "question": "معیاری REST API کی بجائے GraphQL کیوں استعمال کریں؟", "answer": "REST میں، اینڈ پوائنٹ مقررہ ڈیٹا ڈھانچے کو لوٹاتے ہیں۔ اگر آپ کی موبائل ایپ کو صرف صارف کے نام کی ضرورت ہے، لیکن /users اینڈ پوائنٹ 50 فیلڈز واپس کرتا ہے جس میں ان کی پوری خریداری کی تاریخ شامل ہے، تو آپ بینڈوتھ ضائع کر رہے ہیں (زیادہ بازیافت)۔ کلائنٹ کو قطعی طور پر یہ حکم دینے دے کر GraphQL اس کو حل کرتا ہے کہ وہ کن فیلڈز کو واپس کرنا چاہتا ہے۔" },
+          { "question": "کیا GraphQL ہمارے موجودہ REST APIs کو لپیٹ سکتا ہے؟", "answer": "جی ہاں! یہ ایک بہت عام نقطہ نظر ہے۔ ہم ایک GraphQL سرور بنا سکتے ہیں جو API گیٹ وے کے طور پر کام کرتا ہے، آپ کی بنیادی، میراثی REST سروسز سے ڈیٹا حاصل کرتا ہے اور اسے ایک صاف، متحد GraphQL گراف کے طور پر فرنٹ اینڈ پر پیش کرتا ہے۔" }
+        ]
+      },
+      "metaTitle": "گراف کیو ایل API ڈیولپمنٹ سروسز | اپالو اور Node.js",
+      "metaDescription": "کارگر، مضبوط ٹائپ والے GraphQL APIs بنائیں۔ ہم اپولو سرور، ڈیٹا لوڈر، اور پرزما انضمام کے ساتھ زیادہ بازیافت کرنے اور فرنٹ اینڈ کو بااختیار بنانے کا حل حل کرتے ہیں۔"
+    },
+    "ar": {
+      "name": "تطوير GraphQL",
+      "shortDescription": "بناء واجهات برمجة تطبيقات GraphQL مرنة وفعالة تتيح للعملاء الاستعلام عن البيانات التي يحتاجونها بالضبط.",
+      "fullDescription": "حل مشاكل الجلب الزائد (over-fetching) والجلب الناقص (under-fetching) للبيانات من خلال خدمات تطوير GraphQL API المتقدمة لدينا. غالبًا ما تجبر واجهات برمجة تطبيقات REST التقليدية التطبيقات الأمامية على تقديم طلبات متعددة عبر نقاط نهاية (endpoints) مختلفة لمجرد عرض صفحة واحدة، مما يؤدي إلى تباطؤ الأداء. نحن نصمم بنيات GraphQL قوية توفر نقطة نهاية واحدة ومكتوبة بقوة. هذا يمكن عملاء React أو Vue أو الهاتف المحمول من طلب البيانات التي يحتاجونها بدقة في استعلام واحد. نحن نتعامل مع تعقيدات تصميم المخطط (Schema)، والحلول الفعالة (حل مشكلة N+1 مع DataLoaders)، والاشتراكات في الوقت الفعلي (subscriptions)، واتحاد واجهة برمجة التطبيقات (API federation) القابل للتطوير.",
+      "features": [
+        "تصميم مخطط GraphQL ونمذجة النوع",
+        "استعلام (Query) و Resolver طفرات (Mutations) فعالة",
+        "بيانات في الوقت الفعلي مع اشتراكات GraphQL",
+        "منع مشكلة N+1 باستخدام DataLoader",
+        "المصادقة والتفويض بناءً على الأدوار",
+        "اتحاد أبولو (Apollo Federation) وخياطة المخطط"
+      ],
+      "benefits": [
+        "تقليل حمولة الشبكة بشكل هائل",
+        "أداء أسرع للواجهة الأمامية",
+        "واجهة برمجة تطبيقات توثق نفسها بنفسها (Self-Documenting API)",
+        "تطوير سريع من جانب العميل",
+        "تجميع مبسط للخدمات المصغرة (Microservices)"
+      ],
+      "content": {
+        "process": [
+          { "title": "تعريف المخطط (Schema)", "description": "التصميم التعاوني لأنواع GraphQL واستعلاماتها (Queries) وطفراتها (Mutations)." },
+          { "title": "إعداد الواجهة الخلفية", "description": "تكوين خادم أبولو (Apollo Server) باستخدام Node.js أو NestJS أو Python." },
+          { "title": "تنفيذ الـ Resolver", "description": "كتابة المنطق لجلب البيانات من قواعد بياناتك أو خدمات REST المصغرة الحالية." },
+          { "title": "التحسين", "description": "تنفيذ DataLoaders للمعالجة المجمعة و Redis للتخزين المؤقت للاستعلامات." },
+          { "title": "تكامل العميل", "description": "مساعدة فريق الواجهة الأمامية في إعداد Apollo Client أو Relay." }
+        ],
+        "technologies": [
+          "GraphQL",
+          "Apollo Server / Client",
+          "TypeGraphQL",
+          "Prisma ORM",
+          "DataLoader",
+          "Redis"
+        ],
+        "faq": [
+          { "question": "لماذا أستخدم GraphQL بدلاً من REST API القياسي؟", "answer": "في REST، تُرجع نقاط النهاية هياكل بيانات ثابتة. إذا كان تطبيق الهاتف المحمول الخاص بك يحتاج فقط إلى اسم المستخدم، ولكن نقطة النهاية /users تُرجع 50 حقلاً بما في ذلك سجل الشراء بالكامل، فأنت تضيع عرض النطاق الترددي (الجلب الزائد). يحل GraphQL هذه المشكلة من خلال السماح للعميل بإملاء الحقول التي يريد إرجاعها بالضبط." },
+          { "question": "هل يمكن لـ GraphQL تغليف (Wrap) واجهات REST APIs الحالية لدينا؟", "answer": "نعم! هذا نهج شائع جدًا. يمكننا بناء خادم GraphQL يعمل كبوابة واجهة برمجة تطبيقات (API Gateway)، حيث يجلب البيانات من خدمات REST القديمة والأساسية ويعرضها للواجهة الأمامية كرسم بياني GraphQL موحد ونظيف." }
+        ]
+      },
+      "metaTitle": "خدمات تطوير GraphQL API | خادم Apollo و Node.js",
+      "metaDescription": "قم ببناء واجهات GraphQL API فعالة ومكتوبة بقوة. نحن نحل مشكلة جلب البيانات الزائد وندعم الواجهات الأمامية بتكامل Apollo Server و DataLoader و Prisma."
+    }
+  }
+}

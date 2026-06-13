@@ -1,0 +1,441 @@
+{
+  "b2b-ecommerce": {
+    "en": {
+      "name": "B2B E-Commerce",
+      "shortDescription": "Build powerful B2B e-commerce platforms with complex pricing and ordering.",
+      "fullDescription": "Transform your wholesale operations with a robust B2B E-Commerce platform. Unlike standard retail sites, B2B portals require specialized functionality to handle corporate purchasing. We build scalable platforms that support customer-specific pricing catalogs, bulk ordering interfaces, customized quote management, and complex approval workflows. By seamlessly integrating with your existing ERP and CRM systems, we create a unified digital ecosystem that streamlines operations, reduces manual entry, and provides your business clients with a seamless, modern purchasing experience.",
+      "features": [
+        "Customer-Specific Pricing",
+        "Bulk Ordering",
+        "Quote Management",
+        "Approval Workflows",
+        "ERP Integration",
+        "Credit Terms & Invoicing"
+      ],
+      "benefits": [
+        "Streamlined Order Processing",
+        "Reduced Operational Costs",
+        "Improved Client Retention",
+        "Data-Driven Insights",
+        "Automated Wholesale Management"
+      ],
+      "content": {
+        "process": [
+          { "title": "Business Analysis", "description": "Mapping out your wholesale workflows and pricing rules." },
+          { "title": "Platform Selection", "description": "Choosing the right B2B engine like Magento or SAP Commerce." },
+          { "title": "ERP & CRM Integration", "description": "Connecting the store to your backend data systems." },
+          { "title": "Custom Development", "description": "Building quote engines and approval workflows." },
+          { "title": "Testing & Onboarding", "description": "Verifying complex pricing logic and onboarding your initial clients." }
+        ],
+        "technologies": [
+          "Magento",
+          "SAP Commerce Cloud",
+          "Salesforce B2B Commerce",
+          "NetSuite SuiteCommerce",
+          "BigCommerce B2B Edition"
+        ],
+        "faq": [
+          { "question": "Can the platform handle different prices for different corporate clients?", "answer": "Absolutely. We implement dynamic customer groups and custom pricing rules so that when a client logs in, they only see their negotiated rates." },
+          { "question": "Does it integrate with our existing accounting software?", "answer": "Yes, we specialize in API integrations that connect your e-commerce platform directly to ERPs and accounting systems for real-time inventory and invoicing." }
+        ]
+      },
+      "metaTitle": "B2B E-Commerce Solutions | Wholesale Platform Development",
+      "metaDescription": "Build scalable B2B e-commerce platforms with custom pricing, bulk ordering, and ERP integrations. Streamline your wholesale business today."
+    },
+    "tr": {
+      "name": "B2B E-Ticaret",
+      "shortDescription": "Karmaşık fiyatlandırma ve sipariş ile güçlü B2B e-ticaret platformları oluşturun.",
+      "fullDescription": "Toptan satış operasyonlarınızı sağlam bir B2B E-Ticaret platformuyla dönüştürün. Standart perakende sitelerinden farklı olarak, B2B portalları kurumsal satın almayı yürütmek için özel işlevsellik gerektirir. Müşteriye özel fiyatlandırma kataloglarını, toplu sipariş arayüzlerini, özelleştirilmiş teklif yönetimini ve karmaşık onay iş akışlarını destekleyen ölçeklenebilir platformlar oluşturuyoruz. Mevcut ERP ve CRM sistemlerinizle sorunsuz bir şekilde entegre olarak, operasyonları kolaylaştıran, manuel girişi azaltan ve kurumsal müşterilerinize modern bir satın alma deneyimi sunan birleşik bir dijital ekosistem yaratıyoruz.",
+      "features": [
+        "Müşteriye Özel Fiyatlandırma",
+        "Toplu Sipariş Verme",
+        "Teklif Yönetimi",
+        "Onay İş Akışları",
+        "ERP Entegrasyonu",
+        "Kredi Şartları ve Faturalandırma"
+      ],
+      "benefits": [
+        "Kolaylaştırılmış Sipariş İşleme",
+        "Azalan Operasyonel Maliyetler",
+        "İyileştirilmiş Müşteri Bağlılığı",
+        "Veriye Dayalı İçgörüler",
+        "Otomatik Toptan Satış Yönetimi"
+      ],
+      "content": {
+        "process": [
+          { "title": "İş Analizi", "description": "Toptan satış iş akışlarınızı ve fiyatlandırma kurallarınızı haritalama." },
+          { "title": "Platform Seçimi", "description": "Magento veya SAP gibi doğru B2B motorunu seçme." },
+          { "title": "ERP ve CRM Entegrasyonu", "description": "Mağazayı arka uç veri sistemlerinize bağlama." },
+          { "title": "Özel Geliştirme", "description": "Teklif motorları ve onay iş akışları oluşturma." },
+          { "title": "Test ve Oryantasyon", "description": "Karmaşık fiyatlandırma mantığını doğrulama ve ilk müşterilerinizin katılımını sağlama." }
+        ],
+        "technologies": [
+          "Magento",
+          "SAP",
+          "Salesforce",
+          "NetSuite",
+          "BigCommerce"
+        ],
+        "faq": [
+          { "question": "Platform farklı kurumsal müşteriler için farklı fiyatları yönetebilir mi?", "answer": "Kesinlikle. Dinamik müşteri grupları ve özel fiyatlandırma kuralları uyguluyoruz; böylece bir müşteri giriş yaptığında yalnızca kendi indirimli oranlarını görür." },
+          { "question": "Mevcut muhasebe yazılımımızla entegre çalışır mı?", "answer": "Evet, gerçek zamanlı envanter ve faturalandırma için e-ticaret platformunuzu doğrudan ERP'lere ve muhasebe sistemlerine bağlayan API entegrasyonlarında uzmanız." }
+        ]
+      },
+      "metaTitle": "B2B E-Ticaret Çözümleri | Toptan Satış Platformu Geliştirme",
+      "metaDescription": "Özel fiyatlandırma, toplu sipariş ve ERP entegrasyonları ile ölçeklenebilir B2B e-ticaret platformları oluşturun. Toptan satış işinizi bugün kolaylaştırın."
+    },
+    "de": {
+      "name": "B2B-E-Commerce",
+      "shortDescription": "Bauen Sie leistungsstarke B2B-E-Commerce-Plattformen mit komplexen Preisen und Bestellungen auf.",
+      "fullDescription": "Transformieren Sie Ihre Großhandelsabläufe mit einer robusten B2B-E-Commerce-Plattform. Im Gegensatz zu Standard-Einzelhandels-Websites erfordern B2B-Portale spezielle Funktionen zur Abwicklung des Unternehmenseinkaufs. Wir entwickeln skalierbare Plattformen, die kundenspezifische Preiskataloge, Massenbestellschnittstellen, maßgeschneidertes Angebotsmanagement und komplexe Genehmigungsworkflows unterstützen. Durch die nahtlose Integration in Ihre bestehenden ERP- und CRM-Systeme schaffen wir ein einheitliches digitales Ökosystem, das Abläufe rationalisiert, manuelle Eingaben reduziert und Ihren Geschäftskunden ein modernes Einkaufserlebnis bietet.",
+      "features": [
+        "Kundenspezifische Preisgestaltung",
+        "Massenbestellungen",
+        "Angebotsverwaltung",
+        "Genehmigungsworkflows",
+        "ERP-Integration",
+        "Kreditbedingungen & Rechnungsstellung"
+      ],
+      "benefits": [
+        "Optimierte Bestellabwicklung",
+        "Reduzierte Betriebskosten",
+        "Verbesserte Kundenbindung",
+        "Datengesteuerte Erkenntnisse",
+        "Automatisiertes Großhandelsmanagement"
+      ],
+      "content": {
+        "process": [
+          { "title": "Geschäftsanalyse", "description": "Abbildung Ihrer Großhandelsabläufe und Preisregeln." },
+          { "title": "Plattformauswahl", "description": "Auswahl der richtigen B2B-Engine wie Magento oder SAP." },
+          { "title": "ERP- & CRM-Integration", "description": "Anbindung des Shops an Ihre Backend-Datensysteme." },
+          { "title": "Individuelle Entwicklung", "description": "Aufbau von Angebots-Engines und Genehmigungsworkflows." },
+          { "title": "Tests & Onboarding", "description": "Überprüfung komplexer Preislogik und Onboarding Ihrer ersten Kunden." }
+        ],
+        "technologies": [
+          "Magento",
+          "SAP",
+          "Salesforce",
+          "NetSuite"
+        ],
+        "faq": [
+          { "question": "Kann die Plattform unterschiedliche Preise für verschiedene Firmenkunden verwalten?", "answer": "Absolut. Wir implementieren dynamische Kundengruppen und individuelle Preisregeln, sodass ein Kunde nach dem Einloggen nur seine ausgehandelten Tarife sieht." },
+          { "question": "Lässt es sich in unsere bestehende Buchhaltungssoftware integrieren?", "answer": "Ja, wir sind spezialisiert auf API-Integrationen, die Ihre E-Commerce-Plattform für Echtzeitbestände und -rechnungen direkt mit ERPs und Buchhaltungssystemen verbinden." }
+        ]
+      },
+      "metaTitle": "B2B-E-Commerce-Lösungen | Entwicklung von Großhandelsplattformen",
+      "metaDescription": "Erstellen Sie skalierbare B2B-E-Commerce-Plattformen mit individuellen Preisen, Massenbestellungen und ERP-Integrationen. Optimieren Sie Ihr Großhandelsgeschäft."
+    },
+    "ur": {
+      "name": "B2B ای کامرس",
+      "shortDescription": "پیچیدہ قیمتوں اور آرڈر کے ساتھ طاقتور B2B ای کامرس پلیٹ فارم بنائیں۔",
+      "fullDescription": "اپنے ہول سیل آپریشنز کو ایک مضبوط B2B ای کامرس پلیٹ فارم کے ساتھ تبدیل کریں۔ معیاری ریٹیل سائٹس کے برعکس، B2B پورٹلز کو کارپوریٹ خریداری کو سنبھالنے کے لیے خصوصی فعالیت کی ضرورت ہوتی ہے۔ ہم قابل توسیع پلیٹ فارمز بناتے ہیں جو گاہک کے لیے مخصوص قیمتوں کے کیٹلاگ، بلک آرڈرنگ انٹرفیس، حسب ضرورت اقتباس کا انتظام، اور پیچیدہ منظوری کے ورک فلو کو سپورٹ کرتے ہیں۔ آپ کے موجودہ ERP اور CRM سسٹمز کے ساتھ بغیر کسی رکاوٹ کے ضم ہو کر، ہم ایک متحد ڈیجیٹل ماحولیاتی نظام بناتے ہیں جو آپریشنز کو ہموار کرتا ہے، دستی اندراج کو کم کرتا ہے، اور آپ کے کاروباری کلائنٹس کو خریداری کا ایک جدید تجربہ فراہم کرتا ہے۔",
+      "features": [
+        "گاہک کے لیے مخصوص قیمتوں کا تعین",
+        "بلک آرڈرنگ",
+        "اقتباس کا انتظام",
+        "منظوری کے ورک فلوز",
+        "ERP انٹیگریشن",
+        "کریڈٹ کی شرائط اور انوائسنگ"
+      ],
+      "benefits": [
+        "آرڈر پروسیسنگ کو ہموار کیا گیا۔",
+        "آپریشنل اخراجات میں کمی",
+        "بہتر کلائنٹ برقرار رکھنا",
+        "ڈیٹا پر مبنی بصیرت",
+        "خودکار ہول سیل مینجمنٹ"
+      ],
+      "content": {
+        "process": [
+          { "title": "کاروباری تجزیہ", "description": "آپ کے ہول سیل ورک فلو اور قیمتوں کے قواعد کی نقشہ سازی۔" },
+          { "title": "پلیٹ فارم کا انتخاب", "description": "صحیح B2B انجن کا انتخاب کرنا جیسے Magento یا SAP۔" },
+          { "title": "ای آر پی اور سی آر ایم انٹیگریشن", "description": "اسٹور کو آپ کے بیک اینڈ ڈیٹا سسٹمز سے جوڑنا۔" },
+          { "title": "اپنی مرضی کی ترقی", "description": "کوٹ انجن اور منظوری کا ورک فلو بنانا۔" },
+          { "title": "ٹیسٹنگ اور آن بورڈنگ", "description": "قیمتوں کی پیچیدہ منطق کی تصدیق کرنا اور آپ کے ابتدائی کلائنٹس کو آن بورڈ کرنا۔" }
+        ],
+        "technologies": [
+          "Magento",
+          "SAP",
+          "Salesforce",
+          "NetSuite"
+        ],
+        "faq": [
+          { "question": "کیا پلیٹ فارم مختلف کارپوریٹ کلائنٹس کے لیے مختلف قیمتوں کو سنبھال سکتا ہے؟", "answer": "بالکل۔ ہم متحرک کسٹمر گروپس اور حسب ضرورت قیمتوں کے قواعد نافذ کرتے ہیں تاکہ جب کوئی کلائنٹ لاگ ان ہوتا ہے، تو وہ صرف اپنے طے شدہ نرخ دیکھتے ہیں۔" },
+          { "question": "کیا یہ ہمارے موجودہ اکاؤنٹنگ سوفٹ ویئر کے ساتھ مربوط ہے؟", "answer": "ہاں، ہم API انضمام میں مہارت رکھتے ہیں جو آپ کے ای کامرس پلیٹ فارم کو ریئل ٹائم انوینٹری اور انوائسنگ کے لیے براہ راست ERPs اور اکاؤنٹنگ سسٹم سے جوڑتے ہیں۔" }
+        ]
+      },
+      "metaTitle": "B2B ای کامرس کے حل | ہول سیل پلیٹ فارم ڈیولپمنٹ",
+      "metaDescription": "اپنی مرضی کے مطابق قیمتوں کا تعین، بلک آرڈرنگ، اور ERP انٹیگریشنز کے ساتھ اسکیل ایبل B2B ای کامرس پلیٹ فارم بنائیں۔ آج ہی اپنے ہول سیل کاروبار کو ہموار کریں۔"
+    },
+    "ar": {
+      "name": "التجارة الإلكترونية بين الشركات B2B",
+      "shortDescription": "بناء منصات قوية للتجارة الإلكترونية بين الشركات (B2B) مع تسعير وطلب معقدين.",
+      "fullDescription": "حوّل عمليات البيع بالجملة لديك من خلال منصة قوية للتجارة الإلكترونية B2B. على عكس مواقع البيع بالتجزئة القياسية، تتطلب بوابات B2B وظائف متخصصة للتعامل مع مشتريات الشركات. نقوم ببناء منصات قابلة للتطوير تدعم كتالوجات التسعير الخاصة بالعملاء، وواجهات الطلب بالجملة، وإدارة عروض الأسعار المخصصة، وسير عمل الموافقة المعقد. من خلال التكامل السلس مع أنظمة ERP و CRM الحالية لديك، ننشئ نظامًا بيئيًا رقميًا موحدًا يبسط العمليات، ويقلل الإدخال اليدوي، ويوفر لعملاء عملك تجربة شراء سلسة وحديثة.",
+      "features": [
+        "تسعير خاص بالعميل",
+        "الطلب بالجملة",
+        "إدارة عروض الأسعار",
+        "سير عمل الموافقة",
+        "تكامل ERP",
+        "شروط الائتمان والفوترة"
+      ],
+      "benefits": [
+        "معالجة الطلبات المبسطة",
+        "انخفاض تكاليف التشغيل",
+        "تحسين الاحتفاظ بالعملاء",
+        "رؤى قائمة على البيانات",
+        "إدارة الجملة الآلية"
+      ],
+      "content": {
+        "process": [
+          { "title": "تحليل الأعمال", "description": "تخطيط سير عمل البيع بالجملة وقواعد التسعير." },
+          { "title": "اختيار المنصة", "description": "اختيار محرك B2B المناسب مثل Magento أو SAP Commerce." },
+          { "title": "تكامل ERP و CRM", "description": "ربط المتجر بأنظمة البيانات الخلفية الخاصة بك." },
+          { "title": "تطوير مخصص", "description": "بناء محركات عروض الأسعار وسير عمل الموافقة." },
+          { "title": "الاختبار والإعداد", "description": "التحقق من منطق التسعير المعقد وإعداد عملائك الأوائل." }
+        ],
+        "technologies": [
+          "Magento",
+          "SAP",
+          "Salesforce",
+          "NetSuite"
+        ],
+        "faq": [
+          { "question": "هل يمكن للمنصة التعامل مع أسعار مختلفة لعملاء مختلفين من الشركات؟", "answer": "بالتأكيد. نقوم بتنفيذ مجموعات عملاء ديناميكية وقواعد تسعير مخصصة بحيث لا يرى العميل عند تسجيل الدخول سوى الأسعار المتفق عليها." },
+          { "question": "هل يتكامل مع برامج المحاسبة الحالية لدينا؟", "answer": "نعم، نحن متخصصون في تكامل API الذي يربط منصة التجارة الإلكترونية الخاصة بك مباشرة بأنظمة تخطيط موارد المؤسسات والمحاسبة للمخزون والفوترة في الوقت الفعلي." }
+        ]
+      },
+      "metaTitle": "حلول التجارة الإلكترونية B2B | تطوير منصة البيع بالجملة",
+      "metaDescription": "قم ببناء منصات تجارة إلكترونية B2B قابلة للتطوير مع تسعير مخصص وطلب بالجملة وتكامل ERP. قم بتبسيط أعمال البيع بالجملة اليوم."
+    }
+  },
+  "blockchain-development": {
+    "en": {
+      "name": "Blockchain Development",
+      "shortDescription": "Develop secure smart contracts, DApps, and blockchain integrations on Ethereum, Solana, and more.",
+      "fullDescription": "Leverage the power of decentralized technology with our comprehensive Blockchain Development services. We help startups and enterprises transition to Web3 by building robust smart contracts, scalable Decentralized Applications (DApps), and custom blockchain networks. Whether you're looking to launch an NFT marketplace, create your own token (ERC-20/ERC-721), or integrate crypto payment gateways, our team of blockchain experts ensures highly secure, gas-optimized code audited against the latest vulnerabilities.",
+      "features": [
+        "Smart Contract Development",
+        "DApp Frontend & Backend",
+        "Token Creation (ERC-20, ERC-721)",
+        "NFT Marketplace Development",
+        "Wallet Integration",
+        "Cross-Chain Solutions",
+        "Smart Contract Auditing",
+        "Gas Optimization"
+      ],
+      "benefits": [
+        "Enhanced Security & Trust",
+        "Decentralized Operations",
+        "Immutable Data Storage",
+        "Reduced Intermediary Costs",
+        "Access to Web3 Economies"
+      ],
+      "content": {
+        "process": [
+          { "title": "Architecture Design", "description": "Defining the consensus mechanism, tokenomics, and network choice (Ethereum, Solana, Polygon)." },
+          { "title": "Smart Contract Coding", "description": "Writing secure Solidity or Rust contracts." },
+          { "title": "Auditing", "description": "Rigorous internal and third-party code audits to prevent exploits." },
+          { "title": "DApp Integration", "description": "Connecting the blockchain backend to a Web3 frontend via Web3.js or Ethers.js." },
+          { "title": "Mainnet Deployment", "description": "Deploying contracts to the live network and verifying the code." }
+        ],
+        "technologies": [
+          "Solidity",
+          "Ethereum",
+          "Solana",
+          "Hardhat",
+          "Web3.js",
+          "IPFS",
+          "Rust",
+          "Truffle"
+        ],
+        "faq": [
+          { "question": "Which blockchain network should I choose for my project?", "answer": "It depends on your goals. Ethereum is the most established for security and ecosystem, while Solana and Polygon offer much lower transaction fees and higher speed. We will advise you based on your specific use case." },
+          { "question": "Do you provide smart contract auditing?", "answer": "Yes, security is our top priority. All our smart contracts undergo strict testing, gas optimization, and comprehensive security audits before deployment." }
+        ]
+      },
+      "metaTitle": "Blockchain Development Company | Smart Contracts & DApps",
+      "metaDescription": "Expert blockchain development services. We build secure smart contracts, custom DApps, and NFT marketplaces on Ethereum, Solana, and Polygon."
+    },
+    "tr": {
+      "name": "Blokzincir Geliştirme",
+      "shortDescription": "Ethereum, Solana ve daha fazlasında güvenli akıllı sözleşmeler, DApp'ler ve blokzincir entegrasyonları geliştirin.",
+      "fullDescription": "Kapsamlı Blokzincir Geliştirme hizmetlerimizle merkeziyetsiz teknolojinin gücünden yararlanın. Sağlam akıllı sözleşmeler, ölçeklenebilir Merkeziyetsiz Uygulamalar (DApp'ler) ve özel blokzincir ağları oluşturarak girişimlerin ve kuruluşların Web3'e geçmesine yardımcı oluyoruz. Bir NFT pazarı başlatmak, kendi jetonunuzu (ERC-20/ERC-721) oluşturmak veya kripto ödeme ağ geçitlerini entegre etmek istiyor olun, blokzincir uzmanlarından oluşan ekibimiz en son güvenlik açıklarına karşı denetlenmiş, oldukça güvenli, gaz açısından optimize edilmiş kodlar sağlar.",
+      "features": [
+        "Akıllı Sözleşme Geliştirme",
+        "DApp Ön Uç ve Arka Uç",
+        "Token Oluşturma (ERC-20, ERC-721)",
+        "NFT Pazaryeri Geliştirme",
+        "Cüzdan Entegrasyonu",
+        "Çapraz Zincir Çözümleri",
+        "Akıllı Sözleşme Denetimi",
+        "Gaz Optimizasyonu"
+      ],
+      "benefits": [
+        "Artırılmış Güvenlik ve Güven",
+        "Merkeziyetsiz Operasyonlar",
+        "Değiştirilemez Veri Depolama",
+        "Azalan Aracı Maliyetleri",
+        "Web3 Ekonomilerine Erişim"
+      ],
+      "content": {
+        "process": [
+          { "title": "Mimari Tasarım", "description": "Konsensüs mekanizması, tokenomik ve ağ seçimini (Ethereum, Solana, Polygon) tanımlama." },
+          { "title": "Akıllı Sözleşme Kodlaması", "description": "Güvenli Solidity veya Rust sözleşmeleri yazma." },
+          { "title": "Denetim", "description": "İstismarları önlemek için sıkı dahili ve üçüncü taraf kod denetimleri." },
+          { "title": "DApp Entegrasyonu", "description": "Blokzincir arka ucunu Web3.js veya Ethers.js aracılığıyla bir Web3 ön ucuna bağlama." },
+          { "title": "Ana Ağ Dağıtımı", "description": "Sözleşmeleri canlı ağa dağıtma ve kodu doğrulama." }
+        ],
+        "technologies": [
+          "Solidity",
+          "Ethereum",
+          "Solana",
+          "Hardhat",
+          "Web3.js",
+          "IPFS",
+          "Rust"
+        ],
+        "faq": [
+          { "question": "Projem için hangi blokzincir ağını seçmeliyim?", "answer": "Bu hedeflerinize bağlıdır. Ethereum, güvenlik ve ekosistem açısından en köklü olanıdır; Solana ve Polygon ise çok daha düşük işlem ücretleri ve daha yüksek hız sunar. Özel kullanım durumunuza göre size tavsiyede bulunacağız." },
+          { "question": "Akıllı sözleşme denetimi sağlıyor musunuz?", "answer": "Evet, güvenlik en önemli önceliğimizdir. Tüm akıllı sözleşmelerimiz dağıtımdan önce sıkı testlerden, gaz optimizasyonundan ve kapsamlı güvenlik denetimlerinden geçer." }
+        ]
+      },
+      "metaTitle": "Blokzincir Geliştirme Şirketi | Akıllı Sözleşmeler ve DApp'ler",
+      "metaDescription": "Uzman blokzincir geliştirme hizmetleri. Ethereum, Solana ve Polygon üzerinde güvenli akıllı sözleşmeler, özel DApp'ler ve NFT pazaryerleri oluşturuyoruz."
+    },
+    "de": {
+      "name": "Blockchain-Entwicklung",
+      "shortDescription": "Entwickeln Sie sichere Smart Contracts, DApps und Blockchain-Integrationen auf Ethereum, Solana und mehr.",
+      "fullDescription": "Nutzen Sie die Leistungsfähigkeit der dezentralen Technologie mit unseren umfassenden Blockchain-Entwicklungsdiensten. Wir helfen Start-ups und Unternehmen beim Übergang zu Web3, indem wir robuste Smart Contracts, skalierbare dezentrale Anwendungen (DApps) und maßgeschneiderte Blockchain-Netzwerke aufbauen. Egal, ob Sie einen NFT-Marktplatz eröffnen, Ihren eigenen Token (ERC-20/ERC-721) erstellen oder Krypto-Zahlungsgateways integrieren möchten, unser Team von Blockchain-Experten sorgt für hochsicheren, gasoptimierten Code, der auf die neuesten Schwachstellen geprüft ist.",
+      "features": [
+        "Smart-Contract-Entwicklung",
+        "DApp-Frontend & Backend",
+        "Token-Erstellung (ERC-20, ERC-721)",
+        "Entwicklung von NFT-Marktplätzen",
+        "Wallet-Integration",
+        "Cross-Chain-Lösungen",
+        "Smart-Contract-Auditing",
+        "Gasoptimierung"
+      ],
+      "benefits": [
+        "Erhöhte Sicherheit & Vertrauen",
+        "Dezentrale Abläufe",
+        "Unveränderliche Datenspeicherung",
+        "Reduzierte Vermittlerkosten",
+        "Zugang zu Web3-Wirtschaften"
+      ],
+      "content": {
+        "process": [
+          { "title": "Architekturdesign", "description": "Festlegung des Konsensmechanismus, der Tokenomics und der Netzwerkwahl (Ethereum, Solana, Polygon)." },
+          { "title": "Smart-Contract-Codierung", "description": "Schreiben sicherer Solidity- oder Rust-Verträge." },
+          { "title": "Auditing", "description": "Strenge interne und externe Code-Audits zur Vermeidung von Exploits." },
+          { "title": "DApp-Integration", "description": "Verbindung des Blockchain-Backends mit einem Web3-Frontend über Web3.js oder Ethers.js." },
+          { "title": "Mainnet-Bereitstellung", "description": "Bereitstellung von Verträgen im Live-Netzwerk und Überprüfung des Codes." }
+        ],
+        "technologies": [
+          "Solidity",
+          "Ethereum",
+          "Solana",
+          "Hardhat",
+          "Web3.js",
+          "IPFS"
+        ],
+        "faq": [
+          { "question": "Welches Blockchain-Netzwerk soll ich für mein Projekt wählen?", "answer": "Das hängt von Ihren Zielen ab. Ethereum ist am etabliertesten für Sicherheit und Ökosystem, während Solana und Polygon viel niedrigere Transaktionsgebühren und höhere Geschwindigkeit bieten. Wir beraten Sie basierend auf Ihrem spezifischen Anwendungsfall." },
+          { "question": "Bieten Sie Smart-Contract-Auditing an?", "answer": "Ja, Sicherheit ist unsere oberste Priorität. Alle unsere Smart Contracts durchlaufen vor der Bereitstellung strenge Tests, Gasoptimierungen und umfassende Sicherheitsüberprüfungen." }
+        ]
+      },
+      "metaTitle": "Blockchain-Entwicklungsunternehmen | Smart Contracts & DApps",
+      "metaDescription": "Kompetente Blockchain-Entwicklungsdienste. Wir erstellen sichere Smart Contracts, maßgeschneiderte DApps und NFT-Marktplätze."
+    },
+    "ur": {
+      "name": "بلاک چین ڈیولپمنٹ",
+      "shortDescription": "ایتھریم، سولانا، اور مزید پر محفوظ سمارٹ کنٹریکٹس، DApps، اور بلاک چین انضمام تیار کریں۔",
+      "fullDescription": "ہماری جامع بلاک چین ڈیولپمنٹ سروسز کے ساتھ وکندریقرت ٹیکنالوجی کی طاقت سے فائدہ اٹھائیں۔ ہم مضبوط سمارٹ کنٹریکٹس، قابل توسیع ڈی سینٹرلائزڈ ایپلی کیشنز (DApps)، اور حسب ضرورت بلاک چین نیٹ ورکس بنا کر اسٹارٹ اپس اور انٹرپرائزز کو Web3 میں منتقل کرنے میں مدد کرتے ہیں۔ چاہے آپ NFT مارکیٹ پلیس شروع کرنا چاہتے ہیں، اپنا ٹوکن (ERC-20/ERC-721) بنانا چاہتے ہیں، یا کریپٹو ادائیگی کے گیٹ ویز کو مربوط کرنا چاہتے ہیں، بلاک چین ماہرین کی ہماری ٹیم انتہائی محفوظ، گیس سے بہتر کوڈ کو یقینی بناتی ہے جس کا تازہ ترین خطرات کے خلاف آڈٹ کیا گیا ہے۔",
+      "features": [
+        "سمارٹ کنٹریکٹ ڈیولپمنٹ",
+        "ڈی ایپ فرنٹ اینڈ اور بیک اینڈ",
+        "ٹوکن تخلیق (ERC-20, ERC-721)",
+        "این ایف ٹی مارکیٹ پلیس ڈیولپمنٹ",
+        "والیٹ انٹیگریشن",
+        "کراس چین سلوشنز",
+        "سمارٹ کنٹریکٹ آڈیٹنگ",
+        "گیس کی اصلاح"
+      ],
+      "benefits": [
+        "بہتر سیکورٹی اور اعتماد",
+        "وکندریقرت آپریشنز",
+        "ناقابل تغیر ڈیٹا اسٹوریج",
+        "کم درمیانی اخراجات",
+        "ویب 3 معیشتوں تک رسائی"
+      ],
+      "content": {
+        "process": [
+          { "title": "آرکیٹیکچر ڈیزائن", "description": "اتفاق رائے کے طریقہ کار، ٹوکنومکس، اور نیٹ ورک کے انتخاب کی تعریف (ایتھریم، سولانا، پولیگون)۔" },
+          { "title": "سمارٹ کنٹریکٹ کوڈنگ", "description": "محفوظ سولیڈیٹی یا رسٹ معاہدے لکھنا۔" },
+          { "title": "آڈیٹنگ", "description": "کارناموں کو روکنے کے لیے سخت اندرونی اور فریق ثالث کوڈ آڈٹ۔" },
+          { "title": "ڈی ایپ انٹیگریشن", "description": "Web3.js یا Ethers.js کے ذریعے بلاک چین بیک اینڈ کو Web3 فرنٹ اینڈ سے جوڑنا۔" },
+          { "title": "مین نیٹ کی تعیناتی", "description": "لائیو نیٹ ورک پر معاہدے تعینات کرنا اور کوڈ کی تصدیق کرنا۔" }
+        ],
+        "technologies": [
+          "Solidity",
+          "Ethereum",
+          "Solana",
+          "Hardhat",
+          "Web3.js",
+          "IPFS"
+        ],
+        "faq": [
+          { "question": "مجھے اپنے پروجیکٹ کے لیے کون سا بلاک چین نیٹ ورک چننا چاہیے؟", "answer": "یہ آپ کے مقاصد پر منحصر ہے۔ ایتھریم سیکیورٹی اور ماحولیاتی نظام کے لیے سب سے زیادہ قائم ہے، جبکہ سولانا اور پولی گون بہت کم ٹرانزیکشن فیس اور زیادہ رفتار پیش کرتے ہیں۔ ہم آپ کو آپ کے مخصوص استعمال کے کیس کی بنیاد پر مشورہ دیں گے۔" },
+          { "question": "کیا آپ سمارٹ کنٹریکٹ آڈیٹنگ فراہم کرتے ہیں؟", "answer": "جی ہاں، سیکورٹی ہماری اولین ترجیح ہے۔ تعیناتی سے پہلے ہمارے تمام سمارٹ معاہدے سخت ٹیسٹنگ، گیس کی اصلاح، اور جامع سیکورٹی آڈٹ سے گزرتے ہیں۔" }
+        ]
+      },
+      "metaTitle": "بلاک چین ڈیولپمنٹ کمپنی | اسمارٹ کنٹریکٹس اور ڈی ایپس",
+      "metaDescription": "ماہرین کی بلاک چین ترقی کی خدمات۔ ہم Ethereum، Solana، اور Polygon پر محفوظ سمارٹ کنٹریکٹس، حسب ضرورت DApps، اور NFT بازار بناتے ہیں۔"
+    },
+    "ar": {
+      "name": "تطوير البلوكتشين",
+      "shortDescription": "تطوير عقود ذكية آمنة وتطبيقات لامركزية (DApps) وتكامل بلوكتشين على إيثريوم وسولانا والمزيد.",
+      "fullDescription": "استفد من قوة التكنولوجيا اللامركزية من خلال خدمات تطوير البلوكتشين الشاملة لدينا. نساعد الشركات الناشئة والمؤسسات على الانتقال إلى Web3 من خلال بناء عقود ذكية قوية، وتطبيقات لامركزية قابلة للتطوير (DApps)، وشبكات بلوكتشين مخصصة. سواء كنت تتطلع إلى إطلاق سوق NFT، أو إنشاء الرمز المميز الخاص بك (ERC-20/ERC-721)، أو دمج بوابات الدفع بالعملات المشفرة، فإن فريقنا من خبراء البلوكتشين يضمن رمزًا آمنًا للغاية ومُحسّنًا للغاز تم تدقيقه ضد أحدث نقاط الضعف.",
+      "features": [
+        "تطوير العقود الذكية",
+        "واجهة وتطبيقات DApp الخلفية",
+        "إنشاء الرموز (ERC-20، ERC-721)",
+        "تطوير سوق NFT",
+        "تكامل المحفظة",
+        "حلول عبر السلاسل",
+        "تدقيق العقود الذكية",
+        "تحسين الغاز"
+      ],
+      "benefits": [
+        "تعزيز الأمن والثقة",
+        "العمليات اللامركزية",
+        "تخزين بيانات غير قابل للتغيير",
+        "انخفاض تكاليف الوسطاء",
+        "الوصول إلى اقتصادات Web3"
+      ],
+      "content": {
+        "process": [
+          { "title": "تصميم البنية", "description": "تحديد آلية الإجماع والاقتصاد الرمزي واختيار الشبكة (Ethereum و Solana و Polygon)." },
+          { "title": "برمجة العقود الذكية", "description": "كتابة عقود Solidity أو Rust الآمنة." },
+          { "title": "التدقيق", "description": "عمليات تدقيق صارمة للرموز الداخلية والخارجية لمنع عمليات الاستغلال." },
+          { "title": "تكامل DApp", "description": "ربط الواجهة الخلفية للبلوكتشين بواجهة أمامية لـ Web3 عبر Web3.js أو Ethers.js." },
+          { "title": "نشر Mainnet", "description": "نشر العقود على الشبكة الحية والتحقق من الكود." }
+        ],
+        "technologies": [
+          "Solidity",
+          "Ethereum",
+          "Solana",
+          "Hardhat",
+          "Web3.js",
+          "IPFS"
+        ],
+        "faq": [
+          { "question": "ما شبكة البلوكتشين التي يجب أن أختارها لمشروعي؟", "answer": "يعتمد ذلك على أهدافك. إيثريوم هي الأكثر رسوخًا من حيث الأمان والنظام البيئي، بينما تقدم سولانا وبوليجون رسوم معاملات أقل بكثير وسرعة أعلى. سوف ننصحك بناءً على حالة الاستخدام الخاصة بك." },
+          { "question": "هل تقدمون تدقيق العقود الذكية؟", "answer": "نعم، الأمان هو أولويتنا القصوى. تخضع جميع عقودنا الذكية لاختبارات صارمة، وتحسين الغاز، وعمليات تدقيق أمنية شاملة قبل النشر." }
+        ]
+      },
+      "metaTitle": "شركة تطوير البلوكتشين | العقود الذكية وتطبيقات DApps",
+      "metaDescription": "خدمات تطوير بلوكتشين خبيرة. نقوم ببناء عقود ذكية آمنة وتطبيقات لامركزية مخصصة وأسواق NFT على إيثريوم وسولانا وبوليجون."
+    }
+  }
+}

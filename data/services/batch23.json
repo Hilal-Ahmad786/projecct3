@@ -1,0 +1,436 @@
+{
+  "saas-migration": {
+    "en": {
+      "name": "SaaS Migration",
+      "shortDescription": "Transform your software into a scalable SaaS platform.",
+      "fullDescription": "Moving an existing single-tenant application or legacy software to a modern Software-as-a-Service (SaaS) model is a massive technological and business shift. Our SaaS Migration services guide you through this complex transition without disrupting your current revenue streams. We specialize in transforming isolated codebases into true multi-tenant architectures, ensuring that all customers share a single, maintainable application instance while keeping their data strictly secure and segregated. From migrating on-premise databases to the cloud and building a centralized API layer, to implementing Stripe for recurring billing and Auth0 for unified identity management, we help you unlock the scalability and recurring revenue potential of a true SaaS model.",
+      "features": [
+        "Single-Tenant to Multi-Tenant Architecture Conversion",
+        "Legacy Database Migration (On-Premise to Cloud)",
+        "Stripe Subscription Billing & Pricing Tier Setup",
+        "Unified Identity & Access Management (Auth0 / Cognito)",
+        "Zero-Downtime Migration Strategies",
+        "Centralized API Layer Development"
+      ],
+      "benefits": [
+        "Unlock Recurring SaaS Revenue Models",
+        "Drastically Reduce Maintenance Costs (Maintain 1 app, not 100)",
+        "Scale Globally on Cloud Infrastructure (AWS/GCP)",
+        "Improve Feature Rollout Speed to All Customers Instantly",
+        "Eliminate Manual Onboarding and Provisioning"
+      ],
+      "content": {
+        "process": [
+          { "title": "Architecture Audit", "description": "Analyzing your current legacy or single-tenant codebase to map out the refactoring needed." },
+          { "title": "Data Segregation Strategy", "description": "Designing a multi-tenant database schema (e.g., using Row-Level Security) to ensure data isolation." },
+          { "title": "Identity & Billing Integration", "description": "Implementing unified logins (Auth0) and subscription management (Stripe) for the new model." },
+          { "title": "Cloud Infrastructure Setup", "description": "Provisioning a scalable, automated AWS or GCP environment to host the SaaS platform." },
+          { "title": "Phased Migration", "description": "Moving customers from the old system to the new SaaS platform in batches to ensure zero downtime." }
+        ],
+        "technologies": [
+          "AWS / GCP",
+          "PostgreSQL (Row-Level Security)",
+          "Node.js / Python (API Layer)",
+          "Stripe (Billing)",
+          "Auth0 / AWS Cognito",
+          "Docker / Kubernetes"
+        ],
+        "faq": [
+          { "question": "How do you ensure customer data doesn't leak in a multi-tenant system?", "answer": "Data security is our top priority. We use strict database architecture patterns, such as PostgreSQL Row-Level Security (RLS) or logical schema separation, ensuring that a bug in the application code can never accidentally expose one tenant's data to another." },
+          { "question": "Will our customers experience downtime during the migration?", "answer": "We utilize 'zero-downtime' deployment strategies. We keep the legacy system running while synchronizing data to the new SaaS platform in the background. The actual cutover happens instantly via DNS routing." }
+        ]
+      },
+      "metaTitle": "SaaS Migration Services | Legacy Software to SaaS Agency",
+      "metaDescription": "Convert your single-tenant or on-premise software into a scalable multi-tenant SaaS. We specialize in cloud migration, Stripe billing, and data segregation."
+    },
+    "tr": {
+      "name": "SaaS Geçişi (Migration)",
+      "shortDescription": "Yazılımınızı ölçeklenebilir bir SaaS platformuna dönüştürün.",
+      "fullDescription": "Mevcut tek kiracılı (single-tenant) bir uygulamayı veya eski (legacy) yazılımı modern bir Hizmet Olarak Yazılım (SaaS) modeline taşımak, muazzam bir teknolojik ve ticari değişimdir. SaaS Geçişi (Migration) hizmetlerimiz, mevcut gelir akışlarınızı kesintiye uğratmadan bu karmaşık geçiş boyunca size rehberlik eder. İzole edilmiş kod tabanlarını gerçek çok kiracılı (multi-tenant) mimarilere dönüştürme konusunda uzmanız; tüm müşterilerin verilerini kesinlikle güvenli ve ayrı tutarken, tek ve bakımı kolay bir uygulama örneğini (instance) paylaşmalarını sağlıyoruz. Şirket içi (on-premise) veritabanlarını buluta taşımaktan ve merkezi bir API katmanı oluşturmaktan, yinelenen faturalandırma için Stripe'ı ve birleşik kimlik yönetimi için Auth0'ı uygulamaya kadar, gerçek bir SaaS modelinin ölçeklenebilirliğini ve yinelenen gelir potansiyelini ortaya çıkarmanıza yardımcı oluyoruz.",
+      "features": [
+        "Tek Kiracılıdan Çok Kiracılı Mimariye Dönüştürme",
+        "Eski (Legacy) Veritabanı Geçişi (Şirket İçinden Buluta)",
+        "Stripe Abonelik Faturalandırması ve Fiyatlandırma Katmanı Kurulumu",
+        "Birleşik Kimlik ve Erişim Yönetimi (Auth0 / Cognito)",
+        "Sıfır Kesinti Süreli (Zero-Downtime) Geçiş Stratejileri",
+        "Merkezi API Katmanı Geliştirme"
+      ],
+      "benefits": [
+        "Yinelenen SaaS Gelir Modellerinin Kilidini Açma",
+        "Bakım Maliyetlerini Önemli Ölçüde Düşürme (100 değil, 1 uygulamanın bakımını yapın)",
+        "Bulut Altyapısında (AWS/GCP) Küresel Olarak Ölçeklenme",
+        "Tüm Müşterilere Anında Özellik Sunma Hızını İyileştirme",
+        "Manuel İşe Alım (Onboarding) ve Sağlama (Provisioning) Süreçlerini Ortadan Kaldırma"
+      ],
+      "content": {
+        "process": [
+          { "title": "Mimari Denetimi", "description": "Gereken yeniden düzenlemeyi (refactoring) haritalandırmak için mevcut eski veya tek kiracılı kod tabanınızı analiz etme." },
+          { "title": "Veri Ayırma Stratejisi", "description": "Veri izolasyonunu sağlamak için çok kiracılı bir veritabanı şeması tasarlama (ör. Satır Düzeyinde Güvenlik kullanarak)." },
+          { "title": "Kimlik ve Faturalandırma Entegrasyonu", "description": "Yeni model için birleşik oturum açma (Auth0) ve abonelik yönetimini (Stripe) uygulama." },
+          { "title": "Bulut Altyapısı Kurulumu", "description": "SaaS platformunu barındırmak için ölçeklenebilir, otomatikleştirilmiş bir AWS veya GCP ortamı sağlama." },
+          { "title": "Aşamalı Geçiş", "description": "Sıfır kesinti süresi sağlamak için müşterileri eski sistemden yeni SaaS platformuna gruplar halinde taşıma." }
+        ],
+        "technologies": [
+          "AWS / GCP",
+          "PostgreSQL (Satır Düzeyinde Güvenlik - RLS)",
+          "Node.js / Python (API Katmanı)",
+          "Stripe (Faturalandırma)",
+          "Auth0 / AWS Cognito",
+          "Docker / Kubernetes"
+        ],
+        "faq": [
+          { "question": "Çok kiracılı (multi-tenant) bir sistemde müşteri verilerinin sızmadığından nasıl emin oluyorsunuz?", "answer": "Veri güvenliği en büyük önceliğimizdir. PostgreSQL Satır Düzeyinde Güvenlik (RLS) veya mantıksal şema ayrımı gibi katı veritabanı mimarisi modelleri kullanarak, uygulama kodundaki bir hatanın yanlışlıkla bir kiracının verilerini diğerine ifşa etmesini kesinlikle engelliyoruz." },
+          { "question": "Müşterilerimiz geçiş sırasında kesinti yaşayacak mı?", "answer": "'Sıfır kesinti' (zero-downtime) dağıtım stratejileri kullanıyoruz. Verileri arka planda yeni SaaS platformuyla senkronize ederken eski sistemi çalışır durumda tutuyoruz. Asıl geçiş, DNS yönlendirmesi aracılığıyla anında gerçekleşir." }
+        ]
+      },
+      "metaTitle": "SaaS Geçiş (Migration) Hizmetleri | Eski Yazılımdan SaaS'a Dönüşüm",
+      "metaDescription": "Tek kiracılı veya şirket içi yazılımınızı ölçeklenebilir, çok kiracılı bir SaaS'a dönüştürün. Bulut geçişi, Stripe faturalandırması ve veri ayrımında uzmanız."
+    },
+    "de": {
+      "name": "SaaS-Migration",
+      "shortDescription": "Verwandeln Sie Ihre Software in eine skalierbare SaaS-Plattform.",
+      "fullDescription": "Der Wechsel von einer bestehenden Single-Tenant-Anwendung oder Legacy-Software zu einem modernen Software-as-a-Service (SaaS)-Modell ist ein massiver technologischer und geschäftlicher Wandel. Unsere SaaS-Migrationsdienste begleiten Sie durch diesen komplexen Übergang, ohne Ihre aktuellen Einnahmequellen zu unterbrechen. Wir sind darauf spezialisiert, isolierte Codebasen in echte Multi-Tenant-Architekturen zu transformieren und sicherzustellen, dass alle Kunden eine einzige, wartbare Anwendungsinstanz teilen, während ihre Daten streng gesichert und getrennt bleiben. Von der Migration lokaler Datenbanken in die Cloud über den Aufbau einer zentralisierten API-Schicht bis hin zur Implementierung von Stripe für wiederkehrende Abrechnungen und Auth0 für einheitliches Identitätsmanagement – wir helfen Ihnen, die Skalierbarkeit und das wiederkehrende Umsatzpotenzial eines echten SaaS-Modells zu erschließen.",
+      "features": [
+        "Umstellung von Single-Tenant- auf Multi-Tenant-Architektur",
+        "Legacy-Datenbankmigration (On-Premise in die Cloud)",
+        "Stripe-Abonnementabrechnung & Preisstufen",
+        "Einheitliches Identitäts- & Zugriffsmanagement (Auth0 / Cognito)",
+        "Zero-Downtime-Migrationsstrategien",
+        "Aufbau einer zentralisierten API-Schicht"
+      ],
+      "benefits": [
+        "Erschließen Sie wiederkehrende SaaS-Umsatzmodelle",
+        "Drastische Senkung der Wartungskosten (1 App warten, nicht 100)",
+        "Globale Skalierung auf Cloud-Infrastruktur (AWS/GCP)",
+        "Funktions-Rollouts für alle Kunden sofort verfügbar",
+        "Eliminierung manueller Onboarding-Prozesse"
+      ],
+      "content": {
+        "process": [
+          { "title": "Architektur-Audit", "description": "Analyse Ihrer aktuellen Legacy-Codebasis zur Planung des Refactorings." },
+          { "title": "Daten-Segregationsstrategie", "description": "Design eines Multi-Tenant-Datenbankschemas (z.B. mit Row-Level Security)." },
+          { "title": "Identitäts- & Abrechnungsintegration", "description": "Implementierung von Logins (Auth0) und Abo-Verwaltung (Stripe)." },
+          { "title": "Cloud-Infrastruktur-Setup", "description": "Bereitstellung einer skalierbaren AWS- oder GCP-Umgebung für die SaaS-Plattform." },
+          { "title": "Phasenweise Migration", "description": "Umzug der Kunden vom alten System auf die neue Plattform ohne Ausfallzeiten." }
+        ],
+        "technologies": [
+          "AWS / GCP",
+          "PostgreSQL (Row-Level Security)",
+          "Node.js / Python (API-Schicht)",
+          "Stripe (Abrechnung)",
+          "Auth0 / AWS Cognito",
+          "Docker / Kubernetes"
+        ],
+        "faq": [
+          { "question": "Wie stellen Sie sicher, dass keine Kundendaten in einem Multi-Tenant-System durchsickern?", "answer": "Datensicherheit hat höchste Priorität. Wir nutzen strikte Datenbankmuster wie PostgreSQL Row-Level Security (RLS), um sicherzustellen, dass ein Bug im Code niemals die Daten eines Mandanten für einen anderen sichtbar macht." },
+          { "question": "Werden unsere Kunden während der Migration Ausfallzeiten erleben?", "answer": "Wir nutzen Zero-Downtime-Strategien. Wir halten das alte System am Laufen, während wir im Hintergrund Daten auf die neue Plattform synchronisieren. Die tatsächliche Umschaltung erfolgt sofort per DNS." }
+        ]
+      },
+      "metaTitle": "SaaS Migrationsdienste | Legacy Software zu SaaS Agentur",
+      "metaDescription": "Konvertieren Sie Ihre On-Premise-Software in ein skalierbares Multi-Tenant-SaaS. Spezialisiert auf Cloud-Migration, Stripe-Abrechnung und Datensegregation."
+    },
+    "ur": {
+      "name": "SaaS ہجرت",
+      "shortDescription": "اپنے سافٹ ویئر کو ایک قابل توسیع SaaS پلیٹ فارم میں تبدیل کریں۔",
+      "fullDescription": "ایک موجودہ سنگل کرایہ دار ایپلی کیشن یا لیگی سافٹ ویئر کو جدید سافٹ ویئر-ای-سروس (SaaS) ماڈل میں منتقل کرنا ایک بہت بڑی تکنیکی اور کاروباری تبدیلی ہے۔ ہماری SaaS مائیگریشن سروسز آپ کے موجودہ آمدنی کے سلسلے میں خلل ڈالے بغیر اس پیچیدہ منتقلی کے ذریعے آپ کی رہنمائی کرتی ہیں۔ ہم الگ تھلگ کوڈ بیسز کو سچے ملٹی کرایہ دار فن تعمیر میں تبدیل کرنے میں مہارت رکھتے ہیں، اس بات کو یقینی بناتے ہوئے کہ تمام کلائنٹ ایک ہی، برقرار رکھنے کے قابل ایپلیکیشن کی مثال کا اشتراک کریں جبکہ ان کا ڈیٹا سختی سے محفوظ اور الگ تھلگ رہے۔ آن پریمیسس ڈیٹا بیس کو کلاؤڈ میں منتقل کرنے اور سنٹرلائزڈ API پرت بنانے سے لے کر، بار بار چلنے والی بلنگ کے لیے سٹرائپ کو نافذ کرنے اور متحد شناخت کے انتظام کے لیے Auth0 تک، ہم آپ کو ایک حقیقی SaaS ماڈل کی اسکیل ایبلٹی اور بار بار چلنے والی آمدنی کے امکانات کو غیر مقفل کرنے میں مدد کرتے ہیں۔",
+      "features": [
+        "سنگل کرایہ دار سے ملٹی ٹینینٹ آرکیٹیکچر میں تبدیلی",
+        "میراثی ڈیٹا بیس کی منتقلی (آن پریمیس سے کلاؤڈ تک)",
+        "Stripe سبسکرپشن بلنگ اور قیمتوں کے درجے کا سیٹ اپ",
+        "یونیفائیڈ آئیڈینٹی اور ایکسیس مینجمنٹ (Auth0 / Cognito)",
+        "زیرو ڈاون ٹائم مائیگریشن کی حکمت عملی",
+        "مرکزی API پرت کی ترقی"
+      ],
+      "benefits": [
+        "بار بار چلنے والے SaaS ریونیو ماڈلز کو غیر مقفل کریں۔",
+        "دیکھ بھال کے اخراجات میں زبردست کمی کریں (1 ایپ کو برقرار رکھیں، 100 نہیں)",
+        "کلاؤڈ انفراسٹرکچر (AWS/GCP) پر عالمی سطح پر اسکیل کریں",
+        "فوری طور پر تمام صارفین کے لیے فیچر رول آؤٹ کی رفتار کو بہتر بنائیں",
+        "دستی آن بورڈنگ اور فراہمی کو ختم کریں۔"
+      ],
+      "content": {
+        "process": [
+          { "title": "آرکیٹیکچر آڈٹ", "description": "ضروری ریفیکٹرنگ کا خاکہ بنانے کے لیے اپنی موجودہ وراثت یا سنگل کرایہ دار کے کوڈ بیس کا تجزیہ کرنا۔" },
+          { "title": "ڈیٹا کو الگ کرنے کی حکمت عملی", "description": "ڈیٹا کو الگ کرنے کو یقینی بنانے کے لیے ایک کثیر کرایہ دار ڈیٹا بیس اسکیما (مثلاً، قطار کی سطح کی سیکیورٹی کا استعمال کرتے ہوئے) ڈیزائن کرنا۔" },
+          { "title": "شناخت اور بلنگ انٹیگریشن", "description": "نئے ماڈل کے لیے متحد لاگ انز (Auth0) اور سبسکرپشن مینجمنٹ (Stripe) کا نفاذ۔" },
+          { "title": "کلاؤڈ انفراسٹرکچر سیٹ اپ", "description": "SaaS پلیٹ فارم کی میزبانی کے لیے ایک قابل توسیع، خودکار AWS یا GCP ماحول کی فراہمی۔" },
+          { "title": "مرحلہ وار ہجرت", "description": "صفر ڈاؤن ٹائم کو یقینی بنانے کے لیے صارفین کو پرانے نظام سے نئے ساس پلیٹ فارم پر بیچوں میں منتقل کرنا۔" }
+        ],
+        "technologies": [
+          "AWS / GCP",
+          "PostgreSQL (قطار کی سطح کی حفاظت)",
+          "Node.js / Python (API پرت)",
+          "Stripe (بلنگ)",
+          "Auth0 / AWS Cognito",
+          "Docker / Kubernetes"
+        ],
+        "faq": [
+          { "question": "آپ کیسے یقینی بناتے ہیں کہ ملٹی ٹیننٹ سسٹم میں کسٹمر کا ڈیٹا لیک نہ ہو؟", "answer": "ڈیٹا سیکیورٹی ہماری اولین ترجیح ہے۔ ہم سخت ڈیٹا بیس کے آرکیٹیکچر پیٹرن استعمال کرتے ہیں، جیسے پوسٹگری ایس کیو ایل قطار کی سطح کی سیکیورٹی (RLS) یا منطقی اسکیما کی علیحدگی، اس بات کو یقینی بناتے ہوئے کہ ایپلی کیشن کوڈ میں بگ غلطی سے بھی ایک کرایہ دار کے ڈیٹا کو دوسرے پر ظاہر نہیں کر سکتا۔" },
+          { "question": "کیا ہمارے صارفین کو ہجرت کے دوران ڈاؤن ٹائم کا تجربہ ہوگا؟", "answer": "ہم 'صفر-ڈاؤن ٹائم' تعیناتی کی حکمت عملی استعمال کرتے ہیں۔ پس منظر میں نئے SaaS پلیٹ فارم سے ڈیٹا کو مطابقت پذیر کرتے ہوئے ہم پرانے سسٹم کو چلاتے رہتے ہیں۔ اصل کٹ اوور DNS روٹنگ کے ذریعے فوری طور پر ہوتا ہے۔" }
+        ]
+      },
+      "metaTitle": "SaaS مائیگریشن سروسز | ساس ایجنسی کے لیے میراثی سافٹ ویئر",
+      "metaDescription": "اپنے سنگل کرایہ دار یا آن پریمیسس سافٹ ویئر کو قابل توسیع ملٹی ٹیننٹ SaaS میں تبدیل کریں۔ ہم کلاؤڈ مائیگریشن، سٹرائپ بلنگ، اور ڈیٹا الگ کرنے میں مہارت رکھتے ہیں۔"
+    },
+    "ar": {
+      "name": "الترحيل إلى SaaS (SaaS Migration)",
+      "shortDescription": "حوّل برنامجك الحالي إلى منصة SaaS قابلة للتطوير.",
+      "fullDescription": "يعد نقل تطبيق حالي أحادي المستأجر (Single-tenant) أو برنامج قديم (Legacy) إلى نموذج حديث للبرمجيات كخدمة (SaaS) تحولًا تكنولوجيًا وتجاريًا هائلاً. ترشدك خدمات ترحيل SaaS الخاصة بنا خلال هذا الانتقال المعقد دون الإخلال بتدفقات الإيرادات الحالية. نحن متخصصون في تحويل قواعد التعليمات البرمجية المعزولة إلى بنيات معمارية حقيقية متعددة المستأجرين (Multi-tenant)، مما يضمن مشاركة جميع العملاء في نسخة تطبيق واحدة قابلة للصيانة، مع إبقاء بياناتهم آمنة ومفصولة تمامًا. من ترحيل قواعد البيانات المحلية إلى السحابة وبناء طبقة API مركزية، إلى تنفيذ Stripe للفوترة المتكررة و Auth0 لإدارة الهوية الموحدة، نساعدك على إطلاق العنان لإمكانات قابلية التوسع والإيرادات المتكررة لنموذج SaaS حقيقي.",
+      "features": [
+        "التحويل من بنية أحادية المستأجر إلى متعددة المستأجرين",
+        "ترحيل قواعد البيانات القديمة (من المحلية إلى السحابية)",
+        "إعداد فوترة اشتراكات Stripe ومستويات التسعير",
+        "إدارة الهوية والوصول الموحدة (Auth0 / Cognito)",
+        "استراتيجيات ترحيل بدون وقت توقف (Zero-Downtime)",
+        "تطوير طبقة واجهة برمجة تطبيقات (API) مركزية"
+      ],
+      "benefits": [
+        "إطلاق العنان لنماذج إيرادات SaaS المتكررة",
+        "خفض تكاليف الصيانة بشكل كبير (صيانة تطبيق واحد بدلاً من 100)",
+        "التوسع عالميًا على البنية التحتية السحابية (AWS / GCP)",
+        "تحسين سرعة طرح الميزات لجميع العملاء على الفور",
+        "القضاء على الإعداد والتكوين اليدوي"
+      ],
+      "content": {
+        "process": [
+          { "title": "تدقيق البنية الهندسية", "description": "تحليل الكود القديم أو أحادي المستأجر الحالي لرسم خريطة لإعادة الهيكلة المطلوبة." },
+          { "title": "استراتيجية فصل البيانات", "description": "تصميم مخطط قاعدة بيانات متعدد المستأجرين (مثل استخدام أمان مستوى الصف) لضمان عزل البيانات." },
+          { "title": "تكامل الهوية والفوترة", "description": "تنفيذ تسجيل دخول موحد (Auth0) وإدارة الاشتراكات (Stripe) للنموذج الجديد." },
+          { "title": "إعداد البنية التحتية السحابية", "description": "توفير بيئة AWS أو GCP قابلة للتطوير ومؤتمتة لاستضافة منصة SaaS." },
+          { "title": "الترحيل المرحلي", "description": "نقل العملاء من النظام القديم إلى منصة SaaS الجديدة على دفعات لضمان عدم وجود وقت توقف." }
+        ],
+        "technologies": [
+          "AWS / GCP",
+          "PostgreSQL (أمان مستوى الصف - RLS)",
+          "Node.js / Python (طبقة API)",
+          "Stripe (الفوترة)",
+          "Auth0 / AWS Cognito",
+          "Docker / Kubernetes"
+        ],
+        "faq": [
+          { "question": "كيف تضمن عدم تسرب بيانات العملاء في نظام متعدد المستأجرين؟", "answer": "أمن البيانات هو أولويتنا القصوى. نحن نستخدم أنماط بنية قاعدة بيانات صارمة، مثل أمان مستوى الصف في PostgreSQL (RLS) أو فصل المخطط المنطقي، مما يضمن أن الخطأ في كود التطبيق لا يمكن أبدًا أن يكشف عن طريق الخطأ بيانات مستأجر لآخر." },
+          { "question": "هل سيواجه عملاؤنا فترة توقف (Downtime) أثناء الترحيل؟", "answer": "نحن نستخدم استراتيجيات النشر 'بدون وقت توقف'. نحافظ على تشغيل النظام القديم مع مزامنة البيانات مع منصة SaaS الجديدة في الخلفية. يحدث التبديل الفعلي على الفور عبر توجيه DNS." }
+        ]
+      },
+      "metaTitle": "خدمات الترحيل إلى SaaS | تحويل البرامج القديمة إلى SaaS",
+      "metaDescription": "حوّل برنامجك أحادي المستأجر أو المحلي إلى SaaS قابل للتطوير. نحن متخصصون في الترحيل السحابي، وفوترة Stripe، وفصل البيانات."
+    }
+  },
+  "shopify-development": {
+    "en": {
+      "name": "Shopify Development",
+      "shortDescription": "Create beautiful, high-converting Shopify stores with custom themes and app integrations.",
+      "fullDescription": "In the crowded e-commerce space, a generic storefront isn't enough to capture and retain customers. Our Shopify Development services elevate your brand by building bespoke, high-converting stores tailored exactly to your business model. Whether you need a highly customized Shopify Liquid theme from scratch, a headless commerce build using Shopify Hydrogen, or custom private Shopify apps to automate your back-office logistics, we have the technical expertise. We focus heavily on core web vitals and mobile performance, ensuring your store loads in milliseconds. We also specialize in Shopify Plus migrations for enterprise brands needing advanced B2B wholesale features, complex product configurators, and ERP integrations.",
+      "features": [
+        "Custom Shopify Theme Design & Development (Liquid/JSON)",
+        "Headless Shopify Implementations (Hydrogen / Next.js)",
+        "Custom Private & Public Shopify App Development",
+        "Shopify Plus Enterprise Migrations & B2B Setup",
+        "Checkout UI Customizations (Shopify Plus)",
+        "ERP, CRM & 3PL Warehouse Integrations"
+      ],
+      "benefits": [
+        "Higher Conversion Rates via Fast, Mobile-First Design",
+        "Stand Out from Competitors with Unique Branding",
+        "Streamlined Operations via Automated Integrations",
+        "Enterprise Scalability with Shopify Plus",
+        "Zero Technical Headaches (We manage the entire ecosystem)"
+      ],
+      "content": {
+        "process": [
+          { "title": "Strategy & UX Audit", "description": "Analyzing your target audience and creating wireframes optimized for conversions." },
+          { "title": "Custom UI Design", "description": "Designing high-fidelity mockups that reflect your brand identity perfectly." },
+          { "title": "Theme & App Development", "description": "Coding the custom Liquid theme and building any necessary middleware or private apps." },
+          { "title": "Data Migration", "description": "Securely migrating products, customers, and order history from WooCommerce/Magento to Shopify." },
+          { "title": "Speed Optimization & Launch", "description": "Optimizing images and scripts to ensure maximum performance before go-live." }
+        ],
+        "technologies": [
+          "Shopify & Shopify Plus",
+          "Liquid / JSON Templates",
+          "React / Next.js (Headless)",
+          "Shopify CLI / Theme Kit",
+          "Klaviyo / ReCharge (Integrations)",
+          "Node.js (App Backend)"
+        ],
+        "faq": [
+          { "question": "Should we use a standard Shopify Theme or Headless Commerce?", "answer": "For most brands, a highly customized standard Shopify (Liquid) theme offers the best balance of speed, cost, and ease of management. Headless (Next.js/Hydrogen) is recommended for enterprise brands that need lightning-fast speed, complex content management (CMS), or omnichannel selling." },
+          { "question": "Can you migrate our store from WooCommerce/Magento?", "answer": "Yes. We handle the entire migration process, mapping your existing products, variants, customer data, and order history securely into Shopify without losing SEO rankings." }
+        ]
+      },
+      "metaTitle": "Shopify Development Agency | Custom Themes & Shopify Plus",
+      "metaDescription": "Build a high-converting e-commerce store with our Shopify development services. We specialize in custom Liquid themes, Shopify Plus, and headless commerce."
+    },
+    "tr": {
+      "name": "Shopify Geliştirme",
+      "shortDescription": "Özel temalar ve uygulama entegrasyonlarıyla güzel, yüksek dönüşüm sağlayan Shopify mağazaları oluşturun.",
+      "fullDescription": "Kalabalık e-ticaret alanında, müşterileri yakalamak ve elde tutmak için sıradan bir vitrin yeterli değildir. Shopify Geliştirme hizmetlerimiz, tam olarak iş modelinize göre uyarlanmış özel, yüksek dönüşümlü mağazalar oluşturarak markanızı bir üst seviyeye taşır. Sıfırdan son derece özelleştirilmiş bir Shopify Liquid temasına, Shopify Hydrogen kullanarak başsız (headless) bir ticaret yapısına veya arka ofis lojistiğinizi otomatikleştirmek için özel gizli (private) Shopify uygulamalarına ihtiyacınız olsun, gereken teknik uzmanlığa sahibiz. Önemli web verilerine (core web vitals) ve mobil performansa büyük önem vererek mağazanızın milisaniyeler içinde yüklenmesini sağlıyoruz. Ayrıca gelişmiş B2B toptan satış özellikleri, karmaşık ürün konfigüratörleri ve ERP entegrasyonlarına ihtiyaç duyan kurumsal markalar için Shopify Plus geçişlerinde de uzmanız.",
+      "features": [
+        "Özel Shopify Tema Tasarımı ve Geliştirme (Liquid/JSON)",
+        "Başsız (Headless) Shopify Uygulamaları (Hydrogen / Next.js)",
+        "Özel Gizli (Private) ve Genel (Public) Shopify Uygulama Geliştirme",
+        "Shopify Plus Kurumsal Geçişleri ve B2B Kurulumu",
+        "Ödeme Sayfası (Checkout) UI Özelleştirmeleri (Shopify Plus)",
+        "ERP, CRM ve 3PL Depo Entegrasyonları"
+      ],
+      "benefits": [
+        "Hızlı, Mobil Öncelikli Tasarımla Daha Yüksek Dönüşüm Oranları",
+        "Eşsiz Markalaşma ile Rakiplerinizden Sıyrılın",
+        "Otomatik Entegrasyonlarla Operasyonları Kolaylaştırma",
+        "Shopify Plus ile Kurumsal Ölçeklenebilirlik",
+        "Sıfır Teknik Baş Ağrısı (Tüm ekosistemi biz yönetiyoruz)"
+      ],
+      "content": {
+        "process": [
+          { "title": "Strateji ve UX Denetimi", "description": "Hedef kitlenizi analiz etme ve dönüşümler için optimize edilmiş tel kafesler oluşturma." },
+          { "title": "Özel UI Tasarımı", "description": "Marka kimliğinizi mükemmel bir şekilde yansıtan aslına uygun (high-fidelity) maketler tasarlama." },
+          { "title": "Tema ve Uygulama Geliştirme", "description": "Özel Liquid temasını kodlama ve gerekli herhangi bir ara yazılımı (middleware) veya gizli uygulamayı oluşturma." },
+          { "title": "Veri Geçişi", "description": "Ürünleri, müşterileri ve sipariş geçmişini WooCommerce/Magento'dan Shopify'a güvenli bir şekilde taşıma." },
+          { "title": "Hız Optimizasyonu ve Lansman", "description": "Canlıya geçmeden önce maksimum performans sağlamak için görselleri ve komut dosyalarını (script'leri) optimize etme." }
+        ],
+        "technologies": [
+          "Shopify ve Shopify Plus",
+          "Liquid / JSON Şablonları",
+          "React / Next.js (Başsız - Headless)",
+          "Shopify CLI / Theme Kit",
+          "Klaviyo / ReCharge (Entegrasyonlar)",
+          "Node.js (Uygulama Arka Ucu)"
+        ],
+        "faq": [
+          { "question": "Standart bir Shopify Teması mı yoksa Başsız (Headless) Ticaret mi kullanmalıyız?", "answer": "Çoğu marka için son derece özelleştirilmiş standart bir Shopify (Liquid) teması hız, maliyet ve yönetim kolaylığı açısından en iyi dengeyi sunar. Başsız (Headless - Next.js/Hydrogen), yıldırım hızına, karmaşık içerik yönetimine (CMS) veya çok kanallı (omnichannel) satışa ihtiyaç duyan kurumsal markalar için önerilir." },
+          { "question": "Mağazamızı WooCommerce/Magento'dan taşıyabilir misiniz?", "answer": "Evet. Mevcut ürünlerinizi, varyasyonlarınızı, müşteri verilerinizi ve sipariş geçmişinizi SEO sıralamalarınızı kaybetmeden güvenli bir şekilde Shopify'a eşleyerek tüm geçiş sürecini biz yönetiyoruz." }
+        ]
+      },
+      "metaTitle": "Shopify Geliştirme Ajansı | Özel Temalar ve Shopify Plus",
+      "metaDescription": "Shopify geliştirme hizmetlerimizle yüksek dönüşüm sağlayan bir e-ticaret mağazası oluşturun. Özel Liquid temaları, Shopify Plus ve başsız (headless) ticarette uzmanız."
+    },
+    "de": {
+      "name": "Shopify Entwicklung",
+      "shortDescription": "Erstellen Sie schöne, konvertierungsstarke Shopify-Shops mit individuellen Themes.",
+      "fullDescription": "Im überfüllten E-Commerce-Markt reicht ein generischer Shop nicht aus, um Kunden zu gewinnen und zu binden. Unsere Shopify-Entwicklungsdienste heben Ihre Marke hervor, indem wir maßgeschneiderte, konvertierungsstarke Shops bauen, die exakt auf Ihr Geschäftsmodell zugeschnitten sind. Ob Sie ein hochgradig angepasstes Shopify Liquid-Theme von Grund auf, einen Headless-Commerce-Build mit Shopify Hydrogen oder benutzerdefinierte private Shopify-Apps zur Automatisierung Ihrer Logistik benötigen – wir haben die technische Expertise. Wir legen großen Wert auf Core Web Vitals und mobile Performance, damit Ihr Shop in Millisekunden lädt. Zudem sind wir spezialisiert auf Shopify Plus-Migrationen für Enterprise-Marken, die erweiterte B2B-Großhandelsfunktionen, komplexe Produktkonfiguratoren und ERP-Integrationen benötigen.",
+      "features": [
+        "Individuelles Shopify Theme-Design & Entwicklung (Liquid/JSON)",
+        "Headless Shopify Implementierungen (Hydrogen / Next.js)",
+        "Entwicklung privater & öffentlicher Shopify Apps",
+        "Shopify Plus Enterprise-Migrationen & B2B-Setup",
+        "Checkout UI-Anpassungen (Shopify Plus)",
+        "ERP, CRM & 3PL-Lager-Integrationen"
+      ],
+      "benefits": [
+        "Höhere Konversionsraten durch schnelles Mobile-First-Design",
+        "Heben Sie sich mit einzigartigem Branding von der Konkurrenz ab",
+        "Optimierte Abläufe durch automatisierte Integrationen",
+        "Enterprise-Skalierbarkeit mit Shopify Plus",
+        "Kein technischer Stress (Wir managen das gesamte Ökosystem)"
+      ],
+      "content": {
+        "process": [
+          { "title": "Strategie & UX-Audit", "description": "Analyse der Zielgruppe und Erstellung konvertierungsoptimierter Wireframes." },
+          { "title": "Individuelles UI-Design", "description": "Gestaltung detaillierter Mockups, die Ihre Markenidentität perfekt widerspiegeln." },
+          { "title": "Theme- & App-Entwicklung", "description": "Programmierung des Liquid-Themes und Entwicklung notwendiger Apps/Middleware." },
+          { "title": "Datenmigration", "description": "Sichere Migration von Produkten, Kunden und Bestellhistorie von WooCommerce/Magento zu Shopify." },
+          { "title": "Speed-Optimierung & Launch", "description": "Optimierung von Bildern und Skripten für maximale Performance vor dem Go-Live." }
+        ],
+        "technologies": [
+          "Shopify & Shopify Plus",
+          "Liquid / JSON Templates",
+          "React / Next.js (Headless)",
+          "Shopify CLI / Theme Kit",
+          "Klaviyo / ReCharge (Integrationen)",
+          "Node.js (App Backend)"
+        ],
+        "faq": [
+          { "question": "Sollten wir ein Standard Shopify Theme oder Headless Commerce nutzen?", "answer": "Für die meisten Marken bietet ein angepasstes Standard-Shopify-Theme (Liquid) die beste Balance. Headless (Next.js/Hydrogen) ist für Enterprise-Marken sinnvoll, die extreme Geschwindigkeit, komplexe CMS oder Omnichannel-Verkauf benötigen." },
+          { "question": "Können Sie unseren Shop von WooCommerce/Magento migrieren?", "answer": "Ja. Wir übernehmen den gesamten Migrationsprozess und übertragen Produkte, Varianten, Kundendaten und Bestellungen sicher, ohne SEO-Rankings zu verlieren." }
+        ]
+      },
+      "metaTitle": "Shopify Entwicklungsagentur | Custom Themes & Shopify Plus",
+      "metaDescription": "Bauen Sie einen konvertierungsstarken E-Commerce-Shop mit unserer Shopify-Entwicklung. Spezialisiert auf Liquid-Themes, Shopify Plus und Headless Commerce."
+    },
+    "ur": {
+      "name": "Shopify ڈیولپمنٹ",
+      "shortDescription": "اپنی مرضی کے تھیمز اور ایپ کے انضمام کے ساتھ خوبصورت، اعلی تبدیلی والے Shopify اسٹورز بنائیں۔",
+      "fullDescription": "پرہجوم ای کامرس کی جگہ میں، ایک عام اسٹور فرنٹ گاہکوں کو پکڑنے اور برقرار رکھنے کے لیے کافی نہیں ہے۔ ہماری شاپائف ڈیولپمنٹ سروسز آپ کے کاروباری ماڈل کے عین مطابق بیپوک، اعلیٰ تبدیل کرنے والے اسٹورز بنا کر آپ کے برانڈ کو بلند کرتی ہیں۔ چاہے آپ کو شروع سے انتہائی حسب ضرورت شاپائف مائع تھیم کی ضرورت ہو، شاپائف ہائیڈروجن کا استعمال کرتے ہوئے ایک ہیڈ لیس کامرس کی تعمیر، یا آپ کی بیک آفس لاجسٹکس کو خودکار کرنے کے لیے حسب ضرورت پرائیویٹ شاپائف ایپس کی ضرورت ہو، ہمارے پاس تکنیکی مہارت موجود ہے۔ ہم بنیادی ویب وائٹلز اور موبائل کی کارکردگی پر بہت زیادہ توجہ مرکوز کرتے ہیں، اس بات کو یقینی بناتے ہوئے کہ آپ کا اسٹور ملی سیکنڈ میں لوڈ ہو۔ ہم انٹرپرائز برانڈز کے لیے شاپائف پلس مائیگریشن میں بھی مہارت رکھتے ہیں جنہیں جدید B2B ہول سیل خصوصیات، پیچیدہ پروڈکٹ کنفیگریٹرز، اور ERP انٹیگریشنز کی ضرورت ہوتی ہے۔",
+      "features": [
+        "اپنی مرضی کے مطابق شاپائف تھیم ڈیزائن اور ترقی (مائع/JSON)",
+        "ہیڈ لیس شاپائف امپلیمینٹیشن (ہائیڈروجن / Next.js)",
+        "کسٹم پرائیویٹ اور پبلک شاپائف ایپ کی ترقی",
+        "Shopify Plus Enterprise Migrations & B2B Setup",
+        "چیک آؤٹ UI کسٹمائزیشنز (شاپائف پلس)",
+        "ای آر پی، سی آر ایم اور تھری پی ایل گودام کے انضمام"
+      ],
+      "benefits": [
+        "تیز، موبائل فرسٹ ڈیزائن کے ذریعے تبدیلی کی اعلی شرحیں۔",
+        "منفرد برانڈنگ کے ساتھ حریفوں سے الگ ہوں۔",
+        "خودکار انضمام کے ذریعے ہموار آپریشنز",
+        "شاپائف پلس کے ساتھ انٹرپرائز اسکیل ایبلٹی",
+        "زیرو ٹیکنیکل سر درد (ہم پورے ماحولیاتی نظام کا انتظام کرتے ہیں)"
+      ],
+      "content": {
+        "process": [
+          { "title": "حکمت عملی اور UX آڈٹ", "description": "اپنے ہدف کے سامعین کا تجزیہ کرنا اور تبادلوں کے لیے موزوں وائر فریم بنانا۔" },
+          { "title": "اپنی مرضی کے UI ڈیزائن", "description": "ہائی فائیڈیلٹی موک اپس ڈیزائن کرنا جو آپ کے برانڈ کی شناخت کی مکمل عکاسی کرتے ہیں۔" },
+          { "title": "تھیم اور ایپ کی ترقی", "description": "اپنی مرضی کے مائع تھیم کو کوڈنگ کرنا اور کوئی ضروری مڈل ویئر یا نجی ایپس بنانا۔" },
+          { "title": "ڈیٹا مائیگریشن", "description": "WooCommerce/Magento سے Shopify پر مصنوعات، صارفین، اور آرڈر کی تاریخ کو محفوظ طریقے سے منتقل کرنا۔" },
+          { "title": "سپیڈ آپٹیمائزیشن اور لانچ", "description": "لائیو ہونے سے پہلے زیادہ سے زیادہ کارکردگی کو یقینی بنانے کے لیے تصاویر اور اسکرپٹس کو بہتر بنانا۔" }
+        ],
+        "technologies": [
+          "Shopify & Shopify Plus",
+          "Liquid / JSON Templates",
+          "React / Next.js (Headless)",
+          "Shopify CLI / Theme Kit",
+          "Klaviyo / ReCharge (Integrations)",
+          "Node.js (App Backend)"
+        ],
+        "faq": [
+          { "question": "کیا ہمیں معیاری Shopify تھیم استعمال کرنا چاہیے یا ہیڈ لیس کامرس؟", "answer": "زیادہ تر برانڈز کے لیے، ایک انتہائی حسب ضرورت معیاری شاپائف (مائع) تھیم رفتار، قیمت اور انتظام میں آسانی کا بہترین توازن پیش کرتا ہے۔ ہیڈ لیس (Next.js/Hydrogen) کو انٹرپرائز برانڈز کے لیے تجویز کیا جاتا ہے جنہیں بجلی کی تیز رفتار، پیچیدہ مواد کے انتظام (CMS)، یا ہمہ جہت فروخت کی ضرورت ہے۔" },
+          { "question": "کیا آپ ہمارے اسٹور کو WooCommerce/Magento سے منتقل کر سکتے ہیں؟", "answer": "ہاں۔ ہم نقل مکانی کے پورے عمل کو ہینڈل کرتے ہیں، آپ کی موجودہ مصنوعات، متغیرات، گاہک کے ڈیٹا، اور آرڈر کی تاریخ کو SEO درجہ بندی کھوئے بغیر محفوظ طریقے سے Shopify میں میپ کرتے ہیں۔" }
+        ]
+      },
+      "metaTitle": "شاپائف ڈیولپمنٹ ایجنسی | کسٹم تھیمز اور شاپائف پلس",
+      "metaDescription": "ہماری Shopify ڈیولپمنٹ سروسز کے ساتھ اعلیٰ تبدیلی والا ای کامرس اسٹور بنائیں۔ ہم اپنی مرضی کے مائع تھیمز، شاپائف پلس، اور ہیڈ لیس کامرس میں مہارت رکھتے ہیں۔"
+    },
+    "ar": {
+      "name": "تطوير Shopify",
+      "shortDescription": "إنشاء متاجر Shopify جميلة وعالية التحويل مع سمات (Themes) مخصصة وتكامل للتطبيقات.",
+      "fullDescription": "في مساحة التجارة الإلكترونية المزدحمة، لا تكفي واجهة المتجر العامة لجذب العملاء والاحتفاظ بهم. ترتقي خدمات تطوير Shopify لدينا بعلامتك التجارية من خلال بناء متاجر مخصصة عالية التحويل مصممة خصيصًا لنموذج عملك. سواء كنت بحاجة إلى سمة Shopify Liquid مخصصة للغاية من الصفر، أو بناء تجارة بدون رأس (Headless commerce) باستخدام Shopify Hydrogen، أو تطبيقات Shopify خاصة مخصصة لأتمتة لوجستيات مكتبك الخلفي، فنحن نمتلك الخبرة الفنية. نحن نركز بشدة على مؤشرات أداء الويب الأساسية (Core web vitals) وأداء الجوال، مما يضمن تحميل متجرك في أجزاء من الثانية. نحن متخصصون أيضًا في ترحيل العلامات التجارية للمؤسسات إلى Shopify Plus التي تحتاج إلى ميزات مبيعات الجملة B2B المتقدمة، ومكونات المنتجات المعقدة، وتكامل تخطيط موارد المؤسسات (ERP).",
+      "features": [
+        "تصميم وتطوير سمات Shopify مخصصة (Liquid/JSON)",
+        "تطبيقات Shopify بدون رأس (Headless - Hydrogen / Next.js)",
+        "تطوير تطبيقات Shopify خاصة وعامة مخصصة",
+        "عمليات الترحيل إلى مؤسسات Shopify Plus وإعداد B2B",
+        "تخصيص واجهة مستخدم الدفع (Checkout UI) (Shopify Plus فقط)",
+        "تكامل ERP و CRM ومستودعات 3PL"
+      ],
+      "benefits": [
+        "معدلات تحويل أعلى عبر تصميم سريع يعطي الأولوية للجوال",
+        "التميز عن المنافسين بعلامة تجارية فريدة",
+        "تبسيط العمليات عبر عمليات التكامل المؤتمتة",
+        "قابلية التوسع على مستوى المؤسسات مع Shopify Plus",
+        "بدون صداع تقني (نحن ندير النظام البيئي بالكامل)"
+      ],
+      "content": {
+        "process": [
+          { "title": "استراتيجية وتدقيق تجربة المستخدم (UX)", "description": "تحليل جمهورك المستهدف وإنشاء تخطيطات شبكية (Wireframes) محسّنة للتحويلات." },
+          { "title": "تصميم واجهة مستخدم (UI) مخصصة", "description": "تصميم نماذج أولية عالية الدقة تعكس هوية علامتك التجارية بشكل مثالي." },
+          { "title": "تطوير السمة (Theme) والتطبيق", "description": "برمجة سمة Liquid المخصصة وبناء أي برامج وسيطة (Middleware) أو تطبيقات خاصة ضرورية." },
+          { "title": "ترحيل البيانات", "description": "ترحيل المنتجات والعملاء وسجل الطلبات بأمان من WooCommerce/Magento إلى Shopify." },
+          { "title": "تحسين السرعة والإطلاق", "description": "تحسين الصور والنصوص البرمجية لضمان أقصى أداء قبل البث المباشر." }
+        ],
+        "technologies": [
+          "Shopify & Shopify Plus",
+          "قوالب Liquid / JSON",
+          "React / Next.js (بدون رأس - Headless)",
+          "Shopify CLI / Theme Kit",
+          "Klaviyo / ReCharge (للتكاملات)",
+          "Node.js (خلفية التطبيقات)"
+        ],
+        "faq": [
+          { "question": "هل يجب أن نستخدم سمة Shopify قياسية أم التجارة بدون رأس (Headless Commerce)؟", "answer": "بالنسبة لمعظم العلامات التجارية، توفر سمة Shopify (Liquid) القياسية والمخصصة للغاية أفضل توازن بين السرعة والتكلفة وسهولة الإدارة. يوصى باستخدام (Headless) (Next.js/Hydrogen) لعلامات المؤسسات التجارية التي تحتاج إلى سرعة فائقة، أو إدارة محتوى معقدة (CMS)، أو البيع عبر قنوات متعددة (Omnichannel)." },
+          { "question": "هل يمكنك ترحيل متجرنا من WooCommerce / Magento؟", "answer": "نعم. نحن نتعامل مع عملية الترحيل بالكامل، ورسم خرائط للمنتجات الحالية، والمتغيرات، وبيانات العملاء، وسجل الطلبات بأمان إلى Shopify دون فقدان تصنيفات تحسين محركات البحث (SEO)." }
+        ]
+      },
+      "metaTitle": "وكالة تطوير Shopify | سمات مخصصة و Shopify Plus",
+      "metaDescription": "قم ببناء متجر تجارة إلكترونية عالي التحويل مع خدمات تطوير Shopify لدينا. نحن متخصصون في سمات Liquid المخصصة، و Shopify Plus، والتجارة بدون رأس."
+    }
+  }
+}

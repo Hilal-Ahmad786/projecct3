@@ -1,0 +1,433 @@
+{
+  "custom-business-software": {
+    "en": {
+      "name": "Custom Business Software",
+      "shortDescription": "Build custom software solutions for your unique business processes.",
+      "fullDescription": "Stop forcing your business to adapt to rigid off-the-shelf software. Our Custom Business Software solutions are engineered from the ground up to fit your exact operational workflows. Whether you need a proprietary inventory management system, a specialized HR portal, or a complex data analytics dashboard, we build secure, scalable applications that automate manual tasks and integrate seamlessly with your existing third-party tools. Empower your team with software that works exactly the way you do.",
+      "features": [
+        "Process Automation",
+        "Custom Workflows",
+        "Third-Party Integration",
+        "Reporting & Analytics",
+        "Role-Based Access",
+        "Mobile Access"
+      ],
+      "benefits": [
+        "Increased Operational Efficiency",
+        "Elimination of Manual Data Entry",
+        "Scalability for Future Growth",
+        "Total Ownership of Intellectual Property",
+        "Enhanced Data Security"
+      ],
+      "content": {
+        "process": [
+          { "title": "Discovery & Analysis", "description": "Deep-diving into your daily operations to identify bottlenecks." },
+          { "title": "Solution Design", "description": "Creating wireframes and mapping out logical database architectures." },
+          { "title": "Agile Development", "description": "Building the software in sprints, providing regular updates and demos." },
+          { "title": "System Integration", "description": "Connecting the new software to your legacy systems via APIs." },
+          { "title": "Deployment & Training", "description": "Rolling out the system and training your staff for maximum adoption." }
+        ],
+        "technologies": [
+          "React",
+          "Node.js",
+          "PostgreSQL",
+          "Docker",
+          "AWS",
+          "GraphQL"
+        ],
+        "faq": [
+          { "question": "Why should I choose custom software over SaaS products?", "answer": "Custom software gives you 100% control over features, security, and updates. While SaaS has recurring licensing fees that grow with your team, custom software is a one-time investment that scales infinitely without per-user costs." },
+          { "question": "Can this software be accessed on mobile devices?", "answer": "Yes, we build responsive web applications that work perfectly on tablets and smartphones, or we can develop dedicated companion mobile apps." }
+        ]
+      },
+      "metaTitle": "Custom Business Software Development | Enterprise Solutions",
+      "metaDescription": "Automate your workflows with Custom Business Software. We build secure, scalable, and proprietary web applications tailored to your exact operational needs."
+    },
+    "tr": {
+      "name": "Özel İş Yazılımı",
+      "shortDescription": "Benzersiz iş süreçleriniz için özel yazılım çözümleri oluşturun.",
+      "fullDescription": "İşletmenizi katı hazır yazılımlara uyum sağlamaya zorlamayı bırakın. Özel İş Yazılımı çözümlerimiz, tam olarak operasyonel iş akışlarınıza uyacak şekilde sıfırdan tasarlanmıştır. İster tescilli bir envanter yönetim sistemine, ister özel bir İK portalına veya karmaşık bir veri analitiği panosuna ihtiyacınız olsun, manuel görevleri otomatikleştiren ve mevcut üçüncü taraf araçlarınızla sorunsuz bir şekilde entegre olan güvenli, ölçeklenebilir uygulamalar geliştiriyoruz. Tam olarak sizin yaptığınız gibi çalışan yazılımlarla ekibinizi güçlendirin.",
+      "features": [
+        "Süreç Otomasyonu",
+        "Özel İş Akışları",
+        "Üçüncü Taraf Entegrasyonu",
+        "Raporlama ve Analitik",
+        "Role Dayalı Erişim",
+        "Mobil Erişim"
+      ],
+      "benefits": [
+        "Artan Operasyonel Verimlilik",
+        "Manuel Veri Girişinin Ortadan Kaldırılması",
+        "Gelecekteki Büyüme İçin Ölçeklenebilirlik",
+        "Fikri Mülkiyetin Tam Sahipliği",
+        "Gelişmiş Veri Güvenliği"
+      ],
+      "content": {
+        "process": [
+          { "title": "Keşif ve Analiz", "description": "Darboğazları belirlemek için günlük operasyonlarınıza derinlemesine dalış." },
+          { "title": "Çözüm Tasarımı", "description": "Tel çerçeveler oluşturma ve mantıksal veritabanı mimarilerinin haritasını çıkarma." },
+          { "title": "Çevik Geliştirme", "description": "Düzenli güncellemeler ve demolar sağlayarak yazılımı sprintler halinde oluşturma." },
+          { "title": "Sistem Entegrasyonu", "description": "Yeni yazılımı API'ler aracılığıyla eski sistemlerinize bağlama." },
+          { "title": "Dağıtım ve Eğitim", "description": "Sistemi kullanıma sunma ve maksimum benimseme için personelinizi eğitme." }
+        ],
+        "technologies": [
+          "React",
+          "Node.js",
+          "PostgreSQL",
+          "Docker",
+          "AWS"
+        ],
+        "faq": [
+          { "question": "SaaS ürünleri yerine neden özel yazılım seçmeliyim?", "answer": "Özel yazılım size özellikler, güvenlik ve güncellemeler üzerinde %100 kontrol sağlar. SaaS'ın ekibinizle birlikte büyüyen yinelenen lisans ücretleri varken, özel yazılım kullanıcı başına maliyet olmadan sonsuz ölçeklenen tek seferlik bir yatırımdır." },
+          { "question": "Bu yazılıma mobil cihazlardan erişilebilir mi?", "answer": "Evet, tabletlerde ve akıllı telefonlarda mükemmel çalışan duyarlı web uygulamaları oluşturuyoruz veya özel yardımcı mobil uygulamalar geliştirebiliriz." }
+        ]
+      },
+      "metaTitle": "Özel İş Yazılımı Geliştirme | Kurumsal Çözümler",
+      "metaDescription": "Özel İş Yazılımları ile iş akışlarınızı otomatikleştirin. Tam operasyonel ihtiyaçlarınıza göre tasarlanmış güvenli, ölçeklenebilir ve tescilli web uygulamaları geliştiriyoruz."
+    },
+    "de": {
+      "name": "Individuelle Unternehmenssoftware",
+      "shortDescription": "Entwickeln Sie maßgeschneiderte Softwarelösungen für Ihre einzigartigen Geschäftsprozesse.",
+      "fullDescription": "Zwingen Sie Ihr Unternehmen nicht länger dazu, sich an starre Standardsoftware anzupassen. Unsere individuellen Softwarelösungen für Unternehmen werden von Grund auf so entwickelt, dass sie genau zu Ihren operativen Abläufen passen. Ob Sie ein proprietäres Bestandsverwaltungssystem, ein spezialisiertes HR-Portal oder ein komplexes Datenanalyse-Dashboard benötigen, wir entwickeln sichere, skalierbare Anwendungen, die manuelle Aufgaben automatisieren und sich nahtlos in Ihre bestehenden Drittanbieter-Tools integrieren lassen. Stärken Sie Ihr Team mit Software, die genau so arbeitet wie Sie.",
+      "features": [
+        "Prozessautomatisierung",
+        "Benutzerdefinierte Workflows",
+        "Drittanbieter-Integration",
+        "Reporting & Analytics",
+        "Rollenbasierter Zugriff",
+        "Mobiler Zugriff"
+      ],
+      "benefits": [
+        "Gesteigerte operative Effizienz",
+        "Vermeidung manueller Dateneingabe",
+        "Skalierbarkeit für zukünftiges Wachstum",
+        "Vollständiges Eigentum am geistigen Eigentum",
+        "Erhöhte Datensicherheit"
+      ],
+      "content": {
+        "process": [
+          { "title": "Entdeckung & Analyse", "description": "Tiefes Eintauchen in Ihre täglichen Abläufe zur Identifizierung von Engpässen." },
+          { "title": "Lösungsdesign", "description": "Erstellung von Wireframes und Abbildung logischer Datenbankarchitekturen." },
+          { "title": "Agile Entwicklung", "description": "Entwicklung der Software in Sprints mit regelmäßigen Updates und Demos." },
+          { "title": "Systemintegration", "description": "Anbindung der neuen Software an Ihre Altsysteme über APIs." },
+          { "title": "Bereitstellung & Schulung", "description": "Einführung des Systems und Schulung Ihrer Mitarbeiter für maximale Akzeptanz." }
+        ],
+        "technologies": [
+          "React",
+          "Node.js",
+          "PostgreSQL",
+          "Docker",
+          "AWS"
+        ],
+        "faq": [
+          { "question": "Warum sollte ich mich für Individualsoftware anstelle von SaaS-Produkten entscheiden?", "answer": "Individualsoftware gibt Ihnen 100%ige Kontrolle über Funktionen, Sicherheit und Updates. Während SaaS wiederkehrende Lizenzgebühren hat, die mit Ihrem Team wachsen, ist Individualsoftware eine einmalige Investition, die ohne Kosten pro Benutzer unbegrenzt skaliert werden kann." },
+          { "question": "Kann auf diese Software auf mobilen Geräten zugegriffen werden?", "answer": "Ja, wir entwickeln reaktionsfähige Webanwendungen, die perfekt auf Tablets und Smartphones funktionieren, oder wir können spezielle mobile Begleit-Apps entwickeln." }
+        ]
+      },
+      "metaTitle": "Entwicklung individueller Unternehmenssoftware | Enterprise-Lösungen",
+      "metaDescription": "Automatisieren Sie Ihre Workflows mit individueller Unternehmenssoftware. Wir entwickeln sichere, skalierbare Webanwendungen, die auf Ihre Bedürfnisse zugeschnitten sind."
+    },
+    "ur": {
+      "name": "حسب ضرورت بزنس سافٹ ویئر",
+      "shortDescription": "اپنے منفرد کاروباری عمل کے لیے حسب ضرورت سافٹ ویئر حل بنائیں۔",
+      "fullDescription": "اپنے کاروبار کو سخت آف دی شیلف سافٹ ویئر کے مطابق ڈھالنے پر مجبور کرنا بند کریں۔ ہمارے کسٹم بزنس سافٹ ویئر کے حل آپ کے عین مطابق آپریشنل ورک فلو کو فٹ کرنے کے لیے گراؤنڈ اپ سے بنائے گئے ہیں۔ چاہے آپ کو ایک ملکیتی انوینٹری مینجمنٹ سسٹم، ایک مخصوص HR پورٹل، یا ایک پیچیدہ ڈیٹا اینالیٹکس ڈیش بورڈ کی ضرورت ہو، ہم محفوظ، قابل توسیع ایپلی کیشنز بناتے ہیں جو دستی کاموں کو خودکار بناتے ہیں اور آپ کے موجودہ فریق ثالث کے ٹولز کے ساتھ بغیر کسی رکاوٹ کے مربوط ہوتے ہیں۔ اپنی ٹیم کو ایسے سافٹ ویئر کے ساتھ بااختیار بنائیں جو بالکل اسی طرح کام کرتا ہے جس طرح آپ کرتے ہیں۔",
+      "features": [
+        "عمل آٹومیشن",
+        "حسب ضرورت ورک فلوز",
+        "تھرڈ پارٹی انٹیگریشن",
+        "رپورٹنگ اور تجزیات",
+        "کردار پر مبنی رسائی",
+        "موبائل تک رسائی"
+      ],
+      "benefits": [
+        "آپریشنل کارکردگی میں اضافہ",
+        "دستی ڈیٹا انٹری کا خاتمہ",
+        "مستقبل کی ترقی کے لیے اسکیل ایبلٹی",
+        "دانشورانہ املاک کی کل ملکیت",
+        "بہتر ڈیٹا سیکیورٹی"
+      ],
+      "content": {
+        "process": [
+          { "title": "دریافت اور تجزیہ", "description": "رکاوٹوں کی نشاندہی کرنے کے لیے آپ کے روزمرہ کے کاموں میں گہرا غوطہ لگانا۔" },
+          { "title": "حل ڈیزائن", "description": "وائر فریم بنانا اور منطقی ڈیٹا بیس آرکیٹیکچرز کا نقشہ بنانا۔" },
+          { "title": "چست ترقی", "description": "اسپرنٹ میں سافٹ ویئر بنانا، باقاعدہ اپ ڈیٹس اور ڈیمو فراہم کرنا۔" },
+          { "title": "سسٹم کا انضمام", "description": "نئے سافٹ ویئر کو APIs کے ذریعے آپ کے پرانے سسٹمز سے جوڑنا۔" },
+          { "title": "تعیناتی اور تربیت", "description": "سسٹم کو رول آؤٹ کرنا اور زیادہ سے زیادہ اپنانے کے لیے اپنے عملے کی تربیت کرنا۔" }
+        ],
+        "technologies": [
+          "React",
+          "Node.js",
+          "PostgreSQL",
+          "Docker",
+          "AWS"
+        ],
+        "faq": [
+          { "question": "مجھے SaaS مصنوعات پر کسٹم سافٹ ویئر کا انتخاب کیوں کرنا چاہیے؟", "answer": "اپنی مرضی کا سافٹ ویئر آپ کو خصوصیات، سیکورٹی، اور اپ ڈیٹس پر 100% کنٹرول دیتا ہے۔ جب کہ SaaS کے پاس بار بار چلنے والی لائسنسنگ فیس ہے جو آپ کی ٹیم کے ساتھ بڑھتی ہے، اپنی مرضی کا سافٹ ویئر ایک وقتی سرمایہ کاری ہے جو فی صارف کے اخراجات کے بغیر لامحدود اسکیل کرتا ہے۔" },
+          { "question": "کیا اس سافٹ ویئر تک موبائل آلات پر رسائی حاصل کی جا سکتی ہے؟", "answer": "ہاں، ہم ایسی ریسپانسیو ویب ایپلیکیشنز بناتے ہیں جو ٹیبلیٹ اور اسمارٹ فونز پر بالکل کام کرتی ہیں، یا ہم وقف ساتھی موبائل ایپس تیار کر سکتے ہیں۔" }
+        ]
+      },
+      "metaTitle": "اپنی مرضی کے بزنس سافٹ ویئر کی ترقی | انٹرپرائز حل",
+      "metaDescription": "اپنی مرضی کے بزنس سافٹ ویئر کے ساتھ اپنے ورک فلو کو خودکار بنائیں۔ ہم آپ کی درست آپریشنل ضروریات کے مطابق محفوظ، قابل توسیع، اور ملکیتی ویب ایپلیکیشنز بناتے ہیں۔"
+    },
+    "ar": {
+      "name": "برامج الأعمال المخصصة",
+      "shortDescription": "بناء حلول برمجية مخصصة لعمليات عملك الفريدة.",
+      "fullDescription": "توقف عن إجبار عملك على التكيف مع البرامج الجاهزة الصارمة. تم تصميم حلول برامج الأعمال المخصصة لدينا من الألف إلى الياء لتناسب تدفقات العمل التشغيلية الدقيقة الخاصة بك. سواء كنت بحاجة إلى نظام إدارة مخزون مملوك، أو بوابة موارد بشرية متخصصة، أو لوحة معلومات معقدة لتحليلات البيانات، فإننا نبني تطبيقات آمنة وقابلة للتطوير تعمل على أتمتة المهام اليدوية وتتكامل بسلاسة مع أدوات الجهات الخارجية الحالية. قم بتمكين فريقك ببرامج تعمل تمامًا كما تعمل أنت.",
+      "features": [
+        "أتمتة العمليات",
+        "سير عمل مخصص",
+        "تكامل مع جهات خارجية",
+        "التقارير والتحليلات",
+        "الوصول القائم على الدور",
+        "الوصول عبر الهاتف المحمول"
+      ],
+      "benefits": [
+        "زيادة الكفاءة التشغيلية",
+        "القضاء على الإدخال اليدوي للبيانات",
+        "قابلية التوسع للنمو المستقبلي",
+        "الملكية الكاملة للملكية الفكرية",
+        "تعزيز أمن البيانات"
+      ],
+      "content": {
+        "process": [
+          { "title": "الاكتشاف والتحليل", "description": "التعمق في عملياتك اليومية لتحديد الاختناقات." },
+          { "title": "تصميم الحل", "description": "إنشاء إطارات شبكية وتخطيط هياكل قواعد البيانات المنطقية." },
+          { "title": "التطوير الرشيق (Agile)", "description": "بناء البرنامج في سباقات (Sprints)، وتوفير تحديثات وعروض توضيحية منتظمة." },
+          { "title": "تكامل النظام", "description": "ربط البرنامج الجديد بأنظمتك القديمة عبر واجهات برمجة التطبيقات (APIs)." },
+          { "title": "النشر والتدريب", "description": "طرح النظام وتدريب موظفيك لتحقيق أقصى قدر من الاعتماد." }
+        ],
+        "technologies": [
+          "React",
+          "Node.js",
+          "PostgreSQL",
+          "Docker",
+          "AWS"
+        ],
+        "faq": [
+          { "question": "لماذا يجب أن أختار برنامجًا مخصصًا على منتجات SaaS؟", "answer": "تمنحك البرامج المخصصة تحكمًا بنسبة 100٪ في الميزات والأمان والتحديثات. في حين أن SaaS لديها رسوم ترخيص متكررة تنمو مع فريقك، فإن البرامج المخصصة هي استثمار لمرة واحدة يتسع بشكل لا نهائي دون تكاليف لكل مستخدم." },
+          { "question": "هل يمكن الوصول إلى هذا البرنامج على الأجهزة المحمولة؟", "answer": "نعم، نقوم ببناء تطبيقات ويب سريعة الاستجابة تعمل بشكل مثالي على الأجهزة اللوحية والهواتف الذكية، أو يمكننا تطوير تطبيقات جوال مرافقة مخصصة." }
+        ]
+      },
+      "metaTitle": "تطوير برامج الأعمال المخصصة | حلول المؤسسات",
+      "metaDescription": "قم بأتمتة سير عملك باستخدام برامج الأعمال المخصصة. نبني تطبيقات ويب آمنة وقابلة للتطوير ومملوكة ومصممة خصيصًا لاحتياجاتك التشغيلية."
+    }
+  },
+  "custom-ecommerce": {
+    "en": {
+      "name": "Custom E-Commerce",
+      "shortDescription": "Build custom e-commerce platforms tailored to your unique business needs.",
+      "fullDescription": "When Shopify or WooCommerce limitations hold your brand back, it’s time for a Custom E-Commerce solution. We engineer bespoke digital storefronts designed to handle complex product configurations, multi-currency global sales, subscription models, and hybrid B2B/B2C logic. By decoupling the frontend from the backend (Headless Commerce), we deliver lightning-fast page loads that significantly boost your SEO rankings and conversion rates, while giving you complete freedom over the UI/UX design.",
+      "features": [
+        "Custom Checkout Flows",
+        "Unique Product Configurators",
+        "Multi-Currency Support",
+        "Custom Inventory Logic",
+        "B2B & B2C Hybrid",
+        "Subscription Commerce",
+        "Headless Architecture"
+      ],
+      "benefits": [
+        "Lightning-Fast Page Speeds",
+        "Higher Conversion Rates",
+        "Unlimited Design Freedom",
+        "No Platform Limitation Constraints",
+        "Seamless Omnichannel Selling"
+      ],
+      "content": {
+        "process": [
+          { "title": "Requirements & Strategy", "description": "Analyzing your catalog complexity and identifying specific commerce goals." },
+          { "title": "Headless Architecture", "description": "Selecting the best backend engine (e.g., Medusa, Shopify Plus) and frontend framework." },
+          { "title": "Custom UI Development", "description": "Designing a completely unique, pixel-perfect shopping experience." },
+          { "title": "Payments & Logistics", "description": "Integrating custom payment gateways and complex shipping APIs." },
+          { "title": "Migration & Launch", "description": "Securely migrating products, customers, and orders from your old platform." }
+        ],
+        "technologies": [
+          "Next.js",
+          "Stripe",
+          "PostgreSQL",
+          "Redis",
+          "Medusa.js",
+          "GraphQL"
+        ],
+        "faq": [
+          { "question": "What does 'Headless E-Commerce' mean?", "answer": "Headless means separating the visual storefront (the 'head') from the backend commerce engine. This allows us to use modern frameworks like Next.js for blazing-fast speed while still using powerful backend tools for inventory management." },
+          { "question": "Can you handle product customization (like engraving or build-a-box)?", "answer": "Yes. One of the main reasons clients choose custom e-commerce is to build complex product configurators that standard platforms cannot support natively." }
+        ]
+      },
+      "metaTitle": "Custom E-Commerce Development | Headless Commerce Agency",
+      "metaDescription": "Overcome platform limitations with Custom E-Commerce. We build lightning-fast headless storefronts with complex features like subscriptions and configurators."
+    },
+    "tr": {
+      "name": "Özel E-Ticaret",
+      "shortDescription": "Benzersiz iş ihtiyaçlarınıza göre uyarlanmış özel e-ticaret platformları oluşturun.",
+      "fullDescription": "Shopify veya WooCommerce sınırlamaları markanızı geride tuttuğunda, Özel E-Ticaret çözümünün zamanı gelmiştir. Karmaşık ürün konfigürasyonlarını, çok para birimli küresel satışları, abonelik modellerini ve hibrit B2B/B2C mantığını yönetecek şekilde tasarlanmış özel dijital vitrinler tasarlıyoruz. Ön ucu arka uçtan ayırarak (Headless Commerce), SEO sıralamanızı ve dönüşüm oranlarınızı önemli ölçüde artıran ışık hızında sayfa yüklemeleri sağlarken, UI/UX tasarımı üzerinde size tam bir özgürlük veriyoruz.",
+      "features": [
+        "Özel Ödeme Akışları",
+        "Benzersiz Ürün Konfigüratörleri",
+        "Çoklu Para Birimi Desteği",
+        "Özel Envanter Mantığı",
+        "B2B ve B2C Hibrit",
+        "Abonelik Ticareti",
+        "Başsız (Headless) Mimari"
+      ],
+      "benefits": [
+        "Işık Hızında Sayfa Hızları",
+        "Daha Yüksek Dönüşüm Oranları",
+        "Sınırsız Tasarım Özgürlüğü",
+        "Platform Sınırlama Kısıtlaması Yok",
+        "Kesintisiz Çok Kanallı Satış"
+      ],
+      "content": {
+        "process": [
+          { "title": "Gereksinimler ve Strateji", "description": "Katalog karmaşıklığınızı analiz etme ve belirli ticaret hedeflerini belirleme." },
+          { "title": "Başsız (Headless) Mimari", "description": "En iyi arka uç motorunu (örn. Medusa, Shopify Plus) ve ön uç çerçevesini seçme." },
+          { "title": "Özel Arayüz Geliştirme", "description": "Tamamen benzersiz, piksel açısından mükemmel bir alışveriş deneyimi tasarlama." },
+          { "title": "Ödemeler ve Lojistik", "description": "Özel ödeme ağ geçitlerini ve karmaşık nakliye API'lerini entegre etme." },
+          { "title": "Geçiş ve Lansman", "description": "Ürünleri, müşterileri ve siparişleri eski platformunuzdan güvenli bir şekilde taşıma." }
+        ],
+        "technologies": [
+          "Next.js",
+          "Stripe",
+          "PostgreSQL",
+          "Redis",
+          "Medusa.js"
+        ],
+        "faq": [
+          { "question": "'Başsız (Headless) E-Ticaret' ne anlama geliyor?", "answer": "Başsız, görsel vitrini ('baş') arka uç ticaret motorundan ayırmak anlamına gelir. Bu, envanter yönetimi için güçlü arka uç araçlarını kullanırken inanılmaz hız için Next.js gibi modern çerçeveleri kullanmamıza olanak tanır." },
+          { "question": "Ürün özelleştirmesini (gravür veya kendi kutunu yarat gibi) yönetebilir misiniz?", "answer": "Evet. Müşterilerin özel e-ticareti seçmesinin ana nedenlerinden biri, standart platformların yerel olarak destekleyemediği karmaşık ürün konfigüratörleri oluşturmaktır." }
+        ]
+      },
+      "metaTitle": "Özel E-Ticaret Geliştirme | Headless Commerce Ajansı",
+      "metaDescription": "Özel E-Ticaret ile platform sınırlamalarının üstesinden gelin. Abonelikler ve konfigüratörler gibi karmaşık özelliklere sahip ışık hızında başsız vitrinler oluşturuyoruz."
+    },
+    "de": {
+      "name": "Individueller E-Commerce",
+      "shortDescription": "Erstellen Sie maßgeschneiderte E-Commerce-Plattformen, die auf Ihre individuellen Geschäftsanforderungen zugeschnitten sind.",
+      "fullDescription": "Wenn die Einschränkungen von Shopify oder WooCommerce Ihre Marke zurückhalten, ist es Zeit für eine individuelle E-Commerce-Lösung. Wir entwickeln maßgeschneiderte digitale Schaufenster, die für die Bewältigung komplexer Produktkonfigurationen, globaler Verkäufe in mehreren Währungen, Abonnementmodellen und hybrider B2B/B2C-Logik konzipiert sind. Indem wir das Frontend vom Backend entkoppeln (Headless Commerce), liefern wir blitzschnelle Seitenladezeiten, die Ihre SEO-Rankings und Konversionsraten erheblich steigern, während Sie völlige Freiheit über das UI/UX-Design haben.",
+      "features": [
+        "Benutzerdefinierte Checkout-Abläufe",
+        "Einzigartige Produktkonfiguratoren",
+        "Multi-Währungs-Unterstützung",
+        "Benutzerdefinierte Bestandslogik",
+        "B2B & B2C Hybrid",
+        "Abo-Commerce",
+        "Headless-Architektur"
+      ],
+      "benefits": [
+        "Blitzschnelle Seitengeschwindigkeiten",
+        "Höhere Konversionsraten",
+        "Unbegrenzte Gestaltungsfreiheit",
+        "Keine Einschränkungen durch die Plattform",
+        "Nahtloser Omnichannel-Verkauf"
+      ],
+      "content": {
+        "process": [
+          { "title": "Anforderungen & Strategie", "description": "Analyse Ihrer Katalogkomplexität und Identifizierung spezifischer Handelsziele." },
+          { "title": "Headless-Architektur", "description": "Auswahl der besten Backend-Engine (z. B. Medusa, Shopify Plus) und des Frontend-Frameworks." },
+          { "title": "Individuelle UI-Entwicklung", "description": "Gestaltung eines völlig einzigartigen, pixelgenauen Einkaufserlebnisses." },
+          { "title": "Zahlungen & Logistik", "description": "Integration benutzerdefinierter Zahlungsgateways und komplexer Versand-APIs." },
+          { "title": "Migration & Start", "description": "Sichere Migration von Produkten, Kunden und Bestellungen von Ihrer alten Plattform." }
+        ],
+        "technologies": [
+          "Next.js",
+          "Stripe",
+          "PostgreSQL",
+          "Redis",
+          "Medusa.js"
+        ],
+        "faq": [
+          { "question": "Was bedeutet 'Headless E-Commerce'?", "answer": "Headless bedeutet die Trennung des visuellen Schaufensters (dem 'Kopf') von der Backend-Commerce-Engine. Dies ermöglicht es uns, moderne Frameworks wie Next.js für rasante Geschwindigkeit zu nutzen und gleichzeitig leistungsstarke Backend-Tools für die Bestandsverwaltung zu verwenden." },
+          { "question": "Können Sie Produktanpassungen (wie Gravuren oder Build-a-Box) durchführen?", "answer": "Ja. Einer der Hauptgründe, warum sich Kunden für individuellen E-Commerce entscheiden, ist der Aufbau komplexer Produktkonfiguratoren, die Standardplattformen von Haus aus nicht unterstützen können." }
+        ]
+      },
+      "metaTitle": "Entwicklung individueller E-Commerce-Lösungen | Headless Commerce Agentur",
+      "metaDescription": "Überwinden Sie Plattformgrenzen mit individuellem E-Commerce. Wir bauen blitzschnelle Headless-Shops mit komplexen Funktionen wie Abos und Konfiguratoren."
+    },
+    "ur": {
+      "name": "حسب ضرورت ای کامرس",
+      "shortDescription": "اپنی منفرد کاروباری ضروریات کے مطابق حسب ضرورت ای کامرس پلیٹ فارم بنائیں۔",
+      "fullDescription": "جب Shopify یا WooCommerce کی حدود آپ کے برانڈ کو پیچھے رکھتی ہیں، تو یہ اپنی مرضی کے ای کامرس حل کا وقت ہے۔ ہم اپنی مرضی کے مطابق ڈیجیٹل اسٹور فرنٹ تیار کرتے ہیں جو پیچیدہ پروڈکٹ کنفیگریشنز، ملٹی کرنسی گلوبل سیلز، سبسکرپشن ماڈلز، اور ہائبرڈ B2B/B2C منطق کو سنبھالنے کے لیے ڈیزائن کیے گئے ہیں۔ بیک اینڈ سے فرنٹ اینڈ کو الگ کر کے (Headless Commerce)، ہم بجلی کی تیز رفتار صفحہ لوڈز فراہم کرتے ہیں جو آپ کی SEO درجہ بندی اور تبادلوں کی شرحوں کو نمایاں طور پر بڑھاتے ہیں، جبکہ آپ کو UI/UX ڈیزائن پر مکمل آزادی دیتے ہیں۔",
+      "features": [
+        "حسب ضرورت چیک آؤٹ کے بہاؤ",
+        "منفرد پروڈکٹ کنفیگریٹرز",
+        "ملٹی کرنسی سپورٹ",
+        "کسٹم انوینٹری لاجک",
+        "B2B اور B2C ہائبرڈ",
+        "سبسکرپشن کامرس",
+        "ہیڈ لیس آرکیٹیکچر"
+      ],
+      "benefits": [
+        "بجلی کی تیز رفتار صفحہ کی رفتار",
+        "تبادلوں کی اعلی شرحیں",
+        "لامحدود ڈیزائن کی آزادی",
+        "پلیٹ فارم کی کوئی پابندی نہیں ہے۔",
+        "بغیر کسی رکاوٹ کے اومنی چینل کی فروخت"
+      ],
+      "content": {
+        "process": [
+          { "title": "ضروریات اور حکمت عملی", "description": "اپنے کیٹلاگ کی پیچیدگی کا تجزیہ کرنا اور مخصوص تجارتی اہداف کی نشاندہی کرنا۔" },
+          { "title": "ہیڈ لیس آرکیٹیکچر", "description": "بہترین بیک اینڈ انجن (جیسے میڈوسا، شاپائف پلس) اور فرنٹ اینڈ فریم ورک کا انتخاب۔" },
+          { "title": "کسٹم UI ڈیولپمنٹ", "description": "خریداری کا مکمل طور پر منفرد، پکسل کامل تجربہ ڈیزائن کرنا۔" },
+          { "title": "ادائیگیاں اور لاجسٹکس", "description": "حسب ضرورت پیمنٹ گیٹ ویز اور پیچیدہ شپنگ APIs کو مربوط کرنا۔" },
+          { "title": "ہجرت اور لانچ", "description": "اپنے پرانے پلیٹ فارم سے پروڈکٹس، صارفین اور آرڈرز کو محفوظ طریقے سے منتقل کرنا۔" }
+        ],
+        "technologies": [
+          "Next.js",
+          "Stripe",
+          "PostgreSQL",
+          "Redis",
+          "Medusa.js"
+        ],
+        "faq": [
+          { "question": "'ہیڈ لیس ای کامرس' کا کیا مطلب ہے؟", "answer": "ہیڈ لیس کا مطلب ہے بصری اسٹور فرنٹ ('ہیڈ') کو بیک اینڈ کامرس انجن سے الگ کرنا۔ یہ ہمیں تیز رفتاری کے لیے Next.js جیسے جدید فریم ورک استعمال کرنے کی اجازت دیتا ہے جبکہ انوینٹری کے انتظام کے لیے طاقتور بیک اینڈ ٹولز کا استعمال کرتے ہوئے" },
+          { "question": "کیا آپ پروڈکٹ کی تخصیص کو سنبھال سکتے ہیں (جیسے نقاشی یا بلڈ اے باکس)؟", "answer": "ہاں، گاہک کے کسٹم ای کامرس کا انتخاب کرنے کی ایک اہم وجہ پیچیدہ پروڈکٹ کنفیگریٹر بنانا ہے جس کی معیاری پلیٹ فارم مقامی طور پر حمایت نہیں کر سکتے۔" }
+        ]
+      },
+      "metaTitle": "کسٹم ای کامرس کی ترقی | ہیڈلیس کامرس ایجنسی",
+      "metaDescription": "اپنی مرضی کے ای کامرس کے ساتھ پلیٹ فارم کی حدود پر قابو پالیں۔ ہم سبسکرپشنز اور کنفیگریٹرز جیسی پیچیدہ خصوصیات کے ساتھ بجلی کی تیز رفتار ہیڈ لیس اسٹور فرنٹ بناتے ہیں۔"
+    },
+    "ar": {
+      "name": "التجارة الإلكترونية المخصصة",
+      "shortDescription": "بناء منصات تجارة إلكترونية مخصصة مصممة خصيصًا لاحتياجات عملك الفريدة.",
+      "fullDescription": "عندما تعيق قيود Shopify أو WooCommerce علامتك التجارية، فقد حان الوقت لحل التجارة الإلكترونية المخصصة. نقوم بهندسة واجهات متاجر رقمية مخصصة مصممة للتعامل مع تكوينات المنتجات المعقدة، والمبيعات العالمية متعددة العملات، ونماذج الاشتراك، والمنطق الهجين B2B/B2C. من خلال فصل الواجهة الأمامية عن الخلفية (التجارة غير المرتبطة أو Headless Commerce)، نقدم أوقات تحميل صفحات فائقة السرعة تعزز بشكل كبير تصنيفات تحسين محركات البحث (SEO) ومعدلات التحويل، بينما تمنحك الحرية الكاملة في تصميم UI/UX.",
+      "features": [
+        "تدفقات دفع مخصصة",
+        "مكونات منتجات فريدة",
+        "دعم متعدد العملات",
+        "منطق مخزون مخصص",
+        "هجين B2B و B2C",
+        "تجارة الاشتراكات",
+        "بنية بدون رأس (Headless)"
+      ],
+      "benefits": [
+        "سرعات صفحات فائقة",
+        "معدلات تحويل أعلى",
+        "حرية تصميم غير محدودة",
+        "لا توجد قيود على المنصة",
+        "بيع سلس متعدد القنوات"
+      ],
+      "content": {
+        "process": [
+          { "title": "المتطلبات والاستراتيجية", "description": "تحليل تعقيد الكتالوج الخاص بك وتحديد أهداف تجارية محددة." },
+          { "title": "بنية Headless", "description": "اختيار أفضل محرك خلفي (مثل Medusa و Shopify Plus) وإطار عمل الواجهة الأمامية." },
+          { "title": "تطوير واجهة مستخدم مخصصة", "description": "تصميم تجربة تسوق فريدة ومثالية تمامًا." },
+          { "title": "المدفوعات والخدمات اللوجستية", "description": "دمج بوابات الدفع المخصصة وواجهات برمجة تطبيقات الشحن المعقدة." },
+          { "title": "الترحيل والإطلاق", "description": "ترحيل المنتجات والعملاء والطلبات بأمان من منصتك القديمة." }
+        ],
+        "technologies": [
+          "Next.js",
+          "Stripe",
+          "PostgreSQL",
+          "Redis",
+          "Medusa.js"
+        ],
+        "faq": [
+          { "question": "ماذا تعني 'التجارة الإلكترونية Headless'؟", "answer": "يعني Headless فصل واجهة المتجر المرئية ('الرأس') عن محرك التجارة الخلفي. يتيح لنا ذلك استخدام أطر عمل حديثة مثل Next.js لسرعة فائقة مع الاستمرار في استخدام أدوات خلفية قوية لإدارة المخزون." },
+          { "question": "هل يمكنكم التعامل مع تخصيص المنتج (مثل النقش أو بناء صندوق)؟", "answer": "نعم. أحد الأسباب الرئيسية التي تجعل العملاء يختارون التجارة الإلكترونية المخصصة هو بناء مكونات منتجات معقدة لا يمكن للمنصات القياسية دعمها محليًا." }
+        ]
+      },
+      "metaTitle": "تطوير التجارة الإلكترونية المخصصة | وكالة التجارة Headless",
+      "metaDescription": "تغلب على قيود المنصة باستخدام التجارة الإلكترونية المخصصة. نبني واجهات متاجر سريعة للغاية مع ميزات معقدة مثل الاشتراكات والمكونات."
+    }
+  }
+}

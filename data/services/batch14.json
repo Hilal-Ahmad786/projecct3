@@ -1,0 +1,436 @@
+{
+  "iot-development": {
+    "en": {
+      "name": "IoT Development",
+      "shortDescription": "Create smart, connected products with IoT sensors, gateways, and cloud platforms.",
+      "fullDescription": "Transform your physical assets into intelligent, data-generating systems with our comprehensive Internet of Things (IoT) Development services. Whether you are building smart home devices, industrial monitoring sensors (IIoT), or connected logistics trackers, we bridge the gap between hardware and the cloud. We specialize in the entire IoT ecosystem: from programming microcontrollers (ESP32, Raspberry Pi) and configuring edge computing gateways, to designing secure MQTT communication protocols and building real-time, cloud-based dashboards (AWS IoT, Azure IoT) that translate raw sensor data into actionable business intelligence.",
+      "features": [
+        "Hardware & Sensor Integration (ESP32, Arduino, ARM)",
+        "Edge Computing & Gateway Development",
+        "Cloud IoT Platform Setup (AWS IoT, Azure IoT Hub)",
+        "Real-Time Data Ingestion & Stream Processing",
+        "Over-The-Air (OTA) Firmware Updates",
+        "End-to-End Device Security & Encryption"
+      ],
+      "benefits": [
+        "Real-Time Visibility into Physical Operations",
+        "Predictive Maintenance & Reduced Downtime",
+        "Automation of Manual Industrial Processes",
+        "New Revenue Streams via Connected Products",
+        "Highly Scalable Architecture for Millions of Devices"
+      ],
+      "content": {
+        "process": [
+          { "title": "Hardware Selection", "description": "Choosing the right sensors, microcontrollers, and connectivity modules (WiFi, BLE, LoRa, Cellular)." },
+          { "title": "Firmware Engineering", "description": "Writing efficient C/C++ code for the devices to read sensors and manage power." },
+          { "title": "Cloud Architecture", "description": "Setting up AWS IoT Core or Azure IoT Hub to securely ingest high-frequency data." },
+          { "title": "Dashboard Development", "description": "Creating React or Next.js web applications to visualize the data in real-time." },
+          { "title": "Security & OTA", "description": "Implementing TLS encryption and robust Over-The-Air update mechanisms." }
+        ],
+        "technologies": [
+          "AWS IoT Core / Azure IoT Hub",
+          "MQTT / CoAP Protocols",
+          "C / C++ (Firmware)",
+          "Node.js / Python (Backend)",
+          "InfluxDB (Time-Series Data)",
+          "React (Dashboards)"
+        ],
+        "faq": [
+          { "question": "What happens if an IoT device loses internet connection?", "answer": "We implement 'Edge Computing' strategies. The device or local gateway will buffer the data locally and automatically sync it with the cloud once the connection is restored, ensuring zero data loss." },
+          { "question": "Are IoT devices secure against hacking?", "answer": "Security is paramount. We use mutual TLS (mTLS) for device authentication, encrypt data both in transit and at rest, and implement secure boot mechanisms on the hardware to prevent malicious firmware flashing." }
+        ]
+      },
+      "metaTitle": "IoT App Development Services | Industrial & Consumer IoT",
+      "metaDescription": "Build smart, connected products. Our IoT development services cover hardware integration, MQTT, edge computing, and cloud platforms like AWS IoT."
+    },
+    "tr": {
+      "name": "Nesnelerin İnterneti (IoT) Geliştirme",
+      "shortDescription": "IoT sensörleri, ağ geçitleri ve bulut platformlarıyla akıllı, bağlantılı ürünler oluşturun.",
+      "fullDescription": "Kapsamlı Nesnelerin İnterneti (IoT) Geliştirme hizmetlerimizle fiziksel varlıklarınızı akıllı, veri üreten sistemlere dönüştürün. İster akıllı ev cihazları, ister endüstriyel izleme sensörleri (IIoT) veya bağlantılı lojistik takip cihazları üretiyor olun, donanım ile bulut arasındaki köprüyü kuruyoruz. Tüm IoT ekosisteminde uzmanız: mikrodenetleyicileri (ESP32, Raspberry Pi) programlamaktan ve uç bilişim (edge computing) ağ geçitlerini yapılandırmaktan, güvenli MQTT iletişim protokolleri tasarlamaya ve ham sensör verilerini eyleme dönüştürülebilir iş zekasına çeviren gerçek zamanlı, bulut tabanlı panolar (AWS IoT, Azure IoT) oluşturmaya kadar.",
+      "features": [
+        "Donanım ve Sensör Entegrasyonu (ESP32, Arduino, ARM)",
+        "Uç Bilişim (Edge Computing) ve Ağ Geçidi Geliştirme",
+        "Bulut IoT Platformu Kurulumu (AWS IoT, Azure IoT Hub)",
+        "Gerçek Zamanlı Veri Alımı ve Akış İşleme",
+        "Havadan (OTA - Over-The-Air) Ürün Yazılımı Güncellemeleri",
+        "Uçtan Uca Cihaz Güvenliği ve Şifreleme"
+      ],
+      "benefits": [
+        "Fiziksel Operasyonlara Gerçek Zamanlı Görünürlük",
+        "Kestirimci Bakım ve Azaltılmış Kesinti Süresi",
+        "Manuel Endüstriyel Süreçlerin Otomasyonu",
+        "Bağlantılı Ürünler Yoluyla Yeni Gelir Akışları",
+        "Milyonlarca Cihaz İçin Yüksek Ölçeklenebilir Mimari"
+      ],
+      "content": {
+        "process": [
+          { "title": "Donanım Seçimi", "description": "Doğru sensörleri, mikrodenetleyicileri ve bağlantı modüllerini (WiFi, BLE, LoRa, Hücresel) seçme." },
+          { "title": "Donanım Yazılımı (Firmware) Mühendisliği", "description": "Sensörleri okumak ve gücü yönetmek için cihazlar için verimli C/C++ kodu yazma." },
+          { "title": "Bulut Mimarisi", "description": "Yüksek frekanslı verileri güvenli bir şekilde almak için AWS IoT Core veya Azure IoT Hub kurulumu." },
+          { "title": "Pano (Dashboard) Geliştirme", "description": "Verileri gerçek zamanlı olarak görselleştirmek için React veya Next.js web uygulamaları oluşturma." },
+          { "title": "Güvenlik ve OTA", "description": "TLS şifrelemesi ve sağlam Havadan (OTA) güncelleme mekanizmaları uygulama." }
+        ],
+        "technologies": [
+          "AWS IoT Core / Azure IoT Hub",
+          "MQTT / CoAP Protokolleri",
+          "C / C++ (Donanım Yazılımı)",
+          "Node.js / Python (Arka Uç)",
+          "InfluxDB (Zaman Serisi Verileri)",
+          "React (Panolar)"
+        ],
+        "faq": [
+          { "question": "Bir IoT cihazı internet bağlantısını kaybederse ne olur?", "answer": "'Uç Bilişim' (Edge Computing) stratejileri uyguluyoruz. Cihaz veya yerel ağ geçidi verileri yerel olarak tamponlayacak ve bağlantı yeniden kurulduğunda otomatik olarak bulutla senkronize ederek sıfır veri kaybı sağlayacaktır." },
+          { "question": "IoT cihazları bilgisayar korsanlığına karşı güvenli mi?", "answer": "Güvenlik her şeyden önemlidir. Cihaz kimlik doğrulaması için karşılıklı TLS (mTLS) kullanıyoruz, verileri hem aktarım sırasında hem de beklemedeyken şifreliyoruz ve kötü niyetli donanım yazılımı yüklemelerini önlemek için donanımda güvenli önyükleme (secure boot) mekanizmaları uyguluyoruz." }
+        ]
+      },
+      "metaTitle": "IoT Uygulama Geliştirme Hizmetleri | Endüstriyel ve Tüketici IoT",
+      "metaDescription": "Akıllı, bağlantılı ürünler oluşturun. IoT geliştirme hizmetlerimiz donanım entegrasyonu, MQTT, uç bilişim ve AWS IoT gibi bulut platformlarını kapsar."
+    },
+    "de": {
+      "name": "IoT-Entwicklung",
+      "shortDescription": "Erstellen Sie smarte, vernetzte Produkte mit IoT-Sensoren, Gateways und Cloud-Plattformen.",
+      "fullDescription": "Verwandeln Sie Ihre physischen Vermögenswerte mit unseren umfassenden Internet of Things (IoT)-Entwicklungsdiensten in intelligente, datengenerierende Systeme. Egal, ob Sie Smart-Home-Geräte, industrielle Überwachungssensoren (IIoT) oder vernetzte Logistik-Tracker bauen, wir schlagen die Brücke zwischen Hardware und Cloud. Wir sind auf das gesamte IoT-Ökosystem spezialisiert: von der Programmierung von Mikrocontrollern (ESP32, Raspberry Pi) und der Konfiguration von Edge-Computing-Gateways über das Design sicherer MQTT-Kommunikationsprotokolle bis hin zum Aufbau von Echtzeit-Cloud-Dashboards (AWS IoT, Azure IoT), die rohe Sensordaten in verwertbare Business Intelligence übersetzen.",
+      "features": [
+        "Hardware- & Sensorintegration (ESP32, Arduino, ARM)",
+        "Edge Computing & Gateway-Entwicklung",
+        "Einrichtung von Cloud-IoT-Plattformen (AWS IoT, Azure IoT Hub)",
+        "Echtzeit-Datenaufnahme & Stream-Verarbeitung",
+        "Over-The-Air (OTA) Firmware-Updates",
+        "End-to-End-Gerätesicherheit & Verschlüsselung"
+      ],
+      "benefits": [
+        "Echtzeit-Einblick in physische Abläufe",
+        "Vorausschauende Wartung & reduzierte Ausfallzeiten",
+        "Automatisierung manueller industrieller Prozesse",
+        "Neue Einnahmequellen durch vernetzte Produkte",
+        "Hochskalierbare Architektur für Millionen von Geräten"
+      ],
+      "content": {
+        "process": [
+          { "title": "Hardware-Auswahl", "description": "Auswahl der richtigen Sensoren, Mikrocontroller und Konnektivitätsmodule (WiFi, BLE, LoRa, Mobilfunk)." },
+          { "title": "Firmware-Engineering", "description": "Schreiben von effizientem C/C++-Code für die Geräte zum Auslesen von Sensoren und zur Energieverwaltung." },
+          { "title": "Cloud-Architektur", "description": "Einrichtung von AWS IoT Core oder Azure IoT Hub zur sicheren Aufnahme hochfrequenter Daten." },
+          { "title": "Dashboard-Entwicklung", "description": "Erstellung von React- oder Next.js-Webanwendungen zur Visualisierung der Daten in Echtzeit." },
+          { "title": "Sicherheit & OTA", "description": "Implementierung von TLS-Verschlüsselung und robusten Over-The-Air-Update-Mechanismen." }
+        ],
+        "technologies": [
+          "AWS IoT Core / Azure IoT Hub",
+          "MQTT / CoAP-Protokolle",
+          "C / C++ (Firmware)",
+          "Node.js / Python (Backend)",
+          "InfluxDB (Zeitreihendaten)",
+          "React (Dashboards)"
+        ],
+        "faq": [
+          { "question": "Was passiert, wenn ein IoT-Gerät die Internetverbindung verliert?", "answer": "Wir implementieren „Edge Computing“-Strategien. Das Gerät oder das lokale Gateway puffert die Daten lokal und synchronisiert sie automatisch mit der Cloud, sobald die Verbindung wiederhergestellt ist." },
+          { "question": "Sind IoT-Geräte sicher vor Hacking?", "answer": "Sicherheit steht an erster Stelle. Wir verwenden gegenseitiges TLS (mTLS) für die Geräteauthentifizierung, verschlüsseln Daten bei der Übertragung und im Ruhezustand und implementieren Secure-Boot-Mechanismen." }
+        ]
+      },
+      "metaTitle": "IoT App-Entwicklung | Industrie- & Consumer-IoT-Lösungen",
+      "metaDescription": "Bauen Sie smarte, vernetzte Produkte. Unsere IoT-Entwicklung umfasst Hardware-Integration, MQTT, Edge-Computing und Cloud-Plattformen."
+    },
+    "ur": {
+      "name": "آئی او ٹی کی ترقی",
+      "shortDescription": "IoT سینسرز، گیٹ ویز، اور کلاؤڈ پلیٹ فارمز کے ساتھ سمارٹ، مربوط مصنوعات بنائیں۔",
+      "fullDescription": "ہماری جامع انٹرنیٹ آف تھنگز (IoT) ڈیولپمنٹ سروسز کے ساتھ اپنے جسمانی اثاثوں کو ذہین، ڈیٹا تیار کرنے والے سسٹمز میں تبدیل کریں۔ چاہے آپ سمارٹ ہوم ڈیوائسز، انڈسٹریل مانیٹرنگ سینسر (IIoT)، یا منسلک لاجسٹک ٹریکرز بنا رہے ہوں، ہم ہارڈ ویئر اور کلاؤڈ کے درمیان فرق کو پر کرتے ہیں۔ ہم پورے IoT ماحولیاتی نظام میں مہارت رکھتے ہیں: مائیکرو کنٹرولرز (ESP32، Raspberry Pi) کو پروگرامنگ اور ایج کمپیوٹنگ گیٹ ویز کو ترتیب دینے سے لے کر، محفوظ MQTT کمیونیکیشن پروٹوکولز کو ڈیزائن کرنے اور ریئل ٹائم، کلاؤڈ بیسڈ ڈیش بورڈز (AWS IoT، Azure IoT) کی تعمیر تک جو خام سینسر ڈیٹا کا ترجمہ کرتے ہیں۔ قابل عمل کاروباری ذہانت میں۔",
+      "features": [
+        "ہارڈ ویئر اور سینسر انٹیگریشن (ESP32، Arduino، ARM)",
+        "ایج کمپیوٹنگ اور گیٹ وے ڈیولپمنٹ",
+        "کلاؤڈ آئی او ٹی پلیٹ فارم سیٹ اپ (AWS IoT، Azure IoT Hub)",
+        "ریئل ٹائم ڈیٹا انجیسٹن اور اسٹریم پروسیسنگ",
+        "اوور دی ایئر (OTA) فرم ویئر اپ ڈیٹس",
+        "اینڈ ٹو اینڈ ڈیوائس سیکیورٹی اور انکرپشن"
+      ],
+      "benefits": [
+        "جسمانی آپریشنز میں حقیقی وقت کی مرئیت",
+        "پیشن گوئی کی دیکھ بھال اور کم ٹائم ٹائم",
+        "دستی صنعتی عمل کا آٹومیشن",
+        "منسلک مصنوعات کے ذریعے محصولات کی نئی خصلتیں۔",
+        "لاکھوں آلات کے لیے انتہائی قابل توسیع فن تعمیر"
+      ],
+      "content": {
+        "process": [
+          { "title": "ہارڈ ویئر کا انتخاب", "description": "صحیح سینسر، مائیکرو کنٹرولرز، اور کنیکٹیویٹی ماڈیولز کا انتخاب (وائی فائی، بی ایل ای، لورا، سیلولر)۔" },
+          { "title": "فرم ویئر انجینئرنگ", "description": "سینسر پڑھنے اور طاقت کو منظم کرنے کے لیے آلات کے لیے موثر C/C++ کوڈ لکھنا۔" },
+          { "title": "کلاؤڈ آرکیٹیکچر", "description": "ہائی فریکوئنسی ڈیٹا کو محفوظ طریقے سے ہضم کرنے کے لیے AWS IoT Core یا Azure IoT Hub کو ترتیب دینا۔" },
+          { "title": "ڈیش بورڈ کی ترقی", "description": "ڈیٹا کو حقیقی وقت میں دیکھنے کے لیے React یا Next.js ویب ایپلیکیشنز بنانا۔" },
+          { "title": "سیکیورٹی اور او ٹی اے", "description": "TLS انکرپشن اور مضبوط اوور دی ایئر اپ ڈیٹ میکانزم کو نافذ کرنا۔" }
+        ],
+        "technologies": [
+          "AWS IoT Core / Azure IoT Hub",
+          "MQTT / CoAP Protocols",
+          "C / C++ (Firmware)",
+          "Node.js / Python (Backend)",
+          "InfluxDB (Time-Series Data)",
+          "React (Dashboards)"
+        ],
+        "faq": [
+          { "question": "کیا ہوتا ہے اگر IoT ڈیوائس کا انٹرنیٹ کنکشن ختم ہو جائے؟", "answer": "ہم 'ایج کمپیوٹنگ' کی حکمت عملیوں کو نافذ کرتے ہیں۔ آلہ یا مقامی گیٹ وے ڈیٹا کو مقامی طور پر بفر کرے گا اور کنکشن بحال ہونے کے بعد اسے کلاؤڈ کے ساتھ خود بخود ہم آہنگ کر دے گا، اس بات کو یقینی بناتے ہوئے کہ صفر ڈیٹا کا نقصان نہ ہو۔" },
+          { "question": "کیا IoT آلات ہیکنگ کے خلاف محفوظ ہیں؟", "answer": "سیکورٹی سب سے اہم ہے۔ ہم آلے کی تصدیق کے لیے باہمی TLS (mTLS) کا استعمال کرتے ہیں، ٹرانزٹ اور آرام دونوں حالتوں میں ڈیٹا کو خفیہ کرتے ہیں، اور ہارڈ ویئر پر محفوظ بوٹ میکانزم نافذ کرتے ہیں تاکہ بدنیتی پر مبنی فرم ویئر فلیشنگ کو روکا جا سکے۔" }
+        ]
+      },
+      "metaTitle": "IoT ایپ ڈویلپمنٹ سروسز | صنعتی اور صارفی IoT",
+      "metaDescription": "سمارٹ، مربوط مصنوعات بنائیں۔ ہماری IoT ڈیولپمنٹ سروسز ہارڈ ویئر کے انضمام، MQTT، ایج کمپیوٹنگ، اور AWS IoT جیسے کلاؤڈ پلیٹ فارمز کا احاطہ کرتی ہیں۔"
+    },
+    "ar": {
+      "name": "تطوير إنترنت الأشياء (IoT)",
+      "shortDescription": "إنشاء منتجات ذكية متصلة باستخدام مستشعرات IoT والبوابات ومنصات السحابة.",
+      "fullDescription": "حوّل أصولك المادية إلى أنظمة ذكية تولد البيانات من خلال خدمات تطوير إنترنت الأشياء (IoT) الشاملة لدينا. سواء كنت تبني أجهزة منزلية ذكية، أو مستشعرات مراقبة صناعية (IIoT)، أو أجهزة تتبع لوجستية متصلة، فإننا نسد الفجوة بين الأجهزة المادية (Hardware) والسحابة. نحن متخصصون في نظام IoT البيئي بأكمله: من برمجة المتحكمات الدقيقة (ESP32 ، Raspberry Pi) وتكوين بوابات حوسبة الحافة (Edge Computing)، إلى تصميم بروتوكولات اتصال MQTT الآمنة وبناء لوحات معلومات سحابية في الوقت الفعلي (AWS IoT ، Azure IoT) تترجم بيانات المستشعر الخام إلى ذكاء أعمال قابل للتنفيذ.",
+      "features": [
+        "تكامل الأجهزة والمستشعرات (ESP32 ، Arduino ، ARM)",
+        "حوسبة الحافة (Edge Computing) وتطوير البوابات",
+        "إعداد منصة IoT السحابية (AWS IoT ، Azure IoT Hub)",
+        "استيعاب البيانات في الوقت الفعلي ومعالجة الدفق",
+        "تحديثات البرامج الثابتة عبر الهواء (OTA)",
+        "أمان الأجهزة وتشفيرها من طرف إلى طرف"
+      ],
+      "benefits": [
+        "رؤية في الوقت الفعلي للعمليات المادية",
+        "الصيانة التنبؤية وتقليل وقت التوقف عن العمل",
+        "أتمتة العمليات الصناعية اليدوية",
+        "تدفقات إيرادات جديدة عبر المنتجات المتصلة",
+        "بنية قابلة للتطوير بدرجة كبيرة لملايين الأجهزة"
+      ],
+      "content": {
+        "process": [
+          { "title": "اختيار الأجهزة", "description": "اختيار المستشعرات والمتحكمات الدقيقة ووحدات الاتصال المناسبة (WiFi ، BLE ، LoRa ، Cellular)." },
+          { "title": "هندسة البرامج الثابتة (Firmware)", "description": "كتابة كود C/C++ فعال للأجهزة لقراءة المستشعرات وإدارة الطاقة." },
+          { "title": "بنية السحابة", "description": "إعداد AWS IoT Core أو Azure IoT Hub لاستيعاب البيانات عالية التردد بأمان." },
+          { "title": "تطوير لوحة المعلومات (Dashboard)", "description": "إنشاء تطبيقات ويب React أو Next.js لتصور البيانات في الوقت الفعلي." },
+          { "title": "الأمان و OTA", "description": "تنفيذ تشفير TLS وآليات قوية للتحديث عبر الهواء." }
+        ],
+        "technologies": [
+          "AWS IoT Core / Azure IoT Hub",
+          "بروتوكولات MQTT / CoAP",
+          "C / C++ (البرامج الثابتة)",
+          "Node.js / Python (الواجهة الخلفية)",
+          "InfluxDB (بيانات السلاسل الزمنية)",
+          "React (لوحات المعلومات)"
+        ],
+        "faq": [
+          { "question": "ماذا يحدث إذا فقد جهاز IoT الاتصال بالإنترنت؟", "answer": "نحن ننفذ استراتيجيات 'حوسبة الحافة' (Edge Computing). سيقوم الجهاز أو البوابة المحلية بتخزين البيانات مؤقتًا محليًا ومزامنتها تلقائيًا مع السحابة بمجرد استعادة الاتصال، مما يضمن عدم فقدان أي بيانات." },
+          { "question": "هل أجهزة IoT آمنة ضد القرصنة؟", "answer": "الأمان أمر بالغ الأهمية. نحن نستخدم المصادقة المتبادلة (mTLS) لمصادقة الجهاز، وتشفير البيانات أثناء النقل وأثناء الراحة، وتنفيذ آليات التمهيد الآمن (secure boot) على الأجهزة لمنع تفليش البرامج الثابتة الخبيثة." }
+        ]
+      },
+      "metaTitle": "خدمات تطوير تطبيقات إنترنت الأشياء (IoT) | صناعية واستهلاكية",
+      "metaDescription": "قم ببناء منتجات ذكية متصلة. تغطي خدمات تطوير IoT لدينا تكامل الأجهزة و MQTT وحوسبة الحافة ومنصات السحابة مثل AWS IoT."
+    }
+  },
+  "jamstack-development": {
+    "en": {
+      "name": "JAMstack Development",
+      "shortDescription": "Build blazing-fast websites with JAMstack architecture.",
+      "fullDescription": "Say goodbye to slow database queries, complex server maintenance, and security vulnerabilities. Our JAMstack (JavaScript, APIs, and Markup) development services deliver blazing-fast, incredibly secure, and globally distributed web experiences. By pre-rendering your website into static HTML/CSS files at build time and deploying them directly to a global CDN (like Vercel or Netlify), we guarantee sub-second load times anywhere in the world. We combine frameworks like Next.js or Gatsby with Headless CMS platforms (Contentful, Sanity) to give your marketing team full control over content, while ensuring developers can build modern, interactive UI features without restrictions.",
+      "features": [
+        "Static Site Generation (SSG) with Next.js/Gatsby",
+        "Headless CMS Integration (Sanity, Contentful, Strapi)",
+        "Global Edge Deployment via CDN (Vercel, Netlify)",
+        "Incremental Static Regeneration (ISR)",
+        "Serverless API Functions",
+        "Lighthouse Score Optimization"
+      ],
+      "benefits": [
+        "Incredible Page Load Speeds (Sub-Second)",
+        "Perfect Core Web Vitals & SEO Rankings",
+        "Bulletproof Security (No Database Exposed)",
+        "Effortless Scaling for High Traffic Spikes",
+        "Reduced Hosting & Server Costs"
+      ],
+      "content": {
+        "process": [
+          { "title": "Architecture Selection", "description": "Choosing the best React framework (Next.js/Gatsby) and Headless CMS." },
+          { "title": "Frontend Development", "description": "Building pixel-perfect, responsive components using Tailwind CSS." },
+          { "title": "CMS Configuration", "description": "Setting up content schemas and empowering editors in Contentful or Sanity." },
+          { "title": "API Integration", "description": "Connecting third-party services (payments, forms, search) via serverless functions." },
+          { "title": "CI/CD Deployment", "description": "Automating builds so every content update instantly pushes a new version to the CDN." }
+        ],
+        "technologies": [
+          "Next.js / Gatsby",
+          "React / Vue",
+          "Contentful / Sanity",
+          "GraphQL",
+          "Vercel / Netlify",
+          "Tailwind CSS"
+        ],
+        "faq": [
+          { "question": "If the site is 'static', how do I update the content?", "answer": "You update content exactly like you would in WordPress—via a user-friendly CMS dashboard (like Sanity). When you hit 'Publish', it triggers an automated build that instantly updates the static files on the CDN. It's the best of both worlds: dynamic editing with static performance." },
+          { "question": "Can JAMstack handle dynamic features like user logins or shopping carts?", "answer": "Absolutely. The 'A' in JAMstack stands for APIs. While the core pages are pre-rendered, interactive elements (carts, accounts, forms) talk directly to third-party APIs or serverless functions via JavaScript in the browser." }
+        ]
+      },
+      "metaTitle": "JAMstack Development Agency | Next.js & Headless CMS",
+      "metaDescription": "Build blazing-fast, secure websites with JAMstack. We specialize in Next.js, Gatsby, Vercel, and Headless CMS integrations for ultimate web performance."
+    },
+    "tr": {
+      "name": "JAMstack Geliştirme",
+      "shortDescription": "JAMstack mimarisi ile ışık hızında web siteleri oluşturun.",
+      "fullDescription": "Yavaş veritabanı sorgularına, karmaşık sunucu bakımına ve güvenlik açıklarına elveda deyin. JAMstack (JavaScript, API'ler ve Markup/İşaretleme) geliştirme hizmetlerimiz, ışık hızında, inanılmaz derecede güvenli ve küresel olarak dağıtılmış web deneyimleri sunar. Web sitenizi derleme (build) sırasında statik HTML/CSS dosyalarına önceden işleyerek (pre-rendering) ve bunları doğrudan küresel bir CDN'ye (Vercel veya Netlify gibi) dağıtarak, dünyanın her yerinde saniyenin altında yükleme sürelerini garanti ediyoruz. Pazarlama ekibinize içerik üzerinde tam kontrol sağlamak için Next.js veya Gatsby gibi çerçeveleri Başsız CMS (Headless CMS) platformlarıyla (Contentful, Sanity) birleştirirken, geliştiricilerin kısıtlama olmaksızın modern, etkileşimli kullanıcı arayüzü özellikleri oluşturmasını sağlıyoruz.",
+      "features": [
+        "Next.js/Gatsby ile Statik Site Üretimi (SSG)",
+        "Başsız CMS Entegrasyonu (Sanity, Contentful, Strapi)",
+        "CDN Üzerinden Küresel Uç (Edge) Dağıtımı (Vercel, Netlify)",
+        "Artımlı Statik Yeniden Oluşturma (ISR)",
+        "Sunucusuz (Serverless) API İşlevleri",
+        "Lighthouse Skoru Optimizasyonu"
+      ],
+      "benefits": [
+        "İnanılmaz Sayfa Yükleme Hızları (Saniyenin Altında)",
+        "Mükemmel Core Web Vitals ve SEO Sıralamaları",
+        "Kurşun Geçirmez Güvenlik (Açıkta Veritabanı Yok)",
+        "Yüksek Trafik Artışları İçin Zahmetsiz Ölçeklendirme",
+        "Azaltılmış Barındırma ve Sunucu Maliyetleri"
+      ],
+      "content": {
+        "process": [
+          { "title": "Mimari Seçimi", "description": "En iyi React çerçevesini (Next.js/Gatsby) ve Başsız CMS'yi seçme." },
+          { "title": "Ön Uç Geliştirme", "description": "Tailwind CSS kullanarak piksel açısından mükemmel, duyarlı bileşenler oluşturma." },
+          { "title": "CMS Yapılandırması", "description": "İçerik şemalarını ayarlama ve Contentful veya Sanity'de editörleri yetkilendirme." },
+          { "title": "API Entegrasyonu", "description": "Üçüncü taraf hizmetlerini (ödemeler, formlar, arama) sunucusuz işlevler aracılığıyla bağlama." },
+          { "title": "CI/CD Dağıtımı", "description": "Derlemeleri otomatikleştirerek her içerik güncellemesinin CDN'ye anında yeni bir sürüm göndermesini sağlama." }
+        ],
+        "technologies": [
+          "Next.js / Gatsby",
+          "React / Vue",
+          "Contentful / Sanity",
+          "GraphQL",
+          "Vercel / Netlify",
+          "Tailwind CSS"
+        ],
+        "faq": [
+          { "question": "Site 'statik' ise içeriği nasıl güncellerim?", "answer": "İçeriği tıpkı WordPress'te yapacağınız gibi kullanıcı dostu bir CMS panosu (Sanity gibi) aracılığıyla güncellersiniz. 'Yayınla'ya bastığınızda, bu, CDN'deki statik dosyaları anında güncelleyen otomatik bir derleme (build) tetikler. Her iki dünyanın da en iyisi: statik performansla dinamik düzenleme." },
+          { "question": "JAMstack kullanıcı girişleri veya alışveriş sepetleri gibi dinamik özellikleri işleyebilir mi?", "answer": "Kesinlikle. JAMstack'teki 'A', API'ler anlamına gelir. Temel sayfalar önceden oluşturulurken (pre-rendered), etkileşimli öğeler (sepetler, hesaplar, formlar) tarayıcıdaki JavaScript aracılığıyla doğrudan üçüncü taraf API'lerle veya sunucusuz (serverless) işlevlerle konuşur." }
+        ]
+      },
+      "metaTitle": "JAMstack Geliştirme Ajansı | Next.js ve Headless CMS",
+      "metaDescription": "JAMstack ile ışık hızında, güvenli web siteleri oluşturun. Üstün web performansı için Next.js, Gatsby, Vercel ve Headless CMS entegrasyonlarında uzmanız."
+    },
+    "de": {
+      "name": "JAMstack-Entwicklung",
+      "shortDescription": "Erstellen Sie blitzschnelle Websites mit der JAMstack-Architektur.",
+      "fullDescription": "Verabschieden Sie sich von langsamen Datenbankabfragen, komplexer Serverwartung und Sicherheitslücken. Unsere JAMstack-Entwicklungsdienste (JavaScript, APIs und Markup) liefern blitzschnelle, unglaublich sichere und global verteilte Web-Erlebnisse. Indem wir Ihre Website zur Build-Zeit in statische HTML/CSS-Dateien vorrendern und sie direkt auf einem globalen CDN (wie Vercel oder Netlify) bereitstellen, garantieren wir Ladezeiten von unter einer Sekunde überall auf der Welt. Wir kombinieren Frameworks wie Next.js oder Gatsby mit Headless-CMS-Plattformen (Contentful, Sanity), um Ihrem Marketingteam die volle Kontrolle über Inhalte zu geben und gleichzeitig sicherzustellen, dass Entwickler moderne, interaktive UI-Funktionen ohne Einschränkungen entwickeln können.",
+      "features": [
+        "Static Site Generation (SSG) mit Next.js/Gatsby",
+        "Headless CMS-Integration (Sanity, Contentful, Strapi)",
+        "Globale Edge-Bereitstellung via CDN (Vercel, Netlify)",
+        "Incremental Static Regeneration (ISR)",
+        "Serverlose API-Funktionen",
+        "Lighthouse-Score-Optimierung"
+      ],
+      "benefits": [
+        "Unglaubliche Seitenladezeiten (unter einer Sekunde)",
+        "Perfekte Core Web Vitals & SEO-Rankings",
+        "Kugelsichere Sicherheit (keine Datenbank exponiert)",
+        "Mühelose Skalierung für hohe Verkehrsspitzen",
+        "Reduzierte Hosting- & Serverkosten"
+      ],
+      "content": {
+        "process": [
+          { "title": "Architektur-Auswahl", "description": "Auswahl des besten React-Frameworks (Next.js/Gatsby) und Headless-CMS." },
+          { "title": "Frontend-Entwicklung", "description": "Aufbau pixelgenauer, responsiver Komponenten mit Tailwind CSS." },
+          { "title": "CMS-Konfiguration", "description": "Einrichtung von Inhaltsschemata und Befähigung von Redakteuren in Contentful oder Sanity." },
+          { "title": "API-Integration", "description": "Anbindung von Drittanbieterdiensten (Zahlungen, Formulare, Suche) über serverlose Funktionen." },
+          { "title": "CI/CD-Bereitstellung", "description": "Automatisierung von Builds, sodass jedes Inhaltsupdate sofort eine neue Version in das CDN schiebt." }
+        ],
+        "technologies": [
+          "Next.js / Gatsby",
+          "React / Vue",
+          "Contentful / Sanity",
+          "GraphQL",
+          "Vercel / Netlify",
+          "Tailwind CSS"
+        ],
+        "faq": [
+          { "question": "Wenn die Seite 'statisch' ist, wie aktualisiere ich dann den Inhalt?", "answer": "Sie aktualisieren Inhalte genau wie in WordPress – über ein benutzerfreundliches CMS-Dashboard (wie Sanity). Wenn Sie auf 'Veröffentlichen' klicken, löst dies einen automatisierten Build aus, der die statischen Dateien auf dem CDN sofort aktualisiert. Es ist das Beste aus beiden Welten: dynamische Bearbeitung mit statischer Leistung." },
+          { "question": "Kann JAMstack dynamische Funktionen wie Benutzer-Logins oder Warenkörbe verarbeiten?", "answer": "Absolut. Das 'A' in JAMstack steht für APIs. Während die Kernseiten vorgerendert werden, kommunizieren interaktive Elemente (Warenkörbe, Konten, Formulare) über JavaScript im Browser direkt mit APIs von Drittanbietern oder serverlosen Funktionen." }
+        ]
+      },
+      "metaTitle": "JAMstack Entwicklungsagentur | Next.js & Headless CMS",
+      "metaDescription": "Erstellen Sie blitzschnelle, sichere Websites mit JAMstack. Wir sind spezialisiert auf Next.js, Gatsby, Vercel und Headless CMS-Integrationen für maximale Leistung."
+    },
+    "ur": {
+      "name": "جیم اسٹیک کی ترقی",
+      "shortDescription": "JAMstack فن تعمیر کے ساتھ تیز رفتار ویب سائٹس بنائیں۔",
+      "fullDescription": "ڈیٹا بیس کے سست سوالات، پیچیدہ سرور کی دیکھ بھال، اور سیکورٹی کے خطرات کو الوداع کہیں۔ ہماری JAMstack (جاوا اسکرپٹ، APIs، اور مارک اپ) ڈیولپمنٹ سروسز تیز رفتار، ناقابل یقین حد تک محفوظ، اور عالمی سطح پر تقسیم شدہ ویب تجربات فراہم کرتی ہیں۔ آپ کی ویب سائٹ کو تعمیر کے وقت جامد HTML/CSS فائلوں میں پیش کر کے اور انہیں براہ راست عالمی CDN (جیسے Vercel یا Netlify) پر لگا کر، ہم دنیا میں کہیں بھی ذیلی سیکنڈ کے لوڈ کے اوقات کی ضمانت دیتے ہیں۔ ہم ہیڈ لیس سی ایم ایس پلیٹ فارمز (Contentful, Sanity) کے ساتھ Next.js یا Gatsby جیسے فریم ورکس کو یکجا کرتے ہیں تاکہ آپ کی مارکیٹنگ ٹیم کو مواد پر مکمل کنٹرول دیا جا سکے، اس بات کو یقینی بناتے ہوئے کہ ڈویلپرز جدید، انٹرایکٹو UI فیچرز کو بغیر کسی پابندی کے بنا سکیں۔",
+      "features": [
+        "Next.js/Gatsby کے ساتھ جامد سائٹ جنریشن (SSG)",
+        "ہیڈ لیس سی ایم ایس انٹیگریشن (Sanity, Contentful, Strapi)",
+        "CDN کے ذریعے گلوبل ایج کی تعیناتی (Vercel, Netlify)",
+        "بڑھا ہوا جامد تخلیق نو (ISR)",
+        "سرور کے بغیر API افعال",
+        "لائٹ ہاؤس سکور کی اصلاح"
+      ],
+      "benefits": [
+        "ناقابل یقین صفحہ لوڈ کی رفتار (ذیلی سیکنڈ)",
+        "کامل کور ویب وائٹلز اور SEO رینکنگ",
+        "بلٹ پروف سیکیورٹی (کوئی ڈیٹا بیس ظاہر نہیں کیا گیا)",
+        "ہائی ٹریفک اسپائکس کے لیے بغیر کوشش کے اسکیلنگ",
+        "ہوسٹنگ اور سرور کے اخراجات میں کمی"
+      ],
+      "content": {
+        "process": [
+          { "title": "آرکیٹیکچر کا انتخاب", "description": "بہترین React فریم ورک (Next.js/Gatsby) اور Headless CMS کا انتخاب کرنا۔" },
+          { "title": "فرنٹ اینڈ ڈیولپمنٹ", "description": "Tailwind CSS کا استعمال کرتے ہوئے پکسل کے کامل، ذمہ دار اجزاء بنانا۔" },
+          { "title": "CMS کنفیگریشن", "description": "مواد کے خاکے مرتب کرنا اور Contentful یا Sanity میں ایڈیٹرز کو بااختیار بنانا۔" },
+          { "title": "API انٹیگریشن", "description": "سرور لیس فنکشنز کے ذریعے فریق ثالث کی خدمات (ادائیگیاں، فارمز، تلاش) کو جوڑنا۔" },
+          { "title": "CI/CD کی تعیناتی۔", "description": "تعمیرات کو خودکار بنانا تاکہ ہر مواد کی تازہ کاری فوری طور پر CDN پر ایک نئے ورژن کو آگے بڑھائے۔" }
+        ],
+        "technologies": [
+          "Next.js / Gatsby",
+          "React / Vue",
+          "Contentful / Sanity",
+          "GraphQL",
+          "Vercel / Netlify",
+          "Tailwind CSS"
+        ],
+        "faq": [
+          { "question": "اگر سائٹ 'جامد' ہے تو میں مواد کو کیسے اپ ڈیٹ کروں؟", "answer": "آپ مواد کو بالکل اسی طرح اپ ڈیٹ کرتے ہیں جس طرح آپ ورڈپریس میں کریں گے — صارف دوست CMS ڈیش بورڈ کے ذریعے (جیسے Sanity)۔ جب آپ 'شائع کریں' کو دباتے ہیں، تو یہ ایک خودکار تعمیر کو متحرک کرتا ہے جو CDN پر موجود جامد فائلوں کو فوری طور پر اپ ڈیٹ کر دیتا ہے۔ یہ دونوں جہانوں میں بہترین ہے: جامد کارکردگی کے ساتھ متحرک ترمیم۔" },
+          { "question": "کیا JAMstack یوزر لاگ ان یا شاپنگ کارٹس جیسی متحرک خصوصیات کو سنبھال سکتا ہے؟", "answer": "بالکل۔ JAMstack میں 'A' کا مطلب APIs ہے۔ جب کہ بنیادی صفحات پہلے سے پیش کیے گئے ہیں، متعامل عناصر (کارٹس، اکاؤنٹس، فارمز) براؤزر میں JavaScript کے ذریعے براہ راست تھرڈ پارٹی APIs یا سرور کے بغیر فنکشنز سے بات کرتے ہیں۔" }
+        ]
+      },
+      "metaTitle": "جام اسٹیک ڈیولپمنٹ ایجنسی | Next.js اور ہیڈ لیس CMS",
+      "metaDescription": "JAMstack کے ساتھ تیز رفتار، محفوظ ویب سائٹس بنائیں۔ ہم ویب کی حتمی کارکردگی کے لیے Next.js، Gatsby، Vercel، اور Headless CMS انٹیگریشنز میں مہارت رکھتے ہیں۔"
+    },
+    "ar": {
+      "name": "تطوير JAMstack",
+      "shortDescription": "قم ببناء مواقع ويب فائقة السرعة باستخدام بنية JAMstack.",
+      "fullDescription": "قل وداعًا لاستعلامات قواعد البيانات البطيئة وصيانة الخوادم المعقدة والثغرات الأمنية. تقدم خدمات تطوير JAMstack (JavaScript و APIs و Markup) لدينا تجارب ويب فائقة السرعة وآمنة بشكل لا يصدق وموزعة عالميًا. من خلال العرض المسبق (Pre-rendering) لموقع الويب الخاص بك إلى ملفات HTML/CSS ثابتة في وقت الإنشاء (Build time) ونشرها مباشرة على شبكة توصيل محتوى (CDN) عالمية (مثل Vercel أو Netlify)، فإننا نضمن أوقات تحميل أجزاء من الثانية في أي مكان في العالم. نحن نجمع بين أطر العمل مثل Next.js أو Gatsby مع منصات نظام إدارة المحتوى مقطوع الرأس (Contentful ، Sanity) لمنح فريق التسويق لديك تحكمًا كاملاً في المحتوى، مع ضمان قدرة المطورين على بناء ميزات واجهة مستخدم تفاعلية حديثة دون قيود.",
+      "features": [
+        "توليد المواقع الثابتة (SSG) باستخدام Next.js/Gatsby",
+        "تكامل CMS مقطوع الرأس (Sanity ، Contentful ، Strapi)",
+        "النشر العالمي على الحافة عبر CDN (Vercel ، Netlify)",
+        "التجديد الثابت التزايدي (ISR)",
+        "وظائف API بدون خادم (Serverless)",
+        "تحسين درجات Lighthouse"
+      ],
+      "benefits": [
+        "سرعات تحميل صفحة مذهلة (أقل من ثانية)",
+        "مؤشرات حيوية أساسية للويب (Core Web Vitals) وتصنيفات SEO مثالية",
+        "أمان مضاد للرصاص (لا توجد قاعدة بيانات مكشوفة)",
+        "توسيع نطاق سهل للارتفاعات الكبيرة في حركة المرور",
+        "تقليل تكاليف الاستضافة والخادم"
+      ],
+      "content": {
+        "process": [
+          { "title": "اختيار البنية", "description": "اختيار أفضل إطار عمل React (Next.js/Gatsby) ونظام CMS مقطوع الرأس." },
+          { "title": "تطوير الواجهة الأمامية", "description": "بناء مكونات متجاوبة ومثالية باستخدام Tailwind CSS." },
+          { "title": "تكوين CMS", "description": "إعداد مخططات المحتوى وتمكين المحررين في Contentful أو Sanity." },
+          { "title": "تكامل API", "description": "ربط خدمات الطرف الثالث (المدفوعات، النماذج، البحث) عبر وظائف بدون خادم." },
+          { "title": "نشر CI/CD", "description": "أتمتة عمليات الإنشاء (Builds) بحيث يدفع كل تحديث للمحتوى إصدارًا جديدًا على الفور إلى CDN." }
+        ],
+        "technologies": [
+          "Next.js / Gatsby",
+          "React / Vue",
+          "Contentful / Sanity",
+          "GraphQL",
+          "Vercel / Netlify",
+          "Tailwind CSS"
+        ],
+        "faq": [
+          { "question": "إذا كان الموقع 'ثابتًا' (Static)، فكيف أقوم بتحديث المحتوى؟", "answer": "أنت تقوم بتحديث المحتوى تمامًا كما تفعل في WordPress — عبر لوحة معلومات CMS سهلة الاستخدام (مثل Sanity). عندما تضغط على 'نشر'، فإنه يؤدي إلى عملية إنشاء تلقائية تقوم بتحديث الملفات الثابتة على CDN على الفور. إنه يجمع أفضل ما في العالمين: التحرير الديناميكي مع الأداء الثابت." },
+          { "question": "هل يمكن لـ JAMstack التعامل مع الميزات الديناميكية مثل تسجيل دخول المستخدمين أو عربات التسوق؟", "answer": "بالتأكيد. يرمز حرف 'A' في JAMstack إلى واجهات برمجة التطبيقات (APIs). بينما يتم عرض الصفحات الأساسية مسبقًا، تتحدث العناصر التفاعلية (عربات التسوق والحسابات والنماذج) مباشرة إلى واجهات برمجة تطبيقات تابعة لجهات خارجية أو وظائف بدون خادم عبر JavaScript في المتصفح." }
+        ]
+      },
+      "metaTitle": "وكالة تطوير JAMstack | Next.js و Headless CMS",
+      "metaDescription": "قم ببناء مواقع ويب آمنة وفائقة السرعة باستخدام JAMstack. نحن متخصصون في تكامل Next.js و Gatsby و Vercel و Headless CMS للحصول على أداء ويب فائق."
+    }
+  }
+}

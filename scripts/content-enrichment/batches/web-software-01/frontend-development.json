@@ -1,0 +1,278 @@
+{
+  "slug": "frontend-development",
+  "en": {
+    "name": "Frontend Development",
+    "shortDescription": "Build fast, accessible user interfaces with React, Next.js, and TypeScript — pixel-perfect, responsive, and optimized for Core Web Vitals so pages load instantly and convert better.",
+    "fullDescription": "The frontend is where your product is judged in the first few seconds. We build interfaces that load fast, feel smooth, and work for everyone: React and Next.js with TypeScript, server-side rendering where SEO and speed demand it, and component architectures that stay maintainable as the app grows. Performance is engineered, not hoped for — we target real Core Web Vitals budgets, trim bundle sizes, and lazy-load what isn't needed up front. Accessibility follows WCAG 2.1 so your interface works with keyboards and screen readers, which also widens your audience and reduces legal risk. From design-system implementation to state management and end-to-end testing, we deliver frontends that are quick to ship features on and a pleasure for users to actually use.",
+    "features": [
+      "React & Next.js Development",
+      "TypeScript Throughout",
+      "Responsive & Mobile-First Design",
+      "State Management (Zustand, Redux, React Query)",
+      "Design Systems & Component Libraries",
+      "Core Web Vitals & Performance Optimization",
+      "SSR, SSG & Incremental Static Regeneration",
+      "Accessibility (WCAG 2.1) Compliance"
+    ],
+    "benefits": [
+      "Sub-second load times that lift conversions",
+      "Cross-browser consistency on all major browsers",
+      "Accessible, SEO-friendly interfaces by default",
+      "Maintainable component architecture and design systems",
+      "Type-safe codebase that catches bugs before runtime",
+      "Lean bundles tuned for mobile and slow networks"
+    ],
+    "metaTitle": "Frontend Development — React & Next.js | PakSoft",
+    "metaDescription": "Frontend development in React, Next.js, and TypeScript: fast, accessible, Core Web Vitals-optimized UIs that convert. Get a free estimate for your project.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Design Handoff & Planning", "description": "We review your designs, define the component breakdown, and agree on a rendering strategy — SSR, static, or client-side — based on SEO and interactivity needs. You leave with a clear architecture and a realistic scope, not surprises mid-build." },
+        { "step": 2, "title": "Foundation & Design System", "description": "We set up the project with TypeScript, a component library, and shared tokens for spacing, color, and typography. A consistent design system means new screens are assembled, not reinvented, which keeps the codebase fast to extend." },
+        { "step": 3, "title": "Component Development", "description": "We build reusable, accessible components in isolation, often with Storybook, before wiring them into pages. Each component is responsive and keyboard-navigable from the start, so accessibility isn't bolted on at the end." },
+        { "step": 4, "title": "State & Data Integration", "description": "We connect the UI to your APIs with the right tools — React Query for server state, a lightweight store for client state — avoiding the over-engineering that bloats so many frontends. Loading, error, and empty states are handled explicitly, not forgotten." },
+        { "step": 5, "title": "Performance & Accessibility QA", "description": "We profile real Core Web Vitals, trim bundles, optimize images, and lazy-load below-the-fold work. Accessibility is audited against WCAG with automated tools and manual screen-reader testing before launch." },
+        { "step": 6, "title": "Testing, Launch & Handover", "description": "We add unit and end-to-end tests with Vitest and Playwright so regressions are caught automatically. After deploy we monitor real-user vitals and hand over clean, documented code your team can build on." }
+      ],
+      "faq": [
+        { "question": "Should I use Next.js or plain React?", "answer": "Plain React (with Vite) is great for internal tools and dashboards where SEO doesn't matter and everything renders client-side. Next.js is the better default for public-facing products because it gives you server-side rendering, static generation, routing, and image optimization out of the box — all of which help SEO and first-load speed. We pick based on whether search visibility and fast first paint are priorities for you." },
+        { "question": "Why does TypeScript matter on the frontend?", "answer": "TypeScript catches a whole class of bugs — undefined values, wrong props, mismatched API shapes — at build time instead of in production. On any project with more than one developer or more than a few months of life, the upfront cost pays back quickly in fewer runtime errors and safer refactors. We use it throughout, including typed API responses so the UI and backend stay in sync." },
+        { "question": "What are Core Web Vitals and why should I care?", "answer": "Core Web Vitals are Google's user-experience metrics: Largest Contentful Paint (loading), Interaction to Next Paint (responsiveness), and Cumulative Layout Shift (visual stability). They're a real ranking factor and they correlate strongly with conversion — slow pages lose users. We target green scores by optimizing images, code-splitting, reducing layout shift, and minimizing JavaScript on the critical path." },
+        { "question": "How do you make a site accessible?", "answer": "We build to WCAG 2.1 AA: semantic HTML, full keyboard navigation, sufficient color contrast, focus management, and proper ARIA only where native elements fall short. We test with automated tools and real screen readers, because automated checks catch maybe half the issues. Accessibility also improves SEO and usability for everyone, not just users with disabilities." },
+        { "question": "Which state management should I use?", "answer": "Most apps need far less global state than people assume. We separate server state — data from your API — handled by React Query or SWR with built-in caching, from genuine client state like UI toggles, handled by a lightweight store such as Zustand. Redux is still a fine choice for large, complex apps, but reaching for it by default usually adds boilerplate you don't need." },
+        { "question": "How long does a frontend build take?", "answer": "A marketing site or landing page runs 2–4 weeks; a full application UI with many screens, complex state, and integrations takes 2–4 months. The biggest drivers are the number of unique screens, how polished the interactions need to be, and whether a design system already exists or has to be built alongside the product." },
+        { "question": "Can you implement an existing Figma design exactly?", "answer": "Yes — pixel-accurate implementation is standard for us, including responsive behavior the design may only show at one or two breakpoints. We'll flag where a design will hurt performance or accessibility and suggest alternatives, since a beautiful mockup that ships a 5MB hero image or fails contrast checks isn't actually finished. Close collaboration with your designer keeps both fidelity and quality high." },
+        { "question": "Do you handle SEO on the frontend?", "answer": "Frontend SEO is a big part of what we do: server-rendering or static-generating content so crawlers see it, correct semantic markup and metadata, structured data (JSON-LD), fast Core Web Vitals, and clean URLs. We handle the technical SEO foundation; content strategy and link building are separate disciplines, but we make sure the site is technically ready to rank." }
+      ],
+      "technologies": [
+        { "icon": "react", "name": "React" },
+        { "icon": "nextdotjs", "name": "Next.js" },
+        { "icon": "typescript", "name": "TypeScript" },
+        { "icon": "tailwindcss", "name": "Tailwind CSS" },
+        { "icon": "reactquery", "name": "React Query" },
+        { "icon": "storybook", "name": "Storybook" },
+        { "icon": "framer", "name": "Framer Motion" },
+        { "icon": "playwright", "name": "Playwright" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Frontend Geliştirme",
+    "shortDescription": "React, Next.js ve TypeScript ile hızlı, erişilebilir kullanıcı arayüzleri kurun — piksel hassasiyetinde, duyarlı ve Core Web Vitals için optimize; böylece sayfalar anında yüklenir ve daha iyi dönüşüm sağlar.",
+    "fullDescription": "Frontend, ürününüzün ilk birkaç saniyede yargılandığı yerdir. Hızlı yüklenen, akıcı hissettiren ve herkes için çalışan arayüzler kurarız: TypeScript ile React ve Next.js, SEO ve hızın gerektirdiği yerde sunucu tarafı render ve uygulama büyüdükçe sürdürülebilir kalan bileşen mimarileri. Performans umut edilmez, mühendisliği yapılır — gerçek Core Web Vitals bütçeleri hedefler, paket boyutlarını küçültür ve baştan gerekmeyeni geç yükleriz. Erişilebilirlik WCAG 2.1'i izler; böylece arayüzünüz klavye ve ekran okuyucularla çalışır, bu da kitlenizi genişletir ve yasal riski azaltır. Tasarım sistemi uygulamasından durum yönetimine ve uçtan uca teste kadar, üzerinde hızlı özellik çıkılan ve kullanıcıların gerçekten kullanmaktan keyif aldığı frontend'ler sunarız.",
+    "features": [
+      "React ve Next.js Geliştirme",
+      "Baştan Sona TypeScript",
+      "Duyarlı ve Mobil Öncelikli Tasarım",
+      "Durum Yönetimi (Zustand, Redux, React Query)",
+      "Tasarım Sistemleri ve Bileşen Kütüphaneleri",
+      "Core Web Vitals ve Performans Optimizasyonu",
+      "SSR, SSG ve Artımlı Statik Yeniden Üretim",
+      "Erişilebilirlik (WCAG 2.1) Uyumu"
+    ],
+    "benefits": [
+      "Dönüşümü artıran saniye altı yükleme süreleri",
+      "Tüm büyük tarayıcılarda tutarlılık",
+      "Varsayılan olarak erişilebilir, SEO dostu arayüzler",
+      "Sürdürülebilir bileşen mimarisi ve tasarım sistemleri",
+      "Hataları çalışmadan önce yakalayan tip güvenli kod tabanı",
+      "Mobil ve yavaş ağlar için ayarlanmış yalın paketler"
+    ],
+    "metaTitle": "Frontend Geliştirme — React ve Next.js | PakSoft",
+    "metaDescription": "React, Next.js ve TypeScript ile frontend geliştirme: hızlı, erişilebilir, Core Web Vitals optimize, dönüşüm sağlayan arayüzler. Projeniz için ücretsiz teklif alın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Tasarım Devri ve Planlama", "description": "Tasarımlarınızı inceler, bileşen ayrımını tanımlar ve SEO ile etkileşim ihtiyaçlarına göre bir render stratejisi — SSR, statik veya istemci tarafı — üzerinde anlaşırız. Yapım ortasında sürprizlerle değil, net bir mimari ve gerçekçi bir kapsamla ayrılırsınız." },
+        { "step": 2, "title": "Temel ve Tasarım Sistemi", "description": "Projeyi TypeScript, bir bileşen kütüphanesi ve boşluk, renk, tipografi için paylaşılan token'larla kurarız. Tutarlı bir tasarım sistemi, yeni ekranların yeniden icat edilmesi yerine birleştirilmesi demektir; bu da kod tabanını genişletmeyi hızlı tutar." },
+        { "step": 3, "title": "Bileşen Geliştirme", "description": "Sayfalara bağlamadan önce yeniden kullanılabilir, erişilebilir bileşenleri çoğu zaman Storybook ile yalıtılmış olarak kurarız. Her bileşen baştan duyarlı ve klavyeyle gezilebilir olur; böylece erişilebilirlik sona eklenmez." },
+        { "step": 4, "title": "Durum ve Veri Entegrasyonu", "description": "Arayüzü doğru araçlarla API'lerinize bağlarız — sunucu durumu için React Query, istemci durumu için hafif bir depo — birçok frontend'i şişiren aşırı mühendislikten kaçınarak. Yükleme, hata ve boş durumlar unutulmaz, açıkça ele alınır." },
+        { "step": 5, "title": "Performans ve Erişilebilirlik QA", "description": "Gerçek Core Web Vitals'i profiler, paketleri küçültür, görselleri optimize eder ve katlama altı işi geç yükleriz. Erişilebilirlik, lansman öncesi otomatik araçlar ve manuel ekran okuyucu testiyle WCAG'a göre denetlenir." },
+        { "step": 6, "title": "Test, Lansman ve Teslim", "description": "Regresyonların otomatik yakalanması için Vitest ve Playwright ile birim ve uçtan uca testler ekleriz. Dağıtım sonrası gerçek kullanıcı vitals'ini izler ve ekibinizin üzerine inşa edebileceği temiz, belgelenmiş kodu teslim ederiz." }
+      ],
+      "faq": [
+        { "question": "Next.js mi yoksa düz React mi kullanmalıyım?", "answer": "Düz React (Vite ile), SEO'nun önemli olmadığı ve her şeyin istemci tarafında render edildiği iç araçlar ve panolar için harikadır. Next.js, halka açık ürünler için daha iyi varsayılandır; çünkü sunucu tarafı render, statik üretim, yönlendirme ve görsel optimizasyonu kutudan çıkar — hepsi SEO ve ilk yükleme hızına yardımcı olur. Arama görünürlüğü ve hızlı ilk boyamanın sizin için öncelik olup olmadığına göre seçeriz." },
+        { "question": "Frontend'de TypeScript neden önemli?", "answer": "TypeScript bütün bir hata sınıfını — tanımsız değerler, yanlış prop'lar, uyumsuz API biçimleri — üretimde değil derleme zamanında yakalar. Birden fazla geliştiricisi veya birkaç aydan uzun ömrü olan her projede, ön maliyet daha az çalışma zamanı hatası ve daha güvenli refactor olarak hızla geri döner. Arayüz ve backend'in senkronda kalması için tipli API yanıtları dahil baştan sona kullanırız." },
+        { "question": "Core Web Vitals nedir ve neden önemsemeliyim?", "answer": "Core Web Vitals, Google'ın kullanıcı deneyimi metrikleridir: Largest Contentful Paint (yükleme), Interaction to Next Paint (yanıt verme) ve Cumulative Layout Shift (görsel kararlılık). Gerçek bir sıralama faktörüdür ve dönüşümle güçlü ilişkilidir — yavaş sayfalar kullanıcı kaybeder. Görselleri optimize ederek, kod bölerek, layout shift'i azaltarak ve kritik yoldaki JavaScript'i en aza indirerek yeşil skorlar hedefleriz." },
+        { "question": "Bir siteyi nasıl erişilebilir yaparsınız?", "answer": "WCAG 2.1 AA'ya göre kurarız: anlamsal HTML, tam klavye gezinmesi, yeterli renk kontrastı, odak yönetimi ve yalnızca yerel öğelerin yetersiz kaldığı yerde doğru ARIA. Otomatik araçlar ve gerçek ekran okuyucularla test ederiz, çünkü otomatik kontroller sorunların belki yarısını yakalar. Erişilebilirlik ayrıca herkes için SEO ve kullanılabilirliği artırır, yalnızca engelli kullanıcılar için değil." },
+        { "question": "Hangi durum yönetimini kullanmalıyım?", "answer": "Çoğu uygulama, sanılandan çok daha az global duruma ihtiyaç duyar. Sunucu durumunu — API'nizden gelen veri — yerleşik önbellekli React Query veya SWR ile, gerçek istemci durumunu — UI geçişleri gibi — Zustand gibi hafif bir depo ile ayırırız. Redux büyük, karmaşık uygulamalar için hâlâ iyi bir seçimdir ama varsayılan olarak ona uzanmak genellikle ihtiyacınız olmayan kalıp kod ekler." },
+        { "question": "Bir frontend yapımı ne kadar sürer?", "answer": "Bir pazarlama sitesi veya açılış sayfası 2–4 hafta sürer; birçok ekran, karmaşık durum ve entegrasyon içeren tam bir uygulama arayüzü 2–4 ay alır. En büyük etkenler benzersiz ekran sayısı, etkileşimlerin ne kadar cilalı olması gerektiği ve bir tasarım sisteminin zaten var olup olmadığı veya ürünle birlikte kurulup kurulmayacağıdır." },
+        { "question": "Mevcut bir Figma tasarımını birebir uygulayabilir misiniz?", "answer": "Evet — piksel doğruluğunda uygulama bizim için standarttır; tasarımın yalnızca bir iki kırılma noktasında gösterdiği duyarlı davranış dahil. Bir tasarımın performansa veya erişilebilirliğe zarar vereceği yeri işaret eder ve alternatifler öneririz; çünkü 5MB hero görseli yükleyen veya kontrast kontrollerinden geçemeyen güzel bir mockup aslında bitmiş değildir. Tasarımcınızla yakın iş birliği hem sadakati hem kaliteyi yüksek tutar." },
+        { "question": "Frontend'de SEO'yu siz mi hallediyorsunuz?", "answer": "Frontend SEO yaptığımız işin büyük bir parçasıdır: içeriği tarayıcıların görmesi için sunucu render veya statik üretim, doğru anlamsal işaretleme ve metadata, yapılandırılmış veri (JSON-LD), hızlı Core Web Vitals ve temiz URL'ler. Teknik SEO temelini biz hallederiz; içerik stratejisi ve bağlantı kurma ayrı disiplinlerdir ama sitenin teknik olarak sıralanmaya hazır olduğundan emin oluruz." }
+      ],
+      "technologies": [
+        { "icon": "react", "name": "React" },
+        { "icon": "nextdotjs", "name": "Next.js" },
+        { "icon": "typescript", "name": "TypeScript" },
+        { "icon": "tailwindcss", "name": "Tailwind CSS" },
+        { "icon": "reactquery", "name": "React Query" },
+        { "icon": "storybook", "name": "Storybook" },
+        { "icon": "framer", "name": "Framer Motion" },
+        { "icon": "playwright", "name": "Playwright" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Frontend-Entwicklung",
+    "shortDescription": "Bauen Sie schnelle, barrierefreie Oberflächen mit React, Next.js und TypeScript — pixelgenau, responsiv und für Core Web Vitals optimiert, damit Seiten sofort laden und besser konvertieren.",
+    "fullDescription": "Im Frontend wird Ihr Produkt in den ersten Sekunden beurteilt. Wir bauen Oberflächen, die schnell laden, sich flüssig anfühlen und für alle funktionieren: React und Next.js mit TypeScript, serverseitiges Rendering wo SEO und Tempo es verlangen, und Komponentenarchitekturen, die wartbar bleiben, wenn die App wächst. Performance wird konstruiert, nicht erhofft — wir zielen auf echte Core-Web-Vitals-Budgets, verschlanken Bundles und laden verzögert, was anfangs nicht gebraucht wird. Barrierefreiheit folgt WCAG 2.1, sodass Ihre Oberfläche mit Tastatur und Screenreadern funktioniert, was zugleich die Zielgruppe erweitert und rechtliche Risiken senkt. Von Design-System-Umsetzung über State-Management bis zu End-to-End-Tests liefern wir Frontends, auf denen Features schnell entstehen und die Nutzer wirklich gern verwenden.",
+    "features": [
+      "React- & Next.js-Entwicklung",
+      "Durchgängig TypeScript",
+      "Responsives & Mobile-First-Design",
+      "State-Management (Zustand, Redux, React Query)",
+      "Design-Systeme & Komponentenbibliotheken",
+      "Core Web Vitals & Performance-Optimierung",
+      "SSR, SSG & Incremental Static Regeneration",
+      "Barrierefreiheit (WCAG 2.1)"
+    ],
+    "benefits": [
+      "Sub-Sekunden-Ladezeiten, die Conversions heben",
+      "Cross-Browser-Konsistenz auf allen großen Browsern",
+      "Barrierefreie, SEO-freundliche Oberflächen von Haus aus",
+      "Wartbare Komponentenarchitektur und Design-Systeme",
+      "Typsichere Codebasis, die Bugs vor der Laufzeit fängt",
+      "Schlanke Bundles, getunt für Mobile und langsame Netze"
+    ],
+    "metaTitle": "Frontend-Entwicklung — React & Next.js | PakSoft",
+    "metaDescription": "Frontend-Entwicklung mit React, Next.js und TypeScript: schnelle, barrierefreie, Core-Web-Vitals-optimierte UIs, die konvertieren. Jetzt kostenloses Angebot anfordern.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Design-Übergabe & Planung", "description": "Wir prüfen Ihre Designs, definieren die Komponentenaufteilung und einigen uns auf eine Rendering-Strategie — SSR, statisch oder clientseitig — je nach SEO- und Interaktivitätsbedarf. Sie gehen mit klarer Architektur und realistischem Umfang heraus, nicht mit Überraschungen mitten im Bau." },
+        { "step": 2, "title": "Fundament & Design-System", "description": "Wir richten das Projekt mit TypeScript, einer Komponentenbibliothek und geteilten Tokens für Abstände, Farbe und Typografie ein. Ein konsistentes Design-System bedeutet, dass neue Screens zusammengesetzt statt neu erfunden werden, was die Codebasis schnell erweiterbar hält." },
+        { "step": 3, "title": "Komponentenentwicklung", "description": "Wir bauen wiederverwendbare, barrierefreie Komponenten isoliert, oft mit Storybook, bevor wir sie in Seiten verdrahten. Jede Komponente ist von Anfang an responsiv und tastaturnavigierbar, sodass Barrierefreiheit nicht am Ende drangeschraubt wird." },
+        { "step": 4, "title": "State & Daten-Integration", "description": "Wir verbinden die UI mit Ihren APIs mit den richtigen Tools — React Query für Server-State, ein leichter Store für Client-State — und vermeiden das Over-Engineering, das so viele Frontends aufbläht. Lade-, Fehler- und Leer-Zustände werden explizit behandelt, nicht vergessen." },
+        { "step": 5, "title": "Performance- & Accessibility-QA", "description": "Wir profilen echte Core Web Vitals, verschlanken Bundles, optimieren Bilder und laden Below-the-Fold verzögert. Barrierefreiheit wird vor dem Launch mit automatisierten Tools und manuellem Screenreader-Test gegen WCAG geprüft." },
+        { "step": 6, "title": "Testing, Launch & Übergabe", "description": "Wir ergänzen Unit- und End-to-End-Tests mit Vitest und Playwright, damit Regressionen automatisch auffallen. Nach dem Deploy überwachen wir Real-User-Vitals und übergeben sauberen, dokumentierten Code, auf dem Ihr Team aufbauen kann." }
+      ],
+      "faq": [
+        { "question": "Next.js oder reines React?", "answer": "Reines React (mit Vite) ist top für interne Tools und Dashboards, wo SEO egal ist und alles clientseitig rendert. Next.js ist der bessere Default für öffentliche Produkte, weil es serverseitiges Rendering, statische Generierung, Routing und Bildoptimierung mitbringt — alles hilft SEO und First-Load-Tempo. Wir wählen danach, ob Sichtbarkeit in der Suche und schneller First Paint für Sie Priorität haben." },
+        { "question": "Warum ist TypeScript im Frontend wichtig?", "answer": "TypeScript fängt eine ganze Bug-Klasse — undefinierte Werte, falsche Props, abweichende API-Formen — zur Build-Zeit statt in der Produktion. Bei jedem Projekt mit mehr als einem Entwickler oder mehr als ein paar Monaten Lebensdauer zahlt sich der Aufwand schnell durch weniger Laufzeitfehler und sicherere Refactors aus. Wir nutzen es durchgängig, inklusive typisierter API-Antworten, damit UI und Backend synchron bleiben." },
+        { "question": "Was sind Core Web Vitals und warum sollte ich mich kümmern?", "answer": "Core Web Vitals sind Googles UX-Metriken: Largest Contentful Paint (Laden), Interaction to Next Paint (Reaktivität) und Cumulative Layout Shift (visuelle Stabilität). Sie sind ein echter Ranking-Faktor und korrelieren stark mit Conversion — langsame Seiten verlieren Nutzer. Wir zielen auf grüne Werte durch Bildoptimierung, Code-Splitting, Reduktion von Layout-Shift und minimiertes JavaScript auf dem kritischen Pfad." },
+        { "question": "Wie machen Sie eine Seite barrierefrei?", "answer": "Wir bauen nach WCAG 2.1 AA: semantisches HTML, volle Tastaturnavigation, ausreichender Farbkontrast, Fokus-Management und korrektes ARIA nur dort, wo native Elemente nicht reichen. Wir testen mit automatisierten Tools und echten Screenreadern, denn automatische Checks finden vielleicht die Hälfte der Probleme. Barrierefreiheit verbessert zudem SEO und Usability für alle, nicht nur für Menschen mit Behinderung." },
+        { "question": "Welches State-Management soll ich nutzen?", "answer": "Die meisten Apps brauchen weit weniger globalen State als angenommen. Wir trennen Server-State — Daten aus Ihrer API — gehandhabt von React Query oder SWR mit eingebautem Caching, vom echten Client-State wie UI-Toggles, gehandhabt von einem leichten Store wie Zustand. Redux ist für große, komplexe Apps weiterhin eine gute Wahl, aber per Default danach zu greifen, bringt meist unnötigen Boilerplate." },
+        { "question": "Wie lange dauert ein Frontend-Build?", "answer": "Eine Marketing-Site oder Landingpage läuft 2–4 Wochen; eine vollständige App-UI mit vielen Screens, komplexem State und Integrationen 2–4 Monate. Die größten Treiber sind die Zahl einzigartiger Screens, wie poliert die Interaktionen sein müssen und ob ein Design-System bereits existiert oder parallel zum Produkt entstehen muss." },
+        { "question": "Können Sie ein bestehendes Figma-Design exakt umsetzen?", "answer": "Ja — pixelgenaue Umsetzung ist für uns Standard, inklusive responsivem Verhalten, das das Design vielleicht nur an ein, zwei Breakpoints zeigt. Wir markieren, wo ein Design Performance oder Barrierefreiheit schadet, und schlagen Alternativen vor, denn ein schöner Mockup, der ein 5-MB-Hero-Bild ausliefert oder Kontrast-Checks reißt, ist nicht wirklich fertig. Enge Zusammenarbeit mit Ihrem Designer hält Fidelity und Qualität hoch." },
+        { "question": "Übernehmen Sie SEO im Frontend?", "answer": "Frontend-SEO ist ein großer Teil unserer Arbeit: serverseitiges Rendern oder statisches Generieren von Inhalten, damit Crawler sie sehen, korrektes semantisches Markup und Metadaten, strukturierte Daten (JSON-LD), schnelle Core Web Vitals und saubere URLs. Wir legen das technische SEO-Fundament; Content-Strategie und Linkaufbau sind eigene Disziplinen, aber wir stellen sicher, dass die Seite technisch ranking-bereit ist." }
+      ],
+      "technologies": [
+        { "icon": "react", "name": "React" },
+        { "icon": "nextdotjs", "name": "Next.js" },
+        { "icon": "typescript", "name": "TypeScript" },
+        { "icon": "tailwindcss", "name": "Tailwind CSS" },
+        { "icon": "reactquery", "name": "React Query" },
+        { "icon": "storybook", "name": "Storybook" },
+        { "icon": "framer", "name": "Framer Motion" },
+        { "icon": "playwright", "name": "Playwright" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "فرنٹ اینڈ ڈیولپمنٹ",
+    "shortDescription": "React، Next.js اور TypeScript سے تیز، قابلِ رسائی یوزر انٹرفیس بنائیں — pixel-perfect، responsive اور Core Web Vitals کے لیے آپٹیمائزڈ تاکہ صفحات فوراً لوڈ ہوں اور بہتر convert کریں۔",
+    "fullDescription": "فرنٹ اینڈ وہ جگہ ہے جہاں آپ کی پروڈکٹ پہلے چند سیکنڈوں میں پرکھی جاتی ہے۔ ہم ایسے انٹرفیس بناتے ہیں جو تیز لوڈ ہوں، ہموار محسوس ہوں اور سب کے لیے کام کریں: TypeScript کے ساتھ React اور Next.js، جہاں SEO اور رفتار کا تقاضا ہو وہاں server-side rendering، اور ایسی component آرکیٹیکچر جو ایپ کے بڑھنے پر قابلِ انتظام رہے۔ کارکردگی کی امید نہیں کی جاتی بلکہ انجینئرنگ کی جاتی ہے — ہم حقیقی Core Web Vitals بجٹ کا ہدف رکھتے ہیں، bundle سائز کم کرتے ہیں اور جو شروع میں نہ چاہیے اسے lazy-load کرتے ہیں۔ رسائی WCAG 2.1 کی پیروی کرتی ہے تاکہ آپ کا انٹرفیس کی بورڈ اور screen readers کے ساتھ چلے، جو سامعین بھی بڑھاتا ہے اور قانونی خطرہ کم کرتا ہے۔ ڈیزائن سسٹم کے نفاذ سے لے کر state management اور end-to-end testing تک، ہم ایسے فرنٹ اینڈ دیتے ہیں جن پر فیچرز جلد بنتے ہیں اور جنہیں صارف واقعی استعمال کر کے لطف اٹھاتے ہیں۔",
+    "features": [
+      "React اور Next.js ڈیولپمنٹ",
+      "سرے سے آخر تک TypeScript",
+      "Responsive اور Mobile-First ڈیزائن",
+      "State Management (Zustand، Redux، React Query)",
+      "ڈیزائن سسٹمز اور Component لائبریریاں",
+      "Core Web Vitals اور کارکردگی آپٹیمائزیشن",
+      "SSR، SSG اور Incremental Static Regeneration",
+      "رسائی (WCAG 2.1) تعمیل"
+    ],
+    "benefits": [
+      "سیکنڈ سے کم لوڈ ٹائم جو conversions بڑھاتا ہے",
+      "تمام بڑے براؤزرز پر یکسانیت",
+      "ڈیفالٹ طور پر قابلِ رسائی، SEO دوست انٹرفیس",
+      "قابلِ انتظام component آرکیٹیکچر اور ڈیزائن سسٹمز",
+      "Type-safe کوڈ بیس جو bugs کو runtime سے پہلے پکڑے",
+      "موبائل اور سست نیٹ ورکس کے لیے بنے ہلکے bundles"
+    ],
+    "metaTitle": "فرنٹ اینڈ ڈیولپمنٹ — React اور Next.js | PakSoft",
+    "metaDescription": "React، Next.js اور TypeScript میں فرنٹ اینڈ ڈیولپمنٹ: تیز، قابلِ رسائی، Core Web Vitals آپٹیمائزڈ، convert کرنے والے انٹرفیس۔ اپنے پروجیکٹ کا مفت تخمینہ لیں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "ڈیزائن حوالگی اور منصوبہ بندی", "description": "ہم آپ کے ڈیزائن کا جائزہ لیتے ہیں، component تقسیم طے کرتے ہیں اور SEO و تعامل کی ضروریات کے مطابق render حکمتِ عملی — SSR، static یا client-side — پر اتفاق کرتے ہیں۔ آپ تعمیر کے دوران حیرتوں کے بجائے واضح آرکیٹیکچر اور حقیقت پسندانہ دائرہ کار کے ساتھ نکلتے ہیں۔" },
+        { "step": 2, "title": "بنیاد اور ڈیزائن سسٹم", "description": "ہم پروجیکٹ کو TypeScript، ایک component لائبریری اور spacing، رنگ، typography کے لیے مشترکہ tokens کے ساتھ قائم کرتے ہیں۔ مستقل ڈیزائن سسٹم کا مطلب ہے نئی اسکرینیں دوبارہ ایجاد کرنے کے بجائے جوڑی جاتی ہیں، جو کوڈ بیس کو بڑھانے میں تیز رکھتا ہے۔" },
+        { "step": 3, "title": "Component ڈیولپمنٹ", "description": "ہم صفحات سے جوڑنے سے پہلے قابلِ دوبارہ استعمال، قابلِ رسائی components کو اکثر Storybook کے ساتھ الگ تھلگ بناتے ہیں۔ ہر component شروع سے responsive اور کی بورڈ سے قابلِ نیویگیشن ہوتا ہے، تاکہ رسائی آخر میں نہ جوڑی جائے۔" },
+        { "step": 4, "title": "State اور ڈیٹا انٹیگریشن", "description": "ہم UI کو درست اوزار سے آپ کی APIs سے جوڑتے ہیں — server state کے لیے React Query، client state کے لیے ہلکا store — اس over-engineering سے بچتے ہوئے جو بہت سے فرنٹ اینڈ کو پھلا دیتا ہے۔ Loading، error اور empty states بھولے نہیں جاتے بلکہ واضح طور پر سنبھالے جاتے ہیں۔" },
+        { "step": 5, "title": "کارکردگی اور رسائی QA", "description": "ہم حقیقی Core Web Vitals کو profile کرتے ہیں، bundles کم کرتے ہیں، تصاویر آپٹیمائز کرتے ہیں اور fold کے نیچے کا کام lazy-load کرتے ہیں۔ رسائی کا لانچ سے پہلے خودکار اوزار اور دستی screen reader ٹیسٹ سے WCAG کے مقابل آڈٹ کیا جاتا ہے۔" },
+        { "step": 6, "title": "ٹیسٹنگ، لانچ اور حوالگی", "description": "ہم Vitest اور Playwright کے ساتھ unit اور end-to-end ٹیسٹ شامل کرتے ہیں تاکہ regressions خودکار طور پر پکڑے جائیں۔ deploy کے بعد ہم حقیقی صارف vitals کی نگرانی کرتے ہیں اور صاف، دستاویزی کوڈ حوالے کرتے ہیں جس پر آپ کی ٹیم تعمیر کر سکے۔" }
+      ],
+      "faq": [
+        { "question": "مجھے Next.js استعمال کرنا چاہیے یا سادہ React؟", "answer": "سادہ React (Vite کے ساتھ) ان اندرونی اوزار اور dashboards کے لیے بہترین ہے جہاں SEO اہم نہ ہو اور سب کچھ client-side render ہو۔ Next.js عوامی پروڈکٹس کے لیے بہتر ڈیفالٹ ہے کیونکہ یہ server-side rendering، static generation، routing اور image آپٹیمائزیشن باکس سے دیتا ہے — یہ سب SEO اور پہلے لوڈ کی رفتار میں مدد دیتے ہیں۔ ہم اس بنیاد پر چنتے ہیں کہ تلاش میں نمایاں ہونا اور تیز پہلا paint آپ کے لیے ترجیح ہیں یا نہیں۔" },
+        { "question": "فرنٹ اینڈ پر TypeScript کیوں اہم ہے؟", "answer": "TypeScript bugs کی پوری ایک قسم — undefined اقدار، غلط props، غیر مطابق API شکلیں — production کے بجائے build وقت پر پکڑتا ہے۔ کسی بھی ایسے پروجیکٹ میں جس میں ایک سے زیادہ ڈیولپر یا چند ماہ سے زیادہ زندگی ہو، ابتدائی لاگت کم runtime errors اور محفوظ refactors کی صورت جلد واپس آ جاتی ہے۔ ہم اسے سرے سے آخر تک استعمال کرتے ہیں، بشمول typed API جوابات تاکہ UI اور backend ہم آہنگ رہیں۔" },
+        { "question": "Core Web Vitals کیا ہیں اور مجھے کیوں پروا ہو؟", "answer": "Core Web Vitals گوگل کی یوزر تجربہ میٹرکس ہیں: Largest Contentful Paint (لوڈنگ)، Interaction to Next Paint (جوابدہی) اور Cumulative Layout Shift (بصری استحکام)۔ یہ حقیقی ranking عنصر ہیں اور conversion سے مضبوط تعلق رکھتے ہیں — سست صفحات صارف کھوتے ہیں۔ ہم تصاویر آپٹیمائز کر کے، code-splitting کر کے، layout shift کم کر کے اور critical path پر JavaScript کم سے کم کر کے سبز اسکور کا ہدف رکھتے ہیں۔" },
+        { "question": "آپ کسی سائٹ کو قابلِ رسائی کیسے بناتے ہیں؟", "answer": "ہم WCAG 2.1 AA کے مطابق بناتے ہیں: semantic HTML، مکمل کی بورڈ نیویگیشن، کافی رنگ کنٹراسٹ، focus management اور درست ARIA صرف وہاں جہاں native عناصر ناکافی ہوں۔ ہم خودکار اوزار اور حقیقی screen readers سے ٹیسٹ کرتے ہیں، کیونکہ خودکار جانچ شاید آدھے مسائل پکڑتی ہے۔ رسائی سب کے لیے SEO اور قابلِ استعمالیت بھی بہتر کرتی ہے، صرف معذور صارفین کے لیے نہیں۔" },
+        { "question": "مجھے کون سا state management استعمال کرنا چاہیے؟", "answer": "زیادہ تر ایپس کو خیال سے کہیں کم global state درکار ہوتا ہے۔ ہم server state — آپ کی API سے ڈیٹا — کو built-in caching والے React Query یا SWR سے، اور حقیقی client state جیسے UI toggles کو Zustand جیسے ہلکے store سے الگ کرتے ہیں۔ Redux بڑی، پیچیدہ ایپس کے لیے اب بھی اچھا انتخاب ہے مگر ڈیفالٹ طور پر اس کی طرف جانا اکثر وہ boilerplate شامل کرتا ہے جس کی آپ کو ضرورت نہیں۔" },
+        { "question": "فرنٹ اینڈ تعمیر میں کتنا وقت لگتا ہے؟", "answer": "ایک marketing سائٹ یا landing page 2–4 ہفتے لیتی ہے؛ کئی اسکرینوں، پیچیدہ state اور انٹیگریشنز والی مکمل ایپ UI 2–4 ماہ لیتی ہے۔ سب سے بڑے عوامل منفرد اسکرینوں کی تعداد، تعاملات کو کتنا صیقل ہونا چاہیے، اور آیا ڈیزائن سسٹم پہلے سے موجود ہے یا پروڈکٹ کے ساتھ بنانا ہے، ہیں۔" },
+        { "question": "کیا آپ موجودہ Figma ڈیزائن کو بالکل ویسے ہی نافذ کر سکتے ہیں؟", "answer": "جی ہاں — pixel درست نفاذ ہمارے لیے معیاری ہے، بشمول وہ responsive رویہ جو ڈیزائن شاید صرف ایک دو breakpoints پر دکھائے۔ ہم نشان زد کریں گے کہ کہاں ڈیزائن کارکردگی یا رسائی کو نقصان دے گا اور متبادل تجویز کریں گے، کیونکہ ایسا خوبصورت mockup جو 5MB hero تصویر بھیجے یا کنٹراسٹ جانچ سے ناکام ہو، دراصل مکمل نہیں۔ آپ کے ڈیزائنر سے قریبی تعاون fidelity اور معیار دونوں بلند رکھتا ہے۔" },
+        { "question": "کیا آپ فرنٹ اینڈ پر SEO سنبھالتے ہیں؟", "answer": "فرنٹ اینڈ SEO ہمارے کام کا بڑا حصہ ہے: مواد کو crawlers کے دیکھنے کے لیے server render یا static generate کرنا، درست semantic markup اور metadata، structured data (JSON-LD)، تیز Core Web Vitals اور صاف URLs۔ ہم تکنیکی SEO بنیاد سنبھالتے ہیں؛ مواد کی حکمتِ عملی اور link building الگ شعبے ہیں مگر ہم یقینی بناتے ہیں کہ سائٹ تکنیکی طور پر رینک ہونے کے لیے تیار ہو۔" }
+      ],
+      "technologies": [
+        { "icon": "react", "name": "React" },
+        { "icon": "nextdotjs", "name": "Next.js" },
+        { "icon": "typescript", "name": "TypeScript" },
+        { "icon": "tailwindcss", "name": "Tailwind CSS" },
+        { "icon": "reactquery", "name": "React Query" },
+        { "icon": "storybook", "name": "Storybook" },
+        { "icon": "framer", "name": "Framer Motion" },
+        { "icon": "playwright", "name": "Playwright" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تطوير الواجهة الأمامية",
+    "shortDescription": "ابنوا واجهات مستخدم سريعة وميسَّرة بـ React وNext.js وTypeScript — دقيقة بالبكسل ومتجاوبة ومحسّنة لمؤشرات Core Web Vitals كي تُحمَّل الصفحات فوراً وتحقّق تحويلاً أفضل.",
+    "fullDescription": "في الواجهة الأمامية يُحكَم على منتجكم في الثواني الأولى. نبني واجهات تُحمَّل بسرعة وتبدو سلسة وتعمل للجميع: React وNext.js مع TypeScript، وعرض من جانب الخادم حيث يتطلب SEO والسرعة ذلك، وبنى مكوّنات تبقى قابلة للصيانة مع نمو التطبيق. الأداء يُهندَس لا يُرتجى — نستهدف ميزانيات Core Web Vitals حقيقية، ونقلّص أحجام الحزم، ونؤجّل تحميل ما لا يلزم في البداية. وتتبع إمكانية الوصول WCAG 2.1 كي تعمل واجهتكم مع لوحة المفاتيح وقارئات الشاشة، وهو ما يوسّع جمهوركم ويقلّل المخاطر القانونية. ومن تنفيذ نظام التصميم إلى إدارة الحالة والاختبار الشامل، نسلّم واجهات أمامية تُبنى عليها الميزات بسرعة ويستمتع المستخدمون باستخدامها فعلاً.",
+    "features": [
+      "تطوير React وNext.js",
+      "TypeScript من البداية إلى النهاية",
+      "تصميم متجاوب يبدأ بالجوال",
+      "إدارة الحالة (Zustand وRedux وReact Query)",
+      "أنظمة تصميم ومكتبات مكوّنات",
+      "Core Web Vitals وتحسين الأداء",
+      "SSR وSSG والتجديد الثابت التدريجي",
+      "الامتثال لإمكانية الوصول (WCAG 2.1)"
+    ],
+    "benefits": [
+      "أوقات تحميل دون الثانية ترفع التحويلات",
+      "اتساق عبر جميع المتصفحات الرئيسية",
+      "واجهات ميسَّرة وصديقة لـ SEO افتراضياً",
+      "بنية مكوّنات قابلة للصيانة وأنظمة تصميم",
+      "قاعدة كود آمنة الأنواع تلتقط الأخطاء قبل التشغيل",
+      "حزم رشيقة مضبوطة للجوال والشبكات البطيئة"
+    ],
+    "metaTitle": "تطوير الواجهة الأمامية — React وNext.js | PakSoft",
+    "metaDescription": "تطوير واجهة أمامية بـ React وNext.js وTypeScript: واجهات سريعة وميسَّرة ومحسّنة لـ Core Web Vitals تحقّق التحويل. اطلبوا تقديراً مجانياً لمشروعكم.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "تسليم التصميم والتخطيط", "description": "نراجع تصاميمكم ونحدّد تقسيم المكوّنات ونتفق على استراتيجية عرض — SSR أو ثابت أو من جانب العميل — وفق حاجات SEO والتفاعلية. تخرجون ببنية واضحة ونطاق واقعي لا بمفاجآت في منتصف البناء." },
+        { "step": 2, "title": "الأساس ونظام التصميم", "description": "نهيّئ المشروع بـ TypeScript ومكتبة مكوّنات ورموز مشتركة للمسافات واللون والطباعة. نظام تصميم متّسق يعني تجميع الشاشات الجديدة لا إعادة اختراعها، ما يُبقي قاعدة الكود سريعة التوسعة." },
+        { "step": 3, "title": "تطوير المكوّنات", "description": "نبني مكوّنات قابلة لإعادة الاستخدام وميسَّرة بمعزل، غالباً مع Storybook، قبل ربطها بالصفحات. كل مكوّن متجاوب وقابل للتنقل بلوحة المفاتيح منذ البداية، كي لا تُضاف إمكانية الوصول في النهاية." },
+        { "step": 4, "title": "تكامل الحالة والبيانات", "description": "نربط الواجهة بواجهات API بالأدوات الصحيحة — React Query لحالة الخادم، ومخزن خفيف لحالة العميل — متجنّبين الهندسة المفرطة التي تُثقل واجهات كثيرة. وتُعالَج حالات التحميل والخطأ والفراغ صراحة لا نسياناً." },
+        { "step": 5, "title": "ضمان جودة الأداء وإمكانية الوصول", "description": "نقيس Core Web Vitals الحقيقية ونقلّص الحزم ونحسّن الصور ونؤجّل تحميل ما تحت الطيّة. وتُدقَّق إمكانية الوصول مقابل WCAG بأدوات آلية واختبار قارئ شاشة يدوي قبل الإطلاق." },
+        { "step": 6, "title": "الاختبار والإطلاق والتسليم", "description": "نضيف اختبارات وحدة وشاملة بـ Vitest وPlaywright كي تُلتقط الانحدارات تلقائياً. وبعد النشر نراقب مؤشرات المستخدمين الحقيقيين ونسلّم كوداً نظيفاً موثَّقاً يبني عليه فريقكم." }
+      ],
+      "faq": [
+        { "question": "هل أستخدم Next.js أم React الخالص؟", "answer": "React الخالص (مع Vite) ممتاز للأدوات الداخلية ولوحات المعلومات حيث لا يهم SEO ويُعرَض كل شيء من جانب العميل. وNext.js الخيار الافتراضي الأفضل للمنتجات العامة لأنه يوفّر العرض من جانب الخادم والتوليد الثابت والتوجيه وتحسين الصور جاهزاً — وكلها تساعد SEO وسرعة التحميل الأول. نختار بحسب ما إذا كانت الظهور في البحث وسرعة الرسم الأول أولوية لكم." },
+        { "question": "لماذا يهم TypeScript في الواجهة الأمامية؟", "answer": "يلتقط TypeScript فئة كاملة من الأخطاء — قيم غير معرّفة، وخصائص خاطئة، وأشكال API غير متطابقة — وقت البناء بدل الإنتاج. في أي مشروع بأكثر من مطوّر واحد أو عمر يتجاوز بضعة أشهر، تُسترد الكلفة الأولية سريعاً عبر أخطاء تشغيل أقل وإعادة هيكلة أأمن. نستخدمه من البداية إلى النهاية، بما في ذلك استجابات API مكتوبة الأنواع كي تبقى الواجهة والخلفية متزامنتين." },
+        { "question": "ما Core Web Vitals ولماذا أهتم؟", "answer": "Core Web Vitals مقاييس تجربة المستخدم من Google: Largest Contentful Paint (التحميل) وInteraction to Next Paint (الاستجابة) وCumulative Layout Shift (الاستقرار البصري). وهي عامل ترتيب حقيقي وترتبط بقوة بالتحويل — الصفحات البطيئة تفقد المستخدمين. نستهدف درجات خضراء بتحسين الصور وتقسيم الكود وتقليل إزاحة التخطيط وتقليص JavaScript على المسار الحرج." },
+        { "question": "كيف تجعلون الموقع ميسَّراً؟", "answer": "نبني وفق WCAG 2.1 AA: HTML دلالي، وتنقّل كامل بلوحة المفاتيح، وتباين ألوان كافٍ، وإدارة تركيز، وARIA صحيح فقط حيث تقصر العناصر الأصلية. نختبر بأدوات آلية وقارئات شاشة حقيقية، لأن الفحوص الآلية تلتقط ربما نصف المشكلات. وتحسّن إمكانية الوصول أيضاً SEO وسهولة الاستخدام للجميع لا لذوي الإعاقة فقط." },
+        { "question": "أي إدارة حالة ينبغي أن أستخدم؟", "answer": "تحتاج معظم التطبيقات حالة عامة أقل بكثير مما يُظَن. نفصل حالة الخادم — البيانات من واجهتكم — التي يتولاها React Query أو SWR بتخزين مؤقت مدمج، عن حالة العميل الفعلية مثل مفاتيح الواجهة التي يتولاها مخزن خفيف مثل Zustand. ويبقى Redux خياراً جيداً للتطبيقات الكبيرة المعقدة، لكن اللجوء إليه افتراضياً يضيف عادة شيفرة نمطية لا تحتاجونها." },
+        { "question": "كم يستغرق بناء الواجهة الأمامية؟", "answer": "موقع تسويقي أو صفحة هبوط يستغرق 2–4 أسابيع؛ وواجهة تطبيق كاملة بشاشات كثيرة وحالة معقدة وتكاملات تستغرق 2–4 أشهر. أكبر المحركات هي عدد الشاشات الفريدة، ومدى الصقل المطلوب للتفاعلات، وما إذا كان نظام تصميم موجوداً أصلاً أم يجب بناؤه بالتوازي مع المنتج." },
+        { "question": "هل يمكنكم تنفيذ تصميم Figma قائم بدقة؟", "answer": "نعم — التنفيذ الدقيق بالبكسل معيار لدينا، بما في ذلك السلوك المتجاوب الذي قد يُظهره التصميم عند نقطة أو نقطتي توقف فقط. ونشير إلى حيث سيضرّ التصميم بالأداء أو إمكانية الوصول ونقترح بدائل، لأن نموذجاً جميلاً يرسل صورة بطل بحجم 5 ميغابايت أو يفشل في فحوص التباين ليس منتهياً فعلاً. والتعاون الوثيق مع مصمّمكم يُبقي الدقة والجودة عاليتين." },
+        { "question": "هل تتولّون SEO في الواجهة الأمامية؟", "answer": "SEO الواجهة الأمامية جزء كبير مما نفعله: عرض المحتوى من الخادم أو توليده ثابتاً كي تراه الزواحف، وترميز دلالي وبيانات وصفية صحيحة، وبيانات منظّمة (JSON-LD)، وCore Web Vitals سريعة، وروابط نظيفة. نضع أساس SEO التقني؛ واستراتيجية المحتوى وبناء الروابط تخصصات منفصلة، لكننا نضمن أن الموقع جاهز تقنياً للترتيب." }
+      ],
+      "technologies": [
+        { "icon": "react", "name": "React" },
+        { "icon": "nextdotjs", "name": "Next.js" },
+        { "icon": "typescript", "name": "TypeScript" },
+        { "icon": "tailwindcss", "name": "Tailwind CSS" },
+        { "icon": "reactquery", "name": "React Query" },
+        { "icon": "storybook", "name": "Storybook" },
+        { "icon": "framer", "name": "Framer Motion" },
+        { "icon": "playwright", "name": "Playwright" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,431 @@
+{
+  "payment-gateway-integration": {
+    "en": {
+      "name": "Payment Gateway Integration",
+      "shortDescription": "Accept payments globally with secure, PCI-compliant payment integrations.",
+      "fullDescription": "Friction at checkout is the number one cause of lost revenue. Our Payment Gateway Integration services ensure that your application can accept payments smoothly, securely, and globally. We integrate industry-leading providers like Stripe, PayPal, Braintree, and Adyen directly into your custom software. Whether you need a simple one-time checkout for an e-commerce store, a complex recurring billing engine for a SaaS product, or split payments and automatic payouts for a multi-vendor marketplace, we engineer the financial plumbing. We strictly adhere to PCI-DSS compliance standards by utilizing tokenization, ensuring that sensitive credit card data never touches your servers, thereby protecting your business and your customers.",
+      "features": [
+        "Stripe, PayPal, Braintree & Adyen Integration",
+        "Complex Subscription & Recurring Billing Logic",
+        "Marketplace Split Payments & Automated Payouts (Stripe Connect)",
+        "Multi-Currency & Alternative Payment Methods (Apple Pay, iDEAL)",
+        "Advanced Fraud Prevention & 3D Secure Verification",
+        "Automated Invoicing & Receipt Generation"
+      ],
+      "benefits": [
+        "Increase Conversion Rates with Seamless Checkout",
+        "Expand Globally by Accepting Local Payment Methods",
+        "Zero PCI-Compliance Headache (Data is Tokenized)",
+        "Reduce Churn with Smart Subscription Retries",
+        "Automate Financial Reporting and Tax Calculations"
+      ],
+      "content": {
+        "process": [
+          { "title": "Gateway Selection & Strategy", "description": "Analyzing your business model to choose the right provider based on fees, geography, and feature set." },
+          { "title": "API Integration & Logic", "description": "Writing the backend logic to handle webhooks, edge cases, and asynchronous payment confirmations." },
+          { "title": "Frontend Checkout Experience", "description": "Designing a frictionless, mobile-optimized checkout flow using customized UI components." },
+          { "title": "Sandbox Testing", "description": "Rigorously testing successful payments, declines, disputes, and subscriptions in a test environment." },
+          { "title": "Go Live & Monitoring", "description": "Switching to live keys and setting up alerts for webhook failures or unusual fraud activity." }
+        ],
+        "technologies": [
+          "Stripe (Elements, Checkout, Connect, Billing)",
+          "PayPal / Braintree",
+          "Adyen / Square",
+          "Node.js / Python (Backend)",
+          "React / Next.js (Frontend)",
+          "Plaid (Bank Auth)"
+        ],
+        "faq": [
+          { "question": "Are you PCI Compliant?", "answer": "Yes. We use modern tokenization methods (like Stripe Elements). The credit card data is sent directly from the user's browser to the payment gateway. It never hits your database, drastically reducing your PCI compliance scope." },
+          { "question": "Can you handle complex marketplace payouts?", "answer": "Absolutely. Using products like Stripe Connect, we can automatically split a single customer payment, take your platform fee, and route the remainder to multiple vendors or service providers automatically." }
+        ]
+      },
+      "metaTitle": "Payment Gateway Integration Services | Stripe & PayPal Experts",
+      "metaDescription": "Secure, scalable payment gateway integration. We specialize in Stripe Connect, subscription billing, and PCI-compliant checkout flows for SaaS and E-commerce."
+    },
+    "tr": {
+      "name": "Ödeme Geçidi (Payment Gateway) Entegrasyonu",
+      "shortDescription": "Güvenli, PCI uyumlu ödeme entegrasyonlarıyla küresel çapta ödeme alın.",
+      "fullDescription": "Ödeme sırasındaki sürtünme, gelir kaybının bir numaralı nedenidir. Ödeme Geçidi (Payment Gateway) Entegrasyonu hizmetlerimiz, uygulamanızın ödemeleri sorunsuz, güvenli ve küresel ölçekte kabul edebilmesini sağlar. Stripe, PayPal, Braintree ve Adyen gibi sektör lideri sağlayıcıları doğrudan özel yazılımınıza entegre ediyoruz. Bir e-ticaret mağazası için basit bir tek seferlik ödemeye, bir SaaS ürünü için karmaşık bir yinelenen faturalandırma motoruna veya çok satıcılı (multi-vendor) bir pazaryeri için bölünmüş ödemelere ve otomatik ödeme dağıtımlarına ihtiyacınız olsun, finansal tesisatı biz kuruyoruz. Hassas kredi kartı verilerinin sunucularınıza asla temas etmemesini sağlayan tokenizasyon kullanarak PCI-DSS uyumluluk standartlarına sıkı sıkıya bağlı kalıyor, böylece hem işletmenizi hem de müşterilerinizi koruyoruz.",
+      "features": [
+        "Stripe, PayPal, Braintree ve Adyen Entegrasyonu",
+        "Karmaşık Abonelik ve Yinelenen Faturalandırma Mantığı",
+        "Pazaryeri Bölünmüş Ödemeleri ve Otomatik Dağıtımlar (Stripe Connect)",
+        "Çoklu Para Birimi ve Alternatif Ödeme Yöntemleri (Apple Pay, iDEAL vb.)",
+        "Gelişmiş Dolandırıcılık Önleme ve 3D Secure Doğrulaması",
+        "Otomatik Fatura ve Makbuz Oluşturma"
+      ],
+      "benefits": [
+        "Sorunsuz Ödeme Deneyimi ile Dönüşüm Oranlarını Artırma",
+        "Yerel Ödeme Yöntemlerini Kabul Ederek Küresel Çapta Büyüme",
+        "Sıfır PCI Uyumluluğu Baş Ağrısı (Veriler Tokenize Edilir)",
+        "Akıllı Abonelik Yeniden Denemeleri ile Müşteri Kaybını (Churn) Azaltma",
+        "Finansal Raporlama ve Vergi Hesaplamalarını Otomatikleştirme"
+      ],
+      "content": {
+        "process": [
+          { "title": "Geçit Seçimi ve Strateji", "description": "Ücretler, coğrafya ve özellik setine göre doğru sağlayıcıyı seçmek için iş modelinizi analiz etme." },
+          { "title": "API Entegrasyonu ve Mantık", "description": "Web kancalarını (webhooks), uç durumları ve asenkron ödeme onaylarını işlemek için arka uç mantığını yazma." },
+          { "title": "Ön Uç Ödeme Deneyimi", "description": "Özelleştirilmiş UI bileşenleri kullanarak sürtünmesiz, mobil uyumlu bir ödeme akışı tasarlama." },
+          { "title": "Korumalı Alan (Sandbox) Testi", "description": "Test ortamında başarılı ödemeleri, retleri, itirazları ve abonelikleri titizlikle test etme." },
+          { "title": "Canlıya Geçiş ve İzleme", "description": "Canlı (live) anahtarlara geçiş yapma ve webhook hataları veya olağandışı dolandırıcılık faaliyetleri için uyarılar ayarlama." }
+        ],
+        "technologies": [
+          "Stripe (Elements, Checkout, Connect, Billing)",
+          "PayPal / Braintree",
+          "Adyen / Square",
+          "Node.js / Python (Arka Uç)",
+          "React / Next.js (Ön Uç)",
+          "Plaid (Banka Kimlik Doğrulaması)"
+        ],
+        "faq": [
+          { "question": "PCI Uyumlu musunuz?", "answer": "Evet. Modern tokenizasyon yöntemleri (Stripe Elements gibi) kullanıyoruz. Kredi kartı verileri kullanıcının tarayıcısından doğrudan ödeme geçidine gönderilir. Veritabanınıza asla ulaşmaz, bu da PCI uyumluluk kapsamınızı büyük ölçüde daraltır." },
+          { "question": "Karmaşık pazaryeri (marketplace) ödeme dağıtımlarını yapabiliyor musunuz?", "answer": "Kesinlikle. Stripe Connect gibi ürünleri kullanarak tek bir müşteri ödemesini otomatik olarak bölebilir, platform ücretinizi alabilir ve geri kalanını otomatik olarak birden fazla satıcıya veya hizmet sağlayıcıya yönlendirebiliriz." }
+        ]
+      },
+      "metaTitle": "Ödeme Geçidi (Payment Gateway) Entegrasyon Hizmetleri",
+      "metaDescription": "Güvenli ve ölçeklenebilir ödeme geçidi entegrasyonu. SaaS ve e-ticaret için Stripe Connect, abonelik faturalandırması ve PCI uyumlu ödeme akışlarında uzmanız."
+    },
+    "de": {
+      "name": "Payment Gateway Integration",
+      "shortDescription": "Akzeptieren Sie weltweit Zahlungen mit sicheren, PCI-konformen Integrationen.",
+      "fullDescription": "Reibungen beim Checkout sind die Hauptursache für Umsatzverluste. Unsere Dienstleistungen zur Integration von Payment Gateways stellen sicher, dass Ihre Anwendung Zahlungen reibungslos, sicher und global akzeptieren kann. Wir integrieren branchenführende Anbieter wie Stripe, PayPal, Braintree und Adyen direkt in Ihre Individualsoftware. Egal, ob Sie einen einfachen einmaligen Checkout für einen E-Commerce-Shop, eine komplexe Engine für wiederkehrende Abrechnungen (Abonnements) für ein SaaS-Produkt oder geteilte Zahlungen und automatische Auszahlungen für einen Multi-Vendor-Marktplatz benötigen, wir kümmern uns um die finanzielle Infrastruktur. Wir halten uns streng an die PCI-DSS-Konformitätsstandards durch den Einsatz von Tokenisierung, was sicherstellt, dass sensible Kreditkartendaten niemals Ihre Server berühren.",
+      "features": [
+        "Stripe, PayPal, Braintree & Adyen Integration",
+        "Komplexe Abonnement- & wiederkehrende Abrechnungslogik",
+        "Marktplatz Split-Zahlungen & automatische Auszahlungen (Stripe Connect)",
+        "Multi-Währungs- & alternative Zahlungsmethoden (Apple Pay, iDEAL)",
+        "Erweiterte Betrugsprävention & 3D-Secure",
+        "Automatische Rechnungs- & Quittungserstellung"
+      ],
+      "benefits": [
+        "Erhöhung der Konversionsraten durch nahtlosen Checkout",
+        "Globale Expansion durch Akzeptanz lokaler Zahlungsmethoden",
+        "Keine PCI-Compliance-Kopfschmerzen (Daten werden tokenisiert)",
+        "Reduzierung der Abwanderung durch smarte Abo-Retries",
+        "Automatisierung von Finanzberichten und Steuerberechnungen"
+      ],
+      "content": {
+        "process": [
+          { "title": "Gateway-Auswahl & Strategie", "description": "Analyse Ihres Geschäftsmodells zur Auswahl des richtigen Anbieters basierend auf Gebühren und Funktionen." },
+          { "title": "API-Integration & Logik", "description": "Entwicklung der Backend-Logik zur Verarbeitung von Webhooks und asynchronen Zahlungen." },
+          { "title": "Frontend Checkout-Erlebnis", "description": "Design eines reibungslosen, mobiloptimierten Checkout-Flows." },
+          { "title": "Sandbox-Tests", "description": "Strenge Tests von erfolgreichen Zahlungen, Ablehnungen und Abonnements in der Testumgebung." },
+          { "title": "Go Live & Monitoring", "description": "Umstellung auf Live-Keys und Einrichtung von Warnmeldungen für Webhook-Fehler." }
+        ],
+        "technologies": [
+          "Stripe (Elements, Checkout, Connect, Billing)",
+          "PayPal / Braintree",
+          "Adyen / Square",
+          "Node.js / Python (Backend)",
+          "React / Next.js (Frontend)",
+          "Plaid (Bank-Authentifizierung)"
+        ],
+        "faq": [
+          { "question": "Sind Sie PCI-konform?", "answer": "Ja. Wir verwenden moderne Tokenisierung (wie Stripe Elements). Die Kreditkartendaten werden direkt vom Browser an das Payment Gateway gesendet. Sie erreichen niemals Ihre Datenbank." },
+          { "question": "Können Sie komplexe Marktplatz-Auszahlungen abwickeln?", "answer": "Absolut. Mit Produkten wie Stripe Connect können wir eine Kundenzahlung automatisch aufteilen, Ihre Plattformgebühr einbehalten und den Rest an mehrere Händler weiterleiten." }
+        ]
+      },
+      "metaTitle": "Payment Gateway Integration | Stripe & PayPal Experten",
+      "metaDescription": "Sichere Payment Gateway Integrationen. Wir sind spezialisiert auf Stripe Connect, Subscription Billing und PCI-konforme Checkouts für SaaS und E-Commerce."
+    },
+    "ur": {
+      "name": "پیمنٹ گیٹ وے انٹیگریشن",
+      "shortDescription": "محفوظ، PCI کے مطابق ادائیگی کے انضمام کے ساتھ عالمی سطح پر ادائیگیاں قبول کریں۔",
+      "fullDescription": "چیک آؤٹ پر رگڑ کھوئی ہوئی آمدنی کی سب سے بڑی وجہ ہے۔ ہماری پیمنٹ گیٹ وے انٹیگریشن سروسز اس بات کو یقینی بناتی ہیں کہ آپ کی ایپلیکیشن بغیر کسی رکاوٹ کے، محفوظ طریقے سے، اور عالمی سطح پر ادائیگیاں قبول کر سکتی ہے۔ ہم آپ کے حسب ضرورت سافٹ ویئر میں براہ راست سٹرائپ، پے پال، برین ٹری، اور ایڈین جیسے صنعت کے معروف فراہم کنندگان کو مربوط کرتے ہیں۔ چاہے آپ کو ای کامرس اسٹور کے لیے ایک سادہ ون ٹائم چیک آؤٹ کی ضرورت ہو، کسی SaaS پروڈکٹ کے لیے بار بار چلنے والا بلنگ انجن، یا ملٹی وینڈر مارکیٹ پلیس کے لیے منقسم ادائیگیاں اور خودکار ادائیگیوں کی ضرورت ہو، ہم مالیاتی پلمبنگ کے انجینئر ہیں۔ ہم ٹوکنائزیشن کا استعمال کرتے ہوئے PCI-DSS تعمیل کے معیارات پر سختی سے عمل کرتے ہیں، اس بات کو یقینی بناتے ہوئے کہ کریڈٹ کارڈ کا حساس ڈیٹا آپ کے سرورز کو کبھی ہاتھ نہ لگائے، اس طرح آپ کے کاروبار اور آپ کے صارفین کی حفاظت ہوتی ہے۔",
+      "features": [
+        "اسٹرائپ، پے پال، برینٹری اور ایڈین انٹیگریشن",
+        "کمپلیکس سبسکرپشن اور بار بار چلنے والی بلنگ لاجک",
+        "مارکیٹ پلیس اسپلٹ پیمنٹس اور خودکار ادائیگیاں (سٹرائپ کنیکٹ)",
+        "کثیر کرنسی اور ادائیگی کے متبادل طریقے (ایپل پے، آئیڈیل)",
+        "ایڈوانس فراڈ سے بچاؤ اور 3D محفوظ تصدیق",
+        "خودکار انوائسنگ اور رسید کی تخلیق"
+      ],
+      "benefits": [
+        "بغیر کسی ہموار چیک آؤٹ کے ساتھ تبادلوں کی شرح میں اضافہ کریں۔",
+        "ادائیگی کے مقامی طریقے قبول کر کے عالمی سطح پر پھیلائیں۔",
+        "زیرو پی سی آئی کی تعمیل میں سر درد (ڈیٹا ٹوکنائزڈ ہے)",
+        "اسمارٹ سبسکرپشن کی دوبارہ کوششوں کے ساتھ چرن کو کم کریں۔",
+        "مالیاتی رپورٹنگ اور ٹیکس کے حسابات کو خودکار بنائیں"
+      ],
+      "content": {
+        "process": [
+          { "title": "گیٹ وے کا انتخاب اور حکمت عملی", "description": "فیس، جغرافیہ، اور فیچر سیٹ کی بنیاد پر صحیح فراہم کنندہ کا انتخاب کرنے کے لیے اپنے کاروباری ماڈل کا تجزیہ کرنا۔" },
+          { "title": "API انٹیگریشن اور لاجک", "description": "ویب ہکس، ایج کیسز، اور غیر مطابقت پذیر ادائیگی کی تصدیق کو سنبھالنے کے لیے بیک اینڈ لاجک لکھنا۔" },
+          { "title": "فرنٹ اینڈ چیک آؤٹ کا تجربہ", "description": "اپنی مرضی کے مطابق UI اجزاء کا استعمال کرتے ہوئے ایک رگڑ کے بغیر، موبائل کے لیے موزوں چیک آؤٹ کے بہاؤ کو ڈیزائن کرنا۔" },
+          { "title": "سینڈ باکس ٹیسٹنگ", "description": "ٹیسٹ کے ماحول میں کامیاب ادائیگیوں، زوالوں، تنازعات، اور سبسکرپشنز کی سختی سے جانچ کرنا۔" },
+          { "title": "لائیو اور مانیٹرنگ پر جائیں۔", "description": "لائیو کیز پر جانا اور ویب ہک کی ناکامیوں یا دھوکہ دہی کی غیر معمولی سرگرمی کے لیے الرٹس ترتیب دینا۔" }
+        ],
+        "technologies": [
+          "Stripe (Elements, Checkout, Connect, Billing)",
+          "PayPal / Braintree",
+          "Adyen / Square",
+          "Node.js / Python (Backend)",
+          "React / Next.js (Frontend)",
+          "Plaid (Bank Auth)"
+        ],
+        "faq": [
+          { "question": "کیا آپ PCI کے مطابق ہیں؟", "answer": "جی ہاں. ہم ٹوکنائزیشن کے جدید طریقے استعمال کرتے ہیں (جیسے اسٹرائپ ایلیمنٹس)۔ کریڈٹ کارڈ کا ڈیٹا براہ راست صارف کے براؤزر سے پیمنٹ گیٹ وے پر بھیجا جاتا ہے۔ یہ کبھی بھی آپ کے ڈیٹا بیس سے نہیں ٹکراتا ہے، اور آپ کے PCI کی تعمیل کے دائرہ کار کو کافی حد تک کم کرتا ہے۔" },
+          { "question": "کیا آپ بازار کی پیچیدہ ادائیگیوں کو سنبھال سکتے ہیں؟", "answer": "بالکل۔ سٹرائپ کنیکٹ جیسی مصنوعات کا استعمال کرتے ہوئے، ہم خود بخود کسٹمر کی ایک ادائیگی کو تقسیم کر سکتے ہیں، آپ کی پلیٹ فارم فیس لے سکتے ہیں، اور بقیہ کو خود بخود ایک سے زیادہ وینڈرز یا سروس فراہم کنندگان تک پہنچا سکتے ہیں۔" }
+        ]
+      },
+      "metaTitle": "پیمنٹ گیٹ وے انٹیگریشن سروسز | پٹی اور پے پال کے ماہرین",
+      "metaDescription": "محفوظ، توسیع پذیر پیمنٹ گیٹ وے انضمام۔ ہم SaaS اور E-commerce کے لیے سٹرائپ کنیکٹ، سبسکرپشن بلنگ، اور PCI کے مطابق چیک آؤٹ فلو میں مہارت رکھتے ہیں۔"
+    },
+    "ar": {
+      "name": "تكامل بوابة الدفع (Payment Gateway)",
+      "shortDescription": "اقبل المدفوعات عالميًا من خلال عمليات دمج آمنة ومتوافقة مع معايير PCI.",
+      "fullDescription": "الاحتكاك في مرحلة الدفع (Checkout) هو السبب الأول لخسارة الإيرادات. تضمن خدمات تكامل بوابة الدفع لدينا قدرة تطبيقك على قبول المدفوعات بسلاسة وأمان وعلى مستوى عالمي. نقوم بدمج مزودي الخدمة الرائدين في الصناعة مثل Stripe و PayPal و Braintree و Adyen مباشرة في برنامجك المخصص. سواء كنت بحاجة إلى عملية دفع بسيطة لمرة واحدة لمتجر تجارة إلكترونية، أو محرك فوترة متكررة معقد لمنتج SaaS، أو تقسيم المدفوعات ودفعات تلقائية لسوق متعدد البائعين (Marketplace)، فإننا نقوم بهندسة السباكة المالية. نلتزم بدقة بمعايير الامتثال لـ PCI-DSS من خلال استخدام الرمز المميز (Tokenization)، مما يضمن عدم وصول بيانات بطاقة الائتمان الحساسة إلى خوادمك مطلقًا، وبالتالي حماية عملك وعملائك.",
+      "features": [
+        "تكامل Stripe و PayPal و Braintree و Adyen",
+        "منطق معقد للاشتراكات والفوترة المتكررة",
+        "تقسيم المدفوعات في الأسواق والدفعات التلقائية (Stripe Connect)",
+        "دعم العملات المتعددة وطرق الدفع البديلة (Apple Pay ، iDEAL)",
+        "منع الاحتيال المتقدم والتحقق ثلاثي الأبعاد (3D Secure)",
+        "إنشاء آلي للفواتير والإيصالات"
+      ],
+      "benefits": [
+        "زيادة معدلات التحويل (Conversion Rates) بتجربة دفع سلسة",
+        "التوسع عالميًا من خلال قبول طرق الدفع المحلية",
+        "بدون صداع امتثال PCI (البيانات يتم تحويلها إلى رموز - Tokenized)",
+        "تقليل معدل التخلي (Churn) من خلال إعادة المحاولة الذكية للاشتراكات",
+        "أتمتة التقارير المالية وحسابات الضرائب"
+      ],
+      "content": {
+        "process": [
+          { "title": "اختيار البوابة والاستراتيجية", "description": "تحليل نموذج عملك لاختيار المزود المناسب بناءً على الرسوم والموقع الجغرافي والميزات." },
+          { "title": "تكامل API والمنطق", "description": "كتابة منطق النهاية الخلفية (Backend) للتعامل مع Webhooks والحالات المعقدة وتأكيدات الدفع غير المتزامنة." },
+          { "title": "تجربة الدفع في الواجهة الأمامية", "description": "تصميم تدفق دفع سلس ومحسّن للجوال باستخدام مكونات واجهة مستخدم مخصصة." },
+          { "title": "اختبار وضع الحماية (Sandbox)", "description": "اختبار دقيق للمدفوعات الناجحة والرفض والنزاعات والاشتراكات في بيئة اختبار." },
+          { "title": "الانطلاق والمراقبة", "description": "التبديل إلى المفاتيح الحية (Live keys) وإعداد التنبيهات لفشل Webhook أو نشاط الاحتيال غير المعتاد." }
+        ],
+        "technologies": [
+          "Stripe (Elements, Checkout, Connect, Billing)",
+          "PayPal / Braintree",
+          "Adyen / Square",
+          "Node.js / Python (النهاية الخلفية)",
+          "React / Next.js (الواجهة الأمامية)",
+          "Plaid (مصادقة البنك)"
+        ],
+        "faq": [
+          { "question": "هل أنتم متوافقون مع PCI؟", "answer": "نعم. نحن نستخدم طرق الترميز الحديثة (مثل Stripe Elements). يتم إرسال بيانات بطاقة الائتمان مباشرة من متصفح المستخدم إلى بوابة الدفع. إنها لا تصل أبدًا إلى قاعدة البيانات الخاصة بك، مما يقلل بشكل كبير من نطاق امتثال PCI الخاص بك." },
+          { "question": "هل يمكنك التعامل مع دفعات الأسواق (Marketplaces) المعقدة؟", "answer": "بالتأكيد. باستخدام منتجات مثل Stripe Connect، يمكننا تقسيم دفعة عميل واحد تلقائيًا، وأخذ رسوم منصتك، وتوجيه الباقي إلى بائعين أو مزودي خدمة متعددين تلقائيًا." }
+        ]
+      },
+      "metaTitle": "خدمات تكامل بوابة الدفع | خبراء Stripe و PayPal",
+      "metaDescription": "تكامل آمن وقابل للتطوير لبوابات الدفع. نحن متخصصون في Stripe Connect، وفوترة الاشتراكات، وتدفقات الدفع المتوافقة مع PCI لـ SaaS والتجارة الإلكترونية."
+    }
+  },
+  "prototyping-wireframing": {
+    "en": {
+      "name": "Prototyping & Wireframing",
+      "shortDescription": "Validate ideas fast with interactive prototypes and wireframes before writing any code.",
+      "fullDescription": "Writing code is the most expensive way to discover you've built the wrong thing. Our Prototyping and Wireframing services are designed to bring your ideas to life visually so you can validate them with users, stakeholders, and investors before development begins. We start with low-fidelity wireframes to map out the information architecture and core user flows. Once the logic is solid, we move to high-fidelity, interactive prototypes using tools like Figma. These prototypes look and act exactly like the final application, allowing you to click through screens, test usability, and secure buy-in with complete confidence.",
+      "features": [
+        "Low-Fidelity Wireframing & Layout Planning",
+        "High-Fidelity UI Design Mockups",
+        "Interactive Click-Through Prototypes (Figma)",
+        "User Flow & Information Architecture Mapping",
+        "Usability Testing Sessions",
+        "Investor Pitch Deck Prototypes"
+      ],
+      "benefits": [
+        "Save Thousands in Development Costs by Validating Early",
+        "Gain Stakeholder & Investor Buy-In Fast",
+        "Eliminate Miscommunication with the Dev Team",
+        "Identify UX Flaws Before Code is Written",
+        "Accelerate Time-to-Market"
+      ],
+      "content": {
+        "process": [
+          { "title": "Discovery & User Flows", "description": "Mapping out the steps a user must take to achieve their goal within the app." },
+          { "title": "Low-Fi Wireframing", "description": "Creating basic structural layouts (wireframes) to decide where content and features will live." },
+          { "title": "Visual Design (UI)", "description": "Applying colors, typography, and branding to create beautiful, high-fidelity mockups." },
+          { "title": "Interactive Prototyping", "description": "Linking the screens together in Figma to create a clickable, interactive simulation of the app." },
+          { "title": "Testing & Iteration", "description": "Putting the prototype in front of real users, observing their behavior, and refining the design." }
+        ],
+        "technologies": [
+          "Figma",
+          "FigJam / Miro (Flows)",
+          "InVision",
+          "ProtoPie / Principle (Advanced Animations)",
+          "UserTesting.com"
+        ],
+        "faq": [
+          { "question": "What is the difference between a wireframe and a prototype?", "answer": "A wireframe is like an architectural blueprint; it shows the structure and layout without colors or styling. A prototype is an interactive, high-fidelity model that looks and behaves like the final product, allowing users to click through it." },
+          { "question": "Can I use the prototype to pitch to investors?", "answer": "Yes! This is one of the most common use cases. An interactive prototype is infinitely more powerful than a static slide deck because it allows investors to 'feel' the product." }
+        ]
+      },
+      "metaTitle": "Prototyping & Wireframing Agency | UX/UI Design",
+      "metaDescription": "Validate your software idea before writing code. We create low-fidelity wireframes and high-fidelity, interactive Figma prototypes for startups and enterprises."
+    },
+    "tr": {
+      "name": "Prototipleme ve Tel Kafes (Wireframing)",
+      "shortDescription": "Kod yazmadan önce etkileşimli prototipler ve tel kafeslerle fikirlerinizi hızla doğrulayın.",
+      "fullDescription": "Kod yazmak, yanlış şeyi inşa ettiğinizi keşfetmenin en pahalı yoludur. Prototipleme ve Tel Kafes (Wireframing) hizmetlerimiz, fikirlerinizi görsel olarak hayata geçirmek için tasarlanmıştır; böylece geliştirme başlamadan önce bunları kullanıcılar, paydaşlar ve yatırımcılarla doğrulayabilirsiniz. Bilgi mimarisinin ve temel kullanıcı akışlarının haritasını çıkarmak için düşük aslına uygun (low-fidelity) tel kafeslerle başlıyoruz. Mantık oturduktan sonra, Figma gibi araçları kullanarak yüksek aslına uygun (high-fidelity), etkileşimli prototiplere geçiyoruz. Bu prototipler tıpkı nihai uygulama gibi görünür ve davranır, ekranlar arasında tıklayarak gezinmenize, kullanılabilirliği test etmenize ve tam bir güvenle onay almanıza olanak tanır.",
+      "features": [
+        "Düşük Aslına Uygun (Low-Fidelity) Tel Kafes ve Düzen Planlama",
+        "Yüksek Aslına Uygun (High-Fidelity) UI Tasarım Maketleri (Mockups)",
+        "Etkileşimli Tıklanabilir Prototipler (Figma)",
+        "Kullanıcı Akışı ve Bilgi Mimarisi Haritalama",
+        "Kullanılabilirlik Testi (Usability Testing) Oturumları",
+        "Yatırımcı Sunumu (Pitch Deck) Prototipleri"
+      ],
+      "benefits": [
+        "Erken Doğrulama ile Geliştirme Maliyetlerinde Binlerce Dolar Tasarruf Edin",
+        "Paydaş ve Yatırımcı Onayını Hızla Alın",
+        "Geliştirici Ekibiyle Yaşanan İletişim Kopukluklarını Ortadan Kaldırın",
+        "Kod Yazılmadan Önce UX Kusurlarını Belirleyin",
+        "Pazara Çıkış Süresini (Time-to-Market) Hızlandırın"
+      ],
+      "content": {
+        "process": [
+          { "title": "Keşif ve Kullanıcı Akışları", "description": "Bir kullanıcının uygulama içinde hedefine ulaşmak için atması gereken adımların haritasını çıkarma." },
+          { "title": "Low-Fi Tel Kafesleme (Wireframing)", "description": "İçeriğin ve özelliklerin nerede bulunacağına karar vermek için temel yapısal düzenler (tel kafesler) oluşturma." },
+          { "title": "Görsel Tasarım (UI)", "description": "Güzel, yüksek aslına uygun maketler oluşturmak için renkleri, tipografiyi ve markalaşmayı uygulama." },
+          { "title": "Etkileşimli Prototipleme", "description": "Uygulamanın tıklanabilir, etkileşimli bir simülasyonunu oluşturmak için ekranları Figma'da birbirine bağlama." },
+          { "title": "Test Etme ve Yineleme (Iteration)", "description": "Prototipi gerçek kullanıcıların önüne koyma, davranışlarını gözlemleme ve tasarımı iyileştirme." }
+        ],
+        "technologies": [
+          "Figma",
+          "FigJam / Miro (Akışlar İçin)",
+          "InVision",
+          "ProtoPie / Principle (Gelişmiş Animasyonlar)",
+          "UserTesting.com"
+        ],
+        "faq": [
+          { "question": "Tel kafes (wireframe) ile prototip arasındaki fark nedir?", "answer": "Bir tel kafes, mimari bir taslak gibidir; renkler veya stiller olmadan yapıyı ve düzeni gösterir. Bir prototip ise nihai ürün gibi görünen ve davranan, kullanıcıların üzerinde tıklayarak gezinmesine olanak tanıyan etkileşimli, aslına son derece uygun (high-fidelity) bir modeldir." },
+          { "question": "Prototipi yatırımcılara sunum yapmak için kullanabilir miyim?", "answer": "Evet! Bu en yaygın kullanım senaryolarından biridir. Etkileşimli bir prototip, statik bir slayt destesinden sonsuz derecede daha güçlüdür çünkü yatırımcıların ürünü 'hissetmesine' olanak tanır." }
+        ]
+      },
+      "metaTitle": "Prototipleme ve Tel Kafes (Wireframing) Ajansı | UX/UI Tasarım",
+      "metaDescription": "Kod yazmadan önce yazılım fikrinizi doğrulayın. Girişimler ve şirketler için düşük aslına uygun tel kafesler ve etkileşimli Figma prototipleri oluşturuyoruz."
+    },
+    "de": {
+      "name": "Prototyping & Wireframing",
+      "shortDescription": "Validieren Sie Ideen schnell mit interaktiven Prototypen, bevor Sie Code schreiben.",
+      "fullDescription": "Code zu schreiben ist der teuerste Weg, um herauszufinden, dass man das Falsche gebaut hat. Unsere Prototyping- und Wireframing-Dienste erwecken Ihre Ideen visuell zum Leben, sodass Sie sie mit Nutzern, Stakeholdern und Investoren validieren können, bevor die Entwicklung beginnt. Wir starten mit Low-Fidelity-Wireframes, um die Informationsarchitektur und Kern-User-Flows abzubilden. Sobald die Logik steht, gehen wir zu hochauflösenden (High-Fidelity), interaktiven Prototypen über Tools wie Figma über. Diese Prototypen sehen aus und verhalten sich genau wie die finale Anwendung, sodass Sie durch Bildschirme klicken, die Benutzerfreundlichkeit testen und sich mit voller Zuversicht die Zustimmung sichern können.",
+      "features": [
+        "Low-Fidelity Wireframing & Layout-Planung",
+        "High-Fidelity UI-Design-Mockups",
+        "Interaktive Click-Through-Prototypen (Figma)",
+        "User Flow & Informationsarchitektur",
+        "Usability-Testing-Sitzungen",
+        "Prototypen für Investor Pitch Decks"
+      ],
+      "benefits": [
+        "Sparen Sie Tausende an Entwicklungskosten durch frühe Validierung",
+        "Gewinnen Sie schnell das Buy-in von Stakeholdern und Investoren",
+        "Beseitigung von Missverständnissen mit dem Entwicklerteam",
+        "Erkennung von UX-Fehlern, bevor Code geschrieben wird",
+        "Beschleunigung der Time-to-Market"
+      ],
+      "content": {
+        "process": [
+          { "title": "Discovery & User Flows", "description": "Planung der Schritte, die ein Nutzer ausführen muss, um sein Ziel in der App zu erreichen." },
+          { "title": "Low-Fi Wireframing", "description": "Erstellung grundlegender struktureller Layouts (Wireframes) zur Platzierung von Inhalten." },
+          { "title": "Visuelles Design (UI)", "description": "Anwendung von Farben, Typografie und Branding für schöne, detailgetreue Mockups." },
+          { "title": "Interaktives Prototyping", "description": "Verknüpfung der Screens in Figma zu einer klickbaren Simulation der App." },
+          { "title": "Testing & Iteration", "description": "Der Prototyp wird echten Nutzern gezeigt, um deren Verhalten zu beobachten und das Design zu verfeinern." }
+        ],
+        "technologies": [
+          "Figma",
+          "FigJam / Miro (für Flows)",
+          "InVision",
+          "ProtoPie / Principle (Erweiterte Animationen)",
+          "UserTesting.com"
+        ],
+        "faq": [
+          { "question": "Was ist der Unterschied zwischen einem Wireframe und einem Prototyp?", "answer": "Ein Wireframe ist wie ein architektonischer Bauplan; er zeigt die Struktur ohne Farben. Ein Prototyp ist ein interaktives Modell, das wie das Endprodukt aussieht und sich so verhält, sodass Benutzer sich durchklicken können." },
+          { "question": "Kann ich den Prototyp für Pitches bei Investoren verwenden?", "answer": "Ja! Das ist einer der häufigsten Anwendungsfälle. Ein interaktiver Prototyp ist wesentlich überzeugender als statische Folien, da Investoren das Produkt 'fühlen' können." }
+        ]
+      },
+      "metaTitle": "Prototyping & Wireframing Agentur | UX/UI Design",
+      "metaDescription": "Validieren Sie Ihre Software-Idee vor der Programmierung. Wir erstellen interaktive Figma-Prototypen und Wireframes für Startups und Unternehmen."
+    },
+    "ur": {
+      "name": "پروٹو ٹائپنگ اور وائر فریمنگ",
+      "shortDescription": "کوئی بھی کوڈ لکھنے سے پہلے انٹرایکٹو پروٹو ٹائپ اور وائر فریمز کے ساتھ خیالات کی تیزی سے تصدیق کریں۔",
+      "fullDescription": "کوڈ لکھنا یہ دریافت کرنے کا سب سے مہنگا طریقہ ہے کہ آپ نے غلط چیز بنائی ہے۔ ہماری پروٹو ٹائپنگ اور وائر فریمنگ خدمات آپ کے خیالات کو بصری طور پر زندہ کرنے کے لیے بنائی گئی ہیں تاکہ آپ ترقی شروع ہونے سے پہلے صارفین، اسٹیک ہولڈرز اور سرمایہ کاروں کے ساتھ ان کی توثیق کر سکیں۔ معلوماتی فن تعمیر اور بنیادی صارف کے بہاؤ کو نقشہ بنانے کے لیے ہم کم مخلص وائر فریموں کے ساتھ شروع کرتے ہیں۔ ایک بار منطق ٹھوس ہو جانے کے بعد، ہم فگما جیسے ٹولز کا استعمال کرتے ہوئے اعلیٰ مخلصانہ، انٹرایکٹو پروٹو ٹائپس کی طرف بڑھتے ہیں۔ یہ پروٹو ٹائپس بالکل حتمی ایپلیکیشن کی طرح دکھتے ہیں اور کام کرتے ہیں، جس سے آپ اسکرینوں پر کلک کر سکتے ہیں، استعمال کی جانچ کر سکتے ہیں، اور پورے اعتماد کے ساتھ خریداری کو محفوظ کر سکتے ہیں۔",
+      "features": [
+        "لو فیڈیلیٹی وائر فریمنگ اور لے آؤٹ پلاننگ",
+        "ہائی فیڈیلیٹی UI ڈیزائن موک اپس",
+        "انٹرایکٹو کلک تھرو پروٹو ٹائپس (Figma)",
+        "صارف کا بہاؤ اور معلومات کا فن تعمیر کی نقشہ سازی",
+        "استعمال کے ٹیسٹنگ سیشنز",
+        "انویسٹر پچ ڈیک پروٹو ٹائپس"
+      ],
+      "benefits": [
+        "ابتدائی توثیق کرکے ترقیاتی اخراجات میں ہزاروں کی بچت کریں۔",
+        "اسٹیک ہولڈر اور سرمایہ کار کی تیزی سے خریداری حاصل کریں۔",
+        "دیو ٹیم کے ساتھ غلط فہمیوں کو ختم کریں۔",
+        "کوڈ لکھے جانے سے پہلے UX خامیوں کی شناخت کریں۔",
+        "وقت سے مارکیٹ کو تیز کریں۔"
+      ],
+      "content": {
+        "process": [
+          { "title": "دریافت اور صارف کا بہاؤ", "description": "ایپ کے اندر اپنے مقصد کو حاصل کرنے کے لیے صارف کو جو اقدامات اٹھانا ہوں گے اس کا خاکہ بنانا۔" },
+          { "title": "Low-Fi Wireframing", "description": "مواد اور خصوصیات کہاں رہیں گے اس کا فیصلہ کرنے کے لیے بنیادی ساختی خاکے (وائر فریم) بنانا۔" },
+          { "title": "بصری ڈیزائن (UI)", "description": "خوبصورت، اعلی مخلص موک اپ بنانے کے لیے رنگوں، ٹائپوگرافی، اور برانڈنگ کا اطلاق کرنا۔" },
+          { "title": "انٹرایکٹو پروٹو ٹائپنگ", "description": "ایپ کی کلک کرنے کے قابل، انٹرایکٹو نقلی بنانے کے لیے اسکرینوں کو فگما میں ایک ساتھ جوڑنا۔" },
+          { "title": "ٹیسٹنگ اور تکرار", "description": "پروٹو ٹائپ کو حقیقی صارفین کے سامنے رکھنا، ان کے رویے کا مشاہدہ کرنا، اور ڈیزائن کو بہتر بنانا۔" }
+        ],
+        "technologies": [
+          "Figma",
+          "FigJam / Miro (Flows)",
+          "InVision",
+          "ProtoPie / Principle (Advanced Animations)",
+          "UserTesting.com"
+        ],
+        "faq": [
+          { "question": "وائر فریم اور پروٹو ٹائپ میں کیا فرق ہے؟", "answer": "ایک وائر فریم ایک تعمیراتی بلیو پرنٹ کی طرح ہے۔ یہ رنگوں یا طرز کے بغیر ساخت اور ترتیب کو ظاہر کرتا ہے۔ ایک پروٹو ٹائپ ایک انٹرایکٹو، اعلیٰ وفاداری والا ماڈل ہے جو حتمی پروڈکٹ کی طرح دکھتا ہے اور برتاؤ کرتا ہے، جس سے صارفین اس پر کلک کر سکتے ہیں۔" },
+          { "question": "کیا میں سرمایہ کاروں کو پچ کرنے کے لیے پروٹو ٹائپ کا استعمال کر سکتا ہوں؟", "answer": "جی ہاں! یہ سب سے عام استعمال کے معاملات میں سے ایک ہے۔ ایک انٹرایکٹو پروٹو ٹائپ سٹیٹک سلائیڈ ڈیک سے لامحدود حد تک زیادہ طاقتور ہے کیونکہ یہ سرمایہ کاروں کو مصنوعات کو 'محسوس' کرنے دیتا ہے۔" }
+        ]
+      },
+      "metaTitle": "پروٹو ٹائپنگ اور وائر فریمنگ ایجنسی | UX/UI ڈیزائن",
+      "metaDescription": "کوڈ لکھنے سے پہلے اپنے سافٹ ویئر کے آئیڈیا کی توثیق کریں۔ ہم سٹارٹ اپس اور انٹرپرائزز کے لیے کم مخلص وائر فریمز اور اعلیٰ مخلصانہ، انٹرایکٹو فگما پروٹو ٹائپس بناتے ہیں۔"
+    },
+    "ar": {
+      "name": "النماذج الأولية (Prototyping) والتخطيط الشبكي (Wireframing)",
+      "shortDescription": "التحقق من صحة الأفكار بسرعة باستخدام نماذج أولية تفاعلية وتخطيطات شبكية قبل كتابة أي كود.",
+      "fullDescription": "كتابة التعليمات البرمجية هي الطريقة الأكثر تكلفة لاكتشاف أنك بنيت الشيء الخطأ. تم تصميم خدمات النماذج الأولية والتخطيط الشبكي الخاصة بنا لإضفاء الحيوية على أفكارك بصريًا حتى تتمكن من التحقق من صحتها مع المستخدمين وأصحاب المصلحة والمستثمرين قبل بدء التطوير. نبدأ بتخطيطات شبكية (Wireframes) منخفضة الدقة لرسم بنية المعلومات وتدفقات المستخدم الأساسية. بمجرد أن يصبح المنطق قويًا، ننتقل إلى نماذج أولية (Prototypes) تفاعلية عالية الدقة باستخدام أدوات مثل Figma. هذه النماذج تبدو وتعمل تمامًا مثل التطبيق النهائي، مما يتيح لك النقر عبر الشاشات، واختبار سهولة الاستخدام، وتأمين الموافقات بثقة كاملة.",
+      "features": [
+        "تخطيط شبكي (Wireframing) منخفض الدقة وتخطيط الهيكل",
+        "نماذج واجهة مستخدم (UI) عالية الدقة",
+        "نماذج أولية تفاعلية قابلة للنقر (Figma)",
+        "رسم خرائط تدفق المستخدم وبنية المعلومات",
+        "جلسات اختبار قابلية الاستخدام (Usability Testing)",
+        "نماذج أولية لعروض المستثمرين (Pitch Decks)"
+      ],
+      "benefits": [
+        "توفير آلاف الدولارات من تكاليف التطوير عبر التحقق المبكر",
+        "الحصول على موافقة أصحاب المصلحة والمستثمرين بسرعة",
+        "القضاء على سوء التواصل مع فريق التطوير",
+        "تحديد عيوب تجربة المستخدم (UX) قبل كتابة الكود",
+        "تسريع وقت الوصول إلى السوق"
+      ],
+      "content": {
+        "process": [
+          { "title": "الاكتشاف وتدفقات المستخدم", "description": "رسم الخطوات التي يجب على المستخدم اتخاذها لتحقيق هدفه داخل التطبيق." },
+          { "title": "التخطيط الشبكي (Low-Fi)", "description": "إنشاء تخطيطات هيكلية أساسية لتحديد أين سيتواجد المحتوى والميزات." },
+          { "title": "التصميم المرئي (UI)", "description": "تطبيق الألوان والطباعة وهوية العلامة التجارية لإنشاء نماذج جميلة وعالية الدقة." },
+          { "title": "النماذج الأولية التفاعلية", "description": "ربط الشاشات معًا في Figma لإنشاء محاكاة تفاعلية وقابلة للنقر للتطبيق." },
+          { "title": "الاختبار والتكرار", "description": "وضع النموذج الأولي أمام مستخدمين حقيقيين، ومراقبة سلوكهم، وتحسين التصميم." }
+        ],
+        "technologies": [
+          "Figma",
+          "FigJam / Miro (للتدفقات)",
+          "InVision",
+          "ProtoPie / Principle (للحركات المتقدمة)",
+          "UserTesting.com"
+        ],
+        "faq": [
+          { "question": "ما الفرق بين التخطيط الشبكي (Wireframe) والنموذج الأولي (Prototype)؟", "answer": "التخطيط الشبكي يشبه المخطط المعماري؛ فهو يوضح الهيكل والتخطيط بدون ألوان أو تصميم. أما النموذج الأولي فهو نموذج تفاعلي عالي الدقة يبدو ويتصرف مثل المنتج النهائي، مما يسمح للمستخدمين بالنقر خلاله." },
+          { "question": "هل يمكنني استخدام النموذج الأولي للتقديم للمستثمرين؟", "answer": "نعم! هذا هو أحد أكثر حالات الاستخدام شيوعًا. النموذج الأولي التفاعلي أقوى بكثير من عرض الشرائح الثابت (Slide deck) لأنه يتيح للمستثمرين 'الشعور' بالمنتج." }
+        ]
+      },
+      "metaTitle": "وكالة النماذج الأولية والتخطيط الشبكي | تصميم UX/UI",
+      "metaDescription": "تحقق من فكرة برنامجك قبل كتابة الكود. نحن ننشئ تخطيطات شبكية ونماذج Figma تفاعلية عالية الدقة للشركات الناشئة والمؤسسات."
+    }
+  }
+}

@@ -1,0 +1,436 @@
+{
+  "defi-solutions": {
+    "en": {
+      "name": "DeFi Solutions",
+      "shortDescription": "Build DeFi protocols for lending, trading, and yield generation.",
+      "fullDescription": "Revolutionize the financial sector with our comprehensive Decentralized Finance (DeFi) Solutions. We engineer highly secure, non-custodial financial protocols that operate entirely on blockchain networks without intermediaries. Whether you aim to build an Automated Market Maker (AMM) Decentralized Exchange (DEX), a decentralized lending platform, or complex yield farming strategies, our blockchain experts ensure your smart contracts are gas-optimized, rigorously audited, and seamlessly integrated with robust Web3 frontends. By leveraging oracles like Chainlink, we bridge real-world data securely into your decentralized financial products.",
+      "features": [
+        "Lending & Borrowing Protocols",
+        "DEX & AMM Development",
+        "Yield Farming & Staking",
+        "Liquidity Pool Management",
+        "DAO Governance Systems",
+        "Cross-Chain Bridges & Oracles"
+      ],
+      "benefits": [
+        "Permissionless Financial Access",
+        "Elimination of Intermediary Fees",
+        "Transparent & Immutable Transactions",
+        "Total Control Over Assets (Non-Custodial)",
+        "Global Market Reach"
+      ],
+      "content": {
+        "process": [
+          { "title": "Tokenomics & Protocol Design", "description": "Structuring the financial logic, yield mechanisms, and governance model." },
+          { "title": "Smart Contract Development", "description": "Writing secure Solidity code for core financial operations." },
+          { "title": "Oracle Integration", "description": "Connecting reliable off-chain price feeds using Chainlink." },
+          { "title": "Security Auditing", "description": "Extensive testing to prevent flash loan attacks, reentrancy, and logic flaws." },
+          { "title": "Frontend Launch", "description": "Deploying a sleek React interface for users to connect wallets and interact." }
+        ],
+        "technologies": [
+          "Solidity",
+          "Ethereum",
+          "Uniswap Protocol",
+          "Aave Protocol",
+          "Chainlink",
+          "Web3.js & React"
+        ],
+        "faq": [
+          { "question": "Are your DeFi protocols secure against hacks?", "answer": "Security in DeFi is our absolute highest priority. All our smart contracts undergo intensive internal testing, simulated attacks, and are typically sent to reputable third-party auditing firms before mainnet deployment." },
+          { "question": "Can users bridge assets from other blockchains?", "answer": "Yes. We can implement cross-chain bridges and interoperability solutions, allowing users to transfer liquidity seamlessly between networks like Ethereum, Polygon, and Binance Smart Chain." }
+        ]
+      },
+      "metaTitle": "DeFi Solutions Development | Blockchain & Web3 Finance",
+      "metaDescription": "Develop secure Decentralized Finance (DeFi) protocols. We specialize in DEX, lending, staking, and yield farming platforms using Solidity and Chainlink."
+    },
+    "tr": {
+      "name": "DeFi Çözümleri",
+      "shortDescription": "Borç verme, ticaret ve getiri sağlama için DeFi protokolleri oluşturun.",
+      "fullDescription": "Kapsamlı Merkeziyetsiz Finans (DeFi) Çözümlerimiz ile finans sektöründe devrim yaratın. Aracı olmadan tamamen blokzincir ağlarında çalışan, son derece güvenli, emanete dayalı olmayan finansal protokoller tasarlıyoruz. Amacınız ister bir Otomatik Piyasa Yapıcı (AMM) Merkeziyetsiz Borsa (DEX), ister merkeziyetsiz bir borç verme platformu veya karmaşık getiri çiftçiliği (yield farming) stratejileri oluşturmak olsun, blokzincir uzmanlarımız akıllı sözleşmelerinizin gaz açısından optimize edilmesini, titizlikle denetlenmesini ve sağlam Web3 ön uçlarıyla sorunsuz bir şekilde entegre olmasını sağlar. Chainlink gibi oracle'lardan yararlanarak, gerçek dünya verilerini güvenli bir şekilde merkeziyetsiz finansal ürünlerinize köprülüyoruz.",
+      "features": [
+        "Borç Verme ve Borç Alma Protokolleri",
+        "DEX ve AMM Geliştirme",
+        "Getiri Çiftçiliği ve Staking",
+        "Likitide Havuzu Yönetimi",
+        "DAO Yönetişim Sistemleri",
+        "Çapraz Zincir Köprüleri ve Oracle'lar"
+      ],
+      "benefits": [
+        "İzne Dayalı Olmayan Finansal Erişim",
+        "Aracı Ücretlerinin Ortadan Kaldırılması",
+        "Şeffaf ve Değiştirilemez İşlemler",
+        "Varlıklar Üzerinde Tam Kontrol (Gözetimsiz)",
+        "Küresel Pazar Erişimi"
+      ],
+      "content": {
+        "process": [
+          { "title": "Tokenomik ve Protokol Tasarımı", "description": "Finansal mantığı, getiri mekanizmalarını ve yönetişim modelini yapılandırma." },
+          { "title": "Akıllı Sözleşme Geliştirme", "description": "Temel finansal operasyonlar için güvenli Solidity kodu yazma." },
+          { "title": "Oracle Entegrasyonu", "description": "Chainlink kullanarak güvenilir zincir dışı fiyat beslemelerini bağlama." },
+          { "title": "Güvenlik Denetimi", "description": "Flaş kredi saldırılarını, yeniden girişi ve mantık kusurlarını önlemek için kapsamlı testler." },
+          { "title": "Ön Uç Lansmanı", "description": "Kullanıcıların cüzdanları bağlaması ve etkileşimde bulunması için şık bir React arayüzü dağıtma." }
+        ],
+        "technologies": [
+          "Solidity",
+          "Ethereum",
+          "Uniswap Protokolü",
+          "Aave Protokolü",
+          "Chainlink",
+          "Web3.js ve React"
+        ],
+        "faq": [
+          { "question": "DeFi protokolleriniz hack'lere karşı güvenli mi?", "answer": "DeFi'de güvenlik bizim mutlak en yüksek önceliğimizdir. Tüm akıllı sözleşmelerimiz yoğun dahili testlerden, simüle edilmiş saldırılardan geçer ve genellikle ana ağa dağıtımdan önce saygın üçüncü taraf denetim firmalarına gönderilir." },
+          { "question": "Kullanıcılar diğer blokzincirlerden varlıkları köprüleyebilir mi?", "answer": "Evet. Kullanıcıların Ethereum, Polygon ve Binance Smart Chain gibi ağlar arasında likiditeyi sorunsuz bir şekilde aktarmasına olanak tanıyan çapraz zincir köprüleri ve birlikte çalışabilirlik çözümleri uygulayabiliriz." }
+        ]
+      },
+      "metaTitle": "DeFi Çözümleri Geliştirme | Blokzincir ve Web3 Finans",
+      "metaDescription": "Güvenli Merkeziyetsiz Finans (DeFi) protokolleri geliştirin. Solidity ve Chainlink kullanarak DEX, borç verme, staking ve getiri çiftçiliği platformlarında uzmanız."
+    },
+    "de": {
+      "name": "DeFi-Lösungen",
+      "shortDescription": "Entwickeln Sie DeFi-Protokolle für Kreditvergabe, Handel und Ertragsgenerierung.",
+      "fullDescription": "Revolutionieren Sie den Finanzsektor mit unseren umfassenden Lösungen für dezentrale Finanzen (DeFi). Wir entwickeln hochsichere, nicht-verwahrende Finanzprotokolle, die ohne Vermittler vollständig in Blockchain-Netzwerken betrieben werden. Egal, ob Sie eine Automated Market Maker (AMM) Decentralized Exchange (DEX), eine dezentrale Kreditplattform oder komplexe Yield-Farming-Strategien aufbauen möchten, unsere Blockchain-Experten stellen sicher, dass Ihre Smart Contracts gasoptimiert, streng geprüft und nahtlos in robuste Web3-Frontends integriert sind. Durch die Nutzung von Orakeln wie Chainlink schlagen wir eine sichere Brücke zwischen realen Daten und Ihren dezentralen Finanzprodukten.",
+      "features": [
+        "Kredit- & Leihprotokolle",
+        "DEX- & AMM-Entwicklung",
+        "Yield Farming & Staking",
+        "Verwaltung von Liquiditätspools",
+        "DAO-Governance-Systeme",
+        "Cross-Chain-Brücken & Orakel"
+      ],
+      "benefits": [
+        "Finanzieller Zugang ohne Erlaubnis",
+        "Wegfall von Vermittlungsgebühren",
+        "Transparente & unveränderliche Transaktionen",
+        "Volle Kontrolle über Vermögenswerte (Non-Custodial)",
+        "Globale Marktreichweite"
+      ],
+      "content": {
+        "process": [
+          { "title": "Tokenomics & Protokolldesign", "description": "Strukturierung der Finanzlogik, der Ertragsmechanismen und des Governance-Modells." },
+          { "title": "Smart-Contract-Entwicklung", "description": "Schreiben von sicherem Solidity-Code für zentrale Finanzoperationen." },
+          { "title": "Orakel-Integration", "description": "Anbindung zuverlässiger Off-Chain-Preisdaten mithilfe von Chainlink." },
+          { "title": "Sicherheitsüberprüfung", "description": "Umfangreiche Tests zur Vermeidung von Flash-Loan-Angriffen, Reentrancy und Logikfehlern." },
+          { "title": "Frontend-Start", "description": "Bereitstellung einer schlanken React-Schnittstelle, über die Benutzer Wallets verbinden und interagieren können." }
+        ],
+        "technologies": [
+          "Solidity",
+          "Ethereum",
+          "Uniswap",
+          "Aave",
+          "Chainlink",
+          "Web3.js"
+        ],
+        "faq": [
+          { "question": "Sind Ihre DeFi-Protokolle sicher vor Hacks?", "answer": "Sicherheit in DeFi ist unsere absolute Priorität. Alle unsere Smart Contracts werden intensiven internen Tests und simulierten Angriffen unterzogen und vor der Bereitstellung im Mainnet in der Regel an renommierte externe Prüfungsunternehmen gesendet." },
+          { "question": "Können Benutzer Assets aus anderen Blockchains überbrücken?", "answer": "Ja. Wir können Cross-Chain-Brücken und Interoperabilitätslösungen implementieren, die es Benutzern ermöglichen, Liquidität nahtlos zwischen Netzwerken wie Ethereum, Polygon und Binance Smart Chain zu übertragen." }
+        ]
+      },
+      "metaTitle": "Entwicklung von DeFi-Lösungen | Blockchain- & Web3-Finanzen",
+      "metaDescription": "Entwickeln Sie sichere DeFi-Protokolle. Wir sind spezialisiert auf DEX-, Kredit-, Staking- und Yield-Farming-Plattformen mit Solidity und Chainlink."
+    },
+    "ur": {
+      "name": "DeFi کے حل",
+      "shortDescription": "قرض دینے، ٹریڈنگ، اور پیداوار پیدا کرنے کے لیے DeFi پروٹوکول بنائیں۔",
+      "fullDescription": "ہمارے جامع ڈی سینٹرلائزڈ فنانس (DeFi) سلوشنز کے ساتھ مالیاتی شعبے میں انقلاب برپا کریں۔ ہم انتہائی محفوظ، غیر تحویلاتی مالیاتی پروٹوکول تیار کرتے ہیں جو ثالثوں کے بغیر پوری طرح بلاک چین نیٹ ورکس پر کام کرتے ہیں۔ چاہے آپ آٹومیٹڈ مارکیٹ میکر (AMM) ڈی سینٹرلائزڈ ایکسچینج (DEX)، ایک وکندریقرت قرض دینے والا پلیٹ فارم، یا پیچیدہ پیداواری کاشتکاری کی حکمت عملی بنانے کا ارادہ رکھتے ہیں، ہمارے بلاک چین ماہرین اس بات کو یقینی بناتے ہیں کہ آپ کے سمارٹ معاہدوں کو گیس سے بہتر بنایا گیا ہے، سختی سے آڈٹ کیا گیا ہے، اور بغیر کسی رکاوٹ کے مضبوط Web3 فرنٹ اینڈ کے ساتھ مربوط کیا گیا ہے۔ چین لنک جیسے اوریکلز کا فائدہ اٹھا کر، ہم حقیقی دنیا کے ڈیٹا کو محفوظ طریقے سے آپ کی وکندریقرت مالیاتی مصنوعات سے جوڑتے ہیں۔",
+      "features": [
+        "قرض دینا اور ادھار لینے کے پروٹوکول",
+        "ڈی ای ایکس اور اے ایم ایم کی ترقی",
+        "پیداوار کی کاشتکاری اور اسٹیکنگ",
+        "لیکویڈیٹی پول مینجمنٹ",
+        "DAO گورننس سسٹمز",
+        "کراس چین پل اور اوریکلز"
+      ],
+      "benefits": [
+        "اجازت کے بغیر مالی رسائی",
+        "درمیانی فیس کا خاتمہ",
+        "شفاف اور ناقابل تغیر لین دین",
+        "اثاثوں پر مکمل کنٹرول (غیر تحویلاتی)",
+        "عالمی منڈی تک رسائی"
+      ],
+      "content": {
+        "process": [
+          { "title": "ٹوکنومکس اور پروٹوکول ڈیزائن", "description": "مالیاتی منطق، پیداوار کے طریقہ کار، اور حکمرانی کے ماڈل کی ساخت۔" },
+          { "title": "سمارٹ کنٹریکٹ ڈیولپمنٹ", "description": "بنیادی مالیاتی کارروائیوں کے لیے محفوظ سولیڈیٹی کوڈ لکھنا۔" },
+          { "title": "اوریکل انٹیگریشن", "description": "Chainlink کا استعمال کرتے ہوئے قابل اعتماد آف چین قیمت فیڈز کو جوڑنا۔" },
+          { "title": "سیکیورٹی آڈیٹنگ", "description": "فلیش لون حملوں، دوبارہ داخلے اور منطق کی خامیوں کو روکنے کے لیے وسیع جانچ۔" },
+          { "title": "فرنٹ اینڈ لانچ", "description": "صارفین کو بٹوے سے جڑنے اور بات چیت کرنے کے لیے ایک چیکنا React انٹرفیس تعینات کرنا۔" }
+        ],
+        "technologies": [
+          "Solidity",
+          "Ethereum",
+          "Uniswap Protocol",
+          "Aave Protocol",
+          "Chainlink",
+          "Web3.js & React"
+        ],
+        "faq": [
+          { "question": "کیا آپ کے DeFi پروٹوکول ہیکس کے خلاف محفوظ ہیں؟", "answer": "DeFi میں سیکیورٹی ہماری اولین ترجیح ہے۔ ہمارے تمام سمارٹ معاہدے انتہائی اندرونی جانچ، نقلی حملوں سے گزرتے ہیں، اور مین نیٹ کی تعیناتی سے پہلے عام طور پر معزز فریق ثالث آڈیٹنگ فرموں کو بھیجے جاتے ہیں۔" },
+          { "question": "کیا صارفین دوسرے بلاک چینز سے اثاثوں کو پل کر سکتے ہیں؟", "answer": "ہاں۔ ہم کراس چین پلوں اور انٹرآپریبلٹی حل کو لاگو کر سکتے ہیں، جس سے صارفین Ethereum، Polygon، اور Binance Smart Chain جیسے نیٹ ورکس کے درمیان بغیر کسی رکاوٹ کے لیکویڈیٹی منتقل کر سکتے ہیں۔" }
+        ]
+      },
+      "metaTitle": "DeFi سلوشنز ڈویلپمنٹ | بلاک چین اور ویب 3 فنانس",
+      "metaDescription": "محفوظ ڈی سینٹرلائزڈ فنانس (DeFi) پروٹوکول تیار کریں۔ ہم سولیڈیٹی اور چین لنک کا استعمال کرتے ہوئے ڈی ای ایکس، قرض دینے، اسٹیکنگ، اور ییلڈ فارمنگ پلیٹ فارم میں مہارت رکھتے ہیں۔"
+    },
+    "ar": {
+      "name": "حلول التمويل اللامركزي (DeFi)",
+      "shortDescription": "بناء بروتوكولات DeFi للإقراض والتداول وتوليد العائد.",
+      "fullDescription": "أحدث ثورة في القطاع المالي من خلال حلول التمويل اللامركزي (DeFi) الشاملة لدينا. نقوم بهندسة بروتوكولات مالية آمنة للغاية وغير احتجازية تعمل بالكامل على شبكات البلوكتشين بدون وسطاء. سواء كنت تهدف إلى بناء صانع سوق آلي (AMM) لتبادل لامركزي (DEX)، أو منصة إقراض لامركزية، أو استراتيجيات زراعة غلة معقدة، فإن خبراء البلوكتشين لدينا يضمنون أن عقودك الذكية مُحسّنة للغاز، ويتم تدقيقها بصرامة، ومدمجة بسلاسة مع واجهات Web3 قوية. من خلال الاستفادة من أوراكل (Oracles) مثل Chainlink، نقوم بربط بيانات العالم الحقيقي بأمان في منتجاتك المالية اللامركزية.",
+      "features": [
+        "بروتوكولات الإقراض والاقتراض",
+        "تطوير DEX و AMM",
+        "زراعة العائد (Yield Farming) والتخزين (Staking)",
+        "إدارة مجمعات السيولة (Liquidity Pools)",
+        "أنظمة حوكمة DAO",
+        "جسور عبر السلاسل وأوراكل"
+      ],
+      "benefits": [
+        "وصول مالي بدون إذن",
+        "القضاء على رسوم الوسطاء",
+        "معاملات شفافة وغير قابلة للتغيير",
+        "تحكم كامل في الأصول (غير احتجازي)",
+        "الوصول إلى السوق العالمية"
+      ],
+      "content": {
+        "process": [
+          { "title": "الاقتصاد الرمزي وتصميم البروتوكول", "description": "هيكلة المنطق المالي وآليات العائد ونموذج الحوكمة." },
+          { "title": "تطوير العقود الذكية", "description": "كتابة كود Solidity آمن للعمليات المالية الأساسية." },
+          { "title": "تكامل أوراكل (Oracle)", "description": "ربط خلاصات أسعار موثوقة خارج السلسلة باستخدام Chainlink." },
+          { "title": "التدقيق الأمني", "description": "اختبار مكثف لمنع هجمات القروض السريعة (flash loan) وإعادة الدخول (reentrancy) وعيوب المنطق." },
+          { "title": "إطلاق الواجهة الأمامية", "description": "نشر واجهة React أنيقة للمستخدمين لربط المحافظ والتفاعل." }
+        ],
+        "technologies": [
+          "Solidity",
+          "Ethereum",
+          "Uniswap Protocol",
+          "Aave Protocol",
+          "Chainlink",
+          "Web3.js & React"
+        ],
+        "faq": [
+          { "question": "هل بروتوكولات DeFi الخاصة بكم آمنة ضد الاختراقات؟", "answer": "الأمان في DeFi هو أولويتنا القصوى المطلقة. تخضع جميع عقودنا الذكية لاختبارات داخلية مكثفة وهجمات محاكاة، ويتم إرسالها عادةً إلى شركات تدقيق خارجية مرموقة قبل نشر الشبكة الرئيسية (mainnet)." },
+          { "question": "هل يمكن للمستخدمين نقل الأصول (bridge) من شبكات بلوكتشين أخرى؟", "answer": "نعم. يمكننا تنفيذ جسور عبر السلاسل وحلول قابلية التشغيل البيني، مما يسمح للمستخدمين بنقل السيولة بسلاسة بين شبكات مثل Ethereum و Polygon و Binance Smart Chain." }
+        ]
+      },
+      "metaTitle": "تطوير حلول التمويل اللامركزي | البلوكتشين",
+      "metaDescription": "قم بتطوير بروتوكولات تمويل لامركزي (DeFi) آمنة. نحن متخصصون في منصات DEX والإقراض و Staking باستخدام Solidity و Chainlink."
+    }
+  },
+  "desktop-application-development": {
+    "en": {
+      "name": "Desktop Application Development",
+      "shortDescription": "Create cross-platform desktop apps with Electron, Tauri, or native frameworks.",
+      "fullDescription": "Deliver powerful, standalone software experiences with our Desktop Application Development services. While web apps are ubiquitous, many business scenarios require the deep system integration, offline capabilities, and raw performance that only a desktop application can provide. We specialize in building cross-platform apps using frameworks like Electron and Tauri (allowing a single codebase to target Windows, macOS, and Linux), as well as fully native solutions using Swift, C#, or Rust for resource-intensive applications. From custom enterprise tools to complex consumer software, we build apps that live comfortably on your users' home screens.",
+      "features": [
+        "Cross-Platform Compatibility",
+        "Native OS Performance",
+        "Deep System Integration",
+        "Offline Functionality",
+        "Automated OTA Updates",
+        "Hardware Access (USB, Bluetooth)"
+      ],
+      "benefits": [
+        "Robust Offline Use",
+        "Access to Local File Systems",
+        "Maximum Data Privacy",
+        "Seamless System Notifications",
+        "Reduced Server Load"
+      ],
+      "content": {
+        "process": [
+          { "title": "Technology Selection", "description": "Deciding between cross-platform (Electron/Tauri) or native based on performance needs." },
+          { "title": "UI Design & Prototyping", "description": "Designing interfaces that feel natural on Windows, Mac, and Linux." },
+          { "title": "Development", "description": "Coding the application logic and integrating local databases (like SQLite)." },
+          { "title": "System Integration", "description": "Connecting to local hardware, file systems, and OS-level notifications." },
+          { "title": "Packaging & Distribution", "description": "Code signing the installers and setting up auto-update servers." }
+        ],
+        "technologies": [
+          "Electron",
+          "Tauri",
+          "React",
+          "Rust",
+          "C# (.NET MAUI)",
+          "SQLite"
+        ],
+        "faq": [
+          { "question": "Should I build a web app or a desktop app?", "answer": "If your application requires heavy local processing, strict offline usage, integration with specialized hardware, or stringent local data privacy, a desktop app is the right choice. Otherwise, a web app might be more accessible." },
+          { "question": "Can you convert my existing web app into a desktop app?", "answer": "Yes! Using wrappers like Electron or Tauri, we can take your existing web application and package it as an installable desktop application, adding native features like offline support along the way." }
+        ]
+      },
+      "metaTitle": "Desktop Application Development | Windows, macOS, Linux",
+      "metaDescription": "Develop high-performance desktop applications for Windows, macOS, and Linux. We specialize in cross-platform development using Electron and Tauri."
+    },
+    "tr": {
+      "name": "Masaüstü Uygulama Geliştirme",
+      "shortDescription": "Electron, Tauri veya yerel çerçevelerle çapraz platform masaüstü uygulamaları oluşturun.",
+      "fullDescription": "Masaüstü Uygulama Geliştirme hizmetlerimizle güçlü, bağımsız yazılım deneyimleri sunun. Web uygulamaları her yerde bulunurken, birçok iş senaryosu yalnızca bir masaüstü uygulamasının sağlayabileceği derin sistem entegrasyonu, çevrimdışı yetenekler ve saf performans gerektirir. Electron ve Tauri gibi çerçeveleri kullanarak (tek bir kod tabanının Windows, macOS ve Linux'u hedeflemesine olanak tanır) çapraz platform uygulamaları oluşturmanın yanı sıra, kaynak yoğun uygulamalar için Swift, C# veya Rust kullanarak tamamen yerel (native) çözümler oluşturma konusunda uzmanız. Özel kurumsal araçlardan karmaşık tüketici yazılımlarına kadar, kullanıcılarınızın ana ekranlarında rahatça yaşayan uygulamalar geliştiriyoruz.",
+      "features": [
+        "Çapraz Platform Uyumluluğu",
+        "Yerel İşletim Sistemi Performansı",
+        "Derin Sistem Entegrasyonu",
+        "Çevrimdışı İşlevsellik",
+        "Otomatik OTA Güncellemeleri",
+        "Donanım Erişimi (USB, Bluetooth)"
+      ],
+      "benefits": [
+        "Güçlü Çevrimdışı Kullanım",
+        "Yerel Dosya Sistemlerine Erişim",
+        "Maksimum Veri Gizliliği",
+        "Sorunsuz Sistem Bildirimleri",
+        "Azaltılmış Sunucu Yükü"
+      ],
+      "content": {
+        "process": [
+          { "title": "Teknoloji Seçimi", "description": "Performans ihtiyaçlarına göre çapraz platform (Electron/Tauri) veya yerel arasında karar verme." },
+          { "title": "Kullanıcı Arayüzü Tasarımı ve Prototipleme", "description": "Windows, Mac ve Linux'ta doğal hissettiren arayüzler tasarlama." },
+          { "title": "Geliştirme", "description": "Uygulama mantığını kodlama ve yerel veritabanlarını (SQLite gibi) entegre etme." },
+          { "title": "Sistem Entegrasyonu", "description": "Yerel donanıma, dosya sistemlerine ve işletim sistemi düzeyindeki bildirimlere bağlanma." },
+          { "title": "Paketleme ve Dağıtım", "description": "Yükleyicileri kodla imzalama ve otomatik güncelleme sunucularını ayarlama." }
+        ],
+        "technologies": [
+          "Electron",
+          "Tauri",
+          "React",
+          "Rust",
+          "C# (.NET MAUI)",
+          "SQLite"
+        ],
+        "faq": [
+          { "question": "Web uygulaması mı yoksa masaüstü uygulaması mı yapmalıyım?", "answer": "Uygulamanız ağır yerel işleme, sıkı çevrimdışı kullanım, özel donanımla entegrasyon veya sıkı yerel veri gizliliği gerektiriyorsa, masaüstü uygulaması doğru seçimdir. Aksi takdirde, bir web uygulaması daha erişilebilir olabilir." },
+          { "question": "Mevcut web uygulamamı masaüstü uygulamasına dönüştürebilir misiniz?", "answer": "Evet! Electron veya Tauri gibi sarmalayıcıları kullanarak, mevcut web uygulamanızı alıp yüklenebilir bir masaüstü uygulaması olarak paketleyebilir ve yol boyunca çevrimdışı destek gibi yerel özellikler ekleyebiliriz." }
+        ]
+      },
+      "metaTitle": "Masaüstü Uygulama Geliştirme | Windows, macOS, Linux",
+      "metaDescription": "Windows, macOS ve Linux için yüksek performanslı masaüstü uygulamaları geliştirin. Electron ve Tauri kullanarak platformlar arası geliştirmede uzmanız."
+    },
+    "de": {
+      "name": "Entwicklung von Desktop-Anwendungen",
+      "shortDescription": "Erstellen Sie plattformübergreifende Desktop-Apps mit Electron, Tauri oder nativen Frameworks.",
+      "fullDescription": "Bieten Sie leistungsstarke, eigenständige Softwareerlebnisse mit unseren Entwicklungsdiensten für Desktop-Anwendungen. Während Web-Apps allgegenwärtig sind, erfordern viele Geschäftsszenarien die tiefe Systemintegration, Offline-Funktionen und die pure Leistung, die nur eine Desktop-Anwendung bieten kann. Wir sind darauf spezialisiert, plattformübergreifende Apps mit Frameworks wie Electron und Tauri (wodurch eine einzige Codebasis auf Windows, macOS und Linux abzielen kann) sowie vollständig native Lösungen mit Swift, C# oder Rust für ressourcenintensive Anwendungen zu entwickeln. Von speziellen Unternehmenstools bis hin zu komplexer Verbrauchersoftware – wir bauen Apps, die auf den Bildschirmen Ihrer Nutzer zu Hause sind.",
+      "features": [
+        "Plattformübergreifende Kompatibilität",
+        "Native OS-Leistung",
+        "Tiefe Systemintegration",
+        "Offline-Funktionalität",
+        "Automatisierte OTA-Updates",
+        "Hardware-Zugriff (USB, Bluetooth)"
+      ],
+      "benefits": [
+        "Robuste Offline-Nutzung",
+        "Zugriff auf lokale Dateisysteme",
+        "Maximale Datenprivatsphäre",
+        "Nahtlose Systembenachrichtigungen",
+        "Reduzierte Serverlast"
+      ],
+      "content": {
+        "process": [
+          { "title": "Technologieauswahl", "description": "Entscheidung zwischen plattformübergreifend (Electron/Tauri) oder nativ basierend auf den Leistungsanforderungen." },
+          { "title": "UI-Design & Prototyping", "description": "Entwurf von Schnittstellen, die sich auf Windows, Mac und Linux natürlich anfühlen." },
+          { "title": "Entwicklung", "description": "Programmierung der Anwendungslogik und Integration lokaler Datenbanken (wie SQLite)." },
+          { "title": "Systemintegration", "description": "Anbindung an lokale Hardware, Dateisysteme und Benachrichtigungen auf Betriebssystemebene." },
+          { "title": "Verpackung & Vertrieb", "description": "Code-Signierung der Installationsprogramme und Einrichtung von Auto-Update-Servern." }
+        ],
+        "technologies": [
+          "Electron",
+          "Tauri",
+          "React",
+          "Rust",
+          "C# (.NET MAUI)",
+          "SQLite"
+        ],
+        "faq": [
+          { "question": "Sollte ich eine Web-App oder eine Desktop-App erstellen?", "answer": "Wenn Ihre Anwendung viel lokale Verarbeitung, strenge Offline-Nutzung, Integration mit spezieller Hardware oder strenge lokale Datenprivatsphäre erfordert, ist eine Desktop-App die richtige Wahl. Andernfalls ist eine Web-App möglicherweise zugänglicher." },
+          { "question": "Können Sie meine bestehende Web-App in eine Desktop-App konvertieren?", "answer": "Ja! Mit Wrappern wie Electron oder Tauri können wir Ihre bestehende Webanwendung als installierbare Desktopanwendung verpacken und dabei native Funktionen wie Offline-Unterstützung hinzufügen." }
+        ]
+      },
+      "metaTitle": "Entwicklung von Desktop-Anwendungen | Windows, macOS, Linux",
+      "metaDescription": "Entwickeln Sie hochleistungsfähige Desktop-Anwendungen für Windows, macOS und Linux mit plattformübergreifenden (Electron, Tauri) oder nativen Lösungen."
+    },
+    "ur": {
+      "name": "ڈیسک ٹاپ ایپلیکیشن کی ترقی",
+      "shortDescription": "الیکٹران، توری، یا مقامی فریم ورک کے ساتھ کراس پلیٹ فارم ڈیسک ٹاپ ایپس بنائیں۔",
+      "fullDescription": "ہماری ڈیسک ٹاپ ایپلیکیشن ڈیولپمنٹ سروسز کے ساتھ طاقتور، اسٹینڈ اکیلے سافٹ ویئر کے تجربات فراہم کریں۔ اگرچہ ویب ایپس ہر جگہ موجود ہیں، بہت سے کاروباری منظرناموں میں گہرے نظام کے انضمام، آف لائن صلاحیتوں، اور خام کارکردگی کی ضرورت ہوتی ہے جو صرف ایک ڈیسک ٹاپ ایپلی کیشن ہی فراہم کر سکتی ہے۔ ہم Electron اور Tauri جیسے فریم ورکس (جس سے ونڈوز، macOS، اور لینکس کو نشانہ بنانے کے لیے ایک ہی کوڈ بیس کی اجازت دی جاتی ہے) کا استعمال کرتے ہوئے کراس پلیٹ فارم ایپس بنانے میں مہارت رکھتے ہیں، اور ساتھ ہی وسائل کے حامل ایپلیکیشنز کے لیے Swift، C# یا Rust کا استعمال کرتے ہوئے مکمل طور پر مقامی حل بناتے ہیں۔ اپنی مرضی کے انٹرپرائز ٹولز سے لے کر پیچیدہ کنزیومر سوفٹ ویئر تک، ہم ایسی ایپس بناتے ہیں جو آپ کے صارفین کی ہوم اسکرینز پر آرام سے رہتی ہیں۔",
+      "features": [
+        "کراس پلیٹ فارم کی مطابقت",
+        "مقامی OS کی کارکردگی",
+        "گہری سسٹم انٹیگریشن",
+        "آف لائن فعالیت",
+        "خودکار OTA اپ ڈیٹس",
+        "ہارڈ ویئر تک رسائی (USB، بلوٹوتھ)"
+      ],
+      "benefits": [
+        "مضبوط آف لائن استعمال",
+        "مقامی فائل سسٹمز تک رسائی",
+        "زیادہ سے زیادہ ڈیٹا کی رازداری",
+        "ہموار سسٹم کی اطلاعات",
+        "سرور کے بوجھ میں کمی"
+      ],
+      "content": {
+        "process": [
+          { "title": "ٹیکنالوجی کا انتخاب", "description": "کارکردگی کی ضروریات کی بنیاد پر کراس پلیٹ فارم (Electron/Tauri) یا مقامی کے درمیان فیصلہ کرنا۔" },
+          { "title": "UI ڈیزائن اور پروٹو ٹائپنگ", "description": "ونڈوز، میک، اور لینکس پر قدرتی محسوس کرنے والے انٹرفیس کو ڈیزائن کرنا۔" },
+          { "title": "ترقی", "description": "ایپلیکیشن لاجک کو کوڈ کرنا اور مقامی ڈیٹا بیس (جیسے SQLite) کو یکجا کرنا۔" },
+          { "title": "سسٹم انٹیگریشن", "description": "مقامی ہارڈ ویئر، فائل سسٹم، اور OS کی سطح کی اطلاعات سے جڑنا۔" },
+          { "title": "پیکیجنگ اور تقسیم", "description": "کوڈ انسٹالرز پر دستخط کرنا اور خودکار اپ ڈیٹ سرورز ترتیب دینا۔" }
+        ],
+        "technologies": [
+          "Electron",
+          "Tauri",
+          "React",
+          "Rust",
+          "C# (.NET MAUI)",
+          "SQLite"
+        ],
+        "faq": [
+          { "question": "کیا مجھے ویب ایپ بنانی چاہیے یا ڈیسک ٹاپ ایپ؟", "answer": "اگر آپ کی ایپلیکیشن کو بھاری مقامی پروسیسنگ، سخت آف لائن استعمال، خصوصی ہارڈ ویئر کے ساتھ انضمام، یا سخت مقامی ڈیٹا پرائیویسی کی ضرورت ہے، تو ڈیسک ٹاپ ایپ صحیح انتخاب ہے۔ بصورت دیگر، ایک ویب ایپ زیادہ قابل رسائی ہو سکتی ہے۔" },
+          { "question": "کیا آپ میری موجودہ ویب ایپ کو ڈیسک ٹاپ ایپ میں تبدیل کر سکتے ہیں؟", "answer": "جی ہاں! Electron یا Tauri جیسے ریپرز کا استعمال کرتے ہوئے، ہم آپ کی موجودہ ویب ایپلیکیشن کو انسٹال کرنے کے قابل ڈیسک ٹاپ ایپلیکیشن کے طور پر پیک کر سکتے ہیں، راستے میں آف لائن سپورٹ جیسی مقامی خصوصیات شامل کر سکتے ہیں۔" }
+        ]
+      },
+      "metaTitle": "ڈیسک ٹاپ ایپلیکیشن ڈیولپمنٹ | ونڈوز، میکوس، لینکس",
+      "metaDescription": "ونڈوز، میک او ایس اور لینکس کے لیے اعلیٰ کارکردگی والی ڈیسک ٹاپ ایپلیکیشنز تیار کریں۔ ہم الیکٹران اور توری کا استعمال کرتے ہوئے کراس پلیٹ فارم کی ترقی میں مہارت رکھتے ہیں۔"
+    },
+    "ar": {
+      "name": "تطوير تطبيقات سطح المكتب",
+      "shortDescription": "قم بإنشاء تطبيقات سطح مكتب عبر الأنظمة الأساسية باستخدام Electron أو Tauri أو الأطر الأصلية.",
+      "fullDescription": "قدم تجارب برمجية قوية ومستقلة من خلال خدمات تطوير تطبيقات سطح المكتب لدينا. في حين أن تطبيقات الويب موجودة في كل مكان، تتطلب العديد من سيناريوهات الأعمال تكاملًا عميقًا للنظام، وإمكانات غير متصلة بالإنترنت، والأداء الخام الذي لا يمكن أن يوفره سوى تطبيق سطح المكتب. نحن متخصصون في بناء تطبيقات عبر المنصات باستخدام أطر عمل مثل Electron و Tauri (مما يسمح لقاعدة تعليمات برمجية واحدة باستهداف Windows و macOS و Linux)، بالإضافة إلى حلول أصلية بالكامل باستخدام Swift أو C# أو Rust للتطبيقات كثيفة الاستخدام للموارد. من أدوات المؤسسات المخصصة إلى برامج المستهلك المعقدة، نبني تطبيقات تعيش بشكل مريح على الشاشات الرئيسية للمستخدمين.",
+      "features": [
+        "التوافق عبر المنصات",
+        "أداء نظام التشغيل الأصلي",
+        "تكامل عميق للنظام",
+        "وظائف غير متصلة بالإنترنت (Offline)",
+        "تحديثات OTA الآلية",
+        "الوصول إلى الأجهزة (USB ، بلوتوث)"
+      ],
+      "benefits": [
+        "استخدام قوي في وضع عدم الاتصال",
+        "الوصول إلى أنظمة الملفات المحلية",
+        "أقصى قدر من خصوصية البيانات",
+        "إشعارات نظام سلسة",
+        "تقليل الحمل على الخادم"
+      ],
+      "content": {
+        "process": [
+          { "title": "اختيار التكنولوجيا", "description": "الاختيار بين المنصات المتقاطعة (Electron/Tauri) أو الأصلية بناءً على احتياجات الأداء." },
+          { "title": "تصميم واجهة المستخدم والنماذج الأولية", "description": "تصميم واجهات تبدو طبيعية على Windows و Mac و Linux." },
+          { "title": "التطوير", "description": "ترميز منطق التطبيق ودمج قواعد البيانات المحلية (مثل SQLite)." },
+          { "title": "تكامل النظام", "description": "الاتصال بالأجهزة المحلية وأنظمة الملفات وإشعارات مستوى نظام التشغيل." },
+          { "title": "التعبئة والتوزيع", "description": "توقيع كود أدوات التثبيت وإعداد خوادم التحديث التلقائي." }
+        ],
+        "technologies": [
+          "Electron",
+          "Tauri",
+          "React",
+          "Rust",
+          "C# (.NET MAUI)",
+          "SQLite"
+        ],
+        "faq": [
+          { "question": "هل يجب أن أقوم بإنشاء تطبيق ويب أم تطبيق سطح مكتب؟", "answer": "إذا كان تطبيقك يتطلب معالجة محلية ثقيلة، أو استخدامًا صارمًا في وضع عدم الاتصال، أو تكاملًا مع أجهزة متخصصة، أو خصوصية بيانات محلية صارمة، فإن تطبيق سطح المكتب هو الخيار الصحيح. خلاف ذلك، قد يكون تطبيق الويب أكثر سهولة في الوصول إليه." },
+          { "question": "هل يمكنكم تحويل تطبيق الويب الحالي الخاص بي إلى تطبيق سطح مكتب؟", "answer": "نعم! باستخدام برامج التغليف مثل Electron أو Tauri، يمكننا أخذ تطبيق الويب الحالي الخاص بك وتعبئته كتطبيق سطح مكتب قابل للتثبيت، مع إضافة ميزات أصلية مثل الدعم في وضع عدم الاتصال على طول الطريق." }
+        ]
+      },
+      "metaTitle": "تطوير تطبيقات سطح المكتب | ويندوز، ماك، لينكس",
+      "metaDescription": "قم بتطوير تطبيقات سطح مكتب عالية الأداء لأنظمة Windows و macOS و Linux. نحن متخصصون في التطوير عبر المنصات باستخدام Electron و Tauri."
+    }
+  }
+}

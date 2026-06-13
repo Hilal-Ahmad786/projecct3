@@ -1,0 +1,436 @@
+{
+  "nft-marketplace-development": {
+    "en": {
+      "name": "NFT Marketplace Development",
+      "shortDescription": "Create white-label NFT marketplaces with minting, trading, and auction features.",
+      "fullDescription": "The NFT ecosystem is expanding far beyond digital art into real estate, gaming, ticketing, and brand loyalty programs. To capture this value, businesses need their own dedicated platforms. Our NFT Marketplace Development services deliver highly customizable, white-label decentralized marketplaces. We handle the complex Web3 infrastructure—from crafting secure Solidity smart contracts and implementing gasless 'lazy minting', to integrating fiat onramps so non-crypto native users can purchase with a credit card. Whether you need a bespoke platform for a specific game, or a broad multi-chain marketplace spanning Ethereum, Polygon, and Solana, we build secure, scalable solutions.",
+      "features": [
+        "White-Label & Custom UI/UX Marketplace Design",
+        "Lazy Minting (Gas-free minting for creators)",
+        "Fixed Price, Timed Auctions & Dutch Auctions",
+        "Automated Creator Royalties on Secondary Sales",
+        "Multi-Chain Support (Ethereum, Polygon, BNB, etc.)",
+        "Fiat-to-Crypto Payment Gateways (Stripe, MoonPay)"
+      ],
+      "benefits": [
+        "Establish Your Own Web3 Brand & Community",
+        "Create New Revenue Streams via Transaction Fees",
+        "Seamless Onboarding for Web2 (Non-Crypto) Users",
+        "High Security via Audited Smart Contracts",
+        "Decentralized Data Permanence (IPFS)"
+      ],
+      "content": {
+        "process": [
+          { "title": "Tokenomics & Strategy", "description": "Defining the marketplace rules, fee structures, and supported blockchain networks." },
+          { "title": "Smart Contract Architecture", "description": "Developing ERC-721/ERC-1155 contracts tailored for your specific use case and royalty logic." },
+          { "title": "Web3 Integration", "description": "Building the Next.js frontend and connecting it to user wallets via WalletConnect and MetaMask." },
+          { "title": "Indexing & Data", "description": "Implementing The Graph to quickly query and display NFT data without straining the blockchain." },
+          { "title": "Security Audit & Launch", "description": "Thoroughly auditing contracts for vulnerabilities before deploying to the mainnet." }
+        ],
+        "technologies": [
+          "Solidity / Rust",
+          "Ethereum / Polygon / Solana",
+          "Next.js / React",
+          "Web3.js / Ethers.js",
+          "IPFS / Arweave",
+          "The Graph / Alchemy"
+        ],
+        "faq": [
+          { "question": "What is Lazy Minting?", "answer": "Lazy Minting allows creators to list an NFT for sale without paying upfront gas fees. The NFT is only actually 'minted' onto the blockchain at the exact moment a buyer purchases it, shifting the gas cost to the buyer. This drastically lowers the barrier to entry for creators." },
+          { "question": "Can we support multiple blockchains?", "answer": "Yes. We can build multi-chain marketplaces that allow users to switch seamlessly between networks like Ethereum, Polygon, and Base within the same interface, catering to different users' preferences for speed and cost." }
+        ]
+      },
+      "metaTitle": "White-Label NFT Marketplace Development | Blockchain Experts",
+      "metaDescription": "Build a custom NFT marketplace with lazy minting, auctions, and fiat onramps. We specialize in Ethereum and Polygon smart contract development."
+    },
+    "tr": {
+      "name": "NFT Pazaryeri Geliştirme",
+      "shortDescription": "Mintleme, ticaret ve açık artırma özelliklerine sahip beyaz etiketli (white-label) NFT pazaryerleri oluşturun.",
+      "fullDescription": "NFT ekosistemi, dijital sanatın çok ötesine geçerek gayrimenkul, oyun, biletleme ve marka sadakat programlarına doğru genişliyor. Bu değeri yakalamak için işletmelerin kendi özel platformlarına ihtiyacı var. NFT Pazaryeri Geliştirme hizmetlerimiz, son derece özelleştirilebilir, beyaz etiketli (white-label) merkeziyetsiz pazaryerleri sunar. Güvenli Solidity akıllı sözleşmeleri hazırlamaktan ve gas'sız 'tembel mintleme'yi (lazy minting) uygulamaktan, kriptoya aşina olmayan kullanıcıların kredi kartıyla satın alabilmesi için itibari para geçişlerini (fiat onramps) entegre etmeye kadar karmaşık Web3 altyapısını biz hallediyoruz. İster belirli bir oyun için ısmarlama bir platforma, ister Ethereum, Polygon ve Solana'yı kapsayan geniş bir çoklu zincir (multi-chain) pazaryerine ihtiyacınız olsun, güvenli ve ölçeklenebilir çözümler üretiyoruz.",
+      "features": [
+        "Beyaz Etiket ve Özel UI/UX Pazaryeri Tasarımı",
+        "Tembel Mintleme (İçerik üreticileri için gas'sız mintleme)",
+        "Sabit Fiyatlı, Süreli Açık Artırmalar ve Hollanda Açık Artırmaları",
+        "İkincil Satışlarda Otomatik İçerik Üreticisi Telif Hakları",
+        "Çoklu Zincir Desteği (Ethereum, Polygon, BNB vb.)",
+        "İtibari Paradan Kriptoya Ödeme Ağ Geçitleri (Stripe, MoonPay)"
+      ],
+      "benefits": [
+        "Kendi Web3 Markanızı ve Topluluğunuzu Kurun",
+        "İşlem Ücretleri Yoluyla Yeni Gelir Akışları Yaratın",
+        "Web2 (Kripto Dışı) Kullanıcıları İçin Sorunsuz Katılım",
+        "Denetlenmiş Akıllı Sözleşmeler Sayesinde Yüksek Güvenlik",
+        "Merkeziyetsiz Veri Kalıcılığı (IPFS)"
+      ],
+      "content": {
+        "process": [
+          { "title": "Tokenomik ve Strateji", "description": "Pazaryeri kurallarını, ücret yapılarını ve desteklenen blokzincir ağlarını tanımlama." },
+          { "title": "Akıllı Sözleşme Mimarisi", "description": "Özel kullanım durumunuza ve telif hakkı mantığınıza göre uyarlanmış ERC-721/ERC-1155 sözleşmeleri geliştirme." },
+          { "title": "Web3 Entegrasyonu", "description": "Next.js ön ucunu oluşturma ve WalletConnect ile MetaMask aracılığıyla kullanıcı cüzdanlarına bağlama." },
+          { "title": "İndeksleme ve Veri", "description": "Blokzinciri zorlamadan NFT verilerini hızlı bir şekilde sorgulamak ve görüntülemek için The Graph'ı uygulama." },
+          { "title": "Güvenlik Denetimi ve Lansman", "description": "Ana ağa (mainnet) dağıtmadan önce sözleşmeleri güvenlik açıklarına karşı kapsamlı bir şekilde denetleme." }
+        ],
+        "technologies": [
+          "Solidity / Rust",
+          "Ethereum / Polygon / Solana",
+          "Next.js / React",
+          "Web3.js / Ethers.js",
+          "IPFS / Arweave",
+          "The Graph / Alchemy"
+        ],
+        "faq": [
+          { "question": "Tembel Mintleme (Lazy Minting) nedir?", "answer": "Tembel Mintleme, içerik üreticilerinin önceden gas ücreti ödemeden bir NFT'yi satışa çıkarmasına olanak tanır. NFT, yalnızca bir alıcı onu satın aldığı anda blokzincirde fiilen 'mintlenir' (üretilir) ve gas maliyetini alıcıya kaydırır. Bu, içerik üreticileri için giriş engelini büyük ölçüde düşürür." },
+          { "question": "Birden fazla blokzinciri destekleyebilir miyiz?", "answer": "Evet. Kullanıcıların aynı arayüz içinde Ethereum, Polygon ve Base gibi ağlar arasında sorunsuzca geçiş yapmalarına olanak tanıyan, hız ve maliyet açısından farklı kullanıcı tercihlerine hitap eden çok zincirli (multi-chain) pazaryerleri oluşturabiliriz." }
+        ]
+      },
+      "metaTitle": "Beyaz Etiketli NFT Pazaryeri Geliştirme | Blokzincir Uzmanları",
+      "metaDescription": "Tembel mintleme, açık artırmalar ve itibari para geçişleri ile özel bir NFT pazaryeri oluşturun. Ethereum ve Polygon akıllı sözleşme geliştirmede uzmanız."
+    },
+    "de": {
+      "name": "NFT Marktplatz-Entwicklung",
+      "shortDescription": "Erstellen Sie White-Label-NFT-Marktplätze mit Minting, Handel und Auktionen.",
+      "fullDescription": "Das NFT-Ökosystem expandiert weit über digitale Kunst hinaus in die Bereiche Immobilien, Gaming, Ticketing und Markenbindung. Um diesen Wert zu nutzen, benötigen Unternehmen eigene dedizierte Plattformen. Unsere Dienstleistungen zur Entwicklung von NFT-Marktplätzen liefern hochgradig anpassbare, dezentrale White-Label-Marktplätze. Wir kümmern uns um die komplexe Web3-Infrastruktur – von der Entwicklung sicherer Solidity Smart Contracts über die Implementierung von gebührenfreiem 'Lazy Minting' bis hin zur Integration von Fiat-Onramps, damit Nutzer ohne Krypto-Erfahrung mit Kreditkarte bezahlen können. Ob Sie eine maßgeschneiderte Plattform für ein spezifisches Spiel oder einen breiten Multi-Chain-Marktplatz für Ethereum, Polygon und Solana benötigen, wir bauen sichere, skalierbare Lösungen.",
+      "features": [
+        "White-Label & Custom UI/UX Marktplatz-Design",
+        "Lazy Minting (Gas-freies Minting für Ersteller)",
+        "Festpreis, Zeitauktionen & Holländische Auktionen",
+        "Automatisierte Creator Royalties bei Sekundärverkäufen",
+        "Multi-Chain-Support (Ethereum, Polygon, BNB, etc.)",
+        "Fiat-to-Crypto Zahlungs-Gateways (Stripe, MoonPay)"
+      ],
+      "benefits": [
+        "Aufbau einer eigenen Web3-Marke & Community",
+        "Neue Einnahmequellen durch Transaktionsgebühren",
+        "Nahtloses Onboarding für Web2-Nutzer (Non-Crypto)",
+        "Hohe Sicherheit durch auditierte Smart Contracts",
+        "Dezentrale Datenpermanenz (IPFS)"
+      ],
+      "content": {
+        "process": [
+          { "title": "Tokenomics & Strategie", "description": "Definition der Marktplatzregeln, Gebührenstrukturen und der unterstützten Netzwerke." },
+          { "title": "Smart Contract Architektur", "description": "Entwicklung von ERC-721/ERC-1155 Verträgen, zugeschnitten auf Ihren Anwendungsfall." },
+          { "title": "Web3-Integration", "description": "Aufbau des Next.js-Frontends und Anbindung an Wallets via WalletConnect und MetaMask." },
+          { "title": "Indexing & Data", "description": "Implementierung von The Graph für schnelle Abfragen von NFT-Daten." },
+          { "title": "Sicherheitsaudit & Launch", "description": "Gründliche Überprüfung der Verträge auf Schwachstellen vor dem Mainnet-Deployment." }
+        ],
+        "technologies": [
+          "Solidity / Rust",
+          "Ethereum / Polygon / Solana",
+          "Next.js / React",
+          "Web3.js / Ethers.js",
+          "IPFS / Arweave",
+          "The Graph / Alchemy"
+        ],
+        "faq": [
+          { "question": "Was ist Lazy Minting?", "answer": "Lazy Minting erlaubt es Erstellern, NFTs ohne Vorab-Gasgebühren zum Verkauf anzubieten. Das NFT wird erst auf der Blockchain geprägt ('gemintet'), wenn ein Käufer es erwirbt. Die Gasgebühr trägt der Käufer." },
+          { "question": "Können wir mehrere Blockchains unterstützen?", "answer": "Ja. Wir bauen Multi-Chain-Marktplätze, bei denen Nutzer im selben Interface nahtlos zwischen Netzwerken wie Ethereum und Polygon wechseln können." }
+        ]
+      },
+      "metaTitle": "White-Label NFT-Marktplatz Entwicklung | Blockchain Agentur",
+      "metaDescription": "Bauen Sie einen eigenen NFT-Marktplatz mit Lazy Minting, Auktionen und Fiat-Zahlungen. Spezialisiert auf Ethereum und Polygon Smart Contracts."
+    },
+    "ur": {
+      "name": "این ایف ٹی مارکیٹ پلیس ڈیولپمنٹ",
+      "shortDescription": "ٹکسال، ٹریڈنگ، اور نیلامی کی خصوصیات کے ساتھ وائٹ لیبل NFT بازار بنائیں۔",
+      "fullDescription": "NFT ایکو سسٹم ڈیجیٹل آرٹ سے کہیں زیادہ رئیل اسٹیٹ، گیمنگ، ٹکٹنگ، اور برانڈ لائلٹی پروگراموں میں پھیل رہا ہے۔ اس قدر کو حاصل کرنے کے لیے، کاروباروں کو اپنے مخصوص پلیٹ فارمز کی ضرورت ہے۔ ہماری NFT مارکیٹ پلیس ڈیولپمنٹ سروسز انتہائی حسب ضرورت، وائٹ لیبل والے وکندریقرت بازار فراہم کرتی ہیں۔ ہم پیچیدہ Web3 انفراسٹرکچر کو ہینڈل کرتے ہیں—محفوظ حل کے سمارٹ کنٹریکٹ تیار کرنے اور گیس کے بغیر 'آلسی ٹکسال' کو لاگو کرنے سے لے کر فیاٹ آنریمپس کو مربوط کرنے تک تاکہ غیر کریپٹو مقامی صارفین کریڈٹ کارڈ سے خرید سکیں۔ چاہے آپ کو کسی مخصوص گیم کے لیے ایک بیسپوک پلیٹ فارم کی ضرورت ہو، یا Ethereum، Polygon، اور Solana پر پھیلا ہوا ایک وسیع ملٹی چین مارکیٹ پلیس، ہم محفوظ، قابل توسیع حل بناتے ہیں۔",
+      "features": [
+        "وائٹ لیبل اور کسٹم UI/UX مارکیٹ پلیس ڈیزائن",
+        "سست ٹکسال (تخلیق کاروں کے لیے گیس سے پاک ٹکسال)",
+        "طے شدہ قیمت، مقررہ نیلامی اور ڈچ نیلامی",
+        "ثانوی فروخت پر خودکار تخلیق کار رائلٹی",
+        "ملٹی چین سپورٹ (ایتھریم، پولی گون، بی این بی، وغیرہ)",
+        "فیاٹ ٹو کریپٹو پیمنٹ گیٹ ویز (اسٹرائپ، مون پے)"
+      ],
+      "benefits": [
+        "اپنا Web3 برانڈ اور کمیونٹی قائم کریں۔",
+        "لین دین کی فیس کے ذریعے محصول کے نئے سلسلے بنائیں۔",
+        "Web2 (نان کرپٹو) صارفین کے لیے ہموار آن بورڈنگ",
+        "آڈٹ شدہ اسمارٹ کنٹریکٹس کے ذریعے اعلی سیکیورٹی",
+        "وکندریقرت ڈیٹا کی مستقل مزاجی (IPFS)"
+      ],
+      "content": {
+        "process": [
+          { "title": "ٹوکنومکس اور حکمت عملی", "description": "مارکیٹ پلیس کے قواعد، فیس کے ڈھانچے، اور تعاون یافتہ بلاک چین نیٹ ورکس کی تعریف کرنا۔" },
+          { "title": "سمارٹ کنٹریکٹ آرکیٹیکچر", "description": "آپ کے مخصوص استعمال کے کیس اور رائلٹی کی منطق کے مطابق ERC-721/ERC-1155 معاہدے تیار کرنا۔" },
+          { "title": "Web3 انٹیگریشن", "description": "Next.js فرنٹ اینڈ بنانا اور WalletConnect اور MetaMask کے ذریعے اسے صارف کے بٹوے سے جوڑنا۔" },
+          { "title": "انڈیکسنگ اور ڈیٹا", "description": "بلاک چین پر دباؤ ڈالے بغیر NFT ڈیٹا کو تیزی سے استفسار کرنے اور ڈسپلے کرنے کے لیے گراف کو لاگو کرنا۔" },
+          { "title": "سیکیورٹی آڈٹ اور لانچ", "description": "مینیٹ پر تعینات کرنے سے پہلے خطرات کے لیے معاہدوں کا مکمل آڈٹ کرنا۔" }
+        ],
+        "technologies": [
+          "Solidity / Rust",
+          "Ethereum / Polygon / Solana",
+          "Next.js / React",
+          "Web3.js / Ethers.js",
+          "IPFS / Arweave",
+          "The Graph / Alchemy"
+        ],
+        "faq": [
+          { "question": "Lazy Minting کیا ہے؟", "answer": "Lazy Minting تخلیق کاروں کو اجازت دیتا ہے کہ وہ ایک NFT کو فروخت کے لیے پیشگی گیس فیس ادا کیے بغیر فہرست میں رکھیں۔ این ایف ٹی کو صرف اسی لمحے بلاک چین پر 'ٹکایا' جاتا ہے جب کوئی خریدار اسے خریدتا ہے، گیس کی قیمت خریدار کو منتقل کردیتی ہے۔ یہ تخلیق کاروں کے لیے داخلے کی راہ میں حائل رکاوٹ کو کافی حد تک کم کر دیتا ہے۔" },
+          { "question": "کیا ہم متعدد بلاک چینز کو سپورٹ کر سکتے ہیں؟", "answer": "جی ہاں. ہم ملٹی چین مارکیٹ پلیس بنا سکتے ہیں جو صارفین کو ایک ہی انٹرفیس کے اندر Ethereum، Polygon، اور Base جیسے نیٹ ورکس کے درمیان بغیر کسی رکاوٹ کے سوئچ کرنے کی اجازت دیتے ہیں، رفتار اور لاگت کے لیے مختلف صارفین کی ترجیحات کو پورا کرتے ہیں۔" }
+        ]
+      },
+      "metaTitle": "وائٹ لیبل NFT مارکیٹ پلیس ڈیولپمنٹ | بلاک چین کے ماہرین",
+      "metaDescription": "سست منٹنگ، نیلامی، اور فیاٹ آنریمپس کے ساتھ اپنی مرضی کے مطابق NFT مارکیٹ پلیس بنائیں۔ ہم Ethereum اور Polygon سمارٹ کنٹریکٹ کی ترقی میں مہارت رکھتے ہیں۔"
+    },
+    "ar": {
+      "name": "تطوير أسواق NFT",
+      "shortDescription": "إنشاء أسواق NFT ذات علامة بيضاء (White-label) مع ميزات السك والتداول والمزاد.",
+      "fullDescription": "يتوسع نظام NFT البيئي إلى ما هو أبعد من الفن الرقمي ليشمل العقارات والألعاب والتذاكر وبرامج ولاء العلامات التجارية. لالتقاط هذه القيمة، تحتاج الشركات إلى منصاتها المخصصة. توفر خدمات تطوير أسواق NFT لدينا أسواقًا لامركزية قابلة للتخصيص بدرجة عالية وذات علامة بيضاء (White-label). نحن نتعامل مع البنية التحتية المعقدة لـ Web3 — بدءًا من صياغة عقود Solidity الذكية الآمنة وتنفيذ 'السك الكسول' (Lazy minting) الخالي من رسوم الغاز، إلى دمج بوابات العملات الورقية (Fiat) حتى يتمكن المستخدمون غير المعتادين على العملات المشفرة من الشراء ببطاقة ائتمان. سواء كنت بحاجة إلى منصة مخصصة للعبة معينة، أو سوقًا واسعًا متعدد السلاسل (Multi-chain) يمتد عبر Ethereum و Polygon و Solana، فنحن نبني حلولاً آمنة وقابلة للتطوير.",
+      "features": [
+        "علامة بيضاء (White-Label) وتصميم مخصص لواجهة/تجربة المستخدم",
+        "السك الكسول (Lazy Minting - سك خالي من رسوم الغاز للمبدعين)",
+        "أسعار ثابتة، ومزادات محددة بوقت، ومزادات هولندية",
+        "حقوق ملكية آلية للمبدعين في المبيعات الثانوية",
+        "دعم سلاسل متعددة (Ethereum ، Polygon ، BNB ، إلخ)",
+        "بوابات دفع من العملات الورقية إلى العملات المشفرة (Stripe ، MoonPay)"
+      ],
+      "benefits": [
+        "تأسيس العلامة التجارية الخاصة بك ومجتمع Web3",
+        "إنشاء مصادر إيرادات جديدة عبر رسوم المعاملات",
+        "إعداد سلس لمستخدمي Web2 (غير الملمين بالعملات المشفرة)",
+        "أمان عالٍ من خلال العقود الذكية المدققة",
+        "استمرارية البيانات اللامركزية (IPFS)"
+      ],
+      "content": {
+        "process": [
+          { "title": "اقتصاديات الرمز (Tokenomics) والاستراتيجية", "description": "تحديد قواعد السوق، وهياكل الرسوم، وشبكات البلوكتشين المدعومة." },
+          { "title": "بنية العقد الذكي", "description": "تطوير عقود ERC-721/ERC-1155 مخصصة لحالة الاستخدام الخاصة بك ومنطق حقوق الملكية." },
+          { "title": "تكامل Web3", "description": "بناء واجهة أمامية Next.js وربطها بمحافظ المستخدمين عبر WalletConnect و MetaMask." },
+          { "title": "الفهرسة والبيانات", "description": "تنفيذ The Graph للاستعلام عن بيانات NFT وعرضها بسرعة دون إرهاق البلوكتشين." },
+          { "title": "التدقيق الأمني والإطلاق", "description": "تدقيق العقود بدقة بحثًا عن نقاط الضعف قبل النشر على الشبكة الرئيسية (Mainnet)." }
+        ],
+        "technologies": [
+          "Solidity / Rust",
+          "Ethereum / Polygon / Solana",
+          "Next.js / React",
+          "Web3.js / Ethers.js",
+          "IPFS / Arweave",
+          "The Graph / Alchemy"
+        ],
+        "faq": [
+          { "question": "ما هو السك الكسول (Lazy Minting)؟", "answer": "يسمح السك الكسول للمبدعين بإدراج NFT للبيع دون دفع رسوم غاز (Gas fees) مسبقة. يتم 'سك' (Mint) الـ NFT فعليًا على البلوكتشين في اللحظة الدقيقة التي يشتريها فيها المشتري، مما ينقل تكلفة الغاز إلى المشتري. هذا يقلل بشكل كبير من حاجز الدخول للمبدعين." },
+          { "question": "هل يمكننا دعم سلاسل بلوكتشين متعددة؟", "answer": "نعم. يمكننا بناء أسواق متعددة السلاسل (Multi-chain) تسمح للمستخدمين بالتبديل بسلاسة بين شبكات مثل Ethereum و Polygon و Base داخل نفس الواجهة، لتلبية تفضيلات المستخدمين المختلفة من حيث السرعة والتكلفة." }
+        ]
+      },
+      "metaTitle": "تطوير أسواق NFT ذات العلامة البيضاء | خبراء البلوكتشين",
+      "metaDescription": "قم ببناء سوق NFT مخصص مع السك الكسول، والمزادات، وبوابات الدفع الورقية. نحن متخصصون في تطوير العقود الذكية على Ethereum و Polygon."
+    }
+  },
+  "no-code-low-code": {
+    "en": {
+      "name": "No-Code & Low-Code Development",
+      "shortDescription": "Build powerful applications faster with no-code and low-code platforms.",
+      "fullDescription": "Speed is everything in today's digital landscape. Our No-Code and Low-Code development services empower you to build, launch, and iterate on complex applications in a fraction of the time and cost of traditional development. We don't just 'drag and drop'; we act as technical architects who leverage powerful platforms like Bubble for complex web apps, Webflow for high-converting marketing sites, and Airtable/Zapier for advanced back-office automation. This approach is perfect for startups launching MVPs, enterprises building internal tools, or marketing teams needing rapid landing page deployment without waiting on the IT department.",
+      "features": [
+        "Rapid Web App Development (Bubble, FlutterFlow)",
+        "High-Performance Marketing Sites (Webflow, Framer)",
+        "Custom Internal Tools & Dashboards (Retool)",
+        "Advanced Workflow Automation (Zapier, Make)",
+        "Relational Database Architecture (Airtable, Xano)",
+        "Seamless API Integrations"
+      ],
+      "benefits": [
+        "Up to 10x Faster Development Cycles",
+        "Significantly Reduced Development Costs",
+        "Easy Handoff (Your team can make minor edits easily)",
+        "Rapid Iteration Based on User Feedback",
+        "Bridge the Gap Between Business and IT"
+      ],
+      "content": {
+        "process": [
+          { "title": "Platform Selection", "description": "Analyzing your requirements to choose the right tool (e.g., Bubble for complex logic, Webflow for design)." },
+          { "title": "Database & Architecture", "description": "Structuring the data relationships in Airtable, Xano, or Bubble's native database." },
+          { "title": "UI/UX & Visual Development", "description": "Building the user interfaces visually, ensuring responsive design across all devices." },
+          { "title": "Logic & Automation", "description": "Creating the visual workflows, API connections, and Zapier triggers to make the app functional." },
+          { "title": "Launch & Training", "description": "Deploying the app and providing documentation so your internal team can manage it." }
+        ],
+        "technologies": [
+          "Bubble / Webflow",
+          "Airtable / Xano",
+          "Zapier / Make (Integromat)",
+          "Retool",
+          "FlutterFlow",
+          "Stripe / SendGrid (Integrations)"
+        ],
+        "faq": [
+          { "question": "Can a no-code app really scale?", "answer": "Yes, but architecture matters. Tools like Bubble can handle hundreds of thousands of users if the database and workflows are designed correctly. For extreme scale, we often use 'Low-Code'—pairing a visual frontend (Webflow/Bubble) with a robust, scalable backend database like Xano or Supabase." },
+          { "question": "What if we need a feature the no-code platform doesn't support?", "answer": "That is the beauty of 'Low-Code'. All modern no-code platforms allow for custom API integrations and custom JavaScript injection. If a native feature doesn't exist, we write custom code to bridge the gap, giving you the best of both worlds." }
+        ]
+      },
+      "metaTitle": "No-Code & Low-Code Agency | Bubble & Webflow Experts",
+      "metaDescription": "Launch apps 10x faster with our No-Code and Low-Code development services. We specialize in Bubble, Webflow, Airtable, and Zapier automations."
+    },
+    "tr": {
+      "name": "Kodsuz (No-Code) ve Az Kodlu (Low-Code) Geliştirme",
+      "shortDescription": "Kodsuz ve az kodlu platformlarla daha hızlı, güçlü uygulamalar oluşturun.",
+      "fullDescription": "Günümüzün dijital ortamında hız her şeydir. Kodsuz (No-Code) ve Az Kodlu (Low-Code) geliştirme hizmetlerimiz, karmaşık uygulamaları geleneksel geliştirmenin çok daha kısa süresinde ve düşük maliyetinde oluşturmanıza, piyasaya sürmenize ve yinelemenize (iterate) olanak tanır. Sadece 'sürükle ve bırak' yapmıyoruz; karmaşık web uygulamaları için Bubble, yüksek dönüşümlü pazarlama siteleri için Webflow ve gelişmiş arka ofis otomasyonu için Airtable/Zapier gibi güçlü platformlardan yararlanan teknik mimarlar olarak hareket ediyoruz. Bu yaklaşım, MVP lansmanı yapan girişimler, şirket içi araçlar geliştiren işletmeler veya BT departmanını beklemeden hızlı açılış sayfası (landing page) dağıtımına ihtiyaç duyan pazarlama ekipleri için mükemmeldir.",
+      "features": [
+        "Hızlı Web Uygulaması Geliştirme (Bubble, FlutterFlow)",
+        "Yüksek Performanslı Pazarlama Siteleri (Webflow, Framer)",
+        "Özel Şirket İçi Araçlar ve Panolar (Retool)",
+        "Gelişmiş İş Akışı Otomasyonu (Zapier, Make)",
+        "İlişkisel Veritabanı Mimarisi (Airtable, Xano)",
+        "Sorunsuz API Entegrasyonları"
+      ],
+      "benefits": [
+        "10 Kata Kadar Daha Hızlı Geliştirme Döngüleri",
+        "Önemli Ölçüde Azaltılmış Geliştirme Maliyetleri",
+        "Kolay Devir (Ekibiniz küçük düzenlemeleri kolayca yapabilir)",
+        "Kullanıcı Geri Bildirimlerine Dayalı Hızlı Yineleme",
+        "İş ve BT Arasındaki Uçurumu Kapatma"
+      ],
+      "content": {
+        "process": [
+          { "title": "Platform Seçimi", "description": "Doğru aracı seçmek için gereksinimlerinizi analiz etme (örneğin, karmaşık mantık için Bubble, tasarım için Webflow)." },
+          { "title": "Veritabanı ve Mimari", "description": "Airtable, Xano veya Bubble'ın yerel veritabanındaki veri ilişkilerini yapılandırma." },
+          { "title": "UI/UX ve Görsel Geliştirme", "description": "Tüm cihazlarda duyarlı (responsive) tasarım sağlayarak kullanıcı arayüzlerini görsel olarak oluşturma." },
+          { "title": "Mantık ve Otomasyon", "description": "Uygulamayı işlevsel hale getirmek için görsel iş akışları, API bağlantıları ve Zapier tetikleyicileri oluşturma." },
+          { "title": "Lansman ve Eğitim", "description": "Uygulamayı dağıtma ve kendi ekibinizin yönetebilmesi için dokümantasyon sağlama." }
+        ],
+        "technologies": [
+          "Bubble / Webflow",
+          "Airtable / Xano",
+          "Zapier / Make (Integromat)",
+          "Retool",
+          "FlutterFlow",
+          "Stripe / SendGrid (Entegrasyonlar)"
+        ],
+        "faq": [
+          { "question": "Kodsuz (no-code) bir uygulama gerçekten ölçeklenebilir mi?", "answer": "Evet, ancak mimari önemlidir. Veritabanı ve iş akışları doğru tasarlanırsa Bubble gibi araçlar yüz binlerce kullanıcıyı idare edebilir. Aşırı ölçekleme için, genellikle görsel bir ön ucu (Webflow/Bubble) Xano veya Supabase gibi sağlam, ölçeklenebilir bir arka uç veritabanıyla eşleştiren 'Az Kodlu' (Low-Code) yaklaşımı kullanırız." },
+          { "question": "Kodsuz platformun desteklemediği bir özelliğe ihtiyacımız olursa ne olur?", "answer": "'Az Kodlu' (Low-Code) olmanın güzelliği budur. Tüm modern kodsuz platformlar, özel API entegrasyonlarına ve özel JavaScript enjeksiyonuna olanak tanır. Yerel bir özellik yoksa, aradaki boşluğu kapatmak için özel kod yazarız ve size her iki dünyanın da en iyisini sunarız." }
+        ]
+      },
+      "metaTitle": "No-Code ve Low-Code Ajansı | Bubble ve Webflow Uzmanları",
+      "metaDescription": "No-Code ve Low-Code geliştirme hizmetlerimizle uygulamaları 10 kat daha hızlı piyasaya sürün. Bubble, Webflow, Airtable ve Zapier otomasyonlarında uzmanız."
+    },
+    "de": {
+      "name": "No-Code & Low-Code Entwicklung",
+      "shortDescription": "Erstellen Sie leistungsstarke Anwendungen schneller mit No-Code- und Low-Code-Plattformen.",
+      "fullDescription": "Geschwindigkeit ist in der heutigen digitalen Landschaft alles. Unsere No-Code- und Low-Code-Entwicklungsdienste ermöglichen es Ihnen, komplexe Anwendungen in einem Bruchteil der Zeit und Kosten herkömmlicher Entwicklung zu erstellen, einzuführen und zu iterieren. Wir machen nicht nur 'Drag and Drop'; wir agieren als technische Architekten, die leistungsstarke Plattformen wie Bubble für komplexe Web-Apps, Webflow für konvertierungsstarke Marketing-Websites und Airtable/Zapier für erweiterte Back-Office-Automatisierungen nutzen. Dieser Ansatz ist perfekt für Startups, die MVPs einführen, für Unternehmen, die interne Tools entwickeln, oder für Marketingteams, die schnelle Landingpages benötigen, ohne auf die IT-Abteilung warten zu müssen.",
+      "features": [
+        "Schnelle Web-App-Entwicklung (Bubble, FlutterFlow)",
+        "Leistungsstarke Marketing-Websites (Webflow, Framer)",
+        "Individuelle interne Tools & Dashboards (Retool)",
+        "Erweiterte Workflow-Automatisierung (Zapier, Make)",
+        "Relationale Datenbankarchitektur (Airtable, Xano)",
+        "Nahtlose API-Integrationen"
+      ],
+      "benefits": [
+        "Bis zu 10x schnellere Entwicklungszyklen",
+        "Erheblich reduzierte Entwicklungskosten",
+        "Einfache Übergabe (Ihr Team kann leichte Änderungen selbst vornehmen)",
+        "Schnelle Iteration basierend auf Nutzerfeedback",
+        "Überbrückung der Kluft zwischen Business und IT"
+      ],
+      "content": {
+        "process": [
+          { "title": "Plattformauswahl", "description": "Analyse Ihrer Anforderungen zur Wahl des richtigen Tools (z.B. Bubble für Logik, Webflow für Design)." },
+          { "title": "Datenbank & Architektur", "description": "Strukturierung der Daten in Airtable, Xano oder der nativen Bubble-Datenbank." },
+          { "title": "UI/UX & Visuelle Entwicklung", "description": "Visueller Aufbau der Benutzeroberflächen mit responsivem Design." },
+          { "title": "Logik & Automatisierung", "description": "Erstellung visueller Workflows, API-Anbindungen und Zapier-Trigger." },
+          { "title": "Launch & Schulung", "description": "Bereitstellung der App und Dokumentation für Ihr internes Team." }
+        ],
+        "technologies": [
+          "Bubble / Webflow",
+          "Airtable / Xano",
+          "Zapier / Make (Integromat)",
+          "Retool",
+          "FlutterFlow",
+          "Stripe / SendGrid (Integrationen)"
+        ],
+        "faq": [
+          { "question": "Kann eine No-Code-App wirklich skalieren?", "answer": "Ja, aber die Architektur ist entscheidend. Tools wie Bubble können hunderttausende Nutzer bewältigen, wenn sie richtig aufgebaut sind. Für extreme Skalierung nutzen wir Low-Code: ein visuelles Frontend (Webflow) kombiniert mit einem robusten Backend (Xano/Supabase)." },
+          { "question": "Was, wenn die Plattform eine Funktion nicht unterstützt?", "answer": "Das ist der Vorteil von Low-Code. Alle modernen Plattformen erlauben API-Anbindungen und benutzerdefinierten Code (JavaScript). Fehlt eine Funktion, programmieren wir sie individuell hinzu." }
+        ]
+      },
+      "metaTitle": "No-Code & Low-Code Agentur | Bubble & Webflow Experten",
+      "metaDescription": "Starten Sie Apps 10x schneller mit No-Code und Low-Code Entwicklung. Spezialisiert auf Bubble, Webflow, Airtable und Zapier Automatisierung."
+    },
+    "ur": {
+      "name": "نو کوڈ اور لو کوڈ ڈیولپمنٹ",
+      "shortDescription": "کوڈ اور کم کوڈ والے پلیٹ فارمز کے ساتھ تیز تر طاقتور ایپلیکیشنز بنائیں۔",
+      "fullDescription": "آج کے ڈیجیٹل منظر نامے میں رفتار ہی سب کچھ ہے۔ ہماری نو-کوڈ اور لو-کوڈ ڈیولپمنٹ سروسز آپ کو روایتی ڈیولپمنٹ کے وقت اور لاگت کے ایک حصے میں پیچیدہ ایپلیکیشنز بنانے، لانچ کرنے اور ان پر اعادہ کرنے کا اختیار دیتی ہیں۔ ہم صرف 'ڈریگ اینڈ ڈراپ' نہیں کرتے ہیں۔ ہم ایسے تکنیکی معماروں کے طور پر کام کرتے ہیں جو پیچیدہ ویب ایپس کے لیے Bubble، اعلیٰ تبدیل کرنے والی مارکیٹنگ سائٹس کے لیے Webflow، اور اعلی درجے کے بیک آفس آٹومیشن کے لیے Airtable/Zapier جیسے طاقتور پلیٹ فارمز کا فائدہ اٹھاتے ہیں۔ یہ نقطہ نظر MVP شروع کرنے والے سٹارٹ اپس، اندرونی ٹولز بنانے والے اداروں، یا آئی ٹی ڈیپارٹمنٹ کے انتظار کیے بغیر فوری لینڈنگ پیج کی تعیناتی کی ضرورت والی مارکیٹنگ ٹیموں کے لیے بہترین ہے۔",
+      "features": [
+        "تیز ویب ایپ ڈیولپمنٹ (بلبلا، فلٹر فلو)",
+        "اعلی کارکردگی والی مارکیٹنگ سائٹس (ویب فلو، فریمر)",
+        "کسٹم انٹرنل ٹولز اور ڈیش بورڈز (ری ٹول)",
+        "اعلی درجے کی ورک فلو آٹومیشن (زیپیر، بنائیں)",
+        "ریلیشنل ڈیٹا بیس آرکیٹیکچر (Airtable، Xano)",
+        "ہموار API انضمام"
+      ],
+      "benefits": [
+        "10x تک تیز تر ترقیاتی سائیکل",
+        "ترقیاتی اخراجات میں نمایاں کمی",
+        "آسان ہینڈ آف (آپ کی ٹیم آسانی سے معمولی ترامیم کر سکتی ہے)",
+        "صارف کے تاثرات پر مبنی تیز اعادہ",
+        "کاروبار اور آئی ٹی کے درمیان فرق کو پر کریں۔"
+      ],
+      "content": {
+        "process": [
+          { "title": "پلیٹ فارم کا انتخاب", "description": "صحیح ٹول کا انتخاب کرنے کے لیے اپنی ضروریات کا تجزیہ کرنا (مثلاً، پیچیدہ منطق کے لیے ببل، ڈیزائن کے لیے ویب فلو)۔" },
+          { "title": "ڈیٹا بیس اور آرکیٹیکچر", "description": "Airtable، Xano، یا Bubble کے مقامی ڈیٹا بیس میں ڈیٹا کے تعلقات کی تشکیل۔" },
+          { "title": "UI/UX اور بصری ترقی", "description": "تمام ڈیوائسز پر جوابی ڈیزائن کو یقینی بناتے ہوئے، بصری طور پر یوزر انٹرفیس بنانا۔" },
+          { "title": "منطق اور آٹومیشن", "description": "ایپ کو فعال بنانے کے لیے بصری ورک فلو، API کنکشنز، اور Zapier محرکات بنانا۔" },
+          { "title": "لانچ اور ٹریننگ", "description": "ایپ کو تعینات کرنا اور دستاویزات فراہم کرنا تاکہ آپ کی داخلی ٹیم اس کا نظم کر سکے۔" }
+        ],
+        "technologies": [
+          "Bubble / Webflow",
+          "Airtable / Xano",
+          "Zapier / Make (Integromat)",
+          "Retool",
+          "FlutterFlow",
+          "Stripe / SendGrid (Integrations)"
+        ],
+        "faq": [
+          { "question": "کیا ایک نو کوڈ ایپ واقعی اسکیل کر سکتی ہے؟", "answer": "ہاں، لیکن فن تعمیر کے معاملات۔ ببل جیسے ٹولز لاکھوں صارفین کو سنبھال سکتے ہیں اگر ڈیٹا بیس اور ورک فلو کو صحیح طریقے سے ڈیزائن کیا گیا ہو۔ انتہائی پیمانے کے لیے، ہم اکثر ایک مضبوط، اسکیل ایبل بیک اینڈ ڈیٹا بیس جیسے Xano یا Supabase کے ساتھ ایک بصری فرنٹ اینڈ (Webflow/Bubble) کا جوڑا بناتے ہوئے 'Low-Code' کا استعمال کرتے ہیں۔" },
+          { "question": "اگر ہمیں کسی ایسی خصوصیت کی ضرورت ہو جس کو کوڈ پلیٹ فارم سپورٹ نہیں کرتا ہے تو کیا ہوگا؟", "answer": "یہ 'کم ضابطہ' کی خوبصورتی ہے۔ تمام جدید نو کوڈ پلیٹ فارمز کسٹم API انٹیگریشنز اور اپنی مرضی کے جاوا اسکرپٹ انجیکشن کی اجازت دیتے ہیں۔ اگر کوئی مقامی خصوصیت موجود نہیں ہے، تو ہم اس خلا کو پر کرنے کے لیے اپنی مرضی کا کوڈ لکھتے ہیں، جس سے آپ کو دونوں جہانوں کا بہترین فائدہ ملتا ہے۔" }
+        ]
+      },
+      "metaTitle": "نو کوڈ اور لو کوڈ ایجنسی | ببل اور ویب فلو کے ماہرین",
+      "metaDescription": "ہماری No-Code اور Low-Code ڈیولپمنٹ سروسز کے ساتھ 10x تیزی سے ایپس لانچ کریں۔ ہم Bubble، Webflow، Airtable، اور Zapier آٹومیشن میں مہارت رکھتے ہیں۔"
+    },
+    "ar": {
+      "name": "التطوير بدون كود (No-Code) وبكود منخفض (Low-Code)",
+      "shortDescription": "بناء تطبيقات قوية بشكل أسرع مع منصات No-Code و Low-Code.",
+      "fullDescription": "السرعة هي كل شيء في المشهد الرقمي اليوم. تمكّنك خدمات التطوير بدون كود (No-Code) وبكود منخفض (Low-Code) من بناء وإطلاق وتكرار التطبيقات المعقدة في جزء بسيط من الوقت والتكلفة مقارنة بالتطوير التقليدي. نحن لا نقوم بـ 'السحب والإفلات' (Drag and drop) فحسب؛ بل نعمل كمهندسين تقنيين يستفيدون من منصات قوية مثل Bubble لتطبيقات الويب المعقدة، و Webflow لمواقع التسويق عالية التحويل، و Airtable/Zapier لأتمتة المكاتب الخلفية المتقدمة. يعد هذا النهج مثاليًا للشركات الناشئة التي تطلق منتجات MVP، أو المؤسسات التي تبني أدوات داخلية، أو فرق التسويق التي تحتاج إلى نشر صفحات هبوط سريعة دون انتظار قسم تكنولوجيا المعلومات.",
+      "features": [
+        "تطوير سريع لتطبيقات الويب (Bubble ، FlutterFlow)",
+        "مواقع تسويق عالية الأداء (Webflow ، Framer)",
+        "أدوات داخلية ولوحات تحكم مخصصة (Retool)",
+        "أتمتة سير العمل المتقدمة (Zapier ، Make)",
+        "هندسة قواعد البيانات العلائقية (Airtable ، Xano)",
+        "تكامل سلس لواجهات برمجة التطبيقات (API)"
+      ],
+      "benefits": [
+        "دورات تطوير أسرع بما يصل إلى 10 أضعاف",
+        "تخفيض كبير في تكاليف التطوير",
+        "تسليم سهل (يمكن لفريقك إجراء تعديلات طفيفة بسهولة)",
+        "تكرار سريع بناءً على ملاحظات المستخدمين",
+        "سد الفجوة بين الأعمال وتكنولوجيا المعلومات"
+      ],
+      "content": {
+        "process": [
+          { "title": "اختيار المنصة", "description": "تحليل متطلباتك لاختيار الأداة المناسبة (مثل Bubble للمنطق المعقد، Webflow للتصميم)." },
+          { "title": "قاعدة البيانات والهندسة", "description": "هيكلة علاقات البيانات في Airtable أو Xano أو قاعدة بيانات Bubble الأصلية." },
+          { "title": "تصميم واجهة المستخدم وتجربة المستخدم (UI/UX) والتطوير المرئي", "description": "بناء واجهات المستخدم بشكل مرئي، مع ضمان تصميم متجاوب عبر جميع الأجهزة." },
+          { "title": "المنطق والأتمتة", "description": "إنشاء تدفقات العمل المرئية، واتصالات API، ومشغلات Zapier لجعل التطبيق وظيفيًا." },
+          { "title": "الإطلاق والتدريب", "description": "نشر التطبيق وتوفير الوثائق حتى يتمكن فريقك الداخلي من إدارته." }
+        ],
+        "technologies": [
+          "Bubble / Webflow",
+          "Airtable / Xano",
+          "Zapier / Make (Integromat)",
+          "Retool",
+          "FlutterFlow",
+          "Stripe / SendGrid (للتكاملات)"
+        ],
+        "faq": [
+          { "question": "هل يمكن لتطبيق No-Code أن يتوسع حقًا؟", "answer": "نعم، ولكن البنية المعمارية مهمة. يمكن لأدوات مثل Bubble التعامل مع مئات الآلاف من المستخدمين إذا تم تصميم قاعدة البيانات وتدفقات العمل بشكل صحيح. بالنسبة للتوسع الهائل، غالبًا ما نستخدم 'Low-Code' — أي ربط واجهة أمامية مرئية (Webflow/Bubble) بقاعدة بيانات خلفية قوية وقابلة للتطوير مثل Xano أو Supabase." },
+          { "question": "ماذا لو احتجنا إلى ميزة لا تدعمها المنصة؟", "answer": "هذا هو جمال 'Low-Code'. تتيح جميع المنصات الحديثة بدون كود دمج واجهات برمجة تطبيقات (API) مخصصة وحقن أكواد JavaScript مخصصة. إذا كانت الميزة الأصلية غير موجودة، فإننا نكتب رمزًا مخصصًا لسد الفجوة، مما يمنحك أفضل ما في العالمين." }
+        ]
+      },
+      "metaTitle": "وكالة No-Code و Low-Code | خبراء Bubble و Webflow",
+      "metaDescription": "أطلق التطبيقات بشكل أسرع 10 مرات من خلال خدمات التطوير بدون كود (No-Code) وبكود منخفض (Low-Code). نحن متخصصون في أتمتة Bubble و Webflow و Airtable و Zapier."
+    }
+  }
+}

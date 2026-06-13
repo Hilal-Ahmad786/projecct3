@@ -1,0 +1,870 @@
+{
+  "wifi-networking": {
+    "en": {
+      "name": "Wi-Fi & Networking",
+      "shortDescription": "Enterprise-grade Wi-Fi and secure networking solutions for offices and campuses.",
+      "fullDescription": "A slow, unreliable network cripples productivity and frustrates customers. Our Wi-Fi & Networking services provide end-to-end design, installation, and management of enterprise-grade network infrastructure. Whether you are outfitting a new corporate office, a sprawling university campus, a high-density event venue, or an industrial warehouse, we engineer solutions that guarantee seamless roaming, high throughput, and rock-solid security. We utilize industry-leading hardware from Cisco, Ubiquiti, and Aruba to build resilient LAN/WAN architectures, implement robust firewall security, and provide 24/7 proactive network monitoring.",
+      "features": [
+        "Predictive Wireless Site Surveys & Heatmapping",
+        "High-Density Wi-Fi Deployment (Offices, Venues, Campuses)",
+        "Structured Cabling (Cat6, Fiber Optic)",
+        "Next-Generation Firewall (NGFW) & VPN Setup",
+        "Guest Wi-Fi Portals with Bandwidth Management",
+        "24/7 Proactive Network Monitoring & Support"
+      ],
+      "benefits": [
+        "Eliminate Dead Zones and Dropped Connections",
+        "Boost Employee Productivity with High-Speed Internet",
+        "Protect Corporate Data with Enterprise-Grade Security",
+        "Easily Scale Your Network as Your Business Grows",
+        "Gain Visibility into Network Usage and Health"
+      ],
+      "content": {
+        "process": [
+          { "title": "Site Survey & Design", "description": "Conducting RF site surveys to determine optimal access point placement and mapping cable routes." },
+          { "title": "Infrastructure Setup", "description": "Pulling structured cabling and installing switches, routers, and firewalls in the server room." },
+          { "title": "Wireless Deployment", "description": "Mounting and configuring wireless access points for maximum coverage and seamless roaming." },
+          { "title": "Security Configuration", "description": "Setting up VLANs, VPNs, guest networks, and applying strict firewall rules." },
+          { "title": "Testing & Monitoring", "description": "Verifying throughput, testing failover systems, and connecting the network to our 24/7 monitoring dashboard." }
+        ],
+        "technologies": [
+          "Cisco Meraki / Catalyst",
+          "Ubiquiti UniFi",
+          "Aruba Networks",
+          "Fortinet / Palo Alto Firewalls",
+          "Ekahau Site Survey",
+          "PRTG Network Monitor"
+        ],
+        "faq": [
+          { "question": "Why is our current Wi-Fi so slow?", "answer": "Slow Wi-Fi is often caused by poor access point placement, interference from other devices, outdated hardware, or insufficient bandwidth allocation. We conduct a thorough site survey to pinpoint and resolve these bottlenecks." },
+          { "question": "Can you separate guest traffic from our internal corporate network?", "answer": "Absolutely. We implement VLANs (Virtual Local Area Networks) to completely isolate guest Wi-Fi from your sensitive corporate data, ensuring maximum security and compliance." }
+        ]
+      },
+      "metaTitle": "Enterprise Wi-Fi & Networking Solutions | Installation & Support",
+      "metaDescription": "Upgrade your office or campus with enterprise-grade Wi-Fi and secure networking solutions. We provide site surveys, Cisco/Ubiquiti installations, and 24/7 support."
+    },
+    "tr": {
+      "name": "Wi-Fi ve Ağ Çözümleri (Networking)",
+      "shortDescription": "Ofisler ve kampüsler için kurumsal düzeyde Wi-Fi ve güvenli ağ çözümleri.",
+      "fullDescription": "Yavaş, güvenilmez bir ağ, üretkenliği felce uğratır ve müşterileri hüsrana uğratır. Wi-Fi ve Ağ Çözümleri hizmetlerimiz, kurumsal düzeyde ağ altyapısının uçtan uca tasarımını, kurulumunu ve yönetimini sağlar. İster yeni bir şirket ofisini, ister geniş bir üniversite kampüsünü, yüksek yoğunluklu bir etkinlik mekanını veya endüstriyel bir depoyu donatıyor olun, kesintisiz dolaşımı (roaming), yüksek verimi (throughput) ve sağlam güvenliği garanti eden çözümler üretiyoruz. Dayanıklı LAN/WAN mimarileri oluşturmak, sağlam güvenlik duvarı (firewall) güvenliği uygulamak ve 7/24 proaktif ağ izleme sağlamak için Cisco, Ubiquiti ve Aruba gibi sektör lideri donanımları kullanıyoruz.",
+      "features": [
+        "Tahmine Dayalı Kablosuz Saha Araştırmaları ve Isı Haritalama (Heatmapping)",
+        "Yüksek Yoğunluklu Wi-Fi Dağıtımı (Ofisler, Mekanlar, Kampüsler)",
+        "Yapısal Kablolama (Cat6, Fiber Optik)",
+        "Yeni Nesil Güvenlik Duvarı (NGFW) ve VPN Kurulumu",
+        "Bant Genişliği Yönetimi ile Misafir Wi-Fi Portalları",
+        "7/24 Proaktif Ağ İzleme ve Destek"
+      ],
+      "benefits": [
+        "Ölü Bölgeleri (Dead Zones) ve Düşen Bağlantıları Ortadan Kaldırma",
+        "Yüksek Hızlı İnternet ile Çalışan Verimliliğini Artırma",
+        "Kurumsal Düzeyde Güvenlik ile Şirket Verilerini Koruma",
+        "İşletmeniz Büyüdükçe Ağınızı Kolayca Ölçeklendirme",
+        "Ağ Kullanımı ve Sağlığı Hakkında Görünürlük Kazanma"
+      ],
+      "content": {
+        "process": [
+          { "title": "Saha Araştırması ve Tasarım", "description": "Optimum erişim noktası (Access Point) yerleşimini belirlemek ve kablo rotalarını haritalamak için RF saha araştırmaları yapmak." },
+          { "title": "Altyapı Kurulumu", "description": "Yapısal kablolama çekmek; sunucu odasına (server room) anahtarları (switches), yönlendiricileri (routers) ve güvenlik duvarlarını kurmak." },
+          { "title": "Kablosuz Dağıtım", "description": "Maksimum kapsama alanı ve kesintisiz dolaşım için kablosuz erişim noktalarını monte etme ve yapılandırma." },
+          { "title": "Güvenlik Yapılandırması", "description": "VLAN'ları, VPN'leri, misafir ağlarını kurma ve katı güvenlik duvarı kuralları uygulama." },
+          { "title": "Test ve İzleme", "description": "Verimi (throughput) doğrulama, yük devretme (failover) sistemlerini test etme ve ağı 7/24 izleme panelimize bağlama." }
+        ],
+        "technologies": [
+          "Cisco Meraki / Catalyst",
+          "Ubiquiti UniFi",
+          "Aruba Networks",
+          "Fortinet / Palo Alto Firewalls",
+          "Ekahau Saha Araştırması",
+          "PRTG Ağ İzleyicisi (Network Monitor)"
+        ],
+        "faq": [
+          { "question": "Mevcut Wi-Fi bağlantımız neden bu kadar yavaş?", "answer": "Yavaş Wi-Fi genellikle erişim noktalarının yanlış yerleştirilmesinden, diğer cihazlardan gelen parazitlerden (interference), eski donanımdan veya yetersiz bant genişliği tahsisinden kaynaklanır. Bu darboğazları tespit etmek ve çözmek için kapsamlı bir saha araştırması yapıyoruz." },
+          { "question": "Misafir trafiğini dahili şirket ağımızdan ayırabilir misiniz?", "answer": "Kesinlikle. Maksimum güvenlik ve uyumluluk sağlamak için misafir Wi-Fi'sini hassas şirket verilerinizden tamamen izole etmek amacıyla VLAN'lar (Sanal Yerel Ağlar) uyguluyoruz." }
+        ]
+      },
+      "metaTitle": "Kurumsal Wi-Fi ve Ağ Çözümleri | Kurulum ve Destek",
+      "metaDescription": "Ofisinizi veya kampüsünüzü kurumsal düzeyde Wi-Fi ve güvenli ağ çözümleriyle yükseltin. Saha araştırmaları, Cisco/Ubiquiti kurulumları ve 7/24 destek sunuyoruz."
+    },
+    "de": {
+      "name": "WLAN & Netzwerktechnik",
+      "shortDescription": "Enterprise-WLAN und sichere Netzwerklösungen für Büros und Campus-Anlagen.",
+      "fullDescription": "Ein langsames, unzuverlässiges Netzwerk beeinträchtigt die Produktivität und frustriert Kunden. Unsere WLAN- und Netzwerkdienste bieten End-to-End-Design, Installation und Management von Enterprise-Netzwerkinfrastrukturen. Egal, ob Sie ein neues Bürogebäude, einen weitläufigen Universitätscampus, eine Veranstaltungshalle oder ein Industrielager ausstatten möchten – wir entwickeln Lösungen, die nahtloses Roaming, hohen Datendurchsatz und absolute Sicherheit garantieren. Wir setzen auf branchenführende Hardware von Cisco, Ubiquiti und Aruba, um ausfallsichere LAN/WAN-Architekturen aufzubauen, robuste Firewalls zu implementieren und proaktives 24/7 Netzwerk-Monitoring bereitzustellen.",
+      "features": [
+        "WLAN-Ausleuchtung (Site Survey) & Heatmapping",
+        "High-Density WLAN-Setups (für Büros, Events, Schulen)",
+        "Strukturierte Verkabelung (Cat6, Glasfaser)",
+        "Next-Generation Firewalls (NGFW) & VPN-Einrichtung",
+        "Gäste-WLAN-Portale mit Bandbreitenmanagement",
+        "Proaktives 24/7 Netzwerk-Monitoring & IT-Support"
+      ],
+      "benefits": [
+        "Beseitigung von Funklöchern und Verbindungsabbrüchen",
+        "Steigerung der Produktivität durch schnelles, stabiles Internet",
+        "Schutz von Unternehmensdaten durch Enterprise-Security",
+        "Leichte Skalierbarkeit des Netzwerks bei Unternehmenswachstum",
+        "Volle Transparenz über Netzwerkauslastung und -gesundheit"
+      ],
+      "content": {
+        "process": [
+          { "title": "Site Survey & Planung", "description": "Durchführung von RF-Messungen zur optimalen Platzierung der Access Points." },
+          { "title": "Infrastruktur-Setup", "description": "Verlegung der Kabel und Installation von Switches, Routern und Firewalls im Serverraum." },
+          { "title": "WLAN-Installation", "description": "Montage und Konfiguration der Access Points für nahtloses Roaming." },
+          { "title": "Security-Konfiguration", "description": "Einrichtung von VLANs, VPNs und strikten Firewall-Regeln zur Netzwerktrennung." },
+          { "title": "Testing & Monitoring", "description": "Durchsatz-Tests, Failover-Simulation und Anbindung an unser 24/7 Überwachungs-Dashboard." }
+        ],
+        "technologies": [
+          "Cisco Meraki / Catalyst",
+          "Ubiquiti UniFi",
+          "Aruba Networks",
+          "Fortinet / Palo Alto Firewalls",
+          "Ekahau Site Survey",
+          "PRTG Network Monitor"
+        ],
+        "faq": [
+          { "question": "Warum ist unser aktuelles WLAN so langsam?", "answer": "Langsames WLAN liegt oft an schlechter Access Point-Platzierung, Interferenzen, veralteter Hardware oder falscher Konfiguration. Wir führen eine genaue Ausleuchtung (Site Survey) durch, um diese Engpässe zu finden und zu beheben." },
+          { "question": "Können wir den Gäste-Traffic vom internen Firmennetzwerk trennen?", "answer": "Absolut. Wir richten VLANs (Virtual Local Area Networks) ein, um das Gäste-WLAN komplett von Ihren sensiblen Unternehmensdaten zu isolieren und so höchste Sicherheit zu gewährleisten." }
+        ]
+      },
+      "metaTitle": "Enterprise WLAN- & Netzwerklösungen | Installation & IT-Support",
+      "metaDescription": "Rüsten Sie Ihr Büro oder Ihren Campus mit Enterprise-WLAN und sicheren Netzwerken aus. Wir bieten WLAN-Ausleuchtung, Cisco/Ubiquiti-Hardware & 24/7 Support."
+    },
+    "ur": {
+      "name": "Wi-Fi اور نیٹ ورکنگ",
+      "shortDescription": "دفاتر اور کیمپسز کے لیے انٹرپرائز گریڈ وائی فائی اور محفوظ نیٹ ورکنگ سلوشنز۔",
+      "fullDescription": "سست، ناقابل اعتبار نیٹ ورک پیداواری صلاحیت کو معذور کرتا ہے اور صارفین کو مایوس کرتا ہے۔ ہماری Wi-Fi اور نیٹ ورکنگ سروسز انٹرپرائز گریڈ نیٹ ورک کے بنیادی ڈھانچے کا اینڈ ٹو اینڈ ڈیزائن، تنصیب اور انتظام فراہم کرتی ہیں۔ چاہے آپ کسی نئے کارپوریٹ آفس، وسیع و عریض یونیورسٹی کے کیمپس، ہائی ڈینسٹی ایونٹ کے مقام، یا صنعتی گودام کو تیار کر رہے ہوں، ہم ایسے حل انجینئر کرتے ہیں جو بغیر کسی رکاوٹ کے رومنگ، ہائی تھرو پٹ، اور راک ٹھوس سیکیورٹی کی ضمانت دیتے ہیں۔ ہم لچکدار LAN/WAN فن تعمیرات کی تعمیر، مضبوط فائر وال سیکیورٹی کو نافذ کرنے، اور 24/7 فعال نیٹ ورک کی نگرانی فراہم کرنے کے لیے Cisco، Ubiquiti، اور Aruba سے صنعت کی معروف ہارڈویئر کا استعمال کرتے ہیں۔",
+      "features": [
+        "پیشین گوئی وائرلیس سائٹ سروے اور ہیٹ میپنگ",
+        "ہائی ڈینسٹی وائی فائی کی تعیناتی (دفاتر، مقامات، کیمپس)",
+        "سٹرکچرڈ کیبلنگ (Cat6، فائبر آپٹک)",
+        "اگلی نسل کا فائر وال (NGFW) اور VPN سیٹ اپ",
+        "بینڈوتھ مینجمنٹ کے ساتھ گیسٹ وائی فائی پورٹلز",
+        "24/7 ایکٹو نیٹ ورک مانیٹرنگ اور سپورٹ"
+      ],
+      "benefits": [
+        "ڈیڈ زونز اور گرے ہوئے رابطوں کو ختم کریں۔",
+        "تیز رفتار انٹرنیٹ کے ساتھ ملازمین کی پیداواری صلاحیت کو فروغ دیں۔",
+        "انٹرپرائز گریڈ سیکیورٹی کے ساتھ کارپوریٹ ڈیٹا کی حفاظت کریں۔",
+        "آپ کا کاروبار بڑھنے کے ساتھ ہی آسانی سے اپنے نیٹ ورک کو اسکیل کریں۔",
+        "نیٹ ورک کے استعمال اور صحت میں بصیرت حاصل کریں۔"
+      ],
+      "content": {
+        "process": [
+          { "title": "سائٹ سروے اور ڈیزائن", "description": "بہترین رسائی پوائنٹ کی جگہ کا تعین کرنے اور کیبل کے راستوں کی نقشہ سازی کے لیے RF سائٹ کا سروے کرنا۔" },
+          { "title": "انفراسٹرکچر سیٹ اپ", "description": "سٹرکچرڈ کیبلنگ کھینچنا اور سرور روم میں سوئچز، راؤٹرز، اور فائر والز انسٹال کرنا۔" },
+          { "title": "وائرلیس تعیناتی", "description": "زیادہ سے زیادہ کوریج اور ہموار رومنگ کے لیے وائرلیس رسائی پوائنٹس کو بڑھانا اور ترتیب دینا۔" },
+          { "title": "سیکیورٹی کنفیگریشن", "description": "VLANs، VPNs، گیسٹ نیٹ ورکس کو ترتیب دینا، اور فائر وال کے سخت اصول لاگو کرنا۔" },
+          { "title": "ٹیسٹنگ اور مانیٹرنگ", "description": "تھرو پٹ کی تصدیق کرنا، فیل اوور سسٹمز کی جانچ کرنا، اور نیٹ ورک کو ہمارے 24/7 مانیٹرنگ ڈیش بورڈ سے جوڑنا۔" }
+        ],
+        "technologies": [
+          "Cisco Meraki / Catalyst",
+          "Ubiquiti UniFi",
+          "Aruba Networks",
+          "Fortinet / Palo Alto Firewalls",
+          "Ekahau Site Survey",
+          "PRTG Network Monitor"
+        ],
+        "faq": [
+          { "question": "ہمارا موجودہ وائی فائی اتنا سست کیوں ہے؟", "answer": "سست Wi-Fi اکثر ناقص رسائی پوائنٹ کی جگہ، دوسرے آلات کی مداخلت، پرانے ہارڈویئر، یا ناکافی بینڈوتھ مختص کرنے کی وجہ سے ہوتا ہے۔ ہم ان رکاوٹوں کو نشان زد کرنے اور حل کرنے کے لیے ایک مکمل سائٹ سروے کرتے ہیں۔" },
+          { "question": "کیا آپ مہمانوں کی ٹریفک کو ہمارے اندرونی کارپوریٹ نیٹ ورک سے الگ کر سکتے ہیں؟", "answer": "بالکل۔ ہم آپ کے حساس کارپوریٹ ڈیٹا سے گیسٹ Wi-Fi کو مکمل طور پر الگ کرنے کے لیے VLANs (ورچوئل لوکل ایریا نیٹ ورکس) نافذ کرتے ہیں، زیادہ سے زیادہ حفاظت اور تعمیل کو یقینی بناتے ہیں۔" }
+        ]
+      },
+      "metaTitle": "انٹرپرائز وائی فائی اور نیٹ ورکنگ سلوشنز | تنصیب اور اعانت",
+      "metaDescription": "اپنے دفتر یا کیمپس کو انٹرپرائز گریڈ Wi-Fi اور محفوظ نیٹ ورکنگ کے حل کے ساتھ اپ گریڈ کریں۔ ہم سائٹ کے سروے، سسکو/یوبیکیٹی کی تنصیبات، اور 24/7 سپورٹ فراہم کرتے ہیں۔"
+    },
+    "ar": {
+      "name": "شبكات الواي فاي (Wi-Fi) والشبكات السلكية",
+      "shortDescription": "حلول شبكات سلكية ولاسلكية (Wi-Fi) على مستوى المؤسسات للمكاتب والحرم الجامعي.",
+      "fullDescription": "الشبكة البطيئة وغير الموثوقة تشل الإنتاجية وتُحبط العملاء. تقدم خدمات شبكات Wi-Fi والشبكات لدينا تصميماً وتركيباً وإدارة شاملة للبنية التحتية للشبكات على مستوى المؤسسات. سواء كنت تقوم بتجهيز مكتب شركة جديد، أو حرم جامعي مترامي الأطراف، أو مكان فعاليات عالي الكثافة، أو مستودع صناعي، فإننا نصمم حلولاً تضمن التجوال السلس (Seamless roaming)، والإنتاجية العالية، والأمان القوي. نحن نستخدم أجهزة رائدة في الصناعة من Cisco و Ubiquiti و Aruba لبناء هياكل شبكات محلية وواسعة (LAN/WAN) مرنة، وتنفيذ أمان قوي لجدار الحماية (Firewall)، وتوفير مراقبة استباقية للشبكة على مدار الساعة طوال أيام الأسبوع.",
+      "features": [
+        "استطلاعات الموقع اللاسلكية التنبؤية ورسم الخرائط الحرارية (Heatmapping)",
+        "نشر شبكات Wi-Fi عالية الكثافة (للمكاتب، الملاعب، الحرم الجامعي)",
+        "الكابلات الهيكلية (Cat6، والألياف الضوئية)",
+        "إعداد جيل جديد من جدران الحماية (NGFW) وشبكات VPN",
+        "بوابات Wi-Fi للضيوف مع إدارة عرض النطاق الترددي (Bandwidth)",
+        "مراقبة الشبكة والدعم الفني الاستباقي على مدار الساعة طوال أيام الأسبوع"
+      ],
+      "benefits": [
+        "القضاء على 'المناطق الميتة' (Dead Zones) وانقطاع الاتصال",
+        "تعزيز إنتاجية الموظفين من خلال إنترنت عالي السرعة",
+        "حماية بيانات الشركة بأمان على مستوى المؤسسات",
+        "توسيع نطاق شبكتك بسهولة مع نمو عملك",
+        "الحصول على رؤية واضحة حول استخدام الشبكة وحالتها الصحية"
+      ],
+      "content": {
+        "process": [
+          { "title": "استطلاع الموقع والتصميم", "description": "إجراء استطلاعات الترددات اللاسلكية (RF) لتحديد الموضع الأمثل لنقاط الوصول (Access points) ورسم مسارات الكابلات." },
+          { "title": "إعداد البنية التحتية", "description": "سحب الكابلات الهيكلية وتركيب المحولات (Switches) وأجهزة التوجيه (Routers) وجدران الحماية في غرفة الخوادم." },
+          { "title": "النشر اللاسلكي", "description": "تركيب وتكوين نقاط الوصول اللاسلكية للحصول على أقصى تغطية وتجوال سلس." },
+          { "title": "تكوين الأمان", "description": "إعداد الشبكات المحلية الافتراضية (VLANs)، وشبكات VPN، وشبكات الضيوف، وتطبيق قواعد صارمة لجدار الحماية." },
+          { "title": "الاختبار والمراقبة", "description": "التحقق من سرعة نقل البيانات، واختبار أنظمة تجاوز الفشل (Failover)، وتوصيل الشبكة بلوحة معلومات المراقبة الخاصة بنا." }
+        ],
+        "technologies": [
+          "Cisco Meraki / Catalyst",
+          "Ubiquiti UniFi",
+          "Aruba Networks",
+          "Fortinet / Palo Alto Firewalls",
+          "Ekahau (لاستطلاعات الموقع)",
+          "PRTG Network Monitor"
+        ],
+        "faq": [
+          { "question": "لماذا شبكة Wi-Fi الحالية لدينا بطيئة جدًا؟", "answer": "غالبًا ما يكون سبب بطء شبكة Wi-Fi هو سوء وضع نقاط الوصول، أو التداخل (Interference) من الأجهزة الأخرى، أو الأجهزة القديمة، أو التخصيص غير الكافي لعرض النطاق الترددي. نحن نجري استطلاعًا شاملاً للموقع لتحديد هذه الاختناقات وحلها." },
+          { "question": "هل يمكنك فصل حركة مرور الضيوف عن شبكة الشركة الداخلية الخاصة بنا؟", "answer": "بالتأكيد. نقوم بتنفيذ شبكات محلية افتراضية (VLANs) لعزل شبكة Wi-Fi للضيوف تمامًا عن بيانات شركتك الحساسة، مما يضمن أقصى قدر من الأمان والامتثال." }
+        ]
+      },
+      "metaTitle": "حلول شبكات Wi-Fi والشبكات للمؤسسات | تركيب ودعم",
+      "metaDescription": "قم بترقية مكتبك أو الحرم الجامعي بشبكة Wi-Fi على مستوى المؤسسات وحلول شبكات آمنة. نقدم استطلاعات للموقع، وتركيبات Cisco/Ubiquiti، ودعمًا على مدار الساعة."
+    }
+  },
+  "woocommerce-development": {
+    "en": {
+      "name": "WooCommerce Development",
+      "shortDescription": "Custom WooCommerce stores built on WordPress for scalable, flexible e-commerce.",
+      "fullDescription": "WooCommerce turns WordPress into a powerful, fully customizable e-commerce powerhouse. Our WooCommerce Development services are designed for businesses that need more flexibility, control, and ownership than hosted platforms like Shopify can provide. We build bespoke themes, develop custom plugins, and integrate complex ERP/CRM systems to streamline your operations. From selling physical goods with complex shipping rules to managing digital subscriptions and wholesale (B2B) portals, our expert developers optimize your WooCommerce store for speed, security, and maximum conversion rates.",
+      "features": [
+        "Custom WooCommerce Theme Design & Development",
+        "Complex Product Variations & Subscription Management",
+        "ERP, CRM, and POS System Integrations",
+        "Custom Shipping & Payment Gateway Solutions",
+        "B2B Wholesale Portal Development",
+        "Speed Optimization & Security Hardening"
+      ],
+      "benefits": [
+        "Own 100% of Your Store's Code and Data",
+        "Avoid Monthly Subscription Fees for Core E-commerce Functionality",
+        "Customize the Checkout Experience to Increase Conversions",
+        "Seamlessly Integrate with Your Existing WordPress Website",
+        "Scale from a Few Products to Tens of Thousands"
+      ],
+      "content": {
+        "process": [
+          { "title": "E-commerce Strategy", "description": "Analyzing your product catalog, shipping requirements, and desired payment gateways." },
+          { "title": "Design & UI/UX", "description": "Creating wireframes and a high-converting, mobile-responsive custom storefront." },
+          { "title": "Development", "description": "Building the custom theme, configuring WooCommerce, and developing necessary plugins." },
+          { "title": "System Integrations", "description": "Connecting the store to your accounting software, ERP, or fulfillment centers via API." },
+          { "title": "Testing & Launch", "description": "Performing load testing, security audits, and launching the store." }
+        ],
+        "technologies": [
+          "WordPress / WooCommerce",
+          "PHP / MySQL",
+          "JavaScript (React for Headless options)",
+          "Stripe / PayPal / Braintree",
+          "Redis / Memcached (Caching)",
+          "REST API / GraphQL"
+        ],
+        "faq": [
+          { "question": "Why choose WooCommerce over Shopify?", "answer": "WooCommerce offers unparalleled flexibility and data ownership. If you have highly customized product variations, require a unique checkout flow, or want to avoid Shopify's recurring app fees and transaction costs, WooCommerce is the superior choice." },
+          { "question": "Can WooCommerce handle high traffic and large inventories?", "answer": "Yes. While a poorly configured WooCommerce store can be slow, our expert developers use optimized database queries, Redis object caching, and robust cloud hosting architectures to ensure your store handles high traffic and massive catalogs smoothly." }
+        ]
+      },
+      "metaTitle": "Custom WooCommerce Development Agency | Expert E-commerce",
+      "metaDescription": "Build a flexible, scalable e-commerce store with our WooCommerce development services. We specialize in custom themes, B2B portals, and ERP integrations."
+    },
+    "tr": {
+      "name": "WooCommerce Geliştirme",
+      "shortDescription": "Ölçeklenebilir, esnek e-ticaret için WordPress üzerine inşa edilmiş özel WooCommerce mağazaları.",
+      "fullDescription": "WooCommerce, WordPress'i güçlü, tamamen özelleştirilebilir bir e-ticaret merkezine dönüştürür. WooCommerce Geliştirme hizmetlerimiz, Shopify gibi barındırılan (hosted) platformların sağlayabileceğinden daha fazla esneklik, kontrol ve sahiplik gerektiren işletmeler için tasarlanmıştır. Operasyonlarınızı kolaylaştırmak için ısmarlama (bespoke) temalar oluşturuyor, özel eklentiler (plugins) geliştiriyor ve karmaşık ERP/CRM sistemlerini entegre ediyoruz. Karmaşık kargo kurallarına sahip fiziksel ürünler satmaktan dijital abonelikleri ve toptan satış (B2B) portallarını yönetmeye kadar, uzman geliştiricilerimiz WooCommerce mağazanızı hız, güvenlik ve maksimum dönüşüm (conversion) oranları için optimize eder.",
+      "features": [
+        "Özel WooCommerce Tema Tasarımı ve Geliştirmesi",
+        "Karmaşık Ürün Varyasyonları ve Abonelik Yönetimi",
+        "ERP, CRM ve POS Sistemi Entegrasyonları",
+        "Özel Kargo ve Ödeme Geçidi (Gateway) Çözümleri",
+        "B2B Toptan Satış Portalı Geliştirme",
+        "Hız Optimizasyonu ve Güvenlik Güçlendirme"
+      ],
+      "benefits": [
+        "Mağazanızın Kodunun ve Verilerinin %100'üne Sahip Olma",
+        "Temel E-ticaret İşlevleri İçin Aylık Abonelik Ücretlerinden Kaçınma",
+        "Dönüşümleri Artırmak İçin Ödeme (Checkout) Deneyimini Özelleştirme",
+        "Mevcut WordPress Web Sitenizle Sorunsuz Bir Şekilde Entegre Olma",
+        "Birkaç Üründen On Binlerce Ürüne Kadar Ölçeklenme"
+      ],
+      "content": {
+        "process": [
+          { "title": "E-ticaret Stratejisi", "description": "Ürün kataloğunuzu, kargo gereksinimlerinizi ve istediğiniz ödeme ağ geçitlerini (gateways) analiz etme." },
+          { "title": "Tasarım ve UI/UX", "description": "Tel kafesler (wireframes) ve yüksek dönüşüm sağlayan, mobil uyumlu özel bir vitrin oluşturma." },
+          { "title": "Geliştirme", "description": "Özel temayı oluşturma, WooCommerce'i yapılandırma ve gerekli eklentileri (plugins) geliştirme." },
+          { "title": "Sistem Entegrasyonları", "description": "Mağazayı API aracılığıyla muhasebe yazılımınıza, ERP'nize veya lojistik (fulfillment) merkezlerinize bağlama." },
+          { "title": "Test ve Lansman", "description": "Yük testleri (load testing), güvenlik denetimleri gerçekleştirme ve mağazayı başlatma." }
+        ],
+        "technologies": [
+          "WordPress / WooCommerce",
+          "PHP / MySQL",
+          "JavaScript (Başsız - Headless - seçenekler için React)",
+          "Stripe / PayPal / iyzico",
+          "Redis / Memcached (Önbelleğe Alma - Caching)",
+          "REST API / GraphQL"
+        ],
+        "faq": [
+          { "question": "Neden Shopify yerine WooCommerce'i seçmeliyim?", "answer": "WooCommerce, benzersiz esneklik ve veri sahipliği sunar. Son derece özelleştirilmiş ürün varyasyonlarınız varsa, benzersiz bir ödeme akışı gerekiyorsa veya Shopify'ın yinelenen uygulama ücretlerinden ve işlem maliyetlerinden kaçınmak istiyorsanız, WooCommerce üstün bir seçimdir." },
+          { "question": "WooCommerce yüksek trafiği ve büyük envanterleri kaldırabilir mi?", "answer": "Evet. Kötü yapılandırılmış bir WooCommerce mağazası yavaş olabilse de, uzman geliştiricilerimiz mağazanızın yüksek trafiği ve devasa katalogları sorunsuz bir şekilde idare etmesini sağlamak için optimize edilmiş veritabanı sorguları, Redis nesne önbelleğe alma (object caching) ve sağlam bulut barındırma (hosting) mimarileri kullanır." }
+        ]
+      },
+      "metaTitle": "Özel WooCommerce Geliştirme Ajansı | E-ticaret Uzmanları",
+      "metaDescription": "WooCommerce geliştirme hizmetlerimizle esnek, ölçeklenebilir bir e-ticaret mağazası oluşturun. Özel temalar, B2B portalları ve ERP entegrasyonlarında uzmanız."
+    },
+    "de": {
+      "name": "WooCommerce-Entwicklung",
+      "shortDescription": "Maßgeschneiderte WooCommerce-Shops auf WordPress für skalierbaren, flexiblen E-Commerce.",
+      "fullDescription": "WooCommerce verwandelt WordPress in ein leistungsstarkes, vollständig anpassbares E-Commerce-Kraftpaket. Unsere WooCommerce-Entwicklungsdienste richten sich an Unternehmen, die mehr Flexibilität, Kontrolle und Dateneigentum benötigen, als gehostete Plattformen wie Shopify bieten können. Wir erstellen maßgeschneiderte Themes, entwickeln individuelle Plugins und integrieren komplexe ERP/CRM-Systeme, um Ihre Abläufe zu optimieren. Vom Verkauf physischer Güter mit komplexen Versandregeln bis hin zur Verwaltung digitaler Abonnements und B2B-Großhandelsportalen optimieren unsere Experten Ihren Shop für maximale Geschwindigkeit, Sicherheit und Conversion-Raten.",
+      "features": [
+        "Individuelles WooCommerce Theme-Design & Entwicklung",
+        "Komplexe Produktvariationen & Abo-Verwaltung (Subscriptions)",
+        "Integration von ERP-, CRM- und POS-Systemen",
+        "Spezifische Versand- & Zahlungs-Gateway-Lösungen",
+        "Entwicklung von B2B-Großhandelsportalen",
+        "Speed-Optimierung & Security-Hardening"
+      ],
+      "benefits": [
+        "100% Eigentum an Code und Daten Ihres Shops",
+        "Vermeidung monatlicher Abo-Gebühren für Kernfunktionen",
+        "Optimierung des Checkout-Prozesses zur Steigerung der Conversions",
+        "Nahtlose Integration in Ihre bestehende WordPress-Website",
+        "Skalierbar von wenigen Produkten bis zu zehntausenden Artikeln"
+      ],
+      "content": {
+        "process": [
+          { "title": "E-Commerce Strategie", "description": "Analyse von Produktkatalog, Versandlogistik und Zahlungsanbietern." },
+          { "title": "Design & UI/UX", "description": "Gestaltung eines konversionsstarken, mobil-optimierten Storefronts." },
+          { "title": "Entwicklung", "description": "Programmierung des Custom Themes, Setup von WooCommerce und Plugin-Entwicklung." },
+          { "title": "Systemintegration", "description": "Anbindung per API an Buchhaltungssoftware, ERP (z.B. SAP, Microsoft Dynamics) oder Fulfillment-Dienstleister." },
+          { "title": "Testing & Launch", "description": "Lasttests, Sicherheitsaudits und reibungsloser Go-Live." }
+        ],
+        "technologies": [
+          "WordPress / WooCommerce",
+          "PHP / MySQL",
+          "JavaScript (React für Headless-Optionen)",
+          "Stripe / PayPal / Mollie",
+          "Redis / Memcached (Caching)",
+          "REST API / GraphQL"
+        ],
+        "faq": [
+          { "question": "Warum sollte man WooCommerce gegenüber Shopify bevorzugen?", "answer": "WooCommerce bietet grenzenlose Flexibilität und volle Datenhoheit. Wenn Sie komplexe Produktkonfigurationen haben, einen individuellen Checkout benötigen oder die monatlichen App-Gebühren und Transaktionskosten von Shopify vermeiden möchten, ist WooCommerce die bessere Wahl." },
+          { "question": "Kann WooCommerce hohen Traffic und große Inventare bewältigen?", "answer": "Ja. Ein schlecht konfiguriertes WooCommerce kann langsam sein, aber unsere Experten nutzen optimierte Datenbankabfragen, serverseitiges Caching (Redis) und skalierbare Cloud-Hosting-Architekturen, damit Ihr Shop auch bei Traffic-Spitzen und riesigen Katalogen pfeilschnell bleibt." }
+        ]
+      },
+      "metaTitle": "WooCommerce Agentur | Custom E-Commerce & B2B Shops",
+      "metaDescription": "Bauen Sie flexible & skalierbare Onlineshops mit unserer WooCommerce-Entwicklung. Spezialisiert auf Custom Themes, B2B-Portale und ERP-Integrationen."
+    },
+    "ur": {
+      "name": "WooCommerce ڈیولپمنٹ",
+      "shortDescription": "توسیع پذیر، لچکدار ای کامرس کے لیے ورڈپریس پر حسب ضرورت WooCommerce اسٹورز بنائے گئے ہیں۔",
+      "fullDescription": "WooCommerce WordPress کو ایک طاقتور، مکمل طور پر مرضی کے مطابق ای کامرس پاور ہاؤس میں بدل دیتا ہے۔ ہماری WooCommerce ڈیولپمنٹ سروسز ان کاروباروں کے لیے ڈیزائن کی گئی ہیں جنہیں شاپ فائی جیسے ہوسٹڈ پلیٹ فارمز سے زیادہ لچک، کنٹرول اور ملکیت کی ضرورت ہے۔ ہم آپ کے کاموں کو ہموار کرنے کے لیے بیسپوک تھیمز بناتے ہیں، کسٹم پلگ ان تیار کرتے ہیں، اور پیچیدہ ERP/CRM سسٹمز کو مربوط کرتے ہیں۔ ڈیجیٹل سبسکرپشنز اور ہول سیل (B2B) پورٹلز کے انتظام تک فزیکل سامان کی پیچیدہ شپنگ رولز کے ساتھ فروخت کرنے سے لے کر، ہمارے ماہر ڈیولپرز آپ کے WooCommerce اسٹور کو رفتار، سیکیورٹی اور زیادہ سے زیادہ تبادلوں کی شرحوں کے لیے بہتر بناتے ہیں۔",
+      "features": [
+        "حسب ضرورت WooCommerce تھیم ڈیزائن اور ڈیولپمنٹ",
+        "مصنوعات کی پیچیدہ تغیرات اور رکنیت کا انتظام",
+        "ERP، CRM، اور POS سسٹم انٹیگریشنز",
+        "اپنی مرضی کے مطابق شپنگ اور ادائیگی کے گیٹ وے کے حل",
+        "B2B ہول سیل پورٹل کی ترقی",
+        "رفتار کی اصلاح اور سیکورٹی سخت کرنا"
+      ],
+      "benefits": [
+        "اپنے اسٹور کے 100% کوڈ اور ڈیٹا کے مالک ہیں۔",
+        "بنیادی ای کامرس کی فعالیت کے لیے ماہانہ سبسکرپشن فیس سے بچیں۔",
+        "تبادلوں کو بڑھانے کے لیے چیک آؤٹ کے تجربے کو حسب ضرورت بنائیں",
+        "اپنی موجودہ ورڈپریس ویب سائٹ کے ساتھ بغیر کسی رکاوٹ کے جڑیں۔",
+        "چند مصنوعات سے دسیوں ہزار تک اسکیل کریں۔"
+      ],
+      "content": {
+        "process": [
+          { "title": "ای کامرس کی حکمت عملی", "description": "آپ کے پروڈکٹ کیٹلاگ، شپنگ کی ضروریات، اور مطلوبہ ادائیگی کے گیٹ ویز کا تجزیہ کرنا۔" },
+          { "title": "ڈیزائن اور UI/UX", "description": "وائر فریمز بنانا اور ایک اعلی کنورٹنگ، موبائل ریسپانسیو کسٹم اسٹور فرنٹ۔" },
+          { "title": "ترقی", "description": "اپنی مرضی کے مطابق تھیم بنانا، WooCommerce کو ترتیب دینا، اور ضروری پلگ ان تیار کرنا۔" },
+          { "title": "سسٹم انٹیگریشنز", "description": "اسٹور کو آپ کے اکاؤنٹنگ سافٹ ویئر، ERP، یا API کے ذریعے تکمیلی مراکز سے جوڑنا۔" },
+          { "title": "جانچ اور لانچ", "description": "لوڈ ٹیسٹنگ، سیکیورٹی آڈٹ کرنا، اور اسٹور کا آغاز کرنا۔" }
+        ],
+        "technologies": [
+          "WordPress / WooCommerce",
+          "PHP / MySQL",
+          "JavaScript (React for Headless options)",
+          "Stripe / PayPal / Braintree",
+          "Redis / Memcached (Caching)",
+          "REST API / GraphQL"
+        ],
+        "faq": [
+          { "question": "Shopify پر WooCommerce کا انتخاب کیوں کریں؟", "answer": "WooCommerce بے مثال لچک اور ڈیٹا کی ملکیت پیش کرتا ہے۔ اگر آپ کے پاس پروڈکٹ کی مختلف حالتیں ہیں، تو ایک منفرد چیک آؤٹ فلو کی ضرورت ہے، یا Shopify کی आवर्ती ایپ فیس اور لین دین کے اخراجات سے بچنا چاہتے ہیں، تو WooCommerce بہترین انتخاب ہے۔" },
+          { "question": "کیا WooCommerce ہائی ٹریفک اور بڑی انوینٹریز کو سنبھال سکتا ہے؟", "answer": "جی ہاں. اگرچہ خراب کنفیگرڈ WooCommerce اسٹور سست ہو سکتا ہے، لیکن ہمارے ماہر ڈویلپرز اس بات کو یقینی بنانے کے لیے بہتر ڈیٹا بیس کے سوالات، ریڈیس آبجیکٹ کیشنگ، اور کلاؤڈ ہوسٹنگ کے مضبوط فن تعمیرات کا استعمال کرتے ہیں تاکہ آپ کا اسٹور ٹریفک کی بھاری ٹریفک اور بڑے کیٹلاگ کو آسانی سے سنبھال لے۔" }
+        ]
+      },
+      "metaTitle": "حسب ضرورت WooCommerce ڈیولپمنٹ ایجنسی | ماہر ای کامرس",
+      "metaDescription": "ہماری WooCommerce ڈیولپمنٹ سروسز کے ساتھ ایک لچکدار، قابل توسیع ای کامرس اسٹور بنائیں۔ ہم اپنی مرضی کے تھیمز، B2B پورٹلز، اور ERP انٹیگریشنز میں مہارت رکھتے ہیں۔"
+    },
+    "ar": {
+      "name": "تطوير ووكومرس (WooCommerce)",
+      "shortDescription": "متاجر WooCommerce مخصصة مبنية على ووردبريس لتجارة إلكترونية مرنة وقابلة للتطوير.",
+      "fullDescription": "يُحوّل WooCommerce منصة ووردبريس إلى محرك تجارة إلكترونية قوي وقابل للتخصيص بالكامل. تم تصميم خدمات تطوير WooCommerce لدينا للشركات التي تحتاج إلى قدر أكبر من المرونة والتحكم والملكية مما يمكن أن توفره المنصات المستضافة مثل Shopify. نقوم ببناء قوالب (Themes) مخصصة، وتطوير إضافات (Plugins) مخصصة، ودمج أنظمة تخطيط موارد المؤسسات (ERP) وإدارة علاقات العملاء (CRM) المعقدة لتبسيط عملياتك. بدءًا من بيع السلع المادية بقواعد شحن معقدة إلى إدارة الاشتراكات الرقمية وبوابات البيع بالجملة (B2B)، يقوم مطورونا الخبراء بتحسين متجر WooCommerce الخاص بك من أجل السرعة، والأمان، وزيادة معدلات التحويل إلى أقصى حد.",
+      "features": [
+        "تصميم وتطوير قوالب WooCommerce المخصصة",
+        "إدارة متغيرات المنتجات (Product Variations) المعقدة والاشتراكات",
+        "تكامل أنظمة ERP و CRM ونقاط البيع (POS)",
+        "حلول مخصصة للشحن وبوابات الدفع",
+        "تطوير بوابات البيع بالجملة للشركات (B2B)",
+        "تحسين السرعة وتعزيز إجراءات الأمان"
+      ],
+      "benefits": [
+        "امتلاك الكود البرمجي لمتجرك وبياناته بنسبة 100٪",
+        "تجنب رسوم الاشتراك الشهرية لوظائف التجارة الإلكترونية الأساسية",
+        "تخصيص تجربة الدفع (Checkout) لزيادة التحويلات والمبيعات",
+        "التكامل بسلاسة مع موقع ووردبريس الحالي الخاص بك",
+        "التوسع بسهولة من بضعة منتجات إلى عشرات الآلاف"
+      ],
+      "content": {
+        "process": [
+          { "title": "استراتيجية التجارة الإلكترونية", "description": "تحليل كتالوج المنتجات، ومتطلبات الشحن، وبوابات الدفع المطلوبة." },
+          { "title": "التصميم وتجربة المستخدم (UI/UX)", "description": "إنشاء نماذج مبدئية (Wireframes) وواجهة متجر مخصصة ومتجاوبة مع الأجهزة المحمولة ومصممة لزيادة التحويلات." },
+          { "title": "التطوير (Development)", "description": "بناء القالب المخصص، وتكوين إعدادات WooCommerce، وتطوير الإضافات اللازمة." },
+          { "title": "تكامل الأنظمة", "description": "ربط المتجر ببرامج المحاسبة، أو أنظمة ERP، أو مراكز تلبية الطلبات (Fulfillment) عبر واجهة برمجة التطبيقات (API)." },
+          { "title": "الاختبار والإطلاق", "description": "إجراء اختبارات التحميل، والتدقيقات الأمنية، وإطلاق المتجر رسميًا." }
+        ],
+        "technologies": [
+          "WordPress / WooCommerce",
+          "PHP / MySQL",
+          "JavaScript (React لخيارات المتاجر مقطوعة الرأس - Headless)",
+          "Stripe / PayPal / Braintree",
+          "Redis / Memcached (للتخزين المؤقت - Caching)",
+          "REST API / GraphQL"
+        ],
+        "faq": [
+          { "question": "لماذا أختار WooCommerce بدلاً من Shopify؟", "answer": "يوفر WooCommerce مرونة لا مثيل لها وملكية كاملة للبيانات. إذا كان لديك متغيرات منتجات مخصصة للغاية، أو تتطلب عملية دفع (Checkout) فريدة، أو ترغب في تجنب رسوم تطبيقات Shopify المتكررة وتكاليف المعاملات، فإن WooCommerce هو الخيار الأفضل." },
+          { "question": "هل يمكن لـ WooCommerce التعامل مع حركة المرور العالية والمخزونات الكبيرة؟", "answer": "نعم. في حين أن متجر WooCommerce الذي تم تكوينه بشكل سيئ يمكن أن يكون بطيئًا، يستخدم مطورونا الخبراء استعلامات قاعدة بيانات محسّنة، والتخزين المؤقت للكائنات (Redis Object Caching)، وبنيات استضافة سحابية قوية لضمان تعامل متجرك مع حركة المرور العالية والكتالوجات الضخمة بسلاسة." }
+        ]
+      },
+      "metaTitle": "وكالة تطوير WooCommerce مخصصة | خبراء التجارة الإلكترونية",
+      "metaDescription": "أنشئ متجرًا إلكترونيًا مرنًا وقابلاً للتطوير من خلال خدمات تطوير WooCommerce. نحن متخصصون في القوالب المخصصة، وبوابات B2B، وتكامل أنظمة ERP."
+    }
+  },
+  "wordpress-development": {
+    "en": {
+      "name": "WordPress Development",
+      "shortDescription": "Custom, highly optimized WordPress websites built for performance and SEO.",
+      "fullDescription": "WordPress powers over 40% of the web, but true enterprise-grade WordPress requires more than just installing a pre-made theme. We specialize in custom WordPress Development from the ground up. We create bespoke themes and plugins tailored specifically to your brand's unique design and business logic, avoiding the bloat and security vulnerabilities associated with commercial templates. Our focus is on crafting easy-to-use Gutenberg block-based editing experiences, ensuring blazing-fast load times, and building highly secure, SEO-optimized architectures that marketing teams love to use.",
+      "features": [
+        "Custom WordPress Theme Development (No Pre-made Templates)",
+        "Custom Plugin Development & API Integrations",
+        "Advanced Custom Fields (ACF) & Custom Post Types",
+        "Gutenberg Block Editor Customization",
+        "Website Migration & Version Upgrades",
+        "Performance Optimization (Core Web Vitals) & Security Audits"
+      ],
+      "benefits": [
+        "Stand Out with a 100% Unique, Brand-Aligned Design",
+        "Improve SEO Rankings with Lightweight, Fast-Loading Code",
+        "Empower Your Team to Easily Manage Content Without Coding",
+        "Reduce Vulnerabilities by Avoiding Bloated Third-Party Plugins",
+        "Ensure Scalability to Handle Increasing Content and Traffic"
+      ],
+      "content": {
+        "process": [
+          { "title": "Discovery & Architecture", "description": "Defining the site map, content types (CPTs), and necessary functionalities." },
+          { "title": "Custom Design (UI/UX)", "description": "Creating bespoke designs in Figma tailored to your target audience." },
+          { "title": "Theme Development", "description": "Coding the custom theme from scratch using modern HTML/CSS/JS and PHP." },
+          { "title": "Backend Setup", "description": "Configuring the WordPress dashboard, creating custom Gutenberg blocks, and ACF fields." },
+          { "title": "QA & Migration", "description": "Testing across all devices, optimizing speed, and migrating data from your old site." }
+        ],
+        "technologies": [
+          "WordPress CMS",
+          "PHP 8+ / MySQL",
+          "HTML5 / CSS3 (Sass/Tailwind)",
+          "JavaScript (Vanilla, React for Blocks)",
+          "Advanced Custom Fields (ACF Pro)",
+          "WP REST API"
+        ],
+        "faq": [
+          { "question": "Do you use Elementor or Divi?", "answer": "While we can support existing sites using page builders, for new projects, we strongly prefer building custom Gutenberg blocks or using Advanced Custom Fields (ACF). This approach results in significantly cleaner code, faster load times, and a more robust website that doesn't break during updates." },
+          { "question": "Can you migrate my existing website to WordPress?", "answer": "Yes. We have extensive experience migrating websites from proprietary platforms (like Wix or Squarespace), Drupal, Joomla, or older, outdated WordPress setups into a modern, custom WordPress architecture without losing SEO equity." }
+        ]
+      },
+      "metaTitle": "Custom WordPress Development Services | Expert Agency",
+      "metaDescription": "Get a blazing-fast, secure, and custom-built WordPress website. We specialize in bespoke theme development, custom plugins, and Gutenberg editor optimization."
+    },
+    "tr": {
+      "name": "WordPress Geliştirme",
+      "shortDescription": "Performans ve SEO için oluşturulmuş, özel, son derece optimize edilmiş WordPress web siteleri.",
+      "fullDescription": "WordPress, webin %40'ından fazlasına güç veriyor, ancak gerçek kurumsal düzeyde WordPress, sadece hazır bir tema kurmaktan daha fazlasını gerektirir. Sıfırdan özel WordPress Geliştirme konusunda uzmanız. Ticari şablonlarla ilişkili şişkinlik (bloat) ve güvenlik açıklarından kaçınarak, markanızın benzersiz tasarımına ve iş mantığına özel ısmarlama temalar ve eklentiler (plugins) oluşturuyoruz. Odak noktamız, kullanımı kolay Gutenberg blok tabanlı düzenleme deneyimleri oluşturmak, şimşek hızında yükleme süreleri sağlamak ve pazarlama ekiplerinin kullanmayı sevdiği son derece güvenli, SEO için optimize edilmiş mimariler inşa etmektir.",
+      "features": [
+        "Özel WordPress Tema Geliştirme (Hazır Şablon Yok)",
+        "Özel Eklenti Geliştirme ve API Entegrasyonları",
+        "Gelişmiş Özel Alanlar (ACF) ve Özel Yazı Türleri (CPT)",
+        "Gutenberg Blok Düzenleyici Özelleştirmesi",
+        "Web Sitesi Taşıma (Migration) ve Sürüm Yükseltmeleri",
+        "Performans Optimizasyonu (Önemli Web Verileri) ve Güvenlik Denetimleri"
+      ],
+      "benefits": [
+        "%100 Benzersiz, Markaya Uygun Tasarımla Öne Çıkma",
+        "Hafif, Hızlı Yüklenen Kodla SEO Sıralamalarını İyileştirme",
+        "Ekibinizi Kodlama Yapmadan İçeriği Kolayca Yönetmesi İçin Güçlendirme",
+        "Şişirilmiş Üçüncü Taraf Eklentilerden Kaçınarak Güvenlik Açıklarını Azaltma",
+        "Artan İçerik ve Trafiği Kaldırmak İçin Ölçeklenebilirlik Sağlama"
+      ],
+      "content": {
+        "process": [
+          { "title": "Keşif ve Mimari", "description": "Site haritasını, içerik türlerini (CPT'ler) ve gerekli işlevleri tanımlama." },
+          { "title": "Özel Tasarım (UI/UX)", "description": "Hedef kitlenize özel olarak Figma'da ısmarlama tasarımlar oluşturma." },
+          { "title": "Tema Geliştirme", "description": "Modern HTML/CSS/JS ve PHP kullanarak özel temayı sıfırdan kodlama." },
+          { "title": "Arka Uç (Backend) Kurulumu", "description": "WordPress kontrol panelini yapılandırma, özel Gutenberg blokları ve ACF alanları oluşturma." },
+          { "title": "QA ve Taşıma (Migration)", "description": "Tüm cihazlarda test etme, hızı optimize etme ve eski sitenizdeki verileri taşıma." }
+        ],
+        "technologies": [
+          "WordPress CMS",
+          "PHP 8+ / MySQL",
+          "HTML5 / CSS3 (Sass/Tailwind)",
+          "JavaScript (Vanilla, Bloklar için React)",
+          "Gelişmiş Özel Alanlar (ACF Pro)",
+          "WP REST API"
+        ],
+        "faq": [
+          { "question": "Elementor veya Divi kullanıyor musunuz?", "answer": "Sayfa oluşturucuları (page builders) kullanan mevcut siteleri destekleyebilsek de, yeni projeler için özel Gutenberg blokları oluşturmayı veya Gelişmiş Özel Alanlar (ACF) kullanmayı şiddetle tercih ediyoruz. Bu yaklaşım, önemli ölçüde daha temiz kod, daha hızlı yükleme süreleri ve güncellemeler sırasında bozulmayan çok daha sağlam bir web sitesi ile sonuçlanır." },
+          { "question": "Mevcut web sitemi WordPress'e taşıyabilir misiniz?", "answer": "Evet. Tescilli platformlardan (Wix veya Squarespace gibi), Drupal, Joomla veya eski, güncelliğini yitirmiş WordPress kurulumlarından SEO değerini kaybetmeden modern, özel bir WordPress mimarisine web sitelerini taşıma konusunda kapsamlı deneyime sahibiz." }
+        ]
+      },
+      "metaTitle": "Özel WordPress Geliştirme Hizmetleri | Uzman Ajans",
+      "metaDescription": "Şimşek hızında, güvenli ve özel yapım bir WordPress web sitesine sahip olun. Ismarlama tema geliştirme, özel eklentiler ve Gutenberg optimizasyonunda uzmanız."
+    },
+    "de": {
+      "name": "WordPress-Entwicklung",
+      "shortDescription": "Maßgeschneiderte, hochoptimierte WordPress-Websites für Performance und SEO.",
+      "fullDescription": "WordPress betreibt über 40 % des Webs, aber echtes Enterprise-Grade WordPress erfordert mehr als nur die Installation eines vorgefertigten Themes. Wir sind spezialisiert auf individuelle WordPress-Entwicklung von Grund auf. Wir programmieren maßgeschneiderte Themes und Plugins, die exakt auf das Design und die Geschäftslogik Ihrer Marke zugeschnitten sind. So vermeiden wir den 'Bloat' (aufgeblähten Code) und die Sicherheitslücken, die oft mit kommerziellen Templates einhergehen. Unser Fokus liegt auf der Schaffung benutzerfreundlicher, Gutenberg-Block-basierter Editing-Erlebnisse, extrem schnellen Ladezeiten und hochsicheren, SEO-optimierten Architekturen, die Ihr Marketingteam lieben wird.",
+      "features": [
+        "Individuelle Theme-Entwicklung (keine vorgefertigten Templates)",
+        "Custom Plugin-Entwicklung & API-Integrationen",
+        "Advanced Custom Fields (ACF) & Custom Post Types (CPT)",
+        "Anpassung & Entwicklung eigener Gutenberg-Blöcke",
+        "Website-Migrationen & Versions-Upgrades",
+        "Performance-Optimierung (Core Web Vitals) & Security Audits"
+      ],
+      "benefits": [
+        "Herausstechen durch ein 100 % einzigartiges, markengerechtes Design",
+        "Bessere SEO-Rankings durch schlanken, schnell ladenden Code",
+        "Einfache Inhaltsverwaltung für Ihr Team ohne Programmierkenntnisse",
+        "Minimierung von Sicherheitsrisiken durch Verzicht auf unnötige Plugins",
+        "Zukunftssicherheit und Skalierbarkeit für wachsenden Traffic"
+      ],
+      "content": {
+        "process": [
+          { "title": "Discovery & Architektur", "description": "Definition der Sitemap, Inhaltstypen (CPTs) und der benötigten Funktionalitäten." },
+          { "title": "Custom Design (UI/UX)", "description": "Erstellung maßgeschneiderter Figma-Designs, abgestimmt auf Ihre Zielgruppe." },
+          { "title": "Theme-Entwicklung", "description": "Programmierung des Custom Themes von Grund auf mit HTML/CSS/JS und PHP." },
+          { "title": "Backend-Setup", "description": "Konfiguration des Dashboards und Erstellung eigener Gutenberg-Blöcke/ACF-Felder." },
+          { "title": "QA & Migration", "description": "Cross-Device-Testing, Pagespeed-Optimierung und Datenmigration von der alten Site." }
+        ],
+        "technologies": [
+          "WordPress CMS",
+          "PHP 8+ / MySQL",
+          "HTML5 / CSS3 (Sass/Tailwind)",
+          "JavaScript (Vanilla, React für Gutenberg-Blöcke)",
+          "Advanced Custom Fields (ACF Pro)",
+          "WP REST API"
+        ],
+        "faq": [
+          { "question": "Nutzen Sie Page Builder wie Elementor oder Divi?", "answer": "Obwohl wir bestehende Sites mit Page Buildern betreuen können, setzen wir bei neuen Projekten auf eigene Gutenberg-Blöcke oder ACF. Das führt zu deutlich saubererem Code, schnelleren Ladezeiten und einer viel stabileren Website, die bei Updates nicht kaputtgeht." },
+          { "question": "Können Sie meine bestehende Website zu WordPress migrieren?", "answer": "Ja. Wir haben umfangreiche Erfahrung in der Migration von proprietären Systemen (wie Wix), Typo3, Drupal oder veralteten WP-Installationen auf eine moderne Custom-WordPress-Architektur – ohne Verlust Ihrer SEO-Rankings." }
+        ]
+      },
+      "metaTitle": "WordPress Agentur | Custom Theme & Plugin Entwicklung",
+      "metaDescription": "Erhalten Sie eine rasante, sichere & maßgeschneiderte WordPress-Website. Spezialisiert auf Custom Theme Entwicklung, Gutenberg-Blöcke & High-End Performance."
+    },
+    "ur": {
+      "name": "ورڈپریس ڈیولپمنٹ",
+      "shortDescription": "حسب ضرورت، انتہائی آپٹمائزڈ ورڈپریس ویب سائٹس جو کارکردگی اور SEO کے لیے بنائی گئی ہیں۔",
+      "fullDescription": "WordPress 40% سے زیادہ ویب کو طاقت دیتا ہے، لیکن صحیح انٹرپرائز-گریڈ ورڈپریس کو صرف پہلے سے بنی تھیم انسٹال کرنے سے زیادہ کی ضرورت ہے۔ ہم گراؤنڈ اپ سے اپنی مرضی کے مطابق ورڈپریس ڈویلپمنٹ میں مہارت رکھتے ہیں۔ ہم کمرشل ٹیمپلیٹس سے منسلک خطرات اور حفاظتی خطرات سے بچتے ہوئے، آپ کے برانڈ کے منفرد ڈیزائن اور کاروباری منطق کے لیے خاص طور پر تیار کردہ مخصوص تھیمز اور پلگ انز بناتے ہیں۔ ہماری توجہ استعمال میں آسان Gutenberg بلاک پر مبنی ترمیمی تجربات تیار کرنے، تیز رفتار لوڈ کے اوقات کو یقینی بنانے، اور انتہائی محفوظ، SEO-آپٹمائزڈ آرکیٹیکچر بنانے پر ہے جسے مارکیٹنگ ٹیمیں استعمال کرنا پسند کرتی ہیں۔",
+      "features": [
+        "اپنی مرضی کے مطابق ورڈپریس تھیم ڈیولپمنٹ (پہلے سے بنے ہوئے ٹیمپلیٹس نہیں)",
+        "اپنی مرضی کے پلگ ان کی ترقی اور API انٹیگریشنز",
+        "اعلی درجے کی حسب ضرورت فیلڈز (ACF) اور اپنی مرضی کے مطابق پوسٹ کی اقسام",
+        "گوٹنبرگ بلاک ایڈیٹر کی تخصیص",
+        "ویب سائٹ کی منتقلی اور ورژن اپ گریڈ",
+        "کارکردگی کی اصلاح (کور ویب وائٹلز) اور سیکیورٹی آڈٹ"
+      ],
+      "benefits": [
+        "100% منفرد، برانڈ سے منسلک ڈیزائن کے ساتھ نمایاں ہوں",
+        "ہلکے وزن والے، تیزی سے لوڈ ہونے والے کوڈ کے ساتھ SEO کی درجہ بندی کو بہتر بنائیں",
+        "کوڈنگ کے بغیر آسانی سے مواد کا انتظام کرنے کے لیے اپنی ٹیم کو بااختیار بنائیں",
+        "پھولے ہوئے فریق ثالث کے پلگ انز سے گریز کرکے خطرات کو کم کریں۔",
+        "بڑھتے ہوئے مواد اور ٹریفک کو سنبھالنے کے لیے اسکیل ایبلٹی کو یقینی بنائیں"
+      ],
+      "content": {
+        "process": [
+          { "title": "دریافت اور فن تعمیر", "description": "سائٹ کے نقشے، مواد کی اقسام (CPTs)، اور ضروری افعال کی وضاحت کرنا۔" },
+          { "title": "اپنی مرضی کے مطابق ڈیزائن (UI/UX)", "description": "آپ کے ہدف کے سامعین کے مطابق فگما میں مخصوص ڈیزائن بنانا۔" },
+          { "title": "تھیم ڈیولپمنٹ", "description": "جدید HTML/CSS/JS اور PHP کا استعمال کرتے ہوئے کسٹم تھیم کو شروع سے کوڈ کرنا۔" },
+          { "title": "بیک اینڈ سیٹ اپ", "description": "ورڈپریس ڈیش بورڈ کو ترتیب دینا، کسٹم گوٹنبرگ بلاکس بنانا، اور ACF فیلڈز۔" },
+          { "title": "QA اور ہجرت", "description": "تمام آلات پر جانچ کرنا، رفتار کو بہتر بنانا، اور اپنی پرانی سائٹ سے ڈیٹا منتقل کرنا۔" }
+        ],
+        "technologies": [
+          "WordPress CMS",
+          "PHP 8+ / MySQL",
+          "HTML5 / CSS3 (Sass/Tailwind)",
+          "JavaScript (Vanilla, React for Blocks)",
+          "Advanced Custom Fields (ACF Pro)",
+          "WP REST API"
+        ],
+        "faq": [
+          { "question": "کیا آپ ایلیمینٹر یا ڈیوی استعمال کرتے ہیں؟", "answer": "اگرچہ ہم پیج بلڈرز کا استعمال کرتے ہوئے موجودہ سائٹس کو سپورٹ کر سکتے ہیں، لیکن نئے پراجیکٹس کے لیے ہم کسٹم گوٹنبرگ بلاکس بنانے یا ایڈوانسڈ کسٹم فیلڈز (ACF) کے استعمال کو سختی سے ترجیح دیتے ہیں۔ اس نقطہ نظر کا نتیجہ نمایاں طور پر صاف ستھرا کوڈ، تیزی سے لوڈ کے اوقات، اور ایک زیادہ مضبوط ویب سائٹ کے طور پر سامنے آتا ہے جو اپ ڈیٹس کے دوران نہیں ٹوٹتی ہے۔" },
+          { "question": "کیا آپ میری موجودہ ویب سائٹ کو ورڈپریس پر منتقل کر سکتے ہیں؟", "answer": "جی ہاں. ہمارے پاس ملکیتی پلیٹ فارمز (جیسے وِکس یا اسکوائر اسپیس)، ڈروپل، جملہ، یا پرانے، پرانے ورڈپریس سیٹ اپس سے SEO کی ایکویٹی کو کھوئے بغیر ایک جدید، اپنی مرضی کے مطابق ورڈپریس آرکیٹیکچر میں ویب سائٹس کو منتقل کرنے کا وسیع تجربہ ہے۔" }
+        ]
+      },
+      "metaTitle": "اپنی مرضی کے مطابق ورڈپریس ترقیاتی خدمات | ماہر ایجنسی",
+      "metaDescription": "ایک تیز رفتار، محفوظ، اور حسب ضرورت ورڈپریس ویب سائٹ حاصل کریں۔ ہم حسب ضرورت تھیم ڈیولپمنٹ، کسٹم پلگ انز، اور گوٹنبرگ ایڈیٹر کی اصلاح میں مہارت رکھتے ہیں۔"
+    },
+    "ar": {
+      "name": "تطوير ووردبريس (WordPress)",
+      "shortDescription": "مواقع ووردبريس مخصصة ومحسنة للغاية مبنية للأداء وتحسين محركات البحث (SEO).",
+      "fullDescription": "يُشغل ووردبريس أكثر من 40٪ من الويب، ولكن ووردبريس الحقيقي على مستوى المؤسسات يتطلب أكثر من مجرد تثبيت قالب (Theme) جاهز. نحن متخصصون في تطوير ووردبريس المخصص من الصفر. نقوم بإنشاء قوالب وإضافات (Plugins) مخصصة لتلائم التصميم الفريد لعلامتك التجارية ومنطق العمل الخاص بك، متجنبين بذلك التضخم (Bloat) والثغرات الأمنية المرتبطة بالقوالب التجارية. ينصب تركيزنا على صياغة تجارب تحرير سهلة الاستخدام تعتمد على محرر كتل جوتنبرج (Gutenberg)، وضمان أوقات تحميل فائقة السرعة، وبناء هياكل آمنة للغاية ومحسّنة لـ SEO تحب فرق التسويق استخدامها.",
+      "features": [
+        "تطوير قوالب ووردبريس مخصصة (لا نستخدم قوالب جاهزة)",
+        "تطوير إضافات (Plugins) مخصصة وتكامل واجهات برمجة التطبيقات (API)",
+        "الحقول المخصصة المتقدمة (ACF) وأنواع المنشورات المخصصة (CPT)",
+        "تخصيص محرر الكتل جوتنبرج (Gutenberg)",
+        "نقل مواقع الويب (Migration) وترقيات الإصدار",
+        "تحسين الأداء (مؤشرات الويب الحيوية - Core Web Vitals) والتدقيقات الأمنية"
+      ],
+      "benefits": [
+        "التميز بتصميم فريد بنسبة 100٪ ومتوافق مع علامتك التجارية",
+        "تحسين تصنيفات SEO من خلال كود برمجي خفيف وسريع التحميل",
+        "تمكين فريقك من إدارة المحتوى بسهولة دون الحاجة إلى خبرة برمجية",
+        "تقليل نقاط الضعف الأمنية عن طريق تجنب الإضافات المتضخمة لجهات خارجية",
+        "ضمان قابلية التوسع للتعامل مع المحتوى وحركة المرور المتزايدة"
+      ],
+      "content": {
+        "process": [
+          { "title": "الاكتشاف وهيكلة الموقع", "description": "تحديد خريطة الموقع، وأنواع المحتوى (CPTs)، والوظائف الضرورية." },
+          { "title": "تصميم مخصص (UI/UX)", "description": "إنشاء تصميمات مخصصة في Figma مصممة خصيصًا لجمهورك المستهدف." },
+          { "title": "تطوير القالب", "description": "برمجة القالب المخصص من الصفر باستخدام تقنيات HTML/CSS/JS الحديثة و PHP." },
+          { "title": "إعداد الواجهة الخلفية (Backend)", "description": "تكوين لوحة تحكم ووردبريس، وإنشاء كتل Gutenberg مخصصة، وحقول ACF." },
+          { "title": "ضمان الجودة والنقل", "description": "الاختبار عبر جميع الأجهزة، وتحسين السرعة، ونقل البيانات من موقعك القديم." }
+        ],
+        "technologies": [
+          "نظام إدارة المحتوى (CMS) ووردبريس",
+          "PHP 8+ / MySQL",
+          "HTML5 / CSS3 (Sass/Tailwind)",
+          "JavaScript (Vanilla، و React لبرمجة الكتل)",
+          "الحقول المخصصة المتقدمة (ACF Pro)",
+          "WP REST API"
+        ],
+        "faq": [
+          { "question": "هل تستخدمون أدوات بناء الصفحات مثل Elementor أو Divi؟", "answer": "على الرغم من أنه يمكننا دعم المواقع الحالية التي تستخدم أدوات بناء الصفحات، إلا أننا نفضل بشدة للمشاريع الجديدة بناء كتل جوتنبرج (Gutenberg) مخصصة أو استخدام الحقول المخصصة المتقدمة (ACF). يؤدي هذا النهج إلى كود أنظف بكثير، وأوقات تحميل أسرع، وموقع ويب أكثر قوة لا يتعطل أثناء التحديثات." },
+          { "question": "هل يمكنكم نقل موقع الويب الحالي الخاص بي إلى ووردبريس؟", "answer": "نعم. لدينا خبرة واسعة في نقل مواقع الويب من المنصات المغلقة (مثل Wix أو Squarespace)، أو Drupal، أو Joomla، أو إعدادات ووردبريس القديمة إلى بنية ووردبريس حديثة ومخصصة دون فقدان تصنيفات محركات البحث (SEO)." }
+        ]
+      },
+      "metaTitle": "خدمات تطوير ووردبريس المخصصة | وكالة خبراء",
+      "metaDescription": "احصل على موقع ووردبريس فائق السرعة وآمن ومصمم خصيصًا لك. نحن متخصصون في تطوير القوالب المخصصة، والإضافات، وتحسين محرر جوتنبرج."
+    }
+  },
+  "youtube-marketing": {
+    "en": {
+      "name": "YouTube Marketing",
+      "shortDescription": "Channel growth, video SEO, and targeted YouTube ad campaigns.",
+      "fullDescription": "YouTube is the world's second-largest search engine, yet many brands fail to harness its massive audience. Our YouTube Marketing services help you build a dominant presence through a combination of organic channel growth, strategic video SEO, and highly targeted YouTube Ads (TrueView, Bumper, and In-Stream). We don't just focus on views; we focus on subscriber retention, click-through rates (CTR), and driving qualified leads to your website. From optimizing titles, tags, and thumbnails to managing complex ad budgets, we turn your YouTube channel into a predictable revenue engine.",
+      "features": [
+        "Comprehensive YouTube Channel Audit & Strategy",
+        "Video SEO (Titles, Descriptions, Tags, Playlists)",
+        "Custom, High-CTR Thumbnail Design",
+        "YouTube Ads Management (TrueView, In-Stream, Discovery)",
+        "Audience Retention & Engagement Analysis",
+        "Influencer Outreach & Collaborations"
+      ],
+      "benefits": [
+        "Increase Organic Visibility on the World's 2nd Largest Search Engine",
+        "Build a Loyal Community of Subscribers and Brand Advocates",
+        "Lower Customer Acquisition Costs with Highly Targeted Video Ads",
+        "Boost Viewer Retention with Data-Backed Content Strategies",
+        "Drive Consistent, High-Quality Traffic Directly to Your Website"
+      ],
+      "content": {
+        "process": [
+          { "title": "Channel Audit", "description": "Analyzing your current metrics, audience demographics, and competitor channels." },
+          { "title": "SEO & Optimization", "description": "Researching keywords and updating your existing video metadata and thumbnails." },
+          { "title": "Content Strategy", "description": "Developing a content calendar outlining topics that capture search intent and trends." },
+          { "title": "Ad Campaigns", "description": "Setting up and running targeted YouTube advertising campaigns for specific conversions." },
+          { "title": "Analytics & Reporting", "description": "Monitoring watch time, CTR, and ROI, providing detailed monthly performance reports." }
+        ],
+        "technologies": [
+          "YouTube Studio Analytics",
+          "Google Ads (Video Campaigns)",
+          "TubeBuddy / VidIQ",
+          "Adobe Photoshop / Figma (Thumbnails)",
+          "Google Analytics 4",
+          "Ahrefs / SEMrush"
+        ],
+        "faq": [
+          { "question": "Can you help produce the videos as well?", "answer": "While this service focuses primarily on the marketing, distribution, and optimization of content, we offer Video Production as a separate service to help you shoot and edit high-quality videos." },
+          { "question": "How long does it take to grow a YouTube channel organically?", "answer": "Organic YouTube growth is a long-term strategy. While optimizing existing content can yield quick wins in search, building a substantial, loyal subscriber base typically takes 6 to 12 months of consistent, high-quality uploading." }
+        ]
+      },
+      "metaTitle": "YouTube Marketing Agency | Video SEO & YouTube Ads",
+      "metaDescription": "Grow your YouTube channel with our expert marketing services. We provide Video SEO, custom thumbnail design, and targeted YouTube advertising campaigns."
+    },
+    "tr": {
+      "name": "YouTube Pazarlaması",
+      "shortDescription": "Kanal büyütme, video SEO ve hedefli YouTube reklam kampanyaları.",
+      "fullDescription": "YouTube dünyanın en büyük ikinci arama motorudur, ancak birçok marka onun devasa kitlesinden yararlanmakta başarısız olmaktadır. YouTube Pazarlama hizmetlerimiz; organik kanal büyümesi, stratejik video SEO ve son derece hedefli YouTube Reklamlarının (TrueView, Bumper ve Yayın İçi - In-Stream) birleşimi yoluyla baskın bir varlık oluşturmanıza yardımcı olur. Sadece görüntülenmelere odaklanmıyoruz; abone tutma (retention), tıklama oranları (CTR) ve web sitenize nitelikli müşteri adayları (leads) çekmeye odaklanıyoruz. Başlıkları, etiketleri ve küçük resimleri (thumbnails) optimize etmekten karmaşık reklam bütçelerini yönetmeye kadar, YouTube kanalınızı öngörülebilir bir gelir motoruna dönüştürüyoruz.",
+      "features": [
+        "Kapsamlı YouTube Kanal Denetimi ve Stratejisi",
+        "Video SEO (Başlıklar, Açıklamalar, Etiketler, Oynatma Listeleri)",
+        "Özel, Yüksek Tıklama Oranlı (CTR) Küçük Resim Tasarımı",
+        "YouTube Reklam Yönetimi (TrueView, Yayın İçi, Discovery)",
+        "Kitleyi Elde Tutma ve Etkileşim Analizi",
+        "Influencer İletişimi ve İşbirlikleri"
+      ],
+      "benefits": [
+        "Dünyanın En Büyük 2. Arama Motorunda Organik Görünürlüğü Artırma",
+        "Sadık Bir Abone ve Marka Savunucusu Topluluğu Oluşturma",
+        "Yüksek Hedefli Video Reklamlarla Müşteri Edinme Maliyetlerini Düşürme",
+        "Veriye Dayalı İçerik Stratejileriyle İzleyiciyi Elde Tutma Oranını Artırma",
+        "Doğrudan Web Sitenize Tutarlı, Yüksek Kaliteli Trafik Çekme"
+      ],
+      "content": {
+        "process": [
+          { "title": "Kanal Denetimi", "description": "Mevcut metriklerinizi, kitle demografiklerinizi ve rakip kanalları analiz etme." },
+          { "title": "SEO ve Optimizasyon", "description": "Anahtar kelimeleri araştırma ve mevcut video meta verilerinizi ve küçük resimlerinizi (thumbnails) güncelleme." },
+          { "title": "İçerik Stratejisi", "description": "Arama niyetini (search intent) ve trendleri yakalayan konuları özetleyen bir içerik takvimi geliştirme." },
+          { "title": "Reklam Kampanyaları", "description": "Belirli dönüşümler (conversions) için hedefli YouTube reklam kampanyaları oluşturma ve yürütme." },
+          { "title": "Analitik ve Raporlama", "description": "İzlenme süresini (watch time), TO'yu (CTR) ve yatırım getirisini (ROI) izleyerek ayrıntılı aylık performans raporları sağlama." }
+        ],
+        "technologies": [
+          "YouTube Studio Analytics",
+          "Google Ads (Video Kampanyaları)",
+          "TubeBuddy / VidIQ",
+          "Adobe Photoshop / Figma (Küçük Resimler İçin)",
+          "Google Analytics 4",
+          "Ahrefs / SEMrush"
+        ],
+        "faq": [
+          { "question": "Videoların üretimine de yardımcı olabilir misiniz?", "answer": "Bu hizmet öncelikli olarak içeriğin pazarlanması, dağıtımı ve optimizasyonuna odaklansa da, yüksek kaliteli videolar çekmenize ve düzenlemenize (edit) yardımcı olmak için ayrı bir hizmet olarak Video Prodüksiyonu da sunuyoruz." },
+          { "question": "Bir YouTube kanalını organik olarak büyütmek ne kadar sürer?", "answer": "Organik YouTube büyümesi uzun vadeli bir stratejidir. Mevcut içeriği optimize etmek aramalarda hızlı kazançlar (quick wins) sağlayabilse de, önemli ve sadık bir abone tabanı oluşturmak genellikle 6 ila 12 ay boyunca tutarlı ve yüksek kaliteli yüklemeler (uploads) gerektirir." }
+        ]
+      },
+      "metaTitle": "YouTube Pazarlama Ajansı | Video SEO ve YouTube Reklamları",
+      "metaDescription": "Uzman pazarlama hizmetlerimizle YouTube kanalınızı büyütün. Video SEO, özel küçük resim tasarımı ve hedefli YouTube reklam kampanyaları sunuyoruz."
+    },
+    "de": {
+      "name": "YouTube-Marketing",
+      "shortDescription": "Kanalwachstum, Video-SEO und zielgerichtete YouTube-Werbekampagnen.",
+      "fullDescription": "YouTube ist die zweitgrößte Suchmaschine der Welt, doch viele Marken nutzen das riesige Publikum nicht aus. Unsere YouTube-Marketing-Services helfen Ihnen, durch eine Kombination aus organischem Kanalwachstum, strategischem Video-SEO und zielgerichteten YouTube Ads (TrueView, Bumper, In-Stream) eine dominante Präsenz aufzubauen. Wir konzentrieren uns nicht nur auf Views; wir fokussieren uns auf Abonnentenbindung, Klickraten (CTR) und die Generierung qualifizierter Leads für Ihre Website. Von der Optimierung von Titeln, Tags und Thumbnails bis hin zur Verwaltung komplexer Werbebudgets machen wir Ihren YouTube-Kanal zu einem vorhersehbaren Umsatztreiber.",
+      "features": [
+        "Umfassendes YouTube Kanal-Audit & Strategie",
+        "Video-SEO (Titel, Beschreibungen, Tags, Playlists)",
+        "Design von klickstarken Custom Thumbnails",
+        "YouTube Ads Management (TrueView, In-Stream, Discovery)",
+        "Analyse von Zuschauerbindung & Engagement",
+        "Influencer Outreach & Kollaborationen"
+      ],
+      "benefits": [
+        "Steigerung der organischen Sichtbarkeit auf der 2. größten Suchmaschine",
+        "Aufbau einer loyalen Community und von Markenbotschaftern",
+        "Senkung der Kundenakquisitionskosten durch zielgerichtete Video-Ads",
+        "Erhöhung der Watch-Time durch datenbasierte Content-Strategien",
+        "Generierung von konsistentem, hochwertigem Traffic für Ihre Website"
+      ],
+      "content": {
+        "process": [
+          { "title": "Kanal-Audit", "description": "Analyse Ihrer aktuellen Metriken, Zielgruppen-Demografie und Konkurrenzkanäle." },
+          { "title": "SEO & Optimierung", "description": "Keyword-Recherche und Überarbeitung bestehender Metadaten und Thumbnails." },
+          { "title": "Content-Strategie", "description": "Entwicklung eines Redaktionsplans, der auf Suchintentionen und Trends basiert." },
+          { "title": "Werbekampagnen", "description": "Setup und Management von YouTube Ads für maximale Conversions." },
+          { "title": "Analytics & Reporting", "description": "Überwachung von Watch-Time, CTR und ROI mit detaillierten monatlichen Reports." }
+        ],
+        "technologies": [
+          "YouTube Studio Analytics",
+          "Google Ads (Videokampagnen)",
+          "TubeBuddy / VidIQ",
+          "Adobe Photoshop / Figma (Thumbnails)",
+          "Google Analytics 4",
+          "Ahrefs / SEMrush"
+        ],
+        "faq": [
+          { "question": "Können Sie auch bei der Videoproduktion helfen?", "answer": "Während sich dieser Service primär auf Vermarktung, Distribution und Optimierung konzentriert, bieten wir Videoproduktion als separaten Service an, um Sie bei Dreh und Schnitt zu unterstützen." },
+          { "question": "Wie lange dauert es, einen YouTube-Kanal organisch wachsen zu lassen?", "answer": "Organisches YouTube-Wachstum ist eine langfristige Strategie. Die Optimierung bestehender Videos kann zwar schnelle Erfolge in der Suche bringen, aber der Aufbau einer großen, loyalen Abonnentenbasis erfordert in der Regel 6 bis 12 Monate an konsistenten, hochwertigen Uploads." }
+        ]
+      },
+      "metaTitle": "YouTube Marketing Agentur | Video SEO & YouTube Ads",
+      "metaDescription": "Lassen Sie Ihren YouTube-Kanal mit unseren Marketing-Services wachsen. Wir bieten Video-SEO, Thumbnail-Design und zielgerichtete YouTube-Werbekampagnen."
+    },
+    "ur": {
+      "name": "یوٹیوب مارکیٹنگ",
+      "shortDescription": "چینل کی ترقی، ویڈیو ایس ای او، اور ہدف شدہ یوٹیوب اشتہاری مہم۔",
+      "fullDescription": "YouTube دنیا کا دوسرا سب سے بڑا سرچ انجن ہے، پھر بھی بہت سے برانڈز اپنے بڑے سامعین کو استعمال کرنے میں ناکام رہتے ہیں۔ ہماری YouTube مارکیٹنگ سروسز آپ کو آرگینک چینل کی ترقی، اسٹریٹجک ویڈیو ایس ای او، اور انتہائی ٹارگٹڈ یوٹیوب اشتہارات (TrueView، Bumper، اور In-Stream) کے امتزاج کے ذریعے ایک غالب موجودگی بنانے میں مدد کرتی ہیں۔ ہم صرف خیالات پر توجہ نہیں دیتے؛ ہم سبسکرائبرز کو برقرار رکھنے، کلک تھرو ریٹ (CTR)، اور آپ کی ویب سائٹ پر اہل لیڈز چلانے پر توجہ مرکوز کرتے ہیں۔ عنوانات، ٹیگز اور تھمب نیلز کو بہتر بنانے سے لے کر پیچیدہ اشتہاری بجٹ کے انتظام تک، ہم آپ کے یوٹیوب چینل کو متوقع آمدنی والے انجن میں تبدیل کرتے ہیں۔",
+      "features": [
+        "جامع یوٹیوب چینل آڈٹ اور حکمت عملی",
+        "ویڈیو ایس ای او (عنوانات، تفصیل، ٹیگز، پلے لسٹ)",
+        "حسب ضرورت، ہائی سی ٹی آر تھمب نیل ڈیزائن",
+        "یوٹیوب اشتہارات کا انتظام (ٹرو ویو، ان اسٹریم، دریافت)",
+        "سامعین کی برقراری اور مشغولیت کا تجزیہ",
+        "متاثر کن رسائی اور تعاون"
+      ],
+      "benefits": [
+        "دنیا کے دوسرے سب سے بڑے سرچ انجن پر نامیاتی مرئیت میں اضافہ کریں۔",
+        "سبسکرائبرز اور برانڈ کے حامیوں کی ایک وفادار کمیونٹی بنائیں",
+        "انتہائی ٹارگٹڈ ویڈیو اشتہارات کے ساتھ کسٹمر کے حصول کے اخراجات کو کم کریں۔",
+        "ڈیٹا کے حمایت یافتہ مواد کی حکمت عملیوں کے ساتھ ناظرین کی برقراری کو فروغ دیں۔",
+        "مستقل، اعلی معیار کی ٹریفک کو براہ راست اپنی ویب سائٹ پر چلائیں۔"
+      ],
+      "content": {
+        "process": [
+          { "title": "چینل آڈٹ", "description": "آپ کے موجودہ میٹرکس، سامعین کی آبادی، اور مدمقابل چینلز کا تجزیہ کرنا۔" },
+          { "title": "ایس ای او اور اصلاح", "description": "مطلوبہ الفاظ کی تحقیق اور اپنے موجودہ ویڈیو میٹا ڈیٹا اور تھمب نیلز کو اپ ڈیٹ کرنا۔" },
+          { "title": "مواد کی حکمت عملی", "description": "ایک مواد کے کیلنڈر کو تیار کرنا جس میں ان موضوعات کا خاکہ پیش کیا گیا ہو جو تلاش کے ارادے اور رجحانات کو پکڑتے ہیں۔" },
+          { "title": "اشتہاری مہمات", "description": "مخصوص تبادلوں کے لیے ہدف بنائے گئے YouTube اشتہاری مہمات کو ترتیب دینا اور چلانا۔" },
+          { "title": "تجزیات اور رپورٹنگ", "description": "تفصیلی ماہانہ کارکردگی کی رپورٹیں فراہم کرتے ہوئے، واچ ٹائم، CTR، اور ROI کی نگرانی کرنا۔" }
+        ],
+        "technologies": [
+          "YouTube Studio Analytics",
+          "Google Ads (Video Campaigns)",
+          "TubeBuddy / VidIQ",
+          "Adobe Photoshop / Figma (Thumbnails)",
+          "Google Analytics 4",
+          "Ahrefs / SEMrush"
+        ],
+        "faq": [
+          { "question": "کیا آپ بھی ویڈیوز بنانے میں مدد کر سکتے ہیں؟", "answer": "اگرچہ یہ سروس بنیادی طور پر مارکیٹنگ، تقسیم اور مواد کو بہتر بنانے پر مرکوز ہے، ہم آپ کو اعلیٰ معیار کی ویڈیوز شوٹ کرنے اور ان میں ترمیم کرنے میں مدد کے لیے ویڈیو پروڈکشن بطور علیحدہ سروس پیش کرتے ہیں۔" },
+          { "question": "نامیاتی طور پر یوٹیوب چینل کو بڑھنے میں کتنا وقت لگتا ہے؟", "answer": "آرگینک یوٹیوب کی نمو ایک طویل مدتی حکمت عملی ہے۔ جب کہ موجودہ مواد کو بہتر بنانا تلاش میں فوری جیت حاصل کر سکتا ہے، ایک خاطر خواہ، وفادار سبسکرائبر بیس بنانے میں عام طور پر 6 سے 12 ماہ کے مسلسل، اعلیٰ معیار کی اپ لوڈنگ کی ضرورت ہوتی ہے۔" }
+        ]
+      },
+      "metaTitle": "یوٹیوب مارکیٹنگ ایجنسی | ویڈیو ایس ای او اور یوٹیوب اشتہارات",
+      "metaDescription": "ہماری ماہر مارکیٹنگ خدمات کے ساتھ اپنے یوٹیوب چینل کو بڑھائیں۔ ہم ویڈیو ایس ای او، اپنی مرضی کے مطابق تھمب نیل ڈیزائن، اور ہدف بنائے گئے یوٹیوب اشتہاری مہم فراہم کرتے ہیں۔"
+    },
+    "ar": {
+      "name": "التسويق عبر يوتيوب (YouTube Marketing)",
+      "shortDescription": "نمو القناة، وتحسين محركات البحث للفيديو (SEO)، وحملات إعلانات يوتيوب المستهدفة.",
+      "fullDescription": "يوتيوب هو ثاني أكبر محرك بحث في العالم، ومع ذلك تفشل العديد من العلامات التجارية في تسخير جمهوره الهائل. تساعدك خدمات التسويق عبر يوتيوب لدينا على بناء حضور مهيمن من خلال مزيج من نمو القناة العضوي، واستراتيجية تحسين محركات البحث للفيديو (Video SEO)، وإعلانات يوتيوب عالية الاستهداف (مثل TrueView و Bumper والإعلانات أثناء البث). نحن لا نركز فقط على المشاهدات؛ بل نركز على الاحتفاظ بالمشتركين، ومعدلات النقر إلى الظهور (CTR)، وتوجيه العملاء المحتملين المؤهلين (Leads) إلى موقعك الإلكتروني. بدءًا من تحسين العناوين والعلامات والصور المصغرة، وحتى إدارة ميزانيات الإعلانات المعقدة، نقوم بتحويل قناة يوتيوب الخاصة بك إلى محرك إيرادات يمكن التنبؤ به.",
+      "features": [
+        "تدقيق شامل واستراتيجية لقناة يوتيوب",
+        "تحسين محركات البحث للفيديو SEO (العناوين، الأوصاف، العلامات، قوائم التشغيل)",
+        "تصميم صور مصغرة (Thumbnails) مخصصة وعالية النقر (CTR)",
+        "إدارة إعلانات يوتيوب (TrueView ، In-Stream ، Discovery)",
+        "تحليل الاحتفاظ بالجمهور ومعدلات التفاعل",
+        "التواصل مع المؤثرين (Influencers) والتعاون معهم"
+      ],
+      "benefits": [
+        "زيادة الظهور العضوي (Organic) على ثاني أكبر محرك بحث في العالم",
+        "بناء مجتمع مخلص من المشتركين والمدافعين عن العلامة التجارية",
+        "خفض تكاليف اكتساب العملاء من خلال إعلانات فيديو عالية الاستهداف",
+        "تعزيز الاحتفاظ بالمشاهدين (Retention) من خلال استراتيجيات محتوى مدعومة بالبيانات",
+        "توجيه حركة مرور (Traffic) ثابتة وعالية الجودة مباشرة إلى موقعك الإلكتروني"
+      ],
+      "content": {
+        "process": [
+          { "title": "تدقيق القناة (Channel Audit)", "description": "تحليل مقاييسك الحالية، والتركيبة السكانية لجمهورك، وقنوات المنافسين." },
+          { "title": "تحسين محركات البحث (SEO)", "description": "البحث عن الكلمات المفتاحية وتحديث البيانات الوصفية (Metadata) والصور المصغرة لمقاطع الفيديو الحالية." },
+          { "title": "استراتيجية المحتوى", "description": "تطوير تقويم محتوى يحدد الموضوعات التي تلبي نوايا البحث والاتجاهات الشائعة (Trends)." },
+          { "title": "الحملات الإعلانية", "description": "إعداد وتشغيل حملات إعلانية مستهدفة على يوتيوب لتحقيق تحويلات (Conversions) محددة." },
+          { "title": "التحليلات وإعداد التقارير", "description": "مراقبة وقت المشاهدة، ومعدل النقر (CTR)، وعائد الاستثمار (ROI)، وتقديم تقارير أداء شهرية مفصلة." }
+        ],
+        "technologies": [
+          "تحليلات استوديو يوتيوب (YouTube Studio)",
+          "إعلانات جوجل (حملات الفيديو)",
+          "TubeBuddy / VidIQ",
+          "Adobe Photoshop / Figma (لتصميم الصور المصغرة)",
+          "Google Analytics 4",
+          "Ahrefs / SEMrush"
+        ],
+        "faq": [
+          { "question": "هل يمكنكم المساعدة في إنتاج مقاطع الفيديو أيضًا؟", "answer": "في حين أن هذه الخدمة تركز بشكل أساسي على تسويق المحتوى وتوزيعه وتحسينه، فإننا نقدم 'إنتاج الفيديو' كخدمة منفصلة لمساعدتك في تصوير وتحرير مقاطع فيديو عالية الجودة." },
+          { "question": "كم من الوقت يستغرق نمو قناة يوتيوب بشكل عضوي (Organic)؟", "answer": "النمو العضوي على يوتيوب هو استراتيجية طويلة الأجل. في حين أن تحسين المحتوى الحالي يمكن أن يحقق مكاسب سريعة في البحث، فإن بناء قاعدة مشتركين كبيرة ومخلصة يستغرق عادةً من 6 إلى 12 شهرًا من التحميل المستمر وعالي الجودة." }
+        ]
+      },
+      "metaTitle": "وكالة التسويق عبر يوتيوب | تحسين محركات البحث للفيديو وإعلانات يوتيوب",
+      "metaDescription": "قم بتنمية قناة يوتيوب الخاصة بك من خلال خدمات التسويق المتخصصة لدينا. نقدم Video SEO، وتصميم صور مصغرة مخصصة، وحملات إعلانية مستهدفة على يوتيوب."
+    }
+  }
+}

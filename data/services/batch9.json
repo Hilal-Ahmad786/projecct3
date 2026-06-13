@@ -1,0 +1,461 @@
+{
+  "e-commerce": {
+    "en": {
+      "name": "E-Commerce",
+      "shortDescription": "Build powerful online stores that drive sales.",
+      "fullDescription": "Take your retail business global with our comprehensive E-Commerce development services. In today's digital-first economy, a fast, reliable, and secure online store is non-negotiable. We build high-converting e-commerce platforms tailored to your specific market needs, ranging from quick-to-market Shopify and WooCommerce setups to fully custom headless architectures. We focus on optimizing the entire customer journey—from intuitive product discovery and lightning-fast page loads to frictionless checkout processes—ensuring you maximize your sales, reduce cart abandonment, and build long-term customer loyalty.",
+      "features": [
+        "Custom E-Commerce Development",
+        "Shopify & WooCommerce Solutions",
+        "Payment Gateway Integration",
+        "Inventory & Order Management",
+        "Multi-Channel Selling",
+        "Shopping Cart Optimization",
+        "Product Information Management",
+        "Subscription & Recurring Billing"
+      ],
+      "benefits": [
+        "Increased Online Sales & Revenue",
+        "Lower Cart Abandonment Rates",
+        "Secure & Compliant Transactions",
+        "Scalable Infrastructure for High Traffic",
+        "Seamless Inventory Synchronization"
+      ],
+      "content": {
+        "process": [
+          { "title": "Market & Platform Analysis", "description": "Helping you choose the right platform (Shopify, Custom, etc.) based on your catalog size and goals." },
+          { "title": "Storefront Design", "description": "Creating user-centric, mobile-first designs optimized for conversion." },
+          { "title": "Development & Integration", "description": "Building the store and connecting it to your ERP, CRM, and payment gateways." },
+          { "title": "Data Migration", "description": "Safely moving your existing products, customers, and order history." },
+          { "title": "Launch & Marketing Prep", "description": "Final QA, SEO optimization, and Go-Live support." }
+        ],
+        "technologies": [
+          "Shopify",
+          "WooCommerce",
+          "Magento",
+          "Stripe",
+          "PayPal",
+          "Contentful",
+          "Algolia",
+          "Klaviyo"
+        ],
+        "faq": [
+          { "question": "Should I choose Shopify or a custom build?", "answer": "Shopify is excellent for rapid deployment and standard retail models. However, if your business requires highly complex product configurators, custom B2B pricing, or multi-currency headless architecture, a custom build might be necessary. We consult with you to make the right choice." },
+          { "question": "Do you help with SEO and marketing integration?", "answer": "Yes. We build all our e-commerce sites with SEO best practices and seamlessly integrate marketing automation tools like Klaviyo and Mailchimp." }
+        ]
+      },
+      "metaTitle": "E-Commerce Development Services | Shopify & Custom Stores",
+      "metaDescription": "Build powerful, high-converting online stores. We specialize in Shopify, WooCommerce, and Custom E-Commerce development to scale your retail business."
+    },
+    "tr": {
+      "name": "E-Ticaret",
+      "shortDescription": "Satışları artıran güçlü çevrimiçi mağazalar oluşturun.",
+      "fullDescription": "Kapsamlı E-Ticaret geliştirme hizmetlerimizle perakende işinizi küresel hale getirin. Günümüzün dijital öncelikli ekonomisinde, hızlı, güvenilir ve güvenli bir çevrimiçi mağaza tartışılmaz bir zorunluluktur. Pazara hızlı çıkan Shopify ve WooCommerce kurulumlarından tamamen özel başsız (headless) mimarilere kadar, özel pazar ihtiyaçlarınıza göre uyarlanmış, yüksek dönüşüm sağlayan e-ticaret platformları oluşturuyoruz. Satışlarınızı en üst düzeye çıkarmanızı, sepeti terk etme oranlarını azaltmanızı ve uzun vadeli müşteri sadakati oluşturmanızı sağlamak için, sezgisel ürün keşfi ve ışık hızında sayfa yüklemelerinden sorunsuz ödeme süreçlerine kadar tüm müşteri yolculuğunu optimize etmeye odaklanıyoruz.",
+      "features": [
+        "Özel E-Ticaret Geliştirme",
+        "Shopify ve WooCommerce Çözümleri",
+        "Ödeme Ağ Geçidi Entegrasyonu",
+        "Envanter ve Sipariş Yönetimi",
+        "Çok Kanallı Satış",
+        "Alışveriş Sepeti Optimizasyonu",
+        "Ürün Bilgi Yönetimi",
+        "Abonelik ve Yinelenen Faturalandırma"
+      ],
+      "benefits": [
+        "Artan Çevrimiçi Satış ve Gelir",
+        "Düşük Sepeti Terk Etme Oranları",
+        "Güvenli ve Uyumlu İşlemler",
+        "Yüksek Trafik İçin Ölçeklenebilir Altyapı",
+        "Kesintisiz Envanter Senkronizasyonu"
+      ],
+      "content": {
+        "process": [
+          { "title": "Pazar ve Platform Analizi", "description": "Katalog boyutunuza ve hedeflerinize göre doğru platformu (Shopify, Özel vb.) seçmenize yardımcı olma." },
+          { "title": "Vitrin Tasarımı", "description": "Dönüşüm için optimize edilmiş, kullanıcı odaklı, mobil öncelikli tasarımlar oluşturma." },
+          { "title": "Geliştirme ve Entegrasyon", "description": "Mağazayı oluşturma ve ERP, CRM ve ödeme ağ geçitlerinize bağlama." },
+          { "title": "Veri Geçişi", "description": "Mevcut ürünlerinizi, müşterilerinizi ve sipariş geçmişinizi güvenle taşıma." },
+          { "title": "Lansman ve Pazarlama Hazırlığı", "description": "Son QA, SEO optimizasyonu ve Canlıya Geçiş desteği." }
+        ],
+        "technologies": [
+          "Shopify",
+          "WooCommerce",
+          "Magento",
+          "Stripe",
+          "PayPal",
+          "Contentful",
+          "Algolia",
+          "Klaviyo"
+        ],
+        "faq": [
+          { "question": "Shopify mı yoksa özel bir yapı mı seçmeliyim?", "answer": "Shopify, hızlı dağıtım ve standart perakende modelleri için mükemmeldir. Ancak, işletmeniz son derece karmaşık ürün konfigüratörleri, özel B2B fiyatlandırması veya çok para birimli başsız mimari gerektiriyorsa, özel bir yapı gerekebilir. Doğru seçimi yapmanız için size danışmanlık yapıyoruz." },
+          { "question": "SEO ve pazarlama entegrasyonu konusunda yardımcı oluyor musunuz?", "answer": "Evet. Tüm e-ticaret sitelerimizi en iyi SEO uygulamalarıyla oluşturuyor ve Klaviyo ve Mailchimp gibi pazarlama otomasyon araçlarını sorunsuz bir şekilde entegre ediyoruz." }
+        ]
+      },
+      "metaTitle": "E-Ticaret Geliştirme Hizmetleri | Shopify ve Özel Mağazalar",
+      "metaDescription": "Satışları artıran, yüksek dönüşümlü çevrimiçi mağazalar oluşturun. Perakende işinizi büyütmek için Shopify, WooCommerce ve Özel E-Ticaret geliştirme konusunda uzmanız."
+    },
+    "de": {
+      "name": "E-Commerce",
+      "shortDescription": "Bauen Sie leistungsstarke Online-Shops auf, die den Umsatz steigern.",
+      "fullDescription": "Bringen Sie Ihr Einzelhandelsgeschäft mit unseren umfassenden E-Commerce-Entwicklungsdiensten auf die globale Bühne. In der heutigen digitalen Wirtschaft ist ein schneller, zuverlässiger und sicherer Online-Shop unverzichtbar. Wir entwickeln konversionsstarke E-Commerce-Plattformen, die auf Ihre spezifischen Marktanforderungen zugeschnitten sind – von schnellen Shopify- und WooCommerce-Setups bis hin zu vollständig individuellen Headless-Architekturen. Wir konzentrieren uns auf die Optimierung der gesamten Customer Journey – von der intuitiven Produktfindung und blitzschnellen Seitenladezeiten bis hin zu reibungslosen Checkout-Prozessen – um sicherzustellen, dass Sie Ihren Umsatz maximieren, Warenkorbabbrüche reduzieren und langfristige Kundenbindung aufbauen.",
+      "features": [
+        "Individuelle E-Commerce-Entwicklung",
+        "Shopify- & WooCommerce-Lösungen",
+        "Integration von Zahlungsgateways",
+        "Bestands- & Auftragsverwaltung",
+        "Multi-Channel-Verkauf",
+        "Warenkorb-Optimierung",
+        "Produktinformationsmanagement (PIM)",
+        "Abo- & wiederkehrende Abrechnung"
+      ],
+      "benefits": [
+        "Gesteigerte Online-Umsätze & Einnahmen",
+        "Geringere Warenkorbabbrecherquoten",
+        "Sichere & rechtskonforme Transaktionen",
+        "Skalierbare Infrastruktur für hohen Traffic",
+        "Nahtlose Bestandssynchronisation"
+      ],
+      "content": {
+        "process": [
+          { "title": "Markt- & Plattformanalyse", "description": "Unterstützung bei der Wahl der richtigen Plattform (Shopify, Custom usw.) basierend auf Kataloggröße und Zielen." },
+          { "title": "Storefront-Design", "description": "Erstellung nutzerzentrierter, Mobile-First-Designs, optimiert für Konversionen." },
+          { "title": "Entwicklung & Integration", "description": "Aufbau des Shops und Anbindung an Ihre ERP-, CRM- und Zahlungssysteme." },
+          { "title": "Datenmigration", "description": "Sichere Übertragung Ihrer bestehenden Produkte, Kunden und Bestellhistorie." },
+          { "title": "Start & Marketing-Vorbereitung", "description": "Abschließende QA, SEO-Optimierung und Go-Live-Support." }
+        ],
+        "technologies": [
+          "Shopify",
+          "WooCommerce",
+          "Magento",
+          "Stripe",
+          "PayPal",
+          "Contentful",
+          "Algolia",
+          "Klaviyo"
+        ],
+        "faq": [
+          { "question": "Sollte ich Shopify oder eine individuelle Lösung wählen?", "answer": "Shopify eignet sich hervorragend für schnelle Bereitstellungen und Standard-Einzelhandelsmodelle. Wenn Ihr Unternehmen jedoch hochkomplexe Produktkonfiguratoren, individuelle B2B-Preise oder eine mandantenfähige Headless-Architektur in mehreren Währungen benötigt, ist möglicherweise ein individueller Aufbau erforderlich." },
+          { "question": "Helfen Sie bei SEO und Marketing-Integration?", "answer": "Ja. Wir erstellen alle unsere E-Commerce-Websites nach Best Practices für SEO und integrieren nahtlos Marketing-Automatisierungstools wie Klaviyo." }
+        ]
+      },
+      "metaTitle": "E-Commerce-Entwicklungsdienste | Shopify & Custom Stores",
+      "metaDescription": "Bauen Sie leistungsstarke, konversionsstarke Online-Shops auf. Wir sind spezialisiert auf Shopify, WooCommerce und individuelle E-Commerce-Entwicklung."
+    },
+    "ur": {
+      "name": "ای کامرس",
+      "shortDescription": "طاقتور آن لائن اسٹورز بنائیں جو فروخت کو آگے بڑھاتے ہیں۔",
+      "fullDescription": "ہماری جامع ای کامرس ڈیولپمنٹ سروسز کے ساتھ اپنے خوردہ کاروبار کو عالمی سطح پر لے جائیں۔ آج کی ڈیجیٹل پہلی معیشت میں، ایک تیز، قابل اعتماد، اور محفوظ آن لائن اسٹور ناقابل تبادلہ ہے۔ ہم آپ کی مخصوص مارکیٹ کی ضروریات کے مطابق اعلیٰ تبدیل کرنے والے ای کامرس پلیٹ فارمز بناتے ہیں، جس میں فوری ٹو مارکیٹ Shopify اور WooCommerce سیٹ اپ سے لے کر مکمل طور پر حسب ضرورت ہیڈ لیس فن تعمیر تک شامل ہیں۔ ہم پورے کسٹمر کے سفر کو بہتر بنانے پر توجہ مرکوز کرتے ہیں — پروڈکٹ کی بدیہی دریافت اور بجلی کے تیز صفحہ کے بوجھ سے لے کر رگڑ سے کم چیک آؤٹ کے عمل تک — اس بات کو یقینی بناتے ہوئے کہ آپ اپنی فروخت کو زیادہ سے زیادہ بڑھائیں، کارٹ چھوڑنے کو کم کریں، اور طویل مدتی کسٹمر کی وفاداری پیدا کریں۔",
+      "features": [
+        "حسب ضرورت ای کامرس کی ترقی",
+        "Shopify اور WooCommerce کے حل",
+        "پیمنٹ گیٹ وے انٹیگریشن",
+        "انوینٹری اور آرڈر مینجمنٹ",
+        "ملٹی چینل سیلنگ",
+        "شاپنگ کارٹ کی اصلاح",
+        "پروڈکٹ انفارمیشن مینجمنٹ",
+        "سبسکرپشن اور بار بار چلنے والی بلنگ"
+      ],
+      "benefits": [
+        "آن لائن فروخت اور محصول میں اضافہ",
+        "لوئر کارٹ ترک کرنے کی شرح",
+        "محفوظ اور موافق لین دین",
+        "زیادہ ٹریفک کے لیے قابل توسیع بنیادی ڈھانچہ",
+        "ہموار انوینٹری کی ہم آہنگی"
+      ],
+      "content": {
+        "process": [
+          { "title": "مارکیٹ اور پلیٹ فارم کا تجزیہ", "description": "آپ کے کیٹلاگ کے سائز اور اہداف کی بنیاد پر صحیح پلیٹ فارم (Shopify، Custom، وغیرہ) کا انتخاب کرنے میں آپ کی مدد کرنا۔" },
+          { "title": "اسٹور فرنٹ ڈیزائن", "description": "تبادلوں کے لیے موزوں صارف پر مبنی، موبائل کے پہلے ڈیزائن بنانا۔" },
+          { "title": "ترقی اور انضمام", "description": "اسٹور بنانا اور اسے آپ کے ERP، CRM، اور ادائیگی کے گیٹ ویز سے جوڑنا۔" },
+          { "title": "ڈیٹا ہجرت", "description": "آپ کے موجودہ پروڈکٹس، گاہکوں، اور آرڈر کی تاریخ کو محفوظ طریقے سے منتقل کرنا۔" },
+          { "title": "لانچ اور مارکیٹنگ کی تیاری", "description": "حتمی QA، SEO اصلاح، اور گو لائیو سپورٹ۔" }
+        ],
+        "technologies": [
+          "Shopify",
+          "WooCommerce",
+          "Magento",
+          "Stripe",
+          "PayPal",
+          "Contentful",
+          "Algolia",
+          "Klaviyo"
+        ],
+        "faq": [
+          { "question": "کیا مجھے Shopify یا اپنی مرضی کی تعمیر کا انتخاب کرنا چاہیے؟", "answer": "Shopify تیزی سے تعیناتی اور معیاری ریٹیل ماڈلز کے لیے بہترین ہے۔ تاہم، اگر آپ کے کاروبار کے لیے انتہائی پیچیدہ پروڈکٹ کنفیگریٹرز، کسٹم B2B قیمتوں کا تعین، یا ملٹی کرنسی ہیڈ لیس آرکیٹیکچر کی ضرورت ہے، تو اپنی مرضی کے مطابق تعمیر ضروری ہو سکتی ہے۔ ہم صحیح انتخاب کرنے کے لیے آپ سے مشورہ کرتے ہیں۔" },
+          { "question": "کیا آپ SEO اور مارکیٹنگ کے انضمام میں مدد کرتے ہیں؟", "answer": "ہاں۔ ہم اپنی تمام ای کامرس سائٹس کو SEO کے بہترین طریقوں کے ساتھ بناتے ہیں اور مارکیٹنگ آٹومیشن ٹولز جیسے Klaviyo اور Mailchimp کو بغیر کسی رکاوٹ کے مربوط کرتے ہیں۔" }
+        ]
+      },
+      "metaTitle": "ای کامرس ڈیولپمنٹ سروسز | Shopify اور کسٹم اسٹورز",
+      "metaDescription": "طاقتور، اعلیٰ تبدیلی لانے والے آن لائن اسٹورز بنائیں۔ ہم آپ کے خوردہ کاروبار کو بڑھانے کے لیے Shopify، WooCommerce، اور حسب ضرورت ای کامرس کی ترقی میں مہارت رکھتے ہیں۔"
+    },
+    "ar": {
+      "name": "التجارة الإلكترونية",
+      "shortDescription": "بناء متاجر عبر الإنترنت قوية تدفع المبيعات.",
+      "fullDescription": "انقل أعمال التجزئة الخاصة بك إلى العالمية من خلال خدمات تطوير التجارة الإلكترونية الشاملة لدينا. في اقتصاد اليوم الذي يركز على التكنولوجيا الرقمية أولاً، يعد المتجر السريع والموثوق والآمن عبر الإنترنت أمرًا غير قابل للتفاوض. نقوم ببناء منصات تجارة إلكترونية عالية التحويل مصممة خصيصًا لاحتياجات السوق الخاصة بك، بدءًا من إعدادات Shopify و WooCommerce السريعة إلى بنى Headless المخصصة بالكامل. نحن نركز على تحسين رحلة العميل بأكملها - بدءًا من اكتشاف المنتج البديهي وتحميل الصفحة بسرعة البرق إلى عمليات الدفع الخالية من الاحتكاك - مما يضمن زيادة مبيعاتك وتقليل التخلي عن سلة التسوق وبناء ولاء العملاء على المدى الطويل.",
+      "features": [
+        "تطوير التجارة الإلكترونية المخصصة",
+        "حلول Shopify و WooCommerce",
+        "تكامل بوابات الدفع",
+        "إدارة المخزون والطلبات",
+        "البيع متعدد القنوات",
+        "تحسين سلة التسوق",
+        "إدارة معلومات المنتج",
+        "الاشتراكات والفوترة المتكررة"
+      ],
+      "benefits": [
+        "زيادة المبيعات والإيرادات عبر الإنترنت",
+        "انخفاض معدلات التخلي عن سلة التسوق",
+        "معاملات آمنة ومتوافقة",
+        "بنية تحتية قابلة للتطوير لحركة المرور العالية",
+        "مزامنة سلسة للمخزون"
+      ],
+      "content": {
+        "process": [
+          { "title": "تحليل السوق والمنصة", "description": "مساعدتك في اختيار المنصة المناسبة (Shopify ، Custom ، إلخ) بناءً على حجم الكتالوج وأهدافك." },
+          { "title": "تصميم واجهة المتجر", "description": "إنشاء تصميمات تتمحور حول المستخدم، ومناسبة للجوال أولاً، ومُحسّنة للتحويل." },
+          { "title": "التطوير والتكامل", "description": "بناء المتجر وربطه بـ ERP و CRM وبوابات الدفع الخاصة بك." },
+          { "title": "ترحيل البيانات", "description": "نقل منتجاتك وعملائك وسجل طلباتك الحالي بأمان." },
+          { "title": "الإطلاق والتحضير للتسويق", "description": "ضمان الجودة النهائي، وتحسين SEO، ودعم ما بعد الإطلاق." }
+        ],
+        "technologies": [
+          "Shopify",
+          "WooCommerce",
+          "Magento",
+          "Stripe",
+          "PayPal",
+          "Contentful",
+          "Algolia",
+          "Klaviyo"
+        ],
+        "faq": [
+          { "question": "هل يجب أن أختار Shopify أم بناء مخصص؟", "answer": "Shopify ممتاز للنشر السريع ونماذج البيع بالتجزئة القياسية. ومع ذلك، إذا كان عملك يتطلب مكونات منتجات معقدة للغاية، أو تسعير B2B مخصص، أو بنية Headless متعددة العملات، فقد يكون البناء المخصص ضروريًا. نحن نتشاور معك لاتخاذ القرار الصحيح." },
+          { "question": "هل تساعدون في تكامل تحسين محركات البحث (SEO) والتسويق؟", "answer": "نعم. نقوم ببناء جميع مواقع التجارة الإلكترونية الخاصة بنا بأفضل ممارسات تحسين محركات البحث (SEO) وندمج بسلاسة أدوات أتمتة التسويق مثل Klaviyo و Mailchimp." }
+        ]
+      },
+      "metaTitle": "خدمات تطوير التجارة الإلكترونية | Shopify ومتاجر مخصصة",
+      "metaDescription": "قم ببناء متاجر قوية وعالية التحويل عبر الإنترنت. نحن متخصصون في تطوير التجارة الإلكترونية المخصصة و Shopify و WooCommerce لتوسيع نطاق أعمال التجزئة الخاصة بك."
+    }
+  },
+  "enterprise-software": {
+    "en": {
+      "name": "Enterprise Software",
+      "shortDescription": "Build robust, scalable enterprise software tailored to your business needs.",
+      "fullDescription": "Empower your large-scale organization with our robust Enterprise Software solutions. We understand that enterprise operations require complex integrations, absolute data security, and high-availability architecture. We specialize in developing custom ERPs, CRMs, and enterprise-wide workflow automation systems that break down data silos and optimize cross-departmental collaboration. By modernizing legacy systems and migrating to secure cloud infrastructure, we help your enterprise stay agile and competitive in a fast-paced corporate landscape.",
+      "features": [
+        "Custom ERP Development",
+        "Business Process Automation",
+        "Legacy System Modernization",
+        "Enterprise Integration (API/ESB)",
+        "Workflow & Operations Management",
+        "Business Intelligence Dashboards"
+      ],
+      "benefits": [
+        "Centralized Data Management",
+        "Increased Productivity & Automation",
+        "Enterprise-Grade Security & Compliance",
+        "Scalable Cloud Architecture",
+        "Data-Driven Decision Making"
+      ],
+      "content": {
+        "process": [
+          { "title": "Enterprise Needs Assessment", "description": "Analyzing complex workflows across multiple departments." },
+          { "title": "System Architecture", "description": "Designing scalable, microservices-based or monolithic structures." },
+          { "title": "Development", "description": "Writing secure, enterprise-grade code (Java, .NET, Node.js)." },
+          { "title": "Legacy Migration", "description": "Safely migrating vast amounts of data from outdated systems." },
+          { "title": "Enterprise Rollout", "description": "Phased deployments, rigorous security auditing, and staff training." }
+        ],
+        "technologies": [
+          "Java",
+          ".NET Core",
+          "Node.js",
+          "PostgreSQL",
+          "Oracle",
+          "Microsoft Azure",
+          "AWS"
+        ],
+        "faq": [
+          { "question": "How long does it take to develop an enterprise system?", "answer": "Enterprise software is highly complex. Development can take anywhere from 6 to 18 months depending on the scope. We use Agile methodologies to deliver functional modules incrementally, so you see value faster." },
+          { "question": "Can you integrate the new software with our existing tools like SAP or Salesforce?", "answer": "Absolutely. Enterprise integration is a core part of what we do. We use secure APIs and Enterprise Service Buses (ESB) to ensure your new software communicates perfectly with your existing ecosystem." }
+        ]
+      },
+      "metaTitle": "Enterprise Software Development | Custom ERP & Automation",
+      "metaDescription": "Robust and scalable enterprise software solutions. We develop custom ERPs, automate business processes, and modernize legacy systems for large organizations."
+    },
+    "tr": {
+      "name": "Kurumsal Yazılım",
+      "shortDescription": "İş ihtiyaçlarınıza göre uyarlanmış sağlam, ölçeklenebilir kurumsal yazılımlar oluşturun.",
+      "fullDescription": "Sağlam Kurumsal Yazılım çözümlerimizle büyük ölçekli organizasyonunuzu güçlendirin. Kurumsal operasyonların karmaşık entegrasyonlar, mutlak veri güvenliği ve yüksek kullanılabilirlik mimarisi gerektirdiğini anlıyoruz. Veri silolarını yıkan ve departmanlar arası işbirliğini optimize eden özel ERP'ler, CRM'ler ve işletme genelinde iş akışı otomasyon sistemleri geliştirme konusunda uzmanız. Eski sistemleri modernize ederek ve güvenli bulut altyapısına geçerek, kuruluşunuzun hızlı tempolu kurumsal ortamda çevik ve rekabetçi kalmasına yardımcı oluyoruz.",
+      "features": [
+        "Özel ERP Geliştirme",
+        "İş Süreçleri Otomasyonu",
+        "Eski Sistem Modernizasyonu",
+        "Kurumsal Entegrasyon (API/ESB)",
+        "İş Akışı ve Operasyon Yönetimi",
+        "İş Zekası (BI) Panoları"
+      ],
+      "benefits": [
+        "Merkezi Veri Yönetimi",
+        "Artan Üretkenlik ve Otomasyon",
+        "Kurumsal Düzeyde Güvenlik ve Uyumluluk",
+        "Ölçeklenebilir Bulut Mimarisi",
+        "Veriye Dayalı Karar Verme"
+      ],
+      "content": {
+        "process": [
+          { "title": "Kurumsal İhtiyaç Değerlendirmesi", "description": "Birden fazla departmandaki karmaşık iş akışlarını analiz etme." },
+          { "title": "Sistem Mimarisi", "description": "Ölçeklenebilir, mikro hizmet tabanlı veya monolitik yapılar tasarlama." },
+          { "title": "Geliştirme", "description": "Güvenli, kurumsal düzeyde kod yazma (Java, .NET, Node.js)." },
+          { "title": "Eski Sistemden Geçiş", "description": "Modası geçmiş sistemlerden büyük miktarda veriyi güvenle taşıma." },
+          { "title": "Kurumsal Lansman", "description": "Aşamalı dağıtımlar, titiz güvenlik denetimi ve personel eğitimi." }
+        ],
+        "technologies": [
+          "Java",
+          ".NET Core",
+          "Node.js",
+          "PostgreSQL",
+          "Oracle",
+          "Microsoft Azure",
+          "AWS"
+        ],
+        "faq": [
+          { "question": "Kurumsal bir sistemin geliştirilmesi ne kadar sürer?", "answer": "Kurumsal yazılımlar oldukça karmaşıktır. Geliştirme kapsamına bağlı olarak 6 ila 18 ay sürebilir. İşlevsel modülleri aşamalı olarak sunmak için Çevik (Agile) metodolojileri kullanıyoruz, böylece değeri daha hızlı görürsünüz." },
+          { "question": "Yeni yazılımı SAP veya Salesforce gibi mevcut araçlarımızla entegre edebilir misiniz?", "answer": "Kesinlikle. Kurumsal entegrasyon yaptığımız işin temel bir parçasıdır. Yeni yazılımınızın mevcut ekosisteminizle mükemmel şekilde iletişim kurmasını sağlamak için güvenli API'ler ve Kurumsal Hizmet Yolları (ESB) kullanıyoruz." }
+        ]
+      },
+      "metaTitle": "Kurumsal Yazılım Geliştirme | Özel ERP ve Otomasyon",
+      "metaDescription": "Sağlam ve ölçeklenebilir kurumsal yazılım çözümleri. Büyük organizasyonlar için özel ERP'ler geliştiriyor, iş süreçlerini otomatikleştiriyor ve eski sistemleri modernize ediyoruz."
+    },
+    "de": {
+      "name": "Unternehmenssoftware",
+      "shortDescription": "Entwickeln Sie robuste, skalierbare Unternehmenssoftware, die auf Ihre Geschäftsanforderungen zugeschnitten ist.",
+      "fullDescription": "Stärken Sie Ihr Großunternehmen mit unseren robusten Unternehmenssoftware-Lösungen. Wir verstehen, dass Unternehmensabläufe komplexe Integrationen, absolute Datensicherheit und eine hochverfügbare Architektur erfordern. Wir sind auf die Entwicklung maßgeschneiderter ERPs, CRMs und unternehmensweiter Workflow-Automatisierungssysteme spezialisiert, die Datensilos aufbrechen und die abteilungsübergreifende Zusammenarbeit optimieren. Durch die Modernisierung veralteter Systeme und die Migration auf eine sichere Cloud-Infrastruktur helfen wir Ihrem Unternehmen, in einem schnelllebigen Geschäftsumfeld agil und wettbewerbsfähig zu bleiben.",
+      "features": [
+        "Individuelle ERP-Entwicklung",
+        "Geschäftsprozessautomatisierung",
+        "Modernisierung von Legacy-Systemen",
+        "Enterprise-Integration (API/ESB)",
+        "Workflow- & Betriebsmanagement",
+        "Business Intelligence Dashboards"
+      ],
+      "benefits": [
+        "Zentralisiertes Datenmanagement",
+        "Gesteigerte Produktivität & Automatisierung",
+        "Sicherheit & Compliance auf Unternehmensniveau",
+        "Skalierbare Cloud-Architektur",
+        "Datengesteuerte Entscheidungsfindung"
+      ],
+      "content": {
+        "process": [
+          { "title": "Bedürfnisermittlung für Unternehmen", "description": "Analyse komplexer Arbeitsabläufe über mehrere Abteilungen hinweg." },
+          { "title": "Systemarchitektur", "description": "Entwurf skalierbarer, auf Microservices basierender oder monolithischer Strukturen." },
+          { "title": "Entwicklung", "description": "Schreiben von sicherem Code in Unternehmensqualität (Java, .NET, Node.js)." },
+          { "title": "Legacy-Migration", "description": "Sichere Migration riesiger Datenmengen aus veralteten Systemen." },
+          { "title": "Unternehmensweite Einführung", "description": "Phasenweise Bereitstellungen, strenge Sicherheitsüberprüfungen und Mitarbeiterschulungen." }
+        ],
+        "technologies": [
+          "Java",
+          ".NET Core",
+          "Node.js",
+          "PostgreSQL",
+          "Oracle",
+          "Microsoft Azure",
+          "AWS"
+        ],
+        "faq": [
+          { "question": "Wie lange dauert die Entwicklung eines Unternehmenssystems?", "answer": "Unternehmenssoftware ist hochkomplex. Die Entwicklung kann je nach Umfang zwischen 6 und 18 Monaten dauern. Wir verwenden agile Methoden, um funktionale Module schrittweise bereitzustellen, damit Sie den Nutzen schneller sehen." },
+          { "question": "Können Sie die neue Software in unsere bestehenden Tools wie SAP oder Salesforce integrieren?", "answer": "Absolut. Enterprise-Integration ist ein Kernbestandteil unserer Arbeit. Wir verwenden sichere APIs und Enterprise Service Buses (ESB), um sicherzustellen, dass Ihre neue Software perfekt mit Ihrem bestehenden Ökosystem kommuniziert." }
+        ]
+      },
+      "metaTitle": "Entwicklung von Unternehmenssoftware | Individuelles ERP & Automatisierung",
+      "metaDescription": "Robuste und skalierbare Unternehmenssoftware-Lösungen. Wir entwickeln individuelle ERPs, automatisieren Geschäftsprozesse und modernisieren Legacy-Systeme."
+    },
+    "ur": {
+      "name": "انٹرپرائز سافٹ ویئر",
+      "shortDescription": "اپنی کاروباری ضروریات کے مطابق مضبوط، توسیع پذیر انٹرپرائز سافٹ ویئر بنائیں۔",
+      "fullDescription": "ہمارے مضبوط انٹرپرائز سافٹ ویئر سلوشنز کے ساتھ اپنی بڑے پیمانے کی تنظیم کو بااختیار بنائیں۔ ہم سمجھتے ہیں کہ انٹرپرائز آپریشنز کے لیے پیچیدہ انضمام، مطلق ڈیٹا سیکیورٹی، اور اعلیٰ دستیابی کے فن تعمیر کی ضرورت ہوتی ہے۔ ہم حسب ضرورت ERPs، CRMs، اور انٹرپرائز وائیڈ ورک فلو آٹومیشن سسٹم تیار کرنے میں مہارت رکھتے ہیں جو ڈیٹا سائلو کو توڑتے ہیں اور کراس ڈپارٹمنٹل تعاون کو بہتر بناتے ہیں۔ پرانے سسٹمز کو جدید بنا کر اور محفوظ کلاؤڈ انفراسٹرکچر کی طرف ہجرت کر کے، ہم آپ کے ادارے کو تیز رفتار کارپوریٹ منظر نامے میں چست اور مسابقتی رہنے میں مدد کرتے ہیں۔",
+      "features": [
+        "حسب ضرورت ERP کی ترقی",
+        "بزنس پروسیس آٹومیشن",
+        "میراثی نظام کی جدید کاری",
+        "انٹرپرائز انٹیگریشن (API/ESB)",
+        "ورک فلو اور آپریشنز مینجمنٹ",
+        "بزنس انٹیلی جنس ڈیش بورڈز"
+      ],
+      "benefits": [
+        "سینٹرلائزڈ ڈیٹا مینجمنٹ",
+        "پیداواریت اور آٹومیشن میں اضافہ",
+        "انٹرپرائز گریڈ سیکیورٹی اور تعمیل",
+        "توسیع پذیر کلاؤڈ آرکیٹیکچر",
+        "ڈیٹا پر مبنی فیصلہ سازی۔"
+      ],
+      "content": {
+        "process": [
+          { "title": "انٹرپرائز کی ضروریات کا اندازہ", "description": "متعدد محکموں میں پیچیدہ ورک فلو کا تجزیہ کرنا۔" },
+          { "title": "سسٹم آرکیٹیکچر", "description": "توسیع پذیر، مائیکرو سروسز پر مبنی یا یک سنگی ڈھانچے کو ڈیزائن کرنا۔" },
+          { "title": "ترقی", "description": "محفوظ، انٹرپرائز گریڈ کوڈ (Java, .NET, Node.js) لکھنا۔" },
+          { "title": "میراثی ہجرت", "description": "پرانے سسٹمز سے ڈیٹا کی وسیع مقدار کو محفوظ طریقے سے منتقل کرنا۔" },
+          { "title": "انٹرپرائز رول آؤٹ", "description": "مرحلہ وار تعیناتی، سخت حفاظتی آڈیٹنگ، اور عملے کی تربیت۔" }
+        ],
+        "technologies": [
+          "Java",
+          ".NET Core",
+          "Node.js",
+          "PostgreSQL",
+          "Oracle",
+          "Microsoft Azure",
+          "AWS"
+        ],
+        "faq": [
+          { "question": "انٹرپرائز سسٹم تیار کرنے میں کتنا وقت لگتا ہے؟", "answer": "انٹرپرائز سافٹ ویئر انتہائی پیچیدہ ہے۔ دائرہ کار کے لحاظ سے ترقی میں 6 سے 18 ماہ لگ سکتے ہیں۔ ہم فنکشنل ماڈیولز کو بتدریج ڈیلیور کرنے کے لیے چست طریقہ کار کا استعمال کرتے ہیں، تاکہ آپ کو تیزی سے قدر نظر آئے۔" },
+          { "question": "کیا آپ نئے سافٹ ویئر کو ہمارے موجودہ ٹولز جیسے SAP یا Salesforce کے ساتھ جوڑ سکتے ہیں؟", "answer": "بالکل۔ انٹرپرائز انضمام ہمارے کام کا ایک بنیادی حصہ ہے۔ ہم اس بات کو یقینی بنانے کے لیے محفوظ APIs اور Enterprise Service Boses (ESB) کا استعمال کرتے ہیں کہ آپ کا نیا سافٹ ویئر آپ کے موجودہ ماحولیاتی نظام کے ساتھ مکمل طور پر رابطہ کرتا ہے۔" }
+        ]
+      },
+      "metaTitle": "انٹرپرائز سافٹ ویئر ڈویلپمنٹ | کسٹم ERP اور آٹومیشن",
+      "metaDescription": "مضبوط اور قابل توسیع انٹرپرائز سافٹ ویئر حل۔ ہم اپنی مرضی کے مطابق ERPs تیار کرتے ہیں، کاروباری عمل کو خودکار بناتے ہیں، اور بڑی تنظیموں کے لیے پرانے نظام کو جدید بناتے ہیں۔"
+    },
+    "ar": {
+      "name": "برمجيات المؤسسات",
+      "shortDescription": "بناء برامج مؤسسات قوية وقابلة للتطوير ومصممة خصيصًا لاحتياجات عملك.",
+      "fullDescription": "قم بتمكين مؤسستك واسعة النطاق من خلال حلول برمجيات المؤسسات القوية لدينا. نحن ندرك أن عمليات المؤسسات تتطلب تكاملًا معقدًا، وأمن بيانات مطلق، وبنية عالية التوفر. نحن متخصصون في تطوير أنظمة تخطيط موارد المؤسسات (ERP) المخصصة، وإدارة علاقات العملاء (CRM)، وأنظمة أتمتة سير العمل على مستوى المؤسسة التي تحطم الصوامع البياناتية وتحسن التعاون بين الأقسام. من خلال تحديث الأنظمة القديمة والترحيل إلى بنية تحتية سحابية آمنة، نساعد مؤسستك على البقاء رشيقة وتنافسية في مشهد أعمال سريع الخطى.",
+      "features": [
+        "تطوير ERP مخصص",
+        "أتمتة إجراءات العمل",
+        "تحديث الأنظمة القديمة",
+        "تكامل المؤسسات (API / ESB)",
+        "إدارة سير العمل والعمليات",
+        "لوحات معلومات ذكاء الأعمال"
+      ],
+      "benefits": [
+        "إدارة البيانات المركزية",
+        "زيادة الإنتاجية والأتمتة",
+        "أمان وامتثال على مستوى المؤسسة",
+        "بنية سحابية قابلة للتطوير",
+        "اتخاذ قرارات مبنية على البيانات"
+      ],
+      "content": {
+        "process": [
+          { "title": "تقييم احتياجات المؤسسة", "description": "تحليل تدفقات العمل المعقدة عبر أقسام متعددة." },
+          { "title": "بنية النظام", "description": "تصميم هياكل قابلة للتطوير، قائمة على الخدمات المصغرة (microservices) أو متجانسة." },
+          { "title": "التطوير", "description": "كتابة تعليمات برمجية آمنة على مستوى المؤسسة (Java و .NET و Node.js)." },
+          { "title": "الترحيل القديم", "description": "الترحيل الآمن لكميات هائلة من البيانات من الأنظمة القديمة." },
+          { "title": "إطلاق المؤسسة", "description": "نشر على مراحل، تدقيق أمني صارم، وتدريب الموظفين." }
+        ],
+        "technologies": [
+          "Java",
+          ".NET Core",
+          "Node.js",
+          "PostgreSQL",
+          "Oracle",
+          "Microsoft Azure",
+          "AWS"
+        ],
+        "faq": [
+          { "question": "كم من الوقت يستغرق تطوير نظام مؤسسة؟", "answer": "برمجيات المؤسسات معقدة للغاية. يمكن أن يستغرق التطوير من 6 إلى 18 شهرًا حسب النطاق. نستخدم منهجيات Agile لتقديم الوحدات الوظيفية بشكل تدريجي، حتى ترى القيمة بشكل أسرع." },
+          { "question": "هل يمكنك دمج البرنامج الجديد مع أدواتنا الحالية مثل SAP أو Salesforce؟", "answer": "بالتأكيد. تكامل المؤسسات هو جزء أساسي مما نقوم به. نستخدم واجهات برمجة تطبيقات آمنة (APIs) وناقلات خدمة المؤسسات (ESB) لضمان تواصل برنامجك الجديد بشكل مثالي مع نظامك البيئي الحالي." }
+        ]
+      },
+      "metaTitle": "تطوير برمجيات المؤسسات | ERP المخصص والأتمتة",
+      "metaDescription": "حلول برمجية قوية وقابلة للتطوير للمؤسسات. نقوم بتطوير ERP المخصص، وأتمتة العمليات التجارية، وتحديث الأنظمة القديمة للمنظمات الكبيرة."
+    }
+  }
+}

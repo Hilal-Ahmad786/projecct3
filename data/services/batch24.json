@@ -1,0 +1,436 @@
+{
+  "smart-contract-development": {
+    "en": {
+      "name": "Smart Contract Development",
+      "shortDescription": "Develop and audit smart contracts for DeFi, NFTs, DAOs, and custom blockchain applications.",
+      "fullDescription": "Smart contracts are the backbone of any decentralized application (dApp). Because they execute autonomously and often hold millions of dollars in digital assets, their code must be flawless. Our Smart Contract Development services cover the entire lifecycle: from architectural design and tokenomics consulting to writing highly optimized Solidity/Rust code, rigorous testing, and third-party security audits. Whether you are building an automated market maker (AMM) for DeFi, creating custom governance rules for a DAO, or launching a massive NFT collection, we ensure your contracts are secure, gas-efficient, and easily upgradeable via proxy patterns.",
+      "features": [
+        "DeFi Protocol Development (DEXs, Lending, Staking)",
+        "ERC-20 & ERC-721/1155 Token Creation",
+        "DAO & On-Chain Governance Contracts",
+        "Proxy Patterns for Upgradeable Contracts",
+        "Gas Optimization to Reduce Transaction Fees",
+        "Integration with Chainlink Oracles"
+      ],
+      "benefits": [
+        "Uncompromising Security against Known Vulnerabilities (Reentrancy, etc.)",
+        "Lower Operating Costs via Advanced Gas Optimization",
+        "Future-Proof Architecture with Upgradeable Proxy Patterns",
+        "Flawless Execution of Complex Business Logic On-Chain",
+        "Seamless Integration with Web3 Frontends"
+      ],
+      "content": {
+        "process": [
+          { "title": "Requirements & Tokenomics", "description": "Defining the mathematical models, incentives, and exact business logic the contract must execute." },
+          { "title": "Architecture Design", "description": "Mapping out contract interactions, inheritance structures, and choosing standard libraries (OpenZeppelin)." },
+          { "title": "Development & Testing", "description": "Writing the code using Hardhat/Foundry and creating exhaustive unit and fuzz testing suites." },
+          { "title": "Security Audit", "description": "Conducting internal peer reviews followed by coordinating with independent, top-tier external auditors." },
+          { "title": "Mainnet Deployment", "description": "Deploying contracts to Ethereum, Polygon, or Solana via secure Multi-Sig wallets." }
+        ],
+        "technologies": [
+          "Solidity / Rust (Solana)",
+          "Hardhat / Foundry",
+          "OpenZeppelin Contracts",
+          "Chainlink (Oracles)",
+          "Ethers.js / Web3.js",
+          "Slither / Mythril (Security Analysis)"
+        ],
+        "faq": [
+          { "question": "Why is Gas Optimization so important?", "answer": "Every operation on a blockchain costs 'gas' (money). If a smart contract is poorly written, interacting with it becomes prohibitively expensive for your users. We optimize the bytecode so your users pay the lowest possible fees per transaction." },
+          { "question": "Can a smart contract be changed once deployed?", "answer": "By default, no; they are immutable. However, we utilize 'Proxy Patterns' which separate the contract logic from its data. This allows us to upgrade the logic contract in the future to add features or fix bugs without losing user data or balances." }
+        ]
+      },
+      "metaTitle": "Smart Contract Development Company | Solidity Experts",
+      "metaDescription": "Develop secure, gas-optimized smart contracts for DeFi, DAOs, and NFTs. We specialize in Solidity, Foundry, and rigorous security auditing."
+    },
+    "tr": {
+      "name": "Akıllı Sözleşme (Smart Contract) Geliştirme",
+      "shortDescription": "DeFi, NFT'ler, DAO'lar ve özel blok zinciri uygulamaları için akıllı sözleşmeler geliştirin ve denetleyin.",
+      "fullDescription": "Akıllı sözleşmeler, herhangi bir merkezi olmayan uygulamanın (dApp) omurgasıdır. Otonom olarak çalıştıkları ve genellikle milyonlarca dolarlık dijital varlığı ellerinde tuttukları için kodları kusursuz olmalıdır. Akıllı Sözleşme Geliştirme hizmetlerimiz tüm yaşam döngüsünü kapsar: mimari tasarım ve tokenomik danışmanlıktan, son derece optimize edilmiş Solidity/Rust kodunun yazılmasına, titiz testlere ve üçüncü taraf güvenlik denetimlerine kadar. DeFi için otomatik bir piyasa yapıcı (AMM) oluşturuyor, bir DAO için özel yönetişim kuralları yaratıyor veya devasa bir NFT koleksiyonu başlatıyor olun, sözleşmelerinizin güvenli, gaz açısından verimli ve proxy (vekil) modelleri aracılığıyla kolayca yükseltilebilir olmasını sağlıyoruz.",
+      "features": [
+        "DeFi Protokolü Geliştirme (DEX'ler, Borç Verme, Staking)",
+        "ERC-20 ve ERC-721/1155 Token Oluşturma",
+        "DAO ve Zincir İçi (On-Chain) Yönetişim Sözleşmeleri",
+        "Yükseltilebilir Sözleşmeler için Proxy (Vekil) Modelleri",
+        "İşlem Ücretlerini Düşürmek İçin Gaz Optimizasyonu",
+        "Chainlink Oracle'ları ile Entegrasyon"
+      ],
+      "benefits": [
+        "Bilinen Güvenlik Açıklarına Karşı Tavizsiz Güvenlik (Örn. Reentrancy)",
+        "Gelişmiş Gaz Optimizasyonu Yoluyla Düşük İşletme Maliyetleri",
+        "Yükseltilebilir Proxy Modelleriyle Geleceğe Hazır Mimari",
+        "Karmaşık İş Mantığının Zincir Üzerinde (On-Chain) Kusursuz Yürütülmesi",
+        "Web3 Ön Uçlarıyla (Front-end) Sorunsuz Entegrasyon"
+      ],
+      "content": {
+        "process": [
+          { "title": "Gereksinimler ve Tokenomik", "description": "Sözleşmenin yürütmesi gereken matematiksel modelleri, teşvikleri ve kesin iş mantığını tanımlama." },
+          { "title": "Mimari Tasarım", "description": "Sözleşme etkileşimlerini, kalıtım (inheritance) yapılarını haritalandırma ve standart kütüphaneleri (OpenZeppelin) seçme." },
+          { "title": "Geliştirme ve Test", "description": "Hardhat/Foundry kullanarak kodu yazma ve kapsamlı birim (unit) ile fuzz test paketleri oluşturma." },
+          { "title": "Güvenlik Denetimi", "description": "Dahili hakem değerlendirmeleri (peer review) yapma, ardından bağımsız, üst düzey harici denetçilerle koordinasyon sağlama." },
+          { "title": "Mainnet Dağıtımı", "description": "Güvenli Multi-Sig (Çoklu İmza) cüzdanları aracılığıyla sözleşmeleri Ethereum, Polygon veya Solana'da dağıtma." }
+        ],
+        "technologies": [
+          "Solidity / Rust (Solana)",
+          "Hardhat / Foundry",
+          "OpenZeppelin Sözleşmeleri",
+          "Chainlink (Oracle'lar)",
+          "Ethers.js / Web3.js",
+          "Slither / Mythril (Güvenlik Analizi)"
+        ],
+        "faq": [
+          { "question": "Gaz Optimizasyonu neden bu kadar önemli?", "answer": "Bir blok zincirindeki her işlemin bir 'gaz' (para) maliyeti vardır. Kötü yazılmış bir akıllı sözleşmeyle etkileşim kurmak kullanıcılarınız için aşırı pahalı hale gelir. Bytecode'u optimize ediyoruz, böylece kullanıcılarınız işlem başına mümkün olan en düşük ücretleri ödüyor." },
+          { "question": "Bir akıllı sözleşme dağıtıldıktan (deploy) sonra değiştirilebilir mi?", "answer": "Varsayılan olarak hayır; değiştirilemezler. Ancak, sözleşme mantığını verilerinden ayıran 'Proxy Modelleri' kullanıyoruz. Bu, kullanıcı verilerini veya bakiyelerini kaybetmeden özellik eklemek veya hataları düzeltmek için mantık sözleşmesini gelecekte yükseltmemize (upgrade) olanak tanır." }
+        ]
+      },
+      "metaTitle": "Akıllı Sözleşme (Smart Contract) Geliştirme Şirketi | Solidity Uzmanları",
+      "metaDescription": "DeFi, DAO'lar ve NFT'ler için güvenli, gaz açısından optimize edilmiş akıllı sözleşmeler geliştirin. Solidity, Foundry ve titiz güvenlik denetimi konusunda uzmanız."
+    },
+    "de": {
+      "name": "Smart Contract Entwicklung",
+      "shortDescription": "Entwicklung und Auditierung von Smart Contracts für DeFi, NFTs, DAOs und Blockchains.",
+      "fullDescription": "Smart Contracts sind das Rückgrat jeder dezentralen Anwendung (dApp). Da sie autonom ausgeführt werden und oft Millionen von Dollar an digitalen Assets verwalten, muss ihr Code fehlerfrei sein. Unsere Dienstleistungen zur Smart-Contract-Entwicklung decken den gesamten Lebenszyklus ab: von der Architekturplanung und Tokenomics-Beratung über das Schreiben hochoptimierten Solidity/Rust-Codes bis hin zu strengen Tests und externen Sicherheitsaudits. Egal, ob Sie einen Automated Market Maker (AMM) für DeFi bauen, eigene Governance-Regeln für eine DAO erstellen oder eine riesige NFT-Kollektion launchen – wir sorgen dafür, dass Ihre Verträge sicher, gas-effizient und durch Proxy-Patterns leicht aktualisierbar sind.",
+      "features": [
+        "DeFi-Protokollentwicklung (DEXs, Lending, Staking)",
+        "ERC-20 & ERC-721/1155 Token-Erstellung",
+        "DAO- & On-Chain-Governance-Verträge",
+        "Proxy-Patterns für aktualisierbare Verträge",
+        "Gas-Optimierung zur Reduzierung der Transaktionsgebühren",
+        "Integration mit Chainlink Oracles"
+      ],
+      "benefits": [
+        "Kompromisslose Sicherheit gegen bekannte Schwachstellen (z.B. Reentrancy)",
+        "Niedrigere Betriebskosten durch fortschrittliche Gas-Optimierung",
+        "Zukunftssichere Architektur mit aktualisierbaren Proxy-Patterns",
+        "Fehlerfreie Ausführung komplexer Geschäftslogik On-Chain",
+        "Nahtlose Integration mit Web3-Frontends"
+      ],
+      "content": {
+        "process": [
+          { "title": "Anforderungen & Tokenomics", "description": "Definition der mathematischen Modelle und der exakten Geschäftslogik." },
+          { "title": "Architektur-Design", "description": "Planung der Vertragsinteraktionen und Auswahl der Standardbibliotheken (OpenZeppelin)." },
+          { "title": "Entwicklung & Testing", "description": "Schreiben des Codes mit Hardhat/Foundry sowie umfassendes Unit- und Fuzz-Testing." },
+          { "title": "Sicherheitsaudit", "description": "Interne Code-Reviews und Koordination mit unabhängigen externen Top-Auditoren." },
+          { "title": "Mainnet-Deployment", "description": "Bereitstellung der Contracts auf Ethereum, Polygon oder Solana über sichere Multi-Sig-Wallets." }
+        ],
+        "technologies": [
+          "Solidity / Rust (Solana)",
+          "Hardhat / Foundry",
+          "OpenZeppelin Contracts",
+          "Chainlink (Oracles)",
+          "Ethers.js / Web3.js",
+          "Slither / Mythril"
+        ],
+        "faq": [
+          { "question": "Warum ist Gas-Optimierung so wichtig?", "answer": "Jede Operation auf einer Blockchain kostet 'Gas' (Geld). Ist ein Vertrag schlecht geschrieben, wird die Nutzung für Ihre User extrem teuer. Wir optimieren den Bytecode für minimalste Transaktionskosten." },
+          { "question": "Kann ein Smart Contract nach dem Deployment geändert werden?", "answer": "Standardmäßig nein. Wir nutzen jedoch 'Proxy-Patterns', welche die Logik von den Daten trennen. So können wir die Logik später updaten, um Features hinzuzufügen, ohne Nutzerguthaben zu verlieren." }
+        ]
+      },
+      "metaTitle": "Smart Contract Entwicklungsagentur | Solidity Experten",
+      "metaDescription": "Entwickeln Sie sichere, gas-optimierte Smart Contracts für DeFi, DAOs und NFTs. Spezialisiert auf Solidity, Foundry und strenge Sicherheitsaudits."
+    },
+    "ur": {
+      "name": "اسمارٹ کنٹریکٹ ڈیولپمنٹ",
+      "shortDescription": "ڈی فائی، این ایف ٹیز، ڈی اے اوز، اور کسٹم بلاک چین ایپلی کیشنز کے لیے سمارٹ معاہدے تیار اور آڈٹ کریں۔",
+      "fullDescription": "اسمارٹ معاہدے کسی بھی وکندریقرت ایپلی کیشن (dApp) کی ریڑھ کی ہڈی ہیں۔ چونکہ وہ خود مختار طریقے سے کام کرتے ہیں اور اکثر لاکھوں ڈالر کے ڈیجیٹل اثاثے رکھتے ہیں، اس لیے ان کا کوڈ بے عیب ہونا چاہیے۔ ہماری سمارٹ کنٹریکٹ ڈیولپمنٹ سروسز پورے لائف سائیکل کا احاطہ کرتی ہیں: آرکیٹیکچرل ڈیزائن اور ٹوکنومکس کنسلٹنگ سے لے کر انتہائی مطلوبہ سولیڈیٹی/رسٹ کوڈ لکھنے، سخت جانچ، اور فریق ثالث کے سیکیورٹی آڈٹ تک۔ چاہے آپ DeFi کے لیے ایک خودکار مارکیٹ بنانے والا (AMM) بنا رہے ہیں، ایک DAO کے لیے حسب ضرورت طرز حکمرانی کے اصول بنا رہے ہیں، یا بڑے پیمانے پر NFT مجموعہ شروع کر رہے ہیں، ہم اس بات کو یقینی بناتے ہیں کہ آپ کے معاہدے محفوظ، گیس سے کارآمد، اور پراکسی پیٹرن کے ذریعے آسانی سے اپ گریڈ ہونے کے قابل ہیں۔",
+      "features": [
+        "DeFi پروٹوکول ڈیولپمنٹ (DEXs، قرض دینا، اسٹیکنگ)",
+        "ERC-20 اور ERC-721/1155 ٹوکن کی تخلیق",
+        "ڈی اے او اور آن چین گورننس کے معاہدے",
+        "اپ گریڈ ایبل معاہدوں کے لیے پراکسی پیٹرن",
+        "ٹرانزیکشن فیس کو کم کرنے کے لیے گیس کی اصلاح",
+        "چین لنک اوریکلز کے ساتھ انضمام"
+      ],
+      "benefits": [
+        "معلوم کمزوریوں کے خلاف غیر سمجھوتہ سیکیورٹی (دوبارہ داخلہ، وغیرہ۔)",
+        "ایڈوانسڈ گیس آپٹیمائزیشن کے ذریعے کم آپریٹنگ اخراجات",
+        "اپ گریڈ ایبل پراکسی پیٹرنز کے ساتھ مستقبل کا ثبوت آرکیٹیکچر",
+        "پیچیدہ بزنس لاجک آن چین کا بے عیب نفاذ",
+        "Web3 فرنٹ اینڈز کے ساتھ ہموار انضمام"
+      ],
+      "content": {
+        "process": [
+          { "title": "تقاضے اور ٹوکنومکس", "description": "ریاضیاتی ماڈلز، مراعات، اور صحیح کاروباری منطق کی تعریف کرنا جس پر معاہدہ پر عمل کرنا ضروری ہے۔" },
+          { "title": "آرکیٹیکچر ڈیزائن", "description": "معاہدے کے تعاملات کی نقشہ سازی، وراثت کے ڈھانچے، اور معیاری لائبریریوں کا انتخاب (OpenZeppelin)۔" },
+          { "title": "ترقی اور جانچ", "description": "ہارڈ ہیٹ/فاؤنڈری کا استعمال کرتے ہوئے کوڈ لکھنا اور مکمل یونٹ اور فز ٹیسٹنگ سویٹس بنانا۔" },
+          { "title": "سیکیورٹی آڈٹ", "description": "اندرونی ہم مرتبہ کے جائزوں کا انعقاد اس کے بعد آزاد، اعلیٰ درجے کے بیرونی آڈیٹرز کے ساتھ ہم آہنگی کرنا۔" },
+          { "title": "مین نیٹ کی تعیناتی", "description": "محفوظ ملٹی سگ بٹوے کے ذریعے ایتھریم، پولی گون، یا سولانا میں معاہدے تعینات کرنا۔" }
+        ],
+        "technologies": [
+          "Solidity / Rust (Solana)",
+          "Hardhat / Foundry",
+          "OpenZeppelin Contracts",
+          "Chainlink (Oracles)",
+          "Ethers.js / Web3.js",
+          "Slither / Mythril (Security Analysis)"
+        ],
+        "faq": [
+          { "question": "گیس کی اصلاح اتنی اہم کیوں ہے؟", "answer": "بلاکچین پر ہر آپریشن پر 'گیس' (پیسہ) خرچ ہوتا ہے۔ اگر ایک سمارٹ معاہدہ خراب لکھا ہوا ہے، تو اس کے ساتھ بات چیت آپ کے صارفین کے لیے ممنوعہ طور پر مہنگی ہو جاتی ہے۔ ہم بائیک کوڈ کو بہتر بناتے ہیں تاکہ آپ کے صارفین ہر لین دین کی سب سے کم فیس ادا کریں۔" },
+          { "question": "کیا ایک بار تعینات ہونے کے بعد سمارٹ معاہدہ تبدیل کیا جا سکتا ہے؟", "answer": "پہلے سے طے شدہ طور پر، نہیں؛ وہ ناقابل تغیر ہیں۔ تاہم، ہم 'پراکسی پیٹرنز' کا استعمال کرتے ہیں جو معاہدے کی منطق کو اس کے ڈیٹا سے الگ کرتے ہیں۔ یہ ہمیں مستقبل میں منطقی معاہدے کو اپ گریڈ کرنے کی اجازت دیتا ہے تاکہ صارف کا ڈیٹا یا بیلنس ضائع کیے بغیر فیچرز شامل کیے جا سکیں یا کیڑے ٹھیک کیے جا سکیں۔" }
+        ]
+      },
+      "metaTitle": "سمارٹ کنٹریکٹ ڈیولپمنٹ کمپنی | یکجہتی کے ماہرین",
+      "metaDescription": "DeFi، DAOs، اور NFTs کے لیے محفوظ، گیس سے بھرپور سمارٹ معاہدے تیار کریں۔ ہم سولیڈیٹی، فاؤنڈری، اور سخت سیکیورٹی آڈیٹنگ میں مہارت رکھتے ہیں۔"
+    },
+    "ar": {
+      "name": "تطوير العقود الذكية (Smart Contract Development)",
+      "shortDescription": "تطوير وتدقيق العقود الذكية لـ DeFi، NFTs، DAOs، وتطبيقات البلوك تشين المخصصة.",
+      "fullDescription": "العقود الذكية هي العمود الفقري لأي تطبيق لامركزي (dApp). لأنها تُنفذ بشكل مستقل وغالبًا ما تحتفظ بملايين الدولارات من الأصول الرقمية، يجب أن يكون الكود البرمجي الخاص بها خاليًا من العيوب. تغطي خدمات تطوير العقود الذكية لدينا دورة الحياة بأكملها: من التصميم المعماري واستشارات الـ Tokenomics إلى كتابة كود Solidity/Rust المحسن للغاية، والاختبار الصارم، والتدقيق الأمني من قبل جهات خارجية. سواء كنت تبني صانع سوق آلي (AMM) للتمويل اللامركزي (DeFi)، أو تنشئ قواعد حوكمة مخصصة لمنظمة مستقلة لامركزية (DAO)، أو تطلق مجموعة NFT ضخمة، فإننا نضمن أن تكون عقودك آمنة، وموفرة للرسوم (Gas-efficient)، وقابلة للترقية بسهولة عبر أنماط الوكيل (Proxy patterns).",
+      "features": [
+        "تطوير بروتوكولات التمويل اللامركزي DeFi (المنصات اللامركزية، الإقراض، Staking)",
+        "إنشاء رموز (Tokens) بمعايير ERC-20 و ERC-721/1155",
+        "عقود الحوكمة على السلسلة (On-Chain) والـ DAO",
+        "أنماط الوكيل (Proxy) للعقود القابلة للترقية",
+        "تحسين رسوم الغاز (Gas Optimization) لتقليل تكاليف المعاملات",
+        "التكامل مع Chainlink Oracles لجلب البيانات الخارجية"
+      ],
+      "benefits": [
+        "أمان لا هوادة فيه ضد الثغرات المعروفة (مثل Reentrancy)",
+        "تكاليف تشغيل أقل للمستخدمين بفضل التحسين المتقدم للغاز",
+        "بنية تحتية للمستقبل مع أنماط الوكيل القابلة للترقية",
+        "تنفيذ خالٍ من العيوب لمنطق الأعمال المعقد على السلسلة",
+        "تكامل سلس مع واجهات الويب 3 (Web3 Frontends)"
+      ],
+      "content": {
+        "process": [
+          { "title": "المتطلبات واقتصاديات الرمز (Tokenomics)", "description": "تحديد النماذج الرياضية، والحوافز، ومنطق العمل الدقيق الذي يجب أن ينفذه العقد." },
+          { "title": "تصميم البنية الهندسية", "description": "تخطيط تفاعلات العقود، وهياكل الوراثة (Inheritance)، واختيار المكتبات القياسية (OpenZeppelin)." },
+          { "title": "التطوير والاختبار", "description": "كتابة الكود باستخدام Hardhat/Foundry وإنشاء أجنحة اختبار شاملة (Unit & Fuzz testing)." },
+          { "title": "التدقيق الأمني (Security Audit)", "description": "إجراء مراجعات داخلية تليها التنسيق مع مدققين خارجيين مستقلين من الدرجة الأولى." },
+          { "title": "النشر على الشبكة الرئيسية (Mainnet)", "description": "نشر العقود على شبكات Ethereum أو Polygon أو Solana عبر محافظ آمنة متعددة التوقيعات (Multi-Sig)." }
+        ],
+        "technologies": [
+          "Solidity / Rust (Solana)",
+          "Hardhat / Foundry",
+          "عقود OpenZeppelin",
+          "Chainlink (Oracles)",
+          "Ethers.js / Web3.js",
+          "Slither / Mythril (للتحليل الأمني)"
+        ],
+        "faq": [
+          { "question": "لماذا يعتبر تحسين رسوم الغاز (Gas Optimization) مهمًا جدًا؟", "answer": "كل عملية على البلوك تشين تكلف 'غازًا' (مالًا). إذا تمت كتابة العقد الذكي بشكل سيئ، يصبح التفاعل معه مكلفًا للغاية بالنسبة للمستخدمين. نحن نقوم بتحسين الكود المصدري (Bytecode) حتى يدفع المستخدمون أقل رسوم ممكنة لكل معاملة." },
+          { "question": "هل يمكن تغيير العقد الذكي بمجرد نشره؟", "answer": "بشكل افتراضي، لا؛ فهي غير قابلة للتغيير. ومع ذلك، نحن نستخدم 'أنماط الوكيل' (Proxy Patterns) التي تفصل منطق العقد عن بياناته. يتيح لنا ذلك ترقية عقد المنطق في المستقبل لإضافة ميزات أو إصلاح الأخطاء دون فقدان بيانات المستخدم أو الأرصدة." }
+        ]
+      },
+      "metaTitle": "شركة تطوير العقود الذكية | خبراء Solidity",
+      "metaDescription": "طوّر عقودًا ذكية آمنة ومُحسّنة الغاز لـ DeFi و DAOs و NFTs. نحن متخصصون في Solidity و Foundry والتدقيق الأمني الصارم."
+    }
+  },
+  "smart-contracts": {
+    "en": {
+      "name": "Smart Contracts",
+      "shortDescription": "Build secure, audited smart contracts for blockchain applications.",
+      "fullDescription": "Smart Contracts are self-executing programs that run on the blockchain, eliminating the need for intermediaries while ensuring 100% transparency. Our Web3 team provides end-to-end Smart Contract services focused heavily on the Solidity ecosystem (Ethereum, BSC, Polygon). We don't just write code; we build financial primitives. From simple token launches to complex staking algorithms and Multi-Sig wallet logic, our contracts are built using OpenZeppelin standards. Security is our absolute priority—every line of code undergoes automated analysis, fuzzing, and manual peer review to protect your community's assets.",
+      "features": [
+        "Custom Solidity Code Development",
+        "Internal Security Auditing & Fuzz Testing",
+        "Advanced Gas Optimization",
+        "Upgradeable Contracts (Transparent & UUPS Proxies)",
+        "Multi-Signature Wallet Integrations (Gnosis Safe)",
+        "Automated Test Coverage (Hardhat/Foundry)"
+      ],
+      "benefits": [
+        "Deploy with Absolute Confidence in Security",
+        "Guarantee Immutability & Transparency for Users",
+        "Minimize Transaction Costs with Efficient Code",
+        "Retain the Ability to Patch Bugs via Proxies",
+        "Adhere to the Highest Web3 Industry Standards"
+      ],
+      "content": {
+        "process": [
+          { "title": "Logic Specification", "description": "Documenting exactly what conditions trigger which automated actions on the blockchain." },
+          { "title": "Secure Coding", "description": "Writing the smart contracts using Solidity and the battle-tested OpenZeppelin library." },
+          { "title": "Test-Driven Development", "description": "Writing scripts that test every possible edge case, achieving near 100% test coverage." },
+          { "title": "Testnet Deployment", "description": "Deploying to Goerli/Sepolia for client interaction and front-end integration testing." },
+          { "title": "Production Release", "description": "Verifying the source code on Etherscan and relinquishing or assigning admin privileges." }
+        ],
+        "technologies": [
+          "Solidity",
+          "Hardhat",
+          "Foundry",
+          "OpenZeppelin",
+          "Etherscan Verification",
+          "Gnosis Safe (Multi-Sig)"
+        ],
+        "faq": [
+          { "question": "Do you provide an audit report?", "answer": "We provide a comprehensive internal audit report detailing the automated and manual testing performed. For contracts holding significant value, we strongly assist in facilitating a third-party external audit." },
+          { "question": "What happens if a bug is found after launch?", "answer": "If the contract is deployed using an Upgradeable Proxy pattern, the administrator (usually a Multi-Sig wallet controlled by you) can deploy a patched logic contract while preserving all user balances and states." }
+        ]
+      },
+      "metaTitle": "Smart Contracts Development Services | Secure Web3 Solutions",
+      "metaDescription": "Build secure, audited Solidity smart contracts. We specialize in OpenZeppelin standards, gas optimization, and upgradeable proxy architectures."
+    },
+    "tr": {
+      "name": "Akıllı Sözleşmeler (Smart Contracts)",
+      "shortDescription": "Blok zinciri uygulamaları için güvenli, denetlenmiş akıllı sözleşmeler oluşturun.",
+      "fullDescription": "Akıllı Sözleşmeler, blok zincirinde çalışan, %100 şeffaflık sağlarken aracı ihtiyacını ortadan kaldıran kendi kendini yürüten (self-executing) programlardır. Web3 ekibimiz, ağırlıklı olarak Solidity ekosistemine (Ethereum, BSC, Polygon) odaklanan uçtan uca Akıllı Sözleşme hizmetleri sunmaktadır. Biz sadece kod yazmıyoruz; finansal temeller inşa ediyoruz. Basit token lansmanlarından karmaşık staking algoritmalarına ve Multi-Sig (çoklu imza) cüzdan mantığına kadar sözleşmelerimiz OpenZeppelin standartları kullanılarak oluşturulur. Güvenlik mutlak önceliğimizdir; kodun her satırı, topluluğunuzun varlıklarını korumak için otomatik analize, fuzzing'e ve manuel hakem incelemesine (peer review) tabi tutulur.",
+      "features": [
+        "Özel Solidity Kod Geliştirme",
+        "Dahili Güvenlik Denetimi ve Fuzz Testi",
+        "Gelişmiş Gaz Optimizasyonu",
+        "Yükseltilebilir Sözleşmeler (Şeffaf ve UUPS Proxy'leri)",
+        "Çoklu İmza (Multi-Signature) Cüzdan Entegrasyonları (Gnosis Safe)",
+        "Otomatik Test Kapsamı (Hardhat/Foundry)"
+      ],
+      "benefits": [
+        "Güvenlik Konusunda Mutlak Güvenle Dağıtım (Deploy)",
+        "Kullanıcılar İçin Değişmezliği ve Şeffaflığı Garanti Etme",
+        "Verimli Kod ile İşlem Maliyetlerini En Aza İndirme",
+        "Proxy'ler Aracılığıyla Hataları Yamama (Patch) Yeteneğini Koruma",
+        "En Yüksek Web3 Endüstri Standartlarına Bağlılık"
+      ],
+      "content": {
+        "process": [
+          { "title": "Mantık Spesifikasyonu", "description": "Blok zincirinde hangi koşulların hangi otomatik eylemleri tetiklediğini tam olarak belgeleme." },
+          { "title": "Güvenli Kodlama", "description": "Solidity ve savaşta test edilmiş OpenZeppelin kütüphanesini kullanarak akıllı sözleşmeleri yazma." },
+          { "title": "Test Odaklı Geliştirme", "description": "Neredeyse %100 test kapsamına ulaşarak olası her uç durumu (edge case) test eden komut dosyaları yazma." },
+          { "title": "Testnet Dağıtımı", "description": "İstemci etkileşimi ve ön uç (front-end) entegrasyon testi için Goerli/Sepolia'ya dağıtma." },
+          { "title": "Üretime Sürüm (Production Release)", "description": "Etherscan üzerinde kaynak kodunu doğrulama ve yönetici ayrıcalıklarından feragat etme veya devretme." }
+        ],
+        "technologies": [
+          "Solidity",
+          "Hardhat",
+          "Foundry",
+          "OpenZeppelin",
+          "Etherscan Doğrulaması",
+          "Gnosis Safe (Multi-Sig)"
+        ],
+        "faq": [
+          { "question": "Bir denetim (audit) raporu sunuyor musunuz?", "answer": "Gerçekleştirilen otomatik ve manuel testleri detaylandıran kapsamlı bir dahili denetim raporu sunuyoruz. Önemli değer taşıyan sözleşmeler için, üçüncü taraf bir dış denetimin kolaylaştırılmasına da güçlü bir şekilde destek oluyoruz." },
+          { "question": "Lansmandan sonra bir hata (bug) bulunursa ne olur?", "answer": "Sözleşme Yükseltilebilir Proxy (Upgradeable Proxy) modeli kullanılarak dağıtılmışsa, yönetici (genellikle sizin tarafınızdan kontrol edilen bir Multi-Sig cüzdanı) tüm kullanıcı bakiyelerini ve durumlarını korurken yamalı bir mantık sözleşmesi dağıtabilir." }
+        ]
+      },
+      "metaTitle": "Akıllı Sözleşme Geliştirme Hizmetleri | Güvenli Web3 Çözümleri",
+      "metaDescription": "Güvenli, denetlenmiş Solidity akıllı sözleşmeleri oluşturun. OpenZeppelin standartları, gaz optimizasyonu ve yükseltilebilir proxy mimarilerinde uzmanız."
+    },
+    "de": {
+      "name": "Smart Contracts",
+      "shortDescription": "Erstellen Sie sichere, auditierte Smart Contracts für Blockchain-Anwendungen.",
+      "fullDescription": "Smart Contracts sind selbstausführende Programme, die auf der Blockchain laufen, Vermittler überflüssig machen und 100% Transparenz gewährleisten. Unser Web3-Team bietet End-to-End-Smart-Contract-Dienste, die stark auf das Solidity-Ökosystem (Ethereum, BSC, Polygon) fokussiert sind. Wir schreiben nicht nur Code; wir bauen finanzielle Grundbausteine. Von einfachen Token-Launches bis hin zu komplexen Staking-Algorithmen und Multi-Sig-Wallet-Logiken werden unsere Verträge nach OpenZeppelin-Standards entwickelt. Sicherheit ist unsere absolute Priorität – jede Codezeile durchläuft automatisierte Analysen, Fuzzing und manuelle Peer-Reviews, um die Assets Ihrer Community zu schützen.",
+      "features": [
+        "Individuelle Solidity Code-Entwicklung",
+        "Interne Sicherheitsaudits & Fuzz-Testing",
+        "Fortgeschrittene Gas-Optimierung",
+        "Aktualisierbare Verträge (Transparent & UUPS Proxies)",
+        "Multi-Signature-Wallet Integrationen (Gnosis Safe)",
+        "Automatisierte Testabdeckung (Hardhat/Foundry)"
+      ],
+      "benefits": [
+        "Deployment mit absolutem Vertrauen in die Sicherheit",
+        "Garantie von Unveränderlichkeit & Transparenz für Nutzer",
+        "Minimierung der Transaktionskosten durch effizienten Code",
+        "Möglichkeit, Bugs via Proxies zu patchen",
+        "Einhaltung der höchsten Web3-Branchenstandards"
+      ],
+      "content": {
+        "process": [
+          { "title": "Logik-Spezifikation", "description": "Genaue Dokumentation, welche Bedingungen welche Aktionen auf der Blockchain auslösen." },
+          { "title": "Sicheres Coding", "description": "Schreiben der Smart Contracts mit Solidity und der bewährten OpenZeppelin-Bibliothek." },
+          { "title": "Test-Driven Development", "description": "Skripte, die jeden Edge-Case testen, um nahezu 100% Testabdeckung zu erreichen." },
+          { "title": "Testnet-Deployment", "description": "Bereitstellung auf Testnetzwerken für Kundeninteraktion und Frontend-Tests." },
+          { "title": "Production Release", "description": "Verifizierung des Quellcodes auf Etherscan und Zuweisung von Admin-Rechten." }
+        ],
+        "technologies": [
+          "Solidity",
+          "Hardhat",
+          "Foundry",
+          "OpenZeppelin",
+          "Etherscan Verification",
+          "Gnosis Safe (Multi-Sig)"
+        ],
+        "faq": [
+          { "question": "Liefern Sie einen Audit-Bericht?", "answer": "Wir erstellen einen umfassenden internen Audit-Bericht. Bei Verträgen mit hohem Wert unterstützen wir nachdrücklich bei der Durchführung eines externen Audits durch Dritte." },
+          { "question": "Was passiert, wenn nach dem Launch ein Bug gefunden wird?", "answer": "Ist der Vertrag als Upgradeable Proxy konzipiert, kann der Administrator einen gepatchten Logik-Vertrag bereitstellen, während alle Nutzerguthaben erhalten bleiben." }
+        ]
+      },
+      "metaTitle": "Smart Contracts Entwicklungsdienste | Web3 & Solidity",
+      "metaDescription": "Bauen Sie sichere, auditierte Solidity Smart Contracts. Spezialisiert auf OpenZeppelin, Gas-Optimierung und aktualisierbare Proxy-Architekturen."
+    },
+    "ur": {
+      "name": "اسمارٹ معاہدے",
+      "shortDescription": "بلاکچین ایپلی کیشنز کے لیے محفوظ، آڈٹ شدہ سمارٹ معاہدے بنائیں۔",
+      "fullDescription": "اسمارٹ کنٹریکٹس خود کو انجام دینے والے پروگرام ہیں جو 100% شفافیت کو یقینی بناتے ہوئے بیچوانوں کی ضرورت کو ختم کرتے ہوئے بلاکچین پر چلتے ہیں۔ ہماری Web3 ٹیم سولیڈیٹی ایکو سسٹم (ایتھریم، بی ایس سی، پولی گون) پر بہت زیادہ توجہ مرکوز کرتے ہوئے اینڈ ٹو اینڈ سمارٹ کنٹریکٹ سروسز فراہم کرتی ہے۔ ہم صرف کوڈ نہیں لکھتے؛ ہم مالیاتی ترجیحات بناتے ہیں۔ سادہ ٹوکن لانچ سے لے کر پیچیدہ اسٹیکنگ الگورتھم اور ملٹی سگ والیٹ کی منطق تک، ہمارے معاہدے OpenZeppelin کے معیارات کا استعمال کرتے ہوئے بنائے گئے ہیں۔ سیکیورٹی ہماری اولین ترجیح ہے—آپ کی کمیونٹی کے اثاثوں کی حفاظت کے لیے کوڈ کی ہر لائن خودکار تجزیہ، فزنگ، اور دستی ہم مرتبہ کے جائزے سے گزرتی ہے۔",
+      "features": [
+        "حسب ضرورت سولڈیٹی کوڈ ڈیولپمنٹ",
+        "اندرونی سیکیورٹی آڈیٹنگ اور فز ٹیسٹنگ",
+        "ایڈوانسڈ گیس کی اصلاح",
+        "اپ گریڈ ایبل معاہدے (شفاف اور UUPS پراکسی)",
+        "ملٹی سگنیچر والیٹ انضمام (Gnosis Safe)",
+        "خودکار ٹیسٹ کوریج (ہارڈ ہیٹ/فاؤنڈری)"
+      ],
+      "benefits": [
+        "سیکیورٹی میں مکمل اعتماد کے ساتھ تعینات کریں۔",
+        "صارفین کے لیے استثنیٰ اور شفافیت کی ضمانت دیں۔",
+        "موثر کوڈ کے ساتھ لین دین کے اخراجات کو کم سے کم کریں۔",
+        "پراکسیوں کے ذریعے کیڑے کو پیچ کرنے کی صلاحیت کو برقرار رکھیں",
+        "اعلی ترین Web3 انڈسٹری کے معیارات پر عمل کریں۔"
+      ],
+      "content": {
+        "process": [
+          { "title": "منطقی تفصیلات", "description": "بالکل دستاویز کرنا کہ کون سی شرائط بلاکچین پر کون سے خودکار اعمال کو متحرک کرتی ہیں۔" },
+          { "title": "محفوظ کوڈنگ", "description": "Solidity اور جنگ آزمودہ OpenZeppelin لائبریری کا استعمال کرتے ہوئے سمارٹ معاہدے لکھنا۔" },
+          { "title": "ٹیسٹ پر مبنی ترقی", "description": "ایسی اسکرپٹ لکھنا جو ہر ممکنہ کنارے والے کیس کی جانچ کرتی ہیں، 100% ٹیسٹ کوریج کے قریب پہنچتی ہیں۔" },
+          { "title": "ٹیسٹ نیٹ کی تعیناتی", "description": "کلائنٹ کے تعامل اور فرنٹ اینڈ انٹیگریشن ٹیسٹنگ کے لیے Goerli/Sepolia میں تعیناتی۔" },
+          { "title": "پروڈکشن کی رہائی", "description": "ایتھرسکن پر سورس کوڈ کی توثیق کرنا اور ایڈمن استحقاق کو ترک کرنا یا تفویض کرنا۔" }
+        ],
+        "technologies": [
+          "Solidity",
+          "Hardhat",
+          "Foundry",
+          "OpenZeppelin",
+          "Etherscan Verification",
+          "Gnosis Safe (Multi-Sig)"
+        ],
+        "faq": [
+          { "question": "کیا آپ آڈٹ رپورٹ فراہم کرتے ہیں؟", "answer": "ہم ایک جامع داخلی آڈٹ رپورٹ فراہم کرتے ہیں جس میں کی گئی خودکار اور دستی جانچ کی تفصیل ہوتی ہے۔ اہم قدر رکھنے والے معاہدوں کے لیے، ہم فریق ثالث کے بیرونی آڈٹ کی سہولت فراہم کرنے میں بھرپور مدد کرتے ہیں۔" },
+          { "question": "اگر لانچ کے بعد کوئی بگ مل جائے تو کیا ہوگا؟", "answer": "اگر معاہدہ قابل اپ گریڈ پراکسی پیٹرن کا استعمال کرتے ہوئے نافذ کیا جاتا ہے، تو منتظم (عام طور پر آپ کے زیر کنٹرول ملٹی سگ والیٹ) تمام صارفین کے بیلنس اور ریاستوں کو محفوظ رکھتے ہوئے ایک پیچڈ لاجک کنٹریکٹ لگا سکتا ہے۔" }
+        ]
+      },
+      "metaTitle": "اسمارٹ کنٹریکٹس ڈیولپمنٹ سروسز | محفوظ Web3 کے حل",
+      "metaDescription": "محفوظ، آڈٹ شدہ سولیڈیٹی سمارٹ معاہدے بنائیں۔ ہم OpenZeppelin کے معیارات، گیس کی اصلاح، اور اپ گریڈ کے قابل پراکسی آرکیٹیکچرز میں مہارت رکھتے ہیں۔"
+    },
+    "ar": {
+      "name": "العقود الذكية (Smart Contracts)",
+      "shortDescription": "بناء عقود ذكية آمنة ومدققة لتطبيقات البلوك تشين.",
+      "fullDescription": "العقود الذكية هي برامج ذاتية التنفيذ تعمل على البلوك تشين، وتلغي الحاجة إلى وسطاء مع ضمان الشفافية بنسبة 100٪. يقدم فريق Web3 لدينا خدمات عقود ذكية متكاملة تركز بشكل كبير على نظام Solidity البيئي (Ethereum، BSC، Polygon). نحن لا نكتب التعليمات البرمجية فحسب؛ بل نبني أدوات مالية أساسية (Financial Primitives). من عمليات الإطلاق البسيطة للرموز إلى خوارزميات الـ Staking المعقدة ومنطق المحفظة متعددة التوقيعات (Multi-Sig)، يتم بناء عقودنا باستخدام معايير OpenZeppelin. الأمن هو أولويتنا المطلقة - يخضع كل سطر من التعليمات البرمجية للتحليل الآلي، والاختبار العشوائي (Fuzzing)، والمراجعة اليدوية لحماية أصول مجتمعك.",
+      "features": [
+        "تطوير كود Solidity المخصص",
+        "التدقيق الأمني الداخلي واختبار Fuzz",
+        "تحسين رسوم الغاز المتقدم (Gas Optimization)",
+        "العقود القابلة للترقية (Transparent & UUPS Proxies)",
+        "تكامل المحافظ متعددة التوقيعات (Gnosis Safe)",
+        "تغطية اختبار مؤتمتة (Hardhat/Foundry)"
+      ],
+      "benefits": [
+        "انشر العقد بثقة مطلقة في الأمان",
+        "ضمان عدم القابلية للتغيير والشفافية للمستخدمين",
+        "تقليل تكاليف المعاملات بأكواد برمجية عالية الكفاءة",
+        "الاحتفاظ بالقدرة على تصحيح الأخطاء عبر الوكلاء (Proxies)",
+        "الالتزام بأعلى معايير صناعة الـ Web3"
+      ],
+      "content": {
+        "process": [
+          { "title": "مواصفات المنطق (Logic Specification)", "description": "توثيق دقيق للشروط التي تؤدي إلى تشغيل إجراءات آلية معينة على البلوك تشين." },
+          { "title": "البرمجة الآمنة", "description": "كتابة العقود الذكية باستخدام Solidity ومكتبة OpenZeppelin المختبرة جيدًا." },
+          { "title": "التطوير الموجه بالاختبار", "description": "كتابة نصوص برمجية تختبر كل حالة حافة ممكنة، لتحقيق تغطية اختبار تقترب من 100٪." },
+          { "title": "النشر على شبكة الاختبار (Testnet)", "description": "النشر على Goerli/Sepolia لاختبار تفاعل العميل وتكامل الواجهة الأمامية." },
+          { "title": "إصدار الإنتاج (Production Release)", "description": "التحقق من الكود المصدري على Etherscan والتخلي عن امتيازات المسؤول أو تعيينها." }
+        ],
+        "technologies": [
+          "Solidity",
+          "Hardhat",
+          "Foundry",
+          "OpenZeppelin",
+          "التحقق عبر Etherscan",
+          "Gnosis Safe (Multi-Sig)"
+        ],
+        "faq": [
+          { "question": "هل تقدمون تقرير تدقيق (Audit Report)؟", "answer": "نقدم تقرير تدقيق داخلي شامل يفصل الاختبارات الآلية واليدوية التي تم إجراؤها. بالنسبة للعقود التي تحمل قيمة كبيرة، فإننا نساعد بقوة في تسهيل تدقيق خارجي من جهة خارجية محايدة." },
+          { "question": "ماذا يحدث إذا تم العثور على خطأ بعد الإطلاق؟", "answer": "إذا تم نشر العقد باستخدام نمط وكيل قابل للترقية (Upgradeable Proxy)، فيمكن للمسؤول (عادةً ما يكون محفظة متعددة التوقيعات تتحكم فيها أنت) نشر عقد منطق مُصحح (Patched) مع الحفاظ على جميع أرصدة المستخدمين وحالاتهم." }
+        ]
+      },
+      "metaTitle": "خدمات تطوير العقود الذكية | حلول Web3 الآمنة",
+      "metaDescription": "بناء عقود Solidity ذكية آمنة ومدققة. نحن متخصصون في معايير OpenZeppelin، وتحسين الغاز، وبنيات الوكيل القابلة للترقية."
+    }
+  }
+}

@@ -1,0 +1,436 @@
+{
+  "technical-documentation": {
+    "en": {
+      "name": "Technical Documentation",
+      "shortDescription": "Write and maintain clear developer documentation, API references, and technical guides.",
+      "fullDescription": "Even the best API or software platform will fail if developers cannot figure out how to use it. Our Technical Documentation services bridge the gap between complex engineering and user adoption. We build robust, searchable, and interactive documentation portals using modern tools like Docusaurus, Mintlify, and GitBook. We do not just write text; we create OpenAPI (Swagger) specifications that allow users to test endpoints directly from the browser, provide real-world SDK code samples in multiple languages, and maintain clear changelogs. Whether you are launching a public SaaS API, an open-source library, or standardizing internal microservices, we ensure your docs are accurate, beautifully designed, and always up to date.",
+      "features": [
+        "Interactive API Reference (OpenAPI / Swagger)",
+        "Step-by-Step SDK Integration Guides",
+        "Architecture & System Design Documentation",
+        "Automated Versioning & Changelog Management",
+        "Global Search (Algolia) & Intuitive Navigation",
+        "Multi-Language Code Snippets (Curl, Node, Python, etc.)"
+      ],
+      "benefits": [
+        "Accelerate Developer Onboarding & API Adoption",
+        "Reduce Support Tickets and Engineering Interruptions",
+        "Improve Brand Perception with Polished, Professional Docs",
+        "Keep Documentation Synchronized with Code Changes Automatically",
+        "Boost SEO with Publicly Indexable Technical Content"
+      ],
+      "content": {
+        "process": [
+          { "title": "Information Architecture", "description": "Structuring the documentation into logical sections (Quickstart, Core Concepts, API Reference)." },
+          { "title": "Tooling Selection & Setup", "description": "Deploying a static site generator (e.g., Docusaurus or Mintlify) tailored to your brand." },
+          { "title": "OpenAPI Integration", "description": "Writing or refining your OpenAPI.yaml file to auto-generate interactive API endpoints." },
+          { "title": "Content Creation", "description": "Writing clear, concise explanations and providing practical code examples." },
+          { "title": "CI/CD Automation", "description": "Setting up GitHub Actions so that documentation deploys automatically when code is pushed." }
+        ],
+        "technologies": [
+          "Docusaurus / Mintlify",
+          "GitBook / ReadMe.io",
+          "OpenAPI (Swagger)",
+          "Markdown / MDX",
+          "Algolia DocSearch",
+          "GitHub Actions"
+        ],
+        "faq": [
+          { "question": "What is the difference between a Guide and an API Reference?", "answer": "A Guide (or Tutorial) explains *how* to achieve a specific goal using your product, step-by-step. An API Reference is a comprehensive dictionary of all endpoints, parameters, and responses. A good documentation portal needs both." },
+          { "question": "Can you automate the API documentation?", "answer": "Yes. We strongly advocate for 'Docs-as-Code'. By annotating your backend code or maintaining a central OpenAPI specification, we can set up pipelines that automatically regenerate the API Reference whenever your engineers deploy an update." }
+        ]
+      },
+      "metaTitle": "Technical Documentation Services | API Reference & Guides",
+      "metaDescription": "Create beautiful, interactive developer documentation. We specialize in OpenAPI, Docusaurus, Mintlify, and technical writing for APIs and SDKs."
+    },
+    "tr": {
+      "name": "Teknik Dokümantasyon",
+      "shortDescription": "Açık ve anlaşılır geliştirici dokümantasyonu, API referansları ve teknik kılavuzlar yazın ve sürdürün.",
+      "fullDescription": "Geliştiriciler nasıl kullanılacağını çözemezse, en iyi API veya yazılım platformu bile başarısız olur. Teknik Dokümantasyon hizmetlerimiz, karmaşık mühendislik ile kullanıcı benimsemesi arasındaki boşluğu doldurur. Docusaurus, Mintlify ve GitBook gibi modern araçları kullanarak sağlam, aranabilir ve etkileşimli dokümantasyon portalları oluşturuyoruz. Sadece metin yazmıyoruz; kullanıcıların uç noktaları (endpoints) doğrudan tarayıcıdan test etmelerini sağlayan OpenAPI (Swagger) spesifikasyonları oluşturuyor, birden çok dilde gerçek dünya SDK kod örnekleri sunuyor ve net değişiklik günlükleri (changelogs) tutuyoruz. İster halka açık bir SaaS API'si, ister açık kaynaklı bir kütüphane başlatıyor, ister dahili mikro hizmetleri standartlaştırıyor olun, dokümanlarınızın doğru, güzel tasarımlı ve her zaman güncel olmasını sağlıyoruz.",
+      "features": [
+        "Etkileşimli API Referansı (OpenAPI / Swagger)",
+        "Adım Adım SDK Entegrasyon Kılavuzları",
+        "Mimari ve Sistem Tasarımı Dokümantasyonu",
+        "Otomatik Sürüm Oluşturma ve Değişiklik Günlüğü (Changelog) Yönetimi",
+        "Küresel Arama (Algolia) ve Sezgisel Gezinme",
+        "Çok Dilli Kod Parçacıkları (Curl, Node, Python, vb.)"
+      ],
+      "benefits": [
+        "Geliştirici İşe Alımını (Onboarding) ve API Benimsemesini Hızlandırma",
+        "Destek Taleplerini ve Mühendislik Kesintilerini Azaltma",
+        "Gösterişli, Profesyonel Dokümanlarla Marka Algısını İyileştirme",
+        "Dokümantasyonu Kod Değişiklikleriyle Otomatik Olarak Senkronize Tutma",
+        "Herkese Açık İndekslenebilir Teknik İçerikle SEO'yu Güçlendirme"
+      ],
+      "content": {
+        "process": [
+          { "title": "Bilgi Mimarisi", "description": "Dokümantasyonu mantıksal bölümlere ayırma (Hızlı Başlangıç, Temel Kavramlar, API Referansı)." },
+          { "title": "Araç Seçimi ve Kurulum", "description": "Markanıza göre uyarlanmış bir statik site oluşturucu (ör. Docusaurus veya Mintlify) dağıtma." },
+          { "title": "OpenAPI Entegrasyonu", "description": "Etkileşimli API uç noktalarını otomatik olarak oluşturmak için OpenAPI.yaml dosyanızı yazma veya iyileştirme." },
+          { "title": "İçerik Oluşturma", "description": "Açık, özlü açıklamalar yazma ve pratik kod örnekleri sağlama." },
+          { "title": "CI/CD Otomasyonu", "description": "Kod gönderildiğinde (push) dokümantasyonun otomatik olarak dağıtılması için GitHub Actions'ı kurma." }
+        ],
+        "technologies": [
+          "Docusaurus / Mintlify",
+          "GitBook / ReadMe.io",
+          "OpenAPI (Swagger)",
+          "Markdown / MDX",
+          "Algolia DocSearch",
+          "GitHub Actions"
+        ],
+        "faq": [
+          { "question": "Bir Kılavuz (Guide) ile API Referansı arasındaki fark nedir?", "answer": "Bir Kılavuz (veya Eğitim), ürününüzü kullanarak belirli bir hedefe *nasıl* ulaşacağınızı adım adım açıklar. API Referansı ise tüm uç noktaların, parametrelerin ve yanıtların kapsamlı bir sözlüğüdür. İyi bir dokümantasyon portalının her ikisine de ihtiyacı vardır." },
+          { "question": "API dokümantasyonunu otomatikleştirebilir misiniz?", "answer": "Evet. 'Kod olarak Doküman' (Docs-as-Code) yaklaşımını güçlü bir şekilde savunuyoruz. Arka uç kodunuza açıklamalar ekleyerek veya merkezi bir OpenAPI spesifikasyonu sürdürerek, mühendisleriniz her güncelleme yaptığında API Referansını otomatik olarak yeniden oluşturan işlem hatları (pipelines) kurabiliriz." }
+        ]
+      },
+      "metaTitle": "Teknik Dokümantasyon Hizmetleri | API Referansı ve Kılavuzlar",
+      "metaDescription": "Güzel, etkileşimli geliştirici dokümantasyonları oluşturun. OpenAPI, Docusaurus, Mintlify ve API'ler/SDK'lar için teknik yazarlık konusunda uzmanız."
+    },
+    "de": {
+      "name": "Technische Dokumentation",
+      "shortDescription": "Schreiben und Pflegen klarer Entwicklerdokumentationen, API-Referenzen und technischer Leitfäden.",
+      "fullDescription": "Selbst die beste API oder Softwareplattform wird scheitern, wenn Entwickler nicht verstehen, wie sie verwendet wird. Unsere Dienste für Technische Dokumentation schließen die Lücke zwischen komplexem Engineering und Nutzerakzeptanz. Wir bauen robuste, durchsuchbare und interaktive Dokumentationsportale mit modernen Tools wie Docusaurus, Mintlify und GitBook. Wir schreiben nicht nur Text; wir erstellen OpenAPI (Swagger) Spezifikationen, die es Nutzern ermöglichen, Endpunkte direkt aus dem Browser zu testen, liefern praxisnahe SDK-Codebeispiele in mehreren Sprachen und pflegen klare Changelogs. Ob Sie eine öffentliche SaaS-API oder eine Open-Source-Bibliothek launchen oder interne Microservices standardisieren – wir sorgen dafür, dass Ihre Dokumentation präzise, schön gestaltet und immer aktuell ist.",
+      "features": [
+        "Interaktive API-Referenz (OpenAPI / Swagger)",
+        "Schritt-für-Schritt SDK-Integrationsleitfäden",
+        "Architektur- & Systemdesign-Dokumentation",
+        "Automatisierte Versionierung & Changelog-Management",
+        "Globale Suche (Algolia) & intuitive Navigation",
+        "Mehrsprachige Code-Snippets (Curl, Node, Python, etc.)"
+      ],
+      "benefits": [
+        "Beschleunigtes Developer-Onboarding & höhere API-Adoption",
+        "Reduzierung von Support-Tickets und Entwicklungsunterbrechungen",
+        "Verbesserte Markenwahrnehmung durch professionelle Docs",
+        "Automatische Synchronisierung der Dokumentation mit Code-Änderungen",
+        "SEO-Boost durch öffentlich indexierbare technische Inhalte"
+      ],
+      "content": {
+        "process": [
+          { "title": "Informationsarchitektur", "description": "Strukturierung in logische Abschnitte (Quickstart, Konzepte, API-Referenz)." },
+          { "title": "Tooling & Setup", "description": "Bereitstellung eines Static Site Generators (z.B. Docusaurus/Mintlify) im Corporate Design." },
+          { "title": "OpenAPI Integration", "description": "Erstellung der OpenAPI.yaml für die automatische Generierung interaktiver Endpunkte." },
+          { "title": "Content-Erstellung", "description": "Verfassen klarer Erklärungen und Bereitstellung praxisnaher Code-Beispiele." },
+          { "title": "CI/CD Automatisierung", "description": "Einrichtung von GitHub Actions für automatische Deployments bei Code-Updates." }
+        ],
+        "technologies": [
+          "Docusaurus / Mintlify",
+          "GitBook / ReadMe.io",
+          "OpenAPI (Swagger)",
+          "Markdown / MDX",
+          "Algolia DocSearch",
+          "GitHub Actions"
+        ],
+        "faq": [
+          { "question": "Was ist der Unterschied zwischen einem Guide und einer API-Referenz?", "answer": "Ein Guide erklärt Schritt-für-Schritt, *wie* man ein Ziel erreicht. Eine API-Referenz ist das technische Lexikon aller Endpunkte und Parameter. Ein gutes Portal braucht beides." },
+          { "question": "Können Sie die API-Dokumentation automatisieren?", "answer": "Ja. Wir nutzen den 'Docs-as-Code' Ansatz. Durch die Pflege einer zentralen OpenAPI-Spezifikation können wir Pipelines aufsetzen, die die API-Referenz bei jedem Backend-Update automatisch neu generieren." }
+        ]
+      },
+      "metaTitle": "Technische Dokumentation & API-Referenzen Agentur",
+      "metaDescription": "Erstellen Sie interaktive Entwicklerdokumentationen. Wir sind Experten für OpenAPI, Docusaurus, Mintlify und technisches Schreiben für APIs und SDKs."
+    },
+    "ur": {
+      "name": "تکنیکی دستاویزات",
+      "shortDescription": "واضح ڈیولپر دستاویزات، API حوالہ جات، اور تکنیکی رہنمائیاں لکھیں اور برقرار رکھیں۔",
+      "fullDescription": "یہاں تک کہ بہترین API یا سافٹ ویئر پلیٹ فارم بھی ناکام ہو جائے گا اگر ڈویلپر یہ نہیں جان پاتے کہ اسے کیسے استعمال کرنا ہے۔ ہماری تکنیکی دستاویزی خدمات پیچیدہ انجینئرنگ اور صارف کو اپنانے کے درمیان خلیج کو پر کرتی ہیں۔ ہم Docusaurus، Mintlify، اور GitBook جیسے جدید ٹولز کا استعمال کرتے ہوئے مضبوط، قابل تلاش، اور انٹرایکٹو دستاویزی پورٹل بناتے ہیں۔ ہم صرف متن نہیں لکھتے؛ ہم OpenAPI (Swagger) کی وضاحتیں بناتے ہیں جو صارفین کو براہ راست براؤزر سے اینڈ پوائنٹس کی جانچ کرنے، متعدد زبانوں میں حقیقی دنیا کے SDK کوڈ کے نمونے فراہم کرنے، اور واضح تبدیلی کے لاگز کو برقرار رکھنے کی اجازت دیتی ہیں۔ چاہے آپ ایک عوامی SaaS API لانچ کر رہے ہوں، ایک اوپن سورس لائبریری، یا اندرونی مائیکرو سروسز کو معیاری بنا رہے ہوں، ہم اس بات کو یقینی بناتے ہیں کہ آپ کے دستاویزات درست، خوبصورتی سے ڈیزائن کیے گئے، اور ہمیشہ اپ ٹو ڈیٹ ہیں۔",
+      "features": [
+        "انٹرایکٹو API حوالہ (OpenAPI / Swagger)",
+        "مرحلہ وار SDK انٹیگریشن گائیڈز",
+        "آرکیٹیکچر اور سسٹم ڈیزائن کی دستاویزات",
+        "خودکار ورژننگ اور چینج لاگ مینجمنٹ",
+        "عالمی تلاش (الگولیا) اور بدیہی نیویگیشن",
+        "ملٹی لینگویج کوڈ کے ٹکڑوں (Curl، Node، Python، وغیرہ)"
+      ],
+      "benefits": [
+        "ڈویلپر آن بورڈنگ اور API کو اپنانے میں تیزی لائیں۔",
+        "سپورٹ ٹکٹس اور انجینئرنگ کی رکاوٹوں کو کم کریں۔",
+        "پالش شدہ، پیشہ ورانہ دستاویزات کے ساتھ برانڈ کے تصور کو بہتر بنائیں",
+        "کوڈ کی تبدیلیوں کے ساتھ خودکار طور پر مطابقت پذیر دستاویزات رکھیں",
+        "عوامی طور پر قابل انڈیکس تکنیکی مواد کے ساتھ SEO کو فروغ دیں۔"
+      ],
+      "content": {
+        "process": [
+          { "title": "انفارمیشن آرکیٹیکچر", "description": "دستاویزات کی منطقی حصوں میں تشکیل کرنا (Quickstart، Core Concepts، API Reference)۔" },
+          { "title": "ٹولنگ کا انتخاب اور سیٹ اپ", "description": "آپ کے برانڈ کے مطابق ایک جامد سائٹ جنریٹر (جیسے، Docusaurus یا Mintlify) کو تعینات کرنا۔" },
+          { "title": "OpenAPI انٹیگریشن", "description": "انٹرایکٹو API اینڈ پوائنٹس کو خود بخود بنانے کے لیے اپنی OpenAPI.yaml فائل کو لکھنا یا بہتر کرنا۔" },
+          { "title": "مواد کی تخلیق", "description": "واضح، جامع وضاحتیں لکھنا اور عملی کوڈ کی مثالیں فراہم کرنا۔" },
+          { "title": "CI/CD آٹومیشن", "description": "GitHub ایکشنز مرتب کرنا تاکہ کوڈ کو آگے بڑھانے پر دستاویزات خود بخود لگ جائیں۔" }
+        ],
+        "technologies": [
+          "Docusaurus / Mintlify",
+          "GitBook / ReadMe.io",
+          "OpenAPI (Swagger)",
+          "Markdown / MDX",
+          "Algolia DocSearch",
+          "GitHub Actions"
+        ],
+        "faq": [
+          { "question": "گائیڈ اور API حوالہ کے درمیان کیا فرق ہے؟", "answer": "ایک گائیڈ (یا ٹیوٹوریل) بتاتا ہے کہ قدم بہ قدم آپ کی پروڈکٹ کا استعمال کرتے ہوئے ایک مخصوص مقصد کو *کیسے* حاصل کیا جائے۔ API کا حوالہ تمام اختتامی نکات، پیرامیٹرز، اور جوابات کی ایک جامع لغت ہے۔ ایک اچھے دستاویزی پورٹل کو دونوں کی ضرورت ہے۔" },
+          { "question": "کیا آپ API دستاویزات کو خودکار کر سکتے ہیں؟", "answer": "جی ہاں. ہم 'Docs-as-Code' کی بھرپور وکالت کرتے ہیں۔ اپنے بیک اینڈ کوڈ کو تشریح کرنے یا مرکزی OpenAPI کی تصریح کو برقرار رکھنے کے ذریعے، ہم ایسی پائپ لائنز ترتیب دے سکتے ہیں جو جب بھی آپ کے انجینئرز اپ ڈیٹ متعین کرتے ہیں خود بخود API ریفرنس کو دوبارہ پیدا کرتے ہیں۔" }
+        ]
+      },
+      "metaTitle": "تکنیکی دستاویزی خدمات | API کا حوالہ اور گائیڈز",
+      "metaDescription": "خوبصورت، انٹرایکٹو ڈویلپر دستاویزات بنائیں۔ ہم APIs اور SDKs کے لیے OpenAPI، Docusaurus، Mintlify، اور تکنیکی تحریر میں مہارت رکھتے ہیں۔"
+    },
+    "ar": {
+      "name": "التوثيق الفني (Technical Documentation)",
+      "shortDescription": "كتابة وصيانة وثائق المطورين الواضحة، ومراجع API، والأدلة الفنية.",
+      "fullDescription": "حتى أفضل واجهة برمجة تطبيقات (API) أو منصة برمجية ستفشل إذا لم يتمكن المطورون من معرفة كيفية استخدامها. تسد خدمات التوثيق الفني لدينا الفجوة بين الهندسة المعقدة واعتماد المستخدم (Adoption). نقوم ببناء بوابات توثيق قوية وقابلة للبحث وتفاعلية باستخدام أدوات حديثة مثل Docusaurus و Mintlify و GitBook. نحن لا نكتب نصوصًا فحسب؛ بل نقوم بإنشاء مواصفات OpenAPI (Swagger) التي تسمح للمستخدمين باختبار نقاط النهاية (Endpoints) مباشرة من المتصفح، ونوفر أمثلة واقعية لأكواد SDK بلغات متعددة، ونحافظ على سجلات التغيير (Changelogs) الواضحة. سواء كنت تطلق واجهة برمجة تطبيقات SaaS عامة، أو مكتبة مفتوحة المصدر، أو تقوم بتوحيد الخدمات المصغرة الداخلية، فإننا نضمن أن مستنداتك دقيقة، ومصممة بشكل جميل، ومحدثة دائمًا.",
+      "features": [
+        "مرجع تفاعلي لواجهة برمجة التطبيقات (OpenAPI / Swagger)",
+        "أدلة تكامل خطوة بخطوة لـ SDK",
+        "توثيق هندسة وتصميم النظام",
+        "أتمتة إدارة الإصدارات وسجل التغييرات (Changelog)",
+        "بحث شامل (Algolia) وتنقل بديهي",
+        "مقتطفات برمجية بلغات متعددة (Curl ، Node ، Python ، إلخ)"
+      ],
+      "benefits": [
+        "تسريع الإعداد للمطورين (Onboarding) واعتماد الـ API",
+        "تقليل تذاكر الدعم الفني وانقطاعات المهندسين",
+        "تحسين إدراك العلامة التجارية بوثائق مصقولة واحترافية",
+        "الحفاظ على مزامنة التوثيق مع تغييرات الكود تلقائيًا",
+        "تعزيز تحسين محركات البحث (SEO) بمحتوى تقني عام قابل للفهرسة"
+      ],
+      "content": {
+        "process": [
+          { "title": "هيكلة المعلومات", "description": "هيكلة التوثيق إلى أقسام منطقية (البدء السريع، المفاهيم الأساسية، مرجع API)." },
+          { "title": "اختيار الأدوات والإعداد", "description": "نشر مُنشئ مواقع ثابتة (مثل Docusaurus أو Mintlify) مصمم خصيصًا لعلامتك التجارية." },
+          { "title": "تكامل OpenAPI", "description": "كتابة أو تحسين ملف OpenAPI.yaml الخاص بك لإنشاء نقاط نهاية تفاعلية لـ API تلقائيًا." },
+          { "title": "إنشاء المحتوى", "description": "كتابة شروحات واضحة وموجزة وتوفير أمثلة برمجية عملية." },
+          { "title": "أتمتة النشر (CI/CD)", "description": "إعداد إجراءات GitHub (GitHub Actions) بحيث يتم نشر التوثيق تلقائيًا عند تحديث الكود." }
+        ],
+        "technologies": [
+          "Docusaurus / Mintlify",
+          "GitBook / ReadMe.io",
+          "OpenAPI (Swagger)",
+          "Markdown / MDX",
+          "Algolia DocSearch",
+          "GitHub Actions"
+        ],
+        "faq": [
+          { "question": "ما هو الفرق بين الدليل (Guide) ومرجع الـ API؟", "answer": "يشرح الدليل (أو البرنامج التعليمي) *كيفية* تحقيق هدف معين باستخدام منتجك، خطوة بخطوة. أما مرجع الـ API فهو قاموس شامل لجميع نقاط النهاية، والمعلمات (Parameters)، والاستجابات. أي بوابة توثيق جيدة تحتاج إلى كليهما." },
+          { "question": "هل يمكنك أتمتة توثيق واجهة برمجة التطبيقات (API)؟", "answer": "نعم. نحن نؤيد بشدة نهج 'التوثيق ككود' (Docs-as-Code). من خلال إضافة التعليقات التوضيحية إلى الكود الخلفي الخاص بك أو الحفاظ على مواصفات OpenAPI مركزية، يمكننا إعداد مسارات عمل (Pipelines) تعيد إنشاء مرجع API تلقائيًا كلما قام مهندسوك بنشر تحديث." }
+        ]
+      },
+      "metaTitle": "خدمات التوثيق الفني | مراجع API والأدلة",
+      "metaDescription": "إنشاء وثائق مطورين تفاعلية وجميلة. نحن متخصصون في OpenAPI و Docusaurus و Mintlify والكتابة الفنية لواجهات برمجة التطبيقات (APIs) و SDKs."
+    }
+  },
+  "telemedicine-platforms": {
+    "en": {
+      "name": "Telemedicine Platforms",
+      "shortDescription": "Create secure, HIPAA-compliant video consultation platforms for healthcare providers.",
+      "fullDescription": "The shift towards virtual healthcare requires platforms that are not only reliable and user-friendly, but also stringently secure. Our Telemedicine Platform Development services build custom, HIPAA-compliant applications tailored for clinics, hospitals, and specialized care providers. We integrate high-quality, low-latency video and audio streaming alongside essential clinical features like appointment scheduling, digital waiting rooms, e-prescriptions, and secure patient portals. By ensuring seamless integration with existing EHR/EMR systems via HL7 FHIR standards, we eliminate double data entry and streamline the clinical workflow for doctors and patients alike.",
+      "features": [
+        "HIPAA-Compliant Video Conferencing (Twilio/Vonage)",
+        "Automated Appointment Scheduling & Reminders",
+        "EHR/EMR Integration (Epic, Cerner) via HL7 FHIR",
+        "E-Prescription Routing to Pharmacies",
+        "Virtual Waiting Rooms with Queue Management",
+        "Secure In-App Messaging and File Sharing"
+      ],
+      "benefits": [
+        "Ensure 100% Legal Compliance (HIPAA, GDPR, HITECH)",
+        "Expand Patient Reach Beyond Geographic Limitations",
+        "Reduce Wait Times & Optimize Doctor Schedules",
+        "Deliver High-Quality, Uninterrupted Virtual Care",
+        "Streamline Billing & Insurance Claim Processes"
+      ],
+      "content": {
+        "process": [
+          { "title": "Compliance & Scope", "description": "Mapping out the specific regulatory requirements (HIPAA) and clinical workflows." },
+          { "title": "UX Design", "description": "Designing accessible, intuitive interfaces for both the Patient App and the Provider Dashboard." },
+          { "title": "Core Development", "description": "Implementing WebRTC/Twilio for video and building the secure backend infrastructure." },
+          { "title": "EHR Integration", "description": "Connecting the platform to your existing hospital record systems using HL7 FHIR APIs." },
+          { "title": "Security Audit & Launch", "description": "Conducting penetration testing and compliance audits before going live with patients." }
+        ],
+        "technologies": [
+          "Next.js / React Native",
+          "Node.js / Python (Django)",
+          "Twilio Video / WebRTC",
+          "AWS (HIPAA Eligible Services)",
+          "HL7 FHIR / Redox",
+          "PostgreSQL (Encrypted at rest)"
+        ],
+        "faq": [
+          { "question": "How do you ensure the platform is HIPAA compliant?", "answer": "We ensure compliance at every layer: utilizing Business Associate Agreements (BAAs) with cloud providers like AWS, enforcing end-to-end encryption for video/chat, encrypting databases at rest, and implementing strict audit logging and role-based access control." },
+          { "question": "Can the platform integrate with our existing clinic management software?", "answer": "Yes. We specialize in healthcare interoperability and can integrate your telemedicine platform with major EHR/EMR systems (like Epic, Cerner, or Athenahealth) using modern HL7 FHIR or custom API connections." }
+        ]
+      },
+      "metaTitle": "Telemedicine App Development Company | HIPAA-Compliant",
+      "metaDescription": "Build secure, custom telemedicine platforms with HIPAA-compliant video, appointment scheduling, and seamless EHR integrations."
+    },
+    "tr": {
+      "name": "Teletıp (Telemedicine) Platformları",
+      "shortDescription": "Sağlık hizmeti sağlayıcıları için güvenli, HIPAA uyumlu görüntülü danışmanlık platformları oluşturun.",
+      "fullDescription": "Sanal sağlık hizmetlerine geçiş, yalnızca güvenilir ve kullanıcı dostu değil, aynı zamanda sıkı bir şekilde güvenli olan platformlar gerektirir. Teletıp Platformu Geliştirme hizmetlerimiz klinikler, hastaneler ve uzman bakım sağlayıcıları için özel, HIPAA (Sağlık Sigortası Taşınabilirlik ve Sorumluluk Yasası) uyumlu uygulamalar oluşturur. Randevu planlama, dijital bekleme odaları, e-reçeteler ve güvenli hasta portalları gibi temel klinik özelliklerin yanı sıra yüksek kaliteli, düşük gecikmeli video ve ses akışını (streaming) entegre ediyoruz. HL7 FHIR standartları aracılığıyla mevcut EHR/EMR (Elektronik Sağlık/Tıbbi Kayıt) sistemleriyle sorunsuz entegrasyon sağlayarak, mükerrer veri girişini ortadan kaldırıyor ve hem doktorlar hem de hastalar için klinik iş akışını düzene sokuyoruz.",
+      "features": [
+        "HIPAA Uyumlu Video Konferans (Twilio/Vonage)",
+        "Otomatik Randevu Planlama ve Hatırlatıcılar",
+        "HL7 FHIR aracılığıyla EHR/EMR Entegrasyonu (Epic, Cerner)",
+        "Eczanelere E-Reçete Yönlendirme",
+        "Kuyruk (Sıra) Yönetimli Sanal Bekleme Odaları",
+        "Uygulama İçi Güvenli Mesajlaşma ve Dosya Paylaşımı"
+      ],
+      "benefits": [
+        "%100 Yasal Uyumluluk (HIPAA, GDPR, HITECH) Sağlama",
+        "Hasta Erişimini Coğrafi Sınırların Ötesine Taşıma",
+        "Bekleme Sürelerini Azaltma ve Doktor Programlarını Optimize Etme",
+        "Yüksek Kaliteli, Kesintisiz Sanal Bakım Sunma",
+        "Faturalandırma ve Sigorta Talep Süreçlerini Kolaylaştırma"
+      ],
+      "content": {
+        "process": [
+          { "title": "Uyumluluk ve Kapsam", "description": "Belirli yasal düzenleme gereksinimlerini (HIPAA) ve klinik iş akışlarını haritalandırma." },
+          { "title": "UX Tasarımı", "description": "Hem Hasta Uygulaması hem de Sağlayıcı (Doktor) Panosu için erişilebilir, sezgisel arayüzler tasarlama." },
+          { "title": "Çekirdek Geliştirme", "description": "Video için WebRTC/Twilio uygulama ve güvenli arka uç (backend) altyapısını oluşturma." },
+          { "title": "EHR Entegrasyonu", "description": "HL7 FHIR API'lerini kullanarak platformu mevcut hastane kayıt sistemlerinize bağlama." },
+          { "title": "Güvenlik Denetimi ve Lansman", "description": "Hastalarla canlıya geçmeden önce sızma (penetrasyon) testleri ve uyumluluk denetimleri gerçekleştirme." }
+        ],
+        "technologies": [
+          "Next.js / React Native",
+          "Node.js / Python (Django)",
+          "Twilio Video / WebRTC",
+          "AWS (HIPAA Uyumlu Hizmetler)",
+          "HL7 FHIR / Redox",
+          "PostgreSQL (Beklemede (at rest) Şifrelenmiş)"
+        ],
+        "faq": [
+          { "question": "Platformun HIPAA uyumlu olduğundan nasıl emin oluyorsunuz?", "answer": "Uyumluluğu her katmanda sağlıyoruz: AWS gibi bulut sağlayıcılarıyla İş Ortağı Sözleşmeleri (BAA'lar) kullanmak, video/sohbet için uçtan uca şifrelemeyi zorunlu kılmak, veritabanlarını bekleme durumundayken (at rest) şifrelemek ve katı denetim günlüğü ile rol tabanlı erişim kontrolü uygulamak." },
+          { "question": "Platform mevcut klinik yönetim yazılımımızla entegre olabilir mi?", "answer": "Evet. Sağlık hizmetlerinde birlikte çalışabilirlik (interoperability) konusunda uzmanız ve teletıp platformunuzu modern HL7 FHIR veya özel API bağlantıları kullanarak büyük EHR/EMR sistemleriyle (Epic, Cerner veya Athenahealth gibi) entegre edebiliriz." }
+        ]
+      },
+      "metaTitle": "Teletıp Uygulama Geliştirme Şirketi | HIPAA Uyumlu",
+      "metaDescription": "HIPAA uyumlu video, randevu planlama ve sorunsuz EHR entegrasyonlarıyla güvenli, özel teletıp platformları oluşturun."
+    },
+    "de": {
+      "name": "Telemedizin Plattformen",
+      "shortDescription": "Erstellung sicherer, HIPAA/DSGVO-konformer Videokonsultationsplattformen.",
+      "fullDescription": "Der Wandel zur virtuellen Gesundheitsversorgung erfordert Plattformen, die nicht nur zuverlässig und benutzerfreundlich, sondern auch streng sicher sind. Unsere Dienstleistungen zur Entwicklung von Telemedizin-Plattformen bauen maßgeschneiderte, DSGVO- und HIPAA-konforme Anwendungen, die auf Kliniken und Fachärzte zugeschnitten sind. Wir integrieren hochwertiges Video- und Audio-Streaming zusammen mit klinischen Kernfunktionen wie Terminplanung, digitalen Wartezimmern, E-Rezepten und sicheren Patientenportalen. Durch die nahtlose Integration in bestehende KIS/EHR-Systeme (Krankenhausinformationssysteme) über HL7 FHIR-Standards eliminieren wir doppelte Dateneingaben und optimieren den klinischen Workflow für Ärzte und Patienten.",
+      "features": [
+        "DSGVO/HIPAA-konforme Videokonferenzen (Twilio/Vonage)",
+        "Automatisierte Terminplanung & Erinnerungen",
+        "EHR/KIS-Integration via HL7 FHIR",
+        "E-Rezept-Weiterleitung an Apotheken",
+        "Virtuelle Wartezimmer mit Warteschlangenmanagement",
+        "Sicheres In-App-Messaging & Filesharing"
+      ],
+      "benefits": [
+        "100% rechtliche Compliance (DSGVO, HIPAA)",
+        "Erweiterung der Patientenreichweite über geografische Grenzen hinweg",
+        "Reduzierung von Wartezeiten & Optimierung der Arztpläne",
+        "Bereitstellung hochwertiger, unterbrechungsfreier virtueller Pflege",
+        "Optimierung von Abrechnungs- und Versicherungsabläufen"
+      ],
+      "content": {
+        "process": [
+          { "title": "Compliance & Scoping", "description": "Planung der spezifischen regulatorischen Anforderungen (DSGVO/HIPAA) und klinischen Workflows." },
+          { "title": "UX-Design", "description": "Gestaltung barrierefreier, intuitiver Benutzeroberflächen für Patienten und Ärzte." },
+          { "title": "Kernentwicklung", "description": "Implementierung von WebRTC/Twilio für Video und Aufbau der sicheren Backend-Infrastruktur." },
+          { "title": "EHR-Integration", "description": "Anbindung der Plattform an Ihre bestehenden Krankenhaussysteme mittels HL7 FHIR APIs." },
+          { "title": "Security-Audit & Launch", "description": "Durchführung von Penetrationstests und Compliance-Audits vor dem Live-Gang." }
+        ],
+        "technologies": [
+          "Next.js / React Native",
+          "Node.js / Python (Django)",
+          "Twilio Video / WebRTC",
+          "AWS (Health-konform)",
+          "HL7 FHIR / Redox",
+          "PostgreSQL (Verschlüsselt)"
+        ],
+        "faq": [
+          { "question": "Wie stellen Sie sicher, dass die Plattform DSGVO- und HIPAA-konform ist?", "answer": "Wir gewährleisten Compliance auf jeder Ebene: durch Verträge zur Auftragsverarbeitung (AVV) mit Cloud-Anbietern, Ende-zu-Ende-Verschlüsselung für Video/Chat, Datenbankverschlüsselung und strikte Zugriffskontrollen." },
+          { "question": "Kann die Plattform in unsere bestehende Praxissoftware integriert werden?", "answer": "Ja. Wir sind auf Interoperabilität im Gesundheitswesen spezialisiert und können Ihre Telemedizin-Plattform über HL7 FHIR oder benutzerdefinierte API-Verbindungen in gängige Systeme integrieren." }
+        ]
+      },
+      "metaTitle": "Telemedizin App Entwicklung | DSGVO & HIPAA Konform",
+      "metaDescription": "Bauen Sie sichere, maßgeschneiderte Telemedizin-Plattformen mit DSGVO-konformem Video, Terminplanung und nahtlosen EHR-Integrationen."
+    },
+    "ur": {
+      "name": "ٹیلی میڈیسن پلیٹ فارمز",
+      "shortDescription": "صحت کی دیکھ بھال فراہم کرنے والوں کے لیے محفوظ، HIPAA کے مطابق ویڈیو مشاورتی پلیٹ فارم بنائیں۔",
+      "fullDescription": "ورچوئل ہیلتھ کیئر کی طرف تبدیلی کے لیے ایسے پلیٹ فارمز کی ضرورت ہے جو نہ صرف قابل اعتماد اور صارف دوست ہوں بلکہ انتہائی محفوظ بھی ہوں۔ ہماری ٹیلی میڈیسن پلیٹ فارم ڈیولپمنٹ سروسز کلینک، ہسپتالوں اور دیکھ بھال فراہم کرنے والے ماہرین کے لیے تیار کردہ کسٹم، HIPAA کے مطابق ایپلی کیشنز بناتی ہیں۔ ہم ضروری طبی خصوصیات جیسے اپائنٹمنٹ شیڈولنگ، ڈیجیٹل ویٹنگ روم، ای-نسخے، اور محفوظ مریض پورٹلز کے ساتھ ساتھ اعلیٰ معیار کی، کم لیٹنسی والی ویڈیو اور آڈیو اسٹریمنگ کو مربوط کرتے ہیں۔ HL7 FHIR معیارات کے ذریعے موجودہ EHR/EMR نظاموں کے ساتھ ہموار انضمام کو یقینی بنا کر، ہم ڈیٹا کے دوہرے اندراج کو ختم کرتے ہیں اور ڈاکٹروں اور مریضوں کے لیے یکساں طبی ورک فلو کو ہموار کرتے ہیں۔",
+      "features": [
+        "HIPAA-کمپلیئنٹ ویڈیو کانفرنسنگ (Twilio/Vonage)",
+        "خودکار اپوائنٹمنٹ شیڈولنگ اور یاد دہانیاں",
+        "HL7 FHIR کے ذریعے EHR/EMR انٹیگریشن (Epic, Cerner)",
+        "فارمیسیوں کو ای نسخہ کی روٹنگ",
+        "قطار کے انتظام کے ساتھ ورچوئل ویٹنگ رومز",
+        "محفوظ درون ایپ پیغام رسانی اور فائل شیئرنگ"
+      ],
+      "benefits": [
+        "100% قانونی تعمیل کو یقینی بنائیں (HIPAA, GDPR, HITECH)",
+        "جغرافیائی حدود سے باہر مریضوں کی رسائی کو بڑھانا",
+        "انتظار کے اوقات کو کم کریں اور ڈاکٹروں کے نظام الاوقات کو بہتر بنائیں",
+        "اعلیٰ معیار کی، بلا تعطل ورچوئل کیئر فراہم کریں۔",
+        "بلنگ اور انشورنس کلیم کے عمل کو ہموار کریں۔"
+      ],
+      "content": {
+        "process": [
+          { "title": "تعمیل اور دائرہ کار", "description": "مخصوص ریگولیٹری تقاضوں (HIPAA) اور کلینیکل ورک فلو کی نقشہ سازی کرنا۔" },
+          { "title": "UX ڈیزائن", "description": "مریض ایپ اور فراہم کنندہ ڈیش بورڈ دونوں کے لیے قابل رسائی، بدیہی انٹرفیس ڈیزائن کرنا۔" },
+          { "title": "بنیادی ترقی", "description": "ویڈیو کے لیے WebRTC/Twilio کو نافذ کرنا اور محفوظ بیک اینڈ انفراسٹرکچر کی تعمیر کرنا۔" },
+          { "title": "EHR انٹیگریشن", "description": "HL7 FHIR APIs کا استعمال کرتے ہوئے پلیٹ فارم کو اپنے موجودہ ہسپتال کے ریکارڈ سسٹمز سے جوڑنا۔" },
+          { "title": "سیکیورٹی آڈٹ اور لانچ", "description": "مریضوں کے ساتھ لائیو جانے سے پہلے رسائی کی جانچ اور تعمیل کے آڈٹ کرنا۔" }
+        ],
+        "technologies": [
+          "Next.js / React Native",
+          "Node.js / Python (Django)",
+          "Twilio Video / WebRTC",
+          "AWS (HIPAA Eligible Services)",
+          "HL7 FHIR / Redox",
+          "PostgreSQL (Encrypted at rest)"
+        ],
+        "faq": [
+          { "question": "آپ کیسے یقینی بناتے ہیں کہ پلیٹ فارم HIPAA کے مطابق ہے؟", "answer": "ہم ہر سطح پر تعمیل کو یقینی بناتے ہیں: AWS جیسے کلاؤڈ فراہم کنندگان کے ساتھ بزنس ایسوسی ایٹ ایگریمنٹس (BAAs) کا استعمال، ویڈیو/چیٹ کے لیے اینڈ ٹو اینڈ انکرپشن کو نافذ کرنا، باقی حصوں میں ڈیٹا بیس کو انکرپٹ کرنا، اور سخت آڈٹ لاگنگ اور رول بیسڈ رسائی کنٹرول کو لاگو کرنا۔" },
+          { "question": "کیا یہ پلیٹ فارم ہمارے موجودہ کلینک مینجمنٹ سوفٹ ویئر کے ساتھ مل سکتا ہے؟", "answer": "ہاں۔ ہم ہیلتھ کیئر انٹرآپریبلٹی میں مہارت رکھتے ہیں اور جدید HL7 FHIR یا کسٹم API کنکشنز کا استعمال کرتے ہوئے آپ کے ٹیلی میڈیسن پلیٹ فارم کو بڑے EHR/EMR سسٹمز (جیسے Epic، Cerner، یا Athenahealth) کے ساتھ ضم کر سکتے ہیں۔" }
+        ]
+      },
+      "metaTitle": "ٹیلی میڈیسن ایپ ڈیولپمنٹ کمپنی | HIPAA کے مطابق",
+      "metaDescription": "HIPAA کے موافق ویڈیو، اپوائنٹمنٹ شیڈولنگ، اور ہموار EHR انضمام کے ساتھ محفوظ، حسب ضرورت ٹیلی میڈیسن پلیٹ فارم بنائیں۔"
+    },
+    "ar": {
+      "name": "منصات التطبيب عن بعد (Telemedicine)",
+      "shortDescription": "إنشاء منصات استشارة بالفيديو آمنة ومتوافقة مع HIPAA لمقدمي الرعاية الصحية.",
+      "fullDescription": "يتطلب التحول نحو الرعاية الصحية الافتراضية منصات ليست فقط موثوقة وسهلة الاستخدام، ولكنها آمنة تمامًا. تبني خدمات تطوير منصات التطبيب عن بعد الخاصة بنا تطبيقات مخصصة ومتوافقة مع قانون HIPAA ومصممة خصيصًا للعيادات والمستشفيات ومقدمي الرعاية المتخصصة. ندمج بث الفيديو والصوت عالي الجودة وبزمن انتقال منخفض إلى جانب الميزات السريرية الأساسية مثل جدولة المواعيد، وغرف الانتظار الرقمية، والوصفات الطبية الإلكترونية، وبوابات المرضى الآمنة. من خلال ضمان التكامل السلس مع أنظمة السجلات الصحية والطبية الإلكترونية (EHR/EMR) الحالية عبر معايير HL7 FHIR، فإننا نقضي على إدخال البيانات المزدوج ونبسط سير العمل السريري لكل من الأطباء والمرضى على حد سواء.",
+      "features": [
+        "مؤتمرات فيديو متوافقة مع قانون HIPAA (عبر Twilio/Vonage)",
+        "جدولة المواعيد الآلية والتذكيرات",
+        "تكامل أنظمة EHR/EMR (مثل Epic, Cerner) عبر HL7 FHIR",
+        "توجيه الوصفات الطبية الإلكترونية (E-Prescription) إلى الصيدليات",
+        "غرف انتظار افتراضية مع إدارة قوائم الانتظار",
+        "مراسلة آمنة داخل التطبيق ومشاركة الملفات"
+      ],
+      "benefits": [
+        "ضمان الامتثال القانوني بنسبة 100٪ (HIPAA ، GDPR ، HITECH)",
+        "توسيع نطاق وصول المرضى إلى ما وراء القيود الجغرافية",
+        "تقليل أوقات الانتظار وتحسين جداول الأطباء",
+        "تقديم رعاية افتراضية عالية الجودة دون انقطاع",
+        "تبسيط عمليات الفوترة ومطالبات التأمين"
+      ],
+      "content": {
+        "process": [
+          { "title": "الامتثال وتحديد النطاق", "description": "تخطيط المتطلبات التنظيمية المحددة (HIPAA) وسير العمل السريري." },
+          { "title": "تصميم تجربة المستخدم (UX)", "description": "تصميم واجهات بديهية وسهلة الوصول لكل من تطبيق المريض ولوحة تحكم الطبيب." },
+          { "title": "التطوير الأساسي", "description": "تنفيذ WebRTC/Twilio للفيديو وبناء البنية التحتية الآمنة للخلفية (Backend)." },
+          { "title": "تكامل السجلات الصحية الإلكترونية (EHR)", "description": "ربط المنصة بأنظمة سجلات المستشفى الحالية باستخدام واجهات برمجة تطبيقات HL7 FHIR." },
+          { "title": "التدقيق الأمني والإطلاق", "description": "إجراء اختبارات الاختراق وعمليات تدقيق الامتثال قبل إطلاق التطبيق للمرضى." }
+        ],
+        "technologies": [
+          "Next.js / React Native",
+          "Node.js / Python (Django)",
+          "Twilio Video / WebRTC",
+          "خدمات AWS (المتوافقة مع HIPAA)",
+          "HL7 FHIR / Redox",
+          "PostgreSQL (مشفر في وضع السكون)"
+        ],
+        "faq": [
+          { "question": "كيف تضمنون توافق المنصة مع قانون HIPAA؟", "answer": "نحن نضمن الامتثال في كل طبقة: الاستفادة من اتفاقيات شركاء الأعمال (BAAs) مع مزودي الخدمات السحابية مثل AWS، وفرض التشفير الشامل (End-to-End) للفيديو والمحادثات، وتشفير قواعد البيانات في وضع السكون، وتنفيذ تسجيل تدقيق صارم والتحكم في الوصول القائم على الأدوار." },
+          { "question": "هل يمكن للمنصة التكامل مع برنامج إدارة العيادة الحالي لدينا؟", "answer": "نعم. نحن متخصصون في إمكانية التشغيل البيني للرعاية الصحية ويمكننا دمج منصة التطبيب عن بعد الخاصة بك مع أنظمة EHR/EMR الرئيسية (مثل Epic أو Cerner أو Athenahealth) باستخدام معايير HL7 FHIR الحديثة أو اتصالات API المخصصة." }
+        ]
+      },
+      "metaTitle": "شركة تطوير تطبيقات التطبيب عن بعد | متوافق مع HIPAA",
+      "metaDescription": "قم ببناء منصات تطبيب عن بعد مخصصة وآمنة مع فيديو متوافق مع HIPAA، وجدولة مواعيد، وتكامل سلس مع السجلات الصحية الإلكترونية (EHR)."
+    }
+  }
+}

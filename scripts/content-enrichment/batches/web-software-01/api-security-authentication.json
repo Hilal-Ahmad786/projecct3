@@ -1,0 +1,278 @@
+{
+  "slug": "api-security-authentication",
+  "en": {
+    "name": "API Security & Authentication",
+    "shortDescription": "Lock down your APIs with battle-tested authentication and authorization: OAuth 2.0, OpenID Connect, JWTs, scoped API keys, fine-grained access control, and audit logging that stands up to security reviews.",
+    "fullDescription": "An exposed API is an open door, and most breaches trace back to weak authentication or broken access control rather than exotic exploits. We secure your APIs end to end: OAuth 2.0 and OpenID Connect for delegated access, short-lived JWTs with proper rotation, scoped API keys for service-to-service calls, and role- or attribute-based authorization enforced on every endpoint. We address the failures the OWASP API Top 10 keeps flagging — broken object-level authorization, excessive data exposure, missing rate limits — and add audit logging so every sensitive action is traceable. Whether you use a managed identity provider like Auth0 or Clerk or your own auth server, we implement it correctly, document it for your developers, and pressure-test it before it ships.",
+    "features": [
+      "OAuth 2.0 & OpenID Connect Flows",
+      "JWT Issuance, Rotation & Validation",
+      "Scoped API Key Management",
+      "Role- & Attribute-Based Access Control",
+      "Object-Level Authorization (BOLA/IDOR defense)",
+      "Request Signing & Replay Protection",
+      "Security Audit Logging & Alerting",
+      "Gateway & WAF Integration"
+    ],
+    "benefits": [
+      "Unauthorized access blocked at every layer",
+      "Defense against the OWASP API Top 10 risks",
+      "Granular, least-privilege access control",
+      "Full audit trail for compliance and forensics",
+      "Standards-based interop with partners and SSO",
+      "Developer-friendly auth that doesn't slow integration"
+    ],
+    "metaTitle": "API Security & Authentication | PakSoft",
+    "metaDescription": "Secure your APIs with OAuth 2.0, OpenID Connect, JWTs, scoped keys, and RBAC. Defend against OWASP API Top 10 risks with audit logging. Get a security review.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Threat Modeling & Audit", "description": "We map your endpoints, data sensitivity, and trust boundaries, then review current auth against the OWASP API Security Top 10. This produces a prioritized list of real risks rather than a generic checklist." },
+        { "step": 2, "title": "Auth Strategy & Provider Choice", "description": "We pick the right model — OAuth 2.0 for third-party access, JWTs for stateless sessions, API keys for machine-to-machine — and decide between a managed IdP like Auth0 and a self-hosted server. The choice balances control, cost, and how much auth you want to own." },
+        { "step": 3, "title": "Authentication Implementation", "description": "We implement login, token issuance, refresh, and revocation with secure defaults: short token lifetimes, asymmetric signing, and protection against replay. Tokens carry only what they need, so a leaked one exposes as little as possible." },
+        { "step": 4, "title": "Authorization & Access Control", "description": "We enforce authorization on every endpoint, including object-level checks that stop one user from reading another's records. Roles, scopes, or attributes are evaluated server-side, never trusted from the client." },
+        { "step": 5, "title": "Logging, Monitoring & Hardening", "description": "We add structured audit logs for sensitive actions and alerts for anomalies like credential stuffing or token abuse. Secrets move into a vault, and headers, CORS, and TLS settings are hardened to close common gaps." },
+        { "step": 6, "title": "Testing & Documentation", "description": "We run automated and manual security tests — fuzzing tokens, attempting privilege escalation, probing for IDOR — before launch. Your developers get clear docs on flows, scopes, and error handling so the security model is actually used correctly." }
+      ],
+      "faq": [
+        { "question": "Should I use OAuth 2.0, JWTs, or API keys?", "answer": "They solve different problems and often coexist. OAuth 2.0 (with OpenID Connect for identity) is the standard for letting users or third parties grant scoped access without sharing passwords. JWTs are a token format often used inside OAuth for stateless, self-contained sessions. API keys suit simple service-to-service calls where a long-lived secret is acceptable. We map each to the right use rather than forcing one everywhere." },
+        { "question": "Are JWTs safe to store in the browser?", "answer": "It depends where. Storing tokens in localStorage exposes them to XSS, so for browser apps we prefer short-lived access tokens in memory plus a refresh token in an HttpOnly, Secure, SameSite cookie that JavaScript can't read. Keeping access-token lifetimes short — minutes, not days — limits the damage if one does leak. The right pattern depends on your app's threat model." },
+        { "question": "What is BOLA and why does it matter?", "answer": "Broken Object-Level Authorization (BOLA/IDOR) is the number-one risk on the OWASP API Top 10: an authenticated user requests an object ID that isn't theirs, and the API returns it because it only checked that they're logged in, not that they own the record. Every endpoint that takes an ID must verify ownership server-side. We test for this explicitly because it's both common and high-impact." },
+        { "question": "How do I revoke a JWT before it expires?", "answer": "Pure JWTs are stateless and can't be revoked directly, which is the trade-off for not hitting a database on every request. The practical fixes are short token lifetimes plus a refresh mechanism, a server-side denylist of revoked token IDs checked on sensitive actions, or token versioning tied to the user record. We choose based on how fast you need revocation to take effect." },
+        { "question": "Should I build auth myself or use Auth0/Clerk?", "answer": "For most teams a managed provider is the safer, faster choice — it handles MFA, social login, password resets, and security patches that are easy to get wrong. Self-hosting makes sense when you have strict data-residency rules, unusual flows, or want to avoid per-user pricing at large scale. We've shipped both and will recommend honestly based on your constraints." },
+        { "question": "How do I secure machine-to-machine API calls?", "answer": "Use the OAuth 2.0 client-credentials grant or signed, scoped API keys rather than embedding user credentials. Each service gets its own identity and least-privilege scopes, secrets live in a vault not in code, and keys are rotated regularly. Mutual TLS adds another layer for high-trust internal communication." },
+        { "question": "How do you prevent token leakage and replay?", "answer": "We transport everything over TLS, keep tokens out of URLs and logs, and use short lifetimes so a captured token expires quickly. For sensitive operations we add request signing and nonces so a replayed request is rejected. Refresh tokens are rotated on each use, so a stolen one is detectable the moment the legitimate client uses theirs." },
+        { "question": "Does this cover compliance requirements?", "answer": "Authentication and authorization are the foundation of most compliance regimes, but they're not the whole picture. Our audit logging, access controls, and encryption support GDPR, SOC 2, and similar frameworks, and we document the controls for your auditors. We'll flag where API security ends and broader organizational controls — policies, training, vendor management — must take over." }
+      ],
+      "technologies": [
+        { "icon": "auth0", "name": "Auth0" },
+        { "icon": "clerk", "name": "Clerk" },
+        { "icon": "keycloak", "name": "Keycloak" },
+        { "icon": "okta", "name": "Okta" },
+        { "icon": "jsonwebtokens", "name": "JWT" },
+        { "icon": "kong", "name": "Kong" },
+        { "icon": "vault", "name": "HashiCorp Vault" },
+        { "icon": "owasp", "name": "OWASP" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "API Güvenliği ve Kimlik Doğrulama",
+    "shortDescription": "API'lerinizi denenmiş kimlik doğrulama ve yetkilendirmeyle kilitleyin: OAuth 2.0, OpenID Connect, JWT'ler, kapsamlı API anahtarları, ince taneli erişim kontrolü ve güvenlik denetimlerine dayanan kayıt tutma.",
+    "fullDescription": "Açıkta kalan bir API açık bir kapıdır ve ihlallerin çoğu egzotik açıklardan değil, zayıf kimlik doğrulamadan veya bozuk erişim kontrolünden kaynaklanır. API'lerinizi baştan sona güvenli hâle getiririz: yetki devri için OAuth 2.0 ve OpenID Connect, doğru rotasyonlu kısa ömürlü JWT'ler, servisler arası çağrılar için kapsamlı API anahtarları ve her uç noktada uygulanan rol veya öznitelik tabanlı yetkilendirme. OWASP API Top 10'un sürekli işaret ettiği hataları ele alırız — bozuk nesne düzeyi yetkilendirme, aşırı veri ifşası, eksik hız limitleri — ve her hassas işlemin izlenebilir olması için denetim kaydı ekleriz. İster Auth0 veya Clerk gibi yönetilen bir kimlik sağlayıcı ister kendi auth sunucunuzu kullanın, doğru uygular, geliştiricileriniz için belgeler ve yayınlamadan önce baskı testinden geçiririz.",
+    "features": [
+      "OAuth 2.0 ve OpenID Connect Akışları",
+      "JWT Üretimi, Rotasyonu ve Doğrulaması",
+      "Kapsamlı API Anahtarı Yönetimi",
+      "Rol ve Öznitelik Tabanlı Erişim Kontrolü",
+      "Nesne Düzeyi Yetkilendirme (BOLA/IDOR savunması)",
+      "İstek İmzalama ve Tekrar Saldırısı Koruması",
+      "Güvenlik Denetim Kaydı ve Uyarılar",
+      "Gateway ve WAF Entegrasyonu"
+    ],
+    "benefits": [
+      "Yetkisiz erişim her katmanda engellenir",
+      "OWASP API Top 10 risklerine karşı savunma",
+      "İnce taneli, en az ayrıcalık erişim kontrolü",
+      "Uyumluluk ve adli inceleme için tam denetim izi",
+      "Ortaklar ve SSO ile standart tabanlı birlikte çalışma",
+      "Entegrasyonu yavaşlatmayan geliştirici dostu kimlik doğrulama"
+    ],
+    "metaTitle": "API Güvenliği ve Kimlik Doğrulama | PakSoft",
+    "metaDescription": "API'lerinizi OAuth 2.0, OpenID Connect, JWT, kapsamlı anahtarlar ve RBAC ile güvenli kılın. OWASP API Top 10 risklerine karşı koruyun. Güvenlik incelemesi alın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Tehdit Modelleme ve Denetim", "description": "Uç noktalarınızı, veri hassasiyetini ve güven sınırlarını haritalar, ardından mevcut kimlik doğrulamayı OWASP API Security Top 10'a göre inceleriz. Bu, genel bir kontrol listesi değil, gerçek risklerin önceliklendirilmiş bir listesini üretir." },
+        { "step": 2, "title": "Auth Stratejisi ve Sağlayıcı Seçimi", "description": "Doğru modeli seçeriz — üçüncü taraf erişimi için OAuth 2.0, durumsuz oturumlar için JWT, makineler arası için API anahtarları — ve Auth0 gibi yönetilen bir IdP ile kendi barındırdığınız sunucu arasında karar veririz. Seçim; kontrol, maliyet ve ne kadar auth'a sahip olmak istediğinizi dengeler." },
+        { "step": 3, "title": "Kimlik Doğrulama Uygulaması", "description": "Girişi, token üretimini, yenilemeyi ve iptali güvenli varsayılanlarla uygularız: kısa token ömürleri, asimetrik imzalama ve tekrar saldırısına karşı koruma. Token'lar yalnızca gerekeni taşır; böylece sızan bir token mümkün olduğunca az şey açığa çıkarır." },
+        { "step": 4, "title": "Yetkilendirme ve Erişim Kontrolü", "description": "Yetkilendirmeyi her uç noktada uygularız; buna bir kullanıcının başkasının kayıtlarını okumasını durduran nesne düzeyi kontroller de dahildir. Roller, kapsamlar veya öznitelikler sunucu tarafında değerlendirilir, asla istemciye güvenilmez." },
+        { "step": 5, "title": "Kayıt, İzleme ve Sertleştirme", "description": "Hassas işlemler için yapılandırılmış denetim kayıtları ve credential stuffing veya token kötüye kullanımı gibi anomaliler için uyarılar ekleriz. Sırlar bir vault'a taşınır; header, CORS ve TLS ayarları yaygın boşlukları kapatmak için sertleştirilir." },
+        { "step": 6, "title": "Test ve Dokümantasyon", "description": "Yayından önce otomatik ve manuel güvenlik testleri yaparız — token'ları fuzz'lama, ayrıcalık yükseltme denemeleri, IDOR araması. Geliştiricileriniz akışlar, kapsamlar ve hata yönetimi hakkında net belgeler alır; böylece güvenlik modeli gerçekten doğru kullanılır." }
+      ],
+      "faq": [
+        { "question": "OAuth 2.0, JWT yoksa API anahtarı mı kullanmalıyım?", "answer": "Farklı sorunları çözerler ve genellikle bir arada bulunurlar. OAuth 2.0 (kimlik için OpenID Connect ile), kullanıcıların veya üçüncü tarafların şifre paylaşmadan kapsamlı erişim vermesinin standardıdır. JWT, OAuth içinde durumsuz, kendi kendine yeten oturumlar için sıkça kullanılan bir token biçimidir. API anahtarları, uzun ömürlü bir sırrın kabul edilebilir olduğu basit servisler arası çağrılara uygundur. Her birini her yere zorlamak yerine doğru kullanıma eşleriz." },
+        { "question": "JWT'leri tarayıcıda saklamak güvenli mi?", "answer": "Nereye sakladığınıza bağlı. Token'ları localStorage'da saklamak onları XSS'e açar; bu yüzden tarayıcı uygulamaları için kısa ömürlü access token'ları bellekte ve JavaScript'in okuyamayacağı HttpOnly, Secure, SameSite cookie'de bir refresh token tercih ederiz. Access token ömürlerini kısa tutmak — gün değil dakika — biri sızarsa hasarı sınırlar. Doğru desen uygulamanızın tehdit modeline bağlıdır." },
+        { "question": "BOLA nedir ve neden önemlidir?", "answer": "Bozuk Nesne Düzeyi Yetkilendirme (BOLA/IDOR), OWASP API Top 10'daki bir numaralı risktir: kimliği doğrulanmış bir kullanıcı kendisine ait olmayan bir nesne ID'si ister ve API yalnızca giriş yapıldığını kontrol ettiği, kaydın sahipliğini kontrol etmediği için onu döndürür. ID alan her uç nokta sahipliği sunucu tarafında doğrulamalıdır. Hem yaygın hem yüksek etkili olduğu için bunu açıkça test ederiz." },
+        { "question": "Bir JWT'yi süresi dolmadan nasıl iptal ederim?", "answer": "Saf JWT'ler durumsuzdur ve doğrudan iptal edilemez; bu, her istekte veritabanına gitmemenin bedelidir. Pratik çözümler kısa token ömürleri artı bir yenileme mekanizması, hassas işlemlerde kontrol edilen iptal edilmiş token ID'lerinin sunucu tarafı bir denylist'i veya kullanıcı kaydına bağlı token sürümlemesidir. İptalin ne kadar hızlı etkili olması gerektiğine göre seçeriz." },
+        { "question": "Auth'u kendim mi kurmalıyım yoksa Auth0/Clerk mi kullanmalıyım?", "answer": "Çoğu ekip için yönetilen bir sağlayıcı daha güvenli ve hızlı seçimdir — MFA, sosyal giriş, şifre sıfırlama ve yanlış yapılması kolay güvenlik yamalarını üstlenir. Kendi barındırmak; katı veri ikametgâhı kuralları, sıra dışı akışlar veya büyük ölçekte kullanıcı başına ücretten kaçınmak istediğinizde mantıklıdır. İkisini de yayınladık ve kısıtlarınıza göre dürüstçe öneririz." },
+        { "question": "Makineler arası API çağrılarını nasıl güvenli kılarım?", "answer": "Kullanıcı kimlik bilgilerini gömmek yerine OAuth 2.0 client-credentials izni veya imzalı, kapsamlı API anahtarları kullanın. Her servis kendi kimliğini ve en az ayrıcalık kapsamlarını alır, sırlar kodda değil bir vault'ta yaşar ve anahtarlar düzenli olarak rotasyona girer. Karşılıklı TLS, yüksek güvenli dahili iletişim için bir katman daha ekler." },
+        { "question": "Token sızıntısını ve tekrar saldırısını nasıl önlüyorsunuz?", "answer": "Her şeyi TLS üzerinden taşırız, token'ları URL'lerden ve loglardan uzak tutarız ve yakalanan bir token'ın hızla dolması için kısa ömürler kullanırız. Hassas işlemler için istek imzalama ve nonce ekleriz; böylece tekrar edilen bir istek reddedilir. Refresh token'lar her kullanımda rotasyona girer; çalınan biri, meşru istemci kendisininkini kullandığı an tespit edilebilir." },
+        { "question": "Bu, uyumluluk gereksinimlerini kapsıyor mu?", "answer": "Kimlik doğrulama ve yetkilendirme çoğu uyumluluk rejiminin temelidir ama tüm resim değildir. Denetim kaydımız, erişim kontrollerimiz ve şifrelememiz GDPR, SOC 2 ve benzeri çerçeveleri destekler ve kontrolleri denetçileriniz için belgeleriz. API güvenliğinin nerede bittiğini ve daha geniş kurumsal kontrollerin — politikalar, eğitim, tedarikçi yönetimi — nerede devralması gerektiğini işaret ederiz." }
+      ],
+      "technologies": [
+        { "icon": "auth0", "name": "Auth0" },
+        { "icon": "clerk", "name": "Clerk" },
+        { "icon": "keycloak", "name": "Keycloak" },
+        { "icon": "okta", "name": "Okta" },
+        { "icon": "jsonwebtokens", "name": "JWT" },
+        { "icon": "kong", "name": "Kong" },
+        { "icon": "vault", "name": "HashiCorp Vault" },
+        { "icon": "owasp", "name": "OWASP" }
+      ]
+    }
+  },
+  "de": {
+    "name": "API-Sicherheit & Authentifizierung",
+    "shortDescription": "Sichern Sie Ihre APIs mit erprobter Authentifizierung und Autorisierung: OAuth 2.0, OpenID Connect, JWTs, gescopte API-Schlüssel, feingranulare Zugriffskontrolle und Audit-Logging, das Security-Reviews standhält.",
+    "fullDescription": "Eine offene API ist eine offene Tür, und die meisten Breaches gehen auf schwache Authentifizierung oder fehlerhafte Zugriffskontrolle zurück, nicht auf exotische Exploits. Wir sichern Ihre APIs durchgängig: OAuth 2.0 und OpenID Connect für delegierten Zugriff, kurzlebige JWTs mit korrekter Rotation, gescopte API-Schlüssel für Service-zu-Service-Calls sowie rollen- oder attributbasierte Autorisierung an jedem Endpunkt. Wir adressieren die Fehler, die die OWASP API Top 10 immer wieder markieren — Broken Object-Level Authorization, übermäßige Datenpreisgabe, fehlende Rate-Limits — und ergänzen Audit-Logging, damit jede sensible Aktion nachvollziehbar ist. Ob Sie einen Managed-Identity-Provider wie Auth0 oder Clerk oder Ihren eigenen Auth-Server nutzen: Wir setzen es korrekt um, dokumentieren es für Ihre Entwickler und testen es vor dem Release auf Herz und Nieren.",
+    "features": [
+      "OAuth-2.0- & OpenID-Connect-Flows",
+      "JWT-Ausstellung, -Rotation & -Validierung",
+      "Verwaltung gescopter API-Schlüssel",
+      "Rollen- & attributbasierte Zugriffskontrolle",
+      "Object-Level Authorization (BOLA/IDOR-Schutz)",
+      "Request-Signierung & Replay-Schutz",
+      "Security-Audit-Logging & Alerting",
+      "Gateway- & WAF-Integration"
+    ],
+    "benefits": [
+      "Unbefugter Zugriff auf jeder Ebene blockiert",
+      "Schutz gegen die OWASP API Top 10",
+      "Feingranulare Zugriffskontrolle nach Least Privilege",
+      "Vollständiger Audit-Trail für Compliance und Forensik",
+      "Standardbasierte Interoperabilität mit Partnern und SSO",
+      "Entwicklerfreundliche Auth ohne Integrations-Bremse"
+    ],
+    "metaTitle": "API-Sicherheit & Authentifizierung | PakSoft",
+    "metaDescription": "Sichern Sie APIs mit OAuth 2.0, OpenID Connect, JWTs, gescopten Keys und RBAC. Schutz vor OWASP API Top 10 inkl. Audit-Logging. Jetzt Security-Review anfordern.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Threat Modeling & Audit", "description": "Wir kartieren Ihre Endpunkte, Datensensibilität und Trust-Boundaries und prüfen die aktuelle Auth gegen die OWASP API Security Top 10. Das ergibt eine priorisierte Liste echter Risiken statt einer generischen Checkliste." },
+        { "step": 2, "title": "Auth-Strategie & Provider-Wahl", "description": "Wir wählen das richtige Modell — OAuth 2.0 für Drittzugriff, JWTs für zustandslose Sessions, API-Schlüssel für Machine-to-Machine — und entscheiden zwischen einem Managed IdP wie Auth0 und einem selbst gehosteten Server. Die Wahl balanciert Kontrolle, Kosten und wie viel Auth Sie selbst besitzen wollen." },
+        { "step": 3, "title": "Authentifizierungs-Implementierung", "description": "Wir implementieren Login, Token-Ausstellung, Refresh und Revocation mit sicheren Defaults: kurze Token-Lebensdauern, asymmetrische Signierung und Replay-Schutz. Tokens tragen nur das Nötige, sodass ein geleaktes so wenig wie möglich preisgibt." },
+        { "step": 4, "title": "Autorisierung & Zugriffskontrolle", "description": "Wir erzwingen Autorisierung an jedem Endpunkt, inklusive Object-Level-Checks, die verhindern, dass ein Nutzer fremde Datensätze liest. Rollen, Scopes oder Attribute werden serverseitig ausgewertet, niemals dem Client geglaubt." },
+        { "step": 5, "title": "Logging, Monitoring & Hardening", "description": "Wir ergänzen strukturierte Audit-Logs für sensible Aktionen und Alerts für Anomalien wie Credential Stuffing oder Token-Missbrauch. Secrets wandern in einen Vault; Header, CORS und TLS werden gehärtet, um gängige Lücken zu schließen." },
+        { "step": 6, "title": "Testing & Dokumentation", "description": "Vor dem Launch führen wir automatisierte und manuelle Security-Tests durch — Token-Fuzzing, Privilege-Escalation-Versuche, IDOR-Probing. Ihre Entwickler erhalten klare Docs zu Flows, Scopes und Fehlerbehandlung, damit das Sicherheitsmodell tatsächlich korrekt genutzt wird." }
+      ],
+      "faq": [
+        { "question": "OAuth 2.0, JWTs oder API-Schlüssel?", "answer": "Sie lösen verschiedene Probleme und koexistieren oft. OAuth 2.0 (mit OpenID Connect für Identität) ist der Standard, um Nutzern oder Dritten gescopten Zugriff ohne Passwortweitergabe zu erteilen. JWTs sind ein Token-Format, das innerhalb von OAuth oft für zustandslose, in sich geschlossene Sessions dient. API-Schlüssel passen für einfache Service-zu-Service-Calls, wo ein langlebiges Secret akzeptabel ist. Wir ordnen jedes dem richtigen Zweck zu, statt eines überall zu erzwingen." },
+        { "question": "Ist es sicher, JWTs im Browser zu speichern?", "answer": "Kommt darauf an, wo. Tokens in localStorage sind XSS-exponiert; für Browser-Apps bevorzugen wir daher kurzlebige Access-Tokens im Speicher plus ein Refresh-Token in einem HttpOnly-, Secure-, SameSite-Cookie, das JavaScript nicht lesen kann. Kurze Access-Token-Lebensdauern — Minuten, nicht Tage — begrenzen den Schaden bei einem Leak. Das richtige Muster hängt vom Threat-Model Ihrer App ab." },
+        { "question": "Was ist BOLA und warum ist es wichtig?", "answer": "Broken Object-Level Authorization (BOLA/IDOR) ist das Top-Risiko der OWASP API Top 10: Ein authentifizierter Nutzer fragt eine Objekt-ID an, die ihm nicht gehört, und die API liefert sie, weil sie nur prüfte, ob er eingeloggt ist, nicht ob er Eigentümer ist. Jeder Endpunkt, der eine ID annimmt, muss die Eigentümerschaft serverseitig verifizieren. Wir testen das explizit, weil es häufig und folgenschwer ist." },
+        { "question": "Wie widerrufe ich ein JWT vor Ablauf?", "answer": "Reine JWTs sind zustandslos und nicht direkt widerrufbar — der Preis dafür, nicht bei jedem Request die Datenbank zu treffen. Praktische Lösungen: kurze Token-Lebensdauern plus Refresh-Mechanismus, eine serverseitige Denylist widerrufener Token-IDs für sensible Aktionen oder Token-Versionierung am Nutzerdatensatz. Wir wählen je nachdem, wie schnell die Revocation greifen muss." },
+        { "question": "Auth selbst bauen oder Auth0/Clerk nutzen?", "answer": "Für die meisten Teams ist ein Managed-Provider die sicherere, schnellere Wahl — er übernimmt MFA, Social Login, Passwort-Resets und Security-Patches, die leicht falsch laufen. Selbst-Hosting lohnt bei strikten Data-Residency-Regeln, ungewöhnlichen Flows oder um pro-Nutzer-Preise bei großem Maßstab zu vermeiden. Wir haben beides ausgeliefert und empfehlen ehrlich nach Ihren Rahmenbedingungen." },
+        { "question": "Wie sichere ich Machine-to-Machine-API-Calls?", "answer": "Nutzen Sie den OAuth-2.0-Client-Credentials-Grant oder signierte, gescopte API-Schlüssel statt eingebetteter Nutzer-Credentials. Jeder Service erhält eigene Identität und Least-Privilege-Scopes, Secrets liegen im Vault statt im Code, und Schlüssel werden regelmäßig rotiert. Mutual TLS ergänzt eine weitere Ebene für hochvertrauliche interne Kommunikation." },
+        { "question": "Wie verhindern Sie Token-Leakage und Replay?", "answer": "Wir transportieren alles über TLS, halten Tokens aus URLs und Logs heraus und nutzen kurze Lebensdauern, damit ein abgefangener Token schnell abläuft. Für sensible Operationen ergänzen wir Request-Signierung und Nonces, sodass ein wiederholter Request abgewiesen wird. Refresh-Tokens werden bei jeder Nutzung rotiert, sodass ein gestohlener auffällt, sobald der legitime Client seinen verwendet." },
+        { "question": "Deckt das Compliance-Anforderungen ab?", "answer": "Authentifizierung und Autorisierung sind das Fundament der meisten Compliance-Regime, aber nicht das Gesamtbild. Unser Audit-Logging, die Zugriffskontrollen und Verschlüsselung unterstützen DSGVO, SOC 2 und ähnliche Frameworks, und wir dokumentieren die Kontrollen für Ihre Auditoren. Wir markieren, wo API-Sicherheit endet und breitere organisatorische Kontrollen — Richtlinien, Schulung, Vendor-Management — übernehmen müssen." }
+      ],
+      "technologies": [
+        { "icon": "auth0", "name": "Auth0" },
+        { "icon": "clerk", "name": "Clerk" },
+        { "icon": "keycloak", "name": "Keycloak" },
+        { "icon": "okta", "name": "Okta" },
+        { "icon": "jsonwebtokens", "name": "JWT" },
+        { "icon": "kong", "name": "Kong" },
+        { "icon": "vault", "name": "HashiCorp Vault" },
+        { "icon": "owasp", "name": "OWASP" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "API سیکیورٹی اور تصدیق",
+    "shortDescription": "اپنی APIs کو آزمودہ تصدیق اور اجازت سے محفوظ کریں: OAuth 2.0، OpenID Connect، JWTs، scoped API keys، باریک رسائی کنٹرول، اور آڈٹ لاگنگ جو سیکیورٹی جائزوں پر پوری اترے۔",
+    "fullDescription": "غیر محفوظ API ایک کھلا دروازہ ہے، اور زیادہ تر breaches کمزور تصدیق یا ٹوٹے رسائی کنٹرول سے جنم لیتے ہیں، نہ کہ نایاب exploits سے۔ ہم آپ کی APIs کو سرے سے آخر تک محفوظ بناتے ہیں: اختیار سونپنے کے لیے OAuth 2.0 اور OpenID Connect، درست rotation کے ساتھ مختصر عمر کے JWTs، services کے درمیان کالز کے لیے scoped API keys، اور ہر endpoint پر نافذ کردہ role یا attribute پر مبنی اجازت۔ ہم وہ غلطیاں دور کرتے ہیں جنہیں OWASP API Top 10 بار بار نشان زد کرتا ہے — ٹوٹا object-level authorization، حد سے زیادہ ڈیٹا کا افشا، غائب rate limits — اور آڈٹ لاگنگ شامل کرتے ہیں تاکہ ہر حساس عمل قابلِ کھوج ہو۔ خواہ آپ Auth0 یا Clerk جیسا managed identity provider استعمال کریں یا اپنا auth server، ہم اسے درست نافذ کرتے ہیں، آپ کے ڈیولپرز کے لیے دستاویز کرتے ہیں اور اجراء سے پہلے سخت آزماتے ہیں۔",
+    "features": [
+      "OAuth 2.0 اور OpenID Connect فلوز",
+      "JWT اجراء، rotation اور تصدیق",
+      "Scoped API Key کا انتظام",
+      "Role اور Attribute پر مبنی رسائی کنٹرول",
+      "Object-Level Authorization (BOLA/IDOR دفاع)",
+      "Request دستخط اور Replay تحفظ",
+      "سیکیورٹی آڈٹ لاگنگ اور الرٹس",
+      "Gateway اور WAF انٹیگریشن"
+    ],
+    "benefits": [
+      "غیر مجاز رسائی ہر پرت پر روک دی جاتی ہے",
+      "OWASP API Top 10 خطرات کے خلاف دفاع",
+      "باریک، کم ترین استحقاق رسائی کنٹرول",
+      "تعمیل اور فرانزک کے لیے مکمل آڈٹ ٹریل",
+      "شراکت داروں اور SSO کے ساتھ معیار پر مبنی ربط",
+      "ڈیولپر دوست تصدیق جو انٹیگریشن سست نہیں کرتی"
+    ],
+    "metaTitle": "API سیکیورٹی اور تصدیق | PakSoft",
+    "metaDescription": "اپنی APIs کو OAuth 2.0، OpenID Connect، JWT، scoped keys اور RBAC سے محفوظ کریں۔ OWASP API Top 10 خطرات سے بچائیں۔ آج ہی سیکیورٹی جائزہ لیں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "تھریٹ ماڈلنگ اور آڈٹ", "description": "ہم آپ کے endpoints، ڈیٹا کی حساسیت اور trust boundaries کا نقشہ بناتے ہیں، پھر موجودہ تصدیق کا OWASP API Security Top 10 کے مقابل جائزہ لیتے ہیں۔ اس سے عام چیک لسٹ کے بجائے حقیقی خطرات کی ترجیحی فہرست بنتی ہے۔" },
+        { "step": 2, "title": "Auth حکمتِ عملی اور provider انتخاب", "description": "ہم درست ماڈل منتخب کرتے ہیں — تھرڈ پارٹی رسائی کے لیے OAuth 2.0، stateless sessions کے لیے JWT، مشینوں کے درمیان کے لیے API keys — اور Auth0 جیسے managed IdP اور خود میزبان سرور میں فیصلہ کرتے ہیں۔ انتخاب کنٹرول، لاگت اور آپ کتنا auth خود رکھنا چاہتے ہیں، کے درمیان توازن رکھتا ہے۔" },
+        { "step": 3, "title": "تصدیق کا نفاذ", "description": "ہم login، token اجراء، refresh اور revocation کو محفوظ ڈیفالٹس کے ساتھ نافذ کرتے ہیں: مختصر token عمر، asymmetric signing اور replay سے تحفظ۔ Tokens صرف ضروری چیز رکھتے ہیں تاکہ کوئی لیک شدہ token کم سے کم افشا کرے۔" },
+        { "step": 4, "title": "اجازت اور رسائی کنٹرول", "description": "ہم ہر endpoint پر اجازت نافذ کرتے ہیں، بشمول object-level جانچ جو ایک صارف کو دوسرے کے ریکارڈ پڑھنے سے روکتی ہے۔ Roles، scopes یا attributes server کی جانب پرکھے جاتے ہیں، client پر کبھی بھروسا نہیں کیا جاتا۔" },
+        { "step": 5, "title": "لاگنگ، نگرانی اور سختی", "description": "ہم حساس اعمال کے لیے منظم آڈٹ logs اور credential stuffing یا token غلط استعمال جیسی بے قاعدگیوں کے لیے الرٹس شامل کرتے ہیں۔ Secrets ایک vault میں منتقل ہوتے ہیں؛ headers، CORS اور TLS ترتیبات عام خلا بند کرنے کے لیے سخت کی جاتی ہیں۔" },
+        { "step": 6, "title": "ٹیسٹنگ اور دستاویزات", "description": "اجراء سے پہلے ہم خودکار اور دستی سیکیورٹی ٹیسٹ چلاتے ہیں — tokens کو fuzz کرنا، استحقاق بڑھانے کی کوشش، IDOR تلاش۔ آپ کے ڈیولپرز کو flows، scopes اور error handling پر واضح دستاویزات ملتی ہیں تاکہ سیکیورٹی ماڈل واقعی درست استعمال ہو۔" }
+      ],
+      "faq": [
+        { "question": "مجھے OAuth 2.0، JWT یا API key استعمال کرنا چاہیے؟", "answer": "یہ مختلف مسائل حل کرتے ہیں اور اکثر ساتھ موجود رہتے ہیں۔ OAuth 2.0 (شناخت کے لیے OpenID Connect کے ساتھ) صارفین یا تھرڈ پارٹیز کو پاس ورڈ شیئر کیے بغیر scoped رسائی دینے کا معیار ہے۔ JWT ایک token فارمیٹ ہے جو OAuth کے اندر stateless، خود کفیل sessions کے لیے اکثر استعمال ہوتا ہے۔ API keys سادہ services کے درمیان کالز کے لیے موزوں ہیں جہاں طویل عمر کا secret قابلِ قبول ہو۔ ہم ہر ایک کو درست استعمال سے جوڑتے ہیں نہ کہ ایک کو ہر جگہ مسلط کرتے ہیں۔" },
+        { "question": "کیا JWTs کو براؤزر میں رکھنا محفوظ ہے؟", "answer": "اس پر منحصر ہے کہ کہاں۔ tokens کو localStorage میں رکھنا انہیں XSS کے سامنے لاتا ہے؛ اس لیے براؤزر ایپس کے لیے ہم مختصر عمر کے access tokens میموری میں اور JavaScript کے ناقابلِ مطالعہ HttpOnly، Secure، SameSite cookie میں refresh token کو ترجیح دیتے ہیں۔ access-token کی عمر مختصر رکھنا — دن نہیں منٹ — لیک ہونے پر نقصان محدود کرتا ہے۔ درست طریقہ آپ کی ایپ کے threat model پر منحصر ہے۔" },
+        { "question": "BOLA کیا ہے اور یہ کیوں اہم ہے؟", "answer": "ٹوٹا Object-Level Authorization (BOLA/IDOR) OWASP API Top 10 کا نمبر ایک خطرہ ہے: ایک تصدیق شدہ صارف ایسی object ID مانگتا ہے جو اس کی نہیں، اور API اسے واپس کر دیتی ہے کیونکہ اس نے صرف یہ جانچا کہ صارف لاگ اِن ہے، نہ کہ وہ ریکارڈ کا مالک ہے۔ ID لینے والے ہر endpoint کو ملکیت server کی جانب تصدیق کرنی چاہیے۔ ہم اسے واضح طور پر ٹیسٹ کرتے ہیں کیونکہ یہ عام بھی ہے اور زیادہ اثر والا بھی۔" },
+        { "question": "میں JWT کو میعاد ختم ہونے سے پہلے کیسے منسوخ کروں؟", "answer": "خالص JWTs stateless ہیں اور براہِ راست منسوخ نہیں ہو سکتے؛ یہ ہر request پر ڈیٹابیس نہ چھونے کی قیمت ہے۔ عملی حل ہیں مختصر token عمر مع refresh میکانزم، حساس اعمال پر جانچے جانے والے منسوخ token IDs کی server-side denylist، یا صارف ریکارڈ سے جڑی token versioning۔ ہم اس بنیاد پر منتخب کرتے ہیں کہ منسوخی کتنی تیزی سے لاگو ہونی چاہیے۔" },
+        { "question": "میں auth خود بناؤں یا Auth0/Clerk استعمال کروں؟", "answer": "زیادہ تر ٹیموں کے لیے managed provider زیادہ محفوظ، تیز انتخاب ہے — یہ MFA، سوشل لاگ اِن، پاس ورڈ ری سیٹ اور وہ سیکیورٹی پیچز سنبھالتا ہے جو غلط کرنا آسان ہے۔ خود میزبانی اس وقت معقول ہے جب آپ کے پاس سخت data-residency قواعد، غیر معمولی flows ہوں، یا بڑے اسکیل پر فی صارف قیمت سے بچنا چاہتے ہوں۔ ہم نے دونوں بنائے ہیں اور آپ کی پابندیوں کے مطابق دیانتداری سے تجویز کرتے ہیں۔" },
+        { "question": "مشینوں کے درمیان API کالز کیسے محفوظ کروں؟", "answer": "صارف credentials سرایت کرنے کے بجائے OAuth 2.0 client-credentials grant یا دستخط شدہ، scoped API keys استعمال کریں۔ ہر service اپنی شناخت اور کم ترین استحقاق scopes پاتی ہے، secrets کوڈ میں نہیں vault میں رہتے ہیں، اور keys باقاعدگی سے rotate ہوتی ہیں۔ Mutual TLS اعلیٰ اعتماد والے اندرونی رابطے کے لیے ایک اور پرت شامل کرتا ہے۔" },
+        { "question": "آپ token لیک اور replay کیسے روکتے ہیں؟", "answer": "ہم سب کچھ TLS پر منتقل کرتے ہیں، tokens کو URLs اور logs سے دور رکھتے ہیں اور مختصر عمر استعمال کرتے ہیں تاکہ پکڑا گیا token جلد ختم ہو جائے۔ حساس اعمال کے لیے ہم request دستخط اور nonces شامل کرتے ہیں تاکہ دہرایا گیا request مسترد ہو۔ Refresh tokens ہر استعمال پر rotate ہوتے ہیں، یوں چوری شدہ token اسی لمحے پکڑا جاتا ہے جب جائز client اپنا استعمال کرتا ہے۔" },
+        { "question": "کیا یہ تعمیل کی ضروریات کا احاطہ کرتا ہے؟", "answer": "تصدیق اور اجازت زیادہ تر تعمیل نظاموں کی بنیاد ہیں مگر پوری تصویر نہیں۔ ہماری آڈٹ لاگنگ، رسائی کنٹرول اور خفیہ کاری GDPR، SOC 2 اور ایسے فریم ورکس کی حمایت کرتی ہے، اور ہم آپ کے آڈیٹرز کے لیے کنٹرولز دستاویز کرتے ہیں۔ ہم نشان زد کرتے ہیں کہ API سیکیورٹی کہاں ختم ہوتی ہے اور وسیع تر تنظیمی کنٹرولز — پالیسیاں، تربیت، vendor management — کہاں سنبھالنے چاہئیں۔" }
+      ],
+      "technologies": [
+        { "icon": "auth0", "name": "Auth0" },
+        { "icon": "clerk", "name": "Clerk" },
+        { "icon": "keycloak", "name": "Keycloak" },
+        { "icon": "okta", "name": "Okta" },
+        { "icon": "jsonwebtokens", "name": "JWT" },
+        { "icon": "kong", "name": "Kong" },
+        { "icon": "vault", "name": "HashiCorp Vault" },
+        { "icon": "owasp", "name": "OWASP" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "أمان واجهات API والمصادقة",
+    "shortDescription": "أحكِموا واجهات API بمصادقة وتفويض مُجرَّبَين: OAuth 2.0 وOpenID Connect وJWTs ومفاتيح API محدودة النطاق وتحكّم دقيق بالوصول وتسجيل تدقيق يصمد أمام المراجعات الأمنية.",
+    "fullDescription": "واجهة API مكشوفة هي باب مفتوح، ومعظم الاختراقات تعود إلى ضعف المصادقة أو خلل التحكم بالوصول لا إلى ثغرات نادرة. نؤمّن واجهاتكم من البداية إلى النهاية: OAuth 2.0 وOpenID Connect للوصول المفوَّض، وJWTs قصيرة العمر بتدوير صحيح، ومفاتيح API محدودة النطاق لنداءات الخدمة إلى الخدمة، وتفويض قائم على الأدوار أو السمات يُفرض على كل نقطة نهاية. نعالج الإخفاقات التي تكرّر OWASP API Top 10 الإشارة إليها — خلل التفويض على مستوى الكائن، وكشف البيانات المفرط، وغياب حدود المعدّل — ونضيف تسجيل تدقيق كي يكون كل إجراء حسّاس قابلاً للتتبّع. وسواء استخدمتم موفّر هوية مُداراً مثل Auth0 أو Clerk أو خادم مصادقة خاصاً بكم، ننفّذه بشكل صحيح، ونوثّقه لمطوّريكم، ونختبره بضغط قبل الإطلاق.",
+    "features": [
+      "تدفقات OAuth 2.0 وOpenID Connect",
+      "إصدار JWT وتدويره والتحقق منه",
+      "إدارة مفاتيح API محدودة النطاق",
+      "تحكّم بالوصول قائم على الأدوار والسمات",
+      "تفويض على مستوى الكائن (دفاع BOLA/IDOR)",
+      "توقيع الطلبات والحماية من إعادة التشغيل",
+      "تسجيل تدقيق أمني وتنبيهات",
+      "تكامل مع البوابة وWAF"
+    ],
+    "benefits": [
+      "الوصول غير المصرّح به محجوب في كل طبقة",
+      "دفاع ضد مخاطر OWASP API Top 10",
+      "تحكّم دقيق بالوصول وفق أقل صلاحية",
+      "سجل تدقيق كامل للامتثال والتحقيق الجنائي",
+      "تشغيل بيني قائم على المعايير مع الشركاء وSSO",
+      "مصادقة صديقة للمطوّر لا تُبطئ التكامل"
+    ],
+    "metaTitle": "أمان واجهات API والمصادقة | PakSoft",
+    "metaDescription": "أمّنوا واجهات API بـ OAuth 2.0 وOpenID Connect وJWTs ومفاتيح محدودة النطاق وRBAC. دفاع ضد OWASP API Top 10 مع تسجيل تدقيق. اطلبوا مراجعة أمنية.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "نمذجة التهديد والتدقيق", "description": "نرسم خرائط نقاط النهاية وحساسية البيانات وحدود الثقة، ثم نراجع المصادقة الحالية مقابل OWASP API Security Top 10. ينتج عن ذلك قائمة مخاطر حقيقية مرتّبة بالأولوية بدل قائمة تحقّق عامة." },
+        { "step": 2, "title": "استراتيجية المصادقة واختيار الموفّر", "description": "نختار النموذج الصحيح — OAuth 2.0 لوصول الطرف الثالث، وJWTs للجلسات عديمة الحالة، ومفاتيح API بين الآلات — ونقرّر بين موفّر هوية مُدار مثل Auth0 وخادم ذاتي الاستضافة. يوازن الاختيار بين التحكم والتكلفة وقدر المصادقة الذي تريدون امتلاكه." },
+        { "step": 3, "title": "تنفيذ المصادقة", "description": "ننفّذ تسجيل الدخول وإصدار الرموز والتجديد والإبطال بإعدادات افتراضية آمنة: أعمار رموز قصيرة، وتوقيع غير متماثل، وحماية من إعادة التشغيل. تحمل الرموز ما تحتاجه فقط، كي يكشف الرمز المسرَّب أقل ما يمكن." },
+        { "step": 4, "title": "التفويض والتحكم بالوصول", "description": "نفرض التفويض على كل نقطة نهاية، بما في ذلك فحوص على مستوى الكائن تمنع مستخدماً من قراءة سجلات غيره. تُقيَّم الأدوار والنطاقات والسمات على الخادم، ولا يُوثَق بها من العميل أبداً." },
+        { "step": 5, "title": "التسجيل والمراقبة والتقوية", "description": "نضيف سجلات تدقيق منظّمة للإجراءات الحساسة وتنبيهات للشذوذ مثل حشو بيانات الاعتماد أو إساءة استخدام الرموز. تنتقل الأسرار إلى خزنة، وتُقوّى ترويسات الطلب وCORS وإعدادات TLS لسدّ الثغرات الشائعة." },
+        { "step": 6, "title": "الاختبار والتوثيق", "description": "قبل الإطلاق نجري اختبارات أمنية آلية ويدوية — تشويش الرموز، ومحاولات تصعيد الصلاحيات، والبحث عن IDOR. يحصل مطوّروكم على توثيق واضح للتدفقات والنطاقات ومعالجة الأخطاء كي يُستخدم النموذج الأمني بشكل صحيح فعلاً." }
+      ],
+      "faq": [
+        { "question": "هل أستخدم OAuth 2.0 أم JWTs أم مفاتيح API؟", "answer": "تحل مشكلات مختلفة وغالباً تتعايش معاً. OAuth 2.0 (مع OpenID Connect للهوية) هو المعيار لمنح المستخدمين أو الأطراف الثالثة وصولاً محدود النطاق دون مشاركة كلمات المرور. JWT صيغة رمز تُستخدم كثيراً داخل OAuth لجلسات عديمة الحالة ومكتفية ذاتياً. تناسب مفاتيح API نداءات الخدمة إلى الخدمة البسيطة حيث يُقبل سرّ طويل العمر. نربط كلاً منها بالاستخدام الصحيح بدل فرض واحد في كل مكان." },
+        { "question": "هل تخزين JWTs في المتصفح آمن؟", "answer": "يعتمد على المكان. تخزين الرموز في localStorage يعرّضها لـ XSS، لذا في تطبيقات المتصفح نفضّل رموز وصول قصيرة العمر في الذاكرة مع رمز تجديد في كوكي HttpOnly وSecure وSameSite لا يستطيع JavaScript قراءته. إبقاء أعمار رموز الوصول قصيرة — دقائق لا أيام — يحدّ من الضرر إن تسرّب أحدها. النمط الصحيح يعتمد على نموذج تهديد تطبيقكم." },
+        { "question": "ما هو BOLA ولماذا يهم؟", "answer": "خلل التفويض على مستوى الكائن (BOLA/IDOR) هو الخطر الأول في OWASP API Top 10: يطلب مستخدم موثَّق معرّف كائن ليس له، فتعيده الواجهة لأنها تحققت فقط من أنه مسجّل دخول، لا من ملكيته للسجل. كل نقطة نهاية تأخذ معرّفاً يجب أن تتحقق من الملكية على الخادم. نختبر هذا صراحة لأنه شائع وعالي الأثر معاً." },
+        { "question": "كيف أُبطل JWT قبل انتهاء صلاحيته؟", "answer": "الـ JWTs النقية عديمة الحالة ولا يمكن إبطالها مباشرة، وهو ثمن عدم الوصول إلى قاعدة البيانات في كل طلب. الحلول العملية هي أعمار رموز قصيرة مع آلية تجديد، أو قائمة منع على الخادم لمعرّفات الرموز المُبطَلة تُفحص في الإجراءات الحساسة، أو ترقيم نسخ الرمز مرتبط بسجل المستخدم. نختار بحسب سرعة سريان الإبطال التي تحتاجونها." },
+        { "question": "هل أبني المصادقة بنفسي أم أستخدم Auth0/Clerk؟", "answer": "لمعظم الفرق، الموفّر المُدار هو الخيار الأأمن والأسرع — يتولى المصادقة متعددة العوامل وتسجيل الدخول الاجتماعي وإعادة تعيين كلمات المرور والترقيعات الأمنية التي يسهل الخطأ فيها. الاستضافة الذاتية منطقية مع قواعد صارمة لإقامة البيانات أو تدفقات غير اعتيادية أو لتجنّب التسعير لكل مستخدم على نطاق واسع. أطلقنا الاثنين ونوصي بصدق وفق قيودكم." },
+        { "question": "كيف أؤمّن نداءات API بين الآلات؟", "answer": "استخدموا منح OAuth 2.0 client-credentials أو مفاتيح API موقّعة ومحدودة النطاق بدل تضمين بيانات اعتماد المستخدم. تحصل كل خدمة على هوية خاصة ونطاقات بأقل صلاحية، وتعيش الأسرار في خزنة لا في الكود، وتُدوَّر المفاتيح بانتظام. ويضيف TLS المتبادل طبقة أخرى للاتصال الداخلي عالي الثقة." },
+        { "question": "كيف تمنعون تسرّب الرموز وإعادة التشغيل؟", "answer": "ننقل كل شيء عبر TLS، ونُبقي الرموز خارج الروابط والسجلات، ونستخدم أعماراً قصيرة كي ينتهي الرمز الملتقَط بسرعة. للعمليات الحساسة نضيف توقيع الطلبات وأرقاماً عشوائية كي يُرفض الطلب المُعاد. وتُدوَّر رموز التجديد عند كل استخدام، فيُكتشف المسروق لحظة استخدام العميل الشرعي رمزه." },
+        { "question": "هل يغطي هذا متطلبات الامتثال؟", "answer": "المصادقة والتفويض أساس معظم أنظمة الامتثال، لكنهما ليسا الصورة كاملة. يدعم تسجيل التدقيق وضوابط الوصول والتشفير لدينا GDPR وSOC 2 وأطراً مشابهة، ونوثّق الضوابط لمدقّقيكم. ونشير إلى أين ينتهي أمن API وأين يجب أن تتولّى الضوابط التنظيمية الأوسع — السياسات والتدريب وإدارة المورّدين — المهمة." }
+      ],
+      "technologies": [
+        { "icon": "auth0", "name": "Auth0" },
+        { "icon": "clerk", "name": "Clerk" },
+        { "icon": "keycloak", "name": "Keycloak" },
+        { "icon": "okta", "name": "Okta" },
+        { "icon": "jsonwebtokens", "name": "JWT" },
+        { "icon": "kong", "name": "Kong" },
+        { "icon": "vault", "name": "HashiCorp Vault" },
+        { "icon": "owasp", "name": "OWASP" }
+      ]
+    }
+  }
+}

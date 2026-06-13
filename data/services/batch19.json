@@ -1,0 +1,436 @@
+{
+  "mvp-development": {
+    "en": {
+      "name": "MVP Development",
+      "shortDescription": "Launch your product idea quickly with lean MVP development.",
+      "fullDescription": "Turn your vision into a reality without burning your entire budget. Our Minimum Viable Product (MVP) Development services are designed for startups and enterprises looking to validate a new software idea quickly. We focus ruthlessly on your core value proposition, stripping away 'nice-to-have' features to build a functional, beautiful product in a matter of weeks, not months. Using modern, agile tech stacks like Next.js and Supabase, we ensure that while your MVP is lean, it is built on a scalable foundation—meaning you won't have to throw the code away when it's time to grow. We help you get to market faster, gather real user feedback, and secure your next round of funding.",
+      "features": [
+        "Rapid Prototyping & Wireframing",
+        "Core Feature Prioritization (Lean Methodology)",
+        "Fast-to-Market Development Sprints",
+        "Scalable Cloud Foundation (AWS/Vercel)",
+        "Built-in Product Analytics (PostHog, Mixpanel)",
+        "Seamless Payment Integration (Stripe)"
+      ],
+      "benefits": [
+        "Drastically Reduced Time-to-Market",
+        "Cost-Effective Idea Validation",
+        "Early User Feedback for Iteration",
+        "Attractive Proof-of-Concept for Investors",
+        "No Technical Debt (Scalable Architecture from Day 1)"
+      ],
+      "content": {
+        "process": [
+          { "title": "Product Discovery Workshsop", "description": "Defining the core problem you are solving and ruthless prioritization of features." },
+          { "title": "Prototyping", "description": "Creating high-fidelity Figma designs to visualize the user flow before coding." },
+          { "title": "Agile Development", "description": "Building the core features using a modern tech stack (Next.js/Supabase) in 4-8 weeks." },
+          { "title": "Launch & Analytics", "description": "Deploying the app and integrating analytics to track exactly how your first users interact." },
+          { "title": "Iterate", "description": "Planning the next development phase based on real, data-driven user feedback." }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Supabase / Firebase",
+          "Tailwind CSS",
+          "Stripe",
+          "Vercel",
+          "PostHog (Analytics)"
+        ],
+        "faq": [
+          { "question": "How long does it take to build an MVP?", "answer": "A true MVP should take between 4 to 8 weeks. If it takes longer, we are likely building too many features. The goal is to build just enough to validate the core assumption with real users." },
+          { "question": "Will we have to rewrite the app when we scale?", "answer": "No. While we focus on speed, we do not cut corners on architecture. By using scalable cloud technologies like Next.js and managed databases like Supabase or PostgreSQL, your MVP serves as the exact foundation you will scale from." }
+        ]
+      },
+      "metaTitle": "MVP Development Services for Startups | Lean Software Agency",
+      "metaDescription": "Launch your SaaS or App idea in weeks, not months. Our MVP development services focus on core features, rapid prototyping, and scalable architecture."
+    },
+    "tr": {
+      "name": "MVP Geliştirme",
+      "shortDescription": "Yalın MVP geliştirme ile ürün fikrinizi hızla piyasaya sürün.",
+      "fullDescription": "Tüm bütçenizi yakmadan vizyonunuzu gerçeğe dönüştürün. Minimum Uygulanabilir Ürün (MVP) Geliştirme hizmetlerimiz, yeni bir yazılım fikrini hızla doğrulamak isteyen girişimler ve işletmeler için tasarlanmıştır. 'Olsa iyi olur' özelliklerini bir kenara bırakıp temel değer teklifinize acımasızca odaklanarak aylarca değil, sadece birkaç hafta içinde işlevsel ve güzel bir ürün oluşturuyoruz. Next.js ve Supabase gibi modern, çevik teknoloji yığınlarını kullanarak MVP'nizin yalın olmasını sağlarken, aynı zamanda ölçeklenebilir bir temel üzerine inşa edilmesini garanti ediyoruz; yani büyüme zamanı geldiğinde kodu çöpe atmanız gerekmeyecek. Pazara daha hızlı girmenize, gerçek kullanıcı geri bildirimleri toplamanıza ve bir sonraki yatırım turunuzu güvence altına almanıza yardımcı oluyoruz.",
+      "features": [
+        "Hızlı Prototipleme ve Tel Kafes (Wireframing)",
+        "Temel Özellik Önceliklendirmesi (Yalın Metodoloji)",
+        "Pazara Hızlı Çıkış (Fast-to-Market) Geliştirme Sprintleri",
+        "Ölçeklenebilir Bulut Temeli (AWS/Vercel)",
+        "Yerleşik Ürün Analitiği (PostHog, Mixpanel)",
+        "Sorunsuz Ödeme Entegrasyonu (Stripe)"
+      ],
+      "benefits": [
+        "Büyük Ölçüde Azaltılmış Pazara Çıkış Süresi",
+        "Uygun Maliyetli Fikir Doğrulama",
+        "Geliştirme İçin Erken Kullanıcı Geri Bildirimi",
+        "Yatırımcılar İçin Çekici Kavram Kanıtı (PoC)",
+        "Teknik Borç Yok (1. Günden İtibaren Ölçeklenebilir Mimari)"
+      ],
+      "content": {
+        "process": [
+          { "title": "Ürün Keşif Atölyesi", "description": "Çözdüğünüz temel sorunu tanımlama ve özelliklerin acımasızca önceliklendirilmesi." },
+          { "title": "Prototipleme", "description": "Kodlamadan önce kullanıcı akışını görselleştirmek için aslına son derece uygun (high-fidelity) Figma tasarımları oluşturma." },
+          { "title": "Çevik Geliştirme", "description": "Modern bir teknoloji yığını (Next.js/Supabase) kullanarak temel özellikleri 4-8 hafta içinde oluşturma." },
+          { "title": "Lansman ve Analitik", "description": "Uygulamayı dağıtma ve ilk kullanıcılarınızın tam olarak nasıl etkileşimde bulunduğunu izlemek için analitik entegre etme." },
+          { "title": "Yineleme (Iterate)", "description": "Gerçek, veri odaklı kullanıcı geri bildirimlerine dayanarak bir sonraki geliştirme aşamasını planlama." }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Supabase / Firebase",
+          "Tailwind CSS",
+          "Stripe",
+          "Vercel",
+          "PostHog (Analitik)"
+        ],
+        "faq": [
+          { "question": "Bir MVP oluşturmak ne kadar sürer?", "answer": "Gerçek bir MVP 4 ila 8 hafta arasında sürmelidir. Daha uzun sürerse, muhtemelen çok fazla özellik inşa ediyoruz demektir. Amaç, temel varsayımı gerçek kullanıcılarla doğrulamaya yetecek kadarını inşa etmektir." },
+          { "question": "Ölçeklediğimizde uygulamayı yeniden yazmamız gerekecek mi?", "answer": "Hayır. Hıza odaklansak da mimariden taviz vermiyoruz. Next.js gibi ölçeklenebilir bulut teknolojilerini ve Supabase veya PostgreSQL gibi yönetilen veritabanlarını kullanarak, MVP'niz tam olarak ölçekleneceğiniz temel görevi görür." }
+        ]
+      },
+      "metaTitle": "Girişimler için MVP Geliştirme Hizmetleri | Yalın Yazılım Ajansı",
+      "metaDescription": "SaaS veya Uygulama fikrinizi aylar değil haftalar içinde piyasaya sürün. MVP geliştirme hizmetlerimiz temel özelliklere, hızlı prototiplemeye ve ölçeklenebilir mimariye odaklanır."
+    },
+    "de": {
+      "name": "MVP-Entwicklung",
+      "shortDescription": "Bringen Sie Ihre Produktidee mit Lean MVP-Entwicklung schnell auf den Markt.",
+      "fullDescription": "Verwirklichen Sie Ihre Vision, ohne Ihr gesamtes Budget zu verbrennen. Unsere Dienstleistungen zur Entwicklung eines Minimum Viable Product (MVP) richten sich an Startups und Unternehmen, die eine neue Softwareidee schnell validieren möchten. Wir konzentrieren uns kompromisslos auf Ihr Kernwertversprechen und lassen 'Nice-to-have'-Funktionen weg, um in wenigen Wochen statt Monaten ein funktionales, schönes Produkt zu entwickeln. Durch den Einsatz moderner, agiler Tech-Stacks wie Next.js und Supabase stellen wir sicher, dass Ihr MVP zwar schlank ist, aber auf einem skalierbaren Fundament aufbaut – das bedeutet, Sie müssen den Code nicht wegwerfen, wenn es Zeit zum Wachsen ist. Wir helfen Ihnen, schneller auf den Markt zu kommen, echtes Nutzerfeedback zu sammeln und Ihre nächste Finanzierungsrunde zu sichern.",
+      "features": [
+        "Rapid Prototyping & Wireframing",
+        "Fokus auf Kernfunktionen (Lean Methodik)",
+        "Fast-to-Market Entwicklungs-Sprints",
+        "Skalierbares Cloud-Fundament (AWS/Vercel)",
+        "Integrierte Produktanalyse (PostHog, Mixpanel)",
+        "Nahtlose Zahlungsintegration (Stripe)"
+      ],
+      "benefits": [
+        "Drastisch reduzierte Time-to-Market",
+        "Kostengünstige Ideenvalidierung",
+        "Frühes Nutzerfeedback für Iterationen",
+        "Attraktiver Proof-of-Concept für Investoren",
+        "Keine technischen Schulden (Skalierbar ab Tag 1)"
+      ],
+      "content": {
+        "process": [
+          { "title": "Product Discovery Workshop", "description": "Definition des Kernproblems und kompromisslose Priorisierung der Funktionen." },
+          { "title": "Prototyping", "description": "Erstellung von High-Fidelity Figma-Designs zur Visualisierung des User Flows." },
+          { "title": "Agile Entwicklung", "description": "Entwicklung der Kernfunktionen mit einem modernen Tech-Stack in 4-8 Wochen." },
+          { "title": "Launch & Analytics", "description": "Bereitstellung der App und Integration von Analysetools zur Nutzerbeobachtung." },
+          { "title": "Iterieren", "description": "Planung der nächsten Entwicklungsphase basierend auf echtem, datengesteuertem Feedback." }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Supabase / Firebase",
+          "Tailwind CSS",
+          "Stripe",
+          "Vercel",
+          "PostHog (Analytics)"
+        ],
+        "faq": [
+          { "question": "Wie lange dauert es, ein MVP zu entwickeln?", "answer": "Ein echtes MVP sollte zwischen 4 und 8 Wochen dauern. Dauert es länger, bauen wir wahrscheinlich zu viele Funktionen. Das Ziel ist es, gerade genug zu bauen, um die Kernannahme zu validieren." },
+          { "question": "Müssen wir die App bei der Skalierung neu schreiben?", "answer": "Nein. Wir setzen auf Geschwindigkeit, machen aber keine Abstriche bei der Architektur. Durch die Nutzung skalierbarer Technologien wie Next.js und Supabase dient Ihr MVP als exaktes Fundament für zukünftiges Wachstum." }
+        ]
+      },
+      "metaTitle": "MVP Entwicklung für Startups | Lean Software Agentur",
+      "metaDescription": "Starten Sie Ihre SaaS- oder App-Idee in Wochen statt Monaten. Wir fokussieren uns auf Kernfunktionen, Rapid Prototyping und skalierbare Architektur."
+    },
+    "ur": {
+      "name": "ایم وی پی ڈیولپمنٹ",
+      "shortDescription": "لین MVP ڈیولپمنٹ کے ساتھ اپنے پروڈکٹ کا خیال تیزی سے شروع کریں۔",
+      "fullDescription": "اپنے پورے بجٹ کو جلائے بغیر اپنے نقطہ نظر کو حقیقت میں تبدیل کریں۔ ہماری کم از کم قابل عمل پروڈکٹ (MVP) ترقیاتی خدمات سٹارٹ اپس اور ایسے کاروباری اداروں کے لیے بنائی گئی ہیں جو نئے سافٹ ویئر کے آئیڈیا کی جلد تصدیق کرنا چاہتے ہیں۔ ہم آپ کی بنیادی قدر کی تجویز پر بے رحمی سے توجہ مرکوز کرتے ہیں، مہینوں کی نہیں، چند ہفتوں میں ایک فعال، خوبصورت پروڈکٹ بنانے کے لیے 'اچھی سے قابل' خصوصیات کو چھین لیتے ہیں۔ جدید، چست ٹیک اسٹیکس جیسے Next.js اور Supabase کا استعمال کرتے ہوئے، ہم اس بات کو یقینی بناتے ہیں کہ آپ کا MVP دبلے ہونے کے باوجود، یہ ایک توسیع پذیر بنیاد پر بنایا گیا ہے—اس کا مطلب ہے کہ جب اس کے بڑھنے کا وقت آئے گا تو آپ کو کوڈ پھینکنا نہیں پڑے گا۔ ہم آپ کو تیزی سے مارکیٹ میں لانے، حقیقی صارف کی رائے اکٹھا کرنے اور آپ کے فنڈنگ ​​کے اگلے دور کو محفوظ بنانے میں مدد کرتے ہیں۔",
+      "features": [
+        "تیز پروٹو ٹائپنگ اور وائر فریمنگ",
+        "بنیادی خصوصیت کی ترجیح (دبلی پتلی طریقہ کار)",
+        "فاسٹ ٹو مارکیٹ ڈیولپمنٹ اسپرنٹ",
+        "اسکیل ایبل کلاؤڈ فاؤنڈیشن (AWS/Vercel)",
+        "بلٹ ان پروڈکٹ اینالیٹکس (پوسٹ ہاگ، مکسپینل)",
+        "ہموار ادائیگی کا انضمام (پٹی)"
+      ],
+      "benefits": [
+        "وقت سے مارکیٹ میں زبردست کمی",
+        "لاگت سے مؤثر خیال کی توثیق",
+        "تکرار کے لیے ابتدائی صارف کی رائے",
+        "سرمایہ کاروں کے لیے ثبوت کا تصور پرکشش ہے۔",
+        "کوئی تکنیکی قرض نہیں (پہلے دن سے قابل توسیع فن تعمیر)"
+      ],
+      "content": {
+        "process": [
+          { "title": "مصنوعات کی دریافت ورکشاپ", "description": "آپ جس بنیادی مسئلے کو حل کر رہے ہیں اس کی وضاحت کرنا اور خصوصیات کی بے رحم ترجیح دینا۔" },
+          { "title": "پروٹو ٹائپنگ", "description": "کوڈنگ سے پہلے صارف کے بہاؤ کو دیکھنے کے لیے اعلی مخلص فگما ڈیزائن بنانا۔" },
+          { "title": "چست ترقی", "description": "4-8 ہفتوں میں جدید ٹیک اسٹیک (Next.js/Supabase) کا استعمال کرتے ہوئے بنیادی خصوصیات کی تعمیر۔" },
+          { "title": "لانچ اور تجزیات", "description": "ایپ کو تعینات کرنا اور تجزیات کو یکجا کرنا تاکہ یہ معلوم کیا جا سکے کہ آپ کے پہلے صارفین کس طرح تعامل کرتے ہیں۔" },
+          { "title": "دوبارہ کریں", "description": "حقیقی، ڈیٹا سے چلنے والے صارف کے تاثرات پر مبنی اگلے ترقیاتی مرحلے کی منصوبہ بندی کرنا۔" }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Supabase / Firebase",
+          "Tailwind CSS",
+          "Stripe",
+          "Vercel",
+          "PostHog (Analytics)"
+        ],
+        "faq": [
+          { "question": "MVP بنانے میں کتنا وقت لگتا ہے؟", "answer": "ایک حقیقی MVP کو 4 سے 8 ہفتوں کے درمیان لینا چاہیے۔ اگر اس میں زیادہ وقت لگتا ہے، تو ہم ممکنہ طور پر بہت ساری خصوصیات بنا رہے ہیں۔ مقصد صرف اتنا بنانا ہے کہ حقیقی صارفین کے ساتھ بنیادی مفروضے کی تصدیق کی جا سکے۔" },
+          { "question": "جب ہم اسکیل کرتے ہیں تو کیا ہمیں ایپ کو دوبارہ لکھنا پڑے گا؟", "answer": "نہیں۔ جب کہ ہم رفتار پر توجہ مرکوز کرتے ہیں، ہم فن تعمیر پر کونے کونے نہیں کاٹتے ہیں۔ Next.js جیسی اسکیل ایبل کلاؤڈ ٹیکنالوجیز اور Supabase یا PostgreSQL جیسے زیر انتظام ڈیٹا بیس کا استعمال کرکے، آپ کا MVP قطعی بنیاد کا کام کرتا ہے جس سے آپ اسکیل کریں گے۔" }
+        ]
+      },
+      "metaTitle": "اسٹارٹ اپس کے لیے ایم وی پی ڈیولپمنٹ سروسز | دبلی سافٹ ویئر ایجنسی",
+      "metaDescription": "اپنا SaaS یا ایپ کا خیال ہفتوں میں شروع کریں، مہینوں میں نہیں۔ ہماری MVP ترقیاتی خدمات بنیادی خصوصیات، تیز رفتار پروٹو ٹائپنگ، اور توسیع پذیر فن تعمیر پر مرکوز ہیں۔"
+    },
+    "ar": {
+      "name": "تطوير MVP (المنتج القابل للتطبيق كحد أدنى)",
+      "shortDescription": "أطلق فكرة منتجك بسرعة من خلال تطوير MVP رشيق ومبسط.",
+      "fullDescription": "حوّل رؤيتك إلى حقيقة دون استنزاف ميزانيتك بالكامل. تم تصميم خدمات تطوير الحد الأدنى من المنتج القابل للتطبيق (MVP) الخاصة بنا للشركات الناشئة والمؤسسات التي تتطلع إلى التحقق من صحة فكرة برنامج جديد بسرعة. نحن نركز بصرامة على القيمة الأساسية (Core Value)، ونتخلص من الميزات 'الكمالية' لبناء منتج وظيفي وجميل في غضون أسابيع، وليس أشهر. باستخدام حزم تقنية حديثة ورشيقة مثل Next.js و Supabase، نضمن أنه على الرغم من أن MVP الخاص بك مبسط، إلا أنه مبني على أساس قابل للتطوير — مما يعني أنك لن تضطر إلى التخلص من الكود عندما يحين وقت النمو. نساعدك على الوصول إلى السوق بشكل أسرع، وجمع تعليقات المستخدمين الحقيقية، وتأمين الجولة التالية من التمويل.",
+      "features": [
+        "نماذج أولية سريعة وتخطيط شبكي (Wireframing)",
+        "تحديد أولويات الميزات الأساسية (منهجية Lean)",
+        "دورات تطوير سريعة للوصول إلى السوق",
+        "أساس سحابي قابل للتطوير (AWS / Vercel)",
+        "تحليلات منتج مدمجة (PostHog ، Mixpanel)",
+        "تكامل دفع سلس (Stripe)"
+      ],
+      "benefits": [
+        "تقليل وقت الوصول إلى السوق بشكل كبير",
+        "التحقق من صحة الفكرة بفعالية من حيث التكلفة",
+        "تعليقات المستخدمين المبكرة للتطوير المستمر",
+        "إثبات مفهوم (PoC) جذاب للمستثمرين",
+        "لا يوجد ديون تقنية (بنية قابلة للتطوير من اليوم الأول)"
+      ],
+      "content": {
+        "process": [
+          { "title": "ورشة عمل اكتشاف المنتج", "description": "تحديد المشكلة الأساسية التي تحلها والتحديد الصارم لأولويات الميزات." },
+          { "title": "النماذج الأولية (Prototyping)", "description": "إنشاء تصميمات Figma عالية الدقة لتصور مسار المستخدم قبل كتابة الكود." },
+          { "title": "التطوير الرشيق (Agile)", "description": "بناء الميزات الأساسية باستخدام حزمة تقنية حديثة (Next.js/Supabase) في 4-8 أسابيع." },
+          { "title": "الإطلاق والتحليلات", "description": "نشر التطبيق ودمج التحليلات لتتبع كيفية تفاعل المستخدمين الأوائل بدقة." },
+          { "title": "التكرار (Iterate)", "description": "تخطيط مرحلة التطوير التالية بناءً على تعليقات المستخدمين الحقيقية والمدفوعة بالبيانات." }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Supabase / Firebase",
+          "Tailwind CSS",
+          "Stripe",
+          "Vercel",
+          "PostHog (للتحليلات)"
+        ],
+        "faq": [
+          { "question": "كم من الوقت يستغرق بناء MVP؟", "answer": "يجب أن يستغرق MVP الحقيقي ما بين 4 إلى 8 أسابيع. إذا استغرق الأمر وقتًا أطول، فمن المحتمل أننا نبني الكثير من الميزات. الهدف هو بناء ما يكفي فقط للتحقق من الافتراض الأساسي مع مستخدمين حقيقيين." },
+          { "question": "هل سيتعين علينا إعادة كتابة التطبيق عندما نوسع النطاق؟", "answer": "لا. على الرغم من أننا نركز على السرعة، إلا أننا لا نتنازل عن جودة البنية. باستخدام التقنيات السحابية القابلة للتطوير مثل Next.js وقواعد البيانات المدارة مثل Supabase أو PostgreSQL، يعمل MVP الخاص بك كأساس دقيق ستقوم بالتوسع منه." }
+        ]
+      },
+      "metaTitle": "خدمات تطوير MVP للشركات الناشئة | وكالة برمجيات رشيقة",
+      "metaDescription": "أطلق فكرة SaaS أو التطبيق الخاص بك في أسابيع، وليس أشهر. تركز خدمات تطوير MVP لدينا على الميزات الأساسية، والنماذج الأولية السريعة، والبنية القابلة للتطوير."
+    }
+  },
+  "nft-marketplace": {
+    "en": {
+      "name": "NFT Marketplace Development",
+      "shortDescription": "Build custom NFT marketplaces for digital collectibles and assets.",
+      "fullDescription": "Capitalize on the Web3 revolution by launching your own Non-Fungible Token (NFT) Marketplace. Whether you want to trade digital art, gaming assets, real estate tokens, or exclusive memberships, generic platforms like OpenSea don't offer the branding or specific utility your business needs. We develop custom, decentralized NFT marketplaces on networks like Ethereum, Polygon, or Solana. From writing secure Solidity smart contracts for minting and secondary royalties, to building an intuitive React frontend with seamless Web3 wallet integration, we deliver a fully-featured platform that is secure, fast, and completely under your control.",
+      "features": [
+        "Smart Contract Development (ERC-721, ERC-1155)",
+        "Web3 Wallet Integration (MetaMask, WalletConnect)",
+        "Minting, Listing & Bidding Mechanics",
+        "Automated Creator Royalty Systems",
+        "Decentralized Storage (IPFS / Arweave) for Metadata",
+        "Fiat-to-Crypto Onramping (MoonPay, Stripe)"
+      ],
+      "benefits": [
+        "Complete Control Over Fees & Platform Rules",
+        "Custom Branding Without White-Label Restrictions",
+        "New Revenue Streams via Minting & Transaction Fees",
+        "Secure, Audited Smart Contracts",
+        "Support for Specific Utility (e.g., Gaming NFTs)"
+      ],
+      "content": {
+        "process": [
+          { "title": "Blockchain Selection", "description": "Choosing the right network (Ethereum for liquidity, Polygon for low gas fees, etc.)." },
+          { "title": "Smart Contract Development", "description": "Writing and rigorously auditing the Solidity contracts that handle ownership and escrow." },
+          { "title": "Frontend Integration", "description": "Building the UI/UX with React and integrating Ethers.js or Web3.js to communicate with the blockchain." },
+          { "title": "Storage Setup", "description": "Uploading the actual assets (images, video, data) to IPFS to ensure they are decentralized." },
+          { "title": "Testnet Launch & Audit", "description": "Testing the marketplace thoroughly on Goerli/Mumbai testnets before moving real funds." }
+        ],
+        "technologies": [
+          "Solidity",
+          "Ethereum / Polygon / Solana",
+          "React / Next.js",
+          "Ethers.js / Web3.js",
+          "IPFS / Pinata",
+          "The Graph (Indexing)"
+        ],
+        "faq": [
+          { "question": "How are assets stored? Can they be deleted?", "answer": "Unlike traditional databases, we store the actual digital assets (images, videos) on IPFS (InterPlanetary File System). This ensures the file is decentralized and cannot be taken down or altered, guaranteeing the permanence of the NFT." },
+          { "question": "Can users buy NFTs with a credit card?", "answer": "Yes. While native purchases require crypto (ETH, MATIC), we can integrate Fiat-to-Crypto onramps like MoonPay or Stripe Crypto to allow users to buy NFTs directly with their credit cards." }
+        ]
+      },
+      "metaTitle": "NFT Marketplace Development Company | Web3 & Blockchain",
+      "metaDescription": "Launch your own custom NFT marketplace. We build decentralized platforms with smart contracts, IPFS storage, and Web3 wallet integration on Ethereum & Polygon."
+    },
+    "tr": {
+      "name": "NFT Pazaryeri Geliştirme",
+      "shortDescription": "Dijital koleksiyonlar ve varlıklar için özel NFT pazaryerleri oluşturun.",
+      "fullDescription": "Kendi Değiştirilemez Token (NFT) Pazaryerinizi başlatarak Web3 devriminden yararlanın. Dijital sanat eserleri, oyun varlıkları, gayrimenkul token'ları veya özel üyelikler takas etmek istiyorsanız, OpenSea gibi genel platformlar işletmenizin ihtiyaç duyduğu markalaşmayı veya spesifik faydayı (utility) sunmaz. Ethereum, Polygon veya Solana gibi ağlarda özel, merkeziyetsiz NFT pazaryerleri geliştiriyoruz. Mintleme ve ikincil telif hakları için güvenli Solidity akıllı sözleşmeleri yazmaktan, sorunsuz Web3 cüzdan entegrasyonu ile sezgisel bir React ön ucu oluşturmaya kadar; güvenli, hızlı ve tamamen sizin kontrolünüzde olan tam özellikli bir platform sunuyoruz.",
+      "features": [
+        "Akıllı Sözleşme Geliştirme (ERC-721, ERC-1155)",
+        "Web3 Cüzdan Entegrasyonu (MetaMask, WalletConnect)",
+        "Mintleme, Listeleme ve Teklif Verme Mekanikleri",
+        "Otomatik İçerik Üreticisi Telif (Royalty) Sistemleri",
+        "Meta Veriler İçin Merkeziyetsiz Depolama (IPFS / Arweave)",
+        "İtibari Paradan Kriptoya (Fiat-to-Crypto) Geçiş (MoonPay, Stripe)"
+      ],
+      "benefits": [
+        "Ücretler ve Platform Kuralları Üzerinde Tam Kontrol",
+        "Beyaz Etiket (White-Label) Kısıtlamaları Olmadan Özel Markalaşma",
+        "Mintleme ve İşlem Ücretleri Yoluyla Yeni Gelir Akışları",
+        "Güvenli, Denetlenmiş Akıllı Sözleşmeler",
+        "Spesifik Faydalar İçin Destek (ör. Oyun NFT'leri)"
+      ],
+      "content": {
+        "process": [
+          { "title": "Blokzincir Seçimi", "description": "Doğru ağı (likidite için Ethereum, düşük gas ücretleri için Polygon vb.) seçme." },
+          { "title": "Akıllı Sözleşme Geliştirme", "description": "Sahipliği ve emaneti (escrow) idare eden Solidity sözleşmelerini yazma ve titizlikle denetleme." },
+          { "title": "Ön Uç Entegrasyonu", "description": "React ile UI/UX oluşturma ve blokzincir ile iletişim kurmak için Ethers.js veya Web3.js'i entegre etme." },
+          { "title": "Depolama Kurulumu", "description": "Merkeziyetsiz olduklarından emin olmak için gerçek varlıkları (resimler, video, veri) IPFS'ye yükleme." },
+          { "title": "Testnet Lansmanı ve Denetim", "description": "Gerçek fonları taşımadan önce pazaryerini Goerli/Mumbai test ağlarında (testnets) kapsamlı bir şekilde test etme." }
+        ],
+        "technologies": [
+          "Solidity",
+          "Ethereum / Polygon / Solana",
+          "React / Next.js",
+          "Ethers.js / Web3.js",
+          "IPFS / Pinata",
+          "The Graph (İndeksleme)"
+        ],
+        "faq": [
+          { "question": "Varlıklar nasıl depolanıyor? Silinebilirler mi?", "answer": "Geleneksel veritabanlarının aksine, gerçek dijital varlıkları (resimler, videolar) IPFS (Gezegenler Arası Dosya Sistemi) üzerinde depoluyoruz. Bu, dosyanın merkeziyetsiz olmasını ve kaldırılamamasını veya değiştirilememesini sağlayarak NFT'nin kalıcılığını garanti eder." },
+          { "question": "Kullanıcılar kredi kartıyla NFT satın alabilir mi?", "answer": "Evet. Yerel (native) satın alımlar kripto (ETH, MATIC) gerektirse de, kullanıcıların doğrudan kredi kartlarıyla NFT satın almalarına olanak tanımak için MoonPay veya Stripe Crypto gibi itibari paradan kriptoya geçişleri (onramps) entegre edebiliriz." }
+        ]
+      },
+      "metaTitle": "NFT Pazaryeri Geliştirme Şirketi | Web3 ve Blokzincir",
+      "metaDescription": "Kendi özel NFT pazaryerinizi başlatın. Ethereum ve Polygon üzerinde akıllı sözleşmeler, IPFS depolama ve Web3 cüzdan entegrasyonu ile platformlar oluşturuyoruz."
+    },
+    "de": {
+      "name": "NFT-Marktplatz Entwicklung",
+      "shortDescription": "Bauen Sie maßgeschneiderte NFT-Marktplätze für digitale Sammlerstücke und Assets.",
+      "fullDescription": "Profitieren Sie von der Web3-Revolution, indem Sie Ihren eigenen Non-Fungible Token (NFT) Marktplatz starten. Ob Sie mit digitaler Kunst, Gaming-Assets, Immobilien-Tokens oder exklusiven Mitgliedschaften handeln möchten – generische Plattformen wie OpenSea bieten oft nicht das Branding oder die spezifischen Funktionen, die Ihr Unternehmen benötigt. Wir entwickeln individuelle, dezentrale NFT-Marktplätze auf Netzwerken wie Ethereum, Polygon oder Solana. Vom Schreiben sicherer Solidity Smart Contracts für Minting und sekundäre Tantiemen bis hin zum Aufbau eines intuitiven React-Frontends mit nahtloser Web3-Wallet-Integration liefern wir eine voll ausgestattete Plattform, die sicher, schnell und vollständig unter Ihrer Kontrolle ist.",
+      "features": [
+        "Smart Contract Entwicklung (ERC-721, ERC-1155)",
+        "Web3 Wallet-Integration (MetaMask, WalletConnect)",
+        "Minting-, Listing- & Bidding-Mechaniken",
+        "Automatisierte Creator Royalty-Systeme",
+        "Dezentrale Speicherung (IPFS / Arweave) für Metadaten",
+        "Fiat-to-Crypto Onramping (MoonPay, Stripe)"
+      ],
+      "benefits": [
+        "Volle Kontrolle über Gebühren & Plattformregeln",
+        "Individuelles Branding ohne White-Label-Einschränkungen",
+        "Neue Einnahmequellen durch Minting- & Transaktionsgebühren",
+        "Sichere, auditierte Smart Contracts",
+        "Unterstützung für spezifische Utility (z.B. Gaming NFTs)"
+      ],
+      "content": {
+        "process": [
+          { "title": "Blockchain-Auswahl", "description": "Auswahl des richtigen Netzwerks (Ethereum für Liquidität, Polygon für niedrige Gasgebühren)." },
+          { "title": "Smart Contract Entwicklung", "description": "Schreiben und strenges Auditieren der Solidity-Verträge für Besitz und Treuhand." },
+          { "title": "Frontend-Integration", "description": "Aufbau der UI mit React und Integration von Ethers.js zur Blockchain-Kommunikation." },
+          { "title": "Speicher-Setup", "description": "Hochladen der Assets (Bilder, Video) auf IPFS zur Dezentralisierung." },
+          { "title": "Testnet Launch & Audit", "description": "Ausführliches Testen auf Testnets, bevor echte Gelder fließen." }
+        ],
+        "technologies": [
+          "Solidity",
+          "Ethereum / Polygon / Solana",
+          "React / Next.js",
+          "Ethers.js / Web3.js",
+          "IPFS / Pinata",
+          "The Graph (Indexing)"
+        ],
+        "faq": [
+          { "question": "Wie werden Assets gespeichert? Können sie gelöscht werden?", "answer": "Wir speichern die tatsächlichen digitalen Assets (Bilder, Videos) auf IPFS. Dies stellt sicher, dass die Datei dezentral ist und nicht verändert oder gelöscht werden kann." },
+          { "question": "Können Benutzer NFTs mit Kreditkarte kaufen?", "answer": "Ja. Wir können Fiat-to-Crypto-Lösungen wie MoonPay oder Stripe integrieren, damit Nutzer NFTs direkt mit ihrer Kreditkarte kaufen können." }
+        ]
+      },
+      "metaTitle": "NFT Marktplatz Entwicklung | Web3 & Blockchain Agentur",
+      "metaDescription": "Starten Sie Ihren eigenen NFT-Marktplatz. Wir bauen dezentrale Plattformen mit Smart Contracts, IPFS-Speicher und Web3-Wallet-Integration."
+    },
+    "ur": {
+      "name": "این ایف ٹی مارکیٹ پلیس ڈیولپمنٹ",
+      "shortDescription": "ڈیجیٹل مجموعوں اور اثاثوں کے لیے حسب ضرورت NFT بازار بنائیں۔",
+      "fullDescription": "اپنے خود کے نان فنجیبل ٹوکن (NFT) مارکیٹ پلیس کو شروع کرکے Web3 انقلاب کا فائدہ اٹھائیں۔ چاہے آپ ڈیجیٹل آرٹ، گیمنگ کے اثاثوں، رئیل اسٹیٹ ٹوکنز، یا خصوصی ممبرشپ کی تجارت کرنا چاہتے ہیں، اوپن سی جیسے عام پلیٹ فارم آپ کے کاروبار کی ضرورت کی برانڈنگ یا مخصوص افادیت پیش نہیں کرتے ہیں۔ ہم Ethereum، Polygon، یا Solana جیسے نیٹ ورکس پر اپنی مرضی کے مطابق، وکندریقرت NFT بازار تیار کرتے ہیں۔ ٹکسال اور سیکنڈری رائلٹی کے لیے محفوظ سولیڈیٹی سمارٹ کنٹریکٹ لکھنے سے لے کر بغیر کسی ہموار Web3 والیٹ کے انضمام کے ساتھ بدیہی ری ایکٹ فرنٹ اینڈ کی تعمیر تک، ہم ایک مکمل خصوصیات والا پلیٹ فارم فراہم کرتے ہیں جو محفوظ، تیز اور مکمل طور پر آپ کے کنٹرول میں ہے۔",
+      "features": [
+        "سمارٹ کنٹریکٹ ڈیولپمنٹ (ERC-721, ERC-1155)",
+        "Web3 والیٹ انٹیگریشن (MetaMask، WalletConnect)",
+        "ٹکسال، فہرست سازی اور بولی کا طریقہ کار",
+        "خودکار تخلیق کار رائلٹی سسٹمز",
+        "میٹا ڈیٹا کے لیے ڈی سینٹرلائزڈ اسٹوریج (IPFS / Arweave)۔",
+        "فیاٹ ٹو کریپٹو آنریمپنگ (MoonPay، Stripe)"
+      ],
+      "benefits": [
+        "فیسوں اور پلیٹ فارم کے قواعد پر مکمل کنٹرول",
+        "وائٹ لیبل پابندیوں کے بغیر کسٹم برانڈنگ",
+        "ٹکسال اور ٹرانزیکشن فیس کے ذریعے محصول کے نئے سلسلے",
+        "محفوظ، آڈٹ شدہ اسمارٹ کنٹریکٹس",
+        "مخصوص یوٹیلیٹی کے لیے معاونت (جیسے گیمنگ NFTs)"
+      ],
+      "content": {
+        "process": [
+          { "title": "بلاک چین کا انتخاب", "description": "صحیح نیٹ ورک کا انتخاب کرنا (لیکویڈیٹی کے لیے ایتھرئم، کم گیس فیس کے لیے پولی گون وغیرہ)۔" },
+          { "title": "سمارٹ کنٹریکٹ ڈویلپمنٹ", "description": "ملکیت اور یسکرو کو سنبھالنے والے یکجہتی معاہدوں کی تحریر اور سختی سے آڈٹ کرنا۔" },
+          { "title": "فرنٹ اینڈ انٹیگریشن", "description": "بلاکچین کے ساتھ بات چیت کرنے کے لیے Ethers.js یا Web3.js کو ری ایکٹ اور انٹیگریٹ کرنے کے ساتھ UI/UX بنانا۔" },
+          { "title": "اسٹوریج سیٹ اپ", "description": "آئی پی ایف ایس پر اصل اثاثے (تصاویر، ویڈیو، ڈیٹا) اپ لوڈ کرنا تاکہ یہ یقینی بنایا جا سکے کہ وہ وکندریقرت ہیں۔" },
+          { "title": "ٹیسٹ نیٹ لانچ اور آڈٹ", "description": "حقیقی رقوم منتقل کرنے سے پہلے Goerli/Mumbai testnets پر مارکیٹ پلیس کی اچھی طرح جانچ کرنا۔" }
+        ],
+        "technologies": [
+          "Solidity",
+          "Ethereum / Polygon / Solana",
+          "React / Next.js",
+          "Ethers.js / Web3.js",
+          "IPFS / Pinata",
+          "The Graph (Indexing)"
+        ],
+        "faq": [
+          { "question": "اثاثے کیسے جمع ہوتے ہیں؟ کیا انہیں حذف کیا جا سکتا ہے؟", "answer": "روایتی ڈیٹا بیس کے برعکس، ہم آئی پی ایف ایس (انٹرپلانٹری فائل سسٹم) پر اصل ڈیجیٹل اثاثے (تصاویر، ویڈیوز) ذخیرہ کرتے ہیں۔ یہ یقینی بناتا ہے کہ فائل کو وکندریقرت کیا گیا ہے اور اسے ہٹایا یا تبدیل نہیں کیا جاسکتا ہے، NFT کی مستقل ہونے کی ضمانت دیتا ہے۔" },
+          { "question": "کیا صارفین کریڈٹ کارڈ سے NFTs خرید سکتے ہیں؟", "answer": "جی ہاں. اگرچہ مقامی خریداریوں کے لیے کرپٹو (ETH, MATIC) کی ضرورت ہوتی ہے، ہم Fiat-to-Crypto onramps جیسے MoonPay یا Stripe Crypto کو مربوط کر سکتے ہیں تاکہ صارفین براہ راست اپنے کریڈٹ کارڈز کے ساتھ NFTs خرید سکیں۔" }
+        ]
+      },
+      "metaTitle": "این ایف ٹی مارکیٹ پلیس ڈیولپمنٹ کمپنی | Web3 اور Blockchain",
+      "metaDescription": "اپنا کسٹم NFT بازار لانچ کریں۔ ہم سمارٹ کنٹریکٹس، آئی پی ایف ایس سٹوریج، اور ایتھریم اور پولی گون پر Web3 والیٹ کے انضمام کے ساتھ وکندریقرت پلیٹ فارم بناتے ہیں۔"
+    },
+    "ar": {
+      "name": "تطوير أسواق NFT",
+      "shortDescription": "بناء أسواق NFT مخصصة للمقتنيات والأصول الرقمية.",
+      "fullDescription": "استفد من ثورة Web3 من خلال إطلاق سوق الرموز غير القابلة للاستبدال (NFT) الخاص بك. سواء كنت ترغب في تداول الفن الرقمي، أو أصول الألعاب، أو الرموز العقارية، أو العضويات الحصرية، فإن المنصات العامة مثل OpenSea لا تقدم العلامة التجارية أو الفائدة المحددة (Utility) التي يحتاجها عملك. نحن نطور أسواق NFT مخصصة ولامركزية على شبكات مثل Ethereum أو Polygon أو Solana. بدءًا من كتابة عقود Solidity الذكية الآمنة للسك (Minting) وحقوق الملكية الثانوية، إلى بناء واجهة أمامية React بديهية مع تكامل سلس لمحفظة Web3، نقدم منصة كاملة الميزات آمنة وسريعة وتحت سيطرتك بالكامل.",
+      "features": [
+        "تطوير العقود الذكية (ERC-721 ، ERC-1155)",
+        "تكامل محفظة Web3 (MetaMask ، WalletConnect)",
+        "آليات السك والإدراج والمزايدة",
+        "أنظمة حقوق الملكية (Royalties) الآلية للمبدعين",
+        "تخزين لامركزي (IPFS / Arweave) للبيانات الوصفية",
+        "شراء الكريبتو بالعملات الورقية (MoonPay ، Stripe)"
+      ],
+      "benefits": [
+        "تحكم كامل في الرسوم وقواعد المنصة",
+        "علامة تجارية مخصصة بدون قيود العلامة البيضاء (White-Label)",
+        "مصادر إيرادات جديدة عبر رسوم السك والمعاملات",
+        "عقود ذكية آمنة ومدققة",
+        "دعم المنفعة المحددة (مثل NFT للألعاب)"
+      ],
+      "content": {
+        "process": [
+          { "title": "اختيار البلوكتشين", "description": "اختيار الشبكة المناسبة (Ethereum للسيولة، Polygon لرسوم الغاز المنخفضة، إلخ)." },
+          { "title": "تطوير العقود الذكية", "description": "كتابة وتدقيق عقود Solidity بصرامة والتي تتعامل مع الملكية والضمان." },
+          { "title": "تكامل الواجهة الأمامية", "description": "بناء واجهة المستخدم وتجربة المستخدم باستخدام React ودمج Ethers.js أو Web3.js للتواصل مع البلوكتشين." },
+          { "title": "إعداد التخزين", "description": "تحميل الأصول الفعلية (الصور، الفيديو، البيانات) إلى IPFS لضمان لامركزيتها." },
+          { "title": "إطلاق شبكة الاختبار والتدقيق", "description": "اختبار السوق بدقة على شبكات اختبار Goerli/Mumbai قبل نقل أموال حقيقية." }
+        ],
+        "technologies": [
+          "Solidity",
+          "Ethereum / Polygon / Solana",
+          "React / Next.js",
+          "Ethers.js / Web3.js",
+          "IPFS / Pinata",
+          "The Graph (للفهرسة)"
+        ],
+        "faq": [
+          { "question": "كيف يتم تخزين الأصول؟ هل يمكن حذفها؟", "answer": "على عكس قواعد البيانات التقليدية، نقوم بتخزين الأصول الرقمية الفعلية (الصور ومقاطع الفيديو) على نظام ملفات الكواكب (IPFS). هذا يضمن لامركزية الملف وأنه لا يمكن إزالته أو تغييره، مما يضمن ديمومة NFT." },
+          { "question": "هل يمكن للمستخدمين شراء NFTs ببطاقة ائتمان؟", "answer": "نعم. على الرغم من أن عمليات الشراء الأصلية تتطلب تشفيرًا (ETH ، MATIC)، يمكننا دمج بوابات العملات الورقية إلى التشفير مثل MoonPay أو Stripe Crypto للسماح للمستخدمين بشراء NFTs مباشرة ببطاقات الائتمان الخاصة بهم." }
+        ]
+      },
+      "metaTitle": "شركة تطوير أسواق NFT | Web3 و Blockchain",
+      "metaDescription": "أطلق سوق NFT المخصص الخاص بك. نحن نبني منصات لامركزية مع عقود ذكية وتخزين IPFS وتكامل محفظة Web3 على Ethereum و Polygon."
+    }
+  }
+}

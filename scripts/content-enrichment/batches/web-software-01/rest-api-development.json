@@ -1,0 +1,278 @@
+{
+  "slug": "rest-api-development",
+  "en": {
+    "name": "REST API Development",
+    "shortDescription": "Design and build clean, well-documented RESTful APIs that follow industry conventions — correct HTTP semantics, pagination, versioning, authentication, and OpenAPI docs developers actually enjoy using.",
+    "fullDescription": "A good REST API is predictable: developers can guess how it works because it follows conventions. We design and build RESTful APIs that get the fundamentals right — sensible resource modeling, correct HTTP methods and status codes, consistent pagination and filtering, and a versioning strategy that lets you evolve without breaking clients. Every endpoint is authenticated, validated, and documented with OpenAPI/Swagger so integrators are self-sufficient instead of emailing you questions. We build in Node.js, Python, and other stacks, with proper error handling, rate limiting, and automated tests so the API stays reliable under real use. Whether it powers your own web and mobile apps or is a product partners pay to use, we deliver an interface that's a pleasure to build against and stable enough to depend on.",
+    "features": [
+      "Resource-Oriented API Design",
+      "Correct HTTP Methods & Status Codes",
+      "Pagination, Filtering & Sorting",
+      "Authentication (JWT, OAuth2, API Keys)",
+      "Versioning & Backward Compatibility",
+      "OpenAPI / Swagger Documentation",
+      "Rate Limiting & Throttling",
+      "Automated Testing & Contract Tests"
+    ],
+    "benefits": [
+      "Predictable, convention-following interface integrators trust",
+      "Self-service onboarding via clear documentation",
+      "Stable contracts that evolve without breaking clients",
+      "Secure access with proper authentication and validation",
+      "Scalable design ready for high request volumes",
+      "Lower support load thanks to good docs and error messages"
+    ],
+    "metaTitle": "REST API Development & Design | PakSoft",
+    "metaDescription": "Build clean, documented REST APIs with proper HTTP semantics, versioning, auth, and OpenAPI docs. Reliable interfaces developers love. Get a free estimate.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Resource Modeling & Contract", "description": "We model your domain as clean resources and define the endpoints, request/response shapes, and error formats up front. Agreeing the contract early lets frontend and integration work start in parallel against a stable spec." },
+        { "step": 2, "title": "Design Review & Conventions", "description": "We lock in HTTP method usage, status codes, pagination, filtering, and naming so the whole API feels consistent. Consistency is what makes an API guessable, which is the difference between one developers enjoy and one they fight." },
+        { "step": 3, "title": "Implementation & Validation", "description": "We build the endpoints with strict input validation and meaningful error responses, separating business logic from transport. Each endpoint is covered by automated tests so behavior stays correct as the API grows." },
+        { "step": 4, "title": "Auth, Rate Limiting & Security", "description": "We add authentication, authorization, and rate limiting, and harden against the common API risks like broken object-level authorization. Security is built into each endpoint, not bolted on at the perimeter alone." },
+        { "step": 5, "title": "Documentation & Developer Experience", "description": "We generate OpenAPI/Swagger docs with real examples and a try-it console so integrators are self-sufficient. Good documentation is a feature: it directly reduces your support burden and speeds partner adoption." },
+        { "step": 6, "title": "Launch, Monitor & Version", "description": "We deploy with monitoring and logging, then support versioning and deprecation so you can evolve the API without breaking existing clients. Changes ship behind clear version boundaries with migration guidance." }
+      ],
+      "faq": [
+        { "question": "REST or GraphQL — which should I choose?", "answer": "REST is the right default for most public and partner APIs: it's universally understood, cacheable via standard HTTP, and simple to document and consume. GraphQL shines when clients need flexible, precise data fetching across complex, nested relationships and you want to avoid over-fetching. Many systems use both — REST for simple resource access and GraphQL for a rich client. We'll recommend based on who consumes the API and how varied their data needs are." },
+        { "question": "How should I version my API?", "answer": "The most common approaches are URL versioning (/v1/, /v2/) and header-based versioning. URL versioning is the most explicit and easiest for consumers to understand, so it's our usual default. The key principle is backward compatibility: additive changes don't need a new version, but breaking changes do, accompanied by a deprecation period and migration guide so clients aren't surprised." },
+        { "question": "What makes a REST API well-designed?", "answer": "Predictability. Resources are nouns, HTTP methods carry the verb (GET reads, POST creates, PATCH updates, DELETE removes), status codes mean what they should (404 for missing, 422 for validation, 401 vs 403 for auth), and pagination, filtering, and errors are consistent everywhere. When an API follows conventions, developers can guess endpoints correctly — and that's the mark of a good one." },
+        { "question": "Do you provide API documentation?", "answer": "Yes, always. We produce OpenAPI/Swagger specifications with real request and response examples, error catalogs, and often an interactive console where developers can try calls. Documentation isn't an afterthought — it's a core deliverable, because an undocumented API generates support tickets and slows every integration. We keep the docs generated from the spec so they stay in sync with the code." },
+        { "question": "How do you secure a REST API?", "answer": "We authenticate every request with JWT, OAuth 2.0, or scoped API keys depending on the use case, and enforce authorization on each endpoint — including object-level checks so users can't access records that aren't theirs. We add input validation, rate limiting, HTTPS everywhere, and protection against the OWASP API Top 10 risks. Security is designed per endpoint, not assumed at the gateway." },
+        { "question": "How do you handle errors and edge cases?", "answer": "We return consistent, machine-readable error responses with the right status code, a stable error code, and a human-readable message — never a raw stack trace. Validation errors specify which fields failed and why. Consistent error handling lets client developers build robust integrations instead of guessing what went wrong, which dramatically reduces back-and-forth support." },
+        { "question": "Can the API handle high traffic?", "answer": "Yes. We design stateless endpoints that scale horizontally behind a load balancer, add caching for read-heavy paths, use pagination to bound response sizes, and apply rate limiting to protect the backend. Database queries are optimized to avoid N+1 patterns. With these in place, the API stays fast and stable whether you're serving thousands or millions of requests." },
+        { "question": "Can you build an API on top of our existing database?", "answer": "Yes. We regularly build REST APIs over existing databases and legacy systems, exposing clean, modern endpoints without forcing a rewrite of what already works. We add a well-designed API layer with validation, security, and documentation in front of your data, which is often the fastest path to enabling web, mobile, or partner access to systems that previously had none." }
+      ],
+      "technologies": [
+        { "icon": "nodedotjs", "name": "Node.js" },
+        { "icon": "express", "name": "Express" },
+        { "icon": "fastify", "name": "Fastify" },
+        { "icon": "openapiinitiative", "name": "OpenAPI" },
+        { "icon": "swagger", "name": "Swagger" },
+        { "icon": "postman", "name": "Postman" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "redis", "name": "Redis" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "REST API Geliştirme",
+    "shortDescription": "Sektör kurallarına uyan temiz, iyi belgelenmiş RESTful API'ler tasarlayıp kurun — doğru HTTP semantiği, sayfalama, sürümleme, kimlik doğrulama ve geliştiricilerin gerçekten keyif aldığı OpenAPI belgeleri.",
+    "fullDescription": "İyi bir REST API öngörülebilirdir: geliştiriciler nasıl çalıştığını tahmin edebilir çünkü kurallara uyar. Temelleri doğru yapan RESTful API'ler tasarlar ve kurarız — mantıklı kaynak modelleme, doğru HTTP yöntemleri ve durum kodları, tutarlı sayfalama ve filtreleme ve istemcileri bozmadan gelişmenizi sağlayan bir sürümleme stratejisi. Her uç nokta kimlik doğrulamalı, doğrulanmış ve OpenAPI/Swagger ile belgelidir; böylece entegratörler size soru e-postası yollamak yerine kendi kendine yeter. Node.js, Python ve diğer yığınlarda, düzgün hata yönetimi, hız sınırlama ve otomatik testlerle kurarız; böylece API gerçek kullanım altında güvenilir kalır. İster kendi web ve mobil uygulamalarınıza güç versin ister ortakların ücret ödeyerek kullandığı bir ürün olsun, üzerine geliştirmesi keyifli ve güvenecek kadar kararlı bir arayüz sunarız.",
+    "features": [
+      "Kaynak Odaklı API Tasarımı",
+      "Doğru HTTP Yöntemleri ve Durum Kodları",
+      "Sayfalama, Filtreleme ve Sıralama",
+      "Kimlik Doğrulama (JWT, OAuth2, API Anahtarları)",
+      "Sürümleme ve Geriye Uyumluluk",
+      "OpenAPI / Swagger Dokümantasyonu",
+      "Hız Sınırlama ve Throttling",
+      "Otomatik Test ve Sözleşme Testleri"
+    ],
+    "benefits": [
+      "Entegratörlerin güvendiği öngörülebilir, kurala uyan arayüz",
+      "Net dokümantasyonla self servis başlangıç",
+      "İstemcileri bozmadan gelişen kararlı sözleşmeler",
+      "Doğru kimlik doğrulama ve doğrulamayla güvenli erişim",
+      "Yüksek istek hacimleri için hazır ölçeklenebilir tasarım",
+      "İyi belgeler ve hata mesajları sayesinde daha az destek yükü"
+    ],
+    "metaTitle": "REST API Geliştirme ve Tasarımı | PakSoft",
+    "metaDescription": "Doğru HTTP semantiği, sürümleme, kimlik doğrulama ve OpenAPI belgeleriyle temiz, belgeli REST API'ler kurun. Geliştiricilerin sevdiği arayüzler. Ücretsiz teklif.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Kaynak Modelleme ve Sözleşme", "description": "Alanınızı temiz kaynaklar olarak modeller ve uç noktaları, istek/yanıt biçimlerini ve hata formatlarını baştan tanımlarız. Sözleşmeyi erken kararlaştırmak, frontend ve entegrasyon çalışmasının kararlı bir spesifikasyona karşı paralel başlamasını sağlar." },
+        { "step": 2, "title": "Tasarım İncelemesi ve Kurallar", "description": "Tüm API'nin tutarlı hissetmesi için HTTP yöntem kullanımını, durum kodlarını, sayfalamayı, filtrelemeyi ve adlandırmayı sabitleriz. Tutarlılık bir API'yi tahmin edilebilir yapan şeydir; bu da geliştiricilerin keyif aldığı ile boğuştuğu arasındaki farktır." },
+        { "step": 3, "title": "Uygulama ve Doğrulama", "description": "Uç noktaları katı girdi doğrulaması ve anlamlı hata yanıtlarıyla kurar, iş mantığını taşımadan ayırırız. Her uç nokta otomatik testlerle kapsanır; böylece API büyürken davranış doğru kalır." },
+        { "step": 4, "title": "Kimlik, Hız Sınırlama ve Güvenlik", "description": "Kimlik doğrulama, yetkilendirme ve hız sınırlama ekler, bozuk nesne düzeyi yetkilendirme gibi yaygın API risklerine karşı sertleştiririz. Güvenlik her uç noktaya yerleştirilir, yalnızca çevreye iliştirilmez." },
+        { "step": 5, "title": "Dokümantasyon ve Geliştirici Deneyimi", "description": "Gerçek örnekler ve dene konsoluyla OpenAPI/Swagger belgeleri üretiriz; böylece entegratörler kendi kendine yeter. İyi dokümantasyon bir özelliktir: destek yükünüzü doğrudan azaltır ve ortak benimsemesini hızlandırır." },
+        { "step": 6, "title": "Lansman, İzleme ve Sürümleme", "description": "İzleme ve loglama ile dağıtır, ardından sürümleme ve kullanımdan kaldırmayı destekleriz; böylece mevcut istemcileri bozmadan API'yi geliştirebilirsiniz. Değişiklikler net sürüm sınırlarının ardında, geçiş rehberiyle çıkar." }
+      ],
+      "faq": [
+        { "question": "REST mi GraphQL mi seçmeliyim?", "answer": "REST, çoğu genel ve ortak API için doğru varsayılandır: evrensel olarak anlaşılır, standart HTTP ile önbelleğe alınabilir ve belgelenmesi ile tüketilmesi basittir. GraphQL, istemcilerin karmaşık, iç içe ilişkiler genelinde esnek, hassas veri çekmesi gerektiğinde ve aşırı çekmeden kaçınmak istediğinizde parlar. Birçok sistem ikisini de kullanır — basit kaynak erişimi için REST, zengin bir istemci için GraphQL. API'yi kimin tükettiğine ve veri ihtiyaçlarının ne kadar çeşitli olduğuna göre öneririz." },
+        { "question": "API'mi nasıl sürümlemeliyim?", "answer": "En yaygın yaklaşımlar URL sürümleme (/v1/, /v2/) ve header tabanlı sürümlemedir. URL sürümleme en açık ve tüketicilerin anlaması en kolay olandır, bu yüzden olağan varsayılanımız budur. Anahtar ilke geriye uyumluluktur: eklemeli değişiklikler yeni sürüm gerektirmez ama bozucu değişiklikler gerektirir; bunlara bir kullanımdan kaldırma süresi ve geçiş rehberi eşlik eder, böylece istemciler şaşırmaz." },
+        { "question": "İyi tasarlanmış bir REST API'yi ne yapar?", "answer": "Öngörülebilirlik. Kaynaklar isimdir, HTTP yöntemleri fiili taşır (GET okur, POST oluşturur, PATCH günceller, DELETE kaldırır), durum kodları olması gerekeni ifade eder (eksik için 404, doğrulama için 422, kimlik için 401'e karşı 403) ve sayfalama, filtreleme ve hatalar her yerde tutarlıdır. Bir API kurallara uyduğunda geliştiriciler uç noktaları doğru tahmin edebilir — ve iyi bir API'nin işareti budur." },
+        { "question": "API dokümantasyonu sağlıyor musunuz?", "answer": "Evet, her zaman. Gerçek istek ve yanıt örnekleri, hata katalogları ve genellikle geliştiricilerin çağrı deneyebileceği etkileşimli bir konsol ile OpenAPI/Swagger spesifikasyonları üretiriz. Dokümantasyon sonradan akla gelen bir şey değildir — temel bir teslimattır, çünkü belgelenmemiş bir API destek talepleri üretir ve her entegrasyonu yavaşlatır. Belgeleri spesifikasyondan üretilmiş tutarız; böylece kodla senkronda kalırlar." },
+        { "question": "Bir REST API'yi nasıl güvenli kılıyorsunuz?", "answer": "Kullanım durumuna göre her isteği JWT, OAuth 2.0 veya kapsamlı API anahtarlarıyla doğrular ve her uç noktada yetkilendirmeyi uygularız — kullanıcıların kendilerine ait olmayan kayıtlara erişememesi için nesne düzeyi kontroller dahil. Girdi doğrulaması, hız sınırlama, her yerde HTTPS ve OWASP API Top 10 risklerine karşı koruma ekleriz. Güvenlik uç nokta başına tasarlanır, gateway'de varsayılmaz." },
+        { "question": "Hataları ve uç durumları nasıl ele alıyorsunuz?", "answer": "Doğru durum kodu, kararlı bir hata kodu ve insan tarafından okunabilir bir mesajla tutarlı, makine tarafından okunabilir hata yanıtları döndürürüz — asla ham bir yığın izi değil. Doğrulama hataları hangi alanların neden başarısız olduğunu belirtir. Tutarlı hata yönetimi, istemci geliştiricilerinin neyin yanlış gittiğini tahmin etmek yerine sağlam entegrasyonlar kurmasını sağlar, bu da gidip gelen desteği büyük ölçüde azaltır." },
+        { "question": "API yüksek trafiği kaldırabilir mi?", "answer": "Evet. Yük dengeleyici arkasında yatay ölçeklenen durumsuz uç noktalar tasarlar, okuma ağırlıklı yollar için önbellek ekler, yanıt boyutlarını sınırlamak için sayfalama kullanır ve backend'i korumak için hız sınırlama uygularız. Veritabanı sorguları N+1 desenlerinden kaçınmak için optimize edilir. Bunlar yerinde olunca API, binlerce veya milyonlarca istek sunsanız da hızlı ve kararlı kalır." },
+        { "question": "Mevcut veritabanımızın üzerine bir API kurabilir misiniz?", "answer": "Evet. Mevcut veritabanları ve eski sistemler üzerine düzenli olarak REST API'ler kurar, zaten çalışan şeyi yeniden yazmaya zorlamadan temiz, modern uç noktalar sunarız. Verinizin önüne doğrulama, güvenlik ve dokümantasyon içeren iyi tasarlanmış bir API katmanı ekleriz; bu da daha önce hiç erişimi olmayan sistemlere web, mobil veya ortak erişimi açmanın çoğu zaman en hızlı yoludur." }
+      ],
+      "technologies": [
+        { "icon": "nodedotjs", "name": "Node.js" },
+        { "icon": "express", "name": "Express" },
+        { "icon": "fastify", "name": "Fastify" },
+        { "icon": "openapiinitiative", "name": "OpenAPI" },
+        { "icon": "swagger", "name": "Swagger" },
+        { "icon": "postman", "name": "Postman" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "redis", "name": "Redis" }
+      ]
+    }
+  },
+  "de": {
+    "name": "REST-API-Entwicklung",
+    "shortDescription": "Entwerfen und bauen Sie saubere, gut dokumentierte RESTful-APIs nach Branchenkonventionen — korrekte HTTP-Semantik, Pagination, Versionierung, Authentifizierung und OpenAPI-Docs, die Entwickler wirklich gern nutzen.",
+    "fullDescription": "Eine gute REST-API ist vorhersehbar: Entwickler können erraten, wie sie funktioniert, weil sie Konventionen folgt. Wir entwerfen und bauen RESTful-APIs, die die Grundlagen richtig machen — sinnvolle Ressourcenmodellierung, korrekte HTTP-Methoden und Statuscodes, konsistente Pagination und Filterung sowie eine Versionierungsstrategie, die Weiterentwicklung ohne Client-Bruch erlaubt. Jeder Endpunkt ist authentifiziert, validiert und mit OpenAPI/Swagger dokumentiert, sodass Integratoren autark sind, statt Ihnen Fragen zu mailen. Wir bauen in Node.js, Python und anderen Stacks, mit sauberem Error-Handling, Rate-Limiting und automatisierten Tests, sodass die API unter echtem Einsatz zuverlässig bleibt. Ob sie Ihre eigenen Web- und Mobile-Apps antreibt oder ein Produkt ist, für das Partner zahlen — wir liefern eine Schnittstelle, gegen die zu bauen Freude macht und auf die man sich verlassen kann.",
+    "features": [
+      "Ressourcenorientiertes API-Design",
+      "Korrekte HTTP-Methoden & Statuscodes",
+      "Pagination, Filterung & Sortierung",
+      "Authentifizierung (JWT, OAuth2, API-Keys)",
+      "Versionierung & Rückwärtskompatibilität",
+      "OpenAPI- / Swagger-Dokumentation",
+      "Rate-Limiting & Throttling",
+      "Automatisierte Tests & Contract-Tests"
+    ],
+    "benefits": [
+      "Vorhersehbare, konventionstreue Schnittstelle, der Integratoren vertrauen",
+      "Self-Service-Onboarding durch klare Dokumentation",
+      "Stabile Verträge, die ohne Client-Bruch wachsen",
+      "Sicherer Zugriff mit korrekter Authentifizierung und Validierung",
+      "Skalierbares Design für hohe Request-Volumina",
+      "Geringere Support-Last dank guter Docs und Fehlermeldungen"
+    ],
+    "metaTitle": "REST-API-Entwicklung & -Design | PakSoft",
+    "metaDescription": "Bauen Sie saubere, dokumentierte REST-APIs mit korrekter HTTP-Semantik, Versionierung, Auth und OpenAPI-Docs. Zuverlässige Schnittstellen. Kostenloses Angebot.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Ressourcenmodellierung & Contract", "description": "Wir modellieren Ihre Domäne als saubere Ressourcen und definieren Endpunkte, Request-/Response-Formen und Fehlerformate vorab. Den Contract früh zu vereinbaren, lässt Frontend- und Integrationsarbeit parallel gegen eine stabile Spezifikation starten." },
+        { "step": 2, "title": "Design-Review & Konventionen", "description": "Wir legen HTTP-Methodennutzung, Statuscodes, Pagination, Filterung und Benennung fest, damit sich die ganze API konsistent anfühlt. Konsistenz macht eine API erratbar — das ist der Unterschied zwischen einer, die Entwickler genießen, und einer, mit der sie kämpfen." },
+        { "step": 3, "title": "Implementierung & Validierung", "description": "Wir bauen die Endpunkte mit strikter Input-Validierung und aussagekräftigen Fehlerantworten und trennen Geschäftslogik vom Transport. Jeder Endpunkt ist durch automatisierte Tests abgedeckt, sodass das Verhalten korrekt bleibt, wenn die API wächst." },
+        { "step": 4, "title": "Auth, Rate-Limiting & Sicherheit", "description": "Wir ergänzen Authentifizierung, Autorisierung und Rate-Limiting und härten gegen gängige API-Risiken wie Broken Object-Level Authorization. Sicherheit ist in jeden Endpunkt eingebaut, nicht nur am Perimeter angeschraubt." },
+        { "step": 5, "title": "Dokumentation & Developer Experience", "description": "Wir generieren OpenAPI/Swagger-Docs mit echten Beispielen und einer Try-it-Konsole, sodass Integratoren autark sind. Gute Dokumentation ist ein Feature: Sie senkt Ihre Support-Last direkt und beschleunigt die Partner-Adoption." },
+        { "step": 6, "title": "Launch, Monitoring & Versionierung", "description": "Wir deployen mit Monitoring und Logging und unterstützen dann Versionierung und Deprecation, sodass Sie die API ohne Bruch bestehender Clients weiterentwickeln. Änderungen erscheinen hinter klaren Versionsgrenzen mit Migrationsanleitung." }
+      ],
+      "faq": [
+        { "question": "REST oder GraphQL — was wählen?", "answer": "REST ist der richtige Default für die meisten öffentlichen und Partner-APIs: universell verstanden, über Standard-HTTP cachebar und einfach zu dokumentieren und zu konsumieren. GraphQL glänzt, wenn Clients flexibles, präzises Datenholen über komplexe, verschachtelte Beziehungen brauchen und Sie Over-Fetching vermeiden wollen. Viele Systeme nutzen beides — REST für einfachen Ressourcenzugriff, GraphQL für einen reichen Client. Wir empfehlen je nach Konsument und Vielfalt der Datenbedürfnisse." },
+        { "question": "Wie sollte ich meine API versionieren?", "answer": "Die häufigsten Ansätze sind URL-Versionierung (/v1/, /v2/) und header-basierte Versionierung. URL-Versionierung ist am explizitesten und für Konsumenten am leichtesten verständlich, daher unser üblicher Default. Das Kernprinzip ist Rückwärtskompatibilität: additive Änderungen brauchen keine neue Version, Breaking Changes schon — begleitet von einer Deprecation-Phase und Migrationsanleitung, damit Clients nicht überrascht werden." },
+        { "question": "Was macht eine REST-API gut designt?", "answer": "Vorhersehbarkeit. Ressourcen sind Substantive, HTTP-Methoden tragen das Verb (GET liest, POST erstellt, PATCH aktualisiert, DELETE entfernt), Statuscodes bedeuten, was sie sollen (404 für fehlend, 422 für Validierung, 401 vs. 403 für Auth), und Pagination, Filterung und Fehler sind überall konsistent. Folgt eine API Konventionen, können Entwickler Endpunkte korrekt erraten — und das kennzeichnet eine gute." },
+        { "question": "Liefern Sie API-Dokumentation?", "answer": "Ja, immer. Wir erstellen OpenAPI/Swagger-Spezifikationen mit echten Request- und Response-Beispielen, Fehlerkatalogen und oft einer interaktiven Konsole, in der Entwickler Aufrufe testen. Dokumentation ist kein Nachgedanke — sie ist ein Kern-Deliverable, denn eine undokumentierte API erzeugt Support-Tickets und bremst jede Integration. Wir halten die Docs aus der Spezifikation generiert, damit sie synchron mit dem Code bleiben." },
+        { "question": "Wie sichern Sie eine REST-API?", "answer": "Wir authentifizieren jeden Request je nach Anwendungsfall mit JWT, OAuth 2.0 oder gescopten API-Keys und erzwingen Autorisierung an jedem Endpunkt — inklusive Object-Level-Checks, damit Nutzer nicht auf fremde Datensätze zugreifen. Wir ergänzen Input-Validierung, Rate-Limiting, überall HTTPS und Schutz gegen die OWASP API Top 10. Sicherheit wird pro Endpunkt entworfen, nicht am Gateway angenommen." },
+        { "question": "Wie behandeln Sie Fehler und Edge-Cases?", "answer": "Wir liefern konsistente, maschinenlesbare Fehlerantworten mit korrektem Statuscode, stabilem Fehlercode und menschenlesbarer Meldung — nie einen rohen Stacktrace. Validierungsfehler nennen, welche Felder warum scheiterten. Konsistentes Error-Handling lässt Client-Entwickler robuste Integrationen bauen, statt zu raten, was schieflief — das reduziert das Hin und Her im Support drastisch." },
+        { "question": "Kann die API hohen Traffic verkraften?", "answer": "Ja. Wir entwerfen zustandslose Endpunkte, die hinter einem Load Balancer horizontal skalieren, ergänzen Caching für leselastige Pfade, nutzen Pagination zur Begrenzung von Response-Größen und wenden Rate-Limiting zum Schutz des Backends an. Datenbankabfragen werden optimiert, um N+1-Muster zu vermeiden. Damit bleibt die API schnell und stabil, ob Sie Tausende oder Millionen Requests bedienen." },
+        { "question": "Können Sie eine API auf unserer bestehenden Datenbank bauen?", "answer": "Ja. Wir bauen regelmäßig REST-APIs über bestehende Datenbanken und Legacy-Systeme und stellen saubere, moderne Endpunkte bereit, ohne ein Rewrite des Funktionierenden zu erzwingen. Wir setzen eine gut designte API-Schicht mit Validierung, Sicherheit und Dokumentation vor Ihre Daten — oft der schnellste Weg, Web-, Mobile- oder Partnerzugriff auf Systeme zu ermöglichen, die bisher keinen hatten." }
+      ],
+      "technologies": [
+        { "icon": "nodedotjs", "name": "Node.js" },
+        { "icon": "express", "name": "Express" },
+        { "icon": "fastify", "name": "Fastify" },
+        { "icon": "openapiinitiative", "name": "OpenAPI" },
+        { "icon": "swagger", "name": "Swagger" },
+        { "icon": "postman", "name": "Postman" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "redis", "name": "Redis" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "REST API ڈیولپمنٹ",
+    "shortDescription": "صنعتی روایات پر چلنے والی صاف، اچھی طرح دستاویزی RESTful APIs ڈیزائن اور تعمیر کریں — درست HTTP semantics، pagination، versioning، تصدیق اور ایسی OpenAPI دستاویزات جنہیں ڈیولپرز واقعی پسند کریں۔",
+    "fullDescription": "اچھی REST API قابلِ پیش گوئی ہوتی ہے: ڈیولپرز اندازہ لگا سکتے ہیں کہ یہ کیسے کام کرتی ہے کیونکہ یہ روایات کی پیروی کرتی ہے۔ ہم ایسی RESTful APIs ڈیزائن اور تعمیر کرتے ہیں جو بنیادیں درست کرتی ہیں — معقول resource modeling، درست HTTP methods اور status codes، مستقل pagination اور filtering، اور ایسی versioning حکمتِ عملی جو clients توڑے بغیر آپ کو ترقی دے۔ ہر endpoint تصدیق شدہ، validated اور OpenAPI/Swagger سے دستاویزی ہوتا ہے، تاکہ integrators آپ کو سوالات ای میل کرنے کے بجائے خود کفیل ہوں۔ ہم Node.js، Python اور دیگر stacks میں، درست error handling، rate limiting اور خودکار ٹیسٹوں کے ساتھ تعمیر کرتے ہیں تاکہ API حقیقی استعمال کے تحت قابلِ اعتماد رہے۔ خواہ یہ آپ کی اپنی web اور mobile ایپس کو طاقت دے یا ایسی پروڈکٹ ہو جسے شراکت دار فیس دے کر استعمال کریں، ہم ایک ایسا انٹرفیس دیتے ہیں جس کے خلاف تعمیر کرنا خوشگوار ہو اور جس پر انحصار کرنے جتنا مستحکم ہو۔",
+    "features": [
+      "Resource پر مبنی API ڈیزائن",
+      "درست HTTP Methods اور Status Codes",
+      "Pagination، Filtering اور Sorting",
+      "تصدیق (JWT، OAuth2، API Keys)",
+      "Versioning اور پیچھے کی ہم آہنگی",
+      "OpenAPI / Swagger دستاویزات",
+      "Rate Limiting اور Throttling",
+      "خودکار ٹیسٹنگ اور Contract ٹیسٹ"
+    ],
+    "benefits": [
+      "Integrators کے بھروسے کے قابل پیش گوئی، روایت پر چلنے والا انٹرفیس",
+      "واضح دستاویزات سے self-service آغاز",
+      "Clients توڑے بغیر بڑھنے والے مستحکم معاہدے",
+      "درست تصدیق اور validation سے محفوظ رسائی",
+      "زیادہ request حجم کے لیے تیار اسکیل ایبل ڈیزائن",
+      "اچھی دستاویزات اور error پیغامات سے کم سپورٹ بوجھ"
+    ],
+    "metaTitle": "REST API ڈیولپمنٹ اور ڈیزائن | PakSoft",
+    "metaDescription": "درست HTTP semantics، versioning، تصدیق اور OpenAPI دستاویزات کے ساتھ صاف، دستاویزی REST APIs بنائیں۔ ڈیولپرز کی پسندیدہ انٹرفیس۔ مفت تخمینہ لیں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Resource Modeling اور معاہدہ", "description": "ہم آپ کے domain کو صاف resources کے طور پر ماڈل کرتے ہیں اور endpoints، request/response شکلیں اور error فارمیٹس شروع میں طے کرتے ہیں۔ معاہدہ جلد طے کرنا frontend اور انٹیگریشن کام کو مستحکم spec کے مقابل متوازی شروع کرنے دیتا ہے۔" },
+        { "step": 2, "title": "ڈیزائن جائزہ اور روایات", "description": "پوری API کے مستقل محسوس ہونے کے لیے ہم HTTP method استعمال، status codes، pagination، filtering اور نام گذاری طے کرتے ہیں۔ مستقل مزاجی ہی API کو قابلِ اندازہ بناتی ہے، جو اس فرق کا نام ہے کہ ڈیولپرز کسی API سے لطف اٹھائیں یا اس سے لڑیں۔" },
+        { "step": 3, "title": "نفاذ اور Validation", "description": "ہم endpoints کو سخت input validation اور بامعنی error جوابات کے ساتھ بناتے ہیں، business logic کو transport سے الگ رکھتے ہوئے۔ ہر endpoint خودکار ٹیسٹوں سے ڈھکا جاتا ہے تاکہ API بڑھنے پر رویہ درست رہے۔" },
+        { "step": 4, "title": "Auth، Rate Limiting اور سیکیورٹی", "description": "ہم تصدیق، اجازت اور rate limiting شامل کرتے ہیں اور ٹوٹے object-level authorization جیسے عام API خطرات کے خلاف سخت کرتے ہیں۔ سیکیورٹی ہر endpoint میں شامل ہوتی ہے، صرف کنارے پر جوڑی نہیں جاتی۔" },
+        { "step": 5, "title": "دستاویزات اور ڈیولپر تجربہ", "description": "ہم حقیقی مثالوں اور try-it console کے ساتھ OpenAPI/Swagger دستاویزات بناتے ہیں تاکہ integrators خود کفیل ہوں۔ اچھی دستاویزات ایک خصوصیت ہے: یہ براہِ راست آپ کا سپورٹ بوجھ کم کرتی ہے اور شراکت دار اپنائیت تیز کرتی ہے۔" },
+        { "step": 6, "title": "لانچ، نگرانی اور Versioning", "description": "ہم نگرانی اور logging کے ساتھ deploy کرتے ہیں، پھر versioning اور deprecation کی حمایت کرتے ہیں تاکہ آپ موجودہ clients توڑے بغیر API ترقی دے سکیں۔ تبدیلیاں واضح version حدود کے پیچھے، منتقلی رہنمائی کے ساتھ آتی ہیں۔" }
+      ],
+      "faq": [
+        { "question": "REST یا GraphQL — کون سا چنوں؟", "answer": "REST زیادہ تر عوامی اور شراکت دار APIs کے لیے درست ڈیفالٹ ہے: عالمی سطح پر سمجھا جاتا ہے، معیاری HTTP سے cacheable ہے اور دستاویز کرنا اور استعمال کرنا سادہ ہے۔ GraphQL تب چمکتا ہے جب clients کو پیچیدہ، nested تعلقات میں لچک دار، درست ڈیٹا fetching درکار ہو اور آپ over-fetching سے بچنا چاہیں۔ بہت سے سسٹم دونوں استعمال کرتے ہیں — سادہ resource رسائی کے لیے REST، بھرپور client کے لیے GraphQL۔ ہم اس بنیاد پر تجویز کرتے ہیں کہ API کو کون استعمال کرتا ہے اور اس کی ڈیٹا ضروریات کتنی متنوع ہیں۔" },
+        { "question": "میں اپنی API کو کیسے version کروں؟", "answer": "سب سے عام طریقے URL versioning (/v1/، /v2/) اور header پر مبنی versioning ہیں۔ URL versioning سب سے واضح اور صارفین کے لیے سمجھنے میں آسان ترین ہے، اس لیے یہ ہمارا عام ڈیفالٹ ہے۔ کلیدی اصول پیچھے کی ہم آہنگی ہے: اضافی تبدیلیوں کو نیا version نہیں چاہیے مگر توڑنے والی تبدیلیوں کو چاہیے، مع ایک deprecation مدت اور منتقلی گائیڈ تاکہ clients حیران نہ ہوں۔" },
+        { "question": "اچھی ڈیزائن کردہ REST API کو کیا بناتا ہے؟", "answer": "قابلِ پیش گوئی ہونا۔ Resources اسم ہیں، HTTP methods فعل اٹھاتے ہیں (GET پڑھتا، POST بناتا، PATCH اپ ڈیٹ کرتا، DELETE ہٹاتا)، status codes وہی مطلب رکھتے ہیں جو ہونا چاہیے (غائب کے لیے 404، validation کے لیے 422، auth کے لیے 401 بمقابلہ 403)، اور pagination، filtering اور errors ہر جگہ مستقل ہیں۔ جب API روایات پر چلتی ہے تو ڈیولپرز endpoints درست اندازہ لگا سکتے ہیں — اور یہی اچھی API کی پہچان ہے۔" },
+        { "question": "کیا آپ API دستاویزات فراہم کرتے ہیں؟", "answer": "جی ہاں، ہمیشہ۔ ہم حقیقی request اور response مثالوں، error catalogs اور اکثر ایک interactive console کے ساتھ OpenAPI/Swagger تفصیلات بناتے ہیں جہاں ڈیولپرز کالز آزما سکیں۔ دستاویزات بعد کی سوچ نہیں — ایک بنیادی deliverable ہے، کیونکہ غیر دستاویزی API سپورٹ tickets پیدا کرتی ہے اور ہر انٹیگریشن سست کرتی ہے۔ ہم دستاویزات کو spec سے generated رکھتے ہیں تاکہ وہ کوڈ کے ساتھ ہم آہنگ رہیں۔" },
+        { "question": "آپ REST API کو کیسے محفوظ کرتے ہیں؟", "answer": "استعمال کے مطابق ہم ہر request کو JWT، OAuth 2.0 یا scoped API keys سے تصدیق کرتے ہیں اور ہر endpoint پر اجازت نافذ کرتے ہیں — بشمول object-level جانچ تاکہ صارف ایسے ریکارڈ تک رسائی نہ پائیں جو ان کے نہیں۔ ہم input validation، rate limiting، ہر جگہ HTTPS اور OWASP API Top 10 خطرات کے خلاف تحفظ شامل کرتے ہیں۔ سیکیورٹی فی endpoint ڈیزائن ہوتی ہے، gateway پر فرض نہیں کی جاتی۔" },
+        { "question": "آپ errors اور edge cases کیسے سنبھالتے ہیں؟", "answer": "ہم درست status code، ایک مستحکم error code اور انسان کے پڑھنے کے قابل پیغام کے ساتھ مستقل، مشین کے پڑھنے کے قابل error جوابات دیتے ہیں — کبھی خام stack trace نہیں۔ Validation errors بتاتے ہیں کہ کون سے فیلڈ کیوں ناکام ہوئے۔ مستقل error handling client ڈیولپرز کو یہ اندازہ لگانے کے بجائے کہ کیا غلط ہوا، مضبوط انٹیگریشنز بنانے دیتا ہے، جو آگے پیچھے سپورٹ کو نمایاں طور پر کم کرتا ہے۔" },
+        { "question": "کیا API زیادہ ٹریفک سنبھال سکتی ہے؟", "answer": "جی ہاں۔ ہم ایسے stateless endpoints ڈیزائن کرتے ہیں جو load balancer کے پیچھے افقی اسکیل ہوں، read بھاری راستوں کے لیے caching شامل کرتے ہیں، response سائز محدود کرنے کے لیے pagination استعمال کرتے ہیں اور backend کے تحفظ کے لیے rate limiting لگاتے ہیں۔ ڈیٹابیس queries کو N+1 patterns سے بچنے کے لیے آپٹیمائز کیا جاتا ہے۔ ان کے موجود ہونے پر API تیز اور مستحکم رہتی ہے، چاہے آپ ہزاروں یا لاکھوں requests پیش کریں۔" },
+        { "question": "کیا آپ ہمارے موجودہ ڈیٹابیس کے اوپر API بنا سکتے ہیں؟", "answer": "جی ہاں۔ ہم باقاعدگی سے موجودہ ڈیٹابیسز اور پرانے سسٹمز پر REST APIs بناتے ہیں، جو پہلے سے چلتی چیز کو دوبارہ لکھنے پر مجبور کیے بغیر صاف، جدید endpoints پیش کرتے ہیں۔ ہم آپ کے ڈیٹا کے سامنے validation، سیکیورٹی اور دستاویزات والی اچھی ڈیزائن کردہ API پرت لگاتے ہیں، جو اکثر ان سسٹمز کو web، mobile یا شراکت دار رسائی دینے کا تیز ترین راستہ ہے جن کی پہلے کوئی رسائی نہ تھی۔" }
+      ],
+      "technologies": [
+        { "icon": "nodedotjs", "name": "Node.js" },
+        { "icon": "express", "name": "Express" },
+        { "icon": "fastify", "name": "Fastify" },
+        { "icon": "openapiinitiative", "name": "OpenAPI" },
+        { "icon": "swagger", "name": "Swagger" },
+        { "icon": "postman", "name": "Postman" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "redis", "name": "Redis" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تطوير واجهات REST API",
+    "shortDescription": "صمّموا وابنوا واجهات RESTful نظيفة وموثَّقة جيداً تتبع أعراف الصناعة — دلالات HTTP صحيحة، وترقيم صفحات، وإصدارات، ومصادقة، وتوثيق OpenAPI يستمتع المطوّرون باستخدامه فعلاً.",
+    "fullDescription": "واجهة REST الجيدة متوقّعة: يستطيع المطوّرون تخمين كيفية عملها لأنها تتبع الأعراف. نصمّم ونبني واجهات RESTful تُحسن الأساسيات — نمذجة موارد منطقية، وطرق HTTP ورموز حالة صحيحة، وترقيم صفحات وتصفية متّسقة، واستراتيجية إصدارات تتيح لكم التطوّر دون كسر العملاء. كل نقطة نهاية موثَّقة بالمصادقة ومُتحقَّق منها وموثَّقة بـ OpenAPI/Swagger كي يكون المتكاملون مكتفين ذاتياً بدل مراسلتكم بالأسئلة. نبني بـ Node.js وPython ومكدّسات أخرى، مع معالجة أخطاء سليمة وتحديد معدّل واختبارات آلية كي تبقى الواجهة موثوقة تحت الاستخدام الحقيقي. وسواء شغّلت تطبيقاتكم على الويب والجوال أو كانت منتجاً يدفع الشركاء لاستخدامه، نقدّم واجهة ممتعة للبناء عليها ومستقرة بما يكفي للاعتماد عليها.",
+    "features": [
+      "تصميم واجهة موجّه بالموارد",
+      "طرق HTTP ورموز حالة صحيحة",
+      "ترقيم الصفحات والتصفية والفرز",
+      "المصادقة (JWT وOAuth2 ومفاتيح API)",
+      "الإصدارات والتوافق للخلف",
+      "توثيق OpenAPI / Swagger",
+      "تحديد المعدّل والتقييد",
+      "اختبارات آلية واختبارات العقد"
+    ],
+    "benefits": [
+      "واجهة متوقّعة تتبع الأعراف يثق بها المتكاملون",
+      "إعداد ذاتي عبر توثيق واضح",
+      "عقود مستقرة تنمو دون كسر العملاء",
+      "وصول آمن بمصادقة وتحقق سليمين",
+      "تصميم قابل للتوسّع جاهز لأحجام طلبات عالية",
+      "حمل دعم أقل بفضل توثيق ورسائل خطأ جيدة"
+    ],
+    "metaTitle": "تطوير وتصميم واجهات REST API | PakSoft",
+    "metaDescription": "ابنوا واجهات REST نظيفة وموثَّقة بدلالات HTTP صحيحة وإصدارات ومصادقة وتوثيق OpenAPI. واجهات موثوقة يحبها المطوّرون. اطلبوا تقديراً مجانياً.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "نمذجة الموارد والعقد", "description": "ننمذج نطاقكم كموارد نظيفة ونحدّد نقاط النهاية وأشكال الطلب/الاستجابة وصيغ الأخطاء مسبقاً. والاتفاق على العقد مبكراً يتيح بدء عمل الواجهة الأمامية والتكامل بالتوازي مقابل مواصفة مستقرة." },
+        { "step": 2, "title": "مراجعة التصميم والأعراف", "description": "نثبّت استخدام طرق HTTP ورموز الحالة وترقيم الصفحات والتصفية والتسمية كي تبدو الواجهة كلها متّسقة. الاتساق هو ما يجعل الواجهة قابلة للتخمين، وهو الفرق بين واحدة يستمتع بها المطوّرون وأخرى يصارعونها." },
+        { "step": 3, "title": "التنفيذ والتحقق", "description": "نبني نقاط النهاية بتحقّق صارم من المدخلات واستجابات خطأ ذات معنى، مع فصل منطق العمل عن النقل. وتُغطّى كل نقطة نهاية باختبارات آلية كي يبقى السلوك صحيحاً مع نمو الواجهة." },
+        { "step": 4, "title": "المصادقة وتحديد المعدّل والأمن", "description": "نضيف المصادقة والتفويض وتحديد المعدّل ونقوّي ضد مخاطر الواجهة الشائعة مثل خلل التفويض على مستوى الكائن. والأمن مدمج في كل نقطة نهاية لا مُلحَق عند المحيط وحده." },
+        { "step": 5, "title": "التوثيق وتجربة المطوّر", "description": "نولّد توثيق OpenAPI/Swagger بأمثلة حقيقية ووحدة تجربة كي يكون المتكاملون مكتفين ذاتياً. التوثيق الجيد ميزة: يقلّل حمل دعمكم مباشرة ويسرّع تبنّي الشركاء." },
+        { "step": 6, "title": "الإطلاق والمراقبة والإصدارات", "description": "ننشر بمراقبة وتسجيل، ثم ندعم الإصدارات والإهمال كي تطوّروا الواجهة دون كسر العملاء الحاليين. وتصل التغييرات خلف حدود إصدار واضحة مع إرشاد للترحيل." }
+      ],
+      "faq": [
+        { "question": "REST أم GraphQL — أيّهما أختار؟", "answer": "REST الخيار الافتراضي الصحيح لمعظم واجهات الجمهور والشركاء: مفهوم عالمياً، وقابل للتخزين المؤقت عبر HTTP القياسي، وبسيط في التوثيق والاستهلاك. ويتألق GraphQL حين يحتاج العملاء جلب بيانات مرناً ودقيقاً عبر علاقات معقدة متشعّبة وتريدون تجنّب الجلب الزائد. وكثير من الأنظمة يستخدم كليهما — REST للوصول البسيط للموارد، وGraphQL لعميل غني. نوصي بحسب من يستهلك الواجهة ومدى تنوّع حاجاته للبيانات." },
+        { "question": "كيف أُصدِر نسخ واجهتي؟", "answer": "أكثر الأساليب شيوعاً ترقيم النسخ في الرابط (/v1/ و/v2/) وترقيم النسخ عبر الترويسة. وترقيم الرابط هو الأوضح والأسهل فهماً للمستهلكين، فهو افتراضنا المعتاد. والمبدأ الأساسي هو التوافق للخلف: التغييرات الإضافية لا تحتاج نسخة جديدة، أما الكاسرة فتحتاجها مصحوبة بفترة إهمال ودليل ترحيل كي لا يُفاجأ العملاء." },
+        { "question": "ما الذي يجعل واجهة REST حسنة التصميم؟", "answer": "القابلية للتوقّع. الموارد أسماء، وطرق HTTP تحمل الفعل (GET يقرأ، وPOST ينشئ، وPATCH يحدّث، وDELETE يحذف)، ورموز الحالة تعني ما ينبغي (404 للمفقود، و422 للتحقق، و401 مقابل 403 للمصادقة)، وترقيم الصفحات والتصفية والأخطاء متّسقة في كل مكان. وحين تتبع الواجهة الأعراف، يستطيع المطوّرون تخمين نقاط النهاية بصحة — وهذه علامة الواجهة الجيدة." },
+        { "question": "هل توفّرون توثيق الواجهة؟", "answer": "نعم، دائماً. ننتج مواصفات OpenAPI/Swagger بأمثلة طلب واستجابة حقيقية وكتالوجات أخطاء وغالباً وحدة تفاعلية يجرّب فيها المطوّرون النداءات. التوثيق ليس فكرة لاحقة — إنه مُسلَّم أساسي، لأن واجهة غير موثَّقة تولّد تذاكر دعم وتُبطئ كل تكامل. ونُبقي التوثيق مولَّداً من المواصفة كي يبقى متزامناً مع الكود." },
+        { "question": "كيف تؤمّنون واجهة REST؟", "answer": "نوثّق كل طلب بـ JWT أو OAuth 2.0 أو مفاتيح API محدودة النطاق بحسب الحالة، ونفرض التفويض على كل نقطة نهاية — بما في ذلك فحوص على مستوى الكائن كي لا يصل المستخدمون إلى سجلات ليست لهم. ونضيف التحقق من المدخلات وتحديد المعدّل وHTTPS في كل مكان وحماية ضد مخاطر OWASP API Top 10. الأمن يُصمَّم لكل نقطة نهاية لا يُفترَض عند البوابة." },
+        { "question": "كيف تتعاملون مع الأخطاء والحالات الحدّية؟", "answer": "نعيد استجابات خطأ متّسقة قابلة للقراءة آلياً برمز حالة صحيح ورمز خطأ مستقر ورسالة مقروءة للبشر — لا أثر مكدّس خام أبداً. وتحدّد أخطاء التحقق أي الحقول فشلت ولماذا. والمعالجة المتّسقة للأخطاء تتيح لمطوّري العملاء بناء تكاملات متينة بدل تخمين ما حدث، ما يقلّل بشدة تبادل الدعم." },
+        { "question": "هل تتحمّل الواجهة حركة عالية؟", "answer": "نعم. نصمّم نقاط نهاية عديمة الحالة تتوسّع أفقياً خلف موازِن حمل، ونضيف تخزيناً مؤقتاً للمسارات كثيفة القراءة، ونستخدم ترقيم الصفحات لتقييد أحجام الاستجابات، ونطبّق تحديد المعدّل لحماية الخلفية. وتُحسَّن استعلامات قاعدة البيانات لتجنّب أنماط N+1. وبهذه العناصر تبقى الواجهة سريعة ومستقرة سواء قدّمتم آلاف أو ملايين الطلبات." },
+        { "question": "هل يمكنكم بناء واجهة فوق قاعدة بياناتنا الحالية؟", "answer": "نعم. نبني بانتظام واجهات REST فوق قواعد بيانات وأنظمة قديمة قائمة، فنكشف نقاط نهاية نظيفة وحديثة دون إجبار على إعادة كتابة ما يعمل أصلاً. ونضع طبقة واجهة حسنة التصميم بتحقّق وأمن وتوثيق أمام بياناتكم، وهو غالباً أسرع طريق لإتاحة وصول الويب أو الجوال أو الشركاء لأنظمة لم يكن لها وصول من قبل." }
+      ],
+      "technologies": [
+        { "icon": "nodedotjs", "name": "Node.js" },
+        { "icon": "express", "name": "Express" },
+        { "icon": "fastify", "name": "Fastify" },
+        { "icon": "openapiinitiative", "name": "OpenAPI" },
+        { "icon": "swagger", "name": "Swagger" },
+        { "icon": "postman", "name": "Postman" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "redis", "name": "Redis" }
+      ]
+    }
+  }
+}

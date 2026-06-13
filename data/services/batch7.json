@@ -1,0 +1,436 @@
+{
+  "custom-wordpress-themes": {
+    "en": {
+      "name": "Custom WordPress Themes",
+      "shortDescription": "Get a unique WordPress theme designed and built for your brand.",
+      "fullDescription": "Stand out from the competition with a Custom WordPress Theme built specifically for your business. Pre-made templates often suffer from bloated code, slow loading times, and limited design flexibility. Our custom themes are developed from scratch, ensuring a pixel-perfect match with your brand guidelines and incredibly fast page speeds. By utilizing modern workflows with Gutenberg Blocks and Advanced Custom Fields (ACF), we deliver a backend editing experience that is as beautiful and intuitive as your frontend website, giving you total control over your content.",
+      "features": [
+        "Custom UI/UX Design",
+        "Clean, Unbloated Code",
+        "Gutenberg Block Development",
+        "ACF Pro Integration",
+        "Speed & Core Web Vitals Optimization",
+        "SEO Ready Architecture"
+      ],
+      "benefits": [
+        "Unique Brand Identity",
+        "Lightning-Fast Loading Times",
+        "Higher Search Engine Rankings",
+        "Easy Content Management",
+        "Enhanced Security & Stability"
+      ],
+      "content": {
+        "process": [
+          { "title": "Discovery & Wireframing", "description": "Understanding your content strategy and laying out the page structures." },
+          { "title": "High-Fidelity Design", "description": "Creating custom UI mockups that perfectly reflect your brand identity." },
+          { "title": "Frontend Development", "description": "Converting designs into responsive HTML, CSS, and JavaScript using Tailwind CSS." },
+          { "title": "WordPress Integration", "description": "Building custom Gutenberg blocks and tying frontend code to WordPress PHP templates." },
+          { "title": "Optimization & Launch", "description": "Minifying assets, caching setup, and deploying the new theme to your live server." }
+        ],
+        "technologies": [
+          "WordPress",
+          "PHP 8+",
+          "Advanced Custom Fields (ACF)",
+          "Tailwind CSS",
+          "JavaScript",
+          "Webpack/Vite"
+        ],
+        "faq": [
+          { "question": "Why shouldn't I just buy a $50 theme from a marketplace?", "answer": "Marketplace themes are built to serve thousands of different use cases, meaning they include massive amounts of unnecessary code and plugins. This bloat severely slows down your site and hurts SEO. A custom theme only contains the code your specific site needs, making it infinitely faster and more secure." },
+          { "question": "Will I be able to update content myself without knowing code?", "answer": "Absolutely. We build custom backend interfaces using Gutenberg and ACF, allowing you to easily drag-and-drop elements and edit text or images just by filling out simple forms." }
+        ]
+      },
+      "metaTitle": "Custom WordPress Theme Development | Fast & SEO Optimized",
+      "metaDescription": "Get a unique, high-performance Custom WordPress Theme. We build pixel-perfect, unbloated themes with Gutenberg and ACF for ultimate speed and flexibility."
+    },
+    "tr": {
+      "name": "Özel WordPress Temaları",
+      "shortDescription": "Markanız için tasarlanmış ve oluşturulmuş benzersiz bir WordPress teması edinin.",
+      "fullDescription": "İşletmeniz için özel olarak oluşturulmuş bir Özel WordPress Teması ile rekabette öne çıkın. Hazır şablonlar genellikle şişirilmiş kodlardan, yavaş yükleme sürelerinden ve sınırlı tasarım esnekliğinden muzdariptir. Özel temalarımız sıfırdan geliştirilerek marka yönergelerinizle mükemmel uyum ve inanılmaz derecede hızlı sayfa hızları sağlar. Gutenberg Blokları ve Gelişmiş Özel Alanlar (ACF) ile modern iş akışlarını kullanarak, size içeriğiniz üzerinde tam kontrol sağlayan, ön uç web siteniz kadar güzel ve sezgisel bir arka uç düzenleme deneyimi sunuyoruz.",
+      "features": [
+        "Özel UI/UX Tasarımı",
+        "Temiz, Şişirilmemiş Kod",
+        "Gutenberg Blok Geliştirme",
+        "ACF Pro Entegrasyonu",
+        "Hız ve Core Web Vitals Optimizasyonu",
+        "SEO'ya Hazır Mimari"
+      ],
+      "benefits": [
+        "Benzersiz Marka Kimliği",
+        "Işık Hızında Yükleme Süreleri",
+        "Daha Yüksek Arama Motoru Sıralamaları",
+        "Kolay İçerik Yönetimi",
+        "Gelişmiş Güvenlik ve İstikrar"
+      ],
+      "content": {
+        "process": [
+          { "title": "Keşif ve Tel Çerçeveleme", "description": "İçerik stratejinizi anlama ve sayfa yapılarını belirleme." },
+          { "title": "Yüksek Sadakatli Tasarım", "description": "Marka kimliğinizi mükemmel yansıtan özel UI tasarımları oluşturma." },
+          { "title": "Ön Uç Geliştirme", "description": "Tasarırımları Tailwind CSS kullanarak duyarlı HTML, CSS ve JavaScript'e dönüştürme." },
+          { "title": "WordPress Entegrasyonu", "description": "Özel Gutenberg blokları oluşturma ve ön uç kodunu WordPress PHP şablonlarına bağlama." },
+          { "title": "Optimizasyon ve Lansman", "description": "Varlıkları küçültme, önbelleğe alma kurulumu ve yeni temayı canlı sunucunuza dağıtma." }
+        ],
+        "technologies": [
+          "WordPress",
+          "PHP 8+",
+          "Advanced Custom Fields (ACF)",
+          "Tailwind CSS",
+          "JavaScript",
+          "Webpack/Vite"
+        ],
+        "faq": [
+          { "question": "Neden bir pazar yerinden 50 dolarlık bir tema almamalıyım?", "answer": "Pazar yeri temaları binlerce farklı kullanım senaryosuna hizmet etmek için oluşturulur; bu da büyük miktarda gereksiz kod ve eklenti içerdikleri anlamına gelir. Bu şişkinlik sitenizi ciddi şekilde yavaşlatır ve SEO'ya zarar verir. Özel bir tema yalnızca özel sitenizin ihtiyaç duyduğu kodu içerir, bu da onu çok daha hızlı ve güvenli hale getirir." },
+          { "question": "Kod bilmeden içeriği kendim güncelleyebilecek miyim?", "answer": "Kesinlikle. Gutenberg ve ACF kullanarak özel arka uç arayüzleri oluşturuyoruz; böylece öğeleri kolayca sürükleyip bırakabilir ve yalnızca basit formları doldurarak metin veya resimleri düzenleyebilirsiniz." }
+        ]
+      },
+      "metaTitle": "Özel WordPress Tema Geliştirme | Hızlı ve SEO Uyumlu",
+      "metaDescription": "Benzersiz, yüksek performanslı Özel bir WordPress Teması edinin. Üstün hız ve esneklik için Gutenberg ve ACF ile piksel açısından mükemmel, şişirilmemiş temalar oluşturuyoruz."
+    },
+    "de": {
+      "name": "Individuelle WordPress-Themes",
+      "shortDescription": "Erhalten Sie ein einzigartiges WordPress-Theme, das für Ihre Marke entworfen und entwickelt wurde.",
+      "fullDescription": "Heben Sie sich mit einem speziell für Ihr Unternehmen entwickelten individuellen WordPress-Theme von der Konkurrenz ab. Vorgefertigte Vorlagen leiden oft unter aufgeblähtem Code, langsamen Ladezeiten und eingeschränkter Gestaltungsfreiheit. Unsere benutzerdefinierten Themes werden von Grund auf neu entwickelt, was eine pixelgenaue Übereinstimmung mit Ihren Markenrichtlinien und unglaublich schnelle Seitengeschwindigkeiten gewährleistet. Durch die Nutzung moderner Workflows mit Gutenberg-Blöcken und Advanced Custom Fields (ACF) liefern wir ein Backend-Bearbeitungserlebnis, das genauso schön und intuitiv ist wie Ihre Frontend-Website, und geben Ihnen die volle Kontrolle über Ihre Inhalte.",
+      "features": [
+        "Individuelles UI/UX-Design",
+        "Sauberer, unaufgeblähter Code",
+        "Gutenberg-Block-Entwicklung",
+        "ACF Pro-Integration",
+        "Geschwindigkeits- & Core Web Vitals-Optimierung",
+        "SEO-bereite Architektur"
+      ],
+      "benefits": [
+        "Einzigartige Markenidentität",
+        "Blitzschnelle Ladezeiten",
+        "Höhere Suchmaschinen-Rankings",
+        "Einfaches Content-Management",
+        "Erhöhte Sicherheit & Stabilität"
+      ],
+      "content": {
+        "process": [
+          { "title": "Entdeckung & Wireframing", "description": "Verständnis Ihrer Content-Strategie und Layout der Seitenstrukturen." },
+          { "title": "High-Fidelity-Design", "description": "Erstellung benutzerdefinierter UI-Mockups, die Ihre Markenidentität perfekt widerspiegeln." },
+          { "title": "Frontend-Entwicklung", "description": "Umwandlung von Designs in responsives HTML, CSS und JavaScript mit Tailwind CSS." },
+          { "title": "WordPress-Integration", "description": "Entwicklung benutzerdefinierter Gutenberg-Blöcke und Anbindung von Frontend-Code an WordPress-PHP-Vorlagen." },
+          { "title": "Optimierung & Start", "description": "Minimierung von Assets, Caching-Setup und Bereitstellung des neuen Themes auf Ihrem Live-Server." }
+        ],
+        "technologies": [
+          "WordPress",
+          "PHP 8+",
+          "Advanced Custom Fields (ACF)",
+          "Tailwind CSS",
+          "JavaScript",
+          "Webpack/Vite"
+        ],
+        "faq": [
+          { "question": "Warum sollte ich nicht einfach ein 50-Dollar-Theme von einem Marktplatz kaufen?", "answer": "Marktplatz-Themes sind für Tausende verschiedene Anwendungsfälle konzipiert, was bedeutet, dass sie riesige Mengen an unnötigem Code und Plugins enthalten. Diese Aufblähung verlangsamt Ihre Website extrem und schadet der SEO. Ein individuelles Theme enthält nur den Code, den Ihre spezifische Website benötigt." },
+          { "question": "Kann ich Inhalte selbst aktualisieren, ohne Code zu kennen?", "answer": "Absolut. Wir erstellen benutzerdefinierte Backend-Schnittstellen mit Gutenberg und ACF, sodass Sie Elemente einfach per Drag-and-Drop verschieben und Text oder Bilder bearbeiten können, indem Sie einfache Formulare ausfüllen." }
+        ]
+      },
+      "metaTitle": "Individuelle WordPress-Theme-Entwicklung | Schnell & SEO-optimiert",
+      "metaDescription": "Holen Sie sich ein einzigartiges, hochleistungsfähiges WordPress-Theme. Wir erstellen pixelgenaue, unaufgeblähte Themes mit Gutenberg und ACF."
+    },
+    "ur": {
+      "name": "اپنی مرضی کے ورڈپریس تھیمز",
+      "shortDescription": "اپنے برانڈ کے لیے ڈیزائن کیا گیا اور بنایا گیا ایک منفرد ورڈپریس تھیم حاصل کریں۔",
+      "fullDescription": "اپنے کاروبار کے لیے خاص طور پر بنائے گئے حسب ضرورت ورڈپریس تھیم کے ساتھ مقابلے سے الگ ہوں۔ پہلے سے بنے ہوئے ٹیمپلیٹس اکثر پھولے ہوئے کوڈ، سست لوڈنگ کے اوقات اور محدود ڈیزائن لچک کا شکار ہوتے ہیں۔ ہمارے کسٹم تھیمز شروع سے ہی تیار کیے گئے ہیں، جو آپ کے برانڈ کے رہنما خطوط کے ساتھ پکسل پرفیکٹ میچ اور ناقابل یقین حد تک تیز صفحہ کی رفتار کو یقینی بناتے ہیں۔ Gutenberg Blocks اور Advanced Custom Fields (ACF) کے ساتھ جدید ورک فلو کو استعمال کر کے، ہم ایک ایسا بیک اینڈ ایڈیٹنگ کا تجربہ پیش کرتے ہیں جو آپ کی فرنٹ اینڈ ویب سائٹ کی طرح ہی خوبصورت اور بدیہی ہے، جس سے آپ کو اپنے مواد پر مکمل کنٹرول حاصل ہوتا ہے۔",
+      "features": [
+        "حسب ضرورت UI/UX ڈیزائن",
+        "کلین، ان بلوٹڈ کوڈ",
+        "گٹن برگ بلاک کی ترقی",
+        "اے سی ایف پرو انٹیگریشن",
+        "اسپیڈ اور کور ویب وائٹلز آپٹیمائزیشن",
+        "ایس ای او تیار فن تعمیر"
+      ],
+      "benefits": [
+        "منفرد برانڈ کی شناخت",
+        "آسمانی بجلی کی تیز رفتار لوڈنگ کے اوقات",
+        "اعلی سرچ انجن کی درجہ بندی",
+        "آسان مواد کا انتظام",
+        "بہتر سیکورٹی اور استحکام"
+      ],
+      "content": {
+        "process": [
+          { "title": "دریافت اور وائر فریمنگ", "description": "اپنی مواد کی حکمت عملی کو سمجھنا اور صفحہ کے ڈھانچے کو بچھانا۔" },
+          { "title": "ہائی فیڈیلیٹی ڈیزائن", "description": "حسب ضرورت UI موک اپس بنانا جو آپ کے برانڈ کی شناخت کو بالکل ظاہر کرتے ہیں۔" },
+          { "title": "فرنٹ اینڈ ڈیولپمنٹ", "description": "Tailwind CSS کا استعمال کرتے ہوئے ڈیزائنز کو جوابدہ HTML، CSS، اور JavaScript میں تبدیل کرنا۔" },
+          { "title": "ورڈپریس انٹیگریشن", "description": "حسب ضرورت گٹن برگ بلاکس بنانا اور فرنٹ اینڈ کوڈ کو ورڈپریس پی ایچ پی ٹیمپلیٹس سے جوڑنا۔" },
+          { "title": "آپٹیمائزیشن اور لانچ", "description": "اثاثوں کو کم کرنا، کیشنگ سیٹ اپ، اور آپ کے لائیو سرور پر نئی تھیم تعینات کرنا۔" }
+        ],
+        "technologies": [
+          "WordPress",
+          "PHP 8+",
+          "Advanced Custom Fields (ACF)",
+          "Tailwind CSS",
+          "JavaScript",
+          "Webpack/Vite"
+        ],
+        "faq": [
+          { "question": "مجھے کسی بازار سے 50 ڈالر کی تھیم کیوں نہیں خریدنی چاہیے؟", "answer": "مارکیٹ پلیس تھیمز ہزاروں مختلف استعمال کے معاملات کو پیش کرنے کے لیے بنائے گئے ہیں، یعنی ان میں غیر ضروری کوڈ اور پلگ ان کی بڑی مقدار شامل ہے۔ یہ پھول آپ کی سائٹ کو شدید سست کر دیتا ہے اور SEO کو نقصان پہنچاتا ہے۔ اپنی مرضی کے تھیم میں صرف وہ کوڈ ہوتا ہے جس کی آپ کی مخصوص سائٹ کو ضرورت ہوتی ہے، جو اسے لامحدود تیز تر اور زیادہ محفوظ بناتا ہے۔" },
+          { "question": "کیا میں کوڈ جانے بغیر خود مواد کو اپ ڈیٹ کر سکوں گا؟", "answer": "بالکل۔ ہم Gutenberg اور ACF کا استعمال کرتے ہوئے اپنی مرضی کے مطابق پسدید انٹرفیس بناتے ہیں، جس سے آپ آسانی سے عناصر کو گھسیٹ کر چھوڑ سکتے ہیں اور صرف سادہ فارم بھر کر متن یا تصاویر میں ترمیم کر سکتے ہیں۔" }
+        ]
+      },
+      "metaTitle": "اپنی مرضی کے مطابق ورڈپریس تھیم ڈیولپمنٹ | تیز اور ایس ای او آپٹمائزڈ",
+      "metaDescription": "ایک منفرد، اعلیٰ کارکردگی والی کسٹم ورڈپریس تھیم حاصل کریں۔ ہم حتمی رفتار اور لچک کے لیے Gutenberg اور ACF کے ساتھ پکسل پرفیکٹ، غیر پھولے ہوئے تھیمز بناتے ہیں۔"
+    },
+    "ar": {
+      "name": "قوالب ووردبريس المخصصة",
+      "shortDescription": "احصل على قالب ووردبريس فريد مصمم ومبني لعلامتك التجارية.",
+      "fullDescription": "تميز عن المنافسة باستخدام قالب ووردبريس (WordPress) مخصص صُمم خصيصًا لعملك. غالبًا ما تعاني القوالب الجاهزة من كود برمجي منتفخ، وأوقات تحميل بطيئة، ومرونة محدودة في التصميم. يتم تطوير قوالبنا المخصصة من الصفر، مما يضمن مطابقة مثالية لدليل علامتك التجارية وسرعات صفحات مذهلة. من خلال استخدام سير العمل الحديث مع كتل Gutenberg و Advanced Custom Fields (ACF)، نقدم تجربة تحرير خلفية جميلة وبديهية تمامًا مثل واجهة موقع الويب الأمامية، مما يمنحك تحكمًا كاملاً في المحتوى الخاص بك.",
+      "features": [
+        "تصميم UI/UX مخصص",
+        "كود نظيف وغير منتفخ",
+        "تطوير كتل Gutenberg",
+        "تكامل ACF Pro",
+        "تحسين السرعة وأساسيات الويب (Core Web Vitals)",
+        "بنية جاهزة لتحسين محركات البحث (SEO)"
+      ],
+      "benefits": [
+        "هوية علامة تجارية فريدة",
+        "أوقات تحميل سريعة للغاية",
+        "تصنيفات أعلى في محركات البحث",
+        "إدارة محتوى سهلة",
+        "تعزيز الأمان والاستقرار"
+      ],
+      "content": {
+        "process": [
+          { "title": "الاكتشاف والتخطيط الشبكي", "description": "فهم استراتيجية المحتوى الخاصة بك وتخطيط هياكل الصفحات." },
+          { "title": "تصميم عالي الدقة", "description": "إنشاء نماذج واجهة مستخدم مخصصة تعكس هوية علامتك التجارية تمامًا." },
+          { "title": "تطوير الواجهة الأمامية", "description": "تحويل التصميمات إلى HTML و CSS و JavaScript متجاوب باستخدام Tailwind CSS." },
+          { "title": "تكامل ووردبريس", "description": "بناء كتل Gutenberg مخصصة وربط الكود الأمامي بقوالب WordPress PHP." },
+          { "title": "التحسين والإطلاق", "description": "تصغير الأصول، وإعداد التخزين المؤقت، ونشر القالب الجديد على خادمك المباشر." }
+        ],
+        "technologies": [
+          "WordPress",
+          "PHP 8+",
+          "Advanced Custom Fields (ACF)",
+          "Tailwind CSS",
+          "JavaScript",
+          "Webpack/Vite"
+        ],
+        "faq": [
+          { "question": "لماذا لا يجب أن أشتري ببساطة قالبًا بـ 50 دولارًا من أحد المتاجر؟", "answer": "تُبنى قوالب المتاجر لخدمة آلاف حالات الاستخدام المختلفة، مما يعني أنها تتضمن كميات هائلة من التعليمات البرمجية والمكونات الإضافية غير الضرورية. هذا الانتفاخ يبطئ موقعك بشدة ويضر بـ SEO. يحتوي القالب المخصص فقط على الكود الذي يحتاجه موقعك المحدد، مما يجعله أسرع بكثير وأكثر أمانًا." },
+          { "question": "هل سأتمكن من تحديث المحتوى بنفسي دون معرفة الكود البرمجي؟", "answer": "بالتأكيد. نقوم ببناء واجهات خلفية مخصصة باستخدام Gutenberg و ACF، مما يسمح لك بسحب العناصر وإفلاتها بسهولة وتحرير النص أو الصور فقط عن طريق ملء نماذج بسيطة." }
+        ]
+      },
+      "metaTitle": "تطوير قوالب ووردبريس مخصصة | سريع ومحسن لـ SEO",
+      "metaDescription": "احصل على قالب ووردبريس مخصص فريد وعالي الأداء. نحن نبني قوالب خالية من الانتفاخ ومثالية باستخدام Gutenberg و ACF للحصول على سرعة ومرونة مطلقة."
+    }
+  },
+  "dapp-development": {
+    "en": {
+      "name": "dApp Development",
+      "shortDescription": "Build decentralized applications that run on blockchain.",
+      "fullDescription": "Disrupt traditional business models with next-generation Decentralized Applications (dApps). Unlike traditional web apps powered by centralized servers, dApps run on peer-to-peer networks and execute logic via immutable smart contracts. We provide end-to-end dApp development services, combining a secure smart contract backend on networks like Ethereum, Solana, or Polygon, with a sleek, user-friendly Web3 frontend. Whether you are building DeFi protocols, decentralized exchanges (DEX), or Web3 games, we ensure a frictionless wallet connection and gas-optimized transactions.",
+      "features": [
+        "Web3 Wallet Connection",
+        "Smart Contract Integration",
+        "Decentralized Storage (IPFS)",
+        "Token Gating & Authentication",
+        "DAO Governance Integration",
+        "Cross-Chain Support"
+      ],
+      "benefits": [
+        "Zero Downtime Architecture",
+        "Complete User Privacy & Anonymity",
+        "Censorship Resistance",
+        "Trustless Peer-to-Peer Transactions",
+        "Global Financial Accessibility"
+      ],
+      "content": {
+        "process": [
+          { "title": "Tokenomics & Architecture", "description": "Defining the economic model, blockchain network, and system architecture." },
+          { "title": "Smart Contract Development", "description": "Writing and rigorously auditing the core decentralized logic." },
+          { "title": "Frontend Web3 Integration", "description": "Building React/Next.js interfaces that interact directly with the blockchain via Ethers.js." },
+          { "title": "Testnet Deployment", "description": "Running the dApp on Goerli or Mumbai testnets to ensure flawless execution." },
+          { "title": "Mainnet Launch", "description": "Deploying contracts to the live blockchain and monitoring gas usage." }
+        ],
+        "technologies": [
+          "React & Next.js",
+          "Web3.js & Ethers.js",
+          "Solidity & Rust",
+          "The Graph",
+          "IPFS / Arweave",
+          "Hardhat / Foundry"
+        ],
+        "faq": [
+          { "question": "What is the difference between a normal web app and a dApp?", "answer": "A normal web app relies on a centralized database and server owned by a single company. A dApp utilizes decentralized smart contracts on a blockchain as its backend, meaning data is immutable, public, and not controlled by any single entity." },
+          { "question": "Do users need cryptocurrency to use a dApp?", "answer": "Traditionally, yes, users need a Web3 wallet (like MetaMask) and crypto to pay network 'gas' fees. However, we can implement meta-transactions and Account Abstraction to subsidize these fees, providing a gasless experience for your users." }
+        ]
+      },
+      "metaTitle": "dApp Development Company | Web3 & Decentralized Apps",
+      "metaDescription": "Build secure, scalable Decentralized Applications (dApps). We integrate smart contracts, Web3 wallets, and IPFS for innovative blockchain solutions."
+    },
+    "tr": {
+      "name": "dApp Geliştirme",
+      "shortDescription": "Blokzinciri üzerinde çalışan merkeziyetsiz uygulamalar oluşturun.",
+      "fullDescription": "Geleneksel iş modellerini yeni nesil Merkeziyetsiz Uygulamalar (dApps) ile altüst edin. Merkezi sunucular tarafından desteklenen geleneksel web uygulamalarının aksine, dApp'ler eşler arası ağlarda çalışır ve mantığı değiştirilemez akıllı sözleşmeler aracılığıyla yürütür. Ethereum, Solana veya Polygon gibi ağlardaki güvenli bir akıllı sözleşme arka ucunu, şık, kullanıcı dostu bir Web3 ön ucuyla birleştirerek uçtan uca dApp geliştirme hizmetleri sunuyoruz. İster DeFi protokolleri, ister merkeziyetsiz borsalar (DEX) veya Web3 oyunları oluşturuyor olun, sürtünmesiz bir cüzdan bağlantısı ve gaz açısından optimize edilmiş işlemler sağlıyoruz.",
+      "features": [
+        "Web3 Cüzdan Bağlantısı",
+        "Akıllı Sözleşme Entegrasyonu",
+        "Merkeziyetsiz Depolama (IPFS)",
+        "Token Kapı Geçişi ve Kimlik Doğrulama",
+        "DAO Yönetişim Entegrasyonu",
+        "Çapraz Zincir Desteği"
+      ],
+      "benefits": [
+        "Sıfır Kesinti Mimarisi",
+        "Tam Kullanıcı Gizliliği ve Anonimlik",
+        "Sansür Direnci",
+        "Güvene Dayalı Olmayan Eşler Arası İşlemler",
+        "Küresel Finansal Erişilebilirlik"
+      ],
+      "content": {
+        "process": [
+          { "title": "Tokenomik ve Mimari", "description": "Ekonomik modeli, blokzincir ağını ve sistem mimarisini tanımlama." },
+          { "title": "Akıllı Sözleşme Geliştirme", "description": "Temel merkeziyetsiz mantığı yazma ve titizlikle denetleme." },
+          { "title": "Ön Uç Web3 Entegrasyonu", "description": "Ethers.js aracılığıyla blokzinciri ile doğrudan etkileşime giren React/Next.js arayüzleri oluşturma." },
+          { "title": "Testnet Dağıtımı", "description": "Kusursuz yürütmeyi sağlamak için dApp'i Goerli veya Mumbai test ağlarında çalıştırma." },
+          { "title": "Ana Ağ Lansmanı", "description": "Sözleşmeleri canlı blokzincirine dağıtma ve gaz kullanımını izleme." }
+        ],
+        "technologies": [
+          "React ve Next.js",
+          "Web3.js ve Ethers.js",
+          "Solidity ve Rust",
+          "The Graph",
+          "IPFS / Arweave",
+          "Hardhat / Foundry"
+        ],
+        "faq": [
+          { "question": "Normal bir web uygulaması ile bir dApp arasındaki fark nedir?", "answer": "Normal bir web uygulaması, tek bir şirketin sahip olduğu merkezi bir veritabanına ve sunucuya dayanır. Bir dApp, arka uç olarak bir blokzincirindeki merkeziyetsiz akıllı sözleşmeleri kullanır; bu, verilerin değiştirilemez, halka açık olduğu ve tek bir varlık tarafından kontrol edilmediği anlamına gelir." },
+          { "question": "Kullanıcıların bir dApp kullanmak için kripto paraya ihtiyacı var mı?", "answer": "Geleneksel olarak evet, kullanıcıların ağ 'gaz' ücretlerini ödemek için bir Web3 cüzdanına (MetaMask gibi) ve kriptoya ihtiyacı vardır. Ancak, bu ücretleri sübvanse etmek için meta işlemler ve Hesap Soyutlama (Account Abstraction) uygulayarak kullanıcılarınıza gazsız bir deneyim sağlayabiliriz." }
+        ]
+      },
+      "metaTitle": "dApp Geliştirme Şirketi | Web3 ve Merkeziyetsiz Uygulamalar",
+      "metaDescription": "Güvenli, ölçeklenebilir Merkeziyetsiz Uygulamalar (dApp'ler) oluşturun. Yenilikçi blokzincir çözümleri için akıllı sözleşmeleri ve Web3 cüzdanlarını entegre ediyoruz."
+    },
+    "de": {
+      "name": "dApp-Entwicklung",
+      "shortDescription": "Erstellen Sie dezentrale Anwendungen, die auf der Blockchain laufen.",
+      "fullDescription": "Stören Sie traditionelle Geschäftsmodelle mit dezentralen Anwendungen (dApps) der nächsten Generation. Im Gegensatz zu herkömmlichen Web-Apps, die von zentralisierten Servern betrieben werden, laufen dApps in Peer-to-Peer-Netzwerken und führen Logik über unveränderliche Smart Contracts aus. Wir bieten End-to-End-dApp-Entwicklungsdienste, die ein sicheres Smart-Contract-Backend in Netzwerken wie Ethereum, Solana oder Polygon mit einem eleganten, benutzerfreundlichen Web3-Frontend kombinieren. Unabhängig davon, ob Sie DeFi-Protokolle, dezentrale Börsen (DEX) oder Web3-Spiele entwickeln, sorgen wir für eine reibungslose Wallet-Verbindung und gasoptimierte Transaktionen.",
+      "features": [
+        "Web3-Wallet-Verbindung",
+        "Smart-Contract-Integration",
+        "Dezentrale Speicherung (IPFS)",
+        "Token-Gating & Authentifizierung",
+        "DAO-Governance-Integration",
+        "Cross-Chain-Unterstützung"
+      ],
+      "benefits": [
+        "Architektur ohne Ausfallzeiten",
+        "Vollständige Privatsphäre & Anonymität der Benutzer",
+        "Zensurresistenz",
+        "Vertrauenslose Peer-to-Peer-Transaktionen",
+        "Globale finanzielle Zugänglichkeit"
+      ],
+      "content": {
+        "process": [
+          { "title": "Tokenomics & Architektur", "description": "Definition des Wirtschaftsmodells, des Blockchain-Netzwerks und der Systemarchitektur." },
+          { "title": "Smart-Contract-Entwicklung", "description": "Schreiben und strenges Prüfen der zentralen dezentralen Logik." },
+          { "title": "Frontend Web3-Integration", "description": "Erstellung von React/Next.js-Schnittstellen, die über Ethers.js direkt mit der Blockchain interagieren." },
+          { "title": "Testnet-Bereitstellung", "description": "Ausführung der dApp in Goerli- oder Mumbai-Testnetzwerken, um eine fehlerfreie Ausführung sicherzustellen." },
+          { "title": "Mainnet-Start", "description": "Bereitstellung von Verträgen in der Live-Blockchain und Überwachung des Gasverbrauchs." }
+        ],
+        "technologies": [
+          "React & Next.js",
+          "Web3.js & Ethers.js",
+          "Solidity & Rust",
+          "The Graph",
+          "IPFS / Arweave",
+          "Hardhat / Foundry"
+        ],
+        "faq": [
+          { "question": "Was ist der Unterschied zwischen einer normalen Web-App und einer dApp?", "answer": "Eine normale Web-App basiert auf einer zentralisierten Datenbank und einem Server im Besitz eines einzigen Unternehmens. Eine dApp nutzt dezentrale Smart Contracts auf einer Blockchain als Backend, was bedeutet, dass Daten unveränderlich, öffentlich und nicht von einer einzigen Einheit kontrolliert werden." },
+          { "question": "Benötigen Benutzer Kryptowährung, um eine dApp zu verwenden?", "answer": "Traditionell ja, Benutzer benötigen ein Web3-Wallet (wie MetaMask) und Krypto, um die Netzwerk-'Gas'-Gebühren zu bezahlen. Wir können jedoch Meta-Transaktionen und Account Abstraction implementieren, um diese Gebühren zu subventionieren und Ihren Benutzern ein gasfreies Erlebnis zu bieten." }
+        ]
+      },
+      "metaTitle": "dApp-Entwicklungsunternehmen | Web3 & Dezentrale Apps",
+      "metaDescription": "Entwickeln Sie sichere, skalierbare dezentrale Anwendungen (dApps). Wir integrieren Smart Contracts und Web3-Wallets für innovative Blockchain-Lösungen."
+    },
+    "ur": {
+      "name": "ڈی ایپ ڈیولپمنٹ",
+      "shortDescription": "وکندریقرت ایپلی کیشنز بنائیں جو بلاک چین پر چلتی ہیں۔",
+      "fullDescription": "اگلی نسل کی ڈی سینٹرلائزڈ ایپلیکیشنز (dApps) کے ساتھ روایتی کاروباری ماڈلز میں خلل ڈالیں۔ مرکزی سرورز کے ذریعے چلنے والی روایتی ویب ایپس کے برعکس، dApps پیر ٹو پیر نیٹ ورکس پر چلتے ہیں اور ناقابل تغیر سمارٹ معاہدوں کے ذریعے منطق کو انجام دیتے ہیں۔ ہم Ethereum، Solana، یا Polygon جیسے نیٹ ورکس پر ایک محفوظ سمارٹ کنٹریکٹ بیک اینڈ کو یکجا کر کے، Web3 فرنٹ اینڈ کے ساتھ شروع سے آخر تک dApp ڈیولپمنٹ سروسز فراہم کرتے ہیں۔ چاہے آپ DeFi پروٹوکول، وکندریقرت کے تبادلے (DEX)، یا Web3 گیمز بنا رہے ہوں، ہم پرس کے رگڑ سے پاک رابطے اور گیس کے موافق لین دین کو یقینی بناتے ہیں۔",
+      "features": [
+        "Web3 والیٹ کنکشن",
+        "اسمارٹ کنٹریکٹ انٹیگریشن",
+        "وکندریقرت سٹوریج (IPFS)",
+        "ٹوکن گیٹنگ اور تصدیق",
+        "DAO گورننس انٹیگریشن",
+        "کراس چین سپورٹ"
+      ],
+      "benefits": [
+        "زیرو ڈاؤن ٹائم آرکیٹیکچر",
+        "صارف کی مکمل رازداری اور گمنامی",
+        "سنسرشپ کے خلاف مزاحمت",
+        "ٹرسٹ لیس پیئر ٹو پیئر ٹرانزیکشنز",
+        "عالمی مالیاتی رسائی"
+      ],
+      "content": {
+        "process": [
+          { "title": "ٹوکنومکس اور آرکیٹیکچر", "description": "اقتصادی ماڈل، بلاک چین نیٹ ورک، اور سسٹم فن تعمیر کی وضاحت کرنا۔" },
+          { "title": "سمارٹ کنٹریکٹ ڈیولپمنٹ", "description": "مرکزی وکندریقرت منطق کا لکھنا اور سختی سے آڈٹ کرنا۔" },
+          { "title": "فرنٹ اینڈ ویب 3 انٹیگریشن", "description": "React/Next.js انٹرفیس بنانا جو Ethers.js کے ذریعے بلاک چین کے ساتھ براہ راست تعامل کرتے ہیں۔" },
+          { "title": "ٹیسٹ نیٹ کی تعیناتی", "description": "بے عیب عملدرآمد کو یقینی بنانے کے لیے Goerli یا ممبئی ٹیسٹ نیٹس پر dApp چلانا۔" },
+          { "title": "مین نیٹ لانچ", "description": "لائیو بلاک چین پر معاہدوں کی تعیناتی اور گیس کے استعمال کی نگرانی۔" }
+        ],
+        "technologies": [
+          "React & Next.js",
+          "Web3.js & Ethers.js",
+          "Solidity & Rust",
+          "The Graph",
+          "IPFS / Arweave",
+          "Hardhat / Foundry"
+        ],
+        "faq": [
+          { "question": "ایک عام ویب ایپ اور ڈی ایپ کے درمیان کیا فرق ہے؟", "answer": "ایک عام ویب ایپ ایک مرکزی ڈیٹا بیس اور ایک کمپنی کی ملکیت والے سرور پر انحصار کرتی ہے۔ ڈی ایپ اپنے بیک اینڈ کے طور پر ایک بلاک چین پر विकेंद्रीकृत سمارٹ معاہدوں کا استعمال کرتا ہے، جس کا مطلب ہے کہ ڈیٹا ناقابل تغیر، عوامی، اور کسی ایک ادارے کے زیر کنٹرول نہیں ہے۔" },
+          { "question": "کیا صارفین کو ڈی ایپ استعمال کرنے کے لیے کرپٹو کرنسی کی ضرورت ہے؟", "answer": "روایتی طور پر، ہاں، صارفین کو نیٹ ورک کی 'گیس' فیس ادا کرنے کے لیے Web3 والیٹ (جیسے میٹاماسک) اور کریپٹو کی ضرورت ہوتی ہے۔ تاہم، ہم ان فیسوں کو سبسڈی دینے کے لیے میٹا ٹرانزیکشنز اور اکاؤنٹ ایبسٹریکشن کو نافذ کر سکتے ہیں، جس سے آپ کے صارفین کو گیس کے بغیر تجربہ مل سکتا ہے۔" }
+        ]
+      },
+      "metaTitle": "dApp ڈیولپمنٹ کمپنی | ویب 3 اور غیر مرکزی ایپس",
+      "metaDescription": "محفوظ، اسکیل ایبل ڈی سینٹرلائزڈ ایپلیکیشنز (dApps) بنائیں۔ ہم جدید بلاک چین حل کے لیے سمارٹ معاہدوں، Web3 بٹوے، اور IPFS کو مربوط کرتے ہیں۔"
+    },
+    "ar": {
+      "name": "تطوير التطبيقات اللامركزية (dApps)",
+      "shortDescription": "بناء تطبيقات لامركزية تعمل على البلوكتشين.",
+      "fullDescription": "غيّر نماذج الأعمال التقليدية باستخدام التطبيقات اللامركزية (dApps) من الجيل التالي. على عكس تطبيقات الويب التقليدية التي تعمل بواسطة خوادم مركزية، تعمل التطبيقات اللامركزية على شبكات الند للند وتنفذ المنطق من خلال عقود ذكية غير قابلة للتغيير. نحن نقدم خدمات تطوير dApp شاملة، تجمع بين واجهة خلفية للعقود الذكية الآمنة على شبكات مثل Ethereum أو Solana أو Polygon، مع واجهة أمامية Web3 أنيقة وسهلة الاستخدام. سواء كنت تبني بروتوكولات DeFi أو بورصات لامركزية (DEX) أو ألعاب Web3، فإننا نضمن اتصال محفظة سلس ومعاملات محسّنة للغاز.",
+      "features": [
+        "اتصال محفظة Web3",
+        "تكامل العقود الذكية",
+        "التخزين اللامركزي (IPFS)",
+        "التحكم في الوصول بالرموز والمصادقة",
+        "تكامل حوكمة DAO",
+        "دعم عبر السلاسل (Cross-Chain)"
+      ],
+      "benefits": [
+        "بنية بدون وقت توقف (Zero Downtime)",
+        "خصوصية كاملة للمستخدم وعدم الكشف عن هويته",
+        "مقاومة الرقابة",
+        "معاملات نظير إلى نظير بدون ثقة (Trustless)",
+        "إمكانية الوصول المالي العالمي"
+      ],
+      "content": {
+        "process": [
+          { "title": "الاقتصاد الرمزي (Tokenomics) والبنية", "description": "تحديد النموذج الاقتصادي وشبكة البلوكتشين وبنية النظام." },
+          { "title": "تطوير العقود الذكية", "description": "كتابة المنطق اللامركزي الأساسي والتدقيق فيه بصرامة." },
+          { "title": "تكامل واجهة Web3 الأمامية", "description": "بناء واجهات React / Next.js تتفاعل مباشرة مع البلوكتشين عبر Ethers.js." },
+          { "title": "نشر Testnet", "description": "تشغيل dApp على شبكات اختبار Goerli أو Mumbai لضمان التنفيذ الخالي من العيوب." },
+          { "title": "إطلاق Mainnet", "description": "نشر العقود على البلوكتشين الحي ومراقبة استخدام الغاز." }
+        ],
+        "technologies": [
+          "React & Next.js",
+          "Web3.js & Ethers.js",
+          "Solidity & Rust",
+          "The Graph",
+          "IPFS / Arweave",
+          "Hardhat / Foundry"
+        ],
+        "faq": [
+          { "question": "ما الفرق بين تطبيق الويب العادي و dApp؟", "answer": "يعتمد تطبيق الويب العادي على قاعدة بيانات مركزية وخادم مملوك لشركة واحدة. يستخدم dApp عقودًا ذكية لامركزية على بلوكتشين كواجهة خلفية له، مما يعني أن البيانات غير قابلة للتغيير وعامة ولا تخضع لسيطرة أي كيان واحد." },
+          { "question": "هل يحتاج المستخدمون إلى عملة مشفرة لاستخدام dApp؟", "answer": "تقليديًا، نعم، يحتاج المستخدمون إلى محفظة Web3 (مثل MetaMask) وعملات مشفرة لدفع رسوم 'الغاز' للشبكة. ومع ذلك، يمكننا تنفيذ المعاملات الوصفية (meta-transactions) وتجريد الحساب (Account Abstraction) لدعم هذه الرسوم، وتوفير تجربة خالية من الغاز لمستخدميك." }
+        ]
+      },
+      "metaTitle": "شركة تطوير التطبيقات اللامركزية dApp | Web3",
+      "metaDescription": "قم ببناء تطبيقات لامركزية آمنة وقابلة للتطوير. نقوم بدمج العقود الذكية ومحافظ Web3 و IPFS لحلول بلوكتشين مبتكرة."
+    }
+  }
+}

@@ -1,0 +1,449 @@
+{
+  "booking-reservation-systems": {
+    "en": {
+      "name": "Booking & Reservation Systems",
+      "shortDescription": "Create scheduling and reservation platforms for any booking use case.",
+      "fullDescription": "Optimize your business operations with our custom Booking & Reservation Systems. Whether you run a medical clinic, a restaurant, a salon, or a rental service, managing appointments efficiently is crucial for growth. We design and build intuitive scheduling platforms featuring real-time availability sync, automated SMS/email reminders, and seamless payment gateway integrations. By reducing no-shows and eliminating double-bookings, our solutions save you time and provide a frictionless booking experience for your clients.",
+      "features": [
+        "Real-Time Availability",
+        "Online Booking Widget",
+        "Calendar Integration",
+        "Payment Processing",
+        "Automated Reminders",
+        "Resource Management",
+        "Staff Scheduling",
+        "Waitlist Management"
+      ],
+      "benefits": [
+        "Eliminate Double Bookings",
+        "Reduce No-Show Rates",
+        "24/7 Booking Availability",
+        "Improved Staff Efficiency",
+        "Enhanced Customer Satisfaction"
+      ],
+      "content": {
+        "process": [
+          { "title": "Requirements Gathering", "description": "Understanding your specific scheduling needs, resources, and staff logic." },
+          { "title": "System Architecture", "description": "Designing the database schema to handle timezone conversions and concurrency." },
+          { "title": "Development", "description": "Building the user booking flow and the administrative calendar dashboard." },
+          { "title": "Integrations", "description": "Connecting Google Calendar, Stripe, and SMS gateways like Twilio." },
+          { "title": "Testing & Deployment", "description": "Thorough load testing and final launch of the booking platform." }
+        ],
+        "technologies": [
+          "Next.js",
+          "PostgreSQL",
+          "Stripe",
+          "Google Calendar API",
+          "Twilio",
+          "React",
+          "Node.js"
+        ],
+        "faq": [
+          { "question": "Can the system sync with our staff's existing Google or Outlook calendars?", "answer": "Yes, we implement two-way calendar sync so that any bookings made on the platform automatically appear on your staff's personal calendars, and vice versa." },
+          { "question": "Do you support taking deposits during the booking process?", "answer": "Absolutely. We can integrate Stripe or PayPal to require full payments, partial deposits, or simply hold a credit card on file before confirming the reservation." }
+        ]
+      },
+      "metaTitle": "Custom Booking & Reservation Systems Development",
+      "metaDescription": "Develop scalable online scheduling and reservation software with real-time availability, calendar sync, and automated reminders for your business."
+    },
+    "tr": {
+      "name": "Rezervasyon Sistemleri",
+      "shortDescription": "Her türlü rezervasyon kullanım senaryosu için planlama ve rezervasyon platformları oluşturun.",
+      "fullDescription": "Özel Rezervasyon Sistemlerimiz ile iş operasyonlarınızı optimize edin. İster tıbbi bir klinik, restoran, salon veya kiralama hizmeti yönetiyor olun, randevuları verimli bir şekilde yönetmek büyüme için çok önemlidir. Gerçek zamanlı müsaitlik senkronizasyonu, otomatik SMS/e-posta hatırlatıcıları ve sorunsuz ödeme ağ geçidi entegrasyonları içeren sezgisel planlama platformları tasarlıyor ve geliştiriyoruz. Gelmemeleri azaltarak ve çifte rezervasyonları ortadan kaldırarak çözümlerimiz size zaman kazandırır ve müşterileriniz için sorunsuz bir rezervasyon deneyimi sunar.",
+      "features": [
+        "Gerçek Zamanlı Müsaitlik",
+        "Çevrimiçi Rezervasyon Aracı",
+        "Takvim Entegrasyonu",
+        "Ödeme İşlemleri",
+        "Otomatik Hatırlatıcılar",
+        "Kaynak Yönetimi",
+        "Personel Planlaması",
+        "Bekleme Listesi Yönetimi"
+      ],
+      "benefits": [
+        "Çifte Rezervasyonları Ortadan Kaldırın",
+        "Gelmemeleri Azaltın",
+        "7/24 Rezervasyon İmkanı",
+        "Artan Personel Verimliliği",
+        "Gelişmiş Müşteri Memnuniyeti"
+      ],
+      "content": {
+        "process": [
+          { "title": "Gereksinimlerin Toplanması", "description": "Belirli planlama ihtiyaçlarınızı, kaynaklarınızı ve personel mantığınızı anlama." },
+          { "title": "Sistem Mimarisi", "description": "Saat dilimi dönüşümlerini ve eşzamanlılığı işlemek için veritabanı şemasını tasarlama." },
+          { "title": "Geliştirme", "description": "Kullanıcı rezervasyon akışını ve yönetimsel takvim panelini oluşturma." },
+          { "title": "Entegrasyonlar", "description": "Google Takvim, Stripe ve Twilio gibi SMS ağ geçitlerini bağlama." },
+          { "title": "Test ve Dağıtım", "description": "Kapsamlı yük testi ve rezervasyon platformunun son lansmanı." }
+        ],
+        "technologies": [
+          "Next.js",
+          "PostgreSQL",
+          "Stripe",
+          "Google Takvim API'si",
+          "Twilio"
+        ],
+        "faq": [
+          { "question": "Sistem, personelimizin mevcut Google veya Outlook takvimleriyle senkronize olabilir mi?", "answer": "Evet, platformda yapılan tüm rezervasyonların otomatik olarak personelinizin kişisel takvimlerinde görünmesi ve bunun tersi için iki yönlü takvim senkronizasyonu uyguluyoruz." },
+          { "question": "Rezervasyon işlemi sırasında depozito almayı destekliyor musunuz?", "answer": "Kesinlikle. Rezervasyonu onaylamadan önce tam ödemeler, kısmi depozitolar gerektirmek veya yalnızca bir kredi kartını dosyada tutmak için Stripe veya PayPal'ı entegre edebiliriz." }
+        ]
+      },
+      "metaTitle": "Özel Planlama ve Rezervasyon Sistemleri Geliştirme",
+      "metaDescription": "İşletmeniz için gerçek zamanlı müsaitlik durumu, takvim senkronizasyonu ve otomatik hatırlatıcılarla ölçeklenebilir çevrimiçi planlama ve rezervasyon yazılımı geliştirin."
+    },
+    "de": {
+      "name": "Buchungs- & Reservierungssysteme",
+      "shortDescription": "Erstellen Sie Terminplanungs- und Reservierungsplattformen für jeden Buchungszweck.",
+      "fullDescription": "Optimieren Sie Ihre Geschäftsabläufe mit unseren individuellen Buchungs- und Reservierungssystemen. Egal, ob Sie eine medizinische Klinik, ein Restaurant, einen Salon oder einen Mietservice betreiben, die effiziente Verwaltung von Terminen ist entscheidend für das Wachstum. Wir entwerfen und entwickeln intuitive Planungsplattformen mit Echtzeit-Verfügbarkeitssynchronisierung, automatisierten SMS-/E-Mail-Erinnerungen und nahtlosen Zahlungs-Gateway-Integrationen. Durch die Reduzierung von Nichterscheinen und die Vermeidung von Doppelbuchungen sparen unsere Lösungen Ihnen Zeit und bieten Ihren Kunden ein reibungsloses Buchungserlebnis.",
+      "features": [
+        "Echtzeit-Verfügbarkeit",
+        "Online-Buchungs-Widget",
+        "Kalenderintegration",
+        "Zahlungsabwicklung",
+        "Automatisierte Erinnerungen",
+        "Ressourcenverwaltung",
+        "Personalplanung",
+        "Wartelistenverwaltung"
+      ],
+      "benefits": [
+        "Vermeidung von Doppelbuchungen",
+        "Reduzierung von Nichterscheinen",
+        "Rund um die Uhr Buchungsverfügbarkeit",
+        "Verbesserte Personaleffizienz",
+        "Erhöhte Kundenzufriedenheit"
+      ],
+      "content": {
+        "process": [
+          { "title": "Anforderungserfassung", "description": "Verstehen Ihrer spezifischen Planungsanforderungen, Ressourcen und Personallogik." },
+          { "title": "Systemarchitektur", "description": "Entwurf des Datenbankschemas zur Handhabung von Zeitzonenkonvertierungen und Nebenläufigkeit." },
+          { "title": "Entwicklung", "description": "Erstellung des Buchungsablaufs für Benutzer und des administrativen Kalender-Dashboards." },
+          { "title": "Integrationen", "description": "Anbindung von Google Kalender, Stripe und SMS-Gateways wie Twilio." },
+          { "title": "Tests & Bereitstellung", "description": "Gründliche Lasttests und finaler Start der Buchungsplattform." }
+        ],
+        "technologies": [
+          "Next.js",
+          "PostgreSQL",
+          "Stripe",
+          "Google Calendar API",
+          "Twilio"
+        ],
+        "faq": [
+          { "question": "Kann sich das System mit den bestehenden Google- oder Outlook-Kalendern unserer Mitarbeiter synchronisieren?", "answer": "Ja, wir implementieren eine Zwei-Wege-Kalendersynchronisation, sodass alle auf der Plattform vorgenommenen Buchungen automatisch in den persönlichen Kalendern Ihrer Mitarbeiter erscheinen und umgekehrt." },
+          { "question": "Unterstützen Sie die Annahme von Anzahlungen während des Buchungsvorgangs?", "answer": "Absolut. Wir können Stripe oder PayPal integrieren, um vollständige Zahlungen, Teilanzahlungen oder einfach die Hinterlegung einer Kreditkarte vor der Bestätigung der Reservierung zu verlangen." }
+        ]
+      },
+      "metaTitle": "Entwicklung individueller Buchungs- & Reservierungssysteme",
+      "metaDescription": "Entwickeln Sie skalierbare Online-Planungs- und Reservierungssoftware mit Echtzeitverfügbarkeit, Kalendersynchronisation und automatisierten Erinnerungen."
+    },
+    "ur": {
+      "name": "بکنگ اور ریزرویشن سسٹمز",
+      "shortDescription": "کسی بھی بکنگ کے استعمال کے معاملے کے لیے شیڈولنگ اور ریزرویشن پلیٹ فارم بنائیں۔",
+      "fullDescription": "ہمارے کسٹم بکنگ اور ریزرویشن سسٹمز کے ساتھ اپنے کاروباری کاموں کو بہتر بنائیں۔ چاہے آپ میڈیکل کلینک چلاتے ہوں، ریستوراں، سیلون، یا رینٹل سروس، ترقی کے لیے تقرریوں کا مؤثر طریقے سے انتظام کرنا بہت ضروری ہے۔ ہم بدیہی شیڈولنگ پلیٹ فارمز کو ڈیزائن اور بناتے ہیں جن میں ریئل ٹائم کی دستیابی کی مطابقت پذیری، خودکار SMS/ای میل یاددہانی، اور بغیر کسی رکاوٹ کے ادائیگی کے گیٹ وے انضمام کی خصوصیت ہوتی ہے۔ نو شوز کو کم کرکے اور ڈبل بکنگ کو ختم کرکے، ہمارے حل آپ کا وقت بچاتے ہیں اور آپ کے کلائنٹس کو بغیر کسی رگڑ کے بکنگ کا تجربہ فراہم کرتے ہیں۔",
+      "features": [
+        "ریئل ٹائم دستیابی",
+        "آن لائن بکنگ ویجیٹ",
+        "کیلنڈر انٹیگریشن",
+        "ادائیگی کی کارروائی",
+        "خودکار یاد دہانیاں",
+        "وسائل کے انتظام",
+        "اسٹاف کا شیڈولنگ",
+        "انتظار کی فہرست کا انتظام"
+      ],
+      "benefits": [
+        "ڈبل بکنگ کا خاتمہ",
+        "نو شو ریٹس کو کم کرنا",
+        "24/7 بکنگ کی دستیابی",
+        "عملے کی کارکردگی میں بہتری",
+        "صارفین کے اطمینان میں اضافہ"
+      ],
+      "content": {
+        "process": [
+          { "title": "ضروریات جمع کرنا", "description": "آپ کی مخصوص شیڈولنگ کی ضروریات، وسائل، اور عملے کی منطق کو سمجھنا۔" },
+          { "title": "سسٹم آرکیٹیکچر", "description": "ٹائم زون کی تبدیلیوں اور کنکرنسی کو سنبھالنے کے لیے ڈیٹا بیس اسکیما کو ڈیزائن کرنا۔" },
+          { "title": "ترقی", "description": "یوزر بکنگ فلو اور انتظامی کیلنڈر ڈیش بورڈ بنانا۔" },
+          { "title": "انضمام", "description": "گوگل کیلنڈر، اسٹرائپ، اور ٹویلیو جیسے ایس ایم ایس گیٹ ویز کو جوڑنا۔" },
+          { "title": "ٹیسٹنگ اور تعیناتی", "description": "مکمل لوڈ ٹیسٹنگ اور بکنگ پلیٹ فارم کا حتمی آغاز۔" }
+        ],
+        "technologies": [
+          "Next.js",
+          "PostgreSQL",
+          "Stripe",
+          "Google Calendar API",
+          "Twilio"
+        ],
+        "faq": [
+          { "question": "کیا سسٹم ہمارے عملے کے موجودہ گوگل یا آؤٹ لک کیلنڈرز کے ساتھ مطابقت پذیر ہو سکتا ہے؟", "answer": "ہاں، ہم دو طرفہ کیلنڈر کی مطابقت پذیری نافذ کرتے ہیں تاکہ پلیٹ فارم پر کی گئی کوئی بھی بکنگ آپ کے عملے کے ذاتی کیلنڈرز پر خود بخود ظاہر ہو جائے، اور اس کے برعکس۔" },
+          { "question": "کیا آپ بکنگ کے عمل کے دوران ڈپازٹ لینے کی حمایت کرتے ہیں؟", "answer": "بالکل۔ ریزرویشن کی تصدیق کرنے سے پہلے ہم مکمل ادائیگی، جزوی جمع، یا صرف فائل پر کریڈٹ کارڈ رکھنے کے لیے Stripe یا PayPal کو مربوط کر سکتے ہیں۔" }
+        ]
+      },
+      "metaTitle": "کسٹم بکنگ اور ریزرویشن سسٹمز کی ترقی",
+      "metaDescription": "اپنے کاروبار کے لیے ریئل ٹائم دستیابی، کیلنڈر کی مطابقت پذیری، اور خودکار یاد دہانیوں کے ساتھ اسکیل ایبل آن لائن شیڈولنگ اور ریزرویشن سافٹ ویئر تیار کریں۔"
+    },
+    "ar": {
+      "name": "أنظمة الحجز والمواعيد",
+      "shortDescription": "إنشاء منصات جدولة وحجز لأي حالة استخدام.",
+      "fullDescription": "قم بتحسين عمليات عملك من خلال أنظمة الحجز والمواعيد المخصصة لدينا. سواء كنت تدير عيادة طبية أو مطعمًا أو صالونًا أو خدمة تأجير، فإن إدارة المواعيد بكفاءة أمر بالغ الأهمية للنمو. نقوم بتصميم وبناء منصات جدولة بديهية تتميز بمزامنة التوفر في الوقت الفعلي، وتذكيرات تلقائية عبر الرسائل القصيرة/البريد الإلكتروني، وتكامل سلس مع بوابات الدفع. من خلال تقليل حالات عدم الحضور والقضاء على الحجوزات المزدوجة، توفر حلولنا وقتك وتوفر تجربة حجز سلسة لعملائك.",
+      "features": [
+        "التوفر في الوقت الفعلي",
+        "أداة الحجز عبر الإنترنت",
+        "تكامل التقويم",
+        "معالجة الدفع",
+        "تذكيرات آلية",
+        "إدارة الموارد",
+        "جدولة الموظفين",
+        "إدارة قائمة الانتظار"
+      ],
+      "benefits": [
+        "القضاء على الحجوزات المزدوجة",
+        "تقليل معدلات عدم الحضور",
+        "توفر الحجز على مدار الساعة طوال أيام الأسبوع",
+        "تحسين كفاءة الموظفين",
+        "تعزيز رضا العملاء"
+      ],
+      "content": {
+        "process": [
+          { "title": "جمع المتطلبات", "description": "فهم احتياجات الجدولة الخاصة بك، والموارد، ومنطق الموظفين." },
+          { "title": "بنية النظام", "description": "تصميم مخطط قاعدة البيانات للتعامل مع تحويلات المناطق الزمنية والتزامن." },
+          { "title": "التطوير", "description": "بناء تدفق حجز المستخدم ولوحة معلومات التقويم الإدارية." },
+          { "title": "التكاملات", "description": "ربط تقويم Google و Stripe وبوابات الرسائل القصيرة مثل Twilio." },
+          { "title": "الاختبار والنشر", "description": "اختبار تحميل شامل والإطلاق النهائي لمنصة الحجز." }
+        ],
+        "technologies": [
+          "Next.js",
+          "PostgreSQL",
+          "Stripe",
+          "Google Calendar API",
+          "Twilio"
+        ],
+        "faq": [
+          { "question": "هل يمكن للنظام المزامنة مع تقويمات Google أو Outlook الحالية لموظفينا؟", "answer": "نعم، نقوم بتنفيذ مزامنة تقويم ثنائية الاتجاه بحيث تظهر أي حجوزات تتم على النظام الأساسي تلقائيًا في التقويمات الشخصية لموظفيك، والعكس صحيح." },
+          { "question": "هل تدعمون أخذ الودائع أثناء عملية الحجز؟", "answer": "بالتأكيد. يمكننا دمج Stripe أو PayPal لطلب مدفوعات كاملة أو ودائع جزئية أو ببساطة الاحتفاظ ببطاقة ائتمان في الملف قبل تأكيد الحجز." }
+        ]
+      },
+      "metaTitle": "تطوير أنظمة الحجز والمواعيد المخصصة",
+      "metaDescription": "قم بتطوير برنامج جدولة وحجز عبر الإنترنت قابل للتطوير مع توفر في الوقت الفعلي ومزامنة التقويم وتذكيرات آلية لعملك."
+    }
+  },
+  "bubble-development": {
+    "en": {
+      "name": "Bubble Development",
+      "shortDescription": "Build powerful web applications with Bubble no-code platform.",
+      "fullDescription": "Accelerate your time-to-market with our expert Bubble Development services. Bubble is a leading no-code platform that allows for the rapid creation of robust web applications, SaaS products, and digital platforms without writing traditional code. Our certified Bubble developers specialize in designing complex database architectures, implementing secure user authentication, and integrating third-party APIs. We deliver highly responsive, scalable, and feature-rich applications in a fraction of the time required by traditional software development.",
+      "features": [
+        "Database Design",
+        "User Authentication",
+        "Payment Integration",
+        "API Connections",
+        "Responsive Design",
+        "Workflows & Logic",
+        "Third-Party Plugins",
+        "MVP Development"
+      ],
+      "benefits": [
+        "Faster Time-to-Market",
+        "Cost-Effective Development",
+        "Easy Iteration & Updates",
+        "Scalable Infrastructure",
+        "Seamless Third-Party Integrations"
+      ],
+      "content": {
+        "process": [
+          { "title": "Scoping & Wireframing", "description": "Defining the application logic and outlining the visual structure." },
+          { "title": "Database Architecture", "description": "Setting up optimized data types, relationships, and privacy rules within Bubble." },
+          { "title": "Workflow Building", "description": "Programming the visual logic, user actions, and backend API calls." },
+          { "title": "UI/UX Implementation", "description": "Designing fully responsive interfaces that look great on any device." },
+          { "title": "Testing & Launch", "description": "Quality assurance and transitioning the app from development to live production." }
+        ],
+        "technologies": [
+          "Bubble",
+          "Stripe",
+          "Zapier",
+          "API Connector",
+          "SendGrid",
+          "AWS S3"
+        ],
+        "faq": [
+          { "question": "Is Bubble scalable for a large number of users?", "answer": "Yes, Bubble runs on Amazon Web Services (AWS) and handles scaling automatically. It can comfortably support thousands of active users and complex database queries." },
+          { "question": "Can I export my code if I decide to leave Bubble?", "answer": "Bubble apps are hosted on the platform, so you cannot export traditional source code. However, you fully own and can easily export your database, API connections, and logic data if you ever wish to migrate." }
+        ]
+      },
+      "metaTitle": "Bubble Development Agency | Custom No-Code Web Apps",
+      "metaDescription": "Expert Bubble developers for rapid web app creation. We build scalable SaaS products, marketplaces, and MVPs using the Bubble no-code platform."
+    },
+    "tr": {
+      "name": "Bubble Geliştirme",
+      "shortDescription": "Bubble no-code (kodsuz) platformu ile güçlü web uygulamaları oluşturun.",
+      "fullDescription": "Uzman Bubble Geliştirme hizmetlerimizle pazara çıkış sürenizi hızlandırın. Bubble, geleneksel kod yazmadan güçlü web uygulamalarının, SaaS ürünlerinin ve dijital platformların hızla oluşturulmasına olanak tanıyan lider bir no-code (kodsuz) platformudur. Sertifikalı Bubble geliştiricilerimiz, karmaşık veritabanı mimarileri tasarlama, güvenli kullanıcı kimlik doğrulaması uygulama ve üçüncü taraf API'lerini entegre etme konularında uzmanlaşmıştır. Geleneksel yazılım geliştirmenin gerektirdiği sürenin çok daha kısa bir bölümünde son derece duyarlı, ölçeklenebilir ve özellik açısından zengin uygulamalar sunuyoruz.",
+      "features": [
+        "Veritabanı Tasarımı",
+        "Kullanıcı Kimlik Doğrulaması",
+        "Ödeme Entegrasyonu",
+        "API Bağlantıları",
+        "Duyarlı Tasarım",
+        "İş Akışları ve Mantık",
+        "Üçüncü Taraf Eklentileri",
+        "MVP Geliştirme"
+      ],
+      "benefits": [
+        "Pazara Daha Hızlı Çıkış",
+        "Maliyet Etkin Geliştirme",
+        "Kolay İterasyon ve Güncellemeler",
+        "Ölçeklenebilir Altyapı",
+        "Sorunsuz Üçüncü Taraf Entegrasyonları"
+      ],
+      "content": {
+        "process": [
+          { "title": "Kapsam Belirleme ve Tel Çerçeveleme", "description": "Uygulama mantığını tanımlama ve görsel yapının ana hatlarını çıkarma." },
+          { "title": "Veritabanı Mimarisi", "description": "Bubble içinde optimize edilmiş veri türleri, ilişkiler ve gizlilik kuralları ayarlama." },
+          { "title": "İş Akışı Oluşturma", "description": "Görsel mantığı, kullanıcı eylemlerini ve arka uç API çağrılarını programlama." },
+          { "title": "UI/UX Uygulaması", "description": "Her cihazda harika görünen tam duyarlı arayüzler tasarlama." },
+          { "title": "Test Etme ve Lansman", "description": "Kalite güvencesi ve uygulamayı geliştirmeden canlı üretime geçirme." }
+        ],
+        "technologies": [
+          "Bubble",
+          "Stripe",
+          "Zapier",
+          "API Connector",
+          "SendGrid"
+        ],
+        "faq": [
+          { "question": "Bubble çok sayıda kullanıcı için ölçeklenebilir mi?", "answer": "Evet, Bubble Amazon Web Services (AWS) üzerinde çalışır ve ölçeklendirmeyi otomatik olarak yönetir. Binlerce aktif kullanıcıyı ve karmaşık veritabanı sorgularını rahatlıkla destekleyebilir." },
+          { "question": "Bubble'dan ayrılmaya karar verirsem kodumu dışa aktarabilir miyim?", "answer": "Bubble uygulamaları platformda barındırılır, bu nedenle geleneksel kaynak kodunu dışa aktaramazsınız. Ancak, veritabanınıza tamamen siz sahipsiniz ve geçiş yapmak isterseniz verilerinizi, API bağlantılarınızı ve mantık verilerinizi kolayca dışa aktarabilirsiniz." }
+        ]
+      },
+      "metaTitle": "Bubble Geliştirme Ajansı | Özel No-Code Web Uygulamaları",
+      "metaDescription": "Hızlı web uygulaması oluşturmak için uzman Bubble geliştiricileri. Bubble no-code platformunu kullanarak ölçeklenebilir SaaS ürünleri ve MVP'ler oluşturuyoruz."
+    },
+    "de": {
+      "name": "Bubble-Entwicklung",
+      "shortDescription": "Erstellen Sie leistungsstarke Webanwendungen mit der No-Code-Plattform Bubble.",
+      "fullDescription": "Beschleunigen Sie Ihre Markteinführungszeit mit unseren fachkundigen Bubble-Entwicklungsdiensten. Bubble ist eine führende No-Code-Plattform, die die schnelle Erstellung robuster Webanwendungen, SaaS-Produkte und digitaler Plattformen ohne das Schreiben von herkömmlichem Code ermöglicht. Unsere zertifizierten Bubble-Entwickler sind auf die Entwicklung komplexer Datenbankarchitekturen, die Implementierung einer sicheren Benutzerauthentifizierung und die Integration von Drittanbieter-APIs spezialisiert. Wir liefern hochgradig reaktionsschnelle, skalierbare und funktionsreiche Anwendungen in einem Bruchteil der Zeit, die herkömmliche Softwareentwicklung benötigt.",
+      "features": [
+        "Datenbank-Design",
+        "Benutzerauthentifizierung",
+        "Zahlungsintegration",
+        "API-Verbindungen",
+        "Responsives Design",
+        "Workflows & Logik",
+        "Plugins von Drittanbietern",
+        "MVP-Entwicklung"
+      ],
+      "benefits": [
+        "Schnellere Markteinführung",
+        "Kostengünstige Entwicklung",
+        "Einfache Iteration & Updates",
+        "Skalierbare Infrastruktur",
+        "Nahtlose Integration von Drittanbietern"
+      ],
+      "content": {
+        "process": [
+          { "title": "Scoping & Wireframing", "description": "Definition der Anwendungslogik und Skizzierung der visuellen Struktur." },
+          { "title": "Datenbankarchitektur", "description": "Einrichtung optimierter Datentypen, Beziehungen und Datenschutzregeln innerhalb von Bubble." },
+          { "title": "Workflow-Erstellung", "description": "Programmierung der visuellen Logik, Benutzeraktionen und Backend-API-Aufrufe." },
+          { "title": "UI/UX-Implementierung", "description": "Entwicklung vollständig reaktionsfähiger Schnittstellen, die auf jedem Gerät großartig aussehen." },
+          { "title": "Testen & Start", "description": "Qualitätssicherung und Übergang der App von der Entwicklung in die Live-Produktion." }
+        ],
+        "technologies": [
+          "Bubble",
+          "Stripe",
+          "Zapier",
+          "API Connector",
+          "SendGrid"
+        ],
+        "faq": [
+          { "question": "Ist Bubble für eine große Anzahl von Benutzern skalierbar?", "answer": "Ja, Bubble läuft auf den Amazon Web Services (AWS) und handhabt die Skalierung automatisch. Es kann problemlos Tausende von aktiven Benutzern und komplexe Datenbankabfragen unterstützen." },
+          { "question": "Kann ich meinen Code exportieren, wenn ich mich entscheide, Bubble zu verlassen?", "answer": "Bubble-Apps werden auf der Plattform gehostet, sodass Sie keinen herkömmlichen Quellcode exportieren können. Sie besitzen jedoch Ihre Datenbank vollständig und können diese sowie API-Verbindungen problemlos exportieren, falls Sie jemals migrieren möchten." }
+        ]
+      },
+      "metaTitle": "Bubble-Entwicklungsagentur | Individuelle No-Code-Web-Apps",
+      "metaDescription": "Erfahrene Bubble-Entwickler für schnelle Web-App-Erstellung. Wir entwickeln skalierbare SaaS-Produkte und MVPs mit der No-Code-Plattform Bubble."
+    },
+    "ur": {
+      "name": "ببل ڈیولپمنٹ",
+      "shortDescription": "ببل نو کوڈ پلیٹ فارم کے ساتھ طاقتور ویب ایپلیکیشنز بنائیں۔",
+      "fullDescription": "ہماری ماہر ببل ڈیولپمنٹ سروسز کے ساتھ مارکیٹ میں آنے کے اپنے وقت کو تیز کریں۔ ببل ایک معروف نو کوڈ پلیٹ فارم ہے جو روایتی کوڈ لکھے بغیر مضبوط ویب ایپلیکیشنز، SaaS پروڈکٹس، اور ڈیجیٹل پلیٹ فارمز کی تیزی سے تخلیق کی اجازت دیتا ہے۔ ہمارے تصدیق شدہ ببل ڈیولپرز پیچیدہ ڈیٹا بیس آرکیٹیکچرز کو ڈیزائن کرنے، محفوظ صارف کی توثیق کو نافذ کرنے، اور تھرڈ پارٹی APIs کو مربوط کرنے میں مہارت رکھتے ہیں۔ ہم روایتی سافٹ ویئر کی ترقی کے لیے درکار وقت کے ایک حصے میں انتہائی ذمہ دار، قابل توسیع، اور خصوصیت سے بھرپور ایپلی کیشنز فراہم کرتے ہیں۔",
+      "features": [
+        "ڈیٹا بیس ڈیزائن",
+        "یوزر کی توثیق",
+        "ادائیگی کا انضمام",
+        "اے پی آئی کنکشنز",
+        "ذمہ دار ڈیزائن",
+        "ورک فلوز اور لاجک",
+        "تھرڈ پارٹی پلگ انز",
+        "ایم وی پی ڈیولپمنٹ"
+      ],
+      "benefits": [
+        "مارکیٹ کا تیز تر وقت",
+        "مؤثر لاگت والی ترقی",
+        "آسان تکرار اور اپ ڈیٹس",
+        "قابل توسیع انفراسٹرکچر",
+        "بغیر کسی رکاوٹ کے تھرڈ پارٹی انٹیگریشنز"
+      ],
+      "content": {
+        "process": [
+          { "title": "اسکوپنگ اور وائر فریمنگ", "description": "درخواست کی منطق کی وضاحت اور بصری ساخت کا خاکہ پیش کرنا۔" },
+          { "title": "ڈیٹا بیس آرکیٹیکچر", "description": "ببل کے اندر بہتر ڈیٹا کی اقسام، تعلقات، اور رازداری کے اصول ترتیب دینا۔" },
+          { "title": "ورک فلو بلڈنگ", "description": "بصری منطق، صارف کے اعمال، اور بیک اینڈ API کالز کی پروگرامنگ۔" },
+          { "title": "UI/UX کا نفاذ", "description": "مکمل طور پر جوابی انٹرفیس ڈیزائن کرنا جو کسی بھی ڈیوائس پر بہت اچھے لگتے ہیں۔" },
+          { "title": "ٹیسٹنگ اور لانچ", "description": "کوالٹی اشورینس اور ایپ کو ترقی سے لائیو پروڈکشن میں منتقل کرنا۔" }
+        ],
+        "technologies": [
+          "Bubble",
+          "Stripe",
+          "Zapier",
+          "API Connector",
+          "SendGrid"
+        ],
+        "faq": [
+          { "question": "کیا ببل صارفین کی ایک بڑی تعداد کے لیے قابل توسیع ہے؟", "answer": "ہاں، ببل ایمیزون ویب سروسز (AWS) پر چلتا ہے اور خودکار طور پر اسکیلنگ کو ہینڈل کرتا ہے۔ یہ ہزاروں فعال صارفین اور پیچیدہ ڈیٹا بیس کے سوالات کو آرام سے سپورٹ کر سکتا ہے۔" },
+          { "question": "اگر میں ببل چھوڑنے کا فیصلہ کروں تو کیا میں اپنا کوڈ برآمد کر سکتا ہوں؟", "answer": "ببل ایپس پلیٹ فارم پر ہوسٹ کی جاتی ہیں، اس لیے آپ روایتی سورس کوڈ برآمد نہیں کر سکتے۔ تاہم، آپ پوری طرح سے مالک ہیں اور اگر آپ کبھی ہجرت کرنا چاہتے ہیں تو آسانی سے اپنے ڈیٹا بیس، API کنکشنز اور منطقی ڈیٹا کو برآمد کر سکتے ہیں۔" }
+        ]
+      },
+      "metaTitle": "ببل ڈیولپمنٹ ایجنسی | کسٹم نو کوڈ ویب ایپس",
+      "metaDescription": "تیز ویب ایپ بنانے کے لیے ماہر ببل ڈیولپرز۔ ہم Bubble نو کوڈ پلیٹ فارم کا استعمال کرتے ہوئے اسکیل ایبل SaaS پروڈکٹس اور MVPs بناتے ہیں۔"
+    },
+    "ar": {
+      "name": "تطوير Bubble",
+      "shortDescription": "بناء تطبيقات ويب قوية باستخدام منصة Bubble الخالية من التعليمات البرمجية.",
+      "fullDescription": "سرّع وقت وصولك إلى السوق من خلال خدمات تطوير Bubble المتخصصة لدينا. Bubble هي منصة رائدة بدون تعليمات برمجية تسمح بالإنشاء السريع لتطبيقات الويب القوية ومنتجات SaaS والمنصات الرقمية دون كتابة تعليمات برمجية تقليدية. يتخصص مطورو Bubble المعتمدون لدينا في تصميم بنى قواعد بيانات معقدة، وتنفيذ مصادقة مستخدم آمنة، ودمج واجهات برمجة تطبيقات (APIs) لجهات خارجية. نحن نقدم تطبيقات سريعة الاستجابة وقابلة للتطوير وغنية بالميزات في جزء بسيط من الوقت الذي يتطلبه تطوير البرامج التقليدية.",
+      "features": [
+        "تصميم قواعد البيانات",
+        "مصادقة المستخدم",
+        "تكامل الدفع",
+        "اتصالات API",
+        "تصميم متجاوب",
+        "سير العمل والمنطق",
+        "إضافات الجهات الخارجية",
+        "تطوير MVP"
+      ],
+      "benefits": [
+        "وقت وصول أسرع إلى السوق",
+        "تطوير فعال من حيث التكلفة",
+        "تكرار وتحديثات سهلة",
+        "بنية تحتية قابلة للتطوير",
+        "تكامل سلس مع الجهات الخارجية"
+      ],
+      "content": {
+        "process": [
+          { "title": "تحديد النطاق وإنشاء الإطارات الشبكية", "description": "تحديد منطق التطبيق وتخطيط الهيكل المرئي." },
+          { "title": "بنية قاعدة البيانات", "description": "إعداد أنواع بيانات وعلاقات وقواعد خصوصية محسّنة داخل Bubble." },
+          { "title": "بناء سير العمل", "description": "برمجة المنطق المرئي وإجراءات المستخدم واستدعاءات واجهة برمجة تطبيقات الواجهة الخلفية." },
+          { "title": "تنفيذ UI/UX", "description": "تصميم واجهات سريعة الاستجابة تبدو رائعة على أي جهاز." },
+          { "title": "الاختبار والإطلاق", "description": "ضمان الجودة ونقل التطبيق من مرحلة التطوير إلى مرحلة الإنتاج المباشر." }
+        ],
+        "technologies": [
+          "Bubble",
+          "Stripe",
+          "Zapier",
+          "API Connector",
+          "SendGrid"
+        ],
+        "faq": [
+          { "question": "هل منصة Bubble قابلة للتطوير لعدد كبير من المستخدمين؟", "answer": "نعم، تعمل منصة Bubble على Amazon Web Services (AWS) وتتعامل مع التوسع تلقائيًا. يمكنها دعم آلاف المستخدمين النشطين واستعلامات قواعد البيانات المعقدة بشكل مريح." },
+          { "question": "هل يمكنني تصدير الرمز الخاص بي إذا قررت مغادرة Bubble؟", "answer": "تتم استضافة تطبيقات Bubble على النظام الأساسي، لذلك لا يمكنك تصدير الكود المصدري التقليدي. ومع ذلك، فأنت تمتلك قاعدة البيانات الخاصة بك ويمكنك بسهولة تصديرها واتصالات واجهة برمجة التطبيقات (API) وبيانات المنطق إذا كنت ترغب في الترحيل." }
+        ]
+      },
+      "metaTitle": "وكالة تطوير Bubble | تطبيقات ويب مخصصة بدون تعليمات برمجية",
+      "metaDescription": "مطورو Bubble خبراء لإنشاء تطبيقات ويب سريعة. نقوم ببناء منتجات SaaS قابلة للتطوير باستخدام منصة Bubble بدون تعليمات برمجية."
+    }
+  }
+}

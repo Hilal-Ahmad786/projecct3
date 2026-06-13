@@ -1,0 +1,278 @@
+{
+  "slug": "crm-development",
+  "en": {
+    "name": "CRM Development",
+    "shortDescription": "Build a custom CRM that fits your exact sales process — lead and pipeline management, automation, reporting, and integrations, with full data ownership and no per-seat licensing fees.",
+    "fullDescription": "Off-the-shelf CRMs force your team to work the vendor's way, and the per-seat fees keep climbing as you grow. We build custom CRM systems shaped around how you actually sell: your pipeline stages, your lead-scoring rules, your reporting, your integrations. From contact and opportunity tracking to email sync, task automation, and dashboards your managers will actually use, we deliver a system your team adopts instead of resents. We're honest about build-versus-buy: if Salesforce or HubSpot genuinely fits, we'll say so. Custom pays off when your process is a real differentiator, when licensing for many users gets expensive, or when you need deep integration and data ownership that a SaaS box won't give you. The result is a CRM you own outright, that scales without rising per-user costs.",
+    "features": [
+      "Contact & Lead Management",
+      "Custom Sales Pipeline & Stages",
+      "Workflow & Task Automation",
+      "Email Integration & Tracking",
+      "Custom Fields & Reporting",
+      "Role-Based Access Control",
+      "Third-Party Integrations (Twilio, SendGrid, Zapier)",
+      "Mobile & Web Access"
+    ],
+    "benefits": [
+      "Fits your exact sales process, not a template",
+      "No per-seat licensing fees as you scale",
+      "Full ownership of your customer data",
+      "Deep integration with your existing tools",
+      "Higher adoption because it works the way your team does",
+      "A scalable architecture you control"
+    ],
+    "metaTitle": "Custom CRM Development | PakSoft",
+    "metaDescription": "Build a custom CRM tailored to your sales process: pipeline management, automation, reporting, and integrations. Own your data, skip per-seat fees. Get an estimate.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Process Discovery", "description": "We map how your team actually sells — pipeline stages, handoffs, data they need at each step — rather than imposing a generic flow. This is also where we honestly assess whether a custom build beats an off-the-shelf CRM for your case." },
+        { "step": 2, "title": "Data Model & Integrations Plan", "description": "We design the data model around your contacts, deals, and activities, and map every system the CRM must talk to — email, telephony, billing, marketing. Getting integrations scoped early prevents the nasty surprises that derail CRM projects." },
+        { "step": 3, "title": "Core CRM Build", "description": "We build lead and pipeline management, activity tracking, and custom fields with a clean, fast interface. Speed and usability are priorities, because a CRM your team avoids is worse than no CRM at all." },
+        { "step": 4, "title": "Automation & Reporting", "description": "We add the automations that remove busywork — assignment rules, follow-up reminders, stage triggers — and dashboards that surface the numbers your managers care about. Reports are built around your real KPIs, not vendor defaults." },
+        { "step": 5, "title": "Integration & Data Migration", "description": "We connect email, calendar, phone, and your other tools, then migrate existing customer data carefully with validation and de-duplication. A clean migration is half the battle in CRM adoption." },
+        { "step": 6, "title": "Rollout, Training & Iteration", "description": "We roll out with training and gather feedback from the people using it daily. The first weeks reveal what to refine, and we iterate so the CRM becomes the tool your team reaches for, not one they route around." }
+      ],
+      "faq": [
+        { "question": "Should I build a custom CRM or buy Salesforce/HubSpot?", "answer": "Buy when your sales process is fairly standard and you value being up and running in days — off-the-shelf CRMs are mature and feature-rich. Build custom when your process is a genuine differentiator, when per-seat licensing for a large team becomes a major recurring cost, or when you need deep integration and data ownership a SaaS product won't provide. We'll assess your situation honestly rather than push the option that bills more." },
+        { "question": "How much does a custom CRM cost versus a SaaS subscription?", "answer": "A custom CRM is a larger upfront investment but has no per-seat fees, so the economics flip as your team grows. A SaaS CRM at, say, $50–150 per user per month gets expensive fast across dozens or hundreds of users. We help you model the break-even: custom often wins on total cost of ownership for larger teams or long time horizons, while SaaS wins for small teams who need to start immediately." },
+        { "question": "How long does it take to build a CRM?", "answer": "A focused CRM covering core pipeline, contacts, and basic automation typically takes 8–16 weeks. Complex requirements — multiple teams, heavy integrations, custom reporting, telephony — extend that to several months. The biggest variables are how many external systems it must integrate with and how much existing data needs migrating and cleaning." },
+        { "question": "Can it integrate with our email, phone, and other tools?", "answer": "Yes — integration is usually the whole point of a custom CRM. We connect email (Gmail/Outlook), calendars, telephony via Twilio, transactional email via SendGrid, and your billing or marketing tools, either through their APIs or platforms like Zapier. Two-way sync and reliable error handling are designed in, so data stays consistent across systems instead of drifting." },
+        { "question": "What about migrating data from our current system?", "answer": "We export from your existing CRM or spreadsheets, map fields to the new model, then validate, de-duplicate, and clean the data before import. Migration is where many CRM rollouts stumble, so we treat it as a first-class task with test imports and a rollback plan, not a last-minute scramble. Clean, trustworthy data is essential for adoption." },
+        { "question": "Will our team actually use it?", "answer": "Adoption is the real measure of a CRM's success, and it hinges on speed, simplicity, and fit. Because we build around your actual workflow rather than forcing a generic one, the CRM removes friction instead of adding it. We involve end users early, prioritize a fast and clean interface, and provide training — a CRM your reps route around is wasted money." },
+        { "question": "Can the CRM grow with our business?", "answer": "Yes — we build on a scalable architecture so adding users, teams, pipelines, or new modules later is straightforward. Because there are no per-seat fees, scaling to more users doesn't increase licensing cost. As your process evolves, the CRM can evolve with it since you own the code, rather than waiting for a vendor's roadmap." },
+        { "question": "Who owns the data and the system?", "answer": "You do, completely. The code, the database, and all customer data are yours, hosted wherever you choose. That means no vendor lock-in, no risk of price hikes on data you depend on, and full control over privacy and compliance. For businesses where customer data is a core asset, that ownership is often the deciding factor for going custom." }
+      ],
+      "technologies": [
+        { "icon": "nextdotjs", "name": "Next.js" },
+        { "icon": "nodedotjs", "name": "Node.js" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "redis", "name": "Redis" },
+        { "icon": "twilio", "name": "Twilio" },
+        { "icon": "sendgrid", "name": "SendGrid" },
+        { "icon": "prisma", "name": "Prisma" },
+        { "icon": "zapier", "name": "Zapier" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "CRM Geliştirme",
+    "shortDescription": "Tam olarak satış sürecinize uyan özel bir CRM kurun — lead ve pipeline yönetimi, otomasyon, raporlama ve entegrasyonlar, tam veri sahipliği ve koltuk başına lisans ücreti olmadan.",
+    "fullDescription": "Hazır CRM'ler ekibinizi satıcının yöntemiyle çalışmaya zorlar ve büyüdükçe koltuk başına ücretler tırmanmaya devam eder. Gerçekte nasıl sattığınıza göre şekillenen özel CRM sistemleri kurarız: sizin pipeline aşamalarınız, lead puanlama kurallarınız, raporlamanız, entegrasyonlarınız. Kişi ve fırsat takibinden e-posta senkronizasyonuna, görev otomasyonuna ve yöneticilerinizin gerçekten kullanacağı panolara kadar, ekibinizin direnç gösterdiği değil benimsediği bir sistem sunarız. Yap-veya-satın al konusunda dürüstüz: Salesforce veya HubSpot gerçekten uyuyorsa söyleriz. Özel CRM; süreciniz gerçek bir farklılaştırıcıysa, çok kullanıcı için lisanslama pahalılaştığında veya bir SaaS kutusunun vermeyeceği derin entegrasyon ve veri sahipliği gerektiğinde işe yarar. Sonuç, tamamen sahip olduğunuz, kullanıcı başına artan maliyet olmadan ölçeklenen bir CRM'dir.",
+    "features": [
+      "Kişi ve Lead Yönetimi",
+      "Özel Satış Pipeline'ı ve Aşamaları",
+      "İş Akışı ve Görev Otomasyonu",
+      "E-posta Entegrasyonu ve Takibi",
+      "Özel Alanlar ve Raporlama",
+      "Rol Tabanlı Erişim Kontrolü",
+      "Üçüncü Taraf Entegrasyonları (Twilio, SendGrid, Zapier)",
+      "Mobil ve Web Erişimi"
+    ],
+    "benefits": [
+      "Şablona değil, tam satış sürecinize uyar",
+      "Ölçeklendikçe koltuk başına lisans ücreti yok",
+      "Müşteri verinizin tam sahipliği",
+      "Mevcut araçlarınızla derin entegrasyon",
+      "Ekibinizin çalışma şekline uyduğu için daha yüksek benimseme",
+      "Kontrol ettiğiniz ölçeklenebilir bir mimari"
+    ],
+    "metaTitle": "Özel CRM Geliştirme | PakSoft",
+    "metaDescription": "Satış sürecinize özel bir CRM kurun: pipeline yönetimi, otomasyon, raporlama ve entegrasyonlar. Verinize sahip olun, koltuk ücretlerini atlayın. Teklif alın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Süreç Keşfi", "description": "Genel bir akış dayatmak yerine ekibinizin gerçekte nasıl sattığını haritalarız — pipeline aşamaları, devirler, her adımda ihtiyaç duydukları veri. Ayrıca burada özel bir yapımın sizin durumunuz için hazır bir CRM'i geçip geçmediğini dürüstçe değerlendiririz." },
+        { "step": 2, "title": "Veri Modeli ve Entegrasyon Planı", "description": "Veri modelini kişileriniz, anlaşmalarınız ve etkinlikleriniz etrafında tasarlar ve CRM'in konuşması gereken her sistemi — e-posta, telefon, faturalama, pazarlama — haritalarız. Entegrasyonların erken kapsamlanması, CRM projelerini raydan çıkaran kötü sürprizleri önler." },
+        { "step": 3, "title": "Ana CRM Yapımı", "description": "Lead ve pipeline yönetimini, etkinlik takibini ve özel alanları temiz, hızlı bir arayüzle kurarız. Hız ve kullanılabilirlik önceliktir, çünkü ekibinizin kaçındığı bir CRM, hiç CRM olmamasından kötüdür." },
+        { "step": 4, "title": "Otomasyon ve Raporlama", "description": "Angaryayı kaldıran otomasyonları — atama kuralları, takip hatırlatıcıları, aşama tetikleyicileri — ve yöneticilerinizin önemsediği sayıları öne çıkaran panoları ekleriz. Raporlar satıcı varsayılanlarına değil gerçek KPI'larınıza göre kurulur." },
+        { "step": 5, "title": "Entegrasyon ve Veri Taşıma", "description": "E-posta, takvim, telefon ve diğer araçlarınızı bağlar, ardından mevcut müşteri verisini doğrulama ve tekilleştirme ile dikkatle taşırız. Temiz bir geçiş, CRM benimsemesinde savaşın yarısıdır." },
+        { "step": 6, "title": "Devreye Alma, Eğitim ve Yineleme", "description": "Eğitimle devreye alır ve onu her gün kullanan kişilerden geri bildirim toplarız. İlk haftalar neyin iyileştirileceğini gösterir ve yineleriz; böylece CRM ekibinizin etrafından dolaştığı değil, uzandığı araç olur." }
+      ],
+      "faq": [
+        { "question": "Özel CRM mi yapmalıyım yoksa Salesforce/HubSpot mu almalıyım?", "answer": "Satış süreciniz oldukça standartsa ve günler içinde çalışır olmaya değer veriyorsanız satın alın — hazır CRM'ler olgun ve özellik zengini. Süreciniz gerçek bir farklılaştırıcıysa, büyük ekip için koltuk başına lisanslama önemli bir tekrarlayan maliyet hâline geliyorsa veya bir SaaS ürününün sağlamayacağı derin entegrasyon ve veri sahipliği gerekiyorsa özel yapın. Daha çok fatura kesen seçeneği dayatmak yerine durumunuzu dürüstçe değerlendiririz." },
+        { "question": "Özel CRM, SaaS aboneliğine kıyasla ne kadara mal olur?", "answer": "Özel CRM daha büyük bir ön yatırımdır ama koltuk başına ücreti yoktur; bu yüzden ekibiniz büyüdükçe ekonomi tersine döner. Kullanıcı başına ayda 50–150 dolarlık bir SaaS CRM, onlarca veya yüzlerce kullanıcı genelinde hızla pahalılaşır. Başa baş noktasını modellemenize yardımcı oluruz: büyük ekipler veya uzun zaman ufukları için toplam sahip olma maliyetinde özel genellikle kazanır, hemen başlaması gereken küçük ekipler için ise SaaS kazanır." },
+        { "question": "Bir CRM kurmak ne kadar sürer?", "answer": "Temel pipeline, kişiler ve temel otomasyonu kapsayan odaklı bir CRM genellikle 8–16 hafta sürer. Karmaşık gereksinimler — birden çok ekip, ağır entegrasyonlar, özel raporlama, telefon — bunu birkaç aya uzatır. En büyük değişkenler kaç dış sistemle entegre olması gerektiği ve ne kadar mevcut verinin taşınıp temizlenmesi gerektiğidir." },
+        { "question": "E-posta, telefon ve diğer araçlarımızla entegre olabilir mi?", "answer": "Evet — entegrasyon genellikle özel bir CRM'in tüm amacıdır. E-postayı (Gmail/Outlook), takvimleri, Twilio ile telefonu, SendGrid ile işlemsel e-postayı ve faturalama veya pazarlama araçlarınızı, ya API'leri ya da Zapier gibi platformlar üzerinden bağlarız. İki yönlü senkronizasyon ve güvenilir hata yönetimi tasarıma dahildir; böylece veri sistemler arasında kayıp gitmeden tutarlı kalır." },
+        { "question": "Mevcut sistemimizden veri taşıma ne durumda?", "answer": "Mevcut CRM'inizden veya tablolarınızdan dışa aktarır, alanları yeni modele eşler, ardından içe aktarmadan önce veriyi doğrular, tekilleştirir ve temizleriz. Geçiş, birçok CRM devreye almasının takıldığı yerdir; bu yüzden onu test içe aktarmaları ve bir geri alma planıyla birinci sınıf bir görev olarak ele alırız, son dakika telaşı olarak değil. Temiz, güvenilir veri benimseme için elzemdir." },
+        { "question": "Ekibimiz onu gerçekten kullanacak mı?", "answer": "Benimseme bir CRM'in gerçek başarı ölçüsüdür ve hız, sadelik ve uyuma bağlıdır. Genel bir akışı dayatmak yerine gerçek iş akışınız etrafında kurduğumuz için, CRM sürtünmeyi artırmak yerine kaldırır. Son kullanıcıları erken dahil eder, hızlı ve temiz bir arayüzü önceliklendirir ve eğitim sağlarız — temsilcilerinizin etrafından dolaştığı bir CRM boşa harcanan paradır." },
+        { "question": "CRM işimizle birlikte büyüyebilir mi?", "answer": "Evet — ölçeklenebilir bir mimari üzerine kurarız; böylece sonradan kullanıcı, ekip, pipeline veya yeni modül eklemek kolaydır. Koltuk başına ücret olmadığı için daha fazla kullanıcıya ölçeklenmek lisans maliyetini artırmaz. Süreciniz geliştikçe, kodun sahibi siz olduğunuz için CRM de onunla birlikte gelişebilir; bir satıcının yol haritasını beklemeden." },
+        { "question": "Veriye ve sisteme kim sahip?", "answer": "Tamamen siz. Kod, veritabanı ve tüm müşteri verisi sizindir, seçtiğiniz yerde barındırılır. Bu, satıcıya bağımlılık olmaması, bağımlı olduğunuz veride fiyat artışı riski olmaması ve gizlilik ile uyumluluk üzerinde tam kontrol demektir. Müşteri verisinin temel bir varlık olduğu işletmeler için, bu sahiplik genellikle özele gitmenin belirleyici faktörüdür." }
+      ],
+      "technologies": [
+        { "icon": "nextdotjs", "name": "Next.js" },
+        { "icon": "nodedotjs", "name": "Node.js" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "redis", "name": "Redis" },
+        { "icon": "twilio", "name": "Twilio" },
+        { "icon": "sendgrid", "name": "SendGrid" },
+        { "icon": "prisma", "name": "Prisma" },
+        { "icon": "zapier", "name": "Zapier" }
+      ]
+    }
+  },
+  "de": {
+    "name": "CRM-Entwicklung",
+    "shortDescription": "Bauen Sie ein individuelles CRM, das genau zu Ihrem Vertriebsprozess passt — Lead- und Pipeline-Management, Automatisierung, Reporting und Integrationen, mit voller Datenhoheit und ohne Lizenzgebühren pro Platz.",
+    "fullDescription": "Standard-CRMs zwingen Ihr Team in die Logik des Anbieters, und die Gebühren pro Platz steigen mit dem Wachstum weiter. Wir bauen individuelle CRM-Systeme, geformt danach, wie Sie wirklich verkaufen: Ihre Pipeline-Stufen, Ihre Lead-Scoring-Regeln, Ihr Reporting, Ihre Integrationen. Von Kontakt- und Opportunity-Tracking über E-Mail-Sync und Aufgaben-Automatisierung bis zu Dashboards, die Ihre Manager wirklich nutzen, liefern wir ein System, das Ihr Team annimmt statt meidet. Wir sind ehrlich beim Make-or-Buy: Passt Salesforce oder HubSpot wirklich, sagen wir es. Individuell zahlt sich aus, wenn Ihr Prozess ein echtes Differenzierungsmerkmal ist, wenn Lizenzen für viele Nutzer teuer werden oder wenn Sie tiefe Integration und Datenhoheit brauchen, die eine SaaS-Box nicht gibt. Das Ergebnis ist ein CRM, das Ihnen ganz gehört und ohne steigende Pro-Nutzer-Kosten skaliert.",
+    "features": [
+      "Kontakt- & Lead-Management",
+      "Individuelle Sales-Pipeline & Stufen",
+      "Workflow- & Aufgaben-Automatisierung",
+      "E-Mail-Integration & -Tracking",
+      "Benutzerdefinierte Felder & Reporting",
+      "Rollenbasierte Zugriffskontrolle",
+      "Drittanbieter-Integrationen (Twilio, SendGrid, Zapier)",
+      "Mobil- & Web-Zugriff"
+    ],
+    "benefits": [
+      "Passt zu Ihrem exakten Vertriebsprozess, nicht zu einer Vorlage",
+      "Keine Lizenzgebühren pro Platz beim Skalieren",
+      "Volle Hoheit über Ihre Kundendaten",
+      "Tiefe Integration mit Ihren bestehenden Tools",
+      "Höhere Akzeptanz, weil es zur Arbeitsweise Ihres Teams passt",
+      "Eine skalierbare Architektur unter Ihrer Kontrolle"
+    ],
+    "metaTitle": "Individuelle CRM-Entwicklung | PakSoft",
+    "metaDescription": "Bauen Sie ein individuelles CRM für Ihren Vertriebsprozess: Pipeline-Management, Automatisierung, Reporting und Integrationen. Datenhoheit, keine Platzgebühren. Angebot.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Prozess-Discovery", "description": "Wir kartieren, wie Ihr Team wirklich verkauft — Pipeline-Stufen, Übergaben, benötigte Daten je Schritt — statt einen generischen Flow aufzuzwingen. Hier bewerten wir auch ehrlich, ob ein individueller Bau für Ihren Fall ein Standard-CRM schlägt." },
+        { "step": 2, "title": "Datenmodell & Integrationsplan", "description": "Wir gestalten das Datenmodell um Ihre Kontakte, Deals und Aktivitäten und kartieren jedes System, mit dem das CRM sprechen muss — E-Mail, Telefonie, Abrechnung, Marketing. Früh abgesteckte Integrationen verhindern die bösen Überraschungen, die CRM-Projekte entgleisen lassen." },
+        { "step": 3, "title": "Kern-CRM-Bau", "description": "Wir bauen Lead- und Pipeline-Management, Aktivitäts-Tracking und benutzerdefinierte Felder mit einer sauberen, schnellen Oberfläche. Tempo und Bedienbarkeit haben Priorität, denn ein CRM, das Ihr Team meidet, ist schlimmer als gar keins." },
+        { "step": 4, "title": "Automatisierung & Reporting", "description": "Wir ergänzen die Automatisierungen, die Fleißarbeit entfernen — Zuweisungsregeln, Follow-up-Erinnerungen, Stufen-Trigger — und Dashboards, die die Zahlen zeigen, die Ihren Managern wichtig sind. Reports bauen auf Ihren echten KPIs auf, nicht auf Anbieter-Defaults." },
+        { "step": 5, "title": "Integration & Datenmigration", "description": "Wir verbinden E-Mail, Kalender, Telefon und Ihre weiteren Tools und migrieren bestehende Kundendaten sorgfältig mit Validierung und Deduplizierung. Eine saubere Migration ist die halbe Miete bei der CRM-Akzeptanz." },
+        { "step": 6, "title": "Rollout, Schulung & Iteration", "description": "Wir rollen mit Schulung aus und sammeln Feedback von den täglichen Nutzern. Die ersten Wochen zeigen, was zu verfeinern ist, und wir iterieren, sodass das CRM das Werkzeug wird, zu dem Ihr Team greift, nicht eines, um das es herumarbeitet." }
+      ],
+      "faq": [
+        { "question": "Individuelles CRM bauen oder Salesforce/HubSpot kaufen?", "answer": "Kaufen Sie, wenn Ihr Vertriebsprozess recht standardisiert ist und Ihnen wichtig ist, in Tagen startklar zu sein — Standard-CRMs sind ausgereift und funktionsreich. Bauen Sie individuell, wenn Ihr Prozess ein echtes Differenzierungsmerkmal ist, wenn Lizenzen pro Platz für ein großes Team zu hohen laufenden Kosten werden oder wenn Sie tiefe Integration und Datenhoheit brauchen, die ein SaaS-Produkt nicht bietet. Wir bewerten Ihre Lage ehrlich, statt die teurere Option zu pushen." },
+        { "question": "Was kostet ein individuelles CRM gegenüber einem SaaS-Abo?", "answer": "Ein individuelles CRM ist eine größere Anfangsinvestition, hat aber keine Platzgebühren, sodass sich die Rechnung mit wachsendem Team dreht. Ein SaaS-CRM zu etwa 50–150 $ pro Nutzer und Monat wird über dutzende oder hunderte Nutzer schnell teuer. Wir helfen, den Break-even zu modellieren: Bei großen Teams oder langen Zeithorizonten gewinnt individuell oft bei den Gesamtkosten, bei kleinen Teams, die sofort starten müssen, gewinnt SaaS." },
+        { "question": "Wie lange dauert der Bau eines CRM?", "answer": "Ein fokussiertes CRM mit Kern-Pipeline, Kontakten und Basis-Automatisierung dauert typischerweise 8–16 Wochen. Komplexe Anforderungen — mehrere Teams, schwere Integrationen, individuelles Reporting, Telefonie — verlängern das auf mehrere Monate. Die größten Variablen sind die Zahl der zu integrierenden Fremdsysteme und wie viel Bestandsdaten migriert und bereinigt werden müssen." },
+        { "question": "Kann es mit unserer E-Mail, Telefonie und anderen Tools integrieren?", "answer": "Ja — Integration ist meist der ganze Sinn eines individuellen CRM. Wir verbinden E-Mail (Gmail/Outlook), Kalender, Telefonie über Twilio, transaktionale E-Mail über SendGrid sowie Ihre Abrechnungs- oder Marketing-Tools, über deren APIs oder Plattformen wie Zapier. Zwei-Wege-Sync und zuverlässiges Fehler-Handling sind eingeplant, sodass Daten konsistent bleiben statt auseinanderzudriften." },
+        { "question": "Was ist mit der Migration aus unserem aktuellen System?", "answer": "Wir exportieren aus Ihrem bestehenden CRM oder Tabellen, mappen Felder auf das neue Modell und validieren, deduplizieren und bereinigen die Daten vor dem Import. Migration ist, wo viele CRM-Rollouts stolpern, daher behandeln wir sie als erstklassige Aufgabe mit Testimporten und Rollback-Plan, nicht als Last-Minute-Hektik. Saubere, vertrauenswürdige Daten sind essenziell für Akzeptanz." },
+        { "question": "Wird unser Team es wirklich nutzen?", "answer": "Akzeptanz ist das echte Erfolgsmaß eines CRM und hängt an Tempo, Einfachheit und Passung. Weil wir um Ihren echten Workflow herum bauen statt einen generischen aufzuzwingen, entfernt das CRM Reibung, statt sie zu erzeugen. Wir binden Endnutzer früh ein, priorisieren eine schnelle, saubere Oberfläche und schulen — ein CRM, um das Ihre Vertriebler herumarbeiten, ist verschwendetes Geld." },
+        { "question": "Kann das CRM mit unserem Geschäft wachsen?", "answer": "Ja — wir bauen auf einer skalierbaren Architektur, sodass spätere Nutzer, Teams, Pipelines oder neue Module unkompliziert hinzukommen. Da es keine Platzgebühren gibt, erhöht das Skalieren auf mehr Nutzer die Lizenzkosten nicht. Entwickelt sich Ihr Prozess, kann das CRM mitwachsen, denn Sie besitzen den Code, statt auf die Roadmap eines Anbieters zu warten." },
+        { "question": "Wem gehören Daten und System?", "answer": "Ihnen, vollständig. Code, Datenbank und alle Kundendaten gehören Ihnen, gehostet wo Sie wollen. Das bedeutet kein Vendor-Lock-in, kein Risiko von Preiserhöhungen auf Daten, von denen Sie abhängen, und volle Kontrolle über Datenschutz und Compliance. Für Unternehmen, deren Kundendaten ein Kern-Asset sind, ist diese Hoheit oft der entscheidende Grund für individuell." }
+      ],
+      "technologies": [
+        { "icon": "nextdotjs", "name": "Next.js" },
+        { "icon": "nodedotjs", "name": "Node.js" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "redis", "name": "Redis" },
+        { "icon": "twilio", "name": "Twilio" },
+        { "icon": "sendgrid", "name": "SendGrid" },
+        { "icon": "prisma", "name": "Prisma" },
+        { "icon": "zapier", "name": "Zapier" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "CRM ڈیولپمنٹ",
+    "shortDescription": "ایک ایسا custom CRM بنائیں جو بالکل آپ کے سیلز عمل پر فٹ ہو — lead اور pipeline انتظام، آٹومیشن، رپورٹنگ اور انٹیگریشنز، مکمل ڈیٹا ملکیت کے ساتھ اور فی سیٹ لائسنس فیس کے بغیر۔",
+    "fullDescription": "تیار شدہ CRMs آپ کی ٹیم کو vendor کے طریقے پر کام کرنے پر مجبور کرتے ہیں، اور بڑھنے کے ساتھ فی سیٹ فیس چڑھتی رہتی ہے۔ ہم ایسے custom CRM سسٹم بناتے ہیں جو اس بنیاد پر ڈھلے ہوں کہ آپ حقیقت میں کیسے بیچتے ہیں: آپ کے pipeline مراحل، آپ کے lead-scoring قواعد، آپ کی رپورٹنگ، آپ کی انٹیگریشنز۔ رابطہ اور موقع کی ٹریکنگ سے لے کر ای میل sync، ٹاسک آٹومیشن اور ایسے dashboards تک جنہیں آپ کے منیجرز واقعی استعمال کریں، ہم ایک ایسا سسٹم دیتے ہیں جسے آپ کی ٹیم اپناتی ہے، نہ کہ ناپسند کرتی ہے۔ ہم build-versus-buy پر ایماندار ہیں: اگر Salesforce یا HubSpot واقعی فٹ ہو تو ہم کہہ دیں گے۔ Custom تب فائدہ دیتا ہے جب آپ کا عمل حقیقی امتیاز ہو، جب بہت سے صارفین کے لیے لائسنسنگ مہنگی ہو جائے، یا جب آپ کو ایسی گہری انٹیگریشن اور ڈیٹا ملکیت چاہیے جو SaaS باکس نہ دے۔ نتیجہ ایک ایسا CRM ہے جس کے آپ مکمل مالک ہوں، جو فی صارف بڑھتی لاگت کے بغیر اسکیل ہو۔",
+    "features": [
+      "رابطہ اور Lead انتظام",
+      "Custom سیلز Pipeline اور مراحل",
+      "Workflow اور ٹاسک آٹومیشن",
+      "ای میل انٹیگریشن اور ٹریکنگ",
+      "Custom فیلڈز اور رپورٹنگ",
+      "Role پر مبنی رسائی کنٹرول",
+      "تھرڈ پارٹی انٹیگریشنز (Twilio، SendGrid، Zapier)",
+      "موبائل اور ویب رسائی"
+    ],
+    "benefits": [
+      "ٹیمپلیٹ نہیں بلکہ بالکل آپ کے سیلز عمل پر فٹ",
+      "اسکیل کرنے پر فی سیٹ لائسنس فیس نہیں",
+      "آپ کے کسٹمر ڈیٹا کی مکمل ملکیت",
+      "آپ کے موجودہ اوزار سے گہری انٹیگریشن",
+      "آپ کی ٹیم کے طریقے پر ہونے سے زیادہ اپنائیت",
+      "ایک اسکیل ایبل آرکیٹیکچر جو آپ کے کنٹرول میں ہو"
+    ],
+    "metaTitle": "Custom CRM ڈیولپمنٹ | PakSoft",
+    "metaDescription": "اپنے سیلز عمل کے مطابق custom CRM بنائیں: pipeline انتظام، آٹومیشن، رپورٹنگ اور انٹیگریشنز۔ اپنے ڈیٹا کے مالک بنیں، سیٹ فیس چھوڑیں۔ تخمینہ لیں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "عمل کی دریافت", "description": "عام flow مسلط کرنے کے بجائے ہم نقشہ بناتے ہیں کہ آپ کی ٹیم حقیقت میں کیسے بیچتی ہے — pipeline مراحل، حوالگیاں، ہر قدم پر درکار ڈیٹا۔ یہیں ہم ایمانداری سے جانچتے ہیں کہ آیا custom تعمیر آپ کے معاملے میں تیار CRM سے بہتر ہے۔" },
+        { "step": 2, "title": "ڈیٹا ماڈل اور انٹیگریشن منصوبہ", "description": "ہم ڈیٹا ماڈل کو آپ کے رابطوں، deals اور سرگرمیوں کے گرد ڈیزائن کرتے ہیں اور ہر اس سسٹم کا نقشہ بناتے ہیں جس سے CRM کو بات کرنی ہے — ای میل، ٹیلیفونی، بلنگ، مارکیٹنگ۔ انٹیگریشنز کا جلد دائرہ طے کرنا ان بری حیرتوں کو روکتا ہے جو CRM پروجیکٹس کو پٹری سے اتارتی ہیں۔" },
+        { "step": 3, "title": "بنیادی CRM تعمیر", "description": "ہم lead اور pipeline انتظام، سرگرمی ٹریکنگ اور custom فیلڈز کو ایک صاف، تیز انٹرفیس کے ساتھ بناتے ہیں۔ رفتار اور قابلِ استعمالیت ترجیح ہیں، کیونکہ ایسا CRM جس سے آپ کی ٹیم بچتی ہے، کسی CRM نہ ہونے سے بدتر ہے۔" },
+        { "step": 4, "title": "آٹومیشن اور رپورٹنگ", "description": "ہم وہ آٹومیشنز شامل کرتے ہیں جو فضول کام ہٹاتی ہیں — تفویض کے قواعد، فالو اپ یاد دہانیاں، مرحلہ trigger — اور ایسے dashboards جو وہ اعداد سامنے لائیں جن کی آپ کے منیجرز کو پروا ہو۔ رپورٹس vendor ڈیفالٹس نہیں بلکہ آپ کے حقیقی KPIs کے گرد بنتی ہیں۔" },
+        { "step": 5, "title": "انٹیگریشن اور ڈیٹا منتقلی", "description": "ہم ای میل، کیلنڈر، فون اور آپ کے دیگر اوزار جوڑتے ہیں، پھر موجودہ کسٹمر ڈیٹا کو validation اور de-duplication کے ساتھ احتیاط سے منتقل کرتے ہیں۔ صاف منتقلی CRM اپنائیت میں آدھی جنگ ہے۔" },
+        { "step": 6, "title": "اجراء، تربیت اور تکرار", "description": "ہم تربیت کے ساتھ اجراء کرتے ہیں اور روزانہ استعمال کرنے والوں سے فیڈبیک جمع کرتے ہیں۔ پہلے ہفتے بتاتے ہیں کہ کیا بہتر کرنا ہے اور ہم تکرار کرتے ہیں تاکہ CRM وہ اوزار بنے جس کی طرف آپ کی ٹیم ہاتھ بڑھائے، نہ کہ جس کے گرد گھوم کر کام کرے۔" }
+      ],
+      "faq": [
+        { "question": "مجھے custom CRM بنانا چاہیے یا Salesforce/HubSpot خریدنا چاہیے؟", "answer": "خریدیں جب آپ کا سیلز عمل کافی معیاری ہو اور آپ چند دنوں میں چلنے کو قدر دیں — تیار CRMs پختہ اور خصوصیات سے بھرپور ہیں۔ Custom بنائیں جب آپ کا عمل حقیقی امتیاز ہو، جب بڑی ٹیم کے لیے فی سیٹ لائسنسنگ بڑی بار بار آنے والی لاگت بن جائے، یا جب آپ کو ایسی گہری انٹیگریشن اور ڈیٹا ملکیت چاہیے جو SaaS پروڈکٹ نہ دے۔ ہم زیادہ بل کرنے والا اختیار مسلط کرنے کے بجائے آپ کی صورتحال ایمانداری سے جانچتے ہیں۔" },
+        { "question": "Custom CRM کی لاگت SaaS سبسکرپشن کے مقابلے کتنی ہے؟", "answer": "Custom CRM بڑی ابتدائی سرمایہ کاری ہے مگر اس کی فی سیٹ فیس نہیں، اس لیے آپ کی ٹیم بڑھنے کے ساتھ معیشت پلٹ جاتی ہے۔ فی صارف ماہانہ 50–150 ڈالر والا SaaS CRM درجنوں یا سینکڑوں صارفین میں جلد مہنگا ہو جاتا ہے۔ ہم break-even کا ماڈل بنانے میں مدد کرتے ہیں: بڑی ٹیموں یا طویل وقتی افق کے لیے کل ملکیتی لاگت میں custom اکثر جیتتا ہے، جبکہ فوراً شروع کرنے والی چھوٹی ٹیموں کے لیے SaaS جیتتا ہے۔" },
+        { "question": "CRM بنانے میں کتنا وقت لگتا ہے؟", "answer": "بنیادی pipeline، رابطے اور بنیادی آٹومیشن کا احاطہ کرنے والا مرکوز CRM عموماً 8–16 ہفتے لیتا ہے۔ پیچیدہ تقاضے — متعدد ٹیمیں، بھاری انٹیگریشنز، custom رپورٹنگ، ٹیلیفونی — اسے کئی ماہ تک بڑھا دیتے ہیں۔ سب سے بڑے متغیرات یہ ہیں کہ اسے کتنے بیرونی سسٹمز سے جڑنا ہے اور کتنا موجودہ ڈیٹا منتقل اور صاف کرنا ہے۔" },
+        { "question": "کیا یہ ہماری ای میل، فون اور دیگر اوزار سے جڑ سکتا ہے؟", "answer": "جی ہاں — انٹیگریشن عموماً custom CRM کا پورا مقصد ہی ہوتی ہے۔ ہم ای میل (Gmail/Outlook)، کیلنڈرز، Twilio کے ذریعے ٹیلیفونی، SendGrid کے ذریعے transactional ای میل، اور آپ کے بلنگ یا مارکیٹنگ اوزار کو، ان کی APIs یا Zapier جیسے پلیٹ فارمز کے ذریعے جوڑتے ہیں۔ دو طرفہ sync اور قابلِ اعتماد error handling ڈیزائن میں شامل ہیں، تاکہ ڈیٹا سسٹمز کے درمیان بکھرنے کے بجائے مستقل رہے۔" },
+        { "question": "ہمارے موجودہ سسٹم سے ڈیٹا منتقلی کا کیا ہوگا؟", "answer": "ہم آپ کے موجودہ CRM یا spreadsheets سے ایکسپورٹ کرتے ہیں، فیلڈز کو نئے ماڈل سے map کرتے ہیں، پھر import سے پہلے ڈیٹا کو validate، de-duplicate اور صاف کرتے ہیں۔ منتقلی وہ جگہ ہے جہاں بہت سے CRM اجراء لڑکھڑاتے ہیں، اس لیے ہم اسے test imports اور rollback پلان کے ساتھ اولین درجے کے کام کے طور پر لیتے ہیں، آخری لمحے کی افراتفری کے طور پر نہیں۔ صاف، قابلِ بھروسا ڈیٹا اپنائیت کے لیے لازم ہے۔" },
+        { "question": "کیا ہماری ٹیم واقعی اسے استعمال کرے گی؟", "answer": "اپنائیت CRM کی کامیابی کا اصل پیمانہ ہے اور یہ رفتار، سادگی اور موزونیت پر منحصر ہے۔ چونکہ ہم عام flow مسلط کرنے کے بجائے آپ کے حقیقی workflow کے گرد بناتے ہیں، CRM رگڑ بڑھانے کے بجائے ہٹاتا ہے۔ ہم آخری صارفین کو جلد شامل کرتے ہیں، تیز اور صاف انٹرفیس کو ترجیح دیتے ہیں اور تربیت دیتے ہیں — ایسا CRM جس کے گرد آپ کے نمائندے گھوم جائیں، ضائع پیسہ ہے۔" },
+        { "question": "کیا CRM ہمارے کاروبار کے ساتھ بڑھ سکتا ہے؟", "answer": "جی ہاں — ہم اسکیل ایبل آرکیٹیکچر پر بناتے ہیں تاکہ بعد میں صارفین، ٹیمیں، pipelines یا نئے ماڈیول شامل کرنا سہل ہو۔ چونکہ فی سیٹ فیس نہیں، زیادہ صارفین تک اسکیل کرنا لائسنس لاگت نہیں بڑھاتا۔ آپ کا عمل ارتقا پذیر ہونے پر CRM بھی اس کے ساتھ ارتقا کر سکتا ہے کیونکہ کوڈ کے مالک آپ ہیں، vendor کے روڈ میپ کا انتظار کیے بغیر۔" },
+        { "question": "ڈیٹا اور سسٹم کا مالک کون ہے؟", "answer": "مکمل طور پر آپ۔ کوڈ، ڈیٹابیس اور تمام کسٹمر ڈیٹا آپ کا ہے، جہاں آپ چاہیں host کریں۔ اس کا مطلب vendor lock-in نہیں، جس ڈیٹا پر آپ انحصار کرتے ہیں اس پر قیمت بڑھنے کا خطرہ نہیں، اور رازداری و تعمیل پر مکمل کنٹرول۔ ان کاروباروں کے لیے جہاں کسٹمر ڈیٹا بنیادی اثاثہ ہو، یہ ملکیت اکثر custom کی طرف جانے کا فیصلہ کن عنصر ہوتی ہے۔" }
+      ],
+      "technologies": [
+        { "icon": "nextdotjs", "name": "Next.js" },
+        { "icon": "nodedotjs", "name": "Node.js" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "redis", "name": "Redis" },
+        { "icon": "twilio", "name": "Twilio" },
+        { "icon": "sendgrid", "name": "SendGrid" },
+        { "icon": "prisma", "name": "Prisma" },
+        { "icon": "zapier", "name": "Zapier" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تطوير أنظمة CRM",
+    "shortDescription": "ابنوا نظام CRM مخصّصاً يلائم عملية مبيعاتكم تماماً — إدارة العملاء المحتملين وخط الأنابيب، والأتمتة، والتقارير، والتكاملات، مع ملكية كاملة للبيانات ودون رسوم ترخيص لكل مقعد.",
+    "fullDescription": "تُجبر أنظمة CRM الجاهزة فريقكم على العمل بطريقة المورّد، وتظل رسوم المقعد ترتفع مع نموكم. نبني أنظمة CRM مخصّصة مصاغة حول طريقة بيعكم الفعلية: مراحل خط الأنابيب لديكم، وقواعد تقييم العملاء المحتملين، وتقاريركم، وتكاملاتكم. ومن تتبّع جهات الاتصال والفرص إلى مزامنة البريد وأتمتة المهام ولوحات يستخدمها مديروكم فعلاً، نقدّم نظاماً يتبنّاه فريقكم بدل أن يكرهه. ونحن صادقون في البناء مقابل الشراء: إن لاءم Salesforce أو HubSpot فعلاً قلناه. ويؤتي المخصّص ثماره حين تكون عمليتكم عامل تمايز حقيقياً، أو حين يصبح ترخيص مستخدمين كثيرين مكلفاً، أو حين تحتاجون تكاملاً عميقاً وملكية بيانات لا يمنحها صندوق SaaS. والنتيجة نظام CRM تملكونه بالكامل، يتوسّع دون كلفة متزايدة لكل مستخدم.",
+    "features": [
+      "إدارة جهات الاتصال والعملاء المحتملين",
+      "خط مبيعات ومراحل مخصّصة",
+      "أتمتة سير العمل والمهام",
+      "تكامل البريد الإلكتروني وتتبّعه",
+      "حقول مخصّصة وتقارير",
+      "تحكّم بالوصول قائم على الأدوار",
+      "تكاملات طرف ثالث (Twilio وSendGrid وZapier)",
+      "وصول عبر الجوال والويب"
+    ],
+    "benefits": [
+      "يلائم عملية مبيعاتكم تماماً لا قالباً جاهزاً",
+      "لا رسوم ترخيص لكل مقعد عند التوسّع",
+      "ملكية كاملة لبيانات عملائكم",
+      "تكامل عميق مع أدواتكم الحالية",
+      "تبنٍّ أعلى لأنه يعمل بطريقة فريقكم",
+      "بنية قابلة للتوسّع تحت سيطرتكم"
+    ],
+    "metaTitle": "تطوير أنظمة CRM مخصّصة | PakSoft",
+    "metaDescription": "ابنوا CRM مخصّصاً لعملية مبيعاتكم: إدارة خط الأنابيب والأتمتة والتقارير والتكاملات. امتلكوا بياناتكم وتجاوزوا رسوم المقاعد. اطلبوا تقديراً.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "استكشاف العملية", "description": "نرسم كيف يبيع فريقكم فعلاً — مراحل خط الأنابيب والتسليمات والبيانات اللازمة عند كل خطوة — بدل فرض تدفّق عام. وهنا أيضاً نقيّم بصدق ما إذا كان البناء المخصّص يتفوّق على CRM جاهز في حالتكم." },
+        { "step": 2, "title": "نموذج البيانات وخطة التكاملات", "description": "نصمّم نموذج البيانات حول جهات اتصالكم وصفقاتكم وأنشطتكم، ونرسم كل نظام يجب أن يتحدّث معه الـ CRM — البريد والهاتف والفوترة والتسويق. تحديد نطاق التكاملات مبكراً يمنع المفاجآت السيئة التي تُخرج مشاريع CRM عن مسارها." },
+        { "step": 3, "title": "بناء CRM الأساسي", "description": "نبني إدارة العملاء المحتملين وخط الأنابيب وتتبّع الأنشطة والحقول المخصّصة بواجهة نظيفة وسريعة. السرعة وسهولة الاستخدام أولوية، لأن CRM يتجنّبه فريقكم أسوأ من عدم وجود CRM أصلاً." },
+        { "step": 4, "title": "الأتمتة والتقارير", "description": "نضيف الأتمتة التي تزيل العمل الروتيني — قواعد التعيين، وتذكيرات المتابعة، ومحفّزات المراحل — ولوحات تُبرز الأرقام التي تهم مديريكم. تُبنى التقارير حول مؤشراتكم الفعلية لا الإعدادات الافتراضية للمورّد." },
+        { "step": 5, "title": "التكامل وترحيل البيانات", "description": "نربط البريد والتقويم والهاتف وأدواتكم الأخرى، ثم نرحّل بيانات العملاء الحالية بعناية مع التحقق وإزالة التكرار. الترحيل النظيف نصف المعركة في تبنّي الـ CRM." },
+        { "step": 6, "title": "الطرح والتدريب والتكرار", "description": "نطرح مع تدريب ونجمع ملاحظات من مستخدميه اليوميين. تكشف الأسابيع الأولى ما يجب تحسينه، ونكرّر كي يصبح الـ CRM الأداة التي يمدّ إليها فريقكم يده لا التي يلتفّ حولها." }
+      ],
+      "faq": [
+        { "question": "هل أبني CRM مخصّصاً أم أشتري Salesforce/HubSpot؟", "answer": "اشترِ حين تكون عملية مبيعاتكم معيارية إلى حد كبير وتقدّرون الانطلاق خلال أيام — فأنظمة CRM الجاهزة ناضجة وغنية بالميزات. وابنِ مخصّصاً حين تكون عمليتكم عامل تمايز حقيقياً، أو حين يصبح الترخيص لكل مقعد لفريق كبير كلفة متكررة كبيرة، أو حين تحتاجون تكاملاً عميقاً وملكية بيانات لا يوفّرها منتج SaaS. نقيّم وضعكم بصدق بدل دفع الخيار الأكثر فوترة." },
+        { "question": "كم يكلّف CRM مخصّص مقابل اشتراك SaaS؟", "answer": "الـ CRM المخصّص استثمار أولي أكبر لكنه دون رسوم لكل مقعد، فتنقلب المعادلة مع نمو فريقكم. ونظام SaaS بسعر نحو 50–150 دولاراً للمستخدم شهرياً يصبح مكلفاً سريعاً عبر عشرات أو مئات المستخدمين. نساعدكم في نمذجة نقطة التعادل: غالباً ما يفوز المخصّص في الكلفة الإجمالية للملكية للفرق الكبيرة أو الآفاق الزمنية الطويلة، بينما يفوز SaaS للفرق الصغيرة التي تحتاج البدء فوراً." },
+        { "question": "كم يستغرق بناء CRM؟", "answer": "CRM مركّز يغطي خط الأنابيب الأساسي وجهات الاتصال وأتمتة بسيطة يستغرق عادة 8–16 أسبوعاً. والمتطلبات المعقدة — فرق متعددة وتكاملات ثقيلة وتقارير مخصّصة وهاتف — تمدّده إلى عدة أشهر. أكبر المتغيرات هي عدد الأنظمة الخارجية التي يجب التكامل معها وكمية البيانات الحالية التي يلزم ترحيلها وتنظيفها." },
+        { "question": "هل يتكامل مع بريدنا وهاتفنا وأدواتنا الأخرى؟", "answer": "نعم — التكامل عادة هو كامل الغرض من CRM مخصّص. نربط البريد (Gmail/Outlook) والتقويمات والهاتف عبر Twilio والبريد المعاملاتي عبر SendGrid وأدوات الفوترة أو التسويق لديكم، إما عبر واجهاتها أو منصات مثل Zapier. وتُصمَّم المزامنة ثنائية الاتجاه ومعالجة الأخطاء الموثوقة كي تبقى البيانات متسقة بدل أن تتباعد." },
+        { "question": "ماذا عن ترحيل البيانات من نظامنا الحالي؟", "answer": "نصدّر من نظام CRM الحالي أو من جداولكم، ونربط الحقول بالنموذج الجديد، ثم نتحقق ونزيل التكرار وننظّف البيانات قبل الاستيراد. الترحيل حيث يتعثّر كثير من عمليات طرح CRM، لذا نعامله كمهمة من الدرجة الأولى بعمليات استيراد تجريبية وخطة تراجع، لا كاندفاع في اللحظة الأخيرة. البيانات النظيفة الموثوقة جوهرية للتبنّي." },
+        { "question": "هل سيستخدمه فريقنا فعلاً؟", "answer": "التبنّي هو المقياس الحقيقي لنجاح CRM، ويعتمد على السرعة والبساطة والملاءمة. ولأننا نبني حول سير عملكم الفعلي بدل فرض آخر عام، يزيل الـ CRM الاحتكاك بدل إضافته. نُشرك المستخدمين النهائيين مبكراً، ونعطي الأولوية لواجهة سريعة ونظيفة، ونوفّر تدريباً — فـ CRM يلتفّ حوله مندوبوكم مال مهدور." },
+        { "question": "هل يمكن للـ CRM أن ينمو مع عملنا؟", "answer": "نعم — نبني على بنية قابلة للتوسّع كي تكون إضافة مستخدمين أو فرق أو خطوط أنابيب أو وحدات جديدة لاحقاً ميسورة. ولأنه لا رسوم لكل مقعد، فإن التوسّع لمزيد من المستخدمين لا يزيد كلفة الترخيص. ومع تطوّر عمليتكم يمكن للـ CRM أن يتطوّر معها لأنكم تملكون الكود، دون انتظار خارطة طريق مورّد." },
+        { "question": "من يملك البيانات والنظام؟", "answer": "أنتم، بالكامل. الكود وقاعدة البيانات وكل بيانات العملاء ملككم، مستضافة حيث تختارون. هذا يعني لا احتكار من مورّد، ولا خطر رفع أسعار على بيانات تعتمدون عليها، وسيطرة كاملة على الخصوصية والامتثال. وللأعمال التي تكون بيانات عملائها أصلاً جوهرياً، تكون هذه الملكية غالباً العامل الحاسم للذهاب نحو المخصّص." }
+      ],
+      "technologies": [
+        { "icon": "nextdotjs", "name": "Next.js" },
+        { "icon": "nodedotjs", "name": "Node.js" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "redis", "name": "Redis" },
+        { "icon": "twilio", "name": "Twilio" },
+        { "icon": "sendgrid", "name": "SendGrid" },
+        { "icon": "prisma", "name": "Prisma" },
+        { "icon": "zapier", "name": "Zapier" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,278 @@
+{
+  "slug": "graphql-api-development",
+  "en": {
+    "name": "GraphQL API Development",
+    "shortDescription": "Design and build GraphQL APIs that let clients fetch exactly the data they need — strong typing, real-time subscriptions, N+1-safe resolvers, and schema design that scales from a single app to federation.",
+    "fullDescription": "GraphQL hands the frontend control: clients ask for precisely the fields they need in one request instead of stitching together multiple REST calls or over-fetching. We design GraphQL APIs with schemas modeled around your domain, resolvers built to avoid the N+1 query trap with DataLoader, and the security GraphQL specifically needs — query depth and complexity limits so a single malicious query can't take down your server. We handle authentication, authorization at the field level, caching, and real-time subscriptions where live data matters. Whether you're building a fresh API, migrating from REST, or stitching several services together with federation, we deliver a typed, introspectable, self-documenting interface that accelerates frontend development and keeps your client and server contract honest.",
+    "features": [
+      "Schema Design & Domain Modeling",
+      "Query, Mutation & Subscription Resolvers",
+      "DataLoader & N+1 Query Prevention",
+      "Field-Level Authentication & Authorization",
+      "Query Depth & Complexity Limiting",
+      "Apollo Federation & Schema Stitching",
+      "Caching & Persisted Queries",
+      "REST-to-GraphQL Migration"
+    ],
+    "benefits": [
+      "Clients fetch exactly the data they need, no over-fetching",
+      "Single endpoint replaces sprawling REST surface",
+      "Strong typing and introspection speed frontend work",
+      "Fewer API versions thanks to a flexible schema",
+      "Real-time data via subscriptions out of the box",
+      "Self-documenting interface from the schema itself"
+    ],
+    "metaTitle": "GraphQL API Development | PakSoft",
+    "metaDescription": "Build typed GraphQL APIs with N+1-safe resolvers, subscriptions, complexity limits, and federation. Exact-fetch data, faster frontends. Get a free estimate.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Schema Design", "description": "We model your domain into a clean, typed GraphQL schema — the contract every client and resolver depends on. A well-designed schema is the single most important decision in a GraphQL API, so we invest here before writing resolvers." },
+        { "step": 2, "title": "Resolver Architecture", "description": "We implement resolvers with DataLoader batching from the start to avoid the N+1 query problem that quietly destroys GraphQL performance. Business logic stays in services, with resolvers acting as a thin, testable layer." },
+        { "step": 3, "title": "Auth & Security Hardening", "description": "We add authentication and field-level authorization, plus query depth and complexity limits and rate limiting. GraphQL's flexibility is also an attack surface, so we cap what a single query can demand before it reaches your database." },
+        { "step": 4, "title": "Subscriptions & Caching", "description": "Where live data matters, we add subscriptions over WebSockets for real-time updates. We layer in caching and persisted queries so the flexibility of GraphQL doesn't come at the cost of repeated expensive work." },
+        { "step": 5, "title": "Federation or Migration", "description": "For larger systems we compose multiple services into one graph with Apollo Federation, or migrate an existing REST API incrementally. You get a unified graph without a risky big-bang rewrite." },
+        { "step": 6, "title": "Tooling, Docs & Launch", "description": "We wire up code generation so frontend types stay in sync with the schema, ship the introspectable, self-documenting API, and add monitoring for slow resolvers. Post-launch we tune the hottest queries with real usage data." }
+      ],
+      "faq": [
+        { "question": "When should I choose GraphQL over REST?", "answer": "GraphQL shines when clients need flexible, precise data from complex, nested relationships, when you serve many different frontends with different data needs, or when over-fetching and under-fetching plague your REST endpoints. REST stays simpler for basic CRUD, public APIs, and cases where HTTP caching matters. It's not all-or-nothing — many systems run both, and we'll recommend based on your client diversity and data shape." },
+        { "question": "What is the N+1 problem in GraphQL?", "answer": "It's the most common GraphQL performance killer. A query for a list of items, each with a related field, naively triggers one database query per item — 1 for the list plus N for the relations. The fix is DataLoader, which batches and caches these lookups into a single query per request. We build resolvers with DataLoader from day one, because retrofitting it later is painful." },
+        { "question": "Isn't GraphQL a security risk?", "answer": "GraphQL's flexibility can be abused: a deeply nested or hugely complex query can overload your server if unguarded. We mitigate this with query depth limits, complexity scoring that rejects expensive queries before execution, rate limiting, and disabling introspection in production where appropriate. Field-level authorization ensures clients can only request data they're permitted to see. Done right, GraphQL is as secure as a well-built REST API." },
+        { "question": "Can I migrate from REST to GraphQL gradually?", "answer": "Yes, and that's usually the safe path. We can put a GraphQL layer in front of your existing REST endpoints or database, exposing a graph while the old API keeps running. Clients migrate query by query, and you retire REST endpoints only once nothing depends on them. A big-bang rewrite is rarely necessary or wise." },
+        { "question": "Does GraphQL support real-time data?", "answer": "Yes, through subscriptions, typically over WebSockets. When data changes on the server — a new message, a price update, a status change — subscribed clients receive it instantly without polling. We implement subscriptions where live data genuinely adds value, with attention to scaling, since maintaining many open connections needs the same care as any real-time system." },
+        { "question": "What is GraphQL federation and do I need it?", "answer": "Federation lets you compose multiple GraphQL services into one unified graph, so each team owns its part of the schema while clients query a single endpoint. You need it when multiple teams or services must contribute to one API — common in larger organizations. For a single application, a monolithic schema is simpler and you should not reach for federation prematurely. We'll tell you which fits your scale." },
+        { "question": "How does GraphQL improve frontend development?", "answer": "Frontend teams move faster because they request exactly the data each screen needs in one round trip, without waiting for backend changes to add or remove fields. The strongly typed schema enables code generation, so frontend types stay in sync with the API automatically, and introspection powers excellent tooling and autocomplete. The result is fewer integration bugs and less back-and-forth between teams." },
+        { "question": "How long does a GraphQL API take to build?", "answer": "A focused GraphQL API over a clean data model typically takes 4–10 weeks. Adding subscriptions, federation across multiple services, complex authorization, or migrating a large REST surface extends that. The biggest drivers are schema complexity, the number of data sources the resolvers must coordinate, and how strict your performance and security requirements are." }
+      ],
+      "technologies": [
+        { "icon": "graphql", "name": "GraphQL" },
+        { "icon": "apollographql", "name": "Apollo Server" },
+        { "icon": "graphql", "name": "GraphQL Yoga" },
+        { "icon": "hasura", "name": "Hasura" },
+        { "icon": "prisma", "name": "Prisma" },
+        { "icon": "typescript", "name": "TypeScript" },
+        { "icon": "redis", "name": "Redis" },
+        { "icon": "nodedotjs", "name": "Node.js" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "GraphQL API Geliştirme",
+    "shortDescription": "İstemcilerin tam olarak ihtiyaç duyduğu veriyi çekmesini sağlayan GraphQL API'ler tasarlayıp kurun — güçlü tipleme, gerçek zamanlı subscription'lar, N+1 güvenli resolver'lar ve tek uygulamadan federasyona ölçeklenen şema tasarımı.",
+    "fullDescription": "GraphQL kontrolü frontend'e verir: istemciler birden çok REST çağrısını birleştirmek veya aşırı çekmek yerine tek istekte tam olarak ihtiyaç duydukları alanları ister. Alanınız etrafında modellenmiş şemalarla, N+1 sorgu tuzağından DataLoader ile kaçınan resolver'larla ve GraphQL'in özellikle ihtiyaç duyduğu güvenlikle — tek kötü niyetli sorgunun sunucunuzu çökertememesi için sorgu derinliği ve karmaşıklık limitleriyle — GraphQL API'ler tasarlarız. Kimlik doğrulamayı, alan düzeyinde yetkilendirmeyi, önbelleğe almayı ve canlı verinin önemli olduğu yerde gerçek zamanlı subscription'ları hallederiz. İster yeni bir API kurun, ister REST'ten geçin, ister federasyonla birkaç servisi birleştirin, frontend geliştirmeyi hızlandıran ve istemci-sunucu sözleşmesini dürüst tutan tipli, introspect edilebilir, kendi kendini belgeleyen bir arayüz sunarız.",
+    "features": [
+      "Şema Tasarımı ve Alan Modelleme",
+      "Query, Mutation ve Subscription Resolver'ları",
+      "DataLoader ve N+1 Sorgu Önleme",
+      "Alan Düzeyi Kimlik Doğrulama ve Yetkilendirme",
+      "Sorgu Derinliği ve Karmaşıklık Sınırlama",
+      "Apollo Federation ve Schema Stitching",
+      "Önbellekleme ve Persisted Queries",
+      "REST'ten GraphQL'e Geçiş"
+    ],
+    "benefits": [
+      "İstemciler tam ihtiyaç duyduğu veriyi çeker, aşırı çekme yok",
+      "Tek uç nokta dağınık REST yüzeyini değiştirir",
+      "Güçlü tipleme ve introspection frontend işini hızlandırır",
+      "Esnek şema sayesinde daha az API sürümü",
+      "Subscription'larla kutudan çıkan gerçek zamanlı veri",
+      "Şemanın kendisinden kendi kendini belgeleyen arayüz"
+    ],
+    "metaTitle": "GraphQL API Geliştirme | PakSoft",
+    "metaDescription": "N+1 güvenli resolver'lar, subscription'lar, karmaşıklık limitleri ve federasyonla tipli GraphQL API'ler kurun. Tam veri çekme, daha hızlı frontend. Ücretsiz teklif.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Şema Tasarımı", "description": "Alanınızı temiz, tipli bir GraphQL şemasına modelleriz — her istemci ve resolver'ın dayandığı sözleşme. İyi tasarlanmış bir şema, bir GraphQL API'deki en önemli karardır, bu yüzden resolver yazmadan önce burada yatırım yaparız." },
+        { "step": 2, "title": "Resolver Mimarisi", "description": "Resolver'ları, GraphQL performansını sessizce yok eden N+1 sorgu sorunundan kaçınmak için baştan DataLoader gruplamasıyla uygularız. İş mantığı servislerde kalır, resolver'lar ise ince, test edilebilir bir katman olarak çalışır." },
+        { "step": 3, "title": "Auth ve Güvenlik Sertleştirme", "description": "Kimlik doğrulama ve alan düzeyi yetkilendirme, artı sorgu derinliği ve karmaşıklık limitleri ve hız sınırlama ekleriz. GraphQL'in esnekliği aynı zamanda bir saldırı yüzeyidir, bu yüzden tek bir sorgunun veritabanınıza ulaşmadan ne kadar talep edebileceğini sınırlarız." },
+        { "step": 4, "title": "Subscription'lar ve Önbellekleme", "description": "Canlı verinin önemli olduğu yerde gerçek zamanlı güncellemeler için WebSocket üzerinden subscription ekleriz. GraphQL'in esnekliği tekrarlanan pahalı işlerin maliyetiyle gelmesin diye önbellekleme ve persisted queries katmanlarız." },
+        { "step": 5, "title": "Federasyon veya Geçiş", "description": "Daha büyük sistemler için Apollo Federation ile birden çok servisi tek bir grafe besteler veya mevcut bir REST API'yi kademeli olarak geçiririz. Riskli bir big-bang yeniden yazma olmadan birleşik bir graf elde edersiniz." },
+        { "step": 6, "title": "Araçlar, Belgeler ve Lansman", "description": "Frontend tiplerinin şemayla senkronda kalması için kod üretimini bağlar, introspect edilebilir, kendi kendini belgeleyen API'yi yayınlar ve yavaş resolver'lar için izleme ekleriz. Lansman sonrası en sıcak sorguları gerçek kullanım verisiyle ayarlarız." }
+      ],
+      "faq": [
+        { "question": "GraphQL'i REST yerine ne zaman seçmeliyim?", "answer": "GraphQL, istemcilerin karmaşık, iç içe ilişkilerden esnek, hassas veriye ihtiyaç duyduğunda, farklı veri ihtiyaçları olan birçok farklı frontend'e hizmet verdiğinizde veya aşırı ve eksik çekmenin REST uç noktalarınızı sıkıntıya soktuğunda parlar. REST, temel CRUD, genel API'ler ve HTTP önbelleğinin önemli olduğu durumlar için daha basit kalır. Hep ya da hiç değildir — birçok sistem ikisini de çalıştırır ve istemci çeşitliliğinize ve veri biçiminize göre öneririz." },
+        { "question": "GraphQL'de N+1 sorunu nedir?", "answer": "En yaygın GraphQL performans katilidir. Her biri ilişkili bir alanı olan bir öğe listesi sorgusu, naif biçimde öğe başına bir veritabanı sorgusu tetikler — liste için 1 artı ilişkiler için N. Çözüm, bu aramaları istek başına tek bir sorguya gruplayan ve önbelleğe alan DataLoader'dır. Resolver'ları ilk günden DataLoader ile kurarız, çünkü sonradan eklemek zahmetlidir." },
+        { "question": "GraphQL bir güvenlik riski değil mi?", "answer": "GraphQL'in esnekliği kötüye kullanılabilir: korumasızsa derin iç içe veya çok karmaşık bir sorgu sunucunuzu aşırı yükleyebilir. Bunu sorgu derinliği limitleri, yürütmeden önce pahalı sorguları reddeden karmaşıklık puanlama, hız sınırlama ve uygun olduğunda üretimde introspection'ı kapatmayla hafifletiriz. Alan düzeyi yetkilendirme, istemcilerin yalnızca görmelerine izin verilen veriyi isteyebilmesini sağlar. Doğru yapıldığında GraphQL, iyi kurulmuş bir REST API kadar güvenlidir." },
+        { "question": "REST'ten GraphQL'e kademeli geçiş yapabilir miyim?", "answer": "Evet ve bu genellikle güvenli yoldur. Mevcut REST uç noktalarınızın veya veritabanınızın önüne bir GraphQL katmanı koyabilir, eski API çalışmaya devam ederken bir graf sunabiliriz. İstemciler sorgu sorgu geçer ve REST uç noktalarını yalnızca hiçbir şey onlara bağımlı olmadığında emekli edersiniz. Big-bang yeniden yazma nadiren gerekli veya akıllıcadır." },
+        { "question": "GraphQL gerçek zamanlı veriyi destekler mi?", "answer": "Evet, subscription'lar aracılığıyla, genellikle WebSocket üzerinden. Sunucuda veri değiştiğinde — yeni bir mesaj, fiyat güncellemesi, durum değişikliği — abone istemciler bunu polling olmadan anında alır. Canlı verinin gerçekten değer kattığı yerde subscription uygularız, ölçeklemeye dikkat ederek; çünkü birçok açık bağlantıyı sürdürmek her gerçek zamanlı sistem kadar özen gerektirir." },
+        { "question": "GraphQL federasyonu nedir ve ihtiyacım var mı?", "answer": "Federasyon, birden çok GraphQL servisini tek bir birleşik grafe bestelemenizi sağlar; böylece her ekip şemanın kendi parçasını sahiplenirken istemciler tek bir uç noktayı sorgular. Birden çok ekibin veya servisin tek bir API'ye katkıda bulunması gerektiğinde ona ihtiyaç duyarsınız — büyük kuruluşlarda yaygındır. Tek bir uygulama için monolitik bir şema daha basittir ve federasyona erken uzanmamalısınız. Ölçeğinize hangisinin uyduğunu söyleriz." },
+        { "question": "GraphQL frontend geliştirmeyi nasıl iyileştirir?", "answer": "Frontend ekipleri daha hızlı ilerler çünkü her ekranın ihtiyaç duyduğu veriyi tek bir gidiş dönüşte, alan ekleme veya kaldırmak için backend değişikliklerini beklemeden ister. Güçlü tipli şema kod üretimini mümkün kılar; böylece frontend tipleri API ile otomatik senkronda kalır ve introspection mükemmel araçları ve otomatik tamamlamayı besler. Sonuç daha az entegrasyon hatası ve ekipler arasında daha az gidip gelmedir." },
+        { "question": "Bir GraphQL API kurmak ne kadar sürer?", "answer": "Temiz bir veri modeli üzerine odaklı bir GraphQL API genellikle 4–10 hafta sürer. Subscription, birden çok servis genelinde federasyon, karmaşık yetkilendirme eklemek veya büyük bir REST yüzeyini geçirmek bunu uzatır. En büyük etkenler şema karmaşıklığı, resolver'ların koordine etmesi gereken veri kaynağı sayısı ve performans ile güvenlik gereksinimlerinizin katılığıdır." }
+      ],
+      "technologies": [
+        { "icon": "graphql", "name": "GraphQL" },
+        { "icon": "apollographql", "name": "Apollo Server" },
+        { "icon": "graphql", "name": "GraphQL Yoga" },
+        { "icon": "hasura", "name": "Hasura" },
+        { "icon": "prisma", "name": "Prisma" },
+        { "icon": "typescript", "name": "TypeScript" },
+        { "icon": "redis", "name": "Redis" },
+        { "icon": "nodedotjs", "name": "Node.js" }
+      ]
+    }
+  },
+  "de": {
+    "name": "GraphQL-API-Entwicklung",
+    "shortDescription": "Entwerfen und bauen Sie GraphQL-APIs, mit denen Clients genau die benötigten Daten holen — starke Typisierung, Echtzeit-Subscriptions, N+1-sichere Resolver und Schema-Design, das von einer App bis zur Föderation skaliert.",
+    "fullDescription": "GraphQL gibt dem Frontend die Kontrolle: Clients fragen genau die Felder ab, die sie brauchen, in einem Request, statt mehrere REST-Calls zusammenzustückeln oder zu over-fetchen. Wir entwerfen GraphQL-APIs mit um Ihre Domäne modellierten Schemas, Resolvern, die die N+1-Falle mit DataLoader umgehen, und der Sicherheit, die GraphQL speziell braucht — Query-Tiefen- und Komplexitätslimits, damit eine einzige bösartige Query Ihren Server nicht lahmlegt. Wir kümmern uns um Authentifizierung, feldweise Autorisierung, Caching und Echtzeit-Subscriptions, wo Live-Daten zählen. Ob Sie eine neue API bauen, von REST migrieren oder mehrere Services per Föderation zusammenführen — wir liefern eine typisierte, introspizierbare, selbstdokumentierende Schnittstelle, die die Frontend-Entwicklung beschleunigt und den Client-Server-Vertrag ehrlich hält.",
+    "features": [
+      "Schema-Design & Domänenmodellierung",
+      "Query-, Mutation- & Subscription-Resolver",
+      "DataLoader & N+1-Query-Vermeidung",
+      "Feldweise Authentifizierung & Autorisierung",
+      "Query-Tiefen- & Komplexitätslimit",
+      "Apollo Federation & Schema Stitching",
+      "Caching & Persisted Queries",
+      "REST-zu-GraphQL-Migration"
+    ],
+    "benefits": [
+      "Clients holen genau die benötigten Daten, kein Over-Fetching",
+      "Ein Endpunkt ersetzt eine ausufernde REST-Fläche",
+      "Starke Typisierung und Introspektion beschleunigen Frontend-Arbeit",
+      "Weniger API-Versionen dank flexiblem Schema",
+      "Echtzeit-Daten via Subscriptions von Haus aus",
+      "Selbstdokumentierende Schnittstelle direkt aus dem Schema"
+    ],
+    "metaTitle": "GraphQL-API-Entwicklung | PakSoft",
+    "metaDescription": "Bauen Sie typisierte GraphQL-APIs mit N+1-sicheren Resolvern, Subscriptions, Komplexitätslimits und Föderation. Exakte Daten, schnellere Frontends. Angebot anfordern.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Schema-Design", "description": "Wir modellieren Ihre Domäne in ein sauberes, typisiertes GraphQL-Schema — den Vertrag, auf den jeder Client und Resolver baut. Ein gut entworfenes Schema ist die wichtigste Entscheidung einer GraphQL-API, daher investieren wir hier, bevor wir Resolver schreiben." },
+        { "step": 2, "title": "Resolver-Architektur", "description": "Wir implementieren Resolver von Anfang an mit DataLoader-Batching, um das N+1-Query-Problem zu vermeiden, das die GraphQL-Performance leise zerstört. Geschäftslogik bleibt in Services, Resolver fungieren als dünne, testbare Schicht." },
+        { "step": 3, "title": "Auth & Security-Hardening", "description": "Wir ergänzen Authentifizierung und feldweise Autorisierung sowie Query-Tiefen- und Komplexitätslimits und Rate-Limiting. GraphQLs Flexibilität ist auch eine Angriffsfläche, daher deckeln wir, was eine einzelne Query verlangen kann, bevor sie Ihre Datenbank erreicht." },
+        { "step": 4, "title": "Subscriptions & Caching", "description": "Wo Live-Daten zählen, ergänzen wir Subscriptions über WebSockets für Echtzeit-Updates. Wir legen Caching und Persisted Queries darüber, damit die Flexibilität von GraphQL nicht den Preis wiederholter teurer Arbeit hat." },
+        { "step": 5, "title": "Föderation oder Migration", "description": "Für größere Systeme komponieren wir mehrere Services mit Apollo Federation zu einem Graphen oder migrieren eine bestehende REST-API schrittweise. Sie erhalten einen einheitlichen Graphen ohne riskantes Big-Bang-Rewrite." },
+        { "step": 6, "title": "Tooling, Docs & Launch", "description": "Wir richten Code-Generierung ein, damit Frontend-Typen mit dem Schema synchron bleiben, liefern die introspizierbare, selbstdokumentierende API und ergänzen Monitoring für langsame Resolver. Nach dem Launch tunen wir die heißesten Queries mit echten Nutzungsdaten." }
+      ],
+      "faq": [
+        { "question": "Wann GraphQL statt REST wählen?", "answer": "GraphQL glänzt, wenn Clients flexible, präzise Daten aus komplexen, verschachtelten Beziehungen brauchen, wenn Sie viele unterschiedliche Frontends mit verschiedenen Datenbedürfnissen bedienen oder wenn Over- und Under-Fetching Ihre REST-Endpunkte plagen. REST bleibt einfacher für simples CRUD, öffentliche APIs und Fälle, in denen HTTP-Caching zählt. Es ist nicht alles oder nichts — viele Systeme fahren beides, und wir empfehlen nach Client-Vielfalt und Datenform." },
+        { "question": "Was ist das N+1-Problem in GraphQL?", "answer": "Es ist der häufigste GraphQL-Performance-Killer. Eine Query für eine Liste von Elementen mit je einem Beziehungsfeld löst naiv eine Datenbankabfrage pro Element aus — 1 für die Liste plus N für die Beziehungen. Die Lösung ist DataLoader, der diese Lookups in eine Query pro Request bündelt und cacht. Wir bauen Resolver ab Tag eins mit DataLoader, weil das Nachrüsten schmerzhaft ist." },
+        { "question": "Ist GraphQL nicht ein Sicherheitsrisiko?", "answer": "GraphQLs Flexibilität lässt sich missbrauchen: Eine tief verschachtelte oder hochkomplexe Query kann Ihren Server überlasten, wenn ungeschützt. Wir mildern das mit Query-Tiefenlimits, Komplexitäts-Scoring, das teure Queries vor der Ausführung ablehnt, Rate-Limiting und dem Deaktivieren von Introspektion in der Produktion, wo sinnvoll. Feldweise Autorisierung stellt sicher, dass Clients nur erlaubte Daten anfragen. Richtig gemacht ist GraphQL so sicher wie eine gut gebaute REST-API." },
+        { "question": "Kann ich schrittweise von REST zu GraphQL migrieren?", "answer": "Ja, und das ist meist der sichere Weg. Wir können eine GraphQL-Schicht vor Ihre bestehenden REST-Endpunkte oder Datenbank setzen und einen Graphen bereitstellen, während die alte API weiterläuft. Clients migrieren Query für Query, und REST-Endpunkte gehen erst in Rente, wenn nichts mehr von ihnen abhängt. Ein Big-Bang-Rewrite ist selten nötig oder klug." },
+        { "question": "Unterstützt GraphQL Echtzeit-Daten?", "answer": "Ja, über Subscriptions, typischerweise per WebSocket. Ändern sich Daten auf dem Server — eine neue Nachricht, ein Preis-Update, eine Statusänderung — erhalten abonnierte Clients sie sofort ohne Polling. Wir implementieren Subscriptions dort, wo Live-Daten wirklich Mehrwert bringen, mit Augenmerk auf Skalierung, denn viele offene Verbindungen zu halten braucht dieselbe Sorgfalt wie jedes Echtzeitsystem." },
+        { "question": "Was ist GraphQL-Föderation und brauche ich sie?", "answer": "Föderation lässt Sie mehrere GraphQL-Services zu einem einheitlichen Graphen komponieren, sodass jedes Team seinen Schema-Teil besitzt, während Clients einen Endpunkt abfragen. Sie brauchen sie, wenn mehrere Teams oder Services zu einer API beitragen müssen — in größeren Organisationen üblich. Für eine einzelne Anwendung ist ein monolithisches Schema einfacher, und Sie sollten nicht vorschnell zur Föderation greifen. Wir sagen Ihnen, was zu Ihrem Maßstab passt." },
+        { "question": "Wie verbessert GraphQL die Frontend-Entwicklung?", "answer": "Frontend-Teams sind schneller, weil sie exakt die Daten jedes Screens in einem Round-Trip anfragen, ohne auf Backend-Änderungen für Felder zu warten. Das stark typisierte Schema ermöglicht Code-Generierung, sodass Frontend-Typen automatisch mit der API synchron bleiben, und Introspektion treibt exzellentes Tooling und Autocomplete an. Das Ergebnis sind weniger Integrationsbugs und weniger Hin und Her zwischen Teams." },
+        { "question": "Wie lange dauert der Bau einer GraphQL-API?", "answer": "Eine fokussierte GraphQL-API über ein sauberes Datenmodell dauert typischerweise 4–10 Wochen. Subscriptions, Föderation über mehrere Services, komplexe Autorisierung oder die Migration einer großen REST-Fläche verlängern das. Die größten Treiber sind Schema-Komplexität, die Zahl der Datenquellen, die Resolver koordinieren müssen, und wie streng Ihre Performance- und Security-Anforderungen sind." }
+      ],
+      "technologies": [
+        { "icon": "graphql", "name": "GraphQL" },
+        { "icon": "apollographql", "name": "Apollo Server" },
+        { "icon": "graphql", "name": "GraphQL Yoga" },
+        { "icon": "hasura", "name": "Hasura" },
+        { "icon": "prisma", "name": "Prisma" },
+        { "icon": "typescript", "name": "TypeScript" },
+        { "icon": "redis", "name": "Redis" },
+        { "icon": "nodedotjs", "name": "Node.js" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "GraphQL API ڈیولپمنٹ",
+    "shortDescription": "ایسی GraphQL APIs ڈیزائن اور تعمیر کریں جو clients کو بالکل وہی ڈیٹا fetch کرنے دیں جس کی انہیں ضرورت ہو — مضبوط typing، حقیقی وقت کی subscriptions، N+1 محفوظ resolvers، اور ایک ایپ سے federation تک اسکیل ہوتا schema ڈیزائن۔",
+    "fullDescription": "GraphQL کنٹرول frontend کو دیتا ہے: clients متعدد REST کالز جوڑنے یا over-fetch کرنے کے بجائے ایک ہی request میں بالکل وہی فیلڈز مانگتے ہیں جن کی انہیں ضرورت ہو۔ ہم آپ کے domain کے گرد ماڈل کیے schemas کے ساتھ، N+1 query کے جال سے DataLoader سے بچنے والے resolvers کے ساتھ، اور اس سیکیورٹی کے ساتھ جو GraphQL کو خاص طور پر چاہیے — query depth اور complexity حدود تاکہ کوئی ایک بدنیت query آپ کا سرور نہ گرا دے — GraphQL APIs ڈیزائن کرتے ہیں۔ ہم تصدیق، فیلڈ سطح کی اجازت، caching اور جہاں زندہ ڈیٹا اہم ہو وہاں حقیقی وقت کی subscriptions سنبھالتے ہیں۔ خواہ آپ نئی API بنا رہے ہوں، REST سے منتقل ہو رہے ہوں، یا federation سے کئی services جوڑ رہے ہوں، ہم ایک typed، introspectable، خود کو دستاویز کرنے والا انٹرفیس دیتے ہیں جو frontend ڈیولپمنٹ تیز کرتا ہے اور client-server معاہدے کو سچا رکھتا ہے۔",
+    "features": [
+      "Schema ڈیزائن اور Domain Modeling",
+      "Query، Mutation اور Subscription Resolvers",
+      "DataLoader اور N+1 Query روک تھام",
+      "فیلڈ سطح کی تصدیق اور اجازت",
+      "Query Depth اور Complexity حد بندی",
+      "Apollo Federation اور Schema Stitching",
+      "Caching اور Persisted Queries",
+      "REST سے GraphQL منتقلی"
+    ],
+    "benefits": [
+      "Clients بالکل درکار ڈیٹا fetch کرتے ہیں، over-fetching نہیں",
+      "ایک endpoint بکھری ہوئی REST سطح کی جگہ لیتا ہے",
+      "مضبوط typing اور introspection frontend کام تیز کرتے ہیں",
+      "لچک دار schema کی بدولت کم API versions",
+      "Subscriptions سے باکس میں موجود حقیقی وقت کا ڈیٹا",
+      "schema سے ہی خود کو دستاویز کرنے والا انٹرفیس"
+    ],
+    "metaTitle": "GraphQL API ڈیولپمنٹ | PakSoft",
+    "metaDescription": "N+1 محفوظ resolvers، subscriptions، complexity حدود اور federation کے ساتھ typed GraphQL APIs بنائیں۔ درست ڈیٹا fetch، تیز frontend۔ مفت تخمینہ لیں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Schema ڈیزائن", "description": "ہم آپ کے domain کو ایک صاف، typed GraphQL schema میں ماڈل کرتے ہیں — وہ معاہدہ جس پر ہر client اور resolver کا انحصار ہے۔ اچھی ڈیزائن کردہ schema GraphQL API کا سب سے اہم فیصلہ ہے، اس لیے ہم resolvers لکھنے سے پہلے یہاں سرمایہ کاری کرتے ہیں۔" },
+        { "step": 2, "title": "Resolver آرکیٹیکچر", "description": "ہم resolvers کو شروع ہی سے DataLoader batching کے ساتھ نافذ کرتے ہیں تاکہ اس N+1 query مسئلے سے بچا جا سکے جو خاموشی سے GraphQL کارکردگی تباہ کرتا ہے۔ Business logic services میں رہتی ہے، resolvers ایک پتلی، قابلِ ٹیسٹ پرت کے طور پر کام کرتے ہیں۔" },
+        { "step": 3, "title": "Auth اور سیکیورٹی سختی", "description": "ہم تصدیق اور فیلڈ سطح کی اجازت، مع query depth اور complexity حدود اور rate limiting شامل کرتے ہیں۔ GraphQL کی لچک ایک حملہ سطح بھی ہے، اس لیے ہم محدود کرتے ہیں کہ کوئی ایک query آپ کے ڈیٹابیس تک پہنچنے سے پہلے کتنا مانگ سکتی ہے۔" },
+        { "step": 4, "title": "Subscriptions اور Caching", "description": "جہاں زندہ ڈیٹا اہم ہو، ہم حقیقی وقت کی اپ ڈیٹس کے لیے WebSocket پر subscriptions شامل کرتے ہیں۔ ہم caching اور persisted queries کی پرت لگاتے ہیں تاکہ GraphQL کی لچک بار بار مہنگے کام کی قیمت پر نہ آئے۔" },
+        { "step": 5, "title": "Federation یا منتقلی", "description": "بڑے سسٹمز کے لیے ہم Apollo Federation سے کئی services کو ایک graph میں جوڑتے ہیں، یا موجودہ REST API کو بتدریج منتقل کرتے ہیں۔ آپ کو خطرناک big-bang دوبارہ تحریر کے بغیر ایک متحد graph ملتا ہے۔" },
+        { "step": 6, "title": "اوزار، دستاویزات اور لانچ", "description": "ہم code generation جوڑتے ہیں تاکہ frontend types schema کے ساتھ ہم آہنگ رہیں، introspectable، خود کو دستاویز کرنے والی API جاری کرتے ہیں اور سست resolvers کے لیے نگرانی شامل کرتے ہیں۔ لانچ کے بعد ہم سب سے گرم queries کو حقیقی استعمال کے ڈیٹا سے ٹیون کرتے ہیں۔" }
+      ],
+      "faq": [
+        { "question": "مجھے GraphQL کو REST کے بجائے کب چننا چاہیے؟", "answer": "GraphQL تب چمکتا ہے جب clients کو پیچیدہ، nested تعلقات سے لچک دار، درست ڈیٹا چاہیے ہو، جب آپ مختلف ڈیٹا ضروریات والے کئی مختلف frontends کو خدمت دیں، یا جب over-fetching اور under-fetching آپ کے REST endpoints کو ستائے۔ REST بنیادی CRUD، عوامی APIs اور ان معاملات کے لیے سادہ رہتا ہے جہاں HTTP caching اہم ہو۔ یہ سب یا کچھ نہیں — بہت سے سسٹم دونوں چلاتے ہیں اور ہم آپ کے client تنوع اور ڈیٹا کی شکل کے مطابق تجویز کرتے ہیں۔" },
+        { "question": "GraphQL میں N+1 مسئلہ کیا ہے؟", "answer": "یہ سب سے عام GraphQL کارکردگی قاتل ہے۔ items کی فہرست کی query، جن میں سے ہر ایک کا متعلقہ فیلڈ ہو، سادہ طریقے سے فی item ایک ڈیٹابیس query چلا دیتی ہے — فہرست کے لیے 1 مع تعلقات کے لیے N۔ حل DataLoader ہے، جو ان lookups کو فی request ایک ہی query میں batch اور cache کرتا ہے۔ ہم resolvers کو پہلے دن سے DataLoader کے ساتھ بناتے ہیں، کیونکہ بعد میں جوڑنا تکلیف دہ ہے۔" },
+        { "question": "کیا GraphQL سیکیورٹی خطرہ نہیں؟", "answer": "GraphQL کی لچک کا غلط استعمال ہو سکتا ہے: بغیر تحفظ ایک گہرائی سے nested یا بہت پیچیدہ query آپ کے سرور کو اوورلوڈ کر سکتی ہے۔ ہم اسے query depth حدود، عمل سے پہلے مہنگی queries کو رد کرنے والی complexity scoring، rate limiting اور مناسب جگہ production میں introspection بند کر کے کم کرتے ہیں۔ فیلڈ سطح کی اجازت یقینی بناتی ہے کہ clients صرف وہی ڈیٹا مانگ سکیں جس کی انہیں اجازت ہو۔ درست طور پر کی گئی GraphQL ایک اچھی بنی REST API جتنی محفوظ ہے۔" },
+        { "question": "کیا میں REST سے GraphQL کی طرف بتدریج منتقل ہو سکتا ہوں؟", "answer": "جی ہاں، اور یہ عموماً محفوظ راستہ ہے۔ ہم آپ کے موجودہ REST endpoints یا ڈیٹابیس کے سامنے ایک GraphQL پرت رکھ سکتے ہیں، پرانی API چلتی رہتے ہوئے ایک graph پیش کرتے ہیں۔ Clients query بہ query منتقل ہوتے ہیں اور آپ REST endpoints صرف تب ریٹائر کرتے ہیں جب کوئی چیز ان پر منحصر نہ رہے۔ Big-bang دوبارہ تحریر شاذ ہی ضروری یا دانشمندانہ ہے۔" },
+        { "question": "کیا GraphQL حقیقی وقت کے ڈیٹا کی حمایت کرتا ہے؟", "answer": "جی ہاں، subscriptions کے ذریعے، عموماً WebSocket پر۔ جب سرور پر ڈیٹا بدلتا ہے — نیا پیغام، قیمت اپ ڈیٹ، حالت کی تبدیلی — subscribe کیے clients اسے polling کے بغیر فوراً وصول کرتے ہیں۔ ہم subscriptions وہاں نافذ کرتے ہیں جہاں زندہ ڈیٹا واقعی قدر بڑھائے، اسکیلنگ پر توجہ کے ساتھ؛ کیونکہ بہت سے کھلے کنکشن برقرار رکھنا کسی بھی حقیقی وقت سسٹم جتنی احتیاط مانگتا ہے۔" },
+        { "question": "GraphQL federation کیا ہے اور کیا مجھے اس کی ضرورت ہے؟", "answer": "Federation آپ کو کئی GraphQL services کو ایک متحد graph میں جوڑنے دیتا ہے، تاکہ ہر ٹیم schema کا اپنا حصہ سنبھالے جبکہ clients ایک ہی endpoint query کریں۔ آپ کو اس کی ضرورت تب ہوتی ہے جب کئی ٹیموں یا services کو ایک API میں حصہ ڈالنا ہو — بڑی تنظیموں میں عام۔ ایک ہی ایپلیکیشن کے لیے monolithic schema سادہ ہے اور آپ کو federation کی طرف وقت سے پہلے نہیں جانا چاہیے۔ ہم بتاتے ہیں کہ آپ کے اسکیل کے لیے کون سا موزوں ہے۔" },
+        { "question": "GraphQL frontend ڈیولپمنٹ کو کیسے بہتر کرتا ہے؟", "answer": "Frontend ٹیمیں تیز چلتی ہیں کیونکہ وہ ہر اسکرین کا درکار ڈیٹا ایک ہی round trip میں مانگتی ہیں، فیلڈ شامل یا ہٹانے کے لیے backend تبدیلیوں کا انتظار کیے بغیر۔ مضبوط typed schema code generation ممکن بناتا ہے، تاکہ frontend types خودکار طور پر API کے ساتھ ہم آہنگ رہیں، اور introspection بہترین اوزار اور autocomplete کو طاقت دیتا ہے۔ نتیجہ کم انٹیگریشن bugs اور ٹیموں کے درمیان کم آگے پیچھے ہے۔" },
+        { "question": "GraphQL API بننے میں کتنا وقت لگتا ہے؟", "answer": "صاف ڈیٹا ماڈل پر مرکوز GraphQL API عموماً 4–10 ہفتے لیتی ہے۔ Subscriptions، کئی services میں federation، پیچیدہ اجازت شامل کرنا یا بڑی REST سطح منتقل کرنا اسے بڑھاتا ہے۔ سب سے بڑے عوامل schema کی پیچیدگی، resolvers کو جن ڈیٹا ذرائع کو مربوط کرنا ہے ان کی تعداد، اور آپ کی کارکردگی اور سیکیورٹی ضروریات کی سختی ہیں۔" }
+      ],
+      "technologies": [
+        { "icon": "graphql", "name": "GraphQL" },
+        { "icon": "apollographql", "name": "Apollo Server" },
+        { "icon": "graphql", "name": "GraphQL Yoga" },
+        { "icon": "hasura", "name": "Hasura" },
+        { "icon": "prisma", "name": "Prisma" },
+        { "icon": "typescript", "name": "TypeScript" },
+        { "icon": "redis", "name": "Redis" },
+        { "icon": "nodedotjs", "name": "Node.js" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تطوير واجهات GraphQL API",
+    "shortDescription": "صمّموا وابنوا واجهات GraphQL تتيح للعملاء جلب البيانات التي يحتاجونها بالضبط — كتابة أنواع قوية، واشتراكات لحظية، ومحلّلات آمنة من N+1، وتصميم مخطط يتوسّع من تطبيق واحد إلى الاتحاد.",
+    "fullDescription": "يمنح GraphQL الواجهة الأمامية التحكّم: يطلب العملاء الحقول التي يحتاجونها بالضبط في طلب واحد بدل تجميع عدة نداءات REST أو الجلب الزائد. نصمّم واجهات GraphQL بمخططات منمذجة حول نطاقكم، ومحلّلات مبنية لتجنّب فخّ N+1 بـ DataLoader، والأمن الذي يحتاجه GraphQL تحديداً — حدود عمق الاستعلام وتعقيده كي لا يُسقِط استعلام خبيث واحد خادمكم. ونتولى المصادقة والتفويض على مستوى الحقل والتخزين المؤقت والاشتراكات اللحظية حيث تهم البيانات الحية. وسواء بنيتم واجهة جديدة أو هاجرتم من REST أو جمعتم عدة خدمات بالاتحاد، نقدّم واجهة مكتوبة الأنواع وقابلة للاستبطان وموثِّقة لذاتها تسرّع تطوير الواجهة الأمامية وتُبقي عقد العميل والخادم صادقاً.",
+    "features": [
+      "تصميم المخطط ونمذجة النطاق",
+      "محلّلات الاستعلام والتعديل والاشتراك",
+      "DataLoader ومنع استعلامات N+1",
+      "مصادقة وتفويض على مستوى الحقل",
+      "تقييد عمق الاستعلام وتعقيده",
+      "Apollo Federation وتجميع المخططات",
+      "التخزين المؤقت والاستعلامات الثابتة",
+      "الترحيل من REST إلى GraphQL"
+    ],
+    "benefits": [
+      "العملاء يجلبون البيانات اللازمة بالضبط دون جلب زائد",
+      "نقطة نهاية واحدة تحلّ محل سطح REST متناثر",
+      "كتابة الأنواع القوية والاستبطان يسرّعان عمل الواجهة",
+      "نسخ واجهة أقل بفضل مخطط مرن",
+      "بيانات لحظية عبر الاشتراكات جاهزة",
+      "واجهة موثِّقة لذاتها من المخطط نفسه"
+    ],
+    "metaTitle": "تطوير واجهات GraphQL API | PakSoft",
+    "metaDescription": "ابنوا واجهات GraphQL مكتوبة الأنواع بمحلّلات آمنة من N+1 واشتراكات وحدود تعقيد واتحاد. جلب دقيق للبيانات وواجهات أسرع. اطلبوا تقديراً مجانياً.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "تصميم المخطط", "description": "ننمذج نطاقكم في مخطط GraphQL نظيف مكتوب الأنواع — العقد الذي يعتمد عليه كل عميل ومحلّل. والمخطط الحسن التصميم هو أهم قرار في واجهة GraphQL، لذا نستثمر هنا قبل كتابة المحلّلات." },
+        { "step": 2, "title": "بنية المحلّلات", "description": "ننفّذ المحلّلات بتجميع DataLoader من البداية لتجنّب مشكلة استعلامات N+1 التي تدمّر أداء GraphQL بهدوء. يبقى منطق العمل في الخدمات، وتعمل المحلّلات كطبقة رفيعة قابلة للاختبار." },
+        { "step": 3, "title": "المصادقة وتقوية الأمن", "description": "نضيف المصادقة والتفويض على مستوى الحقل، إضافة إلى حدود عمق الاستعلام وتعقيده وتحديد المعدّل. مرونة GraphQL سطح هجوم أيضاً، لذا نحدّ ما يمكن أن يطلبه استعلام واحد قبل أن يصل قاعدة بياناتكم." },
+        { "step": 4, "title": "الاشتراكات والتخزين المؤقت", "description": "حيث تهم البيانات الحية، نضيف اشتراكات عبر WebSockets للتحديثات اللحظية. ونضع التخزين المؤقت والاستعلامات الثابتة كي لا تأتي مرونة GraphQL بكلفة عمل مكلِّف متكرر." },
+        { "step": 5, "title": "الاتحاد أو الترحيل", "description": "للأنظمة الأكبر نؤلّف عدة خدمات في رسم بياني واحد بـ Apollo Federation، أو نرحّل واجهة REST قائمة تدريجياً. تحصلون على رسم بياني موحّد دون إعادة كتابة شاملة محفوفة بالمخاطر." },
+        { "step": 6, "title": "الأدوات والتوثيق والإطلاق", "description": "نهيّئ توليد الكود كي تبقى أنواع الواجهة الأمامية متزامنة مع المخطط، ونطلق الواجهة القابلة للاستبطان الموثِّقة لذاتها ونضيف مراقبة للمحلّلات البطيئة. وبعد الإطلاق نضبط أكثر الاستعلامات سخونة ببيانات استخدام حقيقية." }
+      ],
+      "faq": [
+        { "question": "متى أختار GraphQL بدل REST؟", "answer": "يتألق GraphQL حين يحتاج العملاء بيانات مرنة دقيقة من علاقات معقدة متشعّبة، أو حين تخدمون واجهات أمامية كثيرة بحاجات بيانات مختلفة، أو حين يبتلي الجلب الزائد والناقص نقاط REST لديكم. ويبقى REST أبسط للـ CRUD الأساسي والواجهات العامة والحالات التي يهم فيها تخزين HTTP المؤقت. وليس الأمر كل شيء أو لا شيء — كثير من الأنظمة يشغّل كليهما، ونوصي بحسب تنوّع عملائكم وشكل بياناتكم." },
+        { "question": "ما مشكلة N+1 في GraphQL؟", "answer": "هي أكثر قاتلات أداء GraphQL شيوعاً. استعلام لقائمة عناصر لكل منها حقل مرتبط يُطلِق ساذجاً استعلام قاعدة بيانات واحداً لكل عنصر — 1 للقائمة وN للعلاقات. والحل هو DataLoader الذي يجمّع ويخزّن هذه الاستعلامات في استعلام واحد لكل طلب. نبني المحلّلات منذ اليوم الأول بـ DataLoader، لأن إضافته لاحقاً مؤلمة." },
+        { "question": "أليس GraphQL خطراً أمنياً؟", "answer": "يمكن إساءة استخدام مرونة GraphQL: استعلام متشعّب بعمق أو شديد التعقيد قد يُثقِل خادمكم إن لم يكن محمياً. نخفّف ذلك بحدود عمق الاستعلام، وتسجيل تعقيد يرفض الاستعلامات المكلفة قبل التنفيذ، وتحديد المعدّل، وتعطيل الاستبطان في الإنتاج حيث يناسب. ويضمن التفويض على مستوى الحقل أن يطلب العملاء فقط البيانات المسموح لهم برؤيتها. وحين يُنفَّذ بصحة، GraphQL آمن كواجهة REST حسنة البناء." },
+        { "question": "هل يمكنني الترحيل من REST إلى GraphQL تدريجياً؟", "answer": "نعم، وهذا عادة المسار الآمن. يمكننا وضع طبقة GraphQL أمام نقاط REST الحالية أو قاعدة بياناتكم، فنكشف رسماً بيانياً بينما تظل الواجهة القديمة تعمل. يهاجر العملاء استعلاماً باستعلام، ولا تتقاعد نقاط REST إلا حين لا يعتمد عليها شيء. وإعادة الكتابة الشاملة نادراً ما تكون ضرورية أو حكيمة." },
+        { "question": "هل يدعم GraphQL البيانات اللحظية؟", "answer": "نعم، عبر الاشتراكات، عادة بـ WebSockets. حين تتغيّر البيانات على الخادم — رسالة جديدة أو تحديث سعر أو تغيّر حالة — يتلقّاها العملاء المشتركون فوراً دون استطلاع. ننفّذ الاشتراكات حيث تضيف البيانات الحية قيمة فعلاً، مع اهتمام بالتوسّع، لأن الإبقاء على اتصالات مفتوحة كثيرة يحتاج العناية ذاتها لأي نظام لحظي." },
+        { "question": "ما اتحاد GraphQL وهل أحتاجه؟", "answer": "يتيح الاتحاد تأليف عدة خدمات GraphQL في رسم بياني موحّد، فيملك كل فريق جزءه من المخطط بينما يستعلم العملاء نقطة واحدة. تحتاجونه حين يجب أن تسهم فرق أو خدمات متعددة في واجهة واحدة — شائع في المؤسسات الأكبر. ولتطبيق واحد، المخطط الأحادي أبسط ولا ينبغي اللجوء إلى الاتحاد سابقاً لأوانه. سنخبركم بما يناسب حجمكم." },
+        { "question": "كيف يحسّن GraphQL تطوير الواجهة الأمامية؟", "answer": "تتحرك فرق الواجهة الأمامية أسرع لأنها تطلب بيانات كل شاشة بالضبط في جولة واحدة، دون انتظار تغييرات الخلفية لإضافة حقول أو إزالتها. ويتيح المخطط القوي الكتابة توليد الكود، فتبقى أنواع الواجهة متزامنة مع API تلقائياً، ويغذّي الاستبطان أدوات ممتازة وإكمالاً تلقائياً. والنتيجة أخطاء تكامل أقل وتبادل أقل بين الفرق." },
+        { "question": "كم يستغرق بناء واجهة GraphQL؟", "answer": "واجهة GraphQL مركّزة فوق نموذج بيانات نظيف تستغرق عادة 4–10 أسابيع. وإضافة الاشتراكات أو الاتحاد عبر عدة خدمات أو تفويض معقد أو ترحيل سطح REST كبير يمدّد ذلك. أكبر المحركات هي تعقيد المخطط، وعدد مصادر البيانات التي يجب أن تنسّقها المحلّلات، وصرامة متطلبات الأداء والأمن لديكم." }
+      ],
+      "technologies": [
+        { "icon": "graphql", "name": "GraphQL" },
+        { "icon": "apollographql", "name": "Apollo Server" },
+        { "icon": "graphql", "name": "GraphQL Yoga" },
+        { "icon": "hasura", "name": "Hasura" },
+        { "icon": "prisma", "name": "Prisma" },
+        { "icon": "typescript", "name": "TypeScript" },
+        { "icon": "redis", "name": "Redis" },
+        { "icon": "nodedotjs", "name": "Node.js" }
+      ]
+    }
+  }
+}

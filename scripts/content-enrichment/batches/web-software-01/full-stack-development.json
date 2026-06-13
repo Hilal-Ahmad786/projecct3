@@ -1,0 +1,278 @@
+{
+  "slug": "full-stack-development",
+  "en": {
+    "name": "Full-Stack Development",
+    "shortDescription": "Build complete web applications end to end with one team — React and Next.js on the front, Node.js or Python on the back, databases, APIs, and deployment all owned under a single coherent architecture.",
+    "fullDescription": "Full-stack development means one team owns the whole picture, so there's no finger-pointing between frontend and backend when something breaks. We design, build, and ship complete web applications: typed React and Next.js interfaces, Node.js or Python APIs, a well-modeled database, authentication, and cloud deployment with CI/CD. Sharing TypeScript and types across the stack keeps the contract between client and server honest, catching mismatches at build time instead of in production. This unified approach speeds iteration because the same engineers carry context from the database schema to the button a user clicks. The result is a cohesive product with consistent architecture, fewer integration seams, and a codebase your team can keep extending long after launch.",
+    "features": [
+      "React & Next.js Frontend",
+      "Node.js & Python Backend",
+      "Database Design & ORM (Prisma) Integration",
+      "REST & GraphQL API Development",
+      "Authentication & Authorization",
+      "Real-Time Features (WebSockets)",
+      "CI/CD Pipeline Setup",
+      "Cloud Deployment & Scaling"
+    ],
+    "benefits": [
+      "One team owns the stack, removing handoff delays",
+      "Consistent architecture from UI to database",
+      "Type safety end to end catches bugs early",
+      "Faster iteration with shared context across layers",
+      "Unified testing strategy across frontend and backend",
+      "Cost-effective versus separate specialist teams"
+    ],
+    "metaTitle": "Full-Stack Development — Next.js & Node | PakSoft",
+    "metaDescription": "End-to-end full-stack development with Next.js, Node.js, and TypeScript: APIs, databases, auth, and cloud deployment under one team. Get a free project estimate.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Discovery & Architecture", "description": "We turn your idea into a concrete plan: data model, API surface, page structure, and a tech stack chosen for your timeline and team. You leave with an architecture that spans the whole app, not a frontend and backend that meet awkwardly in the middle." },
+        { "step": 2, "title": "Foundation & Data Model", "description": "We set up the repository, database schema, and shared types so the contract between client and server is defined once. Auth, environment config, and a CI pipeline go in early, because retrofitting them later is painful." },
+        { "step": 3, "title": "API & Backend Build", "description": "We implement the server-side logic, endpoints, and integrations with validation and tests. Business rules live in the backend where they belong, exposed through clean APIs the frontend can rely on." },
+        { "step": 4, "title": "Frontend & Integration", "description": "We build the UI against those typed APIs, so the two halves fit together without guesswork. Loading, error, and empty states are handled, and the interface is responsive and accessible from the first screen." },
+        { "step": 5, "title": "Testing & Hardening", "description": "We add unit, integration, and end-to-end tests covering the critical user flows, plus security and performance checks. Because one team wrote both ends, tests exercise the real path from click to database and back." },
+        { "step": 6, "title": "Deploy, Monitor & Iterate", "description": "We containerize, deploy with zero-downtime rollouts, and add logging and metrics across the stack. Post-launch, we iterate on real usage data with the same team that built it, so improvements ship fast." }
+      ],
+      "faq": [
+        { "question": "What does 'full-stack' actually get me?", "answer": "It means a single team is accountable for the entire application — UI, API, database, and deployment — rather than separate frontend and backend vendors who each blame the other when something breaks. That removes coordination overhead and integration gaps, and it's usually faster and cheaper for small-to-medium projects. For very large systems, specialized teams per layer can make sense, and we'll tell you when that's the case." },
+        { "question": "What stack do you build on?", "answer": "Our default is Next.js and React with TypeScript on the frontend, Node.js or Python on the backend, PostgreSQL with Prisma for data, and deployment to Vercel or a cloud provider. We're not dogmatic — if your team already runs Django or a particular cloud, we adapt. The stack should fit your maintenance capacity, not just our preferences." },
+        { "question": "Can Next.js be the whole backend too?", "answer": "For many products, yes. Next.js API routes and server actions handle authentication, database access, and integrations well enough that you don't need a separate backend service. When you need heavy background processing, a separate language for performance, or a backend shared across web and mobile, we split it out into a dedicated service. We start simple and grow the architecture as the requirements demand." },
+        { "question": "How long does a full-stack app take?", "answer": "A focused MVP with auth, a database, and core features typically takes 6–12 weeks. A full product with complex workflows, real-time features, payments, and multiple integrations runs 3–6 months. Because one team carries context across the stack, full-stack builds often move faster than splitting the same work between separate frontend and backend vendors." },
+        { "question": "How does type safety work across the stack?", "answer": "We share TypeScript types — or generate them — between the API and the frontend, so the shape of every request and response is checked at build time. If you change a field in the backend, the frontend won't compile until it's updated to match. This eliminates a whole category of integration bugs that plague projects where the two halves drift apart." },
+        { "question": "Do you set up deployment and CI/CD?", "answer": "Yes, from the start. We containerize where appropriate, configure a CI pipeline that runs tests and builds on every commit, and set up zero-downtime deployments. We also add monitoring and logging so you can see how the live app behaves. Shipping is part of development, not an afterthought handed to someone else." },
+        { "question": "Can you add real-time features?", "answer": "Yes. We build live updates, collaborative editing, notifications, and chat using WebSockets or managed services like Pusher or Ably. Real-time done right needs careful attention to scaling and reconnection handling, which is exactly the kind of cross-cutting concern a full-stack team handles well because we own both the server and the client side." },
+        { "question": "Will I be locked in to you for maintenance?", "answer": "No. We write documented, conventional code on mainstream technologies precisely so any competent team can take it over. You own the repository and infrastructure. We're happy to provide ongoing support if you want it, but it should be your choice, not a consequence of opaque or unusual code we made hard to hand off." }
+      ],
+      "technologies": [
+        { "icon": "nextdotjs", "name": "Next.js" },
+        { "icon": "react", "name": "React" },
+        { "icon": "nodedotjs", "name": "Node.js" },
+        { "icon": "typescript", "name": "TypeScript" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "prisma", "name": "Prisma" },
+        { "icon": "docker", "name": "Docker" },
+        { "icon": "vercel", "name": "Vercel" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Full-Stack Geliştirme",
+    "shortDescription": "Tek bir ekiple tam web uygulamalarını baştan sona kurun — önde React ve Next.js, arkada Node.js veya Python, veritabanları, API'ler ve dağıtım hepsi tek tutarlı mimari altında.",
+    "fullDescription": "Full-stack geliştirme, bir ekibin tüm resmi sahiplenmesi demektir; böylece bir şey bozulduğunda frontend ile backend arasında parmakla işaretleme olmaz. Tam web uygulamalarını tasarlar, kurar ve yayınlarız: tipli React ve Next.js arayüzleri, Node.js veya Python API'ler, iyi modellenmiş bir veritabanı, kimlik doğrulama ve CI/CD ile bulut dağıtımı. TypeScript ve tipleri yığın boyunca paylaşmak, istemci ile sunucu arasındaki sözleşmeyi dürüst tutar; uyumsuzlukları üretimde değil derleme zamanında yakalar. Bu birleşik yaklaşım yinelemeyi hızlandırır; çünkü aynı mühendisler veritabanı şemasından kullanıcının tıkladığı düğmeye kadar bağlamı taşır. Sonuç; tutarlı mimariye, daha az entegrasyon dikişine ve ekibinizin lansmandan çok sonra bile genişletmeye devam edebileceği bir kod tabanına sahip uyumlu bir üründür.",
+    "features": [
+      "React ve Next.js Frontend",
+      "Node.js ve Python Backend",
+      "Veritabanı Tasarımı ve ORM (Prisma) Entegrasyonu",
+      "REST ve GraphQL API Geliştirme",
+      "Kimlik Doğrulama ve Yetkilendirme",
+      "Gerçek Zamanlı Özellikler (WebSockets)",
+      "CI/CD Pipeline Kurulumu",
+      "Bulut Dağıtımı ve Ölçekleme"
+    ],
+    "benefits": [
+      "Tek ekip yığını sahiplenir, devir gecikmelerini ortadan kaldırır",
+      "UI'dan veritabanına tutarlı mimari",
+      "Uçtan uca tip güvenliği hataları erken yakalar",
+      "Katmanlar arası paylaşılan bağlamla daha hızlı yineleme",
+      "Frontend ve backend boyunca birleşik test stratejisi",
+      "Ayrı uzman ekiplere kıyasla maliyet etkin"
+    ],
+    "metaTitle": "Full-Stack Geliştirme — Next.js ve Node | PakSoft",
+    "metaDescription": "Next.js, Node.js ve TypeScript ile uçtan uca full-stack geliştirme: API'ler, veritabanları, kimlik doğrulama ve bulut dağıtımı tek ekipte. Ücretsiz teklif alın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Keşif ve Mimari", "description": "Fikrinizi somut bir plana dönüştürürüz: veri modeli, API yüzeyi, sayfa yapısı ve zaman planınıza ve ekibinize göre seçilmiş bir teknoloji yığını. Ortada tuhaf biçimde buluşan bir frontend ve backend değil, tüm uygulamayı kapsayan bir mimariyle ayrılırsınız." },
+        { "step": 2, "title": "Temel ve Veri Modeli", "description": "Depoyu, veritabanı şemasını ve paylaşılan tipleri kurarız; böylece istemci ile sunucu arasındaki sözleşme bir kez tanımlanır. Kimlik doğrulama, ortam yapılandırması ve bir CI hattı erken eklenir, çünkü bunları sonradan eklemek zahmetlidir." },
+        { "step": 3, "title": "API ve Backend Yapımı", "description": "Sunucu tarafı mantığı, uç noktaları ve entegrasyonları doğrulama ve testlerle uygularız. İş kuralları ait oldukları backend'de yaşar, frontend'in güvenebileceği temiz API'ler aracılığıyla sunulur." },
+        { "step": 4, "title": "Frontend ve Entegrasyon", "description": "Arayüzü bu tipli API'lere karşı kurarız; böylece iki yarı tahmin olmadan birbirine oturur. Yükleme, hata ve boş durumlar ele alınır ve arayüz ilk ekrandan itibaren duyarlı ve erişilebilirdir." },
+        { "step": 5, "title": "Test ve Sağlamlaştırma", "description": "Kritik kullanıcı akışlarını kapsayan birim, entegrasyon ve uçtan uca testler ile güvenlik ve performans kontrolleri ekleriz. İki ucu da aynı ekip yazdığı için testler tıklamadan veritabanına ve geri dönen gerçek yolu çalıştırır." },
+        { "step": 6, "title": "Dağıt, İzle ve Yinele", "description": "Konteynerler, sıfır kesintili dağıtımlarla yayınlar ve yığın boyunca loglama ve metrik ekleriz. Lansman sonrası, onu inşa eden aynı ekiple gerçek kullanım verisi üzerinde yineleriz; böylece iyileştirmeler hızlı çıkar." }
+      ],
+      "faq": [
+        { "question": "'Full-stack' bana gerçekte ne kazandırır?", "answer": "Tek bir ekibin tüm uygulamadan — UI, API, veritabanı ve dağıtım — sorumlu olması demektir; bir şey bozulduğunda birbirini suçlayan ayrı frontend ve backend tedarikçileri değil. Bu, koordinasyon yükünü ve entegrasyon boşluklarını ortadan kaldırır ve küçük-orta projeler için genellikle daha hızlı ve ucuzdur. Çok büyük sistemlerde katman başına uzman ekipler mantıklı olabilir ve bu durumun ne zaman geçerli olduğunu size söyleriz." },
+        { "question": "Hangi yığın üzerine kuruyorsunuz?", "answer": "Varsayılanımız frontend'de TypeScript ile Next.js ve React, backend'de Node.js veya Python, veri için Prisma ile PostgreSQL ve Vercel veya bir bulut sağlayıcıya dağıtımdır. Dogmatik değiliz — ekibiniz zaten Django veya belirli bir bulut çalıştırıyorsa uyum sağlarız. Yığın yalnızca bizim tercihlerimize değil, sizin bakım kapasitenize uymalıdır." },
+        { "question": "Next.js tüm backend de olabilir mi?", "answer": "Birçok ürün için evet. Next.js API rotaları ve server action'lar kimlik doğrulama, veritabanı erişimi ve entegrasyonları ayrı bir backend servisine ihtiyaç duymayacak kadar iyi halleder. Ağır arka plan işleme, performans için ayrı bir dil veya web ile mobil arasında paylaşılan bir backend gerektiğinde, bunu özel bir servise ayırırız. Basit başlar ve mimariyi gereksinimler talep ettikçe büyütürüz." },
+        { "question": "Bir full-stack uygulama ne kadar sürer?", "answer": "Kimlik doğrulama, bir veritabanı ve temel özellikler içeren odaklı bir MVP genellikle 6–12 hafta sürer. Karmaşık iş akışları, gerçek zamanlı özellikler, ödemeler ve çoklu entegrasyon içeren tam bir ürün 3–6 aya çıkar. Tek ekip yığın boyunca bağlam taşıdığı için, full-stack yapımlar aynı işi ayrı frontend ve backend tedarikçileri arasında bölmekten çoğu zaman daha hızlı ilerler." },
+        { "question": "Tip güvenliği yığın boyunca nasıl çalışır?", "answer": "TypeScript tiplerini API ile frontend arasında paylaşır veya üretiriz; böylece her isteğin ve yanıtın biçimi derleme zamanında kontrol edilir. Backend'de bir alanı değiştirirseniz, frontend eşleşecek şekilde güncellenene kadar derlenmez. Bu, iki yarının birbirinden uzaklaştığı projeleri rahatsız eden bütün bir entegrasyon hatası kategorisini ortadan kaldırır." },
+        { "question": "Dağıtım ve CI/CD'yi siz mi kuruyorsunuz?", "answer": "Evet, baştan. Uygun yerde konteynerleştirir, her commit'te test ve derleme çalıştıran bir CI hattı yapılandırır ve sıfır kesintili dağıtımlar kurarız. Ayrıca canlı uygulamanın nasıl davrandığını görebilmeniz için izleme ve loglama ekleriz. Yayınlamak geliştirmenin parçasıdır, başkasına devredilen sonradan akla gelen bir şey değil." },
+        { "question": "Gerçek zamanlı özellikler ekleyebilir misiniz?", "answer": "Evet. WebSockets veya Pusher ya da Ably gibi yönetilen servislerle canlı güncellemeler, ortak düzenleme, bildirimler ve sohbet kurarız. Doğru yapılan gerçek zaman; ölçekleme ve yeniden bağlanma yönetimine dikkat gerektirir; bu da tam olarak full-stack bir ekibin iyi hallettiği türden bir kesişen kaygıdır, çünkü hem sunucu hem istemci tarafını sahipleniriz." },
+        { "question": "Bakım için size bağımlı kalır mıyım?", "answer": "Hayır. Tam olarak herhangi bir yetkin ekibin devralabilmesi için ana akım teknolojilerde belgelenmiş, geleneksel kod yazarız. Depo ve altyapı sizindir. İsterseniz sürekli destek vermekten memnuniyet duyarız ama bu sizin seçiminiz olmalı, devretmesi zor olacak şekilde yaptığımız opak veya alışılmadık kodun sonucu değil." }
+      ],
+      "technologies": [
+        { "icon": "nextdotjs", "name": "Next.js" },
+        { "icon": "react", "name": "React" },
+        { "icon": "nodedotjs", "name": "Node.js" },
+        { "icon": "typescript", "name": "TypeScript" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "prisma", "name": "Prisma" },
+        { "icon": "docker", "name": "Docker" },
+        { "icon": "vercel", "name": "Vercel" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Full-Stack-Entwicklung",
+    "shortDescription": "Bauen Sie komplette Webanwendungen durchgängig mit einem Team — React und Next.js vorn, Node.js oder Python hinten, Datenbanken, APIs und Deployment unter einer kohärenten Architektur.",
+    "fullDescription": "Full-Stack-Entwicklung bedeutet, dass ein Team das Gesamtbild besitzt, sodass es kein Fingerzeigen zwischen Frontend und Backend gibt, wenn etwas bricht. Wir konzipieren, bauen und liefern komplette Webanwendungen: typisierte React- und Next.js-Oberflächen, Node.js- oder Python-APIs, ein gut modelliertes Datenbankschema, Authentifizierung und Cloud-Deployment mit CI/CD. TypeScript und Typen über den Stack zu teilen hält den Vertrag zwischen Client und Server ehrlich und fängt Abweichungen zur Build-Zeit statt in der Produktion. Dieser einheitliche Ansatz beschleunigt Iteration, weil dieselben Entwickler Kontext vom Datenbankschema bis zum Button tragen, den ein Nutzer klickt. Das Ergebnis ist ein kohärentes Produkt mit konsistenter Architektur, weniger Integrationsnähten und einer Codebasis, die Ihr Team lange nach dem Launch weiter ausbauen kann.",
+    "features": [
+      "React- & Next.js-Frontend",
+      "Node.js- & Python-Backend",
+      "Datenbankdesign & ORM-Integration (Prisma)",
+      "REST- & GraphQL-API-Entwicklung",
+      "Authentifizierung & Autorisierung",
+      "Echtzeit-Funktionen (WebSockets)",
+      "CI/CD-Pipeline-Setup",
+      "Cloud-Deployment & Skalierung"
+    ],
+    "benefits": [
+      "Ein Team besitzt den Stack und beseitigt Handoff-Verzögerungen",
+      "Konsistente Architektur von UI bis Datenbank",
+      "Durchgängige Typsicherheit fängt Bugs früh",
+      "Schnellere Iteration durch geteilten Kontext über Schichten",
+      "Einheitliche Teststrategie über Frontend und Backend",
+      "Kosteneffizient gegenüber getrennten Spezialisten-Teams"
+    ],
+    "metaTitle": "Full-Stack-Entwicklung — Next.js & Node | PakSoft",
+    "metaDescription": "Durchgängige Full-Stack-Entwicklung mit Next.js, Node.js und TypeScript: APIs, Datenbanken, Auth und Cloud-Deployment in einem Team. Kostenloses Angebot anfordern.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Discovery & Architektur", "description": "Wir machen aus Ihrer Idee einen konkreten Plan: Datenmodell, API-Fläche, Seitenstruktur und einen Stack, gewählt nach Timeline und Team. Sie gehen mit einer Architektur heraus, die die ganze App umspannt — nicht mit Frontend und Backend, die sich in der Mitte umständlich treffen." },
+        { "step": 2, "title": "Fundament & Datenmodell", "description": "Wir richten Repository, Datenbankschema und geteilte Typen ein, sodass der Vertrag zwischen Client und Server einmal definiert ist. Auth, Umgebungskonfiguration und eine CI-Pipeline kommen früh, weil das spätere Nachrüsten schmerzhaft ist." },
+        { "step": 3, "title": "API- & Backend-Bau", "description": "Wir implementieren serverseitige Logik, Endpunkte und Integrationen mit Validierung und Tests. Geschäftsregeln leben im Backend, wo sie hingehören, bereitgestellt über saubere APIs, auf die sich das Frontend verlassen kann." },
+        { "step": 4, "title": "Frontend & Integration", "description": "Wir bauen die UI gegen diese typisierten APIs, sodass die beiden Hälften ohne Rätselraten zusammenpassen. Lade-, Fehler- und Leer-Zustände sind behandelt, und die Oberfläche ist vom ersten Screen an responsiv und barrierefrei." },
+        { "step": 5, "title": "Testing & Hardening", "description": "Wir ergänzen Unit-, Integrations- und End-to-End-Tests für die kritischen User-Flows plus Security- und Performance-Checks. Weil ein Team beide Enden schrieb, durchlaufen Tests den echten Weg von Klick zu Datenbank und zurück." },
+        { "step": 6, "title": "Deploy, Monitoring & Iteration", "description": "Wir containerisieren, deployen mit Zero-Downtime-Rollouts und ergänzen Logging und Metriken über den Stack. Nach dem Launch iterieren wir mit demselben Team an echten Nutzungsdaten, sodass Verbesserungen schnell ausgeliefert werden." }
+      ],
+      "faq": [
+        { "question": "Was bringt mir 'Full-Stack' konkret?", "answer": "Ein einziges Team verantwortet die gesamte Anwendung — UI, API, Datenbank und Deployment — statt getrennter Frontend- und Backend-Dienstleister, die sich bei Problemen gegenseitig die Schuld geben. Das beseitigt Koordinationsaufwand und Integrationslücken und ist für kleine bis mittlere Projekte meist schneller und günstiger. Bei sehr großen Systemen können spezialisierte Teams pro Schicht sinnvoll sein, und wir sagen Ihnen, wann das zutrifft." },
+        { "question": "Auf welchem Stack bauen Sie?", "answer": "Unser Default ist Next.js und React mit TypeScript im Frontend, Node.js oder Python im Backend, PostgreSQL mit Prisma für Daten und Deployment zu Vercel oder einem Cloud-Anbieter. Wir sind nicht dogmatisch — läuft Ihr Team bereits Django oder eine bestimmte Cloud, passen wir uns an. Der Stack muss zu Ihrer Wartungskapazität passen, nicht nur zu unseren Vorlieben." },
+        { "question": "Kann Next.js auch das ganze Backend sein?", "answer": "Für viele Produkte ja. Next.js-API-Routes und Server-Actions handhaben Authentifizierung, Datenbankzugriff und Integrationen gut genug, dass kein separater Backend-Dienst nötig ist. Bei schwerer Hintergrundverarbeitung, einer eigenen Sprache für Performance oder einem zwischen Web und Mobile geteilten Backend lagern wir das in einen dedizierten Service aus. Wir starten einfach und lassen die Architektur mit den Anforderungen wachsen." },
+        { "question": "Wie lange dauert eine Full-Stack-App?", "answer": "Ein fokussiertes MVP mit Auth, Datenbank und Kernfunktionen dauert typischerweise 6–12 Wochen. Ein vollwertiges Produkt mit komplexen Workflows, Echtzeit-Funktionen, Zahlungen und mehreren Integrationen läuft 3–6 Monate. Weil ein Team Kontext über den Stack trägt, sind Full-Stack-Builds oft schneller, als dieselbe Arbeit auf getrennte Frontend- und Backend-Dienstleister aufzuteilen." },
+        { "question": "Wie funktioniert Typsicherheit über den Stack?", "answer": "Wir teilen TypeScript-Typen — oder generieren sie — zwischen API und Frontend, sodass die Form jeder Anfrage und Antwort zur Build-Zeit geprüft wird. Ändern Sie ein Feld im Backend, kompiliert das Frontend nicht, bis es passend aktualisiert ist. Das eliminiert eine ganze Kategorie von Integrationsbugs, die Projekte plagen, in denen die beiden Hälften auseinanderdriften." },
+        { "question": "Richten Sie Deployment und CI/CD ein?", "answer": "Ja, von Anfang an. Wir containerisieren wo sinnvoll, konfigurieren eine CI-Pipeline, die bei jedem Commit Tests und Builds fährt, und richten Zero-Downtime-Deployments ein. Außerdem ergänzen wir Monitoring und Logging, damit Sie sehen, wie die Live-App sich verhält. Ausliefern ist Teil der Entwicklung, kein Nachgedanke für jemand anderen." },
+        { "question": "Können Sie Echtzeit-Funktionen ergänzen?", "answer": "Ja. Wir bauen Live-Updates, kollaboratives Editieren, Benachrichtigungen und Chat mit WebSockets oder Managed Services wie Pusher oder Ably. Richtig gemachte Echtzeit erfordert Sorgfalt bei Skalierung und Reconnect-Handling — genau die Art übergreifender Aufgabe, die ein Full-Stack-Team gut löst, weil wir Server- und Client-Seite besitzen." },
+        { "question": "Bin ich für die Wartung an Sie gebunden?", "answer": "Nein. Wir schreiben dokumentierten, konventionellen Code auf Mainstream-Technologien, genau damit jedes kompetente Team ihn übernehmen kann. Repository und Infrastruktur gehören Ihnen. Wir bieten gern laufenden Support, wenn Sie das wünschen, aber es soll Ihre Wahl sein, nicht die Folge undurchsichtigen oder ungewöhnlichen Codes, den wir schwer übergebbar gemacht haben." }
+      ],
+      "technologies": [
+        { "icon": "nextdotjs", "name": "Next.js" },
+        { "icon": "react", "name": "React" },
+        { "icon": "nodedotjs", "name": "Node.js" },
+        { "icon": "typescript", "name": "TypeScript" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "prisma", "name": "Prisma" },
+        { "icon": "docker", "name": "Docker" },
+        { "icon": "vercel", "name": "Vercel" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "فل اسٹیک ڈیولپمنٹ",
+    "shortDescription": "ایک ٹیم کے ساتھ مکمل ویب ایپلیکیشنز سرے سے آخر تک بنائیں — آگے React اور Next.js، پیچھے Node.js یا Python، ڈیٹابیسز، APIs اور تعیناتی سب ایک مربوط آرکیٹیکچر کے تحت۔",
+    "fullDescription": "فل اسٹیک ڈیولپمنٹ کا مطلب ہے ایک ٹیم پوری تصویر کی مالک ہوتی ہے، تاکہ جب کچھ خراب ہو تو frontend اور backend کے درمیان الزام تراشی نہ ہو۔ ہم مکمل ویب ایپلیکیشنز ڈیزائن، تعمیر اور اجراء کرتے ہیں: typed React اور Next.js انٹرفیس، Node.js یا Python APIs، اچھی طرح ماڈل کیا ڈیٹابیس، تصدیق، اور CI/CD کے ساتھ cloud تعیناتی۔ TypeScript اور types کو پورے stack میں شیئر کرنا client اور server کے درمیان معاہدے کو سچا رکھتا ہے، اور بے میلی کو production کے بجائے build وقت پر پکڑتا ہے۔ یہ مربوط طریقہ تکرار تیز کرتا ہے کیونکہ وہی انجینئرز ڈیٹابیس schema سے لے کر اس بٹن تک جو صارف دباتا ہے سیاق لے کر چلتے ہیں۔ نتیجہ ایک مربوط پروڈکٹ ہے جس کی آرکیٹیکچر مستقل ہو، انٹیگریشن کے کم جوڑ ہوں، اور ایک کوڈ بیس جسے آپ کی ٹیم لانچ کے بہت بعد تک بڑھاتی رہ سکے۔",
+    "features": [
+      "React اور Next.js Frontend",
+      "Node.js اور Python Backend",
+      "ڈیٹابیس ڈیزائن اور ORM (Prisma) انٹیگریشن",
+      "REST اور GraphQL API ڈیولپمنٹ",
+      "تصدیق اور اجازت",
+      "حقیقی وقت کی خصوصیات (WebSockets)",
+      "CI/CD Pipeline سیٹ اپ",
+      "Cloud تعیناتی اور اسکیلنگ"
+    ],
+    "benefits": [
+      "ایک ٹیم stack کی مالک، حوالگی کی تاخیر ختم",
+      "UI سے ڈیٹابیس تک مستقل آرکیٹیکچر",
+      "سرے سے آخر تک type safety bugs جلد پکڑتی ہے",
+      "پرتوں میں مشترکہ سیاق سے تیز تکرار",
+      "frontend اور backend میں مشترکہ ٹیسٹ حکمتِ عملی",
+      "الگ ماہر ٹیموں کے مقابلے کفایتی"
+    ],
+    "metaTitle": "فل اسٹیک ڈیولپمنٹ — Next.js اور Node | PakSoft",
+    "metaDescription": "Next.js، Node.js اور TypeScript کے ساتھ سرے سے آخر تک فل اسٹیک ڈیولپمنٹ: APIs، ڈیٹابیسز، تصدیق اور cloud تعیناتی ایک ٹیم میں۔ مفت پروجیکٹ تخمینہ لیں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "دریافت اور آرکیٹیکچر", "description": "ہم آپ کے خیال کو ٹھوس منصوبے میں بدلتے ہیں: ڈیٹا ماڈل، API سطح، صفحہ ساخت، اور آپ کی ٹائم لائن اور ٹیم کے مطابق منتخب stack۔ آپ ایسی آرکیٹیکچر کے ساتھ نکلتے ہیں جو پوری ایپ پر پھیلی ہو، نہ کہ ایک frontend اور backend جو بیچ میں عجیب طور پر ملیں۔" },
+        { "step": 2, "title": "بنیاد اور ڈیٹا ماڈل", "description": "ہم repository، ڈیٹابیس schema اور مشترکہ types قائم کرتے ہیں تاکہ client اور server کے درمیان معاہدہ ایک بار طے ہو۔ تصدیق، environment config اور CI pipeline جلد شامل ہوتے ہیں، کیونکہ انہیں بعد میں جوڑنا تکلیف دہ ہے۔" },
+        { "step": 3, "title": "API اور Backend تعمیر", "description": "ہم server سائیڈ logic، endpoints اور انٹیگریشنز کو validation اور tests کے ساتھ نافذ کرتے ہیں۔ Business rules backend میں رہتے ہیں جہاں ان کا مقام ہے، صاف APIs کے ذریعے پیش کیے جاتے ہیں جن پر frontend بھروسا کر سکے۔" },
+        { "step": 4, "title": "Frontend اور انٹیگریشن", "description": "ہم UI کو ان typed APIs کے مقابل بناتے ہیں، تاکہ دونوں حصے اندازے کے بغیر آپس میں بیٹھ جائیں۔ Loading، error اور empty states سنبھالے جاتے ہیں، اور انٹرفیس پہلی اسکرین سے ہی responsive اور قابلِ رسائی ہوتا ہے۔" },
+        { "step": 5, "title": "ٹیسٹنگ اور سختی", "description": "ہم اہم صارف flows کا احاطہ کرنے والے unit، integration اور end-to-end ٹیسٹ، مع سیکیورٹی اور کارکردگی جانچ شامل کرتے ہیں۔ چونکہ دونوں سرے ایک ہی ٹیم نے لکھے، ٹیسٹ کلک سے ڈیٹابیس اور واپسی کا حقیقی راستہ چلاتے ہیں۔" },
+        { "step": 6, "title": "تعیناتی، نگرانی اور تکرار", "description": "ہم containerize کرتے ہیں، zero-downtime rollouts سے deploy کرتے ہیں اور stack بھر میں logging اور metrics شامل کرتے ہیں۔ لانچ کے بعد ہم اسی ٹیم کے ساتھ حقیقی استعمال کے ڈیٹا پر تکرار کرتے ہیں جس نے اسے بنایا، تاکہ بہتریاں جلد آئیں۔" }
+      ],
+      "faq": [
+        { "question": "'فل اسٹیک' مجھے حقیقت میں کیا دیتا ہے؟", "answer": "اس کا مطلب ہے ایک ہی ٹیم پوری ایپلیکیشن — UI، API، ڈیٹابیس اور تعیناتی — کی جوابدہ ہوتی ہے، نہ کہ الگ frontend اور backend فراہم کنندگان جو خرابی پر ایک دوسرے کو الزام دیں۔ یہ ہم آہنگی کا بوجھ اور انٹیگریشن کے خلا ختم کرتا ہے اور چھوٹے تا درمیانے پروجیکٹس کے لیے عموماً تیز اور سستا ہے۔ بہت بڑے سسٹمز میں فی پرت ماہر ٹیمیں معقول ہو سکتی ہیں اور ہم آپ کو بتائیں گے کہ یہ کب لاگو ہوتا ہے۔" },
+        { "question": "آپ کس stack پر بناتے ہیں؟", "answer": "ہمارا ڈیفالٹ frontend میں TypeScript کے ساتھ Next.js اور React، backend میں Node.js یا Python، ڈیٹا کے لیے Prisma کے ساتھ PostgreSQL، اور Vercel یا کسی cloud provider پر تعیناتی ہے۔ ہم ضدی نہیں — اگر آپ کی ٹیم پہلے سے Django یا کوئی خاص cloud چلاتی ہے تو ہم ڈھل جاتے ہیں۔ Stack کو صرف ہماری ترجیحات نہیں بلکہ آپ کی دیکھ بھال کی صلاحیت کے مطابق ہونا چاہیے۔" },
+        { "question": "کیا Next.js پورا backend بھی ہو سکتا ہے؟", "answer": "بہت سی پروڈکٹس کے لیے جی ہاں۔ Next.js API routes اور server actions تصدیق، ڈیٹابیس رسائی اور انٹیگریشنز اتنی اچھی طرح سنبھالتے ہیں کہ آپ کو الگ backend service کی ضرورت نہیں ہوتی۔ جب آپ کو بھاری background پراسیسنگ، کارکردگی کے لیے الگ زبان، یا web اور mobile میں مشترکہ backend چاہیے، تو ہم اسے ایک مخصوص service میں الگ کر دیتے ہیں۔ ہم سادہ شروع کرتے ہیں اور آرکیٹیکچر کو تقاضوں کے مطابق بڑھاتے ہیں۔" },
+        { "question": "فل اسٹیک ایپ میں کتنا وقت لگتا ہے؟", "answer": "تصدیق، ڈیٹابیس اور بنیادی خصوصیات والی مرکوز MVP عموماً 6–12 ہفتے لیتی ہے۔ پیچیدہ workflows، حقیقی وقت کی خصوصیات، ادائیگیوں اور متعدد انٹیگریشنز والی مکمل پروڈکٹ 3–6 ماہ تک جاتی ہے۔ چونکہ ایک ٹیم stack بھر میں سیاق لے کر چلتی ہے، فل اسٹیک تعمیرات اکثر اسی کام کو الگ frontend اور backend فراہم کنندگان میں تقسیم کرنے سے تیز چلتی ہیں۔" },
+        { "question": "Stack بھر میں type safety کیسے کام کرتی ہے؟", "answer": "ہم TypeScript types کو API اور frontend کے درمیان شیئر یا generate کرتے ہیں، تاکہ ہر request اور response کی شکل build وقت پر جانچی جائے۔ اگر آپ backend میں کوئی field بدلیں، frontend تب تک compile نہیں ہوگا جب تک اسے مطابق اپ ڈیٹ نہ کیا جائے۔ یہ انٹیگریشن bugs کی پوری ایک قسم ختم کرتا ہے جو ان پروجیکٹس کو ستاتی ہے جہاں دونوں حصے ایک دوسرے سے دور ہٹ جاتے ہیں۔" },
+        { "question": "کیا تعیناتی اور CI/CD آپ سیٹ کرتے ہیں؟", "answer": "جی ہاں، شروع سے۔ ہم مناسب جگہ containerize کرتے ہیں، ایک CI pipeline ترتیب دیتے ہیں جو ہر commit پر ٹیسٹ اور build چلائے، اور zero-downtime تعیناتیاں قائم کرتے ہیں۔ ہم نگرانی اور logging بھی شامل کرتے ہیں تاکہ آپ دیکھ سکیں کہ زندہ ایپ کیسا برتاؤ کرتی ہے۔ اجراء ڈیولپمنٹ کا حصہ ہے، کسی اور کے سپرد بعد کی سوچ نہیں۔" },
+        { "question": "کیا آپ حقیقی وقت کی خصوصیات شامل کر سکتے ہیں؟", "answer": "جی ہاں۔ ہم WebSockets یا Pusher یا Ably جیسی managed services سے زندہ اپ ڈیٹس، اشتراکی ایڈیٹنگ، اطلاعات اور chat بناتے ہیں۔ درست انداز میں کی گئی حقیقی وقت کی خصوصیت اسکیلنگ اور دوبارہ کنکشن کے انتظام پر توجہ مانگتی ہے، جو بالکل وہ قسم کا متقاطع معاملہ ہے جسے فل اسٹیک ٹیم اچھی طرح سنبھالتی ہے کیونکہ ہم server اور client دونوں اطراف کے مالک ہوتے ہیں۔" },
+        { "question": "کیا میں دیکھ بھال کے لیے آپ کے ساتھ بندھ جاؤں گا؟", "answer": "نہیں۔ ہم mainstream ٹیکنالوجیز پر دستاویزی، روایتی کوڈ لکھتے ہیں بالکل اس لیے کہ کوئی بھی اہل ٹیم اسے سنبھال سکے۔ Repository اور انفراسٹرکچر آپ کا ہے۔ اگر آپ چاہیں تو ہم مسلسل سپورٹ دینے میں خوش ہیں، مگر یہ آپ کا انتخاب ہونا چاہیے، نہ کہ کسی مبہم یا غیر معمولی کوڈ کا نتیجہ جسے ہم نے سپرد کرنا مشکل بنا دیا ہو۔" }
+      ],
+      "technologies": [
+        { "icon": "nextdotjs", "name": "Next.js" },
+        { "icon": "react", "name": "React" },
+        { "icon": "nodedotjs", "name": "Node.js" },
+        { "icon": "typescript", "name": "TypeScript" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "prisma", "name": "Prisma" },
+        { "icon": "docker", "name": "Docker" },
+        { "icon": "vercel", "name": "Vercel" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تطوير متكامل (Full-Stack)",
+    "shortDescription": "ابنوا تطبيقات ويب كاملة من البداية إلى النهاية بفريق واحد — React وNext.js في الأمام، وNode.js أو Python في الخلف، وقواعد بيانات وواجهات API ونشر تحت بنية متماسكة واحدة.",
+    "fullDescription": "التطوير المتكامل يعني أن فريقاً واحداً يملك الصورة كاملة، فلا تبادل لتوجيه اللوم بين الواجهة الأمامية والخلفية حين يتعطّل شيء. نصمّم ونبني ونطلق تطبيقات ويب كاملة: واجهات React وNext.js مكتوبة الأنواع، وواجهات API بـ Node.js أو Python، ومخطط قاعدة بيانات محكم، ومصادقة، ونشراً سحابياً مع CI/CD. مشاركة TypeScript والأنواع عبر المكدّس تُبقي العقد بين العميل والخادم صادقاً، وتلتقط عدم التطابق وقت البناء بدل الإنتاج. هذا النهج الموحّد يسرّع التكرار لأن المهندسين أنفسهم يحملون السياق من مخطط قاعدة البيانات إلى الزر الذي ينقره المستخدم. والنتيجة منتج متماسك ببنية متّسقة وأقل وصلات تكامل وقاعدة كود يستطيع فريقكم توسعتها بعد الإطلاق بزمن طويل.",
+    "features": [
+      "واجهة أمامية React وNext.js",
+      "واجهة خلفية Node.js وPython",
+      "تصميم قواعد البيانات وتكامل ORM (Prisma)",
+      "تطوير واجهات REST وGraphQL",
+      "المصادقة والتفويض",
+      "ميزات لحظية (WebSockets)",
+      "إعداد خط CI/CD",
+      "النشر السحابي والتوسّع"
+    ],
+    "benefits": [
+      "فريق واحد يملك المكدّس ويزيل تأخيرات التسليم",
+      "بنية متّسقة من الواجهة إلى قاعدة البيانات",
+      "أمان أنواع شامل يلتقط الأخطاء مبكراً",
+      "تكرار أسرع بسياق مشترك عبر الطبقات",
+      "استراتيجية اختبار موحّدة عبر الأمام والخلف",
+      "موفّر مقارنة بفرق متخصصة منفصلة"
+    ],
+    "metaTitle": "تطوير متكامل — Next.js وNode | PakSoft",
+    "metaDescription": "تطوير متكامل من البداية للنهاية بـ Next.js وNode.js وTypeScript: واجهات API وقواعد بيانات ومصادقة ونشر سحابي بفريق واحد. اطلبوا تقدير مشروع مجاني.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "الاستكشاف والبنية", "description": "نحوّل فكرتكم إلى خطة ملموسة: نموذج البيانات، وسطح API، وبنية الصفحات، ومكدّس مُختار وفق جدولكم وفريقكم. تخرجون ببنية تمتدّ عبر التطبيق كله، لا بواجهة أمامية وخلفية تلتقيان في المنتصف بشكل أخرق." },
+        { "step": 2, "title": "الأساس ونموذج البيانات", "description": "نهيّئ المستودع ومخطط قاعدة البيانات والأنواع المشتركة كي يُعرَّف العقد بين العميل والخادم مرة واحدة. وتدخل المصادقة وإعداد البيئة وخط CI مبكراً، لأن إضافتها لاحقاً مؤلمة." },
+        { "step": 3, "title": "بناء API والخلفية", "description": "ننفّذ منطق الخادم ونقاط النهاية والتكاملات مع التحقق والاختبارات. تعيش قواعد العمل في الخلفية حيث ينبغي، مكشوفة عبر واجهات نظيفة يعتمد عليها الأمام." },
+        { "step": 4, "title": "الواجهة الأمامية والتكامل", "description": "نبني الواجهة مقابل تلك الواجهات مكتوبة الأنواع، كي يتوافق النصفان دون تخمين. وتُعالَج حالات التحميل والخطأ والفراغ، وتكون الواجهة متجاوبة وميسَّرة من الشاشة الأولى." },
+        { "step": 5, "title": "الاختبار والتقوية", "description": "نضيف اختبارات وحدة وتكامل وشاملة تغطّي تدفقات المستخدم الحرجة، إضافة إلى فحوص أمن وأداء. ولأن فريقاً واحداً كتب الطرفين، تمرّ الاختبارات بالمسار الحقيقي من النقرة إلى قاعدة البيانات والعودة." },
+        { "step": 6, "title": "النشر والمراقبة والتكرار", "description": "نحوّل إلى حاويات وننشر بطرح دون توقف ونضيف سجلات ومقاييس عبر المكدّس. وبعد الإطلاق نكرّر على بيانات استخدام حقيقية بالفريق نفسه الذي بناه، فتصل التحسينات بسرعة." }
+      ],
+      "faq": [
+        { "question": "ماذا يمنحني 'المتكامل' فعلاً؟", "answer": "يعني أن فريقاً واحداً مسؤول عن التطبيق كله — الواجهة وAPI وقاعدة البيانات والنشر — بدل مورّدي واجهة أمامية وخلفية منفصلين يلوم كل منهما الآخر عند الخلل. هذا يزيل عبء التنسيق وفجوات التكامل، وهو عادة أسرع وأرخص للمشاريع الصغيرة والمتوسطة. وفي الأنظمة الضخمة قد تنطق فرق متخصصة لكل طبقة، وسنخبركم متى ينطبق ذلك." },
+        { "question": "على أي مكدّس تبنون؟", "answer": "افتراضنا Next.js وReact مع TypeScript في الأمام، وNode.js أو Python في الخلف، وPostgreSQL مع Prisma للبيانات، والنشر إلى Vercel أو مزوّد سحابي. لسنا متعصّبين — إن كان فريقكم يشغّل Django أو سحابة بعينها، نتكيّف. ينبغي أن يلائم المكدّس قدرتكم على الصيانة لا مجرد تفضيلاتنا." },
+        { "question": "هل يمكن أن يكون Next.js الخلفية كلها أيضاً؟", "answer": "لمنتجات كثيرة نعم. تتولى مسارات API في Next.js وإجراءات الخادم المصادقة والوصول إلى قاعدة البيانات والتكاملات جيداً بما يكفي للاستغناء عن خدمة خلفية منفصلة. وعند الحاجة لمعالجة خلفية ثقيلة أو لغة منفصلة للأداء أو خلفية مشتركة بين الويب والجوال، نفصلها في خدمة مخصصة. نبدأ ببساطة وننمّي البنية وفق ما تتطلبه المتطلبات." },
+        { "question": "كم يستغرق تطبيق متكامل؟", "answer": "MVP مركّز بمصادقة وقاعدة بيانات وميزات أساسية يستغرق عادة 6–12 أسبوعاً. ومنتج كامل بتدفقات عمل معقدة وميزات لحظية ومدفوعات وعدة تكاملات يستغرق 3–6 أشهر. ولأن فريقاً واحداً يحمل السياق عبر المكدّس، غالباً ما تتحرك عمليات البناء المتكاملة أسرع من تقسيم العمل نفسه بين مورّدي أمام وخلف منفصلين." },
+        { "question": "كيف يعمل أمان الأنواع عبر المكدّس؟", "answer": "نشارك أنواع TypeScript — أو نولّدها — بين API والواجهة الأمامية، كي يُفحَص شكل كل طلب واستجابة وقت البناء. إن غيّرتم حقلاً في الخلفية، لن تُصرَّف الواجهة حتى تُحدَّث لتطابقه. هذا يزيل فئة كاملة من أخطاء التكامل التي تبتلي المشاريع التي يتباعد فيها النصفان." },
+        { "question": "هل تهيّئون النشر وCI/CD؟", "answer": "نعم، من البداية. نحوّل إلى حاويات حيث يلزم، ونهيّئ خط CI يشغّل الاختبارات والبناء عند كل تغيير، ونعدّ نشراً دون توقف. ونضيف أيضاً مراقبة وتسجيلاً كي تروا كيف يتصرّف التطبيق الحيّ. التسليم جزء من التطوير لا فكرة لاحقة تُسلَّم لغيرنا." },
+        { "question": "هل يمكنكم إضافة ميزات لحظية؟", "answer": "نعم. نبني التحديثات الحية والتحرير التشاركي والإشعارات والدردشة باستخدام WebSockets أو خدمات مُدارة مثل Pusher أو Ably. الميزة اللحظية المنفَّذة جيداً تتطلب عناية بالتوسّع وإعادة الاتصال، وهي بالضبط نوع الاهتمام المتقاطع الذي يحسنه فريق متكامل لأننا نملك جانبي الخادم والعميل." },
+        { "question": "هل سأرتبط بكم للصيانة؟", "answer": "لا. نكتب كوداً موثَّقاً تقليدياً على تقنيات سائدة تحديداً كي يستطيع أي فريق كفء تسلّمه. أنتم تملكون المستودع والبنية التحتية. ويسعدنا تقديم دعم مستمر إن أردتم، لكن ينبغي أن يكون اختياركم لا نتيجة كود غامض أو غير اعتيادي جعلناه صعب التسليم." }
+      ],
+      "technologies": [
+        { "icon": "nextdotjs", "name": "Next.js" },
+        { "icon": "react", "name": "React" },
+        { "icon": "nodedotjs", "name": "Node.js" },
+        { "icon": "typescript", "name": "TypeScript" },
+        { "icon": "postgresql", "name": "PostgreSQL" },
+        { "icon": "prisma", "name": "Prisma" },
+        { "icon": "docker", "name": "Docker" },
+        { "icon": "vercel", "name": "Vercel" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,436 @@
+{
+  "third-party-api-integration": {
+    "en": {
+      "name": "Third-Party API Integration",
+      "shortDescription": "Seamlessly connect your systems with payment processors, CRMs, ERPs, and any third-party API.",
+      "fullDescription": "Modern businesses rely on dozens of specialized software tools, but real efficiency is only achieved when these systems talk to each other. Our Third-Party API Integration services connect your custom software, website, or app to external platforms securely and reliably. Whether you need to sync customer data with Salesforce, process complex payments via Stripe, automate marketing campaigns in HubSpot, or connect to legacy enterprise ERPs, we build the robust middleware required. We do not just blindly forward data; we implement intelligent rate-limiting, error handling, dead-letter queues, and automated retry logic to ensure that a temporary outage in a third-party service never crashes your core application.",
+      "features": [
+        "Payment Gateway Integration (Stripe, PayPal, Braintree)",
+        "CRM & ERP Syncing (Salesforce, HubSpot, SAP)",
+        "Social Media & Marketing APIs (Facebook, Mailchimp)",
+        "Real-time Webhook Implementation & Parsing",
+        "Custom Middleware & Microservice Bridges",
+        "Robust Error Handling & Retry Mechanisms (Exponential Backoff)"
+      ],
+      "benefits": [
+        "Eliminate Manual Data Entry and Human Error",
+        "Create a Single Source of Truth Across Your Organization",
+        "Leverage Best-in-Class External Tools Without Rebuilding Them",
+        "Automate Complex Cross-Platform Business Workflows",
+        "Ensure High Availability Even if External APIs Fail"
+      ],
+      "content": {
+        "process": [
+          { "title": "API Evaluation", "description": "Reviewing the third-party API documentation, authentication methods, and rate limits." },
+          { "title": "Architecture & Security", "description": "Designing middleware to handle API keys securely and orchestrating data transformation." },
+          { "title": "Development", "description": "Writing the integration code, mapping data fields between systems, and setting up webhooks." },
+          { "title": "Resilience Engineering", "description": "Implementing fail-safes like retry logic, caching, and dead-letter queues for failed payloads." },
+          { "title": "Testing & Monitoring", "description": "Running sandbox tests and deploying monitoring alerts (e.g., Sentry) for production API failures." }
+        ],
+        "technologies": [
+          "Node.js / Python",
+          "REST / GraphQL / SOAP",
+          "OAuth 2.0 / JWT",
+          "Webhooks",
+          "Redis (Rate Limiting/Caching)",
+          "AWS SQS / RabbitMQ (Queues)"
+        ],
+        "faq": [
+          { "question": "What happens if the third-party API goes down?", "answer": "We build fault-tolerant integrations. If an external API (like a CRM) goes down, our middleware temporarily queues the data locally and automatically retries the request using exponential backoff once the service is restored, ensuring zero data loss." },
+          { "question": "Can you integrate with an older system that uses SOAP or XML?", "answer": "Absolutely. We routinely build bridge applications that consume legacy SOAP/XML services and translate them into modern JSON REST APIs that your newer applications can easily communicate with." }
+        ]
+      },
+      "metaTitle": "Third-Party API Integration Services | Custom API Developers",
+      "metaDescription": "Connect your apps and websites to Stripe, Salesforce, HubSpot, and any external API. We build robust, fault-tolerant integrations and custom middleware."
+    },
+    "tr": {
+      "name": "Üçüncü Taraf API Entegrasyonu",
+      "shortDescription": "Sistemlerinizi ödeme işlemcileri, CRM'ler, ERP'ler ve herhangi bir üçüncü taraf API ile sorunsuz bir şekilde bağlayın.",
+      "fullDescription": "Modern işletmeler düzinelerce özel yazılım aracına güvenir, ancak gerçek verimlilik yalnızca bu sistemler birbiriyle konuştuğunda elde edilir. Üçüncü Taraf API Entegrasyon hizmetlerimiz, özel yazılımınızı, web sitenizi veya uygulamanızı harici platformlara güvenli ve güvenilir bir şekilde bağlar. Müşteri verilerini Salesforce ile senkronize etmeniz, Stripe üzerinden karmaşık ödemeleri işlemeniz, HubSpot'ta pazarlama kampanyalarını otomatikleştirmeniz veya eski kurumsal ERP'lere bağlanmanız gerekiyorsa, gereken sağlam ara yazılımı (middleware) oluşturuyoruz. Verileri sadece körü körüne iletmiyoruz; üçüncü taraf bir hizmetteki geçici bir kesintinin çekirdek uygulamanızı asla çökertmemesini sağlamak için akıllı hız sınırlaması (rate-limiting), hata işleme, ölü mektup kuyrukları (dead-letter queues) ve otomatik yeniden deneme mantığı uyguluyoruz.",
+      "features": [
+        "Ödeme Geçidi Entegrasyonu (Stripe, PayPal, Braintree)",
+        "CRM ve ERP Senkronizasyonu (Salesforce, HubSpot, SAP)",
+        "Sosyal Medya ve Pazarlama API'leri (Facebook, Mailchimp)",
+        "Gerçek Zamanlı Webhook Uygulaması ve Ayrıştırması (Parsing)",
+        "Özel Ara Yazılım (Middleware) ve Mikro Hizmet Köprüleri",
+        "Sağlam Hata İşleme ve Yeniden Deneme Mekanizmaları"
+      ],
+      "benefits": [
+        "Manuel Veri Girişini ve İnsan Hatasını Ortadan Kaldırma",
+        "Kuruluşunuz Çapında Tek Bir Gerçeklik Kaynağı (SSOT) Oluşturma",
+        "Sınıfının En İyisi Harici Araçları Yeniden Oluşturmadan Kullanma",
+        "Karmaşık Çapraz Platform İş Akışlarını Otomatikleştirmek",
+        "Harici API'ler Çökse Bile Yüksek Kullanılabilirlik (Uptime) Sağlama"
+      ],
+      "content": {
+        "process": [
+          { "title": "API Değerlendirmesi", "description": "Üçüncü taraf API belgelerini, kimlik doğrulama yöntemlerini ve hız sınırlarını (rate limits) inceleme." },
+          { "title": "Mimari ve Güvenlik", "description": "API anahtarlarını güvenli bir şekilde işlemek ve veri dönüşümünü yönetmek için ara yazılım tasarlama." },
+          { "title": "Geliştirme", "description": "Entegrasyon kodunu yazma, sistemler arasındaki veri alanlarını eşleme ve webhook'ları kurma." },
+          { "title": "Dayanıklılık (Resilience) Mühendisliği", "description": "Başarısız yükler için yeniden deneme mantığı, önbelleğe alma ve ölü mektup kuyrukları (DLQ) gibi güvenlik önlemleri uygulama." },
+          { "title": "Test ve İzleme", "description": "Korumalı alan (sandbox) testleri çalıştırma ve üretim API hataları için izleme uyarıları (ör. Sentry) dağıtma." }
+        ],
+        "technologies": [
+          "Node.js / Python",
+          "REST / GraphQL / SOAP",
+          "OAuth 2.0 / JWT",
+          "Webhook'lar",
+          "Redis (Hız Sınırlama/Önbelleğe Alma)",
+          "AWS SQS / RabbitMQ (Kuyruklar)"
+        ],
+        "faq": [
+          { "question": "Üçüncü taraf API çökerse ne olur?", "answer": "Hata toleranslı entegrasyonlar oluşturuyoruz. Harici bir API (örneğin bir CRM) çökerse, ara yazılımımız verileri geçici olarak yerel olarak kuyruğa alır ve hizmet geri yüklendiğinde üstel geri çekilme (exponential backoff) kullanarak isteği otomatik olarak yeniden dener, böylece sıfır veri kaybı sağlarız." },
+          { "question": "SOAP veya XML kullanan eski bir sistemle entegre olabilir misiniz?", "answer": "Kesinlikle. Genellikle eski SOAP/XML hizmetlerini tüketen ve bunları yeni uygulamalarınızın kolayca iletişim kurabileceği modern JSON REST API'lerine çeviren köprü uygulamaları oluşturuyoruz." }
+        ]
+      },
+      "metaTitle": "Üçüncü Taraf API Entegrasyon Hizmetleri | Özel API Geliştiricileri",
+      "metaDescription": "Uygulamalarınızı ve web sitelerinizi Stripe, Salesforce, HubSpot ve diğer harici API'lere bağlayın. Hata toleranslı entegrasyonlar ve ara yazılımlar oluşturuyoruz."
+    },
+    "de": {
+      "name": "Drittanbieter-API-Integration",
+      "shortDescription": "Verbinden Sie Ihre Systeme nahtlos mit Zahlungsanbietern, CRMs, ERPs und jeder Third-Party-API.",
+      "fullDescription": "Moderne Unternehmen verlassen sich auf Dutzende spezialisierte Software-Tools, aber echte Effizienz wird nur erreicht, wenn diese Systeme miteinander kommunizieren. Unsere Dienste zur API-Integration von Drittanbietern verbinden Ihre individuelle Software, Website oder App sicher und zuverlässig mit externen Plattformen. Egal, ob Sie Kundendaten mit Salesforce synchronisieren, komplexe Zahlungen über Stripe abwickeln, Marketingkampagnen in HubSpot automatisieren oder eine Verbindung zu Legacy-ERPs herstellen müssen – wir bauen die erforderliche robuste Middleware. Wir leiten Daten nicht einfach blind weiter; wir implementieren intelligentes Rate-Limiting, Fehlerbehandlung, Dead-Letter-Queues und automatische Retry-Logiken, um sicherzustellen, dass ein temporärer Ausfall eines Drittanbieter-Dienstes niemals Ihre Kernanwendung zum Absturz bringt.",
+      "features": [
+        "Payment Gateway Integration (Stripe, PayPal, Braintree)",
+        "CRM- & ERP-Synchronisierung (Salesforce, HubSpot, SAP)",
+        "Social Media & Marketing APIs (Facebook, Mailchimp)",
+        "Echtzeit-Webhook-Implementierung & Parsing",
+        "Individuelle Middleware & Microservice-Brücken",
+        "Robuste Fehlerbehandlung & Retry-Mechanismen (Exponential Backoff)"
+      ],
+      "benefits": [
+        "Eliminierung manueller Dateneingabe & menschlicher Fehler",
+        "Schaffung einer 'Single Source of Truth' im Unternehmen",
+        "Nutzung bester externer Tools ohne Eigenentwicklung",
+        "Automatisierung komplexer plattformübergreifender Workflows",
+        "Sicherstellung hoher Verfügbarkeit, selbst wenn externe APIs ausfallen"
+      ],
+      "content": {
+        "process": [
+          { "title": "API-Evaluierung", "description": "Prüfung der API-Dokumentation, Authentifizierung und Rate-Limits." },
+          { "title": "Architektur & Sicherheit", "description": "Design der Middleware zur sicheren Verwaltung von API-Keys und Datentransformation." },
+          { "title": "Entwicklung", "description": "Schreiben des Integrationscodes, Mapping der Datenfelder und Setup der Webhooks." },
+          { "title": "Resilienz-Engineering", "description": "Implementierung von Fallbacks wie Caching, Queues und Retry-Logiken." },
+          { "title": "Testing & Monitoring", "description": "Durchführung von Sandbox-Tests und Einrichtung von Monitoring (z.B. Sentry)." }
+        ],
+        "technologies": [
+          "Node.js / Python",
+          "REST / GraphQL / SOAP",
+          "OAuth 2.0 / JWT",
+          "Webhooks",
+          "Redis (Rate Limiting/Caching)",
+          "AWS SQS / RabbitMQ (Queues)"
+        ],
+        "faq": [
+          { "question": "Was passiert, wenn die externe API ausfällt?", "answer": "Wir bauen fehlertolerante Integrationen. Fällt eine externe API aus, reiht unsere Middleware die Daten lokal ein und versucht es später automatisch erneut (Exponential Backoff), sodass kein Datenverlust entsteht." },
+          { "question": "Können Sie Systeme integrieren, die SOAP oder XML nutzen?", "answer": "Absolut. Wir entwickeln regelmäßig Brücken-Anwendungen, die alte SOAP/XML-Dienste ansprechen und diese in moderne JSON REST-APIs übersetzen, mit denen Ihre neuen Systeme einfach kommunizieren können." }
+        ]
+      },
+      "metaTitle": "API-Integration Agentur | Third-Party API Entwickler",
+      "metaDescription": "Verbinden Sie Ihre Apps mit Stripe, Salesforce, HubSpot und mehr. Wir entwickeln robuste Middleware und fehlertolerante API-Integrationen."
+    },
+    "ur": {
+      "name": "تھرڈ پارٹی API انٹیگریشن",
+      "shortDescription": "اپنے سسٹمز کو بغیر کسی رکاوٹ کے ادائیگی کے پروسیسرز، CRMs، ERPs، اور کسی بھی تیسرے فریق API کے ساتھ مربوط کریں۔",
+      "fullDescription": "جدید کاروبار درجنوں خصوصی سافٹ ویئر ٹولز پر انحصار کرتے ہیں، لیکن حقیقی کارکردگی تب ہی حاصل کی جاتی ہے جب یہ سسٹمز ایک دوسرے سے بات کرتے ہیں۔ ہماری تھرڈ پارٹی API انٹیگریشن سروسز آپ کے حسب ضرورت سافٹ ویئر، ویب سائٹ، یا ایپ کو محفوظ طریقے سے بیرونی پلیٹ فارمز سے جوڑتی ہیں۔ چاہے آپ کو سیلز فورس کے ساتھ کسٹمر کے ڈیٹا کو ہم آہنگ کرنے کی ضرورت ہو، سٹرائپ کے ذریعے پیچیدہ ادائیگیوں پر کارروائی کرنا ہو، حب اسپاٹ میں مارکیٹنگ مہموں کو خودکار بنانا ہو، یا پرانے انٹرپرائز ERPs سے منسلک ہونا ہو، ہم مطلوبہ مضبوط مڈل ویئر بناتے ہیں۔ ہم صرف آنکھیں بند کر کے ڈیٹا کو آگے نہیں بھیجتے؛ ہم اس بات کو یقینی بنانے کے لیے انٹیلجنٹ ریٹ لمیٹنگ، ایرر ہینڈلنگ، ڈیڈ لیٹر کیو، اور خودکار دوبارہ کوشش کی منطق کو نافذ کرتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ فریق ثالث کی سروس میں عارضی بندش آپ کی بنیادی ایپلیکیشن کو کبھی کریش نہ کرے۔",
+      "features": [
+        "پیمنٹ گیٹ وے انٹیگریشن (اسٹرائپ، پے پال، برین ٹری)",
+        "سی آر ایم اور ای آر پی کی مطابقت پذیری (سیلز فورس، ہب اسپاٹ، ایس اے پی)",
+        "سوشل میڈیا اور مارکیٹنگ APIs (فیس بک، میل چیمپ)",
+        "ریئل ٹائم ویب ہک کا نفاذ اور پارسنگ",
+        "حسب ضرورت مڈل ویئر اور مائیکرو سروس برجز",
+        "مضبوط ایرر ہینڈلنگ اور دوبارہ کوشش کرنے کا طریقہ کار"
+      ],
+      "benefits": [
+        "دستی ڈیٹا انٹری اور انسانی غلطی کو ختم کریں۔",
+        "اپنی پوری تنظیم میں سچائی کا واحد ذریعہ بنائیں",
+        "بیرونی ٹولز کو دوبارہ بنائے بغیر بہترین کلاس میں فائدہ اٹھائیں۔",
+        "پیچیدہ کراس پلیٹ فارم بزنس ورک فلو کو خودکار بنائیں",
+        "بیرونی APIs کے ناکام ہونے پر بھی اعلی دستیابی کو یقینی بنائیں"
+      ],
+      "content": {
+        "process": [
+          { "title": "API کی تشخیص", "description": "تھرڈ پارٹی API دستاویزات، تصدیق کے طریقوں، اور شرح کی حدود کا جائزہ لینا۔" },
+          { "title": "آرکیٹیکچر اور سیکورٹی", "description": "API کیز کو محفوظ طریقے سے ہینڈل کرنے اور ڈیٹا کی تبدیلی کو آرکیسٹریٹ کرنے کے لیے مڈل ویئر کو ڈیزائن کرنا۔" },
+          { "title": "ترقی", "description": "انٹیگریشن کوڈ لکھنا، سسٹم کے درمیان ڈیٹا فیلڈز کی نقشہ سازی، اور ویب ہکس ترتیب دینا۔" },
+          { "title": "لچکدار انجینئرنگ", "description": "ناکام پے لوڈز کے لیے دوبارہ کوشش کرنے کی منطق، کیشنگ، اور ڈیڈ لیٹر قطار جیسے فیل سیفس کو نافذ کرنا۔" },
+          { "title": "ٹیسٹنگ اور مانیٹرنگ", "description": "پروڈکشن API کی ناکامیوں کے لیے سینڈ باکس ٹیسٹ چلانا اور مانیٹرنگ الرٹس (جیسے سینٹری) کی تعیناتی۔" }
+        ],
+        "technologies": [
+          "Node.js / Python",
+          "REST / GraphQL / SOAP",
+          "OAuth 2.0 / JWT",
+          "Webhooks",
+          "Redis (Rate Limiting/Caching)",
+          "AWS SQS / RabbitMQ (Queues)"
+        ],
+        "faq": [
+          { "question": "اگر تھرڈ پارٹی API نیچے چلا جائے تو کیا ہوگا؟", "answer": "ہم غلطی برداشت کرنے والے انضمام کی تعمیر کرتے ہیں۔ اگر کوئی بیرونی API (جیسے ایک CRM) نیچے چلا جاتا ہے، تو ہمارا مڈل ویئر عارضی طور پر مقامی طور پر ڈیٹا کو قطار میں لاتا ہے اور ایک بار سروس بحال ہونے کے بعد خودکار طور پر ایکسپونینشل بیک آف کا استعمال کرتے ہوئے درخواست کی دوبارہ کوشش کرتا ہے، جس سے صفر ڈیٹا ضائع ہونے کو یقینی بنایا جاتا ہے۔" },
+          { "question": "کیا آپ پرانے سسٹم کے ساتھ انضمام کر سکتے ہیں جو SOAP یا XML استعمال کرتا ہے؟", "answer": "بالکل۔ ہم معمول کے مطابق برج ایپلی کیشنز بناتے ہیں جو پرانے SOAP/XML سروسز کو کھاتے ہیں اور انہیں جدید JSON REST APIs میں ترجمہ کرتے ہیں جس کے ساتھ آپ کی نئی ایپلی کیشنز آسانی سے بات چیت کر سکتی ہیں۔" }
+        ]
+      },
+      "metaTitle": "تھرڈ پارٹی API انٹیگریشن سروسز | اپنی مرضی کے API ڈویلپرز",
+      "metaDescription": "اپنی ایپس اور ویب سائٹس کو Stripe, Salesforce, HubSpot، اور کسی بھی بیرونی API سے مربوط کریں۔ ہم مضبوط، غلطی کو برداشت کرنے والے انضمام اور اپنی مرضی کے مڈل ویئر بناتے ہیں۔"
+    },
+    "ar": {
+      "name": "تكامل واجهات برمجة التطبيقات للجهات الخارجية (Third-Party API Integration)",
+      "shortDescription": "اربط أنظمتك بسلاسة مع بوابات الدفع، وأنظمة إدارة علاقات العملاء (CRM)، وأنظمة تخطيط موارد المؤسسات (ERP)، وأي واجهة برمجة تطبيقات خارجية.",
+      "fullDescription": "تعتمد الشركات الحديثة على العشرات من الأدوات البرمجية المتخصصة، لكن الكفاءة الحقيقية لا تتحقق إلا عندما تتحدث هذه الأنظمة مع بعضها البعض. تربط خدمات تكامل واجهة برمجة تطبيقات الجهات الخارجية (API) برنامجك المخصص أو موقعك الإلكتروني أو تطبيقك بالمنصات الخارجية بأمان وموثوقية. سواء كنت بحاجة إلى مزامنة بيانات العملاء مع Salesforce، أو معالجة المدفوعات المعقدة عبر Stripe، أو أتمتة حملات التسويق في HubSpot، أو الاتصال بأنظمة ERP المؤسسية القديمة، فنحن نبني البرامج الوسيطة (Middleware) القوية المطلوبة. نحن لا نقوم بإعادة توجيه البيانات بشكل أعمى؛ بل ننفذ حدًا ذكيًا للمعدل (Rate-limiting)، ومعالجة للأخطاء، وقوائم انتظار الرسائل الميتة (Dead-letter queues)، ومنطق إعادة المحاولة التلقائي لضمان أن الانقطاع المؤقت في خدمة تابعة لجهة خارجية لن يتسبب أبدًا في تعطل تطبيقك الأساسي.",
+      "features": [
+        "تكامل بوابات الدفع (Stripe ، PayPal ، Braintree)",
+        "مزامنة أنظمة CRM و ERP (Salesforce ، HubSpot ، SAP)",
+        "واجهات برمجة تطبيقات وسائل التواصل الاجتماعي والتسويق (Facebook ، Mailchimp)",
+        "تنفيذ وتحليل خطاطيف الويب (Webhooks) في الوقت الفعلي",
+        "برامج وسيطة مخصصة وجسور خدمات مصغرة (Microservice Bridges)",
+        "معالجة قوية للأخطاء وآليات إعادة المحاولة (التراجع الأسي)"
+      ],
+      "benefits": [
+        "التخلص من الإدخال اليدوي للبيانات والأخطاء البشرية",
+        "إنشاء مصدر واحد للحقيقة (Single Source of Truth) عبر مؤسستك",
+        "الاستفادة من أفضل الأدوات الخارجية دون الحاجة إلى إعادة بنائها",
+        "أتمتة سير عمل الأعمال المعقدة عبر المنصات المتعددة",
+        "ضمان التوافر العالي (High Availability) حتى في حالة فشل الـ APIs الخارجية"
+      ],
+      "content": {
+        "process": [
+          { "title": "تقييم واجهة برمجة التطبيقات (API)", "description": "مراجعة وثائق API لجهة خارجية وطرق المصادقة وحدود المعدل." },
+          { "title": "البنية والأمان", "description": "تصميم برامج وسيطة للتعامل مع مفاتيح API بشكل آمن وتنظيم تحويل البيانات." },
+          { "title": "التطوير", "description": "كتابة كود التكامل، ورسم خرائط حقول البيانات بين الأنظمة، وإعداد خطاطيف الويب (Webhooks)." },
+          { "title": "هندسة المرونة (Resilience)", "description": "تنفيذ إجراءات الأمان مثل منطق إعادة المحاولة، والتخزين المؤقت، وقوائم انتظار البيانات الفاشلة." },
+          { "title": "الاختبار والمراقبة", "description": "إجراء اختبارات في بيئة معزولة (Sandbox) ونشر تنبيهات المراقبة لأعطال API في بيئة الإنتاج." }
+        ],
+        "technologies": [
+          "Node.js / Python",
+          "REST / GraphQL / SOAP",
+          "OAuth 2.0 / JWT",
+          "Webhooks",
+          "Redis (لحد المعدل والتخزين المؤقت)",
+          "AWS SQS / RabbitMQ (لقوائم الانتظار)"
+        ],
+        "faq": [
+          { "question": "ماذا يحدث إذا تعطلت واجهة برمجة التطبيقات (API) الخاصة بالجهة الخارجية؟", "answer": "نحن نبني تكاملات متسامحة مع الأخطاء. إذا تعطلت واجهة برمجة تطبيقات خارجية (مثل CRM)، فإن برنامجنا الوسيط يضع البيانات في قائمة انتظار محلية مؤقتًا ويعيد المحاولة التلقائية باستخدام التراجع الأسي (Exponential Backoff) بمجرد استعادة الخدمة، مما يضمن عدم فقدان أي بيانات." },
+          { "question": "هل يمكنك التكامل مع نظام قديم يستخدم SOAP أو XML؟", "answer": "بالتأكيد. نقوم بشكل روتيني ببناء تطبيقات جسر (Bridge) تستهلك خدمات SOAP / XML القديمة وتترجمها إلى واجهات برمجة تطبيقات JSON REST حديثة يمكن لتطبيقاتك الأحدث التواصل معها بسهولة." }
+        ]
+      },
+      "metaTitle": "خدمات تكامل API للجهات الخارجية | مطورو API مخصصون",
+      "metaDescription": "اربط تطبيقاتك ومواقعك الإلكترونية بـ Stripe و Salesforce و HubSpot وأي واجهة برمجة تطبيقات (API) خارجية. نحن نبني تكاملات قوية وبرامج وسيطة مخصصة."
+    }
+  },
+  "tokenization": {
+    "en": {
+      "name": "Tokenization",
+      "shortDescription": "Tokenize real-world assets on the blockchain.",
+      "fullDescription": "Tokenization is revolutionizing how we interact with assets by bringing real-world value onto the blockchain. Our Tokenization services enable businesses to convert physical or financial assets—like real estate, art, equity, or commodities—into digital tokens on platforms like Ethereum or Polygon. This process unlocks fractional ownership, significantly increases market liquidity, and enables frictionless 24/7 global trading. We guide you through the entire technical process: from designing the exact tokenomics and writing secure, audited ERC-20/ERC-3643 smart contracts, to building the issuance platform and investor dashboards required to manage the lifecycle of your digital assets securely.",
+      "features": [
+        "Real Estate & Commodity Tokenization",
+        "Security Token (STO) Smart Contract Development (ERC-3643)",
+        "Fractional Ownership Architecture",
+        "KYC/AML Integrated Investor Dashboards",
+        "Secondary Trading Platform Integration",
+        "Dividend & Yield Distribution Automation"
+      ],
+      "benefits": [
+        "Unlock Liquidity for Traditionally Illiquid Assets",
+        "Democratize Investment via Fractional Ownership",
+        "Automate Compliance and Dividend Payouts via Smart Contracts",
+        "Reduce Intermediary Fees and Settlement Times",
+        "Access a Global Pool of 24/7 Digital Investors"
+      ],
+      "content": {
+        "process": [
+          { "title": "Asset & Compliance Mapping", "description": "Aligning the technical token structure with your legal frameworks and jurisdictional compliance." },
+          { "title": "Token Smart Contract", "description": "Developing secure, audited smart contracts tailored to represent your specific asset classes." },
+          { "title": "Platform Development", "description": "Building the decentralized application (dApp) where users can mint, buy, or trade the tokens." },
+          { "title": "KYC/AML Integration", "description": "Integrating third-party identity verification to ensure only compliant wallets hold the tokens." },
+          { "title": "Deployment & Maintenance", "description": "Deploying to the mainnet and providing ongoing technical support for distribution and upgrades." }
+        ],
+        "technologies": [
+          "Solidity",
+          "Ethereum / Polygon / Avalanche",
+          "OpenZeppelin (ERC-20, ERC-1155, ERC-3643)",
+          "Hardhat / Foundry",
+          "React.js / Next.js (Investor Portal)",
+          "Web3.js / Ethers.js"
+        ],
+        "faq": [
+          { "question": "What is the difference between a Utility Token and a Security Token?", "answer": "A utility token provides access to a specific product or service on a network. A security token represents an investment contract (like equity or real estate ownership) and is heavily regulated. We specialize in the technical enforcement of these regulations on-chain using standards like ERC-3643." },
+          { "question": "How do you enforce KYC (Know Your Customer) on the blockchain?", "answer": "We integrate whitelisting directly into the smart contract. Even if the tokens are traded on a secondary market, the smart contract will reject the transaction if the receiving wallet address has not passed the required KYC/AML verification on the platform." }
+        ]
+      },
+      "metaTitle": "Tokenization Services | Real World Assets on Blockchain",
+      "metaDescription": "Tokenize real estate, art, and equity on the blockchain. We specialize in Security Tokens, smart contracts, and KYC-integrated investor portals."
+    },
+    "tr": {
+      "name": "Tokenizasyon (Dijitalleştirme)",
+      "shortDescription": "Gerçek dünya varlıklarını blok zincirinde tokenize edin (dijitalleştirin).",
+      "fullDescription": "Tokenizasyon, gerçek dünya değerini blok zincirine taşıyarak varlıklarla etkileşim şeklimizde devrim yaratıyor. Tokenizasyon hizmetlerimiz, işletmelerin gayrimenkul, sanat eserleri, hisse senedi veya emtia gibi fiziksel veya finansal varlıkları Ethereum veya Polygon gibi platformlarda dijital tokenlara dönüştürmesini sağlar. Bu süreç, kısmi (fractional) mülkiyetin kilidini açar, piyasa likiditesini önemli ölçüde artırır ve 7/24 sürtünmesiz küresel ticarete olanak tanır. Kesin tokenomikleri tasarlamaktan ve güvenli, denetlenmiş ERC-20/ERC-3643 akıllı sözleşmeleri yazmaktan, dijital varlıklarınızın yaşam döngüsünü güvenli bir şekilde yönetmek için gereken ihraç platformunu ve yatırımcı panolarını (dashboards) oluşturmaya kadar tüm teknik süreç boyunca size rehberlik ediyoruz.",
+      "features": [
+        "Gayrimenkul ve Emtia Tokenizasyonu",
+        "Menkul Kıymet Tokeni (STO) Akıllı Sözleşme Geliştirme (ERC-3643)",
+        "Kısmi (Fractional) Mülkiyet Mimarisi",
+        "KYC/AML Entegre Yatırımcı Panoları",
+        "İkincil Ticaret Platformu Entegrasyonu",
+        "Temettü ve Getiri Dağıtımı Otomasyonu"
+      ],
+      "benefits": [
+        "Geleneksel Olarak Likit Olmayan Varlıklar İçin Likiditenin Kilidini Açma",
+        "Kısmi Mülkiyet Yoluyla Yatırımı Demokratikleştirme",
+        "Akıllı Sözleşmeler Yoluyla Uyumluluk ve Temettü Ödemelerini Otomatikleştirmek",
+        "Aracı Ücretlerini ve Hesaplaşma (Settlement) Sürelerini Azaltma",
+        "7/24 Aktif Küresel Bir Dijital Yatırımcı Havuzuna Erişim"
+      ],
+      "content": {
+        "process": [
+          { "title": "Varlık ve Uyumluluk Haritalaması", "description": "Teknik token yapısını yasal çerçevelerinizle ve yargı bölgesi uyumluluğuyla uyumlu hale getirme." },
+          { "title": "Token Akıllı Sözleşmesi", "description": "Belirli varlık sınıflarınızı temsil edecek şekilde tasarlanmış güvenli, denetlenmiş akıllı sözleşmeler geliştirme." },
+          { "title": "Platform Geliştirme", "description": "Kullanıcıların tokenları basabileceği (mint), satın alabileceği veya ticaretini yapabileceği merkezi olmayan uygulamayı (dApp) oluşturma." },
+          { "title": "KYC/AML Entegrasyonu", "description": "Yalnızca uyumlu cüzdanların tokenları tutmasını sağlamak için üçüncü taraf kimlik doğrulamasını entegre etme." },
+          { "title": "Dağıtım ve Bakım", "description": "Mainnet'e dağıtım (deployment) yapma ve dağıtım ve yükseltmeler için sürekli teknik destek sağlama." }
+        ],
+        "technologies": [
+          "Solidity",
+          "Ethereum / Polygon / Avalanche",
+          "OpenZeppelin (ERC-20, ERC-1155, ERC-3643)",
+          "Hardhat / Foundry",
+          "React.js / Next.js (Yatırımcı Portalı)",
+          "Web3.js / Ethers.js"
+        ],
+        "faq": [
+          { "question": "Hizmet Tokeni (Utility Token) ile Menkul Kıymet Tokeni (Security Token) arasındaki fark nedir?", "answer": "Hizmet tokeni, bir ağdaki belirli bir ürüne veya hizmete erişim sağlar. Bir menkul kıymet tokeni, bir yatırım sözleşmesini (hisse senedi veya gayrimenkul mülkiyeti gibi) temsil eder ve yoğun bir şekilde düzenlenir. ERC-3643 gibi standartları kullanarak zincir üzerinde (on-chain) bu düzenlemelerin teknik olarak uygulanmasında uzmanız." },
+          { "question": "Blok zincirinde KYC'yi (Müşterini Tanı) nasıl zorunlu kılıyorsunuz?", "answer": "Beyaz listeye almayı (whitelisting) doğrudan akıllı sözleşmeye entegre ediyoruz. Tokenlar ikincil bir piyasada işlem görse bile, alıcı cüzdan adresi platformda gerekli KYC/AML doğrulamasını geçmemişse akıllı sözleşme işlemi reddedecektir." }
+        ]
+      },
+      "metaTitle": "Tokenizasyon Hizmetleri | Blok Zincirinde Gerçek Dünya Varlıkları",
+      "metaDescription": "Gayrimenkul, sanat eserleri ve hisse senetlerini blok zincirinde tokenize edin. Menkul Kıymet Tokenleri, akıllı sözleşmeler ve KYC entegre yatırımcı portallarında uzmanız."
+    },
+    "de": {
+      "name": "Tokenisierung",
+      "shortDescription": "Tokenisieren Sie Real World Assets (RWA) auf der Blockchain.",
+      "fullDescription": "Die Tokenisierung revolutioniert die Art und Weise, wie wir mit Vermögenswerten interagieren, indem sie reale Werte auf die Blockchain bringt. Unsere Tokenisierungs-Dienste ermöglichen es Unternehmen, physische oder finanzielle Vermögenswerte – wie Immobilien, Kunst, Eigenkapital oder Rohstoffe – in digitale Token auf Plattformen wie Ethereum oder Polygon umzuwandeln. Dieser Prozess ermöglicht Teileigentum (Fractional Ownership), erhöht die Marktliquidität erheblich und ermöglicht reibungslosen, weltweiten 24/7-Handel. Wir begleiten Sie durch den gesamten technischen Prozess: vom Design der Tokenomics über das Schreiben sicherer ERC-20/ERC-3643 Smart Contracts bis hin zum Aufbau der Emissionsplattform und der Investoren-Dashboards.",
+      "features": [
+        "Immobilien- & Rohstoff-Tokenisierung",
+        "Security Token (STO) Smart Contract Entwicklung (ERC-3643)",
+        "Architektur für Teileigentum (Fractional Ownership)",
+        "KYC/AML-integrierte Investoren-Dashboards",
+        "Integration von Sekundärmarkthandels-Plattformen",
+        "Automatisierung von Dividenden- & Renditeausschüttungen"
+      ],
+      "benefits": [
+        "Schaffung von Liquidität für traditionell illiquide Assets",
+        "Demokratisierung von Investments durch Teileigentum",
+        "Automatisierte Compliance & Ausschüttungen via Smart Contracts",
+        "Reduzierung von Vermittlungsgebühren & Abwicklungszeiten",
+        "Zugang zu einem globalen Pool digitaler Investoren rund um die Uhr"
+      ],
+      "content": {
+        "process": [
+          { "title": "Asset- & Compliance-Mapping", "description": "Abstimmung der technischen Token-Struktur mit rechtlichen Rahmenbedingungen." },
+          { "title": "Token Smart Contract", "description": "Entwicklung sicherer, auditierter Smart Contracts, die Ihre Assets abbilden." },
+          { "title": "Plattform-Entwicklung", "description": "Aufbau der dApp, über die Nutzer Token prägen (minten) oder handeln können." },
+          { "title": "KYC/AML Integration", "description": "Integration von Identitätsprüfungen, damit nur verifizierte Wallets Token halten können." },
+          { "title": "Deployment & Maintenance", "description": "Mainnet-Launch und fortlaufender technischer Support für das Ökosystem." }
+        ],
+        "technologies": [
+          "Solidity",
+          "Ethereum / Polygon / Avalanche",
+          "OpenZeppelin (ERC-20, ERC-1155, ERC-3643)",
+          "Hardhat / Foundry",
+          "React.js / Next.js (Investoren Portal)",
+          "Web3.js / Ethers.js"
+        ],
+        "faq": [
+          { "question": "Was ist der Unterschied zwischen einem Utility Token und einem Security Token?", "answer": "Ein Utility Token bietet Zugang zu einem Produkt/Service in einem Netzwerk. Ein Security Token repräsentiert ein Investment (wie Aktien oder Immobilien) und ist streng reguliert. Wir setzen diese Regularien technisch On-Chain via ERC-3643 um." },
+          { "question": "Wie setzen Sie KYC (Know Your Customer) auf der Blockchain durch?", "answer": "Wir integrieren Whitelisting direkt in den Smart Contract. Selbst wenn Token auf Sekundärmärkten gehandelt werden, blockiert der Contract den Transfer an Wallets, die keine gültige KYC-Prüfung absolviert haben." }
+        ]
+      },
+      "metaTitle": "Tokenisierungs-Dienste | Real World Assets & STO Agentur",
+      "metaDescription": "Tokenisieren Sie Immobilien & Assets auf der Blockchain. Spezialisten für Security Tokens (ERC-3643), Smart Contracts und KYC-konforme Plattformen."
+    },
+    "ur": {
+      "name": "ٹوکنائزیشن",
+      "shortDescription": "بلاکچین پر حقیقی دنیا کے اثاثوں کو ٹوکنائز کریں۔",
+      "fullDescription": "حقیقی دنیا کی قدر کو بلاکچین پر لا کر ٹوکنائزیشن اثاثوں کے ساتھ ہمارے تعامل کے طریقے میں انقلاب لا رہی ہے۔ ہماری ٹوکنائزیشن سروسز کاروباروں کو جسمانی یا مالیاتی اثاثوں کو — جیسے کہ رئیل اسٹیٹ، آرٹ، ایکویٹی، یا کموڈٹیز — کو Ethereum یا Polygon جیسے پلیٹ فارمز پر ڈیجیٹل ٹوکنز میں تبدیل کرنے کے قابل بناتی ہیں۔ یہ عمل جزوی ملکیت کو کھولتا ہے، مارکیٹ کی لیکویڈیٹی میں نمایاں اضافہ کرتا ہے، اور بغیر رگڑ 24/7 عالمی تجارت کو قابل بناتا ہے۔ ہم پورے تکنیکی عمل میں آپ کی رہنمائی کرتے ہیں: درست ٹوکنومکس کو ڈیزائن کرنے اور محفوظ، آڈٹ شدہ ERC-20/ERC-3643 سمارٹ معاہدے لکھنے سے لے کر، آپ کے ڈیجیٹل اثاثوں کے لائف سائیکل کو محفوظ طریقے سے منظم کرنے کے لیے درکار اجراء کے پلیٹ فارم اور سرمایہ کاروں کے ڈیش بورڈز بنانے تک۔",
+      "features": [
+        "رئیل اسٹیٹ اور کموڈٹی ٹوکنائزیشن",
+        "سیکیورٹی ٹوکن (STO) اسمارٹ کنٹریکٹ ڈیولپمنٹ (ERC-3643)",
+        "فرکشنل اونرشپ آرکیٹیکچر",
+        "KYC/AML انٹیگریٹڈ انویسٹر ڈیش بورڈز",
+        "ثانوی تجارتی پلیٹ فارم انٹیگریشن",
+        "ڈیویڈنڈ اور پیداوار کی تقسیم کا آٹومیشن"
+      ],
+      "benefits": [
+        "روایتی طور پر غیر مائع اثاثوں کے لیے لیکویڈیٹی کو غیر مقفل کریں۔",
+        "جزوی ملکیت کے ذریعے سرمایہ کاری کو جمہوری بنائیں",
+        "سمارٹ کنٹریکٹس کے ذریعے تعمیل اور منافع کی ادائیگیوں کو خودکار بنائیں",
+        "انٹرمیڈیری فیس اور تصفیہ کے اوقات کو کم کریں۔",
+        "24/7 ڈیجیٹل سرمایہ کاروں کے عالمی پول تک رسائی حاصل کریں۔"
+      ],
+      "content": {
+        "process": [
+          { "title": "اثاثہ اور تعمیل کی نقشہ سازی", "description": "اپنے قانونی فریم ورک اور دائرہ اختیار کی تعمیل کے ساتھ تکنیکی ٹوکن کے ڈھانچے کو سیدھ میں لانا۔" },
+          { "title": "ٹوکن سمارٹ کنٹریکٹ", "description": "آپ کی مخصوص اثاثہ کلاسوں کی نمائندگی کرنے کے لیے تیار کردہ محفوظ، آڈٹ شدہ سمارٹ معاہدے تیار کرنا۔" },
+          { "title": "پلیٹ فارم کی ترقی", "description": "وکندریقرت ایپلیکیشن (dApp) بنانا جہاں صارف ٹوکن کو ٹکسال، خرید یا تجارت کر سکتے ہیں۔" },
+          { "title": "KYC/AML انٹیگریشن", "description": "تیسرے فریق کی شناخت کی توثیق کو یکجا کرنا تاکہ یہ یقینی بنایا جا سکے کہ صرف تعمیل کرنے والے بٹوے کے پاس ٹوکن ہیں۔" },
+          { "title": "تعیناتی اور دیکھ بھال", "description": "مین نیٹ پر تعینات کرنا اور تقسیم اور اپ گریڈ کے لیے جاری تکنیکی مدد فراہم کرنا۔" }
+        ],
+        "technologies": [
+          "Solidity",
+          "Ethereum / Polygon / Avalanche",
+          "OpenZeppelin (ERC-20, ERC-1155, ERC-3643)",
+          "Hardhat / Foundry",
+          "React.js / Next.js (Investor Portal)",
+          "Web3.js / Ethers.js"
+        ],
+        "faq": [
+          { "question": "یوٹیلیٹی ٹوکن اور سیکیورٹی ٹوکن میں کیا فرق ہے؟", "answer": "ایک یوٹیلیٹی ٹوکن کسی نیٹ ورک پر کسی مخصوص پروڈکٹ یا سروس تک رسائی فراہم کرتا ہے۔ سیکیورٹی ٹوکن سرمایہ کاری کے معاہدے (جیسے ایکویٹی یا رئیل اسٹیٹ کی ملکیت) کی نمائندگی کرتا ہے اور بہت زیادہ ریگولیٹڈ ہے۔ ہم ERC-3643 جیسے معیارات کا استعمال کرتے ہوئے آن چین ان ضوابط کے تکنیکی نفاذ میں مہارت رکھتے ہیں۔" },
+          { "question": "آپ بلاکچین پر KYC کو کیسے نافذ کرتے ہیں؟", "answer": "ہم براہ راست سمارٹ معاہدے میں وائٹ لسٹنگ کو ضم کرتے ہیں۔ یہاں تک کہ اگر ٹوکنز کی ثانوی مارکیٹ میں تجارت کی جاتی ہے، تو سمارٹ معاہدہ لین دین کو مسترد کر دے گا اگر وصول کرنے والے بٹوے کے پتے نے پلیٹ فارم پر مطلوبہ KYC/AML تصدیق پاس نہیں کی ہے۔" }
+        ]
+      },
+      "metaTitle": "ٹوکنائزیشن سروسز | بلاکچین پر حقیقی دنیا کے اثاثے۔",
+      "metaDescription": "بلاکچین پر رئیل اسٹیٹ، آرٹ اور ایکویٹی کو ٹوکنائز کریں۔ ہم سیکورٹی ٹوکنز، سمارٹ کنٹریکٹس، اور کے وائی سی انٹیگریٹڈ انویسٹر پورٹلز میں مہارت رکھتے ہیں۔"
+    },
+    "ar": {
+      "name": "الترميز (Tokenization)",
+      "shortDescription": "ترميز أصول العالم الحقيقي (Real-World Assets) على البلوك تشين.",
+      "fullDescription": "يحدث الترميز (Tokenization) ثورة في كيفية تفاعلنا مع الأصول من خلال جلب قيمة العالم الحقيقي إلى البلوك تشين. تتيح خدمات الترميز لدينا للشركات تحويل الأصول المادية أو المالية - مثل العقارات، أو الأعمال الفنية، أو حقوق الملكية، أو السلع - إلى رموز رقمية (Tokens) على منصات مثل Ethereum أو Polygon. تفتح هذه العملية المجال للملكية المجزأة (Fractional Ownership)، وتزيد من سيولة السوق بشكل كبير، وتمكن التداول العالمي السلس على مدار الساعة طوال أيام الأسبوع. نحن نرشدك خلال العملية الفنية بأكملها: بدءًا من تصميم اقتصاديات الرمز (Tokenomics) الدقيقة وكتابة عقود ذكية ERC-20/ERC-3643 آمنة ومدققة، إلى بناء منصة الإصدار ولوحات تحكم المستثمرين اللازمة لإدارة دورة حياة أصولك الرقمية بأمان.",
+      "features": [
+        "ترميز العقارات والسلع",
+        "تطوير العقود الذكية لرموز الأوراق المالية (STO) بمعيار (ERC-3643)",
+        "هندسة الملكية المجزأة",
+        "لوحات تحكم مستثمرين مدمجة مع التحقق من الهوية (KYC/AML)",
+        "التكامل مع منصات التداول الثانوية",
+        "أتمتة توزيع الأرباح والعوائد"
+      ],
+      "benefits": [
+        "إطلاق السيولة للأصول التي تعتبر تقليديًا غير سائلة",
+        "إضفاء الطابع الديمقراطي على الاستثمار عبر الملكية المجزأة",
+        "أتمتة الامتثال ودفع الأرباح عبر العقود الذكية",
+        "تقليل رسوم الوسطاء وأوقات التسوية",
+        "الوصول إلى مجموعة عالمية من المستثمرين الرقميين على مدار الساعة"
+      ],
+      "content": {
+        "process": [
+          { "title": "رسم خرائط الأصول والامتثال", "description": "مواءمة هيكل الرمز الفني مع الأطر القانونية والامتثال القضائي الخاص بك." },
+          { "title": "العقد الذكي للرمز (Token Smart Contract)", "description": "تطوير عقود ذكية آمنة ومدققة ومصممة خصيصًا لتمثيل فئات الأصول المحددة الخاصة بك." },
+          { "title": "تطوير المنصة", "description": "بناء التطبيق اللامركزي (dApp) حيث يمكن للمستخدمين سك الرموز (Mint)، أو شرائها، أو تداولها." },
+          { "title": "تكامل KYC / AML", "description": "دمج التحقق من الهوية من جهة خارجية لضمان أن المحافظ المتوافقة فقط هي التي يمكنها الاحتفاظ بالرموز." },
+          { "title": "النشر والصيانة", "description": "النشر على الشبكة الرئيسية (Mainnet) وتقديم دعم فني مستمر للتوزيع والترقيات." }
+        ],
+        "technologies": [
+          "Solidity",
+          "Ethereum / Polygon / Avalanche",
+          "OpenZeppelin (ERC-20, ERC-1155, ERC-3643)",
+          "Hardhat / Foundry",
+          "React.js / Next.js (بوابة المستثمر)",
+          "Web3.js / Ethers.js"
+        ],
+        "faq": [
+          { "question": "ما هو الفرق بين رمز المنفعة (Utility Token) ورمز الأوراق المالية (Security Token)؟", "answer": "يوفر رمز المنفعة الوصول إلى منتج أو خدمة معينة على شبكة. أما رمز الأوراق المالية (Security Token) فيمثل عقد استثمار (مثل حقوق الملكية أو ملكية العقارات) ويخضع لتنظيم شديد. نحن متخصصون في التطبيق الفني لهذه اللوائح على السلسلة (On-chain) باستخدام معايير مثل ERC-3643." },
+          { "question": "كيف تطبق قاعدة 'اعرف عميلك' (KYC) على البلوك تشين؟", "answer": "نحن ندمج القائمة البيضاء (Whitelisting) مباشرة في العقد الذكي. حتى لو تم تداول الرموز في سوق ثانوية، سيرفض العقد الذكي المعاملة إذا لم يكن عنوان المحفظة المستلمة قد اجتاز التحقق المطلوب من KYC / AML على المنصة." }
+        ]
+      },
+      "metaTitle": "خدمات الترميز (Tokenization) | أصول العالم الحقيقي على البلوك تشين",
+      "metaDescription": "قم بترميز العقارات والفن وحقوق الملكية على البلوك تشين. نحن متخصصون في رموز الأوراق المالية (Security Tokens)، والعقود الذكية، وبوابات المستثمرين المدمجة مع KYC."
+    }
+  }
+}

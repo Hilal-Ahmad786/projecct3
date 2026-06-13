@@ -28,7 +28,35 @@ const nextConfig = {
   },
 
   async redirects() {
+    // Translate English /services subpage paths to localized canonical URLs
+    // (e.g. /ar/services/seo/faq → /ar/alkhadamat/seo/asila). Explicit per
+    // segment because Next.js wildcards cannot translate a path segment — the
+    // old greedy `/ar/services/:slug*` rule kept the English subpage segment
+    // and 404'd (no matching localized rewrite).
+    const localizedBases: Record<string, string> = {
+      tr: 'hizmetler', de: 'dienstleistungen', ar: 'alkhadamat', ur: 'khidmaat',
+    };
+    const subSegments: Record<string, Record<string, string>> = {
+      features: { tr: 'ozellikler', de: 'funktionen', ar: 'almiizat', ur: 'khasusiyat' },
+      process: { tr: 'surec', de: 'prozess', ar: 'alamaliat', ur: 'tariqa' },
+      technologies: { tr: 'teknoloji', de: 'technologie', ar: 'altiqniat', ur: 'technology' },
+      pricing: { tr: 'fiyatlandirma', de: 'preise', ar: 'tasiir', ur: 'qeemat' },
+      blog: { tr: 'blog', de: 'blog', ar: 'blog', ur: 'blog' },
+      portfolio: { tr: 'portfoy', de: 'portfolio', ar: 'almalaf', ur: 'portfolio' },
+      faq: { tr: 'sss', de: 'faq', ar: 'asila', ur: 'sawalat' },
+    };
+    const localizedServiceRedirects = Object.entries(localizedBases).flatMap(([loc, base]) => [
+      // subpages first (most specific), then the service detail + index
+      ...Object.entries(subSegments).map(([en, locs]) => ({
+        source: `/${loc}/services/:slug/${en}`,
+        destination: `/${loc}/${base}/:slug/${locs[loc]}`,
+        permanent: true,
+      })),
+      { source: `/${loc}/services/:slug`, destination: `/${loc}/${base}/:slug`, permanent: true },
+      { source: `/${loc}/services`, destination: `/${loc}/${base}`, permanent: true },
+    ]);
     return [
+      ...localizedServiceRedirects,
       // tech-stack → technologies (canonical sub-nav URL)
       { source: '/:locale/services/:slug/tech-stack', destination: '/:locale/services/:slug/technologies', permanent: true },
       // Turkish blog posts missing locale prefix (old Google-indexed URLs)
@@ -43,11 +71,8 @@ const nextConfig = {
       { source: '/projects/ecommerce-platform', destination: '/en/projects', permanent: true },
       { source: '/projects/design-system', destination: '/en/projects', permanent: true },
 
-      // Non-English locales using English /services path (should use localized path)
-      { source: '/de/services/:slug*', destination: '/de/dienstleistungen/:slug*', permanent: true },
-      { source: '/ar/services/:slug*', destination: '/ar/alkhadamat/:slug*', permanent: true },
-      { source: '/tr/services/:slug*', destination: '/tr/hizmetler/:slug*', permanent: true },
-      { source: '/ur/services/:slug*', destination: '/ur/khidmaat/:slug*', permanent: true },
+      // (Non-English /services → localized paths handled by
+      //  localizedServiceRedirects above — per-segment, not greedy.)
 
       // Newsletter page redirect (no newsletter system exists)
       { source: '/newsletter', destination: '/en/contact', permanent: true },
@@ -77,7 +102,9 @@ const nextConfig = {
       { source: '/:locale(tr)/hizmetler/:slug', destination: '/:locale/services/:slug' },
       { source: '/:locale(tr)/hizmetler/:slug/ozellikler', destination: '/:locale/services/:slug/features' },
       { source: '/:locale(tr)/hizmetler/:slug/surec', destination: '/:locale/services/:slug/process' },
-      { source: '/:locale(tr)/hizmetler/:slug/teknoloji', destination: '/:locale/services/:slug/tech-stack' },
+      { source: '/:locale(tr)/hizmetler/:slug/teknoloji', destination: '/:locale/services/:slug/technologies' },
+      { source: '/:locale(tr)/hizmetler/:slug/fiyatlandirma', destination: '/:locale/services/:slug/pricing' },
+      { source: '/:locale(tr)/hizmetler/:slug/blog', destination: '/:locale/services/:slug/blog' },
       { source: '/:locale(tr)/hizmetler/:slug/portfoy', destination: '/:locale/services/:slug/portfolio' },
       { source: '/:locale(tr)/hizmetler/:slug/sss', destination: '/:locale/services/:slug/faq' },
       { source: '/:locale(tr)/projeler', destination: '/:locale/projects' },
@@ -90,7 +117,9 @@ const nextConfig = {
       { source: '/:locale(de)/dienstleistungen/:slug', destination: '/:locale/services/:slug' },
       { source: '/:locale(de)/dienstleistungen/:slug/funktionen', destination: '/:locale/services/:slug/features' },
       { source: '/:locale(de)/dienstleistungen/:slug/prozess', destination: '/:locale/services/:slug/process' },
-      { source: '/:locale(de)/dienstleistungen/:slug/technologie', destination: '/:locale/services/:slug/tech-stack' },
+      { source: '/:locale(de)/dienstleistungen/:slug/technologie', destination: '/:locale/services/:slug/technologies' },
+      { source: '/:locale(de)/dienstleistungen/:slug/preise', destination: '/:locale/services/:slug/pricing' },
+      { source: '/:locale(de)/dienstleistungen/:slug/blog', destination: '/:locale/services/:slug/blog' },
       { source: '/:locale(de)/dienstleistungen/:slug/portfolio', destination: '/:locale/services/:slug/portfolio' },
       { source: '/:locale(de)/dienstleistungen/:slug/faq', destination: '/:locale/services/:slug/faq' },
       { source: '/:locale(de)/projekte', destination: '/:locale/projects' },
@@ -103,7 +132,9 @@ const nextConfig = {
       { source: '/:locale(ar)/alkhadamat/:slug', destination: '/:locale/services/:slug' },
       { source: '/:locale(ar)/alkhadamat/:slug/almiizat', destination: '/:locale/services/:slug/features' },
       { source: '/:locale(ar)/alkhadamat/:slug/alamaliat', destination: '/:locale/services/:slug/process' },
-      { source: '/:locale(ar)/alkhadamat/:slug/altiqniat', destination: '/:locale/services/:slug/tech-stack' },
+      { source: '/:locale(ar)/alkhadamat/:slug/altiqniat', destination: '/:locale/services/:slug/technologies' },
+      { source: '/:locale(ar)/alkhadamat/:slug/tasiir', destination: '/:locale/services/:slug/pricing' },
+      { source: '/:locale(ar)/alkhadamat/:slug/blog', destination: '/:locale/services/:slug/blog' },
       { source: '/:locale(ar)/alkhadamat/:slug/almalaf', destination: '/:locale/services/:slug/portfolio' },
       { source: '/:locale(ar)/alkhadamat/:slug/asila', destination: '/:locale/services/:slug/faq' },
       { source: '/:locale(ar)/almasharie', destination: '/:locale/projects' },
@@ -116,7 +147,9 @@ const nextConfig = {
       { source: '/:locale(ur)/khidmaat/:slug', destination: '/:locale/services/:slug' },
       { source: '/:locale(ur)/khidmaat/:slug/khasusiyat', destination: '/:locale/services/:slug/features' },
       { source: '/:locale(ur)/khidmaat/:slug/tariqa', destination: '/:locale/services/:slug/process' },
-      { source: '/:locale(ur)/khidmaat/:slug/technology', destination: '/:locale/services/:slug/tech-stack' },
+      { source: '/:locale(ur)/khidmaat/:slug/technology', destination: '/:locale/services/:slug/technologies' },
+      { source: '/:locale(ur)/khidmaat/:slug/qeemat', destination: '/:locale/services/:slug/pricing' },
+      { source: '/:locale(ur)/khidmaat/:slug/blog', destination: '/:locale/services/:slug/blog' },
       { source: '/:locale(ur)/khidmaat/:slug/portfolio', destination: '/:locale/services/:slug/portfolio' },
       { source: '/:locale(ur)/khidmaat/:slug/sawalat', destination: '/:locale/services/:slug/faq' },
       { source: '/:locale(ur)/mansoobay', destination: '/:locale/projects' },

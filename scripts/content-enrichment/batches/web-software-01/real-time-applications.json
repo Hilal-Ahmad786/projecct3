@@ -1,0 +1,278 @@
+{
+  "slug": "real-time-applications",
+  "en": {
+    "name": "Real-Time Applications",
+    "shortDescription": "Build live dashboards, collaborative tools, and chat that update instantly — WebSockets, presence, and real-time data with the scaling and reconnection handling that keep them reliable under real load.",
+    "fullDescription": "Real-time features feel like magic to users and are deceptively hard to build well. We develop collaborative editors, live dashboards, chat, notifications, and multiplayer experiences using WebSockets, Server-Sent Events, and real-time databases. The easy part is getting a message from A to B; the hard part is what we specialize in — scaling to thousands of concurrent connections, handling dropped connections and reconnection gracefully, keeping presence and typing indicators accurate, and resolving conflicts when two people edit the same thing. We use proven tooling like Socket.io, managed services such as Pusher and Ably, or Redis pub/sub to fan out messages across servers, and we design for the failure modes — flaky networks, server restarts, message ordering — that separate a demo from a production system. The result is responsive, live software that stays reliable as your user count grows.",
+    "features": [
+      "WebSocket & Socket.io Implementation",
+      "Server-Sent Events for One-Way Streams",
+      "Real-Time Databases & Sync",
+      "Collaborative Editing & Conflict Resolution",
+      "Presence & Typing Indicators",
+      "Live Notifications & Activity Feeds",
+      "Real-Time Analytics Dashboards",
+      "Horizontal Scaling with Redis Pub/Sub"
+    ],
+    "benefits": [
+      "Instant feedback that keeps users engaged",
+      "Live collaboration without page refreshes",
+      "Reduced server load versus constant polling",
+      "Reliable delivery even on unstable networks",
+      "Scales to thousands of concurrent connections",
+      "A responsive feel that differentiates your product"
+    ],
+    "metaTitle": "Real-Time Application Development | PakSoft",
+    "metaDescription": "Build live dashboards, chat, and collaborative tools with WebSockets, presence, and Redis-backed scaling. Reliable real-time under real load. Get an estimate.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Use-Case & Transport Selection", "description": "We clarify what needs to be real-time and choose the right transport — full-duplex WebSockets for chat and collaboration, lighter Server-Sent Events for one-way live feeds. Picking the right tool avoids over-engineering a problem that a simpler approach solves." },
+        { "step": 2, "title": "Architecture for Scale", "description": "We design how messages fan out across multiple servers from the start, usually with Redis pub/sub or a managed service, because a real-time system that works on one server often breaks on three. Connection limits and resource use are planned for your expected concurrency." },
+        { "step": 3, "title": "Core Real-Time Build", "description": "We implement the live features — messaging, presence, live updates — with clean event contracts between client and server. State is kept consistent so what one user does is reflected accurately and quickly for everyone else." },
+        { "step": 4, "title": "Resilience & Reconnection", "description": "We handle the hard realities: dropped connections, reconnection with state recovery, message ordering, and offline queuing. This is where most real-time projects fail, so we test these paths explicitly rather than assuming the network is reliable." },
+        { "step": 5, "title": "Conflict Resolution & Consistency", "description": "For collaborative editing we implement conflict resolution — often with CRDTs or operational transforms — so simultaneous edits merge sensibly instead of overwriting each other. Users see a coherent shared state, not a race condition." },
+        { "step": 6, "title": "Load Testing & Launch", "description": "We load-test with realistic concurrent connections to find the breaking points before users do, then deploy with monitoring of connection counts, latency, and message throughput. Real-time systems need live observability because problems appear under load, not in a quiet demo." }
+      ],
+      "faq": [
+        { "question": "WebSockets or Server-Sent Events — which do I need?", "answer": "Use WebSockets when you need two-way, low-latency communication — chat, collaborative editing, multiplayer. Use Server-Sent Events when data only flows one way, server to client, like a live price ticker or notification feed; SSE is simpler, runs over plain HTTP, and reconnects automatically. Many apps use SSE where they can and reserve WebSockets for genuinely bidirectional features. We pick per feature, not one for everything." },
+        { "question": "Should I build it myself or use Pusher/Ably?", "answer": "Managed services like Pusher, Ably, or Firebase handle the hard scaling and reliability work for you, which is often worth the cost for getting to market fast and avoiding operational burden. Self-hosting with Socket.io and Redis gives more control and lower cost at very high volume, but you own the scaling and reliability. We help you weigh time-to-market and ongoing cost against control, and we've shipped both." },
+        { "question": "Why is real-time scaling hard?", "answer": "A WebSocket is a persistent connection, so a server holding ten thousand of them uses real memory and can't simply be load-balanced like stateless HTTP. When you run multiple servers, a message from a user on server A must reach subscribers on server B, which requires a fan-out layer like Redis pub/sub. Add reconnection, message ordering, and presence accuracy across servers, and you see why naive real-time demos fall apart in production." },
+        { "question": "What happens when a user's connection drops?", "answer": "On real networks, connections drop constantly — phones change towers, laptops sleep, WiFi flickers. We build automatic reconnection with backoff, recover the user's state and missed messages on reconnect, and queue outgoing actions while offline so nothing is lost. Handling this gracefully is the difference between an app that feels solid and one that frustrates users every time the signal wavers." },
+        { "question": "How do you handle two people editing the same thing?", "answer": "Collaborative editing needs conflict resolution so simultaneous changes don't overwrite each other. We use approaches like CRDTs (conflict-free replicated data types) or operational transformation, which merge concurrent edits into a consistent result — the technology behind tools like Google Docs and Figma. The right choice depends on your data; we design it so users see a coherent shared document rather than lost work." },
+        { "question": "Will real-time features hurt my server costs?", "answer": "Persistent connections do consume resources, but real-time is often cheaper than the alternative: constant polling, where every client hammers your server every few seconds whether data changed or not. A well-built WebSocket or SSE setup pushes updates only when something actually changes, reducing total load. We design with connection efficiency and fan-out in mind so costs scale sensibly with users." },
+        { "question": "Can you add real-time to my existing app?", "answer": "Yes. We regularly add live features — notifications, presence, a live dashboard, collaborative editing — to existing applications without rebuilding them. We introduce a real-time layer alongside your current request/response architecture, since the two coexist well. We start with the feature that delivers the most user value and expand from there, rather than rewiring everything at once." },
+        { "question": "How do you test a real-time system?", "answer": "Beyond normal tests, we load-test with many simulated concurrent connections to find where latency degrades and connections start dropping, because these systems behave very differently under load than in a single-user demo. We test failure paths explicitly — server restarts, network drops, out-of-order messages — and monitor live metrics like connection count and message latency in production, since real-time problems surface under real concurrency." }
+      ],
+      "technologies": [
+        { "icon": "socketdotio", "name": "Socket.io" },
+        { "icon": "pusher", "name": "Pusher" },
+        { "icon": "ably", "name": "Ably" },
+        { "icon": "firebase", "name": "Firebase Realtime" },
+        { "icon": "redis", "name": "Redis Pub/Sub" },
+        { "icon": "liveblocks", "name": "Liveblocks" },
+        { "icon": "nodedotjs", "name": "Node.js" },
+        { "icon": "typescript", "name": "TypeScript" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Gerçek Zamanlı Uygulamalar",
+    "shortDescription": "Anında güncellenen canlı panolar, ortak çalışma araçları ve sohbet kurun — WebSockets, presence ve gerçek zamanlı veri, gerçek yük altında güvenilir kalmasını sağlayan ölçekleme ve yeniden bağlanma yönetimiyle.",
+    "fullDescription": "Gerçek zamanlı özellikler kullanıcılara büyü gibi gelir ve iyi kurmak göründüğünden zordur. WebSockets, Server-Sent Events ve gerçek zamanlı veritabanları kullanarak ortak editörler, canlı panolar, sohbet, bildirimler ve çok oyunculu deneyimler geliştiririz. Kolay kısım bir mesajı A'dan B'ye ulaştırmaktır; zor kısım uzmanlık alanımızdır — binlerce eşzamanlı bağlantıya ölçeklenmek, düşen bağlantıları ve yeniden bağlanmayı zarifçe ele almak, presence ve yazıyor göstergelerini doğru tutmak ve iki kişi aynı şeyi düzenlediğinde çakışmaları çözmek. Mesajları sunucular arasında dağıtmak için Socket.io gibi kanıtlanmış araçlar, Pusher ve Ably gibi yönetilen hizmetler veya Redis pub/sub kullanırız ve bir demoyu üretim sisteminden ayıran hata modlarına — dengesiz ağlar, sunucu yeniden başlatmaları, mesaj sıralaması — göre tasarlarız. Sonuç, kullanıcı sayınız büyürken güvenilir kalan duyarlı, canlı yazılımdır.",
+    "features": [
+      "WebSocket ve Socket.io Uygulaması",
+      "Tek Yönlü Akışlar için Server-Sent Events",
+      "Gerçek Zamanlı Veritabanları ve Senkronizasyon",
+      "Ortak Düzenleme ve Çakışma Çözümü",
+      "Presence ve Yazıyor Göstergeleri",
+      "Canlı Bildirimler ve Aktivite Akışları",
+      "Gerçek Zamanlı Analitik Panoları",
+      "Redis Pub/Sub ile Yatay Ölçekleme"
+    ],
+    "benefits": [
+      "Kullanıcıları meşgul tutan anında geri bildirim",
+      "Sayfa yenileme olmadan canlı iş birliği",
+      "Sürekli polling'e kıyasla azaltılmış sunucu yükü",
+      "Dengesiz ağlarda bile güvenilir teslim",
+      "Binlerce eşzamanlı bağlantıya ölçeklenir",
+      "Ürününüzü farklılaştıran duyarlı bir his"
+    ],
+    "metaTitle": "Gerçek Zamanlı Uygulama Geliştirme | PakSoft",
+    "metaDescription": "WebSockets, presence ve Redis tabanlı ölçeklemeyle canlı panolar, sohbet ve ortak çalışma araçları kurun. Gerçek yük altında güvenilir gerçek zaman. Teklif alın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Kullanım Durumu ve Transport Seçimi", "description": "Neyin gerçek zamanlı olması gerektiğini netleştirir ve doğru transport'u seçeriz — sohbet ve iş birliği için tam çift yönlü WebSockets, tek yönlü canlı akışlar için daha hafif Server-Sent Events. Doğru aracı seçmek, daha basit bir yaklaşımın çözdüğü bir sorunu aşırı mühendislikten kurtarır." },
+        { "step": 2, "title": "Ölçek için Mimari", "description": "Mesajların birden çok sunucu arasında nasıl dağıtılacağını baştan, genellikle Redis pub/sub veya yönetilen bir hizmetle tasarlarız; çünkü tek sunucuda çalışan bir gerçek zamanlı sistem üç sunucuda çoğu zaman bozulur. Bağlantı limitleri ve kaynak kullanımı beklenen eşzamanlılığınıza göre planlanır." },
+        { "step": 3, "title": "Ana Gerçek Zamanlı Yapım", "description": "Canlı özellikleri — mesajlaşma, presence, canlı güncellemeler — istemci ve sunucu arasında temiz olay sözleşmeleriyle uygularız. Durum tutarlı tutulur; böylece bir kullanıcının yaptığı şey herkes için doğru ve hızlı yansıtılır." },
+        { "step": 4, "title": "Dayanıklılık ve Yeniden Bağlanma", "description": "Zor gerçekleri ele alırız: düşen bağlantılar, durum kurtarmalı yeniden bağlanma, mesaj sıralaması ve çevrimdışı kuyruğa alma. Çoğu gerçek zamanlı proje burada başarısız olur, bu yüzden ağın güvenilir olduğunu varsaymak yerine bu yolları açıkça test ederiz." },
+        { "step": 5, "title": "Çakışma Çözümü ve Tutarlılık", "description": "Ortak düzenleme için çakışma çözümü uygularız — genellikle CRDT'ler veya operasyonel dönüşümlerle — böylece eşzamanlı düzenlemeler birbirinin üzerine yazmak yerine mantıklı biçimde birleşir. Kullanıcılar bir yarış koşulu değil, tutarlı bir paylaşılan durum görür." },
+        { "step": 6, "title": "Yük Testi ve Lansman", "description": "Kullanıcılardan önce kırılma noktalarını bulmak için gerçekçi eşzamanlı bağlantılarla yük testi yapar, ardından bağlantı sayıları, gecikme ve mesaj verimi izlemesiyle dağıtırız. Gerçek zamanlı sistemler canlı gözlemlenebilirliğe ihtiyaç duyar; çünkü sorunlar sessiz bir demoda değil yük altında ortaya çıkar." }
+      ],
+      "faq": [
+        { "question": "WebSockets mi yoksa Server-Sent Events mi gerekli?", "answer": "İki yönlü, düşük gecikmeli iletişime ihtiyacınız olduğunda WebSockets kullanın — sohbet, ortak düzenleme, çok oyunculu. Veri yalnızca tek yönde, sunucudan istemciye aktığında — canlı fiyat şeridi veya bildirim akışı gibi — Server-Sent Events kullanın; SSE daha basittir, düz HTTP üzerinde çalışır ve otomatik yeniden bağlanır. Birçok uygulama yapabildiği yerde SSE kullanır ve WebSockets'i gerçekten çift yönlü özellikler için saklar. Her özellik için ayrı seçeriz, hepsi için tek değil." },
+        { "question": "Kendim mi kurmalıyım yoksa Pusher/Ably mi kullanmalıyım?", "answer": "Pusher, Ably veya Firebase gibi yönetilen hizmetler zor ölçekleme ve güvenilirlik işini sizin için halleder; bu da hızla pazara çıkmak ve operasyonel yükten kaçınmak için genellikle maliyete değer. Socket.io ve Redis ile kendi barındırmak çok yüksek hacimde daha fazla kontrol ve daha düşük maliyet verir ama ölçekleme ve güvenilirlik sizindir. Pazara çıkış süresi ve süregelen maliyeti kontrole karşı tartmanıza yardımcı oluruz ve ikisini de yayınladık." },
+        { "question": "Gerçek zamanlı ölçekleme neden zor?", "answer": "Bir WebSocket kalıcı bir bağlantıdır; on bin tanesini tutan bir sunucu gerçek bellek kullanır ve durumsuz HTTP gibi basitçe yük dengelenemez. Birden çok sunucu çalıştırdığınızda, A sunucusundaki bir kullanıcının mesajı B sunucusundaki abonelere ulaşmalıdır; bu Redis pub/sub gibi bir dağıtım katmanı gerektirir. Sunucular arası yeniden bağlanma, mesaj sıralaması ve presence doğruluğunu ekleyin, naif gerçek zamanlı demoların üretimde neden dağıldığını görürsünüz." },
+        { "question": "Bir kullanıcının bağlantısı düştüğünde ne olur?", "answer": "Gerçek ağlarda bağlantılar sürekli düşer — telefonlar baz istasyonu değiştirir, dizüstüler uyur, WiFi titrer. Backoff ile otomatik yeniden bağlanma kurar, yeniden bağlanmada kullanıcının durumunu ve kaçırdığı mesajları kurtarır ve çevrimdışıyken giden eylemleri kuyruğa alırız; böylece hiçbir şey kaybolmaz. Bunu zarifçe ele almak, sağlam hisseden bir uygulama ile sinyal her dalgalandığında kullanıcıyı sinirlendiren bir uygulama arasındaki farktır." },
+        { "question": "İki kişinin aynı şeyi düzenlemesini nasıl ele alıyorsunuz?", "answer": "Ortak düzenleme, eşzamanlı değişikliklerin birbirinin üzerine yazmaması için çakışma çözümü gerektirir. CRDT'ler (çakışmasız çoğaltılmış veri türleri) veya operasyonel dönüşüm gibi yaklaşımlar kullanırız; bunlar eşzamanlı düzenlemeleri tutarlı bir sonuca birleştirir — Google Docs ve Figma gibi araçların arkasındaki teknoloji. Doğru seçim verinize bağlıdır; kullanıcıların kaybolmuş iş değil tutarlı bir paylaşılan belge görmesi için tasarlarız." },
+        { "question": "Gerçek zamanlı özellikler sunucu maliyetlerime zarar verir mi?", "answer": "Kalıcı bağlantılar kaynak tüketir ama gerçek zaman çoğu zaman alternatiften ucuzdur: sürekli polling, burada her istemci veri değişsin değişmesin sunucunuzu birkaç saniyede bir döver. İyi kurulmuş bir WebSocket veya SSE kurulumu güncellemeleri yalnızca bir şey gerçekten değiştiğinde gönderir, toplam yükü azaltır. Maliyetlerin kullanıcılarla mantıklı ölçeklenmesi için bağlantı verimliliği ve dağıtımı akılda tutarak tasarlarız." },
+        { "question": "Mevcut uygulamama gerçek zaman ekleyebilir misiniz?", "answer": "Evet. Mevcut uygulamalara canlı özellikleri — bildirimler, presence, canlı pano, ortak düzenleme — onları yeniden inşa etmeden düzenli olarak ekleriz. Mevcut istek/yanıt mimarinizin yanına bir gerçek zamanlı katman ekleriz; çünkü ikisi iyi bir arada bulunur. Her şeyi bir kerede yeniden bağlamak yerine en çok kullanıcı değeri sunan özellikten başlar ve oradan genişletiriz." },
+        { "question": "Bir gerçek zamanlı sistemi nasıl test edersiniz?", "answer": "Normal testlerin ötesinde, gecikmenin nerede bozulduğunu ve bağlantıların düşmeye başladığını bulmak için birçok simüle edilmiş eşzamanlı bağlantıyla yük testi yaparız; çünkü bu sistemler yük altında tek kullanıcılı bir demodan çok farklı davranır. Hata yollarını açıkça test ederiz — sunucu yeniden başlatmaları, ağ düşmeleri, sıra dışı mesajlar — ve üretimde bağlantı sayısı ile mesaj gecikmesi gibi canlı metrikleri izleriz; çünkü gerçek zamanlı sorunlar gerçek eşzamanlılık altında ortaya çıkar." }
+      ],
+      "technologies": [
+        { "icon": "socketdotio", "name": "Socket.io" },
+        { "icon": "pusher", "name": "Pusher" },
+        { "icon": "ably", "name": "Ably" },
+        { "icon": "firebase", "name": "Firebase Realtime" },
+        { "icon": "redis", "name": "Redis Pub/Sub" },
+        { "icon": "liveblocks", "name": "Liveblocks" },
+        { "icon": "nodedotjs", "name": "Node.js" },
+        { "icon": "typescript", "name": "TypeScript" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Echtzeit-Anwendungen",
+    "shortDescription": "Bauen Sie Live-Dashboards, kollaborative Tools und Chat, die sofort aktualisieren — WebSockets, Presence und Echtzeit-Daten mit dem Skalierungs- und Reconnect-Handling, das sie unter echter Last zuverlässig hält.",
+    "fullDescription": "Echtzeit-Funktionen wirken auf Nutzer wie Magie und sind tückisch schwer gut zu bauen. Wir entwickeln kollaborative Editoren, Live-Dashboards, Chat, Benachrichtigungen und Multiplayer-Erlebnisse mit WebSockets, Server-Sent Events und Echtzeit-Datenbanken. Der einfache Teil ist, eine Nachricht von A nach B zu bringen; der schwere Teil ist unsere Spezialität — auf tausende gleichzeitige Verbindungen skalieren, abgebrochene Verbindungen und Reconnect elegant handhaben, Presence und Tipp-Indikatoren akkurat halten und Konflikte lösen, wenn zwei Personen dasselbe bearbeiten. Wir nutzen bewährte Tools wie Socket.io, Managed Services wie Pusher und Ably oder Redis-Pub/Sub, um Nachrichten über Server zu verteilen, und gestalten für die Fehlermodi — wackelige Netze, Server-Neustarts, Nachrichtenreihenfolge —, die ein Demo von einem Produktionssystem trennen. Das Ergebnis ist responsive, lebendige Software, die zuverlässig bleibt, wenn Ihre Nutzerzahl wächst.",
+    "features": [
+      "WebSocket- & Socket.io-Implementierung",
+      "Server-Sent Events für Einweg-Streams",
+      "Echtzeit-Datenbanken & Sync",
+      "Kollaboratives Editieren & Konfliktlösung",
+      "Presence- & Tipp-Indikatoren",
+      "Live-Benachrichtigungen & Activity-Feeds",
+      "Echtzeit-Analytics-Dashboards",
+      "Horizontale Skalierung mit Redis-Pub/Sub"
+    ],
+    "benefits": [
+      "Sofortiges Feedback, das Nutzer bei der Stange hält",
+      "Live-Kollaboration ohne Seiten-Reload",
+      "Geringere Serverlast als ständiges Polling",
+      "Zuverlässige Zustellung auch in instabilen Netzen",
+      "Skaliert auf tausende gleichzeitige Verbindungen",
+      "Ein responsives Gefühl, das Ihr Produkt abhebt"
+    ],
+    "metaTitle": "Echtzeit-Anwendungsentwicklung | PakSoft",
+    "metaDescription": "Bauen Sie Live-Dashboards, Chat und kollaborative Tools mit WebSockets, Presence und Redis-Skalierung. Zuverlässige Echtzeit unter echter Last. Angebot anfordern.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Use-Case- & Transport-Auswahl", "description": "Wir klären, was echtzeitfähig sein muss, und wählen den richtigen Transport — Voll-Duplex-WebSockets für Chat und Kollaboration, leichtere Server-Sent Events für Einweg-Live-Feeds. Das richtige Tool zu wählen vermeidet Over-Engineering eines Problems, das ein einfacherer Ansatz löst." },
+        { "step": 2, "title": "Architektur für Skalierung", "description": "Wir gestalten von Anfang an, wie Nachrichten über mehrere Server verteilt werden, meist mit Redis-Pub/Sub oder einem Managed Service, denn ein Echtzeitsystem, das auf einem Server läuft, bricht auf dreien oft. Verbindungslimits und Ressourcennutzung werden für Ihre erwartete Nebenläufigkeit geplant." },
+        { "step": 3, "title": "Kern-Echtzeit-Bau", "description": "Wir implementieren die Live-Funktionen — Messaging, Presence, Live-Updates — mit sauberen Event-Verträgen zwischen Client und Server. Der State bleibt konsistent, sodass das, was ein Nutzer tut, für alle anderen akkurat und schnell reflektiert wird." },
+        { "step": 4, "title": "Resilienz & Reconnect", "description": "Wir handhaben die harten Realitäten: abgebrochene Verbindungen, Reconnect mit State-Recovery, Nachrichtenreihenfolge und Offline-Queuing. Hier scheitern die meisten Echtzeitprojekte, daher testen wir diese Pfade explizit, statt ein zuverlässiges Netz anzunehmen." },
+        { "step": 5, "title": "Konfliktlösung & Konsistenz", "description": "Für kollaboratives Editieren implementieren wir Konfliktlösung — oft mit CRDTs oder Operational Transforms —, damit gleichzeitige Edits sinnvoll mergen statt sich zu überschreiben. Nutzer sehen einen kohärenten geteilten State, keine Race-Condition." },
+        { "step": 6, "title": "Lasttest & Launch", "description": "Wir lasttesten mit realistischen gleichzeitigen Verbindungen, um Bruchpunkte vor den Nutzern zu finden, und deployen dann mit Monitoring von Verbindungszahl, Latenz und Nachrichtendurchsatz. Echtzeitsysteme brauchen Live-Observability, denn Probleme treten unter Last auf, nicht im stillen Demo." }
+      ],
+      "faq": [
+        { "question": "WebSockets oder Server-Sent Events — was brauche ich?", "answer": "Nutzen Sie WebSockets, wenn Sie zweiseitige, latenzarme Kommunikation brauchen — Chat, kollaboratives Editieren, Multiplayer. Nutzen Sie Server-Sent Events, wenn Daten nur einseitig fließen, Server zu Client, wie ein Live-Preisticker oder Notification-Feed; SSE ist einfacher, läuft über reines HTTP und reconnectet automatisch. Viele Apps nutzen SSE wo möglich und reservieren WebSockets für echt bidirektionale Funktionen. Wir wählen pro Funktion, nicht eines für alles." },
+        { "question": "Selbst bauen oder Pusher/Ably nutzen?", "answer": "Managed Services wie Pusher, Ably oder Firebase übernehmen die harte Skalierungs- und Zuverlässigkeitsarbeit, was oft den Preis wert ist, um schnell in den Markt zu kommen und Betriebsaufwand zu vermeiden. Self-Hosting mit Socket.io und Redis gibt mehr Kontrolle und geringere Kosten bei sehr hohem Volumen, aber Sie besitzen Skalierung und Zuverlässigkeit. Wir helfen, Time-to-Market und laufende Kosten gegen Kontrolle abzuwägen, und haben beides ausgeliefert." },
+        { "question": "Warum ist Echtzeit-Skalierung schwer?", "answer": "Ein WebSocket ist eine persistente Verbindung, sodass ein Server mit zehntausend davon echten Speicher braucht und nicht einfach wie zustandsloses HTTP load-balanced werden kann. Bei mehreren Servern muss eine Nachricht von einem Nutzer auf Server A Abonnenten auf Server B erreichen, was eine Fan-out-Schicht wie Redis-Pub/Sub erfordert. Mit Reconnect, Nachrichtenreihenfolge und Presence-Genauigkeit über Server hinweg sieht man, warum naive Echtzeit-Demos in der Produktion auseinanderfallen." },
+        { "question": "Was passiert, wenn die Verbindung eines Nutzers abbricht?", "answer": "In echten Netzen brechen Verbindungen ständig ab — Handys wechseln Funkmasten, Laptops schlafen, WLAN flackert. Wir bauen automatischen Reconnect mit Backoff, stellen State und verpasste Nachrichten beim Reconnect wieder her und queuen ausgehende Aktionen offline, sodass nichts verloren geht. Das elegant zu handhaben ist der Unterschied zwischen einer App, die solide wirkt, und einer, die Nutzer bei jedem Signalwackeln frustriert." },
+        { "question": "Wie handhaben Sie zwei Personen, die dasselbe bearbeiten?", "answer": "Kollaboratives Editieren braucht Konfliktlösung, damit gleichzeitige Änderungen sich nicht überschreiben. Wir nutzen Ansätze wie CRDTs (conflict-free replicated data types) oder Operational Transformation, die gleichzeitige Edits zu einem konsistenten Ergebnis mergen — die Technik hinter Tools wie Google Docs und Figma. Die richtige Wahl hängt von Ihren Daten ab; wir gestalten es so, dass Nutzer ein kohärentes geteiltes Dokument statt verlorener Arbeit sehen." },
+        { "question": "Schaden Echtzeit-Funktionen meinen Serverkosten?", "answer": "Persistente Verbindungen verbrauchen Ressourcen, aber Echtzeit ist oft günstiger als die Alternative: ständiges Polling, bei dem jeder Client Ihren Server alle paar Sekunden bombardiert, ob sich Daten geändert haben oder nicht. Ein gut gebautes WebSocket- oder SSE-Setup pusht Updates nur, wenn sich wirklich etwas ändert, und senkt die Gesamtlast. Wir gestalten mit Verbindungseffizienz und Fan-out im Blick, sodass Kosten sinnvoll mit Nutzern skalieren." },
+        { "question": "Können Sie Echtzeit zu meiner bestehenden App hinzufügen?", "answer": "Ja. Wir ergänzen regelmäßig Live-Funktionen — Benachrichtigungen, Presence, ein Live-Dashboard, kollaboratives Editieren — zu bestehenden Anwendungen, ohne sie neu zu bauen. Wir führen eine Echtzeit-Schicht neben Ihrer aktuellen Request/Response-Architektur ein, da beide gut koexistieren. Wir starten mit der Funktion, die den meisten Nutzerwert liefert, und erweitern von dort, statt alles auf einmal umzubauen." },
+        { "question": "Wie testen Sie ein Echtzeitsystem?", "answer": "Über normale Tests hinaus lasttesten wir mit vielen simulierten gleichzeitigen Verbindungen, um zu finden, wo Latenz degradiert und Verbindungen abbrechen, denn diese Systeme verhalten sich unter Last ganz anders als im Einzelnutzer-Demo. Wir testen Fehlerpfade explizit — Server-Neustarts, Netzabbrüche, Nachrichten außer Reihe — und überwachen Live-Metriken wie Verbindungszahl und Nachrichtenlatenz in der Produktion, da Echtzeitprobleme unter echter Nebenläufigkeit auftauchen." }
+      ],
+      "technologies": [
+        { "icon": "socketdotio", "name": "Socket.io" },
+        { "icon": "pusher", "name": "Pusher" },
+        { "icon": "ably", "name": "Ably" },
+        { "icon": "firebase", "name": "Firebase Realtime" },
+        { "icon": "redis", "name": "Redis Pub/Sub" },
+        { "icon": "liveblocks", "name": "Liveblocks" },
+        { "icon": "nodedotjs", "name": "Node.js" },
+        { "icon": "typescript", "name": "TypeScript" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "حقیقی وقت کی ایپلیکیشنز",
+    "shortDescription": "فوراً اپ ڈیٹ ہونے والے لائیو dashboards، اشتراکی اوزار اور chat بنائیں — WebSockets، presence اور حقیقی وقت کا ڈیٹا، اس اسکیلنگ اور دوبارہ کنکشن کے انتظام کے ساتھ جو انہیں حقیقی بوجھ کے تحت قابلِ اعتماد رکھے۔",
+    "fullDescription": "حقیقی وقت کی خصوصیات صارفین کو جادو لگتی ہیں اور انہیں اچھی طرح بنانا بظاہر سے کہیں مشکل ہے۔ ہم WebSockets، Server-Sent Events اور حقیقی وقت کے ڈیٹابیسز استعمال کرتے ہوئے اشتراکی editors، لائیو dashboards، chat، اطلاعات اور multiplayer تجربات بناتے ہیں۔ آسان حصہ ایک پیغام A سے B تک پہنچانا ہے؛ مشکل حصہ ہماری مہارت ہے — ہزاروں ہم وقت کنکشنز تک اسکیل کرنا، گرے کنکشنز اور دوبارہ کنکشن کو نرمی سے سنبھالنا، presence اور typing indicators کو درست رکھنا، اور جب دو افراد ایک ہی چیز edit کریں تو تصادم حل کرنا۔ ہم پیغامات کو سرورز میں پھیلانے کے لیے Socket.io جیسے آزمودہ اوزار، Pusher اور Ably جیسی managed services، یا Redis pub/sub استعمال کرتے ہیں، اور ان failure modes — کمزور نیٹ ورکس، سرور دوبارہ شروع ہونا، پیغام کی ترتیب — کے گرد ڈیزائن کرتے ہیں جو demo کو production سسٹم سے الگ کرتے ہیں۔ نتیجہ ایسا responsive، لائیو سافٹ ویئر ہے جو آپ کے صارفین کی تعداد بڑھنے پر قابلِ اعتماد رہتا ہے۔",
+    "features": [
+      "WebSocket اور Socket.io نفاذ",
+      "یک طرفہ streams کے لیے Server-Sent Events",
+      "حقیقی وقت کے ڈیٹابیسز اور Sync",
+      "اشتراکی Editing اور تصادم حل",
+      "Presence اور Typing Indicators",
+      "لائیو اطلاعات اور Activity Feeds",
+      "حقیقی وقت کے Analytics Dashboards",
+      "Redis Pub/Sub سے افقی اسکیلنگ"
+    ],
+    "benefits": [
+      "صارفین کو مصروف رکھنے والا فوری فیڈبیک",
+      "صفحہ ریفریش کے بغیر لائیو تعاون",
+      "مسلسل polling کے مقابلے کم سرور بوجھ",
+      "غیر مستحکم نیٹ ورکس پر بھی قابلِ اعتماد ترسیل",
+      "ہزاروں ہم وقت کنکشنز تک اسکیل",
+      "آپ کی پروڈکٹ کو ممتاز کرنے والا responsive احساس"
+    ],
+    "metaTitle": "حقیقی وقت کی ایپلیکیشن ڈیولپمنٹ | PakSoft",
+    "metaDescription": "WebSockets، presence اور Redis اسکیلنگ کے ساتھ لائیو dashboards، chat اور اشتراکی اوزار بنائیں۔ حقیقی بوجھ کے تحت قابلِ اعتماد حقیقی وقت۔ تخمینہ لیں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "استعمال اور Transport انتخاب", "description": "ہم واضح کرتے ہیں کہ کس چیز کا حقیقی وقت میں ہونا ضروری ہے اور درست transport چنتے ہیں — chat اور تعاون کے لیے full-duplex WebSockets، یک طرفہ لائیو feeds کے لیے ہلکے Server-Sent Events۔ درست اوزار چننا ایسے مسئلے کو over-engineer ہونے سے بچاتا ہے جسے سادہ طریقہ حل کر دیتا ہے۔" },
+        { "step": 2, "title": "اسکیل کے لیے آرکیٹیکچر", "description": "ہم شروع ہی سے ڈیزائن کرتے ہیں کہ پیغامات کئی سرورز میں کیسے پھیلیں، عموماً Redis pub/sub یا managed service سے، کیونکہ ایک سرور پر چلنے والا حقیقی وقت سسٹم تین پر اکثر ٹوٹ جاتا ہے۔ کنکشن حدود اور وسائل کا استعمال آپ کی متوقع concurrency کے لیے منصوبہ بند ہوتا ہے۔" },
+        { "step": 3, "title": "بنیادی حقیقی وقت تعمیر", "description": "ہم لائیو خصوصیات — messaging، presence، لائیو اپ ڈیٹس — کو client اور server کے درمیان صاف event معاہدوں کے ساتھ نافذ کرتے ہیں۔ State مستقل رکھا جاتا ہے تاکہ ایک صارف جو کرے وہ سب کے لیے درست اور تیزی سے جھلکے۔" },
+        { "step": 4, "title": "لچک اور دوبارہ کنکشن", "description": "ہم مشکل حقیقتیں سنبھالتے ہیں: گرے کنکشنز، state بحالی کے ساتھ دوبارہ کنکشن، پیغام کی ترتیب اور offline queuing۔ زیادہ تر حقیقی وقت پروجیکٹس یہیں ناکام ہوتے ہیں، اس لیے ہم نیٹ ورک کے قابلِ اعتماد ہونے کو فرض کرنے کے بجائے ان راستوں کو واضح طور پر ٹیسٹ کرتے ہیں۔" },
+        { "step": 5, "title": "تصادم حل اور تسلسل", "description": "اشتراکی editing کے لیے ہم تصادم حل نافذ کرتے ہیں — اکثر CRDTs یا operational transforms کے ساتھ — تاکہ ہم وقت edits ایک دوسرے کے اوپر لکھنے کے بجائے معقول طور پر merge ہوں۔ صارفین race condition نہیں بلکہ ایک مربوط مشترکہ state دیکھتے ہیں۔" },
+        { "step": 6, "title": "لوڈ ٹیسٹ اور لانچ", "description": "ہم صارفین سے پہلے breaking points تلاش کرنے کے لیے حقیقت پسندانہ ہم وقت کنکشنز سے load-test کرتے ہیں، پھر کنکشن تعداد، latency اور پیغام throughput کی نگرانی کے ساتھ deploy کرتے ہیں۔ حقیقی وقت سسٹمز کو لائیو observability چاہیے کیونکہ مسائل خاموش demo میں نہیں بلکہ بوجھ کے تحت ظاہر ہوتے ہیں۔" }
+      ],
+      "faq": [
+        { "question": "WebSockets یا Server-Sent Events — مجھے کیا چاہیے؟", "answer": "جب آپ کو دو طرفہ، کم latency رابطہ چاہیے تو WebSockets استعمال کریں — chat، اشتراکی editing، multiplayer۔ جب ڈیٹا صرف ایک طرف، server سے client، بہے — جیسے لائیو قیمت ٹکر یا اطلاع feed — تو Server-Sent Events استعمال کریں؛ SSE سادہ ہے، سادہ HTTP پر چلتا ہے اور خودکار دوبارہ کنکٹ ہوتا ہے۔ بہت سی ایپس جہاں ممکن ہو SSE استعمال کرتی ہیں اور WebSockets کو واقعی دو طرفہ خصوصیات کے لیے محفوظ رکھتی ہیں۔ ہم فی خصوصیت چنتے ہیں، سب کے لیے ایک نہیں۔" },
+        { "question": "میں خود بناؤں یا Pusher/Ably استعمال کروں؟", "answer": "Pusher، Ably یا Firebase جیسی managed services آپ کے لیے مشکل اسکیلنگ اور بھروسے کا کام سنبھالتی ہیں، جو تیزی سے مارکیٹ میں آنے اور آپریشنل بوجھ سے بچنے کے لیے اکثر قیمت کے قابل ہے۔ Socket.io اور Redis کے ساتھ خود میزبانی بہت زیادہ حجم پر زیادہ کنٹرول اور کم لاگت دیتی ہے مگر اسکیلنگ اور بھروسا آپ کا ہوتا ہے۔ ہم time-to-market اور جاری لاگت کو کنٹرول کے مقابل تولنے میں مدد کرتے ہیں اور دونوں بنائے ہیں۔" },
+        { "question": "حقیقی وقت کی اسکیلنگ مشکل کیوں ہے؟", "answer": "WebSocket ایک مستقل کنکشن ہے، تو دس ہزار رکھنے والا سرور حقیقی میموری استعمال کرتا ہے اور stateless HTTP کی طرح سادہ طور پر load-balance نہیں ہو سکتا۔ جب آپ کئی سرور چلاتے ہیں، server A پر کسی صارف کا پیغام server B پر subscribers تک پہنچنا چاہیے، جس کے لیے Redis pub/sub جیسی fan-out پرت درکار ہوتی ہے۔ سرورز کے درمیان دوبارہ کنکشن، پیغام ترتیب اور presence درستی شامل کریں تو معلوم ہوتا ہے کہ سادہ حقیقی وقت demos production میں کیوں بکھر جاتے ہیں۔" },
+        { "question": "جب صارف کا کنکشن گرتا ہے تو کیا ہوتا ہے؟", "answer": "حقیقی نیٹ ورکس پر کنکشن مسلسل گرتے ہیں — فون ٹاور بدلتے ہیں، لیپ ٹاپ سوتے ہیں، WiFi جھلملاتا ہے۔ ہم backoff کے ساتھ خودکار دوبارہ کنکشن بناتے ہیں، دوبارہ کنکشن پر صارف کا state اور چھوٹے پیغامات بحال کرتے ہیں اور offline ہونے پر باہر جانے والے اعمال queue کرتے ہیں تاکہ کچھ ضائع نہ ہو۔ اسے نرمی سے سنبھالنا اس ایپ کے درمیان فرق ہے جو ٹھوس محسوس ہو اور اس کے درمیان جو ہر بار سگنل لہرانے پر صارف کو پریشان کرے۔" },
+        { "question": "آپ دو افراد کے ایک ہی چیز edit کرنے کو کیسے سنبھالتے ہیں؟", "answer": "اشتراکی editing کو تصادم حل چاہیے تاکہ ہم وقت تبدیلیاں ایک دوسرے کے اوپر نہ لکھیں۔ ہم CRDTs (conflict-free replicated data types) یا operational transformation جیسے طریقے استعمال کرتے ہیں، جو ہم وقت edits کو ایک مستقل نتیجے میں merge کرتے ہیں — Google Docs اور Figma جیسے اوزار کے پیچھے کی ٹیکنالوجی۔ درست انتخاب آپ کے ڈیٹا پر منحصر ہے؛ ہم اسے یوں ڈیزائن کرتے ہیں کہ صارفین کھویا کام نہیں بلکہ ایک مربوط مشترکہ دستاویز دیکھیں۔" },
+        { "question": "کیا حقیقی وقت کی خصوصیات میرے سرور اخراجات کو نقصان دیں گی؟", "answer": "مستقل کنکشن وسائل کھاتے ہیں، مگر حقیقی وقت اکثر متبادل سے سستا ہے: مسلسل polling، جہاں ہر client آپ کے سرور کو ہر چند سیکنڈ میں مارتا ہے چاہے ڈیٹا بدلے یا نہ بدلے۔ ایک اچھی بنی WebSocket یا SSE سیٹ اپ اپ ڈیٹس صرف تب push کرتی ہے جب کوئی چیز واقعی بدلے، کل بوجھ کم کرتی ہے۔ ہم کنکشن کارکردگی اور fan-out ذہن میں رکھ کر ڈیزائن کرتے ہیں تاکہ لاگت صارفین کے ساتھ معقول اسکیل ہو۔" },
+        { "question": "کیا آپ میری موجودہ ایپ میں حقیقی وقت شامل کر سکتے ہیں؟", "answer": "جی ہاں۔ ہم موجودہ ایپلیکیشنز میں لائیو خصوصیات — اطلاعات، presence، لائیو dashboard، اشتراکی editing — انہیں دوبارہ بنائے بغیر باقاعدگی سے شامل کرتے ہیں۔ ہم آپ کے موجودہ request/response آرکیٹیکچر کے ساتھ ایک حقیقی وقت پرت متعارف کراتے ہیں، کیونکہ دونوں اچھی طرح ساتھ رہتے ہیں۔ ہم سب کچھ ایک ساتھ دوبارہ جوڑنے کے بجائے اس خصوصیت سے شروع کرتے ہیں جو سب سے زیادہ صارف قدر دے اور وہاں سے بڑھاتے ہیں۔" },
+        { "question": "آپ حقیقی وقت سسٹم کو کیسے ٹیسٹ کرتے ہیں؟", "answer": "عام ٹیسٹوں سے آگے، ہم بہت سے simulated ہم وقت کنکشنز سے load-test کرتے ہیں تاکہ معلوم ہو کہ latency کہاں خراب ہوتی ہے اور کنکشن گرنے لگتے ہیں، کیونکہ یہ سسٹمز بوجھ کے تحت single-user demo سے بہت مختلف برتاؤ کرتے ہیں۔ ہم failure راستے واضح طور پر ٹیسٹ کرتے ہیں — سرور دوبارہ شروع، نیٹ ورک گرنا، بے ترتیب پیغامات — اور production میں کنکشن تعداد اور پیغام latency جیسی لائیو metrics کی نگرانی کرتے ہیں، کیونکہ حقیقی وقت کے مسائل حقیقی concurrency کے تحت سامنے آتے ہیں۔" }
+      ],
+      "technologies": [
+        { "icon": "socketdotio", "name": "Socket.io" },
+        { "icon": "pusher", "name": "Pusher" },
+        { "icon": "ably", "name": "Ably" },
+        { "icon": "firebase", "name": "Firebase Realtime" },
+        { "icon": "redis", "name": "Redis Pub/Sub" },
+        { "icon": "liveblocks", "name": "Liveblocks" },
+        { "icon": "nodedotjs", "name": "Node.js" },
+        { "icon": "typescript", "name": "TypeScript" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "التطبيقات اللحظية",
+    "shortDescription": "ابنوا لوحات حية وأدوات تشاركية ودردشة تتحدّث فوراً — WebSockets وحضور وبيانات لحظية مع إدارة التوسّع وإعادة الاتصال التي تُبقيها موثوقة تحت الحمل الحقيقي.",
+    "fullDescription": "تبدو الميزات اللحظية كالسحر للمستخدمين وبناؤها جيداً أصعب مما يبدو. نطوّر محرّرات تشاركية ولوحات حية ودردشة وإشعارات وتجارب متعددة اللاعبين باستخدام WebSockets وServer-Sent Events وقواعد بيانات لحظية. الجزء السهل إيصال رسالة من A إلى B؛ والجزء الصعب هو تخصّصنا — التوسّع لآلاف الاتصالات المتزامنة، ومعالجة الاتصالات المقطوعة وإعادة الاتصال بلطف، وإبقاء الحضور ومؤشرات الكتابة دقيقة، وحلّ التعارضات حين يحرّر شخصان الشيء نفسه. نستخدم أدوات مُجرَّبة مثل Socket.io، وخدمات مُدارة مثل Pusher وAbly، أو Redis pub/sub لتوزيع الرسائل عبر الخوادم، ونصمّم لأنماط الفشل — الشبكات المتقلّبة وإعادة تشغيل الخادم وترتيب الرسائل — التي تفصل العرض التجريبي عن نظام إنتاجي. والنتيجة برمجيات حية متجاوبة تبقى موثوقة مع نمو عدد مستخدميكم.",
+    "features": [
+      "تنفيذ WebSocket وSocket.io",
+      "Server-Sent Events للبثّ أحادي الاتجاه",
+      "قواعد بيانات لحظية ومزامنة",
+      "تحرير تشاركي وحلّ التعارض",
+      "مؤشرات الحضور والكتابة",
+      "إشعارات حية وموجزات نشاط",
+      "لوحات تحليلات لحظية",
+      "توسّع أفقي بـ Redis Pub/Sub"
+    ],
+    "benefits": [
+      "ردود فورية تُبقي المستخدمين منخرطين",
+      "تعاون حي دون إعادة تحميل الصفحة",
+      "حمل خادم أقل مقارنة بالاستطلاع المستمر",
+      "تسليم موثوق حتى على الشبكات غير المستقرة",
+      "يتوسّع لآلاف الاتصالات المتزامنة",
+      "إحساس متجاوب يميّز منتجكم"
+    ],
+    "metaTitle": "تطوير التطبيقات اللحظية | PakSoft",
+    "metaDescription": "ابنوا لوحات حية ودردشة وأدوات تشاركية بـ WebSockets وحضور وتوسّع مدعوم بـ Redis. لحظية موثوقة تحت الحمل الحقيقي. اطلبوا تقديراً.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "حالة الاستخدام واختيار النقل", "description": "نوضّح ما يجب أن يكون لحظياً ونختار النقل الصحيح — WebSockets كاملة الاتجاهين للدردشة والتعاون، وServer-Sent Events الأخفّ للموجزات الحية أحادية الاتجاه. واختيار الأداة الصحيحة يتجنّب هندسة مفرطة لمشكلة يحلّها نهج أبسط." },
+        { "step": 2, "title": "بنية للتوسّع", "description": "نصمّم منذ البداية كيف تتوزّع الرسائل عبر عدة خوادم، عادة بـ Redis pub/sub أو خدمة مُدارة، لأن نظاماً لحظياً يعمل على خادم واحد غالباً ما يتعطّل على ثلاثة. وتُخطَّط حدود الاتصال واستخدام الموارد لتزامنكم المتوقّع." },
+        { "step": 3, "title": "بناء لحظي أساسي", "description": "ننفّذ الميزات الحية — المراسلة والحضور والتحديثات الحية — بعقود أحداث نظيفة بين العميل والخادم. وتبقى الحالة متّسقة كي يُعكَس ما يفعله مستخدم بدقة وسرعة للجميع." },
+        { "step": 4, "title": "المرونة وإعادة الاتصال", "description": "نعالج الحقائق الصعبة: الاتصالات المقطوعة، وإعادة الاتصال مع استرجاع الحالة، وترتيب الرسائل، والطوابير دون اتصال. وهنا تفشل معظم المشاريع اللحظية، لذا نختبر هذه المسارات صراحة بدل افتراض موثوقية الشبكة." },
+        { "step": 5, "title": "حلّ التعارض والاتساق", "description": "للتحرير التشاركي ننفّذ حلّ التعارض — غالباً بـ CRDTs أو التحويلات العملياتية — كي تندمج التعديلات المتزامنة بمعنى بدل أن يطمس أحدها الآخر. ويرى المستخدمون حالة مشتركة متماسكة لا حالة سباق." },
+        { "step": 6, "title": "اختبار الحمل والإطلاق", "description": "نختبر الحمل باتصالات متزامنة واقعية لإيجاد نقاط الانهيار قبل المستخدمين، ثم ننشر بمراقبة عدد الاتصالات والكمون وإنتاجية الرسائل. تحتاج الأنظمة اللحظية قابلية مراقبة حية لأن المشكلات تظهر تحت الحمل لا في عرض هادئ." }
+      ],
+      "faq": [
+        { "question": "WebSockets أم Server-Sent Events — ما أحتاج؟", "answer": "استخدموا WebSockets حين تحتاجون اتصالاً ثنائي الاتجاه منخفض الكمون — دردشة وتحرير تشاركي ومتعدد اللاعبين. واستخدموا Server-Sent Events حين تتدفّق البيانات باتجاه واحد فقط من الخادم إلى العميل، كشريط أسعار حي أو موجز إشعارات؛ فـ SSE أبسط ويعمل عبر HTTP العادي ويعيد الاتصال تلقائياً. وكثير من التطبيقات يستخدم SSE حيث أمكن ويحجز WebSockets للميزات ثنائية الاتجاه فعلاً. نختار لكل ميزة لا واحدة للكل." },
+        { "question": "هل أبني بنفسي أم أستخدم Pusher/Ably؟", "answer": "الخدمات المُدارة مثل Pusher وAbly وFirebase تتولى عنكم عمل التوسّع والموثوقية الصعب، وهو غالباً يستحق الكلفة للوصول السريع للسوق وتجنّب العبء التشغيلي. والاستضافة الذاتية بـ Socket.io وRedis تمنح تحكماً أكبر وكلفة أقل عند الحجم العالي جداً، لكنكم تملكون التوسّع والموثوقية. نساعدكم في الموازنة بين زمن الوصول للسوق والكلفة المستمرة مقابل التحكم، وأطلقنا الاثنين." },
+        { "question": "لماذا التوسّع اللحظي صعب؟", "answer": "الـ WebSocket اتصال دائم، فخادم يحمل عشرة آلاف منها يستهلك ذاكرة فعلية ولا يمكن موازنة حمله ببساطة كـ HTTP عديم الحالة. وعند تشغيل عدة خوادم، يجب أن تصل رسالة من مستخدم على الخادم A إلى مشتركين على الخادم B، ما يتطلب طبقة توزيع مثل Redis pub/sub. وبإضافة إعادة الاتصال وترتيب الرسائل ودقة الحضور عبر الخوادم، تتّضح لماذا تنهار العروض اللحظية الساذجة في الإنتاج." },
+        { "question": "ماذا يحدث حين ينقطع اتصال مستخدم؟", "answer": "على الشبكات الحقيقية تنقطع الاتصالات باستمرار — الهواتف تبدّل الأبراج، والحواسيب تنام، والواي فاي يتذبذب. نبني إعادة اتصال تلقائية بتراجع، ونسترجع حالة المستخدم ورسائله الفائتة عند العودة، ونضع الإجراءات الصادرة في طابور أثناء الانقطاع كي لا يُفقَد شيء. والتعامل اللطيف مع ذلك هو الفرق بين تطبيق يبدو متيناً وآخر يُحبِط المستخدمين كلما اهتزّ الإشارة." },
+        { "question": "كيف تعالجون تحرير شخصين للشيء نفسه؟", "answer": "يحتاج التحرير التشاركي حلّ تعارض كي لا تطمس التغييرات المتزامنة بعضها. نستخدم أساليب مثل CRDTs (أنواع بيانات منسوخة خالية من التعارض) أو التحويل العملياتي، التي تدمج التعديلات المتزامنة في نتيجة متّسقة — التقنية خلف أدوات مثل Google Docs وFigma. والاختيار الصحيح يعتمد على بياناتكم؛ نصمّمه كي يرى المستخدمون مستنداً مشتركاً متماسكاً لا عملاً ضائعاً." },
+        { "question": "هل تضرّ الميزات اللحظية بكلفة خوادمي؟", "answer": "الاتصالات الدائمة تستهلك موارد، لكن اللحظية غالباً أرخص من البديل: الاستطلاع المستمر، حيث يقصف كل عميل خادمكم كل بضع ثوانٍ سواء تغيّرت البيانات أم لا. وإعداد WebSocket أو SSE حسن البناء يدفع التحديثات فقط حين يتغيّر شيء فعلاً، فيقلّل الحمل الكلي. ونصمّم مع كفاءة الاتصال والتوزيع في الحسبان كي تتوسّع الكلفة بمعنى مع المستخدمين." },
+        { "question": "هل يمكنكم إضافة اللحظية إلى تطبيقي الحالي؟", "answer": "نعم. نضيف بانتظام ميزات حية — إشعارات وحضور ولوحة حية وتحرير تشاركي — إلى تطبيقات قائمة دون إعادة بنائها. ونُدخِل طبقة لحظية بجانب بنية الطلب/الاستجابة الحالية، لأن الاثنين يتعايشان جيداً. ونبدأ بالميزة التي تقدّم أكبر قيمة للمستخدم ونتوسّع منها بدل إعادة توصيل كل شيء دفعة واحدة." },
+        { "question": "كيف تختبرون نظاماً لحظياً؟", "answer": "إلى جانب الاختبارات المعتادة، نختبر الحمل باتصالات متزامنة محاكاة كثيرة لإيجاد أين يتدهور الكمون وتبدأ الاتصالات بالانقطاع، لأن هذه الأنظمة تتصرّف تحت الحمل بشكل مختلف جداً عن عرض بمستخدم واحد. ونختبر مسارات الفشل صراحة — إعادة تشغيل الخادم وانقطاع الشبكة والرسائل خارج الترتيب — ونراقب مقاييس حية كعدد الاتصالات وكمون الرسائل في الإنتاج، لأن المشكلات اللحظية تظهر تحت التزامن الحقيقي." }
+      ],
+      "technologies": [
+        { "icon": "socketdotio", "name": "Socket.io" },
+        { "icon": "pusher", "name": "Pusher" },
+        { "icon": "ably", "name": "Ably" },
+        { "icon": "firebase", "name": "Firebase Realtime" },
+        { "icon": "redis", "name": "Redis Pub/Sub" },
+        { "icon": "liveblocks", "name": "Liveblocks" },
+        { "icon": "nodedotjs", "name": "Node.js" },
+        { "icon": "typescript", "name": "TypeScript" }
+      ]
+    }
+  }
+}

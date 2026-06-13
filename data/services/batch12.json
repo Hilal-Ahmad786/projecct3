@@ -1,0 +1,436 @@
+{
+  "headless-commerce": {
+    "en": {
+      "name": "Headless Commerce",
+      "shortDescription": "Create decoupled e-commerce with headless CMS and commerce APIs.",
+      "fullDescription": "Break free from the design constraints and sluggish performance of traditional, monolithic e-commerce platforms. With our Headless Commerce development services, we decouple your front-end customer experience (the 'head') from the back-end commerce engine. This allows us to build lightning-fast, highly custom, and immersive shopping experiences using modern frameworks like Next.js or React, while still utilizing powerful engines like Shopify Plus, Medusa, or BigCommerce to securely handle inventory, payments, and order logic. Headless architecture gives you ultimate creative freedom and allows you to sell seamlessly across websites, mobile apps, smartwatches, and IoT devices.",
+      "features": [
+        "Decoupled Frontend Architecture",
+        "Headless CMS Integration (Sanity, Contentful)",
+        "Omnichannel Commerce Support",
+        "Custom Checkout Flows",
+        "Lightning-Fast Edge Rendering",
+        "API-First Integrations"
+      ],
+      "benefits": [
+        "Unrestricted Creative & UI Freedom",
+        "Sub-Second Page Load Speeds",
+        "Higher Conversion Rates",
+        "Future-Proof, Scalable Infrastructure",
+        "Seamless Omnichannel Customer Journeys"
+      ],
+      "content": {
+        "process": [
+          { "title": "Architecture Strategy", "description": "Selecting the best combination of Commerce Engine, CMS, and Frontend framework." },
+          { "title": "API Integration", "description": "Connecting your commerce backend to the custom frontend via GraphQL or REST." },
+          { "title": "Frontend Development", "description": "Building the hyper-fast user interface with Next.js and Tailwind CSS." },
+          { "title": "CMS Setup", "description": "Configuring a Headless CMS (like Sanity) for marketing teams to easily manage content." },
+          { "title": "Global Edge Deployment", "description": "Deploying on Vercel or AWS for maximum global performance and caching." }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Shopify Storefront API",
+          "Medusa",
+          "Sanity / Contentful",
+          "GraphQL",
+          "Vercel / AWS"
+        ],
+        "faq": [
+          { "question": "What is the main advantage of Headless over standard Shopify?", "answer": "Standard Shopify binds your design to their liquid templates, which can be limiting and sometimes slow. Headless gives you 100% control over the frontend code (using React), allowing for complex animations, unique layouts, and instant page loads, while still using Shopify's secure backend for checkout." },
+          { "question": "Is Headless Commerce right for my business?", "answer": "Headless is best suited for medium to large brands that have outgrown standard templates, require ultra-fast load times for high conversion, or need to manage complex omnichannel sales (selling on web, mobile apps, and smart displays simultaneously)." }
+        ]
+      },
+      "metaTitle": "Headless Commerce Development | Next.js & Shopify Plus",
+      "metaDescription": "Unlock ultimate flexibility with Headless Commerce. We build lightning-fast, custom storefronts using Next.js, Medusa, Sanity, and Shopify APIs."
+    },
+    "tr": {
+      "name": "Başsız (Headless) E-Ticaret",
+      "shortDescription": "Başsız CMS ve ticaret API'leri ile ayrıştırılmış e-ticaret oluşturun.",
+      "fullDescription": "Geleneksel, monolitik e-ticaret platformlarının tasarım kısıtlamalarından ve yavaş performansından kurtulun. Başsız (Headless) E-Ticaret geliştirme hizmetlerimizle, ön uç müşteri deneyiminizi ('baş') arka uç ticaret motorundan ayırıyoruz (decouple). Bu, envanter, ödemeler ve sipariş mantığını güvenli bir şekilde işlemek için Shopify Plus, Medusa veya BigCommerce gibi güçlü motorları kullanmaya devam ederken, Next.js veya React gibi modern çerçeveleri kullanarak ışık hızında, son derece özelleştirilmiş ve sürükleyici alışveriş deneyimleri oluşturmamızı sağlar. Başsız mimari size en üst düzeyde yaratıcı özgürlük sunar ve web siteleri, mobil uygulamalar, akıllı saatler ve IoT cihazlarında sorunsuz bir şekilde satış yapmanıza olanak tanır.",
+      "features": [
+        "Ayrıştırılmış (Decoupled) Ön Uç Mimarisi",
+        "Başsız CMS Entegrasyonu (Sanity, Contentful)",
+        "Çok Kanallı (Omnichannel) Ticaret Desteği",
+        "Özel Ödeme (Checkout) Akışları",
+        "Işık Hızında Uç (Edge) İşleme",
+        "API Öncelikli Entegrasyonlar"
+      ],
+      "benefits": [
+        "Sınırsız Yaratıcı ve Kullanıcı Arayüzü Özgürlüğü",
+        "Saniyenin Altında Sayfa Yükleme Hızları",
+        "Daha Yüksek Dönüşüm Oranları",
+        "Geleceğe Hazır, Ölçeklenebilir Altyapı",
+        "Kesintisiz Çok Kanallı Müşteri Yolculukları"
+      ],
+      "content": {
+        "process": [
+          { "title": "Mimari Stratejisi", "description": "Ticaret Motoru, CMS ve Ön Uç çerçevesinin en iyi kombinasyonunu seçme." },
+          { "title": "API Entegrasyonu", "description": "Ticaret arka ucunuzu GraphQL veya REST aracılığıyla özel ön uca bağlama." },
+          { "title": "Ön Uç Geliştirme", "description": "Next.js ve Tailwind CSS ile hiper hızlı kullanıcı arayüzü oluşturma." },
+          { "title": "CMS Kurulumu", "description": "Pazarlama ekiplerinin içeriği kolayca yönetmesi için bir Başsız CMS (Sanity gibi) yapılandırma." },
+          { "title": "Küresel Uç Dağıtımı", "description": "Maksimum küresel performans ve önbelleğe alma için Vercel veya AWS'de dağıtım." }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Shopify Storefront API",
+          "Medusa",
+          "Sanity / Contentful",
+          "GraphQL",
+          "Vercel / AWS"
+        ],
+        "faq": [
+          { "question": "Başsız (Headless) mimarinin standart Shopify'a göre temel avantajı nedir?", "answer": "Standart Shopify, tasarımınızı kısıtlayıcı ve bazen yavaş olabilen 'liquid' şablonlarına bağlar. Başsız mimari, ön uç kodu üzerinde (React kullanarak) %100 kontrol sağlayarak karmaşık animasyonlara, benzersiz düzenlere ve anında sayfa yüklemelerine olanak tanırken, ödeme için yine de Shopify'ın güvenli arka ucunu kullanır." },
+          { "question": "Başsız E-Ticaret işletmem için uygun mu?", "answer": "Başsız yapı; standart şablonları aşmış, yüksek dönüşüm için ultra hızlı yükleme sürelerine ihtiyaç duyan veya karmaşık çok kanallı satışları (web'de, mobil uygulamalarda ve akıllı ekranlarda aynı anda satış) yönetmesi gereken orta ila büyük markalar için en uygun olanıdır." }
+        ]
+      },
+      "metaTitle": "Başsız E-Ticaret Geliştirme | Next.js ve Shopify Plus",
+      "metaDescription": "Başsız E-Ticaret ile nihai esnekliğin kilidini açın. Next.js, Medusa, Sanity ve Shopify API'lerini kullanarak ışık hızında, özel vitrinler oluşturuyoruz."
+    },
+    "de": {
+      "name": "Headless Commerce",
+      "shortDescription": "Erstellen Sie entkoppelten E-Commerce mit Headless-CMS und Commerce-APIs.",
+      "fullDescription": "Befreien Sie sich von den Designeinschränkungen und der trägen Leistung traditioneller, monolithischer E-Commerce-Plattformen. Mit unseren Headless-Commerce-Entwicklungsdiensten entkoppeln wir Ihr Front-End-Kundenerlebnis (den „Kopf“) von der Back-End-Commerce-Engine. Auf diese Weise können wir blitzschnelle, hochgradig individuelle und immersive Einkaufserlebnisse mit modernen Frameworks wie Next.js oder React erstellen und gleichzeitig leistungsstarke Engines wie Shopify Plus, Medusa oder BigCommerce nutzen, um Inventar, Zahlungen und Bestelllogik sicher zu verarbeiten. Die Headless-Architektur gibt Ihnen ultimative kreative Freiheit und ermöglicht es Ihnen, nahtlos über Websites, mobile Apps, Smartwatches und IoT-Geräte zu verkaufen.",
+      "features": [
+        "Entkoppelte Front-End-Architektur",
+        "Headless-CMS-Integration (Sanity, Contentful)",
+        "Omnichannel-Commerce-Unterstützung",
+        "Individuelle Checkout-Abläufe",
+        "Blitzschnelles Edge-Rendering",
+        "API-First-Integrationen"
+      ],
+      "benefits": [
+        "Uneingeschränkte kreative & UI-Freiheit",
+        "Seitenladezeiten im Millisekundenbereich",
+        "Höhere Konversionsraten",
+        "Zukunftssichere, skalierbare Infrastruktur",
+        "Nahtlose Omnichannel-Customer-Journeys"
+      ],
+      "content": {
+        "process": [
+          { "title": "Architektur-Strategie", "description": "Auswahl der besten Kombination aus Commerce-Engine, CMS und Front-End-Framework." },
+          { "title": "API-Integration", "description": "Verbindung Ihres Commerce-Backends mit dem individuellen Front-End über GraphQL oder REST." },
+          { "title": "Frontend-Entwicklung", "description": "Aufbau der hyperschnellen Benutzeroberfläche mit Next.js und Tailwind CSS." },
+          { "title": "CMS-Setup", "description": "Konfiguration eines Headless-CMS (wie Sanity) für Marketingteams zur einfachen Inhaltsverwaltung." },
+          { "title": "Globale Edge-Bereitstellung", "description": "Bereitstellung auf Vercel oder AWS für maximale globale Leistung und Caching." }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Shopify Storefront API",
+          "Medusa",
+          "Sanity / Contentful",
+          "GraphQL",
+          "Vercel / AWS"
+        ],
+        "faq": [
+          { "question": "Was ist der Hauptvorteil von Headless gegenüber Standard-Shopify?", "answer": "Standard-Shopify bindet Ihr Design an deren Liquid-Templates, was einschränkend und manchmal langsam sein kann. Headless gibt Ihnen 100% Kontrolle über den Frontend-Code, was komplexe Animationen und sofortige Seitenladevorgänge ermöglicht." },
+          { "question": "Ist Headless Commerce das Richtige für mein Unternehmen?", "answer": "Headless eignet sich am besten für mittlere bis große Marken, die über Standardvorlagen hinausgewachsen sind, ultraschnelle Ladezeiten für hohe Konversionen benötigen oder komplexe Omnichannel-Verkäufe verwalten müssen." }
+        ]
+      },
+      "metaTitle": "Headless Commerce Entwicklung | Next.js & Shopify Plus",
+      "metaDescription": "Schalten Sie ultimative Flexibilität mit Headless Commerce frei. Wir bauen blitzschnelle, individuelle Schaufenster mit Next.js, Medusa, Sanity und Shopify APIs."
+    },
+    "ur": {
+      "name": "ہیڈ لیس کامرس",
+      "shortDescription": "ہیڈ لیس سی ایم ایس اور کامرس APIs کے ساتھ ڈیکپلڈ ای کامرس بنائیں۔",
+      "fullDescription": "روایتی، یک سنگی ای کامرس پلیٹ فارمز کے ڈیزائن کی رکاوٹوں اور سست کارکردگی سے آزاد ہوں۔ ہماری ہیڈ لیس کامرس ڈیولپمنٹ سروسز کے ساتھ، ہم آپ کے فرنٹ اینڈ کسٹمر کے تجربے ('سر') کو بیک اینڈ کامرس انجن سے الگ کرتے ہیں۔ یہ ہمیں Next.js یا React جیسے جدید فریم ورکس کا استعمال کرتے ہوئے بجلی کی تیز رفتار، انتہائی کسٹم، اور عمیق خریداری کے تجربات بنانے کی اجازت دیتا ہے، جب کہ انوینٹری، ادائیگیوں، اور آرڈر کی منطق کو محفوظ طریقے سے ہینڈل کرنے کے لیے Shopify Plus، Medusa، یا BigCommerce جیسے طاقتور انجنوں کا استعمال کرتے ہوئے ہموار کرتے ہیں۔ ہیڈ لیس فن تعمیر آپ کو حتمی تخلیقی آزادی دیتا ہے اور آپ کو ویب سائٹس، موبائل ایپس، سمارٹ واچز، اور IoT ڈیوائسز پر بغیر کسی رکاوٹ کے فروخت کرنے کی اجازت دیتا ہے۔",
+      "features": [
+        "ڈیکپلڈ فرنٹ اینڈ آرکیٹیکچر",
+        "ہیڈ لیس سی ایم ایس انٹیگریشن (Sanity, Contentful)",
+        "اومنی چینل کامرس سپورٹ",
+        "اپنی مرضی کے چیک آؤٹ کے بہاؤ",
+        "بجلی کا تیز کنارے کی نمائش",
+        "API-پہلے انضمام"
+      ],
+      "benefits": [
+        "غیر محدود تخلیقی اور UI کی آزادی",
+        "سب سیکنڈ پیج لوڈ کی رفتار",
+        "تبادلے کی اعلی شرحیں۔",
+        "مستقبل کا ثبوت، توسیع پذیر انفراسٹرکچر",
+        "سیملیس اومنی چینل کسٹمر کے سفر"
+      ],
+      "content": {
+        "process": [
+          { "title": "آرکیٹیکچر کی حکمت عملی", "description": "کامرس انجن، سی ایم ایس، اور فرنٹ اینڈ فریم ورک کے بہترین امتزاج کا انتخاب۔" },
+          { "title": "API انٹیگریشن", "description": "GraphQL یا REST کے ذریعے اپنے کامرس کے بیک اینڈ کو کسٹم فرنٹ اینڈ سے جوڑنا۔" },
+          { "title": "فرنٹ اینڈ ڈیولپمنٹ", "description": "Next.js اور Tailwind CSS کے ساتھ ہائپر فاسٹ یوزر انٹرفیس بنانا۔" },
+          { "title": "سی ایم ایس سیٹ اپ", "description": "مارکیٹنگ ٹیموں کے لیے مواد کو آسانی سے منظم کرنے کے لیے ہیڈ لیس سی ایم ایس (جیسے سینٹیٹی) کو ترتیب دینا۔" },
+          { "title": "عالمی کنارے کی تعیناتی", "description": "زیادہ سے زیادہ عالمی کارکردگی اور کیشنگ کے لیے Vercel یا AWS پر تعینات کرنا۔" }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Shopify Storefront API",
+          "Medusa",
+          "Sanity / Contentful",
+          "GraphQL",
+          "Vercel / AWS"
+        ],
+        "faq": [
+          { "question": "معیاری Shopify پر ہیڈ لیس کا بنیادی فائدہ کیا ہے؟", "answer": "معیاری Shopify آپ کے ڈیزائن کو ان کے مائع ٹیمپلیٹس سے جوڑتا ہے، جو محدود اور بعض اوقات سست ہو سکتا ہے۔ ہیڈ لیس آپ کو فرنٹ اینڈ کوڈ (React کا استعمال کرتے ہوئے) پر 100% کنٹرول دیتا ہے، جس سے آپ کو چیک آؤٹ کے لیے Shopify کا محفوظ بیک اینڈ استعمال کرتے ہوئے پیچیدہ اینیمیشنز، منفرد لے آؤٹ، اور فوری صفحہ لوڈ کرنے کی اجازت ملتی ہے۔" },
+          { "question": "کیا ہیڈ لیس کامرس میرے کاروبار کے لیے صحیح ہے؟", "answer": "ہیڈ لیس ان درمیانے سے بڑے برانڈز کے لیے سب سے موزوں ہے جو معیاری ٹیمپلیٹس کو پیچھے چھوڑ چکے ہیں، زیادہ تبدیلی کے لیے انتہائی تیزی سے لوڈ کے اوقات درکار ہیں، یا پیچیدہ اومنی چینل سیلز کا انتظام کرنے کی ضرورت ہے (ویب، موبائل ایپس، اور سمارٹ ڈسپلے پر بیک وقت فروخت)۔" }
+        ]
+      },
+      "metaTitle": "ہیڈ لیس کامرس ڈویلپمنٹ | Next.js اور Shopify Plus",
+      "metaDescription": "ہیڈ لیس کامرس کے ساتھ حتمی لچک کو غیر مقفل کریں۔ ہم Next.js، Medusa، Sanity، اور Shopify APIs کا استعمال کرتے ہوئے بجلی کی تیز رفتار، اپنی مرضی کے اسٹور فرنٹ بناتے ہیں۔"
+    },
+    "ar": {
+      "name": "التجارة مقطوعة الرأس (Headless Commerce)",
+      "shortDescription": "إنشاء تجارة إلكترونية منفصلة باستخدام نظام إدارة المحتوى (CMS) مقطوع الرأس وواجهات برمجة تطبيقات التجارة.",
+      "fullDescription": "تحرر من قيود التصميم والأداء البطيء لمنصات التجارة الإلكترونية التقليدية والمتجانسة. من خلال خدمات تطوير التجارة مقطوعة الرأس (Headless Commerce) لدينا، نقوم بفصل تجربة العملاء الأمامية (الرأس) عن محرك التجارة الخلفي. يسمح لنا ذلك ببناء تجارب تسوق سريعة للغاية، ومخصصة للغاية، وغامرة باستخدام أطر عمل حديثة مثل Next.js أو React، مع الاستمرار في استخدام محركات قوية مثل Shopify Plus أو Medusa أو BigCommerce للتعامل بأمان مع المخزون والمدفوعات ومنطق الطلبات. تمنحك بنية Headless حرية إبداعية مطلقة وتسمح لك بالبيع بسلاسة عبر مواقع الويب وتطبيقات الأجهزة المحمولة والساعات الذكية وأجهزة إنترنت الأشياء (IoT).",
+      "features": [
+        "بنية أمامية منفصلة (Decoupled)",
+        "تكامل CMS مقطوع الرأس (Sanity ، Contentful)",
+        "دعم التجارة متعددة القنوات (Omnichannel)",
+        "تدفقات الدفع (Checkout) المخصصة",
+        "عرض سريع للغاية على الحافة (Edge Rendering)",
+        "تكاملات API أولاً"
+      ],
+      "benefits": [
+        "حرية إبداعية غير مقيدة في واجهة المستخدم",
+        "سرعات تحميل صفحة في أجزاء من الثانية",
+        "معدلات تحويل أعلى",
+        "بنية تحتية قابلة للتطوير ومقاومة للمستقبل",
+        "رحلات عملاء سلسة عبر قنوات متعددة"
+      ],
+      "content": {
+        "process": [
+          { "title": "استراتيجية البنية", "description": "اختيار أفضل مجموعة من محرك التجارة ونظام إدارة المحتوى وإطار عمل الواجهة الأمامية." },
+          { "title": "تكامل API", "description": "ربط خلفية التجارة الخاصة بك بالواجهة الأمامية المخصصة عبر GraphQL أو REST." },
+          { "title": "تطوير الواجهة الأمامية", "description": "بناء واجهة المستخدم فائقة السرعة باستخدام Next.js و Tailwind CSS." },
+          { "title": "إعداد CMS", "description": "تكوين نظام إدارة محتوى Headless (مثل Sanity) لفرق التسويق لإدارة المحتوى بسهولة." },
+          { "title": "النشر العالمي على الحافة", "description": "النشر على Vercel أو AWS للحصول على أقصى أداء عالمي وتخزين مؤقت." }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Shopify Storefront API",
+          "Medusa",
+          "Sanity / Contentful",
+          "GraphQL",
+          "Vercel / AWS"
+        ],
+        "faq": [
+          { "question": "ما هي الميزة الرئيسية لـ Headless مقارنة بـ Shopify القياسي؟", "answer": "يربط Shopify القياسي تصميمك بقوالب liquid الخاصة بهم، والتي يمكن أن تكون مقيدة وأحيانًا بطيئة. يمنحك Headless تحكمًا بنسبة 100٪ في رمز الواجهة الأمامية (باستخدام React)، مما يسمح بالرسوم المتحركة المعقدة، والتخطيطات الفريدة، والتحميل الفوري للصفحة، مع الاستمرار في استخدام خلفية Shopify الآمنة للدفع." },
+          { "question": "هل التجارة مقطوعة الرأس (Headless) مناسبة لعملي؟", "answer": "تعد بنية Headless هي الأنسب للعلامات التجارية المتوسطة إلى الكبيرة التي تجاوزت القوالب القياسية، أو تتطلب أوقات تحميل فائقة السرعة لتحويلات عالية، أو تحتاج إلى إدارة مبيعات معقدة متعددة القنوات (البيع على الويب وتطبيقات الأجهزة المحمولة والشاشات الذكية في وقت واحد)." }
+        ]
+      },
+      "metaTitle": "تطوير التجارة مقطوعة الرأس | Next.js و Shopify Plus",
+      "metaDescription": "افتح المرونة القصوى مع التجارة مقطوعة الرأس (Headless Commerce). نبني واجهات متاجر سريعة ومخصصة باستخدام Next.js و Medusa و Sanity و Shopify APIs."
+    }
+  },
+  "hrms-development": {
+    "en": {
+      "name": "HRMS Development",
+      "shortDescription": "Build custom HRMS solutions for workforce management.",
+      "fullDescription": "Empower your HR department and delight your employees with a bespoke Human Resource Management System (HRMS). Generic HR tools often fall short when dealing with unique corporate structures, specialized shift patterns, or complex performance review cycles. We design and develop custom HRMS platforms tailored precisely to your organizational needs. From intelligent Applicant Tracking Systems (ATS) and automated onboarding workflows, to precise payroll processing and intuitive employee self-service portals, our solutions automate the administrative burden so your HR team can focus on people, not paperwork.",
+      "features": [
+        "Applicant Tracking & Recruitment",
+        "Automated Onboarding/Offboarding Workflows",
+        "Payroll & Benefits Administration",
+        "Time, Attendance & Leave Management",
+        "Performance Review & Goal Tracking",
+        "Employee Self-Service Portals"
+      ],
+      "benefits": [
+        "Elimination of Manual Data Entry",
+        "Improved Employee Engagement & Satisfaction",
+        "Strict Regulatory & Payroll Compliance",
+        "Centralized Employee Records",
+        "Data-Driven HR Analytics"
+      ],
+      "content": {
+        "process": [
+          { "title": "Requirements Gathering", "description": "Mapping out your unique HR processes, reporting lines, and payroll rules." },
+          { "title": "UX/UI Design", "description": "Creating intuitive interfaces for both HR admins and general employees." },
+          { "title": "Core Development", "description": "Building the secure backend architecture and integrating payroll engines." },
+          { "title": "Compliance & Security", "description": "Ensuring GDPR compliance, data encryption, and strict role-based access." },
+          { "title": "System Migration", "description": "Securely importing historical employee data from legacy systems." }
+        ],
+        "technologies": [
+          "React / Vue.js",
+          "Node.js",
+          "PostgreSQL",
+          "Redis",
+          "AWS KMS (Encryption)",
+          "PDF Generation Libraries"
+        ],
+        "faq": [
+          { "question": "Can the HRMS integrate with biometric attendance scanners?", "answer": "Yes. We can develop integrations that pull data directly from physical biometric scanners or RFID badge systems to automatically log employee attendance and calculate shift hours." },
+          { "question": "Is employee data secure in a custom HRMS?", "answer": "Data security is our top priority. We implement database-level encryption (encrypting data at rest), secure transmission protocols (TLS/SSL), and rigorous Role-Based Access Control (RBAC) so sensitive data like salaries are only visible to authorized personnel." }
+        ]
+      },
+      "metaTitle": "Custom HRMS Development | HR Software Solutions",
+      "metaDescription": "Build a custom Human Resource Management System (HRMS). We develop tailored software for recruitment, payroll, leave management, and employee self-service."
+    },
+    "tr": {
+      "name": "İKYS Geliştirme",
+      "shortDescription": "İşgücü yönetimi için özel İKYS (HRMS) çözümleri oluşturun.",
+      "fullDescription": "Özel İnsan Kaynakları Yönetim Sistemi (İKYS) ile İK departmanınızı güçlendirin ve çalışanlarınızı memnun edin. Genel İK araçları, benzersiz şirket yapıları, özel vardiya düzenleri veya karmaşık performans değerlendirme döngüleriyle uğraşırken genellikle yetersiz kalır. Tam olarak kurumsal ihtiyaçlarınıza göre uyarlanmış özel İKYS platformları tasarlıyor ve geliştiriyoruz. Akıllı Aday Takip Sistemlerinden (ATS) ve otomatik işe alım iş akışlarından, hassas bordro işlemeye ve sezgisel çalışan self-servis portallarına kadar çözümlerimiz idari yükü otomatikleştirir, böylece İK ekibiniz evrak işlerine değil insanlara odaklanabilir.",
+      "features": [
+        "Aday Takibi ve İşe Alım (ATS)",
+        "Otomatik İşe Alım/İşten Çıkış İş Akışları",
+        "Bordro ve Yan Haklar İdaresi",
+        "Zaman, Devam ve İzin Yönetimi",
+        "Performans Değerlendirmesi ve Hedef Takibi",
+        "Çalışan Self-Servis Portalları"
+      ],
+      "benefits": [
+        "Manuel Veri Girişinin Ortadan Kaldırılması",
+        "Artan Çalışan Bağlılığı ve Memnuniyeti",
+        "Sıkı Mevzuat ve Bordro Uyumluluğu",
+        "Merkezi Çalışan Kayıtları",
+        "Veriye Dayalı İK Analitiği"
+      ],
+      "content": {
+        "process": [
+          { "title": "Gereksinim Toplama", "description": "Benzersiz İK süreçlerinizi, raporlama hatlarınızı ve bordro kurallarınızı haritalandırma." },
+          { "title": "UX/UI Tasarımı", "description": "Hem İK yöneticileri hem de genel çalışanlar için sezgisel arayüzler oluşturma." },
+          { "title": "Temel Geliştirme", "description": "Güvenli arka uç mimarisini oluşturma ve bordro motorlarını entegre etme." },
+          { "title": "Uyumluluk ve Güvenlik", "description": "KVKK/GDPR uyumluluğu, veri şifreleme ve katı role dayalı erişim sağlama." },
+          { "title": "Sistem Taşıma", "description": "Geçmiş çalışan verilerini eski sistemlerden güvenli bir şekilde içe aktarma." }
+        ],
+        "technologies": [
+          "React / Vue.js",
+          "Node.js",
+          "PostgreSQL",
+          "Redis",
+          "AWS KMS (Şifreleme)",
+          "PDF Oluşturma Kütüphaneleri"
+        ],
+        "faq": [
+          { "question": "İKYS biyometrik devam tarayıcılarıyla entegre olabilir mi?", "answer": "Evet. Çalışan katılımını otomatik olarak kaydetmek ve vardiya saatlerini hesaplamak için verileri doğrudan fiziksel biyometrik tarayıcılardan veya RFID yaka kartı sistemlerinden çeken entegrasyonlar geliştirebiliriz." },
+          { "question": "Özel bir İKYS'de çalışan verileri güvende mi?", "answer": "Veri güvenliği en büyük önceliğimizdir. Maaşlar gibi hassas verilerin yalnızca yetkili personel tarafından görülebilmesi için veritabanı düzeyinde şifreleme (bekleyen verileri şifreleme), güvenli iletim protokolleri (TLS/SSL) ve titiz Role Dayalı Erişim Kontrolü (RBAC) uyguluyoruz." }
+        ]
+      },
+      "metaTitle": "Özel İKYS (HRMS) Geliştirme | İK Yazılım Çözümleri",
+      "metaDescription": "Özel bir İnsan Kaynakları Yönetim Sistemi (İKYS) oluşturun. İşe alım, bordro, izin yönetimi ve çalışan self-servisi için özel yazılımlar geliştiriyoruz."
+    },
+    "de": {
+      "name": "HRMS-Entwicklung",
+      "shortDescription": "Erstellen Sie individuelle HRMS-Lösungen für das Personalmanagement.",
+      "fullDescription": "Stärken Sie Ihre Personalabteilung und begeistern Sie Ihre Mitarbeiter mit einem maßgeschneiderten Human Resource Management System (HRMS). Generische HR-Tools greifen oft zu kurz, wenn es um einzigartige Unternehmensstrukturen, spezielle Schichtmodelle oder komplexe Leistungsbeurteilungszyklen geht. Wir entwerfen und entwickeln individuelle HRMS-Plattformen, die genau auf die Bedürfnisse Ihres Unternehmens zugeschnitten sind. Von intelligenten Applicant Tracking Systems (ATS) und automatisierten Onboarding-Workflows bis hin zur präzisen Gehaltsabrechnung und intuitiven Employee-Self-Service-Portalen – unsere Lösungen automatisieren den administrativen Aufwand, damit sich Ihr HR-Team auf die Menschen konzentrieren kann, nicht auf Papierkram.",
+      "features": [
+        "Bewerberverfolgung & Rekrutierung (ATS)",
+        "Automatisierte Onboarding-/Offboarding-Workflows",
+        "Gehaltsabrechnung & Verwaltung von Zusatzleistungen",
+        "Zeit-, Anwesenheits- & Urlaubsverwaltung",
+        "Leistungsbeurteilung & Zielverfolgung",
+        "Mitarbeiter-Self-Service-Portale"
+      ],
+      "benefits": [
+        "Wegfall manueller Dateneingaben",
+        "Verbessertes Mitarbeiterengagement & Zufriedenheit",
+        "Strikte Einhaltung von Vorschriften & Gehaltsabrechnungen",
+        "Zentralisierte Mitarbeiterakten",
+        "Datengesteuerte HR-Analysen"
+      ],
+      "content": {
+        "process": [
+          { "title": "Anforderungserhebung", "description": "Abbildung Ihrer einzigartigen HR-Prozesse, Berichtslinien und Abrechnungsregeln." },
+          { "title": "UX/UI-Design", "description": "Erstellung intuitiver Schnittstellen für HR-Administratoren und allgemeine Mitarbeiter." },
+          { "title": "Kernentwicklung", "description": "Aufbau der sicheren Backend-Architektur und Integration von Abrechnungs-Engines." },
+          { "title": "Compliance & Sicherheit", "description": "Gewährleistung von DSGVO-Konformität, Datenverschlüsselung und rollenbasierter Zugriffskontrolle." },
+          { "title": "Systemmigration", "description": "Sicherer Import historischer Mitarbeiterdaten aus Altsystemen." }
+        ],
+        "technologies": [
+          "React / Vue.js",
+          "Node.js",
+          "PostgreSQL",
+          "Redis",
+          "AWS KMS (Verschlüsselung)",
+          "PDF-Generierungsbibliotheken"
+        ],
+        "faq": [
+          { "question": "Kann das HRMS in biometrische Anwesenheits-Scanner integriert werden?", "answer": "Ja. Wir können Integrationen entwickeln, die Daten direkt von physischen biometrischen Scannern oder RFID-Badge-Systemen abrufen, um die Anwesenheit der Mitarbeiter automatisch zu protokollieren und die Schichtstunden zu berechnen." },
+          { "question": "Sind Mitarbeiterdaten in einem benutzerdefinierten HRMS sicher?", "answer": "Datensicherheit hat für uns oberste Priorität. Wir implementieren Verschlüsselung auf Datenbankebene, sichere Übertragungsprotokolle (TLS/SSL) und strenge rollenbasierte Zugriffskontrollen (RBAC)." }
+        ]
+      },
+      "metaTitle": "Individuelle HRMS-Entwicklung | HR-Softwarelösungen",
+      "metaDescription": "Erstellen Sie ein maßgeschneidertes HRMS. Wir entwickeln individuelle Software für Rekrutierung, Gehaltsabrechnung, Urlaubsverwaltung und Employee Self-Service."
+    },
+    "ur": {
+      "name": "HRMS کی ترقی",
+      "shortDescription": "افرادی قوت کے انتظام کے لیے حسب ضرورت HRMS حل بنائیں۔",
+      "fullDescription": "اپنے محکمہ HR کو بااختیار بنائیں اور ایک مخصوص ہیومن ریسورس مینجمنٹ سسٹم (HRMS) کے ساتھ اپنے ملازمین کو خوش کریں۔ کارپوریٹ ڈھانچے، کام کی باریوں کے مخصوص نمونوں، یا کارکردگی کے جائزے کے پیچیدہ چکروں سے نمٹنے کے دوران عام HR ٹولز اکثر ناکام رہتے ہیں۔ ہم آپ کے تنظیمی تقاضوں کے عین مطابق اپنی مرضی کے مطابق HRMS پلیٹ فارمز کو ڈیزائن اور تیار کرتے ہیں۔ ذہین ایپلیکینٹ ٹریکنگ سسٹمز (ATS) اور خودکار آن بورڈنگ ورک فلوز سے لے کر درست پے رول پروسیسنگ اور بدیہی ملازم سیلف سروس پورٹلز تک، ہمارے حل انتظامی بوجھ کو خودکار بناتے ہیں تاکہ آپ کی HR ٹیم کاغذ کارروائی پر نہیں، لوگوں پر توجہ مرکوز کر سکے۔",
+      "features": [
+        "درخواست گزار کی ٹریکنگ اور بھرتی",
+        "خودکار آن بورڈنگ/آف بورڈنگ ورک فلوز",
+        "پے رول اور فوائد کی انتظامیہ",
+        "وقت، حاضری اور رخصت کا انتظام",
+        "کارکردگی کا جائزہ اور ہدف کی ٹریکنگ",
+        "ملازمین کے سیلف سروس پورٹلز"
+      ],
+      "benefits": [
+        "دستی ڈیٹا انٹری کا خاتمہ",
+        "ملازمین کی مصروفیت اور اطمینان میں بہتری",
+        "سخت ریگولیٹری اور پے رول کی تعمیل",
+        "مرکزی ملازم کے ریکارڈ",
+        "ڈیٹا پر مبنی HR تجزیات"
+      ],
+      "content": {
+        "process": [
+          { "title": "تقاضوں کا اجتماع", "description": "آپ کے منفرد ایچ آر کے عمل، رپورٹنگ لائنز، اور پے رول کے قواعد کی نقشہ بندی۔" },
+          { "title": "UX/UI ڈیزائن", "description": "ایچ آر ایڈمنز اور عام ملازمین دونوں کے لیے بدیہی انٹرفیس بنانا۔" },
+          { "title": "بنیادی ترقی", "description": "محفوظ پسدید فن تعمیر کی تعمیر اور پے رول انجنوں کو مربوط کرنا۔" },
+          { "title": "تعمیل اور سیکیورٹی", "description": "GDPR کی تعمیل، ڈیٹا کی خفیہ کاری، اور کردار پر مبنی سخت رسائی کو یقینی بنانا۔" },
+          { "title": "سسٹم کی منتقلی", "description": "پرانے سسٹمز سے تاریخی ملازمین کا ڈیٹا محفوظ طریقے سے درآمد کرنا۔" }
+        ],
+        "technologies": [
+          "React / Vue.js",
+          "Node.js",
+          "PostgreSQL",
+          "Redis",
+          "AWS KMS (Encryption)",
+          "PDF Generation Libraries"
+        ],
+        "faq": [
+          { "question": "کیا HRMS بائیو میٹرک حاضری سکینر کے ساتھ مربوط ہو سکتا ہے؟", "answer": "ہاں۔ ہم ایسے انضمام کو تیار کر سکتے ہیں جو جسمانی بائیو میٹرک اسکینرز یا RFID بیج سسٹم سے براہ راست ڈیٹا کھینچ کر ملازم کی حاضری کو خود بخود لاگ ان کر سکتے ہیں اور شفٹ کے اوقات کا حساب لگا سکتے ہیں۔" },
+          { "question": "کیا کسٹم HRMS میں ملازمین کا ڈیٹا محفوظ ہے؟", "answer": "ڈیٹا سیکیورٹی ہماری اولین ترجیح ہے۔ ہم ڈیٹا بیس کی سطح پر انکرپشن کو نافذ کرتے ہیں (باقی ڈیٹا کو انکرپٹ کرنا)، محفوظ ٹرانسمیشن پروٹوکولز (TLS/SSL)، اور سخت رول بیسڈ ایکسیس کنٹرول (RBAC) تاکہ تنخواہوں جیسا حساس ڈیٹا صرف مجاز اہلکاروں کو ہی نظر آئے۔" }
+        ]
+      },
+      "metaTitle": "اپنی مرضی کے مطابق HRMS ترقی | ایچ آر سافٹ ویئر کے حل",
+      "metaDescription": "اپنی مرضی کے مطابق ہیومن ریسورس مینجمنٹ سسٹم (HRMS) بنائیں۔ ہم بھرتی، پے رول، لیو مینجمنٹ، اور ملازمین کی سیلف سروس کے لیے تیار کردہ سافٹ ویئر تیار کرتے ہیں۔"
+    },
+    "ar": {
+      "name": "تطوير نظام إدارة الموارد البشرية (HRMS)",
+      "shortDescription": "بناء حلول HRMS مخصصة لإدارة القوى العاملة.",
+      "fullDescription": "قم بتمكين قسم الموارد البشرية لديك وإسعاد موظفيك بنظام إدارة موارد بشرية (HRMS) مخصص. غالبًا ما تفشل أدوات الموارد البشرية العامة عند التعامل مع هياكل الشركات الفريدة، أو أنماط الورديات المتخصصة، أو دورات مراجعة الأداء المعقدة. نحن نصمم ونطور منصات HRMS مخصصة بدقة لتلبية احتياجاتك التنظيمية. من أنظمة تتبع المتقدمين (ATS) الذكية وسير عمل التهيئة (Onboarding) المؤتمتة، إلى معالجة كشوف المرتبات الدقيقة وبوابات الخدمة الذاتية للموظفين البديهية، تعمل حلولنا على أتمتة العبء الإداري حتى يتمكن فريق الموارد البشرية لديك من التركيز على الأفراد، وليس على الأعمال الورقية.",
+      "features": [
+        "تتبع المتقدمين والتوظيف",
+        "سير عمل مؤتمت للتهيئة/إنهاء الخدمة (Onboarding/Offboarding)",
+        "إدارة كشوف المرتبات والمزايا",
+        "إدارة الوقت والحضور والإجازات",
+        "مراجعة الأداء وتتبع الأهداف",
+        "بوابات الخدمة الذاتية للموظفين"
+      ],
+      "benefits": [
+        "القضاء على إدخال البيانات اليدوي",
+        "تحسين مشاركة الموظفين ورضاهم",
+        "الامتثال الصارم للوائح وكشوف المرتبات",
+        "سجلات مركزية للموظفين",
+        "تحليلات الموارد البشرية المبنية على البيانات"
+      ],
+      "content": {
+        "process": [
+          { "title": "جمع المتطلبات", "description": "رسم خرائط لعمليات الموارد البشرية الفريدة الخاصة بك، وخطوط إعداد التقارير، وقواعد كشوف المرتبات." },
+          { "title": "تصميم UX/UI", "description": "إنشاء واجهات بديهية لكل من مسؤولي الموارد البشرية والموظفين العامين." },
+          { "title": "التطوير الأساسي", "description": "بناء بنية خلفية آمنة ودمج محركات كشوف المرتبات." },
+          { "title": "الامتثال والأمان", "description": "ضمان الامتثال لـ GDPR، وتشفير البيانات، والوصول الصارم القائم على الأدوار (RBAC)." },
+          { "title": "ترحيل النظام", "description": "الاستيراد الآمن للبيانات التاريخية للموظفين من الأنظمة القديمة." }
+        ],
+        "technologies": [
+          "React / Vue.js",
+          "Node.js",
+          "PostgreSQL",
+          "Redis",
+          "AWS KMS (تشفير)",
+          "مكتبات إنشاء PDF"
+        ],
+        "faq": [
+          { "question": "هل يمكن دمج نظام HRMS مع ماسحات الحضور البيومترية؟", "answer": "نعم. يمكننا تطوير تكاملات تسحب البيانات مباشرة من الماسحات الضوئية البيومترية المادية أو أنظمة شارات RFID لتسجيل حضور الموظفين تلقائيًا وحساب ساعات الورديات." },
+          { "question": "هل بيانات الموظفين آمنة في نظام HRMS مخصص؟", "answer": "أمن البيانات هو أولويتنا القصوى. نقوم بتنفيذ تشفير على مستوى قاعدة البيانات (تشفير البيانات أثناء الراحة)، وبروتوكولات نقل آمنة (TLS / SSL)، وتحكم صارم في الوصول القائم على الأدوار (RBAC) بحيث تكون البيانات الحساسة مثل الرواتب مرئية فقط للموظفين المصرح لهم." }
+        ]
+      },
+      "metaTitle": "تطوير نظام إدارة الموارد البشرية (HRMS) المخصص | حلول برمجية",
+      "metaDescription": "قم ببناء نظام مخصص لإدارة الموارد البشرية (HRMS). نقوم بتطوير برامج مخصصة للتوظيف وكشوف المرتبات وإدارة الإجازات والخدمة الذاتية للموظفين."
+    }
+  }
+}

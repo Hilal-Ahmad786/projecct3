@@ -1,0 +1,1087 @@
+{
+  "virtual-tours": {
+    "en": {
+      "name": "Virtual Tours",
+      "shortDescription": "Immersive 360-degree virtual tours for real estate, hospitality, and education.",
+      "fullDescription": "Transport your customers directly into your space, no matter where they are in the world. Our Virtual Tour services utilize high-resolution 360-degree photography, 3D scanning (Matterport), and interactive WebGL to create immersive, self-guided experiences. Ideal for real estate listings, university campuses, museums, and luxury hotels, virtual tours dramatically increase user engagement and time-on-site. We enrich these environments with interactive hotspots—allowing users to click on items to view product details, watch embedded videos, or even book a reservation directly from within the 3D space.",
+      "features": [
+        "High-Resolution 360° Photography & Drone Panoramas",
+        "Matterport 3D Scanning & Dollhouse Views",
+        "Interactive Hotspots (Info, Video, E-commerce Links)",
+        "VR Headset Compatibility (WebVR)",
+        "Custom UI/Navigation Menus & Floor Plan Integration",
+        "Analytics Tracking for User Engagement"
+      ],
+      "benefits": [
+        "Increase Sales & Bookings by Building Customer Trust",
+        "Save Time by Reducing In-Person Viewings/Walkthroughs",
+        "Boost SEO with Extended Time-on-Page Metrics",
+        "Provide a 24/7 'Open House' Accessible Globally",
+        "Stand Out with Premium, Interactive Marketing Assets"
+      ],
+      "content": {
+        "process": [
+          { "title": "Planning & Logistics", "description": "Defining the scope of the shoot and identifying key areas to highlight." },
+          { "title": "On-Site Capture", "description": "Deploying 360° cameras, drones, or LiDAR scanners to capture the physical space." },
+          { "title": "Stitching & Post-Processing", "description": "Editing the raw imagery to remove artifacts, correct lighting, and stitch panoramas seamlessly." },
+          { "title": "Interactive Layering", "description": "Building the digital tour interface, adding navigation links, and embedding media hotspots." },
+          { "title": "Delivery & Embedding", "description": "Providing the final files and assisting with embedding the tour onto your website." }
+        ],
+        "technologies": [
+          "Matterport",
+          "Krpano / 3DVista",
+          "WebGL / Three.js",
+          "Insta360 / DSLR Rigs",
+          "WebVR / WebXR",
+          "HTML5 / CSS3"
+        ],
+        "faq": [
+          { "question": "Do I need special software to view the virtual tour?", "answer": "No. All our virtual tours are built using HTML5 and WebGL, meaning they run directly in any modern web browser on desktop, tablet, or mobile without requiring any app downloads." },
+          { "question": "Can we embed e-commerce features inside the tour?", "answer": "Yes. We can add interactive hotspots on specific items (e.g., a sofa in a showroom) that open a pop-up allowing the user to add the item to their cart or visit the product page." }
+        ]
+      },
+      "metaTitle": "Virtual Tour Creation Services | 360° & Matterport",
+      "metaDescription": "Engage customers with interactive 360-degree virtual tours. We provide Matterport scanning, drone panoramas, and custom interactive web experiences."
+    },
+    "tr": {
+      "name": "Sanal Turlar (Virtual Tours)",
+      "shortDescription": "Emlak, konaklama ve eğitim için sürükleyici 360 derece sanal turlar.",
+      "fullDescription": "Müşterilerinizi dünyanın neresinde olurlarsa olsunlar doğrudan mekanınıza taşıyın. Sanal Tur hizmetlerimiz, sürükleyici, kendi kendine rehberli deneyimler yaratmak için yüksek çözünürlüklü 360 derece fotoğrafçılık, 3D tarama (Matterport) ve etkileşimli WebGL kullanır. Emlak ilanları, üniversite kampüsleri, müzeler ve lüks oteller için ideal olan sanal turlar, kullanıcı etkileşimini ve sitede geçirilen süreyi önemli ölçüde artırır. Bu ortamları, kullanıcıların ürün ayrıntılarını görüntülemek, gömülü (embedded) videoları izlemek veya hatta doğrudan 3D alan içinden rezervasyon yapmak için öğelere tıklamasına olanak tanıyan etkileşimli erişim noktalarıyla (hotspots) zenginleştiriyoruz.",
+      "features": [
+        "Yüksek Çözünürlüklü 360° Fotoğrafçılık ve Drone Panoramaları",
+        "Matterport 3D Tarama ve Bebek Evi (Dollhouse) Görünümleri",
+        "Etkileşimli Erişim Noktaları (Bilgi, Video, E-ticaret Bağlantıları)",
+        "VR Başlık (Headset) Uyumluluğu (WebVR)",
+        "Özel UI/Gezinme Menüleri ve Kat Planı Entegrasyonu",
+        "Kullanıcı Etkileşimi İçin Analitik İzleme"
+      ],
+      "benefits": [
+        "Müşteri Güveni Oluşturarak Satışları ve Rezervasyonları Artırma",
+        "Yüz Yüze Görüntülemeleri/Turları Azaltarak Zaman Kazanma",
+        "Sayfada Geçirilen Süre (Time-on-Page) Metrikleriyle SEO'yu Güçlendirme",
+        "Küresel Olarak 7/24 Erişilebilen Bir 'Açık Ev' (Open House) Sağlama",
+        "Premium, Etkileşimli Pazarlama Varlıklarıyla Öne Çıkma"
+      ],
+      "content": {
+        "process": [
+          { "title": "Planlama ve Lojistik", "description": "Çekimin kapsamını tanımlama ve vurgulanacak kilit alanları belirleme." },
+          { "title": "Yerinde Çekim", "description": "Fiziksel alanı yakalamak için 360° kameralar, dronlar veya LiDAR tarayıcılar kurma." },
+          { "title": "Birleştirme ve Son İşlem (Post-Processing)", "description": "Eserleri (artifacts) kaldırmak, ışıklandırmayı düzeltmek ve panoramaları sorunsuz bir şekilde birleştirmek için ham görüntüleri düzenleme." },
+          { "title": "Etkileşimli Katmanlama", "description": "Dijital tur arayüzünü oluşturma, gezinme bağlantıları ekleme ve medya erişim noktaları (hotspots) yerleştirme." },
+          { "title": "Teslimat ve Yerleştirme", "description": "Nihai dosyaları sağlama ve turun web sitenize yerleştirilmesine (embedding) yardımcı olma." }
+        ],
+        "technologies": [
+          "Matterport",
+          "Krpano / 3DVista",
+          "WebGL / Three.js",
+          "Insta360 / DSLR Ekipmanları",
+          "WebVR / WebXR",
+          "HTML5 / CSS3"
+        ],
+        "faq": [
+          { "question": "Sanal turu görüntülemek için özel bir yazılıma ihtiyacım var mı?", "answer": "Hayır. Tüm sanal turlarımız HTML5 ve WebGL kullanılarak oluşturulmuştur; bu, herhangi bir uygulama indirmesi gerektirmeden masaüstü, tablet veya mobildeki herhangi bir modern web tarayıcısında doğrudan çalıştıkları anlamına gelir." },
+          { "question": "Turun içine e-ticaret özelliklerini entegre edebilir miyiz?", "answer": "Evet. Belirli öğelere (örneğin bir showroom'daki bir kanepeye), kullanıcının öğeyi sepetine eklemesine veya ürün sayfasını ziyaret etmesine olanak tanıyan bir açılır pencere açan etkileşimli erişim noktaları ekleyebiliriz." }
+        ]
+      },
+      "metaTitle": "Sanal Tur Oluşturma Hizmetleri | 360° ve Matterport",
+      "metaDescription": "Etkileşimli 360 derece sanal turlarla müşterilerinizin ilgisini çekin. Matterport tarama, drone panoramaları ve özel web deneyimleri sunuyoruz."
+    },
+    "de": {
+      "name": "Virtuelle Touren",
+      "shortDescription": "Immersive 360-Grad-Rundgänge für Immobilien, Gastgewerbe und Bildungseinrichtungen.",
+      "fullDescription": "Transportieren Sie Ihre Kunden direkt in Ihre Räumlichkeiten, egal wo auf der Welt sie sich befinden. Unsere Dienstleistungen für virtuelle Touren nutzen hochauflösende 360-Grad-Fotografie, 3D-Scans (Matterport) und interaktives WebGL, um immersive, selbstgeführte Erlebnisse zu schaffen. Ideal für Immobilienangebote, Universitätscampus, Museen und Luxushotels steigern virtuelle Touren die Nutzerinteraktion und die Verweildauer auf der Website dramatisch. Wir reichern diese Umgebungen mit interaktiven Hotspots an – so können Nutzer auf Elemente klicken, um Produktdetails anzuzeigen, eingebettete Videos anzusehen oder sogar direkt aus dem 3D-Raum heraus eine Buchung vorzunehmen.",
+      "features": [
+        "Hochauflösende 360°-Fotografie & Drohnenpanoramen",
+        "Matterport 3D-Scanning & Dollhouse-Ansichten",
+        "Interaktive Hotspots (Infos, Videos, E-Commerce-Links)",
+        "VR-Brillen Kompatibilität (WebVR)",
+        "Individuelle UI/Navigation & Grundriss-Integration",
+        "Analytics-Tracking für das Nutzerverhalten"
+      ],
+      "benefits": [
+        "Steigerung von Verkäufen & Buchungen durch Vertrauensaufbau",
+        "Zeitersparnis durch Reduzierung von Vor-Ort-Besichtigungen",
+        "SEO-Boost durch deutlich verlängerte Verweildauer",
+        "Bereitstellung eines weltweit zugänglichen 24/7 'Open House'",
+        "Abhebung von der Konkurrenz durch Premium-Marketing"
+      ],
+      "content": {
+        "process": [
+          { "title": "Planung & Logistik", "description": "Definition des Umfangs und Identifikation der Highlights vor Ort." },
+          { "title": "Aufnahme vor Ort", "description": "Einsatz von 360°-Kameras, Drohnen oder LiDAR-Scannern." },
+          { "title": "Stitching & Post-Production", "description": "Bildbearbeitung, Farbkorrektur und nahtloses Zusammenfügen der Panoramen." },
+          { "title": "Interaktive Ebenen", "description": "Bau des digitalen Interfaces, Navigation und Einbettung von Medien-Hotspots." },
+          { "title": "Auslieferung & Einbettung", "description": "Bereitstellung der Dateien und Integration in Ihre bestehende Website." }
+        ],
+        "technologies": [
+          "Matterport",
+          "Krpano / 3DVista",
+          "WebGL / Three.js",
+          "Insta360 / DSLR-Rigs",
+          "WebVR / WebXR",
+          "HTML5 / CSS3"
+        ],
+        "faq": [
+          { "question": "Benötigt man spezielle Software, um die Tour anzusehen?", "answer": "Nein. Alle unsere Touren basieren auf HTML5 und WebGL und laufen direkt und ohne App-Download in jedem modernen Webbrowser auf Desktop, Tablet oder Smartphone." },
+          { "question": "Können wir E-Commerce-Funktionen in die Tour einbauen?", "answer": "Ja. Wir können interaktive Hotspots auf Objekten (z. B. einem Sofa im Showroom) platzieren, über die Nutzer das Produkt direkt in den Warenkorb legen können." }
+        ]
+      },
+      "metaTitle": "Virtuelle 360° Touren & Matterport Agentur",
+      "metaDescription": "Begeistern Sie Kunden mit interaktiven 360-Grad-Rundgängen. Wir bieten Matterport-Scans, Drohnenaufnahmen und interaktive Web-Erlebnisse."
+    },
+    "ur": {
+      "name": "ورچوئل ٹورز",
+      "shortDescription": "رئیل اسٹیٹ، مہمان نوازی اور تعلیم کے لیے عمیق 360 ڈگری ورچوئل ٹور۔",
+      "fullDescription": "اپنے صارفین کو براہ راست اپنی جگہ پر لے جائیں، چاہے وہ دنیا میں کہیں بھی ہوں۔ ہماری ورچوئل ٹور کی خدمات عمیق، خود رہنمائی کے تجربات تخلیق کرنے کے لیے ہائی ریزولوشن 360 ڈگری فوٹوگرافی، 3D اسکیننگ (میٹر پورٹ)، اور انٹرایکٹو WebGL کا استعمال کرتی ہیں۔ رئیل اسٹیٹ کی فہرستوں، یونیورسٹی کیمپسز، عجائب گھروں اور لگژری ہوٹلوں کے لیے مثالی، ورچوئل ٹورز ڈرامائی طور پر صارف کی مشغولیت اور سائٹ پر وقت میں اضافہ کرتے ہیں۔ ہم ان ماحول کو انٹرایکٹو ہاٹ سپاٹ کے ساتھ بہتر بناتے ہیں—صارفین کو مصنوعات کی تفصیلات دیکھنے، ایمبیڈڈ ویڈیوز دیکھنے، یا 3D اسپیس کے اندر سے براہ راست بکنگ کرنے کے لیے آئٹمز پر کلک کرنے کی اجازت دیتے ہیں۔",
+      "features": [
+        "ہائی ریزولوشن 360° فوٹوگرافی اور ڈرون پینوراماس",
+        "میٹر پورٹ 3D سکیننگ اور ڈول ہاؤس کے مناظر",
+        "انٹرایکٹو ہاٹ سپاٹ (معلومات، ویڈیو، ای کامرس لنکس)",
+        "VR ہیڈسیٹ کی مطابقت (WebVR)",
+        "کسٹم UI/نیویگیشن مینو اور فلور پلان انٹیگریشن",
+        "صارف کی مصروفیت کے لیے تجزیاتی ٹریکنگ"
+      ],
+      "benefits": [
+        "کسٹمر کا اعتماد قائم کر کے فروخت اور بکنگ میں اضافہ کریں۔",
+        "ذاتی طور پر دیکھنے/واک تھرو کو کم کرکے وقت کی بچت کریں۔",
+        "توسیعی ٹائم آن پیج میٹرکس کے ساتھ SEO کو فروغ دیں۔",
+        "عالمی سطح پر 24/7 'اوپن ہاؤس' قابل رسائی فراہم کریں۔",
+        "پریمیم، انٹرایکٹو مارکیٹنگ اثاثوں کے ساتھ نمایاں رہیں"
+      ],
+      "content": {
+        "process": [
+          { "title": "منصوبہ بندی اور لاجسٹکس", "description": "شوٹ کے دائرہ کار کی وضاحت کرنا اور نمایاں کرنے کے لیے کلیدی شعبوں کی نشاندہی کرنا۔" },
+          { "title": "سائٹ پر کیپچر", "description": "طبعی جگہ کو حاصل کرنے کے لیے 360° کیمرے، ڈرون، یا LiDAR سکینر تعینات کرنا۔" },
+          { "title": "سلائی اور پوسٹ پروسیسنگ", "description": "نمونے ہٹانے، روشنی کو درست کرنے، اور پینوراما کو بغیر کسی رکاوٹ کے سلائی کرنے کے لیے خام امیجری میں ترمیم کرنا۔" },
+          { "title": "انٹرایکٹو لیئرنگ", "description": "ڈیجیٹل ٹور انٹرفیس بنانا، نیویگیشن لنکس شامل کرنا، اور میڈیا ہاٹ سپاٹ کو سرایت کرنا۔" },
+          { "title": "ترسیل اور سرایت", "description": "حتمی فائلیں فراہم کرنا اور آپ کی ویب سائٹ پر ٹور کو سرایت کرنے میں مدد کرنا۔" }
+        ],
+        "technologies": [
+          "Matterport",
+          "Krpano / 3DVista",
+          "WebGL / Three.js",
+          "Insta360 / DSLR Rigs",
+          "WebVR / WebXR",
+          "HTML5 / CSS3"
+        ],
+        "faq": [
+          { "question": "کیا مجھے ورچوئل ٹور دیکھنے کے لیے کسی خاص سافٹ ویئر کی ضرورت ہے؟", "answer": "نہیں، ہمارے تمام ورچوئل ٹور HTML5 اور WebGL کا استعمال کرتے ہوئے بنائے گئے ہیں، مطلب یہ ہے کہ یہ کسی بھی ایپ کو ڈاؤن لوڈ کرنے کی ضرورت کے بغیر ڈیسک ٹاپ، ٹیبلیٹ، یا موبائل پر کسی بھی جدید ویب براؤزر میں براہ راست چلتے ہیں۔" },
+          { "question": "کیا ہم ٹور کے اندر ای کامرس کی خصوصیات شامل کر سکتے ہیں؟", "answer": "جی ہاں. ہم مخصوص اشیاء (مثلاً، شو روم میں صوفہ) پر انٹرایکٹو ہاٹ سپاٹ شامل کر سکتے ہیں جو ایک پاپ اپ کھولتے ہیں جو صارف کو اپنے کارٹ میں آئٹم شامل کرنے یا پروڈکٹ کا صفحہ دیکھنے کی اجازت دیتا ہے۔" }
+        ]
+      },
+      "metaTitle": "ورچوئل ٹور تخلیق کی خدمات | 360° اور میٹرپورٹ",
+      "metaDescription": "انٹرایکٹو 360 ڈگری ورچوئل ٹور کے ساتھ صارفین کو مشغول کریں۔ ہم میٹرپورٹ سکیننگ، ڈرون پینوراماس، اور اپنی مرضی کے مطابق انٹرایکٹو ویب تجربات فراہم کرتے ہیں۔"
+    },
+    "ar": {
+      "name": "الجولات الافتراضية (Virtual Tours)",
+      "shortDescription": "جولات افتراضية غامرة بنطاق 360 درجة للعقارات، والضيافة، والتعليم.",
+      "fullDescription": "انقل عملائك مباشرة إلى مساحتك، بغض النظر عن مكان وجودهم في العالم. تستفيد خدمات الجولات الافتراضية لدينا من التصوير الفوتوغرافي عالي الدقة 360 درجة، والمسح الضوئي ثلاثي الأبعاد (Matterport)، وتقنية WebGL التفاعلية لإنشاء تجارب غامرة وموجهة ذاتيًا. تعد الجولات الافتراضية مثالية للقوائم العقارية، والحرم الجامعي، والمتاحف، والفنادق الفخمة، حيث تزيد بشكل كبير من تفاعل المستخدم ووقت البقاء على الموقع. نقوم بإثراء هذه البيئات بنقاط اتصال تفاعلية (Hotspots) - مما يسمح للمستخدمين بالنقر على العناصر لعرض تفاصيل المنتج، أو مشاهدة مقاطع فيديو مدمجة، أو حتى حجز موعد مباشرة من داخل المساحة ثلاثية الأبعاد.",
+      "features": [
+        "تصوير فوتوغرافي 360 درجة عالي الدقة وصور بانورامية بطائرات الدرون",
+        "المسح الضوئي ثلاثي الأبعاد باستخدام Matterport وطرق عرض 'بيت الدمية' (Dollhouse)",
+        "نقاط اتصال تفاعلية (معلومات، فيديو، روابط التجارة الإلكترونية)",
+        "التوافق مع نظارات الواقع الافتراضي (WebVR)",
+        "واجهة مستخدم (UI) وقوائم تنقل مخصصة وتكامل مع مخطط الطابق",
+        "تتبع التحليلات لتفاعل المستخدمين"
+      ],
+      "benefits": [
+        "زيادة المبيعات والحجوزات من خلال بناء ثقة العملاء",
+        "توفير الوقت عن طريق تقليل المعاينات والجولات الشخصية",
+        "تعزيز تحسين محركات البحث (SEO) بفضل زيادة مقاييس وقت البقاء في الصفحة",
+        "توفير 'منزل مفتوح' على مدار الساعة طوال أيام الأسبوع يمكن الوصول إليه عالميًا",
+        "التميز باستخدام أصول تسويقية تفاعلية ومميزة"
+      ],
+      "content": {
+        "process": [
+          { "title": "التخطيط والخدمات اللوجستية", "description": "تحديد نطاق التصوير وتحديد المجالات الرئيسية التي يجب تسليط الضوء عليها." },
+          { "title": "التصوير في الموقع", "description": "نشر كاميرات 360 درجة أو طائرات الدرون أو ماسحات LiDAR الضوئية لالتقاط المساحة المادية." },
+          { "title": "الدمج (Stitching) والمعالجة", "description": "تعديل الصور الخام لإزالة العيوب، وتصحيح الإضاءة، ودمج الصور البانورامية بسلاسة." },
+          { "title": "الطبقات التفاعلية", "description": "بناء واجهة الجولة الرقمية، وإضافة روابط التنقل، ودمج نقاط اتصال الوسائط المتعددة." },
+          { "title": "التسليم والدمج في الموقع", "description": "توفير الملفات النهائية والمساعدة في دمج الجولة الافتراضية في موقعك الإلكتروني." }
+        ],
+        "technologies": [
+          "Matterport",
+          "Krpano / 3DVista",
+          "WebGL / Three.js",
+          "Insta360 / منصات كاميرات DSLR",
+          "WebVR / WebXR",
+          "HTML5 / CSS3"
+        ],
+        "faq": [
+          { "question": "هل أحتاج إلى برامج خاصة لمشاهدة الجولة الافتراضية؟", "answer": "لا. تم تصميم جميع جولاتنا الافتراضية باستخدام HTML5 و WebGL، مما يعني أنها تعمل مباشرة في أي متصفح ويب حديث على أجهزة الكمبيوتر المكتبية، أو الأجهزة اللوحية، أو الهواتف المحمولة دون الحاجة إلى تنزيل أي تطبيقات." },
+          { "question": "هل يمكننا دمج ميزات التجارة الإلكترونية داخل الجولة؟", "answer": "نعم. يمكننا إضافة نقاط اتصال تفاعلية على عناصر محددة (على سبيل المثال، أريكة في صالة عرض) والتي تفتح نافذة منبثقة تسمح للمستخدم بإضافة العنصر إلى عربة التسوق الخاصة به أو زيارة صفحة المنتج." }
+        ]
+      },
+      "metaTitle": "خدمات إنشاء الجولات الافتراضية | 360° و Matterport",
+      "metaDescription": "اجذب العملاء بجولات افتراضية تفاعلية بزاوية 360 درجة. نقدم المسح الضوئي باستخدام Matterport، وصور الدرون البانورامية، وتجارب الويب التفاعلية المخصصة."
+    }
+  },
+  "vr-development": {
+    "en": {
+      "name": "VR Development",
+      "shortDescription": "Create fully immersive Virtual Reality experiences for training, gaming, and enterprise.",
+      "fullDescription": "Virtual Reality (VR) transports users to entirely new worlds. Whether you need a realistic safety training simulation for heavy industry, an interactive VR game, or an immersive virtual showroom for high-end retail, our VR Development services bring your vision to life. Utilizing powerful engines like Unity and Unreal Engine, we develop applications optimized for leading headsets like Meta Quest, HTC Vive, and Apple Vision Pro. We focus intensely on performance optimization to ensure high, stable framerates (90+ FPS), which is critical for preventing motion sickness and delivering a truly captivating, comfortable presence.",
+      "features": [
+        "Custom VR Application & Game Development",
+        "Enterprise Training & Simulation (Safety, Medical)",
+        "Virtual Showrooms & Real Estate Walkthroughs",
+        "Cross-Platform Deployment (Meta Quest, PC VR)",
+        "Hand Tracking, Haptics, and Spatial Audio Integration",
+        "Multi-User Virtual Environments & Collaboration"
+      ],
+      "benefits": [
+        "Reduce Risk and Costs with Virtual Training Scenarios",
+        "Engage Customers with Memorable, Immersive Brand Experiences",
+        "Facilitate Remote Collaboration in Shared 3D Workspaces",
+        "Overcome Physical Limitations in Product Demonstrations",
+        "Establish Your Company as a Forward-Thinking Innovator"
+      ],
+      "content": {
+        "process": [
+          { "title": "Concept & UX Design", "description": "Defining the core interactions, environment layout, and locomotion methods to ensure user comfort." },
+          { "title": "3D Asset Creation", "description": "Modeling, texturing, and optimizing 3D assets to maintain high framerates on mobile VR chips." },
+          { "title": "Engine Development", "description": "Programming interactivity, physics, and integrating SDKs (Oculus, OpenXR) in Unity or Unreal." },
+          { "title": "Optimization", "description": "Relentlessly profiling draw calls and memory to guarantee a smooth 90 FPS experience." },
+          { "title": "Deployment", "description": "Publishing to enterprise device management platforms or public stores (Meta Store, SteamVR)." }
+        ],
+        "technologies": [
+          "Unity Engine / Unreal Engine 5",
+          "OpenXR / Oculus SDK",
+          "C# / C++",
+          "Blender / Maya",
+          "Meta Quest / HTC Vive / Apple Vision Pro",
+          "Spatial Audio (FMOD)"
+        ],
+        "faq": [
+          { "question": "Can the VR experience be multiplayer?", "answer": "Yes. We can build multi-user environments where participants from across the globe share the same virtual space, communicate via voice chat, and interact with objects collaboratively." },
+          { "question": "How do you prevent motion sickness in VR?", "answer": "Motion sickness is usually caused by low framerates or poor locomotion design. We enforce strict performance budgets (maintaining 90+ FPS) and use comfortable movement options like teleportation or vignette tunneling to ensure a pleasant experience." }
+        ]
+      },
+      "metaTitle": "VR Development Services | Oculus, Unity & Unreal",
+      "metaDescription": "Build immersive Virtual Reality applications for Meta Quest and PC VR. We specialize in enterprise training, VR games, and virtual showrooms."
+    },
+    "tr": {
+      "name": "VR Geliştirme (Sanal Gerçeklik)",
+      "shortDescription": "Eğitim, oyun ve kurumsal alanlar için tamamen sürükleyici Sanal Gerçeklik deneyimleri yaratın.",
+      "fullDescription": "Sanal Gerçeklik (VR), kullanıcıları tamamen yeni dünyalara taşır. Ağır sanayi için gerçekçi bir güvenlik eğitimi simülasyonuna, etkileşimli bir VR oyununa veya lüks perakende için sürükleyici bir sanal showroom'a ihtiyacınız varsa, VR Geliştirme hizmetlerimiz vizyonunuzu hayata geçirir. Unity ve Unreal Engine gibi güçlü motorları kullanarak Meta Quest, HTC Vive ve Apple Vision Pro gibi önde gelen başlıklar (headsets) için optimize edilmiş uygulamalar geliştiriyoruz. Hareket hastalığını (motion sickness) önlemek ve gerçekten büyüleyici, rahat bir varlık (presence) sunmak için kritik olan yüksek ve kararlı kare hızlarını (90+ FPS) sağlamak amacıyla performans optimizasyonuna yoğun bir şekilde odaklanıyoruz.",
+      "features": [
+        "Özel VR Uygulaması ve Oyun Geliştirme",
+        "Kurumsal Eğitim ve Simülasyon (Güvenlik, Tıbbi)",
+        "Sanal Showroom'lar ve Emlak Turları",
+        "Çapraz Platform Dağıtımı (Meta Quest, PC VR)",
+        "El İzleme (Hand Tracking), Haptik ve Uzamsal (Spatial) Ses Entegrasyonu",
+        "Çok Kullanıcılı Sanal Ortamlar ve İşbirliği"
+      ],
+      "benefits": [
+        "Sanal Eğitim Senaryoları ile Riski ve Maliyetleri Azaltma",
+        "Unutulmaz, Sürükleyici Marka Deneyimleri ile Müşterileri Çekme",
+        "Paylaşılan 3D Çalışma Alanlarında Uzaktan İşbirliğini Kolaylaştırma",
+        "Ürün Tanıtımlarında Fiziksel Sınırlamaların Üstesinden Gelme",
+        "Şirketinizi İleri Görüşlü Bir Yenilikçi Olarak Konumlandırma"
+      ],
+      "content": {
+        "process": [
+          { "title": "Konsept ve UX Tasarımı", "description": "Kullanıcı konforunu sağlamak için temel etkileşimleri, ortam düzenini ve hareket (locomotion) yöntemlerini tanımlama." },
+          { "title": "3D Varlık (Asset) Üretimi", "description": "Mobil VR çiplerinde yüksek kare hızlarını korumak için 3D varlıkları modelleme, dokulama (texturing) ve optimize etme." },
+          { "title": "Motor Geliştirme", "description": "Etkileşim ve fizikleri programlama; SDK'ları (Oculus, OpenXR) Unity veya Unreal'da entegre etme." },
+          { "title": "Optimizasyon", "description": "Pürüzsüz bir 90 FPS deneyimi garanti etmek için çizim çağrılarını (draw calls) ve belleği sürekli profilleme." },
+          { "title": "Dağıtım", "description": "Kurumsal cihaz yönetimi platformlarında veya halka açık mağazalarda (Meta Store, SteamVR) yayınlama." }
+        ],
+        "technologies": [
+          "Unity Engine / Unreal Engine 5",
+          "OpenXR / Oculus SDK",
+          "C# / C++",
+          "Blender / Maya",
+          "Meta Quest / HTC Vive / Apple Vision Pro",
+          "Uzamsal Ses (FMOD)"
+        ],
+        "faq": [
+          { "question": "VR deneyimi çok oyunculu (multiplayer) olabilir mi?", "answer": "Evet. Dünyanın dört bir yanından katılımcıların aynı sanal alanı paylaştığı, sesli sohbet yoluyla iletişim kurduğu ve nesnelerle işbirliği içinde etkileşime girdiği çok kullanıcılı ortamlar oluşturabiliriz." },
+          { "question": "VR'da hareket hastalığını (motion sickness) nasıl önlüyorsunuz?", "answer": "Hareket hastalığı genellikle düşük kare hızları veya zayıf hareket (locomotion) tasarımından kaynaklanır. Keyifli bir deneyim sağlamak için katı performans bütçeleri uyguluyor (90+ FPS koruyarak) ve ışınlanma (teleportation) veya vinyet tüneli (vignette tunneling) gibi rahat hareket seçenekleri kullanıyoruz." }
+        ]
+      },
+      "metaTitle": "VR Geliştirme Hizmetleri | Oculus, Unity ve Unreal",
+      "metaDescription": "Meta Quest ve PC VR için sürükleyici Sanal Gerçeklik uygulamaları oluşturun. Kurumsal eğitim, VR oyunları ve sanal showroom'larda uzmanız."
+    },
+    "de": {
+      "name": "VR-Entwicklung",
+      "shortDescription": "Erstellen Sie vollständig immersive Virtual-Reality-Erlebnisse für Training, Gaming und Enterprise.",
+      "fullDescription": "Virtual Reality (VR) transportiert Nutzer in völlig neue Welten. Ob Sie eine realistische Sicherheitstrainings-Simulation für die Schwerindustrie, ein interaktives VR-Spiel oder einen immersiven virtuellen Showroom für High-End-Retail benötigen – unsere VR-Entwicklungsdienste erwecken Ihre Vision zum Leben. Unter Nutzung leistungsstarker Engines wie Unity und Unreal Engine entwickeln wir Anwendungen, die für führende Headsets wie Meta Quest, HTC Vive und Apple Vision Pro optimiert sind. Wir konzentrieren uns intensiv auf die Performance-Optimierung, um hohe, stabile Bildraten (90+ FPS) sicherzustellen, was entscheidend ist, um Motion Sickness zu vermeiden und eine wirklich fesselnde, komfortable Präsenz zu liefern.",
+      "features": [
+        "Individuelle VR-App- & Spieleentwicklung",
+        "Enterprise Training & Simulation (Sicherheit, Medizin)",
+        "Virtuelle Showrooms & Immobilien-Begehungen",
+        "Cross-Platform-Deployment (Meta Quest, PC VR)",
+        "Integration von Hand-Tracking, Haptik und Spatial Audio",
+        "Mehrbenutzer-Umgebungen & Kollaboration in VR"
+      ],
+      "benefits": [
+        "Reduzierung von Risiken & Kosten durch virtuelle Trainingsszenarien",
+        "Begeisterung von Kunden mit unvergesslichen Markenerlebnissen",
+        "Erleichterung der Remote-Zusammenarbeit in geteilten 3D-Räumen",
+        "Überwindung physischer Einschränkungen bei Produktdemonstrationen",
+        "Positionierung Ihres Unternehmens als zukunftsorientierter Innovator"
+      ],
+      "content": {
+        "process": [
+          { "title": "Konzept & UX-Design", "description": "Definition von Interaktionen, Umgebungsaufbau und Fortbewegungsmethoden (Locomotion) für maximalen Komfort." },
+          { "title": "3D Asset-Erstellung", "description": "Modellierung und Optimierung von 3D-Assets für hohe Framerates auch auf mobilen VR-Chips." },
+          { "title": "Engine-Entwicklung", "description": "Programmierung der Logik und Integration von SDKs (Oculus, OpenXR) in Unity oder Unreal." },
+          { "title": "Performance-Optimierung", "description": "Konsequentes Profiling von Speicher und Draw Calls, um konstant 90 FPS zu garantieren." },
+          { "title": "Deployment", "description": "Veröffentlichung auf Enterprise-Plattformen oder in öffentlichen Stores (Meta, SteamVR)." }
+        ],
+        "technologies": [
+          "Unity Engine / Unreal Engine 5",
+          "OpenXR / Oculus SDK",
+          "C# / C++",
+          "Blender / Maya",
+          "Meta Quest / HTC Vive / Apple Vision Pro",
+          "Spatial Audio (FMOD)"
+        ],
+        "faq": [
+          { "question": "Kann die VR-Erfahrung als Multiplayer konzipiert werden?", "answer": "Ja. Wir bauen Multi-User-Umgebungen, in denen Nutzer weltweit denselben virtuellen Raum teilen, per Voice-Chat kommunizieren und gemeinsam mit Objekten interagieren können." },
+          { "question": "Wie verhindern Sie Motion Sickness (Übelkeit) in VR?", "answer": "Motion Sickness wird meist durch niedrige FPS oder schlechte Fortbewegungs-Mechaniken (Locomotion) verursacht. Wir halten strenge Performance-Budgets ein (stabile 90+ FPS) und nutzen komfortable Bewegungsarten wie Teleportation." }
+        ]
+      },
+      "metaTitle": "VR-Entwicklung Agentur | Oculus, Unity & Unreal",
+      "metaDescription": "Entwicklung immersiver Virtual Reality Anwendungen für Meta Quest und PC VR. Spezialisiert auf Enterprise-Training, VR-Games und Showrooms."
+    },
+    "ur": {
+      "name": "وی آر ڈیولپمنٹ",
+      "shortDescription": "تربیت، گیمنگ، اور انٹرپرائز کے لیے مکمل طور پر عمیق ورچوئل ریئلٹی کے تجربات بنائیں۔",
+      "fullDescription": "ورچوئل ریئلٹی (VR) صارفین کو بالکل نئی دنیا میں لے جاتی ہے۔ چاہے آپ کو بھاری صنعت کے لیے ایک حقیقت پسندانہ حفاظتی تربیت کی ضرورت ہو، ایک انٹرایکٹو VR گیم، یا ہائی اینڈ ریٹیل کے لیے ایک عمیق ورچوئل شو روم، ہماری VR ترقیاتی خدمات آپ کے وژن کو زندہ کرتی ہیں۔ یونٹی اور غیر حقیقی انجن جیسے طاقتور انجنوں کا استعمال کرتے ہوئے، ہم میٹا کویسٹ، HTC Vive، اور Apple Vision Pro جیسے سرکردہ ہیڈسیٹ کے لیے موزوں کردہ ایپلی کیشنز تیار کرتے ہیں۔ ہم اعلیٰ، مستحکم فریمریٹس (90+ FPS) کو یقینی بنانے کے لیے کارکردگی کی اصلاح پر گہرائی سے توجہ مرکوز کرتے ہیں، جو موشن سِکنس کو روکنے اور واقعی دلکش، آرام دہ موجودگی فراہم کرنے کے لیے اہم ہے۔",
+      "features": [
+        "حسب ضرورت وی آر ایپلی کیشن اور گیم ڈیولپمنٹ",
+        "انٹرپرائز ٹریننگ اور سمولیشن (حفاظت، میڈیکل)",
+        "ورچوئل شو رومز اور رئیل اسٹیٹ واک تھرو",
+        "کراس پلیٹ فارم کی تعیناتی (Meta Quest, PC VR)",
+        "ہینڈ ٹریکنگ، ہیپٹکس، اور مقامی آڈیو انٹیگریشن",
+        "کثیر صارف ورچوئل ماحول اور تعاون"
+      ],
+      "benefits": [
+        "ورچوئل ٹریننگ کے منظرناموں کے ساتھ خطرے اور اخراجات کو کم کریں۔",
+        "یادگار، دلفریب برانڈ کے تجربات کے ساتھ صارفین کو مشغول کریں۔",
+        "مشترکہ 3D ورک اسپیسز میں دور دراز کے تعاون کی سہولت فراہم کریں۔",
+        "مصنوعات کے مظاہروں میں جسمانی حدود پر قابو پانا",
+        "اپنی کمپنی کو ایک آگے کی سوچ رکھنے والے اختراع کار کے طور پر قائم کریں۔"
+      ],
+      "content": {
+        "process": [
+          { "title": "تصور اور UX ڈیزائن", "description": "صارف کے آرام کو یقینی بنانے کے لیے بنیادی تعاملات، ماحول کی ترتیب، اور لوکوموشن کے طریقوں کی وضاحت کرنا۔" },
+          { "title": "3D اثاثہ کی تخلیق", "description": "موبائل VR چپس پر ہائی فریمریٹس کو برقرار رکھنے کے لیے 3D اثاثوں کی ماڈلنگ، ٹیکسچرنگ، اور اصلاح کرنا۔" },
+          { "title": "انجن کی ترقی", "description": "انٹرایکٹیویٹی، فزکس کی پروگرامنگ، اور Unity یا Unreal میں SDKs (Oculus, OpenXR) کو مربوط کرنا۔" },
+          { "title": "اصلاح", "description": "ہموار 90 FPS کے تجربے کی ضمانت دینے کے لیے ڈرا کالز اور میموری کی مسلسل پروفائلنگ۔" },
+          { "title": "تعیناتی", "description": "انٹرپرائز ڈیوائس مینجمنٹ پلیٹ فارمز یا پبلک اسٹورز (Meta Store, SteamVR) پر شائع کرنا۔" }
+        ],
+        "technologies": [
+          "Unity Engine / Unreal Engine 5",
+          "OpenXR / Oculus SDK",
+          "C# / C++",
+          "Blender / Maya",
+          "Meta Quest / HTC Vive / Apple Vision Pro",
+          "Spatial Audio (FMOD)"
+        ],
+        "faq": [
+          { "question": "کیا وی آر کا تجربہ ملٹی پلیئر ہو سکتا ہے؟", "answer": "جی ہاں. ہم کثیر صارف کا ماحول بنا سکتے ہیں جہاں دنیا بھر سے شرکاء ایک ہی ورچوئل اسپیس کا اشتراک کرتے ہیں، صوتی چیٹ کے ذریعے بات چیت کرتے ہیں، اور اشیاء کے ساتھ باہمی تعامل کرتے ہیں۔" },
+          { "question": "آپ وی آر میں موشن سکنیس کو کیسے روکتے ہیں؟", "answer": "موشن سکنیس عام طور پر کم فریمریٹس یا ناقص لوکوموشن ڈیزائن کی وجہ سے ہوتی ہے۔ ہم سخت کارکردگی کے بجٹ کو نافذ کرتے ہیں (90+ FPS کو برقرار رکھتے ہوئے) اور ایک خوشگوار تجربہ کو یقینی بنانے کے لیے آرام دہ نقل و حرکت کے اختیارات جیسے کہ ٹیلی پورٹیشن یا وگنیٹ ٹنلنگ کا استعمال کرتے ہیں۔" }
+        ]
+      },
+      "metaTitle": "VR ترقیاتی خدمات | اوکولس، اتحاد اور غیر حقیقی",
+      "metaDescription": "Meta Quest اور PC VR کے لیے عمیق ورچوئل رئیلٹی ایپلی کیشنز بنائیں۔ ہم انٹرپرائز کی تربیت، VR گیمز، اور ورچوئل شو رومز میں مہارت رکھتے ہیں۔"
+    },
+    "ar": {
+      "name": "تطوير الواقع الافتراضي (VR)",
+      "shortDescription": "إنشاء تجارب واقع افتراضي غامرة بالكامل للتدريب، والألعاب، والمؤسسات.",
+      "fullDescription": "ينقل الواقع الافتراضي (VR) المستخدمين إلى عوالم جديدة تمامًا. سواء كنت بحاجة إلى محاكاة واقعية لتدريب السلامة في الصناعات الثقيلة، أو لعبة VR تفاعلية، أو صالة عرض افتراضية غامرة للبيع بالتجزئة الراقي، فإن خدمات تطوير الواقع الافتراضي لدينا تضفي الحياة على رؤيتك. باستخدام محركات قوية مثل Unity و Unreal Engine، نقوم بتطوير تطبيقات محسّنة لأفضل نظارات الواقع الافتراضي مثل Meta Quest و HTC Vive و Apple Vision Pro. نحن نركز بشكل مكثف على تحسين الأداء لضمان معدلات إطارات عالية ومستقرة (90+ FPS)، وهو أمر بالغ الأهمية لمنع دوار الحركة (Motion sickness) وتقديم حضور آسر ومريح حقًا.",
+      "features": [
+        "تطوير ألعاب وتطبيقات الواقع الافتراضي (VR) المخصصة",
+        "التدريب والمحاكاة للمؤسسات (السلامة، الطبية)",
+        "صالات العرض الافتراضية والجولات العقارية (Walkthroughs)",
+        "النشر عبر منصات متعددة (Meta Quest ، PC VR)",
+        "تكامل تتبع اليد (Hand Tracking)، واللمس (Haptics)، والصوت المكاني",
+        "بيئات افتراضية متعددة المستخدمين والتعاون عن بعد"
+      ],
+      "benefits": [
+        "تقليل المخاطر والتكاليف من خلال سيناريوهات التدريب الافتراضية",
+        "إشراك العملاء بتجارب علامة تجارية غامرة لا تُنسى",
+        "تسهيل التعاون عن بعد في مساحات عمل ثلاثية الأبعاد (3D) مشتركة",
+        "التغلب على القيود المادية في العروض التوضيحية للمنتجات",
+        "ترسيخ مكانة شركتك كمبتكر يتطلع إلى المستقبل"
+      ],
+      "content": {
+        "process": [
+          { "title": "المفهوم وتصميم تجربة المستخدم (UX)", "description": "تحديد التفاعلات الأساسية، وتخطيط البيئة، وطرق الحركة (Locomotion) لضمان راحة المستخدم." },
+          { "title": "إنشاء الأصول ثلاثية الأبعاد (3D Assets)", "description": "نمذجة وإكساء (Texturing) وتحسين الأصول ثلاثية الأبعاد للحفاظ على معدلات إطارات عالية على شرائح VR المحمولة." },
+          { "title": "تطوير المحرك (Engine)", "description": "برمجة التفاعل، والفيزياء، ودمج حزم تطوير البرمجيات (SDKs مثل Oculus, OpenXR) في Unity أو Unreal." },
+          { "title": "التحسين (Optimization)", "description": "تحليل صارم لمكالمات الرسم (Draw calls) والذاكرة لضمان تجربة سلسة بمعدل 90 إطارًا في الثانية." },
+          { "title": "النشر (Deployment)", "description": "النشر على منصات إدارة أجهزة المؤسسات أو المتاجر العامة (مثل Meta Store ، SteamVR)." }
+        ],
+        "technologies": [
+          "محرك Unity / Unreal Engine 5",
+          "OpenXR / Oculus SDK",
+          "C# / C++",
+          "Blender / Maya",
+          "Meta Quest / HTC Vive / Apple Vision Pro",
+          "الصوت المكاني (FMOD)"
+        ],
+        "faq": [
+          { "question": "هل يمكن أن تكون تجربة الواقع الافتراضي متعددة اللاعبين؟", "answer": "نعم. يمكننا بناء بيئات متعددة المستخدمين حيث يشارك المشاركون من جميع أنحاء العالم نفس المساحة الافتراضية، ويتواصلون عبر الدردشة الصوتية، ويتفاعلون مع الأشياء بشكل تعاوني." },
+          { "question": "كيف تمنعون دوار الحركة (Motion Sickness) في الواقع الافتراضي؟", "answer": "يحدث دوار الحركة عادة بسبب انخفاض معدلات الإطارات أو سوء تصميم طرق الحركة. نحن نفرض ميزانيات أداء صارمة (الحفاظ على 90+ إطارًا في الثانية) ونستخدم خيارات حركة مريحة مثل النقل الآني (Teleportation) أو تقييد الرؤية المحيطية (Vignette) لضمان تجربة ممتعة." }
+        ]
+      },
+      "metaTitle": "خدمات تطوير الواقع الافتراضي | Oculus و Unity و Unreal",
+      "metaDescription": "أنشئ تطبيقات واقع افتراضي غامرة لأجهزة Meta Quest و PC VR. نحن متخصصون في تدريب المؤسسات وألعاب VR وصالات العرض الافتراضية."
+    }
+  },
+  "web-development": {
+    "en": {
+      "name": "Web Development",
+      "shortDescription": "Full-stack web development services building fast, secure, and scalable digital solutions.",
+      "fullDescription": "Your website is often the core of your digital business. We provide end-to-end Web Development services, combining robust back-end engineering with beautiful, highly responsive front-end interfaces. Whether you need a lightning-fast corporate website, a complex SaaS web application, or a high-traffic media portal, our team has the full-stack capabilities to deliver. We prioritize performance (Core Web Vitals), security, and scalability from day one, utilizing modern frameworks like React, Next.js, and Node.js. We do not just write code; we build architectures designed to grow with your business.",
+      "features": [
+        "Custom Frontend Architecture (React, Vue, Next.js)",
+        "Scalable Backend API Development (Node.js, Python, Go)",
+        "Database Design & Optimization (PostgreSQL, MongoDB)",
+        "Cloud Infrastructure Setup (AWS, Vercel, Docker)",
+        "Progressive Web App (PWA) Capabilities",
+        "SEO, Accessibility (WCAG), & Performance Optimization"
+      ],
+      "benefits": [
+        "Deliver a Lightning-Fast Experience Across All Devices",
+        "Rank Higher on Google with SEO-Optimized Codebases",
+        "Ensure Business Continuity with Robust Security Practices",
+        "Scale Effortlessly to Handle Traffic Spikes",
+        "Reduce Maintenance Costs with Clean, Well-Documented Code"
+      ],
+      "content": {
+        "process": [
+          { "title": "Technical Scoping", "description": "Defining the tech stack, database schema, and system architecture." },
+          { "title": "Frontend Development", "description": "Translating UI/UX designs into responsive, interactive code using React or Vue." },
+          { "title": "Backend Development", "description": "Building secure RESTful or GraphQL APIs and integrating the database." },
+          { "title": "Testing & QA", "description": "Running unit tests, E2E tests, and performance audits (Lighthouse)." },
+          { "title": "Deployment & CI/CD", "description": "Setting up automated deployment pipelines to cloud hosting providers." }
+        ],
+        "technologies": [
+          "React.js / Next.js",
+          "Node.js / Express / NestJS",
+          "Python (Django/FastAPI)",
+          "PostgreSQL / MongoDB",
+          "Tailwind CSS / Sass",
+          "Docker / AWS"
+        ],
+        "faq": [
+          { "question": "Do you build custom websites or use templates?", "answer": "We specialize in custom web development. While we might use component libraries to speed up development, the architecture and codebase are custom-tailored to your specific business requirements, ensuring maximum performance and uniqueness." },
+          { "question": "Will my website be optimized for mobile devices?", "answer": "Absolutely. We follow a strict mobile-first development methodology, ensuring that your website looks and functions perfectly on smartphones, tablets, and large desktop monitors." }
+        ]
+      },
+      "metaTitle": "Custom Web Development Services | Full-Stack Experts",
+      "metaDescription": "Build fast, scalable web applications with our full-stack web development services. We specialize in React, Next.js, Node.js, and modern cloud architectures."
+    },
+    "tr": {
+      "name": "Web Geliştirme",
+      "shortDescription": "Hızlı, güvenli ve ölçeklenebilir dijital çözümler üreten tam yığın (full-stack) web geliştirme hizmetleri.",
+      "fullDescription": "Web siteniz genellikle dijital işinizin çekirdeğidir. Sağlam arka uç (back-end) mühendisliğini güzel, son derece duyarlı ön uç (front-end) arayüzleriyle birleştirerek uçtan uca Web Geliştirme hizmetleri sunuyoruz. İster şimşek hızında bir kurumsal web sitesine, ister karmaşık bir SaaS web uygulamasına veya yüksek trafikli bir medya portalına ihtiyacınız olsun, ekibimiz bunu sağlayacak tam yığın (full-stack) yeteneklerine sahiptir. React, Next.js ve Node.js gibi modern çerçeveleri (frameworks) kullanarak ilk günden itibaren performansa (Önemli Web Verileri - Core Web Vitals), güvenliğe ve ölçeklenebilirliğe öncelik veriyoruz. Sadece kod yazmıyoruz; işletmenizle birlikte büyüyecek şekilde tasarlanmış mimariler kuruyoruz.",
+      "features": [
+        "Özel Ön Uç (Frontend) Mimarisi (React, Vue, Next.js)",
+        "Ölçeklenebilir Arka Uç (Backend) API Geliştirme (Node.js, Python, Go)",
+        "Veritabanı Tasarımı ve Optimizasyonu (PostgreSQL, MongoDB)",
+        "Bulut Altyapısı Kurulumu (AWS, Vercel, Docker)",
+        "Aşamalı Web Uygulaması (PWA) Yetenekleri",
+        "SEO, Erişilebilirlik (WCAG) ve Performans Optimizasyonu"
+      ],
+      "benefits": [
+        "Tüm Cihazlarda Şimşek Hızında Bir Deneyim Sunma",
+        "SEO Uyumlu Kod Tabanlarıyla Google'da Daha Üst Sıralarda Yer Alma",
+        "Sağlam Güvenlik Uygulamalarıyla İş Sürekliliğini Sağlama",
+        "Trafik Artışlarını (Spikes) Kaldırmak İçin Zahmetsizce Ölçeklenme",
+        "Temiz, İyi Belgelenmiş Kodla Bakım Maliyetlerini Düşürme"
+      ],
+      "content": {
+        "process": [
+          { "title": "Teknik Kapsam Belirleme", "description": "Teknoloji yığınını (tech stack), veritabanı şemasını ve sistem mimarisini tanımlama." },
+          { "title": "Ön Uç (Frontend) Geliştirme", "description": "UI/UX tasarımlarını React veya Vue kullanarak duyarlı, etkileşimli koda dönüştürme." },
+          { "title": "Arka Uç (Backend) Geliştirme", "description": "Güvenli RESTful veya GraphQL API'leri oluşturma ve veritabanını entegre etme." },
+          { "title": "Test ve QA", "description": "Birim (unit) testleri, uçtan uca (E2E) testler ve performans denetimleri (Lighthouse) yürütme." },
+          { "title": "Dağıtım ve CI/CD", "description": "Bulut barındırma (hosting) sağlayıcılarına otomatik dağıtım (deployment) işlem hatları (pipelines) kurma." }
+        ],
+        "technologies": [
+          "React.js / Next.js",
+          "Node.js / Express / NestJS",
+          "Python (Django/FastAPI)",
+          "PostgreSQL / MongoDB",
+          "Tailwind CSS / Sass",
+          "Docker / AWS"
+        ],
+        "faq": [
+          { "question": "Özel web siteleri mi yapıyorsunuz yoksa şablon mu kullanıyorsunuz?", "answer": "Özel web geliştirmede uzmanız. Geliştirmeyi hızlandırmak için bileşen (component) kütüphaneleri kullansak da, mimari ve kod tabanı özel iş gereksinimlerinize göre özel olarak uyarlanır, bu da maksimum performans ve benzersizlik sağlar." },
+          { "question": "Web sitem mobil cihazlar için optimize edilecek mi?", "answer": "Kesinlikle. Web sitenizin akıllı telefonlarda, tabletlerde ve büyük masaüstü monitörlerde mükemmel şekilde görünmesini ve çalışmasını sağlayarak, kesin bir önce mobil (mobile-first) geliştirme metodolojisi izliyoruz." }
+        ]
+      },
+      "metaTitle": "Özel Web Geliştirme Hizmetleri | Full-Stack Uzmanları",
+      "metaDescription": "Full-stack web geliştirme hizmetlerimizle hızlı, ölçeklenebilir web uygulamaları oluşturun. React, Next.js, Node.js ve modern bulut mimarilerinde uzmanız."
+    },
+    "de": {
+      "name": "Webentwicklung",
+      "shortDescription": "Full-Stack Webentwicklungs-Services für schnelle, sichere und skalierbare digitale Lösungen.",
+      "fullDescription": "Ihre Website ist oft das Herzstück Ihres digitalen Geschäfts. Wir bieten End-to-End-Webentwicklungsdienste, die robustes Back-End-Engineering mit wunderschönen, hochgradig responsiven Front-End-Schnittstellen kombinieren. Ob Sie eine blitzschnelle Corporate Website, eine komplexe SaaS-Webanwendung oder ein stark frequentiertes Medienportal benötigen – unser Team verfügt über die Full-Stack-Fähigkeiten, um zu liefern. Wir priorisieren Performance (Core Web Vitals), Sicherheit und Skalierbarkeit vom ersten Tag an und nutzen moderne Frameworks wie React, Next.js und Node.js. Wir schreiben nicht nur Code; wir bauen Architekturen, die darauf ausgelegt sind, mit Ihrem Unternehmen zu wachsen.",
+      "features": [
+        "Individuelle Frontend-Architektur (React, Vue, Next.js)",
+        "Skalierbare Backend-API-Entwicklung (Node.js, Python, Go)",
+        "Datenbank-Design & Optimierung (PostgreSQL, MongoDB)",
+        "Cloud-Infrastruktur Setup (AWS, Vercel, Docker)",
+        "Progressive Web App (PWA) Fähigkeiten",
+        "SEO, Barrierefreiheit (WCAG) & Performance-Optimierung"
+      ],
+      "benefits": [
+        "Blitzschnelles Erlebnis auf allen Geräten",
+        "Bessere Google-Rankings durch SEO-optimierten Code",
+        "Gewährleistung der Geschäftskontinuität durch höchste Sicherheit",
+        "Mühelose Skalierung bei Traffic-Spitzen",
+        "Geringere Wartungskosten durch sauberen, dokumentierten Code"
+      ],
+      "content": {
+        "process": [
+          { "title": "Technisches Scoping", "description": "Definition des Tech-Stacks, des Datenbankschemas und der Architektur." },
+          { "title": "Frontend-Entwicklung", "description": "Umsetzung der UI/UX-Designs in interaktiven Code mittels React/Vue." },
+          { "title": "Backend-Entwicklung", "description": "Bau sicherer RESTful/GraphQL APIs und Datenbank-Integration." },
+          { "title": "Testing & QA", "description": "Durchführung von Unit-Tests, E2E-Tests und Performance-Audits (Lighthouse)." },
+          { "title": "Deployment & CI/CD", "description": "Aufbau automatisierter Deployment-Pipelines in die Cloud." }
+        ],
+        "technologies": [
+          "React.js / Next.js",
+          "Node.js / Express / NestJS",
+          "Python (Django/FastAPI)",
+          "PostgreSQL / MongoDB",
+          "Tailwind CSS / Sass",
+          "Docker / AWS"
+        ],
+        "faq": [
+          { "question": "Bauen Sie individuelle Websites oder nutzen Sie Templates?", "answer": "Wir sind auf individuelle Webentwicklung spezialisiert. Architektur und Codebasis werden maßgeschneidert auf Ihre Geschäftsanforderungen entwickelt, um maximale Performance und Einzigartigkeit zu garantieren." },
+          { "question": "Wird meine Website für mobile Geräte optimiert sein?", "answer": "Absolut. Wir verfolgen strikt den Mobile-First-Ansatz und stellen sicher, dass Ihre Website auf Smartphones, Tablets und großen Desktop-Monitoren perfekt aussieht und funktioniert." }
+        ]
+      },
+      "metaTitle": "Webentwicklung Agentur | Custom Full-Stack Solutions",
+      "metaDescription": "Bauen Sie schnelle, skalierbare Web-Apps mit unserer Full-Stack-Webentwicklung. Wir sind Experten für React, Next.js, Node.js und Cloud-Architekturen."
+    },
+    "ur": {
+      "name": "ویب ڈیولپمنٹ",
+      "shortDescription": "تیز، محفوظ، اور توسیع پذیر ڈیجیٹل حل کی تعمیر کے لیے فل اسٹیک ویب ڈویلپمنٹ سروسز۔",
+      "fullDescription": "آپ کی ویب سائٹ اکثر آپ کے ڈیجیٹل کاروبار کا مرکز ہوتی ہے۔ ہم خوبصورت، انتہائی ذمہ دار فرنٹ اینڈ انٹرفیسز کے ساتھ مضبوط بیک اینڈ انجینئرنگ کو یکجا کرتے ہوئے، اینڈ ٹو اینڈ ویب ڈیولپمنٹ سروسز فراہم کرتے ہیں۔ چاہے آپ کو بجلی کی تیز رفتار کارپوریٹ ویب سائٹ، ایک پیچیدہ SaaS ویب ایپلیکیشن، یا زیادہ ٹریفک والا میڈیا پورٹل درکار ہو، ہماری ٹیم کے پاس ڈیلیور کرنے کے لیے فل اسٹیک صلاحیتیں ہیں۔ ہم React، Next.js، اور Node.js جیسے جدید فریم ورکس کا استعمال کرتے ہوئے، پہلے دن سے کارکردگی (Core Web Vitals)، سیکورٹی اور اسکیل ایبلٹی کو ترجیح دیتے ہیں۔ ہم صرف کوڈ نہیں لکھتے؛ ہم آپ کے کاروبار کے ساتھ بڑھنے کے لیے ڈیزائن کردہ فن تعمیر بناتے ہیں۔",
+      "features": [
+        "کسٹم فرنٹ اینڈ آرکیٹیکچر (React, Vue, Next.js)",
+        "اسکیل ایبل بیک اینڈ API ڈیولپمنٹ (Node.js, Python, Go)",
+        "ڈیٹا بیس ڈیزائن اور اصلاح (PostgreSQL, MongoDB)",
+        "کلاؤڈ انفراسٹرکچر سیٹ اپ (AWS, Vercel, Docker)",
+        "پروگریسو ویب ایپ (PWA) کی صلاحیتیں۔",
+        "SEO، قابل رسائی (WCAG)، اور کارکردگی کی اصلاح"
+      ],
+      "benefits": [
+        "تمام آلات پر بجلی کا تیز تجربہ فراہم کریں۔",
+        "SEO کے لیے موزوں کوڈ بیس کے ساتھ گوگل پر اعلیٰ درجہ حاصل کریں۔",
+        "مضبوط حفاظتی طریقوں کے ساتھ کاروباری تسلسل کو یقینی بنائیں",
+        "ٹریفک کی بڑھتی ہوئی تعداد کو سنبھالنے کے لیے آسانی سے پیمانہ بنائیں۔",
+        "صاف ستھرا، اچھی طرح سے دستاویزی کوڈ کے ساتھ دیکھ بھال کے اخراجات کو کم کریں۔"
+      ],
+      "content": {
+        "process": [
+          { "title": "ٹیکنیکل اسکوپنگ", "description": "ٹیک اسٹیک، ڈیٹا بیس اسکیما، اور سسٹم آرکیٹیکچر کی تعریف کرنا۔" },
+          { "title": "فرنٹ اینڈ ڈیولپمنٹ", "description": "React یا Vue کا استعمال کرتے ہوئے UI/UX ڈیزائنز کو جوابی، متعامل کوڈ میں ترجمہ کرنا۔" },
+          { "title": "بیک اینڈ ڈیولپمنٹ", "description": "محفوظ RESTful یا GraphQL APIs بنانا اور ڈیٹا بیس کو مربوط کرنا۔" },
+          { "title": "ٹیسٹنگ اور QA", "description": "یونٹ ٹیسٹ، E2E ٹیسٹ، اور کارکردگی کے آڈٹ (لائٹ ہاؤس) چلانا۔" },
+          { "title": "تعیناتی اور CI/CD", "description": "کلاؤڈ ہوسٹنگ فراہم کنندگان کے لیے خودکار تعیناتی پائپ لائنز ترتیب دینا۔" }
+        ],
+        "technologies": [
+          "React.js / Next.js",
+          "Node.js / Express / NestJS",
+          "Python (Django/FastAPI)",
+          "PostgreSQL / MongoDB",
+          "Tailwind CSS / Sass",
+          "Docker / AWS"
+        ],
+        "faq": [
+          { "question": "کیا آپ اپنی مرضی کی ویب سائٹس بناتے ہیں یا ٹیمپلیٹس استعمال کرتے ہیں؟", "answer": "ہم اپنی مرضی کے مطابق ویب کی ترقی میں مہارت رکھتے ہیں۔ اگرچہ ہم ڈیولپمنٹ کو تیز کرنے کے لیے پرزہ جات کی لائبریریوں کا استعمال کر سکتے ہیں، آرکیٹیکچر اور کوڈ بیس آپ کے کاروبار کے مخصوص تقاضوں کے مطابق اپنی مرضی کے مطابق بنائے گئے ہیں، جو زیادہ سے زیادہ کارکردگی اور انفرادیت کو یقینی بناتے ہیں۔" },
+          { "question": "کیا میری ویب سائٹ موبائل آلات کے لیے موزوں ہوگی؟", "answer": "بالکل۔ ہم موبائل کی پہلی ترقی کے سخت طریقہ کار کی پیروی کرتے ہیں، اس بات کو یقینی بناتے ہوئے کہ آپ کی ویب سائٹ اسمارٹ فونز، ٹیبلیٹس اور بڑے ڈیسک ٹاپ مانیٹر پر بالکل کام کرتی ہے۔" }
+        ]
+      },
+      "metaTitle": "اپنی مرضی کے مطابق ویب ترقیاتی خدمات | مکمل اسٹیک کے ماہرین",
+      "metaDescription": "ہماری مکمل اسٹیک ویب ڈیولپمنٹ سروسز کے ساتھ تیز، قابل توسیع ویب ایپلیکیشنز بنائیں۔ ہم React، Next.js، Node.js، اور جدید کلاؤڈ فن تعمیر میں مہارت رکھتے ہیں۔"
+    },
+    "ar": {
+      "name": "تطوير الويب (Web Development)",
+      "shortDescription": "خدمات تطوير الويب المتكاملة (Full-stack) لبناء حلول رقمية سريعة وآمنة وقابلة للتطوير.",
+      "fullDescription": "غالبًا ما يكون موقعك الإلكتروني هو جوهر عملك الرقمي. نحن نقدم خدمات تطوير الويب الشاملة، ونجمع بين هندسة الواجهة الخلفية (Back-end) القوية مع واجهات أمامية (Front-end) جميلة وعالية الاستجابة. سواء كنت بحاجة إلى موقع ويب للشركة فائق السرعة، أو تطبيق ويب SaaS معقد، أو بوابة وسائط (Media portal) ذات حركة مرور عالية، فإن فريقنا يمتلك إمكانيات التطوير المتكامل (Full-stack) لتقديم ذلك. نحن نعطي الأولوية للأداء (Core Web Vitals)، والأمان، وقابلية التوسع منذ اليوم الأول، باستخدام أطر عمل حديثة مثل React و Next.js و Node.js. نحن لا نكتب التعليمات البرمجية فحسب؛ بل نبني بنيات مصممة لتنمو مع عملك.",
+      "features": [
+        "بنية الواجهة الأمامية (Frontend) المخصصة (React ، Vue ، Next.js)",
+        "تطوير واجهة برمجة تطبيقات (API) للواجهة الخلفية قابلة للتطوير (Node.js ، Python ، Go)",
+        "تصميم وتحسين قواعد البيانات (PostgreSQL ، MongoDB)",
+        "إعداد البنية التحتية السحابية (AWS ، Vercel ، Docker)",
+        "إمكانيات تطبيقات الويب التقدمية (PWA)",
+        "تحسين محركات البحث (SEO)، وإمكانية الوصول (WCAG)، وتحسين الأداء"
+      ],
+      "benefits": [
+        "تقديم تجربة فائقة السرعة عبر جميع الأجهزة",
+        "ترتيب أعلى على جوجل بقواعد بيانات محسّنة لـ SEO",
+        "ضمان استمرارية الأعمال بممارسات أمنية قوية",
+        "التوسع بسهولة للتعامل مع طفرات حركة المرور (Traffic Spikes)",
+        "تقليل تكاليف الصيانة من خلال كود نظيف وموثق جيدًا"
+      ],
+      "content": {
+        "process": [
+          { "title": "تحديد النطاق الفني", "description": "تحديد مجموعة التكنولوجيا (Tech stack)، ومخطط قاعدة البيانات، وبنية النظام." },
+          { "title": "تطوير الواجهة الأمامية (Frontend)", "description": "ترجمة تصميمات UI/UX إلى كود متجاوب وتفاعلي باستخدام React أو Vue." },
+          { "title": "تطوير الواجهة الخلفية (Backend)", "description": "بناء واجهات برمجة تطبيقات RESTful أو GraphQL آمنة ودمج قاعدة البيانات." },
+          { "title": "الاختبار وضمان الجودة (QA)", "description": "إجراء اختبارات الوحدة (Unit tests)، واختبارات E2E، وتدقيقات الأداء (Lighthouse)." },
+          { "title": "النشر والأتمتة (CI/CD)", "description": "إعداد مسارات نشر آلية لمزودي الاستضافة السحابية." }
+        ],
+        "technologies": [
+          "React.js / Next.js",
+          "Node.js / Express / NestJS",
+          "Python (Django/FastAPI)",
+          "PostgreSQL / MongoDB",
+          "Tailwind CSS / Sass",
+          "Docker / AWS"
+        ],
+        "faq": [
+          { "question": "هل تقومون بإنشاء مواقع ويب مخصصة أم تستخدمون قوالب (Templates)؟", "answer": "نحن متخصصون في تطوير الويب المخصص. على الرغم من أننا قد نستخدم مكتبات المكونات (Component libraries) لتسريع التطوير، إلا أن البنية والكود مصممان خصيصًا لتلبية متطلبات عملك المحددة، مما يضمن أقصى قدر من الأداء والتفرد." },
+          { "question": "هل سيكون موقعي الإلكتروني محسّنًا للأجهزة المحمولة؟", "answer": "بالتأكيد. نحن نتبع منهجية صارمة لتطوير 'الهاتف المحمول أولاً' (Mobile-first)، مما يضمن أن موقع الويب الخاص بك يبدو ويعمل بشكل مثالي على الهواتف الذكية، والأجهزة اللوحية، وشاشات سطح المكتب الكبيرة." }
+        ]
+      },
+      "metaTitle": "خدمات تطوير الويب المخصصة | خبراء تطوير شامل (Full-Stack)",
+      "metaDescription": "قم ببناء تطبيقات ويب سريعة وقابلة للتطوير باستخدام خدمات تطوير الويب المتكاملة لدينا. نحن متخصصون في React و Next.js و Node.js والبنى السحابية الحديثة."
+    }
+  },
+  "web3-blockchain": {
+    "en": {
+      "name": "Web3 & Blockchain",
+      "shortDescription": "Innovate with decentralized applications, smart contracts, and Web3 architectures.",
+      "fullDescription": "The internet is evolving, and decentralization is at the core of this shift. Our Web3 & Blockchain development services help visionary companies transition from Web2 architectures to trustless, decentralized networks. We build end-to-end decentralized applications (dApps) across major EVM-compatible networks like Ethereum, Polygon, and Arbitrum. Whether you are launching a DeFi protocol, designing a DAO governance system, or simply integrating crypto wallet authentication (MetaMask, WalletConnect) into an existing platform, our blockchain engineers ensure your smart contracts are secure, gas-optimized, and thoroughly audited.",
+      "features": [
+        "Decentralized Application (dApp) Development",
+        "Smart Contract Development & Auditing (Solidity)",
+        "DeFi Protocols (Staking, Swaps, Liquidity Pools)",
+        "Web3 Wallet Integration (MetaMask, WalletConnect)",
+        "Layer 2 Scaling Solutions Integration",
+        "DAO Governance & Tokenomics Architecture"
+      ],
+      "benefits": [
+        "Eliminate Middlemen and Increase Transaction Transparency",
+        "Tap into the Growing Global Web3 User Base",
+        "Ensure Immutable Security and Trust for Digital Assets",
+        "Reduce Transaction Costs with Layer 2 Optimization",
+        "Create Novel Monetization and Community Governance Models"
+      ],
+      "content": {
+        "process": [
+          { "title": "Web3 Strategy", "description": "Defining the blockchain architecture, network selection, and tokenomics model." },
+          { "title": "Smart Contract Dev", "description": "Writing and thoroughly unit-testing secure Solidity contracts using Hardhat/Foundry." },
+          { "title": "dApp Frontend", "description": "Building the React/Next.js interface and integrating Web3.js/Ethers.js for blockchain interactions." },
+          { "title": "Security Audit", "description": "Conducting rigorous internal audits and preparing the code for third-party security reviews." },
+          { "title": "Mainnet Deployment", "description": "Deploying the contracts to the mainnet and setting up indexing solutions like The Graph." }
+        ],
+        "technologies": [
+          "Solidity / Vyper",
+          "Hardhat / Foundry",
+          "Web3.js / Ethers.js / viem",
+          "Ethereum / Polygon / Arbitrum",
+          "IPFS / Arweave",
+          "The Graph"
+        ],
+        "faq": [
+          { "question": "Which blockchain should I build on?", "answer": "It depends on your use case. Ethereum offers the highest security and liquidity but has high gas fees. Layer 2s like Arbitrum or sidechains like Polygon offer much faster and cheaper transactions while remaining EVM-compatible. We will help you choose the best fit." },
+          { "question": "Are smart contracts secure?", "answer": "Smart contracts are immutable, meaning bugs cannot easily be fixed post-deployment. We employ a security-first approach, using established libraries like OpenZeppelin, achieving 100% test coverage, and always recommending an external audit for mainnet deployments." }
+        ]
+      },
+      "metaTitle": "Web3 & Blockchain Development Company | dApps & Smart Contracts",
+      "metaDescription": "Build secure, decentralized applications and DeFi protocols. Expert Web3 development services specializing in Solidity, Ethereum, and Layer 2 solutions."
+    },
+    "tr": {
+      "name": "Web3 ve Blok Zinciri (Blockchain)",
+      "shortDescription": "Merkezi olmayan uygulamalar, akıllı sözleşmeler ve Web3 mimarileri ile yenilik yapın.",
+      "fullDescription": "İnternet gelişiyor ve merkezsizleşme bu değişimin merkezinde yer alıyor. Web3 ve Blockchain geliştirme hizmetlerimiz, vizyoner şirketlerin Web2 mimarilerinden güvene dayalı olmayan (trustless), merkezi olmayan ağlara geçiş yapmasına yardımcı olur. Ethereum, Polygon ve Arbitrum gibi başlıca EVM uyumlu ağlarda uçtan uca merkezi olmayan uygulamalar (dApps) geliştiriyoruz. İster bir DeFi protokolü başlatıyor, ister bir DAO yönetişim sistemi tasarlıyor veya sadece kripto cüzdan kimlik doğrulamasını (MetaMask, WalletConnect) mevcut bir platforma entegre ediyor olun, blok zinciri mühendislerimiz akıllı sözleşmelerinizin güvenli, gaz (gas) optimize edilmiş ve kapsamlı bir şekilde denetlenmiş olmasını sağlar.",
+      "features": [
+        "Merkezi Olmayan Uygulama (dApp) Geliştirme",
+        "Akıllı Sözleşme Geliştirme ve Denetimi (Solidity)",
+        "DeFi Protokolleri (Staking, Swaplar, Likidite Havuzları)",
+        "Web3 Cüzdan Entegrasyonu (MetaMask, WalletConnect)",
+        "Katman 2 (Layer 2) Ölçeklendirme Çözümleri Entegrasyonu",
+        "DAO Yönetişimi ve Tokenomik Mimarisi"
+      ],
+      "benefits": [
+        "Aracıları Ortadan Kaldırma ve İşlem Şeffaflığını Artırma",
+        "Büyüyen Küresel Web3 Kullanıcı Tabanından Yararlanma",
+        "Dijital Varlıklar İçin Değişmez (Immutable) Güvenlik ve Güven Sağlama",
+        "Katman 2 Optimizasyonu ile İşlem Maliyetlerini Düşürme",
+        "Yeni Para Kazanma ve Topluluk Yönetişim Modelleri Oluşturma"
+      ],
+      "content": {
+        "process": [
+          { "title": "Web3 Stratejisi", "description": "Blok zinciri mimarisini, ağ seçimini ve tokenomik modelini tanımlama." },
+          { "title": "Akıllı Sözleşme Geliştirme", "description": "Hardhat/Foundry kullanarak güvenli Solidity sözleşmeleri yazma ve birim (unit) testlerini kapsamlı bir şekilde yapma." },
+          { "title": "dApp Ön Ucu (Frontend)", "description": "React/Next.js arayüzünü oluşturma ve blok zinciri etkileşimleri için Web3.js/Ethers.js'i entegre etme." },
+          { "title": "Güvenlik Denetimi", "description": "Sıkı dahili denetimler yürütme ve kodu üçüncü taraf güvenlik incelemeleri için hazırlama." },
+          { "title": "Mainnet Dağıtımı", "description": "Sözleşmeleri mainnet'e (ana ağ) dağıtma ve The Graph gibi indeksleme çözümleri kurma." }
+        ],
+        "technologies": [
+          "Solidity / Vyper",
+          "Hardhat / Foundry",
+          "Web3.js / Ethers.js / viem",
+          "Ethereum / Polygon / Arbitrum",
+          "IPFS / Arweave",
+          "The Graph"
+        ],
+        "faq": [
+          { "question": "Hangi blok zinciri üzerine inşa etmeliyim?", "answer": "Bu, kullanım durumunuza bağlıdır. Ethereum en yüksek güvenliği ve likiditeyi sunar ancak gas (işlem) ücretleri yüksektir. Arbitrum gibi Katman 2'ler veya Polygon gibi yan zincirler (sidechains), EVM uyumlu kalarak çok daha hızlı ve daha ucuz işlemler sunar. En uygun olanı seçmenize yardımcı olacağız." },
+          { "question": "Akıllı sözleşmeler güvenli mi?", "answer": "Akıllı sözleşmeler değiştirilemez (immutable), yani hatalar dağıtımdan sonra kolayca düzeltilemez. OpenZeppelin gibi yerleşik kütüphaneleri kullanarak, %100 test kapsamına ulaşarak ve mainnet dağıtımları için her zaman harici bir denetim önererek önce güvenlik (security-first) yaklaşımı benimsiyoruz." }
+        ]
+      },
+      "metaTitle": "Web3 ve Blockchain Geliştirme Şirketi | dApp'ler ve Sözleşmeler",
+      "metaDescription": "Güvenli, merkezi olmayan uygulamalar ve DeFi protokolleri oluşturun. Solidity, Ethereum ve Layer 2 çözümlerinde uzmanlaşmış Web3 geliştirme hizmetleri."
+    },
+    "de": {
+      "name": "Web3 & Blockchain",
+      "shortDescription": "Innovieren Sie mit dezentralen Anwendungen, Smart Contracts und Web3-Architekturen.",
+      "fullDescription": "Das Internet entwickelt sich weiter, und Dezentralisierung ist der Kern dieses Wandels. Unsere Web3- & Blockchain-Entwicklungsdienste helfen visionären Unternehmen beim Übergang von Web2-Architekturen zu vertrauenslosen, dezentralen Netzwerken. Wir entwickeln durchgängige dezentrale Anwendungen (dApps) auf allen wichtigen EVM-kompatiblen Netzwerken wie Ethereum, Polygon und Arbitrum. Egal, ob Sie ein DeFi-Protokoll starten, ein DAO-Governance-System entwerfen oder einfach nur eine Krypto-Wallet-Authentifizierung (MetaMask, WalletConnect) in eine bestehende Plattform integrieren möchten – unsere Blockchain-Ingenieure stellen sicher, dass Ihre Smart Contracts sicher, gas-optimiert und gründlich auditiert sind.",
+      "features": [
+        "Entwicklung dezentraler Anwendungen (dApp)",
+        "Smart Contract Entwicklung & Auditing (Solidity)",
+        "DeFi-Protokolle (Staking, Swaps, Liquidity Pools)",
+        "Web3 Wallet Integration (MetaMask, WalletConnect)",
+        "Integration von Layer-2-Skalierungslösungen",
+        "DAO-Governance & Tokenomics-Architektur"
+      ],
+      "benefits": [
+        "Eliminierung von Mittelsmännern und Erhöhung der Transparenz",
+        "Erschließung der wachsenden globalen Web3-Nutzerbasis",
+        "Gewährleistung von unveränderlicher Sicherheit für digitale Assets",
+        "Reduzierung von Transaktionskosten durch Layer-2-Optimierung",
+        "Schaffung neuer Monetarisierungs- und Community-Modelle"
+      ],
+      "content": {
+        "process": [
+          { "title": "Web3 Strategie", "description": "Definition der Blockchain-Architektur, Netzwerkauswahl und Tokenomics." },
+          { "title": "Smart Contract Dev", "description": "Programmierung & Unit-Testing sicherer Solidity-Contracts (Hardhat/Foundry)." },
+          { "title": "dApp Frontend", "description": "Entwicklung der React/Next.js UI & Web3.js/Ethers.js Integration." },
+          { "title": "Security Audit", "description": "Strenge interne Audits und Vorbereitung auf externe Sicherheitsüberprüfungen." },
+          { "title": "Mainnet Deployment", "description": "Deployment der Contracts auf dem Mainnet und Setup von Indexern wie The Graph." }
+        ],
+        "technologies": [
+          "Solidity / Vyper",
+          "Hardhat / Foundry",
+          "Web3.js / Ethers.js / viem",
+          "Ethereum / Polygon / Arbitrum",
+          "IPFS / Arweave",
+          "The Graph"
+        ],
+        "faq": [
+          { "question": "Auf welcher Blockchain sollte ich entwickeln?", "answer": "Das hängt vom Anwendungsfall ab. Ethereum bietet höchste Sicherheit und Liquidität, aber hohe Gasgebühren. Layer-2s wie Arbitrum oder Sidechains wie Polygon bieten viel schnellere und günstigere Transaktionen bei voller EVM-Kompatibilität." },
+          { "question": "Sind Smart Contracts sicher?", "answer": "Smart Contracts sind unveränderlich (immutable), Bugs können also nach dem Deployment nicht einfach behoben werden. Wir setzen auf einen Security-First-Ansatz mit Bibliotheken wie OpenZeppelin, 100% Testabdeckung und empfehlen für Mainnet-Launches immer externe Audits." }
+        ]
+      },
+      "metaTitle": "Web3 & Blockchain Agentur | dApps & Smart Contracts",
+      "metaDescription": "Bauen Sie sichere dApps und DeFi-Protokolle. Experten für Web3-Entwicklung, spezialisiert auf Solidity, Ethereum und Layer-2-Lösungen."
+    },
+    "ur": {
+      "name": "Web3 اور بلاکچین",
+      "shortDescription": "وکندریقرت ایپلیکیشنز، سمارٹ معاہدوں، اور ویب 3 آرکیٹیکچرز کے ساتھ اختراع کریں۔",
+      "fullDescription": "انٹرنیٹ تیار ہو رہا ہے، اور وکندریقرت اس تبدیلی کے مرکز میں ہے۔ ہماری Web3 اور Blockchain ڈیولپمنٹ سروسز بصیرت رکھنے والی کمپنیوں کو Web2 آرکیٹیکچر سے بے بھروسہ، وکندریقرت نیٹ ورکس کی طرف منتقلی میں مدد کرتی ہیں۔ ہم تمام بڑے EVM سے مطابقت رکھنے والے نیٹ ورکس جیسے Ethereum، Polygon اور Arbitrum پر اینڈ ٹو اینڈ ڈی سینٹرلائزڈ ایپلی کیشنز (dApps) بناتے ہیں۔ چاہے آپ DeFi پروٹوکول لانچ کر رہے ہوں، ایک DAO گورننس سسٹم ڈیزائن کر رہے ہوں، یا صرف کرپٹو والیٹ کی توثیق (میٹا ماسک، والیٹ کنیکٹ) کو کسی موجودہ پلیٹ فارم میں ضم کر رہے ہوں، ہمارے بلاک چین انجینئرز اس بات کو یقینی بناتے ہیں کہ آپ کے سمارٹ معاہدے محفوظ، گیس سے چلنے والے، اور مکمل طور پر آڈٹ شدہ ہوں۔ .",
+      "features": [
+        "وکندریقرت ایپلیکیشن (dApp) ترقی",
+        "اسمارٹ کنٹریکٹ ڈیولپمنٹ اور آڈیٹنگ (ٹھوسیت)",
+        "DeFi پروٹوکول (Staking, Swaps, Liquidity Pools)",
+        "Web3 والیٹ انٹیگریشن (میٹا ماسک، والیٹ کنیکٹ)",
+        "پرت 2 اسکیلنگ حل انٹیگریشن",
+        "DAO گورننس اور ٹوکنومکس آرکیٹیکچر"
+      ],
+      "benefits": [
+        "مڈل مین کو ختم کریں اور لین دین کی شفافیت میں اضافہ کریں۔",
+        "بڑھتے ہوئے گلوبل Web3 یوزر بیس پر ٹیپ کریں۔",
+        "ڈیجیٹل اثاثوں کے لیے ناقابل تغیر سلامتی اور اعتماد کو یقینی بنائیں",
+        "پرت 2 آپٹیمائزیشن کے ساتھ لین دین کے اخراجات کو کم کریں۔",
+        "ناول مانیٹائزیشن اور کمیونٹی گورننس ماڈلز بنائیں"
+      ],
+      "content": {
+        "process": [
+          { "title": "ویب 3 کی حکمت عملی", "description": "بلاکچین فن تعمیر، نیٹ ورک کے انتخاب، اور ٹوکنومکس ماڈل کی تعریف کرنا۔" },
+          { "title": "سمارٹ کنٹریکٹ دیو", "description": "Hardhat/Foundry کا استعمال کرتے ہوئے محفوظ یکجہتی کے معاہدوں کی تحریر اور مکمل طور پر جانچ کرنا۔" },
+          { "title": "dApp فرنٹ اینڈ", "description": "React/Next.js انٹرفیس بنانا اور بلاکچین کے تعاملات کے لیے Web3.js/Ethers.js کو مربوط کرنا۔" },
+          { "title": "سیکیورٹی آڈٹ", "description": "سخت داخلی آڈٹ کرنا اور تھرڈ پارٹی کے حفاظتی جائزوں کے لیے کوڈ تیار کرنا۔" },
+          { "title": "مین نیٹ کی تعیناتی", "description": "مین نیٹ میں معاہدوں کی تعیناتی اور گراف جیسے اشاریہ سازی کے حل مرتب کرنا۔" }
+        ],
+        "technologies": [
+          "Solidity / Vyper",
+          "Hardhat / Foundry",
+          "Web3.js / Ethers.js / viem",
+          "Ethereum / Polygon / Arbitrum",
+          "IPFS / Arweave",
+          "The Graph"
+        ],
+        "faq": [
+          { "question": "مجھے کس بلاکچین پر تعمیر کرنا چاہئے؟", "answer": "یہ آپ کے استعمال کے کیس پر منحصر ہے۔ ایتھریم سب سے زیادہ سیکیورٹی اور لیکویڈیٹی پیش کرتا ہے لیکن اس کی گیس کی فیس زیادہ ہے۔ ای وی ایم کے موافق رہتے ہوئے پرت 2 جیسی آربٹرم یا پولی گون جیسی سائیڈ چینز بہت تیز اور سستے لین دین کی پیش کش کرتی ہیں۔ ہم آپ کو بہترین فٹ منتخب کرنے میں مدد کریں گے۔" },
+          { "question": "کیا سمارٹ معاہدے محفوظ ہیں؟", "answer": "سمارٹ کنٹریکٹ ناقابل تغیر ہوتے ہیں، یعنی کیڑے آسانی سے تعیناتی کے بعد طے نہیں کیے جا سکتے۔ ہم سیکیورٹی کے پہلے نقطہ نظر کو ملازمت دیتے ہیں، اوپن زیپلین جیسی قائم شدہ لائبریریوں کا استعمال کرتے ہوئے، ٹیسٹ کی 100% کوریج حاصل کرتے ہیں، اور ہمیشہ مین نیٹ کی تعیناتیوں کے لیے بیرونی آڈٹ کی تجویز کرتے ہیں۔" }
+        ]
+      },
+      "metaTitle": "ویب تھری اور بلاک چین ڈیولپمنٹ کمپنی | ڈی ایپس اور سمارٹ معاہدے",
+      "metaDescription": "محفوظ، وکندریقرت ایپلی کیشنز اور DeFi پروٹوکول بنائیں۔ Solidity، Ethereum، اور Layer 2 حل میں مہارت رکھنے والی ماہر Web3 ترقیاتی خدمات۔"
+    },
+    "ar": {
+      "name": "تطوير Web3 والبلوك تشين (Blockchain)",
+      "shortDescription": "الابتكار باستخدام التطبيقات اللامركزية والعقود الذكية وبنيات Web3.",
+      "fullDescription": "الإنترنت يتطور، واللامركزية تقع في صميم هذا التحول. تساعد خدمات تطوير Web3 والبلوك تشين الشركات ذات الرؤية المستقبلية على الانتقال من بنيات Web2 إلى شبكات لامركزية لا تعتمد على الثقة (Trustless). نحن نبني تطبيقات لامركزية متكاملة (dApps) عبر الشبكات الرئيسية المتوافقة مع جهاز إيثريوم الظاهري (EVM) مثل Ethereum و Polygon و Arbitrum. سواء كنت تطلق بروتوكول تمويل لامركزي (DeFi)، أو تصمم نظام حوكمة منظمة مستقلة لامركزية (DAO)، أو تدمج ببساطة مصادقة محافظ العملات المشفرة (MetaMask ، WalletConnect) في منصة حالية، فإن مهندسي البلوك تشين لدينا يضمنون أن عقودك الذكية آمنة، ومحسنة لاستهلاك الغاز (Gas-optimized)، ومدققة بالكامل.",
+      "features": [
+        "تطوير التطبيقات اللامركزية (dApp)",
+        "تطوير وتدقيق العقود الذكية (لغة Solidity)",
+        "بروتوكولات التمويل اللامركزي DeFi (Staking ، Swaps ، مجمعات السيولة)",
+        "تكامل محافظ Web3 (MetaMask ، WalletConnect)",
+        "تكامل حلول التوسع من الطبقة الثانية (Layer 2)",
+        "حوكمة DAO وهندسة اقتصاديات الرموز (Tokenomics)"
+      ],
+      "benefits": [
+        "القضاء على الوسطاء وزيادة شفافية المعاملات",
+        "الاستفادة من قاعدة مستخدمي Web3 العالمية المتنامية",
+        "ضمان الأمان غير القابل للتغيير والثقة للأصول الرقمية",
+        "تقليل تكاليف المعاملات باستخدام تحسينات الطبقة الثانية (Layer 2)",
+        "إنشاء نماذج جديدة لتحقيق الدخل وحوكمة المجتمع"
+      ],
+      "content": {
+        "process": [
+          { "title": "استراتيجية Web3", "description": "تحديد بنية البلوك تشين، واختيار الشبكة، ونموذج اقتصاديات الرموز (Tokenomics)." },
+          { "title": "تطوير العقود الذكية", "description": "كتابة عقود Solidity الآمنة واختبارها بدقة باستخدام Hardhat/Foundry." },
+          { "title": "الواجهة الأمامية لـ dApp", "description": "بناء واجهة React/Next.js ودمج Web3.js/Ethers.js لتفاعلات البلوك تشين." },
+          { "title": "التدقيق الأمني (Security Audit)", "description": "إجراء عمليات تدقيق داخلية صارمة وإعداد الكود لمراجعات الأمان من جهات خارجية." },
+          { "title": "النشر على الشبكة الرئيسية (Mainnet)", "description": "نشر العقود على الشبكة الرئيسية وإعداد حلول الفهرسة مثل The Graph." }
+        ],
+        "technologies": [
+          "Solidity / Vyper",
+          "Hardhat / Foundry",
+          "Web3.js / Ethers.js / viem",
+          "Ethereum / Polygon / Arbitrum",
+          "IPFS / Arweave",
+          "The Graph"
+        ],
+        "faq": [
+          { "question": "على أي شبكة بلوك تشين يجب أن أبني مشروعي؟", "answer": "يعتمد ذلك على حالة الاستخدام الخاصة بك. توفر Ethereum أعلى مستوى من الأمان والسيولة ولكن رسوم الغاز (Gas) فيها مرتفعة. توفر شبكات الطبقة الثانية (Layer 2) مثل Arbitrum أو السلاسل الجانبية (Sidechains) مثل Polygon معاملات أسرع وأرخص بكثير مع بقائها متوافقة مع EVM. سنساعدك على اختيار الخيار الأنسب." },
+          { "question": "هل العقود الذكية آمنة؟", "answer": "العقود الذكية غير قابلة للتغيير (Immutable)، مما يعني أنه لا يمكن إصلاح الأخطاء بسهولة بعد النشر. نحن نتبع نهج 'الأمان أولاً'، باستخدام مكتبات راسخة مثل OpenZeppelin، وتحقيق تغطية اختبار بنسبة 100٪، ونوصي دائمًا بإجراء تدقيق خارجي قبل النشر على الشبكة الرئيسية." }
+        ]
+      },
+      "metaTitle": "شركة تطوير Web3 والبلوك تشين | العقود الذكية و dApps",
+      "metaDescription": "قم ببناء تطبيقات لامركزية آمنة وبروتوكولات DeFi. خدمات تطوير Web3 متخصصة في Solidity و Ethereum وحلول الطبقة الثانية (Layer 2)."
+    }
+  },
+  "webflow-development": {
+    "en": {
+      "name": "Webflow Development",
+      "shortDescription": "Award-winning, high-performance websites built lightning fast on Webflow.",
+      "fullDescription": "Webflow is revolutionizing web design by bridging the gap between visual design and production-ready code. Our Webflow Development services allow marketing teams and fast-growing startups to launch highly customized, animation-rich websites without the overhead of traditional full-stack development. We build clean, semantic, SEO-optimized structures within Webflow, pushing the platform to its limits with custom CSS/JS interactions, CMS integrations, and robust e-commerce setups. The result? A pixel-perfect website that your marketing team can easily update without ever needing to call a developer.",
+      "features": [
+        "Custom Webflow Design & Development",
+        "Advanced Animations & Interactions (GSAP Integration)",
+        "Webflow CMS Architecture for Blogs & Portfolios",
+        "Figma-to-Webflow Pixel-Perfect Conversion",
+        "Webflow E-commerce Setup",
+        "Third-Party Integrations (Zapier, HubSpot, Memberstack)"
+      ],
+      "benefits": [
+        "Go to Market Faster than Traditional Coding Methods",
+        "Empower Marketing Teams with a Visual Editor",
+        "Enjoy Enterprise-Grade Hosting and Security Built-In",
+        "Outrank Competitors with Clean, SEO-Friendly Code",
+        "Captivate Users with Complex Scroll and Hover Animations"
+      ],
+      "content": {
+        "process": [
+          { "title": "Design & Strategy", "description": "Reviewing Figma designs and planning the Webflow class structure (e.g., Client-First)." },
+          { "title": "Development & Layout", "description": "Building the responsive HTML/CSS framework visually inside Webflow." },
+          { "title": "CMS Setup", "description": "Structuring Content Management System collections for dynamic content." },
+          { "title": "Interactions", "description": "Applying Webflow IX2 animations and custom JavaScript for complex effects." },
+          { "title": "Launch & Training", "description": "Connecting the custom domain and training your team on using the Webflow Editor." }
+        ],
+        "technologies": [
+          "Webflow",
+          "Finsweet (Client-First Framework)",
+          "GSAP (Custom Animations)",
+          "Memberstack (Memberships)",
+          "Wized (Web Apps in Webflow)",
+          "Zapier / Make"
+        ],
+        "faq": [
+          { "question": "Why use Webflow instead of WordPress?", "answer": "Webflow generates completely clean, semantic code without relying on bloated plugins or clunky themes. It offers significantly better design freedom, faster loading times, superior security (no plugin vulnerabilities), and a much easier editing experience for non-technical users." },
+          { "question": "Can I export the code from Webflow later?", "answer": "Yes. If your application outgrows the Webflow ecosystem, you can export the clean HTML, CSS, and JS files to hand off to your engineering team to integrate into a custom backend." }
+        ]
+      },
+      "metaTitle": "Webflow Development Agency | Figma to Webflow Experts",
+      "metaDescription": "Build stunning, fast, and secure websites with Webflow. We specialize in Figma to Webflow conversion, advanced animations, and CMS setups."
+    },
+    "tr": {
+      "name": "Webflow Geliştirme",
+      "shortDescription": "Webflow üzerinde yıldırım hızında oluşturulan ödüllü, yüksek performanslı web siteleri.",
+      "fullDescription": "Webflow, görsel tasarım ile üretime hazır kod arasındaki boşluğu doldurarak web tasarımında devrim yaratıyor. Webflow Geliştirme hizmetlerimiz, pazarlama ekiplerinin ve hızla büyüyen girişimlerin geleneksel tam yığın (full-stack) geliştirme yükü olmadan yüksek oranda özelleştirilmiş, animasyon açısından zengin web siteleri başlatmasına olanak tanır. Webflow içinde temiz, anlamsal (semantic), SEO optimize edilmiş yapılar oluşturuyor; özel CSS/JS etkileşimleri, CMS entegrasyonları ve sağlam e-ticaret kurulumlarıyla platformun sınırlarını zorluyoruz. Sonuç? Pazarlama ekibinizin bir geliştirici çağırmaya gerek kalmadan kolayca güncelleyebileceği, piksel açısından mükemmel bir web sitesi.",
+      "features": [
+        "Özel Webflow Tasarımı ve Geliştirme",
+        "Gelişmiş Animasyonlar ve Etkileşimler (GSAP Entegrasyonu)",
+        "Bloglar ve Portföyler İçin Webflow CMS Mimarisi",
+        "Figma'dan Webflow'a Piksel Açısından Mükemmel Dönüşüm",
+        "Webflow E-ticaret Kurulumu",
+        "Üçüncü Taraf Entegrasyonları (Zapier, HubSpot, Memberstack)"
+      ],
+      "benefits": [
+        "Geleneksel Kodlama Yöntemlerinden Daha Hızlı Pazara Sunma (GTM)",
+        "Pazarlama Ekiplerini Görsel Bir Düzenleyici ile Güçlendirme",
+        "Yerleşik Kurumsal Düzeyde Barındırma (Hosting) ve Güvenliğin Keyfini Çıkarma",
+        "Temiz, SEO Dostu Kodla Rakipleri Geride Bırakma",
+        "Karmaşık Kaydırma (Scroll) ve Vurgu (Hover) Animasyonlarıyla Kullanıcıları Büyüleme"
+      ],
+      "content": {
+        "process": [
+          { "title": "Tasarım ve Strateji", "description": "Figma tasarımlarını inceleme ve Webflow sınıf yapısını (örneğin Client-First) planlama." },
+          { "title": "Geliştirme ve Düzen (Layout)", "description": "Duyarlı HTML/CSS çerçevesini Webflow içinde görsel olarak oluşturma." },
+          { "title": "CMS Kurulumu", "description": "Dinamik içerik için İçerik Yönetim Sistemi koleksiyonlarını yapılandırma." },
+          { "title": "Etkileşimler", "description": "Karmaşık efektler için Webflow IX2 animasyonları ve özel JavaScript uygulama." },
+          { "title": "Lansman ve Eğitim", "description": "Özel alanı (domain) bağlama ve ekibinizi Webflow Editor kullanımı konusunda eğitme." }
+        ],
+        "technologies": [
+          "Webflow",
+          "Finsweet (Client-First Çerçevesi)",
+          "GSAP (Özel Animasyonlar)",
+          "Memberstack (Üyelikler)",
+          "Wized (Webflow'da Web Uygulamaları)",
+          "Zapier / Make"
+        ],
+        "faq": [
+          { "question": "Neden WordPress yerine Webflow kullanmalıyım?", "answer": "Webflow, şişirilmiş eklentilere veya hantal temalara dayanmadan tamamen temiz, anlamsal (semantic) kod üretir. Önemli ölçüde daha iyi tasarım özgürlüğü, daha hızlı yükleme süreleri, üstün güvenlik (eklenti güvenlik açığı yok) ve teknik olmayan kullanıcılar için çok daha kolay bir düzenleme deneyimi sunar." },
+          { "question": "Kodu daha sonra Webflow'dan dışa aktarabilir miyim (export)?", "answer": "Evet. Uygulamanız Webflow ekosistemini aşarsa, özel bir arka uca (backend) entegre etmeleri için mühendislik ekibinize teslim etmek üzere temiz HTML, CSS ve JS dosyalarını dışa aktarabilirsiniz." }
+        ]
+      },
+      "metaTitle": "Webflow Geliştirme Ajansı | Figma'dan Webflow'a Uzmanlar",
+      "metaDescription": "Webflow ile çarpıcı, hızlı ve güvenli web siteleri oluşturun. Figma'dan Webflow'a dönüşüm, gelişmiş animasyonlar ve CMS kurulumlarında uzmanız."
+    },
+    "de": {
+      "name": "Webflow-Entwicklung",
+      "shortDescription": "Preisgekrönte, performante Websites, blitzschnell auf Webflow entwickelt.",
+      "fullDescription": "Webflow revolutioniert das Webdesign, indem es die Lücke zwischen visuellem Design und produktionsreifem Code schließt. Unsere Webflow-Entwicklungsdienste ermöglichen es Marketingteams und Start-ups, hochgradig individuelle, animationsreiche Websites ohne den Overhead traditioneller Full-Stack-Entwicklung zu launchen. Wir bauen saubere, semantische, SEO-optimierte Strukturen in Webflow und reizen die Plattform mit benutzerdefinierten CSS/JS-Interaktionen, CMS-Integrationen und robusten E-Commerce-Setups bis an ihre Grenzen aus. Das Ergebnis? Eine pixelgenaue Website, die Ihr Marketingteam einfach aktualisieren kann, ohne jemals einen Entwickler anrufen zu müssen.",
+      "features": [
+        "Individuelles Webflow Design & Development",
+        "Fortgeschrittene Animationen & Interaktionen (GSAP)",
+        "Webflow CMS-Architektur für Blogs & Portfolios",
+        "Pixelgenaue Figma-to-Webflow Konvertierung",
+        "Webflow E-Commerce Setup",
+        "Third-Party Integrationen (Zapier, HubSpot, Memberstack)"
+      ],
+      "benefits": [
+        "Schnellerer Go-to-Market als mit traditionellen Coding-Methoden",
+        "Empowerment von Marketingteams durch den Visual Editor",
+        "Integriertes Enterprise-Grade Hosting und höchste Sicherheit",
+        "Bessere Rankings durch sauberen, SEO-freundlichen Code",
+        "Begeisterung der Nutzer durch komplexe Scroll- & Hover-Animationen"
+      ],
+      "content": {
+        "process": [
+          { "title": "Design & Strategie", "description": "Review der Figma-Designs und Planung der Webflow-Klassenstruktur (z. B. Client-First)." },
+          { "title": "Entwicklung & Layout", "description": "Visueller Aufbau des responsiven HTML/CSS-Frameworks in Webflow." },
+          { "title": "CMS-Setup", "description": "Strukturierung der Collections für dynamische Inhalte (Blog, Team etc.)." },
+          { "title": "Interaktionen", "description": "Implementierung von Webflow IX2 Animationen und Custom JavaScript." },
+          { "title": "Launch & Schulung", "description": "Domain-Anbindung und Training Ihres Teams im Webflow Editor." }
+        ],
+        "technologies": [
+          "Webflow",
+          "Finsweet (Client-First Framework)",
+          "GSAP (Custom Animationen)",
+          "Memberstack (Mitgliederbereiche)",
+          "Wized (Web-Apps in Webflow)",
+          "Zapier / Make"
+        ],
+        "faq": [
+          { "question": "Warum Webflow anstelle von WordPress nutzen?", "answer": "Webflow generiert komplett sauberen Code, ohne auf aufgeblähte Plugins oder Themes angewiesen zu sein. Es bietet mehr Designfreiheit, schnellere Ladezeiten, höhere Sicherheit (keine Plugin-Lücken) und einen viel einfacheren Editor für das Marketing-Team." },
+          { "question": "Kann ich den Code später aus Webflow exportieren?", "answer": "Ja. Wenn Ihre Anwendung aus dem Webflow-Ökosystem herauswächst, können Sie die sauberen HTML-, CSS- und JS-Dateien exportieren und an Ihre Entwickler für die Integration in ein eigenes Backend übergeben." }
+        ]
+      },
+      "metaTitle": "Webflow Agentur | Figma to Webflow Experten",
+      "metaDescription": "Bauen Sie atemberaubende, schnelle & sichere Websites mit Webflow. Wir sind Experten für Figma-to-Webflow, komplexe Animationen und CMS-Setups."
+    },
+    "ur": {
+      "name": "ویب فلو ڈیولپمنٹ",
+      "shortDescription": "ایوارڈ یافتہ، اعلی کارکردگی والی ویب سائٹس ویب فلو پر بجلی کی تیزی سے بنائی گئی ہیں۔",
+      "fullDescription": "ویب فلو بصری ڈیزائن اور پروڈکشن کے لیے تیار کوڈ کے درمیان فاصلہ کو ختم کر کے ویب ڈیزائن میں انقلاب لا رہا ہے۔ ہماری ویب فلو ڈیولپمنٹ سروسز مارکیٹنگ ٹیموں اور تیزی سے بڑھتے ہوئے سٹارٹ اپس کو روایتی فل اسٹیک ڈیولپمنٹ کے اوور ہیڈ کے بغیر انتہائی تخصیص شدہ، حرکت پذیری سے بھرپور ویب سائٹس لانچ کرنے کی اجازت دیتی ہیں۔ ہم اپنی مرضی کے مطابق CSS/JS تعاملات، CMS انضمام، اور مضبوط ای کامرس سیٹ اپس کے ساتھ پلیٹ فارم کو اس کی حدود تک لے کر، Webflow کے اندر صاف، سیمنٹک، SEO سے بہتر ڈھانچے بناتے ہیں۔ نتیجہ؟ ایک پکسل پرفیکٹ ویب سائٹ جسے آپ کی مارکیٹنگ ٹیم کسی ڈویلپر کو کال کرنے کی ضرورت کے بغیر آسانی سے اپ ڈیٹ کر سکتی ہے۔",
+      "features": [
+        "کسٹم ویب فلو ڈیزائن اور ڈیولپمنٹ",
+        "اعلی درجے کی اینیمیشنز اور تعاملات (GSAP انٹیگریشن)",
+        "بلاگز اور پورٹ فولیوز کے لیے ویب فلو سی ایم ایس آرکیٹیکچر",
+        "Figma-to-Webflow Pixel-Perfect تبادلوں",
+        "ویب فلو ای کامرس سیٹ اپ",
+        "تھرڈ پارٹی انٹیگریشنز (Zapier, HubSpot, Memberstack)"
+      ],
+      "benefits": [
+        "روایتی کوڈنگ طریقوں سے زیادہ تیزی سے مارکیٹ میں جائیں۔",
+        "ایک بصری ایڈیٹر کے ساتھ مارکیٹنگ ٹیموں کو بااختیار بنائیں",
+        "انٹرپرائز-گریڈ ہوسٹنگ اور سیکیورٹی بلٹ ان کا لطف اٹھائیں۔",
+        "صاف، SEO کے موافق کوڈ کے ساتھ حریفوں کو آؤٹ رینک کریں۔",
+        "کمپلیکس اسکرول اور ہوور اینیمیشنز کے ساتھ صارفین کو موہ لیں۔"
+      ],
+      "content": {
+        "process": [
+          { "title": "ڈیزائن اور حکمت عملی", "description": "Figma کے ڈیزائن کا جائزہ لینا اور ویب فلو کلاس کے ڈھانچے کی منصوبہ بندی کرنا (مثلاً، کلائنٹ فرسٹ)۔" },
+          { "title": "ترقی اور خاکہ", "description": "ویب فلو کے اندر بصری طور پر ریسپانسیو HTML/CSS فریم ورک بنانا۔" },
+          { "title": "CMS سیٹ اپ", "description": "متحرک مواد کے لیے مواد کے انتظام کے نظام کے مجموعے کی ساخت۔" },
+          { "title": "تعاملات", "description": "پیچیدہ اثرات کے لیے Webflow IX2 متحرک تصاویر اور حسب ضرورت JavaScript کا اطلاق کرنا۔" },
+          { "title": "لانچ اور ٹریننگ", "description": "اپنی مرضی کے ڈومین کو جوڑنا اور ویب فلو ایڈیٹر استعمال کرنے پر اپنی ٹیم کی تربیت کرنا۔" }
+        ],
+        "technologies": [
+          "Webflow",
+          "Finsweet (Client-First Framework)",
+          "GSAP (Custom Animations)",
+          "Memberstack (Memberships)",
+          "Wized (Web Apps in Webflow)",
+          "Zapier / Make"
+        ],
+        "faq": [
+          { "question": "ورڈپریس کے بجائے ویب فلو کا استعمال کیوں کریں؟", "answer": "Webflow بلوٹڈ پلگ انز یا کلنکی تھیمز پر انحصار کیے بغیر مکمل طور پر صاف، سیمنٹک کوڈ تیار کرتا ہے۔ یہ نمایاں طور پر بہتر ڈیزائن کی آزادی، تیز لوڈنگ کے اوقات، اعلیٰ حفاظتی (کوئی پلگ ان کمزوریوں کے نہیں) پیش کرتا ہے، اور غیر تکنیکی صارفین کے لیے تدوین کا بہت آسان تجربہ پیش کرتا ہے۔" },
+          { "question": "کیا میں ویب فلو سے کوڈ بعد میں ایکسپورٹ کر سکتا ہوں؟", "answer": "جی ہاں. اگر آپ کی ایپلیکیشن ویب فلو ایکو سسٹم سے بڑھ جاتی ہے، تو آپ اپنی کسٹم بیک اینڈ میں ضم کرنے کے لیے اپنی انجینئرنگ ٹیم کے حوالے کرنے کے لیے صاف HTML، CSS، اور JS فائلیں ایکسپورٹ کر سکتے ہیں۔" }
+        ]
+      },
+      "metaTitle": "ویب فلو ڈیولپمنٹ ایجنسی | فگما ٹو ویب فلو ماہرین",
+      "metaDescription": "ویب فلو کے ساتھ شاندار، تیز اور محفوظ ویب سائٹس بنائیں۔ ہم Figma سے Webflow کی تبدیلی، جدید اینیمیشنز، اور CMS سیٹ اپس میں مہارت رکھتے ہیں۔"
+    },
+    "ar": {
+      "name": "تطوير ويب فلو (Webflow)",
+      "shortDescription": "مواقع إلكترونية حائزة على جوائز وعالية الأداء مبنية بسرعة فائقة على منصة Webflow.",
+      "fullDescription": "يُحدث Webflow ثورة في تصميم الويب من خلال سد الفجوة بين التصميم المرئي والكود الجاهز للإنتاج. تتيح خدمات تطوير Webflow لفرق التسويق والشركات الناشئة سريعة النمو إطلاق مواقع ويب مخصصة للغاية وغنية بالرسوم المتحركة دون تحمل التكاليف العامة للتطوير التقليدي الشامل (Full-stack). نحن نبني هياكل نظيفة ودلالية (Semantic) ومحسّنة لمحركات البحث داخل Webflow، وندفع المنصة إلى أقصى حدودها من خلال تفاعلات CSS/JS المخصصة، وتكامل نظام إدارة المحتوى (CMS)، وإعدادات التجارة الإلكترونية القوية. النتيجة؟ موقع ويب مثالي بدقة البكسل يمكن لفريق التسويق لديك تحديثه بسهولة دون الحاجة إلى الاتصال بمطور برامج على الإطلاق.",
+      "features": [
+        "تصميم وتطوير Webflow مخصص",
+        "رسوم متحركة وتفاعلات متقدمة (دمج GSAP)",
+        "بنية نظام إدارة المحتوى (CMS) في Webflow للمدونات والمحافظ",
+        "تحويل التصميم من Figma إلى Webflow بدقة متناهية (Pixel-Perfect)",
+        "إعداد التجارة الإلكترونية على Webflow",
+        "تكامل الجهات الخارجية (Zapier ، HubSpot ، Memberstack)"
+      ],
+      "benefits": [
+        "إطلاق المشاريع في السوق (Go-to-market) أسرع من طرق البرمجة التقليدية",
+        "تمكين فرق التسويق من خلال محرر مرئي سهل الاستخدام",
+        "الاستمتاع باستضافة وأمان على مستوى المؤسسات مدمج في المنصة",
+        "التفوق على المنافسين في محركات البحث من خلال كود نظيف وصديق لـ SEO",
+        "أسر انتباه المستخدمين برسوم متحركة معقدة عند التمرير (Scroll) والتأشير (Hover)"
+      ],
+      "content": {
+        "process": [
+          { "title": "التصميم والاستراتيجية", "description": "مراجعة تصميمات Figma وتخطيط بنية الفئات (Classes) في Webflow (مثل إطار عمل Client-First)." },
+          { "title": "التطوير والتخطيط (Layout)", "description": "بناء إطار عمل HTML/CSS المتجاوب بصريًا داخل Webflow." },
+          { "title": "إعداد نظام إدارة المحتوى (CMS)", "description": "هيكلة مجموعات نظام إدارة المحتوى للمحتوى الديناميكي (مثل المقالات والفريق)." },
+          { "title": "التفاعلات (Interactions)", "description": "تطبيق رسوم Webflow IX2 المتحركة و JavaScript مخصص للتأثيرات المعقدة." },
+          { "title": "الإطلاق والتدريب", "description": "ربط النطاق (Domain) المخصص وتدريب فريقك على استخدام محرر Webflow." }
+        ],
+        "technologies": [
+          "منصة Webflow",
+          "إطار عمل Finsweet (Client-First)",
+          "GSAP (للرسوم المتحركة المخصصة)",
+          "Memberstack (للعضويات وتسجيل الدخول)",
+          "Wized (لتطبيقات الويب داخل Webflow)",
+          "Zapier / Make"
+        ],
+        "faq": [
+          { "question": "لماذا أستخدم Webflow بدلاً من WordPress؟", "answer": "يقوم Webflow بإنشاء كود دلالي نظيف تمامًا دون الاعتماد على إضافات (Plugins) منتفخة أو قوالب (Themes) بطيئة. إنه يوفر حرية تصميم أفضل بكثير، وأوقات تحميل أسرع، وأمانًا فائقًا (لا توجد نقاط ضعف في الإضافات)، وتجربة تحرير أسهل بكثير للمستخدمين غير التقنيين." },
+          { "question": "هل يمكنني تصدير (Export) الكود من Webflow لاحقًا؟", "answer": "نعم. إذا تجاوز تطبيقك نظام Webflow البيئي، يمكنك تصدير ملفات HTML و CSS و JS النظيفة لتسليمها إلى فريق الهندسة الخاص بك لدمجها في واجهة خلفية (Backend) مخصصة." }
+        ]
+      },
+      "metaTitle": "وكالة تطوير Webflow | خبراء التحويل من Figma إلى Webflow",
+      "metaDescription": "قم ببناء مواقع ويب مذهلة وسريعة وآمنة باستخدام Webflow. نحن متخصصون في التحويل من Figma إلى Webflow، والرسوم المتحركة المتقدمة، وإعدادات CMS."
+    }
+  }
+}

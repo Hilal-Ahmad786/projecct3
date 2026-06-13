@@ -1,0 +1,436 @@
+{
+  "microservices-architecture": {
+    "en": {
+      "name": "Microservices Architecture",
+      "shortDescription": "Break monoliths into independently deployable services for scale and agility.",
+      "fullDescription": "Is your monolithic application becoming too large, slow to deploy, and difficult to scale? Our Microservices Architecture consulting and development services help you transition from rigid, tightly-coupled systems to agile, independently deployable services. By breaking down your application using Domain-Driven Design (DDD), we allow different engineering teams to work autonomously, choose the best technology stack for their specific service, and scale only the components that need it. We implement robust API Gateways, service meshes (like Istio), and event-driven communication (via Kafka) to ensure your distributed system is resilient, observable, and highly performant.",
+      "features": [
+        "Domain-Driven Design (DDD) & Service Decomposition",
+        "API Gateway & Backend-for-Frontend (BFF) Pattern",
+        "Event-Driven Architecture (Kafka, RabbitMQ)",
+        "Service Mesh Implementation (Istio, Linkerd)",
+        "Distributed Tracing & Observability (Jaeger, Datadog)",
+        "Circuit Breakers, Retries & Chaos Engineering"
+      ],
+      "benefits": [
+        "Independent Deployment & Faster Release Cycles",
+        "Granular Scalability (Scale only what you need)",
+        "Technology Agnosticism (Mix Node.js, Go, Python)",
+        "Improved Fault Isolation & System Resilience",
+        "Easier Onboarding for New Developers"
+      ],
+      "content": {
+        "process": [
+          { "title": "Domain Assessment", "description": "Analyzing your monolith to identify clear business boundaries (Bounded Contexts)." },
+          { "title": "Architecture Design", "description": "Designing the communication protocols (gRPC, REST, Events) and data management strategy (Saga pattern)." },
+          { "title": "Infrastructure Setup", "description": "Provisioning Kubernetes clusters and configuring the service mesh for secure inter-service communication." },
+          { "title": "Strangler Fig Migration", "description": "Gradually intercepting calls to the monolith and routing them to the newly built microservices." },
+          { "title": "Observability Implementation", "description": "Setting up distributed tracing and centralized logging to monitor the health of the entire ecosystem." }
+        ],
+        "technologies": [
+          "Docker & Kubernetes",
+          "gRPC & Protocol Buffers",
+          "Apache Kafka",
+          "Istio (Service Mesh)",
+          "Jaeger / OpenTelemetry",
+          "Consul / etcd"
+        ],
+        "faq": [
+          { "question": "Are microservices right for my project?", "answer": "Microservices solve organizational and scaling problems, not just technical ones. If you have a small team or a simple application, a well-structured monolith is often better. If you have multiple teams stepping on each other's toes and specific parts of your app experiencing massive load, microservices are the answer." },
+          { "question": "How do you handle data consistency across services?", "answer": "In distributed systems, we often move from strict ACID compliance to 'Eventual Consistency'. We use patterns like the Saga Pattern and Outbox Pattern, orchestrated via event brokers like Kafka, to ensure data remains consistent across multiple service boundaries without tightly coupling them." }
+        ]
+      },
+      "metaTitle": "Microservices Architecture Consulting | Cloud-Native Systems",
+      "metaDescription": "Transition from monoliths to microservices. We design scalable, resilient distributed systems using Kubernetes, Kafka, and Domain-Driven Design."
+    },
+    "tr": {
+      "name": "Mikro Hizmet Mimarisi",
+      "shortDescription": "Ölçek ve çeviklik için monolitik yapıları bağımsız olarak dağıtılabilir hizmetlere bölün.",
+      "fullDescription": "Monolitik uygulamanız çok mu büyüdü, dağıtımı yavaşladı ve ölçeklenmesi zorlaştı mı? Mikro Hizmetler (Microservices) Mimarisi danışmanlık ve geliştirme hizmetlerimiz, katı, sıkı sıkıya bağlı sistemlerden çevik, bağımsız olarak dağıtılabilir hizmetlere geçiş yapmanıza yardımcı olur. Uygulamanızı Etki Alanı Odaklı Tasarım (Domain-Driven Design - DDD) kullanarak parçalara ayırarak, farklı mühendislik ekiplerinin otonom çalışmasına, belirli hizmetleri için en iyi teknoloji yığınını seçmesine ve yalnızca ihtiyaç duyulan bileşenleri ölçeklendirmesine olanak tanıyoruz. Dağıtılmış sisteminizin esnek, gözlemlenebilir ve yüksek performanslı olmasını sağlamak için sağlam API Ağ Geçitleri (API Gateways), hizmet ağları (Istio gibi) ve olay güdümlü (event-driven) iletişim (Kafka aracılığıyla) uyguluyoruz.",
+      "features": [
+        "Etki Alanı Odaklı Tasarım (DDD) ve Hizmet Ayrıştırma",
+        "API Ağ Geçidi ve Ön Uç İçin Arka Uç (BFF) Deseni",
+        "Olay Güdümlü Mimari (Kafka, RabbitMQ)",
+        "Hizmet Ağı (Service Mesh) Uygulaması (Istio, Linkerd)",
+        "Dağıtılmış İzleme ve Gözlemlenebilirlik (Jaeger, Datadog)",
+        "Devre Kesiciler (Circuit Breakers), Yeniden Denemeler ve Kaos Mühendisliği"
+      ],
+      "benefits": [
+        "Bağımsız Dağıtım ve Daha Hızlı Sürüm Döngüleri",
+        "Ayrıntılı Ölçeklenebilirlik (Yalnızca ihtiyacınız olanı ölçeklendirin)",
+        "Teknoloji Bağımsızlığı (Node.js, Go, Python'u karıştırın)",
+        "Gelişmiş Hata İzolasyonu ve Sistem Esnekliği",
+        "Yeni Geliştiriciler İçin Daha Kolay İşe Alım"
+      ],
+      "content": {
+        "process": [
+          { "title": "Etki Alanı Değerlendirmesi", "description": "Açık iş sınırlarını (Sınırlı Bağlamlar) belirlemek için monolitik yapınızı analiz etme." },
+          { "title": "Mimari Tasarım", "description": "İletişim protokollerini (gRPC, REST, Events) ve veri yönetimi stratejisini (Saga deseni) tasarlama." },
+          { "title": "Altyapı Kurulumu", "description": "Kubernetes kümelerini sağlama ve güvenli hizmetler arası iletişim için hizmet ağını yapılandırma." },
+          { "title": "Strangler Fig Geçişi", "description": "Monolitik yapıya yapılan çağrıları kademeli olarak yakalama ve bunları yeni oluşturulan mikro hizmetlere yönlendirme." },
+          { "title": "Gözlemlenebilirlik Uygulaması", "description": "Tüm ekosistemin sağlığını izlemek için dağıtılmış izleme ve merkezi günlük kaydı (logging) ayarlama." }
+        ],
+        "technologies": [
+          "Docker ve Kubernetes",
+          "gRPC ve Protocol Buffers",
+          "Apache Kafka",
+          "Istio (Hizmet Ağı)",
+          "Jaeger / OpenTelemetry",
+          "Consul / etcd"
+        ],
+        "faq": [
+          { "question": "Mikro hizmetler projem için uygun mu?", "answer": "Mikro hizmetler yalnızca teknik değil, kurumsal ve ölçeklendirme sorunlarını da çözer. Küçük bir ekibiniz veya basit bir uygulamanız varsa, iyi yapılandırılmış bir monolit genellikle daha iyidir. Birbirinin ayağına basan birden fazla ekibiniz varsa ve uygulamanızın belirli kısımları aşırı yük yaşıyorsa, cevap mikro hizmetlerdir." },
+          { "question": "Hizmetler arasında veri tutarlılığını nasıl sağlıyorsunuz?", "answer": "Dağıtılmış sistemlerde genellikle katı ACID uyumluluğundan 'Nihai Tutarlılığa' (Eventual Consistency) geçeriz. Verilerin, onları sıkıca bağlamadan birden fazla hizmet sınırı boyunca tutarlı kalmasını sağlamak için Kafka gibi olay aracıları aracılığıyla düzenlenen Saga Deseni ve Outbox Deseni gibi kalıplar kullanırız." }
+        ]
+      },
+      "metaTitle": "Mikro Hizmet Mimarisi Danışmanlığı | Bulutta Yerel Sistemler",
+      "metaDescription": "Monolitik yapılardan mikro hizmetlere geçiş yapın. Kubernetes, Kafka ve Etki Alanı Odaklı Tasarım kullanarak ölçeklenebilir, esnek dağıtılmış sistemler tasarlıyoruz."
+    },
+    "de": {
+      "name": "Microservices-Architektur",
+      "shortDescription": "Teilen Sie Monolithen in unabhängig bereitstellbare Services auf, um Skalierung und Agilität zu erreichen.",
+      "fullDescription": "Wird Ihre monolithische Anwendung zu groß, lässt sich nur noch langsam bereitstellen und schwer skalieren? Unsere Beratungs- und Entwicklungsdienste für Microservices-Architekturen helfen Ihnen beim Übergang von starren, eng gekoppelten Systemen zu agilen, unabhängig bereitstellbaren Services. Indem wir Ihre Anwendung mittels Domain-Driven Design (DDD) aufbrechen, ermöglichen wir es verschiedenen Entwicklerteams, autonom zu arbeiten, den besten Technologie-Stack für ihren spezifischen Service zu wählen und nur die Komponenten zu skalieren, die dies benötigen. Wir implementieren robuste API-Gateways, Service Meshes (wie Istio) und ereignisgesteuerte Kommunikation (via Kafka), um sicherzustellen, dass Ihr verteiltes System ausfallsicher, beobachtbar und hochleistungsfähig ist.",
+      "features": [
+        "Domain-Driven Design (DDD) & Service-Dekomposition",
+        "API Gateway & Backend-for-Frontend (BFF) Pattern",
+        "Ereignisgesteuerte Architektur (Kafka, RabbitMQ)",
+        "Service Mesh Implementierung (Istio, Linkerd)",
+        "Distributed Tracing & Observability (Jaeger, Datadog)",
+        "Circuit Breakers, Retries & Chaos Engineering"
+      ],
+      "benefits": [
+        "Unabhängiges Deployment & Schnellere Release-Zyklen",
+        "Granulare Skalierbarkeit (Nur skalieren, was nötig ist)",
+        "Technologie-Agnostik (Mischen Sie Node.js, Go, Python)",
+        "Verbesserte Fehlerisolierung & Systemausfallsicherheit",
+        "Einfacheres Onboarding für neue Entwickler"
+      ],
+      "content": {
+        "process": [
+          { "title": "Domain Assessment", "description": "Analyse Ihres Monolithen zur Identifizierung klarer Geschäftsgrenzen (Bounded Contexts)." },
+          { "title": "Architektur-Design", "description": "Entwurf der Kommunikationsprotokolle (gRPC, REST) und Datenstrategie (Saga-Muster)." },
+          { "title": "Infrastruktur-Setup", "description": "Bereitstellung von Kubernetes-Clustern und Konfiguration des Service Mesh." },
+          { "title": "Strangler-Fig-Migration", "description": "Schrittweises Abfangen von Aufrufen zum Monolithen und Umleitung an neue Microservices." },
+          { "title": "Observability", "description": "Einrichtung von Distributed Tracing und zentralem Logging zur Überwachung des Ökosystems." }
+        ],
+        "technologies": [
+          "Docker & Kubernetes",
+          "gRPC & Protocol Buffers",
+          "Apache Kafka",
+          "Istio (Service Mesh)",
+          "Jaeger / OpenTelemetry",
+          "Consul / etcd"
+        ],
+        "faq": [
+          { "question": "Sind Microservices das Richtige für mein Projekt?", "answer": "Microservices lösen organisatorische und Skalierungsprobleme. Bei kleinen Teams oder einfachen Apps ist ein strukturierter Monolith oft besser. Bei vielen Teams und punktuell hoher Last sind Microservices die Lösung." },
+          { "question": "Wie gehen Sie mit der Datenkonsistenz zwischen Services um?", "answer": "In verteilten Systemen nutzen wir 'Eventual Consistency'. Wir verwenden Muster wie Saga und Outbox, orchestriert über Event-Broker wie Kafka, um Konsistenz ohne enge Kopplung sicherzustellen." }
+        ]
+      },
+      "metaTitle": "Microservices-Architektur Beratung | Cloud-Native Systeme",
+      "metaDescription": "Übergang von Monolithen zu Microservices. Wir entwerfen skalierbare, ausfallsichere verteilte Systeme mit Kubernetes, Kafka und Domain-Driven Design."
+    },
+    "ur": {
+      "name": "مائیکرو سروسز آرکیٹیکچر",
+      "shortDescription": "پیمانے اور چستی کے لیے مونولتھس کو آزادانہ طور پر قابل تعینات خدمات میں توڑ دیں۔",
+      "fullDescription": "کیا آپ کی یک سنگی ایپلی کیشن بہت بڑی ہوتی جا رہی ہے، تعینات ہونے میں سست ہے، اور اسکیل کرنا مشکل ہو رہا ہے؟ ہماری مائیکرو سروسز آرکیٹیکچر کنسلٹنگ اور ڈیولپمنٹ سروسز آپ کو سخت، مضبوطی سے جوڑے ہوئے نظاموں سے چست، آزادانہ طور پر تعینات ہونے والی خدمات میں منتقل ہونے میں مدد کرتی ہیں۔ Domain-Driven Design (DDD) کا استعمال کرتے ہوئے آپ کی درخواست کو توڑ کر، ہم انجینئرنگ کی مختلف ٹیموں کو خود مختار طریقے سے کام کرنے، اپنی مخصوص سروس کے لیے بہترین ٹیکنالوجی اسٹیک کا انتخاب کرنے، اور صرف ان اجزاء کو پیمانہ کرنے کی اجازت دیتے ہیں جن کی ضرورت ہے۔ ہم مضبوط API گیٹ ویز، سروس میشز (جیسے استیو)، اور ایونٹ سے چلنے والے مواصلات (کافکا کے ذریعے) نافذ کرتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ آپ کا تقسیم شدہ نظام لچکدار، قابل مشاہدہ، اور انتہائی کارکردگی کا مظاہرہ کر رہا ہے۔",
+      "features": [
+        "ڈومین سے چلنے والا ڈیزائن (DDD) اور سروس ڈیکمپوزیشن",
+        "API گیٹ وے اور بیک اینڈ فار فرنٹ اینڈ (BFF) پیٹرن",
+        "ایونٹ پر مبنی فن تعمیر (کافکا، ریبٹ ایم کیو)",
+        "سروس میش کا نفاذ (Istio، Linkerd)",
+        "تقسیم شدہ ٹریسنگ اور آبزرویبلٹی (جیگر، ڈیٹا ڈاگ)",
+        "سرکٹ بریکر، دوبارہ کوششیں اور افراتفری انجینئرنگ"
+      ],
+      "benefits": [
+        "آزادانہ تعیناتی اور تیز رفتار ریلیز کے سائیکل",
+        "دانے دار اسکیل ایبلٹی (پیمانے کی صرف وہی چیز جو آپ کو درکار ہے)",
+        "ٹیکنالوجی اگنوسٹک ازم (مکس Node.js، Go، Python)",
+        "بہتر فالٹ آئسولیشن اور سسٹم لچک",
+        "نئے ڈویلپرز کے لیے آسان آن بورڈنگ"
+      ],
+      "content": {
+        "process": [
+          { "title": "ڈومین کی تشخیص", "description": "واضح کاروباری حدود (محدود سیاق و سباق) کی شناخت کے لیے اپنے یک سنگی کا تجزیہ کرنا۔" },
+          { "title": "آرکیٹیکچر ڈیزائن", "description": "مواصلاتی پروٹوکول (gRPC، REST، واقعات) اور ڈیٹا مینجمنٹ کی حکمت عملی (ساگا پیٹرن) ڈیزائن کرنا۔" },
+          { "title": "انفراسٹرکچر سیٹ اپ", "description": "محفوظ بین سروس مواصلات کے لیے Kubernetes کلسٹرز کی فراہمی اور سروس میش کو ترتیب دینا۔" },
+          { "title": "سٹرینگلر انجیر کی ہجرت", "description": "آہستہ آہستہ مونولیتھ پر کالوں کو روکنا اور انہیں نئی بنی ہوئی مائیکرو سروسز پر بھیجنا۔" },
+          { "title": "آبزرویبلٹی کا نفاذ", "description": "پورے ماحولیاتی نظام کی صحت کی نگرانی کے لیے تقسیم شدہ ٹریسنگ اور سنٹرلائزڈ لاگنگ کا قیام۔" }
+        ],
+        "technologies": [
+          "Docker & Kubernetes",
+          "gRPC & Protocol Buffers",
+          "Apache Kafka",
+          "Istio (Service Mesh)",
+          "Jaeger / OpenTelemetry",
+          "Consul / etcd"
+        ],
+        "faq": [
+          { "question": "کیا مائیکرو سروسز میرے پروجیکٹ کے لیے درست ہیں؟", "answer": "مائیکرو سروسز تنظیمی اور پیمانے کے مسائل حل کرتی ہیں، نہ کہ صرف تکنیکی۔ اگر آپ کے پاس چھوٹی ٹیم ہے یا کوئی سادہ ایپلی کیشن ہے تو، ایک اچھی ساختہ یک سنگی اکثر بہتر ہوتی ہے۔ اگر آپ کے پاس ایک سے زیادہ ٹیمیں ہیں جو ایک دوسرے کے پاؤں کی انگلیوں پر قدم رکھ رہی ہیں اور آپ کی ایپ کے مخصوص حصوں پر بڑے پیمانے پر بوجھ پڑ رہا ہے تو، مائیکرو سروسز ہی اس کا جواب ہیں۔" },
+          { "question": "آپ خدمات میں ڈیٹا کی مستقل مزاجی کو کیسے سنبھالتے ہیں؟", "answer": "تقسیم شدہ نظاموں میں، ہم اکثر سخت ACID کی تعمیل سے 'آخری مستقل مزاجی' کی طرف بڑھتے ہیں۔ ہم کافکا جیسے ایونٹ بروکرز کے ذریعے آرکیسٹریٹڈ ساگا پیٹرن اور آؤٹ باکس پیٹرن جیسے نمونوں کا استعمال کرتے ہیں تاکہ اس بات کو یقینی بنایا جا سکے کہ ڈیٹا کو مضبوطی سے جوڑے بغیر ایک سے زیادہ سروس کی حدود میں مطابقت رکھتا ہے۔" }
+        ]
+      },
+      "metaTitle": "مائیکرو سروسز آرکیٹیکچر کنسلٹنگ | کلاؤڈ مقامی سسٹمز",
+      "metaDescription": "monoliths سے microservices میں منتقلی۔ ہم کبرنیٹس، کافکا، اور ڈومین سے چلنے والے ڈیزائن کا استعمال کرتے ہوئے قابل توسیع، لچکدار تقسیم شدہ نظام وضع کرتے ہیں۔"
+    },
+    "ar": {
+      "name": "بنية الخدمات المصغرة (Microservices)",
+      "shortDescription": "تقسيم الأنظمة المتجانسة إلى خدمات قابلة للنشر بشكل مستقل من أجل التوسع والمرونة.",
+      "fullDescription": "هل أصبح تطبيقك المتجانس (Monolithic) كبيرًا جدًا، وبطيئًا في النشر، وصعب التوسع؟ تساعدك خدمات استشارات وتطوير بنية الخدمات المصغرة لدينا على الانتقال من الأنظمة الصلبة والمترابطة بإحكام إلى خدمات مرنة وقابلة للنشر بشكل مستقل. من خلال تقسيم تطبيقك باستخدام التصميم الموجه بالمجال (DDD)، نسمح لفرق الهندسة المختلفة بالعمل بشكل مستقل، واختيار أفضل حزمة تقنية لخدمتهم المحددة، وتوسيع نطاق المكونات التي تحتاج إلى ذلك فقط. نحن ننفذ بوابات API قوية (API Gateways)، وشبكات الخدمات (مثل Istio)، والاتصالات القائمة على الأحداث (عبر Kafka) لضمان أن يكون نظامك الموزع مرنًا وقابلاً للملاحظة وعالي الأداء.",
+      "features": [
+        "التصميم الموجه بالمجال (DDD) وتحليل الخدمات",
+        "بوابة API ونمط Backend-for-Frontend (BFF)",
+        "الهندسة المعمارية المدفوعة بالأحداث (Kafka ، RabbitMQ)",
+        "تنفيذ شبكة الخدمة (Service Mesh) (Istio ، Linkerd)",
+        "التتبع الموزع وقابلية الملاحظة (Jaeger ، Datadog)",
+        "قواطع الدائرة (Circuit Breakers) والمحاولات وهندسة الفوضى"
+      ],
+      "benefits": [
+        "نشر مستقل ودورات إصدار أسرع",
+        "قابلية التوسع الدقيقة (توسيع ما تحتاجه فقط)",
+        "استقلالية التكنولوجيا (امزج Node.js و Go و Python)",
+        "عزل الأخطاء المحسن ومرونة النظام",
+        "تأهيل أسهل للمطورين الجدد"
+      ],
+      "content": {
+        "process": [
+          { "title": "تقييم المجال (Domain)", "description": "تحليل نظامك المتجانس لتحديد حدود الأعمال الواضحة (Bounded Contexts)." },
+          { "title": "تصميم البنية", "description": "تصميم بروتوكولات الاتصال (gRPC ، REST ، Events) واستراتيجية إدارة البيانات (نمط Saga)." },
+          { "title": "إعداد البنية التحتية", "description": "توفير مجموعات Kubernetes وتكوين شبكة الخدمة للاتصال الآمن بين الخدمات." },
+          { "title": "هجرة Strangler Fig", "description": "اعتراض المكالمات إلى النظام المتجانس تدريجيًا وتوجيهها إلى الخدمات المصغرة المبنية حديثًا." },
+          { "title": "تنفيذ قابلية الملاحظة", "description": "إعداد التتبع الموزع والتسجيل المركزي (Logging) لمراقبة صحة النظام البيئي بأكمله." }
+        ],
+        "technologies": [
+          "Docker & Kubernetes",
+          "gRPC & Protocol Buffers",
+          "Apache Kafka",
+          "Istio (Service Mesh)",
+          "Jaeger / OpenTelemetry",
+          "Consul / etcd"
+        ],
+        "faq": [
+          { "question": "هل الخدمات المصغرة مناسبة لمشروعي؟", "answer": "الخدمات المصغرة تحل مشاكل تنظيمية ومشاكل التوسع، وليس فقط التقنية. إذا كان لديك فريق صغير أو تطبيق بسيط، فإن النظام المتجانس جيد التنظيم غالبًا ما يكون أفضل. إذا كان لديك فرق متعددة تتداخل في عمل بعضها البعض وتتعرض أجزاء معينة من تطبيقك لحمل هائل، فإن الخدمات المصغرة هي الحل." },
+          { "question": "كيف تتعاملون مع اتساق البيانات عبر الخدمات؟", "answer": "في الأنظمة الموزعة، ننتقل غالبًا من الامتثال الصارم لـ ACID إلى 'الاتساق النهائي' (Eventual Consistency). نستخدم أنماطًا مثل نمط Saga ونمط Outbox، منسقة عبر وسطاء أحداث مثل Kafka، لضمان بقاء البيانات متسقة عبر حدود خدمات متعددة دون ربطها ببعضها بإحكام." }
+        ]
+      },
+      "metaTitle": "استشارات بنية الخدمات المصغرة | الأنظمة السحابية الأصلية",
+      "metaDescription": "الانتقال من الأنظمة المتجانسة إلى الخدمات المصغرة. نحن نصمم أنظمة موزعة مرنة وقابلة للتطوير باستخدام Kubernetes و Kafka والتصميم الموجه بالمجال."
+    }
+  },
+  "mobile-development": {
+    "en": {
+      "name": "Mobile App Development",
+      "shortDescription": "Native and cross-platform mobile apps for iOS and Android.",
+      "fullDescription": "Reach your customers wherever they are with our end-to-end Mobile App Development services. We build high-performance, intuitive mobile applications tailored to your specific business needs. Whether you require a pixel-perfect Native iOS (Swift) or Android (Kotlin) app for maximum device performance, or a cost-effective Cross-Platform (React Native, Flutter) solution to hit both markets simultaneously from a single codebase, we have the expertise to deliver. We don't just write code; we focus on Mobile UI/UX best practices, App Store Optimization (ASO), offline-first capabilities, and seamless integration with your backend APIs.",
+      "features": [
+        "Native iOS (Swift) & Android (Kotlin) Development",
+        "Cross-Platform Development (React Native, Flutter)",
+        "Offline-First Architecture & Data Sync",
+        "Push Notifications & Real-Time Updates",
+        "Biometric Authentication & Deep Linking",
+        "In-App Purchases & Subscription Management"
+      ],
+      "benefits": [
+        "Expanded Market Reach (iOS & Android)",
+        "Enhanced User Engagement via Push Notifications",
+        "Optimal Performance & Battery Efficiency",
+        "Brand Loyalty through Exceptional Mobile UX",
+        "Seamless Integration with Existing Web Platforms"
+      ],
+      "content": {
+        "process": [
+          { "title": "Prototyping & UX Design", "description": "Creating wireframes and interactive prototypes that follow Human Interface Guidelines and Material Design." },
+          { "title": "Architecture & API Strategy", "description": "Planning how the mobile app will securely communicate with your backend systems." },
+          { "title": "Agile Development", "description": "Building the application in sprints, providing you with testable builds (TestFlight / App Distribution) regularly." },
+          { "title": "Testing & QA", "description": "Testing on real devices to ensure performance, battery efficiency, and responsiveness." },
+          { "title": "App Store Launch", "description": "Handling the complex submission processes for Apple App Store and Google Play Store." }
+        ],
+        "technologies": [
+          "React Native / Expo",
+          "Flutter",
+          "Swift / iOS Native",
+          "Kotlin / Android Native",
+          "Firebase (Auth, Push, Analytics)",
+          "GraphQL / REST"
+        ],
+        "faq": [
+          { "question": "Should we build Native or Cross-Platform?", "answer": "It depends on your goals. Cross-platform (React Native/Flutter) is faster to market and cheaper since it shares one codebase. Native (Swift/Kotlin) is best if your app relies heavily on complex animations, device hardware (like advanced camera processing), or maximum performance." },
+          { "question": "Do you help with getting the app into the App Stores?", "answer": "Yes. We handle the entire deployment process, including preparing the necessary certificates, writing store listings, handling reviewer questions, and managing the rollout." }
+        ]
+      },
+      "metaTitle": "Mobile App Development Company | iOS & Android Apps",
+      "metaDescription": "Custom mobile app development for iOS and Android. We build native and cross-platform apps using React Native, Flutter, Swift, and Kotlin."
+    },
+    "tr": {
+      "name": "Mobil Uygulama Geliştirme",
+      "shortDescription": "iOS ve Android için yerel ve çapraz platform mobil uygulamalar.",
+      "fullDescription": "Uçtan uca Mobil Uygulama Geliştirme hizmetlerimizle müşterilerinize nerede olurlarsa olsunlar ulaşın. Özel iş ihtiyaçlarınıza göre uyarlanmış yüksek performanslı, sezgisel mobil uygulamalar oluşturuyoruz. İster maksimum cihaz performansı için piksel açısından mükemmel bir Yerel iOS (Swift) veya Android (Kotlin) uygulamasına, ister tek bir kod tabanından her iki pazara aynı anda hitap etmek için uygun maliyetli bir Çapraz Platform (React Native, Flutter) çözümüne ihtiyacınız olsun, bunu sunacak uzmanlığa sahibiz. Sadece kod yazmıyoruz; Mobil UI/UX en iyi uygulamalarına, App Store Optimizasyonuna (ASO), çevrimdışı öncelikli (offline-first) yeteneklere ve arka uç API'lerinizle sorunsuz entegrasyona odaklanıyoruz.",
+      "features": [
+        "Yerel iOS (Swift) ve Android (Kotlin) Geliştirme",
+        "Çapraz Platform Geliştirme (React Native, Flutter)",
+        "Çevrimdışı Öncelikli Mimari ve Veri Senkronizasyonu",
+        "Anında İletme (Push) Bildirimleri ve Gerçek Zamanlı Güncellemeler",
+        "Biyometrik Kimlik Doğrulama ve Derin Bağlantı (Deep Linking)",
+        "Uygulama İçi Satın Alımlar ve Abonelik Yönetimi"
+      ],
+      "benefits": [
+        "Genişletilmiş Pazar Erişimi (iOS ve Android)",
+        "Anında İletme Bildirimleriyle Artan Kullanıcı Etkileşimi",
+        "Optimum Performans ve Pil Verimliliği",
+        "Olağanüstü Mobil UX Yoluyla Marka Sadakati",
+        "Mevcut Web Platformlarıyla Sorunsuz Entegrasyon"
+      ],
+      "content": {
+        "process": [
+          { "title": "Prototipleme ve UX Tasarımı", "description": "Human Interface Guidelines ve Material Design'ı takip eden tel kafesler ve etkileşimli prototipler oluşturma." },
+          { "title": "Mimari ve API Stratejisi", "description": "Mobil uygulamanın arka uç sistemlerinizle nasıl güvenli bir şekilde iletişim kuracağını planlama." },
+          { "title": "Çevik Geliştirme", "description": "Uygulamayı sprintler halinde oluşturma ve size düzenli olarak test edilebilir yapılar (TestFlight / App Distribution) sağlama." },
+          { "title": "Test ve QA", "description": "Performansı, pil verimliliğini ve duyarlılığı sağlamak için gerçek cihazlarda test etme." },
+          { "title": "App Store Lansmanı", "description": "Apple App Store ve Google Play Store için karmaşık gönderim süreçlerini yürütme." }
+        ],
+        "technologies": [
+          "React Native / Expo",
+          "Flutter",
+          "Swift / iOS Native",
+          "Kotlin / Android Native",
+          "Firebase (Auth, Push, Analytics)",
+          "GraphQL / REST"
+        ],
+        "faq": [
+          { "question": "Yerel mi yoksa Çapraz Platform mu oluşturmalıyız?", "answer": "Bu hedeflerinize bağlıdır. Çapraz platform (React Native/Flutter), tek bir kod tabanını paylaştığı için pazara daha hızlı çıkar ve daha ucuzdur. Uygulamanız büyük ölçüde karmaşık animasyonlara, cihaz donanımına (gelişmiş kamera işleme gibi) veya maksimum performansa dayanıyorsa Yerel (Swift/Kotlin) en iyisidir." },
+          { "question": "Uygulamanın App Store'lara girmesine yardımcı oluyor musunuz?", "answer": "Evet. Gerekli sertifikaların hazırlanması, mağaza listelerinin yazılması, incelemeci sorularının yanıtlanması ve kullanıma sunma (rollout) işleminin yönetilmesi dahil olmak üzere tüm dağıtım sürecini biz yürütüyoruz." }
+        ]
+      },
+      "metaTitle": "Mobil Uygulama Geliştirme Şirketi | iOS ve Android Uygulamaları",
+      "metaDescription": "iOS ve Android için özel mobil uygulama geliştirme. React Native, Flutter, Swift ve Kotlin kullanarak yerel ve çapraz platform uygulamaları oluşturuyoruz."
+    },
+    "de": {
+      "name": "Mobile App-Entwicklung",
+      "shortDescription": "Native und plattformübergreifende mobile Apps für iOS und Android.",
+      "fullDescription": "Erreichen Sie Ihre Kunden überall mit unseren End-to-End-Dienstleistungen für die mobile App-Entwicklung. Wir bauen leistungsstarke, intuitive mobile Anwendungen, die auf Ihre spezifischen Geschäftsanforderungen zugeschnitten sind. Egal, ob Sie eine pixelgenaue native iOS- (Swift) oder Android-App (Kotlin) für maximale Geräteleistung benötigen, oder eine kostengünstige Cross-Platform-Lösung (React Native, Flutter), um beide Märkte gleichzeitig mit einer einzigen Codebasis zu bedienen – wir haben die Expertise. Wir schreiben nicht nur Code; wir konzentrieren uns auf Best Practices für mobiles UI/UX, App Store Optimization (ASO), Offline-First-Funktionen und die nahtlose Integration mit Ihren Backend-APIs.",
+      "features": [
+        "Native iOS- (Swift) & Android- (Kotlin) Entwicklung",
+        "Cross-Platform-Entwicklung (React Native, Flutter)",
+        "Offline-First-Architektur & Datensynchronisation",
+        "Push-Benachrichtigungen & Echtzeit-Updates",
+        "Biometrische Authentifizierung & Deep Linking",
+        "In-App-Käufe & Abonnementverwaltung"
+      ],
+      "benefits": [
+        "Erweiterte Marktreichweite (iOS & Android)",
+        "Erhöhte Benutzerbindung durch Push-Benachrichtigungen",
+        "Optimale Leistung & Akkueffizienz",
+        "Markentreue durch außergewöhnliches mobiles UX",
+        "Nahtlose Integration mit bestehenden Webplattformen"
+      ],
+      "content": {
+        "process": [
+          { "title": "Prototyping & UX-Design", "description": "Erstellung von Wireframes und interaktiven Prototypen gemäß Human Interface Guidelines und Material Design." },
+          { "title": "Architektur & API-Strategie", "description": "Planung der sicheren Kommunikation der mobilen App mit Ihren Backend-Systemen." },
+          { "title": "Agile Entwicklung", "description": "Entwicklung der App in Sprints mit regelmäßigen testbaren Builds (TestFlight / App Distribution)." },
+          { "title": "Testing & QA", "description": "Tests auf echten Geräten zur Sicherstellung von Leistung, Akkueffizienz und Reaktionsfähigkeit." },
+          { "title": "App Store Launch", "description": "Abwicklung der komplexen Einreichungsprozesse für Apple App Store und Google Play Store." }
+        ],
+        "technologies": [
+          "React Native / Expo",
+          "Flutter",
+          "Swift / iOS Native",
+          "Kotlin / Android Native",
+          "Firebase (Auth, Push, Analytics)",
+          "GraphQL / REST"
+        ],
+        "faq": [
+          { "question": "Sollten wir nativ oder plattformübergreifend entwickeln?", "answer": "Das hängt von Ihren Zielen ab. Cross-Platform (React Native/Flutter) ist schneller und günstiger, da es eine Codebasis teilt. Nativ (Swift/Kotlin) ist am besten, wenn Ihre App stark auf komplexe Animationen, Hardwarefunktionen (wie Kamera) oder maximale Leistung angewiesen ist." },
+          { "question": "Helfen Sie bei der Veröffentlichung in den App Stores?", "answer": "Ja. Wir übernehmen den gesamten Deployment-Prozess, einschließlich Zertifikate, Store-Einträge und Kommunikation mit den Reviewern." }
+        ]
+      },
+      "metaTitle": "Agentur für mobile App-Entwicklung | iOS & Android Apps",
+      "metaDescription": "Individuelle mobile App-Entwicklung für iOS und Android. Wir bauen native und Cross-Platform-Apps mit React Native, Flutter, Swift und Kotlin."
+    },
+    "ur": {
+      "name": "موبائل ایپ ڈیولپمنٹ",
+      "shortDescription": "iOS اور Android کے لیے مقامی اور کراس پلیٹ فارم موبائل ایپس۔",
+      "fullDescription": "ہماری اینڈ ٹو اینڈ موبائل ایپ ڈیولپمنٹ سروسز کے ساتھ اپنے گاہکوں تک پہنچیں جہاں کہیں بھی ہوں۔ ہم اعلی کارکردگی والی، بدیہی موبائل ایپلیکیشنز بناتے ہیں جو آپ کی مخصوص کاروباری ضروریات کے مطابق ہیں۔ چاہے آپ کو ڈیوائس کی زیادہ سے زیادہ کارکردگی کے لیے پکسل پرفیکٹ مقامی iOS (Swift) یا Android (Kotlin) ایپ کی ضرورت ہو، یا ایک ہی کوڈ بیس سے دونوں بازاروں کو بیک وقت نشانہ بنانے کے لیے لاگت سے موثر کراس پلیٹ فارم (React Native, Flutter) حل کی ضرورت ہو، ہمارے پاس پہنچانے کے لیے مہارت ہے۔ ہم صرف کوڈ نہیں لکھتے؛ ہم موبائل UI/UX کے بہترین طریقوں، ایپ اسٹور آپٹیمائزیشن (ASO)، سب سے پہلے آف لائن صلاحیتوں، اور آپ کے بیک اینڈ APIs کے ساتھ بغیر کسی رکاوٹ کے انضمام پر توجہ مرکوز کرتے ہیں۔",
+      "features": [
+        "مقامی iOS (سوئفٹ) اور اینڈرائیڈ (کوٹلن) ڈیولپمنٹ",
+        "کراس پلیٹ فارم ڈیولپمنٹ (ری ایکٹ نیٹیو، فلٹر)",
+        "آف لائن پہلا آرکیٹیکچر اور ڈیٹا کی مطابقت پذیری۔",
+        "پش اطلاعات اور ریئل ٹائم اپڈیٹس",
+        "بایومیٹرک تصدیق اور ڈیپ لنکنگ",
+        "ایپ میں خریداریاں اور سبسکرپشن کا انتظام"
+      ],
+      "benefits": [
+        "توسیعی مارکیٹ تک رسائی (iOS اور Android)",
+        "پش اطلاعات کے ذریعے صارف کی مصروفیت میں اضافہ",
+        "بہترین کارکردگی اور بیٹری کی کارکردگی",
+        "غیر معمولی موبائل UX کے ذریعے برانڈ کی وفاداری۔",
+        "موجودہ ویب پلیٹ فارمز کے ساتھ ہموار انضمام"
+      ],
+      "content": {
+        "process": [
+          { "title": "پروٹو ٹائپنگ اور یو ایکس ڈیزائن", "description": "وائر فریم اور انٹرایکٹو پروٹو ٹائپس بنانا جو ہیومن انٹرفیس کے رہنما خطوط اور میٹریل ڈیزائن کی پیروی کرتے ہیں۔" },
+          { "title": "آرکیٹیکچر اور API حکمت عملی", "description": "منصوبہ بندی کرنا کہ موبائل ایپ آپ کے پسدید سسٹمز کے ساتھ کس طرح محفوظ طریقے سے بات چیت کرے گی۔" },
+          { "title": "چست ترقی", "description": "ایپلی کیشن کو سپرنٹ میں بنانا، آپ کو باقاعدگی سے ٹیسٹ کے قابل تعمیرات (ٹیسٹ فلائٹ / ایپ ڈسٹری بیوشن) فراہم کرنا۔" },
+          { "title": "ٹیسٹنگ اور کیو اے", "description": "کارکردگی، بیٹری کی کارکردگی، اور ردعمل کو یقینی بنانے کے لیے حقیقی آلات پر جانچ کرنا۔" },
+          { "title": "ایپ اسٹور کا آغاز", "description": "Apple App Store اور Google Play Store کے لیے جمع کرانے کے پیچیدہ عمل کو سنبھالنا۔" }
+        ],
+        "technologies": [
+          "React Native / Expo",
+          "Flutter",
+          "Swift / iOS Native",
+          "Kotlin / Android Native",
+          "Firebase (Auth, Push, Analytics)",
+          "GraphQL / REST"
+        ],
+        "faq": [
+          { "question": "کیا ہمیں مقامی یا کراس پلیٹ فارم بنانا چاہیے؟", "answer": "یہ آپ کے مقاصد پر منحصر ہے۔ کراس پلیٹ فارم (React Native/Flutter) مارکیٹ میں تیز اور سستا ہے کیونکہ یہ ایک کوڈ بیس کا اشتراک کرتا ہے۔ مقامی (سوئفٹ/کوٹلن) بہترین ہے اگر آپ کی ایپ کا زیادہ تر انحصار پیچیدہ اینیمیشنز، ڈیوائس ہارڈویئر (جیسے ایڈوانسڈ کیمرہ پروسیسنگ) یا زیادہ سے زیادہ کارکردگی پر ہے۔" },
+          { "question": "کیا آپ ایپ کو ایپ اسٹورز میں حاصل کرنے میں مدد کرتے ہیں؟", "answer": "جی ہاں. ہم تعیناتی کے پورے عمل کو ہینڈل کرتے ہیں، جس میں ضروری سرٹیفکیٹس کی تیاری، اسٹور کی فہرستیں لکھنا، جائزہ لینے والے کے سوالات کو ہینڈل کرنا، اور رول آؤٹ کا انتظام شامل ہے۔" }
+        ]
+      },
+      "metaTitle": "موبائل ایپ ڈیولپمنٹ کمپنی | آئی او ایس اور اینڈرائیڈ ایپس",
+      "metaDescription": "iOS اور Android کے لیے اپنی مرضی کے موبائل ایپ کی ترقی۔ ہم React Native، Flutter، Swift، اور Kotlin کا ​​استعمال کرتے ہوئے مقامی اور کراس پلیٹ فارم ایپس بناتے ہیں۔"
+    },
+    "ar": {
+      "name": "تطوير تطبيقات الجوال",
+      "shortDescription": "تطبيقات هواتف محمولة أصلية (Native) ومتقاطعة المنصات (Cross-platform) لنظامي iOS و Android.",
+      "fullDescription": "الوصول إلى عملائك أينما كانوا من خلال خدمات تطوير تطبيقات الجوال الشاملة لدينا. نحن نبني تطبيقات جوال عالية الأداء وبديهية ومصممة خصيصًا لتلبية احتياجات عملك. سواء كنت بحاجة إلى تطبيق iOS أصلي (Swift) أو Android (Kotlin) مثالي للحصول على أقصى أداء للجهاز، أو حل عبر الأنظمة الأساسية فعال من حيث التكلفة (React Native ، Flutter) لضرب كلا السوقين في وقت واحد من قاعدة تعليمات برمجية واحدة، فلدينا الخبرة اللازمة للتقديم. نحن لا نكتب التعليمات البرمجية فحسب؛ بل نركز على أفضل ممارسات واجهة المستخدم وتجربة المستخدم (UI/UX) للجوال، وتحسين متجر التطبيقات (ASO)، وقدرات العمل دون اتصال بالإنترنت (Offline-first)، والتكامل السلس مع واجهات برمجة تطبيقات (APIs) الواجهة الخلفية الخاصة بك.",
+      "features": [
+        "تطوير تطبيقات iOS (Swift) و Android (Kotlin) الأصلية",
+        "تطوير عبر الأنظمة الأساسية (React Native ، Flutter)",
+        "بنية العمل دون اتصال بالإنترنت (Offline-First) ومزامنة البيانات",
+        "إشعارات الدفع (Push Notifications) والتحديثات في الوقت الفعلي",
+        "المصادقة البيومترية والارتباط العميق (Deep Linking)",
+        "عمليات الشراء داخل التطبيق وإدارة الاشتراكات"
+      ],
+      "benefits": [
+        "توسيع نطاق الوصول إلى السوق (iOS و Android)",
+        "تعزيز مشاركة المستخدم عبر الإشعارات",
+        "أداء مثالي وكفاءة في استهلاك البطارية",
+        "ولاء للعلامة التجارية من خلال تجربة مستخدم استثنائية للموبايل",
+        "تكامل سلس مع منصات الويب الحالية"
+      ],
+      "content": {
+        "process": [
+          { "title": "النماذج الأولية وتصميم تجربة المستخدم", "description": "إنشاء إطارات شبكية (Wireframes) ونماذج تفاعلية تتبع إرشادات الواجهة البشرية (HIG) و Material Design." },
+          { "title": "الهندسة المعمارية واستراتيجية API", "description": "تخطيط كيفية تواصل تطبيق الهاتف بأمان مع أنظمة الواجهة الخلفية الخاصة بك." },
+          { "title": "التطوير الرشيق (Agile)", "description": "بناء التطبيق في دورات قصيرة (Sprints)، مما يوفر لك إصدارات قابلة للاختبار (TestFlight / App Distribution) بانتظام." },
+          { "title": "الاختبار وضمان الجودة", "description": "الاختبار على أجهزة حقيقية لضمان الأداء وكفاءة البطارية وسرعة الاستجابة." },
+          { "title": "إطلاق متجر التطبيقات", "description": "التعامل مع عمليات التقديم المعقدة لمتجر تطبيقات Apple App Store و متجر Google Play." }
+        ],
+        "technologies": [
+          "React Native / Expo",
+          "Flutter",
+          "Swift / iOS Native",
+          "Kotlin / Android Native",
+          "Firebase (Auth, Push, Analytics)",
+          "GraphQL / REST"
+        ],
+        "faq": [
+          { "question": "هل يجب أن نبني تطبيقًا أصليًا (Native) أم عبر الأنظمة الأساسية (Cross-Platform)؟", "answer": "يعتمد ذلك على أهدافك. يُعد إنشاء التطبيقات عبر الأنظمة الأساسية (React Native / Flutter) أسرع في الوصول إلى السوق وأرخص لأنه يشارك قاعدة كود واحدة. يُعد التطبيق الأصلي (Swift / Kotlin) هو الأفضل إذا كان تطبيقك يعتمد بشكل كبير على الرسوم المتحركة المعقدة، أو أجهزة الهاتف (مثل معالجة الكاميرا المتقدمة)، أو الأداء الأقصى." },
+          { "question": "هل تساعدون في إدخال التطبيق إلى متاجر التطبيقات؟", "answer": "نعم. نحن نتعامل مع عملية النشر بأكملها، بما في ذلك إعداد الشهادات اللازمة، وكتابة قوائم المتجر، والتعامل مع أسئلة المراجعين، وإدارة الإطلاق." }
+        ]
+      },
+      "metaTitle": "شركة تطوير تطبيقات الجوال | تطبيقات iOS و Android",
+      "metaDescription": "تطوير تطبيقات الجوال المخصصة لنظامي iOS و Android. نحن نبني تطبيقات أصلية ومتقاطعة المنصات باستخدام React Native و Flutter و Swift و Kotlin."
+    }
+  }
+}

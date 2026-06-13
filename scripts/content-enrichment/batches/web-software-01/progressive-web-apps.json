@@ -1,0 +1,278 @@
+{
+  "slug": "progressive-web-apps",
+  "en": {
+    "name": "Progressive Web Apps",
+    "shortDescription": "Build installable, offline-capable web apps that feel native — service workers, app manifests, push notifications, and instant loading, deployed from one codebase across every device without an app store.",
+    "fullDescription": "Progressive Web Apps give you app-like reach without the cost and friction of native development and store approvals. We build PWAs that install to the home screen, work offline, load instantly, and re-engage users with push notifications — all from a single web codebase. Using service workers, the Cache and IndexedDB APIs, and an app manifest, we deliver experiences that survive flaky networks and feel immediate. We're also honest about the trade-offs: iOS imposes real limits on PWAs, from storage caps to restricted push behavior, and we design around them rather than pretending they don't exist. For content sites, e-commerce, and internal tools, a well-built PWA often delivers most of the native experience at a fraction of the build and maintenance cost.",
+    "features": [
+      "Service Worker Implementation",
+      "Offline-First Architecture (Cache & IndexedDB)",
+      "App Manifest & Install Prompts",
+      "Web Push Notifications",
+      "Background Sync",
+      "Responsive Design for All Devices",
+      "Core Web Vitals Performance Tuning",
+      "App Store Packaging (PWA Builder / TWA)"
+    ],
+    "benefits": [
+      "Installable on any device without an app store",
+      "Works offline and on unreliable networks",
+      "Faster than typical web apps with cached assets",
+      "One codebase serves every platform",
+      "Automatic updates with no user action needed",
+      "Far lower build and maintenance cost than native"
+    ],
+    "metaTitle": "Progressive Web App Development (PWA) | PakSoft",
+    "metaDescription": "Build installable, offline-first Progressive Web Apps with service workers, push notifications, and instant loading. One codebase, every device. Get an estimate.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Fit Assessment", "description": "We check whether a PWA genuinely suits your goals or whether native is warranted, based on the device features you need and how much your audience uses iOS. You get an honest recommendation, including where Apple's PWA limits would bite." },
+        { "step": 2, "title": "Architecture & Offline Strategy", "description": "We define what must work offline and choose caching strategies per resource — cache-first for assets, network-first for fresh data. The data layer is designed around IndexedDB so the app stays usable without a connection." },
+        { "step": 3, "title": "Core App Build", "description": "We build a fast, responsive web app with performance budgets baked in, because a PWA that isn't fast defeats the point. The UI is designed to feel native, with smooth transitions and an app-shell that paints instantly." },
+        { "step": 4, "title": "Service Worker & Installability", "description": "We implement the service worker, app manifest, and install prompts so users can add the app to their home screen. Update flows are handled cleanly so users get new versions without confusing stale-cache bugs." },
+        { "step": 5, "title": "Push, Sync & Engagement", "description": "We add web push and background sync where the platform supports them, with graceful fallbacks where it doesn't — notably on iOS. Re-engagement features are scoped to what each platform actually allows." },
+        { "step": 6, "title": "Testing, Audit & Launch", "description": "We audit with Lighthouse against the PWA checklist, test offline and install flows on real iOS and Android devices, and optionally package for the stores via Trusted Web Activity. Post-launch we monitor real-user performance and engagement." }
+      ],
+      "faq": [
+        { "question": "Do PWAs work properly on iOS?", "answer": "Partly. iOS supports PWAs — installable to the home screen with offline support and, since iOS 16.4, web push — but with real limits. Storage is capped and can be evicted, some hardware APIs are unavailable, and push only works for apps the user has actually added to the home screen. We design around these constraints and tell you upfront where iOS will fall short of a native app." },
+        { "question": "When should I choose a PWA over a native app?", "answer": "A PWA is the right call when your app is content-, commerce-, or form-driven, you want one codebase, and you'd rather avoid app-store fees and review delays. Native makes more sense when you need deep hardware access, background processing, heavy graphics, or features iOS restricts for web. For many businesses a PWA delivers most of the value at a fraction of the cost — and we'll tell you honestly which fits." },
+        { "question": "Can a PWA really work offline?", "answer": "Yes. A service worker intercepts network requests and serves cached assets, while IndexedDB stores data locally, so the app loads and functions without a connection. We design which features work offline deliberately — viewing cached content is straightforward, while actions that need the server are queued and synced when connectivity returns via Background Sync." },
+        { "question": "Can I put a PWA in the app stores?", "answer": "Yes. Google Play accepts PWAs wrapped as a Trusted Web Activity, which is a clean, supported path. The Apple App Store is stricter and generally expects more than a thin wrapper, so we assess case by case. Many businesses skip the stores entirely, since a PWA installs directly from the browser — but if store presence matters, we'll find the right packaging approach." },
+        { "question": "How do push notifications work on a PWA?", "answer": "PWAs use the Web Push API with a service worker to deliver notifications even when the app is closed. This works well on Android and desktop. On iOS, web push arrived in 16.4 but only for apps installed to the home screen, with some behavioral differences. We implement push where it's reliable and design fallbacks where the platform limits it." },
+        { "question": "Will a PWA be as fast as a native app?", "answer": "For most use cases, yes — and often faster than a poorly built native app. With an app shell, cached assets, and a service worker, a PWA can paint instantly on repeat visits. Where native still wins is heavy real-time graphics, intensive computation, and the smoothest possible animations. We set performance budgets and target green Core Web Vitals so the app feels immediate." },
+        { "question": "How do updates work without an app store?", "answer": "That's a major PWA advantage: when you deploy a new version, the service worker fetches it in the background and applies it on the next launch, so users are always current with no manual update. We handle the update lifecycle carefully to avoid stale-cache bugs, prompting users to refresh when a new version is ready rather than serving them old code." },
+        { "question": "How long does a PWA take to build?", "answer": "A focused PWA — say a content app or storefront with offline support — typically takes 6–12 weeks. Adding push, background sync, and complex offline workflows extends that. Because it's one web codebase rather than separate iOS and Android apps, a PWA is usually faster and cheaper to build and maintain than going native on both platforms." }
+      ],
+      "technologies": [
+        { "icon": "pwa", "name": "PWA" },
+        { "icon": "workbox", "name": "Workbox" },
+        { "icon": "nextdotjs", "name": "Next.js" },
+        { "icon": "webassembly", "name": "Service Workers" },
+        { "icon": "indexeddb", "name": "IndexedDB" },
+        { "icon": "firebase", "name": "Firebase (Push)" },
+        { "icon": "lighthouse", "name": "Lighthouse" },
+        { "icon": "typescript", "name": "TypeScript" }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Progressive Web App'ler (PWA)",
+    "shortDescription": "Native gibi hissettiren, kurulabilir, çevrimdışı çalışan web uygulamaları kurun — service worker'lar, app manifest, push bildirimleri ve anında yükleme, tek kod tabanından her cihaza, uygulama mağazası olmadan.",
+    "fullDescription": "Progressive Web App'ler size native geliştirmenin ve mağaza onaylarının maliyeti ve sürtünmesi olmadan uygulama benzeri erişim sağlar. Ana ekrana kurulan, çevrimdışı çalışan, anında yüklenen ve push bildirimleriyle kullanıcıları yeniden çeken PWA'ler kurarız — hepsi tek bir web kod tabanından. Service worker'lar, Cache ve IndexedDB API'leri ve bir app manifest kullanarak, dengesiz ağlarda hayatta kalan ve anlık hisseden deneyimler sunarız. Ödünleşimler konusunda da dürüstüz: iOS, depolama sınırlarından kısıtlı push davranışına kadar PWA'lere gerçek limitler koyar ve biz bunları yokmuş gibi davranmak yerine onların etrafında tasarlarız. İçerik siteleri, e-ticaret ve iç araçlar için iyi kurulmuş bir PWA, native deneyimin çoğunu yapım ve bakım maliyetinin küçük bir kısmıyla sunar.",
+    "features": [
+      "Service Worker Uygulaması",
+      "Çevrimdışı Öncelikli Mimari (Cache ve IndexedDB)",
+      "App Manifest ve Kurulum İstemleri",
+      "Web Push Bildirimleri",
+      "Arka Plan Senkronizasyonu",
+      "Tüm Cihazlar için Duyarlı Tasarım",
+      "Core Web Vitals Performans Ayarı",
+      "Uygulama Mağazası Paketleme (PWA Builder / TWA)"
+    ],
+    "benefits": [
+      "Uygulama mağazası olmadan her cihaza kurulabilir",
+      "Çevrimdışı ve güvenilmez ağlarda çalışır",
+      "Önbelleğe alınmış varlıklarla tipik web uygulamalarından hızlı",
+      "Tek kod tabanı her platforma hizmet eder",
+      "Kullanıcı eylemi gerekmeden otomatik güncellemeler",
+      "Native'e kıyasla çok daha düşük yapım ve bakım maliyeti"
+    ],
+    "metaTitle": "Progressive Web App Geliştirme (PWA) | PakSoft",
+    "metaDescription": "Service worker'lar, push bildirimleri ve anında yüklemeyle kurulabilir, çevrimdışı öncelikli PWA'ler kurun. Tek kod tabanı, her cihaz. Teklif alın.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Uygunluk Değerlendirmesi", "description": "İhtiyacınız olan cihaz özelliklerine ve kitlenizin iOS kullanımına göre bir PWA'nin hedeflerinize gerçekten uyup uymadığını ya da native'in gerekli olup olmadığını kontrol ederiz. Apple'ın PWA limitlerinin nerede ısıracağı dahil dürüst bir öneri alırsınız." },
+        { "step": 2, "title": "Mimari ve Çevrimdışı Strateji", "description": "Çevrimdışı çalışması gerekenleri tanımlar ve kaynak başına önbellekleme stratejileri seçeriz — varlıklar için cache-first, taze veri için network-first. Veri katmanı IndexedDB etrafında tasarlanır; böylece uygulama bağlantısız kullanılabilir kalır." },
+        { "step": 3, "title": "Ana Uygulama Yapımı", "description": "Performans bütçeleri içine yerleştirilmiş hızlı, duyarlı bir web uygulaması kurarız; çünkü hızlı olmayan bir PWA amacını boşa çıkarır. Arayüz native hissetmesi için tasarlanır; akıcı geçişler ve anında boyanan bir app-shell ile." },
+        { "step": 4, "title": "Service Worker ve Kurulabilirlik", "description": "Service worker'ı, app manifest'i ve kurulum istemlerini uygularız; böylece kullanıcılar uygulamayı ana ekranlarına ekleyebilir. Güncelleme akışları temiz ele alınır; böylece kullanıcılar kafa karıştırıcı bayat önbellek hataları olmadan yeni sürümleri alır." },
+        { "step": 5, "title": "Push, Sync ve Etkileşim", "description": "Platformun desteklediği yerde web push ve arka plan senkronizasyonu ekleriz, desteklemediği yerde — özellikle iOS'ta — zarif geri dönüşlerle. Yeniden etkileşim özellikleri her platformun gerçekte izin verdiğiyle sınırlanır." },
+        { "step": 6, "title": "Test, Denetim ve Lansman", "description": "Lighthouse ile PWA kontrol listesine göre denetler, çevrimdışı ve kurulum akışlarını gerçek iOS ve Android cihazlarda test eder ve isteğe bağlı Trusted Web Activity ile mağazalar için paketleriz. Lansman sonrası gerçek kullanıcı performansını ve etkileşimini izleriz." }
+      ],
+      "faq": [
+        { "question": "PWA'ler iOS'ta düzgün çalışır mı?", "answer": "Kısmen. iOS, PWA'leri destekler — çevrimdışı destekle ana ekrana kurulabilir ve iOS 16.4'ten beri web push — ama gerçek limitlerle. Depolama sınırlıdır ve silinebilir, bazı donanım API'leri kullanılamaz ve push yalnızca kullanıcının gerçekten ana ekrana eklediği uygulamalar için çalışır. Bu kısıtlamaların etrafında tasarlar ve iOS'un nerede native bir uygulamanın gerisinde kalacağını baştan söyleriz." },
+        { "question": "Native uygulama yerine ne zaman PWA seçmeliyim?", "answer": "PWA; uygulamanız içerik, ticaret veya form odaklıysa, tek kod tabanı istiyorsanız ve mağaza ücretleri ile inceleme gecikmelerinden kaçınmayı tercih ediyorsanız doğru tercihtir. Derin donanım erişimi, arka plan işleme, yoğun grafik veya iOS'un web için kısıtladığı özellikler gerektiğinde native daha mantıklıdır. Birçok işletme için PWA değerin çoğunu maliyetin küçük bir kısmıyla sunar — hangisinin uyduğunu dürüstçe söyleriz." },
+        { "question": "Bir PWA gerçekten çevrimdışı çalışabilir mi?", "answer": "Evet. Bir service worker ağ isteklerini durdurup önbelleğe alınmış varlıkları sunar, IndexedDB ise veriyi yerelde saklar; böylece uygulama bağlantısız yüklenir ve çalışır. Hangi özelliklerin çevrimdışı çalışacağını bilinçle tasarlarız — önbelleğe alınmış içeriği görüntülemek basittir, sunucuya ihtiyaç duyan eylemler ise kuyruğa alınır ve bağlantı döndüğünde Background Sync ile senkronlanır." },
+        { "question": "PWA'yi uygulama mağazalarına koyabilir miyim?", "answer": "Evet. Google Play, Trusted Web Activity olarak sarılmış PWA'leri kabul eder; bu temiz, desteklenen bir yoldur. Apple App Store daha katıdır ve genellikle ince bir sarmalayıcıdan fazlasını bekler, bu yüzden vaka bazında değerlendiririz. Birçok işletme mağazaları tamamen atlar, çünkü bir PWA doğrudan tarayıcıdan kurulur — ama mağaza varlığı önemliyse doğru paketleme yaklaşımını buluruz." },
+        { "question": "Bir PWA'de push bildirimleri nasıl çalışır?", "answer": "PWA'ler, uygulama kapalıyken bile bildirim göndermek için bir service worker ile Web Push API'sini kullanır. Bu Android ve masaüstünde iyi çalışır. iOS'ta web push 16.4'te geldi ama yalnızca ana ekrana kurulmuş uygulamalar için ve bazı davranış farklarıyla. Push'u güvenilir olduğu yerde uygular, platformun sınırladığı yerde geri dönüşler tasarlarız." },
+        { "question": "Bir PWA native uygulama kadar hızlı olur mu?", "answer": "Çoğu kullanım için evet — ve genellikle kötü kurulmuş bir native uygulamadan hızlı. App shell, önbelleğe alınmış varlıklar ve bir service worker ile bir PWA tekrar ziyaretlerde anında boyanabilir. Native'in hâlâ kazandığı yer yoğun gerçek zamanlı grafik, yoğun hesaplama ve mümkün olan en akıcı animasyonlardır. Performans bütçeleri belirler ve uygulamanın anlık hissetmesi için yeşil Core Web Vitals hedefleriz." },
+        { "question": "Güncellemeler uygulama mağazası olmadan nasıl çalışır?", "answer": "Bu büyük bir PWA avantajıdır: yeni bir sürüm dağıttığınızda service worker onu arka planda alır ve bir sonraki açılışta uygular; böylece kullanıcılar manuel güncelleme olmadan hep güncel kalır. Bayat önbellek hatalarından kaçınmak için güncelleme yaşam döngüsünü dikkatle yönetir, yeni sürüm hazır olduğunda kullanıcılara eski kodu sunmak yerine yenilemelerini isteriz." },
+        { "question": "Bir PWA yapımı ne kadar sürer?", "answer": "Odaklı bir PWA — diyelim çevrimdışı destekli bir içerik uygulaması veya vitrin — genellikle 6–12 hafta sürer. Push, arka plan senkronizasyonu ve karmaşık çevrimdışı akışlar eklemek bunu uzatır. Ayrı iOS ve Android uygulamaları yerine tek bir web kod tabanı olduğu için, bir PWA genellikle her iki platformda native'e gitmekten daha hızlı ve ucuz kurulur ve bakılır." }
+      ],
+      "technologies": [
+        { "icon": "pwa", "name": "PWA" },
+        { "icon": "workbox", "name": "Workbox" },
+        { "icon": "nextdotjs", "name": "Next.js" },
+        { "icon": "webassembly", "name": "Service Workers" },
+        { "icon": "indexeddb", "name": "IndexedDB" },
+        { "icon": "firebase", "name": "Firebase (Push)" },
+        { "icon": "lighthouse", "name": "Lighthouse" },
+        { "icon": "typescript", "name": "TypeScript" }
+      ]
+    }
+  },
+  "de": {
+    "name": "Progressive Web Apps (PWA)",
+    "shortDescription": "Bauen Sie installierbare, offline-fähige Web-Apps, die sich nativ anfühlen — Service Worker, App-Manifest, Push-Benachrichtigungen und sofortiges Laden, aus einer Codebasis für jedes Gerät, ohne App Store.",
+    "fullDescription": "Progressive Web Apps geben Ihnen app-ähnliche Reichweite ohne Kosten und Reibung nativer Entwicklung und Store-Freigaben. Wir bauen PWAs, die sich auf dem Home-Screen installieren, offline funktionieren, sofort laden und Nutzer mit Push-Benachrichtigungen zurückholen — alles aus einer einzigen Web-Codebasis. Mit Service Workern, den Cache- und IndexedDB-APIs und einem App-Manifest liefern wir Erlebnisse, die wackelige Netze überstehen und unmittelbar wirken. Wir sind auch ehrlich zu den Trade-offs: iOS setzt echte Grenzen für PWAs, von Storage-Caps bis zu eingeschränktem Push-Verhalten, und wir gestalten darum herum, statt so zu tun, als gäbe es sie nicht. Für Content-Sites, E-Commerce und interne Tools liefert eine gut gebaute PWA oft den größten Teil des nativen Erlebnisses zu einem Bruchteil der Bau- und Wartungskosten.",
+    "features": [
+      "Service-Worker-Implementierung",
+      "Offline-First-Architektur (Cache & IndexedDB)",
+      "App-Manifest & Installations-Prompts",
+      "Web-Push-Benachrichtigungen",
+      "Background Sync",
+      "Responsives Design für alle Geräte",
+      "Core-Web-Vitals-Performance-Tuning",
+      "App-Store-Packaging (PWA Builder / TWA)"
+    ],
+    "benefits": [
+      "Auf jedem Gerät ohne App Store installierbar",
+      "Funktioniert offline und in unzuverlässigen Netzen",
+      "Schneller als typische Web-Apps dank gecachter Assets",
+      "Eine Codebasis bedient jede Plattform",
+      "Automatische Updates ohne Nutzeraktion",
+      "Weit geringere Bau- und Wartungskosten als nativ"
+    ],
+    "metaTitle": "Progressive Web App Entwicklung (PWA) | PakSoft",
+    "metaDescription": "Bauen Sie installierbare, offline-first Progressive Web Apps mit Service Workern, Push und sofortigem Laden. Eine Codebasis, jedes Gerät. Angebot anfordern.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "Eignungsprüfung", "description": "Wir prüfen, ob eine PWA wirklich zu Ihren Zielen passt oder ob nativ angebracht ist — anhand der benötigten Gerätefunktionen und wie stark Ihr Publikum iOS nutzt. Sie erhalten eine ehrliche Empfehlung, inklusive wo Apples PWA-Grenzen schmerzen würden." },
+        { "step": 2, "title": "Architektur & Offline-Strategie", "description": "Wir definieren, was offline funktionieren muss, und wählen Caching-Strategien pro Ressource — Cache-First für Assets, Network-First für frische Daten. Die Datenebene wird um IndexedDB herum gestaltet, damit die App ohne Verbindung nutzbar bleibt." },
+        { "step": 3, "title": "Kern-App-Bau", "description": "Wir bauen eine schnelle, responsive Web-App mit eingebauten Performance-Budgets, denn eine PWA, die nicht schnell ist, verfehlt den Zweck. Die UI ist auf nativen Eindruck ausgelegt, mit flüssigen Übergängen und einer App-Shell, die sofort zeichnet." },
+        { "step": 4, "title": "Service Worker & Installierbarkeit", "description": "Wir implementieren Service Worker, App-Manifest und Install-Prompts, damit Nutzer die App zum Home-Screen hinzufügen können. Update-Flows werden sauber gehandhabt, sodass Nutzer neue Versionen ohne verwirrende Stale-Cache-Bugs erhalten." },
+        { "step": 5, "title": "Push, Sync & Re-Engagement", "description": "Wir ergänzen Web-Push und Background Sync, wo die Plattform sie unterstützt, mit eleganten Fallbacks, wo nicht — besonders auf iOS. Re-Engagement-Funktionen werden auf das beschränkt, was jede Plattform tatsächlich erlaubt." },
+        { "step": 6, "title": "Testing, Audit & Launch", "description": "Wir auditieren mit Lighthouse gegen die PWA-Checkliste, testen Offline- und Install-Flows auf echten iOS- und Android-Geräten und packen optional via Trusted Web Activity für die Stores. Nach dem Launch überwachen wir Real-User-Performance und Engagement." }
+      ],
+      "faq": [
+        { "question": "Funktionieren PWAs auf iOS richtig?", "answer": "Teilweise. iOS unterstützt PWAs — installierbar auf dem Home-Screen mit Offline-Support und seit iOS 16.4 Web-Push — aber mit echten Grenzen. Storage ist gedeckelt und kann geräumt werden, manche Hardware-APIs fehlen, und Push funktioniert nur für Apps, die der Nutzer wirklich zum Home-Screen hinzugefügt hat. Wir gestalten um diese Einschränkungen herum und sagen Ihnen vorab, wo iOS hinter einer nativen App zurückbleibt." },
+        { "question": "Wann sollte ich eine PWA statt einer nativen App wählen?", "answer": "Eine PWA ist richtig, wenn Ihre App content-, commerce- oder formularorientiert ist, Sie eine Codebasis wollen und App-Store-Gebühren sowie Review-Verzögerungen vermeiden möchten. Nativ ergibt mehr Sinn bei tiefem Hardwarezugriff, Hintergrundverarbeitung, schweren Grafiken oder Funktionen, die iOS für Web einschränkt. Für viele Unternehmen liefert eine PWA den Großteil des Werts zu einem Bruchteil der Kosten — wir sagen ehrlich, was passt." },
+        { "question": "Kann eine PWA wirklich offline funktionieren?", "answer": "Ja. Ein Service Worker fängt Netzwerk-Requests ab und liefert gecachte Assets, während IndexedDB Daten lokal speichert, sodass die App ohne Verbindung lädt und funktioniert. Wir gestalten bewusst, welche Funktionen offline laufen — gecachten Content ansehen ist einfach, während serverabhängige Aktionen in eine Queue gehen und bei zurückkehrender Konnektivität via Background Sync synchronisiert werden." },
+        { "question": "Kann ich eine PWA in die App Stores stellen?", "answer": "Ja. Google Play akzeptiert PWAs, verpackt als Trusted Web Activity — ein sauberer, unterstützter Weg. Der Apple App Store ist strenger und erwartet meist mehr als einen dünnen Wrapper, daher bewerten wir fallweise. Viele Unternehmen überspringen die Stores ganz, da eine PWA direkt aus dem Browser installiert — aber wenn Store-Präsenz zählt, finden wir den richtigen Packaging-Ansatz." },
+        { "question": "Wie funktionieren Push-Benachrichtigungen bei einer PWA?", "answer": "PWAs nutzen die Web-Push-API mit einem Service Worker, um Benachrichtigungen auch bei geschlossener App zuzustellen. Das funktioniert gut auf Android und Desktop. Auf iOS kam Web-Push mit 16.4, aber nur für zum Home-Screen installierte Apps und mit einigen Verhaltensunterschieden. Wir implementieren Push, wo es zuverlässig ist, und gestalten Fallbacks, wo die Plattform limitiert." },
+        { "question": "Wird eine PWA so schnell wie eine native App?", "answer": "Für die meisten Fälle ja — und oft schneller als eine schlecht gebaute native App. Mit App-Shell, gecachten Assets und Service Worker zeichnet eine PWA bei Wiederbesuchen sofort. Wo nativ noch gewinnt: schwere Echtzeit-Grafik, intensive Berechnung und die geschmeidigsten Animationen. Wir setzen Performance-Budgets und zielen auf grüne Core Web Vitals, damit die App unmittelbar wirkt." },
+        { "question": "Wie funktionieren Updates ohne App Store?", "answer": "Das ist ein großer PWA-Vorteil: Bei einem neuen Deploy holt der Service Worker ihn im Hintergrund und wendet ihn beim nächsten Start an, sodass Nutzer ohne manuelles Update stets aktuell sind. Wir behandeln den Update-Lifecycle sorgfältig, um Stale-Cache-Bugs zu vermeiden, und bitten Nutzer um ein Refresh, wenn eine neue Version bereit ist, statt ihnen alten Code zu liefern." },
+        { "question": "Wie lange dauert eine PWA?", "answer": "Eine fokussierte PWA — etwa eine Content-App oder ein Storefront mit Offline-Support — dauert typischerweise 6–12 Wochen. Push, Background Sync und komplexe Offline-Flows verlängern das. Da es eine Web-Codebasis statt getrennter iOS- und Android-Apps ist, ist eine PWA meist schneller und günstiger zu bauen und zu warten als nativ auf beiden Plattformen." }
+      ],
+      "technologies": [
+        { "icon": "pwa", "name": "PWA" },
+        { "icon": "workbox", "name": "Workbox" },
+        { "icon": "nextdotjs", "name": "Next.js" },
+        { "icon": "webassembly", "name": "Service Workers" },
+        { "icon": "indexeddb", "name": "IndexedDB" },
+        { "icon": "firebase", "name": "Firebase (Push)" },
+        { "icon": "lighthouse", "name": "Lighthouse" },
+        { "icon": "typescript", "name": "TypeScript" }
+      ]
+    }
+  },
+  "ur": {
+    "name": "پروگریسو ویب ایپس (PWA)",
+    "shortDescription": "ایسی installable، offline-قابل ویب ایپس بنائیں جو native لگیں — service workers، app manifest، push اطلاعات اور فوری لوڈنگ، ایک ہی کوڈ بیس سے ہر ڈیوائس پر، app store کے بغیر۔",
+    "fullDescription": "پروگریسو ویب ایپس آپ کو native ڈیولپمنٹ اور store منظوریوں کی لاگت اور رگڑ کے بغیر app جیسی رسائی دیتی ہیں۔ ہم ایسی PWAs بناتے ہیں جو ہوم اسکرین پر انسٹال ہوں، offline چلیں، فوراً لوڈ ہوں اور push اطلاعات سے صارفین کو دوبارہ مصروف کریں — سب ایک ہی ویب کوڈ بیس سے۔ Service workers، Cache اور IndexedDB APIs اور ایک app manifest استعمال کرتے ہوئے ہم ایسے تجربات دیتے ہیں جو کمزور نیٹ ورکس میں زندہ رہیں اور فوری محسوس ہوں۔ ہم تجارتی سمجھوتوں پر بھی ایماندار ہیں: iOS، storage کی حدود سے لے کر محدود push رویے تک PWAs پر حقیقی پابندیاں عائد کرتا ہے، اور ہم انہیں نظر انداز کرنے کے بجائے ان کے گرد ڈیزائن کرتے ہیں۔ مواد سائٹس، ای کامرس اور اندرونی اوزار کے لیے ایک اچھی بنی PWA اکثر native تجربے کا بیشتر حصہ تعمیر اور دیکھ بھال کی لاگت کے معمولی حصے میں دیتی ہے۔",
+    "features": [
+      "Service Worker نفاذ",
+      "آف لائن فرسٹ آرکیٹیکچر (Cache اور IndexedDB)",
+      "App Manifest اور انسٹال پرامپٹس",
+      "Web Push اطلاعات",
+      "بیک گراؤنڈ سنک",
+      "تمام ڈیوائسز کے لیے Responsive ڈیزائن",
+      "Core Web Vitals کارکردگی ٹیوننگ",
+      "App Store پیکجنگ (PWA Builder / TWA)"
+    ],
+    "benefits": [
+      "App store کے بغیر کسی بھی ڈیوائس پر installable",
+      "آف لائن اور غیر یقینی نیٹ ورکس پر چلتی ہے",
+      "Cached assets سے عام ویب ایپس سے تیز",
+      "ایک کوڈ بیس ہر پلیٹ فارم کو خدمت دیتا ہے",
+      "صارف کے عمل کے بغیر خودکار اپ ڈیٹس",
+      "Native کے مقابلے بہت کم تعمیر اور دیکھ بھال لاگت"
+    ],
+    "metaTitle": "پروگریسو ویب ایپ ڈیولپمنٹ (PWA) | PakSoft",
+    "metaDescription": "Service workers، push اطلاعات اور فوری لوڈنگ کے ساتھ installable، آف لائن فرسٹ PWAs بنائیں۔ ایک کوڈ بیس، ہر ڈیوائس۔ تخمینہ حاصل کریں۔",
+    "content": {
+      "process": [
+        { "step": 1, "title": "موزونیت کا جائزہ", "description": "آپ کو درکار ڈیوائس خصوصیات اور آپ کے سامعین کے iOS استعمال کی بنیاد پر ہم جانچتے ہیں کہ آیا PWA واقعی آپ کے اہداف کے لیے موزوں ہے یا native ضروری ہے۔ آپ کو ایماندار سفارش ملتی ہے، بشمول یہ کہ Apple کی PWA حدود کہاں آڑے آئیں گی۔" },
+        { "step": 2, "title": "آرکیٹیکچر اور آف لائن حکمتِ عملی", "description": "ہم طے کرتے ہیں کہ کیا offline چلنا چاہیے اور فی resource caching حکمتِ عملی منتخب کرتے ہیں — assets کے لیے cache-first، تازہ ڈیٹا کے لیے network-first۔ ڈیٹا پرت IndexedDB کے گرد ڈیزائن ہوتی ہے تاکہ ایپ بغیر کنکشن قابلِ استعمال رہے۔" },
+        { "step": 3, "title": "بنیادی ایپ تعمیر", "description": "ہم کارکردگی کے بجٹ سمیت ایک تیز، responsive ویب ایپ بناتے ہیں، کیونکہ ایسی PWA جو تیز نہ ہو اپنا مقصد کھو دیتی ہے۔ UI کو native محسوس ہونے کے لیے ڈیزائن کیا جاتا ہے، ہموار منتقلیوں اور فوراً paint ہونے والے app-shell کے ساتھ۔" },
+        { "step": 4, "title": "Service Worker اور Installability", "description": "ہم service worker، app manifest اور install prompts نافذ کرتے ہیں تاکہ صارف ایپ کو اپنی ہوم اسکرین پر شامل کر سکیں۔ اپ ڈیٹ flows صاف سنبھالے جاتے ہیں تاکہ صارفین کنفیوژ کرنے والے باسی cache bugs کے بغیر نئے ورژن پائیں۔" },
+        { "step": 5, "title": "Push، Sync اور مصروفیت", "description": "ہم web push اور بیک گراؤنڈ سنک وہاں شامل کرتے ہیں جہاں پلیٹ فارم انہیں سپورٹ کرے، اور جہاں نہ کرے — خاص طور پر iOS پر — نرم fallbacks کے ساتھ۔ دوبارہ مصروفیت کی خصوصیات اسی تک محدود رکھی جاتی ہیں جو ہر پلیٹ فارم واقعی اجازت دیتا ہے۔" },
+        { "step": 6, "title": "ٹیسٹنگ، آڈٹ اور لانچ", "description": "ہم Lighthouse سے PWA چیک لسٹ کے مقابل آڈٹ کرتے ہیں، offline اور install flows کو حقیقی iOS اور Android ڈیوائسز پر ٹیسٹ کرتے ہیں اور اختیاری طور پر Trusted Web Activity سے stores کے لیے پیکج کرتے ہیں۔ لانچ کے بعد ہم حقیقی صارف کارکردگی اور مصروفیت کی نگرانی کرتے ہیں۔" }
+      ],
+      "faq": [
+        { "question": "کیا PWAs iOS پر صحیح چلتی ہیں؟", "answer": "جزوی طور پر۔ iOS، PWAs کو سپورٹ کرتا ہے — آف لائن سپورٹ کے ساتھ ہوم اسکرین پر installable اور iOS 16.4 سے web push — مگر حقیقی حدود کے ساتھ۔ Storage محدود ہے اور ہٹ سکتا ہے، کچھ ہارڈویئر APIs دستیاب نہیں، اور push صرف ان ایپس کے لیے چلتا ہے جو صارف نے واقعی ہوم اسکرین پر شامل کی ہوں۔ ہم ان پابندیوں کے گرد ڈیزائن کرتے ہیں اور شروع ہی میں بتاتے ہیں کہ iOS کہاں native ایپ سے پیچھے رہے گا۔" },
+        { "question": "مجھے native ایپ کے بجائے PWA کب چننا چاہیے؟", "answer": "PWA درست انتخاب ہے جب آپ کی ایپ مواد، تجارت یا فارم پر مبنی ہو، آپ ایک کوڈ بیس چاہیں اور store فیس اور جائزے کی تاخیر سے بچنا ترجیح دیں۔ جب گہری ہارڈویئر رسائی، بیک گراؤنڈ پراسیسنگ، بھاری گرافکس یا وہ خصوصیات درکار ہوں جنہیں iOS ویب کے لیے محدود کرتا ہے تو native زیادہ معقول ہے۔ بہت سے کاروبار کے لیے PWA قیمت کا بیشتر حصہ لاگت کے معمولی حصے میں دیتی ہے — ہم دیانتداری سے بتاتے ہیں کون سی موزوں ہے۔" },
+        { "question": "کیا PWA واقعی آف لائن چل سکتی ہے؟", "answer": "جی ہاں۔ ایک service worker نیٹ ورک requests روک کر cached assets پیش کرتا ہے، جبکہ IndexedDB ڈیٹا مقامی طور پر محفوظ رکھتا ہے، تاکہ ایپ بغیر کنکشن لوڈ ہو اور چلے۔ ہم سوچ سمجھ کر ڈیزائن کرتے ہیں کہ کون سی خصوصیات offline چلیں — cached مواد دیکھنا سادہ ہے، جبکہ server درکار اعمال queue میں جاتے ہیں اور کنکشن واپس آنے پر Background Sync سے sync ہوتے ہیں۔" },
+        { "question": "کیا میں PWA کو app stores میں رکھ سکتا ہوں؟", "answer": "جی ہاں۔ Google Play، Trusted Web Activity کے طور پر لپٹی PWAs قبول کرتا ہے، جو ایک صاف، معاون راستہ ہے۔ Apple App Store زیادہ سخت ہے اور عموماً ایک پتلے wrapper سے زیادہ کی توقع رکھتا ہے، اس لیے ہم معاملے کے حساب سے جائزہ لیتے ہیں۔ بہت سے کاروبار stores کو مکمل طور پر چھوڑ دیتے ہیں، کیونکہ PWA براہِ راست براؤزر سے انسٹال ہوتی ہے — مگر اگر store موجودگی اہم ہو تو ہم درست پیکجنگ طریقہ تلاش کرتے ہیں۔" },
+        { "question": "PWA پر push اطلاعات کیسے کام کرتی ہیں؟", "answer": "PWAs ایپ بند ہونے پر بھی اطلاعات پہنچانے کے لیے service worker کے ساتھ Web Push API استعمال کرتی ہیں۔ یہ Android اور ڈیسک ٹاپ پر اچھا چلتا ہے۔ iOS پر web push 16.4 میں آیا مگر صرف ہوم اسکرین پر انسٹال شدہ ایپس کے لیے، کچھ رویے کے فرق کے ساتھ۔ ہم push کو وہاں نافذ کرتے ہیں جہاں قابلِ اعتماد ہو اور جہاں پلیٹ فارم محدود کرے وہاں fallbacks ڈیزائن کرتے ہیں۔" },
+        { "question": "کیا PWA native ایپ جتنی تیز ہوگی؟", "answer": "زیادہ تر استعمال کے لیے جی ہاں — اور اکثر کسی خراب بنی native ایپ سے تیز۔ app shell، cached assets اور service worker کے ساتھ ایک PWA دوبارہ دوروں پر فوراً paint ہو سکتی ہے۔ جہاں native اب بھی جیتتا ہے وہ بھاری حقیقی وقت کی گرافکس، شدید حساب کتاب اور ممکنہ حد تک ہموار ترین اینیمیشن ہے۔ ہم کارکردگی کے بجٹ طے کرتے ہیں اور سبز Core Web Vitals کا ہدف رکھتے ہیں تاکہ ایپ فوری محسوس ہو۔" },
+        { "question": "App store کے بغیر اپ ڈیٹس کیسے کام کرتی ہیں؟", "answer": "یہ ایک بڑا PWA فائدہ ہے: جب آپ نیا ورژن deploy کرتے ہیں، service worker اسے بیک گراؤنڈ میں لاتا ہے اور اگلے لانچ پر لاگو کرتا ہے، تاکہ صارفین دستی اپ ڈیٹ کے بغیر ہمیشہ تازہ رہیں۔ ہم باسی cache bugs سے بچنے کے لیے اپ ڈیٹ لائف سائیکل احتیاط سے سنبھالتے ہیں، اور نیا ورژن تیار ہونے پر صارفین کو پرانا کوڈ دینے کے بجائے refresh کرنے کا کہتے ہیں۔" },
+        { "question": "PWA بننے میں کتنا وقت لگتا ہے؟", "answer": "ایک مرکوز PWA — مثلاً آف لائن سپورٹ والی مواد ایپ یا اسٹور فرنٹ — عموماً 6–12 ہفتے لیتی ہے۔ Push، بیک گراؤنڈ سنک اور پیچیدہ آف لائن flows اسے بڑھاتے ہیں۔ چونکہ یہ الگ iOS اور Android ایپس کے بجائے ایک ویب کوڈ بیس ہے، PWA عموماً دونوں پلیٹ فارمز پر native جانے سے تیز اور سستی بنتی اور سنبھالی جاتی ہے۔" }
+      ],
+      "technologies": [
+        { "icon": "pwa", "name": "PWA" },
+        { "icon": "workbox", "name": "Workbox" },
+        { "icon": "nextdotjs", "name": "Next.js" },
+        { "icon": "webassembly", "name": "Service Workers" },
+        { "icon": "indexeddb", "name": "IndexedDB" },
+        { "icon": "firebase", "name": "Firebase (Push)" },
+        { "icon": "lighthouse", "name": "Lighthouse" },
+        { "icon": "typescript", "name": "TypeScript" }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تطبيقات الويب التقدّمية (PWA)",
+    "shortDescription": "ابنوا تطبيقات ويب قابلة للتثبيت وتعمل دون اتصال وتبدو أصلية — عمّال خدمة، وبيان تطبيق، وإشعارات دفع، وتحميل فوري، من قاعدة كود واحدة عبر كل جهاز ودون متجر تطبيقات.",
+    "fullDescription": "تمنحكم تطبيقات الويب التقدّمية وصولاً شبيهاً بالتطبيقات دون كلفة واحتكاك التطوير الأصلي وموافقات المتاجر. نبني PWAs تُثبَّت على الشاشة الرئيسية وتعمل دون اتصال وتُحمَّل فوراً وتعيد إشراك المستخدمين بإشعارات الدفع — كلها من قاعدة كود ويب واحدة. وباستخدام عمّال الخدمة وواجهتي Cache وIndexedDB وبيان التطبيق، نقدّم تجارب تصمد أمام الشبكات المتقلّبة وتبدو فورية. ونحن صادقون في المفاضلات: يفرض iOS قيوداً حقيقية على PWAs، من حدود التخزين إلى سلوك دفع مقيَّد، ونصمّم حولها بدل التظاهر بعدم وجودها. ولمواقع المحتوى والتجارة والأدوات الداخلية، غالباً ما تقدّم PWA محكمة البناء معظم التجربة الأصلية بجزء يسير من كلفة البناء والصيانة.",
+    "features": [
+      "تنفيذ عامل الخدمة",
+      "بنية تعمل دون اتصال أولاً (Cache وIndexedDB)",
+      "بيان التطبيق ومطالبات التثبيت",
+      "إشعارات Web Push",
+      "مزامنة الخلفية",
+      "تصميم متجاوب لكل الأجهزة",
+      "ضبط أداء Core Web Vitals",
+      "تغليف لمتجر التطبيقات (PWA Builder / TWA)"
+    ],
+    "benefits": [
+      "قابلة للتثبيت على أي جهاز دون متجر تطبيقات",
+      "تعمل دون اتصال وعلى الشبكات غير الموثوقة",
+      "أسرع من تطبيقات الويب المعتادة بفضل الأصول المخزّنة",
+      "قاعدة كود واحدة تخدم كل منصة",
+      "تحديثات تلقائية دون إجراء من المستخدم",
+      "كلفة بناء وصيانة أقل بكثير من الأصلي"
+    ],
+    "metaTitle": "تطوير تطبيقات الويب التقدّمية (PWA) | PakSoft",
+    "metaDescription": "ابنوا تطبيقات ويب تقدّمية قابلة للتثبيت وتعمل دون اتصال أولاً، بعمّال خدمة وإشعارات دفع وتحميل فوري. قاعدة كود واحدة وكل جهاز. اطلبوا تقديراً.",
+    "content": {
+      "process": [
+        { "step": 1, "title": "تقييم الملاءمة", "description": "نفحص ما إذا كانت PWA تناسب أهدافكم فعلاً أم أن الأصلي مبرَّر، بناءً على ميزات الجهاز التي تحتاجونها ومدى استخدام جمهوركم لـ iOS. تحصلون على توصية صادقة، بما في ذلك أين ستُؤلم قيود Apple للـ PWA." },
+        { "step": 2, "title": "البنية واستراتيجية العمل دون اتصال", "description": "نحدّد ما يجب أن يعمل دون اتصال ونختار استراتيجيات تخزين مؤقت لكل مورد — cache-first للأصول، وnetwork-first للبيانات الطازجة. تُصمَّم طبقة البيانات حول IndexedDB كي يبقى التطبيق صالحاً للاستخدام دون اتصال." },
+        { "step": 3, "title": "بناء التطبيق الأساسي", "description": "نبني تطبيق ويب سريعاً ومتجاوباً بميزانيات أداء مدمجة، لأن PWA غير سريعة تُفقِد الغرض. تُصمَّم الواجهة لتبدو أصلية، بانتقالات سلسة وقشرة تطبيق تُرسَم فوراً." },
+        { "step": 4, "title": "عامل الخدمة وقابلية التثبيت", "description": "ننفّذ عامل الخدمة وبيان التطبيق ومطالبات التثبيت كي يضيف المستخدمون التطبيق إلى شاشتهم الرئيسية. وتُعالَج تدفقات التحديث بنظافة كي يحصل المستخدمون على نسخ جديدة دون أخطاء ذاكرة مؤقتة قديمة مربكة." },
+        { "step": 5, "title": "الدفع والمزامنة والإشراك", "description": "نضيف Web Push ومزامنة الخلفية حيث تدعمهما المنصة، مع بدائل لطيفة حيث لا تدعم — لا سيما على iOS. وتُحصَر ميزات إعادة الإشراك بما تسمح به كل منصة فعلاً." },
+        { "step": 6, "title": "الاختبار والتدقيق والإطلاق", "description": "ندقّق بـ Lighthouse مقابل قائمة PWA، ونختبر تدفقات العمل دون اتصال والتثبيت على أجهزة iOS وAndroid حقيقية، ونغلّف اختيارياً للمتاجر عبر Trusted Web Activity. وبعد الإطلاق نراقب أداء وإشراك المستخدمين الحقيقيين." }
+      ],
+      "faq": [
+        { "question": "هل تعمل PWAs بشكل صحيح على iOS؟", "answer": "جزئياً. يدعم iOS الـ PWAs — قابلة للتثبيت على الشاشة الرئيسية بدعم العمل دون اتصال، ومنذ iOS 16.4 دعم Web Push — لكن بقيود حقيقية. التخزين محدود وقد يُزال، وبعض واجهات العتاد غير متاحة، والدفع يعمل فقط للتطبيقات التي أضافها المستخدم فعلاً إلى الشاشة الرئيسية. نصمّم حول هذه القيود ونخبركم مسبقاً أين سيقصّر iOS عن تطبيق أصلي." },
+        { "question": "متى أختار PWA بدل تطبيق أصلي؟", "answer": "تكون PWA الخيار الصحيح حين يكون تطبيقكم قائماً على المحتوى أو التجارة أو النماذج، وتريدون قاعدة كود واحدة، وتفضّلون تجنّب رسوم المتاجر وتأخّر المراجعة. ويصبح الأصلي أكثر منطقية حين تحتاجون وصولاً عميقاً للعتاد أو معالجة خلفية أو رسوميات ثقيلة أو ميزات يقيّدها iOS للويب. ولكثير من الأعمال تقدّم PWA معظم القيمة بجزء من الكلفة — وسنخبركم بصدق أيّهما يناسب." },
+        { "question": "هل يمكن لـ PWA أن تعمل دون اتصال فعلاً؟", "answer": "نعم. يعترض عامل الخدمة طلبات الشبكة ويقدّم الأصول المخزّنة، بينما يخزّن IndexedDB البيانات محلياً، فيُحمَّل التطبيق ويعمل دون اتصال. نصمّم عمداً أي الميزات تعمل دون اتصال — عرض المحتوى المخزّن مباشر، أما الإجراءات التي تحتاج الخادم فتُوضَع في طابور وتُزامَن عند عودة الاتصال عبر Background Sync." },
+        { "question": "هل يمكنني وضع PWA في متاجر التطبيقات؟", "answer": "نعم. يقبل Google Play الـ PWAs المغلَّفة كـ Trusted Web Activity، وهو مسار نظيف ومدعوم. ومتجر Apple أكثر صرامة ويتوقع عادة أكثر من غلاف رقيق، لذا نقيّم حالة بحالة. وكثير من الأعمال تتخطى المتاجر كلياً لأن PWA تُثبَّت مباشرة من المتصفح — لكن إن كان الحضور في المتجر مهماً، نجد أسلوب التغليف الصحيح." },
+        { "question": "كيف تعمل إشعارات الدفع على PWA؟", "answer": "تستخدم PWAs واجهة Web Push مع عامل خدمة لتسليم الإشعارات حتى عند إغلاق التطبيق. يعمل هذا جيداً على Android وسطح المكتب. وعلى iOS وصل Web Push في 16.4 لكن فقط للتطبيقات المثبَّتة على الشاشة الرئيسية، مع بعض الفروق السلوكية. ننفّذ الدفع حيث يكون موثوقاً ونصمّم بدائل حيث تقيّده المنصة." },
+        { "question": "هل ستكون PWA بسرعة تطبيق أصلي؟", "answer": "لمعظم الحالات نعم — وغالباً أسرع من تطبيق أصلي سيئ البناء. مع قشرة تطبيق وأصول مخزّنة وعامل خدمة، يمكن لـ PWA أن تُرسَم فوراً عند الزيارات المتكررة. وحيث يبقى الأصلي متفوّقاً: الرسوميات اللحظية الثقيلة والحساب المكثّف وأكثر الحركات سلاسة. نضع ميزانيات أداء ونستهدف Core Web Vitals خضراء كي يبدو التطبيق فورياً." },
+        { "question": "كيف تعمل التحديثات دون متجر تطبيقات؟", "answer": "هذه ميزة كبرى لـ PWA: حين تنشرون نسخة جديدة، يجلبها عامل الخدمة في الخلفية ويطبّقها عند التشغيل التالي، فيبقى المستخدمون محدَّثين دائماً دون تحديث يدوي. نتعامل مع دورة حياة التحديث بعناية لتجنّب أخطاء الذاكرة المؤقتة القديمة، ونطلب من المستخدمين التحديث عند جهوزية نسخة جديدة بدل تقديم كود قديم لهم." },
+        { "question": "كم تستغرق PWA؟", "answer": "PWA مركّزة — مثل تطبيق محتوى أو واجهة متجر بدعم العمل دون اتصال — تستغرق عادة 6–12 أسبوعاً. وإضافة الدفع ومزامنة الخلفية وتدفقات العمل دون اتصال المعقدة تمدّد ذلك. ولأنها قاعدة كود ويب واحدة بدل تطبيقي iOS وAndroid منفصلين، عادة ما تكون PWA أسرع وأرخص في البناء والصيانة من الذهاب أصلياً على المنصتين." }
+      ],
+      "technologies": [
+        { "icon": "pwa", "name": "PWA" },
+        { "icon": "workbox", "name": "Workbox" },
+        { "icon": "nextdotjs", "name": "Next.js" },
+        { "icon": "webassembly", "name": "Service Workers" },
+        { "icon": "indexeddb", "name": "IndexedDB" },
+        { "icon": "firebase", "name": "Firebase (Push)" },
+        { "icon": "lighthouse", "name": "Lighthouse" },
+        { "icon": "typescript", "name": "TypeScript" }
+      ]
+    }
+  }
+}

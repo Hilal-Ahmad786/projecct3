@@ -1,0 +1,436 @@
+{
+  "learning-management-systems": {
+    "en": {
+      "name": "Learning Management Systems",
+      "shortDescription": "Create e-learning platforms with courses, assessments, and progress tracking.",
+      "fullDescription": "Transform the way your organization teaches and trains with a bespoke Learning Management System (LMS). Whether you are an educational institution looking to bring classrooms online, or a corporation aiming to streamline employee onboarding and compliance training, generic platforms often feel clunky and lack specific integrations. We build custom, scalable LMS platforms that provide engaging, interactive learning experiences. From secure video hosting (via Mux or AWS), interactive quiz builders, and SCORM compliance, to gamified progress tracking and automated certification, we design systems that make learning accessible, trackable, and highly effective.",
+      "features": [
+        "Interactive Course & Curriculum Builder",
+        "Secure Video Hosting & Live Streaming Integration",
+        "Dynamic Quizzes, Assessments & Grading",
+        "Gamification, Certifications & Badges",
+        "Detailed Analytics & Student Progress Tracking",
+        "SCORM / xAPI Compliance Support"
+      ],
+      "benefits": [
+        "Highly Engaging Learning Experiences",
+        "Automated Administrative Tasks (Grading, Certs)",
+        "Scalable to Thousands of Concurrent Learners",
+        "Seamless Integration with Existing HR/CRM Systems",
+        "Secure Monetization (Subscriptions, One-Time Purchases)"
+      ],
+      "content": {
+        "process": [
+          { "title": "Requirements & Curriculum Mapping", "description": "Understanding your content types, user roles (instructors vs. students), and learning paths." },
+          { "title": "Platform Architecture", "description": "Designing the database to handle video streaming, progress states, and secure assessments." },
+          { "title": "Development", "description": "Building the LMS using Next.js for a fast frontend and Node.js/PostgreSQL for a robust backend." },
+          { "title": "Content Migration & Integration", "description": "Importing existing courses and integrating payment gateways like Stripe." },
+          { "title": "Testing & Launch", "description": "Ensuring videos load fast globally and assessments calculate correctly." }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Node.js",
+          "PostgreSQL",
+          "Mux (Video Streaming)",
+          "AWS S3 (Asset Storage)",
+          "Stripe (Payments)"
+        ],
+        "faq": [
+          { "question": "Can we host our own video content securely?", "answer": "Yes. We integrate enterprise-grade video solutions like Mux or AWS MediaConvert to stream adaptive bitrate videos securely, ensuring they load quickly on any connection and are difficult to pirate or download illegally." },
+          { "question": "Can the LMS generate certificates automatically?", "answer": "Absolutely. Once a user passes a final assessment or completes a learning path, the system can dynamically generate a personalized PDF certificate and email it to them, or add it to their profile." }
+        ]
+      },
+      "metaTitle": "Custom LMS Development | E-Learning Platforms",
+      "metaDescription": "Build a custom Learning Management System (LMS). We develop scalable e-learning platforms with video streaming, assessments, and progress tracking."
+    },
+    "tr": {
+      "name": "Eğitim Yönetim Sistemleri (LMS)",
+      "shortDescription": "Kurslar, değerlendirmeler ve ilerleme takibi içeren e-öğrenme platformları oluşturun.",
+      "fullDescription": "Özel bir Eğitim Yönetim Sistemi (LMS) ile kuruluşunuzun öğretme ve eğitim verme şeklini dönüştürün. İster sınıfları çevrimiçi ortama taşımak isteyen bir eğitim kurumu, ister çalışanların işe alım ve uyumluluk eğitimlerini kolaylaştırmayı amaçlayan bir şirket olun, genel platformlar genellikle hantal hissettirir ve belirli entegrasyonlardan yoksundur. İlgi çekici, etkileşimli öğrenme deneyimleri sunan özel, ölçeklenebilir LMS platformları oluşturuyoruz. Güvenli video barındırma (Mux veya AWS aracılığıyla), etkileşimli sınav oluşturucular ve SCORM uyumluluğundan; oyunlaştırılmış ilerleme takibi ve otomatik sertifikasyona kadar, öğrenmeyi erişilebilir, izlenebilir ve son derece etkili hale getiren sistemler tasarlıyoruz.",
+      "features": [
+        "Etkileşimli Kurs ve Müfredat Oluşturucu",
+        "Güvenli Video Barındırma ve Canlı Yayın Entegrasyonu",
+        "Dinamik Sınavlar, Değerlendirmeler ve Notlandırma",
+        "Oyunlaştırma, Sertifikalar ve Rozetler",
+        "Detaylı Analitik ve Öğrenci İlerleme Takibi",
+        "SCORM / xAPI Uyumluluk Desteği"
+      ],
+      "benefits": [
+        "Son Derece İlgi Çekici Öğrenme Deneyimleri",
+        "Otomatikleştirilmiş İdari Görevler (Notlandırma, Sertifikalar)",
+        "Aynı Anda Binlerce Öğrenciye Ölçeklenebilir",
+        "Mevcut İK/CRM Sistemleriyle Sorunsuz Entegrasyon",
+        "Güvenli Para Kazanma (Abonelikler, Tek Seferlik Satın Alımlar)"
+      ],
+      "content": {
+        "process": [
+          { "title": "Gereksinimler ve Müfredat Haritalama", "description": "İçerik türlerinizi, kullanıcı rollerini (eğitmenlere karşı öğrenciler) ve öğrenme yollarını anlama." },
+          { "title": "Platform Mimarisi", "description": "Veritabanını video akışını, ilerleme durumlarını ve güvenli değerlendirmeleri işleyecek şekilde tasarlama." },
+          { "title": "Geliştirme", "description": "Hızlı bir ön uç için Next.js ve sağlam bir arka uç için Node.js/PostgreSQL kullanarak LMS'yi oluşturma." },
+          { "title": "İçerik Taşıma ve Entegrasyon", "description": "Mevcut kursları içe aktarma ve Stripe gibi ödeme ağ geçitlerini entegre etme." },
+          { "title": "Test ve Lansman", "description": "Videoların küresel olarak hızlı yüklenmesini ve değerlendirmelerin doğru hesaplanmasını sağlama." }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Node.js",
+          "PostgreSQL",
+          "Mux (Video Akışı)",
+          "AWS S3 (Varlık Depolama)",
+          "Stripe (Ödemeler)"
+        ],
+        "faq": [
+          { "question": "Kendi video içeriğimizi güvenli bir şekilde barındırabilir miyiz?", "answer": "Evet. Uyarlanabilir bit hızı (adaptive bitrate) videolarını güvenli bir şekilde aktarmak için Mux veya AWS MediaConvert gibi kurumsal düzeyde video çözümlerini entegre ediyoruz; bu, herhangi bir bağlantıda hızlı yüklenmelerini ve korsan olarak çoğaltılmalarını veya yasa dışı olarak indirilmelerini zorlaştırıyor." },
+          { "question": "LMS otomatik olarak sertifika oluşturabilir mi?", "answer": "Kesinlikle. Bir kullanıcı son değerlendirmeyi geçtiğinde veya bir öğrenme yolunu tamamladığında, sistem dinamik olarak kişiselleştirilmiş bir PDF sertifikası oluşturup e-posta ile gönderebilir veya profiline ekleyebilir." }
+        ]
+      },
+      "metaTitle": "Özel LMS Geliştirme | E-Öğrenme Platformları",
+      "metaDescription": "Özel bir Eğitim Yönetim Sistemi (LMS) oluşturun. Video akışı, sınavlar ve ilerleme takibi içeren ölçeklenebilir e-öğrenme platformları geliştiriyoruz."
+    },
+    "de": {
+      "name": "Lernmanagementsysteme (LMS)",
+      "shortDescription": "Erstellen Sie E-Learning-Plattformen mit Kursen, Prüfungen und Fortschrittsverfolgung.",
+      "fullDescription": "Transformieren Sie die Art und Weise, wie Ihr Unternehmen lehrt und schult, mit einem maßgeschneiderten Learning Management System (LMS). Egal, ob Sie eine Bildungseinrichtung sind, die Klassenzimmer online bringen möchte, oder ein Unternehmen, das Mitarbeiter-Onboarding und Compliance-Schulungen optimieren möchte – generische Plattformen wirken oft klobig und es mangelt ihnen an spezifischen Integrationen. Wir bauen individuelle, skalierbare LMS-Plattformen, die ansprechende, interaktive Lernerlebnisse bieten. Von sicherem Video-Hosting, interaktiven Quiz-Buildern und SCORM-Konformität bis hin zu gamifizierter Fortschrittsverfolgung und automatisierter Zertifizierung entwerfen wir Systeme, die das Lernen zugänglich, nachverfolgbar und hocheffektiv machen.",
+      "features": [
+        "Interaktiver Kurs- & Lehrplan-Ersteller",
+        "Sicheres Video-Hosting & Live-Streaming-Integration",
+        "Dynamische Quizze, Prüfungen & Benotung",
+        "Gamification, Zertifikate & Abzeichen",
+        "Detaillierte Analysen & Lernfortschrittsverfolgung",
+        "SCORM / xAPI-Konformitätsunterstützung"
+      ],
+      "benefits": [
+        "Herausragende & motivierende Lernerlebnisse",
+        "Automatisierte Verwaltungsaufgaben (Benotung, Zertifikate)",
+        "Skalierbar auf Tausende von gleichzeitigen Lernenden",
+        "Nahtlose Integration in bestehende HR/CRM-Systeme",
+        "Sichere Monetarisierung (Abonnements, Einzelkäufe)"
+      ],
+      "content": {
+        "process": [
+          { "title": "Anforderungserhebung", "description": "Verständnis Ihrer Inhaltstypen, Benutzerrollen (Dozenten vs. Studenten) und Lernpfade." },
+          { "title": "Plattform-Architektur", "description": "Entwurf der Datenbank zur Bewältigung von Video-Streaming, Fortschrittsstatus und sicheren Prüfungen." },
+          { "title": "Entwicklung", "description": "Aufbau des LMS mit Next.js für ein schnelles Frontend und Node.js/PostgreSQL für ein robustes Backend." },
+          { "title": "Integration", "description": "Import bestehender Kurse und Integration von Zahlungsgateways wie Stripe." },
+          { "title": "Testing & Launch", "description": "Sicherstellung schneller Ladezeiten und korrekter Auswertungen." }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Node.js",
+          "PostgreSQL",
+          "Mux (Video-Streaming)",
+          "AWS S3 (Dateispeicherung)",
+          "Stripe (Zahlungen)"
+        ],
+        "faq": [
+          { "question": "Können wir unsere eigenen Videoinhalte sicher hosten?", "answer": "Ja. Wir integrieren Video-Lösungen auf Unternehmensniveau wie Mux oder AWS, um adaptive Videos sicher zu streamen und illegale Downloads zu erschweren." },
+          { "question": "Kann das LMS automatisch Zertifikate erstellen?", "answer": "Absolut. Sobald ein Benutzer einen Kurs abgeschlossen hat, kann das System dynamisch ein personalisiertes PDF-Zertifikat erstellen und per E-Mail versenden." }
+        ]
+      },
+      "metaTitle": "Individuelle LMS-Entwicklung | E-Learning Plattformen",
+      "metaDescription": "Erstellen Sie ein maßgeschneidertes Learning Management System (LMS) mit Video-Streaming, Prüfungen und Fortschrittsverfolgung für Ihr Unternehmen."
+    },
+    "ur": {
+      "name": "سیکھنے کے انتظام کے نظام",
+      "shortDescription": "کورسز، تشخیصات، اور پیشرفت سے باخبر رہنے کے ساتھ ای لرننگ پلیٹ فارمز بنائیں۔",
+      "fullDescription": "سیکھنے کے ایک مخصوص نظام (LMS) کے ساتھ آپ کی تنظیم کے پڑھانے اور تربیت دینے کے طریقے کو تبدیل کریں۔ چاہے آپ کلاس رومز کو آن لائن لانے کے خواہاں تعلیمی ادارے ہوں، یا کوئی کارپوریشن جس کا مقصد ملازمین کی آن بورڈنگ اور تعمیل کی تربیت کو ہموار کرنا ہو، عام پلیٹ فارم اکثر بے ہودہ محسوس کرتے ہیں اور ان میں مخصوص انضمام کا فقدان ہوتا ہے۔ ہم کسٹم، قابل توسیع LMS پلیٹ فارم بناتے ہیں جو کشش، انٹرایکٹو سیکھنے کے تجربات فراہم کرتے ہیں۔ محفوظ ویڈیو ہوسٹنگ (Mux یا AWS کے ذریعے)، انٹرایکٹو کوئز بنانے والے، اور SCORM کی تعمیل سے لے کر، گیمفائیڈ پروگریس ٹریکنگ اور خودکار سرٹیفیکیشن تک، ہم ایسے سسٹمز ڈیزائن کرتے ہیں جو سیکھنے کو قابل رسائی، ٹریک ایبل، اور انتہائی موثر بناتے ہیں۔",
+      "features": [
+        "انٹرایکٹو کورس اور نصاب بنانے والا",
+        "محفوظ ویڈیو ہوسٹنگ اور لائیو سٹریمنگ انٹیگریشن",
+        "متحرک کوئزز، تشخیص اور درجہ بندی",
+        "گیمیفیکیشن، سرٹیفیکیشن اور بیجز",
+        "تفصیلی تجزیات اور طلباء کی پیشرفت سے باخبر رہنا",
+        "SCORM / xAPI تعمیل کی حمایت"
+      ],
+      "benefits": [
+        "انتہائی پرکشش سیکھنے کے تجربات",
+        "خودکار انتظامی کام (درجہ بندی، سرٹیفکیٹ)",
+        "ہزاروں ہم وقتی سیکھنے والوں تک قابل توسیع",
+        "موجودہ HR/CRM سسٹمز کے ساتھ ہموار انضمام",
+        "محفوظ منیٹائزیشن (سبسکرپشنز، ایک وقتی خریداریاں)"
+      ],
+      "content": {
+        "process": [
+          { "title": "تقاضے اور نصاب کی نقشہ بندی", "description": "اپنے مواد کی اقسام، صارف کے کردار (انسٹرکٹرز بمقابلہ طلباء)، اور سیکھنے کے راستے کو سمجھنا۔" },
+          { "title": "پلیٹ فارم آرکیٹیکچر", "description": "ویڈیو سٹریمنگ، پیش رفت کی حالتوں، اور محفوظ تشخیصات کو ہینڈل کرنے کے لیے ڈیٹا بیس کو ڈیزائن کرنا۔" },
+          { "title": "ترقی", "description": "تیز فرنٹ اینڈ کے لیے Next.js اور مضبوط بیک اینڈ کے لیے Node.js/PostgreSQL کا استعمال کرتے ہوئے LMS کی تعمیر۔" },
+          { "title": "مواد کی منتقلی اور انضمام", "description": "موجودہ کورسز درآمد کرنا اور ادائیگی کے گیٹ ویز جیسے سٹرائپ کو مربوط کرنا۔" },
+          { "title": "جانچ اور آغاز", "description": "اس بات کو یقینی بنانا کہ ویڈیوز عالمی سطح پر تیزی سے لوڈ ہوں اور تشخیص کا درست حساب لگائیں۔" }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Node.js",
+          "PostgreSQL",
+          "Mux (Video Streaming)",
+          "AWS S3 (Asset Storage)",
+          "Stripe (Payments)"
+        ],
+        "faq": [
+          { "question": "کیا ہم اپنے ویڈیو مواد کو محفوظ طریقے سے میزبانی کر سکتے ہیں؟", "answer": "ہاں۔ ہم انٹرپرائز گریڈ ویڈیو سلوشنز جیسے Mux یا AWS MediaConvert کو انکولی بٹریٹ ویڈیوز کو محفوظ طریقے سے سٹریم کرنے کے لیے انضمام کرتے ہیں، اس بات کو یقینی بناتے ہوئے کہ وہ کسی بھی کنکشن پر تیزی سے لوڈ ہوں اور بحری قزاقوں یا غیر قانونی طور پر ڈاؤن لوڈ کرنا مشکل ہو۔" },
+          { "question": "کیا LMS خود بخود سرٹیفکیٹ تیار کر سکتا ہے؟", "answer": "بالکل۔ ایک بار جب صارف حتمی تشخیص پاس کر لیتا ہے یا سیکھنے کا راستہ مکمل کر لیتا ہے، تو نظام متحرک طور پر ایک ذاتی نوعیت کا PDF سرٹیفکیٹ تیار کر سکتا ہے اور اسے ای میل کر سکتا ہے، یا اسے ان کے پروفائل میں شامل کر سکتا ہے۔" }
+        ]
+      },
+      "metaTitle": "کسٹم ایل ایم ایس ڈیولپمنٹ | ای لرننگ پلیٹ فارمز",
+      "metaDescription": "اپنی مرضی کے مطابق لرننگ مینجمنٹ سسٹم (LMS) بنائیں۔ ہم ویڈیو سٹریمنگ، تشخیص، اور پیشرفت سے باخبر رہنے کے ساتھ اسکیل ایبل ای لرننگ پلیٹ فارم تیار کرتے ہیں۔"
+    },
+    "ar": {
+      "name": "أنظمة إدارة التعلم (LMS)",
+      "shortDescription": "قم بإنشاء منصات تعليم إلكتروني تتضمن دورات وتقييمات وتتبع للتقدم.",
+      "fullDescription": "غيّر طريقة التدريس والتدريب في مؤسستك باستخدام نظام إدارة تعلم (LMS) مخصص. سواء كنت مؤسسة تعليمية تتطلع إلى جلب الفصول الدراسية عبر الإنترنت، أو شركة تهدف إلى تبسيط إعداد الموظفين والتدريب على الامتثال، غالبًا ما تبدو المنصات العامة متعبة وتفتقر إلى تكاملات محددة. نحن نبني منصات LMS مخصصة وقابلة للتطوير توفر تجارب تعليمية تفاعلية وجذابة. من استضافة الفيديو الآمنة (عبر Mux أو AWS)، ومنشئي الاختبارات التفاعلية، والتوافق مع SCORM، إلى تتبع التقدم القائم على الألعاب (Gamification) وإصدار الشهادات الآلي، نحن نصمم أنظمة تجعل التعلم سهل الوصول إليه وقابلاً للتتبع وفعالاً للغاية.",
+      "features": [
+        "منشئ دورات ومناهج تفاعلية",
+        "استضافة فيديو آمنة وتكامل البث المباشر",
+        "اختبارات ديناميكية وتقييمات ودرجات",
+        "التلعيب (Gamification) والشهادات والشارات",
+        "تحليلات مفصلة وتتبع تقدم الطالب",
+        "دعم الامتثال لمعايير SCORM / xAPI"
+      ],
+      "benefits": [
+        "تجارب تعليمية جذابة للغاية",
+        "المهام الإدارية المؤتمتة (التصنيف، الشهادات)",
+        "قابلة للتطوير لآلاف المتعلمين المتزامنين",
+        "تكامل سلس مع أنظمة الموارد البشرية / CRM الحالية",
+        "تحقيق الدخل الآمن (اشتراكات، مشتريات لمرة واحدة)"
+      ],
+      "content": {
+        "process": [
+          { "title": "المتطلبات ورسم خرائط المناهج", "description": "فهم أنواع المحتوى وأدوار المستخدمين (المدربون مقابل الطلاب) ومسارات التعلم." },
+          { "title": "بنية المنصة", "description": "تصميم قاعدة البيانات للتعامل مع بث الفيديو وحالات التقدم والتقييمات الآمنة." },
+          { "title": "التطوير", "description": "بناء نظام إدارة التعلم باستخدام Next.js لواجهة أمامية سريعة و Node.js/PostgreSQL لواجهة خلفية قوية." },
+          { "title": "ترحيل المحتوى وتكامله", "description": "استيراد الدورات التدريبية الحالية ودمج بوابات الدفع مثل Stripe." },
+          { "title": "الاختبار والإطلاق", "description": "ضمان تحميل مقاطع الفيديو بسرعة على مستوى العالم وحساب التقييمات بشكل صحيح." }
+        ],
+        "technologies": [
+          "Next.js / React",
+          "Node.js",
+          "PostgreSQL",
+          "Mux (بث الفيديو)",
+          "AWS S3 (تخزين الأصول)",
+          "Stripe (المدفوعات)"
+        ],
+        "faq": [
+          { "question": "هل يمكننا استضافة محتوى الفيديو الخاص بنا بأمان؟", "answer": "نعم. نقوم بدمج حلول الفيديو على مستوى المؤسسات مثل Mux أو AWS MediaConvert لبث مقاطع فيديو بمعدل نقل بيانات متكيف (Adaptive Bitrate) بأمان، مما يضمن تحميلها بسرعة على أي اتصال ويصعب قرصنتها أو تنزيلها بشكل غير قانوني." },
+          { "question": "هل يمكن لنظام LMS إنشاء الشهادات تلقائيًا؟", "answer": "بالتأكيد. بمجرد اجتياز المستخدم لتقييم نهائي أو إكماله لمسار تعليمي، يمكن للنظام إنشاء شهادة PDF مخصصة ديناميكيًا وإرسالها إليه بالبريد الإلكتروني، أو إضافتها إلى ملفه الشخصي." }
+        ]
+      },
+      "metaTitle": "تطوير أنظمة إدارة التعلم المخصصة | منصات التعليم الإلكتروني",
+      "metaDescription": "قم ببناء نظام إدارة تعلم (LMS) مخصص. نقوم بتطوير منصات تعليم إلكتروني قابلة للتطوير مع بث الفيديو والتقييمات وتتبع التقدم."
+    }
+  },
+  "legacy-system-modernization": {
+    "en": {
+      "name": "Legacy System Modernization",
+      "shortDescription": "Modernize legacy applications with updated architecture, cloud migration, and new interfaces.",
+      "fullDescription": "Outdated software holding your business back? Legacy systems often suffer from high maintenance costs, security vulnerabilities, poor performance, and a lack of integrations. Our Legacy System Modernization services breathe new life into your mission-critical applications without disrupting your daily operations. We don't just 'lift and shift'; we carefully analyze your existing architecture, extract core business logic, and refactor it into modern, scalable microservices. Whether you need to migrate an old on-premise monolith to the AWS cloud, replace a clunky UI with a modern React frontend, or completely rewrite a legacy codebase, we provide a structured, risk-mitigated path to modernization.",
+      "features": [
+        "Comprehensive Code & Architecture Audit",
+        "Monolith to Microservices Refactoring",
+        "Cloud Migration (AWS, Azure, Google Cloud)",
+        "Database Migration & Modernization",
+        "API Wrapping of Legacy Functions",
+        "UI/UX Revamp with Modern Frameworks (React/Vue)"
+      ],
+      "benefits": [
+        "Drastically Reduced Maintenance Costs",
+        "Improved System Security & Compliance",
+        "Infinite Scalability in the Cloud",
+        "Faster Feature Rollouts & Agility",
+        "Improved Employee Productivity via Better UI"
+      ],
+      "content": {
+        "process": [
+          { "title": "Assessment & Strategy", "description": "Auditing the legacy codebase, identifying bottlenecks, and planning the modernization path (Rehost, Refactor, or Rewrite)." },
+          { "title": "API Wrapping (Strangler Fig)", "description": "Creating modern APIs around old systems to allow the frontend to be updated immediately." },
+          { "title": "Incremental Refactoring", "description": "Gradually replacing legacy modules with new microservices without system downtime." },
+          { "title": "Cloud Migration", "description": "Moving databases and applications to scalable cloud infrastructure." },
+          { "title": "Retirement", "description": "Safely decommissioning the old legacy servers once the new system is fully verified." }
+        ],
+        "technologies": [
+          "Docker / Kubernetes",
+          "AWS / Azure",
+          "Node.js / Python / Go",
+          "PostgreSQL / MongoDB",
+          "GraphQL / REST",
+          "React / Next.js"
+        ],
+        "faq": [
+          { "question": "Will modernizing my system cause downtime?", "answer": "We mitigate this by using the 'Strangler Fig' pattern. We build the new system alongside the old one, gradually routing traffic to the new microservices piece by piece. This ensures virtually zero downtime during the transition." },
+          { "question": "Should we rewrite the software from scratch or update the existing code?", "answer": "It depends on the state of the codebase. If the business logic is sound but the tech is old, we might wrap it in APIs and migrate it to the cloud. If the code is unmaintainable 'spaghetti', a phased rewrite is usually the most cost-effective long-term solution." }
+        ]
+      },
+      "metaTitle": "Legacy System Modernization Services | Cloud Migration",
+      "metaDescription": "Upgrade outdated software with our Legacy System Modernization services. We specialize in cloud migration, microservices, and rewriting legacy code."
+    },
+    "tr": {
+      "name": "Eski Sistem Modernizasyonu",
+      "shortDescription": "Güncellenmiş mimari, bulut geçişi ve yeni arayüzlerle eski uygulamaları modernize edin.",
+      "fullDescription": "Eski yazılımlar işletmenizi geride mi tutuyor? Eski (Legacy) sistemler genellikle yüksek bakım maliyetlerinden, güvenlik açıklarından, zayıf performanstan ve entegrasyon eksikliğinden muzdariptir. Eski Sistem Modernizasyonu hizmetlerimiz, günlük operasyonlarınızı aksatmadan kritik uygulamalarınıza yeni bir soluk getirir. Sadece 'olduğu gibi taşıma' (lift and shift) yapmıyoruz; mevcut mimarinizi dikkatlice analiz ediyor, temel iş mantığını çıkarıyor ve modern, ölçeklenebilir mikro hizmetler (microservices) olarak yeniden yapılandırıyoruz (refactoring). İster eski bir şirket içi (on-premise) monolitik yapıyı AWS bulutuna taşımanız, ister hantal bir kullanıcı arayüzünü modern bir React ön ucuyla değiştirmeniz veya eski bir kod tabanını tamamen yeniden yazmanız gereksin, modernizasyon için yapılandırılmış, riskleri azaltılmış bir yol sunuyoruz.",
+      "features": [
+        "Kapsamlı Kod ve Mimari Denetimi",
+        "Monolitten Mikro Hizmetlere Yeniden Yapılandırma",
+        "Bulut Geçişi (AWS, Azure, Google Cloud)",
+        "Veritabanı Geçişi ve Modernizasyonu",
+        "Eski İşlevlerin API ile Sarılması (API Wrapping)",
+        "Modern Çerçevelerle (React/Vue) UI/UX Yenilemesi"
+      ],
+      "benefits": [
+        "Önemli Ölçüde Azaltılmış Bakım Maliyetleri",
+        "Gelişmiş Sistem Güvenliği ve Uyumluluk",
+        "Bulutta Sınırsız Ölçeklenebilirlik",
+        "Daha Hızlı Özellik Sunumu ve Çeviklik",
+        "Daha İyi Kullanıcı Arayüzü ile Artan Çalışan Verimliliği"
+      ],
+      "content": {
+        "process": [
+          { "title": "Değerlendirme ve Strateji", "description": "Eski kod tabanını denetleme, darboğazları belirleme ve modernizasyon yolunu planlama (Yeniden Barındırma, Yeniden Yapılandırma veya Yeniden Yazma)." },
+          { "title": "API ile Sarma (Strangler Fig Deseni)", "description": "Ön ucun anında güncellenmesine olanak tanımak için eski sistemlerin etrafında modern API'ler oluşturma." },
+          { "title": "Artımlı Yeniden Yapılandırma", "description": "Sistem kesintisi olmadan eski modülleri kademeli olarak yeni mikro hizmetlerle değiştirme." },
+          { "title": "Bulut Geçişi", "description": "Veritabanlarını ve uygulamaları ölçeklenebilir bulut altyapısına taşıma." },
+          { "title": "Kullanımdan Kaldırma", "description": "Yeni sistem tamamen doğrulandıktan sonra eski sunucuları güvenli bir şekilde devreden çıkarma." }
+        ],
+        "technologies": [
+          "Docker / Kubernetes",
+          "AWS / Azure",
+          "Node.js / Python / Go",
+          "PostgreSQL / MongoDB",
+          "GraphQL / REST",
+          "React / Next.js"
+        ],
+        "faq": [
+          { "question": "Sistemimi modernize etmek kesintiye neden olur mu?", "answer": "Bunu 'Strangler Fig' (Boğan İncir) desenini kullanarak hafifletiyoruz. Yeni sistemi eskisinin yanında inşa ediyor, trafiği kademeli olarak parça parça yeni mikro hizmetlere yönlendiriyoruz. Bu, geçiş sırasında neredeyse sıfır kesinti süresi sağlar." },
+          { "question": "Yazılımı sıfırdan yeniden mi yazmalıyız yoksa mevcut kodu mu güncellemeliyiz?", "answer": "Bu, kod tabanının durumuna bağlıdır. İş mantığı sağlam ancak teknoloji eskiyse, onu API'lerle sarıp buluta taşıyabiliriz. Kod bakımı yapılamaz bir 'spagetti' ise, aşamalı bir yeniden yazım genellikle en uygun maliyetli uzun vadeli çözümdür." }
+        ]
+      },
+      "metaTitle": "Eski (Legacy) Sistem Modernizasyon Hizmetleri | Bulut Geçişi",
+      "metaDescription": "Eski Sistem Modernizasyonu hizmetlerimizle modası geçmiş yazılımları yükseltin. Bulut geçişi, mikro hizmetler ve eski kodları yeniden yazma konularında uzmanız."
+    },
+    "de": {
+      "name": "Modernisierung von Altsystemen (Legacy)",
+      "shortDescription": "Modernisieren Sie Legacy-Anwendungen mit aktualisierter Architektur, Cloud-Migration und neuen Schnittstellen.",
+      "fullDescription": "Veraltete Software hält Ihr Unternehmen zurück? Legacy-Systeme leiden oft unter hohen Wartungskosten, Sicherheitslücken, schlechter Leistung und mangelnden Integrationen. Unsere Modernisierungsdienste hauchen Ihren geschäftskritischen Anwendungen neues Leben ein, ohne Ihren täglichen Betrieb zu stören. Wir machen nicht nur „Lift and Shift“; wir analysieren sorgfältig Ihre bestehende Architektur, extrahieren die Kerngeschäftslogik und überarbeiten sie (Refactoring) in moderne, skalierbare Microservices. Ob Sie einen alten On-Premise-Monolithen in die AWS-Cloud migrieren, eine klobige Benutzeroberfläche durch ein modernes React-Frontend ersetzen oder eine alte Codebasis komplett neu schreiben müssen – wir bieten einen strukturierten, risikomindernden Weg zur Modernisierung.",
+      "features": [
+        "Umfassendes Code- & Architektur-Audit",
+        "Refactoring vom Monolithen zu Microservices",
+        "Cloud-Migration (AWS, Azure, Google Cloud)",
+        "Datenbank-Migration & Modernisierung",
+        "API-Wrapping von Legacy-Funktionen",
+        "UI/UX-Neugestaltung mit modernen Frameworks"
+      ],
+      "benefits": [
+        "Drastisch reduzierte Wartungskosten",
+        "Verbesserte Systemsicherheit & Compliance",
+        "Unendliche Skalierbarkeit in der Cloud",
+        "Schnellere Feature-Rollouts & Agilität",
+        "Verbesserte Mitarbeiterproduktivität durch bessere UI"
+      ],
+      "content": {
+        "process": [
+          { "title": "Bewertung & Strategie", "description": "Überprüfung der alten Codebasis, Identifizierung von Engpässen und Planung des Modernisierungspfads." },
+          { "title": "API-Wrapping (Strangler Fig)", "description": "Erstellung moderner APIs um alte Systeme herum, damit das Frontend sofort aktualisiert werden kann." },
+          { "title": "Schrittweises Refactoring", "description": "Schrittweiser Ersatz von Legacy-Modulen durch neue Microservices ohne Systemausfallzeit." },
+          { "title": "Cloud-Migration", "description": "Verlagerung von Datenbanken und Anwendungen auf eine skalierbare Cloud-Infrastruktur." },
+          { "title": "Stilllegung", "description": "Sichere Außerbetriebnahme der alten Server, sobald das neue System vollständig verifiziert ist." }
+        ],
+        "technologies": [
+          "Docker / Kubernetes",
+          "AWS / Azure",
+          "Node.js / Python / Go",
+          "PostgreSQL / MongoDB",
+          "GraphQL / REST",
+          "React / Next.js"
+        ],
+        "faq": [
+          { "question": "Verursacht die Modernisierung meines Systems Ausfallzeiten?", "answer": "Wir mindern dies durch die Verwendung des 'Strangler Fig'-Musters. Wir bauen das neue System parallel zum alten auf und leiten den Datenverkehr nach und nach Stück für Stück an die neuen Microservices um. Dies gewährleistet praktisch null Ausfallzeiten während des Übergangs." },
+          { "question": "Sollten wir die Software von Grund auf neu schreiben oder aktualisieren?", "answer": "Das hängt vom Zustand des Codes ab. Wenn die Geschäftslogik in Ordnung, die Technologie aber alt ist, können wir sie mit APIs umhüllen und in die Cloud migrieren. Bei unwartbarem Code ist eine schrittweise Neuschreibung oft am kostengünstigsten." }
+        ]
+      },
+      "metaTitle": "Legacy System Modernisierung | Cloud-Migration & Refactoring",
+      "metaDescription": "Aktualisieren Sie veraltete Software mit unseren Modernisierungsdiensten. Wir sind spezialisiert auf Cloud-Migration, Microservices und Legacy-Code-Refactoring."
+    },
+    "ur": {
+      "name": "میراثی نظام کو جدید بنانا",
+      "shortDescription": "اپ ڈیٹ کردہ فن تعمیر، کلاؤڈ مائیگریشن، اور نئے انٹرفیس کے ساتھ پرانی ایپلی کیشنز کو جدید بنائیں۔",
+      "fullDescription": "فرسودہ سافٹ ویئر آپ کے کاروبار کو پیچھے کھینچ رہا ہے؟ میراثی نظام اکثر دیکھ بھال کی زیادہ لاگت، حفاظتی کمزوریوں، خراب کارکردگی، اور انضمام کی کمی کا شکار ہوتے ہیں۔ ہماری لیگیسی سسٹم ماڈرنائزیشن سروسز آپ کے روزمرہ کے کاموں میں خلل ڈالے بغیر آپ کی مشن کے لیے اہم ایپلی کیشنز میں نئی جان ڈالتی ہیں۔ ہم صرف 'لفٹ اور شفٹ' نہیں کرتے ہیں۔ ہم احتیاط سے آپ کے موجودہ فن تعمیر کا تجزیہ کرتے ہیں، بنیادی کاروباری منطق کو نکالتے ہیں، اور اسے جدید، توسیع پذیر مائیکرو سروسز میں ری ایکٹر کرتے ہیں۔ چاہے آپ کو پرانے آن پریمیس مونولتھ کو AWS کلاؤڈ پر منتقل کرنے کی ضرورت ہو، ایک کلنکی UI کو جدید React فرنٹ اینڈ سے تبدیل کرنے کی ضرورت ہو، یا مکمل طور پر پرانے کوڈ بیس کو دوبارہ لکھنے کی ضرورت ہو، ہم جدید کاری کا ایک منظم، خطرے سے کم ہونے والا راستہ فراہم کرتے ہیں۔",
+      "features": [
+        "جامع کوڈ اور آرکیٹیکچر آڈٹ",
+        "مونولیتھ ٹو مائیکرو سروسز ری فیکٹرنگ",
+        "کلاؤڈ مائیگریشن (AWS، Azure، Google Cloud)",
+        "ڈیٹا بیس کی منتقلی اور جدید کاری",
+        "میراثی افعال کی API ریپنگ",
+        "جدید فریم ورکس کے ساتھ UI/UX کو بہتر بنائیں (React/Vue)"
+      ],
+      "benefits": [
+        "دیکھ بھال کے اخراجات میں زبردست کمی",
+        "نظام کی بہتر حفاظت اور تعمیل",
+        "بادل میں لامحدود اسکیل ایبلٹی",
+        "تیز فیچر رول آؤٹ اور چستی۔",
+        "بہتر UI کے ذریعے ملازمین کی پیداواری صلاحیت میں بہتری"
+      ],
+      "content": {
+        "process": [
+          { "title": "تشخیص اور حکمت عملی", "description": "میراثی کوڈ بیس کا آڈٹ کرنا، رکاوٹوں کی نشاندہی کرنا، اور جدید کاری کے راستے کی منصوبہ بندی کرنا (دوبارہ ہوسٹ، ری فیکٹر، یا دوبارہ لکھنا)۔" },
+          { "title": "API ریپنگ (اسٹرینگلر انجیر)", "description": "پرانے سسٹمز کے ارد گرد جدید APIs بنانا تاکہ فرنٹ اینڈ کو فوری طور پر اپ ڈیٹ کیا جا سکے۔" },
+          { "title": "انکریمنٹل ری فیکٹرنگ", "description": "سسٹم کے ڈاؤن ٹائم کے بغیر پرانے ماڈیولز کو بتدریج نئی مائیکرو سروسز کے ساتھ تبدیل کرنا۔" },
+          { "title": "کلاؤڈ مائیگریشن", "description": "ڈیٹا بیسز اور ایپلی کیشنز کو توسیع پذیر کلاؤڈ انفراسٹرکچر میں منتقل کرنا۔" },
+          { "title": "ریٹائرمنٹ", "description": "نئے سسٹم کی مکمل تصدیق ہونے کے بعد پرانے لیگیسی سرورز کو بحفاظت ختم کرنا۔" }
+        ],
+        "technologies": [
+          "Docker / Kubernetes",
+          "AWS / Azure",
+          "Node.js / Python / Go",
+          "PostgreSQL / MongoDB",
+          "GraphQL / REST",
+          "React / Next.js"
+        ],
+        "faq": [
+          { "question": "کیا میرے سسٹم کو جدید بنانے سے ڈاون ٹائم ہو گا؟", "answer": "ہم 'Strangler Fig' پیٹرن استعمال کر کے اس کو کم کرتے ہیں۔ ہم پرانے سسٹم کے ساتھ نیا سسٹم بناتے ہیں، آہستہ آہستہ ٹریفک کو نئی مائیکرو سروسز کے ٹکڑے کی طرف روٹ کرتے ہیں۔ یہ منتقلی کے دوران عملی طور پر صفر ڈاؤن ٹائم کو یقینی بناتا ہے۔" },
+          { "question": "کیا ہمیں سافٹ ویئر کو شروع سے دوبارہ لکھنا چاہیے یا موجودہ کوڈ کو اپ ڈیٹ کرنا چاہیے؟", "answer": "یہ کوڈ بیس کی حالت پر منحصر ہے۔ اگر کاروباری منطق درست ہے لیکن ٹیکنالوجی پرانی ہے، تو ہم اسے APIs میں لپیٹ کر کلاؤڈ میں منتقل کر سکتے ہیں۔ اگر کوڈ غیر برقرار رکھنے کے قابل 'سپیگیٹی' ہے، تو ایک مرحلہ وار دوبارہ لکھنا عام طور پر طویل مدتی حل ہے جو سب سے زیادہ لاگت والا ہے۔" }
+        ]
+      },
+      "metaTitle": "میراثی نظام جدید بنانے کی خدمات | کلاؤڈ مائیگریشن",
+      "metaDescription": "ہماری لیگیسی سسٹم ماڈرنائزیشن سروسز کے ساتھ فرسودہ سافٹ ویئر کو اپ گریڈ کریں۔ ہم کلاؤڈ مائیگریشن، مائیکرو سروسز، اور پرانے کوڈ کو دوبارہ لکھنے میں مہارت رکھتے ہیں۔"
+    },
+    "ar": {
+      "name": "تحديث الأنظمة القديمة (Legacy)",
+      "shortDescription": "تحديث التطبيقات القديمة ببنية محدثة، وترحيل إلى السحابة، وواجهات جديدة.",
+      "fullDescription": "هل البرامج القديمة تعيق تقدم عملك؟ غالبًا ما تعاني الأنظمة القديمة (Legacy systems) من تكاليف صيانة عالية، وثغرات أمنية، وضعف في الأداء، ونقص في التكاملات. تبث خدمات تحديث الأنظمة القديمة لدينا حياة جديدة في تطبيقاتك ذات المهام الحرجة دون تعطيل عملياتك اليومية. نحن لا نقوم فقط بـ 'الرفع والنقل' (lift and shift)؛ بل نقوم بتحليل بنيتك الحالية بعناية، واستخراج منطق الأعمال الأساسي، وإعادة هيكلته (Refactoring) إلى خدمات مصغرة (Microservices) حديثة وقابلة للتطوير. سواء كنت بحاجة إلى ترحيل نظام متجانس قديم داخل الشركة إلى سحابة AWS، أو استبدال واجهة مستخدم متعبة بواجهة أمامية حديثة من React، أو إعادة كتابة قاعدة تعليمات برمجية قديمة بالكامل، فنحن نوفر مسارًا منظمًا ومخفف المخاطر للتحديث.",
+      "features": [
+        "تدقيق شامل للرموز (Code) والبنية",
+        "إعادة هيكلة (Refactoring) من النظام المتجانس إلى الخدمات المصغرة",
+        "الترحيل السحابي (AWS ، Azure ، Google Cloud)",
+        "ترحيل وتحديث قواعد البيانات",
+        "تغليف واجهة برمجة التطبيقات (API Wrapping) للوظائف القديمة",
+        "تجديد UI / UX بأطر عمل حديثة (React / Vue)"
+      ],
+      "benefits": [
+        "تقليل تكاليف الصيانة بشكل كبير",
+        "تحسين أمان النظام والامتثال",
+        "قابلية توسع غير محدودة في السحابة",
+        "إطلاق الميزات بشكل أسرع ومرونة أكبر",
+        "تحسين إنتاجية الموظفين عبر واجهة مستخدم أفضل"
+      ],
+      "content": {
+        "process": [
+          { "title": "التقييم والاستراتيجية", "description": "تدقيق قاعدة الكود القديمة، وتحديد الاختناقات، وتخطيط مسار التحديث (إعادة الاستضافة، إعادة الهيكلة، أو إعادة الكتابة)." },
+          { "title": "تغليف API (نمط الخنق - Strangler Fig)", "description": "إنشاء واجهات برمجة تطبيقات (APIs) حديثة حول الأنظمة القديمة للسماح بتحديث الواجهة الأمامية على الفور." },
+          { "title": "إعادة الهيكلة المتزايدة", "description": "استبدال الوحدات القديمة تدريجياً بخدمات مصغرة جديدة دون تعطل النظام." },
+          { "title": "الترحيل إلى السحابة", "description": "نقل قواعد البيانات والتطبيقات إلى بنية تحتية سحابية قابلة للتطوير." },
+          { "title": "الإحالة للتقاعد", "description": "إيقاف تشغيل الخوادم القديمة بأمان بمجرد التحقق من النظام الجديد بالكامل." }
+        ],
+        "technologies": [
+          "Docker / Kubernetes",
+          "AWS / Azure",
+          "Node.js / Python / Go",
+          "PostgreSQL / MongoDB",
+          "GraphQL / REST",
+          "React / Next.js"
+        ],
+        "faq": [
+          { "question": "هل سيؤدي تحديث نظامي إلى فترة توقف عن العمل؟", "answer": "نحن نخفف من ذلك باستخدام نمط 'Strangler Fig'. نقوم ببناء النظام الجديد جنبًا إلى جنب مع النظام القديم، وتوجيه حركة المرور تدريجيًا إلى الخدمات المصغرة الجديدة قطعة تلو الأخرى. وهذا يضمن عدم وجود توقف تقريبًا أثناء الانتقال." },
+          { "question": "هل يجب علينا إعادة كتابة البرنامج من الصفر أم تحديث الكود الحالي؟", "answer": "يعتمد ذلك على حالة قاعدة البيانات. إذا كان منطق العمل سليمًا ولكن التقنية قديمة، فقد نغلفها في واجهات برمجة التطبيقات ونرحلها إلى السحابة. إذا كان الكود عبارة عن 'سباغيتي' لا يمكن صيانته، فإن إعادة الكتابة المرحلية عادة ما تكون الحل طويل الأجل الأكثر فعالية من حيث التكلفة." }
+        ]
+      },
+      "metaTitle": "خدمات تحديث الأنظمة القديمة | الترحيل إلى السحابة",
+      "metaDescription": "قم بترقية البرامج القديمة من خلال خدمات تحديث الأنظمة القديمة لدينا. نحن متخصصون في الترحيل السحابي، والخدمات المصغرة، وإعادة كتابة الكود القديم."
+    }
+  }
+}
