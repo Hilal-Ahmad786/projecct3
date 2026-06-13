@@ -32,6 +32,7 @@ import {
   SerpRankingScene, EmailInboxScene, FunnelScene, SocialFeedScene,
   KanbanBoardScene, VideoPlayerScene, DatabaseRingsScene, CryptoChainScene,
 } from './scenes-growth';
+import HomeHeroScene from '@/components/HomeHeroScene';
 
 // ── Animation Types ──────────────────────────────────────────────────
 export type HeroVisualType =
@@ -42,7 +43,8 @@ export type HeroVisualType =
   | 'gear-system' | 'network-nodes' | 'layers-stack' | 'target-bullseye' | 'chat-bubbles'
   | 'server-stack'
   | 'serp-ranking' | 'email-inbox' | 'funnel' | 'social-feed'
-  | 'kanban-board' | 'video-player' | 'database-rings' | 'crypto-chain';
+  | 'kanban-board' | 'video-player' | 'database-rings' | 'crypto-chain'
+  | 'capability-hub';
 
 export type BgPattern = 'grid' | 'dots' | 'waves' | 'diagonal-lines' | 'hexagons' | 'circles' | 'none';
 export type DecorationType = 'circles' | 'squares' | 'triangles' | 'hexagons' | 'dots' | 'lines' | 'mixed';
@@ -187,6 +189,7 @@ const SCENES: Record<HeroVisualType, React.ComponentType> = {
   'video-player': VideoPlayerScene,
   'database-rings': DatabaseRingsScene,
   'crypto-chain': CryptoChainScene,
+  'capability-hub': HomeHeroScene,
 };
 
 // ── Main dispatcher (public API unchanged) ──────────────────────────

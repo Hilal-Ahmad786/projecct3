@@ -5,7 +5,7 @@ import {
   useScroll, useTransform, useSpring,
 } from 'framer-motion'
 import { gsap } from 'gsap'
-import HeroRightEnhanced from '@/components/HeroRightEnhanced'
+import HomeHeroOrbit from '@/components/HomeHeroOrbit'
 import MagneticButton from '@/components/MagneticButton'
 import Button from '@/components/Button'
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations'
@@ -383,7 +383,7 @@ export default function Hero() {
             transition={prefersReducedMotion ? { duration: 0 } : { ...smoothSpring, delay: 0.35 }}
             className="relative"
           >
-            <HeroRightEnhanced />
+            <HomeHeroOrbit />
           </motion.div>
         </div>
       </div>
