@@ -1,0 +1,662 @@
+{
+  "ui-ux-design": {
+    "en": [
+      {
+        "question": "What is the difference between UI and UX design?",
+        "answer": "User Experience (UX) focuses on how the product works and feels—the logic, user journey, and overall satisfaction when solving a problem. User Interface (UI) focuses on how the product looks—the colors, typography, buttons, and visual aesthetics. We always design UX before UI."
+      },
+      {
+        "question": "Can you redesign our existing application?",
+        "answer": "Yes. We frequently perform UI/UX revamps for legacy systems. We audit your current app to identify friction points, reorganize the information architecture, and apply a modern, intuitive design system to increase user engagement and retention."
+      },
+      {
+        "question": "How do you ensure the design aligns with our brand?",
+        "answer": "We start with a thorough brand discovery phase. We analyze your brand guidelines, target audience, and competitors to create mood boards and design systems (colors, fonts, tone) that perfectly reflect your brand's unique identity."
+      },
+      {
+        "question": "Do you design for mobile or desktop first?",
+        "answer": "We generally advocate for a 'Mobile-First' design approach. Since most web traffic is mobile, designing for the smallest screen first forces us to prioritize the most critical features. We then scale the design up for tablet and desktop views."
+      },
+      {
+        "question": "Will you provide the source design files?",
+        "answer": "Absolutely. Upon project completion, we hand over all original design files, typically in Figma. These files include the complete design system, component libraries, and interactive prototypes, ensuring your developers have exactly what they need."
+      },
+      {
+        "question": "How do you handle accessibility in your designs?",
+        "answer": "Accessibility is not an afterthought. We design adhering to WCAG (Web Content Accessibility Guidelines) standards. This includes ensuring sufficient color contrast, designing large enough tap targets, and structuring layouts to be navigable by screen readers."
+      }
+    ],
+    "tr": [
+      {
+        "question": "UI (Kullanıcı Arayüzü) ve UX (Kullanıcı Deneyimi) tasarımı arasındaki fark nedir?",
+        "answer": "Kullanıcı Deneyimi (UX), ürünün nasıl çalıştığına ve hissettirdiğine (mantık, kullanıcı yolculuğu ve bir sorunu çözerken genel memnuniyet) odaklanır. Kullanıcı Arayüzü (UI), ürünün nasıl göründüğüne (renkler, tipografi, düğmeler ve görsel estetik) odaklanır. Her zaman UI'dan önce UX'i tasarlıyoruz."
+      },
+      {
+        "question": "Mevcut uygulamamızı yeniden tasarlayabilir misiniz?",
+        "answer": "Evet. Eski sistemler için sıklıkla UI/UX yenilemeleri yapıyoruz. Sürtünme (zorluk) noktalarını belirlemek, bilgi mimarisini yeniden düzenlemek ve kullanıcı etkileşimini ve elde tutmayı artırmak için modern, sezgisel bir tasarım sistemi uygulamak üzere mevcut uygulamanızı denetliyoruz."
+      },
+      {
+        "question": "Tasarımın markamızla uyumlu olmasını nasıl sağlıyorsunuz?",
+        "answer": "Kapsamlı bir marka keşif aşamasıyla başlıyoruz. Markanızın benzersiz kimliğini mükemmel bir şekilde yansıtan ruh hali panoları (mood boards) ve tasarım sistemleri (renkler, yazı tipleri, ton) oluşturmak için marka yönergelerinizi, hedef kitlenizi ve rakiplerinizi analiz ediyoruz."
+      },
+      {
+        "question": "Önce mobil için mi yoksa masaüstü için mi tasarım yapıyorsunuz?",
+        "answer": "Genellikle 'Önce Mobil' (Mobile-First) tasarım yaklaşımını savunuyoruz. Çoğu web trafiği mobil olduğundan, önce en küçük ekran için tasarım yapmak bizi en kritik özelliklere öncelik vermeye zorlar. Daha sonra tasarımı tablet ve masaüstü görünümleri için ölçeklendiriyoruz."
+      },
+      {
+        "question": "Kaynak tasarım dosyalarını verecek misiniz?",
+        "answer": "Kesinlikle. Proje tamamlandığında, genellikle Figma formatında olmak üzere tüm orijinal tasarım dosyalarını teslim ediyoruz. Bu dosyalar eksiksiz tasarım sistemini, bileşen kitaplıklarını ve etkileşimli prototipleri içerir ve geliştiricilerinizin tam olarak ihtiyaç duydukları şeye sahip olmalarını sağlar."
+      },
+      {
+        "question": "Tasarımlarınızda erişilebilirliği nasıl yönetiyorsunuz?",
+        "answer": "Erişilebilirlik sonradan düşünülen bir şey değildir. WCAG (Web İçeriği Erişilebilirlik Yönergeleri) standartlarına bağlı kalarak tasarım yapıyoruz. Bu, yeterli renk kontrastının sağlanmasını, yeterince büyük dokunma hedeflerinin tasarlanmasını ve düzenlerin ekran okuyucular tarafından gezinilebilir olacak şekilde yapılandırılmasını içerir."
+      }
+    ],
+    "de": [
+      {
+        "question": "Was ist der Unterschied zwischen UI- und UX-Design?",
+        "answer": "User Experience (UX) konzentriert sich darauf, wie das Produkt funktioniert und sich anfühlt – die Logik, die User Journey und die allgemeine Zufriedenheit bei der Lösung eines Problems. Das User Interface (UI) konzentriert sich auf das Aussehen des Produkts – Farben, Typografie, Schaltflächen und visuelle Ästhetik. Wir entwerfen immer zuerst die UX, bevor wir uns der UI widmen."
+      },
+      {
+        "question": "Können Sie unsere bestehende Anwendung neu gestalten?",
+        "answer": "Ja. Wir führen häufig UI/UX-Überarbeitungen für Legacy-Systeme durch. Wir überprüfen Ihre aktuelle App, um Reibungspunkte zu identifizieren, die Informationsarchitektur neu zu organisieren und ein modernes, intuitives Designsystem anzuwenden, um die Benutzereinbindung und -bindung zu erhöhen."
+      },
+      {
+        "question": "Wie stellen Sie sicher, dass das Design zu unserer Marke passt?",
+        "answer": "Wir beginnen mit einer gründlichen Markenfindungsphase. Wir analysieren Ihre Markenrichtlinien, Ihre Zielgruppe und Ihre Mitbewerber, um Moodboards und Designsysteme (Farben, Schriftarten, Tonalität) zu erstellen, die die einzigartige Identität Ihrer Marke perfekt widerspiegeln."
+      },
+      {
+        "question": "Entwerfen Sie zuerst für Mobilgeräte oder für Desktops?",
+        "answer": "Wir befürworten generell einen „Mobile-First“-Designansatz. Da der meiste Web-Traffic über Mobilgeräte abgewickelt wird, zwingt uns die Gestaltung für den kleinsten Bildschirm dazu, die wichtigsten Funktionen zu priorisieren. Anschließend skalieren wir das Design für Tablet- und Desktop-Ansichten hoch."
+      },
+      {
+        "question": "Werden Sie die Quell-Designdateien zur Verfügung stellen?",
+        "answer": "Absolut. Nach Abschluss des Projekts übergeben wir alle Original-Designdateien, typischerweise in Figma. Diese Dateien umfassen das komplette Designsystem, Komponentenbibliotheken und interaktive Prototypen und stellen sicher, dass Ihre Entwickler genau das haben, was sie brauchen."
+      },
+      {
+        "question": "Wie gehen Sie mit der Barrierefreiheit (Accessibility) in Ihren Designs um?",
+        "answer": "Barrierefreiheit ist kein nachträglicher Gedanke. Wir entwerfen unter Einhaltung der WCAG-Standards (Web Content Accessibility Guidelines). Dazu gehört die Gewährleistung eines ausreichenden Farbkontrasts, die Gestaltung ausreichend großer Tippziele und die Strukturierung von Layouts, sodass sie von Screenreadern navigiert werden können."
+      }
+    ],
+    "ur": [
+      {
+        "question": "UI اور UX ڈیزائن میں کیا فرق ہے؟",
+        "answer": "صارف کا تجربہ (UX) اس بات پر مرکوز ہے کہ پروڈکٹ کیسے کام کرتی ہے اور محسوس کرتی ہے—منطق، صارف کا سفر، اور کسی مسئلے کو حل کرتے وقت مجموعی اطمینان۔ یوزر انٹرفیس (UI) اس بات پر فوکس کرتا ہے کہ پروڈکٹ کیسا لگتا ہے — رنگ، نوع ٹائپ، بٹن، اور بصری جمالیات۔ ہم ہمیشہ UI سے پہلے UX ڈیزائن کرتے ہیں۔"
+      },
+      {
+        "question": "کیا آپ ہماری موجودہ ایپلیکیشن کو دوبارہ ڈیزائن کر سکتے ہیں؟",
+        "answer": "ہاں۔ ہم اکثر میراثی نظاموں کے لیے UI/UX میں بہتری کرتے ہیں۔ رگڑ کے نکات کی نشاندہی کرنے، معلوماتی فن تعمیر کو دوبارہ منظم کرنے، اور صارف کی مصروفیت اور برقراری کو بڑھانے کے لیے ایک جدید، بدیہی ڈیزائن سسٹم لاگو کرنے کے لیے ہم آپ کی موجودہ ایپ کا آڈٹ کرتے ہیں۔"
+      },
+      {
+        "question": "آپ اس بات کو کیسے یقینی بناتے ہیں کہ ڈیزائن ہمارے برانڈ کے مطابق ہے؟",
+        "answer": "ہم مکمل برانڈ کی دریافت کے مرحلے سے شروع کرتے ہیں۔ ہم آپ کے برانڈ کے رہنما خطوط، ہدف کے سامعین، اور حریفوں کا تجزیہ کرتے ہیں تاکہ موڈ بورڈز اور ڈیزائن سسٹم (رنگ، فونٹ، ٹون) تخلیق کریں جو آپ کے برانڈ کی منفرد شناخت کی مکمل عکاسی کرتے ہیں۔"
+      },
+      {
+        "question": "کیا آپ پہلے موبائل یا ڈیسک ٹاپ کے لیے ڈیزائن کرتے ہیں؟",
+        "answer": "ہم عام طور پر 'موبائل-پہلے' ڈیزائن کے نقطہ نظر کی وکالت کرتے ہیں۔ چونکہ زیادہ تر ویب ٹریفک موبائل ہے، اس لیے سب سے چھوٹی اسکرین کے لیے ڈیزائن کرنا ہمیں سب سے اہم خصوصیات کو ترجیح دینے پر مجبور کرتا ہے۔ پھر ہم ٹیبلیٹ اور ڈیسک ٹاپ کے نظاروں کے لیے ڈیزائن کو بڑھاتے ہیں۔"
+      },
+      {
+        "question": "کیا آپ سورس ڈیزائن کی فائلیں فراہم کریں گے؟",
+        "answer": "بالکل۔ پروجیکٹ کی تکمیل پر، ہم تمام اصل ڈیزائن کی فائلیں، عام طور پر فگما میں دیتے ہیں۔ ان فائلوں میں مکمل ڈیزائن کا نظام، اجزاء کی لائبریریاں، اور انٹرایکٹو پروٹو ٹائپس شامل ہیں، اس بات کو یقینی بناتے ہوئے کہ آپ کے ڈویلپرز کے پاس بالکل وہی ہے جس کی انہیں ضرورت ہے۔"
+      },
+      {
+        "question": "آپ اپنے ڈیزائن میں رسائی کو کیسے سنبھالتے ہیں؟",
+        "answer": "رسائی بعد کی سوچ نہیں ہے۔ ہم WCAG (ویب مواد تک رسائی کے رہنما خطوط) کے معیارات پر عمل پیرا ہو کر ڈیزائن کرتے ہیں۔ اس میں رنگ کے کافی تضاد کو یقینی بنانا، کافی بڑے نل کے اہداف کو ڈیزائن کرنا، اور اسکرین ریڈرز کے ذریعے تشریف لے جانے کے لیے لے آؤٹ کی ساخت شامل ہے۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "ما الفرق بين تصميم واجهة المستخدم (UI) وتجربة المستخدم (UX)؟",
+        "answer": "تركز تجربة المستخدم (UX) على كيفية عمل المنتج وشعوره - المنطق، ورحلة المستخدم، والرضا العام عند حل مشكلة ما. تركز واجهة المستخدم (UI) على كيفية ظهور المنتج - الألوان والطباعة والأزرار والجماليات البصرية. نقوم دائمًا بتصميم UX قبل UI."
+      },
+      {
+        "question": "هل يمكنك إعادة تصميم تطبيقنا الحالي؟",
+        "answer": "نعم. نقوم بشكل متكرر بتجديد واجهة المستخدم/تجربة المستخدم (UI/UX) للأنظمة القديمة. نقوم بمراجعة تطبيقك الحالي لتحديد نقاط الاحتكاك، وإعادة تنظيم بنية المعلومات، وتطبيق نظام تصميم حديث وبديهي لزيادة تفاعل المستخدمين والاحتفاظ بهم."
+      },
+      {
+        "question": "كيف تضمن أن التصميم يتوافق مع علامتنا التجارية؟",
+        "answer": "نبدأ بمرحلة اكتشاف شاملة للعلامة التجارية. نقوم بتحليل إرشادات علامتك التجارية والجمهور المستهدف والمنافسين لإنشاء لوحات المزاج (mood boards) وأنظمة التصميم (الألوان والخطوط والنبرة) التي تعكس تمامًا الهوية الفريدة لعلامتك التجارية."
+      },
+      {
+        "question": "هل تصممون للأجهزة المحمولة أولاً أم لسطح المكتب؟",
+        "answer": "نحن ندعو بشكل عام إلى نهج التصميم 'الهاتف المحمول أولاً' (Mobile-First). نظرًا لأن معظم حركة مرور الويب تتم عبر الأجهزة المحمولة، فإن التصميم لأصغر شاشة أولاً يجبرنا على إعطاء الأولوية للميزات الأكثر أهمية. نقوم بعد ذلك بتوسيع نطاق التصميم ليلائم طرق عرض الأجهزة اللوحية وسطح المكتب."
+      },
+      {
+        "question": "هل ستقدمون ملفات التصميم المصدرية؟",
+        "answer": "بالتأكيد. عند اكتمال المشروع، نقوم بتسليم جميع ملفات التصميم الأصلية، عادةً بتنسيق Figma. تتضمن هذه الملفات نظام التصميم الكامل، ومكتبات المكونات، والنماذج الأولية التفاعلية، مما يضمن أن مطوريك لديهم بالضبط ما يحتاجون إليه."
+      },
+      {
+        "question": "كيف تتعاملون مع إمكانية الوصول (accessibility) في تصميماتكم؟",
+        "answer": "إمكانية الوصول ليست فكرة لاحقة. نحن نصمم مع الالتزام بمعايير WCAG (إرشادات إمكانية الوصول إلى محتوى الويب). يشمل ذلك ضمان تباين كافٍ للألوان، وتصميم أهداف نقر (tap targets) كبيرة بما يكفي، وهيكلة التخطيطات بحيث يمكن التنقل فيها بواسطة برامج قراءة الشاشة."
+      }
+    ]
+  },
+  "ux-research": {
+    "en": [
+      {
+        "question": "What exactly is UX research?",
+        "answer": "UX (User Experience) research is the systematic study of your target users to uncover their needs, behaviors, pain points, and motivations. It moves design decisions away from 'guessing' and bases them on actual data and human psychology."
+      },
+      {
+        "question": "Why is UX research important before building a product?",
+        "answer": "Building a product without UX research is like building a house without a blueprint. Research ensures you are solving a real problem that users actually care about, drastically reducing the risk of launching a product that nobody wants to use or buy."
+      },
+      {
+        "question": "What research methods do you use?",
+        "answer": "We employ a mix of qualitative and quantitative methods. This includes in-depth user interviews, contextual inquiries, card sorting (for information architecture), surveys, A/B testing, and usability testing on existing products or prototypes."
+      },
+      {
+        "question": "How do you find the right people to interview?",
+        "answer": "We handle the entire participant recruiting process. We create specific screener questionnaires based on your ideal customer profile (ICP) and recruit participants through specialized panels, social media outreach, or by intercepting users on your existing platform."
+      },
+      {
+        "question": "What deliverables will we receive at the end of the research?",
+        "answer": "You will receive a comprehensive Research Findings Report. This typically includes detailed User Personas, Customer Journey Maps, identified pain points, usability scores, and most importantly, highly actionable design and product recommendations."
+      },
+      {
+        "question": "How long does a typical UX research sprint take?",
+        "answer": "A focused UX research sprint, from defining the research goals and recruiting participants to conducting interviews and delivering the final synthesized report, generally takes 3 to 5 weeks."
+      }
+    ],
+    "tr": [
+      {
+        "question": "UX (Kullanıcı Deneyimi) araştırması tam olarak nedir?",
+        "answer": "UX (Kullanıcı Deneyimi) araştırması, hedef kullanıcılarınızın ihtiyaçlarını, davranışlarını, sıkıntılı noktalarını (pain points) ve motivasyonlarını ortaya çıkarmak için yapılan sistematik çalışmadır. Tasarım kararlarını 'tahmin etme'den uzaklaştırır ve bunları gerçek verilere ve insan psikolojisine dayandırır."
+      },
+      {
+        "question": "Bir ürün oluşturmadan önce UX araştırması neden önemlidir?",
+        "answer": "UX araştırması yapmadan bir ürün inşa etmek, planı (blueprint) olmadan bir ev inşa etmeye benzer. Araştırma, kullanıcıların gerçekten önemsediği gerçek bir sorunu çözdüğünüzden emin olmanızı sağlar ve kimsenin kullanmak veya satın almak istemediği bir ürünü piyasaya sürme riskini büyük ölçüde azaltır."
+      },
+      {
+        "question": "Hangi araştırma yöntemlerini kullanıyorsunuz?",
+        "answer": "Nitel ve nicel yöntemlerin bir karışımını kullanıyoruz. Buna derinlemesine kullanıcı görüşmeleri, bağlamsal sorgulamalar, kart sıralama (bilgi mimarisi için), anketler, A/B testi ve mevcut ürünler veya prototipler üzerinde kullanılabilirlik testi dahildir."
+      },
+      {
+        "question": "Görüşülecek doğru kişileri nasıl buluyorsunuz?",
+        "answer": "Tüm katılımcı işe alım sürecini biz yönetiyoruz. İdeal müşteri profilinize (ICP) dayalı özel eleme anketleri oluşturuyoruz ve özel paneller, sosyal medya erişimi veya mevcut platformunuzdaki kullanıcıları yakalayarak katılımcı buluyoruz."
+      },
+      {
+        "question": "Araştırmanın sonunda hangi teslimatları (deliverables) alacağız?",
+        "answer": "Kapsamlı bir Araştırma Bulguları Raporu alacaksınız. Bu genellikle ayrıntılı Kullanıcı Personaları, Müşteri Yolculuk Haritaları, tanımlanmış sıkıntı noktaları, kullanılabilirlik puanları ve en önemlisi, son derece eyleme geçirilebilir tasarım ve ürün önerileri içerir."
+      },
+      {
+        "question": "Tipik bir UX araştırma sprinti (süreci) ne kadar sürer?",
+        "answer": "Araştırma hedeflerini belirlemekten ve katılımcıları bulmaktan görüşmeler yapmaya ve son sentezlenmiş raporu teslim etmeye kadar odaklanmış bir UX araştırma sprinti genellikle 3 ila 5 hafta sürer."
+      }
+    ],
+    "de": [
+      {
+        "question": "Was genau ist UX-Research?",
+        "answer": "UX (User Experience) Research ist die systematische Untersuchung Ihrer Zielbenutzer, um deren Bedürfnisse, Verhaltensweisen, Schwachstellen (Pain Points) und Motivationen aufzudecken. Dadurch werden Designentscheidungen nicht mehr auf „Raten“ gestützt, sondern auf tatsächliche Daten und menschliche Psychologie."
+      },
+      {
+        "question": "Warum ist UX-Research wichtig, bevor man ein Produkt entwickelt?",
+        "answer": "Ein Produkt ohne UX-Research zu entwickeln ist wie ein Haus ohne Bauplan zu bauen. Die Forschung stellt sicher, dass Sie ein echtes Problem lösen, das den Benutzern tatsächlich am Herzen liegt, und reduziert so drastisch das Risiko, ein Produkt auf den Markt zu bringen, das niemand nutzen oder kaufen möchte."
+      },
+      {
+        "question": "Welche Forschungsmethoden nutzen Sie?",
+        "answer": "Wir verwenden eine Mischung aus qualitativen und quantitativen Methoden. Dazu gehören ausführliche Nutzerinterviews, kontextbezogene Befragungen, Card Sorting (für die Informationsarchitektur), Umfragen, A/B-Tests und Usability-Tests an bestehenden Produkten oder Prototypen."
+      },
+      {
+        "question": "Wie finden Sie die richtigen Personen für ein Interview?",
+        "answer": "Wir übernehmen den gesamten Rekrutierungsprozess der Teilnehmer. Wir erstellen spezifische Screener-Fragebögen basierend auf Ihrem idealen Kundenprofil (ICP) und rekrutieren Teilnehmer über spezialisierte Panels, Social-Media-Outreach oder durch das Abfangen von Benutzern auf Ihrer bestehenden Plattform."
+      },
+      {
+        "question": "Welche Ergebnisse erhalten wir am Ende der Recherche?",
+        "answer": "Sie erhalten einen umfassenden Bericht über die Forschungsergebnisse. Dieser enthält typischerweise detaillierte User Personas, Customer Journey Maps, identifizierte Pain Points, Usability Scores und vor allem hochgradig umsetzbare Design- und Produktempfehlungen."
+      },
+      {
+        "question": "Wie lange dauert ein typischer UX-Research-Sprint?",
+        "answer": "Ein fokussierter UX-Research-Sprint, von der Definition der Forschungsziele und der Rekrutierung von Teilnehmern über die Durchführung von Interviews bis hin zur Lieferung des endgültigen zusammenfassenden Berichts, dauert in der Regel 3 bis 5 Wochen."
+      }
+    ],
+    "ur": [
+      {
+        "question": "UX تحقیق بالکل کیا ہے؟",
+        "answer": "یو ایکس (یوزر ایکسپیریئنس) ریسرچ آپ کے ہدف کے صارفین کا ان کی ضروریات، طرز عمل، درد کے نکات اور محرکات کو ننگا کرنے کے لیے منظم مطالعہ ہے۔ یہ ڈیزائن کے فیصلوں کو 'قیاس' سے دور کرتا ہے اور انہیں اصل ڈیٹا اور انسانی نفسیات پر بناتا ہے۔"
+      },
+      {
+        "question": "پروڈکٹ بنانے سے پہلے UX ریسرچ کیوں ضروری ہے؟",
+        "answer": "UX ریسرچ کے بغیر پروڈکٹ بنانا بلیو پرنٹ کے بغیر گھر بنانے کے مترادف ہے۔ ریسرچ اس بات کو یقینی بناتی ہے کہ آپ ایک ایسا حقیقی مسئلہ حل کر رہے ہیں جس کی صارفین کو درحقیقت پرواہ ہے، ایسی پروڈکٹ لانچ کرنے کے خطرے کو نمایاں طور پر کم کر رہا ہے جسے کوئی استعمال نہیں کرنا چاہتا یا خریدنا نہیں چاہتا۔"
+      },
+      {
+        "question": "آپ کون سے تحقیقی طریقے استعمال کرتے ہیں؟",
+        "answer": "ہم کوالیٹیٹو اور مقداری طریقوں کا مرکب استعمال کرتے ہیں۔ اس میں صارف کے گہرائی سے انٹرویوز، سیاق و سباق سے متعلق پوچھ گچھ، کارڈ چھانٹنا (معلوماتی فن تعمیر کے لیے)، سروے، A/B ٹیسٹنگ، اور موجودہ مصنوعات یا پروٹو ٹائپ پر قابل استعمال ٹیسٹنگ شامل ہیں۔"
+      },
+      {
+        "question": "آپ انٹرویو کے لیے صحیح لوگوں کو کیسے تلاش کرتے ہیں؟",
+        "answer": "ہم شرکاء کی بھرتی کے پورے عمل کو سنبھالتے ہیں۔ ہم آپ کے مثالی کسٹمر پروفائل (ICP) کی بنیاد پر مخصوص اسکرینر سوالنامے بناتے ہیں اور مخصوص پینلز، سوشل میڈیا آؤٹ ریچ، یا آپ کے موجودہ پلیٹ فارم پر صارفین کو روک کر شرکاء کو بھرتی کرتے ہیں۔"
+      },
+      {
+        "question": "تحقیق کے اختتام پر ہمیں کیا ڈیلیوری ملے گی؟",
+        "answer": "آپ کو ایک جامع تحقیقی نتائج کی رپورٹ موصول ہوگی۔ اس میں عام طور پر تفصیلی صارف پرسنز، کسٹمر جرنی میپس، پین پوائنٹس کی شناخت، استعمال کے اسکورز، اور سب سے اہم بات، انتہائی قابل عمل ڈیزائن اور پروڈکٹ کی سفارشات شامل ہیں۔"
+      },
+      {
+        "question": "ایک عام UX ریسرچ سپرنٹ میں کتنا وقت لگتا ہے؟",
+        "answer": "ایک فوکسڈ UX ریسرچ سپرنٹ، ریسرچ کے اہداف کی وضاحت اور شرکاء کی بھرتی سے لے کر انٹرویوز کے انعقاد اور آخری ترکیب شدہ رپورٹ کی فراہمی تک، عام طور پر 3 سے 5 ہفتے لگتے ہیں۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "ما هو بالضبط بحث تجربة المستخدم (UX research)؟",
+        "answer": "بحث تجربة المستخدم (UX) هو الدراسة المنهجية للمستخدمين المستهدفين للكشف عن احتياجاتهم وسلوكياتهم ونقاط الألم (pain points) ودوافعهم. إنه ينقل قرارات التصميم بعيدًا عن 'التخمين' ويبنيها على البيانات الفعلية وعلم النفس البشري."
+      },
+      {
+        "question": "لماذا يعد بحث تجربة المستخدم مهمًا قبل بناء المنتج؟",
+        "answer": "إن بناء منتج بدون بحث تجربة المستخدم يشبه بناء منزل بدون مخطط. يضمن البحث أنك تحل مشكلة حقيقية يهتم بها المستخدمون بالفعل، مما يقلل بشكل كبير من مخاطر إطلاق منتج لا يريد أحد استخدامه أو شراءه."
+      },
+      {
+        "question": "ما هي طرق البحث التي تستخدمونها؟",
+        "answer": "نحن نستخدم مزيجًا من الأساليب النوعية والكمية. ويشمل ذلك المقابلات المتعمقة مع المستخدمين، والاستفسارات السياقية، وفرز البطاقات (card sorting - لهندسة المعلومات)، والاستطلاعات، واختبار A/B، واختبار قابلية الاستخدام على المنتجات الحالية أو النماذج الأولية."
+      },
+      {
+        "question": "كيف تعثرون على الأشخاص المناسبين لإجراء مقابلات معهم؟",
+        "answer": "نحن نتعامل مع عملية توظيف المشاركين بأكملها. نقوم بإنشاء استبيانات فحص محددة بناءً على ملف تعريف العميل المثالي (ICP) الخاص بك وتوظيف المشاركين من خلال لجان متخصصة، أو التواصل عبر وسائل التواصل الاجتماعي، أو عن طريق اعتراض المستخدمين على منصتك الحالية."
+      },
+      {
+        "question": "ما هي المخرجات (deliverables) التي سنتلقاها في نهاية البحث؟",
+        "answer": "ستتلقى تقريرًا شاملاً عن نتائج البحث. يتضمن هذا عادةً شخصيات المستخدمين التفصيلية (User Personas)، وخرائط رحلة العميل، ونقاط الألم المحددة، ودرجات قابلية الاستخدام، والأهم من ذلك، توصيات تصميم ومنتجات قابلة للتنفيذ للغاية."
+      },
+      {
+        "question": "ما المدة التي يستغرقها سباق بحث تجربة المستخدم (UX research sprint) النموذجي؟",
+        "answer": "يستغرق سباق بحث UX المركز، بدءًا من تحديد أهداف البحث وتوظيف المشاركين إلى إجراء المقابلات وتقديم التقرير النهائي المُجمَّع، من 3 إلى 5 أسابيع بشكل عام."
+      }
+    ]
+  },
+  "zapier-automation": {
+    "en": [
+      {
+        "question": "What is Zapier and why do we need it?",
+        "answer": "Zapier is a powerful middleware platform that connects thousands of different web applications without requiring code. You need it to eliminate manual, repetitive tasks—like copy-pasting lead data from Facebook Ads into your CRM and then sending a Slack notification."
+      },
+      {
+        "question": "Can you build custom Zaps if our app isn't on Zapier?",
+        "answer": "Yes. If an application isn't officially listed on Zapier, we can use Webhooks by Zapier or build a custom private Zapier app integration to connect its API to your workflow."
+      },
+      {
+        "question": "Is Zapier secure enough for handling sensitive customer data?",
+        "answer": "Zapier employs bank-level encryption, SOC 2 Type II compliance, and strict data retention policies. However, for extremely sensitive data (like HIPAA-regulated healthcare information), we evaluate the data flow to ensure full compliance before implementing automations."
+      },
+      {
+        "question": "What are 'multi-step' Zaps?",
+        "answer": "A standard Zap is one trigger and one action (e.g., New Email -> Save Attachment to Dropbox). A multi-step Zap executes complex logic with conditional paths (e.g., If Email from VIP -> Send SMS to CEO; Else -> Add to Newsletter list and delay 2 days before emailing)."
+      },
+      {
+        "question": "How much maintenance do Zapier automations require?",
+        "answer": "Generally, very little. Zapier is highly stable. Maintenance is typically only required if a connected application makes a breaking change to their API or if you change your account credentials. We build robust error handling and notifications so you are instantly alerted if an automation fails."
+      },
+      {
+        "question": "Does automating processes with Zapier save money?",
+        "answer": "Significantly. Automating manual data entry, customer onboarding emails, and invoice generation can save hundreds of human-hours per month. The ROI on Zapier integration is often realized within the first 30 days of deployment."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Zapier nedir ve ona neden ihtiyacımız var?",
+        "answer": "Zapier, kod gerektirmeden binlerce farklı web uygulamasını birbirine bağlayan güçlü bir ara katman (middleware) platformudur. Müşteri adayı (lead) verilerini Facebook Reklamlarından CRM'inize kopyalayıp yapıştırmak ve ardından bir Slack bildirimi göndermek gibi manuel, tekrarlayan görevleri ortadan kaldırmak için ona ihtiyacınız vardır."
+      },
+      {
+        "question": "Uygulamamız Zapier'de yoksa özel Zap'ler oluşturabilir misiniz?",
+        "answer": "Evet. Bir uygulama resmi olarak Zapier'de listelenmiyorsa, API'sini iş akışınıza bağlamak için Zapier Webhook'larını kullanabilir veya özel bir gizli Zapier uygulama entegrasyonu oluşturabiliriz."
+      },
+      {
+        "question": "Zapier hassas müşteri verilerini işlemek için yeterince güvenli mi?",
+        "answer": "Zapier, banka düzeyinde şifreleme, SOC 2 Tip II uyumluluğu ve katı veri saklama politikaları kullanır. Bununla birlikte, son derece hassas veriler (HIPAA tarafından düzenlenen sağlık bilgileri gibi) için, otomasyonları uygulamadan önce tam uyumluluk sağlamak üzere veri akışını değerlendiririz."
+      },
+      {
+        "question": "'Çok adımlı' (multi-step) Zap'ler nelerdir?",
+        "answer": "Standart bir Zap, bir tetikleyici ve bir eylemdir (örn. Yeni E-posta -> Eki Dropbox'a Kaydet). Çok adımlı bir Zap, koşullu yollarla karmaşık mantık yürütür (örn. VIP'den e-posta geliyorsa -> CEO'ya SMS Gönder; Değilse -> Bülten listesine ekle ve e-posta göndermeden önce 2 gün ertele)."
+      },
+      {
+        "question": "Zapier otomasyonları ne kadar bakım gerektirir?",
+        "answer": "Genel olarak, çok az. Zapier oldukça kararlıdır. Bakım, genellikle yalnızca bağlı bir uygulamanın API'sinde bozucu (breaking) bir değişiklik yapması veya hesap kimlik bilgilerinizi değiştirmeniz durumunda gereklidir. Bir otomasyon başarısız olduğunda anında uyarılmanız için sağlam hata işleme ve bildirimler oluşturuyoruz."
+      },
+      {
+        "question": "Süreçleri Zapier ile otomatikleştirmek para tasarrufu sağlar mı?",
+        "answer": "Önemli ölçüde. Manuel veri girişini, müşteriyi işe alıştırma (onboarding) e-postalarını ve fatura oluşturmayı otomatikleştirmek, ayda yüzlerce insan saati tasarrufu sağlayabilir. Zapier entegrasyonunun Yatırım Getirisi (ROI) genellikle dağıtımın ilk 30 günü içinde fark edilir."
+      }
+    ],
+    "de": [
+      {
+        "question": "Was ist Zapier und warum brauchen wir es?",
+        "answer": "Zapier ist eine leistungsstarke Middleware-Plattform, die Tausende verschiedener Webanwendungen ohne Code verbindet. Sie benötigen es, um manuelle, sich wiederholende Aufgaben zu eliminieren – wie z. B. das Kopieren und Einfügen von Lead-Daten aus Facebook Ads in Ihr CRM und das anschließende Senden einer Slack-Benachrichtigung."
+      },
+      {
+        "question": "Können Sie benutzerdefinierte Zaps erstellen, wenn unsere App nicht auf Zapier ist?",
+        "answer": "Ja. Wenn eine Anwendung nicht offiziell auf Zapier gelistet ist, können wir Webhooks von Zapier verwenden oder eine benutzerdefinierte private Zapier-App-Integration erstellen, um deren API mit Ihrem Workflow zu verbinden."
+      },
+      {
+        "question": "Ist Zapier sicher genug für den Umgang mit sensiblen Kundendaten?",
+        "answer": "Zapier verwendet Verschlüsselung auf Bankenniveau, SOC 2 Type II-Konformität und strenge Richtlinien zur Datenaufbewahrung. Bei extrem sensiblen Daten (wie HIPAA-regulierten Gesundheitsinformationen) bewerten wir jedoch den Datenfluss, um die vollständige Einhaltung sicherzustellen, bevor wir Automatisierungen implementieren."
+      },
+      {
+        "question": "Was sind „mehrstufige“ Zaps?",
+        "answer": "Ein Standard-Zap ist ein Auslöser und eine Aktion (z. B. Neue E-Mail -> Anhang in Dropbox speichern). Ein mehrstufiger Zap führt komplexe Logik mit bedingten Pfaden aus (z. B. Wenn E-Mail von VIP -> SMS an CEO senden; Andernfalls -> Zur Newsletter-Liste hinzufügen und 2 Tage vor dem E-Mail-Versand warten)."
+      },
+      {
+        "question": "Wie viel Wartung erfordern Zapier-Automatisierungen?",
+        "answer": "In der Regel sehr wenig. Zapier ist sehr stabil. Eine Wartung ist in der Regel nur erforderlich, wenn eine verbundene Anwendung eine bahnbrechende Änderung an ihrer API vornimmt oder wenn Sie Ihre Kontoanmeldeinformationen ändern. Wir erstellen eine robuste Fehlerbehandlung und Benachrichtigungen, damit Sie sofort benachrichtigt werden, wenn eine Automatisierung fehlschlägt."
+      },
+      {
+        "question": "Spart die Automatisierung von Prozessen mit Zapier Geld?",
+        "answer": "Erheblich. Die Automatisierung der manuellen Dateneingabe, von Kunden-Onboarding-E-Mails und der Rechnungserstellung kann Hunderte von Arbeitsstunden pro Monat einsparen. Der ROI der Zapier-Integration wird oft innerhalb der ersten 30 Tage nach der Bereitstellung realisiert."
+      }
+    ],
+    "ur": [
+      {
+        "question": "زپیئر کیا ہے اور ہمیں اس کی ضرورت کیوں ہے؟",
+        "answer": "Zapier ایک طاقتور مڈل ویئر پلیٹ فارم ہے جو کوڈ کی ضرورت کے بغیر ہزاروں مختلف ویب ایپلیکیشنز کو جوڑتا ہے۔ آپ کو دستی، دہرائے جانے والے کاموں کو ختم کرنے کے لیے اس کی ضرورت ہے — جیسے کہ Facebook اشتہارات سے اپنے CRM میں لیڈ ڈیٹا کو کاپی پیسٹ کرنا اور پھر Slack نوٹیفکیشن بھیجنا۔"
+      },
+      {
+        "question": "اگر ہماری ایپ Zapier پر نہیں ہے تو کیا آپ حسب ضرورت Zaps بنا سکتے ہیں؟",
+        "answer": "ہاں۔ اگر کوئی ایپلیکیشن باضابطہ طور پر Zapier پر درج نہیں ہے، تو ہم Webhooks از Zapier استعمال کر سکتے ہیں یا اس کے API کو آپ کے ورک فلو سے جوڑنے کے لیے اپنی مرضی کے مطابق نجی Zapier ایپ انٹیگریشن بنا سکتے ہیں۔"
+      },
+      {
+        "question": "کیا Zapier حساس کسٹمر ڈیٹا کو سنبھالنے کے لیے کافی محفوظ ہے؟",
+        "answer": "زپیئر بینک لیول انکرپشن، SOC 2 ٹائپ II کی تعمیل، اور ڈیٹا کو برقرار رکھنے کی سخت پالیسیاں استعمال کرتا ہے۔ تاہم، انتہائی حساس ڈیٹا (جیسے HIPAA-ریگولیٹڈ ہیلتھ کیئر کی معلومات) کے لیے، ہم آٹومیشنز کو نافذ کرنے سے پہلے مکمل تعمیل کو یقینی بنانے کے لیے ڈیٹا کے بہاؤ کا جائزہ لیتے ہیں۔"
+      },
+      {
+        "question": "'ملٹی سٹیپ' زیپس کیا ہیں؟",
+        "answer": "معیاری Zap ایک ٹرگر اور ایک عمل ہے (جیسے، نئی ای میل -> ڈراپ باکس میں اٹیچمنٹ کو محفوظ کریں)۔ ایک ملٹی سٹیپ زیپ مشروط راستوں کے ساتھ پیچیدہ منطق کو انجام دیتا ہے (مثلاً، اگر ای میل VIP سے -> CEO کو SMS بھیجیں؛ بصورت دیگر -> نیوز لیٹر کی فہرست میں شامل کریں اور ای میل کرنے سے پہلے 2 دن کی تاخیر کریں)۔"
+      },
+      {
+        "question": "Zapier آٹومیشنز کو کتنی دیکھ بھال کی ضرورت ہے؟",
+        "answer": "عام طور پر، بہت کم. Zapier انتہائی مستحکم ہے۔ دیکھ بھال کی عام طور پر تبھی ضرورت ہوتی ہے جب کوئی منسلک ایپلیکیشن ان کے API میں کوئی تبدیلی کرتی ہے یا اگر آپ اپنے اکاؤنٹ کی اسناد کو تبدیل کرتے ہیں۔ ہم مضبوط ایرر ہینڈلنگ اور اطلاعات بناتے ہیں لہذا اگر آٹومیشن ناکام ہوجاتا ہے تو آپ کو فوری طور پر الرٹ کردیا جاتا ہے۔"
+      },
+      {
+        "question": "کیا Zapier کے ساتھ عمل کو خودکار کرنے سے پیسے کی بچت ہوتی ہے؟",
+        "answer": "نمایاں طور پر. دستی ڈیٹا کے اندراج کو خودکار بنانا، گاہک کے جہاز پر آنے والی ای میلز، اور انوائس کی تخلیق سے ماہانہ سینکڑوں انسانی گھنٹے بچ سکتے ہیں۔ Zapier کے انضمام پر ROI اکثر تعیناتی کے پہلے 30 دنوں میں محسوس کیا جاتا ہے۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "ما هو Zapier ولماذا نحتاجه؟",
+        "answer": "Zapier هي منصة برمجيات وسيطة (middleware) قوية تربط الآلاف من تطبيقات الويب المختلفة دون الحاجة إلى كتابة كود. أنت بحاجة إليها للقضاء على المهام اليدوية المتكررة - مثل نسخ ولصق بيانات العملاء المحتملين (leads) من إعلانات Facebook إلى CRM الخاص بك ثم إرسال إشعار Slack."
+      },
+      {
+        "question": "هل يمكنك بناء Zaps مخصصة إذا لم يكن تطبيقنا موجودًا على Zapier؟",
+        "answer": "نعم. إذا لم يكن أحد التطبيقات مدرجًا رسميًا في Zapier، فيمكننا استخدام Webhooks من Zapier أو إنشاء تكامل تطبيق Zapier خاص مخصص لربط واجهة برمجة التطبيقات (API) الخاصة به بسير عملك."
+      },
+      {
+        "question": "هل Zapier آمن بما يكفي للتعامل مع بيانات العملاء الحساسة؟",
+        "answer": "يستخدم Zapier تشفيرًا على مستوى البنوك، ويتوافق مع SOC 2 Type II، وسياسات صارمة للاحتفاظ بالبيانات. ومع ذلك، بالنسبة للبيانات الحساسة للغاية (مثل معلومات الرعاية الصحية الخاضعة لتنظيم HIPAA)، نقوم بتقييم تدفق البيانات لضمان الامتثال الكامل قبل تنفيذ الأتمتة."
+      },
+      {
+        "question": "ما هي أدوات Zaps 'متعددة الخطوات' (multi-step)؟",
+        "answer": "إن Zap القياسي هو مشغل (trigger) واحد وإجراء واحد (مثل، بريد إلكتروني جديد -> حفظ المرفق في Dropbox). يقوم Zap متعدد الخطوات بتنفيذ منطق معقد بمسارات شرطية (على سبيل المثال، إذا كان البريد الإلكتروني من شخصية مهمة VIP -> إرسال رسالة قصيرة SMS إلى المدير التنفيذي؛ وإلا -> إضافة إلى قائمة النشرة الإخبارية وتأخير يومين قبل إرسال البريد الإلكتروني)."
+      },
+      {
+        "question": "ما مقدار الصيانة التي تتطلبها أتمتة Zapier؟",
+        "answer": "بشكل عام، القليل جدًا. Zapier مستقر للغاية. عادة ما تكون الصيانة مطلوبة فقط إذا أجرى تطبيق متصل تغييرًا جذريًا (breaking change) على واجهة برمجة التطبيقات (API) الخاصة به أو إذا قمت بتغيير بيانات اعتماد حسابك. نحن نبني معالجة قوية للأخطاء وإشعارات بحيث يتم تنبيهك على الفور إذا فشلت الأتمتة."
+      },
+      {
+        "question": "هل توفر أتمتة العمليات باستخدام Zapier المال؟",
+        "answer": "بشكل ملحوظ. يمكن أن توفر أتمتة إدخال البيانات اليدوي، ورسائل البريد الإلكتروني لتعريف العملاء (onboarding)، وإنشاء الفواتير مئات الساعات البشرية شهريًا. غالبًا ما يتحقق العائد على الاستثمار (ROI) من تكامل Zapier خلال أول 30 يومًا من النشر."
+      }
+    ]
+  },
+  "mvp-development": {
+    "en": [
+      {
+        "question": "What exactly is an MVP (Minimum Viable Product)?",
+        "answer": "An MVP is the most stripped-down version of your product that still delivers core value to early adopters. The goal isn't to launch a perfect product, but to launch quickly to validate your business assumptions and gather real user feedback before investing heavily in secondary features."
+      },
+      {
+        "question": "How long does it take to build an MVP?",
+        "answer": "Depending on the complexity, we typically build and launch MVPs within 8 to 12 weeks. We achieve this speed by aggressively prioritizing core features, utilizing existing frameworks, and using a rapid agile development cycle."
+      },
+      {
+        "question": "Will the MVP code be scalable later?",
+        "answer": "Yes. While an MVP is lean, we do not write 'throwaway' code. We build on solid, scalable architectures (like React, Node.js, and cloud databases) so that when your user base grows, we can build directly on top of the MVP foundation without rewriting the system."
+      },
+      {
+        "question": "How do you decide which features make it into the MVP?",
+        "answer": "We conduct a rigorous feature prioritization workshop. We map out your entire vision, and then relentlessly cut features based on what is absolutely necessary to solve the user's primary problem. Anything 'nice to have' is moved to the post-launch roadmap."
+      },
+      {
+        "question": "What happens after the MVP is launched?",
+        "answer": "Launch is just the beginning. We implement analytics to track how users actually interact with the app. Based on that data and user feedback, we enter an iterative cycle of building new features, improving UX, and scaling the infrastructure."
+      },
+      {
+        "question": "Can I use an MVP to raise venture capital?",
+        "answer": "Absolutely. A functioning MVP with active users (traction) is exponentially more powerful than a slide deck when pitching to investors. It proves your team can execute and that there is genuine market demand for your solution."
+      }
+    ],
+    "tr": [
+      {
+        "question": "MVP (Minimum Uygulanabilir Ürün) tam olarak nedir?",
+        "answer": "MVP, ürününüzün erken benimseyenlere (early adopters) hala temel değer sağlayan en yalın sürümüdür. Amaç mükemmel bir ürün piyasaya sürmek değil, ikincil özelliklere yoğun yatırım yapmadan önce iş varsayımlarınızı doğrulamak ve gerçek kullanıcı geri bildirimleri toplamak için hızla piyasaya sürmektir."
+      },
+      {
+        "question": "Bir MVP oluşturmak ne kadar sürer?",
+        "answer": "Karmaşıklığına bağlı olarak, MVP'leri genellikle 8 ila 12 hafta içinde oluşturur ve piyasaya süreriz. Temel özelliklere agresif bir şekilde öncelik vererek, mevcut çerçeveleri kullanarak ve hızlı bir çevik geliştirme döngüsü kullanarak bu hıza ulaşıyoruz."
+      },
+      {
+        "question": "MVP kodu daha sonra ölçeklenebilir olacak mı?",
+        "answer": "Evet. Bir MVP yalın olmakla birlikte, 'kullan at' kod yazmıyoruz. Sağlam, ölçeklenebilir mimariler (React, Node.js ve bulut veritabanları gibi) üzerine inşa ediyoruz, böylece kullanıcı tabanınız büyüdüğünde sistemi yeniden yazmadan doğrudan MVP temeli üzerine inşa edebiliriz."
+      },
+      {
+        "question": "Hangi özelliklerin MVP'ye gireceğine nasıl karar veriyorsunuz?",
+        "answer": "Kapsamlı bir özellik önceliklendirme atölyesi düzenliyoruz. Tüm vizyonunuzun haritasını çıkarıyoruz ve ardından kullanıcının birincil sorununu çözmek için kesinlikle neyin gerekli olduğuna dayanarak özellikleri acımasızca kesiyoruz. 'Olsa iyi olur' dediğimiz her şey lansman sonrası yol haritasına taşınır."
+      },
+      {
+        "question": "MVP başlatıldıktan sonra ne olur?",
+        "answer": "Lansman sadece başlangıçtır. Kullanıcıların uygulamayla gerçekte nasıl etkileşime girdiğini izlemek için analitik uyguluyoruz. Bu verilere ve kullanıcı geri bildirimlerine dayanarak, yeni özellikler oluşturma, UX'i geliştirme ve altyapıyı ölçeklendirme gibi yinelemeli bir döngüye giriyoruz."
+      },
+      {
+        "question": "Risk sermayesi toplamak için bir MVP kullanabilir miyim?",
+        "answer": "Kesinlikle. Aktif kullanıcıları (çekiş) olan işleyen bir MVP, yatırımcılara sunum yaparken bir slayt destesinden katlanarak daha güçlüdür. Ekibinizin icra edebileceğini ve çözümünüz için gerçek bir pazar talebi olduğunu kanıtlar."
+      }
+    ],
+    "de": [
+      {
+        "question": "Was genau ist ein MVP (Minimum Viable Product)?",
+        "answer": "Ein MVP ist die am stärksten reduzierte Version Ihres Produkts, die den Early Adopters dennoch den Kernwert liefert. Das Ziel ist nicht, ein perfektes Produkt auf den Markt zu bringen, sondern es schnell auf den Markt zu bringen, um Ihre Geschäftsannahmen zu validieren und echtes Benutzerfeedback zu sammeln, bevor Sie stark in sekundäre Funktionen investieren."
+      },
+      {
+        "question": "Wie lange dauert es, ein MVP zu erstellen?",
+        "answer": "Je nach Komplexität entwickeln und launchen wir MVPs typischerweise innerhalb von 8 bis 12 Wochen. Wir erreichen diese Geschwindigkeit, indem wir Kernfunktionen aggressiv priorisieren, vorhandene Frameworks nutzen und einen schnellen agilen Entwicklungszyklus anwenden."
+      },
+      {
+        "question": "Wird der MVP-Code später skalierbar sein?",
+        "answer": "Ja. Obwohl ein MVP schlank ist, schreiben wir keinen „Wegwerf“-Code. Wir bauen auf soliden, skalierbaren Architekturen (wie React, Node.js und Cloud-Datenbanken) auf, sodass wir bei wachsender Benutzerbasis direkt auf dem MVP-Fundament aufbauen können, ohne das System neu schreiben zu müssen."
+      },
+      {
+        "question": "Wie entscheiden Sie, welche Features es in das MVP schaffen?",
+        "answer": "Wir führen einen strengen Feature-Priorisierungs-Workshop durch. Wir skizzieren Ihre gesamte Vision und streichen dann gnadenlos Funktionen basierend darauf, was unbedingt notwendig ist, um das primäre Problem des Benutzers zu lösen. Alles, was 'nice to have' ist, wird in die Post-Launch-Roadmap verschoben."
+      },
+      {
+        "question": "Was passiert nach dem Launch des MVP?",
+        "answer": "Der Launch ist erst der Anfang. Wir implementieren Analysen, um zu verfolgen, wie Benutzer tatsächlich mit der App interagieren. Basierend auf diesen Daten und dem Feedback der Benutzer treten wir in einen iterativen Zyklus ein, in dem wir neue Funktionen entwickeln, die UX verbessern und die Infrastruktur skalieren."
+      },
+      {
+        "question": "Kann ich ein MVP verwenden, um Risikokapital zu beschaffen?",
+        "answer": "Absolut. Ein funktionierendes MVP mit aktiven Nutzern (Traction) ist beim Pitchen vor Investoren exponentiell wirkungsvoller als ein Slide-Deck. Es beweist, dass Ihr Team in der Lage ist, die Lösung umzusetzen, und dass eine echte Marktnachfrage nach Ihrer Lösung besteht."
+      }
+    ],
+    "ur": [
+      {
+        "question": "بالکل ایک MVP (کم از کم قابل عمل مصنوعات) کیا ہے؟",
+        "answer": "ایک MVP آپ کے پروڈکٹ کا سب سے چھین لیا ہوا ورژن ہے جو اب بھی ابتدائی گود لینے والوں کو بنیادی قیمت فراہم کرتا ہے۔ مقصد کامل پروڈکٹ کو لانچ کرنا نہیں ہے، بلکہ سیکنڈری فیچرز میں بہت زیادہ سرمایہ کاری کرنے سے پہلے اپنے کاروباری مفروضوں کی توثیق کرنے اور صارف کا حقیقی تاثرات جمع کرنے کے لیے تیزی سے لانچ کرنا ہے۔"
+      },
+      {
+        "question": "MVP بنانے میں کتنا وقت لگتا ہے؟",
+        "answer": "پیچیدگی پر منحصر ہے، ہم عام طور پر 8 سے 12 ہفتوں کے اندر MVPs بناتے اور لانچ کرتے ہیں۔ ہم بنیادی خصوصیات کو جارحانہ انداز میں ترجیح دے کر، موجودہ فریم ورک کو استعمال کر کے، اور تیز چست ترقیاتی دور کا استعمال کر کے یہ رفتار حاصل کرتے ہیں۔"
+      },
+      {
+        "question": "کیا بعد میں MVP کوڈ توسیع پذیر ہوگا؟",
+        "answer": "ہاں۔ جب کہ ایک MVP دبلا ہے، ہم 'تھرو وے' کوڈ نہیں لکھتے ہیں۔ ہم ٹھوس، توسیع پذیر فن تعمیر (جیسے React، Node.js، اور کلاؤڈ ڈیٹا بیس) پر بناتے ہیں تاکہ جب آپ کے صارف کی بنیاد بڑھ جائے، تو ہم سسٹم کو دوبارہ لکھے بغیر سیدधे MVP فاؤنڈیشن پر تعمیر کر سکتے ہیں۔"
+      },
+      {
+        "question": "آپ یہ کیسے طے کرتے ہیں کہ کون سی خصوصیات اسے MVP میں بناتی ہیں؟",
+        "answer": "ہم فیچر کو ترجیح دینے کی ایک سخت ورکشاپ کا انعقاد کرتے ہیں۔ ہم آپ کے پورے وژن کا نقشہ بناتے ہیں، اور پھر بے رحمی کے ساتھ خصوصیات کو کاٹ دیتے ہیں اس بات کی بنیاد پر کہ صارف کے بنیادی مسئلے کو حل کرنے کے لیے کیا بالکل ضروری ہے۔ کوئی بھی 'نیس ٹو ہیو' لانچ کے بعد کے روڈ میپ پر منتقل ہو جاتا ہے۔"
+      },
+      {
+        "question": "MVP شروع ہونے کے بعد کیا ہوتا ہے؟",
+        "answer": "لانچ تو صرف شروعات ہے۔ صارفین حقیقت میں ایپ کے ساتھ کس طرح تعامل کرتے ہیں اس کا پتہ لگانے کے لیے ہم تجزیات کو نافذ کرتے ہیں۔ اس ڈیٹا اور صارف کے تاثرات کی بنیاد پر، ہم نئی خصوصیات بنانے، UX کو بہتر بنانے اور بنیادی ڈھانچے کو اسکیل کرنے کے ایک تکراری چکر میں داخل ہوتے ہیں۔"
+      },
+      {
+        "question": "کیا میں وینچر کیپیٹل اکٹھا کرنے کے لیے MVP استعمال کر سکتا ہوں؟",
+        "answer": "بالکل۔ فعال صارفین (ٹریکشن) کے ساتھ کام کرنے والا MVP سرمایہ کاروں کو پیش کرتے وقت سلائیڈ ڈیک سے کہیں زیادہ طاقتور ہوتا ہے۔ یہ ثابت کرتا ہے کہ آپ کی ٹیم کارکردگی کا مظاہرہ کر سکتی ہے اور آپ کے حل کے لیے حقیقی مارکیٹ کی مانگ ہے۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "ما هو بالضبط MVP (المنتج القابل للتطبيق بحد أدنى)؟",
+        "answer": "MVP هو الإصدار الأكثر تجريدًا من منتجك والذي لا يزال يقدم قيمة أساسية للمتبنين الأوائل. ليس الهدف هو إطلاق منتج مثالي، بل الإطلاق السريع للتحقق من صحة افتراضات عملك وجمع ملاحظات المستخدمين الحقيقية قبل الاستثمار بكثافة في الميزات الثانوية."
+      },
+      {
+        "question": "كم من الوقت يستغرق بناء MVP؟",
+        "answer": "اعتمادًا على التعقيد، نقوم عادةً ببناء وإطلاق MVPs في غضون 8 إلى 12 أسبوعًا. نحقق هذه السرعة من خلال إعطاء الأولوية القصوى للميزات الأساسية، واستخدام أطر العمل الحالية، واستخدام دورة تطوير رشيقة وسريعة (rapid agile development)."
+      },
+      {
+        "question": "هل سيكون رمز (كود) MVP قابلاً للتطوير لاحقًا؟",
+        "answer": "نعم. في حين أن MVP يكون مبسطًا، فإننا لا نكتب كودًا 'يُرمى'. نحن نبني على بنيات صلبة وقابلة للتطوير (مثل React و Node.js وقواعد البيانات السحابية) بحيث عندما تنمو قاعدة مستخدميك، يمكننا البناء مباشرة فوق أساس MVP دون إعادة كتابة النظام."
+      },
+      {
+        "question": "كيف تقرر الميزات التي تدخل في MVP؟",
+        "answer": "نجري ورشة عمل صارمة لتحديد أولويات الميزات. نرسم رؤيتك بأكملها، ثم نستبعد الميزات بلا هوادة بناءً على ما هو ضروري للغاية لحل مشكلة المستخدم الأساسية. يتم نقل أي شيء 'من الجيد الحصول عليه' (nice to have) إلى خارطة طريق ما بعد الإطلاق."
+      },
+      {
+        "question": "ماذا يحدث بعد إطلاق MVP؟",
+        "answer": "الإطلاق هو مجرد البداية. نقوم بتنفيذ التحليلات لتتبع كيفية تفاعل المستخدمين فعليًا مع التطبيق. بناءً على تلك البيانات وملاحظات المستخدم، ندخل في دورة تكرارية لبناء ميزات جديدة، وتحسين تجربة المستخدم (UX)، وتوسيع نطاق البنية التحتية."
+      },
+      {
+        "question": "هل يمكنني استخدام MVP لجمع رأس المال الاستثماري (venture capital)؟",
+        "answer": "بالتأكيد. يعد MVP الذي يعمل مع مستخدمين نشطين (traction) أقوى بشكل مضاعف من عرض تقديمي عند العرض على المستثمرين. إنه يثبت أن فريقك يمكنه التنفيذ وأن هناك طلبًا حقيقيًا في السوق على الحل الخاص بك."
+      }
+    ]
+  },
+  "microservices-architecture": {
+    "en": [
+      {
+        "question": "What is microservices architecture compared to a monolith?",
+        "answer": "A monolith is an application where all components (UI, database logic, billing, messaging) are tightly woven into one large codebase. Microservices architecture breaks the application into small, independent services that communicate via APIs. If the billing microservice goes down, the messaging microservice keeps running seamlessly."
+      },
+      {
+        "question": "When should an enterprise transition to microservices?",
+        "answer": "You should consider transitioning when your monolithic codebase becomes too large for developers to understand quickly, when deploying a small bug fix requires redeploying the entire system, or when specific features (like image processing) require drastically different scaling resources than the rest of the app."
+      },
+      {
+        "question": "Does moving to microservices guarantee better performance?",
+        "answer": "Not automatically. While microservices allow for targeted scaling, they introduce network latency because services must communicate over HTTP or message queues. Proper architecture, caching strategies, and robust API design are required to realize the performance benefits."
+      },
+      {
+        "question": "How do you manage deployments for dozens of microservices?",
+        "answer": "We heavily utilize containerization (Docker) and orchestration (Kubernetes). This allows us to automate the deployment, scaling, and management of hundreds of microservice containers independently across cloud clusters using sophisticated CI/CD pipelines."
+      },
+      {
+        "question": "How do you trace bugs across multiple services?",
+        "answer": "Monitoring a distributed system requires specialized tools. We implement centralized logging (like ELK stack or Datadog) and distributed tracing (like Jaeger or OpenTelemetry). This attaches a unique ID to every user request, allowing us to trace its path and identify exactly which microservice failed."
+      },
+      {
+        "question": "Can different microservices use different programming languages?",
+        "answer": "Yes, this is one of the biggest advantages. Because microservices communicate via standardized APIs (REST or gRPC), you can write your high-throughput data processor in Go or Rust, while writing your frontend-facing API in Node.js, choosing the best tool for each specific job."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Monolitle (yekpare mimari) karşılaştırıldığında mikro hizmetler (microservices) mimarisi nedir?",
+        "answer": "Monolit, tüm bileşenlerin (kullanıcı arayüzü, veritabanı mantığı, faturalandırma, mesajlaşma) büyük bir kod tabanına sıkıca dokunduğu bir uygulamadır. Mikro hizmetler mimarisi, uygulamayı API'ler aracılığıyla iletişim kuran küçük, bağımsız hizmetlere böler. Faturalandırma mikro hizmeti çökerse, mesajlaşma mikro hizmeti sorunsuz çalışmaya devam eder."
+      },
+      {
+        "question": "Bir işletme ne zaman mikro hizmetlere geçmelidir?",
+        "answer": "Monolitik kod tabanınız geliştiricilerin hızlıca anlayamayacağı kadar büyüdüğünde, küçük bir hata düzeltmesi dağıtmak tüm sistemin yeniden dağıtılmasını gerektirdiğinde veya belirli özellikler (görüntü işleme gibi) uygulamanın geri kalanından önemli ölçüde farklı ölçeklendirme kaynakları gerektirdiğinde geçiş yapmayı düşünmelisiniz."
+      },
+      {
+        "question": "Mikro hizmetlere geçmek daha iyi performansı garanti eder mi?",
+        "answer": "Otomatik olarak değil. Mikro hizmetler hedeflenmiş ölçeklendirmeye izin verirken, hizmetler HTTP veya mesaj kuyrukları üzerinden iletişim kurmak zorunda olduğu için ağ gecikmesine neden olurlar. Performans avantajlarını gerçekleştirmek için uygun mimari, önbelleğe alma stratejileri ve sağlam API tasarımı gerekir."
+      },
+      {
+        "question": "Düzinelerce mikro hizmetin dağıtımını nasıl yönetiyorsunuz?",
+        "answer": "Konteynerleştirmeyi (Docker) ve orkestrasyonu (Kubernetes) yoğun bir şekilde kullanıyoruz. Bu, gelişmiş CI/CD boru hatlarını (pipelines) kullanarak yüzlerce mikro hizmet konteynerinin bulut kümeleri (clusters) arasında bağımsız olarak dağıtımını, ölçeklendirilmesini ve yönetimini otomatikleştirmemize olanak tanır."
+      },
+      {
+        "question": "Birden fazla hizmetteki hataları (bugs) nasıl izliyorsunuz?",
+        "answer": "Dağıtılmış bir sistemi izlemek özel araçlar gerektirir. Merkezi günlük kaydı (ELK yığını veya Datadog gibi) ve dağıtılmış izleme (Jaeger veya OpenTelemetry gibi) uyguluyoruz. Bu, her kullanıcı isteğine benzersiz bir kimlik (ID) ekleyerek yolunu izlememize ve tam olarak hangi mikro hizmetin başarısız olduğunu belirlememize olanak tanır."
+      },
+      {
+        "question": "Farklı mikro hizmetler farklı programlama dilleri kullanabilir mi?",
+        "answer": "Evet, bu en büyük avantajlardan biridir. Mikro hizmetler standartlaştırılmış API'ler (REST veya gRPC) aracılığıyla iletişim kurduğundan, yüksek verimli veri işlemcinizi Go veya Rust dilinde yazarken ön yüze dönük API'nizi Node.js'de yazabilir, her bir iş için en iyi aracı seçebilirsiniz."
+      }
+    ],
+    "de": [
+      {
+        "question": "Was ist eine Microservices-Architektur im Vergleich zu einem Monolithen?",
+        "answer": "Ein Monolith ist eine Anwendung, bei der alle Komponenten (UI, Datenbanklogik, Abrechnung, Messaging) eng in eine große Codebasis verwoben sind. Die Microservices-Architektur unterteilt die Anwendung in kleine, unabhängige Dienste, die über APIs kommunizieren. Wenn der Abrechnungs-Microservice ausfällt, läuft der Messaging-Microservice nahtlos weiter."
+      },
+      {
+        "question": "Wann sollte ein Unternehmen zu Microservices übergehen?",
+        "answer": "Sie sollten einen Übergang in Betracht ziehen, wenn Ihre monolithische Codebasis zu groß wird, als dass Entwickler sie schnell verstehen könnten, wenn die Bereitstellung einer kleinen Fehlerbehebung die erneute Bereitstellung des gesamten Systems erfordert oder wenn bestimmte Funktionen (wie die Bildverarbeitung) drastisch andere Skalierungsressourcen erfordern als der Rest der App."
+      },
+      {
+        "question": "Garantiert der Wechsel zu Microservices eine bessere Leistung?",
+        "answer": "Nicht automatisch. Während Microservices eine gezielte Skalierung ermöglichen, führen sie zu Netzwerklatenzen, da die Dienste über HTTP oder Nachrichtenwarteschlangen (Message Queues) kommunizieren müssen. Richtige Architektur, Caching-Strategien und robustes API-Design sind erforderlich, um die Leistungsvorteile zu realisieren."
+      },
+      {
+        "question": "Wie verwalten Sie Deployments für Dutzende von Microservices?",
+        "answer": "Wir nutzen stark Containerisierung (Docker) und Orchestrierung (Kubernetes). Dadurch können wir die Bereitstellung, Skalierung und Verwaltung von Hunderten von Microservice-Containern mithilfe ausgefeilter CI/CD-Pipelines unabhängig voneinander in Cloud-Clustern automatisieren."
+      },
+      {
+        "question": "Wie verfolgen Sie Fehler über mehrere Dienste hinweg?",
+        "answer": "Die Überwachung eines verteilten Systems erfordert spezielle Tools. Wir implementieren zentralisiertes Logging (wie ELK-Stack oder Datadog) und verteiltes Tracing (wie Jaeger oder OpenTelemetry). Dadurch wird an jede Benutzeranforderung eine eindeutige ID angehängt, mit der wir ihren Pfad verfolgen und genau identifizieren können, welcher Microservice fehlgeschlagen ist."
+      },
+      {
+        "question": "Können verschiedene Microservices unterschiedliche Programmiersprachen verwenden?",
+        "answer": "Ja, das ist einer der größten Vorteile. Da Microservices über standardisierte APIs (REST oder gRPC) kommunizieren, können Sie Ihren Dataprozessor für hohen Durchsatz in Go oder Rust schreiben, während Sie Ihre Frontend-API in Node.js schreiben und so das beste Tool für jeden spezifischen Job auswählen."
+      }
+    ],
+    "ur": [
+      {
+        "question": "ایک یک سنگی کے مقابلے میں مائیکرو سروسز فن تعمیر کیا ہے؟",
+        "answer": "ایک یک سنگی ایک ایسی ایپلی کیشن ہے جہاں تمام اجزاء (UI، ڈیٹا بیس لاجک، بلنگ، میسجنگ) ایک بڑے کوڈ بیس میں مضبوطی سے بنے ہوئے ہیں۔ مائیکرو سروسز فن تعمیر ایپلی کیشن کو چھوٹی، آزاد سروسز میں توڑ دیتا ہے جو APIs کے ذریعے بات چیت کرتے ہیں۔ اگر بلنگ مائیکرو سروس کم ہو جاتی ہے، تو میسجنگ مائیکرو سروس بغیر کسی رکاوٹ کے چلتی رہتی ہے۔"
+      },
+      {
+        "question": "انٹرپرائز کو مائیکرو سروسز میں کب منتقل ہونا چاہیے؟",
+        "answer": "آپ کو اس وقت منتقلی پر غور کرنا چاہیے جب آپ کا یک سنگی کوڈ بیس ڈیولپرز کے لیے تیزی سے سمجھنے کے لیے بہت بڑا ہو جاتا ہے، جب چھوٹے بگ فکس کو تعینات کرنے کے لیے پورے سسٹم کو دوبارہ تعینات کرنے کی ضرورت ہوتی ہے، یا جب مخصوص خصوصیات (جیسے امیج پروسیسنگ) کو باقی ایپ کے مقابلے میں کافی حد تک مختلف اسکیلنگ وسائل کی ضرورت ہوتی ہے۔"
+      },
+      {
+        "question": "کیا مائیکرو سروسز کی طرف جانے سے بہتر کارکردگی کی ضمانت ملتی ہے؟",
+        "answer": "خود بخود نہیں۔ جب کہ مائیکرو سروسز ٹارگٹڈ اسکیلنگ کی اجازت دیتی ہیں، وہ نیٹ ورک میں تاخیر متعارف کراتی ہیں کیونکہ سروسز کو HTTP یا میسج کی قطاروں پر بات چیت کرنی چاہیے۔ کارکردگی کے فوائد کو حاصل کرنے کے لیے مناسب فن تعمیر، کیشنگ کی حکمت عملی، اور مضبوط API ڈیزائن کی ضرورت ہے۔"
+      },
+      {
+        "question": "آپ درجنوں مائیکرو سروسز کے لیے تعیناتیوں کا انتظام کیسے کرتے ہیں؟",
+        "answer": "ہم کنٹینرائزیشن (ڈوکر) اور آرکیسٹریشن (کبرنیٹس) کا بہت زیادہ استعمال کرتے ہیں۔ یہ ہمیں نفیس CI/CD پائپ لائنوں کا استعمال کرتے ہوئے کلاؤڈ کلسٹرز میں آزادانہ طور پر سینکڑوں مائیکرو سروس کنٹینرز کی تعیناتی، اسکیلنگ، اور نظم و نسق کو خودکار کرنے کی اجازت دیتا ہے۔"
+      },
+      {
+        "question": "آپ متعدد خدمات میں کیڑے کیسے تلاش کرتے ہیں؟",
+        "answer": "تقسیم شدہ نظام کی نگرانی کے لیے خصوصی ٹولز کی ضرورت ہوتی ہے۔ ہم سنٹرلائزڈ لاگنگ (جیسے ELK اسٹیک یا Datadog) اور ڈسٹری بیوٹڈ ٹریسنگ (جیسے Jaeger یا OpenTelemetry) کو نافذ کرتے ہیں۔ یہ ہر صارف کی درخواست کے ساتھ ایک منفرد ID منسلک کرتا ہے، جس سے ہمیں اس کے راستے کا پتہ لگانے اور یہ شناخت کرنے کی اجازت ملتی ہے کہ کون سا مائیکرو سروس ناکام ہوا ہے۔"
+      },
+      {
+        "question": "کیا مختلف مائیکرو سروسز مختلف پروگرامنگ زبانیں استعمال کر سکتی ہیں؟",
+        "answer": "ہاں، یہ سب سے بڑے فوائد میں سے ایک ہے۔ چونکہ مائیکرو سروسز معیاری APIs (REST یا gRPC) کے ذریعے بات چیت کرتے ہیں، اس لیے آپ ہر ایک مخصوص کام کے لیے بہترین ٹول کا انتخاب کرتے ہوئے، Node.js میں فرنٹ اینڈ کا سامنا کرنے والی API لکھتے ہوئے Go یا Rust میں اپنا ہائی تھرو پٹ ڈیٹا پروسیسر لکھ سکتے ہیں۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "ما هي بنية الخدمات المصغرة (microservices architecture) مقارنة بالبنية المتجانسة (monolith)؟",
+        "answer": "التطبيق المتجانس (monolith) هو تطبيق تُنسج فيه جميع المكونات (واجهة المستخدم، ومنطق قاعدة البيانات، والفوترة، والمراسلة) بإحكام في قاعدة بيانات برمجية واحدة كبيرة. تقسم بنية الخدمات المصغرة التطبيق إلى خدمات صغيرة ومستقلة تتواصل عبر واجهات برمجة التطبيقات (APIs). إذا تعطلت خدمة الفوترة المصغرة، فستستمر خدمة المراسلة المصغرة في العمل بسلاسة."
+      },
+      {
+        "question": "متى يجب أن تنتقل مؤسسة إلى الخدمات المصغرة؟",
+        "answer": "يجب أن تفكر في الانتقال عندما تصبح قاعدة البيانات البرمجية المتجانسة الخاصة بك كبيرة جدًا بحيث لا يفهمها المطورون بسرعة، أو عندما يتطلب نشر إصلاح خطأ صغير إعادة نشر النظام بأكمله، أو عندما تتطلب ميزات معينة (مثل معالجة الصور) موارد توسع مختلفة تمامًا عن بقية التطبيق."
+      },
+      {
+        "question": "هل يضمن الانتقال إلى الخدمات المصغرة أداءً أفضل؟",
+        "answer": "ليس تلقائيا. في حين أن الخدمات المصغرة تسمح بالتوسع المستهدف، فإنها تقدم زمن انتقال للشبكة (network latency) لأن الخدمات يجب أن تتواصل عبر HTTP أو قوائم انتظار الرسائل (message queues). البنية المناسبة، واستراتيجيات التخزين المؤقت، وتصميم API القوي مطلوبة لتحقيق فوائد الأداء."
+      },
+      {
+        "question": "كيف تديرون عمليات النشر (deployments) لعشرات الخدمات المصغرة؟",
+        "answer": "نعتمد بشكل كبير على النقل في حاويات (containerization - مثل Docker) والتنسيق (orchestration - مثل Kubernetes). يسمح لنا هذا بأتمتة نشر مئات حاويات الخدمات المصغرة وتوسيع نطاقها وإدارتها بشكل مستقل عبر المجموعات السحابية باستخدام مسارات CI/CD متطورة."
+      },
+      {
+        "question": "كيف تتبعون الأخطاء (bugs) عبر خدمات متعددة؟",
+        "answer": "تتطلب مراقبة النظام الموزع أدوات متخصصة. نحن ننفذ التسجيل المركزي (centralized logging - مثل ELK stack أو Datadog) والتتبع الموزع (distributed tracing - مثل Jaeger أو OpenTelemetry). يُرفق هذا معرّفًا فريدًا (ID) بكل طلب مستخدم، مما يسمح لنا بتتبع مساره وتحديد الخدمة المصغرة التي فشلت بالضبط."
+      },
+      {
+        "question": "هل يمكن للخدمات المصغرة المختلفة استخدام لغات برمجة مختلفة؟",
+        "answer": "نعم، هذه من أكبر المزايا. نظرًا لأن الخدمات المصغرة تتواصل عبر واجهات برمجة تطبيقات موحدة (REST أو gRPC)، يمكنك كتابة معالج بيانات عالي الإنتاجية بلغة Go أو Rust، بينما تكتب واجهة برمجة تطبيقات الواجهة الأمامية بلغة Node.js، واختيار أفضل أداة لكل مهمة محددة."
+      }
+    ]
+  }
+}

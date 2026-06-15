@@ -17,156 +17,21 @@ Return ONE JSON object. Keys = exact slugs. Each value = the 5 locale keys, each
 ```
 
 Rules:
-- Exactly 6 NEW FAQs per locale per service. The 6 questions must be the SAME topics across all 5 languages (translated), in the same order.
+- Exactly 6 NEW FAQs per locale per service. The 6 question topics must be the SAME across all 5 languages (translated), in the same order.
 - Each answer = 2-3 substantive sentences (minimum 12 words) that TEACH something true about the domain — real tradeoffs, timelines, costs, technical specifics. No generic filler.
-- Output COMPLETE services only; never truncate mid-service. Do as many as fit; the user will say "continue" with a skip-list for the rest.
-- Valid JSON: double quotes, no trailing commas, no comments.
+- Output COMPLETE services only; never truncate mid-service. Do as many as fit; I will say "continue" with a skip-list for the rest.
+- Valid JSON: double quotes, no trailing commas, no comments, no `...` placeholders.
 
 ## TRANSLATION RULES
 - tr/de/ur/ar are real, natural translations (NOT transliteration). Urdu/Arabic read naturally in RTL.
-- Keep tool/framework/product names and acronyms in Latin script (Next.js, Shopify, Stripe, API, PCI, SaaS, etc.).
+- Keep tool/framework/product names and acronyms in Latin script (Next.js, Shopify, Stripe, API, PCI, SaaS, Kubernetes, etc.).
 
-## NEW FAQ TOPIC IDEAS (pick what fits each service; don't repeat existingQuestions)
-Pricing/budget ranges · project timeline · what's included/excluded · maintenance & support after launch · technology/stack choice rationale · scalability & performance · security/compliance · integration with existing systems · ownership of code/IP · SEO/analytics · how we handle revisions/change requests · onboarding & what you need from the client.
+## NEW FAQ TOPIC IDEAS (pick what fits each service; do NOT repeat existingQuestions)
+Pricing/budget ranges · project timeline · what's included/excluded · maintenance & support after launch · technology/stack choice rationale · scalability & performance · security/compliance · integration with existing systems · ownership of code/IP · SEO/analytics · how revisions/change requests work · onboarding & what you need from the client.
 
-## SERVICES (65) — write 6 new FAQs each, avoiding existingQuestions
+## SERVICES (50) — write 6 NEW FAQs each, avoiding existingQuestions
 ```json
 [
- {
-  "slug": "saas-migration",
-  "name": "SaaS Migration",
-  "summary": "Moving an existing single-tenant application or legacy software to a modern Software-as-a-Service (SaaS) model is a massive technological and business shift. Ou",
-  "existingQuestions": [
-   "How do you ensure customer data doesn't leak in a multi-tenant system?",
-   "Will our customers experience downtime during the migration?"
-  ]
- },
- {
-  "slug": "event-driven-architecture",
-  "name": "Event-Driven Architecture",
-  "summary": "Scale your applications gracefully with Event-Driven Architecture (EDA). In highly complex, fast-moving environments, traditional synchronous API calls can lead",
-  "existingQuestions": [
-   "What is the difference between REST APIs and Event-Driven architecture?",
-   "When should I move to an Event-Driven architecture?"
-  ]
- },
- {
-  "slug": "legacy-system-modernization",
-  "name": "Legacy System Modernization",
-  "summary": "Outdated software holding your business back? Legacy systems often suffer from high maintenance costs, security vulnerabilities, poor performance, and a lack of",
-  "existingQuestions": [
-   "Will modernizing my system cause downtime?",
-   "Should we rewrite the software from scratch or update the existing code?"
-  ]
- },
- {
-  "slug": "erp-development",
-  "name": "ERP Development",
-  "summary": "Streamline your entire business operation with our custom Enterprise Resource Planning (ERP) Development services. Off-the-shelf ERPs often force you to adapt y",
-  "existingQuestions": [
-   "Why custom ERP instead of SAP or Oracle?",
-   "Can the ERP handle multiple physical locations?"
-  ]
- },
- {
-  "slug": "mobile-development",
-  "name": "Mobile App Development",
-  "summary": "Reach your customers wherever they are with our end-to-end Mobile App Development services. We build high-performance, intuitive mobile applications tailored to",
-  "existingQuestions": [
-   "Should we build Native or Cross-Platform?",
-   "Do you help with getting the app into the App Stores?"
-  ]
- },
- {
-  "slug": "third-party-api-integration",
-  "name": "Third-Party API Integration",
-  "summary": "Modern businesses rely on dozens of specialized software tools, but real efficiency is only achieved when these systems talk to each other. Our Third-Party API ",
-  "existingQuestions": [
-   "What happens if the third-party API goes down?",
-   "Can you integrate with an older system that uses SOAP or XML?"
-  ]
- },
- {
-  "slug": "dapp-development",
-  "name": "dApp Development",
-  "summary": "Disrupt traditional business models with next-generation Decentralized Applications (dApps). Unlike traditional web apps powered by centralized servers, dApps r",
-  "existingQuestions": [
-   "What is the difference between a normal web app and a dApp?",
-   "Do users need cryptocurrency to use a dApp?"
-  ]
- },
- {
-  "slug": "headless-commerce",
-  "name": "Headless Commerce",
-  "summary": "Break free from the design constraints and sluggish performance of traditional, monolithic e-commerce platforms. With our Headless Commerce development services",
-  "existingQuestions": [
-   "What is the main advantage of Headless over standard Shopify?",
-   "Is Headless Commerce right for my business?"
-  ]
- },
- {
-  "slug": "hrms-development",
-  "name": "HRMS Development",
-  "summary": "Empower your HR department and delight your employees with a bespoke Human Resource Management System (HRMS). Generic HR tools often fall short when dealing wit",
-  "existingQuestions": [
-   "Can the HRMS integrate with biometric attendance scanners?",
-   "Is employee data secure in a custom HRMS?"
-  ]
- },
- {
-  "slug": "custom-business-software",
-  "name": "Custom Business Software",
-  "summary": "Stop forcing your business to adapt to rigid off-the-shelf software. Our Custom Business Software solutions are engineered from the ground up to fit your exact ",
-  "existingQuestions": [
-   "Why should I choose custom software over SaaS products?",
-   "Can this software be accessed on mobile devices?"
-  ]
- },
- {
-  "slug": "e-commerce",
-  "name": "E-Commerce",
-  "summary": "Take your retail business global with our comprehensive E-Commerce development services. In today's digital-first economy, a fast, reliable, and secure online s",
-  "existingQuestions": [
-   "Should I choose Shopify or a custom build?",
-   "Do you help with SEO and marketing integration?"
-  ]
- },
- {
-  "slug": "graphql-development",
-  "name": "GraphQL Development",
-  "summary": "Solve the problems of over-fetching and under-fetching with our advanced GraphQL API Development services. Traditional REST APIs often force front-end applicati",
-  "existingQuestions": [
-   "Why use GraphQL instead of a standard REST API?",
-   "Can GraphQL wrap our existing REST APIs?"
-  ]
- },
- {
-  "slug": "no-code-low-code",
-  "name": "No-Code & Low-Code Development",
-  "summary": "Speed is everything in today's digital landscape. Our No-Code and Low-Code development services empower you to build, launch, and iterate on complex application",
-  "existingQuestions": [
-   "Can a no-code app really scale?",
-   "What if we need a feature the no-code platform doesn't support?"
-  ]
- },
- {
-  "slug": "woocommerce-development",
-  "name": "WooCommerce Development",
-  "summary": "WooCommerce turns WordPress into a powerful, fully customizable e-commerce powerhouse. Our WooCommerce Development services are designed for businesses that nee",
-  "existingQuestions": [
-   "Why choose WooCommerce over Shopify?",
-   "Can WooCommerce handle high traffic and large inventories?"
-  ]
- },
- {
-  "slug": "web3-blockchain",
-  "name": "Web3 & Blockchain",
-  "summary": "The internet is evolving, and decentralization is at the core of this shift. Our Web3 & Blockchain development services help visionary companies transition from",
-  "existingQuestions": [
-   "Which blockchain should I build on?",
-   "Are smart contracts secure?"
-  ]
- },
  {
   "slug": "unreal-engine-development",
   "name": "Unreal Engine Development",

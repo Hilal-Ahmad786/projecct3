@@ -1,0 +1,662 @@
+{
+  "code-review-refactoring": {
+    "en": [
+      {
+        "question": "What is the difference between code review and refactoring?",
+        "answer": "Code review is the process of examining existing source code to identify bugs, security flaws, and deviations from best practices. Refactoring is the actual process of restructuring and rewriting that code to improve its readability, performance, and maintainability without changing its external behavior."
+      },
+      {
+        "question": "When should we invest in code refactoring?",
+        "answer": "You should consider refactoring when your development velocity slows down due to 'technical debt,' when onboarding new developers takes too long because the code is messy, or before adding major new features to a fragile, legacy codebase."
+      },
+      {
+        "question": "Will refactoring break my current application?",
+        "answer": "It shouldn't. A core principle of our refactoring process is implementing comprehensive unit and integration tests *before* making changes. This ensures that the external behavior of the application remains completely intact while the internal structure is improved."
+      },
+      {
+        "question": "How long does a typical code audit take?",
+        "answer": "A standard code audit for a medium-sized application usually takes 1 to 2 weeks. We analyze the architecture, security vulnerabilities, database query efficiency, and code quality, culminating in a detailed report with actionable recommendations."
+      },
+      {
+        "question": "Can you refactor outdated languages or frameworks?",
+        "answer": "Yes. We frequently modernize legacy applications. This might involve migrating from an outdated framework (like AngularJS to modern React) or upgrading backend systems (like older PHP versions to modern Node.js or Python architectures)."
+      },
+      {
+        "question": "How do you measure the success of a refactoring project?",
+        "answer": "We measure success using tangible metrics: reduced bug report frequency, faster API response times, decreased server resource consumption, improved code coverage percentages, and ultimately, a faster time-to-market for new feature development."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Kod incelemesi (code review) ile yeniden düzenleme (refactoring) arasındaki fark nedir?",
+        "answer": "Kod incelemesi, hataları, güvenlik açıklarını ve en iyi uygulamalardan sapmaları belirlemek için mevcut kaynak kodunu inceleme sürecidir. Yeniden düzenleme (refactoring) ise dış davranışını değiştirmeden kodun okunabilirliğini, performansını ve sürdürülebilirliğini artırmak için o kodu yeniden yapılandırma ve yeniden yazma sürecidir."
+      },
+      {
+        "question": "Kodları yeniden düzenlemeye ne zaman yatırım yapmalıyız?",
+        "answer": "'Teknik borç' nedeniyle geliştirme hızınız yavaşladığında, kodun dağınık olması nedeniyle yeni geliştiricilerin işe alışması çok uzun sürdüğünde veya kırılgan, eski bir kod tabanına büyük yeni özellikler eklemeden önce yeniden düzenlemeyi düşünmelisiniz."
+      },
+      {
+        "question": "Yeniden düzenleme mevcut uygulamamı bozar mı?",
+        "answer": "Bozmamalıdır. Yeniden düzenleme sürecimizin temel bir ilkesi, değişiklik yapmadan *önce* kapsamlı birim ve entegrasyon testleri uygulamaktır. Bu, iç yapı iyileştirilirken uygulamanın dış davranışının tamamen bozulmadan kalmasını sağlar."
+      },
+      {
+        "question": "Tipik bir kod denetimi ne kadar sürer?",
+        "answer": "Orta ölçekli bir uygulama için standart bir kod denetimi genellikle 1 ila 2 hafta sürer. Mimariyi, güvenlik açıklarını, veritabanı sorgu verimliliğini ve kod kalitesini analiz ederek eyleme geçirilebilir öneriler içeren ayrıntılı bir rapor sunarız."
+      },
+      {
+        "question": "Eski dilleri veya çerçeveleri yeniden düzenleyebilir misiniz?",
+        "answer": "Evet. Eski uygulamaları sıklıkla modernize ediyoruz. Bu, eski bir çerçeveden (AngularJS'den modern React'e gibi) geçiş yapmayı veya arka uç sistemlerini (eski PHP sürümlerinden modern Node.js veya Python mimarilerine gibi) yükseltmeyi içerebilir."
+      },
+      {
+        "question": "Bir yeniden düzenleme projesinin başarısını nasıl ölçüyorsunuz?",
+        "answer": "Başarıyı somut metrikler kullanarak ölçüyoruz: azaltılmış hata raporu sıklığı, daha hızlı API yanıt süreleri, azaltılmış sunucu kaynağı tüketimi, iyileştirilmiş kod kapsamı yüzdeleri ve nihayetinde yeni özellik geliştirme için pazara daha hızlı sürüm süresi."
+      }
+    ],
+    "de": [
+      {
+        "question": "Was ist der Unterschied zwischen Code Review und Refactoring?",
+        "answer": "Code Review ist der Prozess der Untersuchung des vorhandenen Quellcodes, um Fehler, Sicherheitslücken und Abweichungen von Best Practices zu identifizieren. Refactoring ist der eigentliche Prozess der Umstrukturierung und Neuschreibung dieses Codes, um seine Lesbarkeit, Leistung und Wartbarkeit zu verbessern, ohne sein äußeres Verhalten zu ändern."
+      },
+      {
+        "question": "Wann sollten wir in Code-Refactoring investieren?",
+        "answer": "Sie sollten ein Refactoring in Betracht ziehen, wenn sich Ihre Entwicklungsgeschwindigkeit aufgrund von „technischen Schulden“ verlangsamt, wenn das Einarbeiten neuer Entwickler zu lange dauert, weil der Code unordentlich ist, oder bevor Sie einer anfälligen, veralteten Codebasis größere neue Funktionen hinzufügen."
+      },
+      {
+        "question": "Wird Refactoring meine aktuelle Anwendung kaputt machen?",
+        "answer": "Das sollte es nicht. Ein Kernprinzip unseres Refactoring-Prozesses ist die Implementierung umfassender Unit- und Integrationstests *bevor* Änderungen vorgenommen werden. Dadurch wird sichergestellt, dass das äußere Verhalten der Anwendung vollständig intakt bleibt, während die interne Struktur verbessert wird."
+      },
+      {
+        "question": "Wie lange dauert ein typisches Code-Audit?",
+        "answer": "Ein Standard-Code-Audit für eine mittelgroße Anwendung dauert in der Regel 1 bis 2 Wochen. Wir analysieren die Architektur, Sicherheitslücken, die Effizienz von Datenbankabfragen und die Codequalität. Das Ergebnis ist ein detaillierter Bericht mit umsetzbaren Empfehlungen."
+      },
+      {
+        "question": "Können Sie veraltete Sprachen oder Frameworks refaktorieren?",
+        "answer": "Ja. Wir modernisieren häufig Legacy-Anwendungen. Dies kann die Migration von einem veralteten Framework (wie AngularJS zum modernen React) oder das Upgrade von Backend-Systemen (wie ältere PHP-Versionen zu modernen Node.js- oder Python-Architekturen) beinhalten."
+      },
+      {
+        "question": "Wie messen Sie den Erfolg eines Refactoring-Projekts?",
+        "answer": "Wir messen den Erfolg anhand greifbarer Kennzahlen: reduzierte Häufigkeit von Fehlerberichten, schnellere API-Antwortzeiten, geringerer Serverressourcenverbrauch, verbesserte Codeabdeckungsprozentsätze und letztendlich eine schnellere Markteinführung bei der Entwicklung neuer Funktionen."
+      }
+    ],
+    "ur": [
+      {
+        "question": "کوڈ کے جائزے اور ری فیکٹرنگ میں کیا فرق ہے؟",
+        "answer": "کوڈ کا جائزہ کیڑوں، سیکیورٹی کی خامیوں، اور بہترین طریقوں سے انحراف کی نشاندہی کرنے کے لیے موجودہ سورس کوڈ کی جانچ کرنے کا عمل ہے۔ ری فیکٹرنگ اس کوڈ کی تنظیم نو اور دوبارہ لکھنے کا اصل عمل ہے تاکہ اس کے بیرونی رویے کو تبدیل کیے بغیر اس کے پڑھنے کی اہلیت، کارکردگی اور دیکھ بھال کو بہتر بنایا جا سکے۔"
+      },
+      {
+        "question": "ہمیں کوڈ ری فیکٹرنگ میں کب سرمایہ کاری کرنی چاہیے؟",
+        "answer": "آپ کو ری فیکٹرنگ پر غور کرنا چاہیے جب 'تکنیکی قرض' کی وجہ سے آپ کی ترقی کی رفتار کم ہو جاتی ہے، جب نئے ڈویلپرز کو آن بورڈ کرنے میں بہت زیادہ وقت لگتا ہے کیونکہ کوڈ گندا ہے، یا کسی نازک، میراثی کوڈ بیس میں بڑی نئی خصوصیات شامل کرنے سے پہلے۔"
+      },
+      {
+        "question": "کیا ری فیکٹرنگ میری موجودہ ایپلیکیشن کو توڑ دے گی؟",
+        "answer": "اسے نہیں کرنا چاہیے۔ ہمارے ری فیکٹرنگ کے عمل کا ایک بنیادی اصول تبدیلیاں کرنے سے پہلے جامع یونٹ اور انضمام کے ٹیسٹ کو لاگو کرنا ہے۔ اس سے یہ یقینی بنتا ہے کہ ایپلی کیشن کا بیرونی سلوک مکمل طور پر برقرار رہتا ہے جبکہ اندرونی ساخت کو بہتر بنایا جاتا ہے۔"
+      },
+      {
+        "question": "ایک عام کوڈ آڈٹ میں کتنا وقت لگتا ہے؟",
+        "answer": "درمیانے درجے کی درخواست کے لیے ایک معیاری کوڈ آڈٹ میں عام طور پر 1 سے 2 ہفتے لگتے ہیں۔ ہم آرکیٹیکچر، سیکیورٹی کے خطرات، ڈیٹا بیس کے استفسار کی کارکردگی، اور کوڈ کے معیار کا تجزیہ کرتے ہیں، قابل عمل سفارشات کے ساتھ تفصیلی رپورٹ کے اختتام پر۔"
+      },
+      {
+        "question": "کیا آپ پرانی زبانوں یا فریم ورک کو ری فیکٹر کر سکتے ہیں؟",
+        "answer": "جی ہاں، ہم اکثر میراثی ایپلی کیشنز کو جدید بناتے ہیں۔ اس میں ایک پرانے فریم ورک (جیسے AngularJS سے جدید React) کی منتقلی یا بیک اینڈ سسٹمز کو اپ گریڈ کرنا (جیسے کہ پرانے پی ایچ پی ورژنز سے جدید Node.js یا ازگر کے فن تعمیر) شامل ہو سکتے ہیں۔"
+      },
+      {
+        "question": "آپ ری فیکٹرنگ پروجیکٹ کی کامیابی کی پیمائش کیسے کرتے ہیں؟",
+        "answer": "ہم ٹھوس میٹرکس کا استعمال کرتے ہوئے کامیابی کی پیمائش کرتے ہیں: بگ رپورٹ کی فریکوئنسی میں کمی، تیزی سے API رسپانس ٹائم، سرور کے وسائل کی کھپت میں کمی، کوڈ کوریج کی بہتر فیصد، اور بالآخر، نئے فیچر کی ترقی کے لیے تیز تر ٹائم ٹو مارکیٹ۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "ما هو الفرق بين مراجعة الكود (code review) وإعادة هيكلة الكود (refactoring)؟",
+        "answer": "مراجعة الكود هي عملية فحص الكود المصدري الحالي لتحديد الأخطاء والثغرات الأمنية والانحرافات عن أفضل الممارسات. إعادة الهيكلة هي العملية الفعلية لإعادة بناء وإعادة كتابة هذا الكود لتحسين قابليته للقراءة وأدائه وقابليته للصيانة دون تغيير سلوكه الخارجي."
+      },
+      {
+        "question": "متى يجب أن نستثمر في إعادة هيكلة الكود؟",
+        "answer": "يجب أن تفكر في إعادة الهيكلة عندما تتباطأ سرعة التطوير لديك بسبب 'الديون الفنية' (technical debt)، أو عندما يستغرق إعداد مطورين جدد وقتًا طويلاً لأن الكود فوضوي، أو قبل إضافة ميزات جديدة رئيسية إلى قاعدة بيانات برمجية قديمة وهشة."
+      },
+      {
+        "question": "هل ستؤدي إعادة الهيكلة إلى تعطل تطبيقي الحالي؟",
+        "answer": "لا ينبغي ذلك. يتمثل المبدأ الأساسي في عملية إعادة الهيكلة لدينا في تنفيذ اختبارات الوحدة والتكامل الشاملة *قبل* إجراء التغييرات. يضمن ذلك بقاء السلوك الخارجي للتطبيق سليمًا تمامًا بينما يتم تحسين البنية الداخلية."
+      },
+      {
+        "question": "كم من الوقت يستغرق تدقيق الكود (code audit) النموذجي؟",
+        "answer": "يستغرق تدقيق الكود القياسي لتطبيق متوسط الحجم عادة من أسبوع إلى أسبوعين. نقوم بتحليل البنية، ونقاط الضعف الأمنية، وكفاءة استعلام قاعدة البيانات، وجودة الكود، ونتوج ذلك بتقرير مفصل مع توصيات قابلة للتنفيذ."
+      },
+      {
+        "question": "هل يمكنكم إعادة هيكلة لغات أو أطر عمل قديمة؟",
+        "answer": "نعم. نقوم بشكل متكرر بتحديث التطبيقات القديمة. قد يتضمن ذلك الترحيل من إطار عمل قديم (مثل AngularJS إلى React الحديث) أو ترقية أنظمة الخلفية (مثل إصدارات PHP القديمة إلى بنيات Node.js أو Python الحديثة)."
+      },
+      {
+        "question": "كيف تقيسون نجاح مشروع إعادة الهيكلة؟",
+        "answer": "نقيس النجاح باستخدام مقاييس ملموسة: انخفاض تكرار تقارير الأخطاء، وأوقات استجابة API أسرع، وانخفاض استهلاك موارد الخادم، وتحسين نسب تغطية الكود، وفي النهاية، وقت أسرع لطرح الميزات الجديدة في السوق."
+      }
+    ]
+  },
+  "nft-marketplace-development": {
+    "en": [
+      {
+        "question": "Can I build an NFT marketplace for a specific niche, like music or real estate?",
+        "answer": "Absolutely. Niche marketplaces are highly successful. We can tailor the smart contracts and user interface specifically for music (handling audio files and streaming rights), real estate (handling fractional ownership and KYC), or gaming items."
+      },
+      {
+        "question": "How do you handle the high gas fees on Ethereum?",
+        "answer": "To mitigate high gas fees, we often recommend building on Layer-2 solutions like Polygon, Arbitrum, or Immutable X. We also implement 'lazy minting,' where the NFT is only minted to the blockchain at the moment a buyer pays for it, saving upfront costs."
+      },
+      {
+        "question": "What wallet integrations do you support?",
+        "answer": "We integrate a wide array of Web3 wallets to ensure accessibility. This includes MetaMask, Coinbase Wallet, Trust Wallet, and WalletConnect (which links dozens of mobile wallets). We also integrate social logins (via Web3Auth) to create non-custodial wallets for non-crypto natives."
+      },
+      {
+        "question": "Are your NFT marketplaces decentralized?",
+        "answer": "The core transactional elements (smart contracts, ownership, escrows) are fully decentralized on the blockchain. However, the frontend interface and search databases (to ensure fast loading times) are typically hosted on centralized or hybrid cloud architectures."
+      },
+      {
+        "question": "Do you provide white-label NFT marketplace solutions?",
+        "answer": "Yes. If you need a rapid time-to-market, we offer customizable white-label solutions. We adapt the UI to your brand, deploy dedicated smart contracts, and can have a fully functional marketplace live in 4 to 6 weeks."
+      },
+      {
+        "question": "How do creators prove authenticity on the platform?",
+        "answer": "We implement verified creator badges and integrate with external social media accounts (Twitter/Discord verification). Additionally, the immutable nature of the blockchain allows buyers to publicly trace the provenance and original minting address of every NFT."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Müzik veya gayrimenkul gibi belirli bir alana (niche) yönelik bir NFT pazaryeri kurabilir miyim?",
+        "answer": "Kesinlikle. Niş pazar yerleri oldukça başarılıdır. Akıllı sözleşmeleri ve kullanıcı arayüzünü özellikle müzik (ses dosyalarını ve yayın haklarını yönetme), gayrimenkul (kısmi mülkiyet ve KYC'yi yönetme) veya oyun öğeleri için uyarlayabiliriz."
+      },
+      {
+        "question": "Ethereum'daki yüksek gaz (gas) ücretleriyle nasıl başa çıkıyorsunuz?",
+        "answer": "Yüksek gaz ücretlerini hafifletmek için genellikle Polygon, Arbitrum veya Immutable X gibi Katman-2 (Layer-2) çözümleri üzerine inşa etmeyi öneriyoruz. Ayrıca, NFT'nin yalnızca alıcı parasını ödediği anda blokzincirine basıldığı ve ön maliyetlerden tasarruf sağlayan 'tembel basım' (lazy minting) uyguluyoruz."
+      },
+      {
+        "question": "Hangi cüzdan entegrasyonlarını destekliyorsunuz?",
+        "answer": "Erişilebilirliği sağlamak için çok çeşitli Web3 cüzdanlarını entegre ediyoruz. Buna MetaMask, Coinbase Wallet, Trust Wallet ve WalletConnect (düzinelerce mobil cüzdanı birbirine bağlayan) dahildir. Ayrıca kriptoya aşina olmayanlar için gözetimsiz cüzdanlar oluşturmak üzere sosyal oturum açma işlemlerini (Web3Auth aracılığıyla) entegre ediyoruz."
+      },
+      {
+        "question": "NFT pazar yerleriniz merkeziyetsiz mi?",
+        "answer": "Temel işlem öğeleri (akıllı sözleşmeler, mülkiyet, emanetler) blokzincirinde tamamen merkeziyetsizdir. Ancak, ön uç arayüzü ve arama veritabanları (hızlı yükleme süreleri sağlamak için) genellikle merkezi veya hibrit bulut mimarilerinde barındırılır."
+      },
+      {
+        "question": "Beyaz etiketli (white-label) NFT pazar yeri çözümleri sunuyor musunuz?",
+        "answer": "Evet. Pazara hızlı bir şekilde çıkmanız gerekiyorsa, özelleştirilebilir beyaz etiketli çözümler sunuyoruz. Kullanıcı arayüzünü markanıza uyarlıyoruz, özel akıllı sözleşmeler dağıtıyoruz ve 4 ila 6 hafta içinde tamamen işlevsel bir pazaryerini yayına alabiliyoruz."
+      },
+      {
+        "question": "İçerik oluşturucular platformda özgünlüğü nasıl kanıtlıyor?",
+        "answer": "Doğrulanmış içerik oluşturucu rozetleri uyguluyor ve harici sosyal medya hesaplarıyla (Twitter/Discord doğrulaması) entegre oluyoruz. Ayrıca, blokzincirinin değişmez doğası, alıcıların her NFT'nin kaynağını ve orijinal basım adresini herkese açık olarak izlemesine olanak tanır."
+      }
+    ],
+    "de": [
+      {
+        "question": "Kann ich einen NFT-Marktplatz für eine bestimmte Nische wie Musik oder Immobilien aufbauen?",
+        "answer": "Absolut. Nischenmarktplätze sind sehr erfolgreich. Wir können die Smart Contracts und die Benutzeroberfläche speziell auf Musik (Verwaltung von Audiodateien und Streaming-Rechten), Immobilien (Verwaltung von Teileigentum und KYC) oder Gaming-Gegenstände zuschneiden."
+      },
+      {
+        "question": "Wie gehen Sie mit den hohen Gasgebühren auf Ethereum um?",
+        "answer": "Um hohe Gasgebühren abzumildern, empfehlen wir häufig den Aufbau von Layer-2-Lösungen wie Polygon, Arbitrum oder Immutable X. Wir implementieren auch „Lazy Minting“, bei dem der NFT erst in dem Moment in die Blockchain geprägt wird, in dem ein Käufer dafür bezahlt, wodurch Vorabkosten gespart werden."
+      },
+      {
+        "question": "Welche Wallet-Integrationen unterstützen Sie?",
+        "answer": "Wir integrieren eine breite Palette von Web3-Wallets, um die Zugänglichkeit sicherzustellen. Dazu gehören MetaMask, Coinbase Wallet, Trust Wallet und WalletConnect (das Dutzende von mobilen Wallets verknüpft). Wir integrieren auch Social Logins (über Web3Auth), um Non-Custodial Wallets für Krypto-Neulinge zu erstellen."
+      },
+      {
+        "question": "Sind Ihre NFT-Marktplätze dezentralisiert?",
+        "answer": "Die zentralen Transaktionselemente (Smart Contracts, Eigentum, Treuhandkonten) sind auf der Blockchain vollständig dezentralisiert. Das Frontend-Interface und die Suchdatenbanken (um schnelle Ladezeiten zu gewährleisten) werden jedoch typischerweise auf zentralisierten oder hybriden Cloud-Architekturen gehostet."
+      },
+      {
+        "question": "Bieten Sie White-Label-NFT-Marktplatzlösungen an?",
+        "answer": "Ja. Wenn Sie eine schnelle Markteinführung benötigen, bieten wir anpassbare White-Label-Lösungen. Wir passen die Benutzeroberfläche an Ihre Marke an, stellen dedizierte Smart Contracts bereit und können in 4 bis 6 Wochen einen voll funktionsfähigen Marktplatz online haben."
+      },
+      {
+        "question": "Wie weisen Ersteller die Authentizität auf der Plattform nach?",
+        "answer": "Wir implementieren verifizierte Creator-Abzeichen und integrieren externe Social-Media-Konten (Twitter/Discord-Verifizierung). Darüber hinaus ermöglicht die Unveränderlichkeit der Blockchain Käufern, die Herkunft und die ursprüngliche Prägeadresse jedes NFT öffentlich zurückzuverfolgen."
+      }
+    ],
+    "ur": [
+      {
+        "question": "کیا میں موسیقی یا رئیل اسٹیٹ کی طرح کسی مخصوص مقام کے لیے NFT بازار بنا سکتا ہوں؟",
+        "answer": "بالکل۔ طاق بازار بہت کامیاب ہیں. ہم سمارٹ کنٹریکٹس اور یوزر انٹرفیس کو خاص طور پر موسیقی (آڈیو فائلوں اور سٹریمنگ کے حقوق کو سنبھالنے)، رئیل اسٹیٹ (فریکشنل ملکیت اور KYC ہینڈلنگ) یا گیمنگ آئٹمز کے لیے تیار کر سکتے ہیں۔"
+      },
+      {
+        "question": "آپ Ethereum پر ہائی گیس فیس کو کیسے سنبھالتے ہیں؟",
+        "answer": "گیس کی زیادہ فیس کو کم کرنے کے لیے، ہم اکثر پولیگون، آربیٹرم، یا امیوٹیبل ایکس جیسے لیئر-2 سلوشنز بنانے کی تجویز کرتے ہیں۔ ہم 'آلسی منٹنگ' کو بھی نافذ کرتے ہیں، جہاں NFT کو بلاک چین میں صرف اسی لمحے ٹکسال کیا جاتا ہے جب کوئی خریدار اس کی ادائیگی کرتا ہے، پیشگی اخراجات کی بچت۔"
+      },
+      {
+        "question": "آپ کن پرس کے انضمام کی حمایت کرتے ہیں؟",
+        "answer": "ہم رسائی کو یقینی بنانے کے لیے Web3 والیٹس کی ایک وسیع صف کو مربوط کرتے ہیں۔ اس میں میٹا ماسک، کوائن بیس والیٹ، ٹرسٹ والیٹ، اور والیٹ کنیکٹ (جو درجنوں موبائل والیٹس کو جوڑتا ہے) شامل ہے۔ ہم نان کرپٹو مقامی لوگوں کے لیے نان کسٹوڈیل بٹوے بنانے کے لیے سماجی لاگ ان (Web3Auth کے ذریعے) کو بھی مربوط کرتے ہیں۔"
+      },
+      {
+        "question": "کیا آپ کے NFT بازار وکندریقرت ہیں؟",
+        "answer": "لین دین کے بنیادی عناصر (اسمارٹ کنٹریکٹس، ملکیت، ایسکرو) بلاک چین پر مکمل طور پر وکندریقرت ہیں۔ تاہم، فرنٹ اینڈ انٹرفیس اور سرچ ڈیٹا بیس (تیزی سے لوڈنگ کے اوقات کو یقینی بنانے کے لیے) کو عام طور پر سنٹرلائزڈ یا ہائبرڈ کلاؤڈ آرکیٹیکچر پر ہوسٹ کیا جاتا ہے۔"
+      },
+      {
+        "question": "کیا آپ وائٹ لیبل NFT مارکیٹ پلیس کے حل فراہم کرتے ہیں؟",
+        "answer": "ہاں، اگر آپ کو تیزی سے مارکیٹ میں آنے کی ضرورت ہے، تو ہم حسب ضرورت وائٹ لیبل حل پیش کرتے ہیں۔ ہم UI کو آپ کے برانڈ کے مطابق ڈھالتے ہیں، وقف شدہ سمارٹ کنٹریکٹ متعین کرتے ہیں، اور 4 سے 6 ہفتوں میں مکمل طور پر فعال مارکیٹ پلیس لائیو کر سکتے ہیں۔"
+      },
+      {
+        "question": "تخلیق کار پلیٹ فارم پر صداقت کو کیسے ثابت کرتے ہیں؟",
+        "answer": "ہم تصدیق شدہ تخلیق کار بیجز کو لاگو کرتے ہیں اور بیرونی سوشل میڈیا اکاؤنٹس (ٹویٹر/ڈسکارڈ تصدیق) کے ساتھ مربوط ہوتے ہیں۔ مزید برآں، بلاک چین کی غیر متغیر نوعیت خریداروں کو عوامی طور پر ہر NFT کی اصلیت اور اصل منٹنگ ایڈریس کا پتہ لگانے کی اجازت دیتی ہے۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "هل يمكنني بناء سوق NFT لتخصص معين، مثل الموسيقى أو العقارات؟",
+        "answer": "بالتأكيد. الأسواق المتخصصة ناجحة للغاية. يمكننا تخصيص العقود الذكية وواجهة المستخدم خصيصًا للموسيقى (التعامل مع الملفات الصوتية وحقوق البث)، أو العقارات (التعامل مع الملكية الجزئية و KYC)، أو عناصر الألعاب."
+      },
+      {
+        "question": "كيف تتعاملون مع رسوم الغاز العالية (gas fees) على الإيثريوم؟",
+        "answer": "للتخفيف من رسوم الغاز العالية، نوصي غالبًا بالبناء على حلول الطبقة الثانية (Layer-2) مثل Polygon أو Arbitrum أو Immutable X. كما نقوم بتنفيذ 'السك الكسول' (lazy minting)، حيث يتم سك NFT فقط على البلوكتشين في اللحظة التي يدفع فيها المشتري ثمنه، مما يوفر التكاليف الأولية."
+      },
+      {
+        "question": "ما هي تكاملات المحافظ التي تدعمونها؟",
+        "answer": "نحن ندمج مجموعة واسعة من محافظ Web3 لضمان سهولة الوصول. يشمل ذلك MetaMask و Coinbase Wallet و Trust Wallet و WalletConnect (الذي يربط العشرات من محافظ الأجهزة المحمولة). ندمج أيضًا عمليات تسجيل الدخول الاجتماعي (عبر Web3Auth) لإنشاء محافظ غير احتجازية لغير المتمرسين في العملات المشفرة."
+      },
+      {
+        "question": "هل أسواق NFT الخاصة بكم لامركزية؟",
+        "answer": "العناصر الأساسية للمعاملات (العقود الذكية، الملكية، الضمانات) لامركزية بالكامل على البلوكتشين. ومع ذلك، عادة ما يتم استضافة واجهة المستخدم الأمامية وقواعد بيانات البحث (لضمان أوقات تحميل سريعة) على بنيات سحابية مركزية أو هجينة."
+      },
+      {
+        "question": "هل تقدمون حلول سوق NFT للعلامة البيضاء (white-label)؟",
+        "answer": "نعم. إذا كنت بحاجة إلى وقت سريع لطرح المنتج في السوق، فنحن نقدم حلول العلامة البيضاء القابلة للتخصيص. نقوم بتكييف واجهة المستخدم مع علامتك التجارية، وننشر عقودًا ذكية مخصصة، ويمكن أن يكون لدينا سوق يعمل بكامل طاقته في غضون 4 إلى 6 أسابيع."
+      },
+      {
+        "question": "كيف يثبت المبدعون أصالتهم على المنصة؟",
+        "answer": "نقوم بتنفيذ شارات المبدعين المعتمدين ونتكامل مع حسابات وسائل التواصل الاجتماعي الخارجية (التحقق من Twitter/Discord). بالإضافة إلى ذلك، تتيح الطبيعة غير القابلة للتغيير للبلوكتشين للمشترين تتبع مصدر كل NFT وعنوان السك الأصلي الخاص به علنًا."
+      }
+    ]
+  },
+  "shopify-development": {
+    "en": [
+      {
+        "question": "Can you build a completely custom design for my Shopify store?",
+        "answer": "Yes. We don't just use pre-made templates; we build highly customized Shopify themes from the ground up using Liquid, HTML5, and Tailwind CSS. This ensures your store reflects your exact brand identity and operates blazingly fast."
+      },
+      {
+        "question": "How do you handle complex product variants and customizations?",
+        "answer": "Shopify natively has a 100-variant limit per product. If your catalog requires more (e.g., custom furniture with hundreds of fabric options), we utilize Shopify Scripts or build custom React-based product configurators to bypass these limitations elegantly."
+      },
+      {
+        "question": "Do you offer Shopify Headless development?",
+        "answer": "Absolutely. For brands needing ultimate performance and omnichannel flexibility, we decouple the frontend from Shopify. We build a custom Next.js frontend that communicates with Shopify's Storefront API, resulting in sub-second page loads."
+      },
+      {
+        "question": "Can you migrate our store from WooCommerce or Magento to Shopify?",
+        "answer": "Yes, we specialize in platform migrations. We securely map and transfer all your product data, customer accounts, order histories, and implement 301 redirects to ensure you maintain your current SEO rankings during the transition."
+      },
+      {
+        "question": "How much does a custom Shopify store cost?",
+        "answer": "A custom Shopify theme design and development project typically starts around $10,000 to $15,000. Complex headless Shopify builds or projects requiring extensive custom private app development generally range from $25,000 to $50,000+."
+      },
+      {
+        "question": "Do you build custom Shopify Apps for specific backend needs?",
+        "answer": "Yes. If an existing app in the Shopify App Store doesn't meet your business logic, we build secure, private Shopify Apps using Node.js or Ruby on Rails to connect to your specialized 3PL, ERP, or custom CRM systems."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Shopify mağazam için tamamen özel bir tasarım oluşturabilir misiniz?",
+        "answer": "Evet. Sadece hazır şablonlar kullanmıyoruz; Liquid, HTML5 ve Tailwind CSS kullanarak sıfırdan son derece özelleştirilmiş Shopify temaları oluşturuyoruz. Bu, mağazanızın tam olarak marka kimliğinizi yansıtmasını ve inanılmaz hızlı çalışmasını sağlar."
+      },
+      {
+        "question": "Karmaşık ürün varyantlarını ve özelleştirmelerini nasıl yönetiyorsunuz?",
+        "answer": "Shopify'ın varsayılan olarak ürün başına 100 varyant sınırı vardır. Kataloğunuz daha fazlasını gerektiriyorsa (örn. yüzlerce kumaş seçeneği olan özel mobilyalar), bu sınırlamaları zarif bir şekilde aşmak için Shopify Script'lerini kullanır veya özel React tabanlı ürün yapılandırıcıları oluştururuz."
+      },
+      {
+        "question": "Shopify Headless (Başsız) geliştirme sunuyor musunuz?",
+        "answer": "Kesinlikle. Üstün performansa ve çok kanallı esnekliğe ihtiyaç duyan markalar için ön ucu Shopify'dan ayırıyoruz. Shopify'ın Storefront API'si ile iletişim kuran özel bir Next.js ön ucu oluşturarak saniyenin altında sayfa yüklemeleri elde ediyoruz."
+      },
+      {
+        "question": "Mağazamızı WooCommerce veya Magento'dan Shopify'a taşıyabilir misiniz?",
+        "answer": "Evet, platform geçişlerinde uzmanız. Tüm ürün verilerinizi, müşteri hesaplarınızı, sipariş geçmişlerinizi güvenli bir şekilde haritalandırıp aktarıyor ve geçiş sırasında mevcut SEO sıralamalarınızı korumanızı sağlamak için 301 yönlendirmeleri uyguluyoruz."
+      },
+      {
+        "question": "Özel bir Shopify mağazasının maliyeti nedir?",
+        "answer": "Özel bir Shopify tema tasarımı ve geliştirme projesi genellikle 10.000$ ile 15.000$ civarında başlar. Karmaşık Headless Shopify yapıları veya kapsamlı özel, gizli uygulama (private app) geliştirmesi gerektiren projeler genellikle 25.000$ ile 50.000$+ arasında değişir."
+      },
+      {
+        "question": "Belirli arka uç ihtiyaçları için özel Shopify Uygulamaları (Apps) geliştiriyor musunuz?",
+        "answer": "Evet. Shopify App Store'daki mevcut bir uygulama iş mantığınızı karşılamıyorsa, özel 3PL, ERP veya özel CRM sistemlerinize bağlanmak için Node.js veya Ruby on Rails kullanarak güvenli, özel Shopify Uygulamaları oluşturuyoruz."
+      }
+    ],
+    "de": [
+      {
+        "question": "Können Sie ein komplett individuelles Design für meinen Shopify-Shop erstellen?",
+        "answer": "Ja. Wir verwenden nicht nur vorgefertigte Vorlagen; Wir erstellen von Grund auf hochgradig angepasste Shopify-Themes unter Verwendung von Liquid, HTML5 und Tailwind CSS. Dadurch wird sichergestellt, dass Ihr Shop exakt Ihre Markenidentität widerspiegelt und blitzschnell läuft."
+      },
+      {
+        "question": "Wie gehen Sie mit komplexen Produktvarianten und Anpassungen um?",
+        "answer": "Shopify hat von Haus aus ein Limit von 100 Varianten pro Produkt. Wenn Ihr Katalog mehr erfordert (z. B. maßgefertigte Möbel mit Hunderten von Stoffoptionen), nutzen wir Shopify Scripts oder erstellen benutzerdefinierte React-basierte Produktkonfiguratoren, um diese Einschränkungen elegant zu umgehen."
+      },
+      {
+        "question": "Bieten Sie Shopify Headless-Entwicklung an?",
+        "answer": "Absolut. Für Marken, die ultimative Leistung und Omnichannel-Flexibilität benötigen, entkoppeln wir das Frontend von Shopify. Wir erstellen ein benutzerdefiniertes Next.js-Frontend, das mit der Storefront-API von Shopify kommuniziert, was zu Seitenladezeiten von unter einer Sekunde führt."
+      },
+      {
+        "question": "Können Sie unseren Shop von WooCommerce oder Magento zu Shopify migrieren?",
+        "answer": "Ja, wir sind auf Plattformmigrationen spezialisiert. Wir kartieren und übertragen alle Ihre Produktdaten, Kundenkonten und Bestellhistorien sicher und implementieren 301-Weiterleitungen, um sicherzustellen, dass Sie während des Übergangs Ihre aktuellen SEO-Rankings behalten."
+      },
+      {
+        "question": "Wie viel kostet ein benutzerdefinierter Shopify-Shop?",
+        "answer": "Ein Design- und Entwicklungsprojekt für ein benutzerdefiniertes Shopify-Theme beginnt normalerweise bei etwa 10.000 bis 15.000 US-Dollar. Komplexe Headless-Shopify-Builds oder Projekte, die eine umfangreiche Entwicklung benutzerdefinierter privater Apps erfordern, liegen im Allgemeinen zwischen 25.000 und über 50.000 US-Dollar."
+      },
+      {
+        "question": "Entwickeln Sie benutzerdefinierte Shopify-Apps für bestimmte Backend-Anforderungen?",
+        "answer": "Ja. Wenn eine vorhandene App im Shopify App Store Ihre Geschäftslogik nicht erfüllt, erstellen wir sichere, private Shopify-Apps mit Node.js oder Ruby on Rails, um eine Verbindung zu Ihren speziellen 3PL-, ERP- oder benutzerdefinierten CRM-Systemen herzustellen."
+      }
+    ],
+    "ur": [
+      {
+        "question": "کیا آپ میرے شاپ فائی اسٹور کے لیے مکمل طور پر اپنی مرضی کے مطابق ڈیزائن بنا سکتے ہیں؟",
+        "answer": "جی ہاں، ہم صرف پہلے سے بنی ٹیمپلیٹس کا استعمال نہیں کرتے؛ ہم مائع، HTML5، اور ٹیل ونڈ CSS کا استعمال کرتے ہوئے گراؤنڈ اپ سے انتہائی حسب ضرورت Shopify تھیمز بناتے ہیں۔ اس سے یہ یقینی بنتا ہے کہ آپ کا اسٹور آپ کی اصل برانڈ کی شناخت کی عکاسی کرتا ہے اور تیزی سے کام کرتا ہے۔"
+      },
+      {
+        "question": "آپ پیچیدہ پروڈکٹ کی مختلف حالتوں اور تخصیصات کو کیسے ہینڈل کرتے ہیں؟",
+        "answer": "Shopify کی مقامی طور پر فی پروڈکٹ 100 ویریئنٹ کی حد ہے۔ اگر آپ کے کیٹلاگ میں مزید ضرورت ہے (مثلاً، سیکڑوں تانے بانے کے اختیارات کے ساتھ حسب ضرورت فرنیچر)، تو ہم Shopify اسکرپٹ کا استعمال کرتے ہیں یا ان حدود کو خوبصورتی سے نظرانداز کرنے کے لیے اپنی مرضی کے مطابق رد عمل پر مبنی پروڈکٹ کنفیگریٹر بناتے ہیں۔"
+      },
+      {
+        "question": "کیا آپ شاپائف ہیڈ لیس ڈیولپمنٹ پیش کرتے ہیں؟",
+        "answer": "بالکل۔ حتمی کارکردگی اور اومنی چینل لچک کی ضرورت والے برانڈز کے لیے، ہم فرنٹ اینڈ کو Shopify سے الگ کرتے ہیں۔ ہم ایک حسب ضرورت Next.js فرنٹ اینڈ بناتے ہیں جو Shopify کے Storefront API کے ساتھ بات چیت کرتا ہے، جس کے نتیجے میں ذیلی سیکنڈ کے صفحے لوڈ ہوتے ہیں۔"
+      },
+      {
+        "question": "کیا آپ ہمارے اسٹور کو WooCommerce یا Magento سے Shopify پر منتقل کر سکتے ہیں؟",
+        "answer": "ہاں، ہم پلیٹ فارم کی نقل مکانی میں مہارت رکھتے ہیں۔ ہم آپ کے پروڈکٹ کے تمام ڈیٹا، کسٹمر کے اکاؤنٹس، آرڈر کی تاریخوں کو محفوظ طریقے سے نقشہ اور منتقل کرتے ہیں، اور 301 ری ڈائریکٹس کو لاگو کرتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ آپ منتقلی کے دوران اپنی موجودہ SEO درجہ بندی کو برقرار رکھتے ہیں۔"
+      },
+      {
+        "question": "حسب ضرورت شاپائف اسٹور کی قیمت کتنی ہے؟",
+        "answer": "ایک حسب ضرورت شاپائف تھیم ڈیزائن اور ڈیولپمنٹ پروجیکٹ عام طور پر لگ بھگ $10,000 سے $15,000 تک شروع ہوتا ہے۔ پیچیدہ ہیڈ لیس شاپائف بلڈز یا پروجیکٹس جن میں وسیع کسٹم پرائیویٹ ایپ ڈویلپمنٹ کی ضرورت ہوتی ہے عام طور پر $25,000 سے $50,000+ تک ہوتے ہیں۔"
+      },
+      {
+        "question": "کیا آپ مخصوص بیک اینڈ کی ضروریات کے لیے حسب ضرورت Shopify ایپس بناتے ہیں؟",
+        "answer": "ہاں۔ اگر Shopify App Store میں موجود کوئی ایپ آپ کی کاروباری منطق کو پورا نہیں کرتی ہے، تو ہم آپ کے مخصوص 3PL، ERP، یا کسٹم CRM سسٹمز سے جڑنے کے لیے Node.js یا Ruby on Rails کا استعمال کرتے ہوئے محفوظ، نجی Shopify ایپس بناتے ہیں۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "هل يمكنك بناء تصميم مخصص بالكامل لمتجر Shopify الخاص بي؟",
+        "answer": "نعم. نحن لا نستخدم قوالب جاهزة فحسب؛ نحن نبني سمات Shopify مخصصة للغاية من الصفر باستخدام Liquid و HTML5 و Tailwind CSS. هذا يضمن أن متجرك يعكس هوية علامتك التجارية الدقيقة ويعمل بسرعة فائقة."
+      },
+      {
+        "question": "كيف تتعاملون مع متغيرات المنتجات المعقدة (product variants) والتخصيصات؟",
+        "answer": "يحتوي Shopify في الأصل على حد 100 متغير لكل منتج. إذا كان الكتالوج الخاص بك يتطلب المزيد (على سبيل المثال، أثاث مخصص مع مئات من خيارات الأقمشة)، فإننا نستخدم Shopify Scripts أو نبني مكونات منتجات مخصصة تعتمد على React لتجاوز هذه القيود بأناقة."
+      },
+      {
+        "question": "هل تقدمون تطوير Shopify المنفصل (Headless)؟",
+        "answer": "بالتأكيد. بالنسبة للعلامات التجارية التي تحتاج إلى أداء فائق ومرونة في جميع القنوات، نقوم بفصل الواجهة الأمامية عن Shopify. نقوم بإنشاء واجهة أمامية مخصصة لـ Next.js تتواصل مع Storefront API الخاص بـ Shopify، مما يؤدي إلى تحميل الصفحات في أجزاء من الثانية."
+      },
+      {
+        "question": "هل يمكنكم ترحيل متجرنا من WooCommerce أو Magento إلى Shopify؟",
+        "answer": "نعم، نحن متخصصون في ترحيل المنصات. نقوم بتعيين ونقل جميع بيانات المنتجات وحسابات العملاء وتاريخ الطلبات بشكل آمن، وننفذ عمليات إعادة التوجيه 301 للتأكد من حفاظك على تصنيفات SEO الحالية أثناء النقل."
+      },
+      {
+        "question": "كم يكلف متجر Shopify المخصص؟",
+        "answer": "يبدأ مشروع تصميم وتطوير سمة Shopify مخصصة عادةً من 10000 دولار إلى 15000 دولار. تتراوح بنيات Shopify Headless المعقدة أو المشاريع التي تتطلب تطوير تطبيقات خاصة (private apps) مكثفة بشكل عام من 25000 دولار إلى 50000 دولار وأكثر."
+      },
+      {
+        "question": "هل تبنون تطبيقات Shopify مخصصة لتلبية احتياجات خلفية (backend) محددة؟",
+        "answer": "نعم. إذا كان التطبيق الحالي في Shopify App Store لا يلبي منطق عملك، فنحن نبني تطبيقات Shopify خاصة وآمنة باستخدام Node.js أو Ruby on Rails للاتصال بأنظمة 3PL المتخصصة أو ERP أو أنظمة CRM المخصصة."
+      }
+    ]
+  },
+  "desktop-application-development": {
+    "en": [
+      {
+        "question": "Why build a desktop app instead of a web app?",
+        "answer": "Desktop apps are ideal when you need deep access to local operating system APIs (file system, hardware rendering), require heavy offline computation without relying on server latency, or need strict security environments that isolate data from the internet."
+      },
+      {
+        "question": "Which frameworks do you use for desktop development?",
+        "answer": "We use modern cross-platform frameworks to maximize efficiency. We primarily use Electron or Tauri for apps heavily relying on web technologies (HTML/JS/React), and Qt or .NET MAUI for performance-critical, resource-intensive native applications."
+      },
+      {
+        "question": "Will the app run on both Mac and Windows?",
+        "answer": "Yes, our development approach is cross-platform by design. Whether we use Electron, Tauri, or .NET, we compile your application to run seamlessly on Windows, macOS, and Linux from a single unified codebase."
+      },
+      {
+        "question": "How are desktop applications updated once installed?",
+        "answer": "We integrate automated Over-The-Air (OTA) update mechanisms. When users launch the app, it checks a remote server for updates, downloads the patch in the background, and prompts the user to restart, ensuring everyone is always on the latest version."
+      },
+      {
+        "question": "How long does it take to develop a desktop application?",
+        "answer": "A standard desktop utility or business tool takes roughly 3 to 5 months. Complex applications involving custom hardware integrations, intense local 3D rendering, or legacy database synchronization can take 6 to 9 months."
+      },
+      {
+        "question": "Can your desktop apps work offline and sync data later?",
+        "answer": "Absolutely. We utilize local databases like SQLite to ensure full functionality without an internet connection. Once a connection is detected, the app automatically synchronizes local changes with your central cloud database in the background."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Neden bir web uygulaması yerine bir masaüstü uygulaması geliştirmeliyim?",
+        "answer": "Masaüstü uygulamaları; yerel işletim sistemi API'lerine (dosya sistemi, donanım işleme) derinlemesine erişmeniz gerektiğinde, sunucu gecikmesine güvenmeden yoğun çevrimdışı hesaplama gerektirdiğinde veya verileri internetten izole eden katı güvenlik ortamlarına ihtiyaç duyduğunuzda idealdir."
+      },
+      {
+        "question": "Masaüstü geliştirme için hangi çerçeveleri (framework) kullanıyorsunuz?",
+        "answer": "Verimliliği en üst düzeye çıkarmak için modern çapraz platform çerçeveleri kullanıyoruz. Büyük ölçüde web teknolojilerine (HTML/JS/React) dayanan uygulamalar için öncelikle Electron veya Tauri'yi, performans açısından kritik, yoğun kaynak kullanan yerel uygulamalar için Qt veya .NET MAUI'yi kullanıyoruz."
+      },
+      {
+        "question": "Uygulama hem Mac hem de Windows'ta çalışacak mı?",
+        "answer": "Evet, geliştirme yaklaşımımız tasarım gereği çapraz platformludur. İster Electron, Tauri veya .NET kullanalım, uygulamanızı tek bir birleşik kod tabanından Windows, macOS ve Linux'ta sorunsuz çalışacak şekilde derliyoruz."
+      },
+      {
+        "question": "Masaüstü uygulamaları yüklendikten sonra nasıl güncellenir?",
+        "answer": "Otomatik Kablosuz (OTA) güncelleme mekanizmalarını entegre ediyoruz. Kullanıcılar uygulamayı başlattığında, uygulama güncellemeler için uzak bir sunucuyu kontrol eder, yamayı arka planda indirir ve kullanıcıdan yeniden başlatmasını isteyerek herkesin her zaman en son sürümde olmasını sağlar."
+      },
+      {
+        "question": "Bir masaüstü uygulaması geliştirmek ne kadar sürer?",
+        "answer": "Standart bir masaüstü yardımcı programı veya iş aracı yaklaşık 3 ila 5 ay sürer. Özel donanım entegrasyonları, yoğun yerel 3B işleme veya eski veritabanı senkronizasyonu içeren karmaşık uygulamalar 6 ila 9 ay sürebilir."
+      },
+      {
+        "question": "Masaüstü uygulamalarınız çevrimdışı çalışabilir ve verileri daha sonra senkronize edebilir mi?",
+        "answer": "Kesinlikle. İnternet bağlantısı olmadan tam işlevsellik sağlamak için SQLite gibi yerel veritabanlarını kullanıyoruz. Bir bağlantı algılandığında uygulama, yerel değişiklikleri arka planda merkezi bulut veritabanınızla otomatik olarak senkronize eder."
+      }
+    ],
+    "de": [
+      {
+        "question": "Warum eine Desktop-App anstelle einer Web-App erstellen?",
+        "answer": "Desktop-Apps sind ideal, wenn Sie tiefen Zugriff auf lokale Betriebssystem-APIs (Dateisystem, Hardware-Rendering) benötigen, rechenintensive Offline-Berechnungen ohne Abhängigkeit von Server-Latenzen erfordern oder strenge Sicherheitsumgebungen benötigen, die Daten vom Internet isolieren."
+      },
+      {
+        "question": "Welche Frameworks verwenden Sie für die Desktop-Entwicklung?",
+        "answer": "Wir verwenden moderne plattformübergreifende Frameworks, um die Effizienz zu maximieren. Wir verwenden hauptsächlich Electron oder Tauri für Apps, die stark auf Webtechnologien (HTML/JS/React) basieren, und Qt oder .NET MAUI für leistungskritische, ressourcenintensive native Anwendungen."
+      },
+      {
+        "question": "Wird die App sowohl auf dem Mac als auch unter Windows ausgeführt?",
+        "answer": "Ja, unser Entwicklungsansatz ist plattformübergreifend konzipiert. Unabhängig davon, ob wir Electron, Tauri oder .NET verwenden, wir kompilieren Ihre Anwendung so, dass sie nahtlos unter Windows, macOS und Linux von einer einzigen einheitlichen Codebasis aus ausgeführt werden kann."
+      },
+      {
+        "question": "Wie werden Desktop-Anwendungen nach der Installation aktualisiert?",
+        "answer": "Wir integrieren automatisierte Over-The-Air (OTA)-Updatemechanismen. Wenn Benutzer die App starten, sucht sie auf einem Remote-Server nach Updates, lädt den Patch im Hintergrund herunter und fordert den Benutzer zu einem Neustart auf, um sicherzustellen, dass jeder immer die neueste Version verwendet."
+      },
+      {
+        "question": "Wie lange dauert die Entwicklung einer Desktop-Anwendung?",
+        "answer": "Ein standardmäßiges Desktop-Dienstprogramm oder Business-Tool dauert etwa 3 bis 5 Monate. Komplexe Anwendungen, die benutzerdefinierte Hardware-Integrationen, intensives lokales 3D-Rendering oder die Synchronisation von Legacy-Datenbanken beinhalten, können 6 bis 9 Monate dauern."
+      },
+      {
+        "question": "Können Ihre Desktop-Apps offline arbeiten und Daten später synchronisieren?",
+        "answer": "Absolut. Wir nutzen lokale Datenbanken wie SQLite, um die volle Funktionalität auch ohne Internetverbindung zu gewährleisten. Sobald eine Verbindung erkannt wird, synchronisiert die App lokale Änderungen automatisch im Hintergrund mit Ihrer zentralen Cloud-Datenbank."
+      }
+    ],
+    "ur": [
+      {
+        "question": "ویب ایپ کے بجائے ڈیسک ٹاپ ایپ کیوں بنائیں؟",
+        "answer": "ڈیسک ٹاپ ایپس اس وقت مثالی ہوتی ہیں جب آپ کو مقامی آپریٹنگ سسٹم APIs (فائل سسٹم، ہارڈویئر رینڈرنگ) تک گہری رسائی کی ضرورت ہوتی ہے، سرور کی تاخیر پر انحصار کیے بغیر بھاری آف لائن حساب کتاب کی ضرورت ہوتی ہے، یا سخت حفاظتی ماحول کی ضرورت ہوتی ہے جو انٹرنیٹ سے ڈیٹا کو الگ کر دیتے ہیں۔"
+      },
+      {
+        "question": "ڈیسک ٹاپ کی ترقی کے لیے آپ کون سے فریم ورک استعمال کرتے ہیں؟",
+        "answer": "ہم کارکردگی کو زیادہ سے زیادہ کرنے کے لیے جدید کراس پلیٹ فارم فریم ورک کا استعمال کرتے ہیں۔ ہم بنیادی طور پر ویب ٹیکنالوجیز (HTML/JS/React) پر بہت বেশি انحصار کرنے والی ایپس کے لیے Electron یا Tauri، اور کارکردگی کے لیے اہم، وسائل پر مشتمل مقامی ایپلی کیشنز کے لیے Qt یا .NET MAUI استعمال کرتے ہیں۔"
+      },
+      {
+        "question": "کیا ایپ میک اور ونڈوز دونوں پر چلے گی؟",
+        "answer": "جی ہاں، ہماری ترقیاتی نقطہ نظر ڈیزائن کے لحاظ سے کراس پلیٹ فارم ہے۔ چاہے ہم Electron، Tauri، یا .NET کا استعمال کریں، ہم آپ کی ایپلیکیشن کو ایک متحد کوڈ بیس سے ونڈوز، میکوس، اور لینکس پر بغیر کسی رکاوٹ کے چلانے کے لیے مرتب کرتے ہیں۔"
+      },
+      {
+        "question": "انسٹال ہونے کے بعد ڈیسک ٹاپ ایپلیکیشنز کو کیسے اپ ڈیٹ کیا جاتا ہے؟",
+        "answer": "ہم خودکار اوور دی ایئر (OTA) اپ ڈیٹ میکانزم کو مربوط کرتے ہیں۔ جب صارف ایپ لانچ کرتے ہیں، تو یہ اپ ڈیٹس کے لیے ریموٹ سرور کو چیک کرتا ہے، بیک گراؤنڈ میں پیچ ڈاؤن لوڈ کرتا ہے، اور صارف کو دوبارہ شروع کرنے کا اشارہ کرتا ہے، اس بات کو یقینی بناتے ہوئے کہ ہر کوئی ہمیشہ تازہ ترین ورژن پر ہے۔"
+      },
+      {
+        "question": "ڈیسک ٹاپ ایپلیکیشن تیار کرنے میں کتنا وقت لگتا ہے؟",
+        "answer": "معیاری ڈیسک ٹاپ کی افادیت یا کاروباری ٹول میں تقریباً 3 سے 5 مہینے لگتے ہیں۔ کسٹم ہارڈویئر انٹیگریشنز، شدید مقامی 3D رینڈرنگ، یا میراثی ڈیٹا بیس کی مطابقت پذیری پر مشتمل پیچیدہ ایپلی کیشنز کو 6 سے 9 ماہ لگ سکتے ہیں۔"
+      },
+      {
+        "question": "کیا آپ کی ڈیسک ٹاپ ایپس آف لائن کام کر سکتی ہیں اور بعد میں ڈیٹا کی مطابقت پذیری کر سکتی ہیں؟",
+        "answer": "بالکل۔ ہم انٹرنیٹ کنکشن کے بغیر مکمل فعالیت کو یقینی بنانے کے لیے مقامی ڈیٹا بیس جیسے SQLite کا استعمال کرتے ہیں۔ کنکشن کا پتہ چلنے کے بعد، ایپ پس منظر میں آپ کے مرکزی کلاؤڈ ڈیٹا بیس کے ساتھ خود بخود مقامی تبدیلیوں کو ہم آہنگ کرتی ہے۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "لماذا يتم بناء تطبيق سطح مكتب بدلاً من تطبيق ويب؟",
+        "answer": "تطبيقات سطح المكتب مثالية عندما تحتاج إلى وصول عميق إلى واجهات برمجة تطبيقات نظام التشغيل المحلي (نظام الملفات، عرض الأجهزة)، أو تتطلب حسابات مكثفة دون اتصال بالإنترنت دون الاعتماد على زمن انتقال الخادم، أو تحتاج إلى بيئات أمنية صارمة تعزل البيانات عن الإنترنت."
+      },
+      {
+        "question": "ما هي أطر العمل (frameworks) التي تستخدمونها لتطوير سطح المكتب؟",
+        "answer": "نحن نستخدم أطر عمل حديثة عبر الأنظمة الأساسية لتحقيق أقصى قدر من الكفاءة. نستخدم بشكل أساسي Electron أو Tauri للتطبيقات التي تعتمد بشكل كبير على تقنيات الويب (HTML/JS/React)، و Qt أو .NET MAUI للتطبيقات الأصلية الهامة للأداء والمكثفة للموارد."
+      },
+      {
+        "question": "هل سيعمل التطبيق على كل من Mac و Windows؟",
+        "answer": "نعم، نهج التطوير لدينا عابر للأنظمة الأساسية (cross-platform) حسب التصميم. سواء كنا نستخدم Electron أو Tauri أو .NET، نقوم بتجميع تطبيقك ليعمل بسلاسة على أنظمة Windows و macOS و Linux من قاعدة بيانات برمجية واحدة موحدة."
+      },
+      {
+        "question": "كيف يتم تحديث تطبيقات سطح المكتب بمجرد تثبيتها؟",
+        "answer": "نقوم بدمج آليات التحديث التلقائي عبر الهواء (OTA). عندما يقوم المستخدمون بتشغيل التطبيق، فإنه يتحقق من خادم بعيد بحثًا عن التحديثات، ويقوم بتنزيل التصحيح في الخلفية، ويطلب من المستخدم إعادة التشغيل، مما يضمن أن الجميع يعملون دائمًا على أحدث إصدار."
+      },
+      {
+        "question": "ما المدة التي يستغرقها تطوير تطبيق سطح مكتب؟",
+        "answer": "تستغرق أداة سطح المكتب القياسية أو أداة الأعمال ما يقرب من 3 إلى 5 أشهر. يمكن أن تستغرق التطبيقات المعقدة التي تتضمن تكاملات مخصصة للأجهزة أو عرضًا ثلاثي الأبعاد محليًا مكثفًا أو مزامنة قاعدة البيانات القديمة من 6 إلى 9 أشهر."
+      },
+      {
+        "question": "هل يمكن لتطبيقات سطح المكتب الخاصة بك العمل دون اتصال ومزامنة البيانات لاحقًا؟",
+        "answer": "بالتأكيد. نستخدم قواعد بيانات محلية مثل SQLite لضمان الوظائف الكاملة دون اتصال بالإنترنت. بمجرد اكتشاف اتصال، يقوم التطبيق تلقائيًا بمزامنة التغييرات المحلية مع قاعدة البيانات السحابية المركزية الخاصة بك في الخلفية."
+      }
+    ]
+  },
+  "technical-documentation": {
+    "en": [
+      {
+        "question": "Why should we hire external writers for technical documentation?",
+        "answer": "External technical writers bring a fresh, objective perspective, ensuring your documentation is understandable to a new user. They free up your highly-paid software engineers from writing tasks, allowing them to focus purely on coding and development."
+      },
+      {
+        "question": "What types of documentation do you produce?",
+        "answer": "We produce a wide range of materials including API Reference Guides (using Swagger/OpenAPI), Developer Portals, System Architecture diagrams, End-User Manuals, Setup Guides, and internal codebase wikis."
+      },
+      {
+        "question": "How do you gather the necessary technical information?",
+        "answer": "Our writers are highly technical. They interview your Subject Matter Experts (SMEs), analyze your raw source code, test your APIs directly using tools like Postman, and translate complex logic into clear, human-readable documentation."
+      },
+      {
+        "question": "Do you use 'Docs as Code' methodologies?",
+        "answer": "Yes. We strongly advocate for 'Docs as Code.' We write documentation in Markdown or MDX, store it in your Git repository alongside the source code, and use CI/CD pipelines (via tools like Docusaurus or ReadMe) to publish updates automatically."
+      },
+      {
+        "question": "How much does a technical documentation project cost?",
+        "answer": "Costs vary based on scope. A concise API reference guide for a small product might range from $3,000 to $5,000. Comprehensive developer portals and user manuals for complex enterprise systems typically range from $10,000 to $25,000+."
+      },
+      {
+        "question": "Can you maintain and update our documentation long-term?",
+        "answer": "Absolutely. Software evolves, and documentation rots if ignored. We offer retainer packages to continuously review your codebase commits, interview your team during sprint planning, and update the documentation concurrently with your product releases."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Teknik dokümantasyon için neden dışarıdan yazarlar tutmalıyız?",
+        "answer": "Dışarıdan gelen teknik yazarlar yeni ve nesnel bir bakış açısı getirerek dokümantasyonunuzun yeni bir kullanıcı için anlaşılır olmasını sağlar. Yüksek maaşlı yazılım mühendislerinizi yazma görevlerinden kurtararak, yalnızca kodlama ve geliştirmeye odaklanmalarını sağlarlar."
+      },
+      {
+        "question": "Ne tür belgeler üretiyorsunuz?",
+        "answer": "API Referans Kılavuzları (Swagger/OpenAPI kullanarak), Geliştirici Portalları, Sistem Mimarisi diyagramları, Son Kullanıcı Kılavuzları, Kurulum Kılavuzları ve dahili kod tabanı vikileri (wiki) dahil olmak üzere geniş bir yelpazede materyal üretiyoruz."
+      },
+      {
+        "question": "Gerekli teknik bilgileri nasıl topluyorsunuz?",
+        "answer": "Yazarlarımız son derece tekniktir. Konu Uzmanlarınızla (SME'ler) röportaj yapar, ham kaynak kodunuzu analiz eder, Postman gibi araçları kullanarak API'lerinizi doğrudan test eder ve karmaşık mantığı net, insan tarafından okunabilir belgelere dönüştürürler."
+      },
+      {
+        "question": "'Kod Olarak Belgeler' (Docs as Code) metodolojilerini kullanıyor musunuz?",
+        "answer": "Evet. 'Kod Olarak Belgeleri' güçlü bir şekilde savunuyoruz. Belgeleri Markdown veya MDX dilinde yazıyor, kaynak koduyla birlikte Git deponuzda (repository) saklıyor ve güncellemeleri otomatik olarak yayınlamak için (Docusaurus veya ReadMe gibi araçlar aracılığıyla) CI/CD işlem hatlarını kullanıyoruz."
+      },
+      {
+        "question": "Teknik dokümantasyon projesinin maliyeti nedir?",
+        "answer": "Maliyetler kapsama göre değişir. Küçük bir ürün için özlü bir API referans kılavuzu 3.000$ ile 5.000$ arasında değişebilir. Karmaşık kurumsal sistemler için kapsamlı geliştirici portalları ve kullanım kılavuzları genellikle 10.000$ ile 25.000$+ arasında değişir."
+      },
+      {
+        "question": "Belgelerimizi uzun vadeli olarak koruyabilir ve güncelleyebilir misiniz?",
+        "answer": "Kesinlikle. Yazılım gelişir ve göz ardı edilirse belgeler çürür. Kod tabanı işlemelerinizi (commits) sürekli olarak gözden geçirmek, sprint planlaması sırasında ekibinizle röportaj yapmak ve belgeleri ürün sürümlerinizle eşzamanlı olarak güncellemek için periyodik ödemeli (retainer) paketler sunuyoruz."
+      }
+    ],
+    "de": [
+      {
+        "question": "Warum sollten wir für die technische Dokumentation externe Autoren engagieren?",
+        "answer": "Externe technische Redakteure bringen eine frische, objektive Perspektive ein und stellen sicher, dass Ihre Dokumentation für einen neuen Benutzer verständlich ist. Sie entlasten Ihre hochbezahlten Softwareentwickler von Schreibaufgaben, sodass sie sich rein auf Codierung und Entwicklung konzentrieren können."
+      },
+      {
+        "question": "Welche Arten von Dokumentationen erstellen Sie?",
+        "answer": "Wir erstellen eine breite Palette von Materialien, darunter API-Referenzhandbücher (mit Swagger/OpenAPI), Entwicklerportale, Systemarchitekturdiagramme, Endbenutzerhandbücher, Einrichtungsanleitungen und interne Codebasis-Wikis."
+      },
+      {
+        "question": "Wie sammeln Sie die notwendigen technischen Informationen?",
+        "answer": "Unsere Autoren sind technisch sehr versiert. Sie befragen Ihre Fachexperten (SMEs), analysieren Ihren reinen Quellcode, testen Ihre APIs direkt mit Tools wie Postman und übersetzen komplexe Logik in eine klare, für Menschen lesbare Dokumentation."
+      },
+      {
+        "question": "Verwenden Sie „Docs as Code“-Methoden?",
+        "answer": "Ja. Wir setzen uns stark für „Docs as Code“ ein. Wir schreiben die Dokumentation in Markdown oder MDX, speichern sie zusammen mit dem Quellcode in Ihrem Git-Repository und verwenden CI/CD-Pipelines (über Tools wie Docusaurus oder ReadMe), um Aktualisierungen automatisch zu veröffentlichen."
+      },
+      {
+        "question": "Was kostet ein technisches Dokumentationsprojekt?",
+        "answer": "Die Kosten variieren je nach Umfang. Ein kurzes API-Referenzhandbuch für ein kleines Produkt kann zwischen 3.000 und 5.000 US-Dollar kosten. Umfassende Entwicklerportale und Benutzerhandbücher für komplexe Unternehmenssysteme liegen in der Regel zwischen 10.000 und über 25.000 US-Dollar."
+      },
+      {
+        "question": "Können Sie unsere Dokumentation langfristig pflegen und aktualisieren?",
+        "answer": "Absolut. Software entwickelt sich weiter und die Dokumentation verrottet, wenn sie ignoriert wird. Wir bieten Retainer-Pakete an, um Ihre Codebasis-Commits kontinuierlich zu überprüfen, Ihr Team während der Sprint-Planung zu befragen und die Dokumentation gleichzeitig mit Ihren Produktveröffentlichungen zu aktualisieren."
+      }
+    ],
+    "ur": [
+      {
+        "question": "ہمیں تکنیکی دستاویزات کے لیے بیرونی مصنفین کی خدمات کیوں حاصل کرنی چاہئیں؟",
+        "answer": "تکنیکی مصنفین ایک تازہ، بامقصد نقطہ نظر لاتے ہیں، اس بات کو یقینی بناتے ہوئے کہ آپ کی دستاویزات نئے صارف کے لیے قابل فہم ہوں۔ وہ آپ کے زیادہ تنخواہ پانے والے سافٹ ویئر انجینئرز کو لکھنے کے کاموں سے فارغ کرتے ہیں، جس سے وہ خالصتاً کوڈنگ اور ڈیولپمنٹ پر توجہ مرکوز کر سکتے ہیں۔"
+      },
+      {
+        "question": "آپ کس قسم کی دستاویزات تیار کرتے ہیں؟",
+        "answer": "ہم مختلف قسم کا مواد تیار کرتے ہیں جس میں API ریفرنس گائیڈز (Swagger/OpenAPI کا استعمال کرتے ہوئے)، ڈیولپر پورٹلز، سسٹم آرکیٹیکچر ڈایاگرام، اینڈ یوزر مینوئل، سیٹ اپ گائیڈز، اور اندرونی کوڈ بیس وکی شامل ہیں۔"
+      },
+      {
+        "question": "آپ ضروری تکنیکی معلومات کیسے جمع کرتے ہیں؟",
+        "answer": "ہمارے مصنفین انتہائی تکنیکی ہیں۔ وہ آپ کے سبجیکٹ میٹر ایکسپرٹس (SMEs) کا انٹرویو کرتے ہیں، آپ کے خام سورس کوڈ کا تجزیہ کرتے ہیں، پوسٹ مین جیسے ٹولز کا استعمال کرتے ہوئے براہ راست آپ کی APIs کی جانچ کرتے ہیں، اور پیچیدہ منطق کو واضح، پڑھنے کے قابل دستاویزات میں ترجمہ کرتے ہیں۔"
+      },
+      {
+        "question": "کیا آپ 'Docs as Code' طریقہ کار استعمال کرتے ہیں؟",
+        "answer": "ہاں۔ ہم 'Docs as Code' کی بھرپور وکالت کرتے ہیں۔ ہم مارک ڈاؤن یا MDX میں دستاویزات لکھتے ہیں، اسے آپ کے Git مخزن میں سورس کوڈ کے ساتھ محفوظ کرتے ہیں، اور اپ ڈیٹس کو خود بخود شائع کرنے کے لیے CI/CD پائپ لائنز (Docusaurus یا ReadMe جیسے ٹولز کے ذریعے) استعمال کرتے ہیں۔"
+      },
+      {
+        "question": "ایک تکنیکی دستاویزات پروجیکٹ کی قیمت کتنی ہے؟",
+        "answer": "دائرہ کار کی بنیاد پر اخراجات مختلف ہوتے ہیں۔ چھوٹی پروڈکٹ کے لیے ایک جامع API حوالہ جات کی حد $3,000 سے $5,000 تک ہو سکتی ہے۔ جامع ڈیولپر پورٹلز اور پیچیدہ انٹرپرائز سسٹمز کے لیے صارف دستورالعمل عام طور پر $10,000 سے $25,000+ تک ہوتا ہے۔"
+      },
+      {
+        "question": "کیا آپ طویل مدتی دستاویزات کو برقرار اور اپ ڈیٹ کر سکتے ہیں؟",
+        "answer": "بالکل۔ سافٹ ویئر تیار ہوتا ہے، اور دستاویزات کو نظر انداز کرنے کی صورت میں سڑ جاتا ہے۔ ہم آپ کے کوڈ بیس کمٹ کا مسلسل جائزہ لینے کے لیے ریٹینر پیکجز پیش کرتے ہیں، سپرنٹ کی منصوبہ بندی کے دوران آپ کی ٹیم کا انٹرویو کرتے ہیں، اور آپ کی پروڈکٹ کے اجراء کے ساتھ ساتھ دستاویزات کو اپ ڈیٹ کرتے ہیں۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "لماذا يجب علينا تعيين كُتّاب خارجيين للتوثيق الفني؟",
+        "answer": "يجلب الكتاب الفنيون الخارجيون منظورًا جديدًا وموضوعيًا، مما يضمن أن تكون وثائقك مفهومة لمستخدم جديد. إنهم يفرغون مهندسي البرمجيات الذين يتقاضون أجورًا عالية من مهام الكتابة، مما يسمح لهم بالتركيز البحت على الترميز والتطوير."
+      },
+      {
+        "question": "ما هي أنواع الوثائق التي تنتجونها؟",
+        "answer": "نحن ننتج مجموعة واسعة من المواد بما في ذلك أدلة مراجع واجهة برمجة التطبيقات (باستخدام Swagger/OpenAPI)، وبوابات المطورين، ومخططات بنية النظام، وأدلة المستخدم النهائي، وأدلة الإعداد، ومواقع wiki الداخلية لقاعدة البيانات البرمجية."
+      },
+      {
+        "question": "كيف تقومون بجمع المعلومات الفنية اللازمة؟",
+        "answer": "كتابنا فنيون للغاية. يقومون بإجراء مقابلات مع خبراء الموضوع (SMEs) الخاصين بك، وتحليل الكود المصدري الخام، واختبار واجهات برمجة التطبيقات (APIs) الخاصة بك مباشرة باستخدام أدوات مثل Postman، وترجمة المنطق المعقد إلى وثائق واضحة يمكن للإنسان قراءتها."
+      },
+      {
+        "question": "هل تستخدمون منهجيات 'Docs as Code' (الوثائق ككود)؟",
+        "answer": "نعم. نحن ندعو بشدة إلى 'Docs as Code'. نكتب الوثائق بتنسيق Markdown أو MDX، ونخزنها في مستودع Git الخاص بك إلى جانب الكود المصدري، ونستخدم مسارات CI/CD (عبر أدوات مثل Docusaurus أو ReadMe) لنشر التحديثات تلقائيًا."
+      },
+      {
+        "question": "ما هي تكلفة مشروع التوثيق الفني؟",
+        "answer": "تختلف التكاليف بناءً على النطاق. قد يتراوح دليل مرجع API الموجز لمنتج صغير من 3000 دولار إلى 5000 دولار. تتراوح بوابات المطورين الشاملة وأدلة المستخدم لأنظمة المؤسسات المعقدة عادةً من 10000 دولار إلى 25000 دولار وأكثر."
+      },
+      {
+        "question": "هل يمكنكم الحفاظ على وثائقنا وتحديثها على المدى الطويل؟",
+        "answer": "بالتأكيد. تتطور البرامج، وتتعفن الوثائق إذا تم تجاهلها. نحن نقدم حزم التجنيب (retainer) لمراجعة التزامات قاعدة البيانات البرمجية (commits) الخاصة بك باستمرار، وإجراء مقابلات مع فريقك أثناء تخطيط سباق التطوير (sprint)، وتحديث الوثائق بالتزامن مع إصدارات منتجك."
+      }
+    ]
+  }
+}

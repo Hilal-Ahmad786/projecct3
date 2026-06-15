@@ -11,8 +11,10 @@ export async function GET(request: NextRequest) {
     const page = parseInt(searchParams.get('page') || '1');
     const limit = parseInt(searchParams.get('limit') || '10');
     const locale = searchParams.get('locale') || 'en';
+    // Optional partition: 'general' (company blog) or a service slug.
+    const category = searchParams.get('category') || undefined;
 
-    const result = await getPublishedBlogPosts(locale, { page, limit });
+    const result = await getPublishedBlogPosts(locale, { page, limit }, category);
 
     return NextResponse.json({
       success: true,

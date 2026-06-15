@@ -285,17 +285,23 @@ function buildBlogWhereClause(filters: BlogPostFilters) {
 // Get published posts for public blog
 export async function getPublishedBlogPosts(
   locale: string = 'en',
-  pagination: PaginationParams = {}
+  pagination: PaginationParams = {},
+  category?: string
 ) {
   const { page = 1, limit = 10 } = pagination;
   const skip = (page - 1) * limit;
 
+  // Category partitions the publication: 'general' = company-wide blog,
+  // a service slug = that service's own blog. Omit to fetch across all.
+  const where = {
+    status: 'PUBLISHED' as BlogStatus,
+    publishedAt: { lte: new Date() },
+    ...(category ? { category } : {}),
+  };
+
   const [posts, total] = await Promise.all([
     getPrismaClient().blogPost.findMany({
-      where: {
-        status: 'PUBLISHED',
-        publishedAt: { lte: new Date() },
-      },
+      where,
       include: {
         translations: {
           where: { locale }
@@ -305,12 +311,7 @@ export async function getPublishedBlogPosts(
       skip,
       take: limit,
     }),
-    getPrismaClient().blogPost.count({
-      where: {
-        status: 'PUBLISHED',
-        publishedAt: { lte: new Date() },
-      },
-    }),
+    getPrismaClient().blogPost.count({ where }),
   ]);
 
   return {

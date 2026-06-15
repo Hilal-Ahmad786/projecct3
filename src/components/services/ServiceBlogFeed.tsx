@@ -59,14 +59,13 @@ export default function ServiceBlogFeed({ category, placeholderPosts, viewAllHre
 
   useEffect(() => {
     let cancelled = false;
-    fetch(`/api/blog/posts?locale=${locale}&limit=4`)
+    // Server-side category filter: each service has its own publication.
+    fetch(`/api/blog/posts?locale=${locale}&limit=4&category=${encodeURIComponent(category)}`)
       .then(r => r.ok ? r.json() : null)
       .then(data => {
         if (cancelled) return;
-        const all: BlogPost[] = data?.data ?? [];
-        const matched = all.filter(p => p.category === category);
-        const filtered = (matched.length ? matched : all).slice(0, 4);
-        setPosts(filtered);
+        const matched: BlogPost[] = Array.isArray(data?.data) ? data.data : [];
+        setPosts(matched.slice(0, 4));
         setLoading(false);
       })
       .catch(() => { if (!cancelled) setLoading(false); });

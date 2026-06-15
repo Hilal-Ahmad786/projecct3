@@ -1,0 +1,662 @@
+{
+  "nft-marketplace": {
+    "en": [
+      {
+        "question": "Which blockchains do you support for NFT marketplaces?",
+        "answer": "We build NFT marketplaces on multiple blockchain networks depending on your needs. For high-value art, we typically use Ethereum. For gaming or low-fee transactions, we utilize Polygon, Solana, or Binance Smart Chain (BSC)."
+      },
+      {
+        "question": "How do you handle royalties for NFT creators?",
+        "answer": "We embed royalty mechanisms directly into the smart contracts (using standards like ERC-2981). This ensures creators automatically receive a predefined percentage of secondary sales every time the NFT is traded, without relying on central authorities."
+      },
+      {
+        "question": "Can users buy NFTs with fiat currency (credit cards)?",
+        "answer": "Yes. While native crypto wallets (like MetaMask) are standard, we integrate fiat on-ramps such as MoonPay or Stripe Crypto. This allows users to purchase NFTs directly using their credit cards, significantly lowering the barrier to entry."
+      },
+      {
+        "question": "What happens if the NFT media files are lost?",
+        "answer": "To prevent data loss, we never store NFT metadata or media on centralized servers. We use decentralized storage solutions like IPFS (InterPlanetary File System) or Arweave, ensuring the digital assets remain permanently available and immutable."
+      },
+      {
+        "question": "Is it possible to do lazy minting?",
+        "answer": "Yes, we highly recommend lazy minting for platforms with many creators. This allows creators to list NFTs without paying upfront gas fees; the NFT is only minted on-chain at the exact moment a buyer purchases it."
+      },
+      {
+        "question": "How much does it cost to build an NFT marketplace?",
+        "answer": "A foundational NFT marketplace usually starts around $40,000 to $60,000. Platforms requiring cross-chain compatibility, complex auction mechanisms, fiat integrations, and extensive security audits can scale up to $100,000 or more."
+      }
+    ],
+    "tr": [
+      {
+        "question": "NFT pazar yerleri için hangi blokzincirlerini destekliyorsunuz?",
+        "answer": "İhtiyaçlarınıza bağlı olarak birden fazla blokzinciri ağında NFT pazar yerleri kuruyoruz. Yüksek değerli sanat eserleri için genellikle Ethereum kullanıyoruz. Oyun veya düşük ücretli işlemler için Polygon, Solana veya Binance Smart Chain (BSC) kullanıyoruz."
+      },
+      {
+        "question": "NFT oluşturucuları için telif haklarını (royalties) nasıl yönetiyorsunuz?",
+        "answer": "Telif hakkı mekanizmalarını doğrudan akıllı sözleşmelere (ERC-2981 gibi standartları kullanarak) yerleştiriyoruz. Bu, NFT her alınıp satıldığında merkezi otoritelere güvenmeden içerik oluşturucuların ikincil satışlardan otomatik olarak önceden tanımlanmış bir yüzde almasını sağlar."
+      },
+      {
+        "question": "Kullanıcılar itibari para (kredi kartı) ile NFT satın alabilir mi?",
+        "answer": "Evet. Yerel kripto cüzdanları (MetaMask gibi) standart olsa da, MoonPay veya Stripe Crypto gibi fiat rampa (fiat on-ramp) sistemlerini entegre ediyoruz. Bu, kullanıcıların kredi kartlarını kullanarak doğrudan NFT satın almalarına olanak tanıyarak giriş engelini önemli ölçüde azaltır."
+      },
+      {
+        "question": "NFT medya dosyaları kaybolursa ne olur?",
+        "answer": "Veri kaybını önlemek için NFT meta verilerini veya medyasını asla merkezi sunucularda saklamayız. IPFS (Gezegenlerarası Dosya Sistemi) veya Arweave gibi merkezi olmayan depolama çözümleri kullanarak dijital varlıkların kalıcı olarak kullanılabilir ve değişmez kalmasını sağlıyoruz."
+      },
+      {
+        "question": "Tembel basım (lazy minting) yapmak mümkün mü?",
+        "answer": "Evet, birçok içerik oluşturucusu olan platformlar için tembel basımı şiddetle tavsiye ediyoruz. Bu, içerik oluşturucuların önceden gaz ücreti (gas fee) ödemeden NFT'leri listelemesine olanak tanır; NFT yalnızca bir alıcı onu satın aldığı anda zincir üzerinde basılır."
+      },
+      {
+        "question": "Bir NFT pazar yeri kurmanın maliyeti nedir?",
+        "answer": "Temel bir NFT pazar yeri genellikle 40.000$ ile 60.000$ civarında başlar. Zincirler arası uyumluluk, karmaşık açık artırma mekanizmaları, itibari para entegrasyonları ve kapsamlı güvenlik denetimleri gerektiren platformlar 100.000$ veya daha fazlasına kadar çıkabilir."
+      }
+    ],
+    "de": [
+      {
+        "question": "Welche Blockchains unterstützen Sie für NFT-Marktplätze?",
+        "answer": "Wir bauen NFT-Marktplätze je nach Ihren Anforderungen auf mehreren Blockchain-Netzwerken auf. Für hochwertige Kunstwerke verwenden wir normalerweise Ethereum. Für Spiele oder Transaktionen mit geringen Gebühren nutzen wir Polygon, Solana oder Binance Smart Chain (BSC)."
+      },
+      {
+        "question": "Wie handhaben Sie Lizenzgebühren für NFT-Ersteller?",
+        "answer": "Wir betten Lizenzmechanismen direkt in die Smart Contracts ein (unter Verwendung von Standards wie ERC-2981). Dies stellt sicher, dass Ersteller bei jedem Handel mit dem NFT automatisch einen vordefinierten Prozentsatz an Zweitverkäufen erhalten, ohne sich auf zentrale Behörden verlassen zu müssen."
+      },
+      {
+        "question": "Können Benutzer NFTs mit Fiat-Währung (Kreditkarten) kaufen?",
+        "answer": "Ja. Während native Krypto-Wallets (wie MetaMask) Standard sind, integrieren wir Fiat-On-Ramps wie MoonPay oder Stripe Crypto. Dies ermöglicht es Benutzern, NFTs direkt mit ihren Kreditkarten zu kaufen, was die Einstiegshürde deutlich senkt."
+      },
+      {
+        "question": "Was passiert, wenn die NFT-Mediendateien verloren gehen?",
+        "answer": "Um Datenverlust zu vermeiden, speichern wir niemals NFT-Metadaten oder -Medien auf zentralen Servern. Wir verwenden dezentrale Speicherlösungen wie IPFS (InterPlanetary File System) oder Arweave, um sicherzustellen, dass die digitalen Assets dauerhaft verfügbar und unveränderlich bleiben."
+      },
+      {
+        "question": "Ist Lazy Minting möglich?",
+        "answer": "Ja, wir empfehlen Lazy Minting dringend für Plattformen mit vielen Erstellern. Dies ermöglicht es Erstellern, NFTs ohne Vorabzahlung von Gasgebühren aufzulisten; der NFT wird erst genau in dem Moment On-Chain geprägt, in dem ein Käufer ihn kauft."
+      },
+      {
+        "question": "Wie viel kostet der Aufbau eines NFT-Marktplatzes?",
+        "answer": "Ein grundlegender NFT-Marktplatz beginnt in der Regel bei 40.000 bis 60.000 US-Dollar. Plattformen, die Cross-Chain-Kompatibilität, komplexe Auktionsmechanismen, Fiat-Integrationen und umfangreiche Sicherheitsaudits erfordern, können sich auf 100.000 US-Dollar oder mehr belaufen."
+      }
+    ],
+    "ur": [
+      {
+        "question": "آپ NFT بازاروں کے لیے کون سی بلاک چین سپورٹ کرتے ہیں؟",
+        "answer": "ہم آپ کی ضروریات کے لحاظ سے متعدد بلاک چین نیٹ ورکس پر NFT بازار بناتے ہیں۔ اعلی قیمت والے فن کے لیے، ہم عام طور پر Ethereum کا استعمال کرتے ہیں۔ گیمنگ یا کم فیس والے لین دین کے لیے، ہم پولی گون، سولانا، یا بائننس سمارٹ چین (BSC) کا استعمال کرتے ہیں۔"
+      },
+      {
+        "question": "آپ NFT تخلیق کاروں کے لیے رائلٹی کو کیسے ہینڈل کرتے ہیں؟",
+        "answer": "ہم رائلٹی میکانزم کو براہ راست سمارٹ معاہدوں میں شامل کرتے ہیں (ERC-2981 جیسے معیارات کا استعمال کرتے ہوئے)۔ اس سے اس بات کو یقینی بنایا جاتا ہے کہ تخلیق کاروں کو مرکزی حکام پر انحصار کیے بغیر، ہر بار جب NFT کی تجارت ہوتی ہے تو خود بخود ثانوی فروخت کا پہلے سے طے شدہ فیصد حاصل ہوتا ہے۔"
+      },
+      {
+        "question": "کیا صارفین فیاٹ کرنسی (کریڈٹ کارڈز) کے ساتھ NFTs خرید سکتے ہیں؟",
+        "answer": "جی ہاں. اگرچہ مقامی کرپٹو بٹوے (جیسے میٹا ماسک) معیاری ہیں، ہم فیاٹ آن ریمپس کو مربوط کرتے ہیں جیسے MoonPay یا Stripe Crypto۔ یہ صارفین کو داخلے کی رکاوٹ کو نمایاں طور پر کم کرتے ہوئے، اپنے کریڈٹ کارڈز کا استعمال کرتے ہوئے براہ راست NFTs خریدنے کی اجازت دیتا ہے۔"
+      },
+      {
+        "question": "اگر NFT میڈیا فائلیں ضائع ہو جائیں تو کیا ہوگا؟",
+        "answer": "ڈیٹا کے ضائع ہونے کو روکنے کے لیے، ہم سینٹرلائزڈ سرورز پر کبھی بھی NFT میٹا ڈیٹا یا میڈیا کو اسٹور نہیں کرتے ہیں۔ ہم آئی پی ایف ایس (انٹرپلینیٹری فائل سسٹم) یا آرویو جیسے ڈی سینٹرلائزڈ اسٹوریج سلوشنز کا استعمال کرتے ہیں، اس بات کو یقینی بناتے ہوئے کہ ڈیجیٹل اثاثے مستقل طور پر دستیاب اور غیر متغیر رہیں۔"
+      },
+      {
+        "question": "کیا سست ٹکسال کرنا ممکن ہے؟",
+        "answer": "جی ہاں، ہم بہت سے تخلیق کاروں والے پلیٹ فارمز کے لیے سست منٹنگ کی انتہائی سفارش کرتے ہیں۔ یہ تخلیق کاروں کو پیشگی گیس فیس ادا کیے بغیر NFTs کی فہرست بنانے کی اجازت دیتا ہے۔ NFT صرف اسی وقت آن چین تیار کی جاتی ہے جب خریدار اسے خریدتا ہے۔"
+      },
+      {
+        "question": "ایک NFT بازار بنانے میں کتنا خرچ آتا ہے؟",
+        "answer": "ایک بنیادی NFT بازار عام طور پر لگ بھگ $40,000 سے $60,000 میں شروع ہوتا ہے۔ کراس چین مطابقت، پیچیدہ نیلامی کے طریقہ کار، فیاٹ انٹیگریشنز، اور وسیع سیکیورٹی آڈٹ کی ضرورت والے پلیٹ فارم 100,000 ڈالر یا اس سے زیادہ تک پیمانہ کر سکتے ہیں۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "ما هي شبكات البلوكتشين (blockchains) التي تدعمونها لأسواق NFT؟",
+        "answer": "نحن نبني أسواق NFT على شبكات بلوكتشين متعددة حسب احتياجاتك. بالنسبة للفنون عالية القيمة، نستخدم عادةً الإيثريوم (Ethereum). بالنسبة للألعاب أو المعاملات منخفضة الرسوم، نستخدم Polygon أو Solana أو Binance Smart Chain (BSC)."
+      },
+      {
+        "question": "كيف تتعاملون مع حقوق الملكية (royalties) لمنشئي NFT؟",
+        "answer": "نقوم بتضمين آليات حقوق الملكية مباشرة في العقود الذكية (باستخدام معايير مثل ERC-2981). هذا يضمن حصول المبدعين تلقائيًا على نسبة مئوية محددة مسبقًا من المبيعات الثانوية في كل مرة يتم فيها تداول NFT، دون الاعتماد على السلطات المركزية."
+      },
+      {
+        "question": "هل يمكن للمستخدمين شراء NFTs بالعملات الورقية (البطاقات الائتمانية)؟",
+        "answer": "نعم. في حين أن محافظ التشفير الأصلية (مثل MetaMask) هي المعيار، فإننا ندمج بوابات العملات الورقية مثل MoonPay أو Stripe Crypto. يسمح هذا للمستخدمين بشراء NFTs مباشرة باستخدام بطاقات الائتمان الخاصة بهم، مما يقلل بشكل كبير من حاجز الدخول."
+      },
+      {
+        "question": "ماذا يحدث إذا فُقدت ملفات وسائط NFT؟",
+        "answer": "لمنع فقدان البيانات، لا نقوم أبدًا بتخزين البيانات الوصفية (metadata) أو وسائط NFT على خوادم مركزية. نستخدم حلول تخزين لامركزية مثل IPFS (نظام ملفات الكواكب) أو Arweave، مما يضمن بقاء الأصول الرقمية متاحة بشكل دائم وغير قابلة للتغيير."
+      },
+      {
+        "question": "هل من الممكن إجراء السك الكسول (lazy minting)؟",
+        "answer": "نعم، نوصي بشدة بالسك الكسول للمنصات التي تضم العديد من المبدعين. يسمح هذا للمبدعين بإدراج NFTs دون دفع رسوم الغاز (gas fees) مقدمًا؛ يتم سك NFT فقط على السلسلة في اللحظة الدقيقة التي يشتريها فيها المشتري."
+      },
+      {
+        "question": "ما هي تكلفة بناء سوق NFT؟",
+        "answer": "يبدأ سوق NFT الأساسي عادةً من 40000 دولار إلى 60000 دولار. يمكن أن تصل المنصات التي تتطلب توافقًا عبر السلاسل، وآليات مزاد معقدة، وتكاملات للعملات الورقية، وعمليات تدقيق أمنية مكثفة إلى 100000 دولار أو أكثر."
+      }
+    ]
+  },
+  "smart-contract-development": {
+    "en": [
+      {
+        "question": "Which programming languages do you use for smart contracts?",
+        "answer": "We primarily write smart contracts in Solidity for Ethereum and EVM-compatible chains (like Polygon, BSC). For Solana, we utilize Rust, and for Tezos, we use Ligo or SmartPy, depending on the project's specific architectural requirements."
+      },
+      {
+        "question": "How do you ensure the smart contracts are secure?",
+        "answer": "Security is paramount. We follow a rigorous process: internal peer reviews, comprehensive unit testing using Hardhat/Foundry, static analysis (Slither, Mythril), and we facilitate third-party independent audits by reputable firms before any Mainnet deployment."
+      },
+      {
+        "question": "What happens if a bug is found after deployment?",
+        "answer": "Smart contracts are immutable by default, meaning they can't be changed. To mitigate this, we design upgradeable contract architectures (using Proxy patterns) so logic can be patched securely without losing the contract's stored data or balances."
+      },
+      {
+        "question": "Can smart contracts interact with real-world data?",
+        "answer": "Yes, through Oracles. We integrate decentralized oracle networks like Chainlink to feed off-chain real-world data (such as stock prices, weather conditions, or sports results) securely into the smart contract for execution."
+      },
+      {
+        "question": "How much does a smart contract audit cost?",
+        "answer": "While we provide comprehensive internal testing, third-party audits are billed separately by the auditing firm. Depending on the complexity and lines of code, professional audits generally range from $5,000 to $25,000+."
+      },
+      {
+        "question": "Do you help with Tokenomics and protocol design?",
+        "answer": "Absolutely. Writing the code is only half the battle. We assist in structuring tokenomics, designing incentive mechanisms, mapping out governance models (DAOs), and ensuring mathematical sustainability before writing a single line of code."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Akıllı sözleşmeler için hangi programlama dillerini kullanıyorsunuz?",
+        "answer": "Akıllı sözleşmeleri temel olarak Ethereum ve EVM uyumlu zincirler (Polygon, BSC gibi) için Solidity'de yazıyoruz. Solana için Rust'ı kullanıyoruz ve Tezos için projenin özel mimari gereksinimlerine bağlı olarak Ligo veya SmartPy kullanıyoruz."
+      },
+      {
+        "question": "Akıllı sözleşmelerin güvenli olduğundan nasıl emin oluyorsunuz?",
+        "answer": "Güvenlik her şeyden önemlidir. Titiz bir süreç izliyoruz: dahili eş değerlendirmeleri, Hardhat/Foundry kullanarak kapsamlı birim testi, statik analiz (Slither, Mythril) ve herhangi bir Ana Ağ (Mainnet) dağıtımından önce saygın firmalar tarafından üçüncü taraf bağımsız denetimleri kolaylaştırıyoruz."
+      },
+      {
+        "question": "Dağıtımdan sonra bir hata bulunursa ne olur?",
+        "answer": "Akıllı sözleşmeler varsayılan olarak değişmezdir, yani değiştirilemezler. Bunu hafifletmek için, sözleşmenin depolanan verilerini veya bakiyelerini kaybetmeden mantığın güvenli bir şekilde yamanabilmesi için yükseltilebilir (upgradeable) sözleşme mimarileri (Proxy modelleri kullanarak) tasarlıyoruz."
+      },
+      {
+        "question": "Akıllı sözleşmeler gerçek dünya verileriyle etkileşime girebilir mi?",
+        "answer": "Evet, Oracle'lar aracılığıyla. Yürütme için zincir dışı gerçek dünya verilerini (hisse senedi fiyatları, hava koşulları veya spor sonuçları gibi) güvenli bir şekilde akıllı sözleşmeye beslemek üzere Chainlink gibi merkezi olmayan oracle ağlarını entegre ediyoruz."
+      },
+      {
+        "question": "Bir akıllı sözleşme denetiminin maliyeti nedir?",
+        "answer": "Kapsamlı kurum içi testler sağlasak da üçüncü taraf denetimleri denetim firması tarafından ayrıca faturalandırılır. Karmaşıklığa ve kod satırlarına bağlı olarak profesyonel denetimler genellikle 5.000$ ile 25.000$+ arasında değişir."
+      },
+      {
+        "question": "Token ekonomisi (Tokenomics) ve protokol tasarımı konusunda yardımcı oluyor musunuz?",
+        "answer": "Kesinlikle. Kodu yazmak işin sadece yarısıdır. Tek bir satır kod yazmadan önce token ekonomisini yapılandırmaya, teşvik mekanizmalarını tasarlamaya, yönetişim modellerini (DAO'lar) haritalandırmaya ve matematiksel sürdürülebilirliği sağlamaya yardımcı oluyoruz."
+      }
+    ],
+    "de": [
+      {
+        "question": "Welche Programmiersprachen verwenden Sie für Smart Contracts?",
+        "answer": "Wir schreiben Smart Contracts hauptsächlich in Solidity für Ethereum und EVM-kompatible Chains (wie Polygon, BSC). Für Solana verwenden wir Rust und für Tezos verwenden wir abhängig von den spezifischen architektonischen Anforderungen des Projekts Ligo oder SmartPy."
+      },
+      {
+        "question": "Wie stellen Sie sicher, dass die Smart Contracts sicher sind?",
+        "answer": "Sicherheit steht an erster Stelle. Wir folgen einem strengen Prozess: interne Peer-Reviews, umfassende Unit-Tests mit Hardhat/Foundry, statische Analysen (Slither, Mythril), und wir erleichtern unabhängige Audits von Drittanbietern durch renommierte Firmen vor jedem Mainnet-Deployment."
+      },
+      {
+        "question": "Was passiert, wenn nach der Bereitstellung ein Fehler gefunden wird?",
+        "answer": "Smart Contracts sind standardmäßig unveränderlich, das heißt, sie können nicht geändert werden. Um dies abzumildern, entwerfen wir aktualisierbare Vertragsarchitekturen (unter Verwendung von Proxy-Mustern), damit die Logik sicher gepatcht werden kann, ohne die gespeicherten Daten oder Salden des Vertrags zu verlieren."
+      },
+      {
+        "question": "Können Smart Contracts mit realen Daten interagieren?",
+        "answer": "Ja, durch Oracles. Wir integrieren dezentrale Oracle-Netzwerke wie Chainlink, um Off-Chain-Realdaten (wie Aktienkurse, Wetterbedingungen oder Sportergebnisse) zur Ausführung sicher in den Smart Contract einzuspeisen."
+      },
+      {
+        "question": "Wie viel kostet ein Smart Contract Audit?",
+        "answer": "Während wir umfassende interne Tests anbieten, werden Audits von Drittanbietern von der Wirtschaftsprüfungsgesellschaft separat in Rechnung gestellt. Je nach Komplexität und Codezeilen liegen professionelle Audits im Allgemeinen zwischen 5.000 und über 25.000 US-Dollar."
+      },
+      {
+        "question": "Helfen Sie bei Tokenomics und Protokolldesign?",
+        "answer": "Absolut. Das Schreiben des Codes ist nur die halbe Miete. Wir helfen bei der Strukturierung der Tokenomics, der Gestaltung von Anreizmechanismen, der Ausarbeitung von Governance-Modellen (DAOs) und der Sicherstellung der mathematischen Nachhaltigkeit, bevor wir auch nur eine einzige Codezeile schreiben."
+      }
+    ],
+    "ur": [
+      {
+        "question": "سمارٹ معاہدوں کے لیے آپ کون سی پروگرامنگ زبانیں استعمال کرتے ہیں؟",
+        "answer": "ہم بنیادی طور پر Ethereum اور EVM کے موافق زنجیروں (جیسے Polygon، BSC) کے لیے یکجہتی میں سمارٹ معاہدے لکھتے ہیں۔ سولانا کے لیے، ہم زنگ کا استعمال کرتے ہیں، اور Tezos کے لیے، ہم پروجیکٹ کی مخصوص تعمیراتی ضروریات کے لحاظ سے لیگو یا SmartPy کا استعمال کرتے ہیں۔"
+      },
+      {
+        "question": "آپ کیسے یقینی بناتے ہیں کہ سمارٹ معاہدے محفوظ ہیں؟",
+        "answer": "سیکورٹی سب سے اہم ہے. ہم ایک سخت عمل کی پیروی کرتے ہیں: داخلی ہم مرتبہ جائزے، Hardhat/Foundry کا استعمال کرتے ہوئے جامع یونٹ ٹیسٹنگ، جامد تجزیہ (Slither، Mythril)، اور ہم کسی بھی Mainnet کی تعیناتی سے پہلے معروف فرموں کی طرف سے فریق ثالث کے آزادانہ آڈٹ کی سہولت فراہم کرتے ہیں۔"
+      },
+      {
+        "question": "اگر تعیناتی کے بعد کوئی خامی پائی جائے تو کیا ہوگا؟",
+        "answer": "سمارٹ معاہدے ڈیفالٹ کے لحاظ سے غیر متغیر ہوتے ہیں، مطلب یہ ہے کہ انہیں تبدیل نہیں کیا جا سکتا۔ اس کو کم کرنے کے لیے، ہم قابل تجدید کنٹریکٹ آرکیٹیکچرز (پراکسی پیٹرن کا استعمال کرتے ہوئے) ڈیزائن کرتے ہیں تاکہ کنٹریکٹ کے ذخیرہ کردہ ڈیٹا یا بیلنس کو کھوئے بغیر منطق کو محفوظ طریقے سے پیچ کیا جا سکے۔"
+      },
+      {
+        "question": "کیا سمارٹ معاہدے حقیقی دنیا کے ڈیٹا کے ساتھ تعامل کر سکتے ہیں؟",
+        "answer": "جی ہاں، اوریکلز کے ذریعے۔ ہم ڈی سینٹرلائزڈ اوریکل نیٹ ورکس کو مربوط کرتے ہیں جیسے چین لنک آف چین کی حقیقی دنیا کا ڈیٹا (جیسے اسٹاک کی قیمتیں، موسم کے حالات، یا کھیلوں کے نتائج) محفوظ طریقے سے عمل کے لیے سمارٹ معاہدے میں ڈالتے ہیں۔"
+      },
+      {
+        "question": "سمارٹ کنٹریکٹ آڈٹ کی قیمت کتنی ہے؟",
+        "answer": "جبکہ ہم جامع داخلی جانچ فراہم کرتے ہیں، فریق ثالث کے آڈٹ آڈیٹنگ فرم کی طرف سے الگ الگ بل کیے جاتے ہیں۔ پیچیدگیوں اور کوڈ کی خطوط پر منحصر ہے، پیشہ ورانہ آڈٹ عام طور پر $5,000 سے $25,000+ تک ہوتے ہیں۔"
+      },
+      {
+        "question": "کیا آپ ٹوکنومکس اور پروٹوکول ڈیزائن میں مدد کرتے ہیں؟",
+        "answer": "بالکل۔ کوڈ لکھنا صرف آدھی جنگ ہے۔ ہم کوڈ کی ایک لائن لکھنے سے پہلے ٹوکنومکس کی تشکیل، ترغیبی میکانزم کو ڈیزائن کرنے، گورننس ماڈلز (DAOs) کو نقشہ بنانے، اور ریاضیاتی پائیداری کو یقینی بنانے میں مدد کرتے ہیں۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "ما هي لغات البرمجة التي تستخدمونها للعقود الذكية؟",
+        "answer": "نحن نكتب العقود الذكية في المقام الأول بلغة Solidity لشبكات الإيثريوم (Ethereum) والسلاسل المتوافقة مع EVM (مثل Polygon و BSC). بالنسبة لـ Solana، نستخدم Rust، وبالنسبة لـ Tezos، نستخدم Ligo أو SmartPy، اعتمادًا على المتطلبات المعمارية المحددة للمشروع."
+      },
+      {
+        "question": "كيف تتأكدون من أمان العقود الذكية؟",
+        "answer": "الأمان أمر بالغ الأهمية. نحن نتبع عملية صارمة: مراجعات الأقران الداخلية، واختبار الوحدات الشامل باستخدام Hardhat/Foundry، والتحليل الثابت (Slither، Mythril)، ونسهل عمليات التدقيق المستقلة من جهات خارجية بواسطة شركات حسنة السمعة قبل أي نشر على الشبكة الرئيسية (Mainnet)."
+      },
+      {
+        "question": "ماذا يحدث إذا تم العثور على خطأ بعد النشر؟",
+        "answer": "العقود الذكية غير قابلة للتغيير افتراضيًا، مما يعني أنه لا يمكن تعديلها. للتخفيف من ذلك، نقوم بتصميم بنيات عقود قابلة للترقية (باستخدام أنماط Proxy) بحيث يمكن تصحيح المنطق (logic) بأمان دون فقد البيانات أو الأرصدة المخزنة في العقد."
+      },
+      {
+        "question": "هل يمكن للعقود الذكية التفاعل مع بيانات العالم الحقيقي؟",
+        "answer": "نعم، من خلال الأوراكل (Oracles). نحن ندمج شبكات أوراكل اللامركزية مثل Chainlink لتغذية بيانات العالم الحقيقي خارج السلسلة (مثل أسعار الأسهم أو أحوال الطقس أو النتائج الرياضية) بأمان في العقد الذكي للتنفيذ."
+      },
+      {
+        "question": "كم يكلف تدقيق العقد الذكي؟",
+        "answer": "في حين أننا نقدم اختبارات داخلية شاملة، يتم تحصيل رسوم عمليات التدقيق الخاصة بالجهات الخارجية بشكل منفصل من قبل شركة التدقيق. اعتمادًا على التعقيد وأسطر التعليمات البرمجية، تتراوح عمليات التدقيق الاحترافية بشكل عام من 5000 دولار إلى 25000 دولار وأكثر."
+      },
+      {
+        "question": "هل تساعدون في تصميم اقتصاديات الرمز المميز (Tokenomics) وبروتوكولاته؟",
+        "answer": "بالتأكيد. كتابة الكود ليست سوى نصف المعركة. نحن نساعد في هيكلة Tokenomics، وتصميم آليات الحوافز، ورسم نماذج الحوكمة (DAOs)، وضمان الاستدامة الرياضية قبل كتابة سطر واحد من التعليمات البرمجية."
+      }
+    ]
+  },
+  "smart-contracts": {
+    "en": [
+      {
+        "question": "Do I need a smart contract for my business?",
+        "answer": "Not every business needs a smart contract. They are highly beneficial if you require trustless, automated transactions—such as automated escrow, verifiable supply chain tracking, decentralized finance (DeFi), or issuing digital assets/tokens without a middleman."
+      },
+      {
+        "question": "How do smart contracts reduce operational costs?",
+        "answer": "By eliminating intermediaries (like banks, brokers, or clearinghouses) and automating verification and execution processes, smart contracts drastically reduce manual paperwork, administrative delays, and intermediary fees."
+      },
+      {
+        "question": "Are smart contracts legally binding?",
+        "answer": "The legal status of smart contracts varies by jurisdiction. While the code executes automatically regardless of the law, many regions are starting to recognize cryptographic signatures and smart contract agreements under electronic signature laws. You should always consult legal counsel."
+      },
+      {
+        "question": "How fast are smart contract transactions executed?",
+        "answer": "Execution speed depends entirely on the underlying blockchain. On Ethereum, it might take 10-15 seconds. On faster Layer 2 solutions (like Arbitrum) or high-throughput chains (like Solana), execution and settlement happen in a fraction of a second."
+      },
+      {
+        "question": "Can a smart contract control traditional bank accounts?",
+        "answer": "Directly? No. Smart contracts live on the blockchain and can only control on-chain assets. However, they can trigger APIs via Oracles that notify a traditional bank to initiate a fiat transfer, bridging the gap between Web3 and Web2 finance."
+      },
+      {
+        "question": "What happens if there's a dispute over a smart contract execution?",
+        "answer": "Because code executes exactly as written, algorithmic disputes are rare. However, if external circumstances require mediation, decentralized arbitration protocols (like Kleros) can be integrated to resolve subjective disputes via a jury of token holders."
+      }
+    ],
+    "tr": [
+      {
+        "question": "İşim için akıllı bir sözleşmeye ihtiyacım var mı?",
+        "answer": "Her işletmenin akıllı bir sözleşmeye ihtiyacı yoktur. Otomatik emanet (escrow), doğrulanabilir tedarik zinciri takibi, merkezi olmayan finans (DeFi) veya aracı olmadan dijital varlıklar/tokenler çıkarma gibi güven gerektirmeyen, otomatik işlemlere ihtiyacınız varsa oldukça faydalıdırlar."
+      },
+      {
+        "question": "Akıllı sözleşmeler operasyonel maliyetleri nasıl azaltır?",
+        "answer": "Akıllı sözleşmeler, aracıları (bankalar, komisyoncular veya takas odaları gibi) ortadan kaldırarak ve doğrulama ve yürütme süreçlerini otomatikleştirerek manuel evrak işlerini, idari gecikmeleri ve aracı ücretlerini büyük ölçüde azaltır."
+      },
+      {
+        "question": "Akıllı sözleşmeler yasal olarak bağlayıcı mı?",
+        "answer": "Akıllı sözleşmelerin yasal durumu yargı yetkisine göre değişir. Kod yasalardan bağımsız olarak otomatik çalışsa da birçok bölge kriptografik imzaları ve akıllı sözleşme anlaşmalarını elektronik imza yasaları kapsamında tanımaya başlıyor. Her zaman bir hukuk müşavirine danışmalısınız."
+      },
+      {
+        "question": "Akıllı sözleşme işlemleri ne kadar hızlı gerçekleştirilir?",
+        "answer": "Yürütme hızı tamamen temel blokzincirine bağlıdır. Ethereum'da 10-15 saniye sürebilir. Daha hızlı Katman 2 (Layer 2) çözümlerinde (Arbitrum gibi) veya yüksek verimli zincirlerde (Solana gibi), yürütme ve mutabakat saniyenin çok küçük bir bölümünde gerçekleşir."
+      },
+      {
+        "question": "Akıllı bir sözleşme geleneksel banka hesaplarını kontrol edebilir mi?",
+        "answer": "Doğrudan mı? Hayır. Akıllı sözleşmeler blokzincirinde yaşar ve yalnızca zincir üzerindeki varlıkları kontrol edebilir. Bununla birlikte, Web3 ve Web2 finansı arasındaki boşluğu doldurarak, geleneksel bir bankaya itibari para (fiat) transferi başlatmasını bildiren API'leri Oracle'lar aracılığıyla tetikleyebilirler."
+      },
+      {
+        "question": "Akıllı sözleşmenin yürütülmesiyle ilgili bir anlaşmazlık olursa ne olur?",
+        "answer": "Kod tam olarak yazıldığı gibi yürütüldüğünden algoritmik anlaşmazlıklar nadirdir. Ancak, dış koşullar arabuluculuk gerektiriyorsa, token sahiplerinden oluşan bir jüri aracılığıyla öznel anlaşmazlıkları çözmek için merkezi olmayan tahkim protokolleri (Kleros gibi) entegre edilebilir."
+      }
+    ],
+    "de": [
+      {
+        "question": "Brauche ich einen Smart Contract für mein Unternehmen?",
+        "answer": "Nicht jedes Unternehmen braucht einen Smart Contract. Sie sind von großem Nutzen, wenn Sie vertrauenslose, automatisierte Transaktionen benötigen – wie zum Beispiel automatisierte Treuhandkonten, überprüfbare Lieferkettenverfolgung, dezentrale Finanzen (DeFi) oder die Ausgabe digitaler Vermögenswerte/Token ohne einen Zwischenhändler."
+      },
+      {
+        "question": "Wie senken Smart Contracts die Betriebskosten?",
+        "answer": "Durch den Wegfall von Zwischenhändlern (wie Banken, Brokern oder Clearingstellen) und die Automatisierung von Verifizierungs- und Ausführungsprozessen reduzieren Smart Contracts den manuellen Papierkram, administrative Verzögerungen und Vermittlungsgebühren drastisch."
+      },
+      {
+        "question": "Sind Smart Contracts rechtlich bindend?",
+        "answer": "Der rechtliche Status von Smart Contracts variiert je nach Gerichtsbarkeit. Während der Code unabhängig vom Gesetz automatisch ausgeführt wird, beginnen viele Regionen damit, kryptografische Signaturen und Smart Contract-Vereinbarungen im Rahmen von Gesetzen für elektronische Signaturen anzuerkennen. Sie sollten immer einen Rechtsbeistand konsultieren."
+      },
+      {
+        "question": "Wie schnell werden Smart Contract-Transaktionen ausgeführt?",
+        "answer": "Die Ausführungsgeschwindigkeit hängt vollständig von der zugrunde liegenden Blockchain ab. Auf Ethereum kann es 10-15 Sekunden dauern. Auf schnelleren Layer-2-Lösungen (wie Arbitrum) oder High-Throughput-Chains (wie Solana) erfolgen Ausführung und Abrechnung in einem Bruchteil einer Sekunde."
+      },
+      {
+        "question": "Kann ein Smart Contract traditionelle Bankkonten kontrollieren?",
+        "answer": "Direkt? Nein. Smart Contracts leben auf der Blockchain und können nur On-Chain-Assets kontrollieren. Sie können jedoch über Oracles APIs auslösen, die eine traditionelle Bank benachrichtigen, eine Fiat-Überweisung zu initiieren, und so die Lücke zwischen Web3- und Web2-Finanzen schließen."
+      },
+      {
+        "question": "Was passiert, wenn es zu einem Streit über die Ausführung eines Smart Contracts kommt?",
+        "answer": "Da Code genau so ausgeführt wird, wie er geschrieben wurde, sind algorithmische Streitigkeiten selten. Wenn jedoch externe Umstände eine Mediation erfordern, können dezentrale Schiedsprotokolle (wie Kleros) integriert werden, um subjektive Streitigkeiten über eine Jury von Token-Inhabern beizulegen."
+      }
+    ],
+    "ur": [
+      {
+        "question": "کیا مجھے اپنے کاروبار کے لیے سمارٹ معاہدہ کی ضرورت ہے؟",
+        "answer": "ہر کاروبار کو سمارٹ معاہدے کی ضرورت نہیں ہوتی۔ یہ بہت فائدہ مند ہیں اگر آپ کو بے اعتمادی، خودکار لین دین کی ضرورت ہے — جیسے کہ خودکار ایسکرو، قابل تصدیق سپلائی چین ٹریکنگ، ڈی سینٹرلائزڈ فنانس (DeFi)، یا درمیانی آدمی کے بغیر ڈیجیٹل اثاثے/ٹوکن جاری کرنا۔"
+      },
+      {
+        "question": "سمارٹ معاہدے آپریٹنگ اخراجات کو کیسے کم کرتے ہیں؟",
+        "answer": "ثالثوں (جیسے بینکوں، بروکرز، یا کلیئرنگ ہاؤسز) کو ختم کر کے اور تصدیق اور عمل درآمد کے عمل کو خودکار بنا کر، سمارٹ کنٹریکٹ دستی کاغذی کارروائی، انتظامی تاخیر، اور ثالثی کی فیس کو کافی حد تک کم کر دیتے ہیں۔"
+      },
+      {
+        "question": "کیا سمارٹ معاہدے قانونی طور پر پابند ہیں؟",
+        "answer": "سمارٹ معاہدوں کی قانونی حیثیت دائرہ اختیار کے لحاظ سے مختلف ہوتی ہے۔ جب کہ ضابطہ قطع نظر قانون کے خود بخود نافذ ہوتا ہے، بہت سے علاقے الیکٹرانک دستخطی قوانین کے تحت کریپٹوگرافک دستخطوں اور سمارٹ کنٹریکٹ معاہدوں کو تسلیم کرنا شروع کر رہے ہیں۔ آپ کو ہمیشہ قانونی مشیر سے مشورہ کرنا چاہئے۔"
+      },
+      {
+        "question": "سمارٹ کنٹریکٹ کے لین دین کتنی تیزی سے انجام پاتے ہیں؟",
+        "answer": "عمل درآمد کی رفتار کا مکمل انحصار بنیادی بلاک چین پر ہے۔ Ethereum پر، اس میں 10-15 سیکنڈ لگ سکتے ہیں۔ تیز تر لیئر 2 حلوں (جیسے آربیٹرم) یا ہائی تھرو پٹ چینز (جیسے سولانا) پر، عمل درآمد اور تصفیہ ایک سیکنڈ کے کچھ حصے میں ہوتا ہے۔"
+      },
+      {
+        "question": "کیا ایک سمارٹ معاہدہ روایتی بینک اکاؤنٹس کو کنٹرول کر سکتا ہے؟",
+        "answer": "براہ راست؟ نہیں، سمارٹ معاہدے بلاک چین پر رہتے ہیں اور صرف آن چین اثاثوں کو کنٹرول کر سکتے ہیں۔ تاہم، وہ Oracles کے ذریعے APIs کو متحرک کر سکتے ہیں جو کہ ایک روایتی بینک کو Web3 اور Web2 فنانس کے درمیان خلیج کو پر کرتے ہوئے فیئٹ ٹرانسفر شروع کرنے کے لیے مطلع کرتے ہیں۔"
+      },
+      {
+        "question": "اگر سمارٹ کنٹریکٹ پر عمل درآمد پر کوئی تنازعہ ہو تو کیا ہوتا ہے؟",
+        "answer": "چونکہ کوڈ بالکل اسی طرح عمل میں لاتا ہے جیسا لکھا گیا ہے، الگورتھمک تنازعات شاذ و نادر ہی ہوتے ہیں۔ تاہم، اگر بیرونی حالات میں ثالثی کی ضرورت ہوتی ہے، تو ڈی سینٹرلائزڈ ثالثی پروٹوکول (جیسے کلیروس) کو ٹوکن ہولڈرز کی جیوری کے ذریعے موضوعی تنازعات کو حل کرنے کے لیے مربوط کیا جا سکتا ہے۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "هل أحتاج إلى عقد ذكي (smart contract) لعملي؟",
+        "answer": "لا يحتاج كل عمل إلى عقد ذكي. فهي مفيدة للغاية إذا كنت بحاجة إلى معاملات آلية لا تتطلب الثقة - مثل الضمان الآلي (escrow)، أو تتبع سلسلة التوريد القابلة للتحقق، أو التمويل اللامركزي (DeFi)، أو إصدار الأصول/الرموز الرقمية دون وسيط."
+      },
+      {
+        "question": "كيف تقلل العقود الذكية من تكاليف التشغيل؟",
+        "answer": "من خلال القضاء على الوسطاء (مثل البنوك أو السماسرة أو غرف المقاصة) وأتمتة عمليات التحقق والتنفيذ، تقلل العقود الذكية بشكل كبير من الأعمال الورقية اليدوية، والتأخيرات الإدارية، ورسوم الوسطاء."
+      },
+      {
+        "question": "هل العقود الذكية ملزمة قانونًا؟",
+        "answer": "يختلف الوضع القانوني للعقود الذكية باختلاف الولاية القضائية. في حين أن الكود يُنفذ تلقائيًا بغض النظر عن القانون، بدأت العديد من المناطق في الاعتراف بالتوقيعات المشفرة واتفاقيات العقود الذكية بموجب قوانين التوقيع الإلكتروني. يجب عليك دائما استشارة مستشار قانوني."
+      },
+      {
+        "question": "ما مدى سرعة تنفيذ معاملات العقد الذكي؟",
+        "answer": "تعتمد سرعة التنفيذ كليًا على تقنية البلوكتشين الأساسية. على شبكة الإيثريوم، قد يستغرق الأمر من 10 إلى 15 ثانية. في حلول الطبقة الثانية الأسرع (مثل Arbitrum) أو السلاسل ذات الإنتاجية العالية (مثل Solana)، يحدث التنفيذ والتسوية في جزء من الثانية."
+      },
+      {
+        "question": "هل يمكن للعقد الذكي التحكم في الحسابات المصرفية التقليدية؟",
+        "answer": "بشكل مباشر؟ لا. العقود الذكية تعيش على البلوكتشين ولا يمكنها سوى التحكم في الأصول الموجودة على السلسلة. ومع ذلك، يمكنهم تشغيل واجهات برمجة التطبيقات (APIs) عبر Oracles التي تخطر البنك التقليدي ببدء تحويل عملات ورقية، مما يسد الفجوة بين تمويل Web3 و Web2."
+      },
+      {
+        "question": "ماذا يحدث إذا كان هناك نزاع حول تنفيذ عقد ذكي؟",
+        "answer": "نظرًا لأن الكود يُنفذ تمامًا كما هو مكتوب، فإن النزاعات الخوارزمية نادرة. ومع ذلك، إذا تطلبت الظروف الخارجية وساطة، فيمكن دمج بروتوكولات التحكيم اللامركزية (مثل Kleros) لحل النزاعات الذاتية من خلال هيئة محلفين من حاملي الرموز."
+      }
+    ]
+  },
+  "blockchain-development": {
+    "en": [
+      {
+        "question": "Public vs. Private Blockchain: Which one is right for my enterprise?",
+        "answer": "Public blockchains (Ethereum, Polygon) are ideal for maximum transparency, DeFi, and public NFTs. Private or Consortium blockchains (Hyperledger Fabric, Corda) are better for enterprises requiring strict data privacy, regulatory compliance, and controlled access among known entities."
+      },
+      {
+        "question": "How do you solve the scalability issues of blockchain?",
+        "answer": "We utilize Layer-2 scaling solutions (like Optimistic Rollups and ZK-Rollups) or deploy sidechains that process transactions off the main chain. This dramatically reduces transaction costs (gas) and increases throughput to thousands of transactions per second."
+      },
+      {
+        "question": "What is Web3 and how does it relate to blockchain?",
+        "answer": "Web3 is the next iteration of the internet, characterized by decentralization. While Web2 relies on centralized databases (like AWS or Facebook servers), Web3 uses blockchain technology to give users ownership of their data, assets, and identity through crypto wallets."
+      },
+      {
+        "question": "Can you build an enterprise DApp from scratch?",
+        "answer": "Yes. Our full-stack blockchain development covers writing the smart contracts, building the decentralized backend (IPFS, Graph Protocol), creating custom crypto wallets or integrating existing ones (WalletConnect), and developing the React/Next.js frontend."
+      },
+      {
+        "question": "How do you manage private keys securely in a corporate environment?",
+        "answer": "For corporate clients, we implement Multi-Party Computation (MPC) wallets or Multi-Sig (Multi-Signature) smart contracts (like Gnosis Safe). This ensures that no single employee has full control of company funds; transactions require approval from a quorum of authorized executives."
+      },
+      {
+        "question": "What is the typical timeframe to develop a blockchain PoC (Proof of Concept)?",
+        "answer": "A Proof of Concept, designed to validate the technical feasibility and business logic of a blockchain idea, typically takes 4 to 8 weeks. This allows stakeholders to interact with a working prototype before committing to full-scale development."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Genel (Public) ve Özel (Private) Blokzincir: Kurumum için hangisi uygun?",
+        "answer": "Genel blokzincirleri (Ethereum, Polygon) maksimum şeffaflık, DeFi ve genel NFT'ler için idealdir. Özel veya Konsorsiyum blokzincirleri (Hyperledger Fabric, Corda), bilinen kurumlar arasında sıkı veri gizliliği, mevzuata uygunluk ve kontrollü erişim gerektiren işletmeler için daha iyidir."
+      },
+      {
+        "question": "Blokzincirin ölçeklenebilirlik (scalability) sorunlarını nasıl çözüyorsunuz?",
+        "answer": "İşlemleri ana zincir dışında işleyen Katman-2 (Layer-2) ölçekleme çözümlerini (Optimistic Rollup'lar ve ZK-Rollup'lar gibi) kullanıyor veya yan zincirler dağıtıyoruz. Bu, işlem maliyetlerini (gas) önemli ölçüde azaltır ve verimi saniyede binlerce işleme çıkarır."
+      },
+      {
+        "question": "Web3 nedir ve blokzincirle nasıl bir ilişkisi vardır?",
+        "answer": "Web3, internetin merkeziyetsizlikle karakterize edilen bir sonraki yinelemesidir. Web2 merkezi veritabanlarına (AWS veya Facebook sunucuları gibi) dayanırken, Web3 kullanıcılara kripto cüzdanları aracılığıyla verilerinin, varlıklarının ve kimliklerinin mülkiyetini vermek için blokzincir teknolojisini kullanır."
+      },
+      {
+        "question": "Sıfırdan kurumsal bir DApp (Merkezi Olmayan Uygulama) oluşturabilir misiniz?",
+        "answer": "Evet. Tam yığın (full-stack) blokzincir geliştirmemiz, akıllı sözleşmelerin yazılmasını, merkezi olmayan arka ucun (IPFS, Graph Protokolü) oluşturulmasını, özel kripto cüzdanlarının oluşturulmasını veya mevcut cüzdanların entegre edilmesini (WalletConnect) ve React/Next.js ön ucunun geliştirilmesini kapsar."
+      },
+      {
+        "question": "Kurumsal bir ortamda özel anahtarları (private keys) güvenli bir şekilde nasıl yönetiyorsunuz?",
+        "answer": "Kurumsal müşteriler için Çok Taraflı Hesaplama (MPC) cüzdanları veya Çoklu İmza (Multi-Sig) akıllı sözleşmeleri (Gnosis Safe gibi) uyguluyoruz. Bu, hiçbir çalışanın şirket fonları üzerinde tam kontrole sahip olmamasını sağlar; işlemler için yetkili yöneticilerin çoğunluğunun onayı gerekir."
+      },
+      {
+        "question": "Bir blokzincir PoC'si (Kavram Kanıtı) geliştirmek için tipik zaman dilimi nedir?",
+        "answer": "Bir blokzincir fikrinin teknik fizibilitesini ve iş mantığını doğrulamak için tasarlanmış bir Kavram Kanıtı genellikle 4 ila 8 hafta sürer. Bu, paydaşların tam ölçekli geliştirmeye karar vermeden önce çalışan bir prototiple etkileşim kurmasını sağlar."
+      }
+    ],
+    "de": [
+      {
+        "question": "Öffentliche vs. Private Blockchain: Welche ist die richtige für mein Unternehmen?",
+        "answer": "Öffentliche Blockchains (Ethereum, Polygon) sind ideal für maximale Transparenz, DeFi und öffentliche NFTs. Private oder Konsortium-Blockchains (Hyperledger Fabric, Corda) eignen sich besser für Unternehmen, die strenge Datenschutzrichtlinien, die Einhaltung gesetzlicher Vorschriften und kontrollierten Zugriff durch bekannte Entitäten erfordern."
+      },
+      {
+        "question": "Wie lösen Sie die Skalierbarkeitsprobleme der Blockchain?",
+        "answer": "Wir nutzen Layer-2-Skalierungslösungen (wie Optimistic Rollups und ZK-Rollups) oder stellen Sidechains bereit, die Transaktionen abseits der Main Chain verarbeiten. Dies reduziert die Transaktionskosten (Gas) drastisch und erhöht den Durchsatz auf Tausende von Transaktionen pro Sekunde."
+      },
+      {
+        "question": "Was ist Web3 und in welcher Beziehung steht es zur Blockchain?",
+        "answer": "Web3 ist die nächste Iteration des Internets, gekennzeichnet durch Dezentralisierung. Während Web2 auf zentralisierte Datenbanken (wie AWS- oder Facebook-Server) angewiesen ist, nutzt Web3 die Blockchain-Technologie, um Benutzern über Krypto-Wallets das Eigentum an ihren Daten, Assets und ihrer Identität zu geben."
+      },
+      {
+        "question": "Können Sie eine Enterprise-DApp von Grund auf neu erstellen?",
+        "answer": "Ja. Unsere Full-Stack-Blockchain-Entwicklung umfasst das Schreiben der Smart Contracts, den Aufbau des dezentralen Backends (IPFS, Graph Protocol), die Erstellung benutzerdefinierter Krypto-Wallets oder die Integration bestehender Wallets (WalletConnect) und die Entwicklung des React/Next.js-Frontends."
+      },
+      {
+        "question": "Wie verwalten Sie private Schlüssel sicher in einer Unternehmensumgebung?",
+        "answer": "Für Firmenkunden implementieren wir Multi-Party Computation (MPC)-Wallets oder Multi-Sig (Multi-Signature)-Smart-Contracts (wie Gnosis Safe). Dies stellt sicher, dass kein einzelner Mitarbeiter die volle Kontrolle über die Unternehmensgelder hat; Transaktionen erfordern die Zustimmung eines Quorums autorisierter Führungskräfte."
+      },
+      {
+        "question": "Wie ist der typische Zeitrahmen für die Entwicklung eines Blockchain-PoC (Proof of Concept)?",
+        "answer": "Ein Proof of Concept, das darauf ausgelegt ist, die technische Machbarkeit und Geschäftslogik einer Blockchain-Idee zu validieren, dauert in der Regel 4 bis 8 Wochen. Dies ermöglicht es den Stakeholdern, mit einem funktionierenden Prototyp zu interagieren, bevor sie sich auf eine vollständige Entwicklung einlassen."
+      }
+    ],
+    "ur": [
+      {
+        "question": "پبلک بمقابلہ پرائیویٹ بلاکچین: میرے انٹرپرائز کے لیے کون سا صحیح ہے؟",
+        "answer": "عوامی بلاک چینز (ایتھریم، پولی گون) زیادہ سے زیادہ شفافیت، ڈی فائی، اور عوامی این ایف ٹیز کے لیے بہترین ہیں۔ نجی یا کنسورشیم بلاک چینز (ہائپرلیجر فیبرک، کورڈا) ان کاروباری اداروں کے لیے بہتر ہیں جنہیں سخت ڈیٹا کی رازداری، ریگولیٹری تعمیل، اور معروف اداروں کے درمیان کنٹرول شدہ رسائی کی ضرورت ہوتی ہے۔"
+      },
+      {
+        "question": "آپ بلاکچین کے اسکیل ایبلٹی کے مسائل کو کیسے حل کرتے ہیں؟",
+        "answer": "ہم لیئر-2 اسکیلنگ سلوشنز (جیسے کہ آپٹیمسٹک رول اپس اور ZK-رول اپس) کا استعمال کرتے ہیں یا سائڈ چینز کو تعینات کرتے ہیں جو مرکزی زنجیر سے ٹرانزیکشنز پر کارروائی کرتے ہیں۔ یہ ڈرامائی طور پر لین دین کے اخراجات (گیس) کو کم کرتا ہے اور ہزاروں لین دین فی سیکنڈ میں تھرو پٹ کو بڑھاتا ہے۔"
+      },
+      {
+        "question": "Web3 کیا ہے اور اس کا بلاکچین سے کیا تعلق ہے؟",
+        "answer": "ویب 3 انٹرنیٹ کی اگلی تکرار ہے، جس کی خصوصیت وکندریقرت ہے۔ جب کہ Web2 مرکزی ڈیٹا بیس (جیسے AWS یا Facebook سرورز) پر انحصار کرتا ہے، Web3 بلاک چین ٹیکنالوجی کا استعمال کرتا ہے تاکہ صارفین کو کرپٹو والیٹس کے ذریعے ان کے ڈیٹا، اثاثوں اور شناخت کی ملکیت دی جا سکے۔"
+      },
+      {
+        "question": "کیا آپ شروع سے انٹرپرائز DApp بنا سکتے ہیں؟",
+        "answer": "جی ہاں. ہماری مکمل اسٹیک بلاکچین ڈیولپمنٹ میں سمارٹ کنٹریکٹ لکھنا، ڈی سینٹرلائزڈ بیک اینڈ (IPFS، گراف پروٹوکول) کی تعمیر، کسٹم کرپٹو بٹوے بنانا یا موجودہ (WalletConnect) کو مربوط کرنا، اور React/Next.js فرنٹ اینڈ کو تیار کرنا شامل ہے۔"
+      },
+      {
+        "question": "آپ کارپوریٹ ماحول میں نجی چابیاں کو محفوظ طریقے سے کیسے منظم کرتے ہیں؟",
+        "answer": "کارپوریٹ کلائنٹس کے لیے، ہم ملٹی پارٹی کمپیوٹیشن (MPC) بٹوے یا ملٹی سگ (ملٹی سگنیچر) سمارٹ کنٹریکٹس (جیسے Gnosis Safe) کو نافذ کرتے ہیں۔ یہ اس بات کو یقینی بناتا ہے کہ کسی ایک ملازم کا کمپنی کے فنڈز پر مکمل کنٹرول نہیں ہے۔ لین دین کے لیے مجاز ایگزیکٹوز کے کورم کی منظوری درکار ہے۔"
+      },
+      {
+        "question": "بلاکچین PoC (Proof of Concept) تیار کرنے کا عام ٹائم فریم کیا ہے؟",
+        "answer": "تصور کا ثبوت، بلاکچین آئیڈیا کی تکنیکی فزیبلٹی اور کاروباری منطق کو درست کرنے کے لیے ڈیزائن کیا گیا ہے، عام طور پر 4 سے 8 ہفتے لگتے ہیں۔ اس سے اسٹیک ہولڈرز کو مکمل ترقی کا عہد کرنے سے پہلے ورکنگ پروٹو ٹائپ کے ساتھ بات چیت کرنے کی اجازت ملتی ہے۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "البلوكتشين العام مقابل الخاص: أيهما مناسب لمؤسستي؟",
+        "answer": "البلوكتشين العامة (مثل الإيثريوم و Polygon) مثالية لتحقيق أقصى درجات الشفافية، والتمويل اللامركزي (DeFi)، و NFTs العامة. تُعد البلوكتشين الخاصة أو الاتحادية (مثل Hyperledger Fabric و Corda) أفضل للمؤسسات التي تتطلب خصوصية صارمة للبيانات، وامتثالاً تنظيميًا، ووصولاً متحكمًا فيه بين كيانات معروفة."
+      },
+      {
+        "question": "كيف تحلون مشاكل قابلية التوسع (scalability) في البلوكتشين؟",
+        "answer": "نحن نستخدم حلول التوسع من الطبقة الثانية (Layer-2) (مثل Optimistic Rollups و ZK-Rollups) أو ننشر السلاسل الجانبية (sidechains) التي تعالج المعاملات خارج السلسلة الرئيسية. هذا يقلل بشكل كبير من تكاليف المعاملات (الغاز) ويزيد من الإنتاجية إلى آلاف المعاملات في الثانية."
+      },
+      {
+        "question": "ما هو Web3 وكيف يرتبط بالبلوكتشين؟",
+        "answer": "Web3 هو التكرار التالي للإنترنت، ويتميز باللامركزية. في حين أن Web2 يعتمد على قواعد بيانات مركزية (مثل خوادم AWS أو Facebook)، يستخدم Web3 تقنية البلوكتشين لمنح المستخدمين ملكية بياناتهم وأصولهم وهويتهم من خلال محافظ التشفير."
+      },
+      {
+        "question": "هل يمكنكم بناء تطبيق لامركزي (DApp) للمؤسسات من الصفر؟",
+        "answer": "نعم. يغطي تطوير البلوكتشين الكامل لدينا كتابة العقود الذكية، وبناء الخلفية اللامركزية (IPFS، Graph Protocol)، وإنشاء محافظ تشفير مخصصة أو دمج المحافظ الحالية (WalletConnect)، وتطوير الواجهة الأمامية React/Next.js."
+      },
+      {
+        "question": "كيف تديرون المفاتيح الخاصة (private keys) بأمان في بيئة الشركة؟",
+        "answer": "بالنسبة لعملاء الشركات، نقوم بتنفيذ محافظ الحوسبة متعددة الأطراف (MPC) أو العقود الذكية متعددة التوقيع (Multi-Sig) (مثل Gnosis Safe). يضمن هذا عدم تمتع أي موظف واحد بالسيطرة الكاملة على أموال الشركة؛ تتطلب المعاملات موافقة نصاب قانوني من المديرين التنفيذيين المعتمدين."
+      },
+      {
+        "question": "ما هو الإطار الزمني النموذجي لتطوير إثبات المفهوم (PoC) للبلوكتشين؟",
+        "answer": "يستغرق إثبات المفهوم، المصمم للتحقق من الجدوى الفنية ومنطق الأعمال لفكرة بلوكتشين، عادةً من 4 إلى 8 أسابيع. يتيح ذلك لأصحاب المصلحة التفاعل مع نموذج أولي يعمل قبل الالتزام بالتطوير على نطاق كامل."
+      }
+    ]
+  },
+  "custom-ecommerce": {
+    "en": [
+      {
+        "question": "Why choose custom E-Commerce over Shopify or Magento?",
+        "answer": "Custom e-commerce is necessary when boxed solutions restrict your business logic. If you need highly specialized product configurators, proprietary subscription models, B2B/B2C hybrid experiences, or deep integrations with custom-built internal ERPs, a fully bespoke system is the only way to scale without compromises."
+      },
+      {
+        "question": "What technology stack do you use for custom stores?",
+        "answer": "We typically build custom e-commerce applications using a headless architecture. We use Next.js or React for a blazing-fast frontend, Node.js or Python (Django/FastAPI) for a robust microservices backend, and PostgreSQL coupled with Redis for scalable data management."
+      },
+      {
+        "question": "Can you build a Progressive Web App (PWA) for our store?",
+        "answer": "Yes. We design our custom e-commerce fronts as PWAs by default. This gives your users an app-like experience in their browser, featuring offline capabilities, push notifications, and home screen installation without going through App Stores."
+      },
+      {
+        "question": "How do you handle security and PCI compliance?",
+        "answer": "We never store raw credit card data on your servers. We integrate with PCI-DSS compliant payment gateways (like Stripe, Braintree, or Adyen) using secure tokenization. We also conduct rigorous penetration testing and implement strict Web Application Firewalls (WAF)."
+      },
+      {
+        "question": "Can you migrate our data from our old platform to the custom build?",
+        "answer": "Absolutely. Data migration is meticulously planned. We write custom ETL scripts to cleanly extract your product catalogs, customer histories, and active orders, transform them into the new database schema, and ensure no SEO equity is lost during the switch."
+      },
+      {
+        "question": "How do you ensure the custom store loads quickly?",
+        "answer": "Speed is critical for conversion. We utilize edge caching strategies via CDNs, implement lazy loading for images and components, optimize database queries, and leverage Next.js Server-Side Rendering (SSR) to deliver page loads under 2 seconds globally."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Neden Shopify veya Magento yerine Özel E-Ticaret'i seçmeliyim?",
+        "answer": "Paketlenmiş çözümler iş mantığınızı kısıtladığında özel e-ticaret gereklidir. Son derece uzmanlaşmış ürün konfigüratörlerine, tescilli abonelik modellerine, B2B/B2C hibrit deneyimlerine veya özel olarak oluşturulmuş dahili ERP'lerle derin entegrasyonlara ihtiyacınız varsa, taviz vermeden ölçeklendirmenin tek yolu tamamen özel tasarlanmış bir sistemdir."
+      },
+      {
+        "question": "Özel mağazalar için hangi teknoloji yığınını kullanıyorsunuz?",
+        "answer": "Özel e-ticaret uygulamalarını genellikle headless (başsız) bir mimari kullanarak oluşturuyoruz. Işık hızında bir ön uç için Next.js veya React, sağlam bir mikro hizmet arka ucu için Node.js veya Python (Django/FastAPI) ve ölçeklenebilir veri yönetimi için Redis ile birleştirilmiş PostgreSQL kullanıyoruz."
+      },
+      {
+        "question": "Mağazamız için Aşamalı Web Uygulaması (PWA) oluşturabilir misiniz?",
+        "answer": "Evet. Özel e-ticaret ön yüzlerimizi varsayılan olarak PWA olarak tasarlıyoruz. Bu, kullanıcılarınıza tarayıcılarında çevrimdışı yetenekler, anlık bildirimler ve Uygulama Mağazalarından (App Store) geçmeden ana ekrana yükleme özelliklerine sahip, uygulama benzeri bir deneyim sunar."
+      },
+      {
+        "question": "Güvenliği ve PCI uyumluluğunu nasıl sağlıyorsunuz?",
+        "answer": "Ham kredi kartı verilerini hiçbir zaman sunucularınızda saklamıyoruz. Güvenli tokenizasyon kullanarak PCI-DSS uyumlu ödeme ağ geçitleriyle (Stripe, Braintree veya Adyen gibi) entegre oluyoruz. Ayrıca titiz sızma testleri (penetration testing) uyguluyor ve sıkı Web Uygulaması Güvenlik Duvarları (WAF) kuruyoruz."
+      },
+      {
+        "question": "Verilerimizi eski platformumuzdan özel yapıya aktarabilir misiniz?",
+        "answer": "Kesinlikle. Veri taşıma işlemi titizlikle planlanmaktadır. Ürün kataloglarınızı, müşteri geçmişlerinizi ve aktif siparişlerinizi temiz bir şekilde çıkarmak, bunları yeni veritabanı şemasına dönüştürmek ve geçiş sırasında hiçbir SEO değerinin kaybolmamasını sağlamak için özel ETL komut dosyaları yazıyoruz."
+      },
+      {
+        "question": "Özel mağazanın hızlı yüklenmesini nasıl sağlıyorsunuz?",
+        "answer": "Hız, dönüşüm için kritik öneme sahiptir. CDN'ler aracılığıyla uç önbelleğe alma stratejilerinden (edge caching) yararlanıyor, resimler ve bileşenler için tembel yükleme (lazy loading) uyguluyor, veritabanı sorgularını optimize ediyor ve dünya çapında 2 saniyenin altında sayfa yüklemeleri sağlamak için Next.js Sunucu Tarafı Oluşturma'dan (SSR) yararlanıyoruz."
+      }
+    ],
+    "de": [
+      {
+        "question": "Warum sollte ich mich für Custom E-Commerce statt für Shopify oder Magento entscheiden?",
+        "answer": "Individueller E-Commerce ist erforderlich, wenn Standardlösungen Ihre Geschäftslogik einschränken. Wenn Sie hochspezialisierte Produktkonfiguratoren, proprietäre Abonnementmodelle, hybride B2B/B2C-Erlebnisse oder tiefe Integrationen mit maßgeschneiderten internen ERPs benötigen, ist ein vollständig maßgeschneidertes System der einzige Weg, um kompromisslos zu skalieren."
+      },
+      {
+        "question": "Welchen Technologie-Stack verwenden Sie für benutzerdefinierte Shops?",
+        "answer": "Wir entwickeln benutzerdefinierte E-Commerce-Anwendungen in der Regel mithilfe einer Headless-Architektur. Wir verwenden Next.js oder React für ein blitzschnelles Frontend, Node.js oder Python (Django/FastAPI) für ein robustes Microservices-Backend und PostgreSQL gekoppelt mit Redis für skalierbares Datenmanagement."
+      },
+      {
+        "question": "Können Sie eine Progressive Web App (PWA) für unseren Shop entwickeln?",
+        "answer": "Ja. Wir konzipieren unsere maßgeschneiderten E-Commerce-Frontends standardmäßig als PWAs. Dadurch erhalten Ihre Nutzer ein app-ähnliches Erlebnis in ihrem Browser, mit Offline-Funktionen, Push-Benachrichtigungen und der Installation auf dem Startbildschirm, ohne die App Stores passieren zu müssen."
+      },
+      {
+        "question": "Wie gehen Sie mit Sicherheit und PCI-Konformität um?",
+        "answer": "Wir speichern niemals unverschlüsselte Kreditkartendaten auf Ihren Servern. Wir integrieren PCI-DSS-konforme Zahlungsgateways (wie Stripe, Braintree oder Adyen) mithilfe sicherer Tokenisierung. Wir führen außerdem strenge Penetrationstests durch und implementieren strikte Web Application Firewalls (WAF)."
+      },
+      {
+        "question": "Können Sie unsere Daten von unserer alten Plattform auf den neuen Build migrieren?",
+        "answer": "Absolut. Die Datenmigration wird minutiös geplant. Wir schreiben benutzerdefinierte ETL-Skripte, um Ihre Produktkataloge, Kundenhistorien und aktiven Bestellungen sauber zu extrahieren, sie in das neue Datenbankschema zu transformieren und sicherzustellen, dass während des Wechsels kein SEO-Wert verloren geht."
+      },
+      {
+        "question": "Wie stellen Sie sicher, dass der benutzerdefinierte Shop schnell geladen wird?",
+        "answer": "Geschwindigkeit ist entscheidend für die Konversion. Wir nutzen Edge-Caching-Strategien über CDNs, implementieren Lazy Loading für Bilder und Komponenten, optimieren Datenbankabfragen und nutzen Next.js Server-Side Rendering (SSR), um weltweit Seitenladezeiten von unter 2 Sekunden zu erreichen."
+      }
+    ],
+    "ur": [
+      {
+        "question": "Shopify یا Magento پر کسٹم ای کامرس کا انتخاب کیوں کریں؟",
+        "answer": "اپنی مرضی کے مطابق ای کامرس ضروری ہے جب باکس والے حل آپ کی کاروباری منطق کو محدود کرتے ہیں۔ اگر آپ کو انتہائی ماہر پروڈکٹ کنفیگریٹرز، ملکیتی سبسکرپشن ماڈلز، B2B/B2C ہائبرڈ تجربات، یا حسب ضرورت اندرونی ERPs کے ساتھ گہرے انضمام کی ضرورت ہے، تو سمجھوتہ کیے بغیر پیمانہ کرنے کا واحد طریقہ مکمل طور پر بیسپوک سسٹم ہے۔"
+      },
+      {
+        "question": "حسب ضرورت اسٹورز کے لیے آپ کون سا ٹیکنالوجی اسٹیک استعمال کرتے ہیں؟",
+        "answer": "ہم عام طور پر ہیڈ لیس فن تعمیر کا استعمال کرتے ہوئے اپنی مرضی کے مطابق ای کامرس ایپلی کیشنز بناتے ہیں۔ ہم ایک چمکدار تیز فرنٹ اینڈ کے لیے Next.js یا React کا استعمال کرتے ہیں، Node.js یا Python (Django/FastAPI) کو ایک مضبوط مائیکرو سروسز بیک اینڈ کے لیے، اور PostgreSQL کو ریڈیس کے ساتھ پیمانے کے قابل ڈیٹا مینجمنٹ کے لیے استعمال کرتے ہیں۔"
+      },
+      {
+        "question": "کیا آپ ہمارے اسٹور کے لیے ایک پروگریسو ویب ایپ (PWA) بنا سکتے ہیں؟",
+        "answer": "جی ہاں، ہم اپنے کسٹم ای کامرس فرنٹ کو بطور ڈیفالٹ PWAs کے طور پر ڈیزائن کرتے ہیں۔ یہ آپ کے صارفین کو ان کے براؤزر میں ایپ جیسا تجربہ فراہم کرتا ہے، جس میں آف لائن صلاحیتیں، پش نوٹیفیکیشنز، اور ایپ اسٹورز سے گزرے بغیر ہوم اسکرین کی تنصیب شامل ہے۔"
+      },
+      {
+        "question": "آپ سیکیورٹی اور PCI کی تعمیل کو کیسے ہینڈل کرتے ہیں؟",
+        "answer": "ہم آپ کے سرورز پر کبھی بھی خام کریڈٹ کارڈ ڈیٹا کو ذخیرہ نہیں کرتے ہیں۔ ہم محفوظ ٹوکنائزیشن کا استعمال کرتے ہوئے PCI-DSS کے مطابق پیمنٹ گیٹ ویز (جیسے Stripe، Braintree، یا Adyen) کے ساتھ مربوط ہوتے ہیں۔ ہم سخت رسائی کی جانچ بھی کرتے ہیں اور سخت ویب ایپلیکیشن فائر والز (WAF) کو نافذ کرتے ہیں۔"
+      },
+      {
+        "question": "کیا آپ ہمارے ڈیٹا کو ہمارے پرانے پلیٹ فارم سے اپنی مرضی کی تعمیر میں منتقل کر سکتے ہیں؟",
+        "answer": "بالکل۔ ڈیٹا کی منتقلی کی احتیاط سے منصوبہ بندی کی گئی ہے۔ ہم آپ کے پروڈکٹ کیٹلاگ، گاہک کی تاریخوں، اور فعال آرڈرز کو صاف طور پر نکالنے کے لیے کسٹم ETL اسکرپٹس لکھتے ہیں، انہیں نئے ڈیٹا بیس اسکیما میں تبدیل کرتے ہیں، اور اس بات کو یقینی بناتے ہیں کہ سوئچ کے دوران کوئی SEO ایکویٹی ضائع نہ ہو۔"
+      },
+      {
+        "question": "آپ اپنی مرضی کے سٹور کے تیزی سے لوڈ ہونے کو کیسے یقینی بناتے ہیں؟",
+        "answer": "رفتار تبدیلی کے لیے اہم ہے۔ ہم CDNs کے ذریعے ایج کیشنگ کی حکمت عملیوں کا استعمال کرتے ہیں، تصاویر اور اجزاء کے لیے سست لوڈنگ نافذ کرتے ہیں، ڈیٹا بیس کے سوالات کو بہتر بناتے ہیں، اور عالمی سطح پر 2 سیکنڈ کے اندر صفحات کو لوڈ کرنے کے لیے Next.js سرور-سائیڈ رینڈرنگ (SSR) کا فائدہ اٹھاتے ہیں۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "لماذا تختار التجارة الإلكترونية المخصصة (Custom E-Commerce) بدلاً من Shopify أو Magento؟",
+        "answer": "التجارة الإلكترونية المخصصة ضرورية عندما تقيد الحلول الجاهزة منطق عملك. إذا كنت بحاجة إلى مكونات منتجات متخصصة للغاية، أو نماذج اشتراك خاصة، أو تجارب هجينة بين B2B/B2C، أو تكامل عميق مع أنظمة تخطيط موارد المؤسسات (ERPs) الداخلية المخصصة، فإن النظام المصمم بالكامل هو الطريقة الوحيدة للتوسع دون تنازلات."
+      },
+      {
+        "question": "ما هي مجموعة التقنيات (technology stack) التي تستخدمونها للمتاجر المخصصة؟",
+        "answer": "نقوم عادةً بإنشاء تطبيقات تجارة إلكترونية مخصصة باستخدام بنية منفصلة (headless architecture). نستخدم Next.js أو React لواجهة أمامية فائقة السرعة، و Node.js أو Python (Django/FastAPI) لخلفية خدمات مصغرة قوية، و PostgreSQL إلى جانب Redis لإدارة البيانات القابلة للتطوير."
+      },
+      {
+        "question": "هل يمكنك بناء تطبيق ويب تقدمي (PWA) لمتجرنا؟",
+        "answer": "نعم. نقوم بتصميم واجهات التجارة الإلكترونية المخصصة لدينا كتطبيقات PWA بشكل افتراضي. يمنح هذا المستخدمين تجربة شبيهة بالتطبيق في متصفحهم، مع إمكانات العمل دون اتصال بالإنترنت، والإشعارات المباشرة (push notifications)، والتثبيت على الشاشة الرئيسية دون المرور عبر متاجر التطبيقات."
+      },
+      {
+        "question": "كيف تتعاملون مع الأمان والامتثال لمعايير PCI؟",
+        "answer": "لا نقوم أبدًا بتخزين بيانات بطاقة الائتمان الخام على خوادمك. نحن نتكامل مع بوابات الدفع المتوافقة مع PCI-DSS (مثل Stripe أو Braintree أو Adyen) باستخدام الترميز الآمن (tokenization). كما نجري اختبارات اختراق صارمة وننفذ جدران حماية صارمة لتطبيقات الويب (WAF)."
+      },
+      {
+        "question": "هل يمكنكم ترحيل بياناتنا من منصتنا القديمة إلى التصميم المخصص؟",
+        "answer": "بالتأكيد. يتم التخطيط لترحيل البيانات بدقة. نكتب نصوص ETL (الاستخراج والتحويل والتحميل) مخصصة لاستخراج كتالوجات المنتجات، وتواريخ العملاء، والطلبات النشطة بشكل نظيف، وتحويلها إلى مخطط قاعدة البيانات الجديد، وضمان عدم فقدان أي قيمة لتحسين محركات البحث (SEO) أثناء التبديل."
+      },
+      {
+        "question": "كيف تتأكدون من سرعة تحميل المتجر المخصص؟",
+        "answer": "السرعة أمر بالغ الأهمية للتحويل. نستخدم استراتيجيات التخزين المؤقت على الحافة (edge caching) عبر شبكات CDN، وننفذ التحميل الكسول (lazy loading) للصور والمكونات، ونحسن استعلامات قاعدة البيانات، ونستفيد من عرض جانب الخادم (SSR) في Next.js لتقديم أوقات تحميل للصفحة أقل من ثانيتين على مستوى العالم."
+      }
+    ]
+  }
+}

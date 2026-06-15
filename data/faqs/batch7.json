@@ -1,0 +1,662 @@
+{
+  "multi-tenant-saas-architecture": {
+    "en": [
+      {
+        "question": "What is multi-tenant SaaS architecture?",
+        "answer": "Multi-tenant architecture is a software design where a single instance of the application and its supporting infrastructure serves multiple customers (tenants). Each tenant's data is logically isolated and remains completely invisible to other tenants, allowing for high efficiency and scalability."
+      },
+      {
+        "question": "What are the benefits of multi-tenancy over single-tenancy?",
+        "answer": "Multi-tenancy drastically reduces infrastructure costs, simplifies maintenance, and streamlines updates. Instead of deploying and managing 100 separate servers for 100 clients, you deploy updates to one central application, instantly pushing the new features to all clients simultaneously."
+      },
+      {
+        "question": "How do you ensure data security between different tenants?",
+        "answer": "We enforce strict row-level security (RLS) policies at the database level. Every query automatically filters data based on the authenticated user's `tenant_id`. Additionally, we use separate database schemas or completely separate databases for enterprise clients requiring extreme isolation."
+      },
+      {
+        "question": "Can individual tenants customize the application?",
+        "answer": "Yes. A well-designed multi-tenant app allows configuration, not customization. Tenants can upload their own logos, change color themes, set custom domain names (white-labeling), and configure specific workflow rules, all without altering the core underlying codebase."
+      },
+      {
+        "question": "Which databases are best for multi-tenant applications?",
+        "answer": "PostgreSQL is often our preferred choice due to its robust Row-Level Security features and schema support. For massive global scale, we use distributed databases like CockroachDB or cloud-native solutions like AWS Aurora and DynamoDB."
+      },
+      {
+        "question": "How do you handle scaling when one tenant experiences massive traffic?",
+        "answer": "We use auto-scaling microservices and implement rate-limiting at the API gateway level. The 'noisy neighbor' problem is mitigated by throttling extremely active tenants so they do not degrade the application performance for other tenants on the same infrastructure."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Çok kiracılı (multi-tenant) SaaS mimarisi nedir?",
+        "answer": "Çok kiracılı mimari, uygulamanın tek bir örneğinin ve onu destekleyen altyapının birden fazla müşteriye (kiracıya) hizmet verdiği bir yazılım tasarımıdır. Her kiracının verileri mantıksal olarak izole edilir ve diğer kiracılara tamamen görünmez kalır; bu da yüksek verimlilik ve ölçeklenebilirlik sağlar."
+      },
+      {
+        "question": "Çoklu kiracılığın tek kiracılığa (single-tenancy) göre avantajları nelerdir?",
+        "answer": "Çoklu kiracılık (Multi-tenancy), altyapı maliyetlerini büyük ölçüde azaltır, bakımı basitleştirir ve güncellemeleri düzene sokar. 100 müşteri için 100 ayrı sunucu kurmak ve yönetmek yerine, güncellemeleri tek bir merkezi uygulamaya dağıtır, yeni özellikleri tüm müşterilere anında eşzamanlı olarak sunarsınız."
+      },
+      {
+        "question": "Farklı kiracılar arasında veri güvenliğini nasıl sağlıyorsunuz?",
+        "answer": "Veritabanı seviyesinde katı satır seviyesi güvenlik (RLS - Row-Level Security) politikaları uyguluyoruz. Her sorgu, kimliği doğrulanmış kullanıcının `tenant_id` değerine göre verileri otomatik olarak filtreler. Ayrıca, aşırı izolasyon gerektiren kurumsal müşteriler için ayrı veritabanı şemaları veya tamamen ayrı veritabanları kullanıyoruz."
+      },
+      {
+        "question": "Bireysel kiracılar uygulamayı özelleştirebilir mi?",
+        "answer": "Evet. İyi tasarlanmış çok kiracılı bir uygulama, özelleştirmeye (customization) değil, yapılandırmaya (configuration) izin verir. Kiracılar, temel alt koddaki kod tabanını değiştirmeden kendi logolarını yükleyebilir, renk temalarını değiştirebilir, özel alan adları ayarlayabilir (beyaz etiketleme) ve belirli iş akışı kurallarını yapılandırabilirler."
+      },
+      {
+        "question": "Çok kiracılı uygulamalar için hangi veritabanları en iyisidir?",
+        "answer": "PostgreSQL, güçlü Satır Düzeyinde Güvenlik özellikleri ve şema desteği nedeniyle genellikle tercih ettiğimiz seçenektir. Devasa küresel ölçekler için CockroachDB gibi dağıtılmış veritabanları veya AWS Aurora ve DynamoDB gibi bulutta yerleşik çözümler kullanıyoruz."
+      },
+      {
+        "question": "Bir kiracı devasa trafik yaşadığında ölçeklendirmeyi nasıl yönetiyorsunuz?",
+        "answer": "Otomatik ölçeklenen mikro hizmetler kullanıyoruz ve API ağ geçidi düzeyinde hız sınırlaması (rate-limiting) uyguluyoruz. 'Gürültülü komşu' (noisy neighbor) sorunu, aynı altyapıdaki diğer kiracıların uygulama performansını düşürmemeleri için son derece aktif kiracıların yavaşlatılmasıyla (throttling) azaltılır."
+      }
+    ],
+    "de": [
+      {
+        "question": "Was ist eine Multi-Tenant-SaaS-Architektur?",
+        "answer": "Die mandantenfähige (Multi-Tenant) Architektur ist ein Softwaredesign, bei dem eine einzige Instanz der Anwendung und ihrer unterstützenden Infrastruktur mehreren Kunden (Mandanten) dient. Die Daten jedes Mandanten sind logisch isoliert und bleiben für andere Mandanten völlig unsichtbar, was eine hohe Effizienz und Skalierbarkeit ermöglicht."
+      },
+      {
+        "question": "Was sind die Vorteile von Multi-Tenancy gegenüber Single-Tenancy?",
+        "answer": "Multi-Tenancy reduziert die Infrastrukturkosten drastisch, vereinfacht die Wartung und rationalisiert Updates. Anstatt 100 separate Server für 100 Clients bereitzustellen und zu verwalten, stellen Sie Updates in einer zentralen Anwendung bereit und übertragen die neuen Funktionen sofort und gleichzeitig auf alle Clients."
+      },
+      {
+        "question": "Wie gewährleisten Sie die Datensicherheit zwischen verschiedenen Mandanten?",
+        "answer": "Wir erzwingen strenge Row-Level Security (RLS)-Richtlinien auf Datenbankebene. Jede Abfrage filtert Daten automatisch basierend auf der „tenant_id“ des authentifizierten Benutzers. Darüber hinaus verwenden wir separate Datenbankschemata oder komplett separate Datenbanken für Unternehmenskunden, die eine extreme Isolierung benötigen."
+      },
+      {
+        "question": "Können einzelne Mandanten die Anwendung anpassen?",
+        "answer": "Ja. Eine gut konzipierte Multi-Tenant-App ermöglicht Konfiguration, nicht Anpassung (Customization). Mandanten können ihre eigenen Logos hochladen, Farbthemen ändern, benutzerdefinierte Domainnamen festlegen (White-Labeling) und spezifische Workflow-Regeln konfigurieren, ohne die zugrunde liegende Codebasis zu ändern."
+      },
+      {
+        "question": "Welche Datenbanken eignen sich am besten für mandantenfähige Anwendungen?",
+        "answer": "Aufgrund seiner robusten Sicherheitsfunktionen auf Zeilenebene und der Schemaunterstützung ist PostgreSQL oft unsere bevorzugte Wahl. Für eine massive globale Skalierung verwenden wir verteilte Datenbanken wie CockroachDB oder Cloud-native Lösungen wie AWS Aurora und DynamoDB."
+      },
+      {
+        "question": "Wie gehen Sie mit der Skalierung um, wenn ein Mandant massiven Datenverkehr verzeichnet?",
+        "answer": "Wir verwenden Auto-Scaling-Microservices und implementieren Ratenbegrenzungen auf API-Gateway-Ebene. Das „Noisy Neighbor“-Problem wird entschärft, indem extrem aktive Mandanten gedrosselt werden, sodass sie die Anwendungsleistung für andere Mandanten auf derselben Infrastruktur nicht beeinträchtigen."
+      }
+    ],
+    "ur": [
+      {
+        "question": "ملٹی کرایہ دار (Multi-tenant) SaaS فن تعمیر کیا ہے؟",
+        "answer": "ملٹی کرایہ دار فن تعمیر ایک سافٹ ویئر ڈیزائن ہے جہاں ایپلی کیشن کی ایک مثال اور اس کا معاون بنیادی ڈھانچہ متعدد صارفین (کرایہ داروں) کی خدمت کرتا ہے۔ ہر کرایہ دار کا ڈیٹا منطقی طور پر الگ تھلگ ہوتا ہے اور دوسرے کرایہ داروں کے لیے مکمل طور پر پوشیدہ رہتا ہے، جس سے اعلی کارکردگی اور اسکیل ایبلٹی کی اجازت ہوتی ہے۔"
+      },
+      {
+        "question": "سنگل کرایہ داری کے مقابلے ملٹی کرایہ داری کے کیا فوائد ہیں؟",
+        "answer": "متعدد کرایہ داری بنیادی ڈھانچے کے اخراجات کو یکسر کم کرتی ہے، دیکھ بھال کو آسان بناتی ہے، اور اپ ڈیٹس کو ہموار کرتی ہے۔ 100 کلائنٹس کے لیے 100 الگ الگ سرورز کو تعینات کرنے اور ان کا نظم کرنے کے بجائے، آپ اپ ڈیٹس کو ایک سنٹرل ایپلیکیشن میں لگاتے ہیں، فوری طور پر نئی خصوصیات کو تمام کلائنٹس تک بیک وقت دھکیلتے ہیں۔"
+      },
+      {
+        "question": "آپ مختلف کرایہ داروں کے درمیان ڈیٹا سیکیورٹی کو کیسے یقینی بناتے ہیں؟",
+        "answer": "ہم ڈیٹا بیس کی سطح پر قطار کی سطح کی سخت سیکیورٹی (RLS) پالیسیوں کو نافذ کرتے ہیں۔ ہر سوال خود بخود مستند صارف کے `tenant_id` کی بنیاد پر ڈیٹا کو فلٹر کرتا ہے۔ مزید برآں، ہم انٹرپرائز کلائنٹس کے لیے الگ ڈیٹا بیس سکیما یا بالکل الگ ڈیٹا بیس استعمال کرتے ہیں جنہیں انتہائی تنہائی کی ضرورت ہوتی ہے۔"
+      },
+      {
+        "question": "کیا انفرادی کرایہ دار درخواست کو اپنی مرضی کے مطابق بنا سکتے ہیں؟",
+        "answer": "ہاں۔ ایک اچھی طرح سے ڈیزائن کردہ ملٹی کرایہ دار ایپ تخصیص نہیں بلکہ ترتیب دینے کی اجازت دیتی ہے۔ کرایہ دار اپنے لوگو اپ لوڈ کر سکتے ہیں، کلر تھیمز تبدیل کر سکتے ہیں، حسب ضرورت ڈومین کے نام (وائٹ لیبلنگ) سیٹ کر سکتے ہیں، اور بنیادی انڈرلیئنگ کوڈ بیس کو تبدیل کیے بغیر مخصوص ورک فلو کے اصول ترتیب دے سکتے ہیں۔"
+      },
+      {
+        "question": "کثیر کرایہ دار ایپلی کیشنز کے لیے کون سے ڈیٹا بیس بہترین ہیں؟",
+        "answer": "اس کی مضبوط قطار کے درجے کی سیکیورٹی کی خصوصیات اور اسکیما سپورٹ کی وجہ سے PostgreSQL اکثر ہماری ترجیحی انتخاب ہے۔ بڑے پیمانے پر عالمی پیمانے کے لیے، ہم CockroachDB جیسے تقسیم شدہ ڈیٹا بیس یا AWS Aurora اور DynamoDB جیسے کلاؤڈ مقامی حل استعمال کرتے ہیں۔"
+      },
+      {
+        "question": "جب ایک کرایہ دار کو بڑے پیمانے پر ٹریفک کا سامنا ہوتا ہے تو آپ اسکیلنگ کو کیسے سنبھالتے ہیں؟",
+        "answer": "ہم آٹو اسکیلنگ مائیکرو سروسز کا استعمال کرتے ہیں اور API گیٹ وے کی سطح پر ریٹ لیمٹنگ نافذ کرتے ہیں۔ انتہائی فعال کرایہ داروں کا گلا گھونٹ کر 'شور مچانے والے پڑوسی' کے مسئلے کو کم کیا جاتا ہے تاکہ وہ اسی انفراسٹرکچر پر دوسرے کرایہ داروں کے لیے درخواست کی کارکردگی کو کم نہ کریں۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "ما هي بنية SaaS متعددة المستأجرين (Multi-tenant SaaS architecture)؟",
+        "answer": "بنية المستأجرين المتعددين هي تصميم برمجي حيث يخدم مثيل واحد (single instance) من التطبيق وبنيته التحتية الداعمة عملاء متعددين (مستأجرين). يتم عزل بيانات كل مستأجر منطقيًا وتبقى غير مرئية تمامًا للمستأجرين الآخرين، مما يتيح كفاءة عالية وقابلية للتوسع."
+      },
+      {
+        "question": "ما هي فوائد الاستئجار المتعدد (multi-tenancy) مقارنة بالاستئجار الفردي؟",
+        "answer": "يقلل الاستئجار المتعدد من تكاليف البنية التحتية بشكل كبير، ويبسط الصيانة، ويسهل التحديثات. بدلاً من نشر وإدارة 100 خادم منفصل لـ 100 عميل، تقوم بنشر التحديثات في تطبيق مركزي واحد، مما يدفع الميزات الجديدة على الفور إلى جميع العملاء في وقت واحد."
+      },
+      {
+        "question": "كيف تضمنون أمان البيانات بين المستأجرين المختلفين؟",
+        "answer": "نحن نفرض سياسات أمان صارمة على مستوى الصف (Row-Level Security - RLS) على مستوى قاعدة البيانات. يقوم كل استعلام تلقائيًا بتصفية البيانات بناءً على 'tenant_id' للمستخدم المصادق عليه. بالإضافة إلى ذلك، نستخدم مخططات قاعدة بيانات منفصلة (schemas) أو قواعد بيانات منفصلة تمامًا لعملاء المؤسسات الذين يحتاجون إلى عزلة شديدة."
+      },
+      {
+        "question": "هل يمكن للمستأجرين الأفراد تخصيص التطبيق؟",
+        "answer": "نعم. يتيح التطبيق متعدد المستأجرين المصمم جيدًا التكوين (configuration)، وليس التخصيص (customization) العميق في الكود. يمكن للمستأجرين تحميل شعاراتهم الخاصة، وتغيير سمات الألوان، وتعيين أسماء نطاقات مخصصة (white-labeling)، وتكوين قواعد سير عمل محددة، كل ذلك دون تغيير قاعدة البيانات البرمجية الأساسية."
+      },
+      {
+        "question": "ما هي قواعد البيانات الأفضل للتطبيقات متعددة المستأجرين؟",
+        "answer": "غالبًا ما يكون PostgreSQL هو خيارنا المفضل نظرًا لميزات الأمان القوية على مستوى الصف ودعم المخططات (schemas). للتوسع العالمي الهائل، نستخدم قواعد بيانات موزعة مثل CockroachDB أو حلول سحابية أصلية مثل AWS Aurora و DynamoDB."
+      },
+      {
+        "question": "كيف تتعاملون مع التوسع عندما يواجه مستأجر واحد حركة مرور هائلة؟",
+        "answer": "نحن نستخدم خدمات مصغرة ذات توسع تلقائي ونطبق حدود معدل الطلبات (rate-limiting) على مستوى بوابة API. يتم التخفيف من مشكلة 'الجار المزعج' (noisy neighbor) عن طريق تقييد المستأجرين النشطين للغاية بحيث لا يقللون من أداء التطبيق للمستأجرين الآخرين على نفس البنية التحتية."
+      }
+    ]
+  },
+  "ar-development": {
+    "en": [
+      {
+        "question": "What is the difference between WebAR and App-based AR?",
+        "answer": "App-based AR (using ARKit for iOS or ARCore for Android) requires users to download a mobile app but offers the highest performance, stability, and access to hardware sensors. WebAR runs directly in the mobile browser using device cameras, eliminating the need for downloads but offering slightly less visual fidelity."
+      },
+      {
+        "question": "Can AR be used for retail and e-commerce?",
+        "answer": "Yes. 'Try-before-you-buy' AR experiences significantly increase conversion rates and reduce product returns. We build AR solutions allowing customers to visualize furniture in their living rooms, try on virtual glasses, or preview makeup directly from their phone's camera."
+      },
+      {
+        "question": "Which software engines do you use to build AR applications?",
+        "answer": "For native mobile apps, we heavily utilize Unity combined with AR Foundation (which bridges ARKit and ARCore). For WebAR experiences, we use frameworks like 8th Wall, Three.js, and A-Frame. For social media filters, we use Meta Spark Studio and Snap AR Lens Studio."
+      },
+      {
+        "question": "Do I need special hardware to view your AR applications?",
+        "answer": "For most of our solutions, a modern smartphone or tablet is all that is required. The device's built-in camera, accelerometer, and gyroscope handle the spatial tracking. We also develop advanced AR applications for specialized hardware like the Microsoft HoloLens 2 or Apple Vision Pro."
+      },
+      {
+        "question": "How do you track physical objects in an AR app?",
+        "answer": "We use image tracking (recognizing 2D markers like a poster or product label), object tracking (recognizing 3D shapes like a toy or machine part), and surface/plane tracking (detecting the floor or a tabletop to place a virtual object on)."
+      },
+      {
+        "question": "How long does it take to develop a marketing WebAR experience?",
+        "answer": "A straightforward WebAR marketing campaign, such as animating a product label or launching a mini-game via a QR code, can often be developed in 4 to 6 weeks. Complex enterprise AR apps for maintenance or training take significantly longer, typically 3 to 6 months."
+      }
+    ],
+    "tr": [
+      {
+        "question": "WebAR ve Uygulama tabanlı AR (Artırılmış Gerçeklik) arasındaki fark nedir?",
+        "answer": "Uygulama tabanlı AR (iOS için ARKit veya Android için ARCore kullanarak) kullanıcıların bir mobil uygulama indirmesini gerektirir ancak en yüksek performansı, kararlılığı ve donanım sensörlerine erişimi sunar. WebAR, cihaz kameralarını kullanarak doğrudan mobil tarayıcıda çalışır, indirme ihtiyacını ortadan kaldırır ancak biraz daha az görsel aslına uygunluk sunar."
+      },
+      {
+        "question": "AR, perakende ve e-ticaret için kullanılabilir mi?",
+        "answer": "Evet. 'Satın almadan önce dene' AR deneyimleri, dönüşüm oranlarını önemli ölçüde artırır ve ürün iadelerini azaltır. Müşterilerin mobilyaları oturma odalarında görselleştirmelerine, sanal gözlük denemelerine veya makyajı doğrudan telefonlarının kamerasından önizlemelerine olanak tanıyan AR çözümleri üretiyoruz."
+      },
+      {
+        "question": "AR uygulamaları oluşturmak için hangi yazılım motorlarını kullanıyorsunuz?",
+        "answer": "Yerel mobil uygulamalar için AR Foundation (ARKit ve ARCore arasında köprü kurar) ile birleştirilmiş Unity'yi yoğun bir şekilde kullanıyoruz. WebAR deneyimleri için 8th Wall, Three.js ve A-Frame gibi çerçeveler kullanıyoruz. Sosyal medya filtreleri için Meta Spark Studio ve Snap AR Lens Studio kullanıyoruz."
+      },
+      {
+        "question": "AR uygulamalarınızı görüntülemek için özel bir donanıma ihtiyacım var mı?",
+        "answer": "Çözümlerimizin çoğu için modern bir akıllı telefon veya tablet yeterlidir. Cihazın dahili kamerası, ivmeölçeri ve jiroskopu uzamsal takibi yönetir. Ayrıca Microsoft HoloLens 2 veya Apple Vision Pro gibi özel donanımlar için gelişmiş AR uygulamaları da geliştiriyoruz."
+      },
+      {
+        "question": "Bir AR uygulamasında fiziksel nesneleri nasıl takip ediyorsunuz?",
+        "answer": "Görüntü izleme (poster veya ürün etiketi gibi 2B işaretçileri tanıma), nesne izleme (oyuncak veya makine parçası gibi 3B şekilleri tanıma) ve yüzey/düzlem izleme (sanal bir nesne yerleştirmek için zemini veya masaüstünü algılama) kullanıyoruz."
+      },
+      {
+        "question": "Bir pazarlama WebAR deneyimi geliştirmek ne kadar sürer?",
+        "answer": "Bir ürün etiketini canlandırmak veya bir QR kodu aracılığıyla bir mini oyun başlatmak gibi basit bir WebAR pazarlama kampanyası genellikle 4 ila 6 hafta içinde geliştirilebilir. Bakım veya eğitim için karmaşık kurumsal AR uygulamaları çok daha uzun sürer, genellikle 3 ila 6 ay."
+      }
+    ],
+    "de": [
+      {
+        "question": "Was ist der Unterschied zwischen WebAR und App-basierter AR?",
+        "answer": "App-basierte AR (mit ARKit für iOS oder ARCore für Android) erfordert, dass Benutzer eine mobile App herunterladen, bietet aber die höchste Leistung, Stabilität und den Zugriff auf Hardware-Sensoren. WebAR läuft direkt im mobilen Browser mithilfe der Gerätekameras, wodurch Downloads überflüssig werden, bietet jedoch eine etwas geringere visuelle Detailtreue."
+      },
+      {
+        "question": "Kann AR im Einzelhandel und E-Commerce eingesetzt werden?",
+        "answer": "Ja. „Probieren vor dem Kauf“-AR-Erlebnisse erhöhen die Konversionsraten erheblich und reduzieren Produktrückgaben. Wir entwickeln AR-Lösungen, mit denen Kunden Möbel in ihrem Wohnzimmer visualisieren, virtuelle Brillen anprobieren oder Make-up direkt über die Kamera ihres Telefons in der Vorschau anzeigen können."
+      },
+      {
+        "question": "Welche Software-Engines verwenden Sie zum Erstellen von AR-Anwendungen?",
+        "answer": "Für native mobile Apps nutzen wir stark Unity in Kombination mit AR Foundation (das ARKit und ARCore verbindet). Für WebAR-Erlebnisse verwenden wir Frameworks wie 8th Wall, Three.js und A-Frame. Für Social-Media-Filter verwenden wir Meta Spark Studio und Snap AR Lens Studio."
+      },
+      {
+        "question": "Benötige ich spezielle Hardware, um Ihre AR-Anwendungen anzuzeigen?",
+        "answer": "Für die meisten unserer Lösungen reicht ein modernes Smartphone oder Tablet völlig aus. Die integrierte Kamera, der Beschleunigungsmesser und das Gyroskop des Geräts übernehmen das räumliche Tracking. Wir entwickeln auch fortschrittliche AR-Anwendungen für spezielle Hardware wie die Microsoft HoloLens 2 oder Apple Vision Pro."
+      },
+      {
+        "question": "Wie verfolgen Sie physische Objekte in einer AR-App?",
+        "answer": "Wir verwenden Image Tracking (Erkennen von 2D-Markierungen wie einem Poster oder einem Produktetikett), Object Tracking (Erkennen von 3D-Formen wie einem Spielzeug oder Maschinenteil) und Surface/Plane Tracking (Erkennen des Bodens oder einer Tischplatte, um ein virtuelles Objekt darauf zu platzieren)."
+      },
+      {
+        "question": "Wie lange dauert es, ein WebAR-Marketing-Erlebnis zu entwickeln?",
+        "answer": "Eine einfache WebAR-Marketingkampagne, wie das Animieren eines Produktetiketts oder das Starten eines Minispiels über einen QR-Code, kann oft in 4 bis 6 Wochen entwickelt werden. Komplexe Enterprise-AR-Apps für Wartung oder Schulung dauern deutlich länger, typischerweise 3 bis 6 Monate."
+      }
+    ],
+    "ur": [
+      {
+        "question": "WebAR اور ایپ پر مبنی AR میں کیا فرق ہے؟",
+        "answer": "ایپ پر مبنی AR (iOS کے لیے ARKit یا Android کے لیے ARCore کا استعمال کرتے ہوئے) صارفین کو موبائل ایپ ڈاؤن لوڈ کرنے کی ضرورت ہوتی ہے لیکن یہ ہارڈ ویئر سینسرز تک اعلیٰ ترین کارکردگی، استحکام اور رسائی کی پیشکش کرتا ہے۔ WebAR ڈیوائس کیمروں کا استعمال کرتے ہوئے براہ راست موبائل براؤزر میں چلتا ہے، ڈاؤن لوڈز کی ضرورت کو ختم کرتا ہے لیکن بصری مخلصی قدرے کم پیش کرتا ہے۔"
+      },
+      {
+        "question": "کیا AR ریٹیل اور ای کامرس کے لیے استعمال کیا جا سکتا ہے؟",
+        "answer": "جی ہاں. 'خریدنے سے پہلے آزمائیں' اے آر کے تجربات تبدیلی کی شرح کو نمایاں طور پر بڑھاتے ہیں اور مصنوعات کی واپسی کو کم کرتے ہیں۔ ہم اے آر کے حل بناتے ہیں جو صارفین کو اپنے رہنے کے کمرے میں فرنیچر کو تصور کرنے، ورچوئل شیشے آزمانے، یا اپنے فون کے کیمرہ سے براہ راست میک اپ کا جائزہ لینے کی اجازت دیتے ہیں۔"
+      },
+      {
+        "question": "AR ایپلیکیشنز بنانے کے لیے آپ کون سے سافٹ ویئر انجن استعمال کرتے ہیں؟",
+        "answer": "مقامی موبائل ایپس کے لیے، ہم AR فاؤنڈیشن (جو ARKit اور ARCore کو پل کرتی ہے) کے ساتھ مل کر اتحاد کا بہت زیادہ استعمال کرتے ہیں۔ WebAR کے تجربات کے لیے، ہم آٹھویں وال، Three.js، اور A-Frame جیسے فریم ورک استعمال کرتے ہیں۔ سوشل میڈیا فلٹرز کے لیے، ہم Meta Spark Studio اور Snap AR Lens Studio کا استعمال کرتے ہیں۔"
+      },
+      {
+        "question": "کیا مجھے آپ کی اے آر ایپس دیکھنے کے لیے خصوصی ہارڈ ویئر کی ضرورت ہے؟",
+        "answer": "ہمارے زیادہ تر حلوں کے لیے، ایک جدید اسمارٹ فون یا ٹیبلیٹ کی ضرورت ہے۔ ڈیوائس کا بلٹ ان کیمرہ، ایکسلرومیٹر، اور گائروسکوپ اسپیشل ٹریکنگ کو ہینڈل کرتے ہیں۔ ہم مائیکروسافٹ ہولو لینس 2 یا ایپل ویژن پرو جیسے خصوصی ہارڈ ویئر کے لیے اعلی درجے کی اے آر ایپلی کیشنز بھی تیار کرتے ہیں۔"
+      },
+      {
+        "question": "آپ اے آر ایپ میں جسمانی اشیاء کو کیسے ٹریک کرتے ہیں؟",
+        "answer": "ہم تصویر سے باخبر رہنے (پوسٹر یا پروڈکٹ لیبل جیسے 2D مارکر کو پہچاننا)، آبجیکٹ ٹریکنگ (کھلونا یا مشین کے حصے کی طرح 3D شکلوں کو پہچاننا)، اور سطح/ہوائی جہاز سے باخبر رہنے (اس پر مجازی آبجیکٹ رکھنے کے لیے فرش یا ٹیبل ٹاپ کا پتہ لگانا) استعمال کرتے ہیں۔"
+      },
+      {
+        "question": "مارکیٹنگ کا WebAR کا تجربہ تیار کرنے میں کتنا وقت لگتا ہے؟",
+        "answer": "ایک سیدھی سادی WebAR مارکیٹنگ مہم، جیسے پروڈکٹ لیبل کو متحرک کرنا یا QR کوڈ کے ذریعے منی گیم لانچ کرنا، اکثر 4 سے 6 ہفتوں میں تیار کی جا سکتی ہے۔ دیکھ بھال یا تربیت کے لیے پیچیدہ انٹرپرائز AR ایپس کافی زیادہ وقت لیتی ہیں، عام طور پر 3 سے 6 ماہ۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "ما الفرق بين WebAR و AR المعتمد على التطبيقات (App-based AR)؟",
+        "answer": "يتطلب الواقع المعزز القائم على التطبيقات (باستخدام ARKit لنظام iOS أو ARCore لنظام Android) من المستخدمين تنزيل تطبيق هاتف محمول، ولكنه يوفر أعلى مستوى من الأداء والاستقرار والوصول إلى مستشعرات الأجهزة. يعمل WebAR مباشرة في متصفح الهاتف المحمول باستخدام كاميرات الجهاز، مما يلغي الحاجة إلى التنزيلات ولكنه يوفر دقة بصرية أقل قليلاً."
+      },
+      {
+        "question": "هل يمكن استخدام الواقع المعزز لتجارة التجزئة والتجارة الإلكترونية؟",
+        "answer": "نعم. تعمل تجارب الواقع المعزز 'جرب قبل أن تشتري' على زيادة معدلات التحويل (conversion rates) بشكل كبير وتقليل عوائد المنتجات. نحن نبني حلول الواقع المعزز التي تتيح للعملاء تخيل الأثاث في غرف المعيشة الخاصة بهم، أو تجربة النظارات الافتراضية، أو معاينة الماكياج مباشرة من كاميرا هواتفهم."
+      },
+      {
+        "question": "ما هي محركات البرامج التي تستخدمونها لبناء تطبيقات الواقع المعزز؟",
+        "answer": "بالنسبة لتطبيقات الأجهزة المحمولة الأصلية (native)، نعتمد بشكل كبير على Unity جنبًا إلى جنب مع AR Foundation (الذي يربط بين ARKit و ARCore). بالنسبة لتجارب WebAR، نستخدم أطر عمل مثل 8th Wall و Three.js و A-Frame. بالنسبة لفلاتر وسائل التواصل الاجتماعي، نستخدم Meta Spark Studio و Snap AR Lens Studio."
+      },
+      {
+        "question": "هل أحتاج إلى أجهزة خاصة لعرض تطبيقات الواقع المعزز الخاصة بكم؟",
+        "answer": "بالنسبة لمعظم حلولنا، كل ما يتطلبه الأمر هو هاتف ذكي أو جهاز لوحي حديث. تتعامل الكاميرا المدمجة في الجهاز ومقياس التسارع (accelerometer) والجيروسكوب مع التتبع المكاني. نقوم أيضًا بتطوير تطبيقات الواقع المعزز المتقدمة للأجهزة المتخصصة مثل Microsoft HoloLens 2 أو Apple Vision Pro."
+      },
+      {
+        "question": "كيف تتبعون الأشياء المادية في تطبيق الواقع المعزز؟",
+        "answer": "نستخدم تتبع الصور (image tracking - التعرف على علامات ثنائية الأبعاد مثل ملصق أو ملصق منتج)، وتتبع الكائنات (object tracking - التعرف على الأشكال ثلاثية الأبعاد مثل لعبة أو جزء آلة)، وتتبع السطح/المستوى (surface tracking - اكتشاف الأرضية أو سطح الطاولة لوضع كائن افتراضي عليه)."
+      },
+      {
+        "question": "ما المدة التي يستغرقها تطوير تجربة WebAR تسويقية؟",
+        "answer": "غالبًا ما يمكن تطوير حملة تسويق WebAR المباشرة، مثل تحريك ملصق منتج أو إطلاق لعبة صغيرة عبر رمز الاستجابة السريعة (QR code)، في غضون 4 إلى 6 أسابيع. تستغرق تطبيقات الواقع المعزز للمؤسسات المعقدة للصيانة أو التدريب وقتًا أطول بكثير، وعادة من 3 إلى 6 أشهر."
+      }
+    ]
+  },
+  "payment-gateway-integration": {
+    "en": [
+      {
+        "question": "Which payment gateways do you most commonly integrate?",
+        "answer": "We integrate dozens of gateways globally. Our most common integrations include Stripe (for broad international coverage), PayPal, Square, Braintree, Authorize.Net, and localized gateways like Razorpay (India), Paystack (Africa), and Mercado Pago (Latin America)."
+      },
+      {
+        "question": "How do you ensure credit card data is secure?",
+        "answer": "We never store raw credit card numbers on your servers. We utilize tokenization and hosted UI fields (like Stripe Elements). The customer's browser sends the sensitive data directly to the payment gateway, which returns a secure token to your server to process the charge, keeping your system out of PCI scope."
+      },
+      {
+        "question": "Can you integrate subscription and recurring billing models?",
+        "answer": "Yes. We implement complex billing models including tiered subscriptions, usage-based billing (metered billing), free trial conversions, and prorated upgrades/downgrades using services like Stripe Billing or Chargebee."
+      },
+      {
+        "question": "What happens if a customer's payment fails or their card expires?",
+        "answer": "We build automated Dunning management systems. If a payment fails, the system automatically sends a friendly email to the customer with a secure link to update their payment method, and automatically retries the charge on a predetermined schedule."
+      },
+      {
+        "question": "Do you support alternative payment methods (APMs) like Apple Pay or Crypto?",
+        "answer": "Absolutely. We can enable digital wallets (Apple Pay, Google Pay), Buy Now Pay Later services (Klarna, Affirm, Afterpay), bank transfers (ACH, SEPA), and even cryptocurrency payments via Coinbase Commerce or BitPay."
+      },
+      {
+        "question": "How long does a payment gateway integration take?",
+        "answer": "A standard Stripe or PayPal checkout integration takes about 1 to 2 weeks. Building a complex custom billing system with usage tracking, multi-currency support, and automated tax calculations (via Avalara/Stripe Tax) can take 4 to 8 weeks."
+      }
+    ],
+    "tr": [
+      {
+        "question": "En sık hangi ödeme ağ geçitlerini (payment gateways) entegre ediyorsunuz?",
+        "answer": "Küresel olarak düzinelerce ağ geçidini entegre ediyoruz. En yaygın entegrasyonlarımız arasında Stripe (geniş uluslararası kapsama alanı için), PayPal, Square, Braintree, Authorize.Net ve Razorpay (Hindistan), Paystack (Afrika) ve Mercado Pago (Latin Amerika) gibi yerelleştirilmiş ağ geçitleri bulunmaktadır."
+      },
+      {
+        "question": "Kredi kartı verilerinin güvenli olmasını nasıl sağlıyorsunuz?",
+        "answer": "Sunucularınızda asla ham kredi kartı numaralarını saklamıyoruz. Tokenizasyon ve barındırılan kullanıcı arayüzü alanları (Stripe Elements gibi) kullanıyoruz. Müşterinin tarayıcısı hassas verileri doğrudan ödeme ağ geçidine gönderir ve bu da ödemeyi işlemek için sunucunuza güvenli bir jeton (token) döndürerek sisteminizi PCI kapsamının dışında tutar."
+      },
+      {
+        "question": "Abonelik ve yinelenen faturalandırma modellerini entegre edebilir misiniz?",
+        "answer": "Evet. Stripe Billing veya Chargebee gibi hizmetleri kullanarak kademeli abonelikler, kullanıma dayalı faturalandırma (sayaçlı faturalandırma), ücretsiz deneme dönüşümleri ve orantılı yükseltmeler/düşüşler dahil olmak üzere karmaşık faturalandırma modelleri uyguluyoruz."
+      },
+      {
+        "question": "Müşterinin ödemesi başarısız olursa veya kartının süresi dolarsa ne olur?",
+        "answer": "Otomatik Tahsilat (Dunning) yönetim sistemleri kuruyoruz. Bir ödeme başarısız olursa, sistem müşteriye ödeme yöntemini güncellemesi için güvenli bir bağlantı içeren samimi bir e-postayı otomatik olarak gönderir ve önceden belirlenmiş bir programda ödemeyi otomatik olarak yeniden dener."
+      },
+      {
+        "question": "Apple Pay veya Kripto gibi alternatif ödeme yöntemlerini (APM'ler) destekliyor musunuz?",
+        "answer": "Kesinlikle. Dijital cüzdanları (Apple Pay, Google Pay), Şimdi Al Sonra Öde hizmetlerini (Klarna, Affirm, Afterpay), banka transferlerini (ACH, SEPA) ve hatta Coinbase Commerce veya BitPay aracılığıyla kripto para ödemelerini etkinleştirebiliriz."
+      },
+      {
+        "question": "Bir ödeme ağ geçidi entegrasyonu ne kadar sürer?",
+        "answer": "Standart bir Stripe veya PayPal ödeme entegrasyonu yaklaşık 1 ila 2 hafta sürer. Kullanım takibi, çoklu para birimi desteği ve otomatik vergi hesaplamaları (Avalara/Stripe Tax aracılığıyla) içeren karmaşık bir özel faturalandırma sistemi oluşturmak 4 ila 8 hafta sürebilir."
+      }
+    ],
+    "de": [
+      {
+        "question": "Welche Zahlungsgateways integrieren Sie am häufigsten?",
+        "answer": "Wir integrieren weltweit Dutzende von Gateways. Zu unseren häufigsten Integrationen gehören Stripe (für eine breite internationale Abdeckung), PayPal, Square, Braintree, Authorize.Net sowie lokalisierte Gateways wie Razorpay (Indien), Paystack (Afrika) und Mercado Pago (Lateinamerika)."
+      },
+      {
+        "question": "Wie stellen Sie sicher, dass Kreditkartendaten sicher sind?",
+        "answer": "Wir speichern niemals rohe Kreditkartennummern auf Ihren Servern. Wir verwenden Tokenisierung und gehostete UI-Felder (wie Stripe Elements). Der Browser des Kunden sendet die sensiblen Daten direkt an das Zahlungsgateway, das ein sicheres Token an Ihren Server zurückgibt, um die Belastung zu verarbeiten, wodurch Ihr System aus dem PCI-Bereich herausgehalten wird."
+      },
+      {
+        "question": "Können Sie Abonnement- und wiederkehrende Abrechnungsmodelle integrieren?",
+        "answer": "Ja. Wir implementieren komplexe Abrechnungsmodelle einschließlich gestaffelter Abonnements, nutzungsbasierter Abrechnung (Metered Billing), Konvertierungen von kostenlosen Testversionen und anteiliger Upgrades/Downgrades unter Verwendung von Diensten wie Stripe Billing oder Chargebee."
+      },
+      {
+        "question": "Was passiert, wenn die Zahlung eines Kunden fehlschlägt oder seine Karte abläuft?",
+        "answer": "Wir bauen automatisierte Dunning-Management-Systeme (Mahnwesen) auf. Wenn eine Zahlung fehlschlägt, sendet das System automatisch eine freundliche E-Mail an den Kunden mit einem sicheren Link zur Aktualisierung seiner Zahlungsmethode und versucht die Abbuchung automatisch nach einem festgelegten Zeitplan erneut."
+      },
+      {
+        "question": "Unterstützen Sie alternative Zahlungsmethoden (APMs) wie Apple Pay oder Krypto?",
+        "answer": "Absolut. Wir können digitale Geldbörsen (Apple Pay, Google Pay), Buy-Now-Pay-Later-Dienste (Klarna, Affirm, Afterpay), Banküberweisungen (ACH, SEPA) und sogar Kryptowährungszahlungen über Coinbase Commerce oder BitPay aktivieren."
+      },
+      {
+        "question": "Wie lange dauert die Integration eines Zahlungsgateways?",
+        "answer": "Eine Standard-Kassenintegration von Stripe oder PayPal dauert etwa 1 bis 2 Wochen. Der Aufbau eines komplexen benutzerdefinierten Abrechnungssystems mit Nutzungsverfolgung, Unterstützung für mehrere Währungen und automatischen Steuerberechnungen (über Avalara/Stripe Tax) kann 4 bis 8 Wochen dauern."
+      }
+    ],
+    "ur": [
+      {
+        "question": "آپ کون سے ادائیگی کے گیٹ ویز کو عام طور پر مربوط کرتے ہیں؟",
+        "answer": "ہم عالمی سطح پر درجنوں گیٹ ویز کو مربوط کرتے ہیں۔ ہمارے سب سے عام انضمام میں Stripe (وسیع بین الاقوامی کوریج کے لیے)، PayPal، Square، Braintree، Authorize.Net، اور Razorpay (ہندوستان)، Paystack (افریقہ)، اور Mercado Pago (لاطینی امریکہ) جیسے مقامی گیٹ ویز شامل ہیں۔"
+      },
+      {
+        "question": "آپ اس بات کو کیسے یقینی بناتے ہیں کہ کریڈٹ کارڈ کا ڈیٹا محفوظ ہے؟",
+        "answer": "ہم آپ کے سرورز پر کبھی بھی خام کریڈٹ کارڈ نمبر محفوظ نہیں کرتے ہیں۔ ہم ٹوکنائزیشن اور میزبان UI فیلڈز کا استعمال کرتے ہیں (جیسے Stripe Elements)۔ گاہک کا براؤزر حساس ڈیٹا کو براہ راست ادائیگی کے گیٹ وے پر بھیجتا ہے، جو آپ کے سسٹم کو PCI کے دائرہ کار سے باہر رکھتے ہوئے، چارج پر کارروائی کرنے کے لیے آپ کے سرور کو ایک محفوظ ٹوکن لوٹاتا ہے۔"
+      },
+      {
+        "question": "کیا آپ سبسکرپشن اور اعادی بلنگ ماڈلز کو مربوط کر سکتے ہیں؟",
+        "answer": "ہاں۔ ہم سٹرائپ بلنگ یا چارج بی جیسی سروسز کا استعمال کرتے ہوئے ٹائرڈ سبسکرپشنز، استعمال پر مبنی بلنگ (میٹرڈ بلنگ)، مفت ٹرائل کنورژنز، اور متناسب اپ گریڈ/ڈاؤن گریڈ سمیت بلنگ کے پیچیدہ ماڈلز نافذ کرتے ہیں۔"
+      },
+      {
+        "question": "اگر کسی صارف کی ادائیگی ناکام ہو جائے یا اس کے کارڈ کی میعاد ختم ہو جائے تو کیا ہوتا ہے؟",
+        "answer": "ہم خودکار ڈننگ مینجمنٹ سسٹم بناتے ہیں۔ اگر ادائیگی ناکام ہو جاتی ہے، تو سسٹم خود بخود گاہک کو ان کی ادائیگی کا طریقہ اپ ڈیٹ کرنے کے لیے ایک محفوظ لنک کے ساتھ ایک دوستانہ ای میل بھیجتا ہے، اور خود بخود پہلے سے طے شدہ شیڈول کے مطابق چارج کی دوبارہ کوشش کرتا ہے۔"
+      },
+      {
+        "question": "کیا آپ Apple Pay یا Crypto جیسے ادائیگی کے متبادل طریقے (APMs) کی حمایت کرتے ہیں؟",
+        "answer": "بالکل۔ ہم ڈیجیٹل بٹوے (Apple Pay، Google Pay)، Buy Now Pay Later کی خدمات (Klarna, Affirm, Afterpay)، بینک ٹرانسفر (ACH, SEPA)، اور یہاں تک کہ Coinbase Commerce یا BitPay کے ذریعے کرپٹو کرنسی کی ادائیگیوں کو فعال کر سکتے ہیں۔"
+      },
+      {
+        "question": "ادائیگی کے گیٹ وے کے انضمام میں کتنا وقت لگتا ہے؟",
+        "answer": "اسٹرائپ یا پے پال چیک آؤٹ کے معیاری انضمام میں لگ بھگ 1 سے 2 ہفتے لگتے ہیں۔ استعمال کی ٹریکنگ، ملٹی کرنسی سپورٹ، اور خودکار ٹیکس کیلکولیشنز (اولارا/سٹرائپ ٹیکس کے ذریعے) کے ساتھ ایک پیچیدہ کسٹم بلنگ سسٹم بنانے میں 4 سے 8 ہفتے لگ سکتے ہیں۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "ما هي بوابات الدفع التي تقوم بدمجها بشكل شائع؟",
+        "answer": "نحن ندمج العشرات من بوابات الدفع على مستوى العالم. تشمل عمليات الدمج الأكثر شيوعًا لدينا Stripe (للتغطية الدولية الواسعة)، و PayPal، و Square، و Braintree، و Authorize.Net، وبوابات الدفع المحلية مثل Razorpay (الهند)، و Paystack (إفريقيا)، و Mercado Pago (أمريكا اللاتينية)."
+      },
+      {
+        "question": "كيف تضمنون أمان بيانات بطاقة الائتمان؟",
+        "answer": "لا نقوم أبدًا بتخزين أرقام بطاقات الائتمان الخام على خوادمك. نحن نستخدم الترميز (tokenization) وحقول واجهة المستخدم المستضافة (مثل Stripe Elements). يرسل متصفح العميل البيانات الحساسة مباشرة إلى بوابة الدفع، والتي تُرجع رمزًا مميزًا آمنًا لخادمك لمعالجة الرسوم، مما يبقي نظامك خارج نطاق متطلبات PCI."
+      },
+      {
+        "question": "هل يمكنك دمج الاشتراكات ونماذج الفوترة المتكررة؟",
+        "answer": "نعم. نقوم بتنفيذ نماذج فوترة معقدة بما في ذلك الاشتراكات المتدرجة، والفوترة القائمة على الاستخدام (الفوترة المحددة)، والتحويلات من النسخة التجريبية المجانية، والترقيات / التخفيضات التناسبية باستخدام خدمات مثل Stripe Billing أو Chargebee."
+      },
+      {
+        "question": "ماذا يحدث إذا فشلت عملية دفع أحد العملاء أو انتهت صلاحية بطاقته؟",
+        "answer": "نحن نبني أنظمة آلية لإدارة المطالبات (Dunning management). إذا فشلت عملية دفع، يرسل النظام تلقائيًا رسالة بريد إلكتروني ودية إلى العميل تحتوي على رابط آمن لتحديث طريقة الدفع الخاصة به، ويعيد تلقائيًا محاولة تحصيل الرسوم في جدول زمني محدد مسبقًا."
+      },
+      {
+        "question": "هل تدعمون طرق الدفع البديلة (APMs) مثل Apple Pay أو العملات المشفرة؟",
+        "answer": "بالتأكيد. يمكننا تمكين المحافظ الرقمية (Apple Pay و Google Pay)، وخدمات الشراء الآن والدفع لاحقًا (Klarna و Affirm و Afterpay)، والتحويلات المصرفية (ACH و SEPA)، وحتى مدفوعات العملات المشفرة عبر Coinbase Commerce أو BitPay."
+      },
+      {
+        "question": "كم من الوقت يستغرق تكامل بوابة الدفع؟",
+        "answer": "يستغرق التكامل القياسي لعملية الدفع مع Stripe أو PayPal من أسبوع إلى أسبوعين. يمكن أن يستغرق بناء نظام فوترة مخصص معقد مع تتبع الاستخدام، ودعم العملات المتعددة، وحسابات الضرائب الآلية (عبر Avalara / Stripe Tax) من 4 إلى 8 أسابيع."
+      }
+    ]
+  },
+  "prototyping-wireframing": {
+    "en": [
+      {
+        "question": "What is the difference between a wireframe and a prototype?",
+        "answer": "A wireframe is a static, low-fidelity blueprint of a digital product, showing the layout, structure, and hierarchy of content without colors or styling. A prototype is a high-fidelity, interactive model that simulates the final user experience, complete with clickable buttons, transitions, and realistic design elements."
+      },
+      {
+        "question": "Why should we prototype before writing code?",
+        "answer": "Prototyping is vastly cheaper than coding. It allows you to test concepts, gather user feedback, and secure stakeholder approval in days rather than months. It prevents the expensive mistake of building a fully-coded product that users ultimately find confusing or unhelpful."
+      },
+      {
+        "question": "What tools do you use for wireframing and prototyping?",
+        "answer": "Figma is our primary tool of choice due to its excellent collaborative features, component libraries, and robust interactive prototyping capabilities. We also use Balsamiq for quick, low-fidelity wireframing and Framer when we need complex, code-like animations."
+      },
+      {
+        "question": "Can I use the prototype to pitch to investors?",
+        "answer": "Absolutely. High-fidelity interactive prototypes look and feel exactly like a real application on a mobile phone or web browser. They are one of the most powerful tools a startup can use to clearly demonstrate their vision and secure seed funding."
+      },
+      {
+        "question": "How long does the prototyping phase usually take?",
+        "answer": "For a standard mobile or web app MVP, the wireframing and high-fidelity prototyping phase generally takes 2 to 4 weeks. This includes several rounds of feedback and iteration to ensure the flow is perfect before development begins."
+      },
+      {
+        "question": "Will the developers be able to use the prototype?",
+        "answer": "Yes. Our Figma prototypes are designed with developers in mind. They act as the single source of truth. Developers can inspect the files to extract CSS values, precise measurements, color hex codes, and export production-ready graphical assets."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Tel çerçeve (wireframe) ile prototip (prototype) arasındaki fark nedir?",
+        "answer": "Tel çerçeve, dijital bir ürünün düzenini, yapısını ve içerik hiyerarşisini renkler veya stiller olmadan gösteren statik, düşük aslına uygunluklu bir taslağıdır. Prototip, tıklanabilir düğmeler, geçişler ve gerçekçi tasarım öğeleriyle tamamlanmış, son kullanıcı deneyimini simüle eden yüksek aslına uygunluklu, etkileşimli bir modeldir."
+      },
+      {
+        "question": "Kod yazmadan önce neden prototip oluşturmalıyız?",
+        "answer": "Prototip oluşturma, kodlamadan çok daha ucuzdur. Konseptleri test etmenize, kullanıcı geri bildirimleri toplamanıza ve aylar yerine günler içinde paydaş onayı almanıza olanak tanır. Kullanıcıların sonuçta kafa karıştırıcı veya yararsız bulduğu tamamen kodlanmış bir ürünü oluşturmanın getireceği pahalı hatayı önler."
+      },
+      {
+        "question": "Tel çerçeveleme ve prototipleme için hangi araçları kullanıyorsunuz?",
+        "answer": "Figma, mükemmel işbirlikçi özellikleri, bileşen kitaplıkları ve sağlam etkileşimli prototipleme yetenekleri nedeniyle birincil tercih ettiğimiz araçtır. Ayrıca hızlı, düşük aslına uygunluklu tel çerçeveleme için Balsamiq'i ve karmaşık, kod benzeri animasyonlara ihtiyacımız olduğunda Framer'ı kullanıyoruz."
+      },
+      {
+        "question": "Prototipi yatırımcılara sunum yapmak için kullanabilir miyim?",
+        "answer": "Kesinlikle. Yüksek aslına uygun etkileşimli prototipler, bir cep telefonu veya web tarayıcısındaki gerçek bir uygulama ile tamamen aynı görünür ve hissettirir. Bir girişimin vizyonunu açıkça göstermek ve tohum yatırım sağlamak için kullanabileceği en güçlü araçlardan biridir."
+      },
+      {
+        "question": "Prototipleme aşaması genellikle ne kadar sürer?",
+        "answer": "Standart bir mobil veya web uygulaması MVP'si için, tel çerçeveleme ve yüksek aslına uygun prototipleme aşaması genellikle 2 ila 4 hafta sürer. Bu, geliştirmeye başlamadan önce akışın mükemmel olmasını sağlamak için birkaç geri bildirim ve yineleme turunu içerir."
+      },
+      {
+        "question": "Geliştiriciler prototipi kullanabilecek mi?",
+        "answer": "Evet. Figma prototiplerimiz geliştiriciler göz önünde bulundurularak tasarlanmıştır. Tek gerçeklik kaynağı olarak hareket ederler. Geliştiriciler; CSS değerlerini, kesin ölçümleri, onaltılık (hex) renk kodlarını çıkarmak ve üretime hazır grafik varlıklarını dışa aktarmak için dosyaları inceleyebilir."
+      }
+    ],
+    "de": [
+      {
+        "question": "Was ist der Unterschied zwischen einem Wireframe und einem Prototyp?",
+        "answer": "Ein Wireframe ist ein statischer, detailarmer (Low-Fidelity) Entwurf eines digitalen Produkts, der das Layout, die Struktur und die Hierarchie von Inhalten ohne Farben oder Styling zeigt. Ein Prototyp ist ein interaktives High-Fidelity-Modell, das die endgültige Benutzererfahrung simuliert, komplett mit klickbaren Schaltflächen, Übergängen und realistischen Designelementen."
+      },
+      {
+        "question": "Warum sollten wir Prototypen erstellen, bevor wir Code schreiben?",
+        "answer": "Prototyping ist weitaus billiger als das Schreiben von Code. Es ermöglicht Ihnen, Konzepte zu testen, Benutzerfeedback zu sammeln und die Genehmigung von Stakeholdern in Tagen statt in Monaten einzuholen. Es verhindert den teuren Fehler, ein vollständig programmiertes Produkt zu entwickeln, das die Benutzer letztendlich als verwirrend oder wenig hilfreich empfinden."
+      },
+      {
+        "question": "Welche Tools verwenden Sie für Wireframing und Prototyping?",
+        "answer": "Figma ist aufgrund seiner hervorragenden kollaborativen Funktionen, Komponentenbibliotheken und robusten interaktiven Prototyping-Funktionen unser primäres Tool der Wahl. Wir verwenden auch Balsamiq für schnelles Low-Fidelity-Wireframing und Framer, wenn wir komplexe, codeähnliche Animationen benötigen."
+      },
+      {
+        "question": "Kann ich den Prototyp verwenden, um Investoren zu überzeugen?",
+        "answer": "Absolut. Interaktive High-Fidelity-Prototypen sehen genauso aus und fühlen sich genauso an wie eine echte Anwendung auf einem Mobiltelefon oder in einem Webbrowser. Sie gehören zu den leistungsfähigsten Instrumenten, die ein Startup nutzen kann, um seine Vision klar zu demonstrieren und eine Anschubfinanzierung zu sichern."
+      },
+      {
+        "question": "Wie lange dauert die Prototyping-Phase in der Regel?",
+        "answer": "Für ein Standard-MVP einer Mobile- oder Web-App dauert die Wireframing- und High-Fidelity-Prototyping-Phase im Allgemeinen 2 bis 4 Wochen. Dies umfasst mehrere Feedback- und Iterationsrunden, um sicherzustellen, dass der Ablauf perfekt ist, bevor die Entwicklung beginnt."
+      },
+      {
+        "question": "Werden die Entwickler den Prototyp nutzen können?",
+        "answer": "Ja. Unsere Figma-Prototypen wurden mit Blick auf Entwickler entwickelt. Sie fungieren als Single Source of Truth. Entwickler können die Dateien untersuchen, um CSS-Werte, genaue Maße und Farb-Hex-Codes zu extrahieren sowie produktionsreife grafische Assets zu exportieren."
+      }
+    ],
+    "ur": [
+      {
+        "question": "وائر فریم اور پروٹو ٹائپ میں کیا فرق ہے؟",
+        "answer": "ایک وائر فریم ڈیجیٹل پروڈکٹ کا جامد، کم مخلصی والا خاکہ ہے، جو رنگوں یا اسٹائل کے بغیر مواد کی ترتیب، ساخت اور درجہ بندی کو ظاہر کرتا ہے۔ ایک پروٹو ٹائپ ایک اعلی مخلص، انٹرایکٹو ماڈل ہے جو صارف کے آخری تجربے کی نقالی کرتا ہے، جو کلک کے قابل بٹنوں، ٹرانزیشنز، اور حقیقت پسندانہ ڈیزائن عناصر کے ساتھ مکمل ہوتا ہے۔"
+      },
+      {
+        "question": "کوڈ لکھنے سے پہلے ہمیں پروٹوٹائپ کیوں بنانا چاہیے؟",
+        "answer": "پروٹو ٹائپنگ کوڈنگ سے کافی سستی ہے۔ یہ آپ کو مہینوں کے بجائے دنوں میں تصورات کی جانچ کرنے، صارف کے تاثرات جمع کرنے، اور اسٹیک ہولڈر کی منظوری کو محفوظ کرنے کی اجازت دیتا ہے۔ یہ ایک مکمل کوڈ شدہ پروڈکٹ بنانے کی مہنگی غلطی کو روکتا ہے جسے صارفین بالآخر الجھا دینے والا یا غیر مددگار پاتے ہیں۔"
+      },
+      {
+        "question": "وائر فریمنگ اور پروٹو ٹائپنگ کے لیے آپ کون سے ٹولز استعمال کرتے ہیں؟",
+        "answer": "اس کی بہترین تعاونی خصوصیات، اجزاء کی لائبریریوں، اور مضبوط انٹرایکٹو پروٹو ٹائپنگ کی صلاحیتوں کی وجہ سے فگما ہماری پسند کا بنیادی ذریعہ ہے۔ جب ہمیں پیچیدہ، کوڈ نما متحرک تصاویر کی ضرورت ہوتی ہے تو ہم فوری، کم مخلصی والی وائر فریمنگ اور فریمر کے لیے بھی Balsamiq استعمال کرتے ہیں۔"
+      },
+      {
+        "question": "کیا میں سرمایہ کاروں کو پچ کرنے کے لیے پروٹو ٹائپ کا استعمال کر سکتا ہوں؟",
+        "answer": "بالکل۔ اعلی مخلصی والے انٹرایکٹو پروٹو ٹائپس بالکل موبائل فون یا ویب براؤزر پر ایک حقیقی ایپلی کیشن کی طرح نظر آتے ہیں اور محسوس کرتے ہیں۔ وہ سب سے طاقتور ٹولز میں سے ایک ہیں جو ایک سٹارٹ اپ اپنے وژن کو واضح طور پر ظاہر کرنے اور بیج کی فنڈنگ ​​کو محفوظ بنانے کے لیے استعمال کر سکتا ہے۔"
+      },
+      {
+        "question": "پروٹو ٹائپنگ کے مرحلے میں عام طور پر کتنا وقت لگتا ہے؟",
+        "answer": "ایک معیاری موبائل یا ویب ایپ MVP کے لیے، وائر فریمنگ اور اعلی مخلصی پروٹو ٹائپنگ کے مرحلے میں عام طور پر 2 سے 4 ہفتے لگتے ہیں۔ اس میں تاثرات اور تکرار کے کئی راؤنڈز شامل ہیں تاکہ یہ یقینی بنایا جا سکے کہ ترقی شروع ہونے سے پہلے بہاؤ بہترین ہے۔"
+      },
+      {
+        "question": "کیا ڈویلپرز پروٹو ٹائپ استعمال کر سکیں گے؟",
+        "answer": "جی ہاں، ہمارے فگما پروٹو ٹائپس ڈویلپرز کو ذہن میں رکھ کر بنائے گئے ہیں۔ وہ سچائی کے واحد ذریعہ کے طور پر کام کرتے ہیں۔ ڈیولپرز CSS ویلیوز، درست پیمائشیں، رنگین ہیکس کوڈز، اور پروڈکشن کے لیے تیار گرافیکل اثاثے برآمد کرنے کے لیے فائلوں کا معائنہ کر سکتے ہیں۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "ما الفرق بين الإطار السلكي (wireframe) والنموذج الأولي (prototype)؟",
+        "answer": "الإطار السلكي هو مخطط هيكلي ثابت ومنخفض الدقة (low-fidelity) لمنتج رقمي، يعرض التخطيط والهيكل والتسلسل الهرمي للمحتوى بدون ألوان أو تنسيق. النموذج الأولي هو نموذج تفاعلي عالي الدقة يحاكي تجربة المستخدم النهائية، ويكتمل بأزرار قابلة للنقر، وانتقالات، وعناصر تصميم واقعية."
+      },
+      {
+        "question": "لماذا يجب علينا إنشاء نموذج أولي قبل كتابة الكود؟",
+        "answer": "النماذج الأولية أرخص بكثير من البرمجة. تتيح لك اختبار المفاهيم وجمع تعليقات المستخدمين وتأمين موافقة أصحاب المصلحة في غضون أيام بدلاً من أشهر. إنها تمنع الخطأ المكلف المتمثل في بناء منتج مبرمج بالكامل يجده المستخدمون في النهاية محيرًا أو غير مفيد."
+      },
+      {
+        "question": "ما هي الأدوات التي تستخدمونها لتصميم الإطارات السلكية والنماذج الأولية؟",
+        "answer": "Figma هي أداتنا الأساسية المفضلة نظرًا لميزاتها التعاونية الممتازة، ومكتبات المكونات، وقدرات النماذج الأولية التفاعلية القوية. نستخدم أيضًا Balsamiq للإطارات السلكية السريعة منخفضة الدقة و Framer عندما نحتاج إلى رسوم متحركة معقدة تشبه الكود."
+      },
+      {
+        "question": "هل يمكنني استخدام النموذج الأولي لتقديم عرض تقديمي (pitch) للمستثمرين؟",
+        "answer": "بالتأكيد. تبدو النماذج الأولية التفاعلية عالية الدقة تمامًا مثل التطبيق الحقيقي على الهاتف المحمول أو متصفح الويب. إنها واحدة من أقوى الأدوات التي يمكن لشركة ناشئة استخدامها لإظهار رؤيتها بوضوح وتأمين التمويل الأولي."
+      },
+      {
+        "question": "ما المدة التي تستغرقها مرحلة النماذج الأولية عادةً؟",
+        "answer": "بالنسبة لمنتج قابل للتطبيق بحد أدنى (MVP) لتطبيق جوال أو تطبيق ويب قياسي، تستغرق مرحلة النماذج الأولية للإطارات السلكية وعالية الدقة عمومًا من أسبوعين إلى 4 أسابيع. يتضمن ذلك جولات متعددة من الملاحظات والتكرار لضمان أن التدفق مثالي قبل بدء التطوير."
+      },
+      {
+        "question": "هل سيتمكن المطورون من استخدام النموذج الأولي؟",
+        "answer": "نعم. تم تصميم نماذج Figma الأولية الخاصة بنا مع وضع المطورين في الاعتبار. إنها تعمل كمصدر وحيد للحقيقة (single source of truth). يمكن للمطورين فحص الملفات لاستخراج قيم CSS، والقياسات الدقيقة، والرموز السداسية للألوان (hex codes)، وتصدير الأصول الرسومية الجاهزة للإنتاج."
+      }
+    ]
+  },
+  "tokenization": {
+    "en": [
+      {
+        "question": "What is tokenization in the context of blockchain?",
+        "answer": "Tokenization is the process of converting the rights to an asset (either a physical asset like real estate or a digital asset like a company's equity) into a digital token on a blockchain. This allows the asset to be easily traded, fractionally owned, and tracked securely."
+      },
+      {
+        "question": "What kind of assets can be tokenized?",
+        "answer": "Almost anything holding value can be tokenized. Common examples include real estate properties, fine art, venture capital funds, corporate equity, carbon credits, commodities (like gold), and intellectual property."
+      },
+      {
+        "question": "What are the benefits of tokenizing real-world assets (RWA)?",
+        "answer": "Tokenization unlocks massive liquidity for traditionally illiquid assets. It enables fractional ownership (allowing retail investors to buy a piece of a $10M building for $1,000), drastically reduces settlement times, and automates compliance and dividend distributions via smart contracts."
+      },
+      {
+        "question": "Are tokenized assets legally compliant?",
+        "answer": "We build compliant tokenization platforms by integrating Identity verification (KYC/AML) directly into the smart contracts. This ensures that security tokens (which represent regulated financial instruments) can only be bought, held, and traded by legally approved investors."
+      },
+      {
+        "question": "Which blockchains do you use for asset tokenization?",
+        "answer": "We select the blockchain based on the asset's regulatory and performance needs. Ethereum and Polygon are common for their deep liquidity and robust DeFi ecosystems. For highly regulated institutional assets, we often utilize specialized or permissioned chains like Avalanche Subnets or Hyperledger Fabric."
+      },
+      {
+        "question": "What happens if I lose access to my wallet holding the tokens?",
+        "answer": "Unlike anonymous cryptocurrencies, security tokens are often designed with recovery functions. Because ownership is mapped to a verified identity, the token issuer (the smart contract administrator) can legally burn the lost tokens and re-mint them to your new, secure wallet address."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Blokzinciri bağlamında tokenizasyon nedir?",
+        "answer": "Tokenizasyon, bir varlığın (gayrimenkul gibi fiziksel bir varlık veya bir şirketin hissesi gibi dijital bir varlık) haklarını bir blokzincirindeki dijital bir tokene dönüştürme sürecidir. Bu, varlığın kolayca alınıp satılmasını, kısmen (fractional) sahip olunmasını ve güvenli bir şekilde izlenmesini sağlar."
+      },
+      {
+        "question": "Ne tür varlıklar tokenize edilebilir?",
+        "answer": "Değeri olan hemen hemen her şey tokenize edilebilir. Yaygın örnekler arasında gayrimenkul mülkleri, güzel sanatlar, risk sermayesi fonları, kurumsal hisse senetleri, karbon kredileri, emtialar (altın gibi) ve fikri mülkiyet bulunur."
+      },
+      {
+        "question": "Gerçek dünya varlıklarını (RWA - Real-World Assets) tokenize etmenin faydaları nelerdir?",
+        "answer": "Tokenizasyon, geleneksel olarak likit olmayan varlıklar için muazzam bir likidite kilidini açar. Kısmi mülkiyete olanak tanır (perakende yatırımcıların 10 milyon dolarlık bir binanın bir parçasını 1.000 dolara satın almasına izin verir), ödeme sürelerini büyük ölçüde azaltır ve akıllı sözleşmeler aracılığıyla uyumluluk ve temettü dağıtımlarını otomatikleştirir."
+      },
+      {
+        "question": "Tokenize edilmiş varlıklar yasal olarak uyumlu mu?",
+        "answer": "Kimlik doğrulamasını (KYC/AML) doğrudan akıllı sözleşmelere entegre ederek uyumlu tokenizasyon platformları oluşturuyoruz. Bu, (düzenlenmiş finansal araçları temsil eden) güvenlik tokenlerinin (security tokens) yalnızca yasal olarak onaylanmış yatırımcılar tarafından satın alınabilmesini, tutulabilmesini ve alınıp satılabilmesini sağlar."
+      },
+      {
+        "question": "Varlık tokenizasyonu için hangi blokzincirlerini kullanıyorsunuz?",
+        "answer": "Blokzincirini varlığın düzenleyici ve performans ihtiyaçlarına göre seçiyoruz. Ethereum ve Polygon, derin likiditeleri ve sağlam DeFi ekosistemleri ile yaygındır. Yüksek düzeyde denetime tabi kurumsal varlıklar için, genellikle Avalanche Subnet'leri veya Hyperledger Fabric gibi özel veya izinli (permissioned) zincirlerden yararlanırız."
+      },
+      {
+        "question": "Tokenleri tutan cüzdanıma erişimimi kaybedersem ne olur?",
+        "answer": "Anonim kripto para birimlerinin aksine, menkul kıymet (security) tokenleri genellikle kurtarma işlevleriyle tasarlanır. Sahiplik doğrulanmış bir kimlikle eşleştiğinden, tokeni çıkaran kişi (akıllı sözleşme yöneticisi) yasal olarak kaybolan tokenleri yakabilir (burn) ve yeni, güvenli cüzdan adresinize yeniden basabilir (mint)."
+      }
+    ],
+    "de": [
+      {
+        "question": "Was ist Tokenisierung im Kontext der Blockchain?",
+        "answer": "Unter Tokenisierung versteht man den Prozess der Umwandlung der Rechte an einem Vermögenswert (entweder einem physischen Vermögenswert wie Immobilien oder einem digitalen Vermögenswert wie dem Eigenkapital eines Unternehmens) in einen digitalen Token auf einer Blockchain. Dadurch kann der Vermögenswert einfach gehandelt, anteilig besessen und sicher verfolgt werden."
+      },
+      {
+        "question": "Welche Art von Vermögenswerten kann tokenisiert werden?",
+        "answer": "Fast alles, was einen Wert hat, kann tokenisiert werden. Häufige Beispiele sind Immobilien, Kunstwerke, Risikokapitalfonds, Unternehmensanteile, Emissionsgutschriften, Rohstoffe (wie Gold) und geistiges Eigentum."
+      },
+      {
+        "question": "Welche Vorteile bietet die Tokenisierung von Real-World Assets (RWA)?",
+        "answer": "Durch die Tokenisierung wird enorme Liquidität für traditionell illiquide Vermögenswerte freigesetzt. Es ermöglicht Teileigentum (sodass Kleinanleger für 1.000 US-Dollar ein Stück eines 10-Millionen-Dollar-Gebäudes kaufen können), verkürzt die Abwicklungszeiten drastisch und automatisiert Compliance und Dividendenausschüttungen über Smart Contracts."
+      },
+      {
+        "question": "Sind tokenisierte Vermögenswerte rechtlich konform?",
+        "answer": "Wir bauen konforme Tokenisierungsplattformen auf, indem wir die Identitätsüberprüfung (KYC/AML) direkt in die Smart Contracts integrieren. Dadurch wird sichergestellt, dass Security Token (die regulierte Finanzinstrumente darstellen) nur von gesetzlich zugelassenen Anlegern gekauft, gehalten und gehandelt werden können."
+      },
+      {
+        "question": "Welche Blockchains nutzen Sie für die Tokenisierung von Assets?",
+        "answer": "Wir wählen die Blockchain basierend auf den regulatorischen und Leistungsanforderungen des Vermögenswerts aus. Ethereum und Polygon sind wegen ihrer hohen Liquidität und robusten DeFi-Ökosysteme beliebt. Für stark regulierte institutionelle Vermögenswerte nutzen wir oft spezialisierte oder zugangsbeschränkte (permissioned) Chains wie Avalanche Subnets oder Hyperledger Fabric."
+      },
+      {
+        "question": "Was passiert, wenn ich den Zugriff auf mein Wallet mit den Token verliere?",
+        "answer": "Im Gegensatz zu anonymen Kryptowährungen sind Security Token oft mit Wiederherstellungsfunktionen ausgestattet. Da das Eigentum einer verifizierten Identität zugeordnet ist, kann der Token-Aussteller (der Smart Contract-Administrator) die verlorenen Token legal verbrennen (burn) und an Ihre neue, sichere Wallet-Adresse neu prägen (mint)."
+      }
+    ],
+    "ur": [
+      {
+        "question": "بلاک چین کے تناظر میں ٹوکنائزیشن کیا ہے؟",
+        "answer": "ٹوکنائزیشن کسی اثاثے کے حقوق (یا تو رئیل اسٹیٹ جیسا جسمانی اثاثہ یا کمپنی کی ایکویٹی جیسا ڈیجیٹل اثاثہ) کو بلاک چین پر ڈیجیٹل ٹوکن میں تبدیل کرنے کا عمل ہے۔ یہ اثاثے کو آسانی سے تجارت کرنے، جزوی ملکیت میں رکھنے، اور محفوظ طریقے سے ٹریک کرنے کی اجازت دیتا ہے۔"
+      },
+      {
+        "question": "کس قسم کے اثاثوں کو ٹوکنائز کیا جا سکتا ہے؟",
+        "answer": "تقریباً کسی بھی چیز کی قیمت رکھنے والے کو ٹوکنائز کیا جا سکتا ہے۔ عام مثالوں میں رئیل اسٹیٹ کی خصوصیات، فائن آرٹ، وینچر کیپیٹل فنڈز، کارپوریٹ ایکویٹی، کاربن کریڈٹس، اشیاء (جیسے سونا)، اور دانشورانہ املاک شامل ہیں۔"
+      },
+      {
+        "question": "حقیقی دنیا کے اثاثوں (RWA) کو ٹوکنائز کرنے کے کیا فوائد ہیں؟",
+        "answer": "ٹوکنائزیشن روایتی طور پر غیر قانونی اثاثوں کے لیے بڑے پیمانے پر لیکویڈیٹی کو کھولتی ہے۔ یہ جزوی ملکیت کو قابل بناتا ہے (خوردہ سرمایہ کاروں کو $10M کی عمارت کا ایک ٹکڑا $1,000 میں خریدنے کی اجازت دیتا ہے)، تصفیہ کے اوقات کو کافی حد تک کم کرتا ہے، اور اسمارٹ کنٹریکٹس کے ذریعے تعمیل اور منافع کی تقسیم کو خودکار کرتا ہے۔"
+      },
+      {
+        "question": "کیا ٹوکنائزڈ اثاثے قانونی طور پر مطابقت رکھتے ہیں؟",
+        "answer": "ہم اسمارٹ کنٹریکٹس میں شناخت کی تصدیق (KYC/AML) کو براہ راست ضم کر کے تعمیل ٹوکنائزیشن پلیٹ فارم بناتے ہیں۔ اس سے یہ یقینی بنتا ہے کہ سیکیورٹی ٹوکن (جو کہ ریگولیٹڈ مالیاتی آلات کی نمائندگی کرتے ہیں) صرف قانونی طور پر منظور شدہ سرمایہ کار خرید سکتے ہیں، رکھ سکتے ہیں اور ان کی تجارت کر سکتے ہیں۔"
+      },
+      {
+        "question": "آپ اثاثہ ٹوکنائزیشن کے لیے کون سے بلاک چین استعمال کرتے ہیں؟",
+        "answer": "ہم اثاثے کی ریگولیٹری اور کارکردگی کی ضروریات کی بنیاد پر بلاک چین کا انتخاب کرتے ہیں۔ ایتھریم اور کثیر الاضلاع ان کی گہری لیکویڈیٹی اور مضبوط DeFi ماحولیاتی نظام کے لیے عام ہیں۔ انتہائی منظم ادارہ جاتی اثاثوں کے لیے، ہم اکثر ایولینچ سبنیٹس یا ہائپرلیجر فیبرک جیسی خصوصی یا اجازت یافتہ زنجیروں کا استعمال کرتے ہیں۔"
+      },
+      {
+        "question": "اگر میں ٹوکنز رکھنے والے اپنے بٹوے تک رسائی کھو دوں تو کیا ہوگا؟",
+        "answer": "گمنام کرپٹو کرنسیوں کے برعکس، سیکیورٹی ٹوکن اکثر بازیافت کے افعال کے ساتھ ڈیزائن کیے جاتے ہیں۔ چونکہ ملکیت کو ایک تصدیق شدہ شناخت کا نقشہ بنایا گیا ہے، ٹوکن جاری کنندہ (اسمارٹ کنٹریکٹ ایڈمنسٹریٹر) قانونی طور پر کھوئے ہوئے ٹوکنز کو جلا سکتا ہے اور انہیں آپ کے نئے، محفوظ بٹوے کے پتے پر دوبارہ بھیج سکتا ہے۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "ما هي الترميز (tokenization) في سياق البلوكتشين؟",
+        "answer": "الترميز هو عملية تحويل الحقوق إلى أصل (إما أصل مادي مثل العقارات أو أصل رقمي مثل أسهم الشركة) إلى رمز رقمي (token) على البلوكتشين. يسمح هذا بتداول الأصل بسهولة، وامتلاكه بشكل جزئي (fractionally)، وتتبعه بأمان."
+      },
+      {
+        "question": "ما نوع الأصول التي يمكن ترميزها؟",
+        "answer": "يمكن ترميز أي شيء تقريبًا يحمل قيمة. تشمل الأمثلة الشائعة العقارات، والفنون الجميلة، وصناديق رأس المال الاستثماري، وأسهم الشركات، وأرصدة الكربون (carbon credits)، والسلع (مثل الذهب)، والملكية الفكرية."
+      },
+      {
+        "question": "ما هي فوائد ترميز أصول العالم الحقيقي (RWA)؟",
+        "answer": "تفتح عملية الترميز سيولة هائلة للأصول غير السائلة (illiquid) تقليديًا. إنها تتيح الملكية الجزئية (مما يسمح للمستثمرين الأفراد بشراء جزء من مبنى بقيمة 10 ملايين دولار مقابل 1000 دولار)، وتقلل بشكل كبير من أوقات التسوية، وتؤتمت الامتثال وتوزيعات الأرباح عبر العقود الذكية."
+      },
+      {
+        "question": "هل الأصول المرمزة متوافقة قانونيًا؟",
+        "answer": "نحن نبني منصات ترميز متوافقة من خلال دمج التحقق من الهوية (KYC/AML) مباشرة في العقود الذكية. يضمن ذلك أن رموز الأمان (security tokens - التي تمثل أدوات مالية منظمة) لا يمكن شراؤها أو الاحتفاظ بها أو تداولها إلا من قبل مستثمرين معتمدين قانونيًا."
+      },
+      {
+        "question": "ما هي شبكات البلوكتشين التي تستخدمونها لترميز الأصول؟",
+        "answer": "نختار البلوكتشين بناءً على الاحتياجات التنظيمية ومتطلبات الأداء للأصل. يعد Ethereum و Polygon شائعين نظرًا لسيولتهما العميقة وأنظمتهما البيئية القوية لـ DeFi. بالنسبة للأصول المؤسسية شديدة التنظيم، غالبًا ما نستخدم شبكات متخصصة أو مرخصة (permissioned) مثل شبكات Avalanche Subnets أو Hyperledger Fabric."
+      },
+      {
+        "question": "ماذا يحدث إذا فقدت الوصول إلى محفظتي التي تحتوي على الرموز المميزة (tokens)؟",
+        "answer": "على عكس العملات المشفرة المجهولة، غالبًا ما يتم تصميم رموز الأمان بوظائف استرداد. نظرًا لأن الملكية مرتبطة بهوية تم التحقق منها، يمكن لمصدر الرمز (مسؤول العقد الذكي) حرق (burn) الرموز المفقودة قانونيًا وإعادة سكها (re-mint) إلى عنوان محفظتك الجديد والآمن."
+      }
+    ]
+  }
+}

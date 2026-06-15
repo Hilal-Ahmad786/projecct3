@@ -142,11 +142,13 @@ export default function BlogPage() {
   const fetchPosts = async (page: number = 1) => {
     setLoading(true);
     try {
-      const res = await fetch(`/api/blog/posts?page=${page}&limit=9&locale=${locale}`);
+      // Home/general blog shows only company-wide ('general') posts —
+      // service-specific articles live on their own service blog pages.
+      const res = await fetch(`/api/blog/posts?page=${page}&limit=9&locale=${locale}&category=general`);
       const data = await res.json();
       if (data.success) {
-        setPosts(data.data);
-        setPagination(data.pagination);
+        setPosts(Array.isArray(data.data) ? data.data : []);
+        if (data.pagination) setPagination(data.pagination);
       }
     } catch (error) {
       console.error('Error fetching posts:', error);
@@ -163,7 +165,7 @@ export default function BlogPage() {
     if (locale === 'en') {
       return { title: post.title, excerpt: post.excerpt };
     }
-    const translation = post.translations.find(t => t.locale === locale);
+    const translation = post.translations?.find(t => t.locale === locale);
     if (translation) {
       return { title: translation.title, excerpt: translation.excerpt };
     }
@@ -226,7 +228,7 @@ export default function BlogPage() {
                             />
                           ) : (
                             <div className="absolute inset-0 flex items-center justify-center text-white/30 text-7xl font-bold">
-                              {content.title.charAt(0)}
+                              {(content.title || '?').charAt(0)}
                             </div>
                           )}
                           {post.featured && (
@@ -265,9 +267,9 @@ export default function BlogPage() {
                         )}
 
                         {/* Tags */}
-                        {post.tags.length > 0 && (
+                        {(post.tags?.length ?? 0) > 0 && (
                           <div className="flex flex-wrap gap-2 mb-4">
-                            {post.tags.slice(0, 3).map((tag, idx) => (
+                            {(post.tags ?? []).slice(0, 3).map((tag, idx) => (
                               <span key={idx} className="text-xs text-gray-500">
                                 #{tag}
                               </span>

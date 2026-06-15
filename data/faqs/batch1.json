@@ -1,0 +1,662 @@
+{
+  "unreal-engine-development": {
+    "en": [
+      {
+        "question": "What is the typical timeline for an Unreal Engine 5 project?",
+        "answer": "A standard architectural visualization or interactive presentation can take 4 to 8 weeks, while complex multiplayer games or large-scale digital twins can take 6 months to over a year. The timeline depends heavily on asset creation requirements, gameplay mechanics, and optimization targets."
+      },
+      {
+        "question": "How much does a custom Unreal Engine application cost?",
+        "answer": "Pricing starts around $15,000 for basic visualizers and can scale up to $150,000+ for enterprise-grade simulations or full-scale games. The cost is determined by the need for custom 3D modeling, animation complexity, backend server architecture, and specific platform deployments."
+      },
+      {
+        "question": "Who owns the intellectual property and source code after completion?",
+        "answer": "Upon final payment, you will receive full ownership of the intellectual property, including the Unreal Engine project files, custom blueprints, C++ code, and unique 3D assets we create for you. We provide a complete handover document ensuring you have total control."
+      },
+      {
+        "question": "Can you integrate Unreal Engine projects with existing backend systems?",
+        "answer": "Yes, we frequently integrate Unreal Engine applications with REST APIs, websockets, and databases to fetch real-time data, manage user authentication, or sync with e-commerce systems. We use standard protocols to ensure secure and low-latency communication."
+      },
+      {
+        "question": "Do you provide maintenance and post-launch support?",
+        "answer": "We offer dedicated post-launch support contracts that cover engine updates, bug fixing, server maintenance for multiplayer projects, and performance optimizations for new hardware. Maintenance agreements are typically structured as monthly retainers tailored to your needs."
+      },
+      {
+        "question": "How do you ensure the application performs well on lower-end devices?",
+        "answer": "We employ rigorous optimization techniques, including Level of Detail (LOD) management, texture compression, occlusion culling, and efficient Blueprint architecture. We profile the application continuously during development to maintain target framerates across specified hardware tiers."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Bir Unreal Engine 5 projesinin tipik zaman çizelgesi nedir?",
+        "answer": "Standart bir mimari görselleştirme veya etkileşimli sunum 4 ila 8 hafta sürerken, karmaşık çok oyunculu oyunlar veya büyük ölçekli dijital ikizler 6 aydan bir yıldan fazlasına kadar sürebilir. Zaman çizelgesi, varlık oluşturma gereksinimlerine, oyun mekaniklerine ve optimizasyon hedeflerine büyük ölçüde bağlıdır."
+      },
+      {
+        "question": "Özel bir Unreal Engine uygulamasının maliyeti ne kadardır?",
+        "answer": "Fiyatlandırma, temel görselleştiriciler için yaklaşık 15.000$'dan başlar ve kurumsal düzeyde simülasyonlar veya tam ölçekli oyunlar için 150.000$+ seviyesine çıkabilir. Maliyet; özel 3B modelleme, animasyon karmaşıklığı, arka uç sunucu mimarisi ve belirli platform dağıtımlarına olan ihtiyaca göre belirlenir."
+      },
+      {
+        "question": "Tamamlandıktan sonra fikri mülkiyetin ve kaynak kodunun sahibi kim olur?",
+        "answer": "Son ödemenin ardından, Unreal Engine proje dosyaları, özel planlar, C++ kodu ve sizin için oluşturduğumuz benzersiz 3B varlıklar da dahil olmak üzere fikri mülkiyetin tam mülkiyetini alacaksınız. Tam kontrole sahip olmanızı sağlayan eksiksiz bir teslim belgesi sağlıyoruz."
+      },
+      {
+        "question": "Unreal Engine projelerini mevcut arka uç sistemleriyle entegre edebilir misiniz?",
+        "answer": "Evet, gerçek zamanlı verileri almak, kullanıcı kimlik doğrulamasını yönetmek veya e-ticaret sistemleriyle senkronize olmak için Unreal Engine uygulamalarını sık sık REST API'leri, websocket'ler ve veritabanlarıyla entegre ediyoruz. Güvenli ve düşük gecikmeli iletişim sağlamak için standart protokoller kullanıyoruz."
+      },
+      {
+        "question": "Lansman sonrası bakım ve destek sağlıyor musunuz?",
+        "answer": "Motor güncellemelerini, hata düzeltmelerini, çok oyunculu projeler için sunucu bakımını ve yeni donanımlar için performans optimizasyonlarını kapsayan özel lansman sonrası destek sözleşmeleri sunuyoruz. Bakım sözleşmeleri genellikle ihtiyaçlarınıza göre uyarlanmış aylık ücretler olarak yapılandırılır."
+      },
+      {
+        "question": "Uygulamanın alt uç cihazlarda iyi performans göstermesini nasıl sağlıyorsunuz?",
+        "answer": "Detay Seviyesi (LOD) yönetimi, doku sıkıştırma, tıkanıklık ayırma ve verimli Blueprint mimarisi gibi titiz optimizasyon teknikleri uyguluyoruz. Belirtilen donanım katmanlarında hedef kare hızlarını korumak için geliştirme sırasında uygulamayı sürekli olarak profilliyoruz."
+      }
+    ],
+    "de": [
+      {
+        "question": "Wie sieht der typische Zeitplan für ein Unreal Engine 5-Projekt aus?",
+        "answer": "Eine standardmäßige Architekturvisualisierung oder interaktive Präsentation kann 4 bis 8 Wochen in Anspruch nehmen, während komplexe Multiplayer-Spiele oder groß angelegte digitale Zwillinge 6 Monate bis über ein Jahr dauern können. Der Zeitplan hängt stark von den Anforderungen an die Asset-Erstellung, den Gameplay-Mechaniken und den Optimierungszielen ab."
+      },
+      {
+        "question": "Wie viel kostet eine maßgeschneiderte Unreal Engine-Anwendung?",
+        "answer": "Die Preise beginnen bei etwa 15.000 US-Dollar für grundlegende Visualisierer und können für unternehmenstaugliche Simulationen oder vollwertige Spiele auf über 150.000 US-Dollar ansteigen. Die Kosten werden durch den Bedarf an benutzerdefinierter 3D-Modellierung, Animationskomplexität, Backend-Serverarchitektur und spezifischen Plattformbereitstellungen bestimmt."
+      },
+      {
+        "question": "Wem gehört das geistige Eigentum und der Quellcode nach Abschluss?",
+        "answer": "Nach der Schlusszahlung erhalten Sie das vollständige Eigentum am geistigen Eigentum, einschließlich der Unreal Engine-Projektdateien, benutzerdefinierten Blueprints, C++-Code und einzigartigen 3D-Assets, die wir für Sie erstellen. Wir stellen ein vollständiges Übergabedokument zur Verfügung, das sicherstellt, dass Sie die volle Kontrolle haben."
+      },
+      {
+        "question": "Können Sie Unreal Engine-Projekte in bestehende Backend-Systeme integrieren?",
+        "answer": "Ja, wir integrieren häufig Unreal Engine-Anwendungen mit REST-APIs, WebSockets und Datenbanken, um Echtzeitdaten abzurufen, die Benutzerauthentifizierung zu verwalten oder mit E-Commerce-Systemen zu synchronisieren. Wir verwenden Standardprotokolle, um eine sichere Kommunikation mit geringer Latenz zu gewährleisten."
+      },
+      {
+        "question": "Bieten Sie Wartung und Support nach dem Start an?",
+        "answer": "Wir bieten spezielle Supportverträge nach dem Start an, die Engine-Updates, Fehlerbehebungen, Serverwartung für Multiplayer-Projekte und Leistungsoptimierungen für neue Hardware abdecken. Wartungsverträge sind in der Regel als monatliche Pauschalen strukturiert, die auf Ihre Bedürfnisse zugeschnitten sind."
+      },
+      {
+        "question": "Wie stellen Sie sicher, dass die Anwendung auf leistungsschwächeren Geräten gut funktioniert?",
+        "answer": "Wir setzen strenge Optimierungstechniken ein, einschließlich Detailgrad-Management (LOD), Texturkomprimierung, Occlusion Culling und effizienter Blueprint-Architektur. Wir profilieren die Anwendung während der Entwicklung kontinuierlich, um die Ziel-Frameraten auf den angegebenen Hardware-Ebenen aufrechtzuerhalten."
+      }
+    ],
+    "ur": [
+      {
+        "question": "Unreal Engine 5 پروجیکٹ کے لیے عام ٹائم لائن کیا ہے؟",
+        "answer": "ایک معیاری آرکیٹیکچرل ویژولائزیشن یا انٹرایکٹو پریزنٹیشن میں 4 سے 8 ہفتے لگ سکتے ہیں، جبکہ پیچیدہ ملٹی پلیئر گیمز یا بڑے پیمانے پر ڈیجیٹل ٹوئنز میں 6 ماہ سے لے کر ایک سال سے زیادہ کا وقت لگ سکتا ہے۔ ٹائم لائن کا انحصار اثاثہ جات کی تخلیق کی ضروریات، گیم پلے میکینکس، اور اصلاح کے اہداف پر ہوتا ہے۔"
+      },
+      {
+        "question": "ایک کسٹم Unreal Engine ایپلیکیشن کی قیمت کتنی ہے؟",
+        "answer": "قیمتوں کا آغاز بنیادی ویژولائزرز کے لیے تقریباً $15,000 سے ہوتا ہے اور انٹرپرائز گریڈ سمیلیشنز یا مکمل گیمز کے لیے $150,000+ تک جا سکتا ہے۔ لاگت کا تعین کسٹم 3D ماڈلنگ، اینیمیشن کی پیچیدگی، بیک اینڈ سرور آرکیٹیکچر، اور مخصوص پلیٹ فارم کی تعیناتیوں کی ضرورت سے ہوتا ہے۔"
+      },
+      {
+        "question": "تکمیل کے بعد انٹلیکچوئل پراپرٹی اور سورس کوڈ کا مالک کون ہے؟",
+        "answer": "حتمی ادائیگی پر، آپ کو انٹلیکچوئل پراپرٹی کی مکمل ملکیت مل جائے گی، بشمول Unreal Engine پروجیکٹ فائلز، کسٹم بلیو پرنٹس، C++ کوڈ، اور منفرد 3D اثاثے جو ہم آپ کے لیے بناتے ہیں۔ ہم ایک مکمل ہینڈ اوور دستاویز فراہم کرتے ہیں جو اس بات کو یقینی بناتی ہے کہ آپ کا مکمل کنٹرول ہے۔"
+      },
+      {
+        "question": "کیا آپ Unreal Engine پروجیکٹس کو موجودہ بیک اینڈ سسٹمز کے ساتھ مربوط کر سکتے ہیں؟",
+        "answer": "ہاں، ہم اکثر ریئل ٹائم ڈیٹا حاصل کرنے، صارف کی توثیق کو منظم کرنے، یا ای کامرس سسٹمز کے ساتھ ہم آہنگ کرنے کے لیے Unreal Engine ایپلیکیشنز کو REST APIs، websockets، اور ڈیٹا بیسز کے ساتھ مربوط کرتے ہیں۔ ہم محفوظ اور کم تاخیر والے مواصلات کو یقینی بنانے کے لیے معیاری پروٹوکول استعمال کرتے ہیں۔"
+      },
+      {
+        "question": "کیا آپ لانچ کے بعد دیکھ بھال اور تعاون فراہم کرتے ہیں؟",
+        "answer": "ہم لانچ کے بعد سرشار سپورٹ معاہدے پیش کرتے ہیں جن میں انجن اپ ڈیٹس، بگ فکسنگ، ملٹی پلیئر پروجیکٹس کے لیے سرور کی دیکھ بھال، اور نئے ہارڈ ویئر کے لیے کارکردگی کی اصلاح شامل ہے۔ دیکھ بھال کے معاہدے عام طور پر آپ کی ضروریات کے مطابق ماہانہ ریٹینر کے طور پر تشکیل دیے جاتے ہیں۔"
+      },
+      {
+        "question": "آپ یہ کیسے یقینی بناتے ہیں کہ ایپلیکیشن کم درجے کے آلات پر اچھی کارکردگی دکھائے؟",
+        "answer": "ہم سخت اصلاحی تکنیکوں کا استعمال کرتے ہیں، بشمول لیول آف ڈیٹیل (LOD) مینجمنٹ، ٹیکسچر کمپریشن، اوکلوژن کلنگ، اور موثر بلیو پرنٹ آرکیٹیکچر۔ مخصوص ہارڈ ویئر ٹائرز پر ہدف فریم ریٹس کو برقرار رکھنے کے لیے ہم ترقی کے دوران ایپلیکیشن کو مسلسل پروفائل کرتے ہیں۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "ما هو الإطار الزمني المعتاد لمشروع Unreal Engine 5؟",
+        "answer": "يمكن أن يستغرق التصور المعماري القياسي أو العرض التقديمي التفاعلي من 4 إلى 8 أسابيع، بينما يمكن أن تستغرق الألعاب متعددة اللاعبين المعقدة أو التوائم الرقمية واسعة النطاق من 6 أشهر إلى أكثر من عام. يعتمد الإطار الزمني بشكل كبير على متطلبات إنشاء الأصول وميكانيكا اللعب وأهداف التحسين."
+      },
+      {
+        "question": "كم تبلغ تكلفة تطبيق Unreal Engine مخصص؟",
+        "answer": "تبدأ الأسعار من حوالي 15000 دولار لأدوات التصور الأساسية ويمكن أن تصل إلى 150000 دولار وأكثر لعمليات المحاكاة على مستوى المؤسسات أو الألعاب كاملة النطاق. يتم تحديد التكلفة من خلال الحاجة إلى النمذجة ثلاثية الأبعاد المخصصة وتعقيد الرسوم المتحركة وبنية الخادم الخلفية وعمليات نشر المنصات المحددة."
+      },
+      {
+        "question": "من يمتلك الملكية الفكرية والكود المصدري بعد الانتهاء؟",
+        "answer": "عند الدفع النهائي، ستحصل على الملكية الكاملة للملكية الفكرية، بما في ذلك ملفات مشروع Unreal Engine، والمخططات المخصصة، وكود C++، والأصول ثلاثية الأبعاد الفريدة التي ننشئها لك. نقدم مستند تسليم كامل يضمن حصولك على السيطرة التامة."
+      },
+      {
+        "question": "هل يمكنك دمج مشاريع Unreal Engine مع أنظمة الواجهة الخلفية الحالية؟",
+        "answer": "نعم، نقوم بشكل متكرر بدمج تطبيقات Unreal Engine مع واجهات برمجة التطبيقات (REST APIs) ومآخذ الويب (websockets) وقواعد البيانات لجلب البيانات في الوقت الفعلي أو إدارة مصادقة المستخدم أو المزامنة مع أنظمة التجارة الإلكترونية. نستخدم بروتوكولات قياسية لضمان اتصال آمن ومنخفض الكمون."
+      },
+      {
+        "question": "هل تقدمون الصيانة والدعم بعد الإطلاق؟",
+        "answer": "نقدم عقود دعم مخصصة لما بعد الإطلاق تغطي تحديثات المحرك وإصلاح الأخطاء وصيانة الخادم لمشاريع اللاعبين المتعددين وتحسينات الأداء للأجهزة الجديدة. يتم تنظيم اتفاقيات الصيانة عادةً كرسوم شهرية مخصصة لتناسب احتياجاتك."
+      },
+      {
+        "question": "كيف تضمنون أداء التطبيق بشكل جيد على الأجهزة ذات المواصفات المنخفضة؟",
+        "answer": "نستخدم تقنيات تحسين صارمة، بما في ذلك إدارة مستوى التفاصيل (LOD) وضغط النسيج وإعدام الانسداد وبنية Blueprint الفعالة. نقوم بإنشاء ملف تعريف للتطبيق باستمرار أثناء التطوير للحفاظ على معدلات الإطارات المستهدفة عبر مستويات الأجهزة المحددة."
+      }
+    ]
+  },
+  "booking-reservation-systems": {
+    "en": [
+      {
+        "question": "How long does it take to build a custom booking system?",
+        "answer": "A custom booking system typically takes 6 to 12 weeks to develop. The timeline depends on the complexity of features like multi-location support, custom payment flows, and integrations with third-party software like CRM or accounting tools."
+      },
+      {
+        "question": "What is the general cost range for a reservation platform?",
+        "answer": "Developing a bespoke reservation platform generally starts at $12,000 for standard functionality. Complex enterprise platforms that require load balancing, custom vendor portals, or dynamic pricing algorithms can range from $30,000 to $60,000+."
+      },
+      {
+        "question": "Can the system handle dynamic pricing during peak hours?",
+        "answer": "Absolutely. We can implement complex pricing algorithms that automatically adjust rates based on demand, time of day, seasonality, or resource availability, maximizing your revenue without manual intervention."
+      },
+      {
+        "question": "Is the reservation system compliant with data privacy laws?",
+        "answer": "Yes, we build systems that strictly comply with GDPR, CCPA, and industry-specific regulations like HIPAA for medical clinics. We ensure that customer data is encrypted at rest and in transit, with secure access controls."
+      },
+      {
+        "question": "Do you provide hosting and ongoing technical maintenance?",
+        "answer": "We offer complete cloud hosting solutions using AWS or Vercel, paired with SLA-backed maintenance plans. This ensures your booking system remains highly available, secure, and up-to-date with the latest software patches."
+      },
+      {
+        "question": "How do you handle automated customer notifications?",
+        "answer": "We integrate scalable communication APIs like Twilio for SMS and SendGrid for emails. This enables automated booking confirmations, reminders, and follow-up surveys to reduce no-shows and improve customer satisfaction."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Özel bir rezervasyon sistemi kurmak ne kadar sürer?",
+        "answer": "Özel bir rezervasyon sisteminin geliştirilmesi genellikle 6 ila 12 hafta sürer. Zaman çizelgesi, çoklu konum desteği, özel ödeme akışları ve CRM veya muhasebe araçları gibi üçüncü taraf yazılımlarla entegrasyonlar gibi özelliklerin karmaşıklığına bağlıdır."
+      },
+      {
+        "question": "Bir rezervasyon platformu için genel maliyet aralığı nedir?",
+        "answer": "Özel yapım bir rezervasyon platformu geliştirmek, standart işlevsellik için genellikle 12.000$'dan başlar. Yük dengeleme, özel satıcı portalları veya dinamik fiyatlandırma algoritmaları gerektiren karmaşık kurumsal platformlar 30.000$ ile 60.000$+ arasında değişebilir."
+      },
+      {
+        "question": "Sistem yoğun saatlerde dinamik fiyatlandırmayı idare edebilir mi?",
+        "answer": "Kesinlikle. Talep, günün saati, mevsimsellik veya kaynak kullanılabilirliğine göre oranları otomatik olarak ayarlayan karmaşık fiyatlandırma algoritmaları uygulayarak manuel müdahale olmadan gelirinizi en üst düzeye çıkarabiliriz."
+      },
+      {
+        "question": "Rezervasyon sistemi veri gizliliği yasalarına uygun mu?",
+        "answer": "Evet, GDPR, CCPA ve tıbbi klinikler için HIPAA gibi sektöre özgü düzenlemelere sıkı sıkıya uyan sistemler kuruyoruz. Müşteri verilerinin, güvenli erişim kontrolleriyle hem beklemede hem de aktarım sırasında şifrelendiğinden emin oluyoruz."
+      },
+      {
+        "question": "Barındırma ve devam eden teknik bakım sağlıyor musunuz?",
+        "answer": "SLA destekli bakım planlarıyla eşleştirilmiş AWS veya Vercel kullanan eksiksiz bulut barındırma çözümleri sunuyoruz. Bu, rezervasyon sisteminizin son derece erişilebilir, güvenli ve en son yazılım yamalarıyla güncel kalmasını sağlar."
+      },
+      {
+        "question": "Otomatik müşteri bildirimlerini nasıl yönetiyorsunuz?",
+        "answer": "SMS için Twilio ve e-postalar için SendGrid gibi ölçeklenebilir iletişim API'lerini entegre ediyoruz. Bu, gelmeyenleri azaltmak ve müşteri memnuniyetini artırmak için otomatik rezervasyon onayları, hatırlatıcılar ve takip anketleri sağlar."
+      }
+    ],
+    "de": [
+      {
+        "question": "Wie lange dauert der Aufbau eines benutzerdefinierten Buchungssystems?",
+        "answer": "Die Entwicklung eines benutzerdefinierten Buchungssystems dauert in der Regel 6 bis 12 Wochen. Der Zeitplan hängt von der Komplexität von Funktionen wie Unterstützung für mehrere Standorte, benutzerdefinierten Zahlungsabläufen und Integrationen mit Drittanbietersoftware wie CRM- oder Buchhaltungstools ab."
+      },
+      {
+        "question": "Wie hoch ist die allgemeine Preisspanne für eine Reservierungsplattform?",
+        "answer": "Die Entwicklung einer maßgeschneiderten Reservierungsplattform beginnt in der Regel bei 12.000 US-Dollar für Standardfunktionen. Komplexe Unternehmensplattformen, die Lastausgleich, benutzerdefinierte Anbieterportale oder dynamische Preisalgorithmen erfordern, können zwischen 30.000 und über 60.000 US-Dollar liegen."
+      },
+      {
+        "question": "Kann das System dynamische Preise zu Spitzenzeiten verarbeiten?",
+        "answer": "Absolut. Wir können komplexe Preisalgorithmen implementieren, die die Raten automatisch basierend auf Nachfrage, Tageszeit, Saisonalität oder Ressourcenverfügbarkeit anpassen und so Ihren Umsatz ohne manuelles Eingreifen maximieren."
+      },
+      {
+        "question": "Entspricht das Reservierungssystem den Datenschutzgesetzen?",
+        "answer": "Ja, wir entwickeln Systeme, die DSGVO, CCPA und branchenspezifische Vorschriften wie HIPAA für medizinische Kliniken strikt einhalten. Wir stellen sicher, dass Kundendaten im Ruhezustand und bei der Übertragung verschlüsselt werden und über sichere Zugriffskontrollen verfügen."
+      },
+      {
+        "question": "Bieten Sie Hosting und laufende technische Wartung an?",
+        "answer": "Wir bieten komplette Cloud-Hosting-Lösungen mit AWS oder Vercel, kombiniert mit SLA-gestützten Wartungsplänen. Dadurch wird sichergestellt, dass Ihr Buchungssystem hochverfügbar, sicher und mit den neuesten Software-Patches auf dem neuesten Stand bleibt."
+      },
+      {
+        "question": "Wie gehen Sie mit automatisierten Kundenbenachrichtigungen um?",
+        "answer": "Wir integrieren skalierbare Kommunikations-APIs wie Twilio für SMS und SendGrid für E-Mails. Dies ermöglicht automatisierte Buchungsbestätigungen, Erinnerungen und Folgeumfragen, um Nichterscheinen zu reduzieren und die Kundenzufriedenheit zu verbessern."
+      }
+    ],
+    "ur": [
+      {
+        "question": "اپنی مرضی کے مطابق بکنگ سسٹم بنانے میں کتنا وقت لگتا ہے؟",
+        "answer": "اپنی مرضی کے مطابق بکنگ سسٹم تیار کرنے میں عام طور پر 6 سے 12 ہفتے لگتے ہیں۔ ٹائم لائن خصوصیات کی پیچیدگی پر منحصر ہے جیسے کہ ملٹی لوکیشن سپورٹ، کسٹم پیمنٹ فلو، اور تھرڈ پارٹی سافٹ ویئر جیسے CRM یا اکاؤنٹنگ ٹولز کے ساتھ انضمام۔"
+      },
+      {
+        "question": "ریزرویشن پلیٹ فارم کے لیے قیمت کی عمومی حد کیا ہے؟",
+        "answer": "بیسپوک ریزرویشن پلیٹ فارم تیار کرنا عام طور پر معیاری فعالیت کے لیے $12,000 سے شروع ہوتا ہے۔ پیچیدہ انٹرپرائز پلیٹ فارمز جن میں لوڈ بیلنسنگ، کسٹم وینڈر پورٹلز، یا ڈائنامک پرائسنگ الگورتھم کی ضرورت ہوتی ہے، ان کی قیمت $30,000 سے $60,000+ تک ہو سکتی ہے۔"
+      },
+      {
+        "question": "کیا سسٹم چوٹی کے اوقات میں متحرک قیمتوں کا تعین کر سکتا ہے؟",
+        "answer": "بالکل۔ ہم پیچیدہ پرائسنگ الگورتھم لاگو کر سکتے ہیں جو طلب، دن کے وقت، موسم، یا وسائل کی دستیابی کی بنیاد پر خود بخود نرخوں کو ایڈجسٹ کرتے ہیں، دستی مداخلت کے بغیر آپ کی آمدنی کو زیادہ سے زیادہ کرتے ہیں۔"
+      },
+      {
+        "question": "کیا ریزرویشن سسٹم ڈیٹا پرائیویسی کے قوانین کے مطابق ہے؟",
+        "answer": "ہاں، ہم ایسے سسٹم بناتے ہیں جو سختی سے GDPR، CCPA، اور میڈیکل کلینکس کے لیے HIPAA جیسے صنعت کے مخصوص ضوابط کی تعمیل کرتے ہیں۔ ہم اس بات کو یقینی بناتے ہیں کہ کسٹمر کا ڈیٹا محفوظ رسائی کے کنٹرول کے ساتھ، آرام اور ٹرانزٹ کے دوران انکرپٹڈ ہو۔"
+      },
+      {
+        "question": "کیا آپ ہوسٹنگ اور جاری تکنیکی دیکھ بھال فراہم کرتے ہیں؟",
+        "answer": "ہم AWS یا Vercel کا استعمال کرتے ہوئے کلاؤڈ ہوسٹنگ کے مکمل حل پیش کرتے ہیں، جس کو SLA کے حمایت یافتہ مینٹیننس پلانز کے ساتھ جوڑا جاتا ہے۔ یہ یقینی بناتا ہے کہ آپ کا بکنگ سسٹم انتہائی دستیاب، محفوظ، اور جدید ترین سافٹ ویئر پیچ کے ساتھ اپ ٹو ڈیٹ رہے۔"
+      },
+      {
+        "question": "آپ خودکار کسٹمر نوٹیفیکیشنز کو کیسے سنبھالتے ہیں؟",
+        "answer": "ہم SMS کے لیے Twilio اور ای میلز کے لیے SendGrid جیسی قابل توسیع کمیونیکیشن APIs کو مربوط کرتے ہیں۔ یہ غیر حاضری کو کم کرنے اور کسٹمر کی اطمینان کو بہتر بنانے کے لیے خودکار بکنگ کی تصدیق، یاد دہانیوں، اور فالو اپ سروے کو قابل بناتا ہے۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "ما المدة التي يستغرقها بناء نظام حجز مخصص؟",
+        "answer": "يستغرق تطوير نظام حجز مخصص عادةً من 6 إلى 12 أسبوعًا. يعتمد الإطار الزمني على تعقيد الميزات مثل دعم المواقع المتعددة، وتدفقات الدفع المخصصة، والتكامل مع برامج الطرف الثالث مثل أدوات إدارة علاقات العملاء (CRM) أو أدوات المحاسبة."
+      },
+      {
+        "question": "ما هو النطاق العام لتكلفة منصة الحجز؟",
+        "answer": "يبدأ تطوير منصة حجز مخصصة عمومًا من 12000 دولار للوظائف القياسية. يمكن أن تتراوح منصات المؤسسات المعقدة التي تتطلب موازنة الحمل أو بوابات البائعين المخصصة أو خوارزميات التسعير الديناميكي من 30 ألف دولار إلى 60 ألف دولار فأكثر."
+      },
+      {
+        "question": "هل يمكن للنظام التعامل مع التسعير الديناميكي خلال ساعات الذروة؟",
+        "answer": "بالتأكيد. يمكننا تنفيذ خوارزميات تسعير معقدة تضبط الأسعار تلقائيًا بناءً على الطلب أو الوقت من اليوم أو الموسمية أو توفر الموارد، مما يزيد من إيراداتك إلى أقصى حد دون تدخل يدوي."
+      },
+      {
+        "question": "هل نظام الحجز متوافق مع قوانين خصوصية البيانات؟",
+        "answer": "نعم، نقوم ببناء أنظمة تمتثل بصرامة للوائح العامة لحماية البيانات (GDPR) وقانون خصوصية المستهلك في كاليفورنيا (CCPA) واللوائح الخاصة بالصناعة مثل HIPAA للعيادات الطبية. نحن نضمن تشفير بيانات العملاء أثناء السكون وأثناء النقل، مع ضوابط وصول آمنة."
+      },
+      {
+        "question": "هل تقدمون خدمات الاستضافة والصيانة الفنية المستمرة؟",
+        "answer": "نقدم حلول استضافة سحابية كاملة باستخدام AWS أو Vercel، مقترنة بخطط صيانة مدعومة باتفاقية مستوى الخدمة (SLA). يضمن هذا بقاء نظام الحجز الخاص بك متاحًا للغاية وآمنًا ومحدثًا بأحدث تصحيحات البرامج."
+      },
+      {
+        "question": "كيف تتعاملون مع إشعارات العملاء الآلية؟",
+        "answer": "نقوم بدمج واجهات برمجة تطبيقات اتصالات قابلة للتطوير مثل Twilio للرسائل القصيرة و SendGrid لرسائل البريد الإلكتروني. يتيح ذلك تأكيدات الحجز الآلية والتذكيرات واستطلاعات المتابعة لتقليل حالات عدم الحضور وتحسين رضا العملاء."
+      }
+    ]
+  },
+  "web-development": {
+    "en": [
+      {
+        "question": "How long does a full custom web development project take?",
+        "answer": "A standard corporate website takes around 4 to 8 weeks from discovery to launch. Large-scale web applications or complex enterprise portals require 3 to 6 months depending on necessary API integrations and backend architecture."
+      },
+      {
+        "question": "What is the typical budget for a modern web development project?",
+        "answer": "Custom, high-performance websites typically start at $8,000 for standard corporate sites. Complex web applications built with frameworks like Next.js or React often range between $20,000 and $50,000+ depending on the feature scope."
+      },
+      {
+        "question": "What technology stack do you recommend for web development?",
+        "answer": "We heavily advocate for the modern JAMstack, primarily using Next.js with React for the frontend, and Node.js or serverless architectures for the backend. This stack guarantees unmatched speed, SEO performance, and high-level security."
+      },
+      {
+        "question": "Do you provide Content Management Systems (CMS)?",
+        "answer": "Yes, we integrate headless CMS platforms like Sanity, Contentful, or Strapi. This gives your marketing team a powerful, easy-to-use interface to update content instantly without risking the structural code of the website."
+      },
+      {
+        "question": "How do you handle technical SEO and performance optimization?",
+        "answer": "We build SEO into the architecture from day one using server-side rendering (SSR), dynamic metadata routing, and strict adherence to Core Web Vitals. We optimize images, minimize JavaScript payloads, and use Edge networks for sub-second load times."
+      },
+      {
+        "question": "Who owns the code after the website is launched?",
+        "answer": "You retain 100% ownership of the website, its design assets, and all custom source code once the final invoice is settled. We transfer the Git repositories and provide comprehensive documentation for your in-house team."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Tam kapsamlı bir özel web geliştirme projesi ne kadar sürer?",
+        "answer": "Standart bir kurumsal web sitesinin keşif aşamasından lansmana kadar geçmesi yaklaşık 4 ila 8 hafta sürer. Büyük ölçekli web uygulamaları veya karmaşık kurumsal portallar, gerekli API entegrasyonlarına ve arka uç mimarisine bağlı olarak 3 ila 6 ay sürer."
+      },
+      {
+        "question": "Modern bir web geliştirme projesi için tipik bütçe nedir?",
+        "answer": "Özel, yüksek performanslı web siteleri standart kurumsal siteler için genellikle 8.000$'dan başlar. Next.js veya React gibi çerçevelerle oluşturulmuş karmaşık web uygulamaları, özellik kapsamına bağlı olarak genellikle 20.000$ ile 50.000$+ arasında değişir."
+      },
+      {
+        "question": "Web geliştirme için hangi teknoloji yığınını önerirsiniz?",
+        "answer": "Büyük ölçüde, ön uç için Next.js ve React'i ve arka uç için Node.js veya sunucusuz mimarileri kullanan modern JAMstack'i savunuyoruz. Bu yığın; benzersiz hız, SEO performansı ve üst düzey güvenliği garanti eder."
+      },
+      {
+        "question": "İçerik Yönetim Sistemleri (İYS) sağlıyor musunuz?",
+        "answer": "Evet, Sanity, Contentful veya Strapi gibi başsız (headless) İYS platformlarını entegre ediyoruz. Bu, pazarlama ekibinize web sitesinin yapısal kodunu riske atmadan içeriği anında güncellemesi için güçlü, kullanımı kolay bir arayüz sağlar."
+      },
+      {
+        "question": "Teknik SEO ve performans optimizasyonunu nasıl idare ediyorsunuz?",
+        "answer": "Sunucu tarafı oluşturma (SSR), dinamik meta veri yönlendirmesi ve Temel Web Önemli Metriklerine sıkı sıkıya bağlılık kullanarak SEO'yu ilk günden mimariye entegre ediyoruz. Görüntüleri optimize ediyor, JavaScript yüklerini en aza indiriyor ve saniyenin altında yükleme süreleri için Edge ağlarını kullanıyoruz."
+      },
+      {
+        "question": "Web sitesi yayınlandıktan sonra kodun sahibi kim olur?",
+        "answer": "Son fatura ödendikten sonra web sitesinin, tasarım varlıklarının ve tüm özel kaynak kodunun %100 mülkiyetini elinizde tutarsınız. Git depolarını aktarıyor ve kurum içi ekibiniz için kapsamlı belgeler sağlıyoruz."
+      }
+    ],
+    "de": [
+      {
+        "question": "Wie lange dauert ein komplett individuelles Webentwicklungsprojekt?",
+        "answer": "Eine Standard-Unternehmenswebsite benötigt von der Entdeckung bis zum Start etwa 4 bis 8 Wochen. Groß angelegte Webanwendungen oder komplexe Unternehmensportale benötigen je nach notwendigen API-Integrationen und Backend-Architektur 3 bis 6 Monate."
+      },
+      {
+        "question": "Wie hoch ist das typische Budget für ein modernes Webentwicklungsprojekt?",
+        "answer": "Maßgeschneiderte, hochleistungsfähige Websites beginnen für Standard-Unternehmensseiten in der Regel bei 8.000 US-Dollar. Komplexe Webanwendungen, die mit Frameworks wie Next.js oder React erstellt wurden, liegen je nach Funktionsumfang oft zwischen 20.000 und über 50.000 US-Dollar."
+      },
+      {
+        "question": "Welchen Technologie-Stack empfehlen Sie für die Webentwicklung?",
+        "answer": "Wir befürworten nachdrücklich den modernen JAMstack und verwenden in erster Linie Next.js mit React für das Frontend und Node.js oder serverlose Architekturen für das Backend. Dieser Stack garantiert unübertroffene Geschwindigkeit, SEO-Leistung und ein hohes Maß an Sicherheit."
+      },
+      {
+        "question": "Bieten Sie Content-Management-Systeme (CMS) an?",
+        "answer": "Ja, wir integrieren Headless-CMS-Plattformen wie Sanity, Contentful oder Strapi. Dies gibt Ihrem Marketingteam eine leistungsstarke, benutzerfreundliche Oberfläche an die Hand, um Inhalte sofort zu aktualisieren, ohne den strukturellen Code der Website zu gefährden."
+      },
+      {
+        "question": "Wie gehen Sie mit technischem SEO und Leistungsoptimierung um?",
+        "answer": "Wir bauen SEO vom ersten Tag an in die Architektur ein, indem wir serverseitiges Rendering (SSR), dynamisches Metadaten-Routing und die strikte Einhaltung von Core Web Vitals nutzen. Wir optimieren Bilder, minimieren JavaScript-Payloads und nutzen Edge-Netzwerke für Ladezeiten von unter einer Sekunde."
+      },
+      {
+        "question": "Wem gehört der Code, nachdem die Website gestartet wurde?",
+        "answer": "Sie behalten das 100%ige Eigentum an der Website, ihren Design-Assets und dem gesamten benutzerdefinierten Quellcode, sobald die Abschlussrechnung beglichen ist. Wir übergeben die Git-Repositories und stellen eine umfassende Dokumentation für Ihr internes Team bereit."
+      }
+    ],
+    "ur": [
+      {
+        "question": "مکمل کسٹم ویب ڈویلپمنٹ پروجیکٹ میں کتنا وقت لگتا ہے؟",
+        "answer": "ایک معیاری کارپوریٹ ویب سائٹ دریافت سے لے کر لانچ تک تقریباً 4 سے 8 ہفتے لیتی ہے۔ بڑے پیمانے پر ویب ایپلیکیشنز یا پیچیدہ انٹرپرائز پورٹلز کو ضروری API انضمام اور بیک اینڈ آرکیٹیکچر کے لحاظ سے 3 سے 6 ماہ درکار ہوتے ہیں۔"
+      },
+      {
+        "question": "جدید ویب ڈویلپمنٹ پروجیکٹ کے لیے عام بجٹ کیا ہے؟",
+        "answer": "کسٹم، اعلی کارکردگی والی ویب سائٹس عام طور پر معیاری کارپوریٹ سائٹس کے لیے $8,000 سے شروع ہوتی ہیں۔ Next.js یا React جیسے فریم ورک کے ساتھ بنائی گئی پیچیدہ ویب ایپلیکیشنز فیچر اسکوپ کے لحاظ سے اکثر $20,000 اور $50,000+ کے درمیان ہوتی ہیں۔"
+      },
+      {
+        "question": "آپ ویب ڈویلپمنٹ کے لیے کس ٹیکنالوجی اسٹیک کی تجویز کرتے ہیں؟",
+        "answer": "ہم جدید JAMstack کی بھرپور وکالت کرتے ہیں، بنیادی طور پر فرنٹ اینڈ کے لیے React کے ساتھ Next.js، اور بیک اینڈ کے لیے Node.js یا سرور لیس آرکیٹیکچرز کا استعمال کرتے ہیں۔ یہ اسٹیک بے مثال رفتار، SEO کارکردگی، اور اعلیٰ سطحی سیکیورٹی کی ضمانت دیتا ہے۔"
+      },
+      {
+        "question": "کیا آپ مواد کے انتظام کے نظام (CMS) فراہم کرتے ہیں؟",
+        "answer": "ہاں، ہم Sanity، Contentful، یا Strapi جیسے ہیڈ لیس CMS پلیٹ فارمز کو مربوط کرتے ہیں۔ یہ آپ کی مارکیٹنگ ٹیم کو ویب سائٹ کے ساختی کوڈ کو خطرے میں ڈالے بغیر فوری طور پر مواد کو اپ ڈیٹ کرنے کے لیے ایک طاقتور، استعمال میں آسان انٹرفیس فراہم کرتا ہے۔"
+      },
+      {
+        "question": "آپ تکنیکی SEO اور کارکردگی کی اصلاح کو کیسے سنبھالتے ہیں؟",
+        "answer": "ہم سرور سائیڈ رینڈرنگ (SSR)، ڈائنامک میٹا ڈیٹا روٹنگ، اور Core Web Vitals کی سخت پابندی کا استعمال کرتے ہوئے پہلے دن سے ہی SEO کو فن تعمیر میں شامل کرتے ہیں۔ ہم تصاویر کو بہتر بناتے ہیں، جاوا اسکرپٹ پے لوڈز کو کم سے کم کرتے ہیں، اور سب سیکنڈ لوڈ اوقات کے لیے ایج نیٹ ورکس کا استعمال کرتے ہیں۔"
+      },
+      {
+        "question": "ویب سائٹ لانچ ہونے کے بعد کوڈ کا مالک کون ہے؟",
+        "answer": "حتمی انوائس طے ہونے کے بعد آپ ویب سائٹ کی 100% ملکیت، اس کے ڈیزائن کے اثاثے، اور تمام حسب ضرورت سورس کوڈ اپنے پاس رکھتے ہیں۔ ہم گٹ ریپوزٹریز منتقل کرتے ہیں اور آپ کی اندرون خانہ ٹیم کے لیے جامع دستاویزات فراہم کرتے ہیں۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "ما المدة التي يستغرقها مشروع تطوير ويب مخصص بالكامل؟",
+        "answer": "يستغرق موقع الويب الخاص بالشركات القياسي حوالي 4 إلى 8 أسابيع من الاستكشاف إلى الإطلاق. تتطلب تطبيقات الويب واسعة النطاق أو بوابات المؤسسات المعقدة من 3 إلى 6 أشهر اعتمادًا على عمليات تكامل واجهة برمجة التطبيقات (API) اللازمة وبنية الواجهة الخلفية."
+      },
+      {
+        "question": "ما هي الميزانية المعتادة لمشروع تطوير ويب حديث؟",
+        "answer": "تبدأ مواقع الويب المخصصة عالية الأداء عادةً من 8000 دولار لمواقع الشركات القياسية. تتراوح تطبيقات الويب المعقدة المبنية بأطر عمل مثل Next.js أو React غالبًا بين 20000 دولار و 50000 دولار فأكثر اعتمادًا على نطاق الميزات."
+      },
+      {
+        "question": "ما هي مجموعة التقنيات التي توصون بها لتطوير الويب؟",
+        "answer": "نحن ندعو بشدة إلى استخدام JAMstack الحديث، باستخدام Next.js مع React للواجهة الأمامية في المقام الأول، وبنية Node.js أو البنى الخالية من الخوادم (serverless) للواجهة الخلفية. تضمن هذه المجموعة سرعة لا مثيل لها وأداء تحسين محركات البحث (SEO) وأمانًا عالي المستوى."
+      },
+      {
+        "question": "هل تقدمون أنظمة إدارة المحتوى (CMS)؟",
+        "answer": "نعم، نقوم بدمج منصات نظام إدارة المحتوى (CMS) غير المرتبطة (headless) مثل Sanity أو Contentful أو Strapi. يمنح هذا فريق التسويق لديك واجهة قوية وسهلة الاستخدام لتحديث المحتوى على الفور دون المخاطرة بالكود الهيكلي لموقع الويب."
+      },
+      {
+        "question": "كيف تتعاملون مع تحسين محركات البحث (SEO) الفني وتحسين الأداء؟",
+        "answer": "نقوم بدمج تحسين محركات البحث (SEO) في البنية من اليوم الأول باستخدام العرض من جانب الخادم (SSR) وتوجيه البيانات الوصفية الديناميكية والالتزام الصارم بمقاييس الويب الأساسية (Core Web Vitals). نقوم بتحسين الصور وتقليل أحمال JavaScript واستخدام شبكات Edge لأوقات تحميل أقل من ثانية."
+      },
+      {
+        "question": "من يمتلك الكود بعد إطلاق الموقع؟",
+        "answer": "تحتفظ بملكية 100٪ لموقع الويب وأصول تصميمه وجميع الأكواد المصدرية المخصصة بمجرد تسوية الفاتورة النهائية. نقوم بنقل مستودعات Git وتوفير وثائق شاملة لفريقك الداخلي."
+      }
+    ]
+  },
+  "defi-solutions": {
+    "en": [
+      {
+        "question": "How long does it take to develop a custom DeFi protocol?",
+        "answer": "A robust DeFi protocol takes a minimum of 3 to 6 months to develop. This extended timeline ensures exhaustive testing, testnet deployments, smart contract auditing, and frontend integration to guarantee security."
+      },
+      {
+        "question": "What is the budget required to build and launch a DeFi platform?",
+        "answer": "Developing a secure DeFi platform usually starts at $40,000 to $80,000. This includes smart contract engineering, rigorous security audits (which can cost $10k-$30k alone), and building the decentralized frontend (dApp)."
+      },
+      {
+        "question": "How do you ensure the smart contracts are safe from exploits?",
+        "answer": "We enforce strict security practices, including test-driven development, automated fuzzing, and static analysis using tools like Slither. Furthermore, we mandate third-party audits by reputable firms like CertiK or Trail of Bits before mainnet launch."
+      },
+      {
+        "question": "Can you build DeFi protocols on blockchains other than Ethereum?",
+        "answer": "Yes, we build cross-chain and multi-chain solutions. We frequently develop on Layer 2 networks like Arbitrum and Optimism, as well as alternative Layer 1s like Solana, Polygon, and Binance Smart Chain to lower gas fees for your users."
+      },
+      {
+        "question": "Who controls the protocol's liquidity and administrative functions?",
+        "answer": "Our DeFi solutions are designed to be non-custodial and trustless. Administrative control is typically handed over to a Decentralized Autonomous Organization (DAO) or a Multi-Sig wallet controlled by your team, preventing single points of failure."
+      },
+      {
+        "question": "What kind of ongoing maintenance does a DeFi protocol require?",
+        "answer": "While immutable smart contracts require no maintenance, the frontend dApp, subgraph indexers, and API nodes require continuous uptime monitoring. We provide ongoing DevOps support to ensure your users can always access the protocol."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Özel bir DeFi protokolü geliştirmek ne kadar sürer?",
+        "answer": "Sağlam bir DeFi protokolünün geliştirilmesi en az 3 ila 6 ay sürer. Bu uzatılmış zaman çizelgesi, güvenliği garanti altına almak için kapsamlı testler, test ağı dağıtımları, akıllı sözleşme denetimi ve ön uç entegrasyonu sağlar."
+      },
+      {
+        "question": "Bir DeFi platformu kurmak ve başlatmak için gereken bütçe nedir?",
+        "answer": "Güvenli bir DeFi platformu geliştirmek genellikle 40.000$ ile 80.000$ arasından başlar. Buna akıllı sözleşme mühendisliği, titiz güvenlik denetimleri (tek başına 10.000$-30.000$ tutabilir) ve merkeziyetsiz ön ucu (dApp) oluşturmak dahildir."
+      },
+      {
+        "question": "Akıllı sözleşmelerin açıklara karşı güvenli olduğundan nasıl emin oluyorsunuz?",
+        "answer": "Test güdümlü geliştirme, otomatik bulandırma (fuzzing) ve Slither gibi araçları kullanarak statik analiz de dahil olmak üzere katı güvenlik uygulamalarını zorunlu kılıyoruz. Ayrıca, ana ağ lansmanından önce CertiK veya Trail of Bits gibi saygın firmalar tarafından üçüncü taraf denetimlerini zorunlu tutuyoruz."
+      },
+      {
+        "question": "Ethereum dışındaki blok zincirlerinde DeFi protokolleri kurabilir misiniz?",
+        "answer": "Evet, zincirler arası ve çoklu zincir çözümleri üretiyoruz. Kullanıcılarınız için işlem ücretlerini düşürmek amacıyla Arbitrum ve Optimism gibi Katman 2 ağlarının yanı sıra Solana, Polygon ve Binance Smart Chain gibi alternatif Katman 1'lerde sıklıkla geliştirme yapıyoruz."
+      },
+      {
+        "question": "Protokolün likiditesini ve idari işlevlerini kim kontrol ediyor?",
+        "answer": "DeFi çözümlerimiz saklamaya dayalı olmayan (non-custodial) ve güvene dayalı olmayan (trustless) olacak şekilde tasarlanmıştır. İdari kontrol genellikle Merkeziyetsiz Otonom Organizasyon'a (DAO) veya ekibiniz tarafından kontrol edilen çoklu imzalı (Multi-Sig) bir cüzdana devredilerek tek noktada hata oluşması önlenir."
+      },
+      {
+        "question": "Bir DeFi protokolü ne tür sürekli bakım gerektirir?",
+        "answer": "Değişmez akıllı sözleşmeler bakım gerektirmese de, ön uç dApp, alt grafik dizinleyiciler (subgraph indexers) ve API düğümleri sürekli çalışma süresi izlemesi gerektirir. Kullanıcılarınızın protokole her zaman erişebilmesini sağlamak için sürekli DevOps desteği sağlıyoruz."
+      }
+    ],
+    "de": [
+      {
+        "question": "Wie lange dauert die Entwicklung eines benutzerdefinierten DeFi-Protokolls?",
+        "answer": "Die Entwicklung eines robusten DeFi-Protokolls dauert mindestens 3 bis 6 Monate. Dieser erweiterte Zeitplan stellt umfassende Tests, Testnetz-Bereitstellungen, Smart-Contract-Auditing und Frontend-Integration sicher, um die Sicherheit zu gewährleisten."
+      },
+      {
+        "question": "Welches Budget ist erforderlich, um eine DeFi-Plattform aufzubauen und zu starten?",
+        "answer": "Die Entwicklung einer sicheren DeFi-Plattform beginnt normalerweise bei 40.000 bis 80.000 US-Dollar. Dies umfasst Smart Contract Engineering, strenge Sicherheitsaudits (die allein 10.000 bis 30.000 US-Dollar kosten können) und den Aufbau des dezentralen Frontends (dApp)."
+      },
+      {
+        "question": "Wie stellen Sie sicher, dass die Smart Contracts vor Exploits sicher sind?",
+        "answer": "Wir setzen strenge Sicherheitspraktiken durch, einschließlich testgetriebener Entwicklung, automatisiertem Fuzzing und statischer Analyse mit Tools wie Slither. Darüber hinaus schreiben wir vor dem Mainnet-Start Audits durch Dritte von renommierten Firmen wie CertiK oder Trail of Bits vor."
+      },
+      {
+        "question": "Können Sie DeFi-Protokolle auf anderen Blockchains als Ethereum aufbauen?",
+        "answer": "Ja, wir entwickeln Cross-Chain- und Multi-Chain-Lösungen. Wir entwickeln häufig auf Layer-2-Netzwerken wie Arbitrum und Optimism sowie auf alternativen Layer-1s wie Solana, Polygon und Binance Smart Chain, um die Gasgebühren für Ihre Benutzer zu senken."
+      },
+      {
+        "question": "Wer kontrolliert die Liquidität und die administrativen Funktionen des Protokolls?",
+        "answer": "Unsere DeFi-Lösungen sind so konzipiert, dass sie nicht verwahrend und vertrauenslos sind. Die administrative Kontrolle wird in der Regel an eine Dezentrale Autonome Organisation (DAO) oder ein von Ihrem Team kontrolliertes Multi-Sig-Wallet übergeben, wodurch Single Points of Failure vermieden werden."
+      },
+      {
+        "question": "Welche Art von laufender Wartung erfordert ein DeFi-Protokoll?",
+        "answer": "Während unveränderliche Smart Contracts keine Wartung erfordern, benötigen die Frontend-dApp, Subgraph-Indexer und API-Knoten eine kontinuierliche Überwachung der Betriebszeit. Wir bieten fortlaufenden DevOps-Support, um sicherzustellen, dass Ihre Benutzer jederzeit auf das Protokoll zugreifen können."
+      }
+    ],
+    "ur": [
+      {
+        "question": "اپنی مرضی کے مطابق DeFi پروٹوکول تیار کرنے میں کتنا وقت لگتا ہے؟",
+        "answer": "ایک مضبوط DeFi پروٹوکول تیار ہونے میں کم از کم 3 سے 6 ماہ لگتے ہیں۔ یہ توسیعی ٹائم لائن سیکیورٹی کی ضمانت کے لیے مکمل جانچ، ٹیسٹ نیٹ کی تعیناتی، سمارٹ کنٹریکٹ آڈیٹنگ، اور فرنٹ اینڈ انضمام کو یقینی بناتی ہے۔"
+      },
+      {
+        "question": "DeFi پلیٹ فارم بنانے اور شروع کرنے کے لیے کتنا بجٹ درکار ہے؟",
+        "answer": "ایک محفوظ DeFi پلیٹ فارم تیار کرنا عام طور پر $40,000 سے $80,000 سے شروع ہوتا ہے۔ اس میں سمارٹ کنٹریکٹ انجینئرنگ، سخت سیکیورٹی آڈٹ (جن کی اکیلے لاگت $10k-$30k تک ہو سکتی ہے)، اور وکندریقرت فرنٹ اینڈ (dApp) کی تعمیر شامل ہے۔"
+      },
+      {
+        "question": "آپ یہ کیسے یقینی بناتے ہیں کہ سمارٹ کنٹریکٹس کارروائیوں سے محفوظ ہیں؟",
+        "answer": "ہم سخت حفاظتی طریقوں کو نافذ کرتے ہیں، بشمول ٹیسٹ پر مبنی ڈیولپمنٹ، آٹومیٹڈ فزنگ، اور Slither جیسے ٹولز کا استعمال کرتے ہوئے جامد تجزیہ۔ مزید برآں، ہم مین نیٹ لانچ سے پہلے CertiK یا Trail of Bits جیسی معزز فرموں کی طرف سے فریق ثالث کے آڈٹ کو لازمی قرار دیتے ہیں۔"
+      },
+      {
+        "question": "کیا آپ Ethereum کے علاوہ دیگر بلاک چینز پر DeFi پروٹوکول بنا سکتے ہیں؟",
+        "answer": "جی ہاں، ہم کراس چین اور ملٹی چین حل بناتے ہیں۔ ہم اکثر لیئر 2 نیٹ ورکس جیسے Arbitrum اور Optimism کے ساتھ ساتھ متبادل Layer 1s جیسے Solana، Polygon، اور Binance Smart Chain پر بھی ترقی کرتے ہیں تاکہ آپ کے صارفین کے لیے گیس کی فیس کم کی جا سکے۔"
+      },
+      {
+        "question": "پروٹوکول کی لیکویڈیٹی اور انتظامی افعال کو کون کنٹرول کرتا ہے؟",
+        "answer": "ہمارے DeFi حلوں کو غیر تحویلی اور اعتماد کے بغیر ڈیزائن کیا گیا ہے۔ انتظامی کنٹرول عام طور پر آپ کی ٹیم کے زیر کنٹرول ایک وکندریقرت خود مختار تنظیم (DAO) یا ملٹی سگ والیٹ کے حوالے کیا جاتا ہے، جو ناکامی کے واحد نکات کو روکتا ہے۔"
+      },
+      {
+        "question": "DeFi پروٹوکول کو کس قسم کی جاری دیکھ بھال کی ضرورت ہے؟",
+        "answer": "اگرچہ ناقابل تغیر سمارٹ کنٹریکٹس کی دیکھ بھال کی ضرورت نہیں ہوتی ہے، فرنٹ اینڈ ڈی ایپ، سب گراف انڈیکسرز، اور API نوڈس کو اپ ٹائم کی مسلسل نگرانی کی ضرورت ہوتی ہے۔ ہم اس بات کو یقینی بنانے کے لیے جاری ڈیولپس سپورٹ فراہم کرتے ہیں کہ آپ کے صارفین ہمیشہ پروٹوکول تک رسائی حاصل کر سکیں۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "ما المدة التي يستغرقها تطوير بروتوكول DeFi مخصص؟",
+        "answer": "يستغرق تطوير بروتوكول DeFi قوي من 3 إلى 6 أشهر كحد أدنى. يضمن هذا الإطار الزمني الممتد إجراء اختبارات شاملة، وعمليات نشر على شبكة الاختبار (testnet)، وتدقيق العقود الذكية، وتكامل الواجهة الأمامية لضمان الأمان."
+      },
+      {
+        "question": "ما هي الميزانية المطلوبة لبناء وإطلاق منصة DeFi؟",
+        "answer": "يبدأ تطوير منصة DeFi آمنة عادةً من 40000 دولار إلى 80000 دولار. وهذا يشمل هندسة العقود الذكية، وعمليات التدقيق الأمني ​​الصارمة (والتي يمكن أن تكلف وحدها من 10 آلاف إلى 30 ألف دولار)، وبناء الواجهة الأمامية اللامركزية (dApp)."
+      },
+      {
+        "question": "كيف تضمنون أن العقود الذكية آمنة من الاستغلال؟",
+        "answer": "نحن نفرض ممارسات أمنية صارمة، بما في ذلك التطوير القائم على الاختبار، والتشويش الآلي (fuzzing)، والتحليل الثابت باستخدام أدوات مثل Slither. علاوة على ذلك، نلزم بإجراء عمليات تدقيق من قبل جهات خارجية من قبل شركات مرموقة مثل CertiK أو Trail of Bits قبل الإطلاق على الشبكة الرئيسية."
+      },
+      {
+        "question": "هل يمكنك بناء بروتوكولات DeFi على سلاسل كتل (blockchains) غير الإيثريوم؟",
+        "answer": "نعم، نقوم ببناء حلول عبر السلاسل ومتعددة السلاسل. نقوم بشكل متكرر بالتطوير على شبكات الطبقة الثانية (Layer 2) مثل Arbitrum و Optimism، بالإضافة إلى بدائل الطبقة الأولى مثل Solana و Polygon و Binance Smart Chain لخفض رسوم الغاز لمستخدميك."
+      },
+      {
+        "question": "من يتحكم في سيولة البروتوكول ووظائفه الإدارية؟",
+        "answer": "تم تصميم حلول DeFi الخاصة بنا لتكون غير احتجازية (non-custodial) ولا تتطلب الثقة (trustless). عادةً ما يتم تسليم الرقابة الإدارية إلى منظمة مستقلة لامركزية (DAO) أو محفظة متعددة التوقيعات (Multi-Sig) يتحكم فيها فريقك، مما يمنع نقاط الفشل المفردة."
+      },
+      {
+        "question": "ما نوع الصيانة المستمرة التي يتطلبها بروتوكول DeFi؟",
+        "answer": "في حين أن العقود الذكية غير القابلة للتغيير لا تتطلب صيانة، فإن تطبيق الواجهة الأمامية (dApp) ومفهرسي الرسوم البيانية الفرعية (subgraph indexers) وعقد واجهة برمجة التطبيقات (API nodes) تتطلب مراقبة مستمرة للجهوزية. نحن نقدم دعم DevOps مستمرًا لضمان قدرة مستخدميك دائمًا على الوصول إلى البروتوكول."
+      }
+    ]
+  },
+  "ios-development": {
+    "en": [
+      {
+        "question": "How long does it take to build a native iOS application?",
+        "answer": "A standard, polished iOS app takes roughly 3 to 5 months to develop from design to App Store launch. Enterprise-grade apps with intricate backend syncs and real-time features may take 6 to 9 months."
+      },
+      {
+        "question": "What is the general budget for custom iOS app development?",
+        "answer": "Custom native iOS development starts at approximately $20,000 for a functional MVP. Fully featured applications with complex animations, custom APIs, and rigorous security measures typically range from $40,000 to $100,000+."
+      },
+      {
+        "question": "Why choose Swift over cross-platform frameworks?",
+        "answer": "Swift provides absolute control over Apple's hardware, guaranteeing butter-smooth 60fps+ performance and deep integration with ARKit, CoreML, and Apple Watch. It is essential when uncompromising user experience and heavy processing are required."
+      },
+      {
+        "question": "Will you handle the App Store submission process?",
+        "answer": "Yes, we handle the entire App Store deployment pipeline, ensuring the app complies strictly with Apple's Human Interface Guidelines and privacy policies to avoid frustrating rejection cycles."
+      },
+      {
+        "question": "Do I get the source code once the iOS app is finished?",
+        "answer": "Absolutely. You receive full intellectual property rights and the complete Xcode project repository. We do not lock you into proprietary tools; you own the product you paid for."
+      },
+      {
+        "question": "What happens when Apple releases a new iOS version?",
+        "answer": "We offer post-launch maintenance plans to ensure your app remains compatible with yearly major iOS updates, adapts to new screen sizes (like the Dynamic Island), and resolves any evolving security requirements."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Yerel bir iOS uygulaması oluşturmak ne kadar sürer?",
+        "answer": "Standart, cilalı bir iOS uygulamasının tasarımdan App Store lansmanına kadar geliştirilmesi kabaca 3 ila 5 ay sürer. Karmaşık arka uç senkronizasyonlarına ve gerçek zamanlı özelliklere sahip kurumsal düzeyde uygulamalar 6 ila 9 ay sürebilir."
+      },
+      {
+        "question": "Özel iOS uygulaması geliştirme için genel bütçe nedir?",
+        "answer": "Özel yerel iOS geliştirme, işlevsel bir MVP için yaklaşık 20.000$'dan başlar. Karmaşık animasyonlara, özel API'lere ve sıkı güvenlik önlemlerine sahip tam özellikli uygulamalar genellikle 40.000$ ile 100.000$+ arasında değişir."
+      },
+      {
+        "question": "Çapraz platform çerçeveleri yerine neden Swift'i seçmelisiniz?",
+        "answer": "Swift, Apple'ın donanımı üzerinde mutlak kontrol sağlayarak yağ gibi akan 60 fps+ performansı ile ARKit, CoreML ve Apple Watch ile derin entegrasyonu garanti eder. Tavizsiz kullanıcı deneyimi ve ağır işlem gücü gerektiğinde vazgeçilmezdir."
+      },
+      {
+        "question": "App Store gönderim sürecini siz mi yürüteceksiniz?",
+        "answer": "Evet, sinir bozucu ret döngülerinden kaçınmak için uygulamanın Apple'ın İnsan Arayüzü Yönergelerine ve gizlilik politikalarına kesinlikle uymasını sağlayarak tüm App Store dağıtım hattını biz yönetiyoruz."
+      },
+      {
+        "question": "iOS uygulaması bittiğinde kaynak kodunu alacak mıyım?",
+        "answer": "Kesinlikle. Fikri mülkiyet haklarının tamamını ve eksiksiz Xcode proje deposunu alırsınız. Sizi tescilli araçlara kilitlemiyoruz; ödediğiniz ürünün sahibi sizsiniz."
+      },
+      {
+        "question": "Apple yeni bir iOS sürümü yayınladığında ne olur?",
+        "answer": "Uygulamanızın yıllık büyük iOS güncellemeleriyle uyumlu kalmasını, yeni ekran boyutlarına (Dinamik Ada gibi) uyum sağlamasını ve gelişen tüm güvenlik gereksinimlerini çözmesini sağlamak için lansman sonrası bakım planları sunuyoruz."
+      }
+    ],
+    "de": [
+      {
+        "question": "Wie lange dauert die Entwicklung einer nativen iOS-Anwendung?",
+        "answer": "Die Entwicklung einer standardmäßigen, ausgefeilten iOS-App vom Design bis zum Start im App Store dauert etwa 3 bis 5 Monate. Apps auf Unternehmensebene mit komplizierten Backend-Synchronisierungen und Echtzeitfunktionen können 6 bis 9 Monate dauern."
+      },
+      {
+        "question": "Wie hoch ist das allgemeine Budget für die Entwicklung benutzerdefinierter iOS-Apps?",
+        "answer": "Die Entwicklung nativer iOS-Lösungen nach Maß beginnt bei etwa 20.000 US-Dollar für ein funktionsfähiges MVP. Voll ausgestattete Anwendungen mit komplexen Animationen, benutzerdefinierten APIs und strengen Sicherheitsmaßnahmen liegen in der Regel zwischen 40.000 und über 100.000 US-Dollar."
+      },
+      {
+        "question": "Warum sollte man sich für Swift gegenüber plattformübergreifenden Frameworks entscheiden?",
+        "answer": "Swift bietet absolute Kontrolle über die Hardware von Apple und garantiert eine butterweiche Leistung von 60fps+ sowie eine tiefe Integration mit ARKit, CoreML und der Apple Watch. Es ist unerlässlich, wenn eine kompromisslose Benutzererfahrung und eine hohe Verarbeitungsleistung erforderlich sind."
+      },
+      {
+        "question": "Übernehmen Sie den Einreichungsprozess für den App Store?",
+        "answer": "Ja, wir kümmern uns um die gesamte Bereitstellungspipeline im App Store und stellen sicher, dass die App strikt den Human Interface Guidelines und den Datenschutzrichtlinien von Apple entspricht, um frustrierende Ablehnungszyklen zu vermeiden."
+      },
+      {
+        "question": "Bekomme ich den Quellcode, sobald die iOS-App fertig ist?",
+        "answer": "Absolut. Sie erhalten die vollen geistigen Eigentumsrechte und das komplette Xcode-Projekt-Repository. Wir binden Sie nicht an proprietäre Tools; Ihnen gehört das Produkt, für das Sie bezahlt haben."
+      },
+      {
+        "question": "Was passiert, wenn Apple eine neue iOS-Version veröffentlicht?",
+        "answer": "Wir bieten Wartungspläne nach dem Start an, um sicherzustellen, dass Ihre App mit den jährlichen großen iOS-Updates kompatibel bleibt, sich an neue Bildschirmgrößen (wie die Dynamic Island) anpasst und alle sich entwickelnden Sicherheitsanforderungen erfüllt."
+      }
+    ],
+    "ur": [
+      {
+        "question": "مقامی iOS ایپلیکیشن بنانے میں کتنا وقت لگتا ہے؟",
+        "answer": "ایک معیاری، پالش شدہ iOS ایپ کو ڈیزائن سے لے کر ایپ اسٹور کے آغاز تک تیار کرنے میں تقریباً 3 سے 5 ماہ لگتے ہیں۔ پیچیدہ بیک اینڈ سنکس اور ریئل ٹائم خصوصیات کے ساتھ انٹرپرائز گریڈ ایپس کو 6 سے 9 ماہ لگ سکتے ہیں۔"
+      },
+      {
+        "question": "اپنی مرضی کے مطابق iOS ایپ کی ترقی کا عام بجٹ کیا ہے؟",
+        "answer": "اپنی مرضی کے مطابق مقامی iOS ڈیولپمنٹ فعال MVP کے لیے تقریباً $20,000 سے شروع ہوتی ہے۔ پیچیدہ اینیمیشنز، حسب ضرورت APIs، اور سخت حفاظتی اقدامات کے ساتھ مکمل خصوصیات والی ایپلیکیشنز عام طور پر $40,000 سے $100,000+ تک ہوتی ہیں۔"
+      },
+      {
+        "question": "کراس پلیٹ فارم فریم ورک کے مقابلے میں Swift کا انتخاب کیوں کریں؟",
+        "answer": "Swift ایپل کے ہارڈویئر پر مکمل کنٹرول فراہم کرتا ہے، بٹر-سموتھ 60fps+ کارکردگی کی ضمانت دیتا ہے اور ARKit، CoreML، اور Apple Watch کے ساتھ گہرے انضمام کو یقینی بناتا ہے۔ یہ ضروری ہے جب غیر سمجھوتہ کن صارف کے تجربے اور بھاری پروسیسنگ کی ضرورت ہو۔"
+      },
+      {
+        "question": "کیا آپ ایپ اسٹور جمع کرانے کے عمل کو سنبھالیں گے؟",
+        "answer": "ہاں، ہم پوری ایپ اسٹور کی تعیناتی پائپ لائن کو سنبھالتے ہیں، اس بات کو یقینی بناتے ہوئے کہ ایپ مایوس کن مسترد ہونے والے چکروں سے بچنے کے لیے Apple کی ہیومن انٹرفیس گائیڈ لائنز اور رازداری کی پالیسیوں کی سختی سے تعمیل کرتی ہے۔"
+      },
+      {
+        "question": "کیا مجھے iOS ایپ مکمل ہونے کے بعد سورس کوڈ مل جائے گا؟",
+        "answer": "بالکل۔ آپ انٹلیکچوئل پراپرٹی کے مکمل حقوق اور مکمل Xcode پروجیکٹ ریپوزٹری حاصل کرتے ہیں۔ ہم آپ کو ملکیتی ٹولز میں بند نہیں کرتے؛ آپ اس پروڈکٹ کے مالک ہیں جس کی آپ نے ادائیگی کی ہے۔"
+      },
+      {
+        "question": "جب Apple نیا iOS ورژن جاری کرتا ہے تو کیا ہوتا ہے؟",
+        "answer": "ہم لانچ کے بعد دیکھ بھال کے منصوبے پیش کرتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ آپ کی ایپ سالانہ بڑی iOS اپ ڈیٹس کے ساتھ ہم آہنگ رہے، نئی اسکرین کے سائز (جیسے Dynamic Island) کے مطابق ڈھل جائے، اور کسی بھی ابھرتی ہوئی سیکیورٹی ضروریات کو حل کرے۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "ما المدة التي يستغرقها بناء تطبيق iOS أصلي؟",
+        "answer": "يستغرق تطوير تطبيق iOS قياسي ومصقول حوالي 3 إلى 5 أشهر من التصميم إلى إطلاقه في متجر التطبيقات (App Store). قد تستغرق التطبيقات على مستوى المؤسسات ذات عمليات المزامنة الخلفية المعقدة والميزات في الوقت الفعلي من 6 إلى 9 أشهر."
+      },
+      {
+        "question": "ما هي الميزانية العامة لتطوير تطبيق iOS مخصص؟",
+        "answer": "يبدأ تطوير نظام iOS الأصلي المخصص بحوالي 20000 دولار كمنتج قابل للتطبيق بحد أدنى (MVP) يعمل بالكامل. عادةً ما تتراوح التطبيقات كاملة الميزات ذات الرسوم المتحركة المعقدة وواجهات برمجة التطبيقات (APIs) المخصصة والتدابير الأمنية الصارمة من 40000 دولار إلى 100000 دولار فأكثر."
+      },
+      {
+        "question": "لماذا تختار Swift على أطر عمل عبر المنصات (cross-platform)؟",
+        "answer": "توفر Swift تحكمًا مطلقًا في أجهزة Apple، وتضمن أداءً سلسًا للغاية بمعدل 60 إطارًا في الثانية فما فوق وتكاملًا عميقًا مع ARKit و CoreML و Apple Watch. إنه أمر ضروري عندما تكون تجربة المستخدم غير القابلة للتفاوض والمعالجة الثقيلة مطلوبة."
+      },
+      {
+        "question": "هل ستتولون عملية التقديم إلى متجر التطبيقات (App Store)؟",
+        "answer": "نعم، نحن نتعامل مع خط أنابيب نشر App Store بأكمله، ونضمن امتثال التطبيق بدقة لإرشادات الواجهة البشرية (Human Interface Guidelines) من Apple وسياسات الخصوصية لتجنب دورات الرفض المحبطة."
+      },
+      {
+        "question": "هل أحصل على الكود المصدري بمجرد الانتهاء من تطبيق iOS؟",
+        "answer": "بالتأكيد. تتلقى حقوق الملكية الفكرية الكاملة ومستودع مشروع Xcode بأكمله. نحن لا نحصرك في أدوات احتكارية؛ أنت تملك المنتج الذي دفعت ثمنه."
+      },
+      {
+        "question": "ماذا يحدث عندما تصدر Apple إصدارًا جديدًا من iOS؟",
+        "answer": "نقدم خطط صيانة لما بعد الإطلاق لضمان بقاء تطبيقك متوافقًا مع تحديثات iOS الرئيسية السنوية، ويتكيف مع أحجام الشاشات الجديدة (مثل Dynamic Island)، ويحل أي متطلبات أمنية متطورة."
+      }
+    ]
+  }
+}

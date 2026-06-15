@@ -1,0 +1,662 @@
+{
+  "bubble-development": {
+    "en": [
+      {
+        "question": "Is Bubble scalable enough for my startup?",
+        "answer": "Yes, Bubble is highly scalable. It runs on AWS infrastructure and automatically handles server provisioning. Many successful startups have scaled to handle tens of thousands of active users and millions of database records entirely on Bubble before ever needing to migrate."
+      },
+      {
+        "question": "Do I own the source code of my Bubble app?",
+        "answer": "Because Bubble is a visual programming platform, you don't receive traditional source code (like React or Node.js). You own the Intellectual Property (IP) and your user data. If you ever leave, you can export your data via CSV or API, but the visual logic stays on the platform."
+      },
+      {
+        "question": "Can Bubble integrate with external APIs and services?",
+        "answer": "Absolutely. Bubble's API Connector is incredibly powerful. We can integrate your app with virtually any modern RESTful API, including Stripe for payments, OpenAI for AI features, Twilio for SMS, and SendGrid for email."
+      },
+      {
+        "question": "How fast can you build a Bubble app compared to traditional coding?",
+        "answer": "Bubble development is generally 3x to 5x faster than traditional development. A complex Minimum Viable Product (MVP) that might take 4-6 months with a traditional code stack can often be launched in just 4 to 8 weeks using Bubble."
+      },
+      {
+        "question": "Is a Bubble app secure?",
+        "answer": "Yes. Bubble provides robust security features including SSL encryption, SOC 2 Type II compliance, and detailed Privacy Rules. We configure these Privacy Rules meticulously to ensure users can only access data they are explicitly authorized to see."
+      },
+      {
+        "question": "Can I publish my Bubble app to the iOS and Android App Stores?",
+        "answer": "By default, Bubble creates progressive web apps (PWAs). However, using native wrappers like BDK Native or Draftbit, we can package your Bubble app and successfully publish it to both the Apple App Store and Google Play Store."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Bubble girişimim (startup) için yeterince ölçeklenebilir mi?",
+        "answer": "Evet, Bubble son derece ölçeklenebilirdir. AWS altyapısı üzerinde çalışır ve sunucu sağlamayı otomatik olarak yönetir. Birçok başarılı girişim, taşıma ihtiyacı duymadan tamamen Bubble üzerinde on binlerce aktif kullanıcıyı ve milyonlarca veritabanı kaydını idare edecek şekilde ölçeklendi."
+      },
+      {
+        "question": "Bubble uygulamamın kaynak koduna sahip miyim?",
+        "answer": "Bubble görsel bir programlama platformu olduğundan geleneksel kaynak kodu (React veya Node.js gibi) almazsınız. Fikri Mülkiyet (IP) ve kullanıcı verileriniz size aittir. Ayrılırsanız verilerinizi CSV veya API aracılığıyla dışa aktarabilirsiniz, ancak görsel mantık platformda kalır."
+      },
+      {
+        "question": "Bubble harici API'ler ve hizmetlerle entegre olabilir mi?",
+        "answer": "Kesinlikle. Bubble'ın API Bağlayıcısı (API Connector) inanılmaz derecede güçlüdür. Uygulamanızı ödemeler için Stripe, AI özellikleri için OpenAI, SMS için Twilio ve e-posta için SendGrid dahil olmak üzere hemen hemen her modern RESTful API ile entegre edebiliriz."
+      },
+      {
+        "question": "Geleneksel kodlamaya kıyasla bir Bubble uygulamasını ne kadar hızlı kurabilirsiniz?",
+        "answer": "Bubble geliştirme, geleneksel geliştirmeden genellikle 3 ila 5 kat daha hızlıdır. Geleneksel bir kod yığınıyla 4-6 ay sürebilecek karmaşık bir Minimum Uygulanabilir Ürün (MVP), Bubble kullanılarak genellikle sadece 4 ila 8 hafta içinde piyasaya sürülebilir."
+      },
+      {
+        "question": "Bubble uygulaması güvenli midir?",
+        "answer": "Evet. Bubble, SSL şifreleme, SOC 2 Tip II uyumluluğu ve ayrıntılı Gizlilik Kuralları dahil olmak üzere güçlü güvenlik özellikleri sunar. Kullanıcıların yalnızca açıkça yetkilendirildikleri verilere erişebilmelerini sağlamak için bu Gizlilik Kurallarını titizlikle yapılandırıyoruz."
+      },
+      {
+        "question": "Bubble uygulamamı iOS ve Android App Store'larında yayınlayabilir miyim?",
+        "answer": "Varsayılan olarak, Bubble aşamalı web uygulamaları (PWA'lar) oluşturur. Bununla birlikte, BDK Native veya Draftbit gibi yerel sarmalayıcılar (native wrappers) kullanarak Bubble uygulamanızı paketleyebilir ve hem Apple App Store'da hem de Google Play Store'da başarıyla yayınlayabiliriz."
+      }
+    ],
+    "de": [
+      {
+        "question": "Ist Bubble skalierbar genug für mein Startup?",
+        "answer": "Ja, Bubble ist hochgradig skalierbar. Es läuft auf der AWS-Infrastruktur und übernimmt automatisch die Serverbereitstellung. Viele erfolgreiche Startups sind so skaliert, dass sie Zehntausende von aktiven Benutzern und Millionen von Datensätzen vollständig auf Bubble verarbeiten können, bevor sie jemals migrieren mussten."
+      },
+      {
+        "question": "Besitze ich den Quellcode meiner Bubble-App?",
+        "answer": "Da Bubble eine visuelle Programmierplattform ist, erhalten Sie keinen herkömmlichen Quellcode (wie React oder Node.js). Sie besitzen das geistige Eigentum (IP) und Ihre Benutzerdaten. Wenn Sie das Programm jemals verlassen, können Sie Ihre Daten über CSV oder API exportieren, aber die visuelle Logik bleibt auf der Plattform."
+      },
+      {
+        "question": "Kann Bubble in externe APIs und Dienste integriert werden?",
+        "answer": "Absolut. Der API Connector von Bubble ist unglaublich leistungsstark. Wir können Ihre App in praktisch jede moderne RESTful-API integrieren, einschließlich Stripe für Zahlungen, OpenAI für KI-Funktionen, Twilio für SMS und SendGrid für E-Mails."
+      },
+      {
+        "question": "Wie schnell können Sie eine Bubble-App im Vergleich zur herkömmlichen Programmierung erstellen?",
+        "answer": "Die Entwicklung mit Bubble ist im Allgemeinen 3- bis 5-mal schneller als die herkömmliche Entwicklung. Ein komplexes Minimum Viable Product (MVP), das mit einem herkömmlichen Code-Stack 4-6 Monate dauern könnte, kann mit Bubble oft in nur 4 bis 8 Wochen auf den Markt gebracht werden."
+      },
+      {
+        "question": "Ist eine Bubble-App sicher?",
+        "answer": "Ja. Bubble bietet robuste Sicherheitsfunktionen wie SSL-Verschlüsselung, SOC 2 Type II-Konformität und detaillierte Datenschutzregeln. Wir konfigurieren diese Datenschutzregeln sorgfältig, um sicherzustellen, dass Benutzer nur auf Daten zugreifen können, für die sie ausdrücklich autorisiert sind."
+      },
+      {
+        "question": "Kann ich meine Bubble-App im iOS- und Android-App-Store veröffentlichen?",
+        "answer": "Standardmäßig erstellt Bubble Progressive Web Apps (PWAs). Mithilfe von nativen Wrappern wie BDK Native oder Draftbit können wir Ihre Bubble-App jedoch verpacken und erfolgreich sowohl im Apple App Store als auch im Google Play Store veröffentlichen."
+      }
+    ],
+    "ur": [
+      {
+        "question": "کیا ببل میرے سٹارٹ اپ کے لیے کافی قابل توسیع ہے؟",
+        "answer": "ہاں، ببل انتہائی قابل توسیع ہے۔ یہ AWS انفراسٹرکچر پر چلتا ہے اور خود بخود سرور کی فراہمی کو سنبھالتا ہے۔ بہت سے کامیاب سٹارٹ اپس کو کبھی ہجرت کرنے کی ضرورت پیش آنے سے پہلے مکمل طور پر بلبلے پر دسیوں ہزار فعال صارفین اور لاکھوں ڈیٹا بیس ریکارڈز کو سنبھالنے کے لیے تیار کیا گیا ہے۔"
+      },
+      {
+        "question": "کیا میرے پاس میری ببل ایپ کے سورس کوڈ کا مالک ہے؟",
+        "answer": "چونکہ ببل ایک ویژول پروگرامنگ پلیٹ فارم ہے، آپ کو روایتی سورس کوڈ (جیسے React یا Node.js) موصول نہیں ہوتا ہے۔ آپ دانشورانہ املاک (IP) اور اپنے صارف کے ڈیٹا کے مالک ہیں۔ اگر آپ کبھی چھوڑتے ہیں، تو آپ اپنا ڈیٹا CSV یا API کے ذریعے برآمد کر سکتے ہیں، لیکن بصری منطق پلیٹ فارم پر موجود رہتی ہے۔"
+      },
+      {
+        "question": "کیا ببل بیرونی APIs اور خدمات کے ساتھ ضم ہو سکتا ہے؟",
+        "answer": "بالکل۔ ببل کا API کنیکٹر ناقابل یقین حد تک طاقتور ہے۔ ہم آپ کی ایپ کو عملی طور پر کسی بھی جدید RESTful API کے ساتھ مربوط کر سکتے ہیں، بشمول ادائیگیوں کے لیے Stripe، AI خصوصیات کے لیے OpenAI، SMS کے لیے Twilio، اور ای میل کے لیے SendGrid۔"
+      },
+      {
+        "question": "روایتی کوڈنگ کے مقابلے میں آپ ببل ایپ کتنی تیزی سے بنا سکتے ہیں؟",
+        "answer": "ببل کی ترقی عام طور پر روایتی ترقی سے 3x سے 5x تیز ہوتی ہے۔ ایک پیچیدہ کم از کم قابل عمل پروڈکٹ (MVP) جس میں روایتی کوڈ اسٹیک کے ساتھ 4-6 ماہ لگ سکتے ہیں، اسے ببل کا استعمال کرتے ہوئے اکثر 4 سے 8 ہفتوں میں لانچ کیا جا سکتا ہے۔"
+      },
+      {
+        "question": "کیا ببل ایپ محفوظ ہے؟",
+        "answer": "ہاں، ببل مضبوط حفاظتی خصوصیات فراہم کرتا ہے جس میں SSL انکرپشن، SOC 2 Type II تعمیل، اور رازداری کے تفصیلی اصول شامل ہیں۔ ہم اس بات کو یقینی بنانے کے لیے پرائیویسی کے ان قواعد کو احتیاط کے ساتھ ترتیب دیتے ہیں کہ صارفین صرف اسی ڈیٹا تک رسائی حاصل کر سکتے ہیں جسے دیکھنے کے لیے وہ واضح طور پر مجاز ہیں۔"
+      },
+      {
+        "question": "کیا میں اپنی Bubble ایپ کو iOS اور Android App Stores پر شائع کر سکتا ہوں؟",
+        "answer": "بذریعہ ڈیفالٹ، ببل ترقی پسند ویب ایپس (PWAs) بناتا ہے۔ تاہم، مقامی ریپرز جیسے BDK Native یا Draftbit کا استعمال کرتے ہوئے، ہم آپ کی ببل ایپ کو پیکج کر سکتے ہیں اور اسے Apple App Store اور Google Play Store دونوں پر کامیابی کے ساتھ شائع کر سکتے ہیں۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "هل Bubble قابل للتطوير بما يكفي لشركتي الناشئة؟",
+        "answer": "نعم، Bubble قابل للتطوير بدرجة كبيرة. يتم تشغيله على البنية التحتية لـ AWS ويتعامل تلقائيًا مع توفير الخادم. توسعت العديد من الشركات الناشئة الناجحة للتعامل مع عشرات الآلاف من المستخدمين النشطين وملايين سجلات قواعد البيانات بالكامل على Bubble قبل الحاجة إلى الترحيل."
+      },
+      {
+        "question": "هل أمتلك الكود المصدري لتطبيق Bubble الخاص بي؟",
+        "answer": "نظرًا لأن Bubble عبارة عن نظام أساسي للبرمجة المرئية، فلن تتلقى الكود المصدري التقليدي (مثل React أو Node.js). أنت تمتلك الملكية الفكرية (IP) وبيانات المستخدم الخاصة بك. إذا غادرت في أي وقت، يمكنك تصدير بياناتك عبر CSV أو API، لكن المنطق المرئي يبقى على المنصة."
+      },
+      {
+        "question": "هل يمكن لـ Bubble التكامل مع واجهات برمجة التطبيقات (APIs) والخدمات الخارجية؟",
+        "answer": "بالتأكيد. موصل API الخاص بـ Bubble قوي بشكل لا يصدق. يمكننا دمج تطبيقك مع أي واجهة برمجة تطبيقات RESTful حديثة تقريبًا، بما في ذلك Stripe للمدفوعات، و OpenAI لميزات الذكاء الاصطناعي، و Twilio للرسائل القصيرة، و SendGrid للبريد الإلكتروني."
+      },
+      {
+        "question": "ما مدى سرعة بناء تطبيق Bubble مقارنة بالبرمجة التقليدية؟",
+        "answer": "عادةً ما يكون تطوير Bubble أسرع بمقدار 3 إلى 5 أضعاف من التطوير التقليدي. يمكن إطلاق منتج قابل للتطبيق بحد أدنى (MVP) معقد والذي قد يستغرق 4-6 أشهر مع مجموعة أكواد تقليدية في غضون 4 إلى 8 أسابيع فقط باستخدام Bubble."
+      },
+      {
+        "question": "هل تطبيق Bubble آمن؟",
+        "answer": "نعم. يوفر Bubble ميزات أمان قوية بما في ذلك تشفير SSL، والامتثال لـ SOC 2 Type II، وقواعد الخصوصية التفصيلية. نقوم بتكوين قواعد الخصوصية هذه بدقة لضمان أن المستخدمين يمكنهم الوصول فقط إلى البيانات التي يُصرح لهم صراحةً برؤيتها."
+      },
+      {
+        "question": "هل يمكنني نشر تطبيق Bubble الخاص بي على متاجر تطبيقات iOS و Android؟",
+        "answer": "افتراضيًا، يقوم Bubble بإنشاء تطبيقات ويب تقدمية (PWAs). ومع ذلك، باستخدام الأغلفة الأصلية (native wrappers) مثل BDK Native أو Draftbit، يمكننا حزم تطبيق Bubble الخاص بك ونشره بنجاح على كل من Apple App Store و Google Play Store."
+      }
+    ]
+  },
+  "learning-management-systems": {
+    "en": [
+      {
+        "question": "Can you migrate our existing courses to the new LMS?",
+        "answer": "Yes. We can seamlessly migrate courses, student records, and historical grading data using SCORM/xAPI packages or custom database scripts to ensure no disruption to your current learning environment."
+      },
+      {
+        "question": "Does your LMS support live video classes?",
+        "answer": "Absolutely. We integrate powerful video conferencing APIs like Zoom, Microsoft Teams, or custom WebRTC solutions directly into the LMS, allowing instructors to host secure, live interactive sessions without students leaving the platform."
+      },
+      {
+        "question": "How do you handle student assessments and certifications?",
+        "answer": "Our systems feature advanced assessment engines that support automated grading, randomized question banks, timed quizzes, and plagiarism detection. Upon successful completion, the LMS automatically generates and emails secure, verifiable digital certificates."
+      },
+      {
+        "question": "Is the LMS accessible on mobile devices?",
+        "answer": "Yes, we develop our LMS platforms to be fully responsive for mobile browsers, or we can build dedicated iOS and Android apps allowing students to download course materials and study offline."
+      },
+      {
+        "question": "Can the LMS be monetized for selling courses?",
+        "answer": "Yes. We integrate complete e-commerce capabilities, enabling you to sell individual courses, bundle packages, or offer recurring monthly subscriptions using gateways like Stripe and PayPal."
+      },
+      {
+        "question": "How do you track student progress and engagement?",
+        "answer": "We implement granular analytics dashboards. Instructors can view real-time data on course completion rates, video watch time, quiz performance analytics, and identify students who may need additional support or intervention."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Mevcut kurslarımızı yeni ÖYS'ye (LMS) taşıyabilir misiniz?",
+        "answer": "Evet. Mevcut öğrenim ortamınızda hiçbir kesinti olmamasını sağlamak için SCORM/xAPI paketlerini veya özel veritabanı komut dosyalarını kullanarak kursları, öğrenci kayıtlarını ve geçmiş not verilerini sorunsuz bir şekilde taşıyabiliriz."
+      },
+      {
+        "question": "ÖYS'niz canlı video sınıflarını destekliyor mu?",
+        "answer": "Kesinlikle. Zoom, Microsoft Teams gibi güçlü video konferans API'lerini veya özel WebRTC çözümlerini doğrudan LMS'ye entegre ederek, eğitmenlerin öğrencilerin platformdan ayrılmasına gerek kalmadan güvenli, canlı etkileşimli oturumlar düzenlemesine olanak tanıyoruz."
+      },
+      {
+        "question": "Öğrenci değerlendirmelerini ve sertifikasyonlarını nasıl yönetiyorsunuz?",
+        "answer": "Sistemlerimiz otomatik not verme, rastgele soru bankaları, süreli sınavlar ve intihal tespitini destekleyen gelişmiş değerlendirme motorlarına sahiptir. Başarılı bir şekilde tamamlandığında, ÖYS otomatik olarak güvenli, doğrulanabilir dijital sertifikalar oluşturur ve bunları e-postayla gönderir."
+      },
+      {
+        "question": "ÖYS'ye mobil cihazlardan erişilebilir mi?",
+        "answer": "Evet, ÖYS platformlarımızı mobil tarayıcılar için tamamen duyarlı (responsive) olacak şekilde geliştiriyoruz veya öğrencilerin kurs materyallerini indirmelerine ve çevrimdışı çalışmalarına olanak tanıyan özel iOS ve Android uygulamaları oluşturabiliriz."
+      },
+      {
+        "question": "ÖYS kurs satmak için paraya dönüştürülebilir mi?",
+        "answer": "Evet. Tam e-ticaret yeteneklerini entegre ederek, Stripe ve PayPal gibi ağ geçitlerini kullanarak bireysel kurslar, paketler satmanıza veya yinelenen aylık abonelikler sunmanıza olanak tanıyoruz."
+      },
+      {
+        "question": "Öğrenci ilerlemesini ve katılımını nasıl takip ediyorsunuz?",
+        "answer": "Ayrıntılı analiz kontrol panelleri uyguluyoruz. Eğitmenler; kursu tamamlama oranları, video izleme süresi, sınav performansı analizleri hakkında gerçek zamanlı verileri görüntüleyebilir ve ek destek veya müdahaleye ihtiyaç duyabilecek öğrencileri belirleyebilir."
+      }
+    ],
+    "de": [
+      {
+        "question": "Können Sie unsere bestehenden Kurse in das neue LMS migrieren?",
+        "answer": "Ja. Wir können Kurse, Schülerdatensätze und historische Bewertungsdaten nahtlos mithilfe von SCORM/xAPI-Paketen oder benutzerdefinierten Datenbankskripten migrieren, um sicherzustellen, dass Ihre aktuelle Lernumgebung nicht unterbrochen wird."
+      },
+      {
+        "question": "Unterstützt Ihr LMS Live-Videokurse?",
+        "answer": "Absolut. Wir integrieren leistungsstarke Videokonferenz-APIs wie Zoom, Microsoft Teams oder benutzerdefinierte WebRTC-Lösungen direkt in das LMS, sodass Dozenten sichere, interaktive Live-Sitzungen abhalten können, ohne dass die Studenten die Plattform verlassen müssen."
+      },
+      {
+        "question": "Wie handhaben Sie Leistungsbeurteilungen und Zertifizierungen von Studierenden?",
+        "answer": "Unsere Systeme verfügen über fortschrittliche Bewertungs-Engines, die automatische Benotung, randomisierte Fragenkataloge, zeitgesteuerte Quizze und Plagiatserkennung unterstützen. Nach erfolgreichem Abschluss generiert das LMS automatisch sichere, überprüfbare digitale Zertifikate und versendet diese per E-Mail."
+      },
+      {
+        "question": "Ist das LMS auf mobilen Geräten zugänglich?",
+        "answer": "Ja, wir entwickeln unsere LMS-Plattformen so, dass sie für mobile Browser vollständig responsive sind, oder wir können spezielle iOS- und Android-Apps erstellen, mit denen Studenten Kursmaterialien herunterladen und offline lernen können."
+      },
+      {
+        "question": "Kann das LMS für den Verkauf von Kursen monetarisiert werden?",
+        "answer": "Ja. Wir integrieren umfassende E-Commerce-Funktionen, sodass Sie mithilfe von Gateways wie Stripe und PayPal einzelne Kurse verkaufen, Pakete schnüren oder wiederkehrende monatliche Abonnements anbieten können."
+      },
+      {
+        "question": "Wie verfolgen Sie den Lernfortschritt und das Engagement der Studierenden?",
+        "answer": "Wir implementieren granulare Analyse-Dashboards. Dozenten können Echtzeitdaten zu Kursabschlussquoten, Videowiedergabezeit und Quiz-Leistungsanalysen einsehen und Studenten identifizieren, die möglicherweise zusätzliche Unterstützung oder Intervention benötigen."
+      }
+    ],
+    "ur": [
+      {
+        "question": "کیا آپ ہمارے موجودہ کورسز کو نئے LMS میں منتقل کر سکتے ہیں؟",
+        "answer": "ہاں۔ آپ کے موجودہ تعلیمی ماحول میں کسی قسم کے خلل کو یقینی بنانے کے لیے ہم SCORM/xAPI پیکجز یا کسٹم ڈیٹا بیس اسکرپٹس کا استعمال کرتے ہوئے کورسز، طلبہ کے ریکارڈز اور تاریخی درجہ بندی کے ڈیٹا کو بغیر کسی رکاوٹ کے منتقل کر سکتے ہیں۔"
+      },
+      {
+        "question": "کیا آپ کا LMS لائیو ویڈیو کلاسز کو سپورٹ کرتا ہے؟",
+        "answer": "بالکل۔ ہم طاقتور ویڈیو کانفرنسنگ APIs جیسے Zoom، Microsoft Teams، یا اپنی مرضی کے WebRTC حل کو براہ راست LMS میں ضم کرتے ہیں، جس سے اساتذہ کو طلباء کے پلیٹ فارم کو چھوڑے بغیر محفوظ، لائیو انٹرایکٹو سیشنز کی میزبانی کرنے کی اجازت ملتی ہے۔"
+      },
+      {
+        "question": "آپ طلباء کے جائزوں اور سرٹیفیکیشنز کو کیسے ہینڈل کرتے ہیں؟",
+        "answer": "ہمارے سسٹمز میں اعلی درجے کے تشخیصی انجن موجود ہیں جو خودکار گریڈنگ، بے ترتیب سوالیہ بینک، وقتی کوئز، اور سرقہ کی نشاندہی کی حمایت کرتے ہیں۔ کامیابی کے ساتھ مکمل ہونے پر، LMS خود بخود تیار کرتا ہے اور ای میل محفوظ، قابل تصدیق ڈیجیٹل سرٹیفکیٹ۔"
+      },
+      {
+        "question": "کیا LMS موبائل آلات پر قابل رسائی ہے؟",
+        "answer": "ہاں، ہم اپنے LMS پلیٹ فارمز کو موبائل براؤزرز کے لیے مکمل طور پر جوابدہ بنانے کے لیے تیار کرتے ہیں، یا ہم وقف شدہ iOS اور Android ایپس بنا سکتے ہیں جو طلباء کو کورس کا مواد ڈاؤن لوڈ کرنے اور آف لائن مطالعہ کرنے کی اجازت دیتی ہیں۔"
+      },
+      {
+        "question": "کیا کورسز بیچنے کے لیے LMS سے رقم کمائی جا سکتی ہے؟",
+        "answer": "ہاں۔ ہم ای کامرس کی مکمل صلاحیتوں کو یکجا کرتے ہیں، جس سے آپ انفرادی کورسز، بنڈل پیکجز فروخت کر سکتے ہیں یا Stripe اور PayPal جیسے گیٹ ویز کا استعمال کرتے ہوئے بار بار چلنے والی ماہانہ سبسکرپشنز پیش کر سکتے ہیں۔"
+      },
+      {
+        "question": "آپ طالب علم کی ترقی اور مشغولیت کو کیسے ٹریک کرتے ہیں؟",
+        "answer": "ہم دانے دار تجزیات کے ڈیش بورڈز کو نافذ کرتے ہیں۔ اساتذہ کورس کی تکمیل کی شرحوں، ویڈیو دیکھنے کے وقت، کوئز کی کارکردگی کے تجزیات، اور ان طلباء کی نشاندہی کر سکتے ہیں جنہیں اضافی مدد یا مداخلت کی ضرورت ہو سکتی ہے۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "هل يمكنك ترحيل دوراتنا الحالية إلى نظام إدارة التعلم (LMS) الجديد؟",
+        "answer": "نعم. يمكننا ترحيل الدورات وسجلات الطلاب وبيانات الدرجات التاريخية بسلاسة باستخدام حزم SCORM/xAPI أو نصوص قاعدة بيانات مخصصة لضمان عدم حدوث أي انقطاع في بيئة التعلم الحالية الخاصة بك."
+      },
+      {
+        "question": "هل يدعم نظام إدارة التعلم (LMS) الخاص بك فصول الفيديو الحية؟",
+        "answer": "بالتأكيد. نقوم بدمج واجهات برمجة تطبيقات مؤتمرات الفيديو القوية مثل Zoom أو Microsoft Teams أو حلول WebRTC مخصصة مباشرة في نظام إدارة التعلم، مما يتيح للمدرسين استضافة جلسات تفاعلية حية وآمنة دون مغادرة الطلاب للمنصة."
+      },
+      {
+        "question": "كيف تتعاملون مع تقييمات الطلاب والشهادات؟",
+        "answer": "تتميز أنظمتنا بمحركات تقييم متقدمة تدعم التصنيف التلقائي، وبنوك الأسئلة العشوائية، والاختبارات المحددة بوقت، واكتشاف الانتحال. عند الانتهاء بنجاح، يقوم نظام إدارة التعلم بإنشاء شهادات رقمية آمنة يمكن التحقق منها ويرسلها عبر البريد الإلكتروني تلقائيًا."
+      },
+      {
+        "question": "هل يمكن الوصول إلى نظام إدارة التعلم على الأجهزة المحمولة؟",
+        "answer": "نعم، نقوم بتطوير منصات LMS الخاصة بنا لتكون مستجيبة بالكامل (responsive) لمتصفحات الأجهزة المحمولة، أو يمكننا بناء تطبيقات iOS و Android مخصصة تتيح للطلاب تنزيل مواد الدورة التدريبية والدراسة دون اتصال بالإنترنت."
+      },
+      {
+        "question": "هل يمكن تحقيق الدخل من نظام إدارة التعلم لبيع الدورات؟",
+        "answer": "نعم. نحن ندمج إمكانات التجارة الإلكترونية الكاملة، مما يتيح لك بيع دورات فردية، أو حزم (bundles)، أو تقديم اشتراكات شهرية متكررة باستخدام بوابات دفع مثل Stripe و PayPal."
+      },
+      {
+        "question": "كيف تتبعون تقدم الطلاب ومشاركتهم؟",
+        "answer": "نقوم بتنفيذ لوحات تحكم تحليلية دقيقة. يمكن للمدرسين عرض بيانات في الوقت الفعلي حول معدلات إكمال الدورة التدريبية، ووقت مشاهدة الفيديو، وتحليلات أداء الاختبارات، وتحديد الطلاب الذين قد يحتاجون إلى دعم أو تدخل إضافي."
+      }
+    ]
+  },
+  "flutter-development": {
+    "en": [
+      {
+        "question": "Why should we choose Flutter for our mobile app?",
+        "answer": "Flutter allows us to build beautiful, natively-compiled applications for both iOS and Android from a single codebase. It drastically reduces development time and costs while maintaining high-performance 60fps animations that rival native apps."
+      },
+      {
+        "question": "Can Flutter apps access device hardware like Bluetooth or GPS?",
+        "answer": "Yes. Flutter has a massive repository of community and Google-supported plugins that provide seamless access to native device features such as cameras, GPS, Bluetooth, sensors, and local storage."
+      },
+      {
+        "question": "Is Flutter suitable for enterprise applications?",
+        "answer": "Absolutely. Major companies like Alibaba, BMW, and Tencent rely on Flutter for their enterprise apps. Its strong typed language (Dart), scalable architecture patterns (BLoC, Riverpod), and excellent CI/CD support make it ideal for large-scale projects."
+      },
+      {
+        "question": "How long does it take to develop a Flutter app?",
+        "answer": "Depending on the complexity, a fully functional Flutter MVP takes about 2 to 4 months. Because we write code once for both platforms, the timeline is often 30-40% faster than developing separate native iOS and Android apps."
+      },
+      {
+        "question": "Do Flutter apps work on the web and desktop too?",
+        "answer": "Yes. One of Flutter's greatest strengths is true cross-platform capability. The same Dart codebase can be compiled into a mobile app (iOS/Android), a web application, and native desktop apps (macOS, Windows, Linux)."
+      },
+      {
+        "question": "What happens if Google stops supporting Flutter?",
+        "answer": "Flutter is an open-source project with a massive, highly active global community. Even if Google were to step back, the framework is self-sustaining, and large corporations actively contribute to its maintenance and growth."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Mobil uygulamamız için neden Flutter'ı seçmeliyiz?",
+        "answer": "Flutter, tek bir kod tabanından hem iOS hem de Android için güzel, yerel olarak derlenmiş uygulamalar oluşturmamızı sağlar. Yerel uygulamalara rakip olan yüksek performanslı 60 fps animasyonları korurken geliştirme süresini ve maliyetlerini büyük ölçüde azaltır."
+      },
+      {
+        "question": "Flutter uygulamaları Bluetooth veya GPS gibi cihaz donanımına erişebilir mi?",
+        "answer": "Evet. Flutter, kameralar, GPS, Bluetooth, sensörler ve yerel depolama gibi yerel cihaz özelliklerine sorunsuz erişim sağlayan büyük bir topluluk ve Google destekli eklentiler deposuna sahiptir."
+      },
+      {
+        "question": "Flutter kurumsal uygulamalar için uygun mudur?",
+        "answer": "Kesinlikle. Alibaba, BMW ve Tencent gibi büyük şirketler kurumsal uygulamaları için Flutter'a güveniyor. Güçlü tipli dili (Dart), ölçeklenebilir mimari kalıpları (BLoC, Riverpod) ve mükemmel CI/CD desteği, onu büyük ölçekli projeler için ideal kılar."
+      },
+      {
+        "question": "Bir Flutter uygulaması geliştirmek ne kadar sürer?",
+        "answer": "Karmaşıklığa bağlı olarak, tam işlevsel bir Flutter MVP'si yaklaşık 2 ila 4 ay sürer. Kodu her iki platform için de bir kez yazdığımız için, zaman çizelgesi genellikle ayrı yerel iOS ve Android uygulamaları geliştirmekten %30-40 daha hızlıdır."
+      },
+      {
+        "question": "Flutter uygulamaları web'de ve masaüstünde de çalışır mı?",
+        "answer": "Evet. Flutter'ın en büyük güçlerinden biri gerçek çapraz platform (cross-platform) yeteneğidir. Aynı Dart kod tabanı bir mobil uygulamaya (iOS/Android), bir web uygulamasına ve yerel masaüstü uygulamalarına (macOS, Windows, Linux) derlenebilir."
+      },
+      {
+        "question": "Google, Flutter'ı desteklemeyi bırakırsa ne olur?",
+        "answer": "Flutter, devasa, son derece aktif bir küresel topluluğa sahip açık kaynaklı bir projedir. Google geri adım atsa bile, çerçeve (framework) kendi kendini idame ettirebilir durumdadır ve büyük şirketler bakımına ve büyümesine aktif olarak katkıda bulunur."
+      }
+    ],
+    "de": [
+      {
+        "question": "Warum sollten wir Flutter für unsere mobile App wählen?",
+        "answer": "Flutter ermöglicht es uns, aus einer einzigen Codebasis schöne, nativ kompilierte Anwendungen für iOS und Android zu erstellen. Es reduziert die Entwicklungszeit und -kosten drastisch, während hochleistungsfähige 60-fps-Animationen beibehalten werden, die mit nativen Apps mithalten können."
+      },
+      {
+        "question": "Können Flutter-Apps auf Gerätehardware wie Bluetooth oder GPS zugreifen?",
+        "answer": "Ja. Flutter verfügt über ein riesiges Repository an von der Community und Google unterstützten Plugins, die einen nahtlosen Zugriff auf native Gerätefunktionen wie Kameras, GPS, Bluetooth, Sensoren und lokalen Speicher bieten."
+      },
+      {
+        "question": "Ist Flutter für Unternehmensanwendungen geeignet?",
+        "answer": "Absolut. Große Unternehmen wie Alibaba, BMW und Tencent verlassen sich bei ihren Unternehmens-Apps auf Flutter. Seine stark typisierte Sprache (Dart), skalierbare Architekturmuster (BLoC, Riverpod) und die hervorragende CI/CD-Unterstützung machen es ideal für Großprojekte."
+      },
+      {
+        "question": "Wie lange dauert die Entwicklung einer Flutter-App?",
+        "answer": "Je nach Komplexität dauert ein voll funktionsfähiges Flutter-MVP etwa 2 bis 4 Monate. Da wir den Code einmal für beide Plattformen schreiben, ist der Zeitplan oft 30–40 % schneller als die Entwicklung separater nativer iOS- und Android-Apps."
+      },
+      {
+        "question": "Funktionieren Flutter-Apps auch im Web und auf dem Desktop?",
+        "answer": "Ja. Eine der größten Stärken von Flutter ist die echte plattformübergreifende Fähigkeit. Dieselbe Dart-Codebasis kann in eine mobile App (iOS/Android), eine Webanwendung und native Desktop-Apps (macOS, Windows, Linux) kompiliert werden."
+      },
+      {
+        "question": "Was passiert, wenn Google Flutter nicht mehr unterstützt?",
+        "answer": "Flutter ist ein Open-Source-Projekt mit einer riesigen, sehr aktiven globalen Community. Selbst wenn Google sich zurückziehen würde, ist das Framework selbsterhaltend und große Unternehmen tragen aktiv zu seiner Pflege und seinem Wachstum bei."
+      }
+    ],
+    "ur": [
+      {
+        "question": "ہمیں اپنی موبائل ایپ کے لیے فلٹر کا انتخاب کیوں کرنا چاہیے؟",
+        "answer": "Flutter ہمیں ایک کوڈ بیس سے iOS اور Android دونوں کے لیے خوبصورت، مقامی طور پر مرتب کردہ ایپلی کیشنز بنانے کی اجازت دیتا ہے۔ یہ اعلی کارکردگی والی 60fps متحرک تصاویر کو برقرار رکھتے ہوئے ترقی کے وقت اور اخراجات کو نمایاں طور پر کم کرتا ہے جو مقامی ایپس کا مقابلہ کرتی ہیں۔"
+      },
+      {
+        "question": "کیا فلٹر ایپس ڈیوائس ہارڈویئر جیسے بلوٹوتھ یا جی پی ایس تک رسائی حاصل کر سکتی ہیں؟",
+        "answer": "ہاں۔ فلٹر کے پاس کمیونٹی اور گوگل کی حمایت یافتہ پلگ انز کا ایک وسیع ذخیرہ ہے جو مقامی ڈیوائس کی خصوصیات جیسے کیمرہ، GPS، بلوٹوتھ، سینسرز اور مقامی اسٹوریج تک بغیر کسی رکاوٹ کے رسائی فراہم کرتے ہیں۔"
+      },
+      {
+        "question": "کیا فلٹر انٹرپرائز ایپلی کیشنز کے لیے موزوں ہے؟",
+        "answer": "بالکل۔ بڑی کمپنیاں جیسے علی بابا، بی ایم ڈبلیو، اور ٹینسنٹ اپنی انٹرپرائز ایپس کے لیے فلٹر پر انحصار کرتی ہیں۔ اس کی مضبوط ٹائپ شدہ زبان (ڈارٹ)، توسیع پذیر فن تعمیر کے نمونے (BLOC، ریورپوڈ)، اور بہترین CI/CD سپورٹ اسے بڑے پیمانے پر منصوبوں کے لیے مثالی بناتی ہے۔"
+      },
+      {
+        "question": "فلٹر ایپ بنانے میں کتنا وقت لگتا ہے؟",
+        "answer": "پیچیدگی پر منحصر ہے، ایک مکمل فعال فلٹر MVP میں تقریباً 2 سے 4 مہینے لگتے ہیں۔ چونکہ ہم دونوں پلیٹ فارمز کے لیے ایک بار کوڈ لکھتے ہیں، ٹائم لائن اکثر الگ مقامی iOS اور Android ایپس تیار کرنے کے مقابلے 30-40% تیز ہوتی ہے۔"
+      },
+      {
+        "question": "کیا فلٹر ایپس ویب اور ڈیسک ٹاپ پر بھی کام کرتی ہیں؟",
+        "answer": "جی ہاں، فلٹر کی سب سے بڑی خوبیوں میں سے ایک کراس پلیٹ فارم کی حقیقی صلاحیت ہے۔ اسی ڈارٹ کوڈ بیس کو موبائل ایپ (iOS/Android)، ایک ویب ایپلیکیشن، اور مقامی ڈیسک ٹاپ ایپس (macOS، Windows، Linux) میں مرتب کیا جا سکتا ہے۔"
+      },
+      {
+        "question": "اگر گوگل فلٹر کو سپورٹ کرنا بند کر دے تو کیا ہوگا؟",
+        "answer": "فلٹر ایک اوپن سورس پروجیکٹ ہے جس میں ایک بڑے پیمانے پر، انتہائی فعال عالمی برادری ہے۔ یہاں تک کہ اگر گوگل کو پیچھے ہٹنا پڑا، فریم ورک خود کو برقرار رکھنے والا ہے، اور بڑی کارپوریشنز فعال طور پر اس کی دیکھ بھال اور ترقی میں اپنا حصہ ڈالتی ہیں۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "لماذا يجب أن نختار Flutter لتطبيق الهاتف المحمول الخاص بنا؟",
+        "answer": "يسمح لنا إطار عمل Flutter ببناء تطبيقات جميلة ومجمعة محليًا لكل من iOS و Android من قاعدة بيانات برمجية واحدة. إنه يقلل بشكل كبير من وقت التطوير والتكاليف مع الحفاظ على رسوم متحركة عالية الأداء بمعدل 60 إطارًا في الثانية تنافس التطبيقات الأصلية."
+      },
+      {
+        "question": "هل يمكن لتطبيقات Flutter الوصول إلى أجهزة الهاتف مثل البلوتوث أو GPS؟",
+        "answer": "نعم. يحتوي Flutter على مستودع ضخم من المكونات الإضافية (plugins) المدعومة من المجتمع و Google والتي توفر وصولاً سلسًا إلى ميزات الجهاز الأصلية مثل الكاميرات و GPS والبلوتوث والمستشعرات والتخزين المحلي."
+      },
+      {
+        "question": "هل Flutter مناسب لتطبيقات المؤسسات (enterprise applications)؟",
+        "answer": "بالتأكيد. تعتمد كبرى الشركات مثل Alibaba و BMW و Tencent على Flutter في تطبيقات مؤسساتها. لغته القوية (Dart)، وأنماط البنية القابلة للتطوير (BLoC، Riverpod)، ودعم CI/CD الممتاز يجعلها مثالية للمشاريع واسعة النطاق."
+      },
+      {
+        "question": "كم من الوقت يستغرق تطوير تطبيق Flutter؟",
+        "answer": "اعتمادًا على التعقيد، يستغرق منتج Flutter قابل للتطبيق بحد أدنى (MVP) ويعمل بكامل طاقته حوالي 2 إلى 4 أشهر. نظرًا لأننا نكتب الكود مرة واحدة لكلا النظامين، غالبًا ما يكون الإطار الزمني أسرع بنسبة 30-40٪ من تطوير تطبيقات iOS و Android الأصلية المنفصلة."
+      },
+      {
+        "question": "هل تعمل تطبيقات Flutter على الويب وسطح المكتب أيضًا؟",
+        "answer": "نعم. تتمثل إحدى أعظم نقاط قوة Flutter في قدرته الحقيقية عبر الأنظمة الأساسية (cross-platform). يمكن تجميع نفس قاعدة بيانات Dart في تطبيق جوال (iOS/Android)، وتطبيق ويب، وتطبيقات سطح مكتب أصلية (macOS و Windows و Linux)."
+      },
+      {
+        "question": "ماذا يحدث إذا توقفت Google عن دعم Flutter؟",
+        "answer": "Flutter هو مشروع مفتوح المصدر (open-source) يضم مجتمعًا عالميًا ضخمًا ونشطًا للغاية. حتى لو تراجعت Google، فإن الإطار مستدام ذاتيًا، وتساهم الشركات الكبرى بنشاط في صيانته ونموه."
+      }
+    ]
+  },
+  "b2b-ecommerce": {
+    "en": [
+      {
+        "question": "How is B2B e-commerce different from regular B2C?",
+        "answer": "B2B e-commerce involves complex buying cycles. It requires features not typically found in B2C, such as custom pricing catalogs per customer, bulk ordering tools, quote request (RFQ) workflows, net-30 payment terms, and multi-user corporate accounts."
+      },
+      {
+        "question": "Can you implement customer-specific pricing?",
+        "answer": "Yes. We build dynamic pricing engines that integrate with your ERP. When a B2B client logs in, they see their specific negotiated rates, tiered volume discounts, and custom product catalogs restricted to their account."
+      },
+      {
+        "question": "Does the platform support Request For Quote (RFQ)?",
+        "answer": "Absolutely. We build robust RFQ workflows where buyers can add items to a quote rather than a cart. Your sales team receives the quote, negotiates the price, and sends it back to the customer for single-click checkout."
+      },
+      {
+        "question": "How do you handle complex shipping and freight calculations?",
+        "answer": "B2B orders often require LTL (Less Than Truckload) or FTL shipping. We integrate with logistics APIs (like ShipStation, Freightquote, or FedEx Freight) to calculate accurate real-time shipping costs based on weight, pallet dimensions, and delivery zones."
+      },
+      {
+        "question": "Can corporate buyers have multiple user roles on one account?",
+        "answer": "Yes, we implement hierarchical account management. A corporate account can have 'Buyers' who create draft orders, and 'Approvers' who must authorize the purchase before the order is finalized, ensuring internal corporate compliance."
+      },
+      {
+        "question": "What platforms do you use for B2B e-commerce?",
+        "answer": "For highly complex, custom needs, we build headless solutions using Next.js and custom microservices. For platform-based approaches, we utilize Adobe Commerce (Magento B2B), Shopify Plus (B2B features), or BigCommerce Enterprise."
+      }
+    ],
+    "tr": [
+      {
+        "question": "B2B e-ticaret, normal B2C'den nasıl farklıdır?",
+        "answer": "B2B e-ticaret, karmaşık satın alma döngülerini içerir. Müşteri başına özel fiyatlandırma katalogları, toplu sipariş araçları, teklif talebi (RFQ) iş akışları, 30 gün vadeli ödeme koşulları ve çok kullanıcılı kurumsal hesaplar gibi B2C'de genellikle bulunmayan özellikler gerektirir."
+      },
+      {
+        "question": "Müşteriye özel fiyatlandırma uygulayabilir misiniz?",
+        "answer": "Evet. ERP'nizle entegre olan dinamik fiyatlandırma motorları kuruyoruz. Bir B2B müşterisi giriş yaptığında, kendisine özel müzakere edilmiş oranlarını, kademeli hacim indirimlerini ve hesaplarıyla sınırlandırılmış özel ürün kataloglarını görür."
+      },
+      {
+        "question": "Platform Teklif Talebini (RFQ) destekliyor mu?",
+        "answer": "Kesinlikle. Alıcıların ürünleri sepete atmak yerine bir teklife ekleyebileceği sağlam RFQ iş akışları oluşturuyoruz. Satış ekibiniz teklifi alır, fiyatı müzakere eder ve tek tıklamayla ödeme için müşteriye geri gönderir."
+      },
+      {
+        "question": "Karmaşık nakliye ve navlun hesaplamalarını nasıl yönetiyorsunuz?",
+        "answer": "B2B siparişleri genellikle LTL (Kamyon Yükünden Az) veya FTL taşımacılığı gerektirir. Ağırlık, palet boyutları ve teslimat bölgelerine dayalı doğru gerçek zamanlı nakliye maliyetlerini hesaplamak için lojistik API'leriyle (ShipStation, Freightquote veya FedEx Freight gibi) entegre oluyoruz."
+      },
+      {
+        "question": "Kurumsal alıcıların tek bir hesapta birden fazla kullanıcı rolü olabilir mi?",
+        "answer": "Evet, hiyerarşik hesap yönetimi uyguluyoruz. Kurumsal bir hesatta, taslak siparişler oluşturan 'Alıcılar' ve şirket içi uyumluluğu sağlamak için sipariş kesinleşmeden önce satın alma işlemine izin vermesi gereken 'Onaylayanlar' olabilir."
+      },
+      {
+        "question": "B2B e-ticaret için hangi platformları kullanıyorsunuz?",
+        "answer": "Son derece karmaşık, özel ihtiyaçlar için Next.js ve özel mikro hizmetler kullanarak headless (başsız) çözümler oluşturuyoruz. Platform tabanlı yaklaşımlar için Adobe Commerce (Magento B2B), Shopify Plus (B2B özellikleri) veya BigCommerce Enterprise kullanıyoruz."
+      }
+    ],
+    "de": [
+      {
+        "question": "Wie unterscheidet sich B2B-E-Commerce vom normalen B2C?",
+        "answer": "B2B-E-Commerce beinhaltet komplexe Kaufzyklen. Es erfordert Funktionen, die normalerweise nicht im B2C zu finden sind, wie z. B. benutzerdefinierte Preiskataloge pro Kunde, Tools für Massenbestellungen, Workflows für Angebotsanfragen (RFQ), Netto-30-Zahlungsbedingungen und Firmenkonten für mehrere Benutzer."
+      },
+      {
+        "question": "Können Sie eine kundenspezifische Preisgestaltung implementieren?",
+        "answer": "Ja. Wir bauen dynamische Preis-Engines auf, die sich in Ihr ERP integrieren. Wenn sich ein B2B-Kunde anmeldet, sieht er seine spezifisch ausgehandelten Tarife, gestaffelten Mengenrabatte und benutzerdefinierten Produktkataloge, die auf sein Konto beschränkt sind."
+      },
+      {
+        "question": "Unterstützt die Plattform Preisanfragen (RFQ - Request For Quote)?",
+        "answer": "Absolut. Wir bauen robuste RFQ-Workflows auf, bei denen Käufer Artikel zu einem Angebot hinzufügen können, anstatt in einen Warenkorb. Ihr Verkaufsteam erhält das Angebot, verhandelt den Preis und sendet es zur Kasse mit nur einem Klick an den Kunden zurück."
+      },
+      {
+        "question": "Wie gehen Sie mit komplexen Versand- und Frachtberechnungen um?",
+        "answer": "Bei B2B-Bestellungen ist häufig LTL- (Less Than Truckload) oder FTL-Versand erforderlich. Wir integrieren Logistik-APIs (wie ShipStation, Freightquote oder FedEx Freight), um genaue Echtzeit-Versandkosten basierend auf Gewicht, Palettenabmessungen und Lieferzonen zu berechnen."
+      },
+      {
+        "question": "Können Firmenkäufer mehrere Benutzerrollen in einem Konto haben?",
+        "answer": "Ja, wir implementieren eine hierarchische Kontoverwaltung. Ein Firmenkonto kann 'Käufer' haben, die Bestellentwürfe erstellen, und 'Genehmiger', die den Kauf autorisieren müssen, bevor die Bestellung abgeschlossen wird, um die Einhaltung interner Unternehmensrichtlinien sicherzustellen."
+      },
+      {
+        "question": "Welche Plattformen nutzen Sie für den B2B-E-Commerce?",
+        "answer": "Für hochkomplexe, kundenspezifische Anforderungen entwickeln wir Headless-Lösungen mit Next.js und benutzerdefinierten Microservices. Für plattformbasierte Ansätze nutzen wir Adobe Commerce (Magento B2B), Shopify Plus (B2B-Funktionen) oder BigCommerce Enterprise."
+      }
+    ],
+    "ur": [
+      {
+        "question": "B2B ای کامرس باقاعدہ B2C سے کیسے مختلف ہے؟",
+        "answer": "B2B ای کامرس میں خریداری کے پیچیدہ چکر شامل ہیں۔ اسے ایسی خصوصیات کی ضرورت ہوتی ہے جو عام طور پر B2C میں نہیں پائی جاتی ہیں، جیسے کہ فی گاہک کسٹم پرائسنگ کیٹلاگ، بلک آرڈرنگ ٹولز، کوٹ کی درخواست (RFQ) ورک فلو، نیٹ-30 ادائیگی کی شرائط، اور ملٹی یوزر کارپوریٹ اکاؤنٹس۔"
+      },
+      {
+        "question": "کیا آپ کسٹمر کے لیے مخصوص قیمتوں کا تعین کر سکتے ہیں؟",
+        "answer": "ہاں۔ ہم متحرک قیمتوں کا تعین کرنے والے انجن بناتے ہیں جو آپ کے ERP کے ساتھ مربوط ہوتے ہیں۔ جب B2B کلائنٹ لاگ ان ہوتا ہے، تو وہ ان کے مخصوص گفت و شنید کے نرخوں، ٹائرڈ والیوم ڈسکاؤنٹس، اور ان کے اکاؤنٹ تک محدود کسٹم پروڈکٹ کیٹلاگ دیکھتے ہیں۔"
+      },
+      {
+        "question": "کیا پلیٹ فارم درخواست برائے اقتباس (RFQ) کی حمایت کرتا ہے؟",
+        "answer": "بالکل۔ ہم مضبوط RFQ ورک فلوز بناتے ہیں جہاں خریدار کارٹ کے بجائے کسی اقتباس میں آئٹمز شامل کر سکتے ہیں۔ آپ کی سیلز ٹیم کوٹ موصول ہوتی ہے، قیمت پر گفت و شنید کرتی ہے، اور سنگل کلک چیک آؤٹ کے لیے اسے واپس کسٹمر کو بھیجتی ہے۔"
+      },
+      {
+        "question": "آپ پیچیدہ شپنگ اور مال برداری کے حسابات کو کیسے سنبھالتے ہیں؟",
+        "answer": "B2B آرڈرز کو اکثر LTL (ٹرک لوڈ سے کم) یا FTL شپنگ کی ضرورت ہوتی ہے۔ ہم وزن، پیلیٹ کے طول و عرض، اور ڈلیوری زونز کی بنیاد پر درست ریئل ٹائم شپنگ لاگت کا حساب لگانے کے لیے لاجسٹک APIs (جیسے ShipStation، Freightquote، یا FedEx Freight) کے ساتھ مربوط ہوتے ہیں۔"
+      },
+      {
+        "question": "کیا کارپوریٹ خریداروں کے ایک اکاؤنٹ پر ایک سے زیادہ صارف کے کردار ہو سکتے ہیں؟",
+        "answer": "ہاں، ہم درجہ بندی کے اکاؤنٹ کے انتظام کو نافذ کرتے ہیں۔ کارپوریٹ اکاؤنٹ میں 'خریدار' ہو سکتے ہیں جو ڈرافٹ آرڈرز بناتے ہیں، اور 'منظور کرنے والے' جنہیں اندرونی کارپوریٹ تعمیل کو یقینی بناتے ہوئے، آرڈر کو حتمی شکل دینے سے پہلے خریداری کی اجازت دینا ضروری ہے۔"
+      },
+      {
+        "question": "آپ B2B ای کامرس کے لیے کون سے پلیٹ فارم استعمال کرتے ہیں؟",
+        "answer": "انتہائی پیچیدہ، حسب ضرورت ضروریات کے لیے، ہم Next.js اور کسٹم مائیکرو سروسز کا استعمال کرتے ہوئے ہیڈ لیس سلوشنز بناتے ہیں۔ پلیٹ فارم پر مبنی طریقوں کے لیے، ہم Adobe Commerce (Magento B2B)، Shopify Plus (B2B فیچرز)، یا BigCommerce Enterprise کا استعمال کرتے ہیں۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "كيف تختلف التجارة الإلكترونية B2B (الشركات للشركات) عن التجارة B2C (الشركات للمستهلكين) العادية؟",
+        "answer": "تتضمن التجارة الإلكترونية B2B دورات شراء معقدة. إنها تتطلب ميزات لا توجد عادةً في B2C، مثل كتالوجات التسعير المخصصة لكل عميل، وأدوات الطلب بالجملة، وسير عمل طلب عرض أسعار (RFQ)، وشروط دفع صافي 30 يومًا، وحسابات الشركات متعددة المستخدمين."
+      },
+      {
+        "question": "هل يمكنك تنفيذ تسعير خاص بالعميل؟",
+        "answer": "نعم. نحن نبني محركات تسعير ديناميكية تتكامل مع نظام تخطيط موارد المؤسسات (ERP) الخاص بك. عند تسجيل دخول عميل B2B، يرى أسعاره المتفاوض عليها المحددة، وخصومات الحجم المتدرجة، وكتالوجات المنتجات المخصصة والمقيدة بحسابه."
+      },
+      {
+        "question": "هل تدعم المنصة طلب عرض أسعار (RFQ)؟",
+        "answer": "بالتأكيد. نحن نبني مسارات عمل قوية لـ RFQ حيث يمكن للمشترين إضافة عناصر إلى عرض أسعار بدلاً من عربة التسوق. يتلقى فريق المبيعات الخاص بك عرض الأسعار، ويتفاوض على السعر، ويرسله مرة أخرى إلى العميل لإتمام الدفع بنقرة واحدة."
+      },
+      {
+        "question": "كيف تتعاملون مع حسابات الشحن والشحن البحري/البري المعقدة؟",
+        "answer": "تتطلب طلبات B2B غالبًا شحن LTL (أقل من حمولة شاحنة) أو FTL. نحن نتكامل مع واجهات برمجة تطبيقات الخدمات اللوجستية (مثل ShipStation أو Freightquote أو FedEx Freight) لحساب تكاليف الشحن الدقيقة في الوقت الفعلي بناءً على الوزن وأبعاد المنصة (pallet) ومناطق التسليم."
+      },
+      {
+        "question": "هل يمكن لمشتري الشركات أن يكون لهم أدوار مستخدمين متعددة على حساب واحد؟",
+        "answer": "نعم، نقوم بتنفيذ إدارة حسابات هرمية. يمكن أن يحتوي حساب الشركة على 'مشترين' ينشئون مسودات الطلبات، و 'معتمدين' يجب عليهم تفويض الشراء قبل إتمام الطلب، مما يضمن الامتثال لسياسات الشركة الداخلية."
+      },
+      {
+        "question": "ما هي المنصات التي تستخدمونها للتجارة الإلكترونية B2B؟",
+        "answer": "بالنسبة للاحتياجات المخصصة والمعقدة للغاية، نقوم ببناء حلول منفصلة (headless) باستخدام Next.js والخدمات المصغرة المخصصة. بالنسبة للمقاربات القائمة على المنصات، نستخدم Adobe Commerce (Magento B2B) أو Shopify Plus (ميزات B2B) أو BigCommerce Enterprise."
+      }
+    ]
+  },
+  "vr-development": {
+    "en": [
+      {
+        "question": "Which VR headsets do you develop for?",
+        "answer": "We develop for all major VR platforms. The Meta Quest (2, 3, and Pro) is our most popular target for standalone VR. We also build high-fidelity PC-VR experiences for the HTC Vive, Valve Index, and PSVR2 using Unreal Engine or Unity."
+      },
+      {
+        "question": "What is the difference between VR, AR, and MR?",
+        "answer": "Virtual Reality (VR) fully immerses you in a 100% digital environment. Augmented Reality (AR) overlays digital elements onto the real world via a screen. Mixed Reality (MR) seamlessly blends physical and digital worlds, allowing real and virtual objects to interact (like the Apple Vision Pro)."
+      },
+      {
+        "question": "How can VR benefit corporate training?",
+        "answer": "VR training offers a safe, consequence-free environment for high-risk or high-cost scenarios. It dramatically improves knowledge retention through experiential learning, whether it's simulating hazardous manufacturing procedures, medical surgeries, or soft-skills customer service training."
+      },
+      {
+        "question": "How long does it take to create a custom VR application?",
+        "answer": "A standard VR training module or architectural walkthrough typically takes 3 to 5 months. Highly complex multiplayer VR games or massive enterprise simulations involving extensive 3D asset creation and advanced physics can take 6 to 12 months."
+      },
+      {
+        "question": "Do we need to provide the 3D models for the VR app?",
+        "answer": "No, our team includes expert 3D artists and animators. We can create all necessary assets, environments, and avatars from scratch. However, if you have existing CAD files (like architectural blueprints or product designs), we can import and optimize them to reduce costs."
+      },
+      {
+        "question": "Can multiple users interact in the same VR space?",
+        "answer": "Yes. We develop synchronous multiplayer VR experiences. Using networking frameworks like Photon or Unreal's built-in replication, users from across the world can join the same virtual room, talk via spatial audio, and interact with the same 3D objects collaboratively."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Hangi VR başlıkları için geliştirme yapıyorsunuz?",
+        "answer": "Tüm büyük VR platformları için geliştirme yapıyoruz. Meta Quest (2, 3 ve Pro), bağımsız VR için en popüler hedefimizdir. Ayrıca Unreal Engine veya Unity kullanarak HTC Vive, Valve Index ve PSVR2 için aslına uygunluğu yüksek (high-fidelity) PC-VR deneyimleri oluşturuyoruz."
+      },
+      {
+        "question": "VR, AR ve MR arasındaki fark nedir?",
+        "answer": "Sanal Gerçeklik (VR), sizi %100 dijital bir ortama tamamen daldırır. Artırılmış Gerçeklik (AR), bir ekran aracılığıyla gerçek dünyanın üzerine dijital unsurlar yerleştirir. Karma Gerçeklik (MR), fiziksel ve dijital dünyaları kusursuz bir şekilde harmanlayarak gerçek ve sanal nesnelerin (Apple Vision Pro gibi) etkileşime girmesine olanak tanır."
+      },
+      {
+        "question": "VR, kurumsal eğitime nasıl fayda sağlayabilir?",
+        "answer": "VR eğitimi; yüksek riskli veya yüksek maliyetli senaryolar için güvenli, sonuçsuz bir ortam sunar. İster tehlikeli üretim prosedürlerini, tıbbi ameliyatları veya sosyal beceri müşteri hizmetleri eğitimini simüle etsin, deneyimsel öğrenme yoluyla bilginin elde tutulmasını önemli ölçüde artırır."
+      },
+      {
+        "question": "Özel bir VR uygulaması oluşturmak ne kadar sürer?",
+        "answer": "Standart bir VR eğitim modülü veya mimari inceleme genellikle 3 ila 5 ay sürer. Kapsamlı 3B varlık (asset) oluşturma ve gelişmiş fizik içeren oldukça karmaşık çok oyunculu VR oyunları veya devasa kurumsal simülasyonlar 6 ila 12 ay sürebilir."
+      },
+      {
+        "question": "VR uygulaması için 3B modelleri bizim mi sağlamamız gerekiyor?",
+        "answer": "Hayır, ekibimizde uzman 3B sanatçıları ve animatörleri bulunmaktadır. Gerekli tüm varlıkları, ortamları ve avatarları sıfırdan oluşturabiliriz. Ancak, mevcut CAD dosyalarınız (mimari planlar veya ürün tasarımları gibi) varsa, maliyetleri düşürmek için bunları içe aktarabilir ve optimize edebiliriz."
+      },
+      {
+        "question": "Birden fazla kullanıcı aynı VR alanında etkileşim kurabilir mi?",
+        "answer": "Evet. Senkronize çok oyunculu VR deneyimleri geliştiriyoruz. Photon veya Unreal'in yerleşik çoğaltması gibi ağ çerçevelerini (networking frameworks) kullanarak, dünyanın dört bir yanından kullanıcılar aynı sanal odaya katılabilir, uzamsal (spatial) ses yoluyla konuşabilir ve aynı 3B nesnelerle işbirliği içinde etkileşimde bulunabilir."
+      }
+    ],
+    "de": [
+      {
+        "question": "Für welche VR-Headsets entwickeln Sie?",
+        "answer": "Wir entwickeln für alle großen VR-Plattformen. Die Meta Quest (2, 3 und Pro) ist unser beliebtestes Ziel für Standalone-VR. Wir bauen auch High-Fidelity-PC-VR-Erlebnisse für HTC Vive, Valve Index und PSVR2 mit Unreal Engine oder Unity."
+      },
+      {
+        "question": "Was ist der Unterschied zwischen VR, AR und MR?",
+        "answer": "Virtual Reality (VR) lässt Sie vollständig in eine 100%ige digitale Umgebung eintauchen. Augmented Reality (AR) blendet digitale Elemente über einen Bildschirm in die reale Welt ein. Mixed Reality (MR) verschmilzt physische und digitale Welten nahtlos, sodass reale und virtuelle Objekte interagieren können (wie bei der Apple Vision Pro)."
+      },
+      {
+        "question": "Wie kann VR Unternehmensschulungen zugute kommen?",
+        "answer": "VR-Training bietet eine sichere, konsequenzlose Umgebung für risiko- oder kostenintensive Szenarien. Es verbessert den Wissenserhalt durch erfahrungsorientiertes Lernen drastisch, unabhängig davon, ob es um die Simulation gefährlicher Fertigungsverfahren, medizinischer Operationen oder Soft-Skills-Kundendienstschulungen geht."
+      },
+      {
+        "question": "Wie lange dauert es, eine benutzerdefinierte VR-Anwendung zu erstellen?",
+        "answer": "Ein Standard-VR-Schulungsmodul oder ein Architektur-Walkthrough dauert in der Regel 3 bis 5 Monate. Hochkomplexe Multiplayer-VR-Spiele oder massive Unternehmenssimulationen, die eine umfangreiche Erstellung von 3D-Assets und fortgeschrittene Physik umfassen, können 6 bis 12 Monate dauern."
+      },
+      {
+        "question": "Müssen wir die 3D-Modelle für die VR-App bereitstellen?",
+        "answer": "Nein, zu unserem Team gehören erfahrene 3D-Künstler und Animatoren. Wir können alle notwendigen Assets, Umgebungen und Avatare von Grund auf neu erstellen. Wenn Sie jedoch über vorhandene CAD-Dateien (wie Architekturpläne oder Produktdesigns) verfügen, können wir diese importieren und optimieren, um die Kosten zu senken."
+      },
+      {
+        "question": "Können mehrere Benutzer im selben VR-Raum interagieren?",
+        "answer": "Ja. Wir entwickeln synchrone Multiplayer-VR-Erlebnisse. Mithilfe von Netzwerk-Frameworks wie Photon oder der integrierten Replikation von Unreal können Benutzer aus der ganzen Welt demselben virtuellen Raum beitreten, über räumliches Audio (Spatial Audio) sprechen und gemeinsam mit denselben 3D-Objekten interagieren."
+      }
+    ],
+    "ur": [
+      {
+        "question": "آپ کون سے VR ہیڈسیٹ تیار کرتے ہیں؟",
+        "answer": "ہم تمام بڑے VR پلیٹ فارمز کے لیے تیار کرتے ہیں۔ Meta Quest (2, 3, اور Pro) اسٹینڈ اسٹون VR کے لیے ہمارا سب سے مقبول ہدف ہے۔ ہم Unreal Engine یا Unity کا استعمال کرتے ہوئے HTC Vive، Valve Index، اور PSVR2 کے لیے اعلیٰ مخلص PC-VR کے تجربات بھی بناتے ہیں۔"
+      },
+      {
+        "question": "VR، AR، اور MR میں کیا فرق ہے؟",
+        "answer": "ورچوئل رئیلٹی (VR) آپ کو 100% ڈیجیٹل ماحول میں مکمل طور پر غرق کر دیتی ہے۔ Augmented Reality (AR) ایک اسکرین کے ذریعے ڈیجیٹل عناصر کو حقیقی دنیا پر چڑھاتی ہے۔ مخلوط حقیقت (MR) بغیر کسی رکاوٹ کے جسمانی اور ڈیجیٹل دنیاوں کو ملاتی ہے، جس سے حقیقی اور مجازی اشیاء (جیسے Apple Vision Pro) کو باہم تعامل کرنے کی اجازت ملتی ہے۔"
+      },
+      {
+        "question": "VR کارپوریٹ ٹریننگ کو کیسے فائدہ پہنچا سکتا ہے؟",
+        "answer": "وی آر ٹریننگ اعلی خطرے والے یا زیادہ لاگت والے منظرناموں کے لیے ایک محفوظ، نتیجہ خیز ماحول پیش کرتی ہے۔ یہ تجرباتی سیکھنے کے ذریعے علم کو برقرار رکھنے کو ڈرامائی طور پر بہتر بناتا ہے، چاہے وہ مینوفیکچرنگ کے خطرناک طریقہ کار کو نقل کر رہا ہو، طبی سرجریوں، یا نرم مہارتوں کے کسٹمر سروس کی تربیت۔"
+      },
+      {
+        "question": "کسٹم VR ایپلیکیشن بنانے میں کتنا وقت لگتا ہے؟",
+        "answer": "ایک معیاری VR ٹریننگ ماڈیول یا آرکیٹیکچرل واک تھرو عام طور پر 3 سے 5 ماہ لگتا ہے۔ انتہائی پیچیدہ ملٹی پلیئر وی آر گیمز یا بڑے پیمانے پر انٹرپرائز سمولیشنز جس میں وسیع 3D اثاثہ کی تخلیق اور جدید طبیعیات شامل ہیں میں 6 سے 12 ماہ لگ سکتے ہیں۔"
+      },
+      {
+        "question": "کیا ہمیں وی آر ایپ کے لیے تھری ڈی ماڈل فراہم کرنے کی ضرورت ہے؟",
+        "answer": "نہیں، ہماری ٹیم میں ماہر 3D فنکار اور اینی میٹر شامل ہیں۔ ہم شروع سے تمام ضروری اثاثے، ماحول، اور اوتار بنا سکتے ہیں۔ تاہم، اگر آپ کے پاس موجودہ CAD فائلیں (جیسے آرکیٹیکچرل بلیو پرنٹس یا پروڈکٹ ڈیزائن) ہیں، تو ہم لاگت کو کم کرنے کے لیے انہیں درآمد اور بہتر کر سکتے ہیں۔"
+      },
+      {
+        "question": "کیا ایک سے زیادہ صارفین ایک ہی VR جگہ میں تعامل کر سکتے ہیں؟",
+        "answer": "ہاں۔ ہم ہم وقت ساز ملٹی پلیئر VR تجربات تیار کرتے ہیں۔ فوٹون یا غیر حقیقی کی بلٹ ان ریپلیکیشن جیسے نیٹ ورکنگ فریم ورک کا استعمال کرتے ہوئے، دنیا بھر کے صارفین ایک ہی ورچوئل کمرے میں شامل ہو سکتے ہیں، مقامی آڈیو کے ذریعے بات کر سکتے ہیں، اور ایک ہی 3D اشیاء کے ساتھ باہمی تعاون کے ساتھ بات چیت کر سکتے ہیں۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "ما هي نظارات الواقع الافتراضي (VR) التي تطورون لها؟",
+        "answer": "نحن نطور لجميع منصات الواقع الافتراضي الرئيسية. تعد Meta Quest (2 و 3 و Pro) هي هدفنا الأكثر شعبية للواقع الافتراضي المستقل. نقوم أيضًا ببناء تجارب PC-VR عالية الدقة لـ HTC Vive و Valve Index و PSVR2 باستخدام Unreal Engine أو Unity."
+      },
+      {
+        "question": "ما الفرق بين VR و AR و MR؟",
+        "answer": "يغمرك الواقع الافتراضي (VR) تمامًا في بيئة رقمية بنسبة 100٪. يركب الواقع المعزز (AR) العناصر الرقمية على العالم الحقيقي عبر شاشة. يمزج الواقع المختلط (MR) بسلاسة بين العوالم المادية والرقمية، مما يسمح للأشياء الحقيقية والافتراضية بالتفاعل (مثل Apple Vision Pro)."
+      },
+      {
+        "question": "كيف يمكن للواقع الافتراضي أن يفيد تدريب الشركات؟",
+        "answer": "يوفر تدريب الواقع الافتراضي بيئة آمنة وخالية من العواقب للسيناريوهات عالية المخاطر أو عالية التكلفة. إنه يحسن بشكل كبير من الاحتفاظ بالمعرفة من خلال التعلم التجريبي، سواء كان ذلك محاكاة إجراءات التصنيع الخطرة، أو العمليات الجراحية الطبية، أو تدريب خدمة العملاء على المهارات الشخصية."
+      },
+      {
+        "question": "ما المدة التي يستغرقها إنشاء تطبيق واقع افتراضي مخصص؟",
+        "answer": "عادةً ما تستغرق وحدة تدريب VR القياسية أو جولة معمارية من 3 إلى 5 أشهر. ألعاب الواقع الافتراضي متعددة اللاعبين المعقدة للغاية أو عمليات محاكاة المؤسسات الضخمة التي تتضمن إنشاء أصول ثلاثية الأبعاد (3D assets) مكثفة وفيزياء متقدمة يمكن أن تستغرق من 6 إلى 12 شهرًا."
+      },
+      {
+        "question": "هل نحتاج إلى توفير نماذج ثلاثية الأبعاد لتطبيق الواقع الافتراضي؟",
+        "answer": "لا، يضم فريقنا فنانين ورسامي رسوم متحركة خبراء في مجال 3D. يمكننا إنشاء جميع الأصول والبيئات والصور الرمزية (avatars) اللازمة من الصفر. ومع ذلك، إذا كانت لديك ملفات CAD حالية (مثل المخططات المعمارية أو تصميمات المنتجات)، فيمكننا استيرادها وتحسينها لتقليل التكاليف."
+      },
+      {
+        "question": "هل يمكن لمستخدمين متعددين التفاعل في نفس مساحة الواقع الافتراضي؟",
+        "answer": "نعم. نحن نطور تجارب واقع افتراضي متزامنة متعددة اللاعبين. باستخدام أطر عمل الشبكات (networking) مثل Photon أو النسخ المتماثل (replication) المدمج في Unreal، يمكن للمستخدمين من جميع أنحاء العالم الانضمام إلى نفس الغرفة الافتراضية، والتحدث عبر الصوت المكاني (spatial audio)، والتفاعل مع نفس الكائنات ثلاثية الأبعاد بشكل تعاوني."
+      }
+    ]
+  }
+}

@@ -1,0 +1,662 @@
+{
+  "wordpress-development": {
+    "en": [
+      {
+        "question": "Is WordPress only for blogs?",
+        "answer": "Not anymore. While WordPress started as a blogging platform, it has evolved into a robust Content Management System (CMS) that powers over 40% of the entire internet. It is now used for complex e-commerce stores, corporate portals, membership sites, and enterprise applications."
+      },
+      {
+        "question": "How secure is a WordPress website?",
+        "answer": "WordPress core is highly secure when kept updated. Security issues usually arise from outdated plugins, weak passwords, or cheap hosting. We implement strict security protocols, including Web Application Firewalls (WAF), login limits, malware scanning, and regular automated backups."
+      },
+      {
+        "question": "Do you use pre-built templates or custom designs?",
+        "answer": "While we can customize premium templates if you are on a strict budget, we specialize in building custom, from-scratch WordPress websites. This ensures your site has a unique brand identity, zero unnecessary code bloat, and maximum performance."
+      },
+      {
+        "question": "Can I easily update the content myself?",
+        "answer": "Yes. We build sites using custom fields (ACF) or intuitive page builders (like Elementor or Gutenberg) tailored to your needs. We provide hands-on training so your team can easily add new pages, update text, and publish posts without touching a single line of code."
+      },
+      {
+        "question": "Will my WordPress site be fast and SEO-friendly?",
+        "answer": "Absolutely. We follow strict development standards to ensure clean code, implement caching (like WP Rocket), optimize images, and use fast CDN hosting. We also integrate industry-standard SEO tools (like Yoast or RankMath) to give you full control over your search engine visibility."
+      },
+      {
+        "question": "Do you provide ongoing maintenance for WordPress?",
+        "answer": "Yes. WordPress requires regular maintenance. We offer monthly care plans that include daily backups, safe plugin and core updates, uptime monitoring, security scans, and dedicated support time for content updates."
+      }
+    ],
+    "tr": [
+      {
+        "question": "WordPress sadece bloglar için mi?",
+        "answer": "Artık değil. WordPress bir blog platformu olarak başlasa da, tüm internetin %40'ından fazlasına güç veren sağlam bir İçerik Yönetim Sistemine (CMS) evrildi. Artık karmaşık e-ticaret mağazaları, kurumsal portallar, üyelik siteleri ve kurumsal uygulamalar için kullanılıyor."
+      },
+      {
+        "question": "Bir WordPress web sitesi ne kadar güvenlidir?",
+        "answer": "Güncel tutulduğunda WordPress çekirdeği son derece güvenlidir. Güvenlik sorunları genellikle güncel olmayan eklentilerden, zayıf parolalardan veya ucuz barındırma (hosting) hizmetlerinden kaynaklanır. Web Uygulaması Güvenlik Duvarları (WAF), oturum açma sınırları, kötü amaçlı yazılım taraması ve düzenli otomatik yedeklemeler dahil olmak üzere katı güvenlik protokolleri uyguluyoruz."
+      },
+      {
+        "question": "Önceden oluşturulmuş şablonlar (temalar) mı yoksa özel tasarımlar mı kullanıyorsunuz?",
+        "answer": "Sıkı bir bütçeniz varsa premium şablonları özelleştirebilsek de, sıfırdan özel WordPress web siteleri oluşturma konusunda uzmanız. Bu, sitenizin benzersiz bir marka kimliğine, gereksiz kod şişkinliğine sahip olmamasına ve maksimum performansa sahip olmasını sağlar."
+      },
+      {
+        "question": "İçeriği kendim kolayca güncelleyebilir miyim?",
+        "answer": "Evet. İhtiyaçlarınıza göre uyarlanmış özel alanlar (ACF) veya sezgisel sayfa oluşturucular (Elementor veya Gutenberg gibi) kullanarak siteler oluşturuyoruz. Ekibinizin tek bir satır koda dokunmadan kolayca yeni sayfalar ekleyebilmesi, metni güncelleyebilmesi ve gönderiler yayınlayabilmesi için uygulamalı eğitim veriyoruz."
+      },
+      {
+        "question": "WordPress sitem hızlı ve SEO dostu olacak mı?",
+        "answer": "Kesinlikle. Temiz kod sağlamak, önbelleğe alma (WP Rocket gibi) uygulamak, görüntüleri optimize etmek ve hızlı CDN barındırma kullanmak için katı geliştirme standartlarını izliyoruz. Ayrıca arama motoru görünürlüğünüz üzerinde size tam kontrol sağlamak için endüstri standardı SEO araçlarını (Yoast veya RankMath gibi) entegre ediyoruz."
+      },
+      {
+        "question": "WordPress için sürekli bakım sağlıyor musunuz?",
+        "answer": "Evet. WordPress düzenli bakım gerektirir. Günlük yedeklemeler, güvenli eklenti ve çekirdek güncellemeleri, çalışma süresi izleme (uptime monitoring), güvenlik taramaları ve içerik güncellemeleri için özel destek süresi içeren aylık bakım planları sunuyoruz."
+      }
+    ],
+    "de": [
+      {
+        "question": "Ist WordPress nur für Blogs gedacht?",
+        "answer": "Schon lange nicht mehr. Während WordPress als Blogging-Plattform begann, hat es sich zu einem robusten Content-Management-System (CMS) entwickelt, das über 40 % des gesamten Internets antreibt. Es wird mittlerweile für komplexe E-Commerce-Shops, Unternehmensportale, Mitgliederseiten und Unternehmensanwendungen eingesetzt."
+      },
+      {
+        "question": "Wie sicher ist eine WordPress-Website?",
+        "answer": "Der WordPress-Kern ist sehr sicher, wenn er auf dem neuesten Stand gehalten wird. Sicherheitsprobleme entstehen meist durch veraltete Plugins, schwache Passwörter oder billiges Hosting. Wir implementieren strenge Sicherheitsprotokolle, einschließlich Web Application Firewalls (WAF), Anmeldebegrenzungen, Malware-Scans und regelmäßigen automatisierten Backups."
+      },
+      {
+        "question": "Verwenden Sie vorgefertigte Templates oder individuelle Designs?",
+        "answer": "Während wir bei einem knappen Budget Premium-Templates anpassen können, sind wir darauf spezialisiert, maßgeschneiderte WordPress-Websites von Grund auf neu zu erstellen. Dies stellt sicher, dass Ihre Website eine einzigartige Markenidentität, keinen unnötigen Code-Ballast und maximale Leistung aufweist."
+      },
+      {
+        "question": "Kann ich die Inhalte problemlos selbst aktualisieren?",
+        "answer": "Ja. Wir erstellen Websites mit benutzerdefinierten Feldern (ACF) oder intuitiven Page-Buildern (wie Elementor oder Gutenberg), die auf Ihre Bedürfnisse zugeschnitten sind. Wir bieten praktische Schulungen an, damit Ihr Team problemlos neue Seiten hinzufügen, Texte aktualisieren und Beiträge veröffentlichen kann, ohne eine einzige Zeile Code anfassen zu müssen."
+      },
+      {
+        "question": "Wird meine WordPress-Site schnell und SEO-freundlich sein?",
+        "answer": "Absolut. Wir befolgen strenge Entwicklungsstandards, um sauberen Code zu gewährleisten, Caching (wie WP Rocket) zu implementieren, Bilder zu optimieren und schnelles CDN-Hosting zu nutzen. Wir integrieren auch branchenübliche SEO-Tools (wie Yoast oder RankMath), um Ihnen die volle Kontrolle über Ihre Suchmaschinensichtbarkeit zu geben."
+      },
+      {
+        "question": "Bieten Sie fortlaufende Wartung für WordPress an?",
+        "answer": "Ja. WordPress erfordert regelmäßige Wartung. Wir bieten monatliche Betreuungspläne an, die tägliche Backups, sichere Plugin- und Core-Updates, Uptime-Monitoring, Sicherheitsscans und dedizierte Support-Zeit für Inhaltsaktualisierungen umfassen."
+      }
+    ],
+    "ur": [
+      {
+        "question": "کیا ورڈپریس صرف بلاگز کے لیے ہے؟",
+        "answer": "اب نہیں۔ جب کہ ورڈپریس ایک بلاگنگ پلیٹ فارم کے طور پر شروع ہوا، یہ ایک مضبوط مواد کے انتظام کے نظام (CMS) میں تیار ہوا ہے جو پورے انٹرنیٹ کے 40% سے زیادہ کو طاقت دیتا ہے۔ اب یہ پیچیدہ ای کامرس اسٹورز، کارپوریٹ پورٹلز، ممبرشپ سائٹس اور انٹرپرائز ایپلی کیشنز کے لیے استعمال ہوتا ہے۔"
+      },
+      {
+        "question": "ورڈپریس ویب سائٹ کتنی محفوظ ہے؟",
+        "answer": "اپ ڈیٹ رکھنے پر ورڈپریس کور انتہائی محفوظ ہے۔ سیکیورٹی کے مسائل عام طور پر پرانے پلگ انز، کمزور پاس ورڈز، یا سستی ہوسٹنگ سے پیدا ہوتے ہیں۔ ہم سخت حفاظتی پروٹوکول کو نافذ کرتے ہیں، بشمول ویب ایپلیکیشن فائر والز (WAF)، لاگ ان کی حدیں، مالویئر اسکیننگ، اور باقاعدہ خودکار بیک اپ۔"
+      },
+      {
+        "question": "کیا آپ پہلے سے بنے ہوئے ٹیمپلیٹس یا اپنی مرضی کے ڈیزائن استعمال کرتے ہیں؟",
+        "answer": "اگر آپ کے پاس سخت بجٹ پر پریمیم ٹیمپلیٹس کو اپنی مرضی کے مطابق بنا سکتے ہیں، تو ہم کسٹم، شروع سے ورڈپریس ویب سائٹس بنانے میں مہارت رکھتے ہیں۔ یہ اس بات کو یقینی بناتا ہے کہ آپ کی سائٹ میں برانڈ کی منفرد شناخت ہے، صفر غیر ضروری کوڈ بلوٹ، اور زیادہ سے زیادہ کارکردگی ہے۔"
+      },
+      {
+        "question": "کیا میں آسانی سے خود مواد کو اپ ڈیٹ کر سکتا ہوں؟",
+        "answer": "جی ہاں. ہم آپ کی ضروریات کے مطابق کسٹم فیلڈز (ACF) یا بدیہی صفحہ ساز (جیسے ایلیمینٹر یا گٹنبرگ) کا استعمال کرتے ہوئے سائٹیں بناتے ہیں۔ ہم ہینڈ آن ٹریننگ فراہم کرتے ہیں تاکہ آپ کی ٹیم کوڈ کی ایک لائن کو چھوئے بغیر آسانی سے نئے صفحات شامل کر سکے، متن کو اپ ڈیٹ کر سکے اور پوسٹس شائع کر سکے۔"
+      },
+      {
+        "question": "کیا میری ورڈپریس سائٹ تیز اور SEO کے موافق ہوگی؟",
+        "answer": "بالکل۔ کلین کوڈ کو یقینی بنانے کے لیے ہم ترقی کے سخت معیارات پر عمل کرتے ہیں، کیشنگ کو نافذ کرتے ہیں (جیسے WP راکٹ)، تصاویر کو بہتر بناتے ہیں، اور تیز CDN ہوسٹنگ کا استعمال کرتے ہیں۔ ہم انڈسٹری کے معیاری SEO ٹولز (جیسے Yoast یا RankMath) کو بھی مربوط کرتے ہیں تاکہ آپ کو اپنے سرچ انجن کی مرئیت پر مکمل کنٹرول حاصل ہو۔"
+      },
+      {
+        "question": "کیا آپ ورڈپریس کے لیے جاری دیکھ بھال فراہم کرتے ہیں؟",
+        "answer": "جی ہاں. ورڈپریس کو باقاعدہ دیکھ بھال کی ضرورت ہے۔ ہم ماہانہ نگہداشت کے منصوبے پیش کرتے ہیں جن میں روزانہ بیک اپ، محفوظ پلگ ان اور بنیادی اپ ڈیٹس، اپ ٹائم مانیٹرنگ، سیکیورٹی اسکینز، اور مواد کی تازہ کاریوں کے لیے وقف کردہ سپورٹ کا وقت شامل ہے۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "هل WordPress مخصص للمدونات فقط؟",
+        "answer": "ليس بعد الآن. في حين أن WordPress بدأ كمنصة تدوين، فقد تطور إلى نظام قوي لإدارة المحتوى (CMS) يعمل على تشغيل أكثر من 40٪ من الإنترنت بأكمله. يتم استخدامه الآن لمتاجر التجارة الإلكترونية المعقدة، وبوابات الشركات، ومواقع العضوية، وتطبيقات المؤسسات."
+      },
+      {
+        "question": "ما مدى أمان موقع WordPress؟",
+        "answer": "يعد نظام WordPress الأساسي آمنًا للغاية عند تحديثه. تنشأ مشكلات الأمان عادةً من المكونات الإضافية (plugins) القديمة أو كلمات المرور الضعيفة أو الاستضافة الرخيصة. نقوم بتنفيذ بروتوكولات أمان صارمة، بما في ذلك جدران حماية تطبيقات الويب (WAF)، وحدود تسجيل الدخول، وفحص البرامج الضارة، والنسخ الاحتياطي الآلي المنتظم."
+      },
+      {
+        "question": "هل تستخدم قوالب جاهزة أم تصميمات مخصصة؟",
+        "answer": "بينما يمكننا تخصيص قوالب متميزة إذا كانت ميزانيتك صارمة، إلا أننا نتخصص في بناء مواقع WordPress مخصصة من الصفر. وهذا يضمن أن يكون لموقعك هوية علامة تجارية فريدة، وبدون تضخم غير ضروري في الكود، وبأقصى قدر من الأداء."
+      },
+      {
+        "question": "هل يمكنني تحديث المحتوى بنفسي بسهولة؟",
+        "answer": "نعم. نقوم ببناء المواقع باستخدام حقول مخصصة (ACF) أو أدوات بناء صفحات بديهية (مثل Elementor أو Gutenberg) مصممة خصيصًا لتلبية احتياجاتك. نقدم تدريبًا عمليًا حتى يتمكن فريقك من إضافة صفحات جديدة بسهولة وتحديث النص ونشر المقالات دون لمس سطر واحد من التعليمات البرمجية (الكود)."
+      },
+      {
+        "question": "هل سيكون موقع WordPress الخاص بي سريعًا وصديقًا لمحركات البحث (SEO-friendly)؟",
+        "answer": "بالتأكيد. نتبع معايير تطوير صارمة لضمان كود نظيف، وتنفيذ التخزين المؤقت (مثل WP Rocket)، وتحسين الصور، واستخدام استضافة CDN السريعة. نقوم أيضًا بدمج أدوات تحسين محركات البحث المتوافقة مع معايير الصناعة (مثل Yoast أو RankMath) لمنحك تحكمًا كاملاً في ظهورك على محركات البحث."
+      },
+      {
+        "question": "هل تقدمون صيانة مستمرة لـ WordPress؟",
+        "answer": "نعم. يتطلب WordPress صيانة دورية. نقدم خطط رعاية شهرية تتضمن نسخًا احتياطيًا يوميًا، وتحديثات آمنة للمكونات الإضافية والنظام الأساسي، ومراقبة وقت التشغيل (uptime)، وعمليات فحص الأمان، ووقت دعم مخصص لتحديثات المحتوى."
+      }
+    ]
+  },
+  "custom-wordpress-themes": {
+    "en": [
+      {
+        "question": "Why build a custom theme instead of buying one from ThemeForest?",
+        "answer": "Purchased themes are built to serve thousands of different use cases, meaning they are packed with unnecessary code, confusing settings, and bloated plugins that severely slow down your site. A custom theme is precision-built solely for your exact design and functionality, resulting in blazing fast load times and a highly intuitive backend."
+      },
+      {
+        "question": "How do you build custom themes?",
+        "answer": "We hand-code themes using modern web technologies (HTML5, SCSS, JavaScript) and the WordPress PHP architecture. We often start with a blank 'starter theme' (like Underscores or Sage) to ensure a perfectly clean foundation without any technical debt."
+      },
+      {
+        "question": "Will a custom theme break during WordPress core updates?",
+        "answer": "No. Because we strictly adhere to WordPress Codex standards and best practices, our custom themes are highly robust and future-proof. They do not rely on hacky workarounds that break when WordPress updates its core software."
+      },
+      {
+        "question": "Does a custom theme mean I can't change the design later?",
+        "answer": "Not at all. We build modular, component-based themes. Using Advanced Custom Fields (ACF) or Gutenberg blocks, we give you the power to rearrange sections, change images, and modify copy directly from the dashboard, ensuring you have flexibility without sacrificing performance."
+      },
+      {
+        "question": "How long does it take to develop a custom WordPress theme?",
+        "answer": "Developing a custom theme from scratch, ensuring it is fully responsive, optimized for speed, and thoroughly tested across all browsers, generally takes 4 to 8 weeks depending on the complexity of the design and required features."
+      },
+      {
+        "question": "Do I own the custom theme code?",
+        "answer": "Yes, absolutely. Once the project is completed and paid for, you retain 100% ownership and intellectual property rights to the custom theme. You are not locked into any proprietary systems or ongoing licensing fees for the theme itself."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Neden ThemeForest'tan bir tane satın almak yerine özel bir tema oluşturmalıyım?",
+        "answer": "Satın alınan temalar binlerce farklı kullanım durumuna hizmet etmek üzere oluşturulmuştur, yani sitenizi ciddi şekilde yavaşlatan gereksiz kodlar, kafa karıştırıcı ayarlar ve şişirilmiş eklentilerle doludurlar. Özel bir tema, yalnızca kesin tasarımınız ve işlevselliğiniz için hassas bir şekilde oluşturulur, bu da inanılmaz hızlı yükleme süreleri ve son derece sezgisel bir arka uç ile sonuçlanır."
+      },
+      {
+        "question": "Özel temaları nasıl oluşturuyorsunuz?",
+        "answer": "Temaları modern web teknolojilerini (HTML5, SCSS, JavaScript) ve WordPress PHP mimarisini kullanarak elle kodluyoruz. Hiçbir teknik borç olmadan tamamen temiz bir temel sağlamak için genellikle boş bir 'başlangıç teması' (Underscores veya Sage gibi) ile başlıyoruz."
+      },
+      {
+        "question": "WordPress çekirdek güncellemeleri sırasında özel bir tema bozulur mu?",
+        "answer": "Hayır. WordPress Codex standartlarına ve en iyi uygulamalarına sıkı sıkıya bağlı kaldığımız için, özel temalarımız son derece sağlamdır ve geleceğe dönüktür. WordPress çekirdek yazılımını güncellediğinde bozulan derme çatma geçici çözümlere güvenmezler."
+      },
+      {
+        "question": "Özel bir tema, tasarımı daha sonra değiştiremeyeceğim anlamına mı gelir?",
+        "answer": "Kesinlikle hayır. Modüler, bileşen tabanlı temalar oluşturuyoruz. Gelişmiş Özel Alanlar (ACF) veya Gutenberg bloklarını kullanarak, size bölümleri yeniden düzenleme, görüntüleri değiştirme ve metni doğrudan kontrol panelinden değiştirme gücü vererek, performanstan ödün vermeden esnekliğe sahip olmanızı sağlıyoruz."
+      },
+      {
+        "question": "Özel bir WordPress teması geliştirmek ne kadar sürer?",
+        "answer": "Sıfırdan özel bir tema geliştirmek, tamamen duyarlı olmasını, hız için optimize edilmesini ve tüm tarayıcılarda kapsamlı bir şekilde test edilmesini sağlamak, tasarımın karmaşıklığına ve gerekli özelliklere bağlı olarak genellikle 4 ila 8 hafta sürer."
+      },
+      {
+        "question": "Özel temanın koduna sahip olacak mıyım?",
+        "answer": "Evet, kesinlikle. Proje tamamlandığında ve ödemesi yapıldığında, özel temanın %100 mülkiyetini ve fikri mülkiyet haklarını elinizde tutarsınız. Herhangi bir tescilli sisteme veya temanın kendisi için devam eden lisans ücretlerine bağlı kalmazsınız."
+      }
+    ],
+    "de": [
+      {
+        "question": "Warum sollte man ein benutzerdefiniertes Theme erstellen, anstatt eines bei ThemeForest zu kaufen?",
+        "answer": "Gekaufte Themes wurden entwickelt, um Tausende verschiedener Anwendungsfälle abzudecken. Das bedeutet, dass sie vollgepackt sind mit unnötigem Code, verwirrenden Einstellungen und aufgeblähten Plugins, die Ihre Website stark verlangsamen. Ein benutzerdefiniertes Theme wird präzise und ausschließlich für Ihr genaues Design und Ihre Funktionalität erstellt, was zu blitzschnellen Ladezeiten und einem äußerst intuitiven Backend führt."
+      },
+      {
+        "question": "Wie erstellen Sie benutzerdefinierte Themes?",
+        "answer": "Wir programmieren Themes von Hand unter Verwendung moderner Webtechnologien (HTML5, SCSS, JavaScript) und der WordPress-PHP-Architektur. Wir beginnen oft mit einem leeren „Starter-Theme“ (wie Underscores oder Sage), um ein absolut sauberes Fundament ohne technische Schulden zu gewährleisten."
+      },
+      {
+        "question": "Wird ein benutzerdefiniertes Theme bei WordPress-Core-Updates kaputt gehen?",
+        "answer": "Nein. Da wir uns streng an die Standards und Best Practices des WordPress Codex halten, sind unsere benutzerdefinierten Themes äußerst robust und zukunftssicher. Sie verlassen sich nicht auf unsaubere Workarounds, die kaputtgehen, wenn WordPress seine Kernsoftware aktualisiert."
+      },
+      {
+        "question": "Bedeutet ein benutzerdefiniertes Theme, dass ich das Design später nicht mehr ändern kann?",
+        "answer": "Überhaupt nicht. Wir erstellen modulare, komponentenbasierte Themes. Mithilfe von Advanced Custom Fields (ACF) oder Gutenberg-Blöcken geben wir Ihnen die Möglichkeit, Abschnitte neu anzuordnen, Bilder zu ändern und Texte direkt über das Dashboard zu ändern, um sicherzustellen, dass Sie Flexibilität haben, ohne Leistungseinbußen hinnehmen zu müssen."
+      },
+      {
+        "question": "Wie lange dauert die Entwicklung eines benutzerdefinierten WordPress-Themes?",
+        "answer": "Die Entwicklung eines benutzerdefinierten Themes von Grund auf, bei der sichergestellt wird, dass es vollständig responsive, geschwindigkeitsoptimiert und gründlich in allen Browsern getestet ist, dauert in der Regel 4 bis 8 Wochen, abhängig von der Komplexität des Designs und der erforderlichen Funktionen."
+      },
+      {
+        "question": "Gehört mir der Code des benutzerdefinierten Themes?",
+        "answer": "Ja, absolut. Sobald das Projekt abgeschlossen und bezahlt ist, behalten Sie 100 % Eigentum und geistige Eigentumsrechte an dem benutzerdefinierten Theme. Sie sind nicht an proprietäre Systeme oder laufende Lizenzgebühren für das Theme selbst gebunden."
+      }
+    ],
+    "ur": [
+      {
+        "question": "ThemeForest سے ایک خریدنے کے بجائے کسٹم تھیم کیوں بنائیں؟",
+        "answer": "خریدے گئے تھیمز ہزاروں مختلف استعمال کے معاملات کو پیش کرنے کے لیے بنائے گئے ہیں، یعنی وہ غیر ضروری کوڈ، الجھا دینے والی ترتیبات، اور بلوٹڈ پلگ انز سے بھرے ہوئے ہیں جو آپ کی سائٹ کو شدید سست کر دیتے ہیں۔ ایک کسٹم تھیم مکمل طور پر آپ کے عین ڈیزائن اور فعالیت کے لیے پرزیشن کے ساتھ بنایا گیا ہے، جس کے نتیجے میں چمکتی ہوئی تیز رفتار لوڈ ٹائمز اور انتہائی بدیہی بیک اینڈ ہوتا ہے۔"
+      },
+      {
+        "question": "آپ حسب ضرورت تھیمز کیسے بناتے ہیں؟",
+        "answer": "ہم جدید ویب ٹیکنالوجیز (HTML5, SCSS, JavaScript) اور ورڈپریس پی ایچ پی آرکیٹیکچر کا استعمال کرتے ہوئے ہینڈ کوڈ تھیمز بناتے ہیں۔ ہم اکثر بغیر کسی تکنیکی قرض کے بالکل صاف بنیاد کو یقینی بنانے کے لیے خالی 'اسٹارٹر تھیم' (جیسے انڈرسکورز یا سیج) کے ساتھ شروع کرتے ہیں۔"
+      },
+      {
+        "question": "کیا ورڈپریس کور اپ ڈیٹس کے دوران کسٹم تھیم ٹوٹ جائے گی؟",
+        "answer": "نہیں، چونکہ ہم سختی سے ورڈپریس کوڈیکس کے معیارات اور بہترین طریقوں پر کاربند ہیں، اس لیے ہمارے حسب ضرورت تھیمز انتہائی مضبوط اور مستقبل کے ثبوت ہیں۔ وہ ہیکی کے کاموں پر انحصار نہیں کرتے ہیں جو ٹوٹ جاتے ہیں جب ورڈپریس اپنے بنیادی سافٹ ویئر کو اپ ڈیٹ کرتا ہے۔"
+      },
+      {
+        "question": "کیا اپنی مرضی کے تھیم کا مطلب ہے کہ میں بعد میں ڈیزائن تبدیل نہیں کر سکتا؟",
+        "answer": "بالکل نہیں۔ ہم ماڈیولر، جزو پر مبنی تھیمز بناتے ہیں۔ اعلی درجے کے کسٹم فیلڈز (ACF) یا گٹنبرگ بلاکس کا استعمال کرتے ہوئے، ہم آپ کو سیکشنز کو دوبارہ ترتیب دینے، تصاویر کو تبدیل کرنے، اور کاپی کو براہ راست ڈیش بورڈ سے تبدیل کرنے کا اختیار دیتے ہیں، اس بات کو یقینی بناتے ہوئے کہ آپ کی کارکردگی کو قربان کیے بغیر لچک موجود ہے۔"
+      },
+      {
+        "question": "کسٹم ورڈپریس تھیم تیار کرنے میں کتنا وقت لگتا ہے؟",
+        "answer": "سکریچ سے ایک حسب ضرورت تھیم تیار کرنا، اس بات کو یقینی بنانا کہ یہ مکمل طور پر جوابدہ ہے، رفتار کے لیے موزوں ہے، اور تمام براؤزرز پر اچھی طرح جانچا گیا ہے، ڈیزائن اور مطلوبہ خصوصیات کی پیچیدگی کے لحاظ سے عام طور پر 4 سے 8 ہفتے لگتے ہیں۔"
+      },
+      {
+        "question": "کیا میرے پاس کسٹم تھیم کوڈ ہے؟",
+        "answer": "جی ہاں بالکل. ایک بار جب پروجیکٹ مکمل ہو جاتا ہے اور اس کی ادائیگی ہو جاتی ہے، تو آپ اپنی مرضی کے تھیم کے لیے 100% ملکیت اور دانشورانہ املاک کے حقوق برقرار رکھتے ہیں۔ آپ خود تھیم کے لیے کسی ملکیتی نظام یا جاری لائسنسنگ فیس میں بند نہیں ہیں۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "لماذا يجب بناء قالب مخصص (custom theme) بدلاً من شراء واحد من ThemeForest؟",
+        "answer": "تم بناء القوالب المشتراة لخدمة الآلاف من حالات الاستخدام المختلفة، مما يعني أنها مليئة بالكود غير الضروري، والإعدادات المربكة، والمكونات الإضافية المتضخمة التي تبطئ موقعك بشدة. يتم تصميم القالب المخصص بدقة فقط من أجل التصميم والوظائف الدقيقة الخاصة بك، مما يؤدي إلى أوقات تحميل فائقة السرعة وواجهة خلفية (backend) بديهية للغاية."
+      },
+      {
+        "question": "كيف تبنون القوالب المخصصة؟",
+        "answer": "نقوم ببرمجة القوالب يدويًا باستخدام تقنيات الويب الحديثة (HTML5، SCSS، JavaScript) وبنية WordPress PHP. غالبًا ما نبدأ بـ 'قالب بداية' فارغ (مثل Underscores أو Sage) لضمان أساس نظيف تمامًا بدون أي دين تقني (technical debt)."
+      },
+      {
+        "question": "هل سينكسر القالب المخصص أثناء تحديثات WordPress الأساسية؟",
+        "answer": "لا. نظرًا لأننا نلتزم بصرامة بمعايير WordPress Codex وأفضل الممارسات، فإن قوالبنا المخصصة قوية للغاية ومضمونة للمستقبل. إنهم لا يعتمدون على الحلول الالتفافية (hacks) التي تتعطل عندما يقوم WordPress بتحديث برامجه الأساسية."
+      },
+      {
+        "question": "هل يعني القالب المخصص أنه لا يمكنني تغيير التصميم لاحقًا؟",
+        "answer": "على الإطلاق. نحن نبني قوالب معيارية (modular) قائمة على المكونات. باستخدام الحقول المخصصة المتقدمة (ACF) أو كتل Gutenberg، نمنحك القدرة على إعادة ترتيب الأقسام وتغيير الصور وتعديل النص مباشرة من لوحة التحكم، مما يضمن لك المرونة دون التضحية بالأداء."
+      },
+      {
+        "question": "ما المدة التي يستغرقها تطوير قالب WordPress مخصص؟",
+        "answer": "يستغرق تطوير قالب مخصص من البداية، مع ضمان استجابته الكاملة، وتحسينه للسرعة، واختباره بدقة عبر جميع المتصفحات، بشكل عام من 4 إلى 8 أسابيع اعتمادًا على تعقيد التصميم والميزات المطلوبة."
+      },
+      {
+        "question": "هل أمتلك رمز (كود) القالب المخصص؟",
+        "answer": "نعم بالتأكيد. بمجرد اكتمال المشروع ودفع ثمنه، فإنك تحتفظ بملكية وحقوق ملكية فكرية بنسبة 100٪ للقالب المخصص. أنت لست مقيدًا بأي أنظمة احتكارية أو رسوم ترخيص مستمرة للقالب نفسه."
+      }
+    ]
+  },
+  "wordpress-plugin-development": {
+    "en": [
+      {
+        "question": "Why build a custom plugin instead of using an existing one?",
+        "answer": "Off-the-shelf plugins often contain 80% of features you don't need, which slows down your site, and lack the specific 20% of features you actually require. A custom plugin does exactly what you need, integrates seamlessly with your existing systems, and doesn't introduce security vulnerabilities from bloated code."
+      },
+      {
+        "question": "Can you build a plugin that connects WordPress to an external API?",
+        "answer": "Yes. One of our most frequent requests is building custom integrations. We can create plugins that sync your WooCommerce store with a custom ERP, pull data from external CRMs (like Salesforce or HubSpot), or connect to third-party APIs to display real-time data."
+      },
+      {
+        "question": "Will the plugin affect my site's speed?",
+        "answer": "No. We build highly optimized, lightweight plugins. We use proper database indexing, WordPress transients for caching API responses, and ensure scripts are only loaded on the specific pages where the plugin is actually used."
+      },
+      {
+        "question": "Are your plugins compatible with the latest WordPress versions?",
+        "answer": "Yes. We develop using strict object-oriented PHP and WordPress Codex standards. This ensures the plugin remains fully compatible with the latest PHP versions and future WordPress core updates without requiring constant rewrites."
+      },
+      {
+        "question": "Can you fix or modify an existing plugin we already use?",
+        "answer": "We generally avoid editing third-party plugin core files, as those changes will be wiped out when the plugin updates. However, we can use WordPress hooks (actions and filters) to modify the behavior of existing plugins in a safe, upgrade-proof manner."
+      },
+      {
+        "question": "Do you provide support and updates for custom plugins?",
+        "answer": "Yes. We offer continuous support and maintenance contracts for our custom plugins. We monitor for compatibility with new WordPress releases and provide ongoing improvements as your business logic evolves."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Neden mevcut bir eklentiyi kullanmak yerine özel bir eklenti (plugin) geliştirmeliyim?",
+        "answer": "Hazır eklentiler genellikle ihtiyacınız olmayan özelliklerin %80'ini içerir (bu da sitenizi yavaşlatır) ve aslında ihtiyaç duyduğunuz özelliklerin %20'sinden yoksundur. Özel bir eklenti tam olarak ihtiyacınız olanı yapar, mevcut sistemlerinizle sorunsuz bir şekilde bütünleşir ve şişirilmiş kodlardan kaynaklanan güvenlik açıkları oluşturmaz."
+      },
+      {
+        "question": "WordPress'i harici bir API'ye bağlayan bir eklenti oluşturabilir misiniz?",
+        "answer": "Evet. En sık aldığımız taleplerden biri özel entegrasyonlar oluşturmaktır. WooCommerce mağazanızı özel bir ERP ile senkronize eden, harici CRM'lerden (Salesforce veya HubSpot gibi) veri çeken veya gerçek zamanlı verileri görüntülemek için üçüncü taraf API'lere bağlanan eklentiler oluşturabiliriz."
+      },
+      {
+        "question": "Eklenti sitemin hızını etkiler mi?",
+        "answer": "Hayır. Yüksek düzeyde optimize edilmiş, hafif eklentiler oluşturuyoruz. Uygun veritabanı indekslemesini, API yanıtlarını önbelleğe almak için WordPress transient'lerini kullanıyoruz ve komut dosyalarının (scripts) yalnızca eklentinin fiilen kullanıldığı belirli sayfalara yüklenmesini sağlıyoruz."
+      },
+      {
+        "question": "Eklentileriniz en son WordPress sürümleriyle uyumlu mu?",
+        "answer": "Evet. Sıkı nesne yönelimli (object-oriented) PHP ve WordPress Codex standartlarını kullanarak geliştiriyoruz. Bu, eklentinin en son PHP sürümleriyle ve gelecekteki WordPress çekirdek güncellemeleriyle sürekli yeniden yazma gerektirmeden tam uyumlu kalmasını sağlar."
+      },
+      {
+        "question": "Halihazırda kullandığımız mevcut bir eklentiyi düzeltebilir veya değiştirebilir misiniz?",
+        "answer": "Genellikle üçüncü taraf eklenti çekirdek dosyalarını düzenlemekten kaçınırız, çünkü eklenti güncellendiğinde bu değişiklikler silinir. Ancak, mevcut eklentilerin davranışını güvenli, yükseltmeye dayanıklı (upgrade-proof) bir şekilde değiştirmek için WordPress kancalarını (actions ve filters) kullanabiliriz."
+      },
+      {
+        "question": "Özel eklentiler için destek ve güncelleme sağlıyor musunuz?",
+        "answer": "Evet. Özel eklentilerimiz için sürekli destek ve bakım sözleşmeleri sunuyoruz. Yeni WordPress sürümleriyle uyumluluğu izliyoruz ve iş mantığınız geliştikçe sürekli iyileştirmeler sağlıyoruz."
+      }
+    ],
+    "de": [
+      {
+        "question": "Warum ein benutzerdefiniertes Plugin erstellen, anstatt ein vorhandenes zu verwenden?",
+        "answer": "Standard-Plugins enthalten oft 80 % der Funktionen, die Sie nicht benötigen, was Ihre Website verlangsamt, und es fehlen die spezifischen 20 % der Funktionen, die Sie tatsächlich benötigen. Ein benutzerdefiniertes Plugin macht genau das, was Sie brauchen, lässt sich nahtlos in Ihre bestehenden Systeme integrieren und führt keine Sicherheitslücken durch aufgeblähten Code ein."
+      },
+      {
+        "question": "Können Sie ein Plugin erstellen, das WordPress mit einer externen API verbindet?",
+        "answer": "Ja. Eine unserer häufigsten Anfragen ist der Aufbau individueller Integrationen. Wir können Plugins erstellen, die Ihren WooCommerce-Shop mit einem benutzerdefinierten ERP synchronisieren, Daten aus externen CRMs (wie Salesforce oder HubSpot) abrufen oder eine Verbindung zu APIs von Drittanbietern herstellen, um Echtzeitdaten anzuzeigen."
+      },
+      {
+        "question": "Wird das Plugin die Geschwindigkeit meiner Website beeinträchtigen?",
+        "answer": "Nein. Wir entwickeln hochoptimierte, leichtgewichtige Plugins. Wir verwenden eine ordnungsgemäße Datenbankindizierung und WordPress-Transients zum Caching von API-Antworten und stellen sicher, dass Skripte nur auf den spezifischen Seiten geladen werden, auf denen das Plugin tatsächlich verwendet wird."
+      },
+      {
+        "question": "Sind Ihre Plugins mit den neuesten WordPress-Versionen kompatibel?",
+        "answer": "Ja. Wir entwickeln unter Verwendung strikter objektorientierter PHP- und WordPress-Codex-Standards. Dadurch wird sichergestellt, dass das Plugin ohne ständiges Umschreiben vollständig kompatibel mit den neuesten PHP-Versionen und zukünftigen WordPress-Core-Updates bleibt."
+      },
+      {
+        "question": "Können Sie ein vorhandenes Plugin, das wir bereits verwenden, reparieren oder modifizieren?",
+        "answer": "Wir vermeiden es grundsätzlich, Kernordner von Drittanbieter-Plugins zu bearbeiten, da diese Änderungen gelöscht werden, wenn das Plugin aktualisiert wird. Wir können jedoch WordPress-Hooks (Aktionen und Filter) verwenden, um das Verhalten vorhandener Plugins auf sichere, aktualisierungssichere Weise zu ändern."
+      },
+      {
+        "question": "Bieten Sie Support und Updates für benutzerdefinierte Plugins an?",
+        "answer": "Ja. Wir bieten kontinuierliche Support- und Wartungsverträge für unsere benutzerdefinierten Plugins an. Wir überwachen die Kompatibilität mit neuen WordPress-Versionen und sorgen für fortlaufende Verbesserungen, während sich Ihre Geschäftslogik weiterentwickelt."
+      }
+    ],
+    "ur": [
+      {
+        "question": "موجودہ پلگ ان استعمال کرنے کے بجائے کسٹم پلگ ان کیوں بنائیں؟",
+        "answer": "آف دی شیلف پلگ انز میں اکثر 80% خصوصیات ہوتی ہیں جن کی آپ کو ضرورت نہیں ہوتی ہے، جس سے آپ کی سائٹ سست ہو جاتی ہے، اور 20% مخصوص خصوصیات کی کمی ہوتی ہے جن کی آپ کو درحقیقت ضرورت ہوتی ہے۔ ایک حسب ضرورت پلگ ان بالکل وہی کرتا ہے جس کی آپ کو ضرورت ہوتی ہے، بغیر کسی رکاوٹ کے آپ کے موجودہ سسٹمز کے ساتھ گھل مل جاتا ہے، اور فلا ہوا کوڈ سے سیکیورٹی کے خطرات متعارف نہیں کراتا ہے۔"
+      },
+      {
+        "question": "کیا آپ ایسا پلگ ان بنا سکتے ہیں جو ورڈپریس کو بیرونی API سے جوڑتا ہو؟",
+        "answer": "ہاں۔ ہماری اکثر درخواستوں میں سے ایک کسٹم انضمام کی تعمیر ہے۔ ہم ایسے پلگ ان بنا سکتے ہیں جو آپ کے WooCommerce اسٹور کو کسٹم ERP کے ساتھ ہم آہنگ کرتے ہیں، بیرونی CRMs (جیسے Salesforce یا HubSpot) سے ڈیٹا کھینچتے ہیں، یا ریئل ٹائم ڈیٹا ڈسپلے کرنے کے لیے فریق ثالث کے APIs سے جڑتے ہیں۔"
+      },
+      {
+        "question": "کیا پلگ ان میری سائٹ کی رفتار کو متاثر کرے گا؟",
+        "answer": "نہیں۔ ہم انتہائی موزوں، ہلکے وزن والے پلگ ان بناتے ہیں۔ ہم ڈیٹا بیس کی مناسب ترتیب کا استعمال کرتے ہیں، کیشنگ API کے جوابات کے لیے ورڈپریس ٹرانسینٹ، اور اس بات کو یقینی بناتے ہیں کہ اسکرپٹ صرف ان مخصوص صفحات پر لوڈ کیے جائیں جہاں پلگ ان اصل میں استعمال ہوتا ہے۔"
+      },
+      {
+        "question": "کیا آپ کے پلگ ان جدید ترین ورڈپریس ورژنز کے ساتھ مطابقت رکھتے ہیں؟",
+        "answer": "ہاں۔ ہم سخت آبجیکٹ پر مبنی پی ایچ پی اور ورڈپریس کوڈیکس کے معیارات کا استعمال کرتے ہوئے ترقی کرتے ہیں۔ یہ یقینی بناتا ہے کہ پلگ ان پی ایچ پی کے تازہ ترین ورژنز اور مستقبل کے ورڈپریس کور اپ ڈیٹس کے ساتھ پوری طرح مطابقت رکھتا ہے جس کے لیے مسلسل دوبارہ لکھنے کی ضرورت نہیں ہے۔"
+      },
+      {
+        "question": "کیا آپ ہمارے پہلے سے استعمال شدہ پلگ ان کو درست یا تبدیل کر سکتے ہیں؟",
+        "answer": "ہم عام طور پر تھرڈ پارٹی پلگ ان کور فائلوں میں ترمیم کرنے سے گریز کرتے ہیں، کیونکہ پلگ ان اپ ڈیٹ ہونے پر وہ تبدیلیاں مٹ جائیں گی۔ تاہم، ہم موجودہ پلگ ان کے رویے کو محفوظ، اپ گریڈ پروف انداز میں تبدیل کرنے کے لیے ورڈپریس ہکس (اعمال اور فلٹرز) استعمال کر سکتے ہیں۔"
+      },
+      {
+        "question": "کیا آپ کسٹم پلگ ان کے لیے سپورٹ اور اپ ڈیٹس فراہم کرتے ہیں؟",
+        "answer": "ہاں۔ ہم اپنے حسب ضرورت پلگ ان کے لیے مسلسل سپورٹ اور دیکھ بھال کے معاہدے پیش کرتے ہیں۔ ہم ورڈپریس کی نئی ریلیز کے ساتھ مطابقت کی نگرانی کرتے ہیں اور آپ کے کاروباری منطق کے تیار ہوتے ہی مسلسل بہتری فراہم کرتے ہیں۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "لماذا يتم بناء مكون إضافي مخصص (custom plugin) بدلاً من استخدام مكون موجود؟",
+        "answer": "غالبًا ما تحتوي المكونات الإضافية الجاهزة على 80٪ من الميزات التي لا تحتاجها، مما يؤدي إلى إبطاء موقعك، وتفتقر إلى 20٪ من الميزات التي تحتاجها فعليًا. يقوم المكون الإضافي المخصص بما تحتاجه بالضبط، ويتكامل بسلاسة مع أنظمتك الحالية، ولا يقدم نقاط ضعف أمنية من التعليمات البرمجية المتضخمة."
+      },
+      {
+        "question": "هل يمكنك بناء مكون إضافي يربط WordPress بواجهة برمجة تطبيقات (API) خارجية؟",
+        "answer": "نعم. من أكثر الطلبات المتكررة لدينا بناء تكاملات مخصصة. يمكننا إنشاء مكونات إضافية تزامن متجر WooCommerce الخاص بك مع نظام ERP مخصص، أو سحب البيانات من أنظمة CRM خارجية (مثل Salesforce أو HubSpot)، أو الاتصال بـ APIs لجهات خارجية لعرض البيانات في الوقت الفعلي."
+      },
+      {
+        "question": "هل سيؤثر المكون الإضافي على سرعة موقعي؟",
+        "answer": "لا. نحن نبني مكونات إضافية خفيفة الوزن وعالية التحسين. نحن نستخدم الفهرسة المناسبة لقاعدة البيانات، و WordPress transients لتخزين استجابات API مؤقتًا، ونضمن تحميل البرامج النصية (scripts) فقط على الصفحات المحددة التي يتم استخدام المكون الإضافي فيها فعليًا."
+      },
+      {
+        "question": "هل المكونات الإضافية الخاصة بك متوافقة مع أحدث إصدارات WordPress؟",
+        "answer": "نعم. نقوم بالتطوير باستخدام معايير PHP الموجهة للكائنات (object-oriented) ومعايير WordPress Codex الصارمة. يضمن ذلك بقاء المكون الإضافي متوافقًا تمامًا مع أحدث إصدارات PHP وتحديثات WordPress الأساسية المستقبلية دون الحاجة إلى إعادة كتابة مستمرة."
+      },
+      {
+        "question": "هل يمكنك إصلاح أو تعديل مكون إضافي موجود نستخدمه بالفعل؟",
+        "answer": "نتجنب بشكل عام تحرير الملفات الأساسية للمكونات الإضافية التابعة لجهات خارجية، حيث سيتم مسح هذه التغييرات عند تحديث المكون الإضافي. ومع ذلك، يمكننا استخدام خطافات WordPress (الإجراءات والمرشحات - actions and filters) لتعديل سلوك المكونات الإضافية الحالية بطريقة آمنة ومقاومة للترقية."
+      },
+      {
+        "question": "هل تقدمون الدعم والتحديثات للمكونات الإضافية المخصصة؟",
+        "answer": "نعم. نحن نقدم عقود دعم وصيانة مستمرة لمكوناتنا الإضافية المخصصة. نحن نراقب التوافق مع إصدارات WordPress الجديدة ونقدم تحسينات مستمرة مع تطور منطق عملك."
+      }
+    ]
+  },
+  "wordpress-optimization": {
+    "en": [
+      {
+        "question": "Why is my WordPress site so slow?",
+        "answer": "WordPress sites usually slow down due to a combination of factors: cheap shared hosting, too many poorly coded plugins, unoptimized large images, a bloated theme, and lack of page caching. We audit your site to pinpoint exactly what is causing the bottleneck."
+      },
+      {
+        "question": "What is Google's Core Web Vitals, and why does it matter?",
+        "answer": "Core Web Vitals are specific metrics Google uses to measure a site's user experience (loading speed, interactivity, and visual stability). If your WordPress site fails these metrics, Google will penalize your search ranking, making it harder for customers to find you."
+      },
+      {
+        "question": "How do you improve WordPress speed?",
+        "answer": "Our optimization process involves migrating to premium cloud hosting (if necessary), setting up server-level caching (Redis/Memcached), minifying CSS/JS, implementing a Content Delivery Network (CDN), converting images to WebP formats, and removing unused bloated plugins."
+      },
+      {
+        "question": "Will optimizing my site break its design or functionality?",
+        "answer": "It can if done incorrectly, which is why we test all optimizations in a staging environment first. Sometimes aggressively deferring JavaScript can break animations or sliders. We carefully configure the caching rules to ensure blazing speed without breaking any front-end functionality."
+      },
+      {
+        "question": "How long does a WordPress speed optimization take?",
+        "answer": "A standard speed audit and implementation takes about 1 to 2 weeks. For highly complex e-commerce sites or massive news portals, resolving deep architectural bottlenecks may take 3 to 4 weeks to ensure complete stability under high traffic."
+      },
+      {
+        "question": "Is speed optimization a one-time job?",
+        "answer": "It is a highly effective one-time baseline fix, but to maintain top speeds, ongoing maintenance is required. As you add new plugins, update content, and as WordPress evolves, minor adjustments to the caching and database are needed to keep the site flying."
+      }
+    ],
+    "tr": [
+      {
+        "question": "WordPress sitem neden bu kadar yavaş?",
+        "answer": "WordPress siteleri genellikle şu faktörlerin bir kombinasyonu nedeniyle yavaşlar: ucuz paylaşımlı barındırma (hosting), çok fazla kötü kodlanmış eklenti, optimize edilmemiş büyük resimler, şişirilmiş bir tema ve sayfa önbelleğe alma (caching) eksikliği. Darboğaza tam olarak neyin neden olduğunu belirlemek için sitenizi denetliyoruz."
+      },
+      {
+        "question": "Google'ın Önemli Web Verileri (Core Web Vitals) nedir ve neden önemlidir?",
+        "answer": "Önemli Web Verileri, Google'ın bir sitenin kullanıcı deneyimini (yükleme hızı, etkileşim ve görsel kararlılık) ölçmek için kullandığı belirli metriklerdir. WordPress siteniz bu metriklerde başarısız olursa, Google arama sıralamanızı cezalandırır ve müşterilerin sizi bulmasını zorlaştırır."
+      },
+      {
+        "question": "WordPress hızını nasıl artırıyorsunuz?",
+        "answer": "Optimizasyon sürecimiz; premium bulut barındırmaya geçiş (gerekirse), sunucu düzeyinde önbelleğe alma (Redis/Memcached) kurma, CSS/JS'yi küçültme (minify), bir İçerik Dağıtım Ağı (CDN) uygulama, görüntüleri WebP formatlarına dönüştürme ve kullanılmayan şişirilmiş eklentileri kaldırmayı içerir."
+      },
+      {
+        "question": "Sitemi optimize etmek tasarımını veya işlevselliğini bozar mı?",
+        "answer": "Yanlış yapılırsa bozabilir, bu yüzden tüm optimizasyonları önce bir hazırlık (staging) ortamında test ediyoruz. Bazen JavaScript'i agresif bir şekilde ertelemek animasyonları veya kaydırıcıları (sliders) bozabilir. Herhangi bir ön uç işlevselliğini bozmadan inanılmaz hız sağlamak için önbelleğe alma kurallarını dikkatlice yapılandırıyoruz."
+      },
+      {
+        "question": "Bir WordPress hız optimizasyonu ne kadar sürer?",
+        "answer": "Standart bir hız denetimi ve uygulaması yaklaşık 1 ila 2 hafta sürer. Son derece karmaşık e-ticaret siteleri veya devasa haber portalları için, yüksek trafik altında tam stabilite sağlamak amacıyla derin mimari darboğazları çözmek 3 ila 4 hafta sürebilir."
+      },
+      {
+        "question": "Hız optimizasyonu tek seferlik bir iş midir?",
+        "answer": "Oldukça etkili bir tek seferlik temel düzeltmedir, ancak en yüksek hızları korumak için sürekli bakım gereklidir. Yeni eklentiler ekledikçe, içeriği güncelledikçe ve WordPress geliştikçe, sitenin uçmaya devam etmesi için önbelleğe alma ve veritabanında küçük ayarlamalar yapılması gerekir."
+      }
+    ],
+    "de": [
+      {
+        "question": "Warum ist meine WordPress-Seite so langsam?",
+        "answer": "WordPress-Sites verlangsamen sich normalerweise aufgrund einer Kombination von Faktoren: billiges Shared Hosting, zu viele schlecht codierte Plugins, nicht optimierte große Bilder, ein überladenes Theme und fehlendes Seiten-Caching. Wir auditieren Ihre Website, um genau festzustellen, was den Engpass verursacht."
+      },
+      {
+        "question": "Was sind die Core Web Vitals von Google und warum sind sie wichtig?",
+        "answer": "Core Web Vitals sind spezifische Metriken, die Google verwendet, um die Benutzererfahrung einer Website (Ladegeschwindigkeit, Interaktivität und visuelle Stabilität) zu messen. Wenn Ihre WordPress-Site diese Kennzahlen nicht erfüllt, bestraft Google Ihr Suchranking und macht es für Kunden schwieriger, Sie zu finden."
+      },
+      {
+        "question": "Wie verbessern Sie die WordPress-Geschwindigkeit?",
+        "answer": "Unser Optimierungsprozess umfasst die Migration auf Premium-Cloud-Hosting (falls erforderlich), die Einrichtung von Server-Level-Caching (Redis/Memcached), die Minimierung von CSS/JS, die Implementierung eines Content Delivery Network (CDN), die Konvertierung von Bildern in WebP-Formate und das Entfernen von ungenutzten, aufgeblähten Plugins."
+      },
+      {
+        "question": "Wird die Optimierung meiner Website ihr Design oder ihre Funktionalität beeinträchtigen?",
+        "answer": "Wenn sie falsch durchgeführt wird, kann das passieren. Deshalb testen wir alle Optimierungen zunächst in einer Staging-Umgebung. Manchmal kann aggressives Zurückstellen (Deferring) von JavaScript Animationen oder Slider beschädigen. Wir konfigurieren die Caching-Regeln sorgfältig, um eine rasante Geschwindigkeit zu gewährleisten, ohne die Front-End-Funktionalität zu beeinträchtigen."
+      },
+      {
+        "question": "Wie lange dauert eine WordPress-Geschwindigkeitsoptimierung?",
+        "answer": "Ein Standard-Geschwindigkeits-Audit und die Implementierung dauern etwa 1 bis 2 Wochen. Bei hochkomplexen E-Commerce-Sites oder massiven Nachrichtenportalen kann die Behebung tiefgreifender architektonischer Engpässe 3 bis 4 Wochen dauern, um vollständige Stabilität bei hohem Datenverkehr zu gewährleisten."
+      },
+      {
+        "question": "Ist Geschwindigkeitsoptimierung ein einmaliger Job?",
+        "answer": "Es ist eine hochwirksame einmalige Basis-Korrektur, aber um Höchstgeschwindigkeiten aufrechtzuerhalten, ist eine laufende Wartung erforderlich. Wenn Sie neue Plugins hinzufügen, Inhalte aktualisieren und sich WordPress weiterentwickelt, sind geringfügige Anpassungen an Caching und Datenbank erforderlich, um die Website am Laufen zu halten."
+      }
+    ],
+    "ur": [
+      {
+        "question": "میری ورڈپریس سائٹ اتنی سست کیوں ہے؟",
+        "answer": "ورڈپریس سائٹس عام طور پر عوامل کے امتزاج کی وجہ سے سست ہو جاتی ہیں: سستی مشترکہ ہوسٹنگ، بہت زیادہ غیر تسلی بخش کوڈ والے پلگ انز، غیر موزوں بڑی تصاویر، ایک پھولا ہوا تھیم، اور صفحہ کیشنگ کی کمی۔ ہم اس بات کی نشاندہی کرنے کے لیے آپ کی سائٹ کا آڈٹ کرتے ہیں کہ اصل میں کس وجہ سے رکاوٹ پیدا ہو رہی ہے۔"
+      },
+      {
+        "question": "Google کے بنیادی ویب وائٹلز کیا ہیں، اور اس سے کیا فرق پڑتا ہے؟",
+        "answer": "Core Web Vitals وہ مخصوص میٹرکس ہیں جو Google سائٹ کے صارف کے تجربے (لوڈنگ کی رفتار، تعامل، اور بصری استحکام) کی پیمائش کے لیے استعمال کرتا ہے۔ اگر آپ کی ورڈپریس سائٹ ان میٹرکس میں ناکام ہوجاتی ہے، تو گوگل آپ کی سرچ رینکنگ کو سزا دے گا، جس سے صارفین کے لیے آپ کو تلاش کرنا مشکل ہوجائے گا۔"
+      },
+      {
+        "question": "آپ ورڈپریس کی رفتار کو کیسے بہتر بناتے ہیں؟",
+        "answer": "ہمارے اصلاح کے عمل میں پریمیم کلاؤڈ ہوسٹنگ پر منتقل ہونا (اگر ضروری ہو)، سرور لیول کیشنگ قائم کرنا (Redis/Memcached)، CSS/JS کو کم کرنا، کنٹینٹ ڈیلیوری نیٹ ورک (CDN) کو نافذ کرنا، تصاویر کو WebP فارمیٹس میں تبدیل کرنا، اور غیر استعمال شدہ ہٹانا شامل ہے۔ پھولے ہوئے پلگ انز"
+      },
+      {
+        "question": "کیا میری سائٹ کو بہتر بنانے سے اس کا ڈیزائن یا فعالیت ٹوٹ جائے گی؟",
+        "answer": "اگر غلط طریقے سے کیا جائے تو ایسا ہو سکتا ہے، یہی وجہ ہے کہ ہم پہلے اسٹیجنگ ماحول میں تمام اصلاح کی جانچ کرتے ہیں۔ بعض اوقات جارحانہ طور پر جاوا اسکرپٹ کو موخر کرنے سے متحرک تصاویر یا سلائیڈرز ٹوٹ سکتے ہیں۔ ہم کسی بھی فرنٹ اینڈ فعالیت کو توڑے بغیر تیز رفتار کو یقینی بنانے کے لیے کیشنگ رولز کو احتیاط سے ترتیب دیتے ہیں۔"
+      },
+      {
+        "question": "ورڈپریس کی رفتار کو بہتر بنانے میں کتنا وقت لگتا ہے؟",
+        "answer": "ایک معیاری رفتار آڈٹ اور نفاذ میں تقریباً 1 سے 2 ہفتے لگتے ہیں۔ انتہائی پیچیدہ ای کامرس سائٹس یا بڑے نیوز پورٹلز کے لیے، گہری تعمیراتی رکاوٹوں کو حل کرنے میں زیادہ ٹریفک کے تحت مکمل استحکام کو یقینی بنانے میں 3 سے 4 ہفتے لگ سکتے ہیں۔"
+      },
+      {
+        "question": "کیا رفتار کی اصلاح ایک وقتی کام ہے؟",
+        "answer": "یہ ایک انتہائی موثر ایک وقتی بنیادی حل ہے، لیکن تیز رفتاری کو برقرار رکھنے کے لیے، مسلسل دیکھ بھال کی ضرورت ہے۔ جیسے ہی آپ نئے پلگ انز شامل کرتے ہیں، مواد کو اپ ڈیٹ کرتے ہیں، اور جیسے ہی ورڈپریس تیار ہوتا ہے، کیشنگ اور ڈیٹا بیس میں معمولی ایڈجسٹمنٹ کی ضرورت ہوتی ہے تاکہ سائٹ کو اڑان بھرتی رہے۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "لماذا موقع WordPress الخاص بي بطيء جدًا؟",
+        "answer": "عادةً ما تتباطأ مواقع WordPress بسبب مجموعة من العوامل: الاستضافة المشتركة الرخيصة، والعديد من المكونات الإضافية سيئة التشفير (الكود)، والصور الكبيرة غير المحسّنة، والقوالب المتضخمة، ونقص التخزين المؤقت للصفحة (caching). نقوم بمراجعة موقعك لتحديد سبب الاختناق (bottleneck) بدقة."
+      },
+      {
+        "question": "ما هي Core Web Vitals من Google، ولماذا هي مهمة؟",
+        "answer": "مؤشرات أداء الويب الأساسية (Core Web Vitals) هي مقاييس محددة تستخدمها Google لقياس تجربة المستخدم في الموقع (سرعة التحميل، والتفاعل، والاستقرار البصري). إذا فشل موقع WordPress الخاص بك في هذه المقاييس، فستعاقب Google تصنيف البحث الخاص بك، مما يجعل من الصعب على العملاء العثور عليك."
+      },
+      {
+        "question": "كيف تقومون بتحسين سرعة WordPress؟",
+        "answer": "تتضمن عملية التحسين لدينا الترحيل إلى استضافة سحابية متميزة (إذا لزم الأمر)، وإعداد التخزين المؤقت على مستوى الخادم (Redis / Memcached)، وتصغير (minify) CSS/JS، وتنفيذ شبكة توصيل المحتوى (CDN)، وتحويل الصور إلى تنسيقات WebP، وإزالة المكونات الإضافية المتضخمة غير المستخدمة."
+      },
+      {
+        "question": "هل سيؤدي تحسين موقعي إلى كسر تصميمه أو وظائفه؟",
+        "answer": "يمكن أن يحدث ذلك إذا تم بشكل غير صحيح، ولهذا السبب نختبر جميع التحسينات في بيئة اختبار (staging) أولاً. في بعض الأحيان، يمكن أن يؤدي تأجيل JavaScript (deferring) بقوة إلى كسر الرسوم المتحركة أو أشرطة التمرير (sliders). نقوم بتكوين قواعد التخزين المؤقت بعناية لضمان سرعة فائقة دون كسر أي وظيفة في الواجهة الأمامية."
+      },
+      {
+        "question": "كم من الوقت يستغرق تحسين سرعة WordPress؟",
+        "answer": "تستغرق مراجعة السرعة القياسية والتنفيذ من أسبوع إلى أسبوعين تقريبًا. بالنسبة لمواقع التجارة الإلكترونية المعقدة للغاية أو البوابات الإخبارية الضخمة، قد يستغرق حل الاختناقات المعمارية العميقة من 3 إلى 4 أسابيع لضمان الاستقرار الكامل تحت حركة المرور العالية."
+      },
+      {
+        "question": "هل تحسين السرعة وظيفة تتم لمرة واحدة؟",
+        "answer": "إنه إصلاح أساسي لمرة واحدة فعال للغاية، ولكن للحفاظ على سرعات قصوى، يلزم إجراء صيانة مستمرة. عند إضافة مكونات إضافية جديدة، وتحديث المحتوى، ومع تطور WordPress، تكون هناك حاجة إلى تعديلات طفيفة على التخزين المؤقت وقاعدة البيانات لإبقاء الموقع سريعًا."
+      }
+    ]
+  },
+  "virtual-tours": {
+    "en": [
+      {
+        "question": "What exactly is a 360 virtual tour?",
+        "answer": "A 360 virtual tour is a fully interactive, immersive simulation of an existing location. Users can click, drag, and 'walk' through your real estate property, hotel, or retail store from their phone or computer, feeling as if they are actually standing inside the space."
+      },
+      {
+        "question": "How do you capture the space for the virtual tour?",
+        "answer": "We use specialized high-definition 360-degree cameras (like Matterport or Ricoh Theta) and laser scanners to capture panoramic images and depth data of your physical space. We then stitch these images together into a seamless 3D model."
+      },
+      {
+        "question": "Can virtual tours help increase real estate sales?",
+        "answer": "Yes, dramatically. Virtual tours weed out uncommitted buyers by giving them a realistic walkthrough before they visit. It saves real estate agents time, allows out-of-state or international buyers to explore properties, and significantly increases engagement on property listings."
+      },
+      {
+        "question": "Can we embed the virtual tour on our own website?",
+        "answer": "Absolutely. Once the tour is finalized, we provide an iframe embed code. You can easily paste this code into your WordPress, Webflow, or custom-built website, just like embedding a YouTube video."
+      },
+      {
+        "question": "Can you add clickable hotspots or information tags inside the tour?",
+        "answer": "Yes. We can add interactive 'hotspots' throughout the tour. When a user clicks on a specific appliance in a kitchen, or a piece of art in a gallery, a pop-up can display text, play a video, or provide a direct link to buy the item."
+      },
+      {
+        "question": "Does a virtual tour work on mobile devices and VR headsets?",
+        "answer": "Yes. The tours are fully responsive and optimized for mobile browsers. Furthermore, they are WebXR compatible, meaning users with VR headsets (like Meta Quest) can enter a fully immersive virtual reality version of the tour."
+      }
+    ],
+    "tr": [
+      {
+        "question": "360 derece sanal tur tam olarak nedir?",
+        "answer": "360 sanal tur, mevcut bir konumun tamamen etkileşimli, sürükleyici bir simülasyonudur. Kullanıcılar telefonlarından veya bilgisayarlarından tıklayıp sürükleyerek gayrimenkulünüzün, otelinizin veya perakende mağazanızın içinde 'yürüyebilir', sanki gerçekten o alanın içindeymiş gibi hissedebilirler."
+      },
+      {
+        "question": "Sanal tur için mekanı nasıl çekiyorsunuz?",
+        "answer": "Fiziksel alanınızın panoramik görüntülerini ve derinlik verilerini yakalamak için özel yüksek çözünürlüklü 360 derece kameralar (Matterport veya Ricoh Theta gibi) ve lazer tarayıcılar kullanıyoruz. Daha sonra bu görüntüleri kusursuz bir 3B model halinde birleştiriyoruz."
+      },
+      {
+        "question": "Sanal turlar gayrimenkul satışlarını artırmaya yardımcı olabilir mi?",
+        "answer": "Evet, önemli ölçüde. Sanal turlar, ziyaret etmeden önce gerçekçi bir adım adım yol göstererek kararsız alıcıları ayıklar. Emlakçıların zamanından tasarruf sağlar, eyalet dışından veya uluslararası alıcıların mülkleri keşfetmesine olanak tanır ve mülk listelerindeki etkileşimi önemli ölçüde artırır."
+      },
+      {
+        "question": "Sanal turu kendi web sitemize yerleştirebilir miyiz?",
+        "answer": "Kesinlikle. Tur kesinleştikten sonra bir iframe yerleştirme kodu sağlıyoruz. Bu kodu, tıpkı bir YouTube videosu yerleştirir gibi WordPress, Webflow veya özel yapım web sitenize kolayca yapıştırabilirsiniz."
+      },
+      {
+        "question": "Tur içine tıklanabilir etkin noktalar (hotspots) veya bilgi etiketleri ekleyebilir misiniz?",
+        "answer": "Evet. Tur boyunca etkileşimli 'etkin noktalar' ekleyebiliriz. Bir kullanıcı bir mutfaktaki belirli bir cihaza veya bir galerideki bir sanat eserine tıkladığında, bir açılır pencere (pop-up) metin görüntüleyebilir, bir video oynatabilir veya öğeyi satın almak için doğrudan bir bağlantı sağlayabilir."
+      },
+      {
+        "question": "Sanal tur, mobil cihazlarda ve VR (Sanal Gerçeklik) gözlüklerinde çalışır mı?",
+        "answer": "Evet. Turlar tamamen duyarlıdır (responsive) ve mobil tarayıcılar için optimize edilmiştir. Ayrıca WebXR uyumludurlar, yani VR gözlükleri (Meta Quest gibi) olan kullanıcılar turun tamamen sürükleyici bir sanal gerçeklik versiyonuna girebilirler."
+      }
+    ],
+    "de": [
+      {
+        "question": "Was genau ist ein virtueller 360-Grad-Rundgang?",
+        "answer": "Ein virtueller 360-Grad-Rundgang ist eine vollständig interaktive, immersive Simulation eines realen Ortes. Benutzer können klicken, ziehen und per Telefon oder Computer durch Ihre Immobilie, Ihr Hotel oder Ihr Einzelhandelsgeschäft „spazieren“, als stünden sie tatsächlich im Raum."
+      },
+      {
+        "question": "Wie erfassen Sie den Raum für den virtuellen Rundgang?",
+        "answer": "Wir verwenden spezielle hochauflösende 360-Grad-Kameras (wie Matterport oder Ricoh Theta) und Laserscanner, um Panoramabilder und Tiefendaten Ihrer physischen Räumlichkeiten zu erfassen. Diese Bilder fügen wir dann zu einem nahtlosen 3D-Modell zusammen."
+      },
+      {
+        "question": "Können virtuelle Rundgänge zur Steigerung der Immobilienverkäufe beitragen?",
+        "answer": "Ja, dramatisch. Virtuelle Rundgänge sieben unentschlossene Käufer aus, indem sie ihnen schon vor der Besichtigung einen realistischen Rundgang ermöglichen. Sie sparen Immobilienmaklern Zeit, ermöglichen auswärtigen oder internationalen Käufern die Erkundung von Immobilien und erhöhen die Interaktion bei Immobilienanzeigen erheblich."
+      },
+      {
+        "question": "Können wir den virtuellen Rundgang auf unserer eigenen Website einbetten?",
+        "answer": "Absolut. Sobald die Tour abgeschlossen ist, stellen wir einen iframe-Einbettungscode zur Verfügung. Sie können diesen Code ganz einfach in Ihre WordPress-, Webflow- oder maßgeschneiderte Website einfügen, genau wie die Einbettung eines YouTube-Videos."
+      },
+      {
+        "question": "Können Sie anklickbare Hotspots oder Info-Tags in den Rundgang einfügen?",
+        "answer": "Ja. Wir können während des gesamten Rundgangs interaktive „Hotspots“ hinzufügen. Wenn ein Benutzer auf ein bestimmtes Gerät in einer Küche oder ein Kunstwerk in einer Galerie klickt, kann ein Pop-up Text anzeigen, ein Video abspielen oder einen direkten Link zum Kauf des Artikels bereitstellen."
+      },
+      {
+        "question": "Funktioniert eine virtuelle Tour auf Mobilgeräten und VR-Headsets?",
+        "answer": "Ja. Die Touren sind vollständig responsive und für mobile Browser optimiert. Darüber hinaus sind sie WebXR-kompatibel, was bedeutet, dass Benutzer mit VR-Headsets (wie Meta Quest) in eine vollständig immersive Virtual-Reality-Version der Tour eintauchen können."
+      }
+    ],
+    "ur": [
+      {
+        "question": "بالکل ایک 360 ورچوئل ٹور کیا ہے؟",
+        "answer": "ایک 360 ورچوئل ٹور موجودہ مقام کا مکمل طور پر انٹرایکٹو، عمیق نقلی ہے۔ صارفین کلک کر سکتے ہیں، گھسیٹ سکتے ہیں اور اپنے فون یا کمپیوٹر سے آپ کی رئیل اسٹیٹ پراپرٹی، ہوٹل، یا ریٹیل اسٹور سے 'پیدل' چل سکتے ہیں، ایسا محسوس کر سکتے ہیں کہ وہ دراصل جگہ کے اندر کھڑے ہیں۔"
+      },
+      {
+        "question": "آپ ورچوئل ٹور کے لیے جگہ کیسے حاصل کرتے ہیں؟",
+        "answer": "ہم آپ کی فزیکل اسپیس کی پینورامک تصاویر اور گہرائی کا ڈیٹا کھینچنے کے لیے خصوصی ہائی ڈیفینیشن 360 ڈگری کیمرے (جیسے میٹر پورٹ یا ریکو تھیٹا) اور لیزر اسکینرز استعمال کرتے ہیں۔ اس کے بعد ہم ان تصویروں کو ایک ہموار 3D ماڈل میں سلائی کرتے ہیں۔"
+      },
+      {
+        "question": "کیا ورچوئل ٹور رئیل اسٹیٹ کی فروخت بڑھانے میں مدد کر سکتے ہیں؟",
+        "answer": "جی ہاں، ڈرامائی طور پر. ورچوئل ٹورز دورہ کرنے سے پہلے ان کو حقیقت پسندانہ واک تھرو دے کر غیر متعہد خریداروں کو باہر نکال دیتے ہیں۔ یہ رئیل اسٹیٹ ایجنٹوں کا وقت بچاتا ہے، ریاست سے باہر یا بین الاقوامی خریداروں کو جائیدادیں تلاش کرنے کی اجازت دیتا ہے، اور پراپرٹی کی فہرستوں پر نمایاں طور پر مشغولیت کو بڑھاتا ہے۔"
+      },
+      {
+        "question": "کیا ہم اپنی ویب سائٹ پر ورچوئل ٹور شامل کر سکتے ہیں؟",
+        "answer": "بالکل۔ ٹور کے فائنل ہونے کے بعد، ہم ایک iframe ایمبیڈ کوڈ فراہم کرتے ہیں۔ آپ آسانی سے اس کوڈ کو اپنی ورڈپریس، ویب فلو، یا اپنی مرضی کے مطابق بنائی گئی ویب سائٹ میں چسپاں کر سکتے ہیں، بالکل یوٹیوب ویڈیو کو سرایت کرنے کی طرح۔"
+      },
+      {
+        "question": "کیا آپ ٹور کے اندر کلک کے قابل ہاٹ سپاٹ یا معلوماتی ٹیگز شامل کر سکتے ہیں؟",
+        "answer": "ہاں۔ ہم پورے دورے میں انٹرایکٹو 'ہاٹ سپاٹ' شامل کر سکتے ہیں۔ جب کوئی صارف باورچی خانے میں کسی مخصوص آلات، یا کسی گیلری میں آرٹ کے کسی ٹکڑے پر کلک کرتا ہے، تو ایک پاپ اپ متن دکھا سکتا ہے، ایک ویڈیو چلا سکتا ہے، یا شے خریدنے کے لیے براہ راست لنک فراہم کر سکتا ہے۔"
+      },
+      {
+        "question": "کیا ورچوئل ٹور موبائل ڈیوائسز اور وی آر ہیڈ سیٹس پر کام کرتا ہے؟",
+        "answer": "ہاں۔ دورے مکمل طور پر جوابدہ اور موبائل براؤزرز کے لیے موزوں ہیں۔ مزید برآں، وہ WebXR کے موافق ہیں، یعنی VR ہیڈسیٹ (جیسے میٹا کویسٹ) والے صارفین ٹور کے مکمل عمیق ورچوئل ریئلٹی ورژن میں داخل ہو سکتے ہیں۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "ما هو بالضبط الجولة الافتراضية 360 درجة؟",
+        "answer": "الجولة الافتراضية 360 هي محاكاة غامرة وتفاعلية بالكامل لموقع موجود. يمكن للمستخدمين النقر والسحب و'المشي' عبر العقار الخاص بك أو الفندق أو متجر البيع بالتجزئة من هواتفهم أو أجهزة الكمبيوتر الخاصة بهم، والشعور كما لو كانوا يقفون بالفعل داخل المساحة."
+      },
+      {
+        "question": "كيف تلتقطون المساحة للجولة الافتراضية؟",
+        "answer": "نستخدم كاميرات 360 درجة متخصصة عالية الدقة (مثل Matterport أو Ricoh Theta) وماسحات ليزر ضوئية لالتقاط صور بانورامية وبيانات العمق لمساحتك المادية. ثم نقوم بتجميع هذه الصور معًا في نموذج ثلاثي الأبعاد سلس."
+      },
+      {
+        "question": "هل يمكن للجولات الافتراضية أن تساعد في زيادة مبيعات العقارات؟",
+        "answer": "نعم، بشكل كبير. تعمل الجولات الافتراضية على استبعاد المشترين غير الملتزمين من خلال إعطائهم جولة واقعية قبل زيارتهم. فهو يوفر وقت وكلاء العقارات، ويسمح للمشترين من خارج الولاية أو الدوليين باستكشاف العقارات، ويزيد بشكل كبير من المشاركة في قوائم العقارات."
+      },
+      {
+        "question": "هل يمكننا تضمين الجولة الافتراضية على موقعنا الخاص؟",
+        "answer": "بالتأكيد. بمجرد الانتهاء من الجولة، نقدم كود تضمين iframe. يمكنك بسهولة لصق هذا الكود في WordPress أو Webflow أو موقعك المخصص، تمامًا مثل تضمين مقطع فيديو على YouTube."
+      },
+      {
+        "question": "هل يمكنك إضافة نقاط فعالة (hotspots) أو علامات معلومات قابلة للنقر داخل الجولة؟",
+        "answer": "نعم. يمكننا إضافة 'نقاط فعالة' تفاعلية في جميع أنحاء الجولة. عندما ينقر مستخدم على جهاز معين في المطبخ، أو قطعة فنية في معرض، يمكن أن تعرض نافذة منبثقة نصًا أو تشغل مقطع فيديو أو توفر رابطًا مباشرًا لشراء العنصر."
+      },
+      {
+        "question": "هل تعمل الجولة الافتراضية على الأجهزة المحمولة ونظارات الواقع الافتراضي (VR)؟",
+        "answer": "نعم. الجولات متجاوبة تمامًا ومُحسّنة لمتصفحات الجوال. علاوة على ذلك، فهي متوافقة مع WebXR، مما يعني أنه يمكن للمستخدمين الذين يرتدون نظارات الواقع الافتراضي (مثل Meta Quest) الدخول إلى إصدار واقع افتراضي غامر بالكامل من الجولة."
+      }
+    ]
+  }
+}

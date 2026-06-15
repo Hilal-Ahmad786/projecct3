@@ -1,0 +1,662 @@
+{
+  "magento-development": {
+    "en": [
+      {
+        "question": "How long does a typical Magento development project take?",
+        "answer": "A standard Magento 2 store build from scratch takes around 3 to 5 months. For complex B2B platforms requiring ERP integrations, custom product configurators, and multi-store setups, the timeline can extend to 6-9 months."
+      },
+      {
+        "question": "What is the typical budget for a Magento store?",
+        "answer": "Professional Magento development usually starts around $25,000 for standard B2C implementations. Enterprise-level Adobe Commerce projects with extensive custom modules and system integrations often range from $50,000 to over $150,000."
+      },
+      {
+        "question": "Do you provide Magento performance optimization?",
+        "answer": "Yes, we specialize in optimizing Magento performance. We implement Varnish caching, Elasticsearch, Redis, and optimized database queries to ensure sub-second page load times even during high-traffic events like Black Friday."
+      },
+      {
+        "question": "Can you migrate our existing store to Magento 2?",
+        "answer": "Absolutely. We handle seamless migrations from Magento 1, Shopify, WooCommerce, or legacy platforms to Magento 2. This includes full data migration of customers, orders, products, and SEO URL redirects to preserve your rankings."
+      },
+      {
+        "question": "How do you handle integrations with our ERP and CRM systems?",
+        "answer": "We use Magento's robust REST and GraphQL APIs to build bi-directional syncs with ERP systems (like SAP, Microsoft Dynamics, NetSuite) and CRMs (like Salesforce), ensuring real-time updates for inventory, pricing, and customer data."
+      },
+      {
+        "question": "Do you offer ongoing Magento support and maintenance?",
+        "answer": "Yes, we provide SLA-backed monthly maintenance plans. This covers critical security patch installations, version upgrades, extension updates, server monitoring, and continuous performance tuning to keep your store secure and fast."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Tipik bir Magento geliştirme projesi ne kadar sürer?",
+        "answer": "Sıfırdan standart bir Magento 2 mağazası kurulumu yaklaşık 3 ila 5 ay sürer. ERP entegrasyonları, özel ürün konfigüratörleri ve çoklu mağaza kurulumları gerektiren karmaşık B2B platformları için zaman çizelgesi 6-9 aya kadar uzayabilir."
+      },
+      {
+        "question": "Bir Magento mağazası için tipik bütçe nedir?",
+        "answer": "Profesyonel Magento geliştirmesi, standart B2C uygulamaları için genellikle 25.000$ civarında başlar. Kapsamlı özel modüllere ve sistem entegrasyonlarına sahip kurumsal düzeydeki Adobe Commerce projeleri genellikle 50.000$ ile 150.000$+ arasında değişir."
+      },
+      {
+        "question": "Magento performans optimizasyonu sağlıyor musunuz?",
+        "answer": "Evet, Magento performansını optimize etme konusunda uzmanız. Kara Cuma gibi trafiğin yoğun olduğu etkinliklerde bile saniyenin altında sayfa yükleme süreleri sağlamak için Varnish önbelleğe alma, Elasticsearch, Redis ve optimize edilmiş veritabanı sorguları uyguluyoruz."
+      },
+      {
+        "question": "Mevcut mağazamızı Magento 2'ye taşıyabilir misiniz?",
+        "answer": "Kesinlikle. Magento 1, Shopify, WooCommerce veya eski platformlardan Magento 2'ye sorunsuz geçişleri yönetiyoruz. Buna müşterilerin, siparişlerin, ürünlerin tam veri geçişi ve sıralamanızı korumak için SEO URL yönlendirmeleri de dahildir."
+      },
+      {
+        "question": "ERP ve CRM sistemlerimizle entegrasyonları nasıl yönetiyorsunuz?",
+        "answer": "Envanter, fiyatlandırma ve müşteri verileri için gerçek zamanlı güncellemeler sağlayarak ERP sistemleri (SAP, Microsoft Dynamics, NetSuite gibi) ve CRM'ler (Salesforce gibi) ile iki yönlü senkronizasyonlar oluşturmak için Magento'nun sağlam REST ve GraphQL API'lerini kullanıyoruz."
+      },
+      {
+        "question": "Sürekli Magento desteği ve bakımı sunuyor musunuz?",
+        "answer": "Evet, SLA destekli aylık bakım planları sunuyoruz. Bu, mağazanızı güvenli ve hızlı tutmak için kritik güvenlik yaması yüklemelerini, sürüm yükseltmelerini, eklenti güncellemelerini, sunucu izlemeyi ve sürekli performans ayarlamasını kapsar."
+      }
+    ],
+    "de": [
+      {
+        "question": "Wie lange dauert ein typisches Magento-Entwicklungsprojekt?",
+        "answer": "Der Aufbau eines standardmäßigen Magento 2-Shops von Grund auf dauert etwa 3 bis 5 Monate. Bei komplexen B2B-Plattformen, die ERP-Integrationen, benutzerdefinierte Produktkonfiguratoren und Multi-Store-Setups erfordern, kann sich der Zeitplan auf 6 bis 9 Monate verlängern."
+      },
+      {
+        "question": "Wie hoch ist das typische Budget für einen Magento-Shop?",
+        "answer": "Professionelle Magento-Entwicklung beginnt in der Regel bei etwa 25.000 US-Dollar für standardmäßige B2C-Implementierungen. Adobe Commerce-Projekte auf Unternehmensebene mit umfangreichen benutzerdefinierten Modulen und Systemintegrationen liegen häufig zwischen 50.000 und über 150.000 US-Dollar."
+      },
+      {
+        "question": "Bieten Sie Magento-Leistungsoptimierung an?",
+        "answer": "Ja, wir sind auf die Optimierung der Magento-Leistung spezialisiert. Wir implementieren Varnish Caching, Elasticsearch, Redis und optimierte Datenbankabfragen, um Ladezeiten von unter einer Sekunde zu gewährleisten, selbst bei Ereignissen mit hohem Datenverkehr wie dem Black Friday."
+      },
+      {
+        "question": "Können Sie unseren bestehenden Shop auf Magento 2 migrieren?",
+        "answer": "Absolut. Wir kümmern uns um nahtlose Migrationen von Magento 1, Shopify, WooCommerce oder Legacy-Plattformen zu Magento 2. Dies umfasst die vollständige Datenmigration von Kunden, Bestellungen, Produkten und SEO-URL-Weiterleitungen, um Ihr Ranking zu erhalten."
+      },
+      {
+        "question": "Wie handhaben Sie Integrationen mit unseren ERP- und CRM-Systemen?",
+        "answer": "Wir verwenden die robusten REST- und GraphQL-APIs von Magento, um bidirektionale Synchronisationen mit ERP-Systemen (wie SAP, Microsoft Dynamics, NetSuite) und CRMs (wie Salesforce) aufzubauen und so Echtzeit-Updates für Bestände, Preise und Kundendaten zu gewährleisten."
+      },
+      {
+        "question": "Bieten Sie fortlaufenden Magento-Support und -Wartung an?",
+        "answer": "Ja, wir bieten SLA-gestützte monatliche Wartungspläne an. Dies umfasst wichtige Sicherheitspatch-Installationen, Versions-Upgrades, Erweiterungs-Updates, Serverüberwachung und kontinuierliche Leistungsoptimierung, um Ihren Shop sicher und schnell zu halten."
+      }
+    ],
+    "ur": [
+      {
+        "question": "ایک عام میگینٹو ڈیولپمنٹ پروجیکٹ میں کتنا وقت لگتا ہے؟",
+        "answer": "شروع سے ایک معیاری Magento 2 اسٹور بنانے میں تقریباً 3 سے 5 ماہ لگتے ہیں۔ پیچیدہ B2B پلیٹ فارمز کے لیے جن کو ERP انضمام، کسٹم پروڈکٹ کنفیگریٹرز، اور ملٹی اسٹور سیٹ اپ کی ضرورت ہوتی ہے، ٹائم لائن 6-9 ماہ تک بڑھ سکتی ہے۔"
+      },
+      {
+        "question": "Magento سٹور کا عام بجٹ کیا ہے؟",
+        "answer": "پیشہ ورانہ میگینٹو ترقی عام طور پر معیاری B2C نفاذ کے لیے تقریباً $25,000 سے شروع ہوتی ہے۔ وسیع کسٹم ماڈیولز اور سسٹم انضمام کے ساتھ انٹرپرائز لیول ایڈوب کامرس پروجیکٹس اکثر $50,000 سے $150,000 سے زیادہ تک ہوتے ہیں۔"
+      },
+      {
+        "question": "کیا آپ میگینٹو کی کارکردگی کو بہتر بنانے کی سہولت فراہم کرتے ہیں؟",
+        "answer": "ہاں، ہم میگینٹو کی کارکردگی کو بہتر بنانے میں مہارت رکھتے ہیں۔ ہم بلیک فرائیڈے جیسے زیادہ ٹریفک والے واقعات کے دوران بھی سب سیکنڈ صفحہ کے لوڈ کے اوقات کو یقینی بنانے کے لیے وارنش کیشنگ، ایلسٹک سرچ، ریڈیس، اور آپٹمائزڈ ڈیٹا بیس سوالات کو لاگو کرتے ہیں۔"
+      },
+      {
+        "question": "کیا آپ ہمارے موجودہ سٹور کو Magento 2 پر منتقل کر سکتے ہیں؟",
+        "answer": "بالکل۔ ہم Magento 1، Shopify، WooCommerce، یا میراثی پلیٹ فارمز سے Magento 2 میں ہموار منتقلی کو سنبھالتے ہیں۔ اس میں آپ کی درجہ بندی کو برقرار رکھنے کے لیے صارفین، آرڈرز، پروڈکٹس، اور SEO یو آر ایل ری ڈائریکٹس کی مکمل ڈیٹا مائیگریشن شامل ہے۔"
+      },
+      {
+        "question": "آپ ہمارے ERP اور CRM سسٹمز کے ساتھ انضمام کو کیسے سنبھالتے ہیں؟",
+        "answer": "ہم ERP سسٹمز (جیسے SAP، Microsoft Dynamics، NetSuite) اور CRMs (جیسے Salesforce) کے ساتھ دو جہتی مطابقت پذیری بنانے کے لیے Magento کے مضبوط REST اور GraphQL APIs کا استعمال کرتے ہیں، جو انوینٹری، قیمتوں کے تعین اور کسٹمر کے ڈیٹا کے لیے ریئل ٹائم اپ ڈیٹس کو یقینی بناتے ہیں۔"
+      },
+      {
+        "question": "کیا آپ میگینٹو کی جاری معاونت اور دیکھ بھال پیش کرتے ہیں؟",
+        "answer": "ہاں، ہم SLA کے حمایت یافتہ ماہانہ دیکھ بھال کے منصوبے فراہم کرتے ہیں۔ اس میں سیکیورٹی پیچ کی اہم تنصیبات، ورژن اپ گریڈ، توسیعی اپ ڈیٹس، سرور کی نگرانی، اور آپ کے اسٹور کو محفوظ اور تیز رکھنے کے لیے مسلسل کارکردگی کی ٹیوننگ شامل ہے۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "ما المدة التي يستغرقها مشروع تطوير Magento النموذجي؟",
+        "answer": "يستغرق بناء متجر Magento 2 قياسي من الصفر حوالي 3 إلى 5 أشهر. بالنسبة لمنصات B2B المعقدة التي تتطلب تكاملات ERP، ومكونات المنتجات المخصصة، وإعدادات المتاجر المتعددة، يمكن أن يمتد الإطار الزمني إلى 6-9 أشهر."
+      },
+      {
+        "question": "ما هي الميزانية المعتادة لمتجر Magento؟",
+        "answer": "يبدأ تطوير Magento الاحترافي عادةً من حوالي 25000 دولار لتطبيقات B2C القياسية. تتراوح مشاريع Adobe Commerce على مستوى المؤسسات مع وحدات مخصصة واسعة النطاق وتكاملات الأنظمة غالبًا من 50000 دولار إلى أكثر من 150000 دولار."
+      },
+      {
+        "question": "هل تقدمون تحسين أداء Magento؟",
+        "answer": "نعم، نحن متخصصون في تحسين أداء Magento. نقوم بتنفيذ التخزين المؤقت Varnish، و Elasticsearch، و Redis، واستعلامات قاعدة البيانات المحسّنة لضمان أوقات تحميل الصفحة في أجزاء من الثانية حتى خلال أحداث حركة المرور العالية مثل الجمعة السوداء."
+      },
+      {
+        "question": "هل يمكنكم ترحيل متجرنا الحالي إلى Magento 2؟",
+        "answer": "بالتأكيد. نتعامل مع عمليات الترحيل السلسة من Magento 1 أو Shopify أو WooCommerce أو المنصات القديمة إلى Magento 2. ويشمل ذلك الترحيل الكامل لبيانات العملاء والطلبات والمنتجات وعمليات إعادة توجيه عناوين URL الخاصة بتحسين محركات البحث للحفاظ على تصنيفاتك."
+      },
+      {
+        "question": "كيف تتعاملون مع التكامل مع أنظمة ERP و CRM الخاصة بنا؟",
+        "answer": "نستخدم واجهات برمجة تطبيقات REST و GraphQL القوية من Magento لإنشاء عمليات مزامنة ثنائية الاتجاه مع أنظمة ERP (مثل SAP و Microsoft Dynamics و NetSuite) وأنظمة CRM (مثل Salesforce)، مما يضمن تحديثات في الوقت الفعلي للمخزون والتسعير وبيانات العملاء."
+      },
+      {
+        "question": "هل تقدمون دعمًا وصيانة مستمرة لـ Magento؟",
+        "answer": "نعم، نحن نقدم خطط صيانة شهرية مدعومة باتفاقية مستوى الخدمة (SLA). يغطي هذا عمليات تثبيت تصحيحات الأمان الهامة، وترقيات الإصدار، وتحديثات الإضافات، ومراقبة الخادم، وضبط الأداء المستمر للحفاظ على متجرك آمنًا وسريعًا."
+      }
+    ]
+  },
+  "ui-design": {
+    "en": [
+      {
+        "question": "How long does the UI design phase usually take?",
+        "answer": "For a standard web application or mobile app, the UI design phase takes 3 to 6 weeks. This includes the initial mood boards, wireframing, high-fidelity mockups, and client feedback iterations."
+      },
+      {
+        "question": "What is the typical cost for a UI design project?",
+        "answer": "Standalone UI design projects usually range from $5,000 for simple applications to $20,000+ for large-scale SaaS platforms or e-commerce suites that require comprehensive design systems and dozens of unique screens."
+      },
+      {
+        "question": "Which design tools does your team use?",
+        "answer": "We exclusively use Figma for all our UI/UX design work. This allows for real-time collaboration, seamless prototyping, and efficient developer handoff through detailed design tokens and component libraries."
+      },
+      {
+        "question": "Do you design with mobile responsiveness in mind?",
+        "answer": "Yes, we utilize a mobile-first or adaptive design approach depending on your user base. Every design delivery includes specific breakpoints for mobile, tablet, and desktop to ensure developers know exactly how the layout should adapt."
+      },
+      {
+        "question": "What is a Design System and do I need one?",
+        "answer": "A Design System is a centralized library of reusable components, typography, colors, and guidelines. If you plan to scale your product, add features over time, or build multiple apps, a Design System is essential for maintaining visual consistency and speeding up development."
+      },
+      {
+        "question": "How do you handle revisions and client feedback?",
+        "answer": "We structure our projects with defined milestones and feedback loops. Typically, our contracts include 2-3 rounds of revisions per milestone. We use Figma's commenting tools to gather your feedback directly on the design canvas for maximum clarity."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Kullanıcı Arayüzü (UI) tasarım aşaması genellikle ne kadar sürer?",
+        "answer": "Standart bir web uygulaması veya mobil uygulama için kullanıcı arayüzü tasarım aşaması 3 ila 6 hafta sürer. Bu; ilk mood board'ları (ilham panoları), tel çerçeveleri, aslına uygun taslakları ve müşteri geri bildirim yinelemelerini içerir."
+      },
+      {
+        "question": "Bir Kullanıcı Arayüzü tasarım projesi için tipik maliyet nedir?",
+        "answer": "Bağımsız Kullanıcı Arayüzü tasarım projeleri genellikle basit uygulamalar için 5.000$'dan, kapsamlı tasarım sistemleri ve düzinelerce benzersiz ekran gerektiren büyük ölçekli SaaS platformları veya e-ticaret süitleri için 20.000$+ aralığında değişir."
+      },
+      {
+        "question": "Ekibiniz hangi tasarım araçlarını kullanıyor?",
+        "answer": "Tüm UI/UX tasarım çalışmalarımız için yalnızca Figma kullanıyoruz. Bu, ayrıntılı tasarım belirteçleri ve bileşen kitaplıkları aracılığıyla gerçek zamanlı işbirliğine, sorunsuz prototip oluşturmaya ve verimli geliştirici devrine olanak tanır."
+      },
+      {
+        "question": "Mobil duyarlılığı göz önünde bulundurarak mı tasarım yapıyorsunuz?",
+        "answer": "Evet, kullanıcı tabanınıza bağlı olarak öncelikle mobil (mobile-first) veya uyarlanabilir bir tasarım yaklaşımı kullanıyoruz. Her tasarım teslimi, geliştiricilerin düzenin tam olarak nasıl uyarlanması gerektiğini bilmelerini sağlamak için mobil, tablet ve masaüstü için belirli kırılma noktaları içerir."
+      },
+      {
+        "question": "Tasarım Sistemi nedir ve buna ihtiyacım var mı?",
+        "answer": "Tasarım Sistemi; yeniden kullanılabilir bileşenlerin, tipografinin, renklerin ve yönergelerin bulunduğu merkezi bir kitaplıktır. Ürününüzü ölçeklendirmeyi, zamanla özellikler eklemeyi veya birden fazla uygulama oluşturmayı planlıyorsanız, görsel tutarlılığı korumak ve geliştirmeyi hızlandırmak için bir Tasarım Sistemi şarttır."
+      },
+      {
+        "question": "Düzeltmeleri ve müşteri geri bildirimlerini nasıl yönetiyorsunuz?",
+        "answer": "Projelerimizi tanımlanmış kilometre taşları ve geri bildirim döngüleri ile yapılandırıyoruz. Genellikle sözleşmelerimiz kilometre taşı başına 2-3 tur revizyon içerir. Maksimum netlik için doğrudan tasarım tuvali üzerinden geri bildirimlerinizi toplamak üzere Figma'nın yorum araçlarını kullanıyoruz."
+      }
+    ],
+    "de": [
+      {
+        "question": "Wie lange dauert die UI-Design-Phase normalerweise?",
+        "answer": "Bei einer standardmäßigen Web- oder mobilen Anwendung dauert die UI-Design-Phase 3 bis 6 Wochen. Dies umfasst die anfänglichen Moodboards, Wireframes, High-Fidelity-Mockups und Kunden-Feedback-Iterationen."
+      },
+      {
+        "question": "Wie hoch sind die typischen Kosten für ein UI-Designprojekt?",
+        "answer": "Eigenständige UI-Designprojekte reichen in der Regel von 5.000 US-Dollar für einfache Anwendungen bis zu über 20.000 US-Dollar für groß angelegte SaaS-Plattformen oder E-Commerce-Suiten, die umfassende Designsysteme und Dutzende einzigartiger Bildschirme erfordern."
+      },
+      {
+        "question": "Welche Designtools verwendet Ihr Team?",
+        "answer": "Wir verwenden Figma ausschließlich für alle unsere UI/UX-Designarbeiten. Dies ermöglicht eine Zusammenarbeit in Echtzeit, nahtloses Prototyping und eine effiziente Übergabe an Entwickler durch detaillierte Design-Tokens und Komponentenbibliotheken."
+      },
+      {
+        "question": "Entwerfen Sie im Hinblick auf mobile Reaktionsfähigkeit?",
+        "answer": "Ja, wir nutzen je nach Benutzerbasis einen Mobile-First- oder adaptiven Designansatz. Jede Designlieferung enthält spezifische Haltepunkte (Breakpoints) für Mobilgeräte, Tablets und Desktops, um sicherzustellen, dass Entwickler genau wissen, wie sich das Layout anpassen soll."
+      },
+      {
+        "question": "Was ist ein Designsystem und brauche ich eines?",
+        "answer": "Ein Designsystem ist eine zentrale Bibliothek wiederverwendbarer Komponenten, Typografie, Farben und Richtlinien. Wenn Sie planen, Ihr Produkt zu skalieren, im Laufe der Zeit Funktionen hinzuzufügen oder mehrere Apps zu entwickeln, ist ein Designsystem unerlässlich, um die visuelle Konsistenz zu wahren und die Entwicklung zu beschleunigen."
+      },
+      {
+        "question": "Wie gehen Sie mit Überarbeitungen und Kundenfeedback um?",
+        "answer": "Wir strukturieren unsere Projekte mit definierten Meilensteinen und Feedbackschleifen. Typischerweise beinhalten unsere Verträge 2-3 Revisionsrunden pro Meilenstein. Wir verwenden die Kommentarwerkzeuge von Figma, um Ihr Feedback für maximale Klarheit direkt auf der Designfläche zu sammeln."
+      }
+    ],
+    "ur": [
+      {
+        "question": "UI ڈیزائن کا مرحلہ عام طور پر کتنا طویل ہوتا ہے؟",
+        "answer": "ایک معیاری ویب ایپلیکیشن یا موبائل ایپ کے لیے، UI ڈیزائن کے مرحلے میں 3 سے 6 ہفتے لگتے ہیں۔ اس میں ابتدائی موڈ بورڈز، وائر فریمنگ، ہائی مخلص میک اپ، اور کلائنٹ کے تاثرات کی تکرار شامل ہیں۔"
+      },
+      {
+        "question": "UI ڈیزائن پروجیکٹ کے لیے عام لاگت کیا ہے؟",
+        "answer": "اسٹینڈ اسٹون UI ڈیزائن پروجیکٹس عام طور پر سادہ ایپلی کیشنز کے لیے $5,000 سے لے کر بڑے پیمانے پر SaaS پلیٹ فارمز یا ای کامرس سویٹس کے لیے $20,000+ تک ہوتے ہیں جن کے لیے جامع ڈیزائن سسٹمز اور درجنوں منفرد اسکرینز کی ضرورت ہوتی ہے۔"
+      },
+      {
+        "question": "آپ کی ٹیم کون سے ڈیزائن ٹولز استعمال کرتی ہے؟",
+        "answer": "ہم خصوصی طور پر اپنے تمام UI/UX ڈیزائن کے کام کے لیے Figma استعمال کرتے ہیں۔ یہ تفصیلی ڈیزائن ٹوکنز اور اجزاء کی لائبریریوں کے ذریعے حقیقی وقت کے تعاون، بغیر کسی رکاوٹ کے پروٹو ٹائپنگ، اور ڈیولپر کے ہینڈ آف کی اجازت دیتا ہے۔"
+      },
+      {
+        "question": "کیا آپ موبائل کی ردعمل کو ذہن میں رکھ کر ڈیزائن کرتے ہیں؟",
+        "answer": "ہاں، ہم آپ کے یوزر بیس کے لحاظ سے موبائل فرسٹ یا انکولی ڈیزائن کا طریقہ استعمال کرتے ہیں۔ ہر ڈیزائن کی ڈیلیوری میں موبائل، ٹیبلٹ اور ڈیسک ٹاپ کے لیے مخصوص بریک پوائنٹس شامل ہوتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ ڈویلپرز بالکل جانتے ہیں کہ لے آؤٹ کو کیسے اپنانا چاہیے۔"
+      },
+      {
+        "question": "ڈیزائن سسٹم کیا ہے اور کیا مجھے اس کی ضرورت ہے؟",
+        "answer": "ڈیزائن سسٹم دوبارہ قابل استعمال اجزاء، نوع ٹائپ، رنگوں اور رہنما خطوط کی ایک مرکزی لائبریری ہے۔ اگر آپ اپنی پروڈکٹ کو پیمانہ بنانے کا ارادہ رکھتے ہیں، وقت کے ساتھ ساتھ فیچرز کا اضافہ کرتے ہیں، یا ایک سے زیادہ ایپس بناتے ہیں، تو بصری تسلسل کو برقرار رکھنے اور ترقی کو تیز کرنے کے لیے ڈیزائن سسٹم ضروری ہے۔"
+      },
+      {
+        "question": "آپ نظرثانی اور کلائنٹ کے تاثرات کو کیسے سنبھالتے ہیں؟",
+        "answer": "ہم اپنے پراجیکٹس کو متعین سنگ میل اور فیڈ بیک لوپس کے ساتھ بناتے ہیں۔ عام طور پر، ہمارے معاہدوں میں فی سنگ میل پر نظرثانی کے 2-3 دور شامل ہوتے ہیں۔ زیادہ سے زیادہ وضاحت کے لیے ہم آپ کے تاثرات براہ راست ڈیزائن کینوس پر جمع کرنے کے لیے Figma کے تبصرہ کرنے والے ٹولز کا استعمال کرتے ہیں۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "ما المدة التي تستغرقها مرحلة تصميم واجهة المستخدم (UI) عادةً؟",
+        "answer": "بالنسبة لتطبيق الويب القياسي أو تطبيق الهاتف المحمول، تستغرق مرحلة تصميم واجهة المستخدم من 3 إلى 6 أسابيع. يشمل ذلك لوحات المزاج (mood boards) الأولية، والإطارات السلكية (wireframing)، والنماذج بالأحجام الطبيعية عالية الدقة، وتكرارات ملاحظات العميل."
+      },
+      {
+        "question": "ما هي التكلفة المعتادة لمشروع تصميم واجهة المستخدم؟",
+        "answer": "تتراوح مشاريع تصميم واجهة المستخدم المستقلة عادةً من 5000 دولار للتطبيقات البسيطة إلى 20000 دولار وأكثر لمنصات SaaS واسعة النطاق أو مجموعات التجارة الإلكترونية التي تتطلب أنظمة تصميم شاملة وعشرات الشاشات الفريدة."
+      },
+      {
+        "question": "ما هي أدوات التصميم التي يستخدمها فريقكم؟",
+        "answer": "نحن نستخدم Figma حصريًا لجميع أعمال تصميم واجهة المستخدم / تجربة المستخدم (UI/UX). يتيح ذلك التعاون في الوقت الفعلي والنماذج الأولية السلسة وتسليم المطورين الفعال من خلال رموز التصميم التفصيلية ومكتبات المكونات."
+      },
+      {
+        "question": "هل تصممون مع وضع استجابة الهاتف المحمول في الاعتبار؟",
+        "answer": "نعم، نحن نستخدم نهج تصميم الهاتف المحمول أولاً (mobile-first) أو التصميم التكيفي اعتمادًا على قاعدة المستخدمين الخاصة بك. يتضمن كل تسليم للتصميم نقاط توقف محددة (breakpoints) للهاتف المحمول والجهاز اللوحي وسطح المكتب لضمان معرفة المطورين بالضبط كيف يجب أن يتكيف التخطيط."
+      },
+      {
+        "question": "ما هو نظام التصميم (Design System) وهل أحتاج إليه؟",
+        "answer": "نظام التصميم هو مكتبة مركزية من المكونات القابلة لإعادة الاستخدام والطباعة والألوان والإرشادات. إذا كنت تخطط لتوسيع نطاق منتجك، أو إضافة ميزات بمرور الوقت، أو بناء تطبيقات متعددة، فإن نظام التصميم ضروري للحفاظ على الاتساق المرئي وتسريع التطوير."
+      },
+      {
+        "question": "كيف تتعاملون مع المراجعات وملاحظات العملاء؟",
+        "answer": "نقوم بتنظيم مشاريعنا بمعالم محددة وحلقات التغذية الراجعة. تتضمن عقودنا عادة 2-3 جولات من المراجعات لكل معلم. نستخدم أدوات التعليق في Figma لجمع ملاحظاتك مباشرة على لوحة التصميم لتحقيق أقصى قدر من الوضوح."
+      }
+    ]
+  },
+  "inventory-management-systems": {
+    "en": [
+      {
+        "question": "How long does it take to develop a custom Inventory Management System?",
+        "answer": "Developing a custom IMS from scratch generally takes 4 to 6 months. This timeline accounts for integrating with your existing workflows, hardware barcode scanners, e-commerce channels, and comprehensive user acceptance testing."
+      },
+      {
+        "question": "What is the budget for a custom inventory solution?",
+        "answer": "A tailored Inventory Management System typically costs between $30,000 and $70,000. The cost depends heavily on the level of automation required, multi-warehouse support, and the complexity of integrations with your accounting or POS systems."
+      },
+      {
+        "question": "Can the system integrate with Shopify or Amazon?",
+        "answer": "Yes, we build robust API integrations with popular e-commerce platforms like Shopify, WooCommerce, Magento, and marketplaces like Amazon. This ensures your stock levels are synchronized in real-time across all sales channels."
+      },
+      {
+        "question": "Does the software support barcode scanning and RFID?",
+        "answer": "Absolutely. We can develop mobile companion apps or web interfaces that communicate directly with handheld barcode scanners, QR code readers, or RFID gates to automate stock intake, picking, and packing processes."
+      },
+      {
+        "question": "Can you migrate our current inventory data from Excel or older software?",
+        "answer": "Yes, data migration is a core part of our implementation process. We securely import your existing product catalogs, historical stock levels, vendor lists, and purchase orders from Excel, CSV, or legacy databases into the new system."
+      },
+      {
+        "question": "How do you handle multi-warehouse management?",
+        "answer": "We architect the database to support an unlimited number of locations, zones, and bins. The system can automate order routing to the warehouse closest to the customer, manage inter-warehouse transfers, and calculate location-specific stock minimums."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Özel bir Envanter Yönetim Sistemi geliştirmek ne kadar sürer?",
+        "answer": "Sıfırdan özel bir EYS geliştirmek genellikle 4 ila 6 ay sürer. Bu zaman çizelgesi, mevcut iş akışlarınızla, donanım barkod tarayıcılarıyla, e-ticaret kanallarıyla entegrasyonu ve kapsamlı kullanıcı kabul testlerini hesaba katar."
+      },
+      {
+        "question": "Özel bir envanter çözümü için bütçe nedir?",
+        "answer": "Uyarlanmış bir Envanter Yönetim Sistemi genellikle 30.000$ ile 70.000$ arasındadır. Maliyet, gereken otomasyon düzeyine, çoklu depo desteğine ve muhasebe veya POS sistemlerinizle entegrasyonların karmaşıklığına büyük ölçüde bağlıdır."
+      },
+      {
+        "question": "Sistem Shopify veya Amazon ile entegre olabilir mi?",
+        "answer": "Evet, Shopify, WooCommerce, Magento gibi popüler e-ticaret platformları ve Amazon gibi pazaryerleri ile sağlam API entegrasyonları kuruyoruz. Bu, stok seviyelerinizin tüm satış kanallarında gerçek zamanlı olarak senkronize edilmesini sağlar."
+      },
+      {
+        "question": "Yazılım barkod tarama ve RFID'yi destekliyor mu?",
+        "answer": "Kesinlikle. Stok alımı, toplama ve paketleme süreçlerini otomatikleştirmek için el tipi barkod tarayıcılarla, QR kod okuyucularla veya RFID kapılarıyla doğrudan iletişim kuran mobil yardımcı uygulamalar veya web arayüzleri geliştirebiliriz."
+      },
+      {
+        "question": "Mevcut envanter verilerimizi Excel veya daha eski yazılımlardan taşıyabilir misiniz?",
+        "answer": "Evet, veri geçişi uygulama sürecimizin temel bir parçasıdır. Mevcut ürün kataloglarınızı, geçmiş stok seviyelerinizi, satıcı listelerinizi ve satın alma siparişlerinizi Excel, CSV veya eski veritabanlarından güvenli bir şekilde yeni sisteme aktarıyoruz."
+      },
+      {
+        "question": "Çoklu depo yönetimini nasıl ele alıyorsunuz?",
+        "answer": "Veritabanını sınırsız sayıda konumu, bölgeyi ve kutuyu destekleyecek şekilde tasarlıyoruz. Sistem, siparişlerin müşteriye en yakın depoya yönlendirilmesini otomatikleştirebilir, depolar arası transferleri yönetebilir ve konuma özel minimum stokları hesaplayabilir."
+      }
+    ],
+    "de": [
+      {
+        "question": "Wie lange dauert die Entwicklung eines individuellen Bestandsverwaltungssystems?",
+        "answer": "Die Entwicklung eines kundenspezifischen IMS von Grund auf dauert im Allgemeinen 4 bis 6 Monate. Dieser Zeitplan berücksichtigt die Integration mit Ihren bestehenden Arbeitsabläufen, Hardware-Barcodescannern, E-Commerce-Kanälen und umfassenden Benutzerakzeptanztests."
+      },
+      {
+        "question": "Wie hoch ist das Budget für eine benutzerdefinierte Inventarlösung?",
+        "answer": "Ein maßgeschneidertes Bestandsverwaltungssystem kostet in der Regel zwischen 30.000 und 70.000 US-Dollar. Die Kosten hängen stark vom erforderlichen Automatisierungsgrad, der Unterstützung mehrerer Lager und der Komplexität der Integrationen mit Ihren Buchhaltungs- oder POS-Systemen ab."
+      },
+      {
+        "question": "Kann das System in Shopify oder Amazon integriert werden?",
+        "answer": "Ja, wir entwickeln robuste API-Integrationen mit beliebten E-Commerce-Plattformen wie Shopify, WooCommerce, Magento und Marktplätzen wie Amazon. Dadurch wird sichergestellt, dass Ihre Lagerbestände in Echtzeit über alle Vertriebskanäle hinweg synchronisiert werden."
+      },
+      {
+        "question": "Unterstützt die Software das Scannen von Barcodes und RFID?",
+        "answer": "Absolut. Wir können mobile Begleit-Apps oder Web-Schnittstellen entwickeln, die direkt mit tragbaren Barcodescannern, QR-Code-Lesegeräten oder RFID-Toren kommunizieren, um den Wareneingangs-, Kommissionierungs- und Verpackungsprozess zu automatisieren."
+      },
+      {
+        "question": "Können Sie unsere aktuellen Bestandsdaten aus Excel oder älterer Software migrieren?",
+        "answer": "Ja, die Datenmigration ist ein zentraler Bestandteil unseres Implementierungsprozesses. Wir importieren Ihre bestehenden Produktkataloge, historischen Lagerbestände, Lieferantenlisten und Bestellungen sicher aus Excel, CSV oder alten Datenbanken in das neue System."
+      },
+      {
+        "question": "Wie gehen Sie mit der Verwaltung mehrerer Lagerstandorte um?",
+        "answer": "Wir strukturieren die Datenbank so, dass sie eine unbegrenzte Anzahl von Standorten, Zonen und Lagerplätzen unterstützt. Das System kann die Weiterleitung von Bestellungen an das dem Kunden am nächsten gelegene Lager automatisieren, Umlagerungen zwischen Lagern verwalten und standortspezifische Mindestbestände berechnen."
+      }
+    ],
+    "ur": [
+      {
+        "question": "اپنی مرضی کے مطابق انوینٹری مینجمنٹ سسٹم تیار کرنے میں کتنا وقت لگتا ہے؟",
+        "answer": "شروع سے اپنی مرضی کے مطابق IMS تیار کرنے میں عام طور پر 4 سے 6 ماہ لگتے ہیں۔ یہ ٹائم لائن آپ کے موجودہ ورک فلوز، ہارڈ ویئر بارکوڈ اسکینرز، ای کامرس چینلز، اور صارف کی قبولیت کی جامع جانچ کے ساتھ مربوط ہونے کا حساب دیتی ہے۔"
+      },
+      {
+        "question": "حسب ضرورت انوینٹری حل کے لیے بجٹ کیا ہے؟",
+        "answer": "موزوں انوینٹری مینجمنٹ سسٹم کی قیمت عام طور پر $30,000 اور $70,000 کے درمیان ہوتی ہے۔ لاگت کا انحصار بڑی حد تک مطلوبہ آٹومیشن کی سطح، ملٹی گودام سپورٹ، اور آپ کے اکاؤنٹنگ یا POS سسٹم کے ساتھ انضمام کی پیچیدگی پر ہے۔"
+      },
+      {
+        "question": "کیا سسٹم Shopify یا Amazon کے ساتھ ضم ہو سکتا ہے؟",
+        "answer": "ہاں، ہم مشہور ای کامرس پلیٹ فارمز جیسے Shopify، WooCommerce، Magento، اور Amazon جیسے مارکیٹ پلیسز کے ساتھ مضبوط API انضمام بناتے ہیں۔ یہ یقینی بناتا ہے کہ آپ کی اسٹاک کی سطحیں تمام سیلز چینلز پر حقیقی وقت میں مطابقت پذیر ہیں۔"
+      },
+      {
+        "question": "کیا سافٹ ویئر بارکوڈ اسکیننگ اور RFID کو سپورٹ کرتا ہے؟",
+        "answer": "بالکل۔ ہم موبائل ساتھی ایپس یا ویب انٹرفیس تیار کر سکتے ہیں جو اسٹاک کی مقدار، چننے اور پیکنگ کے عمل کو خودکار بنانے کے لیے ہینڈ ہیلڈ بارکوڈ اسکینرز، QR کوڈ ریڈرز، یا RFID گیٹس کے ساتھ براہ راست بات چیت کرتے ہیں۔"
+      },
+      {
+        "question": "کیا آپ ہمارے موجودہ انوینٹری ڈیٹا کو ایکسل یا پرانے سافٹ ویئر سے منتقل کر سکتے ہیں؟",
+        "answer": "ہاں، ڈیٹا کی منتقلی ہمارے نفاذ کے عمل کا ایک بنیادی حصہ ہے۔ ہم ایکسل، CSV، یا پرانے ڈیٹا بیسز سے آپ کے موجودہ پروڈکٹ کیٹلاگ، تاریخی اسٹاک کی سطحیں، وینڈر لسٹ، اور پرچیز آرڈرز کو محفوظ طریقے سے نئے سسٹم میں درآمد کرتے ہیں۔"
+      },
+      {
+        "question": "آپ ملٹی گودام مینجمنٹ کو کیسے ہینڈل کرتے ہیں؟",
+        "answer": "ہم لامحدود تعداد میں مقامات، زونز، اور ڈبوں کو سہارا دینے کے لیے ڈیٹا بیس کو آرکیٹیکٹ کرتے ہیں۔ سسٹم خود کار طریقے سے کسٹمر کے قریب ترین گودام تک آرڈر کی روٹنگ کر سکتا ہے، بین گوداموں کی منتقلی کا انتظام کر سکتا ہے، اور مقام کے لیے مخصوص اسٹاک کے کم سے کم کا حساب لگا سکتا ہے۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "ما المدة التي يستغرقها تطوير نظام مخصص لإدارة المخزون؟",
+        "answer": "يستغرق تطوير نظام IMS مخصص من الصفر بشكل عام من 4 إلى 6 أشهر. يأخذ هذا الإطار الزمني في الاعتبار التكامل مع تدفقات العمل الحالية الخاصة بك، وماسحات الباركود الخاصة بالأجهزة، وقنوات التجارة الإلكترونية، واختبار قبول المستخدم الشامل."
+      },
+      {
+        "question": "ما هي ميزانية حل المخزون المخصص؟",
+        "answer": "يتكلف نظام إدارة المخزون المصمم خصيصًا عادةً ما بين 30000 دولار و 70000 دولار. تعتمد التكلفة بشكل كبير على مستوى الأتمتة المطلوبة، ودعم المستودعات المتعددة، وتعقيد عمليات التكامل مع أنظمة المحاسبة أو نقاط البيع (POS) الخاصة بك."
+      },
+      {
+        "question": "هل يمكن للنظام التكامل مع Shopify أو Amazon؟",
+        "answer": "نعم، نحن نبني تكاملات API قوية مع منصات التجارة الإلكترونية الشهيرة مثل Shopify و WooCommerce و Magento، والأسواق مثل Amazon. هذا يضمن مزامنة مستويات المخزون الخاص بك في الوقت الفعلي عبر جميع قنوات البيع."
+      },
+      {
+        "question": "هل يدعم البرنامج مسح الباركود وتقنية RFID؟",
+        "answer": "بالتأكيد. يمكننا تطوير تطبيقات هاتف محمول مرافقة أو واجهات ويب تتواصل مباشرة مع ماسحات الباركود المحمولة أو أجهزة قراءة رموز QR أو بوابات RFID لأتمتة عمليات إدخال المخزون والانتقاء والتعبئة."
+      },
+      {
+        "question": "هل يمكنك ترحيل بيانات المخزون الحالية الخاصة بنا من Excel أو البرامج القديمة؟",
+        "answer": "نعم، يعد ترحيل البيانات جزءًا أساسيًا من عملية التنفيذ الخاصة بنا. نقوم باستيراد كتالوجات منتجاتك الحالية، ومستويات المخزون التاريخية، وقوائم الموردين، وأوامر الشراء بشكل آمن من Excel أو CSV أو قواعد البيانات القديمة إلى النظام الجديد."
+      },
+      {
+        "question": "كيف تتعاملون مع إدارة المستودعات المتعددة؟",
+        "answer": "نقوم بهندسة قاعدة البيانات لدعم عدد غير محدود من المواقع والمناطق والصناديق. يمكن للنظام أتمتة توجيه الطلبات إلى المستودع الأقرب للعميل، وإدارة التحويلات بين المستودعات، وحساب الحد الأدنى للمخزون الخاص بالموقع."
+      }
+    ]
+  },
+  "marketplace-development": {
+    "en": [
+      {
+        "question": "How long does it take to build a multi-vendor marketplace?",
+        "answer": "A robust MVP for a marketplace takes approximately 4 to 6 months to develop. This covers vendor onboarding portals, a unified shopping cart, complex commission engines, and integrated payment gateways."
+      },
+      {
+        "question": "What is the typical budget to start a marketplace platform?",
+        "answer": "Custom marketplace development generally starts around $35,000 for standard functionality. Platforms requiring advanced AI search, custom dispute resolution systems, or highly customized vendor dashboards can range from $60,000 to $120,000+."
+      },
+      {
+        "question": "How do you handle payments and vendor payouts?",
+        "answer": "We integrate split-payment solutions like Stripe Connect, PayPal Marketplaces, or Adyen. These systems seamlessly split the transaction at checkout, sending your commission to you and the remainder directly to the vendor's bank account, handling all KYC compliance."
+      },
+      {
+        "question": "Can vendors manage their own shipping and inventory?",
+        "answer": "Yes. Every vendor receives a dedicated dashboard where they can manage their own product listings, track inventory levels, set up specific shipping rates by region, and handle customer returns independently."
+      },
+      {
+        "question": "Is the marketplace scalable for high traffic?",
+        "answer": "Absolutely. We build marketplaces using cloud-native, microservices architectures (often with Node.js and Next.js) on AWS or Google Cloud. This ensures the platform scales horizontally automatically during high-traffic events like sales or viral marketing campaigns."
+      },
+      {
+        "question": "How do we ensure the quality of products listed by vendors?",
+        "answer": "We can build moderation workflows where new vendor listings must be approved by your administrative team before going live. Alternatively, we can implement automated flag systems and customer review mechanisms to maintain marketplace quality."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Çok satıcılı bir pazaryeri (marketplace) kurmak ne kadar sürer?",
+        "answer": "Bir pazaryeri için sağlam bir MVP geliştirmek yaklaşık 4 ila 6 ay sürer. Bu; satıcı katılım portallarını, birleşik bir alışveriş sepetini, karmaşık komisyon motorlarını ve entegre ödeme ağ geçitlerini kapsar."
+      },
+      {
+        "question": "Bir pazaryeri platformu başlatmak için tipik bütçe nedir?",
+        "answer": "Özel pazaryeri geliştirmesi, standart işlevler için genellikle 35.000$ civarında başlar. Gelişmiş yapay zeka araması, özel uyuşmazlık çözüm sistemleri veya son derece özelleştirilmiş satıcı panoları gerektiren platformlar 60.000$ ile 120.000$+ arasında değişebilir."
+      },
+      {
+        "question": "Ödemeleri ve satıcı ödemelerini (payouts) nasıl idare ediyorsunuz?",
+        "answer": "Stripe Connect, PayPal Marketplaces veya Adyen gibi bölünmüş ödeme çözümlerini entegre ediyoruz. Bu sistemler, tüm KYC (Müşterini Tanı) uyumluluğunu ele alarak işlem sırasında ödemeyi sorunsuz bir şekilde böler, komisyonunuzu size ve kalanını doğrudan satıcının banka hesabına gönderir."
+      },
+      {
+        "question": "Satıcılar kendi nakliye ve envanterlerini yönetebilir mi?",
+        "answer": "Evet. Her satıcı, kendi ürün listelemelerini yönetebileceği, envanter seviyelerini takip edebileceği, bölgeye göre belirli gönderim oranları belirleyebileceği ve müşteri iadelerini bağımsız olarak yönetebileceği özel bir kontrol paneli alır."
+      },
+      {
+        "question": "Pazaryeri yüksek trafik için ölçeklenebilir mi?",
+        "answer": "Kesinlikle. Pazaryerlerini AWS veya Google Cloud üzerinde buluta özgü (cloud-native), mikro hizmet mimarilerini (genellikle Node.js ve Next.js ile) kullanarak kuruyoruz. Bu, platformun indirimler veya viral pazarlama kampanyaları gibi yüksek trafikli etkinlikler sırasında otomatik olarak yatay şekilde ölçeklenmesini sağlar."
+      },
+      {
+        "question": "Satıcılar tarafından listelenen ürünlerin kalitesini nasıl sağlıyoruz?",
+        "answer": "Yeni satıcı listelemelerinin yayınlanmadan önce idari ekibiniz tarafından onaylanması gereken denetim iş akışları (moderation) oluşturabiliriz. Alternatif olarak, pazaryeri kalitesini korumak için otomatik işaretleme sistemleri ve müşteri inceleme mekanizmaları uygulayabiliriz."
+      }
+    ],
+    "de": [
+      {
+        "question": "Wie lange dauert der Aufbau eines Marktplatzes mit mehreren Anbietern?",
+        "answer": "Die Entwicklung eines robusten MVP für einen Marktplatz dauert etwa 4 bis 6 Monate. Dies umfasst Anbieter-Onboarding-Portale, einen einheitlichen Warenkorb, komplexe Provisions-Engines und integrierte Zahlungsgateways."
+      },
+      {
+        "question": "Wie hoch ist das typische Budget für den Start einer Marktplatz-Plattform?",
+        "answer": "Die Entwicklung benutzerdefinierter Marktplätze beginnt in der Regel bei etwa 35.000 US-Dollar für Standardfunktionen. Plattformen, die eine erweiterte KI-Suche, benutzerdefinierte Streitbeilegungssysteme oder stark angepasste Anbieter-Dashboards erfordern, können zwischen 60.000 und über 120.000 US-Dollar liegen."
+      },
+      {
+        "question": "Wie gehen Sie mit Zahlungen und Anbieter-Auszahlungen um?",
+        "answer": "Wir integrieren Split-Payment-Lösungen wie Stripe Connect, PayPal Marketplaces oder Adyen. Diese Systeme teilen die Transaktion an der Kasse nahtlos auf, senden Ihre Provision an Sie und den Rest direkt auf das Bankkonto des Anbieters und kümmern sich um die gesamte KYC-Konformität."
+      },
+      {
+        "question": "Können Anbieter ihren eigenen Versand und Bestand verwalten?",
+        "answer": "Ja. Jeder Anbieter erhält ein dediziertes Dashboard, in dem er seine eigenen Produkteinträge verwalten, Lagerbestände verfolgen, spezifische Versandtarife nach Region einrichten und Kundenretouren unabhängig bearbeiten kann."
+      },
+      {
+        "question": "Ist der Marktplatz für hohen Traffic skalierbar?",
+        "answer": "Absolut. Wir bauen Marktplätze unter Verwendung von Cloud-nativen Microservices-Architekturen (oft mit Node.js und Next.js) auf AWS oder Google Cloud. Dadurch wird sichergestellt, dass die Plattform bei Ereignissen mit hohem Datenverkehr wie Verkaufs- oder viralen Marketingkampagnen automatisch horizontal skaliert wird."
+      },
+      {
+        "question": "Wie stellen wir die Qualität der von Anbietern gelisteten Produkte sicher?",
+        "answer": "Wir können Moderations-Workflows erstellen, bei denen neue Anbieter-Listings von Ihrem Verwaltungsteam genehmigt werden müssen, bevor sie live gehen. Alternativ können wir automatisierte Meldesysteme und Kundenbewertungsmechanismen implementieren, um die Qualität des Marktplatzes aufrechtzuerhalten."
+      }
+    ],
+    "ur": [
+      {
+        "question": "ملٹی وینڈر مارکیٹ پلیس بنانے میں کتنا وقت لگتا ہے؟",
+        "answer": "ایک مارکیٹ پلیس کے لیے ایک مضبوط MVP تیار ہونے میں تقریباً 4 سے 6 ماہ لگتے ہیں۔ اس میں وینڈر آن بورڈنگ پورٹلز، ایک متحد شاپنگ کارٹ، پیچیدہ کمیشن انجن، اور مربوط پیمنٹ گیٹ ویز کا احاطہ کیا گیا ہے۔"
+      },
+      {
+        "question": "مارکیٹ پلیس پلیٹ فارم شروع کرنے کے لیے عام بجٹ کیا ہے؟",
+        "answer": "اپنی مرضی کے مطابق مارکیٹ پلیس کی ترقی عام طور پر معیاری فعالیت کے لیے $35,000 کے لگ بھگ شروع ہوتی ہے۔ جن پلیٹ فارمز کو اعلی درجے کی AI تلاش، اپنی مرضی کے مطابق تنازعات کے حل کے نظام، یا انتہائی حسب ضرورت وینڈر ڈیش بورڈز کی ضرورت ہوتی ہے، ان کی حد $60,000 سے $120,000+ تک ہو سکتی ہے۔"
+      },
+      {
+        "question": "آپ ادائیگیوں اور وینڈر کی ادائیگیوں کو کیسے ہینڈل کرتے ہیں؟",
+        "answer": "ہم اسپلٹ پیمنٹ کے حل جیسے Stripe Connect، PayPal Marketplaces، یا Adyen کو مربوط کرتے ہیں۔ یہ سسٹمز بغیر کسی رکاوٹ کے چیک آؤٹ پر لین دین کو تقسیم کرتے ہیں، آپ کا کمیشن آپ کو بھیجتے ہیں اور باقی رقم براہ راست وینڈر کے بینک اکاؤنٹ میں، تمام KYC کی تعمیل کو سنبھالتے ہیں۔"
+      },
+      {
+        "question": "کیا دکاندار اپنی ترسیل اور انوینٹری کا خود انتظام کر سکتے ہیں؟",
+        "answer": "ہاں۔ ہر وینڈر کو ایک وقف شدہ ڈیش بورڈ ملتا ہے جہاں وہ اپنی پروڈکٹ کی فہرست کا نظم کر سکتے ہیں، انوینٹری کی سطحوں کو ٹریک کر سکتے ہیں، خطے کے لحاظ سے مخصوص شپنگ ریٹ سیٹ کر سکتے ہیں، اور گاہک کی واپسی کو آزادانہ طور پر سنبھال سکتے ہیں۔"
+      },
+      {
+        "question": "کیا بازار زیادہ ٹریفک کے لیے قابل توسیع ہے؟",
+        "answer": "بالکل۔ ہم AWS یا گوگل کلاؤڈ پر کلاؤڈ-نیٹو، مائیکرو سروسز آرکیٹیکچرز (اکثر Node.js اور Next.js کے ساتھ) استعمال کرتے ہوئے بازار بناتے ہیں۔ اس سے یہ یقینی بنتا ہے کہ زیادہ ٹریفک والے ایونٹس جیسے سیلز یا وائرل مارکیٹنگ مہمات کے دوران پلیٹ فارم خودکار طور پر افقی طور پر پیمانہ بناتا ہے۔"
+      },
+      {
+        "question": "ہم دکانداروں کی طرف سے درج کردہ مصنوعات کے معیار کو کیسے یقینی بناتے ہیں؟",
+        "answer": "ہم اعتدال پسندی کے ورک فلو بنا سکتے ہیں جہاں لائیو ہونے سے پہلے نئے وینڈر لسٹنگ کو آپ کی انتظامی ٹیم کے ذریعے منظور کیا جانا چاہیے۔ متبادل کے طور پر، مارکیٹ پلیس کے معیار کو برقرار رکھنے کے لیے ہم خودکار فلیگ سسٹم اور کسٹمر ریویو کے طریقہ کار کو نافذ کر سکتے ہیں۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "ما المدة التي يستغرقها بناء سوق (marketplace) متعدد البائعين؟",
+        "answer": "يستغرق تطوير منتج قابل للتطبيق بحد أدنى (MVP) قوي لسوق ما يقرب من 4 إلى 6 أشهر. يغطي هذا بوابات تسجيل البائعين، وسلة تسوق موحدة، ومحركات عمولات معقدة، وبوابات دفع متكاملة."
+      },
+      {
+        "question": "ما هي الميزانية المعتادة لبدء منصة سوق؟",
+        "answer": "يبدأ تطوير السوق المخصص بشكل عام من حوالي 35000 دولار للوظائف القياسية. يمكن أن تتراوح المنصات التي تتطلب بحثًا متقدمًا بالذكاء الاصطناعي أو أنظمة مخصصة لحل النزاعات أو لوحات معلومات بائعين مخصصة للغاية من 60000 دولار إلى 120000 دولار وأكثر."
+      },
+      {
+        "question": "كيف تتعاملون مع المدفوعات وعوائد البائعين (payouts)؟",
+        "answer": "نقوم بدمج حلول الدفع المقسم مثل Stripe Connect أو PayPal Marketplaces أو Adyen. تقوم هذه الأنظمة بتقسيم المعاملة بسلاسة عند الدفع، وإرسال عمولتك إليك والباقي مباشرة إلى الحساب المصرفي للبائع، والتعامل مع جميع متطلبات الامتثال لـ KYC (اعرف عميلك)."
+      },
+      {
+        "question": "هل يمكن للبائعين إدارة الشحن والمخزون الخاص بهم؟",
+        "answer": "نعم. يتلقى كل بائع لوحة تحكم مخصصة حيث يمكنه إدارة قوائم منتجاته الخاصة، وتتبع مستويات المخزون، وإعداد أسعار شحن محددة حسب المنطقة، والتعامل مع عوائد العملاء بشكل مستقل."
+      },
+      {
+        "question": "هل السوق قابل للتوسع للتعامل مع حركة المرور العالية؟",
+        "answer": "بالتأكيد. نحن نبني أسواقًا باستخدام بنيات الخدمات المصغرة السحابية الأصلية (غالبًا مع Node.js و Next.js) على AWS أو Google Cloud. هذا يضمن أن النظام الأساسي يتوسع أفقيًا تلقائيًا أثناء الأحداث ذات حركة المرور العالية مثل المبيعات أو حملات التسويق الفيروسي."
+      },
+      {
+        "question": "كيف نضمن جودة المنتجات التي يدرجها البائعون؟",
+        "answer": "يمكننا بناء مسارات عمل للإشراف حيث يجب الموافقة على قوائم البائعين الجديدة من قبل فريق الإدارة الخاص بك قبل نشرها. بدلاً من ذلك، يمكننا تنفيذ أنظمة التنبيه الآلي وآليات مراجعة العملاء للحفاظ على جودة السوق."
+      }
+    ]
+  },
+  "enterprise-software": {
+    "en": [
+      {
+        "question": "How long does it take to develop custom enterprise software?",
+        "answer": "Enterprise software development is a major undertaking that typically ranges from 6 to 18 months. The timeline involves rigorous requirements gathering, stakeholder alignment, phased rollouts, and extensive user training."
+      },
+      {
+        "question": "What is the budget for an enterprise software solution?",
+        "answer": "Due to their complexity, security requirements, and scale, enterprise software projects generally start around $75,000. Comprehensive systems governing multiple departments (like custom ERPs) can scale upwards of $250,000+."
+      },
+      {
+        "question": "Can you integrate the new software with our legacy systems?",
+        "answer": "Yes, legacy integration is a core component of enterprise development. We build secure API gateways, middleware, and use ETL (Extract, Transform, Load) processes to ensure your new software communicates seamlessly with existing Mainframes, SAP, or Oracle databases."
+      },
+      {
+        "question": "How do you ensure data security and compliance?",
+        "answer": "Security is built-in from architecture design. We implement role-based access control (RBAC), multi-factor authentication (MFA), data encryption at rest and in transit (AES-256), and ensure strict compliance with SOC2, GDPR, or HIPAA standards as required."
+      },
+      {
+        "question": "What is your approach to user adoption in large organizations?",
+        "answer": "We prioritize intuitive UX design to lower the learning curve. Additionally, we use a phased rollout strategy, starting with beta testers or single departments, and provide comprehensive documentation and training sessions to ensure smooth organizational change management."
+      },
+      {
+        "question": "Do you provide Service Level Agreements (SLAs) for support?",
+        "answer": "Yes. Enterprise software requires guaranteed uptime. We provide strict SLA-backed maintenance contracts offering 24/7 monitoring, guaranteed response times for critical bugs, and continuous infrastructure optimization."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Özel kurumsal yazılım geliştirmek ne kadar sürer?",
+        "answer": "Kurumsal yazılım geliştirme, genellikle 6 ila 18 ay süren büyük bir girişimdir. Zaman çizelgesi, titiz gereksinimlerin toplanmasını, paydaş uyumunu, aşamalı kullanıma sunumları ve kapsamlı kullanıcı eğitimini içerir."
+      },
+      {
+        "question": "Kurumsal bir yazılım çözümü için bütçe nedir?",
+        "answer": "Karmaşıklıkları, güvenlik gereksinimleri ve ölçekleri nedeniyle, kurumsal yazılım projeleri genellikle 75.000$ civarında başlar. Birden fazla departmanı yöneten kapsamlı sistemler (özel ERP'ler gibi) 250.000$+ ve üzerine çıkabilir."
+      },
+      {
+        "question": "Yeni yazılımı eski (legacy) sistemlerimizle entegre edebilir misiniz?",
+        "answer": "Evet, eski sistem entegrasyonu kurumsal geliştirmenin temel bir bileşenidir. Yeni yazılımınızın mevcut Mainframe'ler, SAP veya Oracle veritabanlarıyla sorunsuz bir şekilde iletişim kurmasını sağlamak için güvenli API ağ geçitleri, ara yazılımlar oluşturuyor ve ETL (Ayıkla, Dönüştür, Yükle) süreçlerini kullanıyoruz."
+      },
+      {
+        "question": "Veri güvenliğini ve uyumluluğu nasıl sağlıyorsunuz?",
+        "answer": "Güvenlik, mimari tasarımdan itibaren yerleşiktir. Rol tabanlı erişim kontrolü (RBAC), çok faktörlü kimlik doğrulama (MFA), beklemede ve aktarımda veri şifreleme (AES-256) uyguluyor ve gerektiğinde SOC2, GDPR veya HIPAA standartlarına sıkı sıkıya uyulmasını sağlıyoruz."
+      },
+      {
+        "question": "Büyük organizasyonlarda kullanıcıların benimsemesine (user adoption) yaklaşımınız nedir?",
+        "answer": "Öğrenme eğrisini düşürmek için sezgisel UX (Kullanıcı Deneyimi) tasarımına öncelik veriyoruz. Ek olarak, beta test edicileri veya tek departmanlarla başlayan aşamalı bir sunum stratejisi kullanıyor ve sorunsuz bir organizasyonel değişim yönetimi sağlamak için kapsamlı belgeler ve eğitim oturumları sağlıyoruz."
+      },
+      {
+        "question": "Destek için Hizmet Düzeyi Sözleşmeleri (SLA'lar) sağlıyor musunuz?",
+        "answer": "Evet. Kurumsal yazılımlar garantili çalışma süresi (uptime) gerektirir. 7/24 izleme, kritik hatalar için garantili yanıt süreleri ve sürekli altyapı optimizasyonu sunan katı SLA destekli bakım sözleşmeleri sağlıyoruz."
+      }
+    ],
+    "de": [
+      {
+        "question": "Wie lange dauert die Entwicklung von benutzerdefinierter Unternehmenssoftware?",
+        "answer": "Die Entwicklung von Unternehmenssoftware ist ein Großprojekt, das in der Regel 6 bis 18 Monate dauert. Der Zeitplan umfasst die strenge Erfassung von Anforderungen, die Abstimmung mit Stakeholdern, schrittweise Einführungen und umfassende Benutzerschulungen."
+      },
+      {
+        "question": "Wie hoch ist das Budget für eine Enterprise-Softwarelösung?",
+        "answer": "Aufgrund ihrer Komplexität, Sicherheitsanforderungen und Skalierbarkeit beginnen Enterprise-Softwareprojekte im Allgemeinen bei etwa 75.000 US-Dollar. Umfassende Systeme, die mehrere Abteilungen steuern (wie benutzerdefinierte ERPs), können auf über 250.000 US-Dollar anwachsen."
+      },
+      {
+        "question": "Können Sie die neue Software in unsere Legacy-Systeme integrieren?",
+        "answer": "Ja, die Legacy-Integration ist ein Kernbestandteil der Unternehmensentwicklung. Wir bauen sichere API-Gateways und Middleware auf und verwenden ETL-Prozesse (Extract, Transform, Load), um sicherzustellen, dass Ihre neue Software nahtlos mit vorhandenen Mainframes, SAP- oder Oracle-Datenbanken kommuniziert."
+      },
+      {
+        "question": "Wie stellen Sie Datensicherheit und Compliance sicher?",
+        "answer": "Sicherheit ist von Anfang an in das Architekturdesign integriert. Wir implementieren rollenbasierte Zugriffskontrolle (RBAC), Multi-Faktor-Authentifizierung (MFA), Datenverschlüsselung im Ruhezustand und bei der Übertragung (AES-256) und gewährleisten bei Bedarf die strikte Einhaltung von SOC2-, DSGVO- oder HIPAA-Standards."
+      },
+      {
+        "question": "Was ist Ihr Ansatz für die Benutzerakzeptanz in großen Organisationen?",
+        "answer": "Wir priorisieren ein intuitives UX-Design, um die Lernkurve zu senken. Darüber hinaus verwenden wir eine schrittweise Einführungsstrategie, beginnend mit Betatestern oder einzelnen Abteilungen, und bieten umfassende Dokumentations- und Schulungssitzungen an, um ein reibungsloses organisatorisches Änderungsmanagement sicherzustellen."
+      },
+      {
+        "question": "Bieten Sie Service Level Agreements (SLAs) für den Support an?",
+        "answer": "Ja. Unternehmenssoftware erfordert eine garantierte Betriebszeit. Wir bieten strenge SLA-gestützte Wartungsverträge, die eine Überwachung rund um die Uhr, garantierte Reaktionszeiten für kritische Fehler und eine kontinuierliche Infrastrukturoptimierung bieten."
+      }
+    ],
+    "ur": [
+      {
+        "question": "اپنی مرضی کے مطابق انٹرپرائز سافٹ ویئر تیار کرنے میں کتنا وقت لگتا ہے؟",
+        "answer": "انٹرپرائز سافٹ ویئر ڈیولپمنٹ ایک بڑا کام ہے جس میں عام طور پر 6 سے 18 ماہ لگتے ہیں۔ ٹائم لائن میں تقاضوں کو سختی سے اکٹھا کرنا، اسٹیک ہولڈر کی صف بندی، مرحلہ وار رول آؤٹ، اور صارف کی وسیع تربیت شامل ہے۔"
+      },
+      {
+        "question": "انٹرپرائز سافٹ ویئر سلوشن کا بجٹ کتنا ہے؟",
+        "answer": "ان کی پیچیدگی، حفاظتی تقاضوں، اور پیمانے کی وجہ سے، انٹرپرائز سافٹ ویئر پروجیکٹس عام طور پر $75,000 کے آس پاس شروع ہوتے ہیں۔ ایک سے زیادہ محکموں (جیسے کسٹم ERPs) کو چلانے والے جامع نظام $250,000+ سے زیادہ ہو سکتے ہیں۔"
+      },
+      {
+        "question": "کیا آپ نئے سافٹ ویئر کو ہمارے پرانے سسٹمز کے ساتھ ضم کر سکتے ہیں؟",
+        "answer": "جی ہاں، میراثی انضمام انٹرپرائز ڈیولپمنٹ کا ایک بنیادی جزو ہے۔ ہم محفوظ API گیٹ ویز، مڈل ویئر بناتے ہیں، اور ETL (Extract, Transform, Load) کے عمل کو استعمال کرتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ آپ کا نیا سافٹ ویئر موجودہ مین فریم، SAP، یا Oracle ڈیٹا بیس کے ساتھ بغیر کسی رکاوٹ کے مواصلت کرتا ہے۔"
+      },
+      {
+        "question": "آپ ڈیٹا کی حفاظت اور تعمیل کو کیسے یقینی بناتے ہیں؟",
+        "answer": "سیکیورٹی کو آرکیٹیکچر ڈیزائن سے بلٹ ان کیا گیا ہے۔ ہم رول بیسڈ ایکسیس کنٹرول (RBAC)، ملٹی فیکٹر توثیق (MFA)، ڈیٹا انکرپشن کو ریسٹ اور ٹرانزٹ (AES-256) میں لاگو کرتے ہیں، اور ضرورت کے مطابق SOC2، GDPR، یا HIPAA کے معیارات کی سخت تعمیل کو یقینی بناتے ہیں۔"
+      },
+      {
+        "question": "بڑی تنظیموں میں صارف کو گود لینے کے حوالے سے آپ کا کیا نقطہ نظر ہے؟",
+        "answer": "ہم سیکھنے کے منحنی خطوط کو کم کرنے کے لیے بدیہی UX ڈیزائن کو ترجیح دیتے ہیں۔ مزید برآں، ہم بیٹا ٹیسٹرز یا واحد محکموں سے شروع کرتے ہوئے مرحلہ وار رول آؤٹ حکمت عملی کا استعمال کرتے ہیں، اور تنظیمی تبدیلی کے ہموار انتظام کو یقینی بنانے کے لیے جامع دستاویزات اور تربیتی سیشن فراہم کرتے ہیں۔"
+      },
+      {
+        "question": "کیا آپ سپورٹ کے لیے سروس لیول ایگریمنٹ (SLAs) فراہم کرتے ہیں؟",
+        "answer": "ہاں۔ انٹرپرائز سافٹ ویئر کو اپ ٹائم کی ضمانت درکار ہے۔ ہم 24/7 مانیٹرنگ، نازک بگز کے لیے جوابی اوقات کی ضمانت، اور مسلسل بنیادی ڈھانچے کی اصلاح کی پیشکش کرنے والے سخت SLA-بیکڈ مینٹیننس کنٹریکٹس فراہم کرتے ہیں۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "ما المدة التي يستغرقها تطوير برامج مؤسسية مخصصة؟",
+        "answer": "يعد تطوير برامج المؤسسات مهمة كبرى تتراوح عادةً من 6 إلى 18 شهرًا. يتضمن الإطار الزمني جمع المتطلبات الصارمة، والتوافق مع أصحاب المصلحة، والإطلاق المرحلي، والتدريب المكثف للمستخدمين."
+      },
+      {
+        "question": "ما هي الميزانية المخصصة لحل برمجي للمؤسسات؟",
+        "answer": "نظرًا لتعقيدها ومتطلباتها الأمنية ونطاقها، تبدأ مشاريع برامج المؤسسات بشكل عام من حوالي 75000 دولار. يمكن للأنظمة الشاملة التي تدير أقسامًا متعددة (مثل أنظمة تخطيط موارد المؤسسات المخصصة ERP) أن تتجاوز 250000 دولار."
+      },
+      {
+        "question": "هل يمكنك دمج البرنامج الجديد مع أنظمتنا القديمة (legacy systems)؟",
+        "answer": "نعم، يعد تكامل الأنظمة القديمة مكونًا أساسيًا في تطوير المؤسسات. نحن نبني بوابات API آمنة وبرامج وسيطة، ونستخدم عمليات ETL (الاستخراج والتحويل والتحميل) لضمان تواصل برنامجك الجديد بسلاسة مع الحواسيب المركزية (Mainframes) الحالية أو قواعد بيانات SAP أو Oracle."
+      },
+      {
+        "question": "كيف تضمنون أمن البيانات والامتثال؟",
+        "answer": "الأمان مدمج منذ تصميم البنية. نحن ننفذ التحكم في الوصول المستند إلى الدور (RBAC)، والمصادقة متعددة العوامل (MFA)، وتشفير البيانات أثناء السكون وأثناء النقل (AES-256)، ونضمن الامتثال الصارم لمعايير SOC2 أو GDPR أو HIPAA حسب الحاجة."
+      },
+      {
+        "question": "ما هو نهجكم تجاه تبني المستخدم (user adoption) في المؤسسات الكبيرة؟",
+        "answer": "نعطي الأولوية لتصميم تجربة مستخدم (UX) بديهي لتقليل منحنى التعلم. بالإضافة إلى ذلك، نستخدم استراتيجية النشر المرحلي، بدءًا من مختبري الإصدار التجريبي أو أقسام فردية، ونوفر وثائق شاملة وجلسات تدريبية لضمان إدارة سلسة للتغيير التنظيمي."
+      },
+      {
+        "question": "هل تقدمون اتفاقيات مستوى الخدمة (SLAs) للدعم؟",
+        "answer": "نعم. تتطلب برامج المؤسسات ضمان وقت التشغيل (uptime). نحن نقدم عقود صيانة صارمة مدعومة باتفاقية مستوى الخدمة توفر مراقبة على مدار الساعة طوال أيام الأسبوع، وأوقات استجابة مضمونة للأخطاء الحرجة، والتحسين المستمر للبنية التحتية."
+      }
+    ]
+  }
+}

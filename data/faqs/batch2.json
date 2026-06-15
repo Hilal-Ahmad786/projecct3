@@ -1,0 +1,662 @@
+{
+  "iot-development": {
+    "en": [
+      {
+        "question": "What happens if an IoT device loses internet connection?",
+        "answer": "Our IoT architectures are designed with offline resilience. Devices store sensor data locally using edge computing capabilities. Once the connection is re-established, the device automatically synchronizes the backlog with the cloud server without data loss."
+      },
+      {
+        "question": "How do you ensure the security of IoT networks?",
+        "answer": "We implement end-to-end encryption for all data in transit using TLS/MQTT over SSL. At the hardware level, we utilize secure boot, encrypted storage, and unique digital certificates per device to prevent spoofing and unauthorized access."
+      },
+      {
+        "question": "Which communication protocols do you use for IoT devices?",
+        "answer": "We select protocols based on your specific requirements regarding range, power consumption, and data bandwidth. Common choices include MQTT for low-latency cloud communication, LoRaWAN for long-range low-power sensors, and BLE or Zigbee for local networks."
+      },
+      {
+        "question": "How do you handle firmware updates for remote devices?",
+        "answer": "We build robust Over-The-Air (OTA) update mechanisms. This allows you to push new features, security patches, and bug fixes securely to thousands of devices simultaneously from a centralized dashboard without physical intervention."
+      },
+      {
+        "question": "Can your IoT solutions integrate with existing industrial equipment?",
+        "answer": "Yes, we frequently retrofit legacy industrial equipment with IoT capabilities using industrial protocols like Modbus, OPC UA, or custom RS-485 interfaces, allowing you to extract real-time data from older machines."
+      },
+      {
+        "question": "What is the typical timeframe for developing an IoT solution?",
+        "answer": "Developing a custom IoT solution—including hardware prototyping, firmware development, and the cloud dashboard—typically takes 4 to 8 months depending on the hardware complexity and certification requirements (like CE or FCC)."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Bir IoT cihazı internet bağlantısını kaybederse ne olur?",
+        "answer": "IoT mimarilerimiz çevrimdışı dayanıklılıkla tasarlanmıştır. Cihazlar, uç bilişim (edge computing) yeteneklerini kullanarak sensör verilerini yerel olarak depolar. Bağlantı yeniden kurulduğunda cihaz, biriken verileri veri kaybı olmadan otomatik olarak bulut sunucusuyla senkronize eder."
+      },
+      {
+        "question": "IoT ağlarının güvenliğini nasıl sağlıyorsunuz?",
+        "answer": "SSL üzerinden TLS/MQTT kullanarak aktarım halindeki tüm veriler için uçtan uca şifreleme uyguluyoruz. Donanım düzeyinde, kimlik sahtekarlığını ve yetkisiz erişimi önlemek için güvenli önyükleme (secure boot), şifreli depolama ve her cihaz için benzersiz dijital sertifikalar kullanıyoruz."
+      },
+      {
+        "question": "IoT cihazları için hangi iletişim protokollerini kullanıyorsunuz?",
+        "answer": "Menzil, güç tüketimi ve veri bant genişliği ile ilgili özel gereksinimlerinize göre protokoller seçiyoruz. Yaygın seçenekler arasında düşük gecikmeli bulut iletişimi için MQTT, uzun menzilli düşük güçlü sensörler için LoRaWAN ve yerel ağlar için BLE veya Zigbee bulunur."
+      },
+      {
+        "question": "Uzak cihazlar için bellenim (firmware) güncellemelerini nasıl yönetiyorsunuz?",
+        "answer": "Sağlam Kablosuz (OTA) güncelleme mekanizmaları oluşturuyoruz. Bu, fiziksel müdahale olmadan merkezi bir kontrol panelinden binlerce cihaza aynı anda güvenli bir şekilde yeni özellikler, güvenlik yamaları ve hata düzeltmeleri göndermenizi sağlar."
+      },
+      {
+        "question": "IoT çözümleriniz mevcut endüstriyel ekipmanlarla entegre olabilir mi?",
+        "answer": "Evet, eski endüstriyel ekipmanları Modbus, OPC UA veya özel RS-485 arayüzleri gibi endüstriyel protokoller kullanarak sıklıkla IoT yetenekleriyle donatıyoruz ve eski makinelerden gerçek zamanlı veriler almanızı sağlıyoruz."
+      },
+      {
+        "question": "Bir IoT çözümü geliştirmek için tipik zaman dilimi nedir?",
+        "answer": "Donanım prototipleme, ürün yazılımı geliştirme ve bulut panosunu içeren özel bir IoT çözümünün geliştirilmesi, donanımın karmaşıklığına ve sertifikasyon gereksinimlerine (CE veya FCC gibi) bağlı olarak genellikle 4 ila 8 ay sürer."
+      }
+    ],
+    "de": [
+      {
+        "question": "Was passiert, wenn ein IoT-Gerät die Internetverbindung verliert?",
+        "answer": "Unsere IoT-Architekturen sind auf Offline-Resilienz ausgelegt. Die Geräte speichern Sensordaten lokal mithilfe von Edge-Computing-Funktionen. Sobald die Verbindung wiederhergestellt ist, synchronisiert das Gerät den Rückstand automatisch ohne Datenverlust mit dem Cloud-Server."
+      },
+      {
+        "question": "Wie stellen Sie die Sicherheit von IoT-Netzwerken sicher?",
+        "answer": "Wir implementieren eine End-to-End-Verschlüsselung für alle übertragenen Daten mittels TLS/MQTT über SSL. Auf Hardwareebene verwenden wir Secure Boot, verschlüsselten Speicher und eindeutige digitale Zertifikate pro Gerät, um Spoofing und unbefugten Zugriff zu verhindern."
+      },
+      {
+        "question": "Welche Kommunikationsprotokolle verwenden Sie für IoT-Geräte?",
+        "answer": "Wir wählen Protokolle basierend auf Ihren spezifischen Anforderungen in Bezug auf Reichweite, Stromverbrauch und Datenbandbreite aus. Zu den gängigen Optionen gehören MQTT für Cloud-Kommunikation mit geringer Latenz, LoRaWAN für Sensoren mit großer Reichweite und geringem Stromverbrauch sowie BLE oder Zigbee für lokale Netzwerke."
+      },
+      {
+        "question": "Wie handhaben Sie Firmware-Updates für Remote-Geräte?",
+        "answer": "Wir bauen robuste Over-The-Air (OTA)-Updatemechanismen. Dies ermöglicht es Ihnen, neue Funktionen, Sicherheitspatches und Fehlerbehebungen ohne physisches Eingreifen sicher von einem zentralen Dashboard aus gleichzeitig auf Tausende von Geräten zu übertragen."
+      },
+      {
+        "question": "Können Ihre IoT-Lösungen in bestehende Industrieanlagen integriert werden?",
+        "answer": "Ja, wir rüsten ältere Industrieanlagen häufig mithilfe von Industrieprotokollen wie Modbus, OPC UA oder benutzerdefinierten RS-485-Schnittstellen mit IoT-Funktionen auf, sodass Sie Echtzeitdaten aus älteren Maschinen extrahieren können."
+      },
+      {
+        "question": "Wie lange dauert die Entwicklung einer IoT-Lösung in der Regel?",
+        "answer": "Die Entwicklung einer kundenspezifischen IoT-Lösung – einschließlich Hardware-Prototyping, Firmware-Entwicklung und Cloud-Dashboard – dauert in der Regel 4 bis 8 Monate, abhängig von der Hardware-Komplexität und den Zertifizierungsanforderungen (wie CE oder FCC)."
+      }
+    ],
+    "ur": [
+      {
+        "question": "اگر IoT ڈیوائس کا انٹرنیٹ کنکشن منقطع ہو جائے تو کیا ہوتا ہے؟",
+        "answer": "ہمارے IoT آرکیٹیکچرز کو آف لائن لچک کے ساتھ ڈیزائن کیا گیا ہے۔ ڈیوائسز ایج کمپیوٹنگ کی صلاحیتوں کا استعمال کرتے ہوئے مقامی طور پر سینسر ڈیٹا کو محفوظ کرتی ہیں۔ کنکشن دوبارہ قائم ہونے کے بعد، ڈیوائس خود بخود ڈیٹا کے نقصان کے بغیر کلاؤڈ سرور کے ساتھ بیک لاگ کو سنکرونائز کرتی ہے۔"
+      },
+      {
+        "question": "آپ IoT نیٹ ورکس کی سیکیورٹی کو کیسے یقینی بناتے ہیں؟",
+        "answer": "ہم SSL پر TLS/MQTT کا استعمال کرتے ہوئے ٹرانزٹ میں موجود تمام ڈیٹا کے لیے اینڈ ٹو اینڈ انکرپشن نافذ کرتے ہیں۔ ہارڈ ویئر کی سطح پر، ہم اسپوفنگ اور غیر مجاز رسائی کو روکنے کے لیے محفوظ بوٹ، انکرپٹڈ اسٹوریج، اور فی ڈیوائس منفرد ڈیجیٹل سرٹیفکیٹس کا استعمال کرتے ہیں۔"
+      },
+      {
+        "question": "آپ IoT آلات کے لیے کون سے مواصلاتی پروٹوکول استعمال کرتے ہیں؟",
+        "answer": "ہم رینج، بجلی کی کھپت، اور ڈیٹا بینڈوتھ کے حوالے سے آپ کی مخصوص ضروریات کی بنیاد پر پروٹوکول منتخب کرتے ہیں۔ عام انتخاب میں کم تاخیر والے کلاؤڈ کمیونیکیشن کے لیے MQTT، طویل فاصلے تک کم طاقت والے سینسرز کے لیے LoRaWAN، اور مقامی نیٹ ورکس کے لیے BLE یا Zigbee شامل ہیں۔"
+      },
+      {
+        "question": "آپ دور دراز کے آلات کے لیے فرم ویئر اپ ڈیٹس کو کیسے سنبھالتے ہیں؟",
+        "answer": "ہم مضبوط اوور دی ایئر (OTA) اپ ڈیٹ میکانزم بناتے ہیں۔ یہ آپ کو جسمانی مداخلت کے بغیر ایک مرکزی ڈیش بورڈ سے بیک وقت ہزاروں ڈیوائسز تک نئی خصوصیات، سیکیورٹی پیچز، اور بگ فکسس کو محفوظ طریقے سے آگے بڑھانے کی اجازت دیتا ہے۔"
+      },
+      {
+        "question": "کیا آپ کے IoT حل موجودہ صنعتی آلات کے ساتھ مل سکتے ہیں؟",
+        "answer": "ہاں، ہم Modbus، OPC UA، یا کسٹم RS-485 انٹرفیسز جیسے صنعتی پروٹوکولز کا استعمال کرتے ہوئے IoT صلاحیتوں کے ساتھ پرانے صنعتی آلات کو کثرت سے ریٹروفٹ کرتے ہیں، جس سے آپ پرانی مشینوں سے ریئل ٹائم ڈیٹا نکال سکتے ہیں۔"
+      },
+      {
+        "question": "IoT حل تیار کرنے کے لیے عام ٹائم فریم کیا ہے؟",
+        "answer": "ایک حسب ضرورت IoT سلوشن تیار کرنا—بشمول ہارڈویئر پروٹو ٹائپنگ، فرم ویئر ڈیولپمنٹ، اور کلاؤڈ ڈیش بورڈ—عام طور پر ہارڈ ویئر کی پیچیدگی اور سرٹیفیکیشن کی ضروریات (جیسے CE یا FCC) کے لحاظ سے 4 سے 8 ماہ لگتے ہیں۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "ماذا يحدث إذا فقد جهاز إنترنت الأشياء (IoT) الاتصال بالإنترنت؟",
+        "answer": "تم تصميم بنيات إنترنت الأشياء الخاصة بنا بمرونة التخزين دون اتصال بالإنترنت. تقوم الأجهزة بتخزين بيانات المستشعر محليًا باستخدام إمكانات حوسبة الحافة (edge computing). بمجرد إعادة الاتصال، يقوم الجهاز تلقائيًا بمزامنة البيانات المتراكمة مع الخادم السحابي دون فقدان للبيانات."
+      },
+      {
+        "question": "كيف تضمنون أمن شبكات إنترنت الأشياء؟",
+        "answer": "نطبق التشفير من البداية إلى النهاية لجميع البيانات أثناء النقل باستخدام بروتوكولات TLS/MQTT عبر طبقة مآخذ التوصيل الآمنة (SSL). على مستوى الأجهزة، نستخدم التمهيد الآمن والتخزين المشفر والشهادات الرقمية الفريدة لكل جهاز لمنع الانتحال والوصول غير المصرح به."
+      },
+      {
+        "question": "ما هي بروتوكولات الاتصال التي تستخدمونها لأجهزة إنترنت الأشياء؟",
+        "answer": "نختار البروتوكولات بناءً على متطلباتك المحددة فيما يتعلق بالنطاق واستهلاك الطاقة وعرض النطاق الترددي للبيانات. تشمل الخيارات الشائعة MQTT للاتصال السحابي بزمن انتقال منخفض، و LoRaWAN لأجهزة الاستشعار منخفضة الطاقة طويلة المدى، و BLE أو Zigbee للشبكات المحلية."
+      },
+      {
+        "question": "كيف تتعاملون مع تحديثات البرامج الثابتة (firmware) للأجهزة البعيدة؟",
+        "answer": "نقوم ببناء آليات تحديث قوية عبر الهواء (OTA). يتيح لك ذلك دفع الميزات الجديدة وتصحيحات الأمان وإصلاحات الأخطاء بأمان إلى آلاف الأجهزة في وقت واحد من لوحة تحكم مركزية دون تدخل مادي."
+      },
+      {
+        "question": "هل يمكن لحلول إنترنت الأشياء الخاصة بكم التكامل مع المعدات الصناعية الحالية؟",
+        "answer": "نعم، نقوم بشكل متكرر بتحديث المعدات الصناعية القديمة بقدرات إنترنت الأشياء باستخدام بروتوكولات صناعية مثل Modbus أو OPC UA أو واجهات RS-485 مخصصة، مما يسمح لك باستخراج البيانات في الوقت الفعلي من الآلات القديمة."
+      },
+      {
+        "question": "ما هو الإطار الزمني النموذجي لتطوير حل إنترنت الأشياء؟",
+        "answer": "عادةً ما يستغرق تطوير حل مخصص لإنترنت الأشياء - بما في ذلك النمذجة الأولية للأجهزة، وتطوير البرامج الثابتة، ولوحة التحكم السحابية - من 4 إلى 8 أشهر اعتمادًا على تعقيد الأجهزة ومتطلبات الاعتماد (مثل CE أو FCC)."
+      }
+    ]
+  },
+  "saas-development": {
+    "en": [
+      {
+        "question": "What architecture do you use for SaaS platforms?",
+        "answer": "We utilize highly scalable multi-tenant architectures, deploying robust microservices or modular monoliths on AWS or GCP. We leverage Next.js, Node.js, and PostgreSQL to ensure isolated tenant data, high availability, and seamless scalability."
+      },
+      {
+        "question": "How do you handle complex billing scenarios like metered usage?",
+        "answer": "We integrate advanced subscription management systems like Stripe Billing or Chargebee. These allow us to effortlessly implement tiered subscriptions, freemium models, metered usage billing, and automated prorations when users upgrade."
+      },
+      {
+        "question": "Can you ensure tenant data remains strictly segregated?",
+        "answer": "Yes. Depending on your security and compliance needs, we implement logical segregation using Row-Level Security (RLS) in PostgreSQL, or physical segregation utilizing distinct schemas or databases for each high-value enterprise tenant."
+      },
+      {
+        "question": "What is the timeline to launch a Minimum Viable Product (MVP) SaaS?",
+        "answer": "A fully functional SaaS MVP, complete with user authentication, multi-tenancy, billing, and core features, usually takes 3 to 4 months. Post-launch, we iterate rapidly based on real user feedback and analytics."
+      },
+      {
+        "question": "Do you provide onboarding flows and user analytics?",
+        "answer": "Absolutely. We implement interactive user onboarding tours and integrate deep product analytics using tools like Mixpanel or PostHog, empowering you to track feature adoption, identify drop-off points, and optimize the user journey."
+      },
+      {
+        "question": "How scalable is the SaaS application during traffic spikes?",
+        "answer": "Our SaaS platforms are designed to autoscale. By utilizing serverless functions, containerized orchestrations (Kubernetes), and managed database services, the infrastructure automatically provisions resources to handle sudden traffic surges without downtime."
+      }
+    ],
+    "tr": [
+      {
+        "question": "SaaS platformları için hangi mimariyi kullanıyorsunuz?",
+        "answer": "AWS veya GCP üzerinde sağlam mikro hizmetler veya modüler monolitler dağıtarak yüksek oranda ölçeklenebilir çok kiracılı (multi-tenant) mimariler kullanıyoruz. Kiracı verilerinin yalıtılmasını, yüksek kullanılabilirliği ve sorunsuz ölçeklenebilirliği sağlamak için Next.js, Node.js ve PostgreSQL'den yararlanıyoruz."
+      },
+      {
+        "question": "Ölçülü kullanım gibi karmaşık faturalandırma senaryolarını nasıl ele alıyorsunuz?",
+        "answer": "Stripe Billing veya Chargebee gibi gelişmiş abonelik yönetim sistemlerini entegre ediyoruz. Bunlar; kademeli abonelikleri, freemium modellerini, ölçülü kullanım faturalandırmasını ve kullanıcılar yükseltme yaptığında otomatik orantılamaları (proration) zahmetsizce uygulamamıza olanak tanır."
+      },
+      {
+        "question": "Kiracı verilerinin kesinlikle ayrılmış kalmasını sağlayabilir misiniz?",
+        "answer": "Evet. Güvenlik ve uyumluluk ihtiyaçlarınıza bağlı olarak, PostgreSQL'de Satır Düzeyinde Güvenlik (RLS) kullanarak mantıksal ayrım veya her yüksek değerli kurumsal kiracı için farklı şemalar veya veritabanları kullanarak fiziksel ayrım uyguluyoruz."
+      },
+      {
+        "question": "Minimum Uygulanabilir Ürün (MVP) SaaS'ı piyasaya sürmek için zaman çizelgesi nedir?",
+        "answer": "Kullanıcı kimlik doğrulaması, çoklu kiracı özelliği, faturalandırma ve temel özelliklerle tamamlanan tam işlevsel bir SaaS MVP'si genellikle 3 ila 4 ay sürer. Lansmandan sonra, gerçek kullanıcı geri bildirimlerine ve analizlerine dayanarak hızla yineleme yapıyoruz."
+      },
+      {
+        "question": "Kullanıcı katılım akışları (onboarding) ve kullanıcı analizi sağlıyor musunuz?",
+        "answer": "Kesinlikle. Etkileşimli kullanıcı katılım turları uyguluyor ve Mixpanel veya PostHog gibi araçları kullanarak derin ürün analizlerini entegre ediyor; böylece özelliklerin benimsenmesini izlemenizi, ayrılma noktalarını belirlemenizi ve kullanıcı yolculuğunu optimize etmenizi sağlıyoruz."
+      },
+      {
+        "question": "Trafik artışları sırasında SaaS uygulaması ne kadar ölçeklenebilir?",
+        "answer": "SaaS platformlarımız otomatik ölçeklenecek şekilde tasarlanmıştır. Sunucusuz işlevler (serverless), kapsayıcılı orkestrasyonlar (Kubernetes) ve yönetilen veritabanı hizmetleri kullanılarak altyapı, ani trafik dalgalanmalarını kesinti olmadan idare etmek için kaynakları otomatik olarak sağlar."
+      }
+    ],
+    "de": [
+      {
+        "question": "Welche Architektur verwenden Sie für SaaS-Plattformen?",
+        "answer": "Wir nutzen hochskalierbare Multi-Tenant-Architekturen und stellen robuste Microservices oder modulare Monolithen auf AWS oder GCP bereit. Wir nutzen Next.js, Node.js und PostgreSQL, um isolierte Mandantendaten, hohe Verfügbarkeit und nahtlose Skalierbarkeit zu gewährleisten."
+      },
+      {
+        "question": "Wie gehen Sie mit komplexen Abrechnungsszenarien wie der nutzungsbasierten Abrechnung um?",
+        "answer": "Wir integrieren fortschrittliche Abonnementverwaltungssysteme wie Stripe Billing oder Chargebee. Diese ermöglichen es uns, mühelos gestaffelte Abonnements, Freemium-Modelle, nutzungsbasierte Abrechnungen und automatisierte anteilige Berechnungen bei Benutzer-Upgrades zu implementieren."
+      },
+      {
+        "question": "Können Sie sicherstellen, dass die Mandantendaten strikt getrennt bleiben?",
+        "answer": "Ja. Abhängig von Ihren Sicherheits- und Compliance-Anforderungen implementieren wir eine logische Trennung unter Verwendung von Row-Level Security (RLS) in PostgreSQL oder eine physische Trennung unter Verwendung unterschiedlicher Schemata oder Datenbanken für jeden hochwertigen Unternehmensmandanten."
+      },
+      {
+        "question": "Wie sieht der Zeitplan für die Einführung eines Minimum Viable Product (MVP) SaaS aus?",
+        "answer": "Ein voll funktionsfähiges SaaS-MVP mit Benutzerauthentifizierung, Mandantenfähigkeit, Abrechnung und Kernfunktionen dauert in der Regel 3 bis 4 Monate. Nach dem Start iterieren wir schnell auf der Grundlage von echtem Benutzerfeedback und Analysen."
+      },
+      {
+        "question": "Bieten Sie Onboarding-Abläufe und Benutzeranalysen an?",
+        "answer": "Absolut. Wir implementieren interaktive Benutzer-Onboarding-Touren und integrieren tiefe Produktanalysen mit Tools wie Mixpanel oder PostHog. So können Sie die Akzeptanz von Funktionen verfolgen, Abbruchpunkte identifizieren und die Customer Journey optimieren."
+      },
+      {
+        "question": "Wie skalierbar ist die SaaS-Anwendung bei Traffic-Spitzen?",
+        "answer": "Unsere SaaS-Plattformen sind so konzipiert, dass sie automatisch skalieren. Durch die Nutzung serverloser Funktionen, containerisierter Orchestrierungen (Kubernetes) und verwalteter Datenbankdienste stellt die Infrastruktur automatisch Ressourcen bereit, um plötzliche Datenverkehrsspitzen ohne Ausfallzeiten zu bewältigen."
+      }
+    ],
+    "ur": [
+      {
+        "question": "آپ SaaS پلیٹ فارمز کے لیے کون سا فن تعمیر استعمال کرتے ہیں؟",
+        "answer": "ہم AWS یا GCP پر مضبوط مائیکرو سروسز یا ماڈیولر مونولیتھز تعینات کرتے ہوئے انتہائی قابل توسیع ملٹی کرایہ دار فن تعمیر کا استعمال کرتے ہیں۔ ہم علیحدہ کرایہ دار ڈیٹا، اعلی دستیابی، اور ہموار توسیع پذیری کو یقینی بنانے کے لیے Next.js، Node.js، اور PostgreSQL کا فائدہ اٹھاتے ہیں۔"
+      },
+      {
+        "question": "آپ بلنگ کے پیچیدہ منظرناموں جیسے کہ میٹرڈ استعمال کو کیسے سنبھالتے ہیں؟",
+        "answer": "ہم اسٹرائپ بلنگ یا چارج بی جیسے اعلی درجے کے سبسکرپشن مینجمنٹ سسٹم کو مربوط کرتے ہیں۔ یہ ہمیں ٹائرڈ سبسکرپشنز، فریمیم ماڈلز، میٹرڈ یوزج بلنگ، اور جب صارفین اپ گریڈ کرتے ہیں تو خود کار طریقے سے الاٹمنٹ نافذ کرنے کی اجازت دیتے ہیں۔"
+      },
+      {
+        "question": "کیا آپ اس بات کو یقینی بنا سکتے ہیں کہ کرایہ دار کا ڈیٹا سختی سے الگ رہے؟",
+        "answer": "ہاں۔ آپ کی سیکیورٹی اور تعمیل کی ضروریات پر منحصر ہے، ہم PostgreSQL میں رو-لیول سیکیورٹی (RLS) کا استعمال کرتے ہوئے منطقی علیحدگی، یا ہر اعلیٰ قیمت والے انٹرپرائز کرایہ دار کے لیے الگ اسکیما یا ڈیٹا بیس کا استعمال کرتے ہوئے جسمانی علیحدگی نافذ کرتے ہیں۔"
+      },
+      {
+        "question": "کم از کم قابل عمل پروڈکٹ (MVP) SaaS کو لانچ کرنے کے لیے ٹائم لائن کیا ہے؟",
+        "answer": "ایک مکمل فعال SaaS MVP، صارف کی توثیق، ملٹی ٹیننسی، بلنگ، اور بنیادی خصوصیات کے ساتھ، عام طور پر 3 سے 4 ماہ لگتے ہیں۔ لانچ کے بعد، ہم صارف کے حقیقی تاثرات اور تجزیات کی بنیاد پر تیزی سے اعادہ کرتے ہیں۔"
+      },
+      {
+        "question": "کیا آپ آن بورڈنگ کے بہاؤ اور صارف کے تجزیات فراہم کرتے ہیں؟",
+        "answer": "بالکل۔ ہم انٹرایکٹو یوزر آن بورڈنگ ٹورز نافذ کرتے ہیں اور Mixpanel یا PostHog جیسے ٹولز کا استعمال کرتے ہوئے پروڈکٹ کے گہرے تجزیات کو مربوط کرتے ہیں، جو آپ کو فیچر اپنانے، ڈراپ آف پوائنٹس کی شناخت، اور صارف کے سفر کو بہتر بنانے کے لیے بااختیار بناتے ہیں۔"
+      },
+      {
+        "question": "ٹریفک میں اضافے کے دوران SaaS ایپلیکیشن کس حد تک قابل توسیع ہے؟",
+        "answer": "ہمارے SaaS پلیٹ فارمز کو خودکار پیمانے پر ڈیزائن کیا گیا ہے۔ سرور لیس فنکشنز، کنٹینرائزڈ آرکیسٹریشنز (Kubernetes)، اور زیر انتظام ڈیٹا بیس سروسز کا استعمال کرتے ہوئے، انفراسٹرکچر بغیر کسی ڈاؤن ٹائم کے ٹریفک کے اچانک اضافے کو سنبھالنے کے لیے خودکار طور پر وسائل فراہم کرتا ہے۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "ما هي البنية التي تستخدمونها لمنصات SaaS؟",
+        "answer": "نحن نستخدم بنيات متعددة المستأجرين (multi-tenant) قابلة للتطوير بدرجة كبيرة، وننشر خدمات مصغرة قوية أو أنظمة متجانسة معيارية على AWS أو GCP. نحن نستفيد من Next.js و Node.js و PostgreSQL لضمان عزل بيانات المستأجر والتوافر العالي وقابلية التوسع السلسة."
+      },
+      {
+        "question": "كيف تتعاملون مع سيناريوهات الفوترة المعقدة مثل الاستخدام المقنن؟",
+        "answer": "نقوم بدمج أنظمة إدارة اشتراكات متقدمة مثل Stripe Billing أو Chargebee. تتيح لنا هذه الأنظمة تنفيذ الاشتراكات المتدرجة، ونماذج Freemium، والفوترة المقننة للاستخدام، والتناسب التلقائي بسهولة عند قيام المستخدمين بالترقية."
+      },
+      {
+        "question": "هل يمكنك التأكد من بقاء بيانات المستأجر مفصولة تمامًا؟",
+        "answer": "نعم. اعتمادًا على احتياجات الأمان والامتثال الخاصة بك، نقوم بتنفيذ فصل منطقي باستخدام الأمان على مستوى الصف (RLS) في PostgreSQL، أو الفصل المادي باستخدام مخططات أو قواعد بيانات متميزة لكل مستأجر مؤسسي عالي القيمة."
+      },
+      {
+        "question": "ما هو الإطار الزمني لإطلاق منتج SaaS قابل للتطبيق بحد أدنى (MVP)؟",
+        "answer": "عادةً ما يستغرق منتج SaaS MVP الوظيفي بالكامل، والمكتمل بمصادقة المستخدم وتعدد المستأجرين والفوترة والميزات الأساسية، من 3 إلى 4 أشهر. بعد الإطلاق، نقوم بالتكرار السريع بناءً على تعليقات المستخدمين الحقيقية والتحليلات."
+      },
+      {
+        "question": "هل تقدمون تدفقات إعداد المستخدم (onboarding) والتحليلات؟",
+        "answer": "بالتأكيد. نقوم بتنفيذ جولات إعداد تفاعلية للمستخدمين ودمج تحليلات منتجات عميقة باستخدام أدوات مثل Mixpanel أو PostHog، مما يتيح لك تتبع تبني الميزات وتحديد نقاط الانقطاع وتحسين رحلة المستخدم."
+      },
+      {
+        "question": "ما مدى قابلية تطبيق SaaS للتوسع أثناء طفرات حركة المرور؟",
+        "answer": "تم تصميم منصات SaaS الخاصة بنا للتوسع التلقائي (autoscale). من خلال الاستفادة من الوظائف الخالية من الخوادم (serverless)، وتنسيقات الحاويات (Kubernetes)، وخدمات قواعد البيانات المدارة، توفر البنية التحتية تلقائيًا الموارد للتعامل مع الزيادات المفاجئة في حركة المرور دون توقف."
+      }
+    ]
+  },
+  "react-native-development": {
+    "en": [
+      {
+        "question": "Is React Native faster to develop than native apps?",
+        "answer": "Yes. By sharing a single codebase across iOS and Android, React Native development typically cuts overall project timelines by 30-40% compared to building two separate native applications from scratch."
+      },
+      {
+        "question": "How much does a React Native app cost?",
+        "answer": "A robust React Native MVP typically ranges from $20,000 to $45,000. This is significantly more cost-effective than native development since you are essentially getting two apps (iOS and Android) for the price of one."
+      },
+      {
+        "question": "Can React Native access native device features like Bluetooth or the Camera?",
+        "answer": "Absolutely. React Native has an extensive ecosystem of modules to access native features. If a specific feature isn't supported out-of-the-box, we write custom native bridges in Swift or Kotlin to access the exact hardware API required."
+      },
+      {
+        "question": "Are React Native apps difficult to maintain?",
+        "answer": "On the contrary, maintenance is highly streamlined. Since both iOS and Android share roughly 90% of their code, bugs are fixed once and deployed to both platforms simultaneously, drastically reducing long-term upkeep costs."
+      },
+      {
+        "question": "Will my app be rejected by Apple or Google because it uses React Native?",
+        "answer": "No. Thousands of top-tier apps on the App Store and Google Play use React Native, including Facebook, Instagram, and Discord. We ensure the app complies with all UI guidelines and store policies."
+      },
+      {
+        "question": "How does React Native perform with complex animations?",
+        "answer": "Modern React Native utilizes the Reanimated library, which offloads heavy UI animations to the native thread. This ensures that even complex transitions and gestures run smoothly at 60fps without causing JavaScript bottlenecks."
+      }
+    ],
+    "tr": [
+      {
+        "question": "React Native ile geliştirme yapmak yerel (native) uygulamalardan daha mı hızlıdır?",
+        "answer": "Evet. React Native geliştirme, hem iOS hem de Android'de tek bir kod tabanını paylaşarak, iki ayrı yerel uygulamayı sıfırdan oluşturmaya kıyasla genel proje sürelerini genellikle %30-40 oranında kısaltır."
+      },
+      {
+        "question": "Bir React Native uygulamasının maliyeti ne kadardır?",
+        "answer": "Sağlam bir React Native MVP'si genellikle 20.000$ ile 45.000$ arasında değişir. Esasen tek bir fiyatına iki uygulama (iOS ve Android) elde ettiğiniz için yerel geliştirmeden çok daha uygun maliyetlidir."
+      },
+      {
+        "question": "React Native, Bluetooth veya Kamera gibi yerel cihaz özelliklerine erişebilir mi?",
+        "answer": "Kesinlikle. React Native, yerel özelliklere erişmek için kapsamlı bir modül ekosistemine sahiptir. Belirli bir özellik standart olarak desteklenmiyorsa, gereken tam donanım API'sine erişmek için Swift veya Kotlin'de özel yerel köprüler (native bridges) yazarız."
+      },
+      {
+        "question": "React Native uygulamalarının bakımı zor mu?",
+        "answer": "Aksine, bakım oldukça basitleştirilmiştir. Hem iOS hem de Android kodlarının yaklaşık %90'ını paylaştığından, hatalar bir kez düzeltilir ve her iki platforma aynı anda dağıtılarak uzun vadeli bakım maliyetleri büyük ölçüde azaltılır."
+      },
+      {
+        "question": "Uygulamam React Native kullandığı için Apple veya Google tarafından reddedilecek mi?",
+        "answer": "Hayır. App Store ve Google Play'de Facebook, Instagram ve Discord dahil olmak üzere binlerce üst düzey uygulama React Native kullanıyor. Uygulamanın tüm UI yönergelerine ve mağaza politikalarına uymasını sağlıyoruz."
+      },
+      {
+        "question": "React Native karmaşık animasyonlarda nasıl bir performans sergiler?",
+        "answer": "Modern React Native, ağır UI animasyonlarını yerel iş parçacığına (native thread) aktaran Reanimated kütüphanesini kullanır. Bu, karmaşık geçişlerin ve hareketlerin bile JavaScript darboğazlarına neden olmadan 60 fps'de sorunsuz çalışmasını sağlar."
+      }
+    ],
+    "de": [
+      {
+        "question": "Ist die Entwicklung mit React Native schneller als mit nativen Apps?",
+        "answer": "Ja. Durch die gemeinsame Nutzung einer einzigen Codebasis für iOS und Android verkürzt die React Native-Entwicklung die Gesamtprojektlaufzeiten in der Regel um 30–40 % im Vergleich zur Erstellung von zwei separaten nativen Anwendungen von Grund auf."
+      },
+      {
+        "question": "Wie viel kostet eine React Native-App?",
+        "answer": "Ein robustes React Native-MVP liegt in der Regel zwischen 20.000 und 45.000 US-Dollar. Dies ist wesentlich kostengünstiger als die native Entwicklung, da Sie im Grunde zwei Apps (iOS und Android) zum Preis von einer erhalten."
+      },
+      {
+        "question": "Kann React Native auf native Gerätefunktionen wie Bluetooth oder die Kamera zugreifen?",
+        "answer": "Absolut. React Native verfügt über ein umfangreiches Ökosystem von Modulen für den Zugriff auf native Funktionen. Wenn eine bestimmte Funktion nicht standardmäßig unterstützt wird, schreiben wir benutzerdefinierte native Brücken in Swift oder Kotlin, um auf die genau benötigte Hardware-API zuzugreifen."
+      },
+      {
+        "question": "Sind React Native-Apps schwer zu warten?",
+        "answer": "Im Gegenteil, die Wartung ist stark vereinfacht. Da iOS und Android etwa 90 % ihres Codes gemeinsam nutzen, werden Fehler einmal behoben und auf beiden Plattformen gleichzeitig bereitgestellt, was die langfristigen Wartungskosten drastisch senkt."
+      },
+      {
+        "question": "Wird meine App von Apple oder Google abgelehnt, weil sie React Native verwendet?",
+        "answer": "Nein. Tausende hochkarätige Apps im App Store und bei Google Play verwenden React Native, darunter Facebook, Instagram und Discord. Wir stellen sicher, dass die App alle UI-Richtlinien und Store-Richtlinien einhält."
+      },
+      {
+        "question": "Wie funktioniert React Native bei komplexen Animationen?",
+        "answer": "Modernes React Native nutzt die Reanimated-Bibliothek, die schwere UI-Animationen auf den nativen Thread auslagert. Dies stellt sicher, dass selbst komplexe Übergänge und Gesten reibungslos mit 60 fps ablaufen, ohne JavaScript-Engpässe zu verursachen."
+      }
+    ],
+    "ur": [
+      {
+        "question": "کیا React Native کو مقامی ایپس سے تیزی سے تیار کیا جا سکتا ہے؟",
+        "answer": "ہاں۔ iOS اور Android پر ایک واحد کوڈ بیس کا اشتراک کر کے، React Native ڈیولپمنٹ عام طور پر شروع سے دو الگ الگ مقامی ایپلیکیشنز بنانے کے مقابلے میں مجموعی پروجیکٹ ٹائم لائنز کو 30-40% تک کم کر دیتی ہے۔"
+      },
+      {
+        "question": "React Native ایپ کی قیمت کتنی ہے؟",
+        "answer": "ایک مضبوط React Native MVP عام طور پر $20,000 سے $45,000 تک ہوتا ہے۔ یہ مقامی ڈیولپمنٹ کی نسبت نمایاں طور پر زیادہ لاگت سے موثر ہے کیونکہ آپ کو بنیادی طور پر ایک کی قیمت میں دو ایپس (iOS اور Android) مل رہی ہیں۔"
+      },
+      {
+        "question": "کیا React Native مقامی ڈیوائس کی خصوصیات جیسے بلوٹوتھ یا کیمرہ تک رسائی حاصل کر سکتا ہے؟",
+        "answer": "بالکل۔ React Native کے پاس مقامی خصوصیات تک رسائی کے لیے ماڈیولز کا ایک وسیع ماحولیاتی نظام ہے۔ اگر کوئی خاص فیچر آؤٹ آف دی باکس تعاون یافتہ نہیں ہے، تو ہم درکار درست ہارڈویئر API تک رسائی کے لیے Swift یا Kotlin میں کسٹم مقامی پل بناتے ہیں۔"
+      },
+      {
+        "question": "کیا React Native ایپس کو برقرار رکھنا مشکل ہے؟",
+        "answer": "اس کے برعکس، دیکھ بھال بہت ہموار ہے۔ چونکہ iOS اور Android دونوں اپنے کوڈ کا تقریباً 90% شیئر کرتے ہیں، اس لیے بگز ایک بار ٹھیک کیے جاتے ہیں اور دونوں پلیٹ فارمز پر ایک ساتھ تعینات کیے جاتے ہیں، جس سے طویل مدتی دیکھ بھال کے اخراجات میں زبردست کمی آتی ہے۔"
+      },
+      {
+        "question": "کیا Apple یا Google کی طرف سے میری ایپ کو مسترد کر دیا جائے گا کیونکہ یہ React Native استعمال کرتی ہے؟",
+        "answer": "نہیں، ایپ اسٹور اور گوگل پلے پر ہزاروں ٹاپ ٹائر ایپس React Native استعمال کرتی ہیں، بشمول فیس بک، انسٹاگرام، اور ڈسکارڈ۔ ہم یقینی بناتے ہیں کہ ایپ UI کی تمام ہدایات اور اسٹور کی پالیسیوں کی تعمیل کرتی ہے۔"
+      },
+      {
+        "question": "React Native پیچیدہ اینیمیشنز کے ساتھ کیسا پرفارم کرتا ہے؟",
+        "answer": "جدید React Native Reanimated لائبریری کا استعمال کرتا ہے، جو کہ بھاری UI اینیمیشنز کو مقامی تھریڈ پر آف لوڈ کرتا ہے۔ یہ یقینی بناتا ہے کہ پیچیدہ ٹرانزیشنز اور اشارے جاوا اسکرپٹ کی رکاوٹوں کا باعث بنے بغیر 60fps پر آسانی سے چلتے ہیں۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "هل تطوير React Native أسرع من التطبيقات الأصلية (native)؟",
+        "answer": "نعم. من خلال مشاركة قاعدة بيانات برمجية واحدة (codebase) عبر نظامي iOS و Android، فإن تطوير React Native يقلص عادةً الجداول الزمنية الشاملة للمشروع بنسبة 30-40٪ مقارنة ببناء تطبيقين أصليين منفصلين من الصفر."
+      },
+      {
+        "question": "كم تبلغ تكلفة تطبيق React Native؟",
+        "answer": "يتراوح منتج React Native القابل للتطبيق بحد أدنى (MVP) القوي عادةً من 20000 دولار إلى 45000 دولار. يعد هذا أكثر فعالية من حيث التكلفة بشكل كبير من التطوير الأصلي نظرًا لأنك تحصل أساسًا على تطبيقين (iOS و Android) بسعر تطبيق واحد."
+      },
+      {
+        "question": "هل يمكن لـ React Native الوصول إلى ميزات الجهاز الأصلية مثل البلوتوث أو الكاميرا؟",
+        "answer": "بالتأكيد. تمتلك React Native نظامًا بيئيًا واسعًا من الوحدات للوصول إلى الميزات الأصلية. إذا كانت ميزة معينة غير مدعومة بشكل افتراضي، فنحن نكتب جسورًا أصلية مخصصة في Swift أو Kotlin للوصول إلى واجهة برمجة تطبيقات الأجهزة الدقيقة المطلوبة."
+      },
+      {
+        "question": "هل يصعب صيانة تطبيقات React Native؟",
+        "answer": "على العكس من ذلك، الصيانة مبسطة للغاية. نظرًا لأن كلا من iOS و Android يتشاركان في حوالي 90٪ من كودهما، يتم إصلاح الأخطاء مرة واحدة ونشرها على كلا النظامين في وقت واحد، مما يقلل بشكل كبير من تكاليف الصيانة على المدى الطويل."
+      },
+      {
+        "question": "هل سيتم رفض تطبيقي من قبل Apple أو Google لأنه يستخدم React Native؟",
+        "answer": "لا. تستخدم الآلاف من التطبيقات عالية المستوى على App Store و Google Play تقنية React Native، بما في ذلك Facebook و Instagram و Discord. نضمن توافق التطبيق مع جميع إرشادات واجهة المستخدم (UI) وسياسات المتجر."
+      },
+      {
+        "question": "كيف يؤدي تطبيق React Native مع الرسوم المتحركة المعقدة؟",
+        "answer": "يستخدم إطار عمل React Native الحديث مكتبة Reanimated، والتي تنقل رسوم واجهة المستخدم الثقيلة إلى الخيط الأصلي (native thread). يضمن هذا أن التحولات والإيماءات المعقدة تعمل بسلاسة بمعدل 60 إطارًا في الثانية دون التسبب في اختناقات في JavaScript."
+      }
+    ]
+  },
+  "jamstack-development": {
+    "en": [
+      {
+        "question": "Is a JAMstack site more secure than a traditional WordPress site?",
+        "answer": "Dramatically so. Because JAMstack sites serve pre-rendered static HTML and communicate via APIs, there is no direct connection to an underlying database or server side code to exploit. This completely eliminates common vulnerabilities like SQL injections."
+      },
+      {
+        "question": "How does JAMstack improve my website's SEO?",
+        "answer": "JAMstack architectures generate extremely lightweight HTML pages that load almost instantly from a global CDN. This phenomenal speed directly boosts your Core Web Vitals, which is a major ranking factor for Google Search algorithms."
+      },
+      {
+        "question": "What is the cost to migrate an existing site to a JAMstack architecture?",
+        "answer": "Migration projects generally range from $10,000 to $25,000 depending on the size of the site and the complexity of the headless CMS setup. While the initial investment is higher, JAMstack drastically reduces long-term hosting and security maintenance costs."
+      },
+      {
+        "question": "Which Headless CMS do you recommend?",
+        "answer": "We often recommend Sanity, Contentful, or Strapi. The choice depends on your team's editorial workflows and whether you need a fully managed SaaS CMS or an open-source self-hosted solution. All integrate seamlessly with modern Next.js/JAMstack frontends."
+      },
+      {
+        "question": "How long does a JAMstack build take?",
+        "answer": "A standard JAMstack corporate website or high-performance blog takes 4 to 6 weeks to develop. E-commerce sites (Headless Shopify/Commerce) take slightly longer, usually 8 to 12 weeks to finalize all custom API integrations."
+      },
+      {
+        "question": "Can I preview my content before publishing it live?",
+        "answer": "Yes. We configure Draft Mode and real-time previews inside the Headless CMS. Your editors can see exactly how the content will look on the live site before hitting the publish button, eliminating guesswork."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Bir JAMstack sitesi geleneksel bir WordPress sitesinden daha mı güvenlidir?",
+        "answer": "Önemli ölçüde öyledir. JAMstack siteleri önceden oluşturulmuş statik HTML sunduğu ve API'ler aracılığıyla iletişim kurduğu için, istismar edilecek temel bir veritabanına veya sunucu tarafı koduna doğrudan bağlantı yoktur. Bu, SQL enjeksiyonları gibi yaygın güvenlik açıklarını tamamen ortadan kaldırır."
+      },
+      {
+        "question": "JAMstack web sitemin SEO'sunu nasıl geliştirir?",
+        "answer": "JAMstack mimarileri, küresel bir CDN'den neredeyse anında yüklenen son derece hafif HTML sayfaları oluşturur. Bu olağanüstü hız, Google Arama algoritmaları için önemli bir sıralama faktörü olan Temel Web Önemli Metriklerinizi (Core Web Vitals) doğrudan artırır."
+      },
+      {
+        "question": "Mevcut bir siteyi JAMstack mimarisine geçirmenin maliyeti nedir?",
+        "answer": "Geçiş projeleri, sitenin boyutuna ve headless (başsız) İYS kurulumunun karmaşıklığına bağlı olarak genellikle 10.000$ ile 25.000$ arasında değişir. İlk yatırım daha yüksek olsa da JAMstack, uzun vadeli barındırma ve güvenlik bakım maliyetlerini büyük ölçüde azaltır."
+      },
+      {
+        "question": "Hangi Başsız İYS'yi (Headless CMS) önerirsiniz?",
+        "answer": "Sıklıkla Sanity, Contentful veya Strapi'yi öneriyoruz. Seçim, ekibinizin editoryal iş akışlarına ve tam olarak yönetilen bir SaaS İYS'ye mi yoksa açık kaynaklı, kendi barındıracağınız bir çözüme mi ihtiyacınız olduğuna bağlıdır. Tümü modern Next.js/JAMstack ön uçlarıyla sorunsuz bir şekilde entegre olur."
+      },
+      {
+        "question": "Bir JAMstack derlemesi ne kadar sürer?",
+        "answer": "Standart bir JAMstack kurumsal web sitesinin veya yüksek performanslı blogun geliştirilmesi 4 ila 6 hafta sürer. E-ticaret sitelerinin (Headless Shopify/Commerce) tüm özel API entegrasyonlarının tamamlanması biraz daha uzun, genellikle 8 ila 12 hafta sürer."
+      },
+      {
+        "question": "İçeriğimi canlı olarak yayınlamadan önce önizleyebilir miyim?",
+        "answer": "Evet. Headless İYS içinde Taslak Modu'nu ve gerçek zamanlı önizlemeleri yapılandırıyoruz. Editörleriniz, yayınla düğmesine basmadan önce içeriğin canlı sitede tam olarak nasıl görüneceğini görebilir ve tahmin yürütmeyi ortadan kaldırır."
+      }
+    ],
+    "de": [
+      {
+        "question": "Ist eine JAMstack-Site sicherer als eine herkömmliche WordPress-Site?",
+        "answer": "Und wie. Da JAMstack-Sites vorgerendertes statisches HTML bereitstellen und über APIs kommunizieren, gibt es keine direkte Verbindung zu einer zugrunde liegenden Datenbank oder zu serverseitigem Code, der ausgenutzt werden könnte. Dadurch werden häufige Schwachstellen wie SQL-Injections vollständig eliminiert."
+      },
+      {
+        "question": "Wie verbessert JAMstack das SEO meiner Website?",
+        "answer": "JAMstack-Architekturen generieren extrem leichtgewichtige HTML-Seiten, die fast sofort von einem globalen CDN geladen werden. Diese phänomenale Geschwindigkeit steigert Ihre Core Web Vitals, die ein wichtiger Ranking-Faktor für die Google-Suchalgorithmen sind."
+      },
+      {
+        "question": "Was kostet die Migration einer bestehenden Site auf eine JAMstack-Architektur?",
+        "answer": "Migrationsprojekte liegen in der Regel zwischen 10.000 und 25.000 US-Dollar, abhängig von der Größe der Site und der Komplexität der Headless-CMS-Einrichtung. Während die Anfangsinvestition höher ist, senkt JAMstack die langfristigen Hosting- und Sicherheitswartungskosten drastisch."
+      },
+      {
+        "question": "Welches Headless CMS empfehlen Sie?",
+        "answer": "Wir empfehlen oft Sanity, Contentful oder Strapi. Die Wahl hängt von den redaktionellen Arbeitsabläufen Ihres Teams ab und davon, ob Sie ein vollständig verwaltetes SaaS-CMS oder eine quelloffene, selbst gehostete Lösung benötigen. Alle lassen sich nahtlos in moderne Next.js/JAMstack-Frontends integrieren."
+      },
+      {
+        "question": "Wie lange dauert ein JAMstack-Build?",
+        "answer": "Die Entwicklung einer Standard-JAMstack-Unternehmenswebsite oder eines leistungsstarken Blogs dauert 4 bis 6 Wochen. Bei E-Commerce-Websites (Headless Shopify/Commerce) dauert es etwas länger, in der Regel 8 bis 12 Wochen, bis alle benutzerdefinierten API-Integrationen abgeschlossen sind."
+      },
+      {
+        "question": "Kann ich meine Inhalte in einer Vorschau anzeigen, bevor ich sie live veröffentliche?",
+        "answer": "Ja. Wir konfigurieren den Entwurfsmodus und Echtzeitvorschauen innerhalb des Headless CMS. Ihre Redakteure können genau sehen, wie die Inhalte auf der Live-Site aussehen werden, bevor sie auf die Schaltfläche 'Veröffentlichen' klicken, wodurch Rätselraten entfällt."
+      }
+    ],
+    "ur": [
+      {
+        "question": "کیا JAMstack سائٹ روایتی ورڈپریس سائٹ سے زیادہ محفوظ ہے؟",
+        "answer": "ڈرامائی طور پر. چونکہ JAMstack سائٹس پہلے سے پیش کردہ جامد HTML فراہم کرتی ہیں اور APIs کے ذریعے مواصلت کرتی ہیں، اس لیے فائدہ اٹھانے کے لیے بنیادی ڈیٹا بیس یا سرور سائیڈ کوڈ سے کوئی براہ راست تعلق نہیں ہے۔ یہ SQL انجیکشن جیسے عام خطرات کو مکمل طور پر ختم کرتا ہے۔"
+      },
+      {
+        "question": "JAMstack میری ویب سائٹ کے SEO کو کیسے بہتر بناتا ہے؟",
+        "answer": "JAMstack آرکیٹیکچرز انتہائی ہلکے وزن والے HTML صفحات تیار کرتے ہیں جو عالمی CDN سے تقریباً فوری طور پر لوڈ ہوتے ہیں۔ یہ غیر معمولی رفتار آپ کے کور ویب وائٹلز کو براہ راست بڑھاتی ہے، جو گوگل سرچ الگورتھم کے لیے درجہ بندی کا ایک اہم عنصر ہے۔"
+      },
+      {
+        "question": "موجودہ سائٹ کو JAMstack فن تعمیر میں منتقل کرنے کی قیمت کیا ہے؟",
+        "answer": "ہجرت کے منصوبے عام طور پر سائٹ کے سائز اور ہیڈ لیس CMS سیٹ اپ کی پیچیدگی کے لحاظ سے $10,000 سے $25,000 تک ہوتے ہیں۔ جب کہ ابتدائی سرمایہ کاری زیادہ ہے، JAMstack طویل مدتی ہوسٹنگ اور سیکیورٹی کی دیکھ بھال کے اخراجات کو یکسر کم کر دیتا ہے۔"
+      },
+      {
+        "question": "آپ کون سا ہیڈ لیس CMS تجویز کرتے ہیں؟",
+        "answer": "ہم اکثر Sanity، Contentful، یا Strapi کی تجویز کرتے ہیں۔ انتخاب آپ کی ٹیم کے ادارتی ورک فلو پر منحصر ہے اور کیا آپ کو مکمل طور پر منظم SaaS CMS یا اوپن سورس سیلف ہوسٹڈ حل کی ضرورت ہے۔ تمام جدید Next.js/JAMstack فرنٹ اینڈ کے ساتھ بغیر کسی رکاوٹ کے ضم ہو جاتے ہیں۔"
+      },
+      {
+        "question": "JAMstack کی تعمیر میں کتنا وقت لگتا ہے؟",
+        "answer": "ایک معیاری JAMstack کارپوریٹ ویب سائٹ یا اعلی کارکردگی والے بلاگ کو تیار ہونے میں 4 سے 6 ہفتے لگتے ہیں۔ ای کامرس سائٹس (Headless Shopify/Commerce) میں قدرے زیادہ وقت لگتا ہے، عام طور پر تمام حسب ضرورت API انضمام کو حتمی شکل دینے میں 8 سے 12 ہفتے لگتے ہیں۔"
+      },
+      {
+        "question": "کیا میں لائیو شائع کرنے سے پہلے اپنے مواد کا جائزہ لے سکتا ہوں؟",
+        "answer": "ہاں۔ ہم Headless CMS کے اندر ڈرافٹ موڈ اور ریئل ٹائم پیش نظارہ ترتیب دیتے ہیں۔ آپ کے ایڈیٹرز پبلش بٹن کو دبانے سے پہلے بالکل دیکھ سکتے ہیں کہ لائیو سائٹ پر مواد کیسا نظر آئے گا، قیاس آرائیوں کو ختم کر کے۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "هل موقع JAMstack أكثر أمانًا من موقع WordPress التقليدي؟",
+        "answer": "بشكل كبير. نظرًا لأن مواقع JAMstack تقدم لغة HTML ثابتة مُصيرة مسبقًا وتتواصل عبر واجهات برمجة التطبيقات (APIs)، فلا يوجد اتصال مباشر بقاعدة بيانات أساسية أو كود من جانب الخادم لاستغلاله. هذا يقضي تمامًا على الثغرات الأمنية الشائعة مثل حقن SQL."
+      },
+      {
+        "question": "كيف يعمل JAMstack على تحسين محركات البحث (SEO) لموقعي؟",
+        "answer": "تُنشئ بنى JAMstack صفحات HTML خفيفة الوزن للغاية يتم تحميلها على الفور تقريبًا من شبكة توصيل محتوى (CDN) عالمية. تعمل هذه السرعة الهائلة على تعزيز مقاييس الويب الأساسية (Core Web Vitals) بشكل مباشر، وهو عامل تصنيف رئيسي لخوارزميات بحث Google."
+      },
+      {
+        "question": "ما هي تكلفة ترحيل موقع حالي إلى بنية JAMstack؟",
+        "answer": "تتراوح مشاريع الترحيل بشكل عام من 10000 دولار إلى 25000 دولار اعتمادًا على حجم الموقع وتعقيد إعداد نظام إدارة المحتوى المنفصل (headless CMS). في حين أن الاستثمار الأولي أعلى، فإن JAMstack يقلل بشكل كبير من تكاليف الاستضافة والصيانة الأمنية على المدى الطويل."
+      },
+      {
+        "question": "ما هو نظام إدارة المحتوى المنفصل (Headless CMS) الذي توصون به؟",
+        "answer": "غالبًا ما نوصي بـ Sanity أو Contentful أو Strapi. يعتمد الاختيار على سير العمل التحريري لفريقك وما إذا كنت بحاجة إلى نظام إدارة محتوى SaaS مُدار بالكامل أو حل مفتوح المصدر مستضاف ذاتيًا. تندمج جميعها بسلاسة مع واجهات Next.js/JAMstack الأمامية الحديثة."
+      },
+      {
+        "question": "ما المدة التي يستغرقها بناء JAMstack؟",
+        "answer": "يستغرق تطوير موقع شركة JAMstack قياسي أو مدونة عالية الأداء من 4 إلى 6 أسابيع. تستغرق مواقع التجارة الإلكترونية (Headless Shopify / Commerce) وقتًا أطول قليلاً، عادةً من 8 إلى 12 أسبوعًا للانتهاء من جميع تكاملات واجهة برمجة التطبيقات المخصصة."
+      },
+      {
+        "question": "هل يمكنني معاينة المحتوى الخاص بي قبل نشره للجمهور؟",
+        "answer": "نعم. نقوم بتكوين وضع المسودة والمعاينات في الوقت الفعلي داخل Headless CMS. يمكن للمحررين رؤية الشكل الذي سيبدو عليه المحتوى بالضبط على الموقع المباشر قبل الضغط على زر النشر، مما يلغي التخمين."
+      }
+    ]
+  },
+  "ar-experiences": {
+    "en": [
+      {
+        "question": "Do customers need to download an app to use your AR experiences?",
+        "answer": "Not necessarily. We highly recommend WebAR, which allows users to launch high-quality Augmented Reality experiences directly from their mobile browser using a simple QR code or a link, removing the friction of app downloads."
+      },
+      {
+        "question": "What is the cost of developing a custom AR filter or experience?",
+        "answer": "Simple social media AR filters (Instagram/Snapchat) typically start around $3,000. Complex WebAR experiences involving custom 3D modeling, animations, and e-commerce integrations generally range from $10,000 to $25,000+."
+      },
+      {
+        "question": "Can AR experiences be integrated into my e-commerce store?",
+        "answer": "Yes, 'Try-Before-You-Buy' AR is highly effective for e-commerce. We can integrate AR models directly into your product pages so customers can visualize furniture in their living rooms or try on accessories using their device's camera."
+      },
+      {
+        "question": "How long does it take to create a 3D AR product model?",
+        "answer": "Creating a highly detailed, AR-optimized 3D model from 2D photos usually takes 3 to 5 days per product. The overall project timeline, including WebAR platform integration, is typically 4 to 8 weeks depending on the catalog size."
+      },
+      {
+        "question": "Are your AR experiences compatible with both iOS and Android?",
+        "answer": "Yes, our WebAR solutions are built using cross-platform frameworks like 8th Wall or universal web standards like model-viewer, ensuring seamless compatibility across all modern iOS (Safari) and Android (Chrome) devices."
+      },
+      {
+        "question": "Can we track user engagement within the AR experience?",
+        "answer": "Absolutely. We embed analytics into WebAR to track essential metrics such as view duration, interaction rates, click-throughs to product pages, and conversion rates, allowing you to accurately measure the ROI of your AR campaign."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Müşterilerin AR deneyimlerinizi kullanmak için bir uygulama indirmesi gerekiyor mu?",
+        "answer": "Şart değil. Kullanıcıların bir QR kodu veya bir bağlantı kullanarak doğrudan mobil tarayıcılarından yüksek kaliteli Artırılmış Gerçeklik deneyimlerini başlatmasına olanak tanıyan ve uygulama indirme pürüzünü ortadan kaldıran WebAR'ı şiddetle tavsiye ediyoruz."
+      },
+      {
+        "question": "Özel bir AR filtresi veya deneyimi geliştirmenin maliyeti nedir?",
+        "answer": "Basit sosyal medya AR filtreleri (Instagram/Snapchat) genellikle 3.000$ civarında başlar. Özel 3B modelleme, animasyonlar ve e-ticaret entegrasyonlarını içeren karmaşık WebAR deneyimleri genellikle 10.000$ ile 25.000$+ arasında değişir."
+      },
+      {
+        "question": "AR deneyimleri e-ticaret mağazama entegre edilebilir mi?",
+        "answer": "Evet, 'Satın Almadan Önce Dene' AR özelliği e-ticaret için oldukça etkilidir. Müşterilerin mobilyaları oturma odalarında görselleştirebilmeleri veya cihazlarının kamerasını kullanarak aksesuarları deneyebilmeleri için AR modellerini doğrudan ürün sayfalarınıza entegre edebiliriz."
+      },
+      {
+        "question": "3B AR ürün modeli oluşturmak ne kadar sürer?",
+        "answer": "2B fotoğraflardan son derece ayrıntılı, AR için optimize edilmiş bir 3B model oluşturmak ürün başına genellikle 3 ila 5 gün sürer. WebAR platformu entegrasyonu da dahil olmak üzere genel proje zaman çizelgesi, katalog boyutuna bağlı olarak genellikle 4 ila 8 haftadır."
+      },
+      {
+        "question": "AR deneyimleriniz hem iOS hem de Android ile uyumlu mu?",
+        "answer": "Evet, WebAR çözümlerimiz 8th Wall gibi platformlar arası çerçeveler veya model-viewer gibi evrensel web standartları kullanılarak oluşturulur; bu da tüm modern iOS (Safari) ve Android (Chrome) cihazlarında sorunsuz uyumluluk sağlar."
+      },
+      {
+        "question": "AR deneyimi içindeki kullanıcı etkileşimini izleyebilir miyiz?",
+        "answer": "Kesinlikle. Görüntüleme süresi, etkileşim oranları, ürün sayfalarına tıklama oranları ve dönüşüm oranları gibi temel metrikleri izlemek için WebAR'a analizler yerleştirerek AR kampanyanızın yatırım getirisini doğru bir şekilde ölçmenize olanak tanıyoruz."
+      }
+    ],
+    "de": [
+      {
+        "question": "Müssen Kunden eine App herunterladen, um Ihre AR-Erlebnisse nutzen zu können?",
+        "answer": "Nicht unbedingt. Wir empfehlen dringend WebAR, mit dem Benutzer hochwertige Augmented-Reality-Erlebnisse direkt über ihren mobilen Browser starten können, indem sie einfach einen QR-Code oder einen Link verwenden. Dadurch entfällt die Hürde von App-Downloads."
+      },
+      {
+        "question": "Was kostet die Entwicklung eines benutzerdefinierten AR-Filters oder -Erlebnisses?",
+        "answer": "Einfache AR-Filter für soziale Medien (Instagram/Snapchat) beginnen in der Regel bei etwa 3.000 US-Dollar. Komplexe WebAR-Erlebnisse, die benutzerdefinierte 3D-Modellierung, Animationen und E-Commerce-Integrationen umfassen, liegen im Allgemeinen zwischen 10.000 und über 25.000 US-Dollar."
+      },
+      {
+        "question": "Können AR-Erlebnisse in meinen E-Commerce-Shop integriert werden?",
+        "answer": "Ja, 'Try-Before-You-Buy'-AR ist für E-Commerce äußerst effektiv. Wir können AR-Modelle direkt in Ihre Produktseiten integrieren, sodass Kunden Möbel in ihren Wohnzimmern visualisieren oder Zubehör mithilfe der Kamera ihres Geräts anprobieren können."
+      },
+      {
+        "question": "Wie lange dauert es, ein 3D-AR-Produktmodell zu erstellen?",
+        "answer": "Die Erstellung eines hochdetaillierten, für AR optimierten 3D-Modells aus 2D-Fotos dauert normalerweise 3 bis 5 Tage pro Produkt. Der Gesamtzeitplan des Projekts, einschließlich der Integration der WebAR-Plattform, beträgt je nach Kataloggröße in der Regel 4 bis 8 Wochen."
+      },
+      {
+        "question": "Sind Ihre AR-Erlebnisse sowohl mit iOS als auch mit Android kompatibel?",
+        "answer": "Ja, unsere WebAR-Lösungen basieren auf plattformübergreifenden Frameworks wie 8th Wall oder universellen Webstandards wie model-viewer, wodurch eine nahtlose Kompatibilität mit allen modernen iOS- (Safari) und Android-Geräten (Chrome) gewährleistet wird."
+      },
+      {
+        "question": "Können wir das Benutzerengagement innerhalb des AR-Erlebnisses verfolgen?",
+        "answer": "Absolut. Wir betten Analysen in WebAR ein, um wesentliche Kennzahlen wie Betrachtungsdauer, Interaktionsraten, Klickraten zu Produktseiten und Konversionsraten zu verfolgen, sodass Sie den ROI Ihrer AR-Kampagne genau messen können."
+      }
+    ],
+    "ur": [
+      {
+        "question": "کیا صارفین کو آپ کے AR تجربات استعمال کرنے کے لیے کوئی ایپ ڈاؤن لوڈ کرنے کی ضرورت ہے؟",
+        "answer": "ضروری نہیں. ہم WebAR کی انتہائی سفارش کرتے ہیں، جو صارفین کو ایک سادہ QR کوڈ یا ایک لنک کا استعمال کرتے ہوئے اپنے موبائل براؤزر سے براہ راست اعلی معیار کے اگمینٹڈ رئیلٹی کے تجربات شروع کرنے کی اجازت دیتا ہے، ایپ ڈاؤن لوڈز کی رکاوٹ کو دور کرتا ہے۔"
+      },
+      {
+        "question": "اپنی مرضی کے مطابق AR فلٹر یا تجربہ تیار کرنے کی قیمت کیا ہے؟",
+        "answer": "سادہ سوشل میڈیا AR فلٹرز (انسٹاگرام/سنیپ چیٹ) عام طور پر لگ بھگ $3,000 سے شروع ہوتے ہیں۔ پیچیدہ WebAR تجربات جن میں اپنی مرضی کے مطابق 3D ماڈلنگ، اینیمیشنز، اور ای کامرس انٹیگریشنز شامل ہیں عام طور پر $10,000 سے $25,000+ تک ہوتے ہیں۔"
+      },
+      {
+        "question": "کیا AR تجربات کو میرے ای کامرس اسٹور میں ضم کیا جا سکتا ہے؟",
+        "answer": "ہاں، ای کامرس کے لیے 'خریدنے سے پہلے کوشش کریں' AR انتہائی موثر ہے۔ ہم AR ماڈلز کو براہ راست آپ کے پروڈکٹ کے صفحات میں ضم کر سکتے ہیں تاکہ صارفین اپنے رہنے کے کمرے میں فرنیچر کا تصور کر سکیں یا اپنے آلے کے کیمرے کا استعمال کرتے ہوئے لوازمات آزما سکیں۔"
+      },
+      {
+        "question": "3D AR پروڈکٹ ماڈل بنانے میں کتنا وقت لگتا ہے؟",
+        "answer": "2D تصاویر سے انتہائی تفصیلی، AR-آپٹمائزڈ 3D ماڈل بنانے میں عام طور پر فی پروڈکٹ 3 سے 5 دن لگتے ہیں۔ WebAR پلیٹ فارم انٹیگریشن سمیت پروجیکٹ کی مجموعی ٹائم لائن، کیٹلاگ کے سائز کے لحاظ سے عام طور پر 4 سے 8 ہفتے ہوتی ہے۔"
+      },
+      {
+        "question": "کیا آپ کے AR تجربات iOS اور Android دونوں کے ساتھ مطابقت رکھتے ہیں؟",
+        "answer": "ہاں، ہمارے WebAR سلوشنز کراس پلیٹ فارم فریم ورکس جیسے 8th Wall یا ماڈل ویور جیسے عالمی ویب معیارات کا استعمال کرتے ہوئے بنائے گئے ہیں، جو تمام جدید iOS (Safari) اور Android (Chrome) آلات پر ہموار مطابقت کو یقینی بناتے ہیں۔"
+      },
+      {
+        "question": "کیا ہم AR تجربے کے اندر صارف کی مصروفیت کو ٹریک کر سکتے ہیں؟",
+        "answer": "بالکل۔ ہم ضروری میٹرکس کو ٹریک کرنے کے لیے WebAR میں تجزیات کو سرایت کرتے ہیں جیسے کہ منظر کا دورانیہ، تعامل کی شرح، پروڈکٹ کے صفحات پر کلک کرنا، اور تبادلوں کی شرح، جس سے آپ اپنی AR مہم کے ROI کی درست پیمائش کر سکتے ہیں۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "هل يحتاج العملاء إلى تنزيل تطبيق لاستخدام تجارب الواقع المعزز (AR) الخاصة بكم؟",
+        "answer": "ليس بالضرورة. نوصي بشدة باستخدام WebAR، والذي يتيح للمستخدمين إطلاق تجارب الواقع المعزز عالية الجودة مباشرة من متصفح الهاتف المحمول الخاص بهم باستخدام رمز QR بسيط أو رابط، مما يزيل احتكاك تنزيلات التطبيقات."
+      },
+      {
+        "question": "ما هي تكلفة تطوير مرشح (فلتر) أو تجربة AR مخصصة؟",
+        "answer": "تبدأ مرشحات الواقع المعزز لوسائل التواصل الاجتماعي البسيطة (Instagram/Snapchat) عادةً من حوالي 3000 دولار. تتراوح تجارب WebAR المعقدة التي تتضمن النمذجة ثلاثية الأبعاد المخصصة والرسوم المتحركة وتكاملات التجارة الإلكترونية بشكل عام من 10000 دولار إلى 25000 دولار فأكثر."
+      },
+      {
+        "question": "هل يمكن دمج تجارب الواقع المعزز في متجر التجارة الإلكترونية الخاص بي؟",
+        "answer": "نعم، يعتبر الواقع المعزز 'جرب قبل أن تشتري' فعالاً للغاية للتجارة الإلكترونية. يمكننا دمج نماذج AR مباشرة في صفحات المنتجات الخاصة بك حتى يتمكن العملاء من تصور الأثاث في غرف المعيشة الخاصة بهم أو تجربة الملحقات باستخدام كاميرا أجهزتهم."
+      },
+      {
+        "question": "ما المدة التي يستغرقها إنشاء نموذج منتج 3D AR؟",
+        "answer": "عادةً ما يستغرق إنشاء نموذج ثلاثي الأبعاد مفصل للغاية ومُحسّن للواقع المعزز من صور ثنائية الأبعاد من 3 إلى 5 أيام لكل منتج. عادةً ما يكون الإطار الزمني الإجمالي للمشروع، بما في ذلك تكامل منصة WebAR، من 4 إلى 8 أسابيع حسب حجم الكتالوج."
+      },
+      {
+        "question": "هل تجارب AR الخاصة بك متوافقة مع كل من iOS و Android؟",
+        "answer": "نعم، تم بناء حلول WebAR الخاصة بنا باستخدام أطر عمل عبر الأنظمة الأساسية مثل 8th Wall أو معايير الويب العالمية مثل model-viewer، مما يضمن التوافق السلس عبر جميع أجهزة iOS (Safari) و Android (Chrome) الحديثة."
+      },
+      {
+        "question": "هل يمكننا تتبع تفاعل المستخدم داخل تجربة الواقع المعزز؟",
+        "answer": "بالتأكيد. نقوم بتضمين التحليلات في WebAR لتتبع المقاييس الأساسية مثل مدة العرض ومعدلات التفاعل والنقرات للوصول إلى صفحات المنتج ومعدلات التحويل، مما يتيح لك قياس عائد الاستثمار (ROI) لحملة الواقع المعزز الخاصة بك بدقة."
+      }
+    ]
+  }
+}

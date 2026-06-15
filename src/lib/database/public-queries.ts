@@ -1,50 +1,67 @@
 import { getPrisma } from '@/lib/db/prisma';
+import { unstable_cache } from 'next/cache';
 
 const getPrismaClient = () => getPrisma();
 
+// Public service content is cached for 1 hour (tag 'services') so service
+// pages serve from the Next data cache instead of hitting Neon on every
+// request. Content edits appear within the hour (or immediately on redeploy).
+// Pages stay fully server-rendered — crawlers see identical complete HTML;
+// this only changes where the data comes from, so it's SEO-safe and faster
+// responses improve Core Web Vitals.
+const CACHE_OPTS = { revalidate: 3600, tags: ['services'] };
+
 // ==================== SERVICE QUERIES ====================
 
-export async function getPublishedServices(locale?: string) {
-  const services = await getPrismaClient().service.findMany({
-    where: { status: { in: ['published', 'active'] } },
-    include: {
-      translations: locale ? { where: { locale } } : false,
-      pricingPackages: true,
-    },
-    orderBy: { order: 'asc' },
-  });
-
-  return services.map((service) => mergeServiceTranslation(service, locale));
-}
-
-export async function getFeaturedServices(locale?: string) {
-  const services = await getPrismaClient().service.findMany({
-    where: { status: { in: ['published', 'active'] }, featured: true },
-    include: {
-      translations: locale ? { where: { locale } } : false,
-      pricingPackages: true,
-    },
-    orderBy: { order: 'asc' },
-  });
-
-  return services.map((service) => mergeServiceTranslation(service, locale));
-}
-
-export async function getPublishedServiceBySlug(slug: string, locale?: string) {
-  const service = await getPrismaClient().service.findFirst({
-    where: { slug, status: { in: ['published', 'active'] } },
-    include: {
-      translations: locale ? { where: { locale } } : false,
-      pricingPackages: {
-        orderBy: { tier: 'asc' },
+export const getPublishedServices = unstable_cache(
+  async (locale?: string) => {
+    const services = await getPrismaClient().service.findMany({
+      where: { status: { in: ['published', 'active'] } },
+      include: {
+        translations: locale ? { where: { locale } } : false,
+        pricingPackages: true,
       },
-    },
-  });
+      orderBy: { order: 'asc' },
+    });
+    return services.map((service) => mergeServiceTranslation(service, locale));
+  },
+  ['public:services-all'],
+  CACHE_OPTS,
+);
 
-  if (!service) return null;
+export const getFeaturedServices = unstable_cache(
+  async (locale?: string) => {
+    const services = await getPrismaClient().service.findMany({
+      where: { status: { in: ['published', 'active'] }, featured: true },
+      include: {
+        translations: locale ? { where: { locale } } : false,
+        pricingPackages: true,
+      },
+      orderBy: { order: 'asc' },
+    });
+    return services.map((service) => mergeServiceTranslation(service, locale));
+  },
+  ['public:services-featured'],
+  CACHE_OPTS,
+);
 
-  return mergeServiceTranslation(service, locale);
-}
+export const getPublishedServiceBySlug = unstable_cache(
+  async (slug: string, locale?: string) => {
+    const service = await getPrismaClient().service.findFirst({
+      where: { slug, status: { in: ['published', 'active'] } },
+      include: {
+        translations: locale ? { where: { locale } } : false,
+        pricingPackages: {
+          orderBy: { tier: 'asc' },
+        },
+      },
+    });
+    if (!service) return null;
+    return mergeServiceTranslation(service, locale);
+  },
+  ['public:service-by-slug'],
+  CACHE_OPTS,
+);
 
 function mergeServiceTranslation(service: any, locale?: string) {
   const translation = service.translations?.[0];
@@ -75,29 +92,36 @@ function mergeServiceTranslation(service: any, locale?: string) {
 
 // ==================== SUB-SERVICE QUERIES ====================
 
-export async function getSubServices(parentSlug: string, locale?: string) {
-  const services = await getPrismaClient().service.findMany({
-    where: { parentSlug, status: { in: ['published', 'active'] } },
-    include: {
-      translations: locale ? { where: { locale } } : false,
-    },
-    orderBy: { order: 'asc' },
-  });
+export const getSubServices = unstable_cache(
+  async (parentSlug: string, locale?: string) => {
+    const services = await getPrismaClient().service.findMany({
+      where: { parentSlug, status: { in: ['published', 'active'] } },
+      include: {
+        translations: locale ? { where: { locale } } : false,
+      },
+      orderBy: { order: 'asc' },
+    });
+    return services.map((service) => mergeServiceTranslation(service, locale));
+  },
+  ['public:sub-services'],
+  CACHE_OPTS,
+);
 
-  return services.map((service) => mergeServiceTranslation(service, locale));
-}
-
-export async function getParentService(slug: string, locale?: string) {
-  const service = await getPrismaClient().service.findFirst({
-    where: { slug, status: { in: ['published', 'active'] } },
-    include: {
-      translations: locale ? { where: { locale } } : false,
-    },
-  });
-  if (!service) return null;
-  const merged = mergeServiceTranslation(service, locale);
-  return { name: merged.name, slug: merged.slug, icon: merged.icon, color: merged.color };
-}
+export const getParentService = unstable_cache(
+  async (slug: string, locale?: string) => {
+    const service = await getPrismaClient().service.findFirst({
+      where: { slug, status: { in: ['published', 'active'] } },
+      include: {
+        translations: locale ? { where: { locale } } : false,
+      },
+    });
+    if (!service) return null;
+    const merged = mergeServiceTranslation(service, locale);
+    return { name: merged.name, slug: merged.slug, icon: merged.icon, color: merged.color };
+  },
+  ['public:parent-service'],
+  CACHE_OPTS,
+);
 
 // ==================== PROJECT QUERIES ====================
 

@@ -10,7 +10,8 @@
     "lint": "next lint",
     "init-translations": "npx ts-node --compiler-options '{\"module\":\"CommonJS\"}' scripts/init-translations.ts",
     "generate-services": "npx ts-node --compiler-options '{\"module\":\"CommonJS\"}' scripts/generate-services.ts",
-    "seed-manual": "npx ts-node --compiler-options '{\"module\":\"CommonJS\"}' scripts/seed-manual.ts"
+    "seed-manual": "npx ts-node --compiler-options '{\"module\":\"CommonJS\"}' scripts/seed-manual.ts",
+    "seed-faq-manual": "npx ts-node --compiler-options '{\"module\":\"CommonJS\"}' scripts/seed-faq-manual.ts"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",

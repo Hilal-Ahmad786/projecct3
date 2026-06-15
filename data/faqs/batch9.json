@@ -1,0 +1,662 @@
+{
+  "cross-platform-apps": {
+    "en": [
+      {
+        "question": "What is the difference between native and cross-platform app development?",
+        "answer": "Native development requires writing separate code for iOS (Swift) and Android (Kotlin), meaning two teams and double the cost. Cross-platform development uses frameworks like React Native or Flutter to write one unified codebase that deploys to both platforms, saving time and money."
+      },
+      {
+        "question": "Will a cross-platform app perform as well as a native app?",
+        "answer": "Yes. Modern frameworks like React Native and Flutter compile down to native code and utilize the device's GPU. For 95% of applications (like social media, e-commerce, or business tools), users cannot tell the difference in performance or feel."
+      },
+      {
+        "question": "Which cross-platform framework do you recommend?",
+        "answer": "We primarily recommend Flutter for its incredibly fast UI rendering and unified design system, or React Native if you already have a heavy investment in web React technologies. We choose the framework based on your project's specific technical requirements."
+      },
+      {
+        "question": "Can cross-platform apps use device features like the camera or GPS?",
+        "answer": "Absolutely. Cross-platform frameworks have extensive libraries and 'bridges' that allow seamless access to native device features, including the camera, GPS, Bluetooth, push notifications, and local storage."
+      },
+      {
+        "question": "How much cheaper is cross-platform development?",
+        "answer": "Developing a cross-platform app typically saves 30% to 40% in initial development costs compared to building two separate native apps. Furthermore, long-term maintenance costs are halved since you only have to maintain one codebase."
+      },
+      {
+        "question": "Can you migrate my existing iOS app to be cross-platform?",
+        "answer": "Yes. We often rewrite legacy native applications into Flutter or React Native. This allows companies to finally launch an Android version while simultaneously modernizing their existing iOS codebase."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Yerel (native) ve çapraz platform (cross-platform) uygulama geliştirme arasındaki fark nedir?",
+        "answer": "Yerel geliştirme, iOS (Swift) ve Android (Kotlin) için ayrı kod yazmayı gerektirir, bu da iki ekip ve iki kat maliyet anlamına gelir. Çapraz platform geliştirme, her iki platforma da dağıtılan tek bir birleşik kod tabanı yazmak için React Native veya Flutter gibi çerçeveler kullanır ve zamandan ve paradan tasarruf sağlar."
+      },
+      {
+        "question": "Çapraz platformlu bir uygulama yerel bir uygulama kadar iyi performans gösterir mi?",
+        "answer": "Evet. React Native ve Flutter gibi modern çerçeveler yerel koda derlenir ve cihazın GPU'sunu kullanır. Uygulamaların %95'i için (sosyal medya, e-ticaret veya iş araçları gibi), kullanıcılar performans veya his açısından farkı anlayamazlar."
+      },
+      {
+        "question": "Hangi çapraz platform çerçevesini önerirsiniz?",
+        "answer": "İnanılmaz hızlı kullanıcı arayüzü oluşturma ve birleşik tasarım sistemi için öncelikle Flutter'ı veya web React teknolojilerine halihazırda büyük bir yatırımınız varsa React Native'i öneriyoruz. Çerçeveyi projenizin özel teknik gereksinimlerine göre seçiyoruz."
+      },
+      {
+        "question": "Çapraz platform uygulamaları kamera veya GPS gibi cihaz özelliklerini kullanabilir mi?",
+        "answer": "Kesinlikle. Çapraz platform çerçeveleri, kamera, GPS, Bluetooth, anında iletme bildirimleri (push notifications) ve yerel depolama dahil olmak üzere yerel cihaz özelliklerine sorunsuz erişim sağlayan kapsamlı kitaplıklara ve 'köprülere' sahiptir."
+      },
+      {
+        "question": "Çapraz platform geliştirme ne kadar daha ucuzdur?",
+        "answer": "Çapraz platformlu bir uygulama geliştirmek, iki ayrı yerel uygulama oluşturmaya kıyasla ilk geliştirme maliyetlerinde genellikle %30 ila %40 oranında tasarruf sağlar. Ayrıca, yalnızca tek bir kod tabanını korumanız gerektiğinden uzun vadeli bakım maliyetleri yarı yarıya azalır."
+      },
+      {
+        "question": "Mevcut iOS uygulamamı çapraz platform olacak şekilde taşıyabilir misiniz?",
+        "answer": "Evet. Eski yerel uygulamaları sık sık Flutter veya React Native olarak yeniden yazıyoruz. Bu, şirketlerin mevcut iOS kod tabanlarını modernleştirirken aynı anda bir Android sürümü başlatmalarına olanak tanır."
+      }
+    ],
+    "de": [
+      {
+        "question": "Was ist der Unterschied zwischen nativer und plattformübergreifender (Cross-Platform) App-Entwicklung?",
+        "answer": "Für die native Entwicklung muss separater Code für iOS (Swift) und Android (Kotlin) geschrieben werden, was zwei Teams und doppelte Kosten bedeutet. Die plattformübergreifende Entwicklung nutzt Frameworks wie React Native oder Flutter, um eine einzige, einheitliche Codebasis zu schreiben, die auf beiden Plattformen bereitgestellt wird, was Zeit und Geld spart."
+      },
+      {
+        "question": "Wird eine plattformübergreifende App genauso gut funktionieren wie eine native App?",
+        "answer": "Ja. Moderne Frameworks wie React Native und Flutter kompilieren in nativen Code und nutzen die GPU des Geräts. Bei 95 % der Anwendungen (wie soziale Medien, E-Commerce oder Business-Tools) können Benutzer den Unterschied in der Leistung oder im Gefühl nicht erkennen."
+      },
+      {
+        "question": "Welches plattformübergreifende Framework empfehlen Sie?",
+        "answer": "Wir empfehlen in erster Linie Flutter wegen seines unglaublich schnellen UI-Renderings und seines einheitlichen Designsystems, oder React Native, wenn Sie bereits stark in Web-React-Technologien investiert haben. Wir wählen das Framework basierend auf den spezifischen technischen Anforderungen Ihres Projekts aus."
+      },
+      {
+        "question": "Können plattformübergreifende Apps Gerätefunktionen wie die Kamera oder GPS nutzen?",
+        "answer": "Absolut. Plattformübergreifende Frameworks verfügen über umfangreiche Bibliotheken und „Brücken“, die einen nahtlosen Zugriff auf native Gerätefunktionen ermöglichen, darunter Kamera, GPS, Bluetooth, Push-Benachrichtigungen und lokalen Speicher."
+      },
+      {
+        "question": "Wie viel günstiger ist plattformübergreifende Entwicklung?",
+        "answer": "Die Entwicklung einer plattformübergreifenden App spart im Vergleich zur Entwicklung zweier separater nativer Apps in der Regel 30 % bis 40 % der anfänglichen Entwicklungskosten. Darüber hinaus halbieren sich die langfristigen Wartungskosten, da Sie nur eine Codebasis pflegen müssen."
+      },
+      {
+        "question": "Können Sie meine bestehende iOS-App so migrieren, dass sie plattformübergreifend ist?",
+        "answer": "Ja. Wir schreiben alte native Anwendungen oft in Flutter oder React Native um. Dadurch können Unternehmen endlich eine Android-Version auf den Markt bringen und gleichzeitig ihre bestehende iOS-Codebasis modernisieren."
+      }
+    ],
+    "ur": [
+      {
+        "question": "آبائی اور کراس پلیٹ فارم ایپ کی ترقی میں کیا فرق ہے؟",
+        "answer": "مقامی ترقی کے لیے iOS (Swift) اور Android (Kotlin) کے لیے الگ کوڈ لکھنا پڑتا ہے، جس کا مطلب ہے کہ دو ٹیمیں اور دوگنی لاگت آئے گی۔ کراس پلیٹ فارم ڈیولپمنٹ ایک متحد کوڈ بیس لکھنے کے لیے React Native یا Flutter جیسے فریم ورک کا استعمال کرتی ہے جو دونوں پلیٹ فارمز پر کام کرتا ہے، جس سے وقت اور پیسے کی بچت ہوتی ہے۔"
+      },
+      {
+        "question": "کیا کراس پلیٹ فارم ایپ مقامی ایپ کے ساتھ ساتھ کارکردگی کا مظاہرہ کرے گی؟",
+        "answer": "ہاں۔ جدید فریم ورک جیسے React Native اور Flutter مقامی کوڈ تک مرتب ہوتے ہیں اور آلہ کے GPU کو استعمال کرتے ہیں۔ 95% ایپلی کیشنز (جیسے کہ سوشل میڈیا، ای کامرس، یا کاروباری ٹولز) کے لیے، صارفین کارکردگی یا احساس میں فرق نہیں بتا سکتے۔"
+      },
+      {
+        "question": "آپ کس کراس پلیٹ فارم فریم ورک کی تجویز کرتے ہیں؟",
+        "answer": "ہم اس کے ناقابل یقین حد تک تیز UI رینڈرنگ اور متحد ڈیزائن سسٹم کے لیے بنیادی طور پر فلٹر کی تجویز کرتے ہیں، یا مقامی طور پر ردعمل ظاہر کرتے ہیں اگر آپ کے پاس ویب ری ایکٹ ٹیکنالوجیز میں پہلے سے ہی بھاری سرمایہ کاری ہے۔ ہم آپ کے پروجیکٹ کی مخصوص تکنیکی ضروریات کی بنیاد پر فریم ورک کا انتخاب کرتے ہیں۔"
+      },
+      {
+        "question": "کیا کراس پلیٹ فارم ایپس کیمرہ یا جی پی ایس جیسی ڈیوائس کی خصوصیات استعمال کر سکتی ہیں؟",
+        "answer": "بالکل۔ کراس پلیٹ فارم کے فریم ورکس میں وسیع لائبریریاں اور 'پل' ہیں جو کیمرے، جی پی ایس، بلوٹوتھ، پش نوٹیفیکیشنز، اور مقامی اسٹوریج سمیت مقامی آلات کی خصوصیات تک بغیر کسی رکاوٹ کے رسائی کی اجازت دیتے ہیں۔"
+      },
+      {
+        "question": "کراس پلیٹ فارم ڈیولپمنٹ کتنا سستا ہے؟",
+        "answer": "کراس پلیٹ فارم ایپ کو ڈیولپ کرنے سے عام طور پر ابتدائی ڈیولپمنٹ لاگت میں دو الگ مقامی ایپس بنانے کے مقابلے میں 30% سے 40% کی بچت ہوتی ہے۔ مزید برآں، طویل مدتی دیکھ بھال کے اخراجات آدھے رہ گئے ہیں کیونکہ آپ کو صرف ایک کوڈ بیس کو برقرار رکھنا پڑتا ہے۔"
+      },
+      {
+        "question": "کیا آپ میری موجودہ iOS ایپ کو کراس پلیٹ فارم پر منتقل کر سکتے ہیں؟",
+        "answer": "ہاں۔ ہم اکثر پرانی مقامی ایپلی کیشنز کو Flutter یا React Native میں دوبارہ لکھتے ہیں۔ یہ کمپنیوں کو آخرکار ایک ہی وقت میں اپنے موجودہ iOS کوڈ بیس کو جدید بناتے ہوئے اینڈرائیڈ ورژن لانچ کرنے کی اجازت دیتا ہے۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "ما الفرق بين تطوير التطبيقات الأصلية (native) والتطبيقات عبر الأنظمة الأساسية (cross-platform)؟",
+        "answer": "يتطلب التطوير الأصلي كتابة كود منفصل لنظامي iOS (Swift) و Android (Kotlin)، مما يعني فريقين وتكلفة مضاعفة. يستخدم التطوير عبر الأنظمة الأساسية أطر عمل مثل React Native أو Flutter لكتابة قاعدة بيانات برمجية واحدة موحدة يتم نشرها على كلا النظامين، مما يوفر الوقت والمال."
+      },
+      {
+        "question": "هل سيعمل التطبيق عبر الأنظمة الأساسية بشكل جيد مثل التطبيق الأصلي؟",
+        "answer": "نعم. يتم تجميع أطر العمل الحديثة مثل React Native و Flutter إلى كود أصلي (native code) وتستخدم وحدة معالجة الرسومات (GPU) الخاصة بالجهاز. بالنسبة لـ 95٪ من التطبيقات (مثل وسائل التواصل الاجتماعي أو التجارة الإلكترونية أو أدوات العمل)، لا يمكن للمستخدمين معرفة الفرق في الأداء أو الشعور."
+      },
+      {
+        "question": "ما هو إطار العمل عبر الأنظمة الأساسية الذي توصي به؟",
+        "answer": "نوصي بشكل أساسي بـ Flutter بسبب عرضه السريع للغاية لواجهة المستخدم ونظام التصميم الموحد، أو React Native إذا كان لديك بالفعل استثمار كبير في تقنيات Web React. نختار إطار العمل بناءً على المتطلبات الفنية المحددة لمشروعك."
+      },
+      {
+        "question": "هل يمكن للتطبيقات عبر الأنظمة الأساسية استخدام ميزات الجهاز مثل الكاميرا أو GPS؟",
+        "answer": "بالتأكيد. تحتوي الأطر عبر الأنظمة الأساسية على مكتبات واسعة و'جسور' (bridges) تتيح الوصول السلس إلى ميزات الجهاز الأصلية، بما في ذلك الكاميرا و GPS والبلوتوث وإشعارات الدفع (push notifications) والتخزين المحلي."
+      },
+      {
+        "question": "ما مدى تكلفة التطوير عبر الأنظمة الأساسية؟",
+        "answer": "يوفر تطوير تطبيق عبر الأنظمة الأساسية عادةً من 30٪ إلى 40٪ في تكاليف التطوير الأولية مقارنة ببناء تطبيقين أصليين منفصلين. علاوة على ذلك، تنخفض تكاليف الصيانة طويلة الأجل إلى النصف نظرًا لأنك مضطر فقط إلى صيانة قاعدة بيانات برمجية واحدة."
+      },
+      {
+        "question": "هل يمكنك ترحيل تطبيق iOS الحالي الخاص بي ليكون عبر الأنظمة الأساسية؟",
+        "answer": "نعم. غالبًا ما نعيد كتابة التطبيقات الأصلية القديمة إلى Flutter أو React Native. يتيح ذلك للشركات إطلاق إصدار Android أخيرًا مع تحديث قاعدة بيانات iOS الحالية في وقت واحد."
+      }
+    ]
+  },
+  "telemedicine-platforms": {
+    "en": [
+      {
+        "question": "Are your telemedicine platforms HIPAA compliant?",
+        "answer": "Yes. We design telemedicine systems from the ground up to adhere to strict healthcare regulations like HIPAA (USA) and GDPR (Europe). We use end-to-end encryption for video calls, AES-256 encryption for stored health records, and secure BAA agreements with cloud providers."
+      },
+      {
+        "question": "How do doctors and patients communicate on the platform?",
+        "answer": "We integrate real-time WebRTC technology (via providers like Twilio or Vonage) to enable seamless, high-definition video conferencing directly in the browser or app, without requiring patients to download external software like Zoom."
+      },
+      {
+        "question": "Can the platform integrate with existing EMR/EHR systems?",
+        "answer": "Yes. We use HL7 and FHIR interoperability standards to securely connect the telemedicine app with existing Electronic Medical Record (EMR) systems (like Epic or Cerner), ensuring patient history and consultation notes are automatically synced."
+      },
+      {
+        "question": "Does the platform support electronic prescriptions (e-prescribing)?",
+        "answer": "Absolutely. We can integrate e-prescribing APIs (such as SureScripts) allowing doctors to safely send prescriptions directly to a patient's local pharmacy immediately following a virtual consultation."
+      },
+      {
+        "question": "How are payments and insurance verifications handled?",
+        "answer": "We build integrated payment gateways (like Stripe for Health) to collect co-pays upfront. We also integrate with healthcare clearinghouse APIs (like Eligible or Change Healthcare) to perform real-time patient insurance eligibility checks before the appointment."
+      },
+      {
+        "question": "How long does it take to build a custom telemedicine app?",
+        "answer": "Because of the strict security and compliance requirements, a robust custom telemedicine platform with video conferencing, scheduling, and basic EMR integration typically takes 4 to 6 months to develop and rigorously test."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Teletıp (telemedicine) platformlarınız HIPAA uyumlu mu?",
+        "answer": "Evet. Teletıp sistemlerini HIPAA (ABD) ve GDPR (Avrupa) gibi katı sağlık düzenlemelerine uyacak şekilde sıfırdan tasarlıyoruz. Görüntülü görüşmeler için uçtan uca şifreleme, depolanan sağlık kayıtları için AES-256 şifreleme ve bulut sağlayıcılarıyla güvenli BAA sözleşmeleri kullanıyoruz."
+      },
+      {
+        "question": "Doktorlar ve hastalar platformda nasıl iletişim kuruyor?",
+        "answer": "Hastaların Zoom gibi harici bir yazılım indirmesine gerek kalmadan, doğrudan tarayıcıda veya uygulamada kesintisiz, yüksek çözünürlüklü video konferans sağlamak için (Twilio veya Vonage gibi sağlayıcılar aracılığıyla) gerçek zamanlı WebRTC teknolojisini entegre ediyoruz."
+      },
+      {
+        "question": "Platform mevcut EMR/EHR sistemleriyle entegre olabilir mi?",
+        "answer": "Evet. Teletıp uygulamasını mevcut Elektronik Tıbbi Kayıt (EMR) sistemlerine (Epic veya Cerner gibi) güvenli bir şekilde bağlamak için HL7 ve FHIR birlikte çalışabilirlik (interoperability) standartlarını kullanıyor, hasta geçmişinin ve konsültasyon notlarının otomatik olarak senkronize edilmesini sağlıyoruz."
+      },
+      {
+        "question": "Platform elektronik reçeteyi (e-reçete) destekliyor mu?",
+        "answer": "Kesinlikle. Doktorların, sanal bir konsültasyondan hemen sonra doğrudan hastanın yerel eczanesine güvenli bir şekilde reçete göndermesine olanak tanıyan e-reçete API'lerini (SureScripts gibi) entegre edebiliriz."
+      },
+      {
+        "question": "Ödemeler ve sigorta doğrulamaları nasıl yönetiliyor?",
+        "answer": "Katkı paylarını (co-pays) peşin tahsil etmek için entegre ödeme ağ geçitleri (Sağlık için Stripe gibi) kuruyoruz. Randevudan önce gerçek zamanlı hasta sigortası uygunluk kontrolleri yapmak için sağlık takas odası (clearinghouse) API'leriyle (Eligible veya Change Healthcare gibi) de entegre oluyoruz."
+      },
+      {
+        "question": "Özel bir teletıp uygulaması oluşturmak ne kadar sürer?",
+        "answer": "Katı güvenlik ve uyumluluk gereksinimleri nedeniyle, video konferans, planlama ve temel EMR entegrasyonu içeren sağlam ve özel bir teletıp platformunun geliştirilmesi ve titizlikle test edilmesi genellikle 4 ila 6 ay sürer."
+      }
+    ],
+    "de": [
+      {
+        "question": "Sind Ihre Telemedizin-Plattformen HIPAA-konform?",
+        "answer": "Ja. Wir entwickeln Telemedizin-Systeme von Grund auf so, dass sie strengen Gesundheitsvorschriften wie HIPAA (USA) und DSGVO (Europa) entsprechen. Wir verwenden Ende-zu-Ende-Verschlüsselung für Videoanrufe, AES-256-Verschlüsselung für gespeicherte Gesundheitsakten und sichere BAA-Vereinbarungen mit Cloud-Anbietern."
+      },
+      {
+        "question": "Wie kommunizieren Ärzte und Patienten auf der Plattform?",
+        "answer": "Wir integrieren Echtzeit-WebRTC-Technologie (über Anbieter wie Twilio oder Vonage), um nahtlose, hochauflösende Videokonferenzen direkt im Browser oder in der App zu ermöglichen, ohne dass Patienten externe Software wie Zoom herunterladen müssen."
+      },
+      {
+        "question": "Kann die Plattform in bestehende EMR/EHR-Systeme integriert werden?",
+        "answer": "Ja. Wir nutzen HL7- und FHIR-Interoperabilitätsstandards, um die Telemedizin-App sicher mit bestehenden Systemen für elektronische Patientenakten (EMR) (wie Epic oder Cerner) zu verbinden und sicherzustellen, dass die Patientenanamnese und die Beratungsnotizen automatisch synchronisiert werden."
+      },
+      {
+        "question": "Unterstützt die Plattform elektronische Rezepte (E-Rezept)?",
+        "answer": "Absolut. Wir können E-Rezept-APIs (wie SureScripts) integrieren, die es Ärzten ermöglichen, unmittelbar nach einer virtuellen Konsultation Rezepte sicher und direkt an die lokale Apotheke eines Patienten zu senden."
+      },
+      {
+        "question": "Wie werden Zahlungen und Versicherungsverifizierungen abgewickelt?",
+        "answer": "Wir integrieren Zahlungsgateways (wie Stripe for Health), um Zuzahlungen im Voraus einzuziehen. Wir integrieren auch APIs von Gesundheits-Clearinghäusern (wie Eligible oder Change Healthcare), um vor dem Termin in Echtzeit die Versicherungsberechtigung von Patienten zu prüfen."
+      },
+      {
+        "question": "Wie lange dauert die Entwicklung einer individuellen Telemedizin-App?",
+        "answer": "Aufgrund der strengen Sicherheits- und Compliance-Anforderungen dauert die Entwicklung und strenge Testung einer robusten, kundenspezifischen Telemedizin-Plattform mit Videokonferenzen, Terminplanung und grundlegender EMR-Integration in der Regel 4 bis 6 Monate."
+      }
+    ],
+    "ur": [
+      {
+        "question": "کیا آپ کے ٹیلی میڈیسن پلیٹ فارم HIPAA کے مطابق ہیں؟",
+        "answer": "ہاں۔ ہم HIPAA (USA) اور GDPR (یورپ) جیسے صحت کی دیکھ بھال کے سخت ضوابط کی پابندی کرنے کے لیے زمین سے لے کر ٹیلی میڈیسن سسٹم ڈیزائن کرتے ہیں۔ ہم ویڈیو کالز کے لیے اینڈ ٹو اینڈ انکرپشن، محفوظ شدہ صحت کے ریکارڈ کے لیے AES-256 انکرپشن، اور کلاؤڈ فراہم کنندگان کے ساتھ محفوظ BAA معاہدے استعمال کرتے ہیں۔"
+      },
+      {
+        "question": "پلیٹ فارم پر ڈاکٹر اور مریض کیسے بات چیت کرتے ہیں؟",
+        "answer": "ہم ریئل ٹائم WebRTC ٹیکنالوجی (Twilio یا Vonage جیسے فراہم کنندگان کے ذریعے) کو مربوط کرتے ہیں تاکہ براہ راست براؤزر یا ایپ میں ہموار، ہائی ڈیفینیشن ویڈیو کانفرنسنگ کو فعال کیا جا سکے، مریضوں کو زوم کی طرح بیرونی سافٹ ویئر ڈاؤن لوڈ کرنے کی ضرورت کے بغیر۔"
+      },
+      {
+        "question": "کیا پلیٹ فارم موجودہ EMR/EHR سسٹمز کے ساتھ ضم ہو سکتا ہے؟",
+        "answer": "ہاں۔ ہم HL7 اور FHIR کی انٹرآپریبلٹی معیارات کا استعمال کرتے ہیں تاکہ ٹیلی میڈیسن ایپ کو موجودہ الیکٹرانک میڈیکل ریکارڈ (EMR) سسٹمز (جیسے Epic یا Cerner) کے ساتھ محفوظ طریقے سے جوڑا جا سکے، اس بات کو یقینی بناتے ہوئے کہ مریض کی تاریخ اور مشاورت کے نوٹس خودکار طور پر مطابقت پذیر ہوں۔"
+      },
+      {
+        "question": "کیا پلیٹ فارم الیکٹرانک نسخوں (ای تجویز کرنے) کی حمایت کرتا ہے؟",
+        "answer": "بالکل۔ ہم ای تجویز کرنے والے APIs (جیسے SureScripts) کو مربوط کر سکتے ہیں جس سے ڈاکٹروں کو ورچوئل مشاورت کے فوراً بعد مریض کی مقامی فارمیسی کو براہ راست نسخے محفوظ طریقے سے بھیجنے کی اجازت ملتی ہے۔"
+      },
+      {
+        "question": "ادائیگیوں اور انشورنس کی تصدیق کو کیسے ہینڈل کیا جاتا ہے؟",
+        "answer": "ہم شریک ادائیگیوں کو پیشگی جمع کرنے کے لیے مربوط ادائیگی کے گیٹ ویز (جیسے Stripe for Health) بناتے ہیں۔ ہم صحت کی دیکھ بھال کے کلیئرنگ ہاؤس APIs (جیسے اہل یا ہیلتھ کیئر تبدیل کریں) کے ساتھ بھی مل کر ملاقات سے پہلے ریئل ٹائم مریض کی انشورنس کی اہلیت کی جانچ پڑتال کرتے ہیں۔"
+      },
+      {
+        "question": "حسب ضرورت ٹیلی میڈیسن ایپ بنانے میں کتنا وقت لگتا ہے؟",
+        "answer": "سخت سیکورٹی اور تعمیل کے تقاضوں کی وجہ سے، ویڈیو کانفرنسنگ، شیڈولنگ، اور بنیادی EMR انضمام کے ساتھ ایک مضبوط کسٹم ٹیلی میڈیسن پلیٹ فارم کو تیار ہونے اور سختی سے جانچنے میں عام طور پر 4 سے 6 ماہ لگتے ہیں۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "هل منصات التطبيب عن بعد (telemedicine) الخاصة بكم متوافقة مع HIPAA؟",
+        "answer": "نعم. نقوم بتصميم أنظمة التطبيب عن بعد من الصفر للالتزام بلوائح الرعاية الصحية الصارمة مثل HIPAA (الولايات المتحدة الأمريكية) و GDPR (أوروبا). نحن نستخدم التشفير من طرف إلى طرف لمكالمات الفيديو، وتشفير AES-256 للسجلات الصحية المخزنة، واتفاقيات BAA الآمنة مع مزودي الخدمات السحابية."
+      },
+      {
+        "question": "كيف يتواصل الأطباء والمرضى على المنصة؟",
+        "answer": "نقوم بدمج تقنية WebRTC في الوقت الفعلي (عبر مزودين مثل Twilio أو Vonage) لتمكين عقد مؤتمرات فيديو عالية الدقة وسلسة مباشرة في المتصفح أو التطبيق، دون مطالبة المرضى بتنزيل برامج خارجية مثل Zoom."
+      },
+      {
+        "question": "هل يمكن للمنصة الاندماج مع أنظمة السجلات الطبية الإلكترونية (EMR/EHR) الحالية؟",
+        "answer": "نعم. نحن نستخدم معايير قابلية التشغيل البيني HL7 و FHIR للاتصال الآمن لتطبيق التطبيب عن بعد بأنظمة السجلات الطبية الإلكترونية (EMR) الحالية (مثل Epic أو Cerner)، مما يضمن مزامنة تاريخ المريض وملاحظات الاستشارة تلقائيًا."
+      },
+      {
+        "question": "هل تدعم المنصة الوصفات الطبية الإلكترونية (e-prescribing)؟",
+        "answer": "بالتأكيد. يمكننا دمج واجهات برمجة تطبيقات الوصفات الإلكترونية (مثل SureScripts) التي تتيح للأطباء إرسال الوصفات الطبية بأمان مباشرة إلى الصيدلية المحلية للمريض فورًا بعد الاستشارة الافتراضية."
+      },
+      {
+        "question": "كيف يتم التعامل مع المدفوعات والتحققات من التأمين؟",
+        "answer": "نحن نبني بوابات دفع متكاملة (مثل Stripe for Health) لجمع المدفوعات المشتركة (co-pays) مقدمًا. نتكامل أيضًا مع واجهات برمجة تطبيقات غرف مقاصة الرعاية الصحية (مثل Eligible أو Change Healthcare) لإجراء فحوصات أهلية تأمين المريض في الوقت الفعلي قبل الموعد."
+      },
+      {
+        "question": "ما المدة التي يستغرقها إنشاء تطبيق تطبيب عن بعد مخصص؟",
+        "answer": "نظرًا لمتطلبات الأمان والامتثال الصارمة، عادة ما تستغرق منصة التطبيب عن بعد المخصصة القوية مع مؤتمرات الفيديو، والجدولة، والتكامل الأساسي لـ EMR من 4 إلى 6 أشهر للتطوير والاختبار بدقة."
+      }
+    ]
+  },
+  "multi-tenant-architecture": {
+    "en": [
+      {
+        "question": "What is the difference between multi-tenant and single-tenant architecture?",
+        "answer": "In single-tenant architecture, every customer gets their own dedicated server and database. In multi-tenant architecture, a single instance of the software application and database serves multiple customers (tenants). Multi-tenancy is vastly more cost-effective to scale and maintain."
+      },
+      {
+        "question": "Will other companies be able to see my data?",
+        "answer": "Absolutely not. In a properly designed multi-tenant system, we use Row-Level Security (RLS) in the database. Every piece of data is tagged with a 'tenant_id'. The system automatically intercepts every query, ensuring users can only physically access data that matches their tenant ID."
+      },
+      {
+        "question": "Is multi-tenant architecture cheaper to operate?",
+        "answer": "Yes, significantly. Because infrastructure resources (servers, databases, load balancers) are shared across all tenants, your cloud hosting costs are maximized for efficiency. You avoid paying for idle server time that occurs in single-tenant setups."
+      },
+      {
+        "question": "What happens if one tenant causes a spike in traffic?",
+        "answer": "This is known as the 'noisy neighbor' problem. We mitigate this by implementing strict rate-limiting at the API gateway and utilizing auto-scaling cloud resources. If one tenant acts up, their requests are throttled before they can slow down the app for other tenants."
+      },
+      {
+        "question": "Can we offer custom features to specific tenants?",
+        "answer": "Yes. We use 'Feature Toggles' (feature flags). The codebase contains all features, but we conditionally hide or expose specific UI elements and API routes based on the tenant's subscription tier or custom configuration settings."
+      },
+      {
+        "question": "How difficult is it to migrate from single-tenant to multi-tenant?",
+        "answer": "It is a complex refactoring process. It requires altering the database schema to include tenant identifiers, rewriting API endpoints to enforce tenant filtering, and carefully migrating data from scattered databases into one unified architecture."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Çok kiracılı (multi-tenant) ve tek kiracılı (single-tenant) mimari arasındaki fark nedir?",
+        "answer": "Tek kiracılı mimaride, her müşteri kendi özel sunucusuna ve veritabanına sahip olur. Çok kiracılı mimaride, yazılım uygulamasının ve veritabanının tek bir örneği (instance) birden fazla müşteriye (kiracıya) hizmet verir. Çoklu kiracılığı ölçeklendirmek ve sürdürmek çok daha uygun maliyetlidir."
+      },
+      {
+        "question": "Diğer şirketler verilerimi görebilecek mi?",
+        "answer": "Kesinlikle hayır. Düzgün tasarlanmış çok kiracılı bir sistemde, veritabanında Satır Düzeyinde Güvenlik (RLS) kullanırız. Her veri parçası bir 'tenant_id' ile etiketlenir. Sistem her sorguyu otomatik olarak keserek kullanıcıların yalnızca kiracı kimlikleriyle eşleşen verilere fiziksel olarak erişebilmesini sağlar."
+      },
+      {
+        "question": "Çok kiracılı mimarinin işletilmesi daha mı ucuzdur?",
+        "answer": "Evet, önemli ölçüde. Altyapı kaynakları (sunucular, veritabanları, yük dengeleyiciler) tüm kiracılar arasında paylaşıldığından, bulut barındırma maliyetleriniz verimlilik için en üst düzeye çıkarılır. Tek kiracılı kurulumlarda oluşan boşta geçen sunucu süresi (idle server time) için ödeme yapmaktan kurtulursunuz."
+      },
+      {
+        "question": "Bir kiracı trafikte ani bir artışa neden olursa ne olur?",
+        "answer": "Bu 'gürültülü komşu' (noisy neighbor) sorunu olarak bilinir. API ağ geçidinde katı hız sınırlaması (rate-limiting) uygulayarak ve otomatik ölçeklenen bulut kaynaklarını kullanarak bunu hafifletiyoruz. Bir kiracı aşırı yüklenme yaparsa, diğer kiracılar için uygulamayı yavaşlatmadan önce istekleri kısıtlanır (throttled)."
+      },
+      {
+        "question": "Belirli kiracılara özel özellikler sunabilir miyiz?",
+        "answer": "Evet. 'Özellik Geçişleri' (Feature Toggles/Flags) kullanıyoruz. Kod tabanı tüm özellikleri içerir, ancak kiracının abonelik katmanına veya özel yapılandırma ayarlarına bağlı olarak belirli kullanıcı arayüzü öğelerini ve API yollarını koşullu olarak gizler veya açığa çıkarırız."
+      },
+      {
+        "question": "Tek kiracıdan çok kiracıya geçiş yapmak ne kadar zordur?",
+        "answer": "Karmaşık bir yeniden düzenleme (refactoring) sürecidir. Veritabanı şemasını kiracı tanımlayıcılarını içerecek şekilde değiştirmeyi, kiracı filtrelemesini zorunlu kılmak için API uç noktalarını (endpoints) yeniden yazmayı ve verileri dağınık veritabanlarından birleşik bir mimariye dikkatlice taşımayı gerektirir."
+      }
+    ],
+    "de": [
+      {
+        "question": "Was ist der Unterschied zwischen Multi-Tenant- und Single-Tenant-Architektur?",
+        "answer": "Bei der Single-Tenant-Architektur erhält jeder Kunde einen eigenen dedizierten Server und eine eigene Datenbank. Bei der mandantenfähigen (Multi-Tenant) Architektur bedient eine einzige Instanz der Softwareanwendung und Datenbank mehrere Kunden (Mandanten). Mandantenfähigkeit ist bei Skalierung und Wartung weitaus kostengünstiger."
+      },
+      {
+        "question": "Können andere Unternehmen meine Daten sehen?",
+        "answer": "Absolut nicht. In einem richtig konzipierten mandantenfähigen System verwenden wir Row-Level Security (RLS) in der Datenbank. Jeder Datensatz ist mit einer „tenant_id“ versehen. Das System fängt jede Abfrage automatisch ab und stellt sicher, dass Benutzer physisch nur auf Daten zugreifen können, die mit ihrer Mandanten-ID übereinstimmen."
+      },
+      {
+        "question": "Ist der Betrieb einer mandantenfähigen Architektur kostengünstiger?",
+        "answer": "Ja, deutlich. Da Infrastrukturressourcen (Server, Datenbanken, Load Balancer) von allen Mandanten gemeinsam genutzt werden, werden Ihre Cloud-Hosting-Kosten auf Effizienz maximiert. Sie vermeiden es, für Leerlaufzeiten des Servers zu bezahlen, die bei Single-Tenant-Setups auftreten."
+      },
+      {
+        "question": "Was passiert, wenn ein Mandant einen Anstieg des Datenverkehrs verursacht?",
+        "answer": "Dies ist als „Noisy Neighbor“-Problem bekannt. Wir entschärfen dies, indem wir am API-Gateway strenge Ratenbegrenzungen (Rate-Limiting) implementieren und Auto-Scaling-Cloud-Ressourcen nutzen. Wenn sich ein Mandant auffällig verhält, werden seine Anfragen gedrosselt, bevor er die App für andere Mandanten verlangsamen kann."
+      },
+      {
+        "question": "Können wir bestimmten Mandanten benutzerdefinierte Funktionen anbieten?",
+        "answer": "Ja. Wir verwenden „Feature Toggles“ (Feature Flags). Die Codebasis enthält alle Funktionen, aber wir verbergen oder zeigen bestimmte UI-Elemente und API-Routen bedingt basierend auf der Abonnementstufe oder benutzerdefinierten Konfigurationseinstellungen des Mandanten an."
+      },
+      {
+        "question": "Wie schwierig ist die Migration von Single-Tenant zu Multi-Tenant?",
+        "answer": "Es ist ein komplexer Refactoring-Prozess. Es erfordert die Änderung des Datenbankschemas, um Mandantenkennungen aufzunehmen, die Umschreibung von API-Endpunkten, um die Mandantenfilterung zu erzwingen, und die sorgfältige Migration von Daten aus verstreuten Datenbanken in eine einheitliche Architektur."
+      }
+    ],
+    "ur": [
+      {
+        "question": "ملٹی کرایہ دار اور سنگل کرایہ دار فن تعمیر میں کیا فرق ہے؟",
+        "answer": "سنگل کرایہ دار فن تعمیر میں، ہر گاہک کو اپنا سرشار سرور اور ڈیٹا بیس ملتا ہے۔ ملٹی کرایہ دار فن تعمیر میں، سافٹ ویئر ایپلیکیشن اور ڈیٹا بیس کی ایک مثال متعدد صارفین (کرایہ داروں) کی خدمت کرتی ہے۔ ملٹی کرایہ داری پیمانے اور برقرار رکھنے کے لئے بہت زیادہ سرمایہ کاری مؤثر ہے."
+      },
+      {
+        "question": "کیا دوسری کمپنیاں میرا ڈیٹا دیکھ سکیں گی؟",
+        "answer": "بالکل نہیں۔ مناسب طریقے سے ڈیزائن کردہ ملٹی کرایہ دار نظام میں، ہم ڈیٹا بیس میں رو-لیول سیکیورٹی (RLS) کا استعمال کرتے ہیں۔ ڈیٹا کے ہر ٹکڑے کو 'tenant_id' کے ساتھ ٹیگ کیا جاتا ہے۔ سسٹم خود بخود ہر استفسار کو روکتا ہے، اس بات کو یقینی بناتا ہے کہ صارف جسمانی طور پر صرف اس ڈیٹا تک رسائی حاصل کر سکتے ہیں جو ان کے کرایہ دار کی شناخت سے میل کھاتا ہے۔"
+      },
+      {
+        "question": "کیا ملٹی کرایہ دار فن تعمیر کام کرنے کے لئے سستا ہے؟",
+        "answer": "جی ہاں، نمایاں طور پر. چونکہ بنیادی ڈھانچے کے وسائل (سرورز، ڈیٹا بیس، لوڈ بیلنسر) تمام کرایہ داروں میں شیئر کیے جاتے ہیں، آپ کے کلاؤڈ ہوسٹنگ کے اخراجات کارکردگی کے لیے زیادہ سے زیادہ ہیں۔ آپ بیکار سرور کے وقت کی ادائیگی سے بچتے ہیں جو ایک کرایہ دار کے سیٹ اپ میں ہوتا ہے۔"
+      },
+      {
+        "question": "اگر کوئی کرایہ دار ٹریفک میں اضافے کا سبب بنتا ہے تو کیا ہوتا ہے؟",
+        "answer": "اسے 'شور پڑوسی' کے نام سے جانا جاتا ہے۔ ہم API گیٹ وے پر سخت ریٹ کو محدود کرنے اور کلاؤڈ وسائل کو آٹو اسکیل کرنے کے ذریعے اس کو کم کرتے ہیں۔ اگر کوئی کرایہ دار کام کرتا ہے، تو ان کی درخواستوں کو اس سے پہلے کہ وہ دوسرے کرایہ داروں کے لیے ایپ کو سست کر سکیں روک دیا جاتا ہے۔"
+      },
+      {
+        "question": "کیا ہم مخصوص کرایہ داروں کو اپنی مرضی کے مطابق خصوصیات پیش کر سکتے ہیں؟",
+        "answer": "ہاں۔ ہم 'فیچر ٹوگلز' (فیچر فلیگ) استعمال کرتے ہیں۔ کوڈ بیس میں تمام خصوصیات شامل ہیں، لیکن ہم کرایہ دار کے سبسکرپشن ٹائر یا حسب ضرورت کنفیگریشن سیٹنگز کی بنیاد پر مخصوص UI عناصر اور API کے راستوں کو مشروط طور پر چھپاتے یا ظاہر کرتے ہیں۔"
+      },
+      {
+        "question": "واحد کرایہ دار سے ملٹی کرایہ دار کی طرف ہجرت کرنا کتنا مشکل ہے؟",
+        "answer": "یہ ایک پیچیدہ ری فیکٹرنگ کا عمل ہے۔ کرایہ دار کے شناخت کاروں کو شامل کرنے کے لیے ڈیٹا بیس اسکیما کو تبدیل کرنے کی ضرورت ہوتی ہے، کرایہ دار کی فلٹرنگ کو نافذ کرنے کے لیے API کے اختتامی نقطوں کو دوبارہ لکھنا پڑتا ہے، اور احتیاط سے ڈیٹا کو بکھرے ہوئے ڈیٹا بیس سے ایک متحد فن تعمیر میں منتقل کرنا پڑتا ہے۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "ما الفرق بين البنية متعددة المستأجرين والبنية أحادية المستأجر (single-tenant architecture)؟",
+        "answer": "في البنية أحادية المستأجر، يحصل كل عميل على خادمه المخصص وقاعدة بياناته الخاصة. في البنية متعددة المستأجرين، يخدم مثيل واحد من تطبيق البرنامج وقاعدة البيانات عملاء متعددين (مستأجرين). يعتبر الاستئجار المتعدد أكثر فعالية من حيث التكلفة للتوسع والصيانة."
+      },
+      {
+        "question": "هل ستتمكن الشركات الأخرى من رؤية بياناتي؟",
+        "answer": "مطلقاً. في نظام متعدد المستأجرين مصمم بشكل صحيح، نستخدم الأمان على مستوى الصف (RLS) في قاعدة البيانات. يتم تمييز كل جزء من البيانات بـ 'tenant_id'. يعترض النظام تلقائيًا كل استعلام، مما يضمن وصول المستخدمين فعليًا فقط إلى البيانات التي تتطابق مع معرف المستأجر الخاص بهم."
+      },
+      {
+        "question": "هل تشغيل بنية متعددة المستأجرين أرخص؟",
+        "answer": "نعم، بشكل ملحوظ. نظرًا لأن موارد البنية التحتية (الخوادم، وقواعد البيانات، وموازنات التحميل) مشتركة عبر جميع المستأجرين، يتم زيادة تكاليف الاستضافة السحابية الخاصة بك إلى أقصى حد من الكفاءة. أنت تتجنب الدفع مقابل وقت الخادم الخامل الذي يحدث في إعدادات المستأجر الفردي."
+      },
+      {
+        "question": "ماذا يحدث إذا تسبب أحد المستأجرين في ارتفاع كبير في حركة المرور؟",
+        "answer": "يُعرف هذا بمشكلة 'الجار المزعج' (noisy neighbor). نخفف من ذلك من خلال تنفيذ قيود صارمة على المعدل (rate-limiting) عند بوابة API واستخدام الموارد السحابية ذات التوسع التلقائي. إذا تصرف أحد المستأجرين بشكل مفرط، يتم تقييد طلباته قبل أن تتمكن من إبطاء التطبيق للمستأجرين الآخرين."
+      },
+      {
+        "question": "هل يمكننا تقديم ميزات مخصصة لمستأجرين محددين؟",
+        "answer": "نعم. نستخدم 'مبدلات الميزات' (Feature Toggles / Feature flags). تحتوي قاعدة البيانات البرمجية على جميع الميزات، ولكننا نقوم بشروط بإخفاء أو كشف عناصر معينة في واجهة المستخدم وطرق API بناءً على مستوى اشتراك المستأجر أو إعدادات التكوين المخصصة."
+      },
+      {
+        "question": "ما مدى صعوبة الانتقال من مستأجر واحد إلى مستأجرين متعددين؟",
+        "answer": "إنها عملية إعادة هيكلة معقدة. إنها تتطلب تغيير مخطط قاعدة البيانات ليشمل معرفات المستأجرين، وإعادة كتابة نقاط نهاية API لفرض تصفية المستأجر، وترحيل البيانات بعناية من قواعد البيانات المتناثرة إلى بنية واحدة موحدة."
+      }
+    ]
+  },
+  "webflow-development": {
+    "en": [
+      {
+        "question": "Why should we choose Webflow over WordPress?",
+        "answer": "Webflow produces much cleaner, semantic code without relying on bloated plugins. This results in significantly faster page load times, inherently better SEO, zero database vulnerability issues, and allows for highly complex, customized visual animations that WordPress struggles with."
+      },
+      {
+        "question": "Can Webflow handle e-commerce?",
+        "answer": "Yes, Webflow has built-in e-commerce capabilities suitable for small to medium-sized stores. You can customize the entire checkout flow and cart design. However, for highly complex stores with massive inventories, we often pair Webflow (frontend) with Shopify (backend) using headless architecture."
+      },
+      {
+        "question": "Is a Webflow site good for SEO?",
+        "answer": "Webflow is exceptionally good for SEO. It gives us total control over semantic HTML tags, meta descriptions, 301 redirects, and open graph settings. Because it generates clean code and uses a global CDN, Webflow sites naturally score very high on Google's Core Web Vitals."
+      },
+      {
+        "question": "Will our marketing team be able to update the site without a developer?",
+        "answer": "Absolutely. Webflow features a powerful, intuitive CMS Editor that is separate from the Designer view. Your marketing team can easily publish blog posts, update team members, or change copy and images without accidentally breaking the site's layout."
+      },
+      {
+        "question": "Can you migrate our current website to Webflow?",
+        "answer": "Yes. We frequently migrate sites from WordPress, Wix, or Squarespace to Webflow. We ensure all your content is mapped to the new CMS, and we set up 301 redirects for every old URL so you don't lose any of your hard-earned SEO ranking."
+      },
+      {
+        "question": "How long does a custom Webflow build take?",
+        "answer": "A standard marketing website (5-10 pages) typically takes 3 to 5 weeks from design handoff to launch. Larger corporate sites or complex Webflow e-commerce builds can take 6 to 8 weeks to ensure perfect responsiveness and custom animations."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Neden WordPress yerine Webflow'u seçmeliyiz?",
+        "answer": "Webflow, şişirilmiş eklentilere güvenmeden çok daha temiz, anlamsal (semantic) kod üretir. Bu, sayfa yükleme sürelerinin önemli ölçüde daha hızlı olmasını, doğal olarak daha iyi SEO'yu, sıfır veritabanı güvenlik açığı sorununu sağlar ve WordPress'in zorlandığı son derece karmaşık, özelleştirilmiş görsel animasyonlara olanak tanır."
+      },
+      {
+        "question": "Webflow e-ticareti yönetebilir mi?",
+        "answer": "Evet, Webflow, küçük ve orta ölçekli mağazalar için uygun yerleşik e-ticaret özelliklerine sahiptir. Tüm ödeme akışını ve sepet tasarımını özelleştirebilirsiniz. Ancak, devasa envanterlere sahip son derece karmaşık mağazalar için, genellikle headless mimari kullanarak Webflow'u (ön uç) Shopify (arka uç) ile eşleştiriyoruz."
+      },
+      {
+        "question": "Bir Webflow sitesi SEO için iyi midir?",
+        "answer": "Webflow, SEO için son derece iyidir. Anlamsal HTML etiketleri, meta açıklamalar, 301 yönlendirmeleri ve açık grafik (open graph) ayarları üzerinde bize tam kontrol sağlar. Temiz kod ürettiği ve küresel bir CDN kullandığı için Webflow siteleri Google'ın Önemli Web Verileri (Core Web Vitals) metriklerinde doğal olarak çok yüksek puan alır."
+      },
+      {
+        "question": "Pazarlama ekibimiz siteyi bir geliştirici olmadan güncelleyebilecek mi?",
+        "answer": "Kesinlikle. Webflow, Tasarımcı (Designer) görünümünden ayrı, güçlü ve sezgisel bir CMS Düzenleyiciye sahiptir. Pazarlama ekibiniz, sitenin düzenini yanlışlıkla bozmadan kolayca blog gönderileri yayınlayabilir, ekip üyelerini güncelleyebilir veya metin ve görselleri değiştirebilir."
+      },
+      {
+        "question": "Mevcut web sitemizi Webflow'a taşıyabilir misiniz?",
+        "answer": "Evet. Siteleri sık sık WordPress, Wix veya Squarespace'den Webflow'a taşıyoruz. Tüm içeriğinizin yeni CMS'ye eşlenmesini sağlıyoruz ve zor kazanılmış SEO sıralamanızı kaybetmemeniz için her eski URL için 301 yönlendirmeleri kuruyoruz."
+      },
+      {
+        "question": "Özel bir Webflow yapımı ne kadar sürer?",
+        "answer": "Standart bir pazarlama web sitesi (5-10 sayfa), tasarım tesliminden lansmana kadar genellikle 3 ila 5 hafta sürer. Mükemmel yanıt verebilirlik (responsiveness) ve özel animasyonlar sağlamak için daha büyük kurumsal siteler veya karmaşık Webflow e-ticaret yapıları 6 ila 8 hafta sürebilir."
+      }
+    ],
+    "de": [
+      {
+        "question": "Warum sollten wir Webflow statt WordPress wählen?",
+        "answer": "Webflow erzeugt viel saubereren, semantischen Code, ohne auf aufgeblähte Plugins angewiesen zu sein. Dies führt zu deutlich schnelleren Seitenladezeiten, von Natur aus besserer SEO, null Problemen mit Datenbank-Schwachstellen und ermöglicht hochkomplexe, maßgeschneiderte visuelle Animationen, mit denen WordPress zu kämpfen hat."
+      },
+      {
+        "question": "Kann Webflow E-Commerce abwickeln?",
+        "answer": "Ja, Webflow verfügt über integrierte E-Commerce-Funktionen, die für kleine bis mittelgroße Geschäfte geeignet sind. Sie können den gesamten Checkout-Ablauf und das Warenkorbdesign anpassen. Für hochkomplexe Geschäfte mit riesigen Lagerbeständen koppeln wir Webflow (Frontend) jedoch häufig mit Shopify (Backend) unter Verwendung einer Headless-Architektur."
+      },
+      {
+        "question": "Ist eine Webflow-Site gut für SEO?",
+        "answer": "Webflow ist außergewöhnlich gut für SEO. Es gibt uns die vollständige Kontrolle über semantische HTML-Tags, Meta-Beschreibungen, 301-Weiterleitungen und Open-Graph-Einstellungen. Da Webflow sauberen Code generiert und ein globales CDN verwendet, erzielen Webflow-Sites bei Googles Core Web Vitals von Natur aus sehr hohe Punktzahlen."
+      },
+      {
+        "question": "Wird unser Marketingteam die Website ohne einen Entwickler aktualisieren können?",
+        "answer": "Absolut. Webflow verfügt über einen leistungsstarken, intuitiven CMS-Editor, der von der Designer-Ansicht getrennt ist. Ihr Marketingteam kann ganz einfach Blogbeiträge veröffentlichen, Teammitglieder aktualisieren oder Texte und Bilder ändern, ohne versehentlich das Layout der Website zu zerstören."
+      },
+      {
+        "question": "Können Sie unsere aktuelle Website zu Webflow migrieren?",
+        "answer": "Ja. Wir migrieren regelmäßig Websites von WordPress, Wix oder Squarespace zu Webflow. Wir stellen sicher, dass alle Ihre Inhalte dem neuen CMS zugeordnet werden, und wir richten 301-Weiterleitungen für jede alte URL ein, damit Sie keines Ihrer hart erarbeiteten SEO-Rankings verlieren."
+      },
+      {
+        "question": "Wie lange dauert ein benutzerdefinierter Webflow-Aufbau?",
+        "answer": "Eine Standard-Marketing-Website (5-10 Seiten) dauert in der Regel 3 bis 5 Wochen von der Designübergabe bis zum Start. Größere Unternehmensseiten oder komplexe Webflow-E-Commerce-Builds können 6 bis 8 Wochen dauern, um eine perfekte Reaktionsfähigkeit (Responsiveness) und benutzerdefinierte Animationen zu gewährleisten."
+      }
+    ],
+    "ur": [
+      {
+        "question": "ہمیں ورڈپریس کے اوپر ویب فلو کا انتخاب کیوں کرنا چاہیے؟",
+        "answer": "ویب فلو بلوٹڈ پلگ انز پر انحصار کیے بغیر بہت صاف، سیمنٹک کوڈ تیار کرتا ہے۔ اس کے نتیجے میں صفحہ لوڈ ہونے کے اوقات نمایاں طور پر تیز ہوتے ہیں، فطری طور پر بہتر SEO، صفر ڈیٹا بیس کے خطرے کے مسائل، اور انتہائی پیچیدہ، اپنی مرضی کے مطابق بصری متحرک تصاویر کی اجازت دیتا ہے جن کے ساتھ ورڈپریس جدوجہد کرتا ہے۔"
+      },
+      {
+        "question": "کیا Webflow ای کامرس کو سنبھال سکتا ہے؟",
+        "answer": "جی ہاں، Webflow میں بلٹ ان ای کامرس کی صلاحیتیں ہیں جو چھوٹے سے درمیانے درجے کے اسٹورز کے لیے موزوں ہیں۔ آپ پورے چیک آؤٹ کے بہاؤ اور کارٹ کے ڈیزائن کو اپنی مرضی کے مطابق بنا سکتے ہیں۔ تاہم، بڑے پیمانے پر انوینٹری والے انتہائی پیچیدہ اسٹورز کے لیے، ہم اکثر ہیڈ لیس فن تعمیر کا استعمال کرتے ہوئے Shopify (پس منظر) کے ساتھ Webflow (فرنٹ اینڈ) کا جوڑا بناتے ہیں۔"
+      },
+      {
+        "question": "کیا ویب فلو سائٹ SEO کے لیے اچھی ہے؟",
+        "answer": "ویب فلو SEO کے لیے غیر معمولی طور پر اچھا ہے۔ یہ ہمیں سیمنٹک ایچ ٹی ایم ایل ٹیگز، میٹا ڈسکرپشنز، 301 ری ڈائریکٹس، اور اوپن گراف سیٹنگز پر مکمل کنٹرول فراہم کرتا ہے۔ چونکہ یہ کلین کوڈ بناتا ہے اور ایک عالمی CDN استعمال کرتا ہے، اس لیے Webflow سائٹس قدرتی طور پر Google کے Core Web Vitals پر بہت زیادہ اسکور کرتی ہیں۔"
+      },
+      {
+        "question": "کیا ہماری مارکیٹنگ ٹیم بغیر کسی ڈویلپر کے سائٹ کو اپ ڈیٹ کر سکے گی؟",
+        "answer": "بالکل۔ ویب فلو میں ایک طاقتور، بدیہی CMS ایڈیٹر موجود ہے جو ڈیزائنر ویو سے الگ ہے۔ آپ کی مارکیٹنگ ٹیم سائٹ کے لے آؤٹ کو غلطی سے توڑے بغیر آسانی سے بلاگ پوسٹس، ٹیم کے اراکین کو اپ ڈیٹ یا کاپی اور امیجز کو تبدیل کر سکتی ہے۔"
+      },
+      {
+        "question": "کیا آپ ہماری موجودہ ویب سائٹ کو ویب فلو پر منتقل کر سکتے ہیں؟",
+        "answer": "ہاں۔ ہم کثرت سے سائٹس کو WordPress، Wix، یا Squarespace سے Webflow پر منتقل کرتے ہیں۔ ہم اس بات کو یقینی بناتے ہیں کہ آپ کے تمام مواد کو نئے CMS پر میپ کیا گیا ہے، اور ہم ہر پرانے URL کے لیے 301 ری ڈائریکٹس سیٹ کرتے ہیں تاکہ آپ اپنی محنت سے کمائی گئی SEO کی درجہ بندی سے محروم نہ ہوں۔"
+      },
+      {
+        "question": "ایک حسب ضرورت ویب فلو کی تعمیر میں کتنا وقت لگتا ہے؟",
+        "answer": "ایک معیاری مارکیٹنگ ویب سائٹ (5-10 صفحات) کو ڈیزائن ہینڈ آف سے لانچ ہونے تک عام طور پر 3 سے 5 ہفتے لگتے ہیں۔ کامل ردعمل اور اپنی مرضی کے مطابق متحرک تصاویر کو یقینی بنانے کے لیے کارپوریٹ کی بڑی سائٹس یا پیچیدہ ویب فلو ای کامرس کی تعمیر میں 6 سے 8 ہفتے لگ سکتے ہیں۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "لماذا يجب أن نختار Webflow على WordPress؟",
+        "answer": "ينتج Webflow رمزًا (كود) أكثر نظافة ودلالية (semantic) دون الاعتماد على المكونات الإضافية (plugins) المتضخمة. ينتج عن هذا أوقات تحميل أسرع بكثير للصفحة، وتحسين محركات البحث (SEO) أفضل بطبيعته، وعدم وجود مشكلات ضعف في قاعدة البيانات، ويسمح بالرسوم المتحركة المرئية المعقدة والمخصصة للغاية التي يعاني منها WordPress."
+      },
+      {
+        "question": "هل يمكن لـ Webflow التعامل مع التجارة الإلكترونية؟",
+        "answer": "نعم، يحتوي Webflow على إمكانات تجارة إلكترونية مدمجة ومناسبة للمتاجر الصغيرة إلى المتوسطة الحجم. يمكنك تخصيص تدفق الدفع بأكمله وتصميم سلة التسوق. ومع ذلك، بالنسبة للمتاجر المعقدة للغاية ذات المخزونات الضخمة، نقوم غالبًا بربط Webflow (كواجهة أمامية) مع Shopify (كواجهة خلفية) باستخدام بنية منفصلة (headless)."
+      },
+      {
+        "question": "هل موقع Webflow جيد لتحسين محركات البحث (SEO)؟",
+        "answer": "Webflow جيد بشكل استثنائي في مجال تحسين محركات البحث. يمنحنا تحكمًا كاملاً في علامات HTML الدلالية، والأوصاف التعريفية، وعمليات إعادة التوجيه 301، وإعدادات الرسم البياني المفتوح (open graph). ولأنه يولد كودًا نظيفًا ويستخدم شبكة توصيل محتوى عالمية (CDN)، فإن مواقع Webflow تسجل بطبيعتها درجات عالية جدًا في Core Web Vitals من Google."
+      },
+      {
+        "question": "هل سيتمكن فريق التسويق لدينا من تحديث الموقع دون الاستعانة بمطور؟",
+        "answer": "بالتأكيد. يتميز Webflow بمحرر CMS قوي وبديهي منفصل عن عرض المصمم (Designer view). يمكن لفريق التسويق الخاص بك نشر منشورات المدونة بسهولة أو تحديث أعضاء الفريق أو تغيير النسخة والصور دون كسر تخطيط الموقع عن طريق الخطأ."
+      },
+      {
+        "question": "هل يمكنكم ترحيل موقعنا الحالي إلى Webflow؟",
+        "answer": "نعم. نقوم بشكل متكرر بترحيل المواقع من WordPress أو Wix أو Squarespace إلى Webflow. نضمن تعيين جميع محتوياتك إلى نظام إدارة المحتوى (CMS) الجديد، ونقوم بإعداد عمليات إعادة التوجيه 301 لكل عنوان URL قديم حتى لا تفقد أيًا من تصنيف SEO الذي حصلت عليه بصعوبة."
+      },
+      {
+        "question": "كم من الوقت يستغرق بناء Webflow مخصص؟",
+        "answer": "عادة ما يستغرق موقع التسويق القياسي (5-10 صفحات) من 3 إلى 5 أسابيع من تسليم التصميم إلى الإطلاق. يمكن أن تستغرق مواقع الشركات الكبيرة أو بنيات التجارة الإلكترونية المعقدة في Webflow من 6 إلى 8 أسابيع لضمان الاستجابة المثالية (responsiveness) والرسوم المتحركة المخصصة."
+      }
+    ]
+  },
+  "unity-game-development": {
+    "en": [
+      {
+        "question": "Why use Unity for game development instead of Unreal Engine?",
+        "answer": "Unity is exceptionally versatile and is the undisputed leader for mobile games (iOS/Android), 2D games, and cross-platform casual games. While Unreal excels at ultra-high-fidelity 3D graphics for PC/Console, Unity's C# scripting and rapid prototyping make it more cost-effective for most mobile and indie titles."
+      },
+      {
+        "question": "Can you build games that run on multiple platforms?",
+        "answer": "Yes. Unity is a cross-platform engine. We can develop your game once and deploy it seamlessly to iOS, Android, PC, Mac, consoles (Nintendo Switch, Xbox, PlayStation), and even WebGL to run directly in a browser."
+      },
+      {
+        "question": "Do you provide 3D modeling and animation services?",
+        "answer": "Yes. Our studio includes technical artists, 3D modelers, and animators. Whether your game requires low-poly 3D models for mobile optimization, hand-drawn 2D sprites, or rigged humanoid characters, we can create the assets in-house."
+      },
+      {
+        "question": "How do you implement multiplayer functionality in Unity?",
+        "answer": "We use robust networking frameworks depending on the game type. For real-time, fast-paced action games we often use Photon (PUN 2 or Quantum). For server-authoritative MMOs or turn-based games, we might build custom Node.js/C# backends communicating via WebSockets or UDP."
+      },
+      {
+        "question": "How can we monetize our Unity game?",
+        "answer": "We integrate multiple monetization strategies: In-App Purchases (IAP) for virtual goods, ad networks (Unity Ads, AdMob) for rewarded video or banner ads, or we can integrate Web3 SDKs if you want to monetize via blockchain tokens or NFTs."
+      },
+      {
+        "question": "How long does it take to develop a Unity game?",
+        "answer": "A simple hyper-casual 2D mobile game can be built in 4 to 8 weeks. A mid-core 3D multiplayer game with progression systems and in-app economies typically requires 6 to 12 months of development, balancing, and rigorous playtesting."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Oyun geliştirme için neden Unreal Engine yerine Unity kullanmalıyım?",
+        "answer": "Unity son derece çok yönlüdür ve mobil oyunlar (iOS/Android), 2B oyunlar ve çapraz platform günlük oyunlar için tartışmasız liderdir. Unreal, PC/Konsol için ultra yüksek kaliteli 3B grafiklerde üstünlük sağlarken, Unity'nin C# komut dosyası ve hızlı prototiplemesi, çoğu mobil ve bağımsız oyunlar için onu daha uygun maliyetli hale getirir."
+      },
+      {
+        "question": "Birden fazla platformda çalışan oyunlar yapabilir misiniz?",
+        "answer": "Evet. Unity çapraz platformlu bir motordur. Oyununuzu bir kez geliştirip iOS, Android, PC, Mac, konsollar (Nintendo Switch, Xbox, PlayStation) ve hatta doğrudan tarayıcıda çalışması için WebGL'ye sorunsuz bir şekilde dağıtabiliriz."
+      },
+      {
+        "question": "3B modelleme ve animasyon hizmetleri sunuyor musunuz?",
+        "answer": "Evet. Stüdyomuz teknik sanatçıları, 3B modelleyicileri ve animatörleri bünyesinde barındırır. Oyununuz ister mobil optimizasyon için düşük poligonlu (low-poly) 3B modellere, ister elle çizilmiş 2B hareketli grafiklere (sprites) veya donatılmış insansı (rigged humanoid) karakterlere ihtiyaç duysun, bu varlıkları şirket içinde oluşturabiliriz."
+      },
+      {
+        "question": "Unity'de çok oyunculu (multiplayer) işlevini nasıl uyguluyorsunuz?",
+        "answer": "Oyun türüne bağlı olarak sağlam ağ çerçeveleri kullanıyoruz. Gerçek zamanlı, hızlı tempolu aksiyon oyunları için genellikle Photon (PUN 2 veya Quantum) kullanıyoruz. Sunucu yetkili MMO'lar veya sıra tabanlı oyunlar için, WebSockets veya UDP aracılığıyla iletişim kuran özel Node.js/C# arka uçları oluşturabiliriz."
+      },
+      {
+        "question": "Unity oyunumuzdan nasıl para kazanabiliriz?",
+        "answer": "Birden fazla para kazanma stratejisini entegre ediyoruz: Sanal ürünler için Uygulama İçi Satın Alımlar (IAP), ödüllü video veya afiş reklamlar için reklam ağları (Unity Ads, AdMob) veya blokzinciri tokenleri veya NFT'ler aracılığıyla para kazanmak istiyorsanız Web3 SDK'larını entegre edebiliriz."
+      },
+      {
+        "question": "Bir Unity oyunu geliştirmek ne kadar sürer?",
+        "answer": "Basit bir hiper-gündelik (hyper-casual) 2B mobil oyun 4 ila 8 hafta içinde oluşturulabilir. İlerleme sistemleri ve uygulama içi ekonomileri olan orta çekirdek (mid-core) bir 3B çok oyunculu oyun genellikle 6 ila 12 aylık geliştirme, dengeleme ve titiz oyun testi gerektirir."
+      }
+    ],
+    "de": [
+      {
+        "question": "Warum sollte man Unity für die Spieleentwicklung anstelle der Unreal Engine verwenden?",
+        "answer": "Unity ist außergewöhnlich vielseitig und der unangefochtene Marktführer für Handyspiele (iOS/Android), 2D-Spiele und plattformübergreifende Gelegenheitsspiele. Während Unreal bei ultrahochpräzisen 3D-Grafiken für PC/Konsolen glänzt, machen Unitys C#-Scripting und schnelles Prototyping es für die meisten Mobile- und Indie-Titel kostengünstiger."
+      },
+      {
+        "question": "Können Sie Spiele entwickeln, die auf mehreren Plattformen laufen?",
+        "answer": "Ja. Unity ist eine plattformübergreifende Engine. Wir können Ihr Spiel einmal entwickeln und es nahtlos auf iOS, Android, PC, Mac, Konsolen (Nintendo Switch, Xbox, PlayStation) und sogar WebGL bereitstellen, um es direkt im Browser auszuführen."
+      },
+      {
+        "question": "Bieten Sie 3D-Modellierungs- und Animationsdienste an?",
+        "answer": "Ja. Zu unserem Studio gehören Technical Artists, 3D-Modellierer und Animatoren. Unabhängig davon, ob Ihr Spiel Low-Poly-3D-Modelle für die mobile Optimierung, handgezeichnete 2D-Sprites oder geriggte humanoide Charaktere benötigt, wir können die Assets im eigenen Haus erstellen."
+      },
+      {
+        "question": "Wie implementiert man Multiplayer-Funktionen in Unity?",
+        "answer": "Je nach Spieltyp nutzen wir robuste Netzwerk-Frameworks. Für rasante Echtzeit-Actionspiele verwenden wir häufig Photon (PUN 2 oder Quantum). Für serverautoritative MMOs oder rundenbasierte Spiele könnten wir benutzerdefinierte Node.js/C#-Backends erstellen, die über WebSockets oder UDP kommunizieren."
+      },
+      {
+        "question": "Wie können wir unser Unity-Spiel monetarisieren?",
+        "answer": "Wir integrieren mehrere Monetarisierungsstrategien: In-App-Käufe (IAP) für virtuelle Güter, Werbenetzwerke (Unity Ads, AdMob) für belohnte Video- oder Bannerwerbung, oder wir können Web3-SDKs integrieren, wenn Sie über Blockchain-Tokens oder NFTs monetarisieren möchten."
+      },
+      {
+        "question": "Wie lange dauert die Entwicklung eines Unity-Spiels?",
+        "answer": "Ein einfaches hyper-casual 2D-Handyspiel kann in 4 bis 8 Wochen entwickelt werden. Ein Mid-Core-3D-Multiplayer-Spiel mit Progressionssystemen und In-App-Ökonomien erfordert in der Regel 6 bis 12 Monate für Entwicklung, Balancing und strenge Spieltests."
+      }
+    ],
+    "ur": [
+      {
+        "question": "غیر حقیقی انجن کے بجائے گیم ڈیولپمنٹ کے لیے یونٹی کیوں استعمال کریں؟",
+        "answer": "Unity غیر معمولی طور پر ورسٹائل ہے اور موبائل گیمز (iOS/Android)، 2D گیمز، اور کراس پلیٹ فارم کی آرام دہ گیمز کے لیے غیر متنازعہ رہنما ہے۔ جبکہ غیر حقیقی PC/Console کے لیے الٹرا ہائی فیڈیلیٹی 3D گرافکس میں مہارت رکھتا ہے، یونیٹی کی C# اسکرپٹنگ اور تیز رفتار پروٹو ٹائپنگ اسے زیادہ تر موبائل اور انڈی ٹائٹلز کے لیے زیادہ لاگت سے موثر بناتی ہے۔"
+      },
+      {
+        "question": "کیا آپ ایسے کھیل بنا سکتے ہیں جو متعدد پلیٹ فارمز پر چلتے ہیں؟",
+        "answer": "جی ہاں، اتحاد ایک کراس پلیٹ فارم انجن ہے۔ ہم آپ کے گیم کو ایک بار تیار کر سکتے ہیں اور اسے بغیر کسی رکاوٹ کے iOS، Android، PC، Mac، consoles (Nintendo Switch, Xbox, PlayStation) اور یہاں تک کہ WebGL میں براہ راست براؤزر میں چلانے کے لیے تعینات کر سکتے ہیں۔"
+      },
+      {
+        "question": "کیا آپ 3D ماڈلنگ اور اینیمیشن کی خدمات فراہم کرتے ہیں؟",
+        "answer": "ہاں۔ ہمارے اسٹوڈیو میں تکنیکی فنکار، 3D ماڈلرز اور اینیمیٹر شامل ہیں۔ چاہے آپ کے گیم کو موبائل آپٹیمائزیشن کے لیے کم پولی 3D ماڈلز، ہاتھ سے تیار کردہ 2D اسپرائٹس، یا دھاندلی والے ہیومنائیڈ کرداروں کی ضرورت ہو، ہم گھر میں موجود اثاثے بنا سکتے ہیں۔"
+      },
+      {
+        "question": "آپ اتحاد میں ملٹی پلیئر کی فعالیت کو کیسے نافذ کرتے ہیں؟",
+        "answer": "ہم گیم کی قسم کے لحاظ سے مضبوط نیٹ ورکنگ فریم ورک استعمال کرتے ہیں۔ حقیقی وقت میں، تیز رفتار ایکشن گیمز کے لیے ہم اکثر فوٹوون (PUN 2 یا کوانٹم) استعمال کرتے ہیں۔ سرور کے مستند ایم ایم اوز یا باری پر مبنی گیمز کے لیے، ہم اپنی مرضی کے مطابق Node.js/C# پس منظر بنا سکتے ہیں جو WebSockets یا UDP کے ذریعے بات چیت کرتے ہیں۔"
+      },
+      {
+        "question": "ہم اپنے یونٹی گیم کو کیسے مونیٹائز کر سکتے ہیں؟",
+        "answer": "ہم متعدد منیٹائزیشن کی حکمت عملیوں کو مربوط کرتے ہیں: ورچوئل سامان کے لیے درون ایپ خریداریاں (IAP)، انعام یافتہ ویڈیو یا بینر اشتہارات کے لیے اشتہاری نیٹ ورکس (یونٹی اشتہارات، ایڈموب)، یا اگر آپ بلاکچین ٹوکنز یا NFTs کے ذریعے رقم کمانا چاہتے ہیں تو ہم Web3 SDKs کو ضم کر سکتے ہیں۔"
+      },
+      {
+        "question": "اتحاد کا کھیل تیار کرنے میں کتنا وقت لگتا ہے؟",
+        "answer": "ایک سادہ ہائپر آرام دہ 2D موبائل گیم 4 سے 8 ہفتوں میں بنایا جا سکتا ہے۔ پروگریشن سسٹم اور درون ایپ اکانومی کے ساتھ مڈ کور 3D ملٹی پلیئر گیم کو عام طور پر ترقی، توازن، اور سخت پلے ٹیسٹنگ کے 6 سے 12 ماہ درکار ہوتے ہیں۔"
+      }
+    ],
+    "ar": [
+      {
+        "question": "لماذا يجب استخدام Unity لتطوير الألعاب بدلاً من Unreal Engine؟",
+        "answer": "تتميز Unity بتعدد استخداماتها بشكل استثنائي وهي الرائدة بلا منازع لألعاب الهاتف المحمول (iOS/Android)، والألعاب ثنائية الأبعاد، والألعاب غير الرسمية (casual games) عبر الأنظمة الأساسية. في حين أن Unreal يتفوق في الرسومات ثلاثية الأبعاد فائقة الدقة لأجهزة الكمبيوتر/وحدة التحكم، فإن البرمجة النصية C# والنماذج الأولية السريعة في Unity تجعله أكثر فعالية من حيث التكلفة لمعظم عناوين الأجهزة المحمولة والألعاب المستقلة (indie)."
+      },
+      {
+        "question": "هل يمكنك بناء ألعاب تعمل على منصات متعددة؟",
+        "answer": "نعم. Unity هو محرك عبر الأنظمة الأساسية. يمكننا تطوير لعبتك مرة واحدة ونشرها بسلاسة على أنظمة iOS و Android والكمبيوتر الشخصي و Mac ووحدات التحكم (Nintendo Switch و Xbox و PlayStation) وحتى WebGL للتشغيل مباشرة في المتصفح."
+      },
+      {
+        "question": "هل تقدمون خدمات النمذجة والرسوم المتحركة ثلاثية الأبعاد (3D)؟",
+        "answer": "نعم. يضم الاستوديو الخاص بنا فنانين تقنيين ومصممي نماذج ثلاثية الأبعاد ورسامي رسوم متحركة. سواء كانت لعبتك تتطلب نماذج 3D منخفضة المضلعات (low-poly) لتحسين الأجهزة المحمولة، أو رسوم متحركة ثنائية الأبعاد مرسومة يدويًا، أو شخصيات بشرية متحركة (rigged)، يمكننا إنشاء الأصول داخليًا."
+      },
+      {
+        "question": "كيف تطبقون وظائف تعدد اللاعبين (multiplayer) في Unity؟",
+        "answer": "نستخدم أطر عمل شبكات قوية اعتمادًا على نوع اللعبة. بالنسبة لألعاب الحركة السريعة في الوقت الفعلي، غالبًا ما نستخدم Photon (PUN 2 أو Quantum). بالنسبة لألعاب MMO المعتمدة على الخادم أو الألعاب القائمة على تبادل الأدوار، قد نقوم ببناء خلفيات Node.js/C# مخصصة تتواصل عبر WebSockets أو UDP."
+      },
+      {
+        "question": "كيف يمكننا استثمار لعبتنا على Unity (تحقيق الدخل)؟",
+        "answer": "نحن ندمج استراتيجيات متعددة لتحقيق الدخل: عمليات الشراء داخل التطبيق (IAP) للسلع الافتراضية، أو شبكات الإعلانات (Unity Ads، AdMob) لمقاطع الفيديو أو إعلانات البانر بمكافأة، أو يمكننا دمج حزم تطوير البرامج (SDKs) الخاصة بـ Web3 إذا كنت ترغب في تحقيق الدخل عبر رموز البلوكتشين أو NFTs."
+      },
+      {
+        "question": "كم من الوقت يستغرق تطوير لعبة Unity؟",
+        "answer": "يمكن بناء لعبة محمولة بسيطة للغاية (hyper-casual) ثنائية الأبعاد في غضون 4 إلى 8 أسابيع. تتطلب اللعبة ثلاثية الأبعاد متعددة اللاعبين متوسطة التعقيد (mid-core) مع أنظمة التقدم والاقتصاد داخل التطبيق عادةً من 6 إلى 12 شهرًا من التطوير والموازنة واختبار اللعب الصارم."
+      }
+    ]
+  }
+}
