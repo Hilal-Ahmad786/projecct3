@@ -1,17 +1,12 @@
 'use client';
 
-import { motion, useScroll, useTransform } from 'framer-motion';
-import Breadcrumbs from '@/components/Breadcrumbs';
+import { motion } from 'framer-motion';
 import { toHeritageHex } from '@/lib/heritage-accents';
 import LocalizedLink from '@/components/LocalizedLink';
-import { useRef } from 'react';
-import { CheckIcon, ArrowRightIcon, SparklesIcon } from '@heroicons/react/24/outline';
-import {
-  SubPageBgPattern,
-  FloatingDecorations,
-  SubPageHeroVisual,
-  type SubPageAnimation
-} from '@/components/services/subpage-animations';
+import { CheckIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
+import { type SubPageAnimation } from '@/components/services/subpage-animations';
+import InternalPageHero from '@/components/services/InternalPageHero';
+import { FeaturesScene } from '@/components/services/hero-visuals/scenes-internal';
 import { useTranslations } from '@/hooks/useTranslations';
 
 interface FeaturesPageClientProps {
@@ -33,14 +28,6 @@ export default function FeaturesPageClient({
   locale
 }: FeaturesPageClientProps) {
   const { t } = useTranslations();
-  const containerRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ['start start', 'end start']
-  });
-
-  const heroOpacity = useTransform(scrollYProgress, [0, 0.3], [1, 0]);
-  const heroScale = useTransform(scrollYProgress, [0, 0.3], [1, 0.95]);
 
   // Get animation config or use defaults for features page
   const rawConfig = animation || {
@@ -54,132 +41,20 @@ export default function FeaturesPageClient({
   const config = { ...rawConfig, primaryColor: toHeritageHex(rawConfig.primaryColor), secondaryColor: rawConfig.secondaryColor ? toHeritageHex(rawConfig.secondaryColor) : undefined };
 
   return (
-    <div ref={containerRef} className="min-h-screen bg-white">
-      {/* Hero Section with Service-Specific Animation */}
-      <section className="relative min-h-[80vh] pt-[140px] pb-24 overflow-hidden">
-        {/* Background Pattern */}
-        <SubPageBgPattern pattern={config.bgPattern} opacity={0.06} />
-
-        {/* Floating Decorations */}
-        <FloatingDecorations type={config.decorations} accentColor={config.primaryColor} />
-
-        {/* Hero Visual - Large and Prominent */}
-        <div className="absolute right-[2%] top-1/2 -translate-y-1/2 hidden xl:block">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8, x: 100 }}
-            animate={{ opacity: 1, scale: 1, x: 0 }}
-            transition={{ duration: 1, ease: [0.4, 0, 0.2, 1] }}
-          >
-            <SubPageHeroVisual
-              type={config.heroVisual}
-              motionType={config.motion}
-              primaryColor={config.primaryColor}
-              secondaryColor={config.secondaryColor}
-            />
-          </motion.div>
-        </div>
-
-        {/* Animated Accent Elements */}
-        <motion.div
-          animate={{ rotate: 360 }}
-          transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
-          className="absolute top-40 right-[45%] w-64 h-64 border border-gray-100 rounded-full hidden lg:block"
-        />
-        <motion.div
-          animate={{ scale: [1, 1.1, 1] }}
-          transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-          className="absolute bottom-32 right-[35%] w-4 h-4 rounded-full hidden lg:block"
-          style={{ backgroundColor: config.primaryColor }}
-        />
-
-        {/* Breadcrumb - Outside fading container */}
-        <div className="container mx-auto px-4 relative z-20 mb-8">
-          <Breadcrumbs items={[
-            { label: t('navbar.home') as string, href: '/' },
-            { label: t('services.detail.breadcrumb.services') as string, href: '/services' },
-            { label: serviceName, href: `/services/${serviceSlug}` },
-            { label: t('services.detail.breadcrumb.features') as string },
-          ]} />
-        </div>
-
-        <motion.div
-          style={{ opacity: heroOpacity, scale: heroScale }}
-          className="container mx-auto px-4 relative z-10"
-        >
-          <div className="max-w-3xl">
-            {/* Eyebrow with Icon */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="flex items-center gap-3 mb-6"
-            >
-              <motion.div
-                animate={{ rotate: [0, 10, 0] }}
-                transition={{ duration: 2, repeat: Infinity }}
-                className="w-10 h-10 rounded-lg flex items-center justify-center"
-                style={{ backgroundColor: config.primaryColor + '20' }}
-              >
-                <SparklesIcon className="w-5 h-5" style={{ color: config.primaryColor }} />
-              </motion.div>
-              <span className="text-xs font-medium uppercase tracking-widest" style={{ color: config.primaryColor }}>
-                {t('services.detail.features.title')}
-              </span>
-            </motion.div>
-
-            {/* Title */}
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-display font-light text-gray-900 mb-8 leading-none"
-            >
-              {serviceName}
-              <br />
-              <span className="font-semibold" style={{ color: config.primaryColor }}>{t('services.detail.features.heroTitleAccent')}</span>
-            </motion.h1>
-
-            {/* Description */}
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-xl text-gray-500 max-w-2xl leading-relaxed mb-12"
-            >
-              {t('services.detail.features.heroDescription')}
-            </motion.p>
-
-            {/* Stats Row */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex gap-16 border-t border-gray-100 pt-8"
-            >
-              <div>
-                <motion.div
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ type: 'spring', delay: 0.5 }}
-                  className="text-5xl font-light"
-                  style={{ color: config.primaryColor }}
-                >
-                  {features.length}
-                </motion.div>
-                <div className="text-sm text-gray-400 mt-1">{t('services.detail.features.coreFeatures')}</div>
-              </div>
-              <div>
-                <div className="text-5xl font-light text-gray-900">100%</div>
-                <div className="text-sm text-gray-400 mt-1">{t('services.detail.features.customizable')}</div>
-              </div>
-              <div>
-                <div className="text-5xl font-light text-gray-900">∞</div>
-                <div className="text-sm text-gray-400 mt-1">{t('services.detail.features.scalability')}</div>
-              </div>
-            </motion.div>
-          </div>
-        </motion.div>
-      </section>
+    <div className="min-h-screen bg-white">
+      <InternalPageHero
+        serviceName={serviceName}
+        accentWord={t('services.detail.features.heroTitleAccent') as string}
+        subtitle={t('services.detail.features.heroDescription') as string}
+        accentHex={config.primaryColor}
+        crumbs={[
+          { label: t('navbar.home') as string, href: '/' },
+          { label: t('services.detail.breadcrumb.services') as string, href: '/services' },
+          { label: serviceName, href: `/services/${serviceSlug}` },
+          { label: t('services.detail.breadcrumb.features') as string },
+        ]}
+        scene={<FeaturesScene accent={config.primaryColor} />}
+      />
 
       {/* Features Grid - Animated Cards */}
       <section className="py-24 bg-gray-50">

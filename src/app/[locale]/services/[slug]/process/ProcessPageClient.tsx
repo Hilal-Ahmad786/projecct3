@@ -1,17 +1,13 @@
 'use client';
 
 import { motion, useScroll, useTransform } from 'framer-motion';
-import Breadcrumbs from '@/components/Breadcrumbs';
 import { toHeritageHex } from '@/lib/heritage-accents';
 import LocalizedLink from '@/components/LocalizedLink';
 import { useRef } from 'react';
-import { ArrowRightIcon, ArrowDownIcon, ClockIcon } from '@heroicons/react/24/outline';
-import {
-  SubPageBgPattern,
-  FloatingDecorations,
-  SubPageHeroVisual,
-  type SubPageAnimation
-} from '@/components/services/subpage-animations';
+import { ArrowRightIcon } from '@heroicons/react/24/outline';
+import { type SubPageAnimation } from '@/components/services/subpage-animations';
+import InternalPageHero from '@/components/services/InternalPageHero';
+import { ProcessScene } from '@/components/services/hero-visuals/scenes-internal';
 import { useTranslations } from '@/hooks/useTranslations';
 
 interface ProcessStep {
@@ -70,153 +66,19 @@ export default function ProcessPageClient({
 
   return (
     <div ref={containerRef} className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="relative min-h-[80vh] pt-[140px] pb-24 overflow-hidden">
-        {/* Background Pattern */}
-        <SubPageBgPattern pattern={config.bgPattern} opacity={0.05} />
-
-        {/* Floating Decorations */}
-        <FloatingDecorations type={config.decorations} accentColor={config.primaryColor} />
-
-        {/* Hero Visual */}
-        <div className="absolute right-[2%] top-1/2 -translate-y-1/2 hidden xl:block">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8, y: 50 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ duration: 1, ease: [0.4, 0, 0.2, 1] }}
-          >
-            <SubPageHeroVisual
-              type={config.heroVisual}
-              motionType={config.motion}
-              primaryColor={config.primaryColor}
-              secondaryColor={config.secondaryColor}
-            />
-          </motion.div>
-        </div>
-
-        {/* Animated Vertical Line */}
-        <motion.div
-          initial={{ height: 0 }}
-          animate={{ height: '50%' }}
-          transition={{ duration: 1.5, ease: 'easeOut' }}
-          className="absolute left-1/2 top-32 w-px hidden lg:block"
-          style={{ backgroundColor: config.primaryColor + '30' }}
-        />
-
-        {/* Step indicators floating */}
-        <div className="absolute right-[10%] top-1/2 -translate-y-1/2 hidden xl:flex flex-col gap-4">
-          {steps.slice(0, 5).map((_, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.5 + i * 0.1 }}
-              className="w-2 h-2 rounded-full"
-              style={{ backgroundColor: i === 0 ? config.primaryColor : '#e5e7eb' }}
-            />
-          ))}
-        </div>
-
-        {/* Breadcrumb - Outside fading container */}
-        <div className="container mx-auto px-4 relative z-20 mb-8">
-          <Breadcrumbs items={[
-            { label: t('navbar.home') as string, href: '/' },
-            { label: t('services.detail.breadcrumb.services') as string, href: '/services' },
-            { label: serviceName, href: `/services/${serviceSlug}` },
-            { label: t('services.detail.breadcrumb.process') as string },
-          ]} />
-        </div>
-
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl">
-            {/* Eyebrow */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="flex items-center gap-3 mb-6"
-            >
-              <motion.div
-                animate={{ rotate: 360 }}
-                transition={{ duration: 10, repeat: Infinity, ease: 'linear' }}
-                className="w-10 h-10 rounded-lg flex items-center justify-center"
-                style={{ backgroundColor: config.primaryColor + '20' }}
-              >
-                <ClockIcon className="w-5 h-5" style={{ color: config.primaryColor }} />
-              </motion.div>
-              <span className="text-xs font-medium uppercase tracking-widest" style={{ color: config.primaryColor }}>
-                {t('services.detail.process.eyebrow')}
-              </span>
-            </motion.div>
-
-            {/* Title */}
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-display font-light text-gray-900 mb-8 leading-none"
-            >
-              {t('services.detail.process.heroTitle')}
-              <br />
-              <span className="font-semibold" style={{ color: config.primaryColor }}>{serviceName}</span>
-            </motion.h1>
-
-            {/* Description */}
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-xl text-gray-500 max-w-2xl leading-relaxed mb-12"
-            >
-              {t('services.detail.process.heroDescription')}
-            </motion.p>
-
-            {/* Process Stats */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex gap-16 border-t border-gray-100 pt-8"
-            >
-              <div>
-                <motion.div
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ type: 'spring', delay: 0.5 }}
-                  className="text-5xl font-light"
-                  style={{ color: config.primaryColor }}
-                >
-                  {steps.length}
-                </motion.div>
-                <div className="text-sm text-gray-400 mt-1">{t('services.detail.process.stats.clearSteps')}</div>
-              </div>
-              <div>
-                <div className="text-5xl font-light text-gray-900">{t('services.detail.process.stats.agile')}</div>
-                <div className="text-sm text-gray-400 mt-1">{t('services.detail.process.stats.methodology')}</div>
-              </div>
-              <div>
-                <div className="text-5xl font-light text-gray-900">100%</div>
-                <div className="text-sm text-gray-400 mt-1">{t('services.detail.process.stats.transparency')}</div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-
-        {/* Scroll Indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
-        >
-          <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-          >
-            <ArrowDownIcon className="w-5 h-5 text-gray-400" />
-          </motion.div>
-        </motion.div>
-      </section>
+      <InternalPageHero
+        serviceName={serviceName}
+        accentWord={t('services.detail.process.eyebrow') as string}
+        subtitle={t('services.detail.process.heroDescription') as string}
+        accentHex={config.primaryColor}
+        crumbs={[
+          { label: t('navbar.home') as string, href: '/' },
+          { label: t('services.detail.breadcrumb.services') as string, href: '/services' },
+          { label: serviceName, href: `/services/${serviceSlug}` },
+          { label: t('services.detail.breadcrumb.process') as string },
+        ]}
+        scene={<ProcessScene accent={config.primaryColor} />}
+      />
 
       {/* Process Steps - Vertical Timeline */}
       <section className="py-32 bg-white">

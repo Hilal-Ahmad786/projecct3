@@ -165,3 +165,190 @@ export function BlogFeedScene({ accent = H.turquoise }: { accent?: string }) {
     </Scene>
   );
 }
+
+/* ── features: checklist card with girih-ticked feature rows ──────── */
+export function FeaturesScene({ accent = H.turquoise }: { accent?: string }) {
+  const rows = [0, 1, 2, 3];
+  return (
+    <Scene glow={accent}>
+      <GirihHalo color={accent} opacity={0.18} />
+      <HeritageParticles count={8} colors={[accent, H.saffron, H.terracotta]} />
+      <div className="absolute inset-0 flex items-center justify-center">
+        <motion.div
+          initial={{ opacity: 0, y: 30, scale: 0.92 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          className="rounded-2xl shadow-xl p-5 w-56"
+          style={{ background: H.white, border: `1px solid ${H.sand}` }}
+        >
+          {/* header with girih seal */}
+          <div className="flex items-center gap-2 mb-4">
+            <svg viewBox="0 0 24 24" className="w-7 h-7">
+              <polygon points={starPoints(12, 12, 9, 5)} fill={accent} opacity={0.9} />
+            </svg>
+            <div className="h-2.5 rounded-full flex-1" style={{ background: H.sand }} />
+          </div>
+          {/* feature rows, each ticking in */}
+          <div className="space-y-3">
+            {rows.map((i) => (
+              <motion.div key={i} {...riseIn(0.4 + i * 0.18)} className="flex items-center gap-2.5">
+                <span
+                  className="w-5 h-5 rounded-md flex items-center justify-center text-[9px] font-bold flex-shrink-0"
+                  style={{ background: `${accent}1c`, color: accent }}
+                >✓</span>
+                <span className="h-2 rounded-full flex-1" style={{ background: i === 0 ? `${accent}55` : H.ivory }} />
+              </motion.div>
+            ))}
+          </div>
+          {/* count chip */}
+          <motion.div
+            {...popIn(1.3)}
+            className="mt-4 inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[9px] font-bold"
+            style={{ background: H.saffron, color: H.white }}
+          >
+            <svg viewBox="0 0 12 12" className="w-2.5 h-2.5"><polygon points={starPoints(6, 6, 5, 2.6)} fill={H.white} /></svg>
+            Built-in
+          </motion.div>
+        </motion.div>
+      </div>
+    </Scene>
+  );
+}
+
+/* ── technologies: grid of girih tech tiles ──────────────────────── */
+export function TechStackScene({ accent = H.turquoise }: { accent?: string }) {
+  const tiles = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+  return (
+    <Scene glow={accent}>
+      <GirihHalo color={H.lapis} opacity={0.16} />
+      <HeritageParticles count={8} colors={[accent, H.saffron, H.lapis]} />
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="grid grid-cols-3 gap-3">
+          {tiles.map((i) => {
+            const highlight = i === 4;
+            return (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, scale: 0.6 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.25 + i * 0.07, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+                className="w-14 h-14 rounded-xl flex items-center justify-center shadow-md"
+                style={{
+                  background: highlight ? `linear-gradient(150deg, ${accent}, ${H.lapisDeep})` : H.white,
+                  border: highlight ? 'none' : `1px solid ${H.sand}`,
+                }}
+              >
+                <svg viewBox="0 0 32 32" className="w-7 h-7">
+                  <polygon
+                    points={starPoints(16, 16, 10, 5.5)}
+                    fill={highlight ? H.white : 'none'}
+                    stroke={highlight ? 'none' : accent}
+                    strokeWidth="1.4"
+                    opacity={highlight ? 0.95 : 0.85}
+                  />
+                </svg>
+              </motion.div>
+            );
+          })}
+        </div>
+      </div>
+    </Scene>
+  );
+}
+
+/* ── process: numbered workflow nodes along a path ───────────────── */
+export function ProcessScene({ accent = H.turquoise }: { accent?: string }) {
+  const steps = [0, 1, 2, 3];
+  return (
+    <Scene glow={accent}>
+      <GirihHalo color={H.saffron} opacity={0.18} />
+      <HeritageParticles count={7} colors={[accent, H.saffron, H.terracotta]} />
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="relative flex flex-col gap-4">
+          {/* connecting line */}
+          <motion.div
+            className="absolute left-[18px] top-2 w-px"
+            style={{ background: `${accent}40` }}
+            initial={{ height: 0 }}
+            animate={{ height: 'calc(100% - 16px)' }}
+            transition={{ delay: 0.4, duration: 1, ease: 'easeOut' }}
+          />
+          {steps.map((i) => (
+            <motion.div
+              key={i}
+              {...riseIn(0.5 + i * 0.2)}
+              className="flex items-center gap-3 relative z-10"
+            >
+              <div
+                className="w-9 h-9 rounded-full flex items-center justify-center text-[11px] font-bold shadow-md flex-shrink-0"
+                style={{
+                  background: i === 0 ? `linear-gradient(150deg, ${accent}, ${H.lapisDeep})` : H.white,
+                  color: i === 0 ? H.white : accent,
+                  border: i === 0 ? 'none' : `1px solid ${accent}55`,
+                }}
+              >
+                {i + 1}
+              </div>
+              <div
+                className="rounded-lg shadow-sm px-3 py-2 w-32"
+                style={{ background: H.white, border: `1px solid ${H.sand}` }}
+              >
+                <div className="h-1.5 rounded-full mb-1.5" style={{ background: `${accent}55`, width: '70%' }} />
+                <div className="h-1 rounded-full" style={{ background: H.ivory, width: '90%' }} />
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </Scene>
+  );
+}
+
+/* ── faq: stacked question cards with a girih answer seal ─────────── */
+export function FaqScene({ accent = H.turquoise }: { accent?: string }) {
+  const cards = [2, 1, 0];
+  return (
+    <Scene glow={accent}>
+      <GirihHalo color={accent} opacity={0.18} />
+      <HeritageParticles count={7} colors={[accent, H.saffron, H.terracotta]} />
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="relative w-56">
+          {cards.map((i) => {
+            const open = i === 0;
+            return (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 28 }}
+                animate={{ opacity: 1, y: i * -16 }}
+                transition={{ delay: 0.3 + (2 - i) * 0.22, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+                className="absolute inset-x-0 rounded-xl shadow-xl p-3.5"
+                style={{ background: H.white, border: `1px solid ${H.sand}`, top: 30, zIndex: 3 - i }}
+              >
+                <div className="flex items-center gap-2.5">
+                  <span
+                    className="w-6 h-6 rounded-md flex items-center justify-center text-[11px] font-bold flex-shrink-0"
+                    style={{ background: `${accent}1c`, color: accent }}
+                  >?</span>
+                  <div className="h-2 rounded-full flex-1" style={{ background: H.sand }} />
+                  <svg viewBox="0 0 16 16" className="w-4 h-4 flex-shrink-0" style={{ transform: open ? 'rotate(45deg)' : 'none' }}>
+                    <path d="M8 3v10M3 8h10" stroke={accent} strokeWidth="1.6" strokeLinecap="round" />
+                  </svg>
+                </div>
+                {open && (
+                  <motion.div {...riseIn(1.1)} className="mt-3 pl-8.5 space-y-1.5">
+                    <div className="h-1.5 rounded-full" style={{ background: H.ivory, width: '92%' }} />
+                    <div className="h-1.5 rounded-full" style={{ background: H.ivory, width: '78%' }} />
+                    <div className="flex items-center gap-1.5 pt-1">
+                      <svg viewBox="0 0 14 14" className="w-3 h-3"><polygon points={starPoints(7, 7, 5, 2.8)} fill={H.saffron} /></svg>
+                      <span className="h-1.5 rounded-full" style={{ background: `${accent}55`, width: 40 }} />
+                    </div>
+                  </motion.div>
+                )}
+              </motion.div>
+            );
+          })}
+        </div>
+      </div>
+    </Scene>
+  );
+}

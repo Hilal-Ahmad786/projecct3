@@ -1,17 +1,13 @@
 'use client';
 
 import { motion, useInView } from 'framer-motion';
-import Breadcrumbs from '@/components/Breadcrumbs';
 import { toHeritageHex } from '@/lib/heritage-accents';
 import LocalizedLink from '@/components/LocalizedLink';
 import { useRef } from 'react';
-import { ArrowRightIcon, CpuChipIcon } from '@heroicons/react/24/outline';
-import {
-  SubPageBgPattern,
-  FloatingDecorations,
-  SubPageHeroVisual,
-  type SubPageAnimation
-} from '@/components/services/subpage-animations';
+import { ArrowRightIcon } from '@heroicons/react/24/outline';
+import { type SubPageAnimation } from '@/components/services/subpage-animations';
+import InternalPageHero from '@/components/services/InternalPageHero';
+import { TechStackScene } from '@/components/services/hero-visuals/scenes-internal';
 import { useTranslations } from '@/hooks/useTranslations';
 
 interface Technology {
@@ -67,140 +63,19 @@ export default function TechStackPageClient({
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="relative min-h-[80vh] pt-[140px] pb-24 overflow-hidden">
-        {/* Background Pattern */}
-        <SubPageBgPattern pattern={config.bgPattern} opacity={0.05} />
-
-        {/* Floating Decorations */}
-        <FloatingDecorations type={config.decorations} accentColor={config.primaryColor} />
-
-        {/* Hero Visual */}
-        <div className="absolute right-[2%] top-1/2 -translate-y-1/2 hidden xl:block">
-          <motion.div
-            initial={{ opacity: 0, rotate: -10 }}
-            animate={{ opacity: 1, rotate: 0 }}
-            transition={{ duration: 1, ease: [0.4, 0, 0.2, 1] }}
-          >
-            <SubPageHeroVisual
-              type={config.heroVisual}
-              motionType={config.motion}
-              primaryColor={config.primaryColor}
-              secondaryColor={config.secondaryColor}
-            />
-          </motion.div>
-        </div>
-
-        {/* Floating Tech Symbols */}
-        {['◇', '⬢', '◈'].map((symbol, i) => (
-          <motion.div
-            key={i}
-            animate={{
-              y: [0, -20, 0],
-              opacity: [0.2, 0.5, 0.2],
-              rotate: [0, 10, 0]
-            }}
-            transition={{
-              duration: 4 + i,
-              repeat: Infinity,
-              delay: i * 0.5
-            }}
-            className="absolute text-5xl hidden lg:block"
-            style={{
-              top: `${30 + i * 15}%`,
-              right: `${8 + i * 5}%`,
-              color: config.primaryColor + '40',
-            }}
-          >
-            {symbol}
-          </motion.div>
-        ))}
-
-        {/* Breadcrumb - Outside fading container */}
-        <div className="container mx-auto px-4 relative z-20 mb-8">
-          <Breadcrumbs items={[
-            { label: t('navbar.home') as string, href: '/' },
-            { label: t('services.detail.breadcrumb.services') as string, href: '/services' },
-            { label: serviceName, href: `/services/${serviceSlug}` },
-            { label: t('services.detail.breadcrumb.techStack') as string },
-          ]} />
-        </div>
-
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl">
-            {/* Eyebrow */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="flex items-center gap-3 mb-6"
-            >
-              <motion.div
-                animate={{ rotate: [0, 360] }}
-                transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-                className="w-10 h-10 rounded-lg flex items-center justify-center"
-                style={{ backgroundColor: config.primaryColor + '20' }}
-              >
-                <CpuChipIcon className="w-5 h-5" style={{ color: config.primaryColor }} />
-              </motion.div>
-              <span className="text-xs font-medium uppercase tracking-widest" style={{ color: config.primaryColor }}>
-                {t('services.detail.techStack.eyebrow')}
-              </span>
-            </motion.div>
-
-            {/* Title */}
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-display font-light text-gray-900 mb-8 leading-none"
-            >
-              {t('services.detail.techStack.heroTitle')}
-              <br />
-              <span className="font-semibold" style={{ color: config.primaryColor }}>{t('services.detail.techStack.heroTitleAccent')}</span>
-            </motion.h1>
-
-            {/* Description */}
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-xl text-gray-500 max-w-2xl leading-relaxed mb-12"
-            >
-              {t('services.detail.techStack.heroDescription')}
-            </motion.p>
-
-            {/* Stats */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex gap-16 border-t border-gray-100 pt-8"
-            >
-              <div>
-                <motion.div
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ type: 'spring', delay: 0.5 }}
-                  className="text-5xl font-light"
-                  style={{ color: config.primaryColor }}
-                >
-                  {technologies.length}+
-                </motion.div>
-                <div className="text-sm text-gray-400 mt-1">{t('services.detail.techStack.stats.technologies')}</div>
-              </div>
-              <div>
-                <div className="text-5xl font-light text-gray-900">{t('services.detail.techStack.stats.openSource')}</div>
-                <div className="text-sm text-gray-400 mt-1">{t('services.detail.techStack.stats.sourceFirst')}</div>
-              </div>
-              <div>
-                <div className="text-5xl font-light text-gray-900">∞</div>
-                <div className="text-sm text-gray-400 mt-1">{t('services.detail.techStack.stats.scalable')}</div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+      <InternalPageHero
+        serviceName={serviceName}
+        accentWord={t('services.detail.techStack.heroTitleAccent') as string}
+        subtitle={t('services.detail.techStack.heroDescription') as string}
+        accentHex={config.primaryColor}
+        crumbs={[
+          { label: t('navbar.home') as string, href: '/' },
+          { label: t('services.detail.breadcrumb.services') as string, href: '/services' },
+          { label: serviceName, href: `/services/${serviceSlug}` },
+          { label: t('services.detail.breadcrumb.techStack') as string },
+        ]}
+        scene={<TechStackScene accent={config.primaryColor} />}
+      />
 
       {/* Tech Grid Section */}
       <section className="py-32 bg-gray-50" ref={gridRef}>

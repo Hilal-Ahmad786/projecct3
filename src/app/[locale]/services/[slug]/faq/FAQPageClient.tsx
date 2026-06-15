@@ -1,10 +1,11 @@
 'use client';
 
 import { useState, useRef } from 'react';
-import Breadcrumbs from '@/components/Breadcrumbs';
-import { motion, AnimatePresence, useScroll, useTransform, useInView } from 'framer-motion';
+import { motion, AnimatePresence, useInView } from 'framer-motion';
 import LocalizedLink from '@/components/LocalizedLink';
 import { ArrowRightIcon, PlusIcon } from '@heroicons/react/24/outline';
+import InternalPageHero from '@/components/services/InternalPageHero';
+import { FaqScene } from '@/components/services/hero-visuals/scenes-internal';
 import { useTranslations } from '@/hooks/useTranslations';
 
 interface FAQItem {
@@ -27,18 +28,9 @@ export default function FAQPageClient({
   locale
 }: FAQPageClientProps) {
   const { t } = useTranslations();
-  const containerRef = useRef<HTMLDivElement>(null);
   const faqRef = useRef<HTMLDivElement>(null);
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   const [searchQuery, setSearchQuery] = useState('');
-
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ['start start', 'end start']
-  });
-
-  const heroOpacity = useTransform(scrollYProgress, [0, 0.3], [1, 0]);
-  const heroY = useTransform(scrollYProgress, [0, 0.3], [0, -50]);
 
   const isFaqInView = useInView(faqRef, { once: true, margin: '-50px' });
 
@@ -54,214 +46,20 @@ export default function FAQPageClient({
     : faq;
 
   return (
-    <div ref={containerRef} className="min-h-screen bg-white">
-      {/* Hero Section - Swiss Minimalist */}
-      <section className="relative min-h-[80vh] pt-[140px] pb-24 overflow-hidden">
-        {/* Wave Lines Pattern - FAQ Unique */}
-        <div className="absolute inset-0 opacity-[0.03]">
-          <svg width="100%" height="100%">
-            <defs>
-              <pattern id="wave-lines" width="100" height="20" patternUnits="userSpaceOnUse">
-                <path
-                  d="M0 10 Q 25 0, 50 10 T 100 10"
-                  stroke="#1a1a1a"
-                  strokeWidth="0.5"
-                  fill="none"
-                />
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#wave-lines)" />
-          </svg>
-        </div>
-
-        {/* Floating Question Mark Shapes - FAQ Unique */}
-        <motion.div
-          animate={{ y: [0, -15, 0], rotate: [0, 5, 0] }}
-          transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
-          className="absolute top-48 right-[15%] text-8xl font-extralight hidden lg:block"
-          style={{ color: '#e5e7eb' }}
-        >
-          ?
-        </motion.div>
-        <motion.div
-          animate={{ y: [0, 12, 0], rotate: [0, -5, 0] }}
-          transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-          className="absolute top-72 right-[28%] text-5xl font-extralight hidden lg:block"
-          style={{ color: '#f3f4f6' }}
-        >
-          ?
-        </motion.div>
-        <motion.div
-          animate={{ y: [0, -10, 0] }}
-          transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
-          className="absolute bottom-40 right-[20%] text-6xl font-extralight hidden lg:block"
-          style={{ color: accentColor + '20' }}
-        >
-          ?
-        </motion.div>
-
-        {/* Speech Bubble Decorations */}
-        <div className="absolute right-[8%] top-1/3 hidden xl:block">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.3 }}
-            className="relative"
-          >
-            {/* Stacked Speech Bubbles */}
-            {[0, 1, 2].map((i) => (
-              <motion.div
-                key={i}
-                animate={{ y: [0, -8, 0] }}
-                transition={{ duration: 3.5 + i * 0.5, repeat: Infinity, delay: i * 0.4 }}
-                className="absolute border border-gray-200 bg-white rounded-lg"
-                style={{
-                  width: 140 - i * 25,
-                  height: 60 - i * 10,
-                  top: i * 20,
-                  left: i * 15,
-                  zIndex: 3 - i,
-                }}
-              >
-                <div className="absolute inset-3 flex items-center gap-1">
-                  {[0, 1, 2].map((j) => (
-                    <motion.div
-                      key={j}
-                      animate={{ opacity: [0.3, 0.7, 0.3] }}
-                      transition={{ duration: 1.5, repeat: Infinity, delay: j * 0.2 + i * 0.3 }}
-                      className="w-2 h-2 rounded-full"
-                      style={{ backgroundColor: accentColor }}
-                    />
-                  ))}
-                </div>
-                {/* Speech bubble tail */}
-                <div
-                  className="absolute -bottom-2 left-4 w-4 h-4 bg-white border-b border-r border-gray-200"
-                  style={{ transform: 'rotate(45deg)' }}
-                />
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-
-        {/* Expanding Ripple Animation */}
-        <div className="absolute right-[25%] bottom-32 hidden lg:block">
-          {[0, 1, 2].map((i) => (
-            <motion.div
-              key={i}
-              animate={{
-                scale: [1, 2, 2],
-                opacity: [0.3, 0.1, 0]
-              }}
-              transition={{
-                duration: 3,
-                repeat: Infinity,
-                delay: i * 1,
-                ease: 'easeOut'
-              }}
-              className="absolute w-16 h-16 border rounded-full"
-              style={{ borderColor: accentColor, top: 0, left: 0 }}
-            />
-          ))}
-          <div className="w-4 h-4 rounded-full" style={{ backgroundColor: accentColor }} />
-        </div>
-
-        {/* Vertical Line Accent */}
-        <motion.div
-          initial={{ height: 0 }}
-          animate={{ height: 100 }}
-          transition={{ duration: 1, delay: 0.5 }}
-          className="absolute left-[8%] top-48 w-px bg-gray-200 hidden lg:block"
-        />
-
-        {/* Breadcrumb - Outside fading container */}
-        <div className="container mx-auto px-4 relative z-20 mb-8">
-          <Breadcrumbs items={[
-            { label: t('navbar.home') as string, href: '/' },
-            { label: t('services.detail.breadcrumb.services') as string, href: '/services' },
-            { label: serviceName, href: `/services/${serviceSlug}` },
-            { label: t('services.detail.breadcrumb.faq') as string },
-          ]} />
-        </div>
-
-        <motion.div
-          style={{ opacity: heroOpacity, y: heroY }}
-          className="container mx-auto px-4 relative z-10"
-        >
-          <div className="max-w-3xl">
-            {/* Eyebrow */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="flex items-center gap-3 mb-6"
-            >
-              <motion.div
-                animate={{ rotate: [0, -10, 10, 0] }}
-                transition={{ duration: 4, repeat: Infinity }}
-                className="w-10 h-10 rounded-full border flex items-center justify-center"
-                style={{ borderColor: accentColor }}
-              >
-                <span className="text-lg font-light" style={{ color: accentColor }}>?</span>
-              </motion.div>
-              <span className="text-xs font-medium uppercase tracking-widest" style={{ color: accentColor }}>
-                {t('services.detail.faq.title')}
-              </span>
-            </motion.div>
-
-            {/* Title */}
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-display font-light text-gray-900 mb-8 leading-none"
-            >
-              {t('services.detail.faq.heroTitle')}
-              <br />
-              <span className="font-semibold" style={{ color: accentColor }}>{t('services.detail.faq.heroTitleAccent')}</span>
-            </motion.h1>
-
-            {/* Description */}
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-xl text-gray-500 max-w-2xl leading-relaxed mb-12"
-            >
-              {t('services.detail.faq.heroDescription').replace('{serviceName}', serviceName.toLowerCase())}
-            </motion.p>
-
-            {/* Stats */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex gap-16 border-t border-gray-100 pt-8"
-            >
-              <div>
-                <motion.div
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ type: 'spring', delay: 0.5 }}
-                  className="text-5xl font-light"
-                  style={{ color: accentColor }}
-                >
-                  {faq.length}
-                </motion.div>
-                <div className="text-sm text-gray-400 mt-1">{t('services.detail.faq.stats.questions')}</div>
-              </div>
-              <div>
-                <div className="text-5xl font-light text-gray-900">24/7</div>
-                <div className="text-sm text-gray-400 mt-1">{t('services.detail.faq.stats.support')}</div>
-              </div>
-              <div>
-                <div className="text-5xl font-light text-gray-900">&lt;2h</div>
-                <div className="text-sm text-gray-400 mt-1">{t('services.detail.faq.stats.response')}</div>
-              </div>
-            </motion.div>
-          </div>
-        </motion.div>
-      </section>
+    <div className="min-h-screen bg-white">
+      <InternalPageHero
+        serviceName={serviceName}
+        accentWord={t('services.detail.breadcrumb.faq') as string}
+        subtitle={(t('services.detail.faq.heroDescription') as string).replace('{serviceName}', serviceName.toLowerCase())}
+        accentHex={accentColor}
+        crumbs={[
+          { label: t('navbar.home') as string, href: '/' },
+          { label: t('services.detail.breadcrumb.services') as string, href: '/services' },
+          { label: serviceName, href: `/services/${serviceSlug}` },
+          { label: t('services.detail.breadcrumb.faq') as string },
+        ]}
+        scene={<FaqScene accent={accentColor} />}
+      />
 
       {/* Search Section */}
       <section className="py-8 bg-gray-50 border-y border-gray-100">
