@@ -32,6 +32,12 @@ import {
   SerpRankingScene, EmailInboxScene, FunnelScene, SocialFeedScene,
   KanbanBoardScene, VideoPlayerScene, DatabaseRingsScene, CryptoChainScene,
 } from './scenes-growth';
+import {
+  KpiCardsScene, GaugeMeterScene, BrowserWindowScene, CmsBlocksScene,
+  ColorSwatchScene, WireframeScene, NeuralLayersScene, ProductGridScene,
+  CheckoutFlowScene, ContainerGridScene, AppScreensScene, AdCreativeScene,
+  FilmStripScene, AutomationBotScene,
+} from './scenes-extra';
 import HomeHeroScene from '@/components/HomeHeroScene';
 
 // ── Animation Types ──────────────────────────────────────────────────
@@ -44,7 +50,11 @@ export type HeroVisualType =
   | 'server-stack'
   | 'serp-ranking' | 'email-inbox' | 'funnel' | 'social-feed'
   | 'kanban-board' | 'video-player' | 'database-rings' | 'crypto-chain'
-  | 'capability-hub';
+  | 'capability-hub'
+  | 'kpi-cards' | 'gauge-meter' | 'browser-window' | 'cms-blocks'
+  | 'color-swatch' | 'wireframe' | 'neural-layers' | 'product-grid'
+  | 'checkout-flow' | 'container-grid' | 'app-screens' | 'ad-creative'
+  | 'film-strip' | 'automation-bot';
 
 export type BgPattern = 'grid' | 'dots' | 'waves' | 'diagonal-lines' | 'hexagons' | 'circles' | 'none';
 export type DecorationType = 'circles' | 'squares' | 'triangles' | 'hexagons' | 'dots' | 'lines' | 'mixed';
@@ -190,6 +200,20 @@ const SCENES: Record<HeroVisualType, React.ComponentType> = {
   'database-rings': DatabaseRingsScene,
   'crypto-chain': CryptoChainScene,
   'capability-hub': HomeHeroScene,
+  'kpi-cards': KpiCardsScene,
+  'gauge-meter': GaugeMeterScene,
+  'browser-window': BrowserWindowScene,
+  'cms-blocks': CmsBlocksScene,
+  'color-swatch': ColorSwatchScene,
+  'wireframe': WireframeScene,
+  'neural-layers': NeuralLayersScene,
+  'product-grid': ProductGridScene,
+  'checkout-flow': CheckoutFlowScene,
+  'container-grid': ContainerGridScene,
+  'app-screens': AppScreensScene,
+  'ad-creative': AdCreativeScene,
+  'film-strip': FilmStripScene,
+  'automation-bot': AutomationBotScene,
 };
 
 // ── Main dispatcher (public API unchanged) ──────────────────────────

@@ -1,0 +1,598 @@
+{
+  "slug": "linkedin-lead-gen",
+  "en": {
+    "name": "LinkedIn Lead Generation",
+    "shortDescription": "Connect directly with decision-makers. We use precision targeting, automated outreach, and optimized LinkedIn Ads to fill your B2B sales pipeline with high-quality leads.",
+    "fullDescription": "For B2B companies, LinkedIn is the ultimate hunting ground. It is the only platform where users explicitly list their job title, company size, and professional interests. However, generic connection requests and spammy InMails are ignored. Our LinkedIn Lead Generation services combine highly targeted outbound automation with highly converting inbound LinkedIn Ads. We start by optimizing your company page and key executive profiles to act as conversion-optimized landing pages. We then leverage LinkedIn Sales Navigator to build hyper-specific prospect lists. Using sophisticated sequencing tools, we execute multi-touch outreach campaigns (Profile views, Connection requests, personalized InMails) designed to start meaningful conversations, not just pitch immediately. Simultaneously, we run LinkedIn Lead Gen Form ads targeting your ideal buyer personas, capturing verified B2B contact data instantly.",
+    "features": [
+      "Executive Profile & Company Page Optimization",
+      "Sales Navigator Hyper-Targeting & List Building",
+      "Automated Multichannel Outreach Sequences",
+      "Personalized InMail Copywriting",
+      "LinkedIn Lead Gen Form Ads Management",
+      "Account-Based Marketing (ABM) Execution",
+      "CRM Integration (HubSpot, Salesforce) & Lead Routing",
+      "Connection Acceptance & Reply Rate Tracking"
+    ],
+    "benefits": [
+      "Bypass gatekeepers and pitch directly to C-level decision-makers",
+      "Generate highly qualified, verified B2B leads on auto-pilot",
+      "Position your executives as thought leaders in your industry",
+      "Shorten B2B sales cycles with Account-Based Marketing (ABM) targeting",
+      "Capture lead data instantly without forcing users to leave the platform",
+      "Seamlessly sync new prospects directly into your existing CRM workflows"
+    ],
+    "metaTitle": "LinkedIn Lead Generation Agency | B2B Outreach | PakSoft",
+    "metaDescription": "Fill your sales pipeline with qualified B2B leads. We execute targeted LinkedIn outreach, Sales Navigator automation, and LinkedIn Ads management.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Profile Optimization & Branding",
+          "description": "Before any outreach, we rewrite the LinkedIn profiles of your sales team/founders to ensure they look like industry authorities, not just salespeople."
+        },
+        {
+          "step": 2,
+          "title": "Ideal Customer Profile (ICP) Targeting",
+          "description": "Using LinkedIn Sales Navigator, we build highly granular lists based on job titles, company headcount, industry, geography, and specific technologies used."
+        },
+        {
+          "step": 3,
+          "title": "Outreach Sequencing & Copywriting",
+          "description": "We craft multi-step sequences. Example: Day 1: Profile View. Day 3: Connection Request with a soft, relevant note. Day 7: Value-driven follow-up message."
+        },
+        {
+          "step": 4,
+          "title": "LinkedIn Ads Launch",
+          "description": "To supplement outbound, we launch targeted LinkedIn Ads utilizing Lead Gen Forms to capture emails and phone numbers offering whitepapers, webinars, or consultations."
+        },
+        {
+          "step": 5,
+          "title": "CRM Integration & Handoff",
+          "description": "We connect your LinkedIn campaigns directly to your CRM via Zapier or native integrations, ensuring hot leads are instantly assigned to your sales reps."
+        },
+        {
+          "step": 6,
+          "title": "Inbox Management & Analytics",
+          "description": "We track acceptance rates, reply rates, and ad CTRs. Depending on the engagement, we can also manage the initial inbox responses to qualify leads further."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Will my LinkedIn account get banned for using automation?",
+          "answer": "Not with our methods. We use cloud-based, dedicated IP automation tools that mimic human behavior (delays between actions, strict daily limits) to keep your account 100% safe."
+        },
+        {
+          "question": "Do you send those spammy, long sales pitches in the connection request?",
+          "answer": "Never. That ruins your reputation. We use short, highly personalized, and conversational approaches aimed at starting a dialogue, not closing a deal on the first message."
+        },
+        {
+          "question": "What is the difference between LinkedIn Ads and LinkedIn Outreach?",
+          "answer": "Outreach uses your personal profile to send direct messages to prospects (Outbound). Ads cost media spend to show sponsored content or forms in the newsfeed (Inbound)."
+        },
+        {
+          "question": "Is LinkedIn Ads expensive?",
+          "answer": "LinkedIn CPCs are generally higher than Facebook or Google. However, because the targeting is so precise (e.g., targeting exactly 'VP of IT at hospitals with 500+ employees'), the ROI for B2B companies is exceptional."
+        },
+        {
+          "question": "Do I need a LinkedIn Premium or Sales Navigator account?",
+          "answer": "Yes. To execute professional outreach campaigns, you must have a LinkedIn Sales Navigator Advanced account to access the advanced search filters and avoid commercial limits."
+        },
+        {
+          "question": "What are LinkedIn Lead Gen Forms?",
+          "answer": "These are ads where, upon clicking, a form pops up pre-filled with the user's verified LinkedIn profile data (name, work email, company). It drastically increases conversion rates."
+        },
+        {
+          "question": "Can you target employees of specific companies?",
+          "answer": "Yes. This is called Account-Based Marketing (ABM). If you give us a list of 50 target companies, we can specifically target the decision-makers within those exact organizations."
+        },
+        {
+          "question": "How do you handle replies?",
+          "answer": "Once a prospect replies positively, the automation stops. Your sales team can then take over the conversation directly in the LinkedIn inbox, or we can manage the qualification process."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "linkedin",
+          "name": "LinkedIn Sales Navigator"
+        },
+        {
+          "icon": "linkedin",
+          "name": "LinkedIn Campaign Manager"
+        },
+        {
+          "icon": "email",
+          "name": "Lemlist / Expandi / Waalaxy"
+        },
+        {
+          "icon": "hubspot",
+          "name": "HubSpot CRM"
+        },
+        {
+          "icon": "salesforce",
+          "name": "Salesforce"
+        },
+        {
+          "icon": "zapier",
+          "name": "Zapier (Data Sync)"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "LinkedIn Potansiyel Müşteri (Lead) Üretimi",
+    "shortDescription": "Karar vericilerle doğrudan bağlantı kurun. B2B satış hattınızı yüksek kaliteli lead'lerle doldurmak için hassas hedefleme, otomatik erişim ve optimize edilmiş LinkedIn Reklamları kullanıyoruz.",
+    "fullDescription": "B2B şirketleri için LinkedIn nihai avlanma alanıdır. Kullanıcıların iş unvanlarını, şirket büyüklüklerini ve profesyonel ilgi alanlarını açıkça listelediği tek platformdur. Ancak genel bağlantı istekleri ve spam InMail'ler göz ardı ediliyor. LinkedIn Lead Generation hizmetlerimiz, son derece hedeflenmiş giden (outbound) otomasyonu, yüksek dönüşümlü gelen (inbound) LinkedIn Reklamları ile birleştirir. Şirket sayfanızı ve önemli yönetici profillerinizi dönüşüm odaklı açılış sayfaları gibi işlev görecek şekilde optimize ederek başlıyoruz. Daha sonra hiper spesifik müşteri adayı listeleri oluşturmak için LinkedIn Sales Navigator'dan yararlanıyoruz. Gelişmiş sıralama araçlarını kullanarak, sadece hemen satış yapmayı değil, anlamlı konuşmalar başlatmayı amaçlayan çok temaslı erişim kampanyaları (Profil görüntülemeleri, Bağlantı istekleri, kişiselleştirilmiş InMail'ler) yürütüyoruz. Eşzamanlı olarak, doğrulanmış B2B iletişim verilerini anında yakalayarak ideal alıcı personalarınızı hedefleyen LinkedIn Lead Gen Form reklamları yayınlıyoruz.",
+    "features": [
+      "Yönetici Profili ve Şirket Sayfası Optimizasyonu",
+      "Sales Navigator Hiper Hedefleme ve Liste Oluşturma",
+      "Otomatik Çok Kanallı Erişim (Outreach) Dizileri",
+      "Kişiselleştirilmiş InMail Metin Yazarlığı",
+      "LinkedIn Lead Gen Form Reklamları Yönetimi",
+      "Hesap Tabanlı Pazarlama (ABM) Yürütme",
+      "CRM Entegrasyonu (HubSpot, Salesforce) ve Lead Yönlendirme",
+      "Bağlantı Kabulü ve Yanıt Oranı Takibi"
+    ],
+    "benefits": [
+      "Bekçileri (gatekeepers) aşın ve doğrudan C seviyesi (C-level) karar vericilere ulaşın",
+      "Otomatik pilotta son derece nitelikli, doğrulanmış B2B müşteri adayları oluşturun",
+      "Yöneticilerinizi sektörünüzde düşünce liderleri (thought leaders) olarak konumlandırın",
+      "Hesap Tabanlı Pazarlama (ABM) hedeflemesi ile B2B satış döngülerini kısaltın",
+      "Kullanıcıları platformdan ayrılmaya zorlamadan müşteri adayı verilerini anında yakalayın",
+      "Yeni müşteri adaylarını mevcut CRM iş akışlarınıza sorunsuz bir şekilde senkronize edin"
+    ],
+    "metaTitle": "LinkedIn Lead Generation Ajansı | B2B Outreach | PakSoft",
+    "metaDescription": "Satış hattınızı nitelikli B2B müşteri adaylarıyla doldurun. Hedefli LinkedIn erişimi, Sales Navigator otomasyonu ve LinkedIn Reklamları yönetimi gerçekleştiriyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Profil Optimizasyonu ve Markalaşma",
+          "description": "Herhangi bir erişimden önce, sadece satış görevlisi değil, endüstri otoriteleri gibi görünmelerini sağlamak için satış ekibinizin/kurucularınızın LinkedIn profillerini yeniden yazıyoruz."
+        },
+        {
+          "step": 2,
+          "title": "İdeal Müşteri Profili (ICP) Hedefleme",
+          "description": "LinkedIn Sales Navigator'ı kullanarak iş unvanlarına, çalışan sayısına, sektöre, coğrafyaya ve kullanılan belirli teknolojilere dayalı son derece ayrıntılı listeler oluşturuyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Erişim Sıralaması (Sequencing) ve Metin Yazarlığı",
+          "description": "Çok adımlı diziler hazırlıyoruz. Örnek: 1. Gün: Profil Görüntüleme. 3. Gün: Yumuşak, alakalı bir notla Bağlantı İsteği. 7. Gün: Değer odaklı takip mesajı."
+        },
+        {
+          "step": 4,
+          "title": "LinkedIn Reklamlarının Başlatılması",
+          "description": "Giden erişimi desteklemek için, e-postaları ve telefon numaralarını yakalamak amacıyla Lead Gen Formlarını kullanarak hedeflenmiş LinkedIn Reklamları başlatıyoruz."
+        },
+        {
+          "step": 5,
+          "title": "CRM Entegrasyonu ve Devir",
+          "description": "LinkedIn kampanyalarınızı Zapier veya yerel entegrasyonlar aracılığıyla doğrudan CRM'inize bağlayarak sıcak potansiyel müşterilerin satış temsilcilerinize anında atanmasını sağlıyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Gelen Kutusu Yönetimi ve Analitik",
+          "description": "Kabul oranlarını, yanıt oranlarını ve reklam TO'larını takip ediyoruz. Etkileşime bağlı olarak, potansiyel müşterileri daha da nitelendirmek için ilk gelen kutusu yanıtlarını da yönetebiliriz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Otomasyon kullandığım için LinkedIn hesabım yasaklanır mı?",
+          "answer": "Bizim yöntemlerimizle değil. Hesabınızı %100 güvende tutmak için insan davranışını (eylemler arası gecikmeler, katı günlük limitler) taklit eden bulut tabanlı, özel IP otomasyon araçları kullanıyoruz."
+        },
+        {
+          "question": "Bağlantı isteğinde o uzun ve spam satış konuşmalarını mı gönderiyorsunuz?",
+          "answer": "Asla. Bu itibarınızı mahveder. İlk mesajda bir anlaşmayı kapatmayı değil, bir diyalog başlatmayı amaçlayan kısa, son derece kişiselleştirilmiş ve sohbete dayalı yaklaşımlar kullanıyoruz."
+        },
+        {
+          "question": "LinkedIn Reklamları ile LinkedIn Outreach arasındaki fark nedir?",
+          "answer": "Outreach (Erişim), potansiyel müşterilere doğrudan mesajlar (Giden) göndermek için kişisel profilinizi kullanır. Reklamlar, haber akışında sponsorlu içerik veya formlar göstermek için bütçe gerektirir."
+        },
+        {
+          "question": "LinkedIn Reklamları pahalı mıdır?",
+          "answer": "LinkedIn TBM'leri (Tıklama Başı Maliyet) genellikle Facebook veya Google'dan daha yüksektir. Ancak, hedefleme çok kesin olduğu için B2B şirketleri için yatırım getirisi istisnaidir."
+        },
+        {
+          "question": "LinkedIn Premium veya Sales Navigator hesabına ihtiyacım var mı?",
+          "answer": "Evet. Profesyonel erişim kampanyaları yürütmek için gelişmiş arama filtrelerine erişmek ve ticari sınırlardan kaçınmak üzere bir Sales Navigator Advanced hesabınızın olması gerekir."
+        },
+        {
+          "question": "LinkedIn Lead Gen Formları nedir?",
+          "answer": "Bunlar, tıklandığında kullanıcının doğrulanmış LinkedIn profil verileriyle (isim, iş e-postası, şirket) önceden doldurulmuş bir formun açıldığı reklamlardır. Dönüşüm oranlarını büyük ölçüde artırır."
+        },
+        {
+          "question": "Belirli şirketlerin çalışanlarını hedefleyebilir misiniz?",
+          "answer": "Evet. Buna Hesap Tabanlı Pazarlama (ABM) denir. Bize 50 hedef şirketten oluşan bir liste verirseniz, tam olarak bu organizasyonlardaki karar vericileri özel olarak hedefleyebiliriz."
+        },
+        {
+          "question": "Yanıtları (replies) nasıl yönetiyorsunuz?",
+          "answer": "Bir potansiyel müşteri olumlu yanıt verdiğinde otomasyon durur. Satış ekibiniz daha sonra doğrudan LinkedIn gelen kutusundan görüşmeyi devralabilir veya kalifikasyon sürecini biz yönetebiliriz."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "linkedin",
+          "name": "LinkedIn Sales Navigator"
+        },
+        {
+          "icon": "linkedin",
+          "name": "LinkedIn Campaign Manager"
+        },
+        {
+          "icon": "email",
+          "name": "Lemlist / Expandi / Waalaxy"
+        },
+        {
+          "icon": "hubspot",
+          "name": "HubSpot CRM"
+        },
+        {
+          "icon": "salesforce",
+          "name": "Salesforce"
+        },
+        {
+          "icon": "zapier",
+          "name": "Zapier (Data Sync)"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "LinkedIn Lead Generierung",
+    "shortDescription": "Vernetzen Sie sich direkt mit Entscheidungsträgern. Wir nutzen präzises Targeting, automatisiertes Outreach und optimierte LinkedIn Ads für B2B-Leads.",
+    "fullDescription": "Für B2B-Unternehmen ist LinkedIn das ultimative Jagdrevier. Es ist die einzige Plattform, auf der Nutzer Jobtitel, Unternehmensgröße und berufliche Interessen explizit angeben. Generische Vernetzungsanfragen und spam-artige InMails werden jedoch ignoriert. Unsere Dienste zur LinkedIn-Lead-Generierung kombinieren hochgradig zielgerichtete Outbound-Automatisierung mit konvertierenden Inbound-LinkedIn-Ads. Wir optimieren zunächst Ihr Unternehmensprofil und wichtige Führungskräfte-Profile. Dann nutzen wir den LinkedIn Sales Navigator, um hyper-spezifische Interessentenlisten zu erstellen. Mit fortschrittlichen Sequenzierungs-Tools führen wir Multi-Touch-Outreach-Kampagnen (Profilaufrufe, Vernetzungsanfragen, personalisierte InMails) durch, die echte Gespräche initiieren. Gleichzeitig schalten wir LinkedIn Lead Gen Form Ads, die auf Ihre idealen Buyer Personas abzielen.",
+    "features": [
+      "Optimierung von Executive-Profilen & Unternehmensseite",
+      "Sales Navigator Hyper-Targeting & Listenerstellung",
+      "Automatisierte Multichannel-Outreach-Sequenzen",
+      "Personalisiertes InMail-Copywriting",
+      "Management von LinkedIn Lead Gen Form Ads",
+      "Account-Based Marketing (ABM) Ausführung",
+      "CRM Integration (HubSpot, Salesforce) & Lead-Routing",
+      "Tracking von Annahme- & Antwortraten"
+    ],
+    "benefits": [
+      "Umgehen Sie Gatekeeper und pitchen Sie direkt bei C-Level Entscheidern",
+      "Generieren Sie qualifizierte, verifizierte B2B-Leads auf Autopilot",
+      "Positionieren Sie Ihre Führungskräfte als Thought Leader",
+      "Verkürzen Sie B2B-Vertriebszyklen mit Account-Based Marketing (ABM)",
+      "Erfassen Sie Lead-Daten sofort über vorausgefüllte Formulare",
+      "Synchronisieren Sie neue Interessenten nahtlos mit Ihrem CRM"
+    ],
+    "metaTitle": "LinkedIn Lead Gen Agentur | B2B Outreach | PakSoft",
+    "metaDescription": "Füllen Sie Ihre Pipeline mit qualifizierten B2B-Leads. Wir führen gezieltes LinkedIn Outreach, Sales Navigator Automatisierung und Ads Management durch.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Profil-Optimierung & Branding",
+          "description": "Vor dem Outreach überarbeiten wir die Profile Ihres Vertriebsteams/Gründers, damit sie wie Branchenexperten und nicht nur wie Verkäufer wirken."
+        },
+        {
+          "step": 2,
+          "title": "Ideal Customer Profile (ICP) Targeting",
+          "description": "Mit dem Sales Navigator erstellen wir granulare Listen basierend auf Jobtitel, Mitarbeiterzahl, Branche und genutzten Technologien."
+        },
+        {
+          "step": 3,
+          "title": "Outreach-Sequenzierung & Copywriting",
+          "description": "Wir erstellen mehrstufige Sequenzen. Tag 1: Profilaufruf. Tag 3: Vernetzungsanfrage mit weicher Notiz. Tag 7: Wertorientierte Follow-up Nachricht."
+        },
+        {
+          "step": 4,
+          "title": "Launch von LinkedIn Ads",
+          "description": "Ergänzend starten wir zielgerichtete Ads mit Lead Gen Forms, um E-Mails via Whitepapern oder Webinaren zu erfassen."
+        },
+        {
+          "step": 5,
+          "title": "CRM Integration & Übergabe",
+          "description": "Wir verbinden Ihre LinkedIn-Kampagnen via Zapier direkt mit Ihrem CRM, sodass heiße Leads sofort Ihren Vertrieblern zugewiesen werden."
+        },
+        {
+          "step": 6,
+          "title": "Posteingangs-Management & Analytics",
+          "description": "Wir tracken Annahme- und Antwortraten. Bei Bedarf übernehmen wir auch die ersten Antworten im Posteingang, um Leads weiter zu qualifizieren."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wird mein LinkedIn-Konto gesperrt, wenn ich Automatisierung nutze?",
+          "answer": "Nicht mit unseren Methoden. Wir verwenden cloudbasierte Tools mit dedizierten IPs, die menschliches Verhalten imitieren (Verzögerungen, Limits)."
+        },
+        {
+          "question": "Senden Sie lange Verkaufs-Pitches in der Vernetzungsanfrage?",
+          "answer": "Niemals. Wir nutzen kurze, personalisierte und gesprächsorientierte Ansätze, um einen Dialog zu starten, keinen Deal in der ersten Nachricht abzuschließen."
+        },
+        {
+          "question": "Was ist der Unterschied zwischen LinkedIn Ads und LinkedIn Outreach?",
+          "answer": "Outreach nutzt Ihr persönliches Profil für Direktnachrichten (Outbound). Ads erfordern Mediabudget, um gesponserte Inhalte im Newsfeed zu zeigen (Inbound)."
+        },
+        {
+          "question": "Sind LinkedIn Ads teuer?",
+          "answer": "Die CPCs sind höher als bei Facebook oder Google. Aber da das Targeting so präzise ist (z.B. 'IT-Leiter in Krankenhäusern'), ist der ROI für B2B hervorragend."
+        },
+        {
+          "question": "Benötige ich einen LinkedIn Premium oder Sales Navigator Account?",
+          "answer": "Ja. Für professionelle Kampagnen benötigen Sie den Sales Navigator Advanced, um erweiterte Filter zu nutzen und Limits zu vermeiden."
+        },
+        {
+          "question": "Was sind LinkedIn Lead Gen Forms?",
+          "answer": "Das sind Anzeigen, bei denen sich ein Formular öffnet, das bereits mit den verifizierten LinkedIn-Daten (Name, E-Mail) des Nutzers vorausgefüllt ist."
+        },
+        {
+          "question": "Können Sie Mitarbeiter bestimmter Unternehmen targeten?",
+          "answer": "Ja. Das nennt sich Account-Based Marketing (ABM). Wenn Sie uns eine Liste von 50 Unternehmen geben, targeten wir genau deren Entscheidungsträger."
+        },
+        {
+          "question": "Wie gehen Sie mit Antworten um?",
+          "answer": "Sobald ein Interessent positiv antwortet, stoppt die Automatisierung. Ihr Vertrieb kann das Gespräch dann im LinkedIn-Posteingang übernehmen."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "linkedin",
+          "name": "LinkedIn Sales Navigator"
+        },
+        {
+          "icon": "linkedin",
+          "name": "LinkedIn Campaign Manager"
+        },
+        {
+          "icon": "email",
+          "name": "Lemlist / Expandi / Waalaxy"
+        },
+        {
+          "icon": "hubspot",
+          "name": "HubSpot CRM"
+        },
+        {
+          "icon": "salesforce",
+          "name": "Salesforce"
+        },
+        {
+          "icon": "zapier",
+          "name": "Zapier (Data Sync)"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "لنکڈ ان لیڈ جنریشن (LinkedIn Lead Gen)",
+    "shortDescription": "فیصلہ سازوں سے براہ راست جڑیں۔ ہم آپ کی B2B سیلز پائپ لائن کو بھرنے کے لیے درست ٹارگٹنگ، آٹومیشن اور آپٹمائزڈ LinkedIn اشتہارات کا استعمال کرتے ہیں۔",
+    "fullDescription": "B2B کمپنیوں کے لیے، LinkedIn حتمی پلیٹ فارم ہے۔ یہ واحد پلیٹ فارم ہے جہاں صارف واضح طور پر اپنے کام کا عنوان، کمپنی کا سائز، اور پیشہ ورانہ دلچسپیوں کی فہرست دیتے ہیں۔ تاہم، عام کنکشن کی درخواستوں اور سپیم ان میلز (InMails) کو نظر انداز کر دیا جاتا ہے۔ ہماری LinkedIn لیڈ جنریشن سروسز انتہائی ٹارگٹڈ آؤٹ باؤنڈ آٹومیشن کو ہائی کنورٹنگ ان باؤنڈ LinkedIn اشتہارات کے ساتھ ملاتی ہیں۔ ہم آپ کے کمپنی کے صفحے اور اہم ایگزیکٹو پروفائلز کو بہتر بنا کر شروعات کرتے ہیں۔ اس کے بعد ہم مخصوص فہرستیں بنانے کے لیے LinkedIn Sales Navigator کا فائدہ اٹھاتے ہیں۔ ہم ملٹی ٹچ آؤٹ ریچ مہمات چلاتے ہیں جن کا مقصد صرف پچنگ کرنے کے بجائے بامعنی بات چیت شروع کرنا ہے۔ اس کے ساتھ ساتھ، ہم LinkedIn Lead Gen Form اشتہارات چلاتے ہیں، جو فوری طور پر B2B رابطے کا ڈیٹا حاصل کرتے ہیں۔",
+    "features": [
+      "ایگزیکٹو پروفائل اور کمپنی پیج کی آپٹیمائزیشن",
+      "سیلز نیویگیٹر ہائپر ٹارگٹنگ اور فہرست سازی",
+      "خودکار ملٹی چینل آؤٹ ریچ سلسلے",
+      "ذاتی نوعیت کی ان میل (InMail) کاپی رائٹنگ",
+      "لنکڈ ان لیڈ جنرل فارم اشتہارات کا انتظام",
+      "اکاؤنٹ بیسڈ مارکیٹنگ (ABM) کا نفاذ",
+      "CRM انٹیگریشن (HubSpot, Salesforce)",
+      "کنکشن کی قبولیت اور جوابی شرح کی ٹریکنگ"
+    ],
+    "benefits": [
+      "گیٹ کیپرز کو نظرانداز کریں اور براہ راست C-لیول کے فیصلہ سازوں تک پہنچیں",
+      "آٹو پائلٹ پر انتہائی اہل، تصدیق شدہ B2B لیڈز تیار کریں",
+      "اپنے ایگزیکٹوز کو اپنی صنعت میں سوچنے والے رہنماؤں کے طور پر کھڑا کریں",
+      "اکاؤنٹ بیسڈ مارکیٹنگ (ABM) ٹارگٹنگ کے ساتھ B2B سیلز سائیکل کو مختصر کریں",
+      "صارفین کو پلیٹ فارم چھوڑنے پر مجبور کیے بغیر فوری طور پر لیڈ ڈیٹا حاصل کریں",
+      "نئے امکانات کو اپنے موجودہ CRM کے ساتھ بغیر کسی رکاوٹ کے ہم آہنگ کریں"
+    ],
+    "metaTitle": "لنکڈ ان لیڈ جنریشن ایجنسی | B2B آؤٹ ریچ | PakSoft",
+    "metaDescription": "اپنی سیلز پائپ لائن کو اہل B2B لیڈز سے بھریں۔ ہم ٹارگٹڈ LinkedIn آؤٹ ریچ، Sales Navigator آٹومیشن، اور LinkedIn اشتہارات چلاتے ہیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "پروفائل آپٹیمائزیشن اور برانڈنگ",
+          "description": "کسی بھی آؤٹ ریچ سے پہلے، ہم آپ کی سیلز ٹیم کے پروفائلز کو دوبارہ لکھتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ وہ انڈسٹری کے ماہرین کی طرح نظر آتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "آئیڈیل کسٹمر پروفائل (ICP) ٹارگٹنگ",
+          "description": "LinkedIn سیلز نیویگیٹر کا استعمال کرتے ہوئے، ہم ملازمت کے عنوانات، کمپنی کے ملازمین کی تعداد، صنعت، اور جغرافیہ کی بنیاد پر فہرستیں بناتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "آؤٹ ریچ اور کاپی رائٹنگ",
+          "description": "ہم کثیر مرحلہ وار ترتیب تیار کرتے ہیں۔ مثال کے طور پر: دن 1: پروفائل کا منظر۔ دن 3: کنکشن کی درخواست۔ دن 7: فالو اپ پیغام۔"
+        },
+        {
+          "step": 4,
+          "title": "لنکڈ ان اشتہارات کا آغاز",
+          "description": "ای میلز اور فون نمبرز حاصل کرنے کے لیے ہم لیڈ جنریشن فارمز کا استعمال کرتے ہوئے ہدف بنائے گئے LinkedIn اشتہارات شروع کرتے ہیں۔"
+        },
+        {
+          "step": 5,
+          "title": "CRM انٹیگریشن اور ہینڈ آف",
+          "description": "ہم آپ کی LinkedIn مہمات کو براہ راست آپ کے CRM سے جوڑتے ہیں، اس بات کو یقینی بناتے ہوئے کہ لیڈز آپ کے سیلز کے نمائندوں کو تفویض کی جائیں۔"
+        },
+        {
+          "step": 6,
+          "title": "ان باکس مینجمنٹ اور اینالیٹکس",
+          "description": "ہم قبولیت کی شرحوں، جوابی شرحوں اور اشتہار کے CTR کو ٹریک کرتے ہیں۔ ہم لیڈز کو مزید اہل بنانے کے لیے ابتدائی ان باکس کے جوابات کا انتظام بھی کر سکتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "کیا آٹومیشن استعمال کرنے پر میرا LinkedIn اکاؤنٹ بین ہو جائے گا؟",
+          "answer": "ہمارے طریقوں سے نہیں۔ ہم کلاؤڈ پر مبنی ایسے ٹولز استعمال کرتے ہیں جو انسانی رویے کی نقل کرتے ہیں تاکہ آپ کے اکاؤنٹ کو 100% محفوظ رکھا جا سکے۔"
+        },
+        {
+          "question": "کیا آپ کنکشن کی درخواست میں لمبی سیلز پچ بھیجتے ہیں؟",
+          "answer": "کبھی نہیں۔ ہم بات چیت شروع کرنے کے مقصد سے مختصر اور ذاتی نقطہ نظر کا استعمال کرتے ہیں، نہ کہ پہلے ہی پیغام پر ڈیل بند کرنے کے لیے۔"
+        },
+        {
+          "question": "LinkedIn اشتہارات اور LinkedIn Outreach میں کیا فرق ہے؟",
+          "answer": "آؤٹ ریچ آپ کی ذاتی پروفائل کا استعمال کرتے ہوئے براہ راست پیغامات (Outbound) بھیجتا ہے۔ اشتہارات نیوز فیڈ میں سپانسر شدہ مواد دکھانے کے لیے بجٹ استعمال کرتے ہیں (Inbound)۔"
+        },
+        {
+          "question": "کیا لنکڈ ان کے اشتہارات مہنگے ہیں؟",
+          "answer": "لنکڈ ان CPCs عام طور پر فیس بک یا گوگل سے زیادہ ہوتے ہیں۔ تاہم، ٹارگٹنگ بہت درست ہونے کی وجہ سے B2B کمپنیوں کے لیے ROI غیر معمولی ہے۔"
+        },
+        {
+          "question": "کیا مجھے لنکڈ ان پریمیم یا سیلز نیویگیٹر اکاؤنٹ کی ضرورت ہے؟",
+          "answer": "ہاں۔ پیشہ ورانہ آؤٹ ریچ مہم چلانے کے لیے، آپ کے پاس LinkedIn Sales Navigator Advanced اکاؤنٹ ہونا چاہیے۔"
+        },
+        {
+          "question": "LinkedIn لیڈ جن فارمز کیا ہیں؟",
+          "answer": "یہ وہ اشتہارات ہیں جہاں کلک کرنے پر، ایک فارم صارف کے تصدیق شدہ LinkedIn پروفائل ڈیٹا کے ساتھ پہلے سے بھرا ہوا پاپ اپ ہوتا ہے۔ یہ کنورژن کو بڑھاتا ہے۔"
+        },
+        {
+          "question": "کیا آپ مخصوص کمپنیوں کے ملازمین کو نشانہ بنا سکتے ہیں؟",
+          "answer": "ہاں۔ اسے اکاؤنٹ بیسڈ مارکیٹنگ (ABM) کہا جاتا ہے۔ اگر آپ ہمیں ٹارگٹ کمپنیوں کی فہرست دیتے ہیں، تو ہم خاص طور پر ان فیصلہ سازوں کو نشانہ بنا سکتے ہیں۔"
+        },
+        {
+          "question": "آپ جوابات کو کیسے سنبھالتے ہیں؟",
+          "answer": "ایک بار جب کوئی مثبت جواب دیتا ہے، تو آٹومیشن رک جاتا ہے۔ آپ کی سیلز ٹیم پھر براہ راست LinkedIn ان باکس میں بات چیت کو سنبھال سکتی ہے۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "linkedin",
+          "name": "LinkedIn Sales Navigator"
+        },
+        {
+          "icon": "linkedin",
+          "name": "LinkedIn Campaign Manager"
+        },
+        {
+          "icon": "email",
+          "name": "Lemlist / Expandi / Waalaxy"
+        },
+        {
+          "icon": "hubspot",
+          "name": "HubSpot CRM"
+        },
+        {
+          "icon": "salesforce",
+          "name": "Salesforce"
+        },
+        {
+          "icon": "zapier",
+          "name": "Zapier (Data Sync)"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "توليد العملاء المحتملين عبر LinkedIn",
+    "shortDescription": "تواصل مباشرة مع صناع القرار. نستخدم الاستهداف الدقيق، والأتمتة، وإعلانات LinkedIn المحسنة لملء مسار مبيعات B2B الخاص بك بعملاء محتملين ذوي جودة عالية.",
+    "fullDescription": "بالنسبة لشركات B2B، يعد LinkedIn ساحة الصيد النهائية. إنها المنصة الوحيدة التي يدرج فيها المستخدمون صراحةً المسمى الوظيفي وحجم الشركة والاهتمامات المهنية. ومع ذلك، يتم تجاهل طلبات الاتصال العامة ورسائل InMail المزعجة. تجمع خدماتنا بين أتمتة الصادر (Outbound) المستهدفة للغاية وإعلانات LinkedIn الواردة (Inbound) عالية التحويل. نبدأ بتحسين صفحة شركتك وملفات تعريف المديرين التنفيذيين الرئيسية للعمل كصفحات هبوط محسنة. ثم نستفيد من LinkedIn Sales Navigator لإنشاء قوائم آفاق دقيقة للغاية. باستخدام أدوات تسلسل متطورة، ننفذ حملات تواصل متعددة اللمسات (مشاهدات الملف الشخصي، طلبات الاتصال، InMails مخصصة) مصممة لبدء محادثات هادفة. في الوقت نفسه، نقوم بتشغيل إعلانات نماذج تجميع بيانات العملاء (Lead Gen Forms) لاستهداف شخصيات المشتري المثالية، والتقاط بيانات اتصال B2B تم التحقق منها على الفور.",
+    "features": [
+      "تحسين الملف الشخصي للمديرين التنفيذيين وصفحة الشركة",
+      "الاستهداف المفرط وبناء القوائم باستخدام Sales Navigator",
+      "تسلسلات تواصل مؤتمتة ومتعددة القنوات",
+      "كتابة رسائل InMail مخصصة وجذابة",
+      "إدارة إعلانات نماذج العملاء المحتملين (Lead Gen Forms)",
+      "تنفيذ التسويق القائم على الحسابات (ABM)",
+      "تكامل CRM (HubSpot ، Salesforce) وتوجيه العملاء",
+      "تتبع معدل قبول الاتصال ومعدلات الرد"
+    ],
+    "benefits": [
+      "تجاوز حراس البوابة والتحدث مباشرة إلى صناع القرار من المستوى C",
+      "توليد عملاء محتملين B2B مؤهلين تأهيلا عاليا ومتحقق منهم بشكل آلي",
+      "وضع المديرين التنفيذيين لديك كقادة فكر في مجالك",
+      "تقصير دورات مبيعات B2B من خلال استهداف التسويق القائم على الحسابات (ABM)",
+      "التقاط بيانات العملاء المحتملين على الفور دون إجبار المستخدمين على مغادرة المنصة",
+      "مزامنة الآفاق الجديدة بسلاسة مباشرة في مسارات عمل CRM الحالية لديك"
+    ],
+    "metaTitle": "وكالة توليد عملاء LinkedIn | تسويق B2B | PakSoft",
+    "metaDescription": "املأ مسار مبيعاتك بعملاء B2B محتملين مؤهلين. ننفذ حملات تواصل مستهدفة عبر LinkedIn، وأتمتة Sales Navigator، وإدارة الإعلانات.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تحسين الملف الشخصي والعلامة التجارية",
+          "description": "قبل أي تواصل، نعيد كتابة ملفات تعريف LinkedIn لفريق المبيعات الخاص بك للتأكد من أنهم يبدون كسلطات في الصناعة، وليس مجرد مندوبي مبيعات."
+        },
+        {
+          "step": 2,
+          "title": "استهداف ملف العميل المثالي (ICP)",
+          "description": "باستخدام Sales Navigator، نبني قوائم دقيقة بناءً على المسميات الوظيفية، وعدد الموظفين، والصناعة، والجغرافيا، والتقنيات المحددة المستخدمة."
+        },
+        {
+          "step": 3,
+          "title": "تسلسل التواصل وكتابة الرسائل",
+          "description": "نصوغ تسلسلات متعددة الخطوات. اليوم 1: عرض الملف الشخصي. اليوم 3: طلب اتصال بملاحظة ذات صلة. اليوم 7: رسالة متابعة قائمة على القيمة."
+        },
+        {
+          "step": 4,
+          "title": "إطلاق إعلانات LinkedIn",
+          "description": "لتعزيز التواصل الخارجي، نطلق إعلانات مستهدفة باستخدام Lead Gen Forms لالتقاط رسائل البريد الإلكتروني والهواتف لتقديم ندوات أو استشارات."
+        },
+        {
+          "step": 5,
+          "title": "تكامل CRM والتسليم",
+          "description": "نربط حملاتك مباشرة بنظام CRM (عبر Zapier) مما يضمن تعيين العملاء المحتملين الساخنين على الفور إلى مندوبي المبيعات."
+        },
+        {
+          "step": 6,
+          "title": "إدارة البريد الوارد والتحليلات",
+          "description": "نتتبع معدلات القبول والرد. بناءً على المشاركة، يمكننا أيضاً إدارة ردود البريد الوارد الأولية لتأهيل العملاء المحتملين بشكل أكبر."
+        }
+      ],
+      "faq": [
+        {
+          "question": "هل سيتم حظر حساب LinkedIn الخاص بي لاستخدام الأتمتة؟",
+          "answer": "ليس بأساليبنا. نحن نستخدم أدوات أتمتة سحابية تحاكي السلوك البشري (التأخير بين الإجراءات، والحدود اليومية الصارمة) للحفاظ على أمان حسابك 100٪."
+        },
+        {
+          "question": "هل ترسل عروض مبيعات طويلة ومزعجة في طلب الاتصال؟",
+          "answer": "أبداً. هذا يدمر سمعتك. نستخدم أساليب قصيرة وشخصية للغاية ومحادثة تهدف إلى بدء حوار، وليس إغلاق صفقة في الرسالة الأولى."
+        },
+        {
+          "question": "ما الفرق بين إعلانات LinkedIn وتواصل LinkedIn؟",
+          "answer": "يستخدم التواصل (Outreach) ملفك الشخصي لإرسال رسائل مباشرة (Outbound). تتطلب الإعلانات إنفاقاً إعلامياً لإظهار محتوى برعاية في موجز الأخبار (Inbound)."
+        },
+        {
+          "question": "هل إعلانات LinkedIn باهظة الثمن؟",
+          "answer": "تكلفة النقرة (CPC) في LinkedIn أعلى عموماً من Facebook أو Google. ومع ذلك، نظراً لأن الاستهداف دقيق للغاية، فإن عائد الاستثمار لشركات B2B استثنائي."
+        },
+        {
+          "question": "هل أحتاج إلى حساب Premium أو Sales Navigator؟",
+          "answer": "نعم. لتنفيذ حملات تواصل احترافية، يجب أن يكون لديك حساب Sales Navigator Advanced للوصول إلى مرشحات البحث المتقدمة."
+        },
+        {
+          "question": "ما هي نماذج Lead Gen في LinkedIn؟",
+          "answer": "هي إعلانات، عند النقر عليها، ينبثق نموذج معبأ مسبقاً ببيانات ملف تعريف LinkedIn التي تم التحقق منها (الاسم، البريد الإلكتروني). إنه يزيد بشكل كبير من التحويلات."
+        },
+        {
+          "question": "هل يمكنك استهداف موظفي شركات معينة؟",
+          "answer": "نعم. يسمى هذا التسويق القائم على الحسابات (ABM). إذا أعطيتنا قائمة بـ 50 شركة مستهدفة، فيمكننا استهداف صناع القرار داخل تلك المنظمات بشكل خاص."
+        },
+        {
+          "question": "كيف تتعاملون مع الردود؟",
+          "answer": "بمجرد أن يرد عميل محتمل بشكل إيجابي، تتوقف الأتمتة. يمكن لفريق المبيعات الخاص بك بعد ذلك تولي المحادثة مباشرة في صندوق الوارد في LinkedIn."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "linkedin",
+          "name": "LinkedIn Sales Navigator"
+        },
+        {
+          "icon": "linkedin",
+          "name": "LinkedIn Campaign Manager"
+        },
+        {
+          "icon": "email",
+          "name": "Lemlist / Expandi / Waalaxy"
+        },
+        {
+          "icon": "hubspot",
+          "name": "HubSpot CRM"
+        },
+        {
+          "icon": "salesforce",
+          "name": "Salesforce"
+        },
+        {
+          "icon": "zapier",
+          "name": "Zapier (Data Sync)"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,598 @@
+{
+  "slug": "newsletter-design",
+  "en": {
+    "name": "Newsletter Design & Strategy",
+    "shortDescription": "Keep your audience engaged and hungry for your content. We design, write, and manage beautiful, high-performing email newsletters that build community and drive sales.",
+    "fullDescription": "A newsletter shouldn't just be a digital flyer you send out once a month; it should be an owned media asset that your audience actually looks forward to reading. Generic, image-heavy emails that get caught in the 'Promotions' tab are a thing of the past. Our Newsletter Design & Strategy services focus on building a loyal community around your brand. We handle the entire process from start to finish. We design custom, responsive HTML templates that render perfectly across all email clients (Gmail, Outlook, Apple Mail) and devices. Our copywriters craft engaging, value-driven content—whether it's industry curation, thought leadership, or product updates—that matches your brand voice. We manage your subscriber lists, optimize send times, and implement rigorous A/B testing on subject lines to maximize Open Rates and Click-Through Rates (CTR). We transform your newsletter into a powerful engine for customer retention and recurring revenue.",
+    "features": [
+      "Custom, Responsive HTML Template Design",
+      "Content Curation & Copywriting",
+      "Subject Line & Preview Text Optimization",
+      "List Segmentation & Deliverability Management",
+      "A/B Testing (Subject lines, send times, CTAs)",
+      "Dark Mode Email Optimization",
+      "Interactive Email Elements (AMP for Email)",
+      "Comprehensive Performance Reporting"
+    ],
+    "benefits": [
+      "Build a direct, algorithm-free line of communication with your audience",
+      "Ensure your emails look beautiful and professional on every device",
+      "Increase Open Rates and Click-Through Rates with data-driven testing",
+      "Drive consistent, recurring traffic back to your website or blog",
+      "Establish your brand as an authoritative thought leader in your industry",
+      "Monetize your audience effectively without feeling overly promotional"
+    ],
+    "metaTitle": "Email Newsletter Design & Management Services | PakSoft",
+    "metaDescription": "Create email newsletters your audience actually wants to read. We provide custom newsletter design, copywriting, and strategy to boost engagement.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Strategy & Audience Profiling",
+          "description": "We define the goal of your newsletter (educational, promotional, curational) and profile your audience to determine the right tone, frequency, and content mix."
+        },
+        {
+          "step": 2,
+          "title": "Custom Template Design",
+          "description": "Our UI designers create bespoke, mobile-responsive email templates that align with your brand identity, ensuring accessibility and Dark Mode compatibility."
+        },
+        {
+          "step": 3,
+          "title": "Content Creation & Copywriting",
+          "description": "We don't just design; we write. Our copywriters craft engaging editorial content, curate industry news, and write compelling subject lines designed to maximize opens."
+        },
+        {
+          "step": 4,
+          "title": "Coding & Client Testing",
+          "description": "We code the designs into clean HTML and use tools like Litmus to test rendering across 90+ email clients and devices, ensuring it never breaks in Outlook or Gmail."
+        },
+        {
+          "step": 5,
+          "title": "Segmentation & Scheduling",
+          "description": "We segment your list based on user preferences or behavior, set up the campaign in your ESP (Mailchimp, Klaviyo, etc.), and schedule it for the optimal send time."
+        },
+        {
+          "step": 6,
+          "title": "A/B Testing & Analytics",
+          "description": "We continuously A/B test subject lines, from names, and CTA placements. Post-send, we analyze Open Rates, CTR, and unsubscribes to refine the next issue."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What Email Service Providers (ESPs) do you work with?",
+          "answer": "We are platform agnostic. We frequently design and manage newsletters in Mailchimp, Klaviyo, HubSpot, ConvertKit, ActiveCampaign, Substack, and Beehiiv."
+        },
+        {
+          "question": "How often should I send a newsletter?",
+          "answer": "It depends on your capacity to provide value. Weekly is the gold standard for media brands, while bi-weekly or monthly might be better for B2B services. Consistency is more important than frequency."
+        },
+        {
+          "question": "Do you write the content, or just design the template?",
+          "answer": "We can do both. We offer end-to-end management where we write the content, or we can simply design the reusable templates for your in-house team to populate."
+        },
+        {
+          "question": "Why do my current emails look broken in Microsoft Outlook?",
+          "answer": "Outlook uses a very old rendering engine (Microsoft Word's engine) which doesn't support modern web standards. We code our emails using specific 'ghost tables' to ensure they render perfectly in Outlook."
+        },
+        {
+          "question": "How do you improve Open Rates?",
+          "answer": "Open rates are driven by three things: Sender Reputation, Subject Line, and Preview Text. We rigorously A/B test subject lines and maintain strict list hygiene to ensure emails hit the Primary inbox."
+        },
+        {
+          "question": "What is 'Dark Mode Optimization' in emails?",
+          "answer": "Many users read emails in Dark Mode. If your logos have white backgrounds or your text colors don't invert properly, the email becomes unreadable. We code specifically to adapt to Dark Mode."
+        },
+        {
+          "question": "Can you help grow my subscriber list?",
+          "answer": "Yes. While this service focuses on the newsletter itself, we integrate it with our Conversion Rate Optimization strategies, designing high-converting pop-ups and lead magnets to grow your list."
+        },
+        {
+          "question": "Are your templates editable?",
+          "answer": "Absolutely. If you want to manage the sends yourself, we build modular, drag-and-drop templates in your ESP so you can easily swap images and text without touching code."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "figma",
+          "name": "Figma (UI Design)"
+        },
+        {
+          "icon": "html",
+          "name": "HTML/CSS (Email specific)"
+        },
+        {
+          "icon": "mailchimp",
+          "name": "Mailchimp / Klaviyo / ConvertKit"
+        },
+        {
+          "icon": "hubspot",
+          "name": "Substack / Beehiiv"
+        },
+        {
+          "icon": "api",
+          "name": "Litmus / Email on Acid (Testing)"
+        },
+        {
+          "icon": "analytics",
+          "name": "ESP Analytics"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Bülten (Newsletter) Tasarımı ve Stratejisi",
+    "shortDescription": "Kitlenizin ilgisini canlı tutun. Topluluk oluşturan ve satışları artıran güzel, yüksek performanslı e-posta bültenleri tasarlıyor, yazıyor ve yönetiyoruz.",
+    "fullDescription": "Bir bülten sadece ayda bir gönderdiğiniz dijital bir el ilanı olmamalıdır; kitlenizin okumayı dört gözle beklediği bir medya varlığı olmalıdır. 'Promosyonlar' sekmesine takılan genel, görsel ağırlıklı e-postalar geçmişte kaldı. Bülten Tasarımı ve Strateji hizmetlerimiz, markanızın etrafında sadık bir topluluk oluşturmaya odaklanır. Tüm süreci baştan sona yönetiyoruz. Tüm e-posta istemcilerinde (Gmail, Outlook, Apple Mail) ve cihazlarda mükemmel bir şekilde işlenen özel, duyarlı HTML şablonları tasarlıyoruz. Metin yazarlarımız, marka sesinizle eşleşen etkileşimli, değer odaklı içerikler hazırlar. Abone listelerinizi yönetiyor, gönderim sürelerini optimize ediyor ve Açılma Oranlarını (Open Rates) ve Tıklama Oranlarını (CTR) en üst düzeye çıkarmak için konu satırlarında titiz A/B testleri uyguluyoruz. Bülteninizi, müşteriyi elde tutma ve yinelenen gelir için güçlü bir motora dönüştürüyoruz.",
+    "features": [
+      "Özel, Duyarlı HTML Şablon Tasarımı",
+      "İçerik Kürasyonu ve Metin Yazarlığı",
+      "Konu Satırı (Subject Line) ve Önizleme Metni Optimizasyonu",
+      "Liste Segmentasyonu ve Teslim edilebilirlik Yönetimi",
+      "A/B Testi (Konu satırları, gönderme zamanları, CTA'lar)",
+      "Karanlık Mod (Dark Mode) E-posta Optimizasyonu",
+      "Etkileşimli E-posta Öğeleri (E-posta için AMP)",
+      "Kapsamlı Performans Raporlaması"
+    ],
+    "benefits": [
+      "Kitlenizle algoritmaya bağlı olmayan, doğrudan bir iletişim hattı kurun",
+      "E-postalarınızın her cihazda güzel ve profesyonel görünmesini sağlayın",
+      "Veriye dayalı testlerle Açılma Oranlarını ve Tıklama Oranlarını artırın",
+      "Web sitenize veya blogunuza tutarlı, yinelenen trafik çekin",
+      "Markanızı sektörünüzde otoriter bir düşünce lideri olarak konumlandırın",
+      "Aşırı promosyon hissi vermeden kitlenizden etkili bir şekilde para kazanın"
+    ],
+    "metaTitle": "E-posta Bülten Tasarımı ve Yönetimi | PakSoft",
+    "metaDescription": "Kitlenizin okumak isteyeceği e-posta bültenleri oluşturun. Etkileşimi artırmak için özel bülten tasarımı, metin yazarlığı ve strateji sunuyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Strateji ve Kitle Profili Çıkarma",
+          "description": "Bülteninizin hedefini (eğitici, promosyon, kürasyon) tanımlar ve doğru tonu, sıklığı ve içerik karışımını belirlemek için hedef kitlenizin profilini çıkarırız."
+        },
+        {
+          "step": 2,
+          "title": "Özel Şablon Tasarımı",
+          "description": "Arayüz (UI) tasarımcılarımız, erişilebilirlik ve Karanlık Mod uyumluluğu sağlayarak marka kimliğinizle uyumlu, mobil uyumlu özel e-posta şablonları oluşturur."
+        },
+        {
+          "step": 3,
+          "title": "İçerik Oluşturma ve Metin Yazarlığı",
+          "description": "Sadece tasarlamakla kalmıyor, yazıyoruz. Metin yazarlarımız ilgi çekici editoryal içerikler hazırlar, sektör haberlerini derler ve açılışları en üst düzeye çıkarmak için ikna edici konu satırları yazar."
+        },
+        {
+          "step": 4,
+          "title": "Kodlama ve İstemci Testi",
+          "description": "Tasarımı temiz HTML'ye kodluyoruz ve 90'dan fazla e-posta istemcisinde test etmek için Litmus gibi araçlar kullanıyoruz; Outlook veya Gmail'de asla bozulmamasını sağlıyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Segmentasyon ve Zamanlama",
+          "description": "Listenizi kullanıcı tercihlerine veya davranışlarına göre bölümlere ayırıyor, kampanyayı ESP'nizde (Mailchimp, Klaviyo vb.) ayarlıyor ve en uygun gönderim zamanı için planlıyoruz."
+        },
+        {
+          "step": 6,
+          "title": "A/B Testi ve Analitik",
+          "description": "Konu satırlarını ve CTA yerleşimlerini sürekli olarak A/B testine tabi tutuyoruz. Gönderim sonrası, bir sonraki sayıyı iyileştirmek için Açılma Oranlarını, TO'yu ve abonelik iptallerini analiz ediyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Hangi E-posta Servis Sağlayıcıları (ESP'ler) ile çalışıyorsunuz?",
+          "answer": "Platformdan bağımsızız. E-bültenleri sıklıkla Mailchimp, Klaviyo, HubSpot, ConvertKit, ActiveCampaign, Substack ve Beehiiv'de tasarlıyor ve yönetiyoruz."
+        },
+        {
+          "question": "Ne sıklıkla bir bülten göndermeliyim?",
+          "answer": "Değer sağlama kapasitenize bağlıdır. Medya markaları için haftalık idealdir, B2B hizmetleri için iki haftada bir veya aylık daha iyi olabilir. Tutarlılık, sıklıktan daha önemlidir."
+        },
+        {
+          "question": "İçeriği siz mi yazıyorsunuz yoksa sadece şablonu mu tasarlıyorsunuz?",
+          "answer": "Her ikisini de yapabiliriz. İçeriği bizim yazdığımız uçtan uca bir yönetim sunabiliriz veya şirket içi ekibinizin doldurması için yeniden kullanılabilir şablonlar tasarlayabiliriz."
+        },
+        {
+          "question": "Mevcut e-postalarım neden Microsoft Outlook'ta bozuk görünüyor?",
+          "answer": "Outlook, modern web standartlarını desteklemeyen çok eski bir işleme motoru (Word'ün motoru) kullanır. E-postalarımızın Outlook'ta mükemmel görünmesini sağlamak için özel kodlar kullanıyoruz."
+        },
+        {
+          "question": "Açılma Oranlarını (Open Rates) nasıl iyileştiriyorsunuz?",
+          "answer": "Açılma oranları üç şeye bağlıdır: Gönderen İtibarı, Konu Satırı ve Önizleme Metni. Konu satırlarını A/B testine tabi tutuyor ve e-postaların Birincil (Primary) gelen kutusuna düşmesini sağlıyoruz."
+        },
+        {
+          "question": "E-postalarda 'Karanlık Mod Optimizasyonu' nedir?",
+          "answer": "Birçok kullanıcı e-postaları Karanlık Modda okur. Logolarınızın arka planı beyazsa veya metin renkleriniz düzgün bir şekilde tersine çevrilmiyorsa e-posta okunamaz hale gelir. Kodlamayı buna göre yapıyoruz."
+        },
+        {
+          "question": "Abone listemi büyütmeme yardımcı olabilir misiniz?",
+          "answer": "Evet. Bu hizmet bültenin kendisine odaklansa da, listemizi büyütmek için yüksek dönüşümlü pop-up'lar tasarlayarak Dönüşüm Oranı Optimizasyonu stratejilerimizle entegre ediyoruz."
+        },
+        {
+          "question": "Şablonlarınız düzenlenebilir mi?",
+          "answer": "Kesinlikle. Gönderimleri kendiniz yönetmek isterseniz, koda dokunmadan görselleri ve metni kolayca değiştirebilmeniz için ESP'nizde sürükle-bırak şablonlar oluşturuyoruz."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "figma",
+          "name": "Figma (UI Design)"
+        },
+        {
+          "icon": "html",
+          "name": "HTML/CSS (Email specific)"
+        },
+        {
+          "icon": "mailchimp",
+          "name": "Mailchimp / Klaviyo / ConvertKit"
+        },
+        {
+          "icon": "hubspot",
+          "name": "Substack / Beehiiv"
+        },
+        {
+          "icon": "api",
+          "name": "Litmus / Email on Acid (Testing)"
+        },
+        {
+          "icon": "analytics",
+          "name": "ESP Analytics"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Newsletter Design & Strategie",
+    "shortDescription": "Halten Sie Ihre Zielgruppe engagiert. Wir entwerfen, schreiben und verwalten wunderschöne, leistungsstarke E-Mail-Newsletter, die Community aufbauen und Verkäufe fördern.",
+    "fullDescription": "Ein Newsletter sollte nicht nur ein digitaler Flyer sein, den Sie einmal im Monat verschicken; er sollte ein Owned-Media-Asset sein, auf das sich Ihre Zielgruppe freut. Generische, bildlastige E-Mails, die im Tab 'Werbung' landen, gehören der Vergangenheit an. Unsere Dienstleistungen konzentrieren sich darauf, eine treue Community rund um Ihre Marke aufzubauen. Wir übernehmen den gesamten Prozess von Anfang bis Ende. Wir entwerfen benutzerdefinierte, responsive HTML-Vorlagen, die in allen E-Mail-Clients (Gmail, Outlook, Apple Mail) perfekt dargestellt werden. Unsere Texter erstellen fesselnde Inhalte – passend zu Ihrer Markenstimme. Wir verwalten Ihre Abonnentenlisten, optimieren Versandzeiten und führen strenge A/B-Tests durch, um Öffnungs- und Klickraten zu maximieren. Wir verwandeln Ihren Newsletter in einen Motor für Kundenbindung.",
+    "features": [
+      "Individuelles, responsives HTML-Template-Design",
+      "Content Curation & Copywriting",
+      "Optimierung von Betreffzeilen & Preheader-Text",
+      "Listen-Segmentierung & Deliverability-Management",
+      "A/B-Testing (Betreffzeilen, Sendezeiten, CTAs)",
+      "Dark Mode E-Mail Optimierung",
+      "Interaktive E-Mail-Elemente (AMP for Email)",
+      "Umfassendes Performance-Reporting"
+    ],
+    "benefits": [
+      "Bauen Sie einen direkten, Algorithmus-freien Kommunikationskanal auf",
+      "Stellen Sie sicher, dass Ihre E-Mails auf jedem Gerät professionell aussehen",
+      "Steigern Sie Öffnungs- und Klickraten mit datengetriebenen Tests",
+      "Generieren Sie wiederkehrenden Traffic auf Ihre Website",
+      "Etablieren Sie Ihre Marke als Thought Leader in Ihrer Branche",
+      "Monetarisieren Sie Ihre Zielgruppe effektiv, ohne zu werblich zu wirken"
+    ],
+    "metaTitle": "E-Mail Newsletter Design & Management | PakSoft",
+    "metaDescription": "Erstellen Sie E-Mail-Newsletter, die Ihre Zielgruppe wirklich lesen will. Wir bieten individuelles Design, Copywriting und Strategie für mehr Engagement.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Strategie & Zielgruppen-Profiling",
+          "description": "Wir definieren das Ziel Ihres Newsletters (lehrreich, verkaufsfördernd) und analysieren die Zielgruppe, um Tonalität, Frequenz und Content-Mix zu bestimmen."
+        },
+        {
+          "step": 2,
+          "title": "Individuelles Template-Design",
+          "description": "Unsere UI-Designer erstellen maßgeschneiderte, mobil-responsive E-Mail-Templates, die zu Ihrer Marke passen – inklusive Barrierefreiheit und Dark Mode."
+        },
+        {
+          "step": 3,
+          "title": "Content Erstellung & Copywriting",
+          "description": "Wir designen nicht nur, wir schreiben auch. Unsere Texter verfassen redaktionelle Inhalte und optimieren Betreffzeilen für maximale Öffnungsraten."
+        },
+        {
+          "step": 4,
+          "title": "Coding & Client-Testing",
+          "description": "Wir programmieren sauberes HTML und nutzen Tools wie Litmus, um das Rendering in 90+ E-Mail-Clients zu testen. Kein zerschossenes Layout in Outlook!"
+        },
+        {
+          "step": 5,
+          "title": "Segmentierung & Planung",
+          "description": "Wir segmentieren Ihre Liste nach Verhalten, richten die Kampagne in Ihrem ESP (Mailchimp, Klaviyo etc.) ein und planen den optimalen Sendezeitpunkt."
+        },
+        {
+          "step": 6,
+          "title": "A/B-Testing & Analytics",
+          "description": "Wir testen Betreffzeilen und CTAs kontinuierlich. Nach dem Versand analysieren wir Öffnungsraten und Abmeldungen, um die nächste Ausgabe zu verbessern."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Mit welchen E-Mail-Service-Providern (ESPs) arbeiten Sie?",
+          "answer": "Wir sind plattformunabhängig. Wir designen und verwalten Newsletter häufig in Mailchimp, Klaviyo, HubSpot, ConvertKit, Substack und Beehiiv."
+        },
+        {
+          "question": "Wie oft sollte ich einen Newsletter versenden?",
+          "answer": "Es hängt von Ihrem Mehrwert ab. Wöchentlich ist der Goldstandard für Medienmarken, während zweiwöchentlich oder monatlich für B2B oft besser ist. Konsistenz ist wichtiger als Frequenz."
+        },
+        {
+          "question": "Schreiben Sie die Inhalte oder designen Sie nur das Template?",
+          "answer": "Beides ist möglich. Wir bieten End-to-End-Management inkl. Copywriting, oder wir designen wiederverwendbare Templates für Ihr Inhouse-Team."
+        },
+        {
+          "question": "Warum sehen meine aktuellen E-Mails in Outlook fehlerhaft aus?",
+          "answer": "Outlook nutzt eine sehr alte Rendering-Engine (von MS Word), die moderne Webstandards nicht unterstützt. Wir codieren mit speziellen Tabellen, damit es in Outlook perfekt aussieht."
+        },
+        {
+          "question": "Wie verbessern Sie die Öffnungsraten?",
+          "answer": "Öffnungsraten hängen von der Absenderreputation, der Betreffzeile und dem Preheader ab. Wir testen Betreffzeilen via A/B-Tests und pflegen die Liste, um Spam-Ordner zu vermeiden."
+        },
+        {
+          "question": "Was bedeutet 'Dark Mode Optimierung' bei E-Mails?",
+          "answer": "Viele Nutzer lesen E-Mails im Dark Mode. Wenn Ihr Logo keinen transparenten Hintergrund hat oder Textfarben sich nicht invertieren, ist die Mail unlesbar. Wir passen den Code entsprechend an."
+        },
+        {
+          "question": "Können Sie helfen, meine Abonnentenliste zu vergrößern?",
+          "answer": "Ja. Wir integrieren dies in unsere Conversion-Rate-Optimierung und designen hochkonvertierende Pop-ups und Lead-Magneten für Ihre Website."
+        },
+        {
+          "question": "Sind Ihre Templates bearbeitbar?",
+          "answer": "Absolut. Wenn Sie den Versand selbst übernehmen wollen, bauen wir modulare Drag-and-Drop-Templates in Ihrem ESP, damit Sie Bilder und Texte ohne Code austauschen können."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "figma",
+          "name": "Figma (UI Design)"
+        },
+        {
+          "icon": "html",
+          "name": "HTML/CSS (Email specific)"
+        },
+        {
+          "icon": "mailchimp",
+          "name": "Mailchimp / Klaviyo / ConvertKit"
+        },
+        {
+          "icon": "hubspot",
+          "name": "Substack / Beehiiv"
+        },
+        {
+          "icon": "api",
+          "name": "Litmus / Email on Acid (Testing)"
+        },
+        {
+          "icon": "analytics",
+          "name": "ESP Analytics"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "نیوز لیٹر (Newsletter) ڈیزائن اور حکمت عملی",
+    "shortDescription": "اپنے سامعین کو مصروف رکھیں۔ ہم خوبصورت، اعلیٰ کارکردگی والے ای میل نیوز لیٹرز ڈیزائن اور لکھتے ہیں جو کمیونٹی بناتے ہیں اور فروخت بڑھاتے ہیں۔",
+    "fullDescription": "نیوز لیٹر صرف ایک ڈیجیٹل فلائر نہیں ہونا چاہیے جسے آپ مہینے میں ایک بار بھیجتے ہیں۔ یہ ایک ایسا اثاثہ ہونا چاہیے جسے آپ کے سامعین پڑھنے کے منتظر ہوں۔ وہ عام ای میلز جو 'Promotions' ٹیب میں پھنس جاتی ہیں، اب ماضی کا حصہ ہیں۔ ہماری نیوز لیٹر ڈیزائن اور حکمت عملی کی خدمات آپ کے برانڈ کے ارد گرد ایک وفادار کمیونٹی بنانے پر مرکوز ہیں۔ ہم شروع سے آخر تک پورے عمل کو سنبھالتے ہیں۔ ہم حسب ضرورت HTML ٹیمپلیٹس ڈیزائن کرتے ہیں جو تمام ای میل کلائنٹس (Gmail, Outlook) اور آلات پر بالکل درست نظر آتے ہیں۔ ہمارے کاپی رائٹرز آپ کے برانڈ کی آواز سے مماثل پرکشش مواد تیار کرتے ہیں۔ ہم آپ کی سبسکرائبر لسٹوں کا نظم کرتے ہیں، اور اوپن ریٹس (Open Rates) اور کلک تھرو ریٹس (CTR) کو زیادہ سے زیادہ کرنے کے لیے موضوع کی لائنوں پر سخت A/B ٹیسٹنگ لاگو کرتے ہیں۔",
+    "features": [
+      "حسب ضرورت اور ریسپانسیو HTML ٹیمپلیٹ ڈیزائن",
+      "مواد کی تیاری اور کاپی رائٹنگ",
+      "سبجیکٹ لائن (Subject Line) اور پیش نظارہ متن کی آپٹیمائزیشن",
+      "فہرست کی تقسیم (Segmentation) اور ڈیلیوری کا انتظام",
+      "A/B ٹیسٹنگ (موضوع کی لکیریں، بھیجنے کا وقت، CTAs)",
+      "ڈارک موڈ (Dark Mode) ای میل آپٹیمائزیشن",
+      "انٹرایکٹو ای میل عناصر (AMP for Email)",
+      "جامع کارکردگی کی رپورٹنگ"
+    ],
+    "benefits": [
+      "اپنے سامعین کے ساتھ براہ راست اور الگورتھم سے پاک رابطہ قائم کریں",
+      "یقینی بنائیں کہ آپ کی ای میلز ہر ڈیوائس پر خوبصورت اور پروفیشنل لگیں",
+      "ڈیٹا پر مبنی جانچ کے ساتھ اوپن ریٹس اور کلک تھرو ریٹس میں اضافہ کریں",
+      "اپنی ویب سائٹ یا بلاگ پر مسلسل، بار بار ٹریفک لائیں",
+      "اپنے برانڈ کو اپنی صنعت میں ایک مستند رہنما کے طور پر قائم کریں",
+      "انتہائی پروموشنل محسوس کیے بغیر اپنے سامعین سے مؤثر طریقے سے کمائی کریں"
+    ],
+    "metaTitle": "ای میل نیوز لیٹر ڈیزائن اور مینجمنٹ سروسز | PakSoft",
+    "metaDescription": "ایسے ای میل نیوز لیٹرز بنائیں جنہیں آپ کے سامعین واقعی پڑھنا چاہتے ہوں۔ ہم مصروفیت بڑھانے کے لیے اپنی مرضی کے نیوز لیٹر کا ڈیزائن اور حکمت عملی فراہم کرتے ہیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "حکمت عملی اور سامعین کی پروفائلنگ",
+          "description": "ہم آپ کے نیوز لیٹر کا ہدف متعین کرتے ہیں اور صحیح لہجے، فریکوئنسی اور مواد کے مرکب کا تعین کرنے کے لیے آپ کے سامعین کی پروفائل بناتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "کسٹم ٹیمپلیٹ ڈیزائن",
+          "description": "ہمارے UI ڈیزائنرز حسب ضرورت، موبائل ریسپانسیو ای میل ٹیمپلیٹس بناتے ہیں جو آپ کی برانڈ شناخت کے ساتھ ہم آہنگ ہوتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "مواد کی تخلیق اور کاپی رائٹنگ",
+          "description": "ہم صرف ڈیزائن نہیں کرتے؛ ہم لکھتے ہیں۔ ہمارے مصنفین پرکشش مواد اور موضوع کی بہترین لائنیں لکھتے ہیں تاکہ ای میل زیادہ کھولی جائے۔"
+        },
+        {
+          "step": 4,
+          "title": "کوڈنگ اور کلائنٹ ٹیسٹنگ",
+          "description": "ہم ڈیزائنز کو کلین HTML میں کوڈ کرتے ہیں اور Litmus جیسے ٹولز کا استعمال کرتے ہوئے انہیں 90 سے زائد ای میل کلائنٹس پر ٹیسٹ کرتے ہیں۔"
+        },
+        {
+          "step": 5,
+          "title": "تقسیم اور شیڈولنگ",
+          "description": "ہم آپ کی فہرست کو صارفین کی ترجیحات کی بنیاد پر تقسیم کرتے ہیں اور بھیجنے کے بہترین وقت کے لیے مہم کا شیڈول بناتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "A/B ٹیسٹنگ اور تجزیات",
+          "description": "ہم موضوع کی لائنوں کو مسلسل جانچتے ہیں۔ بھیجنے کے بعد، ہم اگلے شمارے کو بہتر بنانے کے لیے اوپن ریٹس اور CTR کا تجزیہ کرتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "آپ کن ای میل سروس پرووائیڈرز (ESPs) کے ساتھ کام کرتے ہیں؟",
+          "answer": "ہم کسی ایک پلیٹ فارم تک محدود نہیں ہیں۔ ہم اکثر Mailchimp, Klaviyo, HubSpot, ConvertKit, Substack اور Beehiiv میں نیوز لیٹر ڈیزائن اور منظم کرتے ہیں۔"
+        },
+        {
+          "question": "مجھے کتنی بار نیوز لیٹر بھیجنا چاہیے؟",
+          "answer": "یہ آپ کی ویلیو فراہم کرنے کی صلاحیت پر منحصر ہے۔ میڈیا برانڈز کے لیے ہفتہ وار بہترین ہے، جب کہ B2B سروسز کے لیے ماہانہ بہتر ہو سکتا ہے۔"
+        },
+        {
+          "question": "کیا آپ مواد لکھتے ہیں، یا صرف ٹیمپلیٹ ڈیزائن کرتے ہیں؟",
+          "answer": "ہم دونوں کر سکتے ہیں۔ ہم مکمل مینجمنٹ پیش کرتے ہیں جہاں ہم مواد لکھتے ہیں، یا ہم آپ کی ان ہاؤس ٹیم کے استعمال کے لیے دوبارہ استعمال کے قابل ٹیمپلیٹس ڈیزائن کر سکتے ہیں۔"
+        },
+        {
+          "question": "مائیکروسافٹ آؤٹ لک میں میری ای میلز خراب کیوں لگتی ہیں؟",
+          "answer": "Outlook ایک بہت پرانا رینڈرنگ انجن استعمال کرتا ہے جو جدید ویب معیارات کو سپورٹ نہیں کرتا۔ ہم مخصوص کوڈنگ استعمال کرتے ہیں تاکہ یہ Outlook میں بالکل صحیح نظر آئیں۔"
+        },
+        {
+          "question": "آپ اوپن ریٹس کو کیسے بہتر بناتے ہیں؟",
+          "answer": "یہ تین چیزوں پر منحصر ہے: بھیجنے والے کی ساکھ، سبجیکٹ لائن، اور پیش نظارہ متن۔ ہم موضوع کی لائنوں کی جانچ کرتے ہیں اور ای میلز کو پرائمری ان باکس میں پہنچانے کو یقینی بناتے ہیں۔"
+        },
+        {
+          "question": "ای میلز میں 'ڈارک موڈ آپٹیمائزیشن' کیا ہے؟",
+          "answer": "بہت سے صارفین ڈارک موڈ میں ای میلز پڑھتے ہیں۔ ہم خاص طور پر ڈارک موڈ کے مطابق ہونے کے لیے ای میلز کو کوڈ کرتے ہیں تاکہ متن قابل فہم رہے۔"
+        },
+        {
+          "question": "کیا آپ میری سبسکرائبر لسٹ بڑھانے میں مدد کر سکتے ہیں؟",
+          "answer": "ہاں۔ ہم اسے اپنی کنورژن ریٹ آپٹیمائزیشن حکمت عملیوں کے ساتھ مربوط کرتے ہیں، اور آپ کی فہرست بڑھانے کے لیے ہائی کنورٹنگ پاپ اپس ڈیزائن کرتے ہیں۔"
+        },
+        {
+          "question": "کیا آپ کے ٹیمپلیٹس قابل تدوین (Editable) ہیں؟",
+          "answer": "بالکل۔ اگر آپ خود ای میلز بھیجنا چاہتے ہیں، تو ہم آپ کے ESP میں ڈریگ اینڈ ڈراپ ٹیمپلیٹس بناتے ہیں تاکہ آپ کوڈ کو چھوئے بغیر تصاویر اور متن کو آسانی سے تبدیل کر سکیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "figma",
+          "name": "Figma (UI Design)"
+        },
+        {
+          "icon": "html",
+          "name": "HTML/CSS (Email specific)"
+        },
+        {
+          "icon": "mailchimp",
+          "name": "Mailchimp / Klaviyo / ConvertKit"
+        },
+        {
+          "icon": "hubspot",
+          "name": "Substack / Beehiiv"
+        },
+        {
+          "icon": "api",
+          "name": "Litmus / Email on Acid (Testing)"
+        },
+        {
+          "icon": "analytics",
+          "name": "ESP Analytics"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تصميم واستراتيجية النشرات الإخبارية (Newsletters)",
+    "shortDescription": "حافظ على تفاعل جمهورك. نقوم بتصميم وكتابة وإدارة نشرات بريد إلكتروني إخبارية جميلة وعالية الأداء تبني مجتمعاً وتدفع المبيعات.",
+    "fullDescription": "لا ينبغي أن تكون النشرة الإخبارية مجرد نشرة رقمية ترسلها مرة واحدة في الشهر؛ يجب أن تكون أصلاً إعلامياً يتطلع جمهورك بالفعل إلى قراءته. رسائل البريد الإلكتروني العامة والمليئة بالصور والتي تعلق في علامة التبويب 'العروض الترويجية' أصبحت شيئاً من الماضي. تركز خدمات تصميم واستراتيجية النشرات الإخبارية لدينا على بناء مجتمع مخلص حول علامتك التجارية. نحن نتعامل مع العملية برمتها من البداية إلى النهاية. نقوم بتصميم قوالب HTML مخصصة ومتجاوبة تظهر بشكل مثالي عبر جميع عملاء البريد الإلكتروني (Gmail، Outlook، Apple Mail) والأجهزة. يصوغ كتابنا محتوى جذاباً يعتمد على القيمة يتناسب مع صوت علامتك التجارية. نحن ندير قوائم المشتركين لديك، ونحسن أوقات الإرسال، وننفذ اختبارات A/B صارمة على سطور الموضوع لزيادة معدلات الفتح (Open Rates) ومعدلات النقر (CTR). نحن نحول نشرتك الإخبارية إلى محرك قوي للاحتفاظ بالعملاء والإيرادات المتكررة.",
+    "features": [
+      "تصميم قوالب HTML مخصصة ومتجاوبة",
+      "تنظيم المحتوى وكتابة الإعلانات/المقالات",
+      "تحسين سطر الموضوع والنص التمهيدي (Preview Text)",
+      "تقسيم القوائم وإدارة إمكانية التسليم",
+      "اختبار A/B (سطور الموضوع، أوقات الإرسال، CTAs)",
+      "تحسين البريد الإلكتروني للوضع الداكن (Dark Mode)",
+      "عناصر البريد الإلكتروني التفاعلية (AMP للبريد الإلكتروني)",
+      "تقارير أداء شاملة"
+    ],
+    "benefits": [
+      "بناء خط اتصال مباشر خالٍ من الخوارزميات مع جمهورك",
+      "ضمان ظهور رسائل البريد الإلكتروني بشكل جميل واحترافي على كل جهاز",
+      "زيادة معدلات الفتح والنقر من خلال الاختبارات المستندة إلى البيانات",
+      "توجيه حركة مرور متكررة ومستمرة للعودة إلى موقع الويب أو المدونة",
+      "تأسيس علامتك التجارية كقائد فكر موثوق في مجالك",
+      "استثمار جمهورك بفعالية دون الشعور بالترويج المفرط"
+    ],
+    "metaTitle": "خدمات تصميم وإدارة النشرات الإخبارية عبر البريد الإلكتروني | PakSoft",
+    "metaDescription": "أنشئ نشرات إخبارية عبر البريد الإلكتروني يرغب جمهورك في قراءتها. نقدم تصميماً مخصصاً وكتابة محتوى واستراتيجية لتعزيز التفاعل.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "الاستراتيجية وتحليل الجمهور",
+          "description": "نحدد هدف النشرة الإخبارية (تعليمي، ترويجي، تنظيمي) ونحلل جمهورك لتحديد النغمة والتكرار والمزيج المناسب للمحتوى."
+        },
+        {
+          "step": 2,
+          "title": "تصميم قالب مخصص",
+          "description": "ينشئ مصممو واجهة المستخدم قوالب بريد إلكتروني مخصصة متجاوبة مع الأجهزة المحمولة وتتوافق مع هويتك، مع ضمان إمكانية الوصول والتوافق مع الوضع الداكن."
+        },
+        {
+          "step": 3,
+          "title": "إنشاء المحتوى وكتابة النصوص",
+          "description": "نحن لا نصمم فقط بل نكتب. يكتب كتابنا محتوى تحريرياً جذاباً، وينظمون أخبار الصناعة، ويصوغون سطور موضوع مقنعة لزيادة الفتح."
+        },
+        {
+          "step": 4,
+          "title": "الترميز (Coding) واختبار العملاء",
+          "description": "نبرمج التصميمات إلى HTML نظيف ونستخدم أدوات لاختبار العرض عبر أكثر من 90 عميل بريد إلكتروني، مما يضمن عدم كسر التصميم في Outlook أو Gmail."
+        },
+        {
+          "step": 5,
+          "title": "التقسيم والجدولة",
+          "description": "نقوم بتقسيم قائمتك بناءً على تفضيلات المستخدم، وإعداد الحملة في مزود الخدمة (Mailchimp، Klaviyo)، وجدولتها لوقت الإرسال الأمثل."
+        },
+        {
+          "step": 6,
+          "title": "اختبار A/B والتحليلات",
+          "description": "نختبر سطور الموضوع ومواضع CTA باستمرار. بعد الإرسال، نحلل معدلات الفتح والنقر وإلغاء الاشتراك لتحسين العدد التالي."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما هي شركات تقديم خدمات البريد الإلكتروني (ESPs) التي تعملون معها؟",
+          "answer": "نحن نتعامل مع جميع المنصات. غالباً ما نصمم وندير النشرات الإخبارية في Mailchimp و Klaviyo و HubSpot و ConvertKit و Substack و Beehiiv."
+        },
+        {
+          "question": "كم مرة يجب أن أرسل نشرة إخبارية؟",
+          "answer": "يعتمد ذلك على قدرتك على تقديم قيمة. الأسبوعي هو المعيار الذهبي للعلامات الإعلامية، في حين أن نصف الشهري أو الشهري قد يكون أفضل لخدمات B2B."
+        },
+        {
+          "question": "هل تكتبون المحتوى، أم تصممون القالب فقط؟",
+          "answer": "يمكننا القيام بالأمرين. نقدم إدارة شاملة حيث نكتب المحتوى، أو يمكننا ببساطة تصميم القوالب القابلة لإعادة الاستخدام لملئها بواسطة فريقك الداخلي."
+        },
+        {
+          "question": "لماذا تبدو رسائلي الإلكترونية الحالية مكسورة التصميم في Microsoft Outlook؟",
+          "answer": "يستخدم Outlook محرك عرض قديماً جداً لا يدعم معايير الويب الحديثة. نقوم ببرمجة رسائلنا باستخدام 'جداول شبحية' لضمان عرضها بشكل مثالي في Outlook."
+        },
+        {
+          "question": "كيف تحسنون معدلات الفتح (Open Rates)؟",
+          "answer": "تعتمد معدلات الفتح على ثلاثة أشياء: سمعة المرسل، وسطر الموضوع، والنص التمهيدي. نقوم باختبار A/B لسطور الموضوع بدقة لضمان وصول الرسائل للبريد الأساسي."
+        },
+        {
+          "question": "ما هو 'تحسين الوضع الداكن' في رسائل البريد الإلكتروني؟",
+          "answer": "يقرأ العديد من المستخدمين الرسائل في الوضع الداكن. إذا كان لشعاراتك خلفية بيضاء، فستصبح الرسالة غير قابلة للقراءة. نحن نبرمج الرسائل لتتكيف خصيصاً مع الوضع الداكن."
+        },
+        {
+          "question": "هل يمكنكم المساعدة في تنمية قائمة المشتركين الخاصة بي؟",
+          "answer": "نعم. نقوم بدمج ذلك مع استراتيجيات تحسين معدل التحويل (CRO) الخاصة بنا، ونصمم نوافذ منبثقة عالية التحويل لتنمية قائمتك من خلال موقعك."
+        },
+        {
+          "question": "هل قوالبكم قابلة للتحرير؟",
+          "answer": "بالتأكيد. إذا كنت ترغب في إدارة الإرسال بنفسك، فنحن نبني قوالب السحب والإفلات المعيارية في حسابك حتى تتمكن من تبديل الصور والنصوص بسهولة."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "figma",
+          "name": "Figma (UI Design)"
+        },
+        {
+          "icon": "html",
+          "name": "HTML/CSS (Email specific)"
+        },
+        {
+          "icon": "mailchimp",
+          "name": "Mailchimp / Klaviyo / ConvertKit"
+        },
+        {
+          "icon": "hubspot",
+          "name": "Substack / Beehiiv"
+        },
+        {
+          "icon": "api",
+          "name": "Litmus / Email on Acid (Testing)"
+        },
+        {
+          "icon": "analytics",
+          "name": "ESP Analytics"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1037 @@
+{
+  "programmatic-seo": {
+    "en": {
+      "name": "Programmatic SEO",
+      "shortDescription": "Scale your organic traffic exponentially without writing thousands of blog posts manually. We build programmatic SEO architectures that generate thousands of high-quality landing pages to capture long-tail search queries on autopilot.",
+      "fullDescription": "If your product or service covers multiple locations, categories, or integrations, manually writing a page for every combination is impossible. Programmatic SEO (pSEO) solves this by using a structured database to programmatically generate thousands of search-optimized landing pages. We engineer robust pSEO engines by combining large datasets, dynamic templates, and AI-assisted content generation. Whether you need 'Best [Service] in [City]' pages, 'Integrate [App A] with [App B]' templates, or massive e-commerce category expansions, we build the architecture to rank for thousands of low-competition, high-intent long-tail keywords. We ensure every generated page provides unique value, avoids thin-content penalties from Google, and converts visitors into leads or customers at scale.",
+      "features": [
+        "Keyword Matrix & Search Volume Modeling",
+        "Database Architecture (Airtable, PostgreSQL)",
+        "Dynamic Page Template Design",
+        "AI-Assisted Unique Content Generation",
+        "Technical SEO & Crawl Budget Optimization",
+        "Internal Linking Architecture Automation",
+        "URL Routing & Sitemap Generation",
+        "Indexation Monitoring & Performance Tracking"
+      ],
+      "benefits": [
+        "Rank for thousands of high-converting long-tail keywords effortlessly",
+        "Drastically reduce the cost-per-page compared to manual content creation",
+        "Scale your organic traffic exponentially in a fraction of the time",
+        "Dominate local search markets across hundreds of cities simultaneously",
+        "Establish massive topical authority in your industry's niche",
+        "Create a sustainable, compounding lead generation asset"
+      ],
+      "metaTitle": "Programmatic SEO Agency | Scale Organic Traffic | PakSoft",
+      "metaDescription": "Build programmatic SEO engines that automatically generate thousands of high-quality, search-optimized landing pages to capture long-tail keywords at scale.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Keyword & Data Modeling",
+            "description": "We start by identifying a high-volume head keyword and modifying it with variables (like location, industry, or feature) to create a vast matrix of target queries."
+          },
+          {
+            "step": 2,
+            "title": "Data Collection & Curation",
+            "description": "We scrape, purchase, or manually compile the necessary data points—such as local statistics or product features—to populate the dynamic fields on your pages."
+          },
+          {
+            "step": 3,
+            "title": "Template Design & Development",
+            "description": "Our designers and developers create a high-converting, technically sound page template that dynamically injects the data from our database to render unique pages."
+          },
+          {
+            "step": 4,
+            "title": "Content Generation & AI Integration",
+            "description": "To avoid duplicate content penalties, we use the OpenAI API and custom prompt engineering to generate unique, helpful text blocks for every single page variation."
+          },
+          {
+            "step": 5,
+            "title": "Deployment & Technical Setup",
+            "description": "We deploy the pages via Next.js, Webflow, or WordPress, ensuring proper internal linking, canonical tags, and XML sitemap generation so Google can crawl them."
+          },
+          {
+            "step": 6,
+            "title": "Indexation & Growth Monitoring",
+            "description": "Once live, we monitor Google Search Console to ensure the new pages are being indexed, fixing any crawl anomalies and tracking the influx of new organic traffic."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Will Google penalize programmatic SEO pages as spam?",
+            "answer": "Not if done correctly. Google penalizes 'thin' or 'duplicate' content. We ensure every programmatic page has unique value, unique AI copy, and distinct data points."
+          },
+          {
+            "question": "Is programmatic SEO right for my business?",
+            "answer": "It works best for businesses with variables: travel sites, SaaS integrations, or local services. If you only have one product in one location, traditional SEO is better."
+          },
+          {
+            "question": "How long does it take to build a programmatic SEO engine?",
+            "answer": "Depending on the complexity of the data and the CMS used, building the database, designing the template, and launching the pages typically takes 4 to 8 weeks."
+          },
+          {
+            "question": "How many pages will you generate?",
+            "answer": "We can generate from 500 to 50,000+ pages. The limit is based on available search volume and the amount of unique data we can source to make the pages valuable."
+          },
+          {
+            "question": "Do we need to migrate our website to a new platform for this?",
+            "answer": "Usually, no. We can build pSEO engines natively in Webflow, WordPress, or via a reverse proxy using a custom Next.js application that attaches to your current domain."
+          },
+          {
+            "question": "How do you get Google to index thousands of new pages quickly?",
+            "answer": "We build a flawless internal linking structure, create localized HTML sitemaps, optimize the XML sitemap, and use Google's Indexing API where applicable."
+          },
+          {
+            "question": "Where do you get the data to populate the pages?",
+            "answer": "We can use your internal database, public government APIs, commercial datasets, web scraping, or AI-generated data sets depending on what the template requires."
+          },
+          {
+            "question": "Can we update the pages after they are live?",
+            "answer": "Yes. Because the pages are connected to a central database, updating a field in the database will instantly update that specific data point across all live pages."
+          }
+        ],
+        "technologies": [
+          { "icon": "python", "name": "Python" },
+          { "icon": "nextjs", "name": "Next.js" },
+          { "icon": "webflow", "name": "Webflow" },
+          { "icon": "wordpress", "name": "WordPress" },
+          { "icon": "airtable", "name": "Airtable" },
+          { "icon": "openai", "name": "OpenAI API" },
+          { "icon": "postgresql", "name": "PostgreSQL" },
+          { "icon": "gsc", "name": "Google Search Console" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Programmatik SEO",
+      "shortDescription": "Binlerce blog yazısını manuel olarak yazmadan organik trafiğinizi katlanarak artırın. Uzun kuyruklu arama sorgularını otopilotta yakalamak için binlerce yüksek kaliteli açılış sayfası oluşturan programatik SEO mimarileri kuruyoruz.",
+      "fullDescription": "Ürününüz veya hizmetiniz birden fazla konumu, kategoriyi veya entegrasyonu kapsıyorsa, her kombinasyon için manuel olarak bir sayfa yazmak imkansızdır. Programatik SEO (pSEO), yapılandırılmış bir veritabanı kullanarak arama için optimize edilmiş binlerce açılış sayfasını programlı olarak oluşturarak bu sorunu çözer. Büyük veri kümelerini, dinamik şablonları ve yapay zeka destekli içerik üretimini birleştirerek sağlam pSEO motorları tasarlıyoruz. İster '[Şehir]'deki En İyi [Hizmet]' sayfalarına, ister '[Uygulama A]'yı '[Uygulama B]' ile Entegre Edin şablonlarına veya devasa e-ticaret kategori genişletmelerine ihtiyacınız olsun, binlerce düşük rekabetli, yüksek niyetli uzun kuyruklu anahtar kelimede sıralanacak mimariyi kuruyoruz. Oluşturulan her sayfanın benzersiz bir değer sağladığından, Google'ın zayıf içerik cezalarından kaçındığından ve ziyaretçileri geniş ölçekte potansiyel müşterilere dönüştürdüğünden emin oluyoruz.",
+      "features": [
+        "Anahtar Kelime Matrisi ve Arama Hacmi Modellemesi",
+        "Veritabanı Mimarisi (Airtable, PostgreSQL)",
+        "Dinamik Sayfa Şablonu Tasarımı",
+        "Yapay Zeka Destekli Benzersiz İçerik Üretimi",
+        "Teknik SEO ve Tarama Bütçesi Optimizasyonu",
+        "İç Linkleme Mimarisi Otomasyonu",
+        "URL Yönlendirme ve Site Haritası Oluşturma",
+        "İndekslenme İzleme ve Performans Takibi"
+      ],
+      "benefits": [
+        "Binlerce yüksek dönüşümlü uzun kuyruklu anahtar kelime için zahmetsizce sıralama alın",
+        "Manuel içerik oluşturmaya kıyasla sayfa başına maliyeti büyük ölçüde azaltın",
+        "Organik trafiğinizi çok kısa bir sürede katlanarak ölçeklendirin",
+        "Yüzlerce şehirdeki yerel arama pazarlarını aynı anda domine edin",
+        "Sektörünüzün nişinde devasa topikal otorite kurun",
+        "Sürdürülebilir, katlanarak artan bir potansiyel müşteri yaratma varlığı oluşturun"
+      ],
+      "metaTitle": "Programmatik SEO Ajansı | Organik Trafiği Ölçeklendirin | PakSoft",
+      "metaDescription": "Geniş ölçekte uzun kuyruklu kelimeleri yakalamak için otomatik olarak binlerce yüksek kaliteli açılış sayfası oluşturan programatik SEO motorları kurun.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Anahtar Kelime ve Veri Modellemesi",
+            "description": "Yüksek hacimli bir ana anahtar kelime belirleyerek başlarız ve geniş bir hedef sorgu matrisi oluşturmak için onu değişkenlerle (konum, sektör vb.) değiştiririz."
+          },
+          {
+            "step": 2,
+            "title": "Veri Toplama ve Küratörlük",
+            "description": "Sayfalarınızdaki dinamik alanları doldurmak için yerel istatistikler veya ürün özellikleri gibi gerekli veri noktalarını kazır, satın alır veya manuel olarak derleriz."
+          },
+          {
+            "step": 3,
+            "title": "Şablon Tasarımı ve Geliştirme",
+            "description": "Tasarımcılarımız, benzersiz sayfalar oluşturmak için veritabanımızdaki verileri dinamik olarak enjekte eden yüksek dönüşümlü bir şablon oluşturur."
+          },
+          {
+            "step": 4,
+            "title": "İçerik Üretimi ve Yapay Zeka Entegrasyonu",
+            "description": "Kopya içerik cezalarından kaçınmak için, her sayfa varyasyonu için benzersiz, yararlı metin blokları oluşturmak üzere OpenAI API ve özel istem mühendisliği kullanıyoruz."
+          },
+          {
+            "step": 5,
+            "title": "Dağıtım ve Teknik Kurulum",
+            "description": "Sayfaları Next.js, Webflow veya WordPress üzerinden yayınlıyor, Google'ın tarayabilmesi için uygun iç linkleme, kanonik etiketler ve XML site haritası sağlıyoruz."
+          },
+          {
+            "step": 6,
+            "title": "İndekslenme ve Büyüme İzleme",
+            "description": "Yeni sayfaların dizine eklendiğinden emin olmak, tarama anormalliklerini düzeltmek için Google Search Console'u izliyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Google, programatik SEO sayfalarını spam olarak cezalandırır mı?",
+            "answer": "Doğru yapıldığında hayır. Google 'zayıf' veya 'kopya' içeriği cezalandırır. Her programatik sayfanın benzersiz bir değere, özel yapay zeka metnine ve farklı verilere sahip olmasını sağlıyoruz."
+          },
+          {
+            "question": "Programmatik SEO işletmem için uygun mu?",
+            "answer": "Değişkenleri olan işletmeler için en iyi sonucu verir: seyahat siteleri, SaaS entegrasyonları veya yerel hizmetler. Tek bir konumda tek bir ürününüz varsa, geleneksel SEO daha iyidir."
+          },
+          {
+            "question": "Programatik bir SEO motoru oluşturmak ne kadar sürer?",
+            "answer": "Verilerin karmaşıklığına ve kullanılan CMS'ye bağlı olarak, veritabanını oluşturmak, şablonu tasarlamak ve sayfaları başlatmak genellikle 4 ila 8 hafta sürer."
+          },
+          {
+            "question": "Kaç sayfa üreteceksiniz?",
+            "answer": "500 ile 50.000+ arasında sayfa üretebiliriz. Sınır, tamamen mevcut arama hacmine ve sayfaları değerli kılmak için kaynaklayabileceğimiz benzersiz veri miktarına bağlıdır."
+          },
+          {
+            "question": "Bunun için web sitemizi yeni bir platforma taşımamız gerekir mi?",
+            "answer": "Genellikle hayır. pSEO motorlarını yerel olarak Webflow, WordPress'te veya mevcut alan adınıza bağlanan özel bir Next.js uygulaması kullanarak ters proxy (reverse proxy) yoluyla oluşturabiliriz."
+          },
+          {
+            "question": "Google'ın binlerce yeni sayfayı hızlı bir şekilde dizine eklemesini nasıl sağlıyorsunuz?",
+            "answer": "Kusursuz bir iç linkleme yapısı kuruyor, yerelleştirilmiş HTML site haritaları oluşturuyor, XML site haritasını optimize ediyor ve uygun olduğunda Google'ın Indexing API'sini kullanıyoruz."
+          },
+          {
+            "question": "Sayfaları dolduracak verileri nereden alıyorsunuz?",
+            "answer": "Şablonun gerektirdiklerine bağlı olarak dahili veritabanınızı, genel devlet API'lerini, ticari veri setlerini, web kazımayı (scraping) veya yapay zeka tarafından oluşturulan veri setlerini kullanabiliriz."
+          },
+          {
+            "question": "Sayfalar yayına girdikten sonra onları güncelleyebilir miyiz?",
+            "answer": "Evet. Sayfalar merkezi bir veritabanına bağlı olduğundan, veritabanındaki bir alanı güncellemek o belirli veri noktasını tüm canlı sayfalarda anında güncelleyecektir."
+          }
+        ],
+        "technologies": [
+          { "icon": "python", "name": "Python" },
+          { "icon": "nextjs", "name": "Next.js" },
+          { "icon": "webflow", "name": "Webflow" },
+          { "icon": "wordpress", "name": "WordPress" },
+          { "icon": "airtable", "name": "Airtable" },
+          { "icon": "openai", "name": "OpenAI API" },
+          { "icon": "postgresql", "name": "PostgreSQL" },
+          { "icon": "gsc", "name": "Google Search Console" }
+        ]
+      }
+    },
+    "de": {
+      "name": "Programmatic SEO",
+      "shortDescription": "Skalieren Sie Ihren organischen Traffic exponentiell, ohne Tausende von Blogbeiträgen manuell zu schreiben. Wir bauen programmatische SEO-Architekturen auf, die Tausende von hochwertigen Landing Pages generieren, um Long-Tail-Suchanfragen auf Autopilot zu erfassen.",
+      "fullDescription": "Wenn Ihr Produkt oder Ihre Dienstleistung mehrere Standorte, Kategorien oder Integrationen abdeckt, ist es unmöglich, für jede Kombination manuell eine Seite zu schreiben. Programmatic SEO (pSEO) löst dies, indem eine strukturierte Datenbank verwendet wird, um programmatisch Tausende von suchoptimierten Landing Pages zu generieren. Wir entwickeln robuste pSEO-Engines, indem wir große Datensätze, dynamische Vorlagen und KI-gestützte Inhaltsgenerierung kombinieren. Egal, ob Sie 'Bester [Service] in [Stadt]'-Seiten, 'Integriere [App A] mit [App B]'-Vorlagen oder massive E-Commerce-Kategorie-Erweiterungen benötigen, wir bauen die Architektur, um für Tausende von wettbewerbsarmen, hochgradig zielgerichteten Long-Tail-Keywords zu ranken. Wir stellen sicher, dass jede generierte Seite einen einzigartigen Mehrwert bietet, Thin-Content-Strafen von Google vermeidet und Besucher in Leads verwandelt.",
+      "features": [
+        "Keyword Matrix & Suchvolumen-Modellierung",
+        "Datenbankarchitektur (Airtable, PostgreSQL)",
+        "Dynamisches Seiten-Template-Design",
+        "KI-gestützte Generierung einzigartiger Inhalte",
+        "Technical SEO & Crawl-Budget-Optimierung",
+        "Automatisierung der internen Verlinkungsarchitektur",
+        "URL-Routing & Sitemap-Generierung",
+        "Indexierungsüberwachung & Performance-Tracking"
+      ],
+      "benefits": [
+        "Ranken Sie mühelos für Tausende von konvertierungsstarken Long-Tail-Keywords",
+        "Reduzieren Sie die Kosten pro Seite im Vergleich zur manuellen Content-Erstellung drastisch",
+        "Skalieren Sie Ihren organischen Traffic exponentiell in einem Bruchteil der Zeit",
+        "Dominieren Sie lokale Suchmärkte in Hunderten von Städten gleichzeitig",
+        "Etablieren Sie massive topische Autorität in Ihrer Branche",
+        "Schaffen Sie ein nachhaltiges, sich selbst verstärkendes Lead-Gen-Asset"
+      ],
+      "metaTitle": "Programmatic SEO Agentur | Organischen Traffic skalieren | PakSoft",
+      "metaDescription": "Bauen Sie programmatische SEO-Engines, die automatisch Tausende von hochwertigen, suchoptimierten Landing Pages generieren, um Long-Tail-Keywords zu erfassen.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Keyword- & Datenmodellierung",
+            "description": "Wir identifizieren ein starkes Haupt-Keyword und modifizieren es mit Variablen, um eine riesige Matrix von Ziel-Suchanfragen zu erstellen."
+          },
+          {
+            "step": 2,
+            "title": "Datenerfassung & Kuration",
+            "description": "Wir scrapen, kaufen oder kompilieren die notwendigen Datenpunkte manuell, um die dynamischen Felder auf Ihren Seiten zu füllen."
+          },
+          {
+            "step": 3,
+            "title": "Template-Design & Entwicklung",
+            "description": "Wir erstellen ein konversionsstarkes, technisch einwandfreies Seiten-Template, das die Daten dynamisch injiziert, um einzigartige Seiten zu rendern."
+          },
+          {
+            "step": 4,
+            "title": "Content-Generierung & KI-Integration",
+            "description": "Um Duplicate-Content-Strafen zu vermeiden, nutzen wir die OpenAI-API, um einzigartige, hilfreiche Textblöcke für jede einzelne Seitenvariation zu generieren."
+          },
+          {
+            "step": 5,
+            "title": "Deployment & Technisches Setup",
+            "description": "Wir deployen die Seiten via Next.js, Webflow oder WordPress und stellen eine saubere interne Verlinkung und XML-Sitemap-Generierung sicher."
+          },
+          {
+            "step": 6,
+            "title": "Indexierung & Wachstumsüberwachung",
+            "description": "Wir überwachen die Google Search Console, um sicherzustellen, dass die neuen Seiten indexiert werden, und beheben etwaige Crawl-Anomalien."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Wird Google programmatische SEO-Seiten als Spam abstrafen?",
+            "answer": "Nicht, wenn es richtig gemacht wird. Google bestraft dünne oder doppelte Inhalte. Wir stellen sicher, dass jede Seite einzigartigen Mehrwert, einzigartigen KI-Text und spezifische Daten bietet."
+          },
+          {
+            "question": "Ist programmatisches SEO für mein Unternehmen geeignet?",
+            "answer": "Es funktioniert am besten für Unternehmen mit Variablen: Reiseseiten, SaaS-Integrationen oder lokale Dienstleistungen. Wenn Sie nur ein Produkt an einem Ort haben, ist traditionelles SEO besser."
+          },
+          {
+            "question": "Wie lange dauert es, eine programmatische SEO-Engine zu bauen?",
+            "answer": "Je nach Komplexität der Daten und des verwendeten CMS dauert der Aufbau der Datenbank, das Design des Templates und der Start der Seiten in der Regel 4 bis 8 Wochen."
+          },
+          {
+            "question": "Wie viele Seiten werden Sie generieren?",
+            "answer": "Wir können von 500 bis zu 50.000+ Seiten generieren. Das Limit basiert rein auf dem verfügbaren Suchvolumen und der Menge an einzigartigen Daten, die wir beschaffen können."
+          },
+          {
+            "question": "Müssen wir unsere Website auf eine neue Plattform migrieren?",
+            "answer": "Meistens nicht. Wir können pSEO-Engines nativ in Webflow, WordPress oder über einen Reverse-Proxy mit einer benutzerdefinierten Next.js-Anwendung erstellen, die an Ihre aktuelle Domain angehängt wird."
+          },
+          {
+            "question": "Wie bringen Sie Google dazu, Tausende von neuen Seiten schnell zu indexieren?",
+            "answer": "Wir bauen eine fehlerfreie interne Verlinkungsstruktur auf, erstellen lokalisierte HTML-Sitemaps, optimieren die XML-Sitemap und nutzen ggf. Googles Indexing API."
+          },
+          {
+            "question": "Woher bekommen Sie die Daten, um die Seiten zu füllen?",
+            "answer": "Wir können Ihre interne Datenbank, öffentliche Regierungs-APIs, kommerzielle Datensätze, Web-Scraping oder KI-generierte Datensätze verwenden."
+          },
+          {
+            "question": "Können wir die Seiten aktualisieren, nachdem sie live sind?",
+            "answer": "Ja. Da die Seiten mit einer zentralen Datenbank verbunden sind, aktualisiert eine Änderung in der Datenbank sofort diesen Datenpunkt auf allen Live-Seiten."
+          }
+        ],
+        "technologies": [
+          { "icon": "python", "name": "Python" },
+          { "icon": "nextjs", "name": "Next.js" },
+          { "icon": "webflow", "name": "Webflow" },
+          { "icon": "wordpress", "name": "WordPress" },
+          { "icon": "airtable", "name": "Airtable" },
+          { "icon": "openai", "name": "OpenAI API" },
+          { "icon": "postgresql", "name": "PostgreSQL" },
+          { "icon": "gsc", "name": "Google Search Console" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "پروگرامیٹک ایس ای او (Programmatic SEO)",
+      "shortDescription": "ہزاروں بلاگ پوسٹس دستی طور پر لکھے بغیر اپنی نامیاتی ٹریفک کو تیزی سے بڑھائیں۔ ہم پروگرامیٹک SEO فن تعمیر بناتے ہیں جو خودکار طریقے سے ہزاروں اعلیٰ معیار کے لینڈنگ پیجز تیار کرتے ہیں۔",
+      "fullDescription": "اگر آپ کی پروڈکٹ یا سروس متعدد مقامات، زمروں یا انضمام کا احاطہ کرتی ہے، تو ہر امتزاج کے لیے دستی طور پر صفحہ لکھنا ناممکن ہے۔ پروگرامیٹک SEO (pSEO) ایک سٹرکچرڈ ڈیٹا بیس کا استعمال کر کے ہزاروں سرچ آپٹیمائزڈ لینڈنگ پیجز کو خودکار طور پر تیار کر کے اس مسئلے کو حل کرتا ہے۔ ہم بڑے ڈیٹا سیٹس، ڈائنامک ٹیمپلیٹس اور AI کی مدد سے مواد کی تخلیق کو ملا کر مضبوط pSEO انجن بناتے ہیں۔ چاہے آپ کو '[شہر] میں بہترین [سروس]' صفحات کی ضرورت ہو، یا وسیع ای کامرس زمرے کی توسیع کی، ہم ایسا فن تعمیر بناتے ہیں جو ہزاروں کم مسابقت والے، اعلیٰ ارادے والے مطلوبہ الفاظ کے لیے رینک کرے۔ ہم یقینی بناتے ہیں کہ پیدا ہونے والا ہر صفحہ منفرد قیمت فراہم کرے۔",
+      "features": [
+        "مطلوبہ الفاظ کی میٹرکس اور سرچ والیوم ماڈلنگ",
+        "ڈیٹا بیس آرکیٹیکچر (Airtable, PostgreSQL)",
+        "ڈائنامک پیج ٹیمپلیٹ ڈیزائن",
+        "AI کی مدد سے منفرد مواد کی تخلیق",
+        "تکنیکی SEO اور کرال بجٹ آپٹیمائزیشن",
+        "انٹرنل لنکنگ آرکیٹیکچر آٹومیشن",
+        "URL روٹنگ اور سائٹ میپ جنریشن",
+        "انڈیکسیشن کی نگرانی اور کارکردگی سے باخبر رہنا"
+      ],
+      "benefits": [
+        "بغیر کسی کوشش کے ہزاروں ہائی کنورٹنگ لانگ ٹیل کی ورڈز کے لیے رینک کریں",
+        "دستی مواد کی تخلیق کے مقابلے میں فی صفحہ لاگت کو ڈرامائی طور پر کم کریں",
+        "اپنی نامیاتی ٹریفک کو بہت کم وقت میں تیزی سے بڑھائیں",
+        "بیک وقت سینکڑوں شہروں میں مقامی تلاش کے بازاروں پر غلبہ حاصل کریں",
+        "اپنی صنعت میں وسیع موضوعاتی اختیار قائم کریں",
+        "ایک پائیدار لیڈ جنریشن کا اثاثہ بنائیں"
+      ],
+      "metaTitle": "پروگرامیٹک ایس ای او ایجنسی | نامیاتی ٹریفک بڑھائیں | PakSoft",
+      "metaDescription": "پروگرامیٹک SEO انجن بنائیں جو خود بخود ہزاروں اعلیٰ معیار کے لینڈنگ پیجز تیار کرتے ہیں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "کلیدی لفظ اور ڈیٹا ماڈلنگ",
+            "description": "ہم ایک ہائی والیوم ہیڈ کی ورڈ کی نشاندہی کر کے اسے متغیرات (جیسے مقام یا صنعت) کے ساتھ تبدیل کرتے ہیں تاکہ سوالات کا ایک وسیع میٹرکس بنایا جا سکے۔"
+          },
+          {
+            "step": 2,
+            "title": "ڈیٹا اکٹھا کرنا اور کیوریشن",
+            "description": "ہم آپ کے صفحات پر متغیر فیلڈز کو پُر کرنے کے لیے ضروری ڈیٹا پوائنٹس کو سکریپ، خریدتے، یا دستی طور پر مرتب کرتے ہیں۔"
+          },
+          {
+            "step": 3,
+            "title": "ٹیمپلیٹ ڈیزائن اور ڈیولپمنٹ",
+            "description": "ہمارے ڈیزائنرز ایک ایسا ٹیمپلیٹ بناتے ہیں جو منفرد صفحات کو پیش کرنے کے لیے ہمارے ڈیٹا بیس سے متحرک طور پر ڈیٹا داخل کرتا ہے۔"
+          },
+          {
+            "step": 4,
+            "title": "مواد کی تخلیق اور AI انضمام",
+            "description": "ڈپلیکیٹ مواد کی سزاؤں سے بچنے کے لیے، ہم ہر ایک صفحے کے لیے منفرد متن تیار کرنے کے لیے OpenAI API استعمال کرتے ہیں۔"
+          },
+          {
+            "step": 5,
+            "title": "تعیناتی اور تکنیکی سیٹ اپ",
+            "description": "ہم صفحات کو Next.js، Webflow، یا WordPress کے ذریعے لانچ کرتے ہیں اور مناسب انٹرنل لنکنگ اور XML سائٹ میپ کو یقینی بناتے ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "انڈیکسیشن اور ترقی کی نگرانی",
+            "description": "لائیو ہونے کے بعد، ہم Google Search Console کی نگرانی کرتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ نئے صفحات انڈیکس ہو رہے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "کیا گوگل پروگرامیٹک SEO پیجز کو سپیم کے طور پر سزا دے گا؟",
+            "answer": "نہیں اگر صحیح तरीके سے کیا جائے۔ گوگل 'پتلے' یا 'ڈپلیکیٹ' مواد کو سزا دیتا ہے۔ ہم یقینی بناتے ہیں کہ ہر صفحے کی منفرد قدر ہو۔"
+          },
+          {
+            "question": "کیا پروگرامیٹک SEO میرے کاروبار کے لیے صحیح ہے؟",
+            "answer": "یہ متغیرات والے کاروبار کے لیے بہترین کام کرتا ہے: ٹریول سائٹس، SaaS انضمام، یا مقامی خدمات۔"
+          },
+          {
+            "question": "پروگرامیٹک SEO انجن بنانے میں کتنا وقت لگتا ہے؟",
+            "answer": "ڈیٹا کی پیچیدگی کی بنیاد پر، ڈیٹا بیس بنانے، ٹیمپلیٹ ڈیزائن کرنے اور صفحات شروع کرنے میں عام طور پر 4 سے 8 ہفتے لگتے ہیں۔"
+          },
+          {
+            "question": "آپ کتنے صفحات تیار کریں گے؟",
+            "answer": "ہم 500 سے 50,000+ صفحات تیار کر سکتے ہیں۔ اس کا انحصار تلاش کے حجم اور دستیاب منفرد ڈیٹا پر ہے۔"
+          },
+          {
+            "question": "کیا ہمیں اپنی ویب سائٹ کو نئے پلیٹ فارم پر منتقل کرنے کی ضرورت ہے؟",
+            "answer": "عام طور پر، نہیں۔ ہم موجودہ ڈومین سے منسلک ہو کر کام کر سکتے ہیں۔"
+          },
+          {
+            "question": "آپ گوگل کو ہزاروں نئے صفحات جلدی انڈیکس کرنے پر کیسے مجبور کرتے ہیں؟",
+            "answer": "ہم اندرونی لنکنگ کا ڈھانچہ بناتے ہیں اور جہاں ممکن ہو گوگل کے Indexing API کا استعمال کرتے ہیں۔"
+          },
+          {
+            "question": "آپ صفحات کو پُر کرنے کے لیے ڈیٹا کہاں سے حاصل کرتے ہیں؟",
+            "answer": "ہم آپ کا اندرونی ڈیٹا بیس، عوامی APIs، یا AI سے تیار کردہ ڈیٹا استعمال کر سکتے ہیں۔"
+          },
+          {
+            "question": "کیا صفحات لائیو ہونے کے بعد اپ ڈیٹ کیے جا سکتے ہیں؟",
+            "answer": "ہاں۔ ڈیٹا بیس میں اپ ڈیٹ کرنے سے وہ لائیو صفحات پر فوری اپ ڈیٹ ہو جائے گا۔"
+          }
+        ],
+        "technologies": [
+          { "icon": "python", "name": "Python" },
+          { "icon": "nextjs", "name": "Next.js" },
+          { "icon": "webflow", "name": "Webflow" },
+          { "icon": "wordpress", "name": "WordPress" },
+          { "icon": "airtable", "name": "Airtable" },
+          { "icon": "openai", "name": "OpenAI API" },
+          { "icon": "postgresql", "name": "PostgreSQL" },
+          { "icon": "gsc", "name": "Google Search Console" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "تحسين محركات البحث البرمجي (Programmatic SEO)",
+      "shortDescription": "قم بتوسيع نطاق زياراتك العضوية بشكل كبير دون كتابة آلاف منشورات المدونة يدويًا. نحن نبني هياكل تحسين محركات بحث برمجية تنشئ آلاف الصفحات المقصودة عالية الجودة لالتقاط استعلامات البحث الطويلة تلقائياً.",
+      "fullDescription": "إذا كان منتجك أو خدمتك تغطي مواقع أو فئات أو عمليات تكامل متعددة، فمن المستحيل كتابة صفحة لكل مجموعة يدويًا. يحل تحسين محركات البحث البرمجي (pSEO) هذه المشكلة باستخدام قاعدة بيانات منظمة لإنشاء آلاف الصفحات المقصودة المحسنة للبحث برمجياً. نحن نصمم محركات pSEO قوية من خلال الجمع بين مجموعات البيانات الكبيرة والقوالب الديناميكية وإنشاء المحتوى بمساعدة الذكاء الاصطناعي. سواء كنت بحاجة إلى صفحات 'أفضل [خدمة] في [مدينة]'، أو قوالب 'دمج [تطبيق أ] مع [تطبيق ب]'، أو توسعات ضخمة لفئات التجارة الإلكترونية، فإننا نبني البنية للترتيب لآلاف الكلمات الرئيسية الطويلة منخفضة المنافسة وذات النية العالية. نحن نضمن أن كل صفحة يتم إنشاؤها توفر قيمة فريدة، وتتجنب عقوبات المحتوى الرقيق من Google.",
+      "features": [
+        "مصفوفة الكلمات الرئيسية ونمذجة حجم البحث",
+        "بنية قاعدة البيانات (Airtable، PostgreSQL)",
+        "تصميم قوالب الصفحات الديناميكية",
+        "إنشاء محتوى فريد بمساعدة الذكاء الاصطناعي",
+        "تحسين محركات البحث الفنية وميزانية الزحف",
+        "أتمتة بنية الربط الداخلي",
+        "توجيه عناوين URL وإنشاء خرائط الموقع",
+        "مراقبة الفهرسة وتتبع الأداء"
+      ],
+      "benefits": [
+        "الترتيب لآلاف الكلمات الرئيسية الطويلة عالية التحويل بسهولة",
+        "تقليل التكلفة لكل صفحة بشكل كبير مقارنة بإنشاء المحتوى اليدوي",
+        "توسيع نطاق زياراتك العضوية بشكل كبير في جزء بسيط من الوقت",
+        "السيطرة على أسواق البحث المحلية عبر مئات المدن في وقت واحد",
+        "تأسيس سلطة موضوعية هائلة في تخصصك",
+        "إنشاء أصل مستدام ومتزايد لتوليد العملاء المحتملين"
+      ],
+      "metaTitle": "وكالة تحسين محركات البحث البرمجي | PakSoft",
+      "metaDescription": "قم ببناء محركات تحسين محركات البحث البرمجية التي تنشئ تلقائياً آلاف الصفحات المقصودة المحسنة لالتقاط الكلمات الرئيسية الطويلة.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "نمذجة الكلمات الرئيسية والبيانات",
+            "description": "نبدأ بتحديد كلمة رئيسية ذات حجم كبير وتعديلها بالمتغيرات (مثل الموقع أو الصناعة) لإنشاء مصفوفة واسعة من الاستعلامات المستهدفة."
+          },
+          {
+            "step": 2,
+            "title": "جمع البيانات وتنظيمها",
+            "description": "نقوم بجمع أو شراء نقاط البيانات الضرورية - مثل الإحصاءات المحلية - لملء الحقول الديناميكية على صفحاتك."
+          },
+          {
+            "step": 3,
+            "title": "تصميم وتطوير القوالب",
+            "description": "يقوم المصممون لدينا بإنشاء قالب صفحة عالي التحويل يقوم بحقن البيانات من قاعدة بياناتنا ديناميكياً لتقديم صفحات فريدة."
+          },
+          {
+            "step": 4,
+            "title": "إنشاء المحتوى وتكامل الذكاء الاصطناعي",
+            "description": "لتجنب عقوبات المحتوى المكرر، نستخدم OpenAI API لإنشاء كتل نصية مفيدة وفريدة لكل اختلاف في الصفحة."
+          },
+          {
+            "step": 5,
+            "title": "النشر والإعداد الفني",
+            "description": "ننشر الصفحات عبر Next.js أو Webflow أو WordPress، مع ضمان الربط الداخلي المناسب وإنشاء خرائط XML."
+          },
+          {
+            "step": 6,
+            "title": "مراقبة الفهرسة والنمو",
+            "description": "بمجرد البث المباشر، نراقب Google Search Console لضمان فهرسة الصفحات الجديدة وتتبع الزيارات العضوية."
+          }
+        ],
+        "faq": [
+          {
+            "question": "هل ستعاقب جوجل صفحات تحسين محركات البحث البرمجية كرسائل غير مرغوب فيها؟",
+            "answer": "ليس إذا تم بشكل صحيح. تعاقب جوجل المحتوى 'الرقيق' أو 'المكرر'. نحن نضمن أن كل صفحة لها قيمة فريدة ونسخة ذكاء اصطناعي فريدة."
+          },
+          {
+            "question": "هل تحسين محركات البحث البرمجي مناسب لعملي؟",
+            "answer": "يعمل بشكل أفضل للشركات ذات المتغيرات: مواقع السفر، أو تكاملات SaaS، أو الخدمات المحلية."
+          },
+          {
+            "question": "كم من الوقت يستغرق بناء محرك تحسين محركات البحث البرمجي؟",
+            "answer": "يستغرق بناء قاعدة البيانات وتصميم القالب وإطلاق الصفحات عادةً من 4 إلى 8 أسابيع."
+          },
+          {
+            "question": "كم عدد الصفحات التي ستقوم بإنشائها؟",
+            "answer": "يمكننا إنشاء من 500 إلى 50000+ صفحة بناءً على حجم البحث المتوفر والبيانات الفريدة التي يمكننا الحصول عليها."
+          },
+          {
+            "question": "هل نحتاج إلى ترحيل موقعنا إلى منصة جديدة لهذا الغرض؟",
+            "answer": "عادة لا. يمكننا بناء المحركات محلياً في Webflow أو WordPress أو عبر وكيل عكسي باستخدام تطبيق Next.js."
+          },
+          {
+            "question": "كيف تجعل جوجل تفهرس آلاف الصفحات الجديدة بسرعة؟",
+            "answer": "نبني بنية ربط داخلي خالية من العيوب ونستخدم واجهة برمجة تطبيقات الفهرسة من جوجل حيثما أمكن ذلك."
+          },
+          {
+            "question": "من أين تحصل على البيانات لملء الصفحات؟",
+            "answer": "يمكننا استخدام قاعدة بياناتك الداخلية، أو واجهات برمجة التطبيقات الحكومية العامة، أو مجموعات البيانات التي تم إنشاؤها بواسطة الذكاء الاصطناعي."
+          },
+          {
+            "question": "هل يمكننا تحديث الصفحات بعد بثها المباشر؟",
+            "answer": "نعم. نظراً لأن الصفحات متصلة بقاعدة بيانات مركزية، فإن التحديث هناك سينعكس على جميع الصفحات الحية على الفور."
+          }
+        ],
+        "technologies": [
+          { "icon": "python", "name": "Python" },
+          { "icon": "nextjs", "name": "Next.js" },
+          { "icon": "webflow", "name": "Webflow" },
+          { "icon": "wordpress", "name": "WordPress" },
+          { "icon": "airtable", "name": "Airtable" },
+          { "icon": "openai", "name": "OpenAI API" },
+          { "icon": "postgresql", "name": "PostgreSQL" },
+          { "icon": "gsc", "name": "Google Search Console" }
+        ]
+      }
+    },
+  "content-marketing": {
+    "en": {
+      "name": "Content Marketing",
+      "shortDescription": "Stop publishing generic blog posts nobody reads. We create data-driven, high-quality content that ranks on Google, engages your ideal audience, and turns readers into paying customers.",
+      "fullDescription": "Most content marketing fails because it's produced in a vacuum—written to fill a quota rather than to solve a specific customer problem or rank for a profitable keyword. We take a revenue-first approach to content marketing. Before a single word is written, we conduct deep audience research and competitor analysis to identify high-intent topics. Our team of expert writers, editors, and SEO strategists collaborate to produce comprehensive, authoritative content that not only appeases search engine algorithms but genuinely educates and persuades human readers. From in-depth ultimate guides and data-backed industry reports to conversion-focused bottom-of-funnel landing pages, we build a content ecosystem that establishes your brand as the absolute authority in your space while driving measurable leads and sales.",
+      "features": [
+        "Content Strategy & Keyword Roadmap",
+        "Long-Form SEO Blog Posts & Articles",
+        "Whitepapers, E-books, and Lead Magnets",
+        "Bottom-of-Funnel Conversion Copywriting",
+        "On-Page SEO & Semantic Optimization",
+        "Content Refreshing & Historical Optimization",
+        "Subject Matter Expert (SME) Interviews",
+        "Content Distribution & Promotion Strategy"
+      ],
+      "benefits": [
+        "Attract high-intent, qualified organic traffic from search engines",
+        "Establish your brand as the trusted thought leader in your industry",
+        "Capture leads efficiently by offering high-value downloadable content",
+        "Shorten the sales cycle by answering prospect objections upfront",
+        "Build a compounding asset that generates ROI for years, not days",
+        "Increase your website's overall domain authority and backlink profile"
+      ],
+      "metaTitle": "SEO Content Marketing Agency | B2B & B2C | PakSoft",
+      "metaDescription": "Drive revenue with data-driven content marketing. We produce high-quality SEO blog posts, whitepapers, and guides that rank on Google and convert readers.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Discovery & Audience Research",
+            "description": "We interview your team to understand your buyer personas, their pain points, and the exact questions they ask during the sales process to uncover valuable content topics."
+          },
+          {
+            "step": 2,
+            "title": "Keyword Research & Topic Clustering",
+            "description": "We build a 6-to-12-month content calendar based on search volume, keyword difficulty, and search intent. We group topics into 'clusters' to build deep topical authority."
+          },
+          {
+            "step": 3,
+            "title": "Brief Creation & Outlining",
+            "description": "For every piece of content, our SEO team creates a detailed brief outlining the target keywords, semantic terms to include, optimal word count, and heading structure."
+          },
+          {
+            "step": 4,
+            "title": "Expert Writing & Editorial Review",
+            "description": "Our specialized writers draft the content, ensuring it matches your brand voice. It then passes through a rigorous editorial review for clarity, grammar, and persuasiveness."
+          },
+          {
+            "step": 5,
+            "title": "SEO Optimization & Publishing",
+            "description": "We optimize the article using tools like SurferSEO to ensure perfect keyword density. We then format it, add relevant imagery, and publish it directly to your CMS."
+          },
+          {
+            "step": 6,
+            "title": "Performance Tracking & Refreshing",
+            "description": "We track how the content ranks and converts over time. Every quarter, we identify decaying posts and refresh them with new data to push them back to the top of search results."
+          }
+        ],
+        "faq": [
+          {
+            "question": "How long does it take for content marketing to generate leads?",
+            "answer": "Content is a long-term play. While you may see initial traffic bumps in 3 months, a compounding, lead-generating content ecosystem typically takes 6 to 9 months to mature."
+          },
+          {
+            "question": "Do you write the content, or do we have to provide it?",
+            "answer": "We write it. However, for highly technical industries, we rely on brief interviews with your Subject Matter Experts (SMEs) to ensure absolute accuracy."
+          },
+          {
+            "question": "Is your content generated by AI like ChatGPT?",
+            "answer": "No. While we use AI tools for research and outlining, the actual writing is done by human experts. Google rewards unique human insights, not generic AI regurgitation."
+          },
+          {
+            "question": "How do you decide what topics to write about?",
+            "answer": "We look at what your audience is searching for, what your competitors are failing to cover, and what topics directly drive revenue (Bottom-of-Funnel intent)."
+          },
+          {
+            "question": "Can you optimize the old blog posts we already have on our site?",
+            "answer": "Yes. 'Historical Optimization' is often the fastest way to get results. We audit your existing posts, rewrite thin sections, update facts, and re-optimize them."
+          },
+          {
+            "question": "What is the difference between top-of-funnel and bottom-of-funnel content?",
+            "answer": "Top-of-funnel answers broad questions. Bottom-of-funnel targets buyers ready to purchase. We balance both to build authority and drive immediate sales."
+          },
+          {
+            "question": "How do you measure the success of a blog post?",
+            "answer": "We measure success by organic keyword rankings, time on page, newsletter signups, lead magnet downloads, and the number of qualified leads generated."
+          },
+          {
+            "question": "Do we need to publish a new post every single day?",
+            "answer": "No. Quality beats quantity. Publishing one comprehensive, 2,500-word guide per month is far more effective than publishing five short generic posts a week."
+          }
+        ],
+        "technologies": [
+          { "icon": "ahrefs", "name": "Ahrefs" },
+          { "icon": "surferseo", "name": "SurferSEO" },
+          { "icon": "gsc", "name": "Google Search Console" },
+          { "icon": "wordpress", "name": "WordPress" },
+          { "icon": "grammarly", "name": "Grammarly" },
+          { "icon": "clearscope", "name": "Clearscope" },
+          { "icon": "ga4", "name": "Google Analytics 4" },
+          { "icon": "semrush", "name": "Semrush" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "İçerik Pazarlaması",
+      "shortDescription": "Kimsenin okumadığı sıradan blog yazıları yayınlamayı bırakın. Google'da üst sıralarda yer alan, ideal hedef kitlenizin ilgisini çeken ve okuyucuları ödeme yapan müşterilere dönüştüren veriye dayalı, yüksek kaliteli içerikler üretiyoruz.",
+      "fullDescription": "Çoğu içerik pazarlaması, boşlukta üretildiği için başarısız olur; belirli bir müşteri sorununu çözmek veya karlı bir anahtar kelime için sıralama almak yerine bir kotayı doldurmak için yazılır. İçerik pazarlamasına gelir odaklı bir yaklaşım benimsiyoruz. Tek bir kelime bile yazılmadan önce, yüksek niyetli konuları belirlemek için derinlemesine kitle araştırması ve rakip analizi yapıyoruz. Uzman yazarlarımız, editörlerimiz ve SEO stratejistlerimizden oluşan ekibimiz, yalnızca arama motoru algoritmalarını memnun etmekle kalmayıp aynı zamanda insan okuyucuları gerçekten eğiten ve ikna eden kapsamlı, yetkin içerikler üretmek için işbirliği yapar. Derinlemesine nihai rehberlerden ve veri destekli sektör raporlarından, dönüşüm odaklı huni altı açılış sayfalarına kadar, markanızı alanınızda mutlak otorite haline getiren ve ölçülebilir potansiyel müşteriler ve satışlar sağlayan bir içerik ekosistemi oluşturuyoruz.",
+      "features": [
+        "İçerik Stratejisi ve Anahtar Kelime Yol Haritası",
+        "Uzun Formatlı SEO Blog Yazıları ve Makaleler",
+        "Teknik İncelemeler (Whitepapers), E-kitaplar ve Lead Mıknatısları",
+        "Huni Altı (Bottom-of-Funnel) Dönüşüm Metin Yazarlığı",
+        "Sayfa İçi SEO ve Semantik Optimizasyon",
+        "İçerik Yenileme ve Tarihsel Optimizasyon",
+        "Konu Uzmanı (SME) Röportajları",
+        "İçerik Dağıtımı ve Tanıtım Stratejisi"
+      ],
+      "benefits": [
+        "Arama motorlarından satın alma niyeti yüksek, nitelikli organik trafik çekin",
+        "Markanızı sektörünüzde güvenilir bir düşünce lideri olarak konumlandırın",
+        "Yüksek değerli indirilebilir içerik sunarak potansiyel müşterileri verimli bir şekilde yakalayın",
+        "Potansiyel müşteri itirazlarını önceden yanıtlayarak satış döngüsünü kısaltın",
+        "Günler değil, yıllarca yatırım getirisi (ROI) sağlayan bileşik bir varlık oluşturun",
+        "Web sitenizin genel alan adı otoritesini (domain authority) ve backlink profilini artırın"
+      ],
+      "metaTitle": "SEO İçerik Pazarlama Ajansı | B2B ve B2C | PakSoft",
+      "metaDescription": "Veriye dayalı içerik pazarlamasıyla geliri artırın. Google'da üst sıralarda yer alan ve okuyucuları dönüştüren yüksek kaliteli SEO blog yazıları ve rehberler üretiyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Keşif ve Kitle Araştırması",
+            "description": "Alıcı personalarınızı, acı noktalarını ve satış sürecinde sordukları kesin soruları anlamak ve değerli konuları ortaya çıkarmak için ekibinizle görüşüyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Anahtar Kelime Araştırması ve Konu Kümeleme",
+            "description": "Arama hacmi ve zorluğuna dayalı 6-12 aylık bir takvim oluşturuyor, derin topikal otorite inşa etmek için konuları 'kümeler' halinde gruplandırıyoruz."
+          },
+          {
+            "step": 3,
+            "title": "Brief (Bilgi Notu) Oluşturma ve Taslak Hazırlama",
+            "description": "Her içerik parçası için SEO ekibimiz; hedef anahtar kelimeleri, semantik terimleri, kelime sayısını ve başlık yapısını özetleyen ayrıntılı bir brief hazırlar."
+          },
+          {
+            "step": 4,
+            "title": "Uzman Yazımı ve Editoryal İnceleme",
+            "description": "Uzman yazarlarımız içeriği taslak haline getirir. Ardından içerik netlik, dilbilgisi ve ikna edicilik açısından titiz bir editoryal incelemeden geçer."
+          },
+          {
+            "step": 5,
+            "title": "SEO Optimizasyonu ve Yayınlama",
+            "description": "Mükemmel anahtar kelime yoğunluğunu sağlamak için makaleyi SurferSEO gibi araçlar kullanarak optimize ederiz. Ardından biçimlendirir ve CMS'nizde yayınlarız."
+          },
+          {
+            "step": 6,
+            "title": "Performans Takibi ve Yenileme",
+            "description": "İçeriğin zaman içinde nasıl sıralandığını ve dönüştüğünü takip ederiz. Her çeyrekte, çürüyen gönderileri belirler ve arama sonuçlarında tekrar yukarı taşımak için güncelleriz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "İçerik pazarlamasının potansiyel müşteri oluşturması ne kadar sürer?",
+            "answer": "İçerik uzun vadeli bir oyundur. 3 ay içinde ilk trafik artışlarını görebilseniz de, potansiyel müşteri üreten bir içerik ekosisteminin olgunlaşması genellikle 6 ila 9 ay sürer."
+          },
+          {
+            "question": "İçeriği siz mi yazıyorsunuz yoksa bizim mi sağlamamız gerekiyor?",
+            "answer": "Biz yazıyoruz. Ancak son derece teknik sektörler için, mutlak doğruluğu sağlamak adına Konu Uzmanlarınızla (SME) yapacağımız kısa görüşmelere güveniyoruz."
+          },
+          {
+            "question": "İçeriğiniz ChatGPT gibi yapay zeka tarafından mı üretiliyor?",
+            "answer": "Hayır. Araştırma ve taslak çıkarma için yapay zeka araçlarını kullansak da, asıl yazım uzman insanlar tarafından yapılır. Google, yapay zeka içeriklerini değil, benzersiz insan içgörülerini ödüllendirir."
+          },
+          {
+            "question": "Hangi konularda yazacağınıza nasıl karar veriyorsunuz?",
+            "answer": "Hedef kitlenizin ne aradığına, rakiplerinizin neleri kapsamadığına ve doğrudan gelir sağlayan huni altı konulara odaklanıyoruz."
+          },
+          {
+            "question": "Sitemizde zaten var olan eski blog yazılarını optimize edebilir misiniz?",
+            "answer": "Evet. 'Tarihsel Optimizasyon' genellikle sonuç almanın en hızlı yoludur. Mevcut gönderilerinizi denetler, zayıf bölümleri yeniden yazar, günceller ve yeniden optimize ederiz."
+          },
+          {
+            "question": "Huni üstü (top-of-funnel) ve huni altı (bottom-of-funnel) içerik arasındaki fark nedir?",
+            "answer": "Huni üstü genel soruları yanıtlar. Huni altı ise satın almaya hazır alıcıları hedefler. Otorite oluşturmak ve anında satış sağlamak için ikisini dengeliyoruz."
+          },
+          {
+            "question": "Bir blog yazısının başarısını nasıl ölçüyorsunuz?",
+            "answer": "Başarıyı organik anahtar kelime sıralamaları, sayfada geçirilen süre, bülten kayıtları, lead magnet indirmeleri ve oluşturulan nitelikli lead sayısı ile ölçüyoruz."
+          },
+          {
+            "question": "Her gün yeni bir yazı yayınlamamız gerekiyor mu?",
+            "answer": "Hayır. Kalite her zaman niceliği yener. Ayda 2.500 kelimelik kapsamlı bir rehber yayınlamak, haftada beş kısa ve genel gönderi yayınlamaktan çok daha etkilidir."
+          }
+        ],
+        "technologies": [
+          { "icon": "ahrefs", "name": "Ahrefs" },
+          { "icon": "surferseo", "name": "SurferSEO" },
+          { "icon": "gsc", "name": "Google Search Console" },
+          { "icon": "wordpress", "name": "WordPress" },
+          { "icon": "grammarly", "name": "Grammarly" },
+          { "icon": "clearscope", "name": "Clearscope" },
+          { "icon": "ga4", "name": "Google Analytics 4" },
+          { "icon": "semrush", "name": "Semrush" }
+        ]
+      }
+    },
+    "de": {
+      "name": "Content-Marketing",
+      "shortDescription": "Hören Sie auf, generische Blogbeiträge zu veröffentlichen, die niemand liest. Wir erstellen datengesteuerte, hochwertige Inhalte, die bei Google ranken, Ihre ideale Zielgruppe ansprechen und Leser in zahlende Kunden verwandeln.",
+      "fullDescription": "Das meiste Content-Marketing scheitert, weil es in einem Vakuum produziert wird — geschrieben, um eine Quote zu erfüllen, anstatt ein spezifisches Kundenproblem zu lösen oder für ein profitables Keyword zu ranken. Wir verfolgen einen umsatzorientierten Ansatz beim Content-Marketing. Bevor ein einziges Wort geschrieben wird, führen wir detaillierte Zielgruppenrecherchen und Wettbewerbsanalysen durch, um Themen mit hoher Kaufabsicht zu identifizieren. Unser Team aus erfahrenen Redakteuren und SEO-Strategen arbeitet zusammen, um umfassende, maßgebliche Inhalte zu erstellen, die nicht nur Suchmaschinenalgorithmen besänftigen, sondern menschliche Leser wirklich aufklären und überzeugen. Von detaillierten ultimativen Leitfäden und datengestützten Branchenberichten bis hin zu konversionsorientierten Landing Pages am Ende des Funnels bauen wir ein Content-Ökosystem auf, das Ihre Marke als absolute Autorität in Ihrem Bereich etabliert.",
+      "features": [
+        "Content-Strategie & Keyword-Roadmap",
+        "Long-Form SEO-Blogbeiträge & Artikel",
+        "Whitepaper, E-Books und Lead-Magneten",
+        "Bottom-of-Funnel Conversion Copywriting",
+        "On-Page-SEO & Semantische Optimierung",
+        "Content Refreshing & Historische Optimierung",
+        "Interviews mit Fachexperten (SMEs)",
+        "Content-Distribution & Promotion-Strategie"
+      ],
+      "benefits": [
+        "Gewinnen Sie hochqualifizierten organischen Traffic von Suchmaschinen",
+        "Etablieren Sie Ihre Marke als vertrauenswürdigen Vordenker in Ihrer Branche",
+        "Erfassen Sie Leads effizient durch das Angebot hochwertiger Download-Inhalte",
+        "Verkürzen Sie den Verkaufszyklus, indem Sie Einwände von Interessenten im Voraus beantworten",
+        "Bauen Sie ein wachsendes Asset auf, das über Jahre hinweg ROI generiert",
+        "Erhöhen Sie die Domain-Autorität und das Backlink-Profil Ihrer gesamten Website"
+      ],
+      "metaTitle": "SEO Content Marketing Agentur | B2B & B2C | PakSoft",
+      "metaDescription": "Steigern Sie Ihren Umsatz mit datengesteuertem Content-Marketing. Wir produzieren hochwertige SEO-Blogbeiträge, Whitepaper und Leitfäden, die konvertieren.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Discovery & Zielgruppenforschung",
+            "description": "Wir befragen Ihr Team, um Ihre Buyer Personas, deren Schmerzpunkte und die genauen Fragen, die sie im Verkaufsprozess stellen, zu verstehen."
+          },
+          {
+            "step": 2,
+            "title": "Keyword-Recherche & Themen-Clustering",
+            "description": "Wir erstellen einen Content-Kalender basierend auf Suchvolumen und Suchintention und gruppieren Themen in Clustern, um topische Autorität aufzubauen."
+          },
+          {
+            "step": 3,
+            "title": "Briefing-Erstellung & Outlining",
+            "description": "Für jeden Inhalt erstellt unser SEO-Team ein detailliertes Briefing, das Ziel-Keywords, semantische Begriffe, Wortzahl und Überschriftenstruktur umreißt."
+          },
+          {
+            "step": 4,
+            "title": "Experten-Writing & Redaktionelle Prüfung",
+            "description": "Unsere spezialisierten Autoren verfassen die Inhalte. Danach durchlaufen sie eine strenge redaktionelle Prüfung auf Klarheit, Grammatik und Überzeugungskraft."
+          },
+          {
+            "step": 5,
+            "title": "SEO-Optimierung & Veröffentlichung",
+            "description": "Wir optimieren den Artikel mit Tools wie SurferSEO für die perfekte Keyword-Dichte. Dann formatieren wir ihn und veröffentlichen ihn direkt in Ihrem CMS."
+          },
+          {
+            "step": 6,
+            "title": "Performance Tracking & Refreshing",
+            "description": "Wir verfolgen die Rankings. Jedes Quartal identifizieren wir verfallende Beiträge und frischen sie mit neuen Daten auf, um sie wieder nach oben zu pushen."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Wie lange dauert es, bis Content-Marketing Leads generiert?",
+            "answer": "Content ist ein langfristiges Spiel. Während Sie erste Traffic-Steigerungen in 3 Monaten sehen können, dauert es in der Regel 6 bis 9 Monate, bis das Ökosystem reift."
+          },
+          {
+            "question": "Schreiben Sie den Inhalt, oder müssen wir ihn bereitstellen?",
+            "answer": "Wir schreiben ihn. Für hochtechnische Branchen verlassen wir uns jedoch auf kurze Interviews mit Ihren Fachexperten, um absolute Genauigkeit zu gewährleisten."
+          },
+          {
+            "question": "Werden Ihre Inhalte von KI wie ChatGPT generiert?",
+            "answer": "Nein. Wir nutzen KI-Tools für Recherche, das eigentliche Schreiben übernehmen jedoch menschliche Experten. Google belohnt einzigartige menschliche Erkenntnisse."
+          },
+          {
+            "question": "Wie entscheiden Sie, über welche Themen Sie schreiben?",
+            "answer": "Wir betrachten, wonach Ihre Zielgruppe sucht, was Ihre Wettbewerber nicht abdecken, und welche Themen direkt Umsatz generieren."
+          },
+          {
+            "question": "Können Sie alte Blogbeiträge optimieren, die wir bereits haben?",
+            "answer": "Ja. 'Historische Optimierung' ist oft der schnellste Weg zu Ergebnissen. Wir prüfen Ihre bestehenden Beiträge, aktualisieren Fakten und re-optimieren sie."
+          },
+          {
+            "question": "Was ist der Unterschied zwischen Top-of-Funnel und Bottom-of-Funnel Content?",
+            "answer": "Top-of-Funnel beantwortet breite Fragen. Bottom-of-Funnel richtet sich an kaufbereite Interessenten. Wir balancieren beides aus."
+          },
+          {
+            "question": "Wie messen Sie den Erfolg eines Blogbeitrags?",
+            "answer": "Wir messen den Erfolg an organischen Keyword-Rankings, Verweildauer, Newsletter-Anmeldungen, Lead-Magnet-Downloads und der Anzahl qualifizierter Leads."
+          },
+          {
+            "question": "Müssen wir jeden Tag einen neuen Beitrag veröffentlichen?",
+            "answer": "Nein. Qualität schlägt Quantität. Ein umfassender Leitfaden pro Monat ist weitaus effektiver als fünf kurze generische Beiträge pro Woche."
+          }
+        ],
+        "technologies": [
+          { "icon": "ahrefs", "name": "Ahrefs" },
+          { "icon": "surferseo", "name": "SurferSEO" },
+          { "icon": "gsc", "name": "Google Search Console" },
+          { "icon": "wordpress", "name": "WordPress" },
+          { "icon": "grammarly", "name": "Grammarly" },
+          { "icon": "clearscope", "name": "Clearscope" },
+          { "icon": "ga4", "name": "Google Analytics 4" },
+          { "icon": "semrush", "name": "Semrush" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "مواد کی مارکیٹنگ (Content Marketing)",
+      "shortDescription": "ایسے عام بلاگ پوسٹس شائع کرنا بند کریں جنہیں کوئی نہیں پڑھتا۔ ہم ڈیٹا پر مبنی، اعلیٰ معیار کا مواد تخلیق کرتے ہیں جو گوگل پر رینک کرتا ہے، اور آپ کے سامعین کو ادائیگی کرنے والے صارفین میں بدل دیتا ہے۔",
+      "fullDescription": "زیادہ تر مواد کی مارکیٹنگ اس لیے ناکام ہو جاتی ہے کیونکہ یہ کسی خاص کسٹمر کے مسئلے کو حل کرنے یا منافع بخش مطلوبہ الفاظ کے لیے رینک کرنے کے بجائے صرف کوٹہ پورا کرنے کے لیے لکھی جاتی ہے۔ ہم مواد کی مارکیٹنگ کے لیے آمدنی پر مبنی نقطہ نظر اپناتے ہیں۔ ایک بھی لفظ لکھنے سے پہلے، ہم اعلیٰ ارادے والے موضوعات کی نشاندہی کرنے کے لیے سامعین کی گہری تحقیق اور حریفوں کا تجزیہ کرتے ہیں۔ ہمارے ماہر مصنفین، ایڈیٹرز، اور SEO حکمت عملی سازوں کی ٹیم ایسا جامع اور مستند مواد تیار کرنے کے لیے تعاون کرتی ہے جو نہ صرف سرچ انجن کے الگورتھم کو خوش کرتا ہے بلکہ انسانی قارئین کو بھی قائل کرتا ہے۔ تفصیلی گائیڈز اور ڈیٹا پر مبنی انڈسٹری کی رپورٹس سے لے کر کنورژن پر مرکوز لینڈنگ پیجز تک، ہم ایک ایسا مواد کا ماحولیاتی نظام بناتے ہیں جو آپ کے برانڈ کو آپ کی انڈسٹری میں مستند بناتا ہے۔",
+      "features": [
+        "مواد کی حکمت عملی اور کی ورڈ روڈ میپ",
+        "طویل مدتی SEO بلاگ پوسٹس اور مضامین",
+        "وائٹ پیپرز، ای بکس، اور لیڈ میگنیٹس",
+        "باٹم آف فنل کنورژن کاپی رائٹنگ",
+        "آن پیج SEO اور سیمنٹک آپٹیمائزیشن",
+        "مواد کی تجدید اور تاریخی آپٹیمائزیشن",
+        "موضوع کے ماہر (SME) کے انٹرویوز",
+        "مواد کی تقسیم اور فروغ کی حکمت عملی"
+      ],
+      "benefits": [
+        "سرچ انجن سے اعلیٰ نیت والی نامیاتی ٹریفک کو راغب کریں",
+        "اپنی انڈسٹری میں اپنے برانڈ کو ایک قابل اعتماد رہنما کے طور پر قائم کریں",
+        "اعلیٰ قیمت کا ڈاؤن لوڈ کے قابل مواد پیش کر کے لیڈز حاصل کریں",
+        "امکانات کے اعتراضات کا پیشگی جواب دے کر سیلز سائیکل کو مختصر کریں",
+        "ایک ایسا اثاثہ بنائیں جو سالوں تک ROI پیدا کرے",
+        "اپنی ویب سائٹ کی مجموعی ڈومین اتھارٹی اور بیک لنک پروفائل میں اضافہ کریں"
+      ],
+      "metaTitle": "SEO مواد کی مارکیٹنگ ایجنسی | B2B اور B2C | PakSoft",
+      "metaDescription": "ڈیٹا پر مبنی مواد کی مارکیٹنگ کے ساتھ آمدنی بڑھائیں۔ ہم اعلیٰ معیار کی SEO بلاگ پوسٹس اور گائیڈز تیار کرتے ہیں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "دریافت اور سامعین کی تحقیق",
+            "description": "ہم آپ کے خریداروں کی شخصیات اور ان کے مسائل کو سمجھنے کے لیے آپ کی ٹیم کے ساتھ انٹرویو کرتے ہیں تاکہ قیمتی موضوعات کو بے نقاب کیا جا سکے۔"
+          },
+          {
+            "step": 2,
+            "title": "کی ورڈ ریسرچ اور ٹاپک کلسٹرنگ",
+            "description": "ہم سرچ والیوم کی بنیاد پر 6 سے 12 ماہ کا کیلنڈر بناتے ہیں اور موضوعاتی اتھارٹی بنانے کے لیے انہیں گروپس میں تقسیم کرتے ہیں۔"
+          },
+          {
+            "step": 3,
+            "title": "مختصر تخلیق اور خاکہ بندی",
+            "description": "ہر مواد کے لیے، ہماری SEO ٹیم ایک تفصیلی خاکہ بناتی ہے جس میں ہدف کے مطلوبہ الفاظ اور ہیڈنگ کی ساخت شامل ہوتی ہے۔"
+          },
+          {
+            "step": 4,
+            "title": "ماہرانہ تحریر اور ادارتی جائزہ",
+            "description": "ہمارے ماہر مصنفین مواد تیار کرتے ہیں، اور پھر اسے گرائمر اور قائل کرنے کی صلاحیت کے لیے سخت ادارتی جائزے سے گزارا جاتا ہے۔"
+          },
+          {
+            "step": 5,
+            "title": "SEO آپٹیمائزیشن اور اشاعت",
+            "description": "ہم SurferSEO جیسے ٹولز کا استعمال کر کے مضمون کو بہتر بناتے ہیں اور پھر اسے براہ راست آپ کے CMS پر شائع کرتے ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "کارکردگی کی ٹریکنگ اور تجدید",
+            "description": "ہم وقت کے ساتھ مواد کی کارکردگی کو ٹریک کرتے ہیں اور پرانی پوسٹس کو نئے ڈیٹا کے ساتھ اپ ڈیٹ کرتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "مواد کی مارکیٹنگ کو لیڈز پیدا کرنے میں کتنا وقت لگتا ہے؟",
+            "answer": "یہ ایک طویل مدتی کھیل ہے۔ آپ کو 3 ماہ میں ابتدائی ٹریفک نظر آ سکتی ہے، لیکن مکمل نتائج میں عام طور پر 6 سے 9 ماہ لگتے ہیں۔"
+          },
+          {
+            "question": "کیا آپ مواد لکھتے ہیں، یا ہمیں فراہم کرنا ہوگا؟",
+            "answer": "ہم اسے لکھتے ہیں۔ تاہم، انتہائی تکنیکی صنعتوں کے لیے، ہم درستگی کو یقینی بنانے کے لیے آپ کے ماہرین سے انٹرویو لیتے ہیں۔"
+          },
+          {
+            "question": "کیا آپ کا مواد AI سے تیار کیا جاتا ہے؟",
+            "answer": "نہیں۔ ہم تحقیق کے لیے AI کا استعمال کرتے ہیں، لیکن اصل تحریر انسانی ماہرین کرتے ہیں۔ گوگل منفرد انسانی بصیرت کو انعام دیتا ہے۔"
+          },
+          {
+            "question": "آپ کیسے فیصلہ کرتے ہیں کہ کن موضوعات پر لکھنا ہے؟",
+            "answer": "ہم دیکھتے ہیں کہ آپ کے سامعین کیا تلاش کر رہے ہیں، آپ کے حریف کیا چھوڑ رہے ہیں، اور کن موضوعات سے براہ راست آمدنی ہوتی ہے۔"
+          },
+          {
+            "question": "کیا آپ ہماری پرانی بلاگ پوسٹس کو بہتر بنا سکتے ہیں؟",
+            "answer": "ہاں۔ پرانی پوسٹس کو اپ ڈیٹ کرنا اکثر نتائج حاصل کرنے کا تیز ترین طریقہ ہوتا ہے۔"
+          },
+          {
+            "question": "ٹاپ آف فنل اور باٹم آف فنل مواد میں کیا فرق ہے؟",
+            "answer": "ٹاپ آف فنل وسیع سوالات کے جواب دیتا ہے۔ باٹم آف فنل خریداروں کو ہدف بناتا ہے جو خریداری کے لیے تیار ہوں۔"
+          },
+          {
+            "question": "آپ بلاگ پوسٹ کی کامیابی کو کیسے ماپتے ہیں؟",
+            "answer": "ہم کامیابی کو نامیاتی مطلوبہ الفاظ کی درجہ بندی، صفحہ پر وقت، اور پیدا ہونے والی کوالیفائیڈ لیڈز کی تعداد سے ماپتے ہیں۔"
+          },
+          {
+            "question": "کیا ہمیں ہر روز نئی پوسٹ شائع کرنے کی ضرورت ہے؟",
+            "answer": "نہیں۔ معیار مقدار کو شکست دیتا ہے۔ ہر ماہ ایک جامع گائیڈ شائع کرنا زیادہ موثر ہے۔"
+          }
+        ],
+        "technologies": [
+          { "icon": "ahrefs", "name": "Ahrefs" },
+          { "icon": "surferseo", "name": "SurferSEO" },
+          { "icon": "gsc", "name": "Google Search Console" },
+          { "icon": "wordpress", "name": "WordPress" },
+          { "icon": "grammarly", "name": "Grammarly" },
+          { "icon": "clearscope", "name": "Clearscope" },
+          { "icon": "ga4", "name": "Google Analytics 4" },
+          { "icon": "semrush", "name": "Semrush" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "تسويق المحتوى",
+      "shortDescription": "توقف عن نشر منشورات مدونة عامة لا يقرأها أحد. نحن ننشئ محتوى عالي الجودة يعتمد على البيانات ويحتل مرتبة في Google، ويتفاعل مع جمهورك المثالي، ويحول القراء إلى عملاء يدفعون.",
+      "fullDescription": "يفشل معظم تسويق المحتوى لأنه يتم إنتاجه في فراغ - مكتوب لملء حصة بدلاً من حل مشكلة معينة للعميل أو الترتيب لكلمة رئيسية مربحة. نحن نتبع نهجاً يركز على الإيرادات أولاً في تسويق المحتوى. قبل كتابة كلمة واحدة، نجري بحثاً عميقاً للجمهور وتحليل للمنافسين لتحديد الموضوعات ذات النية العالية. يتعاون فريقنا من الكتاب الخبراء والمحررين واستراتيجيي تحسين محركات البحث لإنتاج محتوى شامل وموثوق لا يرضي خوارزميات محركات البحث فحسب، بل يثقف القراء البشريين ويقنعهم حقاً. من الأدلة الشاملة المتعمقة وتقارير الصناعة المدعومة بالبيانات إلى الصفحات المقصودة التي تركز على التحويل في أسفل مسار التحويل، نبني نظاماً بيئياً للمحتوى يرسخ علامتك التجارية كمرجع مطلق في مجالك بينما يقود عملاء محتملين ومبيعات قابلة للقياس.",
+      "features": [
+        "استراتيجية المحتوى وخريطة طريق الكلمات الرئيسية",
+        "منشورات ومقالات مدونة طويلة محسنة للبحث (SEO)",
+        "الأوراق البيضاء والكتب الإلكترونية ومغناطيس العملاء المحتملين",
+        "كتابة الإعلانات للتحويل في أسفل مسار مسار التحويل",
+        "تحسين محركات البحث على الصفحة والتحسين الدلالي",
+        "تحديث المحتوى والتحسين التاريخي",
+        "مقابلات الخبراء المتخصصين (SME)",
+        "استراتيجية توزيع وترويج المحتوى"
+      ],
+      "benefits": [
+        "جذب زيارات عضوية مؤهلة وذات نية عالية من محركات البحث",
+        "ترسيخ علامتك التجارية كقائد فكري موثوق به في مجالك",
+        "التقاط العملاء المحتملين بكفاءة من خلال تقديم محتوى قابل للتنزيل",
+        "تقصير دورة المبيعات من خلال الإجابة على اعتراضات العملاء مسبقاً",
+        "بناء أصل متزايد يولد عائد استثمار لسنوات وليس أيام",
+        "زيادة سلطة النطاق الإجمالية لموقع الويب الخاص بك وملف تعريف الروابط"
+      ],
+      "metaTitle": "وكالة تسويق المحتوى لتحسين محركات البحث | B2B و B2C | PakSoft",
+      "metaDescription": "زيادة الإيرادات من خلال تسويق المحتوى المستند إلى البيانات. ننتج منشورات مدونة وأدلة عالية الجودة ترتب في Google.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "الاكتشاف وبحث الجمهور",
+            "description": "نجري مقابلات مع فريقك لفهم شخصيات المشترين الخاصة بك ونقاط الألم الخاصة بهم للكشف عن موضوعات محتوى قيمة."
+          },
+          {
+            "step": 2,
+            "title": "البحث عن الكلمات الرئيسية وتجميع الموضوعات",
+            "description": "نبني تقويم محتوى من 6 إلى 12 شهراً يعتمد على حجم البحث وصعوبة الكلمات. نجمع الموضوعات في 'مجموعات' لبناء سلطة."
+          },
+          {
+            "step": 3,
+            "title": "إنشاء الملخص والمخطط التفصيلي",
+            "description": "بالنسبة لكل جزء من المحتوى، يقوم فريقنا بإنشاء ملخص تفصيلي يحدد الكلمات الرئيسية وبنية العناوين المطلوبة."
+          },
+          {
+            "step": 4,
+            "title": "الكتابة الخبيرة والمراجعة التحريرية",
+            "description": "يقوم كتابنا المتخصصون بصياغة المحتوى. ثم يمر عبر مراجعة تحريرية صارمة لضمان الوضوح والقواعد اللغوية."
+          },
+          {
+            "step": 5,
+            "title": "تحسين محركات البحث (SEO) والنشر",
+            "description": "نقوم بتحسين المقال باستخدام أدوات مثل SurferSEO، ثم نقوم بتنسيقه ونشره مباشرة في نظام إدارة المحتوى الخاص بك."
+          },
+          {
+            "step": 6,
+            "title": "تتبع الأداء والتحديث",
+            "description": "نتتبع كيفية ترتيب المحتوى بمرور الوقت. كل ربع سنة، نحدد المنشورات القديمة ونحدثها ببيانات جديدة لرفعها مرة أخرى."
+          }
+        ],
+        "faq": [
+          {
+            "question": "كم من الوقت يستغرق تسويق المحتوى لتوليد عملاء محتملين؟",
+            "answer": "المحتوى لعبة طويلة الأمد. في حين قد ترى زيارات أولية في 3 أشهر، فإن النظام البيئي لتوليد العملاء المحتملين يستغرق من 6 إلى 9 أشهر."
+          },
+          {
+            "question": "هل تكتبون المحتوى أم يتعين علينا تقديمه؟",
+            "answer": "نحن نكتبه. ومع ذلك، بالنسبة للصناعات التقنية للغاية، نعتمد على مقابلات قصيرة مع الخبراء المتخصصين لضمان الدقة."
+          },
+          {
+            "question": "هل المحتوى الخاص بك يتم إنشاؤه بواسطة الذكاء الاصطناعي؟",
+            "answer": "لا. على الرغم من استخدامنا لأدوات الذكاء الاصطناعي للبحث، فإن الكتابة الفعلية تتم بواسطة خبراء بشريين. تكافئ Google الرؤى البشرية الفريدة."
+          },
+          {
+            "question": "كيف تقرر الموضوعات التي ستكتب عنها؟",
+            "answer": "نحن ننظر إلى ما يبحث عنه جمهورك، وما يفشل منافسوك في تغطيته، والموضوعات التي تدفع الإيرادات مباشرة."
+          },
+          {
+            "question": "هل يمكنك تحسين منشورات المدونة القديمة لدينا؟",
+            "answer": "نعم. يعد التحسين التاريخي غالباً أسرع طريقة للحصول على النتائج. نقوم بمراجعة منشوراتك الحالية وتحديثها وإعادة تحسينها."
+          },
+          {
+            "question": "ما الفرق بين المحتوى في أعلى المسار وأسفل المسار؟",
+            "answer": "أعلى المسار يجيب على أسئلة واسعة. أسفل المسار يستهدف المشترين المستعدين للشراء. نحن نوازن بين الاثنين."
+          },
+          {
+            "question": "كيف تقيس نجاح منشور المدونة؟",
+            "answer": "نحن نقيس النجاح من خلال ترتيب الكلمات الرئيسية، والوقت المستغرق في الصفحة، وعدد العملاء المحتملين المؤهلين المتولدين."
+          },
+          {
+            "question": "هل نحتاج إلى نشر منشور جديد كل يوم؟",
+            "answer": "لا، الجودة تتفوق على الكمية. نشر دليل شامل واحد شهرياً أكثر فعالية بكثير من نشر خمسة منشورات قصيرة أسبوعياً."
+          }
+        ],
+        "technologies": [
+          { "icon": "ahrefs", "name": "Ahrefs" },
+          { "icon": "surferseo", "name": "SurferSEO" },
+          { "icon": "gsc", "name": "Google Search Console" },
+          { "icon": "wordpress", "name": "WordPress" },
+          { "icon": "grammarly", "name": "Grammarly" },
+          { "icon": "clearscope", "name": "Clearscope" },
+          { "icon": "ga4", "name": "Google Analytics 4" },
+          { "icon": "semrush", "name": "Semrush" }
+        ]
+      }
+    }
+  }
+}
+
+}

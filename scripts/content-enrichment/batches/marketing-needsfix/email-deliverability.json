@@ -1,0 +1,638 @@
+{
+  "slug": "email-deliverability",
+  "en": {
+    "name": "Email Deliverability",
+    "shortDescription": "Stop landing in the spam folder. We optimize your technical infrastructure and sender reputation to ensure your emails reach the primary inbox every time.",
+    "fullDescription": "Even the best email marketing campaigns are useless if they never reach your audience. As inbox providers like Google and Yahoo tighten their security standards, proper email deliverability requires far more than just avoiding spammy words. We provide comprehensive deliverability audits and technical implementations to repair damaged sender reputations and establish flawless authentication. From configuring SPF, DKIM, and DMARC records to analyzing blacklists and implementing strategic IP warmup schedules, we handle the complex technical backend of email marketing. We monitor your postmaster metrics continuously, diagnose bounce codes, and prune inactive subscribers to ensure your domain remains healthy and your revenue-generating emails land squarely in the primary inbox.",
+    "features": [
+      "SPF, DKIM, and DMARC Authentication Setup",
+      "Sender Reputation & Postmaster Monitoring",
+      "Blacklist Diagnosis & Removal",
+      "Strategic IP & Domain Warmup Plans",
+      "BIMI (Brand Indicators for Message Identification)",
+      "Bounce & Spam Complaint Analysis",
+      "List Hygiene & Sunset Policy Implementation",
+      "Deliverability Audits & Ongoing Reporting"
+    ],
+    "benefits": [
+      "Increase open rates and campaign ROI by reaching the primary inbox",
+      "Comply fully with the latest Google and Yahoo sender requirements",
+      "Protect your brand's domain from spoofing and phishing attacks",
+      "Recover from existing spam filters and blacklist penalties",
+      "Ensure transactional emails (receipts, resets) never bounce",
+      "Maintain a pristine sender reputation as your email volume scales"
+    ],
+    "metaTitle": "Email Deliverability Services | Inbox Optimization | PakSoft",
+    "metaDescription": "Ensure your emails reach the primary inbox. We handle SPF, DKIM, DMARC authentication, blacklist removal, and domain warmup to fix email deliverability.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Comprehensive Deliverability Audit",
+          "description": "We start by analyzing your current inbox placement, domain reputation, and authentication records using tools like Google Postmaster and third-party seed testing."
+        },
+        {
+          "step": 2,
+          "title": "Technical Authentication Setup",
+          "description": "We correctly configure your DNS records (SPF, DKIM, and DMARC) to ensure ESPs verify your identity and protect your domain from unauthorized spoofing."
+        },
+        {
+          "step": 3,
+          "title": "Blacklist Removal & Remediation",
+          "description": "If your domain or IP is on any industry blacklists (like Spamhaus or Barracuda), we identify the root cause, fix the issue, and formally request delisting."
+        },
+        {
+          "step": 4,
+          "title": "Domain & IP Warmup Strategy",
+          "description": "When moving to a new platform or a dedicated IP, we design a gradual volume-scaling plan. We initially target only highly engaged subscribers to build trust with mailbox providers."
+        },
+        {
+          "step": 5,
+          "title": "List Hygiene & Sunset Policies",
+          "description": "We implement automated rules to clean hard bounces and unengaged subscribers from your active list, ensuring you only send emails to people who want them."
+        },
+        {
+          "step": 6,
+          "title": "Continuous Monitoring",
+          "description": "Deliverability isn't a one-time fix. We continuously monitor your sender score, spam complaint rates, and inbox placement, intervening before minor issues become major blocks."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Why are my emails suddenly going to spam?",
+          "answer": "Sudden drops in deliverability usually stem from authentication failures (like missing DMARC records), spikes in spam complaints, hitting spam traps, or a sudden, unnatural increase in sending volume."
+        },
+        {
+          "question": "What are SPF, DKIM, and DMARC?",
+          "answer": "They are DNS records that prove you are who you say you are. SPF lists allowed sending servers, DKIM digitally signs your emails, and DMARC tells receivers what to do if an email fails authentication."
+        },
+        {
+          "question": "How long does it take to fix a bad sender reputation?",
+          "answer": "It depends on the severity of the damage. Minor issues can be resolved in a week or two, but recovering from severe blacklist penalties or major spam traps can take 30 to 60 days of careful warming."
+        },
+        {
+          "question": "Do you offer IP warmup services?",
+          "answer": "Yes. If you are migrating to a new Email Service Provider (ESP) or moving to a dedicated IP, we manage the daily volume scaling to build a positive reputation from scratch safely."
+        },
+        {
+          "question": "What is a 'Sunset Policy'?",
+          "answer": "It's an automated process that stops sending emails to subscribers who haven't opened or clicked in a long time (e.g., 90 days). Removing inactive users drastically improves your overall deliverability rates."
+        },
+        {
+          "question": "Will fixing deliverability guarantee 100% open rates?",
+          "answer": "No. Deliverability ensures your email lands in the inbox rather than the spam folder. Whether the user actually opens it still depends on your subject line and brand relationship."
+        },
+        {
+          "question": "Does the content of my email affect deliverability?",
+          "answer": "Yes, but less than it used to. While excessive capitalization, spammy words, and heavy image-to-text ratios matter, modern spam filters care much more about your domain reputation and user engagement metrics."
+        },
+        {
+          "question": "What are Google Postmaster Tools and why do I need them?",
+          "answer": "It is a free tool provided by Google that shows exactly how Gmail views your domain's reputation. We use it to monitor your spam rate, domain reputation, and authentication success directly from the source."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "googlepostmaster",
+          "name": "Google Postmaster Tools"
+        },
+        {
+          "icon": "dmarc",
+          "name": "DMARC Analyzer"
+        },
+        {
+          "icon": "litmus",
+          "name": "Litmus"
+        },
+        {
+          "icon": "mxtoolbox",
+          "name": "MxToolbox"
+        },
+        {
+          "icon": "sendgrid",
+          "name": "SendGrid"
+        },
+        {
+          "icon": "mailgun",
+          "name": "Mailgun"
+        },
+        {
+          "icon": "klaviyo",
+          "name": "Klaviyo"
+        },
+        {
+          "icon": "glockapps",
+          "name": "GlockApps"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "E-posta Teslim edilebilirliği",
+    "shortDescription": "Spam klasörüne düşmeyi bırakın. E-postalarınızın her seferinde birincil gelen kutusuna ulaşmasını sağlamak için teknik altyapınızı ve gönderici itibarınızı optimize ediyoruz.",
+    "fullDescription": "En iyi e-posta pazarlama kampanyaları bile hedef kitlenize asla ulaşmıyorsa yararsızdır. Google ve Yahoo gibi e-posta sağlayıcıları güvenlik standartlarını sıkılaştırdıkça, uygun e-posta teslim edilebilirliği yalnızca spam kelimelerden kaçınmaktan çok daha fazlasını gerektirir. Hasarlı gönderici itibarlarını onarmak ve kusursuz bir kimlik doğrulama sağlamak için kapsamlı teslim edilebilirlik denetimleri ve teknik uygulamalar sunuyoruz. SPF, DKIM ve DMARC kayıtlarını yapılandırmaktan kara listeleri (blacklist) analiz etmeye ve stratejik IP ısınma (warmup) programları uygulamaya kadar, e-posta pazarlamasının karmaşık teknik arka planını yönetiyoruz. Postmaster metriklerinizi sürekli izliyor, hemen çıkma (bounce) kodlarını teşhis ediyor ve alan adınızın sağlıklı kalmasını ve gelir getiren e-postalarınızın birincil gelen kutusuna düşmesini sağlamak için pasif aboneleri temizliyoruz.",
+    "features": [
+      "SPF, DKIM ve DMARC Kimlik Doğrulama Kurulumu",
+      "Gönderici İtibarı ve Postmaster İzleme",
+      "Kara Liste (Blacklist) Teşhisi ve Kaldırma",
+      "Stratejik IP ve Alan Adı Isınma (Warmup) Planları",
+      "BIMI (Mesaj Tanımlama için Marka Göstergeleri)",
+      "Bounce (Geri Dönme) ve Spam Şikayeti Analizi",
+      "Liste Hijyeni ve Sunset Politikası Uygulaması",
+      "Teslim Edilebilirlik Denetimleri ve Sürekli Raporlama"
+    ],
+    "benefits": [
+      "Birincil gelen kutusuna ulaşarak açılma oranlarını ve yatırım getirisini (ROI) artırın",
+      "En son Google ve Yahoo gönderici gereksinimlerine tam olarak uyun",
+      "Markanızın alan adını sahtekarlık (spoofing) ve kimlik avı saldırılarından koruyun",
+      "Mevcut spam filtrelerinden ve kara liste cezalarından kurtulun",
+      "İşlemsel e-postaların (makbuzlar, şifre sıfırlamalar) asla geri dönmediğinden emin olun",
+      "E-posta hacminiz ölçeklendikçe kusursuz bir gönderici itibarını koruyun"
+    ],
+    "metaTitle": "E-posta Teslim Edilebilirliği Hizmetleri | Gelen Kutusu Optimizasyonu | PakSoft",
+    "metaDescription": "E-postalarınızın birincil gelen kutusuna ulaştığından emin olun. E-posta teslim edilebilirliğini düzeltmek için SPF, DKIM, DMARC doğrulamasını yönetiyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Kapsamlı Teslim Edilebilirlik Denetimi",
+          "description": "Google Postmaster ve üçüncü taraf test araçlarını kullanarak mevcut gelen kutusu yerleşiminizi, alan adı itibarınızı ve kimlik doğrulama kayıtlarınızı analiz ederek başlıyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Teknik Kimlik Doğrulama Kurulumu",
+          "description": "ESP'lerin kimliğinizi doğrulamasını sağlamak ve alan adınızı yetkisiz sahtekarlıklardan korumak için DNS kayıtlarınızı (SPF, DKIM ve DMARC) doğru bir şekilde yapılandırıyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Kara Listeden (Blacklist) Çıkarma ve İyileştirme",
+          "description": "Alan adınız veya IP'niz herhangi bir endüstri kara listesindeyse (Spamhaus vb. gibi), temel nedeni belirliyor, sorunu çözüyor ve resmi olarak listeden çıkarılma talebinde bulunuyoruz."
+        },
+        {
+          "step": 4,
+          "title": "Alan Adı ve IP Isınma (Warmup) Stratejisi",
+          "description": "Yeni bir platforma veya özel bir IP'ye geçerken, kademeli bir hacim ölçeklendirme planı tasarlıyoruz. E-posta sağlayıcılarında güven oluşturmak için başlangıçta yalnızca yüksek etkileşimli aboneleri hedefleriz."
+        },
+        {
+          "step": 5,
+          "title": "Liste Hijyeni ve Sunset Politikaları",
+          "description": "Yalnızca e-postalarınızı isteyen kişilere gönderim yaptığınızdan emin olmak için, hard bounce'ları ve etkileşimsiz aboneleri aktif listenizden temizleyecek otomatik kurallar uyguluyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Sürekli İzleme",
+          "description": "Teslim edilebilirlik tek seferlik bir düzeltme değildir. Gönderici puanınızı, spam şikayet oranlarınızı ve gelen kutusu yerleşiminizi sürekli izliyor, küçük sorunlar büyümeden önce müdahale ediyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "E-postalarım neden aniden spam'e düşmeye başladı?",
+          "answer": "Teslim edilebilirliğindeki ani düşüşler genellikle kimlik doğrulama hatalarından (eksik DMARC kayıtları gibi), spam şikayetlerindeki artışlardan, spam tuzaklarına (spam traps) takılmaktan veya gönderim hacminde ani, doğal olmayan bir artıştan kaynaklanır."
+        },
+        {
+          "question": "SPF, DKIM ve DMARC nedir?",
+          "answer": "Bunlar kim olduğunuzu kanıtlayan DNS kayıtlarıdır. SPF izin verilen gönderici sunucuları listeler, DKIM e-postalarınızı dijital olarak imzalar ve DMARC alıcılara bir e-posta kimlik doğrulamasında başarısız olursa ne yapacaklarını söyler."
+        },
+        {
+          "question": "Kötü bir gönderici itibarını düzeltmek ne kadar sürer?",
+          "answer": "Hasarın ciddiyetine bağlıdır. Küçük sorunlar bir veya iki hafta içinde çözülebilir, ancak ciddi kara liste cezalarından veya büyük spam tuzaklarından kurtulmak 30 ila 60 günlük dikkatli bir ısınma gerektirebilir."
+        },
+        {
+          "question": "IP ısınma (warmup) hizmetleri sunuyor musunuz?",
+          "answer": "Evet. Yeni bir E-posta Servis Sağlayıcısına (ESP) veya özel bir IP'ye geçiyorsanız, sıfırdan olumlu bir itibar oluşturmak için günlük hacim ölçeklendirmesini güvenli bir şekilde yönetiyoruz."
+        },
+        {
+          "question": "'Sunset Politikası' nedir?",
+          "answer": "Uzun süredir (örneğin 90 gün) e-postaları açmayan veya tıklamayan abonelere e-posta göndermeyi durduran otomatik bir işlemdir. Aktif olmayan kullanıcıları kaldırmak, genel teslim edilebilirlik oranlarınızı büyük ölçüde artırır."
+        },
+        {
+          "question": "Teslim edilebilirliği düzeltmek %100 açılma oranlarını garanti eder mi?",
+          "answer": "Hayır. Teslim edilebilirlik, e-postanızın spam klasörü yerine gelen kutusuna düşmesini sağlar. Kullanıcının e-postayı gerçekten açıp açmaması yine de konu satırınıza ve marka ilişkinize bağlıdır."
+        },
+        {
+          "question": "E-postamın içeriği teslim edilebilirliği etkiler mi?",
+          "answer": "Evet, ancak eskisinden daha az. Aşırı büyük harf kullanımı, spam benzeri kelimeler ve yüksek resim/metin oranları önemli olsa da, modern spam filtreleri alan adı itibarınıza ve kullanıcı etkileşim metriklerine çok daha fazla önem verir."
+        },
+        {
+          "question": "Google Postmaster Tools nedir ve ona neden ihtiyacım var?",
+          "answer": "Google tarafından sağlanan ve Gmail'in alan adınızın itibarını tam olarak nasıl gördüğünü gösteren ücretsiz bir araçtır. Doğrudan kaynağından spam oranınızı, alan adı itibarınızı ve kimlik doğrulama başarınızı izlemek için kullanırız."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "googlepostmaster",
+          "name": "Google Postmaster Tools"
+        },
+        {
+          "icon": "dmarc",
+          "name": "DMARC Analyzer"
+        },
+        {
+          "icon": "litmus",
+          "name": "Litmus"
+        },
+        {
+          "icon": "mxtoolbox",
+          "name": "MxToolbox"
+        },
+        {
+          "icon": "sendgrid",
+          "name": "SendGrid"
+        },
+        {
+          "icon": "mailgun",
+          "name": "Mailgun"
+        },
+        {
+          "icon": "klaviyo",
+          "name": "Klaviyo"
+        },
+        {
+          "icon": "glockapps",
+          "name": "GlockApps"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "E-Mail-Zustellbarkeit",
+    "shortDescription": "Landen Sie nicht länger im Spam-Ordner. Wir optimieren Ihre technische Infrastruktur und Sender-Reputation, um sicherzustellen, dass Ihre E-Mails jedes Mal den primären Posteingang erreichen.",
+    "fullDescription": "Selbst die besten E-Mail-Marketingkampagnen sind nutzlos, wenn sie Ihre Zielgruppe nie erreichen. Da Postfachanbieter wie Google und Yahoo ihre Sicherheitsstandards verschärfen, erfordert eine ordnungsgemäße E-Mail-Zustellbarkeit weit mehr, als nur Spam-Wörter zu vermeiden. Wir bieten umfassende Zustellbarkeitsaudits und technische Implementierungen an, um beschädigte Sender-Reputationen zu reparieren und eine fehlerfreie Authentifizierung zu etablieren. Von der Konfiguration von SPF-, DKIM- und DMARC-Einträgen über die Analyse von Blacklists bis hin zur Implementierung strategischer IP-Warmup-Pläne kümmern wir uns um das komplexe technische Backend des E-Mail-Marketings. Wir überwachen kontinuierlich Ihre Postmaster-Metriken, diagnostizieren Bounce-Codes und bereinigen inaktive Abonnenten.",
+    "features": [
+      "SPF-, DKIM- und DMARC-Authentifizierungs-Setup",
+      "Sender-Reputation & Postmaster-Überwachung",
+      "Blacklist-Diagnose & -Entfernung",
+      "Strategische IP- & Domain-Warmup-Pläne",
+      "BIMI (Brand Indicators for Message Identification)",
+      "Analyse von Bounces & Spam-Beschwerden",
+      "Listenhygiene & Implementierung von Sunset-Policies",
+      "Zustellbarkeitsaudits & fortlaufendes Reporting"
+    ],
+    "benefits": [
+      "Steigern Sie die Öffnungsraten und den Kampagnen-ROI durch Erreichen des primären Posteingangs",
+      "Erfüllen Sie die neuesten Sender-Anforderungen von Google und Yahoo vollständig",
+      "Schützen Sie die Domain Ihrer Marke vor Spoofing- und Phishing-Angriffen",
+      "Erholen Sie sich von bestehenden Spam-Filtern und Blacklist-Strafen",
+      "Stellen Sie sicher, dass transaktionale E-Mails (Quittungen, Resets) niemals zurückkommen",
+      "Behalten Sie eine makellose Sender-Reputation bei, während Ihr E-Mail-Volumen wächst"
+    ],
+    "metaTitle": "E-Mail-Zustellbarkeit & Posteingangsoptimierung | PakSoft",
+    "metaDescription": "Stellen Sie sicher, dass Ihre E-Mails den primären Posteingang erreichen. Wir kümmern uns um SPF, DKIM, DMARC-Authentifizierung, Blacklist-Entfernung und Domain-Warmup.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Umfassendes Zustellbarkeitsaudit",
+          "description": "Wir analysieren Ihre aktuelle Posteingangsplatzierung, Domain-Reputation und Authentifizierungseinträge mit Tools wie Google Postmaster und Seed-Testing."
+        },
+        {
+          "step": 2,
+          "title": "Technisches Authentifizierungs-Setup",
+          "description": "Wir konfigurieren Ihre DNS-Einträge (SPF, DKIM und DMARC) korrekt, um sicherzustellen, dass ESPs Ihre Identität verifizieren und Ihre Domain schützen."
+        },
+        {
+          "step": 3,
+          "title": "Blacklist-Entfernung & Behebung",
+          "description": "Wenn Ihre Domain oder IP auf einer Blacklist (wie Spamhaus) steht, identifizieren wir die Ursache, beheben das Problem und beantragen formal das Delisting."
+        },
+        {
+          "step": 4,
+          "title": "Domain- & IP-Warmup-Strategie",
+          "description": "Beim Wechsel zu einer neuen Plattform entwerfen wir einen Plan zur schrittweisen Volumenskalierung. Zunächst sprechen wir nur hoch engagierte Abonnenten an."
+        },
+        {
+          "step": 5,
+          "title": "Listenhygiene & Sunset-Policies",
+          "description": "Wir implementieren automatische Regeln, um Hard Bounces und nicht engagierte Abonnenten aus Ihrer aktiven Liste zu entfernen, um die Qualität zu sichern."
+        },
+        {
+          "step": 6,
+          "title": "Kontinuierliche Überwachung",
+          "description": "Wir überwachen kontinuierlich Ihren Sender Score, Spam-Beschwerden und die Platzierung im Posteingang und greifen ein, bevor kleine Probleme zu Blockaden werden."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Warum landen meine E-Mails plötzlich im Spam?",
+          "answer": "Plötzliche Einbrüche der Zustellbarkeit resultieren meist aus Authentifizierungsfehlern, Spitzen bei Spam-Beschwerden, Spam-Fallen oder unnatürlichen Volumenanstiegen."
+        },
+        {
+          "question": "Was sind SPF, DKIM und DMARC?",
+          "answer": "Es sind DNS-Einträge, die Ihre Identität beweisen. SPF listet erlaubte Server auf, DKIM signiert E-Mails digital, und DMARC regelt, was bei fehlgeschlagener Authentifizierung passiert."
+        },
+        {
+          "question": "Wie lange dauert es, eine schlechte Sender-Reputation zu reparieren?",
+          "answer": "Kleine Probleme sind in 1-2 Wochen gelöst. Die Erholung von schweren Blacklist-Strafen kann 30 bis 60 Tage sorgfältiges Warmup erfordern."
+        },
+        {
+          "question": "Bieten Sie IP-Warmup-Dienste an?",
+          "answer": "Ja. Wenn Sie zu einem neuen ESP oder einer dedizierten IP wechseln, steuern wir die tägliche Volumenskalierung, um sicher eine positive Reputation aufzubauen."
+        },
+        {
+          "question": "Was ist eine 'Sunset-Policy'?",
+          "answer": "Ein automatisierter Prozess, der keine E-Mails mehr an Abonnenten sendet, die lange Zeit (z.B. 90 Tage) nicht geöffnet haben. Dies verbessert Ihre Zustellraten drastisch."
+        },
+        {
+          "question": "Garantiert die Behebung der Zustellbarkeit 100% Öffnungsraten?",
+          "answer": "Nein. Zustellbarkeit stellt sicher, dass die E-Mail im Posteingang landet. Ob der Nutzer sie öffnet, hängt von der Betreffzeile und der Markenbeziehung ab."
+        },
+        {
+          "question": "Beeinflusst der Inhalt meiner E-Mail die Zustellbarkeit?",
+          "answer": "Ja, aber weniger als früher. Moderne Spam-Filter achten viel mehr auf Ihre Domain-Reputation und Nutzer-Interaktionsmetriken als nur auf bestimmte Spam-Wörter."
+        },
+        {
+          "question": "Was sind Google Postmaster Tools und warum brauche ich sie?",
+          "answer": "Ein kostenloses Tool von Google, das zeigt, wie Gmail die Reputation Ihrer Domain bewertet. Wir nutzen es, um Spam-Rate und Authentifizierung direkt an der Quelle zu überwachen."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "googlepostmaster",
+          "name": "Google Postmaster Tools"
+        },
+        {
+          "icon": "dmarc",
+          "name": "DMARC Analyzer"
+        },
+        {
+          "icon": "litmus",
+          "name": "Litmus"
+        },
+        {
+          "icon": "mxtoolbox",
+          "name": "MxToolbox"
+        },
+        {
+          "icon": "sendgrid",
+          "name": "SendGrid"
+        },
+        {
+          "icon": "mailgun",
+          "name": "Mailgun"
+        },
+        {
+          "icon": "klaviyo",
+          "name": "Klaviyo"
+        },
+        {
+          "icon": "glockapps",
+          "name": "GlockApps"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "ای میل کی ترسیل (Email Deliverability)",
+    "shortDescription": "سپیم فولڈر میں جانا بند کریں۔ ہم آپ کے تکنیکی انفراسٹرکچر اور بھیجنے والے کی ساکھ کو بہتر بناتے ہیں تاکہ آپ کی ای میلز ہر بار پرائمری ان باکس تک پہنچیں۔",
+    "fullDescription": "بہترین ای میل مارکیٹنگ مہمات بھی بیکار ہیں اگر وہ کبھی بھی آپ کے سامعین تک نہیں پہنچتی ہیں۔ چونکہ گوگل اور یاہو جیسے ان باکس فراہم کنندگان اپنے حفاظتی معیارات کو سخت کر رہے ہیں، اس لیے مناسب ای میل کی ترسیل کے لیے صرف سپیم الفاظ سے بچنے سے کہیں زیادہ کی ضرورت ہوتی ہے۔ ہم تباہ شدہ ساکھ کو ٹھیک کرنے اور بے عیب تصدیق قائم کرنے کے لیے جامع آڈٹ اور تکنیکی نفاذ فراہم کرتے ہیں۔ SPF، DKIM، اور DMARC ریکارڈز کو ترتیب دینے سے لے کر بلیک لسٹس کا تجزیہ کرنے اور سٹریٹیجک IP وارم اپ شیڈول نافذ کرنے تک، ہم ای میل مارکیٹنگ کے پیچیدہ تکنیکی پس منظر کو سنبھالتے ہیں۔ ہم آپ کی پوسٹ ماسٹر میٹرکس کی مسلسل نگرانی کرتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ آپ کی ای میلز پرائمری ان باکس میں پہنچیں۔",
+    "features": [
+      "SPF، DKIM، اور DMARC توثیق کا سیٹ اپ",
+      "بھیجنے والے کی ساکھ اور پوسٹ ماسٹر کی نگرانی",
+      "بلیک لسٹ کی تشخیص اور ہٹانا",
+      "اسٹریٹجک آئی پی اور ڈومین وارم اپ پلانز",
+      "BIMI (پیغام کی شناخت کے لیے برانڈ اشارے)",
+      "باؤنس اور سپیم شکایات کا تجزیہ",
+      "فہرست کی صفائی اور سن سیٹ پالیسی کا نفاذ",
+      "ڈیلیوریبلٹی آڈٹ اور جاری رپورٹنگ"
+    ],
+    "benefits": [
+      "پرائمری ان باکس تک پہنچ کر اوپن ریٹس اور ROI میں اضافہ کریں",
+      "گوگل اور یاہو کی تازہ ترین بھیجنے والے کی ضروریات کی مکمل تعمیل کریں",
+      "اپنے برانڈ کے ڈومین کو سپوفنگ اور فشنگ حملوں سے بچائیں",
+      "موجودہ سپیم فلٹرز اور بلیک لسٹ جرمانوں سے بازیافت کریں",
+      "اس بات کو یقینی بنائیں کہ ٹرانزیکشنل ای میلز کبھی باؤنس نہ ہوں",
+      "ای میل کے حجم کے بڑھنے کے ساتھ ساتھ بھیجنے والے کی بہترین ساکھ برقرار رکھیں"
+    ],
+    "metaTitle": "ای میل ڈیلیوریبلٹی سروسز | ان باکس آپٹیمائزیشن | PakSoft",
+    "metaDescription": "یقینی بنائیں کہ آپ کی ای میلز پرائمری ان باکس تک پہنچتی ہیں۔ ہم ای میل ڈیلیوریبلٹی کو ٹھیک کرنے کے لیے SPF، DKIM، DMARC کو سنبھالتے ہیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "ڈیلیوریبلٹی کا جامع آڈٹ",
+          "description": "ہم گوگل پوسٹ ماسٹر جیسے ٹولز کا استعمال کرتے ہوئے آپ کے موجودہ ان باکس پلیسمنٹ، ڈومین کی ساکھ، اور توثیق کے ریکارڈ کا تجزیہ کر کے شروعات کرتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "تکنیکی توثیق کا سیٹ اپ",
+          "description": "ہم آپ کے DNS ریکارڈز (SPF، DKIM، اور DMARC) کو درست طریقے سے ترتیب دیتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ ESPs آپ کی شناخت کی تصدیق کریں۔"
+        },
+        {
+          "step": 3,
+          "title": "بلیک لسٹ کو ہٹانا اور تدارک",
+          "description": "اگر آپ کا ڈومین کسی بلیک لسٹ پر ہے، تو ہم بنیادی وجہ کی نشاندہی کرتے ہیں، مسئلہ کو حل کرتے ہیں، اور باقاعدہ طور پر فہرست سے ہٹانے کی درخواست کرتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "ڈومین اور آئی پی وارم اپ حکمت عملی",
+          "description": "نئے پلیٹ فارم یا مخصوص آئی پی پر جاتے وقت، ہم حجم کو آہستہ آہستہ بڑھانے کا خاکہ بناتے ہیں۔ ہم شروع میں صرف مصروف ترین صارفین کو ہدف بناتے ہیں۔"
+        },
+        {
+          "step": 5,
+          "title": "فہرست کی صفائی اور سن سیٹ پالیسیاں",
+          "description": "ہم آپ کی فعال فہرست سے ہارڈ باؤنسز اور غیر مصروف صارفین کو صاف کرنے کے لیے خودکار اصول نافذ کرتے ہیں، تاکہ ساکھ برقرار رہے۔"
+        },
+        {
+          "step": 6,
+          "title": "مسلسل نگرانی",
+          "description": "ڈیلیوریبلٹی ایک وقتی کام نہیں ہے۔ ہم آپ کے سینڈر سکور اور سپیم شکایات کی مسلسل نگرانی کرتے ہیں، اور چھوٹے مسائل کے بڑے ہونے سے پہلے مداخلت کرتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "میری ای میلز اچانک سپیم میں کیوں جا رہی ہیں؟",
+          "answer": "ڈیلیوریبلٹی میں اچانک کمی عام طور پر تصدیقی ناکامیوں (جیسے لاپتہ DMARC ریکارڈز)، سپیم شکایات، سپیم ٹریپس، یا حجم میں اچانک اضافے کی وجہ سے ہوتی ہے۔"
+        },
+        {
+          "question": "SPF، DKIM، اور DMARC کیا ہیں؟",
+          "answer": "یہ DNS ریکارڈ ہیں جو ثابت کرتے ہیں کہ آپ کون ہیں۔ SPF اجازت یافتہ سرورز کی فہرست دیتا ہے، DKIM ای میلز پر ڈیجیٹل دستخط کرتا ہے، اور DMARC وصول کنندگان کو بتاتا ہے کہ اگر توثیق ناکام ہو جائے تو کیا کرنا ہے۔"
+        },
+        {
+          "question": "بھیجنے والے کی خراب ساکھ کو ٹھیک کرنے میں کتنا وقت لگتا ہے؟",
+          "answer": "یہ نقصان کی شدت پر منحصر ہے۔ معمولی مسائل کو ایک یا دو ہفتے میں حل کیا جا سکتا ہے، لیکن شدید بلیک لسٹ سے بازیافت میں 30 سے 60 دن لگ سکتے ہیں۔"
+        },
+        {
+          "question": "کیا آپ IP وارم اپ کی خدمات پیش کرتے ہیں؟",
+          "answer": "ہاں۔ اگر آپ نئے ای میل سروس پرووائیڈر (ESP) یا سرشار IP پر جا رہے ہیں، تو ہم سکریچ سے مثبت ساکھ بنانے کے لیے روزانہ حجم کی اسکیلنگ کا انتظام کرتے ہیں۔"
+        },
+        {
+          "question": "'سن سیٹ پالیسی' (Sunset Policy) کیا ہے؟",
+          "answer": "یہ ایک خودکار عمل ہے جو ان سبسکرائبرز کو ای میل بھیجنا بند کر دیتا ہے جنہوں نے طویل عرصے (مثلاً 90 دن) سے نہیں کھولی یا کلک نہیں کی۔"
+        },
+        {
+          "question": "کیا ترسیل کو ٹھیک کرنے سے 100% اوپن ریٹ کی ضمانت ملے گی؟",
+          "answer": "نہیں۔ ترسیل اس بات کو یقینی بناتی ہے کہ آپ کا ای میل سپیم فولڈر کے بجائے ان باکس میں آئے۔ صارف کا اسے کھولنا آپ کی سبجیکٹ لائن پر منحصر ہے۔"
+        },
+        {
+          "question": "کیا میرے ای میل کا مواد ترسیل کو متاثر کرتا ہے؟",
+          "answer": "ہاں، لیکن پہلے سے کم۔ جدید سپیم فلٹرز مخصوص سپیم الفاظ کے بجائے آپ کے ڈومین کی ساکھ اور صارف کے تعامل کی میٹرکس پر زیادہ توجہ دیتے ہیں۔"
+        },
+        {
+          "question": "گوگل پوسٹ ماسٹر ٹولز کیا ہیں اور مجھے ان کی ضرورت کیوں ہے؟",
+          "answer": "یہ گوگل کی طرف سے فراہم کردہ ایک مفت ٹول ہے جو ظاہر کرتا ہے کہ جی میل آپ کے ڈومین کی ساکھ کو کس طرح دیکھتا ہے۔ ہم اسے براہ راست ماخذ سے ٹریک کرنے کے لیے استعمال کرتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "googlepostmaster",
+          "name": "Google Postmaster Tools"
+        },
+        {
+          "icon": "dmarc",
+          "name": "DMARC Analyzer"
+        },
+        {
+          "icon": "litmus",
+          "name": "Litmus"
+        },
+        {
+          "icon": "mxtoolbox",
+          "name": "MxToolbox"
+        },
+        {
+          "icon": "sendgrid",
+          "name": "SendGrid"
+        },
+        {
+          "icon": "mailgun",
+          "name": "Mailgun"
+        },
+        {
+          "icon": "klaviyo",
+          "name": "Klaviyo"
+        },
+        {
+          "icon": "glockapps",
+          "name": "GlockApps"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "إمكانية وصول البريد الإلكتروني",
+    "shortDescription": "توقف عن الهبوط في مجلد الرسائل غير المرغوب فيها (Spam). نحن نقوم بتحسين بنيتك التحتية التقنية وسمعة المرسل لضمان وصول رسائلك إلى البريد الوارد الأساسي في كل مرة.",
+    "fullDescription": "حتى أفضل حملات التسويق عبر البريد الإلكتروني تكون عديمة الفائدة إذا لم تصل إلى جمهورك أبداً. مع تشديد مزودي صناديق البريد مثل Google و Yahoo لمعايير الأمان الخاصة بهم، يتطلب وصول البريد الإلكتروني السليم أكثر بكثير من مجرد تجنب كلمات البريد العشوائي. نحن نقدم عمليات تدقيق شاملة لقابلية التسليم وتطبيقات تقنية لإصلاح سمعة المرسل التالفة وإنشاء مصادقة لا تشوبها شائبة. من تكوين سجلات SPF و DKIM و DMARC إلى تحليل القوائم السوداء وتنفيذ جداول إحماء IP (Warmup) الاستراتيجية، نتعامل مع الواجهة الخلفية التقنية المعقدة لتسويق البريد الإلكتروني. نراقب مقاييس Postmaster الخاصة بك بشكل مستمر، ونشخص رموز الارتداد (bounce)، ونقوم بإزالة المشتركين غير النشطين لضمان بقاء نطاقك صحياً ووصول رسائل البريد الإلكتروني المدرة للدخل إلى البريد الوارد الأساسي.",
+    "features": [
+      "إعداد مصادقة SPF و DKIM و DMARC",
+      "مراقبة سمعة المرسل وأدوات Postmaster",
+      "تشخيص القوائم السوداء وإزالتها",
+      "خطط إحماء IP والنطاق (Warmup) الاستراتيجية",
+      "إعداد BIMI (مؤشرات العلامة التجارية لتحديد الرسائل)",
+      "تحليل الارتداد وشكاوى البريد العشوائي",
+      "تنظيف القوائم وتنفيذ سياسة الاستبعاد (Sunset Policy)",
+      "عمليات تدقيق قابلية التسليم وتقارير مستمرة"
+    ],
+    "benefits": [
+      "زيادة معدلات الفتح وعائد الاستثمار للحملات من خلال الوصول للبريد الوارد",
+      "الامتثال التام لأحدث متطلبات المرسل من Google و Yahoo",
+      "حماية نطاق علامتك التجارية من هجمات الانتحال والتصيد الاحتيالي",
+      "التعافي من فلاتر البريد العشوائي وعقوبات القوائم السوداء الحالية",
+      "ضمان عدم ارتداد رسائل البريد الإلكتروني الخاصة بالمعاملات",
+      "الحفاظ على سمعة مرسل نقية مع زيادة حجم بريدك الإلكتروني"
+    ],
+    "metaTitle": "خدمات وصول البريد الإلكتروني | تحسين البريد الوارد | PakSoft",
+    "metaDescription": "تأكد من وصول رسائل البريد الإلكتروني الخاصة بك إلى البريد الوارد الأساسي. نحن نتعامل مع مصادقة SPF و DKIM و DMARC لإصلاح إمكانية وصول البريد.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تدقيق شامل لقابلية التسليم",
+          "description": "نبدأ بتحليل موضع البريد الوارد الحالي، وسمعة النطاق، وسجلات المصادقة باستخدام أدوات مثل Google Postmaster."
+        },
+        {
+          "step": 2,
+          "title": "إعداد المصادقة الفنية",
+          "description": "نقوم بتكوين سجلات DNS الخاصة بك (SPF و DKIM و DMARC) بشكل صحيح لضمان تحقق مزودي خدمة البريد من هويتك وحماية نطاقك."
+        },
+        {
+          "step": 3,
+          "title": "الإزالة من القوائم السوداء",
+          "description": "إذا كان نطاقك أو عنوان IP الخاص بك مدرجاً في أي قوائم سوداء (مثل Spamhaus)، فإننا نحدد السبب الجذري ونصلح المشكلة ونطلب الإزالة رسمياً."
+        },
+        {
+          "step": 4,
+          "title": "استراتيجية إحماء النطاق وعنوان IP",
+          "description": "عند الانتقال إلى منصة جديدة، نصمم خطة لتوسيع الحجم تدريجياً. نستهدف مبدئياً المشتركين المتفاعلين للغاية لبناء الثقة مع مزودي صناديق البريد."
+        },
+        {
+          "step": 5,
+          "title": "تنظيف القائمة وسياسات الاستبعاد",
+          "description": "ننفذ قواعد آلية لتنظيف الارتدادات الصعبة والمشتركين غير المتفاعلين من قائمتك النشطة، مما يضمن إرسال رسائل فقط للأشخاص الذين يريدونها."
+        },
+        {
+          "step": 6,
+          "title": "المراقبة المستمرة",
+          "description": "إمكانية التسليم ليست إصلاحاً لمرة واحدة. نحن نراقب باستمرار درجة المرسل ومعدلات الشكاوى من البريد العشوائي وموضع البريد الوارد."
+        }
+      ],
+      "faq": [
+        {
+          "question": "لماذا تذهب رسائل البريد الإلكتروني الخاصة بي فجأة إلى البريد العشوائي (Spam)؟",
+          "answer": "عادة ما تنبع الانخفاضات المفاجئة في قابلية التسليم من فشل المصادقة، أو ارتفاع شكاوى البريد العشوائي، أو ضرب فخاخ البريد العشوائي (Spam Traps)، أو زيادة غير طبيعية في حجم الإرسال."
+        },
+        {
+          "question": "ما هي سجلات SPF و DKIM و DMARC؟",
+          "answer": "إنها سجلات DNS تثبت هويتك. يسرد SPF خوادم الإرسال المسموح بها، ويوقع DKIM رسائلك رقمياً، ويخبر DMARC المستلمين بما يجب فعله إذا فشلت المصادقة."
+        },
+        {
+          "question": "كم من الوقت يستغرق إصلاح سمعة المرسل السيئة؟",
+          "answer": "يعتمد الأمر على شدة الضرر. يمكن حل المشكلات البسيطة في أسبوع أو أسبوعين، ولكن التعافي من عقوبات القائمة السوداء الشديدة قد يستغرق من 30 إلى 60 يوماً من الإحماء الدقيق."
+        },
+        {
+          "question": "هل تقدمون خدمات إحماء IP (Warmup)؟",
+          "answer": "نعم. إذا كنت تنتقل إلى مزود خدمة بريد إلكتروني (ESP) جديد أو IP مخصص، فنحن ندير توسيع الحجم اليومي لبناء سمعة إيجابية بأمان."
+        },
+        {
+          "question": "ما هي سياسة الاستبعاد (Sunset Policy)؟",
+          "answer": "إنها عملية آلية تتوقف عن إرسال رسائل بريد إلكتروني للمشتركين الذين لم يفتحوا أو ينقروا لفترة طويلة. إزالة المستخدمين غير النشطين يحسن بشكل كبير من معدلات التسليم."
+        },
+        {
+          "question": "هل سيضمن إصلاح قابلية التسليم معدلات فتح بنسبة 100٪؟",
+          "answer": "لا. تضمن إمكانية التسليم وصول بريدك إلى البريد الوارد بدلاً من مجلد الرسائل غير المرغوب فيها. ما إذا كان المستخدم يفتحه بالفعل لا يزال يعتمد على سطر الموضوع."
+        },
+        {
+          "question": "هل يؤثر محتوى بريدي الإلكتروني على قابلية التسليم؟",
+          "answer": "نعم، ولكن بدرجة أقل من السابق. بينما تهم الكلمات غير المرغوب فيها، فإن فلاتر البريد العشوائي الحديثة تهتم أكثر بسمعة نطاقك ومقاييس تفاعل المستخدم."
+        },
+        {
+          "question": "ما هي أدوات Google Postmaster ولماذا أحتاجها؟",
+          "answer": "إنها أداة مجانية من Google توضح بالضبط كيف تنظر Gmail إلى سمعة نطاقك. نستخدمها لمراقبة معدل البريد العشوائي ونجاح المصادقة من المصدر مباشرة."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "googlepostmaster",
+          "name": "Google Postmaster Tools"
+        },
+        {
+          "icon": "dmarc",
+          "name": "DMARC Analyzer"
+        },
+        {
+          "icon": "litmus",
+          "name": "Litmus"
+        },
+        {
+          "icon": "mxtoolbox",
+          "name": "MxToolbox"
+        },
+        {
+          "icon": "sendgrid",
+          "name": "SendGrid"
+        },
+        {
+          "icon": "mailgun",
+          "name": "Mailgun"
+        },
+        {
+          "icon": "klaviyo",
+          "name": "Klaviyo"
+        },
+        {
+          "icon": "glockapps",
+          "name": "GlockApps"
+        }
+      ]
+    }
+  }
+}

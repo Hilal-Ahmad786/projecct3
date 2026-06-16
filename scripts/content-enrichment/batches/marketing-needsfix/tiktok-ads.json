@@ -1,0 +1,545 @@
+{
+  "slug": "tiktok-ads",
+  "en": {
+    "name": "TikTok Ads Management",
+    "shortDescription": "Harness the power of short-form video. We create and manage high-converting TikTok Ad campaigns designed to capture attention and drive sales among Gen Z and Millennials.",
+    "fullDescription": "TikTok is no longer just a platform for viral dances; it's a massive search engine and one of the most powerful commerce drivers on the internet. However, traditional advertising doesn't work here. TikTok users crave authenticity, entertainment, and native content. Our TikTok Ads Management service is built on the philosophy 'Don't make ads. Make TikToks.' We handle everything from the strategic media buying to creative direction. We utilize In-Feed Ads, Spark Ads (boosting organic creator content), and Video Shopping Ads to capture users where they are most engaged. We continuously test different hooks, sounds, and creators to find the winning formula that lowers your Cost Per Acquisition (CPA) while rapidly scaling your brand's reach and revenue.",
+    "features": [
+      "In-Feed Ads & Spark Ads Management",
+      "TikTok Video Shopping Ads Setup",
+      "Custom Audience & Lookalike Targeting",
+      "Creative Strategy & Hook Development",
+      "Creator & Influencer Ad Sourcing",
+      "TikTok Pixel & Events API Setup",
+      "A/B Testing (Creatives, Sounds, Audiences)",
+      "Campaign Scaling & ROI Optimization"
+    ],
+    "benefits": [
+      "Tap into the highly engaged Gen Z and Millennial demographic",
+      "Achieve lower CPMs compared to saturated platforms like Facebook",
+      "Drive direct sales via seamless TikTok Shop integrations",
+      "Leverage User-Generated Content (UGC) for higher trust and conversion",
+      "Scale winning creatives rapidly before ad fatigue sets in",
+      "Track every conversion accurately with robust Pixel integration"
+    ],
+    "metaTitle": "TikTok Ads Agency | Paid TikTok Marketing | PakSoft",
+    "metaDescription": "Drive sales with high-converting TikTok Ads. We handle creative strategy, media buying, and optimization for In-Feed, Spark, and Shopping Ads.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Pixel & Tracking Setup",
+          "description": "We implement the TikTok Pixel and Events API on your website to ensure accurate tracking of add-to-carts, purchases, and leads."
+        },
+        {
+          "step": 2,
+          "title": "Creative Strategy & Briefing",
+          "description": "We develop creative briefs focusing on strong 3-second hooks, trending audio, and native formats, either for your internal team or creator network."
+        },
+        {
+          "step": 3,
+          "title": "Campaign Structuring",
+          "description": "We build out your ad account with structured campaigns targeting specific interests, behaviors (e.g., interacted with #BeautyTok), and lookalike audiences."
+        },
+        {
+          "step": 4,
+          "title": "Creative Testing Phase",
+          "description": "We launch multiple ad variations to test different hooks and angles, identifying which creatives drive the highest Click-Through Rates (CTR) at the lowest cost."
+        },
+        {
+          "step": 5,
+          "title": "Optimization & Scaling",
+          "description": "We cut underperforming ads and aggressively scale the budgets on winning creatives, utilizing dayparting and bid caps to maintain a profitable ROI."
+        },
+        {
+          "step": 6,
+          "title": "Reporting & Iteration",
+          "description": "TikTok creatives fatigue quickly. We provide real-time reporting dashboards and continuously cycle in fresh, new video content based on data insights."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Are TikTok Ads only for targeting teenagers?",
+          "answer": "No. While TikTok is popular with Gen Z, over 40% of its user base is now aged 30+. It is a highly effective platform for reaching Millennials and even Gen X."
+        },
+        {
+          "question": "What are Spark Ads?",
+          "answer": "Spark Ads allow us to boost organic posts (either from your own profile or a creator's profile, with their permission) as an ad. They look more natural and often convert better than standard ads."
+        },
+        {
+          "question": "Do I need to create the videos myself?",
+          "answer": "You can provide the videos, or we can guide you. We often pair our TikTok Ads service with UGC (User Generated Content) sourcing, where we brief creators to make native-feeling ads for your brand."
+        },
+        {
+          "question": "How often do I need new creatives for TikTok?",
+          "answer": "Very often. Ad fatigue happens much faster on TikTok than on Facebook. We recommend refreshing your ad creatives at least every 2 to 3 weeks to maintain performance."
+        },
+        {
+          "question": "Can B2B companies succeed on TikTok?",
+          "answer": "Yes, but the approach must be educational and entertaining ('edutainment'). Software, finance, and consulting firms are finding great success by sharing industry secrets and behind-the-scenes content."
+        },
+        {
+          "question": "What is the minimum budget required?",
+          "answer": "TikTok requires a minimum campaign-level budget of $50/day. However, for effective testing and optimization, we recommend starting with at least $1,500 - $3,000 per month in ad spend."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "tiktok",
+          "name": "TikTok Ads Manager"
+        },
+        {
+          "icon": "code",
+          "name": "TikTok Events API"
+        },
+        {
+          "icon": "video",
+          "name": "TikTok Creative Center"
+        },
+        {
+          "icon": "video",
+          "name": "CapCut"
+        },
+        {
+          "icon": "analytics",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "database",
+          "name": "Looker Studio"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "TikTok Reklam Yönetimi",
+    "shortDescription": "Kısa formatlı videoların gücünden yararlanın. Z kuşağı ve Y kuşağının dikkatini çekmek ve satışları artırmak için tasarlanmış yüksek dönüşümlü TikTok Reklam kampanyaları oluşturuyor ve yönetiyoruz.",
+    "fullDescription": "TikTok artık sadece viral danslar için bir platform değil; devasa bir arama motoru ve internetteki en güçlü ticaret itici güçlerinden biri. Ancak, geleneksel reklamcılık burada işe yaramaz. TikTok kullanıcıları özgünlük, eğlence ve yerel (native) içerik arzular. TikTok Reklam Yönetimi hizmetimiz 'Reklam yapmayın. TikTok yapın' felsefesi üzerine kurulmuştur. Stratejik medya satın almadan kreatif yönlendirmeye kadar her şeyi biz hallediyoruz. Kullanıcıları en çok etkileşime girdikleri yerde yakalamak için In-Feed (Akış İçi) Reklamları, Spark Reklamları (organik içerik üreticisi gönderilerini öne çıkarma) ve Video Alışveriş Reklamlarını kullanıyoruz. Markanızın erişimini ve gelirini hızla ölçeklendirirken Edinme Başına Maliyetinizi (EBM/CPA) düşüren kazanan formülü bulmak için farklı kancaları (hooks), sesleri ve içerik üreticilerini sürekli olarak test ediyoruz.",
+    "features": [
+      "In-Feed (Akış İçi) ve Spark Reklam Yönetimi",
+      "TikTok Video Alışveriş (Shopping) Reklamları Kurulumu",
+      "Özel Hedef Kitle (Custom Audience) ve Lookalike Hedefleme",
+      "Kreatif Strateji ve Kanca (Hook) Geliştirme",
+      "İçerik Üreticisi (Creator) ve Influencer Reklam Tedariği",
+      "TikTok Pixel ve Events API Kurulumu",
+      "A/B Testi (Kreatifler, Sesler, Hedef Kitleler)",
+      "Kampanya Ölçeklendirme ve ROI (Yatırım Getirisi) Optimizasyonu"
+    ],
+    "benefits": [
+      "Yüksek etkileşimli Z ve Y kuşağı (Gen Z & Millennials) demografisine ulaşın",
+      "Facebook gibi doygunluğa ulaşmış platformlara kıyasla daha düşük BGBM'ler (CPM) elde edin",
+      "Sorunsuz TikTok Shop entegrasyonları ile doğrudan satışları artırın",
+      "Daha yüksek güven ve dönüşüm için Kullanıcı Tarafından Oluşturulan İçerikten (UGC) yararlanın",
+      "Reklam yorgunluğu (ad fatigue) başlamadan önce kazanan kreatifleri hızla ölçeklendirin",
+      "Sağlam Pixel entegrasyonu ile her dönüşümü (conversion) doğru bir şekilde takip edin"
+    ],
+    "metaTitle": "TikTok Reklam Ajansı | Ücretli TikTok Pazarlaması | PakSoft",
+    "metaDescription": "Yüksek dönüşüm sağlayan TikTok Reklamları ile satışları artırın. In-Feed, Spark ve Shopping Reklamları için kreatif strateji, medya satın alma ve optimizasyon sunuyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Pixel ve İzleme (Tracking) Kurulumu",
+          "description": "Sepete ekleme, satın alma ve potansiyel müşteri verilerinin doğru bir şekilde izlenmesini sağlamak için web sitenize TikTok Pixel ve Events API'yi uyguluyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Kreatif Strateji ve Brifing",
+          "description": "Dahili ekibiniz veya içerik üreticisi ağınız için güçlü 3 saniyelik kancalara (hooks), trend olan seslere ve yerel (native) formatlara odaklanan kreatif brifler (brief) geliştiriyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Kampanya Yapılandırması",
+          "description": "Belirli ilgi alanlarını, davranışları (ör. #GüzellikTok ile etkileşime girenler) ve benzer (lookalike) kitleleri hedefleyen yapılandırılmış kampanyalarla reklam hesabınızı oluşturuyoruz."
+        },
+        {
+          "step": 4,
+          "title": "Kreatif Test Aşaması",
+          "description": "Farklı kancaları ve açıları test etmek için birden fazla reklam varyasyonu başlatıyor, hangi kreatiflerin en düşük maliyetle en yüksek Tıklama Oranlarını (TO/CTR) sağladığını belirliyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Optimizasyon ve Ölçeklendirme",
+          "description": "Performansı düşük reklamları kesiyor ve kârlı bir ROI sağlamak için günün saatlerine göre yayınlama (dayparting) ve teklif sınırlarını (bid caps) kullanarak kazanan kreatiflerdeki bütçeleri agresif bir şekilde ölçeklendiriyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Raporlama ve Yineleme (Iteration)",
+          "description": "TikTok kreatifleri hızla yorulur. Gerçek zamanlı raporlama panoları sunuyor ve veri içgörülerine dayalı olarak taze, yeni video içeriklerini sürekli döngüye sokuyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "TikTok Reklamları sadece gençleri hedeflemek için mi?",
+          "answer": "Hayır. TikTok Z kuşağı arasında popüler olsa da, kullanıcı tabanının %40'ından fazlası artık 30+ yaşındadır. Y kuşağına ve hatta X kuşağına ulaşmak için oldukça etkili bir platformdur."
+        },
+        {
+          "question": "Spark Reklamları (Spark Ads) nedir?",
+          "answer": "Spark Reklamları, organik gönderileri (kendi profilinizden veya izinleriyle bir içerik üreticisinin profilinden) reklam olarak öne çıkarmamıza olanak tanır. Daha doğal görünürler ve standart reklamlardan daha iyi dönüşüm sağlarlar."
+        },
+        {
+          "question": "Videoları kendim mi oluşturmam gerekiyor?",
+          "answer": "Videoları siz sağlayabilirsiniz veya biz sizi yönlendirebiliriz. TikTok Reklam hizmetimizi genellikle UGC (Kullanıcı Tarafından Oluşturulan İçerik) tedariğiyle eşleştiririz; burada içerik üreticilerine markanız için doğal hissettiren reklamlar yapmaları talimatını veririz."
+        },
+        {
+          "question": "TikTok için ne sıklıkla yeni kreatiflere ihtiyacım var?",
+          "answer": "Çok sık. Reklam yorgunluğu (Ad fatigue) TikTok'ta Facebook'a göre çok daha hızlı gerçekleşir. Performansı korumak için reklam kreatiflerinizi en az 2 ila 3 haftada bir yenilemenizi öneririz."
+        },
+        {
+          "question": "B2B şirketleri TikTok'ta başarılı olabilir mi?",
+          "answer": "Evet, ancak yaklaşım eğitici ve eğlendirici ('edutainment') olmalıdır. Yazılım, finans ve danışmanlık firmaları sektör sırlarını ve kamera arkası içeriklerini paylaşarak büyük başarı elde ediyorlar."
+        },
+        {
+          "question": "Gerekli minimum bütçe nedir?",
+          "answer": "TikTok, kampanya düzeyinde günlük minimum 50$ bütçe gerektirir. Ancak etkili test ve optimizasyon için, reklam harcamasında aylık en az 1.500$ - 3.000$ ile başlamanızı öneririz."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "tiktok",
+          "name": "TikTok Ads Manager"
+        },
+        {
+          "icon": "code",
+          "name": "TikTok Events API"
+        },
+        {
+          "icon": "video",
+          "name": "TikTok Creative Center"
+        },
+        {
+          "icon": "video",
+          "name": "CapCut"
+        },
+        {
+          "icon": "analytics",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "database",
+          "name": "Looker Studio"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "TikTok Ads Management",
+    "shortDescription": "Nutzen Sie die Macht der Kurzvideos. Wir erstellen hochkonvertierende TikTok-Werbekampagnen, um Aufmerksamkeit und Verkäufe bei Gen Z und Millennials zu generieren.",
+    "fullDescription": "TikTok ist keine reine Tanz-App mehr; es ist eine massive Suchmaschine und ein gewaltiger Umsatztreiber. Traditionelle Werbung funktioniert hier jedoch nicht. TikTok-Nutzer wollen Authentizität, Unterhaltung und nativen Content ('Make TikToks, not Ads.'). Wir übernehmen von der strategischen Planung bis zur Kreation alles. Wir nutzen In-Feed Ads, Spark Ads (Boosten von organischen Creator-Videos) und Video Shopping Ads, um Nutzer effektiv anzusprechen. Durch kontinuierliches Testen verschiedener 'Hooks' (Aufhänger), Sounds und Creator finden wir die Formel, die Ihre Cost Per Acquisition (CPA) senkt und den Umsatz skaliert.",
+    "features": [
+      "In-Feed Ads & Spark Ads Management",
+      "Setup von TikTok Video Shopping Ads",
+      "Custom Audience & Lookalike-Targeting",
+      "Creative-Strategie & Hook-Entwicklung",
+      "Creator- & UGC-Beschaffung für Ads",
+      "TikTok Pixel & Events API Setup",
+      "A/B-Testing (Creatives, Sounds, Zielgruppen)",
+      "Skalierung der Kampagnen & ROI-Optimierung"
+    ],
+    "benefits": [
+      "Erreichen Sie die hochaktive Zielgruppe der Gen Z und Millennials",
+      "Profitieren Sie von niedrigeren CPMs im Vergleich zu Plattformen wie Meta",
+      "Steigern Sie direkte Verkäufe durch nahtlose TikTok Shop-Integrationen",
+      "Nutzen Sie UGC (User Generated Content) für höheres Vertrauen",
+      "Skalieren Sie erfolgreiche Creatives schnell vor Eintritt der Werbemüdigkeit",
+      "Tracken Sie jede Conversion präzise mit robuster Pixel-Integration"
+    ],
+    "metaTitle": "TikTok Ads Agentur | Bezahltes TikTok Marketing | PakSoft",
+    "metaDescription": "Steigern Sie Verkäufe mit hochkonvertierenden TikTok Ads. Wir bieten kreative Strategie, Media Buying und Optimierung für In-Feed und Spark Ads.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Pixel- & Tracking-Setup",
+          "description": "Wir implementieren das TikTok Pixel und die Events API auf Ihrer Website für präzises Tracking von Add-to-Carts und Käufen."
+        },
+        {
+          "step": 2,
+          "title": "Creative Strategie & Briefing",
+          "description": "Wir entwickeln Creative-Briefs mit Fokus auf starke 3-Sekunden-Hooks und Trend-Audio für Ihr Team oder Creator."
+        },
+        {
+          "step": 3,
+          "title": "Kampagnen-Strukturierung",
+          "description": "Wir bauen das Ad-Konto mit strukturierten Kampagnen auf, die spezifische Interessen, Verhalten (z. B. Interaktion mit #BeautyTok) und Lookalikes anvisieren."
+        },
+        {
+          "step": 4,
+          "title": "Testphase für Creatives",
+          "description": "Wir starten diverse Anzeigenvariationen, um zu testen, welche Hooks und Angles die höchsten Klickraten (CTR) zu den geringsten Kosten liefern."
+        },
+        {
+          "step": 5,
+          "title": "Optimierung & Skalierung",
+          "description": "Wir stoppen schwache Ads und skalieren das Budget auf erfolgreiche Creatives unter Einsatz von Bid Caps für einen profitablen ROI."
+        },
+        {
+          "step": 6,
+          "title": "Reporting & Iteration",
+          "description": "TikTok-Creatives nutzen sich schnell ab. Wir liefern Echtzeit-Reportings und rotieren kontinuierlich neue, datenbasierte Videos ein."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Sind TikTok Ads nur für Teenager geeignet?",
+          "answer": "Nein. Über 40 % der Nutzer sind mittlerweile 30+ Jahre alt. Es ist eine hochgradig effektive Plattform, um auch Millennials und die Gen X zu erreichen."
+        },
+        {
+          "question": "Was sind Spark Ads?",
+          "answer": "Mit Spark Ads können wir organische Posts (von Ihrem Profil oder mit Erlaubnis eines Creators) als Anzeige bewerben. Sie wirken natürlicher und konvertieren oft besser."
+        },
+        {
+          "question": "Muss ich die Videos selbst erstellen?",
+          "answer": "Sie können Videos stellen, oder wir unterstützen Sie. Oft kombinieren wir TikTok Ads mit UGC-Beschaffung, bei der wir Creator beauftragen, nativ wirkende Ads für Ihre Marke zu drehen."
+        },
+        {
+          "question": "Wie oft brauche ich neue Creatives für TikTok?",
+          "answer": "Sehr oft. Ad-Fatigue (Werbemüdigkeit) tritt auf TikTok viel schneller ein als auf Facebook. Wir empfehlen, Creatives alle 2-3 Wochen zu aktualisieren."
+        },
+        {
+          "question": "Können B2B-Unternehmen auf TikTok erfolgreich sein?",
+          "answer": "Ja, durch 'Edutainment' (Bildung + Unterhaltung). Software-, Finanz- und Beratungsfirmen sind sehr erfolgreich, wenn sie Branchengeheimnisse oder Behind-the-Scenes teilen."
+        },
+        {
+          "question": "Wie hoch ist das Mindestbudget?",
+          "answer": "TikTok erfordert ein Mindestbudget von 50 $/Tag pro Kampagne. Für sinnvolles Testen empfehlen wir jedoch den Start mit mindestens 1.500 - 3.000 $ pro Monat."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "tiktok",
+          "name": "TikTok Ads Manager"
+        },
+        {
+          "icon": "code",
+          "name": "TikTok Events API"
+        },
+        {
+          "icon": "video",
+          "name": "TikTok Creative Center"
+        },
+        {
+          "icon": "video",
+          "name": "CapCut"
+        },
+        {
+          "icon": "analytics",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "database",
+          "name": "Looker Studio"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "ٹک ٹاک ایڈز مینجمنٹ",
+    "shortDescription": "مختصر ویڈیوز کی طاقت کا استعمال کریں۔ ہم Gen Z اور Millennials کی توجہ حاصل کرنے اور فروخت بڑھانے کے لیے ہائی کنورژن ٹک ٹاک اشتہارات چلاتے ہیں۔",
+    "fullDescription": "TikTok اب محض وائرل ڈانسز کا پلیٹ فارم نہیں رہا؛ یہ ایک بہت بڑا سرچ انجن ہے اور انٹرنیٹ پر کامرس کا ایک طاقتور ذریعہ ہے۔ تاہم، روایتی اشتہارات یہاں کام نہیں کرتے۔ ہماری TikTok Ads Management سروس 'اشتہارات مت بنائیں، TikToks بنائیں' کے فلسفے پر مبنی ہے۔ ہم ان-فیڈ ایڈز (In-Feed Ads)، اسپارک ایڈز (Spark Ads)، اور ویڈیو شاپنگ ایڈز کا استعمال کرتے ہیں تاکہ صارفین کو متوجہ کیا جا سکے۔ ہم آپ کے حصول کی لاگت (CPA) کو کم کرنے اور برانڈ کی رسائی کو بڑھانے کے لیے مختلف تخلیقات کا مسلسل تجربہ کرتے ہیں۔",
+    "features": [
+      "In-Feed اور Spark Ads کا انتظام",
+      "TikTok ویڈیو شاپنگ ایڈز کا سیٹ اپ",
+      "کسٹم اور Lookalike آڈینس ٹارگٹنگ",
+      "تخلیقی حکمت عملی اور Hook ڈیولپمنٹ",
+      "کریئیٹر اور انفلوئنسر ایڈز (UGC)",
+      "TikTok Pixel اور Events API سیٹ اپ",
+      "A/B ٹیسٹنگ (تخلیقات، آوازیں، سامعین)",
+      "مہم کی اسکیلنگ اور ROI کی اصلاح"
+    ],
+    "benefits": [
+      "انتہائی متحرک Gen Z اور Millennial سامعین تک پہنچیں",
+      "فیس بک جیسے پلیٹ فارمز کے مقابلے میں کم لاگت (CPM) حاصل کریں",
+      "ٹک ٹاک شاپ انٹیگریشنز کے ذریعے براہ راست فروخت بڑھائیں",
+      "زیادہ اعتماد کے لیے صارف کے تیار کردہ مواد (UGC) کا فائدہ اٹھائیں",
+      "اشتہاری تھکاوٹ سے بچنے کے لیے نئے تخلیقی مواد کا مستقل استعمال کریں"
+    ],
+    "metaTitle": "ٹک ٹاک ایڈز ایجنسی | پیڈ ٹک ٹاک مارکیٹنگ | PakSoft",
+    "metaDescription": "ہائی کنورژن ٹک ٹاک اشتہارات کے ساتھ فروخت بڑھائیں۔ ہم In-Feed اور Spark Ads کے لیے تخلیقی حکمت عملی اور اصلاح پیش کرتے ہیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Pixel اور ٹریکنگ کا سیٹ اپ",
+          "description": "ہم خریداری اور لیڈز کی درست ٹریکنگ کو یقینی بنانے کے لیے آپ کی ویب سائٹ پر TikTok Pixel اور Events API لاگو کرتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "تخلیقی حکمت عملی",
+          "description": "ہم آپ کی ٹیم یا تخلیق کاروں کے لیے مضبوط 3 سیکنڈ کے ہکس (Hooks) اور ٹرینڈنگ آڈیو پر توجہ مرکوز کرتے ہوئے بریف تیار کرتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "مہم کی ساخت",
+          "description": "ہم مخصوص دلچسپیوں اور رویوں (جیسے #BeautyTok کے ساتھ تعامل) کو نشانہ بناتے ہوئے منظم مہمات بناتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "تخلیقی جانچ کا مرحلہ",
+          "description": "ہم یہ جانچنے کے لیے متعدد ویڈیوز چلاتے ہیں کہ کون سی ویڈیو سب سے کم قیمت پر سب سے زیادہ کلک (CTR) لاتی ہے۔"
+        },
+        {
+          "step": 5,
+          "title": "آپٹیمائزیشن اور اسکیلنگ",
+          "description": "ہم کم کارکردگی دکھانے والے اشتہارات کو بند کرتے ہیں اور منافع بخش ROI کو برقرار رکھنے کے لیے کامیاب ویڈیوز پر بجٹ بڑھاتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "رپورٹنگ اور اعادہ",
+          "description": "ٹک ٹاک پر ویڈیوز جلدی پرانی ہو جاتی ہیں۔ ہم ریئل ٹائم رپورٹنگ فراہم کرتے ہیں اور مسلسل نیا ویڈیو مواد متعارف کراتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "کیا ٹک ٹاک ایڈز صرف نوجوانوں کے لیے ہیں؟",
+          "answer": "نہیں، 40% سے زیادہ صارفین اب 30+ عمر کے ہیں۔ یہ Millennials تک پہنچنے کا ایک انتہائی موثر پلیٹ فارم ہے۔"
+        },
+        {
+          "question": "Spark Ads کیا ہیں؟",
+          "answer": "یہ ہمیں نامیاتی (Organic) پوسٹس کو بطور اشتہار فروغ دینے کی اجازت دیتے ہیں۔ یہ قدرتی لگتے ہیں اور عام اشتہارات سے بہتر کام کرتے ہیں۔"
+        },
+        {
+          "question": "کیا مجھے ویڈیوز خود بنانی ہوں گی؟",
+          "answer": "آپ ویڈیوز فراہم کر سکتے ہیں، یا ہم آپ کی رہنمائی کر سکتے ہیں۔ ہم اکثر ٹک ٹاک کے تخلیق کاروں (UGC) کا استعمال کر کے مقامی نوعیت کے اشتہارات بناتے ہیں۔"
+        },
+        {
+          "question": "ٹک ٹاک کے لیے کتنا بجٹ درکار ہے؟",
+          "answer": "ٹک ٹاک کی کم از کم شرط 50 ڈالر یومیہ ہے۔ تاہم، موثر ٹیسٹنگ کے لیے ہم کم از کم $1,500 - $3,000 ماہانہ سے شروع کرنے کا مشورہ دیتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "tiktok",
+          "name": "TikTok Ads Manager"
+        },
+        {
+          "icon": "code",
+          "name": "TikTok Events API"
+        },
+        {
+          "icon": "video",
+          "name": "TikTok Creative Center"
+        },
+        {
+          "icon": "video",
+          "name": "CapCut"
+        },
+        {
+          "icon": "analytics",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "database",
+          "name": "Looker Studio"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "إدارة إعلانات تيك توك (TikTok Ads)",
+    "shortDescription": "سخر قوة مقاطع الفيديو القصيرة. نقوم بإنشاء وإدارة حملات إعلانية عالية التحويل على تيك توك مصممة لجذب الانتباه وزيادة المبيعات بين الجيل Z وجيل الألفية.",
+    "fullDescription": "لم يعد TikTok مجرد منصة لرقصات الفيروسية؛ إنه محرك بحث ضخم وأحد أقوى محركات التجارة على الإنترنت. ومع ذلك، لا تعمل الإعلانات التقليدية هنا. يتوق مستخدمو TikTok إلى الأصالة والترفيه والمحتوى الأصلي. تم بناء خدمة إدارة إعلانات تيك توك الخاصة بنا على فلسفة 'لا تصنع إعلانات. اصنع TikToks'. نحن نتعامل مع كل شيء بدءاً من الشراء الاستراتيجي للوسائط وحتى التوجيه الإبداعي. نحن نستخدم إعلانات In-Feed، و Spark Ads (تعزيز المحتوى العضوي لمنشئي المحتوى)، و Video Shopping Ads لجذب المستخدمين في الأماكن التي يتفاعلون فيها بشكل أكبر. نختبر باستمرار أساليب جذب مختلفة (Hooks)، وأصوات، ومنشئي محتوى للعثور على الصيغة الفائزة التي تخفض تكلفة الاكتساب (CPA) مع توسيع نطاق وصول علامتك التجارية وإيراداتها بسرعة.",
+    "features": [
+      "إدارة إعلانات In-Feed و Spark Ads",
+      "إعداد إعلانات التسوق عبر الفيديو (Video Shopping)",
+      "الجمهور المخصص (Custom Audience) واستهداف المشابهين",
+      "الاستراتيجية الإبداعية وتطوير الخطاف (Hook)",
+      "الحصول على إعلانات من المؤثرين ومنشئي المحتوى (UGC)",
+      "إعداد بكسل TikTok و Events API",
+      "اختبار A/B (الإبداعات، الأصوات، الجماهير)",
+      "توسيع نطاق الحملة وتحسين العائد على الاستثمار"
+    ],
+    "benefits": [
+      "الاستفادة من الشريحة الديموغرافية المتفاعلة بشدة لجيل Z وجيل الألفية",
+      "تحقيق تكلفة منخفضة لكل ألف ظهور (CPM) مقارنة بالمنصات المشبعة مثل فيسبوك",
+      "دفع المبيعات المباشرة عبر دمج متجر TikTok (TikTok Shop) بسلاسة",
+      "الاستفادة من المحتوى الذي ينشئه المستخدم (UGC) لزيادة الثقة والتحويل",
+      "توسيع نطاق الإعلانات الإبداعية الناجحة بسرعة قبل أن يبدأ إرهاق الإعلان (Ad fatigue)",
+      "تتبع كل عملية تحويل بدقة من خلال دمج Pixel القوي"
+    ],
+    "metaTitle": "وكالة إعلانات تيك توك | تسويق مدفوع على TikTok | PakSoft",
+    "metaDescription": "عزز المبيعات بإعلانات TikTok عالية التحويل. نتعامل مع الاستراتيجية الإبداعية وشراء الوسائط والتحسين لإعلانات In-Feed و Spark Ads.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "إعداد بكسل التتبع (Pixel & Tracking)",
+          "description": "نقوم بتنفيذ بكسل تيك توك و Events API على موقع الويب الخاص بك لضمان التتبع الدقيق للإضافات إلى سلة التسوق، وعمليات الشراء، والعملاء المحتملين."
+        },
+        {
+          "step": 2,
+          "title": "الاستراتيجية الإبداعية (Creative Strategy)",
+          "description": "نقوم بتطوير موجزات إبداعية تركز على خطافات (Hooks) قوية مدتها 3 ثوانٍ، والصوت الرائج، والتنسيقات الأصلية، سواء لفريقك الداخلي أو لشبكة منشئي المحتوى."
+        },
+        {
+          "step": 3,
+          "title": "هيكلة الحملة",
+          "description": "نبني حسابك الإعلاني من خلال حملات منظمة تستهدف اهتمامات وسلوكيات محددة (مثل المتفاعلين مع #BeautyTok) والجماهير المشابهة."
+        },
+        {
+          "step": 4,
+          "title": "مرحلة الاختبار الإبداعي",
+          "description": "نطلق أشكالاً متعددة من الإعلانات لاختبار زوايا وخطافات مختلفة، وتحديد الإعلانات الإبداعية التي تؤدي إلى أعلى معدلات نقر (CTR) بأقل تكلفة."
+        },
+        {
+          "step": 5,
+          "title": "التحسين وتوسيع النطاق",
+          "description": "نوقف الإعلانات ذات الأداء الضعيف ونقوم بتوسيع الميزانيات بقوة على الإعلانات الفائزة، باستخدام حدود عروض الأسعار (Bid caps) للحفاظ على عائد مربح."
+        },
+        {
+          "step": 6,
+          "title": "إعداد التقارير والتكرار",
+          "description": "تفقد الإعلانات الإبداعية على تيك توك بريقها بسرعة (Ad fatigue). نحن نقدم لوحات معلومات في الوقت الفعلي ونقوم باستمرار بإنتاج محتوى فيديو جديد استناداً إلى البيانات."
+        }
+      ],
+      "faq": [
+        {
+          "question": "هل إعلانات تيك توك مخصصة فقط لاستهداف المراهقين؟",
+          "answer": "لا. في حين أن تيك توك يتمتع بشعبية كبيرة لدى الجيل Z، إلا أن أكثر من 40% من قاعدة مستخدميه تتجاوز أعمارهم 30 عاماً الآن. إنها منصة فعالة للغاية للوصول إلى جيل الألفية."
+        },
+        {
+          "question": "ما هي إعلانات Spark Ads؟",
+          "answer": "تسمح لنا Spark Ads بتعزيز المنشورات العضوية (سواء من ملفك الشخصي أو ملف تعريف منشئ المحتوى، بإذنه) كإعلان. تبدو طبيعية أكثر وغالباً ما يتم تحويلها بشكل أفضل من الإعلانات القياسية."
+        },
+        {
+          "question": "هل أحتاج إلى إنشاء مقاطع الفيديو بنفسي؟",
+          "answer": "يمكنك توفير مقاطع الفيديو، أو يمكننا إرشادك. ندمج غالباً خدمة إعلانات تيك توك الخاصة بنا مع مصادر UGC، حيث نكلف منشئي المحتوى بإنشاء إعلانات تبدو أصلية لعلامتك التجارية."
+        },
+        {
+          "question": "كم مرة أحتاج إلى إعلانات إبداعية جديدة لـ TikTok؟",
+          "answer": "في كثير من الأحيان. يحدث إرهاق الإعلانات على تيك توك بشكل أسرع بكثير من فيسبوك. نوصي بتحديث إعلاناتك الإبداعية على الأقل كل أسبوعين إلى 3 أسابيع للحفاظ على الأداء."
+        },
+        {
+          "question": "ما هي الميزانية الدنيا المطلوبة؟",
+          "answer": "يتطلب تيك توك حداً أدنى لميزانية الحملة يبلغ 50 دولاراً في اليوم. ومع ذلك، من أجل الاختبار والتحسين الفعالين، نوصي بالبدء بما لا يقل عن 1500 دولار إلى 3000 دولار شهرياً."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "tiktok",
+          "name": "TikTok Ads Manager"
+        },
+        {
+          "icon": "code",
+          "name": "TikTok Events API"
+        },
+        {
+          "icon": "video",
+          "name": "TikTok Creative Center"
+        },
+        {
+          "icon": "video",
+          "name": "CapCut"
+        },
+        {
+          "icon": "analytics",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "database",
+          "name": "Looker Studio"
+        }
+      ]
+    }
+  }
+}

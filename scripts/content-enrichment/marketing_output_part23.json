@@ -1,0 +1,2035 @@
+{
+  "funnel-optimization": {
+    "en": {
+      "name": "Funnel Optimization",
+      "shortDescription": "Identify where you are losing customers and fix the leaks. We optimize every stage of your sales funnel to maximize conversions and revenue.",
+      "fullDescription": "A high-traffic website is meaningless if visitors drop off before they buy. Conversion funnels are complex, and friction at any stage—from the first click to the final checkout—will cost you money. Our Funnel Optimization services provide a deep, analytical teardown of your entire customer journey. We use advanced behavioral analytics, heat mapping, and session recordings to identify exactly where and why users abandon your site. Whether it is a confusing landing page, a friction-heavy checkout process, or a lack of post-purchase engagement, we pinpoint the bottlenecks. We then implement data-driven solutions, running rigorous A/B tests to optimize page layouts, simplify user flows, and implement strategic retargeting to bring lost users back, dramatically increasing your overall conversion rate and customer lifetime value.",
+      "features": [
+        "Comprehensive Funnel Analytics & Teardowns",
+        "User Journey Mapping & Friction Identification",
+        "Cart Abandonment & Drop-off Diagnostics",
+        "Heatmaps & User Session Analysis",
+        "Checkout Process Simplification",
+        "A/B & Multivariate Testing Strategies",
+        "Multi-channel Retargeting Implementation",
+        "Full-Funnel Attribution Modeling"
+      ],
+      "benefits": [
+        "Plug the 'leaks' in your sales process and recover lost revenue",
+        "Lower your Customer Acquisition Cost (CAC) by converting more existing traffic",
+        "Improve user experience by eliminating friction points",
+        "Make marketing decisions based on hard data, not assumptions",
+        "Increase average order value (AOV) with optimized upselling stages",
+        "Understand exactly how different marketing channels impact conversions"
+      ],
+      "metaTitle": "Funnel Optimization Services | Conversion Rate Optimization | PakSoft",
+      "metaDescription": "Stop losing sales to a leaky funnel. We analyze your customer journey, identify drop-off points, and optimize every stage to maximize your conversion rate.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Data Auditing & Integration",
+            "description": "We ensure your analytics platforms are correctly configured to track events across the entire funnel. We map the existing user journey from awareness to purchase."
+          },
+          {
+            "step": 2,
+            "title": "Drop-off Identification",
+            "description": "We analyze the data to find the exact stages where users abandon the funnel. We look for sudden drop-offs on specific landing pages, forms, or checkout steps."
+          },
+          {
+            "step": 3,
+            "title": "Behavioral Analysis",
+            "description": "We use heatmaps, scroll maps, and session recordings to understand user behavior. We see exactly what users click on, where they get stuck, and what they ignore."
+          },
+          {
+            "step": 4,
+            "title": "Hypothesis & Strategy Formulation",
+            "description": "Based on the data, we form hypotheses on why drop-offs occur (e.g., confusing copy, lack of trust signals) and develop strategies to eliminate the friction."
+          },
+          {
+            "step": 5,
+            "title": "A/B Testing & Implementation",
+            "description": "We design and deploy A/B tests to validate our hypotheses. This could involve redesigning a landing page, simplifying a form, or changing a call-to-action."
+          },
+          {
+            "step": 6,
+            "title": "Retargeting & Continuous Optimization",
+            "description": "We implement retargeting campaigns to capture users who dropped off and continuously refine the funnel based on the results of our ongoing tests."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is the difference between CRO and Funnel Optimization?",
+            "answer": "Conversion Rate Optimization (CRO) often focuses on improving a single page. Funnel Optimization looks at the entire multi-step journey (ads, landing pages, emails, checkout) holistically."
+          },
+          {
+            "question": "How do you know where my funnel is leaking?",
+            "answer": "We use advanced analytics tools like Google Analytics, Mixpanel, and Hotjar to track user flow. The data explicitly shows us the exact page or step where the highest percentage of users leave."
+          },
+          {
+            "question": "Can you optimize a B2B sales funnel?",
+            "answer": "Yes. B2B funnels often involve longer sales cycles, lead magnets, and CRM data. We optimize the lead capture process, email nurturing sequences, and the handoff to the sales team."
+          },
+          {
+            "question": "How long does it take to see results?",
+            "answer": "If you have high traffic, A/B tests can yield statistically significant results in 2-4 weeks. The timeline depends entirely on your site's traffic volume and conversion baseline."
+          },
+          {
+            "question": "Do you handle the development and design changes?",
+            "answer": "Yes. Our team includes UX/UI designers and front-end developers who implement the necessary changes, whether it's adjusting a button or redesigning a checkout page."
+          },
+          {
+            "question": "What if my website doesn't get enough traffic for A/B testing?",
+            "answer": "If traffic is too low for statistical significance, we rely on qualitative data—user testing, heuristic evaluations, and session recordings—to make high-impact UX improvements."
+          },
+          {
+            "question": "How do you handle cross-device tracking?",
+            "answer": "We utilize advanced attribution models and tools that track logged-in users or use probabilistic matching to understand how users move between mobile and desktop."
+          },
+          {
+            "question": "Will you change my entire website?",
+            "answer": "No. We only change the specific elements causing friction. We prefer iterative, data-backed adjustments rather than risky, complete overhauls."
+          }
+        ],
+        "technologies": [
+          { "icon": "analytics", "name": "Google Analytics 4" },
+          { "icon": "mixpanel", "name": "Mixpanel" },
+          { "icon": "amplitude", "name": "Amplitude" },
+          { "icon": "hotjar", "name": "Hotjar" },
+          { "icon": "vwo", "name": "VWO" },
+          { "icon": "optimizely", "name": "Optimizely" },
+          { "icon": "segment", "name": "Segment" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Dönüşüm Hunisi (Funnel) Optimizasyonu",
+      "shortDescription": "Müşterileri nerede kaybettiğinizi belirleyin ve sızıntıları onarın. Dönüşümleri ve geliri en üst düzeye çıkarmak için satış huninizin her aşamasını optimize ediyoruz.",
+      "fullDescription": "Yüksek trafikli bir web sitesi, ziyaretçiler satın almadan ayrılıyorsa anlamsızdır. Dönüşüm hunileri karmaşıktır ve ilk tıklamadan son ödemeye kadar herhangi bir aşamadaki sürtünme size paraya mal olur. Dönüşüm Hunisi Optimizasyonu hizmetlerimiz, tüm müşteri yolculuğunuzun derin ve analitik bir dökümünü sağlar. Kullanıcıların sitenizi nerede ve neden terk ettiğini tam olarak belirlemek için gelişmiş davranışsal analitik, ısı haritaları (heatmapping) ve oturum kayıtları kullanıyoruz. Kafa karıştırıcı bir açılış sayfası, sürtünme dolu bir ödeme süreci veya satın alma sonrası etkileşim eksikliği olsun, darboğazları tespit ediyoruz. Daha sonra veri odaklı çözümler uygulayarak, sayfa düzenlerini optimize etmek, kullanıcı akışlarını basitleştirmek ve kaybedilen kullanıcıları geri getirmek için stratejik yeniden hedefleme uygulamak üzere titiz A/B testleri yürütüyoruz. Bu da genel dönüşüm oranınızı ve müşteri yaşam boyu değerinizi önemli ölçüde artırır.",
+      "features": [
+        "Kapsamlı Huni Analitiği ve İncelemeleri",
+        "Kullanıcı Yolculuğu Haritalama ve Sürtünme Tespiti",
+        "Sepet Terk Etme ve Ayrılma (Drop-off) Teşhisi",
+        "Isı Haritaları ve Kullanıcı Oturum Analizi",
+        "Ödeme (Checkout) Süreci Sadeleştirme",
+        "A/B ve Çok Değişkenli Test Stratejileri",
+        "Çok Kanallı Yeniden Hedefleme (Retargeting) Uygulaması",
+        "Tam Huni İlişkilendirme (Attribution) Modellemesi"
+      ],
+      "benefits": [
+        "Satış sürecinizdeki 'sızıntıları' tıkayın ve kaybedilen geliri geri kazanın",
+        "Mevcut trafiğin daha fazlasını dönüştürerek Müşteri Edinme Maliyetinizi (CAC) düşürün",
+        "Sürtünme noktalarını ortadan kaldırarak kullanıcı deneyimini iyileştirin",
+        "Pazarlama kararlarını varsayımlara değil, somut verilere dayandırın",
+        "Optimize edilmiş üst satış (upsell) aşamaları ile ortalama sipariş değerini (AOV) artırın",
+        "Farklı pazarlama kanallarının dönüşümleri tam olarak nasıl etkilediğini anlayın"
+      ],
+      "metaTitle": "Dönüşüm Hunisi Optimizasyonu | CRO Hizmetleri | PakSoft",
+      "metaDescription": "Sızdıran bir huni yüzünden satış kaybetmeyi durdurun. Müşteri yolculuğunuzu analiz ediyor, ayrılma noktalarını tespit ediyor ve dönüşüm oranınızı artırmak için huninizi optimize ediyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Veri Denetimi ve Entegrasyon",
+            "description": "Analitik platformlarınızın tüm huni boyunca olayları (events) izlemek için doğru şekilde yapılandırıldığından emin oluyoruz. Farkındalıktan satın almaya kadar mevcut kullanıcı yolculuğunun haritasını çıkarıyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Ayrılma (Drop-off) Tespiti",
+            "description": "Kullanıcıların huniyi terk ettiği kesin aşamaları bulmak için verileri analiz ediyoruz. Belirli açılış sayfalarında, formlarda veya ödeme adımlarında ani düşüşler arıyoruz."
+          },
+          {
+            "step": 3,
+            "title": "Davranışsal Analiz",
+            "description": "Kullanıcı davranışını anlamak için ısı haritaları, kaydırma (scroll) haritaları ve oturum kayıtlarını kullanıyoruz. Kullanıcıların tam olarak neye tıkladığını, nerede takıldığını ve neyi görmezden geldiğini görüyoruz."
+          },
+          {
+            "step": 4,
+            "title": "Hipotez ve Strateji Oluşturma",
+            "description": "Verilere dayanarak ayrılmaların neden meydana geldiğine dair hipotezler oluşturuyor (ör. kafa karıştırıcı metin, güven sinyallerinin eksikliği) ve sürtünmeyi ortadan kaldıracak stratejiler geliştiriyoruz."
+          },
+          {
+            "step": 5,
+            "title": "A/B Testi ve Uygulama",
+            "description": "Hipotezlerimizi doğrulamak için A/B testleri tasarlıyor ve uyguluyoruz. Bu, bir açılış sayfasını yeniden tasarlamayı, bir formu basitleştirmeyi veya bir harekete geçirici mesajı (CTA) değiştirmeyi içerebilir."
+          },
+          {
+            "step": 6,
+            "title": "Yeniden Hedefleme ve Sürekli Optimizasyon",
+            "description": "Ayrılan kullanıcıları yakalamak için yeniden hedefleme kampanyaları uyguluyoruz ve devam eden testlerimizin sonuçlarına göre huniyi sürekli olarak iyileştiriyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "CRO (Dönüşüm Oranı Optimizasyonu) ile Dönüşüm Hunisi Optimizasyonu arasındaki fark nedir?",
+            "answer": "CRO genellikle tek bir sayfayı iyileştirmeye odaklanır. Dönüşüm Hunisi Optimizasyonu ise tüm çok adımlı yolculuğa (reklamlar, açılış sayfaları, e-postalar, ödeme) bütünsel olarak bakar."
+          },
+          {
+            "question": "Hunimin nerede sızdırdığını nasıl anlıyorsunuz?",
+            "answer": "Kullanıcı akışını izlemek için Google Analytics, Mixpanel ve Hotjar gibi gelişmiş analitik araçları kullanıyoruz. Veriler bize en yüksek kullanıcı yüzdesinin ayrıldığı sayfa veya adımı açıkça gösterir."
+          },
+          {
+            "question": "Bir B2B satış hunisini optimize edebilir misiniz?",
+            "answer": "Evet. B2B hunileri genellikle daha uzun satış döngüleri, potansiyel müşteri mıknatısları (lead magnets) ve CRM verileri içerir. Potansiyel müşteri yakalama sürecini, e-posta besleme dizilerini ve satış ekibine devir sürecini optimize ediyoruz."
+          },
+          {
+            "question": "Sonuçları görmek ne kadar sürer?",
+            "answer": "Yüksek trafiğiniz varsa, A/B testleri 2-4 hafta içinde istatistiksel olarak anlamlı sonuçlar verebilir. Zaman çizelgesi tamamen sitenizin trafik hacmine ve temel dönüşüm oranına bağlıdır."
+          },
+          {
+            "question": "Geliştirme ve tasarım değişikliklerini siz mi yönetiyorsunuz?",
+            "answer": "Evet. Ekibimiz, ister bir düğmeyi ayarlamak ister bir ödeme sayfasını yeniden tasarlamak olsun, gerekli değişiklikleri uygulayan UX/UI tasarımcılarını ve front-end geliştiricilerini içerir."
+          },
+          {
+            "question": "Web sitem A/B testi için yeterli trafik almıyorsa ne olur?",
+            "answer": "Trafik istatistiksel anlamlılık için çok düşükse, yüksek etkili UX iyileştirmeleri yapmak için nitel verilere (kullanıcı testleri, sezgisel değerlendirmeler ve oturum kayıtları) güveniriz."
+          },
+          {
+            "question": "Cihazlar arası (cross-device) izlemeyi nasıl yönetiyorsunuz?",
+            "answer": "Kullanıcıların mobil ve masaüstü arasında nasıl geçiş yaptığını anlamak için oturum açmış kullanıcıları izleyen veya olasılıksal eşleştirme kullanan gelişmiş ilişkilendirme modelleri ve araçları kullanıyoruz."
+          },
+          {
+            "question": "Tüm web sitemi değiştirecek misiniz?",
+            "answer": "Hayır. Yalnızca sürtünmeye neden olan belirli unsurları değiştiriyoruz. Riskli, tam revizyonlar yerine yinelenen, verilerle desteklenen ayarlamaları tercih ediyoruz."
+          }
+        ],
+        "technologies": [
+          { "icon": "analytics", "name": "Google Analytics 4" },
+          { "icon": "mixpanel", "name": "Mixpanel" },
+          { "icon": "amplitude", "name": "Amplitude" },
+          { "icon": "hotjar", "name": "Hotjar" },
+          { "icon": "vwo", "name": "VWO" },
+          { "icon": "optimizely", "name": "Optimizely" },
+          { "icon": "segment", "name": "Segment" }
+        ]
+      }
+    },
+    "de": {
+      "name": "Funnel-Optimierung",
+      "shortDescription": "Identifizieren Sie, wo Sie Kunden verlieren, und schließen Sie die Lücken. Wir optimieren jede Phase Ihres Sales-Funnels, um Conversions und Umsatz zu maximieren.",
+      "fullDescription": "Eine Website mit viel Traffic ist bedeutungslos, wenn Besucher abspringen, bevor sie kaufen. Conversion-Funnel sind komplex, und Reibungsverluste in jeder Phase – vom ersten Klick bis zum endgültigen Checkout – kosten Sie Geld. Unsere Funnel-Optimierungsdienste bieten eine tiefgreifende, analytische Aufschlüsselung Ihrer gesamten Customer Journey. Wir nutzen fortschrittliche Verhaltensanalysen, Heatmaps und Sitzungsaufzeichnungen, um genau zu identifizieren, wo und warum Nutzer Ihre Seite verlassen. Ob eine verwirrende Landingpage, ein komplizierter Checkout-Prozess oder mangelndes Post-Purchase-Engagement – wir lokalisieren die Engpässe. Anschließend implementieren wir datengesteuerte Lösungen und führen strenge A/B-Tests durch, um Seitenlayouts zu optimieren, Nutzerflüsse zu vereinfachen und strategisches Retargeting einzusetzen.",
+      "features": [
+        "Umfassende Funnel-Analysen & Teardowns",
+        "User Journey Mapping & Identifikation von Reibungspunkten",
+        "Diagnose von Warenkorbabbrüchen & Drop-offs",
+        "Heatmaps & Analyse von Nutzersitzungen",
+        "Vereinfachung des Checkout-Prozesses",
+        "A/B- & Multivariate-Testing-Strategien",
+        "Multi-Channel Retargeting-Implementierung",
+        "Full-Funnel-Attributionsmodellierung"
+      ],
+      "benefits": [
+        "Schließen Sie die 'Lücken' im Verkaufsprozess und holen Sie verlorenen Umsatz zurück",
+        "Senken Sie die Customer Acquisition Cost (CAC) durch höhere Konversionsraten",
+        "Verbessern Sie die Nutzererfahrung durch Beseitigung von Reibungspunkten",
+        "Treffen Sie Marketingentscheidungen auf Basis harter Daten, nicht auf Annahmen",
+        "Steigern Sie den durchschnittlichen Bestellwert (AOV) durch optimiertes Upselling",
+        "Verstehen Sie genau, wie verschiedene Marketingkanäle Konversionen beeinflussen"
+      ],
+      "metaTitle": "Funnel-Optimierung | Conversion Rate Optimization | PakSoft",
+      "metaDescription": "Hören Sie auf, Verkäufe an einen löchrigen Funnel zu verlieren. Wir analysieren Ihre Customer Journey und optimieren jede Phase, um die Conversion Rate zu maximieren.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Daten-Audit & Integration",
+            "description": "Wir stellen sicher, dass Ihre Analyseplattformen korrekt konfiguriert sind, um Ereignisse im gesamten Funnel zu verfolgen und die bestehende User Journey abzubilden."
+          },
+          {
+            "step": 2,
+            "title": "Drop-off-Identifikation",
+            "description": "Wir analysieren die Daten, um die genauen Phasen zu finden, in denen Nutzer den Funnel verlassen, und suchen nach plötzlichen Abbrüchen auf Landingpages oder im Checkout."
+          },
+          {
+            "step": 3,
+            "title": "Verhaltensanalyse",
+            "description": "Wir nutzen Heatmaps, Scrollmaps und Sitzungsaufzeichnungen, um zu verstehen, worauf Nutzer klicken, wo sie stecken bleiben und was sie ignorieren."
+          },
+          {
+            "step": 4,
+            "title": "Hypothesen- & Strategiebildung",
+            "description": "Basierend auf den Daten bilden wir Hypothesen über die Gründe für Abbrüche und entwickeln Strategien zur Beseitigung von Reibungspunkten."
+          },
+          {
+            "step": 5,
+            "title": "A/B-Testing & Implementierung",
+            "description": "Wir entwerfen und implementieren A/B-Tests, um unsere Hypothesen zu validieren (z. B. Neugestaltung einer Landingpage, Vereinfachung eines Formulars)."
+          },
+          {
+            "step": 6,
+            "title": "Retargeting & Kontinuierliche Optimierung",
+            "description": "Wir implementieren Retargeting-Kampagnen für abgesprungene Nutzer und verfeinern den Funnel kontinuierlich basierend auf laufenden Testergebnissen."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Was ist der Unterschied zwischen CRO und Funnel-Optimierung?",
+            "answer": "Conversion Rate Optimization (CRO) konzentriert sich oft auf eine einzelne Seite. Die Funnel-Optimierung betrachtet die gesamte mehrstufige Reise ganzheitlich."
+          },
+          {
+            "question": "Woher wissen Sie, wo mein Funnel leckt?",
+            "answer": "Wir verwenden Analysetools wie Google Analytics, Mixpanel und Hotjar. Die Daten zeigen uns explizit die genaue Seite, auf der die meisten Nutzer abspringen."
+          },
+          {
+            "question": "Können Sie einen B2B-Sales-Funnel optimieren?",
+            "answer": "Ja. B2B-Funnel umfassen oft längere Verkaufszyklen. Wir optimieren die Lead-Erfassung, E-Mail-Nurturing-Sequenzen und die Übergabe an das Vertriebsteam."
+          },
+          {
+            "question": "Wie lange dauert es, bis man Ergebnisse sieht?",
+            "answer": "Bei hohem Traffic können A/B-Tests in 2-4 Wochen signifikante Ergebnisse liefern. Der Zeitplan hängt vom Traffic und der Basis-Konversionsrate ab."
+          },
+          {
+            "question": "Übernehmen Sie die Entwicklungs- und Designänderungen?",
+            "answer": "Ja. Unser Team umfasst UX/UI-Designer und Front-End-Entwickler, die alle notwendigen Änderungen implementieren."
+          },
+          {
+            "question": "Was ist, wenn meine Website nicht genug Traffic für A/B-Tests hat?",
+            "answer": "Bei zu wenig Traffic für statistische Signifikanz verlassen wir uns auf qualitative Daten wie Nutzertests und heuristische Auswertungen für UX-Verbesserungen."
+          },
+          {
+            "question": "Wie gehen Sie mit geräteübergreifendem Tracking um?",
+            "answer": "Wir nutzen fortschrittliche Attributionsmodelle und Tools, die eingeloggte Nutzer verfolgen oder probabilistisches Matching verwenden."
+          },
+          {
+            "question": "Werden Sie meine gesamte Website ändern?",
+            "answer": "Nein. Wir ändern nur spezifische Elemente, die Reibung verursachen. Wir bevorzugen iterative, datengestützte Anpassungen gegenüber riskanten Komplettumbauten."
+          }
+        ],
+        "technologies": [
+          { "icon": "analytics", "name": "Google Analytics 4" },
+          { "icon": "mixpanel", "name": "Mixpanel" },
+          { "icon": "amplitude", "name": "Amplitude" },
+          { "icon": "hotjar", "name": "Hotjar" },
+          { "icon": "vwo", "name": "VWO" },
+          { "icon": "optimizely", "name": "Optimizely" },
+          { "icon": "segment", "name": "Segment" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "فنل آپٹیمائزیشن (Funnel Optimization)",
+      "shortDescription": "پہچانیں کہ آپ گاہکوں کو کہاں کھو رہے ہیں اور خامیوں کو دور کریں۔ ہم تبادلوں اور آمدنی کو زیادہ سے زیادہ کرنے کے لیے آپ کے سیلز فنل کے ہر مرحلے کو بہتر بناتے ہیں۔",
+      "fullDescription": "اعلیٰ ٹریفک والی ویب سائٹ بے معنی ہے اگر زائرین خریدنے سے پہلے ہی چھوڑ دیں۔ کنورژن فنلز پیچیدہ ہوتے ہیں، اور پہلے کلک سے لے کر آخری چیک آؤٹ تک—کسی بھی مرحلے پر رکاوٹ آپ کو نقصان پہنچاتی ہے۔ ہماری فنل آپٹیمائزیشن خدمات آپ کے پورے کسٹمر کے سفر کا گہرا، تجزیاتی جائزہ پیش کرتی ہیں۔ ہم صارفین کے رویے کے تجزیات، ہیٹ میپنگ، اور سیشن کی ریکارڈنگز کا استعمال کرتے ہیں تاکہ یہ معلوم کیا جا سکے کہ صارفین آپ کی سائٹ کو کہاں اور کیوں چھوڑ رہے ہیں۔ چاہے وہ ایک مبہم لینڈنگ پیج ہو، چیک آؤٹ کا مشکل عمل ہو، یا خریداری کے بعد کی مشغولیت کی کمی ہو، ہم رکاوٹوں کی نشاندہی کرتے ہیں۔ پھر ہم ڈیٹا پر مبنی حل نافذ کرتے ہیں، پیج کے لے آؤٹ کو بہتر بنانے، صارف کے بہاؤ کو آسان بنانے اور کھوئے ہوئے صارفین کو واپس لانے کے لیے A/B ٹیسٹ کرتے ہیں۔ اس سے آپ کے تبادلوں کی شرح ڈرامائی طور پر بڑھتی ہے۔",
+      "features": [
+        "جامع فنل تجزیات اور خرابیوں کی نشاندہی",
+        "کسٹمر جرنی میپنگ اور رکاوٹوں کی شناخت",
+        "کارٹ ترک کرنے اور ڈراپ آف کی تشخیص",
+        "ہیٹ میپس اور یوزر سیشن کا تجزیہ",
+        "چیک آؤٹ کے عمل کو آسان بنانا",
+        "A/B اور کثیر المتغیر ٹیسٹنگ حکمت عملی",
+        "ملٹی چینل ری ٹارگٹنگ کا نفاذ",
+        "فل-فنل ایٹریبیوشن ماڈلنگ"
+      ],
+      "benefits": [
+        "اپنے سیلز کے عمل میں 'سوراخ' بند کریں اور کھوئی ہوئی آمدنی واپس حاصل کریں",
+        "موجودہ ٹریفک کو تبدیل کر کے کسٹمر ایکوزیشن کاسٹ (CAC) کو کم کریں",
+        "رکاوٹوں کو ختم کرکے صارف کے تجربے (UX) کو بہتر بنائیں",
+        "مفروضوں کی بجائے ٹھوس ڈیٹا کی بنیاد پر مارکیٹنگ کے فیصلے کریں",
+        "بہتر اپ سیلنگ (upselling) کے ساتھ اوسط آرڈر ویلیو (AOV) میں اضافہ کریں",
+        "سمجھیں کہ مختلف مارکیٹنگ چینلز تبادلوں پر کیسے اثر انداز ہوتے ہیں"
+      ],
+      "metaTitle": "فنل آپٹیمائزیشن سروسز | CRO | PakSoft",
+      "metaDescription": "اپنے سیلز فنل کی خامیوں کو دور کریں۔ ہم آپ کے کسٹمر کے سفر کا تجزیہ کرتے ہیں اور کنورژن ریٹ بڑھانے کے لیے فنل کے ہر مرحلے کو بہتر بناتے ہیں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "ڈیٹا آڈٹ اور انٹیگریشن",
+            "description": "ہم اس بات کو یقینی بناتے ہیں کہ آپ کے تجزیاتی پلیٹ فارمز پورے فنل کو ٹریک کرنے کے لیے صحیح طریقے سے ترتیب دیے گئے ہیں۔"
+          },
+          {
+            "step": 2,
+            "title": "ڈراپ آف کی شناخت",
+            "description": "ہم یہ معلوم کرنے کے لیے ڈیٹا کا تجزیہ کرتے ہیں کہ صارفین کس مرحلے پر فنل کو چھوڑ رہے ہیں، جیسے کہ مخصوص لینڈنگ پیجز یا چیک آؤٹ کے دوران۔"
+          },
+          {
+            "step": 3,
+            "title": "رویے کا تجزیہ",
+            "description": "ہم صارف کے رویے کو سمجھنے کے لیے ہیٹ میپس اور سیشن کی ریکارڈنگز کا استعمال کرتے ہیں، یہ دیکھنے کے لیے کہ وہ کہاں پھنس جاتے ہیں اور کس چیز کو نظر انداز کرتے ہیں۔"
+          },
+          {
+            "step": 4,
+            "title": "مفروضہ اور حکمت عملی کی تشکیل",
+            "description": "ڈیٹا کی بنیاد پر، ہم رکاوٹوں کی وجوہات پر مفروضے بناتے ہیں اور ان خامیوں کو دور کرنے کے لیے حکمت عملی تیار کرتے ہیں۔"
+          },
+          {
+            "step": 5,
+            "title": "A/B ٹیسٹنگ اور نفاذ",
+            "description": "ہم اپنے مفروضوں کو جانچنے کے لیے A/B ٹیسٹ ڈیزائن کرتے ہیں، جس میں لینڈنگ پیج کو دوبارہ ڈیزائن کرنا یا فارم کو آسان بنانا شامل ہو سکتا ہے۔"
+          },
+          {
+            "step": 6,
+            "title": "ری ٹارگٹنگ اور مسلسل بہتری",
+            "description": "ہم ان صارفین کو واپس لانے کے لیے ری ٹارگٹنگ مہمات چلاتے ہیں جو فنل چھوڑ کر چلے گئے تھے، اور ٹیسٹ کے نتائج کی بنیاد پر فنل کو مسلسل بہتر بناتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "CRO اور فنل آپٹیمائزیشن میں کیا فرق ہے؟",
+            "answer": "CRO اکثر ایک ہی صفحے کو بہتر بنانے پر توجہ مرکوز کرتا ہے۔ فنل آپٹیمائزیشن پورے کثیر مرحلہ سفر (اشتہارات، لینڈنگ پیجز، ای میلز، چیک آؤٹ) کو مجموعی طور پر دیکھتی ہے۔"
+          },
+          {
+            "question": "آپ کو کیسے معلوم ہوتا ہے کہ میرا فنل کہاں سے لیک ہو رہا ہے؟",
+            "answer": "ہم یوزر فلو کو ٹریک کرنے کے لیے Google Analytics، Mixpanel اور Hotjar جیسے جدید ٹولز استعمال کرتے ہیں۔ ڈیٹا واضح طور پر ہمیں وہ قطعی صفحہ دکھاتا ہے جہاں صارفین چھوڑتے ہیں۔"
+          },
+          {
+            "question": "کیا آپ B2B سیلز فنل کو بہتر بنا سکتے ہیں؟",
+            "answer": "ہاں۔ B2B فنلز میں اکثر فروخت کے طویل چکر، لیڈ میگنےٹ، اور CRM ڈیٹا شامل ہوتا ہے۔ ہم لیڈ کیپچر کے عمل، ای میل پرورش، اور سیلز ٹیم کو ہینڈ آف کو بہتر بناتے ہیں۔"
+          },
+          {
+            "question": "نتائج دیکھنے میں کتنا وقت لگتا ہے؟",
+            "answer": "اگر آپ کی ٹریفک زیادہ ہے، تو A/B ٹیسٹ 2-4 ہفتوں میں نتائج دے سکتے ہیں۔ ٹائم لائن کا انحصار آپ کی سائٹ کے ٹریفک کے حجم اور بیس لائن پر ہے۔"
+          },
+          {
+            "question": "کیا آپ ڈیولپمنٹ اور ڈیزائن میں تبدیلیاں کرتے ہیں؟",
+            "answer": "ہاں۔ ہماری ٹیم میں UX/UI ڈیزائنرز اور فرنٹ اینڈ ڈیولپرز شامل ہیں جو ضروری تبدیلیاں نافذ کرتے ہیں، چاہے بٹن کو ایڈجسٹ کرنا ہو یا چیک آؤٹ پیج کو دوبارہ ڈیزائن کرنا ہو۔"
+          },
+          {
+            "question": "اگر میری ویب سائٹ پر A/B ٹیسٹنگ کے لیے کافی ٹریفک نہ ہو تو کیا ہوگا؟",
+            "answer": "اگر ٹریفک بہت کم ہے، تو ہم UX میں بہتری لانے کے لیے کوالٹیٹیو ڈیٹا—یوزر ٹیسٹنگ، ہیورسٹک تشخیص، اور سیشن کی ریکارڈنگ—پر انحصار کرتے ہیں۔"
+          },
+          {
+            "question": "آپ کراس ڈیوائس ٹریکنگ کو کیسے سنبھالتے ہیں؟",
+            "answer": "ہم اعلیٰ ایٹریبیوشن ماڈلز کا استعمال کرتے ہیں جو لاگ ان صارفین کو ٹریک کرتے ہیں یا یہ سمجھنے کے لیے پروبیبلسٹک میچنگ کا استعمال کرتے ہیں کہ صارفین ڈیوائسز کے درمیان کیسے حرکت کرتے ہیں۔"
+          },
+          {
+            "question": "کیا آپ میری پوری ویب سائٹ بدل دیں گے؟",
+            "answer": "نہیں۔ ہم صرف ان مخصوص عناصر کو تبدیل کرتے ہیں جو رکاوٹ کا باعث بن رہے ہیں۔ ہم خطرناک اور مکمل تبدیلیوں کے بجائے ڈیٹا پر مبنی بتدریج ایڈجسٹمنٹ کو ترجیح دیتے ہیں۔"
+          }
+        ],
+        "technologies": [
+          { "icon": "analytics", "name": "Google Analytics 4" },
+          { "icon": "mixpanel", "name": "Mixpanel" },
+          { "icon": "amplitude", "name": "Amplitude" },
+          { "icon": "hotjar", "name": "Hotjar" },
+          { "icon": "vwo", "name": "VWO" },
+          { "icon": "optimizely", "name": "Optimizely" },
+          { "icon": "segment", "name": "Segment" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "تحسين مسار التحويل (Funnel)",
+      "shortDescription": "حدد أين تفقد العملاء وقم بإصلاح التسريبات. نقوم بتحسين كل مرحلة من مسار المبيعات لزيادة التحويلات والإيرادات إلى أقصى حد.",
+      "fullDescription": "موقع الويب ذو الزيارات العالية لا معنى له إذا غادر الزوار قبل الشراء. مسارات التحويل معقدة، والاحتياك في أي مرحلة - من النقرة الأولى إلى الخروج النهائي - سيكلفك المال. توفر خدمات تحسين مسار التحويل الخاصة بنا تحليلاً عميقاً لرحلة العميل بأكملها. نحن نستخدم التحليلات السلوكية المتقدمة، والخرائط الحرارية، وتسجيلات الجلسات لتحديد مكان ولماذا يتخلى المستخدمون عن موقعك بالضبط. سواء كانت صفحة هبوط مربكة، أو عملية دفع مليئة بالاحتكاك، أو نقص في مشاركة ما بعد الشراء، فإننا نحدد الاختناقات. ثم نقوم بتنفيذ حلول تعتمد على البيانات، وإجراء اختبارات A/B صارمة لتحسين تخطيطات الصفحة، وتبسيط تدفقات المستخدمين، وتنفيذ إعادة استهداف استراتيجية لإعادة المستخدمين المفقودين، مما يؤدي إلى زيادة معدل التحويل الإجمالي والقيمة الدائمة للعميل بشكل كبير.",
+      "features": [
+        "تحليلات وتفكيك شامل لمسار التحويل",
+        "تخطيط رحلة المستخدم وتحديد الاحتكاك",
+        "تشخيص التخلي عن سلة التسوق ونقاط الخروج",
+        "الخرائط الحرارية وتحليل جلسات المستخدم",
+        "تبسيط عملية الدفع (Checkout)",
+        "استراتيجيات اختبار A/B والاختبار متعدد المتغيرات",
+        "تنفيذ إعادة الاستهداف عبر قنوات متعددة",
+        "نمذجة الإسناد لمسار التحويل الكامل"
+      ],
+      "benefits": [
+        "سد 'التسريبات' في عملية المبيعات واسترداد الإيرادات المفقودة",
+        "خفض تكلفة اكتساب العملاء (CAC) عن طريق تحويل المزيد من الزيارات",
+        "تحسين تجربة المستخدم (UX) عن طريق إزالة نقاط الاحتكاك",
+        "اتخاذ قرارات التسويق بناءً على بيانات صلبة، وليس افتراضات",
+        "زيادة متوسط قيمة الطلب (AOV) مع مراحل بيع متقاطع محسنة",
+        "فهم كيف تؤثر قنوات التسويق المختلفة على التحويلات بدقة"
+      ],
+      "metaTitle": "خدمات تحسين مسار التحويل | CRO | PakSoft",
+      "metaDescription": "توقف عن فقدان المبيعات بسبب مسار تحويل مسرب. نحن نحلل رحلة العميل ونحسن كل مرحلة لزيادة معدل التحويل إلى أقصى حد.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "تدقيق البيانات والتكامل",
+            "description": "نتأكد من تكوين منصات التحليل الخاصة بك بشكل صحيح لتتبع الأحداث عبر المسار بأكمله. نحن نرسم رحلة المستخدم الحالية."
+          },
+          {
+            "step": 2,
+            "title": "تحديد نقاط الخروج",
+            "description": "نحلل البيانات للعثور على المراحل الدقيقة التي يتخلى فيها المستخدمون عن المسار، ونبحث عن الانخفاضات المفاجئة في صفحات الهبوط أو أثناء الدفع."
+          },
+          {
+            "step": 3,
+            "title": "التحليل السلوكي",
+            "description": "نستخدم الخرائط الحرارية وتسجيلات الجلسات لفهم سلوك المستخدم ورؤية ما ينقرون عليه بالضبط وأين يعلقون."
+          },
+          {
+            "step": 4,
+            "title": "صياغة الفرضيات والاستراتيجية",
+            "description": "بناءً على البيانات، نشكل فرضيات حول سبب حدوث عمليات الخروج ونطور استراتيجيات للقضاء على الاحتكاك وتحسين الثقة."
+          },
+          {
+            "step": 5,
+            "title": "اختبار A/B والتنفيذ",
+            "description": "نقوم بتصميم ونشر اختبارات A/B للتحقق من صحة فرضياتنا، مثل إعادة تصميم صفحة الهبوط أو تبسيط نموذج."
+          },
+          {
+            "step": 6,
+            "title": "إعادة الاستهداف والتحسين المستمر",
+            "description": "ننفذ حملات إعادة الاستهداف لالتقاط المستخدمين الذين غادروا، ونقوم باستمرار بتحسين مسار التحويل بناءً على نتائج اختباراتنا المستمرة."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما الفرق بين CRO وتحسين مسار التحويل؟",
+            "answer": "غالباً ما يركز تحسين معدل التحويل (CRO) على تحسين صفحة واحدة. بينما ينظر تحسين المسار إلى الرحلة الكاملة متعددة الخطوات بشكل كلي."
+          },
+          {
+            "question": "كيف تعرف أين يسرب مسار التحويل الخاص بي؟",
+            "answer": "نستخدم أدوات تحليلات متقدمة مثل Google Analytics و Hotjar لتتبع تدفق المستخدم. تظهر لنا البيانات بوضوح الصفحة أو الخطوة التي يغادر فيها أعلى نسبة مئوية من المستخدمين."
+          },
+          {
+            "question": "هل يمكنك تحسين مسار مبيعات B2B؟",
+            "answer": "نعم. غالباً ما تتضمن مسارات B2B دورات مبيعات أطول، ونقوم بتحسين عملية التقاط العملاء المحتملين وتسلسلات رعاية البريد الإلكتروني."
+          },
+          {
+            "question": "كم من الوقت يستغرق رؤية النتائج؟",
+            "answer": "إذا كانت لديك زيارات عالية، فيمكن أن تسفر اختبارات A/B عن نتائج مهمة إحصائياً في غضون 2-4 أسابيع."
+          },
+          {
+            "question": "هل تتعاملون مع التغييرات في التطوير والتصميم؟",
+            "answer": "نعم. يضم فريقنا مصممي UX/UI ومطوري واجهة أمامية ينفذون التغييرات اللازمة، سواء كان ذلك بضبط زر أو إعادة تصميم صفحة الدفع."
+          },
+          {
+            "question": "ماذا لو لم يحصل موقعي على زيارات كافية لاختبار A/B؟",
+            "answer": "إذا كانت الزيارات منخفضة للغاية، فإننا نعتمد على البيانات النوعية - اختبار المستخدم والتقييمات التجريبية - لإجراء تحسينات ذات تأثير عالٍ."
+          },
+          {
+            "question": "كيف تتعاملون مع التتبع عبر الأجهزة (Cross-device)؟",
+            "answer": "نستخدم نماذج الإسناد المتقدمة والأدوات التي تتتبع المستخدمين المسجلين أو نستخدم المطابقة الاحتمالية لفهم كيفية انتقال المستخدمين بين الأجهزة."
+          },
+          {
+            "question": "هل ستغيرون موقع الويب الخاص بي بالكامل؟",
+            "answer": "لا. نحن نغير فقط العناصر المحددة التي تسبب الاحتكاك. نحن نفضل التعديلات التكرارية المدعومة بالبيانات بدلاً من التغييرات الشاملة المحفوفة بالمخاطر."
+          }
+        ],
+        "technologies": [
+          { "icon": "analytics", "name": "Google Analytics 4" },
+          { "icon": "mixpanel", "name": "Mixpanel" },
+          { "icon": "amplitude", "name": "Amplitude" },
+          { "icon": "hotjar", "name": "Hotjar" },
+          { "icon": "vwo", "name": "VWO" },
+          { "icon": "optimizely", "name": "Optimizely" },
+          { "icon": "segment", "name": "Segment" }
+        ]
+      }
+    }
+  },
+  "geo-ai-search-optimization": {
+    "en": {
+      "name": "GEO & AI Search Optimization",
+      "shortDescription": "Future-proof your online presence. Optimize your brand and content to rank in Generative Engine Optimization (GEO) platforms and AI Search models like ChatGPT, Gemini, and Google SGE.",
+      "fullDescription": "Search is evolving rapidly. Users are bypassing traditional blue links to ask complex questions directly to AI chatbots like ChatGPT, Claude, Google SGE (Search Generative Experience), and Perplexity. If your brand is not optimized for Generative Engine Optimization (GEO), you are losing visibility to competitors who are the 'AI's preferred answer.' Our GEO & AI Search Optimization services engineer your digital footprint so that Large Language Models (LLMs) understand, trust, and reference your brand. We focus on entity optimization, semantic markup, natural language structuring, and deep knowledge graph integration. We transition your content strategy from targeting fragmented keywords to answering complex, conversational queries. By establishing your brand as a recognized, authoritative entity across the semantic web, we ensure you dominate the new era of AI-driven search and discovery.",
+      "features": [
+        "LLM & AI Search Engine Readiness Audits",
+        "Entity Optimization & Semantic Web Structuring",
+        "Advanced Schema.org Markup Implementation",
+        "Knowledge Graph Integration & PR Syndication",
+        "Conversational Query Content Optimization",
+        "Google SGE (Search Generative Experience) Strategy",
+        "Brand Mentions & Digital PR for AI Trust",
+        "Featured Snippet & Zero-Click Optimization"
+      ],
+      "benefits": [
+        "Ensure your brand is cited as a source by ChatGPT, Gemini, and Claude",
+        "Dominate Google's Search Generative Experience (SGE) snapshots",
+        "Future-proof your traffic against the decline of traditional search",
+        "Establish unquestionable digital authority and brand trust",
+        "Capture highly qualified, conversational search intent",
+        "Control the narrative when AI models answer questions about your company"
+      ],
+      "metaTitle": "GEO & AI Search Optimization Services | PakSoft",
+      "metaDescription": "Rank in ChatGPT, Gemini, and Google SGE. Our Generative Engine Optimization (GEO) services structure your data so AI models trust and cite your brand.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "AI Visibility Audit",
+            "description": "We query major LLMs (ChatGPT, Gemini, Perplexity) to understand how they currently perceive your brand and identify gaps in your semantic footprint."
+          },
+          {
+            "step": 2,
+            "title": "Entity Establishment",
+            "description": "We solidify your brand as a recognized digital entity. This involves optimizing Wikidata, Google Knowledge Panels, and high-authority third-party directories."
+          },
+          {
+            "step": 3,
+            "title": "Advanced Schema Implementation",
+            "description": "We apply deep, nested Schema.org markup (JSON-LD) across your site to feed AI crawlers structured, unambiguous data about your business, products, and experts."
+          },
+          {
+            "step": 4,
+            "title": "Conversational Content Structuring",
+            "description": "We restructure your content using clear headings, direct Q&A formats, and NLP-friendly phrasing so LLMs can easily extract and synthesize your answers."
+          },
+          {
+            "step": 5,
+            "title": "Digital PR & Authority Building",
+            "description": "AI models trust corroborated information. We execute digital PR campaigns to secure brand mentions and backlinks from authoritative, diverse sources."
+          },
+          {
+            "step": 6,
+            "title": "Monitoring & SGE Tracking",
+            "description": "We continuously monitor your brand's presence in AI-generated answers and Google SGE snapshots, adjusting our semantic strategy as LLM algorithms evolve."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is GEO (Generative Engine Optimization)?",
+            "answer": "GEO is the evolution of SEO. It focuses on optimizing content and digital assets so that AI models (like ChatGPT, Perplexity, and Google SGE) understand, trust, and cite your brand in their generated answers."
+          },
+          {
+            "question": "How is GEO different from traditional SEO?",
+            "answer": "Traditional SEO targets specific keywords to rank web pages. GEO focuses on 'entities' and semantic relationships to ensure an AI understands the context and authority of your brand."
+          },
+          {
+            "question": "Can you guarantee my brand will be recommended by ChatGPT?",
+            "answer": "No one can guarantee specific LLM outputs because they are dynamically generated. However, by corroborating your brand information across the web and using structured data, we drastically increase the probability of citation."
+          },
+          {
+            "question": "Does traditional SEO still matter?",
+            "answer": "Yes. Traditional SEO and GEO work together. High-ranking, authoritative pages in traditional search are the primary data sources that LLMs crawl to generate their answers."
+          },
+          {
+            "question": "What is an 'Entity' in AI search?",
+            "answer": "An entity is a distinct, uniquely identifiable concept or thing (a person, company, or product) rather than just a string of text. AI models rely on connecting entities to understand the world."
+          },
+          {
+            "question": "How do you optimize content for AI search?",
+            "answer": "We use Natural Language Processing (NLP) best practices. We format content with clear Q&A structures, use simple, declarative sentences, and provide high-density factual information."
+          },
+          {
+            "question": "Why does Schema markup matter for AI?",
+            "answer": "Schema acts as a direct translation layer. Instead of forcing an AI to 'read' your page to guess what it's about, Schema hands the AI a perfectly structured database of facts about your content."
+          },
+          {
+            "question": "How do you measure success in GEO?",
+            "answer": "We measure brand mentions in AI chat outputs, inclusion in Google SGE snapshot carousels, increases in zero-click visibility, and traffic stemming from AI search engine platforms like Perplexity."
+          }
+        ],
+        "technologies": [
+          { "icon": "openai", "name": "ChatGPT / OpenAI" },
+          { "icon": "google", "name": "Google Gemini & SGE" },
+          { "icon": "api", "name": "Schema.org / JSON-LD" },
+          { "icon": "python", "name": "NLP Analysis Tools" },
+          { "icon": "search", "name": "Perplexity AI" },
+          { "icon": "wikipedia", "name": "Knowledge Graphs" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "GEO ve Yapay Zeka Arama Optimizasyonu",
+      "shortDescription": "Çevrimiçi varlığınızı geleceğe hazırlayın. Markanızı ve içeriğinizi Üretken Motor Optimizasyonu (GEO) platformlarında ve ChatGPT, Gemini ve Google SGE gibi yapay zeka arama modellerinde sıralanacak şekilde optimize edin.",
+      "fullDescription": "Arama hızla gelişiyor. Kullanıcılar artık geleneksel mavi bağlantıları atlayarak karmaşık soruları doğrudan ChatGPT, Claude, Google SGE (Arama Üretken Deneyimi) ve Perplexity gibi yapay zeka sohbet botlarına soruyor. Markanız Üretken Motor Optimizasyonu (GEO) için optimize edilmemişse, 'Yapay Zeka'nın tercih ettiği yanıt' olan rakiplerinize görünürlük kaybediyorsunuz. GEO ve Yapay Zeka Arama Optimizasyonu hizmetlerimiz, Büyük Dil Modellerinin (LLM'ler) markanızı anlaması, güvenmesi ve referans göstermesi için dijital ayak izinizi tasarlar. Varlık (entity) optimizasyonu, anlamsal (semantik) işaretleme, doğal dil yapılandırması ve derin bilgi grafiği entegrasyonuna odaklanıyoruz. İçerik stratejinizi parçalanmış anahtar kelimeleri hedeflemekten, karmaşık, sohbete dayalı sorguları yanıtlamaya geçiriyoruz. Markanızı semantik web üzerinde tanınmış, yetkili bir varlık olarak kurarak, yapay zeka destekli yeni arama ve keşif çağında öne çıkmanızı sağlıyoruz.",
+      "features": [
+        "LLM ve Yapay Zeka Arama Motoru Hazırlık Denetimleri",
+        "Varlık (Entity) Optimizasyonu ve Semantik Web Yapılandırması",
+        "Gelişmiş Schema.org İşaretleme (Markup) Uygulaması",
+        "Bilgi Grafiği (Knowledge Graph) Entegrasyonu",
+        "Sohbet (Conversational) Sorgusu İçerik Optimizasyonu",
+        "Google SGE (Search Generative Experience) Stratejisi",
+        "Yapay Zeka Güveni için Marka Bahsedilmeleri (Mentions) ve Dijital PR",
+        "Öne Çıkan Snippet ve Sıfır Tıklama (Zero-Click) Optimizasyonu"
+      ],
+      "benefits": [
+        "Markanızın ChatGPT, Gemini ve Claude tarafından kaynak olarak gösterildiğinden emin olun",
+        "Google'ın Arama Üretken Deneyimi (SGE) anlık görüntülerinde (snapshots) öne çıkın",
+        "Trafiğinizi geleneksel aramadaki düşüşe karşı geleceğe hazırlayın",
+        "Tartışmasız dijital otorite ve marka güveni oluşturun",
+        "Son derece nitelikli, sohbete dayalı arama amacını yakalayın",
+        "Yapay zeka modelleri şirketiniz hakkındaki soruları yanıtlarken anlatıyı kontrol edin"
+      ],
+      "metaTitle": "GEO ve Yapay Zeka Arama Optimizasyonu | PakSoft",
+      "metaDescription": "ChatGPT, Gemini ve Google SGE'de yer alın. Üretken Motor Optimizasyonu (GEO) hizmetlerimiz, yapay zeka modellerinin markanıza güvenmesi için verilerinizi yapılandırır.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Yapay Zeka Görünürlük Denetimi",
+            "description": "Markanızı şu anda nasıl algıladıklarını anlamak ve semantik ayak izinizdeki boşlukları belirlemek için büyük LLM'leri (ChatGPT, Gemini, Perplexity) sorguluyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Varlık (Entity) Kurulumu",
+            "description": "Markanızı tanınmış bir dijital varlık olarak sağlamlaştırıyoruz. Bu, Wikidata'yı, Google Bilgi Panellerini (Knowledge Panels) ve yüksek otoriteli üçüncü taraf dizinleri optimize etmeyi içerir."
+          },
+          {
+            "step": 3,
+            "title": "Gelişmiş Schema Uygulaması",
+            "description": "Yapay zeka tarayıcılarını işletmeniz, ürünleriniz ve uzmanlarınız hakkında yapılandırılmış, açık verilerle beslemek için sitenize derin Schema.org işaretlemesi (JSON-LD) uyguluyoruz."
+          },
+          {
+            "step": 4,
+            "title": "Sohbet İçeriği Yapılandırması",
+            "description": "LLM'lerin yanıtlarınızı kolayca çıkarabilmesi ve sentezleyebilmesi için içeriğinizi net başlıklar, doğrudan Soru-Cevap formatları ve NLP dostu ifadeler kullanarak yeniden yapılandırıyoruz."
+          },
+          {
+            "step": 5,
+            "title": "Dijital PR ve Otorite Oluşturma",
+            "description": "Yapay zeka modelleri doğrulanmış bilgilere güvenir. Yetkili kaynaklardan marka bahsedilmelerini (mentions) ve geri bağlantıları (backlinks) güvence altına almak için dijital PR kampanyaları yürütüyoruz."
+          },
+          {
+            "step": 6,
+            "title": "İzleme ve SGE Takibi",
+            "description": "LLM algoritmaları geliştikçe semantik stratejimizi ayarlayarak, markanızın yapay zeka tarafından oluşturulan yanıtlardaki ve Google SGE anlık görüntülerindeki varlığını sürekli izliyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "GEO (Üretken Motor Optimizasyonu) nedir?",
+            "answer": "GEO, SEO'nun evrimidir. Yapay zeka modellerinin (ChatGPT, Perplexity ve Google SGE gibi) oluşturdukları yanıtlarda markanızı anlaması, güvenmesi ve kaynak göstermesi için içerik ve dijital varlıkları optimize etmeye odaklanır."
+          },
+          {
+            "question": "GEO'nun geleneksel SEO'dan farkı nedir?",
+            "answer": "Geleneksel SEO, web sayfalarını sıralamak için belirli anahtar kelimeleri hedefler. GEO ise yapay zekanın markanızın bağlamını ve otoritesini anlamasını sağlamak için 'varlıklara' (entities) ve semantik ilişkilere odaklanır."
+          },
+          {
+            "question": "Markamın ChatGPT tarafından önerileceğini garanti edebilir misiniz?",
+            "answer": "Hiç kimse belirli LLM çıktılarını garanti edemez çünkü bunlar dinamik olarak oluşturulur. Ancak, marka bilgilerinizi web genelinde doğrulayarak ve yapılandırılmış veriler kullanarak alıntı yapılma olasılığını büyük ölçüde artırıyoruz."
+          },
+          {
+            "question": "Geleneksel SEO hala önemli mi?",
+            "answer": "Evet. Geleneksel SEO ve GEO birlikte çalışır. Geleneksel aramada üst sıralarda yer alan, otoriter sayfalar, LLM'lerin yanıtlarını oluşturmak için taradıkları birincil veri kaynaklarıdır."
+          },
+          {
+            "question": "Yapay zeka aramasında 'Varlık' (Entity) nedir?",
+            "answer": "Bir varlık, yalnızca bir metin dizisi değil, ayrı, benzersiz bir şekilde tanımlanabilir bir kavram veya şeydir (kişi, şirket veya ürün). Yapay zeka modelleri dünyayı anlamak için varlıkları birbirine bağlamaya güvenir."
+          },
+          {
+            "question": "İçeriği yapay zeka araması için nasıl optimize ediyorsunuz?",
+            "answer": "Doğal Dil İşleme (NLP) en iyi uygulamalarını kullanıyoruz. İçeriği net Soru-Cevap yapılarıyla biçimlendiriyor, basit, açıklayıcı cümleler kullanıyor ve yüksek yoğunluklu olgusal bilgiler sağlıyoruz."
+          },
+          {
+            "question": "Schema işaretlemesi (markup) yapay zeka için neden önemlidir?",
+            "answer": "Schema doğrudan bir çeviri katmanı görevi görür. Bir yapay zekayı, ne hakkında olduğunu tahmin etmesi için sayfanızı 'okumaya' zorlamak yerine, Schema yapay zekaya içeriğiniz hakkında mükemmel yapılandırılmış bir veri tabanı sunar."
+          },
+          {
+            "question": "GEO'da başarıyı nasıl ölçüyorsunuz?",
+            "answer": "Yapay zeka sohbet çıktılarında markadan bahsedilmeyi, Google SGE atlıkarıncalarına dahil edilmeyi, sıfır tıklama görünürlüğündeki artışları ve Perplexity gibi yapay zeka platformlarından kaynaklanan trafiği ölçüyoruz."
+          }
+        ],
+        "technologies": [
+          { "icon": "openai", "name": "ChatGPT / OpenAI" },
+          { "icon": "google", "name": "Google Gemini & SGE" },
+          { "icon": "api", "name": "Schema.org / JSON-LD" },
+          { "icon": "python", "name": "NLP Analysis Tools" },
+          { "icon": "search", "name": "Perplexity AI" },
+          { "icon": "wikipedia", "name": "Knowledge Graphs" }
+        ]
+      }
+    },
+    "de": {
+      "name": "GEO & KI-Suchmaschinenoptimierung",
+      "shortDescription": "Machen Sie Ihre Online-Präsenz zukunftssicher. Optimieren Sie Ihre Marke für Generative Engine Optimization (GEO) und KI-Suchmodelle wie ChatGPT, Gemini und Google SGE.",
+      "fullDescription": "Die Suche entwickelt sich rasant weiter. Nutzer überspringen traditionelle blaue Links und stellen komplexe Fragen direkt an KI-Chatbots wie ChatGPT, Claude, Google SGE und Perplexity. Wenn Ihre Marke nicht für Generative Engine Optimization (GEO) optimiert ist, verlieren Sie Sichtbarkeit an Wettbewerber, die die 'bevorzugte Antwort der KI' sind. Unsere GEO & KI-Suchmaschinenoptimierung gestaltet Ihren digitalen Fußabdruck so, dass Large Language Models (LLMs) Ihre Marke verstehen, ihr vertrauen und sie zitieren. Wir konzentrieren uns auf Entitätsoptimierung, semantisches Markup und tiefe Knowledge-Graph-Integration. Wir wandeln Ihre Content-Strategie von fragmentierten Keywords zur Beantwortung komplexer, konversationsbasierter Abfragen um. Indem wir Ihre Marke als anerkannte, maßgebliche Entität etablieren, dominieren Sie die neue Ära der KI-gesteuerten Suche.",
+      "features": [
+        "LLM & KI-Suchmaschinen-Audits",
+        "Entitätsoptimierung & Semantische Webstrukturierung",
+        "Erweiterte Schema.org-Markup-Implementierung",
+        "Knowledge-Graph-Integration & PR-Syndizierung",
+        "Optimierung konversationsbasierter Suchanfragen",
+        "Google SGE (Search Generative Experience) Strategie",
+        "Markenerwähnungen & Digital PR für KI-Vertrauen",
+        "Featured Snippet & Zero-Click Optimierung"
+      ],
+      "benefits": [
+        "Stellen Sie sicher, dass Ihre Marke von ChatGPT und Gemini zitiert wird",
+        "Dominieren Sie die Snapshots der Google Search Generative Experience (SGE)",
+        "Sichern Sie Ihren Traffic gegen den Rückgang der traditionellen Suche",
+        "Etablieren Sie unbestreitbare digitale Autorität und Markenvertrauen",
+        "Erfassen Sie hochqualifizierte, konversationsbezogene Suchintentionen",
+        "Kontrollieren Sie das Narrativ, wenn KI-Modelle Fragen zu Ihrem Unternehmen beantworten"
+      ],
+      "metaTitle": "GEO & KI-Suchmaschinenoptimierung | PakSoft",
+      "metaDescription": "Ranken Sie in ChatGPT, Gemini und Google SGE. Unsere Generative Engine Optimization (GEO) strukturiert Daten so, dass KI-Modelle Ihrer Marke vertrauen.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "KI-Sichtbarkeits-Audit",
+            "description": "Wir befragen große LLMs (ChatGPT, Gemini), um zu verstehen, wie sie Ihre Marke wahrnehmen, und identifizieren Lücken in Ihrem semantischen Fußabdruck."
+          },
+          {
+            "step": 2,
+            "title": "Etablierung der Entität",
+            "description": "Wir festigen Ihre Marke als anerkannte digitale Entität durch Optimierung von Wikidata, Google Knowledge Panels und branchenrelevanten Verzeichnissen."
+          },
+          {
+            "step": 3,
+            "title": "Erweiterte Schema-Implementierung",
+            "description": "Wir wenden tiefes Schema.org-Markup (JSON-LD) an, um KI-Crawlern strukturierte, eindeutige Daten über Ihr Unternehmen zu liefern."
+          },
+          {
+            "step": 4,
+            "title": "Konversationsbasierte Inhaltsstrukturierung",
+            "description": "Wir strukturieren Ihre Inhalte mit klaren Überschriften und Q&A-Formaten, damit LLMs Ihre Antworten leicht extrahieren können."
+          },
+          {
+            "step": 5,
+            "title": "Digital PR & Autoritätsaufbau",
+            "description": "KI-Modelle vertrauen auf bestätigte Informationen. Wir führen PR-Kampagnen durch, um Markenerwähnungen von maßgeblichen Quellen zu sichern."
+          },
+          {
+            "step": 6,
+            "title": "Überwachung & SGE-Tracking",
+            "description": "Wir überwachen kontinuierlich die Präsenz Ihrer Marke in KI-generierten Antworten und passen unsere semantische Strategie laufend an."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Was ist GEO (Generative Engine Optimization)?",
+            "answer": "GEO ist die Evolution der SEO. Es optimiert Inhalte so, dass KI-Modelle (wie ChatGPT und Google SGE) Ihre Marke verstehen und in Antworten zitieren."
+          },
+          {
+            "question": "Wie unterscheidet sich GEO von traditioneller SEO?",
+            "answer": "Traditionelle SEO zielt auf bestimmte Keywords ab. GEO konzentriert sich auf 'Entitäten' und semantische Beziehungen, damit die KI den Kontext versteht."
+          },
+          {
+            "question": "Können Sie garantieren, dass meine Marke von ChatGPT empfohlen wird?",
+            "answer": "Niemand kann LLM-Ausgaben garantieren. Durch die strukturierte Bestätigung Ihrer Markeninformationen im Web erhöhen wir jedoch die Zitierwahrscheinlichkeit drastisch."
+          },
+          {
+            "question": "Spielt traditionelle SEO noch eine Rolle?",
+            "answer": "Ja. Hochrangige Seiten in der traditionellen Suche sind die primären Datenquellen, die LLMs durchsuchen, um ihre Antworten zu generieren."
+          },
+          {
+            "question": "Was ist eine 'Entität' in der KI-Suche?",
+            "answer": "Eine Entität ist ein eindeutig identifizierbares Konzept (Person, Firma, Produkt). KI-Modelle verbinden Entitäten, um die Welt zu verstehen."
+          },
+          {
+            "question": "Wie optimieren Sie Inhalte für die KI-Suche?",
+            "answer": "Wir formatieren Inhalte mit klaren Q&A-Strukturen, verwenden einfache, deklarative Sätze und bieten hochdichte, faktenbasierte Informationen (NLP-Prinzipien)."
+          },
+          {
+            "question": "Warum ist Schema-Markup für KI so wichtig?",
+            "answer": "Schema wirkt als Übersetzungsschicht. Es übergibt der KI eine perfekt strukturierte Datenbank von Fakten, anstatt sie raten zu lassen."
+          },
+          {
+            "question": "Wie messen Sie den Erfolg von GEO?",
+            "answer": "Wir messen Markenerwähnungen in KI-Chats, die Aufnahme in Google SGE-Snapshots und Traffic von KI-Suchmaschinen wie Perplexity."
+          }
+        ],
+        "technologies": [
+          { "icon": "openai", "name": "ChatGPT / OpenAI" },
+          { "icon": "google", "name": "Google Gemini & SGE" },
+          { "icon": "api", "name": "Schema.org / JSON-LD" },
+          { "icon": "python", "name": "NLP Analysis Tools" },
+          { "icon": "search", "name": "Perplexity AI" },
+          { "icon": "wikipedia", "name": "Knowledge Graphs" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "GEO اور AI سرچ آپٹیمائزیشن",
+      "shortDescription": "اپنی آن لائن موجودگی کو مستقبل کے لیے محفوظ بنائیں۔ اپنے برانڈ اور مواد کو جنریٹو انجن آپٹیمائزیشن (GEO) اور ChatGPT، Gemini جیسے AI ماڈلز کے لیے بہتر بنائیں۔",
+      "fullDescription": "سرچ کی دنیا تیزی سے بدل رہی ہے۔ اب صارفین روایتی نیلے لنکس کو چھوڑ کر براہ راست ChatGPT، Claude، اور Google SGE (سرچ جنریٹو تجربہ) جیسے AI چیٹ بوٹس سے سوالات پوچھ رہے ہیں۔ اگر آپ کا برانڈ جنریٹو انجن آپٹیمائزیشن (GEO) کے لیے موزوں نہیں ہے، تو آپ ان حریفوں سے پیچھے رہ جائیں گے جنہیں 'AI' پسند کرتا ہے۔ ہماری GEO اور AI سرچ آپٹیمائزیشن خدمات آپ کے ڈیجیٹل نقش کو اس طرح تیار کرتی ہیں کہ لارج لینگویج ماڈلز (LLMs) آپ کے برانڈ کو سمجھیں، اس پر بھروسہ کریں، اور اس کا حوالہ دیں۔ ہم اینٹیٹی آپٹیمائزیشن، سیمنٹک مارک اپ، اور نالج گراف کے انضمام پر توجہ مرکوز کرتے ہیں۔ آپ کے برانڈ کو سیمنٹک ویب پر ایک مستند ادارے کے طور پر قائم کر کے، ہم اس بات کو یقینی بناتے ہیں کہ آپ AI سے چلنے والے نئے دور پر غلبہ حاصل کریں۔",
+      "features": [
+        "LLM اور AI سرچ انجن کی تیاری کا آڈٹ",
+        "اینٹیٹی آپٹیمائزیشن اور سیمنٹک ویب اسٹرکچرنگ",
+        "ایڈوانسڈ Schema.org مارک اپ کا نفاذ",
+        "نالج گراف انٹیگریشن اور ڈیجیٹل PR",
+        "گفتگو پر مبنی سوالات (Conversational Queries) کی آپٹیمائزیشن",
+        "Google SGE (سرچ جنریٹو تجربہ) کی حکمت عملی",
+        "AI کے اعتماد کے لیے برانڈ مینشنز اور بیک لنکس",
+        "فیچرڈ اسنیپٹ اور زیرو کلک آپٹیمائزیشن"
+      ],
+      "benefits": [
+        "یقینی بنائیں کہ ChatGPT اور Gemini آپ کے برانڈ کا بطور ذریعہ حوالہ دیں",
+        "گوگل کے سرچ جنریٹو تجربے (SGE) اسنیپ شاٹس پر غلبہ حاصل کریں",
+        "روایتی سرچ کی کمی کے خلاف اپنے ٹریفک کو مستقبل کے لیے محفوظ بنائیں",
+        "غیر متنازعہ ڈیجیٹل اتھارٹی اور برانڈ کا اعتماد قائم کریں",
+        "گفتگو پر مبنی انتہائی مستند تلاش کے ارادے کو حاصل کریں",
+        "جب AI ماڈلز آپ کی کمپنی کے بارے میں جواب دیں تو بیانیے کو کنٹرول کریں"
+      ],
+      "metaTitle": "GEO اور AI سرچ آپٹیمائزیشن سروسز | PakSoft",
+      "metaDescription": "ChatGPT اور Google SGE میں رینک کریں۔ ہماری GEO سروسز آپ کے ڈیٹا کو اس طرح ترتیب دیتی ہیں کہ AI ماڈلز آپ کے برانڈ پر بھروسہ کریں اور حوالہ دیں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "AI کی نمائش کا آڈٹ",
+            "description": "ہم بڑے LLMs (ChatGPT، Gemini) سے سوالات کرتے ہیں تاکہ یہ سمجھ سکیں کہ وہ فی الحال آپ کے برانڈ کو کس طرح دیکھتے ہیں اور خلا کی نشاندہی کرتے ہیں۔"
+          },
+          {
+            "step": 2,
+            "title": "ادارے (Entity) کا قیام",
+            "description": "ہم آپ کے برانڈ کو ایک تسلیم شدہ ڈیجیٹل وجود کے طور پر مستحکم کرتے ہیں۔ اس میں وکی ڈیٹا اور گوگل نالج پینلز کو بہتر بنانا شامل ہے۔"
+          },
+          {
+            "step": 3,
+            "title": "ایڈوانسڈ اسکیما کا نفاذ",
+            "description": "ہم AI کرالرز کو آپ کے کاروبار کے بارے میں واضح ڈیٹا فراہم کرنے کے لیے آپ کی سائٹ پر گہرا Schema.org مارک اپ (JSON-LD) لاگو کرتے ہیں۔"
+          },
+          {
+            "step": 4,
+            "title": "بات چیت کے مواد کی ساخت",
+            "description": "ہم آپ کے مواد کو واضح سرخیوں اور Q&A فارمیٹس کا استعمال کرتے ہوئے دوبارہ ترتیب دیتے ہیں تاکہ LLMs آسانی سے آپ کے جوابات نکال سکیں۔"
+          },
+          {
+            "step": 5,
+            "title": "ڈیجیٹل PR اور اتھارٹی کی تعمیر",
+            "description": "AI ماڈلز تصدیق شدہ معلومات پر بھروسہ کرتے ہیں۔ ہم مستند ذرائع سے برانڈ کے ذکر کو محفوظ بنانے کے لیے ڈیجیٹل پی آر مہمات چلاتے ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "نگرانی اور SGE ٹریکنگ",
+            "description": "ہم AI سے تیار کردہ جوابات میں آپ کے برانڈ کی موجودگی کی مسلسل نگرانی کرتے ہیں، اور الگورتھم تیار ہونے کے ساتھ حکمت عملی کو ایڈجسٹ کرتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "GEO (جنریٹو انجن آپٹیمائزیشن) کیا ہے؟",
+            "answer": "GEO، SEO کا ارتقاء ہے۔ یہ مواد کو اس طرح بہتر بنانے پر توجہ مرکوز کرتا ہے کہ AI ماڈلز (جیسے ChatGPT) اسے سمجھیں اور اپنے جوابات میں آپ کے برانڈ کا حوالہ دیں۔"
+          },
+          {
+            "question": "GEO روایتی SEO سے کیسے مختلف ہے؟",
+            "answer": "روایتی SEO مخصوص کلیدی الفاظ کو ہدف بناتا ہے۔ GEO 'اداروں' (entities) اور ان کے تعلقات پر توجہ مرکوز کرتا ہے تاکہ AI آپ کے برانڈ کے سیاق و سباق کو سمجھے۔"
+          },
+          {
+            "question": "کیا آپ ضمانت دے سکتے ہیں کہ ChatGPT میرے برانڈ کی سفارش کرے گا؟",
+            "answer": "کوئی بھی مخصوص LLM آؤٹ پٹ کی ضمانت نہیں دے سکتا۔ تاہم، ویب پر آپ کے برانڈ کی معلومات کی تصدیق کر کے، ہم حوالہ دیے جانے کے امکانات کو کافی حد تک بڑھا دیتے ہیں۔"
+          },
+          {
+            "question": "کیا روایتی SEO اب بھی اہمیت رکھتا ہے؟",
+            "answer": "ہاں۔ روایتی تلاش میں اعلیٰ درجہ بندی والے صفحات وہ بنیادی ڈیٹا ذرائع ہیں جنہیں LLMs اپنے جوابات تیار کرنے کے لیے کرال کرتے ہیں۔"
+          },
+          {
+            "question": "AI تلاش میں 'اینٹیٹی' (Entity) کیا ہے؟",
+            "answer": "ایک وجود ایک الگ پہچانا جانے والا تصور ہے (جیسے ایک شخص، کمپنی یا مصنوعات)۔ AI ماڈلز دنیا کو سمجھنے کے لیے اداروں کو جوڑنے پر انحصار کرتے ہیں۔"
+          },
+          {
+            "question": "آپ AI تلاش کے لیے مواد کو کیسے بہتر بناتے ہیں؟",
+            "answer": "ہم واضح Q&A ڈھانچے، سادہ جملوں اور حقائق پر مبنی معلومات فراہم کر کے مواد کو فارمیٹ کرتے ہیں تاکہ AI اسے آسانی سے پڑھ سکے۔"
+          },
+          {
+            "question": "AI کے لیے Schema مارک اپ کیوں اہم ہے؟",
+            "answer": "اسکیما ایک براہ راست ترجمہ پرت کے طور پر کام کرتا ہے۔ AI کو آپ کے صفحے کا اندازہ لگانے پر مجبور کرنے کے بجائے، اسکیما اسے مکمل طور پر ترتیب دیا گیا ڈیٹا پیش کرتا ہے۔"
+          },
+          {
+            "question": "آپ GEO میں کامیابی کو کیسے ماپتے ہیں؟",
+            "answer": "ہم AI چیٹ کے نتائج میں برانڈ کے ذکر، گوگل SGE میں شمولیت، اور Perplexity جیسے پلیٹ فارمز سے آنے والی ٹریفک کی پیمائش کرتے ہیں۔"
+          }
+        ],
+        "technologies": [
+          { "icon": "openai", "name": "ChatGPT / OpenAI" },
+          { "icon": "google", "name": "Google Gemini & SGE" },
+          { "icon": "api", "name": "Schema.org / JSON-LD" },
+          { "icon": "python", "name": "NLP Analysis Tools" },
+          { "icon": "search", "name": "Perplexity AI" },
+          { "icon": "wikipedia", "name": "Knowledge Graphs" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "تحسين محركات البحث التوليدية (GEO)",
+      "shortDescription": "جهّز وجودك الرقمي للمستقبل. قم بتحسين علامتك التجارية للظهور في منصات تحسين المحرك التوليدي (GEO) ونماذج بحث الذكاء الاصطناعي مثل ChatGPT و Gemini.",
+      "fullDescription": "يتطور البحث بسرعة. يتجاوز المستخدمون الروابط الزرقاء التقليدية لطرح أسئلة معقدة مباشرة على روبوتات الذكاء الاصطناعي مثل ChatGPT و Claude و Google SGE. إذا لم تكن علامتك التجارية محسّنة لتحسين المحرك التوليدي (GEO)، فإنك تفقد الرؤية لصالح المنافسين الذين يمثلون 'الإجابة المفضلة للذكاء الاصطناعي'. تقوم خدمات GEO الخاصة بنا بتصميم بصمتك الرقمية بحيث تفهم نماذج اللغات الكبيرة (LLMs) علامتك التجارية وتثق بها وتشير إليها. نحن نركز على تحسين الكيانات (Entity Optimization)، والترميز الدلالي، وهيكلة اللغة الطبيعية، وتكامل الرسم البياني المعرفي العميق. ننتقل باستراتيجية المحتوى الخاصة بك من استهداف الكلمات الرئيسية إلى الإجابة على استفسارات المحادثة المعقدة. من خلال ترسيخ علامتك التجارية ككيان معترف به، نضمن لك السيطرة على العصر الجديد للبحث المعتمد على الذكاء الاصطناعي.",
+      "features": [
+        "عمليات تدقيق جاهزية محرك بحث الذكاء الاصطناعي و LLM",
+        "تحسين الكيانات (Entity Optimization) والهيكلة الدلالية",
+        "تنفيذ ترميز Schema.org المتقدم (JSON-LD)",
+        "تكامل الرسم البياني المعرفي (Knowledge Graph)",
+        "تحسين محتوى استعلامات المحادثة",
+        "استراتيجية تجربة البحث التوليدية من جوجل (SGE)",
+        "بناء إشارات العلامة التجارية والعلاقات العامة الرقمية",
+        "تحسين المقتطفات المميزة (Featured Snippets)"
+      ],
+      "benefits": [
+        "ضمان استشهاد ChatGPT و Gemini بعلامتك التجارية كمصدر",
+        "السيطرة على لقطات تجربة البحث التوليدية من جوجل (SGE)",
+        "حماية حركة المرور الخاصة بك من تراجع البحث التقليدي",
+        "تأسيس سلطة رقمية لا جدال فيها وثقة بالعلامة التجارية",
+        "التقاط نية البحث الحوارية المؤهلة تأهيلاً عالياً",
+        "التحكم في السرد عندما تجيب نماذج الذكاء الاصطناعي على أسئلة عن شركتك"
+      ],
+      "metaTitle": "خدمات تحسين محركات البحث التوليدية | GEO | PakSoft",
+      "metaDescription": "تصدر نتائج ChatGPT و Gemini و Google SGE. تقوم خدمات تحسين المحرك التوليدي (GEO) بهيكلة بياناتك بحيث تثق نماذج الذكاء الاصطناعي بعلامتك.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "تدقيق رؤية الذكاء الاصطناعي",
+            "description": "نقوم بالاستعلام من نماذج LLMs الرئيسية (ChatGPT و Gemini) لفهم كيف ينظرون حالياً إلى علامتك التجارية وتحديد الفجوات في بصمتك الدلالية."
+          },
+          {
+            "step": 2,
+            "title": "تأسيس الكيان (Entity)",
+            "description": "نعزز علامتك التجارية ككيان رقمي معترف به. يتضمن ذلك تحسين Wikidata ولوحات معرفة Google والدلائل عالية السلطة."
+          },
+          {
+            "step": 3,
+            "title": "تنفيذ Schema المتقدم",
+            "description": "نطبق ترميز Schema.org العميق عبر موقعك لتزويد زواحف الذكاء الاصطناعي ببيانات منظمة لا لبس فيها حول عملك ومنتجاتك."
+          },
+          {
+            "step": 4,
+            "title": "هيكلة محتوى المحادثة",
+            "description": "نعيد هيكلة المحتوى الخاص بك باستخدام عناوين واضحة وتنسيقات سؤال وجواب مباشرة حتى تتمكن LLMs من استخراج إجاباتك بسهولة."
+          },
+          {
+            "step": 5,
+            "title": "العلاقات العامة الرقمية وبناء السلطة",
+            "description": "تثق نماذج الذكاء الاصطناعي بالمعلومات المدعومة. نقوم بتنفيذ حملات PR رقمية لتأمين إشارات العلامة التجارية من مصادر موثوقة."
+          },
+          {
+            "step": 6,
+            "title": "المراقبة وتتبع SGE",
+            "description": "نراقب باستمرار وجود علامتك التجارية في الإجابات التي ينشئها الذكاء الاصطناعي، ونعدل استراتيجيتنا مع تطور الخوارزميات."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما هو GEO (تحسين المحرك التوليدي)؟",
+            "answer": "GEO هو تطور SEO. يركز على تحسين المحتوى بحيث تفهم نماذج الذكاء الاصطناعي (مثل ChatGPT) علامتك التجارية وتستشهد بها في إجاباتها."
+          },
+          {
+            "question": "كيف يختلف GEO عن SEO التقليدي؟",
+            "answer": "يستهدف SEO التقليدي كلمات رئيسية محددة. يركز GEO على 'الكيانات' والعلاقات الدلالية لضمان فهم الذكاء الاصطناعي لسياق وسلطة علامتك التجارية."
+          },
+          {
+            "question": "هل يمكنك ضمان أن يوصي ChatGPT بعلامتي التجارية؟",
+            "answer": "لا يمكن لأحد ضمان مخرجات LLM محددة. ومع ذلك، من خلال استخدام البيانات المنظمة والعلاقات العامة الرقمية، نزيد بشكل كبير من احتمالية الاستشهاد بك."
+          },
+          {
+            "question": "هل لا يزال SEO التقليدي مهماً؟",
+            "answer": "نعم. الصفحات ذات الترتيب العالي في البحث التقليدي هي مصادر البيانات الأساسية التي تزحف إليها نماذج LLMs لإنشاء إجاباتها."
+          },
+          {
+            "question": "ما هو 'الكيان' في بحث الذكاء الاصطناعي؟",
+            "answer": "الكيان هو مفهوم يمكن التعرف عليه بشكل فريد (شخص أو شركة أو منتج) بدلاً من مجرد سلسلة نصية. يعتمد الذكاء الاصطناعي على ربط الكيانات لفهم العالم."
+          },
+          {
+            "question": "كيف تقوم بتحسين المحتوى لبحث الذكاء الاصطناعي؟",
+            "answer": "نقوم بتنسيق المحتوى بهياكل Q&A واضحة، واستخدام جمل بسيطة، وتوفير معلومات واقعية عالية الكثافة لسهولة معالجتها."
+          },
+          {
+            "question": "لماذا يهم ترميز Schema للذكاء الاصطناعي؟",
+            "answer": "يعمل Schema كطبقة ترجمة مباشرة. بدلاً من إجبار الذكاء الاصطناعي على تخمين محتوى صفحتك، يسلمه Schema قاعدة بيانات منظمة للحقائق."
+          },
+          {
+            "question": "كيف تقيس النجاح في GEO؟",
+            "answer": "نقيس إشارات العلامة التجارية في مخرجات محادثة الذكاء الاصطناعي، والظهور في Google SGE، وحركة المرور الناتجة عن منصات مثل Perplexity."
+          }
+        ],
+        "technologies": [
+          { "icon": "openai", "name": "ChatGPT / OpenAI" },
+          { "icon": "google", "name": "Google Gemini & SGE" },
+          { "icon": "api", "name": "Schema.org / JSON-LD" },
+          { "icon": "python", "name": "NLP Analysis Tools" },
+          { "icon": "search", "name": "Perplexity AI" },
+          { "icon": "wikipedia", "name": "Knowledge Graphs" }
+        ]
+      }
+    }
+  },
+  "google-display-ads": {
+    "en": {
+      "name": "Google Display Ads",
+      "shortDescription": "Keep your brand top-of-mind. We design and execute highly targeted Google Display Network campaigns to build brand awareness and retarget past visitors.",
+      "fullDescription": "While Search Ads capture intent, Google Display Ads create demand. With access to over two million websites, apps, and videos, the Google Display Network (GDN) allows you to reach 90% of global internet users. However, without precise targeting and compelling creative, display advertising can quickly burn through your budget with low-quality clicks. Our Display Ads service focuses on strategic placements, audience intent, and intelligent remarketing. We utilize advanced targeting options—such as custom affinity audiences, in-market segments, and contextual placements—to ensure your banner ads only appear on highly relevant websites. Our creative team designs striking, responsive display ads that capture attention without being intrusive. We use Display campaigns primarily to build top-of-funnel brand awareness and, most importantly, to execute aggressive remarketing campaigns that follow your unconverted website visitors, keeping your brand top-of-mind until they are ready to buy.",
+      "features": [
+        "Custom Affinity & In-Market Audience Targeting",
+        "Intelligent Remarketing & Retargeting Campaigns",
+        "Contextual Website Placement Targeting",
+        "Responsive Display Ad (RDA) Creation",
+        "HTML5 Animated Banner Ad Design",
+        "Placement Exclusion & Brand Safety Filtering",
+        "Cross-Device Tracking & Attribution",
+        "A/B Testing for Visuals and Copy"
+      ],
+      "benefits": [
+        "Reach a massive, global audience across millions of websites",
+        "Bring unconverted visitors back to your site with remarketing",
+        "Build strong brand awareness at a very low Cost Per Click (CPC)",
+        "Target users based on their recent browsing behavior and interests",
+        "Protect your brand image with strict placement exclusions",
+        "Support your search campaigns by generating initial brand interest"
+      ],
+      "metaTitle": "Google Display Ads Agency | GDN Marketing | PakSoft",
+      "metaDescription": "Build brand awareness and retarget past visitors with Google Display Ads. We design stunning banners and manage high-ROI GDN campaigns.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Audience Strategy & Targeting",
+            "description": "We define who needs to see your ads by building custom affinity audiences, analyzing your competitor's traffic, and defining strict demographic parameters."
+          },
+          {
+            "step": 2,
+            "title": "Creative Design & Copywriting",
+            "description": "Our designers create a suite of visually compelling banners, including Responsive Display Ads (RDAs) and HTML5 formats, tailored to your brand identity."
+          },
+          {
+            "step": 3,
+            "title": "Campaign Structuring",
+            "description": "We build campaigns separating prospecting (new audiences) from remarketing (past visitors), allowing for precise budget control and distinct messaging."
+          },
+          {
+            "step": 4,
+            "title": "Placement Auditing & Launch",
+            "description": "Before launch, we set strict negative placements to prevent your ads from showing on low-quality mobile games, irrelevant apps, or unsafe content."
+          },
+          {
+            "step": 5,
+            "title": "Remarketing Implementation",
+            "description": "We segment your past website visitors (e.g., 'abandoned cart', 'viewed pricing') and serve them highly specific ads to pull them back into the sales funnel."
+          },
+          {
+            "step": 6,
+            "title": "Continuous Optimization",
+            "description": "We monitor performance daily, pausing underperforming creatives, excluding low-converting websites, and reallocating budget to the most profitable audiences."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is the difference between Google Search Ads and Display Ads?",
+            "answer": "Search ads appear when users actively type a query into Google (high intent). Display ads are visual banners shown on other websites while users are browsing (building awareness and demand)."
+          },
+          {
+            "question": "Do Display Ads actually convert?",
+            "answer": "For cold prospecting, Display ads have lower conversion rates than Search but are much cheaper. However, for Remarketing (showing ads to past visitors), Display ads are highly effective at driving conversions."
+          },
+          {
+            "question": "How do you prevent my ads from showing on spammy websites?",
+            "answer": "We proactively add extensive negative placement lists to block low-quality sites, mobile apps, and irrelevant YouTube channels, ensuring brand safety and budget efficiency."
+          },
+          {
+            "question": "Do I need to provide the banner designs?",
+            "answer": "No. Our in-house creative team designs all the necessary banners (both static and responsive formats) as part of our comprehensive management service."
+          },
+          {
+            "question": "What is Remarketing / Retargeting?",
+            "answer": "Remarketing uses a tracking cookie to 'follow' users who visited your website but didn't buy. We then show them your ads on other websites to remind them to come back and complete the purchase."
+          },
+          {
+            "question": "What are Responsive Display Ads (RDAs)?",
+            "answer": "RDAs are ads where we provide Google with various images, logos, and text headlines. Google's machine learning then mixes and matches them to fit perfectly into any available ad space on the network."
+          },
+          {
+            "question": "Are Display Ads good for B2B?",
+            "answer": "Yes, specifically for remarketing and targeted industry placements. We can show your ads on specific industry news websites or to users searching for B2B software solutions."
+          },
+          {
+            "question": "How do you measure success on the Display Network?",
+            "answer": "For remarketing, we measure direct conversions and CPA. For top-of-funnel prospecting campaigns, we measure View-Through Conversions, click-through rates (CTR), and overall brand lift."
+          }
+        ],
+        "technologies": [
+          { "icon": "googleads", "name": "Google Ads" },
+          { "icon": "analytics", "name": "Google Analytics 4" },
+          { "icon": "adobe", "name": "Adobe Photoshop / Illustrator" },
+          { "icon": "canva", "name": "Canva" },
+          { "icon": "html5", "name": "HTML5 Ad Builders" },
+          { "icon": "googlecloud", "name": "Looker Studio" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Google Görüntülü Reklam Ağı (GDN)",
+      "shortDescription": "Markanızı akıllarda tutun. Marka bilinirliği oluşturmak ve geçmiş ziyaretçileri yeniden hedeflemek için yüksek oranda hedeflenmiş Google Görüntülü Reklam kampanyaları tasarlıyor ve yürütüyoruz.",
+      "fullDescription": "Arama Ağı Reklamları niyeti (intent) yakalarken, Google Görüntülü Reklamlar (Display Ads) talep yaratır. İki milyondan fazla web sitesine, uygulamaya ve videoya erişimi olan Google Görüntülü Reklam Ağı (GDN), küresel internet kullanıcılarının %90'ına ulaşmanızı sağlar. Ancak, hassas hedefleme ve ilgi çekici yaratıcılık olmadan, görüntülü reklamcılık bütçenizi düşük kaliteli tıklamalarla hızla tüketebilir. Görüntülü Reklam hizmetimiz, stratejik yerleşimlere, kitle niyetine ve akıllı yeniden pazarlamaya odaklanır. Banner reklamlarınızın yalnızca son derece alakalı web sitelerinde görünmesini sağlamak için özel yakın ilgi alanı kitleleri, pazardaki segmentler ve bağlamsal yerleşimler gibi gelişmiş hedefleme seçeneklerinden yararlanıyoruz. Yaratıcı ekibimiz, dikkat çekici, duyarlı (responsive) görüntülü reklamlar tasarlar. Görüntülü Reklam kampanyalarını temel olarak marka bilinirliği oluşturmak ve en önemlisi dönüşüm sağlamamış web sitesi ziyaretçilerinizi satın almaya hazır olana kadar takip eden agresif yeniden pazarlama (remarketing) kampanyaları yürütmek için kullanırız.",
+      "features": [
+        "Özel Yakın İlgi Alanı ve Pazardaki Kitle Hedeflemesi",
+        "Akıllı Yeniden Pazarlama (Remarketing) Kampanyaları",
+        "Bağlamsal Web Sitesi Yerleşimi Hedeflemesi",
+        "Duyarlı Görüntülü Reklam (RDA) Oluşturma",
+        "HTML5 Animasyonlu Banner Reklam Tasarımı",
+        "Yerleşim Hariç Tutma ve Marka Güvenliği Filtreleme",
+        "Cihazlar Arası İzleme ve İlişkilendirme",
+        "Görseller ve Metinler için A/B Testi"
+      ],
+      "benefits": [
+        "Milyonlarca web sitesinde devasa, küresel bir kitleye ulaşın",
+        "Yeniden pazarlama ile dönüşüm sağlamamış ziyaretçileri sitenize geri getirin",
+        "Çok düşük bir Tıklama Başına Maliyetle (CPC) güçlü marka bilinirliği oluşturun",
+        "Kullanıcıları son tarama davranışlarına ve ilgi alanlarına göre hedefleyin",
+        "Kesin yerleşim hariç tutmaları ile marka imajınızı koruyun",
+        "İlk marka ilgisini yaratarak arama kampanyalarınızı destekleyin"
+      ],
+      "metaTitle": "Google Görüntülü Reklam Ajansı | GDN Reklamları | PakSoft",
+      "metaDescription": "Google Görüntülü Reklamlar ile marka bilinirliği oluşturun ve geçmiş ziyaretçileri yeniden hedefleyin. Yüksek dönüşümlü banner'lar tasarlıyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Kitle Stratejisi ve Hedefleme",
+            "description": "Özel yakın ilgi alanı kitleleri oluşturarak, rakip trafiğini analiz ederek ve katı demografik parametreler belirleyerek reklamlarınızı kimlerin görmesi gerektiğini tanımlıyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Yaratıcı Tasarım ve Metin Yazarlığı",
+            "description": "Tasarımcılarımız, Duyarlı Görüntülü Reklamlar (RDA) ve HTML5 formatları dahil olmak üzere, marka kimliğinize uygun görsel olarak ilgi çekici banner'lar oluşturur."
+          },
+          {
+            "step": 3,
+            "title": "Kampanya Yapılandırması",
+            "description": "Yeni kitleleri (prospecting) yeniden pazarlamadan (remarketing) ayırarak, hassas bütçe kontrolü ve farklı mesajlaşma sağlayan kampanyalar oluşturuyoruz."
+          },
+          {
+            "step": 4,
+            "title": "Yerleşim Denetimi ve Lansman",
+            "description": "Lansmandan önce, reklamlarınızın düşük kaliteli mobil oyunlarda, ilgisiz uygulamalarda veya güvenli olmayan içeriklerde görünmesini engellemek için katı negatif yerleşimler belirliyoruz."
+          },
+          {
+            "step": 5,
+            "title": "Yeniden Pazarlama (Remarketing) Uygulaması",
+            "description": "Geçmiş web sitesi ziyaretçilerinizi segmentlere ayırıyor (örneğin 'sepeti terk edenler') ve onları satış hunisine geri çekmek için son derece spesifik reklamlar sunuyoruz."
+          },
+          {
+            "step": 6,
+            "title": "Sürekli Optimizasyon",
+            "description": "Performansı günlük olarak izliyor, düşük performans gösteren görselleri duraklatıyor, düşük dönüşüm sağlayan web sitelerini hariç tutuyor ve bütçeyi en karlı kitlelere yeniden tahsis ediyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Google Arama Ağı Reklamları ile Görüntülü Reklamlar arasındaki fark nedir?",
+            "answer": "Arama ağı reklamları, kullanıcılar aktif olarak Google'a bir sorgu yazdıklarında (yüksek niyet) görünür. Görüntülü reklamlar, kullanıcılar gezinirken diğer web sitelerinde gösterilen görsel banner'lardır."
+          },
+          {
+            "question": "Görüntülü Reklamlar gerçekten dönüşüm sağlıyor mu?",
+            "answer": "Soğuk kitleler için Görüntülü reklamların dönüşüm oranları Arama Ağı'na göre daha düşüktür ancak çok daha ucuzdur. Ancak Yeniden Pazarlama (geçmiş ziyaretçilere gösterme) için oldukça etkilidir."
+          },
+          {
+            "question": "Reklamlarımın spam sitelerde görünmesini nasıl engelliyorsunuz?",
+            "answer": "Düşük kaliteli siteleri, mobil uygulamaları ve ilgisiz YouTube kanallarını engellemek için proaktif olarak kapsamlı negatif yerleşim listeleri ekliyoruz, marka güvenliğini sağlıyoruz."
+          },
+          {
+            "question": "Banner tasarımlarını benim mi sağlamam gerekiyor?",
+            "answer": "Hayır. Kurum içi yaratıcı ekibimiz, kapsamlı yönetim hizmetimizin bir parçası olarak gerekli tüm banner'ları (hem statik hem de duyarlı formatlarda) tasarlar."
+          },
+          {
+            "question": "Yeniden Pazarlama / Yeniden Hedefleme (Remarketing) nedir?",
+            "answer": "Yeniden pazarlama, web sitenizi ziyaret eden ancak satın almayan kullanıcıları 'takip etmek' için bir izleme çerezi kullanır. Geri dönmelerini hatırlatmak için diğer sitelerde reklam gösteririz."
+          },
+          {
+            "question": "Duyarlı Görüntülü Reklamlar (RDA) nedir?",
+            "answer": "Google'a çeşitli resimler, logolar ve metin başlıkları sağladığımız reklamlardır. Google'ın makine öğrenimi daha sonra bunları herhangi bir reklam alanına mükemmel şekilde sığdırmak için eşleştirir."
+          },
+          {
+            "question": "Görüntülü Reklamlar B2B için iyi midir?",
+            "answer": "Evet, özellikle yeniden pazarlama ve hedeflenmiş sektör yerleşimleri için. Reklamlarınızı belirli sektörel haber sitelerinde veya B2B yazılım çözümleri arayan kullanıcılara gösterebiliriz."
+          },
+          {
+            "question": "Görüntülü Reklam Ağı'nda başarıyı nasıl ölçüyorsunuz?",
+            "answer": "Yeniden pazarlama için doğrudan dönüşümleri ve CPA'yı ölçüyoruz. Huni üstü kampanyalar için Görüntüleme Dönüşümlerini (View-Through), tıklama oranlarını (CTR) ve genel marka bilinirliğini ölçüyoruz."
+          }
+        ],
+        "technologies": [
+          { "icon": "googleads", "name": "Google Ads" },
+          { "icon": "analytics", "name": "Google Analytics 4" },
+          { "icon": "adobe", "name": "Adobe Photoshop / Illustrator" },
+          { "icon": "canva", "name": "Canva" },
+          { "icon": "html5", "name": "HTML5 Ad Builders" },
+          { "icon": "googlecloud", "name": "Looker Studio" }
+        ]
+      }
+    },
+    "de": {
+      "name": "Google Display Ads",
+      "shortDescription": "Bleiben Sie im Gedächtnis. Wir entwerfen und führen zielgerichtete Google Display Network-Kampagnen durch, um Markenbekanntheit aufzubauen und Besucher erneut anzusprechen.",
+      "fullDescription": "Während Suchanzeigen die Kaufabsicht erfassen, schaffen Google Display Ads Nachfrage. Mit Zugang zu über zwei Millionen Websites und Apps ermöglicht das Google Display Network (GDN), 90 % der globalen Internetnutzer zu erreichen. Ohne präzises Targeting verbrennt Display-Werbung jedoch schnell Ihr Budget durch Klicks geringer Qualität. Unser Service konzentriert sich auf strategische Platzierungen und intelligentes Remarketing. Wir nutzen erweiterte Targeting-Optionen wie kaufbereite Zielgruppen und kontextbezogene Platzierungen, damit Ihre Banner nur auf relevanten Websites erscheinen. Unser Kreativteam entwirft ansprechende, responsive Display-Anzeigen, die Aufmerksamkeit erregen. Wir nutzen Display-Kampagnen primär zum Aufbau von Markenbewusstsein und für aggressive Remarketing-Kampagnen, die unkonvertierte Besucher zurückholen.",
+      "features": [
+        "Zielgruppen mit gemeinsamen Interessen & kaufbereite Zielgruppen",
+        "Intelligente Remarketing- & Retargeting-Kampagnen",
+        "Kontextbezogenes Targeting von Website-Platzierungen",
+        "Erstellung responsiver Display-Anzeigen (RDA)",
+        "Design von HTML5-animierten Banner-Anzeigen",
+        "Ausschluss von Platzierungen & Markensicherheit",
+        "Geräteübergreifendes Tracking & Attribution",
+        "A/B-Testing für Bilder und Texte"
+      ],
+      "benefits": [
+        "Erreichen Sie ein riesiges, globales Publikum auf Millionen von Websites",
+        "Bringen Sie unkonvertierte Besucher durch Remarketing zurück auf Ihre Seite",
+        "Bauen Sie starke Markenbekanntheit zu sehr niedrigen Klickpreisen (CPC) auf",
+        "Sprechen Sie Nutzer basierend auf ihrem Surfverhalten und ihren Interessen an",
+        "Schützen Sie Ihr Markenimage durch strikte Ausschlüsse von Platzierungen",
+        "Unterstützen Sie Ihre Suchkampagnen durch Generierung von Markeninteresse"
+      ],
+      "metaTitle": "Google Display Ads Agentur | GDN Marketing | PakSoft",
+      "metaDescription": "Bauen Sie Markenbekanntheit auf und retargeten Sie Besucher mit Google Display Ads. Wir verwalten GDN-Kampagnen mit hohem ROI.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Zielgruppenstrategie & Targeting",
+            "description": "Wir definieren, wer Ihre Anzeigen sehen soll, indem wir benutzerdefinierte Zielgruppen aufbauen und Konkurrenz-Traffic analysieren."
+          },
+          {
+            "step": 2,
+            "title": "Creative Design & Copywriting",
+            "description": "Unsere Designer erstellen visuell überzeugende Banner, einschließlich RDAs und HTML5-Formaten, die zu Ihrer Marke passen."
+          },
+          {
+            "step": 3,
+            "title": "Kampagnenstrukturierung",
+            "description": "Wir trennen Kampagnen zur Neukundengewinnung (Prospecting) strikt vom Remarketing, was präzise Budgetkontrolle ermöglicht."
+          },
+          {
+            "step": 4,
+            "title": "Platzierungs-Audit & Launch",
+            "description": "Vor dem Start schließen wir minderwertige mobile Apps, irrelevante Websites und unsichere Inhalte proaktiv aus."
+          },
+          {
+            "step": 5,
+            "title": "Remarketing-Implementierung",
+            "description": "Wir segmentieren frühere Website-Besucher (z. B. 'Warenkorbabbrecher') und zeigen ihnen gezielte Anzeigen, um sie zurückzuholen."
+          },
+          {
+            "step": 6,
+            "title": "Kontinuierliche Optimierung",
+            "description": "Wir überwachen die Leistung täglich, pausieren leistungsschwache Creatives und verlagern das Budget auf profitable Zielgruppen."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Was ist der Unterschied zwischen Such- und Display-Anzeigen?",
+            "answer": "Suchanzeigen erscheinen, wenn Nutzer aktiv in Google suchen (hohe Absicht). Display-Anzeigen sind visuelle Banner auf anderen Websites."
+          },
+          {
+            "question": "Konvertieren Display-Anzeigen wirklich?",
+            "answer": "Für die Neukundengewinnung sind die Konversionsraten niedriger als bei der Suche, aber viel billiger. Für Remarketing sind sie hochgradig effektiv."
+          },
+          {
+            "question": "Wie verhindern Sie, dass meine Anzeigen auf Spam-Websites erscheinen?",
+            "answer": "Wir fügen proaktiv umfangreiche Listen mit negativen Platzierungen hinzu, um minderwertige Sites und mobile Spiele-Apps zu blockieren."
+          },
+          {
+            "question": "Muss ich die Banner-Designs bereitstellen?",
+            "answer": "Nein. Unser Inhouse-Kreativteam entwirft alle notwendigen Banner (statisch und responsiv) als Teil unseres Management-Services."
+          },
+          {
+            "question": "Was ist Remarketing / Retargeting?",
+            "answer": "Wir verfolgen Besucher, die nicht gekauft haben, mit einem Cookie. Anschließend zeigen wir ihnen Anzeigen auf anderen Websites, um sie an den Kauf zu erinnern."
+          },
+          {
+            "question": "Was sind responsive Display-Anzeigen (RDAs)?",
+            "answer": "Wir stellen Google Bilder, Logos und Texte zur Verfügung. Googles KI mischt sie, um sie perfekt an jeden verfügbaren Werbeplatz im Netzwerk anzupassen."
+          },
+          {
+            "question": "Sind Display-Anzeigen gut für B2B?",
+            "answer": "Ja, insbesondere für Remarketing und gezielte Branchenplatzierungen (z. B. auf spezifischen B2B-Nachrichten-Websites)."
+          },
+          {
+            "question": "Wie messen Sie den Erfolg im Display-Netzwerk?",
+            "answer": "Beim Remarketing messen wir direkte Conversions und CPA. Bei Prospecting-Kampagnen messen wir View-Through-Conversions, Klickraten (CTR) und den Brand Lift."
+          }
+        ],
+        "technologies": [
+          { "icon": "googleads", "name": "Google Ads" },
+          { "icon": "analytics", "name": "Google Analytics 4" },
+          { "icon": "adobe", "name": "Adobe Photoshop / Illustrator" },
+          { "icon": "canva", "name": "Canva" },
+          { "icon": "html5", "name": "HTML5 Ad Builders" },
+          { "icon": "googlecloud", "name": "Looker Studio" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "گوگل ڈسپلے ایڈز",
+      "shortDescription": "اپنے برانڈ کو یادگار بنائیں۔ ہم برانڈ بیداری پیدا کرنے اور ماضی کے زائرین کو دوبارہ ہدف بنانے کے لیے انتہائی ٹارگٹڈ گوگل ڈسپلے نیٹ ورک مہمات ڈیزائن کرتے ہیں۔",
+      "fullDescription": "جبکہ سرچ اشتہارات ارادے (intent) کو اپنی گرفت میں لیتے ہیں، گوگل ڈسپلے ایڈز طلب (demand) پیدا کرتے ہیں۔ 20 لاکھ سے زائد ویب سائٹس اور ایپس تک رسائی کے ساتھ، گوگل ڈسپلے نیٹ ورک (GDN) آپ کو عالمی انٹرنیٹ صارفین کے 90% تک پہنچنے کی اجازت دیتا ہے۔ تاہم، درست ہدف بندی اور زبردست تخلیقی اشتہارات کے بغیر، ڈسپلے ایڈورٹائزنگ آپ کا بجٹ تیزی سے ضائع کر سکتی ہے۔ ہماری ڈسپلے ایڈز کی سروس اسٹریٹجک پلیسمنٹس، سامعین کے ارادے، اور ذہین ری مارکیٹنگ پر مرکوز ہے۔ ہم اعلیٰ ہدف بندی کے آپشنز استعمال کرتے ہیں—جیسے حسب ضرورت وابستگی والے سامعین اور سیاق و سباق کی جگہوں کا انتخاب—تاکہ یہ یقینی بنایا جا سکے کہ آپ کے بینر اشتہارات صرف انتہائی متعلقہ ویب سائٹس پر ظاہر ہوں۔ ہماری تخلیقی ٹیم دلکش ڈسپلے اشتہارات ڈیزائن کرتی ہے۔ ہم ڈسپلے مہمات کا استعمال بنیادی طور پر ری مارکیٹنگ کے لیے کرتے ہیں، تاکہ ان زائرین کا پیچھا کیا جا سکے جنہوں نے خریداری نہیں کی۔",
+      "features": [
+        "حسب ضرورت وابستگی اور ان مارکیٹ آڈینس ٹارگٹنگ",
+        "ذہین ری مارکیٹنگ اور ری ٹارگٹنگ مہمات",
+        "سیاق و سباق کے لحاظ سے ویب سائٹ کی جگہ کا ہدف",
+        "ریسپانسیو ڈسپلے ایڈ (RDA) کی تخلیق",
+        "HTML5 اینیمیٹڈ بینر اشتہار کا ڈیزائن",
+        "پلیسمنٹ کا استثنیٰ اور برانڈ سیفٹی فلٹرنگ",
+        "کراس ڈیوائس ٹریکنگ اور ایٹریبیوشن",
+        "بصری اور کاپی کے لیے A/B ٹیسٹنگ"
+      ],
+      "benefits": [
+        "لاکھوں ویب سائٹس پر ایک بڑے، عالمی سامعین تک پہنچیں",
+        "ری مارکیٹنگ کے ذریعے غیر خریدار زائرین کو اپنی سائٹ پر واپس لائیں",
+        "بہت کم قیمت فی کلک (CPC) پر مضبوط برانڈ بیداری پیدا کریں",
+        "صارفین کی براؤزنگ کی عادات اور دلچسپیوں کی بنیاد پر انہیں نشانہ بنائیں",
+        "سخت پلیسمنٹ استثنیٰ کے ساتھ اپنے برانڈ کے تشخص کی حفاظت کریں",
+        "ابتدائی برانڈ کی دلچسپی پیدا کرکے اپنی سرچ مہمات کی حمایت کریں"
+      ],
+      "metaTitle": "گوگل ڈسپلے ایڈز ایجنسی | GDN مارکیٹنگ | PakSoft",
+      "metaDescription": "گوگل ڈسپلے اشتہارات کے ساتھ برانڈ کی بیداری پیدا کریں اور پچھلے زائرین کو دوبارہ ہدف بنائیں۔ ہم شاندار بینرز ڈیزائن کرتے ہیں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "سامعین کی حکمت عملی اور ہدف بندی",
+            "description": "ہم حریفوں کی ٹریفک کا تجزیہ کر کے، اور سخت آبادیاتی پیرامیٹرز کی وضاحت کر کے اس بات کا تعین کرتے ہیں کہ آپ کے اشتہارات کسے دیکھنے چاہئیں۔"
+          },
+          {
+            "step": 2,
+            "title": "تخلیقی ڈیزائن اور کاپی رائٹنگ",
+            "description": "ہمارے ڈیزائنرز آپ کی برانڈ شناخت کے مطابق، ریسپانسیو ڈسپلے ایڈز (RDAs) اور HTML5 فارمیٹس سمیت بصری طور پر دلکش بینرز بناتے ہیں۔"
+          },
+          {
+            "step": 3,
+            "title": "مہم کی ساخت",
+            "description": "ہم پروسپیکٹنگ (نئے سامعین) کو ری مارکیٹنگ سے الگ کر کے مہمات بناتے ہیں، جس سے بجٹ کا درست کنٹرول ممکن ہوتا ہے۔"
+          },
+          {
+            "step": 4,
+            "title": "پلیسمنٹ کا آڈٹ اور لانچ",
+            "description": "لانچ سے پہلے، ہم آپ کے اشتہارات کو کم معیار کی ایپس یا غیر متعلقہ ویب سائٹس پر دکھانے سے روکنے کے لیے منفی جگہیں مقرر کرتے ہیں۔"
+          },
+          {
+            "step": 5,
+            "title": "ری مارکیٹنگ کا نفاذ",
+            "description": "ہم آپ کی ویب سائٹ کے ماضی کے زائرین کو تقسیم کرتے ہیں (جیسے 'کارٹ چھوڑنے والے') اور انہیں سیلز فنل میں واپس کھینچنے کے لیے مخصوص اشتہارات دکھاتے ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "مسلسل آپٹیمائزیشن",
+            "description": "ہم روزانہ کی بنیاد پر کارکردگی کی نگرانی کرتے ہیں، کمزور کارکردگی والے اشتہارات کو روکتے ہیں، اور بجٹ کو سب سے زیادہ منافع بخش سامعین کے لیے مختص کرتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "گوگل سرچ ایڈز اور ڈسپلے ایڈز میں کیا فرق ہے؟",
+            "answer": "سرچ اشتہارات اس وقت ظاہر ہوتے ہیں جب صارفین گوگل میں کچھ تلاش کرتے ہیں (اعلی ارادہ)۔ ڈسپلے اشتہارات بصری بینرز ہیں جو براؤزنگ کے دوران دوسری ویب سائٹس پر دکھائے جاتے ہیں۔"
+          },
+          {
+            "question": "کیا ڈسپلے ایڈز واقعی کام کرتے ہیں؟",
+            "answer": "نئے لوگوں کے لیے، ڈسپلے اشتہارات میں تبادلوں کی شرح سرچ سے کم ہوتی ہے لیکن یہ بہت سستے ہوتے ہیں۔ تاہم، ری مارکیٹنگ کے لیے یہ انتہائی موثر ہیں۔"
+          },
+          {
+            "question": "آپ میرے اشتہارات کو سپیم ویب سائٹس پر دکھانے سے کیسے روکتے ہیں؟",
+            "answer": "ہم کم معیار کی سائٹس اور غیر متعلقہ ایپس کو بلاک کرنے کے لیے وسیع منفی پلیسمنٹ فہرستیں شامل کرتے ہیں، تاکہ برانڈ محفوظ رہے۔"
+          },
+          {
+            "question": "کیا مجھے بینر کے ڈیزائن فراہم کرنے کی ضرورت ہے؟",
+            "answer": "نہیں۔ ہماری اندرون خانہ تخلیقی ٹیم ہماری جامع انتظامی سروس کے حصے کے طور پر تمام ضروری بینرز خود ڈیزائن کرتی ہے۔"
+          },
+          {
+            "question": "ری مارکیٹنگ / ری ٹارگٹنگ کیا ہے؟",
+            "answer": "ری مارکیٹنگ ان صارفین کا پیچھا کرنے کے لیے ٹریکنگ کوکی کا استعمال کرتی ہے جنہوں نے خریداری کے بغیر سائٹ چھوڑ دی۔ ہم انہیں خریداری مکمل کرنے کی یاد دہانی کے لیے دوسری سائٹس پر اشتہارات دکھاتے ہیں۔"
+          },
+          {
+            "question": "ریسپانسیو ڈسپلے ایڈز (RDAs) کیا ہیں؟",
+            "answer": "یہ وہ اشتہارات ہیں جہاں ہم گوگل کو مختلف تصاویر، لوگو اور متن فراہم کرتے ہیں۔ گوگل کا سسٹم پھر انہیں نیٹ ورک پر دستیاب کسی بھی اشتہاری جگہ میں بالکل فٹ ہونے کے لیے ملا دیتا ہے۔"
+          },
+          {
+            "question": "کیا ڈسپلے ایڈز B2B کے لیے اچھے ہیں؟",
+            "answer": "ہاں، خاص طور پر ری مارکیٹنگ اور مخصوص صنعتوں کی جگہوں کے لیے۔ ہم مخصوص B2B نیوز سائٹس پر آپ کے اشتہارات دکھا سکتے ہیں۔"
+          },
+          {
+            "question": "آپ ڈسپلے نیٹ ورک پر کامیابی کو کیسے ماپتے ہیں؟",
+            "answer": "ری مارکیٹنگ کے لیے، ہم براہ راست فروخت اور CPA کی پیمائش کرتے ہیں۔ برانڈ آگاہی مہمات کے لیے، ہم کلک تھرو ریٹس (CTR) اور مجموعی برانڈ لفٹ کی پیمائش کرتے ہیں۔"
+          }
+        ],
+        "technologies": [
+          { "icon": "googleads", "name": "Google Ads" },
+          { "icon": "analytics", "name": "Google Analytics 4" },
+          { "icon": "adobe", "name": "Adobe Photoshop / Illustrator" },
+          { "icon": "canva", "name": "Canva" },
+          { "icon": "html5", "name": "HTML5 Ad Builders" },
+          { "icon": "googlecloud", "name": "Looker Studio" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "إعلانات جوجل الصورية (Display Ads)",
+      "shortDescription": "ابق علامتك التجارية في أذهان العملاء. نقوم بتصميم وتنفيذ حملات إعلانية صورية عالية الاستهداف لبناء الوعي بالعلامة وإعادة استهداف الزوار السابقين.",
+      "fullDescription": "بينما تلتقط إعلانات البحث نية المستخدم، تخلق إعلانات جوجل الصورية (Display Ads) الطلب. مع إمكانية الوصول إلى أكثر من مليوني موقع ويب وتطبيق ومقطع فيديو، تتيح لك شبكة Google الإعلانية (GDN) الوصول إلى 90٪ من مستخدمي الإنترنت. ومع ذلك، بدون استهداف دقيق وتصميم جذاب، يمكن أن تستنزف الإعلانات الصورية ميزانيتك بنقرات منخفضة الجودة. تركز خدمة الإعلانات الصورية لدينا على المواضع الاستراتيجية ونية الجمهور وتجديد النشاط التسويقي (Remarketing) الذكي. نحن نستخدم خيارات استهداف متقدمة للتأكد من ظهور إعلانات البانر الخاصة بك فقط على مواقع الويب ذات الصلة. يصمم فريقنا الإبداعي إعلانات صورية متجاوبة ومذهلة تجذب الانتباه. نحن نستخدم الحملات الصورية بشكل أساسي لبناء الوعي بالعلامة التجارية، والأهم من ذلك، لتنفيذ حملات إعادة استهداف تتبع زوار موقع الويب الخاص بك الذين لم يجروا تحويلاً، لإبقائك في أذهانهم.",
+      "features": [
+        "الاستهداف المخصص للجمهور والاهتمامات",
+        "حملات إعادة الاستهداف وتجديد النشاط التسويقي",
+        "استهداف مواضع مواقع الويب السياقية",
+        "إنشاء إعلانات صورية متجاوبة (RDA)",
+        "تصميم إعلانات البانر المتحركة HTML5",
+        "استبعاد المواضع وفلترة سلامة العلامة التجارية",
+        "التتبع والإسناد عبر الأجهزة",
+        "اختبار A/B للصور والنصوص"
+      ],
+      "benefits": [
+        "الوصول إلى جمهور عالمي ضخم عبر ملايين المواقع",
+        "إعادة الزوار الذين لم يشتروا إلى موقعك عبر إعادة الاستهداف",
+        "بناء وعي قوي بالعلامة بتكلفة نقرة (CPC) منخفضة جداً",
+        "استهداف المستخدمين بناءً على سلوك التصفح الأخير واهتماماتهم",
+        "حماية صورة علامتك باستبعادات صارمة للمواضع غير المرغوبة",
+        "دعم حملات البحث الخاصة بك عن طريق توليد اهتمام أولي"
+      ],
+      "metaTitle": "وكالة إعلانات جوجل الصورية | شبكة GDN | PakSoft",
+      "metaDescription": "قم ببناء الوعي بالعلامة التجارية وإعادة استهداف الزوار باستخدام إعلانات جوجل الصورية. نحن نصمم لافتات مذهلة وندير حملات GDN عالية العائد.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "استراتيجية الجمهور والاستهداف",
+            "description": "نحدد من يجب أن يرى إعلاناتك من خلال بناء جماهير مخصصة، وتحليل حركة مرور منافسيك، وتحديد معلمات ديموغرافية صارمة."
+          },
+          {
+            "step": 2,
+            "title": "التصميم الإبداعي وكتابة الإعلانات",
+            "description": "ينشئ المصممون لدينا مجموعة من اللافتات الجذابة بصرياً، بما في ذلك الإعلانات المتجاوبة (RDA) وتنسيقات HTML5، المصممة لهويتك."
+          },
+          {
+            "step": 3,
+            "title": "هيكلة الحملة",
+            "description": "نبني حملات تفصل بين التنقيب (جماهير جديدة) وبين تجديد النشاط التسويقي، مما يسمح بالتحكم الدقيق في الميزانية."
+          },
+          {
+            "step": 4,
+            "title": "تدقيق المواضع والإطلاق",
+            "description": "قبل الإطلاق، نضع مواضع سلبية صارمة لمنع ظهور إعلاناتك في ألعاب الجوال منخفضة الجودة أو التطبيقات غير ذات الصلة."
+          },
+          {
+            "step": 5,
+            "title": "تنفيذ تجديد النشاط التسويقي (Remarketing)",
+            "description": "نقوم بتقسيم زوار موقعك السابقين (مثل متاركي سلة التسوق) ونقدم لهم إعلانات محددة للغاية لسحبهم مرة أخرى إلى مسار المبيعات."
+          },
+          {
+            "step": 6,
+            "title": "التحسين المستمر",
+            "description": "نراقب الأداء يومياً، ونوقف التصميمات ذات الأداء الضعيف، ونستبعد المواقع منخفضة التحويل، ونعيد تخصيص الميزانية للجماهير الأكثر ربحية."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما الفرق بين إعلانات بحث جوجل والإعلانات الصورية؟",
+            "answer": "تظهر إعلانات البحث عندما يكتب المستخدمون استعلاماً في جوجل (نية عالية). الإعلانات الصورية هي لافتات مرئية تظهر على مواقع الويب الأخرى لبناء الوعي."
+          },
+          {
+            "question": "هل الإعلانات الصورية تحقق تحويلات (مبيعات) بالفعل؟",
+            "answer": "للتنقيب عن عملاء جدد، تمتلك الإعلانات الصورية معدلات تحويل أقل من البحث ولكنها أرخص. ومع ذلك، في إعادة الاستهداف، تكون فعالة للغاية في تحقيق التحويلات."
+          },
+          {
+            "question": "كيف تمنع ظهور إعلاناتي على المواقع غير المرغوب فيها؟",
+            "answer": "نضيف بشكل استباقي قوائم استبعاد واسعة النطاق لحظر المواقع ذات الجودة المنخفضة وتطبيقات الجوال غير ذات الصلة، لضمان سلامة العلامة."
+          },
+          {
+            "question": "هل أحتاج إلى توفير تصميمات البانر؟",
+            "answer": "لا. يقوم فريقنا الإبداعي بتصميم جميع اللافتات الضرورية (الثابتة والمتجاوبة) كجزء من خدمة الإدارة الشاملة لدينا."
+          },
+          {
+            "question": "ما هو تجديد النشاط التسويقي / إعادة الاستهداف؟",
+            "answer": "يستخدم تتبع الزوار الذين زاروا موقعك ولم يشتروا. ثم نعرض لهم إعلاناتك على مواقع أخرى لتذكيرهم بالعودة وإكمال الشراء."
+          },
+          {
+            "question": "ما هي الإعلانات الصورية المتجاوبة (RDAs)؟",
+            "answer": "هي إعلانات نوفر فيها لجوجل صوراً وشعارات وعناوين نصية متنوعة. يمزج التعلم الآلي من جوجل بينها لتناسب أي مساحة إعلانية متاحة بشكل مثالي."
+          },
+          {
+            "question": "هل الإعلانات الصورية جيدة لشركات B2B؟",
+            "answer": "نعم، خاصة لإعادة الاستهداف ومواضع الصناعة المستهدفة. يمكننا إظهار إعلاناتك على مواقع إخبارية صناعية محددة للوصول إلى جمهور الأعمال."
+          },
+          {
+            "question": "كيف تقيس النجاح على الشبكة الإعلانية؟",
+            "answer": "بالنسبة لإعادة الاستهداف، نقيس التحويلات المباشرة وتكلفة الاكتساب (CPA). بالنسبة لحملات الوعي، نقيس التحويلات من خلال العرض، ومعدلات النقر (CTR)."
+          }
+        ],
+        "technologies": [
+          { "icon": "googleads", "name": "Google Ads" },
+          { "icon": "analytics", "name": "Google Analytics 4" },
+          { "icon": "adobe", "name": "Adobe Photoshop / Illustrator" },
+          { "icon": "canva", "name": "Canva" },
+          { "icon": "html5", "name": "HTML5 Ad Builders" },
+          { "icon": "googlecloud", "name": "Looker Studio" }
+        ]
+      }
+    }
+  },
+  "google-search-ads": {
+    "en": {
+      "name": "Google Search Ads",
+      "shortDescription": "Capture prospects at the exact moment they are searching for your services. We build high-ROI Google Search campaigns that dominate top search results.",
+      "fullDescription": "When someone searches for your product or service on Google, they are already at the bottom of the funnel—they have a problem and are actively looking for a solution. If you aren't bidding on those keywords, your competitors are stealing your revenue. However, simply throwing money at Google Ads without an optimized structure guarantees wasted ad spend. Our Google Search Ads management is obsessed with ROI. We conduct exhaustive keyword research to identify high-intent, long-tail search terms while aggressively pruning wasted spend using expansive negative keyword lists. We structure your campaigns mathematically, aligning highly relevant ad copy with dedicated landing pages to boost your Quality Score and lower your Cost Per Click (CPC). By leveraging advanced smart bidding strategies and rigorous A/B testing, we ensure every dollar spent drives qualified, conversion-ready traffic to your business.",
+      "features": [
+        "High-Intent Keyword Research & Strategy",
+        "Aggressive Negative Keyword Management",
+        "Ad Copywriting & A/B Split Testing",
+        "Quality Score & Landing Page Optimization",
+        "Smart Bidding Algorithm Configuration",
+        "Comprehensive Ad Extensions Setup",
+        "Competitor Conquesting Campaigns",
+        "Conversion Tracking & ROAS Attribution"
+      ],
+      "benefits": [
+        "Appear at the very top of Google instantly for your most valuable keywords",
+        "Capture users who have a high intent to buy right now",
+        "Stop wasting budget on irrelevant clicks with strict negative keywords",
+        "Lower your Cost Per Click (CPC) through Quality Score optimization",
+        "Outrank your competitors, even if they have larger budgets",
+        "Know exactly how much revenue every advertising dollar generates"
+      ],
+      "metaTitle": "Google Search Ads Agency | PPC Management | PakSoft",
+      "metaDescription": "Dominate search results with high-ROI Google Search Ads. We optimize keywords, ad copy, and bidding strategies to lower your CPC and drive sales.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Discovery & Keyword Research",
+            "description": "We dive deep into your industry to discover the exact terms your customers use. We focus on high-intent, bottom-of-funnel keywords that signal a readiness to buy."
+          },
+          {
+            "step": 2,
+            "title": "Campaign & Ad Group Structuring",
+            "description": "We build highly granular account structures (like SKAGs or STAGs) ensuring that the search query precisely matches the ad copy and the landing page experience."
+          },
+          {
+            "step": 3,
+            "title": "Persuasive Ad Copywriting",
+            "description": "Our copywriters craft compelling headlines and descriptions that highlight your unique selling propositions, include strong CTAs, and utilize all available ad extensions."
+          },
+          {
+            "step": 4,
+            "title": "Tracking & Attribution Setup",
+            "description": "We implement bulletproof tracking via Google Tag Manager to ensure every lead, phone call, or ecommerce purchase is perfectly attributed to the correct keyword."
+          },
+          {
+            "step": 5,
+            "title": "Launch & Smart Bidding",
+            "description": "We launch the campaigns and feed accurate conversion data into Google's Smart Bidding algorithms (tCPA, tROAS) to automate bid optimization in real-time."
+          },
+          {
+            "step": 6,
+            "title": "Ongoing Pruning & Optimization",
+            "description": "We review search term reports daily to add negative keywords, pause underperforming ads, and continually test new copy to improve click-through and conversion rates."
+          }
+        ],
+        "faq": [
+          {
+            "question": "How long does it take to see results with Google Search Ads?",
+            "answer": "Unlike SEO, which takes months, Google Ads can generate traffic and leads within 24 hours of launching. However, it takes 2-4 weeks of optimization to dial in a highly profitable CPA."
+          },
+          {
+            "question": "Why is my current Google Ads campaign losing money?",
+            "answer": "Most self-managed accounts lose money due to broad match keywords, lack of negative keywords, poor tracking, and directing paid traffic to generic homepages instead of dedicated landing pages."
+          },
+          {
+            "question": "What is a Quality Score and why does it matter?",
+            "answer": "Quality Score is Google's rating of the relevance of your keywords, ad copy, and landing page. A higher Quality Score allows you to pay less per click and still outrank competitors bidding more."
+          },
+          {
+            "question": "Should I bid on my competitor's names?",
+            "answer": "Yes, 'competitor conquesting' is highly effective. If someone is searching for your competitor, they are in the market for your service. We can show them an ad explaining why you are the better choice."
+          },
+          {
+            "question": "Do I need a new landing page for my ads?",
+            "answer": "In 90% of cases, yes. Sending paid traffic to a generic homepage drastically lowers conversion rates. We highly recommend dedicated, conversion-optimized landing pages matching the ad's intent."
+          },
+          {
+            "question": "How do you stop bots and click fraud?",
+            "answer": "We utilize IP exclusion lists, monitor suspicious behavior patterns, and can integrate third-party click fraud protection software to ensure you only pay for real human traffic."
+          },
+          {
+            "question": "What budget do you recommend starting with?",
+            "answer": "This depends heavily on your industry's CPC. However, we generally recommend a minimum ad spend of $2,000/month to generate enough click data for the algorithm to optimize properly."
+          },
+          {
+            "question": "Do you use automation or manage bids manually?",
+            "answer": "We use a hybrid approach. We manually structure the account and control negative keywords, but we leverage Google's machine-learning Smart Bidding (tCPA/tROAS) for real-time bid adjustments."
+          }
+        ],
+        "technologies": [
+          { "icon": "googleads", "name": "Google Ads" },
+          { "icon": "analytics", "name": "Google Analytics 4" },
+          { "icon": "googlecloud", "name": "Google Tag Manager" },
+          { "icon": "python", "name": "Optmyzr" },
+          { "icon": "search", "name": "SpyFu / Semrush" },
+          { "icon": "unbounce", "name": "Unbounce" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Google Arama Ağı Reklamları",
+      "shortDescription": "Tam olarak hizmetlerinizi aradıkları anda potansiyel müşterileri yakalayın. En üst arama sonuçlarını domine eden yüksek yatırım getirili (ROI) Google Arama kampanyaları oluşturuyoruz.",
+      "fullDescription": "Birisi Google'da ürününüzü veya hizmetinizi aradığında, zaten dönüşüm hunisinin en altındadır; bir sorunu vardır ve aktif olarak bir çözüm aramaktadır. Bu anahtar kelimelere teklif vermiyorsanız, rakipleriniz gelirinizi çalıyor demektir. Ancak, optimize edilmiş bir yapı olmadan Google Ads'e sadece para atmak, reklam harcamalarının israf edilmesini garanti eder. Google Arama Ağı Reklamları yönetimimiz ROI odaklıdır. Geniş kapsamlı negatif anahtar kelime listeleri kullanarak boşa harcanan harcamaları agresif bir şekilde budarken, yüksek niyetli, uzun kuyruklu (long-tail) arama terimlerini belirlemek için kapsamlı anahtar kelime araştırması yapıyoruz. Kalite Puanınızı (Quality Score) artırmak ve Tıklama Başına Maliyetinizi (CPC) düşürmek için son derece alakalı reklam metinlerini özel açılış sayfalarıyla eşleştirerek kampanyalarınızı matematiksel olarak yapılandırıyoruz. Gelişmiş akıllı teklif stratejilerinden ve titiz A/B testlerinden yararlanarak, harcanan her kuruşun işletmenize nitelikli, dönüşüme hazır trafik çekmesini sağlıyoruz.",
+      "features": [
+        "Yüksek Niyetli Anahtar Kelime Araştırması ve Stratejisi",
+        "Agresif Negatif Anahtar Kelime Yönetimi",
+        "Reklam Metin Yazarlığı ve A/B Bölünmüş (Split) Testi",
+        "Kalite Puanı ve Açılış Sayfası Optimizasyonu",
+        "Akıllı Teklif Verme (Smart Bidding) Algoritma Yapılandırması",
+        "Kapsamlı Reklam Uzantıları Kurulumu",
+        "Rakip Hedefleme (Conquesting) Kampanyaları",
+        "Dönüşüm İzleme ve ROAS İlişkilendirmesi"
+      ],
+      "benefits": [
+        "En değerli anahtar kelimeleriniz için anında Google'ın en üstünde görünün",
+        "Şu anda satın alma niyeti yüksek olan kullanıcıları yakalayın",
+        "Sıkı negatif anahtar kelimelerle ilgisiz tıklamalara bütçe harcamayı bırakın",
+        "Kalite Puanı optimizasyonu ile Tıklama Başına Maliyetinizi (CPC) düşürün",
+        "Daha büyük bütçeleri olsa bile rakiplerinizi geride bırakın",
+        "Harcanan her reklam lirasının tam olarak ne kadar gelir sağladığını bilin"
+      ],
+      "metaTitle": "Google Arama Ağı Reklam Ajansı | PPC Yönetimi | PakSoft",
+      "metaDescription": "Yüksek ROI sağlayan Google Arama Ağı Reklamları ile arama sonuçlarını domine edin. CPC'nizi düşürmek ve satışları artırmak için anahtar kelimeleri ve metinleri optimize ediyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Keşif ve Anahtar Kelime Araştırması",
+            "description": "Müşterilerinizin kullandığı tam terimleri keşfetmek için sektörünüzün derinliklerine iniyoruz. Satın almaya hazır olunduğunu gösteren yüksek niyetli anahtar kelimelere odaklanıyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Kampanya ve Reklam Grubu Yapılandırması",
+            "description": "Arama sorgusunun reklam metni ve açılış sayfası deneyimiyle tam olarak eşleşmesini sağlayan son derece ayrıntılı hesap yapıları kuruyoruz."
+          },
+          {
+            "step": 3,
+            "title": "İkna Edici Reklam Metin Yazarlığı",
+            "description": "Metin yazarlarımız, benzersiz satış tekliflerinizi (USP) vurgulayan, güçlü eylem çağrıları içeren ve tüm kullanılabilir reklam uzantılarını kullanan ikna edici başlıklar ve açıklamalar hazırlar."
+          },
+          {
+            "step": 4,
+            "title": "İzleme ve İlişkilendirme Kurulumu",
+            "description": "Her potansiyel müşterinin, telefon görüşmesinin veya e-ticaret satın alımının doğru anahtar kelimeyle mükemmel bir şekilde ilişkilendirilmesini sağlamak için Google Etiket Yöneticisi aracılığıyla kusursuz izleme uyguluyoruz."
+          },
+          {
+            "step": 5,
+            "title": "Lansman ve Akıllı Teklif Verme",
+            "description": "Gerçek zamanlı teklif optimizasyonunu otomatikleştirmek için kampanyaları başlatıyor ve Google'ın Akıllı Teklif (Hedef EBM, Hedef ROAS) algoritmalarını doğru dönüşüm verileriyle besliyoruz."
+          },
+          {
+            "step": 6,
+            "title": "Sürekli Budama ve Optimizasyon",
+            "description": "Negatif anahtar kelimeler eklemek, düşük performans gösteren reklamları duraklatmak ve tıklama ve dönüşüm oranlarını iyileştirmek üzere sürekli yeni metinler test etmek için arama terimleri raporlarını günlük olarak inceliyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Google Arama Ağı Reklamları ile sonuçları görmek ne kadar sürer?",
+            "answer": "Aylar süren SEO'nun aksine, Google Ads başlatıldıktan sonraki 24 saat içinde trafik ve potansiyel müşteri oluşturabilir. Ancak, yüksek karlı bir EBM (CPA) elde edecek optimizasyonu sağlamak 2-4 hafta sürer."
+          },
+          {
+            "question": "Mevcut Google Ads kampanyam neden para kaybediyor?",
+            "answer": "Kendi yönetilen hesapların çoğu, geniş eşlemeli anahtar kelimeler, negatif anahtar kelimelerin eksikliği, zayıf izleme ve ücretli trafiği özel açılış sayfaları yerine genel ana sayfalara yönlendirmek nedeniyle para kaybeder."
+          },
+          {
+            "question": "Kalite Puanı nedir ve neden önemlidir?",
+            "answer": "Kalite Puanı, Google'ın anahtar kelimelerinizin, reklam metninizin ve açılış sayfanızın alakalılığına verdiği puandır. Daha yüksek Kalite Puanı, tıklama başına daha az ödeme yapmanıza ve daha fazla teklif veren rakipleri geride bırakmanıza olanak tanır."
+          },
+          {
+            "question": "Rakibimin isimlerine teklif vermeli miyim?",
+            "answer": "Evet, rakipleri hedeflemek oldukça etkilidir. Birisi rakibinizi arıyorsa, sizin hizmetinize de ihtiyaç duyuyordur. Onlara neden daha iyi bir seçim olduğunuzu açıklayan bir reklam gösterebiliriz."
+          },
+          {
+            "question": "Reklamlarım için yeni bir açılış sayfasına ihtiyacım var mı?",
+            "answer": "Vakaların %90'ında evet. Ücretli trafiği genel bir ana sayfaya göndermek dönüşüm oranlarını büyük ölçüde düşürür. Reklamın amacıyla eşleşen, dönüşüm için optimize edilmiş özel açılış sayfalarını şiddetle tavsiye ediyoruz."
+          },
+          {
+            "question": "Botları ve tıklama sahtekarlığını nasıl durduruyorsunuz?",
+            "answer": "Yalnızca gerçek insan trafiği için ödeme yaptığınızdan emin olmak üzere IP hariç tutma listelerini kullanıyor, şüpheli davranış kalıplarını izliyor ve üçüncü taraf tıklama sahtekarlığı koruma yazılımlarını entegre edebiliyoruz."
+          },
+          {
+            "question": "Başlamak için hangi bütçeyi önerirsiniz?",
+            "answer": "Bu büyük ölçüde sektörünüzün Tıklama Başına Maliyetine (CPC) bağlıdır. Ancak, algoritmanın düzgün bir şekilde optimize edilmesi için yeterli tıklama verisi oluşturmak adına genellikle ayda minimum 2.000 ABD Doları reklam harcaması öneririz."
+          },
+          {
+            "question": "Otomasyon mu kullanıyorsunuz yoksa teklifleri manuel olarak mı yönetiyorsunuz?",
+            "answer": "Hibrit bir yaklaşım kullanıyoruz. Hesabı manuel olarak yapılandırıyor ve negatif anahtar kelimeleri kontrol ediyoruz, ancak gerçek zamanlı teklif ayarlamaları için Google'ın makine öğrenimi tabanlı Akıllı Teklif verme (Hedef EBM/Hedef ROAS) özelliğinden yararlanıyoruz."
+          }
+        ],
+        "technologies": [
+          { "icon": "googleads", "name": "Google Ads" },
+          { "icon": "analytics", "name": "Google Analytics 4" },
+          { "icon": "googlecloud", "name": "Google Tag Manager" },
+          { "icon": "python", "name": "Optmyzr" },
+          { "icon": "search", "name": "SpyFu / Semrush" },
+          { "icon": "unbounce", "name": "Unbounce" }
+        ]
+      }
+    },
+    "de": {
+      "name": "Google Search Ads",
+      "shortDescription": "Erfassen Sie Interessenten genau in dem Moment, in dem sie nach Ihren Dienstleistungen suchen. Wir erstellen Google Search-Kampagnen mit hohem ROI, die die Suchergebnisse dominieren.",
+      "fullDescription": "Wenn jemand bei Google nach Ihrem Produkt sucht, befindet er sich bereits am Ende des Funnels – er sucht aktiv nach einer Lösung. Wenn Sie nicht auf diese Keywords bieten, stehlen Ihre Konkurrenten Ihren Umsatz. Wer jedoch einfach nur Geld in Google Ads steckt, ohne eine optimierte Struktur zu haben, verbrennt sein Werbebudget garantiert. Unser Google Search Ads-Management ist besessen vom ROI. Wir führen umfassende Keyword-Recherchen durch, um absichtsgetriebene Long-Tail-Suchbegriffe zu identifizieren, während wir verschwendete Ausgaben mit umfangreichen Listen für negative Keywords aggressiv beschneiden. Wir strukturieren Kampagnen so, dass hochrelevante Anzeigentexte auf spezielle Landingpages abgestimmt sind, um Ihren Quality Score zu erhöhen und den Cost Per Click (CPC) zu senken. Durch Smart Bidding und A/B-Tests stellen wir sicher, dass jeder Euro qualifizierten Traffic liefert.",
+      "features": [
+        "Keyword-Recherche für hohe Kaufabsicht",
+        "Aggressives Management negativer Keywords",
+        "Anzeigentexte & A/B-Split-Testing",
+        "Quality Score- & Landingpage-Optimierung",
+        "Konfiguration von Smart-Bidding-Algorithmen",
+        "Umfassendes Setup von Anzeigenerweiterungen",
+        "Competitor-Conquesting-Kampagnen",
+        "Conversion-Tracking & ROAS-Attribution"
+      ],
+      "benefits": [
+        "Erscheinen Sie sofort ganz oben bei Google für Ihre wertvollsten Keywords",
+        "Erfassen Sie Nutzer, die genau jetzt eine hohe Kaufabsicht haben",
+        "Stoppen Sie die Budgetverschwendung für irrelevante Klicks",
+        "Senken Sie Ihren Cost Per Click (CPC) durch Quality-Score-Optimierung",
+        "Übertreffen Sie Konkurrenten, selbst wenn diese größere Budgets haben",
+        "Wissen Sie genau, wie viel Umsatz jeder Werbeeuro generiert"
+      ],
+      "metaTitle": "Google Search Ads Agentur | SEA & PPC-Management | PakSoft",
+      "metaDescription": "Dominieren Sie Suchergebnisse mit Google Search Ads. Wir optimieren Keywords, Anzeigentexte und Gebotsstrategien, um Ihren CPC zu senken und Verkäufe zu steigern.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Discovery & Keyword-Recherche",
+            "description": "Wir tauchen tief in Ihre Branche ein, um genau die Suchbegriffe zu finden, die Ihre Kunden verwenden. Fokus auf 'Bottom-of-Funnel'-Keywords."
+          },
+          {
+            "step": 2,
+            "title": "Kampagnen- & Anzeigengruppenstruktur",
+            "description": "Wir bauen hochgranulare Kontostrukturen auf (wie SKAGs), um sicherzustellen, dass die Suchanfrage exakt zum Anzeigentext passt."
+          },
+          {
+            "step": 3,
+            "title": "Überzeugendes Copywriting",
+            "description": "Wir verfassen überzeugende Überschriften, die Ihre Alleinstellungsmerkmale (USPs) hervorheben und alle verfügbaren Erweiterungen nutzen."
+          },
+          {
+            "step": 4,
+            "title": "Tracking- & Attributions-Setup",
+            "description": "Wir implementieren wasserdichtes Tracking über den Google Tag Manager, damit jeder Lead korrekt dem auslösenden Keyword zugeordnet wird."
+          },
+          {
+            "step": 5,
+            "title": "Launch & Smart Bidding",
+            "description": "Wir starten die Kampagnen und füttern die Smart-Bidding-Algorithmen von Google (tCPA, tROAS) mit genauen Conversion-Daten."
+          },
+          {
+            "step": 6,
+            "title": "Laufende Optimierung",
+            "description": "Wir prüfen täglich Suchbegriffberichte, fügen negative Keywords hinzu und testen neue Anzeigentexte, um die Klickraten zu verbessern."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Wie lange dauert es, bis Google Search Ads Ergebnisse liefern?",
+            "answer": "Im Gegensatz zu SEO können Ads innerhalb von 24 Stunden Traffic und Leads generieren. Es dauert jedoch 2-4 Wochen, um den CPA optimal einzustellen."
+          },
+          {
+            "question": "Warum verliert meine aktuelle Google Ads-Kampagne Geld?",
+            "answer": "Meistens liegt es an Keywords mit 'Weitgehend passend', fehlenden negativen Keywords, schlechtem Tracking oder der Weiterleitung auf die Startseite statt auf Landingpages."
+          },
+          {
+            "question": "Was ist der Qualitätsfaktor (Quality Score)?",
+            "answer": "Die Bewertung der Relevanz Ihrer Keywords, Anzeigentexte und der Landingpage durch Google. Ein hoher Score senkt Ihre Klickpreise erheblich."
+          },
+          {
+            "question": "Sollte ich auf die Markennamen meiner Konkurrenten bieten?",
+            "answer": "Ja, das ist sehr effektiv. Wer nach der Konkurrenz sucht, sucht nach Ihrer Dienstleistung. Wir zeigen eine Anzeige, die erklärt, warum Sie die bessere Wahl sind."
+          },
+          {
+            "question": "Brauche ich eine neue Landingpage für meine Anzeigen?",
+            "answer": "In 90% der Fälle ja. Traffic auf eine generische Startseite zu leiten, senkt die Konversionsrate. Wir empfehlen dedizierte, conversionsoptimierte Landingpages."
+          },
+          {
+            "question": "Wie stoppen Sie Bots und Klickbetrug?",
+            "answer": "Wir nutzen IP-Ausschlusslisten, überwachen verdächtiges Verhalten und integrieren auf Wunsch Software gegen Klickbetrug, damit Sie nur für echte Nutzer zahlen."
+          },
+          {
+            "question": "Welches Budget empfehlen Sie für den Start?",
+            "answer": "Dies hängt stark vom CPC Ihrer Branche ab. Wir empfehlen jedoch in der Regel mindestens 2.000 € Werbebudget pro Monat, um dem Algorithmus genügend Daten zu liefern."
+          },
+          {
+            "question": "Nutzen Sie Automatisierung oder steuern Sie Gebote manuell?",
+            "answer": "Wir nutzen einen hybriden Ansatz. Wir strukturieren das Konto manuell, aber wir nutzen Googles Smart Bidding (tCPA/tROAS) für Echtzeit-Gebotsanpassungen."
+          }
+        ],
+        "technologies": [
+          { "icon": "googleads", "name": "Google Ads" },
+          { "icon": "analytics", "name": "Google Analytics 4" },
+          { "icon": "googlecloud", "name": "Google Tag Manager" },
+          { "icon": "python", "name": "Optmyzr" },
+          { "icon": "search", "name": "SpyFu / Semrush" },
+          { "icon": "unbounce", "name": "Unbounce" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "گوگل سرچ ایڈز (Google Search Ads)",
+      "shortDescription": "ممکنہ گاہکوں کو عین اسی وقت حاصل کریں جب وہ آپ کی خدمات تلاش کر رہے ہوں۔ ہم اعلیٰ ROI والی گوگل سرچ مہمات بناتے ہیں جو تلاش کے نتائج پر غلبہ حاصل کرتی ہیں۔",
+      "fullDescription": "جب کوئی گوگل پر آپ کا پروڈکٹ یا سروس تلاش کر رہا ہوتا ہے، تو وہ پہلے ہی خریداری کے قریب ہوتا ہے—انہیں ایک مسئلہ درپیش ہے اور وہ فعال طور پر حل تلاش کر رہے ہیں۔ اگر آپ ان کلیدی الفاظ (Keywords) پر بولی نہیں لگا رہے ہیں، تو آپ کے حریف آپ کی آمدنی چرا رہے ہیں۔ تاہم، گوگل اشتہارات پر بغیر کسی آپٹیمائزڈ ڈھانچے کے پیسے ضائع کرنا صرف بجٹ کا زیاں ہے۔ ہماری گوگل سرچ ایڈز مینجمنٹ مکمل طور پر ROI پر مرکوز ہے۔ ہم ہائی انٹینٹ والے سرچ الفاظ کی شناخت کے لیے جامع کی ورڈ ریسرچ کرتے ہیں، جبکہ غیر متعلقہ کلیدی الفاظ کی فہرستوں کا استعمال کرتے ہوئے ضائع ہونے والے اخراجات کو روکتے ہیں۔ ہم آپ کی مہمات کو ریاضیاتی انداز میں ترتیب دیتے ہیں، اور کلک کی لاگت (CPC) کو کم کرنے کے لیے انتہائی متعلقہ اشتہاری کاپی کو مخصوص لینڈنگ پیجز کے ساتھ جوڑتے ہیں۔ اسمارٹ بڈنگ اور A/B ٹیسٹنگ کے ذریعے ہم یقینی بناتے ہیں کہ آپ کا ہر ڈالر مستند ٹریفک لائے۔",
+      "features": [
+        "ہائی انٹینٹ کی ورڈ ریسرچ اور حکمت عملی",
+        "منفی (Negative) کی ورڈ کا سخت انتظام",
+        "اشتہاری کاپی رائٹنگ اور A/B سپلٹ ٹیسٹنگ",
+        "کوالٹی سکور اور لینڈنگ پیج آپٹیمائزیشن",
+        "اسمارٹ بڈنگ الگورتھم کی ترتیب",
+        "ایڈ ایکسٹینشنز کا جامع سیٹ اپ",
+        "حریفوں کو ہدف بنانے والی (Conquesting) مہمات",
+        "کنورژن ٹریکنگ اور ROAS ایٹریبیوشن"
+      ],
+      "benefits": [
+        "اپنے سب سے قیمتی کلیدی الفاظ کے لیے گوگل کے بالکل اوپری حصے پر فوری ظاہر ہوں",
+        "ان صارفین کو حاصل کریں جو ابھی خریدنے کا پختہ ارادہ رکھتے ہیں",
+        "منفی کی ورڈز کے ساتھ غیر متعلقہ کلکس پر بجٹ ضائع کرنا بند کریں",
+        "کوالٹی سکور کو بہتر بنا کر اپنی کلک کی لاگت (CPC) کو کم کریں",
+        "اپنے حریفوں کو پیچھے چھوڑیں، یہاں تک کہ اگر ان کے بجٹ بڑے ہوں",
+        "بالکل جانیں کہ خرچ کیا گیا ہر اشتہاری ڈالر کتنی آمدنی پیدا کرتا ہے"
+      ],
+      "metaTitle": "گوگل سرچ ایڈز ایجنسی | PPC مینجمنٹ | PakSoft",
+      "metaDescription": "اعلیٰ ROI گوگل سرچ ایڈز کے ساتھ تلاش کے نتائج پر غلبہ حاصل کریں۔ ہم آپ کے CPC کو کم کرنے اور فروخت بڑھانے کے لیے کلیدی الفاظ کو بہتر بناتے ہیں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "دریافت اور کی ورڈ ریسرچ",
+            "description": "ہم آپ کے صارفین کے استعمال کردہ درست اصطلاحات کو دریافت کرنے کے لیے گہری تحقیق کرتے ہیں۔ ہمارا فوکس خریداری کے ارادے والے کی ورڈز پر ہوتا ہے۔"
+          },
+          {
+            "step": 2,
+            "title": "مہم اور ایڈ گروپ کا ڈھانچہ",
+            "description": "ہم انتہائی باریک بینی سے اکاؤنٹس ترتیب دیتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ صارف کی تلاش، اشتہار کی کاپی اور لینڈنگ پیج آپس میں بالکل مماثل ہوں۔"
+          },
+          {
+            "step": 3,
+            "title": "قائل کرنے والی کاپی رائٹنگ",
+            "description": "ہمارے کاپی رائٹرز دلکش سرخیاں اور تفصیلات تیار کرتے ہیں جو آپ کی منفرد خوبیوں کو نمایاں کرتی ہیں اور تمام دستیاب ایکسٹینشنز کا استعمال کرتی ہیں۔"
+          },
+          {
+            "step": 4,
+            "title": "ٹریکنگ اور ایٹریبیوشن کا سیٹ اپ",
+            "description": "ہم گوگل ٹیگ مینیجر کے ذریعے فول پروف ٹریکنگ نافذ کرتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ ہر لیڈ کا درست کلیدی لفظ سے تعلق جڑا ہوا ہے۔"
+          },
+          {
+            "step": 5,
+            "title": "لانچ اور اسمارٹ بڈنگ",
+            "description": "ہم مہمات شروع کرتے ہیں اور ریئل ٹائم میں بولی لگانے کو خودکار بنانے کے لیے گوگل کے اسمارٹ بڈنگ الگورتھم کو درست کنورژن ڈیٹا فراہم کرتے ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "جاری بہتری اور آپٹیمائزیشن",
+            "description": "ہم روزانہ سرچ ٹرم رپورٹس کا جائزہ لیتے ہیں تاکہ منفی کلیدی الفاظ شامل کیے جا سکیں، ناقص اشتہارات کو روکا جا سکے اور کارکردگی بہتر بنائی جا سکے۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "گوگل سرچ ایڈز کے ساتھ نتائج دیکھنے میں کتنا وقت لگتا ہے؟",
+            "answer": "SEO کے برعکس جسے مہینوں لگتے ہیں، گوگل اشتہارات لانچ ہونے کے 24 گھنٹے کے اندر ٹریفک پیدا کر سکتے ہیں۔ تاہم، بہترین CPA تک پہنچنے میں 2-4 ہفتے لگتے ہیں۔"
+          },
+          {
+            "question": "میری موجودہ گوگل ایڈز مہم کیوں پیسے کھو رہی ہے؟",
+            "answer": "زیادہ تر خود زیر انتظام اکاؤنٹس براڈ میچ کی ورڈز، منفی کی ورڈز کی کمی، خراب ٹریکنگ، اور ٹریفک کو مخصوص لینڈنگ پیج کے بجائے ہوم پیج پر بھیجنے کی وجہ سے پیسے کھوتے ہیں۔"
+          },
+          {
+            "question": "کوالٹی سکور (Quality Score) کیا ہے اور یہ کیوں اہم ہے؟",
+            "answer": "کوالٹی سکور گوگل کی طرف سے آپ کے کلیدی الفاظ، اشتہار کی کاپی اور لینڈنگ پیج کی مطابقت کی درجہ بندی ہے۔ اعلیٰ کوالٹی سکور آپ کی لاگت کو کم کرتا ہے۔"
+          },
+          {
+            "question": "کیا مجھے اپنے حریف کے ناموں پر بولی لگانی چاہیے؟",
+            "answer": "ہاں، حریفوں کو نشانہ بنانا انتہائی موثر ہے۔ اگر کوئی آپ کے حریف کو تلاش کر رہا ہے تو وہ آپ کی سروس کے لیے مارکیٹ میں ہے۔ ہم انہیں آپ کا اشتہار دکھا سکتے ہیں۔"
+          },
+          {
+            "question": "کیا مجھے اپنے اشتہارات کے لیے ایک نئے لینڈنگ پیج کی ضرورت ہے؟",
+            "answer": "90% معاملات میں، ہاں۔ ادا شدہ ٹریفک کو ہوم پیج پر بھیجنا تبادلوں کی شرح کو کم کر دیتا ہے۔ ہم اشتہار کے ارادے سے مماثل مخصوص لینڈنگ پیجز کی سفارش کرتے ہیں۔"
+          },
+          {
+            "question": "آپ بوٹس اور کلک فراڈ کو کیسے روکتے ہیں؟",
+            "answer": "ہم آئی پی کو خارج کرنے کی فہرستیں استعمال کرتے ہیں، اور اس بات کو یقینی بنانے کے لیے تھرڈ پارٹی سافٹ ویئر کو مربوط کر سکتے ہیں کہ آپ صرف حقیقی انسانوں کے لیے ادائیگی کریں۔"
+          },
+          {
+            "question": "شروع کرنے کے لیے آپ کتنے بجٹ کی سفارش کرتے ہیں؟",
+            "answer": "یہ بڑی حد تک آپ کی صنعت کے CPC پر منحصر ہے۔ تاہم، ہم عام طور پر الگورتھم کو مناسب طریقے سے بہتر بنانے کے لیے کم از کم $2,000 ماہانہ کی سفارش کرتے ہیں۔"
+          },
+          {
+            "question": "کیا آپ آٹومیشن استعمال کرتے ہیں یا بولیاں دستی طور پر لگاتے ہیں؟",
+            "answer": "ہم ایک ہائبرڈ اپروچ استعمال کرتے ہیں۔ ہم دستی طور پر اکاؤنٹ کی تشکیل کرتے ہیں لیکن ریئل ٹائم بولیوں کے لیے گوگل کی اسمارٹ بڈنگ کا فائدہ اٹھاتے ہیں۔"
+          }
+        ],
+        "technologies": [
+          { "icon": "googleads", "name": "Google Ads" },
+          { "icon": "analytics", "name": "Google Analytics 4" },
+          { "icon": "googlecloud", "name": "Google Tag Manager" },
+          { "icon": "python", "name": "Optmyzr" },
+          { "icon": "search", "name": "SpyFu / Semrush" },
+          { "icon": "unbounce", "name": "Unbounce" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "إعلانات بحث جوجل",
+      "shortDescription": "التقط العملاء المحتملين في اللحظة الدقيقة التي يبحثون فيها عن خدماتك. نحن نبني حملات بحث جوجل عالية العائد (ROI) تتصدر نتائج البحث الأولى.",
+      "fullDescription": "عندما يبحث شخص ما عن منتجك أو خدمتك على جوجل، فإنه يكون بالفعل في أسفل مسار التحويل - لديه مشكلة ويبحث بنشاط عن حل. إذا لم تقم بتقديم عروض أسعار على هذه الكلمات الرئيسية، فإن منافسيك يسرقون إيراداتك. ومع ذلك، فإن مجرد إلقاء الأموال على إعلانات جوجل دون هيكل محسن يضمن إهدار الإنفاق الإعلاني. إدارة إعلانات بحث جوجل لدينا مهووسة بعائد الاستثمار (ROI). نقوم بإجراء بحث شامل عن الكلمات الرئيسية لتحديد مصطلحات البحث طويلة الذيل وعالية النية، بينما نعمل بقوة على تقليص الإنفاق المهدر باستخدام قوائم الكلمات السلبية الواسعة. نحن نهيكل حملاتك رياضياً، ونقوم بمحاذاة نسخة إعلانية شديدة الصلة مع صفحات هبوط مخصصة لتعزيز نقاط الجودة (Quality Score) وخفض تكلفة النقرة (CPC). من خلال الاستفادة من استراتيجيات عروض الأسعار الذكية المتقدمة واختبارات A/B الصارمة، نضمن أن كل دولار يتم إنفاقه يجلب حركة مرور مؤهلة وجاهزة للتحويل إلى عملك.",
+      "features": [
+        "استراتيجية وبحث عن الكلمات الرئيسية عالية النية",
+        "إدارة صارمة للكلمات الرئيسية السلبية",
+        "كتابة الإعلانات واختبارات التقسيم A/B",
+        "تحسين نقاط الجودة وصفحات الهبوط",
+        "تكوين خوارزمية عروض الأسعار الذكية",
+        "إعداد شامل لإضافات الإعلانات",
+        "حملات استهداف المنافسين",
+        "تتبع التحويل وإسناد عائد الاستثمار الإعلاني (ROAS)"
+      ],
+      "benefits": [
+        "الظهور في أعلى نتائج جوجل فوراً للكلمات الرئيسية الأكثر قيمة",
+        "التقاط المستخدمين الذين لديهم نية شراء عالية في الوقت الحالي",
+        "التوقف عن إهدار الميزانية على النقرات غير ذات الصلة بكلمات سلبية صارمة",
+        "خفض تكلفة النقرة (CPC) من خلال تحسين نقاط الجودة",
+        "التفوق على منافسيك، حتى لو كانت ميزانياتهم أكبر",
+        "معرفة مقدار الإيرادات التي يولدها كل دولار إعلاني بدقة"
+      ],
+      "metaTitle": "وكالة إعلانات بحث جوجل | إدارة PPC | PakSoft",
+      "metaDescription": "سيطر على نتائج البحث باستخدام إعلانات جوجل. نقوم بتحسين الكلمات الرئيسية ونسخ الإعلانات واستراتيجيات عروض الأسعار لخفض تكلفة النقرة وزيادة المبيعات.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "الاكتشاف والبحث عن الكلمات الرئيسية",
+            "description": "نتعمق في مجال عملك لاكتشاف المصطلحات الدقيقة التي يستخدمها عملاؤك. نركز على الكلمات ذات النية العالية في أسفل مسار التحويل."
+          },
+          {
+            "step": 2,
+            "title": "هيكلة الحملة والمجموعات الإعلانية",
+            "description": "نبني هياكل حساب دقيقة للغاية لضمان تطابق استعلام البحث بدقة مع نسخة الإعلان وتجربة صفحة الهبوط."
+          },
+          {
+            "step": 3,
+            "title": "كتابة إعلانات مقنعة",
+            "description": "يصوغ كتابنا عناوين وأوصافاً مقنعة تسلط الضوء على عروض البيع الفريدة الخاصة بك وتستفيد من جميع إضافات الإعلانات."
+          },
+          {
+            "step": 4,
+            "title": "إعداد التتبع والإسناد",
+            "description": "ننفذ تتبعاً مضاداً للرصاص عبر Google Tag Manager لضمان إسناد كل عميل محتمل أو مكالمة هاتفية تماماً للكلمة الرئيسية الصحيحة."
+          },
+          {
+            "step": 5,
+            "title": "الإطلاق وعروض الأسعار الذكية",
+            "description": "نطلق الحملات ونغذي بيانات التحويل الدقيقة لخوارزميات العطاءات الذكية من جوجل لأتمتة تحسين عروض الأسعار في الوقت الفعلي."
+          },
+          {
+            "step": 6,
+            "title": "التقليم والتحسين المستمر",
+            "description": "نراجع تقارير مصطلحات البحث يومياً لإضافة كلمات رئيسية سلبية، وإيقاف الإعلانات ضعيفة الأداء، واختبار نسخ جديدة باستمرار."
+          }
+        ],
+        "faq": [
+          {
+            "question": "كم من الوقت يستغرق رؤية النتائج مع إعلانات بحث جوجل؟",
+            "answer": "على عكس SEO الذي يستغرق أشهراً، يمكن أن تولد الإعلانات حركة مرور وعملاء خلال 24 ساعة من الإطلاق. ومع ذلك، يستغرق الأمر 2-4 أسابيع من التحسين للوصول لتكلفة اكتساب مربحة."
+          },
+          {
+            "question": "لماذا تخسر حملتي الحالية على إعلانات جوجل الأموال؟",
+            "answer": "تخسر معظم الحسابات المدارة ذاتياً بسبب المطابقة التقريبية للكلمات، ونقص الكلمات السلبية، وسوء التتبع، وتوجيه حركة المرور المدفوعة إلى الصفحة الرئيسية بدلاً من صفحات هبوط مخصصة."
+          },
+          {
+            "question": "ما هي نقاط الجودة (Quality Score) ولماذا هي مهمة؟",
+            "answer": "نقاط الجودة هي تصنيف جوجل لمدى صلة كلماتك الرئيسية وإعلانك وصفحة هبوطك. تتيح لك النقاط الأعلى دفع أقل لكل نقرة والتفوق على المنافسين الذين يدفعون أكثر."
+          },
+          {
+            "question": "هل يجب أن أقوم بالمزايدة على أسماء منافسي؟",
+            "answer": "نعم، استهداف المنافسين فعال للغاية. إذا كان شخص ما يبحث عن منافسك، فهو في السوق لخدمتك. يمكننا أن نعرض لهم إعلاناً يوضح سبب كونك الخيار الأفضل."
+          },
+          {
+            "question": "هل أحتاج إلى صفحة هبوط جديدة لإعلاناتي؟",
+            "answer": "في 90٪ من الحالات، نعم. إرسال الزيارات إلى صفحة رئيسية عامة يقلل بشكل كبير من التحويلات. نوصي بشدة بصفحات هبوط مخصصة ومحسنة تتطابق مع نية الإعلان."
+          },
+          {
+            "question": "كيف توقفون الروبوتات والاحتيال في النقرات؟",
+            "answer": "نستخدم قوائم استبعاد IP، ونراقب أنماط السلوك المشبوهة، ويمكننا دمج برامج حماية تابعة لجهات خارجية لضمان دفعك فقط لزيارات بشرية حقيقية."
+          },
+          {
+            "question": "ما هي الميزانية التي توصي بالبدء بها؟",
+            "answer": "يعتمد هذا بشدة على تكلفة النقرة في مجالك. ومع ذلك، نوصي عموماً بحد أدنى لإنفاق 2000 دولار شهرياً لتوليد بيانات نقرات كافية للخوارزمية للتحسين بشكل صحيح."
+          },
+          {
+            "question": "هل تستخدمون الأتمتة أم تديرون عروض الأسعار يدوياً؟",
+            "answer": "نستخدم نهجاً هجيناً. نهيكل الحساب يدوياً ونتحكم في الكلمات السلبية، لكننا نستفيد من التعلم الآلي لـ Google (Smart Bidding) لتعديلات عروض الأسعار في الوقت الفعلي."
+          }
+        ],
+        "technologies": [
+          { "icon": "googleads", "name": "Google Ads" },
+          { "icon": "analytics", "name": "Google Analytics 4" },
+          { "icon": "googlecloud", "name": "Google Tag Manager" },
+          { "icon": "python", "name": "Optmyzr" },
+          { "icon": "search", "name": "SpyFu / Semrush" },
+          { "icon": "unbounce", "name": "Unbounce" }
+        ]
+      }
+    }
+  }
+}

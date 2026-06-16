@@ -1,0 +1,598 @@
+{
+  "slug": "google-search-ads",
+  "en": {
+    "name": "Google Search Ads",
+    "shortDescription": "Capture prospects at the exact moment they are searching for your services. We build high-ROI Google Search campaigns that dominate top search results.",
+    "fullDescription": "When someone searches for your product or service on Google, they are already at the bottom of the funnel—they have a problem and are actively looking for a solution. If you aren't bidding on those keywords, your competitors are stealing your revenue. However, simply throwing money at Google Ads without an optimized structure guarantees wasted ad spend. Our Google Search Ads management is obsessed with ROI. We conduct exhaustive keyword research to identify high-intent, long-tail search terms while aggressively pruning wasted spend using expansive negative keyword lists. We structure your campaigns mathematically, aligning highly relevant ad copy with dedicated landing pages to boost your Quality Score and lower your Cost Per Click (CPC). By leveraging advanced smart bidding strategies and rigorous A/B testing, we ensure every dollar spent drives qualified, conversion-ready traffic to your business.",
+    "features": [
+      "High-Intent Keyword Research & Strategy",
+      "Aggressive Negative Keyword Management",
+      "Ad Copywriting & A/B Split Testing",
+      "Quality Score & Landing Page Optimization",
+      "Smart Bidding Algorithm Configuration",
+      "Comprehensive Ad Extensions Setup",
+      "Competitor Conquesting Campaigns",
+      "Conversion Tracking & ROAS Attribution"
+    ],
+    "benefits": [
+      "Appear at the very top of Google instantly for your most valuable keywords",
+      "Capture users who have a high intent to buy right now",
+      "Stop wasting budget on irrelevant clicks with strict negative keywords",
+      "Lower your Cost Per Click (CPC) through Quality Score optimization",
+      "Outrank your competitors, even if they have larger budgets",
+      "Know exactly how much revenue every advertising dollar generates"
+    ],
+    "metaTitle": "Google Search Ads Agency | PPC Management | PakSoft",
+    "metaDescription": "Dominate search results with high-ROI Google Search Ads. We optimize keywords, ad copy, and bidding strategies to lower your CPC and drive sales.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Discovery & Keyword Research",
+          "description": "We dive deep into your industry to discover the exact terms your customers use. We focus on high-intent, bottom-of-funnel keywords that signal a readiness to buy."
+        },
+        {
+          "step": 2,
+          "title": "Campaign & Ad Group Structuring",
+          "description": "We build highly granular account structures (like SKAGs or STAGs) ensuring that the search query precisely matches the ad copy and the landing page experience."
+        },
+        {
+          "step": 3,
+          "title": "Persuasive Ad Copywriting",
+          "description": "Our copywriters craft compelling headlines and descriptions that highlight your unique selling propositions, include strong CTAs, and utilize all available ad extensions."
+        },
+        {
+          "step": 4,
+          "title": "Tracking & Attribution Setup",
+          "description": "We implement bulletproof tracking via Google Tag Manager to ensure every lead, phone call, or ecommerce purchase is perfectly attributed to the correct keyword."
+        },
+        {
+          "step": 5,
+          "title": "Launch & Smart Bidding",
+          "description": "We launch the campaigns and feed accurate conversion data into Google's Smart Bidding algorithms (tCPA, tROAS) to automate bid optimization in real-time."
+        },
+        {
+          "step": 6,
+          "title": "Ongoing Pruning & Optimization",
+          "description": "We review search term reports daily to add negative keywords, pause underperforming ads, and continually test new copy to improve click-through and conversion rates."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How long does it take to see results with Google Search Ads?",
+          "answer": "Unlike SEO, which takes months, Google Ads can generate traffic and leads within 24 hours of launching. However, it takes 2-4 weeks of optimization to dial in a highly profitable CPA."
+        },
+        {
+          "question": "Why is my current Google Ads campaign losing money?",
+          "answer": "Most self-managed accounts lose money due to broad match keywords, lack of negative keywords, poor tracking, and directing paid traffic to generic homepages instead of dedicated landing pages."
+        },
+        {
+          "question": "What is a Quality Score and why does it matter?",
+          "answer": "Quality Score is Google's rating of the relevance of your keywords, ad copy, and landing page. A higher Quality Score allows you to pay less per click and still outrank competitors bidding more."
+        },
+        {
+          "question": "Should I bid on my competitor's names?",
+          "answer": "Yes, 'competitor conquesting' is highly effective. If someone is searching for your competitor, they are in the market for your service. We can show them an ad explaining why you are the better choice."
+        },
+        {
+          "question": "Do I need a new landing page for my ads?",
+          "answer": "In 90% of cases, yes. Sending paid traffic to a generic homepage drastically lowers conversion rates. We highly recommend dedicated, conversion-optimized landing pages matching the ad's intent."
+        },
+        {
+          "question": "How do you stop bots and click fraud?",
+          "answer": "We utilize IP exclusion lists, monitor suspicious behavior patterns, and can integrate third-party click fraud protection software to ensure you only pay for real human traffic."
+        },
+        {
+          "question": "What budget do you recommend starting with?",
+          "answer": "This depends heavily on your industry's CPC. However, we generally recommend a minimum ad spend of $2,000/month to generate enough click data for the algorithm to optimize properly."
+        },
+        {
+          "question": "Do you use automation or manage bids manually?",
+          "answer": "We use a hybrid approach. We manually structure the account and control negative keywords, but we leverage Google's machine-learning Smart Bidding (tCPA/tROAS) for real-time bid adjustments."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "googleads",
+          "name": "Google Ads"
+        },
+        {
+          "icon": "analytics",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Tag Manager"
+        },
+        {
+          "icon": "python",
+          "name": "Optmyzr"
+        },
+        {
+          "icon": "search",
+          "name": "SpyFu / Semrush"
+        },
+        {
+          "icon": "unbounce",
+          "name": "Unbounce"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Google Arama Ağı Reklamları",
+    "shortDescription": "Tam olarak hizmetlerinizi aradıkları anda potansiyel müşterileri yakalayın. En üst arama sonuçlarını domine eden yüksek yatırım getirili (ROI) Google Arama kampanyaları oluşturuyoruz.",
+    "fullDescription": "Birisi Google'da ürününüzü veya hizmetinizi aradığında, zaten dönüşüm hunisinin en altındadır; bir sorunu vardır ve aktif olarak bir çözüm aramaktadır. Bu anahtar kelimelere teklif vermiyorsanız, rakipleriniz gelirinizi çalıyor demektir. Ancak, optimize edilmiş bir yapı olmadan Google Ads'e sadece para atmak, reklam harcamalarının israf edilmesini garanti eder. Google Arama Ağı Reklamları yönetimimiz ROI odaklıdır. Geniş kapsamlı negatif anahtar kelime listeleri kullanarak boşa harcanan harcamaları agresif bir şekilde budarken, yüksek niyetli, uzun kuyruklu (long-tail) arama terimlerini belirlemek için kapsamlı anahtar kelime araştırması yapıyoruz. Kalite Puanınızı (Quality Score) artırmak ve Tıklama Başına Maliyetinizi (CPC) düşürmek için son derece alakalı reklam metinlerini özel açılış sayfalarıyla eşleştirerek kampanyalarınızı matematiksel olarak yapılandırıyoruz. Gelişmiş akıllı teklif stratejilerinden ve titiz A/B testlerinden yararlanarak, harcanan her kuruşun işletmenize nitelikli, dönüşüme hazır trafik çekmesini sağlıyoruz.",
+    "features": [
+      "Yüksek Niyetli Anahtar Kelime Araştırması ve Stratejisi",
+      "Agresif Negatif Anahtar Kelime Yönetimi",
+      "Reklam Metin Yazarlığı ve A/B Bölünmüş (Split) Testi",
+      "Kalite Puanı ve Açılış Sayfası Optimizasyonu",
+      "Akıllı Teklif Verme (Smart Bidding) Algoritma Yapılandırması",
+      "Kapsamlı Reklam Uzantıları Kurulumu",
+      "Rakip Hedefleme (Conquesting) Kampanyaları",
+      "Dönüşüm İzleme ve ROAS İlişkilendirmesi"
+    ],
+    "benefits": [
+      "En değerli anahtar kelimeleriniz için anında Google'ın en üstünde görünün",
+      "Şu anda satın alma niyeti yüksek olan kullanıcıları yakalayın",
+      "Sıkı negatif anahtar kelimelerle ilgisiz tıklamalara bütçe harcamayı bırakın",
+      "Kalite Puanı optimizasyonu ile Tıklama Başına Maliyetinizi (CPC) düşürün",
+      "Daha büyük bütçeleri olsa bile rakiplerinizi geride bırakın",
+      "Harcanan her reklam lirasının tam olarak ne kadar gelir sağladığını bilin"
+    ],
+    "metaTitle": "Google Arama Ağı Reklam Ajansı | PPC Yönetimi | PakSoft",
+    "metaDescription": "Yüksek ROI sağlayan Google Arama Ağı Reklamları ile arama sonuçlarını domine edin. CPC'nizi düşürmek ve satışları artırmak için anahtar kelimeleri ve metinleri optimize ediyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Keşif ve Anahtar Kelime Araştırması",
+          "description": "Müşterilerinizin kullandığı tam terimleri keşfetmek için sektörünüzün derinliklerine iniyoruz. Satın almaya hazır olunduğunu gösteren yüksek niyetli anahtar kelimelere odaklanıyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Kampanya ve Reklam Grubu Yapılandırması",
+          "description": "Arama sorgusunun reklam metni ve açılış sayfası deneyimiyle tam olarak eşleşmesini sağlayan son derece ayrıntılı hesap yapıları kuruyoruz."
+        },
+        {
+          "step": 3,
+          "title": "İkna Edici Reklam Metin Yazarlığı",
+          "description": "Metin yazarlarımız, benzersiz satış tekliflerinizi (USP) vurgulayan, güçlü eylem çağrıları içeren ve tüm kullanılabilir reklam uzantılarını kullanan ikna edici başlıklar ve açıklamalar hazırlar."
+        },
+        {
+          "step": 4,
+          "title": "İzleme ve İlişkilendirme Kurulumu",
+          "description": "Her potansiyel müşterinin, telefon görüşmesinin veya e-ticaret satın alımının doğru anahtar kelimeyle mükemmel bir şekilde ilişkilendirilmesini sağlamak için Google Etiket Yöneticisi aracılığıyla kusursuz izleme uyguluyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Lansman ve Akıllı Teklif Verme",
+          "description": "Gerçek zamanlı teklif optimizasyonunu otomatikleştirmek için kampanyaları başlatıyor ve Google'ın Akıllı Teklif (Hedef EBM, Hedef ROAS) algoritmalarını doğru dönüşüm verileriyle besliyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Sürekli Budama ve Optimizasyon",
+          "description": "Negatif anahtar kelimeler eklemek, düşük performans gösteren reklamları duraklatmak ve tıklama ve dönüşüm oranlarını iyileştirmek üzere sürekli yeni metinler test etmek için arama terimleri raporlarını günlük olarak inceliyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Google Arama Ağı Reklamları ile sonuçları görmek ne kadar sürer?",
+          "answer": "Aylar süren SEO'nun aksine, Google Ads başlatıldıktan sonraki 24 saat içinde trafik ve potansiyel müşteri oluşturabilir. Ancak, yüksek karlı bir EBM (CPA) elde edecek optimizasyonu sağlamak 2-4 hafta sürer."
+        },
+        {
+          "question": "Mevcut Google Ads kampanyam neden para kaybediyor?",
+          "answer": "Kendi yönetilen hesapların çoğu, geniş eşlemeli anahtar kelimeler, negatif anahtar kelimelerin eksikliği, zayıf izleme ve ücretli trafiği özel açılış sayfaları yerine genel ana sayfalara yönlendirmek nedeniyle para kaybeder."
+        },
+        {
+          "question": "Kalite Puanı nedir ve neden önemlidir?",
+          "answer": "Kalite Puanı, Google'ın anahtar kelimelerinizin, reklam metninizin ve açılış sayfanızın alakalılığına verdiği puandır. Daha yüksek Kalite Puanı, tıklama başına daha az ödeme yapmanıza ve daha fazla teklif veren rakipleri geride bırakmanıza olanak tanır."
+        },
+        {
+          "question": "Rakibimin isimlerine teklif vermeli miyim?",
+          "answer": "Evet, rakipleri hedeflemek oldukça etkilidir. Birisi rakibinizi arıyorsa, sizin hizmetinize de ihtiyaç duyuyordur. Onlara neden daha iyi bir seçim olduğunuzu açıklayan bir reklam gösterebiliriz."
+        },
+        {
+          "question": "Reklamlarım için yeni bir açılış sayfasına ihtiyacım var mı?",
+          "answer": "Vakaların %90'ında evet. Ücretli trafiği genel bir ana sayfaya göndermek dönüşüm oranlarını büyük ölçüde düşürür. Reklamın amacıyla eşleşen, dönüşüm için optimize edilmiş özel açılış sayfalarını şiddetle tavsiye ediyoruz."
+        },
+        {
+          "question": "Botları ve tıklama sahtekarlığını nasıl durduruyorsunuz?",
+          "answer": "Yalnızca gerçek insan trafiği için ödeme yaptığınızdan emin olmak üzere IP hariç tutma listelerini kullanıyor, şüpheli davranış kalıplarını izliyor ve üçüncü taraf tıklama sahtekarlığı koruma yazılımlarını entegre edebiliyoruz."
+        },
+        {
+          "question": "Başlamak için hangi bütçeyi önerirsiniz?",
+          "answer": "Bu büyük ölçüde sektörünüzün Tıklama Başına Maliyetine (CPC) bağlıdır. Ancak, algoritmanın düzgün bir şekilde optimize edilmesi için yeterli tıklama verisi oluşturmak adına genellikle ayda minimum 2.000 ABD Doları reklam harcaması öneririz."
+        },
+        {
+          "question": "Otomasyon mu kullanıyorsunuz yoksa teklifleri manuel olarak mı yönetiyorsunuz?",
+          "answer": "Hibrit bir yaklaşım kullanıyoruz. Hesabı manuel olarak yapılandırıyor ve negatif anahtar kelimeleri kontrol ediyoruz, ancak gerçek zamanlı teklif ayarlamaları için Google'ın makine öğrenimi tabanlı Akıllı Teklif verme (Hedef EBM/Hedef ROAS) özelliğinden yararlanıyoruz."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "googleads",
+          "name": "Google Ads"
+        },
+        {
+          "icon": "analytics",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Tag Manager"
+        },
+        {
+          "icon": "python",
+          "name": "Optmyzr"
+        },
+        {
+          "icon": "search",
+          "name": "SpyFu / Semrush"
+        },
+        {
+          "icon": "unbounce",
+          "name": "Unbounce"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Google Search Ads",
+    "shortDescription": "Erfassen Sie Interessenten genau in dem Moment, in dem sie nach Ihren Dienstleistungen suchen. Wir erstellen Google Search-Kampagnen mit hohem ROI, die die Suchergebnisse dominieren.",
+    "fullDescription": "Wenn jemand bei Google nach Ihrem Produkt sucht, befindet er sich bereits am Ende des Funnels – er sucht aktiv nach einer Lösung. Wenn Sie nicht auf diese Keywords bieten, stehlen Ihre Konkurrenten Ihren Umsatz. Wer jedoch einfach nur Geld in Google Ads steckt, ohne eine optimierte Struktur zu haben, verbrennt sein Werbebudget garantiert. Unser Google Search Ads-Management ist besessen vom ROI. Wir führen umfassende Keyword-Recherchen durch, um absichtsgetriebene Long-Tail-Suchbegriffe zu identifizieren, während wir verschwendete Ausgaben mit umfangreichen Listen für negative Keywords aggressiv beschneiden. Wir strukturieren Kampagnen so, dass hochrelevante Anzeigentexte auf spezielle Landingpages abgestimmt sind, um Ihren Quality Score zu erhöhen und den Cost Per Click (CPC) zu senken. Durch Smart Bidding und A/B-Tests stellen wir sicher, dass jeder Euro qualifizierten Traffic liefert.",
+    "features": [
+      "Keyword-Recherche für hohe Kaufabsicht",
+      "Aggressives Management negativer Keywords",
+      "Anzeigentexte & A/B-Split-Testing",
+      "Quality Score- & Landingpage-Optimierung",
+      "Konfiguration von Smart-Bidding-Algorithmen",
+      "Umfassendes Setup von Anzeigenerweiterungen",
+      "Competitor-Conquesting-Kampagnen",
+      "Conversion-Tracking & ROAS-Attribution"
+    ],
+    "benefits": [
+      "Erscheinen Sie sofort ganz oben bei Google für Ihre wertvollsten Keywords",
+      "Erfassen Sie Nutzer, die genau jetzt eine hohe Kaufabsicht haben",
+      "Stoppen Sie die Budgetverschwendung für irrelevante Klicks",
+      "Senken Sie Ihren Cost Per Click (CPC) durch Quality-Score-Optimierung",
+      "Übertreffen Sie Konkurrenten, selbst wenn diese größere Budgets haben",
+      "Wissen Sie genau, wie viel Umsatz jeder Werbeeuro generiert"
+    ],
+    "metaTitle": "Google Search Ads Agentur | SEA & PPC-Management | PakSoft",
+    "metaDescription": "Dominieren Sie Suchergebnisse mit Google Search Ads. Wir optimieren Keywords, Anzeigentexte und Gebotsstrategien, um Ihren CPC zu senken und Verkäufe zu steigern.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Discovery & Keyword-Recherche",
+          "description": "Wir tauchen tief in Ihre Branche ein, um genau die Suchbegriffe zu finden, die Ihre Kunden verwenden. Fokus auf 'Bottom-of-Funnel'-Keywords."
+        },
+        {
+          "step": 2,
+          "title": "Kampagnen- & Anzeigengruppenstruktur",
+          "description": "Wir bauen hochgranulare Kontostrukturen auf (wie SKAGs), um sicherzustellen, dass die Suchanfrage exakt zum Anzeigentext passt."
+        },
+        {
+          "step": 3,
+          "title": "Überzeugendes Copywriting",
+          "description": "Wir verfassen überzeugende Überschriften, die Ihre Alleinstellungsmerkmale (USPs) hervorheben und alle verfügbaren Erweiterungen nutzen."
+        },
+        {
+          "step": 4,
+          "title": "Tracking- & Attributions-Setup",
+          "description": "Wir implementieren wasserdichtes Tracking über den Google Tag Manager, damit jeder Lead korrekt dem auslösenden Keyword zugeordnet wird."
+        },
+        {
+          "step": 5,
+          "title": "Launch & Smart Bidding",
+          "description": "Wir starten die Kampagnen und füttern die Smart-Bidding-Algorithmen von Google (tCPA, tROAS) mit genauen Conversion-Daten."
+        },
+        {
+          "step": 6,
+          "title": "Laufende Optimierung",
+          "description": "Wir prüfen täglich Suchbegriffberichte, fügen negative Keywords hinzu und testen neue Anzeigentexte, um die Klickraten zu verbessern."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie lange dauert es, bis Google Search Ads Ergebnisse liefern?",
+          "answer": "Im Gegensatz zu SEO können Ads innerhalb von 24 Stunden Traffic und Leads generieren. Es dauert jedoch 2-4 Wochen, um den CPA optimal einzustellen."
+        },
+        {
+          "question": "Warum verliert meine aktuelle Google Ads-Kampagne Geld?",
+          "answer": "Meistens liegt es an Keywords mit 'Weitgehend passend', fehlenden negativen Keywords, schlechtem Tracking oder der Weiterleitung auf die Startseite statt auf Landingpages."
+        },
+        {
+          "question": "Was ist der Qualitätsfaktor (Quality Score)?",
+          "answer": "Die Bewertung der Relevanz Ihrer Keywords, Anzeigentexte und der Landingpage durch Google. Ein hoher Score senkt Ihre Klickpreise erheblich."
+        },
+        {
+          "question": "Sollte ich auf die Markennamen meiner Konkurrenten bieten?",
+          "answer": "Ja, das ist sehr effektiv. Wer nach der Konkurrenz sucht, sucht nach Ihrer Dienstleistung. Wir zeigen eine Anzeige, die erklärt, warum Sie die bessere Wahl sind."
+        },
+        {
+          "question": "Brauche ich eine neue Landingpage für meine Anzeigen?",
+          "answer": "In 90% der Fälle ja. Traffic auf eine generische Startseite zu leiten, senkt die Konversionsrate. Wir empfehlen dedizierte, conversionsoptimierte Landingpages."
+        },
+        {
+          "question": "Wie stoppen Sie Bots und Klickbetrug?",
+          "answer": "Wir nutzen IP-Ausschlusslisten, überwachen verdächtiges Verhalten und integrieren auf Wunsch Software gegen Klickbetrug, damit Sie nur für echte Nutzer zahlen."
+        },
+        {
+          "question": "Welches Budget empfehlen Sie für den Start?",
+          "answer": "Dies hängt stark vom CPC Ihrer Branche ab. Wir empfehlen jedoch in der Regel mindestens 2.000 € Werbebudget pro Monat, um dem Algorithmus genügend Daten zu liefern."
+        },
+        {
+          "question": "Nutzen Sie Automatisierung oder steuern Sie Gebote manuell?",
+          "answer": "Wir nutzen einen hybriden Ansatz. Wir strukturieren das Konto manuell, aber wir nutzen Googles Smart Bidding (tCPA/tROAS) für Echtzeit-Gebotsanpassungen."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "googleads",
+          "name": "Google Ads"
+        },
+        {
+          "icon": "analytics",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Tag Manager"
+        },
+        {
+          "icon": "python",
+          "name": "Optmyzr"
+        },
+        {
+          "icon": "search",
+          "name": "SpyFu / Semrush"
+        },
+        {
+          "icon": "unbounce",
+          "name": "Unbounce"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "گوگل سرچ ایڈز (Google Search Ads)",
+    "shortDescription": "ممکنہ گاہکوں کو عین اسی وقت حاصل کریں جب وہ آپ کی خدمات تلاش کر رہے ہوں۔ ہم اعلیٰ ROI والی گوگل سرچ مہمات بناتے ہیں جو تلاش کے نتائج پر غلبہ حاصل کرتی ہیں۔",
+    "fullDescription": "جب کوئی گوگل پر آپ کا پروڈکٹ یا سروس تلاش کر رہا ہوتا ہے، تو وہ پہلے ہی خریداری کے قریب ہوتا ہے—انہیں ایک مسئلہ درپیش ہے اور وہ فعال طور پر حل تلاش کر رہے ہیں۔ اگر آپ ان کلیدی الفاظ (Keywords) پر بولی نہیں لگا رہے ہیں، تو آپ کے حریف آپ کی آمدنی چرا رہے ہیں۔ تاہم، گوگل اشتہارات پر بغیر کسی آپٹیمائزڈ ڈھانچے کے پیسے ضائع کرنا صرف بجٹ کا زیاں ہے۔ ہماری گوگل سرچ ایڈز مینجمنٹ مکمل طور پر ROI پر مرکوز ہے۔ ہم ہائی انٹینٹ والے سرچ الفاظ کی شناخت کے لیے جامع کی ورڈ ریسرچ کرتے ہیں، جبکہ غیر متعلقہ کلیدی الفاظ کی فہرستوں کا استعمال کرتے ہوئے ضائع ہونے والے اخراجات کو روکتے ہیں۔ ہم آپ کی مہمات کو ریاضیاتی انداز میں ترتیب دیتے ہیں، اور کلک کی لاگت (CPC) کو کم کرنے کے لیے انتہائی متعلقہ اشتہاری کاپی کو مخصوص لینڈنگ پیجز کے ساتھ جوڑتے ہیں۔ اسمارٹ بڈنگ اور A/B ٹیسٹنگ کے ذریعے ہم یقینی بناتے ہیں کہ آپ کا ہر ڈالر مستند ٹریفک لائے۔",
+    "features": [
+      "ہائی انٹینٹ کی ورڈ ریسرچ اور حکمت عملی",
+      "منفی (Negative) کی ورڈ کا سخت انتظام",
+      "اشتہاری کاپی رائٹنگ اور A/B سپلٹ ٹیسٹنگ",
+      "کوالٹی سکور اور لینڈنگ پیج آپٹیمائزیشن",
+      "اسمارٹ بڈنگ الگورتھم کی ترتیب",
+      "ایڈ ایکسٹینشنز کا جامع سیٹ اپ",
+      "حریفوں کو ہدف بنانے والی (Conquesting) مہمات",
+      "کنورژن ٹریکنگ اور ROAS ایٹریبیوشن"
+    ],
+    "benefits": [
+      "اپنے سب سے قیمتی کلیدی الفاظ کے لیے گوگل کے بالکل اوپری حصے پر فوری ظاہر ہوں",
+      "ان صارفین کو حاصل کریں جو ابھی خریدنے کا پختہ ارادہ رکھتے ہیں",
+      "منفی کی ورڈز کے ساتھ غیر متعلقہ کلکس پر بجٹ ضائع کرنا بند کریں",
+      "کوالٹی سکور کو بہتر بنا کر اپنی کلک کی لاگت (CPC) کو کم کریں",
+      "اپنے حریفوں کو پیچھے چھوڑیں، یہاں تک کہ اگر ان کے بجٹ بڑے ہوں",
+      "بالکل جانیں کہ خرچ کیا گیا ہر اشتہاری ڈالر کتنی آمدنی پیدا کرتا ہے"
+    ],
+    "metaTitle": "گوگل سرچ ایڈز ایجنسی | PPC مینجمنٹ | PakSoft",
+    "metaDescription": "اعلیٰ ROI گوگل سرچ ایڈز کے ساتھ تلاش کے نتائج پر غلبہ حاصل کریں۔ ہم آپ کے CPC کو کم کرنے اور فروخت بڑھانے کے لیے کلیدی الفاظ کو بہتر بناتے ہیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "دریافت اور کی ورڈ ریسرچ",
+          "description": "ہم آپ کے صارفین کے استعمال کردہ درست اصطلاحات کو دریافت کرنے کے لیے گہری تحقیق کرتے ہیں۔ ہمارا فوکس خریداری کے ارادے والے کی ورڈز پر ہوتا ہے۔"
+        },
+        {
+          "step": 2,
+          "title": "مہم اور ایڈ گروپ کا ڈھانچہ",
+          "description": "ہم انتہائی باریک بینی سے اکاؤنٹس ترتیب دیتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ صارف کی تلاش، اشتہار کی کاپی اور لینڈنگ پیج آپس میں بالکل مماثل ہوں۔"
+        },
+        {
+          "step": 3,
+          "title": "قائل کرنے والی کاپی رائٹنگ",
+          "description": "ہمارے کاپی رائٹرز دلکش سرخیاں اور تفصیلات تیار کرتے ہیں جو آپ کی منفرد خوبیوں کو نمایاں کرتی ہیں اور تمام دستیاب ایکسٹینشنز کا استعمال کرتی ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "ٹریکنگ اور ایٹریبیوشن کا سیٹ اپ",
+          "description": "ہم گوگل ٹیگ مینیجر کے ذریعے فول پروف ٹریکنگ نافذ کرتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ ہر لیڈ کا درست کلیدی لفظ سے تعلق جڑا ہوا ہے۔"
+        },
+        {
+          "step": 5,
+          "title": "لانچ اور اسمارٹ بڈنگ",
+          "description": "ہم مہمات شروع کرتے ہیں اور ریئل ٹائم میں بولی لگانے کو خودکار بنانے کے لیے گوگل کے اسمارٹ بڈنگ الگورتھم کو درست کنورژن ڈیٹا فراہم کرتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "جاری بہتری اور آپٹیمائزیشن",
+          "description": "ہم روزانہ سرچ ٹرم رپورٹس کا جائزہ لیتے ہیں تاکہ منفی کلیدی الفاظ شامل کیے جا سکیں، ناقص اشتہارات کو روکا جا سکے اور کارکردگی بہتر بنائی جا سکے۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "گوگل سرچ ایڈز کے ساتھ نتائج دیکھنے میں کتنا وقت لگتا ہے؟",
+          "answer": "SEO کے برعکس جسے مہینوں لگتے ہیں، گوگل اشتہارات لانچ ہونے کے 24 گھنٹے کے اندر ٹریفک پیدا کر سکتے ہیں۔ تاہم، بہترین CPA تک پہنچنے میں 2-4 ہفتے لگتے ہیں۔"
+        },
+        {
+          "question": "میری موجودہ گوگل ایڈز مہم کیوں پیسے کھو رہی ہے؟",
+          "answer": "زیادہ تر خود زیر انتظام اکاؤنٹس براڈ میچ کی ورڈز، منفی کی ورڈز کی کمی، خراب ٹریکنگ، اور ٹریفک کو مخصوص لینڈنگ پیج کے بجائے ہوم پیج پر بھیجنے کی وجہ سے پیسے کھوتے ہیں۔"
+        },
+        {
+          "question": "کوالٹی سکور (Quality Score) کیا ہے اور یہ کیوں اہم ہے؟",
+          "answer": "کوالٹی سکور گوگل کی طرف سے آپ کے کلیدی الفاظ، اشتہار کی کاپی اور لینڈنگ پیج کی مطابقت کی درجہ بندی ہے۔ اعلیٰ کوالٹی سکور آپ کی لاگت کو کم کرتا ہے۔"
+        },
+        {
+          "question": "کیا مجھے اپنے حریف کے ناموں پر بولی لگانی چاہیے؟",
+          "answer": "ہاں، حریفوں کو نشانہ بنانا انتہائی موثر ہے۔ اگر کوئی آپ کے حریف کو تلاش کر رہا ہے تو وہ آپ کی سروس کے لیے مارکیٹ میں ہے۔ ہم انہیں آپ کا اشتہار دکھا سکتے ہیں۔"
+        },
+        {
+          "question": "کیا مجھے اپنے اشتہارات کے لیے ایک نئے لینڈنگ پیج کی ضرورت ہے؟",
+          "answer": "90% معاملات میں، ہاں۔ ادا شدہ ٹریفک کو ہوم پیج پر بھیجنا تبادلوں کی شرح کو کم کر دیتا ہے۔ ہم اشتہار کے ارادے سے مماثل مخصوص لینڈنگ پیجز کی سفارش کرتے ہیں۔"
+        },
+        {
+          "question": "آپ بوٹس اور کلک فراڈ کو کیسے روکتے ہیں؟",
+          "answer": "ہم آئی پی کو خارج کرنے کی فہرستیں استعمال کرتے ہیں، اور اس بات کو یقینی بنانے کے لیے تھرڈ پارٹی سافٹ ویئر کو مربوط کر سکتے ہیں کہ آپ صرف حقیقی انسانوں کے لیے ادائیگی کریں۔"
+        },
+        {
+          "question": "شروع کرنے کے لیے آپ کتنے بجٹ کی سفارش کرتے ہیں؟",
+          "answer": "یہ بڑی حد تک آپ کی صنعت کے CPC پر منحصر ہے۔ تاہم، ہم عام طور پر الگورتھم کو مناسب طریقے سے بہتر بنانے کے لیے کم از کم $2,000 ماہانہ کی سفارش کرتے ہیں۔"
+        },
+        {
+          "question": "کیا آپ آٹومیشن استعمال کرتے ہیں یا بولیاں دستی طور پر لگاتے ہیں؟",
+          "answer": "ہم ایک ہائبرڈ اپروچ استعمال کرتے ہیں۔ ہم دستی طور پر اکاؤنٹ کی تشکیل کرتے ہیں لیکن ریئل ٹائم بولیوں کے لیے گوگل کی اسمارٹ بڈنگ کا فائدہ اٹھاتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "googleads",
+          "name": "Google Ads"
+        },
+        {
+          "icon": "analytics",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Tag Manager"
+        },
+        {
+          "icon": "python",
+          "name": "Optmyzr"
+        },
+        {
+          "icon": "search",
+          "name": "SpyFu / Semrush"
+        },
+        {
+          "icon": "unbounce",
+          "name": "Unbounce"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "إعلانات بحث جوجل",
+    "shortDescription": "التقط العملاء المحتملين في اللحظة الدقيقة التي يبحثون فيها عن خدماتك. نحن نبني حملات بحث جوجل عالية العائد (ROI) تتصدر نتائج البحث الأولى.",
+    "fullDescription": "عندما يبحث شخص ما عن منتجك أو خدمتك على جوجل، فإنه يكون بالفعل في أسفل مسار التحويل - لديه مشكلة ويبحث بنشاط عن حل. إذا لم تقم بتقديم عروض أسعار على هذه الكلمات الرئيسية، فإن منافسيك يسرقون إيراداتك. ومع ذلك، فإن مجرد إلقاء الأموال على إعلانات جوجل دون هيكل محسن يضمن إهدار الإنفاق الإعلاني. إدارة إعلانات بحث جوجل لدينا مهووسة بعائد الاستثمار (ROI). نقوم بإجراء بحث شامل عن الكلمات الرئيسية لتحديد مصطلحات البحث طويلة الذيل وعالية النية، بينما نعمل بقوة على تقليص الإنفاق المهدر باستخدام قوائم الكلمات السلبية الواسعة. نحن نهيكل حملاتك رياضياً، ونقوم بمحاذاة نسخة إعلانية شديدة الصلة مع صفحات هبوط مخصصة لتعزيز نقاط الجودة (Quality Score) وخفض تكلفة النقرة (CPC). من خلال الاستفادة من استراتيجيات عروض الأسعار الذكية المتقدمة واختبارات A/B الصارمة، نضمن أن كل دولار يتم إنفاقه يجلب حركة مرور مؤهلة وجاهزة للتحويل إلى عملك.",
+    "features": [
+      "استراتيجية وبحث عن الكلمات الرئيسية عالية النية",
+      "إدارة صارمة للكلمات الرئيسية السلبية",
+      "كتابة الإعلانات واختبارات التقسيم A/B",
+      "تحسين نقاط الجودة وصفحات الهبوط",
+      "تكوين خوارزمية عروض الأسعار الذكية",
+      "إعداد شامل لإضافات الإعلانات",
+      "حملات استهداف المنافسين",
+      "تتبع التحويل وإسناد عائد الاستثمار الإعلاني (ROAS)"
+    ],
+    "benefits": [
+      "الظهور في أعلى نتائج جوجل فوراً للكلمات الرئيسية الأكثر قيمة",
+      "التقاط المستخدمين الذين لديهم نية شراء عالية في الوقت الحالي",
+      "التوقف عن إهدار الميزانية على النقرات غير ذات الصلة بكلمات سلبية صارمة",
+      "خفض تكلفة النقرة (CPC) من خلال تحسين نقاط الجودة",
+      "التفوق على منافسيك، حتى لو كانت ميزانياتهم أكبر",
+      "معرفة مقدار الإيرادات التي يولدها كل دولار إعلاني بدقة"
+    ],
+    "metaTitle": "وكالة إعلانات بحث جوجل | إدارة PPC | PakSoft",
+    "metaDescription": "سيطر على نتائج البحث باستخدام إعلانات جوجل. نقوم بتحسين الكلمات الرئيسية ونسخ الإعلانات واستراتيجيات عروض الأسعار لخفض تكلفة النقرة وزيادة المبيعات.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "الاكتشاف والبحث عن الكلمات الرئيسية",
+          "description": "نتعمق في مجال عملك لاكتشاف المصطلحات الدقيقة التي يستخدمها عملاؤك. نركز على الكلمات ذات النية العالية في أسفل مسار التحويل."
+        },
+        {
+          "step": 2,
+          "title": "هيكلة الحملة والمجموعات الإعلانية",
+          "description": "نبني هياكل حساب دقيقة للغاية لضمان تطابق استعلام البحث بدقة مع نسخة الإعلان وتجربة صفحة الهبوط."
+        },
+        {
+          "step": 3,
+          "title": "كتابة إعلانات مقنعة",
+          "description": "يصوغ كتابنا عناوين وأوصافاً مقنعة تسلط الضوء على عروض البيع الفريدة الخاصة بك وتستفيد من جميع إضافات الإعلانات."
+        },
+        {
+          "step": 4,
+          "title": "إعداد التتبع والإسناد",
+          "description": "ننفذ تتبعاً مضاداً للرصاص عبر Google Tag Manager لضمان إسناد كل عميل محتمل أو مكالمة هاتفية تماماً للكلمة الرئيسية الصحيحة."
+        },
+        {
+          "step": 5,
+          "title": "الإطلاق وعروض الأسعار الذكية",
+          "description": "نطلق الحملات ونغذي بيانات التحويل الدقيقة لخوارزميات العطاءات الذكية من جوجل لأتمتة تحسين عروض الأسعار في الوقت الفعلي."
+        },
+        {
+          "step": 6,
+          "title": "التقليم والتحسين المستمر",
+          "description": "نراجع تقارير مصطلحات البحث يومياً لإضافة كلمات رئيسية سلبية، وإيقاف الإعلانات ضعيفة الأداء، واختبار نسخ جديدة باستمرار."
+        }
+      ],
+      "faq": [
+        {
+          "question": "كم من الوقت يستغرق رؤية النتائج مع إعلانات بحث جوجل؟",
+          "answer": "على عكس SEO الذي يستغرق أشهراً، يمكن أن تولد الإعلانات حركة مرور وعملاء خلال 24 ساعة من الإطلاق. ومع ذلك، يستغرق الأمر 2-4 أسابيع من التحسين للوصول لتكلفة اكتساب مربحة."
+        },
+        {
+          "question": "لماذا تخسر حملتي الحالية على إعلانات جوجل الأموال؟",
+          "answer": "تخسر معظم الحسابات المدارة ذاتياً بسبب المطابقة التقريبية للكلمات، ونقص الكلمات السلبية، وسوء التتبع، وتوجيه حركة المرور المدفوعة إلى الصفحة الرئيسية بدلاً من صفحات هبوط مخصصة."
+        },
+        {
+          "question": "ما هي نقاط الجودة (Quality Score) ولماذا هي مهمة؟",
+          "answer": "نقاط الجودة هي تصنيف جوجل لمدى صلة كلماتك الرئيسية وإعلانك وصفحة هبوطك. تتيح لك النقاط الأعلى دفع أقل لكل نقرة والتفوق على المنافسين الذين يدفعون أكثر."
+        },
+        {
+          "question": "هل يجب أن أقوم بالمزايدة على أسماء منافسي؟",
+          "answer": "نعم، استهداف المنافسين فعال للغاية. إذا كان شخص ما يبحث عن منافسك، فهو في السوق لخدمتك. يمكننا أن نعرض لهم إعلاناً يوضح سبب كونك الخيار الأفضل."
+        },
+        {
+          "question": "هل أحتاج إلى صفحة هبوط جديدة لإعلاناتي؟",
+          "answer": "في 90٪ من الحالات، نعم. إرسال الزيارات إلى صفحة رئيسية عامة يقلل بشكل كبير من التحويلات. نوصي بشدة بصفحات هبوط مخصصة ومحسنة تتطابق مع نية الإعلان."
+        },
+        {
+          "question": "كيف توقفون الروبوتات والاحتيال في النقرات؟",
+          "answer": "نستخدم قوائم استبعاد IP، ونراقب أنماط السلوك المشبوهة، ويمكننا دمج برامج حماية تابعة لجهات خارجية لضمان دفعك فقط لزيارات بشرية حقيقية."
+        },
+        {
+          "question": "ما هي الميزانية التي توصي بالبدء بها؟",
+          "answer": "يعتمد هذا بشدة على تكلفة النقرة في مجالك. ومع ذلك، نوصي عموماً بحد أدنى لإنفاق 2000 دولار شهرياً لتوليد بيانات نقرات كافية للخوارزمية للتحسين بشكل صحيح."
+        },
+        {
+          "question": "هل تستخدمون الأتمتة أم تديرون عروض الأسعار يدوياً؟",
+          "answer": "نستخدم نهجاً هجيناً. نهيكل الحساب يدوياً ونتحكم في الكلمات السلبية، لكننا نستفيد من التعلم الآلي لـ Google (Smart Bidding) لتعديلات عروض الأسعار في الوقت الفعلي."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "googleads",
+          "name": "Google Ads"
+        },
+        {
+          "icon": "analytics",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Tag Manager"
+        },
+        {
+          "icon": "python",
+          "name": "Optmyzr"
+        },
+        {
+          "icon": "search",
+          "name": "SpyFu / Semrush"
+        },
+        {
+          "icon": "unbounce",
+          "name": "Unbounce"
+        }
+      ]
+    }
+  }
+}

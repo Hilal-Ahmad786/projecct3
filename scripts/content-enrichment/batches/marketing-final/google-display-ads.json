@@ -1,0 +1,598 @@
+{
+  "slug": "google-display-ads",
+  "en": {
+    "name": "Google Display Ads",
+    "shortDescription": "Keep your brand top-of-mind. We design and execute highly targeted Google Display Network campaigns to build brand awareness and retarget past visitors.",
+    "fullDescription": "While Search Ads capture intent, Google Display Ads create demand. With access to over two million websites, apps, and videos, the Google Display Network (GDN) allows you to reach 90% of global internet users. However, without precise targeting and compelling creative, display advertising can quickly burn through your budget with low-quality clicks. Our Display Ads service focuses on strategic placements, audience intent, and intelligent remarketing. We utilize advanced targeting options—such as custom affinity audiences, in-market segments, and contextual placements—to ensure your banner ads only appear on highly relevant websites. Our creative team designs striking, responsive display ads that capture attention without being intrusive. We use Display campaigns primarily to build top-of-funnel brand awareness and, most importantly, to execute aggressive remarketing campaigns that follow your unconverted website visitors, keeping your brand top-of-mind until they are ready to buy.",
+    "features": [
+      "Custom Affinity & In-Market Audience Targeting",
+      "Intelligent Remarketing & Retargeting Campaigns",
+      "Contextual Website Placement Targeting",
+      "Responsive Display Ad (RDA) Creation",
+      "HTML5 Animated Banner Ad Design",
+      "Placement Exclusion & Brand Safety Filtering",
+      "Cross-Device Tracking & Attribution",
+      "A/B Testing for Visuals and Copy"
+    ],
+    "benefits": [
+      "Reach a massive, global audience across millions of websites",
+      "Bring unconverted visitors back to your site with remarketing",
+      "Build strong brand awareness at a very low Cost Per Click (CPC)",
+      "Target users based on their recent browsing behavior and interests",
+      "Protect your brand image with strict placement exclusions",
+      "Support your search campaigns by generating initial brand interest"
+    ],
+    "metaTitle": "Google Display Ads Agency | GDN Marketing | PakSoft",
+    "metaDescription": "Build brand awareness and retarget past visitors with Google Display Ads. We design stunning banners and manage high-ROI GDN campaigns.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Audience Strategy & Targeting",
+          "description": "We define who needs to see your ads by building custom affinity audiences, analyzing your competitor's traffic, and defining strict demographic parameters."
+        },
+        {
+          "step": 2,
+          "title": "Creative Design & Copywriting",
+          "description": "Our designers create a suite of visually compelling banners, including Responsive Display Ads (RDAs) and HTML5 formats, tailored to your brand identity."
+        },
+        {
+          "step": 3,
+          "title": "Campaign Structuring",
+          "description": "We build campaigns separating prospecting (new audiences) from remarketing (past visitors), allowing for precise budget control and distinct messaging."
+        },
+        {
+          "step": 4,
+          "title": "Placement Auditing & Launch",
+          "description": "Before launch, we set strict negative placements to prevent your ads from showing on low-quality mobile games, irrelevant apps, or unsafe content."
+        },
+        {
+          "step": 5,
+          "title": "Remarketing Implementation",
+          "description": "We segment your past website visitors (e.g., 'abandoned cart', 'viewed pricing') and serve them highly specific ads to pull them back into the sales funnel."
+        },
+        {
+          "step": 6,
+          "title": "Continuous Optimization",
+          "description": "We monitor performance daily, pausing underperforming creatives, excluding low-converting websites, and reallocating budget to the most profitable audiences."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the difference between Google Search Ads and Display Ads?",
+          "answer": "Search ads appear when users actively type a query into Google (high intent). Display ads are visual banners shown on other websites while users are browsing (building awareness and demand)."
+        },
+        {
+          "question": "Do Display Ads actually convert?",
+          "answer": "For cold prospecting, Display ads have lower conversion rates than Search but are much cheaper. However, for Remarketing (showing ads to past visitors), Display ads are highly effective at driving conversions."
+        },
+        {
+          "question": "How do you prevent my ads from showing on spammy websites?",
+          "answer": "We proactively add extensive negative placement lists to block low-quality sites, mobile apps, and irrelevant YouTube channels, ensuring brand safety and budget efficiency."
+        },
+        {
+          "question": "Do I need to provide the banner designs?",
+          "answer": "No. Our in-house creative team designs all the necessary banners (both static and responsive formats) as part of our comprehensive management service."
+        },
+        {
+          "question": "What is Remarketing / Retargeting?",
+          "answer": "Remarketing uses a tracking cookie to 'follow' users who visited your website but didn't buy. We then show them your ads on other websites to remind them to come back and complete the purchase."
+        },
+        {
+          "question": "What are Responsive Display Ads (RDAs)?",
+          "answer": "RDAs are ads where we provide Google with various images, logos, and text headlines. Google's machine learning then mixes and matches them to fit perfectly into any available ad space on the network."
+        },
+        {
+          "question": "Are Display Ads good for B2B?",
+          "answer": "Yes, specifically for remarketing and targeted industry placements. We can show your ads on specific industry news websites or to users searching for B2B software solutions."
+        },
+        {
+          "question": "How do you measure success on the Display Network?",
+          "answer": "For remarketing, we measure direct conversions and CPA. For top-of-funnel prospecting campaigns, we measure View-Through Conversions, click-through rates (CTR), and overall brand lift."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "googleads",
+          "name": "Google Ads"
+        },
+        {
+          "icon": "analytics",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "adobe",
+          "name": "Adobe Photoshop / Illustrator"
+        },
+        {
+          "icon": "canva",
+          "name": "Canva"
+        },
+        {
+          "icon": "html5",
+          "name": "HTML5 Ad Builders"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Looker Studio"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Google Görüntülü Reklam Ağı (GDN)",
+    "shortDescription": "Markanızı akıllarda tutun. Marka bilinirliği oluşturmak ve geçmiş ziyaretçileri yeniden hedeflemek için yüksek oranda hedeflenmiş Google Görüntülü Reklam kampanyaları tasarlıyor ve yürütüyoruz.",
+    "fullDescription": "Arama Ağı Reklamları niyeti (intent) yakalarken, Google Görüntülü Reklamlar (Display Ads) talep yaratır. İki milyondan fazla web sitesine, uygulamaya ve videoya erişimi olan Google Görüntülü Reklam Ağı (GDN), küresel internet kullanıcılarının %90'ına ulaşmanızı sağlar. Ancak, hassas hedefleme ve ilgi çekici yaratıcılık olmadan, görüntülü reklamcılık bütçenizi düşük kaliteli tıklamalarla hızla tüketebilir. Görüntülü Reklam hizmetimiz, stratejik yerleşimlere, kitle niyetine ve akıllı yeniden pazarlamaya odaklanır. Banner reklamlarınızın yalnızca son derece alakalı web sitelerinde görünmesini sağlamak için özel yakın ilgi alanı kitleleri, pazardaki segmentler ve bağlamsal yerleşimler gibi gelişmiş hedefleme seçeneklerinden yararlanıyoruz. Yaratıcı ekibimiz, dikkat çekici, duyarlı (responsive) görüntülü reklamlar tasarlar. Görüntülü Reklam kampanyalarını temel olarak marka bilinirliği oluşturmak ve en önemlisi dönüşüm sağlamamış web sitesi ziyaretçilerinizi satın almaya hazır olana kadar takip eden agresif yeniden pazarlama (remarketing) kampanyaları yürütmek için kullanırız.",
+    "features": [
+      "Özel Yakın İlgi Alanı ve Pazardaki Kitle Hedeflemesi",
+      "Akıllı Yeniden Pazarlama (Remarketing) Kampanyaları",
+      "Bağlamsal Web Sitesi Yerleşimi Hedeflemesi",
+      "Duyarlı Görüntülü Reklam (RDA) Oluşturma",
+      "HTML5 Animasyonlu Banner Reklam Tasarımı",
+      "Yerleşim Hariç Tutma ve Marka Güvenliği Filtreleme",
+      "Cihazlar Arası İzleme ve İlişkilendirme",
+      "Görseller ve Metinler için A/B Testi"
+    ],
+    "benefits": [
+      "Milyonlarca web sitesinde devasa, küresel bir kitleye ulaşın",
+      "Yeniden pazarlama ile dönüşüm sağlamamış ziyaretçileri sitenize geri getirin",
+      "Çok düşük bir Tıklama Başına Maliyetle (CPC) güçlü marka bilinirliği oluşturun",
+      "Kullanıcıları son tarama davranışlarına ve ilgi alanlarına göre hedefleyin",
+      "Kesin yerleşim hariç tutmaları ile marka imajınızı koruyun",
+      "İlk marka ilgisini yaratarak arama kampanyalarınızı destekleyin"
+    ],
+    "metaTitle": "Google Görüntülü Reklam Ajansı | GDN Reklamları | PakSoft",
+    "metaDescription": "Google Görüntülü Reklamlar ile marka bilinirliği oluşturun ve geçmiş ziyaretçileri yeniden hedefleyin. Yüksek dönüşümlü banner'lar tasarlıyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Kitle Stratejisi ve Hedefleme",
+          "description": "Özel yakın ilgi alanı kitleleri oluşturarak, rakip trafiğini analiz ederek ve katı demografik parametreler belirleyerek reklamlarınızı kimlerin görmesi gerektiğini tanımlıyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Yaratıcı Tasarım ve Metin Yazarlığı",
+          "description": "Tasarımcılarımız, Duyarlı Görüntülü Reklamlar (RDA) ve HTML5 formatları dahil olmak üzere, marka kimliğinize uygun görsel olarak ilgi çekici banner'lar oluşturur."
+        },
+        {
+          "step": 3,
+          "title": "Kampanya Yapılandırması",
+          "description": "Yeni kitleleri (prospecting) yeniden pazarlamadan (remarketing) ayırarak, hassas bütçe kontrolü ve farklı mesajlaşma sağlayan kampanyalar oluşturuyoruz."
+        },
+        {
+          "step": 4,
+          "title": "Yerleşim Denetimi ve Lansman",
+          "description": "Lansmandan önce, reklamlarınızın düşük kaliteli mobil oyunlarda, ilgisiz uygulamalarda veya güvenli olmayan içeriklerde görünmesini engellemek için katı negatif yerleşimler belirliyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Yeniden Pazarlama (Remarketing) Uygulaması",
+          "description": "Geçmiş web sitesi ziyaretçilerinizi segmentlere ayırıyor (örneğin 'sepeti terk edenler') ve onları satış hunisine geri çekmek için son derece spesifik reklamlar sunuyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Sürekli Optimizasyon",
+          "description": "Performansı günlük olarak izliyor, düşük performans gösteren görselleri duraklatıyor, düşük dönüşüm sağlayan web sitelerini hariç tutuyor ve bütçeyi en karlı kitlelere yeniden tahsis ediyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Google Arama Ağı Reklamları ile Görüntülü Reklamlar arasındaki fark nedir?",
+          "answer": "Arama ağı reklamları, kullanıcılar aktif olarak Google'a bir sorgu yazdıklarında (yüksek niyet) görünür. Görüntülü reklamlar, kullanıcılar gezinirken diğer web sitelerinde gösterilen görsel banner'lardır."
+        },
+        {
+          "question": "Görüntülü Reklamlar gerçekten dönüşüm sağlıyor mu?",
+          "answer": "Soğuk kitleler için Görüntülü reklamların dönüşüm oranları Arama Ağı'na göre daha düşüktür ancak çok daha ucuzdur. Ancak Yeniden Pazarlama (geçmiş ziyaretçilere gösterme) için oldukça etkilidir."
+        },
+        {
+          "question": "Reklamlarımın spam sitelerde görünmesini nasıl engelliyorsunuz?",
+          "answer": "Düşük kaliteli siteleri, mobil uygulamaları ve ilgisiz YouTube kanallarını engellemek için proaktif olarak kapsamlı negatif yerleşim listeleri ekliyoruz, marka güvenliğini sağlıyoruz."
+        },
+        {
+          "question": "Banner tasarımlarını benim mi sağlamam gerekiyor?",
+          "answer": "Hayır. Kurum içi yaratıcı ekibimiz, kapsamlı yönetim hizmetimizin bir parçası olarak gerekli tüm banner'ları (hem statik hem de duyarlı formatlarda) tasarlar."
+        },
+        {
+          "question": "Yeniden Pazarlama / Yeniden Hedefleme (Remarketing) nedir?",
+          "answer": "Yeniden pazarlama, web sitenizi ziyaret eden ancak satın almayan kullanıcıları 'takip etmek' için bir izleme çerezi kullanır. Geri dönmelerini hatırlatmak için diğer sitelerde reklam gösteririz."
+        },
+        {
+          "question": "Duyarlı Görüntülü Reklamlar (RDA) nedir?",
+          "answer": "Google'a çeşitli resimler, logolar ve metin başlıkları sağladığımız reklamlardır. Google'ın makine öğrenimi daha sonra bunları herhangi bir reklam alanına mükemmel şekilde sığdırmak için eşleştirir."
+        },
+        {
+          "question": "Görüntülü Reklamlar B2B için iyi midir?",
+          "answer": "Evet, özellikle yeniden pazarlama ve hedeflenmiş sektör yerleşimleri için. Reklamlarınızı belirli sektörel haber sitelerinde veya B2B yazılım çözümleri arayan kullanıcılara gösterebiliriz."
+        },
+        {
+          "question": "Görüntülü Reklam Ağı'nda başarıyı nasıl ölçüyorsunuz?",
+          "answer": "Yeniden pazarlama için doğrudan dönüşümleri ve CPA'yı ölçüyoruz. Huni üstü kampanyalar için Görüntüleme Dönüşümlerini (View-Through), tıklama oranlarını (CTR) ve genel marka bilinirliğini ölçüyoruz."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "googleads",
+          "name": "Google Ads"
+        },
+        {
+          "icon": "analytics",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "adobe",
+          "name": "Adobe Photoshop / Illustrator"
+        },
+        {
+          "icon": "canva",
+          "name": "Canva"
+        },
+        {
+          "icon": "html5",
+          "name": "HTML5 Ad Builders"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Looker Studio"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Google Display Ads",
+    "shortDescription": "Bleiben Sie im Gedächtnis. Wir entwerfen und führen zielgerichtete Google Display Network-Kampagnen durch, um Markenbekanntheit aufzubauen und Besucher erneut anzusprechen.",
+    "fullDescription": "Während Suchanzeigen die Kaufabsicht erfassen, schaffen Google Display Ads Nachfrage. Mit Zugang zu über zwei Millionen Websites und Apps ermöglicht das Google Display Network (GDN), 90 % der globalen Internetnutzer zu erreichen. Ohne präzises Targeting verbrennt Display-Werbung jedoch schnell Ihr Budget durch Klicks geringer Qualität. Unser Service konzentriert sich auf strategische Platzierungen und intelligentes Remarketing. Wir nutzen erweiterte Targeting-Optionen wie kaufbereite Zielgruppen und kontextbezogene Platzierungen, damit Ihre Banner nur auf relevanten Websites erscheinen. Unser Kreativteam entwirft ansprechende, responsive Display-Anzeigen, die Aufmerksamkeit erregen. Wir nutzen Display-Kampagnen primär zum Aufbau von Markenbewusstsein und für aggressive Remarketing-Kampagnen, die unkonvertierte Besucher zurückholen.",
+    "features": [
+      "Zielgruppen mit gemeinsamen Interessen & kaufbereite Zielgruppen",
+      "Intelligente Remarketing- & Retargeting-Kampagnen",
+      "Kontextbezogenes Targeting von Website-Platzierungen",
+      "Erstellung responsiver Display-Anzeigen (RDA)",
+      "Design von HTML5-animierten Banner-Anzeigen",
+      "Ausschluss von Platzierungen & Markensicherheit",
+      "Geräteübergreifendes Tracking & Attribution",
+      "A/B-Testing für Bilder und Texte"
+    ],
+    "benefits": [
+      "Erreichen Sie ein riesiges, globales Publikum auf Millionen von Websites",
+      "Bringen Sie unkonvertierte Besucher durch Remarketing zurück auf Ihre Seite",
+      "Bauen Sie starke Markenbekanntheit zu sehr niedrigen Klickpreisen (CPC) auf",
+      "Sprechen Sie Nutzer basierend auf ihrem Surfverhalten und ihren Interessen an",
+      "Schützen Sie Ihr Markenimage durch strikte Ausschlüsse von Platzierungen",
+      "Unterstützen Sie Ihre Suchkampagnen durch Generierung von Markeninteresse"
+    ],
+    "metaTitle": "Google Display Ads Agentur | GDN Marketing | PakSoft",
+    "metaDescription": "Bauen Sie Markenbekanntheit auf und retargeten Sie Besucher mit Google Display Ads. Wir verwalten GDN-Kampagnen mit hohem ROI.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Zielgruppenstrategie & Targeting",
+          "description": "Wir definieren, wer Ihre Anzeigen sehen soll, indem wir benutzerdefinierte Zielgruppen aufbauen und Konkurrenz-Traffic analysieren."
+        },
+        {
+          "step": 2,
+          "title": "Creative Design & Copywriting",
+          "description": "Unsere Designer erstellen visuell überzeugende Banner, einschließlich RDAs und HTML5-Formaten, die zu Ihrer Marke passen."
+        },
+        {
+          "step": 3,
+          "title": "Kampagnenstrukturierung",
+          "description": "Wir trennen Kampagnen zur Neukundengewinnung (Prospecting) strikt vom Remarketing, was präzise Budgetkontrolle ermöglicht."
+        },
+        {
+          "step": 4,
+          "title": "Platzierungs-Audit & Launch",
+          "description": "Vor dem Start schließen wir minderwertige mobile Apps, irrelevante Websites und unsichere Inhalte proaktiv aus."
+        },
+        {
+          "step": 5,
+          "title": "Remarketing-Implementierung",
+          "description": "Wir segmentieren frühere Website-Besucher (z. B. 'Warenkorbabbrecher') und zeigen ihnen gezielte Anzeigen, um sie zurückzuholen."
+        },
+        {
+          "step": 6,
+          "title": "Kontinuierliche Optimierung",
+          "description": "Wir überwachen die Leistung täglich, pausieren leistungsschwache Creatives und verlagern das Budget auf profitable Zielgruppen."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist der Unterschied zwischen Such- und Display-Anzeigen?",
+          "answer": "Suchanzeigen erscheinen, wenn Nutzer aktiv in Google suchen (hohe Absicht). Display-Anzeigen sind visuelle Banner auf anderen Websites."
+        },
+        {
+          "question": "Konvertieren Display-Anzeigen wirklich?",
+          "answer": "Für die Neukundengewinnung sind die Konversionsraten niedriger als bei der Suche, aber viel billiger. Für Remarketing sind sie hochgradig effektiv."
+        },
+        {
+          "question": "Wie verhindern Sie, dass meine Anzeigen auf Spam-Websites erscheinen?",
+          "answer": "Wir fügen proaktiv umfangreiche Listen mit negativen Platzierungen hinzu, um minderwertige Sites und mobile Spiele-Apps zu blockieren."
+        },
+        {
+          "question": "Muss ich die Banner-Designs bereitstellen?",
+          "answer": "Nein. Unser Inhouse-Kreativteam entwirft alle notwendigen Banner (statisch und responsiv) als Teil unseres Management-Services."
+        },
+        {
+          "question": "Was ist Remarketing / Retargeting?",
+          "answer": "Wir verfolgen Besucher, die nicht gekauft haben, mit einem Cookie. Anschließend zeigen wir ihnen Anzeigen auf anderen Websites, um sie an den Kauf zu erinnern."
+        },
+        {
+          "question": "Was sind responsive Display-Anzeigen (RDAs)?",
+          "answer": "Wir stellen Google Bilder, Logos und Texte zur Verfügung. Googles KI mischt sie, um sie perfekt an jeden verfügbaren Werbeplatz im Netzwerk anzupassen."
+        },
+        {
+          "question": "Sind Display-Anzeigen gut für B2B?",
+          "answer": "Ja, insbesondere für Remarketing und gezielte Branchenplatzierungen (z. B. auf spezifischen B2B-Nachrichten-Websites)."
+        },
+        {
+          "question": "Wie messen Sie den Erfolg im Display-Netzwerk?",
+          "answer": "Beim Remarketing messen wir direkte Conversions und CPA. Bei Prospecting-Kampagnen messen wir View-Through-Conversions, Klickraten (CTR) und den Brand Lift."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "googleads",
+          "name": "Google Ads"
+        },
+        {
+          "icon": "analytics",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "adobe",
+          "name": "Adobe Photoshop / Illustrator"
+        },
+        {
+          "icon": "canva",
+          "name": "Canva"
+        },
+        {
+          "icon": "html5",
+          "name": "HTML5 Ad Builders"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Looker Studio"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "گوگل ڈسپلے ایڈز",
+    "shortDescription": "اپنے برانڈ کو یادگار بنائیں۔ ہم برانڈ بیداری پیدا کرنے اور ماضی کے زائرین کو دوبارہ ہدف بنانے کے لیے انتہائی ٹارگٹڈ گوگل ڈسپلے نیٹ ورک مہمات ڈیزائن کرتے ہیں۔",
+    "fullDescription": "جبکہ سرچ اشتہارات ارادے (intent) کو اپنی گرفت میں لیتے ہیں، گوگل ڈسپلے ایڈز طلب (demand) پیدا کرتے ہیں۔ 20 لاکھ سے زائد ویب سائٹس اور ایپس تک رسائی کے ساتھ، گوگل ڈسپلے نیٹ ورک (GDN) آپ کو عالمی انٹرنیٹ صارفین کے 90% تک پہنچنے کی اجازت دیتا ہے۔ تاہم، درست ہدف بندی اور زبردست تخلیقی اشتہارات کے بغیر، ڈسپلے ایڈورٹائزنگ آپ کا بجٹ تیزی سے ضائع کر سکتی ہے۔ ہماری ڈسپلے ایڈز کی سروس اسٹریٹجک پلیسمنٹس، سامعین کے ارادے، اور ذہین ری مارکیٹنگ پر مرکوز ہے۔ ہم اعلیٰ ہدف بندی کے آپشنز استعمال کرتے ہیں—جیسے حسب ضرورت وابستگی والے سامعین اور سیاق و سباق کی جگہوں کا انتخاب—تاکہ یہ یقینی بنایا جا سکے کہ آپ کے بینر اشتہارات صرف انتہائی متعلقہ ویب سائٹس پر ظاہر ہوں۔ ہماری تخلیقی ٹیم دلکش ڈسپلے اشتہارات ڈیزائن کرتی ہے۔ ہم ڈسپلے مہمات کا استعمال بنیادی طور پر ری مارکیٹنگ کے لیے کرتے ہیں، تاکہ ان زائرین کا پیچھا کیا جا سکے جنہوں نے خریداری نہیں کی۔",
+    "features": [
+      "حسب ضرورت وابستگی اور ان مارکیٹ آڈینس ٹارگٹنگ",
+      "ذہین ری مارکیٹنگ اور ری ٹارگٹنگ مہمات",
+      "سیاق و سباق کے لحاظ سے ویب سائٹ کی جگہ کا ہدف",
+      "ریسپانسیو ڈسپلے ایڈ (RDA) کی تخلیق",
+      "HTML5 اینیمیٹڈ بینر اشتہار کا ڈیزائن",
+      "پلیسمنٹ کا استثنیٰ اور برانڈ سیفٹی فلٹرنگ",
+      "کراس ڈیوائس ٹریکنگ اور ایٹریبیوشن",
+      "بصری اور کاپی کے لیے A/B ٹیسٹنگ"
+    ],
+    "benefits": [
+      "لاکھوں ویب سائٹس پر ایک بڑے، عالمی سامعین تک پہنچیں",
+      "ری مارکیٹنگ کے ذریعے غیر خریدار زائرین کو اپنی سائٹ پر واپس لائیں",
+      "بہت کم قیمت فی کلک (CPC) پر مضبوط برانڈ بیداری پیدا کریں",
+      "صارفین کی براؤزنگ کی عادات اور دلچسپیوں کی بنیاد پر انہیں نشانہ بنائیں",
+      "سخت پلیسمنٹ استثنیٰ کے ساتھ اپنے برانڈ کے تشخص کی حفاظت کریں",
+      "ابتدائی برانڈ کی دلچسپی پیدا کرکے اپنی سرچ مہمات کی حمایت کریں"
+    ],
+    "metaTitle": "گوگل ڈسپلے ایڈز ایجنسی | GDN مارکیٹنگ | PakSoft",
+    "metaDescription": "گوگل ڈسپلے اشتہارات کے ساتھ برانڈ کی بیداری پیدا کریں اور پچھلے زائرین کو دوبارہ ہدف بنائیں۔ ہم شاندار بینرز ڈیزائن کرتے ہیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "سامعین کی حکمت عملی اور ہدف بندی",
+          "description": "ہم حریفوں کی ٹریفک کا تجزیہ کر کے، اور سخت آبادیاتی پیرامیٹرز کی وضاحت کر کے اس بات کا تعین کرتے ہیں کہ آپ کے اشتہارات کسے دیکھنے چاہئیں۔"
+        },
+        {
+          "step": 2,
+          "title": "تخلیقی ڈیزائن اور کاپی رائٹنگ",
+          "description": "ہمارے ڈیزائنرز آپ کی برانڈ شناخت کے مطابق، ریسپانسیو ڈسپلے ایڈز (RDAs) اور HTML5 فارمیٹس سمیت بصری طور پر دلکش بینرز بناتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "مہم کی ساخت",
+          "description": "ہم پروسپیکٹنگ (نئے سامعین) کو ری مارکیٹنگ سے الگ کر کے مہمات بناتے ہیں، جس سے بجٹ کا درست کنٹرول ممکن ہوتا ہے۔"
+        },
+        {
+          "step": 4,
+          "title": "پلیسمنٹ کا آڈٹ اور لانچ",
+          "description": "لانچ سے پہلے، ہم آپ کے اشتہارات کو کم معیار کی ایپس یا غیر متعلقہ ویب سائٹس پر دکھانے سے روکنے کے لیے منفی جگہیں مقرر کرتے ہیں۔"
+        },
+        {
+          "step": 5,
+          "title": "ری مارکیٹنگ کا نفاذ",
+          "description": "ہم آپ کی ویب سائٹ کے ماضی کے زائرین کو تقسیم کرتے ہیں (جیسے 'کارٹ چھوڑنے والے') اور انہیں سیلز فنل میں واپس کھینچنے کے لیے مخصوص اشتہارات دکھاتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "مسلسل آپٹیمائزیشن",
+          "description": "ہم روزانہ کی بنیاد پر کارکردگی کی نگرانی کرتے ہیں، کمزور کارکردگی والے اشتہارات کو روکتے ہیں، اور بجٹ کو سب سے زیادہ منافع بخش سامعین کے لیے مختص کرتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "گوگل سرچ ایڈز اور ڈسپلے ایڈز میں کیا فرق ہے؟",
+          "answer": "سرچ اشتہارات اس وقت ظاہر ہوتے ہیں جب صارفین گوگل میں کچھ تلاش کرتے ہیں (اعلی ارادہ)۔ ڈسپلے اشتہارات بصری بینرز ہیں جو براؤزنگ کے دوران دوسری ویب سائٹس پر دکھائے جاتے ہیں۔"
+        },
+        {
+          "question": "کیا ڈسپلے ایڈز واقعی کام کرتے ہیں؟",
+          "answer": "نئے لوگوں کے لیے، ڈسپلے اشتہارات میں تبادلوں کی شرح سرچ سے کم ہوتی ہے لیکن یہ بہت سستے ہوتے ہیں۔ تاہم، ری مارکیٹنگ کے لیے یہ انتہائی موثر ہیں۔"
+        },
+        {
+          "question": "آپ میرے اشتہارات کو سپیم ویب سائٹس پر دکھانے سے کیسے روکتے ہیں؟",
+          "answer": "ہم کم معیار کی سائٹس اور غیر متعلقہ ایپس کو بلاک کرنے کے لیے وسیع منفی پلیسمنٹ فہرستیں شامل کرتے ہیں، تاکہ برانڈ محفوظ رہے۔"
+        },
+        {
+          "question": "کیا مجھے بینر کے ڈیزائن فراہم کرنے کی ضرورت ہے؟",
+          "answer": "نہیں۔ ہماری اندرون خانہ تخلیقی ٹیم ہماری جامع انتظامی سروس کے حصے کے طور پر تمام ضروری بینرز خود ڈیزائن کرتی ہے۔"
+        },
+        {
+          "question": "ری مارکیٹنگ / ری ٹارگٹنگ کیا ہے؟",
+          "answer": "ری مارکیٹنگ ان صارفین کا پیچھا کرنے کے لیے ٹریکنگ کوکی کا استعمال کرتی ہے جنہوں نے خریداری کے بغیر سائٹ چھوڑ دی۔ ہم انہیں خریداری مکمل کرنے کی یاد دہانی کے لیے دوسری سائٹس پر اشتہارات دکھاتے ہیں۔"
+        },
+        {
+          "question": "ریسپانسیو ڈسپلے ایڈز (RDAs) کیا ہیں؟",
+          "answer": "یہ وہ اشتہارات ہیں جہاں ہم گوگل کو مختلف تصاویر، لوگو اور متن فراہم کرتے ہیں۔ گوگل کا سسٹم پھر انہیں نیٹ ورک پر دستیاب کسی بھی اشتہاری جگہ میں بالکل فٹ ہونے کے لیے ملا دیتا ہے۔"
+        },
+        {
+          "question": "کیا ڈسپلے ایڈز B2B کے لیے اچھے ہیں؟",
+          "answer": "ہاں، خاص طور پر ری مارکیٹنگ اور مخصوص صنعتوں کی جگہوں کے لیے۔ ہم مخصوص B2B نیوز سائٹس پر آپ کے اشتہارات دکھا سکتے ہیں۔"
+        },
+        {
+          "question": "آپ ڈسپلے نیٹ ورک پر کامیابی کو کیسے ماپتے ہیں؟",
+          "answer": "ری مارکیٹنگ کے لیے، ہم براہ راست فروخت اور CPA کی پیمائش کرتے ہیں۔ برانڈ آگاہی مہمات کے لیے، ہم کلک تھرو ریٹس (CTR) اور مجموعی برانڈ لفٹ کی پیمائش کرتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "googleads",
+          "name": "Google Ads"
+        },
+        {
+          "icon": "analytics",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "adobe",
+          "name": "Adobe Photoshop / Illustrator"
+        },
+        {
+          "icon": "canva",
+          "name": "Canva"
+        },
+        {
+          "icon": "html5",
+          "name": "HTML5 Ad Builders"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Looker Studio"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "إعلانات جوجل الصورية (Display Ads)",
+    "shortDescription": "ابق علامتك التجارية في أذهان العملاء. نقوم بتصميم وتنفيذ حملات إعلانية صورية عالية الاستهداف لبناء الوعي بالعلامة وإعادة استهداف الزوار السابقين.",
+    "fullDescription": "بينما تلتقط إعلانات البحث نية المستخدم، تخلق إعلانات جوجل الصورية (Display Ads) الطلب. مع إمكانية الوصول إلى أكثر من مليوني موقع ويب وتطبيق ومقطع فيديو، تتيح لك شبكة Google الإعلانية (GDN) الوصول إلى 90٪ من مستخدمي الإنترنت. ومع ذلك، بدون استهداف دقيق وتصميم جذاب، يمكن أن تستنزف الإعلانات الصورية ميزانيتك بنقرات منخفضة الجودة. تركز خدمة الإعلانات الصورية لدينا على المواضع الاستراتيجية ونية الجمهور وتجديد النشاط التسويقي (Remarketing) الذكي. نحن نستخدم خيارات استهداف متقدمة للتأكد من ظهور إعلانات البانر الخاصة بك فقط على مواقع الويب ذات الصلة. يصمم فريقنا الإبداعي إعلانات صورية متجاوبة ومذهلة تجذب الانتباه. نحن نستخدم الحملات الصورية بشكل أساسي لبناء الوعي بالعلامة التجارية، والأهم من ذلك، لتنفيذ حملات إعادة استهداف تتبع زوار موقع الويب الخاص بك الذين لم يجروا تحويلاً، لإبقائك في أذهانهم.",
+    "features": [
+      "الاستهداف المخصص للجمهور والاهتمامات",
+      "حملات إعادة الاستهداف وتجديد النشاط التسويقي",
+      "استهداف مواضع مواقع الويب السياقية",
+      "إنشاء إعلانات صورية متجاوبة (RDA)",
+      "تصميم إعلانات البانر المتحركة HTML5",
+      "استبعاد المواضع وفلترة سلامة العلامة التجارية",
+      "التتبع والإسناد عبر الأجهزة",
+      "اختبار A/B للصور والنصوص"
+    ],
+    "benefits": [
+      "الوصول إلى جمهور عالمي ضخم عبر ملايين المواقع",
+      "إعادة الزوار الذين لم يشتروا إلى موقعك عبر إعادة الاستهداف",
+      "بناء وعي قوي بالعلامة بتكلفة نقرة (CPC) منخفضة جداً",
+      "استهداف المستخدمين بناءً على سلوك التصفح الأخير واهتماماتهم",
+      "حماية صورة علامتك باستبعادات صارمة للمواضع غير المرغوبة",
+      "دعم حملات البحث الخاصة بك عن طريق توليد اهتمام أولي"
+    ],
+    "metaTitle": "وكالة إعلانات جوجل الصورية | شبكة GDN | PakSoft",
+    "metaDescription": "قم ببناء الوعي بالعلامة التجارية وإعادة استهداف الزوار باستخدام إعلانات جوجل الصورية. نحن نصمم لافتات مذهلة وندير حملات GDN عالية العائد.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "استراتيجية الجمهور والاستهداف",
+          "description": "نحدد من يجب أن يرى إعلاناتك من خلال بناء جماهير مخصصة، وتحليل حركة مرور منافسيك، وتحديد معلمات ديموغرافية صارمة."
+        },
+        {
+          "step": 2,
+          "title": "التصميم الإبداعي وكتابة الإعلانات",
+          "description": "ينشئ المصممون لدينا مجموعة من اللافتات الجذابة بصرياً، بما في ذلك الإعلانات المتجاوبة (RDA) وتنسيقات HTML5، المصممة لهويتك."
+        },
+        {
+          "step": 3,
+          "title": "هيكلة الحملة",
+          "description": "نبني حملات تفصل بين التنقيب (جماهير جديدة) وبين تجديد النشاط التسويقي، مما يسمح بالتحكم الدقيق في الميزانية."
+        },
+        {
+          "step": 4,
+          "title": "تدقيق المواضع والإطلاق",
+          "description": "قبل الإطلاق، نضع مواضع سلبية صارمة لمنع ظهور إعلاناتك في ألعاب الجوال منخفضة الجودة أو التطبيقات غير ذات الصلة."
+        },
+        {
+          "step": 5,
+          "title": "تنفيذ تجديد النشاط التسويقي (Remarketing)",
+          "description": "نقوم بتقسيم زوار موقعك السابقين (مثل متاركي سلة التسوق) ونقدم لهم إعلانات محددة للغاية لسحبهم مرة أخرى إلى مسار المبيعات."
+        },
+        {
+          "step": 6,
+          "title": "التحسين المستمر",
+          "description": "نراقب الأداء يومياً، ونوقف التصميمات ذات الأداء الضعيف، ونستبعد المواقع منخفضة التحويل، ونعيد تخصيص الميزانية للجماهير الأكثر ربحية."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما الفرق بين إعلانات بحث جوجل والإعلانات الصورية؟",
+          "answer": "تظهر إعلانات البحث عندما يكتب المستخدمون استعلاماً في جوجل (نية عالية). الإعلانات الصورية هي لافتات مرئية تظهر على مواقع الويب الأخرى لبناء الوعي."
+        },
+        {
+          "question": "هل الإعلانات الصورية تحقق تحويلات (مبيعات) بالفعل؟",
+          "answer": "للتنقيب عن عملاء جدد، تمتلك الإعلانات الصورية معدلات تحويل أقل من البحث ولكنها أرخص. ومع ذلك، في إعادة الاستهداف، تكون فعالة للغاية في تحقيق التحويلات."
+        },
+        {
+          "question": "كيف تمنع ظهور إعلاناتي على المواقع غير المرغوب فيها؟",
+          "answer": "نضيف بشكل استباقي قوائم استبعاد واسعة النطاق لحظر المواقع ذات الجودة المنخفضة وتطبيقات الجوال غير ذات الصلة، لضمان سلامة العلامة."
+        },
+        {
+          "question": "هل أحتاج إلى توفير تصميمات البانر؟",
+          "answer": "لا. يقوم فريقنا الإبداعي بتصميم جميع اللافتات الضرورية (الثابتة والمتجاوبة) كجزء من خدمة الإدارة الشاملة لدينا."
+        },
+        {
+          "question": "ما هو تجديد النشاط التسويقي / إعادة الاستهداف؟",
+          "answer": "يستخدم تتبع الزوار الذين زاروا موقعك ولم يشتروا. ثم نعرض لهم إعلاناتك على مواقع أخرى لتذكيرهم بالعودة وإكمال الشراء."
+        },
+        {
+          "question": "ما هي الإعلانات الصورية المتجاوبة (RDAs)؟",
+          "answer": "هي إعلانات نوفر فيها لجوجل صوراً وشعارات وعناوين نصية متنوعة. يمزج التعلم الآلي من جوجل بينها لتناسب أي مساحة إعلانية متاحة بشكل مثالي."
+        },
+        {
+          "question": "هل الإعلانات الصورية جيدة لشركات B2B؟",
+          "answer": "نعم، خاصة لإعادة الاستهداف ومواضع الصناعة المستهدفة. يمكننا إظهار إعلاناتك على مواقع إخبارية صناعية محددة للوصول إلى جمهور الأعمال."
+        },
+        {
+          "question": "كيف تقيس النجاح على الشبكة الإعلانية؟",
+          "answer": "بالنسبة لإعادة الاستهداف، نقيس التحويلات المباشرة وتكلفة الاكتساب (CPA). بالنسبة لحملات الوعي، نقيس التحويلات من خلال العرض، ومعدلات النقر (CTR)."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "googleads",
+          "name": "Google Ads"
+        },
+        {
+          "icon": "analytics",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "adobe",
+          "name": "Adobe Photoshop / Illustrator"
+        },
+        {
+          "icon": "canva",
+          "name": "Canva"
+        },
+        {
+          "icon": "html5",
+          "name": "HTML5 Ad Builders"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Looker Studio"
+        }
+      ]
+    }
+  }
+}

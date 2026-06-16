@@ -6,6 +6,7 @@ import { localizeFullPath } from '@/lib/routes';
 import { ServiceJsonLd, BreadcrumbJsonLd, FAQJsonLd } from '@/components/seo/JsonLd';
 import ServiceDetailClient from './ServiceDetailClient';
 import type { ServiceDetailData } from './ServiceDetailClient';
+import RelatedServices, { type RelatedItem } from '@/components/services/RelatedServices';
 import { getTranslations } from '@/lib/server-i18n';
 import { getServicePageContent, type ServicePageContent } from '@/lib/service-content';
 
@@ -39,6 +40,31 @@ async function getSubServicesData(parentSlug: string, locale: string) {
 async function getParentServiceData(parentSlug: string, locale?: string) {
   const { getParentService } = await import('@/lib/database/public-queries');
   return getParentService(parentSlug, locale);
+}
+
+// Pick up to `n` same-category services (excluding self/parents), rotated by a
+// hash of the current slug so different services surface different neighbours —
+// spreads internal-link equity across the catalog instead of one fixed hub.
+async function getRelatedServices(category: string | null | undefined, currentSlug: string, locale: string): Promise<RelatedItem[]> {
+  if (!category) return [];
+  const { getPublishedServices } = await import('@/lib/database/public-queries');
+  const all = (await getPublishedServices(locale)) as Array<Record<string, unknown>>;
+  const siblings = all.filter(
+    s => s.category === category && s.slug !== currentSlug && !s.isParent && typeof s.slug === 'string'
+  );
+  const map = (s: Record<string, unknown>): RelatedItem => ({
+    slug: s.slug as string,
+    name: (s.name as string) || (s.slug as string),
+    shortDescription: (s.shortDescription as string) || null,
+  });
+  const n = 6;
+  if (siblings.length <= n) return siblings.map(map);
+  let h = 0;
+  for (const c of currentSlug) h = (h * 31 + c.charCodeAt(0)) >>> 0;
+  const start = h % siblings.length;
+  const out: RelatedItem[] = [];
+  for (let i = 0; i < n; i++) out.push(map(siblings[(start + i) % siblings.length]));
+  return out;
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -206,6 +232,8 @@ export default async function ServicePage({ params }: PageProps) {
     _jsonContent: jsonContent as any,
   };
 
+  const relatedServices = await getRelatedServices((service as { category?: string }).category, slug, locale);
+
   return (
     <main className="min-h-screen bg-white">
       {/* Structured Data (server-rendered for SEO) */}
@@ -219,6 +247,9 @@ export default async function ServicePage({ params }: PageProps) {
 
       {/* Rich animated client component */}
       <ServiceDetailClient service={serviceData} />
+
+      {/* Internal linking — same-category services (server-rendered <a> links) */}
+      <RelatedServices items={relatedServices} locale={locale} />
     </main>
   );
 }

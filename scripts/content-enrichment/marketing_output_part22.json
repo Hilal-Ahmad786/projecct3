@@ -1,0 +1,1036 @@
+{
+  "email-marketing-automation": {
+    "en": {
+      "name": "Email Marketing Automation",
+      "shortDescription": "Scale your revenue with intelligent, behavior-driven email flows that nurture leads, onboard users, and drive repeat purchases on autopilot.",
+      "fullDescription": "Manual batch-and-blast email campaigns are a thing of the past. To maximize your marketing ROI, you need to deliver the right message to the right person exactly when they are ready to engage. Our Email Marketing Automation services transform your communication strategy from reactive to proactive. We design sophisticated drip campaigns, behavioral triggers, and segmentation strategies that adapt to how users interact with your brand. Whether you need a high-converting welcome series, an intricate abandoned cart recovery flow, or a long-term lead nurturing sequence, we architect the entire system. We integrate platforms like Klaviyo, HubSpot, or ActiveCampaign with your CRM and website, ensuring data syncs seamlessly and every email feels highly personalized and relevant.",
+      "features": [
+        "Advanced Behavioral Triggers & Workflows",
+        "Dynamic Customer Segmentation",
+        "Lead Nurturing & Drip Campaigns",
+        "Abandoned Cart & Browse Abandonment Flows",
+        "Automated Onboarding & Welcome Sequences",
+        "A/B Testing for Subject Lines & Content",
+        "Cross-Platform CRM Integration",
+        "Post-Purchase & Re-engagement Campaigns"
+      ],
+      "benefits": [
+        "Generate predictable, passive revenue 24/7",
+        "Shorten the sales cycle by automatically nurturing cold leads",
+        "Recover lost sales with high-converting abandonment flows",
+        "Deliver personalized customer experiences at scale",
+        "Save countless hours of manual email campaign management",
+        "Increase customer lifetime value (LTV) through automated cross-selling"
+      ],
+      "metaTitle": "Email Marketing Automation Services | Drip Campaigns | PakSoft",
+      "metaDescription": "Drive revenue on autopilot. We design and implement behavior-driven email marketing automation flows, drip campaigns, and lead nurture sequences.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Strategy & Flow Mapping",
+            "description": "We analyze your customer journey and map out the necessary automated flows (welcome, nurture, retention) to guide users seamlessly toward conversion."
+          },
+          {
+            "step": 2,
+            "title": "Platform Integration",
+            "description": "We connect your email marketing tool with your website, ecommerce platform, and CRM to ensure behavioral data triggers the right emails in real time."
+          },
+          {
+            "step": 3,
+            "title": "Copywriting & Design",
+            "description": "Our team crafts persuasive, conversion-focused email copy and designs visually appealing templates that perfectly match your brand's identity."
+          },
+          {
+            "step": 4,
+            "title": "Logic & Trigger Setup",
+            "description": "We build the automation logic, setting up conditional splits, time delays, and dynamic content blocks to ensure each user receives a personalized experience."
+          },
+          {
+            "step": 5,
+            "title": "QA & Testing",
+            "description": "Before going live, we rigorously test all triggers, dynamic variables, and deliverability across different email clients to ensure flawless execution."
+          },
+          {
+            "step": 6,
+            "title": "Optimization & A/B Testing",
+            "description": "Post-launch, we continuously monitor performance metrics and run A/B tests on subject lines, send times, and call-to-actions to maximize ROI."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is the difference between email marketing and email automation?",
+            "answer": "Email marketing often refers to manual, one-off newsletters (broadcasts). Email automation involves setting up automated sequences triggered by specific user behaviors, running continuously in the background."
+          },
+          {
+            "question": "Which email platforms do you support?",
+            "answer": "We work with all major platforms, including Klaviyo, ActiveCampaign, HubSpot, Mailchimp, Customer.io, and SendGrid, choosing the best fit for your technical stack."
+          },
+          {
+            "question": "Do I need an ecommerce site for this to work?",
+            "answer": "No. While ecommerce benefits heavily from cart abandonment flows, B2B companies rely on email automation for lead nurturing, webinar follow-ups, and sales team handoffs."
+          },
+          {
+            "question": "How long does it take to build an automated flow?",
+            "answer": "A standard flow like a Welcome Series takes 1-2 weeks. Complex, multi-branch lead nurturing sequences with CRM integrations may take 3-4 weeks from strategy to launch."
+          },
+          {
+            "question": "How do you ensure emails don't go to spam?",
+            "answer": "We implement proper domain authentication (SPF, DKIM, DMARC), maintain clean lists, avoid spam trigger words, and ensure your sender reputation remains pristine."
+          },
+          {
+            "question": "Can you personalize the emails for each user?",
+            "answer": "Yes. We use dynamic data to insert names, recent purchases, or specific products they browsed, making the automated emails feel like a personal 1-on-1 interaction."
+          },
+          {
+            "question": "How do we measure the success of an automated flow?",
+            "answer": "We track open rates, click-through rates, and most importantly, the exact revenue or qualified leads generated directly by that specific automated sequence."
+          },
+          {
+            "question": "Can you fix our existing, broken automations?",
+            "answer": "Yes. We frequently audit existing accounts to fix broken logic, update outdated templates, and optimize flows that are underperforming."
+          }
+        ],
+        "technologies": [
+          { "icon": "klaviyo", "name": "Klaviyo" },
+          { "icon": "activecampaign", "name": "ActiveCampaign" },
+          { "icon": "hubspot", "name": "HubSpot" },
+          { "icon": "mailchimp", "name": "Mailchimp" },
+          { "icon": "customerio", "name": "Customer.io" },
+          { "icon": "zapier", "name": "Zapier" },
+          { "icon": "sendgrid", "name": "SendGrid" },
+          { "icon": "salesforce", "name": "Salesforce" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "E-posta Pazarlama Otomasyonu",
+      "shortDescription": "Potansiyel müşterileri besleyen, kullanıcıları yönlendiren ve otopilotta tekrarlayan satın alımları teşvik eden akıllı, davranışa dayalı e-posta akışlarıyla gelirinizi ölçeklendirin.",
+      "fullDescription": "Manuel toplu e-posta kampanyaları geçmişte kaldı. Pazarlama yatırım getirinizi (ROI) en üst düzeye çıkarmak için, doğru mesajı doğru kişiye tam olarak etkileşime hazır olduklarında iletmeniz gerekir. E-posta Pazarlama Otomasyonu hizmetlerimiz, iletişim stratejinizi reaktiften proaktife dönüştürür. Kullanıcıların markanızla etkileşim kurma biçimine uyum sağlayan karmaşık damla (drip) kampanyaları, davranışsal tetikleyiciler ve segmentasyon stratejileri tasarlıyoruz. İster yüksek dönüşüm sağlayan bir hoş geldin serisine, ister karmaşık bir terk edilmiş sepet kurtarma akışına, ister uzun vadeli bir potansiyel müşteri besleme (lead nurturing) dizisine ihtiyacınız olsun, tüm sistemi biz kuruyoruz. Klaviyo, HubSpot veya ActiveCampaign gibi platformları CRM'niz ve web sitenizle entegre ederek verilerin sorunsuz bir şekilde senkronize olmasını ve her e-postanın son derece kişiselleştirilmiş ve alakalı hissettirmesini sağlıyoruz.",
+      "features": [
+        "Gelişmiş Davranışsal Tetikleyiciler ve İş Akışları",
+        "Dinamik Müşteri Segmentasyonu",
+        "Potansiyel Müşteri Besleme ve Damla (Drip) Kampanyaları",
+        "Terk Edilmiş Sepet ve Gözatma Akışları",
+        "Otomatik Onboarding ve Hoş Geldin Dizileri",
+        "Konu Satırları ve İçerik için A/B Testi",
+        "Platformlar Arası CRM Entegrasyonu",
+        "Satın Alma Sonrası ve Yeniden Etkileşim Kampanyaları"
+      ],
+      "benefits": [
+        "7/24 öngörülebilir, pasif gelir elde edin",
+        "Soğuk potansiyel müşterileri otomatik olarak besleyerek satış döngüsünü kısaltın",
+        "Yüksek dönüşüm sağlayan terk etme akışlarıyla kayıp satışları kurtarın",
+        "Ölçekli olarak kişiselleştirilmiş müşteri deneyimleri sunun",
+        "Manuel e-posta kampanya yönetimi için harcanan saatlerden tasarruf edin",
+        "Otomatik çapraz satış ile müşteri yaşam boyu değerini (LTV) artırın"
+      ],
+      "metaTitle": "E-posta Pazarlama Otomasyonu | Drip Kampanyaları | PakSoft",
+      "metaDescription": "Otopilotta geliri artırın. Davranışa dayalı e-posta pazarlama otomasyon akışları, damla (drip) kampanyaları ve müşteri besleme dizileri tasarlıyor ve uyguluyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Strateji ve Akış Haritalama",
+            "description": "Müşteri yolculuğunuzu analiz ediyor ve kullanıcıları sorunsuz bir şekilde dönüşüme yönlendirmek için gerekli otomatik akışların (hoş geldin, besleme, elde tutma) haritasını çıkarıyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Platform Entegrasyonu",
+            "description": "Davranışsal verilerin doğru e-postaları gerçek zamanlı olarak tetiklemesini sağlamak için e-posta pazarlama aracınızı web siteniz, e-ticaret platformunuz ve CRM'nizle bağlıyoruz."
+          },
+          {
+            "step": 3,
+            "title": "Metin Yazarlığı ve Tasarım",
+            "description": "Ekibimiz, markanızın kimliğiyle mükemmel bir şekilde eşleşen, ikna edici, dönüşüm odaklı e-posta metinleri hazırlar ve görsel olarak çekici şablonlar tasarlar."
+          },
+          {
+            "step": 4,
+            "title": "Mantık ve Tetikleyici Kurulumu",
+            "description": "Her kullanıcının kişiselleştirilmiş bir deneyim yaşamasını sağlamak için koşullu bölmeler, zaman gecikmeleri ve dinamik içerik blokları ayarlayarak otomasyon mantığını oluşturuyoruz."
+          },
+          {
+            "step": 5,
+            "title": "QA ve Test",
+            "description": "Yayına girmeden önce, kusursuz yürütme sağlamak için tüm tetikleyicileri, dinamik değişkenleri ve farklı e-posta istemcilerinde teslim edilebilirliği titizlikle test ediyoruz."
+          },
+          {
+            "step": 6,
+            "title": "Optimizasyon ve A/B Testi",
+            "description": "Lansman sonrası performans metriklerini sürekli izliyor ve yatırım getirisini en üst düzeye çıkarmak için konu satırları, gönderim zamanları ve eylem çağrıları üzerinde A/B testleri yapıyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "E-posta pazarlaması ile e-posta otomasyonu arasındaki fark nedir?",
+            "answer": "E-posta pazarlaması genellikle manuel, tek seferlik bültenleri (yayınları) ifade eder. E-posta otomasyonu ise arka planda sürekli çalışan, belirli kullanıcı davranışları tarafından tetiklenen otomatik diziler kurmayı içerir."
+          },
+          {
+            "question": "Hangi e-posta platformlarını destekliyorsunuz?",
+            "answer": "Teknik altyapınıza en uygun olanı seçerek Klaviyo, ActiveCampaign, HubSpot, Mailchimp, Customer.io ve SendGrid dahil olmak üzere tüm büyük platformlarla çalışıyoruz."
+          },
+          {
+            "question": "Bunun çalışması için bir e-ticaret sitem olması gerekiyor mu?",
+            "answer": "Hayır. E-ticaret sepeti terk etme akışlarından büyük ölçüde faydalansa da, B2B şirketleri potansiyel müşteri besleme, web semineri takipleri ve satış ekibi yönlendirmeleri için e-posta otomasyonuna güvenir."
+          },
+          {
+            "question": "Otomatik bir akış oluşturmak ne kadar sürer?",
+            "answer": "Hoş Geldin Serisi gibi standart bir akış 1-2 hafta sürer. CRM entegrasyonlarına sahip karmaşık, çok dallı potansiyel müşteri besleme dizileri, stratejiden lansmana kadar 3-4 hafta sürebilir."
+          },
+          {
+            "question": "E-postaların spam'e gitmemesini nasıl sağlıyorsunuz?",
+            "answer": "Uygun alan adı doğrulaması (SPF, DKIM, DMARC) uyguluyor, temiz listeler tutuyor, spam tetikleyici kelimelerden kaçınıyor ve gönderici itibarınızın bozulmamasını sağlıyoruz."
+          },
+          {
+            "question": "E-postaları her kullanıcı için kişiselleştirebilir misiniz?",
+            "answer": "Evet. İsimleri, son satın alımları veya göz attıkları belirli ürünleri eklemek için dinamik veriler kullanıyoruz, bu da otomatik e-postaların kişisel birebir etkileşim gibi hissettirmesini sağlıyor."
+          },
+          {
+            "question": "Otomatik bir akışın başarısını nasıl ölçeriz?",
+            "answer": "Açılma oranlarını, tıklama oranlarını ve en önemlisi doğrudan söz konusu spesifik otomatik dizi tarafından oluşturulan kesin geliri veya nitelikli potansiyel müşterileri izliyoruz."
+          },
+          {
+            "question": "Mevcut, bozuk otomasyonlarımızı düzeltebilir misiniz?",
+            "answer": "Evet. Bozuk mantığı düzeltmek, eski şablonları güncellemek ve düşük performans gösteren akışları optimize etmek için mevcut hesapları sık sık denetliyoruz."
+          }
+        ],
+        "technologies": [
+          { "icon": "klaviyo", "name": "Klaviyo" },
+          { "icon": "activecampaign", "name": "ActiveCampaign" },
+          { "icon": "hubspot", "name": "HubSpot" },
+          { "icon": "mailchimp", "name": "Mailchimp" },
+          { "icon": "customerio", "name": "Customer.io" },
+          { "icon": "zapier", "name": "Zapier" },
+          { "icon": "sendgrid", "name": "SendGrid" },
+          { "icon": "salesforce", "name": "Salesforce" }
+        ]
+      }
+    },
+    "de": {
+      "name": "E-Mail-Marketing-Automatisierung",
+      "shortDescription": "Skalieren Sie Ihren Umsatz mit intelligenten, verhaltensgesteuerten E-Mail-Flows, die Leads pflegen und Wiederholungskäufe auf Autopilot fördern.",
+      "fullDescription": "Manuelle 'Batch-and-Blast'-E-Mail-Kampagnen gehören der Vergangenheit an. Um Ihren Marketing-ROI zu maximieren, müssen Sie der richtigen Person genau dann die richtige Nachricht übermitteln, wenn sie zur Interaktion bereit ist. Unsere Services zur E-Mail-Marketing-Automatisierung verwandeln Ihre Kommunikationsstrategie von reaktiv zu proaktiv. Wir entwerfen anspruchsvolle Drip-Kampagnen, verhaltensbasierte Trigger und Segmentierungsstrategien, die sich an die Interaktion der Nutzer mit Ihrer Marke anpassen. Ob Sie eine hochkonvertierende Willkommensserie, einen komplexen Flow zur Wiederherstellung abgebrochener Warenkörbe oder eine langfristige Lead-Nurturing-Sequenz benötigen, wir konzipieren das gesamte System. Wir integrieren Plattformen wie Klaviyo, HubSpot oder ActiveCampaign nahtlos in Ihr CRM und Ihre Website.",
+      "features": [
+        "Erweiterte verhaltensbasierte Trigger & Workflows",
+        "Dynamische Kundensegmentierung",
+        "Lead Nurturing & Drip-Kampagnen",
+        "Flows für abgebrochene Warenkörbe",
+        "Automatisierte Onboarding- & Welcome-Sequenzen",
+        "A/B-Testing für Betreffzeilen & Inhalte",
+        "Plattformübergreifende CRM-Integration",
+        "Post-Purchase & Re-Engagement-Kampagnen"
+      ],
+      "benefits": [
+        "Generieren Sie 24/7 vorhersehbaren, passiven Umsatz",
+        "Verkürzen Sie den Verkaufszyklus durch automatisches Lead Nurturing",
+        "Holen Sie verlorene Verkäufe mit hochkonvertierenden Flows zurück",
+        "Bieten Sie personalisierte Kundenerlebnisse im großen Maßstab",
+        "Sparen Sie unzählige Stunden manueller E-Mail-Verwaltung",
+        "Steigern Sie den Customer Lifetime Value (LTV) durch Cross-Selling"
+      ],
+      "metaTitle": "E-Mail-Marketing-Automatisierung Agentur | Drip-Kampagnen | PakSoft",
+      "metaDescription": "Steigern Sie Ihren Umsatz auf Autopilot. Wir konzipieren und implementieren verhaltensgesteuerte E-Mail-Automatisierungs-Flows und Lead-Nurturing-Sequenzen.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Strategie & Flow-Mapping",
+            "description": "Wir analysieren Ihre Customer Journey und planen die notwendigen automatisierten Flows (Welcome, Nurture, Retention) zur Conversion-Optimierung."
+          },
+          {
+            "step": 2,
+            "title": "Plattform-Integration",
+            "description": "Wir verbinden Ihr E-Mail-Tool mit Ihrer Website und Ihrem CRM, um sicherzustellen, dass Verhaltensdaten E-Mails in Echtzeit auslösen."
+          },
+          {
+            "step": 3,
+            "title": "Copywriting & Design",
+            "description": "Unser Team verfasst überzeugende E-Mail-Texte und entwirft visuell ansprechende Vorlagen, die perfekt zu Ihrer Markenidentität passen."
+          },
+          {
+            "step": 4,
+            "title": "Logik- & Trigger-Setup",
+            "description": "Wir erstellen die Automatisierungslogik, konfigurieren bedingte Verzweigungen und dynamische Inhalte für ein personalisiertes Erlebnis."
+          },
+          {
+            "step": 5,
+            "title": "QA & Testing",
+            "description": "Vor dem Livegang testen wir alle Trigger, Variablen und die Zustellbarkeit bei verschiedenen E-Mail-Clients rigoros."
+          },
+          {
+            "step": 6,
+            "title": "Optimierung & A/B-Testing",
+            "description": "Nach dem Start überwachen wir die Leistung und führen A/B-Tests durch, um Betreffzeilen und CTAs zu optimieren."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Was ist der Unterschied zwischen E-Mail-Marketing und Automatisierung?",
+            "answer": "E-Mail-Marketing bezieht sich auf manuelle Newsletter (Broadcasts). Automatisierung umfasst kontinuierlich laufende Sequenzen, die durch Nutzerverhalten ausgelöst werden."
+          },
+          {
+            "question": "Welche E-Mail-Plattformen unterstützen Sie?",
+            "answer": "Wir arbeiten mit allen großen Plattformen, einschließlich Klaviyo, ActiveCampaign, HubSpot, Mailchimp und SendGrid."
+          },
+          {
+            "question": "Benötige ich dafür eine E-Commerce-Website?",
+            "answer": "Nein. B2B-Unternehmen verlassen sich auf E-Mail-Automatisierung für Lead-Nurturing, Webinar-Follow-ups und Vertriebsübergaben."
+          },
+          {
+            "question": "Wie lange dauert es, einen automatisierten Flow zu erstellen?",
+            "answer": "Ein Standard-Flow dauert 1-2 Wochen. Komplexe Nurturing-Sequenzen mit CRM-Integration können 3-4 Wochen dauern."
+          },
+          {
+            "question": "Wie stellen Sie sicher, dass E-Mails nicht im Spam landen?",
+            "answer": "Wir implementieren Domain-Authentifizierung (SPF, DKIM, DMARC), pflegen saubere Listen und schützen Ihre Sender-Reputation."
+          },
+          {
+            "question": "Können Sie E-Mails für jeden Nutzer personalisieren?",
+            "answer": "Ja. Wir verwenden dynamische Daten, um Namen, Käufe oder angesehene Produkte einzufügen, sodass die E-Mails wie eine 1:1-Interaktion wirken."
+          },
+          {
+            "question": "Wie messen wir den Erfolg eines automatisierten Flows?",
+            "answer": "Wir verfolgen Öffnungsraten, Klickraten und vor allem den exakten Umsatz oder die qualifizierten Leads, die generiert wurden."
+          },
+          {
+            "question": "Können Sie unsere fehlerhaften Automatisierungen reparieren?",
+            "answer": "Ja. Wir auditieren regelmäßig bestehende Konten, um Logikfehler zu beheben und unterdurchschnittliche Flows zu optimieren."
+          }
+        ],
+        "technologies": [
+          { "icon": "klaviyo", "name": "Klaviyo" },
+          { "icon": "activecampaign", "name": "ActiveCampaign" },
+          { "icon": "hubspot", "name": "HubSpot" },
+          { "icon": "mailchimp", "name": "Mailchimp" },
+          { "icon": "customerio", "name": "Customer.io" },
+          { "icon": "zapier", "name": "Zapier" },
+          { "icon": "sendgrid", "name": "SendGrid" },
+          { "icon": "salesforce", "name": "Salesforce" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "ای میل مارکیٹنگ آٹومیشن",
+      "shortDescription": "ذہین، رویے پر مبنی ای میل فلوز (flows) کے ساتھ اپنی آمدنی میں اضافہ کریں جو لیڈز کی پرورش کرتے ہیں اور آٹو پائلٹ پر دوبارہ خریداری کو فروغ دیتے ہیں۔",
+      "fullDescription": "دستی بیچ اینڈ بلاسٹ (batch-and-blast) ای میل مہمات ماضی کی بات ہیں۔ اپنی مارکیٹنگ کے ROI کو زیادہ سے زیادہ کرنے کے لیے، آپ کو صحیح پیغام صحیح شخص تک بالکل اس وقت پہنچانے کی ضرورت ہے جب وہ مشغول ہونے کے لیے تیار ہوں۔ ہماری ای میل مارکیٹنگ آٹومیشن خدمات آپ کی مواصلاتی حکمت عملی کو ری ایکٹیو (reactive) سے پرو ایکٹیو (proactive) میں بدل دیتی ہیں۔ ہم نفیس ڈرپ مہمات، رویے کے ٹرگرز، اور سیگمنٹیشن کی حکمت عملی تیار کرتے ہیں جو اس بات سے مطابقت رکھتی ہیں کہ صارفین آپ کے برانڈ کے ساتھ کس طرح تعامل کرتے ہیں۔ چاہے آپ کو ہائی-کنورٹنگ ویلکم سیریز کی ضرورت ہو، یا ایک پیچیدہ ایبینڈنڈ کارٹ ریکوری فلو کی، ہم پورے نظام کا خاکہ بناتے ہیں۔ ہم Klaviyo، HubSpot، یا ActiveCampaign جیسے پلیٹ فارمز کو آپ کے CRM اور ویب سائٹ کے ساتھ جوڑتے ہیں تاکہ ہر ای میل انتہائی ذاتی اور متعلقہ محسوس ہو۔",
+      "features": [
+        "اعلیٰ رویے کے ٹرگرز اور ورک فلوز",
+        "متحرک کسٹمر سیگمنٹیشن (Segmentation)",
+        "لیڈ کی پرورش اور ڈرپ مہمات",
+        "ترک شدہ کارٹ اور براؤز چھوڑنے کے فلوز",
+        "خودکار آن بورڈنگ اور خوش آمدید کے سلسلے",
+        "سبجیکٹ لائنز اور مواد کے لیے A/B ٹیسٹنگ",
+        "کراس پلیٹ فارم CRM انٹیگریشن",
+        "خریداری کے بعد اور دوبارہ مشغولیت کی مہمات"
+      ],
+      "benefits": [
+        "24/7 پیشین گوئی کے قابل، غیر فعال آمدنی پیدا کریں",
+        "خود بخود کولڈ لیڈز کی پرورش کر کے سیلز سائیکل کو مختصر کریں",
+        "ہائی کنورٹنگ ریکوری فلوز کے ساتھ کھوئی ہوئی فروخت کو بحال کریں",
+        "بڑے پیمانے پر ذاتی نوعیت کے کسٹمر کے تجربات فراہم کریں",
+        "دستی ای میل مہم کے انتظام کے ان گنت گھنٹے بچائیں",
+        "خودکار کراس سیلنگ کے ذریعے کسٹمر کی لائف ٹائم ویلیو میں اضافہ کریں"
+      ],
+      "metaTitle": "ای میل مارکیٹنگ آٹومیشن سروسز | ڈرپ کیمپینز | PakSoft",
+      "metaDescription": "آٹو پائلٹ پر آمدنی بڑھائیں۔ ہم رویے پر مبنی ای میل مارکیٹنگ آٹومیشن فلوز، ڈرپ کیمپینز، اور لیڈ نرسنگ سیکوینسز ڈیزائن کرتے ہیں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "حکمت عملی اور فلو میپنگ",
+            "description": "ہم آپ کے گاہک کے سفر کا تجزیہ کرتے ہیں اور صارفین کو آسانی سے تبادلوں کی طرف رہنمائی کرنے کے لیے ضروری خودکار فلوز کا خاکہ بناتے ہیں۔"
+          },
+          {
+            "step": 2,
+            "title": "پلیٹ فارم انٹیگریشن",
+            "description": "ہم آپ کے ای میل مارکیٹنگ ٹول کو آپ کی ویب سائٹ اور CRM کے ساتھ جوڑتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ رویے کا ڈیٹا درست ای میلز کو متحرک کرے۔"
+          },
+          {
+            "step": 3,
+            "title": "کاپی رائٹنگ اور ڈیزائن",
+            "description": "ہماری ٹیم قائل کرنے والی، تبادلوں پر مرکوز ای میل کاپی تیار کرتی ہے اور بصری طور پر پرکشش ٹیمپلیٹس ڈیزائن کرتی ہے جو آپ کے برانڈ سے ملتے ہیں۔"
+          },
+          {
+            "step": 4,
+            "title": "منطق اور ٹرگر کا سیٹ اپ",
+            "description": "ہم ہر صارف کے ذاتی نوعیت کے تجربے کو یقینی بنانے کے لیے مشروط تقسیم اور متحرک مواد کے بلاکس ترتیب دے کر آٹومیشن منطق بناتے ہیں۔"
+          },
+          {
+            "step": 5,
+            "title": "QA اور ٹیسٹنگ",
+            "description": "لائیو جانے سے پہلے، ہم مختلف ای میل کلائنٹس میں تمام ٹرگرز، متحرک متغیرات، اور ڈیلیوریبلٹی کو سختی سے جانچتے ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "آپٹیمائزیشن اور A/B ٹیسٹنگ",
+            "description": "لانچ کے بعد، ہم کارکردگی کی میٹرکس کو مسلسل مانیٹر کرتے ہیں اور ROI کو زیادہ سے زیادہ کرنے کے لیے موضوع کی لکیروں پر A/B ٹیسٹ چلاتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "ای میل مارکیٹنگ اور ای میل آٹومیشن میں کیا فرق ہے؟",
+            "answer": "ای میل مارکیٹنگ سے مراد دستی خبرنامے (براڈکاسٹ) ہیں۔ ای میل آٹومیشن میں پس منظر میں مسلسل چلنے والے صارفین کے مخصوص رویوں سے شروع ہونے والے سلسلے شامل ہیں۔"
+          },
+          {
+            "question": "آپ کن ای میل پلیٹ فارمز کو سپورٹ کرتے ہیں؟",
+            "answer": "ہم تمام بڑے پلیٹ فارمز کے ساتھ کام کرتے ہیں، بشمول Klaviyo، ActiveCampaign، HubSpot، Mailchimp، Customer.io، اور SendGrid۔"
+          },
+          {
+            "question": "کیا اس کام کے لیے مجھے ای کامرس سائٹ کی ضرورت ہے؟",
+            "answer": "نہیں۔ B2B کمپنیاں لیڈ کی پرورش، ویبینار فالو اپس، اور سیلز ٹیم ہینڈ آف کے لیے ای میل آٹومیشن پر انحصار کرتی ہیں۔"
+          },
+          {
+            "question": "خودکار فلو بنانے میں کتنا وقت لگتا ہے؟",
+            "answer": "ایک معیاری فلو جیسے ویلکم سیریز میں 1-2 ہفتے لگتے ہیں۔ پیچیدہ، کثیر الجہتی لیڈ نرسنگ سلسلے میں 3-4 ہفتے لگ سکتے ہیں۔"
+          },
+          {
+            "question": "آپ کیسے یقینی بناتے ہیں کہ ای میلز سپیم میں نہ جائیں؟",
+            "answer": "ہم مناسب ڈومین کی تصدیق (SPF, DKIM, DMARC) کو لاگو کرتے ہیں، صاف فہرستیں برقرار رکھتے ہیں، اور سپیم ٹرگر الفاظ سے گریز کرتے ہیں۔"
+          },
+          {
+            "question": "کیا آپ ہر صارف کے لیے ای میلز کو ذاتی بنا سکتے ہیں؟",
+            "answer": "ہاں۔ ہم نام، حالیہ خریداریاں، یا مخصوص پروڈکٹس داخل کرنے کے لیے متحرک ڈیٹا کا استعمال کرتے ہیں، جس سے ای میلز ذاتی محسوس ہوتی ہیں۔"
+          },
+          {
+            "question": "ہم خودکار فلو کی کامیابی کی پیمائش کیسے کرتے ہیں؟",
+            "answer": "ہم اوپن ریٹس، کلک تھرو ریٹس، اور سب سے اہم بات، اس مخصوص آٹومیشن فلو کے ذریعے براہ راست پیدا ہونے والی آمدنی کو ٹریک کرتے ہیں۔"
+          },
+          {
+            "question": "کیا آپ ہمارے موجودہ، ٹوٹے ہوئے آٹومیشنز کو ٹھیک کر سکتے ہیں؟",
+            "answer": "ہاں۔ ہم ٹوٹی ہوئی منطق کو ٹھیک کرنے، پرانے ٹیمپلیٹس کو اپ ڈیٹ کرنے، اور فلوز کو بہتر بنانے کے لیے موجودہ اکاؤنٹس کا آڈٹ کرتے ہیں۔"
+          }
+        ],
+        "technologies": [
+          { "icon": "klaviyo", "name": "Klaviyo" },
+          { "icon": "activecampaign", "name": "ActiveCampaign" },
+          { "icon": "hubspot", "name": "HubSpot" },
+          { "icon": "mailchimp", "name": "Mailchimp" },
+          { "icon": "customerio", "name": "Customer.io" },
+          { "icon": "zapier", "name": "Zapier" },
+          { "icon": "sendgrid", "name": "SendGrid" },
+          { "icon": "salesforce", "name": "Salesforce" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "أتمتة التسويق عبر البريد الإلكتروني",
+      "shortDescription": "قم بتوسيع إيراداتك باستخدام مسارات بريد إلكتروني ذكية ومبنية على السلوك تعمل على رعاية العملاء المحتملين ودفع عمليات الشراء المتكررة تلقائياً.",
+      "fullDescription": "حملات البريد الإلكتروني الجماعية اليدوية أصبحت شيئاً من الماضي. لزيادة عائد الاستثمار التسويقي (ROI) الخاص بك، تحتاج إلى توصيل الرسالة المناسبة للشخص المناسب عندما يكون مستعداً للتفاعل. تعمل خدمات أتمتة التسويق عبر البريد الإلكتروني لدينا على تحويل استراتيجية الاتصال الخاصة بك من تفاعلية إلى استباقية. نحن نصمم حملات تنقيط (drip campaigns) معقدة، ومشغلات سلوكية، واستراتيجيات تقسيم تتكيف مع كيفية تفاعل المستخدمين مع علامتك التجارية. سواء كنت بحاجة إلى سلسلة ترحيب عالية التحويل، أو مسار معقد لاسترداد عربة التسوق المتروكة، أو تسلسل رعاية عملاء محتملين طويل الأجل، فإننا نصمم النظام بأكمله. نحن ندمج منصات مثل Klaviyo أو HubSpot أو ActiveCampaign مع نظام إدارة علاقات العملاء (CRM) وموقع الويب الخاص بك، مما يضمن مزامنة البيانات بسلاسة وجعل كل بريد إلكتروني مخصصاً وملائماً للغاية.",
+      "features": [
+        "مشغلات سلوكية متقدمة ومسارات عمل (Workflows)",
+        "تقسيم العملاء الديناميكي",
+        "رعاية العملاء المحتملين وحملات التنقيط",
+        "مسارات عربة التسوق المتروكة والتصفح المهجور",
+        "سلاسل الترحيب والإعداد الآلية",
+        "اختبار A/B لسطور الموضوع والمحتوى",
+        "تكامل نظام إدارة علاقات العملاء (CRM) عبر المنصات",
+        "حملات ما بعد الشراء وإعادة التفاعل"
+      ],
+      "benefits": [
+        "توليد إيرادات سلبية يمكن التنبؤ بها على مدار الساعة",
+        "تقصير دورة المبيعات من خلال رعاية العملاء الباردين تلقائياً",
+        "استرداد المبيعات المفقودة من خلال مسارات التخلي عالية التحويل",
+        "تقديم تجارب عملاء مخصصة على نطاق واسع",
+        "توفير ساعات لا حصر لها من إدارة حملات البريد اليدوية",
+        "زيادة القيمة الدائمة للعميل (LTV) من خلال البيع المتقاطع الآلي"
+      ],
+      "metaTitle": "خدمات أتمتة التسويق عبر البريد الإلكتروني | حملات التنقيط | PakSoft",
+      "metaDescription": "قم بزيادة الإيرادات تلقائياً. نحن نصمم وننفذ مسارات أتمتة التسويق عبر البريد الإلكتروني المعتمدة على السلوك وحملات الرعاية.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "الاستراتيجية وتخطيط المسار",
+            "description": "نقوم بتحليل رحلة العميل وتخطيط المسارات الآلية الضرورية (الترحيب، الرعاية، الاحتفاظ) لتوجيه المستخدمين بسلاسة نحو التحويل."
+          },
+          {
+            "step": 2,
+            "title": "تكامل المنصة",
+            "description": "نقوم بربط أداة التسويق عبر البريد الإلكتروني الخاصة بك بموقعك على الويب ونظام CRM لضمان تنشيط البيانات السلوكية لرسائل البريد الصحيحة في الوقت الفعلي."
+          },
+          {
+            "step": 3,
+            "title": "كتابة الإعلانات والتصميم",
+            "description": "يصيغ فريقنا نصوص بريد إلكتروني مقنعة تركز على التحويل ويصمم قوالب جذابة بصرياً تتطابق تماماً مع هوية علامتك التجارية."
+          },
+          {
+            "step": 4,
+            "title": "إعداد المنطق والمشغلات",
+            "description": "نبني منطق الأتمتة، وإعداد الانقسامات الشرطية، وتأخيرات الوقت، وكتل المحتوى الديناميكية لضمان حصول كل مستخدم على تجربة مخصصة."
+          },
+          {
+            "step": 5,
+            "title": "ضمان الجودة والاختبار",
+            "description": "قبل البث المباشر، نختبر بدقة جميع المشغلات والمتغيرات الديناميكية وإمكانية التسليم عبر عملاء بريد إلكتروني مختلفين لضمان التنفيذ الخالي من العيوب."
+          },
+          {
+            "step": 6,
+            "title": "التحسين واختبار A/B",
+            "description": "بعد الإطلاق، نراقب باستمرار مقاييس الأداء ونجري اختبارات A/B على سطور الموضوع وأوقات الإرسال وعبارات الحث على اتخاذ إجراء."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما الفرق بين التسويق عبر البريد الإلكتروني وأتمتة البريد الإلكتروني؟",
+            "answer": "يشير التسويق عبر البريد الإلكتروني غالباً إلى النشرات الإخبارية اليدوية (البث). بينما تتضمن الأتمتة إعداد تسلسلات يتم تشغيلها بواسطة سلوكيات معينة للمستخدم وتعمل في الخلفية."
+          },
+          {
+            "question": "ما هي منصات البريد الإلكتروني التي تدعمونها؟",
+            "answer": "نحن نعمل مع جميع المنصات الكبرى، بما في ذلك Klaviyo و ActiveCampaign و HubSpot و Mailchimp، ونختار الأنسب لك."
+          },
+          {
+            "question": "هل أحتاج إلى موقع تجارة إلكترونية لكي يعمل هذا؟",
+            "answer": "لا. تعتمد شركات B2B على أتمتة البريد الإلكتروني لرعاية العملاء المحتملين ومتابعة الندوات عبر الإنترنت وعمليات التسليم لفريق المبيعات."
+          },
+          {
+            "question": "كم من الوقت يستغرق بناء مسار آلي؟",
+            "answer": "يستغرق المسار القياسي مثل سلسلة الترحيب من أسبوع إلى أسبوعين. قد تستغرق مسارات رعاية العملاء المحتملين المعقدة من 3 إلى 4 أسابيع."
+          },
+          {
+            "question": "كيف تضمن عدم وصول رسائل البريد الإلكتروني إلى البريد العشوائي؟",
+            "answer": "ننفذ مصادقة النطاق المناسبة (SPF و DKIM و DMARC)، ونحتفظ بقوائم نظيفة، ونتجنب كلمات البريد العشوائي، ونحمي سمعة المرسل."
+          },
+          {
+            "question": "هل يمكنك تخصيص رسائل البريد الإلكتروني لكل مستخدم؟",
+            "answer": "نعم. نستخدم البيانات الديناميكية لإدراج الأسماء أو المشتريات الأخيرة أو منتجات معينة تصفحوها، مما يجعلها تبدو كأنها تفاعل شخصي."
+          },
+          {
+            "question": "كيف نقيس نجاح المسار الآلي؟",
+            "answer": "نتتبع معدلات الفتح ومعدلات النقر، والأهم من ذلك، الإيرادات الدقيقة أو العملاء المحتملين المؤهلين الناتجة مباشرة عن هذا التسلسل."
+          },
+          {
+            "question": "هل يمكنك إصلاح الأتمتة الحالية المكسورة لدينا؟",
+            "answer": "نعم. نقوم بشكل متكرر بمراجعة الحسابات الحالية لإصلاح المنطق المعطل، وتحديث القوالب القديمة، وتحسين المسارات ضعيفة الأداء."
+          }
+        ],
+        "technologies": [
+          { "icon": "klaviyo", "name": "Klaviyo" },
+          { "icon": "activecampaign", "name": "ActiveCampaign" },
+          { "icon": "hubspot", "name": "HubSpot" },
+          { "icon": "mailchimp", "name": "Mailchimp" },
+          { "icon": "customerio", "name": "Customer.io" },
+          { "icon": "zapier", "name": "Zapier" },
+          { "icon": "sendgrid", "name": "SendGrid" },
+          { "icon": "salesforce", "name": "Salesforce" }
+        ]
+      }
+    }
+  },
+  "facebook-ads": {
+    "en": {
+      "name": "Facebook Ads",
+      "shortDescription": "Turn scrolling into sales. We build highly targeted, data-driven Facebook ad campaigns that generate high-quality leads and maximize your return on ad spend (ROAS).",
+      "fullDescription": "With billions of active users, Facebook remains one of the most powerful advertising platforms on the planet—but only if you know how to navigate its complex algorithms and targeting options. Spraying ads and hoping for the best drains your budget quickly. Our Facebook Ads management service takes a scientific, data-driven approach to paid social media. We go beyond basic demographic targeting to build sophisticated full-funnel strategies. We utilize custom audiences, dynamic product catalogs, and precise lookalike modeling to put your brand in front of people who are mathematically most likely to buy. Our in-house creative team designs eye-catching ad creatives and compelling copy that stops the scroll. We continually optimize bids, test new creatives, and refine targeting to ensure you achieve the lowest Cost Per Acquisition (CPA) possible.",
+      "features": [
+        "Comprehensive Full-Funnel Ad Strategy",
+        "Custom Audience & Lookalike Modeling",
+        "Meta Pixel & Conversions API Setup",
+        "Dynamic Product Ads (DPA) for Ecommerce",
+        "Lead Generation & Form Ad Campaigns",
+        "Advanced Retargeting & Cart Recovery Ads",
+        "Creative Design & Copywriting",
+        "A/B Testing (Creatives, Copy, Audiences)"
+      ],
+      "benefits": [
+        "Reach your ideal customers with laser-focused precision targeting",
+        "Scale your revenue predictably with optimized ROAS",
+        "Generate high-quality B2B or B2C leads consistently",
+        "Recover lost website visitors through intelligent retargeting",
+        "Stop wasting budget on underperforming ads and audiences",
+        "Gain deep insights into your audience's purchasing behavior"
+      ],
+      "metaTitle": "Facebook Ads Agency | Meta Advertising Services | PakSoft",
+      "metaDescription": "Maximize your ROI with data-driven Facebook Ads. We build high-converting campaigns, utilize custom audiences, and optimize your return on ad spend.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Audience Research & Strategy",
+            "description": "We analyze your past customer data, competitor ads, and target demographics to build a customized full-funnel Facebook Ads strategy designed for your specific goals."
+          },
+          {
+            "step": 2,
+            "title": "Pixel & Conversions API Setup",
+            "description": "We ensure your tracking is flawless. We install the Meta Pixel, configure standard events, and set up the Conversions API (CAPI) to bypass iOS tracking limitations."
+          },
+          {
+            "step": 3,
+            "title": "Creative Development",
+            "description": "Our designers and copywriters create scroll-stopping visuals (images, videos, carousels) and persuasive ad copy tailored to each stage of the buying journey."
+          },
+          {
+            "step": 4,
+            "title": "Campaign Build & Launch",
+            "description": "We structure your campaigns in Meta Ads Manager, setting up distinct ad sets for prospecting, retargeting, and retention, ensuring budget is allocated efficiently."
+          },
+          {
+            "step": 5,
+            "title": "Continuous A/B Testing",
+            "description": "We launch multiple variations of creatives, headlines, and audiences simultaneously. We kill the losers quickly and scale the winning combinations to lower your CPA."
+          },
+          {
+            "step": 6,
+            "title": "Reporting & Scaling",
+            "description": "We provide transparent, real-time dashboards detailing your spend, leads, and ROAS. Once we hit your target metrics, we strategically scale the budget to maximize volume."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is the minimum budget required for Facebook Ads?",
+            "answer": "We recommend a minimum ad spend of $1,500 to $3,000 per month. The algorithm needs sufficient data to exit the 'learning phase' and optimize delivery."
+          },
+          {
+            "question": "Do Facebook Ads work for B2B companies?",
+            "answer": "Yes. While LinkedIn is great for B2B, Facebook allows you to target business owners, executives, and specific job titles at a much lower Cost Per Click (CPC). Retargeting B2B traffic on Facebook is highly effective."
+          },
+          {
+            "question": "How do iOS 14+ privacy changes affect my ads?",
+            "answer": "Apple's tracking transparency made pixel tracking less reliable. We solve this by implementing the Meta Conversions API (CAPI) to send server-side data directly to Facebook, ensuring accurate attribution."
+          },
+          {
+            "question": "Who creates the images and videos for the ads?",
+            "answer": "We do. Our in-house creative team handles all graphic design, video editing, and copywriting, ensuring your ads are highly engaging and optimized for conversion."
+          },
+          {
+            "question": "What is a 'Lookalike Audience'?",
+            "answer": "We take a list of your best existing customers and feed it into Facebook. Facebook then analyzes their data points and finds millions of new users who share similar traits and purchasing habits."
+          },
+          {
+            "question": "How long does it take to see results?",
+            "answer": "While you will see traffic immediately, it typically takes 2-4 weeks to gather enough data to optimize campaigns for a stable, profitable CPA."
+          },
+          {
+            "question": "Do I own my ad account and data?",
+            "answer": "100%. We work inside your existing Meta Business Manager. You retain full ownership of the account, the pixel data, and the ad creatives."
+          },
+          {
+            "question": "How often do you report on performance?",
+            "answer": "We provide access to a live, 24/7 reporting dashboard. We also conduct formal monthly review calls to discuss strategy, creative testing, and scaling plans."
+          }
+        ],
+        "technologies": [
+          { "icon": "meta", "name": "Meta Ads Manager" },
+          { "icon": "facebook", "name": "Meta Pixel" },
+          { "icon": "api", "name": "Conversions API (CAPI)" },
+          { "icon": "canva", "name": "Canva" },
+          { "icon": "adobe", "name": "Adobe Creative Cloud" },
+          { "icon": "analytics", "name": "Google Analytics 4" },
+          { "icon": "zapier", "name": "Zapier" },
+          { "icon": "shopify", "name": "Shopify Integration" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Facebook Reklamları",
+      "shortDescription": "Kaydırmayı (scrolling) satışa dönüştürün. Yüksek kaliteli potansiyel müşteriler oluşturan ve reklam harcamalarınızın getirisini (ROAS) en üst düzeye çıkaran hedeflenmiş Facebook reklam kampanyaları oluşturuyoruz.",
+      "fullDescription": "Milyarlarca aktif kullanıcısıyla Facebook, gezegendeki en güçlü reklam platformlarından biri olmaya devam ediyor - ancak yalnızca karmaşık algoritmalarında ve hedefleme seçeneklerinde nasıl gezineceğinizi biliyorsanız. Reklamları her yere dağıtıp en iyisini ummak, bütçenizi hızla tüketir. Facebook Reklamları yönetim hizmetimiz, ücretli sosyal medyaya bilimsel, veriye dayalı bir yaklaşım getiriyor. Gelişmiş, tüm dönüşüm hunisini kapsayan stratejiler oluşturmak için temel demografik hedeflemenin ötesine geçiyoruz. Markanızı matematiksel olarak satın alma olasılığı en yüksek olan kişilerin önüne çıkarmak için özel hedef kitleler, dinamik ürün katalogları ve hassas benzer hedef kitle (lookalike) modellemesi kullanıyoruz. Kurum içi yaratıcı ekibimiz, dikkat çekici reklam görselleri ve kaydırmayı durduran ikna edici metinler tasarlar. Mümkün olan en düşük Edinme Başına Maliyeti (CPA) elde etmenizi sağlamak için teklifleri sürekli optimize ediyor, yeni görselleri test ediyor ve hedeflemeyi geliştiriyoruz.",
+      "features": [
+        "Kapsamlı Tüm Dönüşüm Hunisi Reklam Stratejisi",
+        "Özel Hedef Kitle ve Benzer Kitle (Lookalike) Modellemesi",
+        "Meta Piksel ve Conversions API Kurulumu",
+        "E-ticaret için Dinamik Ürün Reklamları (DPA)",
+        "Potansiyel Müşteri Bulma (Lead) ve Form Reklam Kampanyaları",
+        "Gelişmiş Yeniden Hedefleme ve Sepet Kurtarma Reklamları",
+        "Yaratıcı Tasarım ve Metin Yazarlığı",
+        "A/B Testi (Görseller, Metinler, Hedef Kitleler)"
+      ],
+      "benefits": [
+        "Lazer odaklı hassas hedefleme ile ideal müşterilerinize ulaşın",
+        "Optimize edilmiş ROAS ile gelirinizi öngörülebilir şekilde ölçeklendirin",
+        "Sürekli olarak yüksek kaliteli B2B veya B2C potansiyel müşterileri oluşturun",
+        "Akıllı yeniden hedefleme (retargeting) ile kaybedilen web sitesi ziyaretçilerini geri kazanın",
+        "Düşük performans gösteren reklamlarda ve hedef kitlelerde bütçe israfını durdurun",
+        "Hedef kitlenizin satın alma davranışları hakkında derin içgörüler edinin"
+      ],
+      "metaTitle": "Facebook Reklam Ajansı | Meta Reklam Yönetimi | PakSoft",
+      "metaDescription": "Veriye dayalı Facebook Reklamları ile yatırım getirinizi en üst düzeye çıkarın. Yüksek dönüşümlü kampanyalar oluşturuyor, ROAS'ınızı artırıyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Hedef Kitle Araştırması ve Strateji",
+            "description": "Özel hedeflerinize göre tasarlanmış özelleştirilmiş bir Facebook Reklamları stratejisi oluşturmak için geçmiş müşteri verilerinizi, rakip reklamlarını ve hedef demografinizi analiz ediyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Piksel ve Conversions API Kurulumu",
+            "description": "İzlemenizin kusursuz olduğundan emin oluyoruz. iOS izleme sınırlamalarını aşmak için Meta Pikseli yüklüyor, standart olayları yapılandırıyor ve Conversions API'yi (CAPI) kuruyoruz."
+          },
+          {
+            "step": 3,
+            "title": "Yaratıcı Geliştirme",
+            "description": "Tasarımcılarımız ve metin yazarlarımız, satın alma yolculuğunun her aşamasına göre uyarlanmış dikkat çekici görseller (resimler, videolar, karuseller) ve ikna edici reklam metinleri oluşturur."
+          },
+          {
+            "step": 4,
+            "title": "Kampanya Oluşturma ve Lansman",
+            "description": "Kampanyalarınızı Meta Reklam Yöneticisinde yapılandırıyor, bütçenin verimli tahsis edilmesini sağlayarak potansiyel müşteri bulma ve yeniden hedefleme için ayrı reklam setleri oluşturuyoruz."
+          },
+          {
+            "step": 5,
+            "title": "Sürekli A/B Testi",
+            "description": "Aynı anda görsellerin, başlıkların ve kitlelerin birden fazla varyasyonunu başlatıyoruz. CPA'nızı düşürmek için kaybedenleri hızla durduruyor ve kazanan kombinasyonları ölçeklendiriyoruz."
+          },
+          {
+            "step": 6,
+            "title": "Raporlama ve Ölçeklendirme",
+            "description": "Harcamalarınızı, potansiyel müşterilerinizi ve ROAS'ınızı detaylandıran şeffaf, gerçek zamanlı panolar sağlıyoruz. Hedef metriklerimize ulaştığımızda, hacmi en üst düzeye çıkarmak için bütçeyi ölçeklendiriyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Facebook Reklamları için gereken minimum bütçe nedir?",
+            "answer": "Aylık 1.500 ile 3.000 ABD Doları arasında minimum reklam harcaması öneriyoruz. Algoritmanın 'öğrenme aşamasından' çıkması ve yayını optimize etmesi için yeterli veriye ihtiyacı vardır."
+          },
+          {
+            "question": "Facebook Reklamları B2B şirketleri için işe yarar mı?",
+            "answer": "Evet. LinkedIn B2B için harika olsa da, Facebook işletme sahiplerini, yöneticileri ve belirli iş unvanlarını çok daha düşük bir Tıklama Başına Maliyetle (CPC) hedeflemenizi sağlar."
+          },
+          {
+            "question": "iOS 14+ gizlilik değişiklikleri reklamlarımı nasıl etkiler?",
+            "answer": "Apple'ın izleme şeffaflığı, piksel izlemeyi daha az güvenilir hale getirdi. Bu sorunu, sunucu tarafı verilerini doğrudan Facebook'a göndermek için Meta Conversions API (CAPI) uygulayarak çözüyoruz."
+          },
+          {
+            "question": "Reklamlar için görselleri ve videoları kim oluşturuyor?",
+            "answer": "Biz yapıyoruz. Kurum içi yaratıcı ekibimiz tüm grafik tasarım, video düzenleme ve metin yazarlığı işlerini üstlenerek reklamlarınızın son derece ilgi çekici olmasını sağlar."
+          },
+          {
+            "question": "'Benzer Hedef Kitle' (Lookalike Audience) nedir?",
+            "answer": "En iyi mevcut müşterilerinizin bir listesini alıp Facebook'a yüklüyoruz. Facebook daha sonra verilerini analiz eder ve benzer satın alma alışkanlıklarını paylaşan milyonlarca yeni kullanıcı bulur."
+          },
+          {
+            "question": "Sonuçları görmek ne kadar sürer?",
+            "answer": "Trafiği hemen görecek olsanız da, kampanyaları istikrarlı, karlı bir CPA için optimize etmeye yetecek kadar veri toplamak genellikle 2-4 hafta sürer."
+          },
+          {
+            "question": "Reklam hesabım ve verilerim bana mı ait?",
+            "answer": "Mevcut Meta Business Manager'ınızın içinde çalışıyoruz. Hesabın, piksel verilerinin ve reklam materyallerinin tam mülkiyetini siz elinizde tutarsınız."
+          },
+          {
+            "question": "Performans hakkında ne sıklıkla rapor veriyorsunuz?",
+            "answer": "Canlı, 7/24 raporlama panosuna erişim sağlıyoruz. Ayrıca stratejiyi, yaratıcı testleri ve ölçeklendirme planlarını tartışmak için resmi aylık inceleme aramaları yapıyoruz."
+          }
+        ],
+        "technologies": [
+          { "icon": "meta", "name": "Meta Ads Manager" },
+          { "icon": "facebook", "name": "Meta Pixel" },
+          { "icon": "api", "name": "Conversions API (CAPI)" },
+          { "icon": "canva", "name": "Canva" },
+          { "icon": "adobe", "name": "Adobe Creative Cloud" },
+          { "icon": "analytics", "name": "Google Analytics 4" },
+          { "icon": "zapier", "name": "Zapier" },
+          { "icon": "shopify", "name": "Shopify Integration" }
+        ]
+      }
+    },
+    "de": {
+      "name": "Facebook Ads",
+      "shortDescription": "Verwandeln Sie Scrollen in Verkäufe. Wir erstellen hochgradig zielgerichtete, datengesteuerte Facebook-Werbekampagnen, die Leads generieren und Ihren ROAS maximieren.",
+      "fullDescription": "Mit Milliarden aktiver Nutzer bleibt Facebook eine der mächtigsten Werbeplattformen der Welt – aber nur, wenn man weiß, wie man die Algorithmen navigiert. Wer das Budget breit streut und auf das Beste hofft, verbrennt schnell Geld. Unser Facebook Ads Management verfolgt einen wissenschaftlichen, datengesteuerten Ansatz für Paid Social. Wir gehen über demografisches Targeting hinaus und entwickeln ausgefeilte Full-Funnel-Strategien. Wir nutzen Custom Audiences, dynamische Produktkataloge und Lookalike-Modellierung, um Ihre Marke genau den Menschen zu präsentieren, die mathematisch am wahrscheinlichsten kaufen. Unser Inhouse-Kreativteam entwirft auffällige Anzeigen und Texte, die das Scrollen stoppen. Wir optimieren Gebote und Targeting kontinuierlich für den niedrigsten Cost Per Acquisition (CPA).",
+      "features": [
+        "Umfassende Full-Funnel-Werbestrategie",
+        "Custom Audience & Lookalike-Modellierung",
+        "Meta Pixel & Conversions API Setup",
+        "Dynamic Product Ads (DPA) für E-Commerce",
+        "Lead Generation & Form-Ad-Kampagnen",
+        "Erweitertes Retargeting & Warenkorb-Abbrecher-Ads",
+        "Kreatives Design & Copywriting",
+        "A/B-Testing (Creatives, Copy, Audiences)"
+      ],
+      "benefits": [
+        "Erreichen Sie Ihre idealen Kunden mit präzisem Targeting",
+        "Skalieren Sie Ihren Umsatz vorhersehbar mit optimiertem ROAS",
+        "Generieren Sie kontinuierlich hochwertige B2B- oder B2C-Leads",
+        "Holen Sie verlorene Website-Besucher durch Retargeting zurück",
+        "Stoppen Sie Budgetverschwendung bei schlechten Anzeigen",
+        "Gewinnen Sie tiefe Einblicke in das Kaufverhalten Ihrer Zielgruppe"
+      ],
+      "metaTitle": "Facebook Ads Agentur | Meta Werbung | PakSoft",
+      "metaDescription": "Maximieren Sie Ihren ROI mit datengesteuerten Facebook Ads. Wir erstellen hochkonvertierende Kampagnen und optimieren Ihren Return on Ad Spend (ROAS).",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Zielgruppenforschung & Strategie",
+            "description": "Wir analysieren Ihre Kundendaten und die Konkurrenz, um eine maßgeschneiderte Full-Funnel-Facebook-Ads-Strategie zu entwickeln."
+          },
+          {
+            "step": 2,
+            "title": "Pixel & Conversions API Setup",
+            "description": "Wir installieren den Meta Pixel und richten die Conversions API (CAPI) ein, um iOS-Tracking-Einschränkungen zu umgehen."
+          },
+          {
+            "step": 3,
+            "title": "Creative-Entwicklung",
+            "description": "Unsere Designer und Texter erstellen auffällige Visuals und überzeugende Werbetexte, die auf jede Phase der Buyer's Journey zugeschnitten sind."
+          },
+          {
+            "step": 4,
+            "title": "Kampagnenaufbau & Start",
+            "description": "Wir strukturieren Ihre Kampagnen im Meta Ads Manager mit separaten Anzeigengruppen für Prospecting und Retargeting."
+          },
+          {
+            "step": 5,
+            "title": "Kontinuierliches A/B-Testing",
+            "description": "Wir testen gleichzeitig mehrere Varianten von Anzeigen und Zielgruppen, stoppen Verlierer schnell und skalieren die Gewinner."
+          },
+          {
+            "step": 6,
+            "title": "Reporting & Skalierung",
+            "description": "Wir bieten Echtzeit-Dashboards. Sobald wir Ihre Ziel-Metriken (CPA/ROAS) erreichen, skalieren wir das Budget strategisch."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Wie hoch ist das Mindestbudget für Facebook Ads?",
+            "answer": "Wir empfehlen mindestens 1.500 bis 3.000 € pro Monat. Der Algorithmus benötigt Daten, um die 'Lernphase' zu verlassen und die Auslieferung zu optimieren."
+          },
+          {
+            "question": "Funktionieren Facebook Ads für B2B-Unternehmen?",
+            "answer": "Ja. Facebook ermöglicht das Targeting von Geschäftsinhabern und Führungskräften zu einem viel niedrigeren Cost Per Click (CPC) als LinkedIn."
+          },
+          {
+            "question": "Wie wirken sich iOS 14+ Datenschutzänderungen aus?",
+            "answer": "Wir lösen Tracking-Probleme durch die Implementierung der Meta Conversions API (CAPI), um serverseitige Daten direkt an Facebook zu senden."
+          },
+          {
+            "question": "Wer erstellt die Bilder und Videos für die Anzeigen?",
+            "answer": "Unser Inhouse-Kreativteam kümmert sich um Grafikdesign, Videobearbeitung und Copywriting, um höchste Konversionsraten zu gewährleisten."
+          },
+          {
+            "question": "Was ist eine 'Lookalike Audience'?",
+            "answer": "Wir geben eine Liste Ihrer besten Kunden an Facebook. Das System findet Millionen neuer Nutzer, die ähnliche Merkmale und Kaufgewohnheiten aufweisen."
+          },
+          {
+            "question": "Wie lange dauert es, bis man Ergebnisse sieht?",
+            "answer": "Traffic sehen Sie sofort. Es dauert in der Regel 2-4 Wochen, um genügend Daten zu sammeln, um Kampagnen auf einen profitablen CPA zu optimieren."
+          },
+          {
+            "question": "Gehören das Werbekonto und die Daten mir?",
+            "answer": "Zu 100%. Wir arbeiten in Ihrem Meta Business Manager. Sie behalten das volle Eigentum an Konto, Pixel-Daten und Creatives."
+          },
+          {
+            "question": "Wie oft erstatten Sie Bericht über die Leistung?",
+            "answer": "Wir bieten Zugriff auf ein Live-Dashboard. Zudem führen wir monatliche Calls durch, um Strategie und Skalierungspläne zu besprechen."
+          }
+        ],
+        "technologies": [
+          { "icon": "meta", "name": "Meta Ads Manager" },
+          { "icon": "facebook", "name": "Meta Pixel" },
+          { "icon": "api", "name": "Conversions API (CAPI)" },
+          { "icon": "canva", "name": "Canva" },
+          { "icon": "adobe", "name": "Adobe Creative Cloud" },
+          { "icon": "analytics", "name": "Google Analytics 4" },
+          { "icon": "zapier", "name": "Zapier" },
+          { "icon": "shopify", "name": "Shopify Integration" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "فیس بک اشتہارات (Facebook Ads)",
+      "shortDescription": "سکرولنگ کو فروخت میں بدلیں۔ ہم انتہائی ٹارگٹڈ، ڈیٹا پر مبنی فیس بک اشتہاری مہمات بناتے ہیں جو اعلیٰ معیار کی لیڈز پیدا کرتی ہیں اور آپ کے ROAS کو زیادہ سے زیادہ کرتی ہیں۔",
+      "fullDescription": "اربوں فعال صارفین کے ساتھ، فیس بک کرہ ارض پر سب سے طاقتور اشتہاری پلیٹ فارمز میں سے ایک ہے—لیکن صرف اس صورت میں جب آپ اس کے پیچیدہ الگورتھم کو نیویگیٹ کرنا جانتے ہوں۔ اشتہارات چلانا اور بہترین کی امید کرنا آپ کے بجٹ کو تیزی سے ختم کر دیتا ہے۔ ہماری فیس بک اشتہارات کے انتظام کی سروس پیڈ سوشل میڈیا کے لیے ایک سائنسی، ڈیٹا پر مبنی نقطہ نظر اپناتی ہے۔ ہم بنیادی آبادیاتی اہداف سے آگے بڑھتے ہیں۔ ہم آپ کے برانڈ کو ان لوگوں کے سامنے لانے کے لیے کسٹم آڈینسز، ڈائنامک پروڈکٹ کیٹلاگ، اور لک-آلائک (lookalike) ماڈلنگ کا استعمال کرتے ہیں جن کے خریدنے کا سب سے زیادہ امکان ہوتا ہے۔ ہماری اندرون خانہ تخلیقی ٹیم چشم کشا اشتہارات اور زبردست کاپی ڈیزائن کرتی ہے۔ ہم آپ کو کم ترین لاگت فی ایکوزیشن (CPA) کو یقینی بنانے کے لیے مسلسل بولیوں کو بہتر بناتے ہیں۔",
+      "features": [
+        "جامع فل-فنل اشتہاری حکمت عملی",
+        "کسٹم آڈینس اور لک-آلائک ماڈلنگ",
+        "میٹا پکسل اور کنورژن API سیٹ اپ",
+        "ای کامرس کے لیے ڈائنامک پروڈکٹ اشتہارات (DPA)",
+        "لیڈ جنریشن اور فارم ایڈ مہمات",
+        "اعلیٰ ری ٹارگٹنگ اور کارٹ ریکوری اشتہارات",
+        "تخلیقی ڈیزائن اور کاپی رائٹنگ",
+        "A/B ٹیسٹنگ (تخلیقات، کاپی، سامعین)"
+      ],
+      "benefits": [
+        "لیزر فوکسڈ درست ہدف بندی کے ساتھ اپنے مثالی گاہکوں تک پہنچیں",
+        "بہتر ROAS کے ساتھ اپنی آمدنی کو پیشین گوئی کے مطابق بڑھائیں",
+        "مسلسل اعلیٰ معیار کے B2B یا B2C لیڈز پیدا کریں",
+        "ذہین ری ٹارگٹنگ کے ذریعے کھوئے ہوئے زائرین کو دوبارہ حاصل کریں",
+        "ناقص کارکردگی والے اشتہارات پر بجٹ کا ضیاع بند کریں",
+        "اپنے سامعین کے خریداری کے رویے کے بارے میں گہری بصیرت حاصل کریں"
+      ],
+      "metaTitle": "فیس بک اشتہاری ایجنسی | میٹا ایڈورٹائزنگ | PakSoft",
+      "metaDescription": "ڈیٹا پر مبنی فیس بک اشتہارات کے ساتھ اپنے ROI کو زیادہ سے زیادہ کریں۔ ہم اعلیٰ کنورژن والی مہمات بناتے ہیں اور آپ کے اشتہاری اخراجات پر منافع کو بہتر بناتے ہیں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "سامعین کی تحقیق اور حکمت عملی",
+            "description": "ہم آپ کے مخصوص اہداف کے لیے ڈیزائن کردہ فل-فنل فیس بک اشتہاری حکمت عملی بنانے کے لیے آپ کے ماضی کے کسٹمر ڈیٹا اور حریف کے اشتہارات کا تجزیہ کرتے ہیں۔"
+          },
+          {
+            "step": 2,
+            "title": "پکسل اور کنورژن API سیٹ اپ",
+            "description": "ہم میٹا پکسل انسٹال کرتے ہیں اور iOS ٹریکنگ کی حدود کو نظرانداز کرنے کے لیے Conversions API (CAPI) ترتیب دیتے ہیں۔"
+          },
+          {
+            "step": 3,
+            "title": "تخلیقی ڈیولپمنٹ",
+            "description": "ہمارے ڈیزائنرز خریداری کے سفر کے ہر مرحلے کے مطابق چشم کشا بصری (تصاویر، ویڈیوز) اور قائل کرنے والی اشتہاری کاپی بناتے ہیں۔"
+          },
+          {
+            "step": 4,
+            "title": "مہم کی تعمیر اور لانچ",
+            "description": "ہم آپ کی مہمات کو میٹا ایڈز مینیجر میں ترتیب دیتے ہیں، اس بات کو یقینی بناتے ہوئے کہ بجٹ کو مؤثر طریقے سے مختص کیا گیا ہے۔"
+          },
+          {
+            "step": 5,
+            "title": "مسلسل A/B ٹیسٹنگ",
+            "description": "ہم ایک ساتھ کئی اشتہارات اور سامعین کا تجربہ کرتے ہیں۔ ہم ہارنے والوں کو تیزی سے ختم کرتے ہیں اور جیتنے والوں کو اسکیل کرتے ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "رپورٹنگ اور اسکیلنگ",
+            "description": "ہم آپ کے اخراجات، لیڈز، اور ROAS کی تفصیل دینے والے شفاف، ریئل ٹائم ڈیش بورڈز فراہم کرتے ہیں۔ پھر ہم حجم کو زیادہ سے زیادہ کرنے کے لیے بجٹ کو بڑھاتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "فیس بک اشتہارات کے لیے کم از کم کتنا بجٹ درکار ہے؟",
+            "answer": "ہم فی مہینہ $1,500 سے $3,000 تک کے کم از کم اشتہاری اخراجات کی تجویز کرتے ہیں۔ الگورتھم کو بہتر بنانے کے لیے کافی ڈیٹا درکار ہوتا ہے۔"
+          },
+          {
+            "question": "کیا فیس بک اشتہارات B2B کمپنیوں کے لیے کارآمد ہیں؟",
+            "answer": "ہاں۔ جب کہ لنکڈ ان B2B کے لیے بہترین ہے، فیس بک آپ کو بہت کم قیمت فی کلک (CPC) پر مالکان کو نشانہ بنانے کی اجازت دیتا ہے۔"
+          },
+          {
+            "question": "iOS 14+ پرائیویسی تبدیلیاں میرے اشتہارات کو کیسے متاثر کرتی ہیں؟",
+            "answer": "ایپل کی ٹریکنگ شفافیت نے پکسل ٹریکنگ کو کم قابل اعتماد بنا دیا۔ ہم سرور سائیڈ ڈیٹا براہ راست بھیجنے کے لیے میٹا کنورژنز API (CAPI) لاگو کرتے ہیں۔"
+          },
+          {
+            "question": "اشتہارات کے لیے تصاویر اور ویڈیوز کون بناتا ہے؟",
+            "answer": "ہم بناتے ہیں۔ ہماری تخلیقی ٹیم تمام گرافک ڈیزائن اور کاپی رائٹنگ کو سنبھالتی ہے، تاکہ آپ کے اشتہارات پرکشش ہوں۔"
+          },
+          {
+            "question": "'لک-آلائک آڈینس' (Lookalike Audience) کیا ہے؟",
+            "answer": "ہم آپ کے بہترین موجودہ صارفین کی فہرست فیس بک کو فراہم کرتے ہیں۔ فیس بک لاکھوں نئے صارفین تلاش کرتا ہے جو ان جیسی عادات کا اشتراک کرتے ہیں۔"
+          },
+          {
+            "question": "نتائج دیکھنے میں کتنا وقت لگتا ہے؟",
+            "answer": "اگرچہ آپ فوری طور پر ٹریفک دیکھیں گے، لیکن مستحکم، منافع بخش CPA کے لیے مہمات کو بہتر بنانے کے لیے عام طور پر 2-4 ہفتے لگتے ہیں۔"
+          },
+          {
+            "question": "کیا میں اپنے اشتہاری اکاؤنٹ کا مالک ہوں؟",
+            "answer": "100%۔ ہم آپ کے موجودہ میٹا بزنس مینیجر کے اندر کام کرتے ہیں۔ آپ اکاؤنٹ، پکسل ڈیٹا، اور اشتہاری تخلیقات کی مکمل ملکیت برقرار رکھتے ہیں۔"
+          },
+          {
+            "question": "آپ کارکردگی کے بارے میں کتنی بار رپورٹ کرتے ہیں؟",
+            "answer": "ہم لائیو، 24/7 رپورٹنگ ڈیش بورڈ تک رسائی فراہم کرتے ہیں۔ ہم حکمت عملی پر تبادلہ خیال کرنے کے لیے ماہانہ جائزے کی کالز بھی کرتے ہیں۔"
+          }
+        ],
+        "technologies": [
+          { "icon": "meta", "name": "Meta Ads Manager" },
+          { "icon": "facebook", "name": "Meta Pixel" },
+          { "icon": "api", "name": "Conversions API (CAPI)" },
+          { "icon": "canva", "name": "Canva" },
+          { "icon": "adobe", "name": "Adobe Creative Cloud" },
+          { "icon": "analytics", "name": "Google Analytics 4" },
+          { "icon": "zapier", "name": "Zapier" },
+          { "icon": "shopify", "name": "Shopify Integration" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "إعلانات فيسبوك",
+      "shortDescription": "حول التمرير إلى مبيعات. نحن نبني حملات إعلانية عالية الاستهداف تعتمد على البيانات لتوليد عملاء محتملين وزيادة العائد على الإنفاق الإعلاني (ROAS).",
+      "fullDescription": "مع مليارات المستخدمين النشطين، يظل فيسبوك واحداً من أقوى المنصات الإعلانية على هذا الكوكب - ولكن فقط إذا كنت تعرف كيفية التنقل في خوارزمياته المعقدة. إن نشر الإعلانات عشوائياً وتمني الأفضل سيستنزف ميزانيتك بسرعة. تتخذ خدمة إدارة إعلانات فيسبوك الخاصة بنا نهجاً علمياً يعتمد على البيانات. نحن نتجاوز الاستهداف الديموغرافي الأساسي لبناء استراتيجيات معقدة لمسار التحويل الكامل. نحن نستخدم الجماهير المخصصة، وكتالوجات المنتجات الديناميكية، ونمذجة الجماهير المشابهة (Lookalike) الدقيقة لوضع علامتك التجارية أمام الأشخاص الأكثر عرضة للشراء. يصمم فريقنا الإبداعي إعلانات لافتة للنظر ونسخاً مقنعة توقف التمرير. نحن نعمل باستمرار على تحسين عروض الأسعار واختبار التصميمات لضمان تحقيق أقل تكلفة للاكتساب (CPA).",
+      "features": [
+        "استراتيجية إعلانية شاملة لمسار التحويل",
+        "الجمهور المخصص ونمذجة الجمهور المشابه",
+        "إعداد Meta Pixel و Conversions API",
+        "إعلانات المنتجات الديناميكية (DPA) للتجارة الإلكترونية",
+        "إعلانات توليد العملاء المحتملين والنماذج",
+        "إعلانات إعادة الاستهداف المتقدمة واسترداد سلة التسوق",
+        "التصميم الإبداعي وكتابة الإعلانات",
+        "اختبار A/B (التصميمات، النسخ، الجماهير)"
+      ],
+      "benefits": [
+        "الوصول إلى عملائك المثاليين باستهداف دقيق للغاية",
+        "توسيع إيراداتك بشكل يمكن التنبؤ به مع تحسين ROAS",
+        "توليد عملاء محتملين B2B أو B2C بجودة عالية باستمرار",
+        "استرداد زوار الموقع المفقودين من خلال إعادة الاستهداف الذكي",
+        "التوقف عن إهدار الميزانية على الإعلانات ضعيفة الأداء",
+        "اكتساب رؤى عميقة حول السلوك الشرائي لجمهورك"
+      ],
+      "metaTitle": "وكالة إعلانات فيسبوك | إدارة إعلانات Meta | PakSoft",
+      "metaDescription": "قم بزيادة عائد الاستثمار الخاص بك باستخدام إعلانات فيسبوك المعتمدة على البيانات. نحن نبني حملات عالية التحويل ونحسن العائد على الإنفاق الإعلاني.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "أبحاث الجمهور والاستراتيجية",
+            "description": "نقوم بتحليل بيانات العملاء السابقة وإعلانات المنافسين لبناء استراتيجية إعلانات فيسبوك مخصصة مصممة لأهدافك المحددة."
+          },
+          {
+            "step": 2,
+            "title": "إعداد Pixel و Conversions API",
+            "description": "نضمن أن التتبع الخاص بك لا تشوبه شائبة. نقوم بتثبيت Meta Pixel وإعداد CAPI لتجاوز قيود تتبع iOS."
+          },
+          {
+            "step": 3,
+            "title": "التطوير الإبداعي",
+            "description": "ينشئ المصممون لدينا صوراً جذابة ومقاطع فيديو ونسخاً إعلانية مقنعة مصممة خصيصاً لكل مرحلة من مراحل الشراء."
+          },
+          {
+            "step": 4,
+            "title": "بناء الحملة وإطلاقها",
+            "description": "نقوم بتنظيم حملاتك في Meta Ads Manager، وإعداد مجموعات إعلانية متميزة للتنقيب وإعادة الاستهداف، وتخصيص الميزانية بكفاءة."
+          },
+          {
+            "step": 5,
+            "title": "اختبار A/B المستمر",
+            "description": "نطلق أشكالاً متعددة من التصميمات والعناوين في وقت واحد. نقوم بإيقاف الخاسرين بسرعة وتوسيع نطاق التوليفات الفائزة."
+          },
+          {
+            "step": 6,
+            "title": "إعداد التقارير وتوسيع النطاق",
+            "description": "نوفر لوحات معلومات شفافة توضح إنفاقك والعملاء المحتملين. بمجرد الوصول إلى مقاييسنا المستهدفة، نقوم بزيادة الميزانية استراتيجياً."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما هو الحد الأدنى للميزانية المطلوبة لإعلانات فيسبوك؟",
+            "answer": "نوصي بحد أدنى للإنفاق الإعلاني يتراوح بين 1500 دولار و 3000 دولار شهرياً. تحتاج الخوارزمية لبيانات كافية للخروج من 'مرحلة التعلم'."
+          },
+          {
+            "question": "هل تعمل إعلانات فيسبوك لشركات B2B؟",
+            "answer": "نعم. يتيح لك فيسبوك استهداف أصحاب الأعمال والمديرين التنفيذيين بتكلفة نقرة (CPC) أقل بكثير من LinkedIn."
+          },
+          {
+            "question": "كيف تؤثر تغييرات خصوصية iOS 14+ على إعلاناتي؟",
+            "answer": "جعلت تغييرات آبل تتبع البكسل أقل موثوقية. نحل هذا من خلال تنفيذ Meta Conversions API (CAPI) لإرسال البيانات مباشرة من الخادم."
+          },
+          {
+            "question": "من يقوم بإنشاء الصور ومقاطع الفيديو للإعلانات؟",
+            "answer": "نحن نقوم بذلك. يتولى فريقنا الإبداعي جميع أعمال التصميم الجرافيكي وتحرير الفيديو وكتابة الإعلانات."
+          },
+          {
+            "question": "ما هو 'الجمهور المشابه' (Lookalike Audience)؟",
+            "answer": "نأخذ قائمة بأفضل عملائك الحاليين ونغذيها لفيسبوك. يجد فيسبوك بعد ذلك ملايين المستخدمين الجدد الذين يتشاركون سمات وعادات شراء مماثلة."
+          },
+          {
+            "question": "كم من الوقت يستغرق رؤية النتائج؟",
+            "answer": "على الرغم من أنك سترى حركة المرور على الفور، إلا أن الأمر يستغرق عادة من أسبوعين إلى 4 أسابيع لجمع بيانات كافية لتحسين الحملات."
+          },
+          {
+            "question": "هل أمتلك حسابي الإعلاني وبياناتي؟",
+            "answer": "100٪. نحن نعمل داخل Meta Business Manager الحالي الخاص بك. أنت تحتفظ بالملكية الكاملة للحساب وبيانات البكسل."
+          },
+          {
+            "question": "كم مرة تقدمون تقارير عن الأداء؟",
+            "answer": "نوفر الوصول إلى لوحة معلومات حية للإبلاغ على مدار الساعة. ونجري مكالمات مراجعة شهرية رسمية لمناقشة الاستراتيجية وخطط التوسع."
+          }
+        ],
+        "technologies": [
+          { "icon": "meta", "name": "Meta Ads Manager" },
+          { "icon": "facebook", "name": "Meta Pixel" },
+          { "icon": "api", "name": "Conversions API (CAPI)" },
+          { "icon": "canva", "name": "Canva" },
+          { "icon": "adobe", "name": "Adobe Creative Cloud" },
+          { "icon": "analytics", "name": "Google Analytics 4" },
+          { "icon": "zapier", "name": "Zapier" },
+          { "icon": "shopify", "name": "Shopify Integration" }
+        ]
+      }
+    }
+  }
+}

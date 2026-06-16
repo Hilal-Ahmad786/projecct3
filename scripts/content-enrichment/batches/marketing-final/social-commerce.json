@@ -1,0 +1,594 @@
+{
+  "slug": "social-commerce",
+  "en": {
+    "name": "Social Commerce",
+    "shortDescription": "Turn social media scrollers into instant buyers. We integrate, optimize, and manage native storefronts on Instagram, Facebook, and TikTok to drive frictionless sales.",
+    "fullDescription": "The modern consumer doesn't want to click a link in a bio, wait for a website to load, and navigate through a clunky checkout process. They want to buy what they see, instantly, without leaving their favorite app. This is the power of Social Commerce. Our services transform your social media profiles into high-converting digital storefronts. We handle the complex technical integration of syncing your ecommerce catalog (Shopify, WooCommerce, Magento) natively into Instagram Shops, Facebook Shops, and TikTok Shop. We ensure product feeds are error-free, descriptions are optimized for social search, and 'shoppable' tags are integrated seamlessly into your posts, Reels, and TikToks. Furthermore, we optimize the in-app checkout experience to reduce friction, capitalizing on impulse buying behaviors and dramatically lowering your cost of acquisition.",
+    "features": [
+      "Instagram & Facebook Shop Setup & Management",
+      "TikTok Shop Integration & Optimization",
+      "Dynamic Product Catalog Synchronization",
+      "Shoppable Posts, Reels, and Stories",
+      "In-App Native Checkout Configuration",
+      "Live Shopping Event Strategy & Setup",
+      "Social Commerce Analytics & Revenue Tracking",
+      "Affiliate & Creator Marketplace Integration (TikTok)"
+    ],
+    "benefits": [
+      "Dramatically increase conversion rates by shortening the path to purchase",
+      "Capture impulse buyers directly within the social media feed",
+      "Reduce cart abandonment by utilizing seamless native in-app checkouts",
+      "Synchronize inventory in real-time between your website and social shops",
+      "Leverage TikTok creators to sell your products via native affiliate programs",
+      "Gain accurate attribution on which specific social posts drive the most revenue"
+    ],
+    "metaTitle": "Social Commerce Agency | Instagram & TikTok Shop | PakSoft",
+    "metaDescription": "Sell directly on social media. We integrate your ecommerce catalog with Instagram Shop, Facebook, and TikTok Shop to drive frictionless, native sales.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Platform Audit & Compliance",
+          "description": "We audit your accounts to ensure you meet strict Commerce Eligibility Requirements on Meta and TikTok, resolving any domain verification or policy issues."
+        },
+        {
+          "step": 2,
+          "title": "Catalog Integration & Syncing",
+          "description": "We establish a real-time data sync between your ecommerce backend (Shopify, WooCommerce) and the social platforms, mapping attributes perfectly to avoid feed errors."
+        },
+        {
+          "step": 3,
+          "title": "Storefront Design & Curation",
+          "description": "We design your native social storefronts, organizing products into curated 'Collections' (e.g., Summer Fits, Bestsellers) for easy, visually appealing browsing."
+        },
+        {
+          "step": 4,
+          "title": "Shoppable Content Strategy",
+          "description": "We implement a strategy for tagging products natively in your organic posts, Reels, Stories, and TikTok videos, turning content into direct points of sale."
+        },
+        {
+          "step": 5,
+          "title": "Native Checkout Configuration",
+          "description": "Where available (like in the US), we configure native in-app checkout so users can purchase using saved credit cards or Apple Pay without ever leaving the social app."
+        },
+        {
+          "step": 6,
+          "title": "Creator & Affiliate Activation",
+          "description": "Particularly for TikTok Shop, we set up your affiliate program, allowing creators to add your products to their videos in exchange for an automated commission."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the difference between Social Media Marketing and Social Commerce?",
+          "answer": "Social Media Marketing focuses on driving traffic to your website to buy. Social Commerce focuses on selling the product directly inside the social media app itself (e.g., TikTok Shop)."
+        },
+        {
+          "question": "Does my inventory stay synced if someone buys on Instagram?",
+          "answer": "Yes. We set up robust API connections between your core ecommerce platform (like Shopify) and the social shops. If a product sells out on Instagram, it instantly updates on your website."
+        },
+        {
+          "question": "Is Native In-App Checkout available in my country?",
+          "answer": "Platform features vary widely by region. For example, Meta's native checkout is primarily US-only, while TikTok Shop is expanding rapidly across the US, UK, and parts of Asia. We navigate these regional restrictions for you."
+        },
+        {
+          "question": "Why was my Facebook/Instagram Shop rejected?",
+          "answer": "Rejections are common and usually stem from domain verification failures, untrustworthy account history, or restricted product categories. We help appeal and resolve these complex Commerce Manager issues."
+        },
+        {
+          "question": "How does TikTok Shop Affiliate work?",
+          "answer": "We list your products on the TikTok 'Creator Marketplace'. Creators can select your products, feature them in their videos, and automatically earn a commission (which we set) when a sale is made."
+        },
+        {
+          "question": "Can I run ads to my Social Shop?",
+          "answer": "Yes! Running ads that drive users directly to a native Social Shop often yields much higher conversion rates than driving them to an external website, due to the frictionless checkout."
+        },
+        {
+          "question": "What platforms do you support?",
+          "answer": "We primarily focus on the 'Big Three' for social commerce: Instagram Shops, Facebook Shops, and TikTok Shop, integrating them with backends like Shopify, BigCommerce, and Magento."
+        },
+        {
+          "question": "Do I have to pay fees to Instagram or TikTok for selling?",
+          "answer": "Yes, if you use their native checkout. Platforms typically charge a processing fee (around 2-5%) per transaction, similar to Stripe or PayPal."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "meta",
+          "name": "Meta Commerce Manager"
+        },
+        {
+          "icon": "tiktok",
+          "name": "TikTok Shop Seller Center"
+        },
+        {
+          "icon": "shopify",
+          "name": "Shopify Integration"
+        },
+        {
+          "icon": "wordpress",
+          "name": "WooCommerce"
+        },
+        {
+          "icon": "feed",
+          "name": "Product Feed APIs"
+        },
+        {
+          "icon": "analytics",
+          "name": "Social Commerce Analytics"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Sosyal Ticaret (Social Commerce)",
+    "shortDescription": "Sosyal medya kullanıcılarını anında alıcılara dönüştürün. Sürtünmesiz satışlar sağlamak için Instagram, Facebook ve TikTok'taki yerel (native) mağazaları entegre ediyor, optimize ediyor ve yönetiyoruz.",
+    "fullDescription": "Modern tüketici, biyografideki bir bağlantıya tıklamak, bir web sitesinin yüklenmesini beklemek ve hantal bir ödeme sürecinden geçmek istemiyor. Gördükleri şeyi, en sevdikleri uygulamadan çıkmadan anında satın almak istiyorlar. Sosyal Ticaretin (Social Commerce) gücü budur. Hizmetlerimiz, sosyal medya profillerinizi yüksek dönüşüm sağlayan dijital mağazalara dönüştürür. E-ticaret kataloğunuzu (Shopify, WooCommerce) yerel (native) olarak Instagram Shops, Facebook Shops ve TikTok Shop'a senkronize etmenin karmaşık teknik entegrasyonunu biz hallediyoruz. Ürün beslemelerinin (feed) hatasız olmasını, açıklamaların sosyal arama için optimize edilmesini ve 'alışveriş yapılabilir' (shoppable) etiketlerin gönderilerinize, Reels'lerinize ve TikTok videolarınıza sorunsuz bir şekilde entegre edilmesini sağlıyoruz. Ayrıca, dürtüsel (impulse) satın alma davranışlarından yararlanarak ve edinme maliyetinizi önemli ölçüde düşürerek, sürtünmeyi azaltmak için uygulama içi (in-app) ödeme deneyimini optimize ediyoruz.",
+    "features": [
+      "Instagram ve Facebook Shop Kurulumu ve Yönetimi",
+      "TikTok Shop Entegrasyonu ve Optimizasyonu",
+      "Dinamik Ürün Kataloğu Senkronizasyonu",
+      "Alışveriş Yapılabilir (Shoppable) Gönderiler, Reels ve Hikayeler",
+      "Uygulama İçi (In-App) Yerel Ödeme (Checkout) Yapılandırması",
+      "Canlı Alışveriş (Live Shopping) Etkinlik Stratejisi ve Kurulumu",
+      "Sosyal Ticaret Analitiği ve Gelir Takibi",
+      "Affiliate (Satış Ortaklığı) ve İçerik Üreticisi Pazaryeri Entegrasyonu (TikTok)"
+    ],
+    "benefits": [
+      "Satın alma yolunu kısaltarak dönüşüm oranlarını önemli ölçüde artırın",
+      "Dürtüsel (impulse) alıcıları doğrudan sosyal medya akışı (feed) içinde yakalayın",
+      "Sorunsuz yerel uygulama içi ödemeleri (checkout) kullanarak sepeti terk etme oranını azaltın",
+      "Web siteniz ve sosyal mağazalarınız arasında envanteri gerçek zamanlı olarak senkronize edin",
+      "Ürünlerinizi yerel satış ortaklığı programları aracılığıyla satmak için TikTok içerik üreticilerinden yararlanın",
+      "Hangi spesifik sosyal medya gönderilerinin en çok geliri sağladığına dair doğru ilişkilendirme (attribution) elde edin"
+    ],
+    "metaTitle": "Sosyal Ticaret Ajansı | Instagram & TikTok Shop | PakSoft",
+    "metaDescription": "Doğrudan sosyal medyada satış yapın. Sorunsuz satışlar sağlamak için e-ticaret kataloğunuzu Instagram, Facebook ve TikTok Shop ile entegre ediyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Platform Denetimi ve Uyumluluk",
+          "description": "Alan adı doğrulama veya politika sorunlarını çözerek, Meta ve TikTok'taki katı Ticaret Uygunluk Gerekliliklerini (Commerce Eligibility) karşıladığınızdan emin olmak için hesaplarınızı denetliyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Katalog Entegrasyonu ve Senkronizasyon",
+          "description": "Besleme (feed) hatalarını önlemek için e-ticaret altyapınız (Shopify, WooCommerce) ile sosyal platformlar arasında nitelikleri mükemmel bir şekilde eşleştirerek gerçek zamanlı veri senkronizasyonu kuruyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Vitrin Tasarımı ve Küratörlük",
+          "description": "Ürünleri kolay ve görsel olarak çekici bir gezinme için özel 'Koleksiyonlar' (ör. Yaz Kombinleri, Çok Satanlar) halinde düzenleyerek yerel sosyal vitrinlerinizi (storefronts) tasarlıyoruz."
+        },
+        {
+          "step": 4,
+          "title": "Alışveriş Yapılabilir İçerik Stratejisi",
+          "description": "Organik gönderilerinizde, Reels, Hikayeler ve TikTok videolarınızda ürünleri yerel (native) olarak etiketlemek için bir strateji uygulayarak içeriği doğrudan satış noktalarına dönüştürüyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Yerel Ödeme (Native Checkout) Yapılandırması",
+          "description": "Mevcut olduğu durumlarda (ABD gibi), kullanıcıların sosyal uygulamadan hiç ayrılmadan kayıtlı kredi kartlarını veya Apple Pay'i kullanarak satın alabilmeleri için uygulama içi yerel ödemeyi yapılandırıyoruz."
+        },
+        {
+          "step": 6,
+          "title": "İçerik Üretici ve Affiliate Aktivasyonu",
+          "description": "Özellikle TikTok Shop için, içerik üreticilerin ürünlerinizi otomatik komisyon karşılığında videolarına eklemelerine olanak tanıyan bir satış ortaklığı programı (affiliate program) kuruyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Sosyal Medya Pazarlaması ile Sosyal Ticaret arasındaki fark nedir?",
+          "answer": "Sosyal Medya Pazarlaması, satın almaları için web sitenize trafik çekmeye odaklanır. Sosyal Ticaret ise ürünü doğrudan sosyal medya uygulamasının içinde (ör. TikTok Shop) satmaya odaklanır."
+        },
+        {
+          "question": "Biri Instagram'dan satın aldığında envanterim senkronize kalıyor mu?",
+          "answer": "Evet. Çekirdek e-ticaret platformunuz (Shopify gibi) ile sosyal mağazalar arasında sağlam API bağlantıları kuruyoruz. Bir ürün Instagram'da tükenirse web sitenizde anında güncellenir."
+        },
+        {
+          "question": "Yerel Uygulama İçi Ödeme (Native Checkout) ülkemde mevcut mu?",
+          "answer": "Platform özellikleri bölgeye göre büyük farklılıklar gösterir. Örneğin Meta'nın yerel ödemesi çoğunlukla yalnızca ABD'de geçerliyken, TikTok Shop küresel çapta hızla genişliyor. Bu bölgesel kısıtlamaları sizin için yönetiyoruz."
+        },
+        {
+          "question": "Facebook/Instagram Mağazam (Shop) neden reddedildi?",
+          "answer": "Reddedilmeler yaygındır ve genellikle alan adı doğrulama hatalarından, güvenilmez hesap geçmişinden veya kısıtlanmış ürün kategorilerinden kaynaklanır. Bu karmaşık Commerce Manager sorunlarına itiraz etmenize ve çözmenize yardımcı oluyoruz."
+        },
+        {
+          "question": "TikTok Shop Satış Ortaklığı (Affiliate) nasıl çalışır?",
+          "answer": "Ürünlerinizi TikTok 'Creator Marketplace'te listeleriz. İçerik üreticileri ürünlerinizi seçebilir, videolarında tanıtabilir ve satış yapıldığında otomatik olarak (bizim belirlediğimiz) bir komisyon kazanabilirler."
+        },
+        {
+          "question": "Sosyal Mağazama (Social Shop) reklam verebilir miyim?",
+          "answer": "Evet! Kullanıcıları doğrudan yerel bir Sosyal Mağazaya yönlendiren reklamlar yayınlamak, sorunsuz (frictionless) ödeme işlemi nedeniyle, onları harici bir web sitesine yönlendirmekten genellikle çok daha yüksek dönüşüm oranları sağlar."
+        },
+        {
+          "question": "Hangi platformları destekliyorsunuz?",
+          "answer": "Sosyal ticaret için öncelikli olarak 'Büyük Üçlüye' odaklanıyoruz: Instagram Shops, Facebook Shops ve TikTok Shop, ve bunları Shopify, BigCommerce ve WooCommerce gibi altyapılarla entegre ediyoruz."
+        },
+        {
+          "question": "Satış yapmak için Instagram veya TikTok'a komisyon ödemem gerekiyor mu?",
+          "answer": "Evet, yerel (native) ödeme sistemlerini kullanırsanız. Platformlar genellikle Stripe veya PayPal'a benzer şekilde işlem başına (yaklaşık %2-5 civarında) bir işlem ücreti alır."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "meta",
+          "name": "Meta Commerce Manager"
+        },
+        {
+          "icon": "tiktok",
+          "name": "TikTok Shop Seller Center"
+        },
+        {
+          "icon": "shopify",
+          "name": "Shopify Integration"
+        },
+        {
+          "icon": "wordpress",
+          "name": "WooCommerce"
+        },
+        {
+          "icon": "feed",
+          "name": "Product Feed APIs"
+        },
+        {
+          "icon": "analytics",
+          "name": "Social Commerce Analytics"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Social Commerce",
+    "shortDescription": "Verwandeln Sie Social-Media-Nutzer in sofortige Käufer. Wir integrieren und optimieren native Shops auf Instagram, Facebook und TikTok für reibungslose Verkäufe.",
+    "fullDescription": "Der moderne Konsument möchte nicht auf einen Link in der Bio klicken, warten bis eine Website lädt und sich durch einen umständlichen Checkout navigieren. Er möchte das Gesehene sofort kaufen, ohne die App zu verlassen. Das ist die Macht des Social Commerce. Wir verwandeln Ihre Social-Media-Profile in hochkonvertierende digitale Schaufenster. Wir übernehmen die komplexe technische Integration und synchronisieren Ihren E-Commerce-Katalog (Shopify, WooCommerce) nativ in Instagram Shops, Facebook Shops und TikTok Shop. Wir stellen sicher, dass Produkt-Feeds fehlerfrei sind, Beschreibungen für die soziale Suche optimiert sind und 'Shoppable'-Tags nahtlos in Ihre Posts, Reels und TikToks integriert werden. Darüber hinaus optimieren wir das In-App-Checkout-Erlebnis, um Spontankäufe zu fördern.",
+    "features": [
+      "Instagram & Facebook Shop Setup & Management",
+      "TikTok Shop Integration & Optimierung",
+      "Dynamische Synchronisation des Produktkatalogs",
+      "Shoppable Posts, Reels und Stories",
+      "Konfiguration des nativen In-App Checkouts",
+      "Strategie & Setup für Live Shopping Events",
+      "Social Commerce Analytics & Revenue Tracking",
+      "Affiliate & Creator Marketplace Integration (TikTok)"
+    ],
+    "benefits": [
+      "Steigern Sie Konversionsraten drastisch durch einen kürzeren Kaufweg",
+      "Erfassen Sie Spontankäufer direkt im Social-Media-Feed",
+      "Reduzieren Sie Kaufabbrüche durch nahtlose In-App-Checkouts",
+      "Synchronisieren Sie das Inventar in Echtzeit zwischen Website und Social Shops",
+      "Nutzen Sie TikTok-Creator zum Verkauf via Affiliate-Programmen",
+      "Erhalten Sie eine genaue Zuordnung, welche Posts den meisten Umsatz bringen"
+    ],
+    "metaTitle": "Social Commerce Agentur | Instagram & TikTok Shop | PakSoft",
+    "metaDescription": "Verkaufen Sie direkt auf Social Media. Wir integrieren Ihren E-Commerce-Katalog in Instagram, Facebook und TikTok Shop für reibungslose In-App-Verkäufe.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Plattform-Audit & Compliance",
+          "description": "Wir prüfen Ihre Konten, um sicherzustellen, dass Sie die strengen Handelsrichtlinien von Meta und TikTok erfüllen, und lösen Domain- oder Policy-Probleme."
+        },
+        {
+          "step": 2,
+          "title": "Katalog-Integration & Synchronisierung",
+          "description": "Wir richten eine Echtzeit-Synchronisierung zwischen Ihrem Shop-System (z. B. Shopify) und den Social-Plattformen ein, um Fehler im Feed zu vermeiden."
+        },
+        {
+          "step": 3,
+          "title": "Storefront Design & Kuration",
+          "description": "Wir gestalten Ihre nativen Schaufenster und organisieren Produkte in kuratierte 'Kollektionen' (z. B. Bestseller, Sommer-Looks) für einfaches Stöbern."
+        },
+        {
+          "step": 4,
+          "title": "Shoppable Content Strategie",
+          "description": "Wir implementieren eine Strategie zum Taggen von Produkten in organischen Posts, Reels und TikToks und machen Content so zum direkten Point of Sale."
+        },
+        {
+          "step": 5,
+          "title": "Native Checkout Konfiguration",
+          "description": "Sofern verfügbar, konfigurieren wir den In-App-Checkout, sodass Nutzer mit gespeicherten Daten kaufen können, ohne die App zu verlassen."
+        },
+        {
+          "step": 6,
+          "title": "Creator & Affiliate Aktivierung",
+          "description": "Besonders für den TikTok Shop richten wir Ihr Affiliate-Programm ein, damit Creator Ihre Produkte gegen eine automatisierte Provision bewerben können."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist der Unterschied zwischen Social Media Marketing und Social Commerce?",
+          "answer": "Social Media Marketing leitet Traffic auf Ihre Website. Social Commerce fokussiert sich auf den direkten Verkauf innerhalb der Social-Media-App (z. B. TikTok Shop)."
+        },
+        {
+          "question": "Bleibt mein Inventar synchron, wenn jemand auf Instagram kauft?",
+          "answer": "Ja. Wir richten robuste API-Verbindungen zwischen Ihrem Shop (wie Shopify) und den Social Shops ein. Wenn etwas auf Instagram ausverkauft ist, wird es auf der Website aktualisiert."
+        },
+        {
+          "question": "Ist Native In-App Checkout in meinem Land verfügbar?",
+          "answer": "Das variiert stark. Metas nativer Checkout ist primär auf die USA beschränkt, während der TikTok Shop in den USA, UK und Teilen Asiens expandiert. Wir navigieren diese Restriktionen für Sie."
+        },
+        {
+          "question": "Warum wurde mein Facebook/Instagram Shop abgelehnt?",
+          "answer": "Ablehnungen sind häufig und liegen meist an fehlerhafter Domain-Verifizierung oder eingeschränkten Produkten. Wir helfen bei der Lösung dieser komplexen Commerce-Manager-Probleme."
+        },
+        {
+          "question": "Wie funktioniert TikTok Shop Affiliate?",
+          "answer": "Wir listen Ihre Produkte im TikTok 'Creator Marketplace'. Creator können diese auswählen, in ihren Videos zeigen und erhalten automatisch eine Provision, wenn ein Verkauf zustande kommt."
+        },
+        {
+          "question": "Kann ich Anzeigen für meinen Social Shop schalten?",
+          "answer": "Ja! Anzeigen, die Nutzer direkt zu einem nativen Social Shop leiten, haben aufgrund des reibungslosen Checkouts oft viel höhere Konversionsraten als solche, die auf externe Websites leiten."
+        },
+        {
+          "question": "Welche Plattformen unterstützen Sie?",
+          "answer": "Wir konzentrieren uns auf die 'Großen Drei' im Social Commerce: Instagram Shops, Facebook Shops und TikTok Shop, und integrieren sie in Backends wie Shopify oder WooCommerce."
+        },
+        {
+          "question": "Muss ich Gebühren an Instagram oder TikTok zahlen?",
+          "answer": "Ja, wenn Sie deren nativen Checkout nutzen. Die Plattformen erheben in der Regel eine Bearbeitungsgebühr (ca. 2-5 %) pro Transaktion, ähnlich wie Stripe oder PayPal."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "meta",
+          "name": "Meta Commerce Manager"
+        },
+        {
+          "icon": "tiktok",
+          "name": "TikTok Shop Seller Center"
+        },
+        {
+          "icon": "shopify",
+          "name": "Shopify Integration"
+        },
+        {
+          "icon": "wordpress",
+          "name": "WooCommerce"
+        },
+        {
+          "icon": "feed",
+          "name": "Product Feed APIs"
+        },
+        {
+          "icon": "analytics",
+          "name": "Social Commerce Analytics"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "سوشل کامرس",
+    "shortDescription": "سوشل میڈیا اسکرولرز کو فوری خریداروں میں بدلیں۔ ہم رکاوٹ کے بغیر فروخت بڑھانے کے لیے Instagram، Facebook، اور TikTok پر مقامی اسٹور فرنٹ کو مربوط اور منظم کرتے ہیں۔",
+    "fullDescription": "جدید صارف بایو (Bio) میں موجود لنک پر کلک کرنے، ویب سائٹ کے لوڈ ہونے کا انتظار کرنے، اور ادائیگی کے مشکل عمل سے گزرنے کا خواہشمند نہیں ہے۔ وہ جو دیکھتے ہیں اسے اپنی پسندیدہ ایپ چھوڑے بغیر فوری طور پر خریدنا چاہتے ہیں۔ یہ سوشل کامرس کی طاقت ہے۔ ہماری خدمات آپ کے سوشل میڈیا پروفائلز کو ہائی کنورژن والے ڈیجیٹل اسٹور فرنٹ میں تبدیل کرتی ہیں۔ ہم آپ کے ای کامرس کیٹلاگ (Shopify, WooCommerce) کو مقامی طور پر Instagram Shops، Facebook Shops، اور TikTok Shop میں ہم آہنگ کرنے کا پیچیدہ تکنیکی انضمام سنبھالتے ہیں۔ ہم اس بات کو یقینی بناتے ہیں کہ پروڈکٹ کی فیڈز غلطی سے پاک ہوں، وضاحتیں سماجی تلاش کے لیے موزوں ہوں، اور آپ کی پوسٹس اور ریلز میں 'شاپ ایبل' ٹیگز شامل ہوں۔ ہم درون ایپ (in-app) چیک آؤٹ کے تجربے کو بہتر بناتے ہیں، جس سے حصول کی لاگت میں نمایاں کمی آتی ہے۔",
+    "features": [
+      "انسٹاگرام اور فیس بک شاپ کا سیٹ اپ اور انتظام",
+      "ٹک ٹاک شاپ انٹیگریشن اور آپٹیمائزیشن",
+      "ڈائنامک پروڈکٹ کیٹلاگ کی ہم آہنگی (Syncing)",
+      "خریداری کے قابل (Shoppable) پوسٹس، ریلز اور کہانیاں",
+      "ان-ایپ (In-App) نیٹو چیک آؤٹ کنفیگریشن",
+      "لائیو شاپنگ ایونٹ کی حکمت عملی اور سیٹ اپ",
+      "سوشل کامرس اینالیٹکس اور ریونیو ٹریکنگ",
+      "ایفیلیٹ اور کریئیٹر مارکیٹ پلیس انٹیگریشن (TikTok)"
+    ],
+    "benefits": [
+      "خریداری کا راستہ مختصر کر کے تبادلوں (Conversion Rates) میں ڈرامائی طور پر اضافہ کریں",
+      "فوری خریداروں کو براہ راست سوشل میڈیا فیڈ کے اندر ہی پکڑیں",
+      "مقامی درون ایپ چیک آؤٹ کا استعمال کرتے ہوئے کارٹ ترک کرنے (Cart Abandonment) کو کم کریں",
+      "اپنی ویب سائٹ اور سوشل شاپس کے درمیان ریئل ٹائم میں انوینٹری کو ہم آہنگ کریں",
+      "اپنے پروڈکٹس بیچنے کے لیے TikTok کے تخلیق کاروں سے فائدہ اٹھائیں",
+      "درست طور پر جانیں کہ کون سی مخصوص سماجی پوسٹس سب سے زیادہ آمدنی پیدا کرتی ہیں"
+    ],
+    "metaTitle": "سوشل کامرس ایجنسی | انسٹاگرام اور ٹک ٹاک شاپ | PakSoft",
+    "metaDescription": "سوشل میڈیا پر براہ راست فروخت کریں۔ ہم آپ کے ای کامرس کیٹلاگ کو بغیر کسی رکاوٹ کے فروخت کے لیے Instagram، Facebook اور TikTok Shop کے ساتھ مربوط کرتے ہیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "پلیٹ فارم آڈٹ اور تعمیل",
+          "description": "ہم اس بات کو یقینی بنانے کے لیے آپ کے اکاؤنٹس کا آڈٹ کرتے ہیں کہ آپ Meta اور TikTok پر تجارت کی سخت شرائط کو پورا کرتے ہیں، اور کسی بھی ڈومین کی تصدیق کے مسئلے کو حل کرتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "کیٹلاگ انٹیگریشن اور سنکنگ",
+          "description": "ہم آپ کے ای کامرس بیک اینڈ (Shopify, WooCommerce) اور سماجی پلیٹ فارمز کے درمیان ریئل ٹائم ڈیٹا سنک قائم کرتے ہیں تاکہ فیڈ کی غلطیوں سے بچا جا سکے۔"
+        },
+        {
+          "step": 3,
+          "title": "اسٹور فرنٹ ڈیزائن اور کیوریشن",
+          "description": "ہم آپ کے سماجی اسٹور فرنٹ کو ڈیزائن کرتے ہیں، مصنوعات کو آسانی سے براؤز کرنے کے لیے پرکشش 'کلیکشنز' (جیسے، سب سے زیادہ بکنے والے) میں منظم کرتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "شاپ ایبل (Shoppable) مواد کی حکمت عملی",
+          "description": "ہم آپ کی نامیاتی (Organic) پوسٹس، ریلز، اور ٹک ٹاک ویڈیوز میں مقامی طور پر مصنوعات کو ٹیگ کرنے کی حکمت عملی نافذ کرتے ہیں۔"
+        },
+        {
+          "step": 5,
+          "title": "مقامی (Native) چیک آؤٹ کنفیگریشن",
+          "description": "جہاں دستیاب ہو، ہم ان-ایپ چیک آؤٹ کو کنفیگر کرتے ہیں تاکہ صارفین سوشل ایپ کو چھوڑے بغیر اپنے محفوظ شدہ کریڈٹ کارڈ کا استعمال کر کے خریداری کر سکیں۔"
+        },
+        {
+          "step": 6,
+          "title": "تخلیق کار اور ملحقہ (Affiliate) ایکٹیویشن",
+          "description": "خاص طور پر ٹک ٹاک شاپ کے لیے، ہم آپ کا ملحقہ پروگرام ترتیب دیتے ہیں، جس سے تخلیق کار خودکار کمیشن کے بدلے آپ کی مصنوعات کو اپنی ویڈیوز میں شامل کر سکتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "سوشل میڈیا مارکیٹنگ اور سوشل کامرس میں کیا فرق ہے؟",
+          "answer": "سوشل میڈیا مارکیٹنگ ویب سائٹ پر ٹریفک لانے پر مرکوز ہے۔ جب کہ سوشل کامرس براہ راست سوشل میڈیا ایپ کے اندر ہی مصنوعات فروخت کرنے پر مرکوز ہے (جیسے ٹک ٹاک شاپ)۔"
+        },
+        {
+          "question": "اگر کوئی انسٹاگرام پر خریداری کرتا ہے تو کیا میری انوینٹری مطابقت پذیر رہتی ہے؟",
+          "answer": "ہاں۔ ہم آپ کے بنیادی ای کامرس پلیٹ فارم اور سوشل شاپس کے درمیان مضبوط API کنکشن قائم کرتے ہیں۔ اگر کوئی پروڈکٹ انسٹاگرام پر فروخت ہوتی ہے، تو یہ ویب سائٹ پر فوراً اپ ڈیٹ ہو جاتی ہے۔"
+        },
+        {
+          "question": "کیا میری فیس بک/انسٹاگرام شاپ کو مسترد کر دیا گیا؟",
+          "answer": "مسترد ہونا عام ہے اور عام طور پر ڈومین کی تصدیق کی ناکامی یا محدود مصنوعات کے زمرے کی وجہ سے ہوتا ہے۔ ہم کامرس مینیجر کے ان پیچیدہ مسائل کو حل کرنے میں مدد کرتے ہیں۔"
+        },
+        {
+          "question": "ٹک ٹاک شاپ ایفیلیٹ (Affiliate) کیسے کام کرتا ہے؟",
+          "answer": "ہم آپ کے پروڈکٹس کو TikTok 'Creator Marketplace' پر درج کرتے ہیں۔ تخلیق کار آپ کی مصنوعات کا انتخاب کر سکتے ہیں، انہیں اپنی ویڈیوز میں دکھا سکتے ہیں، اور فروخت ہونے پر خود بخود کمیشن حاصل کر سکتے ہیں۔"
+        },
+        {
+          "question": "کیا میں اپنی سوشل شاپ پر اشتہارات چلا سکتا ہوں؟",
+          "answer": "ہاں! بغیر رگڑ کے (frictionless) چیک آؤٹ کی وجہ سے، ایسے اشتہارات چلانا جو صارفین کو براہ راست نیٹو سوشل شاپ پر لے جاتے ہیں اکثر بیرونی ویب سائٹ کے مقابلے میں بہت زیادہ تبادلوں کی شرح حاصل کرتے ہیں۔"
+        },
+        {
+          "question": "آپ کن پلیٹ فارمز کو سپورٹ کرتے ہیں؟",
+          "answer": "ہم بنیادی طور پر سوشل کامرس کے لیے 'بگ تھری' پر توجہ مرکوز کرتے ہیں: انسٹاگرام شاپس، فیس بک شاپس، اور ٹک ٹاک شاپ، انہیں Shopify اور WooCommerce جیسے بیک اینڈز کے ساتھ مربوط کرتے ہیں۔"
+        },
+        {
+          "question": "کیا مجھے فروخت کے لیے انسٹاگرام یا ٹک ٹاک کو فیس ادا کرنی ہوگی؟",
+          "answer": "ہاں، اگر آپ ان کا مقامی چیک آؤٹ استعمال کرتے ہیں۔ یہ پلیٹ فارمز عام طور پر Stripe یا PayPal کی طرح فی لین دین پروسیسنگ فیس لیتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "meta",
+          "name": "Meta Commerce Manager"
+        },
+        {
+          "icon": "tiktok",
+          "name": "TikTok Shop Seller Center"
+        },
+        {
+          "icon": "shopify",
+          "name": "Shopify Integration"
+        },
+        {
+          "icon": "wordpress",
+          "name": "WooCommerce"
+        },
+        {
+          "icon": "feed",
+          "name": "Product Feed APIs"
+        },
+        {
+          "icon": "analytics",
+          "name": "Social Commerce Analytics"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "التجارة الاجتماعية (Social Commerce)",
+    "shortDescription": "حول متصفحي وسائل التواصل الاجتماعي إلى مشترين فوريين. نقوم بدمج وتحسين وإدارة واجهات المتاجر الأصلية على انستغرام وفيسبوك وتيك توك لدفع مبيعات خالية من الاحتكاك.",
+    "fullDescription": "لا يرغب المستهلك الحديث في النقر فوق ارتباط في السيرة الذاتية (Bio)، والانتظار حتى يتم تحميل موقع ويب، والتنقل عبر عملية دفع معقدة. إنهم يريدون شراء ما يرونه، على الفور، دون مغادرة تطبيقهم المفضل. هذه هي قوة التجارة الاجتماعية. تحول خدماتنا ملفات تعريف الوسائط الاجتماعية الخاصة بك إلى واجهات متاجر رقمية عالية التحويل. نتعامل مع التكامل التقني المعقد لمزامنة كتالوج التجارة الإلكترونية الخاص بك (Shopify ، WooCommerce) محلياً مع Instagram Shops و Facebook Shops و TikTok Shop. نضمن أن تكون خلاصات (Feeds) المنتجات خالية من الأخطاء، والأوصاف محسنة للبحث الاجتماعي، ودمج علامات 'التسوق' بسلاسة في منشوراتك ومقاطع Reels و TikToks. علاوة على ذلك، نقوم بتحسين تجربة الدفع داخل التطبيق لتقليل الاحتكاك، والاستفادة من سلوكيات الشراء الاندفاعي وخفض تكلفة الاكتساب بشكل كبير.",
+    "features": [
+      "إعداد وإدارة متجر انستغرام وفيسبوك",
+      "دمج وتحسين متجر تيك توك (TikTok Shop)",
+      "مزامنة كتالوج المنتجات الديناميكي",
+      "منشورات، Reels، وقصص قابلة للتسوق",
+      "تكوين الدفع الأصلي داخل التطبيق (In-App Checkout)",
+      "استراتيجية وإعداد أحداث التسوق المباشر (Live Shopping)",
+      "تحليلات التجارة الاجتماعية وتتبع الإيرادات",
+      "تكامل برنامج المسوقين بالعمولة (Affiliate) وسوق صناع المحتوى"
+    ],
+    "benefits": [
+      "زيادة معدلات التحويل بشكل كبير عن طريق تقصير مسار الشراء",
+      "التقاط المشترين الاندفاعيين مباشرة داخل موجز وسائل التواصل الاجتماعي",
+      "تقليل التخلي عن عربة التسوق باستخدام عمليات الدفع الأصلية داخل التطبيق",
+      "مزامنة المخزون في الوقت الفعلي بين موقع الويب والمتاجر الاجتماعية",
+      "الاستفادة من منشئي محتوى TikTok لبيع منتجاتك عبر برامج التسويق بالعمولة",
+      "الحصول على إسناد دقيق حول المنشورات التي تحقق أكبر قدر من الإيرادات"
+    ],
+    "metaTitle": "وكالة التجارة الاجتماعية | متجر إنستغرام وتيك توك | PakSoft",
+    "metaDescription": "بيع منتجاتك مباشرة على وسائل التواصل الاجتماعي. ندمج كتالوج متجرك مع متجر Instagram و Facebook و TikTok Shop لزيادة المبيعات بسلاسة.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تدقيق المنصة والامتثال",
+          "description": "ندقق في حساباتك لضمان تلبية متطلبات الأهلية الصارمة للتجارة على Meta و TikTok، ونحل مشكلات التحقق من النطاق (Domain) أو سياسة الاستخدام."
+        },
+        {
+          "step": 2,
+          "title": "تكامل الكتالوج والمزامنة",
+          "description": "ننشئ مزامنة بيانات في الوقت الفعلي بين منصة التجارة الإلكترونية (Shopify) والمنصات الاجتماعية، مع تعيين السمات بدقة لتجنب أخطاء الخلاصة."
+        },
+        {
+          "step": 3,
+          "title": "تصميم واجهة المتجر وتنظيمه",
+          "description": "نصمم واجهات المتاجر الاجتماعية الأصلية الخاصة بك، وننظم المنتجات في 'مجموعات' منسقة (مثل، الأزياء الصيفية) لتصفح سهل وجذاب بصرياً."
+        },
+        {
+          "step": 4,
+          "title": "استراتيجية المحتوى القابل للتسوق",
+          "description": "نطبق استراتيجية للإشارة إلى المنتجات محلياً في المنشورات، و Reels، و TikToks، وتحويل المحتوى العضوي إلى نقاط بيع مباشرة."
+        },
+        {
+          "step": 5,
+          "title": "تكوين الدفع الأصلي (Native Checkout)",
+          "description": "حيثما توفر (كما في الولايات المتحدة)، نقوم بتهيئة الدفع داخل التطبيق حتى يتمكن المستخدمون من الشراء باستخدام البطاقات المحفوظة دون مغادرة التطبيق."
+        },
+        {
+          "step": 6,
+          "title": "تنشيط المسوقين بالعمولة (Affiliates)",
+          "description": "خاصة بالنسبة لمتجر TikTok، نقوم بإعداد برنامج المسوقين بالعمولة الخاص بك، مما يتيح لمنشئي المحتوى الترويج لمنتجاتك مقابل عمولة."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما الفرق بين التسويق عبر وسائل التواصل الاجتماعي والتجارة الاجتماعية؟",
+          "answer": "يركز التسويق عبر وسائل التواصل الاجتماعي على توجيه حركة المرور إلى موقع الويب الخاص بك للشراء. بينما تركز التجارة الاجتماعية على بيع المنتج مباشرة داخل التطبيق الاجتماعي (مثل TikTok Shop)."
+        },
+        {
+          "question": "هل يظل مخزوني متزامناً إذا اشترى شخص ما من Instagram؟",
+          "answer": "نعم. نقوم بإعداد اتصالات API قوية بين منصة التجارة الأساسية الخاصة بك (مثل Shopify) والمتاجر الاجتماعية. إذا نفد منتج ما على Instagram، فسيتم تحديثه فوراً على موقع الويب الخاص بك."
+        },
+        {
+          "question": "هل يتوفر الدفع داخل التطبيق (In-App Checkout) في بلدي؟",
+          "answer": "تختلف الميزات حسب المنطقة. على سبيل المثال، الدفع الأصلي من Meta متاح بشكل أساسي في الولايات المتحدة فقط، بينما يتوسع TikTok Shop عالمياً. نحن ندير هذه القيود الإقليمية نيابة عنك."
+        },
+        {
+          "question": "لماذا تم رفض متجر Facebook/Instagram الخاص بي؟",
+          "answer": "الرفض شائع وينبع عادة من فشل التحقق من النطاق، أو سجل الحساب، أو فئات المنتجات المقيدة. نحن نساعد في تقديم الالتماسات وحل هذه المشكلات المعقدة."
+        },
+        {
+          "question": "كيف يعمل برنامج التسويق بالعمولة في TikTok Shop؟",
+          "answer": "نقوم بإدراج منتجاتك في 'سوق المبدعين' على TikTok. يمكن لمنشئي المحتوى اختيار منتجاتك وعرضها في مقاطع الفيديو الخاصة بهم وكسب عمولة تلقائياً عند إجراء عملية بيع."
+        },
+        {
+          "question": "هل يمكنني تشغيل إعلانات لمتجري الاجتماعي؟",
+          "answer": "نعم! غالباً ما تسفر الإعلانات التي توجه المستخدمين مباشرة إلى متجر اجتماعي أصلي عن معدلات تحويل أعلى بكثير من توجيههم إلى موقع ويب خارجي، وذلك بفضل الدفع السلس."
+        },
+        {
+          "question": "ما المنصات التي تدعمونها؟",
+          "answer": "نركز بشكل أساسي على المنصات الثلاثة الكبرى: Instagram Shops و Facebook Shops و TikTok Shop، وندمجها مع منصات مثل Shopify و WooCommerce."
+        },
+        {
+          "question": "هل يجب أن أدفع رسوماً لـ Instagram أو TikTok للبيع؟",
+          "answer": "نعم، إذا كنت تستخدم ميزة الدفع الأصلية الخاصة بهم. تفرض المنصات عادةً رسوم معالجة (حوالي 2-5٪) لكل معاملة، على غرار Stripe أو PayPal."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "meta",
+          "name": "Meta Commerce Manager"
+        },
+        {
+          "icon": "tiktok",
+          "name": "TikTok Shop Seller Center"
+        },
+        {
+          "icon": "shopify",
+          "name": "Shopify Integration"
+        },
+        {
+          "icon": "wordpress",
+          "name": "WooCommerce"
+        },
+        {
+          "icon": "feed",
+          "name": "Product Feed APIs"
+        },
+        {
+          "icon": "analytics",
+          "name": "Social Commerce Analytics"
+        }
+      ]
+    }
+  }
+}

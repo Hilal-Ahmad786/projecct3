@@ -1,0 +1,638 @@
+{
+  "slug": "multilingual-seo",
+  "en": {
+    "name": "Multilingual SEO",
+    "shortDescription": "Break language barriers and conquer international markets. We optimize your website architecture, content, and technical signals to rank highly in foreign search engines and connect with a global audience.",
+    "fullDescription": "Translating your website is not the same as Multilingual SEO. Simply running your content through an auto-translator won't get you ranked in Germany, Japan, or Brazil. True international SEO requires technical precision and deep cultural nuance. We ensure search engines perfectly understand which language and region your content is targeting by implementing flawless 'hreflang' tag architectures and optimal URL structures (ccTLDs, subdomains, or subdirectories). But we go beyond the technical. Our native-speaking SEO experts conduct localized keyword research, understanding the specific colloquialisms and search intent of your target market—because people don't always search for the direct translation of an English keyword. We adapt your content, localize your metadata, and build backlinks from region-specific domains, turning your website into a truly global revenue engine.",
+    "features": [
+      "International Site Architecture Strategy (ccTLD vs Subdomain vs Subdirectory)",
+      "Flawless Hreflang Tag Implementation & Auditing",
+      "Native-Speaker Localized Keyword Research",
+      "Cultural Content Adaptation & Transcreation",
+      "Localized Meta Data (Titles, Descriptions, Headers)",
+      "International Backlink Building (Region-Specific Outreach)",
+      "Geotargeting Setup in Google Search Console",
+      "Multilingual CMS Setup Consulting (WPML, Localize, etc.)"
+    ],
+    "benefits": [
+      "Unlock massive new revenue streams by reaching untapped international markets",
+      "Prevent 'duplicate content' penalties across different English-speaking regions (US/UK/AU)",
+      "Ensure users are automatically served the correct language and currency based on their location",
+      "Outrank local, native competitors by speaking the exact search language of the target market",
+      "Improve global user experience (UX) and significantly reduce bounce rates",
+      "Build international brand authority with localized content and regional backlinks"
+    ],
+    "metaTitle": "Multilingual SEO Services | International SEO | PakSoft",
+    "metaDescription": "Conquer international markets. Our native-speaking experts execute Multilingual SEO, hreflang optimization, and cultural transcreation to rank globally.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Market Opportunity Analysis",
+          "description": "We analyze search volume, competitor difficulty, and market demand in various countries to determine which languages offer the highest ROI."
+        },
+        {
+          "step": 2,
+          "title": "Technical Architecture & Hreflang Setup",
+          "description": "We determine the best URL structure (e.g., /de/) and implement complex hreflang tags to map the relationships between your language variants."
+        },
+        {
+          "step": 3,
+          "title": "Localized Keyword Research",
+          "description": "Native speakers look for 'transcreation' opportunities—finding the actual phrases locals use, which are rarely 1:1 translations of English terms."
+        },
+        {
+          "step": 4,
+          "title": "Content Localization & Transcreation",
+          "description": "We don't just translate; we adapt content for cultural relevance, tone, and local search intent, ensuring your brand resonates authentically."
+        },
+        {
+          "step": 5,
+          "title": "On-Page SEO & Meta Data Translation",
+          "description": "Every element is localized: Page titles, meta descriptions, URL slugs, image alt text, and internal link anchors are optimized for the target language."
+        },
+        {
+          "step": 6,
+          "title": "Regional Link Building",
+          "description": "We execute outreach campaigns to earn high-quality backlinks from local, region-specific domains (e.g., .fr, .de, .jp) to build local authority."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Should we use a separate domain (.de, .fr) or subdirectories (/de/, /fr/)?",
+          "answer": "It depends on resources. Subdirectories are easier to manage and share authority. ccTLDs offer the strongest local signal but require building authority from scratch."
+        },
+        {
+          "question": "What are 'hreflang' tags and why do I need them?",
+          "answer": "Hreflang tags tell search engines the language and geographical targeting of a webpage. They prevent Google from seeing US/UK English as duplicate content."
+        },
+        {
+          "question": "Can't we just use a plugin like Google Translate on our website?",
+          "answer": "Auto-translation offers no SEO value (Google often can't index it properly), provides a poor UX, and completely misses cultural nuances."
+        },
+        {
+          "question": "Do you use native speakers for translation?",
+          "answer": "Yes. We use a process called 'transcreation' utilizing native-speaking SEO specialists to ensure cultural appropriateness and search optimization."
+        },
+        {
+          "question": "How do you handle English variants (e.g., US vs. UK vs. Australia)?",
+          "answer": "We use hreflang tags ('en-US', 'en-GB') and localize spelling (localization vs localisation) and pricing to provide a seamless regional experience."
+        },
+        {
+          "question": "Does Multilingual SEO take longer than standard SEO?",
+          "answer": "Yes, it is inherently more complex. You are essentially running parallel SEO campaigns. Building regional authority takes dedicated time and effort."
+        },
+        {
+          "question": "Which search engines do you optimize for?",
+          "answer": "While Google is globally dominant, we optimize for the primary search engine in your target region (e.g., Baidu in China, Yandex in Russia)."
+        },
+        {
+          "question": "How do you measure international SEO success?",
+          "answer": "We segment reporting in GA4 and GSC to track organic traffic, keyword rankings, and conversions specifically by country and language directory."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "google",
+          "name": "Google Search Console"
+        },
+        {
+          "icon": "wpml",
+          "name": "WPML"
+        },
+        {
+          "icon": "semrush",
+          "name": "SEMrush"
+        },
+        {
+          "icon": "ahrefs",
+          "name": "Ahrefs"
+        },
+        {
+          "icon": "screamingfrog",
+          "name": "Screaming Frog"
+        },
+        {
+          "icon": "weglot",
+          "name": "Weglot"
+        },
+        {
+          "icon": "lokalise",
+          "name": "Lokalise"
+        },
+        {
+          "icon": "crowdin",
+          "name": "Crowdin"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Çok Dilli SEO (Multilingual SEO)",
+    "shortDescription": "Dil engellerini aşın ve uluslararası pazarları fethedin. Yabancı arama motorlarında üst sıralarda yer almanız ve küresel bir kitleyle bağlantı kurmanız için web sitesi mimarinizi, içeriğinizi ve teknik sinyallerinizi optimize ediyoruz.",
+    "fullDescription": "Web sitenizi çevirmek Çok Dilli SEO ile aynı şey değildir. İçeriğinizi sadece otomatik bir çevirmenden geçirmek sizi Almanya'da, Japonya'da veya Brezilya'da sıralamaya sokmaz. Gerçek uluslararası SEO, teknik hassasiyet ve derin kültürel nüanslar gerektirir. Kusursuz 'hreflang' etiket mimarileri ve optimal URL yapıları (ccTLD'ler, alt alan adları veya alt dizinler) uygulayarak, arama motorlarının içeriğinizin hangi dili ve bölgeyi hedeflediğini mükemmel bir şekilde anlamasını sağlıyoruz. Ancak tekniğin de ötesine geçiyoruz. Anadili hedef dil olan SEO uzmanlarımız, hedef pazarınızın belirli günlük konuşma dilini ve arama niyetini anlayarak yerelleştirilmiş anahtar kelime araştırması yapar — çünkü insanlar her zaman İngilizce bir anahtar kelimenin doğrudan çevirisini aramazlar. İçeriğinizi uyarlıyor, meta verilerinizi yerelleştiriyor ve bölgeye özgü alan adlarından geri bağlantılar (backlink) oluşturarak web sitenizi gerçekten küresel bir gelir motoruna dönüştürüyoruz.",
+    "features": [
+      "Uluslararası Site Mimarisi Stratejisi (ccTLD, Alt Alan Adı veya Alt Dizin)",
+      "Kusursuz Hreflang Etiketi Uygulaması ve Denetimi",
+      "Anadili Hedef Dil Olan Uzmanlarla Yerelleştirilmiş Anahtar Kelime Araştırması",
+      "Kültürel İçerik Uyarlaması ve Yaratıcı Çeviri (Transcreation)",
+      "Yerelleştirilmiş Meta Veriler (Başlıklar, Açıklamalar, H1 Etiketleri)",
+      "Uluslararası Bağlantı Oluşturma (Bölgeye Özgü Erişim)",
+      "Google Search Console'da Coğrafi Hedefleme Kurulumu",
+      "Çok Dilli CMS Kurulum Danışmanlığı (WPML, Localize vb.)"
+    ],
+    "benefits": [
+      "Daha önce girilmemiş uluslararası pazarlara ulaşarak devasa yeni gelir akışlarının kilidini açın",
+      "Farklı İngilizce konuşulan bölgelerde (ABD/İngiltere/Avustralya) 'kopya içerik' cezalarını önleyin",
+      "Kullanıcılara konumlarına göre otomatik olarak doğru dil ve para biriminin sunulmasını sağlayın",
+      "Hedef pazarın tam arama dilini konuşarak yerel rakiplerinizi geride bırakın",
+      "Küresel kullanıcı deneyimini (UX) iyileştirin ve hemen çıkma oranlarını önemli ölçüde azaltın",
+      "Yerelleştirilmiş içerik ve bölgesel geri bağlantılarla uluslararası marka otoritesi oluşturun"
+    ],
+    "metaTitle": "Çok Dilli SEO Ajansı | Uluslararası SEO | PakSoft",
+    "metaDescription": "Uluslararası pazarları fethedin. Anadili olan uzmanlarımız, küresel sıralamalar için Çok Dilli SEO, hreflang optimizasyonu ve kültürel uyarlama yürütür.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Pazar Fırsatı Analizi",
+          "description": "Hangi dillerin en yüksek ROI'yi sunduğunu belirlemek için çeşitli ülkelerdeki arama hacmini, rakip zorluğunu ve pazar talebini analiz ediyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Teknik Mimari ve Hreflang Kurulumu",
+          "description": "En iyi URL yapısını belirliyor (örn. /de/) ve dil varyantlarınız arasındaki ilişkileri eşlemek için karmaşık hreflang etiketleri uyguluyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Yerelleştirilmiş Anahtar Kelime Araştırması",
+          "description": "Anadili olan uzmanlar, yerel halkın İngilizce terimlerin 1:1 çevirisi olmayan, gerçekte kullandığı ifadeleri bularak uyarlama fırsatları ararlar."
+        },
+        {
+          "step": 4,
+          "title": "İçerik Yerelleştirme ve Uyarlama (Transcreation)",
+          "description": "Sadece çevirmiyoruz; markanızın özgün yankı uyandırmasını sağlamak için içeriği kültürel uygunluk, ton ve yerel arama niyetine göre uyarlıyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Sayfa İçi SEO ve Meta Veri Çevirisi",
+          "description": "Her eleman yerelleştirilir: Sayfa başlıkları, meta açıklamalar, URL yapıları, resim alt metinleri ve iç bağlantılar hedef dile göre optimize edilir."
+        },
+        {
+          "step": 6,
+          "title": "Bölgesel Bağlantı Oluşturma (Link Building)",
+          "description": "Yerel otorite inşa etmek için bölgeye özgü alan adlarından (.fr, .de, .jp gibi) yüksek kaliteli geri bağlantılar kazanmak adına kampanyalar yürütüyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Ayrı bir alan adı (.de, .fr) mı yoksa alt dizin (/de/, /fr/) mi kullanmalıyız?",
+          "answer": "Kaynaklara bağlıdır. Alt dizinlerin yönetimi daha kolaydır ve ana alan adı otoritesini paylaşır. ccTLD'ler daha güçlü yerel sinyal sunar ancak sıfırdan otorite inşa etmeyi gerektirir."
+        },
+        {
+          "question": "'hreflang' etiketleri nedir ve neden bunlara ihtiyacım var?",
+          "answer": "Hreflang etiketleri, arama motorlarına bir sayfanın dilini ve coğrafi hedeflemesini söyler. Google'ın ABD/İngiltere İngilizcesini kopya içerik olarak görmesini engeller."
+        },
+        {
+          "question": "Web sitemizde Google Çeviri gibi bir eklenti kullanamaz mıyız?",
+          "answer": "Otomatik çeviriler hiçbir SEO değeri sunmaz (Google genellikle bunları doğru dizine ekleyemez), zayıf bir UX sağlar ve kültürel nüansları tamamen atlar."
+        },
+        {
+          "question": "Çeviri için anadili hedef dil olan kişileri mi kullanıyorsunuz?",
+          "answer": "Evet. Kültürel uygunluğu ve arama optimizasyonunu sağlamak için anadili olan SEO uzmanlarından yararlanarak 'transcreation' (yaratıcı çeviri) adlı bir süreç kullanıyoruz."
+        },
+        {
+          "question": "İngilizce varyantlarını (ör. ABD - İngiltere - Avustralya) nasıl ele alıyorsunuz?",
+          "answer": "Kesintisiz bölgesel deneyim sunmak için hreflang etiketleri ('en-US', 'en-GB') kullanıyor, yazım kurallarını (localization vs localisation) ve fiyatlandırmayı yerelleştiriyoruz."
+        },
+        {
+          "question": "Çok dilli SEO standart SEO'dan daha mı uzun sürer?",
+          "answer": "Evet, doğası gereği daha karmaşıktır. Temelde paralel SEO kampanyaları yürütüyorsunuz. Bölgesel otorite oluşturmak özel zaman ve çaba gerektirir."
+        },
+        {
+          "question": "Hangi arama motorları için optimizasyon yapıyorsunuz?",
+          "answer": "Google küresel olarak baskın olsa da, hedef bölgenizdeki birincil arama motoru için (örneğin Çin'de Baidu, Rusya'da Yandex) optimizasyon yapıyoruz."
+        },
+        {
+          "question": "Uluslararası SEO başarısını nasıl ölçüyorsunuz?",
+          "answer": "Organik trafiği, anahtar kelime sıralamalarını ve dönüşümleri özellikle ülke ve dil dizinine göre izlemek için GA4 ve GSC'de raporlamayı bölümlere ayırıyoruz."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "google",
+          "name": "Google Search Console"
+        },
+        {
+          "icon": "wpml",
+          "name": "WPML"
+        },
+        {
+          "icon": "semrush",
+          "name": "SEMrush"
+        },
+        {
+          "icon": "ahrefs",
+          "name": "Ahrefs"
+        },
+        {
+          "icon": "screamingfrog",
+          "name": "Screaming Frog"
+        },
+        {
+          "icon": "weglot",
+          "name": "Weglot"
+        },
+        {
+          "icon": "lokalise",
+          "name": "Lokalise"
+        },
+        {
+          "icon": "crowdin",
+          "name": "Crowdin"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Multilingual SEO",
+    "shortDescription": "Überwinden Sie Sprachbarrieren und erobern Sie internationale Märkte. Wir optimieren Ihre Website-Architektur, Inhalte und technischen Signale, um in ausländischen Suchmaschinen hoch zu ranken und ein globales Publikum zu erreichen.",
+    "fullDescription": "Die bloße Übersetzung Ihrer Website ist nicht dasselbe wie mehrsprachiges SEO. Wenn Sie Ihren Inhalt einfach durch einen automatischen Übersetzer laufen lassen, werden Sie in Deutschland, Japan oder Brasilien nicht ranken. Wahres internationales SEO erfordert technische Präzision und tiefes kulturelles Verständnis. Wir stellen sicher, dass Suchmaschinen perfekt verstehen, auf welche Sprache und Region Ihr Inhalt abzielt, indem wir fehlerfreie 'hreflang'-Tag-Architekturen und optimale URL-Strukturen (ccTLDs, Subdomains oder Unterverzeichnisse) implementieren. Aber wir gehen über die Technik hinaus. Unsere Muttersprachler-SEO-Experten führen lokalisierte Keyword-Recherchen durch und verstehen die spezifischen Umgangssprachen und Suchintentionen Ihres Zielmarktes – denn Menschen suchen nicht immer nach der direkten Übersetzung eines englischen Keywords. Wir passen Ihre Inhalte an, lokalisieren Ihre Metadaten und bauen Backlinks von regionalspezifischen Domains auf, um Ihre Website in einen globalen Umsatzmotor zu verwandeln.",
+    "features": [
+      "Internationale Seitenarchitektur-Strategie (ccTLD vs. Subdomain vs. Unterverzeichnis)",
+      "Fehlerfreie Hreflang-Tag Implementierung & Auditing",
+      "Lokalisierte Keyword-Recherche durch Muttersprachler",
+      "Kulturelle Content-Anpassung & Transkreation",
+      "Lokalisierte Metadaten (Titel, Beschreibungen, Überschriften)",
+      "Internationales Backlink-Building (Regionalspezifisches Outreach)",
+      "Geotargeting Setup in der Google Search Console",
+      "Multilingual CMS Setup Consulting (WPML, Localize, etc.)"
+    ],
+    "benefits": [
+      "Erschließen Sie neue Einnahmequellen durch ungenutzte internationale Märkte",
+      "Vermeiden Sie 'Duplicate Content'-Strafen für verschiedene englischsprachige Regionen",
+      "Stellen Sie sicher, dass Nutzer automatisch die richtige Sprache und Währung sehen",
+      "Übertreffen Sie lokale Konkurrenten, indem Sie genau die Suchsprache des Zielmarktes sprechen",
+      "Verbessern Sie die globale UX und senken Sie Absprungraten drastisch",
+      "Bauen Sie internationale Markenautorität mit regionalem Content und Backlinks auf"
+    ],
+    "metaTitle": "Multilingual SEO Agentur | Internationales SEO | PakSoft",
+    "metaDescription": "Erobern Sie internationale Märkte. Unsere Experten führen mehrsprachiges SEO, Hreflang-Optimierung und kulturelle Transkreation für globale Rankings durch.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Marktchancen-Analyse",
+          "description": "Wir analysieren Suchvolumen, Wettbewerb und Marktnachfrage in verschiedenen Ländern, um zu ermitteln, welche Sprachen den höchsten ROI bieten."
+        },
+        {
+          "step": 2,
+          "title": "Technische Architektur & Hreflang-Setup",
+          "description": "Wir bestimmen die beste URL-Struktur (z.B. /de/) und implementieren hreflang-Tags, um die Beziehungen zwischen Sprachversionen zu kartieren."
+        },
+        {
+          "step": 3,
+          "title": "Lokalisierte Keyword-Recherche",
+          "description": "Muttersprachler suchen nach echten Begriffen der Einheimischen (Transkreation), die selten 1:1-Übersetzungen englischer Keywords sind."
+        },
+        {
+          "step": 4,
+          "title": "Content-Lokalisierung & Transkreation",
+          "description": "Wir übersetzen nicht nur; wir passen Inhalte an kulturelle Relevanz, Tonalität und lokale Suchintention an."
+        },
+        {
+          "step": 5,
+          "title": "On-Page SEO & Metadaten-Übersetzung",
+          "description": "Jedes Element wird lokalisiert: Seitentitel, Meta-Beschreibungen, URLs, Alt-Texte und interne Links werden für die Zielsprache optimiert."
+        },
+        {
+          "step": 6,
+          "title": "Regionales Linkbuilding",
+          "description": "Wir führen Outreach-Kampagnen durch, um hochwertige Backlinks von lokalen, regionalspezifischen Domains (z.B. .fr, .de) zu gewinnen."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Sollten wir eine separate Domain (.de) oder Unterverzeichnisse (/de/) nutzen?",
+          "answer": "Das hängt von den Ressourcen ab. Unterverzeichnisse sind einfacher zu verwalten. ccTLDs bieten das stärkste lokale Signal, erfordern aber den Aufbau von Autorität von Null."
+        },
+        {
+          "question": "Was sind 'hreflang'-Tags und warum brauche ich sie?",
+          "answer": "Hreflang-Tags teilen Suchmaschinen Sprache und regionales Ziel einer Seite mit. Sie verhindern, dass Google US/UK-Englisch als Duplicate Content einstuft."
+        },
+        {
+          "question": "Können wir nicht einfach Google Translate auf unserer Website nutzen?",
+          "answer": "Automatische Übersetzungen bieten keinen SEO-Wert, verschlechtern die Nutzererfahrung und ignorieren kulturelle Nuancen komplett."
+        },
+        {
+          "question": "Nutzen Sie Muttersprachler für die Übersetzung?",
+          "answer": "Ja. Wir nutzen einen Prozess namens 'Transkreation' mit muttersprachlichen SEO-Spezialisten für kulturelle Angemessenheit und perfekte Suchoptimierung."
+        },
+        {
+          "question": "Wie gehen Sie mit englischen Varianten (US vs. UK) um?",
+          "answer": "Wir nutzen hreflang-Tags ('en-US', 'en-GB') und lokalisieren Schreibweisen (localization vs. localisation) und Währungen für eine nahtlose Erfahrung."
+        },
+        {
+          "question": "Dauert Multilingual SEO länger als Standard-SEO?",
+          "answer": "Ja, es ist komplexer. Sie führen im Grunde parallele SEO-Kampagnen durch. Der Aufbau regionaler Autorität erfordert Zeit und Mühe."
+        },
+        {
+          "question": "Für welche Suchmaschinen optimieren Sie?",
+          "answer": "Während Google global dominiert, optimieren wir für die primäre Suchmaschine in Ihrer Zielregion (z.B. Baidu in China, Yandex in Russland)."
+        },
+        {
+          "question": "Wie messen Sie internationalen SEO-Erfolg?",
+          "answer": "Wir segmentieren Berichte in GA4 und GSC, um organischen Traffic, Rankings und Conversions spezifisch nach Land und Sprache zu verfolgen."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "google",
+          "name": "Google Search Console"
+        },
+        {
+          "icon": "wpml",
+          "name": "WPML"
+        },
+        {
+          "icon": "semrush",
+          "name": "SEMrush"
+        },
+        {
+          "icon": "ahrefs",
+          "name": "Ahrefs"
+        },
+        {
+          "icon": "screamingfrog",
+          "name": "Screaming Frog"
+        },
+        {
+          "icon": "weglot",
+          "name": "Weglot"
+        },
+        {
+          "icon": "lokalise",
+          "name": "Lokalise"
+        },
+        {
+          "icon": "crowdin",
+          "name": "Crowdin"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "کثیر لسانی ایس ای او (Multilingual SEO)",
+    "shortDescription": "زبان کی رکاوٹوں کو توڑیں اور بین الاقوامی مارکیٹوں کو فتح کریں۔ ہم آپ کی ویب سائٹ کے ڈھانچے، مواد، اور تکنیکی سگنلز کو بہتر بناتے ہیں تاکہ غیر ملکی سرچ انجنوں میں اعلیٰ درجہ بندی حاصل کی جا سکے۔",
+    "fullDescription": "آپ کی ویب سائٹ کا محض ترجمہ کرنا کثیر لسانی SEO نہیں ہے۔ صرف آٹو ٹرانسلیٹر کا استعمال آپ کو جرمنی، جاپان، یا برازیل میں رینک نہیں کروا سکتا۔ حقیقی بین الاقوامی SEO کے لیے تکنیکی مہارت اور گہری ثقافتی سمجھ بوجھ کی ضرورت ہوتی ہے۔ ہم درست 'hreflang' ٹیگز اور بہترین URL ڈھانچوں کا استعمال کر کے یہ یقینی بناتے ہیں کہ سرچ انجن بخوبی سمجھیں کہ آپ کا مواد کس زبان اور علاقے کو ہدف بنا رہا ہے۔ ہمارے مقامی زبان بولنے والے SEO ماہرین آپ کی ٹارگٹ مارکیٹ کے مخصوص الفاظ اور تلاش کے ارادے (search intent) کو سمجھ کر مقامی کی ورڈ ریسرچ کرتے ہیں۔ ہم آپ کے مواد کو ڈھالتے ہیں، میٹا ڈیٹا کو مقامی بناتے ہیں، اور مخصوص علاقوں کی ڈومینز سے بیک لنکس بناتے ہیں، تاکہ آپ کی ویب سائٹ حقیقی معنوں میں ایک عالمی برانڈ بن سکے۔",
+    "features": [
+      "بین الاقوامی سائٹ کے ڈھانچے کی حکمت عملی (ccTLD یا Subdirectory)",
+      "درست Hreflang ٹیگ کا نفاذ اور آڈٹ",
+      "مقامی زبان بولنے والوں کے ذریعے کی ورڈ ریسرچ",
+      "ثقافتی مواد کی موافقت (Transcreation)",
+      "مقامی میٹا ڈیٹا (Titles, Descriptions, Headers)",
+      "بین الاقوامی بیک لنک بلڈنگ (مخصوص خطے کے لیے)",
+      "گوگل سرچ کنسول میں جیو ٹارگٹنگ (Geotargeting) کا سیٹ اپ",
+      "کثیر لسانی CMS کا سیٹ اپ (جیسے WPML)"
+    ],
+    "benefits": [
+      "نئی بین الاقوامی مارکیٹوں تک پہنچ کر آمدنی کے نئے ذرائع کھولیں۔",
+      "مختلف انگریزی بولنے والے خطوں میں 'ڈپلیکیٹ مواد' کی سزاؤں سے بچیں۔",
+      "اس بات کو یقینی بنائیں کہ صارفین کو ان کی لوکیشن کے مطابق درست زبان اور کرنسی دکھائی جائے۔",
+      "ٹارگٹ مارکیٹ کی درست زبان استعمال کر کے مقامی حریفوں کو پیچھے چھوڑیں۔",
+      "عالمی سطح پر صارف کے تجربے (UX) کو بہتر بنائیں اور باؤنس ریٹ کو کم کریں۔",
+      "مقامی مواد اور علاقائی بیک لنکس کے ساتھ بین الاقوامی برانڈ کی ساکھ بنائیں۔"
+    ],
+    "metaTitle": "ملٹی لنگوئل ایس ای او ایجنسی | انٹرنیشنل ایس ای او | PakSoft",
+    "metaDescription": "بین الاقوامی مارکیٹوں کو فتح کریں۔ ہمارے ماہرین عالمی رینکنگ کے لیے ملٹی لنگوئل SEO اور ثقافتی موافقت (Transcreation) کا استعمال کرتے ہیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "مارکیٹ کے مواقع کا تجزیہ",
+          "description": "ہم مختلف ممالک میں سرچ والیوم، حریفوں اور مانگ کا تجزیہ کرتے ہیں تاکہ معلوم ہو سکے کہ کون سی زبانیں سب سے زیادہ منافع دے سکتی ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "تکنیکی ڈھانچہ اور Hreflang سیٹ اپ",
+          "description": "ہم بہترین URL اسٹرکچر کا تعین کرتے ہیں اور زبانوں کے درمیان تعلق کو واضح کرنے کے لیے hreflang ٹیگز لگاتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "مقامی کی ورڈ ریسرچ",
+          "description": "مقامی زبان بولنے والے ایسے الفاظ تلاش کرتے ہیں جو لوگ واقعی استعمال کرتے ہیں، نہ کہ صرف انگریزی کا لفظی ترجمہ۔"
+        },
+        {
+          "step": 4,
+          "title": "مواد کی موافقت (Transcreation)",
+          "description": "ہم صرف ترجمہ نہیں کرتے، بلکہ مواد کو ثقافتی اعتبار اور مقامی سرچ کے مطابق ڈھالتے ہیں تاکہ یہ لوگوں کو اپنا لگے۔"
+        },
+        {
+          "step": 5,
+          "title": "آن-پیج ایس ای او اور میٹا ڈیٹا کا ترجمہ",
+          "description": "ہر عنصر کو مقامی بنایا جاتا ہے: پیج ٹائٹلز، میٹا ڈسکرپشن، اور امیج Alt ٹیکسٹ کو ٹارگٹ زبان کے لیے بہتر بنایا جاتا ہے۔"
+        },
+        {
+          "step": 6,
+          "title": "علاقائی لنک بلڈنگ",
+          "description": "ہم مقامی اتھارٹی بنانے کے لیے مخصوص خطوں کی ڈومینز (جیسے .fr, .de) سے اعلیٰ معیار کے بیک لنکس حاصل کرتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "کیا ہمیں الگ ڈومین (.de, .fr) استعمال کرنی چاہیے یا سب ڈائریکٹریز (/de/, /fr/)؟",
+          "answer": "یہ آپ کے وسائل پر منحصر ہے۔ سب ڈائریکٹریز کو سنبھالنا آسان ہے، جبکہ ccTLDs مقامی طور پر زیادہ مضبوط سگنل دیتے ہیں لیکن ان کی اتھارٹی شروع سے بنانی پڑتی ہے۔"
+        },
+        {
+          "question": "'hreflang' ٹیگز کیا ہیں اور مجھے ان کی ضرورت کیوں ہے؟",
+          "answer": "Hreflang ٹیگز سرچ انجنوں کو بتاتے ہیں کہ ویب پیج کس زبان اور علاقے کے لیے ہے۔ اس سے گوگل US اور UK انگلش کو ڈپلیکیٹ نہیں سمجھتا۔"
+        },
+        {
+          "question": "کیا ہم اپنی ویب سائٹ پر گوگل ٹرانسلیٹ کا استعمال نہیں کر سکتے؟",
+          "answer": "آٹو ٹرانسلیشن SEO میں کوئی مدد نہیں دیتی، یوزر ایکسپیرینس خراب کرتی ہے اور ثقافتی نزاکتوں کو بالکل نظر انداز کر دیتی ہے۔"
+        },
+        {
+          "question": "کیا آپ ترجمے کے لیے مقامی لوگوں کا استعمال کرتے ہیں؟",
+          "answer": "جی ہاں۔ ہم 'Transcreation' کا طریقہ استعمال کرتے ہیں جس میں مقامی SEO ماہرین مواد کو ثقافتی لحاظ سے درست اور سرچ کے لیے بہتر بناتے ہیں۔"
+        },
+        {
+          "question": "آپ انگریزی کے مختلف لہجوں (US, UK, آسٹریلیا) کو کیسے سنبھالتے ہیں؟",
+          "answer": "ہم hreflang ٹیگز استعمال کرتے ہیں اور اسپیلنگ اور کرنسی کو مقامی بناتے ہیں تاکہ صارف کو ایک بہترین علاقائی تجربہ ملے۔"
+        },
+        {
+          "question": "کیا ملٹی لنگوئل SEO میں عام SEO سے زیادہ وقت لگتا ہے؟",
+          "answer": "جی ہاں، یہ زیادہ پیچیدہ ہے۔ آپ بیک وقت کئی مارکیٹوں میں SEO چلا رہے ہوتے ہیں۔ علاقائی اتھارٹی بنانے میں وقت اور محنت لگتی ہے۔"
+        },
+        {
+          "question": "آپ کن سرچ انجنوں کے لیے کام کرتے ہیں؟",
+          "answer": "گوگل دنیا بھر میں مقبول ہے، لیکن ہم ٹارگٹ علاقے کے اہم سرچ انجن پر بھی توجہ دیتے ہیں (جیسے چین میں Baidu، روس میں Yandex)۔"
+        },
+        {
+          "question": "آپ بین الاقوامی SEO کی کامیابی کو کیسے ناپتے ہیں؟",
+          "answer": "ہم GA4 اور GSC میں ملک اور زبان کے لحاظ سے ٹریفک، کی ورڈ رینکنگ اور کنورژن کی الگ الگ رپورٹس بناتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "google",
+          "name": "Google Search Console"
+        },
+        {
+          "icon": "wpml",
+          "name": "WPML"
+        },
+        {
+          "icon": "semrush",
+          "name": "SEMrush"
+        },
+        {
+          "icon": "ahrefs",
+          "name": "Ahrefs"
+        },
+        {
+          "icon": "screamingfrog",
+          "name": "Screaming Frog"
+        },
+        {
+          "icon": "weglot",
+          "name": "Weglot"
+        },
+        {
+          "icon": "lokalise",
+          "name": "Lokalise"
+        },
+        {
+          "icon": "crowdin",
+          "name": "Crowdin"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تحسين محركات البحث متعدد اللغات (Multilingual SEO)",
+    "shortDescription": "اكسر حواجز اللغة واغزُ الأسواق الدولية. نقوم بتحسين بنية موقع الويب الخاص بك، والمحتوى، والإشارات الفنية للترتيب بشكل كبير في محركات البحث الأجنبية والتواصل مع جمهور عالمي.",
+    "fullDescription": "ترجمة موقع الويب الخاص بك ليس هو نفسه السيو متعدد اللغات. مجرد تمرير المحتوى الخاص بك عبر مترجم آلي لن يجعلك تحتل مرتبة في ألمانيا أو اليابان أو البرازيل. يتطلب السيو الدولي الحقيقي دقة فنية وفروقاً ثقافية دقيقة. نضمن فهم محركات البحث للغة والمنطقة التي يستهدفها المحتوى الخاص بك تماماً من خلال تنفيذ بنيات علامات 'hreflang' خالية من العيوب وهياكل URL المثلى (نطاقات ccTLD أو النطاقات الفرعية أو الأدلة الفرعية). لكننا نتجاوز الجانب الفني. يجري خبراء تحسين محركات البحث لدينا، من الناطقين الأصليين باللغة، أبحاثاً للكلمات الرئيسية المترجمة، لفهم العامية المحددة ونية البحث في السوق المستهدف — لأن الناس لا يبحثون دائماً عن الترجمة المباشرة للكلمة الرئيسية الإنجليزية. نحن نكيف المحتوى الخاص بك، ونضفي الطابع المحلي على بياناتك الوصفية، ونبني روابط خلفية من نطاقات خاصة بالمنطقة، مما يحول موقعك إلى محرك إيرادات عالمي حقاً.",
+    "features": [
+      "استراتيجية بنية الموقع الدولية (ccTLD مقابل الدليل الفرعي)",
+      "تنفيذ وتدقيق علامات Hreflang بلا عيوب",
+      "بحث عن الكلمات الرئيسية المحلية بواسطة ناطقين أصليين",
+      "تكييف المحتوى الثقافي والترجمة الإبداعية (Transcreation)",
+      "بيانات وصفية مترجمة (عناوين، أوصاف، ترويسات)",
+      "بناء روابط خلفية دولية (تواصل خاص بالمنطقة)",
+      "إعداد الاستهداف الجغرافي في Google Search Console",
+      "استشارات إعداد أنظمة إدارة المحتوى متعددة اللغات (مثل WPML)"
+    ],
+    "benefits": [
+      "فتح مصادر إيرادات جديدة ضخمة للوصول إلى أسواق دولية غير مستغلة",
+      "منع عقوبات 'المحتوى المكرر' عبر المناطق الناطقة بالإنجليزية (أمريكا/بريطانيا/أستراليا)",
+      "ضمان تقديم اللغة والعملة الصحيحة للمستخدمين تلقائياً بناءً على موقعهم",
+      "التفوق على المنافسين المحليين من خلال التحدث بلغة البحث الدقيقة للسوق",
+      "تحسين تجربة المستخدم العالمية (UX) وتقليل معدلات الارتداد بشكل كبير",
+      "بناء سلطة العلامة التجارية الدولية بمحتوى محلي وروابط خلفية إقليمية"
+    ],
+    "metaTitle": "وكالة سيو متعدد اللغات | السيو الدولي | PakSoft",
+    "metaDescription": "اغزُ الأسواق الدولية. ينفذ خبراؤنا السيو متعدد اللغات، وتحسين hreflang، والترجمة الإبداعية للترتيب عالمياً.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تحليل فرص السوق",
+          "description": "نحلل حجم البحث والمنافسة والطلب في بلدان مختلفة لتحديد اللغات التي تقدم أعلى عائد استثمار."
+        },
+        {
+          "step": 2,
+          "title": "البنية الفنية وإعداد Hreflang",
+          "description": "نحدد أفضل بنية URL (مثل /de/) وننفذ علامات hreflang معقدة لتعيين العلاقات بين متغيرات اللغة الخاصة بك."
+        },
+        {
+          "step": 3,
+          "title": "البحث المحلي للكلمات الرئيسية",
+          "description": "يبحث الناطقون الأصليون عن فرص الترجمة الإبداعية - العثور على العبارات الفعلية التي يستخدمها السكان المحليون."
+        },
+        {
+          "step": 4,
+          "title": "توطين المحتوى والترجمة الإبداعية",
+          "description": "نحن لا نترجم فحسب؛ بل نكيف المحتوى ليناسب الثقافة ونبرة الصوت ونية البحث المحلية، مما يضمن صدى علامتك التجارية."
+        },
+        {
+          "step": 5,
+          "title": "السيو الداخلي وترجمة البيانات الوصفية",
+          "description": "يتم ترجمة كل عنصر: عناوين الصفحات، والأوصاف الوصفية، وروابط URL، والنصوص البديلة للصور للغة المستهدفة."
+        },
+        {
+          "step": 6,
+          "title": "بناء الروابط الإقليمية",
+          "description": "ننفذ حملات توعية لكسب روابط خلفية عالية الجودة من نطاقات محلية (مثل .fr ، .de ، .jp) لبناء السلطة الإقليمية."
+        }
+      ],
+      "faq": [
+        {
+          "question": "هل يجب استخدام نطاق منفصل (.de) أم أدلة فرعية (/de/)؟",
+          "answer": "يعتمد على الموارد. الأدلة الفرعية أسهل وتشارك السلطة. توفر ccTLDs أقوى إشارة محلية لكنها تتطلب بناء السلطة من الصفر."
+        },
+        {
+          "question": "ما هي علامات 'hreflang' ولماذا أحتاجها؟",
+          "answer": "تخبر علامات Hreflang محركات البحث عن اللغة والاستهداف الجغرافي. إنها تمنع جوجل من رؤية الإنجليزية الأمريكية والبريطانية كمحتوى مكرر."
+        },
+        {
+          "question": "ألا يمكننا استخدام مكون إضافي مثل مترجم جوجل؟",
+          "answer": "لا تقدم الترجمة الآلية أي قيمة في السيو، وتوفر تجربة مستخدم سيئة، وتفتقد تماماً للفروق الثقافية الدقيقة."
+        },
+        {
+          "question": "هل تستخدمون متحدثين أصليين للترجمة؟",
+          "answer": "نعم. نستخدم عملية تسمى 'الترجمة الإبداعية' تعتمد على متخصصي السيو الأصليين لضمان الملاءمة الثقافية والتحسين."
+        },
+        {
+          "question": "كيف تتعاملون مع المتغيرات الإنجليزية (الولايات المتحدة مقابل المملكة المتحدة)؟",
+          "answer": "نستخدم علامات hreflang ('en-US'، 'en-GB') ونقوم بترجمة الإملاء والأسعار لتوفير تجربة إقليمية سلسة."
+        },
+        {
+          "question": "هل يستغرق السيو متعدد اللغات وقتاً أطول من السيو القياسي؟",
+          "answer": "نعم، إنه أكثر تعقيداً بطبيعته. أنت تدير أساساً حملات سيو متوازية. بناء السلطة الإقليمية يستغرق وقتاً وجهداً مخصصين."
+        },
+        {
+          "question": "ما هي محركات البحث التي تقومون بالتحسين لها؟",
+          "answer": "بينما جوجل مهيمن عالمياً، نقوم بالتحسين لمحرك البحث الأساسي في منطقتك المستهدفة (مثل Baidu في الصين، Yandex في روسيا)."
+        },
+        {
+          "question": "كيف تقيسون نجاح السيو الدولي؟",
+          "answer": "نقوم بتقسيم التقارير في GA4 و GSC لتتبع الزيارات العضوية وتصنيفات الكلمات الرئيسية والتحويلات حسب البلد ودليل اللغة."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "google",
+          "name": "Google Search Console"
+        },
+        {
+          "icon": "wpml",
+          "name": "WPML"
+        },
+        {
+          "icon": "semrush",
+          "name": "SEMrush"
+        },
+        {
+          "icon": "ahrefs",
+          "name": "Ahrefs"
+        },
+        {
+          "icon": "screamingfrog",
+          "name": "Screaming Frog"
+        },
+        {
+          "icon": "weglot",
+          "name": "Weglot"
+        },
+        {
+          "icon": "lokalise",
+          "name": "Lokalise"
+        },
+        {
+          "icon": "crowdin",
+          "name": "Crowdin"
+        }
+      ]
+    }
+  }
+}

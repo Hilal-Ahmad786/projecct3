@@ -7,7 +7,7 @@ export const dynamic = 'force-dynamic';
 export async function GET(request: NextRequest) {
   try {
     // Lazy import to avoid build-time issues
-    const { getDashboardStats, getPageViews, getVisitorStats } = await import('@/lib/admin/database/queries');
+    const { getDashboardStats, getPageViews, getPageViewCount, getVisitorStats } = await import('@/lib/admin/database/queries');
 
     const { searchParams } = new URL(request.url);
     const period = searchParams.get('period') || '7d';
@@ -36,8 +36,10 @@ export async function GET(request: NextRequest) {
     // Get dashboard stats
     const stats = await getDashboardStats();
 
-    // Get page views for the period
+    // Get page views for the period — `pageViews` is the top-10 pages (for the
+    // chart/top-pages list); `totalPageViews` is the true total for the KPI.
     const pageViews = await getPageViews(startDate, now);
+    const totalPageViews = await getPageViewCount(startDate, now);
 
     // Get visitor stats
     const visitorStats = await getVisitorStats(startDate, now);
@@ -46,7 +48,7 @@ export async function GET(request: NextRequest) {
     const previousStartDate = new Date(startDate);
     previousStartDate.setTime(previousStartDate.getTime() - (now.getTime() - startDate.getTime()));
 
-    const previousPageViews = await getPageViews(previousStartDate, startDate);
+    const previousTotalPageViews = await getPageViewCount(previousStartDate, startDate);
     const previousVisitorStats = await getVisitorStats(previousStartDate, startDate);
 
     const calculateTrend = (current: number, previous: number) => {
@@ -62,11 +64,11 @@ export async function GET(request: NextRequest) {
           newLeads: stats.newLeads,
           projectRequests: stats.projectRequests,
           contactMessages: stats.contactMessages,
-          pageViews: pageViews.length,
+          pageViews: totalPageViews,
           uniqueVisitors: visitorStats.uniqueVisitors,
         },
         trends: {
-          pageViews: calculateTrend(pageViews.length, previousPageViews.length),
+          pageViews: calculateTrend(totalPageViews, previousTotalPageViews),
           uniqueVisitors: calculateTrend(visitorStats.uniqueVisitors, previousVisitorStats.uniqueVisitors),
         },
         charts: {

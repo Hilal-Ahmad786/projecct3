@@ -1,0 +1,519 @@
+{
+  "ecommerce-seo": {
+    "en": {
+      "name": "E-commerce SEO",
+      "shortDescription": "Stop relying purely on paid ads to sell inventory. Our technical and content-driven e-commerce SEO strategies turn organic search into a high-converting, sustainable revenue channel for your store.",
+      "fullDescription": "E-commerce SEO is fundamentally different from ranking a local business or a B2B SaaS. It requires managing index bloat, resolving faceted navigation issues, optimizing thousands of product variations, and competing with massive retail giants. We take a holistic approach to e-commerce SEO, starting with a deep technical audit of your Shopify, WooCommerce, or custom storefront. By restructuring your site architecture for maximum crawlability, implementing advanced product schema markup, and executing a targeted category and product page optimization strategy, we capture users at the exact moment of high commercial intent. The result is a compounding flow of organic buyers that lowers your blended Customer Acquisition Cost (CAC) and protects your margins.",
+      "features": [
+        "E-commerce Technical SEO & Crawl Audits",
+        "Category Page Architecture & Optimization",
+        "Product Page Keyword Targeting & Copywriting",
+        "Faceted Navigation & Index Bloat Control",
+        "Advanced Product Schema & Rich Snippets",
+        "Internal Linking Strategy for E-commerce",
+        "Competitor Gap Analysis & Keyword Research",
+        "Blog & Buying Guide Content Creation"
+      ],
+      "benefits": [
+        "Diversified revenue streams not dependent on ad spend",
+        "Higher organic visibility for high-intent, bottom-of-funnel searches",
+        "Improved site speed and user experience for higher conversion rates",
+        "Lower blended customer acquisition costs and protected profit margins",
+        "Better click-through rates with rich product snippets in search results",
+        "Dominance over competitors for long-tail, highly specific product queries"
+      ],
+      "metaTitle": "E-commerce SEO Agency | Shopify & WooCommerce | PakSoft",
+      "metaDescription": "Turn organic search into your most profitable sales channel. We provide advanced e-commerce SEO services to optimize your store, fix technical issues, and drive revenue.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Technical Audit & Baseline Setup",
+            "description": "We crawl your entire store to uncover technical issues, broken links, duplicate content, and slow-loading elements. We fix these foundational problems so search engines can index your site efficiently."
+          },
+          {
+            "step": 2,
+            "title": "Keyword Research & Gap Analysis",
+            "description": "We map the exact terms your buyers are searching for, focusing on high-intent product and category keywords. We analyze competitors to find lucrative gaps they've missed."
+          },
+          {
+            "step": 3,
+            "title": "Site Architecture & Navigation Optimization",
+            "description": "We restructure your categories, subcategories, and filters to distribute link equity properly. We ensure faceted navigation doesn't create thousands of duplicate, low-value pages in Google's index."
+          },
+          {
+            "step": 4,
+            "title": "On-Page & Schema Implementation",
+            "description": "We optimize title tags, meta descriptions, and header structures for key pages. We add advanced Product, Review, and FAQ schema markup to secure eye-catching rich snippets in search results."
+          },
+          {
+            "step": 5,
+            "title": "Content Expansion & Optimization",
+            "description": "We write compelling, keyword-optimized product descriptions and category texts. We also create top-of-funnel content like buying guides and comparison articles to capture users earlier in their journey."
+          },
+          {
+            "step": 6,
+            "title": "Link Building & Authority Growth",
+            "description": "We acquire high-quality, relevant backlinks to your category pages and store. Combined with continuous technical monitoring, this pushes your rankings up for competitive commercial terms."
+          }
+        ],
+        "faq": [
+          {
+            "question": "How long does it take to see results from e-commerce SEO?",
+            "answer": "For established stores, fixing technical issues can yield improvements in 4–8 weeks. However, significant organic traffic growth from new content and link building typically takes 4–6 months to materialize."
+          },
+          {
+            "question": "Is Shopify good for SEO, or should we switch platforms?",
+            "answer": "Shopify is excellent for SEO when configured correctly. While it has some quirks regarding URL structures and duplicate tags, we implement proven workarounds to ensure your Shopify store ranks highly."
+          },
+          {
+            "question": "Should we optimize every single product page on our site?",
+            "answer": "Not initially. We prioritize top-selling products, high-margin items, and overarching category pages first. We use programmatic SEO techniques for large inventories to scale optimizations efficiently."
+          },
+          {
+            "question": "How do you handle out-of-stock or discontinued products?",
+            "answer": "We don't just delete them and create 404 errors. We use 301 redirects to related products, or keep the page live with alternative suggestions if the product is temporarily out of stock."
+          },
+          {
+            "question": "Why do category pages matter more than product pages for SEO?",
+            "answer": "Category pages naturally aggregate more internal and external links, making them stronger. They also target broader, higher-volume search terms, serving as the main entry point for buyers who are still browsing options."
+          },
+          {
+            "question": "How does site speed affect e-commerce SEO?",
+            "answer": "Google uses Core Web Vitals as a ranking factor. A slow store not only loses rankings but also frustrates users, killing conversions. We prioritize image optimization and code efficiency to ensure blazing-fast load times."
+          },
+          {
+            "question": "What is faceted navigation, and why is it an SEO problem?",
+            "answer": "Faceted navigation allows users to filter products (by color, size, price). If poorly implemented, it generates thousands of slightly different URLs, confusing search engines and wasting your crawl budget. We fix this using canonicals and robots.txt."
+          },
+          {
+            "question": "Can SEO replace our Google Shopping and Facebook Ads?",
+            "answer": "SEO shouldn't replace paid ads; it should complement them. SEO takes time to build but provides a much higher ROI long-term. Together, they lower your blended acquisition cost and maximize overall revenue."
+          }
+        ],
+        "technologies": [
+          { "icon": "ahrefs", "name": "Ahrefs" },
+          { "icon": "screamingfrog", "name": "Screaming Frog" },
+          { "icon": "gsc", "name": "Google Search Console" },
+          { "icon": "shopify", "name": "Shopify" },
+          { "icon": "woocommerce", "name": "WooCommerce" },
+          { "icon": "ga4", "name": "Google Analytics 4" },
+          { "icon": "semrush", "name": "Semrush" },
+          { "icon": "schema", "name": "Schema.org" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "E-ticaret SEO",
+      "shortDescription": "Stok satmak için sadece ücretli reklamlara güvenmeyi bırakın. Teknik ve içerik odaklı e-ticaret SEO stratejilerimiz, organik aramayı mağazanız için yüksek dönüşümlü, sürdürülebilir bir gelir kanalına dönüştürür.",
+      "fullDescription": "E-ticaret SEO'su, yerel bir işletmeyi veya B2B SaaS platformunu sıralamaktan tamamen farklıdır. İndeks şişmesini (index bloat) yönetmeyi, yönlü gezinme (faceted navigation) sorunlarını çözmeyi, binlerce ürün varyasyonunu optimize etmeyi ve dev perakendecilerle rekabet etmeyi gerektirir. Shopify, WooCommerce veya özel mağazanızın derinlemesine teknik denetimiyle başlayarak e-ticaret SEO'suna bütünsel bir yaklaşım getiriyoruz. Tarama verimliliğini en üst düzeye çıkarmak için site mimarinizi yeniden yapılandırarak, gelişmiş ürün şeması (schema) işaretlemelerini uygulayarak ve hedeflenmiş kategori ve ürün sayfası optimizasyon stratejisini yürüterek, kullanıcıları tam da ticari niyetlerinin en yüksek olduğu anda yakalarız. Sonuç, karma müşteri edinme maliyetinizi (CAC) düşüren ve kar marjlarınızı koruyan, giderek artan bir organik alıcı akışıdır.",
+      "features": [
+        "E-ticaret Teknik SEO ve Tarama Denetimleri",
+        "Kategori Sayfası Mimarisi ve Optimizasyonu",
+        "Ürün Sayfası Anahtar Kelime Hedefleme ve Metin Yazarlığı",
+        "Yönlü Gezinme (Faceted Navigation) ve İndeks Kontrolü",
+        "Gelişmiş Ürün Şeması ve Zengin Snippet'lar",
+        "E-ticaret İçin Site İçi Bağlantı Stratejisi",
+        "Rakip Boşluk Analizi ve Anahtar Kelime Araştırması",
+        "Blog ve Satın Alma Rehberi İçerik Üretimi"
+      ],
+      "benefits": [
+        "Reklam harcamalarına bağlı olmayan çeşitlendirilmiş gelir akışları",
+        "Satın alma niyeti yüksek alt huni aramalarında daha yüksek görünürlük",
+        "Daha yüksek dönüşüm oranları için gelişmiş site hızı ve kullanıcı deneyimi",
+        "Daha düşük karma müşteri edinme maliyetleri ve korunan kar marjları",
+        "Arama sonuçlarında zengin ürün snippet'ları ile daha iyi tıklama oranları",
+        "Uzun kuyruklu (long-tail), çok spesifik ürün sorgularında rakiplere üstünlük"
+      ],
+      "metaTitle": "E-ticaret SEO Ajansı | Shopify ve WooCommerce | PakSoft",
+      "metaDescription": "Organik aramayı en karlı satış kanalınıza dönüştürün. Mağazanızı optimize etmek, teknik sorunları gidermek ve geliri artırmak için gelişmiş e-ticaret SEO hizmetleri sunuyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Teknik Denetim ve Temel Kurulum",
+            "description": "Teknik sorunları, kırık bağlantıları, yinelenen içeriği ve yavaş yüklenen öğeleri ortaya çıkarmak için tüm mağazanızı tarıyoruz. Arama motorlarının sitenizi verimli bir şekilde dizine ekleyebilmesi için bu temel sorunları çözüyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Anahtar Kelime Araştırması ve Boşluk Analizi",
+            "description": "Alıcılarınızın aradığı tam terimleri haritalandırarak yüksek niyetli ürün ve kategori anahtar kelimelerine odaklanıyoruz. Kaçırdıkları kazançlı boşlukları bulmak için rakipleri analiz ediyoruz."
+          },
+          {
+            "step": 3,
+            "title": "Site Mimarisi ve Navigasyon Optimizasyonu",
+            "description": "Bağlantı değerini (link equity) doğru bir şekilde dağıtmak için kategorilerinizi, alt kategorilerinizi ve filtrelerinizi yeniden yapılandırıyoruz. Yönlü gezinmenin Google dizininde binlerce değersiz sayfa oluşturmamasını sağlıyoruz."
+          },
+          {
+            "step": 4,
+            "title": "Site İçi ve Şema (Schema) Uygulaması",
+            "description": "Önemli sayfalar için başlık etiketlerini, meta açıklamaları ve başlık yapılarını optimize ediyoruz. Arama sonuçlarında dikkat çekici zengin snippet'ları güvence altına almak için gelişmiş Ürün, İnceleme ve SSS şema işaretlemesi ekliyoruz."
+          },
+          {
+            "step": 5,
+            "title": "İçerik Genişletme ve Optimizasyon",
+            "description": "İkna edici, anahtar kelime optimizasyonlu ürün açıklamaları ve kategori metinleri yazıyoruz. Ayrıca kullanıcıları yolculuklarının erken aşamalarında yakalamak için satın alma rehberleri gibi huni üstü içerikler oluşturuyoruz."
+          },
+          {
+            "step": 6,
+            "title": "Bağlantı Kurma (Link Building) ve Otorite Büyümesi",
+            "description": "Kategori sayfalarınıza ve mağazanıza yüksek kaliteli, alakalı geri bağlantılar (backlink) sağlıyoruz. Sürekli teknik izlemeyle birleştiğinde, bu rekabetçi ticari terimler için sıralamalarınızı yükseltir."
+          }
+        ],
+        "faq": [
+          {
+            "question": "E-ticaret SEO'sundan sonuç almak ne kadar sürer?",
+            "answer": "Köklü mağazalar için teknik sorunların giderilmesi 4-8 hafta içinde iyileştirmeler sağlayabilir. Ancak, yeni içerik ve bağlantı kurmadan kaynaklanan önemli organik trafik büyümesinin gerçekleşmesi genellikle 4-6 ay sürer."
+          },
+          {
+            "question": "Shopify SEO için iyi mi, yoksa platform değiştirmeli miyiz?",
+            "answer": "Shopify doğru yapılandırıldığında SEO için mükemmeldir. URL yapıları ve yinelenen etiketlerle ilgili bazı tuhaflıkları olsa da, Shopify mağazanızın üst sıralarda yer almasını sağlamak için kanıtlanmış çözümler uyguluyoruz."
+          },
+          {
+            "question": "Sitemizdeki her bir ürün sayfasını optimize etmeli miyiz?",
+            "answer": "Başlangıçta hayır. Önce en çok satan ürünlere, yüksek marjlı ürünlere ve kapsayıcı kategori sayfalarına öncelik veriyoruz. Optimizasyonları verimli bir şekilde ölçeklendirmek için büyük envanterler için programatik SEO teknikleri kullanıyoruz."
+          },
+          {
+            "question": "Stokta kalmayan veya üretimi durdurulan ürünleri nasıl yönetiyorsunuz?",
+            "answer": "Onları sadece silip 404 hataları yaratmıyoruz. İlgili ürünlere 301 yönlendirmeleri kullanıyoruz veya ürün geçici olarak stokta yoksa sayfayı alternatif önerilerle canlı tutuyoruz."
+          },
+          {
+            "question": "Neden kategori sayfaları SEO için ürün sayfalarından daha önemlidir?",
+            "answer": "Kategori sayfaları doğal olarak daha fazla iç ve dış bağlantı toplayarak onları daha güçlü hale getirir. Ayrıca daha geniş, daha yüksek hacimli arama terimlerini hedeflerler ve hala seçeneklere göz atan alıcılar için ana giriş noktası görevi görürler."
+          },
+          {
+            "question": "Site hızı e-ticaret SEO'sunu nasıl etkiler?",
+            "answer": "Google, Core Web Vitals'ı bir sıralama faktörü olarak kullanır. Yavaş bir mağaza sadece sıralamaları kaybetmekle kalmaz, aynı zamanda kullanıcıları hüsrana uğratarak dönüşümleri öldürür. Şimşek hızında yükleme süreleri sağlamak için görüntü optimizasyonuna ve kod verimliliğine öncelik veriyoruz."
+          },
+          {
+            "question": "Yönlü gezinme (faceted navigation) nedir ve neden bir SEO sorunudur?",
+            "answer": "Yönlü gezinme, kullanıcıların ürünleri (renk, boyut, fiyata göre) filtrelemesine olanak tanır. Kötü uygulanırsa, binlerce biraz farklı URL oluşturarak arama motorlarının kafasını karıştırır ve tarama bütçenizi boşa harcar. Bunu kanonik etiketler (canonicals) ve robots.txt kullanarak düzeltiyoruz."
+          },
+          {
+            "question": "SEO, Google Alışveriş ve Facebook Reklamlarımızın yerini alabilir mi?",
+            "answer": "SEO ücretli reklamların yerini almamalıdır; onları tamamlamalıdır. SEO'nun oluşturulması zaman alır ancak uzun vadede çok daha yüksek bir ROI sağlar. Birlikte, karma edinme maliyetinizi düşürür ve genel geliri en üst düzeye çıkarırlar."
+          }
+        ],
+        "technologies": [
+          { "icon": "ahrefs", "name": "Ahrefs" },
+          { "icon": "screamingfrog", "name": "Screaming Frog" },
+          { "icon": "gsc", "name": "Google Search Console" },
+          { "icon": "shopify", "name": "Shopify" },
+          { "icon": "woocommerce", "name": "WooCommerce" },
+          { "icon": "ga4", "name": "Google Analytics 4" },
+          { "icon": "semrush", "name": "Semrush" },
+          { "icon": "schema", "name": "Schema.org" }
+        ]
+      }
+    },
+    "de": {
+      "name": "E-Commerce SEO",
+      "shortDescription": "Verlassen Sie sich nicht nur auf bezahlte Anzeigen, um Inventar zu verkaufen. Unsere technischen und inhaltsgesteuerten E-Commerce-SEO-Strategien machen die organische Suche zu einem nachhaltigen Umsatzkanal für Ihren Shop.",
+      "fullDescription": "E-Commerce-SEO unterscheidet sich grundlegend vom Ranking eines lokalen Unternehmens oder eines B2B-SaaS. Es erfordert das Management von Index-Bloat, die Lösung von Problemen bei der Facettennavigation, die Optimierung Tausender Produktvariationen und den Wettbewerb mit massiven Einzelhandelsriesen. Wir verfolgen einen ganzheitlichen Ansatz für E-Commerce-SEO, beginnend mit einem tiefen technischen Audit Ihres Shopify-, WooCommerce- oder benutzerdefinierten Shops. Durch die Umstrukturierung Ihrer Website-Architektur für maximale Crawlability, die Implementierung erweiterten Produkt-Schema-Markups und die Ausführung einer zielgerichteten Kategorie- und Produktseiten-Optimierungsstrategie erfassen wir Nutzer im genauen Moment hoher kommerzieller Absicht. Das Ergebnis ist ein stetig wachsender Strom organischer Käufer, der Ihre gemischten Kundenakquisitionskosten (CAC) senkt und Ihre Margen schützt.",
+      "features": [
+        "E-Commerce Technical SEO & Crawl-Audits",
+        "Kategorieseiten-Architektur & Optimierung",
+        "Produktseiten-Keyword-Targeting & Copywriting",
+        "Facettennavigation & Index-Bloat-Kontrolle",
+        "Erweitertes Produkt-Schema & Rich Snippets",
+        "Interne Verlinkungsstrategie für E-Commerce",
+        "Wettbewerber-Gap-Analyse & Keyword-Recherche",
+        "Content-Erstellung für Blogs & Kaufratgeber"
+      ],
+      "benefits": [
+        "Diversifizierte Einnahmequellen, unabhängig von Werbeausgaben",
+        "Höhere organische Sichtbarkeit für High-Intent-Suchen am Ende des Funnels",
+        "Verbesserte Ladezeit und User Experience für höhere Conversion-Raten",
+        "Geringere gemischte Kundenakquisitionskosten und geschützte Gewinnmargen",
+        "Bessere Klickraten durch Rich Product Snippets in den Suchergebnissen",
+        "Dominanz über Wettbewerber bei Long-Tail- und hochspezifischen Produktanfragen"
+      ],
+      "metaTitle": "E-Commerce SEO Agentur | Shopify & WooCommerce | PakSoft",
+      "metaDescription": "Machen Sie die organische Suche zu Ihrem profitabelsten Vertriebskanal. Wir bieten fortschrittliche E-Commerce-SEO-Dienstleistungen zur Optimierung Ihres Shops.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Technisches Audit & Baseline-Setup",
+            "description": "Wir crawlen Ihren gesamten Shop, um technische Probleme, defekte Links und langsam ladende Elemente aufzudecken. Wir beheben diese grundlegenden Probleme, damit Suchmaschinen Ihre Website effizient indexieren können."
+          },
+          {
+            "step": 2,
+            "title": "Keyword-Recherche & Gap-Analyse",
+            "description": "Wir ermitteln die genauen Begriffe, nach denen Ihre Käufer suchen. Wir analysieren Wettbewerber, um lukrative Lücken zu finden, die sie übersehen haben."
+          },
+          {
+            "step": 3,
+            "title": "Website-Architektur & Navigationsoptimierung",
+            "description": "Wir strukturieren Ihre Kategorien und Filter um, um Link Equity richtig zu verteilen. Wir stellen sicher, dass die Facettennavigation nicht Tausende von minderwertigen Seiten im Google-Index erzeugt."
+          },
+          {
+            "step": 4,
+            "title": "On-Page & Schema-Implementierung",
+            "description": "Wir optimieren Title-Tags, Meta-Beschreibungen und Header-Strukturen für wichtige Seiten. Wir fügen erweitertes Produkt- und Bewertungs-Schema-Markup hinzu, um auffällige Rich Snippets zu sichern."
+          },
+          {
+            "step": 5,
+            "title": "Content-Erweiterung & Optimierung",
+            "description": "Wir schreiben überzeugende, keyword-optimierte Produktbeschreibungen und Kategorietexte. Wir erstellen auch Top-of-Funnel-Inhalte wie Kaufratgeber, um Nutzer früher auf ihrer Reise zu erfassen."
+          },
+          {
+            "step": 6,
+            "title": "Linkaufbau & Autoritätswachstum",
+            "description": "Wir erwerben hochwertige, relevante Backlinks für Ihre Kategorieseiten. In Kombination mit kontinuierlichem technischen Monitoring treibt dies Ihre Rankings für wettbewerbsfähige kommerzielle Begriffe nach oben."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Wie lange dauert es, bis Ergebnisse aus der E-Commerce-SEO sichtbar werden?",
+            "answer": "Bei etablierten Shops kann die Behebung technischer Probleme in 4–8 Wochen zu Verbesserungen führen. Signifikantes Wachstum des organischen Traffics dauert jedoch in der Regel 4–6 Monate."
+          },
+          {
+            "question": "Ist Shopify gut für SEO, oder sollten wir die Plattform wechseln?",
+            "answer": "Shopify ist hervorragend für SEO, wenn es richtig konfiguriert ist. Obwohl es einige Eigenheiten bezüglich URL-Strukturen aufweist, implementieren wir bewährte Workarounds."
+          },
+          {
+            "question": "Sollten wir jede einzelne Produktseite auf unserer Website optimieren?",
+            "answer": "Nicht anfangs. Wir priorisieren zuerst Bestseller, margenstarke Artikel und übergeordnete Kategorieseiten. Für große Inventare verwenden wir programmatische SEO-Techniken."
+          },
+          {
+            "question": "Wie gehen Sie mit ausverkauften oder eingestellten Produkten um?",
+            "answer": "Wir löschen sie nicht einfach und erzeugen 404-Fehler. Wir verwenden 301-Weiterleitungen zu verwandten Produkten oder halten die Seite mit Alternativvorschlägen live."
+          },
+          {
+            "question": "Warum sind Kategorieseiten für SEO wichtiger als Produktseiten?",
+            "answer": "Kategorieseiten sammeln von Natur aus mehr interne und externe Links an, was sie stärker macht. Sie zielen auch auf breitere Suchbegriffe mit höherem Volumen ab."
+          },
+          {
+            "question": "Wie wirkt sich die Website-Geschwindigkeit auf die E-Commerce-SEO aus?",
+            "answer": "Google verwendet Core Web Vitals als Rankingfaktor. Ein langsamer Shop verliert nicht nur Rankings, sondern frustriert auch Nutzer. Wir priorisieren Bildoptimierung und Code-Effizienz."
+          },
+          {
+            "question": "Was ist Facettennavigation, und warum ist sie ein SEO-Problem?",
+            "answer": "Facettennavigation ermöglicht es Nutzern, Produkte zu filtern. Wenn sie schlecht implementiert ist, generiert sie Tausende von leicht unterschiedlichen URLs, verwirrt Suchmaschinen und verschwendet Ihr Crawl-Budget."
+          },
+          {
+            "question": "Kann SEO unsere Google Shopping- und Facebook-Anzeigen ersetzen?",
+            "answer": "SEO sollte bezahlte Anzeigen nicht ersetzen; es sollte sie ergänzen. SEO braucht Zeit zum Aufbau, bietet aber langfristig einen viel höheren ROI."
+          }
+        ],
+        "technologies": [
+          { "icon": "ahrefs", "name": "Ahrefs" },
+          { "icon": "screamingfrog", "name": "Screaming Frog" },
+          { "icon": "gsc", "name": "Google Search Console" },
+          { "icon": "shopify", "name": "Shopify" },
+          { "icon": "woocommerce", "name": "WooCommerce" },
+          { "icon": "ga4", "name": "Google Analytics 4" },
+          { "icon": "semrush", "name": "Semrush" },
+          { "icon": "schema", "name": "Schema.org" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "ای کامرس ایس ای او (E-commerce SEO)",
+      "shortDescription": "اپنی مصنوعات بیچنے کے لیے صرف ادا شدہ اشتہارات پر انحصار کرنا چھوڑ دیں۔ ہماری تکنیکی اور مواد پر مبنی ای کامرس SEO حکمت عملی آپ کی دکان کے لیے نامیاتی تلاش (organic search) کو ایک پائیدار آمدنی کے چینل میں بدل دیتی ہے۔",
+      "fullDescription": "ای کامرس SEO کسی مقامی کاروبار یا B2B SaaS کی رینکنگ سے یکسر مختلف ہے۔ اس کے لیے انڈیکس بلوٹ (index bloat) کو سنبھالنا، نیویگیشن کے مسائل کو حل کرنا، ہزاروں مصنوعات کی اقسام کو بہتر بنانا، اور ریٹیل کے بڑے جنات کا مقابلہ کرنا درکار ہوتا ہے۔ ہم آپ کے Shopify، WooCommerce، یا کسٹم اسٹور فرنٹ کے گہرے تکنیکی آڈٹ کے ساتھ شروعات کرتے ہیں۔ زیادہ سے زیادہ کرال ایبلٹی (crawlability) کے لیے آپ کے سائٹ کے فن تعمیر کی تشکیل نو کر کے، ایڈوانسڈ پروڈکٹ اسکیما (schema) نافذ کر کے، اور ٹارگٹڈ کیٹیگری اور پروڈکٹ پیج آپٹیمائزیشن حکمت عملی پر عمل کر کے، ہم صارفین کو خریداری کے عین وقت پر اپنی طرف متوجہ کرتے ہیں۔ نتیجہ نامیاتی خریداروں کا ایک مستقل بہاؤ ہے جو آپ کی کسٹمر ایکوزیشن کاسٹ (CAC) کو کم کرتا ہے اور آپ کے منافع کو محفوظ رکھتا ہے۔",
+      "features": [
+        "ای کامرس ٹیکنیکل SEO اور کرال آڈٹس",
+        "کیٹیگری پیج کا فن تعمیر اور آپٹیمائزیشن",
+        "پروڈکٹ پیج کی ورڈ ٹارگٹنگ اور کاپی رائٹنگ",
+        "فیسیٹڈ نیویگیشن (Faceted Navigation) اور انڈیکس کنٹرول",
+        "ایڈوانسڈ پروڈکٹ اسکیما اور رچ اسنیپٹس",
+        "ای کامرس کے لیے انٹرنل لنکنگ کی حکمت عملی",
+        "حریفوں کا تجزیہ اور کی ورڈ ریسرچ",
+        "بلاگ اور بائنگ گائیڈ مواد کی تخلیق"
+      ],
+      "benefits": [
+        "اشتہاری اخراجات پر انحصار کیے بغیر آمدنی کے متنوع ذرائع",
+        "خریداری کے ارادے والی تلاشوں کے لیے نامیاتی نمائش میں اضافہ",
+        "بہتر کنورژن ریٹس کے لیے سائٹ کی رفتار اور صارف کا تجربہ",
+        "کم کسٹمر ایکوزیشن کاسٹ اور محفوظ منافع",
+        "تلاش کے نتائج میں نمایاں پروڈکٹ اسنیپٹس کے ساتھ بہتر کلک تھرو ریٹس",
+        "انتہائی مخصوص پروڈکٹ کیوریز (queries) کے لیے حریفوں پر غلبہ"
+      ],
+      "metaTitle": "ای کامرس SEO ایجنسی | Shopify اور WooCommerce | PakSoft",
+      "metaDescription": "نامیاتی تلاش کو اپنے سب سے زیادہ منافع بخش سیلز چینل میں بدلیں۔ ہم آپ کے اسٹور کو بہتر بنانے اور تکنیکی مسائل کو حل کرنے کے لیے ایڈوانسڈ ای کامرس SEO سروسز فراہم کرتے ہیں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "تکنیکی آڈٹ اور بنیادی سیٹ اپ",
+            "description": "ہم تکنیکی مسائل، ٹوٹے ہوئے لنکس، ڈپلیکیٹ مواد، اور سست لوڈنگ والے عناصر کو دریافت کرنے کے لیے آپ کے پورے اسٹور کا جائزہ لیتے ہیں۔"
+          },
+          {
+            "step": 2,
+            "title": "کی ورڈ ریسرچ اور گیپ کا تجزیہ",
+            "description": "ہم وہ درست الفاظ تلاش کرتے ہیں جو آپ کے خریدار تلاش کر رہے ہیں، اور حریفوں کا تجزیہ کرتے ہیں تاکہ ان منافع بخش خامیوں کو تلاش کیا جا سکے جو ان سے چھوٹ گئی ہیں۔"
+          },
+          {
+            "step": 3,
+            "title": "سائٹ کا فن تعمیر اور نیویگیشن آپٹیمائزیشن",
+            "description": "ہم لنک ایکویٹی کو مناسب طریقے سے تقسیم کرنے کے لیے آپ کی کیٹیگریز اور فلٹرز کی تنظیم نو کرتے ہیں۔ ہم یقینی بناتے ہیں کہ فلٹرز کی وجہ سے گوگل انڈیکس میں ہزاروں بے کار صفحات نہ بنیں۔"
+          },
+          {
+            "step": 4,
+            "title": "آن پیج اور اسکیما کا نفاذ",
+            "description": "ہم اہم صفحات کے لیے ٹائٹل ٹیگز اور میٹا ڈسکرپشنز کو بہتر بناتے ہیں۔ ہم تلاش کے نتائج میں نمایاں نظر آنے کے لیے پروڈکٹ اور ریویو اسکیما شامل کرتے ہیں۔"
+          },
+          {
+            "step": 5,
+            "title": "مواد کی توسیع اور آپٹیمائزیشن",
+            "description": "ہم کی ورڈ کے لحاظ سے بہترین پروڈکٹ ڈسکرپشنز اور کیٹیگری ٹیکسٹ لکھتے ہیں۔ ہم صارفین کو جلدی متوجہ کرنے کے لیے بائنگ گائیڈز جیسا مواد بھی بناتے ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "لنک بلڈنگ اور اتھارٹی میں اضافہ",
+            "description": "ہم آپ کے کیٹیگری صفحات اور اسٹور کے لیے اعلیٰ معیار کے بیک لنکس حاصل کرتے ہیں۔ یہ آپ کی رینکنگ کو مسابقتی تجارتی الفاظ کے لیے اوپر لے جاتا ہے۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "ای کامرس SEO کے نتائج دیکھنے میں کتنا وقت لگتا ہے؟",
+            "answer": "قائم شدہ اسٹورز کے لیے، تکنیکی مسائل کو حل کرنے سے 4–8 ہفتوں میں بہتری آ سکتی ہے۔ تاہم، نئے مواد اور لنک بلڈنگ سے اہم نامیاتی ٹریفک میں اضافے میں عام طور پر 4–6 ماہ لگتے ہیں۔"
+          },
+          {
+            "question": "کیا Shopify SEO کے لیے اچھا ہے، یا ہمیں پلیٹ فارم تبدیل کرنا چاہیے؟",
+            "answer": "Shopify جب درست طریقے سے کنفیگر کیا جائے تو SEO کے لیے بہترین ہے۔ اگرچہ اس میں URL کی ساخت کے حوالے سے کچھ خامیاں ہیں، ہم ان کو حل کرنے کے لیے ثابت شدہ طریقے استعمال کرتے ہیں۔"
+          },
+          {
+            "question": "کیا ہمیں اپنی سائٹ پر ہر ایک پروڈکٹ پیج کو آپٹیمائز کرنا چاہیے؟",
+            "answer": "شروع میں نہیں۔ ہم سب سے پہلے ٹاپ سیلنگ پروڈکٹس، زیادہ منافع بخش اشیاء، اور اہم کیٹیگری صفحات کو ترجیح دیتے ہیں۔"
+          },
+          {
+            "question": "آپ آؤٹ آف اسٹاک یا ختم ہونے والی مصنوعات کو کیسے سنبھالتے ہیں؟",
+            "answer": "ہم انہیں صرف حذف کر کے 404 کی غلطیاں پیدا نہیں کرتے۔ ہم متعلقہ مصنوعات کے لیے 301 ری ڈائریکٹس استعمال کرتے ہیں، یا متبادل تجاویز کے ساتھ صفحہ کو لائیو رکھتے ہیں۔"
+          },
+          {
+            "question": "کیٹیگری صفحات SEO کے لیے پروڈکٹ صفحات سے زیادہ اہم کیوں ہیں؟",
+            "answer": "کیٹیگری صفحات قدرتی طور پر زیادہ اندرونی اور بیروني لنکس جمع کرتے ہیں، جس سے وہ مضبوط ہوتے ہیں۔ وہ وسیع تر اور زیادہ تلاش کیے جانے والے الفاظ کو بھی ہدف بناتے ہیں۔"
+          },
+          {
+            "question": "سائٹ کی رفتار ای کامرس SEO کو کیسے متاثر کرتی ہے؟",
+            "answer": "گوگل 'Core Web Vitals' کو رینکنگ کے عنصر کے طور پر استعمال کرتا ہے۔ سست اسٹور نہ صرف رینکنگ کھوتا ہے بلکہ صارفین کو بھی ناراض کرتا ہے۔ ہم تیز ترین لوڈنگ کے لیے کوڈ کو بہتر بناتے ہیں۔"
+          },
+          {
+            "question": "فیسیٹڈ نیویگیشن (Faceted Navigation) کیا ہے، اور یہ SEO کا مسئلہ کیوں ہے؟",
+            "answer": "یہ صارفین کو مصنوعات کو فلٹر کرنے کی اجازت دیتا ہے (جیسے رنگ، سائز)۔ اگر یہ درست نہ ہو تو یہ ہزاروں ملتے جلتے URLs بناتا ہے، جو سرچ انجنز کو الجھا دیتا ہے۔"
+          },
+          {
+            "question": "کیا SEO ہماری گوگل شاپنگ اور فیس بک اشتہارات کی جگہ لے سکتا ہے؟",
+            "answer": "SEO کو ادا شدہ اشتہارات کی جگہ نہیں لینی چاہیے؛ اسے ان کی تکمیل کرنی چاہیے۔ SEO بنانے میں وقت لگتا ہے لیکن طویل مدت میں یہ بہت زیادہ ROI فراہم کرتا ہے۔"
+          }
+        ],
+        "technologies": [
+          { "icon": "ahrefs", "name": "Ahrefs" },
+          { "icon": "screamingfrog", "name": "Screaming Frog" },
+          { "icon": "gsc", "name": "Google Search Console" },
+          { "icon": "shopify", "name": "Shopify" },
+          { "icon": "woocommerce", "name": "WooCommerce" },
+          { "icon": "ga4", "name": "Google Analytics 4" },
+          { "icon": "semrush", "name": "Semrush" },
+          { "icon": "schema", "name": "Schema.org" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "تحسين محركات البحث للمتاجر الإلكترونية (E-commerce SEO)",
+      "shortDescription": "توقف عن الاعتماد البحت على الإعلانات المدفوعة لبيع مخزونك. استراتيجياتنا التقنية والمبنية على المحتوى تحول البحث العضوي إلى قناة إيرادات مستدامة وعالية التحويل لمتجرك.",
+      "fullDescription": "يختلف تحسين محركات البحث للمتاجر الإلكترونية اختلافًا جذريًا عن تصنيف شركة محلية أو برامج B2B SaaS. فهو يتطلب إدارة تضخم الفهرس (index bloat)، وحل مشكلات التنقل المتعدد الأوجه (faceted navigation)، وتحسين آلاف من أشكال المنتجات، والتنافس مع عمالقة التجزئة الضخمة. نحن نتبع نهجًا شاملاً لتحسين محركات البحث للمتاجر الإلكترونية، بدءًا من تدقيق فني عميق لواجهة متجر Shopify أو WooCommerce أو المتجر المخصص الخاص بك. من خلال إعادة هيكلة بنية موقعك لتحقيق أقصى قدر من قابلية الزحف، وتنفيذ ترميز المخطط (schema) المتقدم للمنتجات، وتنفيذ استراتيجية مستهدفة لتحسين الفئات وصفحات المنتجات، فإننا نستحوذ على المستخدمين في اللحظة الدقيقة التي يكون فيها لديهم نية تجارية عالية. والنتيجة هي تدفق متزايد من المشترين العضويين مما يقلل من تكلفة اكتساب العملاء (CAC) ويحمي هوامش ربحك.",
+      "features": [
+        "تدقيق فني لمتجر التجارة الإلكترونية",
+        "هيكلة وتحسين صفحات الفئات",
+        "استهداف الكلمات الرئيسية لصفحات المنتجات",
+        "التحكم في تضخم الفهرس والتنقل المتعدد الأوجه",
+        "مقتطفات منسقة (Rich Snippets) ومخططات منتجات متقدمة",
+        "استراتيجية الربط الداخلي للتجارة الإلكترونية",
+        "تحليل الفجوات مع المنافسين والبحث عن الكلمات الرئيسية",
+        "إنشاء محتوى للمدونات وأدلة الشراء"
+      ],
+      "benefits": [
+        "تدفقات إيرادات متنوعة لا تعتمد على الإنفاق الإعلاني",
+        "رؤية عضوية أعلى لعمليات البحث ذات النية العالية",
+        "تحسين سرعة الموقع وتجربة المستخدم لزيادة معدلات التحويل",
+        "خفض تكاليف اكتساب العملاء وحماية هوامش الربح",
+        "معدلات نقر أعلى مع المقتطفات المنسقة للمنتجات في نتائج البحث",
+        "التفوق على المنافسين في استعلامات المنتجات الطويلة والمحددة"
+      ],
+      "metaTitle": "وكالة تحسين محركات البحث للمتاجر الإلكترونية | Shopify و WooCommerce",
+      "metaDescription": "حول البحث العضوي إلى قناة المبيعات الأكثر ربحية. نقدم خدمات متقدمة لتحسين محركات البحث للمتاجر الإلكترونية لتحسين متجرك ودفع الإيرادات.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "التدقيق الفني والإعداد الأساسي",
+            "description": "نزحف إلى متجرك بالكامل للكشف عن المشكلات الفنية والروابط المعطلة والمحتوى المكرر والعناصر بطيئة التحميل. نقوم بإصلاح هذه المشكلات حتى تتمكن محركات البحث من فهرسة موقعك بكفاءة."
+          },
+          {
+            "step": 2,
+            "title": "البحث عن الكلمات الرئيسية وتحليل الفجوات",
+            "description": "نحدد المصطلحات الدقيقة التي يبحث عنها المشترون، مع التركيز على الكلمات الرئيسية للمنتجات والفئات. نقوم بتحليل المنافسين للعثور على الفجوات المربحة التي فاتتهم."
+          },
+          {
+            "step": 3,
+            "title": "هيكلة الموقع وتحسين التنقل",
+            "description": "نعيد هيكلة الفئات والفلاتر لتوزيع قوة الروابط (link equity) بشكل صحيح. نضمن ألا يؤدي التنقل المتعدد الأوجه إلى إنشاء آلاف الصفحات المكررة منخفضة القيمة في فهرس جوجل."
+          },
+          {
+            "step": 4,
+            "title": "التحسين الداخلي وتنفيذ المخطط (Schema)",
+            "description": "نحسن علامات العناوين والأوصاف التوضيحية للصفحات الرئيسية. نضيف ترميز المخطط المتقدم للمنتجات والمراجعات لتأمين مقتطفات منسقة لافتة للنظر في نتائج البحث."
+          },
+          {
+            "step": 5,
+            "title": "توسيع المحتوى وتحسينه",
+            "description": "نكتب أوصافًا جذابة ومحسّنة للمنتجات ونصوص الفئات. نقوم أيضًا بإنشاء محتوى مثل أدلة الشراء لجذب المستخدمين في وقت مبكر من رحلتهم."
+          },
+          {
+            "step": 6,
+            "title": "بناء الروابط ونمو السلطة",
+            "description": "نكتسب روابط خلفية عالية الجودة وذات صلة لصفحات الفئات ومتجرك. جنبًا إلى جنب مع المراقبة الفنية المستمرة، يدفع هذا تصنيفاتك للأعلى."
+          }
+        ],
+        "faq": [
+          {
+            "question": "كم من الوقت يستغرق رؤية نتائج تحسين محركات البحث للمتجر الإلكتروني؟",
+            "answer": "بالنسبة للمتاجر القائمة، يمكن أن يؤدي إصلاح المشكلات الفنية إلى تحسينات في غضون 4 إلى 8 أسابيع. ومع ذلك، فإن نمو الزيارات العضوية الكبير يستغرق عادةً من 4 إلى 6 أشهر."
+          },
+          {
+            "question": "هل منصة Shopify جيدة لتحسين محركات البحث، أم يجب علينا تغيير المنصة؟",
+            "answer": "Shopify ممتازة لتحسين محركات البحث عند إعدادها بشكل صحيح. على الرغم من أن لديها بعض الميزات الغريبة فيما يتعلق بهياكل عناوين URL، فإننا ننفذ حلولًا مجربة لضمان تصنيف متجرك بدرجة عالية."
+          },
+          {
+            "question": "هل يجب علينا تحسين كل صفحة منتج على موقعنا؟",
+            "answer": "ليس في البداية. نحن نعطي الأولوية للمنتجات الأكثر مبيعًا، والعناصر ذات الهامش المرتفع، وصفحات الفئات الشاملة أولاً."
+          },
+          {
+            "question": "كيف تتعامل مع المنتجات غير المتوفرة في المخزون أو المتوقفة؟",
+            "answer": "نحن لا نحذفها فقط وننشئ أخطاء 404. نحن نستخدم عمليات إعادة التوجيه 301 إلى المنتجات ذات الصلة، أو نحتفظ بالصفحة حية مع اقتراحات بديلة."
+          },
+          {
+            "question": "لماذا تعد صفحات الفئات أكثر أهمية من صفحات المنتجات بالنسبة لتحسين محركات البحث؟",
+            "answer": "تجمع صفحات الفئات بطبيعتها روابط داخلية وخارجية أكثر، مما يجعلها أقوى. كما أنها تستهدف مصطلحات بحث أوسع وذات حجم أعلى."
+          },
+          {
+            "question": "كيف تؤثر سرعة الموقع على تحسين محركات البحث للمتجر الإلكتروني؟",
+            "answer": "تستخدم جوجل Core Web Vitals كعامل تصنيف. المتجر البطيء لا يفقد التصنيفات فحسب، بل يحبط المستخدمين أيضًا. نحن نعطي الأولوية لتحسين الصور وكفاءة الكود."
+          },
+          {
+            "question": "ما هو التنقل المتعدد الأوجه (Faceted Navigation)، ولماذا يمثل مشكلة؟",
+            "answer": "يسمح التنقل المتعدد الأوجه للمستخدمين بتصفية المنتجات (حسب اللون والحجم). إذا تم تنفيذه بشكل سيئ، فإنه ينشئ آلاف عناوين URL المختلفة قليلاً، مما يربك محركات البحث."
+          },
+          {
+            "question": "هل يمكن لتحسين محركات البحث (SEO) استبدال إعلانات جوجل وفيسبوك؟",
+            "answer": "لا ينبغي أن يحل تحسين محركات البحث محل الإعلانات المدفوعة؛ بل يجب أن يكملها. يستغرق بناء SEO وقتًا ولكنه يوفر عائد استثمار أعلى بكثير على المدى الطويل."
+          }
+        ],
+        "technologies": [
+          { "icon": "ahrefs", "name": "Ahrefs" },
+          { "icon": "screamingfrog", "name": "Screaming Frog" },
+          { "icon": "gsc", "name": "Google Search Console" },
+          { "icon": "shopify", "name": "Shopify" },
+          { "icon": "woocommerce", "name": "WooCommerce" },
+          { "icon": "ga4", "name": "Google Analytics 4" },
+          { "icon": "semrush", "name": "Semrush" },
+          { "icon": "schema", "name": "Schema.org" }
+        ]
+      }
+    }
+  }
+}

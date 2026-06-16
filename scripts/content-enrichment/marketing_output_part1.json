@@ -1,0 +1,639 @@
+{
+  "conversion-rate-optimization": {
+    "en": {
+      "name": "Conversion Rate Optimization",
+      "shortDescription": "Increase your website's revenue without spending more on ads. We use data-driven A/B testing and behavioral analytics to turn more of your existing visitors into paying customers.",
+      "fullDescription": "Getting traffic is only half the battle; if those visitors don't convert, your ad spend is wasted. We approach Conversion Rate Optimization (CRO) with scientific rigor, replacing guesswork with data. By analyzing user behavior through heatmaps, session recordings, and funnel drop-offs, we identify exactly where your site leaks revenue. Then, we formulate hypotheses and run structured A/B and multivariate tests on landing pages, forms, and checkout flows. From reducing friction in the buying process to personalizing user journeys, our systematic optimizations compound over time, permanently lowering your customer acquisition cost and maximizing the ROI of every marketing channel.",
+      "features": [
+        "Conversion Audit & Funnel Analysis",
+        "A/B & Multivariate Testing Strategy",
+        "Heatmap & Session Recording Analysis",
+        "Landing Page & Form Optimization",
+        "Checkout Flow & Cart Abandonment Fixes",
+        "Personalization & Dynamic Content",
+        "User Behavior & Click Tracking",
+        "Statistical Analysis & ROI Reporting"
+      ],
+      "benefits": [
+        "Higher revenue from your existing website traffic",
+        "Lower customer acquisition cost across all ad channels",
+        "Data-backed decisions instead of subjective design guesses",
+        "Reduced cart abandonment and higher average order value",
+        "Deep insights into user behavior and friction points",
+        "Compounding growth through continuous iterative testing"
+      ],
+      "metaTitle": "Conversion Rate Optimization Agency | PakSoft",
+      "metaDescription": "Data-driven Conversion Rate Optimization (CRO) services. We use A/B testing and UX analysis to turn your existing website traffic into qualified leads and sales.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Data Collection & Audit",
+            "description": "We start by implementing robust tracking and analyzing your existing traffic data. Using heatmaps and analytics, we identify exactly where users drop off in your funnel."
+          },
+          {
+            "step": 2,
+            "title": "Hypothesis Generation",
+            "description": "Based on our behavioral analysis, we develop data-backed hypotheses for improvement. We prioritize tests that offer the highest potential impact with the lowest implementation effort."
+          },
+          {
+            "step": 3,
+            "title": "Test Design & Development",
+            "description": "Our team designs and codes the variations, ensuring they match your brand and function flawlessly across devices. We set up the testing environment to guarantee statistical significance."
+          },
+          {
+            "step": 4,
+            "title": "A/B & Multivariate Testing",
+            "description": "We run the experiments against your original page, directing a portion of traffic to the new designs. We monitor the tests closely to ensure data integrity and avoid false positives."
+          },
+          {
+            "step": 5,
+            "title": "Results Analysis",
+            "description": "Once a test reaches statistical significance, we analyze the outcome beyond just the primary conversion goal. We look for secondary impacts on metrics like average order value and time on site."
+          },
+          {
+            "step": 6,
+            "title": "Implementation & Iteration",
+            "description": "Winning variations are permanently rolled out to all users, immediately boosting your baseline. Then, we use those learnings to formulate our next hypothesis and start the cycle again."
+          }
+        ],
+        "faq": [
+          {
+            "question": "How much traffic do I need to run meaningful A/B tests?",
+            "answer": "You typically need at least 1,000 monthly conversions or 10,000 monthly visitors to reach statistical significance quickly. For lower-traffic sites, we focus on high-impact heuristic improvements and macro-conversions rather than micro-testing button colors."
+          },
+          {
+            "question": "How long does a typical A/B test run?",
+            "answer": "A reliable test usually runs for 2 to 4 weeks to account for daily and weekly traffic variations. Ending tests too early based on initial spikes often leads to false positives and flawed data."
+          },
+          {
+            "question": "Will A/B testing negatively impact my SEO?",
+            "answer": "No, not if done correctly. We follow Google's guidelines by using 302 temporary redirects for split URL tests and ensuring the canonical tag points to the original URL, preserving your search rankings."
+          },
+          {
+            "question": "Why should we invest in CRO instead of just buying more ads?",
+            "answer": "CRO is a force multiplier. If we increase your conversion rate from 2% to 3%, you get 50% more customers from the exact same ad spend, permanently lowering your cost per acquisition."
+          },
+          {
+            "question": "Do we need to redesign our entire website?",
+            "answer": "Rarely. The best CRO results usually come from iterative, targeted changes to key pages like the checkout flow, pricing page, or high-volume landing pages, rather than massive overhauls."
+          },
+          {
+            "question": "What tools do you use for testing and analysis?",
+            "answer": "We are platform-agnostic but commonly use VWO, Optimizely, or Google Optimize alternatives for testing, paired with Hotjar or Clarity for behavioral heatmaps and session recordings."
+          },
+          {
+            "question": "Can you guarantee a specific conversion rate increase?",
+            "answer": "Any agency promising a guaranteed percentage is guessing. We guarantee a rigorous, statistically sound process that uncovers the truth about what your users want, which consistently leads to revenue growth."
+          },
+          {
+            "question": "What happens if a test loses or shows no difference?",
+            "answer": "A 'losing' test is incredibly valuable because it prevents you from making a change that would have hurt your business. Flat tests tell us to test bolder changes or focus on a different part of the funnel."
+          }
+        ],
+        "technologies": [
+          {
+            "icon": "vwo",
+            "name": "VWO"
+          },
+          {
+            "icon": "optimizely",
+            "name": "Optimizely"
+          },
+          {
+            "icon": "hotjar",
+            "name": "Hotjar"
+          },
+          {
+            "icon": "ga4",
+            "name": "Google Analytics 4"
+          },
+          {
+            "icon": "mixpanel",
+            "name": "Mixpanel"
+          },
+          {
+            "icon": "figma",
+            "name": "Figma"
+          },
+          {
+            "icon": "clarity",
+            "name": "Microsoft Clarity"
+          },
+          {
+            "icon": "crazyegg",
+            "name": "Crazy Egg"
+          }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Dönüşüm Oranı Optimizasyonu (CRO)",
+      "shortDescription": "Reklam bütçenizi artırmadan web sitenizin gelirini yükseltin. Mevcut ziyaretçilerinizi ödeme yapan müşterilere dönüştürmek için veri odaklı A/B testleri ve davranışsal analizler kullanıyoruz.",
+      "fullDescription": "Trafik elde etmek işin sadece yarısıdır; bu ziyaretçiler müşteriye dönüşmezse reklam harcamalarınız boşa gider. Dönüşüm Oranı Optimizasyonuna (CRO) bilimsel bir titizlikle yaklaşıyor, tahminler yerine verileri koyuyoruz. Isı haritaları, oturum kayıtları ve huni kayıpları üzerinden kullanıcı davranışını analiz ederek, sitenizin tam olarak nereden gelir kaybettiğini belirliyoruz. Ardından hipotezler oluşturuyor ve açılış sayfaları, formlar ve ödeme akışları üzerinde yapılandırılmış A/B ve çok değişkenli testler uyguluyoruz. Satın alma sürecindeki pürüzleri azaltmaktan kullanıcı yolculuklarını kişiselleştirmeye kadar, sistematik optimizasyonlarımız zamanla katlanarak müşteri edinme maliyetinizi kalıcı olarak düşürür ve her pazarlama kanalının getirisini (ROI) en üst düzeye çıkarır.",
+      "features": [
+        "Dönüşüm Denetimi ve Huni Analizi",
+        "A/B ve Çok Değişkenli Test Stratejisi",
+        "Isı Haritası ve Oturum Kaydı Analizi",
+        "Açılış Sayfası ve Form Optimizasyonu",
+        "Ödeme Akışı ve Sepet Terk Etme Çözümleri",
+        "Kişiselleştirme ve Dinamik İçerik",
+        "Kullanıcı Davranışı ve Tıklama İzleme",
+        "İstatistiksel Analiz ve ROI Raporlaması"
+      ],
+      "benefits": [
+        "Mevcut web sitesi trafiğinizden daha yüksek gelir elde etme",
+        "Tüm reklam kanallarında daha düşük müşteri edinme maliyeti",
+        "Subjektif tasarım tahminleri yerine veriye dayalı kararlar",
+        "Daha az sepet terk etme ve daha yüksek ortalama sipariş değeri",
+        "Kullanıcı davranışı ve sürtünme noktaları hakkında derin içgörüler",
+        "Sürekli ve tekrarlı testler aracılığıyla katlanarak büyüme"
+      ],
+      "metaTitle": "Dönüşüm Oranı Optimizasyonu (CRO) Ajansı | PakSoft",
+      "metaDescription": "Veri odaklı Dönüşüm Oranı Optimizasyonu (CRO) hizmetleri. Mevcut web sitenizin trafiğini nitelikli potansiyel müşterilere ve satışlara dönüştürüyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Veri Toplama ve Denetim",
+            "description": "Güçlü bir izleme sistemi kurarak ve mevcut trafik verilerinizi analiz ederek başlıyoruz. Isı haritaları ve analitik araçlarını kullanarak kullanıcıların huninizde tam olarak nerede ayrıldığını belirliyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Hipotez Oluşturma",
+            "description": "Davranışsal analizlerimize dayanarak, iyileştirme için verilerle desteklenen hipotezler geliştiriyoruz. En düşük uygulama çabasıyla en yüksek potansiyel etkiyi sunan testlere öncelik veriyoruz."
+          },
+          {
+            "step": 3,
+            "title": "Test Tasarımı ve Geliştirme",
+            "description": "Ekibimiz, markanızla uyumlu ve cihazlar arası kusursuz çalışan varyasyonlar tasarlayıp kodlar. İstatistiksel anlamlılığı garanti altına almak için test ortamını kurarız."
+          },
+          {
+            "step": 4,
+            "title": "A/B ve Çok Değişkenli Test",
+            "description": "Deneyleri orijinal sayfanıza karşı yürütür, trafiğin bir kısmını yeni tasarımlara yönlendiririz. Veri bütünlüğünü sağlamak ve yanlış pozitifleri önlemek için testleri yakından izliyoruz."
+          },
+          {
+            "step": 5,
+            "title": "Sonuçların Analizi",
+            "description": "Bir test istatistiksel anlamlılığa ulaştığında, sadece birincil dönüşüm hedefinin ötesinde sonuçları analiz ederiz. Ortalama sipariş değeri ve sitede geçirilen süre gibi metrikler üzerindeki ikincil etkileri inceleriz."
+          },
+          {
+            "step": 6,
+            "title": "Uygulama ve Tekrar",
+            "description": "Kazanan varyasyonlar tüm kullanıcılara kalıcı olarak sunulur ve temel performansınızı anında artırır. Ardından, bir sonraki hipotezimizi oluşturmak ve döngüyü yeniden başlatmak için bu öğrenimleri kullanırız."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Anlamlı A/B testleri yapmak için ne kadar trafiğe ihtiyacım var?",
+            "answer": "İstatistiksel anlamlılığa hızlı bir şekilde ulaşmak için genellikle aylık en az 1.000 dönüşüme veya 10.000 aylık ziyaretçiye ihtiyacınız vardır. Trafiği düşük siteler için düğme renklerini test etmek yerine yüksek etkili sezgisel iyileştirmelere odaklanıyoruz."
+          },
+          {
+            "question": "Tipik bir A/B testi ne kadar sürer?",
+            "answer": "Güvenilir bir test, günlük ve haftalık trafik değişimlerini hesaba katmak için genellikle 2 ila 4 hafta sürer. Testleri ilk yükselişlere dayanarak çok erken bitirmek genellikle yanıltıcı verilere yol açar."
+          },
+          {
+            "question": "A/B testi SEO'mu olumsuz etkiler mi?",
+            "answer": "Hayır, doğru yapılırsa etkilemez. Google'ın yönergelerini izleyerek ayrık URL testleri için 302 geçici yönlendirmelerini kullanıyor ve standart etiketinin orijinal URL'yi işaret etmesini sağlayarak arama sıralamanızı koruyoruz."
+          },
+          {
+            "question": "Neden daha fazla reklam almak yerine CRO'ya yatırım yapmalıyız?",
+            "answer": "CRO bir güç çarpanıdır. Dönüşüm oranınızı %2'den %3'e çıkarırsak, tamamen aynı reklam harcamasıyla %50 daha fazla müşteri elde edersiniz ve edinme başına maliyetiniz kalıcı olarak düşer."
+          },
+          {
+            "question": "Tüm web sitemizi yeniden tasarlamamız gerekiyor mu?",
+            "answer": "Nadiren. En iyi CRO sonuçları genellikle devasa revizyonlardan ziyade ödeme akışı, fiyatlandırma sayfası veya yüksek hacimli açılış sayfaları gibi önemli sayfalara yapılan tekrarlı ve hedeflenmiş değişikliklerden gelir."
+          },
+          {
+            "question": "Test ve analiz için hangi araçları kullanıyorsunuz?",
+            "answer": "Platform bağımsız çalışıyoruz, ancak test için genellikle VWO, Optimizely veya Google Optimize alternatiflerini kullanırken; ısı haritaları için Hotjar veya Clarity ile eşleştiriyoruz."
+          },
+          {
+            "question": "Belirli bir dönüşüm oranı artışını garanti edebilir misiniz?",
+            "answer": "Garanti edilen bir yüzde sözü veren herhangi bir ajans tahminde bulunuyordur. Kullanıcılarınızın ne istediği hakkındaki gerçeği ortaya çıkaran ve sürekli olarak gelir artışına yol açan titiz, istatistiksel olarak sağlam bir süreci garanti ediyoruz."
+          },
+          {
+            "question": "Bir test kaybederse veya hiçbir fark göstermezse ne olur?",
+            "answer": "'Kaybeden' bir test inanılmaz derecede değerlidir çünkü işinize zarar verecek bir değişiklik yapmanızı engeller. Düz sonuçlanan testler bize daha cesur değişiklikleri denememizi veya huninin farklı bir bölümüne odaklanmamızı söyler."
+          }
+        ],
+        "technologies": [
+          {
+            "icon": "vwo",
+            "name": "VWO"
+          },
+          {
+            "icon": "optimizely",
+            "name": "Optimizely"
+          },
+          {
+            "icon": "hotjar",
+            "name": "Hotjar"
+          },
+          {
+            "icon": "ga4",
+            "name": "Google Analytics 4"
+          },
+          {
+            "icon": "mixpanel",
+            "name": "Mixpanel"
+          },
+          {
+            "icon": "figma",
+            "name": "Figma"
+          },
+          {
+            "icon": "clarity",
+            "name": "Microsoft Clarity"
+          },
+          {
+            "icon": "crazyegg",
+            "name": "Crazy Egg"
+          }
+        ]
+      }
+    },
+    "de": {
+      "name": "Conversion Rate Optimization (CRO)",
+      "shortDescription": "Steigern Sie den Umsatz Ihrer Website, ohne mehr für Anzeigen auszugeben. Wir nutzen datengesteuertes A/B-Testing und Verhaltensanalysen, um mehr bestehende Besucher in zahlende Kunden zu verwandeln.",
+      "fullDescription": "Traffic zu generieren ist nur die halbe Miete; wenn diese Besucher nicht konvertieren, sind Ihre Werbeausgaben verschwendet. Wir gehen bei der Conversion Rate Optimization (CRO) mit wissenschaftlicher Strenge vor und ersetzen Vermutungen durch Daten. Durch die Analyse des Nutzerverhaltens anhand von Heatmaps, Sitzungsaufzeichnungen und Funnel-Drop-offs identifizieren wir genau, wo Ihre Website Umsatz verliert. Anschließend formulieren wir Hypothesen und führen strukturierte A/B- und multivariate Tests auf Landingpages, in Formularen und Checkout-Prozessen durch. Von der Reduzierung von Reibungsverlusten im Kaufprozess bis zur Personalisierung von User Journeys summieren sich unsere systematischen Optimierungen im Laufe der Zeit, senken Ihre Kundenakquisitionskosten dauerhaft und maximieren den ROI jedes Marketingkanals.",
+      "features": [
+        "Conversion-Audit & Funnel-Analyse",
+        "A/B- & Multivariate-Testing-Strategie",
+        "Heatmap- & Session-Recording-Analyse",
+        "Landingpage- & Formular-Optimierung",
+        "Checkout-Prozess & Warenkorbabbruch-Lösungen",
+        "Personalisierung & Dynamische Inhalte",
+        "Nutzerverhalten & Klick-Tracking",
+        "Statistische Analyse & ROI-Reporting"
+      ],
+      "benefits": [
+        "Höherer Umsatz aus Ihrem bestehenden Website-Traffic",
+        "Geringere Kundenakquisitionskosten über alle Anzeigenkanäle hinweg",
+        "Datengestützte Entscheidungen statt subjektiver Design-Vermutungen",
+        "Reduzierte Warenkorbabbrüche und höherer durchschnittlicher Bestellwert",
+        "Tiefe Einblicke in Nutzerverhalten und Reibungspunkte",
+        "Zinseszinseffekt beim Wachstum durch kontinuierliches iteratives Testen"
+      ],
+      "metaTitle": "Conversion Rate Optimization Agentur | PakSoft",
+      "metaDescription": "Datengesteuerte Conversion Rate Optimization (CRO). Wir nutzen A/B-Testing und UX-Analyse, um Ihren Website-Traffic in qualifizierte Leads und Verkäufe zu verwandeln.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Datenerfassung & Audit",
+            "description": "Wir beginnen mit der Implementierung eines robusten Trackings und der Analyse Ihrer bestehenden Traffic-Daten. Mithilfe von Heatmaps identifizieren wir genau, wo Nutzer in Ihrem Funnel abspringen."
+          },
+          {
+            "step": 2,
+            "title": "Hypothesengenerierung",
+            "description": "Basierend auf unserer Verhaltensanalyse entwickeln wir datengestützte Hypothesen zur Verbesserung. Wir priorisieren Tests, die den höchsten potenziellen Einfluss bei geringstem Implementierungsaufwand bieten."
+          },
+          {
+            "step": 3,
+            "title": "Testdesign & Entwicklung",
+            "description": "Unser Team entwirft und programmiert die Variationen und stellt sicher, dass sie zu Ihrer Marke passen und geräteübergreifend fehlerfrei funktionieren. Wir richten die Testumgebung ein, um statistische Signifikanz zu gewährleisten."
+          },
+          {
+            "step": 4,
+            "title": "A/B- & Multivariate-Testing",
+            "description": "Wir führen die Experimente gegen Ihre Originalseite durch und leiten einen Teil des Traffics auf die neuen Designs. Wir überwachen die Tests genau, um Falsch-Positive-Ergebnisse zu vermeiden."
+          },
+          {
+            "step": 5,
+            "title": "Ergebnisanalyse",
+            "description": "Sobald ein Test statistische Signifikanz erreicht, analysieren wir das Ergebnis über das primäre Conversion-Ziel hinaus. Wir achten auf sekundäre Auswirkungen wie den durchschnittlichen Bestellwert."
+          },
+          {
+            "step": 6,
+            "title": "Implementierung & Iteration",
+            "description": "Erfolgreiche Variationen werden dauerhaft für alle Nutzer eingeführt. Anschließend nutzen wir diese Erkenntnisse, um unsere nächste Hypothese zu formulieren und den Zyklus von vorn zu beginnen."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Wie viel Traffic benötige ich für sinnvolle A/B-Tests?",
+            "answer": "Sie benötigen in der Regel mindestens 1.000 monatliche Conversions oder 10.000 monatliche Besucher, um schnell statistische Signifikanz zu erreichen. Bei kleineren Websites konzentrieren wir uns auf Makro-Conversions."
+          },
+          {
+            "question": "Wie lange dauert ein typischer A/B-Test?",
+            "answer": "Ein zuverlässiger Test läuft normalerweise 2 bis 4 Wochen, um tägliche und wöchentliche Traffic-Schwankungen zu berücksichtigen. Tests zu früh zu beenden führt oft zu fehlerhaften Daten."
+          },
+          {
+            "question": "Wird A/B-Testing meine SEO negativ beeinflussen?",
+            "answer": "Nein, nicht wenn es richtig gemacht wird. Wir befolgen die Google-Richtlinien, indem wir temporäre 302-Weiterleitungen verwenden und sicherstellen, dass das Canonical-Tag auf die ursprüngliche URL verweist."
+          },
+          {
+            "question": "Warum sollten wir in CRO investieren, anstatt mehr Anzeigen zu kaufen?",
+            "answer": "CRO ist ein Kraftmultiplikator. Wenn wir Ihre Conversion-Rate von 2 % auf 3 % erhöhen, erhalten Sie bei exakt gleichen Werbeausgaben 50 % mehr Kunden, was Ihre Akquisitionskosten dauerhaft senkt."
+          },
+          {
+            "question": "Müssen wir unsere gesamte Website neu gestalten?",
+            "answer": "Selten. Die besten CRO-Ergebnisse resultieren meist aus iterativen, gezielten Änderungen an Schlüsselseiten wie dem Checkout-Prozess, der Preisseite oder hochvolumigen Landingpages."
+          },
+          {
+            "question": "Welche Tools verwenden Sie für Tests und Analysen?",
+            "answer": "Wir sind plattformunabhängig, verwenden aber häufig VWO oder Optimizely für Tests, kombiniert mit Hotjar oder Clarity für Verhaltens-Heatmaps und Sitzungsaufzeichnungen."
+          },
+          {
+            "question": "Können Sie eine bestimmte Steigerung der Conversion-Rate garantieren?",
+            "answer": "Jede Agentur, die einen garantierten Prozentsatz verspricht, rät nur. Wir garantieren einen rigorosen, statistisch fundierten Prozess, der herausfindet, was Ihre Nutzer wirklich wollen."
+          },
+          {
+            "question": "Was passiert, wenn ein Test verliert oder keinen Unterschied zeigt?",
+            "answer": "Ein 'verlierender' Test ist wertvoll, da er verhindert, dass Sie eine Änderung vornehmen, die Ihrem Geschäft geschadet hätte. Flache Tests sagen uns, dass wir mutigere Änderungen testen müssen."
+          }
+        ],
+        "technologies": [
+          {
+            "icon": "vwo",
+            "name": "VWO"
+          },
+          {
+            "icon": "optimizely",
+            "name": "Optimizely"
+          },
+          {
+            "icon": "hotjar",
+            "name": "Hotjar"
+          },
+          {
+            "icon": "ga4",
+            "name": "Google Analytics 4"
+          },
+          {
+            "icon": "mixpanel",
+            "name": "Mixpanel"
+          },
+          {
+            "icon": "figma",
+            "name": "Figma"
+          },
+          {
+            "icon": "clarity",
+            "name": "Microsoft Clarity"
+          },
+          {
+            "icon": "crazyegg",
+            "name": "Crazy Egg"
+          }
+        ]
+      }
+    },
+    "ur": {
+      "name": "کنورژن ریٹ آپٹیمائزیشن (CRO)",
+      "shortDescription": "اشتہارات پر مزید خرچ کیے بغیر اپنی ویب سائٹ کی آمدنی میں اضافہ کریں۔ ہم آپ کے موجودہ زائرین کو خریداروں میں بدلنے کے لیے ڈیٹا پر مبنی A/B ٹیسٹنگ کا استعمال کرتے ہیں۔",
+      "fullDescription": "ٹریفک حاصل کرنا صرف آدھی کامیابی ہے؛ اگر وہ زائرین خریدار نہیں بنتے تو آپ کا اشتہاری بجٹ ضائع ہو رہا ہے۔ ہم کنورژن ریٹ آپٹیمائزیشن (CRO) کو سائنسی انداز میں اپناتے ہیں، جہاں اندازوں کی بجائے ڈیٹا پر انحصار کیا جاتا ہے۔ ہیٹ میپس، سیشن ریکارڈنگز اور فنل ڈراپ آف کے ذریعے صارفین کے رویے کا تجزیہ کر کے ہم یہ معلوم کرتے ہیں کہ آپ کی سائٹ کہاں سے آمدنی کھو رہی ہے۔ پھر، ہم لینڈنگ پیجز، فارمز اور چیک آؤٹ کے عمل پر A/B اور ملٹی ویریئٹ ٹیسٹ کرتے ہیں۔ خریداری کے عمل کو آسان بنانے سے لے کر صارف کے سفر کو ذاتی نوعیت کا بنانے تک، ہماری منظم بہتری آپ کے کسٹمر کے حصول کی لاگت کو کم کرتی ہے اور ہر مارکیٹنگ چینل کے ROI کو زیادہ سے زیادہ کرتی ہے۔",
+      "features": [
+        "کنورژن آڈٹ اور فنل کا تجزیہ",
+        "A/B اور ملٹی ویریئٹ ٹیسٹنگ کی حکمت عملی",
+        "ہیٹ میپ اور سیشن ریکارڈنگ کا تجزیہ",
+        "لینڈنگ پیج اور فارم کی آپٹیمائزیشن",
+        "چیک آؤٹ فلو اور کارٹ چھوڑنے کے حل",
+        "ذاتی نوعیت کا بنانا اور متحرک مواد",
+        "صارف کے رویے اور کلک کی ٹریکنگ",
+        "شماریاتی تجزیہ اور ROI کی رپورٹنگ"
+      ],
+      "benefits": [
+        "موجودہ ویب سائٹ ٹریفک سے زیادہ آمدنی",
+        "تمام اشتہاری چینلز پر کسٹمر کے حصول کی لاگت میں کمی",
+        "تخمینہ لگانے کے بجائے ڈیٹا پر مبنی فیصلے",
+        "کارٹ چھوڑنے کی شرح میں کمی اور اوسط آرڈر ویلیو میں اضافہ",
+        "صارفین کے رویے اور رکاوٹوں کے بارے میں گہری بصیرت",
+        "مسلسل اور بار بار ٹیسٹنگ کے ذریعے مستقل ترقی"
+      ],
+      "metaTitle": "کنورژن ریٹ آپٹیمائزیشن ایجنسی | PakSoft",
+      "metaDescription": "ڈیٹا پر مبنی کنورژن ریٹ آپٹیمائزیشن (CRO) سروسز۔ ہم آپ کی موجودہ ٹریفک کو سیلز میں بدلنے کے لیے A/B ٹیسٹنگ اور UX تجزیہ کا استعمال کرتے ہیں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "ڈیٹا اکٹھا کرنا اور آڈٹ",
+            "description": "ہم موجودہ ٹریفک کے ڈیٹا کا تجزیہ کر کے آغاز کرتے ہیں۔ ہیٹ میپس اور اینالیٹکس کا استعمال کرتے ہوئے ہم یہ معلوم کرتے ہیں کہ صارفین کہاں سے واپس جا رہے ہیں۔"
+          },
+          {
+            "step": 2,
+            "title": "مفروضہ (Hypothesis) بنانا",
+            "description": "صارفین کے رویے کے تجزیے کی بنیاد پر ہم بہتری کے لیے ڈیٹا پر مبنی مفروضے تیار کرتے ہیں۔ ہم ان ٹیسٹس کو ترجیح دیتے ہیں جن کا اثر زیادہ اور محنت کم ہو۔"
+          },
+          {
+            "step": 3,
+            "title": "ٹیسٹ ڈیزائن اور ڈیولپمنٹ",
+            "description": "ہماری ٹیم ایسی تبدیلیاں ڈیزائن اور کوڈ کرتی ہے جو آپ کے برانڈ کے مطابق ہوں اور ہر ڈیوائس پر چلیں۔ ہم نتائج کو یقینی بنانے کے لیے ٹیسٹنگ ماحول تیار کرتے ہیں۔"
+          },
+          {
+            "step": 4,
+            "title": "A/B اور ملٹی ویریئٹ ٹیسٹنگ",
+            "description": "ہم نئے ڈیزائن پر ٹریفک کا کچھ حصہ بھیج کر تجربات چلاتے ہیں۔ ہم ڈیٹا کی درستگی کو یقینی بنانے کے لیے ٹیسٹ کی کڑی نگرانی کرتے ہیں۔"
+          },
+          {
+            "step": 5,
+            "title": "نتائج کا تجزیہ",
+            "description": "جب ٹیسٹ کے نتائج واضح ہو جائیں تو ہم اوسط آرڈر ویلیو اور سائٹ پر گزارے گئے وقت جیسے ثانوی اثرات کا بھی جائزہ لیتے ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "نفاذ اور تکرار",
+            "description": "کامیاب تبدیلیوں کو تمام صارفین کے لیے مستقل طور پر لاگو کیا جاتا ہے۔ پھر، ہم ان تجربات سے سیکھ کر نیا مفروضہ بناتے ہیں اور عمل کو دہراتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "A/B ٹیسٹ چلانے کے لیے مجھے کتنی ٹریفک درکار ہے؟",
+            "answer": "بہتر نتائج کے لیے آپ کو ماہانہ کم از کم 1,000 کنورژنز یا 10,000 زائرین کی ضرورت ہوتی ہے۔ کم ٹریفک والی سائٹس کے لیے ہم بڑی تبدیلیوں پر توجہ دیتے ہیں۔"
+          },
+          {
+            "question": "عام A/B ٹیسٹ کتنا عرصہ چلتا ہے؟",
+            "answer": "روزانہ اور ہفتہ وار ٹریفک کے تغیرات کو مدنظر رکھنے کے لیے ایک قابل اعتماد ٹیسٹ عموماً 2 سے 4 ہفتوں تک چلتا ہے۔ ٹیسٹ کو جلدی ختم کرنے سے غلط ڈیٹا مل سکتا ہے۔"
+          },
+          {
+            "question": "کیا A/B ٹیسٹنگ میری SEO کو نقصان پہنچائے گی؟",
+            "answer": "اگر صحیح طریقے سے کیا جائے تو نہیں۔ ہم گوگل کے رہنما اصولوں کے مطابق عارضی ری ڈائریکٹس استعمال کرتے ہیں اور آپ کی سرچ رینکنگ کو محفوظ رکھتے ہیں۔"
+          },
+          {
+            "question": "مزید اشتہارات خریدنے کی بجائے ہمیں CRO میں سرمایہ کاری کیوں کرنی چاہیے؟",
+            "answer": "اگر ہم آپ کے کنورژن ریٹ کو %2 سے بڑھا کر %3 کر دیں، تو آپ کو اسی بجٹ میں %50 مزید گاہک ملیں گے، جو کہ اشتہارات کی لاگت کو کم کرتا ہے۔"
+          },
+          {
+            "question": "کیا ہمیں اپنی پوری ویب سائٹ کو دوبارہ ڈیزائن کرنے کی ضرورت ہے؟",
+            "answer": "شاذ و نادر ہی۔ بہترین نتائج عموماً چیک آؤٹ کے عمل، قیمتوں کے صفحے، یا اہم لینڈنگ پیجز پر بار بار کی جانے والی تبدیلیوں سے آتے ہیں۔"
+          },
+          {
+            "question": "آپ ٹیسٹنگ اور تجزیہ کے لیے کون سے ٹولز استعمال کرتے ہیں؟",
+            "answer": "ہم عام طور پر ٹیسٹنگ کے لیے VWO یا Optimizely، اور رویے کے ہیٹ میپس اور سیشن ریکارڈنگ کے لیے Hotjar یا Clarity کا استعمال کرتے ہیں۔"
+          },
+          {
+            "question": "کیا آپ کنورژن ریٹ میں مخصوص اضافے کی ضمانت دے سکتے ہیں؟",
+            "answer": "مخصوص فیصد کی ضمانت دینے والی کوئی بھی ایجنسی صرف اندازہ لگا رہی ہوتی ہے۔ ہم ایک سخت اور مستند عمل کی ضمانت دیتے ہیں جو ہمیشہ ترقی کی طرف لے جاتا ہے۔"
+          },
+          {
+            "question": "اگر کوئی ٹیسٹ فیل ہو جائے یا کوئی فرق نہ دکھائے تو کیا ہوگا؟",
+            "answer": "فیل ہونے والا ٹیسٹ بھی قیمتی ہوتا ہے کیونکہ یہ آپ کو ایسی تبدیلی سے روکتا ہے جو آپ کے کاروبار کو نقصان پہنچاتی۔"
+          }
+        ],
+        "technologies": [
+          {
+            "icon": "vwo",
+            "name": "VWO"
+          },
+          {
+            "icon": "optimizely",
+            "name": "Optimizely"
+          },
+          {
+            "icon": "hotjar",
+            "name": "Hotjar"
+          },
+          {
+            "icon": "ga4",
+            "name": "Google Analytics 4"
+          },
+          {
+            "icon": "mixpanel",
+            "name": "Mixpanel"
+          },
+          {
+            "icon": "figma",
+            "name": "Figma"
+          },
+          {
+            "icon": "clarity",
+            "name": "Microsoft Clarity"
+          },
+          {
+            "icon": "crazyegg",
+            "name": "Crazy Egg"
+          }
+        ]
+      }
+    },
+    "ar": {
+      "name": "تحسين معدل التحويل (CRO)",
+      "shortDescription": "قم بزيادة إيرادات موقعك دون إنفاق المزيد على الإعلانات. نحن نستخدم اختبار A/B المدعوم بالبيانات لتحويل المزيد من زوارك الحاليين إلى عملاء يدفعون.",
+      "fullDescription": "الحصول على الزيارات هو نصف المعركة فقط؛ إذا لم يتحول هؤلاء الزوار، فإن إنفاقك الإعلاني يضيع. نحن نتعامل مع تحسين معدل التحويل (CRO) بدقة علمية، مستبدلين التخمين بالبيانات. من خلال تحليل سلوك المستخدم عبر الخرائط الحرارية، وتسجيلات الجلسات، وتراجع مسار التحويل، نحدد بالضبط أين يفقد موقعك الإيرادات. ثم نقوم بصياغة الفرضيات وإجراء اختبارات A/B واختبارات متعددة المتغيرات على صفحات الهبوط، والنماذج، وعمليات الدفع. من تقليل الاحتكاك في عملية الشراء إلى تخصيص رحلات المستخدم، تؤدي تحسيناتنا المنهجية إلى خفض تكلفة اكتساب العملاء بشكل دائم وزيادة عائد الاستثمار لكل قناة تسويقية.",
+      "features": [
+        "تدقيق التحويل وتحليل مسار المبيعات",
+        "استراتيجية اختبار A/B والاختبارات متعددة المتغيرات",
+        "تحليل الخرائط الحرارية وتسجيلات الجلسات",
+        "تحسين صفحات الهبوط والنماذج",
+        "تحسين مسار الدفع وحلول التخلي عن سلة التسوق",
+        "التخصيص والمحتوى الديناميكي",
+        "تتبع سلوك المستخدم والنقرات",
+        "التحليل الإحصائي وتقارير عائد الاستثمار"
+      ],
+      "benefits": [
+        "إيرادات أعلى من زيارات موقعك الحالي",
+        "انخفاض تكلفة اكتساب العملاء عبر جميع القنوات",
+        "قرارات مدعومة بالبيانات بدلاً من التخمينات",
+        "تقليل التخلي عن سلة التسوق وزيادة متوسط قيمة الطلب",
+        "رؤى عميقة حول سلوك المستخدم ونقاط الاحتكاك",
+        "نمو تراكمي من خلال الاختبار التكراري المستمر"
+      ],
+      "metaTitle": "وكالة تحسين معدل التحويل (CRO) | PakSoft",
+      "metaDescription": "خدمات تحسين معدل التحويل (CRO) المدعومة بالبيانات. نستخدم اختبارات A/B لتحويل زوار موقعك إلى عملاء محتملين ومبيعات مؤهلة.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "جمع البيانات والتدقيق",
+            "description": "نبدأ بتنفيذ تتبع قوي وتحليل بيانات الزيارات الحالية. باستخدام الخرائط الحرارية والتحليلات، نحدد بالضبط أين ينخفض عدد المستخدمين."
+          },
+          {
+            "step": 2,
+            "title": "صياغة الفرضيات",
+            "description": "بناءً على تحليلنا السلوكي، نقوم بتطوير فرضيات للتحسين. نمنح الأولوية للاختبارات التي تقدم أعلى تأثير محتمل بأقل جهد في التنفيذ."
+          },
+          {
+            "step": 3,
+            "title": "تصميم وتطوير الاختبارات",
+            "description": "يقوم فريقنا بتصميم التغييرات وبرمجتها، لضمان عملها بشكل لا تشوبه شائبة عبر جميع الأجهزة. نقوم بإعداد بيئة الاختبار لضمان الدقة."
+          },
+          {
+            "step": 4,
+            "title": "اختبارات A/B متعددة المتغيرات",
+            "description": "نجري التجارب مقابل صفحتك الأصلية، ونوجه جزءاً من الزيارات إلى التصميمات الجديدة. نراقب الاختبارات عن كثب لضمان سلامة البيانات."
+          },
+          {
+            "step": 5,
+            "title": "تحليل النتائج",
+            "description": "بمجرد أن يصل الاختبار إلى دلالة إحصائية، نقوم بتحليل النتيجة. نبحث عن التأثيرات الثانوية على مقاييس مثل متوسط قيمة الطلب."
+          },
+          {
+            "step": 6,
+            "title": "التنفيذ والتكرار",
+            "description": "يتم طرح التغييرات الفائزة لجميع المستخدمين بشكل دائم. ثم نستخدم هذه الدروس لصياغة فرضيتنا التالية وبدء الدورة مرة أخرى."
+          }
+        ],
+        "faq": [
+          {
+            "question": "كم عدد الزيارات التي أحتاجها لإجراء اختبارات A/B ذات مغزى؟",
+            "answer": "تحتاج عادةً إلى 1000 تحويل شهري أو 10000 زائر للوصول إلى دلالة إحصائية بسرعة. للمواقع ذات الزيارات المنخفضة، نركز على التحسينات عالية التأثير."
+          },
+          {
+            "question": "كم من الوقت يستغرق اختبار A/B النموذجي؟",
+            "answer": "يستمر الاختبار الموثوق عادةً من 2 إلى 4 أسابيع لمراعاة تقلبات الزيارات اليومية والأسبوعية. إنهاء الاختبارات مبكراً يؤدي إلى بيانات معيبة."
+          },
+          {
+            "question": "هل سيؤثر اختبار A/B سلباً على تحسين محركات البحث (SEO) لدي؟",
+            "answer": "لا، ليس إذا تم إجراؤه بشكل صحيح. نحن نتبع إرشادات جوجل باستخدام عمليات إعادة التوجيه المؤقتة لضمان الحفاظ على تصنيفات البحث الخاصة بك."
+          },
+          {
+            "question": "لماذا يجب أن نستثمر في CRO بدلاً من مجرد شراء المزيد من الإعلانات؟",
+            "answer": "CRO هو مضاعف للقوة. إذا قمنا بزيادة معدل التحويل من %2 إلى %3، فإنك تحصل على عدد أكبر من العملاء بنسبة %50 بنفس الإنفاق الإعلاني."
+          },
+          {
+            "question": "هل نحتاج إلى إعادة تصميم موقعنا بالكامل؟",
+            "answer": "نادراً. تأتي أفضل نتائج CRO عادةً من تغييرات مستهدفة ومتكررة للصفحات الرئيسية مثل عملية الدفع، بدلاً من الإصلاحات الشاملة."
+          },
+          {
+            "question": "ما هي الأدوات التي تستخدمها للاختبار والتحليل؟",
+            "answer": "نحن نستخدم بشكل شائع بدائل VWO أو Optimizely للاختبار، مقترنة بـ Hotjar للخرائط الحرارية السلوكية وتسجيلات الجلسات."
+          },
+          {
+            "question": "هل يمكنك ضمان زيادة معينة في معدل التحويل؟",
+            "answer": "أي وكالة تعد بنسبة مئوية مضمونة هي تخمن فقط. نحن نضمن عملية صارمة إحصائياً تكشف الحقيقة حول ما يريده المستخدمون."
+          },
+          {
+            "question": "ماذا يحدث إذا خسر الاختبار أو لم يظهر أي فرق؟",
+            "answer": "الاختبار الخاسر ذو قيمة لا تصدق لأنه يمنعك من إجراء تغيير كان سيضر بعملك. تخبرنا الاختبارات المسطحة أنه يجب علينا تجربة تغييرات أكثر جرأة."
+          }
+        ],
+        "technologies": [
+          {
+            "icon": "vwo",
+            "name": "VWO"
+          },
+          {
+            "icon": "optimizely",
+            "name": "Optimizely"
+          },
+          {
+            "icon": "hotjar",
+            "name": "Hotjar"
+          },
+          {
+            "icon": "ga4",
+            "name": "Google Analytics 4"
+          },
+          {
+            "icon": "mixpanel",
+            "name": "Mixpanel"
+          },
+          {
+            "icon": "figma",
+            "name": "Figma"
+          },
+          {
+            "icon": "clarity",
+            "name": "Microsoft Clarity"
+          },
+          {
+            "icon": "crazyegg",
+            "name": "Crazy Egg"
+          }
+        ]
+      }
+    }
+  }
+}

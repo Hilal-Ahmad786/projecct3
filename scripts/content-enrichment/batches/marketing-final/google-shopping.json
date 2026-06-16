@@ -1,0 +1,598 @@
+{
+  "slug": "google-shopping",
+  "en": {
+    "name": "Google Shopping",
+    "shortDescription": "Put your products in front of high-intent buyers. We optimize your product feeds and manage highly profitable Google Shopping campaigns to scale your ecommerce revenue.",
+    "fullDescription": "For ecommerce businesses, Google Shopping is the most powerful sales channel available. Unlike standard text ads, Shopping ads display a product image, price, and your store name right at the top of the search results, capturing the attention of users who are actively looking to buy. However, success in Google Shopping isn't just about bidding; it's about feed optimization. If your product feed is disorganized or lacks crucial data, Google won't show your products. Our Google Shopping services combine deep technical feed optimization with aggressive campaign management. We meticulously structure and enrich your Google Merchant Center feed—optimizing product titles, descriptions, and categories to match high-volume search queries. We then structure your campaigns using advanced segmentation (by profitability, top sellers, or product categories) and leverage Smart Bidding to maximize your Return on Ad Spend (ROAS).",
+    "features": [
+      "Comprehensive Product Feed Optimization",
+      "Google Merchant Center Setup & Troubleshooting",
+      "Performance Max (PMax) Campaign Integration",
+      "Standard Shopping Campaign Management",
+      "Product Title & Description SEO",
+      "Custom Labels & Feed Rules Configuration",
+      "Bidding Strategy & ROAS Optimization",
+      "Competitor Price Monitoring & Adjustment"
+    ],
+    "benefits": [
+      "Showcase your products visually at the top of Google search results",
+      "Attract highly qualified traffic with immediate purchase intent",
+      "Lower your Cost Per Acquisition (CPA) through feed optimization",
+      "Scale ecommerce revenue predictably with optimized ROAS bidding",
+      "Avoid Merchant Center suspensions with proactive error management",
+      "Gain deep insights into which specific products drive the most profit"
+    ],
+    "metaTitle": "Google Shopping Agency | Feed Optimization | PakSoft",
+    "metaDescription": "Scale your ecommerce sales with expertly managed Google Shopping campaigns. We optimize your Merchant Center feed and maximize your ROAS.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Merchant Center Audit & Setup",
+          "description": "We audit your existing Google Merchant Center, fix any disapproval errors, and ensure a seamless connection between your ecommerce platform (e.g., Shopify, WooCommerce) and Google."
+        },
+        {
+          "step": 2,
+          "title": "Technical Feed Optimization",
+          "description": "This is the most critical step. We rewrite product titles to include high-volume keywords, optimize descriptions, and ensure all GTINs, MPNs, and Google Product Categories are accurate."
+        },
+        {
+          "step": 3,
+          "title": "Campaign Structuring",
+          "description": "We don't just dump all products into one campaign. We segment products using Custom Labels based on margins, seasonality, or 'bestseller' status to control bids precisely."
+        },
+        {
+          "step": 4,
+          "title": "Bidding Strategy Configuration",
+          "description": "Depending on your data volume, we implement either manual CPC with enhanced bidding or Google's Smart Bidding algorithms (Target ROAS) to maximize profitability."
+        },
+        {
+          "step": 5,
+          "title": "Performance Max (PMax) Integration",
+          "description": "We integrate your optimized feed into Performance Max campaigns, allowing your products to appear across the entire Google network (YouTube, Display, Gmail, Maps) automatically."
+        },
+        {
+          "step": 6,
+          "title": "Continuous Feed & Bid Management",
+          "description": "We continuously monitor search term reports, adjust bids, add negative keywords (for Standard Shopping), and update feed rules to adapt to inventory changes and competitor pricing."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Why are my products not showing up in Google Shopping?",
+          "answer": "This is usually due to feed errors in the Google Merchant Center (e.g., missing GTINs, policy violations) or poorly optimized product titles that don't match user search queries."
+        },
+        {
+          "question": "What is the difference between Standard Shopping and Performance Max?",
+          "answer": "Standard Shopping gives you manual control over negative keywords and bids. Performance Max is fully automated and shows ads across all Google networks, not just the search results."
+        },
+        {
+          "question": "Do you need access to my website backend?",
+          "answer": "Yes, we typically need access to your ecommerce backend (like Shopify) or your feed management tool (like Feedonomics) to optimize the product data before it reaches Google."
+        },
+        {
+          "question": "How important are product titles in Google Shopping?",
+          "answer": "They are everything. Because you cannot select keywords in Shopping ads, Google uses your product titles and descriptions to decide when to show your ad. We optimize titles heavily."
+        },
+        {
+          "question": "What is a good ROAS for Google Shopping?",
+          "answer": "A 'good' ROAS depends entirely on your profit margins. A 300% ROAS might be highly profitable for a dropshipper but cause a loss for a manufacturer. We optimize based on your specific margins."
+        },
+        {
+          "question": "Can you fix a suspended Google Merchant Center account?",
+          "answer": "Yes. We frequently help businesses resolve complex policy violations (like 'Misrepresentation') and get their Merchant Center accounts unsuspended and active again."
+        },
+        {
+          "question": "Do I need GTINs (barcodes) to run Shopping ads?",
+          "answer": "For most manufactured products, yes. If you sell custom or vintage items without GTINs, we configure specific feed rules (identifier_exists=no) to ensure they are still approved."
+        },
+        {
+          "question": "How do you handle out-of-stock products?",
+          "answer": "We set up automated, real-time syncs between your inventory and the Merchant Center. If a product goes out of stock on your site, the ad stops showing immediately, saving your budget."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "googleads",
+          "name": "Google Merchant Center"
+        },
+        {
+          "icon": "googleads",
+          "name": "Google Ads (Shopping & PMax)"
+        },
+        {
+          "icon": "shopify",
+          "name": "Shopify / WooCommerce"
+        },
+        {
+          "icon": "feed",
+          "name": "Feedonomics / Channable"
+        },
+        {
+          "icon": "analytics",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Tag Manager"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Google Alışveriş (Shopping) Reklamları",
+    "shortDescription": "Ürünlerinizi satın alma niyeti yüksek alıcıların önüne çıkarın. E-ticaret gelirinizi ölçeklendirmek için ürün beslemelerinizi (feed) optimize ediyor ve yüksek karlı Google Alışveriş kampanyaları yönetiyoruz.",
+    "fullDescription": "E-ticaret işletmeleri için Google Alışveriş mevcut en güçlü satış kanalıdır. Standart metin reklamlarının aksine, Alışveriş reklamları arama sonuçlarının en üstünde bir ürün görseli, fiyat ve mağaza adınızı görüntüleyerek aktif olarak satın almak isteyen kullanıcıların dikkatini çeker. Ancak, Google Alışveriş'te başarı sadece teklif vermekle ilgili değildir; ürün beslemesi (feed) optimizasyonuyla ilgilidir. Ürün beslemeniz düzensizse veya kritik verilerden yoksunsa, Google ürünlerinizi göstermez. Google Alışveriş hizmetlerimiz, derin teknik besleme optimizasyonunu agresif kampanya yönetimiyle birleştirir. Yüksek hacimli arama sorgularıyla eşleşmesi için ürün başlıklarını, açıklamalarını ve kategorilerini optimize ederek Google Merchant Center beslemenizi titizlikle yapılandırıyor ve zenginleştiriyoruz. Daha sonra kampanyalarınızı gelişmiş segmentasyon (karlılık, en çok satanlar veya ürün kategorilerine göre) kullanarak yapılandırıyor ve Reklam Harcamalarından Elde Edilen Getiriyi (ROAS) en üst düzeye çıkarmak için Akıllı Teklif (Smart Bidding) özelliğinden yararlanıyoruz.",
+    "features": [
+      "Kapsamlı Ürün Beslemesi (Feed) Optimizasyonu",
+      "Google Merchant Center Kurulumu ve Sorun Giderme",
+      "Maksimum Performans (PMax) Kampanya Entegrasyonu",
+      "Standart Alışveriş Kampanyası Yönetimi",
+      "Ürün Başlığı ve Açıklaması SEO'su",
+      "Özel Etiketler ve Besleme Kuralları Yapılandırması",
+      "Teklif Stratejisi ve ROAS Optimizasyonu",
+      "Rakip Fiyat İzleme ve Ayarlama"
+    ],
+    "benefits": [
+      "Ürünlerinizi Google arama sonuçlarının en üstünde görsel olarak sergileyin",
+      "Anında satın alma niyeti olan son derece nitelikli trafiği çekin",
+      "Besleme (feed) optimizasyonu sayesinde Edinme Başına Maliyetinizi (CPA) düşürün",
+      "Optimize edilmiş ROAS teklifleriyle e-ticaret gelirinizi öngörülebilir şekilde ölçeklendirin",
+      "Proaktif hata yönetimiyle Merchant Center askıya almalarından (suspension) kaçının",
+      "Hangi spesifik ürünlerin en çok karı sağladığına dair derin içgörüler edinin"
+    ],
+    "metaTitle": "Google Alışveriş Reklam Ajansı | Feed Optimizasyonu | PakSoft",
+    "metaDescription": "Uzmanlıkla yönetilen Google Alışveriş kampanyalarıyla e-ticaret satışlarınızı ölçeklendirin. Merchant Center feed'inizi optimize ediyor ve ROAS'ınızı artırıyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Merchant Center Denetimi ve Kurulumu",
+          "description": "Mevcut Google Merchant Center hesabınızı denetliyor, onaylanmama hatalarını gideriyor ve e-ticaret platformunuz (ör. Shopify, WooCommerce) ile Google arasında sorunsuz bir bağlantı sağlıyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Teknik Besleme (Feed) Optimizasyonu",
+          "description": "Bu en kritik adımdır. Yüksek hacimli anahtar kelimeleri içerecek şekilde ürün başlıklarını yeniden yazıyor, açıklamaları optimize ediyor ve tüm GTIN, MPN ve Google Ürün Kategorilerinin doğru olduğundan emin oluyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Kampanya Yapılandırması",
+          "description": "Tüm ürünleri tek bir kampanyaya yığmıyoruz. Teklifleri hassas bir şekilde kontrol etmek için kar marjlarına, mevsimselliğe veya 'en çok satan' durumuna göre Özel Etiketler kullanarak ürünleri bölümlere ayırıyoruz."
+        },
+        {
+          "step": 4,
+          "title": "Teklif Stratejisi Yapılandırması",
+          "description": "Veri hacminize bağlı olarak, karlılığı en üst düzeye çıkarmak için geliştirilmiş teklifli manuel TBM veya Google'ın Akıllı Teklif (Hedef ROAS) algoritmalarını uyguluyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Maksimum Performans (PMax) Entegrasyonu",
+          "description": "Ürünlerinizin tüm Google ağında (YouTube, Görüntülü Reklam Ağı, Gmail, Haritalar) otomatik olarak görünmesini sağlamak için optimize edilmiş feed'inizi Maksimum Performans kampanyalarına entegre ediyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Sürekli Feed ve Teklif Yönetimi",
+          "description": "Arama terimleri raporlarını sürekli izliyor, teklifleri ayarlıyor, negatif anahtar kelimeler ekliyor (Standart Alışveriş için) ve envanter değişikliklerine ve rakip fiyatlarına uyum sağlamak için feed kurallarını güncelliyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Ürünlerim neden Google Alışveriş'te görünmüyor?",
+          "answer": "Bunun nedeni genellikle Google Merchant Center'daki feed hatalarıdır (ör. eksik GTIN'ler, politika ihlalleri) veya kullanıcı arama sorgularıyla eşleşmeyen, yetersiz optimize edilmiş ürün başlıklarıdır."
+        },
+        {
+          "question": "Standart Alışveriş ile Maksimum Performans (PMax) arasındaki fark nedir?",
+          "answer": "Standart Alışveriş size negatif anahtar kelimeler ve teklifler üzerinde manuel kontrol sağlar. Maksimum Performans tamamen otomatiktir ve reklamları yalnızca arama sonuçlarında değil, tüm Google ağlarında gösterir."
+        },
+        {
+          "question": "Web sitemin arka ucuna (backend) erişmeniz gerekiyor mu?",
+          "answer": "Evet, ürün verilerini Google'a ulaşmadan önce optimize etmek için genellikle e-ticaret arka ucunuza (Shopify gibi) veya feed yönetim aracınıza (Feedonomics gibi) erişmemiz gerekir."
+        },
+        {
+          "question": "Google Alışveriş'te ürün başlıkları ne kadar önemlidir?",
+          "answer": "Her şeydir. Alışveriş reklamlarında anahtar kelime seçemediğiniz için Google, reklamınızı ne zaman göstereceğine karar vermek için ürün başlıklarınızı ve açıklamalarınızı kullanır. Başlıkları yoğun bir şekilde optimize ediyoruz."
+        },
+        {
+          "question": "Google Alışveriş için iyi bir ROAS nedir?",
+          "answer": "'İyi' bir ROAS tamamen kar marjlarınıza bağlıdır. %300'lük bir ROAS, bir dropshipper için oldukça karlı olabilirken, bir üretici için zarara neden olabilir. Belirli marjlarınıza göre optimize ediyoruz."
+        },
+        {
+          "question": "Askıya alınmış bir Google Merchant Center hesabını düzeltebilir misiniz?",
+          "answer": "Evet. İşletmelerin karmaşık politika ihlallerini (örneğin 'Yanlış Beyan') çözmelerine ve Merchant Center hesaplarının askıya alınmasını kaldırıp yeniden aktif hale getirmelerine sıklıkla yardımcı oluyoruz."
+        },
+        {
+          "question": "Alışveriş reklamları yayınlamak için GTIN'lere (barkodlara) ihtiyacım var mı?",
+          "answer": "Üretilmiş çoğu ürün için evet. GTIN'i olmayan özel veya vintage ürünler satıyorsanız, yine de onaylanmalarını sağlamak için belirli besleme kuralları (identifier_exists=no) yapılandırıyoruz."
+        },
+        {
+          "question": "Stokta olmayan (out-of-stock) ürünleri nasıl yönetiyorsunuz?",
+          "answer": "Envanteriniz ile Merchant Center arasında otomatik, gerçek zamanlı senkronizasyonlar kuruyoruz. Bir ürün sitenizde tükenirse reklamın gösterimi hemen durdurulur ve bütçenizden tasarruf edilir."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "googleads",
+          "name": "Google Merchant Center"
+        },
+        {
+          "icon": "googleads",
+          "name": "Google Ads (Shopping & PMax)"
+        },
+        {
+          "icon": "shopify",
+          "name": "Shopify / WooCommerce"
+        },
+        {
+          "icon": "feed",
+          "name": "Feedonomics / Channable"
+        },
+        {
+          "icon": "analytics",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Tag Manager"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Google Shopping",
+    "shortDescription": "Präsentieren Sie Ihre Produkte Käufern mit hoher Kaufabsicht. Wir optimieren Ihre Produktdatenfeeds und verwalten hochprofitable Google Shopping-Kampagnen.",
+    "fullDescription": "Für E-Commerce-Unternehmen ist Google Shopping der stärkste verfügbare Vertriebskanal. Im Gegensatz zu Standard-Textanzeigen zeigen Shopping-Anzeigen ein Produktbild, den Preis und Ihren Geschäftsnamen direkt oben in den Suchergebnissen an und fangen so die Aufmerksamkeit von Nutzern ein, die aktiv kaufen möchten. Der Erfolg bei Google Shopping hängt jedoch nicht nur von den Geboten ab, sondern vor allem von der Feed-Optimierung. Wenn Ihr Produktdatenfeed unorganisiert ist oder wichtige Daten fehlen, zeigt Google Ihre Produkte nicht an. Unsere Dienstleistungen kombinieren tiefgehende technische Feed-Optimierung mit aggressivem Kampagnenmanagement. Wir strukturieren und bereichern Ihren Google Merchant Center-Feed akribisch – wir optimieren Produkttitel, Beschreibungen und Kategorien, damit sie mit Suchanfragen übereinstimmen. Anschließend strukturieren wir Kampagnen nach Margen oder Bestsellern und nutzen Smart Bidding für maximalen ROAS.",
+    "features": [
+      "Umfassende Produktdatenfeed-Optimierung",
+      "Google Merchant Center Setup & Fehlerbehebung",
+      "Integration von Performance Max (PMax) Kampagnen",
+      "Management von Standard-Shopping-Kampagnen",
+      "SEO für Produkttitel & -beschreibungen",
+      "Konfiguration von Custom Labels & Feed-Regeln",
+      "Gebotsstrategie & ROAS-Optimierung",
+      "Überwachung & Anpassung an Konkurrenzpreise"
+    ],
+    "benefits": [
+      "Präsentieren Sie Ihre Produkte visuell ganz oben in den Google-Suchergebnissen",
+      "Ziehen Sie hochqualifizierten Traffic mit sofortiger Kaufabsicht an",
+      "Senken Sie Ihre Cost Per Acquisition (CPA) durch Feed-Optimierung",
+      "Skalieren Sie E-Commerce-Umsätze mit optimierten ROAS-Geboten",
+      "Vermeiden Sie Kontosperrungen im Merchant Center durch proaktives Fehlermanagement",
+      "Gewinnen Sie tiefe Einblicke, welche spezifischen Produkte den meisten Gewinn erzielen"
+    ],
+    "metaTitle": "Google Shopping Agentur | Feed-Optimierung | PakSoft",
+    "metaDescription": "Skalieren Sie Ihre E-Commerce-Verkäufe mit kompetent verwalteten Google Shopping-Kampagnen. Wir optimieren Ihren Merchant Center-Feed und maximieren den ROAS.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Merchant Center Audit & Setup",
+          "description": "Wir prüfen Ihr Merchant Center, beheben Ablehnungsfehler und stellen eine nahtlose Verbindung zu Ihrer E-Commerce-Plattform (z. B. Shopify) her."
+        },
+        {
+          "step": 2,
+          "title": "Technische Feed-Optimierung",
+          "description": "Der wichtigste Schritt. Wir schreiben Produkttitel mit suchstarken Keywords neu und stellen sicher, dass GTINs und Produktkategorien korrekt sind."
+        },
+        {
+          "step": 3,
+          "title": "Kampagnenstrukturierung",
+          "description": "Wir werfen nicht alle Produkte in eine Kampagne. Wir segmentieren sie mithilfe von benutzerdefinierten Labels (Custom Labels) nach Margen oder Saisonabhängigkeit."
+        },
+        {
+          "step": 4,
+          "title": "Konfiguration der Gebotsstrategie",
+          "description": "Je nach Datenvolumen implementieren wir manuelle CPCs oder die Smart-Bidding-Algorithmen von Google (Ziel-ROAS), um die Profitabilität zu maximieren."
+        },
+        {
+          "step": 5,
+          "title": "Performance Max (PMax) Integration",
+          "description": "Wir integrieren Ihren optimierten Feed in PMax-Kampagnen, damit Ihre Produkte im gesamten Google-Netzwerk (YouTube, Display, Maps) erscheinen."
+        },
+        {
+          "step": 6,
+          "title": "Kontinuierliches Feed- & Gebotsmanagement",
+          "description": "Wir überwachen Suchbegriffe, passen Gebote an, pflegen negative Keywords und aktualisieren Feed-Regeln basierend auf Bestandsänderungen."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Warum werden meine Produkte nicht in Google Shopping angezeigt?",
+          "answer": "Dies liegt meist an Feed-Fehlern im Merchant Center (z. B. fehlende GTINs) oder an schlecht optimierten Titeln, die nicht zu den Suchanfragen der Nutzer passen."
+        },
+        {
+          "question": "Was ist der Unterschied zwischen Standard Shopping und Performance Max?",
+          "answer": "Bei Standard Shopping haben Sie manuelle Kontrolle über Gebote und negative Keywords. PMax ist vollautomatisiert und zeigt Anzeigen im gesamten Google-Netzwerk."
+        },
+        {
+          "question": "Benötigen Sie Zugriff auf das Backend meiner Website?",
+          "answer": "Ja, wir benötigen meist Zugriff auf Ihr Shop-System (wie Shopify) oder Ihr Feed-Management-Tool, um die Daten vor der Übermittlung an Google zu optimieren."
+        },
+        {
+          "question": "Wie wichtig sind Produkttitel bei Google Shopping?",
+          "answer": "Sie sind entscheidend. Da Sie keine Keywords auswählen können, entscheidet Google anhand Ihrer Titel und Beschreibungen, wann Ihre Anzeige geschaltet wird."
+        },
+        {
+          "question": "Was ist ein guter ROAS für Google Shopping?",
+          "answer": "Ein 'guter' ROAS hängt von Ihren Gewinnmargen ab. Ein ROAS von 300 % kann für einen Dropshipper profitabel sein, für einen Hersteller aber einen Verlust bedeuten."
+        },
+        {
+          "question": "Können Sie ein gesperrtes Merchant Center-Konto reparieren?",
+          "answer": "Ja. Wir helfen Unternehmen häufig dabei, komplexe Richtlinienverstöße (z. B. 'Falsche Darstellung') zu beheben und ihre Konten wieder zu aktivieren."
+        },
+        {
+          "question": "Benötige ich GTINs (Barcodes), um Shopping-Anzeigen zu schalten?",
+          "answer": "Für die meisten hergestellten Produkte ja. Wenn Sie Sonderanfertigungen ohne GTINs verkaufen, konfigurieren wir spezifische Feed-Regeln (identifier_exists=no)."
+        },
+        {
+          "question": "Wie gehen Sie mit nicht vorrätigen Produkten um?",
+          "answer": "Wir richten eine Echtzeit-Synchronisierung zwischen Ihrem Inventar und dem Merchant Center ein. Ist ein Artikel ausverkauft, stoppt die Anzeige sofort."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "googleads",
+          "name": "Google Merchant Center"
+        },
+        {
+          "icon": "googleads",
+          "name": "Google Ads (Shopping & PMax)"
+        },
+        {
+          "icon": "shopify",
+          "name": "Shopify / WooCommerce"
+        },
+        {
+          "icon": "feed",
+          "name": "Feedonomics / Channable"
+        },
+        {
+          "icon": "analytics",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Tag Manager"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "گوگل شاپنگ (Google Shopping)",
+    "shortDescription": "اپنی مصنوعات ان خریداروں کے سامنے رکھیں جو خریدنے کا پختہ ارادہ رکھتے ہیں۔ ہم آپ کے ای کامرس کی آمدنی بڑھانے کے لیے آپ کے پروڈکٹ فیڈز کو بہتر بناتے ہیں۔",
+    "fullDescription": "ای کامرس کاروبار کے لیے، گوگل شاپنگ فروخت کا سب سے طاقتور چینل ہے۔ معیاری ٹیکسٹ اشتہارات کے برعکس، شاپنگ اشتہارات آپ کی مصنوعات کی تصویر، قیمت اور آپ کے اسٹور کا نام براہ راست تلاش کے نتائج کے اوپری حصے میں دکھاتے ہیں، جس سے ان صارفین کی توجہ حاصل ہوتی ہے جو فعال طور پر خریدنا چاہتے ہیں۔ تاہم، گوگل شاپنگ میں کامیابی صرف بولی لگانے کے بارے میں نہیں ہے۔ یہ فیڈ (Feed) کی اصلاح کے بارے میں ہے۔ اگر آپ کا پروڈکٹ فیڈ غیر منظم ہے یا اس میں اہم ڈیٹا کی کمی ہے، تو گوگل آپ کی مصنوعات نہیں دکھائے گا۔ ہماری گوگل شاپنگ سروسز تکنیکی فیڈ آپٹیمائزیشن کو جارحانہ مہم کے انتظام کے ساتھ یکجا کرتی ہیں۔ ہم آپ کے گوگل مرچنٹ سینٹر فیڈ کو باریک بینی سے ترتیب دیتے ہیں—مصنوعات کے عنوانات، تفصیلات اور زمروں کو بہتر بناتے ہیں۔ اس کے بعد ہم ROAS (اشتہاری اخراجات پر منافع) کو زیادہ سے زیادہ کرنے کے لیے اسمارٹ بڈنگ کا استعمال کرتے ہیں۔",
+    "features": [
+      "پروڈکٹ فیڈ کی جامع آپٹیمائزیشن",
+      "گوگل مرچنٹ سینٹر سیٹ اپ اور ٹربل شوٹنگ",
+      "پرفارمنس میکس (PMax) مہم کا انضمام",
+      "معیاری شاپنگ مہم کا انتظام",
+      "پروڈکٹ کے عنوانات اور تفصیلات کی SEO",
+      "حسب ضرورت لیبلز اور فیڈ رولز کی ترتیب",
+      "بولی لگانے کی حکمت عملی اور ROAS آپٹیمائزیشن",
+      "حریفوں کی قیمتوں کی نگرانی اور ایڈجسٹمنٹ"
+    ],
+    "benefits": [
+      "گوگل سرچ کے نتائج کے اوپری حصے میں بصری طور پر اپنی مصنوعات کی نمائش کریں",
+      "فوری خریداری کے ارادے کے ساتھ انتہائی اہل ٹریفک کو راغب کریں",
+      "فیڈ آپٹیمائزیشن کے ذریعے اپنی حصولی لاگت (CPA) کو کم کریں",
+      "بہتر ROAS بولیوں کے ساتھ ای کامرس آمدنی میں متوقع اضافہ کریں",
+      "فعال ایرر مینجمنٹ کے ذریعے مرچنٹ سینٹر کی معطلی (Suspension) سے بچیں",
+      "گہری بصیرت حاصل کریں کہ کون سی مخصوص مصنوعات سب سے زیادہ منافع دیتی ہیں"
+    ],
+    "metaTitle": "گوگل شاپنگ ایجنسی | فیڈ آپٹیمائزیشن | PakSoft",
+    "metaDescription": "ماہرانہ انتظام والی گوگل شاپنگ مہمات کے ساتھ اپنی ای کامرس سیلز میں اضافہ کریں۔ ہم آپ کے مرچنٹ سینٹر فیڈ کو بہتر بناتے ہیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "مرچنٹ سینٹر آڈٹ اور سیٹ اپ",
+          "description": "ہم آپ کے موجودہ گوگل مرچنٹ سینٹر کا آڈٹ کرتے ہیں، خامیوں کو دور کرتے ہیں، اور آپ کے ای کامرس پلیٹ فارم (جیسے Shopify) اور گوگل کے درمیان ہموار کنکشن کو یقینی بناتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "تکنیکی فیڈ کی اصلاح",
+          "description": "یہ سب سے اہم مرحلہ ہے۔ ہم مصنوعات کے عنوانات کو اعلیٰ حجم والے کلیدی الفاظ شامل کرنے کے لیے دوبارہ لکھتے ہیں، اور یقینی بناتے ہیں کہ تمام GTINs اور زمرے درست ہوں۔"
+        },
+        {
+          "step": 3,
+          "title": "مہم کی ساخت",
+          "description": "ہم تمام مصنوعات کو ایک مہم میں نہیں ڈالتے۔ ہم بولیوں کو درست طریقے سے کنٹرول کرنے کے لیے منافع، موسم، یا 'بہترین فروخت' کی بنیاد پر اپنی مرضی کے لیبلز کا استعمال کرتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "بولی لگانے کی حکمت عملی کی ترتیب",
+          "description": "آپ کے ڈیٹا کے حجم پر منحصر ہے، ہم منافع کو زیادہ سے زیادہ کرنے کے لیے یا تو دستی CPC یا گوگل کے اسمارٹ بڈنگ (Target ROAS) الگورتھم کو لاگو کرتے ہیں۔"
+        },
+        {
+          "step": 5,
+          "title": "پرفارمنس میکس (PMax) انضمام",
+          "description": "ہم آپ کے آپٹیمائزڈ فیڈ کو پرفارمنس میکس مہمات میں ضم کرتے ہیں، جس سے آپ کی مصنوعات خود بخود پورے گوگل نیٹ ورک (YouTube, Display, Maps) پر نظر آتی ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "مسلسل فیڈ اور بولی کا انتظام",
+          "description": "ہم مسلسل سرچ ٹرم رپورٹس کی نگرانی کرتے ہیں، بولیاں ایڈجسٹ کرتے ہیں، اور انوینٹری میں تبدیلیوں کے مطابق فیڈ کے قواعد کو اپ ڈیٹ کرتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "میری مصنوعات گوگل شاپنگ میں کیوں نہیں آ رہی ہیں؟",
+          "answer": "یہ عام طور پر مرچنٹ سینٹر میں فیڈ کی غلطیوں (جیسے کہ غائب GTINs) یا خراب عنوانات کی وجہ سے ہوتا ہے جو صارفین کی تلاش سے مماثل نہیں ہوتے۔"
+        },
+        {
+          "question": "معیاری شاپنگ اور پرفارمنس میکس (PMax) میں کیا فرق ہے؟",
+          "answer": "معیاری شاپنگ آپ کو بولیوں پر دستی کنٹرول دیتی ہے۔ PMax مکمل طور پر خودکار ہے اور صرف تلاش کے نتائج کے بجائے تمام گوگل نیٹ ورکس پر اشتہارات دکھاتا ہے۔"
+        },
+        {
+          "question": "کیا آپ کو میری ویب سائٹ کے بیک اینڈ تک رسائی کی ضرورت ہے؟",
+          "answer": "ہاں، ہمیں عام طور پر گوگل تک پہنچنے سے پہلے پروڈکٹ کے ڈیٹا کو بہتر بنانے کے لیے آپ کے ای کامرس بیک اینڈ (جیسے Shopify) تک رسائی کی ضرورت ہوتی ہے۔"
+        },
+        {
+          "question": "گوگل شاپنگ میں پروڈکٹ کے عنوانات کتنے اہم ہیں؟",
+          "answer": "یہ سب کچھ ہیں۔ چونکہ آپ شاپنگ اشتہارات میں کلیدی الفاظ کا انتخاب نہیں کر سکتے، اس لیے گوگل آپ کے اشتہار کو دکھانے کے لیے آپ کے پروڈکٹ کے عنوانات اور تفصیل کا استعمال کرتا ہے۔"
+        },
+        {
+          "question": "گوگل شاپنگ کے لیے ایک اچھا ROAS کیا ہے؟",
+          "answer": "ایک 'اچھا' ROAS آپ کے منافع کے مارجن پر منحصر ہے۔ ہم آپ کے مخصوص مارجن کی بنیاد پر آپٹیمائز کرتے ہیں۔"
+        },
+        {
+          "question": "کیا آپ معطل شدہ گوگل مرچنٹ سینٹر اکاؤنٹ کو ٹھیک کر سکتے ہیں؟",
+          "answer": "ہاں۔ ہم اکثر پالیسی کی خلاف ورزیوں کو حل کرنے اور مرچنٹ سینٹر اکاؤنٹس کو بحال کر کے دوبارہ فعال کرنے میں مدد کرتے ہیں۔"
+        },
+        {
+          "question": "کیا مجھے شاپنگ اشتہارات چلانے کے لیے GTINs (بارکوڈز) کی ضرورت ہے؟",
+          "answer": "زیادہ تر تیار کردہ مصنوعات کے لیے، ہاں۔ اگر آپ کسٹم آئٹمز بیچتے ہیں، تو ہم مخصوص فیڈ کے قواعد (identifier_exists=no) تشکیل دیتے ہیں تاکہ وہ منظور ہو سکیں۔"
+        },
+        {
+          "question": "آپ آؤٹ آف اسٹاک مصنوعات کو کیسے سنبھالتے ہیں؟",
+          "answer": "ہم آپ کی انوینٹری اور مرچنٹ سینٹر کے درمیان ریئل ٹائم مطابقت پذیری قائم کرتے ہیں۔ اگر کوئی چیز ختم ہو جاتی ہے، تو اشتہار فوری طور پر رک جاتا ہے۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "googleads",
+          "name": "Google Merchant Center"
+        },
+        {
+          "icon": "googleads",
+          "name": "Google Ads (Shopping & PMax)"
+        },
+        {
+          "icon": "shopify",
+          "name": "Shopify / WooCommerce"
+        },
+        {
+          "icon": "feed",
+          "name": "Feedonomics / Channable"
+        },
+        {
+          "icon": "analytics",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Tag Manager"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "إعلانات تسوق جوجل (Google Shopping)",
+    "shortDescription": "ضع منتجاتك أمام مشترين ذوي نوايا عالية. نقوم بتحسين خلاصات (Feeds) منتجاتك وإدارة حملات جوجل للتسوق عالية الربحية لتوسيع إيرادات التجارة الإلكترونية.",
+    "fullDescription": "بالنسبة لشركات التجارة الإلكترونية، يعد Google Shopping أقوى قناة مبيعات متاحة. على عكس الإعلانات النصية القياسية، تعرض إعلانات التسوق صورة المنتج والسعر واسم المتجر أعلى نتائج البحث مباشرة، مما يجذب انتباه المستخدمين الذين يبحثون بنشاط عن الشراء. ومع ذلك، فإن النجاح في Google Shopping لا يقتصر على عروض الأسعار فحسب؛ بل يتعلق بتحسين خلاصة المنتجات (Feed Optimization). إذا كانت خلاصتك غير منظمة أو تفتقر إلى بيانات مهمة، فلن تعرض جوجل منتجاتك. تجمع خدمات Google Shopping الخاصة بنا بين التحسين الفني العميق للخلاصة وإدارة الحملات القوية. نقوم بهيكلة وإثراء خلاصة Google Merchant Center بدقة - مع تحسين عناوين المنتجات وأوصافها وفئاتها لتتناسب مع استعلامات البحث ذات الحجم الكبير. ثم نقوم بهيكلة حملاتك باستخدام التجزئة المتقدمة (حسب الربحية، أو المنتجات الأكثر مبيعاً) والاستفادة من عروض الأسعار الذكية لزيادة العائد على الإنفاق الإعلاني (ROAS).",
+    "features": [
+      "تحسين شامل لخلاصة المنتجات (Product Feed)",
+      "إعداد Google Merchant Center واستكشاف الأخطاء وإصلاحها",
+      "دمج حملات الأداء الأفضل (Performance Max)",
+      "إدارة حملات التسوق القياسية",
+      "تحسين عناوين المنتجات والأوصاف (SEO للمنتجات)",
+      "تكوين الملصقات المخصصة (Custom Labels) وقواعد الخلاصة",
+      "استراتيجية عروض الأسعار وتحسين العائد الإعلاني (ROAS)",
+      "مراقبة أسعار المنافسين والتعديل"
+    ],
+    "benefits": [
+      "عرض منتجاتك بصرياً في الجزء العلوي من نتائج بحث جوجل",
+      "جذب حركة مرور مؤهلة تأهيلاً عالياً بنية شراء فورية",
+      "خفض تكلفة الاكتساب (CPA) من خلال التحسين المتقدم للخلاصة",
+      "توسيع إيرادات التجارة الإلكترونية بثقة من خلال عروض الأسعار المحسنة",
+      "تجنب تعليق حساب Merchant Center من خلال الإدارة الاستباقية للأخطاء",
+      "اكتساب رؤى عميقة حول المنتجات المحددة التي تحقق أكبر قدر من الأرباح"
+    ],
+    "metaTitle": "وكالة إعلانات تسوق جوجل | تحسين الخلاصة | PakSoft",
+    "metaDescription": "قم بتوسيع مبيعات التجارة الإلكترونية الخاصة بك مع حملات تسوق جوجل. نحن نحسن خلاصة Merchant Center ونزيد العائد على الإنفاق الإعلاني إلى أقصى حد.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تدقيق وإعداد Merchant Center",
+          "description": "نقوم بتدقيق حساب Google Merchant Center الحالي، وإصلاح أخطاء الرفض، وضمان اتصال سلس بين منصة التجارة الإلكترونية الخاصة بك (مثل Shopify) وجوجل."
+        },
+        {
+          "step": 2,
+          "title": "التحسين الفني للخلاصة (Feed)",
+          "description": "هذه هي الخطوة الأكثر أهمية. نعيد كتابة عناوين المنتجات لتشمل كلمات رئيسية عالية الحجم، ونضمن دقة جميع أرقام GTIN و MPN وفئات منتجات جوجل."
+        },
+        {
+          "step": 3,
+          "title": "هيكلة الحملة",
+          "description": "نحن لا نضع جميع المنتجات في حملة واحدة. نقوم بتقسيم المنتجات باستخدام الملصقات المخصصة بناءً على الهوامش أو الموسمية للتحكم في عروض الأسعار بدقة."
+        },
+        {
+          "step": 4,
+          "title": "تكوين استراتيجية عروض الأسعار",
+          "description": "بناءً على حجم بياناتك، ننفذ إما تكلفة النقرة اليدوية أو خوارزميات عروض الأسعار الذكية من جوجل (العائد المستهدف) لزيادة الربحية."
+        },
+        {
+          "step": 5,
+          "title": "تكامل حملات الأداء الأفضل (PMax)",
+          "description": "ندمج خلاصتك المحسنة في حملات Performance Max، مما يسمح لمنتجاتك بالظهور عبر شبكة جوجل بأكملها (YouTube، العرض، Gmail، الخرائط) تلقائياً."
+        },
+        {
+          "step": 6,
+          "title": "الإدارة المستمرة للخلاصة وعروض الأسعار",
+          "description": "نراقب تقارير مصطلحات البحث باستمرار، ونضبط عروض الأسعار، ونحدث قواعد الخلاصة للتكيف مع تغييرات المخزون وأسعار المنافسين."
+        }
+      ],
+      "faq": [
+        {
+          "question": "لماذا لا تظهر منتجاتي في Google Shopping؟",
+          "answer": "يرجع ذلك عادةً إلى أخطاء في الخلاصة (مثل فقدان رموز GTIN، أو انتهاكات السياسة) أو عناوين منتجات ضعيفة التحسين لا تتطابق مع استعلامات المستخدم."
+        },
+        {
+          "question": "ما الفرق بين التسوق القياسي و Performance Max؟",
+          "answer": "يمنحك التسوق القياسي تحكماً يدوياً في الكلمات السلبية وعروض الأسعار. في حين أن PMax مؤتمت بالكامل ويعرض الإعلانات عبر جميع شبكات جوجل."
+        },
+        {
+          "question": "هل تحتاج إلى الوصول إلى الواجهة الخلفية (Backend) لموقعي؟",
+          "answer": "نعم، نحتاج عادةً إلى الوصول إلى منصة التجارة الإلكترونية (مثل Shopify) أو أداة إدارة الخلاصة لتحسين بيانات المنتج قبل وصولها إلى جوجل."
+        },
+        {
+          "question": "ما مدى أهمية عناوين المنتجات في Google Shopping؟",
+          "answer": "هي كل شيء. نظراً لأنه لا يمكنك تحديد الكلمات الرئيسية في إعلانات التسوق، تستخدم جوجل العناوين والأوصاف لتحديد متى تعرض إعلانك."
+        },
+        {
+          "question": "ما هو العائد (ROAS) الجيد لإعلانات التسوق؟",
+          "answer": "يعتمد العائد 'الجيد' كلياً على هوامش ربحك. نحن نقوم بالتحسين بناءً على الهوامش المحددة لضمان أقصى قدر من الربحية لنشاطك التجاري."
+        },
+        {
+          "question": "هل يمكنك إصلاح حساب Merchant Center معلق؟",
+          "answer": "نعم. كثيراً ما نساعد الأنشطة التجارية في حل انتهاكات السياسة المعقدة (مثل 'التحريف') واستعادة حساباتهم وجعلها نشطة مرة أخرى."
+        },
+        {
+          "question": "هل أحتاج إلى رموز باركود (GTINs) لتشغيل إعلانات التسوق؟",
+          "answer": "لأغلب المنتجات المصنعة، نعم. إذا كنت تبيع عناصر مخصصة بدون GTINs، نقوم بتهيئة قواعد خلاصة معينة لضمان الموافقة عليها."
+        },
+        {
+          "question": "كيف تتعاملون مع المنتجات غير المتوفرة في المخزون؟",
+          "answer": "نقوم بإعداد مزامنة آلية في الوقت الفعلي بين مخزونك و Merchant Center. إذا نفد المنتج، يتوقف عرض الإعلان فوراً لحماية ميزانيتك."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "googleads",
+          "name": "Google Merchant Center"
+        },
+        {
+          "icon": "googleads",
+          "name": "Google Ads (Shopping & PMax)"
+        },
+        {
+          "icon": "shopify",
+          "name": "Shopify / WooCommerce"
+        },
+        {
+          "icon": "feed",
+          "name": "Feedonomics / Channable"
+        },
+        {
+          "icon": "analytics",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Tag Manager"
+        }
+      ]
+    }
+  }
+}

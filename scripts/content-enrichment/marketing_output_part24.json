@@ -1,0 +1,2035 @@
+{
+  "google-shopping": {
+    "en": {
+      "name": "Google Shopping",
+      "shortDescription": "Put your products in front of high-intent buyers. We optimize your product feeds and manage highly profitable Google Shopping campaigns to scale your ecommerce revenue.",
+      "fullDescription": "For ecommerce businesses, Google Shopping is the most powerful sales channel available. Unlike standard text ads, Shopping ads display a product image, price, and your store name right at the top of the search results, capturing the attention of users who are actively looking to buy. However, success in Google Shopping isn't just about bidding; it's about feed optimization. If your product feed is disorganized or lacks crucial data, Google won't show your products. Our Google Shopping services combine deep technical feed optimization with aggressive campaign management. We meticulously structure and enrich your Google Merchant Center feed—optimizing product titles, descriptions, and categories to match high-volume search queries. We then structure your campaigns using advanced segmentation (by profitability, top sellers, or product categories) and leverage Smart Bidding to maximize your Return on Ad Spend (ROAS).",
+      "features": [
+        "Comprehensive Product Feed Optimization",
+        "Google Merchant Center Setup & Troubleshooting",
+        "Performance Max (PMax) Campaign Integration",
+        "Standard Shopping Campaign Management",
+        "Product Title & Description SEO",
+        "Custom Labels & Feed Rules Configuration",
+        "Bidding Strategy & ROAS Optimization",
+        "Competitor Price Monitoring & Adjustment"
+      ],
+      "benefits": [
+        "Showcase your products visually at the top of Google search results",
+        "Attract highly qualified traffic with immediate purchase intent",
+        "Lower your Cost Per Acquisition (CPA) through feed optimization",
+        "Scale ecommerce revenue predictably with optimized ROAS bidding",
+        "Avoid Merchant Center suspensions with proactive error management",
+        "Gain deep insights into which specific products drive the most profit"
+      ],
+      "metaTitle": "Google Shopping Agency | Feed Optimization | PakSoft",
+      "metaDescription": "Scale your ecommerce sales with expertly managed Google Shopping campaigns. We optimize your Merchant Center feed and maximize your ROAS.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Merchant Center Audit & Setup",
+            "description": "We audit your existing Google Merchant Center, fix any disapproval errors, and ensure a seamless connection between your ecommerce platform (e.g., Shopify, WooCommerce) and Google."
+          },
+          {
+            "step": 2,
+            "title": "Technical Feed Optimization",
+            "description": "This is the most critical step. We rewrite product titles to include high-volume keywords, optimize descriptions, and ensure all GTINs, MPNs, and Google Product Categories are accurate."
+          },
+          {
+            "step": 3,
+            "title": "Campaign Structuring",
+            "description": "We don't just dump all products into one campaign. We segment products using Custom Labels based on margins, seasonality, or 'bestseller' status to control bids precisely."
+          },
+          {
+            "step": 4,
+            "title": "Bidding Strategy Configuration",
+            "description": "Depending on your data volume, we implement either manual CPC with enhanced bidding or Google's Smart Bidding algorithms (Target ROAS) to maximize profitability."
+          },
+          {
+            "step": 5,
+            "title": "Performance Max (PMax) Integration",
+            "description": "We integrate your optimized feed into Performance Max campaigns, allowing your products to appear across the entire Google network (YouTube, Display, Gmail, Maps) automatically."
+          },
+          {
+            "step": 6,
+            "title": "Continuous Feed & Bid Management",
+            "description": "We continuously monitor search term reports, adjust bids, add negative keywords (for Standard Shopping), and update feed rules to adapt to inventory changes and competitor pricing."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Why are my products not showing up in Google Shopping?",
+            "answer": "This is usually due to feed errors in the Google Merchant Center (e.g., missing GTINs, policy violations) or poorly optimized product titles that don't match user search queries."
+          },
+          {
+            "question": "What is the difference between Standard Shopping and Performance Max?",
+            "answer": "Standard Shopping gives you manual control over negative keywords and bids. Performance Max is fully automated and shows ads across all Google networks, not just the search results."
+          },
+          {
+            "question": "Do you need access to my website backend?",
+            "answer": "Yes, we typically need access to your ecommerce backend (like Shopify) or your feed management tool (like Feedonomics) to optimize the product data before it reaches Google."
+          },
+          {
+            "question": "How important are product titles in Google Shopping?",
+            "answer": "They are everything. Because you cannot select keywords in Shopping ads, Google uses your product titles and descriptions to decide when to show your ad. We optimize titles heavily."
+          },
+          {
+            "question": "What is a good ROAS for Google Shopping?",
+            "answer": "A 'good' ROAS depends entirely on your profit margins. A 300% ROAS might be highly profitable for a dropshipper but cause a loss for a manufacturer. We optimize based on your specific margins."
+          },
+          {
+            "question": "Can you fix a suspended Google Merchant Center account?",
+            "answer": "Yes. We frequently help businesses resolve complex policy violations (like 'Misrepresentation') and get their Merchant Center accounts unsuspended and active again."
+          },
+          {
+            "question": "Do I need GTINs (barcodes) to run Shopping ads?",
+            "answer": "For most manufactured products, yes. If you sell custom or vintage items without GTINs, we configure specific feed rules (identifier_exists=no) to ensure they are still approved."
+          },
+          {
+            "question": "How do you handle out-of-stock products?",
+            "answer": "We set up automated, real-time syncs between your inventory and the Merchant Center. If a product goes out of stock on your site, the ad stops showing immediately, saving your budget."
+          }
+        ],
+        "technologies": [
+          { "icon": "googleads", "name": "Google Merchant Center" },
+          { "icon": "googleads", "name": "Google Ads (Shopping & PMax)" },
+          { "icon": "shopify", "name": "Shopify / WooCommerce" },
+          { "icon": "feed", "name": "Feedonomics / Channable" },
+          { "icon": "analytics", "name": "Google Analytics 4" },
+          { "icon": "googlecloud", "name": "Google Tag Manager" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Google Alışveriş (Shopping) Reklamları",
+      "shortDescription": "Ürünlerinizi satın alma niyeti yüksek alıcıların önüne çıkarın. E-ticaret gelirinizi ölçeklendirmek için ürün beslemelerinizi (feed) optimize ediyor ve yüksek karlı Google Alışveriş kampanyaları yönetiyoruz.",
+      "fullDescription": "E-ticaret işletmeleri için Google Alışveriş mevcut en güçlü satış kanalıdır. Standart metin reklamlarının aksine, Alışveriş reklamları arama sonuçlarının en üstünde bir ürün görseli, fiyat ve mağaza adınızı görüntüleyerek aktif olarak satın almak isteyen kullanıcıların dikkatini çeker. Ancak, Google Alışveriş'te başarı sadece teklif vermekle ilgili değildir; ürün beslemesi (feed) optimizasyonuyla ilgilidir. Ürün beslemeniz düzensizse veya kritik verilerden yoksunsa, Google ürünlerinizi göstermez. Google Alışveriş hizmetlerimiz, derin teknik besleme optimizasyonunu agresif kampanya yönetimiyle birleştirir. Yüksek hacimli arama sorgularıyla eşleşmesi için ürün başlıklarını, açıklamalarını ve kategorilerini optimize ederek Google Merchant Center beslemenizi titizlikle yapılandırıyor ve zenginleştiriyoruz. Daha sonra kampanyalarınızı gelişmiş segmentasyon (karlılık, en çok satanlar veya ürün kategorilerine göre) kullanarak yapılandırıyor ve Reklam Harcamalarından Elde Edilen Getiriyi (ROAS) en üst düzeye çıkarmak için Akıllı Teklif (Smart Bidding) özelliğinden yararlanıyoruz.",
+      "features": [
+        "Kapsamlı Ürün Beslemesi (Feed) Optimizasyonu",
+        "Google Merchant Center Kurulumu ve Sorun Giderme",
+        "Maksimum Performans (PMax) Kampanya Entegrasyonu",
+        "Standart Alışveriş Kampanyası Yönetimi",
+        "Ürün Başlığı ve Açıklaması SEO'su",
+        "Özel Etiketler ve Besleme Kuralları Yapılandırması",
+        "Teklif Stratejisi ve ROAS Optimizasyonu",
+        "Rakip Fiyat İzleme ve Ayarlama"
+      ],
+      "benefits": [
+        "Ürünlerinizi Google arama sonuçlarının en üstünde görsel olarak sergileyin",
+        "Anında satın alma niyeti olan son derece nitelikli trafiği çekin",
+        "Besleme (feed) optimizasyonu sayesinde Edinme Başına Maliyetinizi (CPA) düşürün",
+        "Optimize edilmiş ROAS teklifleriyle e-ticaret gelirinizi öngörülebilir şekilde ölçeklendirin",
+        "Proaktif hata yönetimiyle Merchant Center askıya almalarından (suspension) kaçının",
+        "Hangi spesifik ürünlerin en çok karı sağladığına dair derin içgörüler edinin"
+      ],
+      "metaTitle": "Google Alışveriş Reklam Ajansı | Feed Optimizasyonu | PakSoft",
+      "metaDescription": "Uzmanlıkla yönetilen Google Alışveriş kampanyalarıyla e-ticaret satışlarınızı ölçeklendirin. Merchant Center feed'inizi optimize ediyor ve ROAS'ınızı artırıyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Merchant Center Denetimi ve Kurulumu",
+            "description": "Mevcut Google Merchant Center hesabınızı denetliyor, onaylanmama hatalarını gideriyor ve e-ticaret platformunuz (ör. Shopify, WooCommerce) ile Google arasında sorunsuz bir bağlantı sağlıyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Teknik Besleme (Feed) Optimizasyonu",
+            "description": "Bu en kritik adımdır. Yüksek hacimli anahtar kelimeleri içerecek şekilde ürün başlıklarını yeniden yazıyor, açıklamaları optimize ediyor ve tüm GTIN, MPN ve Google Ürün Kategorilerinin doğru olduğundan emin oluyoruz."
+          },
+          {
+            "step": 3,
+            "title": "Kampanya Yapılandırması",
+            "description": "Tüm ürünleri tek bir kampanyaya yığmıyoruz. Teklifleri hassas bir şekilde kontrol etmek için kar marjlarına, mevsimselliğe veya 'en çok satan' durumuna göre Özel Etiketler kullanarak ürünleri bölümlere ayırıyoruz."
+          },
+          {
+            "step": 4,
+            "title": "Teklif Stratejisi Yapılandırması",
+            "description": "Veri hacminize bağlı olarak, karlılığı en üst düzeye çıkarmak için geliştirilmiş teklifli manuel TBM veya Google'ın Akıllı Teklif (Hedef ROAS) algoritmalarını uyguluyoruz."
+          },
+          {
+            "step": 5,
+            "title": "Maksimum Performans (PMax) Entegrasyonu",
+            "description": "Ürünlerinizin tüm Google ağında (YouTube, Görüntülü Reklam Ağı, Gmail, Haritalar) otomatik olarak görünmesini sağlamak için optimize edilmiş feed'inizi Maksimum Performans kampanyalarına entegre ediyoruz."
+          },
+          {
+            "step": 6,
+            "title": "Sürekli Feed ve Teklif Yönetimi",
+            "description": "Arama terimleri raporlarını sürekli izliyor, teklifleri ayarlıyor, negatif anahtar kelimeler ekliyor (Standart Alışveriş için) ve envanter değişikliklerine ve rakip fiyatlarına uyum sağlamak için feed kurallarını güncelliyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Ürünlerim neden Google Alışveriş'te görünmüyor?",
+            "answer": "Bunun nedeni genellikle Google Merchant Center'daki feed hatalarıdır (ör. eksik GTIN'ler, politika ihlalleri) veya kullanıcı arama sorgularıyla eşleşmeyen, yetersiz optimize edilmiş ürün başlıklarıdır."
+          },
+          {
+            "question": "Standart Alışveriş ile Maksimum Performans (PMax) arasındaki fark nedir?",
+            "answer": "Standart Alışveriş size negatif anahtar kelimeler ve teklifler üzerinde manuel kontrol sağlar. Maksimum Performans tamamen otomatiktir ve reklamları yalnızca arama sonuçlarında değil, tüm Google ağlarında gösterir."
+          },
+          {
+            "question": "Web sitemin arka ucuna (backend) erişmeniz gerekiyor mu?",
+            "answer": "Evet, ürün verilerini Google'a ulaşmadan önce optimize etmek için genellikle e-ticaret arka ucunuza (Shopify gibi) veya feed yönetim aracınıza (Feedonomics gibi) erişmemiz gerekir."
+          },
+          {
+            "question": "Google Alışveriş'te ürün başlıkları ne kadar önemlidir?",
+            "answer": "Her şeydir. Alışveriş reklamlarında anahtar kelime seçemediğiniz için Google, reklamınızı ne zaman göstereceğine karar vermek için ürün başlıklarınızı ve açıklamalarınızı kullanır. Başlıkları yoğun bir şekilde optimize ediyoruz."
+          },
+          {
+            "question": "Google Alışveriş için iyi bir ROAS nedir?",
+            "answer": "'İyi' bir ROAS tamamen kar marjlarınıza bağlıdır. %300'lük bir ROAS, bir dropshipper için oldukça karlı olabilirken, bir üretici için zarara neden olabilir. Belirli marjlarınıza göre optimize ediyoruz."
+          },
+          {
+            "question": "Askıya alınmış bir Google Merchant Center hesabını düzeltebilir misiniz?",
+            "answer": "Evet. İşletmelerin karmaşık politika ihlallerini (örneğin 'Yanlış Beyan') çözmelerine ve Merchant Center hesaplarının askıya alınmasını kaldırıp yeniden aktif hale getirmelerine sıklıkla yardımcı oluyoruz."
+          },
+          {
+            "question": "Alışveriş reklamları yayınlamak için GTIN'lere (barkodlara) ihtiyacım var mı?",
+            "answer": "Üretilmiş çoğu ürün için evet. GTIN'i olmayan özel veya vintage ürünler satıyorsanız, yine de onaylanmalarını sağlamak için belirli besleme kuralları (identifier_exists=no) yapılandırıyoruz."
+          },
+          {
+            "question": "Stokta olmayan (out-of-stock) ürünleri nasıl yönetiyorsunuz?",
+            "answer": "Envanteriniz ile Merchant Center arasında otomatik, gerçek zamanlı senkronizasyonlar kuruyoruz. Bir ürün sitenizde tükenirse reklamın gösterimi hemen durdurulur ve bütçenizden tasarruf edilir."
+          }
+        ],
+        "technologies": [
+          { "icon": "googleads", "name": "Google Merchant Center" },
+          { "icon": "googleads", "name": "Google Ads (Shopping & PMax)" },
+          { "icon": "shopify", "name": "Shopify / WooCommerce" },
+          { "icon": "feed", "name": "Feedonomics / Channable" },
+          { "icon": "analytics", "name": "Google Analytics 4" },
+          { "icon": "googlecloud", "name": "Google Tag Manager" }
+        ]
+      }
+    },
+    "de": {
+      "name": "Google Shopping",
+      "shortDescription": "Präsentieren Sie Ihre Produkte Käufern mit hoher Kaufabsicht. Wir optimieren Ihre Produktdatenfeeds und verwalten hochprofitable Google Shopping-Kampagnen.",
+      "fullDescription": "Für E-Commerce-Unternehmen ist Google Shopping der stärkste verfügbare Vertriebskanal. Im Gegensatz zu Standard-Textanzeigen zeigen Shopping-Anzeigen ein Produktbild, den Preis und Ihren Geschäftsnamen direkt oben in den Suchergebnissen an und fangen so die Aufmerksamkeit von Nutzern ein, die aktiv kaufen möchten. Der Erfolg bei Google Shopping hängt jedoch nicht nur von den Geboten ab, sondern vor allem von der Feed-Optimierung. Wenn Ihr Produktdatenfeed unorganisiert ist oder wichtige Daten fehlen, zeigt Google Ihre Produkte nicht an. Unsere Dienstleistungen kombinieren tiefgehende technische Feed-Optimierung mit aggressivem Kampagnenmanagement. Wir strukturieren und bereichern Ihren Google Merchant Center-Feed akribisch – wir optimieren Produkttitel, Beschreibungen und Kategorien, damit sie mit Suchanfragen übereinstimmen. Anschließend strukturieren wir Kampagnen nach Margen oder Bestsellern und nutzen Smart Bidding für maximalen ROAS.",
+      "features": [
+        "Umfassende Produktdatenfeed-Optimierung",
+        "Google Merchant Center Setup & Fehlerbehebung",
+        "Integration von Performance Max (PMax) Kampagnen",
+        "Management von Standard-Shopping-Kampagnen",
+        "SEO für Produkttitel & -beschreibungen",
+        "Konfiguration von Custom Labels & Feed-Regeln",
+        "Gebotsstrategie & ROAS-Optimierung",
+        "Überwachung & Anpassung an Konkurrenzpreise"
+      ],
+      "benefits": [
+        "Präsentieren Sie Ihre Produkte visuell ganz oben in den Google-Suchergebnissen",
+        "Ziehen Sie hochqualifizierten Traffic mit sofortiger Kaufabsicht an",
+        "Senken Sie Ihre Cost Per Acquisition (CPA) durch Feed-Optimierung",
+        "Skalieren Sie E-Commerce-Umsätze mit optimierten ROAS-Geboten",
+        "Vermeiden Sie Kontosperrungen im Merchant Center durch proaktives Fehlermanagement",
+        "Gewinnen Sie tiefe Einblicke, welche spezifischen Produkte den meisten Gewinn erzielen"
+      ],
+      "metaTitle": "Google Shopping Agentur | Feed-Optimierung | PakSoft",
+      "metaDescription": "Skalieren Sie Ihre E-Commerce-Verkäufe mit kompetent verwalteten Google Shopping-Kampagnen. Wir optimieren Ihren Merchant Center-Feed und maximieren den ROAS.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Merchant Center Audit & Setup",
+            "description": "Wir prüfen Ihr Merchant Center, beheben Ablehnungsfehler und stellen eine nahtlose Verbindung zu Ihrer E-Commerce-Plattform (z. B. Shopify) her."
+          },
+          {
+            "step": 2,
+            "title": "Technische Feed-Optimierung",
+            "description": "Der wichtigste Schritt. Wir schreiben Produkttitel mit suchstarken Keywords neu und stellen sicher, dass GTINs und Produktkategorien korrekt sind."
+          },
+          {
+            "step": 3,
+            "title": "Kampagnenstrukturierung",
+            "description": "Wir werfen nicht alle Produkte in eine Kampagne. Wir segmentieren sie mithilfe von benutzerdefinierten Labels (Custom Labels) nach Margen oder Saisonabhängigkeit."
+          },
+          {
+            "step": 4,
+            "title": "Konfiguration der Gebotsstrategie",
+            "description": "Je nach Datenvolumen implementieren wir manuelle CPCs oder die Smart-Bidding-Algorithmen von Google (Ziel-ROAS), um die Profitabilität zu maximieren."
+          },
+          {
+            "step": 5,
+            "title": "Performance Max (PMax) Integration",
+            "description": "Wir integrieren Ihren optimierten Feed in PMax-Kampagnen, damit Ihre Produkte im gesamten Google-Netzwerk (YouTube, Display, Maps) erscheinen."
+          },
+          {
+            "step": 6,
+            "title": "Kontinuierliches Feed- & Gebotsmanagement",
+            "description": "Wir überwachen Suchbegriffe, passen Gebote an, pflegen negative Keywords und aktualisieren Feed-Regeln basierend auf Bestandsänderungen."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Warum werden meine Produkte nicht in Google Shopping angezeigt?",
+            "answer": "Dies liegt meist an Feed-Fehlern im Merchant Center (z. B. fehlende GTINs) oder an schlecht optimierten Titeln, die nicht zu den Suchanfragen der Nutzer passen."
+          },
+          {
+            "question": "Was ist der Unterschied zwischen Standard Shopping und Performance Max?",
+            "answer": "Bei Standard Shopping haben Sie manuelle Kontrolle über Gebote und negative Keywords. PMax ist vollautomatisiert und zeigt Anzeigen im gesamten Google-Netzwerk."
+          },
+          {
+            "question": "Benötigen Sie Zugriff auf das Backend meiner Website?",
+            "answer": "Ja, wir benötigen meist Zugriff auf Ihr Shop-System (wie Shopify) oder Ihr Feed-Management-Tool, um die Daten vor der Übermittlung an Google zu optimieren."
+          },
+          {
+            "question": "Wie wichtig sind Produkttitel bei Google Shopping?",
+            "answer": "Sie sind entscheidend. Da Sie keine Keywords auswählen können, entscheidet Google anhand Ihrer Titel und Beschreibungen, wann Ihre Anzeige geschaltet wird."
+          },
+          {
+            "question": "Was ist ein guter ROAS für Google Shopping?",
+            "answer": "Ein 'guter' ROAS hängt von Ihren Gewinnmargen ab. Ein ROAS von 300 % kann für einen Dropshipper profitabel sein, für einen Hersteller aber einen Verlust bedeuten."
+          },
+          {
+            "question": "Können Sie ein gesperrtes Merchant Center-Konto reparieren?",
+            "answer": "Ja. Wir helfen Unternehmen häufig dabei, komplexe Richtlinienverstöße (z. B. 'Falsche Darstellung') zu beheben und ihre Konten wieder zu aktivieren."
+          },
+          {
+            "question": "Benötige ich GTINs (Barcodes), um Shopping-Anzeigen zu schalten?",
+            "answer": "Für die meisten hergestellten Produkte ja. Wenn Sie Sonderanfertigungen ohne GTINs verkaufen, konfigurieren wir spezifische Feed-Regeln (identifier_exists=no)."
+          },
+          {
+            "question": "Wie gehen Sie mit nicht vorrätigen Produkten um?",
+            "answer": "Wir richten eine Echtzeit-Synchronisierung zwischen Ihrem Inventar und dem Merchant Center ein. Ist ein Artikel ausverkauft, stoppt die Anzeige sofort."
+          }
+        ],
+        "technologies": [
+          { "icon": "googleads", "name": "Google Merchant Center" },
+          { "icon": "googleads", "name": "Google Ads (Shopping & PMax)" },
+          { "icon": "shopify", "name": "Shopify / WooCommerce" },
+          { "icon": "feed", "name": "Feedonomics / Channable" },
+          { "icon": "analytics", "name": "Google Analytics 4" },
+          { "icon": "googlecloud", "name": "Google Tag Manager" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "گوگل شاپنگ (Google Shopping)",
+      "shortDescription": "اپنی مصنوعات ان خریداروں کے سامنے رکھیں جو خریدنے کا پختہ ارادہ رکھتے ہیں۔ ہم آپ کے ای کامرس کی آمدنی بڑھانے کے لیے آپ کے پروڈکٹ فیڈز کو بہتر بناتے ہیں۔",
+      "fullDescription": "ای کامرس کاروبار کے لیے، گوگل شاپنگ فروخت کا سب سے طاقتور چینل ہے۔ معیاری ٹیکسٹ اشتہارات کے برعکس، شاپنگ اشتہارات آپ کی مصنوعات کی تصویر، قیمت اور آپ کے اسٹور کا نام براہ راست تلاش کے نتائج کے اوپری حصے میں دکھاتے ہیں، جس سے ان صارفین کی توجہ حاصل ہوتی ہے جو فعال طور پر خریدنا چاہتے ہیں۔ تاہم، گوگل شاپنگ میں کامیابی صرف بولی لگانے کے بارے میں نہیں ہے۔ یہ فیڈ (Feed) کی اصلاح کے بارے میں ہے۔ اگر آپ کا پروڈکٹ فیڈ غیر منظم ہے یا اس میں اہم ڈیٹا کی کمی ہے، تو گوگل آپ کی مصنوعات نہیں دکھائے گا۔ ہماری گوگل شاپنگ سروسز تکنیکی فیڈ آپٹیمائزیشن کو جارحانہ مہم کے انتظام کے ساتھ یکجا کرتی ہیں۔ ہم آپ کے گوگل مرچنٹ سینٹر فیڈ کو باریک بینی سے ترتیب دیتے ہیں—مصنوعات کے عنوانات، تفصیلات اور زمروں کو بہتر بناتے ہیں۔ اس کے بعد ہم ROAS (اشتہاری اخراجات پر منافع) کو زیادہ سے زیادہ کرنے کے لیے اسمارٹ بڈنگ کا استعمال کرتے ہیں۔",
+      "features": [
+        "پروڈکٹ فیڈ کی جامع آپٹیمائزیشن",
+        "گوگل مرچنٹ سینٹر سیٹ اپ اور ٹربل شوٹنگ",
+        "پرفارمنس میکس (PMax) مہم کا انضمام",
+        "معیاری شاپنگ مہم کا انتظام",
+        "پروڈکٹ کے عنوانات اور تفصیلات کی SEO",
+        "حسب ضرورت لیبلز اور فیڈ رولز کی ترتیب",
+        "بولی لگانے کی حکمت عملی اور ROAS آپٹیمائزیشن",
+        "حریفوں کی قیمتوں کی نگرانی اور ایڈجسٹمنٹ"
+      ],
+      "benefits": [
+        "گوگل سرچ کے نتائج کے اوپری حصے میں بصری طور پر اپنی مصنوعات کی نمائش کریں",
+        "فوری خریداری کے ارادے کے ساتھ انتہائی اہل ٹریفک کو راغب کریں",
+        "فیڈ آپٹیمائزیشن کے ذریعے اپنی حصولی لاگت (CPA) کو کم کریں",
+        "بہتر ROAS بولیوں کے ساتھ ای کامرس آمدنی میں متوقع اضافہ کریں",
+        "فعال ایرر مینجمنٹ کے ذریعے مرچنٹ سینٹر کی معطلی (Suspension) سے بچیں",
+        "گہری بصیرت حاصل کریں کہ کون سی مخصوص مصنوعات سب سے زیادہ منافع دیتی ہیں"
+      ],
+      "metaTitle": "گوگل شاپنگ ایجنسی | فیڈ آپٹیمائزیشن | PakSoft",
+      "metaDescription": "ماہرانہ انتظام والی گوگل شاپنگ مہمات کے ساتھ اپنی ای کامرس سیلز میں اضافہ کریں۔ ہم آپ کے مرچنٹ سینٹر فیڈ کو بہتر بناتے ہیں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "مرچنٹ سینٹر آڈٹ اور سیٹ اپ",
+            "description": "ہم آپ کے موجودہ گوگل مرچنٹ سینٹر کا آڈٹ کرتے ہیں، خامیوں کو دور کرتے ہیں، اور آپ کے ای کامرس پلیٹ فارم (جیسے Shopify) اور گوگل کے درمیان ہموار کنکشن کو یقینی بناتے ہیں۔"
+          },
+          {
+            "step": 2,
+            "title": "تکنیکی فیڈ کی اصلاح",
+            "description": "یہ سب سے اہم مرحلہ ہے۔ ہم مصنوعات کے عنوانات کو اعلیٰ حجم والے کلیدی الفاظ شامل کرنے کے لیے دوبارہ لکھتے ہیں، اور یقینی بناتے ہیں کہ تمام GTINs اور زمرے درست ہوں۔"
+          },
+          {
+            "step": 3,
+            "title": "مہم کی ساخت",
+            "description": "ہم تمام مصنوعات کو ایک مہم میں نہیں ڈالتے۔ ہم بولیوں کو درست طریقے سے کنٹرول کرنے کے لیے منافع، موسم، یا 'بہترین فروخت' کی بنیاد پر اپنی مرضی کے لیبلز کا استعمال کرتے ہیں۔"
+          },
+          {
+            "step": 4,
+            "title": "بولی لگانے کی حکمت عملی کی ترتیب",
+            "description": "آپ کے ڈیٹا کے حجم پر منحصر ہے، ہم منافع کو زیادہ سے زیادہ کرنے کے لیے یا تو دستی CPC یا گوگل کے اسمارٹ بڈنگ (Target ROAS) الگورتھم کو لاگو کرتے ہیں۔"
+          },
+          {
+            "step": 5,
+            "title": "پرفارمنس میکس (PMax) انضمام",
+            "description": "ہم آپ کے آپٹیمائزڈ فیڈ کو پرفارمنس میکس مہمات میں ضم کرتے ہیں، جس سے آپ کی مصنوعات خود بخود پورے گوگل نیٹ ورک (YouTube, Display, Maps) پر نظر آتی ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "مسلسل فیڈ اور بولی کا انتظام",
+            "description": "ہم مسلسل سرچ ٹرم رپورٹس کی نگرانی کرتے ہیں، بولیاں ایڈجسٹ کرتے ہیں، اور انوینٹری میں تبدیلیوں کے مطابق فیڈ کے قواعد کو اپ ڈیٹ کرتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "میری مصنوعات گوگل شاپنگ میں کیوں نہیں آ رہی ہیں؟",
+            "answer": "یہ عام طور پر مرچنٹ سینٹر میں فیڈ کی غلطیوں (جیسے کہ غائب GTINs) یا خراب عنوانات کی وجہ سے ہوتا ہے جو صارفین کی تلاش سے مماثل نہیں ہوتے۔"
+          },
+          {
+            "question": "معیاری شاپنگ اور پرفارمنس میکس (PMax) میں کیا فرق ہے؟",
+            "answer": "معیاری شاپنگ آپ کو بولیوں پر دستی کنٹرول دیتی ہے۔ PMax مکمل طور پر خودکار ہے اور صرف تلاش کے نتائج کے بجائے تمام گوگل نیٹ ورکس پر اشتہارات دکھاتا ہے۔"
+          },
+          {
+            "question": "کیا آپ کو میری ویب سائٹ کے بیک اینڈ تک رسائی کی ضرورت ہے؟",
+            "answer": "ہاں، ہمیں عام طور پر گوگل تک پہنچنے سے پہلے پروڈکٹ کے ڈیٹا کو بہتر بنانے کے لیے آپ کے ای کامرس بیک اینڈ (جیسے Shopify) تک رسائی کی ضرورت ہوتی ہے۔"
+          },
+          {
+            "question": "گوگل شاپنگ میں پروڈکٹ کے عنوانات کتنے اہم ہیں؟",
+            "answer": "یہ سب کچھ ہیں۔ چونکہ آپ شاپنگ اشتہارات میں کلیدی الفاظ کا انتخاب نہیں کر سکتے، اس لیے گوگل آپ کے اشتہار کو دکھانے کے لیے آپ کے پروڈکٹ کے عنوانات اور تفصیل کا استعمال کرتا ہے۔"
+          },
+          {
+            "question": "گوگل شاپنگ کے لیے ایک اچھا ROAS کیا ہے؟",
+            "answer": "ایک 'اچھا' ROAS آپ کے منافع کے مارجن پر منحصر ہے۔ ہم آپ کے مخصوص مارجن کی بنیاد پر آپٹیمائز کرتے ہیں۔"
+          },
+          {
+            "question": "کیا آپ معطل شدہ گوگل مرچنٹ سینٹر اکاؤنٹ کو ٹھیک کر سکتے ہیں؟",
+            "answer": "ہاں۔ ہم اکثر پالیسی کی خلاف ورزیوں کو حل کرنے اور مرچنٹ سینٹر اکاؤنٹس کو بحال کر کے دوبارہ فعال کرنے میں مدد کرتے ہیں۔"
+          },
+          {
+            "question": "کیا مجھے شاپنگ اشتہارات چلانے کے لیے GTINs (بارکوڈز) کی ضرورت ہے؟",
+            "answer": "زیادہ تر تیار کردہ مصنوعات کے لیے، ہاں۔ اگر آپ کسٹم آئٹمز بیچتے ہیں، تو ہم مخصوص فیڈ کے قواعد (identifier_exists=no) تشکیل دیتے ہیں تاکہ وہ منظور ہو سکیں۔"
+          },
+          {
+            "question": "آپ آؤٹ آف اسٹاک مصنوعات کو کیسے سنبھالتے ہیں؟",
+            "answer": "ہم آپ کی انوینٹری اور مرچنٹ سینٹر کے درمیان ریئل ٹائم مطابقت پذیری قائم کرتے ہیں۔ اگر کوئی چیز ختم ہو جاتی ہے، تو اشتہار فوری طور پر رک جاتا ہے۔"
+          }
+        ],
+        "technologies": [
+          { "icon": "googleads", "name": "Google Merchant Center" },
+          { "icon": "googleads", "name": "Google Ads (Shopping & PMax)" },
+          { "icon": "shopify", "name": "Shopify / WooCommerce" },
+          { "icon": "feed", "name": "Feedonomics / Channable" },
+          { "icon": "analytics", "name": "Google Analytics 4" },
+          { "icon": "googlecloud", "name": "Google Tag Manager" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "إعلانات تسوق جوجل (Google Shopping)",
+      "shortDescription": "ضع منتجاتك أمام مشترين ذوي نوايا عالية. نقوم بتحسين خلاصات (Feeds) منتجاتك وإدارة حملات جوجل للتسوق عالية الربحية لتوسيع إيرادات التجارة الإلكترونية.",
+      "fullDescription": "بالنسبة لشركات التجارة الإلكترونية، يعد Google Shopping أقوى قناة مبيعات متاحة. على عكس الإعلانات النصية القياسية، تعرض إعلانات التسوق صورة المنتج والسعر واسم المتجر أعلى نتائج البحث مباشرة، مما يجذب انتباه المستخدمين الذين يبحثون بنشاط عن الشراء. ومع ذلك، فإن النجاح في Google Shopping لا يقتصر على عروض الأسعار فحسب؛ بل يتعلق بتحسين خلاصة المنتجات (Feed Optimization). إذا كانت خلاصتك غير منظمة أو تفتقر إلى بيانات مهمة، فلن تعرض جوجل منتجاتك. تجمع خدمات Google Shopping الخاصة بنا بين التحسين الفني العميق للخلاصة وإدارة الحملات القوية. نقوم بهيكلة وإثراء خلاصة Google Merchant Center بدقة - مع تحسين عناوين المنتجات وأوصافها وفئاتها لتتناسب مع استعلامات البحث ذات الحجم الكبير. ثم نقوم بهيكلة حملاتك باستخدام التجزئة المتقدمة (حسب الربحية، أو المنتجات الأكثر مبيعاً) والاستفادة من عروض الأسعار الذكية لزيادة العائد على الإنفاق الإعلاني (ROAS).",
+      "features": [
+        "تحسين شامل لخلاصة المنتجات (Product Feed)",
+        "إعداد Google Merchant Center واستكشاف الأخطاء وإصلاحها",
+        "دمج حملات الأداء الأفضل (Performance Max)",
+        "إدارة حملات التسوق القياسية",
+        "تحسين عناوين المنتجات والأوصاف (SEO للمنتجات)",
+        "تكوين الملصقات المخصصة (Custom Labels) وقواعد الخلاصة",
+        "استراتيجية عروض الأسعار وتحسين العائد الإعلاني (ROAS)",
+        "مراقبة أسعار المنافسين والتعديل"
+      ],
+      "benefits": [
+        "عرض منتجاتك بصرياً في الجزء العلوي من نتائج بحث جوجل",
+        "جذب حركة مرور مؤهلة تأهيلاً عالياً بنية شراء فورية",
+        "خفض تكلفة الاكتساب (CPA) من خلال التحسين المتقدم للخلاصة",
+        "توسيع إيرادات التجارة الإلكترونية بثقة من خلال عروض الأسعار المحسنة",
+        "تجنب تعليق حساب Merchant Center من خلال الإدارة الاستباقية للأخطاء",
+        "اكتساب رؤى عميقة حول المنتجات المحددة التي تحقق أكبر قدر من الأرباح"
+      ],
+      "metaTitle": "وكالة إعلانات تسوق جوجل | تحسين الخلاصة | PakSoft",
+      "metaDescription": "قم بتوسيع مبيعات التجارة الإلكترونية الخاصة بك مع حملات تسوق جوجل. نحن نحسن خلاصة Merchant Center ونزيد العائد على الإنفاق الإعلاني إلى أقصى حد.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "تدقيق وإعداد Merchant Center",
+            "description": "نقوم بتدقيق حساب Google Merchant Center الحالي، وإصلاح أخطاء الرفض، وضمان اتصال سلس بين منصة التجارة الإلكترونية الخاصة بك (مثل Shopify) وجوجل."
+          },
+          {
+            "step": 2,
+            "title": "التحسين الفني للخلاصة (Feed)",
+            "description": "هذه هي الخطوة الأكثر أهمية. نعيد كتابة عناوين المنتجات لتشمل كلمات رئيسية عالية الحجم، ونضمن دقة جميع أرقام GTIN و MPN وفئات منتجات جوجل."
+          },
+          {
+            "step": 3,
+            "title": "هيكلة الحملة",
+            "description": "نحن لا نضع جميع المنتجات في حملة واحدة. نقوم بتقسيم المنتجات باستخدام الملصقات المخصصة بناءً على الهوامش أو الموسمية للتحكم في عروض الأسعار بدقة."
+          },
+          {
+            "step": 4,
+            "title": "تكوين استراتيجية عروض الأسعار",
+            "description": "بناءً على حجم بياناتك، ننفذ إما تكلفة النقرة اليدوية أو خوارزميات عروض الأسعار الذكية من جوجل (العائد المستهدف) لزيادة الربحية."
+          },
+          {
+            "step": 5,
+            "title": "تكامل حملات الأداء الأفضل (PMax)",
+            "description": "ندمج خلاصتك المحسنة في حملات Performance Max، مما يسمح لمنتجاتك بالظهور عبر شبكة جوجل بأكملها (YouTube، العرض، Gmail، الخرائط) تلقائياً."
+          },
+          {
+            "step": 6,
+            "title": "الإدارة المستمرة للخلاصة وعروض الأسعار",
+            "description": "نراقب تقارير مصطلحات البحث باستمرار، ونضبط عروض الأسعار، ونحدث قواعد الخلاصة للتكيف مع تغييرات المخزون وأسعار المنافسين."
+          }
+        ],
+        "faq": [
+          {
+            "question": "لماذا لا تظهر منتجاتي في Google Shopping؟",
+            "answer": "يرجع ذلك عادةً إلى أخطاء في الخلاصة (مثل فقدان رموز GTIN، أو انتهاكات السياسة) أو عناوين منتجات ضعيفة التحسين لا تتطابق مع استعلامات المستخدم."
+          },
+          {
+            "question": "ما الفرق بين التسوق القياسي و Performance Max؟",
+            "answer": "يمنحك التسوق القياسي تحكماً يدوياً في الكلمات السلبية وعروض الأسعار. في حين أن PMax مؤتمت بالكامل ويعرض الإعلانات عبر جميع شبكات جوجل."
+          },
+          {
+            "question": "هل تحتاج إلى الوصول إلى الواجهة الخلفية (Backend) لموقعي؟",
+            "answer": "نعم، نحتاج عادةً إلى الوصول إلى منصة التجارة الإلكترونية (مثل Shopify) أو أداة إدارة الخلاصة لتحسين بيانات المنتج قبل وصولها إلى جوجل."
+          },
+          {
+            "question": "ما مدى أهمية عناوين المنتجات في Google Shopping؟",
+            "answer": "هي كل شيء. نظراً لأنه لا يمكنك تحديد الكلمات الرئيسية في إعلانات التسوق، تستخدم جوجل العناوين والأوصاف لتحديد متى تعرض إعلانك."
+          },
+          {
+            "question": "ما هو العائد (ROAS) الجيد لإعلانات التسوق؟",
+            "answer": "يعتمد العائد 'الجيد' كلياً على هوامش ربحك. نحن نقوم بالتحسين بناءً على الهوامش المحددة لضمان أقصى قدر من الربحية لنشاطك التجاري."
+          },
+          {
+            "question": "هل يمكنك إصلاح حساب Merchant Center معلق؟",
+            "answer": "نعم. كثيراً ما نساعد الأنشطة التجارية في حل انتهاكات السياسة المعقدة (مثل 'التحريف') واستعادة حساباتهم وجعلها نشطة مرة أخرى."
+          },
+          {
+            "question": "هل أحتاج إلى رموز باركود (GTINs) لتشغيل إعلانات التسوق؟",
+            "answer": "لأغلب المنتجات المصنعة، نعم. إذا كنت تبيع عناصر مخصصة بدون GTINs، نقوم بتهيئة قواعد خلاصة معينة لضمان الموافقة عليها."
+          },
+          {
+            "question": "كيف تتعاملون مع المنتجات غير المتوفرة في المخزون؟",
+            "answer": "نقوم بإعداد مزامنة آلية في الوقت الفعلي بين مخزونك و Merchant Center. إذا نفد المنتج، يتوقف عرض الإعلان فوراً لحماية ميزانيتك."
+          }
+        ],
+        "technologies": [
+          { "icon": "googleads", "name": "Google Merchant Center" },
+          { "icon": "googleads", "name": "Google Ads (Shopping & PMax)" },
+          { "icon": "shopify", "name": "Shopify / WooCommerce" },
+          { "icon": "feed", "name": "Feedonomics / Channable" },
+          { "icon": "analytics", "name": "Google Analytics 4" },
+          { "icon": "googlecloud", "name": "Google Tag Manager" }
+        ]
+      }
+    }
+  },
+  "hubspot-implementation": {
+    "en": {
+      "name": "HubSpot Implementation",
+      "shortDescription": "Align your marketing, sales, and service teams. We architect, implement, and optimize HubSpot to drive revenue growth and operational efficiency.",
+      "fullDescription": "HubSpot is a powerful engine for growth, but a poor implementation turns it into an expensive, unused rolodex. If your marketing data is siloed, your sales team refuses to use the CRM, or your customer service is disconnected from the buyer journey, you need a systemic overhaul. Our HubSpot Implementation services ensure you extract maximum value from the platform. We do not just configure settings; we architect business processes. We work closely with your stakeholders to map out your entire customer journey, translating your operational needs into HubSpot's architecture. We set up the Marketing, Sales, and Service Hubs, construct automated workflows, build custom reporting dashboards, and integrate HubSpot with your existing tech stack (ERP, proprietary software, billing systems). Finally, we provide comprehensive team training to ensure high user adoption and long-term success.",
+      "features": [
+        "Strategic Discovery & Process Mapping",
+        "CRM Architecture & Custom Object Setup",
+        "Marketing, Sales & Service Hub Configuration",
+        "Complex Workflow Automation & Routing",
+        "Data Migration & Cleansing Strategy",
+        "Third-party API & Custom Integrations",
+        "Custom Reporting & Dashboard Creation",
+        "Change Management & Team Training"
+      ],
+      "benefits": [
+        "Unify your marketing, sales, and service data into a single source of truth",
+        "Eliminate manual data entry and repetitive tasks with smart automation",
+        "Increase sales team productivity and close rates with streamlined pipelines",
+        "Gain total visibility into the ROI of every marketing campaign",
+        "Improve customer retention with a seamless handoff between sales and support",
+        "Ensure high user adoption with customized, role-based training"
+      ],
+      "metaTitle": "HubSpot Implementation Agency | CRM Setup & Onboarding | PakSoft",
+      "metaDescription": "Maximize your CRM ROI. We provide expert HubSpot implementation, custom integrations, workflow automation, and team training for Marketing, Sales, and Service Hubs.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Discovery & Blueprinting",
+            "description": "We conduct deep-dive workshops to understand your sales process, marketing goals, and service SLA's, mapping out a blueprint for your HubSpot architecture."
+          },
+          {
+            "step": 2,
+            "title": "Data Migration & Cleansing",
+            "description": "We safely extract, clean, and map data from your legacy CRM (Salesforce, Pipedrive, etc.) or spreadsheets, ensuring a flawless import into HubSpot."
+          },
+          {
+            "step": 3,
+            "title": "Portal Setup & Customization",
+            "description": "We configure the CRM foundation: setting up users, permissions, custom properties, deal pipelines, and custom objects tailored to your specific business model."
+          },
+          {
+            "step": 4,
+            "title": "Automation & Workflow Building",
+            "description": "We build the engine: automated lead scoring, lead routing to sales reps, marketing email nurture sequences, and service ticket escalation rules."
+          },
+          {
+            "step": 5,
+            "title": "Tech Stack Integration",
+            "description": "We connect HubSpot to your ecosystem, integrating tools like Zoom, Slack, your ERP, or building custom API connections for proprietary software."
+          },
+          {
+            "step": 6,
+            "title": "Training & Handoff",
+            "description": "We conduct role-specific training sessions (for marketers, sales reps, and executives) to ensure high adoption and provide ongoing support post-launch."
+          }
+        ],
+        "faq": [
+          {
+            "question": "We already have HubSpot but it's a mess. Can you fix it?",
+            "answer": "Yes. This is called a 'HubSpot Audit & Revamp'. We untangle messy workflows, clean up duplicate data, and reconfigure the portal to match your current business processes."
+          },
+          {
+            "question": "How long does a full HubSpot implementation take?",
+            "answer": "A basic CRM and Marketing Hub setup can take 4-6 weeks. A complex, multi-hub enterprise implementation with custom integrations and data migration typically takes 2-4 months."
+          },
+          {
+            "question": "Can you migrate our data from Salesforce?",
+            "answer": "Absolutely. We have extensive experience migrating complex relational data, notes, tasks, and attachments from Salesforce, Microsoft Dynamics, Pipedrive, and others into HubSpot."
+          },
+          {
+            "question": "Do we need all the 'Hubs' (Marketing, Sales, Service)?",
+            "answer": "Not necessarily. We recommend the Hubs based on your immediate needs. You can start with the Sales Hub and add Marketing or Service later as you scale."
+          },
+          {
+            "question": "Can HubSpot integrate with our custom internal software?",
+            "answer": "Yes. If your software has an open API, our development team can build a custom middleware application to sync data bi-directionally between your system and HubSpot."
+          },
+          {
+            "question": "How do you ensure our sales team will actually use it?",
+            "answer": "Lack of adoption kills CRM projects. We involve sales leadership early, design the system to remove friction from their day, and provide hands-on, scenario-based training."
+          },
+          {
+            "question": "Do you provide ongoing HubSpot support after the initial setup?",
+            "answer": "Yes, we offer ongoing HubSpot managed services where we act as your outsourced RevOps team, building new campaigns, managing workflows, and optimizing the system."
+          },
+          {
+            "question": "What is a 'Custom Object' in HubSpot?",
+            "answer": "Standard objects are Contacts, Companies, and Deals. If you need to track something unique to your business (e.g., 'Properties' for real estate, 'Vehicles' for auto), we build a Custom Object."
+          }
+        ],
+        "technologies": [
+          { "icon": "hubspot", "name": "HubSpot CRM" },
+          { "icon": "hubspot", "name": "Marketing Hub" },
+          { "icon": "hubspot", "name": "Sales Hub" },
+          { "icon": "hubspot", "name": "Service Hub" },
+          { "icon": "zapier", "name": "Zapier / Make" },
+          { "icon": "api", "name": "Custom REST APIs" },
+          { "icon": "salesforce", "name": "Salesforce (Migration)" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "HubSpot Kurulumu (Implementation)",
+      "shortDescription": "Pazarlama, satış ve hizmet ekiplerinizi hizalayın. Gelir artışını ve operasyonel verimliliği sağlamak için HubSpot'ı mimarilendiriyor, uyguluyor ve optimize ediyoruz.",
+      "fullDescription": "HubSpot büyüme için güçlü bir motordur, ancak zayıf bir uygulama onu pahalı, kullanılmayan bir adres defterine dönüştürür. Pazarlama verileriniz izole edilmişse, satış ekibiniz CRM'i kullanmayı reddediyorsa veya müşteri hizmetleriniz alıcı yolculuğundan kopuksa, sistemik bir revizyona ihtiyacınız vardır. HubSpot Kurulum hizmetlerimiz, platformdan maksimum değer elde etmenizi sağlar. Biz sadece ayarları yapılandırmakla kalmıyor; iş süreçlerini mimarilendiriyoruz. Tüm müşteri yolculuğunuzun haritasını çıkarmak ve operasyonel ihtiyaçlarınızı HubSpot'ın mimarisine çevirmek için paydaşlarınızla yakın bir şekilde çalışıyoruz. Pazarlama (Marketing), Satış (Sales) ve Hizmet (Service) Hub'larını kuruyor, otomatik iş akışları oluşturuyor, özel raporlama panoları hazırlıyor ve HubSpot'ı mevcut teknoloji yığınınızla (ERP, tescilli yazılım, faturalandırma sistemleri) entegre ediyoruz. Son olarak, yüksek kullanıcı benimsemesini ve uzun vadeli başarıyı sağlamak için kapsamlı ekip eğitimi sağlıyoruz.",
+      "features": [
+        "Stratejik Keşif ve Süreç Haritalama",
+        "CRM Mimarisi ve Özel Nesne (Custom Object) Kurulumu",
+        "Pazarlama, Satış ve Hizmet (Service) Hub Yapılandırması",
+        "Karmaşık İş Akışı (Workflow) Otomasyonu ve Yönlendirme",
+        "Veri Taşıma (Migration) ve Temizleme Stratejisi",
+        "Üçüncü Taraf API ve Özel Entegrasyonlar",
+        "Özel Raporlama ve Pano (Dashboard) Oluşturma",
+        "Değişim Yönetimi ve Ekip Eğitimi"
+      ],
+      "benefits": [
+        "Pazarlama, satış ve hizmet verilerinizi tek bir gerçeklik kaynağında birleştirin",
+        "Akıllı otomasyonla manuel veri girişini ve tekrarlayan görevleri ortadan kaldırın",
+        "Kolaylaştırılmış işlem hatlarıyla (pipelines) satış ekibi üretkenliğini artırın",
+        "Her pazarlama kampanyasının yatırım getirisine (ROI) tam görünürlük kazanın",
+        "Satış ve destek arasındaki kusursuz geçişle müşteri tutmayı (retention) iyileştirin",
+        "Özelleştirilmiş, role dayalı eğitimle yüksek kullanıcı benimsemesini sağlayın"
+      ],
+      "metaTitle": "HubSpot Kurulum Ajansı | CRM Entegrasyonu | PakSoft",
+      "metaDescription": "CRM yatırım getirinizi en üst düzeye çıkarın. Pazarlama, Satış ve Hizmet ekipleriniz için uzman HubSpot kurulumu, özel entegrasyonlar ve eğitim sağlıyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Keşif ve Planlama (Blueprinting)",
+            "description": "Satış sürecinizi, pazarlama hedeflerinizi ve hizmet SLA'larınızı anlamak için derinlemesine atölye çalışmaları yürütüyor ve HubSpot mimariniz için bir plan çıkarıyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Veri Taşıma (Migration) ve Temizleme",
+            "description": "Eski CRM'inizden (Salesforce, Pipedrive vb.) veya e-tablolardan gelen verileri güvenle çıkarıyor, temizliyor ve eşleştirerek HubSpot'a kusursuz bir şekilde aktarıyoruz."
+          },
+          {
+            "step": 3,
+            "title": "Portal Kurulumu ve Özelleştirme",
+            "description": "Kullanıcıları, izinleri, özel özellikleri, anlaşma (deal) hatlarını ve işletme modelinize uyarlanmış özel nesneleri (custom objects) ayarlayarak CRM temelini yapılandırıyoruz."
+          },
+          {
+            "step": 4,
+            "title": "Otomasyon ve İş Akışı (Workflow) Oluşturma",
+            "description": "Motoru inşa ediyoruz: otomatik lead puanlama, satış temsilcilerine lead yönlendirme, pazarlama e-posta besleme dizileri ve hizmet talebi iletme (escalation) kuralları."
+          },
+          {
+            "step": 5,
+            "title": "Teknoloji Yığını Entegrasyonu",
+            "description": "HubSpot'ı ekosisteminize bağlıyor, Zoom, Slack, ERP'niz gibi araçları entegre ediyor veya tescilli yazılımlar için özel API bağlantıları oluşturuyoruz."
+          },
+          {
+            "step": 6,
+            "title": "Eğitim ve Teslimat",
+            "description": "Yüksek oranda benimsenmeyi sağlamak için role özel eğitim oturumları (pazarlamacılar, satış temsilcileri ve yöneticiler için) düzenliyor ve lansman sonrası sürekli destek sağlıyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Zaten HubSpot'ımız var ama çok dağınık. Düzeltebilir misiniz?",
+            "answer": "Evet. Buna 'HubSpot Denetimi ve Yenilemesi' denir. Karışık iş akışlarını çözer, yinelenen verileri temizler ve portalı mevcut iş süreçlerinizle eşleşecek şekilde yeniden yapılandırırız."
+          },
+          {
+            "question": "Tam bir HubSpot kurulumu ne kadar sürer?",
+            "answer": "Temel bir CRM ve Marketing Hub kurulumu 4-6 hafta sürebilir. Özel entegrasyonlar ve veri taşıma içeren karmaşık, çoklu hub (multi-hub) bir kurumsal uygulama genellikle 2-4 ay sürer."
+          },
+          {
+            "question": "Verilerimizi Salesforce'tan taşıyabilir misiniz?",
+            "answer": "Kesinlikle. Salesforce, Microsoft Dynamics, Pipedrive ve diğerlerinden HubSpot'a karmaşık ilişkisel verileri, notları, görevleri ve ekleri geçirme konusunda kapsamlı deneyime sahibiz."
+          },
+          {
+            "question": "Tüm 'Hub'lara (Pazarlama, Satış, Hizmet) ihtiyacımız var mı?",
+            "answer": "Zorunlu değil. Hub'ları acil ihtiyaçlarınıza göre öneriyoruz. Sales Hub ile başlayabilir ve ölçeklendikçe Marketing veya Service'i daha sonra ekleyebilirsiniz."
+          },
+          {
+            "question": "HubSpot özel şirket içi yazılımımızla entegre olabilir mi?",
+            "answer": "Evet. Yazılımınızın açık bir API'si varsa, geliştirme ekibimiz sisteminiz ile HubSpot arasında verileri iki yönlü senkronize etmek için özel bir ara katman (middleware) uygulaması oluşturabilir."
+          },
+          {
+            "question": "Satış ekibimizin bunu gerçekten kullanacağını nasıl sağlıyorsunuz?",
+            "answer": "Benimseme eksikliği CRM projelerini öldürür. Satış liderliğini erkenden sürece dahil ediyor, sistemi günlük işlerindeki sürtünmeyi ortadan kaldıracak şekilde tasarlıyor ve senaryo tabanlı uygulamalı eğitim veriyoruz."
+          },
+          {
+            "question": "İlk kurulumdan sonra sürekli HubSpot desteği sağlıyor musunuz?",
+            "answer": "Evet, dış kaynaklı RevOps ekibiniz olarak hareket ettiğimiz, yeni kampanyalar oluşturduğumuz, iş akışlarını yönettiğimiz ve sistemi optimize ettiğimiz sürekli HubSpot yönetilen hizmetler sunuyoruz."
+          },
+          {
+            "question": "HubSpot'ta 'Özel Nesne' (Custom Object) nedir?",
+            "answer": "Standart nesneler Kişiler, Şirketler ve Anlaşmalardır. İşletmenize özgü bir şeyi (örneğin gayrimenkul için 'Mülkler', otomotiv için 'Araçlar') izlemeniz gerekiyorsa, Özel Nesne oluştururuz."
+          }
+        ],
+        "technologies": [
+          { "icon": "hubspot", "name": "HubSpot CRM" },
+          { "icon": "hubspot", "name": "Marketing Hub" },
+          { "icon": "hubspot", "name": "Sales Hub" },
+          { "icon": "hubspot", "name": "Service Hub" },
+          { "icon": "zapier", "name": "Zapier / Make" },
+          { "icon": "api", "name": "Custom REST APIs" },
+          { "icon": "salesforce", "name": "Salesforce (Migration)" }
+        ]
+      }
+    },
+    "de": {
+      "name": "HubSpot Implementierung",
+      "shortDescription": "Stimmen Sie Ihre Marketing-, Vertriebs- und Serviceteams aufeinander ab. Wir planen, implementieren und optimieren HubSpot, um Ihr Wachstum und Ihre betriebliche Effizienz zu steigern.",
+      "fullDescription": "HubSpot ist ein leistungsstarker Wachstumsmotor, aber eine schlechte Implementierung macht es zu einem teuren, ungenutzten Adressbuch. Wenn Ihre Marketingdaten isoliert sind, Ihr Vertriebsteam das CRM nicht nutzt oder Ihr Kundenservice von der Buyer Journey getrennt ist, benötigen Sie eine systemische Überarbeitung. Unsere Implementierungsdienste stellen sicher, dass Sie maximalen Wert aus der Plattform ziehen. Wir konfigurieren nicht nur Einstellungen; wir strukturieren Geschäftsprozesse. In enger Zusammenarbeit mit Ihren Stakeholdern bilden wir Ihre gesamte Customer Journey ab und übersetzen operative Anforderungen in die Architektur von HubSpot. Wir richten Marketing, Sales und Service Hubs ein, erstellen automatisierte Workflows, bauen individuelle Reporting-Dashboards und integrieren HubSpot in Ihren bestehenden Tech-Stack (ERP, proprietäre Software).",
+      "features": [
+        "Strategische Discovery & Prozess-Mapping",
+        "CRM-Architektur & Setup benutzerdefinierter Objekte (Custom Objects)",
+        "Konfiguration von Marketing, Sales & Service Hubs",
+        "Komplexe Workflow-Automatisierung & Lead-Routing",
+        "Datenmigration & Strategie zur Datenbereinigung",
+        "Integration von Drittanbieter-APIs & proprietärer Software",
+        "Benutzerdefinierte Berichte & Dashboards",
+        "Change Management & Team-Schulungen"
+      ],
+      "benefits": [
+        "Vereinen Sie Marketing-, Vertriebs- und Servicedaten in einer zentralen Datenquelle",
+        "Eliminieren Sie manuelle Dateneingaben durch intelligente Automatisierung",
+        "Steigern Sie die Produktivität des Vertriebs mit optimierten Pipelines",
+        "Gewinnen Sie volle Transparenz über den ROI jeder Marketingkampagne",
+        "Verbessern Sie die Kundenbindung durch nahtlose Übergaben an den Support",
+        "Sichern Sie hohe Nutzerakzeptanz durch rollenspezifische Schulungen"
+      ],
+      "metaTitle": "HubSpot Agentur | CRM Setup & Implementierung | PakSoft",
+      "metaDescription": "Maximieren Sie Ihren CRM-ROI. Wir bieten professionelle HubSpot-Implementierung, Integrationen, Workflow-Automatisierung und Team-Schulungen.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Discovery & Blueprinting",
+            "description": "In Tiefenworkshops analysieren wir Ihre Vertriebsprozesse, Marketingziele und Service-SLAs, um den Bauplan für Ihre HubSpot-Architektur zu erstellen."
+          },
+          {
+            "step": 2,
+            "title": "Datenmigration & Bereinigung",
+            "description": "Wir extrahieren, bereinigen und mappen Daten aus Ihrem alten CRM (Salesforce, Pipedrive) für einen fehlerfreien Import in HubSpot."
+          },
+          {
+            "step": 3,
+            "title": "Portal-Setup & Anpassung",
+            "description": "Wir richten die CRM-Basis ein: Benutzerrechte, benutzerdefinierte Eigenschaften, Deal-Pipelines und Custom Objects, die zu Ihrem Geschäftsmodell passen."
+          },
+          {
+            "step": 4,
+            "title": "Automatisierung & Workflows",
+            "description": "Wir bauen den Motor: automatisiertes Lead-Scoring, Routing an Vertriebsmitarbeiter, E-Mail-Nurturing und Eskalationsregeln für Servicetickets."
+          },
+          {
+            "step": 5,
+            "title": "Integration des Tech-Stacks",
+            "description": "Wir verbinden HubSpot mit Ihrem Ökosystem und integrieren ERP-Systeme, Tools wie Zoom/Slack oder bauen individuelle API-Schnittstellen."
+          },
+          {
+            "step": 6,
+            "title": "Schulung & Übergabe",
+            "description": "Wir führen rollenspezifische Schulungen (für Vertrieb, Marketing, Management) durch, um eine hohe Akzeptanz zu sichern, und bieten laufenden Support."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Wir haben HubSpot bereits, aber es herrscht Chaos. Können Sie das beheben?",
+            "answer": "Ja. Das nennen wir ein 'HubSpot Audit & Revamp'. Wir entwirren Workflows, bereinigen Duplikate und passen das Portal an Ihre aktuellen Prozesse an."
+          },
+          {
+            "question": "Wie lange dauert eine vollständige HubSpot-Implementierung?",
+            "answer": "Ein grundlegendes Setup (CRM & Marketing Hub) dauert 4-6 Wochen. Ein komplexes Enterprise-Setup mit Migration und Custom APIs dauert in der Regel 2-4 Monate."
+          },
+          {
+            "question": "Können Sie unsere Daten aus Salesforce migrieren?",
+            "answer": "Absolut. Wir haben umfangreiche Erfahrung bei der Migration komplexer relationaler Daten, Notizen und Aufgaben von Salesforce, MS Dynamics oder Pipedrive zu HubSpot."
+          },
+          {
+            "question": "Brauchen wir alle 'Hubs' (Marketing, Sales, Service)?",
+            "answer": "Nicht zwingend. Wir empfehlen Hubs basierend auf Ihrem Bedarf. Sie können mit dem Sales Hub starten und Marketing/Service später hinzufügen."
+          },
+          {
+            "question": "Kann HubSpot in unsere interne Spezialsoftware integriert werden?",
+            "answer": "Ja. Wenn Ihre Software über eine offene API verfügt, können unsere Entwickler eine Middleware programmieren, um Daten bidirektional zu synchronisieren."
+          },
+          {
+            "question": "Wie stellen Sie sicher, dass unser Vertriebsteam es auch nutzt?",
+            "answer": "Mangelnde Akzeptanz tötet CRM-Projekte. Wir binden die Vertriebsleitung früh ein, designen das System nutzerfreundlich und bieten praxisnahe Schulungen."
+          },
+          {
+            "question": "Bieten Sie fortlaufenden HubSpot-Support nach dem Setup?",
+            "answer": "Ja, wir bieten 'Managed Services', bei denen wir als Ihr ausgelagertes RevOps-Team fungieren, Kampagnen bauen und das System laufend optimieren."
+          },
+          {
+            "question": "Was ist ein 'Custom Object' (Benutzerdefiniertes Objekt) in HubSpot?",
+            "answer": "Standardobjekte sind Kontakte und Unternehmen. Wenn Sie etwas Branchenspezifisches tracken müssen (z. B. 'Immobilien' oder 'Fahrzeuge'), erstellen wir ein Custom Object."
+          }
+        ],
+        "technologies": [
+          { "icon": "hubspot", "name": "HubSpot CRM" },
+          { "icon": "hubspot", "name": "Marketing Hub" },
+          { "icon": "hubspot", "name": "Sales Hub" },
+          { "icon": "hubspot", "name": "Service Hub" },
+          { "icon": "zapier", "name": "Zapier / Make" },
+          { "icon": "api", "name": "Custom REST APIs" },
+          { "icon": "salesforce", "name": "Salesforce (Migration)" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "ہب سپاٹ کا نفاذ (HubSpot Implementation)",
+      "shortDescription": "اپنی مارکیٹنگ، سیلز، اور سروس ٹیموں کو ایک صفحے پر لائیں۔ ہم آمدنی میں اضافے اور آپریشنل کارکردگی کو بڑھانے کے لیے ہب سپاٹ کو ترتیب اور بہتر بناتے ہیں۔",
+      "fullDescription": "HubSpot ترقی کے لیے ایک طاقتور انجن ہے، لیکن ناقص نفاذ اسے ایک مہنگے اور غیر استعمال شدہ ٹول میں بدل دیتا ہے۔ اگر آپ کا مارکیٹنگ ڈیٹا الگ تھلگ ہے، آپ کی سیلز ٹیم CRM استعمال کرنے سے انکاری ہے، یا آپ کی کسٹمر سروس خریدار کے سفر سے منقطع ہے، تو آپ کو ایک منظم تبدیلی کی ضرورت ہے۔ ہماری HubSpot نفاذ کی خدمات اس بات کو یقینی بناتی ہیں کہ آپ پلیٹ فارم سے زیادہ سے زیادہ قیمت حاصل کریں۔ ہم صرف ترتیبات کو ترتیب نہیں دیتے؛ ہم کاروباری عمل کو ڈیزائن کرتے ہیں۔ ہم آپ کے اسٹیک ہولڈرز کے ساتھ مل کر آپ کے پورے کسٹمر کے سفر کا خاکہ بناتے ہیں اور آپ کی آپریشنل ضروریات کو HubSpot کے فن تعمیر میں ڈھالتے ہیں۔ ہم مارکیٹنگ، سیلز، اور سروس ہبز قائم کرتے ہیں، خودکار ورک فلو بناتے ہیں، کسٹم رپورٹنگ ڈیش بورڈ بناتے ہیں، اور HubSpot کو آپ کے موجودہ ٹیک اسٹیک (ERP، بلنگ سسٹمز) کے ساتھ مربوط کرتے ہیں۔",
+      "features": [
+        "اسٹریٹجک دریافت اور پروسیس میپنگ",
+        "CRM آرکیٹیکچر اور کسٹم آبجیکٹ سیٹ اپ",
+        "مارکیٹنگ، سیلز اور سروس ہب کنفیگریشن",
+        "پیچیدہ ورک فلو آٹومیشن اور روٹنگ",
+        "ڈیٹا مائیگریشن اور کلینزنگ کی حکمت عملی",
+        "تھرڈ پارٹی API اور کسٹم انضمام",
+        "حسب ضرورت رپورٹنگ اور ڈیش بورڈ کی تخلیق",
+        "تبدیلی کا انتظام اور ٹیم کی تربیت"
+      ],
+      "benefits": [
+        "اپنے مارکیٹنگ، سیلز اور سروس ڈیٹا کو ایک ہی پلیٹ فارم پر اکٹھا کریں",
+        "سمارٹ آٹومیشن کے ساتھ دستی ڈیٹا انٹری اور دہرائے جانے والے کاموں کو ختم کریں",
+        "بہتر پائپ لائنز کے ساتھ سیلز ٹیم کی پیداواری صلاحیت کو بڑھائیں",
+        "ہر مارکیٹنگ مہم کے ROI میں مکمل مرئیت حاصل کریں",
+        "سیلز اور سپورٹ کے درمیان ہموار منتقلی کے ساتھ کسٹمر کی برقراری کو بہتر بنائیں",
+        "حسب ضرورت، کردار پر مبنی تربیت کے ساتھ اعلیٰ صارف کے استعمال کو یقینی بنائیں"
+      ],
+      "metaTitle": "HubSpot امپلیمینٹیشن ایجنسی | CRM سیٹ اپ | PakSoft",
+      "metaDescription": "اپنے CRM ROI کو زیادہ سے زیادہ کریں۔ ہم مارکیٹنگ، سیلز، اور سروس ہبز کے لیے ماہر HubSpot نفاذ، کسٹم انٹیگریشن، اور ٹیم ٹریننگ فراہم کرتے ہیں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "دریافت اور بلیو پرنٹنگ",
+            "description": "ہم آپ کے سیلز کے عمل، مارکیٹنگ کے اہداف اور سروس کو سمجھنے کے لیے ورکشاپس کا انعقاد کرتے ہیں، اور آپ کے HubSpot آرکیٹیکچر کا خاکہ تیار کرتے ہیں۔"
+          },
+          {
+            "step": 2,
+            "title": "ڈیٹا مائیگریشن اور کلینزنگ",
+            "description": "ہم آپ کے پرانے CRM (Salesforce, Pipedrive) سے ڈیٹا کو محفوظ طریقے سے نکالتے ہیں، صاف کرتے ہیں اور HubSpot میں بغیر کسی نقص کے منتقل کرتے ہیں۔"
+          },
+          {
+            "step": 3,
+            "title": "پورٹل سیٹ اپ اور حسب ضرورت",
+            "description": "ہم آپ کے کاروباری ماڈل کے مطابق صارفین، اجازتوں، کسٹم پراپرٹیز، ڈیل پائپ لائنز اور کسٹم آبجیکٹ ترتیب دے کر CRM کی بنیاد بناتے ہیں۔"
+          },
+          {
+            "step": 4,
+            "title": "آٹومیشن اور ورک فلو بلڈنگ",
+            "description": "ہم خودکار نظام بناتے ہیں: لیڈ اسکورنگ، سیلز کے نمائندوں کو لیڈ روٹنگ، ای میل نرسنگ، اور سروس ٹکٹ کے قواعد۔"
+          },
+          {
+            "step": 5,
+            "title": "ٹیک اسٹیک انٹیگریشن",
+            "description": "ہم HubSpot کو آپ کے ایکو سسٹم سے جوڑتے ہیں، Zoom، Slack، یا آپ کے ERP جیسے ٹولز کو مربوط کرتے ہیں، یا حسب ضرورت API بناتے ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "تربیت اور ہینڈ آف",
+            "description": "ہم اس بات کو یقینی بنانے کے لیے کہ آپ کا عملہ اسے صحیح طریقے سے استعمال کرے، متعلقہ کردار (مارکیٹرز، سیلز، اور ایگزیکٹوز) کے لیے تربیتی سیشن منعقد کرتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "ہمارے پاس پہلے سے ہی HubSpot ہے لیکن یہ بے ترتیبی کا شکار ہے۔ کیا آپ اسے ٹھیک کر سکتے ہیں؟",
+            "answer": "ہاں۔ اسے 'HubSpot Audit & Revamp' کہا جاتا ہے۔ ہم الجھے ہوئے ورک فلوز کو سلجھاتے ہیں، ڈپلیکیٹ ڈیٹا صاف کرتے ہیں، اور آپ کے موجودہ کاروباری عمل سے ملنے کے لیے پورٹل کو دوبارہ ترتیب دیتے ہیں۔"
+          },
+          {
+            "question": "مکمل ہب سپاٹ نفاذ میں کتنا وقت لگتا ہے؟",
+            "answer": "بنیادی CRM اور مارکیٹنگ ہب کے سیٹ اپ میں 4-6 ہفتے لگ سکتے ہیں۔ کسٹم انٹیگریشنز اور ڈیٹا مائیگریشن کے ساتھ ایک پیچیدہ انٹرپرائز کے نفاذ میں عام طور پر 2-4 ماہ لگتے ہیں۔"
+          },
+          {
+            "question": "کیا آپ سیلز فورس (Salesforce) سے ہمارا ڈیٹا منتقل کر سکتے ہیں؟",
+            "answer": "بالکل۔ ہمارے پاس Salesforce، Microsoft Dynamics، Pipedrive وغیرہ سے پیچیدہ ڈیٹا، نوٹس، کاموں اور اٹیچمنٹس کو HubSpot میں منتقل کرنے کا وسیع تجربہ ہے۔"
+          },
+          {
+            "question": "کیا ہمیں تمام 'ہبز' (مارکیٹنگ، سیلز، سروس) کی ضرورت ہے؟",
+            "answer": "ضروری نہیں۔ ہم آپ کی فوری ضروریات کی بنیاد پر تجویز کرتے ہیں۔ آپ سیلز ہب سے شروعات کر سکتے ہیں اور مارکیٹنگ یا سروس بعد میں شامل کر سکتے ہیں۔"
+          },
+          {
+            "question": "کیا HubSpot ہمارے کسٹم سافٹ ویئر کے ساتھ ضم ہو سکتا ہے؟",
+            "answer": "ہاں۔ اگر آپ کے سافٹ ویئر میں اوپن API ہے، تو ہماری ڈیولپمنٹ ٹیم آپ کے سسٹم اور HubSpot کے درمیان ڈیٹا کی مطابقت پذیری کے لیے ایک کسٹم ایپلی کیشن بنا سکتی ہے۔"
+          },
+          {
+            "question": "آپ کیسے یقینی بناتے ہیں کہ ہماری سیلز ٹیم واقعی اسے استعمال کرے گی؟",
+            "answer": "استعمال میں کمی CRM پراجیکٹس کو ناکام بناتی ہے۔ ہم سیلز لیڈرشپ کو جلد شامل کرتے ہیں، سسٹم کو ان کے دن سے مشکلات کو دور کرنے کے لیے ڈیزائن کرتے ہیں، اور عملی تربیت فراہم کرتے ہیں۔"
+          },
+          {
+            "question": "کیا آپ ابتدائی سیٹ اپ کے بعد جاری ہب سپاٹ سپورٹ فراہم کرتے ہیں؟",
+            "answer": "ہاں، ہم جاری HubSpot کے زیر انتظام خدمات پیش کرتے ہیں جہاں ہم آپ کی آؤٹ سورس RevOps ٹیم کے طور پر کام کرتے ہیں، نئی مہمات بناتے ہیں اور سسٹم کو بہتر بناتے ہیں۔"
+          },
+          {
+            "question": "HubSpot میں 'کسٹم آبجیکٹ' کیا ہے؟",
+            "answer": "معیاری آبجیکٹس رابطے، کمپنیاں اور ڈیلز ہیں۔ اگر آپ کو اپنے کاروبار سے متعلق کسی منفرد چیز کو ٹریک کرنے کی ضرورت ہے (جیسے رئیل اسٹیٹ کے لیے 'پراپرٹیز')، تو ہم ایک کسٹم آبجیکٹ بناتے ہیں۔"
+          }
+        ],
+        "technologies": [
+          { "icon": "hubspot", "name": "HubSpot CRM" },
+          { "icon": "hubspot", "name": "Marketing Hub" },
+          { "icon": "hubspot", "name": "Sales Hub" },
+          { "icon": "hubspot", "name": "Service Hub" },
+          { "icon": "zapier", "name": "Zapier / Make" },
+          { "icon": "api", "name": "Custom REST APIs" },
+          { "icon": "salesforce", "name": "Salesforce (Migration)" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "تنفيذ HubSpot (HubSpot Implementation)",
+      "shortDescription": "قم بمواءمة فرق التسويق والمبيعات والخدمة لديك. نحن نصمم وننفذ ونحسن منصة HubSpot لدفع نمو الإيرادات والكفاءة التشغيلية.",
+      "fullDescription": "يعتبر HubSpot محركاً قوياً للنمو، لكن التنفيذ السيئ يحوله إلى دفتر عناوين باهظ الثمن وغير مستخدم. إذا كانت بيانات التسويق الخاصة بك منعزلة، أو يرفض فريق المبيعات استخدام نظام إدارة علاقات العملاء (CRM)، أو كانت خدمة العملاء منفصلة عن رحلة المشتري، فأنت بحاجة إلى إصلاح منهجي. تضمن خدمات تنفيذ HubSpot الخاصة بنا استخراج أقصى قيمة من المنصة. نحن لا نكتفي بتهيئة الإعدادات؛ بل نصمم العمليات التجارية. نعمل عن كثب مع أصحاب المصلحة لرسم خريطة لرحلة العميل بالكامل، وترجمة احتياجاتك التشغيلية إلى بنية HubSpot. نقوم بإعداد مراكز التسويق والمبيعات والخدمة (Hubs)، وبناء مسارات عمل آلية، وإنشاء لوحات معلومات تقارير مخصصة، ودمج HubSpot مع مجموعة التكنولوجيا الحالية لديك (مثل ERP وبرامج الفوترة). أخيراً، نقدم تدريباً شاملاً للفريق لضمان اعتماد المستخدم العالي والنجاح على المدى الطويل.",
+      "features": [
+        "الاكتشاف الاستراتيجي وتخطيط العمليات",
+        "بنية CRM وإعداد الكائنات المخصصة (Custom Objects)",
+        "تكوين مراكز التسويق (Marketing) والمبيعات (Sales) والخدمة (Service)",
+        "أتمتة مسارات العمل المعقدة وتوجيه العملاء المحتملين",
+        "استراتيجية ترحيل البيانات وتنقيتها",
+        "تكامل واجهات برمجة التطبيقات (API) للجهات الخارجية",
+        "إنشاء تقارير مخصصة ولوحات معلومات",
+        "إدارة التغيير وتدريب فريق العمل"
+      ],
+      "benefits": [
+        "توحيد بيانات التسويق والمبيعات والخدمة في مصدر واحد للحقيقة",
+        "القضاء على إدخال البيانات يدوياً والمهام المتكررة عبر الأتمتة الذكية",
+        "زيادة إنتاجية فريق المبيعات ومعدلات الإغلاق من خلال خطوط أنابيب مبسطة",
+        "اكتساب رؤية كاملة لعائد الاستثمار (ROI) لكل حملة تسويقية",
+        "تحسين الاحتفاظ بالعملاء من خلال التسليم السلس بين المبيعات والدعم",
+        "ضمان اعتماد عالي للمنصة من خلال تدريب مخصص قائم على الأدوار"
+      ],
+      "metaTitle": "وكالة تنفيذ HubSpot | إعداد نظام CRM | PakSoft",
+      "metaDescription": "قم بزيادة عائد استثمار نظام CRM الخاص بك. نقدم تنفيذاً احترافياً لـ HubSpot، وعمليات دمج مخصصة، وأتمتة مسارات العمل، وتدريب فريقك.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "الاكتشاف والتخطيط (Blueprinting)",
+            "description": "نجري ورش عمل عميقة لفهم عملية المبيعات وأهداف التسويق، ونضع مخططاً لبنية HubSpot الخاصة بك."
+          },
+          {
+            "step": 2,
+            "title": "ترحيل البيانات وتنقيتها",
+            "description": "نستخرج وننظف ونعين البيانات بأمان من نظام CRM القديم (مثل Salesforce) لضمان استيراد خالٍ من العيوب إلى HubSpot."
+          },
+          {
+            "step": 3,
+            "title": "إعداد البوابة والتخصيص",
+            "description": "نقوم بتهيئة أساس CRM: إعداد المستخدمين، والأذونات، والخصائص المخصصة، وخطوط الصفقات، والكائنات المخصصة (Custom Objects) المصممة لنموذج عملك."
+          },
+          {
+            "step": 4,
+            "title": "الأتمتة وبناء مسارات العمل",
+            "description": "نبني المحرك: التسجيل الآلي للعملاء المحتملين، وتوجيههم لمندوبي المبيعات، وتسلسلات رعاية البريد الإلكتروني التسويقية، وقواعد تصعيد التذاكر."
+          },
+          {
+            "step": 5,
+            "title": "تكامل حزمة التكنولوجيا",
+            "description": "نربط HubSpot بنظامك البيئي، بدمج أدوات مثل Zoom أو Slack أو ERP الخاص بك، أو بناء اتصالات API مخصصة للبرامج الخاصة بك."
+          },
+          {
+            "step": 6,
+            "title": "التدريب والتسليم",
+            "description": "نجري جلسات تدريبية خاصة بالأدوار (للمسوقين، ومندوبي المبيعات، والمديرين) لضمان التبني العالي، وتقديم الدعم المستمر بعد الإطلاق."
+          }
+        ],
+        "faq": [
+          {
+            "question": "لدينا بالفعل HubSpot ولكنه في حالة فوضى. هل يمكنك إصلاحه؟",
+            "answer": "نعم. يُطلق على هذا اسم 'تدقيق وتجديد HubSpot'. نقوم بفك تشابك مسارات العمل الفوضوية، وتنظيف البيانات المكررة، وإعادة تكوين البوابة لتتناسب مع عملياتك."
+          },
+          {
+            "question": "كم من الوقت يستغرق تنفيذ HubSpot الكامل؟",
+            "answer": "يمكن أن يستغرق إعداد CRM و Marketing Hub الأساسي من 4 إلى 6 أسابيع. التنفيذ المعقد للشركات الذي يتضمن دمجاً مخصصاً وترحيلاً للبيانات يستغرق من شهرين إلى 4 أشهر."
+          },
+          {
+            "question": "هل يمكنك ترحيل بياناتنا من Salesforce؟",
+            "answer": "بالتأكيد. لدينا خبرة واسعة في ترحيل البيانات العلائقية المعقدة والملاحظات والمهام والمرفقات من Salesforce و Microsoft Dynamics وغيرها إلى HubSpot."
+          },
+          {
+            "question": "هل نحتاج إلى جميع المراكز (التسويق، المبيعات، الخدمة)؟",
+            "answer": "ليس بالضرورة. نوصي بالمراكز بناءً على احتياجاتك الفورية. يمكنك البدء بمركز المبيعات (Sales Hub) وإضافة التسويق أو الخدمة لاحقاً كلما توسعت."
+          },
+          {
+            "question": "هل يمكن لـ HubSpot التكامل مع برامجنا الداخلية المخصصة؟",
+            "answer": "نعم. إذا كان برنامجك يحتوي على واجهة برمجة تطبيقات (API) مفتوحة، فيمكن لفريق التطوير لدينا إنشاء تطبيق وسيط مخصص لمزامنة البيانات في كلا الاتجاهين."
+          },
+          {
+            "question": "كيف تضمنون أن فريق المبيعات لدينا سيستخدمه بالفعل؟",
+            "answer": "نقص التبني يقتل مشاريع CRM. نحن نشرك قادة المبيعات مبكراً، ونصمم النظام لإزالة الاحتكاك من يومهم، ونقدم تدريباً عملياً قائماً على السيناريوهات."
+          },
+          {
+            "question": "هل تقدمون دعماً مستمراً لـ HubSpot بعد الإعداد الأولي؟",
+            "answer": "نعم، نقدم خدمات إدارة HubSpot مستمرة حيث نعمل كفريق RevOps خارجي خاص بك، ونبني حملات جديدة ونحسن النظام."
+          },
+          {
+            "question": "ما هو 'الكائن المخصص' (Custom Object) في HubSpot؟",
+            "answer": "الكائنات القياسية هي جهات الاتصال والشركات والصفقات. إذا كنت بحاجة إلى تتبع شيء فريد لعملك (مثل 'العقارات' أو 'السيارات')، فإننا نبني كائناً مخصصاً."
+          }
+        ],
+        "technologies": [
+          { "icon": "hubspot", "name": "HubSpot CRM" },
+          { "icon": "hubspot", "name": "Marketing Hub" },
+          { "icon": "hubspot", "name": "Sales Hub" },
+          { "icon": "hubspot", "name": "Service Hub" },
+          { "icon": "zapier", "name": "Zapier / Make" },
+          { "icon": "api", "name": "Custom REST APIs" },
+          { "icon": "salesforce", "name": "Salesforce (Migration)" }
+        ]
+      }
+    }
+  },
+  "international-seo": {
+    "en": {
+      "name": "International SEO",
+      "shortDescription": "Expand your brand globally. We optimize your website architecture, content, and code to rank highly across multiple languages, countries, and search engines.",
+      "fullDescription": "Scaling your business globally requires more than simply translating your homepage. International SEO is highly complex; if done incorrectly, you risk cannibalizing your existing traffic, confusing search engines, and alienating local audiences. Our International SEO services provide the technical and cultural foundation needed to dominate foreign markets. We architect scalable, global site structures (using ccTLDs, subdomains, or subdirectories) based on your operational capabilities. We implement flawless hreflang tags to ensure Google serves the correct language and regional version to the right user. Beyond the code, we conduct localized keyword research, adapting your content to match regional search intent, idioms, and cultural nuances. Whether you are targeting English speakers in the UK, Spanish speakers across Latin America, or localized markets in the Middle East and Asia (including right-to-left language optimization), we ensure your brand speaks their language—and ranks for it.",
+      "features": [
+        "Global Website Architecture Strategy",
+        "Technical Hreflang Tag Implementation",
+        "Localized Keyword & Search Intent Research",
+        "ccTLD, Subdomain & Subdirectory Optimization",
+        "Geo-targeting via Google Search Console",
+        "Multilingual Content Transcreation & SEO",
+        "International & Region-specific Link Building",
+        "Baidu, Yandex & Naver Optimization (if applicable)"
+      ],
+      "benefits": [
+        "Unlock massive new revenue streams in untapped global markets",
+        "Ensure users see your website in their native language and currency",
+        "Prevent duplicate content penalties across your international sites",
+        "Build brand trust by catering to local cultural nuances and search habits",
+        "Outrank local competitors who lack enterprise-level SEO architecture",
+        "Centralize your global SEO strategy for easier management and reporting"
+      ],
+      "metaTitle": "International & Multilingual SEO Agency | PakSoft",
+      "metaDescription": "Expand globally with expert International SEO services. We handle hreflang implementation, localized keyword research, and multilingual site architecture.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Global Market Opportunity Analysis",
+            "description": "We analyze international search volume, competition, and your current global traffic to prioritize which countries and languages offer the highest ROI for expansion."
+          },
+          {
+            "step": 2,
+            "title": "Technical Architecture Strategy",
+            "description": "We determine the best URL structure for your business (e.g., brand.fr, brand.com/fr/, or fr.brand.com) balancing SEO power, localization, and development resources."
+          },
+          {
+            "step": 3,
+            "title": "Hreflang & Geo-targeting Setup",
+            "description": "We implement complex hreflang annotations (via HTML, HTTP headers, or XML sitemaps) to explicitly tell search engines which version of a page belongs to which region."
+          },
+          {
+            "step": 4,
+            "title": "Localized Keyword Research",
+            "description": "We don't just translate keywords. Native SEO experts research how local users actually search, uncovering regional idioms, slang, and specific search intents."
+          },
+          {
+            "step": 5,
+            "title": "Content Transcreation",
+            "description": "We adapt your content to resonate culturally with the target market, adjusting tone, currency, measurements, and references while maintaining SEO best practices."
+          },
+          {
+            "step": 6,
+            "title": "Local Link Building",
+            "description": "To rank in a specific country, you need links from that country. We execute targeted digital PR and outreach campaigns to earn high-authority local backlinks."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is the difference between translation and International SEO?",
+            "answer": "Translation just changes the words. International SEO ensures those translated pages are technically indexable, use the correct regional search terms, and serve the right version to the right user via hreflang tags."
+          },
+          {
+            "question": "What are hreflang tags?",
+            "answer": "Hreflang is a piece of code that tells Google the language and geographic target of a webpage. It prevents Google from seeing your US English and UK English sites as duplicate content."
+          },
+          {
+            "question": "Should I use a .com/fr/, fr.domain.com, or domain.fr?",
+            "answer": "It depends. A ccTLD (domain.fr) is strongest for local trust but hardest to maintain. A subdirectory (.com/fr/) consolidates your domain authority. We help you choose the best model for your resources."
+          },
+          {
+            "question": "Do you optimize for search engines other than Google?",
+            "answer": "Yes. If your target market requires it, we optimize for regional search engines like Bing (Global), Baidu (China), Yandex (Russia), and Naver (South Korea), each of which has unique algorithms."
+          },
+          {
+            "question": "Do I need a native speaker to write the content?",
+            "answer": "Yes. We use a process called 'transcreation'. Native SEO specialists adapt your content so it reads naturally and includes the exact slang and phrasing local users type into search engines."
+          },
+          {
+            "question": "Why is my UK site ranking in the US instead of my US site?",
+            "answer": "This is a classic 'Hreflang conflict'. Your technical signals are confusing Google. We audit your code to fix these cannibalization issues so the correct regional site ranks."
+          },
+          {
+            "question": "Can you handle RTL (Right-to-Left) languages like Arabic?",
+            "answer": "Absolutely. We ensure your website architecture and technical SEO are fully optimized for RTL languages, maintaining excellent user experience and crawlability."
+          },
+          {
+            "question": "How long does International SEO take?",
+            "answer": "International SEO is a long-term play. Setting up the technical architecture takes 1-2 months. Building local authority and seeing significant traffic growth typically takes 6-12 months per market."
+          }
+        ],
+        "technologies": [
+          { "icon": "google", "name": "Google Search Console" },
+          { "icon": "code", "name": "Hreflang Generators" },
+          { "icon": "search", "name": "SEMrush (Global Database)" },
+          { "icon": "search", "name": "Ahrefs" },
+          { "icon": "wordpress", "name": "WPML / Polylang" },
+          { "icon": "api", "name": "Screaming Frog (Hreflang Auditing)" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Uluslararası SEO",
+      "shortDescription": "Markanızı küresel çapta genişletin. Web sitenizin mimarisini, içeriğini ve kodunu birden fazla dilde, ülkede ve arama motorunda üst sıralarda yer alacak şekilde optimize ediyoruz.",
+      "fullDescription": "İşletmenizi küresel olarak ölçeklendirmek, yalnızca ana sayfanızı çevirmekten daha fazlasını gerektirir. Uluslararası SEO son derece karmaşıktır; yanlış yapılırsa mevcut trafiğinizi kendi kendinize yeme (cannibalization), arama motorlarının kafasını karıştırma ve yerel kitleleri uzaklaştırma riskiyle karşı karşıya kalırsınız. Uluslararası SEO hizmetlerimiz, dış pazarlara hakim olmak için gereken teknik ve kültürel temeli sağlar. Operasyonel yeteneklerinize göre (ccTLD'ler, alt alan adları (subdomain) veya alt dizinler (subdirectory) kullanarak) ölçeklenebilir, küresel site mimarileri oluşturuyoruz. Google'ın doğru dili ve bölgesel sürümü doğru kullanıcıya sunmasını sağlamak için kusursuz hreflang etiketleri uyguluyoruz. Kodun ötesinde, içeriğinizi bölgesel arama niyetine, deyimlere ve kültürel nüanslara uyacak şekilde uyarlayarak yerelleştirilmiş anahtar kelime araştırması yapıyoruz. İster İngiltere'deki İngilizce konuşanları, ister Latin Amerika'daki İspanyolca konuşanları, ister Orta Doğu ve Asya'daki (sağdan sola (RTL) dil optimizasyonu dahil) yerelleştirilmiş pazarları hedefliyor olun, markanızın onların dilini konuşmasını ve o dilde sıralamaya girmesini sağlıyoruz.",
+      "features": [
+        "Küresel Web Sitesi Mimari Stratejisi",
+        "Teknik Hreflang Etiketi Uygulaması",
+        "Yerelleştirilmiş Anahtar Kelime ve Arama Niyeti Araştırması",
+        "ccTLD, Alt Alan Adı (Subdomain) ve Alt Dizin Optimizasyonu",
+        "Google Search Console Üzerinden Coğrafi Hedefleme (Geo-targeting)",
+        "Çok Dilli İçerik Uyarlaması (Transcreation) ve SEO",
+        "Uluslararası ve Bölgeye Özel Bağlantı Oluşturma (Link Building)",
+        "Baidu, Yandex ve Naver Optimizasyonu (gerekirse)"
+      ],
+      "benefits": [
+        "Henüz ulaşılmamış küresel pazarlarda devasa yeni gelir akışlarının kilidini açın",
+        "Kullanıcıların web sitenizi kendi ana dillerinde ve para birimlerinde görmesini sağlayın",
+        "Uluslararası siteleriniz genelinde yinelenen içerik cezalarını (duplicate content penalty) önleyin",
+        "Yerel kültürel nüanslara ve arama alışkanlıklarına hitap ederek marka güveni oluşturun",
+        "Kurumsal düzeyde SEO mimarisinden yoksun yerel rakipleri geride bırakın",
+        "Daha kolay yönetim ve raporlama için küresel SEO stratejinizi merkezileştirin"
+      ],
+      "metaTitle": "Uluslararası & Çok Dilli SEO Ajansı | PakSoft",
+      "metaDescription": "Uzman Uluslararası SEO hizmetleriyle küresel olarak büyüyün. Hreflang uygulaması, yerel anahtar kelime araştırması ve çok dilli site mimarisini yönetiyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Küresel Pazar Fırsat Analizi",
+            "description": "Genişleme için en yüksek yatırım getirisini sunan ülke ve dilleri önceliklendirmek üzere uluslararası arama hacmini, rekabeti ve mevcut küresel trafiğinizi analiz ediyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Teknik Mimari Stratejisi",
+            "description": "SEO gücünü, yerelleştirmeyi ve geliştirme kaynaklarını dengeleyerek işletmeniz için en iyi URL yapısını (ör. brand.fr, brand.com/fr/ veya fr.brand.com) belirliyoruz."
+          },
+          {
+            "step": 3,
+            "title": "Hreflang ve Coğrafi Hedefleme Kurulumu",
+            "description": "Arama motorlarına bir sayfanın hangi sürümünün hangi bölgeye ait olduğunu açıkça belirtmek için karmaşık hreflang ek açıklamalarını (HTML, HTTP başlıkları veya XML site haritaları aracılığıyla) uyguluyoruz."
+          },
+          {
+            "step": 4,
+            "title": "Yerelleştirilmiş Anahtar Kelime Araştırması",
+            "description": "Sadece anahtar kelimeleri çevirmiyoruz. Anadili olan SEO uzmanları, yerel kullanıcıların gerçekte nasıl arama yaptığını araştırır, bölgesel deyimleri, argoyu ve spesifik arama niyetlerini ortaya çıkarır."
+          },
+          {
+            "step": 5,
+            "title": "İçerik Uyarlaması (Transcreation)",
+            "description": "SEO en iyi uygulamalarını korurken tonu, para birimini, ölçümleri ve referansları ayarlayarak içeriğinizi hedef pazarla kültürel olarak yankı uyandıracak şekilde uyarlıyoruz."
+          },
+          {
+            "step": 6,
+            "title": "Yerel Bağlantı Oluşturma (Link Building)",
+            "description": "Belirli bir ülkede sıralamaya girmek için o ülkeden gelen bağlantılara ihtiyacınız vardır. Yüksek otoriteli yerel geri bağlantılar (backlinks) kazanmak için hedeflenmiş dijital PR ve erişim kampanyaları yürütüyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Çeviri ile Uluslararası SEO arasındaki fark nedir?",
+            "answer": "Çeviri sadece kelimeleri değiştirir. Uluslararası SEO, çevrilen sayfaların teknik olarak dizine eklenebilmesini (indexable), doğru bölgesel arama terimlerini kullanmasını ve hreflang etiketleri aracılığıyla doğru sürümü doğru kullanıcıya sunmasını sağlar."
+          },
+          {
+            "question": "Hreflang etiketleri nedir?",
+            "answer": "Hreflang, Google'a bir web sayfasının dilini ve coğrafi hedefini söyleyen bir kod parçasıdır. Google'ın ABD İngilizcesi ve İngiltere İngilizcesi sitelerinizi yinelenen içerik (duplicate content) olarak görmesini engeller."
+          },
+          {
+            "question": ".com/fr/, fr.domain.com veya domain.fr'den hangisini kullanmalıyım?",
+            "answer": "Duruma göre değişir. Bir ccTLD (domain.fr) yerel güven için en güçlüsüdür ancak sürdürülmesi en zor olanıdır. Bir alt dizin (.com/fr/) alan adı otoritenizi birleştirir. Kaynaklarınız için en iyi modeli seçmenize yardımcı oluyoruz."
+          },
+          {
+            "question": "Google dışındaki arama motorları için optimizasyon yapıyor musunuz?",
+            "answer": "Evet. Hedef pazarınız gerektiriyorsa, her birinin kendine özgü algoritmaları olan Bing (Küresel), Baidu (Çin), Yandex (Rusya) ve Naver (Güney Kore) gibi bölgesel arama motorları için optimizasyon yapıyoruz."
+          },
+          {
+            "question": "İçeriği yazmak için o dili anadil olarak konuşan (native) birine ihtiyacım var mı?",
+            "answer": "Evet. 'Transcreation' (uyarlama) adı verilen bir süreç kullanıyoruz. Anadili olan SEO uzmanları, içeriğinizin doğal bir şekilde okunmasını ve yerel kullanıcıların arama motorlarına yazdığı tam argoyu ve ifadeleri içermesini sağlar."
+          },
+          {
+            "question": "İngiltere sitem neden ABD sitem yerine ABD'de sıralanıyor?",
+            "answer": "Bu klasik bir 'Hreflang çakışması' (conflict) durumudur. Teknik sinyalleriniz Google'ın kafasını karıştırıyor. Doğru bölgesel sitenin sıralanması için bu kendi kendini yeme (cannibalization) sorunlarını çözmek üzere kodunuzu denetliyoruz."
+          },
+          {
+            "question": "Arapça gibi RTL (Sağdan Sola) dillerle başa çıkabilir misiniz?",
+            "answer": "Kesinlikle. Mükemmel kullanıcı deneyimini ve taranabilirliği (crawlability) koruyarak web sitesi mimarinizin ve teknik SEO'nuzun RTL dilleri için tamamen optimize edilmesini sağlıyoruz."
+          },
+          {
+            "question": "Uluslararası SEO ne kadar sürer?",
+            "answer": "Uluslararası SEO uzun vadeli bir oyundur. Teknik mimariyi kurmak 1-2 ay sürer. Yerel otorite oluşturmak ve önemli bir trafik artışı görmek pazar başına tipik olarak 6-12 ay sürer."
+          }
+        ],
+        "technologies": [
+          { "icon": "google", "name": "Google Search Console" },
+          { "icon": "code", "name": "Hreflang Generators" },
+          { "icon": "search", "name": "SEMrush (Global Database)" },
+          { "icon": "search", "name": "Ahrefs" },
+          { "icon": "wordpress", "name": "WPML / Polylang" },
+          { "icon": "api", "name": "Screaming Frog (Hreflang Auditing)" }
+        ]
+      }
+    },
+    "de": {
+      "name": "Internationales SEO",
+      "shortDescription": "Expandieren Sie Ihre Marke global. Wir optimieren Website-Architektur, Inhalte und Code, um in mehreren Sprachen, Ländern und Suchmaschinen hoch zu ranken.",
+      "fullDescription": "Die globale Skalierung Ihres Unternehmens erfordert mehr als nur die Übersetzung der Startseite. Internationales SEO ist hochkomplex; bei falscher Umsetzung riskieren Sie Kannibalisierung Ihres bestehenden Traffics und die Verwirrung von Suchmaschinen. Unsere Dienste bieten die technische und kulturelle Grundlage, um ausländische Märkte zu dominieren. Wir entwickeln skalierbare, globale Seitenarchitekturen (ccTLDs, Subdomains oder Unterverzeichnisse). Wir implementieren fehlerfreie Hreflang-Tags, damit Google dem richtigen Nutzer die korrekte Sprachversion ausliefert. Wir führen lokalisierte Keyword-Recherchen durch und passen Inhalte an die regionale Suchintention, Redewendungen und kulturelle Nuancen an. Ob englischsprachige Nutzer in Großbritannien, Spanisch in Lateinamerika oder lokalisierte Märkte in Asien – wir sorgen dafür, dass Ihre Marke deren Sprache spricht und dafür rankt.",
+      "features": [
+        "Strategie für globale Website-Architektur",
+        "Technische Implementierung von Hreflang-Tags",
+        "Lokalisierte Keyword- & Suchintentions-Recherche",
+        "ccTLD-, Subdomain- & Unterverzeichnis-Optimierung",
+        "Geo-Targeting via Google Search Console",
+        "Mehrsprachige Content-Transkreation & SEO",
+        "Internationales & regionenspezifisches Linkbuilding",
+        "Baidu, Yandex & Naver Optimierung (falls zutreffend)"
+      ],
+      "benefits": [
+        "Erschließen Sie massive neue Einnahmequellen in globalen Märkten",
+        "Stellen Sie sicher, dass Nutzer Ihre Seite in ihrer Muttersprache sehen",
+        "Vermeiden Sie Strafen für Duplicate Content auf Ihren internationalen Seiten",
+        "Bauen Sie Vertrauen auf, indem Sie lokale Suchgewohnheiten bedienen",
+        "Übertreffen Sie lokale Konkurrenten durch eine Enterprise-SEO-Architektur",
+        "Zentralisieren Sie Ihre globale SEO-Strategie für einfacheres Management"
+      ],
+      "metaTitle": "Internationale & Mehrsprachige SEO Agentur | PakSoft",
+      "metaDescription": "Expandieren Sie global mit professionellen internationalen SEO-Diensten. Wir verwalten Hreflang-Tags, lokale Keyword-Recherchen und mehrsprachige Architektur.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Globale Marktchancen-Analyse",
+            "description": "Wir analysieren Suchvolumen, Wettbewerb und aktuellen Traffic, um zu priorisieren, welche Länder und Sprachen den höchsten ROI bieten."
+          },
+          {
+            "step": 2,
+            "title": "Strategie der technischen Architektur",
+            "description": "Wir bestimmen die beste URL-Struktur (z.B. brand.fr, brand.com/fr/ oder fr.brand.com), abgewogen nach SEO-Power und Entwicklungsressourcen."
+          },
+          {
+            "step": 3,
+            "title": "Hreflang & Geo-Targeting Setup",
+            "description": "Wir implementieren komplexe Hreflang-Anmerkungen, um Suchmaschinen explizit mitzuteilen, welche Seitenversion zu welcher Region gehört."
+          },
+          {
+            "step": 4,
+            "title": "Lokalisierte Keyword-Recherche",
+            "description": "Wir übersetzen nicht nur. Native SEO-Experten recherchieren das tatsächliche Suchverhalten, um regionale Redewendungen und Absichten aufzudecken."
+          },
+          {
+            "step": 5,
+            "title": "Content Transkreation",
+            "description": "Wir passen Inhalte kulturell an den Zielmarkt an (Währung, Maßeinheiten, Tonalität), unter Beibehaltung der SEO-Best-Practices."
+          },
+          {
+            "step": 6,
+            "title": "Lokales Linkbuilding",
+            "description": "Um in einem bestimmten Land zu ranken, benötigen Sie Links von dort. Wir führen gezielte PR-Kampagnen für lokale Backlinks durch."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Was ist der Unterschied zwischen Übersetzung und Internationalem SEO?",
+            "answer": "Übersetzung ändert nur Wörter. SEO stellt sicher, dass Seiten indexierbar sind, lokale Suchbegriffe nutzen und via Hreflang korrekt ausgeliefert werden."
+          },
+          {
+            "question": "Was sind Hreflang-Tags?",
+            "answer": "Code-Snippets, die Google die Sprache und geografische Ausrichtung einer Seite mitteilen. Sie verhindern, dass z.B. Ihre DE- und CH-Seiten als Duplicate Content gelten."
+          },
+          {
+            "question": "Sollte ich .com/fr/, fr.domain.com oder domain.fr nutzen?",
+            "answer": "Eine ccTLD (domain.fr) schafft am meisten lokales Vertrauen, ist aber aufwendig. Ein Unterverzeichnis (.com/fr/) bündelt die Domain-Autorität."
+          },
+          {
+            "question": "Optimieren Sie auch für andere Suchmaschinen als Google?",
+            "answer": "Ja. Wenn Ihr Zielmarkt es erfordert, optimieren wir für Bing, Baidu (China), Yandex (Russland) und Naver (Südkorea)."
+          },
+          {
+            "question": "Brauche ich Muttersprachler für die Inhalte?",
+            "answer": "Ja. Wir nutzen 'Transkreation'. Native SEO-Spezialisten passen Inhalte an, damit sie natürlich klingen und lokale Slangs enthalten."
+          },
+          {
+            "question": "Warum rankt meine UK-Seite in den USA statt meiner US-Seite?",
+            "answer": "Dies ist ein klassischer 'Hreflang-Konflikt'. Wir überprüfen Ihren Code, um diese Kannibalisierungsprobleme zu beheben."
+          },
+          {
+            "question": "Können Sie auch RTL (Rechts-nach-links) Sprachen wie Arabisch?",
+            "answer": "Absolut. Wir stellen sicher, dass Ihre Website-Architektur und das technische SEO für RTL-Sprachen optimiert sind."
+          },
+          {
+            "question": "Wie lange dauert Internationales SEO?",
+            "answer": "Es ist langfristig. Das Setup dauert 1-2 Monate. Der Aufbau lokaler Autorität und signifikantes Wachstum dauern in der Regel 6-12 Monate pro Markt."
+          }
+        ],
+        "technologies": [
+          { "icon": "google", "name": "Google Search Console" },
+          { "icon": "code", "name": "Hreflang Generators" },
+          { "icon": "search", "name": "SEMrush (Global Database)" },
+          { "icon": "search", "name": "Ahrefs" },
+          { "icon": "wordpress", "name": "WPML / Polylang" },
+          { "icon": "api", "name": "Screaming Frog (Hreflang Auditing)" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "بین الاقوامی SEO",
+      "shortDescription": "اپنے برانڈ کو عالمی سطح پر پھیلائیں۔ ہم متعدد زبانوں، ممالک اور سرچ انجنوں پر اعلیٰ درجہ بندی کے لیے آپ کی ویب سائٹ کے فن تعمیر اور مواد کو بہتر بناتے ہیں۔",
+      "fullDescription": "اپنے کاروبار کو عالمی سطح پر بڑھانے کے لیے صرف ہوم پیج کا ترجمہ کرنے سے زیادہ کی ضرورت ہے۔ بین الاقوامی SEO انتہائی پیچیدہ ہے؛ اگر اسے غلط طریقے سے کیا جائے، تو آپ اپنی موجودہ ٹریفک کو نقصان پہنچانے، سرچ انجنوں کو الجھانے، اور مقامی سامعین کو دور کرنے کا خطرہ مول لیتے ہیں۔ ہماری بین الاقوامی SEO خدمات غیر ملکی مارکیٹوں پر غلبہ حاصل کرنے کے لیے ضروری تکنیکی اور ثقافتی بنیاد فراہم کرتی ہیں۔ ہم آپ کی صلاحیتوں کی بنیاد پر اسکیل ایبل، عالمی سائٹ کے ڈھانچے (ccTLDs، ذیلی ڈومینز، یا ذیلی ڈائریکٹریز کا استعمال کرتے ہوئے) ترتیب دیتے ہیں۔ ہم یہ یقینی بنانے کے لیے بے عیب hreflang ٹیگز لاگو کرتے ہیں کہ گوگل صحیح صارف کو صحیح زبان اور علاقائی ورژن فراہم کرے۔ ہم آپ کے مواد کو علاقائی تلاش کے ارادے، محاوروں اور ثقافتی باریکیوں سے مطابقت رکھنے کے لیے ڈھالتے ہیں۔",
+      "features": [
+        "عالمی ویب سائٹ کے فن تعمیر کی حکمت عملی",
+        "تکنیکی Hreflang ٹیگ کا نفاذ",
+        "مقامی کلیدی الفاظ اور تلاش کے ارادے کی تحقیق",
+        "ccTLD، سب ڈومین اور سب ڈائرکٹری کی آپٹیمائزیشن",
+        "گوگل سرچ کنسول کے ذریعے جیو ٹارگٹنگ",
+        "کثیر لسانی مواد کی ٹرانس کری ایشن اور SEO",
+        "بین الاقوامی اور خطے کے لحاظ سے لنک بلڈنگ",
+        "Baidu, Yandex اور Naver آپٹیمائزیشن (اگر قابل اطلاق ہو)"
+      ],
+      "benefits": [
+        "نئی عالمی مارکیٹوں میں آمدنی کے بڑے نئے ذرائع کھولیں",
+        "یقینی بنائیں کہ صارفین آپ کی ویب سائٹ کو اپنی مادری زبان میں دیکھیں",
+        "اپنی بین الاقوامی سائٹس پر ڈپلیکیٹ مواد کے جرمانے سے بچیں",
+        "مقامی ثقافتی باریکیوں اور تلاش کی عادات کو پورا کر کے برانڈ کا اعتماد قائم کریں",
+        "ان مقامی حریفوں کو پیچھے چھوڑیں جن کے پاس انٹرپرائز لیول کا SEO نہیں ہے",
+        "آسان انتظام اور رپورٹنگ کے لیے اپنی عالمی SEO حکمت عملی کو مرکزی بنائیں"
+      ],
+      "metaTitle": "بین الاقوامی اور کثیر لسانی SEO ایجنسی | PakSoft",
+      "metaDescription": "ماہر بین الاقوامی SEO خدمات کے ساتھ عالمی سطح پر پھیلیں۔ ہم hreflang کے نفاذ، مقامی کلیدی الفاظ کی تحقیق، اور کثیر لسانی سائٹ کے فن تعمیر کا انتظام کرتے ہیں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "عالمی مارکیٹ کے مواقع کا تجزیہ",
+            "description": "ہم اس بات کو ترجیح دینے کے لیے بین الاقوامی تلاش کے حجم، مسابقت اور آپ کی موجودہ ٹریفک کا تجزیہ کرتے ہیں کہ کون سے ممالک بہترین ROI پیش کرتے ہیں۔"
+          },
+          {
+            "step": 2,
+            "title": "تکنیکی فن تعمیر کی حکمت عملی",
+            "description": "ہم آپ کے کاروبار کے لیے بہترین URL کا ڈھانچہ (جیسے brand.fr, brand.com/fr/, یا fr.brand.com) طے کرتے ہیں۔"
+          },
+          {
+            "step": 3,
+            "title": "Hreflang اور جیو ٹارگٹنگ سیٹ اپ",
+            "description": "ہم سرچ انجنوں کو واضح طور پر بتانے کے لیے پیچیدہ hreflang تشریحات (HTML، یا XML سائٹ میپس کے ذریعے) لاگو کرتے ہیں کہ کون سا صفحہ کس خطے کا ہے۔"
+          },
+          {
+            "step": 4,
+            "title": "مقامی کلیدی الفاظ کی تحقیق",
+            "description": "ہم صرف کلیدی الفاظ کا ترجمہ نہیں کرتے۔ ماہرین تحقیق کرتے ہیں کہ مقامی صارفین حقیقت میں کس طرح تلاش کرتے ہیں، مقامی محاوروں اور ارادوں کو بے نقاب کرتے ہیں۔"
+          },
+          {
+            "step": 5,
+            "title": "مواد کی منتقلی (Transcreation)",
+            "description": "ہم SEO کے بہترین طریقوں کو برقرار رکھتے ہوئے ہدف کی مارکیٹ کے ساتھ ثقافتی طور پر گونجنے کے لیے آپ کے مواد، لہجے اور کرنسی کو اپناتے ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "مقامی لنک بلڈنگ",
+            "description": "کسی مخصوص ملک میں درجہ بندی کرنے کے لیے، آپ کو وہاں سے لنکس درکار ہیں۔ ہم اعلیٰ اختیار والے مقامی بیک لنکس حاصل کرنے کے لیے مہمات چلاتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "ترجمہ اور بین الاقوامی SEO کے درمیان کیا فرق ہے؟",
+            "answer": "ترجمہ صرف الفاظ کو تبدیل کرتا ہے۔ بین الاقوامی SEO یقینی بناتا ہے کہ وہ صفحات قابل اشاریہ ہیں، درست اصطلاحات استعمال کرتے ہیں، اور hreflang کے ذریعے صحیح صارف کو پیش کیے جاتے ہیں۔"
+          },
+          {
+            "question": "hreflang ٹیگز کیا ہیں؟",
+            "answer": "Hreflang کوڈ کا ایک ٹکڑا ہے جو گوگل کو ویب پیج کی زبان اور جغرافیائی ہدف بتاتا ہے۔ یہ گوگل کو آپ کی امریکی اور برطانوی سائٹس کو ڈپلیکیٹ مواد کے طور پر دیکھنے سے روکتا ہے۔"
+          },
+          {
+            "question": "کیا مجھے .com/fr/، fr.domain.com، یا domain.fr استعمال کرنا چاہیے؟",
+            "answer": "یہ منحصر ہے. ایک ccTLD (domain.fr) مقامی اعتماد کے لیے سب سے مضبوط ہے لیکن اسے برقرار رکھنا مشکل ہے۔ ذیلی ڈائرکٹری (.com/fr/) آپ کے ڈومین اتھارٹی کو مضبوط کرتی ہے۔"
+          },
+          {
+            "question": "کیا آپ گوگل کے علاوہ دیگر سرچ انجنوں کے لیے آپٹیمائز کرتے ہیں؟",
+            "answer": "ہاں۔ اگر آپ کی ٹارگٹ مارکیٹ کو اس کی ضرورت ہے، تو ہم علاقائی سرچ انجنوں جیسے Bing (عالمی)، Baidu (چین)، Yandex (روس) اور Naver (جنوبی کوریا) کے لیے آپٹیمائز کرتے ہیں۔"
+          },
+          {
+            "question": "کیا مجھے مواد لکھنے کے لیے مقامی بولنے والے کی ضرورت ہے؟",
+            "answer": "ہاں۔ مقامی SEO ماہرین آپ کے مواد کو ڈھالتے ہیں تاکہ یہ قدرتی طور پر پڑھا جائے اور اس میں عین مقامی الفاظ شامل ہوں جو صارفین سرچ انجنوں میں ٹائپ کرتے ہیں۔"
+          },
+          {
+            "question": "میری امریکی سائٹ کے بجائے میری یو کے سائٹ امریکہ میں کیوں رینک کر رہی ہے؟",
+            "answer": "یہ کلاسک 'Hreflang تنازعہ' ہے۔ آپ کے تکنیکی سگنل گوگل کو الجھا رہے ہیں۔ ہم ان مسائل کو حل کرنے کے لیے آپ کے کوڈ کا آڈٹ کرتے ہیں۔"
+          },
+          {
+            "question": "کیا آپ عربی جیسی RTL (دائیں سے بائیں) زبانوں کو سنبھال سکتے ہیں؟",
+            "answer": "بالکل۔ ہم اس بات کو یقینی بناتے ہیں کہ آپ کی ویب سائٹ کا فن تعمیر اور تکنیکی SEO، RTL زبانوں کے لیے مکمل طور پر موزوں ہے، جس سے بہترین صارف کا تجربہ برقرار رہتا ہے۔"
+          },
+          {
+            "question": "بین الاقوامی SEO میں کتنا وقت لگتا ہے؟",
+            "answer": "یہ ایک طویل مدتی کھیل ہے۔ تکنیکی فن تعمیر کو ترتیب دینے میں 1-2 مہینے لگتے ہیں۔ مقامی اتھارٹی بنانے میں عام طور پر فی مارکیٹ 6-12 مہینے لگتے ہیں۔"
+          }
+        ],
+        "technologies": [
+          { "icon": "google", "name": "Google Search Console" },
+          { "icon": "code", "name": "Hreflang Generators" },
+          { "icon": "search", "name": "SEMrush (Global Database)" },
+          { "icon": "search", "name": "Ahrefs" },
+          { "icon": "wordpress", "name": "WPML / Polylang" },
+          { "icon": "api", "name": "Screaming Frog (Hreflang Auditing)" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "تحسين محركات البحث الدولي (International SEO)",
+      "shortDescription": "قم بتوسيع علامتك التجارية عالمياً. نقوم بتحسين بنية موقع الويب الخاص بك والمحتوى ليحتل مرتبة عالية عبر لغات وبلدان ومحركات بحث متعددة.",
+      "fullDescription": "يتطلب توسيع نطاق عملك عالمياً أكثر من مجرد ترجمة صفحتك الرئيسية. يعد تحسين محركات البحث الدولي (International SEO) أمراً معقداً للغاية؛ إذا تم القيام به بشكل غير صحيح، فإنك تخاطر بتفكيك حركة المرور الحالية لديك، وإرباك محركات البحث، وإبعاد الجماهير المحلية. توفر خدماتنا الأساس الفني والثقافي اللازم للسيطرة على الأسواق الأجنبية. نقوم بتصميم هياكل مواقع عالمية قابلة للتطوير (باستخدام ccTLDs أو النطاقات الفرعية أو الأدلة الفرعية). ننفذ علامات hreflang خالية من العيوب لضمان تقديم جوجل للغة والإصدار الإقليمي الصحيح للمستخدم المناسب. إلى جانب الكود، نجري بحثاً محلياً عن الكلمات الرئيسية، ونتكيف مع المحتوى الخاص بك ليتناسب مع نية البحث الإقليمية والتعابير والفروق الثقافية الدقيقة. سواء كنت تستهدف أسواقاً باللغة الإنجليزية في المملكة المتحدة، أو الإسبانية في أمريكا اللاتينية، أو الأسواق المحلية في الشرق الأوسط (بما في ذلك تحسين اللغة من اليمين إلى اليسار RTL)، فإننا نضمن أن علامتك تتحدث لغتهم.",
+      "features": [
+        "استراتيجية بنية موقع الويب العالمية",
+        "تنفيذ العلامة التقنية Hreflang",
+        "البحث عن الكلمات الرئيسية المحلية ونية البحث",
+        "تحسين ccTLD والنطاقات الفرعية (Subdomains)",
+        "الاستهداف الجغرافي عبر Google Search Console",
+        "ترجمة وتكييف المحتوى متعدد اللغات (Transcreation)",
+        "بناء الروابط الدولية والخاصة بالمنطقة",
+        "تحسين Baidu و Yandex و Naver (إن وجد)"
+      ],
+      "benefits": [
+        "فتح مصادر إيرادات جديدة ضخمة في أسواق عالمية غير مستغلة",
+        "تأكد من أن المستخدمين يرون موقع الويب الخاص بك بلغتهم وعملتهم",
+        "منع عقوبات المحتوى المكرر عبر مواقعك الدولية",
+        "بناء ثقة العلامة التجارية من خلال تلبية العادات الثقافية المحلية",
+        "التفوق على المنافسين المحليين الذين يفتقرون إلى بنية SEO للمؤسسات",
+        "مركزية استراتيجية تحسين محركات البحث العالمية لتسهيل الإدارة"
+      ],
+      "metaTitle": "وكالة تحسين محركات البحث الدولية ومتعددة اللغات | PakSoft",
+      "metaDescription": "توسع عالمياً من خلال خدمات SEO الدولية. نحن ندير تنفيذ hreflang، وبحث الكلمات الرئيسية المحلية، وبنية الموقع متعدد اللغات.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "تحليل فرص السوق العالمية",
+            "description": "نحلل حجم البحث الدولي، والمنافسة، وحركة المرور الحالية لتحديد أولويات البلدان واللغات التي تقدم أعلى عائد استثمار للتوسع."
+          },
+          {
+            "step": 2,
+            "title": "استراتيجية البنية التقنية",
+            "description": "نحدد أفضل هيكل URL لعملك (مثل brand.fr أو brand.com/fr/) مع الموازنة بين قوة تحسين محركات البحث والتعريب والموارد."
+          },
+          {
+            "step": 3,
+            "title": "إعداد Hreflang والاستهداف الجغرافي",
+            "description": "نقوم بتنفيذ تعليقات hreflang المعقدة لإخبار محركات البحث صراحة بأي إصدار من الصفحة ينتمي إلى أي منطقة جغرافية."
+          },
+          {
+            "step": 4,
+            "title": "بحث الكلمات الرئيسية المحلية",
+            "description": "نحن لا نترجم الكلمات الرئيسية فقط. يبحث خبراء SEO المحليون في كيفية بحث المستخدمين الفعليين، مع الكشف عن التعابير الإقليمية."
+          },
+          {
+            "step": 5,
+            "title": "تكييف المحتوى (Transcreation)",
+            "description": "نقوم بتكييف المحتوى الخاص بك ليتوافق ثقافياً مع السوق المستهدف، وتعديل النغمة والعملة والقياسات مع الحفاظ على أفضل ممارسات SEO."
+          },
+          {
+            "step": 6,
+            "title": "بناء الروابط المحلية",
+            "description": "لترتيب موقعك في بلد معين، تحتاج إلى روابط من ذلك البلد. ننفذ حملات علاقات عامة رقمية مستهدفة لكسب روابط خلفية محلية ذات سلطة."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما الفرق بين الترجمة و SEO الدولي؟",
+            "answer": "الترجمة تغير الكلمات فقط. يضمن SEO الدولي قابلية فهرسة تلك الصفحات تقنياً، واستخدام مصطلحات البحث الصحيحة، وتقديم الإصدار الصحيح عبر hreflang."
+          },
+          {
+            "question": "ما هي علامات hreflang؟",
+            "answer": "جزء من التعليمات البرمجية يخبر جوجل باللغة والهدف الجغرافي لصفحة الويب. يمنع جوجل من رؤية مواقعك الإنجليزية الأمريكية والبريطانية كمحتوى مكرر."
+          },
+          {
+            "question": "هل يجب أن أستخدم .com/fr/ أو fr.domain.com أو domain.fr؟",
+            "answer": "يعتمد ذلك. يعتبر النطاق المحلي (domain.fr) الأقوى للثقة المحلية ولكنه الأصعب في الصيانة. أما الدليل الفرعي (.com/fr/) فيعزز سلطة نطاقك المركزي."
+          },
+          {
+            "question": "هل تقومون بالتحسين لمحركات بحث أخرى غير جوجل؟",
+            "answer": "نعم. إذا تطلب سوقك المستهدف ذلك، نقوم بالتحسين لمحركات البحث الإقليمية مثل Bing و Baidu (الصين) و Yandex (روسيا) ولكل منها خوارزميات فريدة."
+          },
+          {
+            "question": "هل أحتاج إلى متحدث أصلي لكتابة المحتوى؟",
+            "answer": "نعم. نستخدم عملية تسمى 'التكييف الثقافي'. يقوم خبراء SEO المحليون بتكييف المحتوى ليقرأ بشكل طبيعي ويتضمن المصطلحات الدقيقة التي يكتبها المستخدمون."
+          },
+          {
+            "question": "لماذا يتم ترتيب موقعي في المملكة المتحدة في الولايات المتحدة بدلاً من موقعي الأمريكي؟",
+            "answer": "هذا تعارض كلاسيكي في Hreflang. إشاراتك الفنية تربك جوجل. نقوم بتدقيق الكود الخاص بك لإصلاح مشكلات التفكيك هذه."
+          },
+          {
+            "question": "هل يمكنك التعامل مع لغات RTL (من اليمين إلى اليسار) مثل العربية؟",
+            "answer": "بالتأكيد. نضمن تحسين بنية موقعك و SEO التقني بالكامل للغات RTL، مع الحفاظ على تجربة مستخدم ممتازة وقابلية زحف خالية من الأخطاء."
+          },
+          {
+            "question": "كم من الوقت يستغرق SEO الدولي؟",
+            "answer": "يستغرق إعداد البنية الفنية من شهر إلى شهرين. عادةً ما يستغرق بناء السلطة المحلية ورؤية نمو كبير في حركة المرور من 6 إلى 12 شهراً لكل سوق."
+          }
+        ],
+        "technologies": [
+          { "icon": "google", "name": "Google Search Console" },
+          { "icon": "code", "name": "Hreflang Generators" },
+          { "icon": "search", "name": "SEMrush (Global Database)" },
+          { "icon": "search", "name": "Ahrefs" },
+          { "icon": "wordpress", "name": "WPML / Polylang" },
+          { "icon": "api", "name": "Screaming Frog (Hreflang Auditing)" }
+        ]
+      }
+    }
+  },
+  "landing-page-optimization": {
+    "en": {
+      "name": "Landing Page Optimization",
+      "shortDescription": "Turn clicks into clients. We design, build, and relentlessly A/B test high-converting landing pages that maximize the ROI of your advertising campaigns.",
+      "fullDescription": "You are spending thousands of dollars on Google Ads, Meta Ads, and email marketing to drive traffic. But if you are sending that paid traffic to a generic homepage or a poorly designed landing page, you are wasting your budget. Our Landing Page Optimization services ensure that every click has the highest possible chance of converting into a lead or a sale. We build dedicated, message-matched landing pages tailored to specific ad groups and user intent. We employ proven neuro-marketing principles, conversion copywriting, and friction-less UX design to guide visitors toward your primary Call-To-Action (CTA). From persuasive hero sections and strategic trust signals to optimized form designs and rapid page load speeds, we engineer every element for maximum conversion. We don't just guess; we use heatmaps, session recordings, and continuous A/B testing to let data dictate the winning design.",
+      "features": [
+        "Ad-to-Page Message Matching",
+        "Conversion Copywriting & Persuasion Architecture",
+        "Frictionless UX & Form Design",
+        "Strategic Trust Signals & Social Proof Integration",
+        "Heatmap & Session Recording Analysis",
+        "Continuous A/B & Multivariate Testing",
+        "Mobile-First Responsive Design",
+        "Sub-second Page Load Speed Optimization"
+      ],
+      "benefits": [
+        "Dramatically decrease your Cost Per Acquisition (CPA)",
+        "Extract significantly more revenue from your existing ad spend",
+        "Improve Google Ads Quality Scores, lowering your Cost Per Click (CPC)",
+        "Eliminate user confusion with clear, singular calls-to-action",
+        "Build instant trust with users who have never heard of your brand",
+        "Make data-driven design decisions based on actual user behavior"
+      ],
+      "metaTitle": "Landing Page Optimization Services | CRO Agency | PakSoft",
+      "metaDescription": "Turn your paid traffic into leads and sales. We design, build, and rigorously A/B test high-converting landing pages to maximize your advertising ROI.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Campaign & Audience Analysis",
+            "description": "We analyze your ad campaigns (search, social, email) to understand the exact intent, promise, and demographic of the traffic arriving on the page."
+          },
+          {
+            "step": 2,
+            "title": "Wireframing & Copywriting",
+            "description": "We outline the 'persuasion architecture' of the page. Our copywriters craft compelling headlines, benefit-driven bullet points, and strong CTAs that match the ad's promise."
+          },
+          {
+            "step": 3,
+            "title": "Design & Development",
+            "description": "Our UI/UX team designs a visually appealing, mobile-first page. We build the page using rapid-deployment builders (Unbounce) or custom code, ensuring lightning-fast load times."
+          },
+          {
+            "step": 4,
+            "title": "Trust & Friction Optimization",
+            "description": "We strategically place trust signals (reviews, logos, guarantees) and optimize the lead capture form to minimize the cognitive load required to submit."
+          },
+          {
+            "step": 5,
+            "title": "Launch & Analytics Setup",
+            "description": "We integrate the page with your CRM, set up accurate conversion tracking pixels, and deploy heatmapping tools (like Hotjar) to record user interactions."
+          },
+          {
+            "step": 6,
+            "title": "A/B Testing & Iteration",
+            "description": "We never 'set it and forget it.' We continuously run A/B tests on headlines, hero images, form lengths, and button colors, scaling the winning variations."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Why shouldn't I just send ad traffic to my homepage?",
+            "answer": "Homepages have too many distractions, navigation links, and generic messaging. A landing page has one singular goal (e.g., fill out a form) and messaging that perfectly matches the specific ad the user clicked."
+          },
+          {
+            "question": "What platform do you use to build landing pages?",
+            "answer": "We often use dedicated builders like Unbounce or Instapage for rapid A/B testing and deployment. However, we can also build custom pages directly within your CMS (WordPress, Webflow) if required."
+          },
+          {
+            "question": "What is 'Message Matching'?",
+            "answer": "Message match is when the headline of your landing page is identical to (or closely aligns with) the headline of the ad the user just clicked. This assures the user they are in the right place."
+          },
+          {
+            "question": "How long should my landing page be?",
+            "answer": "It depends on the complexity and cost of the offer. A free ebook might only need a short page with a simple form. Selling high-ticket B2B software requires a long-form page with extensive social proof and details."
+          },
+          {
+            "question": "Do you write the copy for the landing page?",
+            "answer": "Yes. Conversion copywriting is arguably the most important element of the page. Our copywriters handle everything from the main headline to the micro-copy on the submit button."
+          },
+          {
+            "question": "How much traffic do I need to run A/B tests?",
+            "answer": "To reach statistical significance quickly, you generally need a few thousand visitors per month. If traffic is lower, we make larger, higher-impact changes rather than testing small tweaks like button colors."
+          },
+          {
+            "question": "Will these pages affect my website's SEO?",
+            "answer": "No. Paid landing pages are usually 'no-indexed', meaning we tell Google not to rank them in organic search. This prevents duplicate content issues and keeps them focused solely on paid traffic."
+          },
+          {
+            "question": "How do you optimize landing page forms?",
+            "answer": "We balance lead quality with conversion rate. We use multi-step forms, progressive profiling, and clear error messaging to make filling out the form feel effortless."
+          }
+        ],
+        "technologies": [
+          { "icon": "unbounce", "name": "Unbounce / Instapage" },
+          { "icon": "hotjar", "name": "Hotjar / Clarity" },
+          { "icon": "vwo", "name": "VWO / Google Optimize" },
+          { "icon": "analytics", "name": "Google Analytics 4" },
+          { "icon": "figma", "name": "Figma" },
+          { "icon": "zapier", "name": "Zapier (CRM Routing)" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Açılış Sayfası (Landing Page) Optimizasyonu",
+      "shortDescription": "Tıklamaları müşteriye dönüştürün. Reklam kampanyalarınızın yatırım getirisini en üst düzeye çıkaran, yüksek dönüşümlü açılış sayfaları tasarlıyor, oluşturuyor ve sürekli olarak A/B testine tabi tutuyoruz.",
+      "fullDescription": "Trafik çekmek için Google Ads, Meta Reklamları ve e-posta pazarlamasına binlerce dolar harcıyorsunuz. Ancak bu ücretli trafiği genel bir ana sayfaya veya kötü tasarlanmış bir açılış sayfasına gönderiyorsanız, bütçenizi boşa harcıyorsunuz demektir. Açılış Sayfası Optimizasyonu hizmetlerimiz, her tıklamanın bir potansiyel müşteriye veya satışa dönüşme şansının en yüksek olmasını sağlar. Belirli reklam gruplarına ve kullanıcı niyetine göre uyarlanmış, mesaj uyumlu özel açılış sayfaları oluşturuyoruz. Ziyaretçileri birincil Harekete Geçirici Mesajınıza (CTA) yönlendirmek için kanıtlanmış nöro-pazarlama ilkeleri, dönüşüm metni yazarlığı ve sürtünmesiz UX tasarımı kullanıyoruz. İkna edici kahraman (hero) bölümlerinden ve stratejik güven sinyallerinden optimize edilmiş form tasarımlarına ve hızlı sayfa yükleme hızlarına kadar her unsuru maksimum dönüşüm için yapılandırıyoruz. Sadece tahmin yürütmüyoruz; kazanan tasarımı verilerin belirlemesine izin vermek için ısı haritaları, oturum kayıtları ve sürekli A/B testleri kullanıyoruz.",
+      "features": [
+        "Reklamdan Sayfaya Mesaj Uyumu (Message Match)",
+        "Dönüşüm Metin Yazarlığı ve İkna Mimarisi",
+        "Sürtünmesiz UX ve Form Tasarımı",
+        "Stratejik Güven Sinyalleri ve Sosyal Kanıt (Social Proof) Entegrasyonu",
+        "Isı Haritası (Heatmap) ve Oturum Kaydı Analizi",
+        "Sürekli A/B ve Çok Değişkenli Testler",
+        "Mobil Öncelikli (Mobile-First) Duyarlı Tasarım",
+        "Saniyenin Altında Sayfa Yükleme Hızı Optimizasyonu"
+      ],
+      "benefits": [
+        "Edinme Başına Maliyetinizi (CPA) önemli ölçüde azaltın",
+        "Mevcut reklam harcamalarınızdan önemli ölçüde daha fazla gelir elde edin",
+        "Tıklama Başına Maliyetinizi (CPC) düşürerek Google Ads Kalite Puanlarını iyileştirin",
+        "Net ve tek bir eylem çağrısı ile kullanıcı kafa karışıklığını ortadan kaldırın",
+        "Markanızı hiç duymamış kullanıcılarla anında güven oluşturun",
+        "Gerçek kullanıcı davranışlarına dayalı veri odaklı tasarım kararları alın"
+      ],
+      "metaTitle": "Açılış Sayfası Optimizasyonu | CRO Ajansı | PakSoft",
+      "metaDescription": "Ücretli trafiğinizi potansiyel müşterilere ve satışlara dönüştürün. Reklam yatırım getirinizi en üst düzeye çıkarmak için yüksek dönüşümlü açılış sayfaları tasarlıyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Kampanya ve Kitle Analizi",
+            "description": "Sayfaya gelen trafiğin kesin amacını, vaadini ve demografisini anlamak için reklam kampanyalarınızı (arama, sosyal, e-posta) analiz ediyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Tel Çerçeveleme (Wireframing) ve Metin Yazarlığı",
+            "description": "Sayfanın 'ikna mimarisinin' ana hatlarını çiziyoruz. Metin yazarlarımız, reklamın vaadiyle eşleşen çarpıcı başlıklar, fayda odaklı madde işaretleri ve güçlü CTA'lar hazırlar."
+          },
+          {
+            "step": 3,
+            "title": "Tasarım ve Geliştirme",
+            "description": "UI/UX ekibimiz görsel olarak çekici, mobil öncelikli bir sayfa tasarlar. Sayfayı hızlı dağıtım oluşturucuları (Unbounce) veya özel kod kullanarak oluşturuyor ve şimşek hızında yükleme süreleri sağlıyoruz."
+          },
+          {
+            "step": 4,
+            "title": "Güven ve Sürtünme Optimizasyonu",
+            "description": "Güven sinyallerini (incelemeler, logolar, garantiler) stratejik olarak yerleştiriyor ve göndermek için gereken bilişsel yükü en aza indirmek için potansiyel müşteri yakalama formunu optimize ediyoruz."
+          },
+          {
+            "step": 5,
+            "title": "Lansman ve Analitik Kurulumu",
+            "description": "Sayfayı CRM'inizle entegre ediyor, doğru dönüşüm izleme piksellerini ayarlıyor ve kullanıcı etkileşimlerini kaydetmek için ısı haritası araçlarını (Hotjar gibi) dağıtıyoruz."
+          },
+          {
+            "step": 6,
+            "title": "A/B Testi ve Yineleme (Iteration)",
+            "description": "Asla 'kur ve unut' yapmıyoruz. Başlıklar, kahraman resimleri, form uzunlukları ve düğme renkleri üzerinde sürekli olarak A/B testleri yürütüyor, kazanan varyasyonları ölçeklendiriyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Reklam trafiğini neden doğrudan ana sayfama göndermemeliyim?",
+            "answer": "Ana sayfalarda çok fazla dikkat dağıtıcı unsur, gezinme bağlantısı ve genel mesajlaşma bulunur. Bir açılış sayfasının tek bir hedefi (ör. bir formu doldurmak) ve kullanıcının tıkladığı reklamla mükemmel şekilde eşleşen bir mesajı vardır."
+          },
+          {
+            "question": "Açılış sayfaları oluşturmak için hangi platformu kullanıyorsunuz?",
+            "answer": "Hızlı A/B testi ve dağıtımı için sıklıkla Unbounce veya Instapage gibi özel araçlar kullanıyoruz. Ancak gerekirse doğrudan CMS'niz (WordPress, Webflow) içinde özel sayfalar da oluşturabiliriz."
+          },
+          {
+            "question": "'Mesaj Uyumu' (Message Match) nedir?",
+            "answer": "Mesaj uyumu, açılış sayfanızın başlığının kullanıcının az önce tıkladığı reklamın başlığıyla aynı (veya yakından uyumlu) olmasıdır. Bu, kullanıcıya doğru yerde olduğuna dair güvence verir."
+          },
+          {
+            "question": "Açılış sayfam ne kadar uzun olmalı?",
+            "answer": "Teklifin karmaşıklığına ve maliyetine bağlıdır. Ücretsiz bir e-kitap için basit bir form içeren kısa bir sayfa yeterli olabilir. Pahalı B2B yazılımı satmak, kapsamlı sosyal kanıtlar ve ayrıntılar içeren uzun formatlı bir sayfa gerektirir."
+          },
+          {
+            "question": "Açılış sayfasının metnini siz mi yazıyorsunuz?",
+            "answer": "Evet. Dönüşüm metni yazarlığı tartışmasız sayfanın en önemli unsurudur. Metin yazarlarımız ana başlıktan gönder (submit) düğmesindeki mikro metne kadar her şeyi ele alır."
+          },
+          {
+            "question": "A/B testleri yürütmek için ne kadar trafiğe ihtiyacım var?",
+            "answer": "İstatistiksel anlamlılığa hızlı bir şekilde ulaşmak için genellikle ayda birkaç bin ziyaretçiye ihtiyacınız vardır. Trafik daha düşükse, düğme renkleri gibi küçük ince ayarları test etmek yerine daha büyük, yüksek etkili değişiklikler yaparız."
+          },
+          {
+            "question": "Bu sayfalar web sitemin SEO'sunu etkiler mi?",
+            "answer": "Hayır. Ücretli açılış sayfaları genellikle 'dizine eklenmez' (no-index), yani Google'a bunları organik aramada sıralamamasını söyleriz. Bu, yinelenen içerik sorunlarını önler."
+          },
+          {
+            "question": "Açılış sayfası formlarını nasıl optimize ediyorsunuz?",
+            "answer": "Potansiyel müşteri kalitesini dönüşüm oranıyla dengeliyoruz. Formu doldurmayı zahmetsiz hissettirmek için çok adımlı formlar, aşamalı profil oluşturma (progressive profiling) ve net hata mesajlaşması kullanıyoruz."
+          }
+        ],
+        "technologies": [
+          { "icon": "unbounce", "name": "Unbounce / Instapage" },
+          { "icon": "hotjar", "name": "Hotjar / Clarity" },
+          { "icon": "vwo", "name": "VWO / Google Optimize" },
+          { "icon": "analytics", "name": "Google Analytics 4" },
+          { "icon": "figma", "name": "Figma" },
+          { "icon": "zapier", "name": "Zapier (CRM Routing)" }
+        ]
+      }
+    },
+    "de": {
+      "name": "Landingpage-Optimierung",
+      "shortDescription": "Verwandeln Sie Klicks in Kunden. Wir entwerfen, entwickeln und testen hochkonvertierende Landingpages, um den ROI Ihrer Werbekampagnen zu maximieren.",
+      "fullDescription": "Sie geben Tausende von Euro für Google Ads, Meta Ads und E-Mail-Marketing aus, um Traffic zu generieren. Aber wenn Sie diesen bezahlten Traffic auf eine generische Startseite oder eine schlecht gestaltete Landingpage leiten, verschwenden Sie Ihr Budget. Unsere Dienstleistungen zur Landingpage-Optimierung stellen sicher, dass jeder Klick die höchstmögliche Chance hat, in einen Lead oder Verkauf umgewandelt zu werden. Wir erstellen dedizierte, auf bestimmte Anzeigengruppen und Nutzerabsichten zugeschnittene Landingpages. Wir nutzen bewährte Neuro-Marketing-Prinzipien, Conversion Copywriting und reibungsloses UX-Design, um Besucher zu Ihrem primären Call-to-Action (CTA) zu führen. Wir verwenden Heatmaps, Sitzungsaufzeichnungen und kontinuierliche A/B-Tests, um datengestützte Designentscheidungen zu treffen.",
+      "features": [
+        "Message Match (Anzeige zu Landingpage)",
+        "Conversion Copywriting & Überzeugungsarchitektur",
+        "Reibungsloses UX- & Formulardesign",
+        "Strategische Vertrauenssignale & Social Proof",
+        "Heatmap- & Sitzungsaufzeichnungsanalyse",
+        "Kontinuierliche A/B- & Multivariate-Tests",
+        "Mobile-First Responsive Design",
+        "Optimierung der Seitenladezeit (Sub-Sekunde)"
+      ],
+      "benefits": [
+        "Senken Sie Ihre Cost Per Acquisition (CPA) drastisch",
+        "Generieren Sie deutlich mehr Umsatz aus bestehenden Werbeausgaben",
+        "Verbessern Sie den Google Ads Quality Score und senken Sie den CPC",
+        "Vermeiden Sie Verwirrung der Nutzer durch klare, eindeutige CTAs",
+        "Bauen Sie sofortiges Vertrauen bei neuen Nutzern auf",
+        "Treffen Sie datengesteuerte Entscheidungen basierend auf Nutzerverhalten"
+      ],
+      "metaTitle": "Landingpage-Optimierung | CRO Agentur | PakSoft",
+      "metaDescription": "Verwandeln Sie bezahlten Traffic in Leads und Verkäufe. Wir entwerfen und testen hochkonvertierende Landingpages, um Ihren Werbe-ROI zu maximieren.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Kampagnen- & Zielgruppenanalyse",
+            "description": "Wir analysieren Ihre Anzeigen (Search, Social), um die genaue Absicht und das Versprechen zu verstehen, mit dem der Traffic auf der Seite landet."
+          },
+          {
+            "step": 2,
+            "title": "Wireframing & Copywriting",
+            "description": "Wir entwerfen die 'Überzeugungsarchitektur'. Unsere Texter erstellen starke Überschriften und CTAs, die exakt zum Anzeigenversprechen passen."
+          },
+          {
+            "step": 3,
+            "title": "Design & Entwicklung",
+            "description": "Unser Team designt eine visuell ansprechende, für Mobilgeräte optimierte Seite. Wir nutzen Tools wie Unbounce oder Custom Code für blitzschnelle Ladezeiten."
+          },
+          {
+            "step": 4,
+            "title": "Vertrauens- & Reibungsoptimierung",
+            "description": "Wir platzieren gezielt Vertrauenssignale (Bewertungen, Garantien) und optimieren das Lead-Formular, um die kognitive Belastung zu minimieren."
+          },
+          {
+            "step": 5,
+            "title": "Launch & Analytics-Setup",
+            "description": "Wir integrieren die Seite in Ihr CRM, richten Conversion-Tracking ein und implementieren Heatmap-Tools (wie Hotjar) zur Analyse."
+          },
+          {
+            "step": 6,
+            "title": "A/B-Testing & Iteration",
+            "description": "Wir testen kontinuierlich Überschriften, Bilder, Formularlängen und Button-Farben und skalieren die erfolgreichsten Varianten."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Warum sollte ich Anzeigen-Traffic nicht einfach auf meine Startseite leiten?",
+            "answer": "Startseiten haben zu viele Ablenkungen und allgemeine Botschaften. Eine Landingpage hat ein einziges klares Ziel, das perfekt zur angeklickten Anzeige passt."
+          },
+          {
+            "question": "Welche Plattform nutzen Sie für den Bau von Landingpages?",
+            "answer": "Wir nutzen oft spezialisierte Builder wie Unbounce für schnelle A/B-Tests. Bei Bedarf bauen wir Seiten aber auch direkt in Ihrem CMS (WordPress, Webflow)."
+          },
+          {
+            "question": "Was ist 'Message Matching'?",
+            "answer": "Wenn die Überschrift Ihrer Landingpage identisch mit (oder sehr ähnlich) der Überschrift der Anzeige ist, die der Nutzer gerade angeklickt hat. Das schafft sofortiges Vertrauen."
+          },
+          {
+            "question": "Wie lang sollte meine Landingpage sein?",
+            "answer": "Das hängt vom Angebot ab. Ein kostenloses E-Book braucht nur eine kurze Seite. Der Verkauf teurer B2B-Software erfordert eine lange Seite mit vielen Details und Proofs."
+          },
+          {
+            "question": "Schreiben Sie die Texte für die Landingpage?",
+            "answer": "Ja. Conversion Copywriting ist der wichtigste Teil der Seite. Unsere Texter übernehmen alles von der Hauptüberschrift bis zum Mikrotexte auf dem Button."
+          },
+          {
+            "question": "Wie viel Traffic brauche ich für A/B-Tests?",
+            "answer": "Für statistische Signifikanz benötigen Sie meist einige Tausend Besucher pro Monat. Bei weniger Traffic testen wir größere Änderungen statt kleiner Details wie Button-Farben."
+          },
+          {
+            "question": "Beeinflussen diese Seiten meine Website-SEO?",
+            "answer": "Nein. Bezahlte Landingpages werden auf 'no-index' gesetzt. Google rankt sie nicht organisch, um Duplicate Content zu vermeiden."
+          },
+          {
+            "question": "Wie optimieren Sie Formulare auf Landingpages?",
+            "answer": "Wir balancieren Lead-Qualität und Conversion-Rate aus. Wir nutzen mehrstufige Formulare und klare Fehlermeldungen, um das Ausfüllen mühelos zu gestalten."
+          }
+        ],
+        "technologies": [
+          { "icon": "unbounce", "name": "Unbounce / Instapage" },
+          { "icon": "hotjar", "name": "Hotjar / Clarity" },
+          { "icon": "vwo", "name": "VWO / Google Optimize" },
+          { "icon": "analytics", "name": "Google Analytics 4" },
+          { "icon": "figma", "name": "Figma" },
+          { "icon": "zapier", "name": "Zapier (CRM Routing)" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "لینڈنگ پیج آپٹیمائزیشن",
+      "shortDescription": "کلکس کو کلائنٹس میں بدلیں۔ ہم آپ کی اشتہاری مہمات کے ROI کو زیادہ سے زیادہ کرنے کے لیے ہائی کنورژن والے لینڈنگ پیجز ڈیزائن اور ٹیسٹ کرتے ہیں۔",
+      "fullDescription": "آپ ٹریفک لانے کے لیے گوگل ایڈز اور میٹا ایڈز پر ہزاروں ڈالر خرچ کر رہے ہیں۔ لیکن اگر آپ اس ٹریفک کو ایک عام ہوم پیج یا ناقص ڈیزائن والے لینڈنگ پیج پر بھیج رہے ہیں، تو آپ اپنا بجٹ ضائع کر رہے ہیں۔ ہماری لینڈنگ پیج آپٹیمائزیشن خدمات اس بات کو یقینی بناتی ہیں کہ ہر کلک کے لیڈ یا فروخت میں تبدیل ہونے کا زیادہ سے زیادہ امکان ہو۔ ہم مخصوص اشتہاری گروپوں اور صارف کے ارادے کے مطابق پیغامات سے مماثل لینڈنگ پیجز بناتے ہیں۔ ہم نیورو مارکیٹنگ کے اصولوں، کنورژن کاپی رائٹنگ، اور فریکشن لیس UX ڈیزائن کا استعمال کرتے ہیں تاکہ زائرین کو آپ کے بنیادی ایکشن (CTA) کی طرف رہنمائی مل سکے۔ ہم صرف اندازہ نہیں لگاتے؛ ہم ہیٹ میپس، سیشن ریکارڈنگز، اور مسلسل A/B ٹیسٹنگ کا استعمال کرتے ہیں۔",
+      "features": [
+        "اشتہار اور صفحہ کے پیغام کی مطابقت (Message Matching)",
+        "کنورژن کاپی رائٹنگ اور پرسوایژن آرکیٹیکچر",
+        "فریکشن لیس (Frictionless) UX اور فارم ڈیزائن",
+        "اسٹریٹجک ٹرسٹ سگنلز اور سوشل پروف کا انضمام",
+        "ہیٹ میپ اور سیشن ریکارڈنگ کا تجزیہ",
+        "مسلسل A/B اور کثیر المتغیر ٹیسٹنگ",
+        "موبائل فرسٹ ریسپانسیو ڈیزائن",
+        "انتہائی تیز رفتار صفحہ لوڈ آپٹیمائزیشن"
+      ],
+      "benefits": [
+        "اپنی حصولی لاگت (CPA) کو ڈرامائی طور پر کم کریں",
+        "اپنے موجودہ اشتہاری اخراجات سے نمایاں طور پر زیادہ آمدنی حاصل کریں",
+        "گوگل اشتہارات کے کوالٹی سکور کو بہتر بنائیں اور CPC کو کم کریں",
+        "واضح، واحد کال ٹو ایکشن کے ساتھ صارف کی الجھن کو ختم کریں",
+        "ان صارفین کے ساتھ فوری اعتماد پیدا کریں جنہوں نے آپ کا برانڈ کبھی نہیں سنا",
+        "حقیقی صارف کے رویے کی بنیاد پر ڈیٹا پر مبنی ڈیزائن کے فیصلے کریں"
+      ],
+      "metaTitle": "لینڈنگ پیج آپٹیمائزیشن سروسز | CRO ایجنسی | PakSoft",
+      "metaDescription": "اپنی ادا شدہ ٹریفک کو لیڈز اور فروخت میں تبدیل کریں۔ ہم اشتہاری ROI کو زیادہ سے زیادہ کرنے کے لیے ہائی کنورٹنگ لینڈنگ پیجز ڈیزائن اور ٹیسٹ کرتے ہیں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "مہم اور سامعین کا تجزیہ",
+            "description": "ہم صفحہ پر آنے والی ٹریفک کے درست ارادے، وعدے اور ڈیموگرافک کو سمجھنے کے لیے آپ کی اشتہاری مہمات کا تجزیہ کرتے ہیں۔"
+          },
+          {
+            "step": 2,
+            "title": "وائر فریمنگ اور کاپی رائٹنگ",
+            "description": "ہمارے کاپی رائٹرز اشتہار کے وعدے سے مماثل زبردست سرخیاں، فوائد پر مبنی بلٹ پوائنٹس، اور مضبوط CTAs تیار کرتے ہیں۔"
+          },
+          {
+            "step": 3,
+            "title": "ڈیزائن اور ڈیولپمنٹ",
+            "description": "ہماری UI/UX ٹیم بصری طور پر پرکشش، موبائل فرسٹ پیج ڈیزائن کرتی ہے۔ ہم بجلی کی تیز رفتار لوڈنگ کے اوقات کو یقینی بناتے ہیں۔"
+          },
+          {
+            "step": 4,
+            "title": "اعتماد اور رکاوٹ کی آپٹیمائزیشن",
+            "description": "ہم حکمت عملی کے ساتھ ٹرسٹ سگنلز (جائزے، لوگو) رکھتے ہیں اور فارم جمع کرانے میں آسانی کے لیے اسے بہتر بناتے ہیں۔"
+          },
+          {
+            "step": 5,
+            "title": "لانچ اور تجزیات کا سیٹ اپ",
+            "description": "ہم صفحہ کو آپ کے CRM کے ساتھ جوڑتے ہیں، درست ٹریکنگ پکسلز سیٹ کرتے ہیں، اور صارفین کی بات چیت کو ریکارڈ کرنے کے لیے ہیٹ میپنگ ٹولز تعینات کرتے ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "A/B ٹیسٹنگ اور تکرار",
+            "description": "ہم سرخیوں، تصاویر، فارم کی لمبائی، اور بٹن کے رنگوں پر مسلسل A/B ٹیسٹ چلاتے ہیں، اور جیتنے والی تبدیلیوں کو لاگو کرتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "مجھے اشتہار کی ٹریفک کو صرف اپنے ہوم پیج پر کیوں نہیں بھیجنا چاہیے؟",
+            "answer": "ہوم پیجز پر بہت زیادہ خلفشار، لنکس اور عمومی پیغامات ہوتے ہیں۔ لینڈنگ پیج کا صرف ایک مقصد ہوتا ہے اور اس کا پیغام صارف کے کلک کردہ اشتہار سے بالکل مماثل ہوتا ہے۔"
+          },
+          {
+            "question": "آپ لینڈنگ پیجز بنانے کے لیے کون سا پلیٹ فارم استعمال کرتے ہیں؟",
+            "answer": "ہم تیزی سے تعیناتی کے لیے اکثر Unbounce یا Instapage استعمال کرتے ہیں۔ تاہم، اگر ضرورت ہو تو ہم آپ کے CMS (WordPress, Webflow) کے اندر بھی اپنی مرضی کے صفحات بنا سکتے ہیں۔"
+          },
+          {
+            "question": "'میسیج میچنگ' کیا ہے؟",
+            "answer": "پیغام کا میچ تب ہوتا ہے جب آپ کے لینڈنگ پیج کی سرخی اس اشتہار کی سرخی سے مماثل ہو جس پر صارف نے کلک کیا ہے۔ اس سے صارف کو یقین ہوتا ہے کہ وہ صحیح جگہ پر ہے۔"
+          },
+          {
+            "question": "میرا لینڈنگ پیج کتنا طویل ہونا چاہیے؟",
+            "answer": "یہ پیشکش کی پیچیدگی پر منحصر ہے۔ مفت ای بک کے لیے مختصر صفحہ کافی ہے، لیکن مہنگے B2B سافٹ ویئر کو فروخت کرنے کے لیے وسیع تفصیلات والے طویل صفحے کی ضرورت ہوتی ہے۔"
+          },
+          {
+            "question": "کیا آپ لینڈنگ پیج کے لیے کاپی لکھتے ہیں؟",
+            "answer": "ہاں۔ ہماری کاپی رائٹنگ ٹیم مین ہیڈ لائن سے لے کر سبمٹ بٹن پر موجود چھوٹے متن تک ہر چیز کو ہینڈل کرتی ہے۔"
+          },
+          {
+            "question": "A/B ٹیسٹ چلانے کے لیے مجھے کتنی ٹریفک کی ضرورت ہے؟",
+            "answer": "عام طور پر آپ کو ماہانہ چند ہزار زائرین کی ضرورت ہوتی ہے۔ اگر ٹریفک کم ہے، تو ہم بٹن کے رنگوں جیسی چھوٹی تبدیلیوں کے بجائے بڑی، زیادہ اثر والی تبدیلیاں کرتے ہیں۔"
+          },
+          {
+            "question": "کیا یہ صفحات میری ویب سائٹ کی SEO کو متاثر کریں گے؟",
+            "answer": "نہیں۔ پیڈ لینڈنگ پیجز کو عام طور پر 'no-indexed' رکھا جاتا ہے، یعنی ہم گوگل کو بتاتے ہیں کہ وہ انہیں رینک نہ کرے۔ اس سے ڈپلیکیٹ مواد کے مسائل سے بچا جا سکتا ہے۔"
+          },
+          {
+            "question": "آپ لینڈنگ پیج فارمز کو کیسے آپٹیمائز کرتے ہیں؟",
+            "answer": "ہم ملٹی سٹیپ فارمز، پروگریسو پروفائلنگ اور واضح ایرر میسجنگ کا استعمال کرتے ہیں تاکہ فارم بھرنا بالکل آسان محسوس ہو۔"
+          }
+        ],
+        "technologies": [
+          { "icon": "unbounce", "name": "Unbounce / Instapage" },
+          { "icon": "hotjar", "name": "Hotjar / Clarity" },
+          { "icon": "vwo", "name": "VWO / Google Optimize" },
+          { "icon": "analytics", "name": "Google Analytics 4" },
+          { "icon": "figma", "name": "Figma" },
+          { "icon": "zapier", "name": "Zapier (CRM Routing)" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "تحسين صفحات الهبوط (Landing Pages)",
+      "shortDescription": "حول النقرات إلى عملاء. نقوم بتصميم وبناء واختبار صفحات هبوط عالية التحويل تزيد من عائد الاستثمار لحملاتك الإعلانية إلى أقصى حد.",
+      "fullDescription": "أنت تنفق آلاف الدولارات على إعلانات جوجل وميتا لدفع حركة المرور. ولكن إذا كنت ترسل تلك الزيارات المدفوعة إلى صفحة رئيسية عامة أو صفحة هبوط سيئة التصميم، فأنت تهدر ميزانيتك. تضمن خدمات تحسين صفحات الهبوط لدينا أن كل نقرة لديها أعلى فرصة ممكنة للتحول إلى عميل محتمل أو عملية بيع. نحن نبني صفحات هبوط مخصصة ومطابقة للرسالة ومصممة خصيصاً لمجموعات إعلانية محددة ونية المستخدم. نحن نستخدم مبادئ التسويق العصبي، وكتابة نصوص التحويل، وتصميم UX الخالي من الاحتكاك لتوجيه الزوار نحو دعوتك الأساسية لاتخاذ إجراء (CTA). بدءاً من أقسام العرض المقنعة وإشارات الثقة إلى تصميمات النماذج المحسنة وسرعات تحميل الصفحة السريعة، نهندس كل عنصر لتحقيق أقصى قدر من التحويل. نحن لا نخمن؛ بل نستخدم الخرائط الحرارية واختبارات A/B المستمرة لترك البيانات تملي التصميم الفائز.",
+      "features": [
+        "مطابقة رسالة الإعلان مع صفحة الهبوط (Message Match)",
+        "كتابة إعلانات التحويل وبنية الإقناع",
+        "تصميم نماذج وتجربة مستخدم (UX) خالية من الاحتكاك",
+        "إشارات الثقة الاستراتيجية وإدماج الإثبات الاجتماعي",
+        "تحليل الخرائط الحرارية وتسجيل الجلسات",
+        "اختبارات A/B والاختبارات متعددة المتغيرات المستمرة",
+        "تصميم متجاوب يعطي الأولوية للجوال",
+        "تحسين سرعة تحميل الصفحة في أجزاء من الثانية"
+      ],
+      "benefits": [
+        "خفض تكلفة الاكتساب (CPA) بشكل كبير",
+        "استخراج إيرادات أكثر بكثير من إنفاقك الإعلاني الحالي",
+        "تحسين نقاط جودة إعلانات جوجل، مما يقلل من تكلفة النقرة (CPC)",
+        "القضاء على ارتباك المستخدم من خلال عبارات حث واضحة ومفردة",
+        "بناء ثقة فورية مع المستخدمين الذين لم يسمعوا بعلامتك التجارية من قبل",
+        "اتخاذ قرارات تصميم تعتمد على البيانات بناءً على سلوك المستخدم الفعلي"
+      ],
+      "metaTitle": "خدمات تحسين صفحات الهبوط | وكالة CRO | PakSoft",
+      "metaDescription": "حول زياراتك المدفوعة إلى مبيعات. نقوم بتصميم واختبار صفحات هبوط عالية التحويل لتعظيم عائد الاستثمار الإعلاني الخاص بك.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "تحليل الحملة والجمهور",
+            "description": "نحلل حملاتك الإعلانية لفهم النية الدقيقة والوعد والتركيبة السكانية للزيارات القادمة إلى الصفحة."
+          },
+          {
+            "step": 2,
+            "title": "تخطيط الصفحة وكتابة الإعلانات",
+            "description": "نضع الخطوط العريضة لـ 'بنية الإقناع'. يصوغ كتابنا عناوين جذابة ونقاط نقطية تعتمد على الفوائد تتطابق مع وعد الإعلان."
+          },
+          {
+            "step": 3,
+            "title": "التصميم والتطوير",
+            "description": "يصمم فريق UI/UX صفحة جذابة بصرياً تركز على الجوال. نبني الصفحة باستخدام منشئات سريعة أو كود مخصص لضمان سرعة التحميل."
+          },
+          {
+            "step": 4,
+            "title": "تحسين الثقة وتقليل الاحتكاك",
+            "description": "نضع إشارات الثقة (المراجعات، الشعارات) بشكل استراتيجي ونحسن نموذج التقاط العملاء لتقليل العبء المعرفي المطلوب للإرسال."
+          },
+          {
+            "step": 5,
+            "title": "الإطلاق وإعداد التحليلات",
+            "description": "ندمج الصفحة مع نظام CRM، ونعد بكسلات تتبع التحويل الدقيقة، وننشر أدوات التخطيط الحراري (مثل Hotjar) لتسجيل التفاعلات."
+          },
+          {
+            "step": 6,
+            "title": "اختبار A/B والتكرار",
+            "description": "نحن نختبر باستمرار العناوين، وصور العرض، وأطوال النماذج، وألوان الأزرار، لزيادة نطاق التغييرات الفائزة."
+          }
+        ],
+        "faq": [
+          {
+            "question": "لماذا لا يجب أن أرسل زيارات الإعلانات إلى صفحتي الرئيسية مباشرة؟",
+            "answer": "تحتوي الصفحات الرئيسية على الكثير من عوامل التشتيت والروابط. صفحة الهبوط لها هدف واحد فقط (مثل ملء نموذج) ورسالة تتطابق تماماً مع الإعلان."
+          },
+          {
+            "question": "ما المنصة التي تستخدمونها لبناء صفحات الهبوط؟",
+            "answer": "نستخدم غالباً أدوات مخصصة مثل Unbounce لاختبار A/B السريع. ولكن يمكننا أيضاً إنشاء صفحات مخصصة مباشرة داخل CMS الخاص بك (مثل WordPress)."
+          },
+          {
+            "question": "ما هي 'مطابقة الرسالة' (Message Matching)؟",
+            "answer": "تحدث عندما يكون عنوان صفحة الهبوط مطابقاً (أو يتوافق بشكل وثيق) مع عنوان الإعلان الذي نقر عليه المستخدم. هذا يطمئنه بأنه في المكان الصحيح."
+          },
+          {
+            "question": "ما مدى طول صفحة الهبوط الخاصة بي؟",
+            "answer": "يعتمد ذلك على التكلفة والتعقيد. قد يحتاج الكتاب الإلكتروني المجاني فقط لصفحة قصيرة. بيع برامج B2B باهظة الثمن يتطلب صفحة طويلة بها تفاصيل وإثبات اجتماعي."
+          },
+          {
+            "question": "هل تكتبون النص لصفحة الهبوط؟",
+            "answer": "نعم. كتابة نصوص التحويل هي العنصر الأكثر أهمية. يتعامل كتابنا مع كل شيء من العنوان الرئيسي إلى النص المصغر على زر الإرسال."
+          },
+          {
+            "question": "كم عدد الزيارات التي أحتاجها لإجراء اختبارات A/B؟",
+            "answer": "للوصول إلى الأهمية الإحصائية بسرعة، تحتاج لعدة آلاف زائر شهرياً. إذا كانت الزيارات أقل، نجري تغييرات أكبر تأثيراً بدلاً من اختبارات صغيرة مثل ألوان الأزرار."
+          },
+          {
+            "question": "هل ستؤثر هذه الصفحات على SEO موقع الويب الخاص بي؟",
+            "answer": "لا. يتم تعيين صفحات الهبوط المدفوعة عادةً كـ 'no-index'، مما يعني أننا نطلب من جوجل عدم ترتيبها في البحث العضوي لتجنب مشكلات المحتوى المكرر."
+          },
+          {
+            "question": "كيف تقومون بتحسين نماذج صفحة الهبوط؟",
+            "answer": "نوازن بين جودة العميل المحتمل ومعدل التحويل. نستخدم نماذج متعددة الخطوات، والتنميط التدريجي لجعل ملء النموذج يبدو سهلاً."
+          }
+        ],
+        "technologies": [
+          { "icon": "unbounce", "name": "Unbounce / Instapage" },
+          { "icon": "hotjar", "name": "Hotjar / Clarity" },
+          { "icon": "vwo", "name": "VWO / Google Optimize" },
+          { "icon": "analytics", "name": "Google Analytics 4" },
+          { "icon": "figma", "name": "Figma" },
+          { "icon": "zapier", "name": "Zapier (CRM Routing)" }
+        ]
+      }
+    }
+  }
+}

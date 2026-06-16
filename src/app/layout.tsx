@@ -28,10 +28,9 @@ const amiri = Amiri({
 
 export const metadata = {
     metadataBase: new URL('https://www.paksoft.com.tr'),
-    title: {
-        default: 'PakSoft – Modern Digital Solutions',
-        template: '%s | PakSoft'
-    },
+    // Plain default (no `template`): pages already append "| PakSoft" in their
+    // own titles, so a template caused doubled "| PakSoft | PakSoft" titles.
+    title: 'PakSoft – Modern Digital Solutions',
     description: 'Enterprise web development, e-commerce, automation bots and digital marketing solutions',
     keywords: ['Web Development', 'Mobile Apps', 'AI Solutions', 'Automation', 'Digital Marketing', 'E-commerce'],
     authors: [{ name: 'PakSoft Team' }],

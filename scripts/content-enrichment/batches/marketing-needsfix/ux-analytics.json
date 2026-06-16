@@ -1,0 +1,548 @@
+{
+  "slug": "ux-analytics",
+  "en": {
+    "name": "UX Analytics & User Behavior Tracking",
+    "shortDescription": "Stop guessing why users leave. We use heatmaps, session recordings, and behavioral analytics to identify UX bottlenecks and optimize your conversion funnel.",
+    "fullDescription": "Traditional analytics tools like Google Analytics tell you *what* happened—how many visitors came and how many bounced. UX Analytics tells you *why* it happened. Why are users abandoning the checkout process? Why are they not clicking the primary Call to Action? Our UX Analytics & User Behavior Tracking service bridges the gap between raw data and human behavior. We deploy advanced tracking tools (like Hotjar, Clarity, or FullStory) to visualize exactly how users interact with your digital product. By analyzing scroll heatmaps, click maps, and actual session recordings, we identify 'rage clicks,' confusing navigation, broken forms, and overlooked content. We combine these qualitative insights with quantitative data to provide actionable design recommendations that eliminate friction and significantly boost your conversion rates.",
+    "features": [
+      "Session Recording & Playback Analysis",
+      "Click, Move, and Scroll Heatmap Generation",
+      "Form Abandonment & Funnel Drop-off Analysis",
+      "Identification of Rage Clicks & Dead Clicks",
+      "User Feedback Polls & On-site Surveys",
+      "Core Web Vitals & Real User Monitoring (RUM)",
+      "A/B Testing Hypothesis Generation",
+      "UX Audit & Actionable Redesign Reporting"
+    ],
+    "benefits": [
+      "Uncover the hidden usability issues that are silently killing your conversions",
+      "Stop relying on subjective opinions and make design decisions based on real user data",
+      "Fix broken website elements and buggy forms before they cost you thousands in lost sales",
+      "Understand exactly what information users are looking for but failing to find",
+      "Prioritize website development tasks based on actual business impact and user friction",
+      "Increase customer satisfaction by providing a frictionless digital experience"
+    ],
+    "metaTitle": "UX Analytics Agency | Heatmaps & User Behavior | PakSoft",
+    "metaDescription": "Understand user behavior with UX Analytics. We use heatmaps, session recordings, and click analysis to fix usability issues and boost conversion rates.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Tool Integration & Privacy Setup",
+          "description": "We integrate tools like Hotjar or MS Clarity, ensuring strict compliance with GDPR/CCPA by masking all Personally Identifiable Information (PII) like keystrokes and passwords."
+        },
+        {
+          "step": 2,
+          "title": "Baseline Data Collection",
+          "description": "We allow the tools to run silently in the background, collecting a statistically significant amount of session recordings, heatmaps, and funnel drop-off data."
+        },
+        {
+          "step": 3,
+          "title": "Behavioral Analysis & Pattern Recognition",
+          "description": "Our UX analysts watch hours of user sessions, specifically looking for patterns of frustration (rage clicks, u-turns) and drop-offs on critical conversion pages."
+        },
+        {
+          "step": 4,
+          "title": "Heatmap & Scroll Depth Review",
+          "description": "We analyze where users click and how far they scroll. If users aren't scrolling down to your pricing table, we know the hero section isn't compelling enough."
+        },
+        {
+          "step": 5,
+          "title": "Form & Checkout Optimization",
+          "description": "We analyze form analytics to see exactly which input field causes users to abandon the process (e.g., asking for a phone number when it's not strictly necessary)."
+        },
+        {
+          "step": 6,
+          "title": "Actionable Reporting",
+          "description": "We present a prioritized list of UX/UI fixes, backed by video evidence of user struggles, and generate hypotheses for future A/B tests to improve conversions."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Will UX tracking tools slow down my website?",
+          "answer": "Modern UX tracking tools are built with asynchronous loading, meaning they won't block the main thread of your website. The impact on page speed is negligible and well worth the insights gained."
+        },
+        {
+          "question": "Is session recording a privacy violation?",
+          "answer": "No. We configure the tracking software to strictly adhere to privacy laws. All input fields containing personal data (names, emails, credit cards) are automatically censored and replaced with asterisks before the recording is saved."
+        },
+        {
+          "question": "What is a 'Rage Click'?",
+          "answer": "A rage click is when a user clicks the same element multiple times rapidly in frustration. It usually indicates a broken link, a button that doesn't work, or an element that looks clickable but isn't."
+        },
+        {
+          "question": "How is this different from Google Analytics?",
+          "answer": "Google Analytics is quantitative; it tells you 50% of people left the checkout page. UX Analytics is qualitative; through session recordings, it shows you that they left because the 'Apply Promo Code' button was overlapping the 'Submit' button on mobile devices."
+        },
+        {
+          "question": "Do I need enough traffic for UX analytics to be useful?",
+          "answer": "Yes. If your site only gets 10 visitors a day, heatmaps won't be statistically significant. We recommend having at least a few thousand monthly visitors to derive solid behavioral patterns."
+        },
+        {
+          "question": "Can you fix the UX issues you find?",
+          "answer": "Absolutely. After identifying the bottlenecks, our Web Development and CRO (Conversion Rate Optimization) teams can step in to redesign the elements, fix the bugs, and A/B test the new solutions."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "layout",
+          "name": "Hotjar"
+        },
+        {
+          "icon": "video",
+          "name": "Microsoft Clarity"
+        },
+        {
+          "icon": "analytics",
+          "name": "FullStory"
+        },
+        {
+          "icon": "mouse-pointer",
+          "name": "Crazy Egg"
+        },
+        {
+          "icon": "chart-bar",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "code",
+          "name": "Google Tag Manager"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "UX Analitiği ve Kullanıcı Davranışı Takibi",
+    "shortDescription": "Kullanıcıların neden ayrıldığını tahmin etmeyi bırakın. UX (Kullanıcı Deneyimi) darboğazlarını belirlemek ve dönüşüm huninizi (funnel) optimize etmek için ısı haritaları, oturum kayıtları ve davranışsal analitik kullanıyoruz.",
+    "fullDescription": "Google Analytics gibi geleneksel analitik araçları size *ne* olduğunu söyler; kaç ziyaretçi geldi ve kaçı hemen çıktı (bounce rate). UX Analitiği ise size bunun *neden* olduğunu söyler. Kullanıcılar ödeme sürecini neden terk ediyor? Birincil Eylem Çağrısı (CTA) düğmesine neden tıklamıyorlar? UX Analitiği ve Kullanıcı Davranışı İzleme hizmetimiz, ham veriler ile insan davranışı arasındaki boşluğu doldurur. Kullanıcıların dijital ürününüzle tam olarak nasıl etkileşime girdiğini görselleştirmek için gelişmiş izleme araçları (Hotjar, Clarity veya FullStory gibi) kuruyoruz. Kaydırma (scroll) ısı haritalarını, tıklama haritalarını ve gerçek oturum kayıtlarını analiz ederek, 'öfke tıklamalarını' (rage clicks), kafa karıştırıcı gezinmeyi (navigasyon), bozuk formları ve gözden kaçan içerikleri tespit ediyoruz. Sürtünmeyi (friction) ortadan kaldıran ve dönüşüm oranlarınızı önemli ölçüde artıran, eyleme dönüştürülebilir tasarım önerileri sağlamak için bu niteliksel (kalitatif) içgörüleri niceliksel (kantitatif) verilerle birleştiriyoruz.",
+    "features": [
+      "Oturum Kaydı ve Oynatma Analizi",
+      "Tıklama, Hareket ve Kaydırma (Scroll) Isı Haritası Oluşturma",
+      "Form Terk Etme ve Huni (Funnel) Düşüş Analizi",
+      "Öfke Tıklamaları (Rage Clicks) ve Ölü Tıklamaların (Dead Clicks) Tespiti",
+      "Kullanıcı Geri Bildirim Anketleri ve Site İçi Anketler",
+      "Core Web Vitals ve Gerçek Kullanıcı İzleme (RUM)",
+      "A/B Testi Hipotez Üretimi",
+      "UX Denetimi ve Eyleme Dönüştürülebilir Yeniden Tasarım Raporlaması"
+    ],
+    "benefits": [
+      "Dönüşümlerinizi sessizce öldüren gizli kullanılabilirlik sorunlarını ortaya çıkarın",
+      "Öznel görüşlere güvenmeyi bırakın ve gerçek kullanıcı verilerine dayalı tasarım kararları alın",
+      "Bozuk web sitesi öğelerini ve hatalı formları size binlerce liralık satış kaybına mal olmadan önce düzeltin",
+      "Kullanıcıların tam olarak hangi bilgileri aradığını ancak bulamadığını anlayın",
+      "Web sitesi geliştirme görevlerini gerçek iş etkisine ve kullanıcı sürtünmesine göre önceliklendirin",
+      "Sürtünmesiz bir dijital deneyim sunarak müşteri memnuniyetini artırın"
+    ],
+    "metaTitle": "UX Analitik Ajansı | Isı Haritaları (Heatmaps) | PakSoft",
+    "metaDescription": "UX Analitiği ile kullanıcı davranışını anlayın. Kullanılabilirlik sorunlarını çözmek ve dönüşüm oranlarını artırmak için ısı haritaları ve oturum kayıtları kullanıyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Araç Entegrasyonu ve Gizlilik Kurulumu",
+          "description": "Klavye vuruşları ve şifreler gibi Kişisel Olarak Tanımlanabilir Bilgileri (PII) maskeleyerek KVKK/GDPR ile sıkı uyumluluk sağlayıp Hotjar veya MS Clarity gibi araçları entegre ediyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Temel Veri Toplama",
+          "description": "Araçların arka planda sessizce çalışmasına izin vererek istatistiksel olarak anlamlı miktarda oturum kaydı, ısı haritası ve huni düşüş verisi topluyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Davranışsal Analiz ve Örüntü Tanıma",
+          "description": "UX analistlerimiz, özellikle kritik dönüşüm sayfalarındaki hayal kırıklığı kalıplarını (öfke tıklamaları vb.) ve sayfa terklerini (drop-offs) bulmak için saatlerce kullanıcı oturumu izler."
+        },
+        {
+          "step": 4,
+          "title": "Isı Haritası ve Kaydırma (Scroll) Derinliği İncelemesi",
+          "description": "Kullanıcıların nereye tıkladığını ve ne kadar aşağı kaydırdığını analiz ederiz. Eğer kullanıcılar fiyatlandırma tablonuza kadar inmiyorsa, üst bölümün (hero section) yeterince ilgi çekici olmadığını anlarız."
+        },
+        {
+          "step": 5,
+          "title": "Form ve Ödeme (Checkout) Optimizasyonu",
+          "description": "Kullanıcıların süreci terk etmesine tam olarak hangi girdi alanının (input field) neden olduğunu (örneğin, kesinlikle gerekli olmadığı halde telefon numarası istemek) görmek için form analitiğini inceliyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Eyleme Dönüştürülebilir Raporlama",
+          "description": "Kullanıcıların yaşadığı zorlukların video kanıtlarıyla desteklenen önceliklendirilmiş bir UX/UI düzeltme listesi sunuyor ve dönüşümleri iyileştirmek için gelecekteki A/B testleri için hipotezler üretiyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "UX izleme araçları web sitemi yavaşlatır mı?",
+          "answer": "Modern UX izleme araçları asenkron (eşzamansız) yükleme ile oluşturulmuştur, yani web sitenizin ana iş parçacığını (main thread) engellemezler. Sayfa hızı üzerindeki etki ihmal edilebilir düzeydedir ve elde edilen içgörülere fazlasıyla değer."
+        },
+        {
+          "question": "Oturum kaydı (Session Recording) bir gizlilik ihlali midir?",
+          "answer": "Hayır. İzleme yazılımını gizlilik yasalarına sıkı sıkıya bağlı kalacak şekilde yapılandırıyoruz. Kişisel veri (isim, e-posta, kredi kartı) içeren tüm giriş alanları otomatik olarak sansürlenir ve kayıt kaydedilmeden önce yıldız işaretleriyle (*) değiştirilir."
+        },
+        {
+          "question": "'Öfke Tıklaması' (Rage Click) nedir?",
+          "answer": "Öfke tıklaması, bir kullanıcının hayal kırıklığı içinde aynı öğeye hızla birden çok kez tıklamasıdır. Genellikle bozuk bir bağlantıyı, çalışmayan bir düğmeyi veya tıklanabilir görünen ancak tıklanamayan bir öğeyi gösterir."
+        },
+        {
+          "question": "Bunun Google Analytics'ten farkı nedir?",
+          "answer": "Google Analytics nicelikseldir; size insanların %50'sinin ödeme sayfasından ayrıldığını söyler. UX Analitiği ise nitelikseldir; oturum kayıtları aracılığıyla size bu insanların mobil cihazlarda 'Promosyon Kodu Uygula' düğmesi 'Gönder' düğmesiyle örtüştüğü için ayrıldığını gösterir."
+        },
+        {
+          "question": "UX analitiğinin yararlı olması için yeterli trafiğe ihtiyacım var mı?",
+          "answer": "Evet. Siteniz günde sadece 10 ziyaretçi alıyorsa, ısı haritaları istatistiksel olarak anlamlı olmayacaktır. Sağlam davranışsal kalıplar türetmek için aylık en az birkaç bin ziyaretçinizin olmasını öneririz."
+        },
+        {
+          "question": "Bulduğunuz UX sorunlarını çözebilir misiniz?",
+          "answer": "Kesinlikle. Darboğazları belirledikten sonra, Web Geliştirme ve CRO (Dönüşüm Oranı Optimizasyonu) ekiplerimiz öğeleri yeniden tasarlamak, hataları düzeltmek ve yeni çözümleri A/B testine tabi tutmak için devreye girebilir."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "layout",
+          "name": "Hotjar"
+        },
+        {
+          "icon": "video",
+          "name": "Microsoft Clarity"
+        },
+        {
+          "icon": "analytics",
+          "name": "FullStory"
+        },
+        {
+          "icon": "mouse-pointer",
+          "name": "Crazy Egg"
+        },
+        {
+          "icon": "chart-bar",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "code",
+          "name": "Google Tag Manager"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "UX Analytics & User Behavior Tracking",
+    "shortDescription": "Hören Sie auf zu raten, warum Nutzer abspringen. Wir nutzen Heatmaps und Session-Aufzeichnungen, um UX-Engpässe zu identifizieren und den Conversion-Funnel zu optimieren.",
+    "fullDescription": "Klassische Analysetools wie Google Analytics sagen Ihnen, *was* passiert ist – wie viele Besucher kamen und wie hoch die Bounce-Rate ist. UX Analytics sagt Ihnen, *warum* es passiert ist. Warum brechen Nutzer den Checkout ab? Warum klicken sie nicht auf den primären Call-to-Action? Unser Service schlägt die Brücke zwischen Rohdaten und menschlichem Verhalten. Wir setzen fortschrittliche Tracking-Tools (wie Hotjar, Clarity) ein, um exakt zu visualisieren, wie Nutzer mit Ihrem digitalen Produkt interagieren. Durch die Analyse von Scroll-Heatmaps, Klick-Maps und tatsächlichen Sitzungsaufzeichnungen identifizieren wir 'Rage Clicks' (Frustklicks), verwirrende Navigation, defekte Formulare und übersehene Inhalte. Wir kombinieren diese qualitativen Insights mit quantitativen Daten für handlungsorientierte Design-Empfehlungen.",
+    "features": [
+      "Session Recording & Playback-Analyse",
+      "Erstellung von Click-, Move- & Scroll-Heatmaps",
+      "Analyse von Formularabbrüchen & Funnel-Drop-offs",
+      "Identifikation von Rage Clicks & Dead Clicks",
+      "Nutzer-Feedback-Umfragen (On-Site Surveys)",
+      "Core Web Vitals & Real User Monitoring (RUM)",
+      "Hypothesenbildung für A/B-Testing",
+      "UX Audit & handlungsorientierte Redesign-Berichte"
+    ],
+    "benefits": [
+      "Decken Sie versteckte Usability-Probleme auf, die Conversions töten",
+      "Treffen Sie Designentscheidungen basierend auf echten Nutzerdaten, nicht auf Meinungen",
+      "Fixen Sie kaputte Formulare, bevor sie Sie Tausende an Umsatz kosten",
+      "Verstehen Sie genau, welche Informationen Nutzer suchen, aber nicht finden",
+      "Priorisieren Sie Entwicklungsaufgaben nach tatsächlichen geschäftlichen Auswirkungen",
+      "Erhöhen Sie die Kundenzufriedenheit durch ein reibungsloses digitales Erlebnis"
+    ],
+    "metaTitle": "UX Analytics Agentur | Heatmaps & User Behavior | PakSoft",
+    "metaDescription": "Verstehen Sie Nutzerverhalten mit UX Analytics. Wir nutzen Heatmaps und Klick-Analysen, um Usability-Probleme zu beheben und Conversions zu steigern.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Tool-Integration & Datenschutz",
+          "description": "Wir integrieren Tools wie Hotjar datenschutzkonform (DSGVO), indem persönliche Daten (PII) wie Tastenanschläge und Passwörter automatisch maskiert werden."
+        },
+        {
+          "step": 2,
+          "title": "Baseline-Datenerhebung",
+          "description": "Die Tools laufen im Hintergrund und sammeln eine statistisch signifikante Menge an Aufzeichnungen, Heatmaps und Funnel-Daten."
+        },
+        {
+          "step": 3,
+          "title": "Verhaltensanalyse & Mustererkennung",
+          "description": "Unsere UX-Analysten sichten stundenlang Nutzer-Sessions, um Frustrationsmuster und Abbruchpunkte auf kritischen Conversion-Seiten zu finden."
+        },
+        {
+          "step": 4,
+          "title": "Review von Heatmaps & Scroll-Tiefe",
+          "description": "Wir analysieren Klicks und Scroll-Verhalten. Wenn Nutzer nicht bis zur Preistabelle scrollen, wissen wir, dass der obere Bereich nicht überzeugend genug ist."
+        },
+        {
+          "step": 5,
+          "title": "Formular- & Checkout-Optimierung",
+          "description": "Wir prüfen Formular-Analysen, um genau das Eingabefeld zu finden, an dem Nutzer den Prozess abbrechen (z. B. eine unnötige Abfrage der Telefonnummer)."
+        },
+        {
+          "step": 6,
+          "title": "Handlungsorientiertes Reporting",
+          "description": "Wir präsentieren eine priorisierte Liste von UX/UI-Fixes, gestützt durch Videobeweise, und generieren Hypothesen für A/B-Tests."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Machen UX-Tracking-Tools meine Website langsam?",
+          "answer": "Moderne Tools laden asynchron und blockieren den Haupt-Thread der Website nicht. Die Auswirkung auf die Ladezeit ist vernachlässigbar gering und den Erkenntnisgewinn absolut wert."
+        },
+        {
+          "question": "Ist Session Recording eine Verletzung der Privatsphäre?",
+          "answer": "Nein. Wir konfigurieren die Software DSGVO-konform. Alle Eingabefelder mit persönlichen Daten (Name, E-Mail, Kreditkarte) werden zensiert (mit Sternchen versehen), bevor die Aufzeichnung gespeichert wird."
+        },
+        {
+          "question": "Was ist ein 'Rage Click'?",
+          "answer": "Ein Frustklick (Rage Click) entsteht, wenn ein Nutzer aus Ärger mehrfach schnell auf dasselbe Element klickt. Es deutet meist auf kaputte Links oder Elemente hin, die klickbar aussehen, es aber nicht sind."
+        },
+        {
+          "question": "Wie unterscheidet sich das von Google Analytics?",
+          "answer": "Google Analytics ist quantitativ (zeigt, dass 50 % die Checkout-Seite verließen). UX Analytics ist qualitativ: Es zeigt via Video, dass sie verließen, weil auf dem Handy der Promo-Code-Button den Kauf-Button überdeckte."
+        },
+        {
+          "question": "Brauche ich viel Traffic, damit UX Analytics nützlich ist?",
+          "answer": "Ja. Bei nur 10 Besuchern am Tag sind Heatmaps nicht statistisch signifikant. Wir empfehlen mindestens ein paar Tausend Besucher pro Monat, um solide Verhaltensmuster abzuleiten."
+        },
+        {
+          "question": "Können Sie die gefundenen UX-Probleme auch beheben?",
+          "answer": "Absolut. Nach der Identifikation der Engpässe können unsere Web Development- und CRO-Teams das Redesign übernehmen, Bugs fixen und neue Lösungen einem A/B-Test unterziehen."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "layout",
+          "name": "Hotjar"
+        },
+        {
+          "icon": "video",
+          "name": "Microsoft Clarity"
+        },
+        {
+          "icon": "analytics",
+          "name": "FullStory"
+        },
+        {
+          "icon": "mouse-pointer",
+          "name": "Crazy Egg"
+        },
+        {
+          "icon": "chart-bar",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "code",
+          "name": "Google Tag Manager"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "UX اینالیٹکس اور صارف کے رویے کی ٹریکنگ",
+    "shortDescription": "اندازہ لگانا چھوڑیں کہ صارفین کیوں سائٹ چھوڑ دیتے ہیں۔ ہم صارف کے تجربے (UX) کی خامیوں کو تلاش کرنے کے لیے ہیٹ میپس اور سیشن ریکارڈنگز کا استعمال کرتے ہیں۔",
+    "fullDescription": "گوگل اینالیٹکس جیسے ٹولز آپ کو بتاتے ہیں کہ *کیا* ہوا—کتنے زائرین آئے اور کتنے باؤنس ہوئے۔ UX اینالیٹکس آپ کو بتاتا ہے کہ یہ *کیوں* ہوا۔ صارفین چیک آؤٹ کے عمل کو کیوں چھوڑ رہے ہیں؟ ہماری UX اینالیٹکس سروس خام ڈیٹا اور انسانی رویے کے درمیان فرق کو ختم کرتی ہے۔ ہم ہاٹ جار (Hotjar) اور کلیرٹی (Clarity) جیسے ٹولز تعینات کرتے ہیں تاکہ یہ دیکھا جا سکے کہ صارفین آپ کی ویب سائٹ کے ساتھ کیسے تعامل کرتے ہیں۔ سکرول ہیٹ میپس اور سیشن کی ریکارڈنگز کا تجزیہ کر کے، ہم خامیوں کی نشاندہی کرتے ہیں اور انہیں دور کر کے آپ کی کنورژن کی شرح کو بڑھاتے ہیں۔",
+    "features": [
+      "سیشن ریکارڈنگ اور پلے بیک کا تجزیہ",
+      "کلک اور اسکرول ہیٹ میپ (Heatmap) کی تیاری",
+      "فارم ادھورا چھوڑنے (Form Abandonment) کا تجزیہ",
+      "Rage Clicks اور Dead Clicks کی نشاندہی",
+      "صارف کے تاثرات کے پول اور سائٹ پر سروے",
+      "A/B ٹیسٹنگ کے مفروضات کی تیاری",
+      "UX آڈٹ اور ری ڈیزائن رپورٹنگ"
+    ],
+    "benefits": [
+      "استعمال کے ان چھپے ہوئے مسائل کو بے نقاب کریں جو خاموشی سے آپ کی فروخت کو کم کر رہے ہیں",
+      "اندازوں پر انحصار کرنا چھوڑیں اور حقیقی صارف ڈیٹا کی بنیاد پر ڈیزائن کے فیصلے کریں",
+      "ٹوٹے ہوئے ویب سائٹ عناصر اور بگی فارمز کو فروخت میں نقصان سے پہلے ٹھیک کریں",
+      "درست طور پر سمجھیں کہ صارفین کیا معلومات تلاش کر رہے ہیں لیکن نہیں پا رہے",
+      "صارف کو بغیر کسی پریشانی کے ڈیجیٹل تجربہ فراہم کر کے گاہک کی اطمینان میں اضافہ کریں"
+    ],
+    "metaTitle": "UX اینالیٹکس ایجنسی | ہیٹ میپس اور یوزر بیہیویئر | PakSoft",
+    "metaDescription": "UX Analytics کے ساتھ صارف کے رویے کو سمجھیں۔ ہم استعمال کے مسائل کو حل کرنے اور تبدیلی کی شرح کو بڑھانے کے لیے ہیٹ میپس اور سیشن کی ریکارڈنگز استعمال کرتے ہیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "ٹول انٹیگریشن اور پرائیویسی",
+          "description": "ہم Hotjar یا MS Clarity جیسے ٹولز کو ضم کرتے ہیں، اور پاس ورڈز جیسی ذاتی معلومات (PII) کو چھپا کر پرائیویسی قوانین کی تعمیل کو یقینی بناتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "ڈیٹا کلیکشن",
+          "description": "ہم ٹولز کو پس منظر میں چلنے دیتے ہیں تاکہ سیشن ریکارڈنگز، ہیٹ میپس اور صارفین کے رویے کا ڈیٹا اکٹھا کیا جا سکے۔"
+        },
+        {
+          "step": 3,
+          "title": "رویے کا تجزیہ",
+          "description": "ہمارے UX تجزیہ کار صارفین کے مایوسی کے لمحات (Rage clicks) اور اہم صفحات پر ڈراپ آف کے پیٹرن تلاش کرتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "ہیٹ میپ کا جائزہ",
+          "description": "ہم تجزیہ کرتے ہیں کہ صارفین کہاں کلک کرتے ہیں اور کتنا نیچے سکرول کرتے ہیں۔"
+        },
+        {
+          "step": 5,
+          "title": "فارم آپٹیمائزیشن",
+          "description": "ہم فارم کے تجزیات کا استعمال کرتے ہوئے یہ دیکھتے ہیں کہ کون سا سوال صارفین کو فارم چھوڑنے پر مجبور کرتا ہے۔"
+        },
+        {
+          "step": 6,
+          "title": "عملی رپورٹنگ",
+          "description": "ہم UX/UI خامیوں کی ایک ترجیحی فہرست پیش کرتے ہیں، جس کی حمایت صارف کی جدوجہد کے ویڈیو ثبوتوں سے کی جاتی ہے۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "کیا UX ٹریکنگ ٹولز میری ویب سائٹ کی رفتار کو کم کر دیں گے؟",
+          "answer": "جدید ٹولز اسینکرونس لوڈنگ (asynchronous loading) کے ساتھ بنائے گئے ہیں، یعنی وہ ویب سائٹ کے مین تھریڈ کو بلاک نہیں کرتے۔ رفتار پر اثر نہ ہونے کے برابر ہے۔"
+        },
+        {
+          "question": "کیا سیشن ریکارڈنگ پرائیویسی کی خلاف ورزی ہے؟",
+          "answer": "نہیں، ذاتی ڈیٹا پر مشتمل تمام فیلڈز (نام، ای میل، کریڈٹ کارڈز) خودکار طور پر سنسر کر دیے جاتے ہیں اور ریکارڈنگ محفوظ ہونے سے پہلے انہیں چھپا دیا جاتا ہے۔"
+        },
+        {
+          "question": "Rage Click کیا ہے؟",
+          "answer": "ریج کلک اس وقت ہوتا ہے جب کوئی صارف مایوسی میں تیزی سے ایک ہی عنصر پر کئی بار کلک کرتا ہے۔ یہ عام طور پر ٹوٹے ہوئے لنک یا کام نہ کرنے والے بٹن کی نشاندہی کرتا ہے۔"
+        },
+        {
+          "question": "کیا آپ کو ملنے والے UX مسائل کو آپ حل کر سکتے ہیں؟",
+          "answer": "بالکل۔ خامیوں کی نشاندہی کے بعد، ہماری ویب ڈیولپمنٹ ٹیم عناصر کو دوبارہ ڈیزائن کرنے، کیڑے ٹھیک کرنے اور نئے حل کا تجربہ کرنے کے لیے کام کر سکتی ہے۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "layout",
+          "name": "Hotjar"
+        },
+        {
+          "icon": "video",
+          "name": "Microsoft Clarity"
+        },
+        {
+          "icon": "analytics",
+          "name": "FullStory"
+        },
+        {
+          "icon": "mouse-pointer",
+          "name": "Crazy Egg"
+        },
+        {
+          "icon": "chart-bar",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "code",
+          "name": "Google Tag Manager"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تحليلات تجربة المستخدم وتتبع السلوك (UX Analytics)",
+    "shortDescription": "توقف عن التخمين لماذا يغادر المستخدمون. نحن نستخدم الخرائط الحرارية (Heatmaps)، وتسجيلات الجلسات، والتحليلات السلوكية لتحديد اختناقات تجربة المستخدم وتحسين مسار التحويل الخاص بك.",
+    "fullDescription": "تخبرك أدوات التحليل التقليدية مثل Google Analytics *بما* حدث - كم عدد الزوار الذين جاؤوا وكم عدد المرتدين. بينما تخبرك تحليلات تجربة المستخدم (UX Analytics) *بسبب* حدوث ذلك. لماذا يتخلى المستخدمون عن عملية الدفع؟ لماذا لا ينقرون على زر الدعوة لاتخاذ إجراء (CTA) الرئيسي؟ تسد خدمة تحليلات تجربة المستخدم وتتبع سلوك المستخدم الفجوة بين البيانات الخام والسلوك البشري. نحن ننشر أدوات تتبع متقدمة (مثل Hotjar أو Clarity أو FullStory) لتصور كيفية تفاعل المستخدمين مع منتجك الرقمي بالضبط. من خلال تحليل خرائط التمرير الحرارية، وخرائط النقر، وتسجيلات الجلسات الفعلية، نحدد 'النقرات الغاضبة' (Rage Clicks)، والتنقل المربك، والنماذج المكسورة، والمحتوى الذي يتم تجاهله. نجمع بين هذه الرؤى النوعية والبيانات الكمية لتقديم توصيات تصميم قابلة للتنفيذ تقضي على الاحتكاك وتعزز معدلات التحويل بشكل كبير.",
+    "features": [
+      "تسجيل الجلسة وتحليل إعادة التشغيل",
+      "إنشاء الخرائط الحرارية للنقر، والحركة، والتمرير (Scroll)",
+      "تحليل التخلي عن النماذج والانسحاب من قمع المبيعات (Funnel Drop-off)",
+      "تحديد النقرات الغاضبة (Rage Clicks) والنقرات الميتة",
+      "استطلاعات آراء المستخدمين والاستبيانات داخل الموقع",
+      "مراقبة مؤشرات الويب الأساسية والمراقبة الفعلية للمستخدمين (RUM)",
+      "توليد فرضيات لاختبارات A/B",
+      "تدقيق UX وتقارير إعادة تصميم قابلة للتنفيذ"
+    ],
+    "benefits": [
+      "اكتشاف مشكلات قابلية الاستخدام المخفية التي تقتل تحويلاتك بصمت",
+      "التوقف عن الاعتماد على الآراء الذاتية واتخاذ قرارات تصميم بناءً على بيانات مستخدمين حقيقية",
+      "إصلاح عناصر الموقع المعطلة والنماذج المليئة بالأخطاء قبل أن تكلفك آلاف المبيعات المفقودة",
+      "فهم المعلومات التي يبحث عنها المستخدمون بالضبط ولكنهم يفشلون في العثور عليها",
+      "تحديد أولويات مهام تطوير الموقع بناءً على تأثير العمل الفعلي واحتكاك المستخدم",
+      "زيادة رضا العملاء من خلال توفير تجربة رقمية سلسة وخالية من الاحتكاك"
+    ],
+    "metaTitle": "وكالة تحليلات UX | الخرائط الحرارية وتتبع السلوك | PakSoft",
+    "metaDescription": "افهم سلوك المستخدم مع تحليلات UX. نستخدم الخرائط الحرارية وتسجيل الجلسات لإصلاح مشكلات قابلية الاستخدام وزيادة المبيعات.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تكامل الأداة وإعداد الخصوصية",
+          "description": "ندمج أدوات مثل Hotjar أو MS Clarity، مما يضمن الامتثال الصارم لقوانين الخصوصية (GDPR) عن طريق إخفاء جميع معلومات الهوية الشخصية (PII) مثل كلمات المرور."
+        },
+        {
+          "step": 2,
+          "title": "جمع البيانات الأساسية",
+          "description": "نسمح للأدوات بالعمل بصمت في الخلفية، وجمع قدر ذو دلالة إحصائية من تسجيلات الجلسات، والخرائط الحرارية، وبيانات مسار التحويل."
+        },
+        {
+          "step": 3,
+          "title": "التحليل السلوكي والتعرف على الأنماط",
+          "description": "يشاهد محللو تجربة المستخدم لدينا ساعات من جلسات المستخدمين، للبحث تحديداً عن أنماط الإحباط (النقرات الغاضبة) والتسرب في صفحات التحويل الهامة."
+        },
+        {
+          "step": 4,
+          "title": "مراجعة الخريطة الحرارية وعمق التمرير",
+          "description": "نحلل أين ينقر المستخدمون وإلى أي مدى يمررون لأسفل. إذا لم يتم التمرير لأسفل إلى جدول التسعير الخاص بك، فنحن نعلم أن القسم العلوي (Hero section) غير مقنع بما يكفي."
+        },
+        {
+          "step": 5,
+          "title": "تحسين النماذج وعملية الدفع",
+          "description": "نحلل إحصائيات النموذج لمعرفة حقل الإدخال الدقيق الذي يتسبب في تخلي المستخدمين عن العملية (مثل طلب رقم هاتف عندما لا يكون ذلك ضرورياً تماماً)."
+        },
+        {
+          "step": 6,
+          "title": "تقارير قابلة للتنفيذ",
+          "description": "نقدم قائمة أولويات لإصلاحات UX / UI، مدعومة بأدلة فيديو لصعوبات المستخدم، وننشئ فرضيات لاختبارات A/B المستقبلية لتحسين التحويلات."
+        }
+      ],
+      "faq": [
+        {
+          "question": "هل ستؤدي أدوات تتبع تجربة المستخدم إلى إبطاء موقعي؟",
+          "answer": "تم تصميم أدوات التتبع الحديثة للتحميل غير المتزامن (Asynchronous)، مما يعني أنها لن تحظر الخيط الرئيسي لموقع الويب الخاص بك. التأثير على سرعة الصفحة ضئيل للغاية ويستحق الرؤى المكتسبة."
+        },
+        {
+          "question": "هل يعتبر تسجيل الجلسات انتهاكاً للخصوصية؟",
+          "answer": "لا. نقوم بتهيئة برنامج التتبع للالتزام الصارم بقوانين الخصوصية. يتم حجب جميع حقول الإدخال التي تحتوي على بيانات شخصية (الأسماء ورسائل البريد الإلكتروني وبطاقات الائتمان) تلقائياً قبل حفظ التسجيل."
+        },
+        {
+          "question": "ما هي 'النقرة الغاضبة' (Rage Click)؟",
+          "answer": "تحدث النقرة الغاضبة عندما ينقر المستخدم على نفس العنصر عدة مرات بسرعة بسبب الإحباط. يشير عادةً إلى ارتباط معطل، أو زر لا يعمل، أو عنصر يبدو قابلاً للنقر ولكنه ليس كذلك."
+        },
+        {
+          "question": "كيف يختلف هذا عن Google Analytics؟",
+          "answer": "Google Analytics أداة كمية؛ يخبرك أن 50٪ من الأشخاص غادروا صفحة الدفع. تحليلات UX أداة نوعية؛ من خلال تسجيلات الجلسة، تظهر لك أنهم غادروا لأن زر 'تطبيق الرمز الترويجي' كان يتداخل مع زر 'إرسال' على الأجهزة المحمولة."
+        },
+        {
+          "question": "هل أحتاج إلى حركة مرور (Traffic) كافية لتكون تحليلات تجربة المستخدم مفيدة؟",
+          "answer": "نعم. إذا كان موقعك يحصل على 10 زوار فقط يومياً، فلن يكون للخرائط الحرارية دلالة إحصائية. نوصي بوجود بضعة آلاف من الزوار شهرياً على الأقل لاشتقاق أنماط سلوكية قوية."
+        },
+        {
+          "question": "هل يمكنك إصلاح مشكلات UX التي تجدها؟",
+          "answer": "بالتأكيد. بعد تحديد الاختناقات، يمكن لفرق تطوير الويب و CRO (تحسين معدل التحويل) التدخل لإعادة تصميم العناصر وإصلاح الأخطاء واختبار الحلول الجديدة."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "layout",
+          "name": "Hotjar"
+        },
+        {
+          "icon": "video",
+          "name": "Microsoft Clarity"
+        },
+        {
+          "icon": "analytics",
+          "name": "FullStory"
+        },
+        {
+          "icon": "mouse-pointer",
+          "name": "Crazy Egg"
+        },
+        {
+          "icon": "chart-bar",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "code",
+          "name": "Google Tag Manager"
+        }
+      ]
+    }
+  }
+}

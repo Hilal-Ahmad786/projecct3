@@ -1,0 +1,638 @@
+{
+  "slug": "pinterest-ads",
+  "en": {
+    "name": "Pinterest Ads Management",
+    "shortDescription": "Turn inspiration into action. We create visually captivating Pinterest Ads that reach users in the planning phase, driving high-converting traffic and sales for e-commerce and lifestyle brands.",
+    "fullDescription": "Pinterest is not a social media platform; it's a visual search engine. Users go to Pinterest with high intent—they are planning weddings, redesigning living rooms, looking for recipes, or building their dream wardrobes. This means they are actively seeking inspiration and are highly primed to make a purchase. Our Pinterest Ads Management service capitalizes on this unique mindset. We create stunning, aesthetically pleasing 'Promoted Pins' that seamlessly blend into the user's feed while standing out enough to stop the scroll. We handle everything from account setup and Pinterest Tag implementation to audience targeting, creative design, and bid optimization. Because Pinterest users are planners, the sales cycle can be longer, but the Customer Lifetime Value (LTV) is exceptionally high. We optimize for 'Add to Cart' and 'Checkout' events, ensuring your ad spend delivers a measurable, profitable return.",
+    "features": [
+      "Comprehensive Pinterest Account & Board Optimization",
+      "Pinterest Tag Installation & Conversion Tracking Setup",
+      "Visually Engaging Pin Creative Design (Static & Video)",
+      "Advanced Keyword & Interest-Based Audience Targeting",
+      "Catalog Integration & Shopping Ads Setup (E-commerce)",
+      "Retargeting Campaigns (Engagers & Site Visitors)",
+      "A/B Testing (Creatives, Headlines, Formats)",
+      "ROAS (Return on Ad Spend) Optimization & Reporting"
+    ],
+    "benefits": [
+      "Reach a highly engaged audience actively looking for inspiration and products to buy",
+      "Drive lower Cost-Per-Click (CPC) compared to highly saturated platforms like Facebook",
+      "Increase the lifespan of your ads (Pins continue to drive traffic months after posting)",
+      "Seamlessly integrate your e-commerce product catalog directly into the platform",
+      "Target users early in the buying cycle, before they have committed to a competitor",
+      "Leverage visual search technology to match your products with users' specific aesthetics"
+    ],
+    "metaTitle": "Pinterest Ads Agency | Pinterest Marketing | PakSoft",
+    "metaDescription": "Drive sales with Pinterest Ads. We create stunning Promoted Pins, integrate Shopping catalogs, and target high-intent users in the planning phase.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Account Audit & Pixel Setup",
+          "description": "We optimize your Pinterest Business account and install the Pinterest Tag to accurately track conversions, add-to-carts, and page views."
+        },
+        {
+          "step": 2,
+          "title": "Audience & Keyword Research",
+          "description": "Because Pinterest is a search engine, we conduct deep keyword research to understand exactly what your audience is searching for."
+        },
+        {
+          "step": 3,
+          "title": "Creative Development",
+          "description": "Our designers create beautiful static Pins, Video Pins, and Idea Pins aligning with Pinterest best practices to stop the scroll."
+        },
+        {
+          "step": 4,
+          "title": "Campaign Structuring & Launch",
+          "description": "We build ad campaigns using Keyword Targeting, Interest Targeting, and Catalog Sales campaigns for e-commerce."
+        },
+        {
+          "step": 5,
+          "title": "Retargeting Setup",
+          "description": "We capture users who engaged with Pins or visited your site but haven't purchased, serving them dynamic ads to complete the sale."
+        },
+        {
+          "step": 6,
+          "title": "Optimization & Scaling",
+          "description": "We continuously test different creatives and audiences, shifting budget toward top-performing ads to maximize ROAS."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Pinterest Ads right for my business?",
+          "answer": "Pinterest is highly effective for visual, consumer industries: E-commerce (fashion, decor, beauty), food, travel, and DIY. It's less effective for B2B SaaS."
+        },
+        {
+          "question": "How is Pinterest different from Facebook or Instagram Ads?",
+          "answer": "Facebook is disruptive marketing. Pinterest is intent-based (users are there to plan). Pins also have a much longer shelf life than a social feed post."
+        },
+        {
+          "question": "Do I need a large product catalog to run Pinterest Ads?",
+          "answer": "No. While Shopping Ads require a catalog, you can run successful campaigns promoting a single flagship product or a blog post using Promoted Pins."
+        },
+        {
+          "question": "What are 'Shopping Ads' on Pinterest?",
+          "answer": "Shopping Ads pull directly from your e-commerce catalog (e.g., Shopify). They automatically show product images, pricing, and availability."
+        },
+        {
+          "question": "How long does it take to see results?",
+          "answer": "Because Pinterest users are 'planners', the conversion window is longer. We recommend a 3-month minimum commitment to accurately measure ROAS."
+        },
+        {
+          "question": "What kind of ad formats do you use?",
+          "answer": "We use Standard Pins (static images), Video Pins (engaging for demos), Carousel Pins (multiple images), and Shopping Pins for e-commerce."
+        },
+        {
+          "question": "How do you target people on Pinterest?",
+          "answer": "We use Keyword targeting (what they search), Interest targeting (topics they follow), Demographic targeting, and Retargeting (past visitors)."
+        },
+        {
+          "question": "Can you design the Pins for us?",
+          "answer": "Yes. Our creative team designs all assets, ensuring they meet specific visual requirements (2:3 aspect ratio, text overlays) to stand out."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "pinterest",
+          "name": "Pinterest Ads Manager"
+        },
+        {
+          "icon": "shopify",
+          "name": "Shopify Catalog"
+        },
+        {
+          "icon": "canva",
+          "name": "Canva"
+        },
+        {
+          "icon": "adobe",
+          "name": "Adobe Creative Cloud"
+        },
+        {
+          "icon": "google",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "tagmanager",
+          "name": "Google Tag Manager"
+        },
+        {
+          "icon": "meta",
+          "name": "Meta Pixel"
+        },
+        {
+          "icon": "triplewhale",
+          "name": "Triple Whale"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Pinterest Reklam (Ads) Yönetimi",
+    "shortDescription": "İlhamı eyleme dönüştürün. Kullanıcılara planlama aşamasında ulaşan, e-ticaret ve yaşam tarzı markaları için yüksek dönüşüm sağlayan trafik ve satışları yönlendiren görsel olarak büyüleyici Pinterest Reklamları oluşturuyoruz.",
+    "fullDescription": "Pinterest bir sosyal medya platformu değil; görsel bir arama motorudur. Kullanıcılar Pinterest'e yüksek bir niyetle girerler; düğün planlıyor, oturma odalarını yeniden tasarlıyor, tarifler arıyor veya rüya gibi bir gardırop oluşturuyorlar. Bu, aktif olarak ilham aradıkları ve satın alma işlemi yapmaya oldukça hazır oldukları anlamına gelir. Pinterest Reklam Yönetimi hizmetimiz, bu benzersiz zihniyetten yararlanır. Kullanıcının akışına sorunsuz bir şekilde karışırken kaydırmayı durduracak kadar öne çıkan çarpıcı, estetik açıdan hoş 'Sponsorlu Pinler (Promoted Pins)' oluşturuyoruz. Hesap kurulumundan ve Pinterest Etiketi (Tag) uygulamasından kitle hedeflemeye, yaratıcı tasarıma ve teklif optimizasyonuna kadar her şeyi biz hallediyoruz. Pinterest kullanıcıları 'planlayıcı' oldukları için satış döngüsü daha uzun olabilir, ancak Müşteri Yaşam Boyu Değeri (LTV) son derece yüksektir. Reklam harcamanızın ölçülebilir, karlı bir getiri sağlamasını garantilemek için 'Sepete Ekle' ve 'Ödeme' etkinlikleri için optimizasyon yapıyoruz.",
+    "features": [
+      "Kapsamlı Pinterest Hesap ve Pano (Board) Optimizasyonu",
+      "Pinterest Tag (Etiket) Kurulumu ve Dönüşüm İzleme Ayarı",
+      "Görsel Olarak İlgi Çekici Pin Kreatif Tasarımı (Statik ve Video)",
+      "Gelişmiş Anahtar Kelime ve İlgi Alanı Tabanlı Kitle Hedefleme",
+      "Katalog Entegrasyonu ve Alışveriş Reklamları Kurulumu (E-ticaret)",
+      "Yeniden Hedefleme (Retargeting) Kampanyaları",
+      "A/B Testleri (Kreatifler, Başlıklar, Formatlar)",
+      "ROAS (Reklam Harcaması Getirisi) Optimizasyonu ve Raporlama"
+    ],
+    "benefits": [
+      "Aktif olarak ilham ve satın alacak ürünler arayan son derece etkileşimli bir kitleye ulaşın",
+      "Facebook gibi çok doygun platformlara kıyasla daha düşük Tıklama Başına Maliyet (CPC) elde edin",
+      "Reklamlarınızın ömrünü uzatın (Pinler yayınlandıktan aylar sonra bile trafik çekmeye devam eder)",
+      "E-ticaret ürün kataloğunuzu doğrudan platforma sorunsuz bir şekilde entegre edin",
+      "Kullanıcıları bir rakibe bağlanmadan önce, satın alma döngüsünün başlarında hedefleyin",
+      "Ürünlerinizi kullanıcıların özel estetikleriyle eşleştirmek için görsel arama teknolojisinden yararlanın"
+    ],
+    "metaTitle": "Pinterest Reklam Ajansı | Pinterest Pazarlama | PakSoft",
+    "metaDescription": "Pinterest Reklamlarıyla satışları artırın. Çarpıcı Sponsorlu Pinler oluşturuyor, katalogları entegre ediyor ve planlama aşamasındaki yüksek niyetli kullanıcıları hedefliyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Hesap Denetimi ve Piksel Kurulumu",
+          "description": "Pinterest İşletme hesabınızı optimize ediyor ve dönüşümleri, sepete eklemeleri ve sayfa görüntülemelerini doğru bir şekilde izlemek için Pinterest Etiketini kuruyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Kitle ve Anahtar Kelime Araştırması",
+          "description": "Pinterest bir arama motoru olduğu için, kitlenizin tam olarak ne aradığını anlamak için derinlemesine anahtar kelime araştırması yapıyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Kreatif Geliştirme",
+          "description": "Tasarımcılarımız, kaydırmayı durdurmak için Pinterest en iyi uygulamalarıyla uyumlu güzel statik Pinler, Video Pinleri ve Fikir (Idea) Pinleri oluşturur."
+        },
+        {
+          "step": 4,
+          "title": "Kampanya Yapılandırma ve Lansman",
+          "description": "Anahtar Kelime Hedefleme, İlgi Alanı Hedefleme ve e-ticaret için Katalog Satış kampanyalarını kullanarak reklam kampanyalarınızı oluşturuyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Yeniden Hedefleme (Retargeting) Kurulumu",
+          "description": "Pinlerinizle etkileşime giren ancak satın almayan kullanıcıları yakalıyor, satışı tamamlamaları için onlara dinamik reklamlar sunuyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Optimizasyon ve Ölçeklendirme",
+          "description": "Farklı kreatifleri ve kitleleri sürekli olarak test ediyor, ROAS'ı en üst düzeye çıkarmak için bütçeyi en iyi performans gösteren reklamlara kaydırıyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Pinterest Reklamları işletmem için uygun mu?",
+          "answer": "Pinterest görsel, tüketiciye dönük sektörler için oldukça etkilidir: E-ticaret (moda, dekor, güzellik), yiyecek, seyahat ve kendin yap (DIY). B2B SaaS için daha az etkilidir."
+        },
+        {
+          "question": "Pinterest'in Facebook veya Instagram Reklamlarından farkı nedir?",
+          "answer": "Facebook kesintiye uğratan bir pazarlamadır. Pinterest niyet odaklıdır (kullanıcılar plan yapmak için oradadır). Pinler ayrıca bir sosyal medya gönderisinden çok daha uzun bir raf ömrüne sahiptir."
+        },
+        {
+          "question": "Pinterest Reklamları yayınlamak için büyük bir ürün kataloğuna ihtiyacım var mı?",
+          "answer": "Hayır. Alışveriş Reklamları katalog gerektirse de, Sponsorlu Pinleri kullanarak tek bir ürünü veya bir blog yazısını tanıtan başarılı kampanyalar yürütebilirsiniz."
+        },
+        {
+          "question": "Pinterest'teki 'Alışveriş Reklamları (Shopping Ads)' nedir?",
+          "answer": "Alışveriş Reklamları doğrudan e-ticaret kataloğunuzdan (ör. Shopify) çekilir. Ürün görsellerini, fiyatlandırmayı ve stok durumunu otomatik olarak gösterir."
+        },
+        {
+          "question": "Sonuçları görmek ne kadar sürer?",
+          "answer": "Pinterest kullanıcıları 'planlayıcı' oldukları için dönüşüm penceresi daha uzundur. Gerçek ROAS'ı doğru bir şekilde ölçmek için en az 3 aylık bir taahhüt öneriyoruz."
+        },
+        {
+          "question": "Ne tür reklam formatları kullanıyorsunuz?",
+          "answer": "Standart Pinler (statik görseller), Video Pinleri (demolar için), Karuseller (birden fazla görsel) ve e-ticaret için Alışveriş Pinleri kullanıyoruz."
+        },
+        {
+          "question": "Pinterest'te insanları nasıl hedefliyorsunuz?",
+          "answer": "Anahtar Kelime (ne aradıkları), İlgi Alanı (takip ettikleri konular), Demografik hedefleme ve Yeniden Hedefleme (geçmiş ziyaretçiler) kombinasyonunu kullanıyoruz."
+        },
+        {
+          "question": "Pinleri bizim için tasarlayabilir misiniz?",
+          "answer": "Evet. Kreatif ekibimiz, öne çıkmaları için tüm varlıkları Pinterest'in belirli görsel gereksinimlerini (2:3 en boy oranı vb.) karşılayacak şekilde tasarlar."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "pinterest",
+          "name": "Pinterest Ads Manager"
+        },
+        {
+          "icon": "shopify",
+          "name": "Shopify Catalog"
+        },
+        {
+          "icon": "canva",
+          "name": "Canva"
+        },
+        {
+          "icon": "adobe",
+          "name": "Adobe Creative Cloud"
+        },
+        {
+          "icon": "google",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "tagmanager",
+          "name": "Google Tag Manager"
+        },
+        {
+          "icon": "meta",
+          "name": "Meta Pixel"
+        },
+        {
+          "icon": "triplewhale",
+          "name": "Triple Whale"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Pinterest Ads Management",
+    "shortDescription": "Verwandeln Sie Inspiration in Aktion. Wir erstellen visuell fesselnde Pinterest-Anzeigen, die Nutzer in der Planungsphase erreichen und hochkonvertierenden Traffic und Verkäufe für E-Commerce- und Lifestyle-Marken generieren.",
+    "fullDescription": "Pinterest ist keine Social-Media-Plattform, sondern eine visuelle Suchmaschine. Nutzer gehen mit hoher Kaufabsicht auf Pinterest – sie planen Hochzeiten, gestalten Wohnzimmer neu, suchen nach Rezepten oder stellen ihre Traumgarderobe zusammen. Sie suchen aktiv nach Inspiration und sind sehr kaufbereit. Unser Pinterest-Ads-Management-Service nutzt dieses einzigartige Mindset. Wir erstellen atemberaubende, ästhetisch ansprechende 'Promoted Pins', die sich nahtlos in den Feed des Nutzers einfügen, aber auffällig genug sind, um das Scrollen zu stoppen. Wir kümmern uns um alles: von der Kontoeinrichtung und der Implementierung des Pinterest-Tags über Zielgruppen-Targeting und kreatives Design bis hin zur Gebotsoptimierung. Da Pinterest-Nutzer 'Planer' sind, kann der Verkaufszyklus länger sein, aber der Customer Lifetime Value (LTV) ist außergewöhnlich hoch. Wir optimieren auf 'In den Warenkorb'- und 'Checkout'-Events und stellen sicher, dass Ihre Werbeausgaben einen messbaren, profitablen ROI liefern.",
+    "features": [
+      "Umfassende Pinterest Account & Board Optimierung",
+      "Pinterest Tag Installation & Conversion Tracking Setup",
+      "Visuell ansprechendes Pin Creative Design (Statisch & Video)",
+      "Erweitertes Keyword- & interessenbasiertes Targeting",
+      "Katalog-Integration & Setup von Shopping Ads (E-Commerce)",
+      "Retargeting-Kampagnen (Engager & Website-Besucher)",
+      "A/B-Testing (Creatives, Headlines, Formate)",
+      "ROAS (Return on Ad Spend) Optimierung & Reporting"
+    ],
+    "benefits": [
+      "Erreichen Sie Nutzer, die aktiv nach Inspiration und Produkten suchen",
+      "Erzielen Sie geringere CPCs (Cost-Per-Click) als auf gesättigten Plattformen",
+      "Erhöhen Sie die Lebensdauer Ihrer Anzeigen (Pins generieren monatelang Traffic)",
+      "Integrieren Sie Ihren Produktkatalog nahtlos direkt in die Plattform",
+      "Sprechen Sie Nutzer früh im Kaufzyklus an, vor der Konkurrenz",
+      "Nutzen Sie die visuelle Suchtechnologie, um Produkte mit der Ästhetik der Nutzer abzugleichen"
+    ],
+    "metaTitle": "Pinterest Ads Agentur | Pinterest Marketing | PakSoft",
+    "metaDescription": "Steigern Sie Verkäufe mit Pinterest Ads. Wir erstellen atemberaubende Promoted Pins, integrieren Shopping-Kataloge und targeten Nutzer in der Planungsphase.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Account Audit & Pixel Setup",
+          "description": "Wir optimieren Ihren Pinterest-Business-Account und installieren den Pinterest-Tag, um Conversions, Add-to-Carts und Aufrufe exakt zu tracken."
+        },
+        {
+          "step": 2,
+          "title": "Zielgruppen- & Keyword-Recherche",
+          "description": "Da Pinterest eine Suchmaschine ist, führen wir tiefe Keyword-Recherchen durch, um exakt zu verstehen, wonach Ihre Zielgruppe sucht."
+        },
+        {
+          "step": 3,
+          "title": "Creative Development",
+          "description": "Unsere Designer erstellen statische Pins und Video-Pins nach Pinterest Best Practices (z.B. 2:3 Format), die das Scrollen stoppen."
+        },
+        {
+          "step": 4,
+          "title": "Kampagnenstrukturierung & Launch",
+          "description": "Wir bauen Kampagnen mit Keyword-Targeting, Interessen-Targeting und Katalog-Verkäufen (für E-Commerce) auf."
+        },
+        {
+          "step": 5,
+          "title": "Retargeting Setup",
+          "description": "Wir erfassen Nutzer, die mit Pins interagiert oder Ihre Website besucht haben, und spielen dynamische Anzeigen aus, um den Kauf abzuschließen."
+        },
+        {
+          "step": 6,
+          "title": "Optimierung & Skalierung",
+          "description": "Wir testen kontinuierlich Creatives und Zielgruppen und verschieben das Budget auf die Top-Performer, um den ROAS zu maximieren."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Sind Pinterest Ads das Richtige für mein Unternehmen?",
+          "answer": "Pinterest ist sehr effektiv für visuelle Branchen: E-Commerce (Mode, Einrichtung, Beauty), Food, Reise und DIY. Für B2B SaaS ist es weniger effektiv."
+        },
+        {
+          "question": "Wie unterscheidet sich Pinterest von Facebook Ads?",
+          "answer": "Facebook ist 'Disruptive Marketing'. Pinterest ist absichtsbasiert (Nutzer wollen planen). Pins haben zudem eine viel längere Lebensdauer als Social Posts."
+        },
+        {
+          "question": "Brauche ich einen großen Produktkatalog für Pinterest Ads?",
+          "answer": "Nein. Shopping Ads erfordern einen Katalog, aber Sie können mit Promoted Pins auch ein einzelnes Top-Produkt oder einen Blogbeitrag erfolgreich bewerben."
+        },
+        {
+          "question": "Was sind 'Shopping Ads' auf Pinterest?",
+          "answer": "Shopping Ads ziehen Daten direkt aus Ihrem E-Commerce-Katalog (z.B. Shopify) und zeigen automatisch Produktbilder, Preise und Verfügbarkeit an."
+        },
+        {
+          "question": "Wie lange dauert es, bis man Ergebnisse sieht?",
+          "answer": "Da Pinterest-Nutzer 'Planer' sind, ist das Conversion-Fenster länger. Wir empfehlen ein Engagement von mind. 3 Monaten, um den echten ROAS zu messen."
+        },
+        {
+          "question": "Welche Anzeigenformate nutzen Sie?",
+          "answer": "Wir nutzen Standard Pins (statisch), Video Pins (für Demos), Carousel Pins (mehrere Bilder) und Shopping Pins für E-Commerce."
+        },
+        {
+          "question": "Wie targeten Sie Nutzer auf Pinterest?",
+          "answer": "Wir nutzen Keyword-Targeting (Suchbegriffe), Interessen-Targeting (Abonnements), demografisches Targeting und Retargeting (Website-Besucher)."
+        },
+        {
+          "question": "Können Sie die Pins für uns designen?",
+          "answer": "Ja. Unser Kreativteam entwirft alle Assets und stellt sicher, dass sie die spezifischen visuellen Anforderungen (2:3-Format, Text-Overlays) von Pinterest erfüllen."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "pinterest",
+          "name": "Pinterest Ads Manager"
+        },
+        {
+          "icon": "shopify",
+          "name": "Shopify Catalog"
+        },
+        {
+          "icon": "canva",
+          "name": "Canva"
+        },
+        {
+          "icon": "adobe",
+          "name": "Adobe Creative Cloud"
+        },
+        {
+          "icon": "google",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "tagmanager",
+          "name": "Google Tag Manager"
+        },
+        {
+          "icon": "meta",
+          "name": "Meta Pixel"
+        },
+        {
+          "icon": "triplewhale",
+          "name": "Triple Whale"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "پنٹریسٹ ایڈز مینجمنٹ (Pinterest Ads)",
+    "shortDescription": "الہام (Inspiration) کو عمل میں بدلیں۔ ہم ایسی پرکشش Pinterest ایڈز بناتے ہیں جو صارفین تک اس وقت پہنچتی ہیں جب وہ منصوبہ بندی کر رہے ہوتے ہیں، جس سے ای کامرس اور لائف اسٹائل برانڈز کی فروخت بڑھتی ہے۔",
+    "fullDescription": "پنٹریسٹ (Pinterest) صرف ایک سوشل میڈیا پلیٹ فارم نہیں ہے، یہ ایک بصری (visual) سرچ انجن ہے۔ صارفین پنٹریسٹ پر کسی خاص مقصد سے آتے ہیں—وہ شادی کی منصوبہ بندی کر رہے ہوتے ہیں، کمروں کی سجاوٹ کے آئیڈیاز لے رہے ہوتے ہیں یا کپڑوں کے ڈیزائن ڈھونڈ رہے ہوتے ہیں۔ اس کا مطلب ہے کہ وہ خریداری کے لیے تیار ہوتے ہیں۔ ہماری Pinterest Ads سروس اس موقع کا فائدہ اٹھاتی ہے۔ ہم انتہائی خوبصورت 'Promoted Pins' بناتے ہیں جو صارفین کی توجہ اپنی جانب کھینچ لیتی ہیں۔ ہم اکاؤنٹ سیٹ اپ، پنٹریسٹ ٹیگ لگانے، آڈینس ٹارگٹنگ، ڈیزائننگ، اور بجٹ آپٹیمائزیشن سمیت سب کچھ سنبھالتے ہیں۔ چونکہ پنٹریسٹ صارفین منصوبہ بندی کرنے والے ہوتے ہیں، اس لیے سیلز سائیکل لمبا ہو سکتا ہے، لیکن ان کی کسٹمر لائف ٹائم ویلیو (LTV) بہت زیادہ ہوتی ہے۔ ہم 'Add to Cart' اور 'Checkout' کے لیے ایڈز کو بہتر بناتے ہیں، تاکہ آپ کے اشتہارات کا بجٹ منافع بخش ثابت ہو۔",
+    "features": [
+      "جامع پنٹریسٹ اکاؤنٹ اور بورڈ آپٹیمائزیشن",
+      "Pinterest Tag انسٹالیشن اور کنورژن ٹریکنگ سیٹ اپ",
+      "پرکشش پن (Pin) ڈیزائن (تصاویر اور ویڈیوز)",
+      "ایڈوانسڈ کی ورڈ اور دلچسپی کی بنیاد پر ٹارگٹنگ",
+      "ای کامرس کے لیے کیٹلاگ انضمام اور شاپنگ ایڈز سیٹ اپ",
+      "ری ٹارگٹنگ مہم (ویب سائٹ وزٹرز کے لیے)",
+      "A/B ٹیسٹنگ (ڈیزائن، ہیڈلائنز، فارمیٹس)",
+      "بہترین ROAS (اشتہاری اخراجات پر منافع) کے لیے آپٹیمائزیشن"
+    ],
+    "benefits": [
+      "ان خریداروں تک پہنچیں جو فعال طور پر آئیڈیاز اور مصنوعات تلاش کر رہے ہیں۔",
+      "فیس بک جیسے ہجوم والے پلیٹ فارمز کے مقابلے میں کم لاگت (CPC) پر اشتہارات چلائیں۔",
+      "اپنے اشتہارات کی عمر بڑھائیں (پنٹریسٹ پر پن مہینوں تک ٹریفک لاتی ہے)۔",
+      "اپنی ای کامرس مصنوعات کے کیٹلاگ کو براہ راست پلیٹ فارم کے ساتھ مربوط کریں۔",
+      "صارفین کو خریداری کے آغاز میں ہی ٹارگٹ کریں، اس سے پہلے کہ وہ کسی حریف کے پاس جائیں۔",
+      "بصری تلاش (visual search) کی ٹیکنالوجی کا فائدہ اٹھا کر اپنی مصنوعات دکھائیں۔"
+    ],
+    "metaTitle": "پنٹریسٹ ایڈز ایجنسی | پنٹریسٹ مارکیٹنگ | PakSoft",
+    "metaDescription": "Pinterest Ads کے ساتھ فروخت بڑھائیں۔ ہم شاندار Promoted Pins بناتے ہیں، شاپنگ کیٹلاگ لگاتے ہیں اور خریداروں کو صحیح وقت پر ٹارگٹ کرتے ہیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "اکاؤنٹ آڈٹ اور پکسل سیٹ اپ",
+          "description": "ہم آپ کے Pinterest بزنس اکاؤنٹ کو بہتر بناتے ہیں اور کنورژنز ٹریک کرنے کے لیے آپ کی ویب سائٹ پر Pinterest Tag لگاتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "آڈینس اور کی ورڈ ریسرچ",
+          "description": "چونکہ پنٹریسٹ ایک سرچ انجن ہے، ہم گہری کی ورڈ ریسرچ کرتے ہیں تاکہ یہ جان سکیں کہ آپ کے گاہک بالکل کیا تلاش کر رہے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "کریٹیو ڈیزائننگ",
+          "description": "ہمارے ڈیزائنرز پنٹریسٹ کے اصولوں کے مطابق خوبصورت تصاویر اور ویڈیو پن (Pins) بناتے ہیں جو دیکھنے والوں کو رکنے پر مجبور کر دیں۔"
+        },
+        {
+          "step": 4,
+          "title": "مہم کی ساخت اور لانچ",
+          "description": "ہم سرچ کے لیے کی ورڈ ٹارگٹنگ، دلچسپی کی ٹارگٹنگ اور ای کامرس کے لیے کیٹلاگ سیلز کا استعمال کرتے ہوئے ایڈز چلاتے ہیں۔"
+        },
+        {
+          "step": 5,
+          "title": "ری ٹارگٹنگ سیٹ اپ",
+          "description": "ہم ان لوگوں کو دوبارہ اشتہار دکھاتے ہیں جنہوں نے آپ کی پن دیکھی یا ویب سائٹ پر آئے لیکن خریداری نہیں کی، تاکہ وہ واپس آ کر خریداری مکمل کریں۔"
+        },
+        {
+          "step": 6,
+          "title": "آپٹیمائزیشن اور اسکیلنگ",
+          "description": "ہم مسلسل مختلف ڈیزائنز اور آڈینس کو ٹیسٹ کرتے ہیں اور بہتر نتائج (ROAS) دینے والے اشتہارات پر بجٹ منتقل کرتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "کیا پنٹریسٹ ایڈز میرے کاروبار کے لیے صحیح ہیں؟",
+          "answer": "پنٹریسٹ فیشن، ہوم ڈیکور، بیوٹی، خوراک اور سفر جیسی ای کامرس انڈسٹریز کے لیے بہترین ہے۔ B2B سروسز کے لیے یہ زیادہ کارآمد نہیں ہے۔"
+        },
+        {
+          "question": "پنٹریسٹ فیس بک یا انسٹاگرام ایڈز سے کیسے مختلف ہے؟",
+          "answer": "فیس بک پر لوگ دوستوں کے لیے آتے ہیں اور اشتہار ان کی توجہ ہٹاتا ہے۔ پنٹریسٹ پر لوگ منصوبہ بندی کے لیے آتے ہیں، اس لیے وہ اشتہارات کو پسند کرتے ہیں۔"
+        },
+        {
+          "question": "کیا پنٹریسٹ ایڈز چلانے کے لیے بڑی تعداد میں مصنوعات ہونا ضروری ہے؟",
+          "answer": "نہیں۔ شاپنگ ایڈز کے لیے کیٹلاگ ضروری ہے، لیکن آپ Promoted Pins کے ذریعے صرف ایک پروڈکٹ یا بلاگ پوسٹ کی بھی کامیاب مارکیٹنگ کر سکتے ہیں۔"
+        },
+        {
+          "question": "پنٹریسٹ پر 'شاپنگ ایڈز' (Shopping Ads) کیا ہیں؟",
+          "answer": "یہ ایڈز آپ کے ای کامرس اسٹور (جیسے Shopify) سے براہ راست پروڈکٹ کی تصویر، قیمت اور دستیابی کی معلومات دکھاتی ہیں۔"
+        },
+        {
+          "question": "نتائج دیکھنے میں کتنا وقت لگتا ہے؟",
+          "answer": "چونکہ پنٹریسٹ پر لوگ 'پلانرز' ہوتے ہیں (جیسے 6 ماہ بعد کی شادی کی منصوبہ بندی)، ہم درست منافع (ROAS) ماپنے کے لیے کم از کم 3 ماہ کا مشورہ دیتے ہیں۔"
+        },
+        {
+          "question": "آپ کس قسم کے اشتہارات (ایڈ فارمیٹس) استعمال کرتے ہیں؟",
+          "answer": "ہم تصاویر (Standard Pins)، ویڈیوز (Video Pins)، کراؤزل (Carousel Pins) اور ای کامرس کے لیے Shopping Pins کا استعمال کرتے ہیں۔"
+        },
+        {
+          "question": "آپ پنٹریسٹ پر لوگوں کو کیسے ٹارگٹ کرتے ہیں؟",
+          "answer": "ہم کی ورڈ ٹارگٹنگ (وہ کیا تلاش کرتے ہیں)، انٹرسٹ ٹارگٹنگ، ڈیموگرافک اور ری ٹارگٹنگ (پرانے وزٹرز) کا امتزاج استعمال کرتے ہیں۔"
+        },
+        {
+          "question": "کیا آپ ہمارے لیے پن (Pins) ڈیزائن کر سکتے ہیں؟",
+          "answer": "جی ہاں۔ ہماری ڈیزائن ٹیم تمام پن بناتی ہے اور یقینی بناتی ہے کہ وہ پنٹریسٹ کی مخصوص ضروریات (جیسے 2:3 کا سائز) پر پوری اتریں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "pinterest",
+          "name": "Pinterest Ads Manager"
+        },
+        {
+          "icon": "shopify",
+          "name": "Shopify Catalog"
+        },
+        {
+          "icon": "canva",
+          "name": "Canva"
+        },
+        {
+          "icon": "adobe",
+          "name": "Adobe Creative Cloud"
+        },
+        {
+          "icon": "google",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "tagmanager",
+          "name": "Google Tag Manager"
+        },
+        {
+          "icon": "meta",
+          "name": "Meta Pixel"
+        },
+        {
+          "icon": "triplewhale",
+          "name": "Triple Whale"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "إدارة إعلانات بينتريست (Pinterest Ads)",
+    "shortDescription": "حوّل الإلهام إلى عمل. نقوم بإنشاء إعلانات Pinterest آسرة بصرياً تصل إلى المستخدمين في مرحلة التخطيط، مما يدفع حركة مرور عالية التحويل ومبيعات للتجارة الإلكترونية وعلامات نمط الحياة.",
+    "fullDescription": "بينتريست (Pinterest) ليست منصة وسائط اجتماعية؛ إنه محرك بحث مرئي. يذهب المستخدمون إلى Pinterest بنية عالية - فهم يخططون لحفلات الزفاف، أو يعيدون تصميم غرف المعيشة، أو يبحثون عن وصفات، أو يبنون خزانة ملابس أحلامهم. هذا يعني أنهم يبحثون بنشاط عن الإلهام ومستعدون جداً لإجراء عملية شراء. تستفيد خدمة إدارة إعلانات Pinterest لدينا من هذه العقلية الفريدة. نقوم بإنشاء 'دبابيس مروجة' (Promoted Pins) مذهلة وممتعة من الناحية الجمالية تمتزج بسلاسة في خلاصة المستخدم مع إبرازها بما يكفي لإيقاف التمرير. نتعامل مع كل شيء بدءاً من إعداد الحساب وتنفيذ علامة Pinterest Tag إلى استهداف الجمهور والتصميم الإبداعي وتحسين عروض الأسعار. نظراً لأن مستخدمي Pinterest مخططون، فقد تكون دورة المبيعات أطول، لكن القيمة الدائمة للعميل (LTV) مرتفعة بشكل استثنائي. نقوم بالتحسين لأحداث 'إضافة إلى العربة' و 'الدفع'، مما يضمن أن إنفاقك الإعلاني يقدم عائداً قابلاً للقياس ومربحاً.",
+    "features": [
+      "التحسين الشامل لحساب Pinterest ولوحاته (Boards)",
+      "تثبيت Pinterest Tag وإعداد تتبع التحويل",
+      "تصميم إبداعي تفاعلي بصرياً للدبابيس (ثابت وفيديو)",
+      "استهداف متقدم للجمهور بناءً على الكلمات الرئيسية والاهتمامات",
+      "تكامل الكتالوج وإعداد إعلانات التسوق (للتجارة الإلكترونية)",
+      "حملات إعادة الاستهداف (المتفاعلون وزوار الموقع)",
+      "اختبار A/B (الإبداعات، العناوين، التنسيقات)",
+      "تحسين العائد على الإنفاق الإعلاني (ROAS) وإعداد التقارير"
+    ],
+    "benefits": [
+      "الوصول إلى جمهور شديد التفاعل يبحث بنشاط عن الإلهام والمنتجات",
+      "دفع تكلفة نقرة (CPC) أقل مقارنة بالمنصات المشبعة جداً مثل فيسبوك",
+      "زيادة عمر إعلاناتك (تستمر الدبابيس في دفع الزيارات لأشهر بعد النشر)",
+      "دمج كتالوج منتجات التجارة الإلكترونية الخاص بك بسلاسة مباشرة في المنصة",
+      "استهداف المستخدمين مبكراً في دورة الشراء، قبل أن يلتزموا تجاه منافس",
+      "الاستفادة من تقنية البحث المرئي لمطابقة منتجاتك مع جماليات المستخدمين"
+    ],
+    "metaTitle": "وكالة إعلانات بينتريست | التسويق عبر Pinterest | PakSoft",
+    "metaDescription": "عزز المبيعات بإعلانات Pinterest. نقوم بإنشاء دبابيس مروجة مذهلة، ودمج كتالوجات التسوق، واستهداف المستخدمين في مرحلة التخطيط.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تدقيق الحساب وإعداد البكسل",
+          "description": "نقوم بتحسين حساب Pinterest للأعمال الخاص بك وتثبيت Pinterest Tag لتتبع التحويلات والإضافات إلى السلة بدقة."
+        },
+        {
+          "step": 2,
+          "title": "الجمهور والبحث عن الكلمات الرئيسية",
+          "description": "نظراً لأن Pinterest هو محرك بحث، فإننا نجري بحثاً عميقاً للكلمات الرئيسية لفهم ما يبحث عنه جمهورك بالضبط."
+        },
+        {
+          "step": 3,
+          "title": "التطوير الإبداعي",
+          "description": "يصمم مصممونا دبابيس ثابتة جميلة، ودبابيس فيديو، ودبابيس أفكار تتماشى مع أفضل ممارسات Pinterest لإيقاف التمرير."
+        },
+        {
+          "step": 4,
+          "title": "هيكلة الحملة وإطلاقها",
+          "description": "نبني حملاتك الإعلانية باستخدام استهداف الكلمات، واستهداف الاهتمامات، وحملات مبيعات الكتالوج للتجارة الإلكترونية."
+        },
+        {
+          "step": 5,
+          "title": "إعداد إعادة الاستهداف",
+          "description": "نلتقط المستخدمين الذين تفاعلوا مع الدبابيس أو زاروا موقعك ولم يشتروا، ونقدم لهم إعلانات ديناميكية لإكمال البيع."
+        },
+        {
+          "step": 6,
+          "title": "التحسين والتوسيع",
+          "description": "نختبر باستمرار تصميمات وجماهير مختلفة، ونحول الميزانية نحو الإعلانات الأفضل أداءً لزيادة ROAS للحد الأقصى."
+        }
+      ],
+      "faq": [
+        {
+          "question": "هل إعلانات Pinterest مناسبة لعملي؟",
+          "answer": "إنه فعال للغاية للصناعات المرئية الاستهلاكية: التجارة الإلكترونية (أزياء، ديكور، تجميل)، الطعام، والسفر. وهو أقل فعالية لبرامج B2B."
+        },
+        {
+          "question": "كيف تختلف إعلانات Pinterest عن إعلانات فيسبوك؟",
+          "answer": "فيسبوك هو تسويق معطل. Pinterest قائم على النية (المستخدمون هناك للتخطيط). تتمتع الدبابيس أيضاً بعمر افتراضي أطول بكثير من منشورات الوسائط الاجتماعية."
+        },
+        {
+          "question": "هل أحتاج إلى كتالوج منتجات كبير لتشغيل إعلانات Pinterest؟",
+          "answer": "لا. تتطلب إعلانات التسوق كتالوجاً، لكن يمكنك تشغيل حملات تروج لمنتج رئيسي واحد باستخدام الدبابيس المروجة (Promoted Pins)."
+        },
+        {
+          "question": "ما هي 'إعلانات التسوق' على Pinterest؟",
+          "answer": "تُسحب إعلانات التسوق مباشرة من كتالوج التجارة الإلكترونية الخاص بك (مثل Shopify). وهي تعرض تلقائياً صورة المنتج والسعر والتوافر."
+        },
+        {
+          "question": "كم من الوقت يستغرق رؤية النتائج؟",
+          "answer": "نظراً لأن مستخدمي Pinterest 'مخططون'، فإن نافذة التحويل أطول. نوصي بالتزام 3 أشهر على الأقل لقياس عائد الإنفاق الإعلاني بدقة."
+        },
+        {
+          "question": "ما نوع أشكال الإعلانات التي تستخدمونها؟",
+          "answer": "نستخدم الدبابيس القياسية (صور ثابتة)، دبابيس الفيديو، دبابيس الدوارة (Carousel)، ودبابيس التسوق للتجارة الإلكترونية."
+        },
+        {
+          "question": "كيف تستهدفون الناس على Pinterest؟",
+          "answer": "نستخدم مزيجاً من استهداف الكلمات الرئيسية، واستهداف الاهتمامات، والاستهداف الديموغرافي، وإعادة الاستهداف (الزوار السابقين)."
+        },
+        {
+          "question": "هل يمكنكم تصميم الدبابيس لنا؟",
+          "answer": "نعم. يصمم فريقنا الإبداعي جميع الأصول، مما يضمن تلبية المتطلبات المرئية المحددة لـ Pinterest (نسبة عرض إلى ارتفاع 2:3) لتبرز."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "pinterest",
+          "name": "Pinterest Ads Manager"
+        },
+        {
+          "icon": "shopify",
+          "name": "Shopify Catalog"
+        },
+        {
+          "icon": "canva",
+          "name": "Canva"
+        },
+        {
+          "icon": "adobe",
+          "name": "Adobe Creative Cloud"
+        },
+        {
+          "icon": "google",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "tagmanager",
+          "name": "Google Tag Manager"
+        },
+        {
+          "icon": "meta",
+          "name": "Meta Pixel"
+        },
+        {
+          "icon": "triplewhale",
+          "name": "Triple Whale"
+        }
+      ]
+    }
+  }
+}

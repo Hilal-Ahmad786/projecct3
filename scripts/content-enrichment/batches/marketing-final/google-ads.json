@@ -1,0 +1,638 @@
+{
+  "slug": "google-ads",
+  "en": {
+    "name": "Google Ads Management",
+    "shortDescription": "Capture high-intent buyers exactly when they are searching for your solution. We build, manage, and scale highly profitable Google Ads campaigns that minimize wasted spend and maximize your Return on Ad Spend (ROAS).",
+    "fullDescription": "Most businesses waste thousands of dollars on Google Ads because their campaigns are poorly structured, bidding on the wrong keywords, or sending traffic to unoptimized landing pages. We turn Google Ads into a predictable, scalable revenue engine. Our certified Google Ads specialists take a surgical approach to Search, Display, Performance Max, and Retargeting campaigns. We don't just chase clicks; we chase conversions. We conduct exhaustive negative keyword research to eliminate irrelevant traffic, write compelling ad copy that dominates the Search Engine Results Page (SERP), and continuously A/B test bidding strategies. By tightly aligning your keywords with user intent and ensuring seamless tracking through Google Analytics, we ensure every dollar you spend is driving measurable business growth.",
+    "features": [
+      "Comprehensive Account Audit & Restructuring",
+      "Extensive Keyword & Negative Keyword Mining",
+      "Search, Display, and Performance Max (PMax) Campaigns",
+      "Advanced Bidding Strategy Optimization (tCPA, tROAS)",
+      "Dynamic Ad Copywriting & A/B Testing",
+      "Landing Page Conversion Rate Optimization (CRO)",
+      "Retargeting & Audience Segmentation",
+      "Custom Looker Studio Dashboards & Reporting"
+    ],
+    "benefits": [
+      "Capture leads who are actively searching for your exact product or service",
+      "Stop wasting budget on irrelevant clicks and broad match errors",
+      "Scale your revenue predictably with optimized bidding strategies",
+      "Outrank your competitors on the most valuable search terms",
+      "Gain complete transparency into your Cost-Per-Acquisition (CPA) and ROAS",
+      "Re-engage visitors who didn't convert on their first visit"
+    ],
+    "metaTitle": "Google Ads Management Agency | PPC Experts | PakSoft",
+    "metaDescription": "Stop wasting ad spend. Our certified Google Ads experts build scalable Search and Performance Max campaigns that maximize your ROAS and drive high-intent leads.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Discovery & Deep Audit",
+          "description": "We analyze your historical account data to identify exactly where budget is being wasted and where the greatest opportunities for immediate ROI lie."
+        },
+        {
+          "step": 2,
+          "title": "Keyword & Intent Mapping",
+          "description": "We map keywords to specific stages of the buying funnel, separating high-intent buyers from informational searchers to optimize bidding."
+        },
+        {
+          "step": 3,
+          "title": "Campaign Architecture & Build",
+          "description": "We structure your account using best practices to ensure hyper-relevant ad copy, high Quality Scores, and lower cost-per-click."
+        },
+        {
+          "step": 4,
+          "title": "Tracking & Attribution Setup",
+          "description": "We configure robust conversion tracking in Google Tag Manager and GA4 to ensure we capture every lead and sale accurately."
+        },
+        {
+          "step": 5,
+          "title": "Launch & Bid Management",
+          "description": "We launch the campaigns and actively manage bidding algorithms, monitoring search terms daily to add negative keywords and refine targeting."
+        },
+        {
+          "step": 6,
+          "title": "Continuous Scaling & Optimization",
+          "description": "We constantly run A/B tests on ad copy, test new landing page layouts, and adjust budgets to shift spend toward the highest-performing campaigns."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How much should I spend on Google Ads?",
+          "answer": "Budget is dictated by goals and CPA. We usually recommend a minimum starting budget of $2,000-$3,000/month to generate enough data for optimization."
+        },
+        {
+          "question": "How long does it take to see a positive ROI?",
+          "answer": "While traffic is immediate, the first 30 days are a 'learning phase' for the algorithm. Significant ROI improvements compound between months 2 and 4."
+        },
+        {
+          "question": "Do you manage Performance Max (PMax) campaigns?",
+          "answer": "Yes. PMax is highly effective, especially for e-commerce. We handle the entire setup, asset management, and audience signaling for PMax."
+        },
+        {
+          "question": "Are my landing pages included in your service?",
+          "answer": "We provide Landing Page CRO recommendations. If you need us to actually design and build new landing pages, we offer that as an add-on service."
+        },
+        {
+          "question": "Why should I hire an agency instead of doing it myself?",
+          "answer": "Google makes it easy to spend money, but hard to make it back. An agency brings structural expertise and daily optimization that prevents wasted spend."
+        },
+        {
+          "question": "Do you guarantee results?",
+          "answer": "No reputable agency guarantees specific ROAS, as factors like pricing and sales teams impact the final sale. We guarantee best-in-class optimization."
+        },
+        {
+          "question": "How do you charge for Google Ads management?",
+          "answer": "We typically charge a flat monthly retainer or a percentage of ad spend, depending on account size. We don't hide our fees inside your ad budget."
+        },
+        {
+          "question": "Who owns the Google Ads account?",
+          "answer": "You do. You retain 100% ownership of your account and historical data. We simply request Manager access to run the campaigns."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "googleads",
+          "name": "Google Ads"
+        },
+        {
+          "icon": "googleanalytics",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "googletagmanager",
+          "name": "Google Tag Manager"
+        },
+        {
+          "icon": "lookerstudio",
+          "name": "Looker Studio"
+        },
+        {
+          "icon": "semrush",
+          "name": "SEMrush"
+        },
+        {
+          "icon": "unbounce",
+          "name": "Unbounce"
+        },
+        {
+          "icon": "clickcease",
+          "name": "ClickCease"
+        },
+        {
+          "icon": "supermetrics",
+          "name": "Supermetrics"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Google Reklamları (Google Ads) Yönetimi",
+    "shortDescription": "Çözümünüzü tam aradıkları anda, satın alma niyeti yüksek alıcıları yakalayın. Boşa harcanan bütçeyi en aza indiren ve Reklam Harcamalarının Getirisini (ROAS) en üst düzeye çıkaran, son derece karlı Google Ads kampanyaları oluşturuyor, yönetiyor ve ölçeklendiriyoruz.",
+    "fullDescription": "Çoğu işletme Google Ads'de binlerce doları boşa harcıyor çünkü kampanyaları kötü yapılandırılmış, yanlış anahtar kelimelere teklif veriyor veya trafiği optimize edilmemiş açılış sayfalarına yönlendiriyor. Google Ads'i öngörülebilir, ölçeklenebilir bir gelir motoruna dönüştürüyoruz. Sertifikalı Google Ads uzmanlarımız; Arama Ağı, Görüntülü Reklam Ağı, Maksimum Performans (PMax) ve Yeniden Pazarlama kampanyalarına cerrahi bir yaklaşımla yaklaşır. Biz sadece tıklamaların değil, dönüşümlerin peşindeyiz. Alakasız trafiği ortadan kaldırmak için kapsamlı negatif anahtar kelime araştırması yapıyor, Arama Motoru Sonuç Sayfasını (SERP) domine eden ilgi çekici reklam metinleri yazıyor ve teklif stratejilerinde sürekli A/B testleri yapıyoruz. Anahtar kelimelerinizi kullanıcı niyetiyle sıkı bir şekilde hizalayarak ve Google Analytics aracılığıyla kusursuz izleme sağlayarak, harcadığınız her kuruşun ölçülebilir bir iş büyümesi sağlamasını garanti ediyoruz.",
+    "features": [
+      "Kapsamlı Hesap Denetimi ve Yeniden Yapılandırma",
+      "Geniş Çaplı Anahtar Kelime ve Negatif Anahtar Kelime Madenciliği",
+      "Arama Ağı, Görüntülü Reklam Ağı ve Maksimum Performans (PMax) Kampanyaları",
+      "Gelişmiş Teklif Stratejisi Optimizasyonu (tCPA, tROAS)",
+      "Dinamik Reklam Metin Yazarlığı ve A/B Testi",
+      "Açılış Sayfası Dönüşüm Oranı Optimizasyonu (CRO)",
+      "Yeniden Pazarlama ve Kitle Segmentasyonu",
+      "Özel Looker Studio Gösterge Tabloları ve Raporlama"
+    ],
+    "benefits": [
+      "Tam olarak ürün veya hizmetinizi aktif olarak arayan potansiyel müşterileri yakalayın",
+      "Alakasız tıklamalara ve geniş eşleme hatalarına bütçe harcamayı bırakın",
+      "Optimize edilmiş teklif stratejileriyle gelirinizi öngörülebilir şekilde ölçeklendirin",
+      "En değerli arama terimlerinde rakiplerinizi geride bırakın",
+      "Edinme Başına Maliyet (CPA) ve ROAS'ınız üzerinde tam şeffaflık kazanın",
+      "İlk ziyaretlerinde dönüşüm sağlamayan ziyaretçilerle yeniden etkileşim kurun"
+    ],
+    "metaTitle": "Google Ads Yönetim Ajansı | PPC Uzmanları | PakSoft",
+    "metaDescription": "Reklam bütçenizi boşa harcamayı bırakın. Sertifikalı uzmanlarımız, ROAS'ınızı en üst düzeye çıkaran ölçeklenebilir kampanyalar oluşturur.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Keşif ve Derinlemesine Denetim",
+          "description": "Bütçenin tam olarak nerede boşa harcandığını ve anında yatırım getirisi (ROI) için fırsatların nerede yattığını belirlemek için hesap verilerinizi analiz ediyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Anahtar Kelime ve Niyet Eşleme",
+          "description": "Yüksek niyetli alıcıları bilgi arayanlardan ayırmak için anahtar kelimeleri satın alma hunisinin belirli aşamalarıyla eşleştiriyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Kampanya Mimarisi ve Oluşturma",
+          "description": "Alakalı reklam metinleri, yüksek Kalite Puanları ve daha düşük tıklama maliyeti sağlamak için hesabınızı en iyi uygulamaları kullanarak yapılandırıyoruz."
+        },
+        {
+          "step": 4,
+          "title": "İzleme ve İlişkilendirme Kurulumu",
+          "description": "Her bir satış ve potansiyel müşteriyi doğru bir şekilde yakaladığımızdan emin olmak için GTM ve GA4'te güçlü dönüşüm izleme yapılandırıyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Lansman ve Teklif Yönetimi",
+          "description": "Kampanyaları başlatıp algoritmaları yönetiyoruz. Negatif anahtar kelimeler eklemek için arama terimlerini günlük olarak izliyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Sürekli Ölçeklendirme ve Optimizasyon",
+          "description": "Reklam metinlerinde sürekli A/B testleri yapıyor, yeni açılış sayfalarını deniyor ve bütçeyi en iyi performans gösteren kampanyalara kaydırıyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Google Ads'e ne kadar harcamalıyım?",
+          "answer": "Bütçe hedeflerinizle belirlenir. Algoritmanın etkili bir şekilde optimize olması için yeterli veri üretmek adına genellikle minimum 2.000$-3.000$/aylık bütçe öneririz."
+        },
+        {
+          "question": "Pozitif bir yatırım getirisi (ROI) görmek ne kadar sürer?",
+          "answer": "Trafiği anında görseniz de, ilk 30 gün algoritma için bir 'öğrenme aşaması'dır. Önemli ROI iyileştirmeleri genellikle 2. ve 4. aylar arasında bileşik olarak artar."
+        },
+        {
+          "question": "Maksimum Performans (PMax) kampanyalarını yönetiyor musunuz?",
+          "answer": "Evet. PMax özellikle e-ticaret için oldukça etkilidir. PMax için tüm kurulum, varlık yönetimi ve kitle sinyallemesini biz yürütüyoruz."
+        },
+        {
+          "question": "Açılış sayfalarım hizmetinize dahil mi?",
+          "answer": "Açılış Sayfası CRO önerileri sunuyoruz. Ancak sıfırdan yeni açılış sayfaları tasarlayıp oluşturmamızı isterseniz, bunu ek bir hizmet olarak sunuyoruz."
+        },
+        {
+          "question": "Neden kendim yapmak yerine bir ajansla çalışmalıyım?",
+          "answer": "Google para harcamayı kolaylaştırır, ancak geri kazanmayı zorlaştırır. Bir ajans, boşa harcanan parayı önleyen yapısal uzmanlık ve günlük optimizasyon getirir."
+        },
+        {
+          "question": "Sonuçları garanti ediyor musunuz?",
+          "answer": "Hiçbir itibarlı ajans belirli bir ROAS'ı garanti edemez çünkü fiyatlandırma ve satış ekibi gibi reklam dışı faktörler satışı etkiler. Sınıfının en iyisi optimizasyonu garanti ediyoruz."
+        },
+        {
+          "question": "Google Ads yönetimi için nasıl ücretlendiriyorsunuz?",
+          "answer": "Hesabın boyutuna ve karmaşıklığına bağlı olarak sabit bir aylık ücret veya reklam harcamasının bir yüzdesini alıyoruz. Ücretlerimizi reklam bütçenizin içine saklamıyoruz."
+        },
+        {
+          "question": "Google Ads hesabının sahibi kim?",
+          "answer": "Sizsiniz. Hesabınızın ve geçmiş verilerinizin mülkiyetini %100 elinizde tutarsınız. Kampanyaları yürütmek için yalnızca Yönetici (Manager) erişimi talep ediyoruz."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "googleads",
+          "name": "Google Ads"
+        },
+        {
+          "icon": "googleanalytics",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "googletagmanager",
+          "name": "Google Tag Manager"
+        },
+        {
+          "icon": "lookerstudio",
+          "name": "Looker Studio"
+        },
+        {
+          "icon": "semrush",
+          "name": "SEMrush"
+        },
+        {
+          "icon": "unbounce",
+          "name": "Unbounce"
+        },
+        {
+          "icon": "clickcease",
+          "name": "ClickCease"
+        },
+        {
+          "icon": "supermetrics",
+          "name": "Supermetrics"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Google Ads Management",
+    "shortDescription": "Erfassen Sie kaufbereite Kunden genau dann, wenn sie nach Ihrer Lösung suchen. Wir erstellen, verwalten und skalieren hochprofitable Google Ads-Kampagnen, die Streuverluste minimieren und Ihren Return on Ad Spend (ROAS) maximieren.",
+    "fullDescription": "Die meisten Unternehmen verschwenden Tausende von Euro bei Google Ads, weil ihre Kampagnen schlecht strukturiert sind, sie auf falsche Keywords bieten oder Traffic auf unoptimierte Landingpages leiten. Wir verwandeln Google Ads in einen vorhersehbaren, skalierbaren Umsatzmotor. Unsere zertifizierten Experten gehen bei Search-, Display-, Performance Max- und Retargeting-Kampagnen mit chirurgischer Präzision vor. Wir jagen nicht nach Klicks, wir jagen nach Conversions. Wir führen umfassende Recherchen zu negativen Keywords durch, schreiben Anzeigentexte, die die Suchergebnisseite (SERP) dominieren, und testen kontinuierlich Gebotsstrategien. Indem wir Ihre Keywords eng an der Nutzerintention ausrichten und ein lückenloses Tracking über Google Analytics sicherstellen, garantieren wir, dass jeder investierte Euro messbares Geschäftswachstum fördert.",
+    "features": [
+      "Umfassendes Account-Audit & Umstrukturierung",
+      "Ausführliches Keyword- & Negative-Keyword-Mining",
+      "Search-, Display- und Performance Max (PMax)-Kampagnen",
+      "Erweiterte Gebotsstrategie-Optimierung (tCPA, tROAS)",
+      "Dynamisches Ad-Copywriting & A/B-Testing",
+      "Landingpage Conversion Rate Optimization (CRO)",
+      "Retargeting & Audience-Segmentierung",
+      "Benutzerdefinierte Looker Studio Dashboards & Reporting"
+    ],
+    "benefits": [
+      "Erfassen Sie Leads, die aktiv nach Ihrem Produkt oder Ihrer Dienstleistung suchen",
+      "Vermeiden Sie Budgetverschwendung durch irrelevante Klicks",
+      "Skalieren Sie Ihren Umsatz vorhersehbar mit optimierten Gebotsstrategien",
+      "Übertreffen Sie Ihre Mitbewerber bei den wertvollsten Suchbegriffen",
+      "Gewinnen Sie volle Transparenz über Ihren Cost-Per-Acquisition (CPA) und ROAS",
+      "Sprechen Sie Besucher erneut an, die beim ersten Besuch nicht konvertiert sind"
+    ],
+    "metaTitle": "Google Ads Management Agentur | PPC Experten | PakSoft",
+    "metaDescription": "Verschwenden Sie kein Werbebudget mehr. Unsere zertifizierten Experten bauen skalierbare Kampagnen, die Ihren ROAS maximieren und qualifizierte Leads generieren.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Discovery & Deep Audit",
+          "description": "Wir analysieren Ihre historischen Kontodaten, um genau zu identifizieren, wo Budget verschwendet wird und wo die größten Chancen für sofortigen ROI liegen."
+        },
+        {
+          "step": 2,
+          "title": "Keyword & Intent Mapping",
+          "description": "Wir ordnen Keywords bestimmten Phasen des Funnels zu und trennen kaufbereite Nutzer von reinen Informationssuchern, um Gebote zu optimieren."
+        },
+        {
+          "step": 3,
+          "title": "Kampagnenarchitektur & Aufbau",
+          "description": "Wir strukturieren Ihr Konto nach Best Practices, um hochrelevante Anzeigentexte, hohe Qualitätsfaktoren und niedrigere Klickkosten zu gewährleisten."
+        },
+        {
+          "step": 4,
+          "title": "Tracking & Attribution Setup",
+          "description": "Wir konfigurieren robustes Conversion-Tracking im GTM und GA4, um sicherzustellen, dass jeder Lead und Verkauf genau erfasst wird."
+        },
+        {
+          "step": 5,
+          "title": "Launch & Bid Management",
+          "description": "Wir launchen die Kampagnen, verwalten Gebotsalgorithmen und überwachen Suchbegriffe täglich, um negative Keywords hinzuzufügen."
+        },
+        {
+          "step": 6,
+          "title": "Kontinuierliche Skalierung & Optimierung",
+          "description": "Wir führen ständig A/B-Tests durch, testen neue Landingpages und passen Budgets an, um Ausgaben auf die besten Kampagnen zu verlagern."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie viel sollte ich für Google Ads ausgeben?",
+          "answer": "Das Budget richtet sich nach Ihren Zielen. Wir empfehlen meist ein Startbudget von mindestens 2.000-3.000 €/Monat, um genug Daten für den Algorithmus zu sammeln."
+        },
+        {
+          "question": "Wie lange dauert es, bis ich einen positiven ROI sehe?",
+          "answer": "Traffic entsteht sofort, aber die ersten 30 Tage sind eine 'Lernphase'. Deutliche ROI-Verbesserungen zeigen sich meist zwischen Monat 2 und 4."
+        },
+        {
+          "question": "Verwalten Sie Performance Max (PMax) Kampagnen?",
+          "answer": "Ja. PMax ist besonders im E-Commerce effektiv. Wir übernehmen die komplette Einrichtung, das Asset-Management und Audience-Signaling."
+        },
+        {
+          "question": "Sind meine Landingpages in Ihrem Service enthalten?",
+          "answer": "Wir bieten CRO-Empfehlungen für Landingpages. Wenn wir neue Seiten designen und entwickeln sollen, bieten wir dies als Zusatzservice an."
+        },
+        {
+          "question": "Warum sollte ich eine Agentur beauftragen, statt es selbst zu machen?",
+          "answer": "Google macht es leicht, Geld auszugeben, aber schwer, es zurückzuverdienen. Eine Agentur bringt Expertise mit, die verschwendete Ausgaben verhindert."
+        },
+        {
+          "question": "Garantieren Sie Ergebnisse?",
+          "answer": "Keine seriöse Agentur garantiert einen spezifischen ROAS, da externe Faktoren (z.B. Ihre Preise) den Verkauf beeinflussen. Wir garantieren Top-Optimierung."
+        },
+        {
+          "question": "Wie rechnen Sie das Google Ads Management ab?",
+          "answer": "Wir berechnen meist einen festen monatlichen Retainer oder einen Prozentsatz der Werbeausgaben. Wir verstecken keine Gebühren im Werbebudget."
+        },
+        {
+          "question": "Wem gehört das Google Ads Konto?",
+          "answer": "Ihnen. Sie behalten zu 100% das Eigentum an Ihrem Konto und Ihren Daten. Wir fordern lediglich Manager-Zugriff an, um die Kampagnen zu steuern."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "googleads",
+          "name": "Google Ads"
+        },
+        {
+          "icon": "googleanalytics",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "googletagmanager",
+          "name": "Google Tag Manager"
+        },
+        {
+          "icon": "lookerstudio",
+          "name": "Looker Studio"
+        },
+        {
+          "icon": "semrush",
+          "name": "SEMrush"
+        },
+        {
+          "icon": "unbounce",
+          "name": "Unbounce"
+        },
+        {
+          "icon": "clickcease",
+          "name": "ClickCease"
+        },
+        {
+          "icon": "supermetrics",
+          "name": "Supermetrics"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "گوگل ایڈز مینجمنٹ (Google Ads Management)",
+    "shortDescription": "خریداروں کو عین اس وقت پکڑیں جب وہ آپ کا حل تلاش کر رہے ہوں۔ ہم انتہائی منافع بخش گوگل ایڈز مہمات بناتے، چلاتے اور بڑھاتے ہیں جو فضول اخراجات کو کم کرتی ہیں اور اشتہارات پر آپ کے منافع (ROAS) کو زیادہ سے زیادہ کرتی ہیں۔",
+    "fullDescription": "زیادہ تر کاروبار گوگل ایڈز پر ہزاروں ڈالر ضائع کر دیتے ہیں کیونکہ ان کی مہمات کا ڈھانچہ خراب ہوتا ہے، وہ غلط مطلوبہ الفاظ (keywords) پر بولی لگاتے ہیں، یا ٹریفک کو غیر موثر لینڈنگ پیجز پر بھیجتے ہیں۔ ہم گوگل ایڈز کو ایک قابل پیشن گوئی، آمدنی پیدا کرنے والے انجن میں بدل دیتے ہیں۔ ہمارے تصدیق شدہ گوگل ایڈز ماہرین سرچ، ڈسپلے، پرفارمنس میکس (PMax)، اور ری ٹارگٹنگ مہمات کے لیے ایک محتاط اور منظم طریقہ کار اپناتے ہیں۔ ہم صرف کلکس کے پیچھے نہیں بھاگتے؛ ہم تبادلوں (conversions) کو ہدف بناتے ہیں۔ ہم غیر متعلقہ ٹریفک کو ختم کرنے کے لیے منفی مطلوبہ الفاظ (negative keywords) کی جامع تحقیق کرتے ہیں، اور زبردست اشتہاری کاپی لکھتے ہیں۔ ہم اس بات کو یقینی بناتے ہیں کہ آپ کا خرچ کیا گیا ہر ڈالر قابل پیمائش کاروباری ترقی کا باعث بنے۔",
+    "features": [
+      "اکاؤنٹ کا جامع آڈٹ اور تشکیل نو",
+      "مطلوبہ الفاظ (Keywords) اور منفی الفاظ کی تحقیق",
+      "سرچ، ڈسپلے اور پرفارمنس میکس (PMax) مہمات",
+      "بولی لگانے کی حکمت عملی کی اصلاح (tCPA, tROAS)",
+      "متحرک اشتہاری کاپی رائٹنگ اور A/B ٹیسٹنگ",
+      "لینڈنگ پیج کنورژن ریٹ آپٹیمائزیشن (CRO)",
+      "ری ٹارگٹنگ اور سامعین کی تقسیم",
+      "کسٹم Looker Studio ڈیش بورڈز اور رپورٹنگ"
+    ],
+    "benefits": [
+      "ان لیڈز کو پکڑیں جو فعال طور پر آپ کی مصنوعات یا خدمات تلاش کر رہے ہیں۔",
+      "غیر متعلقہ کلکس پر بجٹ ضائع کرنا بند کریں۔",
+      "بہتر بولی لگانے کی حکمت عملیوں کے ساتھ اپنی آمدنی میں اضافہ کریں۔",
+      "سب سے قیمتی سرچ کی ورڈز پر اپنے حریفوں کو پیچھے چھوڑ دیں۔",
+      "اپنے حصول کی لاگت (CPA) اور ROAS میں مکمل شفافیت حاصل کریں۔",
+      "ان زائرین کو دوبارہ مشغول کریں جنہوں نے پہلی بار خریداری نہیں کی۔"
+    ],
+    "metaTitle": "گوگل ایڈز مینجمنٹ ایجنسی | PPC ماہرین | PakSoft",
+    "metaDescription": "اشتہارات پر بجٹ ضائع کرنا بند کریں۔ ہمارے گوگل ایڈز ماہرین آپ کا ROAS بڑھانے کے لیے بہترین مہمات تیار کرتے ہیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "دریافت اور گہرا آڈٹ",
+          "description": "ہم آپ کے پرانے ڈیٹا کا تجزیہ کرتے ہیں تاکہ یہ معلوم ہو سکے کہ بجٹ کہاں ضائع ہو رہا ہے اور بہتری کے مواقع کہاں ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "مطلوبہ الفاظ اور ارادے کی نقشہ سازی",
+          "description": "ہم مطلوبہ الفاظ کو خریدار کی نیت کے مطابق تقسیم کرتے ہیں تاکہ صرف سنجیدہ خریداروں پر بولی لگائی جا سکے۔"
+        },
+        {
+          "step": 3,
+          "title": "مہم کا ڈھانچہ اور تعمیر",
+          "description": "ہم بہترین طریقہ کار کا استعمال کرتے ہوئے اکاؤنٹ کو اسٹرکچر کرتے ہیں تاکہ اشتہارات متعلقہ ہوں اور کلک کی لاگت کم ہو۔"
+        },
+        {
+          "step": 4,
+          "title": "ٹریکنگ اور ایٹریبیوشن سیٹ اپ",
+          "description": "ہم GTM اور GA4 میں مضبوط کنورژن ٹریکنگ سیٹ اپ کرتے ہیں تاکہ ہر سیل اور لیڈ کو درست طریقے سے ریکارڈ کیا جا سکے۔"
+        },
+        {
+          "step": 5,
+          "title": "لانچ اور بِڈ مینجمنٹ",
+          "description": "ہم مہمات کا آغاز کرتے ہیں اور روزانہ سرچ ٹرمز کی نگرانی کرتے ہیں تاکہ منفی الفاظ شامل کر کے ٹارگٹنگ کو بہتر بنایا جا سکے۔"
+        },
+        {
+          "step": 6,
+          "title": "مسلسل بہتری اور اصلاح",
+          "description": "ہم مسلسل A/B ٹیسٹ چلاتے ہیں اور بجٹ کا رخ ان مہمات کی طرف موڑتے ہیں جو بہترین کارکردگی دکھا رہی ہوتی ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "مجھے گوگل ایڈز پر کتنا خرچ کرنا چاہیے؟",
+          "answer": "یہ آپ کے اہداف پر منحصر ہے۔ ہم عام طور پر کم از کم $2,000 سے $3,000 ماہانہ بجٹ کی سفارش کرتے ہیں تاکہ الگورتھم کے لیے کافی ڈیٹا مل سکے۔"
+        },
+        {
+          "question": "مثبت ROI دیکھنے میں کتنا وقت لگتا ہے؟",
+          "answer": "ٹریفک تو فوراً آتی ہے، لیکن پہلے 30 دن الگورتھم کی سیکھنے کی مدت ہوتے ہیں۔ واضح بہتری عام طور پر دوسرے اور چوتھے مہینے کے درمیان آتی ہے۔"
+        },
+        {
+          "question": "کیا آپ پرفارمنس میکس (PMax) مہمات کو سنبھالتے ہیں؟",
+          "answer": "ہاں۔ PMax خاص طور پر ای کامرس کے لیے بہت مؤثر ہے۔ ہم اس کا مکمل سیٹ اپ اور آپٹیمائزیشن سنبھالتے ہیں۔"
+        },
+        {
+          "question": "کیا میرے لینڈنگ پیجز آپ کی سروس میں شامل ہیں؟",
+          "answer": "ہم لینڈنگ پیج CRO تجاویز فراہم کرتے ہیں۔ اگر آپ کو نئے پیجز ڈیزائن اور بلڈ کروانے ہوں، تو وہ ایک اضافی سروس ہے۔"
+        },
+        {
+          "question": "مجھے یہ کام خود کرنے کے بجائے ایجنسی کی خدمات کیوں لینی چاہئیں؟",
+          "answer": "گوگل پر پیسے خرچ کرنا آسان ہے، لیکن اسے واپس کمانا مشکل۔ ایک ایجنسی مہارت اور روزمرہ کی اصلاح لاتی ہے جس سے پیسوں کا ضیاع رکتا ہے۔"
+        },
+        {
+          "question": "کیا آپ نتائج کی ضمانت دیتے ہیں؟",
+          "answer": "کوئی بھی معتبر ایجنسی مخصوص ROAS کی ضمانت نہیں دے سکتی کیونکہ قیمتیں اور سیلز ٹیم جیسی بیرونی چیزیں فروخت کو متاثر کرتی ہیں۔ ہم بہترین اصلاح کی ضمانت دیتے ہیں۔"
+        },
+        {
+          "question": "آپ گوگل ایڈز مینجمنٹ کے لیے کتنا چارج کرتے ہیں؟",
+          "answer": "ہم عام طور پر ایک مقررہ ماہانہ فیس یا اشتہاری اخراجات کا فیصد چارج کرتے ہیں۔ ہم آپ کے اشتہاری بجٹ میں اپنی فیس نہیں چھپاتے۔"
+        },
+        {
+          "question": "گوگل ایڈز اکاؤنٹ کا مالک کون ہے؟",
+          "answer": "آپ۔ آپ اپنے اکاؤنٹ اور ڈیٹا کے 100% مالک ہیں۔ ہم مہمات چلانے کے لیے صرف مینیجر کی رسائی طلب کرتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "googleads",
+          "name": "Google Ads"
+        },
+        {
+          "icon": "googleanalytics",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "googletagmanager",
+          "name": "Google Tag Manager"
+        },
+        {
+          "icon": "lookerstudio",
+          "name": "Looker Studio"
+        },
+        {
+          "icon": "semrush",
+          "name": "SEMrush"
+        },
+        {
+          "icon": "unbounce",
+          "name": "Unbounce"
+        },
+        {
+          "icon": "clickcease",
+          "name": "ClickCease"
+        },
+        {
+          "icon": "supermetrics",
+          "name": "Supermetrics"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "إدارة إعلانات جوجل (Google Ads)",
+    "shortDescription": "التقط المشترين ذوي النوايا العالية في اللحظة التي يبحثون فيها عن حلك. نحن نبني وندير ونوسع حملات إعلانات جوجل عالية الربحية لتقليل الإنفاق المهدر وزيادة العائد على الإنفاق الإعلاني (ROAS) إلى أقصى حد.",
+    "fullDescription": "تضيع معظم الشركات آلاف الدولارات على إعلانات جوجل لأن حملاتها منظمة بشكل سيئ، أو تزايد على كلمات رئيسية خاطئة، أو ترسل الزيارات إلى صفحات مقصودة غير محسنة. نحن نحول إعلانات جوجل إلى محرك إيرادات يمكن التنبؤ به وتوسيع نطاقه. يتخذ خبراؤنا المعتمدون في إعلانات جوجل نهجاً دقيقاً لحملات البحث (Search)، والشبكة الإعلانية (Display)، والأداء الأفضل (Performance Max)، وإعادة الاستهداف (Retargeting). نحن لا نلاحق النقرات فحسب؛ بل نلاحق التحويلات. نجري أبحاثاً شاملة للكلمات الرئيسية السلبية للقضاء على الزيارات غير ذات الصلة، ونكتب نصوصاً إعلانية مقنعة تهيمن على صفحة نتائج محرك البحث (SERP)، ونقوم باستمرار باختبار استراتيجيات عروض الأسعار. من خلال المواءمة المحكمة بين كلماتك الرئيسية ونية المستخدم، نضمن أن كل دولار تنفقه يدفع نمواً ملموساً.",
+    "features": [
+      "تدقيق شامل للحساب وإعادة الهيكلة",
+      "استخراج الكلمات الرئيسية والكلمات الرئيسية السلبية",
+      "حملات البحث والشبكة الإعلانية والأداء الأفضل (PMax)",
+      "تحسين استراتيجية عروض الأسعار المتقدمة (tCPA ، tROAS)",
+      "كتابة نصوص إعلانية ديناميكية واختبار A/B",
+      "تحسين معدل التحويل (CRO) للصفحة المقصودة",
+      "إعادة الاستهداف وتقسيم الجمهور",
+      "لوحات تحكم وتقارير مخصصة عبر Looker Studio"
+    ],
+    "benefits": [
+      "التقاط العملاء المحتملين الذين يبحثون بنشاط عن منتجك أو خدمتك",
+      "التوقف عن إهدار الميزانية على النقرات غير ذات الصلة",
+      "توسيع نطاق إيراداتك بشكل يمكن التنبؤ به باستراتيجيات عروض محسنة",
+      "التفوق على منافسيك في مصطلحات البحث الأكثر قيمة",
+      "الحصول على شفافية كاملة في تكلفة الاكتساب (CPA) وعائد الإنفاق",
+      "إعادة إشراك الزوار الذين لم يجروا تحويلاً في زيارتهم الأولى"
+    ],
+    "metaTitle": "وكالة إدارة إعلانات جوجل | خبراء PPC | PakSoft",
+    "metaDescription": "توقف عن إهدار الإنفاق الإعلاني. يبني خبراؤنا المعتمدون حملات إعلانات جوجل التي تزيد العائدات وتجذب عملاء ذوي نوايا عالية.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "الاكتشاف والتدقيق العميق",
+          "description": "نحلل بيانات حسابك التاريخية لتحديد مكان إهدار الميزانية بدقة وأين تكمن أكبر الفرص لتحقيق عائد استثمار فوري."
+        },
+        {
+          "step": 2,
+          "title": "الكلمات الرئيسية وتخطيط النوايا",
+          "description": "نقوم بمواءمة الكلمات الرئيسية مع مراحل مسار الشراء، لفصل المشترين ذوي النوايا العالية عن الباحثين عن المعلومات."
+        },
+        {
+          "step": 3,
+          "title": "بنية الحملة وبناؤها",
+          "description": "نقوم بهيكلة حسابك باستخدام أفضل الممارسات لضمان نص إعلاني شديد الصلة، ونقاط جودة عالية، وتكلفة أقل للنقرة."
+        },
+        {
+          "step": 4,
+          "title": "إعداد التتبع والإحالة",
+          "description": "نقوم بتكوين تتبع تحويل قوي في Google Tag Manager و GA4 لضمان التقاط كل عميل محتمل وعملية بيع بدقة."
+        },
+        {
+          "step": 5,
+          "title": "الإطلاق وإدارة عروض الأسعار",
+          "description": "نطلق الحملات وندير الخوارزميات، ونراقب مصطلحات البحث يومياً لإضافة كلمات رئيسية سلبية وتحسين الاستهداف."
+        },
+        {
+          "step": 6,
+          "title": "القياس والتحسين المستمر",
+          "description": "نجري باستمرار اختبارات A/B على النصوص الإعلانية والصفحات المقصودة، ونوجه الميزانية نحو الحملات الأفضل أداءً."
+        }
+      ],
+      "faq": [
+        {
+          "question": "كم يجب أن أنفق على إعلانات جوجل؟",
+          "answer": "تُحدد الميزانية حسب أهدافك. نوصي عادة بميزانية ابتدائية قدرها 2000-3000 دولار شهرياً لإنشاء بيانات كافية للتحسين."
+        },
+        {
+          "question": "كم من الوقت يستغرق رؤية عائد استثمار إيجابي؟",
+          "answer": "بينما تأتي الزيارات فوراً، فإن أول 30 يوماً هي 'مرحلة تعلم' للخوارزمية. تتضاعف التحسينات الكبيرة عادة بين الشهرين 2 و 4."
+        },
+        {
+          "question": "هل تديرون حملات الأداء الأفضل (PMax)؟",
+          "answer": "نعم. PMax فعال للغاية، خاصة للتجارة الإلكترونية. نتعامل مع الإعداد الكامل وإدارة الأصول وإشارات الجمهور لـ PMax."
+        },
+        {
+          "question": "هل صفحاتي المقصودة مشمولة في خدمتكم؟",
+          "answer": "نقدم توصيات لتحسين معدل التحويل. إذا كنت بحاجة إلينا لتصميم وبناء صفحات جديدة، فنحن نقدم ذلك كخدمة إضافية."
+        },
+        {
+          "question": "لماذا يجب أن أستعين بوكالة بدلاً من القيام بذلك بنفسي؟",
+          "answer": "جوجل يجعل إنفاق المال سهلاً، لكن استرداده صعب. تجلب الوكالة خبرة هيكلية وتحسيناً يومياً يمنع إهدار الإنفاق."
+        },
+        {
+          "question": "هل تضمنون النتائج؟",
+          "answer": "لا يمكن لأي وكالة ضمان عائد معين، لأن عوامل أخرى (كالأسعار وفريق المبيعات) تؤثر. نحن نضمن أفضل إدارة وتحسين متاح."
+        },
+        {
+          "question": "كيف تحاسبون على إدارة إعلانات جوجل؟",
+          "answer": "نفرض عادةً رسوماً شهرية ثابتة أو نسبة مئوية من الإنفاق، حسب حجم الحساب. نحن لا نخفي رسومنا داخل ميزانيتك الإعلانية."
+        },
+        {
+          "question": "من يملك حساب إعلانات جوجل؟",
+          "answer": "أنت. تحتفظ بملكية حسابك وبياناتك بنسبة 100%. نطلب ببساطة وصول 'المدير' لتشغيل الحملات نيابة عنك."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "googleads",
+          "name": "Google Ads"
+        },
+        {
+          "icon": "googleanalytics",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "googletagmanager",
+          "name": "Google Tag Manager"
+        },
+        {
+          "icon": "lookerstudio",
+          "name": "Looker Studio"
+        },
+        {
+          "icon": "semrush",
+          "name": "SEMrush"
+        },
+        {
+          "icon": "unbounce",
+          "name": "Unbounce"
+        },
+        {
+          "icon": "clickcease",
+          "name": "ClickCease"
+        },
+        {
+          "icon": "supermetrics",
+          "name": "Supermetrics"
+        }
+      ]
+    }
+  }
+}

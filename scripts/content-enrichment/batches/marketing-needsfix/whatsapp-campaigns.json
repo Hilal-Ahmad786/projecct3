@@ -1,0 +1,528 @@
+{
+  "slug": "whatsapp-campaigns",
+  "en": {
+    "name": "WhatsApp Marketing Campaigns",
+    "shortDescription": "Achieve 98% open rates with direct, personalized messaging. We design, execute, and optimize bulk WhatsApp marketing campaigns to drive immediate sales and customer retention.",
+    "fullDescription": "Email marketing is becoming increasingly saturated, with average open rates hovering around 20%. WhatsApp, on the other hand, boasts an unprecedented 98% open rate. It is the most direct, intimate, and impactful channel to reach your customers. Our WhatsApp Marketing Campaigns service leverages the WhatsApp Business API to execute highly targeted, bulk promotional messaging. We handle the entire campaign lifecycle: from audience segmentation and Meta-approved message template creation to scheduling and post-campaign analytics. We don't just blast generic messages; we use dynamic variables to personalize every text, and we incorporate interactive elements like 'Quick Reply' buttons and 'List Messages' to dramatically increase click-through rates. Whether you are running a Black Friday flash sale, announcing a new product, or sending targeted re-engagement offers to dormant customers, we ensure your message is not only seen but acted upon.",
+    "features": [
+      "Bulk WhatsApp Promotional Broadcasts",
+      "Meta Marketing Template Design & Approval",
+      "Audience Segmentation & List Management",
+      "Dynamic Message Personalization (Variables)",
+      "Interactive Buttons (Quick Replies & URLs)",
+      "Campaign Scheduling & Throttle Management",
+      "Abandoned Cart Recovery Campaigns",
+      "Campaign ROI & CTR Analytics"
+    ],
+    "benefits": [
+      "Cut through the noise with an unparalleled 98% message open rate",
+      "Drive immediate, trackable sales spikes during flash sales or product launches",
+      "Recover lost revenue with automated, high-converting abandoned cart reminders",
+      "Increase engagement through frictionless, one-tap interactive reply buttons",
+      "Reduce unsubscribe rates through highly relevant, segmented messaging",
+      "Avoid spam penalties with expert navigation of Meta's strict quality rating policies"
+    ],
+    "metaTitle": "WhatsApp Marketing Agency | Broadcast Campaigns | PakSoft",
+    "metaDescription": "Drive sales with WhatsApp Marketing. We manage bulk broadcasts, interactive templates, and abandoned cart campaigns using the WhatsApp Business API.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Strategy & Segmentation",
+          "description": "We analyze your CRM data to segment your audience based on purchase history, demographics, or engagement levels to ensure high relevance."
+        },
+        {
+          "step": 2,
+          "title": "Template Creation & Approval",
+          "description": "We craft persuasive copy and design interactive message templates (including images or videos), submitting them to Meta for the required pre-approval."
+        },
+        {
+          "step": 3,
+          "title": "Personalization & Setup",
+          "description": "We map dynamic variables (like the customer's name, recent purchase, or a unique discount code) into the templates to make bulk messages feel 1-on-1."
+        },
+        {
+          "step": 4,
+          "title": "A/B Testing",
+          "description": "Before sending to the entire list, we A/B test different copy variations or call-to-action buttons on a small subset of the audience to maximize the CTR."
+        },
+        {
+          "step": 5,
+          "title": "Broadcast Execution",
+          "description": "We schedule and execute the broadcast, managing sending limits and 'throttling' the delivery if necessary to avoid overwhelming your customer support team."
+        },
+        {
+          "step": 6,
+          "title": "Performance Analytics",
+          "description": "Post-campaign, we provide a detailed report on Delivery Rates, Read Rates, Click-Through Rates, and actual Sales generated (ROI)."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Can I just send a WhatsApp message to anyone?",
+          "answer": "No. Meta requires that you have explicit, active 'opt-in' consent from the user before sending them promotional messages on WhatsApp. We help you build compliant opt-in flows."
+        },
+        {
+          "question": "Will my number get blocked for sending bulk messages?",
+          "answer": "Not if done correctly through the official WhatsApp Business API using pre-approved Marketing Templates. However, if users report your messages as spam, Meta will lower your 'Quality Rating' and restrict your sending limits. We monitor this closely to protect your number."
+        },
+        {
+          "question": "How much does it cost to send a marketing message?",
+          "answer": "Meta charges a fee per 'Marketing Conversation' (a 24-hour window), which varies by the user's country. For example, sending a marketing message to a UK number costs differently than to a US or Turkish number."
+        },
+        {
+          "question": "Can I include images or videos in the broadcast?",
+          "answer": "Yes. WhatsApp Marketing Templates support rich media, including images, videos, and PDF documents, which significantly increase engagement compared to plain text."
+        },
+        {
+          "question": "What is an interactive button?",
+          "answer": "Instead of asking users to type a reply, we can include up to 3 'Quick Reply' buttons (e.g., 'Yes', 'No', 'Tell me more') or a 'Call to Action' button that directly opens a specific URL on your website."
+        },
+        {
+          "question": "How do you handle users who want to unsubscribe?",
+          "answer": "We include a clear 'Opt-out' or 'Stop' button in the message template. If a user clicks it, our system automatically removes them from future marketing broadcasts, ensuring compliance and maintaining your quality rating."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "message-circle",
+          "name": "WhatsApp Cloud API"
+        },
+        {
+          "icon": "layout",
+          "name": "Broadcast Management Software"
+        },
+        {
+          "icon": "database",
+          "name": "CRM Sync (HubSpot, Salesforce)"
+        },
+        {
+          "icon": "chart-bar",
+          "name": "Campaign Analytics"
+        },
+        {
+          "icon": "code",
+          "name": "Dynamic Variables"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "WhatsApp Pazarlama Kampanyaları",
+    "shortDescription": "Doğrudan ve kişiselleştirilmiş mesajlaşma ile %98 açılma oranlarına ulaşın. Anında satışları ve müşteriyi elde tutmayı artırmak için toplu WhatsApp pazarlama kampanyaları tasarlıyor, yürütüyor ve optimize ediyoruz.",
+    "fullDescription": "E-posta pazarlaması giderek doygunluğa ulaşıyor ve ortalama açılma oranları %20 civarında seyrediyor. Öte yandan WhatsApp, %98 gibi benzeri görülmemiş bir açılma oranına sahip. Müşterilerinize ulaşmak için en doğrudan, samimi ve etkili kanaldır. WhatsApp Pazarlama Kampanyaları hizmetimiz, son derece hedeflenmiş, toplu promosyon mesajları (broadcast) yürütmek için WhatsApp Business API'den yararlanır. Kitle segmentasyonu ve Meta onaylı mesaj şablonu oluşturulmasından zamanlamaya ve kampanya sonrası analizlere kadar tüm kampanya yaşam döngüsünü yönetiyoruz. Sadece genel mesajlar göndermiyoruz; her metni kişiselleştirmek için dinamik değişkenler kullanıyor ve tıklama oranlarını (CTR) önemli ölçüde artırmak için 'Hızlı Yanıt' (Quick Reply) düğmeleri ve 'Liste Mesajları' (List Messages) gibi etkileşimli öğeler ekliyoruz. İster bir Efsane Cuma (Black Friday) flaş indirimi düzenliyor olun, ister yeni bir ürünü duyuruyor veya pasif müşterilere hedeflenmiş yeniden etkileşim teklifleri gönderiyor olun, mesajınızın yalnızca görülmesini değil, aynı zamanda harekete geçilmesini de sağlıyoruz.",
+    "features": [
+      "Toplu WhatsApp Promosyon Yayınları (Broadcasts)",
+      "Meta Pazarlama Şablonu (Template) Tasarımı ve Onayı",
+      "Kitle Segmentasyonu ve Liste Yönetimi",
+      "Dinamik Mesaj Kişiselleştirme (Değişkenler)",
+      "Etkileşimli Düğmeler (Hızlı Yanıtlar ve URL'ler)",
+      "Kampanya Zamanlaması ve Gönderim Hızı (Throttle) Yönetimi",
+      "Terk Edilmiş Sepet (Abandoned Cart) Kurtarma Kampanyaları",
+      "Kampanya ROI ve Tıklama Oranı (CTR) Analitiği"
+    ],
+    "benefits": [
+      "Eşsiz %98 mesaj açılma oranıyla gürültüyü aşın ve doğrudan müşteriye ulaşın",
+      "Flaş indirimler veya ürün lansmanları sırasında anlık, izlenebilir satış sıçramaları yaratın",
+      "Otomatik, yüksek dönüşüm sağlayan terk edilmiş sepet hatırlatıcılarıyla kaybedilen gelirleri kurtarın",
+      "Sürtünmesiz (frictionless), tek dokunuşlu etkileşimli yanıt düğmeleri aracılığıyla etkileşimi artırın",
+      "Son derece alakalı, bölümlere ayrılmış (segmentli) mesajlaşma yoluyla abonelikten çıkma oranlarını azaltın",
+      "Meta'nın katı kalite derecelendirme politikalarında ustalıkla gezinerek spam cezalarından kaçının"
+    ],
+    "metaTitle": "WhatsApp Pazarlama Ajansı | Toplu Mesaj Kampanyaları | PakSoft",
+    "metaDescription": "WhatsApp Pazarlaması ile satışları artırın. WhatsApp Business API kullanarak toplu mesaj (broadcast), etkileşimli şablonlar ve terk edilmiş sepet kampanyalarını yönetiyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Strateji ve Segmentasyon",
+          "description": "Yüksek alaka düzeyi sağlamak için kitlenizi satın alma geçmişine, demografik özelliklere veya etkileşim seviyelerine göre bölümlere ayırmak (segment) için CRM verilerinizi analiz ediyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Şablon (Template) Oluşturma ve Onay",
+          "description": "İkna edici metinler hazırlıyor ve etkileşimli mesaj şablonları (resimler veya videolar dahil) tasarlayarak bunları gerekli ön onay için Meta'ya sunuyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Kişiselleştirme ve Kurulum",
+          "description": "Toplu mesajların birebir (1'e 1) hissettirmesini sağlamak için dinamik değişkenleri (müşterinin adı, son satın alma işlemi veya benzersiz bir indirim kodu gibi) şablonlarla eşleştiriyoruz."
+        },
+        {
+          "step": 4,
+          "title": "A/B Testi",
+          "description": "Tüm listeye göndermeden önce, tıklama oranını (TO/CTR) en üst düzeye çıkarmak için kitlenin küçük bir alt kümesinde farklı metin varyasyonlarını veya eylem çağrısı düğmelerini A/B testine tabi tutuyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Toplu Gönderim (Broadcast) Uygulaması",
+          "description": "Yayını planlıyor ve uyguluyoruz; müşteri destek ekibinizi bunaltmamak için gönderim sınırlarını yönetiyor ve gerekirse teslimatı 'yavaşlatıyoruz' (throttling)."
+        },
+        {
+          "step": 6,
+          "title": "Performans Analitiği",
+          "description": "Kampanya sonrasında Teslimat Oranları, Okunma Oranları, Tıklama Oranları ve elde edilen gerçek Satışlar (ROI) hakkında ayrıntılı bir rapor sunuyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Sadece herhangi birine WhatsApp mesajı gönderebilir miyim?",
+          "answer": "Hayır. Meta, kullanıcılara WhatsApp üzerinden promosyon mesajları göndermeden önce onlardan açık ve aktif bir 'katılım' (opt-in / KVKK) onayı almanızı şart koşar. Uyumlu izin (opt-in) akışları oluşturmanıza yardımcı oluyoruz."
+        },
+        {
+          "question": "Toplu mesaj gönderdiğim için numaram engellenir mi?",
+          "answer": "Resmi WhatsApp Business API aracılığıyla önceden onaylanmış Pazarlama Şablonları (Marketing Templates) kullanılarak doğru şekilde yapılırsa hayır. Ancak kullanıcılar mesajlarınızı spam olarak bildirirse Meta 'Kalite Puanınızı' düşürür ve gönderim sınırlarınızı kısıtlar. Numaranızı korumak için bunu yakından izliyoruz."
+        },
+        {
+          "question": "Bir pazarlama mesajı göndermenin maliyeti nedir?",
+          "answer": "Meta, kullanıcının ülkesine göre değişen her 'Pazarlama Görüşmesi' (24 saatlik bir pencere) için bir ücret alır. Örneğin, bir İngiltere numarasına pazarlama mesajı göndermenin maliyeti, bir ABD veya Türk numarasına göndermekten farklıdır."
+        },
+        {
+          "question": "Yayına (broadcast) resim veya video ekleyebilir miyim?",
+          "answer": "Evet. WhatsApp Pazarlama Şablonları, düz metne kıyasla etkileşimi önemli ölçüde artıran resimler, videolar ve PDF belgeleri dahil olmak üzere zengin medyayı (rich media) destekler."
+        },
+        {
+          "question": "Etkileşimli düğme (Interactive button) nedir?",
+          "answer": "Kullanıcılardan bir yanıt yazmalarını istemek yerine, en fazla 3 'Hızlı Yanıt' (Quick Reply) düğmesi (ör. 'Evet', 'Hayır', 'Bana daha fazlasını anlat') veya web sitenizdeki belirli bir URL'yi doğrudan açan bir 'Eylem Çağrısı' (Call to Action) düğmesi ekleyebiliriz."
+        },
+        {
+          "question": "Abonelikten çıkmak (unsubscribe) isteyen kullanıcıları nasıl yönetiyorsunuz?",
+          "answer": "Mesaj şablonuna açık bir 'Abonelikten Çık' (Opt-out) veya 'Durdur' düğmesi ekliyoruz. Bir kullanıcı buna tıklarsa, sistemimiz onları gelecekteki pazarlama yayınlarından otomatik olarak çıkararak uyumluluğu sağlar ve kalite puanınızı korur."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "message-circle",
+          "name": "WhatsApp Cloud API"
+        },
+        {
+          "icon": "layout",
+          "name": "Broadcast Yönetim Yazılımı"
+        },
+        {
+          "icon": "database",
+          "name": "CRM Senkronizasyonu (HubSpot, vb.)"
+        },
+        {
+          "icon": "chart-bar",
+          "name": "Kampanya Analitiği"
+        },
+        {
+          "icon": "code",
+          "name": "Dinamik Değişkenler"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "WhatsApp Marketing Kampagnen",
+    "shortDescription": "Erreichen Sie 98 % Öffnungsrate mit direkten Nachrichten. Wir entwerfen und steuern WhatsApp-Massenkampagnen für sofortige Verkäufe und Kundenbindung.",
+    "fullDescription": "E-Mail-Marketing ist übersättigt, mit Öffnungsraten um die 20 %. WhatsApp hingegen glänzt mit einer beispiellosen Öffnungsrate von 98 %. Es ist der direkteste und persönlichste Kanal zu Ihren Kunden. Unser Service nutzt die WhatsApp Business API für hochgradig zielgerichtete, massenhafte Werbenachrichten (Broadcasts). Wir managen den gesamten Lebenszyklus: von der Zielgruppensegmentierung und Meta-Genehmigung der Templates bis hin zum Versand und der Analyse. Wir versenden keine generischen Blasts; wir nutzen dynamische Variablen für Personalisierung und integrieren interaktive 'Quick Reply'-Buttons oder Links, um die Klickraten massiv zu steigern. Ob Black Friday Sale, Produkt-Launch oder Re-Engagement-Kampagnen für inaktive Kunden – wir sorgen dafür, dass Ihre Nachricht nicht nur gelesen wird, sondern auch konvertiert.",
+    "features": [
+      "WhatsApp Broadcasts (Massenversand) von Angeboten",
+      "Design & Meta-Genehmigung von Marketing-Templates",
+      "Zielgruppen-Segmentierung & Listenmanagement",
+      "Dynamische Personalisierung (Variablen wie Name)",
+      "Interaktive Buttons (Quick Replies & URLs)",
+      "Kampagnen-Planung & Throttle-Management (Drosselung)",
+      "Abandoned Cart (Warenkorbabbrecher) Kampagnen",
+      "Kampagnen-ROI & Klickraten (CTR) Analytics"
+    ],
+    "benefits": [
+      "Durchbrechen Sie den Lärm mit einer konkurrenzlosen Öffnungsrate von 98 %",
+      "Generieren Sie sofortige Umsatzspitzen bei Flash-Sales oder Produkt-Launches",
+      "Retten Sie verlorenen Umsatz mit automatisierten Warenkorbabbrecher-Erinnerungen",
+      "Steigern Sie das Engagement durch interaktive One-Tap-Antwort-Buttons",
+      "Reduzieren Sie Abmelderaten durch hochrelevante, segmentierte Nachrichten",
+      "Vermeiden Sie Spam-Sperren durch Experten-Management der Meta-Qualitätsrichtlinien"
+    ],
+    "metaTitle": "WhatsApp Marketing Agentur | Broadcast Kampagnen | PakSoft",
+    "metaDescription": "Steigern Sie Verkäufe mit WhatsApp Marketing. Wir managen Bulk-Broadcasts, interaktive Templates und Warenkorb-Kampagnen via WhatsApp Business API.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Strategie & Segmentierung",
+          "description": "Wir analysieren CRM-Daten, um Ihre Zielgruppe nach Kaufhistorie oder demografischen Merkmalen für höchste Relevanz zu segmentieren."
+        },
+        {
+          "step": 2,
+          "title": "Template-Erstellung & Genehmigung",
+          "description": "Wir texten und designen interaktive Vorlagen (inkl. Bilder/Videos) und reichen diese zur obligatorischen Vorab-Genehmigung bei Meta ein."
+        },
+        {
+          "step": 3,
+          "title": "Personalisierung & Setup",
+          "description": "Wir verknüpfen dynamische Variablen (Kundenname, letzter Kauf, Rabattcode) mit den Templates, damit sich Massennachrichten wie 1-zu-1-Chats anfühlen."
+        },
+        {
+          "step": 4,
+          "title": "A/B-Testing",
+          "description": "Wir testen verschiedene Texte oder Call-to-Action-Buttons an einer kleinen Zielgruppe (A/B-Test), um die Klickrate für den Hauptversand zu maximieren."
+        },
+        {
+          "step": 5,
+          "title": "Broadcast Execution",
+          "description": "Wir terminieren den Versand und steuern die Zustellgeschwindigkeit ('Throttling'), um Ihr Support-Team nicht mit gleichzeitigen Rückfragen zu überlasten."
+        },
+        {
+          "step": 6,
+          "title": "Performance Analytics",
+          "description": "Nach der Kampagne liefern wir detaillierte Reportings zu Zustellraten, Lesequoten, Klickraten (CTR) und generierten Umsätzen (ROI)."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Kann ich WhatsApp-Nachrichten einfach an jeden senden?",
+          "answer": "Nein. Meta verlangt ein explizites, aktives Opt-in (Einwilligung) des Nutzers, bevor Sie werbliche Nachrichten senden dürfen. Wir helfen bei der Einrichtung DSGVO-konformer Opt-ins."
+        },
+        {
+          "question": "Wird meine Nummer gesperrt, wenn ich Massennachrichten sende?",
+          "answer": "Nicht, wenn es korrekt über die API mit genehmigten Templates erfolgt. Wenn Nutzer Sie jedoch als Spam markieren, sinkt Ihr 'Quality Rating' bei Meta, was zu Limits führt. Wir überwachen dies strikt."
+        },
+        {
+          "question": "Was kostet der Versand einer Marketing-Nachricht?",
+          "answer": "Meta berechnet eine Gebühr pro 'Marketing Conversation' (ein 24-Stunden-Fenster), die je nach Land des Nutzers variiert. Eine Nachricht nach UK kostet beispielsweise anders als eine in die USA."
+        },
+        {
+          "question": "Kann ich Bilder oder Videos in den Broadcast einfügen?",
+          "answer": "Ja. WhatsApp Marketing-Templates unterstützen Rich-Media-Inhalte wie Bilder, Videos und PDFs, was das Engagement im Vergleich zu reinem Text deutlich erhöht."
+        },
+        {
+          "question": "Was ist ein interaktiver Button?",
+          "answer": "Statt den Nutzer tippen zu lassen, fügen wir bis zu 3 'Quick Reply'-Buttons (z.B. 'Ja', 'Nein') oder einen Call-to-Action-Button hinzu, der direkt eine spezifische URL öffnet."
+        },
+        {
+          "question": "Wie gehen Sie mit Nutzern um, die sich abmelden wollen?",
+          "answer": "Wir integrieren einen klaren 'Abmelden'- oder 'Stop'-Button ins Template. Klickt ein Nutzer darauf, entfernt ihn unser System automatisch aus zukünftigen Verteilern."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "message-circle",
+          "name": "WhatsApp Cloud API"
+        },
+        {
+          "icon": "layout",
+          "name": "Broadcast Management Software"
+        },
+        {
+          "icon": "database",
+          "name": "CRM Sync (HubSpot, Salesforce)"
+        },
+        {
+          "icon": "chart-bar",
+          "name": "Campaign Analytics"
+        },
+        {
+          "icon": "code",
+          "name": "Dynamic Variables"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "واٹس ایپ مارکیٹنگ مہمات (Campaigns)",
+    "shortDescription": "براہ راست، ذاتی نوعیت کے پیغامات کے ساتھ 98% اوپن ریٹ حاصل کریں۔ ہم فروخت بڑھانے کے لیے واٹس ایپ پر بڑے پیمانے پر پروموشنل مہمات ڈیزائن اور چلاتے ہیں۔",
+    "fullDescription": "ای میل مارکیٹنگ کی اوپن ریٹ بمشکل 20% تک پہنچتی ہے، جبکہ واٹس ایپ 98% کی بے مثال اوپن ریٹ پیش کرتا ہے۔ یہ آپ کے گاہکوں تک پہنچنے کا سب سے براہ راست اور موثر ذریعہ ہے۔ ہماری واٹس ایپ مارکیٹنگ کیمپن سروس انتہائی ہدف بنائے گئے بلک (تھوک) پیغامات بھیجنے کے لیے WhatsApp Business API کا استعمال کرتی ہے۔ ہم سامعین کی تقسیم (Segmentation) اور میٹا سے منظور شدہ میسج ٹیمپلیٹس کی تخلیق سے لے کر مہمات چلانے تک ہر چیز کا انتظام کرتے ہیں۔ ہم پیغامات میں 'کوئیک ریپلائی' (Quick Reply) بٹنز شامل کرتے ہیں تاکہ کلک تھرو ریٹس (CTR) میں ڈرامائی اضافہ ہو۔",
+    "features": [
+      "بڑے پیمانے پر پروموشنل براڈکاسٹ (Bulk Broadcast)",
+      "میٹا مارکیٹنگ ٹیمپلیٹ ڈیزائن اور منظوری",
+      "سامعین کی درجہ بندی اور لسٹ مینجمنٹ",
+      "متحرک متغیرات (Dynamic Variables) کے ساتھ ذاتی نوعیت",
+      "انٹرایکٹو بٹن (فوری جوابات اور URLs)",
+      "چھوڑی ہوئی کارٹ (Abandoned Cart) کی یاددہانی",
+      "مہم کے ROI اور CTR کا تجزیہ"
+    ],
+    "benefits": [
+      "ای میلز کے برعکس 98% میسج اوپن ریٹ کے ساتھ اپنا پیغام گاہکوں تک پہنچائیں",
+      "فلیش سیلز اور پروڈکٹ لانچ کے دوران فوری اور قابل ٹریک سیلز پیدا کریں",
+      "چھوڑی ہوئی کارٹ (Abandoned cart) کے خودکار پیغامات کے ذریعے کھوئی ہوئی آمدنی واپس لائیں",
+      "ایک کلک والے انٹرایکٹو جوابات کے ذریعے صارفین کی شمولیت میں اضافہ کریں",
+      "میٹا کی سخت پالیسیوں کی تعمیل کر کے اپنے نمبر کو بلاک ہونے سے بچائیں"
+    ],
+    "metaTitle": "واٹس ایپ مارکیٹنگ ایجنسی | براڈکاسٹ مہمات | PakSoft",
+    "metaDescription": "واٹس ایپ مارکیٹنگ کے ساتھ فروخت میں اضافہ کریں۔ ہم WhatsApp Business API کا استعمال کرتے ہوئے بلک براڈکاسٹ اور انٹرایکٹو مہمات کا انتظام کرتے ہیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "حکمت عملی اور درجہ بندی",
+          "description": "ہم آپ کے CRM ڈیٹا کا تجزیہ کر کے سامعین کو ان کی خریداری کی تاریخ یا دلچسپی کی بنیاد پر تقسیم کرتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "ٹیمپلیٹ کی تخلیق اور منظوری",
+          "description": "ہم پرکشش پیغامات (تصاویر یا ویڈیوز کے ساتھ) ڈیزائن کرتے ہیں اور انہیں منظوری کے لیے Meta کو جمع کراتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "ذاتی نوعیت (Personalization)",
+          "description": "ہم متحرک متغیرات (جیسے گاہک کا نام یا ڈسکاؤنٹ کوڈ) استعمال کرتے ہیں تاکہ بلک پیغامات 1-آن-1 لگیں۔"
+        },
+        {
+          "step": 4,
+          "title": "A/B ٹیسٹنگ",
+          "description": "پوری فہرست کو بھیجنے سے پہلے، ہم سامعین کے ایک چھوٹے سے حصے پر مختلف پیغامات کی جانچ کرتے ہیں تاکہ معلوم ہو سکے کہ کون سا بہتر کام کرتا ہے۔"
+        },
+        {
+          "step": 5,
+          "title": "براڈکاسٹ پر عمل درآمد",
+          "description": "ہم براڈکاسٹ کو شیڈول کرتے ہیں اور ترسیل کو اس طرح منظم کرتے ہیں کہ آپ کی کسٹمر سپورٹ ٹیم پر اچانک بوجھ نہ پڑے۔"
+        },
+        {
+          "step": 6,
+          "title": "کارکردگی کا تجزیہ",
+          "description": "مہم کے بعد، ہم ڈلیوری ریٹس، ریڈ ریٹس، کلک تھرو ریٹس، اور پیدا ہونے والی سیلز پر تفصیلی رپورٹ فراہم کرتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "کیا میں کسی کو بھی واٹس ایپ میسج بھیج سکتا ہوں؟",
+          "answer": "نہیں، پروموشنل پیغامات بھیجنے سے پہلے آپ کے پاس صارف کی صریح اجازت (Opt-in) ہونی چاہیے۔ بصورت دیگر واٹس ایپ آپ کا نمبر بین کر دے گا۔"
+        },
+        {
+          "question": "کیا بلک میسج بھیجنے سے میرا نمبر بلاک ہو جائے گا؟",
+          "answer": "اگر آپ منظور شدہ ٹیمپلیٹس اور آفیشل API کے ذریعے درست طریقے سے پیغام بھیجتے ہیں، تو نمبر بلاک نہیں ہوگا۔ ہم آپ کے 'کوالٹی ریٹنگ' کی مسلسل نگرانی کرتے ہیں۔"
+        },
+        {
+          "question": "مارکیٹنگ میسج بھیجنے کی لاگت کیا ہے؟",
+          "answer": "میٹا 24 گھنٹے کی 'مارکیٹنگ بات چیت' (Conversation) پر چارج کرتا ہے۔ لاگت صارف کے ملک (جیسے برطانیہ، امریکہ) کے لحاظ سے مختلف ہوتی ہے۔"
+        },
+        {
+          "question": "انٹرایکٹو بٹن کیا ہے؟",
+          "answer": "صارف کو ٹائپ کرنے کے بجائے، ہم پیغام میں 'جی ہاں'، 'نہیں' جیسے بٹن یا آپ کی ویب سائٹ کا سیدھا لنک دینے والے بٹن شامل کرتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "message-circle",
+          "name": "WhatsApp Cloud API"
+        },
+        {
+          "icon": "layout",
+          "name": "Broadcast Management Software"
+        },
+        {
+          "icon": "database",
+          "name": "CRM Sync (HubSpot, Salesforce)"
+        },
+        {
+          "icon": "chart-bar",
+          "name": "Campaign Analytics"
+        },
+        {
+          "icon": "code",
+          "name": "Dynamic Variables"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "حملات التسويق عبر الواتساب (WhatsApp Campaigns)",
+    "shortDescription": "حقق معدل فتح بنسبة 98% باستخدام المراسلة المباشرة والمخصصة. نقوم بتصميم وتنفيذ وتحسين حملات تسويق جماعية عبر WhatsApp لزيادة المبيعات والاحتفاظ بالعملاء فوراً.",
+    "fullDescription": "أصبح التسويق عبر البريد الإلكتروني مشبعاً بشكل متزايد، مع متوسط معدلات فتح يحوم حول 20٪. من ناحية أخرى، يتميز WhatsApp بمعدل فتح غير مسبوق يبلغ 98٪. إنها القناة الأكثر مباشرة وحميمية وتأثيراً للوصول إلى عملائك. تستفيد خدمة حملات التسويق عبر الواتساب الخاصة بنا من WhatsApp Business API لتنفيذ رسائل ترويجية جماعية مستهدفة للغاية. نحن نتعامل مع دورة حياة الحملة بأكملها: من تقسيم الجمهور وإنشاء قوالب رسائل معتمدة من Meta إلى الجدولة وتحليلات ما بعد الحملة. نحن لا نرسل فقط رسائل عامة؛ بل نستخدم متغيرات ديناميكية لتخصيص كل نص، وندمج عناصر تفاعلية مثل أزرار 'الرد السريع' و 'رسائل القائمة' لزيادة معدلات النقر بشكل كبير. سواء كنت تدير تخفيضات هائلة (Flash Sale)، أو تعلن عن منتج جديد، أو ترسل عروضاً مستهدفة لإعادة إشراك العملاء الخاملين، فإننا نضمن ألا تتم رؤية رسالتك فحسب، بل يتم التفاعل معها أيضاً.",
+    "features": [
+      "بث ترويجي جماعي (Bulk Broadcast) عبر الواتساب",
+      "تصميم قوالب التسويق (Templates) واعتمادها من Meta",
+      "تقسيم الجمهور (Segmentation) وإدارة القوائم",
+      "تخصيص الرسائل الديناميكية (Dynamic Variables)",
+      "أزرار تفاعلية (ردود سريعة وروابط URL)",
+      "جدولة الحملات وإدارة تدفق الإرسال (Throttling)",
+      "حملات استرداد سلة التسوق المتروكة (Abandoned Cart)",
+      "تحليلات عائد الاستثمار للحملة ومعدل النقر (CTR)"
+    ],
+    "benefits": [
+      "اختراق الضوضاء بمعدل فتح رسائل لا مثيل له يبلغ 98٪",
+      "دفع ارتفاعات مبيعات فورية وقابلة للتتبع أثناء المبيعات السريعة أو إطلاق المنتجات",
+      "استرداد الإيرادات المفقودة من خلال تذكيرات تلقائية وعالية التحويل بعربة التسوق المتروكة",
+      "زيادة التفاعل من خلال أزرار رد تفاعلية سلسة بنقرة واحدة",
+      "تقليل معدلات إلغاء الاشتراك من خلال رسائل مجزأة وذات صلة وثيقة",
+      "تجنب عقوبات البريد العشوائي (Spam) عبر التنقل الخبير في سياسات تصنيف الجودة الصارمة لشركة Meta"
+    ],
+    "metaTitle": "وكالة تسويق عبر الواتساب | حملات البث الجماعي | PakSoft",
+    "metaDescription": "عزز مبيعاتك عبر WhatsApp Marketing. نحن ندير حملات البث الجماعي، والقوالب التفاعلية، ورسائل سلة التسوق المتروكة باستخدام WhatsApp API.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "الاستراتيجية والتقسيم",
+          "description": "نحلل بيانات CRM الخاصة بك لتقسيم جمهورك بناءً على سجل الشراء أو التركيبة السكانية أو مستويات التفاعل لضمان ملاءمة الرسالة."
+        },
+        {
+          "step": 2,
+          "title": "إنشاء القالب واعتماده",
+          "description": "نصيغ نصوصاً مقنعة ونصمم قوالب رسائل تفاعلية (بما في ذلك الصور أو مقاطع الفيديو)، ونرسلها إلى Meta للحصول على الموافقة المسبقة المطلوبة."
+        },
+        {
+          "step": 3,
+          "title": "التخصيص والإعداد",
+          "description": "نقوم بتعيين متغيرات ديناميكية (مثل اسم العميل أو أحدث عملية شراء أو رمز خصم فريد) في القوالب لجعل الرسائل الجماعية تبدو شخصية (1 لـ 1)."
+        },
+        {
+          "step": 4,
+          "title": "اختبار A/B",
+          "description": "قبل الإرسال إلى القائمة بأكملها، نقوم بإجراء اختبار A / B لاختلافات النسخ أو أزرار الحث على اتخاذ إجراء على مجموعة فرعية صغيرة من الجمهور لزيادة نسبة النقر (CTR)."
+        },
+        {
+          "step": 5,
+          "title": "تنفيذ البث",
+          "description": "نقوم بجدولة البث وتنفيذه، وإدارة حدود الإرسال و'خنق' التسليم (Throttling) إذا لزم الأمر لتجنب إغراق فريق دعم العملاء الخاص بك بالرسائل."
+        },
+        {
+          "step": 6,
+          "title": "تحليلات الأداء",
+          "description": "بعد الحملة، نقدم تقريراً مفصلاً عن معدلات التسليم، ومعدلات القراءة، ونسب النقر، والمبيعات الفعلية التي تم إنشاؤها (ROI)."
+        }
+      ],
+      "faq": [
+        {
+          "question": "هل يمكنني إرسال رسالة واتساب إلى أي شخص؟",
+          "answer": "لا. تشترط Meta أن يكون لديك موافقة 'اشتراك' صريحة ونشطة من المستخدم قبل إرسال رسائل ترويجية إليه عبر WhatsApp. نحن نساعدك في بناء مسارات موافقة متوافقة."
+        },
+        {
+          "question": "هل سيتم حظر رقمي بسبب إرسال رسائل جماعية؟",
+          "answer": "ليس إذا تم ذلك بشكل صحيح من خلال WhatsApp Business API الرسمي باستخدام قوالب تسويق معتمدة مسبقاً. ومع ذلك، إذا أبلغ المستخدمون عن رسائلك كبريد عشوائي، فستقوم Meta بخفض 'تصنيف الجودة' الخاص بك وتقييد حدود الإرسال. نحن نراقب هذا عن كثب لحماية رقمك."
+        },
+        {
+          "question": "كم تكلفة إرسال رسالة تسويقية؟",
+          "answer": "تتقاضى Meta رسوماً لكل 'محادثة تسويقية' (نافذة مدتها 24 ساعة)، والتي تختلف حسب بلد المستخدم. على سبيل المثال، تختلف تكلفة إرسال رسالة تسويقية إلى رقم في المملكة المتحدة عن رقم أمريكي أو تركي."
+        },
+        {
+          "question": "هل يمكنني تضمين صور أو مقاطع فيديو في رسالة البث؟",
+          "answer": "نعم. تدعم قوالب تسويق WhatsApp الوسائط المتعددة، بما في ذلك الصور ومقاطع الفيديو ومستندات PDF، مما يزيد التفاعل بشكل كبير مقارنة بالنص العادي."
+        },
+        {
+          "question": "ما هو الزر التفاعلي؟",
+          "answer": "بدلاً من مطالبة المستخدمين بكتابة رد، يمكننا تضمين ما يصل إلى 3 أزرار 'رد سريع' (مثل 'نعم' أو 'لا' أو 'أخبرني بالمزيد') أو زر 'دعوة لاتخاذ إجراء' يفتح عنوان URL محدداً مباشرة على موقع الويب الخاص بك."
+        },
+        {
+          "question": "كيف تتعاملون مع المستخدمين الذين يرغبون في إلغاء الاشتراك؟",
+          "answer": "نحن نضمن زراً واضحاً لـ 'إلغاء الاشتراك' (Opt-out) في قالب الرسالة. إذا نقر المستخدم عليه، يقوم نظامنا تلقائياً بإزالته من عمليات البث التسويقي المستقبلية لضمان الامتثال."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "message-circle",
+          "name": "WhatsApp Cloud API"
+        },
+        {
+          "icon": "layout",
+          "name": "Broadcast Management Software"
+        },
+        {
+          "icon": "database",
+          "name": "CRM Sync (HubSpot, Salesforce)"
+        },
+        {
+          "icon": "chart-bar",
+          "name": "Campaign Analytics"
+        },
+        {
+          "icon": "code",
+          "name": "Dynamic Variables"
+        }
+      ]
+    }
+  }
+}

@@ -1,6 +1,7 @@
-'use client';
-
-import Script from 'next/script';
+// Server component: renders plain <script type="application/ld+json"> tags so
+// structured data lands in the initial server HTML (next/script's <Script>
+// defers JSON-LD to client injection, which crawlers see less reliably).
+import React from 'react';
 
 // Organization Schema
 export interface OrganizationProps {
@@ -57,7 +58,7 @@ export function OrganizationJsonLd({
   };
 
   return (
-    <Script
+    <script
       id="organization-schema"
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -139,7 +140,7 @@ export function LocalBusinessJsonLd({
   };
 
   return (
-    <Script
+    <script
       id="local-business-schema"
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -189,7 +190,7 @@ export function ServiceJsonLd({
   };
 
   return (
-    <Script
+    <script
       id={`service-schema-${name.toLowerCase().replace(/\s+/g, '-')}`}
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -222,7 +223,7 @@ export function FAQJsonLd({ faqs }: FAQJsonLdProps) {
   };
 
   return (
-    <Script
+    <script
       id="faq-schema"
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -253,7 +254,7 @@ export function BreadcrumbJsonLd({ items }: BreadcrumbJsonLdProps) {
   };
 
   return (
-    <Script
+    <script
       id="breadcrumb-schema"
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -289,8 +290,61 @@ export function WebSiteJsonLd({
   };
 
   return (
-    <Script
+    <script
       id="website-schema"
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// Article / BlogPosting Schema
+export interface ArticleJsonLdProps {
+  headline: string;
+  description?: string;
+  url: string;
+  image?: string;
+  datePublished?: string;
+  dateModified?: string;
+  authorName?: string;
+  section?: string;
+  keywords?: string[];
+}
+
+export function ArticleJsonLd({
+  headline,
+  description,
+  url,
+  image,
+  datePublished,
+  dateModified,
+  authorName = 'PakSoft',
+  section,
+  keywords,
+}: ArticleJsonLdProps) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline,
+    ...(description ? { description } : {}),
+    mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+    url,
+    ...(image ? { image: [image] } : {}),
+    ...(datePublished ? { datePublished } : {}),
+    dateModified: dateModified || datePublished,
+    author: { '@type': 'Organization', name: authorName },
+    publisher: {
+      '@type': 'Organization',
+      name: 'PakSoft',
+      logo: { '@type': 'ImageObject', url: 'https://www.paksoft.com.tr/images/logo.png' },
+    },
+    ...(section ? { articleSection: section } : {}),
+    ...(keywords && keywords.length ? { keywords: keywords.join(', ') } : {}),
+  };
+
+  return (
+    <script
+      id="article-schema"
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />

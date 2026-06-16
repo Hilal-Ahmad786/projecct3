@@ -5,6 +5,7 @@ export {
   FAQJsonLd,
   BreadcrumbJsonLd,
   WebSiteJsonLd,
+  ArticleJsonLd,
   GlobalJsonLd,
 } from './JsonLd';
 
@@ -17,4 +18,5 @@ export type {
   BreadcrumbItem,
   BreadcrumbJsonLdProps,
   WebSiteJsonLdProps,
+  ArticleJsonLdProps,
 } from './JsonLd';

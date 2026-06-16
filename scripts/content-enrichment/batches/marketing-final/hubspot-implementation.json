@@ -1,0 +1,618 @@
+{
+  "slug": "hubspot-implementation",
+  "en": {
+    "name": "HubSpot Implementation",
+    "shortDescription": "Align your marketing, sales, and service teams. We architect, implement, and optimize HubSpot to drive revenue growth and operational efficiency.",
+    "fullDescription": "HubSpot is a powerful engine for growth, but a poor implementation turns it into an expensive, unused rolodex. If your marketing data is siloed, your sales team refuses to use the CRM, or your customer service is disconnected from the buyer journey, you need a systemic overhaul. Our HubSpot Implementation services ensure you extract maximum value from the platform. We do not just configure settings; we architect business processes. We work closely with your stakeholders to map out your entire customer journey, translating your operational needs into HubSpot's architecture. We set up the Marketing, Sales, and Service Hubs, construct automated workflows, build custom reporting dashboards, and integrate HubSpot with your existing tech stack (ERP, proprietary software, billing systems). Finally, we provide comprehensive team training to ensure high user adoption and long-term success.",
+    "features": [
+      "Strategic Discovery & Process Mapping",
+      "CRM Architecture & Custom Object Setup",
+      "Marketing, Sales & Service Hub Configuration",
+      "Complex Workflow Automation & Routing",
+      "Data Migration & Cleansing Strategy",
+      "Third-party API & Custom Integrations",
+      "Custom Reporting & Dashboard Creation",
+      "Change Management & Team Training"
+    ],
+    "benefits": [
+      "Unify your marketing, sales, and service data into a single source of truth",
+      "Eliminate manual data entry and repetitive tasks with smart automation",
+      "Increase sales team productivity and close rates with streamlined pipelines",
+      "Gain total visibility into the ROI of every marketing campaign",
+      "Improve customer retention with a seamless handoff between sales and support",
+      "Ensure high user adoption with customized, role-based training"
+    ],
+    "metaTitle": "HubSpot Implementation Agency | CRM Setup & Onboarding | PakSoft",
+    "metaDescription": "Maximize your CRM ROI. We provide expert HubSpot implementation, custom integrations, workflow automation, and team training for Marketing, Sales, and Service Hubs.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Discovery & Blueprinting",
+          "description": "We conduct deep-dive workshops to understand your sales process, marketing goals, and service SLA's, mapping out a blueprint for your HubSpot architecture."
+        },
+        {
+          "step": 2,
+          "title": "Data Migration & Cleansing",
+          "description": "We safely extract, clean, and map data from your legacy CRM (Salesforce, Pipedrive, etc.) or spreadsheets, ensuring a flawless import into HubSpot."
+        },
+        {
+          "step": 3,
+          "title": "Portal Setup & Customization",
+          "description": "We configure the CRM foundation: setting up users, permissions, custom properties, deal pipelines, and custom objects tailored to your specific business model."
+        },
+        {
+          "step": 4,
+          "title": "Automation & Workflow Building",
+          "description": "We build the engine: automated lead scoring, lead routing to sales reps, marketing email nurture sequences, and service ticket escalation rules."
+        },
+        {
+          "step": 5,
+          "title": "Tech Stack Integration",
+          "description": "We connect HubSpot to your ecosystem, integrating tools like Zoom, Slack, your ERP, or building custom API connections for proprietary software."
+        },
+        {
+          "step": 6,
+          "title": "Training & Handoff",
+          "description": "We conduct role-specific training sessions (for marketers, sales reps, and executives) to ensure high adoption and provide ongoing support post-launch."
+        }
+      ],
+      "faq": [
+        {
+          "question": "We already have HubSpot but it's a mess. Can you fix it?",
+          "answer": "Yes. This is called a 'HubSpot Audit & Revamp'. We untangle messy workflows, clean up duplicate data, and reconfigure the portal to match your current business processes."
+        },
+        {
+          "question": "How long does a full HubSpot implementation take?",
+          "answer": "A basic CRM and Marketing Hub setup can take 4-6 weeks. A complex, multi-hub enterprise implementation with custom integrations and data migration typically takes 2-4 months."
+        },
+        {
+          "question": "Can you migrate our data from Salesforce?",
+          "answer": "Absolutely. We have extensive experience migrating complex relational data, notes, tasks, and attachments from Salesforce, Microsoft Dynamics, Pipedrive, and others into HubSpot."
+        },
+        {
+          "question": "Do we need all the 'Hubs' (Marketing, Sales, Service)?",
+          "answer": "Not necessarily. We recommend the Hubs based on your immediate needs. You can start with the Sales Hub and add Marketing or Service later as you scale."
+        },
+        {
+          "question": "Can HubSpot integrate with our custom internal software?",
+          "answer": "Yes. If your software has an open API, our development team can build a custom middleware application to sync data bi-directionally between your system and HubSpot."
+        },
+        {
+          "question": "How do you ensure our sales team will actually use it?",
+          "answer": "Lack of adoption kills CRM projects. We involve sales leadership early, design the system to remove friction from their day, and provide hands-on, scenario-based training."
+        },
+        {
+          "question": "Do you provide ongoing HubSpot support after the initial setup?",
+          "answer": "Yes, we offer ongoing HubSpot managed services where we act as your outsourced RevOps team, building new campaigns, managing workflows, and optimizing the system."
+        },
+        {
+          "question": "What is a 'Custom Object' in HubSpot?",
+          "answer": "Standard objects are Contacts, Companies, and Deals. If you need to track something unique to your business (e.g., 'Properties' for real estate, 'Vehicles' for auto), we build a Custom Object."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "hubspot",
+          "name": "HubSpot CRM"
+        },
+        {
+          "icon": "hubspot",
+          "name": "Marketing Hub"
+        },
+        {
+          "icon": "hubspot",
+          "name": "Sales Hub"
+        },
+        {
+          "icon": "hubspot",
+          "name": "Service Hub"
+        },
+        {
+          "icon": "zapier",
+          "name": "Zapier / Make"
+        },
+        {
+          "icon": "api",
+          "name": "Custom REST APIs"
+        },
+        {
+          "icon": "salesforce",
+          "name": "Salesforce (Migration)"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "HubSpot Kurulumu (Implementation)",
+    "shortDescription": "Pazarlama, satış ve hizmet ekiplerinizi hizalayın. Gelir artışını ve operasyonel verimliliği sağlamak için HubSpot'ı mimarilendiriyor, uyguluyor ve optimize ediyoruz.",
+    "fullDescription": "HubSpot büyüme için güçlü bir motordur, ancak zayıf bir uygulama onu pahalı, kullanılmayan bir adres defterine dönüştürür. Pazarlama verileriniz izole edilmişse, satış ekibiniz CRM'i kullanmayı reddediyorsa veya müşteri hizmetleriniz alıcı yolculuğundan kopuksa, sistemik bir revizyona ihtiyacınız vardır. HubSpot Kurulum hizmetlerimiz, platformdan maksimum değer elde etmenizi sağlar. Biz sadece ayarları yapılandırmakla kalmıyor; iş süreçlerini mimarilendiriyoruz. Tüm müşteri yolculuğunuzun haritasını çıkarmak ve operasyonel ihtiyaçlarınızı HubSpot'ın mimarisine çevirmek için paydaşlarınızla yakın bir şekilde çalışıyoruz. Pazarlama (Marketing), Satış (Sales) ve Hizmet (Service) Hub'larını kuruyor, otomatik iş akışları oluşturuyor, özel raporlama panoları hazırlıyor ve HubSpot'ı mevcut teknoloji yığınınızla (ERP, tescilli yazılım, faturalandırma sistemleri) entegre ediyoruz. Son olarak, yüksek kullanıcı benimsemesini ve uzun vadeli başarıyı sağlamak için kapsamlı ekip eğitimi sağlıyoruz.",
+    "features": [
+      "Stratejik Keşif ve Süreç Haritalama",
+      "CRM Mimarisi ve Özel Nesne (Custom Object) Kurulumu",
+      "Pazarlama, Satış ve Hizmet (Service) Hub Yapılandırması",
+      "Karmaşık İş Akışı (Workflow) Otomasyonu ve Yönlendirme",
+      "Veri Taşıma (Migration) ve Temizleme Stratejisi",
+      "Üçüncü Taraf API ve Özel Entegrasyonlar",
+      "Özel Raporlama ve Pano (Dashboard) Oluşturma",
+      "Değişim Yönetimi ve Ekip Eğitimi"
+    ],
+    "benefits": [
+      "Pazarlama, satış ve hizmet verilerinizi tek bir gerçeklik kaynağında birleştirin",
+      "Akıllı otomasyonla manuel veri girişini ve tekrarlayan görevleri ortadan kaldırın",
+      "Kolaylaştırılmış işlem hatlarıyla (pipelines) satış ekibi üretkenliğini artırın",
+      "Her pazarlama kampanyasının yatırım getirisine (ROI) tam görünürlük kazanın",
+      "Satış ve destek arasındaki kusursuz geçişle müşteri tutmayı (retention) iyileştirin",
+      "Özelleştirilmiş, role dayalı eğitimle yüksek kullanıcı benimsemesini sağlayın"
+    ],
+    "metaTitle": "HubSpot Kurulum Ajansı | CRM Entegrasyonu | PakSoft",
+    "metaDescription": "CRM yatırım getirinizi en üst düzeye çıkarın. Pazarlama, Satış ve Hizmet ekipleriniz için uzman HubSpot kurulumu, özel entegrasyonlar ve eğitim sağlıyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Keşif ve Planlama (Blueprinting)",
+          "description": "Satış sürecinizi, pazarlama hedeflerinizi ve hizmet SLA'larınızı anlamak için derinlemesine atölye çalışmaları yürütüyor ve HubSpot mimariniz için bir plan çıkarıyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Veri Taşıma (Migration) ve Temizleme",
+          "description": "Eski CRM'inizden (Salesforce, Pipedrive vb.) veya e-tablolardan gelen verileri güvenle çıkarıyor, temizliyor ve eşleştirerek HubSpot'a kusursuz bir şekilde aktarıyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Portal Kurulumu ve Özelleştirme",
+          "description": "Kullanıcıları, izinleri, özel özellikleri, anlaşma (deal) hatlarını ve işletme modelinize uyarlanmış özel nesneleri (custom objects) ayarlayarak CRM temelini yapılandırıyoruz."
+        },
+        {
+          "step": 4,
+          "title": "Otomasyon ve İş Akışı (Workflow) Oluşturma",
+          "description": "Motoru inşa ediyoruz: otomatik lead puanlama, satış temsilcilerine lead yönlendirme, pazarlama e-posta besleme dizileri ve hizmet talebi iletme (escalation) kuralları."
+        },
+        {
+          "step": 5,
+          "title": "Teknoloji Yığını Entegrasyonu",
+          "description": "HubSpot'ı ekosisteminize bağlıyor, Zoom, Slack, ERP'niz gibi araçları entegre ediyor veya tescilli yazılımlar için özel API bağlantıları oluşturuyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Eğitim ve Teslimat",
+          "description": "Yüksek oranda benimsenmeyi sağlamak için role özel eğitim oturumları (pazarlamacılar, satış temsilcileri ve yöneticiler için) düzenliyor ve lansman sonrası sürekli destek sağlıyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Zaten HubSpot'ımız var ama çok dağınık. Düzeltebilir misiniz?",
+          "answer": "Evet. Buna 'HubSpot Denetimi ve Yenilemesi' denir. Karışık iş akışlarını çözer, yinelenen verileri temizler ve portalı mevcut iş süreçlerinizle eşleşecek şekilde yeniden yapılandırırız."
+        },
+        {
+          "question": "Tam bir HubSpot kurulumu ne kadar sürer?",
+          "answer": "Temel bir CRM ve Marketing Hub kurulumu 4-6 hafta sürebilir. Özel entegrasyonlar ve veri taşıma içeren karmaşık, çoklu hub (multi-hub) bir kurumsal uygulama genellikle 2-4 ay sürer."
+        },
+        {
+          "question": "Verilerimizi Salesforce'tan taşıyabilir misiniz?",
+          "answer": "Kesinlikle. Salesforce, Microsoft Dynamics, Pipedrive ve diğerlerinden HubSpot'a karmaşık ilişkisel verileri, notları, görevleri ve ekleri geçirme konusunda kapsamlı deneyime sahibiz."
+        },
+        {
+          "question": "Tüm 'Hub'lara (Pazarlama, Satış, Hizmet) ihtiyacımız var mı?",
+          "answer": "Zorunlu değil. Hub'ları acil ihtiyaçlarınıza göre öneriyoruz. Sales Hub ile başlayabilir ve ölçeklendikçe Marketing veya Service'i daha sonra ekleyebilirsiniz."
+        },
+        {
+          "question": "HubSpot özel şirket içi yazılımımızla entegre olabilir mi?",
+          "answer": "Evet. Yazılımınızın açık bir API'si varsa, geliştirme ekibimiz sisteminiz ile HubSpot arasında verileri iki yönlü senkronize etmek için özel bir ara katman (middleware) uygulaması oluşturabilir."
+        },
+        {
+          "question": "Satış ekibimizin bunu gerçekten kullanacağını nasıl sağlıyorsunuz?",
+          "answer": "Benimseme eksikliği CRM projelerini öldürür. Satış liderliğini erkenden sürece dahil ediyor, sistemi günlük işlerindeki sürtünmeyi ortadan kaldıracak şekilde tasarlıyor ve senaryo tabanlı uygulamalı eğitim veriyoruz."
+        },
+        {
+          "question": "İlk kurulumdan sonra sürekli HubSpot desteği sağlıyor musunuz?",
+          "answer": "Evet, dış kaynaklı RevOps ekibiniz olarak hareket ettiğimiz, yeni kampanyalar oluşturduğumuz, iş akışlarını yönettiğimiz ve sistemi optimize ettiğimiz sürekli HubSpot yönetilen hizmetler sunuyoruz."
+        },
+        {
+          "question": "HubSpot'ta 'Özel Nesne' (Custom Object) nedir?",
+          "answer": "Standart nesneler Kişiler, Şirketler ve Anlaşmalardır. İşletmenize özgü bir şeyi (örneğin gayrimenkul için 'Mülkler', otomotiv için 'Araçlar') izlemeniz gerekiyorsa, Özel Nesne oluştururuz."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "hubspot",
+          "name": "HubSpot CRM"
+        },
+        {
+          "icon": "hubspot",
+          "name": "Marketing Hub"
+        },
+        {
+          "icon": "hubspot",
+          "name": "Sales Hub"
+        },
+        {
+          "icon": "hubspot",
+          "name": "Service Hub"
+        },
+        {
+          "icon": "zapier",
+          "name": "Zapier / Make"
+        },
+        {
+          "icon": "api",
+          "name": "Custom REST APIs"
+        },
+        {
+          "icon": "salesforce",
+          "name": "Salesforce (Migration)"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "HubSpot Implementierung",
+    "shortDescription": "Stimmen Sie Ihre Marketing-, Vertriebs- und Serviceteams aufeinander ab. Wir planen, implementieren und optimieren HubSpot, um Ihr Wachstum und Ihre betriebliche Effizienz zu steigern.",
+    "fullDescription": "HubSpot ist ein leistungsstarker Wachstumsmotor, aber eine schlechte Implementierung macht es zu einem teuren, ungenutzten Adressbuch. Wenn Ihre Marketingdaten isoliert sind, Ihr Vertriebsteam das CRM nicht nutzt oder Ihr Kundenservice von der Buyer Journey getrennt ist, benötigen Sie eine systemische Überarbeitung. Unsere Implementierungsdienste stellen sicher, dass Sie maximalen Wert aus der Plattform ziehen. Wir konfigurieren nicht nur Einstellungen; wir strukturieren Geschäftsprozesse. In enger Zusammenarbeit mit Ihren Stakeholdern bilden wir Ihre gesamte Customer Journey ab und übersetzen operative Anforderungen in die Architektur von HubSpot. Wir richten Marketing, Sales und Service Hubs ein, erstellen automatisierte Workflows, bauen individuelle Reporting-Dashboards und integrieren HubSpot in Ihren bestehenden Tech-Stack (ERP, proprietäre Software).",
+    "features": [
+      "Strategische Discovery & Prozess-Mapping",
+      "CRM-Architektur & Setup benutzerdefinierter Objekte (Custom Objects)",
+      "Konfiguration von Marketing, Sales & Service Hubs",
+      "Komplexe Workflow-Automatisierung & Lead-Routing",
+      "Datenmigration & Strategie zur Datenbereinigung",
+      "Integration von Drittanbieter-APIs & proprietärer Software",
+      "Benutzerdefinierte Berichte & Dashboards",
+      "Change Management & Team-Schulungen"
+    ],
+    "benefits": [
+      "Vereinen Sie Marketing-, Vertriebs- und Servicedaten in einer zentralen Datenquelle",
+      "Eliminieren Sie manuelle Dateneingaben durch intelligente Automatisierung",
+      "Steigern Sie die Produktivität des Vertriebs mit optimierten Pipelines",
+      "Gewinnen Sie volle Transparenz über den ROI jeder Marketingkampagne",
+      "Verbessern Sie die Kundenbindung durch nahtlose Übergaben an den Support",
+      "Sichern Sie hohe Nutzerakzeptanz durch rollenspezifische Schulungen"
+    ],
+    "metaTitle": "HubSpot Agentur | CRM Setup & Implementierung | PakSoft",
+    "metaDescription": "Maximieren Sie Ihren CRM-ROI. Wir bieten professionelle HubSpot-Implementierung, Integrationen, Workflow-Automatisierung und Team-Schulungen.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Discovery & Blueprinting",
+          "description": "In Tiefenworkshops analysieren wir Ihre Vertriebsprozesse, Marketingziele und Service-SLAs, um den Bauplan für Ihre HubSpot-Architektur zu erstellen."
+        },
+        {
+          "step": 2,
+          "title": "Datenmigration & Bereinigung",
+          "description": "Wir extrahieren, bereinigen und mappen Daten aus Ihrem alten CRM (Salesforce, Pipedrive) für einen fehlerfreien Import in HubSpot."
+        },
+        {
+          "step": 3,
+          "title": "Portal-Setup & Anpassung",
+          "description": "Wir richten die CRM-Basis ein: Benutzerrechte, benutzerdefinierte Eigenschaften, Deal-Pipelines und Custom Objects, die zu Ihrem Geschäftsmodell passen."
+        },
+        {
+          "step": 4,
+          "title": "Automatisierung & Workflows",
+          "description": "Wir bauen den Motor: automatisiertes Lead-Scoring, Routing an Vertriebsmitarbeiter, E-Mail-Nurturing und Eskalationsregeln für Servicetickets."
+        },
+        {
+          "step": 5,
+          "title": "Integration des Tech-Stacks",
+          "description": "Wir verbinden HubSpot mit Ihrem Ökosystem und integrieren ERP-Systeme, Tools wie Zoom/Slack oder bauen individuelle API-Schnittstellen."
+        },
+        {
+          "step": 6,
+          "title": "Schulung & Übergabe",
+          "description": "Wir führen rollenspezifische Schulungen (für Vertrieb, Marketing, Management) durch, um eine hohe Akzeptanz zu sichern, und bieten laufenden Support."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wir haben HubSpot bereits, aber es herrscht Chaos. Können Sie das beheben?",
+          "answer": "Ja. Das nennen wir ein 'HubSpot Audit & Revamp'. Wir entwirren Workflows, bereinigen Duplikate und passen das Portal an Ihre aktuellen Prozesse an."
+        },
+        {
+          "question": "Wie lange dauert eine vollständige HubSpot-Implementierung?",
+          "answer": "Ein grundlegendes Setup (CRM & Marketing Hub) dauert 4-6 Wochen. Ein komplexes Enterprise-Setup mit Migration und Custom APIs dauert in der Regel 2-4 Monate."
+        },
+        {
+          "question": "Können Sie unsere Daten aus Salesforce migrieren?",
+          "answer": "Absolut. Wir haben umfangreiche Erfahrung bei der Migration komplexer relationaler Daten, Notizen und Aufgaben von Salesforce, MS Dynamics oder Pipedrive zu HubSpot."
+        },
+        {
+          "question": "Brauchen wir alle 'Hubs' (Marketing, Sales, Service)?",
+          "answer": "Nicht zwingend. Wir empfehlen Hubs basierend auf Ihrem Bedarf. Sie können mit dem Sales Hub starten und Marketing/Service später hinzufügen."
+        },
+        {
+          "question": "Kann HubSpot in unsere interne Spezialsoftware integriert werden?",
+          "answer": "Ja. Wenn Ihre Software über eine offene API verfügt, können unsere Entwickler eine Middleware programmieren, um Daten bidirektional zu synchronisieren."
+        },
+        {
+          "question": "Wie stellen Sie sicher, dass unser Vertriebsteam es auch nutzt?",
+          "answer": "Mangelnde Akzeptanz tötet CRM-Projekte. Wir binden die Vertriebsleitung früh ein, designen das System nutzerfreundlich und bieten praxisnahe Schulungen."
+        },
+        {
+          "question": "Bieten Sie fortlaufenden HubSpot-Support nach dem Setup?",
+          "answer": "Ja, wir bieten 'Managed Services', bei denen wir als Ihr ausgelagertes RevOps-Team fungieren, Kampagnen bauen und das System laufend optimieren."
+        },
+        {
+          "question": "Was ist ein 'Custom Object' (Benutzerdefiniertes Objekt) in HubSpot?",
+          "answer": "Standardobjekte sind Kontakte und Unternehmen. Wenn Sie etwas Branchenspezifisches tracken müssen (z. B. 'Immobilien' oder 'Fahrzeuge'), erstellen wir ein Custom Object."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "hubspot",
+          "name": "HubSpot CRM"
+        },
+        {
+          "icon": "hubspot",
+          "name": "Marketing Hub"
+        },
+        {
+          "icon": "hubspot",
+          "name": "Sales Hub"
+        },
+        {
+          "icon": "hubspot",
+          "name": "Service Hub"
+        },
+        {
+          "icon": "zapier",
+          "name": "Zapier / Make"
+        },
+        {
+          "icon": "api",
+          "name": "Custom REST APIs"
+        },
+        {
+          "icon": "salesforce",
+          "name": "Salesforce (Migration)"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "ہب سپاٹ کا نفاذ (HubSpot Implementation)",
+    "shortDescription": "اپنی مارکیٹنگ، سیلز، اور سروس ٹیموں کو ایک صفحے پر لائیں۔ ہم آمدنی میں اضافے اور آپریشنل کارکردگی کو بڑھانے کے لیے ہب سپاٹ کو ترتیب اور بہتر بناتے ہیں۔",
+    "fullDescription": "HubSpot ترقی کے لیے ایک طاقتور انجن ہے، لیکن ناقص نفاذ اسے ایک مہنگے اور غیر استعمال شدہ ٹول میں بدل دیتا ہے۔ اگر آپ کا مارکیٹنگ ڈیٹا الگ تھلگ ہے، آپ کی سیلز ٹیم CRM استعمال کرنے سے انکاری ہے، یا آپ کی کسٹمر سروس خریدار کے سفر سے منقطع ہے، تو آپ کو ایک منظم تبدیلی کی ضرورت ہے۔ ہماری HubSpot نفاذ کی خدمات اس بات کو یقینی بناتی ہیں کہ آپ پلیٹ فارم سے زیادہ سے زیادہ قیمت حاصل کریں۔ ہم صرف ترتیبات کو ترتیب نہیں دیتے؛ ہم کاروباری عمل کو ڈیزائن کرتے ہیں۔ ہم آپ کے اسٹیک ہولڈرز کے ساتھ مل کر آپ کے پورے کسٹمر کے سفر کا خاکہ بناتے ہیں اور آپ کی آپریشنل ضروریات کو HubSpot کے فن تعمیر میں ڈھالتے ہیں۔ ہم مارکیٹنگ، سیلز، اور سروس ہبز قائم کرتے ہیں، خودکار ورک فلو بناتے ہیں، کسٹم رپورٹنگ ڈیش بورڈ بناتے ہیں، اور HubSpot کو آپ کے موجودہ ٹیک اسٹیک (ERP، بلنگ سسٹمز) کے ساتھ مربوط کرتے ہیں۔",
+    "features": [
+      "اسٹریٹجک دریافت اور پروسیس میپنگ",
+      "CRM آرکیٹیکچر اور کسٹم آبجیکٹ سیٹ اپ",
+      "مارکیٹنگ، سیلز اور سروس ہب کنفیگریشن",
+      "پیچیدہ ورک فلو آٹومیشن اور روٹنگ",
+      "ڈیٹا مائیگریشن اور کلینزنگ کی حکمت عملی",
+      "تھرڈ پارٹی API اور کسٹم انضمام",
+      "حسب ضرورت رپورٹنگ اور ڈیش بورڈ کی تخلیق",
+      "تبدیلی کا انتظام اور ٹیم کی تربیت"
+    ],
+    "benefits": [
+      "اپنے مارکیٹنگ، سیلز اور سروس ڈیٹا کو ایک ہی پلیٹ فارم پر اکٹھا کریں",
+      "سمارٹ آٹومیشن کے ساتھ دستی ڈیٹا انٹری اور دہرائے جانے والے کاموں کو ختم کریں",
+      "بہتر پائپ لائنز کے ساتھ سیلز ٹیم کی پیداواری صلاحیت کو بڑھائیں",
+      "ہر مارکیٹنگ مہم کے ROI میں مکمل مرئیت حاصل کریں",
+      "سیلز اور سپورٹ کے درمیان ہموار منتقلی کے ساتھ کسٹمر کی برقراری کو بہتر بنائیں",
+      "حسب ضرورت، کردار پر مبنی تربیت کے ساتھ اعلیٰ صارف کے استعمال کو یقینی بنائیں"
+    ],
+    "metaTitle": "HubSpot امپلیمینٹیشن ایجنسی | CRM سیٹ اپ | PakSoft",
+    "metaDescription": "اپنے CRM ROI کو زیادہ سے زیادہ کریں۔ ہم مارکیٹنگ، سیلز، اور سروس ہبز کے لیے ماہر HubSpot نفاذ، کسٹم انٹیگریشن، اور ٹیم ٹریننگ فراہم کرتے ہیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "دریافت اور بلیو پرنٹنگ",
+          "description": "ہم آپ کے سیلز کے عمل، مارکیٹنگ کے اہداف اور سروس کو سمجھنے کے لیے ورکشاپس کا انعقاد کرتے ہیں، اور آپ کے HubSpot آرکیٹیکچر کا خاکہ تیار کرتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "ڈیٹا مائیگریشن اور کلینزنگ",
+          "description": "ہم آپ کے پرانے CRM (Salesforce, Pipedrive) سے ڈیٹا کو محفوظ طریقے سے نکالتے ہیں، صاف کرتے ہیں اور HubSpot میں بغیر کسی نقص کے منتقل کرتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "پورٹل سیٹ اپ اور حسب ضرورت",
+          "description": "ہم آپ کے کاروباری ماڈل کے مطابق صارفین، اجازتوں، کسٹم پراپرٹیز، ڈیل پائپ لائنز اور کسٹم آبجیکٹ ترتیب دے کر CRM کی بنیاد بناتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "آٹومیشن اور ورک فلو بلڈنگ",
+          "description": "ہم خودکار نظام بناتے ہیں: لیڈ اسکورنگ، سیلز کے نمائندوں کو لیڈ روٹنگ، ای میل نرسنگ، اور سروس ٹکٹ کے قواعد۔"
+        },
+        {
+          "step": 5,
+          "title": "ٹیک اسٹیک انٹیگریشن",
+          "description": "ہم HubSpot کو آپ کے ایکو سسٹم سے جوڑتے ہیں، Zoom، Slack، یا آپ کے ERP جیسے ٹولز کو مربوط کرتے ہیں، یا حسب ضرورت API بناتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "تربیت اور ہینڈ آف",
+          "description": "ہم اس بات کو یقینی بنانے کے لیے کہ آپ کا عملہ اسے صحیح طریقے سے استعمال کرے، متعلقہ کردار (مارکیٹرز، سیلز، اور ایگزیکٹوز) کے لیے تربیتی سیشن منعقد کرتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "ہمارے پاس پہلے سے ہی HubSpot ہے لیکن یہ بے ترتیبی کا شکار ہے۔ کیا آپ اسے ٹھیک کر سکتے ہیں؟",
+          "answer": "ہاں۔ اسے 'HubSpot Audit & Revamp' کہا جاتا ہے۔ ہم الجھے ہوئے ورک فلوز کو سلجھاتے ہیں، ڈپلیکیٹ ڈیٹا صاف کرتے ہیں، اور آپ کے موجودہ کاروباری عمل سے ملنے کے لیے پورٹل کو دوبارہ ترتیب دیتے ہیں۔"
+        },
+        {
+          "question": "مکمل ہب سپاٹ نفاذ میں کتنا وقت لگتا ہے؟",
+          "answer": "بنیادی CRM اور مارکیٹنگ ہب کے سیٹ اپ میں 4-6 ہفتے لگ سکتے ہیں۔ کسٹم انٹیگریشنز اور ڈیٹا مائیگریشن کے ساتھ ایک پیچیدہ انٹرپرائز کے نفاذ میں عام طور پر 2-4 ماہ لگتے ہیں۔"
+        },
+        {
+          "question": "کیا آپ سیلز فورس (Salesforce) سے ہمارا ڈیٹا منتقل کر سکتے ہیں؟",
+          "answer": "بالکل۔ ہمارے پاس Salesforce، Microsoft Dynamics، Pipedrive وغیرہ سے پیچیدہ ڈیٹا، نوٹس، کاموں اور اٹیچمنٹس کو HubSpot میں منتقل کرنے کا وسیع تجربہ ہے۔"
+        },
+        {
+          "question": "کیا ہمیں تمام 'ہبز' (مارکیٹنگ، سیلز، سروس) کی ضرورت ہے؟",
+          "answer": "ضروری نہیں۔ ہم آپ کی فوری ضروریات کی بنیاد پر تجویز کرتے ہیں۔ آپ سیلز ہب سے شروعات کر سکتے ہیں اور مارکیٹنگ یا سروس بعد میں شامل کر سکتے ہیں۔"
+        },
+        {
+          "question": "کیا HubSpot ہمارے کسٹم سافٹ ویئر کے ساتھ ضم ہو سکتا ہے؟",
+          "answer": "ہاں۔ اگر آپ کے سافٹ ویئر میں اوپن API ہے، تو ہماری ڈیولپمنٹ ٹیم آپ کے سسٹم اور HubSpot کے درمیان ڈیٹا کی مطابقت پذیری کے لیے ایک کسٹم ایپلی کیشن بنا سکتی ہے۔"
+        },
+        {
+          "question": "آپ کیسے یقینی بناتے ہیں کہ ہماری سیلز ٹیم واقعی اسے استعمال کرے گی؟",
+          "answer": "استعمال میں کمی CRM پراجیکٹس کو ناکام بناتی ہے۔ ہم سیلز لیڈرشپ کو جلد شامل کرتے ہیں، سسٹم کو ان کے دن سے مشکلات کو دور کرنے کے لیے ڈیزائن کرتے ہیں، اور عملی تربیت فراہم کرتے ہیں۔"
+        },
+        {
+          "question": "کیا آپ ابتدائی سیٹ اپ کے بعد جاری ہب سپاٹ سپورٹ فراہم کرتے ہیں؟",
+          "answer": "ہاں، ہم جاری HubSpot کے زیر انتظام خدمات پیش کرتے ہیں جہاں ہم آپ کی آؤٹ سورس RevOps ٹیم کے طور پر کام کرتے ہیں، نئی مہمات بناتے ہیں اور سسٹم کو بہتر بناتے ہیں۔"
+        },
+        {
+          "question": "HubSpot میں 'کسٹم آبجیکٹ' کیا ہے؟",
+          "answer": "معیاری آبجیکٹس رابطے، کمپنیاں اور ڈیلز ہیں۔ اگر آپ کو اپنے کاروبار سے متعلق کسی منفرد چیز کو ٹریک کرنے کی ضرورت ہے (جیسے رئیل اسٹیٹ کے لیے 'پراپرٹیز')، تو ہم ایک کسٹم آبجیکٹ بناتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "hubspot",
+          "name": "HubSpot CRM"
+        },
+        {
+          "icon": "hubspot",
+          "name": "Marketing Hub"
+        },
+        {
+          "icon": "hubspot",
+          "name": "Sales Hub"
+        },
+        {
+          "icon": "hubspot",
+          "name": "Service Hub"
+        },
+        {
+          "icon": "zapier",
+          "name": "Zapier / Make"
+        },
+        {
+          "icon": "api",
+          "name": "Custom REST APIs"
+        },
+        {
+          "icon": "salesforce",
+          "name": "Salesforce (Migration)"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تنفيذ HubSpot (HubSpot Implementation)",
+    "shortDescription": "قم بمواءمة فرق التسويق والمبيعات والخدمة لديك. نحن نصمم وننفذ ونحسن منصة HubSpot لدفع نمو الإيرادات والكفاءة التشغيلية.",
+    "fullDescription": "يعتبر HubSpot محركاً قوياً للنمو، لكن التنفيذ السيئ يحوله إلى دفتر عناوين باهظ الثمن وغير مستخدم. إذا كانت بيانات التسويق الخاصة بك منعزلة، أو يرفض فريق المبيعات استخدام نظام إدارة علاقات العملاء (CRM)، أو كانت خدمة العملاء منفصلة عن رحلة المشتري، فأنت بحاجة إلى إصلاح منهجي. تضمن خدمات تنفيذ HubSpot الخاصة بنا استخراج أقصى قيمة من المنصة. نحن لا نكتفي بتهيئة الإعدادات؛ بل نصمم العمليات التجارية. نعمل عن كثب مع أصحاب المصلحة لرسم خريطة لرحلة العميل بالكامل، وترجمة احتياجاتك التشغيلية إلى بنية HubSpot. نقوم بإعداد مراكز التسويق والمبيعات والخدمة (Hubs)، وبناء مسارات عمل آلية، وإنشاء لوحات معلومات تقارير مخصصة، ودمج HubSpot مع مجموعة التكنولوجيا الحالية لديك (مثل ERP وبرامج الفوترة). أخيراً، نقدم تدريباً شاملاً للفريق لضمان اعتماد المستخدم العالي والنجاح على المدى الطويل.",
+    "features": [
+      "الاكتشاف الاستراتيجي وتخطيط العمليات",
+      "بنية CRM وإعداد الكائنات المخصصة (Custom Objects)",
+      "تكوين مراكز التسويق (Marketing) والمبيعات (Sales) والخدمة (Service)",
+      "أتمتة مسارات العمل المعقدة وتوجيه العملاء المحتملين",
+      "استراتيجية ترحيل البيانات وتنقيتها",
+      "تكامل واجهات برمجة التطبيقات (API) للجهات الخارجية",
+      "إنشاء تقارير مخصصة ولوحات معلومات",
+      "إدارة التغيير وتدريب فريق العمل"
+    ],
+    "benefits": [
+      "توحيد بيانات التسويق والمبيعات والخدمة في مصدر واحد للحقيقة",
+      "القضاء على إدخال البيانات يدوياً والمهام المتكررة عبر الأتمتة الذكية",
+      "زيادة إنتاجية فريق المبيعات ومعدلات الإغلاق من خلال خطوط أنابيب مبسطة",
+      "اكتساب رؤية كاملة لعائد الاستثمار (ROI) لكل حملة تسويقية",
+      "تحسين الاحتفاظ بالعملاء من خلال التسليم السلس بين المبيعات والدعم",
+      "ضمان اعتماد عالي للمنصة من خلال تدريب مخصص قائم على الأدوار"
+    ],
+    "metaTitle": "وكالة تنفيذ HubSpot | إعداد نظام CRM | PakSoft",
+    "metaDescription": "قم بزيادة عائد استثمار نظام CRM الخاص بك. نقدم تنفيذاً احترافياً لـ HubSpot، وعمليات دمج مخصصة، وأتمتة مسارات العمل، وتدريب فريقك.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "الاكتشاف والتخطيط (Blueprinting)",
+          "description": "نجري ورش عمل عميقة لفهم عملية المبيعات وأهداف التسويق، ونضع مخططاً لبنية HubSpot الخاصة بك."
+        },
+        {
+          "step": 2,
+          "title": "ترحيل البيانات وتنقيتها",
+          "description": "نستخرج وننظف ونعين البيانات بأمان من نظام CRM القديم (مثل Salesforce) لضمان استيراد خالٍ من العيوب إلى HubSpot."
+        },
+        {
+          "step": 3,
+          "title": "إعداد البوابة والتخصيص",
+          "description": "نقوم بتهيئة أساس CRM: إعداد المستخدمين، والأذونات، والخصائص المخصصة، وخطوط الصفقات، والكائنات المخصصة (Custom Objects) المصممة لنموذج عملك."
+        },
+        {
+          "step": 4,
+          "title": "الأتمتة وبناء مسارات العمل",
+          "description": "نبني المحرك: التسجيل الآلي للعملاء المحتملين، وتوجيههم لمندوبي المبيعات، وتسلسلات رعاية البريد الإلكتروني التسويقية، وقواعد تصعيد التذاكر."
+        },
+        {
+          "step": 5,
+          "title": "تكامل حزمة التكنولوجيا",
+          "description": "نربط HubSpot بنظامك البيئي، بدمج أدوات مثل Zoom أو Slack أو ERP الخاص بك، أو بناء اتصالات API مخصصة للبرامج الخاصة بك."
+        },
+        {
+          "step": 6,
+          "title": "التدريب والتسليم",
+          "description": "نجري جلسات تدريبية خاصة بالأدوار (للمسوقين، ومندوبي المبيعات، والمديرين) لضمان التبني العالي، وتقديم الدعم المستمر بعد الإطلاق."
+        }
+      ],
+      "faq": [
+        {
+          "question": "لدينا بالفعل HubSpot ولكنه في حالة فوضى. هل يمكنك إصلاحه؟",
+          "answer": "نعم. يُطلق على هذا اسم 'تدقيق وتجديد HubSpot'. نقوم بفك تشابك مسارات العمل الفوضوية، وتنظيف البيانات المكررة، وإعادة تكوين البوابة لتتناسب مع عملياتك."
+        },
+        {
+          "question": "كم من الوقت يستغرق تنفيذ HubSpot الكامل؟",
+          "answer": "يمكن أن يستغرق إعداد CRM و Marketing Hub الأساسي من 4 إلى 6 أسابيع. التنفيذ المعقد للشركات الذي يتضمن دمجاً مخصصاً وترحيلاً للبيانات يستغرق من شهرين إلى 4 أشهر."
+        },
+        {
+          "question": "هل يمكنك ترحيل بياناتنا من Salesforce؟",
+          "answer": "بالتأكيد. لدينا خبرة واسعة في ترحيل البيانات العلائقية المعقدة والملاحظات والمهام والمرفقات من Salesforce و Microsoft Dynamics وغيرها إلى HubSpot."
+        },
+        {
+          "question": "هل نحتاج إلى جميع المراكز (التسويق، المبيعات، الخدمة)؟",
+          "answer": "ليس بالضرورة. نوصي بالمراكز بناءً على احتياجاتك الفورية. يمكنك البدء بمركز المبيعات (Sales Hub) وإضافة التسويق أو الخدمة لاحقاً كلما توسعت."
+        },
+        {
+          "question": "هل يمكن لـ HubSpot التكامل مع برامجنا الداخلية المخصصة؟",
+          "answer": "نعم. إذا كان برنامجك يحتوي على واجهة برمجة تطبيقات (API) مفتوحة، فيمكن لفريق التطوير لدينا إنشاء تطبيق وسيط مخصص لمزامنة البيانات في كلا الاتجاهين."
+        },
+        {
+          "question": "كيف تضمنون أن فريق المبيعات لدينا سيستخدمه بالفعل؟",
+          "answer": "نقص التبني يقتل مشاريع CRM. نحن نشرك قادة المبيعات مبكراً، ونصمم النظام لإزالة الاحتكاك من يومهم، ونقدم تدريباً عملياً قائماً على السيناريوهات."
+        },
+        {
+          "question": "هل تقدمون دعماً مستمراً لـ HubSpot بعد الإعداد الأولي؟",
+          "answer": "نعم، نقدم خدمات إدارة HubSpot مستمرة حيث نعمل كفريق RevOps خارجي خاص بك، ونبني حملات جديدة ونحسن النظام."
+        },
+        {
+          "question": "ما هو 'الكائن المخصص' (Custom Object) في HubSpot؟",
+          "answer": "الكائنات القياسية هي جهات الاتصال والشركات والصفقات. إذا كنت بحاجة إلى تتبع شيء فريد لعملك (مثل 'العقارات' أو 'السيارات')، فإننا نبني كائناً مخصصاً."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "hubspot",
+          "name": "HubSpot CRM"
+        },
+        {
+          "icon": "hubspot",
+          "name": "Marketing Hub"
+        },
+        {
+          "icon": "hubspot",
+          "name": "Sales Hub"
+        },
+        {
+          "icon": "hubspot",
+          "name": "Service Hub"
+        },
+        {
+          "icon": "zapier",
+          "name": "Zapier / Make"
+        },
+        {
+          "icon": "api",
+          "name": "Custom REST APIs"
+        },
+        {
+          "icon": "salesforce",
+          "name": "Salesforce (Migration)"
+        }
+      ]
+    }
+  }
+}

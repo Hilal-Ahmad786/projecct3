@@ -1,0 +1,598 @@
+{
+  "slug": "salesforce-marketing-cloud",
+  "en": {
+    "name": "Salesforce Marketing Cloud",
+    "shortDescription": "Harness enterprise-grade marketing automation. We implement, configure, and manage Salesforce Marketing Cloud (SFMC) to execute complex, personalized omnichannel journeys.",
+    "fullDescription": "Salesforce Marketing Cloud (SFMC) is the most powerful marketing automation platform on the market, designed for large enterprises dealing with massive data volumes and complex customer journeys. However, its immense capability comes with a steep learning curve. Without proper implementation and technical expertise, SFMC can become an expensive, underutilized tool. Our SFMC services are designed to unlock the platform's full potential. We handle the technical heavy lifting: integrating SFMC with your CRM (Salesforce Sales/Service Cloud), structuring Data Extensions, and writing custom AMPscript to enable dynamic email personalization. We utilize Journey Builder to map out highly complex, multi-branch customer journeys across Email, SMS (Mobile Studio), and Ads (Advertising Studio). Whether you need to execute a sophisticated lead nurturing program, a global onboarding sequence, or dynamic ecommerce re-engagement, we provide the technical architecture and strategic management to make it happen.",
+    "features": [
+      "SFMC Implementation & CRM Integration",
+      "Journey Builder Strategy & Execution",
+      "Advanced Data Extension Architecture & SQL",
+      "Dynamic Email Design via AMPscript",
+      "Mobile Studio (SMS & Push) Setup",
+      "Advertising Studio Integration",
+      "Interaction Studio (Personalization)",
+      "Deliverability Audits & Compliance"
+    ],
+    "benefits": [
+      "Execute highly personalized, omnichannel campaigns at enterprise scale",
+      "Seamlessly align your marketing data with Salesforce Sales & Service Clouds",
+      "Automate complex customer journeys based on real-time data triggers",
+      "Increase email engagement and conversion rates with dynamic content (AMPscript)",
+      "Reduce churn and improve customer lifetime value through targeted retention journeys",
+      "Ensure data security and compliance (GDPR/CCPA) at scale"
+    ],
+    "metaTitle": "Salesforce Marketing Cloud Agency | SFMC Implementation | PakSoft",
+    "metaDescription": "Unlock enterprise marketing automation. We provide expert Salesforce Marketing Cloud implementation, Journey Builder management, and AMPscript development.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Discovery & Architecture Blueprinting",
+          "description": "We analyze your data landscape, customer touchpoints, and business goals to architect the optimal SFMC setup and data model."
+        },
+        {
+          "step": 2,
+          "title": "CRM Integration & Data Mapping",
+          "description": "We establish a robust connection between SFMC and your core CRM using Marketing Cloud Connect, mapping data fields into precise Data Extensions via SQL."
+        },
+        {
+          "step": 3,
+          "title": "Journey Mapping & Build",
+          "description": "Using Journey Builder, we construct automated, multi-channel paths (Email, SMS, Ads) with complex decision splits based on user behavior and data changes."
+        },
+        {
+          "step": 4,
+          "title": "Dynamic Content & AMPscripting",
+          "description": "Our developers write custom AMPscript to pull real-time data into your emails, ensuring every recipient sees a 100% personalized message and product recommendations."
+        },
+        {
+          "step": 5,
+          "title": "Testing & QA",
+          "description": "We rigorously test every journey node, data flow, and email rendering across devices before launch to ensure flawless execution at scale."
+        },
+        {
+          "step": 6,
+          "title": "Ongoing Management & Optimization",
+          "description": "We monitor journey performance, A/B test touchpoints, manage IP warmup/deliverability, and continuously refine the data models to improve ROI."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How is SFMC different from HubSpot or Mailchimp?",
+          "answer": "SFMC is an enterprise platform. While Mailchimp is great for basic newsletters, SFMC is built to handle millions of records, complex SQL data queries, and highly sophisticated, multi-channel automated journeys."
+        },
+        {
+          "question": "What is AMPscript?",
+          "answer": "AMPscript is a proprietary scripting language used within SFMC. It allows us to interact directly with your Data Extensions to create highly dynamic and personalized content inside emails and landing pages."
+        },
+        {
+          "question": "Do you handle Salesforce Marketing Cloud Account Engagement (formerly Pardot)?",
+          "answer": "Yes. While SFMC is typically used for B2C or high-volume B2B, Account Engagement (Pardot) is focused on B2B lead generation. We implement and manage both platforms."
+        },
+        {
+          "question": "Can you integrate SFMC with our non-Salesforce CRM or ERP?",
+          "answer": "Absolutely. Through custom API integrations and automated FTP drops, we can pull data from external data lakes, proprietary software, or ERPs into SFMC Data Extensions."
+        },
+        {
+          "question": "Why do I need SQL for Salesforce Marketing Cloud?",
+          "answer": "To segment massive audiences effectively in SFMC, we write SQL queries in Automation Studio to filter and move data between Data Extensions automatically."
+        },
+        {
+          "question": "Can you fix our existing, broken SFMC setup?",
+          "answer": "Yes. We frequently conduct SFMC Audits to fix broken data flows, optimize slow SQL queries, clean up disorganized Data Extensions, and repair failing Journey Builder paths."
+        },
+        {
+          "question": "Does SFMC handle SMS marketing?",
+          "answer": "Yes, through Mobile Studio. We can integrate SMS and Push notifications directly into your Journey Builder flows alongside email."
+        },
+        {
+          "question": "What is Advertising Studio?",
+          "answer": "Advertising Studio allows us to securely use your CRM data in SFMC to power targeted ad campaigns on Google, Facebook, and LinkedIn, maintaining omnichannel consistency."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "salesforce",
+          "name": "Salesforce Marketing Cloud"
+        },
+        {
+          "icon": "salesforce",
+          "name": "Journey Builder / Automation Studio"
+        },
+        {
+          "icon": "code",
+          "name": "AMPscript & SQL"
+        },
+        {
+          "icon": "salesforce",
+          "name": "Sales Cloud / Service Cloud"
+        },
+        {
+          "icon": "api",
+          "name": "Marketing Cloud Connect"
+        },
+        {
+          "icon": "database",
+          "name": "Data Extensions"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Salesforce Marketing Cloud",
+    "shortDescription": "Kurumsal düzeyde pazarlama otomasyonundan yararlanın. Karmaşık, kişiselleştirilmiş çok kanallı (omnichannel) yolculukları yürütmek için Salesforce Marketing Cloud'u (SFMC) uyguluyor, yapılandırıyor ve yönetiyoruz.",
+    "fullDescription": "Salesforce Marketing Cloud (SFMC), devasa veri hacimleri ve karmaşık müşteri yolculuklarıyla uğraşan büyük işletmeler için tasarlanmış piyasadaki en güçlü pazarlama otomasyon platformudur. Ancak, muazzam yeteneği dik bir öğrenme eğrisiyle birlikte gelir. Uygun uygulama ve teknik uzmanlık olmadan, SFMC pahalı ve az kullanılan bir araca dönüşebilir. SFMC hizmetlerimiz platformun tüm potansiyelini ortaya çıkarmak için tasarlanmıştır. Teknik ağır işleri biz hallediyoruz: SFMC'yi CRM'inizle (Salesforce Sales/Service Cloud) entegre etmek, Veri Uzantılarını (Data Extensions) yapılandırmak ve dinamik e-posta kişiselleştirmesini sağlamak için özel AMPscript yazmak. E-posta, SMS (Mobile Studio) ve Reklamlar (Advertising Studio) genelinde son derece karmaşık, çok dallı müşteri yolculuklarının haritasını çıkarmak için Journey Builder'ı kullanıyoruz. İster gelişmiş bir lead (müşteri adayı) besleme programı, ister küresel bir katılım (onboarding) dizisi veya dinamik e-ticaret yeniden etkileşimi yürütmeniz gereksin, bunu gerçekleştirmek için teknik mimariyi ve stratejik yönetimi sağlıyoruz.",
+    "features": [
+      "SFMC Uygulaması ve CRM Entegrasyonu",
+      "Journey Builder Stratejisi ve Yürütmesi",
+      "Gelişmiş Data Extension Mimarisi ve SQL",
+      "AMPscript ile Dinamik E-posta Tasarımı",
+      "Mobile Studio (SMS ve Push Bildirimleri) Kurulumu",
+      "Advertising Studio Entegrasyonu",
+      "Interaction Studio (Gerçek Zamanlı Kişiselleştirme)",
+      "Teslim Edilebilirlik (Deliverability) Denetimleri ve Uyumluluk"
+    ],
+    "benefits": [
+      "Kurumsal ölçekte son derece kişiselleştirilmiş, çok kanallı kampanyalar yürütün",
+      "Pazarlama verilerinizi Salesforce Sales & Service Cloud'larla sorunsuz bir şekilde hizalayın",
+      "Gerçek zamanlı veri tetikleyicilerine (triggers) dayalı karmaşık müşteri yolculuklarını otomatikleştirin",
+      "Dinamik içerikle (AMPscript) e-posta etkileşimini ve dönüşüm oranlarını artırın",
+      "Hedeflenen elde tutma (retention) yolculukları aracılığıyla müşteri kaybını azaltın ve Müşteri Yaşam Boyu Değerini (LTV) artırın",
+      "Büyük ölçekte veri güvenliği ve uyumluluğu (KVKK/GDPR/CCPA) sağlayın"
+    ],
+    "metaTitle": "Salesforce Marketing Cloud Ajansı | SFMC Entegrasyonu | PakSoft",
+    "metaDescription": "Kurumsal pazarlama otomasyonunun kilidini açın. Uzman Salesforce Marketing Cloud uygulaması, Journey Builder yönetimi ve AMPscript geliştirme hizmeti sunuyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Keşif ve Mimari Tasarımı (Blueprinting)",
+          "description": "Optimum SFMC kurulumunu ve veri modelini tasarlamak için veri ortamınızı, müşteri temas noktalarınızı ve iş hedeflerinizi analiz ediyoruz."
+        },
+        {
+          "step": 2,
+          "title": "CRM Entegrasyonu ve Veri Eşleme",
+          "description": "Marketing Cloud Connect'i kullanarak SFMC ile çekirdek CRM'iniz arasında sağlam bir bağlantı kuruyor, veri alanlarını SQL aracılığıyla Data Extensions ile eşleştiriyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Yolculuk (Journey) Haritalama ve Oluşturma",
+          "description": "Journey Builder'ı kullanarak, kullanıcı davranışına ve veri değişikliklerine dayalı karmaşık karar ayrımlarına sahip otomatik, çok kanallı yollar (E-posta, SMS, Reklamlar) oluşturuyoruz."
+        },
+        {
+          "step": 4,
+          "title": "Dinamik İçerik ve AMPscripting",
+          "description": "Geliştiricilerimiz, e-postalarınıza gerçek zamanlı veri çekmek için özel AMPscript yazarak, her alıcının %100 kişiselleştirilmiş mesajlar ve ürün önerileri görmesini sağlar."
+        },
+        {
+          "step": 5,
+          "title": "Test ve QA (Kalite Güvencesi)",
+          "description": "Büyük ölçekte kusursuz yürütme sağlamak için lansmandan önce her yolculuk düğümünü, veri akışını ve cihazlar arası e-posta işlemesini titizlikle test ediyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Sürekli Yönetim ve Optimizasyon",
+          "description": "Yolculuk performansını izliyor, temas noktalarında A/B testi yapıyor, IP ısınmasını (warmup)/teslim edilebilirliği yönetiyor ve yatırım getirisini artırmak için veri modellerini sürekli iyileştiriyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "SFMC'nin HubSpot veya Mailchimp'ten farkı nedir?",
+          "answer": "SFMC kurumsal bir platformdur. Mailchimp temel haber bültenleri için harika olsa da, SFMC milyonlarca kaydı, karmaşık SQL veri sorgularını ve son derece gelişmiş, çok kanallı otomatik yolculukları işlemek için tasarlanmıştır."
+        },
+        {
+          "question": "AMPscript nedir?",
+          "answer": "AMPscript, SFMC içinde kullanılan tescilli bir kodlama dilidir. E-postalar ve açılış sayfaları içinde son derece dinamik ve kişiselleştirilmiş içerik oluşturmak için Veri Uzantılarınızla (Data Extensions) doğrudan etkileşim kurmamızı sağlar."
+        },
+        {
+          "question": "Salesforce Marketing Cloud Account Engagement'ı (eski adıyla Pardot) yönetiyor musunuz?",
+          "answer": "Evet. SFMC tipik olarak B2C veya yüksek hacimli B2B için kullanılırken, Account Engagement (Pardot) B2B potansiyel müşteri üretimine odaklanır. Her iki platformu da kuruyor ve yönetiyoruz."
+        },
+        {
+          "question": "SFMC'yi Salesforce dışı CRM'imiz veya ERP'miz ile entegre edebilir misiniz?",
+          "answer": "Kesinlikle. Özel API entegrasyonları ve otomatik FTP aktarımları aracılığıyla, harici veri göllerinden, tescilli yazılımlardan veya ERP'lerden SFMC Veri Uzantılarına veri çekebiliriz."
+        },
+        {
+          "question": "Salesforce Marketing Cloud için neden SQL'e ihtiyacım var?",
+          "answer": "Büyük kitleleri SFMC'de etkili bir şekilde bölümlere ayırmak için, verileri Veri Uzantıları (Data Extensions) arasında otomatik olarak filtrelemek ve taşımak amacıyla Automation Studio'da SQL sorguları yazıyoruz."
+        },
+        {
+          "question": "Mevcut, bozuk SFMC kurulumumuzu düzeltebilir misiniz?",
+          "answer": "Evet. Bozuk veri akışlarını onarmak, yavaş SQL sorgularını optimize etmek, düzensiz Veri Uzantılarını temizlemek ve başarısız olan Journey Builder yollarını düzeltmek için sıklıkla SFMC Denetimleri (Audits) yapıyoruz."
+        },
+        {
+          "question": "SFMC SMS pazarlamasını yönetiyor mu?",
+          "answer": "Evet, Mobile Studio aracılığıyla. SMS ve Push bildirimlerini e-posta ile birlikte doğrudan Journey Builder akışlarınıza entegre edebiliriz."
+        },
+        {
+          "question": "Advertising Studio nedir?",
+          "answer": "Advertising Studio, çok kanallı tutarlılığı koruyarak Google, Facebook ve LinkedIn'de hedeflenmiş reklam kampanyalarına güç sağlamak için SFMC'deki CRM verilerinizi güvenli bir şekilde kullanmamızı sağlar."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "salesforce",
+          "name": "Salesforce Marketing Cloud"
+        },
+        {
+          "icon": "salesforce",
+          "name": "Journey Builder / Automation Studio"
+        },
+        {
+          "icon": "code",
+          "name": "AMPscript & SQL"
+        },
+        {
+          "icon": "salesforce",
+          "name": "Sales Cloud / Service Cloud"
+        },
+        {
+          "icon": "api",
+          "name": "Marketing Cloud Connect"
+        },
+        {
+          "icon": "database",
+          "name": "Data Extensions"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Salesforce Marketing Cloud",
+    "shortDescription": "Nutzen Sie Enterprise-Marketing-Automation. Wir implementieren, konfigurieren und verwalten die Salesforce Marketing Cloud (SFMC) für komplexe Omnichannel-Journeys.",
+    "fullDescription": "Salesforce Marketing Cloud (SFMC) ist die leistungsstärkste Marketing-Automation-Plattform für Großunternehmen mit massiven Datenvolumina. Ihre enorme Leistungsfähigkeit geht jedoch mit einer steilen Lernkurve einher. Ohne technisches Fachwissen wird SFMC zu einem teuren, ungenutzten Tool. Wir kümmern uns um die technische Schwerstarbeit: Wir integrieren SFMC in Ihr CRM (Sales/Service Cloud), strukturieren Data Extensions und schreiben individuelles AMPscript für dynamische E-Mail-Personalisierung. Mit dem Journey Builder erstellen wir hochkomplexe, verzweigte Customer Journeys über E-Mail, SMS (Mobile Studio) und Ads (Advertising Studio). Egal, ob es um globales Onboarding, Lead-Nurturing oder dynamisches E-Commerce-Retargeting geht – wir liefern die technische Architektur und das strategische Management.",
+    "features": [
+      "SFMC Implementierung & CRM-Integration",
+      "Journey Builder Strategie & Ausführung",
+      "Erweiterte Data Extension Architektur & SQL",
+      "Dynamisches E-Mail-Design via AMPscript",
+      "Mobile Studio (SMS & Push) Setup",
+      "Advertising Studio Integration",
+      "Interaction Studio (Echtzeit-Personalisierung)",
+      "Deliverability-Audits & Compliance (DSGVO)"
+    ],
+    "benefits": [
+      "Führen Sie hochgradig personalisierte Omnichannel-Kampagnen auf Enterprise-Niveau aus",
+      "Richten Sie Marketingdaten nahtlos an Salesforce Sales & Service Clouds aus",
+      "Automatisieren Sie Customer Journeys basierend auf Echtzeit-Datentriggern",
+      "Steigern Sie Konversionsraten durch hochdynamische Inhalte (AMPscript)",
+      "Reduzieren Sie Churn und erhöhen Sie den Customer Lifetime Value (CLV)",
+      "Stellen Sie Datensicherheit und DSGVO-Konformität bei großen Volumina sicher"
+    ],
+    "metaTitle": "Salesforce Marketing Cloud Agentur | SFMC Setup | PakSoft",
+    "metaDescription": "Erschließen Sie Enterprise Marketing Automation. Wir bieten SFMC Implementierung, Journey Builder Management und AMPscript Entwicklung.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Discovery & Architektur-Planung",
+          "description": "Wir analysieren Ihre Datenlandschaft und Touchpoints, um das optimale SFMC-Setup und Datenmodell zu entwerfen."
+        },
+        {
+          "step": 2,
+          "title": "CRM-Integration & Data Mapping",
+          "description": "Wir verbinden SFMC und Ihr Kern-CRM mittels Marketing Cloud Connect und ordnen Datenfelder per SQL präzise in Data Extensions zu."
+        },
+        {
+          "step": 3,
+          "title": "Journey Mapping & Aufbau",
+          "description": "Im Journey Builder konstruieren wir automatisierte Multi-Channel-Pfade mit komplexen Entscheidungsbäumen basierend auf Nutzerverhalten."
+        },
+        {
+          "step": 4,
+          "title": "Dynamic Content & AMPscripting",
+          "description": "Unsere Entwickler schreiben AMPscript, um Echtzeitdaten in Ihre E-Mails zu ziehen, sodass jeder Empfänger eine zu 100 % personalisierte Nachricht sieht."
+        },
+        {
+          "step": 5,
+          "title": "Testing & Qualitätssicherung",
+          "description": "Wir testen vor dem Launch jeden Journey-Knotenpunkt, Datenfluss und das E-Mail-Rendering über alle Geräte hinweg rigoros."
+        },
+        {
+          "step": 6,
+          "title": "Laufendes Management & Optimierung",
+          "description": "Wir überwachen die Performance, führen A/B-Tests durch, verwalten IP-Warmup und verfeinern kontinuierlich die SQL-Datenmodelle."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie unterscheidet sich SFMC von HubSpot oder Mailchimp?",
+          "answer": "SFMC ist eine Enterprise-Plattform für Millionen von Datensätzen, komplexe SQL-Abfragen und hochentwickelte Multi-Channel-Journeys, während andere Tools eher für den Mittelstand konzipiert sind."
+        },
+        {
+          "question": "Was ist AMPscript?",
+          "answer": "AMPscript ist die proprietäre Skriptsprache in SFMC. Sie ermöglicht es, direkt auf Data Extensions zuzugreifen, um hochdynamische und personalisierte Inhalte in E-Mails zu generieren."
+        },
+        {
+          "question": "Betreuen Sie auch Salesforce Account Engagement (ehemals Pardot)?",
+          "answer": "Ja. Während SFMC für B2C oder hohes B2B-Volumen genutzt wird, fokussiert sich Pardot auf B2B-Lead-Gen. Wir implementieren beide."
+        },
+        {
+          "question": "Können Sie SFMC mit unserem Nicht-Salesforce CRM/ERP integrieren?",
+          "answer": "Absolut. Durch API-Integrationen oder automatisierte FTP-Drops können wir Daten aus externen Systemen in SFMC Data Extensions ziehen."
+        },
+        {
+          "question": "Warum brauche ich SQL für die Salesforce Marketing Cloud?",
+          "answer": "Um massive Zielgruppen in SFMC effektiv zu segmentieren, schreiben wir SQL-Abfragen im Automation Studio, die Daten zwischen Data Extensions filtern und verschieben."
+        },
+        {
+          "question": "Können Sie unser fehlerhaftes, bestehendes SFMC-Setup reparieren?",
+          "answer": "Ja. Wir führen häufig SFMC-Audits durch, um Datenflüsse zu reparieren, langsame SQL-Abfragen zu optimieren und defekte Journeys zu fixen."
+        },
+        {
+          "question": "Unterstützt SFMC auch SMS-Marketing?",
+          "answer": "Ja, über das Mobile Studio. Wir können SMS und Push-Benachrichtigungen direkt in Ihre Journey Builder-Flows neben E-Mails integrieren."
+        },
+        {
+          "question": "Was ist das Advertising Studio?",
+          "answer": "Mit dem Advertising Studio können wir Ihre CRM-Daten in SFMC sicher nutzen, um Zielgruppen für Ads auf Google, Meta und LinkedIn zu synchronisieren."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "salesforce",
+          "name": "Salesforce Marketing Cloud"
+        },
+        {
+          "icon": "salesforce",
+          "name": "Journey Builder / Automation Studio"
+        },
+        {
+          "icon": "code",
+          "name": "AMPscript & SQL"
+        },
+        {
+          "icon": "salesforce",
+          "name": "Sales Cloud / Service Cloud"
+        },
+        {
+          "icon": "api",
+          "name": "Marketing Cloud Connect"
+        },
+        {
+          "icon": "database",
+          "name": "Data Extensions"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "سیلز فورس مارکیٹنگ کلاؤڈ (SFMC)",
+    "shortDescription": "انٹرپرائز لیول مارکیٹنگ آٹومیشن کا استعمال کریں۔ ہم پیچیدہ، ذاتی نوعیت کے اومنی چینل سفر کو انجام دینے کے لیے Salesforce Marketing Cloud کا نفاذ اور انتظام کرتے ہیں۔",
+    "fullDescription": "Salesforce Marketing Cloud (SFMC) مارکیٹ کا سب سے طاقتور مارکیٹنگ آٹومیشن پلیٹ فارم ہے، جو بڑے اداروں کے لیے ڈیزائن کیا گیا ہے جو بڑے پیمانے پر ڈیٹا اور پیچیدہ کسٹمر سفر سے نمٹتے ہیں۔ تاہم، مناسب نفاذ اور تکنیکی مہارت کے بغیر، SFMC ایک مہنگا ٹول بن سکتا ہے۔ ہماری SFMC خدمات پلیٹ فارم کی مکمل صلاحیت کو کھولنے کے لیے بنائی گئی ہیں۔ ہم تکنیکی کام کو سنبھالتے ہیں: SFMC کو آپ کے CRM (Salesforce Sales/Service Cloud) کے ساتھ جوڑنا، ڈیٹا ایکسٹینشن (Data Extensions) کو ترتیب دینا، اور متحرک ای میل پرسنلائزیشن کو فعال کرنے کے لیے حسب ضرورت AMPscript لکھنا۔ ہم ای میل، SMS اور اشتہارات پر انتہائی پیچیدہ کسٹمر کے سفر کا نقشہ بنانے کے لیے جرنی بلڈر (Journey Builder) کا استعمال کرتے ہیں۔",
+    "features": [
+      "SFMC کا نفاذ اور CRM انٹیگریشن",
+      "جرنی بلڈر (Journey Builder) کی حکمت عملی",
+      "ایڈوانسڈ ڈیٹا ایکسٹینشن آرکیٹیکچر اور SQL",
+      "AMPscript کے ذریعے متحرک ای میل ڈیزائن",
+      "موبائل اسٹوڈیو (SMS اور پش نوٹیفیکیشن) کا سیٹ اپ",
+      "ایڈورٹائزنگ اسٹوڈیو انٹیگریشن",
+      "انٹرایکشن اسٹوڈیو (پرسنلائزیشن)",
+      "ڈیلیوریبلٹی آڈٹ اور تعمیل"
+    ],
+    "benefits": [
+      "انٹرپرائز کے پیمانے پر انتہائی ذاتی نوعیت کی، ملٹی چینل مہمات چلائیں",
+      "اپنے مارکیٹنگ کے ڈیٹا کو Salesforce کے ساتھ بغیر کسی رکاوٹ کے ہم آہنگ کریں",
+      "ریئل ٹائم ڈیٹا کی بنیاد پر کسٹمر کے پیچیدہ سفر کو خودکار بنائیں",
+      "متحرک مواد (AMPscript) کے ساتھ ای میل کی مصروفیت کو بڑھائیں",
+      "ھدف بنائے گئے کسٹمر سفر کے ذریعے کسٹمر کی زندگی بھر کی قدر (LTV) کو بہتر بنائیں",
+      "بڑے پیمانے پر ڈیٹا کی سیکیورٹی اور تعمیل کو یقینی بنائیں"
+    ],
+    "metaTitle": "Salesforce Marketing Cloud ایجنسی | SFMC انٹیگریشن | PakSoft",
+    "metaDescription": "انٹرپرائز مارکیٹنگ آٹومیشن کو غیر مقفل کریں۔ ہم ماہر Salesforce مارکیٹنگ کلاؤڈ کا نفاذ، جرنی بلڈر مینجمنٹ، اور AMPscript ڈیولپمنٹ پیش کرتے ہیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "دریافت اور فن تعمیر",
+          "description": "ہم آپ کے ڈیٹا کے منظر نامے اور کاروباری اہداف کا تجزیہ کرتے ہیں تاکہ بہترین SFMC سیٹ اپ اور ڈیٹا ماڈل تیار کیا جا سکے۔"
+        },
+        {
+          "step": 2,
+          "title": "CRM انٹیگریشن اور ڈیٹا میپنگ",
+          "description": "ہم Marketing Cloud Connect کا استعمال کرتے ہوئے SFMC اور آپ کے CRM کے درمیان ایک مضبوط تعلق قائم کرتے ہیں، اور SQL کے ذریعے ڈیٹا کو منتقل کرتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "سفر کا نقشہ بنانا (Journey Mapping)",
+          "description": "جرنی بلڈر کا استعمال کرتے ہوئے، ہم کسٹمر کے رویے کی بنیاد پر پیچیدہ فیصلوں کے ساتھ ملٹی چینل (ای میل، ایس ایم ایس، اشتہارات) راستے بناتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "متحرک مواد اور AMPscripting",
+          "description": "ہمارے ڈیولپرز آپ کی ای میلز میں ریئل ٹائم ڈیٹا کھینچنے کے لیے حسب ضرورت AMPscript لکھتے ہیں، جس سے پیغام 100% ذاتی بن جاتا ہے۔"
+        },
+        {
+          "step": 5,
+          "title": "ٹیسٹنگ اور کوالٹی اشورینس",
+          "description": "ہم لانچ کرنے سے پہلے تمام آلات پر ہر سفر، ڈیٹا کے بہاؤ، اور ای میل کے رینڈرنگ کو سختی سے جانچتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "جاری انتظام اور اصلاح",
+          "description": "ہم کارکردگی کی نگرانی کرتے ہیں، A/B ٹیسٹ چلاتے ہیں، اور ROI کو بہتر بنانے کے لیے ڈیٹا ماڈلز کو مسلسل بہتر بناتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "SFMC کا ہب سپاٹ یا میل چیمپ سے کیا فرق ہے؟",
+          "answer": "SFMC ایک انٹرپرائز پلیٹ فارم ہے۔ جبکہ Mailchimp بنیادی ای میلز کے لیے بہت اچھا ہے، SFMC کو لاکھوں ریکارڈز اور پیچیدہ SQL سوالات کو ہینڈل کرنے کے لیے بنایا گیا ہے۔"
+        },
+        {
+          "question": "AMPscript کیا ہے؟",
+          "answer": "AMPscript ایک سکرپٹنگ زبان ہے جو SFMC میں استعمال ہوتی ہے۔ یہ ہمیں ای میلز میں انتہائی متحرک اور ذاتی نوعیت کا مواد بنانے کی اجازت دیتی ہے۔"
+        },
+        {
+          "question": "کیا آپ Salesforce Account Engagement (Pardot) کو سنبھالتے ہیں؟",
+          "answer": "ہاں۔ اگرچہ SFMC عام طور پر B2C یا اعلی حجم والے B2B کے لیے استعمال ہوتا ہے، Pardot B2B لیڈ جنریشن پر مرکوز ہے۔ ہم دونوں پلیٹ فارمز کو منظم کرتے ہیں۔"
+        },
+        {
+          "question": "کیا آپ SFMC کو ہمارے نان سیلز فورس CRM یا ERP کے ساتھ ضم کر سکتے ہیں؟",
+          "answer": "بالکل۔ حسب ضرورت API انٹیگریشنز اور خودکار FTP کے ذریعے، ہم بیرونی سافٹ ویئر یا ERPs سے SFMC ڈیٹا ایکسٹینشن میں ڈیٹا کھینچ سکتے ہیں۔"
+        },
+        {
+          "question": "مجھے SFMC کے لیے SQL کی ضرورت کیوں ہے؟",
+          "answer": "بڑے سامعین کو مؤثر طریقے سے تقسیم کرنے کے لیے، ہم آٹومیشن اسٹوڈیو میں ڈیٹا کو فلٹر کرنے اور خودکار طور پر منتقل کرنے کے لیے SQL کے سوالات لکھتے ہیں۔"
+        },
+        {
+          "question": "کیا آپ ہمارے موجودہ خراب SFMC سیٹ اپ کو ٹھیک کر سکتے ہیں؟",
+          "answer": "ہاں۔ ہم ٹوٹے ہوئے ڈیٹا کے بہاؤ کو ٹھیک کرنے، سست SQL سوالات کو بہتر بنانے، اور فیل ہونے والے جرنی بلڈر راستوں کی مرمت کے لیے باقاعدگی سے آڈٹ کرتے ہیں۔"
+        },
+        {
+          "question": "کیا SFMC SMS مارکیٹنگ کو سنبھالتا ہے؟",
+          "answer": "ہاں، موبائل اسٹوڈیو کے ذریعے۔ ہم ای میل کے ساتھ ساتھ ایس ایم ایس اور پش نوٹیفیکیشنز کو بھی آپ کے جرنی بلڈر کے بہاؤ میں ضم کر سکتے ہیں۔"
+        },
+        {
+          "question": "ایڈورٹائزنگ اسٹوڈیو کیا ہے؟",
+          "answer": "یہ ہمیں SFMC میں آپ کے CRM ڈیٹا کو محفوظ طریقے سے استعمال کرنے کی اجازت دیتا ہے تاکہ گوگل، فیس بک اور لنکڈ ان پر ہدف شدہ اشتہاری مہمات چلائی جا سکیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "salesforce",
+          "name": "Salesforce Marketing Cloud"
+        },
+        {
+          "icon": "salesforce",
+          "name": "Journey Builder / Automation Studio"
+        },
+        {
+          "icon": "code",
+          "name": "AMPscript & SQL"
+        },
+        {
+          "icon": "salesforce",
+          "name": "Sales Cloud / Service Cloud"
+        },
+        {
+          "icon": "api",
+          "name": "Marketing Cloud Connect"
+        },
+        {
+          "icon": "database",
+          "name": "Data Extensions"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "Salesforce Marketing Cloud (SFMC)",
+    "shortDescription": "سخر أتمتة التسويق على مستوى المؤسسات. نقوم بتنفيذ وإدارة منصة Salesforce Marketing Cloud لتنفيذ رحلات عملاء معقدة ومخصصة عبر قنوات متعددة.",
+    "fullDescription": "Salesforce Marketing Cloud (SFMC) هي أقوى منصة أتمتة تسويق في السوق، ومصممة للشركات الكبيرة التي تتعامل مع أحجام بيانات ضخمة ورحلات عملاء معقدة. ومع ذلك، فإن قدرتها الهائلة تأتي مع منحنى تعليمي حاد. بدون التنفيذ السليم والخبرة الفنية، يمكن أن يصبح SFMC أداة باهظة الثمن وغير مستغلة. تم تصميم خدمات SFMC الخاصة بنا لإطلاق الإمكانات الكاملة للمنصة. نحن نتعامل مع المهام الفنية الشاقة: دمج SFMC مع CRM الخاص بك (Salesforce Sales / Service Cloud)، وهيكلة امتدادات البيانات (Data Extensions)، وكتابة AMPscript مخصص لتمكين تخصيص البريد الإلكتروني الديناميكي. نحن نستخدم 'Journey Builder' لرسم رحلات عملاء شديدة التعقيد عبر البريد الإلكتروني والرسائل القصيرة والإعلانات. سواء كنت بحاجة إلى تنفيذ برنامج متطور لرعاية العملاء المحتملين، أو تسلسل تأهيل عالمي، أو إعادة تفاعل ديناميكي للتجارة الإلكترونية، فإننا نقدم البنية التقنية والإدارة الاستراتيجية لتحقيق ذلك.",
+    "features": [
+      "تنفيذ SFMC والتكامل مع أنظمة CRM",
+      "استراتيجية وتنفيذ رحلات العملاء (Journey Builder)",
+      "هندسة متقدمة لامتدادات البيانات (Data Extensions) و SQL",
+      "تصميم بريد إلكتروني ديناميكي عبر لغة AMPscript",
+      "إعداد استوديو الهاتف المحمول (الرسائل القصيرة والإشعارات)",
+      "تكامل Advertising Studio",
+      "تخصيص في الوقت الفعلي (Interaction Studio)",
+      "تدقيق إمكانية التسليم (Deliverability) والامتثال"
+    ],
+    "benefits": [
+      "تنفيذ حملات مخصصة للغاية عبر قنوات متعددة على مستوى المؤسسة",
+      "مواءمة بيانات التسويق الخاصة بك بسلاسة مع مبيعات وخدمات Salesforce",
+      "أتمتة رحلات العملاء المعقدة بناءً على محفزات البيانات في الوقت الفعلي",
+      "زيادة تفاعل البريد الإلكتروني من خلال المحتوى الديناميكي (AMPscript)",
+      "تقليل معدل توقف العملاء وتحسين القيمة الدائمة من خلال حملات الاحتفاظ المستهدفة",
+      "ضمان أمن البيانات والامتثال (GDPR/CCPA) على نطاق واسع"
+    ],
+    "metaTitle": "وكالة Salesforce Marketing Cloud | تنفيذ SFMC | PakSoft",
+    "metaDescription": "أطلق العنان لأتمتة التسويق المؤسسي. نقدم خدمات التنفيذ الخبيرة لـ Salesforce Marketing Cloud وإدارة Journey Builder وتطوير AMPscript.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "الاكتشاف وهندسة البنية (Blueprinting)",
+          "description": "نحلل مشهد البيانات ونقاط اتصال العملاء وأهداف العمل لتصميم أفضل إعداد لـ SFMC ونموذج البيانات."
+        },
+        {
+          "step": 2,
+          "title": "تكامل CRM وتعيين البيانات",
+          "description": "ننشئ اتصالاً قوياً بين SFMC و CRM الأساسي باستخدام Marketing Cloud Connect، ونعين حقول البيانات بدقة عبر SQL."
+        },
+        {
+          "step": 3,
+          "title": "تخطيط وبناء رحلة العميل (Journey Mapping)",
+          "description": "باستخدام Journey Builder، نبني مسارات آلية متعددة القنوات مع تقسيمات قرارات معقدة بناءً على السلوك وتغييرات البيانات."
+        },
+        {
+          "step": 4,
+          "title": "المحتوى الديناميكي و AMPscripting",
+          "description": "يكتب مطورونا لغة AMPscript مخصصة لسحب بيانات الوقت الفعلي في رسائل البريد الإلكتروني، مما يضمن عرض رسائل وتوصيات مخصصة بنسبة 100٪."
+        },
+        {
+          "step": 5,
+          "title": "الاختبار وضمان الجودة (QA)",
+          "description": "نختبر بصرامة كل عقدة في الرحلة وتدفق البيانات وعرض البريد الإلكتروني عبر الأجهزة قبل الإطلاق لضمان التنفيذ الخالي من العيوب."
+        },
+        {
+          "step": 6,
+          "title": "الإدارة المستمرة والتحسين",
+          "description": "نراقب أداء الرحلة، ونجري اختبارات A/B، وندير إمكانية تسليم الرسائل، ونعمل على تحسين نماذج البيانات بشكل مستمر لزيادة العائد."
+        }
+      ],
+      "faq": [
+        {
+          "question": "كيف يختلف SFMC عن HubSpot أو Mailchimp؟",
+          "answer": "SFMC هي منصة مؤسسية. في حين أن Mailchimp رائع للنشرات الإخبارية، فقد تم بناء SFMC للتعامل مع ملايين السجلات واستعلامات SQL المعقدة ورحلات مؤتمتة متعددة القنوات شديدة التطور."
+        },
+        {
+          "question": "ما هو AMPscript؟",
+          "answer": "AMPscript هي لغة برمجة نصية خاصة تُستخدم داخل SFMC. تسمح لنا بالتفاعل مباشرة مع بياناتك لإنشاء محتوى ديناميكي وشخصي للغاية داخل رسائل البريد الإلكتروني وصفحات الهبوط."
+        },
+        {
+          "question": "هل تتعاملون مع Salesforce Account Engagement (Pardot سابقاً)؟",
+          "answer": "نعم. بينما يُستخدم SFMC عادةً للشركات (B2C) أو للـ (B2B) ذات الحجم الكبير، فإن Pardot يركز على توليد العملاء المحتملين في B2B. نحن ننفذ وندير كلا المنصتين."
+        },
+        {
+          "question": "هل يمكنك دمج SFMC مع نظام CRM أو ERP غير تابع لـ Salesforce؟",
+          "answer": "بالتأكيد. من خلال تكاملات API المخصصة و FTP المؤتمت، يمكننا سحب البيانات من البرامج الخارجية أو تخطيط موارد المؤسسات (ERP) إلى SFMC."
+        },
+        {
+          "question": "لماذا أحتاج إلى SQL في Salesforce Marketing Cloud؟",
+          "answer": "لتقسيم الجماهير الضخمة بفعالية، نكتب استعلامات SQL في استوديو الأتمتة لتصفية البيانات ونقلها بين امتدادات البيانات (Data Extensions) تلقائياً."
+        },
+        {
+          "question": "هل يمكنك إصلاح إعداد SFMC الحالي المعطل لدينا؟",
+          "answer": "نعم. نجري بشكل متكرر عمليات تدقيق SFMC لإصلاح تدفقات البيانات المعطلة، وتحسين استعلامات SQL البطيئة، وإصلاح مسارات Journey Builder الفاشلة."
+        },
+        {
+          "question": "هل يدعم SFMC التسويق عبر الرسائل القصيرة (SMS)؟",
+          "answer": "نعم، من خلال Mobile Studio. يمكننا دمج الرسائل القصيرة وإشعارات الدفع (Push) مباشرة في مسارات Journey Builder الخاصة بك جنباً إلى جنب مع البريد."
+        },
+        {
+          "question": "ما هو Advertising Studio؟",
+          "answer": "يسمح لنا باستخدام بيانات CRM الخاصة بك في SFMC بشكل آمن لتشغيل حملات إعلانية مستهدفة على جوجل وفيسبوك ولينكد إن، مما يحافظ على اتساق القنوات المتعددة."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "salesforce",
+          "name": "Salesforce Marketing Cloud"
+        },
+        {
+          "icon": "salesforce",
+          "name": "Journey Builder / Automation Studio"
+        },
+        {
+          "icon": "code",
+          "name": "AMPscript & SQL"
+        },
+        {
+          "icon": "salesforce",
+          "name": "Sales Cloud / Service Cloud"
+        },
+        {
+          "icon": "api",
+          "name": "Marketing Cloud Connect"
+        },
+        {
+          "icon": "database",
+          "name": "Data Extensions"
+        }
+      ]
+    }
+  }
+}

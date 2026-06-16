@@ -1,0 +1,548 @@
+{
+  "slug": "whatsapp-commerce",
+  "en": {
+    "name": "WhatsApp Commerce Integration",
+    "shortDescription": "Turn chat into checkout. We build end-to-end ecommerce experiences inside WhatsApp, allowing customers to browse catalogs, build carts, and pay securely without leaving the app.",
+    "fullDescription": "Conversational commerce is the future of retail. Forcing mobile users to switch from their messaging app to a mobile browser often results in dropped carts and lost sales. WhatsApp Commerce changes the paradigm. Our WhatsApp Commerce Integration service allows your customers to complete the entire shopping journey directly within their WhatsApp chat window. We connect your backend inventory (Shopify, WooCommerce, Custom ERP) with the WhatsApp Business API. We structure dynamic Product Catalogs that users can browse via interactive 'List Messages'. Users can add multiple items to a native WhatsApp Shopping Cart, view total prices, and, where supported, check out and pay securely using integrations like Stripe or local payment gateways—all without ever opening a web browser. This frictionless, chat-based shopping experience dramatically boosts conversion rates and builds immense brand loyalty.",
+    "features": [
+      "E-commerce Backend Sync (Shopify, WooCommerce)",
+      "Dynamic WhatsApp Product Catalog Setup",
+      "Native WhatsApp Shopping Cart Integration",
+      "Interactive Product List Messages",
+      "In-Chat Secure Payment Gateway Integration",
+      "Automated Order Confirmation & Tracking Updates",
+      "Conversational Product Recommendation Engine",
+      "Abandoned WhatsApp Cart Recovery Flows"
+    ],
+    "benefits": [
+      "Eliminate friction by keeping the entire shopping experience within one app",
+      "Capitalize on impulse buying with instant, conversational checkouts",
+      "Never oversell, as catalogs are synced in real-time with your website inventory",
+      "Increase Average Order Value (AOV) through automated, in-chat upsells",
+      "Offer personalized, conversational shopping assistance at scale via chatbots",
+      "Recover drastically more abandoned carts using WhatsApp's 98% open rate"
+    ],
+    "metaTitle": "WhatsApp Commerce Agency | In-Chat Shopping | PakSoft",
+    "metaDescription": "Sell directly inside WhatsApp. We integrate your ecommerce catalog with WhatsApp Business API, enabling native shopping carts and secure in-chat payments.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Backend Integration & Sync",
+          "description": "We establish a robust API connection between your ecommerce platform (e.g., Shopify) and Meta's Commerce Manager, ensuring inventory and pricing are synced in real-time."
+        },
+        {
+          "step": 2,
+          "title": "Catalog Structuring",
+          "description": "We organize your products into logical categories and collections within WhatsApp, making it easy for users to navigate large inventories via chat."
+        },
+        {
+          "step": 3,
+          "title": "Chat Flow Design",
+          "description": "We design the conversational flow. When a user messages 'Shop', a chatbot responds with an interactive menu, allowing them to browse categories and view product details."
+        },
+        {
+          "step": 4,
+          "title": "Shopping Cart Enablement",
+          "description": "We activate the native WhatsApp cart feature. Users can click 'Add to Cart' directly from the product message, adjust quantities, and send the final cart to the business."
+        },
+        {
+          "step": 5,
+          "title": "Payment Integration",
+          "description": "We integrate secure payment links. When the user sends their cart, they instantly receive a secure, one-click checkout link (via Stripe, PayPal, or local gateways) to finalize the purchase."
+        },
+        {
+          "step": 6,
+          "title": "Post-Purchase Automation",
+          "description": "Once payment is verified, the system automatically sends an order confirmation receipt and subsequent shipping updates directly within the same WhatsApp thread."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Do customers have to leave WhatsApp to pay?",
+          "answer": "In some regions (like India and Brazil), true native payment within the app is available. For most other countries, we generate a secure payment link (e.g., Stripe) that opens a seamless webview overlay, keeping the user essentially within the WhatsApp environment."
+        },
+        {
+          "question": "Can I show my entire inventory on WhatsApp?",
+          "answer": "Yes, but we don't recommend overwhelming the user. We sync your entire catalog, but we use chatbots and 'List Messages' to guide the user to specific categories or top-selling items to keep the chat interface clean."
+        },
+        {
+          "question": "How does inventory stay updated?",
+          "answer": "Through API webhooks. If a product goes out of stock on your Shopify store, the webhook instantly updates the Meta Commerce Manager, and the product is hidden or marked as 'out of stock' on WhatsApp."
+        },
+        {
+          "question": "What if a customer has a question about a product while shopping?",
+          "answer": "That is the beauty of conversational commerce! They can simply type their question in the chat. The chatbot can answer basic FAQs, or the chat can be routed to a human agent to provide personalized sales assistance."
+        },
+        {
+          "question": "Can we recover abandoned carts?",
+          "answer": "Yes, highly effectively. If a user adds items to their WhatsApp cart but doesn't complete the payment, we set up an automation to send a gentle reminder message 2 hours later, often including a small discount code to close the sale."
+        },
+        {
+          "question": "Do I need a website to use WhatsApp Commerce?",
+          "answer": "Technically no; you can manually upload products to the Meta Commerce Manager. However, for a scalable business, we highly recommend integrating WhatsApp Commerce alongside an existing ecommerce backend (like Shopify) to manage orders centrally."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "message-circle",
+          "name": "WhatsApp Cloud API"
+        },
+        {
+          "icon": "meta",
+          "name": "Meta Commerce Manager"
+        },
+        {
+          "icon": "shopify",
+          "name": "Shopify / WooCommerce Sync"
+        },
+        {
+          "icon": "credit-card",
+          "name": "Stripe / Payment Gateways"
+        },
+        {
+          "icon": "shopping-cart",
+          "name": "Native WhatsApp Cart"
+        },
+        {
+          "icon": "code",
+          "name": "Chatbot Logic (Node.js)"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "WhatsApp Ticaret (Commerce) Entegrasyonu",
+    "shortDescription": "Sohbeti (chat) ödeme işlemine dönüştürün. Müşterilerin uygulamadan çıkmadan kataloglara göz atmasına, sepet oluşturmasına ve güvenli bir şekilde ödeme yapmasına olanak tanıyan WhatsApp içinde uçtan uca e-ticaret deneyimleri oluşturuyoruz.",
+    "fullDescription": "Diyaloğa dayalı ticaret (Conversational commerce) perakendenin geleceğidir. Mobil kullanıcıları mesajlaşma uygulamalarından mobil tarayıcıya geçmeye zorlamak, genellikle sepetin terk edilmesiyle (cart abandonment) ve satış kaybıyla sonuçlanır. WhatsApp Commerce (Ticaret) bu paradigmayı değiştiriyor. WhatsApp Ticaret Entegrasyonu hizmetimiz, müşterilerinizin tüm alışveriş yolculuğunu doğrudan WhatsApp sohbet pencerelerinde tamamlamalarına olanak tanır. Arka uç envanterinizi (Shopify, WooCommerce, Özel ERP) WhatsApp Business API ile bağlıyoruz. Kullanıcıların etkileşimli 'Liste Mesajları' (List Messages) aracılığıyla gezinebileceği dinamik Ürün Katalogları yapılandırıyoruz. Kullanıcılar yerel bir WhatsApp Alışveriş Sepetine birden fazla ürün ekleyebilir, toplam fiyatları görüntüleyebilir ve (desteklenen yerlerde) bir web tarayıcısı açmadan Stripe veya yerel ödeme ağ geçitleri (payment gateways) gibi entegrasyonları kullanarak güvenli bir şekilde ödeme yapabilirler. Bu sürtünmesiz, sohbete dayalı alışveriş deneyimi dönüşüm oranlarını önemli ölçüde artırır ve muazzam bir marka sadakati oluşturur.",
+    "features": [
+      "E-ticaret Arka Uç (Backend) Senkronizasyonu (Shopify, WooCommerce)",
+      "Dinamik WhatsApp Ürün Kataloğu Kurulumu",
+      "Yerel WhatsApp Alışveriş Sepeti (Shopping Cart) Entegrasyonu",
+      "Etkileşimli Ürün Listesi Mesajları",
+      "Sohbet İçi (In-Chat) Güvenli Ödeme Ağ Geçidi Entegrasyonu",
+      "Otomatik Sipariş Onayı ve Kargo Takip Güncellemeleri",
+      "Diyaloğa Dayalı Ürün Önerme (Recommendation) Motoru",
+      "Terk Edilmiş WhatsApp Sepetini (Cart) Kurtarma Akışları"
+    ],
+    "benefits": [
+      "Tüm alışveriş deneyimini tek bir uygulama içinde tutarak sürtünmeyi (friction) ortadan kaldırın",
+      "Anlık, diyaloğa dayalı (conversational) ödemelerle dürtüsel (impulse) satın almadan yararlanın",
+      "Kataloglar web sitesi envanterinizle gerçek zamanlı olarak senkronize edildiğinden asla stoksuz satış yapmayın",
+      "Otomatik, sohbet içi ek satışlar (upsell) yoluyla Ortalama Sipariş Değerini (AOV) artırın",
+      "Sohbet robotları (chatbots) aracılığıyla büyük ölçekte kişiselleştirilmiş, konuşmaya dayalı alışveriş yardımı sunun",
+      "WhatsApp'ın %98'lik açılma oranını kullanarak terk edilmiş sepetleri çok daha yüksek oranda kurtarın"
+    ],
+    "metaTitle": "WhatsApp Ticaret Ajansı | Sohbet İçi Alışveriş | PakSoft",
+    "metaDescription": "Doğrudan WhatsApp üzerinden satış yapın. E-ticaret kataloğunuzu WhatsApp Business API ile entegre ederek yerel sepetler ve güvenli sohbet içi ödemeler sağlıyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Arka Uç (Backend) Entegrasyonu ve Senkronizasyon",
+          "description": "E-ticaret platformunuz (ör. Shopify) ile Meta'nın Commerce Manager'ı arasında sağlam bir API bağlantısı kurarak envanterin ve fiyatlandırmanın gerçek zamanlı olarak senkronize edilmesini sağlıyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Katalog Yapılandırması",
+          "description": "Ürünlerinizi WhatsApp içinde mantıksal kategoriler halinde düzenliyor, kullanıcıların sohbet aracılığıyla büyük envanterlerde gezinmesini kolaylaştırıyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Sohbet Akışı Tasarımı",
+          "description": "Diyaloğa dayalı akışı (conversational flow) tasarlıyoruz. Bir kullanıcı 'Alışveriş' yazdığında, bir chatbot etkileşimli bir menüyle yanıt vererek kategorilere göz atmasına olanak tanır."
+        },
+        {
+          "step": 4,
+          "title": "Alışveriş Sepetinin (Shopping Cart) Etkinleştirilmesi",
+          "description": "Yerel WhatsApp sepeti özelliğini etkinleştiriyoruz. Kullanıcılar doğrudan ürün mesajından 'Sepete Ekle'yi tıklayabilir, miktarları ayarlayabilir ve nihai sepeti işletmeye gönderebilir."
+        },
+        {
+          "step": 5,
+          "title": "Ödeme Entegrasyonu",
+          "description": "Güvenli ödeme bağlantılarını entegre ediyoruz. Kullanıcı sepetini gönderdiğinde, satın alma işlemini tamamlamak için anında güvenli, tek tıklamalı bir ödeme bağlantısı (Stripe vb.) alır."
+        },
+        {
+          "step": 6,
+          "title": "Satın Alma Sonrası Otomasyon",
+          "description": "Ödeme doğrulandıktan sonra sistem, doğrudan aynı WhatsApp sohbet dizisi (thread) içinde otomatik olarak bir sipariş onay fişi ve kargo güncellemeleri gönderir."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Müşterilerin ödeme yapmak için WhatsApp'tan ayrılması gerekiyor mu?",
+          "answer": "Bazı bölgelerde (Hindistan ve Brezilya gibi) uygulama içinde gerçek yerel ödeme (native payment) mevcuttur. Diğer çoğu ülke için, kullanıcıyı esasen WhatsApp ortamında tutan sorunsuz bir web görünümü (webview) yerleşimi açan güvenli bir ödeme bağlantısı (ör. Stripe, iyzico) oluşturuyoruz."
+        },
+        {
+          "question": "Tüm envanterimi WhatsApp'ta gösterebilir miyim?",
+          "answer": "Evet, ancak kullanıcıyı bunaltmamanızı öneririz. Tüm kataloğunuzu senkronize ediyoruz, ancak sohbet arayüzünü temiz tutmak için kullanıcıyı belirli kategorilere veya en çok satan ürünlere yönlendirmek üzere chatbot'ları ve 'Liste Mesajlarını' kullanıyoruz."
+        },
+        {
+          "question": "Envanter nasıl güncel kalıyor?",
+          "answer": "API webhook'ları aracılığıyla. Bir ürün Shopify mağazanızda tükenirse, webhook anında Meta Commerce Manager'ı günceller ve ürün WhatsApp'ta gizlenir veya 'stokta yok' olarak işaretlenir."
+        },
+        {
+          "question": "Müşterinin alışveriş yaparken bir ürün hakkında sorusu olursa ne olur?",
+          "answer": "Diyaloğa dayalı ticaretin (conversational commerce) güzelliği de budur! Sorusunu sohbete (chat) yazması yeterlidir. Chatbot temel SSS'leri (SSS) yanıtlayabilir veya sohbet, kişiselleştirilmiş satış yardımı sağlamak için gerçek bir insan temsilciye yönlendirilebilir."
+        },
+        {
+          "question": "Terk edilmiş sepetleri kurtarabilir miyiz?",
+          "answer": "Evet, hem de oldukça etkili bir şekilde. Bir kullanıcı WhatsApp sepetine ürün ekler ancak ödemeyi tamamlamazsa, 2 saat sonra nazik bir hatırlatma mesajı (genellikle satışı kapatmak için küçük bir indirim kodu dahil) göndermek üzere bir otomasyon kuruyoruz."
+        },
+        {
+          "question": "WhatsApp Commerce'i kullanmak için bir web sitesine ihtiyacım var mı?",
+          "answer": "Teknik olarak hayır; ürünleri Meta Commerce Manager'a manuel olarak yükleyebilirsiniz. Ancak ölçeklenebilir bir iş için, siparişleri merkezi olarak yönetmek üzere WhatsApp Commerce'i mevcut bir e-ticaret arka ucuyla (Shopify gibi) entegre etmenizi şiddetle öneririz."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "message-circle",
+          "name": "WhatsApp Cloud API"
+        },
+        {
+          "icon": "meta",
+          "name": "Meta Commerce Manager"
+        },
+        {
+          "icon": "shopify",
+          "name": "Shopify / WooCommerce Senkronizasyonu"
+        },
+        {
+          "icon": "credit-card",
+          "name": "Ödeme Ağ Geçitleri (Stripe vb.)"
+        },
+        {
+          "icon": "shopping-cart",
+          "name": "Yerel WhatsApp Sepeti"
+        },
+        {
+          "icon": "code",
+          "name": "Chatbot Mantığı (Node.js)"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "WhatsApp Commerce Integration",
+    "shortDescription": "Verwandeln Sie den Chat in einen Checkout. Wir bauen End-to-End-Shopping-Erlebnisse in WhatsApp – Kataloge durchsuchen, Warenkorb füllen und sicher bezahlen, ohne die App zu verlassen.",
+    "fullDescription": "Conversational Commerce ist die Zukunft des Handels. Nutzer aus ihrer Messaging-App in einen mobilen Browser zu zwingen, führt oft zu Kaufabbrüchen. Unsere WhatsApp Commerce Integration ändert das Paradigma: Ihre Kunden können die gesamte Shopping-Journey direkt in ihrem WhatsApp-Chat abschließen. Wir verbinden Ihr E-Commerce-Backend (Shopify, WooCommerce) über die WhatsApp Business API. Wir strukturieren dynamische Produktkataloge, die Nutzer via interaktiver 'List Messages' durchstöbern können. Kunden können Artikel in den nativen WhatsApp-Warenkorb legen und (je nach Region) sicher per Klick über Integrationen wie Stripe bezahlen – ohne jemals den Browser öffnen zu müssen. Dieses reibungslose Erlebnis steigert Conversions dramatisch und schafft immense Markenbindung.",
+    "features": [
+      "E-Commerce Backend-Sync (Shopify, WooCommerce)",
+      "Dynamisches WhatsApp-Produktkatalog-Setup",
+      "Native WhatsApp-Warenkorb-Integration",
+      "Interaktive Produktlisten-Nachrichten (List Messages)",
+      "In-Chat Integration von sicheren Payment Gateways",
+      "Automatisierte Bestellbestätigungen & Tracking",
+      "Conversational Product Recommendation (via Bot)",
+      "Recovery-Flows für abgebrochene WhatsApp-Warenkörbe"
+    ],
+    "benefits": [
+      "Eliminieren Sie Kaufabbrüche, indem das Shopping in einer einzigen App bleibt",
+      "Profitieren Sie von Spontankäufen durch den direkten, chatbasierten Checkout",
+      "Vermeiden Sie Überverkäufe durch Echtzeit-Inventarsynchronisierung",
+      "Steigern Sie den durchschnittlichen Bestellwert (AOV) durch In-Chat Upsells",
+      "Bieten Sie skalierbare, personalisierte Einkaufsberatung via Chatbot",
+      "Retten Sie abgebrochene Warenkörbe dank der 98 % Öffnungsrate von WhatsApp"
+    ],
+    "metaTitle": "WhatsApp Commerce Agentur | In-Chat Shopping | PakSoft",
+    "metaDescription": "Verkaufen Sie direkt in WhatsApp. Wir integrieren Ihren E-Commerce-Katalog in die WhatsApp API für native Warenkörbe und In-Chat-Zahlungen.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Backend-Integration & Sync",
+          "description": "Wir stellen eine API-Verbindung zwischen Ihrem Shop (z.B. Shopify) und dem Meta Commerce Manager her, um Inventar und Preise in Echtzeit zu synchronisieren."
+        },
+        {
+          "step": 2,
+          "title": "Katalog-Strukturierung",
+          "description": "Wir organisieren Ihre Produkte in sinnvolle Kategorien innerhalb von WhatsApp, um das Durchstöbern großer Sortimente im Chat zu erleichtern."
+        },
+        {
+          "step": 3,
+          "title": "Chat-Flow Design",
+          "description": "Wir designen den Chat-Ablauf. Wenn ein Nutzer 'Shop' schreibt, antwortet ein Bot mit einem interaktiven Menü zum Stöbern in Kategorien und Produkten."
+        },
+        {
+          "step": 4,
+          "title": "Aktivierung des Warenkorbs",
+          "description": "Wir aktivieren die native WhatsApp-Cart. Nutzer können 'In den Warenkorb' klicken, Mengen anpassen und den Korb final an Ihr Unternehmen senden."
+        },
+        {
+          "step": 5,
+          "title": "Payment Integration",
+          "description": "Wir integrieren Payment-Links. Sendet der Nutzer seinen Warenkorb, erhält er sofort einen sicheren 1-Klick-Checkout-Link (via Stripe, PayPal etc.)."
+        },
+        {
+          "step": 6,
+          "title": "Post-Purchase Automation",
+          "description": "Nach erfolgreicher Zahlung sendet das System automatisch die Bestellbestätigung und später Versandupdates im selben WhatsApp-Chat."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Müssen Kunden WhatsApp verlassen, um zu bezahlen?",
+          "answer": "In einigen Regionen (z.B. Indien) gibt es echten nativen In-App-Payment. In den meisten Ländern generieren wir einen sicheren Payment-Link (z.B. Stripe), der sich nahtlos als Overlay (Webview) öffnet. Der Nutzer bleibt gefühlt in WhatsApp."
+        },
+        {
+          "question": "Kann ich mein gesamtes Inventar auf WhatsApp zeigen?",
+          "answer": "Ja, der gesamte Katalog wird synchronisiert. Um den Nutzer im Chat nicht zu überfordern, nutzen wir jedoch Bots und Menüs, um gezielt Top-Seller oder bestimmte Kategorien zu präsentieren."
+        },
+        {
+          "question": "Wie bleibt der Lagerbestand aktuell?",
+          "answer": "Über API-Webhooks. Ist ein Produkt in Ihrem Shopify-Store ausverkauft, updatet der Webhook den Meta Commerce Manager sofort. Das Produkt wird in WhatsApp ausgeblendet oder als 'ausverkauft' markiert."
+        },
+        {
+          "question": "Was ist, wenn der Kunde beim Shoppen eine Frage hat?",
+          "answer": "Das ist der Vorteil des Conversational Commerce! Er kann seine Frage einfach im Chat stellen. Der Bot beantwortet FAQs, oder ein menschlicher Agent übernimmt die persönliche Verkaufsberatung."
+        },
+        {
+          "question": "Können wir abgebrochene Warenkörbe zurückholen?",
+          "answer": "Ja, und zwar extrem effektiv. Legt ein Nutzer etwas in den WhatsApp-Warenkorb und bezahlt nicht, sendet unsere Automation nach z.B. 2 Stunden einen freundlichen Reminder (oft inkl. Rabattcode)."
+        },
+        {
+          "question": "Brauche ich eine Website, um WhatsApp Commerce zu nutzen?",
+          "answer": "Technisch nein, Sie können Produkte manuell in den Meta Commerce Manager hochladen. Für skalierbare Geschäfte empfehlen wir jedoch dringend die Anbindung an ein bestehendes Shop-System."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "message-circle",
+          "name": "WhatsApp Cloud API"
+        },
+        {
+          "icon": "meta",
+          "name": "Meta Commerce Manager"
+        },
+        {
+          "icon": "shopify",
+          "name": "Shopify / WooCommerce Sync"
+        },
+        {
+          "icon": "credit-card",
+          "name": "Stripe / Payment Gateways"
+        },
+        {
+          "icon": "shopping-cart",
+          "name": "Native WhatsApp Cart"
+        },
+        {
+          "icon": "code",
+          "name": "Chatbot Logic (Node.js)"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "واٹس ایپ کامرس انٹیگریشن",
+    "shortDescription": "چیٹ کو چیک آؤٹ میں بدلیں۔ ہم واٹس ایپ کے اندر ای کامرس کا مکمل تجربہ بناتے ہیں، جس سے صارفین کیٹلاگ براؤز کر سکتے ہیں اور ایپ چھوڑے بغیر خریداری کر سکتے ہیں۔",
+    "fullDescription": "گفتگو پر مبنی تجارت (Conversational commerce) ریٹیل کا مستقبل ہے۔ صارفین کو میسجنگ ایپ سے براؤزر پر بھیجنے سے اکثر فروخت کا نقصان ہوتا ہے۔ واٹس ایپ کامرس اس مشکل کو دور کرتا ہے۔ ہماری سروس کے ذریعے آپ کے گاہک واٹس ایپ چیٹ کے اندر ہی خریداری کا پورا عمل مکمل کر سکتے ہیں۔ ہم آپ کے ای کامرس اسٹور (Shopify, WooCommerce) کو WhatsApp Business API کے ساتھ مربوط کرتے ہیں۔ ہم متحرک پروڈکٹ کیٹلاگ ترتیب دیتے ہیں تاکہ صارفین چیٹ کے ذریعے پروڈکٹس دیکھ سکیں، انہیں کارٹ میں شامل کر سکیں اور محفوظ طریقے سے ادائیگی کر سکیں — یہ سب براؤزر کھولے بغیر ہوتا ہے۔",
+    "features": [
+      "ای کامرس بیک اینڈ کے ساتھ مطابقت پذیری (Shopify, WooCommerce)",
+      "ڈائنامک واٹس ایپ پروڈکٹ کیٹلاگ کا سیٹ اپ",
+      "مقامی (Native) واٹس ایپ شاپنگ کارٹ کا انضمام",
+      "انٹرایکٹو پروڈکٹ لسٹ میسجز",
+      "چیٹ کے اندر محفوظ ادائیگی کا انضمام",
+      "خودکار آرڈر کی تصدیق اور ٹریکنگ",
+      "چھوڑی ہوئی کارٹ (Abandoned Cart) کو بازیافت کرنے کے فلو"
+    ],
+    "benefits": [
+      "خریداری کے پورے تجربے کو ایک ایپ میں رکھ کر صارف کی پریشانی کو ختم کریں",
+      "فوری، بات چیت پر مبنی چیک آؤٹ کے ساتھ فروخت میں اضافہ کریں",
+      "انوینٹری کی ریئل ٹائم مطابقت پذیری کی بدولت اوور سیلنگ (Overselling) سے بچیں",
+      "چیٹ کے اندر پروڈکٹس کی سفارش کر کے اوسط آرڈر ویلیو (AOV) بڑھائیں",
+      "واٹس ایپ کی 98% اوپن ریٹ کا استعمال کرتے ہوئے چھوڑی گئی کارٹس کو بازیافت کریں"
+    ],
+    "metaTitle": "واٹس ایپ کامرس ایجنسی | ان-چیٹ شاپنگ | PakSoft",
+    "metaDescription": "واٹس ایپ کے اندر براہ راست فروخت کریں۔ ہم آپ کے ای کامرس کیٹلاگ کو WhatsApp Business API کے ساتھ مربوط کرتے ہیں تاکہ مقامی شاپنگ کارٹس فعال ہو سکیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "بیک اینڈ انٹیگریشن",
+          "description": "ہم آپ کے ای کامرس پلیٹ فارم اور Meta Commerce Manager کے درمیان API کنکشن قائم کرتے ہیں، تاکہ انوینٹری اور قیمتیں ریئل ٹائم میں سنک ہوں۔"
+        },
+        {
+          "step": 2,
+          "title": "کیٹلاگ کی ترتیب",
+          "description": "ہم آپ کے پروڈکٹس کو واٹس ایپ کے اندر کیٹگریز میں ترتیب دیتے ہیں، تاکہ صارفین آسانی سے براؤز کر سکیں۔"
+        },
+        {
+          "step": 3,
+          "title": "چیٹ فلو ڈیزائن",
+          "description": "جب کوئی صارف 'شاپ' کا پیغام بھیجتا ہے، تو ایک چیٹ بوٹ انٹرایکٹو مینو کے ساتھ جواب دیتا ہے، جس سے وہ پروڈکٹس دیکھ سکتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "شاپنگ کارٹ فعال کرنا",
+          "description": "ہم مقامی واٹس ایپ کارٹ کو فعال کرتے ہیں۔ صارفین پروڈکٹ کو 'کارٹ میں شامل کریں' کر سکتے ہیں اور حتمی کارٹ آپ کو بھیج سکتے ہیں۔"
+        },
+        {
+          "step": 5,
+          "title": "پیمنٹ انٹیگریشن",
+          "description": "جب صارف کارٹ بھیجتا ہے، تو اسے خریداری مکمل کرنے کے لیے فوری طور پر ایک محفوظ ادائیگی کا لنک (جیسے Stripe) ملتا ہے۔"
+        },
+        {
+          "step": 6,
+          "title": "خریداری کے بعد آٹومیشن",
+          "description": "ادائیگی کی تصدیق کے بعد، سسٹم اسی واٹس ایپ چیٹ میں آرڈر کی رسید اور شپنگ کی تفصیلات خودکار طور پر بھیجتا ہے۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "کیا گاہکوں کو ادائیگی کرنے کے لیے واٹس ایپ چھوڑنا پڑتا ہے؟",
+          "answer": "کچھ ممالک (جیسے ہندوستان) میں درون ایپ ادائیگی دستیاب ہے۔ دیگر کے لیے ہم ایک محفوظ پیمنٹ لنک فراہم کرتے ہیں جو ایپ کے اندر ہی کھلتا ہے، یوں صارف واٹس ایپ کا ماحول نہیں چھوڑتا۔"
+        },
+        {
+          "question": "کیا میں واٹس ایپ پر اپنا پورا انوینٹری دکھا سکتا ہوں؟",
+          "answer": "ہاں، لیکن ہم چیٹ بوٹس اور مینو کا استعمال کرتے ہیں تاکہ صارفین صرف مخصوص زمرے یا ٹاپ سیلنگ آئٹمز دیکھ کر الجھن کا شکار نہ ہوں۔"
+        },
+        {
+          "question": "انوینٹری کیسے اپ ڈیٹ رہتی ہے؟",
+          "answer": "API ویب ہکس کے ذریعے۔ اگر کوئی چیز آپ کے Shopify اسٹور پر آؤٹ آف اسٹاک ہو جاتی ہے، تو وہ واٹس ایپ پر بھی فوری طور پر غائب ہو جائے گی۔"
+        },
+        {
+          "question": "اگر خریداری کے دوران گاہک کا کوئی سوال ہو تو کیا ہوگا؟",
+          "answer": "یہ واٹس ایپ کامرس کا سب سے بڑا فائدہ ہے! وہ چیٹ میں اپنا سوال پوچھ سکتے ہیں، اور چیٹ بوٹ یا کوئی انسانی نمائندہ فوری طور پر ان کی مدد کر سکتا ہے۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "message-circle",
+          "name": "WhatsApp Cloud API"
+        },
+        {
+          "icon": "meta",
+          "name": "Meta Commerce Manager"
+        },
+        {
+          "icon": "shopify",
+          "name": "Shopify / WooCommerce Sync"
+        },
+        {
+          "icon": "credit-card",
+          "name": "Stripe / Payment Gateways"
+        },
+        {
+          "icon": "shopping-cart",
+          "name": "Native WhatsApp Cart"
+        },
+        {
+          "icon": "code",
+          "name": "Chatbot Logic (Node.js)"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "تكامل التجارة عبر الواتساب (WhatsApp Commerce)",
+    "shortDescription": "حول الدردشة إلى صفحة دفع. نحن نبني تجارب تجارة إلكترونية شاملة داخل WhatsApp، مما يسمح للعملاء بتصفح الكتالوجات، وبناء سلة تسوق، والدفع بأمان دون مغادرة التطبيق.",
+    "fullDescription": "التجارة القائمة على المحادثة هي مستقبل البيع بالتجزئة. غالباً ما يؤدي إجبار مستخدمي الأجهزة المحمولة على التبديل من تطبيق المراسلة الخاص بهم إلى متصفح الجوال إلى التخلي عن سلة التسوق وفقدان المبيعات. يغير WhatsApp Commerce هذه المعادلة. تتيح خدمة (تكامل التجارة عبر الواتساب) لعملائك إكمال رحلة التسوق بالكامل مباشرة داخل نافذة دردشة WhatsApp الخاصة بهم. نقوم بربط مخزونك (Shopify أو WooCommerce أو ERP مخصص) مع WhatsApp Business API. نحن نصمم كتالوجات منتجات ديناميكية يمكن للمستخدمين تصفحها عبر 'رسائل القائمة' التفاعلية. يمكن للمستخدمين إضافة عناصر متعددة إلى 'سلة تسوق WhatsApp' الأصلية، وعرض إجمالي الأسعار، وإجراء الدفع بأمان باستخدام عمليات دمج مثل Stripe أو بوابات الدفع المحلية - كل ذلك دون فتح متصفح ويب. هذه التجربة السلسة والمبنية على الدردشة تعزز معدلات التحويل بشكل كبير وتبني ولاءً هائلاً للعلامة التجارية.",
+    "features": [
+      "مزامنة متجر التجارة الإلكترونية (Shopify ، WooCommerce)",
+      "إعداد كتالوج منتجات WhatsApp الديناميكي",
+      "تكامل سلة تسوق WhatsApp الأصلية (Shopping Cart)",
+      "رسائل قائمة المنتجات التفاعلية (List Messages)",
+      "تكامل بوابة الدفع الآمنة داخل الدردشة (In-Chat Payment)",
+      "أتمتة تأكيد الطلب وتحديثات التتبع",
+      "محرك توصية المنتجات القائم على المحادثة",
+      "تدفقات استرداد سلة تسوق WhatsApp المتروكة"
+    ],
+    "benefits": [
+      "القضاء على الاحتكاك من خلال إبقاء تجربة التسوق بأكملها داخل تطبيق واحد",
+      "الاستفادة من الشراء الاندفاعي من خلال عمليات الدفع الفورية والمحادثة",
+      "تجنب بيع المخزون غير المتوفر لأن الكتالوجات تتزامن في الوقت الفعلي مع موقعك",
+      "زيادة متوسط قيمة الطلب (AOV) من خلال عمليات البيع الإضافي التلقائية داخل الدردشة",
+      "تقديم مساعدة تسوق شخصية ومحادثة على نطاق واسع عبر روبوتات الدردشة",
+      "استرداد المزيد من سلال التسوق المتروكة بشكل كبير باستخدام معدل الفتح 98٪ في WhatsApp"
+    ],
+    "metaTitle": "وكالة تجارة واتساب | التسوق داخل الدردشة | PakSoft",
+    "metaDescription": "بع مباشرة داخل WhatsApp. ندمج كتالوج متجرك مع WhatsApp Business API، مما يتيح عربات التسوق الأصلية والمدفوعات الآمنة داخل الدردشة.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تكامل الواجهة الخلفية (Backend) والمزامنة",
+          "description": "ننشئ اتصال API قوياً بين منصة التجارة الإلكترونية الخاصة بك (مثل Shopify) ومدير التجارة من Meta، لضمان مزامنة المخزون والتسعير في الوقت الفعلي."
+        },
+        {
+          "step": 2,
+          "title": "هيكلة الكتالوج",
+          "description": "ننظم منتجاتك في فئات ومجموعات منطقية داخل WhatsApp، مما يسهل على المستخدمين التنقل في المخزونات الكبيرة عبر الدردشة."
+        },
+        {
+          "step": 3,
+          "title": "تصميم تدفق الدردشة (Chat Flow)",
+          "description": "نصمم تدفق المحادثة. عندما يرسل المستخدم كلمة 'تسوق'، يستجيب روبوت الدردشة بقائمة تفاعلية تتيح له تصفح الفئات وعرض تفاصيل المنتج."
+        },
+        {
+          "step": 4,
+          "title": "تمكين سلة التسوق",
+          "description": "نقوم بتنشيط ميزة عربة التسوق الأصلية في WhatsApp. يمكن للمستخدمين النقر فوق 'أضف إلى السلة' مباشرة من رسالة المنتج، وتعديل الكميات، وإرسال السلة النهائية إليك."
+        },
+        {
+          "step": 5,
+          "title": "تكامل الدفع",
+          "description": "ندمج روابط الدفع الآمنة. عندما يرسل المستخدم سلة التسوق الخاصة به، يتلقى فوراً رابط دفع آمناً بنقرة واحدة (عبر Stripe أو PayPal أو بوابات محلية) لإنهاء الشراء."
+        },
+        {
+          "step": 6,
+          "title": "أتمتة ما بعد الشراء",
+          "description": "بمجرد التحقق من الدفع، يرسل النظام تلقائياً إيصال تأكيد الطلب وتحديثات الشحن اللاحقة مباشرة داخل نفس سلسلة محادثة WhatsApp."
+        }
+      ],
+      "faq": [
+        {
+          "question": "هل يجب على العملاء مغادرة WhatsApp للدفع؟",
+          "answer": "في بعض المناطق (مثل الهند والبرازيل)، يتوفر الدفع الأصلي الحقيقي داخل التطبيق. بالنسبة لمعظم البلدان الأخرى، نقوم بإنشاء رابط دفع آمن يفتح تراكباً سلساً (Webview)، مما يبقي المستخدم بشكل أساسي داخل بيئة WhatsApp."
+        },
+        {
+          "question": "هل يمكنني إظهار مخزوني بالكامل على WhatsApp؟",
+          "answer": "نعم، لكننا لا نوصي بإرهاق المستخدم. نقوم بمزامنة الكتالوج بالكامل، لكننا نستخدم روبوتات الدردشة و'رسائل القوائم' لتوجيه المستخدم إلى فئات محددة أو العناصر الأكثر مبيعاً للحفاظ على واجهة الدردشة نظيفة."
+        },
+        {
+          "question": "كيف يظل المخزون محدثاً؟",
+          "answer": "من خلال Webhooks. إذا نفد منتج ما من متجر Shopify الخاص بك، فإن الرابط يحدث 'مدير تجارة Meta' على الفور، ويتم إخفاء المنتج أو وضع علامة 'نفد المخزون' عليه في WhatsApp."
+        },
+        {
+          "question": "ماذا لو كان لدى العميل سؤال حول منتج أثناء التسوق؟",
+          "answer": "هذا هو جمال التجارة الحوارية! يمكنهم ببساطة كتابة سؤالهم في الدردشة. يمكن للروبوت الإجابة على الأسئلة الشائعة الأساسية، أو يمكن توجيه الدردشة إلى وكيل بشري لتقديم مساعدة مبيعات مخصصة."
+        },
+        {
+          "question": "هل يمكننا استعادة سلات التسوق المتروكة؟",
+          "answer": "نعم، بشكل فعال للغاية. إذا أضاف مستخدم عناصر إلى سلة WhatsApp الخاصة به ولم يكمل الدفع، فإننا نعد أتمتة لإرسال رسالة تذكير لطيفة بعد ساعتين، غالباً ما تتضمن رمز خصم صغير لإتمام البيع."
+        },
+        {
+          "question": "هل أحتاج إلى موقع ويب لاستخدام WhatsApp Commerce؟",
+          "answer": "من الناحية الفنية لا؛ يمكنك تحميل المنتجات يدوياً إلى Meta Commerce Manager. ومع ذلك، بالنسبة للأعمال القابلة للتطوير، نوصي بشدة بدمج WhatsApp Commerce جنباً إلى جنب مع متجر ويب (مثل Shopify) لإدارة الطلبات مركزياً."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "message-circle",
+          "name": "WhatsApp Cloud API"
+        },
+        {
+          "icon": "meta",
+          "name": "Meta Commerce Manager"
+        },
+        {
+          "icon": "shopify",
+          "name": "Shopify / WooCommerce Sync"
+        },
+        {
+          "icon": "credit-card",
+          "name": "Stripe / Payment Gateways"
+        },
+        {
+          "icon": "shopping-cart",
+          "name": "Native WhatsApp Cart"
+        },
+        {
+          "icon": "code",
+          "name": "Chatbot Logic (Node.js)"
+        }
+      ]
+    }
+  }
+}

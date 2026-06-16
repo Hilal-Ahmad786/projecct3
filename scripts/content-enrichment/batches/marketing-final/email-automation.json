@@ -1,0 +1,1275 @@
+{
+  "slug": "email-automation",
+  "en": {
+    "name": "Email Automation",
+    "shortDescription": "Stop sending manual email blasts that ignore buyer context. We build sophisticated email automation flows that nurture leads, recover abandoned carts, and drive repeat purchases on autopilot.",
+    "fullDescription": "Most businesses treat their email list like a megaphone, blasting the same message to everyone and suffering from low open rates and high unsubscribes. We transform email from a broadcast tool into a personalized sales engine. By leveraging behavioral triggers, advanced segmentation, and dynamic content, we build automated email sequences that speak to each subscriber based on their exact interactions with your brand. From high-converting welcome series and aggressive cart recovery flows to long-term lead nurturing and customer win-back campaigns, we architect systems that deliver the right message at precisely the right time. Our data-driven approach ensures your email automation operates 24/7, systematically moving prospects down the funnel and maximizing the lifetime value of every customer.",
+    "features": [
+      "Behavioral Trigger Setup & Logic",
+      "Welcome Series & Onboarding Funnels",
+      "Abandoned Cart & Browse Abandonment Flows",
+      "Post-Purchase & Cross-Sell Sequences",
+      "Customer Win-Back & Re-engagement",
+      "Advanced List Segmentation & Tagging",
+      "Dynamic Content & Personalization",
+      "A/B Testing & Revenue Attribution"
+    ],
+    "benefits": [
+      "Generate consistent revenue on autopilot without manual effort",
+      "Recover lost sales with highly targeted abandonment flows",
+      "Increase customer lifetime value through automated cross-selling",
+      "Improve email engagement metrics and protect sender reputation",
+      "Shorten the B2B sales cycle with educational lead nurturing",
+      "Deliver a highly personalized experience to thousands of subscribers"
+    ],
+    "metaTitle": "Email Automation Agency | Klaviyo & HubSpot | PakSoft",
+    "metaDescription": "Turn your email list into a 24/7 sales engine. We build custom email automation flows, from abandoned cart recovery to complex B2B lead nurturing sequences.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Audience Audit & Segmentation",
+          "description": "We analyze your existing database to identify distinct buyer personas and segment your lists based on past purchase behavior, engagement levels, and demographic data."
+        },
+        {
+          "step": 2,
+          "title": "Flow Strategy & Journey Mapping",
+          "description": "We map out the entire customer journey and design targeted automation flows—such as welcome series, cart abandonment, and post-purchase follow-ups—to plug revenue leaks."
+        },
+        {
+          "step": 3,
+          "title": "Copywriting & Design Production",
+          "description": "Our team crafts compelling, conversion-focused email copy and designs visually striking, responsive templates that perfectly align with your brand identity."
+        },
+        {
+          "step": 4,
+          "title": "Technical Setup & Integration",
+          "description": "We connect your email platform to your CRM and e-commerce store, ensuring behavioral events and custom properties sync flawlessly."
+        },
+        {
+          "step": 5,
+          "title": "Testing & Quality Assurance",
+          "description": "Before launching, we rigorously test every trigger, delay, and conditional split across different email clients and devices to guarantee a perfect user experience."
+        },
+        {
+          "step": 6,
+          "title": "Optimization & A/B Testing",
+          "description": "Once live, we continuously monitor performance, running A/B tests on subject lines, send times, and content to incrementally increase open rates and revenue per recipient."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How is email automation different from standard newsletters?",
+          "answer": "Newsletters are manual, one-time broadcasts sent to a large list. Automation consists of pre-built sequences triggered automatically by user actions, ensuring highly relevant timing."
+        },
+        {
+          "question": "Which email marketing platform do you recommend?",
+          "answer": "For e-commerce, we heavily favor Klaviyo due to its deep Shopify integration. For B2B lead nurturing, HubSpot or ActiveCampaign are typically our top choices."
+        },
+        {
+          "question": "Will automated emails feel robotic or spammy to our customers?",
+          "answer": "Not if done right. We use dynamic variables and strict frequency capping to ensure emails feel personalized and helpful, never overwhelming or generic."
+        },
+        {
+          "question": "How long does it take to set up the core automation flows?",
+          "answer": "A standard setup (Welcome, Abandoned Cart, Post-Purchase) usually takes 3 to 5 weeks, including strategy, copywriting, design, technical integration, and testing."
+        },
+        {
+          "question": "Can you migrate us from Mailchimp to a more advanced platform?",
+          "answer": "Yes. We handle full migrations, including transferring contacts, preserving historical engagement data, rebuilding templates, and recreating your existing automations in the new system."
+        },
+        {
+          "question": "How do you measure the ROI of email automation?",
+          "answer": "We track hard metrics: revenue generated by flows, cost per acquisition savings, and customer lifetime value. We integrate with GA4 and your e-commerce backend to prove direct attribution."
+        },
+        {
+          "question": "Do we need a massive email list for automation to be worth it?",
+          "answer": "No. Even with a small list, automation ensures that every new lead or customer receives a standardized, high-quality experience, which is crucial for early-stage growth."
+        },
+        {
+          "question": "What happens if a customer buys a product while in a promotional flow?",
+          "answer": "We build strict exclusion rules and suppression lists into the logic. If someone purchases, they are immediately pulled from the sales sequence and moved to a post-purchase flow."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "klaviyo",
+          "name": "Klaviyo"
+        },
+        {
+          "icon": "activecampaign",
+          "name": "ActiveCampaign"
+        },
+        {
+          "icon": "hubspot",
+          "name": "HubSpot"
+        },
+        {
+          "icon": "mailchimp",
+          "name": "Mailchimp"
+        },
+        {
+          "icon": "customerio",
+          "name": "Customer.io"
+        },
+        {
+          "icon": "litmus",
+          "name": "Litmus"
+        },
+        {
+          "icon": "shopify",
+          "name": "Shopify"
+        },
+        {
+          "icon": "ga4",
+          "name": "Google Analytics 4"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "E-posta Otomasyonu",
+    "shortDescription": "Alıcının bağlamını göz ardı eden manuel e-posta gönderimlerini durdurun. Potansiyel müşterileri besleyen, terk edilmiş sepetleri kurtaran ve otopilotta tekrarlayan satışlar sağlayan gelişmiş e-posta otomasyon akışları kuruyoruz.",
+    "fullDescription": "Çoğu işletme e-posta listesine bir megafon gibi davranır, aynı mesajı herkese patlatır ve düşük açılma oranlarından, yüksek abonelikten çıkma oranlarından muzdarip olur. E-postayı bir yayın aracı olmaktan çıkarıp kişiselleştirilmiş bir satış motoruna dönüştürüyoruz. Davranışsal tetikleyiciler, gelişmiş segmentasyon ve dinamik içeriklerden yararlanarak, markanızla olan kesin etkileşimlerine dayalı olarak her aboneyle konuşan otomatik e-posta dizileri oluşturuyoruz. Yüksek dönüşüm sağlayan karşılama (welcome) serilerinden ve agresif sepet kurtarma akışlarından, uzun vadeli müşteri besleme (lead nurturing) ve geri kazanma (win-back) kampanyalarına kadar, doğru mesajı tam olarak doğru zamanda ileten sistemler tasarlıyoruz. Veri odaklı yaklaşımımız, e-posta otomasyonunuzun 7/24 çalışmasını, potansiyel müşterileri sistematik olarak huniye çekmesini ve her müşterinin yaşam boyu değerini en üst düzeye çıkarmasını sağlar.",
+    "features": [
+      "Davranışsal Tetikleyici Kurulumu ve Mantığı",
+      "Karşılama Serileri ve Katılım Hunileri",
+      "Terk Edilmiş Sepet ve Gözatma Akışları",
+      "Satın Alma Sonrası ve Çapraz Satış Dizileri",
+      "Müşteri Geri Kazanma ve Yeniden Etkileşim",
+      "Gelişmiş Liste Segmentasyonu ve Etiketleme",
+      "Dinamik İçerik ve Kişiselleştirme",
+      "A/B Testi ve Gelir İlişkilendirmesi"
+    ],
+    "benefits": [
+      "Manuel çaba harcamadan otopilotta tutarlı gelir elde etme",
+      "Yüksek oranda hedeflenmiş akışlarla kaybedilen satışları kurtarma",
+      "Otomatik çapraz satış ile müşteri yaşam boyu değerini artırma",
+      "E-posta etkileşim metriklerini iyileştirme ve itibarı koruma",
+      "Eğitici müşteri besleme ile B2B satış döngüsünü kısaltma",
+      "Binlerce aboneye son derece kişiselleştirilmiş bir deneyim sunma"
+    ],
+    "metaTitle": "E-posta Otomasyon Ajansı | Klaviyo ve HubSpot | PakSoft",
+    "metaDescription": "E-posta listenizi 7/24 çalışan bir satış motoruna dönüştürün. Sepet kurtarmadan B2B lead nurturing dizilerine kadar özel e-posta otomasyon akışları kuruyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Kitle Denetimi ve Segmentasyon",
+          "description": "Farklı alıcı personalarını belirlemek için mevcut veritabanınızı analiz ediyor, geçmiş satın alma davranışlarına ve katılım seviyelerine göre listelerinizi bölümlere ayırıyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Akış Stratejisi ve Yolculuk Haritalaması",
+          "description": "Tüm müşteri yolculuğunun haritasını çıkarıyor; gelir sızıntılarını tıkamak için karşılama serileri, sepet terk etme ve satın alma sonrası gibi hedefli otomasyon akışları tasarlıyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Metin Yazarlığı ve Tasarım Üretimi",
+          "description": "Ekibimiz ikna edici, dönüşüm odaklı e-posta metinleri hazırlıyor ve marka kimliğinizle mükemmel uyum sağlayan, görsel açıdan çarpıcı, duyarlı şablonlar tasarlıyor."
+        },
+        {
+          "step": 4,
+          "title": "Teknik Kurulum ve Entegrasyon",
+          "description": "E-posta platformunuzu CRM'inize ve e-ticaret mağazanıza bağlayarak davranışsal olayların ve özel özelliklerin kusursuz bir şekilde senkronize olmasını sağlıyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Test ve Kalite Güvencesi",
+          "description": "Kusursuz bir kullanıcı deneyimi garanti etmek için başlatmadan önce her tetikleyiciyi, gecikmeyi ve koşullu bölünmeyi farklı e-posta istemcilerinde titizlikle test ediyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Optimizasyon ve A/B Testi",
+          "description": "Yayına girdikten sonra, açılma oranlarını ve gelirleri kademeli olarak artırmak için konu satırları, gönderim zamanları ve içerik üzerinde A/B testleri yaparak performansı izliyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "E-posta otomasyonunun standart bültenlerden farkı nedir?",
+          "answer": "Bültenler geniş bir listeye gönderilen manuel, tek seferlik yayınlardır. Otomasyon ise kullanıcı eylemleri tarafından tetiklenen önceden oluşturulmuş dizilerden oluşur."
+        },
+        {
+          "question": "Hangi e-posta pazarlama platformunu öneriyorsunuz?",
+          "answer": "E-ticaret için derin Shopify entegrasyonu nedeniyle Klaviyo'yu şiddetle tercih ediyoruz. B2B için HubSpot veya ActiveCampaign tipik olarak en iyi seçeneklerimizdir."
+        },
+        {
+          "question": "Otomatik e-postalar müşterilerimize robotik veya spam gibi gelecek mi?",
+          "answer": "Doğru yapılırsa hayır. E-postaların kişiselleştirilmiş ve yararlı hissettirmesini sağlamak için dinamik değişkenler ve sıkı frekans sınırları (frequency capping) kullanıyoruz."
+        },
+        {
+          "question": "Temel otomasyon akışlarını kurmak ne kadar sürer?",
+          "answer": "Standart bir kurulum (Karşılama, Terk Edilmiş Sepet, Satın Alma Sonrası), strateji, metin yazarlığı, tasarım ve test dahil olmak üzere genellikle 3 ila 5 hafta sürer."
+        },
+        {
+          "question": "Bizi Mailchimp'ten daha gelişmiş bir platforma taşıyabilir misiniz?",
+          "answer": "Evet. Kişileri aktarma, geçmiş katılım verilerini koruma, şablonları yeniden oluşturma ve mevcut otomasyonlarınızı yeni sistemde yeniden yaratma dahil tüm taşıma işlemlerini hallediyoruz."
+        },
+        {
+          "question": "E-posta otomasyonunun yatırım getirisini (ROI) nasıl ölçüyorsunuz?",
+          "answer": "Sert metrikleri takip ediyoruz: akışlardan elde edilen gelir, edinme maliyeti tasarrufları ve müşteri yaşam boyu değeri. Doğrudan ilişkilendirmeyi kanıtlamak için GA4'ü entegre ediyoruz."
+        },
+        {
+          "question": "Otomasyonun işe yaraması için devasa bir e-posta listesine ihtiyacımız var mı?",
+          "answer": "Hayır. Küçük bir listeyle bile otomasyon, her yeni müşterinin yüksek kaliteli bir deneyim yaşamasını sağlar; bu da büyüme için çok önemlidir."
+        },
+        {
+          "question": "Bir müşteri promosyon akışındayken ürün satın alırsa ne olur?",
+          "answer": "Mantığa katı dışlama kuralları ve gizleme listeleri (suppression lists) oluşturuyoruz. Birisi satın aldığında, derhal satış dizisinden çıkarılır ve satın alma sonrası akışına taşınır."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "klaviyo",
+          "name": "Klaviyo"
+        },
+        {
+          "icon": "activecampaign",
+          "name": "ActiveCampaign"
+        },
+        {
+          "icon": "hubspot",
+          "name": "HubSpot"
+        },
+        {
+          "icon": "mailchimp",
+          "name": "Mailchimp"
+        },
+        {
+          "icon": "customerio",
+          "name": "Customer.io"
+        },
+        {
+          "icon": "litmus",
+          "name": "Litmus"
+        },
+        {
+          "icon": "shopify",
+          "name": "Shopify"
+        },
+        {
+          "icon": "ga4",
+          "name": "Google Analytics 4"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "E-Mail-Automatisierung",
+    "shortDescription": "Stoppen Sie manuelle Massen-E-Mails, die den Kontext des Käufers ignorieren. Wir entwickeln ausgefeilte E-Mail-Automatisierungen, die Leads pflegen, verlassene Warenkörbe retten und Wiederholungskäufe auf Autopilot generieren.",
+    "fullDescription": "Die meisten Unternehmen behandeln ihre E-Mail-Liste wie ein Megafon, senden dieselbe Nachricht an alle und leiden unter niedrigen Öffnungsraten. Wir verwandeln E-Mails von einem Broadcast-Tool in eine personalisierte Verkaufsmaschine. Durch die Nutzung von Verhaltensauslösern, fortschrittlicher Segmentierung und dynamischen Inhalten erstellen wir automatisierte E-Mail-Sequenzen. Von konvertierungsstarken Willkommensserien und Warenkorbabbruch-Flows bis hin zu langfristigem Lead Nurturing und Kundenrückgewinnungskampagnen entwickeln wir Systeme, die die richtige Nachricht genau zur richtigen Zeit liefern. Unser datengesteuerter Ansatz stellt sicher, dass Ihre E-Mail-Automatisierung rund um die Uhr arbeitet, Interessenten systematisch durch den Funnel führt und den Customer Lifetime Value jedes Kunden maximiert.",
+    "features": [
+      "Einrichtung von Verhaltensauslösern & Logik",
+      "Willkommensserien & Onboarding-Funnel",
+      "Flows für verlassene Warenkörbe & Seitenabbrecher",
+      "Post-Purchase- & Cross-Sell-Sequenzen",
+      "Kundenrückgewinnung & Re-Engagement",
+      "Erweiterte Listen-Segmentierung & Tagging",
+      "Dynamische Inhalte & Personalisierung",
+      "A/B-Testing & Revenue Attribution"
+    ],
+    "benefits": [
+      "Generieren Sie konstante Einnahmen auf Autopilot ohne manuellen Aufwand",
+      "Holen Sie verlorene Verkäufe mit gezielten Abbruch-Flows zurück",
+      "Erhöhen Sie den Customer Lifetime Value durch automatisiertes Cross-Selling",
+      "Verbessern Sie E-Mail-Metriken und schützen Sie Ihre Absenderreputation",
+      "Verkürzen Sie den B2B-Verkaufszyklus mit lehrreichem Lead Nurturing",
+      "Bieten Sie Tausenden von Abonnenten ein hochgradig personalisiertes Erlebnis"
+    ],
+    "metaTitle": "E-Mail-Automatisierungsagentur | Klaviyo & HubSpot | PakSoft",
+    "metaDescription": "Verwandeln Sie Ihre E-Mail-Liste in eine 24/7-Verkaufsmaschine. Wir entwickeln benutzerdefinierte E-Mail-Automatisierungen für E-Commerce und B2B.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Zielgruppen-Audit & Segmentierung",
+          "description": "Wir analysieren Ihre bestehende Datenbank, um klare Buyer Personas zu identifizieren und Ihre Listen basierend auf Kaufverhalten und Engagement-Leveln zu segmentieren."
+        },
+        {
+          "step": 2,
+          "title": "Flow-Strategie & Journey-Mapping",
+          "description": "Wir bilden die gesamte Customer Journey ab und entwerfen gezielte Automatisierungs-Flows — wie Willkommensserien und Warenkorbabbrüche —, um Umsatzlecks zu schließen."
+        },
+        {
+          "step": 3,
+          "title": "Copywriting & Design-Produktion",
+          "description": "Unser Team verfasst überzeugende, konversionsorientierte E-Mail-Texte und entwirft visuell ansprechende, reaktionsschnelle Vorlagen, die perfekt zu Ihrer Marke passen."
+        },
+        {
+          "step": 4,
+          "title": "Technisches Setup & Integration",
+          "description": "Wir verbinden Ihre E-Mail-Plattform mit Ihrem CRM und E-Commerce-Shop, um sicherzustellen, dass Verhaltensereignisse und benutzerdefinierte Eigenschaften fehlerfrei synchronisiert werden."
+        },
+        {
+          "step": 5,
+          "title": "Testing & Qualitätssicherung",
+          "description": "Vor dem Start testen wir jeden Auslöser, jede Verzögerung und jede bedingte Aufteilung in verschiedenen E-Mail-Clients streng, um ein perfektes Benutzererlebnis zu garantieren."
+        },
+        {
+          "step": 6,
+          "title": "Optimierung & A/B-Testing",
+          "description": "Nach dem Go-Live überwachen wir kontinuierlich die Leistung und führen A/B-Tests durch, um Öffnungsraten und Umsatz pro Empfänger schrittweise zu steigern."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie unterscheidet sich die E-Mail-Automatisierung von normalen Newslettern?",
+          "answer": "Newsletter sind manuelle, einmalige Übertragungen. Die Automatisierung besteht aus vorgefertigten Sequenzen, die automatisch durch Benutzeraktionen ausgelöst werden."
+        },
+        {
+          "question": "Welche E-Mail-Marketing-Plattform empfehlen Sie?",
+          "answer": "Für den E-Commerce bevorzugen wir Klaviyo aufgrund der tiefen Shopify-Integration. Für B2B-Lead-Nurturing sind HubSpot oder ActiveCampaign unsere erste Wahl."
+        },
+        {
+          "question": "Werden sich automatisierte E-Mails für unsere Kunden spammig anfühlen?",
+          "answer": "Nicht, wenn es richtig gemacht wird. Wir verwenden dynamische Variablen und strikte Frequenzbegrenzungen, um sicherzustellen, dass sich E-Mails personalisiert und hilfreich anfühlen."
+        },
+        {
+          "question": "Wie lange dauert es, die Kern-Automatisierungs-Flows einzurichten?",
+          "answer": "Ein Standard-Setup (Willkommen, Warenkorbabbruch, Post-Purchase) dauert in der Regel 3 bis 5 Wochen, einschließlich Strategie, Copywriting, Design und technischer Integration."
+        },
+        {
+          "question": "Können Sie uns von Mailchimp auf eine modernere Plattform migrieren?",
+          "answer": "Ja. Wir übernehmen die vollständige Migration, einschließlich der Übertragung von Kontakten, der Beibehaltung historischer Daten und der Neuerstellung Ihrer Automatisierungen."
+        },
+        {
+          "question": "Wie messen Sie den ROI der E-Mail-Automatisierung?",
+          "answer": "Wir verfolgen harte Metriken: den durch Flows generierten Umsatz und Einsparungen bei den Akquisitionskosten. Wir integrieren GA4, um eine direkte Zuordnung zu beweisen."
+        },
+        {
+          "question": "Brauchen wir eine riesige E-Mail-Liste, damit sich die Automatisierung lohnt?",
+          "answer": "Nein. Selbst mit einer kleinen Liste stellt die Automatisierung sicher, dass jeder neue Lead ein standardisiertes, hochwertiges Erlebnis erhält, was für das Wachstum entscheidend ist."
+        },
+        {
+          "question": "Was passiert, wenn ein Kunde ein Produkt kauft, während er sich in einem Promo-Flow befindet?",
+          "answer": "Wir bauen strenge Ausschlussregeln ein. Wenn jemand kauft, wird er sofort aus der Verkaufssequenz genommen und in einen Post-Purchase-Flow verschoben."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "klaviyo",
+          "name": "Klaviyo"
+        },
+        {
+          "icon": "activecampaign",
+          "name": "ActiveCampaign"
+        },
+        {
+          "icon": "hubspot",
+          "name": "HubSpot"
+        },
+        {
+          "icon": "mailchimp",
+          "name": "Mailchimp"
+        },
+        {
+          "icon": "customerio",
+          "name": "Customer.io"
+        },
+        {
+          "icon": "litmus",
+          "name": "Litmus"
+        },
+        {
+          "icon": "shopify",
+          "name": "Shopify"
+        },
+        {
+          "icon": "ga4",
+          "name": "Google Analytics 4"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "ای میل آٹومیشن",
+    "shortDescription": "خریدار کے سیاق و سباق کو نظر انداز کرنے والی دستی ای میلز بھیجنا بند کریں۔ ہم ایسی ای میل آٹومیشن بناتے ہیں جو لیڈز کو پروان چڑھاتی ہیں اور فروخت کو خودکار طریقے سے بڑھاتی ہیں۔",
+    "fullDescription": "زیادہ تر کاروبار اپنی ای میل لسٹ کو میگا فون کی طرح استعمال کرتے ہیں، سب کو ایک ہی پیغام بھیجتے ہیں اور کم اوپن ریٹس کا شکار ہوتے ہیں۔ ہم ای میل کو نشریاتی ٹول سے ذاتی نوعیت کے سیلز انجن میں بدل دیتے ہیں۔ رویے کے ٹرگرز، جدید سیگمنٹیشن اور متحرک مواد کا فائدہ اٹھاتے ہوئے، ہم خودکار ای میل کی ترتیب بناتے ہیں۔ ویلکم سیریز اور کارٹ کی بازیابی کے فلو سے لے کر طویل مدتی لیڈ کی پرورش اور گاہک کو واپس لانے والی مہمات تک، ہم ایسے سسٹم تیار کرتے ہیں جو درست وقت پر درست پیغام پہنچاتے ہیں۔ ہمارا ڈیٹا پر مبنی نقطہ نظر یقینی بناتا ہے کہ آپ کی ای میل آٹومیشن 24/7 کام کرے اور ہر گاہک کی لائف ٹائم ویلیو کو زیادہ سے زیادہ کرے۔",
+    "features": [
+      "بیہیورل ٹرگر سیٹ اپ اور منطق",
+      "ویلکم سیریز اور آن بورڈنگ فنلز",
+      "کارٹ چھوڑنے اور براؤز چھوڑنے کے فلوز",
+      "خریداری کے بعد اور کراس سیل سیریز",
+      "کسٹمر کو واپس لانے اور دوبارہ مشغول کرنے کی مہمات",
+      "جدید فہرست کی سیگمنٹیشن اور ٹیگنگ",
+      "متحرک مواد اور ذاتی نوعیت",
+      "A/B ٹیسٹنگ اور ریونیو کی درجہ بندی"
+    ],
+    "benefits": [
+      "دستی کوشش کے بغیر خودکار طریقے سے مستقل آمدنی پیدا کریں",
+      "انتہائی ہدفی مہمات کے ذریعے کھوئی ہوئی فروخت کو بحال کریں",
+      "خودکار کراس سیلنگ کے ذریعے کسٹمر کی لائف ٹائم ویلیو میں اضافہ",
+      "ای میل کی مشغولیت کو بہتر بنائیں اور بھیجنے والے کی ساکھ کی حفاظت کریں",
+      "لیڈز کی تعلیمی پرورش کے ساتھ B2B سیلز سائیکل کو مختصر کریں",
+      "ہزاروں سبسکرائبرز کو انتہائی ذاتی نوعیت کا تجربہ فراہم کریں"
+    ],
+    "metaTitle": "ای میل آٹومیشن ایجنسی | Klaviyo اور HubSpot | PakSoft",
+    "metaDescription": "اپنی ای میل فہرست کو 24/7 سیلز انجن میں بدلیں۔ ہم کسٹم ای میل آٹومیشن بناتے ہیں، کارٹ کی بازیابی سے لے کر B2B لیڈ کی پرورش تک۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "سامعین کا آڈٹ اور سیگمنٹیشن",
+          "description": "ہم مختلف خریداروں کی شناخت کے لیے آپ کے موجودہ ڈیٹا بیس کا تجزیہ کرتے ہیں اور خریداری کے رویے اور مشغولیت کی سطح کی بنیاد پر فہرستوں کو تقسیم کرتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "فلو کی حکمت عملی اور نقشہ سازی",
+          "description": "ہم گاہک کے پورے سفر کا نقشہ بناتے ہیں اور آمدنی کے رساو کو روکنے کے لیے ہدفی آٹومیشن فلوز ڈیزائن کرتے ہیں — جیسے کہ ویلکم سیریز اور کارٹ چھوڑنا۔"
+        },
+        {
+          "step": 3,
+          "title": "کاپی رائٹنگ اور ڈیزائن پروڈکشن",
+          "description": "ہماری ٹیم ایسی ای میل کاپی تیار کرتی ہے جو کنورژن پر مرکوز ہو اور ایسے دلکش ڈیزائن بناتی ہے جو آپ کے برانڈ کی شناخت کے ساتھ بالکل مماثل ہوں۔"
+        },
+        {
+          "step": 4,
+          "title": "تکنیکی سیٹ اپ اور انٹیگریشن",
+          "description": "ہم آپ کے ای میل پلیٹ فارم کو آپ کے CRM اور ای کامرس اسٹور سے جوڑتے ہیں، اس بات کو یقینی بناتے ہوئے کہ تمام ڈیٹا بغیر کسی خامی کے ہم آہنگ ہو۔"
+        },
+        {
+          "step": 5,
+          "title": "ٹیسٹنگ اور کوالٹی اشورینس",
+          "description": "لانچ کرنے سے پہلے، ہم ایک بہترین صارف کے تجربے کی ضمانت دینے کے لیے مختلف ای میل کلائنٹس اور ڈیوائسز پر ہر ٹرگر کا سختی سے تجربہ کرتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "آپٹیمائزیشن اور A/B ٹیسٹنگ",
+          "description": "ایک بار لائیو ہونے کے بعد، ہم کارکردگی کی مسلسل نگرانی کرتے ہیں، اوپن ریٹس اور آمدنی بڑھانے کے لیے مضامین، بھیجنے کے اوقات، اور مواد پر A/B ٹیسٹ چلاتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "ای میل آٹومیشن معیاری نیوز لیٹر سے کیسے مختلف ہے؟",
+          "answer": "نیوز لیٹر دستی ہوتے ہیں جو ایک بڑی فہرست کو بھیجے جاتے ہیں۔ آٹومیشن پہلے سے بنی ہوئی ترتیب ہے جو صارف کے اعمال سے خود بخود شروع ہوتی ہے۔"
+        },
+        {
+          "question": "آپ کس ای میل مارکیٹنگ پلیٹ فارم کی سفارش کرتے ہیں؟",
+          "answer": "ای کامرس کے لیے ہم Klaviyo کو ترجیح دیتے ہیں۔ B2B لیڈ کی پرورش کے لیے HubSpot یا ActiveCampaign ہماری اولین پسند ہیں۔"
+        },
+        {
+          "question": "کیا خودکار ای میلز ہمارے گاہکوں کو روبوٹک محسوس ہوں گی؟",
+          "answer": "اگر صحیح طریقے سے کیا جائے تو نہیں۔ ہم متحرک تغیرات استعمال کرتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ ای میلز ذاتی اور مفید محسوس ہوں۔"
+        },
+        {
+          "question": "بنیادی آٹومیشن فلوز کو ترتیب دینے میں کتنا وقت لگتا ہے؟",
+          "answer": "ایک معیاری سیٹ اپ (ویلکم، کارٹ چھوڑنا، خریداری کے بعد) میں عام طور پر 3 سے 5 ہفتے لگتے ہیں، جس میں حکمت عملی، ڈیزائن اور ٹیسٹنگ شامل ہے۔"
+        },
+        {
+          "question": "کیا آپ ہمیں Mailchimp سے زیادہ جدید پلیٹ فارم پر منتقل کر سکتے ہیں؟",
+          "answer": "ہاں۔ ہم رابطوں کو منتقل کرنے، تاریخی ڈیٹا کو محفوظ کرنے اور آپ کے موجودہ آٹومیشنز کو نئے سسٹم میں دوبارہ بنانے کا مکمل انتظام کرتے ہیں۔"
+        },
+        {
+          "question": "آپ ای میل آٹومیشن کے ROI کی پیمائش کیسے کرتے ہیں؟",
+          "answer": "ہم حاصل ہونے والی آمدنی اور کسٹمر لائف ٹائم ویلیو کو ٹریک کرتے ہیں۔ ہم براہ راست انتساب ثابت کرنے کے لیے GA4 کو ضم کرتے ہیں۔"
+        },
+        {
+          "question": "کیا آٹومیشن کے لیے ہمیں ای میلز کی ایک بڑی فہرست کی ضرورت ہے؟",
+          "answer": "نہیں، ایک چھوٹی فہرست کے ساتھ بھی، آٹومیشن یقینی بناتا ہے کہ ہر نئے گاہک کو ایک اعلیٰ معیار کا تجربہ ملے، جو کہ ابتدائی ترقی کے لیے بہت اہم ہے۔"
+        },
+        {
+          "question": "اگر کوئی گاہک پروموشنل فلو میں رہتے ہوئے پروڈکٹ خریدتا ہے تو کیا ہوتا ہے؟",
+          "answer": "ہم سخت اخراج کے اصول بناتے ہیں۔ اگر کوئی شخص خریداری کرتا ہے، تو اسے فوری طور پر سیلز سیریز سے ہٹا دیا جاتا ہے اور خریداری کے بعد کے فلو میں منتقل کر دیا جاتا ہے۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "klaviyo",
+          "name": "Klaviyo"
+        },
+        {
+          "icon": "activecampaign",
+          "name": "ActiveCampaign"
+        },
+        {
+          "icon": "hubspot",
+          "name": "HubSpot"
+        },
+        {
+          "icon": "mailchimp",
+          "name": "Mailchimp"
+        },
+        {
+          "icon": "customerio",
+          "name": "Customer.io"
+        },
+        {
+          "icon": "litmus",
+          "name": "Litmus"
+        },
+        {
+          "icon": "shopify",
+          "name": "Shopify"
+        },
+        {
+          "icon": "ga4",
+          "name": "Google Analytics 4"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "أتمتة البريد الإلكتروني",
+    "shortDescription": "توقف عن إرسال رسائل بريد إلكتروني يدوية تتجاهل سياق المشتري. نحن نبني مسارات أتمتة معقدة تغذي العملاء المحتملين، وتستعيد سلات التسوق المتروكة، وتدفع المبيعات المتكررة تلقائياً.",
+    "fullDescription": "تتعامل معظم الشركات مع قائمة البريد الإلكتروني الخاصة بها مثل مكبر الصوت، حيث ترسل نفس الرسالة للجميع وتعاني من انخفاض معدلات الفتح وارتفاع إلغاء الاشتراك. نحن نحول البريد الإلكتروني من أداة بث إلى محرك مبيعات مخصص. من خلال الاستفادة من المحفزات السلوكية، والتجزئة المتقدمة، والمحتوى الديناميكي، نقوم ببناء تسلسلات بريد إلكتروني آلية تتحدث إلى كل مشترك بناءً على تفاعلاته الدقيقة مع علامتك التجارية. بدءاً من سلسلة الترحيب عالية التحويل ومسارات استعادة سلة التسوق إلى رعاية العملاء المحتملين على المدى الطويل وحملات استعادة العملاء، نقوم بتصميم أنظمة تقدم الرسالة الصحيحة في الوقت المناسب تماماً. يضمن نهجنا المدعوم بالبيانات أن تعمل أتمتة البريد الإلكتروني الخاصة بك على مدار الساعة، مما يزيد من القيمة الدائمة لكل عميل.",
+    "features": [
+      "إعداد المحفزات السلوكية والمنطقية",
+      "سلسلة الترحيب ومسارات الإعداد",
+      "مسارات استعادة سلة التسوق المهجورة والتصفح المهجور",
+      "تسلسلات ما بعد الشراء والبيع المتقاطع",
+      "حملات استعادة العملاء وإعادة التفاعل",
+      "تجزئة القوائم المتقدمة ووضع العلامات",
+      "المحتوى الديناميكي والتخصيص",
+      "اختبار A/B وإسناد الإيرادات"
+    ],
+    "benefits": [
+      "تحقيق إيرادات متسقة تلقائياً دون تدخل يدوي",
+      "استرداد المبيعات المفقودة باستخدام مسارات الاستعادة المستهدفة للغاية",
+      "زيادة القيمة الدائمة للعميل من خلال البيع المتقاطع الآلي",
+      "تحسين مقاييس التفاعل مع البريد الإلكتروني وحماية سمعة المرسل",
+      "تقصير دورة مبيعات B2B مع التغذية التعليمية للعملاء المحتملين",
+      "تقديم تجربة مخصصة للغاية لآلاف المشتركين"
+    ],
+    "metaTitle": "وكالة أتمتة البريد الإلكتروني | Klaviyo و HubSpot | PakSoft",
+    "metaDescription": "حول قائمة بريدك الإلكتروني إلى محرك مبيعات يعمل 24/7. نحن نبني مسارات أتمتة بريد إلكتروني مخصصة، من استعادة سلة التسوق إلى رعاية العملاء المعقدة.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تدقيق الجمهور والتجزئة",
+          "description": "نقوم بتحليل قاعدة البيانات الحالية الخاصة بك لتحديد شخصيات المشترين وتقسيم قوائمك بناءً على سلوك الشراء السابق ومستويات التفاعل."
+        },
+        {
+          "step": 2,
+          "title": "استراتيجية المسار ورسم الخرائط",
+          "description": "نرسم رحلة العميل بأكملها ونصمم مسارات أتمتة مستهدفة - مثل سلسلة الترحيب واسترداد سلة التسوق - لسد تسرب الإيرادات."
+        },
+        {
+          "step": 3,
+          "title": "كتابة الإعلانات وإنتاج التصميم",
+          "description": "يقوم فريقنا بصياغة نسخة بريد إلكتروني مقنعة تركز على التحويل ويصمم قوالب مذهلة وسريعة الاستجابة تتماشى تماماً مع هوية علامتك التجارية."
+        },
+        {
+          "step": 4,
+          "title": "الإعداد الفني والتكامل",
+          "description": "نقوم بربط منصة البريد الإلكتروني الخاصة بك مع نظام إدارة علاقات العملاء (CRM) ومتجرك الإلكتروني، مما يضمن مزامنة الأحداث السلوكية بلا عيوب."
+        },
+        {
+          "step": 5,
+          "title": "الاختبار وضمان الجودة",
+          "description": "قبل الإطلاق، نختبر بدقة كل مشغل وتأخير وتقسيم شرطي عبر مختلف عملاء البريد الإلكتروني والأجهزة لضمان تجربة مستخدم مثالية."
+        },
+        {
+          "step": 6,
+          "title": "التحسين واختبار A/B",
+          "description": "بمجرد البث المباشر، نراقب الأداء باستمرار ونجري اختبارات A/B على سطور الموضوع وأوقات الإرسال لزيادة معدلات الفتح والإيرادات."
+        }
+      ],
+      "faq": [
+        {
+          "question": "كيف تختلف أتمتة البريد الإلكتروني عن النشرات الإخبارية القياسية؟",
+          "answer": "النشرات الإخبارية هي بث يدوي لمرة واحدة يُرسل إلى قائمة كبيرة. بينما تتكون الأتمتة من تسلسلات مسبقة الصنع يتم تشغيلها تلقائياً بواسطة إجراءات المستخدم."
+        },
+        {
+          "question": "ما هي منصة التسويق عبر البريد الإلكتروني التي توصي بها؟",
+          "answer": "للتجارة الإلكترونية، نفضل Klaviyo بشكل كبير. أما بالنسبة لتغذية العملاء المحتملين في B2B، فإن HubSpot أو ActiveCampaign هما عادة خياراتنا الأولى."
+        },
+        {
+          "question": "هل ستبدو رسائل البريد الإلكتروني الآلية آلية أو كبريد عشوائي لعملائنا؟",
+          "answer": "ليس إذا تم ذلك بشكل صحيح. نحن نستخدم متغيرات ديناميكية وحدوداً صارمة للتكرار لضمان أن تبدو رسائل البريد الإلكتروني مخصصة ومفيدة."
+        },
+        {
+          "question": "كم من الوقت يستغرق إعداد مسارات الأتمتة الأساسية؟",
+          "answer": "يستغرق الإعداد القياسي عادةً من 3 إلى 5 أسابيع، بما في ذلك الاستراتيجية وكتابة النصوص والتصميم والتكامل الفني والاختبار."
+        },
+        {
+          "question": "هل يمكنك ترحيلنا من Mailchimp إلى منصة أكثر تقدماً؟",
+          "answer": "نعم. نتعامل مع عمليات الترحيل الكاملة، بما في ذلك نقل جهات الاتصال، وإعادة بناء القوالب، وإعادة إنشاء الأتمتة الحالية في النظام الجديد."
+        },
+        {
+          "question": "كيف تقيس عائد الاستثمار من أتمتة البريد الإلكتروني؟",
+          "answer": "نتتبع المقاييس الثابتة: الإيرادات الناتجة عن المسارات، ومدخرات تكلفة الاكتساب. ندمج GA4 لإثبات الإسناد المباشر."
+        },
+        {
+          "question": "هل نحتاج إلى قائمة بريد إلكتروني ضخمة لتكون الأتمتة ذات قيمة؟",
+          "answer": "لا، حتى مع قائمة صغيرة، تضمن الأتمتة أن يتلقى كل عميل محتمل تجربة عالية الجودة موحدة، وهو أمر حاسم للنمو في المراحل المبكرة."
+        },
+        {
+          "question": "ماذا يحدث إذا اشترى العميل منتجاً أثناء تواجده في مسار ترويجي؟",
+          "answer": "نقوم ببناء قواعد استبعاد صارمة في المنطق. إذا اشترى شخص ما، يتم سحبه فوراً من سلسلة المبيعات ونقله إلى مسار ما بعد الشراء."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "klaviyo",
+          "name": "Klaviyo"
+        },
+        {
+          "icon": "activecampaign",
+          "name": "ActiveCampaign"
+        },
+        {
+          "icon": "hubspot",
+          "name": "HubSpot"
+        },
+        {
+          "icon": "mailchimp",
+          "name": "Mailchimp"
+        },
+        {
+          "icon": "customerio",
+          "name": "Customer.io"
+        },
+        {
+          "icon": "litmus",
+          "name": "Litmus"
+        },
+        {
+          "icon": "shopify",
+          "name": "Shopify"
+        },
+        {
+          "icon": "ga4",
+          "name": "Google Analytics 4"
+        }
+      ]
+    }
+  },
+  "email-deliverability": {
+    "en": {
+      "name": "Email Deliverability",
+      "shortDescription": "Stop losing revenue to the spam folder. We diagnose and fix your email infrastructure, implement strict authentication protocols, and restore your sender reputation so your messages actually reach the inbox.",
+      "fullDescription": "You can craft the perfect email, but if it lands in the spam folder or gets blocked by ISPs, your ROI is zero. With Google and Yahoo enforcing strict new sender requirements, technical deliverability is no longer optional. We provide comprehensive email deliverability auditing and remediation. We start at the DNS level, perfectly configuring your SPF, DKIM, and DMARC records to authenticate your domain. Then, we analyze your sender reputation, implement aggressive list hygiene practices to remove inactive traps, and warm up your IPs systematically. Whether you are recovering from a severe spam blocklist or proactively setting up a new sending infrastructure, we ensure your critical marketing and transactional emails successfully bypass spam filters and land exactly where they belong: the primary inbox.",
+      "features": [
+        "SPF, DKIM, and DMARC Configuration",
+        "Domain & IP Reputation Auditing",
+        "Spam Trap & Hard Bounce Removal",
+        "IP Warmup Strategy & Execution",
+        "Google Postmaster Tools Integration",
+        "Email Content & Spam Score Analysis",
+        "Dedicated vs. Shared IP Strategy",
+        "Ongoing Deliverability Monitoring"
+      ],
+      "benefits": [
+        "Increase open rates immediately by bypassing the spam folder",
+        "Comply with the latest Google and Yahoo sender requirements",
+        "Protect your brand's main domain reputation from blacklists",
+        "Ensure critical transactional emails are actually received",
+        "Reduce hard bounces and improve list quality effortlessly",
+        "Maximize the ROI of your entire email marketing program"
+      ],
+      "metaTitle": "Email Deliverability Consulting | DMARC Setup | PakSoft",
+      "metaDescription": "Fix your email deliverability issues. We configure SPF, DKIM, DMARC, remove spam traps, and warm up your IPs so your emails reach the inbox.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Technical Infrastructure Audit",
+            "description": "We analyze your DNS records, current sending platform, and IP configuration to identify missing authentication protocols and structural vulnerabilities causing poor deliverability."
+          },
+          {
+            "step": 2,
+            "title": "Reputation & Blacklist Check",
+            "description": "We check your sending domain and IP addresses against major global blocklists and review your standing in Google Postmaster Tools and Microsoft SNDS."
+          },
+          {
+            "step": 3,
+            "title": "Authentication & DNS Setup",
+            "description": "We correctly configure and strictly align your SPF, DKIM, and DMARC records to prove to ISPs that your emails are legitimate and authorized by your brand."
+          },
+          {
+            "step": 4,
+            "title": "List Hygiene & Segmentation",
+            "description": "We clean your database by suppressing hard bounces, removing known spam traps, and segmenting out chronic non-openers who drag down your sender reputation."
+          },
+          {
+            "step": 5,
+            "title": "IP & Domain Warmup",
+            "description": "If you are using a new dedicated IP or domain, we execute a strict, math-based warmup schedule, slowly increasing sending volume to build trust with mailbox providers."
+          },
+          {
+            "step": 6,
+            "title": "Continuous Monitoring & Reporting",
+            "description": "Deliverability isn't a one-time fix. We set up automated monitoring to catch sudden reputation drops, DMARC failures, or spam complaints before they impact revenue."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Why did my emails suddenly start going to spam?",
+            "answer": "This usually happens due to a sudden spike in sending volume, hitting spam traps from an uncleaned list, or failing to comply with new DMARC authentication rules enforced by Gmail and Yahoo."
+          },
+          {
+            "question": "What are SPF, DKIM, and DMARC?",
+            "answer": "They are DNS records that act like a digital passport. SPF lists who can send on your behalf, DKIM signs your emails cryptographically, and DMARC tells receivers what to do if an email fails those checks."
+          },
+          {
+            "question": "Can you guarantee 100% inbox placement?",
+            "answer": "No legitimate agency can guarantee 100% placement because inbox algorithms change daily. However, we guarantee 100% technical compliance, which drastically maximizes your inboxing potential."
+          },
+          {
+            "question": "Should we use a dedicated IP or a shared IP?",
+            "answer": "It depends on your volume. If you send fewer than 100,000 emails per month, a shared IP with a good platform is better. For high-volume senders, a dedicated IP prevents other companies from ruining your reputation."
+          },
+          {
+            "question": "How long does it take to fix a ruined sender reputation?",
+            "answer": "Recovering from a severe blocklist or terrible reputation usually takes 4 to 8 weeks of strict list hygiene, authentication fixes, and highly targeted sending to your most engaged users."
+          },
+          {
+            "question": "Do I need to clean my email list, even if I paid for the leads?",
+            "answer": "Especially if you paid for them. Purchased lists are full of spam traps and invalid addresses that will destroy your deliverability. We strongly advise against sending to purchased lists from your primary domain."
+          },
+          {
+            "question": "How do you test if my emails are going to spam before sending?",
+            "answer": "We use advanced seed list testing to simulate sends to hundreds of real inboxes across Gmail, Outlook, and Yahoo to see exactly where the email lands before you launch the real campaign."
+          },
+          {
+            "question": "What is Google Postmaster Tools and why do I need it?",
+            "answer": "It's a free tool from Google that shows exactly how Gmail views your domain reputation, spam complaint rate, and authentication success. It is the absolute source of truth for your deliverability health."
+          }
+        ],
+        "technologies": [
+          {
+            "icon": "googlepostmaster",
+            "name": "Google Postmaster Tools"
+          },
+          {
+            "icon": "dmarc",
+            "name": "DMARC Analyzer"
+          },
+          {
+            "icon": "litmus",
+            "name": "Litmus"
+          },
+          {
+            "icon": "mxtoolbox",
+            "name": "MxToolbox"
+          },
+          {
+            "icon": "sendgrid",
+            "name": "SendGrid"
+          },
+          {
+            "icon": "mailgun",
+            "name": "Mailgun"
+          },
+          {
+            "icon": "klaviyo",
+            "name": "Klaviyo"
+          },
+          {
+            "icon": "glockapps",
+            "name": "GlockApps"
+          }
+        ]
+      }
+    },
+    "tr": {
+      "name": "E-posta Teslim Edilebilirliği",
+      "shortDescription": "Spam klasörüne para kaptırmayı bırakın. E-posta altyapınızı teşhis edip onarıyor, katı kimlik doğrulama protokollerini uyguluyor ve mesajlarınızın gerçekten gelen kutusuna ulaşmasını sağlıyoruz.",
+      "fullDescription": "Mükemmel bir e-posta hazırlayabilirsiniz, ancak spam klasörüne düşerse veya İSS'ler tarafından engellenirse yatırım getiriniz sıfırdır. Google ve Yahoo'nun katı yeni gönderici gereksinimleri uygulamasıyla birlikte, teknik teslim edilebilirlik artık isteğe bağlı değildir. Kapsamlı e-posta teslim edilebilirliği denetimi ve iyileştirmesi sağlıyoruz. Alan adınızın kimliğini doğrulamak için SPF, DKIM ve DMARC kayıtlarınızı mükemmel bir şekilde yapılandırarak DNS düzeyinde işe başlıyoruz. Ardından gönderici itibarınızı analiz ediyor, etkin olmayan tuzakları (spam traps) ortadan kaldırmak için agresif liste temizleme uygulamaları yürütüyor ve IP'lerinizi sistematik olarak ısıtıyoruz. İster ciddi bir spam kara listesinden kurtuluyor olun, ister yeni bir gönderim altyapısı kuruyor olun, kritik pazarlama e-postalarınızın birincil gelen kutusuna inmesini sağlıyoruz.",
+      "features": [
+        "SPF, DKIM ve DMARC Yapılandırması",
+        "Alan Adı ve IP İtibarı Denetimi",
+        "Spam Tuzağı ve Sert Sıçrama (Hard Bounce) Temizliği",
+        "IP Isıtma (Warmup) Stratejisi ve Uygulaması",
+        "Google Postmaster Tools Entegrasyonu",
+        "E-posta İçeriği ve Spam Skoru Analizi",
+        "Özel ve Paylaşımlı IP Stratejisi",
+        "Sürekli Teslim Edilebilirlik İzleme"
+      ],
+      "benefits": [
+        "Spam klasörünü atlayarak açılma oranlarını hemen artırın",
+        "En son Google ve Yahoo gönderici gereksinimlerine uyun",
+        "Markanızın ana alan adı itibarını kara listelerden koruyun",
+        "Kritik işlem (transactional) e-postalarının alındığından emin olun",
+        "Sert sıçramaları (hard bounce) zahmetsizce azaltın ve liste kalitesini iyileştirin",
+        "Tüm e-posta pazarlama programınızın yatırım getirisini (ROI) en üst düzeye çıkarın"
+      ],
+      "metaTitle": "E-posta Teslim Edilebilirlik Danışmanlığı | DMARC | PakSoft",
+      "metaDescription": "E-posta teslim edilebilirlik sorunlarınızı çözün. SPF, DKIM, DMARC yapılandırıyor, spam tuzaklarını kaldırıyor ve e-postalarınızın gelen kutusuna ulaşmasını sağlıyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Teknik Altyapı Denetimi",
+            "description": "Kötü teslim edilebilirliğe neden olan eksik kimlik doğrulama protokollerini ve yapısal güvenlik açıklarını belirlemek için DNS kayıtlarınızı, geçerli gönderim platformunuzu ve IP yapılandırmanızı analiz ediyoruz."
+          },
+          {
+            "step": 2,
+            "title": "İtibar ve Kara Liste Kontrolü",
+            "description": "Gönderen alan adınızı ve IP adreslerinizi büyük küresel kara listelere karşı kontrol ediyor ve Google Postmaster Tools ile Microsoft SNDS'deki durumunuzu inceliyoruz."
+          },
+          {
+            "step": 3,
+            "title": "Kimlik Doğrulama ve DNS Kurulumu",
+            "description": "İSS'lere e-postalarınızın meşru ve markanız tarafından yetkilendirilmiş olduğunu kanıtlamak için SPF, DKIM ve DMARC kayıtlarınızı doğru şekilde yapılandırıyor ve kesinlikle hizalıyoruz."
+          },
+          {
+            "step": 4,
+            "title": "Liste Hijyeni ve Segmentasyon",
+            "description": "Veritabanınızı temizleyerek, sert sıçramaları (hard bounce) bastırıyor, bilinen spam tuzaklarını kaldırıyor ve gönderen itibarınızı aşağı çeken kronik olarak e-posta açmayanları ayırıyoruz."
+          },
+          {
+            "step": 5,
+            "title": "IP ve Alan Adı Isıtma (Warmup)",
+            "description": "Yeni bir özel IP veya alan adı kullanıyorsanız, posta kutusu sağlayıcılarında güven oluşturmak için gönderim hacmini yavaş yavaş artıran sıkı, matematiksel bir ısıtma programı yürütüyoruz."
+          },
+          {
+            "step": 6,
+            "title": "Sürekli İzleme ve Raporlama",
+            "description": "Teslim edilebilirlik tek seferlik bir düzeltme değildir. Ani itibar düşüşlerini, DMARC hatalarını veya spam şikayetlerini geliri etkilemeden önce yakalamak için otomatik izleme kuruyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "E-postalarım neden aniden spam'e düşmeye başladı?",
+            "answer": "Bu genellikle gönderim hacminde ani bir artış, temizlenmemiş bir listedeki spam tuzaklarına çarpma veya Gmail ve Yahoo tarafından uygulanan yeni DMARC kurallarına uymama nedeniyle olur."
+          },
+          {
+            "question": "SPF, DKIM ve DMARC nedir?",
+            "answer": "Bunlar dijital bir pasaport gibi davranan DNS kayıtlarıdır. SPF adınıza kimin gönderebileceğini listeler, DKIM e-postalarınızı kriptografik olarak imzalar ve DMARC, bir e-posta bu kontrollerde başarısız olursa alıcılara ne yapacaklarını söyler."
+          },
+          {
+            "question": "%100 gelen kutusuna yerleşimi garanti edebilir misiniz?",
+            "answer": "Gelen kutusu algoritmaları günlük olarak değiştiği için hiçbir yasal ajans %100 yerleşimi garanti edemez. Ancak, gelen kutusuna ulaşma potansiyelinizi en üst düzeye çıkaran %100 teknik uyumluluğu garanti ediyoruz."
+          },
+          {
+            "question": "Özel bir IP mi yoksa paylaşımlı bir IP mi kullanmalıyız?",
+            "answer": "Hacminize bağlıdır. Ayda 100.000'den az e-posta gönderiyorsanız, iyi bir platforma sahip paylaşımlı bir IP daha iyidir. Yüksek hacimli göndericiler için özel bir IP, diğer şirketlerin itibarınızı mahvetmesini önler."
+          },
+          {
+            "question": "Bozulmuş bir gönderici itibarını düzeltmek ne kadar sürer?",
+            "answer": "Ciddi bir kara listeden veya korkunç bir itibardan kurtulmak genellikle sıkı liste hijyeni, kimlik doğrulama düzeltmeleri ve en ilgili kullanıcılarınıza yüksek oranda hedeflenmiş gönderim gerektiren 4 ila 8 hafta sürer."
+          },
+          {
+            "question": "Potansiyel müşteriler (leads) için ödeme yapmış olsam bile e-posta listemi temizlemem gerekir mi?",
+            "answer": "Özellikle onlar için ödeme yaptıysanız. Satın alınan listeler, teslim edilebilirliğinizi mahvedecek spam tuzakları ve geçersiz adreslerle doludur. Birincil alan adınızdan satın alınan listelere gönderim yapmamanızı şiddetle tavsiye ederiz."
+          },
+          {
+            "question": "Göndermeden önce e-postalarımın spam'e gidip gitmeyeceğini nasıl test ediyorsunuz?",
+            "answer": "Gerçek kampanyayı başlatmadan önce e-postanın tam olarak nereye düştüğünü görmek amacıyla Gmail, Outlook ve Yahoo'da yüzlerce gerçek gelen kutusuna gönderimleri simüle etmek için gelişmiş tohum (seed) liste testi kullanıyoruz."
+          },
+          {
+            "question": "Google Postmaster Tools nedir ve neden ihtiyacım var?",
+            "answer": "Google'ın sunduğu, Gmail'in alan adı itibarınızı, spam şikayet oranınızı ve kimlik doğrulama başarınızı tam olarak nasıl gördüğünü gösteren ücretsiz bir araçtır. Teslim edilebilirlik sağlığınız için mutlak doğruluk kaynağıdır."
+          }
+        ],
+        "technologies": [
+          {
+            "icon": "googlepostmaster",
+            "name": "Google Postmaster Tools"
+          },
+          {
+            "icon": "dmarc",
+            "name": "DMARC Analyzer"
+          },
+          {
+            "icon": "litmus",
+            "name": "Litmus"
+          },
+          {
+            "icon": "mxtoolbox",
+            "name": "MxToolbox"
+          },
+          {
+            "icon": "sendgrid",
+            "name": "SendGrid"
+          },
+          {
+            "icon": "mailgun",
+            "name": "Mailgun"
+          },
+          {
+            "icon": "klaviyo",
+            "name": "Klaviyo"
+          },
+          {
+            "icon": "glockapps",
+            "name": "GlockApps"
+          }
+        ]
+      }
+    },
+    "de": {
+      "name": "E-Mail Deliverability",
+      "shortDescription": "Verlieren Sie keine Einnahmen mehr an den Spam-Ordner. Wir diagnostizieren und beheben Ihre E-Mail-Infrastruktur, implementieren strenge Authentifizierungsprotokolle und stellen Ihre Absenderreputation wieder her.",
+      "fullDescription": "Sie können die perfekte E-Mail verfassen, aber wenn sie im Spam-Ordner landet oder von ISPs blockiert wird, ist Ihr ROI gleich null. Da Google und Yahoo strenge neue Anforderungen an Absender durchsetzen, ist die technische Zustellbarkeit nicht mehr optional. Wir bieten umfassende Audits und Behebungen der E-Mail-Zustellbarkeit. Wir beginnen auf DNS-Ebene und konfigurieren Ihre SPF-, DKIM- und DMARC-Einträge perfekt, um Ihre Domain zu authentifizieren. Dann analysieren wir Ihre Absenderreputation, implementieren aggressive Listenhygienepraktiken, um inaktive Fallen zu entfernen, und wärmen Ihre IPs systematisch auf. Egal, ob Sie sich von einer schweren Spam-Blocklist erholen oder proaktiv eine neue Sendeinfrastruktur einrichten, wir sorgen dafür, dass Ihre Nachrichten genau dort landen, wo sie hingehören: im primären Posteingang.",
+      "features": [
+        "SPF-, DKIM- und DMARC-Konfiguration",
+        "Domain- & IP-Reputations-Audit",
+        "Spam-Fallen- & Hard-Bounce-Entfernung",
+        "IP-Warmup-Strategie & Durchführung",
+        "Google Postmaster Tools Integration",
+        "E-Mail-Content- & Spam-Score-Analyse",
+        "Dedizierte vs. Shared IP-Strategie",
+        "Laufendes Deliverability-Monitoring"
+      ],
+      "benefits": [
+        "Steigern Sie die Öffnungsraten sofort durch Umgehung des Spam-Ordners",
+        "Erfüllen Sie die neuesten Absenderanforderungen von Google und Yahoo",
+        "Schützen Sie die Domainreputation Ihrer Marke vor Blocklists",
+        "Stellen Sie sicher, dass wichtige Transaktions-E-Mails auch ankommen",
+        "Reduzieren Sie Hard Bounces und verbessern Sie die Listenqualität",
+        "Maximieren Sie den ROI Ihres gesamten E-Mail-Marketing-Programms"
+      ],
+      "metaTitle": "E-Mail Deliverability Agentur | DMARC Setup | PakSoft",
+      "metaDescription": "Beheben Sie Ihre Zustellbarkeitsprobleme. Wir konfigurieren SPF, DKIM, DMARC, entfernen Spam-Fallen und wärmen Ihre IPs auf.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Technisches Infrastruktur-Audit",
+            "description": "Wir analysieren Ihre DNS-Einträge, Ihre Sendeplattform und IP-Konfiguration, um fehlende Authentifizierungsprotokolle zu identifizieren."
+          },
+          {
+            "step": 2,
+            "title": "Reputations- & Blocklist-Prüfung",
+            "description": "Wir prüfen Ihre Sendedomain und IPs gegen große globale Blocklists und überprüfen Ihren Status in den Google Postmaster Tools."
+          },
+          {
+            "step": 3,
+            "title": "Authentifizierung & DNS-Setup",
+            "description": "Wir konfigurieren Ihre SPF-, DKIM- und DMARC-Einträge korrekt, um ISPs zu beweisen, dass Ihre E-Mails von Ihrer Marke autorisiert sind."
+          },
+          {
+            "step": 4,
+            "title": "Listenhygiene & Segmentierung",
+            "description": "Wir bereinigen Ihre Datenbank, entfernen Spam-Fallen und segmentieren chronische Nicht-Öffner heraus."
+          },
+          {
+            "step": 5,
+            "title": "IP- & Domain-Warmup",
+            "description": "Bei einer neuen IP oder Domain führen wir einen strengen Warmup-Plan durch und erhöhen langsam das Sendevolumen."
+          },
+          {
+            "step": 6,
+            "title": "Kontinuierliches Monitoring & Reporting",
+            "description": "Wir richten ein automatisiertes Monitoring ein, um Reputationsverluste oder DMARC-Fehler abzufangen, bevor sie den Umsatz beeinträchtigen."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Warum landen meine E-Mails plötzlich im Spam?",
+            "answer": "Dies geschieht meist durch einen plötzlichen Anstieg des Sendevolumens, durch Spam-Fallen oder die Nichteinhaltung neuer DMARC-Regeln."
+          },
+          {
+            "question": "Was sind SPF, DKIM und DMARC?",
+            "answer": "Es sind DNS-Einträge, die wie ein digitaler Pass wirken. Sie authentifizieren Ihre E-Mails und schützen vor Spoofing."
+          },
+          {
+            "question": "Können Sie eine 100%ige Posteingangsplatzierung garantieren?",
+            "answer": "Niemand kann 100% garantieren, da sich Algorithmen täglich ändern. Wir garantieren jedoch 100%ige technische Konformität."
+          },
+          {
+            "question": "Sollten wir eine dedizierte oder eine Shared IP verwenden?",
+            "answer": "Bei weniger als 100.000 E-Mails/Monat ist eine Shared IP besser. Für Vielsender verhindert eine dedizierte IP, dass andere Ihre Reputation ruinieren."
+          },
+          {
+            "question": "Wie lange dauert es, eine ruinierte Reputation zu reparieren?",
+            "answer": "Die Erholung von einer Blocklist dauert in der Regel 4 bis 8 Wochen mit strikter Listenhygiene und Authentifizierungs-Korrekturen."
+          },
+          {
+            "question": "Muss ich meine E-Mail-Liste bereinigen, auch wenn ich für die Leads bezahlt habe?",
+            "answer": "Gekaufte Listen sind voller Spam-Fallen. Wir raten dringend davon ab, an gekaufte Listen von Ihrer Hauptdomain zu senden."
+          },
+          {
+            "question": "Wie testen Sie, ob meine E-Mails im Spam landen, bevor sie gesendet werden?",
+            "answer": "Wir verwenden Seed-List-Tests, um Sendevorgänge an Hunderte von echten Posteingängen bei Gmail, Outlook und Yahoo zu simulieren."
+          },
+          {
+            "question": "Was sind Google Postmaster Tools und warum brauche ich sie?",
+            "answer": "Es ist ein kostenloses Tool von Google, das genau zeigt, wie Gmail Ihre Domain-Reputation und Spam-Rate bewertet."
+          }
+        ],
+        "technologies": [
+          {
+            "icon": "googlepostmaster",
+            "name": "Google Postmaster Tools"
+          },
+          {
+            "icon": "dmarc",
+            "name": "DMARC Analyzer"
+          },
+          {
+            "icon": "litmus",
+            "name": "Litmus"
+          },
+          {
+            "icon": "mxtoolbox",
+            "name": "MxToolbox"
+          },
+          {
+            "icon": "sendgrid",
+            "name": "SendGrid"
+          },
+          {
+            "icon": "mailgun",
+            "name": "Mailgun"
+          },
+          {
+            "icon": "klaviyo",
+            "name": "Klaviyo"
+          },
+          {
+            "icon": "glockapps",
+            "name": "GlockApps"
+          }
+        ]
+      }
+    },
+    "ur": {
+      "name": "ای میل ڈیلیوریبلٹی",
+      "shortDescription": "سپیم فولڈر کی وجہ سے آمدنی کھونا بند کریں۔ ہم آپ کے ای میل کے بنیادی ڈھانچے کو ٹھیک کرتے ہیں تاکہ آپ کے پیغامات دراصل ان باکس تک پہنچیں۔",
+      "fullDescription": "آپ ایک بہترین ای میل بنا سکتے ہیں، لیکن اگر یہ سپیم فولڈر میں چلی جائے یا ISPs اسے بلاک کر دیں تو آپ کا ROI صفر ہے۔ گوگل اور یاہو کی جانب سے بھیجنے والوں کے لیے سخت نئی شرائط کے ساتھ، تکنیکی ڈیلیوریبلٹی اب اختیاری نہیں رہی۔ ہم جامع ای میل ڈیلیوریبلٹی کا آڈٹ اور تدارک فراہم کرتے ہیں۔ ہم DNS سطح پر آغاز کرتے ہیں، آپ کے ڈومین کی تصدیق کے لیے SPF، DKIM، اور DMARC ریکارڈز کو مکمل طور پر کنفیگر کرتے ہیں۔ پھر، ہم آپ کی ساکھ کا تجزیہ کرتے ہیں، غیر فعال ٹریپس کو ہٹانے کے لیے جارحانہ فہرست کی صفائی کے طریقے نافذ کرتے ہیں، اور آپ کے IPs کو بتدریج وارم اپ کرتے ہیں۔ اس بات کو یقینی بنایا جاتا ہے کہ آپ کی مارکیٹنگ اور لین دین کی ای میلز کامیابی کے ساتھ ان باکس میں پہنچیں۔",
+      "features": [
+        "SPF، DKIM، اور DMARC کنفیگریشن",
+        "ڈومین اور IP کی ساکھ کا آڈٹ",
+        "سپیم ٹریپ اور ہارڈ باؤنس کو ہٹانا",
+        "IP وارم اپ کی حکمت عملی اور نفاذ",
+        "Google Postmaster Tools انٹیگریشن",
+        "ای میل کے مواد اور سپیم اسکور کا تجزیہ",
+        "وقف شدہ بمقابلہ مشترکہ IP حکمت عملی",
+        "مستقل ڈیلیوریبلٹی کی نگرانی"
+      ],
+      "benefits": [
+        "سپیم فولڈر کو بائی پاس کر کے اوپن ریٹس میں فوری اضافہ کریں",
+        "گوگل اور یاہو کی بھیجنے والوں کی تازہ ترین شرائط کی تعمیل کریں",
+        "اپنے برانڈ کے مرکزی ڈومین کی ساکھ کو بلیک لسٹس سے بچائیں",
+        "یقینی بنائیں کہ لین دین کی اہم ای میلز دراصل موصول ہوں",
+        "ہارڈ باؤنسز کو کم کریں اور فہرست کے معیار کو بہتر بنائیں",
+        "اپنے پورے ای میل مارکیٹنگ پروگرام کے ROI کو زیادہ سے زیادہ کریں"
+      ],
+      "metaTitle": "ای میل ڈیلیوریبلٹی کنسلٹنگ | DMARC سیٹ اپ | PakSoft",
+      "metaDescription": "اپنی ای میل ڈیلیوریبلٹی کے مسائل کو حل کریں۔ ہم SPF، DKIM، DMARC کو کنفیگر کرتے ہیں تاکہ آپ کی ای میلز ان باکس تک پہنچیں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "تکنیکی انفراسٹرکچر کا آڈٹ",
+            "description": "ہم آپ کے DNS ریکارڈز، اور IP کنفیگریشن کا تجزیہ کرتے ہیں تاکہ غائب تصدیقی پروٹوکولز کی نشاندہی کی جا سکے۔"
+          },
+          {
+            "step": 2,
+            "title": "ساکھ اور بلیک لسٹ کی جانچ",
+            "description": "ہم آپ کے بھیجنے والے ڈومین اور IP پتوں کو بڑی عالمی بلیک لسٹس کے خلاف چیک کرتے ہیں۔"
+          },
+          {
+            "step": 3,
+            "title": "تصدیق اور DNS سیٹ اپ",
+            "description": "ہم آپ کے SPF، DKIM، اور DMARC ریکارڈز کو درست طریقے سے ترتیب دیتے ہیں تاکہ یہ ثابت ہو سکے کہ آپ کی ای میلز جائز ہیں۔"
+          },
+          {
+            "step": 4,
+            "title": "فہرست کی صفائی اور سیگمنٹیشن",
+            "description": "ہم ہارڈ باؤنسز کو دبا کر اور معلوم سپیم ٹریپس کو ہٹا کر آپ کا ڈیٹا بیس صاف کرتے ہیں۔"
+          },
+          {
+            "step": 5,
+            "title": "IP اور ڈومین کا وارم اپ",
+            "description": "اگر آپ نیا IP استعمال کر رہے ہیں، تو ہم میل باکس فراہم کنندگان کے ساتھ اعتماد پیدا کرنے کے لیے حجم میں آہستہ آہستہ اضافہ کرتے ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "مسلسل نگرانی اور رپورٹنگ",
+            "description": "ہم اچانک ساکھ میں کمی، DMARC کی ناکامیوں کو پکڑنے کے لیے خودکار نگرانی قائم کرتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "میری ای میلز اچانک سپیم میں کیوں جانے لگیں؟",
+            "answer": "ایسا عموماً بھیجنے کے حجم میں اچانک اضافے، سپیم ٹریپس کو نشانہ بنانے، یا نئے DMARC اصولوں کی تعمیل نہ کرنے کی وجہ سے ہوتا ہے۔"
+          },
+          {
+            "question": "SPF، DKIM، اور DMARC کیا ہیں؟",
+            "answer": "یہ DNS ریکارڈز ہیں جو ڈیجیٹل پاسپورٹ کی طرح کام کرتے ہیں اور آپ کی ای میلز کی تصدیق کرتے ہیں۔"
+          },
+          {
+            "question": "کیا آپ 100% ان باکس پلیسمنٹ کی ضمانت دے سکتے ہیں؟",
+            "answer": "کوئی بھی 100% ضمانت نہیں دے سکتا کیونکہ الگورتھم روزانہ تبدیل ہوتے ہیں۔ تاہم، ہم تکنیکی تعمیل کی 100% ضمانت دیتے ہیں۔"
+          },
+          {
+            "question": "کیا ہمیں ایک وقف شدہ IP استعمال کرنا چاہیے یا مشترکہ IP؟",
+            "answer": "یہ آپ کے حجم پر منحصر ہے۔ 100,000 سے کم ای میلز کے لیے مشترکہ IP بہتر ہے۔"
+          },
+          {
+            "question": "خراب ساکھ کو ٹھیک کرنے میں کتنا وقت لگتا ہے؟",
+            "answer": "خراب ساکھ سے بحالی میں عام طور پر 4 سے 8 ہفتے لگتے ہیں۔"
+          },
+          {
+            "question": "کیا خریدی گئی فہرستوں کو بھی صاف کرنے کی ضرورت ہے؟",
+            "answer": "خاص طور پر اگر آپ نے ان کے لیے ادائیگی کی ہے۔ خریدی گئی فہرستیں سپیم ٹریپس سے بھری ہوتی ہیں۔"
+          },
+          {
+            "question": "بھیجنے سے پہلے آپ کیسے ٹیسٹ کرتے ہیں کہ میری ای میلز سپیم میں جائیں گی یا نہیں؟",
+            "answer": "ہم حقیقی مہم شروع کرنے سے پہلے سینکڑوں ان باکسز پر نقلی ٹیسٹنگ کا استعمال کرتے ہیں۔"
+          },
+          {
+            "question": "Google Postmaster Tools کیا ہے اور مجھے اس کی کیوں ضرورت ہے؟",
+            "answer": "یہ گوگل کا ایک مفت ٹول ہے جو دکھاتا ہے کہ Gmail آپ کی ڈومین کی ساکھ کو کس طرح دیکھتا ہے۔"
+          }
+        ],
+        "technologies": [
+          {
+            "icon": "googlepostmaster",
+            "name": "Google Postmaster Tools"
+          },
+          {
+            "icon": "dmarc",
+            "name": "DMARC Analyzer"
+          },
+          {
+            "icon": "litmus",
+            "name": "Litmus"
+          },
+          {
+            "icon": "mxtoolbox",
+            "name": "MxToolbox"
+          },
+          {
+            "icon": "sendgrid",
+            "name": "SendGrid"
+          },
+          {
+            "icon": "mailgun",
+            "name": "Mailgun"
+          },
+          {
+            "icon": "klaviyo",
+            "name": "Klaviyo"
+          },
+          {
+            "icon": "glockapps",
+            "name": "GlockApps"
+          }
+        ]
+      }
+    },
+    "ar": {
+      "name": "قابلية تسليم البريد الإلكتروني",
+      "shortDescription": "توقف عن خسارة الإيرادات لصالح مجلد البريد العشوائي. نحن نقوم بتشخيص وإصلاح البنية التحتية لبريدك الإلكتروني، وننفذ بروتوكولات المصادقة الصارمة، ونستعيد سمعتك كمرسل.",
+      "fullDescription": "يمكنك صياغة البريد الإلكتروني المثالي، ولكن إذا وصل إلى مجلد البريد العشوائي أو تم حظره بواسطة مزودي خدمة الإنترنت، فإن عائد الاستثمار الخاص بك هو صفر. مع فرض Google و Yahoo متطلبات صارمة جديدة على المرسلين، لم تعد قابلية التسليم التقنية اختيارية. نحن نقدم تدقيقاً شاملاً ومعالجة لقابلية تسليم البريد الإلكتروني. نبدأ على مستوى DNS، ونهيئ سجلات SPF و DKIM و DMARC بشكل مثالي لمصادقة نطاقك. بعد ذلك، نقوم بتحليل سمعة المرسل الخاصة بك، وننفذ ممارسات تنظيف القائمة بقوة لإزالة الفخاخ غير النشطة، ونهيئ عناوين IP الخاصة بك بشكل منهجي. سواء كنت تتعافى من قائمة حظر قاسية أو تقوم بشكل استباقي بإعداد بنية تحتية جديدة، فإننا نضمن وصول رسائلك إلى صندوق الوارد الأساسي.",
+      "features": [
+        "تكوين SPF و DKIM و DMARC",
+        "تدقيق سمعة النطاق وعنوان IP",
+        "إزالة فخاخ البريد العشوائي والارتدادات الصلبة",
+        "استراتيجية وتنفيذ تهيئة IP",
+        "التكامل مع أدوات Google Postmaster",
+        "تحليل محتوى البريد ودرجة البريد العشوائي",
+        "استراتيجية IP المخصص مقابل المشترك",
+        "المراقبة المستمرة لقابلية التسليم"
+      ],
+      "benefits": [
+        "زيادة معدلات الفتح على الفور عن طريق تجاوز مجلد البريد العشوائي",
+        "الامتثال لأحدث متطلبات المرسلين من Google و Yahoo",
+        "حماية سمعة النطاق الرئيسي لعلامتك التجارية من القوائم السوداء",
+        "التأكد من استلام رسائل البريد الإلكتروني الخاصة بالمعاملات المهمة فعلياً",
+        "تقليل الارتدادات الصلبة وتحسين جودة القائمة بسهولة",
+        "تعظيم عائد الاستثمار لبرنامج التسويق عبر البريد الإلكتروني بالكامل"
+      ],
+      "metaTitle": "استشارات قابلية تسليم البريد الإلكتروني | PakSoft",
+      "metaDescription": "إصلاح مشكلات تسليم البريد الإلكتروني الخاصة بك. نقوم بتكوين SPF و DKIM و DMARC وتهيئة عناوين IP الخاصة بك.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "تدقيق البنية التحتية الفنية",
+            "description": "نقوم بتحليل سجلات DNS ومنصة الإرسال وتكوين IP لتحديد بروتوكولات المصادقة المفقودة ونقاط الضعف."
+          },
+          {
+            "step": 2,
+            "title": "التحقق من السمعة والقائمة السوداء",
+            "description": "نتحقق من نطاق الإرسال وعناوين IP الخاصة بك مقابل القوائم السوداء العالمية الرئيسية."
+          },
+          {
+            "step": 3,
+            "title": "المصادقة وإعداد DNS",
+            "description": "نقوم بتهيئة سجلات SPF و DKIM و DMARC الخاصة بك بشكل صحيح ومحاذاتها بدقة لإثبات أن رسائلك مشروعة."
+          },
+          {
+            "step": 4,
+            "title": "تنظيف القائمة والتجزئة",
+            "description": "نقوم بتنظيف قاعدة بياناتك عن طريق إزالة الارتدادات الصلبة وفخاخ البريد العشوائي المعروفة."
+          },
+          {
+            "step": 5,
+            "title": "تهيئة IP والنطاق",
+            "description": "إذا كنت تستخدم عنوان IP مخصصاً جديداً، فإننا ننفذ جدول تهيئة صارماً لزيادة حجم الإرسال ببطء وبناء الثقة."
+          },
+          {
+            "step": 6,
+            "title": "المراقبة المستمرة وإعداد التقارير",
+            "description": "نقوم بإعداد مراقبة آلية لالتقاط الانخفاضات المفاجئة في السمعة أو فشل DMARC."
+          }
+        ],
+        "faq": [
+          {
+            "question": "لماذا بدأت رسائلي الإلكترونية فجأة بالذهاب إلى البريد العشوائي؟",
+            "answer": "يحدث هذا عادةً بسبب زيادة مفاجئة في حجم الإرسال، أو ضرب فخاخ البريد العشوائي، أو عدم الامتثال لقواعد DMARC الجديدة."
+          },
+          {
+            "question": "ما هي SPF و DKIM و DMARC؟",
+            "answer": "إنها سجلات DNS تعمل كجواز سفر رقمي. هي تصادق على رسائل البريد الإلكتروني الخاصة بك وتحمي من الانتحال."
+          },
+          {
+            "question": "هل يمكنك ضمان الوصول إلى صندوق الوارد بنسبة 100%؟",
+            "answer": "لا توجد وكالة شرعية يمكنها ضمان نسبة 100% لأن الخوارزميات تتغير. ومع ذلك، نضمن الامتثال الفني بنسبة 100%."
+          },
+          {
+            "question": "هل يجب أن نستخدم عنوان IP مخصصاً أم مشتركاً؟",
+            "answer": "يعتمد ذلك على الحجم الخاص بك. إذا كنت ترسل أقل من 100,000 بريد شهرياً، فإن المشترك أفضل."
+          },
+          {
+            "question": "كم من الوقت يستغرق إصلاح السمعة المدمرة؟",
+            "answer": "يستغرق التعافي من القائمة السوداء عادةً من 4 إلى 8 أسابيع من النظافة الصارمة للقائمة."
+          },
+          {
+            "question": "هل أحتاج إلى تنظيف قائمة بريدي، حتى لو دفعت ثمنها؟",
+            "answer": "خاصة إذا دفعت ثمنها. القوائم المشتراة مليئة بفخاخ البريد العشوائي. نحن ننصح بشدة بعدم الإرسال إليها."
+          },
+          {
+            "question": "كيف تختبر ما إذا كانت رسائلي ستصل إلى البريد العشوائي قبل إرسالها؟",
+            "answer": "نحن نستخدم اختبار القائمة الأولية لمحاكاة الإرسال إلى مئات الصناديق الحقيقية عبر Gmail و Outlook."
+          },
+          {
+            "question": "ما هي أدوات Google Postmaster ولماذا أحتاجها؟",
+            "answer": "إنها أداة مجانية من Google توضح بالضبط كيف تنظر Gmail إلى سمعة نطاقك."
+          }
+        ],
+        "technologies": [
+          {
+            "icon": "googlepostmaster",
+            "name": "Google Postmaster Tools"
+          },
+          {
+            "icon": "dmarc",
+            "name": "DMARC Analyzer"
+          },
+          {
+            "icon": "litmus",
+            "name": "Litmus"
+          },
+          {
+            "icon": "mxtoolbox",
+            "name": "MxToolbox"
+          },
+          {
+            "icon": "sendgrid",
+            "name": "SendGrid"
+          },
+          {
+            "icon": "mailgun",
+            "name": "Mailgun"
+          },
+          {
+            "icon": "klaviyo",
+            "name": "Klaviyo"
+          },
+          {
+            "icon": "glockapps",
+            "name": "GlockApps"
+          }
+        ]
+      }
+    }
+  }
+}

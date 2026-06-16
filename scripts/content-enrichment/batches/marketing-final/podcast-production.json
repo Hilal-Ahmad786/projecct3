@@ -1,0 +1,598 @@
+{
+  "slug": "podcast-production",
+  "en": {
+    "name": "Podcast Production & Marketing",
+    "shortDescription": "Build a loyal audience with high-quality audio. We provide end-to-end podcast production, editing, and distribution to establish your brand as an industry authority.",
+    "fullDescription": "Podcasting is one of the most intimate and effective ways to build deep trust with your target audience. Unlike fleeting social media posts, a podcast allows you to hold your audience's attention for 30 to 60 minutes at a time. However, producing a professional podcast is incredibly time-consuming and technically demanding. Poor audio quality or inconsistent publishing schedules will kill a show before it gains traction. Our Podcast Production & Marketing services handle the heavy lifting so you can focus on being a great host. We manage everything from the initial strategy and concept development to remote recording setup, professional audio editing (removing filler words, balancing audio), and adding custom intros/outros. But we don't stop at production; we handle the distribution to all major platforms (Spotify, Apple Podcasts, Google) and repurpose your episodes into micro-content (audiograms, short-form videos) to drive listenership via social media.",
+    "features": [
+      "Podcast Strategy & Concept Development",
+      "Remote Recording Setup & Tech Support",
+      "Professional Audio Editing & Mixing",
+      "Custom Intro/Outro Music & Voiceover",
+      "Show Notes & SEO-Optimized Transcriptions",
+      "Hosting & Distribution (Apple, Spotify, etc.)",
+      "Cover Art & Brand Identity Design",
+      "Micro-content Repurposing (TikTok/Reels)"
+    ],
+    "benefits": [
+      "Establish yourself or your executives as thought leaders in your niche",
+      "Build deep, long-term relationships and trust with a highly engaged audience",
+      "Save dozens of hours per week by outsourcing the technical editing process",
+      "Improve your website's SEO with keyword-rich episode transcriptions",
+      "Generate a continuous stream of social media content from a single recording",
+      "Attract high-profile guests and networking opportunities through your show"
+    ],
+    "metaTitle": "Podcast Production Agency | Audio Editing & Marketing | PakSoft",
+    "metaDescription": "Launch and grow a professional podcast. We offer end-to-end podcast production, audio editing, distribution, and marketing to build your audience.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Strategy & Concept",
+          "description": "We define the show's premise, target audience, format (interview vs. solo), and episode frequency to ensure it aligns with your broader marketing goals."
+        },
+        {
+          "step": 2,
+          "title": "Setup & Branding",
+          "description": "We design your podcast cover art, select royalty-free intro/outro music, set up your hosting platform (e.g., Transistor), and advise on the best recording equipment."
+        },
+        {
+          "step": 3,
+          "title": "Recording Support",
+          "description": "We provide you with easy-to-use remote recording tools (like Riverside.fm) that capture studio-quality, uncompressed audio and video locally."
+        },
+        {
+          "step": 4,
+          "title": "Professional Editing",
+          "description": "Our audio engineers clean up the recording—removing 'ums', 'ahs', long pauses, and background noise—while leveling the audio for a polished, broadcast-quality sound."
+        },
+        {
+          "step": 5,
+          "title": "Show Notes & SEO",
+          "description": "We write engaging show notes summarizing the episode, add timestamps, and generate full transcriptions to boost your website's organic search traffic."
+        },
+        {
+          "step": 6,
+          "title": "Distribution & Repurposing",
+          "description": "We publish the episode across all platforms and extract the best 15-60 second clips, adding captions to create viral shorts for TikTok, Reels, and LinkedIn."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Do I need an expensive recording studio?",
+          "answer": "No. While a good microphone (like a Shure MV7 or Audio-Technica ATR2100x) is highly recommended, modern software allows us to capture excellent audio remotely from your office or home."
+        },
+        {
+          "question": "How do we record interviews with remote guests?",
+          "answer": "We use platforms like Riverside.fm or SquadCast. Unlike Zoom, these tools record the audio locally on each person's computer in high definition, bypassing internet connection issues."
+        },
+        {
+          "question": "How long does it take to edit an episode?",
+          "answer": "Typically, a 45-minute episode takes us 3-4 business days to fully edit, mix, write show notes, and prepare the micro-content for social media."
+        },
+        {
+          "question": "Can you also edit the video for a video podcast (Vodcast)?",
+          "answer": "Yes. If you record video alongside the audio, our video editors can create a polished full-length YouTube version, switching camera angles based on who is speaking."
+        },
+        {
+          "question": "Where will my podcast be available?",
+          "answer": "Everywhere. We set up an RSS feed through a hosting provider which automatically distributes your episodes to Apple Podcasts, Spotify, Google Podcasts, Amazon Music, and more."
+        },
+        {
+          "question": "How do you help grow the podcast audience?",
+          "answer": "Discovery is the hardest part of podcasting. We grow your audience primarily by repurposing the best moments into highly shareable short-form videos for social media, driving traffic back to the full episode."
+        },
+        {
+          "question": "Will you help me find guests?",
+          "answer": "While we don't actively book guests as part of standard production, we provide email templates and outreach strategies you can use to secure high-profile guests."
+        },
+        {
+          "question": "Do I own my podcast content?",
+          "answer": "100%. You retain full ownership of the audio, video, RSS feed, and hosting accounts. We are simply your production and marketing partner."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "video",
+          "name": "Riverside.fm / SquadCast"
+        },
+        {
+          "icon": "audio",
+          "name": "Adobe Audition"
+        },
+        {
+          "icon": "audio",
+          "name": "Descript"
+        },
+        {
+          "icon": "podcast",
+          "name": "Spotify / Apple Podcasts"
+        },
+        {
+          "icon": "server",
+          "name": "Transistor / Buzzsprout"
+        },
+        {
+          "icon": "video",
+          "name": "CapCut / Premiere Pro"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Podcast Prodüksiyonu ve Pazarlaması",
+    "shortDescription": "Yüksek kaliteli ses ile sadık bir dinleyici kitlesi oluşturun. Markanızı sektörde bir otorite olarak konumlandırmak için uçtan uca podcast prodüksiyonu, kurgusu ve dağıtımı sağlıyoruz.",
+    "fullDescription": "Podcast, hedef kitlenizle derin bir güven oluşturmanın en samimi ve etkili yollarından biridir. Gelip geçici sosyal medya paylaşımlarının aksine, bir podcast dinleyicilerinizin dikkatini tek seferde 30 ila 60 dakika boyunca canlı tutmanıza olanak tanır. Ancak profesyonel bir podcast üretmek inanılmaz derecede zaman alıcı ve teknik olarak zordur. Düşük ses kalitesi veya tutarsız yayın programları, bir şovu ivme kazanmadan önce öldürebilir. Podcast Prodüksiyonu ve Pazarlama hizmetlerimiz ağır işleri halleder, böylece siz harika bir sunucu olmaya odaklanabilirsiniz. İlk strateji ve konsept geliştirmeden uzaktan kayıt kurulumuna, profesyonel ses kurgusuna (dolgu kelimelerini çıkarma, sesi dengeleme) ve özel introlar/outrolar eklemeye kadar her şeyi yönetiyoruz. Üstelik sadece prodüksiyonla kalmıyor; tüm büyük platformlara (Spotify, Apple Podcasts vb.) dağıtımı yönetiyor ve sosyal medya üzerinden dinleyici çekmek için bölümlerinizi mikro içeriklere (odyogramlar, kısa videolar) dönüştürüyoruz.",
+    "features": [
+      "Podcast Stratejisi ve Konsept Geliştirme",
+      "Uzaktan Kayıt Kurulumu ve Teknik Destek",
+      "Profesyonel Ses Kurgusu (Editing) ve Miksaj",
+      "Özel İntro/Outro Müzik ve Seslendirme",
+      "Bölüm Notları (Show Notes) ve SEO Uyumlu Deşifre",
+      "Barındırma (Hosting) ve Dağıtım (Apple, Spotify vb.)",
+      "Kapak Sanatı ve Marka Kimliği Tasarımı",
+      "Mikro İçerik Dönüştürme (TikTok/Reels/Shorts)"
+    ],
+    "benefits": [
+      "Kendinizi veya yöneticilerinizi nişinizde düşünce liderleri (thought leaders) olarak konumlandırın",
+      "Son derece ilgili bir kitleyle derin, uzun vadeli ilişkiler ve güven inşa edin",
+      "Teknik kurgu sürecini dış kaynak (outsource) kullanarak haftada onlarca saat tasarruf edin",
+      "Anahtar kelime açısından zengin bölüm deşifreleriyle web sitenizin SEO'sunu iyileştirin",
+      "Tek bir kayıttan sosyal medya için sürekli bir içerik akışı oluşturun",
+      "Şovunuz aracılığıyla yüksek profilli konukları ve ağ kurma fırsatlarını çekin"
+    ],
+    "metaTitle": "Podcast Prodüksiyon Ajansı | Ses Kurgusu & Dağıtım | PakSoft",
+    "metaDescription": "Profesyonel bir podcast başlatın ve büyütün. Dinleyici kitlenizi oluşturmak için uçtan uca podcast prodüksiyonu, ses düzenleme, dağıtım ve pazarlama sunuyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Strateji ve Konsept",
+          "description": "Daha geniş pazarlama hedeflerinizle uyumlu olmasını sağlamak için şovun konusunu, hedef kitlesini, formatını (röportaj veya solo) ve bölüm sıklığını tanımlarız."
+        },
+        {
+          "step": 2,
+          "title": "Kurulum ve Markalaşma",
+          "description": "Podcast kapak resminizi tasarlıyor, telifsiz intro/outro müziği seçiyor, barındırma platformunuzu (ör. Transistor) kuruyor ve en iyi kayıt ekipmanı konusunda tavsiyelerde bulunuyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Kayıt Desteği",
+          "description": "Size stüdyo kalitesinde, sıkıştırılmamış ses ve videoyu yerel olarak kaydeden kullanımı kolay uzaktan kayıt araçları (Riverside.fm gibi) sağlıyoruz."
+        },
+        {
+          "step": 4,
+          "title": "Profesyonel Kurgu (Editing)",
+          "description": "Ses mühendislerimiz kaydı temizler; 'ııı', 'eee' gibi dolgu kelimelerini, uzun duraklamaları ve arka plan gürültüsünü giderirken, yayın kalitesinde bir ses için ses seviyelerini dengeler."
+        },
+        {
+          "step": 5,
+          "title": "Bölüm Notları (Show Notes) ve SEO",
+          "description": "Bölümü özetleyen ilgi çekici şov notları yazar, zaman damgaları (timestamps) ekler ve web sitenizin organik arama trafiğini artırmak için tam deşifre metinleri (transcriptions) oluştururuz."
+        },
+        {
+          "step": 6,
+          "title": "Dağıtım ve Yeniden Kullanım (Repurposing)",
+          "description": "Bölümü tüm platformlarda yayınlıyor ve TikTok, Reels ve LinkedIn için viral kısa videolar (shorts) oluşturmak üzere en iyi 15-60 saniyelik klipleri çıkarıp altyazı ekliyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Pahalı bir kayıt stüdyosuna ihtiyacım var mı?",
+          "answer": "Hayır. İyi bir mikrofon (Shure MV7 veya Audio-Technica ATR2100x gibi) şiddetle tavsiye edilmekle birlikte, modern yazılımlar ofisinizden veya evinizden uzaktan mükemmel ses kaydetmemize olanak tanır."
+        },
+        {
+          "question": "Uzaktaki konuklarla röportajları nasıl kaydediyoruz?",
+          "answer": "Riverside.fm veya SquadCast gibi platformlar kullanıyoruz. Zoom'un aksine, bu araçlar internet bağlantısı sorunlarını aşarak sesi her kişinin bilgisayarına yerel ve yüksek çözünürlüklü olarak kaydeder."
+        },
+        {
+          "question": "Bir bölümü kurgulamak (edit) ne kadar sürer?",
+          "answer": "Tipik olarak 45 dakikalık bir bölümü tamamen kurgulamak, mikslemek, şov notlarını yazmak ve sosyal medya için mikro içerikleri hazırlamak 3-4 iş günü sürer."
+        },
+        {
+          "question": "Görüntülü bir podcast (Vodcast) için videoyu da kurgulayabilir misiniz?",
+          "answer": "Evet. Sesin yanı sıra video da kaydederseniz, video editörlerimiz konuşan kişiye göre kamera açılarını değiştirerek pürüzsüz bir tam uzunlukta YouTube sürümü oluşturabilir."
+        },
+        {
+          "question": "Podcast'im nerelerde yayınlanacak?",
+          "answer": "Her yerde. Bölümlerinizi otomatik olarak Apple Podcasts, Spotify, Google Podcasts, Amazon Music ve daha fazlasına dağıtan bir barındırma (hosting) sağlayıcısı aracılığıyla bir RSS akışı kuruyoruz."
+        },
+        {
+          "question": "Podcast dinleyici kitlesini büyütmeye nasıl yardımcı oluyorsunuz?",
+          "answer": "Keşfedilebilirlik, podcast yayıncılığının en zor kısmıdır. Hedef kitlenizi temel olarak en iyi anları sosyal medya için yüksek oranda paylaşılabilir kısa formatlı videolara dönüştürerek büyütüyor ve trafiği tam bölüme yönlendiriyoruz."
+        },
+        {
+          "question": "Konuk bulmama yardım edecek misiniz?",
+          "answer": "Standart prodüksiyonun bir parçası olarak aktif şekilde konuk rezervasyonu yapmasak da, yüksek profilli konukları ikna etmek için kullanabileceğiniz e-posta şablonları ve erişim stratejileri sağlıyoruz."
+        },
+        {
+          "question": "Podcast içeriğimin sahibi ben miyim?",
+          "answer": "%100. Ses, video, RSS akışı ve barındırma (hosting) hesaplarının tam mülkiyetini siz elinizde tutarsınız. Biz sadece sizin prodüksiyon ve pazarlama ortağınızız."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "video",
+          "name": "Riverside.fm / SquadCast"
+        },
+        {
+          "icon": "audio",
+          "name": "Adobe Audition"
+        },
+        {
+          "icon": "audio",
+          "name": "Descript"
+        },
+        {
+          "icon": "podcast",
+          "name": "Spotify / Apple Podcasts"
+        },
+        {
+          "icon": "server",
+          "name": "Transistor / Buzzsprout"
+        },
+        {
+          "icon": "video",
+          "name": "CapCut / Premiere Pro"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Podcast Produktion & Marketing",
+    "shortDescription": "Bauen Sie ein treues Publikum mit hochwertigem Audio auf. Wir bieten End-to-End Podcast-Produktion, Editing und Distribution, um Ihre Marke als Autorität zu etablieren.",
+    "fullDescription": "Podcasting ist einer der intimsten und effektivsten Wege, um tiefes Vertrauen bei Ihrer Zielgruppe aufzubauen. Im Gegensatz zu flüchtigen Social-Media-Posts können Sie mit einem Podcast die Aufmerksamkeit für 30 bis 60 Minuten am Stück fesseln. Eine professionelle Produktion ist jedoch zeitaufwendig und technisch anspruchsvoll. Schlechte Audioqualität oder unregelmäßige Veröffentlichungen töten eine Show schnell. Unsere Podcast-Dienste übernehmen die schwere Arbeit, damit Sie sich darauf konzentrieren können, ein großartiger Gastgeber zu sein. Wir managen alles von der Strategie über das Remote-Recording-Setup bis hin zum professionellen Audio-Editing (Entfernen von Füllwörtern, Audio-Leveling). Wir kümmern uns zudem um die Distribution auf alle großen Plattformen (Spotify, Apple) und wandeln Ihre Episoden in Mikro-Inhalte (Audiogramme, Short-Form-Videos) für Social Media um.",
+    "features": [
+      "Podcast-Strategie & Konzeptentwicklung",
+      "Remote-Recording Setup & Tech-Support",
+      "Professionelles Audio-Editing & Mixing",
+      "Individuelle Intro/Outro-Musik & Voiceover",
+      "Show Notes & SEO-optimierte Transkriptionen",
+      "Hosting & Distribution (Apple, Spotify etc.)",
+      "Cover Art & Brand Identity Design",
+      "Micro-Content Repurposing (TikTok/Reels)"
+    ],
+    "benefits": [
+      "Etablieren Sie sich als Thought Leader in Ihrer Nische",
+      "Bauen Sie langfristige Beziehungen und tiefes Vertrauen auf",
+      "Sparen Sie wöchentlich Dutzende Stunden durch Auslagerung des Editings",
+      "Verbessern Sie Ihre Website-SEO durch keywordreiche Transkriptionen",
+      "Generieren Sie aus einer Aufnahme kontinuierlich Content für Social Media",
+      "Ziehen Sie hochkarätige Gäste und Networking-Möglichkeiten an"
+    ],
+    "metaTitle": "Podcast Produktionsagentur | Audio Editing | PakSoft",
+    "metaDescription": "Starten und vergrößern Sie einen professionellen Podcast. Wir bieten Produktion, Editing, Distribution und Marketing, um Ihr Publikum aufzubauen.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Strategie & Konzept",
+          "description": "Wir definieren Thema, Zielgruppe, Format (Interview vs. Solo) und Frequenz, um sicherzustellen, dass der Podcast Ihren Marketingzielen dient."
+        },
+        {
+          "step": 2,
+          "title": "Setup & Branding",
+          "description": "Wir designen das Cover Art, wählen Intro/Outro-Musik, richten das Hosting (z. B. Transistor) ein und beraten beim Equipment."
+        },
+        {
+          "step": 3,
+          "title": "Recording-Support",
+          "description": "Wir stellen Remote-Recording-Tools (wie Riverside.fm) bereit, die unkomprimiertes Audio und Video in Studioqualität lokal aufzeichnen."
+        },
+        {
+          "step": 4,
+          "title": "Professionelles Editing",
+          "description": "Unsere Audio-Engineers reinigen die Aufnahme (Entfernen von Ähms, Rauschen, Pausen) und pegeln das Audio für Broadcast-Qualität."
+        },
+        {
+          "step": 5,
+          "title": "Show Notes & SEO",
+          "description": "Wir schreiben packende Show Notes mit Zeitstempeln und erstellen vollständige Transkriptionen, um Ihren organischen Traffic zu steigern."
+        },
+        {
+          "step": 6,
+          "title": "Distribution & Repurposing",
+          "description": "Wir veröffentlichen die Episode auf allen Plattformen und extrahieren die besten Clips (15-60s) mit Untertiteln für TikTok, Reels und LinkedIn."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Brauche ich ein teures Aufnahmestudio?",
+          "answer": "Nein. Ein gutes Mikrofon (wie Shure MV7) wird empfohlen, aber moderne Software ermöglicht exzellente Audioaufnahmen direkt aus Ihrem Büro/Zuhause."
+        },
+        {
+          "question": "Wie nehmen wir Interviews mit Gästen aus der Ferne auf?",
+          "answer": "Wir nutzen Plattformen wie Riverside.fm. Im Gegensatz zu Zoom wird das Audio lokal in High Definition aufgezeichnet, wodurch Internetprobleme umgangen werden."
+        },
+        {
+          "question": "Wie lange dauert das Schneiden einer Episode?",
+          "answer": "Typischerweise benötigen wir für eine 45-minütige Episode 3-4 Werktage für Schnitt, Mix, Show Notes und Social-Media-Inhalte."
+        },
+        {
+          "question": "Können Sie auch Video-Podcasts (Vodcasts) bearbeiten?",
+          "answer": "Ja. Wenn Sie Video aufnehmen, schneiden unsere Editoren eine polierte YouTube-Version und wechseln dynamisch die Kameraperspektive je nach Sprecher."
+        },
+        {
+          "question": "Wo wird mein Podcast verfügbar sein?",
+          "answer": "Überall. Wir richten einen RSS-Feed ein, der Ihre Episoden automatisch an Apple Podcasts, Spotify, Google Podcasts, Amazon Music usw. verteilt."
+        },
+        {
+          "question": "Wie helfen Sie beim Wachstum des Podcasts?",
+          "answer": "Sichtbarkeit ist die größte Herausforderung. Wir generieren Wachstum, indem wir die besten Momente in virale Short-Form-Videos für Social Media verwandeln."
+        },
+        {
+          "question": "Helfen Sie mir, Gäste zu finden?",
+          "answer": "Wir buchen standardmäßig keine Gäste, stellen Ihnen aber E-Mail-Templates und Outreach-Strategien zur Verfügung, um hochkarätige Gäste zu gewinnen."
+        },
+        {
+          "question": "Gehören die Podcast-Inhalte mir?",
+          "answer": "Zu 100 %. Sie behalten das volle Eigentum an Audio, Video, RSS-Feed und Hosting. Wir sind lediglich Ihr Produktions- und Marketingpartner."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "video",
+          "name": "Riverside.fm / SquadCast"
+        },
+        {
+          "icon": "audio",
+          "name": "Adobe Audition"
+        },
+        {
+          "icon": "audio",
+          "name": "Descript"
+        },
+        {
+          "icon": "podcast",
+          "name": "Spotify / Apple Podcasts"
+        },
+        {
+          "icon": "server",
+          "name": "Transistor / Buzzsprout"
+        },
+        {
+          "icon": "video",
+          "name": "CapCut / Premiere Pro"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "پوڈ کاسٹ پروڈکشن اور مارکیٹنگ",
+    "shortDescription": "اعلیٰ معیار کی آڈیو کے ساتھ ایک وفادار سامعین بنائیں۔ ہم آپ کے برانڈ کو انڈسٹری میں اتھارٹی بنانے کے لیے اینڈ ٹو اینڈ پوڈ کاسٹ پروڈکشن، ایڈیٹنگ اور ڈسٹری بیوشن فراہم کرتے ہیں۔",
+    "fullDescription": "پوڈ کاسٹنگ آپ کے ہدف کے سامعین کے ساتھ گہرا اعتماد پیدا کرنے کے سب سے موثر طریقوں میں سے ایک ہے۔ سوشل میڈیا پوسٹس کے برعکس، پوڈ کاسٹ آپ کو 30 سے 60 منٹ تک اپنے سامعین کی توجہ حاصل کرنے کی اجازت دیتا ہے۔ تاہم، ایک پیشہ ور پوڈ کاسٹ تیار کرنا انتہائی وقت طلب اور تکنیکی طور پر مشکل ہے۔ خراب آڈیو کوالٹی یا غیر مستقل اشاعت کا شیڈول ایک شو کو کامیاب ہونے سے پہلے ہی ختم کر دے گا۔ ہماری پوڈ کاسٹ پروڈکشن اور مارکیٹنگ سروسز یہ سارا بھاری کام سنبھالتی ہیں تاکہ آپ ایک بہترین میزبان بننے پر توجہ دے سکیں۔ ہم ابتدائی حکمت عملی اور تصوراتی ترقی سے لے کر ریموٹ ریکارڈنگ سیٹ اپ، پروفیشنل آڈیو ایڈیٹنگ (فضول الفاظ کو ہٹانا، آڈیو کو متوازن کرنا)، اور کسٹم انٹرو/آؤٹرو شامل کرنے تک ہر چیز کا انتظام کرتے ہیں۔ ہم آپ کے ایپی سوڈز کو تمام پلیٹ فارمز پر شائع کرتے ہیں اور سوشل میڈیا کے لیے شارٹس بناتے ہیں۔",
+    "features": [
+      "پوڈ کاسٹ حکمت عملی اور تصور کی ترقی",
+      "ریموٹ ریکارڈنگ کا سیٹ اپ اور ٹیک سپورٹ",
+      "پیشہ ورانہ آڈیو ایڈیٹنگ اور مکسنگ",
+      "حسب ضرورت انٹرو/آؤٹرو میوزک اور وائس اوور",
+      "شو نوٹس اور SEO کے لیے بہتر ٹرانسکرپشنز",
+      "ہوسٹنگ اور ڈسٹری بیوشن (ایپل، اسپاٹائف وغیرہ)",
+      "کور آرٹ اور برانڈ کی شناخت کا ڈیزائن",
+      "سوشل میڈیا کے لیے مائیکرو مواد (TikTok/Reels)"
+    ],
+    "benefits": [
+      "اپنے آپ کو یا اپنے ایگزیکٹوز کو اپنی انڈسٹری میں لیڈر کے طور پر قائم کریں",
+      "انتہائی مصروف سامعین کے ساتھ گہرے، طویل مدتی تعلقات اور اعتماد استوار کریں",
+      "تکنیکی ایڈیٹنگ کے عمل کو آؤٹ سورس کر کے ہفتے میں درجنوں گھنٹے بچائیں",
+      "کلیدی الفاظ سے بھرپور ٹرانسکرپشنز کے ساتھ اپنی ویب سائٹ کی SEO کو بہتر بنائیں",
+      "ایک ہی ریکارڈنگ سے سوشل میڈیا مواد کا مسلسل سلسلہ بنائیں",
+      "اپنے شو کے ذریعے ہائی پروفائل مہمانوں اور نیٹ ورکنگ کے مواقع کو راغب کریں"
+    ],
+    "metaTitle": "پوڈ کاسٹ پروڈکشن ایجنسی | آڈیو ایڈیٹنگ اور مارکیٹنگ | PakSoft",
+    "metaDescription": "ایک پیشہ ور پوڈ کاسٹ شروع کریں اور بڑھائیں۔ ہم آپ کے سامعین کو بنانے کے لیے اینڈ ٹو اینڈ پوڈ کاسٹ پروڈکشن، آڈیو ایڈیٹنگ، ڈسٹری بیوشن پیش کرتے ہیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "حکمت عملی اور تصور",
+          "description": "ہم آپ کے مارکیٹنگ کے اہداف کے ساتھ ہم آہنگ کرنے کے لیے شو کی بنیاد، ہدف کے سامعین، فارمیٹ (انٹرویو بمقابلہ سولو)، اور تعدد کی وضاحت کرتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "سیٹ اپ اور برانڈنگ",
+          "description": "ہم آپ کے پوڈ کاسٹ کا کور آرٹ ڈیزائن کرتے ہیں، رائلٹی فری میوزک کا انتخاب کرتے ہیں، آپ کا ہوسٹنگ پلیٹ فارم سیٹ اپ کرتے ہیں، اور بہترین آلات پر مشورہ دیتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "ریکارڈنگ سپورٹ",
+          "description": "ہم آپ کو ریموٹ ریکارڈنگ ٹولز فراہم کرتے ہیں (جیسے Riverside.fm) جو اعلی معیار کی آڈیو اور ویڈیو کو مقامی طور پر ریکارڈ کرتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "پیشہ ورانہ ایڈیٹنگ",
+          "description": "ہمارے آڈیو انجینئرز پس منظر کے شور اور غیر ضروری الفاظ کو ہٹاتے ہیں اور پیشہ ورانہ آواز کے لیے آڈیو لیولز کو متوازن کرتے ہیں۔"
+        },
+        {
+          "step": 5,
+          "title": "شو نوٹس اور SEO",
+          "description": "ہم ایپی سوڈ کا خلاصہ کرنے والے دلکش نوٹس لکھتے ہیں، ٹائم اسٹیمپ شامل کرتے ہیں، اور آپ کی ویب سائٹ کی ٹریفک بڑھانے کے لیے مکمل ٹرانسکرپٹ بناتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "تقسیم اور دوبارہ استعمال",
+          "description": "ہم قسط کو تمام پلیٹ فارمز پر شائع کرتے ہیں اور TikTok، Reels اور LinkedIn کے لیے بہترین لمحات کے مختصر ویڈیوز نکالتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "کیا مجھے ایک مہنگے ریکارڈنگ سٹوڈیو کی ضرورت ہے؟",
+          "answer": "نہیں، ایک اچھا مائکروفون تجویز کیا جاتا ہے، لیکن جدید سافٹ ویئر ہمیں آپ کے دفتر یا گھر سے بہترین آڈیو ریکارڈ کرنے کی سہولت دیتے ہیں۔"
+        },
+        {
+          "question": "ہم دور دراز کے مہمانوں کے ساتھ انٹرویوز کیسے ریکارڈ کرتے ہیں؟",
+          "answer": "ہم Riverside.fm جیسے پلیٹ فارم استعمال کرتے ہیں۔ زوم کے برعکس، یہ ٹولز انٹرنیٹ کنکشن کے مسائل سے بچتے ہوئے ہر شخص کے کمپیوٹر پر مقامی طور پر ہائی ڈیفینیشن میں آڈیو ریکارڈ کرتے ہیں۔"
+        },
+        {
+          "question": "ایک ایپی سوڈ کو ایڈٹ کرنے میں کتنا وقت لگتا ہے؟",
+          "answer": "عام طور پر، 45 منٹ کی ایپی سوڈ کو مکمل طور پر ایڈٹ کرنے، شو نوٹس لکھنے اور سوشل میڈیا مواد تیار کرنے میں ہمیں 3-4 کاروباری دن لگتے ہیں۔"
+        },
+        {
+          "question": "کیا آپ ویڈیو پوڈ کاسٹ (Vodcast) کے لیے ویڈیو کو بھی ایڈٹ کر سکتے ہیں؟",
+          "answer": "ہاں۔ اگر آپ آڈیو کے ساتھ ویڈیو ریکارڈ کرتے ہیں، تو ہم یوٹیوب کے لیے مکمل ویڈیو ایڈٹ کر سکتے ہیں، بشمول ملٹی کیمرہ اینگلز۔"
+        },
+        {
+          "question": "میرا پوڈ کاسٹ کہاں دستیاب ہوگا؟",
+          "answer": "ہر جگہ۔ ہم ہوسٹنگ پرووائیڈر کے ذریعے ایک RSS فیڈ سیٹ اپ کرتے ہیں جو آپ کی اقساط کو خودکار طور پر ایپل پوڈ کاسٹ، اسپاٹائف اور گوگل پوڈ کاسٹ پر تقسیم کرتا ہے۔"
+        },
+        {
+          "question": "آپ پوڈ کاسٹ کے سامعین بڑھانے میں کس طرح مدد کرتے ہیں؟",
+          "answer": "پوڈ کاسٹنگ کا سب سے مشکل حصہ تلاش کیا جانا ہے۔ ہم آپ کے سامعین کو بنیادی طور پر بہترین لمحات کو سوشل میڈیا کے لیے شارٹس میں تبدیل کر کے بڑھاتے ہیں۔"
+        },
+        {
+          "question": "کیا آپ مہمانوں کو تلاش کرنے میں میری مدد کریں گے؟",
+          "answer": "اگرچہ ہم فعال طور پر مہمانوں کی بکنگ نہیں کرتے، لیکن ہم ای میل ٹیمپلیٹس اور آؤٹ ریچ کی حکمت عملی فراہم کرتے ہیں جنہیں استعمال کر کے آپ ہائی پروفائل مہمان حاصل کر سکتے ہیں۔"
+        },
+        {
+          "question": "کیا میں اپنے پوڈ کاسٹ مواد کا مالک ہوں؟",
+          "answer": "100%۔ آپ آڈیو، ویڈیو، RSS فیڈ، اور ہوسٹنگ اکاؤنٹس کی مکمل ملکیت برقرار رکھتے ہیں۔ ہم صرف آپ کی پروڈکشن اور مارکیٹنگ کے شراکت دار ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "video",
+          "name": "Riverside.fm / SquadCast"
+        },
+        {
+          "icon": "audio",
+          "name": "Adobe Audition"
+        },
+        {
+          "icon": "audio",
+          "name": "Descript"
+        },
+        {
+          "icon": "podcast",
+          "name": "Spotify / Apple Podcasts"
+        },
+        {
+          "icon": "server",
+          "name": "Transistor / Buzzsprout"
+        },
+        {
+          "icon": "video",
+          "name": "CapCut / Premiere Pro"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "إنتاج وتسويق البودكاست (Podcast)",
+    "shortDescription": "ابنِ جمهوراً مخلصاً بصوت عالي الجودة. نحن نقدم خدمات إنتاج وتحرير وتوزيع البودكاست من الألف إلى الياء لتأسيس علامتك التجارية كسلطة في مجالها.",
+    "fullDescription": "يعد البودكاست من أكثر الطرق حميمية وفعالية لبناء ثقة عميقة مع جمهورك المستهدف. على عكس منشورات وسائل التواصل الاجتماعي العابرة، يتيح لك البودكاست جذب انتباه جمهورك لمدة 30 إلى 60 دقيقة في المرة الواحدة. ومع ذلك، فإن إنتاج بودكاست احترافي يستغرق وقتاً طويلاً للغاية ويتطلب جهداً فنياً. جودة الصوت الرديئة أو جداول النشر غير المتسقة ستقتل العرض قبل أن يكتسب أي زخم. تتولى خدمات إنتاج وتسويق البودكاست لدينا العمل الشاق حتى تتمكن من التركيز على كونك مضيفاً رائعاً. نحن ندير كل شيء بدءاً من الاستراتيجية وتطوير المفهوم وحتى إعداد التسجيل عن بُعد، والتحرير الصوتي الاحترافي (إزالة الكلمات المكررة، وموازنة الصوت)، وإضافة مقدمات / نهايات مخصصة. لكننا لا نتوقف عند الإنتاج؛ نحن ندير التوزيع على جميع المنصات الرئيسية (Spotify، Apple) ونعيد توظيف حلقاتك في محتوى قصير (مقاطع فيديو قصيرة) لجذب المستمعين عبر وسائل التواصل الاجتماعي.",
+    "features": [
+      "استراتيجية البودكاست وتطوير المفهوم",
+      "إعداد التسجيل عن بعد والدعم الفني",
+      "تحرير ودمج الصوت باحترافية",
+      "موسيقى مقدمة / نهاية مخصصة وتعليق صوتي",
+      "ملاحظات الحلقة (Show Notes) ونصوص محسنة لـ SEO",
+      "الاستضافة والتوزيع (Apple و Spotify وما إلى ذلك)",
+      "تصميم صورة الغلاف وهوية العلامة التجارية",
+      "إعادة توظيف المحتوى الصغير (TikTok / Reels)"
+    ],
+    "benefits": [
+      "تأسيس نفسك كقائد فكر (Thought Leader) في تخصصك",
+      "بناء علاقات طويلة الأمد وثقة عميقة مع جمهور متفاعل للغاية",
+      "توفير عشرات الساعات أسبوعياً من خلال الاستعانة بمصادر خارجية للتحرير الفني",
+      "تحسين SEO موقعك الإلكتروني باستخدام نصوص الحلقات الغنية بالكلمات الرئيسية",
+      "توليد دفق مستمر من محتوى وسائل التواصل الاجتماعي من تسجيل واحد",
+      "جذب ضيوف رفيعي المستوى وفرص للتواصل عبر برنامجك"
+    ],
+    "metaTitle": "وكالة إنتاج البودكاست | تحرير الصوت والتسويق | PakSoft",
+    "metaDescription": "أطلق ونمي بودكاست احترافي. نحن نقدم خدمات إنتاج البودكاست الشاملة، وتحرير الصوت، والتوزيع، والتسويق لبناء جمهورك.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "الاستراتيجية والمفهوم",
+          "description": "نحدد فكرة البرنامج، والجمهور المستهدف، والشكل (مقابلة مقابل فردي)، وتكرار الحلقات لضمان توافقه مع أهدافك التسويقية."
+        },
+        {
+          "step": 2,
+          "title": "الإعداد والعلامة التجارية",
+          "description": "نصمم غلاف البودكاست، ونختار موسيقى خالية من حقوق الطبع، ونعد منصة الاستضافة، ونقدم المشورة بشأن أفضل معدات التسجيل."
+        },
+        {
+          "step": 3,
+          "title": "دعم التسجيل",
+          "description": "نزودك بأدوات تسجيل عن بُعد سهلة الاستخدام (مثل Riverside.fm) تلتقط صوتاً وفيديو بجودة الاستوديو وغير مضغوط محلياً."
+        },
+        {
+          "step": 4,
+          "title": "التحرير الاحترافي",
+          "description": "يقوم مهندسو الصوت لدينا بتنظيف التسجيل - إزالة التأتأة والإيقافات الطويلة والضوضاء الخلفية - مع تسوية الصوت للحصول على جودة بث احترافية."
+        },
+        {
+          "step": 5,
+          "title": "ملاحظات الحلقة وتحسين SEO",
+          "description": "نكتب ملاحظات جذابة تلخص الحلقة، ونضيف طوابع زمنية، وننشئ نصوصاً كاملة لتعزيز حركة البحث العضوي لموقعك."
+        },
+        {
+          "step": 6,
+          "title": "التوزيع وإعادة التوظيف",
+          "description": "ننشر الحلقة عبر جميع المنصات ونستخرج أفضل المقاطع، ونضيف التسميات التوضيحية لإنشاء مقاطع قصيرة لـ TikTok و Reels."
+        }
+      ],
+      "faq": [
+        {
+          "question": "هل أحتاج إلى استوديو تسجيل باهظ الثمن؟",
+          "answer": "لا. في حين يوصى بشدة باستخدام ميكروفون جيد، تتيح لنا البرامج الحديثة التقاط صوت ممتاز عن بُعد من مكتبك أو منزلك."
+        },
+        {
+          "question": "كيف نسجل المقابلات مع ضيوف عن بعد؟",
+          "answer": "نستخدم منصات مثل Riverside.fm. على عكس Zoom، تسجل هذه الأدوات الصوت محلياً على جهاز كل شخص بدقة عالية، متجاوزة مشكلات الإنترنت."
+        },
+        {
+          "question": "كم من الوقت يستغرق تحرير حلقة؟",
+          "answer": "عادةً، تستغرق الحلقة التي مدتها 45 دقيقة من 3 إلى 4 أيام عمل لتحريرها، ومزجها، وكتابة ملاحظات الحلقة، وإعداد محتوى وسائل التواصل الاجتماعي."
+        },
+        {
+          "question": "هل يمكنكم أيضاً تحرير الفيديو لـ (Vodcast)؟",
+          "answer": "نعم. إذا قمت بتسجيل الفيديو بجانب الصوت، فيمكن لمحرري الفيديو لدينا إنشاء نسخة YouTube احترافية، مع تبديل زوايا الكاميرا."
+        },
+        {
+          "question": "أين سيكون البودكاست الخاص بي متاحاً؟",
+          "answer": "في كل مكان. نقوم بإعداد موجز RSS عبر مزود استضافة والذي يوزع حلقاتك تلقائياً على Apple Podcasts و Spotify و Google وغيرها."
+        },
+        {
+          "question": "كيف تساعدون في تنمية جمهور البودكاست؟",
+          "answer": "الاكتشاف هو أصعب جزء. نحن ننمي جمهورك بشكل أساسي من خلال إعادة توظيف أفضل اللحظات في مقاطع فيديو قصيرة قابلة للمشاركة ودفع الزيارات للحلقة الكاملة."
+        },
+        {
+          "question": "هل ستساعدني في العثور على ضيوف؟",
+          "answer": "في حين أننا لا نحجز الضيوف بشكل نشط كجزء من الإنتاج، فإننا نقدم قوالب بريد إلكتروني واستراتيجيات تواصل يمكنك استخدامها لتأمين ضيوف بارزين."
+        },
+        {
+          "question": "هل أمتلك محتوى البودكاست الخاص بي؟",
+          "answer": "100%. تحتفظ بالملكية الكاملة لحسابات الصوت والفيديو وموجز RSS والاستضافة. نحن ببساطة شريك الإنتاج والتسويق الخاص بك."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "video",
+          "name": "Riverside.fm / SquadCast"
+        },
+        {
+          "icon": "audio",
+          "name": "Adobe Audition"
+        },
+        {
+          "icon": "audio",
+          "name": "Descript"
+        },
+        {
+          "icon": "podcast",
+          "name": "Spotify / Apple Podcasts"
+        },
+        {
+          "icon": "server",
+          "name": "Transistor / Buzzsprout"
+        },
+        {
+          "icon": "video",
+          "name": "CapCut / Premiere Pro"
+        }
+      ]
+    }
+  }
+}

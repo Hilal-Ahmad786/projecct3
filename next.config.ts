@@ -175,8 +175,10 @@ const nextConfig = {
             value: '1; mode=block'
           },
           {
+            // SAMEORIGIN (not DENY) so the admin heatmap can embed our own
+            // pages in an iframe overlay; cross-origin framing stays blocked.
             key: 'X-Frame-Options',
-            value: 'DENY'
+            value: 'SAMEORIGIN'
           },
           {
             key: 'X-Content-Type-Options',

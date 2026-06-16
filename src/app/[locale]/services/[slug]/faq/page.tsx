@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import { Locale, locales, defaultLocale } from '@/lib/i18n';
 import { generateAlternateLinks } from '@/lib/seo';
 import { localizeFullPath } from '@/lib/routes';
+import { FAQJsonLd, BreadcrumbJsonLd } from '@/components/seo/JsonLd';
 import FAQPageClient from './FAQPageClient';
 
 const baseUrl = 'https://www.paksoft.com.tr';
@@ -43,6 +44,7 @@ export const revalidate = 3600;
 
 export default async function ServiceFAQPage({ params }: PageProps) {
   const { slug, locale } = await params;
+  const validLocale = locales.includes(locale) ? locale : defaultLocale;
   const service = await getService(slug, locale);
 
   if (!service) {
@@ -51,14 +53,29 @@ export default async function ServiceFAQPage({ params }: PageProps) {
 
   const content = service.content as any || {};
   const faq = content.faq || [];
+  const faqItems = (Array.isArray(faq) ? faq : []).filter(
+    (f: any) => f && typeof f.question === 'string' && typeof f.answer === 'string'
+  );
+
+  const url = (p: string) => `${baseUrl}/${validLocale}${localizeFullPath(p, validLocale)}`;
+  const breadcrumbItems = [
+    { name: 'Home', url: `${baseUrl}/${validLocale}` },
+    { name: 'Services', url: url('/services') },
+    { name: service.name, url: url(`/services/${slug}`) },
+    { name: 'FAQ', url: url(`/services/${slug}/faq`) },
+  ];
 
   return (
-    <FAQPageClient
-      serviceName={service.name}
-      serviceSlug={slug}
-      serviceColor={service.color}
-      faq={faq}
-      locale={locale}
-    />
+    <>
+      {faqItems.length > 0 && <FAQJsonLd faqs={faqItems} />}
+      <BreadcrumbJsonLd items={breadcrumbItems} />
+      <FAQPageClient
+        serviceName={service.name}
+        serviceSlug={slug}
+        serviceColor={service.color}
+        faq={faq}
+        locale={locale}
+      />
+    </>
   );
 }

@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import { localizeFullPath } from '@/lib/routes';
 import { Locale } from '@/lib/i18n';
+import { getPublishedServices } from '@/lib/database/public-queries';
 
 const baseUrl = 'https://www.paksoft.com.tr';
 const allLocales: Locale[] = ['en', 'tr', 'de', 'ar', 'ur'];
@@ -45,65 +46,24 @@ const toolRoutes = [
   { path: '/tools/ai-readiness',    priority: PRIORITY.tools, changeFreq: 'monthly' as const },
 ];
 
-// Service main pages — slugs always stay in English
-const serviceMainPages = [
-  '/services/web-development',
-  '/services/mobile-development',
-  '/services/ui-ux-design',
-  '/services/digital-marketing',
-  '/services/e-commerce',
-  '/services/ai-solutions',
-  '/services/api-development',
-  '/services/python-automation',
-  '/services/devops-cloud',
-  '/services/data-analytics',
-  '/services/cybersecurity',
-  '/services/machine-learning',
-  '/services/conversational-ai',
-  '/services/prompt-engineering',
-  '/services/ai-agents',
-  '/services/rag-solutions',
-  '/services/mlops-deployment',
-  '/services/computer-vision',
-  '/services/llm-finetuning',
-  '/services/voice-ai',
-  '/services/ai-search',
-  '/services/ai-security-review',
-  '/services/ai-readiness-audit',
-  '/services/ai-maintenance',
-];
+// Core sub-pages that exist for every service (canonical sub-nav URLs).
+const serviceSubPages = ['/features', '/process', '/technologies', '/pricing', '/faq'];
 
-// Only services confirmed to have all sub-pages populated (src/data/serviceSubpages.ts)
-const servicesWithSubPages = [
-  '/services/ai-solutions',
-  '/services/api-development',
-  '/services/conversational-ai',
-  '/services/cybersecurity',
-  '/services/data-analytics',
-  '/services/devops-cloud',
-  '/services/digital-marketing',
-  '/services/e-commerce',
-  '/services/machine-learning',
-  '/services/mobile-development',
-  '/services/python-automation',
-  '/services/ui-ux-design',
-  '/services/web-development',
-];
-
-// Sub-pages that actually exist under services/[slug]/
-const serviceSubPages = ['/features', '/process', '/tech-stack', '/portfolio', '/faq'];
-
-// Blog posts — published in Turkish; slugs are locale-agnostic (API resolves per locale)
-const blogPosts = [
-  { slug: 'nextjs-cok-dilli-e-ticaret',      date: new Date('2025-01-15') },
-  { slug: 'python-web-scraping-otomasyonu',   date: new Date('2025-01-10') },
-  { slug: 'react-native-finans-uygulamasi',   date: new Date('2025-01-05') },
-  { slug: 'machine-learning-tahmin-sistemleri', date: new Date('2024-12-30') },
-  { slug: 'headless-cms-coklu-dil-yonetimi',  date: new Date('2024-12-25') },
-  { slug: 'ui-ux-tasarim-prensipleri',        date: new Date('2024-12-20') },
-  { slug: 'ci-cd-pipeline-otomasyonu',        date: new Date('2024-12-15') },
-  { slug: 'shopify-performance-ipuclari',     date: new Date('2024-12-10') },
-];
+// Blog posts are pulled live from the DB inside sitemap() (see below).
+async function getBlogPostsForSitemap(): Promise<{ slug: string; date: Date }[]> {
+  try {
+    const { getPublishedBlogPosts } = await import('@/lib/admin/database/blog-queries');
+    const res = await getPublishedBlogPosts('en', { page: 1, limit: 1000 });
+    return (res.data || [])
+      .filter((p: { slug?: string }) => !!p.slug)
+      .map((p: { slug: string; publishedAt?: Date | string; updatedAt?: Date | string }) => ({
+        slug: p.slug,
+        date: new Date(p.publishedAt || p.updatedAt || DATES.seoRefresh),
+      }));
+  } catch {
+    return [];
+  }
+}
 
 // --------------------------------------------------------------------------
 // Helpers
@@ -148,7 +108,22 @@ function entry(
 // Sitemap
 // --------------------------------------------------------------------------
 
-export default function sitemap(): MetadataRoute.Sitemap {
+const hasArr = (a: unknown) => Array.isArray(a) && a.length > 0;
+
+/** Only list a sub-page when the service actually has that content, so we
+ *  never feed Google thin/empty pages. */
+function subPagesFor(svc: Record<string, unknown>): string[] {
+  const c = (svc.content || {}) as Record<string, unknown>;
+  const subs: string[] = [];
+  if (hasArr(svc.features) || hasArr(c.features)) subs.push('/features');
+  if (hasArr(c.process)) subs.push('/process');
+  if (hasArr(c.technologies)) subs.push('/technologies');
+  if (hasArr(c.faq)) subs.push('/faq');
+  if (hasArr(svc.pricingPackages)) subs.push('/pricing');
+  return subs;
+}
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const entries: MetadataRoute.Sitemap = [];
 
   // 1. Main navigation — all locales, localized paths
@@ -165,38 +140,38 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   });
 
-  // 3. Service main pages — all locales, localized service segment
-  serviceMainPages.forEach(englishPath => {
+  // 3 + 4. Every published service (live from DB) — main page for all, plus the
+  // sub-pages that actually have content. Replaces the old hardcoded ~24 slugs.
+  let services: Record<string, unknown>[] = [];
+  try {
+    services = (await getPublishedServices()) as Record<string, unknown>[];
+  } catch {
+    services = [];
+  }
+  services.forEach(svc => {
+    const slug = typeof svc.slug === 'string' ? svc.slug : null;
+    if (!slug) return;
+    const lastMod = svc.updatedAt ? new Date(svc.updatedAt as string) : DATES.seoRefresh;
+    const base = `/services/${slug}`;
     allLocales.forEach(locale => {
-      entries.push(entry(locale, englishPath, {
-        priority: PRIORITY.serviceDetail,
-        changeFreq: 'weekly',
-        date: DATES.seoRefresh,
-      }));
+      entries.push(entry(locale, base, { priority: PRIORITY.serviceDetail, changeFreq: 'weekly', date: lastMod }));
     });
-  });
-
-  // 4. Service sub-pages — only confirmed services, all locales, localized segments
-  servicesWithSubPages.forEach(servicePath => {
-    serviceSubPages.forEach(subPage => {
-      const fullPath = `${servicePath}${subPage}`;
+    subPagesFor(svc).forEach(sub => {
       allLocales.forEach(locale => {
-        entries.push(entry(locale, fullPath, {
-          priority: PRIORITY.other,
-          changeFreq: 'monthly',
-          date: DATES.seoRefresh,
-        }));
+        entries.push(entry(locale, `${base}${sub}`, { priority: PRIORITY.other, changeFreq: 'monthly', date: lastMod }));
       });
     });
   });
 
-  // 5. Blog posts — include under all locales so Google can pick the right one via hreflang
+  // 5. Blog posts (live from DB) — under all locales so Google picks the right
+  // one via hreflang. Blog slugs are locale-agnostic (the API resolves per locale).
+  const blogPosts = await getBlogPostsForSitemap();
   blogPosts.forEach(({ slug, date }) => {
     const englishPath = `/blog/${slug}`;
     allLocales.forEach(locale => {
       entries.push(entry(locale, englishPath, {
         priority: PRIORITY.blogPost,
-        changeFreq: 'yearly',
+        changeFreq: 'weekly',
         date,
       }));
     });

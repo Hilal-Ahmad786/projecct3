@@ -1,0 +1,638 @@
+{
+  "slug": "influencer-marketing",
+  "en": {
+    "name": "Influencer Marketing",
+    "shortDescription": "Harness the power of authentic voices. We connect your brand with vetted, high-converting influencers and creators to drive brand awareness, build instant credibility, and generate measurable sales.",
+    "fullDescription": "Consumers no longer trust traditional advertising; they trust people. Influencer marketing allows you to tap into highly engaged, pre-built communities that align perfectly with your target demographic. However, managing campaigns in-house often leads to wasted budget on 'fake followers', poor communication, and unmeasurable ROI. We offer end-to-end influencer marketing management. We don't just look at follower counts; we use advanced data tools to analyze audience demographics, engagement rates, and historical conversion data to select the perfect brand ambassadors. From negotiating contracts and briefing creators to managing content approvals and tracking affiliate sales, we handle the entire lifecycle. Whether you need a massive brand awareness push on TikTok or targeted B2B thought leadership on LinkedIn, we execute campaigns that deliver authentic engagement and real revenue.",
+    "features": [
+      "Data-Driven Influencer Discovery & Vetting",
+      "Audience Demographic & Authenticity Analysis",
+      "Contract Negotiation & Rights Management",
+      "Campaign Strategy & Creative Briefing",
+      "Product Seeding & Logistics Management",
+      "Content Review & Approval Workflows",
+      "Affiliate Link & Promo Code Tracking",
+      "Comprehensive ROI & Performance Reporting"
+    ],
+    "benefits": [
+      "Bypass ad blockers and reach your audience natively through trusted creators",
+      "Rapidly build brand credibility by associating with respected niche voices",
+      "Generate highly authentic User-Generated Content (UGC) for your own ads",
+      "Drive targeted traffic that converts at a higher rate than cold traffic",
+      "Save hundreds of hours by outsourcing creator communication and logistics",
+      "Ensure brand safety by working only with thoroughly vetted influencers"
+    ],
+    "metaTitle": "Influencer Marketing Agency | Creator Partnerships | PakSoft",
+    "metaDescription": "Connect with vetted influencers and creators. We manage end-to-end influencer marketing campaigns to build trust, generate UGC, and drive sales.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Campaign Strategy & Goal Definition",
+          "description": "We define what success looks like—app downloads, sales, or awareness—and determine the right platforms (Instagram, TikTok, LinkedIn)."
+        },
+        {
+          "step": 2,
+          "title": "Influencer Identification & Vetting",
+          "description": "Using specialized tools, we source creators whose audience perfectly matches your ICP, rigorously vetting them to ensure no fake followers."
+        },
+        {
+          "step": 3,
+          "title": "Outreach & Negotiation",
+          "description": "We pitch the campaign to creators, negotiate fair compensation (flat fee, affiliate, or gifting), and draft legally binding contracts."
+        },
+        {
+          "step": 4,
+          "title": "Briefing & Content Production",
+          "description": "We provide creators with detailed creative briefs outlining key talking points, while allowing them creative freedom to resonate with their audience."
+        },
+        {
+          "step": 5,
+          "title": "Content Review & Posting",
+          "description": "Before going live, we review content to ensure brand safety and compliance with advertising regulations, coordinating the schedule."
+        },
+        {
+          "step": 6,
+          "title": "Tracking, Amplification & Reporting",
+          "description": "We track clicks and sales using custom promo codes and UTM links, providing a final report detailing Reach, Engagement, and ROI."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Do you work with micro-influencers or macro-influencers?",
+          "answer": "Both. Often, a targeted network of micro-influencers (10k-50k followers) yields higher ROI than a single macro-influencer, but we tailor to your budget."
+        },
+        {
+          "question": "Is influencer marketing effective for B2B companies?",
+          "answer": "Absolutely. B2B influencer marketing is booming on LinkedIn and YouTube. Partnering with industry analysts and thought leaders builds immense trust."
+        },
+        {
+          "question": "How do you measure the ROI of an influencer campaign?",
+          "answer": "We track direct conversions using unique affiliate links, UTM parameters, and promo codes. We also measure cost-per-engagement (CPE)."
+        },
+        {
+          "question": "Who owns the content the influencers create?",
+          "answer": "It depends on the contract. We typically negotiate 'usage rights' so your brand can repurpose the influencer's UGC in your own paid ads."
+        },
+        {
+          "question": "Do you handle shipping products to influencers?",
+          "answer": "Yes. We manage the entire 'product seeding' logistics, ensuring the right products get to the right creators on time."
+        },
+        {
+          "question": "What platforms do you specialize in?",
+          "answer": "We execute campaigns across Instagram, TikTok, YouTube, and LinkedIn. Platform selection is dictated entirely by where your audience spends time."
+        },
+        {
+          "question": "How do you ensure influencers don't have fake followers?",
+          "answer": "We use enterprise-grade platforms (like Upfluence) that analyze audience authenticity, sudden follower spikes, and comment quality to weed out fraud."
+        },
+        {
+          "question": "Do we get to approve the influencers before you contact them?",
+          "answer": "Yes. We present a curated roster of vetted influencers. You have final approval on who represents your brand before outreach begins."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "upfluence",
+          "name": "Upfluence"
+        },
+        {
+          "icon": "traackr",
+          "name": "Traackr"
+        },
+        {
+          "icon": "instagram",
+          "name": "Instagram"
+        },
+        {
+          "icon": "tiktok",
+          "name": "TikTok"
+        },
+        {
+          "icon": "youtube",
+          "name": "YouTube"
+        },
+        {
+          "icon": "grin",
+          "name": "Grin"
+        },
+        {
+          "icon": "impact",
+          "name": "Impact.com"
+        },
+        {
+          "icon": "shopify",
+          "name": "Shopify"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Influencer Pazarlaması",
+    "shortDescription": "Özgün seslerin gücünden yararlanın. Marka bilinirliğini artırmak, anında güvenilirlik oluşturmak ve ölçülebilir satışlar elde etmek için markanızı önceden incelenmiş, yüksek dönüşüm sağlayan influencer'lar ve içerik üreticileriyle buluşturuyoruz.",
+    "fullDescription": "Tüketiciler artık geleneksel reklamlara güvenmiyor; insanlara güveniyorlar. Influencer pazarlaması, hedef kitlenizle mükemmel bir uyum içinde olan, yüksek etkileşimli, önceden oluşturulmuş topluluklara ulaşmanızı sağlar. Ancak kampanyaları şirket içinde yönetmek çoğu zaman 'sahte takipçilere' boşa harcanan bütçelere, zayıf iletişime ve ölçülemeyen yatırım getirisine (ROI) yol açar. Uçtan uca influencer pazarlama yönetimi sunuyoruz. Sadece takipçi sayılarına bakmıyoruz; mükemmel marka elçilerini seçmek için hedef kitle demografisini, etkileşim oranlarını ve geçmiş dönüşüm verilerini analiz eden gelişmiş veri araçları kullanıyoruz. Sözleşme pazarlıklarından ve içerik üreticilerini bilgilendirmekten, içerik onaylarını yönetmeye ve bağlı kuruluş (affiliate) satışlarını izlemeye kadar tüm yaşam döngüsünü biz hallediyoruz. İster TikTok'ta devasa bir marka bilinirliği atağına, ister LinkedIn'de hedeflenmiş B2B düşünce liderliğine ihtiyacınız olsun, özgün etkileşim ve gerçek gelir sağlayan kampanyalar yürütüyoruz.",
+    "features": [
+      "Veriye Dayalı Influencer Keşfi ve İncelemesi",
+      "Kitle Demografisi ve Özgünlük Analizi",
+      "Sözleşme Müzakeresi ve Hak Yönetimi",
+      "Kampanya Stratejisi ve Kreatif Bilgilendirme",
+      "Ürün Gönderimi ve Lojistik Yönetimi",
+      "İçerik İnceleme ve Onay İş Akışları",
+      "Satış Ortaklığı (Affiliate) Bağlantısı ve Promosyon Kodu İzleme",
+      "Kapsamlı ROI ve Performans Raporlaması"
+    ],
+    "benefits": [
+      "Reklam engelleyicileri aşın ve güvenilir üreticiler aracılığıyla kitlenize doğal yollardan ulaşın",
+      "Saygın niş seslerle ilişki kurarak marka güvenilirliğini hızla oluşturun",
+      "Kendi reklamlarınız için son derece özgün Kullanıcı Tarafından Oluşturulan İçerik (UGC) üretin",
+      "Soğuk trafikten daha yüksek oranda dönüşüm sağlayan hedeflenmiş trafik çekin",
+      "İçerik üreticisi iletişimi ve lojistiğini dış kaynak kullanarak yüzlerce saat tasarruf edin",
+      "Yalnızca kapsamlı bir şekilde incelenmiş influencer'larla çalışarak marka güvenliğini sağlayın"
+    ],
+    "metaTitle": "Influencer Pazarlama Ajansı | İçerik Üreticisi Ortaklıkları | PakSoft",
+    "metaDescription": "İncelenmiş influencer'larla bağlantı kurun. Güven oluşturmak, UGC üretmek ve satışları artırmak için uçtan uca influencer pazarlama kampanyaları yönetiyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Kampanya Stratejisi ve Hedef Belirleme",
+          "description": "Uygulama indirmeleri, satışlar veya bilinirlik gibi başarının neye benzediğini tanımlıyor ve doğru platformları belirliyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Influencer Belirleme ve İnceleme",
+          "description": "Özel araçlar kullanarak hedef kitlenize uyan içerik üreticilerini buluyor ve sahte takipçileri olmadığından emin olmak için titizlikle inceliyoruz."
+        },
+        {
+          "step": 3,
+          "title": "İletişim ve Müzakere",
+          "description": "Kampanyayı üreticilere sunuyor, adil bir tazminat (sabit ücret, satış ortaklığı veya hediye) için pazarlık yapıyor ve sözleşmeleri hazırlıyoruz."
+        },
+        {
+          "step": 4,
+          "title": "Bilgilendirme ve İçerik Üretimi",
+          "description": "Üreticilere temel konuşma noktalarını özetleyen ayrıntılı brief'ler sunarken, kendi kitlelerinde yankı uyandırmaları için onlara yaratıcı özgürlük tanıyoruz."
+        },
+        {
+          "step": 5,
+          "title": "İçerik İnceleme ve Yayınlama",
+          "description": "Yayına girmeden önce, marka güvenliğini ve reklam düzenlemelerine uygunluğu sağlamak için içeriği inceliyor ve yayın takvimini koordine ediyoruz."
+        },
+        {
+          "step": 6,
+          "title": "İzleme, Büyütme ve Raporlama",
+          "description": "Özel promosyon kodları kullanarak tıklamaları ve satışları izliyor; Erişim, Etkileşim ve ROI'yi detaylandıran bir nihai rapor sunuyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Mikro influencer'larla mı yoksa makro influencer'larla mı çalışıyorsunuz?",
+          "answer": "Her ikisiyle de. Çoğu zaman hedeflenmiş bir mikro influencer ağı, tek bir makro influencer'dan daha yüksek ROI sağlar, ancak bütçenize göre şekillendiririz."
+        },
+        {
+          "question": "Influencer pazarlaması B2B şirketleri için etkili midir?",
+          "answer": "Kesinlikle. B2B influencer pazarlaması LinkedIn ve YouTube'da hızla büyüyor. Sektör analistleri ve düşünce liderleriyle ortaklık kurmak büyük güven inşa eder."
+        },
+        {
+          "question": "Bir influencer kampanyasının yatırım getirisini (ROI) nasıl ölçüyorsunuz?",
+          "answer": "Benzersiz ortaklık bağlantıları (affiliate), UTM parametreleri ve promosyon kodları kullanarak doğrudan dönüşümleri izliyoruz."
+        },
+        {
+          "question": "Influencer'ların oluşturduğu içeriğin sahibi kimdir?",
+          "answer": "Sözleşmeye bağlıdır. Genellikle markanızın influencer'ın içeriklerini kendi ücretli reklamlarınızda yeniden kullanabilmesi için 'kullanım hakları'nı müzakere ederiz."
+        },
+        {
+          "question": "Ürünlerin influencer'lara gönderimini siz mi hallediyorsunuz?",
+          "answer": "Evet. Doğru ürünlerin doğru içerik üreticilerine zamanında ulaşmasını sağlayarak tüm 'ürün tohumlama' lojistiğini yönetiyoruz."
+        },
+        {
+          "question": "Hangi platformlarda uzmanlaşıyorsunuz?",
+          "answer": "Instagram, TikTok, YouTube ve LinkedIn'de kampanyalar yürütüyoruz. Platform seçimi tamamen hedef kitlenizin nerede zaman geçirdiğine bağlıdır."
+        },
+        {
+          "question": "Influencer'ların sahte takipçileri olmadığından nasıl emin oluyorsunuz?",
+          "answer": "Sahtekarlığı ayıklamak için kitle özgünlüğünü, ani takipçi artışlarını ve yorum kalitesini analiz eden Upfluence gibi kurumsal platformlar kullanıyoruz."
+        },
+        {
+          "question": "Siz onlarla iletişime geçmeden önce influencer'ları onaylayabiliyor muyuz?",
+          "answer": "Evet. Size incelenmiş influencer'lardan ve kitle verilerinden oluşan bir liste sunuyoruz. İletişim başlamadan önce markanızı kimin temsil edeceği konusunda son onay sizindir."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "upfluence",
+          "name": "Upfluence"
+        },
+        {
+          "icon": "traackr",
+          "name": "Traackr"
+        },
+        {
+          "icon": "instagram",
+          "name": "Instagram"
+        },
+        {
+          "icon": "tiktok",
+          "name": "TikTok"
+        },
+        {
+          "icon": "youtube",
+          "name": "YouTube"
+        },
+        {
+          "icon": "grin",
+          "name": "Grin"
+        },
+        {
+          "icon": "impact",
+          "name": "Impact.com"
+        },
+        {
+          "icon": "shopify",
+          "name": "Shopify"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Influencer Marketing",
+    "shortDescription": "Nutzen Sie die Kraft authentischer Stimmen. Wir verbinden Ihre Marke mit geprüften, konversionsstarken Influencern und Creatorn, um die Markenbekanntheit zu steigern, sofortige Glaubwürdigkeit aufzubauen und messbare Verkäufe zu generieren.",
+    "fullDescription": "Verbraucher vertrauen traditioneller Werbung nicht mehr; sie vertrauen Menschen. Influencer Marketing ermöglicht es Ihnen, auf hochgradig engagierte, bereits bestehende Communities zuzugreifen, die perfekt zu Ihrer Zielgruppe passen. Die Inhouse-Verwaltung von Kampagnen führt jedoch oft zu verschwendetem Budget für 'Fake Follower', schlechter Kommunikation und unmessbarem ROI. Wir bieten End-to-End-Management für Influencer-Marketing. Wir schauen nicht nur auf Followerzahlen; wir nutzen fortschrittliche Daten-Tools, um demografische Merkmale, Engagement-Raten und historische Conversion-Daten zu analysieren und die perfekten Markenbotschafter auszuwählen. Von Vertragsverhandlungen und Briefings bis hin zu Content-Freigaben und Affiliate-Tracking kümmern wir uns um den gesamten Lebenszyklus. Ob Sie einen massiven Push für die Brand Awareness auf TikTok oder gezielte B2B-Thought-Leadership auf LinkedIn benötigen – wir setzen Kampagnen um, die authentisches Engagement und echten Umsatz liefern.",
+    "features": [
+      "Datengesteuerte Influencer Discovery & Prüfung",
+      "Audience Demographics & Authentizitäts-Analyse",
+      "Vertragsverhandlungen & Rechtemanagement",
+      "Kampagnenstrategie & Creative Briefings",
+      "Product Seeding & Logistik-Management",
+      "Content Review & Freigabe-Workflows",
+      "Affiliate Link & Promo-Code Tracking",
+      "Umfassendes ROI- & Performance-Reporting"
+    ],
+    "benefits": [
+      "Umgehen Sie Ad-Blocker und erreichen Sie Ihre Zielgruppe über vertrauenswürdige Creator",
+      "Bauen Sie schnell Marken-Glaubwürdigkeit durch anerkannte Nischenstimmen auf",
+      "Generieren Sie authentischen User-Generated Content (UGC) für eigene Ads",
+      "Generieren Sie zielgerichteten Traffic, der besser konvertiert als kalter Traffic",
+      "Sparen Sie Hunderte Stunden durch Outsourcing von Kommunikation und Logistik",
+      "Sichern Sie Brand Safety, indem Sie nur mit geprüften Influencern arbeiten"
+    ],
+    "metaTitle": "Influencer Marketing Agentur | Creator Partnerschaften | PakSoft",
+    "metaDescription": "Verbinden Sie sich mit geprüften Influencern. Wir managen End-to-End Kampagnen, um Vertrauen aufzubauen, UGC zu generieren und Sales zu steigern.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Kampagnenstrategie & Zieldefinition",
+          "description": "Wir definieren Erfolg (App-Downloads, Sales, Awareness) und bestimmen die richtigen Plattformen (Instagram, TikTok, LinkedIn)."
+        },
+        {
+          "step": 2,
+          "title": "Influencer-Identifikation & Prüfung",
+          "description": "Mit speziellen Tools finden wir Creator, die perfekt zu Ihrer ICP passen, und prüfen sie rigoros auf Fake-Follower."
+        },
+        {
+          "step": 3,
+          "title": "Outreach & Verhandlung",
+          "description": "Wir pitchen die Kampagne, verhandeln faire Vergütungen (Festpreis, Affiliate, Gifting) und entwerfen rechtssichere Verträge."
+        },
+        {
+          "step": 4,
+          "title": "Briefing & Content-Produktion",
+          "description": "Wir liefern Creatorn detaillierte Briefings mit Key Messages, lassen ihnen aber kreative Freiheit für ihre Zielgruppe."
+        },
+        {
+          "step": 5,
+          "title": "Content-Review & Veröffentlichung",
+          "description": "Vor dem Live-Gang prüfen wir Inhalte auf Brand Safety und Werberichtlinien und koordinieren den Veröffentlichungsplan."
+        },
+        {
+          "step": 6,
+          "title": "Tracking, Verstärkung & Reporting",
+          "description": "Wir tracken Klicks und Sales mit Promo-Codes und UTM-Links und liefern einen Report zu Reichweite, Engagement und ROI."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Arbeiten Sie mit Micro- oder Macro-Influencern?",
+          "answer": "Beides. Oft bringt ein Netzwerk von Micro-Influencern (10k-50k Follower) einen höheren ROI als ein teurer Macro-Influencer. Wir passen dies ans Budget an."
+        },
+        {
+          "question": "Ist Influencer Marketing auch für B2B effektiv?",
+          "answer": "Absolut. B2B Influencer Marketing boomt auf LinkedIn und YouTube. Partnerschaften mit Branchenanalysten bauen enormes Vertrauen auf."
+        },
+        {
+          "question": "Wie messen Sie den ROI einer Influencer-Kampagne?",
+          "answer": "Wir tracken direkte Conversions mit Affiliate-Links, UTM-Parametern und Promo-Codes und messen Cost-per-Engagement (CPE)."
+        },
+        {
+          "question": "Wem gehört der von Influencern erstellte Content?",
+          "answer": "Das hängt vom Vertrag ab. Wir verhandeln meist 'Nutzungsrechte', damit Sie den UGC in Ihren eigenen Ads verwenden können."
+        },
+        {
+          "question": "Übernehmen Sie den Versand von Produkten an Influencer?",
+          "answer": "Ja. Wir verwalten die gesamte Logistik des 'Product Seedings' und stellen sicher, dass die Produkte pünktlich ankommen."
+        },
+        {
+          "question": "Auf welche Plattformen sind Sie spezialisiert?",
+          "answer": "Wir führen Kampagnen auf Instagram, TikTok, YouTube und LinkedIn durch. Die Wahl hängt davon ab, wo sich Ihre Zielgruppe aufhält."
+        },
+        {
+          "question": "Wie stellen Sie sicher, dass Influencer keine Fake-Follower haben?",
+          "answer": "Wir nutzen Plattformen wie Upfluence, die Authentizität, plötzliches Follower-Wachstum und Kommentar-Qualität analysieren, um Betrug zu erkennen."
+        },
+        {
+          "question": "Können wir Influencer freigeben, bevor Sie diese kontaktieren?",
+          "answer": "Ja. Wir präsentieren Ihnen eine Liste geprüfter Influencer. Sie haben das letzte Wort, wer Ihre Marke vertreten darf."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "upfluence",
+          "name": "Upfluence"
+        },
+        {
+          "icon": "traackr",
+          "name": "Traackr"
+        },
+        {
+          "icon": "instagram",
+          "name": "Instagram"
+        },
+        {
+          "icon": "tiktok",
+          "name": "TikTok"
+        },
+        {
+          "icon": "youtube",
+          "name": "YouTube"
+        },
+        {
+          "icon": "grin",
+          "name": "Grin"
+        },
+        {
+          "icon": "impact",
+          "name": "Impact.com"
+        },
+        {
+          "icon": "shopify",
+          "name": "Shopify"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "انفلواینسر مارکیٹنگ (Influencer Marketing)",
+    "shortDescription": "مستند آوازوں کی طاقت کا استعمال کریں۔ ہم آپ کے برانڈ کو جانچے پرکھے اور زیادہ کنورژن والے انفلواینسرز سے جوڑتے ہیں تاکہ برانڈ کی آگاہی بڑھے، فوری ساکھ قائم ہو، اور قابل پیمائش فروخت پیدا ہو۔",
+    "fullDescription": "صارفین اب روایتی اشتہارات پر بھروسہ نہیں کرتے؛ وہ لوگوں پر بھروسہ کرتے ہیں۔ انفلواینسر مارکیٹنگ آپ کو ایسی انتہائی متحرک کمیونٹیز تک پہنچنے کی اجازت دیتی ہے جو آپ کے ہدف کے سامعین سے بالکل مماثل ہیں۔ تاہم، گھر کے اندر مہمات کا انتظام کرنے سے اکثر 'جعلی پیروکاروں' پر بجٹ کا ضیاع، ناقص مواصلات اور ناقابل پیمائش ROI کا سامنا ہوتا ہے۔ ہم مکمل انفلواینسر مارکیٹنگ مینجمنٹ پیش کرتے ہیں۔ ہم صرف پیروکاروں کی تعداد نہیں دیکھتے؛ ہم بہترین برانڈ سفیروں کو منتخب کرنے کے لیے سامعین کے ڈیٹا، مشغولیت کی شرحوں، اور ماضی کے سیلز ڈیٹا کا تجزیہ کرتے ہیں۔ معاہدوں پر گفت و شنید، مواد کی منظوری، اور فروخت سے لے کر ہر چیز کا انتظام ہم سنبھالتے ہیں۔ چاہے آپ کو TikTok پر زبردست برانڈ بیداری کی ضرورت ہو یا LinkedIn پر B2B فکری قیادت کی، ہم ایسی مہمات چلاتے ہیں جو مستند مشغولیت لاتی ہیں۔",
+    "features": [
+      "ڈیٹا پر مبنی انفلواینسر کی دریافت اور جانچ",
+      "سامعین کی ڈیموگرافک اور اصلیت کا تجزیہ",
+      "معاہدے کی بات چیت اور حقوق کا انتظام",
+      "مہم کی حکمت عملی اور تخلیقی بریفنگ",
+      "پروڈکٹ بھیجنا اور لاجسٹکس کا انتظام",
+      "مواد کا جائزہ اور منظوری کے ورک فلو",
+      "ایفیلی ایٹ لنک اور پرومو کوڈ ٹریکنگ",
+      "جامع ROI اور کارکردگی کی رپورٹنگ"
+    ],
+    "benefits": [
+      "قابل اعتماد تخلیق کاروں کے ذریعے اپنے سامعین تک قدرتی طور پر پہنچیں۔",
+      "معروف لوگوں کے ساتھ منسلک ہو کر تیزی سے برانڈ کی ساکھ بنائیں۔",
+      "اپنے اشتہارات کے لیے انتہائی مستند صارف کا تیار کردہ مواد (UGC) حاصل کریں۔",
+      "ایسی ٹریفک لائیں جو عام ٹریفک سے زیادہ تیزی سے خریداری کرے۔",
+      "تخلیق کاروں کے ساتھ بات چیت اور لاجسٹکس کو آؤٹ سورس کر کے وقت بچائیں۔",
+      "صرف مکمل جانچے گئے انفلواینسرز کے ساتھ کام کر کے برانڈ کی حفاظت کو یقینی بنائیں۔"
+    ],
+    "metaTitle": "انفلواینسر مارکیٹنگ ایجنسی | کریئٹر پارٹنرشپس | PakSoft",
+    "metaDescription": "جانچے گئے انفلواینسرز سے جڑیں۔ ہم اعتماد قائم کرنے، UGC حاصل کرنے، اور فروخت بڑھانے کے لیے مکمل مہمات چلاتے ہیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "مہم کی حکمت عملی اور اہداف",
+          "description": "ہم طے کرتے ہیں کہ کامیابی کیا ہے—چاہے وہ ایپ ڈاؤن لوڈز ہوں یا فروخت—اور مناسب پلیٹ فارمز (جیسے Instagram، TikTok) کا انتخاب کرتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "انفلواینسر کی شناخت اور جانچ",
+          "description": "خاص ٹولز کا استعمال کرتے ہوئے، ہم ایسے تخلیق کار تلاش کرتے ہیں جن کے سامعین آپ کے مثالی کسٹمر سے میل کھاتے ہوں، اور جعلی پیروکاروں کی جانچ کرتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "رابطہ اور گفت و شنید",
+          "description": "ہم تخلیق کاروں سے رابطہ کرتے ہیں، معاوضے (فیس یا تحفہ) پر بات چیت کرتے ہیں، اور قانونی معاہدے تیار کرتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "بریفنگ اور مواد کی تیاری",
+          "description": "ہم تخلیق کاروں کو کلیدی نکات کے ساتھ تفصیلی بریف فراہم کرتے ہیں، جبکہ انہیں تخلیقی آزادی بھی دیتے ہیں۔"
+        },
+        {
+          "step": 5,
+          "title": "مواد کا جائزہ اور اشاعت",
+          "description": "لائیو ہونے سے پہلے، ہم برانڈ کی حفاظت اور اشتہاری قوانین کی تعمیل کو یقینی بنانے کے لیے مواد کا جائزہ لیتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "ٹریکنگ اور رپورٹنگ",
+          "description": "ہم پرومو کوڈز کے ذریعے کلکس اور فروخت کو ٹریک کرتے ہیں اور پہنچ، مشغولیت، اور ROI کی حتمی رپورٹ فراہم کرتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "کیا آپ مائیکرو یا میکرو انفلواینسرز کے ساتھ کام کرتے ہیں؟",
+          "answer": "دونوں کے ساتھ۔ اکثر مائیکرو انفلواینسرز (10k-50k پیروکار) بڑے انفلواینسرز سے زیادہ ROI دیتے ہیں، لیکن ہم بجٹ کے لحاظ سے حکمت عملی بناتے ہیں۔"
+        },
+        {
+          "question": "کیا B2B کمپنیوں کے لیے انفلواینسر مارکیٹنگ موثر ہے؟",
+          "answer": "بالکل۔ B2B انفلواینسر مارکیٹنگ خاص طور پر LinkedIn اور YouTube پر تیزی سے بڑھ رہی ہے۔"
+        },
+        {
+          "question": "آپ مہم کے ROI کی پیمائش کیسے کرتے ہیں؟",
+          "answer": "ہم منفرد لنکس، UTM پیرامیٹرز، اور پرومو کوڈز کا استعمال کر کے براہ راست تبادلوں کو ٹریک کرتے ہیں۔"
+        },
+        {
+          "question": "انفلواینسرز کے بنائے گئے مواد کا مالک کون ہوتا ہے؟",
+          "answer": "یہ معاہدے پر منحصر ہے۔ ہم عام طور پر 'استعمال کے حقوق' پر بات چیت کرتے ہیں تاکہ آپ اس مواد (UGC) کو اپنے اشتہارات میں استعمال کر سکیں۔"
+        },
+        {
+          "question": "کیا آپ انفلواینسرز کو مصنوعات بھیجنے کا کام بھی سنبھالتے ہیں؟",
+          "answer": "جی ہاں۔ ہم لاجسٹکس کا مکمل انتظام کرتے ہیں، اس بات کو یقینی بناتے ہوئے کہ صحیح پروڈکٹس صحیح وقت پر پہنچیں۔"
+        },
+        {
+          "question": "آپ کن پلیٹ فارمز میں مہارت رکھتے ہیں؟",
+          "answer": "ہم Instagram، TikTok، YouTube، اور LinkedIn پر مہم چلاتے ہیں۔ پلیٹ فارم کا انتخاب آپ کے ہدف کے سامعین پر منحصر ہے۔"
+        },
+        {
+          "question": "آپ یہ کیسے یقینی بناتے ہیں کہ انفلواینسرز کے جعلی پیروکار نہیں ہیں؟",
+          "answer": "ہم Upfluence جیسے پلیٹ فارمز استعمال کرتے ہیں جو سامعین کی اصلیت اور کمنٹس کے معیار کا تجزیہ کر کے دھوکہ دہی کو پکڑتے ہیں۔"
+        },
+        {
+          "question": "کیا ہم آپ کے رابطہ کرنے سے پہلے انفلواینسرز کو منظور کر سکتے ہیں؟",
+          "answer": "جی ہاں۔ ہم آپ کو جانچے گئے انفلواینسرز کی فہرست پیش کرتے ہیں۔ رابطہ شروع کرنے سے پہلے حتمی منظوری آپ کی ہوتی ہے۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "upfluence",
+          "name": "Upfluence"
+        },
+        {
+          "icon": "traackr",
+          "name": "Traackr"
+        },
+        {
+          "icon": "instagram",
+          "name": "Instagram"
+        },
+        {
+          "icon": "tiktok",
+          "name": "TikTok"
+        },
+        {
+          "icon": "youtube",
+          "name": "YouTube"
+        },
+        {
+          "icon": "grin",
+          "name": "Grin"
+        },
+        {
+          "icon": "impact",
+          "name": "Impact.com"
+        },
+        {
+          "icon": "shopify",
+          "name": "Shopify"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "التسويق عبر المؤثرين (Influencer Marketing)",
+    "shortDescription": "سخر قوة الأصوات الأصيلة. نحن نربط علامتك التجارية بمؤثرين ومنشئي محتوى موثوقين وعالي التحويل لدفع الوعي بالعلامة التجارية، وبناء مصداقية فورية، وتوليد مبيعات قابلة للقياس.",
+    "fullDescription": "لم يعد المستهلكون يثقون في الإعلانات التقليدية؛ إنهم يثقون في الناس. يتيح لك التسويق عبر المؤثرين الاستفادة من مجتمعات مبنية مسبقاً وشديدة التفاعل تتوافق تماماً مع الفئة الديموغرافية المستهدفة. ومع ذلك، غالباً ما تؤدي إدارة الحملات داخلياً إلى إهدار الميزانية على 'المتابعين الوهميين'، وضعف التواصل، وعائد استثمار (ROI) غير قابل للقياس. نحن نقدم إدارة شاملة للتسويق عبر المؤثرين. نحن لا ننظر فقط إلى أعداد المتابعين؛ بل نستخدم أدوات بيانات متقدمة لتحليل التركيبة السكانية للجمهور، ومعدلات التفاعل، وبيانات التحويل التاريخية لاختيار سفراء العلامة التجارية المثاليين. من التفاوض على العقود وتوجيه المبدعين إلى إدارة الموافقات على المحتوى وتتبع مبيعات الشركات التابعة، نتعامل مع دورة الحياة بأكملها. سواء كنت بحاجة إلى دفعة هائلة للوعي بالعلامة التجارية على TikTok أو قيادة فكرية مستهدفة لـ B2B على LinkedIn، فإننا ننفذ حملات تقدم تفاعلاً حقيقياً وإيرادات فعلية.",
+    "features": [
+      "اكتشاف وتقييم المؤثرين بناءً على البيانات",
+      "التحليل الديموغرافي للجمهور والموثوقية",
+      "التفاوض على العقود وإدارة الحقوق",
+      "استراتيجية الحملة والتوجيه الإبداعي",
+      "إرسال المنتجات وإدارة الخدمات اللوجستية",
+      "مراجعة المحتوى وسير عمل الموافقة",
+      "تتبع الروابط التابعة والرموز الترويجية",
+      "تقارير شاملة عن الأداء وعائد الاستثمار"
+    ],
+    "benefits": [
+      "تجاوز أدوات حظر الإعلانات والوصول إلى جمهورك بشكل طبيعي",
+      "بناء مصداقية العلامة التجارية بسرعة من خلال الأصوات المحترمة",
+      "إنشاء محتوى أصلي من إنشاء المستخدم (UGC) لإعلاناتك الخاصة",
+      "دفع زيارات مستهدفة تتحول بمعدل أعلى من الزيارات الباردة",
+      "توفير مئات الساعات عن طريق الاستعانة بمصادر خارجية للوجستيات",
+      "ضمان سلامة العلامة التجارية من خلال العمل فقط مع مؤثرين موثوقين"
+    ],
+    "metaTitle": "وكالة التسويق عبر المؤثرين | شراكات منشئي المحتوى | PakSoft",
+    "metaDescription": "تواصل مع المؤثرين الموثوقين. ندير حملات التسويق عبر المؤثرين من البداية للنهاية لبناء الثقة وتوليد المبيعات.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "استراتيجية الحملة وتحديد الأهداف",
+          "description": "نحدد شكل النجاح — تنزيلات التطبيقات، أو المبيعات، أو الوعي — ونحدد المنصات المناسبة (Instagram، TikTok، LinkedIn)."
+        },
+        {
+          "step": 2,
+          "title": "تحديد المؤثرين وفحصهم",
+          "description": "باستخدام أدوات متخصصة، نبحث عن المبدعين الذين يتطابق جمهورهم مع عملائك، ونفحصهم بدقة لضمان عدم وجود متابعين وهميين."
+        },
+        {
+          "step": 3,
+          "title": "التواصل والتفاوض",
+          "description": "نعرض الحملة على المبدعين، ونتفاوض على تعويض عادل (رسوم ثابتة، أو عمولة، أو هدايا)، ونصيغ عقوداً ملزمة قانونياً."
+        },
+        {
+          "step": 4,
+          "title": "التوجيه وإنتاج المحتوى",
+          "description": "نزود المبدعين بملخصات إبداعية تفصيلية تحدد نقاط الحديث الرئيسية، مع السماح لهم بالحرية الإبداعية للتواصل مع جمهورهم."
+        },
+        {
+          "step": 5,
+          "title": "مراجعة المحتوى والنشر",
+          "description": "قبل النشر، نراجع المحتوى لضمان سلامة العلامة التجارية والامتثال للوائح الإعلانية، وننسق جدول النشر."
+        },
+        {
+          "step": 6,
+          "title": "التتبع والتقارير",
+          "description": "نتتبع النقرات والمبيعات باستخدام الرموز الترويجية المخصصة، ونقدم تقريراً نهائياً يفصل الوصول والتفاعل وعائد الاستثمار."
+        }
+      ],
+      "faq": [
+        {
+          "question": "هل تعملون مع مؤثرين صغار (Micro) أم كبار (Macro)؟",
+          "answer": "كلاهما. غالباً ما تسفر شبكة المؤثرين الصغار عن عائد استثمار أعلى، لكننا نصمم الاستراتيجية حسب ميزانيتك."
+        },
+        {
+          "question": "هل التسويق عبر المؤثرين فعال لشركات B2B؟",
+          "answer": "بالتأكيد. يزدهر تسويق المؤثرين B2B على LinkedIn و YouTube. الشراكة مع محللي الصناعة تبني ثقة هائلة."
+        },
+        {
+          "question": "كيف تقيس عائد الاستثمار لحملة مؤثرين؟",
+          "answer": "نتتبع التحويلات المباشرة باستخدام روابط تابعة فريدة ورموز ترويجية. كما نقيس تكلفة التفاعل (CPE)."
+        },
+        {
+          "question": "من يملك المحتوى الذي ينشئه المؤثرون؟",
+          "answer": "يعتمد ذلك على العقد. نتفاوض عادةً على 'حقوق الاستخدام' لتتمكن علامتك التجارية من إعادة استخدام المحتوى (UGC) في إعلاناتها."
+        },
+        {
+          "question": "هل تتعاملون مع شحن المنتجات للمؤثرين؟",
+          "answer": "نعم. نحن ندير لوجستيات الشحن بالكامل لضمان وصول المنتجات المناسبة إلى المبدعين المناسبين في الوقت المحدد."
+        },
+        {
+          "question": "ما هي المنصات التي تتخصصون فيها؟",
+          "answer": "ننفذ حملات عبر Instagram و TikTok و YouTube و LinkedIn. يملي اختيار المنصة المكان الذي يقضي فيه جمهورك وقته."
+        },
+        {
+          "question": "كيف تضمنون عدم وجود متابعين وهميين للمؤثرين؟",
+          "answer": "نستخدم منصات احترافية مثل Upfluence لتحليل أصالة الجمهور والارتفاع المفاجئ في النمو لاستبعاد الاحتيال."
+        },
+        {
+          "question": "هل يمكننا الموافقة على المؤثرين قبل الاتصال بهم؟",
+          "answer": "نعم. نقدم لك قائمة منسقة من المؤثرين المعتمدين. لديك الموافقة النهائية على من يمثل علامتك التجارية قبل بدء التواصل."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "upfluence",
+          "name": "Upfluence"
+        },
+        {
+          "icon": "traackr",
+          "name": "Traackr"
+        },
+        {
+          "icon": "instagram",
+          "name": "Instagram"
+        },
+        {
+          "icon": "tiktok",
+          "name": "TikTok"
+        },
+        {
+          "icon": "youtube",
+          "name": "YouTube"
+        },
+        {
+          "icon": "grin",
+          "name": "Grin"
+        },
+        {
+          "icon": "impact",
+          "name": "Impact.com"
+        },
+        {
+          "icon": "shopify",
+          "name": "Shopify"
+        }
+      ]
+    }
+  }
+}

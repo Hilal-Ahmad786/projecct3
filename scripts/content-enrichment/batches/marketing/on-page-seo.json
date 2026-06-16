@@ -1,0 +1,638 @@
+{
+  "en": {
+    "name": "On-Page SEO Services",
+    "shortDescription": "Make your website irresistible to search engines. We meticulously optimize your website's content, HTML tags, and internal architecture to ensure you rank higher and capture more relevant, high-intent organic traffic.",
+    "fullDescription": "You can build the best backlinks in the world, but if your website isn't optimized internally, you will never reach your true ranking potential. On-Page SEO is the foundation of organic search visibility. It's the process of communicating clearly to search engine crawlers exactly what your pages are about and why they are the best answer to a user's query. We conduct comprehensive On-Page SEO audits to identify and fix technical roadblocks and content gaps. We meticulously craft optimized Title Tags and Meta Descriptions that drive high Click-Through Rates (CTR). We structure your content using proper H1-H6 header hierarchies, optimize image alt text, and implement strategic internal linking to distribute 'link equity' throughout your site. We don't just optimize for bots; we ensure your content satisfies the user's search intent, reducing bounce rates and increasing conversions.",
+    "features": [
+      "Comprehensive On-Page SEO Auditing & Reporting",
+      "Keyword Mapping & Search Intent Alignment",
+      "Title Tag & Meta Description Optimization for CTR",
+      "Header Tag (H1-H6) Hierarchy Structuring",
+      "Content Optimization (TF-IDF, LSI Keywords, Readability)",
+      "Internal Linking Strategy & Site Architecture",
+      "Image Optimization (Alt Text, Compression, File Names)",
+      "URL Slug Optimization & Canonical Tag Management"
+    ],
+    "benefits": [
+      "Increase organic rankings for your most valuable, high-converting keywords",
+      "Drive higher Click-Through Rates (CTR) from the search engine results pages",
+      "Improve user experience (UX) with well-structured, easy-to-read content",
+      "Help search engines crawl, index, and understand your website faster",
+      "Boost the ranking power of deeper pages through strategic internal linking",
+      "Future-proof your website against algorithm updates by focusing on search intent"
+    ],
+    "metaTitle": "On-Page SEO Services | Website Optimization | PakSoft",
+    "metaDescription": "Rank higher on Google. We optimize your website's content, meta tags, headers, and internal linking to capture relevant, high-intent organic traffic.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Crawl & Audit",
+          "description": "We use advanced tools (like Screaming Frog) to analyze every page, identifying missing meta tags, broken links, and poor URL structures."
+        },
+        {
+          "step": 2,
+          "title": "Keyword Mapping",
+          "description": "We assign specific primary and secondary keywords to every page, ensuring that no two pages are competing for the same terms."
+        },
+        {
+          "step": 3,
+          "title": "Meta Data & URL Optimization",
+          "description": "We rewrite Title Tags and Meta Descriptions to be keyword-rich and compelling to users, driving higher CTR from search results."
+        },
+        {
+          "step": 4,
+          "title": "Content & Header Structuring",
+          "description": "We restructure page content using logical H1, H2, and H3 tags, and enrich content with LSI keywords to improve topical relevance."
+        },
+        {
+          "step": 5,
+          "title": "Internal Linking & Media Optimization",
+          "description": "We create a strategic internal linking web to guide bots to your most important pages. We compress images and add descriptive Alt Text."
+        },
+        {
+          "step": 6,
+          "title": "Implementation & Re-Indexing",
+          "description": "We implement changes directly in your CMS (WordPress, Shopify) and submit updated URLs to Google Search Console for faster indexing."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the difference between On-Page and Off-Page SEO?",
+          "answer": "On-Page refers to things you control ON your website (content, headers). Off-Page refers to actions taken OUTSIDE your website (link building)."
+        },
+        {
+          "question": "How long does it take to see results from On-Page SEO?",
+          "answer": "Depending on site authority and keyword competitiveness, you can often see ranking improvements within 2 to 6 weeks after Google re-indexes the pages."
+        },
+        {
+          "question": "Do you rewrite all my content?",
+          "answer": "Not necessarily. We optimize existing content by adjusting headers and adding keywords. For complete rewrites, we recommend Content Strategy services."
+        },
+        {
+          "question": "Which CMS platforms do you work with?",
+          "answer": "We work with all major CMS platforms, including WordPress, Shopify, Webflow, Wix, Squarespace, and custom-built sites."
+        },
+        {
+          "question": "What are LSI keywords?",
+          "answer": "Latent Semantic Indexing (LSI) keywords are terms conceptually related to your main keyword. They help search engines understand deep context."
+        },
+        {
+          "question": "Why does internal linking matter?",
+          "answer": "Internal links establish site architecture and spread 'ranking power' from high-authority pages to deeper pages. They also keep users on your site."
+        },
+        {
+          "question": "What is keyword cannibalization?",
+          "answer": "This occurs when multiple pages on your site are optimized for the exact same keyword, causing them to compete against each other. Keyword mapping prevents this."
+        },
+        {
+          "question": "Can I just use the Yoast or Rank Math plugin and be done?",
+          "answer": "Plugins are helpful guides, but they don't understand search intent or overall site architecture. True SEO requires strategic human analysis."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "wordpress",
+          "name": "Yoast / Rank Math"
+        },
+        {
+          "icon": "screamingfrog",
+          "name": "Screaming Frog"
+        },
+        {
+          "icon": "surferseo",
+          "name": "Surfer SEO"
+        },
+        {
+          "icon": "google",
+          "name": "Google Search Console"
+        },
+        {
+          "icon": "ahrefs",
+          "name": "Ahrefs"
+        },
+        {
+          "icon": "semrush",
+          "name": "SEMrush"
+        },
+        {
+          "icon": "clearscope",
+          "name": "Clearscope"
+        },
+        {
+          "icon": "schema",
+          "name": "Schema Markup Generator"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Sayfa İçi SEO (On-Page SEO) Hizmetleri",
+    "shortDescription": "Web sitenizi arama motorları için karşı konulmaz hale getirin. Daha üst sıralarda yer almanızı ve daha alakalı, yüksek niyetli organik trafik yakalamanızı sağlamak için web sitenizin içeriğini, HTML etiketlerini ve iç mimarisini titizlikle optimize ediyoruz.",
+    "fullDescription": "Dünyanın en iyi geri bağlantılarını (backlink) oluşturabilirsiniz, ancak web siteniz dahili olarak optimize edilmemişse, gerçek sıralama potansiyelinize asla ulaşamazsınız. Sayfa İçi SEO, organik arama görünürlüğünün temelidir. Arama motoru tarayıcılarına sayfalarınızın tam olarak neyle ilgili olduğunu ve kullanıcının sorgusuna neden en iyi cevabı sunduğunu açıkça iletme sürecidir. Teknik engelleri ve içerik boşluklarını belirleyip gidermek için kapsamlı Sayfa İçi SEO denetimleri gerçekleştiriyoruz. Yüksek Tıklama Oranları (CTR) sağlayan optimize edilmiş Başlık Etiketleri ve Meta Açıklamaları titizlikle hazırlıyoruz. İçeriğinizi uygun H1-H6 başlık hiyerarşilerini kullanarak yapılandırıyor, resim alt metinlerini optimize ediyor ve 'bağlantı değerini' site geneline dağıtmak için stratejik iç bağlantılar uyguluyoruz. Sadece botlar için optimizasyon yapmıyoruz; içeriğinizin kullanıcının arama niyetini karşılamasını, hemen çıkma oranlarını azaltmasını ve dönüşümleri artırmasını sağlıyoruz.",
+    "features": [
+      "Kapsamlı Sayfa İçi SEO Denetimi ve Raporlama",
+      "Anahtar Kelime Eşleme ve Arama Niyeti Uyumu",
+      "CTR için Başlık (Title) Etiketi ve Meta Açıklama Optimizasyonu",
+      "Başlık Etiketi (H1-H6) Hiyerarşi Yapılandırması",
+      "İçerik Optimizasyonu (TF-IDF, LSI Anahtar Kelimeleri, Okunabilirlik)",
+      "İç Bağlantı Stratejisi ve Site Mimarisi",
+      "Görsel Optimizasyonu (Alt Metin, Sıkıştırma, Dosya İsimleri)",
+      "URL Yapısı Optimizasyonu ve Kurallı (Canonical) Etiket Yönetimi"
+    ],
+    "benefits": [
+      "En değerli, yüksek dönüşüm sağlayan anahtar kelimeleriniz için organik sıralamaları artırın",
+      "Arama motoru sonuç sayfalarından daha yüksek Tıklama Oranları (CTR) elde edin",
+      "İyi yapılandırılmış, okunması kolay içeriklerle kullanıcı deneyimini (UX) iyileştirin",
+      "Arama motorlarının sitenizi daha hızlı taramasına, dizine eklemesine ve anlamasına yardımcı olun",
+      "Stratejik iç bağlantılar yoluyla alt sayfaların sıralama gücünü artırın",
+      "Arama niyetine odaklanarak web sitenizi algoritma güncellemelerine karşı geleceğe hazırlayın"
+    ],
+    "metaTitle": "Sayfa İçi SEO Ajansı | On-Page Site Optimizasyonu | PakSoft",
+    "metaDescription": "Google'da daha üst sıralarda yer alın. Alakalı, yüksek niyetli organik trafik yakalamak için web sitenizin içeriğini, meta etiketlerini ve iç bağlantılarını optimize ediyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Tarama ve Denetim",
+          "description": "Eksik meta etiketleri, kırık bağlantıları ve kötü URL yapılarını belirlemek için her sayfayı gelişmiş araçlar (Screaming Frog gibi) kullanarak analiz ediyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Anahtar Kelime Eşleme",
+          "description": "Sitenizdeki her sayfaya belirli birincil ve ikincil anahtar kelimeler atayarak, iki sayfanın aynı terimler için rekabet etmemesini sağlıyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Meta Veri ve URL Optimizasyonu",
+          "description": "Arama sonuçlarında yüksek CTR sağlamak için tüm Başlık Etiketlerini ve Meta Açıklamaları anahtar kelime açısından zengin ve ikna edici olacak şekilde yeniden yazıyoruz."
+        },
+        {
+          "step": 4,
+          "title": "İçerik ve Başlık Yapılandırması",
+          "description": "Mantıksal H1, H2 ve H3 etiketlerini kullanarak içerik yapısını düzenliyor, anlamsal (LSI) kelimelerle zenginleştiriyoruz."
+        },
+        {
+          "step": 5,
+          "title": "İç Bağlantı ve Medya Optimizasyonu",
+          "description": "Botları en önemli sayfalarınıza yönlendirmek için stratejik bir iç bağlantı ağı oluşturuyoruz. Görselleri sıkıştırıp Alt Metin (Alt Text) ekliyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Uygulama ve Yeniden Dizine Ekleme",
+          "description": "Değişiklikleri doğrudan CMS'inizde (WordPress, Shopify) uyguluyor ve daha hızlı dizine ekleme için URL'leri Google Search Console'a gönderiyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Sayfa İçi (On-Page) ve Sayfa Dışı (Off-Page) SEO arasındaki fark nedir?",
+          "answer": "Sayfa İçi SEO, siteniz ÜZERİNDE kontrol edebileceğiniz (içerik, başlıklar) öğeleri ifade eder. Sayfa Dışı SEO, sıralamayı etkilemek için siteniz DIŞINDA yapılan işlemleri (geri bağlantı oluşturma) ifade eder."
+        },
+        {
+          "question": "Sayfa İçi SEO'dan sonuç almak ne kadar sürer?",
+          "answer": "Sitenin otoritesine ve rekabete bağlı olarak, Google sayfaları yeniden dizine ekledikten sonraki 2 ila 6 hafta içinde genellikle sıralama artışı görebilirsiniz."
+        },
+        {
+          "question": "Tüm içeriğimi yeniden yazıyor musunuz?",
+          "answer": "Gerekli değil. Mevcut içeriği başlıkları ayarlayarak ve kelimeler ekleyerek optimize ederiz. Komple yeniden yazım gerekiyorsa İçerik Stratejisi hizmetimizi öneririz."
+        },
+        {
+          "question": "Hangi CMS platformlarıyla çalışıyorsunuz?",
+          "answer": "WordPress, Shopify, Webflow, Wix, Squarespace ve özel yazılım siteler dahil tüm büyük CMS platformlarıyla çalışıyoruz."
+        },
+        {
+          "question": "LSI anahtar kelimeleri nedir?",
+          "answer": "LSI (Latent Semantic Indexing) kelimeleri, anahtar kelimenizle kavramsal olarak ilişkili terimlerdir. Arama motorlarının sayfanın bağlamını anlamasına yardımcı olur."
+        },
+        {
+          "question": "İç bağlantılar (Internal Linking) neden önemlidir?",
+          "answer": "İç bağlantılar site mimarisini kurar ve 'sıralama gücünü' yüksek otoriteli sayfalardan alt sayfalara yayar. Ayrıca kullanıcıları sitenizde tutar."
+        },
+        {
+          "question": "Anahtar kelime yamyamlığı (cannibalization) nedir?",
+          "answer": "Sitenizdeki birden fazla sayfanın aynı anahtar kelime için optimize edilmesi sonucu arama sonuçlarında birbiriyle rekabet etmesidir. Anahtar kelime eşleme süreci bunu önler."
+        },
+        {
+          "question": "Sadece Yoast veya Rank Math eklentisini kullanmak yeterli değil mi?",
+          "answer": "Eklentiler faydalı araçlardır ancak sadece rehberdirler. Arama niyetini veya genel site mimarisini anlamazlar. Gerçek SEO stratejik insan analizi gerektirir."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "wordpress",
+          "name": "Yoast / Rank Math"
+        },
+        {
+          "icon": "screamingfrog",
+          "name": "Screaming Frog"
+        },
+        {
+          "icon": "surferseo",
+          "name": "Surfer SEO"
+        },
+        {
+          "icon": "google",
+          "name": "Google Search Console"
+        },
+        {
+          "icon": "ahrefs",
+          "name": "Ahrefs"
+        },
+        {
+          "icon": "semrush",
+          "name": "SEMrush"
+        },
+        {
+          "icon": "clearscope",
+          "name": "Clearscope"
+        },
+        {
+          "icon": "schema",
+          "name": "Schema Markup Generator"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "On-Page SEO Services",
+    "shortDescription": "Machen Sie Ihre Website unwiderstehlich für Suchmaschinen. Wir optimieren Inhalte, HTML-Tags und interne Architektur akribisch, um höhere Rankings zu erzielen und mehr relevanten organischen Traffic mit hoher Kaufbereitschaft zu generieren.",
+    "fullDescription": "Sie können die besten Backlinks der Welt aufbauen, aber wenn Ihre Website nicht intern optimiert ist, werden Sie Ihr wahres Ranking-Potenzial nie erreichen. On-Page SEO ist das Fundament der organischen Sichtbarkeit. Es ist der Prozess, den Crawlern der Suchmaschinen klar zu kommunizieren, worum es auf Ihren Seiten geht und warum sie die beste Antwort auf die Suchanfrage eines Nutzers sind. Wir führen umfassende On-Page SEO Audits durch, um technische Hindernisse und inhaltliche Lücken zu identifizieren und zu beheben. Wir erstellen sorgfältig optimierte Title Tags und Meta Descriptions, die hohe Klickraten (CTR) erzielen. Wir strukturieren Ihre Inhalte mit sauberen H1-H6 Hierarchien, optimieren Bild-Alt-Texte und implementieren strategische interne Verlinkungen, um den 'Link Juice' auf Ihrer gesamten Website zu verteilen. Wir optimieren nicht nur für Bots; wir stellen sicher, dass Ihr Inhalt die Suchintention des Nutzers erfüllt, Absprungraten senkt und Conversions steigert.",
+    "features": [
+      "Umfassendes On-Page SEO Auditing & Reporting",
+      "Keyword-Mapping & Ausrichtung auf Suchintention",
+      "Title Tag & Meta Description Optimierung für höhere CTR",
+      "Strukturierung der Header-Tag (H1-H6) Hierarchie",
+      "Content-Optimierung (TF-IDF, LSI Keywords, Lesbarkeit)",
+      "Interne Verlinkungsstrategie & Site-Architektur",
+      "Bildoptimierung (Alt-Text, Komprimierung, Dateinamen)",
+      "URL-Slug-Optimierung & Canonical-Tag-Management"
+    ],
+    "benefits": [
+      "Steigern Sie organische Rankings für Ihre wertvollsten, konvertierenden Keywords",
+      "Erzielen Sie höhere Klickraten (CTR) aus den Suchergebnissen",
+      "Verbessern Sie die Nutzererfahrung (UX) mit gut strukturierten Inhalten",
+      "Helfen Sie Suchmaschinen, Ihre Website schneller zu crawlen und zu verstehen",
+      "Pushen Sie tiefere Seiten durch strategische interne Verlinkung",
+      "Machen Sie Ihre Website durch Fokus auf die Suchintention zukunftssicher"
+    ],
+    "metaTitle": "On-Page SEO Agentur | Website-Optimierung | PakSoft",
+    "metaDescription": "Ranken Sie höher auf Google. Wir optimieren Inhalte, Meta-Tags und interne Verlinkungen Ihrer Website, um relevanten organischen Traffic zu generieren.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Crawl & Audit",
+          "description": "Wir analysieren jede Seite mit fortschrittlichen Tools (wie Screaming Frog), um fehlende Meta-Tags, defekte Links und schlechte URLs zu finden."
+        },
+        {
+          "step": 2,
+          "title": "Keyword-Mapping",
+          "description": "Wir weisen jeder Seite spezifische Keywords zu, um sicherzustellen, dass keine zwei Seiten um dieselben Begriffe konkurrieren."
+        },
+        {
+          "step": 3,
+          "title": "Meta-Daten & URL-Optimierung",
+          "description": "Wir schreiben Title Tags und Meta Descriptions so um, dass sie keyword-reich und überzeugend sind, um eine höhere CTR zu erzielen."
+        },
+        {
+          "step": 4,
+          "title": "Content- & Header-Strukturierung",
+          "description": "Wir strukturieren Seiteninhalte mit logischen H1-H3-Tags und reichern Texte mit LSI-Keywords an, um die thematische Relevanz zu erhöhen."
+        },
+        {
+          "step": 5,
+          "title": "Interne Verlinkung & Medien-Optimierung",
+          "description": "Wir erstellen ein strategisches Netz interner Links, komprimieren Bilder und fügen beschreibende Alt-Texte hinzu."
+        },
+        {
+          "step": 6,
+          "title": "Implementierung & Re-Indexing",
+          "description": "Wir implementieren die Änderungen im CMS (WordPress, Shopify) und reichen die URLs zur schnelleren Indexierung bei der Google Search Console ein."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist der Unterschied zwischen On-Page und Off-Page SEO?",
+          "answer": "On-Page bezieht sich auf alles AUF Ihrer Website (Content, Meta-Tags). Off-Page sind Maßnahmen AUSSERHALB (wie Backlinks)."
+        },
+        {
+          "question": "Wie lange dauert es, bis man Ergebnisse von On-Page SEO sieht?",
+          "answer": "Je nach Autorität der Website oft innerhalb von 2 bis 6 Wochen, nachdem Google die Seiten neu indexiert hat."
+        },
+        {
+          "question": "Schreiben Sie meinen gesamten Content neu?",
+          "answer": "Nicht zwingend. Wir optimieren bestehende Inhalte. Für komplette Neuformulierungen empfehlen wir unseren Content-Strategie-Service."
+        },
+        {
+          "question": "Mit welchen CMS-Plattformen arbeiten Sie?",
+          "answer": "Wir arbeiten mit allen großen CMS wie WordPress, Shopify, Webflow, Wix, Squarespace und Custom-Lösungen."
+        },
+        {
+          "question": "Was sind LSI-Keywords?",
+          "answer": "Latent Semantic Indexing (LSI) Keywords sind Begriffe, die thematisch mit dem Hauptkeyword verwandt sind und den Suchmaschinen den Kontext verdeutlichen."
+        },
+        {
+          "question": "Warum ist interne Verlinkung wichtig?",
+          "answer": "Sie etabliert die Website-Architektur und verteilt Ranking-Power auf tiefere Seiten. Zudem hält sie Nutzer länger auf der Website."
+        },
+        {
+          "question": "Was ist Keyword-Kannibalisierung?",
+          "answer": "Das passiert, wenn mehrere Seiten Ihrer Website für dasselbe Keyword optimiert sind und sich gegenseitig im Ranking blockieren."
+        },
+        {
+          "question": "Reicht nicht ein Plugin wie Yoast oder Rank Math?",
+          "answer": "Plugins sind hilfreich, verstehen aber weder Suchintention noch die komplexe Architektur der Website. Wahres SEO erfordert strategische Analyse."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "wordpress",
+          "name": "Yoast / Rank Math"
+        },
+        {
+          "icon": "screamingfrog",
+          "name": "Screaming Frog"
+        },
+        {
+          "icon": "surferseo",
+          "name": "Surfer SEO"
+        },
+        {
+          "icon": "google",
+          "name": "Google Search Console"
+        },
+        {
+          "icon": "ahrefs",
+          "name": "Ahrefs"
+        },
+        {
+          "icon": "semrush",
+          "name": "SEMrush"
+        },
+        {
+          "icon": "clearscope",
+          "name": "Clearscope"
+        },
+        {
+          "icon": "schema",
+          "name": "Schema Markup Generator"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "آن-پیج ایس ای او سروسز (On-Page SEO Services)",
+    "shortDescription": "اپنی ویب سائٹ کو سرچ انجنوں کے لیے پرکشش بنائیں۔ ہم آپ کی ویب سائٹ کے مواد، HTML ٹیگز اور اندرونی ڈھانچے کو بہتر بناتے ہیں تاکہ آپ کو بہتر رینکنگ اور زیادہ متعلقہ ٹریفک ملے۔",
+    "fullDescription": "آپ دنیا کے بہترین بیک لنکس بنا سکتے ہیں، لیکن اگر آپ کی ویب سائٹ اندرونی طور پر آپٹیمائزڈ نہیں ہے، تو آپ کبھی بھی بہترین رینکنگ حاصل نہیں کر سکیں گے۔ آن-پیج SEO سرچ انجن کی نمائش کی بنیاد ہے۔ یہ سرچ انجن کرالرز کو واضح طور پر بتانے کا عمل ہے کہ آپ کے صفحات کس بارے میں ہیں اور وہ صارف کے سوال کا بہترین جواب کیوں ہیں۔ ہم تکنیکی رکاوٹوں اور مواد کی کمیوں کو دور کرنے کے لیے جامع آڈٹ کرتے ہیں۔ ہم بہترین Title Tags اور Meta Descriptions تیار کرتے ہیں جو کلک تھرو ریٹ (CTR) میں اضافہ کرتے ہیں۔ ہم H1-H6 ہیڈرز کا استعمال کر کے مواد کو منظم کرتے ہیں، تصویروں کے Alt Text کو بہتر بناتے ہیں، اور اندرونی لنکنگ (internal linking) کرتے ہیں۔ ہم صرف بوٹس (bots) کے لیے نہیں، بلکہ صارفین کے لیے بھی ویب سائٹ کو بہتر بناتے ہیں تاکہ وہ زیادہ دیر تک سائٹ پر رہیں۔",
+    "features": [
+      "جامع آن پیج SEO آڈٹ اور رپورٹنگ",
+      "کی ورڈ میپنگ اور سرچ انٹینٹ کی ہم آہنگی",
+      "بہتر CTR کے لیے ٹائٹل ٹیگ اور میٹا ڈسکرپشن کی اصلاح",
+      "ہیڈر ٹیگ (H1-H6) کے ڈھانچے کی ترتیب",
+      "مواد کی آپٹیمائزیشن (TF-IDF, LSI کی ورڈز)",
+      "اندرونی لنکنگ (Internal Linking) کی حکمت عملی",
+      "تصویروں کی اصلاح (Alt Text، سائز کم کرنا)",
+      "URL آپٹیمائزیشن اور Canonical ٹیگ کا انتظام"
+    ],
+    "benefits": [
+      "سب سے زیادہ منافع بخش کی ورڈز پر اپنی رینکنگ میں اضافہ کریں۔",
+      "گوگل سرچ کے نتائج سے کلکس (CTR) کی شرح بڑھائیں۔",
+      "بہتر اور منظم مواد کے ذریعے صارف کا تجربہ (UX) بہتر بنائیں۔",
+      "سرچ انجنوں کو اپنی ویب سائٹ کو تیزی سے انڈیکس کرنے اور سمجھنے میں مدد دیں۔",
+      "اندرونی لنکنگ کے ذریعے ویب سائٹ کے اندرونی صفحات کی رینکنگ بڑھائیں۔",
+      "الگورتھم کی تبدیلیوں سے بچنے کے لیے سرچ انٹینٹ (Search Intent) پر توجہ دیں۔"
+    ],
+    "metaTitle": "آن-پیج ایس ای او ایجنسی | ویب سائٹ آپٹیمائزیشن | PakSoft",
+    "metaDescription": "گوگل پر رینکنگ بڑھائیں۔ ہم آپ کی ویب سائٹ کے مواد، میٹا ٹیگز اور اندرونی لنکس کو بہتر بناتے ہیں تاکہ آپ کو بہترین آرگینک ٹریفک ملے۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "آڈٹ اور کرالنگ",
+          "description": "ہم Screaming Frog جیسے ٹولز کا استعمال کر کے ہر پیج کا تجزیہ کرتے ہیں اور غائب میٹا ٹیگز یا ٹوٹے ہوئے لنکس تلاش کرتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "کی ورڈ میپنگ",
+          "description": "ہم ہر صفحے کے لیے مخصوص کی ورڈز طے کرتے ہیں تاکہ کوئی بھی دو صفحات ایک ہی کی ورڈ کے لیے آپس میں مقابلہ نہ کریں۔"
+        },
+        {
+          "step": 3,
+          "title": "میٹا ڈیٹا اور URL کی اصلاح",
+          "description": "ہم Title Tags اور Meta Descriptions کو نئے سرے سے لکھتے ہیں تاکہ سرچ نتائج سے زیادہ سے زیادہ کلکس (CTR) حاصل کیے جا سکیں۔"
+        },
+        {
+          "step": 4,
+          "title": "مواد اور ہیڈر کی ترتیب",
+          "description": "ہم H1, H2, H3 ٹیگز کا استعمال کر کے مواد کو منظم کرتے ہیں اور LSI کی ورڈز شامل کر کے مواد کو مزید متعلقہ بناتے ہیں۔"
+        },
+        {
+          "step": 5,
+          "title": "اندرونی لنکنگ اور میڈیا",
+          "description": "ہم سرچ بوٹس کو اہم صفحات تک رہنمائی کرنے کے لیے اندرونی لنکس کا جال بناتے ہیں اور تصویروں کا سائز کم کر کے Alt Text لگاتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "اطلاق اور ری-انڈیکسنگ",
+          "description": "ہم تبدیلیاں براہ راست آپ کے CMS (WordPress, Shopify) میں لاگو کرتے ہیں اور گوگل کو تیزی سے انڈیکس کرنے کے لیے درخواست بھیجتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "آن-پیج اور آف-پیج SEO میں کیا فرق ہے؟",
+          "answer": "آن-پیج SEO ان چیزوں پر ہوتا ہے جو آپ کی ویب سائٹ پر ہیں (مواد، ہیڈرز)۔ آف-پیج SEO کا مطلب وہ کام ہیں جو آپ کی ویب سائٹ سے باہر کیے جاتے ہیں (جیسے بیک لنکس)۔"
+        },
+        {
+          "question": "آن-پیج SEO کے نتائج دیکھنے میں کتنا وقت لگتا ہے؟",
+          "answer": "ویب سائٹ کی اتھارٹی اور مقابلے کے لحاظ سے، گوگل کی جانب سے صفحات کو دوبارہ انڈیکس کرنے کے 2 سے 6 ہفتوں بعد رینکنگ میں بہتری نظر آنا شروع ہو جاتی ہے۔"
+        },
+        {
+          "question": "کیا آپ میرا سارا مواد دوبارہ لکھیں گے؟",
+          "answer": "ضروری نہیں۔ ہم موجودہ مواد میں کی ورڈز شامل کر کے اسے بہتر بناتے ہیں۔ اگر مکمل طور پر نیا مواد درکار ہو، تو ہم کنٹینٹ اسٹریٹجی کی سروس تجویز کرتے ہیں۔"
+        },
+        {
+          "question": "آپ کن CMS پلیٹ فارمز کے ساتھ کام کرتے ہیں؟",
+          "answer": "ہم WordPress, Shopify, Webflow, Wix سمیت تمام بڑے پلیٹ فارمز اور کسٹم بنی ہوئی ویب سائٹس پر کام کرتے ہیں۔"
+        },
+        {
+          "question": "LSI کی ورڈز کیا ہوتے ہیں؟",
+          "answer": "LSI کی ورڈز وہ الفاظ ہیں جو آپ کے مین کی ورڈ سے جڑے ہوتے ہیں۔ یہ سرچ انجن کو بتاتے ہیں کہ آپ کے صفحے کا اصل موضوع کیا ہے۔"
+        },
+        {
+          "question": "اندرونی لنکنگ (Internal Linking) کیوں اہم ہے؟",
+          "answer": "اندرونی لنکس مضبوط صفحات سے رینکنگ کی طاقت کمزور صفحات تک پہنچاتے ہیں، اور صارفین کو زیادہ دیر تک ویب سائٹ پر روکے رکھتے ہیں۔"
+        },
+        {
+          "question": "کی ورڈ کینیبلائزیشن (Keyword Cannibalization) کیا ہے؟",
+          "answer": "یہ تب ہوتا ہے جب آپ کی اپنی ویب سائٹ کے کئی صفحات ایک ہی کی ورڈ پر رینک ہونے کی کوشش کرتے ہیں۔ ہماری کی ورڈ میپنگ اس سے بچاتی ہے۔"
+        },
+        {
+          "question": "کیا میں صرف Yoast یا Rank Math پلگ ان استعمال نہیں کر سکتا؟",
+          "answer": "پلگ انز صرف مددگار ٹولز ہیں، وہ سرچ انٹینٹ یا ویب سائٹ کے پورے ڈھانچے کو نہیں سمجھتے۔ اس کے لیے انسانی ماہر کی ضرورت ہوتی ہے۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "wordpress",
+          "name": "Yoast / Rank Math"
+        },
+        {
+          "icon": "screamingfrog",
+          "name": "Screaming Frog"
+        },
+        {
+          "icon": "surferseo",
+          "name": "Surfer SEO"
+        },
+        {
+          "icon": "google",
+          "name": "Google Search Console"
+        },
+        {
+          "icon": "ahrefs",
+          "name": "Ahrefs"
+        },
+        {
+          "icon": "semrush",
+          "name": "SEMrush"
+        },
+        {
+          "icon": "clearscope",
+          "name": "Clearscope"
+        },
+        {
+          "icon": "schema",
+          "name": "Schema Markup Generator"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "خدمات السيو الداخلي (On-Page SEO)",
+    "shortDescription": "اجعل موقع الويب الخاص بك لا يقاوم لمحركات البحث. نقوم بتحسين محتوى موقع الويب الخاص بك، وعلامات HTML، والبنية الداخلية بدقة لضمان ترتيبك بشكل أعلى والتقاط المزيد من الزيارات العضوية ذات الصلة والنوايا العالية.",
+    "fullDescription": "يمكنك بناء أفضل الروابط الخلفية في العالم، ولكن إذا لم يتم تحسين موقعك داخلياً، فلن تصل أبداً إلى إمكانات الترتيب الحقيقية. السيو الداخلي هو أساس الرؤية العضوية للبحث. إنها عملية التواصل الواضح مع زواحف محركات البحث حول ماهية صفحاتك بالضبط ولماذا هي أفضل إجابة لاستعلام المستخدم. نجري عمليات تدقيق شاملة للسيو الداخلي لتحديد وإصلاح العقبات الفنية وفجوات المحتوى. نقوم بصياغة علامات العناوين (Title Tags) والأوصاف الوصفية (Meta Descriptions) بدقة والتي تدفع معدلات نقر عالية (CTR). نقوم بتنظيم المحتوى الخاص بك باستخدام تسلسلات هرمية مناسبة لعلامات الرأس (H1-H6)، وتحسين النص البديل للصور، وتنفيذ ربط داخلي استراتيجي لتوزيع 'قيمة الرابط' في جميع أنحاء موقعك. نحن لا نقوم بالتحسين للروبوتات فحسب؛ بل نضمن أن المحتوى الخاص بك يلبي نية بحث المستخدم، مما يقلل من معدلات الارتداد ويزيد التحويلات.",
+    "features": [
+      "تدقيق وإعداد تقارير شاملة للسيو الداخلي",
+      "رسم خرائط الكلمات الرئيسية ومواءمة نية البحث",
+      "تحسين علامة العنوان والوصف التعريفي لزيادة النقر (CTR)",
+      "هيكلة التسلسل الهرمي لعلامات الرأس (H1-H6)",
+      "تحسين المحتوى (TF-IDF، كلمات LSI، سهولة القراءة)",
+      "استراتيجية الربط الداخلي وبنية الموقع",
+      "تحسين الصور (النص البديل، الضغط، أسماء الملفات)",
+      "تحسين بنية URL وإدارة العلامات الأساسية (Canonical)"
+    ],
+    "benefits": [
+      "زيادة الترتيب العضوي للكلمات الرئيسية الأكثر قيمة وعالية التحويل",
+      "دفع معدلات نقر إلى الظهور (CTR) أعلى من صفحات نتائج محركات البحث",
+      "تحسين تجربة المستخدم (UX) بمحتوى جيد التنظيم وسهل القراءة",
+      "مساعدة محركات البحث على زحف وفهرسة وفهم موقعك بشكل أسرع",
+      "تعزيز قوة الترتيب للصفحات العميقة من خلال الربط الداخلي الاستراتيجي",
+      "تأمين موقعك ضد تحديثات الخوارزمية المستقبلية بالتركيز على نية البحث"
+    ],
+    "metaTitle": "وكالة السيو الداخلي | تحسين موقع الويب | PakSoft",
+    "metaDescription": "احتل مرتبة أعلى في جوجل. نقوم بتحسين محتوى موقعك والعلامات الوصفية والروابط الداخلية لالتقاط زيارات عضوية عالية النية.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "الزحف والتدقيق",
+          "description": "نستخدم أدوات متقدمة (مثل Screaming Frog) لتحليل كل صفحة، وتحديد العلامات الوصفية المفقودة، والروابط المعطلة، وعناوين URL السيئة."
+        },
+        {
+          "step": 2,
+          "title": "رسم خرائط الكلمات الرئيسية",
+          "description": "نقوم بتعيين كلمات رئيسية أساسية وثانوية لكل صفحة، مما يضمن عدم تنافس صفحتين على نفس المصطلحات (أكل الكلمات الرئيسية)."
+        },
+        {
+          "step": 3,
+          "title": "تحسين البيانات الوصفية وعناوين URL",
+          "description": "نعيد كتابة علامات العناوين والأوصاف لتكون غنية بالكلمات الرئيسية وجذابة للمستخدمين، مما يؤدي إلى زيادة معدل النقر (CTR)."
+        },
+        {
+          "step": 4,
+          "title": "هيكلة المحتوى والعناوين",
+          "description": "نقوم بإعادة هيكلة محتوى الصفحة باستخدام علامات H1 و H2 و H3 منطقية، ونثري المحتوى بكلمات LSI لتحسين الصلة الموضعية."
+        },
+        {
+          "step": 5,
+          "title": "الربط الداخلي وتحسين الوسائط",
+          "description": "نقوم بإنشاء شبكة ربط داخلي استراتيجية لتوجيه الروبوتات لصفحاتك الأكثر أهمية. نضغط الصور ونضيف نصاً بديلاً وصفياً."
+        },
+        {
+          "step": 6,
+          "title": "التنفيذ وإعادة الفهرسة",
+          "description": "ننفذ التغييرات مباشرة في نظام إدارة المحتوى (WordPress، Shopify) ونرسل عناوين URL إلى Google Search Console لفهرسة أسرع."
+        }
+      ],
+      "faq": [
+        {
+          "question": "ما الفرق بين السيو الداخلي (On-Page) والسيو الخارجي (Off-Page)؟",
+          "answer": "يشير الداخلي إلى الأشياء التي تتحكم فيها 'داخل' موقعك (محتوى، عناوين). يشير الخارجي إلى الإجراءات المتخذة 'خارج' موقعك (بناء الروابط)."
+        },
+        {
+          "question": "كم من الوقت يستغرق رؤية نتائج السيو الداخلي؟",
+          "answer": "اعتماداً على سلطة الموقع والمنافسة، يمكنك غالباً رؤية تحسينات في الترتيب خلال 2 إلى 6 أسابيع بعد إعادة فهرسة جوجل للصفحات."
+        },
+        {
+          "question": "هل تعيدون كتابة كل المحتوى الخاص بي؟",
+          "answer": "ليس بالضرورة. نحن نحسن المحتوى الحالي بتعديل العناوين وإضافة الكلمات. لإعادة الكتابة الكاملة، نوصي بخدمات استراتيجية المحتوى."
+        },
+        {
+          "question": "ما هي منصات CMS التي تعملون معها؟",
+          "answer": "نعمل مع جميع منصات إدارة المحتوى الرئيسية، بما في ذلك WordPress و Shopify و Webflow و Wix و Squarespace والمواقع المخصصة."
+        },
+        {
+          "question": "ما هي كلمات LSI؟",
+          "answer": "الكلمات ذات الفهرسة الدلالية الكامنة (LSI) هي مصطلحات مرتبطة مفاهيمياً بكلمتك الرئيسية. إنها تساعد محركات البحث على فهم السياق العميق للعمل."
+        },
+        {
+          "question": "لماذا الربط الداخلي مهم؟",
+          "answer": "يؤسس بنية الموقع وينشر 'قوة الترتيب' من الصفحات ذات السلطة العالية إلى الصفحات العميقة. كما أنه يبقي المستخدمين في موقعك."
+        },
+        {
+          "question": "ما هو أكل الكلمات الرئيسية (Keyword Cannibalization)؟",
+          "answer": "يحدث هذا عندما يتم تحسين صفحات متعددة على موقعك لنفس الكلمة الرئيسية، مما يجعلها تتنافس ضد بعضها البعض. يمنع رسم خرائط الكلمات ذلك."
+        },
+        {
+          "question": "ألا يمكنني فقط استخدام مكون Yoast أو Rank Math الإضافي والانتهاء من الأمر؟",
+          "answer": "المكونات الإضافية هي أدلة مفيدة، لكنها لا تفهم نية البحث أو بنية الموقع العامة. يتطلب السيو الحقيقي تحليلاً بشرياً استراتيجياً."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "wordpress",
+          "name": "Yoast / Rank Math"
+        },
+        {
+          "icon": "screamingfrog",
+          "name": "Screaming Frog"
+        },
+        {
+          "icon": "surferseo",
+          "name": "Surfer SEO"
+        },
+        {
+          "icon": "google",
+          "name": "Google Search Console"
+        },
+        {
+          "icon": "ahrefs",
+          "name": "Ahrefs"
+        },
+        {
+          "icon": "semrush",
+          "name": "SEMrush"
+        },
+        {
+          "icon": "clearscope",
+          "name": "Clearscope"
+        },
+        {
+          "icon": "schema",
+          "name": "Schema Markup Generator"
+        }
+      ]
+    }
+  },
+  "slug": "on-page-seo"
+}

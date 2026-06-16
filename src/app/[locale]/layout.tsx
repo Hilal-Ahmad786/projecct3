@@ -8,6 +8,7 @@ import Footer from '@/components/Footer'
 import FloatingButtons from '@/components/FloatingButtons'
 import { GlobalJsonLd } from '@/components/seo/JsonLd'
 import PageTransition from '@/components/PageTransition'
+import HeatmapTracker from '@/components/HeatmapTracker'
 
 interface LocaleLayoutProps {
   children: ReactNode
@@ -30,6 +31,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
         </main>
         <Footer />
         <FloatingButtons />
+        <HeatmapTracker />
       </TranslationsProvider>
     </div>
   )

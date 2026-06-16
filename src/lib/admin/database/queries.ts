@@ -1539,6 +1539,48 @@ export async function trackAnalyticsEvent(data: {
   return getPrismaClient().analyticsEvent.create({ data });
 }
 
+// ── Click heatmap ────────────────────────────────────────────────────
+// Click events are stored as AnalyticsEvent rows (eventType 'click') with
+// metadata { xpct, ypct, vw, tag }. No dedicated table / migration needed.
+
+function heatmapSince(days: number): Date {
+  const d = new Date();
+  d.setDate(d.getDate() - (Number.isFinite(days) ? days : 30));
+  return d;
+}
+
+/** Pages that have recorded clicks, with counts — for the page picker. */
+export async function getHeatmapPages(days = 30) {
+  const rows = await getPrismaClient().analyticsEvent.groupBy({
+    by: ['page'],
+    where: { eventType: 'click', createdAt: { gte: heatmapSince(days) } },
+    _count: { page: true },
+    orderBy: { _count: { page: 'desc' } },
+    take: 200,
+  });
+  return rows.map(r => ({ page: r.page, clicks: r._count.page }));
+}
+
+/** Raw click points for one page (optionally filtered by device). */
+export async function getHeatmapPoints(page: string, days = 30, device?: string) {
+  const rows = await getPrismaClient().analyticsEvent.findMany({
+    where: {
+      eventType: 'click',
+      page,
+      createdAt: { gte: heatmapSince(days) },
+      ...(device && device !== 'all' ? { device } : {}),
+    },
+    select: { metadata: true },
+    take: 5000,
+    orderBy: { createdAt: 'desc' },
+  });
+  const points = rows
+    .map(r => (r.metadata || {}) as Record<string, unknown>)
+    .filter(m => typeof m.xpct === 'number' && typeof m.ypct === 'number')
+    .map(m => ({ x: m.xpct as number, y: m.ypct as number, tag: (m.tag as string) || null }));
+  return { page, total: points.length, points };
+}
+
 export async function getPageViews(startDate: Date | number = 30, endDate?: Date) {
   if (typeof startDate === 'number') {
     const days = startDate;
@@ -1555,6 +1597,22 @@ export async function getPageViews(startDate: Date | number = 30, endDate?: Date
     _count: true,
     orderBy: { _count: { page: 'desc' } },
     take: 10,
+  });
+}
+
+/** True total pageview count in a window (getPageViews returns only the top
+ *  10 pages, so its length is NOT the total). */
+export async function getPageViewCount(startDate: Date | number = 30, endDate?: Date) {
+  if (typeof startDate === 'number') {
+    const days = startDate;
+    startDate = new Date();
+    (startDate as Date).setDate((startDate as Date).getDate() - days);
+  }
+  return getPrismaClient().analyticsEvent.count({
+    where: {
+      eventType: 'pageview',
+      createdAt: { gte: startDate as Date, ...(endDate ? { lte: endDate } : {}) },
+    },
   });
 }
 

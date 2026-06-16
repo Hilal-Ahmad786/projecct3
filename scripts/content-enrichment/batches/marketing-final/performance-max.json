@@ -1,0 +1,598 @@
+{
+  "slug": "performance-max",
+  "en": {
+    "name": "Google Performance Max (PMax)",
+    "shortDescription": "Harness the power of Google's AI. We build, feed, and optimize Performance Max campaigns to drive conversions across Search, Display, YouTube, Discover, and Maps.",
+    "fullDescription": "Performance Max (PMax) represents the future of Google Ads. Instead of managing separate campaigns for Search, Display, and YouTube, PMax leverages Google's machine learning algorithms to serve your ads across the entire Google ecosystem from a single campaign. However, PMax is a 'black box.' If you feed it poor data, weak creative assets, or broad audience signals, it will rapidly waste your budget on low-quality inventory. Our Performance Max management services focus on giving the AI exactly what it needs to succeed. We meticulously construct Asset Groups with high-quality videos, images, and ad copy. We define strict Audience Signals using your first-party customer data, custom intent segments, and high-converting keywords to steer the algorithm away from junk traffic. By constantly optimizing asset performance, negative keywords (at the account level), and feed integrations, we ensure your PMax campaigns deliver maximum ROI across every channel.",
+    "features": [
+      "Comprehensive Asset Group Creation (Text, Image, Video)",
+      "Audience Signal Strategy (1st Party Data & Intent)",
+      "Google Merchant Center Feed Integration",
+      "Target ROAS & Target CPA Bidding Optimization",
+      "Account-Level Negative Keyword Management",
+      "Asset Performance Analysis & Refreshing",
+      "Omnichannel Conversion Tracking Setup",
+      "PMax vs. Standard Campaign Cannibalization Management"
+    ],
+    "benefits": [
+      "Reach high-intent customers across all of Google's networks simultaneously",
+      "Leverage Google's advanced machine learning to discover new converting audiences",
+      "Increase total conversions by filling the gaps left by standard Search campaigns",
+      "Save time with a unified, cross-channel campaign structure",
+      "Prevent budget waste by feeding the AI strict, high-quality audience signals",
+      "Scale your ecommerce revenue dynamically based on profitability targets (ROAS)"
+    ],
+    "metaTitle": "Google Performance Max Agency | PMax Optimization | PakSoft",
+    "metaDescription": "Maximize your ROI with expert Google Performance Max management. We optimize asset groups, audience signals, and bidding to drive cross-channel conversions.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Goal Definition & Tracking Setup",
+          "description": "Because PMax relies heavily on conversion data, we ensure your conversion tracking (purchases, lead forms) and value assignments are 100% accurate."
+        },
+        {
+          "step": 2,
+          "title": "Audience Signal Development",
+          "description": "We don't let Google guess. We upload your customer match lists (past buyers) and build custom segments based on search terms and competitor websites to guide the AI."
+        },
+        {
+          "step": 3,
+          "title": "Asset Group Construction",
+          "description": "We create tightly themed Asset Groups containing up to 15 headlines, 5 descriptions, high-res images, and bespoke video assets tailored to specific product lines."
+        },
+        {
+          "step": 4,
+          "title": "Feed Integration & Optimization",
+          "description": "For ecommerce clients, we integrate and optimize your Google Merchant Center feed, ensuring product titles and imagery are primed for the Shopping network within PMax."
+        },
+        {
+          "step": 5,
+          "title": "Bidding Strategy & Budgeting",
+          "description": "We configure Smart Bidding (Target CPA or Target ROAS) based on your historical account data and business margins to ensure profitable scaling."
+        },
+        {
+          "step": 6,
+          "title": "Ongoing Optimization & Asset Refresh",
+          "description": "We continuously monitor asset performance labels (Low, Good, Best). We replace 'Low' performing assets with new creatives and adjust negative keywords to stop wasted spend."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Will PMax steal traffic from my existing Search campaigns?",
+          "answer": "It can. PMax takes priority over standard Search campaigns unless the Search campaign has an exact match keyword identical to the search query. We manage both to prevent cannibalization."
+        },
+        {
+          "question": "Do I need video assets to run Performance Max?",
+          "answer": "Yes. If you don't provide a video, Google will auto-generate a usually low-quality video using your images. We strongly recommend providing professional video assets, which we can help produce."
+        },
+        {
+          "question": "Why is my PMax campaign spending money but not converting?",
+          "answer": "This usually happens when the campaign lacks strong 'Audience Signals', relies on poor creative assets, or when the conversion tracking is broken, causing the AI to optimize for the wrong actions."
+        },
+        {
+          "question": "Can I see exactly where my PMax ads are showing?",
+          "answer": "Google provides limited visibility. You can see 'Placement Reports' for the Display network, but it's a black box regarding exact Search terms. We use account-level negatives to exert control."
+        },
+        {
+          "question": "How long does it take for a PMax campaign to learn?",
+          "answer": "PMax requires a significant amount of data. The 'learning phase' typically takes 2 to 4 weeks. We advise against making major changes during this period as it resets the algorithm."
+        },
+        {
+          "question": "Is Performance Max only for Ecommerce?",
+          "answer": "No. While it is incredibly powerful for ecommerce (replacing Smart Shopping), PMax is also highly effective for Lead Generation businesses when optimized with strict offline conversion tracking."
+        },
+        {
+          "question": "How do you control negative keywords in PMax?",
+          "answer": "Unlike Search campaigns, you cannot add negative keywords directly to a PMax campaign. We manage this by applying account-level negative keyword lists to protect your brand terms."
+        },
+        {
+          "question": "What is an 'Asset Group'?",
+          "answer": "An Asset Group is similar to an Ad Group. It contains all the creative elements (text, images, videos) that Google mixes and matches to create ads across all its different networks."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "googleads",
+          "name": "Google Ads (PMax)"
+        },
+        {
+          "icon": "googleads",
+          "name": "Google Merchant Center"
+        },
+        {
+          "icon": "analytics",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Tag Manager"
+        },
+        {
+          "icon": "youtube",
+          "name": "YouTube Studio"
+        },
+        {
+          "icon": "figma",
+          "name": "Figma (Ad Creatives)"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Google Maksimum Performans (PMax)",
+    "shortDescription": "Google'ın yapay zekasının gücünden yararlanın. Arama, Görüntülü Reklam, YouTube, Keşfet ve Haritalar genelinde dönüşümleri artırmak için Maksimum Performans (PMax) kampanyaları oluşturuyor, besliyor ve optimize ediyoruz.",
+    "fullDescription": "Maksimum Performans (PMax), Google Ads'in geleceğini temsil eder. PMax, Arama Ağı, Görüntülü Reklam Ağı ve YouTube için ayrı kampanyalar yönetmek yerine, reklamlarınızı tek bir kampanyadan tüm Google ekosisteminde yayınlamak için Google'ın makine öğrenimi algoritmalarından yararlanır. Ancak PMax bir 'kara kutu'dur. Ona zayıf veriler, zayıf reklam varlıkları (creatives) veya geniş kitle sinyalleri verirseniz, bütçenizi hızla düşük kaliteli envanterlerde boşa harcar. Maksimum Performans yönetimi hizmetlerimiz, yapay zekaya başarılı olması için tam olarak neye ihtiyacı olduğunu vermeye odaklanır. Yüksek kaliteli videolar, resimler ve reklam metinleriyle Varlık Gruplarını titizlikle oluşturuyoruz. Algoritmayı çöp trafikten (junk traffic) uzaklaştırmak için birinci taraf müşteri verilerinizi, özel amaç segmentlerini ve yüksek dönüşümlü anahtar kelimeleri kullanarak katı Kitle Sinyalleri (Audience Signals) tanımlıyoruz. Varlık performansını, negatif anahtar kelimeleri (hesap düzeyinde) ve besleme (feed) entegrasyonlarını sürekli olarak optimize ederek PMax kampanyalarınızın her kanalda maksimum ROI sağlamasını garanti ediyoruz.",
+    "features": [
+      "Kapsamlı Varlık Grubu (Asset Group) Oluşturma (Metin, Görsel, Video)",
+      "Kitle Sinyali Stratejisi (Birinci Taraf Verileri ve Niyet)",
+      "Google Merchant Center Feed Entegrasyonu",
+      "Hedef ROAS ve Hedef EBM (CPA) Teklif Optimizasyonu",
+      "Hesap Düzeyinde Negatif Anahtar Kelime Yönetimi",
+      "Varlık Performans Analizi ve Yenileme",
+      "Çok Kanallı (Omnichannel) Dönüşüm İzleme Kurulumu",
+      "PMax vs. Standart Kampanya Çakışma (Cannibalization) Yönetimi"
+    ],
+    "benefits": [
+      "Aynı anda tüm Google ağlarında satın alma niyeti yüksek müşterilere ulaşın",
+      "Yeni dönüşüm sağlayan kitleleri keşfetmek için Google'ın gelişmiş yapay zekasından yararlanın",
+      "Standart Arama Ağı kampanyalarının bıraktığı boşlukları doldurarak toplam dönüşümleri artırın",
+      "Birleştirilmiş, kanallar arası kampanya yapısıyla zamandan tasarruf edin",
+      "Yapay zekayı katı, yüksek kaliteli kitle sinyalleriyle besleyerek bütçe israfını önleyin",
+      "Karlılık hedeflerine (ROAS) dayalı olarak e-ticaret gelirinizi dinamik olarak ölçeklendirin"
+    ],
+    "metaTitle": "Google PMax Ajansı | Maksimum Performans Optimizasyonu | PakSoft",
+    "metaDescription": "Uzman Google PMax yönetimiyle ROI'nizi en üst düzeye çıkarın. Kanallar arası dönüşümleri artırmak için varlık gruplarını, kitle sinyallerini ve teklifleri optimize ediyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Hedef Belirleme ve İzleme Kurulumu",
+          "description": "PMax büyük ölçüde dönüşüm verilerine dayandığından, dönüşüm izlemenizin (satın almalar, lead formları) ve değer atamalarınızın %100 doğru olmasını sağlıyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Kitle Sinyali (Audience Signal) Geliştirme",
+          "description": "Yapay zekayı yönlendirmek için müşteri eşleştirme listelerinizi (geçmiş alıcılar) yüklüyor ve arama terimlerine ve rakip web sitelerine dayalı özel segmentler oluşturuyoruz."
+        },
+        {
+          "step": 3,
+          "title": "Varlık Grubu (Asset Group) Oluşturma",
+          "description": "Belirli ürün gruplarına uyarlanmış 15'e kadar başlık, 5 açıklama, yüksek çözünürlüklü görseller ve özel video varlıkları içeren tematik Varlık Grupları oluşturuyoruz."
+        },
+        {
+          "step": 4,
+          "title": "Feed Entegrasyonu ve Optimizasyonu",
+          "description": "E-ticaret müşterileri için, ürün başlıklarının ve görsellerinin PMax içindeki Alışveriş (Shopping) ağı için hazırlandığından emin olarak Merchant Center feed'inizi entegre ediyoruz."
+        },
+        {
+          "step": 5,
+          "title": "Teklif Stratejisi ve Bütçeleme",
+          "description": "Karlı ölçekleme sağlamak için geçmiş hesap verilerinize ve işletme marjlarınıza dayalı olarak Akıllı Teklif'i (Hedef EBM veya Hedef ROAS) yapılandırıyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Sürekli Optimizasyon ve Varlık Yenileme",
+          "description": "Varlık performans etiketlerini (Düşük, İyi, En İyi) sürekli izliyoruz. Boşa harcanan parayı durdurmak için 'Düşük' performanslı varlıkları yenileriyle değiştiriyoruz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "PMax mevcut Arama Ağı (Search) kampanyalarımdan trafik çalacak mı?",
+          "answer": "Olabilir. Arama Ağı kampanyasında arama sorgusuyla tamamen eşleşen (exact match) bir anahtar kelime yoksa PMax öncelik kazanır. Çakışmayı (cannibalization) önlemek için ikisini de yönetiyoruz."
+        },
+        {
+          "question": "Maksimum Performans'ı çalıştırmak için video varlıklarına ihtiyacım var mı?",
+          "answer": "Evet. Bir video sağlamazsanız, Google görsellerinizi kullanarak otomatik olarak düşük kaliteli bir video oluşturur. Üretilmesine yardımcı olabileceğimiz profesyonel video varlıkları (creatives) sağlamanızı şiddetle tavsiye ederiz."
+        },
+        {
+          "question": "PMax kampanyam neden para harcıyor ama dönüşüm sağlamıyor?",
+          "answer": "Bu genellikle kampanya güçlü 'Kitle Sinyallerinden' yoksun olduğunda, zayıf kreatiflere dayandığında veya dönüşüm izleme bozuk olduğunda yapay zekanın yanlış eylemler için optimize etmesine neden olduğunda ortaya çıkar."
+        },
+        {
+          "question": "PMax reklamlarımın tam olarak nerede gösterildiğini görebilir miyim?",
+          "answer": "Google sınırlı görünürlük sağlar. Görüntülü Reklam Ağı için 'Yerleşim Raporlarını' görebilirsiniz, ancak kesin Arama terimleri (Search terms) konusunda bir kara kutudur. Kontrol uygulamak için hesap düzeyinde negatifleri kullanıyoruz."
+        },
+        {
+          "question": "Bir PMax kampanyasının öğrenmesi ne kadar sürer?",
+          "answer": "PMax önemli miktarda veri gerektirir. 'Öğrenme aşaması' genellikle 2 ila 4 hafta sürer. Algoritmayı sıfırladığı için bu süre zarfında büyük değişiklikler yapmamanızı tavsiye ederiz."
+        },
+        {
+          "question": "Maksimum Performans sadece E-ticaret için mi?",
+          "answer": "Hayır. E-ticaret için inanılmaz derecede güçlü olmasına (Akıllı Alışverişin yerini almasına) rağmen, PMax katı çevrimdışı dönüşüm izleme ile optimize edildiğinde Lead Generation (Müşteri Adayı Bulma) işletmeleri için de oldukça etkilidir."
+        },
+        {
+          "question": "PMax'te negatif anahtar kelimeleri nasıl kontrol ediyorsunuz?",
+          "answer": "Arama kampanyalarının aksine, doğrudan bir PMax kampanyasına negatif anahtar kelime ekleyemezsiniz. Marka terimlerinizi korumak için hesap düzeyinde negatif anahtar kelime listeleri uygulayarak bunu yönetiyoruz."
+        },
+        {
+          "question": "'Varlık Grubu' (Asset Group) nedir?",
+          "answer": "Varlık Grubu, Reklam Grubuna benzer. Google'ın tüm farklı ağlarında reklamlar oluşturmak için karıştırdığı ve eşleştirdiği tüm yaratıcı öğeleri (metin, resimler, videolar) içerir."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "googleads",
+          "name": "Google Ads (PMax)"
+        },
+        {
+          "icon": "googleads",
+          "name": "Google Merchant Center"
+        },
+        {
+          "icon": "analytics",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Tag Manager"
+        },
+        {
+          "icon": "youtube",
+          "name": "YouTube Studio"
+        },
+        {
+          "icon": "figma",
+          "name": "Figma (Ad Creatives)"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Google Performance Max (PMax)",
+    "shortDescription": "Nutzen Sie die KI von Google. Wir erstellen und optimieren PMax-Kampagnen für Conversions in Search, Display, YouTube, Discover und Maps.",
+    "fullDescription": "Performance Max (PMax) ist die Zukunft von Google Ads. Anstatt getrennte Kampagnen zu verwalten, nutzt PMax maschinelles Lernen, um Ihre Anzeigen im gesamten Google-Ökosystem auszuliefern. PMax ist jedoch eine 'Blackbox'. Wenn Sie der KI schlechte Daten oder breite Zielgruppensignale liefern, wird sie Ihr Budget für minderwertiges Inventar verschwenden. Unsere PMax-Dienste konzentrieren sich darauf, der KI genau das zu geben, was sie für den Erfolg braucht. Wir erstellen Asset-Gruppen mit hochwertigen Bildern, Videos und Texten. Wir definieren strenge Zielgruppensignale (Audience Signals) mithilfe Ihrer Kundendaten und benutzerdefinierter Segmente. Durch die ständige Optimierung von Assets, negativen Keywords (auf Kontoebene) und Shopping-Feeds stellen wir sicher, dass Ihre Kampagnen kanalübergreifend maximalen ROI liefern.",
+    "features": [
+      "Erstellung von Asset-Gruppen (Text, Bild, Video)",
+      "Audience Signal Strategie (First-Party-Daten)",
+      "Google Merchant Center Feed-Integration",
+      "Target ROAS & Target CPA Gebotsoptimierung",
+      "Ausschluss-Keywords (Negative Keywords) auf Kontoebene",
+      "Analyse und Austausch von Asset-Performance",
+      "Omnichannel Conversion-Tracking Setup",
+      "Vermeidung von Kampagnen-Kannibalisierung (Search vs. PMax)"
+    ],
+    "benefits": [
+      "Erreichen Sie kaufbereite Kunden in allen Google-Netzwerken gleichzeitig",
+      "Nutzen Sie maschinelles Lernen, um neue konvertierende Zielgruppen zu finden",
+      "Steigern Sie Conversions durch Abdeckung von Lücken in Suchkampagnen",
+      "Sparen Sie Zeit mit einer einheitlichen, kanalübergreifenden Kampagne",
+      "Vermeiden Sie Budgetverschwendung durch präzise Audience Signals",
+      "Skalieren Sie E-Commerce-Umsätze dynamisch basierend auf Profitabilität"
+    ],
+    "metaTitle": "Google PMax Agentur | Performance Max Optimierung | PakSoft",
+    "metaDescription": "Maximieren Sie Ihren ROI mit professionellem PMax-Management. Wir optimieren Asset-Gruppen, Zielgruppensignale und Gebote für Google Ads.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Zieldefinition & Tracking Setup",
+          "description": "Da PMax stark auf Conversion-Daten angewiesen ist, stellen wir sicher, dass Ihr Tracking (Käufe, Leads) und die zugewiesenen Werte zu 100 % korrekt sind."
+        },
+        {
+          "step": 2,
+          "title": "Entwicklung von Zielgruppensignalen",
+          "description": "Wir lassen Google nicht raten. Wir laden Ihre Kundenlisten (Käufer) hoch und erstellen Segmente basierend auf Suchbegriffen und Konkurrenz-Websites."
+        },
+        {
+          "step": 3,
+          "title": "Aufbau der Asset-Gruppen",
+          "description": "Wir erstellen thematische Asset-Gruppen mit bis zu 15 Anzeigentiteln, 5 Beschreibungen, hochauflösenden Bildern und maßgeschneiderten Videos."
+        },
+        {
+          "step": 4,
+          "title": "Feed-Integration & Optimierung",
+          "description": "Für E-Commerce integrieren und optimieren wir den Merchant Center Feed, damit die Produktdaten für das Shopping-Netzwerk innerhalb von PMax bereit sind."
+        },
+        {
+          "step": 5,
+          "title": "Gebotsstrategie & Budgetierung",
+          "description": "Wir konfigurieren Smart Bidding (Ziel-CPA oder Ziel-ROAS) basierend auf historischen Kontodaten und Margen, um profitables Wachstum zu sichern."
+        },
+        {
+          "step": 6,
+          "title": "Laufende Optimierung & Asset Refresh",
+          "description": "Wir überwachen die Asset-Performance (Niedrig, Gut, Am besten). 'Niedrige' Assets werden ersetzt und Konto-Ausschlüsse angepasst, um Verschwendung zu stoppen."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wird PMax Traffic von meinen bestehenden Search-Kampagnen stehlen?",
+          "answer": "Das kann passieren. PMax hat Vorrang, es sei denn, die Search-Kampagne enthält ein 'Exact Match'-Keyword, das genau mit der Suchanfrage übereinstimmt."
+        },
+        {
+          "question": "Benötige ich Video-Assets für Performance Max?",
+          "answer": "Ja. Wenn Sie kein Video bereitstellen, generiert Google oft ein minderwertiges Video aus Ihren Bildern. Wir empfehlen dringend professionelle Videos."
+        },
+        {
+          "question": "Warum gibt meine PMax-Kampagne Geld aus, konvertiert aber nicht?",
+          "answer": "Meistens fehlen starke 'Zielgruppensignale', die Assets sind schwach oder das Conversion-Tracking ist fehlerhaft, sodass die KI auf die falschen Aktionen hin optimiert."
+        },
+        {
+          "question": "Kann ich genau sehen, wo meine PMax-Anzeigen geschaltet werden?",
+          "answer": "Google bietet nur begrenzte Einblicke ('Placement-Berichte' für Display). Für genaue Suchbegriffe ist es eine Blackbox. Wir nutzen daher kontoebene Ausschlüsse."
+        },
+        {
+          "question": "Wie lange dauert die Lernphase einer PMax-Kampagne?",
+          "answer": "PMax benötigt viele Daten. Die Lernphase dauert typischerweise 2 bis 4 Wochen. Wir raten davon ab, in dieser Zeit große Änderungen vorzunehmen."
+        },
+        {
+          "question": "Ist Performance Max nur für E-Commerce geeignet?",
+          "answer": "Nein. Es ist zwar sehr stark im E-Commerce, aber auch für B2B Lead Generation effektiv, wenn es mit striktem Offline-Conversion-Tracking optimiert wird."
+        },
+        {
+          "question": "Wie kontrollieren Sie negative Keywords in PMax?",
+          "answer": "Im Gegensatz zu Search können Sie einer PMax-Kampagne keine direkten negativen Keywords hinzufügen. Wir lösen dies über Listen auf Kontoebene."
+        },
+        {
+          "question": "Was ist eine 'Asset-Gruppe'?",
+          "answer": "Eine Asset-Gruppe (ähnlich einer Anzeigengruppe) enthält alle kreativen Elemente (Text, Bild, Video), die Google kombiniert, um Anzeigen für alle Netzwerke zu erstellen."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "googleads",
+          "name": "Google Ads (PMax)"
+        },
+        {
+          "icon": "googleads",
+          "name": "Google Merchant Center"
+        },
+        {
+          "icon": "analytics",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Tag Manager"
+        },
+        {
+          "icon": "youtube",
+          "name": "YouTube Studio"
+        },
+        {
+          "icon": "figma",
+          "name": "Figma (Ad Creatives)"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "گوگل پرفارمنس میکس (PMax)",
+    "shortDescription": "گوگل کے AI کی طاقت کو استعمال کریں۔ ہم تلاش (Search)، ڈسپلے، یوٹیوب، اور نقشہ جات میں تبادلوں کو بڑھانے کے لیے PMax مہمات چلاتے ہیں۔",
+    "fullDescription": "پرفارمنس میکس (PMax) گوگل اشتہارات کے مستقبل کی نمائندگی کرتا ہے۔ تلاش، ڈسپلے، اور یوٹیوب کے لیے الگ الگ مہمات کا انتظام کرنے کے بجائے، PMax ایک ہی مہم سے پورے گوگل نیٹ ورک میں آپ کے اشتہارات دکھانے کے لیے مشین لرننگ کا استعمال کرتا ہے۔ تاہم، PMax ایک 'بلیک باکس' ہے۔ اگر آپ اسے ناقص ڈیٹا، کمزور تخلیقی اثاثے، یا وسیع سامعین کے سگنل دیتے ہیں، تو یہ آپ کا بجٹ ضائع کر دے گا۔ ہماری پرفارمنس میکس مینجمنٹ سروسز اس بات پر مرکوز ہیں کہ AI کو کامیابی کے لیے بالکل وہی دیا جائے جس کی اسے ضرورت ہے۔ ہم اعلیٰ معیار کی ویڈیوز، تصاویر، اور اشتہاری کاپی کے ساتھ اثاثہ گروپ (Asset Groups) بناتے ہیں۔ ہم کچرا ٹریفک کو روکنے کے لیے آپ کے پہلے فریق کے کسٹمر ڈیٹا کا استعمال کرتے ہوئے سخت سامعین کے سگنلز (Audience Signals) کی وضاحت کرتے ہیں۔",
+    "features": [
+      "اثاثہ جات کے گروپ کی جامع تخلیق (متن، تصویر، ویڈیو)",
+      "سامعین کے سگنل کی حکمت عملی (پہلے فریق کا ڈیٹا)",
+      "گوگل مرچنٹ سینٹر فیڈ انٹیگریشن",
+      "ہدف ROAS اور ہدف CPA بڈنگ آپٹیمائزیشن",
+      "اکاؤنٹ کی سطح پر منفی کلیدی الفاظ کا انتظام",
+      "اثاثہ جات کی کارکردگی کا تجزیہ اور تجدید",
+      "اومنی چینل (Omnichannel) کنورژن ٹریکنگ سیٹ اپ",
+      "PMax بمقابلہ معیاری مہم کے تصادم کا انتظام"
+    ],
+    "benefits": [
+      "گوگل کے تمام نیٹ ورکس پر بیک وقت اعلی ارادے والے صارفین تک پہنچیں",
+      "تبادلوں کے نئے سامعین دریافت کرنے کے لیے گوگل کی جدید AI کا فائدہ اٹھائیں",
+      "معیاری تلاش کی مہمات کے چھوڑے ہوئے خلا کو پر کر کے تبادلوں (Conversions) میں اضافہ کریں",
+      "ایک متحد، کراس چینل مہم کے ڈھانچے کے ساتھ وقت بچائیں",
+      "AI کو سخت، اعلیٰ معیار کے سامعین کے سگنل دے کر بجٹ کے ضیاع کو روکیں",
+      "منافع کے اہداف (ROAS) کی بنیاد پر اپنی ای کامرس آمدنی میں متحرک طور پر اضافہ کریں"
+    ],
+    "metaTitle": "گوگل PMax ایجنسی | پرفارمنس میکس آپٹیمائزیشن | PakSoft",
+    "metaDescription": "ماہر گوگل PMax مینجمنٹ کے ساتھ اپنے ROI کو زیادہ سے زیادہ کریں۔ ہم چینلز کے پار تبادلوں کو بڑھانے کے لیے اثاثہ گروپس اور سامعین کے سگنلز کو بہتر بناتے ہیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "ہدف کی تعریف اور ٹریکنگ سیٹ اپ",
+          "description": "چونکہ PMax تبادلوں کے ڈیٹا پر انحصار کرتا ہے، اس لیے ہم یقینی بناتے ہیں کہ آپ کی کنورژن ٹریکنگ اور اقدار 100% درست ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "سامعین سگنل (Audience Signal) کی ترقی",
+          "description": "ہم گوگل کو اندازہ نہیں لگانے دیتے۔ ہم AI کی رہنمائی کے لیے آپ کے صارفین کی فہرستیں اپ لوڈ کرتے ہیں اور حسب ضرورت حصے بناتے ہیں۔"
+        },
+        {
+          "step": 3,
+          "title": "اثاثہ جات کے گروپ (Asset Group) کی تعمیر",
+          "description": "ہم مخصوص مصنوعات کے مطابق 15 سرخیوں، 5 تفصیل، اعلیٰ معیار کی تصاویر، اور ویڈیو اثاثوں پر مشتمل اثاثہ گروپس بناتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "فیڈ کا انضمام اور اصلاح",
+          "description": "ای کامرس کلائنٹس کے لیے، ہم آپ کے گوگل مرچنٹ سینٹر فیڈ کو ضم اور بہتر بناتے ہیں، تاکہ PMax کے اندر شاپنگ نیٹ ورک کے لیے پروڈکٹس تیار ہوں۔"
+        },
+        {
+          "step": 5,
+          "title": "بولی لگانے کی حکمت عملی اور بجٹ",
+          "description": "ہم منافع بخش سکیلنگ کو یقینی بنانے کے لیے آپ کے تاریخی ڈیٹا اور مارجن کی بنیاد پر سمارٹ بڈنگ (ٹارگٹ CPA یا ٹارگٹ ROAS) کو ترتیب دیتے ہیں۔"
+        },
+        {
+          "step": 6,
+          "title": "مسلسل آپٹیمائزیشن اور تبدیلی",
+          "description": "ہم اثاثہ جات کی کارکردگی (کم، اچھا، بہترین) کی مسلسل نگرانی کرتے ہیں۔ ہم بجٹ کے ضیاع کو روکنے کے لیے 'کم' کارکردگی دکھانے والے اثاثوں کو بدلتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "کیا PMax میری موجودہ سرچ مہموں سے ٹریفک چوری کرے گا؟",
+          "answer": "یہ کر سکتا ہے۔ PMax معیاری تلاش کی مہموں پر ترجیح لیتا ہے جب تک کہ سرچ مہم میں عین مطابق مماثل (Exact Match) کلیدی لفظ نہ ہو۔"
+        },
+        {
+          "question": "کیا مجھے پرفارمنس میکس چلانے کے لیے ویڈیو کی ضرورت ہے؟",
+          "answer": "ہاں۔ اگر آپ ویڈیو فراہم نہیں کرتے ہیں تو، گوگل آپ کی تصاویر کا استعمال کرتے ہوئے عام طور پر کم معیار کی ویڈیو خود بخود تیار کر دے گا۔"
+        },
+        {
+          "question": "میری PMax مہم پیسے کیوں خرچ کر رہی ہے لیکن کنورژن نہیں ہو رہی؟",
+          "answer": "یہ عام طور پر اس وقت ہوتا ہے جب مہم میں 'Audience Signals' کی کمی ہوتی ہے، یا کنورژن ٹریکنگ ٹوٹی ہوئی ہوتی ہے، جس کی وجہ سے AI غلط سمت میں کام کرتا ہے۔"
+        },
+        {
+          "question": "کیا میں بالکل دیکھ سکتا ہوں کہ میرے PMax اشتہارات کہاں دکھائے جا رہے ہیں؟",
+          "answer": "گوگل محدود مرئیت فراہم کرتا ہے۔ آپ ڈسپلے نیٹ ورک کے لیے مقامات دیکھ سکتے ہیں، لیکن سرچ اصطلاحات کے حوالے سے یہ ایک بلیک باکس ہے۔"
+        },
+        {
+          "question": "PMax مہم کو سیکھنے میں کتنا وقت لگتا ہے؟",
+          "answer": "PMax کو ڈیٹا کی کافی مقدار درکار ہوتی ہے۔ 'سیکھنے کے مرحلے' میں عام طور پر 2 سے 4 ہفتے لگتے ہیں۔ ہم اس دوران بڑی تبدیلیاں نہ کرنے کا مشورہ دیتے ہیں۔"
+        },
+        {
+          "question": "کیا پرفارمنس میکس صرف ای کامرس کے لیے ہے؟",
+          "answer": "نہیں، جب اسے سخت آف لائن کنورژن ٹریکنگ کے ساتھ بہتر بنایا جاتا ہے، تو یہ لیڈ جنریشن کے کاروبار کے لیے بھی انتہائی موثر ہے۔"
+        },
+        {
+          "question": "آپ PMax میں منفی کلیدی الفاظ کو کیسے کنٹرول کرتے ہیں؟",
+          "answer": "سرچ مہموں کے برعکس، آپ براہ راست پی میکس میں منفی کلیدی الفاظ شامل نہیں کر سکتے۔ ہم آپ کے برانڈ کی شرائط کو بچانے کے لیے اکاؤنٹ لیول کی فہرستیں لاگو کرتے ہیں۔"
+        },
+        {
+          "question": "ایک 'ایسٹ گروپ' (Asset Group) کیا ہے؟",
+          "answer": "یہ اشتہاری گروپ کی طرح ہے۔ اس میں تمام تخلیقی عناصر (متن، تصاویر، ویڈیوز) شامل ہوتے ہیں جنہیں گوگل اپنے تمام نیٹ ورکس پر اشتہارات بنانے کے لیے ملاتا ہے۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "googleads",
+          "name": "Google Ads (PMax)"
+        },
+        {
+          "icon": "googleads",
+          "name": "Google Merchant Center"
+        },
+        {
+          "icon": "analytics",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Tag Manager"
+        },
+        {
+          "icon": "youtube",
+          "name": "YouTube Studio"
+        },
+        {
+          "icon": "figma",
+          "name": "Figma (Ad Creatives)"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "حملات الأداء الأفضل من جوجل (Performance Max)",
+    "shortDescription": "سخر قوة الذكاء الاصطناعي من جوجل. نقوم ببناء وتغذية وتحسين حملات PMax لدفع التحويلات عبر شبكات البحث، العرض، YouTube، Discover، والخرائط.",
+    "fullDescription": "يمثل 'الأداء الأفضل' (PMax) مستقبل إعلانات جوجل. بدلاً من إدارة حملات منفصلة للبحث والشبكة الإعلانية و YouTube، يستفيد PMax من خوارزميات التعلم الآلي لتقديم إعلاناتك عبر نظام جوجل البيئي بأكمله من حملة واحدة. ومع ذلك، فإن PMax هو 'صندوق أسود'. إذا قمت بتغذيته ببيانات ضعيفة، أو أصول إبداعية رديئة، أو إشارات جمهور واسعة، فسيضيع ميزانيتك بسرعة على زيارات منخفضة الجودة. تركز خدمات إدارة Performance Max لدينا على إعطاء الذكاء الاصطناعي ما يحتاجه بالضبط لتحقيق النجاح. نحن نبني بدقة 'مجموعات الأصول' بصور ومقاطع فيديو ونسخ إعلانية عالية الجودة. نحدد 'إشارات جمهور' صارمة باستخدام بيانات الطرف الأول الخاصة بك والشرائح المخصصة لتوجيه الخوارزمية بعيداً عن الزيارات غير المرغوب فيها. من خلال تحسين أداء الأصول باستمرار، والكلمات السلبية (على مستوى الحساب)، نضمن أن تحقق حملاتك أقصى عائد على الاستثمار (ROI).",
+    "features": [
+      "إنشاء شامل لمجموعات الأصول (نص، صورة، فيديو)",
+      "استراتيجية إشارات الجمهور (بيانات الطرف الأول والنية)",
+      "تكامل خلاصة Google Merchant Center (للتجارة الإلكترونية)",
+      "تحسين عروض الأسعار (عائد الاستثمار المستهدف وتكلفة الاكتساب)",
+      "إدارة الكلمات الرئيسية السلبية على مستوى الحساب",
+      "تحليل أداء الأصول وتحديث الإبداعات الضعيفة",
+      "إعداد تتبع التحويل متعدد القنوات (Omnichannel)",
+      "إدارة التداخل (Cannibalization) بين PMax وحملات البحث"
+    ],
+    "benefits": [
+      "الوصول إلى عملاء ذوي نوايا عالية عبر جميع شبكات جوجل في وقت واحد",
+      "الاستفادة من التعلم الآلي لاكتشاف جماهير جديدة تقوم بالتحويل",
+      "زيادة إجمالي التحويلات عن طريق سد الفجوات التي تتركها حملات البحث",
+      "توفير الوقت بهيكل حملة موحد عبر جميع القنوات",
+      "منع إهدار الميزانية من خلال تزويد الذكاء الاصطناعي بإشارات صارمة",
+      "توسيع إيرادات التجارة الإلكترونية ديناميكياً بناءً على أهداف الربحية"
+    ],
+    "metaTitle": "وكالة إدارة حملات الأداء الأفضل (PMax) | إعلانات جوجل | PakSoft",
+    "metaDescription": "حقق أقصى عائد على الاستثمار مع إدارة احترافية لحملات PMax. نقوم بتحسين مجموعات الأصول وإشارات الجمهور لزيادة التحويلات عبر جوجل.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تحديد الأهداف وإعداد التتبع",
+          "description": "نظراً لأن PMax يعتمد بشكل كبير على بيانات التحويل، فإننا نضمن أن تتبع التحويل (المشتريات، النماذج) وتعيين القيم دقيق بنسبة 100٪."
+        },
+        {
+          "step": 2,
+          "title": "تطوير إشارات الجمهور (Audience Signals)",
+          "description": "نحن لا ندع جوجل يخمن. نقوم بتحميل قوائم عملائك ونبني شرائح مخصصة بناءً على مصطلحات البحث لتوجيه الذكاء الاصطناعي."
+        },
+        {
+          "step": 3,
+          "title": "بناء مجموعات الأصول (Asset Groups)",
+          "description": "ننشئ مجموعات أصول ذات سمات ضيقة تحتوي على ما يصل إلى 15 عنواناً و 5 أوصاف وصور عالية الدقة ومقاطع فيديو مخصصة لمنتجات معينة."
+        },
+        {
+          "step": 4,
+          "title": "تكامل الخلاصة (Feed) وتحسينها",
+          "description": "لعملاء التجارة الإلكترونية، نقوم بدمج خلاصة Merchant Center، لضمان جاهزية عناوين المنتجات والصور لشبكة التسوق داخل PMax."
+        },
+        {
+          "step": 5,
+          "title": "استراتيجية عروض الأسعار",
+          "description": "نقوم بتهيئة عروض الأسعار الذكية (عائد الاستثمار المستهدف أو تكلفة الاكتساب المستهدفة) لضمان التوسع المربح."
+        },
+        {
+          "step": 6,
+          "title": "التحسين المستمر وتحديث الأصول",
+          "description": "نراقب تصنيفات أداء الأصول (منخفض، جيد، الأفضل) باستمرار. نستبدل الأصول 'المنخفضة' بإبداعات جديدة ونعدل الكلمات السلبية."
+        }
+      ],
+      "faq": [
+        {
+          "question": "هل ستسرق PMax حركة المرور من حملات البحث الحالية الخاصة بي؟",
+          "answer": "يمكنها ذلك. تحظى PMax بالأولوية على حملات البحث القياسية ما لم تكن حملة البحث تحتوي على كلمة رئيسية متطابقة تماماً. نحن ندير كليهما لمنع التداخل."
+        },
+        {
+          "question": "هل أحتاج إلى فيديو لتشغيل Performance Max؟",
+          "answer": "نعم. إذا لم توفر مقطع فيديو، فستقوم جوجل تلقائياً بإنشاء فيديو منخفض الجودة عادةً باستخدام صورك. نوصي بشدة بإنتاج فيديو احترافي."
+        },
+        {
+          "question": "لماذا تنفق حملة PMax الأموال ولكن لا تحقق تحويلات؟",
+          "answer": "يحدث هذا عندما تفتقر الحملة إلى 'إشارات جمهور' قوية، أو تعتمد على أصول إبداعية ضعيفة، أو عندما يكون تتبع التحويل معطلاً."
+        },
+        {
+          "question": "هل يمكنني رؤية أين تظهر إعلانات PMax بالضبط؟",
+          "answer": "توفر جوجل رؤية محدودة. يمكنك رؤية 'تقارير المواضع' للشبكة الإعلانية، ولكنه صندوق أسود لمصطلحات البحث الدقيقة. نستخدم السلبيات على مستوى الحساب للتحكم."
+        },
+        {
+          "question": "كم من الوقت تستغرق حملة PMax للتعلم؟",
+          "answer": "تتطلب PMax قدراً كبيراً من البيانات. تستغرق 'مرحلة التعلم' من 2 إلى 4 أسابيع. ننصح بعدم إجراء تغييرات كبيرة خلال هذه الفترة."
+        },
+        {
+          "question": "هل PMax مخصص فقط للتجارة الإلكترونية؟",
+          "answer": "لا. على الرغم من قوتها المذهلة للتجارة الإلكترونية، إلا أن PMax فعالة للغاية أيضاً لشركات توليد العملاء المحتملين (B2B) عند تحسينها بشكل صحيح."
+        },
+        {
+          "question": "كيف يمكنك التحكم في الكلمات الرئيسية السلبية في PMax؟",
+          "answer": "على عكس حملات البحث، لا يمكنك إضافة كلمات سلبية مباشرة إلى حملة PMax. ندير هذا من خلال تطبيق قوائم الكلمات السلبية على مستوى الحساب لحماية علامتك."
+        },
+        {
+          "question": "ما هي 'مجموعة الأصول' (Asset Group)؟",
+          "answer": "تشبه مجموعة الأصول 'المجموعة الإعلانية'. إنها تحتوي على جميع العناصر الإبداعية (النص، الصور، مقاطع الفيديو) التي تخلطها جوجل لإنشاء إعلانات."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "googleads",
+          "name": "Google Ads (PMax)"
+        },
+        {
+          "icon": "googleads",
+          "name": "Google Merchant Center"
+        },
+        {
+          "icon": "analytics",
+          "name": "Google Analytics 4"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Tag Manager"
+        },
+        {
+          "icon": "youtube",
+          "name": "YouTube Studio"
+        },
+        {
+          "icon": "figma",
+          "name": "Figma (Ad Creatives)"
+        }
+      ]
+    }
+  }
+}

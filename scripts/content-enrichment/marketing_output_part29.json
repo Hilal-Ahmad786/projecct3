@@ -1,0 +1,830 @@
+{
+  "accessibility-compliance": {
+    "tr": {
+      "name": "Erişilebilirlik Uyumluluğu",
+      "shortDescription": "Ürününüzü herkes için kullanılabilir ve yasal olarak savunulabilir hale getirin. WCAG 2.1/2.2'ye göre denetim yapıyor, sorunları kod düzeyinde çözüyor ve erişilebilirliği ekibinizin iş akışına entegre ediyoruz.",
+      "fullDescription": "Bir milyardan fazla insan bir engelle yaşıyor ve düzenleyiciler de buna ayak uydurdu: ABD'deki ADA, Avrupa Erişilebilirlik Yasası (EAA) ve dünya çapındaki benzer yasalar artık erişilemeyen web sitelerini yasal bir yükümlülük ve kaybedilmiş bir pazar haline getiriyor. Gerçek ekran okuyucu ve yalnızca klavye testleri de dahil olmak üzere WCAG 2.1/2.2'ye karşı otomatik ve manuel denetimleri bir arada yürütüyor ve ardından size sorunları içeren bir PDF vermek yerine gerçek kod tabanınızdaki sorunları çözüyoruz. Düzeltmenin ötesinde, CI ardışık düzeninizde (pipeline) otomatik erişilebilirlik kontrolleri kuruyor ve ekibinizi eğitiyoruz, böylece bir sonraki çeyrekte sunduğunuz ürün başladığı yere geri dönmez. Erişilebilir ürünler aynı zamanda daha iyi ürünlerdir: Daha net yapı, daha iyi SEO ve her kullanıcı için iyileştirilmiş kullanılabilirlik.",
+      "features": [
+        "WCAG 2.1 / 2.2 AA & AAA Denetimleri",
+        "Ekran Okuyucu Testleri (NVDA, JAWS, VoiceOver)",
+        "Yalnızca Klavye Gezinme İncelemesi",
+        "Renk Kontrastı ve Görsel Tasarım Analizi",
+        "Semantik HTML ve ARIA Düzeltmeleri",
+        "Erişilebilir Formlar, Modallar ve Canlı Bölgeler (Live Regions)",
+        "CI Entegreli Otomatik Test",
+        "VPAT / Uygunluk Raporlaması ve Ekip Eğitimi"
+      ],
+      "benefits": [
+        "ADA, EAA ve Bölüm 508 (Section 508) kapsamında yasal koruma",
+        "Engelli 1 milyardan fazla kullanıcıya erişim",
+        "Daha iyi SEO — semantik yapı tarayıcılara da yardımcı olur",
+        "Tüm kullanıcılar için gelişmiş kullanılabilirlik ve dönüşümler",
+        "Kurumsal satın alımlar için belgelenmiş uygunluk",
+        "Varsayılan olarak erişilebilir özellikler sunan bir ekip"
+      ],
+      "metaTitle": "Erişilebilirlik Uyumluluğu Ajansı | WCAG 2.1 ADA EAA | PakSoft",
+      "metaDescription": "Ürününüzü herkes için erişilebilir hale getirin. WCAG 2.1/2.2 denetimi yapıyor, kod düzeyinde düzeltiyor ve erişilebilirliği iş akışınıza entegre ediyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Otomatik ve Manuel Denetim",
+            "description": "Her şablonu axe ve Lighthouse ile tarıyor, ardından otomasyonun yakalayabileceği %30'luk sorunların çok ötesine geçiyoruz: NVDA, VoiceOver, yalnızca klavyeyle gezinme ve %400'e kadar yakınlaştırma ile manuel testler yapıyoruz. Her sorun, WCAG kriteri, ciddiyeti ve etkilenen kullanıcı grubuyla günlüğe kaydedilir."
+          },
+          {
+            "step": 2,
+            "title": "Önceliklendirme ve Plan",
+            "description": "Sorunlar kullanıcı etkisi ve yasal riske göre sıralanır — görevin tamamlanmasını engelleyen engelleyiciler önce gelir, kozmetik kontrast sorunları daha sonra. Farklılaştırılmamış 400 ihlallik bir liste değil, ekibinizin bütçe ayırabileceği bir iyileştirme yol haritası alırsınız."
+          },
+          {
+            "step": 3,
+            "title": "Kod Düzeyinde Düzeltme",
+            "description": "Deponuzdaki sorunları çözüyoruz: semantik HTML yapısı, doğru ARIA kullanımı, odak yönetimi (focus management), atlama bağlantıları (skip links) ve erişilebilir form desenleri. Tasarımın kendisinin bir engel olduğu durumlarda, görsel amacı koruyan erişilebilir alternatifler sunuyoruz."
+          },
+          {
+            "step": 4,
+            "title": "Yardımcı Teknoloji Doğrulaması",
+            "description": "Her düzeltme, sadece otomatik tarayıcılarla değil, tarayıcı/ekran okuyucu kombinasyonları arasında gerçek yardımcı teknolojilerle yeniden test edilir. İzole edilmiş bileşenleri değil, tam kullanıcı yolculuklarını (kayıt, arama, satın alma) doğruluyoruz."
+          },
+          {
+            "step": 5,
+            "title": "Otomasyon ve CI Entegrasyonu",
+            "description": "axe-core kontrollerini CI ardışık düzeninize ve çekme isteği (pull-request) iş akışınıza bağlıyoruz, böylece yeni kod birleştirilmeden önce test ediliyor. Regresyonlar bir davada değil, inceleme sırasında yakalanır."
+          },
+          {
+            "step": 6,
+            "title": "Eğitim ve Uygunluk Belgeleri",
+            "description": "Tasarımcılarınız ve geliştiricileriniz, ürününüz için önemli olan kalıplarla uygulamalı eğitim alırlar. Kurumsal satın alma ve yasal inceleme için uygun bir VPAT veya uygunluk beyanı sunuyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Gerçekte hangi WCAG düzeyine ihtiyacım var?",
+            "answer": "WCAG 2.1 Düzey AA; ADA, Avrupa Erişilebilirlik Yasası ve Bölüm 508 tarafından atıfta bulunulan standarttır — hemen hemen her kuruluş için doğru hedeftir. Düzey AAA daha katıdır ve genellikle tüm siteler yerine kritik akışlara seçici olarak uygulanır."
+          },
+          {
+            "question": "Uyumluluk için otomatik bir tarama yeterli mi?",
+            "answer": "Hayır. Otomatik araçlar WCAG sorunlarının kabaca %30'unu yakalar — alt metninin (alt text) anlamlı olup olmadığını, odak sırasının mantıklı olup olmadığını veya bir ekran okuyucu kullanıcısının ödeme işlemini tamamlayıp tamamlayamayacağını yargılayamazlar. Gerçek uyumluluk, denetimlerimizin merkezinde yer alan yardımcı teknolojilerle manuel test gerektirir."
+          },
+          {
+            "question": "Düzeltme (Remediation) ne kadar sürer?",
+            "answer": "Tipik bir pazarlama sitesi, denetimden doğrulanmış düzeltmelere kadar 2-4 hafta sürer; karmaşık web uygulamaları, sorun sayısına ve sürüm sürecinize bağlı olarak 6-12 hafta sürer. Ayrıca ekibinizin normal sprint döngüsünün yanında aşamalı olarak da çalışabiliriz."
+          },
+          {
+            "question": "Erişilebilirlik değişiklikleri tasarımımı etkileyecek mi?",
+            "answer": "Çoğunlukla hayır — düzeltmelerin çoğu yapısal (semantik HTML, ARIA, odak yönetimi) ve görünmezdir. Görsel değişikliklerin gerektiği yerlerde, genellikle renk kontrastı, marka paletiniz içinde ayarlamalar yapıyor ve değişiklikleri dayatmak yerine tasarımcılarınıza seçenekler sunuyoruz."
+          },
+          {
+            "question": "Avrupa Erişilebilirlik Yasası nedir ve beni kapsıyor mu?",
+            "answer": "EAA, şirketinizin nerede olduğuna bakılmaksızın Haziran 2025'ten bu yana AB'de satılan e-ticaret, bankacılık, ulaşım ve tüketicilere yönelik diğer dijital hizmetlere uygulanmaktadır. AB'deki müşteriler sizden çevrimiçi alışveriş yapabiliyorsa, neredeyse kesinlikle sizi kapsar."
+          },
+          {
+            "question": "Kurumsal satışlar için bir VPAT sağlayabilir misiniz?",
+            "answer": "Evet. Kurumsal ve hükümet alıcılarının satın alma sırasında giderek daha fazla talep ettiği gerçek test sonuçlarına dayanan VPAT 2.x / ACR belgeleri üretiyoruz. Dürüst, ayrıntılı bir VPAT aynı zamanda bir satış avantajıdır — alıcılara uygunluğu ciddiye aldığınızı gösterir."
+          },
+          {
+            "question": "Projeden sonra sitenin erişilebilir kalmasını nasıl sağlıyoruz?",
+            "answer": "Üç mekanizma: Regresyonları engelleyen CI ardışık düzeninizdeki otomatik kontroller, erişilebilir kalıpların varsayılan hale gelmesi için ekip eğitimi ve yeni özellikleri kapsayan isteğe bağlı üç aylık yeniden denetim. Erişilebilirlik tek seferlik bir sertifika değil, bir uygulamadır."
+          },
+          {
+            "question": "Erişilebilirlik SEO'ya gerçekten yardımcı oluyor mu?",
+            "answer": "Evet, önemli ölçüde. Semantik başlıklar, açıklayıcı alt metinleri (alt text), uygun yer imleri (landmarks) ve temiz bağlantı metni tam olarak arama tarayıcılarının sayfalarınızı anlamak için kullandığı şeylerdir. Erişilebilirlik çalışmaları, rutin olarak Lighthouse SEO puanlarını ve zengin sonuç (rich-result) uygunluğunu bir yan etki olarak iyileştirir."
+          }
+        ],
+        "technologies": [
+          { "icon": "axe", "name": "axe-core" },
+          { "icon": "lighthouse", "name": "Lighthouse" },
+          { "icon": "nvda", "name": "NVDA" },
+          { "icon": "voiceover", "name": "VoiceOver" },
+          { "icon": "jaws", "name": "JAWS" },
+          { "icon": "wave", "name": "WAVE" },
+          { "icon": "pa11y", "name": "Pa11y CI" },
+          { "icon": "storybook", "name": "Storybook a11y" }
+        ]
+      }
+    },
+    "de": {
+      "name": "Barrierefreiheits-Compliance",
+      "shortDescription": "Machen Sie Ihr Produkt für alle nutzbar und rechtlich sicher. Wir prüfen nach WCAG 2.1/2.2, beheben Probleme auf Code-Ebene und integrieren Barrierefreiheit in den Workflow Ihres Teams.",
+      "fullDescription": "Über eine Milliarde Menschen leben mit einer Behinderung, und die Aufsichtsbehörden haben nachgezogen: Die ADA in den USA, der European Accessibility Act (EAA) und ähnliche Gesetze weltweit machen nicht barrierefreie Websites nun zu einem rechtlichen Risiko sowie zu einem verlorenen Markt. Wir führen kombinierte automatisierte und manuelle Audits nach WCAG 2.1/2.2 durch — einschließlich echter Screenreader- und reiner Tastaturtests — und beheben die Probleme dann direkt in Ihrer Codebase, anstatt Ihnen nur ein PDF mit Problemen zu übergeben. Über die reine Behebung hinaus richten wir automatisierte Barrierefreiheitsprüfungen in Ihrer CI-Pipeline ein und schulen Ihr Team, damit das Produkt, das Sie im nächsten Quartal ausliefern, nicht wieder zurückfällt. Barrierefreie Produkte sind auch einfach bessere Produkte: klarere Struktur, besseres SEO und verbesserte Usability für jeden Nutzer.",
+      "features": [
+        "WCAG 2.1 / 2.2 AA & AAA Audits",
+        "Screenreader-Tests (NVDA, JAWS, VoiceOver)",
+        "Überprüfung der Tastaturnavigation",
+        "Analyse von Farbkontrast & visuellem Design",
+        "Semantische HTML- & ARIA-Korrekturen",
+        "Barrierefreie Formulare, Modals & Live Regions",
+        "CI-integrierte automatisierte Tests",
+        "VPAT / Konformitätsberichte & Team-Schulungen"
+      ],
+      "benefits": [
+        "Rechtlicher Schutz unter ADA, EAA und Section 508",
+        "Zugang zu über 1 Milliarde Nutzern mit Behinderungen",
+        "Besseres SEO — semantische Struktur hilft auch Crawlern",
+        "Verbesserte Usability und Conversions für alle Nutzer",
+        "Dokumentierte Konformität für die Unternehmensbeschaffung",
+        "Ein Team, das standardmäßig barrierefreie Features liefert"
+      ],
+      "metaTitle": "Barrierefreiheits-Agentur | WCAG 2.1 ADA EAA | PakSoft",
+      "metaDescription": "Machen Sie Ihr Produkt barrierefrei. Wir bieten WCAG 2.1/2.2 Audits, Code-Behebung und integrieren Barrierefreiheit direkt in Ihren Entwicklungs-Workflow.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Automatisiertes & Manuelles Audit",
+            "description": "Wir scannen jedes Template mit axe und Lighthouse, gehen dann aber weit über die ~30% hinaus, die Automatisierung erfassen kann: manuelles Testen mit NVDA, VoiceOver, reiner Tastaturnavigation und Zoom bis 400%. Jedes Problem wird mit WCAG-Kriterium, Schweregrad und betroffener Nutzergruppe protokolliert."
+          },
+          {
+            "step": 2,
+            "title": "Priorisierung & Plan",
+            "description": "Probleme werden nach Nutzerauswirkungen und rechtlichem Risiko priorisiert — Blocker, die den Abschluss einer Aufgabe verhindern, kommen zuerst, kosmetische Kontrastprobleme später. Sie erhalten eine Roadmap, die Ihr Team budgetieren kann, keine undifferenzierte Liste von 400 Verstößen."
+          },
+          {
+            "step": 3,
+            "title": "Code-Ebenen-Behebung",
+            "description": "Wir beheben Probleme in Ihrem Repository: semantische HTML-Struktur, korrekte ARIA-Nutzung, Fokusmanagement, Skip-Links und barrierefreie Formularmuster. Wo ein Design selbst die Barriere darstellt, schlagen wir barrierefreie Alternativen vor, die die visuelle Absicht bewahren."
+          },
+          {
+            "step": 4,
+            "title": "Verifizierung durch Assistenztechnologien",
+            "description": "Jeder Fix wird mit echten Assistenztechnologien über Browser/Screenreader-Kombinationen hinweg neu getestet, nicht nur mit automatisierten Scannern. Wir verifizieren komplette Nutzerreisen — Registrierung, Suche, Kauf — keine isolierten Komponenten."
+          },
+          {
+            "step": 5,
+            "title": "Automatisierung & CI-Integration",
+            "description": "Wir binden axe-core-Checks in Ihre CI-Pipeline und Pull-Request-Workflows ein, sodass neuer Code getestet wird, bevor er gemerged wird. Regressionen werden im Review abgefangen, nicht in einer Klage."
+          },
+          {
+            "step": 6,
+            "title": "Schulung & Konformitätsdokumente",
+            "description": "Ihre Designer und Entwickler erhalten praxisnahe Schulungen mit den Mustern, die für Ihr Produkt wichtig sind. Wir liefern ein VPAT oder eine Konformitätserklärung, die für die Unternehmensbeschaffung und rechtliche Prüfungen geeignet ist."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Welches WCAG-Level brauche ich wirklich?",
+            "answer": "WCAG 2.1 Level AA ist der Standard, auf den sich die ADA, der European Accessibility Act und Section 508 beziehen — es ist das richtige Ziel für fast jede Organisation. Level AAA ist strenger und wird in der Regel selektiv auf kritische Flows und nicht auf ganze Websites angewendet."
+          },
+          {
+            "question": "Reicht ein automatisierter Scan für die Compliance?",
+            "answer": "Nein. Automatisierte Tools finden nur etwa 30% der WCAG-Probleme — sie können nicht beurteilen, ob ein Alt-Text sinnvoll ist, ob die Fokusreihenfolge logisch ist oder ob ein Screenreader-Nutzer den Checkout abschließen kann. Echte Compliance erfordert manuelle Tests mit Assistenztechnologien, was den Kern unserer Audits bildet."
+          },
+          {
+            "question": "Wie lange dauert die Behebung (Remediation)?",
+            "answer": "Eine typische Marketing-Website dauert 2–4 Wochen vom Audit bis zu den verifizierten Fixes; komplexe Webanwendungen dauern 6–12 Wochen, abhängig von der Anzahl der Probleme und Ihrem Release-Prozess. Wir können auch inkrementell parallel zum normalen Sprint-Zyklus Ihres Teams arbeiten."
+          },
+          {
+            "question": "Werden Barrierefreiheits-Änderungen mein Design beeinflussen?",
+            "answer": "Meistens nicht — die Mehrheit der Fixes sind strukturell (semantisches HTML, ARIA, Fokusmanagement) und unsichtbar. Wo visuelle Änderungen nötig sind, meist beim Farbkontrast, passen wir diese innerhalb Ihrer Markenpalette an und bieten Ihren Designern Optionen, anstatt Änderungen aufzuzwingen."
+          },
+          {
+            "question": "Was ist der European Accessibility Act (EAA) und betrifft er mich?",
+            "answer": "Der EAA gilt seit Juni 2025 für E-Commerce, Banking, Transport und andere verbraucherorientierte digitale Dienste, die in der EU verkauft werden — unabhängig davon, wo Ihr Unternehmen ansässig ist. Wenn EU-Kunden bei Ihnen online kaufen können, betrifft er Sie mit an Sicherheit grenzender Wahrscheinlichkeit."
+          },
+          {
+            "question": "Können Sie ein VPAT für B2B-Sales bereitstellen?",
+            "answer": "Ja. Wir erstellen VPAT 2.x / ACR-Dokumente basierend auf tatsächlichen Testergebnissen, die Unternehmens- und Regierungsaufkäufer zunehmend bei der Beschaffung verlangen. Ein ehrliches, detailliertes VPAT ist auch ein Verkaufsargument — es zeigt Käufern, dass Sie Konformität ernst nehmen."
+          },
+          {
+            "question": "Wie halten wir die Seite nach dem Projekt barrierefrei?",
+            "answer": "Drei Mechanismen: automatisierte Checks in Ihrer CI-Pipeline, die Regressionen blockieren, Team-Schulungen, damit barrierefreie Muster zum Standard werden, und ein optionales vierteljährliches Re-Audit, das neue Funktionen abdeckt. Barrierefreiheit ist eine Praxis, kein einmaliges Zertifikat."
+          },
+          {
+            "question": "Hilft Barrierefreiheit wirklich beim SEO?",
+            "answer": "Ja, erheblich. Semantische Überschriften, beschreibende Alt-Texte, korrekte Landmarks und saubere Linktexte sind genau das, was Such-Crawler nutzen, um Ihre Seiten zu verstehen. Barrierefreiheits-Arbeit verbessert routinemäßig Lighthouse-SEO-Scores und die Eignung für Rich-Results als Nebeneffekt."
+          }
+        ],
+        "technologies": [
+          { "icon": "axe", "name": "axe-core" },
+          { "icon": "lighthouse", "name": "Lighthouse" },
+          { "icon": "nvda", "name": "NVDA" },
+          { "icon": "voiceover", "name": "VoiceOver" },
+          { "icon": "jaws", "name": "JAWS" },
+          { "icon": "wave", "name": "WAVE" },
+          { "icon": "pa11y", "name": "Pa11y CI" },
+          { "icon": "storybook", "name": "Storybook a11y" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "قابل رسائی کی تعمیل (Accessibility Compliance)",
+      "shortDescription": "اپنی پروڈکٹ کو ہر کسی کے لیے قابل استعمال اور قانونی طور پر محفوظ بنائیں۔ ہم WCAG 2.1/2.2 کے مطابق آڈٹ کرتے ہیں، کوڈ کی سطح پر مسائل حل کرتے ہیں، اور آپ کی ٹیم کے ورک فلو میں قابل رسائی خصوصیات شامل کرتے ہیں۔",
+      "fullDescription": "ایک ارب سے زیادہ لوگ کسی نہ کسی معذوری کے ساتھ زندگی گزار رہے ہیں، اور ریگولیٹرز بھی اب اس پر توجہ دے رہے ہیں: امریکہ میں ADA، یورپی ایکسیسبلٹی ایکٹ (EAA) اور دنیا بھر میں اس جیسے قوانین اب ناقابل رسائی ویب سائٹس کو ایک قانونی ذمہ داری کے ساتھ ساتھ کھوئی ہوئی مارکیٹ بناتے ہیں۔ ہم WCAG 2.1/2.2 کے مطابق خودکار اور دستی آڈٹ کرتے ہیں — جس میں حقیقی سکرین ریڈر اور صرف کی بورڈ ٹیسٹنگ شامل ہے — اور پھر آپ کو صرف مسائل کی پی ڈی ایف دینے کے بجائے آپ کے اصل کوڈ بیس میں مسائل کو حل کرتے ہیں۔ اصلاحات کے علاوہ، ہم آپ کی CI پائپ لائن میں خودکار ایکسیسبلٹی چیکس شامل کرتے ہیں اور آپ کی ٹیم کو تربیت دیتے ہیں۔ قابل رسائی پروڈکٹس دراصل بہتر پروڈکٹس ہوتی ہیں: واضح ساخت، بہتر SEO اور ہر صارف کے لیے بہتر افادیت۔",
+      "features": [
+        "WCAG 2.1 / 2.2 AA اور AAA آڈٹس",
+        "اسکرین ریڈر ٹیسٹنگ (NVDA, JAWS, VoiceOver)",
+        "صرف کی بورڈ نیویگیشن کا جائزہ",
+        "رنگ کے تضاد (Contrast) اور بصری ڈیزائن کا تجزیہ",
+        "Semantic HTML اور ARIA کی درستگی",
+        "قابل رسائی فارمز، موڈلز اور لائیو ریجنز",
+        "CI-مربوط خودکار ٹیسٹنگ",
+        "VPAT / تعمیل کی رپورٹنگ اور ٹیم کی تربیت"
+      ],
+      "benefits": [
+        "ADA, EAA, اور سیکشن 508 کے تحت قانونی تحفظ",
+        "معذور افراد پر مشتمل 1 ارب سے زیادہ صارفین تک رسائی",
+        "بہتر SEO — سمانٹک ڈھانچہ کرالرز کی بھی مدد کرتا ہے",
+        "تمام صارفین کے لیے استعمال میں آسانی اور تبادلوں (Conversions) میں بہتری",
+        "انٹرپرائز خریداری کے لیے دستاویزی تعمیل",
+        "ایک ایسی ٹیم جو پہلے سے ہی قابل رسائی خصوصیات بناتی ہے"
+      ],
+      "metaTitle": "ایکسیسبلٹی کمپلائنس ایجنسی | WCAG 2.1 ADA EAA | PakSoft",
+      "metaDescription": "اپنی پروڈکٹ کو ہر کسی کے لیے قابل رسائی بنائیں۔ ہم WCAG 2.1/2.2 آڈٹ، کوڈ کی سطح پر درستی، اور آپ کی ٹیم کے لیے ایکسیسبلٹی کی تربیت پیش کرتے ہیں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "خودکار اور دستی آڈٹ",
+            "description": "ہم axe اور Lighthouse کے ساتھ ہر ٹیمپلیٹ کو اسکین کرتے ہیں، پھر دستی ٹیسٹنگ کرتے ہیں جیسے NVDA، VoiceOver، صرف کی بورڈ نیویگیشن، اور 400% تک زوم۔ ہر مسئلے کو WCAG معیار کے مطابق ریکارڈ کیا جاتا ہے۔"
+          },
+          {
+            "step": 2,
+            "title": "ترجیحات اور منصوبہ بندی",
+            "description": "مسائل کو صارف پر پڑنے والے اثرات اور قانونی خطرے کے حساب سے ترتیب دیا جاتا ہے۔ آپ کو 400 مسائل کی ایک مبہم فہرست کے بجائے، بہتری کا ایک واضح روڈ میپ ملتا ہے۔"
+          },
+          {
+            "step": 3,
+            "title": "کوڈ کی سطح پر اصلاحات",
+            "description": "ہم آپ کی ریپوزٹری میں مسائل حل کرتے ہیں: سمانٹک HTML کا ڈھانچہ، ARIA کا درست استعمال، فوکس مینجمنٹ، اور قابل رسائی فارمز۔ جہاں ڈیزائن رکاوٹ ہو، وہاں ہم بصری کشش کو برقرار رکھتے ہوئے متبادل پیش کرتے ہیں۔"
+          },
+          {
+            "step": 4,
+            "title": "اسسٹیو ٹیکنالوجی کی تصدیق",
+            "description": "ہر حل کو حقیقی اسسٹیو ٹیکنالوجیز کے ساتھ دوبارہ ٹیسٹ کیا جاتا ہے۔ ہم مکمل یوزر سفر — رجسٹریشن، تلاش، خریداری — کی تصدیق کرتے ہیں، نہ کہ صرف الگ تھلگ اجزاء کی۔"
+          },
+          {
+            "step": 5,
+            "title": "آٹومیشن اور CI انٹیگریشن",
+            "description": "ہم axe-core چیکس کو آپ کی CI پائپ لائن میں شامل کرتے ہیں تاکہ نئے کوڈ کے شامل ہونے سے پہلے اسے ٹیسٹ کیا جا سکے۔"
+          },
+          {
+            "step": 6,
+            "title": "تربیت اور تعمیل کے دستاویزات",
+            "description": "آپ کے ڈیزائنرز اور ڈیولپرز کو ان طریقوں کی عملی تربیت دی جاتی ہے جو آپ کی پروڈکٹ کے لیے اہم ہیں۔ ہم قانونی جائزے کے لیے مناسب VPAT فراہم کرتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "مجھے واقعی کس WCAG لیول کی ضرورت ہے؟",
+            "answer": "WCAG 2.1 Level AA وہ معیار ہے جس کا حوالہ ADA، یورپی ایکسیسبلٹی ایکٹ اور سیکشن 508 دیتے ہیں — یہ تقریباً ہر تنظیم کے لیے درست ہدف ہے۔ لیول AAA سخت ہے اور عام طور پر پوری سائٹ کے بجائے مخصوص اہم فلو پر لاگو ہوتا ہے۔"
+          },
+          {
+            "question": "کیا تعمیل کے لیے خودکار اسکین کافی ہے؟",
+            "answer": "نہیں، خودکار ٹولز صرف 30% WCAG مسائل کو پکڑتے ہیں — وہ یہ فیصلہ نہیں کر سکتے کہ alt text بامعنی ہے یا نہیں، یا کوئی سکرین ریڈر صارف خریداری مکمل کر سکتا ہے یا نہیں۔ حقیقی تعمیل کے لیے دستی ٹیسٹنگ ضروری ہے۔"
+          },
+          {
+            "question": "مسائل کو حل کرنے (Remediation) میں کتنا وقت لگتا ہے؟",
+            "answer": "ایک عام مارکیٹنگ سائٹ کو آڈٹ سے لے کر اصلاحات تک 2 سے 4 ہفتے لگتے ہیں؛ پیچیدہ ویب ایپلیکیشنز میں 6 سے 12 ہفتے لگ سکتے ہیں۔ ہم آپ کی ٹیم کے نارمل سپرنٹ سائیکل کے ساتھ مرحلہ وار بھی کام کر سکتے ہیں۔"
+          },
+          {
+            "question": "کیا قابل رسائی تبدیلیاں میرے ڈیزائن کو متاثر کریں گی؟",
+            "answer": "زیادہ تر نہیں — بہت سی اصلاحات ساختی (سمانٹک HTML، ARIA، فوکس مینجمنٹ) اور غیر مرئی ہوتی ہیں۔ جہاں بصری تبدیلیوں کی ضرورت ہوتی ہے، ہم آپ کے برانڈ کے رنگوں کے اندر آپشنز فراہم کرتے ہیں۔"
+          },
+          {
+            "question": "یورپی ایکسیسبلٹی ایکٹ (EAA) کیا ہے اور کیا یہ مجھ پر لاگو ہوتا ہے؟",
+            "answer": "یہ ایکٹ جون 2025 سے ای کامرس، بینکنگ اور دیگر ڈیجیٹل سروسز پر لاگو ہو چکا ہے جو EU میں فروخت ہوتی ہیں۔ اگر EU کے صارفین آپ سے آن لائن خریداری کر سکتے ہیں، تو یہ یقینی طور پر آپ پر لاگو ہوتا ہے۔"
+          },
+          {
+            "question": "کیا آپ انٹرپرائز سیلز کے لیے VPAT فراہم کر سکتے ہیں؟",
+            "answer": "ہاں۔ ہم اصل ٹیسٹ کے نتائج کی بنیاد پر VPAT 2.x / ACR دستاویزات تیار کرتے ہیں۔ ایک دیانت دار VPAT آپ کی فروخت کا ایک اثاثہ ہے جو خریداروں کو دکھاتا ہے کہ آپ تعمیل میں سنجیدہ ہیں۔"
+          },
+          {
+            "question": "پروجیکٹ کے بعد ہم سائٹ کو قابل رسائی کیسے رکھ سکتے ہیں؟",
+            "answer": "اس کے تین طریقے ہیں: آپ کی CI پائپ لائن میں خودکار چیکس، ٹیم کی تربیت، اور نئے فیچرز کے لیے ایک اختیاری سہ ماہی آڈٹ۔ قابل رسائی ہونا ایک مستقل عمل ہے، ایک بار کا سرٹیفکیٹ نہیں۔"
+          },
+          {
+            "question": "کیا Accessibility واقعی SEO میں مدد کرتی ہے؟",
+            "answer": "ہاں، بہت زیادہ۔ Semantic ہیڈنگز، وضاحتی alt text اور صاف لنک ٹیکسٹ بالکل وہی چیزیں ہیں جو سرچ کرالرز آپ کے صفحات کو سمجھنے کے لیے استعمال کرتے ہیں۔"
+          }
+        ],
+        "technologies": [
+          { "icon": "axe", "name": "axe-core" },
+          { "icon": "lighthouse", "name": "Lighthouse" },
+          { "icon": "nvda", "name": "NVDA" },
+          { "icon": "voiceover", "name": "VoiceOver" },
+          { "icon": "jaws", "name": "JAWS" },
+          { "icon": "wave", "name": "WAVE" },
+          { "icon": "pa11y", "name": "Pa11y CI" },
+          { "icon": "storybook", "name": "Storybook a11y" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "الامتثال لإمكانية الوصول (Accessibility Compliance)",
+      "shortDescription": "اجعل منتجك قابلاً للاستخدام من قبل الجميع ومحمياً من الناحية القانونية. نحن ندقق وفقاً لمعايير WCAG 2.1/2.2، ونصلح المشكلات على مستوى الكود، وندمج إمكانية الوصول في سير عمل فريقك.",
+      "fullDescription": "يعيش أكثر من مليار شخص مع إعاقة، وقد واكبت الهيئات التنظيمية ذلك: قانون الأمريكيين ذوي الإعاقة (ADA) في الولايات المتحدة، وقانون إمكانية الوصول الأوروبي (EAA)، والقوانين المماثلة في جميع أنحاء العالم تجعل مواقع الويب التي يتعذر الوصول إليها التزاماً قانونياً وسوقاً مفقودة. نجري عمليات تدقيق آلية ويدوية مشتركة مقابل WCAG 2.1/2.2 — بما في ذلك اختبارات قارئ الشاشة الحقيقية والتنقل بلوحة المفاتيح فقط — ثم نصلح المشكلات في قاعدة التعليمات البرمجية الفعلية الخاصة بك بدلاً من تسليمك ملف PDF بالمشاكل. بالإضافة إلى المعالجة، نقوم بإعداد فحوصات إمكانية وصول آلية في مسار CI الخاص بك وندرب فريقك، حتى لا يتراجع المنتج الذي تشحنه في الربع القادم عما بدأ عليه. المنتجات التي يمكن الوصول إليها هي أيضاً مجرد منتجات أفضل: بنية أوضح، وتحسين محركات بحث (SEO) أفضل، وقابلية استخدام محسنة لكل مستخدم.",
+      "features": [
+        "تدقيق معايير WCAG 2.1 / 2.2 AA و AAA",
+        "اختبار قارئ الشاشة (NVDA, JAWS, VoiceOver)",
+        "مراجعة التنقل بلوحة المفاتيح فقط",
+        "تحليل تباين الألوان والتصميم المرئي",
+        "معالجة Semantic HTML و ARIA",
+        "النماذج التي يمكن الوصول إليها، والمربعات الحوارية (Modals)",
+        "الاختبار الآلي المتكامل مع CI",
+        "تقارير المطابقة VPAT وتدريب الفريق"
+      ],
+      "benefits": [
+        "الحماية القانونية بموجب ADA و EAA والقسم 508",
+        "الوصول إلى أكثر من مليار مستخدم من ذوي الإعاقة",
+        "تحسين محركات البحث بشكل أفضل — تساعد البنية الدلالية برامج الزحف أيضاً",
+        "تحسين قابلية الاستخدام والتحويلات لجميع المستخدمين",
+        "المطابقة الموثقة لمشتريات المؤسسات",
+        "فريق يشحن ميزات يسهل الوصول إليها بشكل افتراضي"
+      ],
+      "metaTitle": "وكالة الامتثال لإمكانية الوصول | WCAG 2.1 ADA EAA | PakSoft",
+      "metaDescription": "اجعل منتجك قابلاً للاستخدام للجميع. نحن ندقق ونصلح المشكلات برمجياً ونقوم بدمج إمكانية الوصول في سير عملك لضمان الامتثال لـ WCAG و ADA.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "التدقيق الآلي واليدوي",
+            "description": "نقوم بمسح كل قالب باستخدام axe و Lighthouse، ثم نذهب إلى أبعد من نسبة 30٪ من المشكلات التي يمكن للأتمتة التقاطها: الاختبار اليدوي باستخدام NVDA، و VoiceOver، والتنقل بلوحة المفاتيح، والتكبير حتى 400٪."
+          },
+          {
+            "step": 2,
+            "title": "تحديد الأولويات والخطة",
+            "description": "يتم ترتيب المشكلات حسب تأثير المستخدم والمخاطر القانونية — تأتي العوائق التي تمنع إكمال المهام أولاً، وتأتي مشكلات التباين التجميلية لاحقاً. تحصل على خريطة طريق واضحة للعلاج وليس قائمة بـ 400 انتهاك."
+          },
+          {
+            "step": 3,
+            "title": "المعالجة على مستوى الكود",
+            "description": "نحن نصلح المشكلات في مستودعك: بنية HTML الدلالية (Semantic)، واستخدام ARIA الصحيح، وإدارة التركيز (Focus Management)، وروابط التخطي. إذا كان التصميم نفسه يمثل عائقاً، فإننا نقترح بدائل يمكن الوصول إليها وتحافظ على القصد البصري."
+          },
+          {
+            "step": 4,
+            "title": "التحقق من التقنية المساعدة",
+            "description": "يتم إعادة اختبار كل إصلاح باستخدام تقنيات مساعدة حقيقية عبر مجموعات المتصفح / قارئ الشاشة. نحن نتحقق من رحلات المستخدم الكاملة — التسجيل، والبحث، والشراء — وليس المكونات المعزولة فقط."
+          },
+          {
+            "step": 5,
+            "title": "الأتمتة وتكامل CI",
+            "description": "نقوم بربط فحوصات axe-core في مسار CI الخاص بك وسير عمل طلب السحب (pull-request) بحيث يتم اختبار الكود الجديد قبل دمجه. يتم اكتشاف التراجعات في المراجعة، وليس في دعوى قضائية."
+          },
+          {
+            "step": 6,
+            "title": "التدريب ومستندات المطابقة",
+            "description": "يتلقى المصممون والمطورون لديك تدريباً عملياً على الأنماط التي تهم منتجك. نحن نقدم بيان مطابقة VPAT مناسباً لمشتريات المؤسسات والمراجعة القانونية."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما هو مستوى WCAG الذي أحتاجه فعلياً؟",
+            "answer": "WCAG 2.1 Level AA هو المعيار الذي يشار إليه بواسطة ADA، وقانون إمكانية الوصول الأوروبي، والقسم 508 — إنه الهدف الصحيح لكل منظمة تقريباً. المستوى AAA أكثر صرامة ويتم تطبيقه بشكل انتقائي على التدفقات الهامة."
+          },
+          {
+            "question": "هل الفحص الآلي كافٍ للامتثال؟",
+            "answer": "لا. تلتقط الأدوات الآلية حوالي 30٪ من مشكلات WCAG — ولا يمكنها الحكم على ما إذا كان النص البديل (alt text) ذا مغزى، أو ما إذا كان ترتيب التركيز منطقياً. يتطلب الامتثال الحقيقي اختباراً يدوياً باستخدام التقنيات المساعدة."
+          },
+          {
+            "question": "كم من الوقت تستغرق المعالجة والإصلاح؟",
+            "answer": "يستغرق موقع التسويق النموذجي من 2 إلى 4 أسابيع من التدقيق إلى الإصلاحات المعتمدة؛ تستغرق تطبيقات الويب المعقدة من 6 إلى 12 أسبوعاً اعتماداً على عدد المشكلات. يمكننا أيضاً العمل بشكل تدريجي جنباً إلى جنب مع دورة الركض (Sprint) الخاصة بفريقك."
+          },
+          {
+            "question": "هل ستؤثر تغييرات إمكانية الوصول على تصميمي؟",
+            "answer": "في الغالب لا — غالبية الإصلاحات هيكلية (Semantic HTML ، ARIA) وغير مرئية. عندما تكون التغييرات المرئية مطلوبة (عادةً تباين الألوان)، فإننا نقوم بالتعديل ضمن لوحة علامتك التجارية ونقدم خيارات لمصمميك بدلاً من فرض تغييرات."
+          },
+          {
+            "question": "ما هو قانون إمكانية الوصول الأوروبي وهل ينطبق علي؟",
+            "answer": "يُطبق قانون EAA منذ يونيو 2025 على التجارة الإلكترونية، والخدمات المصرفية، والنقل، والخدمات الرقمية الأخرى المباعة في الاتحاد الأوروبي — بغض النظر عن مكان تواجد شركتك. إذا كان بإمكان عملاء الاتحاد الأوروبي الشراء منك عبر الإنترنت، فإنه ينطبق عليك بشكل شبه مؤكد."
+          },
+          {
+            "question": "هل يمكنك تقديم VPAT لمبيعات المؤسسات؟",
+            "answer": "نعم. نحن ننتج مستندات VPAT 2.x / ACR بناءً على نتائج الاختبار الفعلية، والتي يطلبها مشترو المؤسسات والحكومة بشكل متزايد. يعتبر VPAT الصادق والمفصل أيضاً أحد أصول المبيعات."
+          },
+          {
+            "question": "كيف نحافظ على إمكانية الوصول إلى الموقع بعد المشروع؟",
+            "answer": "ثلاث آليات: فحوصات آلية في مسار CI الخاص بك والتي تمنع التراجعات، وتدريب الفريق بحيث تصبح الأنماط التي يمكن الوصول إليها هي الإعداد الافتراضي، وإعادة تدقيق ربع سنوية اختيارية تغطي ميزات جديدة."
+          },
+          {
+            "question": "هل تساعد إمكانية الوصول في تحسين محركات البحث حقاً؟",
+            "answer": "نعم، بشكل كبير. العناوين الدلالية، والنص البديل الوصفي، والنص النظيف للرابط هي بالضبط ما تستخدمه برامج زحف البحث لفهم صفحاتك."
+          }
+        ],
+        "technologies": [
+          { "icon": "axe", "name": "axe-core" },
+          { "icon": "lighthouse", "name": "Lighthouse" },
+          { "icon": "nvda", "name": "NVDA" },
+          { "icon": "voiceover", "name": "VoiceOver" },
+          { "icon": "jaws", "name": "JAWS" },
+          { "icon": "wave", "name": "WAVE" },
+          { "icon": "pa11y", "name": "Pa11y CI" },
+          { "icon": "storybook", "name": "Storybook a11y" }
+        ]
+      }
+    }
+  },
+  "server-optimization": {
+    "tr": {
+      "name": "Sunucu Optimizasyonu",
+      "shortDescription": "Hali hazırda parasını ödediğiniz sunuculardan daha hızlı yanıtlar alın. Daha büyük makineler satın almadan gecikmeyi (latency) ve bulut harcamalarınızı — genellikle her ikisini de %30-50 oranında — azaltmak için sunucu altyapısını profilliyor, ayarlıyor ve yeniden tasarlıyoruz.",
+      "fullDescription": "Çoğu sunucu potansiyelinin çok altında çalışır: varsayılan yapılandırmalar, eksik önbellekler (caches), dizine eklenmemiş sorgular ve büyük boyutlu örnekler (instances) sessizce para ve milisaniye yakar. Ölçerek başlıyoruz — zamanın ve bütçenin gerçekte nereye gittiğini bulmak için yığınınızı (stack) gerçek yük altında profilliyoruz — ardından etki sırasına göre ayarlama yapıyoruz: web sunucusu ve çekirdek (kernel) yapılandırması, veritabanı sorguları ve bağlantı havuzlama (connection pooling), Redis'ten CDN'e kadar önbellekleme katmanları ve son olarak doğru boyutlandırma (right-sizing) ve otomatik ölçeklendirme politikaları. Sonuç, daha ağır yük altında daha hızlı yanıt veren ve çalıştırılması daha az maliyetli olan bir sistemdir. Değiştirdiğimiz her şey öncesi ve sonrası ile kıyaslanır, belgelenir ve yük testi yapılır, böylece vaatler yerine doğrulanmış rakamlar ve ekibinizin güvenle işletebileceği bir kullanım kılavuzu (runbook) elde edersiniz.",
+      "features": [
+        "Tam Yığın (Full-Stack) Performans Profili Çıkarma",
+        "Web Sunucusu ve Çekirdek (Kernel) Ayarlama (nginx, Linux)",
+        "Veritabanı Sorgu ve Dizin (Index) Optimizasyonu",
+        "Önbellekleme Mimarisi (Redis, Varnish, CDN)",
+        "Yük Dengeleme (Load Balancing) ve Bağlantı Havuzlama",
+        "Otomatik Ölçeklendirme (Autoscaling) ve Doğru Boyutlandırma",
+        "Yük Testi ve Kapasite Planlama",
+        "İzleme, Uyarılar ve Kullanım Kılavuzları (Runbooks)"
+      ],
+      "benefits": [
+        "Tipik iş yüklerinde %30-50 daha düşük yanıt süreleri",
+        "Büyük boyutlu kaynakları kaldırarak bulut faturalarında düşüş",
+        "Eskiden kesintilere neden olan trafik artışlarını (spikes) atlatır",
+        "Tahminler değil, doğrulanmış öncesi/sonrası kıyaslamaları (benchmarks)",
+        "Gerçek yük verilerine dayanan kapasite planlaması",
+        "Ekibinizin sürdürebileceği belgelenmiş bir kurulum"
+      ],
+      "metaTitle": "Sunucu Optimizasyon Ajansı | Bulut Maliyetlerini Düşürün | PakSoft",
+      "metaDescription": "Gecikmeyi ve bulut faturalarını azaltın. nginx, Linux, PostgreSQL, Redis ve AWS altyapınızı profilliyor, ayarlıyor ve optimize ediyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Temel Çizgi (Baseline) ve Profil Oluşturma",
+            "description": "Yığınınızı araçlarla donatıyor ve gerçek trafiği ölçüyoruz: yanıt süresi yüzdelikleri, yavaş sorgular, önbellek isabet (cache hit) oranları, CPU/bellek/GÇ doygunluğu ve istek başına maliyet. Bu temel çizgi, daha sonraki her değişikliğin değerlendirildiği sözleşmedir."
+          },
+          {
+            "step": 2,
+            "title": "Darboğaz (Bottleneck) Analizi",
+            "description": "Profil verileri bize zamanın gerçekte nereye gittiğini söyler — bu nadiren ekiplerin varsaydığı yerdir. Bulguları efor başına etkiye göre sıralıyoruz, böylece kimse bir yeniden mimarileştirmeyi tartışmadan önce eksik bir veritabanı dizini (index) düzeltiliyor."
+          },
+          {
+            "step": 3,
+            "title": "Yapılandırma Ayarlama (Tuning)",
+            "description": "Zaten çalıştırdığınız katmanları ayarlıyoruz: nginx çalışanları (workers) ve arabellekleri (buffers), çekirdek (kernel) ağ parametreleri, PHP-FPM/Node havuzları, veritabanı belleği ve bağlantı ayarları. Bu sıfır maliyetli değişiklikler genellikle en büyük tekil kazanımları sağlar."
+          },
+          {
+            "step": 4,
+            "title": "Önbelleğe Alma (Caching) ve Mimari",
+            "description": "Doğru katmanlara önbelleğe alma işlemini ekliyor veya onarıyoruz — sıcak veriler için Redis, tam sayfalar için Varnish veya CDN, doğru yapılmış HTTP önbellek başlıkları (headers). Mimarinin sınır olduğu yerlerde, yük dengeleme (load balancing), okuma replikaları (read replicas) veya kuyruk tabanlı boşaltma (queue-based offloading) sunuyoruz."
+          },
+          {
+            "step": 5,
+            "title": "Yük Testi ve Doğrulama",
+            "description": "Her değişiklik, orijinal temel çizgiye (baseline) karşı k6 veya Locust ile simüle edilmiş üretim yükü altında doğrulanır. Elde edilen kesin gecikme, verim (throughput) ve maliyet rakamlarını içeren bir öncesi/sonrası raporu alırsınız."
+          },
+          {
+            "step": 6,
+            "title": "İzleme ve Teslim Etme",
+            "description": "Size gösterge panelleri, kullanıcı deneyimine bağlı uyarı eşikleri, otomatik ölçeklendirme politikaları ve en olası olaylar için kullanım kılavuzları (runbooks) bırakıyoruz. İsteğe bağlı üç aylık incelemeler, ürün büyüdükçe performansın kaymasını engeller."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Gerçekçi olarak ne kadarlık bir gelişme bekleyebiliriz?",
+            "answer": "Tipik çalışmalar p95 yanıt sürelerini %30-50 oranında azaltır ve altyapı harcamalarını anlamlı ölçüde düşürür, çünkü çoğu sistem anahtar önbelleklerin eksik olduğu varsayılan (default) ayarlarla çalışır. Önce profil çıkarıyoruz; yığınınız zaten iyi ayarlanmışsa ve kazanımlar küçük olacaksa, taahhüt etmeden önce size bunu söyleriz."
+          },
+          {
+            "question": "Bulut (cloud), şirket içi (on-premise) veya her ikisiyle mi çalışıyorsunuz?",
+            "answer": "Her ikisiyle de. Geleneksel ayrılmış sunucular ve VPS ana bilgisayarlarının yanı sıra AWS, Google Cloud, Azure ve Hetzner kurulumlarını optimize ediyoruz. Bulutta, maliyet optimizasyonu (doğru boyutlandırma, depolama katmanları) projenin bir parçasıdır; şirket içinde ise odak noktası sabit donanımdan maksimum verimi almaktır."
+          },
+          {
+            "question": "Optimizasyon sırasında kesinti (downtime) olacak mı?",
+            "answer": "Yapılandırma değişiklikleri kademeli yeniden başlatmalarla (rolling restarts) veya üzerinde anlaşılan düşük trafikli pencerelerde uygulanır ve her değişikliğin test edilmiş bir geri dönüşü (rollback) vardır. Daha riskli mimari değişikliklerin provaları önce bir hazırlık (staging) kopyasında yapılır."
+          },
+          {
+            "question": "Veritabanımız yavaş çalışan kısım — bu kapsam dahilinde mi?",
+            "answer": "Evet, veritabanı genellikle ana odak noktasıdır: PostgreSQL, MySQL ve MongoDB için yavaş sorgu analizi, indeksleme stratejisi, bağlantı havuzlama (connection pooling), bellek yapılandırması ve okuma replikaları (read replicas). Çoğu 'sunucu' sorunu aslında profillemenin ilk haftada ortaya çıkardığı dizine eklenmemiş tek bir sorgudur."
+          },
+          {
+            "question": "Performansa zarar vermeden bulut faturamızı azaltabilir misiniz?",
+            "answer": "Genellikle ikisini aynı anda iyileştiriyoruz: Büyük boyutlu bulut örnekleri (instances) doğru boyuta getirilir, atıl kaynaklar kaldırılır, depolama uygun katmanlara taşınır ve önbelleğe alma ihtiyacınız olan hesaplamayı (compute) azaltır."
+          },
+          {
+            "question": "İyileştirmelerin gerçek olduğunu nasıl kanıtlarsınız?",
+            "answer": "Değişiklik öncesi temel çizgiye ve nihai sisteme karşı çalıştırılan aynı yük testleri ve üzerinde anlaşılan bir doğrulama penceresi üzerinden üretim izlemesi ile. Nihai rapor gecikme yüzdeliklerini, verimi, hata oranlarını ve aylık maliyeti yan yana gösterir."
+          },
+          {
+            "question": "Hangi erişime ihtiyacınız var ve nasıl güvence altına alınıyor?",
+            "answer": "Profil çıkarma için salt okunur izleme erişimi, ardından anlaştığımız değişiklikler için kapsamlı (scoped) dağıtım erişimi — kontrol ettiğiniz ve iptal edebileceğiniz VPN, bastion ana bilgisayarı veya geçici IAM rolleri aracılığıyla."
+          },
+          {
+            "question": "Performansın tekrar düşmesini nasıl engelleriz?",
+            "answer": "Teslimat, kullanıcıya dönük eşiklere bağlı gösterge panelleri (dashboards) ve uyarıları, kapasite projeksiyonlarını ve kullanım kılavuzlarını (runbooks) içerir. CI'daki performans bütçeleri, dağıtımdan önce regresyonları engelleyebilir."
+          }
+        ],
+        "technologies": [
+          { "icon": "nginx", "name": "nginx" },
+          { "icon": "redis", "name": "Redis" },
+          { "icon": "varnish", "name": "Varnish" },
+          { "icon": "postgresql", "name": "PostgreSQL" },
+          { "icon": "cloudflare", "name": "Cloudflare" },
+          { "icon": "grafana", "name": "Grafana" },
+          { "icon": "prometheus", "name": "Prometheus" },
+          { "icon": "k6", "name": "k6" }
+        ]
+      }
+    },
+    "de": {
+      "name": "Server-Optimierung",
+      "shortDescription": "Schnellere Antworten von den Servern, für die Sie bereits bezahlen. Wir erstellen Profile, tunen und überarbeiten die Serverinfrastruktur, um Latenz und Cloud-Ausgaben – oft um 30–50 % – zu senken, ohne größere Maschinen zu kaufen.",
+      "fullDescription": "Die meisten Server laufen weit unter ihrem Potenzial: Standardkonfigurationen, fehlende Caches, nicht indizierte Abfragen und überdimensionierte Instanzen verbrennen leise Geld und Millisekunden. Wir beginnen mit der Messung – wir profilieren Ihren Stack unter realer Last, um herauszufinden, wohin Zeit und Budget wirklich fließen – und optimieren dann in der Reihenfolge der größten Auswirkungen: Webserver- und Kernel-Konfiguration, Datenbankabfragen und Connection Pooling, Caching-Schichten von Redis bis CDN und schließlich Right-Sizing und Autoscaling-Richtlinien. Das Ergebnis ist ein System, das unter höherer Last schneller antwortet und gleichzeitig im Betrieb weniger kostet. Alles, was wir ändern, wird mit Vorher/Nachher-Benchmarks versehen, dokumentiert und lastgetestet.",
+      "features": [
+        "Full-Stack Performance-Profiling",
+        "Web-Server- & Kernel-Tuning (nginx, Linux)",
+        "Datenbank-Abfrage- & Index-Optimierung",
+        "Caching-Architektur (Redis, Varnish, CDN)",
+        "Load Balancing & Connection Pooling",
+        "Autoscaling & Instance Right-Sizing",
+        "Lasttests (Load Testing) & Kapazitätsplanung",
+        "Monitoring, Alerting & Runbooks"
+      ],
+      "benefits": [
+        "30–50 % kürzere Antwortzeiten bei typischen Workloads",
+        "Reduzierte Cloud-Rechnungen durch Entfernen überdimensionierter Ressourcen",
+        "Übersteht Traffic-Spitzen, die früher zu Ausfällen führten",
+        "Verifizierte Vorher/Nachher-Benchmarks, keine Schätzungen",
+        "Kapazitätsplanung basierend auf echten Lastdaten",
+        "Ein dokumentiertes Setup, das Ihr Team warten kann"
+      ],
+      "metaTitle": "Server-Optimierung & Tuning Agentur | PakSoft",
+      "metaDescription": "Senken Sie Latenzzeiten und Cloud-Rechnungen. Wir profilieren, tunen und optimieren Ihre nginx-, Linux-, PostgreSQL-, Redis- und AWS-Infrastruktur.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Baseline & Profiling",
+            "description": "Wir instrumentieren Ihren Stack und messen realen Traffic: Antwortzeit-Perzentile, langsame Abfragen, Cache-Hit-Raten, CPU-/Speicher-/IO-Sättigung und Kosten pro Request."
+          },
+          {
+            "step": 2,
+            "title": "Engpass-Analyse (Bottlenecks)",
+            "description": "Profiling-Daten zeigen uns, wo die Zeit wirklich bleibt. Wir ordnen die Ergebnisse nach Aufwand-Nutzen-Verhältnis, sodass ein fehlender Datenbank-Index behoben wird, bevor eine Neuarchitektur debattiert wird."
+          },
+          {
+            "step": 3,
+            "title": "Konfigurations-Tuning",
+            "description": "Wir tunen die Schichten, die Sie bereits betreiben: nginx-Worker und -Buffer, Kernel-Netzwerkparameter, PHP-FPM/Node-Pools, Datenbank-Speicher- und Verbindungseinstellungen. Diese Zero-Cost-Änderungen liefern oft die größten Gewinne."
+          },
+          {
+            "step": 4,
+            "title": "Caching & Architektur",
+            "description": "Wir fügen Caching auf den richtigen Ebenen hinzu – Redis für heiße Daten, Varnish oder CDN für ganze Seiten. Wo die Architektur an ihre Grenzen stößt, führen wir Load Balancing, Read Replicas oder Queue-basierte Offloading-Verfahren ein."
+          },
+          {
+            "step": 5,
+            "title": "Lasttests & Validierung",
+            "description": "Jede Änderung wird unter simulierter Produktionslast mit k6 oder Locust validiert. Sie erhalten einen Vorher/Nachher-Bericht mit den genauen erreichten Latenz-, Durchsatz- und Kostenzahlen."
+          },
+          {
+            "step": 6,
+            "title": "Monitoring & Übergabe",
+            "description": "Wir hinterlassen Ihnen Dashboards, nutzerbezogene Alarm-Schwellenwerte, Autoscaling-Richtlinien und Runbooks für die wahrscheinlichsten Vorfälle. Optionale Quartals-Reviews verhindern, dass die Leistung wieder abfällt."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Wie viel Verbesserung können wir realistischerweise erwarten?",
+            "answer": "Typische Projekte senken p95-Antwortzeiten um 30–50 % und reduzieren die Infrastrukturausgaben, da die meisten Systeme auf Standardwerten laufen. Wir profilieren zuerst; wenn Ihr Stack bereits gut optimiert ist, sagen wir Ihnen das vorab."
+          },
+          {
+            "question": "Arbeiten Sie mit Cloud, On-Premise oder beidem?",
+            "answer": "Beidem. Wir optimieren AWS, Google Cloud, Azure und Hetzner sowie klassische dedizierte Server und VPS-Hosts. Bei Cloud-Setups ist Kostenoptimierung (Right-Sizing) ein zentraler Teil; On-Premise verlagert sich der Fokus auf maximalen Durchsatz aus fixer Hardware."
+          },
+          {
+            "question": "Wird es während der Optimierung zu Ausfallzeiten (Downtime) kommen?",
+            "answer": "Konfigurationsänderungen werden mit Rolling Restarts oder in lastarmen Fenstern angewendet. Riskantere architektonische Änderungen werden zuerst auf einer Staging-Umgebung geprobt. In der Praxis verlaufen Projekte mit null ungeplanter Ausfallzeit."
+          },
+          {
+            "question": "Unsere Datenbank ist der langsame Teil – gehört das zum Leistungsumfang?",
+            "answer": "Ja, die Datenbank ist meistens das Hauptevent: Slow-Query-Analyse, Indexierungsstrategie, Connection Pooling, Speicherkonfiguration und Read Replicas für PostgreSQL, MySQL und MongoDB. Viele 'Server'-Probleme entpuppen sich als eine einzige nicht indizierte Abfrage."
+          },
+          {
+            "question": "Können Sie unsere Cloud-Rechnung senken, ohne die Leistung zu beeinträchtigen?",
+            "answer": "Meistens verbessern wir beides gleichzeitig: Überdimensionierte Instanzen werden verkleinert, ungenutzte Ressourcen entfernt und Caching reduziert die überhaupt benötigte Rechenleistung. Verifizierte Ergebnisse landen häufig bei 20–40 % Kostenreduzierung bei gleicher oder besserer Latenz."
+          },
+          {
+            "question": "Wie beweisen Sie, dass die Verbesserungen real sind?",
+            "answer": "Mit identischen Lasttests, die gegen die Baseline vor der Änderung und das finale System gefahren werden, plus Produktions-Monitoring. Der Abschlussbericht zeigt Latenz-Perzentile, Durchsatz, Fehlerraten und monatliche Kosten direkt nebeneinander."
+          },
+          {
+            "question": "Welchen Zugriff benötigen Sie und wie wird er abgesichert?",
+            "answer": "Nur Lese-Zugriff für das Profiling, danach fokussierten Deployment-Zugang für abgestimmte Änderungen – via VPN, Bastion-Host oder temporäre IAM-Rollen, die Sie kontrollieren. Nichts geht ohne Ihren Review-Prozess produktiv."
+          },
+          {
+            "question": "Wie verhindern wir, dass sich die Leistung wieder verschlechtert?",
+            "answer": "Die Übergabe umfasst Dashboards, nutzerbezogene Warnungen und Runbooks. Performance-Budgets in der CI können Regressionen vor dem Deployment blockieren. Wir bieten zudem quartalsweise Reviews an."
+          }
+        ],
+        "technologies": [
+          { "icon": "nginx", "name": "nginx" },
+          { "icon": "redis", "name": "Redis" },
+          { "icon": "varnish", "name": "Varnish" },
+          { "icon": "postgresql", "name": "PostgreSQL" },
+          { "icon": "cloudflare", "name": "Cloudflare" },
+          { "icon": "grafana", "name": "Grafana" },
+          { "icon": "prometheus", "name": "Prometheus" },
+          { "icon": "k6", "name": "k6" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "سرور کی آپٹیمائزیشن (Server Optimization)",
+      "shortDescription": "جن سرورز کی آپ پہلے ہی ادائیگی کر رہے ہیں ان سے تیز تر رسپانس حاصل کریں۔ ہم بڑی مشینیں خریدے بغیر، کلاؤڈ کے اخراجات اور تاخیر کو 30-50% تک کم کرنے کے لیے سرور کے بنیادی ڈھانچے کو ٹیون اور ری-آرکیٹیکٹ کرتے ہیں۔",
+      "fullDescription": "زیادہ تر سرورز اپنی پوری صلاحیت کے مطابق کام نہیں کرتے: پہلے سے طے شدہ ترتیبات، غائب کیش (caches)، اور ضرورت سے زیادہ بڑی مشینیں آپ کے پیسے اور ملی سیکنڈز ضائع کرتی ہیں۔ ہم آپ کے سرور کو اصل لوڈ کے تحت ٹیسٹ کرنے سے آغاز کرتے ہیں، تاکہ یہ معلوم ہو سکے کہ وقت اور بجٹ اصل میں کہاں جا رہا ہے۔ اس کے بعد ہم سب سے زیادہ اثر ڈالنے والی چیزوں کو ٹھیک کرتے ہیں: ویب سرور اور کرنل (kernel) کی ترتیب، ڈیٹا بیس کیوریز، Redis سے CDN تک کیشنگ تہیں، اور آخر میں سرورز کا صحیح سائز اور آٹو اسکیلنگ۔ اس کا نتیجہ ایک ایسا نظام ہے جو زیادہ بوجھ کے باوجود تیزی سے کام کرتا ہے اور اسے چلانے پر لاگت بھی کم آتی ہے۔ ہم جو بھی تبدیلیاں کرتے ہیں، ان کی باقاعدہ جانچ اور لوڈ ٹیسٹنگ کی جاتی ہے، تاکہ آپ کو محض وعدوں کے بجائے مستند نتائج مل سکیں۔",
+      "features": [
+        "فل اسٹیک پرفارمنس پروفائلنگ",
+        "ویب سرور اور کرنل ٹیوننگ (nginx, Linux)",
+        "ڈیٹا بیس کیوری اور انڈیکس کی اصلاح",
+        "کیشنگ آرکیٹیکچر (Redis, Varnish, CDN)",
+        "لوڈ بیلنسنگ اور کنکشن پولنگ",
+        "آٹو اسکیلنگ اور صحیح سائزنگ (Right-Sizing)",
+        "لوڈ ٹیسٹنگ اور استعداد کی منصوبہ بندی",
+        "مانیٹرنگ، الرٹنگ اور رن بکس"
+      ],
+      "benefits": [
+        "عام کاموں پر 30-50% تک کم رسپانس ٹائم",
+        "ضرورت سے زیادہ بڑی مشینوں کو ہٹا کر کلاؤڈ بلز میں کمی",
+        "ٹریفک کے اچانک اضافے سے نمٹنے کی صلاحیت",
+        "تبدیلی سے پہلے اور بعد کے مستند بینچ مارکس",
+        "حقیقی لوڈ ڈیٹا پر مبنی کیپیسٹی پلاننگ",
+        "ایک مستند سیٹ اپ جسے آپ کی ٹیم آسانی سے سنبھال سکے"
+      ],
+      "metaTitle": "سرور آپٹیمائزیشن ایجنسی | کلاؤڈ اخراجات کو کم کریں | PakSoft",
+      "metaDescription": "سرور کی تاخیر اور کلاؤڈ بلز کو کم کریں۔ ہم آپ کے nginx، Linux، PostgreSQL، اور AWS انفراسٹرکچر کو ٹیون اور آپٹیمائز کرتے ہیں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "بیس لائن اور پروفائلنگ",
+            "description": "ہم آپ کے اسٹیک کو پرکھتے ہیں اور حقیقی ٹریفک کی پیمائش کرتے ہیں: رسپانس ٹائم، سست کیوریز، کیش ہٹ ریٹس، اور CPU/میموری کا استعمال۔ یہ وہ بنیاد ہے جس پر ہر تبدیلی کو جانچا جائے گا۔"
+          },
+          {
+            "step": 2,
+            "title": "رکاوٹوں کا تجزیہ (Bottleneck Analysis)",
+            "description": "پروفائلنگ کا ڈیٹا ہمیں بتاتا ہے کہ اصل میں تاخیر کہاں ہو رہی ہے۔ ہم نتائج کو ان کے اثرات کے لحاظ سے ترتیب دیتے ہیں، تاکہ سب سے بڑے مسئلے (مثلاً غائب ڈیٹا بیس انڈیکس) کو پہلے حل کیا جائے۔"
+          },
+          {
+            "step": 3,
+            "title": "کنفیگریشن ٹیوننگ",
+            "description": "ہم ان تہوں کو بہتر بناتے ہیں جو آپ پہلے ہی چلا رہے ہیں: nginx ورکرز، کرنل نیٹ ورک پیرامیٹرز، پی ایچ پی پولز، اور ڈیٹا بیس میموری۔ یہ بغیر لاگت کی تبدیلیاں اکثر سب سے زیادہ بہتری لاتی ہیں۔"
+          },
+          {
+            "step": 4,
+            "title": "کیشنگ اور آرکیٹیکچر",
+            "description": "ہم درست سطحوں پر کیشنگ شامل کرتے ہیں — گرم ڈیٹا کے لیے Redis، مکمل صفحات کے لیے Varnish یا CDN۔ اگر ڈھانچے کی کوئی حد ہو، تو ہم لوڈ بیلنسنگ یا ریڈ ریپلیکاز کا تعارف کراتے ہیں۔"
+          },
+          {
+            "step": 5,
+            "title": "لوڈ ٹیسٹنگ اور توثیق",
+            "description": "ہر تبدیلی کو k6 یا Locust کے ساتھ مصنوعی پروڈکشن لوڈ کے تحت چیک کیا جاتا ہے۔ آپ کو ایک رپورٹ ملتی ہے جس میں حاصل شدہ تاخیر، رفتار، اور اخراجات کے اعداد و شمار واضح ہوتے ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "مانیٹرنگ اور ہینڈ اوور",
+            "description": "ہم آپ کو ڈیش بورڈز، الرٹ تھریشولڈز اور خودکار اسکیلنگ پالیسیز مہیا کرتے ہیں۔ سہ ماہی جائزے یہ یقینی بناتے ہیں کہ پروڈکٹ کی ترقی کے ساتھ کارکردگی میں کمی نہ آئے۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "ہم حقیقت میں کتنی بہتری کی توقع کر سکتے ہیں؟",
+            "answer": "عمومی طور پر، ہم رسپانس ٹائم کو 30-50% تک کم کر دیتے ہیں اور انفراسٹرکچر کے اخراجات میں نمایاں کمی لاتے ہیں، کیونکہ زیادہ تر سسٹمز پہلے سے طے شدہ ترتیبات پر چل رہے ہوتے ہیں۔ ہم پہلے پروفائلنگ کرتے ہیں؛ اگر آپ کا نظام پہلے سے ہی بہترین ہے، تو ہم آپ کو فوراً بتا دیں گے۔"
+          },
+          {
+            "question": "کیا آپ کلاؤڈ (Cloud) یا آن پریمیس (On-premise) کے ساتھ کام کرتے ہیں؟",
+            "answer": "دونوں کے ساتھ۔ ہم AWS، Google Cloud، Azure اور روایتی ڈیڈیکیٹڈ سرورز کو آپٹیمائز کرتے ہیں۔ کلاؤڈ پر لاگت میں کمی (Cost Optimization) ایک اہم حصہ ہے، جبکہ آن پریمیس میں ہمارا دھیان موجودہ ہارڈ ویئر سے زیادہ سے زیادہ کارکردگی نکالنے پر ہوتا ہے۔"
+          },
+          {
+            "question": "کیا آپٹیمائزیشن کے دوران سرور ڈاؤن (Downtime) ہوگا؟",
+            "answer": "کنفیگریشن کی تبدیلیاں مرحلہ وار یا کم ٹریفک والے اوقات میں کی جاتی ہیں، اور ہر تبدیلی کا ایک بیک اپ ہوتا ہے۔ بڑے فن تعمیراتی تبدیلیوں کی پہلے سٹیجنگ (staging) سرور پر جانچ کی جاتی ہے۔"
+          },
+          {
+            "question": "ہمارا ڈیٹا بیس سست ہے — کیا یہ آپ کے دائرہ کار میں شامل ہے؟",
+            "answer": "ہاں، ڈیٹا بیس عام طور پر بنیادی وجہ ہوتا ہے۔ ہم PostgreSQL، MySQL اور MongoDB کے لیے سست کیوریز کا تجزیہ، انڈیکسنگ، اور کنکشن پولنگ جیسی چیزوں کو آپٹیمائز کرتے ہیں۔"
+          },
+          {
+            "question": "کیا آپ پرفارمنس کو نقصان پہنچائے بغیر ہمارا کلاؤڈ بل کم کر سکتے ہیں؟",
+            "answer": "ہم عام طور پر دونوں میں ایک ساتھ بہتری لاتے ہیں: بڑے انسٹینس کو مناسب سائز میں لایا جاتا ہے، فالتو وسائل ہٹائے جاتے ہیں اور کیشنگ (Caching) کی بدولت درکار کمپیوٹ پاور کم ہو جاتی ہے۔ عام طور پر 20-40% لاگت میں کمی واقع ہوتی ہے۔"
+          },
+          {
+            "question": "آپ کیسے ثابت کرتے ہیں کہ بہتری حقیقت میں آئی ہے؟",
+            "answer": "ہم کام شروع کرنے سے پہلے اور مکمل ہونے کے بعد کے لوڈ ٹیسٹ کے اعداد و شمار کا موازنہ کرتے ہیں۔ ہماری آخری رپورٹ میں رسپانس ٹائم اور ماہانہ لاگت واضح طور پر درج ہوتی ہے جو آپ کے CFO اور CTO دونوں پڑھ سکتے ہیں۔"
+          },
+          {
+            "question": "آپ کو کس قسم کی رسائی (Access) درکار ہے؟",
+            "answer": "پروفائلنگ کے لیے صرف ریڈ اونلی (Read-only) رسائی، اور پھر تبدیلیوں کے لیے محدود تعیناتی رسائی درکار ہوتی ہے۔ آپ کے جائزے کے بغیر کوئی بھی تبدیلی پروڈکشن پر لاگو نہیں کی جاتی۔"
+          },
+          {
+            "question": "ہم کارکردگی کو دوبارہ گرنے سے کیسے بچا سکتے ہیں؟",
+            "answer": "ہم آپ کو ڈیش بورڈز، الرٹس اور رن بکس (Runbooks) فراہم کرتے ہیں۔ CI پائپ لائنز میں کارکردگی کے بجٹ ڈپلائمنٹ سے پہلے ہی خرابیوں کو روک سکتے ہیں، اور آپ ہماری سہ ماہی مانیٹرنگ کی خدمات بھی لے سکتے ہیں۔"
+          }
+        ],
+        "technologies": [
+          { "icon": "nginx", "name": "nginx" },
+          { "icon": "redis", "name": "Redis" },
+          { "icon": "varnish", "name": "Varnish" },
+          { "icon": "postgresql", "name": "PostgreSQL" },
+          { "icon": "cloudflare", "name": "Cloudflare" },
+          { "icon": "grafana", "name": "Grafana" },
+          { "icon": "prometheus", "name": "Prometheus" },
+          { "icon": "k6", "name": "k6" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "تحسين الخوادم (Server Optimization)",
+      "shortDescription": "احصل على استجابات أسرع من الخوادم التي تدفع ثمنها بالفعل. نقوم بتحديد ملفات التعريف والضبط وإعادة هيكلة البنية التحتية للخادم لتقليل وقت الاستجابة (Latency) والإنفاق السحابي — غالباً بنسبة 30-50٪ كلاهما — دون شراء أجهزة أكبر.",
+      "fullDescription": "تعمل معظم الخوادم بجزء بسيط من إمكاناتها: فالتكوينات الافتراضية (Defaults)، وذاكرة التخزين المؤقت (Caches) المفقودة، والاستعلامات غير المفهرسة، والأجهزة ذات الحجم الزائد تحرق المال والأجزاء من الثانية بهدوء. نبدأ بالقياس — التنميط الفعلي لحزمتك تحت حمل حقيقي لمعرفة أين يذهب الوقت والميزانية بالفعل — ثم نضبط بالترتيب حسب التأثير الأكبر: تكوين خادم الويب والنواة (Kernel)، واستعلامات قاعدة البيانات وتجميع الاتصالات، وطبقات التخزين المؤقت من Redis إلى CDN، وأخيراً سياسات الحجم الصحيح والتوسيع التلقائي. النتيجة هي نظام يستجيب بشكل أسرع تحت حمل أثقل بينما يكلف تشغيله أقل. كل ما نقوم بتغييره يتم قياسه قبل وبعد، وتوثيقه، واختباره تحت الحمل، بحيث تحصل على أرقام تم التحقق منها بدلاً من الوعود — ودليل تشغيل (Runbook) يمكن لفريقك تشغيله بثقة.",
+      "features": [
+        "تنميط أداء الحزمة الكاملة (Full-Stack Profiling)",
+        "ضبط خادم الويب ونواة النظام (nginx, Linux)",
+        "تحسين استعلامات قاعدة البيانات والفهرسة",
+        "بنية التخزين المؤقت (Redis, Varnish, CDN)",
+        "موازنة الحمل (Load Balancing) وتجميع الاتصالات",
+        "التوسيع التلقائي والحجم الصحيح للأجهزة (Right-Sizing)",
+        "اختبار الحمل وتخطيط القدرة (Capacity Planning)",
+        "المراقبة، والتنبيهات، وأدلة التشغيل"
+      ],
+      "benefits": [
+        "أوقات استجابة أقل بنسبة 30-50٪ في أعباء العمل المعتادة",
+        "خفض فواتير السحابة عن طريق إزالة الموارد ذات الحجم الزائد",
+        "النجاة من ارتفاعات حركة المرور (Spikes) التي كانت تسبب انقطاعات",
+        "قياسات تم التحقق منها قبل/بعد التغيير، وليس مجرد تقديرات",
+        "تخطيط السعة (Capacity) استناداً إلى بيانات الحمل الحقيقية",
+        "إعداد موثق يمكن لفريقك الحفاظ عليه"
+      ],
+      "metaTitle": "وكالة تحسين الخوادم | تقليل تكاليف السحابة | PakSoft",
+      "metaDescription": "قم بتقليل وقت الاستجابة وفواتير السحابة. نقوم بضبط وتحسين البنية التحتية الخاصة بك بما في ذلك nginx، و Linux، و PostgreSQL، و Redis، و AWS.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "تحديد خط الأساس (Baseline) والتنميط",
+            "description": "نضع أدوات قياس في خوادمك ونقيس حركة المرور الحقيقية: أوقات الاستجابة، والاستعلامات البطيئة، ومعدلات إصابة ذاكرة التخزين المؤقت، وتشبع المعالج/الذاكرة/الإدخال والإخراج، والتكلفة لكل طلب."
+          },
+          {
+            "step": 2,
+            "title": "تحليل عنق الزجاجة (Bottlenecks)",
+            "description": "تخبرنا بيانات التنميط أين يذهب الوقت فعلياً — ونادراً ما يكون المكان الذي تفترضه الفرق. نقوم بترتيب النتائج حسب التأثير لكل جهد، لذلك يتم إصلاح فهرس قاعدة بيانات مفقود قبل أن يناقش أي شخص إعادة معمارية النظام."
+          },
+          {
+            "step": 3,
+            "title": "ضبط التكوين (Tuning)",
+            "description": "نقوم بضبط الطبقات التي تقوم بتشغيلها بالفعل: عمال nginx والمخازن المؤقتة، ومعلمات شبكة النواة، ومجمعات PHP-FPM / Node، وذاكرة قاعدة البيانات وإعدادات الاتصال. غالباً ما تحقق هذه التغييرات المجانية أكبر المكاسب الفردية."
+          },
+          {
+            "step": 4,
+            "title": "التخزين المؤقت (Caching) والهندسة المعمارية",
+            "description": "نقوم بإضافة أو إصلاح التخزين المؤقت في الطبقات الصحيحة — Redis للبيانات الساخنة، أو Varnish أو CDN للصفحات الكاملة، وتكوين رؤوس ذاكرة التخزين المؤقت HTTP بشكل صحيح. عندما يكون العائق في البنية، نقدم موازنة التحميل، أو نسخ القراءة المتماثلة، أو التفريغ القائم على قائمة الانتظار."
+          },
+          {
+            "step": 5,
+            "title": "اختبار الحمل والتحقق",
+            "description": "يتم التحقق من صحة كل تغيير تحت حمل إنتاج محاكى باستخدام k6 أو Locust، مقابل خط الأساس الأصلي. ستحصل على تقرير قبل / بعد بالأرقام الدقيقة لزمن الوصول، والإنتاجية، والتكلفة."
+          },
+          {
+            "step": 6,
+            "title": "المراقبة والتسليم",
+            "description": "نترك لك لوحات معلومات، وحدود تنبيه مرتبطة بتجربة المستخدم، وسياسات قياس تلقائي، وأدلة تشغيل للحوادث الأكثر ترجيحاً. المراجعات الربع سنوية الاختيارية تمنع الأداء من التراجع مع نمو المنتج."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما هو مقدار التحسن الذي يمكننا توقعه بشكل واقعي؟",
+            "answer": "تقلل الارتباطات النموذجية أوقات استجابة p95 بنسبة 30-50٪ وتقلل الإنفاق على البنية التحتية بشكل هادف، لأن معظم الأنظمة تعمل على الإعدادات الافتراضية مع افتقاد ذاكرة التخزين المؤقت الرئيسية. نقوم بالتنميط أولاً؛ إذا كانت خوادمك مضبوطة جيداً بالفعل، فسنخبرك بذلك قبل الالتزام."
+          },
+          {
+            "question": "هل تعملون مع السحابة (Cloud) أم الخوادم المحلية (On-premise)؟",
+            "answer": "كلاهما. نحن نحسن إعدادات AWS، و Google Cloud، و Azure، و Hetzner بالإضافة إلى الخوادم المخصصة التقليدية ومضيفي VPS. في السحابة، يعد تحسين التكلفة جزءاً من المشاركة؛ أما في الخوادم المحلية، فيتحول التركيز إلى ضغط أقصى إنتاجية من الأجهزة الثابتة."
+          },
+          {
+            "question": "هل سيكون هناك وقت توقف (Downtime) أثناء التحسين؟",
+            "answer": "يتم تطبيق تغييرات التكوين مع عمليات إعادة التشغيل المتدرجة (Rolling Restarts) أو خلال نوافذ مرور منخفضة متفق عليها، وكل تغيير له تراجع (Rollback) تم اختباره. يتم التدرب على التغييرات المعمارية الأكثر خطورة على نسخة تجريبية أولاً."
+          },
+          {
+            "question": "قاعدة بياناتنا هي الجزء البطيء — هل هذا ضمن النطاق؟",
+            "answer": "نعم، عادةً ما تكون قاعدة البيانات هي الحدث الرئيسي: تحليل الاستعلام البطيء، واستراتيجية الفهرسة، وتجميع الاتصالات، وتكوين الذاكرة، ونسخ القراءة المتماثلة لكل من PostgreSQL، و MySQL، و MongoDB. اتضح أن العديد من مشاكل 'الخادم' عبارة عن استعلام واحد غير مفهرس يكشفه التنميط في الأسبوع الأول."
+          },
+          {
+            "question": "هل يمكنك تقليل فاتورة السحابة الخاصة بنا دون الإضرار بالأداء؟",
+            "answer": "عادة ما نقوم بتحسين كليهما في وقت واحد: يتم تحديد حجم مثيل الأجهزة كبيرة الحجم (Right-sized)، وإزالة الموارد الخاملة، وتقليل التخزين المؤقت من الحوسبة التي تحتاجها على الإطلاق. عادة ما تصل النتائج إلى خفض التكلفة بنسبة 20-40٪ مع زمن انتقال (Latency) متساوٍ أو أفضل."
+          },
+          {
+            "question": "كيف تثبت أن التحسينات حقيقية؟",
+            "answer": "من خلال اختبارات الحمل المتطابقة التي يتم إجراؤها مقابل خط الأساس قبل التغيير والنظام النهائي، بالإضافة إلى مراقبة الإنتاج عبر نافذة تحقق متفق عليها. يوضح التقرير النهائي أوقات الاستجابة، والإنتاجية، ومعدلات الخطأ، والتكلفة الشهرية جنباً إلى جنب."
+          },
+          {
+            "question": "ما هو الوصول الذي تحتاجه، وكيف يتم تأمينه؟",
+            "answer": "وصول مراقبة للقراءة فقط للتنميط (Profiling)، ثم وصول نشر محدد للتغييرات التي نتفق عليها — عبر VPN الخاص بك، أو مضيف bastion، أو أدوار IAM مؤقتة تتحكم فيها وتلغيها. لا يتم تنفيذ أي تغيير دون مراجعتك."
+          },
+          {
+            "question": "كيف نمنع الأداء من التدهور مرة أخرى؟",
+            "answer": "يشمل التسليم لوحات معلومات وتنبيهات مرتبطة بحدود مواجهة المستخدم، وتوقعات السعة، وأدلة التشغيل. يمكن لميزانيات الأداء في CI حظر التراجعات قبل النشر، وتقوم المراجعات ربع السنوية الاختيارية بإعادة فحص النظام مع نمو حركة المرور والميزات."
+          }
+        ],
+        "technologies": [
+          { "icon": "nginx", "name": "nginx" },
+          { "icon": "redis", "name": "Redis" },
+          { "icon": "varnish", "name": "Varnish" },
+          { "icon": "postgresql", "name": "PostgreSQL" },
+          { "icon": "cloudflare", "name": "Cloudflare" },
+          { "icon": "grafana", "name": "Grafana" },
+          { "icon": "prometheus", "name": "Prometheus" },
+          { "icon": "k6", "name": "k6" }
+        ]
+      }
+    }
+  }
+}

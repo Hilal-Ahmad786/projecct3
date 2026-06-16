@@ -1,0 +1,638 @@
+{
+  "en": {
+    "name": "Custom Marketing Automation",
+    "shortDescription": "Stop losing leads to manual processes and disjointed tools. We build custom marketing automation solutions that seamlessly connect your platforms, data, and communication channels.",
+    "fullDescription": "Off-the-shelf automation software works fine until your business scales or your processes become complex. When Zapier limitations or native integrations fail, manual work creeps back in, leading to data silos, delayed follow-ups, and lost revenue. We engineer custom marketing automation architectures tailored to your exact operational realities. By developing bespoke API integrations, automated data pipelines, and custom webhook listeners, we synchronize your CRM, advertising platforms, email marketing software, and internal databases. Whether it's complex multi-platform lead scoring, programmatic report generation, or custom chat routing, we eliminate human error and ensure your marketing stack operates as a unified, high-performing engine.",
+    "features": [
+      "Bespoke API Integrations & Webhooks",
+      "Complex Multi-Platform Data Syncing",
+      "Custom Workflow & Logic Scripting",
+      "Automated Lead Scoring Architectures",
+      "Programmatic Marketing Analytics & Reporting",
+      "Customer Data Platform (CDP) Engineering",
+      "Serverless Automation Infrastructure",
+      "Legacy System & CRM Integration"
+    ],
+    "benefits": [
+      "Eliminate hours of manual data entry and human error",
+      "Instantly trigger personalized campaigns across multiple channels",
+      "Unify customer data from scattered platforms into one source",
+      "Scale marketing operations without increasing headcount",
+      "Overcome the rigid limitations of off-the-shelf automation tools",
+      "Ensure real-time data accuracy between sales and marketing"
+    ],
+    "metaTitle": "Custom Marketing Automation Services | PakSoft",
+    "metaDescription": "Stop doing manual data entry. We engineer custom marketing automation architectures and API integrations to perfectly sync your CRM, ad platforms, and tools.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Systems Audit & Architecture",
+          "description": "We map your current marketing stack, identify data silos, and document every manual process that slows down your team. Then, we design a unified data architecture."
+        },
+        {
+          "step": 2,
+          "title": "Requirements & Logic Definition",
+          "description": "We define the exact triggers, conditions, and actions for your custom workflows. This includes mapping data fields between platforms to ensure perfect synchronization."
+        },
+        {
+          "step": 3,
+          "title": "Custom Development & API Integration",
+          "description": "Our engineers write the custom scripts and connect the necessary APIs, utilizing serverless functions or dedicated middleware to handle data payloads securely."
+        },
+        {
+          "step": 4,
+          "title": "Testing & Edge Case Handling",
+          "description": "Before going live, we simulate various scenarios to test how the automation handles high volumes, rate limits, and unexpected data formats."
+        },
+        {
+          "step": 5,
+          "title": "Deployment & Team Onboarding",
+          "description": "We deploy the automation to production and train your marketing team on how to monitor, pause, or adjust the logic safely when needed."
+        },
+        {
+          "step": 6,
+          "title": "Ongoing Maintenance & Scaling",
+          "description": "As APIs update and your business rules change, we maintain the code. We also proactively suggest new automation opportunities as your marketing stack evolves."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Why do we need custom automation instead of just using Zapier?",
+          "answer": "While Zapier is great for simple, linear tasks, it struggles with complex conditional logic, heavy data transformation, and multi-step API rate limits. Custom automation handles edge cases perfectly and is often more cost-effective at enterprise scale."
+        },
+        {
+          "question": "What happens if an API we depend on changes or goes down?",
+          "answer": "We build robust error handling and retry logic into all custom scripts. If a third-party service fails, the automation pauses safely and alerts us immediately, preventing data loss."
+        },
+        {
+          "question": "Can you integrate our old legacy CRM with modern marketing tools?",
+          "answer": "Yes. If your legacy system has an API, a database connection, or even a way to securely export CSVs to an FTP server, we can build a bridge to connect it with modern platforms."
+        },
+        {
+          "question": "How secure is the data passing through these custom automations?",
+          "answer": "Extremely secure. We use encrypted connections, secure credential storage, and cloud infrastructure that complies with modern data protection standards to ensure your customer data is safe."
+        },
+        {
+          "question": "Will my marketing team need to learn how to code to use this?",
+          "answer": "No. We build the complex logic behind the scenes. Your team will interact with user-friendly dashboards or your existing CRM interface to manage the marketing outcomes."
+        },
+        {
+          "question": "How long does it take to build a custom integration?",
+          "answer": "Simple data syncs can take a few days, while complex, multi-platform logic engines can take 4–8 weeks. We provide a strict timeline after mapping your exact requirements."
+        },
+        {
+          "question": "Who owns the code for the automations you build?",
+          "answer": "You do. We build the solutions in your cloud environments (like AWS, Google Cloud, or Azure), ensuring you retain full ownership and control of the intellectual property."
+        },
+        {
+          "question": "Can you automate our reporting across different ad platforms?",
+          "answer": "Absolutely. We can pull data from Google Ads, Meta, LinkedIn, and your CRM, transform it, and push it into unified dashboards like Looker Studio or Power BI automatically."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "nodejs",
+          "name": "Node.js"
+        },
+        {
+          "icon": "aws",
+          "name": "AWS Lambda"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Cloud Functions"
+        },
+        {
+          "icon": "make",
+          "name": "Make"
+        },
+        {
+          "icon": "zapier",
+          "name": "Zapier"
+        },
+        {
+          "icon": "postgresql",
+          "name": "PostgreSQL"
+        },
+        {
+          "icon": "api",
+          "name": "REST APIs"
+        }
+      ]
+    }
+  },
+  "tr": {
+    "name": "Özel Pazarlama Otomasyonu",
+    "shortDescription": "Manuel süreçler ve kopuk araçlar yüzünden müşteri kaybetmeyi bırakın. Platformlarınızı, verilerinizi ve iletişim kanallarınızı kusursuzca birbirine bağlayan özel pazarlama otomasyonu çözümleri geliştiriyoruz.",
+    "fullDescription": "Hazır otomasyon yazılımları, işiniz büyüyene veya süreçleriniz karmaşıklaşana kadar işe yarar. Zapier sınırlamaları veya yerel entegrasyonlar yetersiz kaldığında manuel işler geri döner, bu da veri silolarına, gecikmiş takiplere ve gelir kaybına yol açar. Operasyonel gerçeklerinize tam olarak uyan özel pazarlama otomasyonu mimarileri tasarlıyoruz. Özel API entegrasyonları, otomatik veri hatları ve webhook dinleyicileri geliştirerek CRM'inizi, reklam platformlarınızı, e-posta pazarlama yazılımınızı ve şirket içi veritabanlarınızı senkronize ediyoruz. İster karmaşık çoklu platform müşteri puanlaması (lead scoring), ister programatik rapor oluşturma veya özel sohbet yönlendirme olsun, insan hatasını ortadan kaldırıyor ve pazarlama araçlarınızın tek ve yüksek performanslı bir motor olarak çalışmasını sağlıyoruz.",
+    "features": [
+      "Özel API Entegrasyonları ve Webhook'lar",
+      "Karmaşık Çoklu Platform Veri Senkronizasyonu",
+      "Özel İş Akışı ve Mantık Kodlaması",
+      "Otomatik Lead Puanlama Mimarileri",
+      "Programatik Pazarlama Analitiği ve Raporlama",
+      "Müşteri Veri Platformu (CDP) Mühendisliği",
+      "Sunucusuz (Serverless) Otomasyon Altyapısı",
+      "Eski Sistem ve CRM Entegrasyonu"
+    ],
+    "benefits": [
+      "Saatler süren manuel veri girişini ve insan hatasını ortadan kaldırın",
+      "Birden fazla kanalda anında kişiselleştirilmiş kampanyalar tetikleyin",
+      "Dağınık platformlardaki müşteri verilerini tek bir kaynakta birleştirin",
+      "Personel sayısını artırmadan pazarlama operasyonlarını ölçeklendirin",
+      "Hazır otomasyon araçlarının katı sınırlamalarını aşın",
+      "Satış ve pazarlama arasında gerçek zamanlı veri doğruluğu sağlayın"
+    ],
+    "metaTitle": "Özel Pazarlama Otomasyonu Çözümleri | PakSoft",
+    "metaDescription": "Manuel veri girişini durdurun. CRM, reklam platformları ve araçlarınızı kusursuzca senkronize eden özel pazarlama otomasyonu ve API entegrasyonları geliştiriyoruz.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "Sistem Denetimi ve Mimari",
+          "description": "Mevcut pazarlama araçlarınızı haritalandırıyor, veri silolarını belirliyor ve ekibinizi yavaşlatan her manuel süreci belgeliyoruz. Ardından birleşik bir veri mimarisi tasarlıyoruz."
+        },
+        {
+          "step": 2,
+          "title": "Gereksinimler ve Mantık Tanımı",
+          "description": "Özel iş akışlarınız için kesin tetikleyicileri, koşulları ve eylemleri belirliyoruz. Bu, kusursuz senkronizasyon sağlamak için platformlar arasında veri alanlarının eşlenmesini içerir."
+        },
+        {
+          "step": 3,
+          "title": "Özel Geliştirme ve API Entegrasyonu",
+          "description": "Mühendislerimiz özel komut dosyalarını yazar ve gerekli API'leri bağlar, verileri güvenli bir şekilde işlemek için sunucusuz işlevleri veya özel ara yazılımları (middleware) kullanır."
+        },
+        {
+          "step": 4,
+          "title": "Test ve Uç Durum İşleme",
+          "description": "Yayına girmeden önce, otomasyonun yüksek hacimleri, hız sınırlarını ve beklenmedik veri formatlarını nasıl ele aldığını test etmek için çeşitli senaryoları simüle ederiz."
+        },
+        {
+          "step": 5,
+          "title": "Dağıtım ve Ekip Eğitimi",
+          "description": "Otomasyonu üretime alıyoruz ve pazarlama ekibinize gerektiğinde mantığı nasıl izleyeceklerini, duraklatacaklarını veya güvenli bir şekilde nasıl ayarlayacaklarını öğretiyoruz."
+        },
+        {
+          "step": 6,
+          "title": "Sürekli Bakım ve Ölçeklendirme",
+          "description": "API'ler güncellendikçe ve iş kurallarınız değiştikçe kodu koruruz. Pazarlama araçlarınız geliştikçe yeni otomasyon fırsatlarını proaktif olarak öneririz."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Neden sadece Zapier kullanmak yerine özel otomasyona ihtiyacımız var?",
+          "answer": "Zapier basit, doğrusal görevler için harika olsa da, karmaşık koşullu mantık, ağır veri dönüşümü ve çok adımlı API hız sınırları konusunda zorlanır. Özel otomasyon, uç durumları mükemmel şekilde ele alır ve kurumsal ölçekte genellikle daha uygun maliyetlidir."
+        },
+        {
+          "question": "Bağlı olduğumuz bir API değişir veya çökerse ne olur?",
+          "answer": "Tüm özel komut dosyalarına sağlam hata işleme ve yeniden deneme mantığı oluşturuyoruz. Üçüncü taraf bir hizmet başarısız olursa, otomasyon güvenli bir şekilde duraklar ve veri kaybını önleyerek bizi hemen uyarır."
+        },
+        {
+          "question": "Eski CRM'imizi modern pazarlama araçlarıyla entegre edebilir misiniz?",
+          "answer": "Evet. Eski sisteminizin bir API'si, veritabanı bağlantısı veya hatta CSV'leri bir FTP sunucusuna güvenli bir şekilde dışa aktarmanın bir yolu varsa, onu modern platformlara bağlamak için bir köprü kurabiliriz."
+        },
+        {
+          "question": "Bu özel otomasyonlardan geçen veriler ne kadar güvenli?",
+          "answer": "Son derece güvenli. Müşteri verilerinizin güvende olmasını sağlamak için modern veri koruma standartlarına uyan şifreli bağlantılar, güvenli kimlik bilgisi depolaması ve bulut altyapısı kullanıyoruz."
+        },
+        {
+          "question": "Bunu kullanmak için pazarlama ekibimin kod yazmayı öğrenmesi gerekecek mi?",
+          "answer": "Hayır. Karmaşık mantığı arka planda biz oluşturuyoruz. Ekibiniz, pazarlama sonuçlarını yönetmek için kullanıcı dostu gösterge panelleriyle veya mevcut CRM arayüzünüzle etkileşime girecektir."
+        },
+        {
+          "question": "Özel bir entegrasyon oluşturmak ne kadar sürer?",
+          "answer": "Basit veri senkronizasyonları birkaç gün sürebilirken, karmaşık, çoklu platform mantık motorları 4-8 hafta sürebilir. Kesin gereksinimlerinizi haritalandırdıktan sonra kesin bir zaman çizelgesi sunuyoruz."
+        },
+        {
+          "question": "Oluşturduğunuz otomasyonların kodlarına kim sahip?",
+          "answer": "Siz. Fikri mülkiyetin tam sahipliğini ve kontrolünü elinizde tutmanızı sağlayarak çözümleri bulut ortamlarınızda (AWS, Google Cloud veya Azure gibi) oluşturuyoruz."
+        },
+        {
+          "question": "Farklı reklam platformlarındaki raporlamamızı otomatikleştirebilir misiniz?",
+          "answer": "Kesinlikle. Google Ads, Meta, LinkedIn ve CRM'inizden veri çekebilir, dönüştürebilir ve Looker Studio veya Power BI gibi birleşik gösterge panellerine otomatik olarak aktarabiliriz."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "nodejs",
+          "name": "Node.js"
+        },
+        {
+          "icon": "aws",
+          "name": "AWS Lambda"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Cloud Functions"
+        },
+        {
+          "icon": "make",
+          "name": "Make"
+        },
+        {
+          "icon": "zapier",
+          "name": "Zapier"
+        },
+        {
+          "icon": "postgresql",
+          "name": "PostgreSQL"
+        },
+        {
+          "icon": "api",
+          "name": "REST APIs"
+        }
+      ]
+    }
+  },
+  "de": {
+    "name": "Custom Marketing Automation",
+    "shortDescription": "Verlieren Sie keine Leads mehr durch manuelle Prozesse und unzusammenhängende Tools. Wir entwickeln individuelle Marketing-Automatisierungslösungen, die Ihre Plattformen, Daten und Kommunikationskanäle nahtlos verbinden.",
+    "fullDescription": "Standard-Automatisierungssoftware funktioniert gut, bis Ihr Unternehmen skaliert oder Ihre Prozesse komplex werden. Wenn Zapier-Einschränkungen greifen oder native Integrationen versagen, schleicht sich manuelle Arbeit wieder ein, was zu Datensilos, verzögerten Follow-ups und Umsatzverlusten führt. Wir konstruieren maßgeschneiderte Marketing-Automatisierungsarchitekturen, die genau auf Ihre operativen Realitäten zugeschnitten sind. Durch die Entwicklung individueller API-Integrationen, automatisierter Datenpipelines und benutzerdefinierter Webhook-Listener synchronisieren wir Ihr CRM, Ihre Werbeplattformen, E-Mail-Marketing-Software und interne Datenbanken. Ob komplexes plattformübergreifendes Lead-Scoring, programmatische Berichterstellung oder benutzerdefiniertes Chat-Routing — wir eliminieren menschliche Fehler und stellen sicher, dass Ihr Marketing-Stack als einheitliche, hochleistungsfähige Maschine arbeitet.",
+    "features": [
+      "Individuelle API-Integrationen & Webhooks",
+      "Komplexe plattformübergreifende Datensynchronisation",
+      "Benutzerdefinierte Workflow- & Logik-Skripte",
+      "Automatisierte Lead-Scoring-Architekturen",
+      "Programmatische Marketing-Analysen & Reporting",
+      "Customer Data Platform (CDP) Engineering",
+      "Serverlose Automatisierungsinfrastruktur",
+      "Integration von Legacy-Systemen & CRM"
+    ],
+    "benefits": [
+      "Eliminieren Sie stundenlange manuelle Dateneingaben und menschliche Fehler",
+      "Lösen Sie personalisierte Kampagnen über mehrere Kanäle sofort aus",
+      "Vereinen Sie Kundendaten aus verstreuten Plattformen in einer Quelle",
+      "Skalieren Sie Marketingabläufe ohne Personalaufbau",
+      "Überwinden Sie die starren Grenzen von Standard-Automatisierungstools",
+      "Stellen Sie Echtzeit-Datengenauigkeit zwischen Vertrieb und Marketing sicher"
+    ],
+    "metaTitle": "Individuelle Marketing-Automatisierung Agentur | PakSoft",
+    "metaDescription": "Stoppen Sie manuelle Dateneingaben. Wir entwickeln maßgeschneiderte Marketing-Automatisierungsarchitekturen und API-Integrationen für Ihr CRM und Ihre Werbeplattformen.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "System-Audit & Architektur",
+          "description": "Wir analysieren Ihren aktuellen Marketing-Stack, identifizieren Datensilos und dokumentieren jeden manuellen Prozess. Dann entwerfen wir eine einheitliche Datenarchitektur."
+        },
+        {
+          "step": 2,
+          "title": "Anforderungs- & Logikdefinition",
+          "description": "Wir definieren die genauen Auslöser, Bedingungen und Aktionen für Ihre benutzerdefinierten Workflows. Dies umfasst die Zuordnung von Datenfeldern für perfekte Synchronisation."
+        },
+        {
+          "step": 3,
+          "title": "Custom Development & API-Integration",
+          "description": "Unsere Ingenieure schreiben die Skripte und verbinden die APIs, wobei serverlose Funktionen oder Middleware verwendet werden, um Datenmengen sicher zu verarbeiten."
+        },
+        {
+          "step": 4,
+          "title": "Testing & Edge-Case-Behandlung",
+          "description": "Vor dem Go-Live simulieren wir verschiedene Szenarien, um zu testen, wie die Automatisierung hohe Volumina, Ratenbegrenzungen und unerwartete Datenformate bewältigt."
+        },
+        {
+          "step": 5,
+          "title": "Deployment & Team-Onboarding",
+          "description": "Wir überführen die Automatisierung in die Produktion und schulen Ihr Team, wie es die Logik bei Bedarf überwachen, pausieren oder sicher anpassen kann."
+        },
+        {
+          "step": 6,
+          "title": "Laufende Wartung & Skalierung",
+          "description": "Wir pflegen den Code, wenn sich APIs aktualisieren und Geschäftsregeln ändern. Wir schlagen proaktiv neue Automatisierungschancen vor."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Warum brauchen wir eine individuelle Automatisierung statt einfach Zapier zu nutzen?",
+          "answer": "Zapier ist gut für lineare Aufgaben, scheitert aber bei komplexer Logik, schwerer Datentransformation und mehrstufigen API-Limits. Individuelle Automatisierung ist oft auf Unternehmensebene kostengünstiger."
+        },
+        {
+          "question": "Was passiert, wenn sich eine API ändert oder ausfällt?",
+          "answer": "Wir integrieren robuste Fehlerbehandlungs- und Wiederholungslogik in alle Skripte. Bei Ausfällen pausiert die Automatisierung sicher und warnt uns sofort."
+        },
+        {
+          "question": "Können Sie unser altes CRM-System mit modernen Tools integrieren?",
+          "answer": "Ja. Wenn Ihr Altsystem eine API, Datenbankverbindung oder FTP-Export hat, können wir eine Brücke zu modernen Plattformen bauen."
+        },
+        {
+          "question": "Wie sicher sind die Daten bei diesen Automatisierungen?",
+          "answer": "Extrem sicher. Wir verwenden verschlüsselte Verbindungen, sichere Speicherung von Anmeldeinformationen und Cloud-Infrastruktur nach modernen Standards."
+        },
+        {
+          "question": "Muss mein Team Programmieren lernen, um das zu nutzen?",
+          "answer": "Nein. Wir bauen die komplexe Logik im Hintergrund. Ihr Team interagiert mit benutzerfreundlichen Dashboards oder Ihrer vorhandenen CRM-Oberfläche."
+        },
+        {
+          "question": "Wie lange dauert es, eine individuelle Integration zu erstellen?",
+          "answer": "Einfache Synchronisationen dauern wenige Tage, während komplexe Logik-Engines 4–8 Wochen benötigen. Wir liefern einen genauen Zeitplan nach der Anforderungsanalyse."
+        },
+        {
+          "question": "Wem gehört der Code für die Automatisierungen?",
+          "answer": "Ihnen. Wir bauen die Lösungen in Ihren Cloud-Umgebungen auf, sodass Sie volles Eigentum und die Kontrolle über das geistige Eigentum behalten."
+        },
+        {
+          "question": "Können Sie unser Reporting über verschiedene Werbeplattformen automatisieren?",
+          "answer": "Absolut. Wir können Daten aus Google Ads, Meta, LinkedIn und Ihrem CRM ziehen, transformieren und in Dashboards wie Looker Studio pushen."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "nodejs",
+          "name": "Node.js"
+        },
+        {
+          "icon": "aws",
+          "name": "AWS Lambda"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Cloud Functions"
+        },
+        {
+          "icon": "make",
+          "name": "Make"
+        },
+        {
+          "icon": "zapier",
+          "name": "Zapier"
+        },
+        {
+          "icon": "postgresql",
+          "name": "PostgreSQL"
+        },
+        {
+          "icon": "api",
+          "name": "REST APIs"
+        }
+      ]
+    }
+  },
+  "ur": {
+    "name": "کسٹم مارکیٹنگ آٹومیشن",
+    "shortDescription": "دستی کاموں اور بکھرے ہوئے ٹولز کی وجہ سے لیڈز کھونا بند کریں۔ ہم ایسی کسٹم مارکیٹنگ آٹومیشن تیار کرتے ہیں جو آپ کے پلیٹ فارمز، ڈیٹا، اور مواصلاتی چینلز کو بغیر کسی رکاوٹ کے جوڑتی ہے۔",
+    "fullDescription": "عام آٹومیشن سافٹ ویئر اس وقت تک ٹھیک کام کرتا ہے جب تک آپ کا کاروبار بڑھ نہ جائے یا آپ کے عمل پیچیدہ نہ ہو جائیں۔ جب Zapier کی حدود یا عام انٹیگریشنز ناکام ہو جاتے ہیں، تو دستی کام واپس آ جاتا ہے، جس سے ڈیٹا الگ تھلگ ہو جاتا ہے، فالو اپ میں تاخیر ہوتی ہے، اور آمدنی کا نقصان ہوتا ہے۔ ہم آپ کی قطعی آپریشنل حقیقتوں کے مطابق اپنی مرضی کے مطابق مارکیٹنگ آٹومیشن کا نظام تیار کرتے ہیں۔ مخصوص API انٹیگریشنز، خودکار ڈیٹا پائپ لائنز، اور کسٹم ویب ہک (webhook) لسنرز بنا کر، ہم آپ کے CRM، اشتہاری پلیٹ فارمز، ای میل مارکیٹنگ سافٹ ویئر، اور اندرونی ڈیٹا بیس کو ہم آہنگ کرتے ہیں۔ چاہے وہ پیچیدہ ملٹی پلیٹ فارم لیڈ اسکورنگ ہو، پروگرام کے ذریعے رپورٹ بنانا ہو، یا حسب ضرورت چیٹ روٹنگ، ہم انسانی غلطی کو ختم کرتے ہیں اور اس بات کو یقینی بناتے ہیں کہ آپ کا مارکیٹنگ سسٹم ایک متحد اور اعلیٰ کارکردگی والے انجن کے طور پر کام کرے۔",
+    "features": [
+      "بیسپوک API انٹیگریشنز اور ویب ہکس",
+      "پیچیدہ ملٹی پلیٹ فارم ڈیٹا سنکنگ",
+      "کسٹم ورک فلو اور لاجک اسکرپٹنگ",
+      "خودکار لیڈ اسکورنگ کے نظام",
+      "پروگراممیٹک مارکیٹنگ اینالیٹکس اور رپورٹنگ",
+      "کسٹمر ڈیٹا پلیٹ فارم (CDP) انجینئرنگ",
+      "سرور لیس آٹومیشن انفراسٹرکچر",
+      "پرانے سسٹم اور CRM انٹیگریشن"
+    ],
+    "benefits": [
+      "دستی ڈیٹا انٹری اور انسانی غلطیوں کے گھنٹوں کا خاتمہ",
+      "متعدد چینلز پر فوری ذاتی نوعیت کی مہمات شروع کریں",
+      "مختلف پلیٹ فارمز سے کسٹمر ڈیٹا کو ایک جگہ پر اکٹھا کریں",
+      "عملے میں اضافہ کیے بغیر مارکیٹنگ آپریشنز کو بڑھائیں",
+      "عام آٹومیشن ٹولز کی سخت حدود پر قابو پائیں",
+      "سیلز اور مارکیٹنگ کے درمیان ریئل ٹائم ڈیٹا کی درستگی کو یقینی بنائیں"
+    ],
+    "metaTitle": "کسٹم مارکیٹنگ آٹومیشن سروسز | PakSoft",
+    "metaDescription": "ہم کسٹم مارکیٹنگ آٹومیشن اور API انٹیگریشنز تیار کرتے ہیں تاکہ آپ کے CRM اور اشتہاری پلیٹ فارمز بغیر کسی رکاوٹ کے ہم آہنگ ہو سکیں۔",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "سسٹم کا آڈٹ اور فن تعمیر",
+          "description": "ہم آپ کے موجودہ مارکیٹنگ ٹولز کا نقشہ بناتے ہیں، ڈیٹا کی علیحدگی کی نشاندہی کرتے ہیں اور دستی عمل کو دستاویز کرتے ہیں۔ پھر ہم ایک متحد ڈیٹا کا ڈھانچہ ڈیزائن کرتے ہیں۔"
+        },
+        {
+          "step": 2,
+          "title": "ضروریات اور منطق کی تعریف",
+          "description": "ہم آپ کے کسٹم ورک فلوز کے لیے درست ٹرگرز اور کارروائیوں کا تعین کرتے ہیں۔ اس میں کامل ہم آہنگی کو یقینی بنانے کے لیے پلیٹ فارمز کے درمیان ڈیٹا کی فیلڈز کو ملانا شامل ہے۔"
+        },
+        {
+          "step": 3,
+          "title": "کسٹم ڈیولپمنٹ اور API انٹیگریشن",
+          "description": "ہمارے انجینئرز ڈیٹا کو محفوظ طریقے سے سنبھالنے کے لیے سرور لیس فنکشنز یا مڈل ویئر کا استعمال کرتے ہوئے کسٹم اسکرپٹس لکھتے ہیں اور ضروری APIs کو جوڑتے ہیں۔"
+        },
+        {
+          "step": 4,
+          "title": "ٹیسٹنگ اور کناروں کے کیسز کا انتظام",
+          "description": "لائیو جانے سے پہلے، ہم مختلف منظرناموں کی نقالی کرتے ہیں تاکہ یہ جانچا جا سکے کہ آٹومیشن کس طرح زیادہ حجم، حد کی پابندیوں اور غیر متوقع ڈیٹا فارمیٹس کو سنبھالتی ہے۔"
+        },
+        {
+          "step": 5,
+          "title": "نفاذ اور ٹیم کی تربیت",
+          "description": "ہم آٹومیشن کو لاگو کرتے ہیں اور آپ کی مارکیٹنگ ٹیم کو تربیت دیتے ہیں کہ ضرورت پڑنے پر منطق کی نگرانی، روک تھام، یا اسے محفوظ طریقے سے کیسے ایڈجسٹ کیا جائے۔"
+        },
+        {
+          "step": 6,
+          "title": "جاری دیکھ بھال اور اسکیلنگ",
+          "description": "جیسے جیسے APIs اپ ڈیٹ ہوتے ہیں اور آپ کے کاروبار کے اصول تبدیل ہوتے ہیں، ہم کوڈ کو برقرار رکھتے ہیں۔ ہم نئے مواقع بھی تجویز کرتے ہیں۔"
+        }
+      ],
+      "faq": [
+        {
+          "question": "ہمیں صرف Zapier استعمال کرنے کے بجائے کسٹم آٹومیشن کی ضرورت کیوں ہے؟",
+          "answer": "جبکہ Zapier سادہ کاموں کے لیے بہترین ہے، یہ پیچیدہ منطق، بھاری ڈیٹا کی تبدیلی اور کثیر مرحلہ API کی حد کی پابندیوں میں مشکلات کا شکار ہوتا ہے۔ کسٹم آٹومیشن زیادہ بہتر اور لاگت میں موثر ہے۔"
+        },
+        {
+          "question": "اگر کوئی API جس پر ہم انحصار کرتے ہیں تبدیل ہو جائے یا بند ہو جائے تو کیا ہوگا؟",
+          "answer": "ہم تمام کسٹم اسکرپٹس میں خرابی سے نمٹنے کے لیے مضبوط منطق شامل کرتے ہیں۔ اگر کوئی تیسرا فریق سروس ناکام ہو جاتی ہے، تو آٹومیشن محفوظ طریقے سے رک جاتی ہے اور فوراً خبردار کرتی ہے۔"
+        },
+        {
+          "question": "کیا آپ ہمارے پرانے CRM کو جدید مارکیٹنگ ٹولز کے ساتھ جوڑ سکتے ہیں؟",
+          "answer": "ہاں۔ اگر آپ کے پرانے سسٹم میں API، ڈیٹا بیس کنکشن، یا CSVs کو FTP سرور پر ایکسپورٹ کرنے کا طریقہ ہے، تو ہم اسے جدید پلیٹ فارمز سے جوڑ سکتے ہیں۔"
+        },
+        {
+          "question": "ان کسٹم آٹومیشنز کے ذریعے گزرنے والا ڈیٹا کتنا محفوظ ہے؟",
+          "answer": "انتہائی محفوظ۔ ہم آپ کے کسٹمر کے ڈیٹا کی حفاظت کو یقینی بنانے کے لیے انکرپٹڈ کنکشنز اور جدید ڈیٹا کے تحفظ کے معیارات کے مطابق کلاؤڈ انفراسٹرکچر کا استعمال کرتے ہیں۔"
+        },
+        {
+          "question": "کیا میری مارکیٹنگ ٹیم کو اسے استعمال کرنے کے لیے کوڈ سیکھنے کی ضرورت ہوگی؟",
+          "answer": "نہیں۔ ہم پردے کے پیچھے پیچیدہ منطق تیار کرتے ہیں۔ آپ کی ٹیم نتائج کا انتظام کرنے کے لیے صارف دوست ڈیش بورڈز یا آپ کے موجودہ CRM انٹرفیس کا استعمال کرے گی۔"
+        },
+        {
+          "question": "کسٹم انٹیگریشن بنانے میں کتنا وقت لگتا ہے؟",
+          "answer": "سادہ ڈیٹا کی ہم آہنگی میں چند دن لگ سکتے ہیں، جبکہ پیچیدہ منطقی انجنوں کو 4-8 ہفتے لگ سکتے ہیں۔ ہم آپ کی ضروریات کے بعد ایک سخت ٹائم لائن فراہم کرتے ہیں۔"
+        },
+        {
+          "question": "آپ کے تیار کردہ آٹومیشنز کے کوڈ کا مالک کون ہے؟",
+          "answer": "آپ۔ ہم آپ کے کلاؤڈ ماحول (جیسے AWS، Google Cloud، یا Azure) میں حل تیار کرتے ہیں، تاکہ آپ دانشورانہ املاک کی مکمل ملکیت اور کنٹرول برقرار رکھیں۔"
+        },
+        {
+          "question": "کیا آپ مختلف اشتہاری پلیٹ فارمز پر ہماری رپورٹنگ کو خودکار بنا سکتے ہیں؟",
+          "answer": "بالکل۔ ہم Google Ads، Meta، LinkedIn، اور آپ کے CRM سے ڈیٹا لے کر اسے خود بخود Looker Studio یا Power BI جیسے متحد ڈیش بورڈز میں بھیج سکتے ہیں۔"
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "nodejs",
+          "name": "Node.js"
+        },
+        {
+          "icon": "aws",
+          "name": "AWS Lambda"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Cloud Functions"
+        },
+        {
+          "icon": "make",
+          "name": "Make"
+        },
+        {
+          "icon": "zapier",
+          "name": "Zapier"
+        },
+        {
+          "icon": "postgresql",
+          "name": "PostgreSQL"
+        },
+        {
+          "icon": "api",
+          "name": "REST APIs"
+        }
+      ]
+    }
+  },
+  "ar": {
+    "name": "أتمتة التسويق المخصصة",
+    "shortDescription": "توقف عن فقدان العملاء المحتملين بسبب العمليات اليدوية والأدوات غير المترابطة. نحن نبني حلول أتمتة تسويق مخصصة تربط منصاتك وبياناتك وقنوات الاتصال الخاصة بك بسلاسة.",
+    "fullDescription": "تعمل برامج الأتمتة الجاهزة بشكل جيد حتى يتوسع عملك أو تصبح عملياتك معقدة. عندما تفشل قيود Zapier أو عمليات التكامل الأصلية، يتسلل العمل اليدوي مرة أخرى، مما يؤدي إلى صوامع البيانات، وتأخر المتابعة، وخسارة الإيرادات. نحن نصمم هياكل أتمتة تسويق مخصصة مصممة خصيصًا لواقعك التشغيلي الدقيق. من خلال تطوير عمليات تكامل API مخصصة، ومسارات بيانات مؤتمتة، ومستمعي webhook مخصصين، نقوم بمزامنة نظام إدارة علاقات العملاء (CRM)، ومنصات الإعلان، وبرامج التسويق عبر البريد الإلكتروني، وقواعد البيانات الداخلية. سواء كان الأمر يتعلق بتسجيل العملاء المحتملين المعقد عبر منصات متعددة، أو إنشاء التقارير البرمجية، أو توجيه الدردشة المخصص، فإننا نقضي على الخطأ البشري ونضمن أن تعمل أدوات التسويق الخاصة بك كمحرك موحد عالي الأداء.",
+    "features": [
+      "تكامل API و Webhooks مخصص",
+      "مزامنة بيانات معقدة عبر منصات متعددة",
+      "برمجة سير العمل والمنطق المخصص",
+      "بنى تسجيل العملاء المحتملين الآلية",
+      "تحليلات وتقارير التسويق البرمجية",
+      "هندسة منصة بيانات العملاء (CDP)",
+      "البنية التحتية للأتمتة بدون خادم",
+      "تكامل الأنظمة القديمة ونظام إدارة علاقات العملاء"
+    ],
+    "benefits": [
+      "القضاء على ساعات من إدخال البيانات اليدوي والخطأ البشري",
+      "تشغيل حملات مخصصة فوراً عبر قنوات متعددة",
+      "توحيد بيانات العملاء من منصات متفرقة في مصدر واحد",
+      "توسيع نطاق العمليات التسويقية دون زيادة عدد الموظفين",
+      "التغلب على القيود الصارمة لأدوات الأتمتة الجاهزة",
+      "ضمان دقة البيانات في الوقت الفعلي بين المبيعات والتسويق"
+    ],
+    "metaTitle": "خدمات أتمتة التسويق المخصصة | PakSoft",
+    "metaDescription": "توقف عن إدخال البيانات يدوياً. نحن نصمم هياكل أتمتة تسويق مخصصة وعمليات تكامل API لمزامنة أدواتك ومنصات الإعلان الخاصة بك بشكل مثالي.",
+    "content": {
+      "process": [
+        {
+          "step": 1,
+          "title": "تدقيق الأنظمة والهندسة",
+          "description": "نقوم بتعيين أدوات التسويق الحالية الخاصة بك، وتحديد صوامع البيانات، وتوثيق كل عملية يدوية. ثم نصمم بنية بيانات موحدة."
+        },
+        {
+          "step": 2,
+          "title": "تحديد المتطلبات والمنطق",
+          "description": "نحدد المشغلات والشروط والإجراءات الدقيقة لسير العمل المخصص الخاص بك. ويشمل ذلك تعيين حقول البيانات بين المنصات."
+        },
+        {
+          "step": 3,
+          "title": "التطوير المخصص وتكامل API",
+          "description": "يكتب مهندسونا النصوص المخصصة ويربطون واجهات برمجة التطبيقات الضرورية، باستخدام وظائف بدون خادم للتعامل مع البيانات بأمان."
+        },
+        {
+          "step": 4,
+          "title": "الاختبار ومعالجة الحالات الطرفية",
+          "description": "قبل البث المباشر، نحاكي سيناريوهات مختلفة لاختبار كيفية تعامل الأتمتة مع الأحجام الكبيرة وحدود المعدل وتنسيقات البيانات غير المتوقعة."
+        },
+        {
+          "step": 5,
+          "title": "النشر وتدريب الفريق",
+          "description": "ننشر الأتمتة في الإنتاج وندرب فريق التسويق الخاص بك على كيفية المراقبة أو الإيقاف المؤقت أو تعديل المنطق بأمان عند الحاجة."
+        },
+        {
+          "step": 6,
+          "title": "الصيانة المستمرة والتوسيع",
+          "description": "نحافظ على الكود مع تحديث واجهات برمجة التطبيقات وتغير قواعد عملك. نقترح بشكل استباقي فرص أتمتة جديدة."
+        }
+      ],
+      "faq": [
+        {
+          "question": "لماذا نحتاج إلى أتمتة مخصصة بدلاً من استخدام Zapier فقط؟",
+          "answer": "في حين أن Zapier رائع للمهام الخطية، إلا أنه يعاني مع المنطق الشرطي المعقد وقيود واجهة برمجة التطبيقات المتعددة الخطوات. الأتمتة المخصصة غالبًا ما تكون أكثر فعالية من حيث التكلفة."
+        },
+        {
+          "question": "ماذا يحدث إذا تغيرت واجهة برمجة تطبيقات نعتمد عليها أو تعطلت؟",
+          "answer": "نحن نبني معالجة قوية للأخطاء ومنطق إعادة المحاولة في جميع النصوص المخصصة. إذا فشلت خدمة، تتوقف الأتمتة بأمان وتنبهنا على الفور."
+        },
+        {
+          "question": "هل يمكنك دمج نظام CRM القديم الخاص بنا مع أدوات التسويق الحديثة؟",
+          "answer": "نعم. إذا كان نظامك القديم يحتوي على واجهة برمجة تطبيقات أو اتصال بقاعدة بيانات، يمكننا بناء جسر لربطه بالمنصات الحديثة."
+        },
+        {
+          "question": "ما مدى أمان البيانات التي تمر عبر هذه الأتمتة المخصصة؟",
+          "answer": "آمن للغاية. نستخدم اتصالات مشفرة وتخزيناً آمناً لبيانات الاعتماد وبنية تحتية سحابية تتوافق مع معايير حماية البيانات الحديثة."
+        },
+        {
+          "question": "هل سيحتاج فريق التسويق الخاص بي إلى تعلم كيفية البرمجة لاستخدام هذا؟",
+          "answer": "لا. نحن نبني المنطق المعقد خلف الكواليس. سيتفاعل فريقك مع لوحات معلومات سهلة الاستخدام أو واجهة CRM الحالية لإدارة النتائج."
+        },
+        {
+          "question": "كم من الوقت يستغرق بناء تكامل مخصص؟",
+          "answer": "يمكن أن تستغرق مزامنة البيانات البسيطة بضعة أيام، بينما تستغرق محركات المنطق المعقدة من 4 إلى 8 أسابيع. نقدم جدولاً زمنياً صارماً بعد تحديد المتطلبات."
+        },
+        {
+          "question": "من يملك الكود الخاص بالأتمتة التي تقوم ببنائها؟",
+          "answer": "أنت المالك. نحن نبني الحلول في بيئاتك السحابية (مثل AWS أو Google Cloud أو Azure)، مما يضمن احتفاظك بالملكية الكاملة والتحكم."
+        },
+        {
+          "question": "هل يمكنك أتمتة تقاريرنا عبر منصات إعلانية مختلفة؟",
+          "answer": "بالتأكيد. يمكننا سحب البيانات من Google Ads و Meta و LinkedIn و CRM الخاص بك، وتحويلها، ودفعها إلى لوحات معلومات موحدة مثل Looker Studio."
+        }
+      ],
+      "technologies": [
+        {
+          "icon": "python",
+          "name": "Python"
+        },
+        {
+          "icon": "nodejs",
+          "name": "Node.js"
+        },
+        {
+          "icon": "aws",
+          "name": "AWS Lambda"
+        },
+        {
+          "icon": "googlecloud",
+          "name": "Google Cloud Functions"
+        },
+        {
+          "icon": "make",
+          "name": "Make"
+        },
+        {
+          "icon": "zapier",
+          "name": "Zapier"
+        },
+        {
+          "icon": "postgresql",
+          "name": "PostgreSQL"
+        },
+        {
+          "icon": "api",
+          "name": "REST APIs"
+        }
+      ]
+    }
+  },
+  "slug": "custom-marketing-automation"
+}
