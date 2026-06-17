@@ -1,7 +1,8 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import LocalizedLink from '@/components/LocalizedLink';
+import { trackServiceView } from '@/lib/analytics';
 import SocialProofBanner from '@/components/SocialProofBanner';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
 import { CheckCircleIcon } from '@heroicons/react/24/solid';
@@ -176,6 +177,11 @@ export default function ServiceDetailClient({
   const { t, locale } = useTranslations();
   const accent: AccentColor = colorMap[service.color || ''] || 'emerald';
   const colors = accentColors[accent];
+
+  // Remarketing: record service-page views (GA4 view_item + FB ViewContent).
+  useEffect(() => {
+    trackServiceView(service.name, service.slug);
+  }, [service.slug, service.name]);
 
   const features = service.features || [];
   const benefits = service.benefits || [];

@@ -1,0 +1,1553 @@
+{
+  "ai-image-generation": {
+    "en": {
+      "name": "AI Image Generation",
+      "shortDescription": "Create custom AI image generation solutions using DALL-E, Stable Diffusion, and Midjourney to automate visual asset creation and personalization at scale.",
+      "fullDescription": "Visual content creation is a massive bottleneck for marketing, e-commerce, and media companies. We build scalable AI image generation pipelines that replace manual design work with automated, brand-consistent asset creation. Using APIs like OpenAI DALL-E 3, Stable Diffusion XL, and Midjourney, we develop systems that generate high-quality product lifestyle shots, personalized ad creatives, and dynamic backgrounds. We don't just prompt existing tools; we fine-tune models on your specific brand guidelines and products using LoRA and ControlNet, ensuring the AI outputs match your exact visual identity. From automated batch processing to real-time image upscaling, our solutions cut creative costs while massively increasing the volume and speed of asset production.",
+      "features": [
+        "DALL-E 3 & Stable Diffusion Integration",
+        "Brand-Specific Model Fine-Tuning (LoRA)",
+        "ControlNet for Precise Composition",
+        "Automated Product Image Variations",
+        "Background Removal & Replacement",
+        "High-Resolution Image Upscaling",
+        "Batch Processing & Pipeline Architecture",
+        "Automated Content Moderation"
+      ],
+      "benefits": [
+        "Reduce creative production costs by up to 80%",
+        "Generate thousands of brand-consistent images in minutes",
+        "Eliminate expensive and time-consuming photoshoots",
+        "A/B test ad creatives at massive scale",
+        "Personalize visual content for different audience segments",
+        "Maintain strict brand consistency across all generated assets"
+      ],
+      "metaTitle": "AI Image Generation Services | DALL-E & Stable Diffusion | PakSoft",
+      "metaDescription": "Automate visual content creation with custom AI image generation. We integrate Stable Diffusion and DALL-E to build brand-consistent asset pipelines.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Visual Requirements Discovery",
+            "description": "We analyze your brand guidelines, existing assets, and creative bottlenecks. Together we define the exact style, resolution, and volume requirements for the generated images."
+          },
+          {
+            "step": 2,
+            "title": "Model Selection & Architecture",
+            "description": "We choose the right base models (e.g., Stable Diffusion XL for local control, DALL-E 3 for prompt adherence). We design the pipeline for prompt engineering, batching, and image storage."
+          },
+          {
+            "step": 3,
+            "title": "Fine-Tuning & Prompt Engineering",
+            "description": "We train custom LoRA models on your specific products and brand assets to ensure the AI understands your visual identity. We also develop structured prompt templates that yield consistent results."
+          },
+          {
+            "step": 4,
+            "title": "Integration & Pipeline Development",
+            "description": "We build the API wrappers and integrate the generation engine into your CMS, PIM, or marketing platforms. This includes automated upscaling, background removal, and format conversion."
+          },
+          {
+            "step": 5,
+            "title": "Quality Assurance & Moderation",
+            "description": "We implement automated moderation layers to block inappropriate content and hallucinated artifacts. We test the pipeline across thousands of edge cases to ensure consistent quality."
+          },
+          {
+            "step": 6,
+            "title": "Deployment & Scaling",
+            "description": "The system goes live, processing image requests at scale. We continuously monitor generation quality, API costs, and latency, refining prompts and models based on your feedback."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Can the AI generate images with my specific products?",
+            "answer": "Yes. We use advanced fine-tuning techniques like LoRA (Low-Rank Adaptation) and ControlNet on models like Stable Diffusion. By training the AI on a small dataset of your actual product photos, it learns to generate that exact item in new environments, lighting, and angles without hallucinating features."
+          },
+          {
+            "question": "Who owns the copyright to the generated images?",
+            "answer": "Generally, images generated entirely by AI are not copyrightable by the creator under current US/EU law. However, you own the commercial usage rights provided by the API platforms (like OpenAI). We advise using AI for marketing assets, ad creatives, and backgrounds, while keeping core logos and trademarked assets human-created."
+          },
+          {
+            "question": "What is the cost per generated image?",
+            "answer": "Using cloud APIs like DALL-E 3, costs range from $0.04 to $0.08 per image. If you require massive volume (hundreds of thousands of images), we can deploy custom Stable Diffusion models on dedicated GPU instances via AWS or RunPod, which drastically reduces the per-image cost to fractions of a cent."
+          },
+          {
+            "question": "Can we ensure the AI follows our brand colors and style?",
+            "answer": "Absolutely. Standard text-to-image models struggle with precise brand compliance. We solve this by fine-tuning the model specifically on your brand kit and using ControlNet to enforce specific compositions, color palettes, and stylistic constraints, ensuring every output looks like it belongs to your brand."
+          },
+          {
+            "question": "How long does it take to build a custom image pipeline?",
+            "answer": "A basic API integration for standard image generation takes 2–4 weeks. A fully customized pipeline with fine-tuned product models, automated upscaling, and CMS integration typically requires 6–10 weeks from discovery to production rollout."
+          },
+          {
+            "question": "Can the AI add text to the generated images?",
+            "answer": "While newer models like DALL-E 3 and Midjourney v6 are getting better at rendering short text, they are still prone to spelling errors and unpredictable typography. For reliable text overlays (like ad banners), we build pipelines that generate the background image first, then use traditional graphic libraries to overlay precise, editable text."
+          },
+          {
+            "question": "Do you use Midjourney, DALL-E, or Stable Diffusion?",
+            "answer": "We are platform-agnostic and use the right tool for the job. Midjourney excels at high-end artistic aesthetics but lacks an official robust API. DALL-E 3 is excellent for prompt adherence and quick integrations. Stable Diffusion provides the ultimate control, allowing us to fine-tune, use ControlNet, and host privately for maximum security and customization."
+          },
+          {
+            "question": "How do you handle inappropriate or off-brand generations?",
+            "answer": "We implement strict input moderation to block risky prompts, and output validation to catch artifacts or NSFW content before it reaches your system. For public-facing apps, we use tools like Azure Content Moderator to guarantee brand safety."
+          }
+        ],
+        "technologies": [
+          { "icon": "openai", "name": "OpenAI DALL-E" },
+          { "icon": "stablediffusion", "name": "Stable Diffusion" },
+          { "icon": "midjourney", "name": "Midjourney API" },
+          { "icon": "python", "name": "Python" },
+          { "icon": "pytorch", "name": "PyTorch" },
+          { "icon": "aws", "name": "AWS SageMaker" },
+          { "icon": "docker", "name": "Docker" },
+          { "icon": "react", "name": "React" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Yapay Zeka Görsel Üretimi",
+      "shortDescription": "Görsel varlık üretimini ve kişiselleştirmeyi büyük ölçekte otomatikleştirmek için DALL-E, Stable Diffusion ve Midjourney ile özel yapay zeka görsel üretim çözümleri geliştirin.",
+      "fullDescription": "Görsel içerik üretimi pazarlama, e-ticaret ve medya şirketleri için devasa bir darboğazdır. Manuel tasarım işlerini otomatik, markaya uygun varlık üretimiyle değiştiren ölçeklenebilir yapay zeka görsel üretim hatları kuruyoruz. OpenAI DALL-E 3, Stable Diffusion XL ve Midjourney gibi API'leri kullanarak yüksek kaliteli ürün konsept çekimleri, kişiselleştirilmiş reklam görselleri ve dinamik arka planlar üreten sistemler geliştiriyoruz. Sadece mevcut araçlara komut yazmıyoruz; modelleri LoRA ve ControlNet kullanarak kendi marka yönergelerinize ve ürünlerinize göre eğitiyor (fine-tuning), yapay zekanın tam olarak sizin görsel kimliğinizle eşleşmesini sağlıyoruz. Otomatik toplu işlemeden gerçek zamanlı görsel büyütmeye (upscaling) kadar çözümlerimiz, yaratıcı üretim maliyetlerini düşürürken varlık üretiminin hacmini ve hızını muazzam ölçüde artırır.",
+      "features": [
+        "DALL-E 3 ve Stable Diffusion Entegrasyonu",
+        "Markaya Özel Model Eğitimi (LoRA)",
+        "Hassas Kompozisyon için ControlNet",
+        "Otomatik Ürün Görseli Varyasyonları",
+        "Arka Plan Kaldırma ve Değiştirme",
+        "Yüksek Çözünürlüklü Görsel Büyütme (Upscaling)",
+        "Toplu İşleme ve Pipeline Mimarisi",
+        "Otomatik İçerik Moderasyonu"
+      ],
+      "benefits": [
+        "Yaratıcı üretim maliyetlerini %80'e kadar azaltın",
+        "Dakikalar içinde markaya uygun binlerce görsel üretin",
+        "Pahalı ve zaman alan fotoğraf çekimlerini ortadan kaldırın",
+        "Reklam görsellerini devasa ölçekte A/B testine tabi tutun",
+        "Farklı hedef kitle segmentleri için görsel içeriği kişiselleştirin",
+        "Üretilen tüm varlıklarda katı marka tutarlılığını koruyun"
+      ],
+      "metaTitle": "Yapay Zeka Görsel Üretim Hizmetleri | DALL-E ve Stable Diffusion | PakSoft",
+      "metaDescription": "Özel yapay zeka görsel üretimi ile görsel içerik oluşturmayı otomatikleştirin. Markanıza uygun varlık üretim hatları için Stable Diffusion ve DALL-E entegre ediyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Görsel İhtiyaç Analizi",
+            "description": "Marka yönergelerinizi, mevcut varlıklarınızı ve yaratıcı süreçteki darboğazları inceliyoruz. Üretilecek görsellerin tam stilini, çözünürlüğünü ve hacim gereksinimlerini birlikte tanımlıyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Model Seçimi ve Mimari",
+            "description": "Doğru temel modelleri (yerel kontrol için Stable Diffusion XL, komuta uyum için DALL-E 3 vb.) seçiyoruz. Prompt mühendisliği, toplu işleme ve görsel depolama için üretim hattını (pipeline) tasarlıyoruz."
+          },
+          {
+            "step": 3,
+            "title": "Fine-Tuning ve Prompt Mühendisliği",
+            "description": "Yapay zekanın görsel kimliğinizi anlamasını sağlamak için özel LoRA modellerini kendi ürünleriniz ve marka varlıklarınız üzerinde eğitiyoruz. Ayrıca tutarlı sonuçlar veren yapılandırılmış prompt şablonları geliştiriyoruz."
+          },
+          {
+            "step": 4,
+            "title": "Entegrasyon ve Pipeline Geliştirme",
+            "description": "API arayüzlerini oluşturuyor ve üretim motorunu CMS, PIM veya pazarlama platformlarınıza entegre ediyoruz. Buna otomatik büyütme (upscaling), arka plan kaldırma ve format dönüştürme de dahildir."
+          },
+          {
+            "step": 5,
+            "title": "Kalite Güvencesi ve Moderasyon",
+            "description": "Uygunsuz içeriği ve halüsinasyonlu hatalı görselleri engellemek için otomatik moderasyon katmanları uyguluyoruz. Tutarlı kaliteyi sağlamak için sistemi binlerce uç senaryoda test ediyoruz."
+          },
+          {
+            "step": 6,
+            "title": "Yayına Alma ve Ölçekleme",
+            "description": "Sistem devreye girerek görsel taleplerini büyük ölçekte işlemeye başlar. Üretim kalitesini, API maliyetlerini ve gecikmeyi (latency) sürekli izleyerek geri bildirimlerinize göre promptları ve modelleri iyileştiriyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Yapay zeka tam olarak benim kendi ürünlerimle görsel üretebilir mi?",
+            "answer": "Evet. Stable Diffusion gibi modellerde LoRA (Low-Rank Adaptation) ve ControlNet gibi gelişmiş fine-tuning teknikleri kullanıyoruz. Yapay zekayı gerçek ürün fotoğraflarınızdan oluşan küçük bir veri setiyle eğiterek, o ürünü yeni ortamlarda, ışıkta ve açılarda özellik uydurmadan (halüsinasyon) tam olarak çizmeyi öğrenmesini sağlıyoruz."
+          },
+          {
+            "question": "Üretilen görsellerin telif hakkı kime aittir?",
+            "answer": "Genel olarak, tamamen yapay zeka tarafından üretilen görseller mevcut ABD/AB yasalarına göre üreten kişi tarafından telif hakkına tabi tutulamaz. Ancak, API platformları (OpenAI gibi) tarafından sağlanan ticari kullanım haklarına sahip olursunuz. Temel logoları ve ticari markalı varlıkları insan yapımı tutarken, pazarlama varlıkları, reklam görselleri ve arka planlar için yapay zekayı kullanmanızı tavsiye ediyoruz."
+          },
+          {
+            "question": "Üretilen görsel başına maliyet nedir?",
+            "answer": "DALL-E 3 gibi bulut API'leri kullanıldığında maliyetler görsel başına 0,04 ile 0,08 ABD Doları arasında değişir. Çok büyük bir hacme (yüz binlerce görsel) ihtiyacınız varsa, AWS veya RunPod üzerinden özel GPU sunucularında kendi Stable Diffusion modellerimizi kurabiliriz; bu, görsel başına maliyeti bir sentin çok küçük kesirlerine düşürür."
+          },
+          {
+            "question": "Yapay zekanın marka renklerimizi ve stilimizi takip etmesini sağlayabilir miyiz?",
+            "answer": "Kesinlikle. Standart metinden-görsele modelleri, markaya tam uyum sağlama konusunda zorlanır. Modeli doğrudan marka kitiniz üzerinde eğiterek ve belirli kompozisyonları, renk paletlerini ve stilistik sınırları zorlamak için ControlNet kullanarak bu sorunu çözüyoruz. Böylece her çıktı markanıza aitmiş gibi görünür."
+          },
+          {
+            "question": "Özel bir görsel üretim sistemi (pipeline) kurmak ne kadar sürer?",
+            "answer": "Standart görsel üretimi için temel bir API entegrasyonu 2-4 hafta sürer. Kendi ürünlerinize göre eğitilmiş modeller, otomatik büyütme (upscaling) ve CMS entegrasyonuna sahip tamamen özelleştirilmiş bir pipeline, keşiften üretime kadar genellikle 6-10 hafta gerektirir."
+          },
+          {
+            "question": "Yapay zeka üretilen görsellere metin ekleyebilir mi?",
+            "answer": "DALL-E 3 ve Midjourney v6 gibi yeni modeller kısa metinleri işlemede daha iyi hale gelse de, hala yazım hatalarına ve tahmin edilemez tipografiye eğilimlidirler. Güvenilir metin katmanları (reklam banner'ları gibi) için, önce arka plan görselini üreten, ardından net ve düzenlenebilir metni yerleştirmek için geleneksel grafik kütüphanelerini kullanan üretim hatları (pipeline) kuruyoruz."
+          },
+          {
+            "question": "Midjourney, DALL-E mi yoksa Stable Diffusion mı kullanıyorsunuz?",
+            "answer": "Platform bağımsız çalışıyor ve iş için en doğru aracı kullanıyoruz. Midjourney üst düzey sanatsal estetikte mükemmeldir ancak resmi ve sağlam bir API'den yoksundur. DALL-E 3, komuta uyum ve hızlı entegrasyonlar için mükemmeldir. Stable Diffusion ise maksimum güvenlik ve özelleştirme için modeli eğitmemize, ControlNet kullanmamıza ve sunucuyu özel olarak barındırmamıza olanak tanıyarak en üst düzey kontrolü sağlar."
+          },
+          {
+            "question": "Uygunsuz veya markaya aykırı görsel üretimlerini nasıl engelliyorsunuz?",
+            "answer": "Riskli promptları engellemek için sıkı bir girdi moderasyonu ve sisteminize ulaşmadan önce uygunsuz içeriği (NSFW) veya hatalı çizimleri yakalamak için çıktı doğrulaması uyguluyoruz. Herkese açık uygulamalar için marka güvenliğini garanti altına almak adına Azure Content Moderator gibi araçlar kullanıyoruz."
+          }
+        ],
+        "technologies": [
+          { "icon": "openai", "name": "OpenAI DALL-E" },
+          { "icon": "stablediffusion", "name": "Stable Diffusion" },
+          { "icon": "midjourney", "name": "Midjourney API" },
+          { "icon": "python", "name": "Python" },
+          { "icon": "pytorch", "name": "PyTorch" },
+          { "icon": "aws", "name": "AWS SageMaker" },
+          { "icon": "docker", "name": "Docker" },
+          { "icon": "react", "name": "React" }
+        ]
+      }
+    },
+    "de": {
+      "name": "KI-Bildgenerierung",
+      "shortDescription": "Erstellen Sie maßgeschneiderte Lösungen zur KI-Bildgenerierung mit DALL-E, Stable Diffusion und Midjourney, um die Erstellung visueller Assets und Personalisierung in großem Maßstab zu automatisieren.",
+      "fullDescription": "Die Erstellung visueller Inhalte ist ein massiver Engpass für Marketing-, E-Commerce- und Medienunternehmen. Wir bauen skalierbare Pipelines zur KI-Bildgenerierung, die manuelle Designarbeit durch automatisierte, markenkonforme Asset-Erstellung ersetzen. Mit APIs wie OpenAI DALL-E 3, Stable Diffusion XL und Midjourney entwickeln wir Systeme, die hochwertige Produkt-Lifestyle-Aufnahmen, personalisierte Werbemotive und dynamische Hintergründe erzeugen. Wir schreiben nicht nur Prompts für bestehende Tools; wir trainieren Modelle mit LoRA und ControlNet auf Ihre spezifischen Markenrichtlinien und Produkte (Fine-Tuning), um sicherzustellen, dass die KI-Outputs exakt zu Ihrer visuellen Identität passen. Von der automatisierten Stapelverarbeitung bis zum Echtzeit-Upscaling von Bildern senken unsere Lösungen die Kreativkosten und erhöhen Volumen und Geschwindigkeit der Asset-Produktion massiv.",
+      "features": [
+        "Integration von DALL-E 3 & Stable Diffusion",
+        "Markenspezifisches Model Fine-Tuning (LoRA)",
+        "ControlNet für präzise Kompositionen",
+        "Automatisierte Produktbild-Variationen",
+        "Hintergrundentfernung & -ersetzung",
+        "Hochauflösendes Image Upscaling",
+        "Stapelverarbeitung (Batching) & Pipeline-Architektur",
+        "Automatisierte Inhaltsmoderation"
+      ],
+      "benefits": [
+        "Senkung der kreativen Produktionskosten um bis zu 80%",
+        "Erzeugung Tausender markenkonformer Bilder in Minuten",
+        "Eliminierung teurer und zeitaufwändiger Fotoshootings",
+        "A/B-Testing von Werbemotiven in massivem Maßstab",
+        "Personalisierung visueller Inhalte für verschiedene Zielgruppensegmente",
+        "Strikte Wahrung der Markenkonformität bei allen generierten Assets"
+      ],
+      "metaTitle": "KI-Bildgenerierung Agentur | DALL-E & Stable Diffusion | PakSoft",
+      "metaDescription": "Automatisieren Sie Ihre visuelle Content-Produktion. Wir integrieren Stable Diffusion und DALL-E für maßgeschneiderte, markenkonforme KI-Bild-Pipelines.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Ermittlung der visuellen Anforderungen",
+            "description": "Wir analysieren Ihre Markenrichtlinien, vorhandenen Assets und kreativen Engpässe. Gemeinsam definieren wir den genauen Stil, die Auflösung und die Volumenanforderungen für die generierten Bilder."
+          },
+          {
+            "step": 2,
+            "title": "Modellauswahl & Architektur",
+            "description": "Wir wählen die richtigen Basismodelle (z. B. Stable Diffusion XL für lokale Kontrolle, DALL-E 3 für Prompt-Treue). Wir entwerfen die Pipeline für Prompt-Engineering, Batching und Bildspeicherung."
+          },
+          {
+            "step": 3,
+            "title": "Fine-Tuning & Prompt-Engineering",
+            "description": "Wir trainieren maßgeschneiderte LoRA-Modelle auf Ihren spezifischen Produkten und Marken-Assets, damit die KI Ihre visuelle Identität versteht. Wir entwickeln strukturierte Prompt-Vorlagen für konsistente Ergebnisse."
+          },
+          {
+            "step": 4,
+            "title": "Integration & Pipeline-Entwicklung",
+            "description": "Wir bauen die API-Wrapper und integrieren die Generierungs-Engine in Ihr CMS, PIM oder Marketingplattform. Dies umfasst automatisches Upscaling, Hintergrundentfernung und Formatkonvertierung."
+          },
+          {
+            "step": 5,
+            "title": "Qualitätssicherung & Moderation",
+            "description": "Wir implementieren automatisierte Moderationsschichten, um unangemessene Inhalte und KI-Artefakte (Halluzinationen) zu blockieren. Wir testen die Pipeline mit Tausenden von Edge-Cases."
+          },
+          {
+            "step": 6,
+            "title": "Deployment & Skalierung",
+            "description": "Das System geht live und verarbeitet Bildanfragen in großem Maßstab. Wir überwachen Generierungsqualität, API-Kosten und Latenz und verfeinern Prompts und Modelle basierend auf Ihrem Feedback."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Kann die KI Bilder mit meinen eigenen, spezifischen Produkten generieren?",
+            "answer": "Ja. Wir nutzen fortschrittliche Fine-Tuning-Techniken wie LoRA (Low-Rank Adaptation) und ControlNet für Modelle wie Stable Diffusion. Indem wir die KI mit einem kleinen Datensatz Ihrer tatsächlichen Produktfotos trainieren, lernt sie, exakt diesen Artikel in neuen Umgebungen, bei neuer Beleuchtung und aus neuen Blickwinkeln zu generieren, ohne Merkmale zu erfinden."
+          },
+          {
+            "question": "Wem gehören die Urheberrechte an den generierten Bildern?",
+            "answer": "Im Allgemeinen sind vollständig von KI generierte Bilder nach aktuellem US/EU-Recht für den Ersteller nicht urheberrechtlich schützbar. Sie besitzen jedoch die kommerziellen Nutzungsrechte, die von den API-Plattformen (wie OpenAI) gewährt werden. Wir raten dazu, KI für Marketing-Assets und Hintergründe zu nutzen, während Kernlogos und markenrechtlich geschützte Elemente menschengemacht bleiben sollten."
+          },
+          {
+            "question": "Was kostet ein generiertes Bild?",
+            "answer": "Bei Cloud-APIs wie DALL-E 3 liegen die Kosten zwischen 0,04 und 0,08 US-Dollar pro Bild. Wenn Sie massive Volumina (Hunderttausende von Bildern) benötigen, können wir benutzerdefinierte Stable Diffusion-Modelle auf dedizierten GPU-Instanzen über AWS oder RunPod hosten, was die Kosten pro Bild auf Bruchteile eines Cents reduziert."
+          },
+          {
+            "question": "Können wir sicherstellen, dass die KI unsere Markenfarben und unseren Stil einhält?",
+            "answer": "Absolut. Standard-Text-zu-Bild-Modelle haben oft Probleme mit präziser Markenkonformität. Wir lösen dies, indem wir das Modell spezifisch auf Ihr Brand-Kit fine-tunen und ControlNet verwenden, um spezifische Kompositionen, Farbpaletten und stilistische Einschränkungen zu erzwingen."
+          },
+          {
+            "question": "Wie lange dauert es, eine maßgeschneiderte Bild-Pipeline zu bauen?",
+            "answer": "Eine grundlegende API-Integration für Standard-Bildgenerierung dauert 2–4 Wochen. Eine vollständig angepasste Pipeline mit fine-getunten Produktmodellen, automatisiertem Upscaling und CMS-Integration erfordert typischerweise 6–10 Wochen von der Discovery bis zum Produktions-Rollout."
+          },
+          {
+            "question": "Kann die KI den generierten Bildern Text hinzufügen?",
+            "answer": "Obwohl neuere Modelle wie DALL-E 3 und Midjourney v6 bei der Darstellung von kurzem Text besser werden, sind sie immer noch anfällig für Rechtschreibfehler und unvorhersehbare Typografie. Für zuverlässige Text-Overlays (wie Werbebanner) bauen wir Pipelines, die zuerst das Hintergrundbild generieren und dann traditionelle Grafikbibliotheken nutzen, um den Text präzise und editierbar darüberzulegen."
+          },
+          {
+            "question": "Verwenden Sie Midjourney, DALL-E oder Stable Diffusion?",
+            "answer": "Wir sind plattformunabhängig und nutzen das richtige Tool für die jeweilige Aufgabe. Midjourney glänzt bei High-End-Kunstästhetik, hat aber keine offizielle, robuste API. DALL-E 3 eignet sich hervorragend für exakte Prompt-Umsetzung. Stable Diffusion bietet die ultimative Kontrolle für Fine-Tuning und privates Hosting für maximale Sicherheit."
+          },
+          {
+            "question": "Wie gehen Sie mit unangemessenen oder nicht markenkonformen Generierungen um?",
+            "answer": "Wir implementieren eine strikte Eingabemoderation, um riskante Prompts zu blockieren, sowie eine Ausgabevalidierung, um Artefakte oder NSFW-Inhalte abzufangen, bevor sie Ihr System erreichen. Für öffentlich zugängliche Apps nutzen wir Tools wie den Azure Content Moderator, um die Markensicherheit zu garantieren."
+          }
+        ],
+        "technologies": [
+          { "icon": "openai", "name": "OpenAI DALL-E" },
+          { "icon": "stablediffusion", "name": "Stable Diffusion" },
+          { "icon": "midjourney", "name": "Midjourney API" },
+          { "icon": "python", "name": "Python" },
+          { "icon": "pytorch", "name": "PyTorch" },
+          { "icon": "aws", "name": "AWS SageMaker" },
+          { "icon": "docker", "name": "Docker" },
+          { "icon": "react", "name": "React" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "AI امیج جنریشن (AI Image Generation)",
+      "shortDescription": "بڑے پیمانے پر بصری مواد (visual assets) کی تخلیق کو خودکار بنانے کے لیے DALL-E، Stable Diffusion اور Midjourney APIs کا استعمال کرتے ہوئے کسٹم AI امیج جنریشن سلوشنز تیار کریں۔",
+      "fullDescription": "بصری مواد (Visual content) کی تخلیق مارکیٹنگ، ای کامرس اور میڈیا کمپنیوں کے لیے ایک بہت بڑی رکاوٹ ہے۔ ہم قابلِ توسیع AI امیج جنریشن پائپ لائنز بناتے ہیں جو دستی ڈیزائن کے کام کو خودکار، برانڈ کے مطابق مواد کی تخلیق سے بدل دیتی ہیں۔ OpenAI DALL-E 3، Stable Diffusion XL اور Midjourney جیسی APIs کا استعمال کرتے ہوئے، ہم ایسے سسٹمز تیار کرتے ہیں جو اعلیٰ معیار کے پراڈکٹ لائف اسٹائل شاٹس، ذاتی نوعیت کے اشتہارات اور متحرک پس منظر تیار کرتے ہیں۔ ہم صرف موجودہ ٹولز کو پرامپٹس نہیں دیتے؛ ہم آپ کی مخصوص برانڈ گائیڈلائنز اور مصنوعات پر ماڈلز کو LoRA اور ControlNet کے ذریعے فائن ٹیون کرتے ہیں، تاکہ یہ یقینی بنایا جا سکے کہ AI کے نتائج آپ کی بصری شناخت سے بالکل میل کھاتے ہیں۔ خودکار بیچ پروسیسنگ سے لے کر ریئل ٹائم امیج اپ سکیلنگ تک، ہمارے سلوشنز تخلیقی لاگت کو کم کرتے ہوئے مواد کی پیداوار کے حجم اور رفتار کو بے حد بڑھا دیتے ہیں۔",
+      "features": [
+        "DALL-E 3 اور Stable Diffusion انٹیگریشن",
+        "برانڈ کے مطابق ماڈل فائن ٹیوننگ (LoRA)",
+        "درست کمپوزیشن کے لیے ControlNet",
+        "پراڈکٹ امیج کی خودکار تبدیلیاں (Variations)",
+        "پس منظر ہٹانا اور تبدیل کرنا",
+        "ہائی ریزولوشن امیج اپ سکیلنگ",
+        "بیچ پروسیسنگ اور پائپ لائن آرکیٹیکچر",
+        "خودکار مواد کی ماڈریشن (Moderation)"
+      ],
+      "benefits": [
+        "تخلیقی پیداوار کی لاگت میں 80 فیصد تک کمی لائیں",
+        "منٹوں میں برانڈ کے مطابق ہزاروں تصاویر تیار کریں",
+        "مہنگے اور وقت طلب فوٹوشوٹس کو ختم کریں",
+        "بڑے پیمانے پر اشتہاری تخلیقات کا A/B ٹیسٹ کریں",
+        "مختلف سامعین کے لیے بصری مواد کو ذاتی نوعیت (Personalize) کا بنائیں",
+        "تیار کردہ تمام مواد میں برانڈ کی مستقل مزاجی برقرار رکھیں"
+      ],
+      "metaTitle": "AI امیج جنریشن سروسز | DALL-E اور Stable Diffusion | PakSoft",
+      "metaDescription": "کسٹم AI امیج جنریشن کے ذریعے بصری مواد کی تخلیق کو خودکار بنائیں۔ ہم برانڈ کے مطابق مواد تیار کرنے کے لیے Stable Diffusion اور DALL-E کو مربوط کرتے ہیں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "بصری ضروریات کی دریافت",
+            "description": "ہم آپ کی برانڈ گائیڈلائنز، موجودہ اثاثوں اور تخلیقی رکاوٹوں کا تجزیہ کرتے ہیں۔ ہم مل کر تیار کی جانے والی تصاویر کے درست انداز، ریزولوشن اور حجم کی ضروریات کا تعین کرتے ہیں۔"
+          },
+          {
+            "step": 2,
+            "title": "ماڈل کا انتخاب اور آرکیٹیکچر",
+            "description": "ہم صحیح بنیادی ماڈلز کا انتخاب کرتے ہیں (مثلاً مقامی کنٹرول کے لیے Stable Diffusion XL، پرامپٹ کی پابندی کے لیے DALL-E 3)۔ ہم پرامپٹ انجینئرنگ، بیچنگ اور تصویر ذخیرہ کرنے کے لیے پائپ لائن ڈیزائن کرتے ہیں۔"
+          },
+          {
+            "step": 3,
+            "title": "فائن ٹیوننگ اور پرامپٹ انجینئرنگ",
+            "description": "ہم آپ کی مخصوص مصنوعات اور برانڈ کے مواد پر حسب ضرورت LoRA ماڈلز کو تربیت دیتے ہیں تاکہ AI آپ کی بصری شناخت کو سمجھ سکے۔ ہم ایسے پرامپٹ ٹیمپلیٹس بھی بناتے ہیں جو مستقل نتائج دیتے ہیں۔"
+          },
+          {
+            "step": 4,
+            "title": "انٹیگریشن اور پائپ لائن ڈیولپمنٹ",
+            "description": "ہم API ریپرز بناتے ہیں اور جنریشن انجن کو آپ کے CMS، PIM یا مارکیٹنگ پلیٹ فارمز میں ضم کرتے ہیں۔ اس میں خودکار اپ سکیلنگ، پس منظر ہٹانا اور فارمیٹ کی تبدیلی شامل ہے۔"
+          },
+          {
+            "step": 5,
+            "title": "کوالٹی اشورینس اور ماڈریشن",
+            "description": "ہم نامناسب مواد اور AI کی خرابیوں (hallucinations) کو روکنے کے لیے خودکار ماڈریشن تہیں لگاتے ہیں۔ ہم مستقل معیار کو یقینی بنانے کے لیے پائپ لائن کو ہزاروں ایج کیسز پر ٹیسٹ کرتے ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "تعیناتی اور اسکیلنگ (Deployment)",
+            "description": "سسٹم لائیو ہو جاتا ہے اور بڑے پیمانے پر تصاویر کی درخواستوں پر کارروائی کرتا ہے۔ ہم جنریشن کے معیار، API لاگت اور تاخیر کی مسلسل نگرانی کرتے ہیں، اور آپ کی رائے کی بنیاد پر ماڈلز کو بہتر بناتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "کیا AI میری مخصوص مصنوعات کے ساتھ تصاویر بنا سکتا ہے؟",
+            "answer": "جی ہاں۔ ہم Stable Diffusion جیسے ماڈلز پر LoRA (Low-Rank Adaptation) اور ControlNet جیسی جدید فائن ٹیوننگ تکنیک استعمال کرتے ہیں۔ AI کو آپ کی اصل پروڈکٹ کی تصاویر کے ایک چھوٹے سے ڈیٹاسیٹ پر تربیت دے کر، یہ بالکل اسی چیز کو نئے ماحول، روشنی اور زاویوں میں بغیر غلطی (hallucination) کے بنانا سیکھ لیتا ہے۔"
+          },
+          {
+            "question": "تیار کردہ تصاویر کے کاپی رائٹ کا مالک کون ہے؟",
+            "answer": "عمومی طور پر، مکمل طور پر AI کے ذریعے تیار کردہ تصاویر پر موجودہ امریکی/یورپی قوانین کے تحت تخلیق کار کا کاپی رائٹ نہیں ہوتا۔ تاہم، آپ کے پاس تجارتی استعمال کے حقوق ہوتے ہیں جو API پلیٹ فارمز (جیسے OpenAI) فراہم کرتے ہیں۔ ہم مارکیٹنگ اور پس منظر کے لیے AI کے استعمال کا مشورہ دیتے ہیں، جبکہ بنیادی لوگوز انسان کے بنائے ہوئے ہونے چاہئیں۔"
+          },
+          {
+            "question": "فی تصویر تیار کرنے کی لاگت کیا ہے؟",
+            "answer": "DALL-E 3 جیسی کلاؤڈ APIs استعمال کرنے پر، لاگت فی تصویر $0.04 سے $0.08 تک ہوتی ہے۔ اگر آپ کو بڑے حجم (لاکھوں تصاویر) کی ضرورت ہے، تو ہم AWS یا RunPod کے ذریعے وقف شدہ GPU انسٹینسز پر حسب ضرورت Stable Diffusion ماڈلز تعینات کر سکتے ہیں، جو فی تصویر لاگت کو ایک سینٹ کے بہت چھوٹے حصے تک کم کر دیتا ہے۔"
+          },
+          {
+            "question": "کیا ہم یقینی بنا سکتے ہیں کہ AI ہمارے برانڈ کے رنگوں اور انداز کی پیروی کرے؟",
+            "answer": "بالکل۔ معیاری ٹیکسٹ ٹو امیج ماڈلز درست برانڈ کی تعمیل میں جدوجہد کرتے ہیں۔ ہم اس ماڈل کو خاص طور پر آپ کی برانڈ کٹ پر فائن ٹیون کر کے اور مخصوص کمپوزیشنز، رنگوں اور انداز کو نافذ کرنے کے لیے ControlNet کا استعمال کر کے اس مسئلے کو حل کرتے ہیں۔"
+          },
+          {
+            "question": "کسٹم امیج پائپ لائن بنانے میں کتنا وقت لگتا ہے؟",
+            "answer": "معیاری امیج جنریشن کے لیے بنیادی API انٹیگریشن میں 2–4 ہفتے لگتے ہیں۔ فائن ٹیونڈ پراڈکٹ ماڈلز، خودکار اپ سکیلنگ اور CMS انٹیگریشن کے ساتھ مکمل طور پر حسب ضرورت پائپ لائن کو ڈسکوری سے پروڈکشن تک عموماً 6–10 ہفتے درکار ہوتے ہیں۔"
+          },
+          {
+            "question": "کیا AI تیار کردہ تصاویر میں متن (text) شامل کر سکتا ہے؟",
+            "answer": "اگرچہ DALL-E 3 اور Midjourney v6 جیسے نئے ماڈلز مختصر متن دکھانے میں بہتر ہو رہے ہیں، لیکن ان میں اب بھی ہجے کی غلطیاں اور غیر متوقع ٹائپوگرافی کا امکان ہوتا ہے۔ قابل اعتماد متن کے لیے (جیسے ایڈ بینرز)، ہم ایسی پائپ لائنز بناتے ہیں جو پہلے پس منظر تیار کرتی ہیں، پھر قابل تدوین متن لگانے کے لیے روایتی گرافک لائبریریاں استعمال کرتی ہیں۔"
+          },
+          {
+            "question": "کیا آپ Midjourney، DALL-E یا Stable Diffusion استعمال کرتے ہیں؟",
+            "answer": "ہم پلیٹ فارم کے پابند نہیں ہیں اور کام کے لیے صحیح ٹول استعمال کرتے ہیں۔ Midjourney اعلیٰ درجے کی فنکارانہ جمالیات میں بہترین ہے لیکن اس کی باضابطہ API نہیں ہے۔ DALL-E 3 پرامپٹ کی پابندی اور فوری انٹیگریشن کے لیے شاندار ہے۔ Stable Diffusion فائن ٹیوننگ اور زیادہ سے زیادہ کنٹرول کے لیے بہترین ہے۔"
+          },
+          {
+            "question": "آپ نامناسب یا برانڈ سے ہٹ کر تیار ہونے والی تصاویر سے کیسے نمٹتے ہیں؟",
+            "answer": "ہم خطرناک پرامپٹس کو روکنے کے لیے سخت ان پٹ ماڈریشن نافذ کرتے ہیں، اور آپ کے سسٹم تک پہنچنے سے پہلے نامناسب مواد کو پکڑنے کے لیے آؤٹ پٹ کی توثیق کرتے ہیں۔ عوامی ایپس کے لیے، ہم برانڈ کی حفاظت کو یقینی بنانے کے لیے Azure Content Moderator جیسے ٹولز استعمال کرتے ہیں۔"
+          }
+        ],
+        "technologies": [
+          { "icon": "openai", "name": "OpenAI DALL-E" },
+          { "icon": "stablediffusion", "name": "Stable Diffusion" },
+          { "icon": "midjourney", "name": "Midjourney API" },
+          { "icon": "python", "name": "Python" },
+          { "icon": "pytorch", "name": "PyTorch" },
+          { "icon": "aws", "name": "AWS SageMaker" },
+          { "icon": "docker", "name": "Docker" },
+          { "icon": "react", "name": "React" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "توليد الصور بالذكاء الاصطناعي",
+      "shortDescription": "قم بإنشاء حلول مخصصة لتوليد الصور بالذكاء الاصطناعي باستخدام DALL-E و Stable Diffusion و Midjourney لأتمتة إنشاء الأصول المرئية والتخصيص على نطاق واسع.",
+      "fullDescription": "يعد إنشاء المحتوى المرئي عقبة هائلة لشركات التسويق والتجارة الإلكترونية والإعلام. نحن نبني مسارات (Pipelines) قابلة للتطوير لتوليد الصور بالذكاء الاصطناعي والتي تستبدل أعمال التصميم اليدوية بإنشاء أصول آلية ومتوافقة مع العلامة التجارية. باستخدام واجهات برمجة التطبيقات (APIs) مثل OpenAI DALL-E 3 و Stable Diffusion XL و Midjourney، نقوم بتطوير أنظمة تولد لقطات منتجات عالية الجودة، وتصميمات إعلانات مخصصة، وخلفيات ديناميكية. نحن لا نكتفي بكتابة المطالبات (Prompts) للأدوات الحالية؛ بل نقوم بضبط دقيق (Fine-tuning) للنماذج وفقاً لإرشادات علامتك التجارية ومنتجاتك الخاصة باستخدام LoRA و ControlNet، مما يضمن تطابق مخرجات الذكاء الاصطناعي مع هويتك المرئية الدقيقة. من المعالجة الآلية المجمعة (Batch processing) إلى تحسين دقة الصور (Upscaling) في الوقت الفعلي، تعمل حلولنا على خفض التكاليف الإبداعية مع زيادة حجم وسرعة إنتاج الأصول بشكل كبير.",
+      "features": [
+        "تكامل DALL-E 3 و Stable Diffusion",
+        "الضبط الدقيق للنماذج الخاصة بالعلامة التجارية (LoRA)",
+        "تقنية ControlNet للتركيب المرئي الدقيق",
+        "توليد اختلافات صور المنتجات آلياً",
+        "إزالة واستبدال الخلفيات",
+        "تحسين دقة الصور (Upscaling) عالية الوضوح",
+        "المعالجة المجمعة وبنية مسار العمل (Pipeline)",
+        "الاعتدال الآلي للمحتوى (Content Moderation)"
+      ],
+      "benefits": [
+        "تقليل تكاليف الإنتاج الإبداعي بنسبة تصل إلى 80٪",
+        "إنشاء آلاف الصور المتوافقة مع العلامة التجارية في دقائق",
+        "التخلص من جلسات التصوير الباهظة والمستهلكة للوقت",
+        "إجراء اختبارات A/B لتصميمات الإعلانات على نطاق واسع",
+        "تخصيص المحتوى المرئي لشرائح الجمهور المختلفة",
+        "الحفاظ على اتساق صارم للعلامة التجارية عبر جميع الأصول المُنشأة"
+      ],
+      "metaTitle": "خدمات توليد الصور بالذكاء الاصطناعي | DALL-E و Stable Diffusion | PakSoft",
+      "metaDescription": "قم بأتمتة إنشاء المحتوى المرئي من خلال توليد الصور المخصص بالذكاء الاصطناعي. ندمج Stable Diffusion و DALL-E لبناء مسارات أصول متوافقة مع علامتك التجارية.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "اكتشاف المتطلبات المرئية",
+            "description": "نقوم بتحليل إرشادات علامتك التجارية، والأصول الحالية، والعقبات الإبداعية. نحدد معاً النمط الدقيق، والدقة، ومتطلبات الحجم للصور التي سيتم إنشاؤها."
+          },
+          {
+            "step": 2,
+            "title": "اختيار النموذج والهندسة المعمارية",
+            "description": "نختار النماذج الأساسية الصحيحة (مثل Stable Diffusion XL للتحكم المحلي، و DALL-E 3 للالتزام بالمطالبات). نصمم مسار العمل لهندسة المطالبات، والمعالجة المجمعة، وتخزين الصور."
+          },
+          {
+            "step": 3,
+            "title": "الضبط الدقيق (Fine-Tuning) وهندسة المطالبات",
+            "description": "نقوم بتدريب نماذج LoRA مخصصة على منتجاتك الخاصة وأصول علامتك التجارية لضمان فهم الذكاء الاصطناعي لهويتك المرئية. كما نقوم بتطوير قوالب مطالبات منظمة تعطي نتائج متسقة."
+          },
+          {
+            "step": 4,
+            "title": "التكامل وتطوير مسار العمل (Pipeline)",
+            "description": "نبني واجهات (API Wrappers) وندمج محرك التوليد في نظام إدارة المحتوى (CMS) أو منصات التسويق الخاصة بك. يشمل ذلك التحسين الآلي للدقة، وإزالة الخلفية، وتحويل التنسيقات."
+          },
+          {
+            "step": 5,
+            "title": "ضمان الجودة والاعتدال",
+            "description": "نقوم بتنفيذ طبقات اعتدال آلية لحظر المحتوى غير اللائق والأخطاء المرئية (Hallucinations). نختبر مسار العمل عبر آلاف الحالات الطرفية لضمان الجودة المتسقة."
+          },
+          {
+            "step": 6,
+            "title": "النشر والتوسع (Deployment)",
+            "description": "ينطلق النظام للعمل، ويعالج طلبات الصور على نطاق واسع. نراقب باستمرار جودة التوليد، وتكاليف API، وزمن الانتقال، ونقوم بتحسين المطالبات والنماذج بناءً على ملاحظاتك."
+          }
+        ],
+        "faq": [
+          {
+            "question": "هل يمكن للذكاء الاصطناعي إنشاء صور لمنتجاتي الخاصة تحديداً؟",
+            "answer": "نعم. نستخدم تقنيات ضبط دقيق متقدمة مثل LoRA و ControlNet على نماذج مثل Stable Diffusion. من خلال تدريب الذكاء الاصطناعي على مجموعة بيانات صغيرة من صور منتجك الفعلي، فإنه يتعلم إنشاء هذا العنصر بالضبط في بيئات وإضاءة وزوايا جديدة دون اختلاق ميزات وهمية."
+          },
+          {
+            "question": "من يملك حقوق الطبع والنشر للصور المُنشأة؟",
+            "answer": "بشكل عام، لا تخضع الصور التي يتم إنشاؤها بالكامل بواسطة الذكاء الاصطناعي لحقوق الطبع والنشر من قبل المنشئ بموجب القانون الأمريكي/الأوروبي الحالي. ومع ذلك، فإنك تمتلك حقوق الاستخدام التجاري التي توفرها منصات API (مثل OpenAI). ننصح باستخدام الذكاء الاصطناعي لأصول التسويق وتصميمات الإعلانات، مع إبقاء الشعارات الأساسية من صنع الإنسان."
+          },
+          {
+            "question": "ما هي تكلفة كل صورة مُنشأة؟",
+            "answer": "باستخدام واجهات برمجة التطبيقات السحابية مثل DALL-E 3، تتراوح التكاليف من 0.04 دولار إلى 0.08 دولار لكل صورة. إذا كنت بحاجة إلى حجم هائل (مئات الآلاف من الصور)، يمكننا نشر نماذج Stable Diffusion مخصصة على خوادم GPU مخصصة عبر AWS أو RunPod، مما يقلل التكلفة إلى أجزاء من السنت."
+          },
+          {
+            "question": "هل يمكننا ضمان التزام الذكاء الاصطناعي بألوان وأسلوب علامتنا التجارية؟",
+            "answer": "بالتأكيد. تكافح نماذج تحويل النص إلى صورة القياسية مع الامتثال الدقيق للعلامة التجارية. نحن نحل هذه المشكلة عن طريق الضبط الدقيق (Fine-tuning) للنموذج تحديداً على حزمة علامتك التجارية واستخدام تقنية ControlNet لفرض تركيبات معينة ولوحات ألوان وقيود أسلوبية."
+          },
+          {
+            "question": "كم من الوقت يستغرق بناء مسار (Pipeline) صور مخصص؟",
+            "answer": "يستغرق التكامل الأساسي لـ API لتوليد الصور القياسي من أسبوعين إلى 4 أسابيع. أما مسار العمل المخصص بالكامل مع نماذج المنتجات المضبوطة بدقة، والتحسين الآلي للدقة (Upscaling)، والتكامل مع نظام إدارة المحتوى (CMS)، فيتطلب عادةً من 6 إلى 10 أسابيع."
+          },
+          {
+            "question": "هل يمكن للذكاء الاصطناعي إضافة نص إلى الصور المُنشأة؟",
+            "answer": "في حين أن النماذج الأحدث مثل DALL-E 3 و Midjourney v6 تتحسن في تقديم نص قصير، إلا أنها لا تزال عرضة للأخطاء الإملائية. للحصول على طبقات نصية موثوقة (مثل لافتات الإعلانات)، نبني مسارات عمل تولد صورة الخلفية أولاً، ثم نستخدم مكتبات الرسوم التقليدية لتركيب نص دقيق وقابل للتحرير."
+          },
+          {
+            "question": "هل تستخدمون Midjourney أم DALL-E أم Stable Diffusion؟",
+            "answer": "نحن لا نقتصر على منصة واحدة ونستخدم الأداة المناسبة للمهمة. يتفوق Midjourney في الجماليات الفنية ولكنه يفتقر إلى API رسمية. يعد DALL-E 3 ممتازاً في الالتزام بالمطالبات والتكامل السريع. يوفر Stable Diffusion التحكم المطلق، مما يتيح لنا الضبط الدقيق واستخدام ControlNet والاستضافة بشكل خاص."
+          },
+          {
+            "question": "كيف تتعاملون مع التوليدات غير اللائقة أو غير المتوافقة مع العلامة التجارية؟",
+            "answer": "نقوم بتنفيذ اعتدال صارم للمدخلات لحظر المطالبات المحفوفة بالمخاطر، والتحقق من المخرجات لالتقاط المحتوى غير اللائق قبل وصوله إلى نظامك. بالنسبة للتطبيقات الموجهة للجمهور، نستخدم أدوات مثل Azure Content Moderator لضمان سلامة العلامة التجارية."
+          }
+        ],
+        "technologies": [
+          { "icon": "openai", "name": "OpenAI DALL-E" },
+          { "icon": "stablediffusion", "name": "Stable Diffusion" },
+          { "icon": "midjourney", "name": "Midjourney API" },
+          { "icon": "python", "name": "Python" },
+          { "icon": "pytorch", "name": "PyTorch" },
+          { "icon": "aws", "name": "AWS SageMaker" },
+          { "icon": "docker", "name": "Docker" },
+          { "icon": "react", "name": "React" }
+        ]
+      }
+    }
+  },
+  "ai-integration": {
+    "en": {
+      "name": "AI Integration Services",
+      "shortDescription": "Seamlessly embed LLMs, predictive models, and custom AI APIs into your existing software, turning legacy applications into intelligent platforms.",
+      "fullDescription": "Building a great AI model is only half the battle; integrating it into your existing tech stack without breaking performance is where the real complexity lies. Our AI integration services connect powerful machine learning models and LLMs (OpenAI, Claude, local models) directly into your web apps, mobile apps, and enterprise systems (ERP, CRM). We don't just paste an API key — we design robust middleware architectures that handle rate limiting, prompt caching, background queue processing, and fallback mechanisms for when external AI services go down. Whether you need to inject AI search into a legacy SQL database, add smart summarization to your proprietary dashboard, or route intelligent notifications through Kafka, we bridge the gap between cutting-edge AI and your everyday software operations securely.",
+      "features": [
+        "LLM API Integration (OpenAI, Anthropic, Gemini)",
+        "Legacy System & ERP/CRM AI Bridging",
+        "Middleware & Gateway Architecture",
+        "Rate Limiting & Cost Control Logic",
+        "Prompt Caching & Redis Integration",
+        "Asynchronous Queue Processing (Kafka/RabbitMQ)",
+        "Fallback & Error Handling Mechanisms",
+        "Secure Data Sanitization & PII Masking"
+      ],
+      "benefits": [
+        "Modernize legacy software without rewriting it from scratch",
+        "Keep API costs predictable with smart caching and rate limits",
+        "Ensure app stability even when third-party AI APIs face downtime",
+        "Protect sensitive customer data before it reaches public LLMs",
+        "Process heavy AI tasks in the background without freezing the UI",
+        "Accelerate time-to-market by using proven middleware patterns"
+      ],
+      "metaTitle": "AI Integration Services | Connect LLMs to Your Apps | PakSoft",
+      "metaDescription": "Integrate AI seamlessly into your existing software. We connect LLMs, build robust API middleware, and modernize legacy systems with intelligent features.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Architecture Assessment",
+            "description": "We audit your existing tech stack, databases, and third-party tools. We identify the integration points where AI can add the most value and review system limitations like latency."
+          },
+          {
+            "step": 2,
+            "title": "Security & Compliance Review",
+            "description": "Before any data flows to an AI model, we establish compliance guardrails. We design PII masking strategies and decide between cloud APIs or self-hosted models to meet your data privacy needs."
+          },
+          {
+            "step": 3,
+            "title": "Middleware Development",
+            "description": "We build the integration layer—typically in Node.js or Python—that will manage communication between your app and the AI. This layer handles retries, formatting, and prompt construction."
+          },
+          {
+            "step": 4,
+            "title": "Performance Optimization",
+            "description": "AI APIs can be slow. We implement Redis for caching repeated queries and message brokers like Kafka or Celery to run heavy AI tasks asynchronously, keeping your user interface fast."
+          },
+          {
+            "step": 5,
+            "title": "Testing & Fallback Implementation",
+            "description": "We stress-test the integration under high load and simulate API outages. We ensure that if the AI provider goes down, your app gracefully degrades rather than crashing entirely."
+          },
+          {
+            "step": 6,
+            "title": "Deployment & Cost Monitoring",
+            "description": "We deploy the integrated system and set up custom dashboards. You will have full visibility into API latency, error rates, and exact token costs per feature in real time."
+          }
+        ],
+        "faq": [
+          {
+            "question": "How do you protect sensitive data when using external AI APIs?",
+            "answer": "We use a combination of techniques. First, we implement PII (Personally Identifiable Information) scrubbers in the middleware that strip names, emails, and financial data before sending prompts to OpenAI or Claude. If your industry (like healthcare or finance) strictly forbids cloud APIs, we integrate open-source models (like Llama 3) hosted on your own secure cloud infrastructure."
+          },
+          {
+            "question": "Will adding AI make my application slow?",
+            "answer": "It can, if done incorrectly. LLM responses take seconds, which feels like an eternity in a web app. We solve this by using asynchronous background jobs (via Celery or BullMQ) for heavy tasks, streaming responses directly to the frontend (like ChatGPT does), and caching frequent identical queries using Redis to provide instant answers."
+          },
+          {
+            "question": "Can you integrate AI into an old, legacy system?",
+            "answer": "Yes. We frequently integrate modern AI into legacy ERPs and older SQL databases. We do this by building a modern microservice (API Gateway) that acts as a bridge. The legacy system talks to our bridge using standard webhooks or REST, and our bridge handles the complex AI orchestration."
+          },
+          {
+            "question": "What happens if the OpenAI or Anthropic API goes down?",
+            "answer": "We design for failure. Our middleware includes automatic retries with exponential backoff. For mission-critical features, we implement multi-provider fallbacks: if OpenAI times out, the system automatically routes the request to Anthropic Claude or a backup local model to ensure uninterrupted service."
+          },
+          {
+            "question": "How do we stop AI costs from spiraling out of control?",
+            "answer": "Cost control is built into our integration architecture. We implement hard rate limits per user, cache duplicate requests so you don't pay twice for the same answer, and use smaller, cheaper models (like GPT-4o-mini) for simple routing tasks, reserving expensive models only for complex reasoning."
+          },
+          {
+            "question": "Do we need to switch our whole stack to Python for AI?",
+            "answer": "Not at all. While the core AI/ML data science ecosystem is Python-heavy, integration is stack-agnostic. We can build AI microservices in Node.js, Go, or Java that communicate seamlessly with your existing PHP, .NET, or Ruby applications via standard REST APIs or gRPC."
+          },
+          {
+            "question": "How long does a typical AI integration take?",
+            "answer": "Adding a specific feature—like an AI summarizer or semantic search—to an existing app usually takes 3–6 weeks. Complex enterprise integrations that require deep database syncing, custom middleware, and strict security compliance take 2–3 months."
+          },
+          {
+            "question": "Can you integrate AI into our CRM like Salesforce or HubSpot?",
+            "answer": "Yes. We build custom middleware that hooks into your CRM's webhooks. For example, when a new ticket is created in Zendesk or Salesforce, our integration can intercept it, use AI to analyze the sentiment and draft a response, and push that draft back into the CRM for your agents."
+          }
+        ],
+        "technologies": [
+          { "icon": "python", "name": "Python / FastAPI" },
+          { "icon": "nodedotjs", "name": "Node.js" },
+          { "icon": "redis", "name": "Redis" },
+          { "icon": "apachekafka", "name": "Apache Kafka" },
+          { "icon": "openai", "name": "OpenAI API" },
+          { "icon": "anthropic", "name": "Anthropic API" },
+          { "icon": "docker", "name": "Docker" },
+          { "icon": "amazonwebservices", "name": "AWS API Gateway" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Yapay Zeka Entegrasyon Hizmetleri",
+      "shortDescription": "LLM'leri, tahmine dayalı modelleri ve özel yapay zeka API'lerini mevcut yazılımınıza sorunsuz bir şekilde yerleştirerek eski uygulamaları akıllı platformlara dönüştürün.",
+      "fullDescription": "Harika bir yapay zeka modeli oluşturmak işin sadece yarısıdır; onu performansı bozmadan mevcut teknoloji yığınınıza (tech stack) entegre etmek asıl karmaşıklığın yattığı yerdir. Yapay zeka entegrasyon hizmetlerimiz, güçlü makine öğrenimi modellerini ve LLM'leri (OpenAI, Claude, yerel modeller) doğrudan web uygulamalarınıza, mobil uygulamalarınıza ve kurumsal sistemlerinize (ERP, CRM) bağlar. Sadece bir API anahtarı yapıştırmıyoruz; hız sınırlaması (rate limiting), prompt önbelleğe alma (caching), arka plan kuyruk işleme ve dış yapay zeka hizmetleri çöktüğünde devreye girecek yedek (fallback) mekanizmalarını yöneten sağlam ara yazılım (middleware) mimarileri tasarlıyoruz. Eski bir SQL veritabanına yapay zeka destekli arama eklemek, özel kontrol panelinize akıllı özetleme getirmek veya akıllı bildirimleri Kafka üzerinden yönlendirmek istiyorsanız, en yeni yapay zeka teknolojileri ile günlük yazılım operasyonlarınız arasındaki köprüyü güvenli bir şekilde kuruyoruz.",
+      "features": [
+        "LLM API Entegrasyonu (OpenAI, Anthropic, Gemini)",
+        "Eski Sistem (Legacy) ve ERP/CRM Yapay Zeka Köprüsü",
+        "Ara Yazılım (Middleware) ve Gateway Mimarisi",
+        "Hız Sınırlaması (Rate Limiting) ve Maliyet Kontrol Mantığı",
+        "Prompt Önbellekleme ve Redis Entegrasyonu",
+        "Asenkron Kuyruk İşleme (Kafka/RabbitMQ)",
+        "Yedekleme (Fallback) ve Hata Yönetim Mekanizmaları",
+        "Güvenli Veri Temizleme ve PII Maskeleme"
+      ],
+      "benefits": [
+        "Eski yazılımları sıfırdan yazmadan modernize edin",
+        "Akıllı önbellekleme ve hız sınırlarıyla API maliyetlerini öngörülebilir tutun",
+        "Üçüncü taraf yapay zeka API'leri kesintiye uğrasa bile uygulama kararlılığını sağlayın",
+        "Müşteri verilerini herkese açık LLM'lere ulaşmadan önce koruyun",
+        "Kullanıcı arayüzünü (UI) dondurmadan ağır yapay zeka görevlerini arka planda işleyin",
+        "Kanıtlanmış ara yazılım kalıplarını kullanarak pazara çıkış süresini hızlandırın"
+      ],
+      "metaTitle": "Yapay Zeka Entegrasyon Hizmetleri | Uygulamalarınıza AI Ekleyin | PakSoft",
+      "metaDescription": "Yapay zekayı mevcut yazılımınıza sorunsuz bir şekilde entegre edin. LLM'leri bağlıyor, sağlam API ara yazılımları (middleware) kuruyor ve sistemlerinizi modernize ediyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Mimari Değerlendirmesi",
+            "description": "Mevcut teknoloji yığınınızı, veritabanlarınızı ve üçüncü taraf araçlarınızı denetliyoruz. Yapay zekanın en çok değer katabileceği entegrasyon noktalarını belirliyor ve gecikme (latency) gibi sistem sınırlamalarını inceliyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Güvenlik ve Uyumluluk İncelemesi",
+            "description": "Bir yapay zeka modeline herhangi bir veri akmadan önce uyumluluk koruma bariyerlerini kuruyoruz. PII (Kişisel Veri) maskeleme stratejileri tasarlıyor ve veri gizliliği ihtiyaçlarınızı karşılamak için bulut API'leri veya kendi sunucunuzdaki (self-hosted) modeller arasında karar veriyoruz."
+          },
+          {
+            "step": 3,
+            "title": "Ara Yazılım (Middleware) Geliştirme",
+            "description": "Uygulamanız ile yapay zeka arasındaki iletişimi yönetecek olan entegrasyon katmanını (genellikle Node.js veya Python dilinde) oluşturuyoruz. Bu katman yeniden denemeleri, formatlamayı ve prompt oluşturmayı yönetir."
+          },
+          {
+            "step": 4,
+            "title": "Performans Optimizasyonu",
+            "description": "Yapay zeka API'leri yavaş olabilir. Tekrarlanan sorguları önbelleğe almak için Redis'i; ağır yapay zeka görevlerini asenkron çalıştırmak ve kullanıcı arayüzünüzü hızlı tutmak için Kafka veya Celery gibi mesaj aracılarını (message brokers) uyguluyoruz."
+          },
+          {
+            "step": 5,
+            "title": "Test ve Fallback (Yedek) Uygulaması",
+            "description": "Entegrasyonu yüksek yük altında stres testine tabi tutuyor ve API kesintilerini simüle ediyoruz. Yapay zeka sağlayıcısı çökerse, uygulamanızın tamamen çökmek yerine sorunsuz bir şekilde (graceful degradation) çalışmaya devam etmesini sağlıyoruz."
+          },
+          {
+            "step": 6,
+            "title": "Yayına Alma ve Maliyet İzleme",
+            "description": "Entegre sistemi devreye alıyor ve özel gösterge panelleri (dashboards) kuruyoruz. API gecikmesi, hata oranları ve özellik başına kesin token maliyetleri hakkında gerçek zamanlı ve tam görünürlüğe sahip olacaksınız."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Dış yapay zeka API'lerini kullanırken hassas verileri nasıl koruyorsunuz?",
+            "answer": "Bir dizi teknik kullanıyoruz. İlk olarak, ara yazılımda (middleware) promptları OpenAI veya Claude'a göndermeden önce isimleri, e-postaları ve finansal verileri temizleyen PII (Kişisel Tanımlanabilir Bilgi) temizleyicileri uyguluyoruz. Sektörünüz bulut API'lerini kesinlikle yasaklıyorsa, kendi güvenli bulut altyapınızda barındırılan açık kaynaklı modelleri (Llama 3 gibi) entegre ediyoruz."
+          },
+          {
+            "question": "Yapay zeka eklemek uygulamamı yavaşlatır mı?",
+            "answer": "Yanlış yapılırsa yavaşlatabilir. LLM yanıtları saniyeler sürer, bu da bir web uygulamasında sonsuzluk gibi hissettirir. Bunu çözmek için ağır görevleri asenkron arka plan işleri (Celery veya BullMQ aracılığıyla) olarak yürütüyor, yanıtları doğrudan ön yüze akış (streaming) olarak veriyor (ChatGPT gibi) ve anında yanıtlar sağlamak için sık sorulan aynı sorguları Redis kullanarak önbelleğe alıyoruz."
+          },
+          {
+            "question": "Yapay zekayı eski bir (legacy) sisteme entegre edebilir misiniz?",
+            "answer": "Evet. Modern yapay zekayı genellikle eski ERP'lere ve eski SQL veritabanlarına entegre ederiz. Bunu köprü görevi gören modern bir mikro hizmet (API Gateway) oluşturarak yapıyoruz. Eski sistem köprümüzle standart webhook'lar veya REST kullanarak konuşur ve köprümüz karmaşık yapay zeka orkestrasyonunu üstlenir."
+          },
+          {
+            "question": "OpenAI veya Anthropic API'si çökerse ne olur?",
+            "answer": "Arızaya karşı tasarım yapıyoruz. Ara yazılımımız, katlanarak artan bekleme süreleriyle (exponential backoff) otomatik yeniden denemeler içerir. Kritik görev özellikleri için çoklu sağlayıcı yedekleri (multi-provider fallbacks) uyguluyoruz: OpenAI zaman aşımına uğrarsa, sistem kesintisiz hizmet sağlamak için isteği otomatik olarak Anthropic Claude'a veya yerel bir yedek modele yönlendirir."
+          },
+          {
+            "question": "Yapay zeka maliyetlerinin kontrolden çıkmasını nasıl durdurabiliriz?",
+            "answer": "Maliyet kontrolü entegrasyon mimarimizin içine yerleştirilmiştir. Kullanıcı başına kesin hız sınırları (rate limits) uyguluyor, aynı yanıt için iki kez ödeme yapmamanız için yinelenen istekleri önbelleğe alıyor ve basit yönlendirme görevleri için daha küçük, daha ucuz modeller (GPT-4o-mini gibi) kullanarak pahalı modelleri yalnızca karmaşık akıl yürütme için saklıyoruz."
+          },
+          {
+            "question": "Yapay zeka için tüm yazılım yığınımızı (stack) Python'a geçirmemiz mi gerekiyor?",
+            "answer": "Kesinlikle hayır. Çekirdek yapay zeka/makine öğrenimi veri bilimi ekosistemi ağırlıklı olarak Python olsa da, entegrasyon dilden bağımsızdır. Node.js, Go veya Java dillerinde, standart REST API'leri veya gRPC aracılığıyla mevcut PHP, .NET veya Ruby uygulamalarınızla sorunsuz bir şekilde iletişim kuran yapay zeka mikro hizmetleri oluşturabiliriz."
+          },
+          {
+            "question": "Tipik bir yapay zeka entegrasyonu ne kadar sürer?",
+            "answer": "Mevcut bir uygulamaya yapay zeka özetleyici veya anlamsal arama (semantic search) gibi belirli bir özellik eklemek genellikle 3-6 hafta sürer. Derin veritabanı senkronizasyonu, özel ara yazılım (middleware) ve sıkı güvenlik uyumluluğu gerektiren karmaşık kurumsal entegrasyonlar 2-3 ay sürer."
+          },
+          {
+            "question": "Yapay zekayı Salesforce veya HubSpot gibi CRM'imize entegre edebilir misiniz?",
+            "answer": "Evet. CRM'inizin webhook'larına bağlanan özel ara yazılımlar oluşturuyoruz. Örneğin, Zendesk veya Salesforce'ta yeni bir destek talebi (ticket) oluşturulduğunda, entegrasyonumuz bunu yakalayabilir, duygu analizi yapmak ve bir yanıt taslağı hazırlamak için yapay zekayı kullanabilir ve bu taslağı temsilcileriniz için tekrar CRM'e gönderebilir."
+          }
+        ],
+        "technologies": [
+          { "icon": "python", "name": "Python / FastAPI" },
+          { "icon": "nodedotjs", "name": "Node.js" },
+          { "icon": "redis", "name": "Redis" },
+          { "icon": "apachekafka", "name": "Apache Kafka" },
+          { "icon": "openai", "name": "OpenAI API" },
+          { "icon": "anthropic", "name": "Anthropic API" },
+          { "icon": "docker", "name": "Docker" },
+          { "icon": "amazonwebservices", "name": "AWS API Gateway" }
+        ]
+      }
+    },
+    "de": {
+      "name": "KI-Integrations-Services",
+      "shortDescription": "Betten Sie LLMs, prädiktive Modelle und benutzerdefinierte KI-APIs nahtlos in Ihre bestehende Software ein und verwandeln Sie Legacy-Anwendungen in intelligente Plattformen.",
+      "fullDescription": "Ein großartiges KI-Modell zu bauen, ist nur die halbe Miete; die wahre Komplexität liegt darin, es in Ihren bestehenden Tech-Stack zu integrieren, ohne die Performance zu beeinträchtigen. Unsere KI-Integrations-Services verbinden leistungsstarke Machine-Learning-Modelle und LLMs (OpenAI, Claude, lokale Modelle) direkt mit Ihren Web-Apps, Mobile-Apps und Enterprise-Systemen (ERP, CRM). Wir fügen nicht einfach nur einen API-Key ein — wir entwerfen robuste Middleware-Architekturen, die Rate Limiting, Prompt-Caching, Background-Queue-Verarbeitung und Fallback-Mechanismen für den Fall von Ausfällen externer KI-Dienste übernehmen. Egal, ob Sie KI-Suche in eine alte SQL-Datenbank injizieren, smarte Zusammenfassungen zu Ihrem proprietären Dashboard hinzufügen oder intelligente Benachrichtigungen über Kafka routen möchten, wir schlagen sicher die Brücke zwischen modernster KI und Ihrem täglichen Softwarebetrieb.",
+      "features": [
+        "LLM API-Integration (OpenAI, Anthropic, Gemini)",
+        "Legacy-System & ERP/CRM KI-Überbrückung",
+        "Middleware- & Gateway-Architektur",
+        "Rate Limiting & Kostenkontroll-Logik",
+        "Prompt-Caching & Redis-Integration",
+        "Asynchrone Queue-Verarbeitung (Kafka/RabbitMQ)",
+        "Fallback- & Fehlerbehandlungsmechanismen",
+        "Sichere Datenbereinigung & PII-Maskierung"
+      ],
+      "benefits": [
+        "Modernisieren Sie Legacy-Software, ohne sie von Grund auf neu zu schreiben",
+        "Halten Sie API-Kosten durch smartes Caching und Rate Limits berechenbar",
+        "Gewährleisten Sie App-Stabilität auch bei Ausfällen von Drittanbieter-KI-APIs",
+        "Schützen Sie sensible Kundendaten, bevor sie öffentliche LLMs erreichen",
+        "Verarbeiten Sie schwere KI-Aufgaben im Hintergrund, ohne die UI einzufrieren",
+        "Beschleunigen Sie die Markteinführung durch bewährte Middleware-Muster"
+      ],
+      "metaTitle": "KI-Integrations-Services | LLMs in Ihre Apps einbinden | PakSoft",
+      "metaDescription": "Integrieren Sie KI nahtlos in Ihre Software. Wir binden LLMs an, bauen robuste API-Middleware und modernisieren Legacy-Systeme mit intelligenten Features.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Architektur-Assessment",
+            "description": "Wir auditieren Ihren bestehenden Tech-Stack, Datenbanken und Drittanbieter-Tools. Wir identifizieren die Integrationspunkte, an denen KI den größten Wert bietet, und prüfen Systemgrenzen wie Latenz."
+          },
+          {
+            "step": 2,
+            "title": "Security & Compliance-Prüfung",
+            "description": "Bevor Daten in ein KI-Modell fließen, etablieren wir Compliance-Guardrails. Wir entwerfen PII-Maskierungsstrategien und entscheiden zwischen Cloud-APIs oder selbst gehosteten Modellen, um Ihren Datenschutzanforderungen gerecht zu werden."
+          },
+          {
+            "step": 3,
+            "title": "Middleware-Entwicklung",
+            "description": "Wir bauen die Integrationsschicht – typischerweise in Node.js oder Python – die die Kommunikation zwischen Ihrer App und der KI verwaltet. Diese Schicht kümmert sich um Retries, Formatierung und Prompt-Erstellung."
+          },
+          {
+            "step": 4,
+            "title": "Performance-Optimierung",
+            "description": "KI-APIs können langsam sein. Wir implementieren Redis für das Caching wiederholter Abfragen und Message-Broker wie Kafka oder Celery, um schwere KI-Aufgaben asynchron auszuführen und Ihre Benutzeroberfläche schnell zu halten."
+          },
+          {
+            "step": 5,
+            "title": "Testing & Fallback-Implementierung",
+            "description": "Wir unterziehen die Integration einem Stresstest unter hoher Last und simulieren API-Ausfälle. Wir stellen sicher, dass Ihre App bei Ausfall des KI-Anbieters gracefully degradiert, anstatt komplett abzustürzen."
+          },
+          {
+            "step": 6,
+            "title": "Deployment & Kostenüberwachung",
+            "description": "Wir deployen das integrierte System und richten benutzerdefinierte Dashboards ein. Sie haben in Echtzeit vollen Einblick in API-Latenz, Fehlerraten und exakte Token-Kosten pro Feature."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Wie schützen Sie sensible Daten bei der Nutzung externer KI-APIs?",
+            "answer": "Wir verwenden eine Kombination von Techniken. Zunächst implementieren wir PII (Personally Identifiable Information) Scrubbers in der Middleware, die Namen, E-Mails und Finanzdaten entfernen, bevor Prompts an OpenAI oder Claude gesendet werden. Wenn Ihre Branche Cloud-APIs streng verbietet, integrieren wir Open-Source-Modelle (wie Llama 3), die auf Ihrer eigenen sicheren Cloud-Infrastruktur gehostet werden."
+          },
+          {
+            "question": "Wird das Hinzufügen von KI meine Anwendung langsam machen?",
+            "answer": "Das kann passieren, wenn es falsch gemacht wird. LLM-Antworten dauern Sekunden, was sich in einer Web-App wie eine Ewigkeit anfühlt. Wir lösen dies, indem wir asynchrone Hintergrundjobs (über Celery oder BullMQ) für schwere Aufgaben nutzen, Antworten direkt ins Frontend streamen (wie ChatGPT es tut) und häufige identische Abfragen mit Redis cachen."
+          },
+          {
+            "question": "Können Sie KI in ein altes Legacy-System integrieren?",
+            "answer": "Ja. Wir integrieren häufig moderne KI in Legacy-ERPs und ältere SQL-Datenbanken. Dazu bauen wir einen modernen Microservice (API Gateway), der als Brücke fungiert. Das Legacy-System kommuniziert über Standard-Webhooks oder REST mit unserer Brücke, und unsere Brücke übernimmt die komplexe KI-Orchestrierung."
+          },
+          {
+            "question": "Was passiert, wenn die API von OpenAI oder Anthropic ausfällt?",
+            "answer": "Wir designen für den Ausfall. Unsere Middleware beinhaltet automatische Retries mit exponentiellem Backoff. Für geschäftskritische Features implementieren wir Multi-Provider-Fallbacks: Wenn OpenAI in ein Timeout läuft, leitet das System die Anfrage automatisch an Anthropic Claude oder ein lokales Backup-Modell um."
+          },
+          {
+            "question": "Wie verhindern wir, dass die KI-Kosten außer Kontrolle geraten?",
+            "answer": "Kostenkontrolle ist in unsere Integrationsarchitektur eingebaut. Wir implementieren harte Rate Limits pro Nutzer, cachen doppelte Anfragen und nutzen kleinere, günstigere Modelle (wie GPT-4o-mini) für einfache Routing-Aufgaben, während wir teure Modelle nur für komplexes Reasoning reservieren."
+          },
+          {
+            "question": "Müssen wir unseren gesamten Stack für KI auf Python umstellen?",
+            "answer": "Überhaupt nicht. Während das Kern-Ökosystem für Data Science sehr Python-lastig ist, ist die Integration stackunabhängig. Wir können KI-Microservices in Node.js, Go oder Java bauen, die über Standard-REST-APIs oder gRPC nahtlos mit Ihren bestehenden PHP-, .NET- oder Ruby-Anwendungen kommunizieren."
+          },
+          {
+            "question": "Wie lange dauert eine typische KI-Integration?",
+            "answer": "Das Hinzufügen eines spezifischen Features — wie eines KI-Zusammenfassers oder semantischer Suche — zu einer bestehenden App dauert meist 3–6 Wochen. Komplexe Enterprise-Integrationen, die tiefe Datenbanksynchronisation und strenge Sicherheitsvorgaben erfordern, dauern 2–3 Monate."
+          },
+          {
+            "question": "Können Sie KI in unser CRM wie Salesforce oder HubSpot integrieren?",
+            "answer": "Ja. Wir bauen maßgeschneiderte Middleware, die sich in die Webhooks Ihres CRMs einklinkt. Wenn beispielsweise ein neues Ticket in Zendesk oder Salesforce erstellt wird, kann unsere Integration es abfangen, KI nutzen, um das Sentiment zu analysieren und eine Antwort zu entwerfen, und diesen Entwurf für Ihre Agenten in das CRM pushen."
+          }
+        ],
+        "technologies": [
+          { "icon": "python", "name": "Python / FastAPI" },
+          { "icon": "nodedotjs", "name": "Node.js" },
+          { "icon": "redis", "name": "Redis" },
+          { "icon": "apachekafka", "name": "Apache Kafka" },
+          { "icon": "openai", "name": "OpenAI API" },
+          { "icon": "anthropic", "name": "Anthropic API" },
+          { "icon": "docker", "name": "Docker" },
+          { "icon": "amazonwebservices", "name": "AWS API Gateway" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "AI انٹیگریشن سروسز",
+      "shortDescription": "LLMs، پیشن گوئی کرنے والے ماڈلز اور کسٹم AI APIs کو اپنے موجودہ سافٹ ویئر میں بغیر کسی رکاوٹ کے شامل کریں، اور پرانی ایپلی کیشنز کو ذہین پلیٹ فارمز میں تبدیل کریں۔",
+      "fullDescription": "ایک بہترین AI ماڈل بنانا محض آدھا کام ہے؛ اسے کارکردگی کو متاثر کیے بغیر آپ کے موجودہ ٹیک اسٹیک (tech stack) میں ضم کرنا اصل پیچیدگی ہے۔ ہماری AI انٹیگریشن سروسز طاقتور مشین لرننگ ماڈلز اور LLMs (OpenAI، Claude، مقامی ماڈلز) کو براہ راست آپ کی ویب ایپس، موبائل ایپس اور انٹرپرائز سسٹمز (ERP, CRM) سے جوڑتی ہیں۔ ہم صرف ایک API کی (key) کاپی پیسٹ نہیں کرتے — ہم مضبوط مڈل ویئر آرکیٹیکچر ڈیزائن کرتے ہیں جو ریٹ لمیٹنگ، پرامپٹ کیشنگ، بیک گراؤنڈ کیو پروسیسنگ اور بیرونی AI سروسز کے ڈاؤن ہونے کی صورت میں متبادل (fallback) میکانزم کو سنبھالتا ہے۔ چاہے آپ کو پرانے SQL ڈیٹا بیس میں AI سرچ شامل کرنی ہو، اپنے ڈیش بورڈ میں سمارٹ سمری متعارف کرانی ہو، یا Kafka کے ذریعے ذہین نوٹیفیکیشنز بھیجنے ہوں، ہم آپ کے روزمرہ کے سافٹ ویئر آپریشنز اور جدید AI کے درمیان محفوظ پل بناتے ہیں۔",
+      "features": [
+        "LLM API انٹیگریشن (OpenAI, Anthropic, Gemini)",
+        "لیگیسی (Legacy) سسٹمز اور ERP/CRM AI انٹیگریشن",
+        "مڈل ویئر اور گیٹ وے آرکیٹیکچر",
+        "ریٹ لمیٹنگ (Rate Limiting) اور لاگت کا کنٹرول",
+        "پرامپٹ کیشنگ اور Redis انٹیگریشن",
+        "Asynchronous کیو پروسیسنگ (Kafka/RabbitMQ)",
+        "فال بیک (Fallback) اور ایرر ہینڈلنگ میکانزم",
+        "محفوظ ڈیٹا سینیٹائزیشن اور PII ماسکنگ"
+      ],
+      "benefits": [
+        "پرانے سافٹ ویئر کو شروع سے دوبارہ لکھے بغیر جدید بنائیں",
+        "اسمارٹ کیشنگ اور ریٹ لمیٹس کے ساتھ API کے اخراجات کو قابو میں رکھیں",
+        "تھرڈ پارٹی AI APIs ڈاؤن ہونے کے باوجود ایپ کے استحکام کو یقینی بنائیں",
+        "حساس کسٹمر ڈیٹا کو پبلک LLMs تک پہنچنے سے پہلے محفوظ بنائیں",
+        "UI کو منجمد کیے بغیر پس منظر میں بھاری AI کاموں پر کارروائی کریں",
+        "مصدقہ مڈل ویئر پیٹرنز استعمال کر کے پروڈکٹ کو تیزی سے مارکیٹ میں لائیں"
+      ],
+      "metaTitle": "AI انٹیگریشن سروسز | LLMs کو اپنی ایپس سے جوڑیں | PakSoft",
+      "metaDescription": "AI کو بغیر کسی رکاوٹ کے اپنے موجودہ سافٹ ویئر میں ضم کریں۔ ہم LLMs کو مربوط کرتے ہیں، مڈل ویئر بناتے ہیں اور پرانے سسٹمز کو ذہین خصوصیات سے آراستہ کرتے ہیں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "آرکیٹیکچر کا جائزہ",
+            "description": "ہم آپ کے موجودہ ٹیک اسٹیک، ڈیٹا بیس اور تھرڈ پارٹی ٹولز کا آڈٹ کرتے ہیں۔ ہم انٹیگریشن پوائنٹس کی نشاندہی کرتے ہیں جہاں AI سب سے زیادہ اہمیت کا حامل ہو سکتا ہے اور تاخیر (latency) جیسی سسٹمز کی حدود کا جائزہ لیتے ہیں۔"
+          },
+          {
+            "step": 2,
+            "title": "سیکیورٹی اور تعمیل (Compliance) کا جائزہ",
+            "description": "کسی بھی AI ماڈل میں ڈیٹا جانے سے پہلے، ہم سیکیورٹی گارڈریلز قائم کرتے ہیں۔ ہم PII ماسکنگ حکمت عملی ڈیزائن کرتے ہیں اور آپ کی رازداری کی ضروریات کے مطابق کلاؤڈ APIs یا سیلف ہوسٹڈ ماڈلز کے درمیان فیصلہ کرتے ہیں۔"
+          },
+          {
+            "step": 3,
+            "title": "مڈل ویئر ڈیولپمنٹ",
+            "description": "ہم انٹیگریشن لیئر بناتے ہیں—عام طور پر Node.js یا Python میں—جو آپ کی ایپ اور AI کے درمیان رابطے کا انتظام کرے گی۔ یہ لیئر دوبارہ کوششوں (retries)، فارمیٹنگ اور پرامپٹ کی تشکیل کو سنبھالتی ہے۔"
+          },
+          {
+            "step": 4,
+            "title": "کارکردگی کی بہتری",
+            "description": "AI APIs سست ہو سکتی ہیں۔ ہم بار بار کی جانے والی کوئریز کو کیش (cache) کرنے کے لیے Redis اور بھاری AI کاموں کو پس منظر میں چلانے کے لیے Kafka یا Celery جیسے میسج بروکرز نافذ کرتے ہیں۔"
+          },
+          {
+            "step": 5,
+            "title": "ٹیسٹنگ اور فال بیک کا نفاذ",
+            "description": "ہم بھاری بوجھ کے تحت انٹیگریشن کا ٹیسٹ کرتے ہیں اور API کے ڈاؤن ہونے کی نقل کرتے ہیں۔ ہم اس بات کو یقینی بناتے ہیں کہ اگر AI فراہم کنندہ ڈاؤن ہو جائے تو آپ کی ایپ مکمل طور پر کریش ہونے کے بجائے ایک حد تک کام کرتی رہے۔"
+          },
+          {
+            "step": 6,
+            "title": "ڈپلائمنٹ اور لاگت کی نگرانی",
+            "description": "ہم مربوط نظام کو تعینات کرتے ہیں اور حسب ضرورت ڈیش بورڈز ترتیب دیتے ہیں۔ آپ کو ریئل ٹائم میں API کی تاخیر، غلطی کی شرح، اور فی فیچر درست ٹوکن لاگت پر مکمل نظر رہے گی۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "بیرونی AI APIs استعمال کرتے وقت آپ حساس ڈیٹا کی حفاظت کیسے کرتے ہیں؟",
+            "answer": "ہم تکنیکوں کا امتزاج استعمال کرتے ہیں۔ سب سے پہلے، ہم مڈل ویئر میں PII سکربرز نافذ کرتے ہیں جو OpenAI یا Claude کو پرامپٹ بھیجنے سے پہلے نام، ای میل اور مالیاتی ڈیٹا ہٹا دیتے ہیں۔ اگر آپ کی انڈسٹری میں کلاؤڈ APIs منع ہیں، تو ہم اوپن سورس ماڈلز (جیسے Llama 3) کو مربوط کرتے ہیں جو آپ کے اپنے کلاؤڈ انفراسٹرکچر پر موجود ہوتے ہیں۔"
+          },
+          {
+            "question": "کیا AI شامل کرنے سے میری ایپلی کیشن سست ہو جائے گی؟",
+            "answer": "یہ ہو سکتا ہے، اگر غلط طریقے سے کیا جائے۔ LLM کے جوابات میں سیکنڈ لگتے ہیں، جو ایک ویب ایپ میں بہت طویل وقت محسوس ہوتا ہے۔ ہم اس مسئلے کو بھاری کاموں کے لیے (Celery یا BullMQ کے ذریعے) پس منظر کی جابز کا استعمال کر کے، فرنٹ اینڈ پر جوابات کی براہ راست سٹریمنگ (جیسے ChatGPT کرتا ہے) اور فوری جوابات کے لیے Redis کے ذریعے عام کوئریز کو کیش کر کے حل کرتے ہیں۔"
+          },
+          {
+            "question": "کیا آپ پرانے (Legacy) سسٹم میں AI ضم کر سکتے ہیں؟",
+            "answer": "جی ہاں۔ ہم اکثر جدید AI کو پرانے ERPs اور پرانے SQL ڈیٹا بیس میں ضم کرتے ہیں۔ ہم ایک جدید مائیکرو سروس (API گیٹ وے) بنا کر ایسا کرتے ہیں جو ایک پل کا کام کرتی ہے۔ پرانا سسٹم معیاری ویب ہکس یا REST کا استعمال کرتے ہوئے ہمارے پل سے بات کرتا ہے، اور ہمارا پل پیچیدہ AI آرکیسٹریشن کو سنبھالتا ہے۔"
+          },
+          {
+            "question": "اگر OpenAI یا Anthropic API ڈاؤن ہو جائے تو کیا ہوتا ہے؟",
+            "answer": "ہم ناکامی کے لیے بھی ڈیزائن کرتے ہیں۔ ہمارے مڈل ویئر میں وقفے کے ساتھ خودکار دوبارہ کوشش (automatic retries) شامل ہے۔ انتہائی اہم فیچرز کے لیے، ہم ملٹی پرووائیڈر فال بیک نافذ کرتے ہیں: اگر OpenAI ٹائم آؤٹ ہو جاتا ہے، تو سسٹم خود بخود درخواست کو Anthropic Claude یا متبادل مقامی ماڈل پر بھیج دیتا ہے۔"
+          },
+          {
+            "question": "ہم AI کے اخراجات کو بے قابو ہونے سے کیسے روک سکتے ہیں؟",
+            "answer": "لاگت کا کنٹرول ہمارے انٹیگریشن آرکیٹیکچر کا حصہ ہے۔ ہم فی صارف سخت ریٹ لمیٹس لاگو کرتے ہیں، ڈپلیکیٹ درخواستوں کو کیش کرتے ہیں تاکہ آپ ایک ہی جواب کے لیے دو بار ادائیگی نہ کریں، اور سادہ راؤٹنگ کاموں کے لیے چھوٹے، سستے ماڈلز (جیسے GPT-4o-mini) استعمال کرتے ہیں، جبکہ مہنگے ماڈلز صرف پیچیدہ کاموں کے لیے مخصوص رکھتے ہیں۔"
+          },
+          {
+            "question": "کیا ہمیں AI کے لیے اپنا پورا سافٹ ویئر اسٹیک Python پر منتقل کرنا ہوگا؟",
+            "answer": "بالکل نہیں۔ اگرچہ بنیادی AI ڈیٹا سائنس ایکو سسٹم Python پر بھاری ہے، انٹیگریشن اسٹیک سے آزاد ہے۔ ہم Node.js، Go، یا Java میں AI مائیکرو سروسز بنا سکتے ہیں جو معیاری REST APIs یا gRPC کے ذریعے آپ کے موجودہ PHP، .NET، یا Ruby ایپلی کیشنز کے ساتھ بغیر کسی رکاوٹ کے بات چیت کرتی ہیں۔"
+          },
+          {
+            "question": "عام AI انٹیگریشن میں کتنا وقت لگتا ہے؟",
+            "answer": "کسی موجودہ ایپ میں ایک مخصوص خصوصیت شامل کرنے میں—جیسے AI سمرائزر یا سیمینٹک سرچ—عام طور پر 3 سے 6 ہفتے لگتے ہیں۔ پیچیدہ انٹرپرائز انٹیگریشن جن کے لیے گہری ڈیٹا بیس سنکنگ، حسب ضرورت مڈل ویئر اور سخت حفاظتی تعمیل کی ضرورت ہوتی ہے، اس میں 2 سے 3 ماہ لگتے ہیں۔"
+          },
+          {
+            "question": "کیا آپ ہمارے CRM جیسے Salesforce یا HubSpot میں AI ضم کر سکتے ہیں؟",
+            "answer": "جی ہاں۔ ہم کسٹم مڈل ویئر بناتے ہیں جو آپ کے CRM کے ویب ہکس کے ساتھ جڑ جاتا ہے۔ مثال کے طور پر، جب Zendesk یا Salesforce میں کوئی نیا ٹکٹ بنتا ہے، تو ہماری انٹیگریشن اسے پکڑ سکتی ہے، جذبات کا تجزیہ کرنے اور جواب کا مسودہ تیار کرنے کے لیے AI کا استعمال کر سکتی ہے، اور وہ مسودہ آپ کے ایجنٹس کے لیے واپس CRM میں بھیج سکتی ہے۔"
+          }
+        ],
+        "technologies": [
+          { "icon": "python", "name": "Python / FastAPI" },
+          { "icon": "nodedotjs", "name": "Node.js" },
+          { "icon": "redis", "name": "Redis" },
+          { "icon": "apachekafka", "name": "Apache Kafka" },
+          { "icon": "openai", "name": "OpenAI API" },
+          { "icon": "anthropic", "name": "Anthropic API" },
+          { "icon": "docker", "name": "Docker" },
+          { "icon": "amazonwebservices", "name": "AWS API Gateway" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "خدمات دمج الذكاء الاصطناعي",
+      "shortDescription": "قم بتضمين نماذج اللغات الكبيرة (LLMs) والنماذج التنبؤية وواجهات الذكاء الاصطناعي المخصصة بسلاسة في برنامجك الحالي، لتحويل التطبيقات القديمة إلى منصات ذكية.",
+      "fullDescription": "إن بناء نموذج ذكاء اصطناعي رائع هو مجرد نصف المعركة؛ أما دمج هذا النموذج في مجموعة التكنولوجيا (Tech Stack) الخاصة بك دون التأثير على الأداء فهو يكمن فيه التعقيد الحقيقي. تقوم خدمات دمج الذكاء الاصطناعي لدينا بربط نماذج التعلم الآلي القوية ونماذج LLMs (OpenAI، Claude، النماذج المحلية) مباشرة بتطبيقات الويب وتطبيقات الهاتف المحمول وأنظمة المؤسسات (ERP, CRM) الخاصة بك. نحن لا نكتفي بنسخ ولصق مفتاح API — بل نصمم بنيات برمجيات وسيطة (Middleware) قوية تتعامل مع تحديد معدل الطلبات (Rate Limiting)، والتخزين المؤقت للمطالبات (Prompt Caching)، ومعالجة قوائم الانتظار في الخلفية، وآليات التراجع (Fallback) عندما تتعطل خدمات الذكاء الاصطناعي الخارجية. سواء كنت بحاجة إلى حقن بحث الذكاء الاصطناعي في قاعدة بيانات SQL قديمة، أو إضافة تلخيص ذكي إلى لوحة التحكم الخاصة بك، أو توجيه إشعارات ذكية عبر Kafka، فإننا نسد الفجوة بين أحدث تقنيات الذكاء الاصطناعي وعمليات البرامج اليومية الخاصة بك بشكل آمن.",
+      "features": [
+        "تكامل واجهات LLM (OpenAI, Anthropic, Gemini)",
+        "ربط الذكاء الاصطناعي بالأنظمة القديمة و ERP/CRM",
+        "هندسة البرمجيات الوسيطة (Middleware) والبوابات (Gateway)",
+        "منطق تحديد المعدل (Rate Limiting) والتحكم في التكلفة",
+        "التخزين المؤقت للمطالبات وتكامل Redis",
+        "معالجة قوائم الانتظار غير المتزامنة (Kafka/RabbitMQ)",
+        "آليات التراجع (Fallback) ومعالجة الأخطاء",
+        "تعقيم البيانات الآمن وإخفاء المعلومات الشخصية (PII)"
+      ],
+      "benefits": [
+        "تحديث البرامج القديمة دون إعادة كتابتها من الصفر",
+        "إبقاء تكاليف API متوقعة بفضل التخزين المؤقت الذكي وحدود المعدل",
+        "ضمان استقرار التطبيق حتى عند تعطل واجهات الذكاء الاصطناعي الخارجية",
+        "حماية بيانات العملاء الحساسة قبل وصولها إلى نماذج LLMs العامة",
+        "معالجة مهام الذكاء الاصطناعي الثقيلة في الخلفية دون تجميد واجهة المستخدم",
+        "تسريع وقت الوصول إلى السوق باستخدام أنماط البرمجيات الوسيطة المُثبتة"
+      ],
+      "metaTitle": "خدمات تكامل الذكاء الاصطناعي | ربط LLMs بتطبيقاتك | PakSoft",
+      "metaDescription": "ادمج الذكاء الاصطناعي بسلاسة في برنامجك الحالي. نقوم بربط نماذج LLMs، وبناء برمجيات وسيطة (Middleware) قوية، وتحديث الأنظمة القديمة.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "تقييم البنية المعمارية",
+            "description": "نقوم بمراجعة مجموعة التكنولوجيا الحالية الخاصة بك وقواعد البيانات وأدوات الطرف الثالث. نحدد نقاط التكامل حيث يمكن للذكاء الاصطناعي أن يضيف أكبر قيمة ونراجع قيود النظام مثل زمن الانتقال (Latency)."
+          },
+          {
+            "step": 2,
+            "title": "مراجعة الأمان والامتثال",
+            "description": "قبل تدفق أي بيانات إلى نموذج الذكاء الاصطناعي، نضع ضوابط الامتثال. نصمم استراتيجيات إخفاء المعلومات الشخصية (PII) ونقرر بين واجهات برمجة التطبيقات السحابية أو النماذج المستضافة ذاتياً لتلبية احتياجات خصوصية بياناتك."
+          },
+          {
+            "step": 3,
+            "title": "تطوير البرمجيات الوسيطة (Middleware)",
+            "description": "نبني طبقة التكامل — عادةً باستخدام Node.js أو Python — والتي ستدير الاتصال بين تطبيقك والذكاء الاصطناعي. تتعامل هذه الطبقة مع إعادة المحاولة، والتنسيق، وبناء المطالبات (Prompts)."
+          },
+          {
+            "step": 4,
+            "title": "تحسين الأداء",
+            "description": "يمكن أن تكون واجهات الذكاء الاصطناعي بطيئة. نطبق Redis لتخزين الاستعلامات المتكررة مؤقتاً، ووسطاء الرسائل مثل Kafka أو Celery لتشغيل مهام الذكاء الاصطناعي الثقيلة بشكل غير متزامن."
+          },
+          {
+            "step": 5,
+            "title": "الاختبار وتطبيق آليات التراجع",
+            "description": "نقوم باختبار ضغط التكامل تحت حمولة عالية ومحاكاة انقطاعات API. نضمن أنه في حال تعطل مزود الذكاء الاصطناعي، سيستمر تطبيقك في العمل بشكل جزئي بدلاً من الانهيار التام."
+          },
+          {
+            "step": 6,
+            "title": "النشر ومراقبة التكاليف",
+            "description": "ننشر النظام المتكامل ونقوم بإعداد لوحات تحكم مخصصة. ستحصل على رؤية كاملة في الوقت الفعلي لزمن انتقال API، ومعدلات الخطأ، وتكاليف Tokens الدقيقة لكل ميزة."
+          }
+        ],
+        "faq": [
+          {
+            "question": "كيف تحمون البيانات الحساسة عند استخدام واجهات الذكاء الاصطناعي الخارجية؟",
+            "answer": "نستخدم مزيجاً من التقنيات. أولاً، نقوم بتنفيذ أدوات تنظيف المعلومات الشخصية (PII) في البرمجيات الوسيطة التي تزيل الأسماء ورسائل البريد الإلكتروني والبيانات المالية قبل إرسال المطالبات إلى OpenAI أو Claude. إذا كانت صناعتك تمنع تماماً واجهات برمجة التطبيقات السحابية، نقوم بدمج نماذج مفتوحة المصدر (مثل Llama 3) المستضافة على بنيتك التحتية السحابية الآمنة."
+          },
+          {
+            "question": "هل ستؤدي إضافة الذكاء الاصطناعي إلى إبطاء تطبيقي؟",
+            "answer": "يمكن أن يحدث ذلك إذا تم بشكل خاطئ. تستغرق استجابات LLM ثواني، وهو ما يبدو وكأنه دهر في تطبيق ويب. نحن نحل هذه المشكلة باستخدام مهام خلفية غير متزامنة (عبر Celery أو BullMQ) للمهام الثقيلة، وبث الاستجابات مباشرة إلى الواجهة الأمامية (كما يفعل ChatGPT)، وتخزين الاستعلامات المتطابقة المتكررة مؤقتاً باستخدام Redis لتوفير إجابات فورية."
+          },
+          {
+            "question": "هل يمكنك دمج الذكاء الاصطناعي في نظام قديم (Legacy)؟",
+            "answer": "نعم. نقوم بشكل متكرر بدمج الذكاء الاصطناعي الحديث في أنظمة ERP القديمة وقواعد بيانات SQL القديمة. نقوم بذلك من خلال بناء خدمة مصغرة (API Gateway) حديثة تعمل كجسر. يتواصل النظام القديم مع الجسر باستخدام خطافات الويب (Webhooks) القياسية أو REST، ويتولى جسرنا إدارة تنسيق الذكاء الاصطناعي المعقد."
+          },
+          {
+            "question": "ماذا يحدث إذا تعطلت واجهة OpenAI أو Anthropic؟",
+            "answer": "نحن نصمم النظام ليتعامل مع الفشل. تتضمن البرمجيات الوسيطة الخاصة بنا إعادة محاولة تلقائية مع تأخير متزايد. بالنسبة للميزات الحرجة، نطبق آليات تراجع (Fallbacks) متعددة المزودين: إذا انتهت مهلة OpenAI، يوجه النظام الطلب تلقائياً إلى Anthropic Claude أو نموذج محلي احتياطي لضمان خدمة دون انقطاع."
+          },
+          {
+            "question": "كيف نوقف تكاليف الذكاء الاصطناعي من الخروج عن نطاق السيطرة؟",
+            "answer": "التحكم في التكلفة مدمج في بنية التكامل الخاصة بنا. نطبق حدود معدل (Rate limits) صارمة لكل مستخدم، ونخزن الطلبات المكررة مؤقتاً حتى لا تدفع مرتين مقابل الإجابة نفسها، ونستخدم نماذج أصغر وأرخص (مثل GPT-4o-mini) لمهام التوجيه البسيطة، مع الاحتفاظ بالنماذج باهظة الثمن فقط للاستدلال المعقد."
+          },
+          {
+            "question": "هل نحتاج إلى تبديل مجموعتنا البرمجية (Stack) بالكامل إلى Python من أجل الذكاء الاصطناعي؟",
+            "answer": "على الإطلاق. في حين أن نظام علوم البيانات الأساسي للذكاء الاصطناعي والتعلم الآلي يعتمد بشكل كبير على Python، فإن التكامل مستقل عن التكنولوجيا. يمكننا بناء خدمات مصغرة للذكاء الاصطناعي بلغة Node.js أو Go أو Java تتواصل بسلاسة مع تطبيقات PHP أو .NET أو Ruby الحالية عبر واجهات REST القياسية أو gRPC."
+          },
+          {
+            "question": "كم من الوقت يستغرق تكامل الذكاء الاصطناعي النموذجي؟",
+            "answer": "عادة ما تستغرق إضافة ميزة معينة — مثل ملخص الذكاء الاصطناعي أو البحث الدلالي — إلى تطبيق موجود من 3 إلى 6 أسابيع. أما تكاملات المؤسسات المعقدة التي تتطلب مزامنة قاعدة بيانات عميقة، وبرمجيات وسيطة مخصصة، وامتثالاً أمنياً صارماً فتستغرق من 2 إلى 3 أشهر."
+          },
+          {
+            "question": "هل يمكنكم دمج الذكاء الاصطناعي في نظام CRM مثل Salesforce أو HubSpot؟",
+            "answer": "نعم. نبني برمجيات وسيطة مخصصة ترتبط بخطافات الويب (Webhooks) الخاصة بنظام CRM لديك. على سبيل المثال، عند إنشاء تذكرة جديدة في Zendesk أو Salesforce، يمكن للتكامل الخاص بنا اعتراضها، واستخدام الذكاء الاصطناعي لتحليل المشاعر وصياغة رد، ودفع تلك المسودة مرة أخرى إلى CRM للوكلاء لديك."
+          }
+        ],
+        "technologies": [
+          { "icon": "python", "name": "Python / FastAPI" },
+          { "icon": "nodedotjs", "name": "Node.js" },
+          { "icon": "redis", "name": "Redis" },
+          { "icon": "apachekafka", "name": "Apache Kafka" },
+          { "icon": "openai", "name": "OpenAI API" },
+          { "icon": "anthropic", "name": "Anthropic API" },
+          { "icon": "docker", "name": "Docker" },
+          { "icon": "amazonwebservices", "name": "AWS API Gateway" }
+        ]
+      }
+    }
+  },
+  "ai-poc-mvp": {
+    "en": {
+      "name": "AI Proof of Concept (PoC) & MVP",
+      "shortDescription": "Validate your AI ideas quickly and cost-effectively. We build functional AI Proof of Concepts and MVPs in 4-6 weeks to prove technical feasibility before you commit to full-scale development.",
+      "fullDescription": "Investing in enterprise AI without validating the core assumptions is a fast way to burn budget. Our AI Proof of Concept (PoC) and Minimum Viable Product (MVP) service is designed to de-risk your AI initiatives. In just 4 to 6 weeks, we take your idea—whether it's an internal knowledge assistant, a predictive pricing model, or an automated workflow—and build a working prototype using your actual data. We don't just build a toy app; we establish the baseline accuracy, latency, and operational cost metrics required for production. If the PoC succeeds, you have a concrete MVP to show stakeholders and secure funding. If it fails, you've saved months of wasted development time. We focus on speed, measurable outcomes, and answering the critical question: 'Will this AI actually solve our business problem?'",
+      "features": [
+        "Rapid Prototyping (4-6 Weeks)",
+        "Technical Feasibility Assessment",
+        "Real Data Integration & Testing",
+        "Performance & Accuracy Benchmarking",
+        "Cost Estimation for Production",
+        "User Interface & Flow Mockups",
+        "Interactive Stakeholder Demos",
+        "Go/No-Go Decision Framework"
+      ],
+      "benefits": [
+        "Prove AI feasibility before committing large budgets",
+        "Get a working prototype in stakeholders' hands in weeks",
+        "Discover data quality issues early in the process",
+        "Establish accurate API cost and latency estimates",
+        "Fail fast and cheaply if an idea is not technically viable",
+        "Create a clear roadmap for the final production build"
+      ],
+      "metaTitle": "AI PoC & MVP Development Services | Rapid Prototyping | PakSoft",
+      "metaDescription": "Validate AI ideas quickly with a Proof of Concept or MVP. We build functional AI prototypes in 4-6 weeks to prove ROI and technical feasibility.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Use Case Definition",
+            "description": "We narrow down your vision to a single, testable hypothesis. We define exactly what the PoC needs to achieve (e.g., 85% accuracy in ticket classification) to be considered a success."
+          },
+          {
+            "step": 2,
+            "title": "Data Audit & Preparation",
+            "description": "AI is only as good as its data. We request a sample of your actual data (documents, database exports) and clean it to ensure it's suitable for the prototype model."
+          },
+          {
+            "step": 3,
+            "title": "Rapid Model Prototyping",
+            "description": "We build the core AI logic using off-the-shelf APIs (like OpenAI) or pre-trained open-source models (like Hugging Face) to move fast. The focus is on functionality over perfect optimization."
+          },
+          {
+            "step": 4,
+            "title": "UI / Interface Implementation",
+            "description": "A PoC needs to be tangible. We build a lightweight interface—often using Streamlit, Gradio, or Next.js—so non-technical stakeholders can interact with the AI directly."
+          },
+          {
+            "step": 5,
+            "title": "Benchmarking & Evaluation",
+            "description": "We test the prototype against the success criteria defined in Step 1. We measure the AI's accuracy, response time, and the token cost per interaction."
+          },
+          {
+            "step": 6,
+            "title": "Review & Production Roadmap",
+            "description": "We present the working MVP alongside an executive report. We provide a definitive Go/No-Go recommendation and a detailed roadmap and budget for the production-grade application."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is the difference between a PoC and an MVP?",
+            "answer": "A Proof of Concept (PoC) is built to verify technical feasibility—proving that the AI can actually solve the specific problem with your data. A Minimum Viable Product (MVP) goes a step further; it is a basic but polished version of the product that can be released to a small group of actual users to validate business value."
+          },
+          {
+            "question": "How long does an AI PoC take?",
+            "answer": "We strictly timebox our PoCs to 4–6 weeks. This constraint forces us to focus purely on the core AI hypothesis without getting distracted by unnecessary features. If it takes longer than 6 weeks, it's a project, not a PoC."
+          },
+          {
+            "question": "What do we need to provide to start?",
+            "answer": "The most important asset is your data. We need a representative sample of the data the AI will encounter in production (e.g., 500 past customer emails, a set of product PDFs, or historical sales data). We also need access to domain experts in your team who can judge the quality of the AI's output."
+          },
+          {
+            "question": "Will you build the PoC from scratch or use APIs?",
+            "answer": "For speed and cost-efficiency, we almost always use managed APIs (like OpenAI, Anthropic, or AWS AI Services) during the PoC phase. The goal is to prove the concept works. Once proven, we can discuss training custom open-source models for the final production version to reduce costs or increase privacy."
+          },
+          {
+            "question": "What happens if the PoC fails?",
+            "answer": "A 'failed' PoC is actually a successful outcome—it prevents you from spending hundreds of thousands of dollars on a full product that wouldn't have worked. We provide a detailed autopsy explaining why it failed (usually due to poor data quality or current limitations in AI reasoning) so you can adjust your strategy."
+          },
+          {
+            "question": "Can the PoC code be used for the final production product?",
+            "answer": "Parts of it, yes. The prompt engineering, evaluation metrics, and core logic often transfer. However, PoCs are built for speed, often using tools like Streamlit. For production, we will rewrite the backend into a robust microservice (FastAPI/Node.js) and implement proper security, caching, and rate-limiting."
+          },
+          {
+            "question": "Do we own the intellectual property of the MVP?",
+            "answer": "Yes. Upon completion and full payment of the PoC/MVP phase, you retain full ownership of the custom code, prompts, architectures, and fine-tuned models we develop specifically for your project."
+          },
+          {
+            "question": "How do you measure if the AI is accurate enough?",
+            "answer": "We define 'ground truth' datasets during Step 1. We run the AI against this dataset and score it using metrics like Precision, Recall, or LLM-as-a-judge frameworks. We don't rely on 'it looks good'; we provide hard statistical evidence of the AI's performance."
+          }
+        ],
+        "technologies": [
+          { "icon": "python", "name": "Python" },
+          { "icon": "streamlit", "name": "Streamlit" },
+          { "icon": "jupyter", "name": "Jupyter Notebooks" },
+          { "icon": "openai", "name": "OpenAI API" },
+          { "icon": "huggingface", "name": "Hugging Face" },
+          { "icon": "react", "name": "React / Next.js" },
+          { "icon": "vercel", "name": "Vercel" },
+          { "icon": "googlecloud", "name": "Google Colab" }
+        ]
+      }
+    },
+    "tr": {
+      "name": "Yapay Zeka PoC ve MVP",
+      "shortDescription": "Yapay zeka fikirlerinizi hızlı ve uygun maliyetli bir şekilde doğrulayın. Büyük ölçekli geliştirmeye girmeden önce teknik fizibiliteyi kanıtlamak için 4-6 hafta içinde işlevsel Yapay Zeka Kavram Kanıtlama (PoC) ve MVP'ler (Minimum Uygulanabilir Ürün) oluşturuyoruz.",
+      "fullDescription": "Temel varsayımları doğrulamadan kurumsal yapay zekaya yatırım yapmak, bütçeyi yakmanın en hızlı yoludur. Yapay Zeka Kavram Kanıtlama (PoC) ve Minimum Uygulanabilir Ürün (MVP) hizmetimiz, yapay zeka girişimlerinizin riskini azaltmak için tasarlanmıştır. Sadece 4 ila 6 hafta içinde; ister dahili bir bilgi asistanı, ister tahmine dayalı bir fiyatlandırma modeli veya otomatik bir iş akışı olsun, fikrinizi alıyor ve gerçek verilerinizi kullanarak çalışan bir prototip oluşturuyoruz. Biz sadece basit bir uygulama oluşturmuyoruz; üretim için gereken temel doğruluğu, gecikmeyi (latency) ve operasyonel maliyet metriklerini oluşturuyoruz. PoC başarılı olursa, paydaşlara göstermek ve fon sağlamak için somut bir MVP'niz olur. Başarısız olursa, aylar sürecek boşa giden geliştirme süresinden tasarruf etmiş olursunuz. Hıza, ölçülebilir sonuçlara ve şu kritik soruyu yanıtlamaya odaklanıyoruz: 'Bu yapay zeka gerçekten iş problemimizi çözecek mi?'",
+      "features": [
+        "Hızlı Prototipleme (4-6 Hafta)",
+        "Teknik Fizibilite Değerlendirmesi",
+        "Gerçek Veri Entegrasyonu ve Testi",
+        "Performans ve Doğruluk Kıyaslaması (Benchmarking)",
+        "Üretim Ortamı İçin Maliyet Tahmini",
+        "Kullanıcı Arayüzü ve Akış Tasarımları (Mockups)",
+        "Etkileşimli Paydaş Demoları",
+        "Devam/Tamam (Go/No-Go) Karar Çerçevesi"
+      ],
+      "benefits": [
+        "Büyük bütçeler ayırmadan önce yapay zekanın uygulanabilirliğini kanıtlayın",
+        "Haftalar içinde paydaşların eline çalışan bir prototip verin",
+        "Veri kalitesi sorunlarını sürecin erken safhalarında keşfedin",
+        "Doğru API maliyeti ve gecikme (latency) tahminleri oluşturun",
+        "Bir fikir teknik olarak uygulanabilir değilse hızlı ve ucuza başarısız olun",
+        "Nihai üretim yapısı için net bir yol haritası oluşturun"
+      ],
+      "metaTitle": "Yapay Zeka PoC ve MVP Geliştirme | Hızlı Prototipleme | PakSoft",
+      "metaDescription": "Yapay zeka fikirlerinizi PoC veya MVP ile hızlıca doğrulayın. Yatırım getirisini ve fizibiliteyi kanıtlamak için 4-6 haftada çalışan prototipler oluşturuyoruz.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Kullanım Senaryosu (Use Case) Tanımlama",
+            "description": "Vizyonunuzu test edilebilir tek bir hipoteze indirgiyoruz. Başarılı sayılması için PoC'nin tam olarak neyi başarması gerektiğini (örn. destek talebi sınıflandırmasında %85 doğruluk) tanımlıyoruz."
+          },
+          {
+            "step": 2,
+            "title": "Veri Denetimi ve Hazırlığı",
+            "description": "Yapay zeka, ancak verileri kadar iyidir. Gerçek verilerinizden (belgeler, veritabanı çıktıları) bir örneklem istiyor ve prototip modeline uygun hale getirmek için onu temizliyoruz."
+          },
+          {
+            "step": 3,
+            "title": "Hızlı Model Prototipleme",
+            "description": "Hızlı hareket etmek için OpenAI gibi hazır API'leri veya Hugging Face gibi önceden eğitilmiş açık kaynaklı modelleri kullanarak çekirdek yapay zeka mantığını oluşturuyoruz. Odak noktamız kusursuz optimizasyon değil, işlevselliktir."
+          },
+          {
+            "step": 4,
+            "title": "Kullanıcı Arayüzü (UI) Uygulaması",
+            "description": "Bir PoC'nin somut olması gerekir. Teknik olmayan paydaşların yapay zeka ile doğrudan etkileşime girebilmesi için -genellikle Streamlit, Gradio veya Next.js kullanarak- hafif bir arayüz oluşturuyoruz."
+          },
+          {
+            "step": 5,
+            "title": "Kıyaslama ve Değerlendirme",
+            "description": "Prototipi, 1. Adımda tanımlanan başarı kriterlerine karşı test ediyoruz. Yapay zekanın doğruluğunu, yanıt süresini ve etkileşim başına token maliyetini ölçüyoruz."
+          },
+          {
+            "step": 6,
+            "title": "İnceleme ve Üretim Yol Haritası",
+            "description": "Çalışan MVP'yi yönetici özeti içeren bir raporla sunuyoruz. Kesin bir Devam/Tamam (Go/No-Go) tavsiyesi ve üretime hazır uygulama için ayrıntılı bir yol haritası ile bütçe sunuyoruz."
+          }
+        ],
+        "faq": [
+          {
+            "question": "PoC (Kavram Kanıtı) ile MVP (Minimum Uygulanabilir Ürün) arasındaki fark nedir?",
+            "answer": "Bir Kavram Kanıtı (PoC), teknik fizibiliteyi doğrulamak için oluşturulur - yapay zekanın söz konusu sorunu verilerinizle gerçekten çözebileceğini kanıtlar. Bir Minimum Uygulanabilir Ürün (MVP) ise bir adım daha ileri gider; iş değerini doğrulamak için gerçek kullanıcılardan oluşan küçük bir gruba sunulabilecek, ürünün temel ama derli toplu bir versiyonudur."
+          },
+          {
+            "question": "Bir yapay zeka PoC'si ne kadar sürer?",
+            "answer": "PoC'lerimizi kesinlikle 4-6 hafta ile sınırlandırıyoruz. Bu kısıtlama, bizi gereksiz özelliklerle dikkatimizi dağıtmadan tamamen temel yapay zeka hipotezine odaklanmaya zorlar. Eğer 6 haftadan uzun sürüyorsa, o artık bir PoC değil, tam teşekküllü bir projedir."
+          },
+          {
+            "question": "Başlamak için ne sağlamamız gerekiyor?",
+            "answer": "En önemli varlık verilerinizdir. Yapay zekanın üretimde karşılaşacağı verilerin temsil edici bir örneğine ihtiyacımız var (örn. geçmiş 500 müşteri e-postası, ürün PDF'leri veya geçmiş satış verileri). Ayrıca, yapay zeka çıktısının kalitesini değerlendirebilecek ekibinizdeki alan uzmanlarına erişime de ihtiyacımız var."
+          },
+          {
+            "question": "PoC'yi sıfırdan mı yoksa API'leri kullanarak mı oluşturacaksınız?",
+            "answer": "Hız ve maliyet verimliliği için, PoC aşamasında neredeyse her zaman yönetilen API'leri (OpenAI, Anthropic veya AWS AI Services gibi) kullanırız. Amaç, kavramın işe yaradığını kanıtlamaktır. Kanıtlandıktan sonra, maliyetleri düşürmek veya gizliliği artırmak için nihai üretim sürümünde özel açık kaynaklı modeller eğitmeyi tartışabiliriz."
+          },
+          {
+            "question": "PoC başarısız olursa ne olur?",
+            "answer": "'Başarısız' bir PoC aslında başarılı bir sonuçtur; sizi işe yaramayacak tam bir ürün için yüz binlerce dolar harcamaktan kurtarır. Stratejinizi ayarlayabilmeniz için neden başarısız olduğunu (genellikle düşük veri kalitesi veya yapay zeka muhakemesindeki mevcut sınırlamalar nedeniyle) açıklayan ayrıntılı bir otopsi raporu sunarız."
+          },
+          {
+            "question": "PoC kodları nihai üretim ürününde kullanılabilir mi?",
+            "answer": "Bir kısmı evet. Prompt mühendisliği, değerlendirme metrikleri ve çekirdek mantık genellikle aktarılır. Ancak PoC'ler, genellikle Streamlit gibi araçlar kullanılarak hız için oluşturulur. Üretim ortamı (production) için, arka ucu (backend) sağlam bir mikro hizmet (FastAPI/Node.js) olarak yeniden yazacak ve uygun güvenlik, önbelleğe alma ve hız sınırlaması uygulayacağız."
+          },
+          {
+            "question": "MVP'nin fikri mülkiyetine (IP) biz mi sahip oluyoruz?",
+            "answer": "Evet. PoC/MVP aşamasının tamamlanması ve tam ödemesinin ardından; projeniz için özel olarak geliştirdiğimiz kod, promptlar, mimariler ve fine-tune edilmiş modellerin tam mülkiyetini elinizde tutarsınız."
+          },
+          {
+            "question": "Yapay zekanın yeterince doğru ölçüm yapıp yapmadığını nasıl ölçüyorsunuz?",
+            "answer": "1. Adımda 'kesin gerçeklik' (ground truth) veri setlerini tanımlıyoruz. Yapay zekayı bu veri seti üzerinde çalıştırıyor ve Precision (Kesinlik), Recall (Duyarlılık) veya LLM-as-a-judge (Hakem olarak LLM) çerçeveleri gibi metrikleri kullanarak puanlıyoruz. 'İyi görünüyor' hissine güvenmiyoruz; yapay zekanın performansına dair kesin istatistiksel kanıtlar sunuyoruz."
+          }
+        ],
+        "technologies": [
+          { "icon": "python", "name": "Python" },
+          { "icon": "streamlit", "name": "Streamlit" },
+          { "icon": "jupyter", "name": "Jupyter Notebooks" },
+          { "icon": "openai", "name": "OpenAI API" },
+          { "icon": "huggingface", "name": "Hugging Face" },
+          { "icon": "react", "name": "React / Next.js" },
+          { "icon": "vercel", "name": "Vercel" },
+          { "icon": "googlecloud", "name": "Google Colab" }
+        ]
+      }
+    },
+    "de": {
+      "name": "KI PoC & MVP",
+      "shortDescription": "Validieren Sie Ihre KI-Ideen schnell und kosteneffizient. Wir bauen funktionale KI Proof of Concepts und MVPs in 4-6 Wochen, um die technische Machbarkeit zu beweisen, bevor Sie in die vollständige Entwicklung investieren.",
+      "fullDescription": "In Enterprise-KI zu investieren, ohne die Kernannahmen zu validieren, verbrennt schnell Budget. Unser KI Proof of Concept (PoC) und Minimum Viable Product (MVP) Service minimiert das Risiko Ihrer KI-Initiativen. In nur 4 bis 6 Wochen nehmen wir Ihre Idee — sei es ein interner Wissensassistent, ein prädiktives Preismodell oder ein automatisierter Workflow — und bauen einen funktionierenden Prototyp mit Ihren echten Daten. Wir bauen nicht nur eine Spielzeug-App; wir etablieren die Basislinien für Genauigkeit, Latenz und Betriebskosten, die für die Produktion erforderlich sind. Wenn der PoC erfolgreich ist, haben Sie ein konkretes MVP, um es Stakeholdern zu zeigen und Budgets zu sichern. Wenn er scheitert, haben Sie monatelange, verschwendete Entwicklungszeit gespart. Wir fokussieren uns auf Geschwindigkeit, messbare Ergebnisse und die Beantwortung der kritischen Frage: 'Wird diese KI unser Geschäftsproblem wirklich lösen?'",
+      "features": [
+        "Rapid Prototyping (4-6 Wochen)",
+        "Bewertung der technischen Machbarkeit",
+        "Integration & Tests mit echten Daten",
+        "Performance- & Genauigkeits-Benchmarking",
+        "Kostenschätzung für den Produktionsbetrieb",
+        "Benutzeroberflächen- & Workflow-Mockups",
+        "Interaktive Stakeholder-Demos",
+        "Go/No-Go Entscheidungsrahmen"
+      ],
+      "benefits": [
+        "Beweisen Sie die Machbarkeit der KI vor hohen Budgetfreigaben",
+        "Geben Sie Stakeholdern in Wochen einen funktionierenden Prototyp",
+        "Entdecken Sie Probleme mit der Datenqualität früh im Prozess",
+        "Ermitteln Sie genaue Schätzungen für API-Kosten und Latenzen",
+        "Scheitern Sie schnell und günstig, falls eine Idee technisch nicht machbar ist",
+        "Erstellen Sie eine klare Roadmap für den finalen Produktionsbau"
+      ],
+      "metaTitle": "KI PoC & MVP Entwicklungsdienste | PakSoft",
+      "metaDescription": "Validieren Sie KI-Ideen schnell mit einem PoC oder MVP. Wir bauen funktionale KI-Prototypen in 4-6 Wochen, um ROI und technische Machbarkeit zu beweisen.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "Use-Case-Definition",
+            "description": "Wir reduzieren Ihre Vision auf eine einzige, testbare Hypothese. Wir definieren exakt, was der PoC erreichen muss (z. B. 85 % Genauigkeit bei der Ticketklassifizierung), um als Erfolg zu gelten."
+          },
+          {
+            "step": 2,
+            "title": "Daten-Audit & Vorbereitung",
+            "description": "Eine KI ist nur so gut wie ihre Daten. Wir fordern eine Stichprobe Ihrer tatsächlichen Daten an (Dokumente, Datenbankexporte) und bereinigen sie, um sie für das Prototyp-Modell nutzbar zu machen."
+          },
+          {
+            "step": 3,
+            "title": "Rapid Model Prototyping",
+            "description": "Wir bauen die Kern-KI-Logik mit Standard-APIs (wie OpenAI) oder vortrainierten Open-Source-Modellen (wie Hugging Face), um schnell voranzukommen. Der Fokus liegt auf Funktionalität statt perfekter Optimierung."
+          },
+          {
+            "step": 4,
+            "title": "UI- / Schnittstellen-Implementierung",
+            "description": "Ein PoC muss greifbar sein. Wir bauen eine schlanke Oberfläche — oft mit Streamlit, Gradio oder Next.js —, damit nicht-technische Stakeholder direkt mit der KI interagieren können."
+          },
+          {
+            "step": 5,
+            "title": "Benchmarking & Evaluation",
+            "description": "Wir testen den Prototyp gegen die in Schritt 1 definierten Erfolgskriterien. Wir messen die Genauigkeit der KI, die Antwortzeit und die Token-Kosten pro Interaktion."
+          },
+          {
+            "step": 6,
+            "title": "Review & Produktions-Roadmap",
+            "description": "Wir präsentieren das funktionierende MVP zusammen mit einem Executive Report. Wir geben eine definitive Go/No-Go-Empfehlung sowie eine detaillierte Roadmap und ein Budget für die produktionsreife Applikation."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Was ist der Unterschied zwischen einem PoC und einem MVP?",
+            "answer": "Ein Proof of Concept (PoC) wird gebaut, um die technische Machbarkeit zu überprüfen — um zu beweisen, dass die KI das spezifische Problem mit Ihren Daten tatsächlich lösen kann. Ein Minimum Viable Product (MVP) geht einen Schritt weiter; es ist eine grundlegende, aber polierte Version des Produkts, die einer kleinen Gruppe echter Nutzer bereitgestellt werden kann, um den Geschäftswert zu validieren."
+          },
+          {
+            "question": "Wie lange dauert ein KI PoC?",
+            "answer": "Wir beschränken unsere PoCs strikt auf 4–6 Wochen. Diese Beschränkung zwingt uns, uns rein auf die Kern-KI-Hypothese zu konzentrieren, ohne uns von unnötigen Features ablenken zu lassen. Dauert es länger als 6 Wochen, ist es ein Projekt, kein PoC mehr."
+          },
+          {
+            "question": "Was müssen wir bereitstellen, um zu starten?",
+            "answer": "Das wichtigste Asset sind Ihre Daten. Wir benötigen eine repräsentative Stichprobe der Daten, denen die KI in der Produktion begegnen wird (z. B. 500 vergangene Kunden-E-Mails, eine Reihe von Produkt-PDFs oder historische Verkaufsdaten). Wir brauchen auch Zugang zu Fachexperten in Ihrem Team, die die Qualität des KI-Outputs beurteilen können."
+          },
+          {
+            "question": "Bauen Sie den PoC von Grund auf neu oder nutzen Sie APIs?",
+            "answer": "Aus Gründen der Geschwindigkeit und Kosteneffizienz nutzen wir in der PoC-Phase fast immer verwaltete APIs (wie OpenAI, Anthropic oder AWS AI Services). Das Ziel ist es, zu beweisen, dass das Konzept funktioniert. Sobald dies bewiesen ist, können wir über das Training maßgeschneiderter Open-Source-Modelle für die finale Produktionsversion sprechen, um Kosten zu senken oder den Datenschutz zu erhöhen."
+          },
+          {
+            "question": "Was passiert, wenn der PoC scheitert?",
+            "answer": "Ein 'gescheiterter' PoC ist tatsächlich ein erfolgreiches Ergebnis — er verhindert, dass Sie Hunderttausende von Dollar für ein komplettes Produkt ausgeben, das nicht funktioniert hätte. Wir liefern eine detaillierte Autopsie, die erklärt, warum er gescheitert ist (meist wegen schlechter Datenqualität oder aktueller Grenzen im KI-Reasoning), damit Sie Ihre Strategie anpassen können."
+          },
+          {
+            "question": "Kann der PoC-Code für das finale Produktionsprodukt verwendet werden?",
+            "answer": "In Teilen, ja. Das Prompt-Engineering, die Evaluationsmetriken und die Kernlogik lassen sich oft übertragen. PoCs sind jedoch auf Geschwindigkeit ausgelegt und nutzen oft Tools wie Streamlit. Für die Produktion werden wir das Backend in einen robusten Microservice (FastAPI/Node.js) umschreiben und ordnungsgemäße Sicherheit, Caching und Rate-Limiting implementieren."
+          },
+          {
+            "question": "Gehört uns das geistige Eigentum (IP) des MVP?",
+            "answer": "Ja. Nach Abschluss und vollständiger Bezahlung der PoC/MVP-Phase behalten Sie das volle Eigentum an dem benutzerdefinierten Code, den Prompts, Architekturen und den fine-getunten Modellen, die wir speziell für Ihr Projekt entwickelt haben."
+          },
+          {
+            "question": "Wie messen Sie, ob die KI genau genug ist?",
+            "answer": "Wir definieren in Schritt 1 'Ground Truth'-Datensätze. Wir lassen die KI gegen diesen Datensatz laufen und bewerten sie anhand von Metriken wie Precision, Recall oder LLM-as-a-judge-Frameworks. Wir verlassen uns nicht auf 'es sieht gut aus'; wir liefern harte statistische Beweise für die Leistung der KI."
+          }
+        ],
+        "technologies": [
+          { "icon": "python", "name": "Python" },
+          { "icon": "streamlit", "name": "Streamlit" },
+          { "icon": "jupyter", "name": "Jupyter Notebooks" },
+          { "icon": "openai", "name": "OpenAI API" },
+          { "icon": "huggingface", "name": "Hugging Face" },
+          { "icon": "react", "name": "React / Next.js" },
+          { "icon": "vercel", "name": "Vercel" },
+          { "icon": "googlecloud", "name": "Google Colab" }
+        ]
+      }
+    },
+    "ur": {
+      "name": "AI کا تصوراتی ثبوت (PoC) اور MVP",
+      "shortDescription": "اپنے AI آئیڈیاز کی تیزی سے اور کم لاگت میں توثیق کریں۔ ہم 4-6 ہفتوں میں فنکشنل AI PoC اور MVPs بناتے ہیں تاکہ بڑے پیمانے پر ڈیولپمنٹ شروع کرنے سے پہلے تکنیکی فزیبلٹی ثابت کی جا سکے۔",
+      "fullDescription": "بنیادی مفروضوں کی تصدیق کیے بغیر انٹرپرائز AI میں سرمایہ کاری کرنا بجٹ جلانے کا تیز ترین طریقہ ہے۔ ہماری AI پروف آف کانسیپٹ (PoC) اور منیمم وائبل پروڈکٹ (MVP) سروس آپ کے AI منصوبوں کے خطرات کو کم کرنے کے لیے ڈیزائن کی گئی ہے۔ صرف 4 سے 6 ہفتوں میں، ہم آپ کا آئیڈیا لیتے ہیں—چاہے وہ اندرونی نالج اسسٹنٹ ہو، پیشن گوئی کا ماڈل ہو، یا کوئی خودکار ورک فلو—اور آپ کے اصل ڈیٹا کا استعمال کرتے ہوئے ایک کام کرنے والا پروٹو ٹائپ بناتے ہیں۔ ہم صرف ایک کھلونے جیسی ایپ نہیں بناتے؛ ہم پیداوار کے لیے درکار بنیادی درستگی، تاخیر (latency) اور آپریشنل لاگت کے معیارات قائم کرتے ہیں۔ اگر PoC کامیاب ہو جاتا ہے، تو آپ کے پاس اسٹیک ہولڈرز کو دکھانے اور فنڈنگ حاصل کرنے کے لیے ایک ٹھوس MVP ہوتا ہے۔ اگر یہ ناکام ہو جاتا ہے، تو آپ مہینوں کے ضائع ہونے والے ڈیولپمنٹ کے وقت کو بچا لیتے ہیں۔ ہم رفتار، قابلِ پیمائش نتائج اور اس اہم سوال کا جواب دینے پر توجہ مرکوز کرتے ہیں: 'کیا یہ AI واقعی ہمارے کاروباری مسئلے کو حل کرے گا؟'",
+      "features": [
+        "تیز رفتار پروٹو ٹائپنگ (4-6 ہفتے)",
+        "تکنیکی فزیبلٹی کا جائزہ",
+        "اصلی ڈیٹا کا انضمام اور ٹیسٹنگ",
+        "کارکردگی اور درستگی کی بینچ مارکنگ",
+        "پروڈکشن کے لیے لاگت کا تخمینہ",
+        "یوزر انٹرفیس اور فلو موک اپس",
+        "انٹرایکٹو اسٹیک ہولڈر ڈیموز",
+        "Go/No-Go فیصلہ سازی کا فریم ورک"
+      ],
+      "benefits": [
+        "بڑے بجٹ مختص کرنے سے پہلے AI کی فزیبلٹی ثابت کریں",
+        "ہفتوں کے اندر اسٹیک ہولڈرز کے ہاتھ میں کام کرنے والا پروٹو ٹائپ دیں",
+        "ڈیٹا کے معیار کے مسائل کو عمل کے آغاز میں ہی دریافت کریں",
+        "درست API لاگت اور تاخیر کا تخمینہ قائم کریں",
+        "اگر آئیڈیا تکنیکی طور پر قابل عمل نہ ہو تو جلدی اور سستے میں ناکام ہوں",
+        "حتمی پروڈکشن بلڈ کے لیے ایک واضح روڈ میپ بنائیں"
+      ],
+      "metaTitle": "AI PoC اور MVP ڈیولپمنٹ سروسز | تیز رفتار پروٹو ٹائپنگ | PakSoft",
+      "metaDescription": "PoC یا MVP کے ساتھ AI کے آئیڈیاز کی تیزی سے توثیق کریں۔ ہم ROI اور تکنیکی فزیبلٹی ثابت کرنے کے لیے 4-6 ہفتوں میں فعال AI پروٹوٹائپس بناتے ہیں۔",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "استعمال کے کیس (Use Case) کی تعریف",
+            "description": "ہم آپ کے وژن کو ایک قابلِ ٹیسٹ مفروضے تک محدود کرتے ہیں۔ ہم واضح طور پر اس بات کی وضاحت کرتے ہیں کہ PoC کو کامیاب سمجھے جانے کے لیے کیا حاصل کرنے کی ضرورت ہے (مثلاً، ٹکٹ کی درجہ بندی میں 85 فیصد درستگی)۔"
+          },
+          {
+            "step": 2,
+            "title": "ڈیٹا کا آڈٹ اور تیاری",
+            "description": "AI صرف اتنا ہی اچھا ہے جتنا کہ اس کا ڈیٹا۔ ہم آپ کے اصل ڈیٹا (دستاویزات، ڈیٹا بیس ایکسپورٹ) کا نمونہ طلب کرتے ہیں اور اسے صاف کرتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ یہ پروٹو ٹائپ ماڈل کے لیے موزوں ہے۔"
+          },
+          {
+            "step": 3,
+            "title": "تیز رفتار ماڈل پروٹو ٹائپنگ",
+            "description": "تیزی سے آگے بڑھنے کے لیے ہم پہلے سے دستیاب APIs (جیسے OpenAI) یا پہلے سے تربیت یافتہ اوپن سورس ماڈلز (جیسے Hugging Face) کا استعمال کرتے ہوئے بنیادی AI منطق بناتے ہیں۔ توجہ کامل اصلاح کے بجائے فعالیت پر ہوتی ہے۔"
+          },
+          {
+            "step": 4,
+            "title": "UI / انٹرفیس کا نفاذ",
+            "description": "ایک PoC کو ٹھوس ہونا ضروری ہے۔ ہم ایک ہلکا پھلکا انٹرفیس بناتے ہیں—اکثر Streamlit، Gradio، یا Next.js کا استعمال کرتے ہوئے—تاکہ غیر تکنیکی اسٹیک ہولڈرز براہ راست AI کے ساتھ بات چیت کر سکیں۔"
+          },
+          {
+            "step": 5,
+            "title": "بینچ مارکنگ اور تشخیص",
+            "description": "ہم مرحلہ 1 میں بیان کردہ کامیابی کے معیار کے خلاف پروٹو ٹائپ کی جانچ کرتے ہیں۔ ہم AI کی درستگی، جوابی وقت، اور فی تعامل ٹوکن لاگت کی پیمائش کرتے ہیں۔"
+          },
+          {
+            "step": 6,
+            "title": "جائزہ اور پروڈکشن روڈ میپ",
+            "description": "ہم ایک ایگزیکٹو رپورٹ کے ساتھ کام کرنے والا MVP پیش کرتے ہیں۔ ہم ایک حتمی Go/No-Go تجویز اور پروڈکشن گریڈ ایپلیکیشن کے لیے ایک تفصیلی روڈ میپ اور بجٹ فراہم کرتے ہیں۔"
+          }
+        ],
+        "faq": [
+          {
+            "question": "PoC اور MVP کے درمیان کیا فرق ہے؟",
+            "answer": "ایک پروف آف کانسیپٹ (PoC) تکنیکی فزیبلٹی کی تصدیق کے لیے بنایا جاتا ہے—یہ ثابت کرتا ہے کہ AI دراصل آپ کے ڈیٹا کے ساتھ مخصوص مسئلے کو حل کر سکتا ہے۔ کم از کم قابل عمل پروڈکٹ (MVP) ایک قدم آگے جاتا ہے؛ یہ پروڈکٹ کا ایک بنیادی لیکن چمکدار ورژن ہے جسے کاروباری قدر کی توثیق کرنے کے لیے اصل صارفین کے ایک چھوٹے گروپ کے لیے جاری کیا جا سکتا ہے۔"
+          },
+          {
+            "question": "ایک AI PoC میں کتنا وقت لگتا ہے؟",
+            "answer": "ہم سختی سے اپنے PoCs کو 4–6 ہفتوں کے لیے ٹائم باکس کرتے ہیں۔ یہ مجبوری ہمیں غیر ضروری خصوصیات سے دھیان ہٹائے بغیر مکمل طور پر بنیادی AI مفروضے پر توجہ مرکوز کرنے پر مجبور کرتی ہے۔ اگر اس میں 6 ہفتوں سے زیادہ وقت لگتا ہے تو یہ ایک پروجیکٹ ہے، PoC نہیں۔"
+          },
+          {
+            "question": "شروع کرنے کے لیے ہمیں کیا فراہم کرنے کی ضرورت ہے؟",
+            "answer": "سب سے اہم اثاثہ آپ کا ڈیٹا ہے۔ ہمیں اس ڈیٹا کا ایک نمائندہ نمونہ درکار ہے جس کا سامنا AI پروڈکشن میں کرے گا (مثلاً، گزشتہ 500 کسٹمر ای میلز، پروڈکٹ پی ڈی ایف کا ایک سیٹ، یا فروخت کا تاریخی ڈیٹا)۔ ہمیں آپ کی ٹیم کے ڈومین ماہرین تک رسائی کی بھی ضرورت ہے جو AI کے آؤٹ پٹ کے معیار کا فیصلہ کر سکیں۔"
+          },
+          {
+            "question": "کیا آپ PoC کو شروع سے بنائیں گے یا APIs استعمال کریں گے؟",
+            "answer": "رفتار اور لاگت کی افادیت کے لیے، ہم PoC کے مرحلے کے دوران تقریباً ہمیشہ منظم APIs (جیسے OpenAI، Anthropic، یا AWS AI سروسز) کا استعمال کرتے ہیں۔ مقصد یہ ثابت کرنا ہے کہ یہ تصور کام کرتا ہے۔ ایک بار ثابت ہونے کے بعد، ہم لاگت کو کم کرنے یا رازداری کو بڑھانے کے لیے حتمی پروڈکشن ورژن کے لیے کسٹم اوپن سورس ماڈلز کی تربیت پر تبادلہ خیال کر سکتے ہیں۔"
+          },
+          {
+            "question": "اگر PoC ناکام ہو جائے تو کیا ہوتا ہے؟",
+            "answer": "ایک 'ناکام' PoC دراصل ایک کامیاب نتیجہ ہے—یہ آپ کو ایک مکمل پروڈکٹ پر لاکھوں ڈالر خرچ کرنے سے روکتا ہے جو کام نہیں کرے گا۔ ہم ایک تفصیلی پوسٹ مارٹم فراہم کرتے ہیں جس میں وضاحت کی گئی ہوتی ہے کہ یہ کیوں ناکام ہوا (عام طور پر ڈیٹا کے خراب معیار یا AI استدلال کی موجودہ حدود کی وجہ سے) تاکہ آپ اپنی حکمت عملی کو ایڈجسٹ کر سکیں۔"
+          },
+          {
+            "question": "کیا PoC کوڈ کو حتمی پروڈکشن پروڈکٹ کے لیے استعمال کیا جا سکتا ہے؟",
+            "answer": "اس کے کچھ حصے۔ پرامپٹ انجینئرنگ، تشخیص کے میٹرکس اور بنیادی منطق اکثر منتقل ہو جاتی ہے۔ تاہم، PoCs رفتار کے لیے بنائے گئے ہیں، اکثر Streamlit جیسے ٹولز کا استعمال کرتے ہوئے۔ پروڈکشن کے لیے، ہم بیک اینڈ کو ایک مضبوط مائیکرو سروس (FastAPI/Node.js) میں دوبارہ لکھیں گے اور مناسب سیکیورٹی، کیشنگ اور ریٹ لمیٹنگ نافذ کریں گے۔"
+          },
+          {
+            "question": "کیا ہم MVP کی دانشورانہ املاک (IP) کے مالک ہوں گے؟",
+            "answer": "ہاں۔ PoC/MVP مرحلے کی تکمیل اور مکمل ادائیگی کے بعد، آپ کسٹم کوڈ، پرامپٹس، آرکیٹیکچر، اور آپ کے پروجیکٹ کے لیے خاص طور پر تیار کیے گئے فائن ٹیونڈ ماڈلز کی مکمل ملکیت برقرار رکھتے ہیں۔"
+          },
+          {
+            "question": "آپ یہ کیسے ماپتے ہیں کہ آیا AI کافی حد تک درست ہے؟",
+            "answer": "ہم مرحلہ 1 کے دوران 'گراؤنڈ ٹروتھ' (حتمی سچائی) ڈیٹا سیٹ کی وضاحت کرتے ہیں۔ ہم AI کو اس ڈیٹاسیٹ پر چلاتے ہیں اور اسے Precision، Recall یا LLM-as-a-judge فریم ورکس جیسی میٹرکس کا استعمال کرتے ہوئے اسکور کرتے ہیں۔ ہم 'یہ اچھا لگتا ہے' پر انحصار نہیں کرتے؛ ہم AI کی کارکردگی کے ٹھوس شماریاتی ثبوت فراہم کرتے ہیں۔"
+          }
+        ],
+        "technologies": [
+          { "icon": "python", "name": "Python" },
+          { "icon": "streamlit", "name": "Streamlit" },
+          { "icon": "jupyter", "name": "Jupyter Notebooks" },
+          { "icon": "openai", "name": "OpenAI API" },
+          { "icon": "huggingface", "name": "Hugging Face" },
+          { "icon": "react", "name": "React / Next.js" },
+          { "icon": "vercel", "name": "Vercel" },
+          { "icon": "googlecloud", "name": "Google Colab" }
+        ]
+      }
+    },
+    "ar": {
+      "name": "إثبات المفهوم والمنتج الأولي للذكاء الاصطناعي (AI PoC & MVP)",
+      "shortDescription": "تحقق من صحة أفكار الذكاء الاصطناعي الخاصة بك بسرعة وبتكلفة فعالة. نبني نماذج إثبات مفهوم (PoC) ومنتجات أولية (MVP) وظيفية في 4-6 أسابيع لإثبات الجدوى الفنية قبل الالتزام بالتطوير الشامل.",
+      "fullDescription": "الاستثمار في الذكاء الاصطناعي للمؤسسات دون التحقق من الافتراضات الأساسية هو أسرع طريقة لحرق ميزانيتك. تم تصميم خدمة إثبات المفهوم (PoC) والمنتج الأولي القابل للتطبيق (MVP) لتقليل المخاطر في مبادرات الذكاء الاصطناعي الخاصة بك. في غضون 4 إلى 6 أسابيع فقط، نأخذ فكرتك — سواء كانت مساعد معرفة داخلياً، أو نموذج تسعير تنبؤي، أو مسار عمل آلي — ونبني نموذجاً أولياً عملياً باستخدام بياناتك الفعلية. نحن لا نبني مجرد تطبيق تجريبي بسيط؛ بل نؤسس لخط الأساس للدقة، وزمن الانتقال، ومقاييس التكلفة التشغيلية المطلوبة للإنتاج. إذا نجح الـ PoC، سيكون لديك MVP ملموس لتقديمه لأصحاب المصلحة وتأمين التمويل. وإذا فشل، تكون قد وفرت أشهراً من وقت التطوير الضائع. نركز على السرعة، والنتائج القابلة للقياس، والإجابة على السؤال الحاسم: 'هل سيحل هذا الذكاء الاصطناعي مشكلتنا التجارية حقاً؟'",
+      "features": [
+        "نماذج أولية سريعة (4-6 أسابيع)",
+        "تقييم الجدوى الفنية",
+        "تكامل البيانات الحقيقية واختبارها",
+        "قياس الأداء والدقة",
+        "تقدير التكلفة للإنتاج",
+        "تصميم واجهة المستخدم وتدفق العمل",
+        "عروض تفاعلية لأصحاب المصلحة",
+        "إطار اتخاذ قرار المضي قدماً (Go/No-Go)"
+      ],
+      "benefits": [
+        "إثبات جدوى الذكاء الاصطناعي قبل الالتزام بميزانيات ضخمة",
+        "وضع نموذج أولي يعمل في أيدي أصحاب المصلحة خلال أسابيع",
+        "اكتشاف مشكلات جودة البيانات في مرحلة مبكرة من العملية",
+        "تأسيس تقديرات دقيقة لتكلفة واجهة برمجة التطبيقات (API) وزمن الانتقال",
+        "الفشل السريع وبتكلفة منخفضة إذا كانت الفكرة غير مجدية فنياً",
+        "إنشاء خارطة طريق واضحة لنسخة الإنتاج النهائية"
+      ],
+      "metaTitle": "خدمات تطوير AI PoC & MVP | نماذج أولية سريعة | PakSoft",
+      "metaDescription": "تحقق من أفكار الذكاء الاصطناعي بسرعة من خلال إثبات المفهوم أو MVP. نبني نماذج أولية وظيفية في 4-6 أسابيع لإثبات العائد على الاستثمار والجدوى الفنية.",
+      "content": {
+        "process": [
+          {
+            "step": 1,
+            "title": "تحديد حالة الاستخدام (Use Case)",
+            "description": "نركز رؤيتك في فرضية واحدة قابلة للاختبار. نحدد بالضبط ما يجب أن يحققه إثبات المفهوم (على سبيل المثال، دقة 85% في تصنيف التذاكر) ليُعتبر ناجحاً."
+          },
+          {
+            "step": 2,
+            "title": "تدقيق وتجهيز البيانات",
+            "description": "لا يكون الذكاء الاصطناعي جيداً إلا بقدر جودة بياناته. نطلب عينة من بياناتك الفعلية (مستندات، مخرجات قاعدة البيانات) ونقوم بتنظيفها للتأكد من ملاءمتها للنموذج الأولي."
+          },
+          {
+            "step": 3,
+            "title": "النماذج الأولية السريعة (Prototyping)",
+            "description": "نبني المنطق الأساسي للذكاء الاصطناعي باستخدام واجهات API الجاهزة (مثل OpenAI) أو نماذج مفتوحة المصدر مدربة مسبقاً (مثل Hugging Face) للتحرك بسرعة. ينصب التركيز على الوظيفة بدلاً من التحسين المثالي."
+          },
+          {
+            "step": 4,
+            "title": "تنفيذ واجهة المستخدم (UI)",
+            "description": "يجب أن يكون الـ PoC ملموساً. نبني واجهة خفيفة — غالباً باستخدام Streamlit أو Gradio أو Next.js — حتى يتمكن أصحاب المصلحة غير التقنيين من التفاعل مع الذكاء الاصطناعي مباشرة."
+          },
+          {
+            "step": 5,
+            "title": "قياس الأداء والتقييم",
+            "description": "نختبر النموذج الأولي مقابل معايير النجاح المحددة في الخطوة الأولى. نقيس دقة الذكاء الاصطناعي، ووقت الاستجابة، وتكلفة الـ Tokens لكل تفاعل."
+          },
+          {
+            "step": 6,
+            "title": "المراجعة وخارطة طريق الإنتاج",
+            "description": "نقدم المنتج الأولي (MVP) العامل جنباً إلى جنب مع تقرير تنفيذي. نقدم توصية نهائية بالمضي قدماً أو التوقف (Go/No-Go)، وخارطة طريق مفصلة، وميزانية للتطبيق الجاهز للإنتاج."
+          }
+        ],
+        "faq": [
+          {
+            "question": "ما الفرق بين إثبات المفهوم (PoC) والمنتج الأولي (MVP)؟",
+            "answer": "يتم بناء إثبات المفهوم (PoC) للتحقق من الجدوى الفنية — لإثبات أن الذكاء الاصطناعي يمكنه فعلاً حل المشكلة المحددة ببياناتك. أما المنتج الأولي القابل للتطبيق (MVP) فيخطو خطوة أبعد؛ فهو نسخة أساسية ولكنها مصقولة من المنتج يمكن إطلاقها لمجموعة صغيرة من المستخدمين الفعليين للتحقق من قيمته التجارية."
+          },
+          {
+            "question": "كم من الوقت يستغرق PoC للذكاء الاصطناعي؟",
+            "answer": "نحن نقيد إثبات المفهوم بجدول زمني صارم يتراوح بين 4 إلى 6 أسابيع. هذا القيد يجبرنا على التركيز التام على فرضية الذكاء الاصطناعي الأساسية دون الانشغال بميزات غير ضرورية. إذا استغرق الأمر أكثر من 6 أسابيع، فهو مشروع كامل وليس PoC."
+          },
+          {
+            "question": "ما الذي نحتاج لتقديمه للبدء؟",
+            "answer": "الأصل الأكثر أهمية هو بياناتك. نحتاج إلى عينة تمثيلية للبيانات التي سيواجهها الذكاء الاصطناعي في الإنتاج (على سبيل المثال، 500 رسالة بريد إلكتروني سابقة للعملاء، أو مجموعة من ملفات PDF للمنتجات، أو بيانات المبيعات التاريخية). كما نحتاج إلى الوصول إلى خبراء المجال في فريقك الذين يمكنهم الحكم على جودة مخرجات الذكاء الاصطناعي."
+          },
+          {
+            "question": "هل ستبنون الـ PoC من الصفر أم باستخدام واجهات برمجة التطبيقات (APIs)؟",
+            "answer": "من أجل السرعة وكفاءة التكلفة، نستخدم دائماً تقريباً واجهات API المدارة (مثل OpenAI أو Anthropic أو AWS AI) خلال مرحلة الـ PoC. الهدف هو إثبات نجاح الفكرة. بمجرد الإثبات، يمكننا مناقشة تدريب نماذج مفتوحة المصدر مخصصة لنسخة الإنتاج النهائية لتقليل التكاليف أو زيادة الخصوصية."
+          },
+          {
+            "question": "ماذا يحدث إذا فشل الـ PoC؟",
+            "answer": "إثبات المفهوم 'الفاشل' هو في الواقع نتيجة ناجحة — فهو يمنعك من إنفاق مئات الآلاف من الدولارات على منتج كامل لم يكن ليعمل. نحن نقدم تشريحاً تفصيلياً يوضح سبب فشله (عادة بسبب سوء جودة البيانات أو القيود الحالية في تفكير الذكاء الاصطناعي) حتى تتمكن من تعديل استراتيجيتك."
+          },
+          {
+            "question": "هل يمكن استخدام كود الـ PoC في منتج الإنتاج النهائي؟",
+            "answer": "أجزاء منه، نعم. هندسة المطالبات (Prompt Engineering)، ومقاييس التقييم، والمنطق الأساسي غالباً ما تُنقل. ومع ذلك، تم بناء نماذج الـ PoC من أجل السرعة، وغالباً باستخدام أدوات مثل Streamlit. للإنتاج، سنعيد كتابة الواجهة الخلفية في خدمة مصغرة قوية (FastAPI/Node.js) وتطبيق الأمان المناسب، والتخزين المؤقت، وتحديد المعدل (Rate-limiting)."
+          },
+          {
+            "question": "هل نمتلك الملكية الفكرية للمنتج الأولي (MVP)؟",
+            "answer": "نعم. عند الانتهاء من مرحلة PoC/MVP والدفع الكامل لها، تحتفظ بالملكية الكاملة للتعليمات البرمجية المخصصة (الكود)، والمطالبات (Prompts)، والبنيات، والنماذج المضبوطة بدقة (Fine-tuned models) التي نطورها خصيصاً لمشروعك."
+          },
+          {
+            "question": "كيف تقيسون ما إذا كان الذكاء الاصطناعي دقيقاً بما فيه الكفاية؟",
+            "answer": "نحدد مجموعات بيانات 'الحقيقة الأساسية' (Ground Truth) خلال الخطوة الأولى. نقوم بتشغيل الذكاء الاصطناعي مقابل مجموعة البيانات هذه وتقييمه باستخدام مقاييس مثل الدقة (Precision)، والاسترجاع (Recall)، أو أطر عمل (LLM-as-a-judge). نحن لا نعتمد على عبارة 'يبدو جيداً'؛ بل نقدم أدلة إحصائية صلبة على أداء الذكاء الاصطناعي."
+          }
+        ],
+        "technologies": [
+          { "icon": "python", "name": "Python" },
+          { "icon": "streamlit", "name": "Streamlit" },
+          { "icon": "jupyter", "name": "Jupyter Notebooks" },
+          { "icon": "openai", "name": "OpenAI API" },
+          { "icon": "huggingface", "name": "Hugging Face" },
+          { "icon": "react", "name": "React / Next.js" },
+          { "icon": "vercel", "name": "Vercel" },
+          { "icon": "googlecloud", "name": "Google Colab" }
+        ]
+      }
+    }
+  }
+}

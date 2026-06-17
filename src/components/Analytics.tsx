@@ -90,18 +90,11 @@ export default function Analytics() {
                 });
 
                 ${GOOGLE_ADS_ID ? `
-                // Google Ads Configuration for Conversion Tracking
+                // Google Ads — conversion tracking + remarketing.
+                // The config call auto-sends a page_view for remarketing audiences;
+                // conversions are fired from lib/analytics.ts (gtag 'conversion').
                 gtag('config', '${GOOGLE_ADS_ID}', {
                   allow_enhanced_conversions: true
-                });
-
-                // Google Ads Remarketing
-                gtag('event', 'page_view', {
-                  'send_to': '${GOOGLE_ADS_ID}',
-                  'value': 'replace with value',
-                  'items': [{
-                    'google_business_vertical': 'custom'
-                  }]
                 });
                 ` : ''}
               `

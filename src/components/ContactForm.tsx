@@ -5,6 +5,7 @@ import { useState } from 'react'
 import SectionHeader from '@/components/SectionHeader'
 import Button from '@/components/Button'
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations'
+import { trackContactFormConversion } from '@/lib/analytics'
 
 // WhatsApp business number
 const WHATSAPP_NUMBER = '905525677164'
@@ -103,6 +104,9 @@ ${form.message}
         }
         return
       }
+
+      // Fire lead conversion (GA4 generate_lead + Google Ads + FB/LinkedIn)
+      trackContactFormConversion('contact_page')
 
       // Send to WhatsApp if option is checked
       if (sendToWhatsApp) {

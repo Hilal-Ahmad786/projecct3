@@ -24,12 +24,17 @@ export const trackEvent = (eventName: string, params?: any) => {
 };
 
 export const trackWhatsAppClick = (source: string, message?: string) => {
-  trackEvent('whatsapp_click', { source, message });
+  // WhatsApp click = a lead/contact conversion for a services business.
+  trackEvent('whatsapp_click', { event_category: 'conversion', event_label: 'whatsapp_contact', source, message });
+  trackGoogleAdsConversion(GOOGLE_ADS_CONVERSION_ID);
+  if (typeof window !== 'undefined' && (window as any).fbq) (window as any).fbq('track', 'Contact');
   trackToServer('whatsapp_click', source, message);
 };
 
 export const trackPhoneCall = (source: string) => {
-  trackEvent('phone_call', { source });
+  trackEvent('phone_call', { event_category: 'conversion', event_label: 'phone_call', source });
+  trackGoogleAdsConversion(GOOGLE_ADS_CONVERSION_ID);
+  if (typeof window !== 'undefined' && (window as any).fbq) (window as any).fbq('track', 'Contact');
   trackToServer('phone_call', source);
 };
 

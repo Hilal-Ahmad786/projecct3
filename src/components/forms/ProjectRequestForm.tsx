@@ -9,6 +9,7 @@ import Button from '@/components/Button';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 import FileUpload from './FileUpload';
 import BudgetCalculator, { BudgetEstimate } from './BudgetCalculator';
+import { trackContactFormConversion, trackQuoteConversion } from '@/lib/analytics';
 
 // Storage key for form progress
 const FORM_STORAGE_KEY = 'paksoft_project_request_draft';
@@ -257,6 +258,13 @@ export default function ProjectRequestForm({
 
       // Clear draft on successful submission
       clearDraft();
+
+      // Fire conversions: high-intent project request = lead + quote request.
+      trackContactFormConversion('project_request');
+      trackQuoteConversion(
+        (data as { projectType?: string }).projectType || 'project_request',
+        budgetEstimate?.maxBudget,
+      );
 
       setSubmitSuccess(true);
       onSuccess?.();
