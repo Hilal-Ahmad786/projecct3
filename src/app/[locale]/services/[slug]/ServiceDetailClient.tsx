@@ -578,8 +578,17 @@ function HeroSection({
             </div>
 
             {/* Description */}
-            <p className="text-base sm:text-lg text-gray-600 max-w-lg leading-relaxed">
-              {service.fullDescription || service.description}
+            {/*
+              Hero now shows the concise `shortDescription` so the hero stays
+              compact (≈3–5 lines) and doesn't push the animation below the fold.
+              The longer `fullDescription` is preserved on `service` (and in the
+              DB) for reuse in a dedicated overview section later. `line-clamp-5`
+              is a safety cap for the rare service whose shortDescription is long.
+              Previous (full-description) version kept here on purpose:
+                {service.fullDescription || service.description}
+            */}
+            <p className="text-base sm:text-lg text-gray-600 max-w-lg leading-relaxed line-clamp-5">
+              {service.shortDescription || service.fullDescription || service.description}
             </p>
 
             {/* CTAs */}

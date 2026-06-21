@@ -163,6 +163,9 @@ export default async function ServicePage({ params }: PageProps) {
   // Use database content first, then JSON as fallback
   const serviceName = service.name || jsonContent?.hero?.title || slug;
   const serviceDescription = service.fullDescription || service.shortDescription || service.description || jsonContent?.hero?.description || '';
+  // Concise variant for the hero (keeps it compact). Falls back to the full
+  // description for services that don't have a dedicated shortDescription yet.
+  const serviceShortDescription = service.shortDescription || jsonContent?.hero?.description || serviceDescription;
 
   // Features: database first, then JSON fallback
   const features = (service.features && service.features.length > 0)
@@ -184,10 +187,12 @@ export default async function ServicePage({ params }: PageProps) {
     ? content.faq
     : jsonContent?.faq?.items || [];
 
-  // Technologies: database content first, then JSON fallback
+  // Technologies: database content first, then JSON fallback.
+  // The JSON fallback's `icon` is optional, so coerce it to a string to match
+  // the Technology type (which requires `icon: string`).
   const technologies = (content.technologies && content.technologies.length > 0)
     ? content.technologies
-    : jsonContent?.technologies?.items || [];
+    : (jsonContent?.technologies?.items || []).map(item => ({ name: item.name, icon: item.icon ?? '' }));
 
   // Portfolio: database content first, then JSON fallback
   const portfolio = (content.portfolio && content.portfolio.length > 0)
@@ -211,7 +216,7 @@ export default async function ServicePage({ params }: PageProps) {
     name: serviceName,
     description: serviceDescription,
     fullDescription: serviceDescription,
-    shortDescription: serviceDescription,
+    shortDescription: serviceShortDescription,
     icon: service.icon,
     color: service.color,
     features,
