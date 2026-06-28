@@ -66,11 +66,18 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function ProjectsPage({ params }: PageProps) {
   const { locale } = await params;
 
-  // Fetch real projects from database
-  const { data: projects } = await getProjects(
-    { status: 'published' },
-    { limit: 50, sortBy: 'createdAt', sortOrder: 'desc' }
-  );
+  // Fetch real projects from database. This page is statically prerendered, so
+  // a DB error must not crash the build/deploy — degrade to an empty gallery.
+  let projects: any[] = [];
+  try {
+    const res = await getProjects(
+      { status: 'published' },
+      { limit: 50, sortBy: 'createdAt', sortOrder: 'desc' }
+    );
+    projects = res.data;
+  } catch (err) {
+    console.error('[projects/page] DB error fetching projects:', err);
+  }
 
   return (
     <>

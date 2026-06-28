@@ -5,8 +5,8 @@ import Analytics from '@/components/Analytics'
 import SecurityGuard from '@/components/SecurityGuard'
 import ReCaptcha from '@/components/ReCaptcha'
 import { ClientProviders } from '@/components/ClientProviders'
-import { cookies } from 'next/headers'
 import { Analytics as VercelAnalytics } from '@vercel/analytics/next'
+import { defaultLocale } from '@/lib/i18n'
 
 // Heritage display type for RTL locales — exposed as CSS variables,
 // consumed by globals.css heading rules. preload:false keeps them off
@@ -83,12 +83,15 @@ interface RootLayoutProps {
     children: ReactNode
 }
 
-export default async function RootLayout({ children }: RootLayoutProps) {
-    const cookieStore = await cookies()
-    const locale = cookieStore.get('NEXT_LOCALE')?.value || 'en'
-
+export default function RootLayout({ children }: RootLayoutProps) {
+    // NOTE: Do NOT read cookies()/headers() here. Reading a dynamic API in the
+    // ROOT layout opts the ENTIRE app into per-request dynamic rendering (every
+    // page became `ƒ` and re-queried the DB on every visit). The correct
+    // per-locale <lang>/<dir> is applied by the nested [locale] layout on its
+    // wrapper element; the root <html> just carries a static default so the
+    // whole tree stays statically prerenderable.
     return (
-        <html lang={locale} suppressHydrationWarning>
+        <html lang={defaultLocale} suppressHydrationWarning>
             <head>
                 <Analytics />
                 <ReCaptcha />

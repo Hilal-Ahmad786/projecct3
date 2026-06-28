@@ -2,19 +2,20 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import { PhoneIcon, ChatBubbleLeftRightIcon, XMarkIcon, ArrowUpIcon } from '@heroicons/react/24/outline';
 import { useTranslations, useSectionTranslations } from '@/hooks/useTranslations';
 import { trackWhatsAppClick, trackPhoneCall, trackChatOpen } from '@/lib/analytics';
-import { snappySpring } from '@/lib/animations';
 
+// This is a global-layout component (loaded on every page). It previously pulled
+// framer-motion into the shared bundle of EVERY page just for show/hide
+// transitions. Those are now pure CSS (Tailwind transitions + a couple of
+// keyframes in globals.css), so framer-motion is no longer in the global chunk.
 export default function FloatingButtons() {
   const [isOpen, setIsOpen] = useState(false);
   const [showChatDialog, setShowChatDialog] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
-  const prefersReducedMotion = useReducedMotion();
 
-  const { locale, dir } = useTranslations();
+  const { dir } = useTranslations();
   const t = useSectionTranslations('floatingButtons');
 
   const phoneNumber = '+905525677164';
@@ -93,161 +94,130 @@ export default function FloatingButtons() {
     },
   ];
 
+  const backdropOpen = isOpen || showChatDialog;
+
   return (
     <>
-      {/* Backdrop */}
-      <AnimatePresence>
-        {(isOpen || showChatDialog) && (
-          <motion.div
-            className="fixed inset-0 bg-gray-900/20 z-40"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.2 }}
-            onClick={() => { setIsOpen(false); setShowChatDialog(false); }}
-          />
-        )}
-      </AnimatePresence>
+      {/* Backdrop (always mounted; CSS opacity toggle) */}
+      <div
+        className={`fixed inset-0 bg-gray-900/20 z-40 transition-opacity duration-200 ${backdropOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+        onClick={() => { setIsOpen(false); setShowChatDialog(false); }}
+        aria-hidden={!backdropOpen}
+      />
 
-      {/* Chat Dialog */}
-      <AnimatePresence>
-        {showChatDialog && (
-          <motion.div
-            className={`fixed bottom-24 ${dir === 'rtl' ? 'left-6' : 'right-6'} w-80 bg-white rounded-lg shadow-lg z-50 border border-gray-200`}
-            dir={dir}
-            initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, scale: 0.9, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, scale: 0.9, y: 20 }}
-            transition={prefersReducedMotion ? { duration: 0 } : snappySpring}
-          >
-            {/* Dialog Header */}
-            <div className="flex items-center justify-between p-4 border-b border-gray-200">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-gray-900 rounded-full flex items-center justify-center">
-                  <ChatBubbleLeftRightIcon className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-sm font-medium text-gray-900">{t('dialogTitle')}</h3>
-                  <p className="text-xs text-gray-500">{t('dialogSubtitle')}</p>
-                </div>
-              </div>
-              <button onClick={() => setShowChatDialog(false)} className="p-1 hover:bg-gray-100 rounded transition-colors">
-                <XMarkIcon className="w-5 h-5 text-gray-500" />
-              </button>
+      {/* Chat Dialog (always mounted; CSS transition both ways) */}
+      <div
+        className={`fixed bottom-24 ${dir === 'rtl' ? 'left-6' : 'right-6'} w-80 bg-white rounded-lg shadow-lg z-50 border border-gray-200 origin-bottom transition-all duration-200 ${showChatDialog ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-95 translate-y-5 pointer-events-none'}`}
+        dir={dir}
+        aria-hidden={!showChatDialog}
+      >
+        {/* Dialog Header */}
+        <div className="flex items-center justify-between p-4 border-b border-gray-200">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 bg-gray-900 rounded-full flex items-center justify-center">
+              <ChatBubbleLeftRightIcon className="w-5 h-5 text-white" />
             </div>
+            <div>
+              <h3 className="text-sm font-medium text-gray-900">{t('dialogTitle')}</h3>
+              <p className="text-xs text-gray-500">{t('dialogSubtitle')}</p>
+            </div>
+          </div>
+          <button onClick={() => setShowChatDialog(false)} className="p-1 hover:bg-gray-100 rounded transition-colors">
+            <XMarkIcon className="w-5 h-5 text-gray-500" />
+          </button>
+        </div>
 
-            {/* Quick Questions */}
-            <div className="p-4 max-h-96 overflow-y-auto">
-              <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-3">{t('selectQuestion')}</p>
-              <div className="space-y-2">
-                {quickQuestions.map((item) => (
-                  <button
-                    key={item.id}
-                    onClick={() => handleWhatsApp(item.message)}
-                    className="w-full text-left px-4 py-3 text-sm text-gray-700 bg-gray-50 hover:bg-gray-100 rounded-md transition-colors border border-gray-200 hover:border-gray-300 group"
-                  >
-                    <span className="flex items-center gap-2">
-                      <span className="text-gray-900 group-hover:text-emerald-600 transition-colors">{item.question}</span>
-                      <svg className={`w-4 h-4 text-gray-400 group-hover:text-emerald-600 transition-transform ${dir === 'rtl' ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                      </svg>
-                    </span>
-                  </button>
-                ))}
-              </div>
-
+        {/* Quick Questions */}
+        <div className="p-4 max-h-96 overflow-y-auto">
+          <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-3">{t('selectQuestion')}</p>
+          <div className="space-y-2">
+            {quickQuestions.map((item) => (
               <button
-                onClick={() => handleWhatsApp()}
-                className="w-full mt-3 px-4 py-3 text-sm font-medium text-white bg-gray-900 hover:bg-gray-700 rounded-md transition-colors flex items-center justify-center gap-2"
+                key={item.id}
+                onClick={() => handleWhatsApp(item.message)}
+                className="w-full text-left px-4 py-3 text-sm text-gray-700 bg-gray-50 hover:bg-gray-100 rounded-md transition-colors border border-gray-200 hover:border-gray-300 group"
               >
-                <ChatBubbleLeftRightIcon className="w-4 h-4" />
-                {t('customMessage')}
+                <span className="flex items-center gap-2">
+                  <span className="text-gray-900 group-hover:text-emerald-600 transition-colors">{item.question}</span>
+                  <svg className={`w-4 h-4 text-gray-400 group-hover:text-emerald-600 transition-transform ${dir === 'rtl' ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </span>
               </button>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+            ))}
+          </div>
 
-      {/* Scroll-to-top button */}
-      <AnimatePresence>
-        {showScrollTop && (
-          <motion.button
-            className={`fixed bottom-24 ${dir === 'rtl' ? 'right-6' : 'left-6'} z-50 w-10 h-10 bg-white border border-gray-200 rounded-full shadow-md flex items-center justify-center hover:bg-gray-50 transition-colors`}
-            onClick={scrollToTop}
-            initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: 20 }}
-            transition={prefersReducedMotion ? { duration: 0 } : snappySpring}
-            aria-label="Scroll to top"
+          <button
+            onClick={() => handleWhatsApp()}
+            className="w-full mt-3 px-4 py-3 text-sm font-medium text-white bg-gray-900 hover:bg-gray-700 rounded-md transition-colors flex items-center justify-center gap-2"
           >
-            <ArrowUpIcon className="w-4 h-4 text-gray-600" />
-          </motion.button>
-        )}
-      </AnimatePresence>
+            <ChatBubbleLeftRightIcon className="w-4 h-4" />
+            {t('customMessage')}
+          </button>
+        </div>
+      </div>
+
+      {/* Scroll-to-top button (always mounted; CSS transition both ways) */}
+      <button
+        className={`fixed bottom-24 ${dir === 'rtl' ? 'right-6' : 'left-6'} z-50 w-10 h-10 bg-white border border-gray-200 rounded-full shadow-md flex items-center justify-center hover:bg-gray-50 transition-all duration-200 ${showScrollTop ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5 pointer-events-none'}`}
+        onClick={scrollToTop}
+        aria-label="Scroll to top"
+        aria-hidden={!showScrollTop}
+        tabIndex={showScrollTop ? 0 : -1}
+      >
+        <ArrowUpIcon className="w-4 h-4 text-gray-600" />
+      </button>
 
       {/* Floating Action Buttons Container */}
       <div className={`fixed bottom-6 ${dir === 'rtl' ? 'left-6' : 'right-6'} z-50 flex flex-col items-end gap-3`}>
 
-        {/* Action Buttons with AnimatePresence spring fan-out */}
-        <AnimatePresence>
-          {isOpen && (
-            <motion.div className="flex flex-col gap-3">
-              {menuItems.map((item, index) => (
-                <motion.button
-                  key={item.label}
-                  onClick={item.onClick}
-                  className={`flex items-center justify-center w-12 h-12 rounded-full shadow-soft hover:shadow-medium transition-shadow ${item.borderClass}`}
-                  aria-label={item.ariaLabel}
-                  initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, scale: 0.5, y: 20 }}
-                  animate={{ opacity: 1, scale: 1, y: 0 }}
-                  exit={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, scale: 0.5, y: 20 }}
-                  transition={prefersReducedMotion ? { duration: 0 } : {
-                    ...snappySpring,
-                    delay: (menuItems.length - 1 - index) * 0.06,
-                  }}
-                >
-                  <div className={`w-12 h-12 flex items-center justify-center ${item.iconBg} rounded-full flex-shrink-0`}>
-                    {item.icon}
-                  </div>
-                </motion.button>
-              ))}
-            </motion.div>
-          )}
-        </AnimatePresence>
+        {/* Action Buttons — CSS staggered fan-out on open (conditional render) */}
+        {isOpen && (
+          <div className="flex flex-col gap-3">
+            {menuItems.map((item, index) => (
+              <button
+                key={item.label}
+                onClick={item.onClick}
+                className={`fab-item-in flex items-center justify-center w-12 h-12 rounded-full shadow-soft hover:shadow-medium transition-shadow ${item.borderClass}`}
+                aria-label={item.ariaLabel}
+                style={{ animationDelay: `${(menuItems.length - 1 - index) * 60}ms` }}
+              >
+                <div className={`w-12 h-12 flex items-center justify-center ${item.iconBg} rounded-full flex-shrink-0`}>
+                  {item.icon}
+                </div>
+              </button>
+            ))}
+          </div>
+        )}
 
         {/* Main Toggle Button */}
-        <motion.button
+        <button
           onClick={() => setIsOpen(!isOpen)}
           className={`
             w-14 h-14 rounded-full shadow-medium hover:shadow-lg
             flex items-center justify-center relative
-            transition-colors duration-300
-            ${isOpen
-              ? 'bg-gray-900'
-              : 'bg-gray-900 hover:bg-gray-700'
-            }
+            transition-transform duration-300 hover:scale-110
+            ${isOpen ? 'bg-gray-900' : 'bg-gray-900 hover:bg-gray-700'}
           `}
           aria-label={isOpen ? t('close') : t('open')}
-          animate={isOpen ? { rotate: 45 } : { rotate: 0 }}
-          transition={prefersReducedMotion ? { duration: 0 } : snappySpring}
-          whileHover={prefersReducedMotion ? {} : { scale: 1.1 }}
         >
-          {isOpen ? (
-            <XMarkIcon className="w-6 h-6 text-white" />
-          ) : (
-            <>
+          {/* inner wrapper carries the rotate so it doesn't fight hover:scale */}
+          <span
+            className="flex items-center justify-center transition-transform duration-300"
+            style={{ transform: isOpen ? 'rotate(45deg)' : 'rotate(0deg)' }}
+          >
+            {isOpen ? (
+              <XMarkIcon className="w-6 h-6 text-white" />
+            ) : (
               <ChatBubbleLeftRightIcon className="w-6 h-6 text-white" />
-              {/* Notification Badge with Framer Motion pulse */}
-              <motion.div
-                className={`absolute -top-1 ${dir === 'rtl' ? '-left-1' : '-right-1'} w-5 h-5 bg-red-500 rounded-full flex items-center justify-center`}
-                animate={prefersReducedMotion ? {} : { scale: [1, 1.2, 1] }}
-                transition={prefersReducedMotion ? {} : { duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-              >
-                <span className="text-xs text-white font-bold">1</span>
-              </motion.div>
-            </>
+            )}
+          </span>
+          {!isOpen && (
+            <span className={`badge-pulse absolute -top-1 ${dir === 'rtl' ? '-left-1' : '-right-1'} w-5 h-5 bg-red-500 rounded-full flex items-center justify-center`}>
+              <span className="text-xs text-white font-bold">1</span>
+            </span>
           )}
-        </motion.button>
+        </button>
       </div>
     </>
   );

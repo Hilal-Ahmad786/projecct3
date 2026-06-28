@@ -1,7 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-export const dynamic = 'force-dynamic';
-
 // GET /api/blog/posts - Get published blog posts for public view
 export async function GET(request: NextRequest) {
   try {
@@ -24,6 +22,13 @@ export async function GET(request: NextRequest) {
         limit: result.limit,
         total: result.total,
         totalPages: result.totalPages,
+      },
+    }, {
+      // Cache at the CDN edge per-URL (each locale/page/category combo) for an
+      // hour, serving stale while revalidating. Public blog content rarely
+      // changes, so this removes a DB hit from nearly every listing request.
+      headers: {
+        'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=86400',
       },
     });
   } catch (error) {

@@ -49,6 +49,27 @@ export const getTranslations = cache((locale: Locale) => {
   return deepMerge(enTranslations, localeTranslations);
 });
 
+// Namespaces that are ONLY consumed by /services/* route components
+// (per-service detail sections and per-service heroes). They are the single
+// biggest part of each locale file (~259KB of ~460KB for `en`) and were being
+// serialized into the client payload of EVERY page via the global
+// TranslationsProvider. We strip them from the global ("core") payload and
+// supply the full dictionary only on /services/* routes (see
+// app/[locale]/services/layout.tsx).
+const SERVICE_ONLY_NAMESPACES = ['serviceSubpages', 'servicePages'] as const;
+
+// Core translations for the global client provider: everything EXCEPT the
+// heavy service-only namespaces. Used on home/blog/about/contact/etc.
+export const getCoreTranslations = cache((locale: Locale) => {
+  const full = getTranslations(locale);
+  const core: Record<string, any> = {};
+  for (const key in full) {
+    if ((SERVICE_ONLY_NAMESPACES as readonly string[]).includes(key)) continue;
+    core[key] = full[key];
+  }
+  return core;
+});
+
 // Get nested translation value
 export function getNestedValue(obj: any, path: string): string {
   const result = path.split('.').reduce((current, key) => {

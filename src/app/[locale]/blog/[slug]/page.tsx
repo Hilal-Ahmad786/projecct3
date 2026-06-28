@@ -5,7 +5,10 @@ import BlogPostView from './BlogPostView';
 
 const baseUrl = 'https://www.paksoft.com.tr';
 
-export const dynamic = 'force-dynamic';
+// ISR: render once, cache for an hour, regenerate in the background. New slugs
+// render on first request then cache (dynamicParams default = true). This stops
+// every visit from hitting the database.
+export const revalidate = 3600;
 
 interface PageProps {
   params: Promise<{ slug: string; locale: Locale }>;

@@ -5,12 +5,26 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
 
+  // Tree-shake large barrel-file packages so only the icons/animations actually
+  // used are bundled (instead of the whole library). Big client-bundle savings
+  // for @heroicons/react and react-icons especially.
+  experimental: {
+    optimizePackageImports: [
+      '@heroicons/react',
+      '@heroicons/react/24/outline',
+      '@heroicons/react/24/solid',
+      'react-icons',
+      'framer-motion',
+    ],
+  },
 
   trailingSlash: false,
 
   images: {
     formats: ['image/webp', 'image/avif'],
-    minimumCacheTTL: 60,
+    // Cache optimized images for 30 days instead of 60s — these are static
+    // marketing assets that rarely change.
+    minimumCacheTTL: 60 * 60 * 24 * 30,
     remotePatterns: [
       {
         protocol: 'https',

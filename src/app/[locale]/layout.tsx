@@ -1,7 +1,7 @@
 // src/app/[locale]/layout.tsx
 import { ReactNode } from 'react'
 import { Locale, locales, defaultLocale, isRTL } from '@/lib/i18n'
-import { getTranslations } from '@/lib/server-i18n'
+import { getCoreTranslations } from '@/lib/server-i18n'
 import { TranslationsProvider } from '@/hooks/useServerTranslations'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
@@ -18,7 +18,9 @@ interface LocaleLayoutProps {
 export default async function LocaleLayout({ children, params }: LocaleLayoutProps) {
   const { locale } = await params
   const validLocale = locales.includes(locale) ? locale : defaultLocale
-  const translations = getTranslations(validLocale)
+  // Core dict only (excludes the heavy service-only namespaces) — keeps the
+  // per-page client payload small. /services/* routes layer in the full dict.
+  const translations = getCoreTranslations(validLocale)
   const dir = isRTL(validLocale) ? 'rtl' : 'ltr'
 
   return (

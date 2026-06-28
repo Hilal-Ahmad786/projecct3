@@ -4,7 +4,6 @@ import {
   motion, AnimatePresence, useReducedMotion,
   useScroll, useTransform, useSpring,
 } from 'framer-motion'
-import { gsap } from 'gsap'
 import HomeHeroOrbit from '@/components/HomeHeroOrbit'
 import MagneticButton from '@/components/MagneticButton'
 import Button from '@/components/Button'
@@ -174,23 +173,8 @@ export default function Hero() {
     return () => clearInterval(interval)
   }, [services.length, prefersReducedMotion])
 
-  // ── GSAP idle float on heading words ───────────────────────────────
-  useEffect(() => {
-    if (!mounted || prefersReducedMotion) return
-    const els = [titleRef.current, serviceWordRef.current]
-    const tweens = els.map((el, i) => {
-      if (!el) return null
-      return gsap.to(el, {
-        y: i === 0 ? 2 : -2,
-        duration: 4,
-        repeat: -1,
-        yoyo: true,
-        ease: 'sine.inOut',
-        delay: i * 2,
-      })
-    })
-    return () => { tweens.forEach(tw => { if (tw) tw.kill() }) }
-  }, [mounted, prefersReducedMotion])
+  // Idle float on the heading words is now a pure-CSS animation
+  // (.hero-float-a / .hero-float-b in globals.css) — no gsap needed.
 
   return (
     <section
@@ -268,7 +252,7 @@ export default function Hero() {
                 className="text-display font-light text-gray-900 leading-none"
                 style={{ perspective: '800px' }}
               >
-                <span ref={titleRef} style={{ display: 'inline-block' }}>
+                <span ref={titleRef} className="hero-float-a" style={{ display: 'inline-block' }}>
                   <SplitText3D
                     text={t('title') as string}
                     mounted={mounted}
@@ -279,7 +263,7 @@ export default function Hero() {
                 <br />
                 <span
                   ref={serviceWordRef}
-                  className="relative inline-block overflow-hidden"
+                  className="relative inline-block overflow-hidden hero-float-b"
                   style={{ minHeight: '1.2em' }}
                 >
                   <AnimatePresence mode="wait">

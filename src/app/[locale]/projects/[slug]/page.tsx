@@ -69,7 +69,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export const dynamic = 'force-dynamic';
+// ISR: cache for an hour instead of re-querying the DB on every request.
+export const revalidate = 3600;
 
 export default async function CaseStudyPage({ params }: PageProps) {
   const { slug, locale } = await params;

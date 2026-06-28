@@ -2,30 +2,21 @@
 
 import { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
-import { motion, useReducedMotion } from 'framer-motion';
 
+// A 0.15s opacity fade on route change does not need framer-motion (which this
+// component pulled into the shared bundle of EVERY page). A keyed <div> whose
+// CSS animation replays on remount gives the identical effect for ~0 JS.
+// Reduced-motion is honored via the @media rule on `.page-fade` in globals.css.
 export default function PageTransition({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const prefersReducedMotion = useReducedMotion();
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior });
   }, [pathname]);
 
-  // NOTE: do NOT wrap this in <AnimatePresence mode="wait">. Under Next 16 +
-  // React 19 + framer-motion 12, mode="wait" keeps the exiting route's tree
-  // mounted while the new route's RSC payload streams in, which throws a
-  // client-side exception on soft navigation (crashes on <Link> nav but works
-  // on hard refresh). A plain keyed motion.div fades the new page in on mount
-  // without holding two route trees alive — same effect, no crash.
   return (
-    <motion.div
-      key={pathname}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: prefersReducedMotion ? 0 : 0.15, ease: 'linear' }}
-    >
+    <div key={pathname} className="page-fade">
       {children}
-    </motion.div>
+    </div>
   );
 }

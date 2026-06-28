@@ -1,42 +1,42 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useReducedMotion } from 'framer-motion';
-import { initGSAP } from '@/lib/gsap';
 
+// A scroll-linked progress bar is a few lines of vanilla DOM — no need for
+// gsap + ScrollTrigger (~115KB) which this component used to pull in. We update
+// a CSS transform on scroll via rAF, honoring prefers-reduced-motion.
 export default function ScrollProgressBar() {
   const barRef = useRef<HTMLDivElement>(null);
-  const prefersReducedMotion = useReducedMotion();
 
   useEffect(() => {
-    if (prefersReducedMotion || !barRef.current) return;
+    const mql = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (mql.matches) return;
 
-    initGSAP();
+    let ticking = false;
+    const update = () => {
+      ticking = false;
+      const el = barRef.current;
+      if (!el) return;
+      const doc = document.documentElement;
+      const max = doc.scrollHeight - doc.clientHeight;
+      const progress = max > 0 ? Math.min(1, Math.max(0, doc.scrollTop / max)) : 0;
+      el.style.transform = `scaleX(${progress})`;
+    };
+    const onScroll = () => {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(update);
+      }
+    };
 
-    const ctx = gsap.context(() => {
-      gsap.fromTo(
-        barRef.current,
-        { scaleX: 0 },
-        {
-          scaleX: 1,
-          ease: 'none',
-          scrollTrigger: {
-            trigger: document.documentElement,
-            start: 'top top',
-            end: 'bottom bottom',
-            scrub: true,
-            invalidateOnRefresh: true,
-          },
-        }
-      );
-    });
-
-    return () => ctx.revert();
-  }, [prefersReducedMotion]);
-
-  if (prefersReducedMotion) return null;
+    update();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    };
+  }, []);
 
   return (
     <div
@@ -48,6 +48,7 @@ export default function ScrollProgressBar() {
         width: '100%',
         height: '2px',
         backgroundColor: '#16a085',
+        transform: 'scaleX(0)',
         transformOrigin: 'left center',
         zIndex: 9999,
         willChange: 'transform',

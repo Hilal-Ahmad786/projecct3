@@ -12,7 +12,10 @@ import {
 } from '@heroicons/react/24/outline';
 import { StarIcon } from '@heroicons/react/24/solid';
 
-export const dynamic = 'force-dynamic';
+// This page fetches its data client-side from /api/blog/posts, so the shell is
+// statically prerendered by default (the previous `force-dynamic` was dropped).
+// NOTE: this is a Client Component, so route-segment config (revalidate/dynamic)
+// cannot be exported here.
 
 interface BlogTranslation {
   locale: string;
