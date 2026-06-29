@@ -22,6 +22,7 @@ import {
     CurrencyDollarIcon,
     PhotoIcon,
     FireIcon,
+    CursorArrowRaysIcon,
 } from '@heroicons/react/24/outline';
 
 interface DashboardLayoutProps {
@@ -31,6 +32,7 @@ interface DashboardLayoutProps {
 const navigation = [
     { name: 'Dashboard', href: '/admin', icon: HomeIcon },
     { name: 'Analytics', href: '/admin/analytics', icon: ChartBarIcon },
+    { name: 'Clicks', href: '/admin/clicks', icon: CursorArrowRaysIcon },
     { name: 'Heatmap', href: '/admin/analytics/heatmap', icon: FireIcon },
     { name: 'Leads', href: '/admin/leads', icon: EnvelopeIcon },
     { name: 'Users', href: '/admin/users', icon: UsersIcon },

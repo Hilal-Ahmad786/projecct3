@@ -1,8 +1,21 @@
+import { createHmac } from 'node:crypto';
 import { NextRequest, NextResponse } from 'next/server';
 
 export const dynamic = 'force-dynamic';
 
 const VALID_EVENT_TYPES = ['whatsapp_click', 'phone_call', 'chat_open'] as const;
+
+/** Salted, irreversible IP fingerprint (KVKK-friendly — raw IP is never stored). */
+function hashIp(ip: string): string {
+  const pepper = process.env.CLICK_PEPPER || 'click-pepper';
+  return createHmac('sha256', pepper).update(ip).digest('hex').slice(0, 16);
+}
+
+function clientIp(request: NextRequest): string {
+  const xff = request.headers.get('x-forwarded-for');
+  if (xff) return xff.split(',')[0].trim();
+  return request.headers.get('x-real-ip') || '';
+}
 
 export async function POST(request: NextRequest) {
   try {
@@ -23,6 +36,8 @@ export async function POST(request: NextRequest) {
     // Extract basic info from request
     const userAgent = request.headers.get('user-agent') || undefined;
     const referer = request.headers.get('referer') || undefined;
+    const ip = clientIp(request);
+    const ipHash = ip && ip !== '0.0.0.0' ? hashIp(ip) : null;
 
     // Store as analytics event
     await trackAnalyticsEvent({
@@ -34,6 +49,7 @@ export async function POST(request: NextRequest) {
       metadata: {
         source: source || 'floating_button',
         message: message || null,
+        ipHash,
       },
       browser: userAgent ? parseBrowser(userAgent) : undefined,
       device: userAgent ? parseDevice(userAgent) : undefined,
