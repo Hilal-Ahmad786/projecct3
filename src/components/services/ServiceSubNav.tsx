@@ -75,7 +75,7 @@ export default function ServiceSubNav({ sections, ctaLabel, ctaHref, mainPageHre
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -16 }}
           transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-          className="sticky top-[64px] left-0 right-0 z-40 bg-white/90 backdrop-blur-md border-b border-gray-200/60 will-change-transform"
+          className="sticky top-[var(--navbar-h,64px)] left-0 right-0 z-40 bg-white/90 backdrop-blur-md border-b border-gray-200/60 will-change-transform"
           style={{ height: 48 }}
           dir={dir}
         >
