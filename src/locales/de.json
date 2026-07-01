@@ -4379,7 +4379,11 @@
       "phone": "Bitte geben Sie eine gültige Telefonnummer ein",
       "minLength": "Muss mindestens {{min}} Zeichen lang sein",
       "maxLength": "Darf nicht mehr als {{max}} Zeichen haben",
-      "invalidUrl": "Bitte geben Sie eine gültige URL ein"
+      "invalidUrl": "Bitte geben Sie eine gültige URL ein",
+      "invalidEmail": "Ungültige E-Mail-Adresse",
+      "invalidPhone": "Ungültige Telefonnummer",
+      "tooShort": "Zu kurz",
+      "tooLong": "Zu lang"
     },
     "labels": {
       "name": "Name",
@@ -4391,7 +4395,10 @@
       "budget": "Budget",
       "timeline": "Zeitplan",
       "projectType": "Projekttyp",
-      "description": "Beschreibung"
+      "description": "Beschreibung",
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "fullName": "Vollständiger Name"
     },
     "placeholders": {
       "name": "Geben Sie Ihren Namen ein",

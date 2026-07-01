@@ -4670,7 +4670,11 @@
       "phone": "Lütfen geçerli bir telefon numarası girin",
       "minLength": "En az {{min}} karakter olmalıdır",
       "maxLength": "{{max}} karakterden fazla olmamalıdır",
-      "invalidUrl": "Lütfen geçerli bir URL girin"
+      "invalidUrl": "Lütfen geçerli bir URL girin",
+      "invalidEmail": "Geçersiz e-posta adresi",
+      "invalidPhone": "Geçersiz telefon numarası",
+      "tooShort": "Çok kısa",
+      "tooLong": "Çok uzun"
     },
     "labels": {
       "name": "Ad",
@@ -4682,7 +4686,10 @@
       "budget": "Bütçe",
       "timeline": "Zaman Çizelgesi",
       "projectType": "Proje Türü",
-      "description": "Açıklama"
+      "description": "Açıklama",
+      "firstName": "Ad",
+      "lastName": "Soyad",
+      "fullName": "Ad Soyad"
     },
     "placeholders": {
       "name": "Adınızı girin",
@@ -10363,6 +10370,25 @@
               "Konteyner güvenliği"
             ]
           }
+        ],
+        "subtitle": "Kapsamlı Güvenlik Çözümleri",
+        "stats": [
+          {
+            "label": "Aylık Engellenen Tehdit",
+            "value": "15M+"
+          },
+          {
+            "label": "Ort. Olay Müdahale Süresi",
+            "value": "< 1 saat"
+          },
+          {
+            "label": "Uyumluluk Çerçevesi",
+            "value": "12+"
+          },
+          {
+            "label": "Tespit Edilen Güvenlik Açığı",
+            "value": "50K+"
+          }
         ]
       },
       "process": {
@@ -10492,6 +10518,25 @@
               "Service mesh (Istio)"
             ]
           }
+        ],
+        "subtitle": "DevOps ve Bulut Mühendisliği",
+        "stats": [
+          {
+            "label": "Dağıtım Sıklığı",
+            "value": "50x"
+          },
+          {
+            "label": "Altyapı Çalışma Süresi",
+            "value": "%99,99"
+          },
+          {
+            "label": "Bulut Maliyet Tasarrufu",
+            "value": "%40"
+          },
+          {
+            "label": "Dağıtım Süresinde Azalma",
+            "value": "%90"
+          }
         ]
       },
       "process": {
@@ -10612,6 +10657,25 @@
               "ROI hesaplama"
             ]
           }
+        ],
+        "subtitle": "Tüm Huniyi Kapsayan Dijital Pazarlama",
+        "stats": [
+          {
+            "label": "Ortalama ROAS",
+            "value": "5,2x"
+          },
+          {
+            "label": "Organik Trafik Artışı",
+            "value": "%180"
+          },
+          {
+            "label": "Oluşturulan Potansiyel Müşteri",
+            "value": "50K+"
+          },
+          {
+            "label": "Dönüşüm Oranı Artışı",
+            "value": "%65"
+          }
         ]
       },
       "process": {
@@ -10731,6 +10795,25 @@
               "Hızlı yükleme süreleri (PWA)",
               "Mobil ödeme kolaylığı"
             ]
+          }
+        ],
+        "subtitle": "Dönüşüm Sağlayan Mağazalar Kurun",
+        "stats": [
+          {
+            "label": "Ortalama Dönüşüm Artışı",
+            "value": "%67"
+          },
+          {
+            "label": "Yayına Alınan Mağaza",
+            "value": "180+"
+          },
+          {
+            "label": "İşlenen Toplam GMV",
+            "value": "$50M+"
+          },
+          {
+            "label": "Ort. Sayfa Yüklenme Süresi",
+            "value": "1,2 sn"
           }
         ]
       },
@@ -10954,6 +11037,25 @@
               "Davranışsal segmantasyon"
             ]
           }
+        ],
+        "subtitle": "Gerçek İş Değeri Yaratan Yapay Zeka",
+        "stats": [
+          {
+            "label": "Devreye Alınan Model",
+            "value": "200+"
+          },
+          {
+            "label": "Tahmin Doğruluğu",
+            "value": "%94+"
+          },
+          {
+            "label": "İşlenen Veri Noktası",
+            "value": "5 Milyar+"
+          },
+          {
+            "label": "Sağlanan Maliyet Tasarrufu",
+            "value": "$30M+"
+          }
         ]
       },
       "process": {
@@ -11172,6 +11274,25 @@
               "Toplu email gönderimi"
             ]
           }
+        ],
+        "subtitle": "Sizi Yavaşlatan Her Şeyi Otomatikleştirin",
+        "stats": [
+          {
+            "label": "Aylık Kazanılan Saat",
+            "value": "50K+"
+          },
+          {
+            "label": "Kurulan Otomasyon",
+            "value": "500+"
+          },
+          {
+            "label": "Ort. Zaman Tasarrufu",
+            "value": "%85"
+          },
+          {
+            "label": "Hata Oranında Azalma",
+            "value": "%96"
+          }
         ]
       },
       "process": {
@@ -11280,6 +11401,25 @@
               "Wireframe çizimi",
               "Kullanılabilirli testi"
             ]
+          }
+        ],
+        "subtitle": "Hem Keyif Veren Hem Dönüştüren Tasarım",
+        "stats": [
+          {
+            "label": "Tasarlanan Ürün",
+            "value": "300+"
+          },
+          {
+            "label": "Ort. Kullanılabilirlik Skoru Artışı",
+            "value": "%62"
+          },
+          {
+            "label": "Kullanıcı Memnuniyet Puanı",
+            "value": "4,8/5"
+          },
+          {
+            "label": "Oluşturulan Tasarım Sistemi",
+            "value": "85+"
           }
         ]
       },
