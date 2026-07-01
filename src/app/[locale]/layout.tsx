@@ -9,6 +9,8 @@ import FloatingButtons from '@/components/FloatingButtons'
 import { GlobalJsonLd } from '@/components/seo/JsonLd'
 import PageTransition from '@/components/PageTransition'
 import HeatmapTracker from '@/components/HeatmapTracker'
+import MotionProvider from '@/components/MotionProvider'
+import CookieConsent from '@/components/CookieConsent'
 
 interface LocaleLayoutProps {
   children: ReactNode
@@ -26,14 +28,19 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
   return (
     <div dir={dir} lang={validLocale}>
       <TranslationsProvider locale={validLocale} translations={translations}>
-        <GlobalJsonLd />
-        <Navbar />
-        <main className="flex-grow">
-          <PageTransition>{children}</PageTransition>
-        </main>
-        <Footer />
-        <FloatingButtons />
-        <HeatmapTracker />
+        {/* MotionConfig(reducedMotion="user") makes all framer-motion
+            animations in the app respect prefers-reduced-motion. */}
+        <MotionProvider>
+          <GlobalJsonLd />
+          <Navbar />
+          <main className="flex-grow">
+            <PageTransition>{children}</PageTransition>
+          </main>
+          <Footer />
+          <FloatingButtons />
+          <HeatmapTracker />
+          <CookieConsent />
+        </MotionProvider>
       </TranslationsProvider>
     </div>
   )

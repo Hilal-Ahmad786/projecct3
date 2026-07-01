@@ -372,7 +372,7 @@ export default function Footer() {
         <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-px bg-gradient-to-r from-transparent via-gray-700/40 to-transparent" />
         <div className="relative flex justify-center">
           <a
-            href="https://paksoft.com.tr"
+            href="https://www.paksofts.com"
             target="_blank"
             rel="noopener noreferrer"
             className="group bg-gray-900 px-10 flex items-center gap-3"

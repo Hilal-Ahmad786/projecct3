@@ -3,7 +3,7 @@
 
 import Script from 'next/script';
 import { usePathname, useSearchParams } from 'next/navigation';
-import { useEffect, Suspense } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 
 // Only import if the file exists
 let trackPageView: any;
@@ -32,6 +32,64 @@ const GOOGLE_OPTIMIZE_ID = process.env.NEXT_PUBLIC_GOOGLE_OPTIMIZE_ID;
 const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_ID;
 const HOTJAR_ID = process.env.NEXT_PUBLIC_HOTJAR_ID;
 
+// Must match CookieConsent.tsx
+const COOKIE_CONSENT_KEY = 'paksoft_cookie_consent';
+
+type ConsentPreferences = {
+  necessary: boolean;
+  analytics: boolean;
+  marketing: boolean;
+};
+
+function readStoredConsent(): ConsentPreferences | null {
+  try {
+    const raw = localStorage.getItem(COOKIE_CONSENT_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+    return parsed?.preferences ?? null;
+  } catch {
+    return null;
+  }
+}
+
+// Google Consent Mode v2: keep gtag loaded (conversion modeling still works),
+// but deny storage until the visitor consents.
+function pushGoogleConsentUpdate(prefs: ConsentPreferences) {
+  const w = window as any;
+  w.dataLayer = w.dataLayer || [];
+  function gtag(...args: any[]) { w.dataLayer.push(args); }
+  gtag('consent', 'update', {
+    ad_storage: prefs.marketing ? 'granted' : 'denied',
+    ad_user_data: prefs.marketing ? 'granted' : 'denied',
+    ad_personalization: prefs.marketing ? 'granted' : 'denied',
+    analytics_storage: prefs.analytics ? 'granted' : 'denied',
+  });
+}
+
+function useCookieConsent(): ConsentPreferences | null {
+  const [consent, setConsent] = useState<ConsentPreferences | null>(null);
+
+  useEffect(() => {
+    const stored = readStoredConsent();
+    if (stored) {
+      setConsent(stored);
+      pushGoogleConsentUpdate(stored);
+    }
+
+    const onUpdate = (event: Event) => {
+      const prefs = (event as CustomEvent<ConsentPreferences>).detail;
+      if (prefs) {
+        setConsent(prefs);
+        pushGoogleConsentUpdate(prefs);
+      }
+    };
+    window.addEventListener('cookieConsentUpdated', onUpdate);
+    return () => window.removeEventListener('cookieConsentUpdated', onUpdate);
+  }, []);
+
+  return consent;
+}
+
 // Separate component for page tracking
 function AnalyticsTracker() {
   const pathname = usePathname();
@@ -48,6 +106,10 @@ function AnalyticsTracker() {
 }
 
 export default function Analytics() {
+  const consent = useCookieConsent();
+  const analyticsAllowed = consent?.analytics === true;
+  const marketingAllowed = consent?.marketing === true;
+
   return (
     <>
       {/* Google Tag Manager */}
@@ -67,7 +129,7 @@ export default function Analytics() {
         />
       )}
 
-      {/* Google Analytics 4 + Google Ads */}
+      {/* Google Analytics 4 + Google Ads (Consent Mode v2: storage denied by default) */}
       {GA_MEASUREMENT_ID && (
         <>
           <Script
@@ -81,6 +143,16 @@ export default function Analytics() {
               __html: `
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
+
+                // Consent Mode v2 defaults — denied until the cookie banner grants them.
+                gtag('consent', 'default', {
+                  ad_storage: 'denied',
+                  ad_user_data: 'denied',
+                  ad_personalization: 'denied',
+                  analytics_storage: 'denied',
+                  wait_for_update: 500
+                });
+
                 gtag('js', new Date());
 
                 // Google Analytics 4 Configuration
@@ -104,48 +176,37 @@ export default function Analytics() {
       )}
 
       {/* Google Optimize */}
-      {GOOGLE_OPTIMIZE_ID && (
+      {GOOGLE_OPTIMIZE_ID && analyticsAllowed && (
         <Script
           src={`https://www.googleoptimize.com/optimize.js?id=${GOOGLE_OPTIMIZE_ID}`}
           strategy="afterInteractive"
         />
       )}
 
-      {/* Facebook Pixel */}
-      {FB_PIXEL_ID && (
-        <>
-          <Script
-            id="fb-pixel"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
-                !function(f,b,e,v,n,t,s)
-                {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-                if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-                n.queue=[];t=b.createElement(e);t.async=!0;
-                t.src=v;s=b.getElementsByTagName(e)[0];
-                s.parentNode.insertBefore(t,s)}(window, document,'script',
-                'https://connect.facebook.net/en_US/fbevents.js');
-                fbq('init', '${FB_PIXEL_ID}');
-                fbq('track', 'PageView');
-              `
-            }}
-          />
-          <noscript>
-            <img
-              height="1"
-              width="1"
-              style={{ display: 'none' }}
-              src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
-              alt=""
-            />
-          </noscript>
-        </>
+      {/* Facebook Pixel — only after marketing consent */}
+      {FB_PIXEL_ID && marketingAllowed && (
+        <Script
+          id="fb-pixel"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              !function(f,b,e,v,n,t,s)
+              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+              n.queue=[];t=b.createElement(e);t.async=!0;
+              t.src=v;s=b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t,s)}(window, document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+              fbq('init', '${FB_PIXEL_ID}');
+              fbq('track', 'PageView');
+            `
+          }}
+        />
       )}
 
-      {/* LinkedIn Insight Tag */}
-      {LINKEDIN_PARTNER_ID && (
+      {/* LinkedIn Insight Tag — only after marketing consent */}
+      {LINKEDIN_PARTNER_ID && marketingAllowed && (
         <>
           <Script
             id="linkedin-insight"
@@ -175,20 +236,11 @@ export default function Analytics() {
               `
             }}
           />
-          <noscript>
-            <img
-              height="1"
-              width="1"
-              style={{ display: 'none' }}
-              alt=""
-              src={`https://px.ads.linkedin.com/collect/?pid=${LINKEDIN_PARTNER_ID}&fmt=gif`}
-            />
-          </noscript>
         </>
       )}
 
-      {/* TikTok Pixel */}
-      {TIKTOK_PIXEL_ID && (
+      {/* TikTok Pixel — only after marketing consent */}
+      {TIKTOK_PIXEL_ID && marketingAllowed && (
         <Script
           id="tiktok-pixel"
           strategy="afterInteractive"
@@ -204,8 +256,8 @@ export default function Analytics() {
         />
       )}
 
-      {/* Microsoft Clarity */}
-      {CLARITY_ID && (
+      {/* Microsoft Clarity — only after analytics consent */}
+      {CLARITY_ID && analyticsAllowed && (
         <Script
           id="clarity-script"
           strategy="afterInteractive"
@@ -221,8 +273,8 @@ export default function Analytics() {
         />
       )}
 
-      {/* Hotjar */}
-      {HOTJAR_ID && (
+      {/* Hotjar — only after analytics consent */}
+      {HOTJAR_ID && analyticsAllowed && (
         <Script
           id="hotjar"
           strategy="afterInteractive"
