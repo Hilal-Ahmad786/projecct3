@@ -104,9 +104,12 @@ const PIPELINE = [
 
 /* ─── Sub-panels ─────────────────────────────────────────────────────────── */
 function CodePanel({ lines }: { lines: string[] }) {
-  const endRef = useRef<HTMLDivElement>(null);
+  const codeRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    endRef.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    // Scroll only the code container — scrollIntoView also scrolls the page,
+    // yanking the viewport back to the hero on every typed line.
+    const el = codeRef.current;
+    if (el) el.scrollTop = el.scrollHeight;
   }, [lines.length]);
 
   return (
@@ -123,7 +126,7 @@ function CodePanel({ lines }: { lines: string[] }) {
         </span>
       </div>
       {/* Code */}
-      <div className="p-3 font-mono text-[10px] leading-[1.65] overflow-hidden" style={{ maxHeight: 148 }}>
+      <div ref={codeRef} className="p-3 font-mono text-[10px] leading-[1.65] overflow-hidden" style={{ maxHeight: 148 }}>
         {lines.map((line, i) => (
           <div key={i} className="flex gap-2">
             <span className="text-white/15 w-4 text-right flex-shrink-0 select-none">{i + 1}</span>
@@ -137,7 +140,6 @@ function CodePanel({ lines }: { lines: string[] }) {
             )}
           </div>
         ))}
-        <div ref={endRef} />
       </div>
     </div>
   );
