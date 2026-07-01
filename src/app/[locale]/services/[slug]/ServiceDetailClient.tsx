@@ -17,6 +17,10 @@ import {
 import Button from '@/components/Button';
 import ServicePortfolio from '@/components/services/ServicePortfolio';
 import ServiceRequestCTA from '@/components/services/ServiceRequestCTA';
+import {
+  TestimonialsSection, CaseStudySection, ComparisonSection, PricingMetaPanel,
+  type TestimonialItem, type CaseStudyData, type ComparisonData, type PricingMetaData,
+} from '@/components/services/DetailExtras';
 import { HeroVisual, BgPatternRenderer, DecorationRenderer, type ServiceAnimation } from '@/components/services/hero-visuals';
 import { useTranslations } from '@/hooks/useTranslations';
 import { formatPrice } from '@/lib/currency';
@@ -82,6 +86,10 @@ export interface ServiceDetailData {
     portfolio?: PortfolioItem[];
     faq?: FAQItem[];
     animation?: ServiceAnimation;
+    testimonials?: TestimonialItem[];
+    caseStudy?: CaseStudyData;
+    comparison?: ComparisonData;
+    pricingMeta?: PricingMetaData;
   };
   pricingPackages?: PricingPackage[];
   isParent?: boolean;
@@ -163,7 +171,10 @@ function ProcessIcon({ step }: { step: number }) {
 // ═══════════════════════════════════════════════════════════════════════
 // ── MAIN CLIENT COMPONENT ────────────────────────────────────────────
 // ═══════════════════════════════════════════════════════════════════════
-type SectionKey = 'hero' | 'portfolio' | 'technologies' | 'features' | 'process' | 'whyUs' | 'faq' | 'pricing' | 'subServices' | 'cta';
+type SectionKey =
+  | 'hero' | 'portfolio' | 'technologies' | 'features' | 'process' | 'whyUs'
+  | 'faq' | 'pricing' | 'subServices' | 'cta'
+  | 'comparison' | 'caseStudy' | 'testimonials';
 
 export default function ServiceDetailClient({
   service,
@@ -212,6 +223,9 @@ export default function ServiceDetailClient({
         </div>
       )}
 
+      {/* ── 1b. Stats bar — numbers before adjectives ────────────────── */}
+      {show('hero') && <StatsBar accent={accent} />}
+
       {/* ── 2. Portfolio (Recent Projects) ───────────────────────────── */}
       {show('portfolio') && portfolio.length > 0 && <ServicePortfolio portfolio={portfolio} />}
 
@@ -232,11 +246,24 @@ export default function ServiceDetailClient({
         </div>
       )}
 
+      {/* ── 4b. Benefits checklist (service.benefits[] from DB) ─────── */}
+      {show('features') && benefits.length > 0 && <BenefitsSection benefits={benefits} t={t} />}
+
+      {/* ── 4c. Comparison — "is this approach right for you?" ──────── */}
+      {show('comparison') && service.content.comparison && (
+        <ComparisonSection comparison={service.content.comparison} />
+      )}
+
       {/* ── 5. Process (numbered cards) ─────────────────────────────── */}
       {show('process') && (
         <div id="process">
           {process.length > 0 && <ProcessSection steps={process} processLayout={animation?.processLayout} />}
         </div>
+      )}
+
+      {/* ── 5b. Mini case study — story with numbers ────────────────── */}
+      {show('caseStudy') && service.content.caseStudy && (
+        <CaseStudySection caseStudy={service.content.caseStudy} />
       )}
 
       {/* ── 6. Why Choose Us ────────────────────────────────────────── */}
@@ -247,6 +274,11 @@ export default function ServiceDetailClient({
         />
       )}
 
+      {/* ── 6b. Testimonials ────────────────────────────────────────── */}
+      {show('testimonials') && (service.content.testimonials?.length ?? 0) > 0 && (
+        <TestimonialsSection testimonials={service.content.testimonials!} />
+      )}
+
       {/* ── 7. FAQ (Plus/Minus accordion) ───────────────────────────── */}
       {show('faq') && (
         <div id="faq">
@@ -254,10 +286,14 @@ export default function ServiceDetailClient({
         </div>
       )}
 
-      {/* ── 8. Pricing ──────────────────────────────────────────────── */}
+      {/* ── 8. Pricing (packages, or "starting from" when quote-first) ─ */}
       {show('pricing') && (
         <div id="pricing">
-          {pricingPackages.length > 0 && <PricingSection packages={pricingPackages} locale={locale} />}
+          {pricingPackages.length > 0
+            ? <PricingSection packages={pricingPackages} locale={locale} />
+            : service.content.pricingMeta && (
+                <PricingMetaPanel pricingMeta={service.content.pricingMeta} serviceSlug={service.slug} />
+              )}
         </div>
       )}
 
@@ -277,20 +313,24 @@ export default function ServiceDetailClient({
 // ── STATS BAR ────────────────────────────────────────────────────────
 // ═══════════════════════════════════════════════════════════════════════
 const STATS = [
-  { icon: TrophyIcon,    value: '500+', label: 'Projects Delivered' },
-  { icon: UserGroupIcon, value: '300+', label: 'Happy Clients'       },
-  { icon: StarIcon,      value: '98%',  label: 'Satisfaction Rate'   },
-  { icon: ClockIcon,     value: '5+',   label: 'Years of Expertise'  },
+  { icon: TrophyIcon,    value: '500+', labelKey: 'projectsDelivered', fallback: 'Projects Delivered' },
+  { icon: UserGroupIcon, value: '300+', labelKey: 'happyClients',      fallback: 'Happy Clients'      },
+  { icon: StarIcon,      value: '98%',  labelKey: 'satisfactionRate',  fallback: 'Satisfaction Rate'  },
+  { icon: ClockIcon,     value: '5+',   labelKey: 'yearsExpertise',    fallback: 'Years of Expertise' },
 ];
 
 function StatsBar({ accent }: { accent: AccentColor }) {
   const colors = accentColors[accent];
+  const { t } = useTranslations();
 
   return (
     <div className="w-full bg-gray-950 border-y border-gray-800/60">
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-2 md:grid-cols-4">
-          {STATS.map(({ icon: Icon, value, label }, i) => (
+          {STATS.map(({ icon: Icon, value, labelKey, fallback }, i) => {
+            const translated = t(`services.detail.stats.${labelKey}`);
+            const label = typeof translated === 'string' && !translated.startsWith('services.') ? translated : fallback;
+            return (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 16 }}
@@ -310,7 +350,8 @@ function StatsBar({ accent }: { accent: AccentColor }) {
               <div className={`text-3xl font-bold ${colors.eyebrow} leading-none mb-1`}>{value}</div>
               <div className="text-xs text-gray-500 uppercase tracking-wider font-medium mt-1">{label}</div>
             </motion.div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>

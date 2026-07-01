@@ -47,10 +47,11 @@ export default async function ServicePricingPage({ params }: PageProps) {
         serviceColor={data.service.color}
         hasPackages={hasPackages}
       />
+      {/* 'pricing' also covers the "starting from" panel for quote-first services */}
       <ServiceDetailClient
         service={data.service}
         hideHero
-        showSections={hasPackages ? ['pricing', 'faq', 'cta'] : ['faq', 'cta']}
+        showSections={['pricing', 'faq', 'cta']}
       />
     </main>
   );
