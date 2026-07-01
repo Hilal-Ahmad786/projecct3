@@ -14,7 +14,7 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 import CtaBanner from '@/components/CtaBanner';
 import { getProjects } from '@/lib/admin/database/queries';
 
-const baseUrl = 'https://www.paksoft.com.tr';
+import { SITE_URL as baseUrl } from '@/config/site';
 
 export const revalidate = 3600; // ISR: revalidate every hour
 

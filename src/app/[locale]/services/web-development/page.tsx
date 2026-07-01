@@ -18,7 +18,7 @@ import { PatternDivider } from '@/components/heritage';
 
 export const revalidate = 3600;
 
-const baseUrl = 'https://www.paksoft.com.tr';
+import { SITE_URL as baseUrl } from '@/config/site';
 const SLUG = 'web-development';
 
 const ogLocaleMap: Record<Locale, string> = {

@@ -11,7 +11,7 @@ import TeamSection from '@/components/TeamSection'
 import TechApproachSection from '@/components/TechApproachSection'
 import CtaBanner from '@/components/CtaBanner'
 
-const baseUrl = 'https://www.paksoft.com.tr'
+import { SITE_URL as baseUrl } from '@/config/site';
 
 const ogLocaleMap: Record<Locale, string> = {
   en: 'en_US',

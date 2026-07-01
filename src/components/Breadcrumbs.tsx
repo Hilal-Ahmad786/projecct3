@@ -13,7 +13,7 @@ export interface Crumb {
   href?: string; // last crumb usually has no href
 }
 
-const baseUrl = 'https://www.paksoft.com.tr';
+import { SITE_URL as baseUrl } from '@/config/site';
 
 export default function Breadcrumbs({ items, className = '' }: { items: Crumb[]; className?: string }) {
   const { dir, locale } = useTranslations();

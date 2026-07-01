@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next';
+import { SITE_URL } from '@/config/site';
 
 export default function robots(): MetadataRoute.Robots {
     return {
@@ -20,7 +21,7 @@ export default function robots(): MetadataRoute.Robots {
                 disallow: ['/'], // Block AI crawlers if desired
             },
         ],
-        sitemap: 'https://www.paksoft.com.tr/sitemap.xml',
-        host: 'https://www.paksoft.com.tr',
+        sitemap: `${SITE_URL}/sitemap.xml`,
+        host: SITE_URL,
     };
 }

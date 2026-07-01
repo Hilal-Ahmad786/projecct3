@@ -387,7 +387,7 @@ export default function BlogEditor({
                       {formData.metaTitle || formData.title || 'Page Title'}
                     </p>
                     <p className="text-green-700 text-sm">
-                      paksoft.com.tr/blog/{formData.slug || 'your-post-url'}
+                      paksofts.com/blog/{formData.slug || 'your-post-url'}
                     </p>
                     <p className="text-gray-600 text-sm">
                       {formData.metaDescription || formData.excerpt || 'Your meta description will appear here...'}

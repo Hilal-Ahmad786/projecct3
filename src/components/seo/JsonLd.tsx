@@ -2,6 +2,7 @@
 // structured data lands in the initial server HTML (next/script's <Script>
 // defers JSON-LD to client injection, which crawlers see less reliably).
 import React from 'react';
+import { SITE_URL } from '@/config/site';
 
 // Organization Schema
 export interface OrganizationProps {
@@ -23,8 +24,8 @@ export interface OrganizationProps {
 
 export function OrganizationJsonLd({
   name = 'PakSoft',
-  url = 'https://www.paksoft.com.tr',
-  logo = 'https://www.paksoft.com.tr/logo.png',
+  url = SITE_URL,
+  logo = `${SITE_URL}/logo.png`,
   description = 'Enterprise web development, AI solutions, e-commerce, automation and digital marketing services',
   email = 'paksoft3@gmail.com',
   telephone = '+90 552 567 71 64',
@@ -91,8 +92,8 @@ export interface LocalBusinessProps {
 
 export function LocalBusinessJsonLd({
   name = 'PakSoft',
-  url = 'https://www.paksoft.com.tr',
-  image = 'https://www.paksoft.com.tr/images/office.jpg',
+  url = SITE_URL,
+  image = `${SITE_URL}/images/office.jpg`,
   description = 'Enterprise web development, AI solutions, e-commerce, automation and digital marketing services',
   email = 'paksoft3@gmail.com',
   telephone = '+90 552 567 71 64',
@@ -165,7 +166,7 @@ export function ServiceJsonLd({
   description,
   url,
   provider = 'PakSoft',
-  providerUrl = 'https://www.paksoft.com.tr',
+  providerUrl = SITE_URL,
   areaServed = ['Worldwide'],
   serviceType,
   image,
@@ -271,8 +272,8 @@ export interface WebSiteJsonLdProps {
 
 export function WebSiteJsonLd({
   name = 'PakSoft',
-  url = 'https://www.paksoft.com.tr',
-  searchUrl = 'https://www.paksoft.com.tr/search?q={search_term_string}',
+  url = SITE_URL,
+  searchUrl = `${SITE_URL}/search?q={search_term_string}`,
 }: WebSiteJsonLdProps) {
   const schema = {
     '@context': 'https://schema.org',
@@ -336,7 +337,7 @@ export function ArticleJsonLd({
     publisher: {
       '@type': 'Organization',
       name: 'PakSoft',
-      logo: { '@type': 'ImageObject', url: 'https://www.paksoft.com.tr/images/logo.png' },
+      logo: { '@type': 'ImageObject', url: `${SITE_URL}/images/logo.png` },
     },
     ...(section ? { articleSection: section } : {}),
     ...(keywords && keywords.length ? { keywords: keywords.join(', ') } : {}),

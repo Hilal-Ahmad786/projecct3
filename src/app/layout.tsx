@@ -7,6 +7,7 @@ import ReCaptcha from '@/components/ReCaptcha'
 import { ClientProviders } from '@/components/ClientProviders'
 import { Analytics as VercelAnalytics } from '@vercel/analytics/next'
 import { defaultLocale } from '@/lib/i18n'
+import { SITE_URL } from '@/config/site'
 
 // Heritage display type for RTL locales — exposed as CSS variables,
 // consumed by globals.css heading rules. preload:false keeps them off
@@ -27,7 +28,7 @@ const amiri = Amiri({
 })
 
 export const metadata = {
-    metadataBase: new URL('https://www.paksoft.com.tr'),
+    metadataBase: new URL(SITE_URL),
     // Plain default (no `template`): pages already append "| PakSoft" in their
     // own titles, so a template caused doubled "| PakSoft | PakSoft" titles.
     title: 'PakSoft – Modern Digital Solutions',
@@ -38,7 +39,7 @@ export const metadata = {
     openGraph: {
         type: 'website',
         locale: 'en_US',
-        url: 'https://www.paksoft.com.tr',
+        url: SITE_URL,
         title: 'PakSoft – Modern Digital Solutions',
         description: 'Enterprise web development, e-commerce, automation bots and digital marketing solutions',
         siteName: 'PakSoft',

@@ -5,7 +5,7 @@ import { generateAlternateLinks } from '@/lib/seo';
 import { localizeFullPath } from '@/lib/routes';
 import FeaturesPageClient from './FeaturesPageClient';
 
-const baseUrl = 'https://www.paksoft.com.tr';
+import { SITE_URL as baseUrl } from '@/config/site';
 
 interface PageProps {
   params: Promise<{ slug: string; locale: Locale }>;

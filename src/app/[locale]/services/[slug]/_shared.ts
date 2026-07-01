@@ -7,7 +7,9 @@ import { getTranslations } from '@/lib/server-i18n';
 import { getServicePageContent } from '@/lib/service-content';
 import type { ServiceDetailData } from './ServiceDetailClient';
 
-export const baseUrl = 'https://www.paksoft.com.tr';
+import { SITE_URL } from '@/config/site';
+
+export const baseUrl = SITE_URL;
 
 export const ogLocaleMap: Record<Locale, string> = {
   en: 'en_US', tr: 'tr_TR', de: 'de_DE', ur: 'ur_PK', ar: 'ar_SA',

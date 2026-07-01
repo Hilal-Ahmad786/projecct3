@@ -9,7 +9,7 @@ import ContactInfoSection from '@/components/ContactInfoSection'
 import ContactForm from '@/components/ContactForm'
 import MapSection from '@/components/MapSection'
 
-const baseUrl = 'https://www.paksoft.com.tr'
+import { SITE_URL as baseUrl } from '@/config/site';
 
 const ogLocaleMap: Record<Locale, string> = {
   en: 'en_US',

@@ -843,7 +843,7 @@ export default function BlogContentPage() {
                                         {formData.metaTitle || formData.title || 'Page Title'}
                                     </div>
                                     <div className="text-emerald-700 text-sm truncate">
-                                        paksoft.com.tr/blog/{formData.slug || 'page-slug'}
+                                        paksofts.com/blog/{formData.slug || 'page-slug'}
                                     </div>
                                     <div className="text-gray-600 text-sm mt-1 line-clamp-2">
                                         {formData.metaDescription || formData.excerpt || 'Add a meta description to see a preview here...'}
@@ -1402,7 +1402,7 @@ export default function BlogContentPage() {
                                                     {post.metaTitle || post.title}
                                                 </div>
                                                 <div className="text-emerald-700 text-sm truncate">
-                                                    paksoft.com.tr/blog/{post.slug}
+                                                    paksofts.com/blog/{post.slug}
                                                 </div>
                                                 <div className="text-gray-600 text-sm mt-1 line-clamp-2">
                                                     {post.metaDescription || post.excerpt}

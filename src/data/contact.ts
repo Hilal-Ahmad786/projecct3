@@ -14,7 +14,7 @@ import {
 export const contactDetails = {
     phone: '+905525677164',
     email: 'paksoft3@gmail.com',
-    website: 'https://paksoft.com.tr',
+    website: 'https://www.paksofts.com',
     address: 'Yozgat, Turkey',
     mapLink: 'https://maps.google.com/maps?q=Yozgat,Turkey',
     whatsapp: '905525677164' // Format for wa.me link

@@ -12,7 +12,7 @@ import ServicesWhyUs from '@/components/ServicesWhyUs'
 import TestimonialsSection from '@/components/TestimonialsSection'
 import CtaBanner from '@/components/CtaBanner'
 
-const baseUrl = 'https://www.paksoft.com.tr'
+import { SITE_URL as baseUrl } from '@/config/site';
 
 const ogLocaleMap: Record<Locale, string> = {
   en: 'en_US',

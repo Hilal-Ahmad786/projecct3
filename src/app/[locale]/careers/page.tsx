@@ -5,7 +5,7 @@ import { generateAlternateLinks } from '@/lib/seo';
 import { localizeFullPath } from '@/lib/routes';
 import Button from '@/components/Button';
 
-const baseUrl = 'https://www.paksoft.com.tr';
+import { SITE_URL as baseUrl } from '@/config/site';
 
 interface PageProps {
   params: Promise<{ locale: Locale }>;

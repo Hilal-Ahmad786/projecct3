@@ -70,6 +70,16 @@ const nextConfig = {
       { source: `/${loc}/services`, destination: `/${loc}/${base}`, permanent: true },
     ]);
     return [
+      // Old domain → new canonical domain. paksoft.com.tr still resolves and
+      // served the full site (duplicate content); permanently redirect every
+      // path to https://www.paksofts.com. Must come first so old-domain
+      // requests never match the path-only rules below.
+      {
+        source: '/:path*',
+        has: [{ type: 'host' as const, value: '(?:www\\.)?paksoft\\.com\\.tr' }],
+        destination: 'https://www.paksofts.com/:path*',
+        permanent: true,
+      },
       ...localizedServiceRedirects,
       // tech-stack → technologies (canonical sub-nav URL)
       { source: '/:locale/services/:slug/tech-stack', destination: '/:locale/services/:slug/technologies', permanent: true },

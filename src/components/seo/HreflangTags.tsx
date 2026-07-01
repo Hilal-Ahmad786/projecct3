@@ -3,7 +3,7 @@
 
 import { locales, defaultLocale, Locale } from '@/lib/i18n';
 
-const baseUrl = 'https://www.paksoft.com.tr';
+import { SITE_URL as baseUrl } from '@/config/site';
 
 interface HreflangTagsProps {
   path: string; // Path without locale, e.g., '/about' or ''

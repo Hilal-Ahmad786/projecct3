@@ -3,7 +3,7 @@ import { Locale, locales, defaultLocale } from '@/lib/i18n';
 import { ArticleJsonLd, BreadcrumbJsonLd } from '@/components/seo/JsonLd';
 import BlogPostView from './BlogPostView';
 
-const baseUrl = 'https://www.paksoft.com.tr';
+import { SITE_URL as baseUrl } from '@/config/site';
 
 // ISR: render once, cache for an hour, regenerate in the background. New slugs
 // render on first request then cache (dynamicParams default = true). This stops

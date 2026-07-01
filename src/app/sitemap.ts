@@ -3,7 +3,7 @@ import { localizeFullPath } from '@/lib/routes';
 import { Locale } from '@/lib/i18n';
 import { getPublishedServices } from '@/lib/database/public-queries';
 
-const baseUrl = 'https://www.paksoft.com.tr';
+import { SITE_URL as baseUrl } from '@/config/site';
 const allLocales: Locale[] = ['en', 'tr', 'de', 'ar', 'ur'];
 
 // Last content-change dates (avoids false "modified today" on every deploy)
@@ -37,6 +37,9 @@ const mainRoutes = [
   { path: '/careers',   priority: PRIORITY.other,   changeFreq: 'monthly' as const, date: DATES.seoRefresh },
   { path: '/pricing',   priority: PRIORITY.other,   changeFreq: 'monthly' as const, date: DATES.seoRefresh },
   { path: '/blog',      priority: PRIORITY.blog,    changeFreq: 'daily'   as const, date: DATES.seoRefresh },
+  { path: '/privacy-policy',   priority: PRIORITY.other, changeFreq: 'yearly' as const, date: DATES.seoRefresh },
+  { path: '/terms-of-service', priority: PRIORITY.other, changeFreq: 'yearly' as const, date: DATES.seoRefresh },
+  { path: '/cookie-policy',    priority: PRIORITY.other, changeFreq: 'yearly' as const, date: DATES.seoRefresh },
 ];
 
 // Free tools (same English path for all locales — no path-segment translation)

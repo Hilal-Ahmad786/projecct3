@@ -6,7 +6,7 @@ import { localizeFullPath } from '@/lib/routes';
 import { FAQJsonLd, BreadcrumbJsonLd } from '@/components/seo/JsonLd';
 import FAQPageClient from './FAQPageClient';
 
-const baseUrl = 'https://www.paksoft.com.tr';
+import { SITE_URL as baseUrl } from '@/config/site';
 
 interface PageProps {
   params: Promise<{ slug: string; locale: Locale }>;

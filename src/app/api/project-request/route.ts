@@ -183,6 +183,7 @@ async function sendProjectRequestNotification(data: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
+      // TODO: switch to noreply@paksofts.com once the domain is verified with the email provider
       from: 'PakSoft <noreply@paksoft.com.tr>',
       to: [adminEmail],
       subject: `New Project Request: ${data.serviceType}`,
@@ -212,6 +213,7 @@ async function sendProjectRequestNotification(data: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
+      // TODO: switch to noreply@paksofts.com once the domain is verified with the email provider
       from: 'PakSoft <noreply@paksoft.com.tr>',
       to: [data.email],
       subject: 'We received your project request - PakSoft',
@@ -234,7 +236,7 @@ async function sendProjectRequestNotification(data: {
         <p>Best regards,<br>The PakSoft Team</p>
         <p style="color: #666; font-size: 12px;">
           PakSoft - Modern Digital Solutions<br>
-          <a href="https://paksoft.com.tr">paksoft.com.tr</a>
+          <a href="https://www.paksofts.com">paksofts.com</a>
         </p>
       `,
     }),
