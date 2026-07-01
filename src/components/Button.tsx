@@ -41,22 +41,22 @@ const variants = {
     transition-all duration-250 ease-standard
   `,
   emerald: `
-    bg-white text-emerald-700 border border-emerald-600
-    hover:bg-emerald-600 hover:text-white hover:border-emerald-600
-    focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2
+    bg-white text-heritage-turquoise-deep border border-heritage-turquoise
+    hover:bg-heritage-turquoise hover:text-white hover:border-heritage-turquoise
+    focus:ring-2 focus:ring-heritage-turquoise focus:ring-offset-2
     transition-all duration-250 ease-standard
     relative overflow-hidden
-    before:absolute before:inset-0 before:bg-emerald-600 
+    before:absolute before:inset-0 before:bg-heritage-turquoise
     before:scale-x-0 before:origin-left before:transition-transform before:duration-250
     hover:before:scale-x-100 before:z-[-1]
   `,
   crimson: `
-    bg-white text-red-700 border border-red-600
-    hover:bg-red-600 hover:text-white hover:border-red-600
-    focus:ring-2 focus:ring-red-600 focus:ring-offset-2
+    bg-white text-heritage-terracotta-deep border border-heritage-terracotta
+    hover:bg-heritage-terracotta hover:text-white hover:border-heritage-terracotta
+    focus:ring-2 focus:ring-heritage-terracotta focus:ring-offset-2
     transition-all duration-250 ease-standard
     relative overflow-hidden
-    before:absolute before:inset-0 before:bg-red-600 
+    before:absolute before:inset-0 before:bg-heritage-terracotta
     before:scale-x-0 before:origin-left before:transition-transform before:duration-250
     hover:before:scale-x-100 before:z-[-1]
   `,

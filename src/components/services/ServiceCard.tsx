@@ -84,7 +84,7 @@ export default function ServiceCard({
             <li key={i} className="flex items-start gap-2 text-sm">
               <svg
                 className={`w-4 h-4 mt-0.5 flex-shrink-0 ${
-                  isFeatured ? 'text-emerald-400' : 'text-emerald-600'
+                  isFeatured ? 'text-heritage-turquoise-soft' : 'text-heritage-turquoise'
                 }`}
                 fill="none"
                 stroke="currentColor"

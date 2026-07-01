@@ -348,7 +348,7 @@ function DeployVisual() {
           className="bg-gray-900 rounded-xl p-4"
         >
           <div className="flex items-center justify-between mb-2">
-            <span className="text-[10px] font-semibold text-white/60 uppercase tracking-wider">paksoft.com.tr</span>
+            <span className="text-[10px] font-semibold text-white/60 uppercase tracking-wider">paksofts.com</span>
             <div className="flex items-center gap-1.5">
               <motion.div className="w-2 h-2 rounded-full bg-green-400"
                 animate={{ opacity: [1, 0.3, 1] }} transition={{ duration: 1.5, repeat: Infinity }} />

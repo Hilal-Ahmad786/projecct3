@@ -151,7 +151,7 @@ function LighthousePanel() {
           <path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM6.343 5.657a1 1 0 00-1.414-1.414l-.707.707A1 1 0 005.636 6.364l.707-.707zM4 11a1 1 0 100-2H3a1 1 0 000 2h1zm2.343 5.657l-.707.707a1 1 0 001.414 1.414l.707-.707a1 1 0 00-1.414-1.414zM10 16a1 1 0 10-2 0v1a1 1 0 102 0v-1zm5.657-2.343a1 1 0 00-1.414 1.414l.707.707a1 1 0 001.414-1.414l-.707-.707zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-3.343-6.657l.707-.707a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414z"/>
         </svg>
         <span className="text-[10px] font-semibold text-gray-500 uppercase tracking-wider">Lighthouse</span>
-        <span className="ml-auto text-[9px] text-gray-400 font-mono">paksoft.com.tr</span>
+        <span className="ml-auto text-[9px] text-gray-400 font-mono">paksofts.com</span>
       </div>
       <div className="grid grid-cols-4 gap-2">
         {METRICS.map((m, i) => (
@@ -352,7 +352,7 @@ export default function WebDevHeroVisual() {
           </div>
           <span className="text-[10px] font-semibold text-gray-900">Deployed to prod</span>
         </div>
-        <p className="text-[9px] text-gray-400 font-mono">paksoft.com.tr · just now</p>
+        <p className="text-[9px] text-gray-400 font-mono">paksofts.com · just now</p>
       </motion.div>
     </div>
   );

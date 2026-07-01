@@ -47,7 +47,7 @@ export default function DataAnalyticsAnimation() {
               <defs>
                 <linearGradient id="line-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
                   <stop offset="0%" stopColor="#6366F1" />
-                  <stop offset="100%" stopColor="#3B82F6" />
+                  <stop offset="100%" stopColor="#1a3a6b" />
                 </linearGradient>
                 <linearGradient id="area-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
                   <stop offset="0%" stopColor="#6366F1" stopOpacity="0.3" />
@@ -88,7 +88,7 @@ export default function DataAnalyticsAnimation() {
                   cy="20"
                   r="15"
                   fill="none"
-                  stroke="#3B82F6"
+                  stroke="#1a3a6b"
                   strokeWidth="5"
                   strokeDasharray="94"
                   strokeDashoffset="94"

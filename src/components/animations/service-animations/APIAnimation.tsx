@@ -153,7 +153,7 @@ export default function APIAnimation() {
       <svg className="absolute inset-0 w-full h-full pointer-events-none" style={{ zIndex: 1 }}>
         <motion.path
           d="M 100 200 Q 150 150 200 200"
-          stroke="#3B82F6"
+          stroke="#1a3a6b"
           strokeWidth="2"
           fill="none"
           strokeDasharray="5,5"

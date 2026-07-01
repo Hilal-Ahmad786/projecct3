@@ -894,7 +894,7 @@ textarea.form-input {
    ========================================= */
 
 .blog-article {
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-family: var(--font-primary);
   font-size: 1.125rem;
   line-height: 1.9;
   color: #374151;

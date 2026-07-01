@@ -68,6 +68,8 @@ export default function FloatingButtons() {
       label: 'WhatsApp',
       onClick: () => handleWhatsApp(),
       ariaLabel: t('ariaWhatsApp') || 'Contact via WhatsApp',
+      // #25D366 is WhatsApp's official brand green — intentionally kept
+      // outside the heritage palette.
       iconBg: 'bg-[#25D366]',
       borderClass: '',
       icon: (

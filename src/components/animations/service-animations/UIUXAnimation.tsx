@@ -63,7 +63,7 @@ export default function UIUXAnimation() {
 
             {/* Color Palette */}
             <div className="flex gap-1 mt-3 justify-center">
-              {['#3B82F6', '#8B5CF6', '#EC4899', '#10B981', '#F59E0B'].map((color, i) => (
+              {['#1a3a6b', '#8B5CF6', '#EC4899', '#0e7c7b', '#F59E0B'].map((color, i) => (
                 <motion.div
                   key={color}
                   className="w-5 h-5 rounded-full border-2 border-white shadow-sm"

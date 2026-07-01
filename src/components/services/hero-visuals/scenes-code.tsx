@@ -126,7 +126,7 @@ export function CodeEditorScene() {
 const TERM_STEPS = [
   { cmd: 'paksoft deploy --prod', out: '✓ build complete (2.1s)' },
   { cmd: '', out: '✓ 5 locales compiled' },
-  { cmd: '', out: '➜ live at paksoft.com.tr' },
+  { cmd: '', out: '➜ live at paksofts.com' },
 ];
 
 export function TerminalScene() {

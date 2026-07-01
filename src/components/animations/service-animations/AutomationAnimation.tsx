@@ -53,7 +53,7 @@ export default function AutomationAnimation() {
             {/* Horizontal line top */}
             <motion.line
               x1="95" y1="55" x2="180" y2="55"
-              stroke="#3B82F6"
+              stroke="#1a3a6b"
               strokeWidth="2"
               markerEnd="url(#arrowhead)"
               initial={{ pathLength: 0 }}
@@ -63,7 +63,7 @@ export default function AutomationAnimation() {
             {/* Vertical line right */}
             <motion.line
               x1="210" y1="95" x2="210" y2="150"
-              stroke="#3B82F6"
+              stroke="#1a3a6b"
               strokeWidth="2"
               markerEnd="url(#arrowhead)"
               initial={{ pathLength: 0 }}
@@ -73,7 +73,7 @@ export default function AutomationAnimation() {
             {/* Horizontal line bottom */}
             <motion.line
               x1="95" y1="175" x2="180" y2="175"
-              stroke="#3B82F6"
+              stroke="#1a3a6b"
               strokeWidth="2"
               markerEnd="url(#arrowhead)"
               initial={{ pathLength: 0 }}
@@ -83,7 +83,7 @@ export default function AutomationAnimation() {
             {/* Vertical line left */}
             <motion.line
               x1="55" y1="95" x2="55" y2="150"
-              stroke="#10B981"
+              stroke="#0e7c7b"
               strokeWidth="2"
               strokeDasharray="4,4"
               markerEnd="url(#arrowhead-green)"
@@ -100,7 +100,7 @@ export default function AutomationAnimation() {
                 refY="3.5"
                 orient="auto"
               >
-                <polygon points="0 0, 10 3.5, 0 7" fill="#3B82F6" />
+                <polygon points="0 0, 10 3.5, 0 7" fill="#1a3a6b" />
               </marker>
               <marker
                 id="arrowhead-green"
@@ -110,7 +110,7 @@ export default function AutomationAnimation() {
                 refY="3.5"
                 orient="auto"
               >
-                <polygon points="0 0, 10 3.5, 0 7" fill="#10B981" />
+                <polygon points="0 0, 10 3.5, 0 7" fill="#0e7c7b" />
               </marker>
             </defs>
           </svg>

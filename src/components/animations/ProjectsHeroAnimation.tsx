@@ -203,7 +203,7 @@ export default function ProjectsHeroAnimation() {
           key={i}
           className="absolute w-2 h-2 rounded-full opacity-40"
           style={{
-            background: `linear-gradient(135deg, ${['#3B82F6', '#8B5CF6', '#10B981', '#F59E0B', '#EC4899'][i]}, transparent)`,
+            background: `linear-gradient(135deg, ${['#1a3a6b', '#8B5CF6', '#0e7c7b', '#F59E0B', '#EC4899'][i]}, transparent)`,
             left: `${10 + Math.random() * 80}%`,
             top: `${10 + Math.random() * 80}%`,
           }}

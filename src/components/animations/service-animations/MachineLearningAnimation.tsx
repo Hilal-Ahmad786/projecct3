@@ -26,7 +26,7 @@ export default function MachineLearningAnimation() {
                 cx="40"
                 cy={40 + i * 50}
                 r="12"
-                fill="#3B82F6"
+                fill="#1a3a6b"
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ delay: 0.1 * i }}
@@ -68,7 +68,7 @@ export default function MachineLearningAnimation() {
                 cx="220"
                 cy={80 + i * 60}
                 r="14"
-                fill="#10B981"
+                fill="#0e7c7b"
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ delay: 0.7 + 0.1 * i }}

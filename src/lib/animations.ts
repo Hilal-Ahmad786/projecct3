@@ -4,7 +4,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import { useInView } from 'framer-motion'
+import { useInView, type UseInViewOptions } from 'framer-motion'
 
 // ─── Spring Presets ───────────────────────────────────────────────
 export const smoothSpring = { type: 'spring' as const, stiffness: 100, damping: 20 }
@@ -75,7 +75,9 @@ export function useCountUp(
   duration = 2000,
   inView = false
 ): number {
-  const [value, setValue] = useState(0)
+  // Start at target so SSR/no-JS output shows the real number (not "0+");
+  // the visual count-up from 0 only begins once the element is in view.
+  const [value, setValue] = useState(target)
   const hasAnimated = useRef(false)
 
   useEffect(() => {
@@ -105,7 +107,7 @@ export function useCountUp(
 }
 
 // ─── useInViewOnce (convenience) ─────────────────────────────────
-export function useInViewOnce(margin = '-100px') {
+export function useInViewOnce(margin: UseInViewOptions['margin'] = '-100px') {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin })
   return { ref, isInView }

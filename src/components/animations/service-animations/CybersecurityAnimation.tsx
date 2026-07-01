@@ -49,7 +49,7 @@ export default function CybersecurityAnimation() {
                 <motion.path
                   d="M60 10 L110 35 L110 80 C110 110 85 130 60 135 C35 130 10 110 10 80 L10 35 Z"
                   fill="url(#shield-gradient)"
-                  stroke="#10B981"
+                  stroke="#0e7c7b"
                   strokeWidth="3"
                   initial={{ pathLength: 0, opacity: 0 }}
                   animate={{ pathLength: 1, opacity: 1 }}
@@ -57,7 +57,7 @@ export default function CybersecurityAnimation() {
                 />
                 <defs>
                   <linearGradient id="shield-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stopColor="#10B981" stopOpacity="0.3" />
+                    <stop offset="0%" stopColor="#0e7c7b" stopOpacity="0.3" />
                     <stop offset="100%" stopColor="#059669" stopOpacity="0.1" />
                   </linearGradient>
                 </defs>

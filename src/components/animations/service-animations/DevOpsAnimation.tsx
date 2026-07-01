@@ -72,7 +72,7 @@ export default function DevOpsAnimation() {
                   cx={70 + i * 75}
                   cy="100"
                   r="3"
-                  fill="#3B82F6"
+                  fill="#1a3a6b"
                   initial={{ scale: 0 }}
                   animate={{
                     x: [0, 20, 0],

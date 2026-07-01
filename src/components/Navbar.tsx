@@ -1097,7 +1097,10 @@ export default function Navbar() {
                                     return { slug: s.slug, children: self && kids.length === 0 ? (s.children || []) : kids };
                                   })
                                   .filter(Boolean) as { slug: string; children: string[] }[]
-                              : cat.services.map(s => ({ slug: s.slug, children: s.children || [] })));
+                              // Browsing shows top-level services only — the ~220 child
+                              // pages stay reachable via search here and via their parent
+                              // service pages; listing them all made the menu overwhelming.
+                              : cat.services.map(s => ({ slug: s.slug, children: [] as string[] })));
                             if (groups.length === 0) return null;
                             return (
                               <div key={catKey} className="mb-8 last:mb-0">
@@ -1387,27 +1390,9 @@ export default function Navbar() {
                                         <IconComponent className={`w-4 h-4 ${iconColor}`} />
                                         <span>{tServices(`services.${service.slug}`)}</span>
                                       </Link>
-                                      {/* Child sub-services */}
-                                      {service.children && service.children.length > 0 && (
-                                        <ul className="ml-6 border-l-2 border-gray-200 pl-2 space-y-0.5 mt-0.5 mb-1">
-                                          {service.children.map((childSlug) => {
-                                            const ChildIcon = serviceIcons[childSlug] || CpuChipIcon;
-                                            const childColor = serviceIconColors[childSlug];
-                                            return (
-                                              <li key={childSlug}>
-                                                <Link
-                                                  href={getServicePath(childSlug)}
-                                                  onClick={() => setOpen(false)}
-                                                  className="flex items-center gap-2 text-xs text-gray-500 hover:text-gray-900 px-2 py-1 hover:bg-gray-50 rounded-md transition-colors"
-                                                >
-                                                  <ChildIcon className={`w-3.5 h-3.5 ${childColor}`} />
-                                                  <span>{tServices(`services.${childSlug}`)}</span>
-                                                </Link>
-                                              </li>
-                                            );
-                                          })}
-                                        </ul>
-                                      )}
+                                      {/* Child sub-services intentionally not listed here —
+                                          ~220 links made the mobile drawer unusable; they
+                                          remain reachable from each parent service page. */}
                                     </li>
                                   );
                                 })}
