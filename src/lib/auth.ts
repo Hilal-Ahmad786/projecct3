@@ -2,25 +2,10 @@
 // Simple admin authentication utilities
 
 import { cookies } from 'next/headers';
+import { signSessionToken, verifySessionToken } from './auth-token';
 
 const ADMIN_SESSION_COOKIE = 'admin_session';
 const SESSION_DURATION = 24 * 60 * 60 * 1000; // 24 hours
-
-// Generate a simple hash for session tokens (using Web Crypto API)
-async function generateSessionToken(): Promise<string> {
-  const array = new Uint8Array(32);
-  crypto.getRandomValues(array);
-  return Array.from(array, byte => byte.toString(16).padStart(2, '0')).join('');
-}
-
-// Hash password using SHA-256 (simple implementation, use bcrypt in production for password storage)
-async function hashPassword(password: string): Promise<string> {
-  const encoder = new TextEncoder();
-  const data = encoder.encode(password);
-  const hashBuffer = await crypto.subtle.digest('SHA-256', data);
-  const hashArray = Array.from(new Uint8Array(hashBuffer));
-  return hashArray.map(byte => byte.toString(16).padStart(2, '0')).join('');
-}
 
 // Validate credentials against environment variables
 export async function validateCredentials(username: string, password: string): Promise<boolean> {
@@ -38,20 +23,18 @@ export async function validateCredentials(username: string, password: string): P
 
 // Create a session and set cookie
 export async function createSession(): Promise<string> {
-  const token = await generateSessionToken();
-  const expires = new Date(Date.now() + SESSION_DURATION);
+  const expiresAtMs = Date.now() + SESSION_DURATION;
+  const token = await signSessionToken(expiresAtMs);
 
   const cookieStore = await cookies();
   cookieStore.set(ADMIN_SESSION_COOKIE, token, {
     httpOnly: true,
     secure: process.env.NODE_ENV === 'production',
     sameSite: 'lax',
-    expires,
+    expires: new Date(expiresAtMs),
     path: '/',
   });
 
-  // Store session in a simple way (in production, use Redis or database)
-  // For now, we'll validate by checking if the cookie exists and is valid format
   return token;
 }
 
@@ -60,14 +43,7 @@ export async function isAuthenticated(): Promise<boolean> {
   try {
     const cookieStore = await cookies();
     const session = cookieStore.get(ADMIN_SESSION_COOKIE);
-
-    if (!session?.value) {
-      return false;
-    }
-
-    // Validate session token format (64 hex characters)
-    const isValidFormat = /^[a-f0-9]{64}$/.test(session.value);
-    return isValidFormat;
+    return await verifySessionToken(session?.value);
   } catch {
     return false;
   }
@@ -79,18 +55,15 @@ export async function clearSession(): Promise<void> {
   cookieStore.delete(ADMIN_SESSION_COOKIE);
 }
 
-// Get session token for middleware (sync version using request)
-export function getSessionFromRequest(request: Request): string | null {
+// Verify the admin session cookie on a raw Request (for API route handlers)
+export async function verifyRequestAuth(request: Request): Promise<boolean> {
   const cookieHeader = request.headers.get('cookie');
-  if (!cookieHeader) return null;
+  if (!cookieHeader) return false;
 
-  const cookies = cookieHeader.split(';').map(c => c.trim());
-  const sessionCookie = cookies.find(c => c.startsWith(`${ADMIN_SESSION_COOKIE}=`));
+  const cookieList = cookieHeader.split(';').map(c => c.trim());
+  const sessionCookie = cookieList.find(c => c.startsWith(`${ADMIN_SESSION_COOKIE}=`));
+  if (!sessionCookie) return false;
 
-  if (!sessionCookie) return null;
-
-  const token = sessionCookie.split('=')[1];
-  const isValidFormat = /^[a-f0-9]{64}$/.test(token);
-
-  return isValidFormat ? token : null;
+  const token = sessionCookie.slice(sessionCookie.indexOf('=') + 1);
+  return verifySessionToken(token);
 }

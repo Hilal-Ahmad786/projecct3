@@ -1,6 +1,7 @@
 // src/middleware.ts
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
+import { verifySessionToken } from '@/lib/auth-token'
 
 const locales = ['en', 'tr', 'de', 'ur', 'ar']
 const defaultLocale = 'en'
@@ -86,16 +87,16 @@ function getLocale(request: NextRequest): string {
   return defaultLocale;
 }
 
-// Check if admin session is valid
-function isAdminAuthenticated(request: NextRequest): boolean {
+// Check if admin session is valid (HMAC-signed token, verified cryptographically)
+async function isAdminAuthenticated(request: NextRequest): Promise<boolean> {
   const sessionCookie = request.cookies.get(ADMIN_SESSION_COOKIE);
-  if (!sessionCookie?.value) return false;
-
-  // Validate session token format (64 hex characters)
-  return /^[a-f0-9]{64}$/.test(sessionCookie.value);
+  return verifySessionToken(sessionCookie?.value);
 }
 
-export function middleware(request: NextRequest) {
+// Admin API endpoints reachable without a session (login itself)
+const PUBLIC_ADMIN_API = ['/api/admin/auth/login', '/api/admin/auth/logout'];
+
+export async function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
   const userAgent = request.headers.get('user-agent') || '';
   const clientIP = getClientIP(request);
@@ -125,9 +126,24 @@ export function middleware(request: NextRequest) {
 
   // Essential security headers only (lightweight)
   response.headers.set('X-Content-Type-Options', 'nosniff');
-  response.headers.set('X-Frame-Options', 'DENY');
+  // SAMEORIGIN (not DENY) so the admin heatmap can iframe site pages
+  response.headers.set('X-Frame-Options', 'SAMEORIGIN');
   response.headers.set('X-XSS-Protection', '1; mode=block');
   response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
+
+  // ADMIN API AUTHENTICATION — every /api/admin/* route requires a valid session
+  if (pathname.startsWith('/api/admin')) {
+    if (PUBLIC_ADMIN_API.includes(pathname)) {
+      return response;
+    }
+    if (!(await isAdminAuthenticated(request))) {
+      return NextResponse.json(
+        { success: false, error: 'Unauthorized' },
+        { status: 401 }
+      );
+    }
+    return response;
+  }
 
   // Redirect localized admin paths to /admin
   if (locales.some(locale => pathname.startsWith(`/${locale}/admin`))) {
@@ -138,7 +154,7 @@ export function middleware(request: NextRequest) {
   // Allow access to login page first (before any other admin checks)
   if (pathname === '/admin/login') {
     // If already authenticated, redirect to admin dashboard
-    if (isAdminAuthenticated(request)) {
+    if (await isAdminAuthenticated(request)) {
       return NextResponse.redirect(new URL('/admin', request.url));
     }
     // Add noindex header for admin login page
@@ -148,7 +164,7 @@ export function middleware(request: NextRequest) {
 
   if (pathname.startsWith('/admin')) {
     // Check authentication for all admin routes (except login which is handled above)
-    if (!isAdminAuthenticated(request)) {
+    if (!(await isAdminAuthenticated(request))) {
       const loginUrl = new URL('/admin/login', request.url);
       loginUrl.searchParams.set('from', pathname);
       return NextResponse.redirect(loginUrl);
@@ -196,5 +212,6 @@ export function middleware(request: NextRequest) {
 export const config = {
   matcher: [
     '/((?!api|_next/static|_next/image|images|favicon.ico|sitemap.xml|robots.txt).*)',
+    '/api/admin/:path*',
   ],
 }
